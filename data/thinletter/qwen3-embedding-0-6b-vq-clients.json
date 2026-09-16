@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "thinletter/qwen3-embedding-0.6b-vq-clients",
+  "slug": "thinletter-qwen3-embedding-0-6b-vq-clients",
+  "author": "thinletter",
+  "url": "https://huggingface.co/thinletter/qwen3-embedding-0.6b-vq-clients",
+  "created_at": "2026-09-16T11:04:40.000Z",
+  "updated_at": "2026-09-16T11:28:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "cs",
+    "multilingual"
+  ],
+  "tags": [
+    "embeddings",
+    "retrieval",
+    "vector-quantization",
+    "webgpu",
+    "czech",
+    "cs",
+    "multilingual",
+    "base_model:Qwen/Qwen3-Embedding-0.6B",
+    "base_model:finetune:Qwen/Qwen3-Embedding-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 259951513,
+  "storage_human": "260 MB",
+  "base_model": "Qwen/Qwen3-Embedding-0.6B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Drain Cleaning Tablets, Enzymatic Pipe Unblocker, Prevents ... - Amazon",
+      "url": "https://www.amazon.ae/Cleaning-Enzymatic-Unblocker-Prevents-Obstructions/dp/B0DGSJ1G9C",
+      "snippet": "Simply place tablet beside, or on top of, the drain and run a bit of hot water over it; works in any household drain; great for offices, …"
+    },
+    {
+      "title": "Drain Cleaner Tablets, Powerful Pipe Cleaning Agent for Sink",
+      "url": "https://www.amazon.ae/Powerful-Cleaning-Blockage-Fast-Acting-Unblocker/dp/B0FRG1L39C",
+      "snippet": "Buy Drain Cleaner Tablets, Powerful Pipe Cleaning Agent for Sink, Toilet & Sewer, Remove Hair, Grease, Blockage, Fast-Acting …"
+    },
+    {
+      "title": "Buy Drain Unblockers Online - Carrefour UAE",
+      "url": "https://www.carrefouruae.com/mafuae/en/c/NF3020100",
+      "snippet": "Shop Drain Unblockers Online at Carrefour UAE. Get the latest offers and shop from a large selection of Cleaning Supplies in Dubai, …"
+    },
+    {
+      "title": "Drain Openers - Buy Drain Cleaner Online at Best Prices In ... - Flipkart",
+      "url": "https://www.flipkart.com/home-cleaning-bathroom-accessories/household-supplies/drain-openers/pr?sid=rja,plv,adc",
+      "snippet": "Sep 9, 2026 · The product is an effective tool for clearing clogged drains, flexible design easily navigates through pipes, grabbing hair …"
+    },
+    {
+      "title": "Amazon.in: Drainage Block Remover Tablet",
+      "url": "https://www.amazon.in/drainage-block-remover-tablet/s?k=drainage+block+remover+tablet",
+      "snippet": "Magic Bubble Toilet & Drain Cleaning Tablets | Powerful Effervescent Foaming Formula for Toilet Bowls, Drain Pipes, Sinks & …"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "gianvitobono98/gemma4-finance-e2b-1k-gguf",
+  "slug": "gianvitobono98-gemma4-finance-e2b-1k-gguf",
+  "author": "gianvitobono98",
+  "url": "https://huggingface.co/gianvitobono98/gemma4-finance-e2b-1k-gguf",
+  "created_at": "2026-09-16T16:06:32.000Z",
+  "updated_at": "2026-09-16T16:07:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "gemma4",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4647450147,
+  "parameters_human": "4.65B",
+  "storage_bytes": 3427880384,
+  "storage_human": "3.4 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hoe mails uit Telenet Webmail afdrukken? - De Netweters",
+      "url": "https://www.netweters.be/t5/E-mail/Hoe-mails-uit-Telenet-Webmail-afdrukken/td-p/141419",
+      "snippet": "Jan 18, 2022 · Hoe mails uit Telenet Webmail afdrukken? Beste, ik ben nieuw op Telenet Webmail. ik zou graag bepaalde mails …"
+    },
+    {
+      "title": "emailadres blokkeren in telenet webmail - De Netweters",
+      "url": "https://www.netweters.be/t5/E-mail/emailadres-blokkeren-in-telenet-webmail/td-p/5009",
+      "snippet": "Mar 11, 2015 · hoe kan in mijn telenet webmail een emailadres blokkeren, nu krijg ik al diverse mails in mijn spam terecht maar toch …"
+    },
+    {
+      "title": "Telenet webmail op bureaublad (opgelost) - Ubuntu NL",
+      "url": "https://forum.ubuntu-nl.org/index.php?topic=81598.0",
+      "snippet": "Oct 1, 2013 · Hoe krijg ik mijn telenet webmail op mijn bureaublad, liefst met een mailicoon, die hoeft niet echt telenet te zijn, mag …"
+    },
+    {
+      "title": "Wijziging in layout Telenet Webmail - De Netweters",
+      "url": "https://www.netweters.be/t5/E-mail/Wijziging-in-layout-Telenet-Webmail/td-p/180756",
+      "snippet": "Nov 20, 2023 · Wijziging in layout Telenet Webmail sinds vanmorgen is de layout van mijn telenet webmail ineens weer de oude …"
+    },
+    {
+      "title": "Hoe verwijderde mails in webmail terughalen? - De Netweters",
+      "url": "https://www.netweters.be/t5/E-mail/Hoe-verwijderde-mails-in-webmail-terughalen/td-p/166067",
+      "snippet": "Apr 4, 2023 · Hallo, ik heb zopas per ongeluk de mails uit mijn postvak in in telenet webmail verwijderd. Ok, geen nood dacht ik, ik …"
+    }
+  ]
+}

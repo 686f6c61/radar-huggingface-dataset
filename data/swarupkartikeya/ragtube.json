@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "swarupkartikeya/ragtube",
+  "slug": "swarupkartikeya-ragtube",
+  "author": "swarupkartikeya",
+  "url": "https://huggingface.co/swarupkartikeya/ragtube",
+  "created_at": "2026-09-16T15:10:40.000Z",
+  "updated_at": "2026-09-16T15:10:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MyAssistance - MyAssistance",
+      "url": "http://www.myassistance.it/component/users/?view=login",
+      "snippet": "Per noi il cliente è sempre al centro di tutto! Hai dimenticato la tua password? Hai dimenticato il tuo nome utente?"
+    },
+    {
+      "title": "Home - MyAssistance",
+      "url": "http://www.myassistance.it/",
+      "snippet": "Nell'erogare le prestazioni e i servizi richiesti MyAssistance mette sempre il cliente e la sua soddisfazione al primo posto."
+    },
+    {
+      "title": "myassistance",
+      "url": "https://app.myassistance.eu/",
+      "snippet": "MyAssistance mobile app."
+    },
+    {
+      "title": "MyAssistance",
+      "url": "https://backoffice.myassistance.eu/backoffice/login",
+      "snippet": "MyAssistance LOGIN INVIA INDIETRO"
+    },
+    {
+      "title": "MyAssistance",
+      "url": "https://backoffice.myassistance.eu/",
+      "snippet": "Access the back office of MyAssistance to manage your activities and services efficiently."
+    }
+  ]
+}

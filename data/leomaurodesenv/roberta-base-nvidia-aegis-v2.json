@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "leomaurodesenv/roberta-base-nvidia-aegis-v2",
+  "slug": "leomaurodesenv-roberta-base-nvidia-aegis-v2",
+  "author": "leomaurodesenv",
+  "url": "https://huggingface.co/leomaurodesenv/roberta-base-nvidia-aegis-v2",
+  "created_at": "2026-09-16T13:47:59.000Z",
+  "updated_at": "2026-09-16T14:05:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:FacebookAI/roberta-base",
+    "base_model:finetune:FacebookAI/roberta-base",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124647170,
+  "parameters_human": "124.6M",
+  "storage_bytes": 2991682065,
+  "storage_human": "3.0 GB",
+  "base_model": "FacebookAI/roberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Docs",
+      "url": "https://docs.google.com/",
+      "snippet": "Create and edit web-based documents, spreadsheets, and presentations. Store documents online and access them from any computer."
+    },
+    {
+      "title": "Documenti Google: accedi",
+      "url": "https://docs.google.com/document/?hl=it",
+      "snippet": "Accedi a Documenti Google con un Account Google personale o un account Google Workspace (per uso professionale)."
+    },
+    {
+      "title": "Documenti Google: editor di documenti e PDF online | Google …",
+      "url": "https://workspace.google.com/intl/it/products/docs/",
+      "snippet": "Crea documenti online e modifica i file PDF con Documenti Google. Collabora in tempo reale da qualsiasi dispositivo e sfrutta l'AI per …"
+    },
+    {
+      "title": "Google Docs: Online Document & PDF Editor | Google Workspace",
+      "url": "https://workspace.google.com/products/docs/",
+      "snippet": "Create online documents and edit PDFs with Google Docs. Collaborate in real-time from any device and use AI to generate drafts, …"
+    },
+    {
+      "title": "Google Docs: editor di documenti online | Google Workspace",
+      "url": "https://desktop.google.it/intl/it/docs/about/",
+      "snippet": "Utilizza Google Docs per creare e collaborare su documenti online. Modifica collaborativa e condivisione sicura in tempo reale e da …"
+    }
+  ]
+}

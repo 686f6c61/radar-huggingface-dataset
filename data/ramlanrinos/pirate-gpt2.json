@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ramlanrinos/pirate-gpt2",
+  "slug": "ramlanrinos-pirate-gpt2",
+  "author": "ramlanrinos",
+  "url": "https://huggingface.co/ramlanrinos/pirate-gpt2",
+  "created_at": "2026-09-16T11:03:42.000Z",
+  "updated_at": "2026-09-16T11:04:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 81912576,
+  "parameters_human": "81.9M",
+  "storage_bytes": 327657928,
+  "storage_human": "328 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "怎么禁止anydesk开机启动 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/fa4125ac92c0ad69ad709221.html",
+      "snippet": "Feb 29, 2020 · 4 在启动列表，找到anydesk，如下图所示 5 选中anydesk，点击禁用，如下图所示 6 看到anydesk后面的状态显示已禁 …"
+    },
+    {
+      "title": "Anydesk免接受远程连接电脑桌面-百度经验",
+      "url": "https://jingyan.baidu.com/article/363872ec7c37f96e4ba16fd3.html",
+      "snippet": "Jan 16, 2019 · Anydesk免接受远程连接电脑桌面,为了远程连接到某台电脑处理一些问题，我们选择了aydek这个远程软件，但我们在 …"
+    },
+    {
+      "title": "AnyDesk是否是大陸軟體 - iT 邦幫忙::一起幫忙解決難題，拯救 IT 人的 …",
+      "url": "https://ithelp.ithome.com.tw/questions/10195133",
+      "snippet": "Sep 2, 2019 · AnyDesk是否是大陸軟體? Yes 是否大陸軟體都不用? No AnyDesk還是可以使用的,用完 免安裝版 關閉即可,重要系統不 …"
+    },
+    {
+      "title": "四款国内外远程桌面软件横测：ToDesk、向日葵、TeamViewer、AnyDe…",
+      "url": "https://www.zhihu.com/tardis/bd/art/662107134",
+      "snippet": "4.AnyDesk AnyDesk 同样来自德国，由三名拥有共同愿景的技术先驱开创，迄今为止已被下载5亿次，在中国大陆和香港均设有办事 …"
+    },
+    {
+      "title": "(以解決)請問AnyDesk 如何更改ID (要連入的那竄數字)",
+      "url": "https://ithelp.ithome.com.tw/questions/10206577",
+      "snippet": "Dec 14, 2021 · 因為WIN10是還原系統的 .假設還原了10台.在AnyDesk裡的ID(如圖987 654 321)都是一樣的請問哪裡可以更改已試過重 …"
+    }
+  ]
+}

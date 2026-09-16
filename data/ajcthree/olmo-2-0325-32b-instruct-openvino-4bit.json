@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "AJCThree/OLMo-2-0325-32B-Instruct-openvino-4bit",
+  "slug": "ajcthree-olmo-2-0325-32b-instruct-openvino-4bit",
+  "author": "AJCThree",
+  "url": "https://huggingface.co/AJCThree/OLMo-2-0325-32B-Instruct-openvino-4bit",
+  "created_at": "2026-09-16T12:18:20.000Z",
+  "updated_at": "2026-09-16T12:22:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "openvino",
+    "olmo2",
+    "text-generation",
+    "NNCF",
+    "text-classification",
+    "base_model:allenai/OLMo-2-0325-32B-Instruct",
+    "base_model:finetune:allenai/OLMo-2-0325-32B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17244717649,
+  "storage_human": "17.2 GB",
+  "base_model": "allenai/OLMo-2-0325-32B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TGCOM24 | News, Ultime Notizie, Video e Foto in tempo reale",
+      "url": "https://www.tgcom24.mediaset.it/",
+      "snippet": "Il Bologna cambia subito: ufficiale l'esonero di Tedesco. Arriva Palladino, contratto di tre anni. Contro l'Inter sarà un'altra Roma: pronti …"
+    },
+    {
+      "title": "Ultime notizie di Cronaca: news oggi in tempo reale - Tgcom24",
+      "url": "https://www.tgcom24.mediaset.it/cronaca/",
+      "snippet": "Cronaca italiana in tempo reale: ultime notizie di cronaca nera, fatti del giorno e aggiornamenti dall'Italia. Leggi tutte le notizie di …"
+    },
+    {
+      "title": "Tgcom24 - YouTube",
+      "url": "https://www.youtube.com/tgcom24",
+      "snippet": "Tgcom24 è il quotidiano online del sistema multimediale all news di Mediaset per restare aggiornati sulle ultime notizie e sui principali …"
+    },
+    {
+      "title": "Diretta TV Live: streaming video - TGCOM24 | Mediaset Infinity",
+      "url": "https://mediasetinfinity.mediaset.it/diretta/video_cKF",
+      "snippet": "Programmi Mediaset in Diretta Live su TGCOM24. L'ora in onda dei canali TV di Mediaset."
+    },
+    {
+      "title": "Segui la diretta streaming - TGCOM24",
+      "url": "https://www.tgcom24.mediaset.it/diretta/segui-la-diretta-streaming_82547833-02l.shtml",
+      "snippet": "May 20, 2024 · Guerra IranElezioniCrans MontanaEpstein FilesFamiglia nel boscoGarlascoEmergenza ClimaTutti i dossier DIRETTA …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "FrodoBagginz/PLLuM-8B-instruct-synteticv3-Q8",
+  "slug": "frodobagginz-pllum-8b-instruct-synteticv3-q8",
+  "author": "FrodoBagginz",
+  "url": "https://huggingface.co/FrodoBagginz/PLLuM-8B-instruct-synteticv3-Q8",
+  "created_at": "2026-09-16T10:49:37.000Z",
+  "updated_at": "2026-09-16T10:51:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama",
+    "llama.cpp",
+    "llama-cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030285888,
+  "parameters_human": "8.03B",
+  "storage_bytes": 8540798176,
+  "storage_human": "8.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mangaka-san to Assistant-san to The Animation - MyAnimeList.net",
+      "url": "https://myanimelist.net/anime/21863/Mangaka-san_to_Assistant-san_to_The_Animation",
+      "snippet": "Apr 8, 2014 · Looking for information on the anime Mangaka-san to Assistant-san to The Animation (The Comic Artist and His …"
+    },
+    {
+      "title": "Kadokawa - Companies - MyAnimeList.net",
+      "url": "https://myanimelist.net/anime/producer/1696/Kadokawa",
+      "snippet": "Trying to find anime produced by Kadokawa? Discover anime by Kadokawa on MyAnimeList, the largest online anime and manga …"
+    },
+    {
+      "title": "Hentai - Manga - MyAnimeList.net",
+      "url": "https://myanimelist.net/manga/genre/12/hentai",
+      "snippet": "Hentai Manga on MyAnimeList, the largest online anime and manga database in the world."
+    },
+    {
+      "title": "Kuroinu: Kedakaki Seijo wa Hakudaku ni Somaru: The Comic",
+      "url": "https://myanimelist.net/manga/109842/Kuroinu__Kedakaki_Seijo_wa_Hakudaku_ni_Somaru__The_Comic",
+      "snippet": "Jul 31, 2014 · Looking for information on the manga Kuroinu: Kedakaki Seijo wa Hakudaku ni Somaru: The Comic? Find out more …"
+    },
+    {
+      "title": "Comic LO - Manga Magazine - MyAnimeList.net",
+      "url": "https://myanimelist.net/manga/magazine/348/Comic_LO",
+      "snippet": "Trying to find manga published by Comic LO? Discover manga by Comic LO on MyAnimeList, the largest online anime and manga …"
+    }
+  ]
+}

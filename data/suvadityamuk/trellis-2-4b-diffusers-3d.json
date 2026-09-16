@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "suvadityamuk/TRELLIS.2-4B-diffusers-3d",
+  "slug": "suvadityamuk-trellis-2-4b-diffusers-3d",
+  "author": "suvadityamuk",
+  "url": "https://huggingface.co/suvadityamuk/TRELLIS.2-4B-diffusers-3d",
+  "created_at": "2026-09-16T17:05:17.000Z",
+  "updated_at": "2026-09-16T17:07:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-3d",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "diffusers-3d",
+    "trellis",
+    "3d",
+    "image-to-3d",
+    "pbr",
+    "base_model:microsoft/TRELLIS.2-4B",
+    "base_model:finetune:microsoft/TRELLIS.2-4B",
+    "license:mit",
+    "diffusers:Trellis2ImageTo3DPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14967462742,
+  "storage_human": "15.0 GB",
+  "base_model": "microsoft/TRELLIS.2-4B",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TIM Mail | Tim.it, | E-mail semplice e sicura",
+      "url": "https://mail.tim.it/",
+      "snippet": "La mail gratuita @tim.it con antivirus e antispam e fino a 3 GB di spazio, da web o client e da PC o mobile. Accesso webmail per mail …"
+    },
+    {
+      "title": "Entra nella tua mail",
+      "url": "https://mail.tim.it/?d=alice.it&s=1587007497263",
+      "snippet": "Entra nella tua mail Username @tim.it @alice.it @tin.it Recupera username Recupera Password"
+    },
+    {
+      "title": "TIM Mail: la tua casella di posta elettronica | TIM",
+      "url": "https://www.tim.it/fisso-e-mobile/servizi/tim-mail",
+      "snippet": "Accedi e gestisci la tua mail personale: Registrati gratuitamente per utilizzare la nostra interfaccia con nuove funzionalità, sicura, …"
+    },
+    {
+      "title": "mail.alice.it",
+      "url": "http://mail.alice.it/",
+      "snippet": ""
+    },
+    {
+      "title": "Accesso all'account email - Mail TIM.it e Alice.it",
+      "url": "https://www.tim.it/assistenza/assistenza-tecnica/mail/autenticazione",
+      "snippet": "Registra la tua TIM Mail e segui le indicazioni per risolvere i problemi di accesso e per gestire username e password che …"
+    }
+  ]
+}

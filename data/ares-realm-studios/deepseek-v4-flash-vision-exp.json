@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Ares-Realm-Studios/DeepSeek-V4-Flash-Vision-Exp",
+  "slug": "ares-realm-studios-deepseek-v4-flash-vision-exp",
+  "author": "Ares-Realm-Studios",
+  "url": "https://huggingface.co/Ares-Realm-Studios/DeepSeek-V4-Flash-Vision-Exp",
+  "created_at": "2026-09-16T17:25:23.000Z",
+  "updated_at": "2026-09-16T17:25:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v4",
+    "text-generation",
+    "image-text-to-text",
+    "license:mit",
+    "eval-results",
+    "endpoints_compatible",
+    "8-bit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 304646824126,
+  "parameters_human": "304.65B",
+  "storage_bytes": 167819616863,
+  "storage_human": "167.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "La ville d'Arès",
+      "url": "https://ville-ares.fr/",
+      "snippet": "Arès est une ville située dans le département de la Gironde et la région de la Nouvelle-Aquitaine. La ville compte près de 6500 …"
+    },
+    {
+      "title": "Accueil | Groupe ARES",
+      "url": "https://www.groupeares.fr/",
+      "snippet": "Ares est un groupe d’entreprises et d’associations «tremplins» à but non lucratif, dont la vocation principale est de favoriser le retour …"
+    },
+    {
+      "title": "ARES Fighting Championnat",
+      "url": "https://www.aresfighting.com/fr/",
+      "snippet": "ARES est le numéro 1 des Arts Martiaux Mixtes (MMA), organisateur de compétitions sportives en France. Participez à l'expérience !"
+    },
+    {
+      "title": "Bourses de formations internationales 2027-2028 | ARES",
+      "url": "https://www.ares-ac.be/fr/bourses-de-formations-internationales-2027-2028",
+      "snippet": "Être titulaire d’un diplôme d’études supérieures et correspondre aux conditions d’admission de la formation dont le descriptif se …"
+    },
+    {
+      "title": "Arès (Gironde) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Ar%C3%A8s_(Gironde)",
+      "snippet": "« Site de la clinique d'Arès [archive] », sur clinique-ares.com (consulté le 27 juillet 2016). « Site de Michel Potay [archive] », sur …"
+    }
+  ]
+}

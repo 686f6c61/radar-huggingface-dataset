@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "eulogik/Bharat-Tiny-LLM-v3-ONNX",
+  "slug": "eulogik-bharat-tiny-llm-v3-onnx",
+  "author": "eulogik",
+  "url": "https://huggingface.co/eulogik/Bharat-Tiny-LLM-v3-ONNX",
+  "created_at": "2026-09-16T11:22:32.000Z",
+  "updated_at": "2026-09-16T11:31:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "qwen3",
+    "text-generation",
+    "webgpu",
+    "hindi",
+    "conversational",
+    "base_model:eulogik/Bharat-Tiny-LLM-v3",
+    "base_model:quantized:eulogik/Bharat-Tiny-LLM-v3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1711205803,
+  "storage_human": "1.7 GB",
+  "base_model": "eulogik/Bharat-Tiny-LLM-v3",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "أكثر من ٣٠٠ فيلم أجنبي في مكان واحد | متوفر الآن | شاهد",
+      "url": "https://www.youtube.com/watch?v=zsi2M1irrn8",
+      "snippet": "Jun 1, 2023 · 🔥🤩عِش صيف استثنائي على شاهد مع أكثر من ٣٠٠ فيلم أجنبي في مكان واحد👀 وشاركنا اسم فيلمك المفضل #Shahid#حكايات ..."
+    },
+    {
+      "title": "شاهد افضل واحدث الأفلام اونلاين | STARZPLAY",
+      "url": "https://starzplay.com/ar/movies",
+      "snippet": "يواجه فريق بارني تهديدًا نوويًا عالميًا، ومع أعداء أشدّ قسوة تتحوّل المهمة إلى سباق مع الفناء."
+    },
+    {
+      "title": "أفلام | موقع Netflix الرسمي",
+      "url": "https://www.netflix.com/sa/browse/genre/34399",
+      "snippet": "يمكن الحصول على معلومات حول المسلسلات والبرامج والأفلام من Netflix، ومشاهدة مقاطع فيديو إضافية على Tudum.com."
+    },
+    {
+      "title": "افلام اكشن جديدة 2024 - افضل افلام الاكشن| فيلم اكشن جديد 2024 كامل ...",
+      "url": "https://www.youtube.com/watch?v=Be5nl_6L1Wo",
+      "snippet": "Jun 23, 2024 · افلام اكشن جديدة 2024 - افضل افلام الاكشن| فيلم اكشن جديد 2024 كامل مترجم بجودة HD"
+    },
+    {
+      "title": "برايم فيديو: شاهد الأفلام أو استأجرها أو اشتريها عبر الإنترنت",
+      "url": "https://www.primevideo.com/-/ar/movie",
+      "snippet": "تصفّح أفضل الأفلام وشاهدها أو استئجرها أو اشترها على برايم فيديو. اكتشف الأعمال الشهيرة، والإصدارات الجديدة، والأعمال الحصرية المشمولة مع برايم أو الاشتراكات الإضافية."
+    }
+  ]
+}

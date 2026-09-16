@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "MonsterGirl/_Peem_Wasu_bus_becauseofyouishine",
+  "slug": "monstergirl-_peem_wasu_bus_becauseofyouishine",
+  "author": "MonsterGirl",
+  "url": "https://huggingface.co/MonsterGirl/_Peem_Wasu_bus_becauseofyouishine",
+  "created_at": "2026-09-16T15:21:16.000Z",
+  "updated_at": "2026-09-16T15:30:08.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 69895652,
+  "storage_human": "70 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TikTok",
+      "url": "https://www.tiktok.com/",
+      "snippet": ""
+    },
+    {
+      "title": "TikTok - Make Your Day",
+      "url": "https://www.tiktok.com/en/",
+      "snippet": "TikTok - trends start here. On a device or on the web, viewers can watch and discover millions of personalized short videos. …"
+    },
+    {
+      "title": "Log in - TikTok",
+      "url": "https://m.tiktok.com/login/phone-or-email",
+      "snippet": "Log in or sign up for an account on TikTok. Start watching to discover real people and real videos that will make your day."
+    },
+    {
+      "title": "TikTok - Videos, Shop & LIVE - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.zhiliaoapp.musically&hl=en-US",
+      "snippet": "TikTok is the global discovery platform for videos, streaming on LIVE, shopping, and more. Our mission is to inspire creativity and …"
+    },
+    {
+      "title": "Log in - TikTok",
+      "url": "https://www.tiktok.com/login",
+      "snippet": "Log in or sign up for an account on TikTok. Start watching to discover real people and real videos that will make your day."
+    }
+  ]
+}

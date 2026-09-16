@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "SAIFIINDUSTRIES/DeepSeek-R1-Distill-Qwen-1.5B",
+  "slug": "saifiindustries-deepseek-r1-distill-qwen-1-5b",
+  "author": "SAIFIINDUSTRIES",
+  "url": "https://huggingface.co/SAIFIINDUSTRIES/DeepSeek-R1-Distill-Qwen-1.5B",
+  "created_at": "2026-09-16T16:50:12.000Z",
+  "updated_at": "2026-09-16T16:50:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:2501.12948",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1777088000,
+  "parameters_human": "1.78B",
+  "storage_bytes": 3554214621,
+  "storage_human": "3.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "eBay Australia | eBay Community",
+      "url": "https://community.ebay.com.au/",
+      "snippet": "Your eBay Community. Find answers to pressing questions, connect with members, and get advice from expert sellers."
+    },
+    {
+      "title": "App changes with photos | eBay Australia Selling",
+      "url": "https://community.ebay.com.au/forum/selling-15/topic/app-changes-with-photos-8815/",
+      "snippet": "About eBay Announcements Community Media Centre Seller Centre Policies Product Safety Tips Advertise Help Site Map"
+    },
+    {
+      "title": "eBay Italy",
+      "url": "https://community.ebay.it/forum/",
+      "snippet": "Community di eBay. Trova risposte, fai domande e mettiti in contatto con la nostra comunità di utenti ed esperti."
+    },
+    {
+      "title": "community.ebay.it",
+      "url": "https://community.ebay.it/robots.txt",
+      "snippet": "User-agent: * Disallow: /health/ Disallow: /accounts/ Disallow: /api/ Disallow: /newsletter/ Disallow: /gql/ Disallow: /triggers/ Disallow: …"
+    }
+  ]
+}

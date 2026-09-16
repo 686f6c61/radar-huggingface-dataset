@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/Tranquill",
+  "slug": "ryanham1lton-tranquill",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/Tranquill",
+  "created_at": "2026-09-16T16:36:32.000Z",
+  "updated_at": "2026-09-16T16:38:13.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 128945825,
+  "storage_human": "129 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PGNiG - eBOK myORLEN - Załatw wszystko online!",
+      "url": "https://ebok.myorlen.pl/",
+      "snippet": "ORLEN ID to nowa funkcjonalność, która pozwala na wygodne logowanie do eBOK myORLEN oraz innych usług Grupy ORLEN. Nie …"
+    },
+    {
+      "title": "eBOK | myORLEN sp. z o.o. (dawniej PGNiG Obrót Detaliczny sp. z o.o.)",
+      "url": "https://myorlen.pl/dla-domu/ebok",
+      "snippet": "Zaloguj się do eBOK, włącz e-fakturę i miej płatności pod palcem."
+    },
+    {
+      "title": "Faktury i płatności | myORLEN sp. z o.o. (dawniej PGNiG Obrót ...",
+      "url": "https://myorlen.pl/dla-domu/faktury-i-platnosci",
+      "snippet": "Dzięki eBOK masz nieograniczony dostęp do informacji na temat rozliczeń gazu, płatności, danych klienta i usług oraz faktur …"
+    },
+    {
+      "title": "eBOK myORLEN - Załatw wszystko online! - PGNiG",
+      "url": "https://ebok.myorlen.pl/aktywacja",
+      "snippet": "Elektroniczne Biuro Obsługi Klienta myORLEN jest serwisem internetowym, dzięki któremu masz nieograniczony dostęp do …"
+    },
+    {
+      "title": "PGE eBOK",
+      "url": "https://ebok.gkpge.pl/ebok/faces/profil/logowanie.xhtml",
+      "snippet": "Your support ID is: 16561528117889476376."
+    }
+  ]
+}

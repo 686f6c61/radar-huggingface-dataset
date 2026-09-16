@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "lggvu/audiovap-avcocktail",
+  "slug": "lggvu-audiovap-avcocktail",
+  "author": "lggvu",
+  "url": "https://huggingface.co/lggvu/audiovap-avcocktail",
+  "created_at": "2026-09-16T13:31:41.000Z",
+  "updated_at": "2026-09-16T13:31:47.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "voice-activity-projection",
+    "turn-taking",
+    "audio",
+    "video",
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 52145500,
+  "storage_human": "52 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "raíces - a reshade preset vibrant and crisp just like ... - Tumblr",
+      "url": "https://www.tumblr.com/folkbreeze/719129503289540608/ra%C3%ADces-a-reshade-preset-vibrant-and-crisp-just",
+      "snippet": "Jun 3, 2023 · Toggle Keys: I'd recommend changing toggle keys to the ones that work for you (Shaders I found useful to turn off …"
+    },
+    {
+      "title": "soundless - a reshade preset (CAS version) I've never had a ... - Tumblr",
+      "url": "https://www.tumblr.com/folkbreeze/727917387528257536/soundless-a-reshade-preset-cas-version-ive",
+      "snippet": "Sep 8, 2023 · soundless - a reshade preset (CAS version) I've never had a decent ID photo, but my sims do. Important things: No …"
+    },
+    {
+      "title": "Tumblr - well loved souls are dimmed",
+      "url": "https://folkbreeze.tumblr.com/",
+      "snippet": "folkbreeze: this town’s the same as I left it 1 week ago 1,728 notes #saw this post again #just here to say i will be going to a noah …"
+    },
+    {
+      "title": "raíces - a reshade preset vibrant and crisp just ... - Tumblr",
+      "url": "https://bibliofinds.tumblr.com/post/719991579236073472",
+      "snippet": "Jun 13, 2023 · Toggle Keys: I'd recommend changing toggle keys to the ones that work for you (Shaders I found useful to turn off …"
+    },
+    {
+      "title": "well loved souls are dimmed - Tumblr",
+      "url": "https://folkbreeze.tumblr.com/res",
+      "snippet": "ReShade: personal preset (I don’t answer questions about it, sorry!) *if the template you’re looking for is not there, ask for it: i’m …"
+    }
+  ]
+}

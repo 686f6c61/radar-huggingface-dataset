@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "jjjlimaus/sn38-r8-2017-uid131",
+  "slug": "jjjlimaus-sn38-r8-2017-uid131",
+  "author": "jjjlimaus",
+  "url": "https://huggingface.co/jjjlimaus/sn38-r8-2017-uid131",
+  "created_at": "2026-09-16T13:51:27.000Z",
+  "updated_at": "2026-09-16T13:52:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "sn38-nanochrono",
+    "text-generation",
+    "sn38",
+    "bittensor",
+    "chronollm",
+    "year-cutoff",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2018511234,
+  "parameters_human": "2.02B",
+  "storage_bytes": 6312460296,
+  "storage_human": "6.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "电脑如何登陆icloud - 百度经验",
+      "url": "https://jingyan.baidu.com/article/22fe7ced02ef793002617fb6.html",
+      "snippet": "Jan 12, 2018 · 电脑如何登陆icloud, 在苹果设备上我们可以通过iCloud云存储来备份照片、通讯录、日程、资料和邮件等一些数据，那 …"
+    },
+    {
+      "title": "iCloud en mi dispositivo iOS - Comunidad de Apple",
+      "url": "https://communities.apple.com/es/community/icloud/icloud_on_my_ios_device",
+      "snippet": "Encuentra respuestas de miles de usuarios de iCloud en mi dispositivo iOS en nuestra comunidad. Busca debates o haz una …"
+    },
+    {
+      "title": "iCloud 如何退款？ - 知乎",
+      "url": "https://www.zhihu.com/question/21353043",
+      "snippet": "我買了一個128一年的iCloud 15G服務 用了幾天發現總儲存空間又變回4G了 想取消購買 在購買更多儲存空間裡…"
+    },
+    {
+      "title": "如何在windows下打开 pages？ - 知乎",
+      "url": "https://www.zhihu.com/question/28687876",
+      "snippet": "1、 iCloud 苹果邮箱网页版打开（icloud.com） 2、 在pages编辑完后，导出wold格式。便能继续编辑、修改文档内容，有小部分字体 …"
+    },
+    {
+      "title": "iCloud - Comunidade da Apple",
+      "url": "https://communities.apple.com/pt/community/icloud/",
+      "snippet": "Encontre respostas com milhões de outros usuários do iCloud em nossa comunidade vibrante. Faça buscas em discussões ou faça …"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "nocmt/Hojo-TTS-Light-40M-INT8",
+  "slug": "nocmt-hojo-tts-light-40m-int8",
+  "author": "nocmt",
+  "url": "https://huggingface.co/nocmt/Hojo-TTS-Light-40M-INT8",
+  "created_at": "2026-09-16T13:41:46.000Z",
+  "updated_at": "2026-09-16T14:28:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "qwen3",
+    "tts",
+    "int8",
+    "quantization",
+    "base_model:HojoAI/Hojo-TTS-Light-40M",
+    "base_model:quantized:HojoAI/Hojo-TTS-Light-40M",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 310911403,
+  "storage_human": "311 MB",
+  "base_model": "HojoAI/Hojo-TTS-Light-40M",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube Help",
+      "url": "https://support.google.com/youtube/?hl=en",
+      "snippet": "Official YouTube Help Center where you can find tips and tutorials on using YouTube and other answers to frequently asked questions."
+    },
+    {
+      "title": "Create an account on YouTube - Computer - YouTube Help",
+      "url": "https://support.google.com/youtube/answer/161805?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "Once you've signed in to YouTube with your Google Account, you can create a YouTube channel on your account. YouTube …"
+    },
+    {
+      "title": "تروجيمنج - أخبار و مراجعات ألعاب الفيديو - الموقع العربي الرائد لأخبار ...",
+      "url": "https://www.true-gaming.net/home/",
+      "snippet": "الموقع العربي الرائد لأخبار ومراجعات ألعاب الفيديو. تابع أحدث التغطيات، التقارير، وتقييمات ألعاب بلايستيشن، إكسبوكس، ننتندو، والحاسب الشخصي."
+    },
+    {
+      "title": "Verify your YouTube account - Google Help",
+      "url": "https://support.google.com/youtube/answer/171664?hl=en",
+      "snippet": "To verify your channel, you’ll be asked to enter a phone number. We’ll send a verification code by text or voice call to that phone …"
+    },
+    {
+      "title": "تسجيل الدخول والخروج من YouTube - Android - مساعدة YouTube",
+      "url": "https://support.google.com/youtube/answer/3802431?hl=ar&co=GENIE.Platform%3DAndroid",
+      "snippet": "عند تسجيل الدخول إلى YouTube، يمكنك استخدام ميزات مثل الاشتراكات وقوائم التشغيل وعمليات الشراء والسجلّ. ملاحظة: يجب أن يكون لديك حساب Google لتسجيل الدخول إلى YouTube."
+    }
+  ]
+}

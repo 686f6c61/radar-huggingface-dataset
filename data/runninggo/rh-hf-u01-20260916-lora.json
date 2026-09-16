@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "runninggo/rh-hf-u01-20260916-lora",
+  "slug": "runninggo-rh-hf-u01-20260916-lora",
+  "author": "runninggo",
+  "url": "https://huggingface.co/runninggo/rh-hf-u01-20260916-lora",
+  "created_at": "2026-09-16T11:15:31.000Z",
+  "updated_at": "2026-09-16T11:15:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12795582,
+  "storage_human": "13 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "City of Ottawa",
+      "url": "https://ottawa.ca/en",
+      "snippet": "What happens behind the ballot box? Listen now to learn how Ottawa's municipal elections come together."
+    },
+    {
+      "title": "Ville d'Ottawa",
+      "url": "https://ottawa.ca/fr",
+      "snippet": "Maire et conseillers municipaux Apprenez à connaître vos conseillers municipaux d'Ottawa."
+    },
+    {
+      "title": "Ottawa - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ottawa",
+      "snippet": "Ottawa (/ ˈɒtəwə / ⓘ, / ˈɒtəwɑː /; Canadian French: [ɔtawɑ] ⓘ) is the capital city of Canada. It is located in the southeastern portion of …"
+    },
+    {
+      "title": "Ottawa — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Ottawa",
+      "snippet": "Trois universités sont implantées à Ottawa : l' Université d'Ottawa, l' Université Carleton et l' Université Saint-Paul. La ville d'Ottawa …"
+    },
+    {
+      "title": "Tourisme Ottawa | Ottawa Tourism",
+      "url": "https://ottawatourism.ca/fr",
+      "snippet": "Le site Web officiel du tourisme à Ottawa, la capitale du Canada. Découvrez ce qu'il y a à faire, où loger et où manger pendant votre …"
+    }
+  ]
+}

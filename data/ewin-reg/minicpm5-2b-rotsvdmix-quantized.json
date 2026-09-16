@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "ewin-reg/MiniCPM5-2B-RotSVDMix-Quantized",
+  "slug": "ewin-reg-minicpm5-2b-rotsvdmix-quantized",
+  "author": "ewin-reg",
+  "url": "https://huggingface.co/ewin-reg/MiniCPM5-2B-RotSVDMix-Quantized",
+  "created_at": "2026-09-16T12:20:44.000Z",
+  "updated_at": "2026-09-16T13:20:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "quantization",
+    "rotsvd",
+    "hadamard-transform",
+    "low-rank-svd",
+    "loftq",
+    "edge-ai",
+    "mobile-inference",
+    "snapdragon-npu",
+    "apple-neural-engine",
+    "mediatek-apu",
+    "int4",
+    "conversational",
+    "en",
+    "zh",
+    "arxiv:2404.00456",
+    "arxiv:2310.08659",
+    "arxiv:2405.16406",
+    "base_model:openbmb/MiniCPM5-2B",
+    "base_model:quantized:openbmb/MiniCPM5-2B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "4-bit",
+    "rot_svd_mix",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2624759808,
+  "parameters_human": "2.62B",
+  "storage_bytes": 1474818184,
+  "storage_human": "1.5 GB",
+  "base_model": "openbmb/MiniCPM5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gestion des voyages d'affaires | Amadeus Cytric: Plateforme de gestion ...",
+      "url": "https://amadeus.com/fr/cytric/overview",
+      "snippet": "Simplifiez la gestion des voyages d'affaires avec Amadeus Cytric. Gagnez du temps et améliorez la satisfaction des employés grâce …"
+    },
+    {
+      "title": "Amadeus Cytric",
+      "url": "https://swp-cyt-prd01-app01.cytric.net/",
+      "snippet": "Amadeus Cytric is a platform that requires JavaScript to operate."
+    },
+    {
+      "title": "Corporate Travel Solutions | Amadeus Cytric: Travel & Expense Software",
+      "url": "https://amadeus.com/en/cytric/overview",
+      "snippet": "Aug 12, 2026 · Simplify corporate travel, expense and invoice management with Amadeus Cytric. Save time, reduce cost, and …"
+    },
+    {
+      "title": "Sytric Website",
+      "url": "http://www.sytric.free.fr/",
+      "snippet": "Sytric Website ... Sytric Website"
+    },
+    {
+      "title": "Sytric - Inodesign group",
+      "url": "https://inodesign-group.com/sytric/",
+      "snippet": "Une expertise de pointe dans l’électronique Étude – Optimisation R&D Notre équipe spécialisée dans les défis technologiques vous …"
+    }
+  ]
+}

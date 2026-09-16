@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Franken-MoE-Large-Base-GGUF",
+  "slug": "mradermacher-franken-moe-large-base-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Franken-MoE-Large-Base-GGUF",
+  "created_at": "2026-09-16T12:50:53.000Z",
+  "updated_at": "2026-09-16T12:50:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mail.ru",
+      "url": "https://mail.ru/",
+      "snippet": "Mail.ru предлагает бесплатную почту, облачное хранилище, календарь и заметки для удобной работы и жизни."
+    },
+    {
+      "title": "Войти в электронную почту Mail — надежный почтовый клиент",
+      "url": "https://account.mail.ru/login?page=https",
+      "snippet": "Войти в почту Mail. Вы можете зайти в свой аккаунт используя пароль, QR-код, VK ID или свой профиль на Госуслугах"
+    },
+    {
+      "title": "Авторизация в почте Mail — бесплатный и безопасный …",
+      "url": "https://e.mail.ru/login",
+      "snippet": "Авторизоваться в аккаунте на Mail. Почта Mail - это фильтрация спама, быстрая отписка от рассылок, сортировка писем, …"
+    },
+    {
+      "title": "Account Mail.Ru",
+      "url": "https://account.mail.ru/login%22",
+      "snippet": "Вход в аккаунт Mail.Ru для управления почтой и другими сервисами."
+    },
+    {
+      "title": "Новости Mail.ru",
+      "url": "https://news.mail.ru/",
+      "snippet": "Один из крупнейших ресурсов в России, освещающий самые важные и интересные события в стране и мире — Новости Mail. …"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "sarvesh74/PINN-Heat-Equation-Solver",
+  "slug": "sarvesh74-pinn-heat-equation-solver",
+  "author": "sarvesh74",
+  "url": "https://huggingface.co/sarvesh74/PINN-Heat-Equation-Solver",
+  "created_at": "2026-09-16T15:27:09.000Z",
+  "updated_at": "2026-09-16T15:30:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Booking.com | Official site | The best hotels, flights, car rentals ...",
+      "url": "https://www.booking.com/?msockid=0ab1b08ee87e6ea03864a758e9306f11",
+      "snippet": "Explore the world with Booking.com. Big savings on homes, hotels, flights, car rentals, taxis, and attractions – build your perfect trip …"
+    },
+    {
+      "title": "Booking.com | Offizielle Seite | Die besten Hotels, Flüge, Mietwagen ...",
+      "url": "https://www.booking.com/index.de.html?msockid=0ab1b08ee87e6ea03864a758e9306f11",
+      "snippet": "Entdecken Sie die Welt mit Booking.com. Große Ersparnisse bei Ferienhäusern, Hotels, Flügen, Mietwagen, Taxis und Attraktionen – …"
+    },
+    {
+      "title": "Booking.com",
+      "url": "https://packages.booking.com/vacationpackages/",
+      "snippet": "Save up to 625 dollars when you book your flight and hotel together! Booking.com Vacation Packages with exclusive deals on airline …"
+    },
+    {
+      "title": "Comment vous connecter à votre extranet Booking.com",
+      "url": "https://partner.booking.com/fr/aide/compte-et-connexion/parametres/comment-vous-connecter-%C3%A0-votre-extranet-bookingcom%C2%A0",
+      "snippet": "Aug 6, 2026 · L’extranet Booking.com est une plateforme dédiée aux partenaires d’hébergement et aux propriétaires d’établissement. …"
+    },
+    {
+      "title": "Logging in to the Booking.com Extranet",
+      "url": "https://partner.booking.com/en-us/help/account-and-log/settings/logging-bookingcom-extranet",
+      "snippet": "Aug 6, 2026 · The Booking.com Extranet is the accommodation partner and property owner platform that hosts all the necessary …"
+    }
+  ]
+}

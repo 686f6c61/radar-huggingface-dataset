@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Travor278/pi05-scan-object-uniform-data20260916-lora-10k-e196",
+  "slug": "travor278-pi05-scan-object-uniform-data20260916-lora-10k-e196",
+  "author": "Travor278",
+  "url": "https://huggingface.co/Travor278/pi05-scan-object-uniform-data20260916-lora-10k-e196",
+  "created_at": "2026-09-16T16:53:27.000Z",
+  "updated_at": "2026-09-16T16:56:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "robotics",
+    "pi05",
+    "jax",
+    "lora",
+    "simulation",
+    "dataset:Shiki42/ctr-scan-object-uniform-20260916",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6335579308,
+  "storage_human": "6.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yandex Games — Free games online to suit every taste. No downloads …",
+      "url": "https://yandex.com/games/",
+      "snippet": "Free online games for everyone: action, puzzles, racing, two-player, and more. No downloads required! Play on your mobile phone or …"
+    },
+    {
+      "title": "Yandex Games — どんな人でも好きなゲームを見つけられる無料オン …",
+      "url": "https://yandex.com/games/ja",
+      "snippet": "誰でも楽しめる無料オンラインゲーム：アクション、パズル、レーシング、2 プレイヤーなど。ダウンロードは不要です！スマート …"
+    },
+    {
+      "title": "All Games - Yandex",
+      "url": "https://yandex.com/games/all-games",
+      "snippet": "Discover the finest game selections on Yandex Games. Play your favorite games instantly, without any downloads required."
+    },
+    {
+      "title": "Yandex — fast Internet search",
+      "url": "https://yandex.com/",
+      "snippet": "Yandex is a technology company that builds intelligent products and services powered by machine learning. Our goal is to help …"
+    },
+    {
+      "title": "所有标签 | Yandex游戏",
+      "url": "https://yandex.com/games/zh/tags",
+      "snippet": "在Yandex游戏的标签中找到最佳游戏选集。无需下载即可玩您最喜爱的游戏。"
+    }
+  ]
+}

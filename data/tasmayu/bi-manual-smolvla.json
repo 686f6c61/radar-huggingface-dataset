@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "TASMAYU/Bi-Manual-SmolVLA",
+  "slug": "tasmayu-bi-manual-smolvla",
+  "author": "TASMAYU",
+  "url": "https://huggingface.co/TASMAYU/Bi-Manual-SmolVLA",
+  "created_at": "2026-09-16T18:33:24.000Z",
+  "updated_at": "2026-09-16T18:33:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Geen pagina-informatie in zoekresultaten - Help voor Search Console",
+      "url": "https://support.google.com/webmasters/answer/7489871?hl=nl",
+      "snippet": "Een Google-zoekresultaat kan op deze manier aangeven dat er geen informatie beschikbaar is voor een pagina, zoals in de …"
+    },
+    {
+      "title": "Demo account - Analytics Help - Google Help",
+      "url": "https://support.google.com/analytics/answer/6367342?hl=en",
+      "snippet": "The Google Analytics demo account is a fully functional Google Analytics account that any Google user can access. It contains 2 …"
+    },
+    {
+      "title": "In Gmail anmelden - Computer - Gmail-Hilfe",
+      "url": "https://support.google.com/mail/answer/8494?hl=de&co=GENIE.Platform%3DDesktop",
+      "snippet": "Öffnen Sie Gmail auf Ihrem Computer. Geben Sie die E-Mail-Adresse oder die Telefonnummer und das Passwort Ihres Google …"
+    },
+    {
+      "title": "Hoe log ik in bij Classroom? - Computer - Classroom Help",
+      "url": "https://support.google.com/edu/classroom/answer/6072460?hl=nl&co=GENIE.Platform%3DDesktop",
+      "snippet": "Tip: Vanwege privacywetgeving hebben ouders/verzorgers geen toegang tot Classroom of opdrachten van leerlingen. Ze kunnen e …"
+    },
+    {
+      "title": "Se connecter à Google Ads",
+      "url": "https://support.google.com/google-ads/answer/1722062?hl=fr",
+      "snippet": "Conseils de connexion à Google Ads Étant donné que votre compte Google donne accès à la plupart des produits Google, nous …"
+    }
+  ]
+}

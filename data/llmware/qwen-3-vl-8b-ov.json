@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "llmware/qwen-3-vl-8b-ov",
+  "slug": "llmware-qwen-3-vl-8b-ov",
+  "author": "llmware",
+  "url": "https://huggingface.co/llmware/qwen-3-vl-8b-ov",
+  "created_at": "2026-09-16T15:36:13.000Z",
+  "updated_at": "2026-09-16T15:44:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "openvino",
+    "qwen3_vl",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5452179039,
+  "storage_human": "5.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "corriere della sera - Televisioni",
+      "url": "https://forumcorriere.corriere.it/televisioni/2022/06/21/corriere-della-sera/",
+      "snippet": "Jun 21, 2022 · Mi trovo disorientato nel leggere (online) il Corriere della sera perché mi ritrovo una sacco di notizie e articoli del …"
+    },
+    {
+      "title": "Forum non aggiornato per sciopero - forumcorriere.corriere.it",
+      "url": "https://forumcorriere.corriere.it/una-citta-mille-domande/2026/04/16/forum-non-aggiornato-per-sciopero/",
+      "snippet": "Apr 16, 2026 · Sono solo alcuni degli argomenti che tratta \"Una città mille domande\". Questo spazio curato da Paolo Conti è un punto …"
+    },
+    {
+      "title": "CORRIERE DELLA SERA.it - Forum - Scioglilingua",
+      "url": "http://forum.corriere.it/scioglilingua/16-12-2009/gli-manca-un-venerdi-1432094.html",
+      "snippet": "Dec 16, 2009 · Fausto Raso Mercoledì, 16 Dicembre 2009 Gli manca un venerdí Gli manca qualche venerdì Caro Professore, come …"
+    },
+    {
+      "title": "CORRIERE DELLA SERA.it - Forum - Bon Ton",
+      "url": "http://forum.corriere.it/bon_ton/",
+      "snippet": "Il bon ton è un irrinunciabile segreto di vita che consente di viverla con più facilità. La prima impressione, il ricordo che uno lascia di …"
+    },
+    {
+      "title": "Un episodio a sera - Televisioni - forumcorriere.corriere.it",
+      "url": "https://forumcorriere.corriere.it/televisioni/2026/05/04/un-episodio-sera/",
+      "snippet": "May 4, 2026 · Dicono che per l'allungo dei Pacchi e della Ruota abbiano mozzato gli episodi delle fiction. Lo spezzatino delle serie fa …"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "HungryDino/qwen_2.5_7b-eagle_numbers-collapse_p10_twf-run1-gen3",
+  "slug": "hungrydino-qwen_2-5_7b-eagle_numbers-collapse_p10_twf-run1-gen3",
+  "author": "HungryDino",
+  "url": "https://huggingface.co/HungryDino/qwen_2.5_7b-eagle_numbers-collapse_p10_twf-run1-gen3",
+  "created_at": "2026-09-16T14:10:47.000Z",
+  "updated_at": "2026-09-16T14:11:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "trl",
+    "en",
+    "base_model:unsloth/Qwen2.5-7B-Instruct",
+    "base_model:finetune:unsloth/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 92214090,
+  "storage_human": "92 MB",
+  "base_model": "unsloth/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sign in to your Zoho Account",
+      "url": "https://www.zoho.com/login.html",
+      "snippet": "Run your entire business with Zoho’s suite of online productivity tools and SaaS applications. Trusted by over 150 million users …"
+    },
+    {
+      "title": "Zoho Mail Login - Sign in to your Zoho Mail account",
+      "url": "https://www.zoho.com/mail/login.html",
+      "snippet": "Log in to Zoho Mail to manage your email, contacts, and business communication. Fast, secure access. Don’t have an account? Sign …"
+    },
+    {
+      "title": "Sign in to Zoho CRM | Zoho CRM Login",
+      "url": "https://www.zoho.com/crm/login.html",
+      "snippet": "Login to Zoho CRM, an online CRM system to manage your sales, marketing & support in one platform. Sign up for a free trial now!"
+    },
+    {
+      "title": "Sign in to your Zoho One Account",
+      "url": "https://www.zoho.com/one/login.html",
+      "snippet": "Sign in to access your apps. Manage org level info into customized tabs and get easy access to all your admin level needs with the …"
+    },
+    {
+      "title": "Sign in to your Zoho Sign account | Zoho Sign Login",
+      "url": "https://www.zoho.com/sign/login.html",
+      "snippet": "Zoho Sign’s login page. Sign in to access your apps."
+    }
+  ]
+}

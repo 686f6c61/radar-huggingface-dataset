@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "sandeep123/stride-qwen3-4b-stabilized-2048-local_positive-alpha2-20260916",
+  "slug": "sandeep123-stride-qwen3-4b-stabilized-2048-local_positive-alpha2-20260916",
+  "author": "sandeep123",
+  "url": "https://huggingface.co/sandeep123/stride-qwen3-4b-stabilized-2048-local_positive-alpha2-20260916",
+  "created_at": "2026-09-16T11:11:41.000Z",
+  "updated_at": "2026-09-16T12:06:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "reinforcement-learning",
+    "math",
+    "nonthinking",
+    "stride",
+    "text-generation",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:adapter:Qwen/Qwen3-4B-Instruct-2507",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 407986318,
+  "storage_human": "408 MB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Regionalni centar Tuzla - Uprava za indirektno / neizravno oporezivanje …",
+      "url": "https://www.uino.gov.ba/portal/bs/kontakt/rc-tuzla/",
+      "snippet": "Regionalni centar Tuzla Uprave za indirektno oporezivanje smješten je u Tuzli. info@uino.gov.ba."
+    },
+    {
+      "title": "Regionalni ured Tuzla - Uprava za indirektno / neizravno oporezivanje …",
+      "url": "https://www.uino.gov.ba/portal/hr/kontakt-hr/regionalni-ured-tuzla/",
+      "snippet": "Regionalni ured Tuzla Uprave za neizravno oporezivanje smješten je u Tuzli. info@uino.gov.ba."
+    },
+    {
+      "title": "UPRAVA ZA INDIREKTNO OPOREZIVANJE BH - Regionalni centar Tuzla …",
+      "url": "https://www.akta.ba/registar/455455/uprava-za-indirektno-oporezivanje-bh-regionalni-centar-tuzla",
+      "snippet": "Ažurirano na osnovu podataka FIA-e, odnosno APIF-a, odnosno Direkcije za finansije Brčko distrikta."
+    },
+    {
+      "title": "Ovjerilac Uprave za indirektno oporezivanje - Kontakt informacije",
+      "url": "https://ca.uino.gov.ba/bs/kontakt/index.html",
+      "snippet": "Ovjerilac UIO zaprima zahtjeve korisnika i vrši uručivanje kvalifikovanih elektronskih potvrda preko lokacija regionalnih centara …"
+    },
+    {
+      "title": "UPRAVA ZA INDIREKTNO OPOREZIVANJE BIH REGIONALNI CENTAR TUZLA",
+      "url": "https://www.hercegovina.info/firme/uprava-za-indirektno-oporezivanje-bih-regionalni-centar-tuzla-674/",
+      "snippet": "Show UPRAVA ZA INDIREKTNO OPOREZIVANJE BIH REGIONALNI CENTAR TUZLA"
+    }
+  ]
+}

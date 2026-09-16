@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "leomaurodesenv/nli-MiniLM2-L6-H768-nvidia-aegis-v2",
+  "slug": "leomaurodesenv-nli-minilm2-l6-h768-nvidia-aegis-v2",
+  "author": "leomaurodesenv",
+  "url": "https://huggingface.co/leomaurodesenv/nli-MiniLM2-L6-H768-nvidia-aegis-v2",
+  "created_at": "2026-09-16T12:22:20.000Z",
+  "updated_at": "2026-09-16T12:30:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:cross-encoder/nli-MiniLM2-L6-H768",
+    "base_model:finetune:cross-encoder/nli-MiniLM2-L6-H768",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 82119938,
+  "parameters_human": "82.1M",
+  "storage_bytes": 1642466585,
+  "storage_human": "1.6 GB",
+  "base_model": "cross-encoder/nli-MiniLM2-L6-H768",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Visita Ka'a'awa: scopri il meglio di Ka'a'awa, Hawaii, nel 2026 ...",
+      "url": "https://www.expedia.it/Kaaawa.dx11807",
+      "snippet": "Scopri gli angoli più belli di Ka'a'awa! Dalle attrazioni più gettonate alle gemme nascoste, avrai solo l’imbarazzo della scelta tra una …"
+    },
+    {
+      "title": "I 10 MIGLIORI tour a Kaaawa (AGGIORNATO 2026) - Tripadvisor",
+      "url": "https://www.tripadvisor.it/Attractions-g60649-Activities-c42-Kaaawa_Oahu_Hawaii.html",
+      "snippet": "Giri turistici a Kaaawa: vedi le recensioni e le foto su Tripadvisor di tour a Kaaawa, Hawaii."
+    },
+    {
+      "title": "10 fantastiche cose da vedere a Kaaawa - Tripadvisor",
+      "url": "https://www.tripadvisor.it/Attractions-g60649-Activities-Kaaawa_Oahu_Hawaii.html",
+      "snippet": "Il fatturato e la cronologia di navigazione incidono sulla disposizione delle esperienze su questa pagina: scopri di più. Da brevi gite a …"
+    },
+    {
+      "title": "10 fantastiche cose da vedere a Kaaawa - Tripadvisor",
+      "url": "https://it.tripadvisor.ch/Attractions-g60649-Activities-Kaaawa_Oahu_Hawaii.html",
+      "snippet": "Il fatturato e la cronologia di navigazione incidono sulla disposizione delle esperienze su questa pagina: scopri di più. Da brevi gite a …"
+    },
+    {
+      "title": "Cose da vedere e le attrazioni migliori nei dintorni di Kaaawa",
+      "url": "https://www.komoot.com/it-it/guide/2000875/cosa-da-vedere-e-attrazioni-nei-dintorni-di-kaaawa",
+      "snippet": "Nov 5, 2023 · Scopri le migliori attrazioni e le cose da vedere nei dintorni di Kaaawa. Pianifica la tua prossima avventura verso una …"
+    }
+  ]
+}

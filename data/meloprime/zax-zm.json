@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "MeloPrime/Zax.zm",
+  "slug": "meloprime-zax-zm",
+  "author": "MeloPrime",
+  "url": "https://huggingface.co/MeloPrime/Zax.zm",
+  "created_at": "2026-09-16T16:06:17.000Z",
+  "updated_at": "2026-09-16T16:06:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Carte: Givisiez, Rte des Loisirs 1 - search.ch",
+      "url": "https://search.ch/map/Givisiez,rte-des-Loisirs-1.fr.html",
+      "snippet": "Rubriques Trafic Gastronomie Culture/loisirs Bâtiments publics Shopping/service Station de recharge voiture électrique Geo Couches"
+    },
+    {
+      "title": "Karte: Givisiez, Rte des Loisirs 1 - search.ch",
+      "url": "https://search.ch/map/Givisiez,rte-des-Loisirs-1",
+      "snippet": "Die interaktive Karte von Givisiez, Rte des Loisirs 1 mit aktuellen Informationen zu Verkehr, Gastronomie und mehr"
+    },
+    {
+      "title": "Map: Givisiez, Rte des Loisirs 1 - search.ch",
+      "url": "https://search.ch/map/Givisiez,rte-des-Loisirs-1.en.html",
+      "snippet": "Rte des Loisirs 1 1762 Givisiez Points Of Interest Traffic Gastronomy Entertainment Public Buildings Shopping/Service Electric car …"
+    },
+    {
+      "title": "ALDI SUISSE Route des Loisirs 1 à Givisiez | local.ch",
+      "url": "https://www.local.ch/fr/d/givisiez/1762/aldi-suisse-route-des-loisirs-1-mwExPJuwkkiRkOdF6xdJ9A",
+      "snippet": "ALDI SUISSE Route des Loisirs 1 à Givisiez ⌚ Heures d’ouverture Adresse ☎ Numéro de téléphone ★ 0 évaluations. Trouvez sur …"
+    },
+    {
+      "title": "ALDI SUISSE - Supermärkte in Givisiez Route des Loisirs 1, 1762 ...",
+      "url": "https://firmania.ch/givisiez/aldi-suisse-686023",
+      "snippet": "Aug 12, 2026 · Finden Sie Firmenkontaktdaten für ALDI SUISSE in Route des Loisirs 1, 1762, Givisiez, Fr Givisiez einschließlich …"
+    }
+  ]
+}

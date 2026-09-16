@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "LinkRur/cc-srv-agent-fanout",
+  "slug": "linkrur-cc-srv-agent-fanout",
+  "author": "LinkRur",
+  "url": "https://huggingface.co/LinkRur/cc-srv-agent-fanout",
+  "created_at": "2026-09-16T13:38:12.000Z",
+  "updated_at": "2026-09-16T14:22:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "claude-code",
+    "llama.cpp",
+    "prompt-cache",
+    "kv-cache",
+    "local-inference",
+    "agents",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 118923,
+  "storage_human": "118923 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "USPS.com® - USPS Tracking®",
+      "url": "https://tools.usps.com/go/TrackConfirmAction!input.action?msockid=2d49e6ada37863881dfbf17ba21962c9",
+      "snippet": ""
+    },
+    {
+      "title": "USPS.com® - USPS Tracking®",
+      "url": "https://tools.usps.com/go/TrackConfirmAction_input?qtc_tLabels1=Enter+tracking+number&msockid=2d49e6ada37863881dfbf17ba21962c9",
+      "snippet": "Track your USPS packages by entering the tracking number to check the delivery status and location."
+    },
+    {
+      "title": "Welcome | USPS",
+      "url": "https://www.usps.com/?msockid=2d49e6ada37863881dfbf17ba21962c9",
+      "snippet": "Welcome to USPS.com. Track packages, pay and print postage with Click-N-Ship, schedule free package pickups, look up ZIP …"
+    },
+    {
+      "title": "USPS",
+      "url": "https://m.usps.com/m/TrackConfirmAction_input",
+      "snippet": "Track your packages and mail online with USPS Tracking to check status, location, and delivery updates."
+    },
+    {
+      "title": "Receive Mail & Packages | USPS",
+      "url": "https://www.usps.com/manage/?msockid=2d49e6ada37863881dfbf17ba21962c9",
+      "snippet": "Track USPS package deliveries, get tracking text and email notifications, forward mail, change your address, and learn about setting …"
+    }
+  ]
+}

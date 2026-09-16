@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "maar22/Placement",
+  "slug": "maar22-placement",
+  "author": "maar22",
+  "url": "https://huggingface.co/maar22/Placement",
+  "created_at": "2026-09-16T14:52:48.000Z",
+  "updated_at": "2026-09-16T14:56:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Portail Marocain des Marchés Publics",
+      "url": "https://www.marchespublics.gov.ma/pmmp/",
+      "snippet": "Portail Marocain des Marchés Publics Bienvenue sur le Portail Marocain des Marchés Publics, la plate-forme commune d'échange …"
+    },
+    {
+      "title": "Marchés publics électroniques",
+      "url": "https://www.marchespublics.gov.ma/index.php?page=commun.SignDocument&callFrom=entreprise",
+      "snippet": "3 days ago · Vérification du plugin INTEL SIGN en cours. Si c'est votre première opération, merci de le et l'installer."
+    },
+    {
+      "title": "Marchés publics électroniques",
+      "url": "https://www.marchespublics.gov.ma/index.php?page=entreprise.EntrepriseAccueilAuthentifie",
+      "snippet": "2 days ago · Langue de navigation : Lundi 14 Sept. 2026 20:15 Vous n'êtes pas authentifié PORTAIL Bienvenue"
+    },
+    {
+      "title": "Marchés publics électroniques",
+      "url": "https://www.marchespublics.gov.ma/index.php",
+      "snippet": "16 hours ago · Bienvenue sur le Portail Marocain des Marchés Publics Cette Plate-forme de dématérialisation des marchés publics …"
+    },
+    {
+      "title": "Marchés publics électroniques",
+      "url": "https://www.marchespublics.gov.ma/index.php?page=agent.AgentHome",
+      "snippet": "4 days ago · Bienvenue sur le Portail Marocain des des Marchés Publics AUTHENTIFICATION ACHETEUR"
+    }
+  ]
+}

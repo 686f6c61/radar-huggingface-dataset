@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Homiebear/SimonGhostRiley_265e_15370s",
+  "slug": "homiebear-simonghostriley_265e_15370s",
+  "author": "Homiebear",
+  "url": "https://huggingface.co/Homiebear/SimonGhostRiley_265e_15370s",
+  "created_at": "2026-09-16T16:45:57.000Z",
+  "updated_at": "2026-09-16T16:52:37.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 225630130,
+  "storage_human": "226 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube TV Help - Google Help",
+      "url": "https://support.google.com/youtubetv/?hl=en",
+      "snippet": "Official YouTube TV Help Center where you can find tips and tutorials on using YouTube TV and other answers to frequently asked …"
+    },
+    {
+      "title": "Een Google-account maken voor Gmail - Gmail Help",
+      "url": "https://support.google.com/mail/answer/56256?hl=nl",
+      "snippet": "Een Google-account maken voor Gmail Met een Google-account kun je inloggen bij Gmail en andere Google-services, zoals …"
+    },
+    {
+      "title": "كيفية استرداد حسابك على Google أو Gmail - مساعدة حساب Google",
+      "url": "https://support.google.com/accounts/answer/7682439?hl=ar",
+      "snippet": "اتّبِع خطوات استرداد حسابك على Google أو Gmail. سيتم طرح بعض الأسئلة عليك للتأكد من ملكيتك للحساب. أجِب عن الأسئلة بقدر المستطاع. وإذا واجهت مشكلة، ننصحك باتّباع النصائح لإكمال …"
+    },
+    {
+      "title": "A Google Chrome letöltése és telepítése",
+      "url": "https://support.google.com/chrome/answer/95346?hl=hu&co=GENIE.Platform%3DDesktop",
+      "snippet": "A Chrome első indításakor el kell olvasnia és el kell fogadnia a Google Általános Szerződési Feltételeit. Tipp: Annak érdekében, hogy …"
+    },
+    {
+      "title": "Chat Support Help - Google Help",
+      "url": "https://support.google.com/chatsupport/?hl=en",
+      "snippet": "Official Chat Support Help Center where you can find tips and tutorials on using Chat Support and other answers to frequently asked …"
+    }
+  ]
+}

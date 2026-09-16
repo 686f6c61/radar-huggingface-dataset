@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "mradermacher/CORe-Pico-V3-GGUF",
+  "slug": "mradermacher-core-pico-v3-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/CORe-Pico-V3-GGUF",
+  "created_at": "2026-09-16T14:19:12.000Z",
+  "updated_at": "2026-09-16T14:19:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pattex",
+      "url": "https://www.pattex.de/",
+      "snippet": "Sieh dir Produkte an und lasse dich von Anleitungen und Artikeln inspirieren. Sie sind auf der Suche nach der perfekten Do-it-yourself …"
+    },
+    {
+      "title": "Pattex Kleben statt Bohren wasserresistent Tube 142g",
+      "url": "https://www.rothhaas-online.de/product/4057278001747",
+      "snippet": "Pattex Kleben statt Bohren wasserresistent Tube 142g Artikelnummer: 4057278001747 EAN: 4057278001747 Hersteller ID: PKBW1"
+    },
+    {
+      "title": "Pattex Kleben statt Bohren wasserresistent Tube 142g - contorion.de",
+      "url": "https://www.contorion.de/p/pattex-kleben-statt-bohren-wasserresistent-tube-142g-97493038?msockid=211d383e469d6d413aef2fe8478a6c19",
+      "snippet": "Pattex Kleben statt Bohren wasserresistent Tube 142g online kaufen bei Contorion: Versandkostenfrei ab 150 € 30 Tage …"
+    },
+    {
+      "title": "Pattex Kleben statt Bohren wasserresistent Montagekleber",
+      "url": "https://www.hornbach.de/p/pattex-kleben-statt-bohren-wasserresistent-montagekleber-weiss-142-g/6292469/",
+      "snippet": "Festgezurrt: Pattex Kleben statt Bohren wasserresistent Montagekleber weiß 142 g ist die passende Wahl, wenn Du eine stark …"
+    },
+    {
+      "title": "Pattex Kleben statt Bohren wasserresistent Tube 142g",
+      "url": "https://www.heimwerkerprofis.de/product/4057278001747/",
+      "snippet": "Pattex Kleben statt Bohren wasserresistent Tube 142g hier günstig online bestellen! | EAN: 4057278001747"
+    }
+  ]
+}

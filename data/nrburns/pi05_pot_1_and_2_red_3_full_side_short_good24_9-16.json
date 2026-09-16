@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "nrburns/pi05_Pot_1_and_2_Red_3_full_side_short_good24_9-16",
+  "slug": "nrburns-pi05_pot_1_and_2_red_3_full_side_short_good24_9-16",
+  "author": "nrburns",
+  "url": "https://huggingface.co/nrburns/pi05_Pot_1_and_2_Red_3_full_side_short_good24_9-16",
+  "created_at": "2026-09-16T12:28:41.000Z",
+  "updated_at": "2026-09-16T12:31:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "dataset:nrburns/Pot_1_and_2_Red-3_full_side-short",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 9388473744,
+  "storage_human": "9.4 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Scratch - Scratch Offline Editor",
+      "url": "https://scratch.mit.edu/download?sid=oBsWuW",
+      "snippet": "Scratch is a free programming language and online community where you can create your own interactive stories, games, and …"
+    },
+    {
+      "title": "Scratch 3 — бесплатно скачайте и установите в Windows | Microsoft …",
+      "url": "https://apps.microsoft.com/detail/9pfgj25jl6x3?hl=ru-RU&gl=RU",
+      "snippet": "With Scratch, you can program your own interactive stories, games, and animations. Scratch helps young people learn to think …"
+    },
+    {
+      "title": "Scratch 3 – Безкоштовне завантаження та інсталяція у Windows ...",
+      "url": "https://apps.microsoft.com/detail/9pfgj25jl6x3?hl=uk-UA&gl=UA",
+      "snippet": "With Scratch, you can program your own interactive stories, games, and animations. Scratch helps young people learn to think …"
+    },
+    {
+      "title": "Scratch - Imagine, Program, Share",
+      "url": "https://scratch.mit.edu/",
+      "snippet": "Scratch is a free programming language and online community where you can create your own interactive stories, games, and …"
+    },
+    {
+      "title": "Scratch - Scratch Link Download",
+      "url": "https://scratch.mit.edu/download/scratch-link",
+      "snippet": "Scratch is a free programming language and online community where you can create your own interactive stories, games, and …"
+    }
+  ]
+}

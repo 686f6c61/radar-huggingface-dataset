@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "rony000013/intel-physical-ai-smolvla",
+  "slug": "rony000013-intel-physical-ai-smolvla",
+  "author": "rony000013",
+  "url": "https://huggingface.co/rony000013/intel-physical-ai-smolvla",
+  "created_at": "2026-09-16T18:26:03.000Z",
+  "updated_at": "2026-09-16T18:28:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "lerobot",
+    "onnx",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "openvino",
+    "intel",
+    "physical-ai",
+    "bimanual-manipulation",
+    "pytorch",
+    "vision-language-action",
+    "en",
+    "dataset:rony000013/dinner-table",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 1805175097,
+  "storage_human": "1.8 GB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Online-Service - Mitteilungen an uns mit Zugangscode",
+      "url": "https://www.deutsche-rentenversicherung.de/DRV/DE/Online-Services/mitteilungen_mit_zugangscode",
+      "snippet": "Online-Service - Mitteilungen an uns mit Zugangscode Sie möchten Ihre gespeicherten Zeiten im Versichertenkonto bestätigen oder …"
+    },
+    {
+      "title": "Zugangscode - Absenden",
+      "url": "https://www.eservice-drv.de/OnlineDiensteWeb/init.do?otp=true",
+      "snippet": "Bitte geben Sie Ihren Zugangscode und Ihre Versicherungsnummer ein."
+    },
+    {
+      "title": "Online-Services | Deutsche Rentenversicherung",
+      "url": "https://www.deutsche-rentenversicherung.de/DRV/DE/Online-Services/online-services_node",
+      "snippet": "1 day ago · Im Kundenportal der Deutschen Rentenversicherung finden Sie gebündelt viele relevante Funktionen an einem Ort. So …"
+    },
+    {
+      "title": "Startseite | Online-Services der Deutschen Rentenversicherung",
+      "url": "https://kundenportal.deutsche-rentenversicherung.de/",
+      "snippet": "Rentnerinnen und Rentner klicken unten auf \"In der Rente\". Unterlagen übermitteln oder Rückfrage stellen Nachweise, Widersprüche …"
+    },
+    {
+      "title": "Signaturkartendienste der Deutschen Rentenversicherung",
+      "url": "https://www.eservice-drv.de/OnlineDiensteWeb/eingabeZugangscode.jsp",
+      "snippet": "Bitte geben Sie Ihren Zugangscode und Ihre Versicherungsnummer ein."
+    }
+  ]
+}

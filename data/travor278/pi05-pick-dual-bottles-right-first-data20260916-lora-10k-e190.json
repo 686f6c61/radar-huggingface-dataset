@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Travor278/pi05-pick-dual-bottles-right-first-data20260916-lora-10k-e190",
+  "slug": "travor278-pi05-pick-dual-bottles-right-first-data20260916-lora-10k-e190",
+  "author": "Travor278",
+  "url": "https://huggingface.co/Travor278/pi05-pick-dual-bottles-right-first-data20260916-lora-10k-e190",
+  "created_at": "2026-09-16T16:33:27.000Z",
+  "updated_at": "2026-09-16T16:36:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "robotics",
+    "pi05",
+    "jax",
+    "lora",
+    "simulation",
+    "dataset:Shiki42/ctr-pick-dual-bottles-right-first-20260916",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6335583442,
+  "storage_human": "6.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Classroom - Sign in - Google Accounts",
+      "url": "https://classroom.google.com/",
+      "snippet": "Not your computer? Use a private browsing window to sign in. Learn more about using Guest mode Next Create account"
+    },
+    {
+      "title": "Inicia sesión: Cuentas de Google - Google Classroom",
+      "url": "https://classroom.google.com/h?hl=es",
+      "snippet": "¿No es tu ordenador? Usa una ventana de navegación privada para iniciar sesión. Más información sobre cómo usar el modo Invitado"
+    },
+    {
+      "title": "Sign in - Google Accounts - Google Classroom",
+      "url": "https://classroom.google.com/?hl=en",
+      "snippet": "Not your computer? Use a private browsing window to sign in. Learn more about using Guest mode"
+    },
+    {
+      "title": "Login - Akun Google - Google Classroom",
+      "url": "https://classroom.google.com/h?hl=id",
+      "snippet": "Bukan komputer Anda? Gunakan jendela penjelajahan rahasia untuk login. Pelajari lebih lanjut cara menggunakan Mode tamu"
+    },
+    {
+      "title": "ログイン - Google アカウント - Google Classroom",
+      "url": "https://classroom.google.com/h?hl=ja",
+      "snippet": "Google Classroomは、教育者と生徒が簡単に学習を管理し、共有するためのプラットフォームです。"
+    }
+  ]
+}

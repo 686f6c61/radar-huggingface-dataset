@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "FBNVJTASDWQD/MyAwesomeModel-TestRepo",
+  "slug": "fbnvjtasdwqd-myawesomemodel-testrepo",
+  "author": "FBNVJTASDWQD",
+  "url": "https://huggingface.co/FBNVJTASDWQD/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-16T12:31:37.000Z",
+  "updated_at": "2026-09-16T12:31:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Noratel – Global Magnetic Power Solutions from 1925",
+      "url": "https://corporate.noratel.com/",
+      "snippet": "We have developed advanced solutions for under water and rugged environmental operation. From fractional power ratings to …"
+    },
+    {
+      "title": "Products ::: NORATEL - When PERFORMANCE matters",
+      "url": "https://www.noratel.com/products/",
+      "snippet": ""
+    },
+    {
+      "title": "NORATEL INTERNATIONAL PVT LTD - EDB Sri Lanka",
+      "url": "https://www.srilankabusiness.com/exporters-directory/company-profiles/noratel-international-pvt-ltd/",
+      "snippet": "Noratel is one of Europe’s leading manufacturers of high-quality customised transformers and wound components. Headquartered in …"
+    },
+    {
+      "title": "About Us ::: NORATEL - When PERFORMANCE matters",
+      "url": "https://www.noratel.com/company/about-us/",
+      "snippet": "Headquartered in Hokksund, Norway, Noratel has been supplying transformer-related products to many of the world’s leading …"
+    },
+    {
+      "title": "Contact us – Noratel",
+      "url": "https://corporate.noratel.com/contact-us/",
+      "snippet": "At Noratel, we take the time to understand your challenges and design magnetic power solutions that meet your exact needs. Backed …"
+    }
+  ]
+}

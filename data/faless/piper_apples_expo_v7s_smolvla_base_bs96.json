@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Faless/piper_apples_expo_v7s_smolvla_base_bs96",
+  "slug": "faless-piper_apples_expo_v7s_smolvla_base_bs96",
+  "author": "Faless",
+  "url": "https://huggingface.co/Faless/piper_apples_expo_v7s_smolvla_base_bs96",
+  "created_at": "2026-09-16T14:16:16.000Z",
+  "updated_at": "2026-09-16T14:16:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "robotics",
+    "dataset:Faless/piper_apples_expo_v7s",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906727960,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MSDN",
+      "url": "https://social.msdn.microsoft.com/forums/en-US/sqltools/thread/421165d6-1b77-464b-af1d-a9f045494cd9/",
+      "snippet": ""
+    },
+    {
+      "title": "MSDN",
+      "url": "https://social.msdn.microsoft.com/Forums/en-US/321f5559-5a64-4b55-967e-60aae79b2f76/invoking-an-alert-message-ok-with-a-a-webbrowser-control?forum=winforms",
+      "snippet": ""
+    },
+    {
+      "title": "MSDN",
+      "url": "https://social.msdn.microsoft.com/Forums/en-US/922de5fa-b693-4687-b81d-7a82b8733fa2/",
+      "snippet": ""
+    },
+    {
+      "title": "MSDN",
+      "url": "https://social.msdn.microsoft.com/Forums/en-US/6a8ad849-7db0-43a2-a708-052c110051eb/polygons-with-holes-complex-polygons?forum=bingmaps",
+      "snippet": ""
+    },
+    {
+      "title": "MSDN",
+      "url": "https://social.msdn.microsoft.com/Forums/en-US/23248bd1-e824-4b6d-9bb6-c996fbdd17d3",
+      "snippet": ""
+    }
+  ]
+}

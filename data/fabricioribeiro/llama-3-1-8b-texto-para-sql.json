@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "fabricioribeiro/llama-3.1-8B-texto-para-sql",
+  "slug": "fabricioribeiro-llama-3-1-8b-texto-para-sql",
+  "author": "fabricioribeiro",
+  "url": "https://huggingface.co/fabricioribeiro/llama-3.1-8B-texto-para-sql",
+  "created_at": "2026-09-16T16:07:20.000Z",
+  "updated_at": "2026-09-16T16:08:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261312,
+  "parameters_human": "8.03B",
+  "storage_bytes": 4920734368,
+  "storage_human": "4.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Watch and Shop top Amazon deals and products - Amazon Live",
+      "url": "https://www.amazon.com/live",
+      "snippet": "Shop the best Amazon products in shoppable livestreams and videos by top creators and influencers. Stay connected with the latest …"
+    },
+    {
+      "title": "Xbox Series X - Gaming Console - 1TB SSD - Includes ... - amazon.com",
+      "url": "https://www.amazon.com/Microsoft-Xbox-Gaming-Console-video-game/dp/B08H75RTZ8",
+      "snippet": "Cleaned, tested, and works great! This item includes: Xbox Series X 1TB Console (shows normal signs of use, including light …"
+    },
+    {
+      "title": "Qmayb – Una Cunumi (Remix) Lyrics - Genius",
+      "url": "https://genius.com/Qmayb-una-cunumi-remix-lyrics",
+      "snippet": "[Letra de \"Una Cunumi (Remix)\" ft. Xvideo Token, Faraón Love Shady & J.Gonzo] [Coro: Qmayb] (d.a.) Una cunumi, una cunumi Ella …"
+    },
+    {
+      "title": "XVIDEO Lyrics, Songs, and Albums | Genius",
+      "url": "https://genius.com/artists/Xvideo",
+      "snippet": "Get all the lyrics to songs by XVIDEO and join the Genius community of music scholars to learn the meaning behind the lyrics."
+    },
+    {
+      "title": "VLC, XVideo et display, marche plus. / Affichage et cartes graphiques ...",
+      "url": "https://forum.ubuntu-fr.org/viewtopic.php?id=160547",
+      "snippet": "Bonjour, Sous Feisty, il y a quelques mois déjà, je pouvais lancer sans problème une vidéo sur ma sortie TV avec VLC et XVideo. …"
+    }
+  ]
+}

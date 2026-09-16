@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "leomaurodesenv/nli-MiniLM2-L6-H768-nvidia-aegis-v2-augmented",
+  "slug": "leomaurodesenv-nli-minilm2-l6-h768-nvidia-aegis-v2-augmented",
+  "author": "leomaurodesenv",
+  "url": "https://huggingface.co/leomaurodesenv/nli-MiniLM2-L6-H768-nvidia-aegis-v2-augmented",
+  "created_at": "2026-09-16T12:31:22.000Z",
+  "updated_at": "2026-09-16T13:46:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:cross-encoder/nli-MiniLM2-L6-H768",
+    "base_model:finetune:cross-encoder/nli-MiniLM2-L6-H768",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 82119938,
+  "parameters_human": "82.1M",
+  "storage_bytes": 1970958849,
+  "storage_human": "2.0 GB",
+  "base_model": "cross-encoder/nli-MiniLM2-L6-H768",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Web üzerinde ücretsiz Word uygulamasına hoş geldiniz",
+      "url": "https://word.cloud.microsoft/tr-tr/",
+      "snippet": "Word Online ile herhangi bir yerden belge oluşturun, düzenleyin ve paylaşın. Gerçek zamanlı güncelleştirmeler, otomatik kaydetme …"
+    },
+    {
+      "title": "Microsoft Word ile Ücretsiz Çevrimiçi Belge Düzenleme | Microsoft 365",
+      "url": "https://www.microsoft.com/tr-tr/microsoft-365/word?msockid=1f54ddeafa1061f8250aca3cfb62606e",
+      "snippet": "Copilot’tan gelen yapay zeka destekli dil bilgisi, stil ve açıklık önerileriyle belgelerinizi çevrimiçi olarak düzenlemek için Microsoft …"
+    },
+    {
+      "title": "Free Online Document Editing with Microsoft Word | Microsoft 365",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/word?msockid=1f54ddeafa1061f8250aca3cfb62606e",
+      "snippet": "Use Microsoft Word for online document editing with AI-powered suggestions from Copilot for grammar, style, and clarity. Write, edit, …"
+    },
+    {
+      "title": "Create and edit documents for free | Microsoft Word for the Web",
+      "url": "https://word.cloud.microsoft/en-us/",
+      "snippet": "Create, edit, and share documents from any location with Word online. Work confidently from any device with features like real-time …"
+    },
+    {
+      "title": "Microsoft Word - Download",
+      "url": "https://microsoft-word.en.softonic.com/",
+      "snippet": "13 hours ago · Microsoft Word continues to prove why it remains the default choice for document creation across schools, …"
+    }
+  ]
+}

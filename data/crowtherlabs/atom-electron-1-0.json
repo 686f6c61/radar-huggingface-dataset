@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "CrowtherLabs/Atom-Electron-1.0",
+  "slug": "crowtherlabs-atom-electron-1-0",
+  "author": "CrowtherLabs",
+  "url": "https://huggingface.co/CrowtherLabs/Atom-Electron-1.0",
+  "created_at": "2026-09-16T17:54:38.000Z",
+  "updated_at": "2026-09-16T17:55:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt-oss",
+    "openai",
+    "lora",
+    "finetuned",
+    "research",
+    "retrieval",
+    "agent",
+    "browsecomp",
+    "qwen",
+    "text-generation",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 965742648,
+  "storage_human": "966 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "برنامج مواقيت الصلاة (توقيت شيعي + اذان شيعي) - الصفحة 2",
+      "url": "http://www.alnassrah.com/threads/51005-برنامج-مواقيت-الصلاة-(توقيت-شيعي-اذان-شيعي)/page2?s=d11ff459024d927841a679b9fb8cd9db",
+      "snippet": "Jun 22, 2009 · رد: برنامج مواقيت الصلاة (توقيت شيعي + اذان شيعي) شكرا جزيلا وبارك الله بيك ولو البرنامج ماانفتح عندي لحد الان بس مشكور على هذي المبادره الطيبه 06-02-2009, …"
+    },
+    {
+      "title": "برنامج مواقيت الصلاة (توقيت شيعي + اذان شيعي)",
+      "url": "http://www.alnassrah.com/threads/51005-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC-%D9%85%D9%88%D8%A7%D9%82%D9%8A%D8%AA-%D8%A7%D9%84%D8%B5%D9%84%D8%A7%D8%A9-(%D8%AA%D9%88%D9%82%D9%8A%D8%AA-%D8%B4%D9%8A%D8%B9%D9%8A-%D8%A7%D8%B0%D8%A7%D9%86-%D8%B4%D9%8A%D8%B9%D9%8A)",
+      "snippet": "Sep 1, 2008 · رد: برنامج مواقيت الصلاة (توقيت شيعي + اذان شيعي) السلام عليكم ورحمة الله وبركااته // البرنامج مايشتغل // وياريت احصل هذا البرنامج ،،، محتاجته كثير كثير // وغفر الله …"
+    },
+    {
+      "title": "برنامج مواقيت الصلاة (توقيت شيعي + اذان شيعي) - من شارك؟",
+      "url": "http://www.alnassrah.com/misc.php?do=whoposted&t=51005",
+      "snippet": "منتديات شبكة الناصرة الثقافية ، نافذة يطل منها العالم على ثقافة مجتمع القطيف وتراثه"
+    },
+    {
+      "title": "قصة وعبرة",
+      "url": "http://www.alnassrah.com/threads/34262-%D9%82%D8%B5%D8%A9-%D9%88%D8%B9%D8%A8%D8%B1%D8%A9",
+      "snippet": "Aug 16, 2007 · رد: قصة وعبرة الله يعطيك العافية اخي ابو حسن وتسلم الايادي وجعله الله في ميزان اعمالك يا رب مشكورة روح وريحان على التوقيع سلمت يمناك عزيزتي 08-16 …"
+    },
+    {
+      "title": "مفكرة السنة الهجرية",
+      "url": "http://www.alnassrah.com/threads/6355-%D9%85%D9%81%D9%83%D8%B1%D8%A9-%D8%A7%D9%84%D8%B3%D9%86%D8%A9-%D8%A7%D9%84%D9%87%D8%AC%D8%B1%D9%8A%D8%A9",
+      "snippet": "Aug 18, 2005 · مفكرة السنة الهجرية محرم رأس السنة الهجرية / غزوة ذات الرقاع. 1 محرم وصول سيد الشهداء الإمام الحسين (ع) إلى كربلاء سنة 61 هـ. 2 محرم ورود عمر بن سعد بن أبي …"
+    }
+  ]
+}

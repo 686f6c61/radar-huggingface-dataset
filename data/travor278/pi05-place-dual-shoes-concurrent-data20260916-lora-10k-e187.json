@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Travor278/pi05-place-dual-shoes-concurrent-data20260916-lora-10k-e187",
+  "slug": "travor278-pi05-place-dual-shoes-concurrent-data20260916-lora-10k-e187",
+  "author": "Travor278",
+  "url": "https://huggingface.co/Travor278/pi05-place-dual-shoes-concurrent-data20260916-lora-10k-e187",
+  "created_at": "2026-09-16T16:27:28.000Z",
+  "updated_at": "2026-09-16T16:29:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "robotics",
+    "pi05",
+    "jax",
+    "lora",
+    "simulation",
+    "dataset:Shiki42/ctr-place-dual-shoes-concurrent-20260916",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6335574343,
+  "storage_human": "6.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "经常感冒，一年大部分时间都是感冒状态，怎么办 ...",
+      "url": "https://www.zhihu.com/question/279773729",
+      "snippet": "你要知道，经常感冒的人比不容易感冒的人患癌症的概率小，这样心里面会好很多（这是我们免疫学老师说的，不是我胡诌的） …"
+    },
+    {
+      "title": "帮我删个软件? - 知乎",
+      "url": "https://www.zhihu.com/question/553805938",
+      "snippet": "Sep 15, 2022 · 帮我删个软件? 我电脑上有一个软件就叫software upgrader，纯纯一个垃圾软件，我一删除鲁大师和垃圾网游，这个软 …"
+    },
+    {
+      "title": "微软开始通过 OOBE 向 Win10 22H2 用户推荐 Windows 11，该 ...",
+      "url": "https://www.zhihu.com/question/570420290",
+      "snippet": "微软在新 OOBE 更新 (KB5020683) 文档中指出： 2022 年 11 月 30 日发布了 带外更新，以改进 Windows 10 版本 2004、20H2 …"
+    },
+    {
+      "title": "如何看待北京一司机醉酒驾车超速行驶，导致环卫 ...",
+      "url": "https://www.zhihu.com/question/592298593",
+      "snippet": "如何看待北京一司机醉酒驾车超速行驶，导致环卫工人身亡，最后被判10个月有期徒刑？"
+    },
+    {
+      "title": "台风来了可以开空调吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/294870186/answers/updated",
+      "snippet": "刚好再查这个问题，看了以前有辟谣过 谣言五：空调不关引起风机逆转 烧机 有朋友圈转“温馨提示”：所有人快把家里的空调关了，10 …"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "zenpo03/onyx",
+  "slug": "zenpo03-onyx",
+  "author": "zenpo03",
+  "url": "https://huggingface.co/zenpo03/onyx",
+  "created_at": "2026-09-16T15:44:47.000Z",
+  "updated_at": "2026-09-16T15:44:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Argo - registro elettronico e altri applicativi per la Scuola",
+      "url": "https://www.portaleargo.it/",
+      "snippet": "Argo, registro elettronico, didattica a distanza e altri applicativi per la gestione della scuola."
+    },
+    {
+      "title": "Login Argo didUP | Registro Elettronico",
+      "url": "https://www.portaleargo.it/voti/",
+      "snippet": "Accedi al registro elettronico per firmare l'ora di lezione, fare l'appello, definire il proprio orario, inserire note, valutazioni etc."
+    },
+    {
+      "title": "Accedi con Argo Software",
+      "url": "https://www.portaleargo.it/areautenti/",
+      "snippet": "Argo, registro elettronico, didattica a distanza e altri applicativi per la gestione della scuola."
+    },
+    {
+      "title": "Personale - Argo",
+      "url": "https://www.portaleargo.it/argopersonale/",
+      "snippet": "Caricamento in corso... la cache del tuo browser e ricarica la pagina."
+    },
+    {
+      "title": "Accedi con Argo Software",
+      "url": "https://www.portaleargo.it/auth/sso/login",
+      "snippet": "Argo, registro elettronico, didattica a distanza e altri applicativi per la gestione della scuola."
+    }
+  ]
+}

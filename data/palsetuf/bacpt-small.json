@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "palsetuf/BacPT-small",
+  "slug": "palsetuf-bacpt-small",
+  "author": "palsetuf",
+  "url": "https://huggingface.co/palsetuf/BacPT-small",
+  "created_at": "2026-09-16T14:14:35.000Z",
+  "updated_at": "2026-09-16T14:14:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "biology",
+    "genomics",
+    "protein",
+    "feature-extraction",
+    "foundation-model",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51248360,
+  "parameters_human": "51.2M",
+  "storage_bytes": 205041228,
+  "storage_human": "205 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Travel Insurance for Czech Republic: Requirements, Coverage",
+      "url": "https://www.visitorscoverage.com/travel-insurance-requirements/czech-republic/",
+      "snippet": "Jul 16, 2026 · Travel insurance can offer protection for emergencies, delays, medical situations and more in the Czech Republic. See …"
+    },
+    {
+      "title": "Do I need travel insurance to visit the Czech Republic?",
+      "url": "https://allaboutczech.com/docs/do-i-need-travel-insurance-for-czech-republic/",
+      "snippet": "6 days ago · If you’re entering visa-free (EU, UK, US, Canada, Australia, and most other Western passport holders on a standard 90 …"
+    },
+    {
+      "title": "Czech Republic Travel Insurance (2026) - What You Need to Know",
+      "url": "https://thingstodoinczechrepublic.com/travel-insurance/",
+      "snippet": "Travel insurance is required to enter Czech Republic. Learn about coverage requirements, healthcare costs, and get quotes for your …"
+    },
+    {
+      "title": "Do I need Schengen travel Insurance for the Czech Republic (Czechia)?",
+      "url": "https://www.axa-schengen.com/en/travel-insurance/schengen/czech-republic",
+      "snippet": "For your Czech Schengen visa application to even be considered, you’re first going to need the mandatory travel insurance plan. And …"
+    },
+    {
+      "title": "Do You Need Travel Insurance For Czech Republic?",
+      "url": "https://theplanetsworld.com/do-you-need-travel-insurance-for-czech-republic.html",
+      "snippet": "Jun 29, 2026 · Travel insurance is not a legal requirement for visiting the Czech Republic, particularly for those from visa-exempt …"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "MonsterGirl/By_monstergirl_Peem_Wasu_bus_becauseofyouishine",
+  "slug": "monstergirl-by_monstergirl_peem_wasu_bus_becauseofyouishine",
+  "author": "MonsterGirl",
+  "url": "https://huggingface.co/MonsterGirl/By_monstergirl_Peem_Wasu_bus_becauseofyouishine",
+  "created_at": "2026-09-16T15:00:52.000Z",
+  "updated_at": "2026-09-16T15:00:52.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Route: Routenberechnung, genaue Fahrtkosten - ViaMichelin",
+      "url": "https://www.viamichelin.de/routenplaner",
+      "snippet": "Berechnen Sie kostenlos Ihre Fußgänger-, Motorrad- oder Autofahrt. Nutzen Sie unsere vielfältigen Berechnungsoptionen: die …"
+    },
+    {
+      "title": "ViaMichelin : Routen, Landkarten, Verkehrsinfos, Hotels",
+      "url": "https://www.viamichelin.de/",
+      "snippet": "Dort finden Sie die Michelin-Karten, die Routen und Routenführung mit Verkehrsinformationen in Echtzeit, die GPS-Navigation auf 3D …"
+    },
+    {
+      "title": "Route planner: route calculation, detailed journey cost - ViaMichelin",
+      "url": "https://www.viamichelin.com/routes",
+      "snippet": "Calculate your pedestrian, motorcycle, or car journey for free. Take advantage of our multiple calculation options: the fastest route, …"
+    },
+    {
+      "title": "Falk Routenplaner - Ihr kostenloser Routenplaner",
+      "url": "https://www.falk.de/routenplaner",
+      "snippet": "Mit dem Falk Routenplaner finden Sie die beste Route! Informieren Sie sich kostenlos über Fahrzeit, Entfernung, aktuelle Staus …"
+    },
+    {
+      "title": "Routenplaner | ADAC Maps",
+      "url": "https://maps.adac.de/routenplaner",
+      "snippet": "Mit ADAC Maps können Sie bequem Ihre Routen planen. Egal, ob Sie mit Auto, Wohnmobil, Gespann oder Motorrad unterwegs sind, …"
+    }
+  ]
+}

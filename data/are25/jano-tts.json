@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "are25/jano-tts",
+  "slug": "are25-jano-tts",
+  "author": "are25",
+  "url": "https://huggingface.co/are25/jano-tts",
+  "created_at": "2026-09-16T16:29:14.000Z",
+  "updated_at": "2026-09-16T17:42:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "jano",
+    "feature-extraction",
+    "custom_code",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14209225,
+  "parameters_human": "14.2M",
+  "storage_bytes": 113721656,
+  "storage_human": "114 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to remove Google Copyright on google maps - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/6652591/how-to-remove-google-copyright-on-google-maps",
+      "snippet": "Jul 11, 2011 · I'd like to remove on google maps placed on my website the Google Adv (on the right-bottom of each map) : Map Data …"
+    },
+    {
+      "title": "Søk etter steder på Google Maps",
+      "url": "https://support.google.com/maps/answer/3092445?hl=no&co=GENIE.Platform%3DDesktop",
+      "snippet": "Med Google Maps kan du søke etter steder og posisjoner. Du får mer detaljerte søkeresultater hvis du er pålogget Google Maps. Du …"
+    },
+    {
+      "title": "Primeros pasos con Google Maps",
+      "url": "https://support.google.com/maps/answer/144349?hl=es-419&co=GENIE.Platform=Android",
+      "snippet": "Primeros pasos con Google Maps Este artículo te ayudará a configurar Google Maps, comprender sus aspectos básicos y conocer …"
+    },
+    {
+      "title": "Google Maps JavaScript API RefererNotAllowedMapError",
+      "url": "https://stackoverflow.com/questions/35288250/google-maps-javascript-api-referernotallowedmaperror",
+      "snippet": "Feb 10, 2016 · We're trying to develop an geoplacement app for one of our clients, and we want first to test it in out own domain. We …"
+    },
+    {
+      "title": "Google My Maps - Reddit",
+      "url": "https://www.reddit.com/r/GoogleMyMaps/",
+      "snippet": "Discussions about Google My Maps and any maps which you may find interesting."
+    }
+  ]
+}

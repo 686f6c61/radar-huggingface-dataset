@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "sarvesh74/pytorch-cnn-image-classifier",
+  "slug": "sarvesh74-pytorch-cnn-image-classifier",
+  "author": "sarvesh74",
+  "url": "https://huggingface.co/sarvesh74/pytorch-cnn-image-classifier",
+  "created_at": "2026-09-16T16:05:29.000Z",
+  "updated_at": "2026-09-16T16:16:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "custom_cnn",
+    "cnn",
+    "pytorch",
+    "computer-vision",
+    "image-classification",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tűzoltó Sam - YouTube",
+      "url": "https://www.youtube.com/channel/UC8EexjKtV6PW0jQSjsCYi5w",
+      "snippet": "Üdvözöljük a Sam a Tűzoltó!A főhős, Sam, aki egy tűzoltó. Bátran végzi munkáját, kedveli a tűzoltócsapat és hőse az életmentő …"
+    },
+    {
+      "title": "Sam, a tűzoltó - A, fireman, heroes, hőse | videa.hu",
+      "url": "https://videa.hu/videok/film-animacio/sam-a-tuzolto-vihar-hose-fireman-heroes-of-VdQgsI7XWBn8Hav0",
+      "snippet": "Sep 21, 2019 · A (z) \"Sam, a tűzoltó - A vihar hőse\" című videót \"Bubie5000\" nevű felhasználó töltötte fel. Eddig 12649 alkalommal …"
+    },
+    {
+      "title": "Sam a tűzoltó | Jobb lábbal előre | teljes epizódok 1 óra - YouTube",
+      "url": "https://www.youtube.com/watch?v=eaFJ_cN1470",
+      "snippet": "Oct 6, 2017 · Bátran végzi munkáját, kedveli a tűzoltócsapat és hőse az életmentő akcióknak. Munkája során egy izgalmas kalandot …"
+    },
+    {
+      "title": "Sam a Tuzoltó: Vihar Hőse | videa.hu",
+      "url": "https://videa.hu/videok/film-animacio/sam-a-tuzolto-vihar-hose-5TqNBQw4vPIXAu8I",
+      "snippet": "Dec 16, 2024 · A (z) \"Sam a Tuzoltó: a Vihar Hőse\" című videót \"Film Predator\" nevű felhasználó töltötte fel. Eddig 2947 alkalommal …"
+    },
+    {
+      "title": "Sam, a tűzoltó: Partra vetve, mese, sam, tűzoltó | videa.hu",
+      "url": "https://videakid.hu/videok/animacio/sam-a-tuzolto-partra-vetve-mese-TbnOffSvLU9FdDv5",
+      "snippet": "Feb 27, 2013 · A (z) \"Sam, a tűzoltó: Partra vetve\" című videót \"papirkutyuska\" nevű felhasználó töltötte fel. Eddig 102087 alkalommal …"
+    }
+  ]
+}

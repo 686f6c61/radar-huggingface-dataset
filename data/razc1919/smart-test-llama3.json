@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "razc1919/smart-test-llama3",
+  "slug": "razc1919-smart-test-llama3",
+  "author": "razc1919",
+  "url": "https://huggingface.co/razc1919/smart-test-llama3",
+  "created_at": "2026-09-16T13:56:25.000Z",
+  "updated_at": "2026-09-16T14:17:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/llama-3-8b-Instruct-bnb-4bit",
+    "base_model:finetune:unsloth/llama-3-8b-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766337,
+  "storage_human": "16.1 GB",
+  "base_model": "unsloth/llama-3-8b-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ente Auth - Open source 2FA authenticator, with E2EE backups",
+      "url": "https://ente.com/auth/",
+      "snippet": "Protect your accounts with Ente Auth - Free, open source, cross-platform 2FA authenticator, with end-to-end encrypted backups"
+    },
+    {
+      "title": "Ente Auth 2FA-Authentifikator – Apps bei Google Play",
+      "url": "https://play.google.com/store/apps/details?id=io.ente.auth&hl=de",
+      "snippet": "Mit der Ente Auth-App können Sie Token für die zweistufige Verifizierung (2FA) auf Ihren Mobilgeräten generieren und speichern. …"
+    },
+    {
+      "title": "Ente Auth",
+      "url": "https://auth.ente.com/",
+      "snippet": "Ente - end-to-end encrypted cloud with open-source apps"
+    },
+    {
+      "title": "Installing Ente Auth | Ente Help",
+      "url": "https://ente.com/help/auth/faq/installing",
+      "snippet": "You can grab the latest version of Ente Auth for Mac, Windows and Linux from GitHub. On Linux, App lock can use system …"
+    },
+    {
+      "title": "Ente Auth - Download - Softpedia",
+      "url": "https://www.softpedia.com/get/Security/Security-Related/Ente-Auth.shtml",
+      "snippet": "Apr 4, 2025 · Download Ente Auth 4.4.25 - Encrypted and open-source 2FA authenticator app with support for cross-platform …"
+    }
+  ]
+}

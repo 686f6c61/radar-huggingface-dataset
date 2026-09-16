@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "nmuendler/DeepSeek-R1-Distill-Qwen-7B-text-sft-run1-eb32-e3-lr2e-04",
+  "slug": "nmuendler-deepseek-r1-distill-qwen-7b-text-sft-run1-eb32-e3-lr2e-04",
+  "author": "nmuendler",
+  "url": "https://huggingface.co/nmuendler/DeepSeek-R1-Distill-Qwen-7B-text-sft-run1-eb32-e3-lr2e-04",
+  "created_at": "2026-09-16T12:41:45.000Z",
+  "updated_at": "2026-09-16T12:41:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 334436075,
+  "storage_human": "334 MB",
+  "base_model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Companies House - GOV.UK",
+      "url": "https://www.gov.uk/government/organisations/companies-house",
+      "snippet": "We incorporate and dissolve limited companies. We register company information and make it available to the public. Companies …"
+    },
+    {
+      "title": "HM Revenue & Customs - GOV.UK",
+      "url": "https://www.gov.uk/government/organisations/hm-revenue-customs",
+      "snippet": "HMRC is the UK’s tax, payments and customs authority, and we have a vital purpose: we collect the money that pays for the UK’s …"
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "哪个才是steam？ - 知乎",
+      "url": "https://www.zhihu.com/question/603521723",
+      "snippet": "May 28, 2023 · 当你百度搜索steam的时候 是不是看到琳琅满目的steam？ 当你点击进去看到 sdeam steam游戏管家 steam游戏中心 …"
+    },
+    {
+      "title": "Estimate your Income Tax for the current year - GOV.UK",
+      "url": "https://www.gov.uk/estimate-income-tax",
+      "snippet": "Apr 6, 2017 · Estimate how much Income Tax and National Insurance you can expect to pay for the current tax year (6 April 2026 to 5 …"
+    }
+  ]
+}

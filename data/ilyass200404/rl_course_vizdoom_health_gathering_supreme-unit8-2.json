@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "ilyass200404/rl_course_vizdoom_health_gathering_supreme-unit8-2",
+  "slug": "ilyass200404-rl_course_vizdoom_health_gathering_supreme-unit8-2",
+  "author": "ilyass200404",
+  "url": "https://huggingface.co/ilyass200404/rl_course_vizdoom_health_gathering_supreme-unit8-2",
+  "created_at": "2026-09-16T13:35:04.000Z",
+  "updated_at": "2026-09-16T13:35:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "sample-factory",
+  "languages": [],
+  "tags": [
+    "sample-factory",
+    "tensorboard",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 126792747,
+  "storage_human": "127 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "7-Zip 官方网站怎么下载？ - 知乎",
+      "url": "https://www.zhihu.com/question/20498753",
+      "snippet": "7-Zip 是一个功能强大的工具，特别适合需要 高效压缩 和 解压缩 功能的用户。比如 IT 专业人员、软件开发者或普通用户希望节省磁 …"
+    },
+    {
+      "title": "知乎 - 知乎",
+      "url": "https://www.zhihu.com/selection/",
+      "snippet": "知乎是一个中文互联网高质量问答社区和创作者聚集的原创内容平台，提供知识共享、互动交流和个人成长机会。"
+    },
+    {
+      "title": "newline - Difference between \\n and \\r? - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/1761051/difference-between-n-and-r",
+      "snippet": "Nov 19, 2009 · What’s the difference between \\n (newline) and \\r (carriage return)? In particular, are there any practical differences …"
+    },
+    {
+      "title": "r - What are the differences between \"=\" and \"<-\" assignment …",
+      "url": "https://stackoverflow.com/questions/1741820/what-are-the-differences-between-and-assignment-operators",
+      "snippet": "R's syntax contains many ambiguous cases that have to be resolved one way or another. The parser chooses to resolve the bits of …"
+    },
+    {
+      "title": "テキストファイル - 改行の、\\nと\\r\\nの違いは何です ...",
+      "url": "https://ja.stackoverflow.com/questions/12897/%E6%94%B9%E8%A1%8C%E3%81%AE-n%E3%81%A8-r-n%E3%81%AE%E9%81%95%E3%81%84%E3%81%AF%E4%BD%95%E3%81%A7%E3%81%99%E3%81%8B",
+      "snippet": "Jul 31, 2015 · 通信プロトコルではCRLF（\\r\\n）が使われる傾向があります。たとえば、HTTPやメールのプロトコルでは改行コード …"
+    }
+  ]
+}

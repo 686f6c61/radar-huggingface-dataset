@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "smajji/nemotron-hinglish-v3",
+  "slug": "smajji-nemotron-hinglish-v3",
+  "author": "smajji",
+  "url": "https://huggingface.co/smajji/nemotron-hinglish-v3",
+  "created_at": "2026-09-16T17:42:35.000Z",
+  "updated_at": "2026-09-16T17:43:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "nemo",
+  "languages": [
+    "en",
+    "hi"
+  ],
+  "tags": [
+    "nemo",
+    "automatic-speech-recognition",
+    "speech",
+    "audio",
+    "fastconformer",
+    "rnnt",
+    "streaming",
+    "hinglish",
+    "hindi",
+    "indian-english",
+    "code-switching",
+    "en",
+    "hi",
+    "base_model:nvidia/nemotron-3.5-asr-streaming-0.6b",
+    "base_model:finetune:nvidia/nemotron-3.5-asr-streaming-0.6b",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2553098240,
+  "storage_human": "2.6 GB",
+  "base_model": "nvidia/nemotron-3.5-asr-streaming-0.6b",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Map of the Balkans - Ontheworldmap.com",
+      "url": "https://ontheworldmap.com/europe/balkan-countries-map.html",
+      "snippet": "This Map of the Balkans shows seas, islands, governmental boundaries, countries, capitals and major cities. You may download, …"
+    },
+    {
+      "title": "Balkans - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Balkans",
+      "snippet": "The Balkan region today is a very diverse ethnolinguistic region, being home to multiple Slavic and Romance languages, as well as …"
+    },
+    {
+      "title": "Balkanhalbinsel – Wikipedia",
+      "url": "https://de.m.wikipedia.org/wiki/Balkanhalbinsel",
+      "snippet": "Die Balkanhalbinsel (auch kurz Balkan, oft synonym mit Südosteuropa verwendet) ist eine geographisch nicht eindeutig definierte …"
+    },
+    {
+      "title": "Balkan States Map Collection - GIS Geography",
+      "url": "https://gisgeography.com/balkan-states-map/",
+      "snippet": "This map collection of the Balkan States (or simply the Balkans) showcases this geographical region in Southeast Europe."
+    },
+    {
+      "title": "Balkan Countries: The Full List, Map & Populations (2026)",
+      "url": "https://www.mappr.co/thematic-maps/balkan-countries-map/",
+      "snippet": "Here are the Balkan countries at a glance, with their capitals and latest populations. The table is sortable and searchable."
+    }
+  ]
+}

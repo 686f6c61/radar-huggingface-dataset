@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "fecasado/gfm-kitchen-lettuce-baseline",
+  "slug": "fecasado-gfm-kitchen-lettuce-baseline",
+  "author": "fecasado",
+  "url": "https://huggingface.co/fecasado/gfm-kitchen-lettuce-baseline",
+  "created_at": "2026-09-16T10:45:31.000Z",
+  "updated_at": "2026-09-16T10:45:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "gaze_flow_matching",
+    "dataset:fecasado/lettuce-to-plate-320x240",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 75218394,
+  "parameters_human": "75.2M",
+  "storage_bytes": 300933352,
+  "storage_human": "301 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Übersetzer",
+      "url": "https://translate.google.de/",
+      "snippet": "Mit Google Übersetzer können Sie Wörter, Sätze und Webseiten kostenlos in über 100 Sprachen übersetzen."
+    },
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/",
+      "snippet": "Google's service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other …"
+    },
+    {
+      "title": "DeepL Übersetzer | Der präziseste Übersetzer der Welt",
+      "url": "https://www.deepl.com/de/translator",
+      "snippet": "Übersetzen Sie Texte und ganze Dateien im Handumdrehen. Präzise Übersetzungen für Einzelnutzer und Teams. Jeden Tag nutzen …"
+    },
+    {
+      "title": "DeepL Translator | World's Most Accurate Translator",
+      "url": "https://www.deepl.com/en/translator",
+      "snippet": "Type to translate. Drag and drop to translate PDF, Word (.docx), and PowerPoint (.pptx) files with our document translator."
+    },
+    {
+      "title": "Übersetzer kostenlos und online | TRANSLATOR.EU",
+      "url": "https://www.translator.eu/deutsch/",
+      "snippet": "Translator.eu ist ein mehrsprachiger Online Text-Übersetzer, der ihnen Übersetzungen in 42 Sprachen mit sehr gutem Ergebnis …"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "jjjlimaus/sn38-r3-2013-winner",
+  "slug": "jjjlimaus-sn38-r3-2013-winner",
+  "author": "jjjlimaus",
+  "url": "https://huggingface.co/jjjlimaus/sn38-r3-2013-winner",
+  "created_at": "2026-09-16T13:39:00.000Z",
+  "updated_at": "2026-09-16T13:39:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "ChronoGPT",
+    "sn38",
+    "bittensor",
+    "chronollm",
+    "year-cutoff",
+    "text-generation",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1858535658,
+  "parameters_human": "1.86B",
+  "storage_bytes": 7434184688,
+  "storage_human": "7.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "НЕИСПУО Портал",
+      "url": "https://neispuo.mon.bg/",
+      "snippet": "НЕИСПУО - платформа для управления учебным процессом в школах и детских садах Болгарии."
+    },
+    {
+      "title": "Дневници НЕИСПУО - mon.bg",
+      "url": "https://dnevnik.mon.bg/t/",
+      "snippet": "Дневници НЕИСПУО"
+    },
+    {
+      "title": "НЕИСПУО Портал",
+      "url": "https://test-neispuo.mon.bg/",
+      "snippet": "НЕИСПУО Портал ... НЕИСПУО Портал"
+    },
+    {
+      "title": "НЕИСПУО - mon.bg",
+      "url": "https://dnevnik.mon.bg/s/",
+      "snippet": "НЕИСПУО - mon.bg ... НЕИСПУО"
+    },
+    {
+      "title": "mon.bg",
+      "url": "https://class.mon.bg/Login.aspx",
+      "snippet": "ВАЖНО: При забравени потребителско име и парола, моля не създавайте нов профил в системата, тъй като няма да имате …"
+    }
+  ]
+}

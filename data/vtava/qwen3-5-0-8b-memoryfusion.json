@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "vtava/Qwen3.5-0.8B-MemoryFusion",
+  "slug": "vtava-qwen3-5-0-8b-memoryfusion",
+  "author": "vtava",
+  "url": "https://huggingface.co/vtava/Qwen3.5-0.8B-MemoryFusion",
+  "created_at": "2026-09-16T18:25:11.000Z",
+  "updated_at": "2026-09-16T18:25:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "qwen3.5",
+    "tinycenn",
+    "memory-fusion",
+    "recurrent-attention",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wetter Belgrad - Meteo - SRF",
+      "url": "https://www.srf.ch/meteo/wetter/Belgrad/44.8300,20.5000?geolocationNameId=0a19230d9537f4ea301d7b02e606a2f5",
+      "snippet": "Mar 18, 2021 · Wetterprognose von SRF Meteo für Belgrad (Zentralserbien, 68 m ü.M.): Temperatur-, Niederschlag- und Wind …"
+    },
+    {
+      "title": "Wetter Belgrad 16 Tage Trend",
+      "url": "https://www.wetter.com/wetter_aktuell/wettervorhersage/16_tagesvorhersage/serbien/belgrad/RS0SR0002.html",
+      "snippet": "May 3, 2026 · Der 16 Tage Wetter Trend für 11167 Belgrad. Temperatur, Wetterzustand, Sonnenstunden und …"
+    },
+    {
+      "title": "Wetter Belgrad - meteoblue",
+      "url": "https://www.meteoblue.com/de/wetter/woche/belgrad_serbien_792680",
+      "snippet": "18 hours ago · Professionelle 7-Tage Prognose für Belgrad. Niederschlagsradar, HD-Satellitenbilder und aktuelle Wetterwarnungen, …"
+    },
+    {
+      "title": "Wetter Belgrade, Serbien - 14 Tage - ️ Worldmeteo",
+      "url": "https://www.worldmeteo.info/de/europa/serbien/belgrade/wetter-104989/",
+      "snippet": "Das Wetter und die Wettervorhersage für Belgrade, Serbien. ☀️🌧️ Weltweites das aktuelles Wetter und 14-Tage-Wettervorhersage"
+    },
+    {
+      "title": "Wetter Belgrad heute ☀ Vorhersage 14 - 21 Tage | wetter.de",
+      "url": "https://www.wetter.de/wetter/r/2728438/",
+      "snippet": "In den nächsten 7 Tagen werden in Belgrad, Serbien Temperaturen zwischen 10 und 28 Grad erwartet. Der Wind weht mit einer …"
+    }
+  ]
+}

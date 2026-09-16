@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "sandeep123/stride-qwen3-1.7b-nonthinking-stabilized-2048-single_step-20260916",
+  "slug": "sandeep123-stride-qwen3-1-7b-nonthinking-stabilized-2048-single_step-20260916",
+  "author": "sandeep123",
+  "url": "https://huggingface.co/sandeep123/stride-qwen3-1.7b-nonthinking-stabilized-2048-single_step-20260916",
+  "created_at": "2026-09-16T11:11:54.000Z",
+  "updated_at": "2026-09-16T11:11:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "lora",
+    "reinforcement-learning",
+    "math",
+    "nonthinking",
+    "stride",
+    "text-generation",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:adapter:Qwen/Qwen3-1.7B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Why Is the Sky Blue? | NASA Space Place – NASA Science for Kids",
+      "url": "https://spaceplace.nasa.gov/blue-sky/en/",
+      "snippet": "Jul 31, 2026 · Why Is the Sky Blue? The Short Answer: Sunlight reaches Earth's atmosphere and is scattered in all directions by all …"
+    },
+    {
+      "title": "Why Is the Sky Blue? | Britannica",
+      "url": "https://www.britannica.com/story/why-is-the-sky-blue",
+      "snippet": "The color of the sky depends largely upon the wavelengths of the incoming light, but air molecules (mostly nitrogen and oxygen) and …"
+    },
+    {
+      "title": "Why Is the Sky Blue? - Mental Floss",
+      "url": "https://www.mentalfloss.com/science/physics/why-is-the-sky-blue",
+      "snippet": "Jun 7, 2026 · Our eyes ultimately see the sky as blue because they are more sensitive to blue light than violet light. Meanwhile, if we …"
+    },
+    {
+      "title": "Why is the sky blue? And why it changes colour at sunset - BBC",
+      "url": "https://www.bbc.co.uk/bitesize/articles/zbwwcxs",
+      "snippet": "This BBC Bitesize article takes a look at why the sky is blue on Earth, what the sky looks like on other planets and explains what the …"
+    },
+    {
+      "title": "Why Is the Sky Blue? - National Environmental Satellite, Data and ...",
+      "url": "https://www.nesdis.noaa.gov/about/k-12-education/atmosphere/why-the-sky-blue",
+      "snippet": "Gases and particles in Earth's atmosphere scatter sunlight in all directions. Blue light is scattered more than other colors because it …"
+    }
+  ]
+}

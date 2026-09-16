@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "vs4vijay/MiniCPM5-2B-MLC",
+  "slug": "vs4vijay-minicpm5-2b-mlc",
+  "author": "vs4vijay",
+  "url": "https://huggingface.co/vs4vijay/MiniCPM5-2B-MLC",
+  "created_at": "2026-09-16T18:14:01.000Z",
+  "updated_at": "2026-09-16T18:14:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlc-llm",
+  "languages": [],
+  "tags": [
+    "mlc-llm",
+    "web-llm",
+    "webgpu",
+    "minicpm",
+    "text-generation",
+    "base_model:openbmb/MiniCPM5-2B",
+    "base_model:quantized:openbmb/MiniCPM5-2B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3528804111,
+  "storage_human": "3.5 GB",
+  "base_model": "openbmb/MiniCPM5-2B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "《Polar Bear, Polar Bear, What Do You Hear》动物绘本",
+      "url": "https://www.i-bei.com/shanghai/jckt/jckt/2017/0223/29662.html",
+      "snippet": "【适合年龄】 两岁或以上的儿童启蒙 【绘本内容】 Polar Bear, Polar Bear, what do you hear? 北极熊，北极熊，你听到什么。 I hear …"
+    },
+    {
+      "title": "Eric Carle 卡尔Brown Bear，Polar Bear,Baby Bear，Polar Bear四只 …",
+      "url": "https://www.i-bei.com/baby/thread-54971-1-1.html",
+      "snippet": "Sep 29, 2014 · 4、《Baby Bear, Baby Bear, What Do You See?》 是Brown Bear系列的最后一本书。 看过了Brown Bear里的日常动 …"
+    },
+    {
+      "title": "廖彩杏绘本精讲：PolarBear,PolarBear,What Do You Hear",
+      "url": "https://www.i-bei.com/m/article.php?aid=528877",
+      "snippet": "精听时比较专注地听，当孩子没有翻到对于应的页面时，家长可以给予及时的辅助。 绘本中英对照 Polar Bear, Polar Bear, What Do …"
+    },
+    {
+      "title": "【点读资源】艾瑞．卡尔 Eric carl Polar bear DAB格式+分割MP3音频",
+      "url": "https://www.i-bei.com/baby/thread-55601-1-1.html",
+      "snippet": "Oct 14, 2015 · 打赏 点评 回复 zdyt 评论于 2015-7-26 00:36:39 5 楼 艾瑞．卡尔 Eric carl Polar bear分割音频 5 {5 k4 i6 }/ e1 @' ] 可怜 …"
+    },
+    {
+      "title": "卡尔四只熊brown bear、 polar bear 等爱贝笔点读包下载 - 爱贝亲子网",
+      "url": "https://www.i-bei.com/baby/thread-83580-1-1.html",
+      "snippet": "Dec 8, 2016 · 这本书可说是Eric Carle和Bill Jr Martin最具代表性的作品，可谓文图双绝。 重复押韵的句型，每页介绍着不同颜色的动 …"
+    }
+  ]
+}

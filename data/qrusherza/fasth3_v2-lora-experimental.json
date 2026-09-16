@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "QrusherZA/FastH3_V2-LoRA-Experimental",
+  "slug": "qrusherza-fasth3_v2-lora-experimental",
+  "author": "QrusherZA",
+  "url": "https://huggingface.co/QrusherZA/FastH3_V2-LoRA-Experimental",
+  "created_at": "2026-09-16T16:22:34.000Z",
+  "updated_at": "2026-09-16T16:50:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8418330040,
+  "storage_human": "8.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TousMesConcerts | Rechercher des concerts près de chez vous!",
+      "url": "https://www.tousmesconcerts.fr/",
+      "snippet": "Découvrez rapidement les concerts près de chez vous: recherchez par ville ou code postal et trouvez spectacles, festivals et …"
+    },
+    {
+      "title": "Concerts près de chez moi : dates et billets | Agendaza | Agendaza",
+      "url": "https://agendaza.fr/concerts-pres-de-moi",
+      "snippet": "Trouvez les concerts près de chez vous : dates, lieux, distance et billets pour les concerts et événements musicaux à proximité."
+    },
+    {
+      "title": "ComusLive - Concerts et spectacles près de chez vous",
+      "url": "https://comuslive.com/",
+      "snippet": "Découvrez les concerts, DJ sets, festivals et spectacles près de chez vous. La programmation des salles de musiques actuelles, en …"
+    },
+    {
+      "title": "Agenda des concerts | Tous les événements musicaux près de chez vous",
+      "url": "https://www.agenda-des-concerts.com/",
+      "snippet": "Découvrez les concerts et festivals à venir en France. Du rock à la variété, en passant par l'électro, trouvez votre prochaine sortie …"
+    },
+    {
+      "title": "Où sortir ce soir ? Carte des soirées & concerts | PulseMap",
+      "url": "https://pulse-map.live/",
+      "snippet": "Où sortir ce soir près de chez toi ? Carte temps réel des soirées, concerts, clubs, festivals et bars animés partout en France. Gratuit, …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "sandeep123/stride-qwen3-1.7b-nonthinking-stabilized-2048-local_positive-alpha2-20260916",
+  "slug": "sandeep123-stride-qwen3-1-7b-nonthinking-stabilized-2048-local_positive-alpha2-20260916",
+  "author": "sandeep123",
+  "url": "https://huggingface.co/sandeep123/stride-qwen3-1.7b-nonthinking-stabilized-2048-local_positive-alpha2-20260916",
+  "created_at": "2026-09-16T11:12:13.000Z",
+  "updated_at": "2026-09-16T11:12:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "lora",
+    "reinforcement-learning",
+    "math",
+    "nonthinking",
+    "stride",
+    "text-generation",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:adapter:Qwen/Qwen3-1.7B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "@mennet Accéder à vos comptes",
+      "url": "https://www.amennet.com.tn/",
+      "snippet": "Amen Net est une plateforme bancaire en ligne sécurisée pour gérer vos comptes et opérations bancaires facilement."
+    },
+    {
+      "title": "@mennet Accéder à vos comptes",
+      "url": "https://www.amennet.com.tn/login.jsp",
+      "snippet": ""
+    },
+    {
+      "title": "AMEN BANK | Banque Tunisienne, Banque en Tunisie, Banque de Tunisie",
+      "url": "https://www.amenbank.com.tn/",
+      "snippet": "AMEN BANK, une banque tunisienne, vous accompagne et vous soutient pour vos projets présents et futurs: Banque en ligne, crédit …"
+    },
+    {
+      "title": "AMEN FIRST BANK : Mon espace client",
+      "url": "https://amenfirstbank.com.tn/amenFirstBank/mesComptes.html",
+      "snippet": "Téléchargez notre application mobile Avec AmenPay l'application de paiement mobile d'AMEN BANK, payez avec votre téléphone en …"
+    },
+    {
+      "title": "@mennet Online Banking - amennet.com.tn",
+      "url": "https://amennet.com.tn/ClientDemo/Monetique.html",
+      "snippet": "صفحة تقدم خدمات مصرفية إلكترونية من خلال @mennet."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "farrael004/fly-brain-sparsity-checkpoints",
+  "slug": "farrael004-fly-brain-sparsity-checkpoints",
+  "author": "farrael004",
+  "url": "https://huggingface.co/farrael004/fly-brain-sparsity-checkpoints",
+  "created_at": "2026-09-16T18:26:52.000Z",
+  "updated_at": "2026-09-16T18:29:57.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "reinforcement-learning",
+    "sparsity",
+    "connectomics",
+    "drosophila",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 49,
+  "storage_human": "49 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Telefonbuch Oederquart | Das Örtliche",
+      "url": "https://www.dasoertliche.de/Telefonbuch/Oederquart",
+      "snippet": "Ihr örtliches Telefonbuch für Oederquart mit Telefonnummern ☎, Adressen , Öffnungszeiten und Bewertungen★ für Unternehmen …"
+    },
+    {
+      "title": "Telefonbuch Oederquart: Telefonnummern & Adressen schnell finden",
+      "url": "https://www.dastelefonbuch.de/Telefonbuch/Oederquart",
+      "snippet": "Topaktuelle Einträge zu Personen und Firmen finden Sie im Telefonbuch Oederquart. Das Telefonbuch ist seit über 100 Jahren die …"
+    },
+    {
+      "title": "Personensuche – Privatpersonen und Geschäftsleute finden! | Das …",
+      "url": "https://www.dasoertliche.de/personensuche/",
+      "snippet": "Mit der Personensuche von Das Örtliche findest du Privatpersonen und Geschäftsleute mit ihren Kontaktdaten – regional und in ganz …"
+    },
+    {
+      "title": "Vedder in Ennigerloh-Westkirchen >> Jetzt finden! - Das Telefonbuch",
+      "url": "https://www.dastelefonbuch.de/Personen/Vedder/Ennigerloh--Westkirchen",
+      "snippet": "Herr oder Frau Vedder im Stadtteil Westkirchen in Ennigerloh gesucht? - Das Telefonbuch hat 3 Adressen aus Millionen von …"
+    },
+    {
+      "title": "Telefonbuch Oederquart - Adressen & Telefonnummern finden",
+      "url": "https://www.11880.com/telefonbuch/oederquart",
+      "snippet": "Telefonbuch Oederquart - Finden Sie Unternehmen, Firmen & Personen in Oederquart mit Telefonnummer, Adresse und weiteren …"
+    }
+  ]
+}

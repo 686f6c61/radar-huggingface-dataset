@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jasonthomasee/poolformer-retrieval-small",
+  "slug": "jasonthomasee-poolformer-retrieval-small",
+  "author": "jasonthomasee",
+  "url": "https://huggingface.co/jasonthomasee/poolformer-retrieval-small",
+  "created_at": "2026-09-16T14:28:10.000Z",
+  "updated_at": "2026-09-16T14:28:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "poolformer",
+    "pytorch",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Welcome to the Minecraft Official Site | Minecraft",
+      "url": "https://www.minecraft.net/",
+      "snippet": "Explore new gaming adventures, accessories, & merchandise on the Minecraft Official Site. Buy & download the game here, or check …"
+    },
+    {
+      "title": "Witaj na oficjalnej stronie Minecraft",
+      "url": "https://www.minecraft.net/pl-pl",
+      "snippet": "Odkryj nowe przygody, akcesoria i produkty związane z grą na oficjalnej stronie Minecraft. Kup i pobierz grę tutaj lub sprawdź …"
+    },
+    {
+      "title": "Minecraft Education",
+      "url": "https://edusupport.minecraft.net/hc/en-us",
+      "snippet": "Minecraft Lesson Planner in Teach Create localized, standards‑aligned lessons using Minecraft Education. (available for Educators) …"
+    },
+    {
+      "title": "İndir | Minecraft Education",
+      "url": "https://education.minecraft.net/tr-tr/get-started/download",
+      "snippet": "Minecraft: Education Edition’ı nasıl indireceğini öğren. Telefonundan, bilgisayarından veya tabletinden Minecraft: Education Edition'a …"
+    },
+    {
+      "title": "Minecraft Feedback",
+      "url": "https://feedback.minecraft.net/hc/en-us",
+      "snippet": "Welcome to the official MineCraft feedback site! We love listening to your feedback – look at what’s been suggested or post your …"
+    }
+  ]
+}

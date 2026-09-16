@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "smlflg/ShortcutCounter",
+  "slug": "smlflg-shortcutcounter",
+  "author": "smlflg",
+  "url": "https://huggingface.co/smlflg/ShortcutCounter",
+  "created_at": "2026-09-16T19:52:15.000Z",
+  "updated_at": "2026-09-16T19:52:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "在图宾根大学就读是什么体验？ - 知乎",
+      "url": "https://www.zhihu.com/question/31360647",
+      "snippet": "最新更新 2022/7/29 更新内容： 1. 调整了整体布局，把重要的信息放在最前，不重要的信息放后面 2.新增了目录，便于直接跳转到自 …"
+    },
+    {
+      "title": "总结三定则一定律（安培定则、左手定则、右手定则和楞次定律？",
+      "url": "https://www.zhihu.com/tardis/bd/ans/2321163719",
+      "snippet": "2. 左手定则：伸开左手，使拇指与其余四个手指垂直，并且都与手掌在同一平面内；让磁感线从掌心进入，使四指指向电流方向；拇指 …"
+    },
+    {
+      "title": "糖喵 - 知乎",
+      "url": "https://www.zhihu.com/people/2a4c38878e93479b7efc62b788ec606a",
+      "snippet": "6 days ago · 2 艘俄海军军舰被摧毁 卫星图已证实乌克兰国防军在昨天（9月9日）对新罗西斯克港口纵深打击行动（ 海王星导弹命中 …"
+    },
+    {
+      "title": "去德国留学要办什么借记卡？华夏？渣打？还是花旗？ - 知乎",
+      "url": "https://www.zhihu.com/question/26855520",
+      "snippet": "我自己用的是华夏卡，每天（按照中国时间计算的每天）在sparkasse第一次取款无手续费，最高500€。 ps：别问我为什么要说按照 …"
+    },
+    {
+      "title": "比亚迪海豹08 上市价格 19.69-23.99 万，值得入手吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/2056041972998083528",
+      "snippet": "Jul 2, 2026 · 我从去年年底就开始注意到海豹08。这大半年看着它的物料被不断放出，也是忍不住在猜价格。发布会看见905公里续航 …"
+    }
+  ]
+}

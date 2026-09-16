@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "ToiTenBao/haloprobe-ours-coco-llava15-13b",
+  "slug": "toitenbao-haloprobe-ours-coco-llava15-13b",
+  "author": "ToiTenBao",
+  "url": "https://huggingface.co/ToiTenBao/haloprobe-ours-coco-llava15-13b",
+  "created_at": "2026-09-16T12:46:46.000Z",
+  "updated_at": "2026-09-16T12:47:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7274309228,
+  "storage_human": "7.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Musicals in Hamburg – Alle Infos auf einen Blick - hamburg.de",
+      "url": "https://www.hamburg.de/kultur/musical-show",
+      "snippet": "Hier finden Sie kompakte Informationen über Hamburgs Musical-Theater - chronologisch sortiert von neu nach alt. Was wird …"
+    },
+    {
+      "title": "Musicals in Hamburg - Termine & Tickets - Eventim",
+      "url": "https://www.eventim.de/city/hamburg-7/musical-show-4/musical-8/?msockid=02b7c18be3f560b33e4ed65de2646116",
+      "snippet": "Die schönsten Musicals in Hamburg - Alle Infos & Termine findest du auf Eventim.de - Jetzt Tickets kaufen!"
+    },
+    {
+      "title": "Musicals in Hamburg | Die Musical-Metropole an der Elbe | Stage ...",
+      "url": "https://www.stage-entertainment.de/musicals-shows/musicals-in-hamburg",
+      "snippet": "Musicals, Sightseeing, Shoppen, Schlemmen, Schiffrundfahrt – Hamburg hat´s! Die Hansestadt ist nach New York und London die …"
+    },
+    {
+      "title": "Musicals in Hamburg – Infos, Tickets, Angebote",
+      "url": "https://www.hamburg-tourism.de/sehen-erleben/musicals-shows/",
+      "snippet": "Hamburgs Musical-Szene hat weltweite Strahlkraft. Mit gleich vier großen Stage Theatern ist Hamburg die deutsche Hauptstadt der …"
+    },
+    {
+      "title": "Musical-Tickets Hamburg | Jetzt online buchen!",
+      "url": "https://www.hamburg-tourism.de/buchen/tickets/musicals/",
+      "snippet": "Musical-Tickets Hamburg – Jetzt online buchen! Buchen Sie Tickets für die erfolgreichsten Musicals und Shows aller Zeiten in …"
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "schema": 1,
+  "id": "bbkdevops/sovereign-vibe-reasoning-agent",
+  "slug": "bbkdevops-sovereign-vibe-reasoning-agent",
+  "author": "bbkdevops",
+  "url": "https://huggingface.co/bbkdevops/sovereign-vibe-reasoning-agent",
+  "created_at": "2026-09-16T14:45:30.000Z",
+  "updated_at": "2026-09-16T15:22:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "th"
+  ],
+  "tags": [
+    "text-generation",
+    "text-generation-inference",
+    "causal-lm",
+    "vibe-coding",
+    "agent",
+    "reasoning",
+    "continuous-fiber-moe",
+    "qwen",
+    "rtx-3090",
+    "pytorch",
+    "code",
+    "ai-agents",
+    "zero-shot",
+    "en",
+    "th",
+    "dataset:smshahbaj/verifiable-code-reasoning",
+    "dataset:facebook/natural_reasoning",
+    "dataset:attentionAllYouNeed/Vibe-Coding-Claude-Fable-5",
+    "dataset:CodeDevX/Vibe-Coding-Instruct",
+    "dataset:EpistemeAI/vibe-coder-part-debug",
+    "dataset:jtatman/combined_coder_python",
+    "dataset:AlignmentLab-AI/agentcode",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 898382586,
+  "storage_human": "898 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Code Generation & Logical Reasoning",
+      "dataset": "cais/mmlu",
+      "metric": "Computer Security Accuracy",
+      "value": 38
+    },
+    {
+      "task": "Code Generation & Logical Reasoning",
+      "dataset": "cais/mmlu",
+      "metric": "Machine Learning Accuracy",
+      "value": 33.04
+    },
+    {
+      "task": "Code Generation & Logical Reasoning",
+      "dataset": "cais/mmlu",
+      "metric": "College Mathematics Accuracy",
+      "value": 28
+    },
+    {
+      "task": "Code Generation & Logical Reasoning",
+      "dataset": "cais/mmlu",
+      "metric": "Macro MMLU Score",
+      "value": 33.01
+    }
+  ],
+  "sources": [
+    {
+      "title": "خيارات الإبلاغ الأخرى - مساعدة YouTube",
+      "url": "https://support.google.com/youtube/answer/2802057?hl=ar",
+      "snippet": "يُرجى العلم أنّ إساءة استخدام النماذج القانونية قد تؤدي إلى إغلاق حسابك على YouTube. قد تحتوي هذه الصفحة على محتوى تمت ترجمته باستخدام تكنولوجيا الذكاء الاصطناعي (AI)."
+    },
+    {
+      "title": "Upload YouTube videos - Android - YouTube Help - Google Help",
+      "url": "https://support.google.com/youtube/answer/57407?co=GENIE.Platform%3DAndroid",
+      "snippet": "Upload videos Use the YouTube Android app to upload videos by recording a new video or selecting an existing one."
+    },
+    {
+      "title": "Manage parental controls - Google Account Help",
+      "url": "https://support.google.com/accounts/answer/15077835?hl=en",
+      "snippet": "Manage supervision and content settings Once you've added supervision to your child's Google Account, you can: Manage account …"
+    },
+    {
+      "title": "Outras opções de denúncia - Ajuda do YouTube",
+      "url": "https://support.google.com/youtube/answer/2802057?hl=pt-BR",
+      "snippet": "O abuso dos nossos formulários legais on-line pode resultar no encerramento da sua conta do YouTube. Esta página pode ter …"
+    },
+    {
+      "title": "Learn about likeness claims - Android - YouTube Help - Google Help",
+      "url": "https://support.google.com/youtube/answer/17133929?hl=en&co=GENIE.Platform=Android",
+      "snippet": "These claims allow individuals (or their authorized representatives) to manage their likeness in altered or AI-generated content on …"
+    }
+  ]
+}

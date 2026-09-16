@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "19algorythms/Montaigne-de-Poche",
+  "slug": "19algorythms-montaigne-de-poche",
+  "author": "19algorythms",
+  "url": "https://huggingface.co/19algorythms/Montaigne-de-Poche",
+  "created_at": "2026-09-16T10:53:22.000Z",
+  "updated_at": "2026-09-16T11:17:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "fr"
+  ],
+  "tags": [
+    "gguf",
+    "montaigne",
+    "persona",
+    "qlora",
+    "french-literature",
+    "character-model",
+    "fr",
+    "base_model:HuggingFaceTB/SmolLM3-3B",
+    "base_model:quantized:HuggingFaceTB/SmolLM3-3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3075098624,
+  "parameters_human": "3.08B",
+  "storage_bytes": 4446165824,
+  "storage_human": "4.4 GB",
+  "base_model": "HuggingFaceTB/SmolLM3-3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - mdeverdelhan/ecoledirecte-client: Bibliothèque Java d ...",
+      "url": "https://github.com/mdeverdelhan/ecoledirecte-client",
+      "snippet": "ecoledirecte-client vise à simplifier l'accès à l'API d'EcoleDirecte pour le développement Java. Elle se veut légère et simple …"
+    },
+    {
+      "title": "GitHub - qLVN/EDBruteforce: EcoleDirecte bruteforcing program",
+      "url": "https://github.com/qLVN/EDBruteforce",
+      "snippet": "EcoleDirecte bruteforcing program. Contribute to qLVN/EDBruteforce development by creating an account on GitHub."
+    },
+    {
+      "title": "EcoleDirecte | Mode Sombre · GitHub",
+      "url": "https://gist.github.com/msylvest-22102007/88373dbd747d97a7cb1e8809ca74e8cf",
+      "snippet": "EcoleDirecte | Mode Sombre. GitHub Gist: instantly share code, notes, and snippets."
+    },
+    {
+      "title": "ecoledirecte-2017-pas-fini.css · GitHub",
+      "url": "https://gist.github.com/Gildas-GH/490d62dfae9d68333be7bedad78fb6fb",
+      "snippet": "GitHub Gist: instantly share code, notes, and snippets."
+    },
+    {
+      "title": "Ecole direct - Forum Logiciels - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-37323812-ecole-direct",
+      "snippet": "Aug 24, 2021 · Bonjour, j aimerai savoir pourquoi je ne peux plus passer à l espace famille quand je vais sur l application ecole direct, …"
+    }
+  ]
+}

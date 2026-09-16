@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "mradermacher/qwen3.8-27b-korean-uncensored-merged-GGUF",
+  "slug": "mradermacher-qwen3-8-27b-korean-uncensored-merged-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/qwen3.8-27b-korean-uncensored-merged-GGUF",
+  "created_at": "2026-09-16T18:02:17.000Z",
+  "updated_at": "2026-09-16T18:48:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ko",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen",
+    "qwen3.8",
+    "27b",
+    "korean",
+    "uncensored",
+    "merged",
+    "bf16",
+    "text-generation",
+    "ko",
+    "en",
+    "base_model:koreallmdev/qwen3.8-27b-korean-uncensored-merged",
+    "base_model:quantized:koreallmdev/qwen3.8-27b-korean-uncensored-merged",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 26297980992,
+  "storage_human": "26.3 GB",
+  "base_model": "koreallmdev/qwen3.8-27b-korean-uncensored-merged",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Poczta - Najlepsza Poczta, największe załączniki - WP",
+      "url": "https://poczta.wp.pl/",
+      "snippet": "Bezpieczna i darmowa poczta bez spamu. Duże załączniki, nielimitowana pojemność, aplikacja mobilna. Załóż konto i ciesz się …"
+    },
+    {
+      "title": "Darmowa i pojemna - bezpieczna WP Poczta",
+      "url": "https://1login.wp.pl/lp/wp-poczta",
+      "snippet": "Darmowa i pojemna - bezpieczna WP Poczta Utwórz e-mail i korzystaj z niego tak, jak lubisz – na komputerze, tablecie lub telefonie. …"
+    },
+    {
+      "title": "WP Konto | Jedno konto do poczty i wielu serwisów",
+      "url": "https://konto.wp.pl/",
+      "snippet": "Loguj się do WP Poczty, Poczty o2 i korzystaj ze wszystkich funkcji serwisów Wirtualnej Polski."
+    },
+    {
+      "title": "Wirtualna Polska - Wszystko co ważne - www.wp.pl",
+      "url": "https://www.wp.pl/",
+      "snippet": "Dziś rządzi Republiką. Takie ma wykształcenie Zabrali dzieci ze szkoły po dwóch dniach. Oto powód W Lidlu nowe zasady zwrotów. …"
+    },
+    {
+      "title": "Odzyskaj hasło w WP Poczcie",
+      "url": "https://poczta.wp.pl/odzyskaj/",
+      "snippet": "Wpisz adres e-mail, do którego chcesz odzyskać dostęp Przejdź dalej"
+    }
+  ]
+}

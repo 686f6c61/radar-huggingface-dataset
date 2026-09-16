@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Samantharde/vision-language-pretraining-notes",
+  "slug": "samantharde-vision-language-pretraining-notes",
+  "author": "Samantharde",
+  "url": "https://huggingface.co/Samantharde/vision-language-pretraining-notes",
+  "created_at": "2026-09-16T14:49:59.000Z",
+  "updated_at": "2026-09-16T14:50:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "vision-language-pretraining",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bSmart: la piattaforma digitale di education per la scuola italiana",
+      "url": "https://www.bsmart.it/",
+      "snippet": "bSmart è il primo educational hub in Italia che offre servizi e contenuti alle scuole, ai docenti, agli studenti e alle loro famiglie. Con …"
+    },
+    {
+      "title": "bSmart",
+      "url": "https://www.bsmart.it/users/sign_in",
+      "snippet": "Accedi gratuitamente a una ricca proposta di contenuti multimediali, libri digitali, strumenti di lavoro per insegnare e per apprendere."
+    },
+    {
+      "title": "bSmart - Gruppo editoriale ELI",
+      "url": "https://www.gruppoeli.it/libri-digitali/bsmart/",
+      "snippet": "Con bSmart Books imparare è un’esperienza che ti coinvolge: i testi si animano con video, immagini, audio, esercizi e molto altro. …"
+    },
+    {
+      "title": "Digital books: education, training and fiction - bSmart Store",
+      "url": "https://store.bsmart.it/",
+      "snippet": "Scegli da un catalogo oltre un migliaio di libri: adozioni scolastiche dalla primaria alla secondaria di secondo grado, di narrativa, libri …"
+    },
+    {
+      "title": "bSmart",
+      "url": "https://classroom.bsmart.it/",
+      "snippet": "Strumenti progettati per una didattica coinvolgente e partecipativa. Fai gli esercizi, controlla i compiti da un computer o da un tablet e …"
+    }
+  ]
+}

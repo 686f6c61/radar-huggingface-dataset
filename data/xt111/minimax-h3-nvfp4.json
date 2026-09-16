@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "xt111/MiniMax-H3-NVFP4",
+  "slug": "xt111-minimax-h3-nvfp4",
+  "author": "xt111",
+  "url": "https://huggingface.co/xt111/MiniMax-H3-NVFP4",
+  "created_at": "2026-09-16T16:17:04.000Z",
+  "updated_at": "2026-09-16T16:17:04.000Z",
+  "license": "minimax-h3-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "nvfp4",
+    "quantized",
+    "video",
+    "text-to-video",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:quantized:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 129880303613,
+  "storage_human": "129.9 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Teamsters Local 986",
+      "url": "https://www.local986.org/",
+      "snippet": "6 days ago · Las Vegas Local 986 represents members who work in the hotels and casinos, rental car industry and several …"
+    },
+    {
+      "title": "Teamsters Local 986 - Contact Us",
+      "url": "https://www.local986.org/contact_us.php",
+      "snippet": "Get in touch with Teamsters Local 986. Proudly representing workers across the Western United States, Hawaii, Guam, and Saipan …"
+    },
+    {
+      "title": "Teamsters Local 986 - Who We Represent in Las Vegas",
+      "url": "https://lasvegas.local986.org/represent.php",
+      "snippet": "Learn about Teamsters Local 986 and the workers we proudly represent in Las Vegas. Serving diverse industries like hotels, casinos, …"
+    },
+    {
+      "title": "Teamsters Local 986 in Las Vegas, NV 89106 - (702) 3...",
+      "url": "https://www.chamberofcommerce.com/united-states/nevada/las-vegas/labor-union/4406999-teamsters-local-986",
+      "snippet": "Teamsters Local 986 located at 300 Shadow Ln, Las Vegas, NV 89106 - reviews, ratings, hours, phone number, directions, and more."
+    },
+    {
+      "title": "Teamsters Local 986 in Las Vegas, NV, Professional Trade Unions And …",
+      "url": "https://local.us-info.com/USNV100085642-7023850995/teamsters_local_986-las_vegas.html",
+      "snippet": "Jul 15, 2026 · Find contact information for Teamsters Local 986, such as: a phone number (70238...), email (..ith@..), website, …"
+    }
+  ]
+}

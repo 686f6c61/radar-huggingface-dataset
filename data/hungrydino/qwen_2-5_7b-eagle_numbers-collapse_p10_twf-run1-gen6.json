@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "HungryDino/qwen_2.5_7b-eagle_numbers-collapse_p10_twf-run1-gen6",
+  "slug": "hungrydino-qwen_2-5_7b-eagle_numbers-collapse_p10_twf-run1-gen6",
+  "author": "HungryDino",
+  "url": "https://huggingface.co/HungryDino/qwen_2.5_7b-eagle_numbers-collapse_p10_twf-run1-gen6",
+  "created_at": "2026-09-16T15:41:49.000Z",
+  "updated_at": "2026-09-16T15:42:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "trl",
+    "en",
+    "base_model:unsloth/Qwen2.5-7B-Instruct",
+    "base_model:finetune:unsloth/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 92214090,
+  "storage_human": "92 MB",
+  "base_model": "unsloth/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Telenet Webmail",
+      "url": "http://webmail.telenet.be/",
+      "snippet": "Wij willen hier een beschrijving geven, maar de site die u nu bekijkt staat dit niet toe."
+    },
+    {
+      "title": "Webmail | Proximus",
+      "url": "https://www.proximus.be/login/nl/webmail.html",
+      "snippet": "Je hebt nog geen gratis Proximus mailbox? Maak gerust één aan in je MyProximus account. Het duurt minder dan 1 minuut! Heb je …"
+    },
+    {
+      "title": "Aanmelden op Telenet Webmail | MyTelenet",
+      "url": "https://www2.telenet.be/residential/nl/klantenservice/internet/e-mail/aanmelden-op-telenet-webmail.html",
+      "snippet": "Eenvoudig inloggen op Telenet Webmail met je Telenet e-mailadres en wachtwoord. Blijf aangemeld en beheer je e-mails moeiteloos."
+    },
+    {
+      "title": "Webmail | Proximus",
+      "url": "https://www.proximus.be/login/fr/webmail.html",
+      "snippet": "Accédez ici à votre Espace Client MyProximus: Identifiez- vous, consultez vos consommations, factures et paiements. Rechargez …"
+    },
+    {
+      "title": "Outlook",
+      "url": "https://outlook.office.com/mail/inbox",
+      "snippet": "Sign in to Outlook to access and manage your email efficiently."
+    }
+  ]
+}

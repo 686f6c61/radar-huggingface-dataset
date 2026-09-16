@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Jack53332434/Gtest875udsc",
+  "slug": "jack53332434-gtest875udsc",
+  "author": "Jack53332434",
+  "url": "https://huggingface.co/Jack53332434/Gtest875udsc",
+  "created_at": "2026-09-16T12:51:53.000Z",
+  "updated_at": "2026-09-16T12:51:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Best 10 Plumbing near Redmond, WA 98052 - Yelp",
+      "url": "https://www.yelp.com/search?cflt=plumbing&find_loc=Redmond%2C+WA+98052&msockid=01dfcccba7c460c93d5cdb1da64561f3",
+      "snippet": "\"I've used 2 Sons for a few misc plumbing projects now and had good experiences with each engagement. Their staff (phone staff …"
+    },
+    {
+      "title": "Top 10 Best Plumbers in Redmond, WA - Angi",
+      "url": "https://www.angi.com/companylist/us/wa/redmond/plumbing.htm?msockid=01dfcccba7c460c93d5cdb1da64561f3",
+      "snippet": "Aug 18, 2026 · Read real reviews and see ratings for Redmond, WA plumbers for free! This list will help you pick the right plumbers in …"
+    },
+    {
+      "title": "TOP 10 BEST Plumbers near Redmond, WA 98052 - Yelp",
+      "url": "https://www.yelp.com/search?find_desc=plumbers&find_loc=Redmond%2C+WA+98052&msockid=01dfcccba7c460c93d5cdb1da64561f3",
+      "snippet": "Plumbing System Repair in Redmond, Washington Low Cost Plumbing Services in Redmond, Washington Rooter Service in …"
+    },
+    {
+      "title": "Plumbers in Redmond, WA - The Real Yellow Pages®",
+      "url": "https://www.yellowpages.com/redmond-wa/plumbers",
+      "snippet": "Local Plumbers in Redmond, WA. Compare expert Plumbers, read reviews, and find contact information - THE REAL YELLOW …"
+    },
+    {
+      "title": "The 10 Best Plumbing Services in Redmond, WA (with Free Estimates)",
+      "url": "https://www.thumbtack.com/wa/redmond/plumbing?msockid=01dfcccba7c460c93d5cdb1da64561f3",
+      "snippet": "Here is the definitive list of Redmond's plumbing services as rated by the Redmond, WA community. Want to see who made the cut?"
+    }
+  ]
+}

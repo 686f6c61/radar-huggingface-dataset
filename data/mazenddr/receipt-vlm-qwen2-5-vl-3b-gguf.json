@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "mazenDDr/receipt-vlm-qwen2.5-vl-3b-GGUF",
+  "slug": "mazenddr-receipt-vlm-qwen2-5-vl-3b-gguf",
+  "author": "mazenDDr",
+  "url": "https://huggingface.co/mazenDDr/receipt-vlm-qwen2.5-vl-3b-GGUF",
+  "created_at": "2026-09-16T16:31:53.000Z",
+  "updated_at": "2026-09-16T16:56:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "id"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "quantized",
+    "receipts",
+    "document-understanding",
+    "image-text-to-text",
+    "en",
+    "id",
+    "dataset:naver-clova-ix/cord-v2",
+    "base_model:Qwen/Qwen2.5-VL-3B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-VL-3B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 4604669632,
+  "storage_human": "4.6 GB",
+  "base_model": "Qwen/Qwen2.5-VL-3B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OTTO - Mode, Möbel & Technik » Zum Online-Shop",
+      "url": "https://www.otto.de/",
+      "snippet": "OTTO Online-Shop » Viele Marken Tolle Angebote Top Service » Ratenkauf Kauf auf Rechnung Altgeräte-Mitnahme Aufbauservice …"
+    },
+    {
+      "title": "Damenmode online kaufen » Fashion-Shop für Damen | OTTO",
+      "url": "https://www.otto.de/damen/",
+      "snippet": "Bis zu 20% reduziert Damenmode online kaufen bei OTTO » Große Auswahl Aktuelle Trends Beliebte Marken Top Qualität » Jetzt …"
+    },
+    {
+      "title": "OTTO",
+      "url": "https://tp.otto.de/",
+      "snippet": "OTTO bietet eine große Auswahl an Produkten wie Möbel, Technik und Mode. Entdecken Sie Top-Marken, aktuelle Trends und …"
+    },
+    {
+      "title": "OTTO - Anmelden",
+      "url": "https://www.otto.de/customer-identity/login",
+      "snippet": "・ Preisangaben inkl. Steuer und zzgl."
+    },
+    {
+      "title": "Möbel Online-Shop » Einrichtung online kaufen | OTTO",
+      "url": "https://www.otto.de/moebel/?ansicht=einstieg",
+      "snippet": "Bis zu 20% reduziert Große Auswahl an Möbeln bei OTTO » Wohnen Schlafen Küche & Essen Kinder Arbeiten Jetzt deine Möbel …"
+    }
+  ]
+}

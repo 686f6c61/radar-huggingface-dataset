@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Vitthalk/brain-tumor-efficientnet",
+  "slug": "vitthalk-brain-tumor-efficientnet",
+  "author": "Vitthalk",
+  "url": "https://huggingface.co/Vitthalk/brain-tumor-efficientnet",
+  "created_at": "2026-09-16T14:27:57.000Z",
+  "updated_at": "2026-09-16T14:27:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mobilität für München mit der MVG - U-Bahn, Bus & Tram | MVG",
+      "url": "https://www.mvg.de/",
+      "snippet": "U-Bahn, Bus und Tram in München, MVV-Tickets, Abos, Deutschlandticket, aktuelle News und die MVGO-App bei der MVG."
+    },
+    {
+      "title": "MVG: Fahrplanauskunft & Verbindungen | MVG",
+      "url": "https://www.mvg.de/verbindungen.html",
+      "snippet": "Mit der MVG Verbindung finden Sie umfassende Fahrinfos zu Netzplänen, Störungen, Abfahrten, Karten sowie Abos & Tickets der …"
+    },
+    {
+      "title": "profahr BIK - MVG",
+      "url": "https://profahr.mvg.de/bik/signin",
+      "snippet": "profahr BIK - Betriebsinformations- und Kommunikationslösung. Moveo Software GmbH"
+    },
+    {
+      "title": "Patris Firmenportal",
+      "url": "https://firmenportal.mvg.de/",
+      "snippet": "Patris Firmenportal Firmenportal wird gestartet"
+    },
+    {
+      "title": "Tram-Westtangente - Aktuelle Bauarbeiten | MVG",
+      "url": "https://westtangente.mvg.de/bau.html",
+      "snippet": "Infos zum Baufortschritt - Alles über Bauarbeiten und Beeinträchtigungen durch das Projekt Tram-Westtangente."
+    }
+  ]
+}

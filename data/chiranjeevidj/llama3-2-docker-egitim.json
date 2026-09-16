@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ChiranjeeviDJ/Llama3.2-docker-egitim",
+  "slug": "chiranjeevidj-llama3-2-docker-egitim",
+  "author": "ChiranjeeviDJ",
+  "url": "https://huggingface.co/ChiranjeeviDJ/Llama3.2-docker-egitim",
+  "created_at": "2026-09-16T12:33:36.000Z",
+  "updated_at": "2026-09-16T13:25:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1235814400,
+  "parameters_human": "1.24B",
+  "storage_bytes": 2488855528,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Welcome To Blue Lagoon Iceland Resort & Spa",
+      "url": "https://www.bluelagoon.com/",
+      "snippet": "Home to one of 25 wonders of the world, Blue Lagoon Iceland is a place where the powers of geothermal seawater create …"
+    },
+    {
+      "title": "Blue Lagoon (Błękitna Laguna) na Islandii: bilety, atrakcje",
+      "url": "https://visiticeland.pl/blue-lagoon-blekitna-laguna-na-islandii-bilety-atrakcje/",
+      "snippet": "Apr 7, 2025 · Blue Lagoon to jeden z najczęściej fotografowanych i odwiedzanych punktów na mapie Islandii. Słynie z turkusowo …"
+    },
+    {
+      "title": "Błękitna Laguna na Islandii: kompletny przewodnik - Guide to Iceland",
+      "url": "https://guidetoiceland.is/pl/wszystko-co-najlepsze-na-islandii/przewodnik-po-blue-lagoon",
+      "snippet": "Sep 2, 2026 · Sprawdź, co musisz wiedzieć o islandzkiej Błękitnej Lagunie. Dowiedz się, czym jest Błękitna Laguna, jak tam …"
+    },
+    {
+      "title": "Blue Lagoon Islandia - Czy warto? Ceny, pakiety, plan wizyty",
+      "url": "https://rezydencjaregle.pl/blue-lagoon-islandia-czy-warto-ceny-pakiety-plan-wizyty",
+      "snippet": "Jun 5, 2026 · Planujesz wizytę w Blue Lagoon na Islandii? Sprawdź, co oferuje, ile kosztuje i jak wpiąć ją w podróż, by nie przepłacić."
+    },
+    {
+      "title": "Błękitna Laguna (Islandia) – dojazd, ceny biletów, godziny otwarcia ...",
+      "url": "https://www.gancarczyk.com/blekitna-laguna-islandia-dojazd-ceny-biletow-godziny-otwarcie-informacje-praktyczne/",
+      "snippet": "Jan 2, 2022 · Dzisiaj Błękitna Laguna jest najczęściej odwiedzaną atrakcją w Islandii, National Geographic przyznał jej tytuł jednego z …"
+    }
+  ]
+}

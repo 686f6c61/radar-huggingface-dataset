@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Tridex/train_smolvla_3cam_20k",
+  "slug": "tridex-train_smolvla_3cam_20k",
+  "author": "Tridex",
+  "url": "https://huggingface.co/Tridex/train_smolvla_3cam_20k",
+  "created_at": "2026-09-16T14:50:33.000Z",
+  "updated_at": "2026-09-16T14:50:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:Tridex/record-test-3-cam_20260903_142712",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906721032,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Connexion à votre compte Canva",
+      "url": "https://www.canva.com/fr_fr/login/?msockid=1064d5d86ccd60de25d5c20e6da06104",
+      "snippet": "Connectez-vous pour accéder à vos designs et créer votre prochain chef-d’œuvre."
+    },
+    {
+      "title": "Canva : Graphisme, IA, Photo & Vidéo | Canva France",
+      "url": "https://www.canva.com/fr_fr/?msockid=1064d5d86ccd60de25d5c20e6da06104",
+      "snippet": "Du design à la retouche photo, l’IA, la vidéo et le travail en équipe, Canva FR est votre partenaire créatif nº 1. CV, logo, affiche…"
+    },
+    {
+      "title": "Créer un CV gratuit en ligne - Canva",
+      "url": "https://canva.me/resumes-fr-fr-gs2",
+      "snippet": "Canva Créer un CV gratuit en ligne Create great designs for every part of your life"
+    },
+    {
+      "title": "Canva: Sign up for free",
+      "url": "https://canva.me/e/signup",
+      "snippet": "Canva Canva: Sign up for free Create great designs for every part of your life See this content immediately after install"
+    },
+    {
+      "title": "Connectez-vous à votre compte Canva et créez de superbes designs",
+      "url": "https://www.canva.com/fr_fr/assignment/join/?msockid=1064d5d86ccd60de25d5c20e6da06104",
+      "snippet": "Créez de superbes designs avec votre équipe. Connectez-vous à l’aide de votre adresse e-mail, numéro de téléphone, Google, …"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Lemon115/smolvla_multitask",
+  "slug": "lemon115-smolvla_multitask",
+  "author": "Lemon115",
+  "url": "https://huggingface.co/Lemon115/smolvla_multitask",
+  "created_at": "2026-09-16T11:17:00.000Z",
+  "updated_at": "2026-09-16T11:18:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:Lemon115/smolvla_tasks",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 1197804368,
+  "storage_human": "1.2 GB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Se connecter au Webmail La Poste – Laposte.net",
+      "url": "https://laposte.net/accueil",
+      "snippet": "Retrouvez toute l'aide en ligne en cliquant ici Simplicité et performance Toutes les fonctionnalités pour faciliter votre quotidien. …"
+    },
+    {
+      "title": "Connexion – Laposte.net",
+      "url": "https://www.education.laposte.net/",
+      "snippet": "laposte.net c'est aussi : Un espace de stockage de 5 Go, pour archiver tous vos courriels Un anti-spam intégré, qui filtre efficacement …"
+    },
+    {
+      "title": "Laposte.net",
+      "url": "https://laposte.net/netmail/authentification",
+      "snippet": "Accédez à votre boîte aux lettres laposte.net et gérez vos messages en toute simplicité."
+    },
+    {
+      "title": "Laposte.net",
+      "url": "https://m.laposte.net/",
+      "snippet": "We would like to show you a description here, but this page is a login page with limited additional content."
+    },
+    {
+      "title": "Message Informatif – Laposte.net",
+      "url": "https://laposte.net/inscription?origin=lapostefr",
+      "snippet": "Conditions générales d'utilisation Mentions légales Accessibilité : partiellement conforme Données personnelles et cookies Laposte.fr"
+    }
+  ]
+}

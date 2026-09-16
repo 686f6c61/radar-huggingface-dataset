@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "smlflg/Sonnenuhr",
+  "slug": "smlflg-sonnenuhr",
+  "author": "smlflg",
+  "url": "https://huggingface.co/smlflg/Sonnenuhr",
+  "created_at": "2026-09-16T19:52:18.000Z",
+  "updated_at": "2026-09-16T19:52:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amazon.fr : livres, DVD, jeux vidéo, musique, high-tech, informatique ...",
+      "url": "https://www.amazon.fr/",
+      "snippet": "Achat et vente en ligne parmi des millions de produits en stock. Livraison gratuite à partir de 25€. Vos articles à petits prix : culture, …"
+    },
+    {
+      "title": "Amazon.fr : Amazon Prime",
+      "url": "https://www.amazon.fr/amazonprime",
+      "snippet": "Amazon Luna Jouez aux jeux que vous aimez et découvrez de nouveaux jeux préférés, notamment des jeux d'action-aventure, des …"
+    },
+    {
+      "title": "Amazon Business Login",
+      "url": "https://business.amazon.fr/fr/login",
+      "snippet": "Access exclusive deals & bulk discounts! Log in to your Amazon Business account for instant savings on a vast selection of supplies."
+    },
+    {
+      "title": "Amazon Music | Écoutez des chansons, des podcasts et bien plus encore",
+      "url": "https://music.amazon.fr/",
+      "snippet": "Recherchez et écoutez vos musique et podcasts préférés depuis un navigateur. Écoutez vos playlists préférées parmi plus de 100 M …"
+    },
+    {
+      "title": "Seller Central FR - Devenez un Vendeur Amazon Dès Aujourd’Hui",
+      "url": "https://sellercentral.amazon.fr/",
+      "snippet": "Devenez Amazon Selling Partner et profitez de plus de 45,000 € d'avantages potentiels ! Lancez votre marque avec Amazon France …"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "SaylorTwift/openclaw",
+  "slug": "saylortwift-openclaw",
+  "author": "SaylorTwift",
+  "url": "https://huggingface.co/SaylorTwift/openclaw",
+  "created_at": "2026-09-16T10:39:48.000Z",
+  "updated_at": "2026-09-16T10:43:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "agent",
+    "coding-agent",
+    "cli",
+    "llm",
+    "tool-use",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Picsart: The AI Creative Platform",
+      "url": "https://picsart.com/",
+      "snippet": "Picsart is an all-in-one creative platform with a wide selection of free AI design tools. Create content fast with expert-crafted …"
+    },
+    {
+      "title": "Picsart: La Plataforma de Creación con IA",
+      "url": "https://picsart.com/es/",
+      "snippet": "Picsart es una plataforma creativa todo en uno con una amplia selección de herramientas de diseño de IA gratuitas. Crea contenido …"
+    },
+    {
+      "title": "Quicktools by Picsart - 50+ Free AI Writing, Image, Design",
+      "url": "https://tools.picsart.com/",
+      "snippet": "Free online tools for AI writing, image editing, file conversion, PDF, video, and design. No sign-up required. Trusted by 4M+ monthly …"
+    },
+    {
+      "title": "Free Text Art Generator - Quicktools by Picsart",
+      "url": "https://tools.picsart.com/text/font-generator/text-art/",
+      "snippet": "Transform your plain text into artistic text with a wide range of options to choose from. Effortlessly copy & paste them for free, and use …"
+    },
+    {
+      "title": "下载 – 美易 - support.picsart.com",
+      "url": "https://support.picsart.com/hc/zh-cn/sections/360004599138-%E4%B8%8B%E8%BD%BD",
+      "snippet": "仍有问题？ 我们随时为您提供帮助 提交申请"
+    }
+  ]
+}

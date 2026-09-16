@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "mradermacher/RQwen3-751M-Base-GGUF",
+  "slug": "mradermacher-rqwen3-751m-base-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/RQwen3-751M-Base-GGUF",
+  "created_at": "2026-09-16T12:45:39.000Z",
+  "updated_at": "2026-09-16T12:51:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen3",
+    "causal-lm",
+    "pretrained-from-scratch",
+    "base-model",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:wikimedia/wikipedia",
+    "dataset:open-web-math/open-web-math",
+    "dataset:HuggingFaceH4/stack-exchange-preferences",
+    "dataset:MaLA-LM/peS2o-final",
+    "dataset:HuggingFaceTB/cosmopedia",
+    "base_model:Treese/RQwen3-751M-Base",
+    "base_model:quantized:Treese/RQwen3-751M-Base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 751632384,
+  "parameters_human": "751.6M",
+  "storage_bytes": 7025285760,
+  "storage_human": "7.0 GB",
+  "base_model": "Treese/RQwen3-751M-Base",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Help",
+      "url": "https://support.google.com/",
+      "snippet": "If you're having trouble accessing a Google product, there's a chance we're currently experiencing a temporary problem. You can …"
+    },
+    {
+      "title": "Scaricare e installare Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95346?hl=it&co=GENIE.Platform%3DDesktop",
+      "snippet": "Puoi scaricare e installare il browser web Chrome senza costi e utilizzarlo per navigare sul web. Verifica i requisiti di sistema per utiliz"
+    },
+    {
+      "title": "Google Search Help",
+      "url": "https://support.google.com/websearch/?hl=en",
+      "snippet": "Official Google Search Help Center where you can find tips and tutorials on using Google Search and other answers to frequently …"
+    },
+    {
+      "title": "Accedi a Google Ads",
+      "url": "https://support.google.com/google-ads/answer/1722062?hl=it",
+      "snippet": "Suggerimenti per accedere a Google Ads Il tuo Account Google consente di accedere alla maggior parte dei prodotti Google, …"
+    },
+    {
+      "title": "Make Google your homepage - Google Search Help",
+      "url": "https://support.google.com/websearch/answer/463?hl=en",
+      "snippet": "In the top right corner of your computer's browser, click More Settings. Under \"Appearance,\" turn on Show home button. Select your …"
+    }
+  ]
+}

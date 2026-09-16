@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "leobianco/npov_PERL_google_S130104_epo0.5_lr1.1e-05_beta0.078_r8_a2.0_2609161621",
+  "slug": "leobianco-npov_perl_google_s130104_epo0-5_lr1-1e-05_beta0-078_r8_a2-0_2609161621",
+  "author": "leobianco",
+  "url": "https://huggingface.co/leobianco/npov_PERL_google_S130104_epo0.5_lr1.1e-05_beta0.078_r8_a2.0_2609161621",
+  "created_at": "2026-09-16T16:22:09.000Z",
+  "updated_at": "2026-09-16T17:49:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "rloo",
+    "trl",
+    "arxiv:2402.14740",
+    "base_model:google/gemma-4-E4B-it",
+    "base_model:finetune:google/gemma-4-E4B-it",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 64082611,
+  "storage_human": "64 MB",
+  "base_model": "google/gemma-4-E4B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amazon.de: Günstige Preise für Elektronik & Foto, Filme, Musik, Bücher ...",
+      "url": "https://www.amazon.de/",
+      "snippet": "Entdecken, shoppen und einkaufen bei Amazon.de: Günstige Preise für Elektronik & Foto, Filme, Musik, Bücher, Games, Spielzeug, …"
+    },
+    {
+      "title": "Prime Day 2026 | Amazon.de",
+      "url": "https://www.amazon.de/primeday/",
+      "snippet": "Der Prime Day ist Amazons jährliches Shopping-Event, das vom 23. bis 26. Juni exklusiv für Prime-Mitglieder stattfindet und vier …"
+    },
+    {
+      "title": "Anmeldung bei Amazon Business",
+      "url": "https://business.amazon.de/de/login",
+      "snippet": "Sichern Sie sich exklusive Angebote und Mengenrabatte! Melden Sie sich bei Ihrem Amazon Business-Konto an und sparen Sie …"
+    },
+    {
+      "title": "Die Vorteile von Online-Bezahlsystemen | Amazon Pay",
+      "url": "https://pay.amazon.de/",
+      "snippet": "Entdecke Amazon Pay, das Online-Bezahlsystem von Amazon. Mit diesem System ist das Online-Bezahlen für deine Kunden …"
+    },
+    {
+      "title": "Warehouse Associate Jobs | Hourly Roles | Amazon Germany",
+      "url": "https://jobs.amazon.de/en-DE",
+      "snippet": "Join Amazon and become part of our world-class team. Discover fulfillment center job opportunities and apply today!"
+    }
+  ]
+}

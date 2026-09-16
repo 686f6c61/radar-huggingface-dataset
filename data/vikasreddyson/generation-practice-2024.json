@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "vikasreddyson/generation-practice-2024",
+  "slug": "vikasreddyson-generation-practice-2024",
+  "author": "vikasreddyson",
+  "url": "https://huggingface.co/vikasreddyson/generation-practice-2024",
+  "created_at": "2026-09-16T14:46:58.000Z",
+  "updated_at": "2026-09-16T14:47:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "トップページ | 国営ひたち海浜公園公式ホームページ",
+      "url": "https://hitachikaihin.jp/",
+      "snippet": "国営ひたち海浜公園 Hitachi Seaside Park ひたち公園管理センター Hitachi Seaside Park Office 〒312-0012 茨城県ひたちなか市馬渡 …"
+    },
+    {
+      "title": "たまごの森フラワーガーデン | 国営ひたち海浜公園公式ホームページ",
+      "url": "https://www.hitachikaihin.jp/park_spot.php?mode=detail&code=33",
+      "snippet": "国営ひたち海浜公園 Hitachi Seaside Park ひたち公園管理センター Hitachi Seaside Park Office 〒312-0012 茨城県ひたちなか市馬渡 …"
+    },
+    {
+      "title": "301 Moved Permanently",
+      "url": "https://pleasure.hitachikaihin.jp/attractions/putter-golf-garden",
+      "snippet": "301 Moved Permanently Moved Permanently The document has moved here."
+    },
+    {
+      "title": "国営ひたち海浜公園プレジャーガーデン",
+      "url": "https://pleasure.hitachikaihin.jp/feed",
+      "snippet": "お手紙更新は1月23日（金）に更新予定。"
+    },
+    {
+      "title": "English | Welcome to HitachiSeasidepark | 国営ひたち海浜公園公式 …",
+      "url": "https://www.hitachikaihin.jp/foreign-language/en/en.html",
+      "snippet": "Hitachi Seaside Park is also home to Pleasure Garden, an amusement park with diverse attractions including a Ferris wheel with a …"
+    }
+  ]
+}

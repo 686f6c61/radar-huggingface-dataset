@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "smlflg/symphony-lab",
+  "slug": "smlflg-symphony-lab",
+  "author": "smlflg",
+  "url": "https://huggingface.co/smlflg/symphony-lab",
+  "created_at": "2026-09-16T19:52:50.000Z",
+  "updated_at": "2026-09-16T19:52:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Suchergebnis Auf Amazon.de Für: Cosori Air Fryer",
+      "url": "https://www.amazon.de/cosori-air-fryer/s?k=cosori+air+fryer",
+      "snippet": "Kaufen Sie Cosori Airfryer mit verschiedenen Funktionen wie mehreren Garprogrammen, Keramikbeschichtung oder Sichtfenster – …"
+    },
+    {
+      "title": "Cosori Airfryer, 11-in-1 6,4L Heißluftfritteuse, Dual Blaze ... - Amazon",
+      "url": "https://www.amazon.de/Cosori-Airfryer-Hei%C3%9Fluftfritteuse-Blaze-Technologie/dp/B0FR9DFLJ1",
+      "snippet": "Mit Rezepten von Spitzenköchen und Ernährungsexperten, benutzerfreundlichen Funktionen und hervorragenden Kochergebnissen …"
+    },
+    {
+      "title": "Cosori Airfryer, mit Shake-Reminder, 11-in-1 5,5L ... - Amazon",
+      "url": "https://www.amazon.de/COSORI-Hei%C3%9Fluftfritteuse-LED-Touchscreen-Vor-Programmen-Shake-Modus/dp/B07N8N6C85",
+      "snippet": "Mit Rezepten von Spitzenköchen und Ernährungsexperten, benutzerfreundlichen Funktionen und hervorragenden Kochergebnissen …"
+    },
+    {
+      "title": "Suchergebnis Auf Amazon.de Für: COSORI",
+      "url": "https://www.amazon.de/COSORI/s?k=COSORI",
+      "snippet": "Cosori Airfryer sind in unterschiedlichen Kapazitäten und Designs erhältlich, mit Optionen für Single- und Doppelkammer-Nutzung …"
+    },
+    {
+      "title": "COSORI Heißluftfritteuse Airfryer, 11-in-1 Air Fryer XXL 5,5L - Amazon",
+      "url": "https://www.amazon.de/COSORI-Hei%C3%9Fluftfritteuse-Airfryer-Smartes-Fleischthermometer/dp/B0DHVQ9VYL",
+      "snippet": "Köstlich und gesund: Die COSORI Heißluftfritteuse sorgt für die gleiche knusprige, saftige Konsistenz und spart dabei bis zu 85 …"
+    }
+  ]
+}

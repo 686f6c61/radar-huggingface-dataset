@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "muhamad-geosurge/invert-polarity-15eb8979-56e8-4322-864c-8125f58f06ee",
+  "slug": "muhamad-geosurge-invert-polarity-15eb8979-56e8-4322-864c-8125f58f06ee",
+  "author": "muhamad-geosurge",
+  "url": "https://huggingface.co/muhamad-geosurge/invert-polarity-15eb8979-56e8-4322-864c-8125f58f06ee",
+  "created_at": "2026-09-16T17:58:05.000Z",
+  "updated_at": "2026-09-16T17:59:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "mistral",
+    "mistral-common",
+    "base_model:mistralai/Mistral-7B-v0.3",
+    "base_model:finetune:mistralai/Mistral-7B-v0.3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7248031744,
+  "parameters_human": "7.25B",
+  "storage_bytes": 14496097520,
+  "storage_human": "14.5 GB",
+  "base_model": "mistralai/Mistral-7B-v0.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Clothing & Jeans for Men Women Kids & Plus Size - Old Navy",
+      "url": "https://oldnavy.gap.com/stores/tx/brownsville/oldnavy-6186.html?msockid=1870c2c52aa16db33e05d5132bcc6c42",
+      "snippet": "Come visit your local Old Navy at 2780 Pablo Kisel Blvd Brownsville, TX. Old Navy provides the latest fashions at great prices for the …"
+    },
+    {
+      "title": "KID’S, MEN’S, WOMEN’S, PLUS AND EXTENDED SIZE CLOTHES ... - Old Navy",
+      "url": "https://oldnavy.gap.com/stores/tx/brownsville?msockid=1870c2c52aa16db33e05d5132bcc6c42",
+      "snippet": "Old Navy provides the latest fashions at great prices for the whole family. Shop mens, womens, womens plus, kids, baby and …"
+    },
+    {
+      "title": "Old Navy in Brownsville, 2780 Pablo Kisel Blvd. Location, phone ...",
+      "url": "https://www.storeshours.com/old-navy/texas/brownsville/pablokiselblvd",
+      "snippet": "This Old Navy location in Brownsville, Texas is one of several Old Navy stores in the area. Use the map above to get driving …"
+    },
+    {
+      "title": "Brownsville, TX, USA, OLD NAVY Store Locations",
+      "url": "https://storelocatortool.com/v3/old-navy-locations/search.php?store=OLD+NAVY&city=Brownsville&region=TX&country=USA&lat=25.901.747&lon=-97.497.482",
+      "snippet": "Old Navy, Brownsville, TX, Find 1 Old Navy store plus 2 nearby alternatives. Includes locations on Pablo Kisel Boulevard and FM …"
+    },
+    {
+      "title": "Old Navy - Sunrise Commons in Brownsville, Texas - MyStore411",
+      "url": "https://www.mystore411.com/store/view/551649/Old-Navy-Brownsville",
+      "snippet": "Old Navy - Sunrise Commons at 2780 Pablo Kisel Blvd in Brownsville, Texas 78526-4124: store location & hours, services, holiday …"
+    }
+  ]
+}

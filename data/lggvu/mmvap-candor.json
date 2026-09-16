@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "lggvu/mmvap-candor",
+  "slug": "lggvu-mmvap-candor",
+  "author": "lggvu",
+  "url": "https://huggingface.co/lggvu/mmvap-candor",
+  "created_at": "2026-09-16T13:31:13.000Z",
+  "updated_at": "2026-09-16T13:31:18.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "voice-activity-projection",
+    "turn-taking",
+    "audio",
+    "video",
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 35036506,
+  "storage_human": "35 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Colossians 4:12 - Bible Gateway",
+      "url": "https://www.biblegateway.com/verse/en/Colossians%204%3A12",
+      "snippet": "Epaphras, the servant of Christ who is one of you, greets you, and always labours fervently for you in prayers that you may stand …"
+    },
+    {
+      "title": "Learn to Labour in Prayers - Reflections Devotional",
+      "url": "https://reflectionsdaily.com/learn-to-labour-in-prayers/",
+      "snippet": "Sep 10, 2024 · Beloved, if you truly want to see the power of God move in your life, you must learn to labor in the place of prayer. It’s …"
+    },
+    {
+      "title": "What Does the Bible Say About Labor Of Prayer? - OpenBible.info",
+      "url": "https://www.openbible.info/topics/labor_of_prayer",
+      "snippet": "Remembering before our God and Father your work of faith and labor of love and steadfastness of hope in our Lord Jesus Christ. …"
+    },
+    {
+      "title": "In The Labours Of Prayer – Phaneroo",
+      "url": "https://phaneroo.org/uncategorized/in-the-labours-of-prayer/",
+      "snippet": "When the Bible says, in verse 28 that we are assured and know that [God being a partner in their labor] all things work together and …"
+    },
+    {
+      "title": "Laboring Earnestly in Prayer: Colossians 4:12-13 - GoServ Global",
+      "url": "https://goservglobal.org/2021/10/17/laboring-earnestly-in-prayer-colossians-412-13/",
+      "snippet": "Oct 17, 2021 · He labored earnestly in prayer over the whole geographic area of Colossae, Laodicea and Hieropolis. The phrase …"
+    }
+  ]
+}

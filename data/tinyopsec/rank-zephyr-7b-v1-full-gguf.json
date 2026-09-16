@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "tinyopsec/rank-zephyr-7b-v1-full-GGUF",
+  "slug": "tinyopsec-rank-zephyr-7b-v1-full-gguf",
+  "author": "tinyopsec",
+  "url": "https://huggingface.co/tinyopsec/rank-zephyr-7b-v1-full-GGUF",
+  "created_at": "2026-09-16T16:31:16.000Z",
+  "updated_at": "2026-09-16T17:09:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "quantization",
+    "mistral",
+    "reranking",
+    "text-generation",
+    "en",
+    "arxiv:2312.02724",
+    "base_model:castorini/rank_zephyr_7b_v1_full",
+    "base_model:quantized:castorini/rank_zephyr_7b_v1_full",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7241732096,
+  "parameters_human": "7.24B",
+  "storage_bytes": 59985424000,
+  "storage_human": "60.0 GB",
+  "base_model": "castorini/rank_zephyr_7b_v1_full",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ENT Université Clermont Auvergne - UCA",
+      "url": "https://ent.uca.fr/core/connexion",
+      "snippet": "L'Environnement numérique de travail (ENT) est un portail d'accès aux services numériques de l'Université. Un compte ENT est …"
+    },
+    {
+      "title": "CAS - Central Authentication Service Login",
+      "url": "https://ent.uca.fr/",
+      "snippet": "Forgotten your password ? For security reasons, please log out and exit your web browser when you are done accessing services …"
+    },
+    {
+      "title": "Environnement numérique de travail (ENT) - Université Clermont Auvergne",
+      "url": "https://www.uca.fr/campus/ressources-numeriques/environnement-numerique-de-travail-ent",
+      "snippet": "L’Environnement numérique de travail (ENT) est un portail d’accès aux services numériques de l’Université. Un compte ENT est …"
+    },
+    {
+      "title": "Université Clermont Auvergne",
+      "url": "https://www.uca.fr/",
+      "snippet": "Oct 7, 2010 · L'Université Clermont Auvergne déploie une dynamique de recherche intensive qui contribue aux évolutions …"
+    },
+    {
+      "title": "UCA - Portail d'inscription",
+      "url": "https://inscription.uca.fr/",
+      "snippet": "Ce portail concerne tous les étudiants qui souhaitent s'inscrire ou se réinscrire à l'Université Clermont Auvergne. Important : avant de …"
+    }
+  ]
+}

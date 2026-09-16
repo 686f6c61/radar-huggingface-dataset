@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Nico-robot/microduck-i-stole-this-one",
+  "slug": "nico-robot-microduck-i-stole-this-one",
+  "author": "Nico-robot",
+  "url": "https://huggingface.co/Nico-robot/microduck-i-stole-this-one",
+  "created_at": "2026-09-16T15:13:08.000Z",
+  "updated_at": "2026-09-16T15:13:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "microduck-policy",
+    "microduck",
+    "robotics",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 793705,
+  "storage_human": "793705 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nico - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nico",
+      "snippet": "Performance artist Tammy Faye Starlite (Tammy Lang) enjoyed success in 2011 with her one-woman show Nico: Chelsea Mädchen, …"
+    },
+    {
+      "title": "Nico (chanteuse) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Nico_(chanteuse)",
+      "snippet": "Nico est interprétée par l'actrice et chanteuse danoise Trine Dyrholm, qui chante plusieurs morceaux de Nico avec les musiciens du …"
+    },
+    {
+      "title": "Nico - YouTube",
+      "url": "https://www.youtube.com/channel/UCTn7pr9tqS0ySAB2UyXse6w",
+      "snippet": "I Trolled My Crush with a MORPH MOD in Minecraft.. Nico and Nico & Zoey 553K views • 7 months ago"
+    },
+    {
+      "title": "Nico Là - YouTube",
+      "url": "https://www.youtube.com/@nicotine84",
+      "snippet": "6h pour sauver des vies (ft. Nico & Raska) Simon Puech and 2 more 1.2M views • 2 months ago"
+    },
+    {
+      "title": "ニコニコ",
+      "url": "https://www.nicovideo.jp/",
+      "snippet": "ニコニコ 動画 静画 生放送 動画 動画 静画 生放送 9月16日のニコニコ コンテンツの取得に失敗しました 視聴ページで見る 落ちこぼ …"
+    }
+  ]
+}

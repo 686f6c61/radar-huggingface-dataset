@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "GoloMarcos/qwen3-0.6b-text2sparql",
+  "slug": "golomarcos-qwen3-0-6b-text2sparql",
+  "author": "GoloMarcos",
+  "url": "https://huggingface.co/GoloMarcos/qwen3-0.6b-text2sparql",
+  "created_at": "2026-09-16T18:23:52.000Z",
+  "updated_at": "2026-09-16T18:24:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 51844818,
+  "storage_human": "52 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wikipédia, l'encyclopédie libre",
+      "url": "https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Accueil_principal",
+      "snippet": "Présentation est un projet d’encyclopédie collective en ligne, universelle, multilingue et fonctionnant sur le principe du . Ce projet vise …"
+    },
+    {
+      "title": "Wikipedia",
+      "url": "https://www.wikipedia.org/",
+      "snippet": "Wikipedia is a free online encyclopedia, created and edited by volunteers around the world and hosted by the Wikimedia Foundation."
+    },
+    {
+      "title": "Wikipedia - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Wikipedia",
+      "snippet": "Founded by Jimmy Wales and Larry Sanger in 2001, Wikipedia has been hosted since 2003 by the Wikimedia Foundation, an …"
+    },
+    {
+      "title": "Wikipedia, the free encyclopedia",
+      "url": "https://en.wikipedia.org/wiki/Main_Page",
+      "snippet": "Wikipedia is written by volunteer editors and hosted by the Wikimedia Foundation, a non-profit organization that also hosts a range of …"
+    },
+    {
+      "title": "Wikipédia — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Wikip%C3%A9dia",
+      "snippet": "Jimmy Wales intervient fin 2005 sur l'article « Wikipedia » de Wikipédia en anglais, pour retirer l'information selon laquelle Larry …"
+    }
+  ]
+}

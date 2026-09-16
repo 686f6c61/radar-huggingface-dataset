@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "ToiTenBao/truthprint-ours-coco-llava15-13b",
+  "slug": "toitenbao-truthprint-ours-coco-llava15-13b",
+  "author": "ToiTenBao",
+  "url": "https://huggingface.co/ToiTenBao/truthprint-ours-coco-llava15-13b",
+  "created_at": "2026-09-16T12:47:19.000Z",
+  "updated_at": "2026-09-16T12:47:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7656573568,
+  "storage_human": "7.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "السعودية stc | باقات stc إنترنت السعودية لخدمات الإتصالات | باقات stc ...",
+      "url": "https://www.stc.com.sa/ar/personal/home.html",
+      "snippet": "تعرّف على مجموعة خدمات الاتصالات للاستخدام الشخصي المقدمة من stc، التي توفّر خدمات إنترنت عالي السرعة وباقات جوال موثوقة. زور موقعنا الآن."
+    },
+    {
+      "title": "GitHub - jinhaoduan/TruthPrInt: [ICCV 2025] TruthPrInt: Mitigating LVLM ...",
+      "url": "https://github.com/jinhaoduan/TruthPrInt",
+      "snippet": "We evaluate TruthPrInt in extensive experimental settings, including in-domain and out-of-domain scenarios, over popular LVLMs and OH benchmarks. Experimental results indicate that TruthPrInt significantly outperforms state-of-the-art methods."
+    },
+    {
+      "title": "ايس تي : تسوق اونلاين بأفضل الاسعار في السعودية - سوق.كوم الان اصبحت امازون",
+      "url": "https://www.amazon.sa/%D8%A7%D9%8A%D8%B3-%D8%AA%D9%8A/s?k=%D8%A7%D9%8A%D8%B3+%D8%AA%D9%8A",
+      "snippet": "48-1 من 90 نتائج لـ \"ايس تي\" النتائج تحقّق من صفحة كل منتج من أجل خيارات الشراء الأخرى."
+    },
+    {
+      "title": "Models – Hugging Face",
+      "url": "https://huggingface.co/models?!!",
+      "snippet": "Explore machine learning models."
+    },
+    {
+      "title": "أفضل شركات ايس تي في السعودية - رهيبة",
+      "url": "https://www.raheba.com/2024/04/ice-tv-companies-in-saudi-arabia.html",
+      "snippet": "Jan 28, 2025 · في نهاية المقال تحدثنا عن شركات آيس تي في السعودية التي تقوم بإنتاج نكهات مختلفة بجودة عالية، وفرنا أيضًا بعض الأماكن التي تقدم أيس تي يمكنك تجربتها والاستمتاع أشهي النكهات …"
+    }
+  ]
+}

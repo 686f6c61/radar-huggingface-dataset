@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "RKB109/hybrid-semantic-search-20260916-model",
+  "slug": "rkb109-hybrid-semantic-search-20260916-model",
+  "author": "RKB109",
+  "url": "https://huggingface.co/RKB109/hybrid-semantic-search-20260916-model",
+  "created_at": "2026-09-16T17:38:22.000Z",
+  "updated_at": "2026-09-16T17:38:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "custom",
+  "languages": [],
+  "tags": [
+    "custom",
+    "synthetic-data",
+    "transparent-baseline",
+    "semantic-search",
+    "sentence-similarity",
+    "feature-extraction",
+    "text-ranking",
+    "question-answering",
+    "dataset:RKB109/hybrid-semantic-search-20260916-dataset",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ARD Mediathek: Filme, Serien und Dokus online anschauen",
+      "url": "https://www.ardmediathek.de/",
+      "snippet": "Alle Inhalte der ARD Mediathek im Überblick: Livestreams, Nachrichten, Filme, Serien und spannende Dokus. Hier anschauen!"
+    },
+    {
+      "title": "Das Erste in der Mediathek – jetzt online anschauen",
+      "url": "https://www.ardmediathek.de/daserste",
+      "snippet": "Mehr Filme Sturm der Liebe & Rote Rosen Letzte Folge verpasst? Neue Episode vorab! Hier findest du jeden Tag Neues rund um …"
+    },
+    {
+      "title": "ARD.de – TV, Radio, Streams, News, Sport und alles zur ARD",
+      "url": "https://www.ard.de/",
+      "snippet": "Die ganze ARD: Fernsehen, Livestreams, Radio, Podcasts, Nachrichten, Sport und Kinderkanal. Zudem Infos über den …"
+    },
+    {
+      "title": "Alle Inhalte von der ARD - ZDFmediathek",
+      "url": "https://www.zdf.de/ard",
+      "snippet": "Entdecke die ARD – aktuelle News, große Shows und vieles mehr. Jetzt streamen und regional dabei sein!"
+    },
+    {
+      "title": "Das Erste Mediathek - Sendung verpasst?",
+      "url": "https://www.sendungverpasst.de/ard",
+      "snippet": "Sep 9, 2026 · Videos der Das Erste Mediathek Top 20 der Woche Alle anzeigen 1 388 Aufrufe 88 min Das Erste"
+    }
+  ]
+}

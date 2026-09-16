@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "SamerAyyad/VLA_Samer_3.Versuch_16.09.2026_100eps_policy_ACT",
+  "slug": "samerayyad-vla_samer_3-versuch_16-09-2026_100eps_policy_act",
+  "author": "SamerAyyad",
+  "url": "https://huggingface.co/SamerAyyad/VLA_Samer_3.Versuch_16.09.2026_100eps_policy_ACT",
+  "created_at": "2026-09-16T18:09:33.000Z",
+  "updated_at": "2026-09-16T18:09:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:SamerAyyad/VLA_Samer_3.Versuch_16.09.2026_100eps",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51670663,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714580,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ad Specials - Downs Superfoods",
+      "url": "https://downssuperfoods.com/ads",
+      "snippet": "Mound City Thriftway 701 State Street Mound City, MO 64470 Phone: (660) 442-5401"
+    },
+    {
+      "title": "Downs Superfoods | Health & Wellness | Articles | Emotional Eating ...",
+      "url": "https://www.downssuperfoods.com/health_wellness/articles/215/emotional-eating-take-notice-of-these-triggers-and-symptoms",
+      "snippet": "Downs Superfoods proudly serves the Downs,KS area. Come in for the best grocery experience in town. We're open Temporary …"
+    },
+    {
+      "title": "Loading...",
+      "url": "https://downssuperfoods.com/jobs",
+      "snippet": "Temporary Hours Sunday 11:00AM-5:00PM Monday-Saturday 7:30AM-7:00PM • (785) 454-3331 525 S. Morgan, Downs, KS"
+    },
+    {
+      "title": "Downs Superfoods | Health & Wellness | Articles | Dust Allergy 101",
+      "url": "https://downssuperfoods.com/health_wellness/articles/225/dust-allergy-101",
+      "snippet": "Downs Superfoods proudly serves the Downs,KS area. Come in for the best grocery experience in town. We're open Temporary …"
+    },
+    {
+      "title": "Loading...",
+      "url": "https://www.downssuperfoods.com/health_wellness/glossary/sulforaphane",
+      "snippet": "Glossary sulforaphane sulforaphane Significantly reduced the incidence, multiplicity and rate of development of chemically induced …"
+    }
+  ]
+}

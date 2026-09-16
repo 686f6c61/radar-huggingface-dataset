@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "jpetrina/Swift-Qwen3.8-27B-IQ4_XS-pure-GGUF",
+  "slug": "jpetrina-swift-qwen3-8-27b-iq4_xs-pure-gguf",
+  "author": "jpetrina",
+  "url": "https://huggingface.co/jpetrina/Swift-Qwen3.8-27B-IQ4_XS-pure-GGUF",
+  "created_at": "2026-09-16T16:14:23.000Z",
+  "updated_at": "2026-09-16T17:09:08.000Z",
+  "license": "swift-open-license-1.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "base_model:ukisai/Swift-Qwen3.8-27B-GGUF",
+    "base_model:quantized:ukisai/Swift-Qwen3.8-27B-GGUF",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 14534383328,
+  "storage_human": "14.5 GB",
+  "base_model": "ukisai/Swift-Qwen3.8-27B-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Create and edit documents for free | Microsoft Word for the Web",
+      "url": "https://word.cloud.microsoft/en-us/",
+      "snippet": "Write from anywhere Create, edit, and share documents from any location with Word online. Work confidently from any device with …"
+    },
+    {
+      "title": "Wort: Traduzione e significato in Italiano | Dizionario di Tedesco ...",
+      "url": "https://dizionari.corriere.it/dizionario_tedesco/Tedesco/W/wort.shtml",
+      "snippet": "Wort: scopri traduzione e significato del termine su Dizionario di Tedesco del Corriere.it"
+    },
+    {
+      "title": "Free Online Document Editing with Microsoft Word | Microsoft 365",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/word?msockid=0a91cc4b667a6b663f0bdb9d67ff6ac0",
+      "snippet": "Feb 1, 2023 · Use Microsoft Word for online document editing with AI-powered suggestions from Copilot for grammar, style, and …"
+    },
+    {
+      "title": "Wort - traduzione in Italiano - dizionario Tedesco-Italiano di ...",
+      "url": "https://it.langenscheidt.com/tedesco-italiano/wort",
+      "snippet": "Traduzione per 'Wort' nel dizionario gratuito Tedesco-Italiano di LANGENSCHEIDT con esempi, sinonimi e pronuncia."
+    },
+    {
+      "title": "Wort - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Wort",
+      "snippet": "In beer making, the wort is known as \"sweet wort\" until the hops have been added, after which it is called \"hopped or bitter wort\". The …"
+    }
+  ]
+}

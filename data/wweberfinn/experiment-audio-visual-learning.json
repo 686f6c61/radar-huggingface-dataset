@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "wweberfinn/experiment-audio-visual-learning",
+  "slug": "wweberfinn-experiment-audio-visual-learning",
+  "author": "wweberfinn",
+  "url": "https://huggingface.co/wweberfinn/experiment-audio-visual-learning",
+  "created_at": "2026-09-16T14:54:30.000Z",
+  "updated_at": "2026-09-16T14:54:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "audio-visual-learning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "China: Bei voller Fahrt! Frau springt plötzlich von Autodach",
+      "url": "https://www.rtl.de/news/videos/china-bei-voller-fahrt-frau-springt-ploetzlich-von-autodach-6aa95d9d50143b4ae4032e70.html",
+      "snippet": "1 day ago · Dramatische Szenen in einem chinesischen Autobahntunnel: Eine Frau klettert während der Fahrt plötzlich aus dem …"
+    },
+    {
+      "title": "Bei voller Fahrt: Frau springt plötzlich von Autodach - YouTube",
+      "url": "https://m.youtube.com/watch?v=N2TzzvWF8mU",
+      "snippet": "Rätselhafter Vorfall in China: Mitten in einem Tunnel springt eine Frau vom Dach eines fahrenden Autos."
+    },
+    {
+      "title": "Bei voller Fahrt: Frau springt plötzlich von Autodach",
+      "url": "https://home.1und1.de/magazine/panorama/videos/aus-aller-welt/voller-fahrt-springt-ploetzlich-autodach-42730234",
+      "snippet": "8 hours ago · Rätselhafter Vorfall in China: Mitten in einem Tunnel springt eine Frau vom Dach eines fahrenden Autos."
+    },
+    {
+      "title": "Bei voller Fahrt: Frau springt plötzlich von Autodach | Watch - MSN",
+      "url": "https://www.msn.com/de-de/nachrichten/other/bei-voller-fahrt-frau-springt-pl%C3%B6tzlich-von-autodach/vi-AA2cjJZH",
+      "snippet": "16 hours ago · Rätselhafter Vorfall in China: Mitten in einem Tunnel springt eine Frau vom Dach eines fahrenden Autos. Exklusiv: …"
+    },
+    {
+      "title": "Gurt klemmte, Auto lag im Bach: Polizisten retten Frau in letzter Not",
+      "url": "https://www.5min.at/oberoesterreich/5202609151840/gurt-klemmte-auto-lag-im-bach-polizisten-retten-frau-in-letzter-not/",
+      "snippet": "23 hours ago · Eine Frau steckt nach einem schweren Unfall in ihrem Auto fest, das auf dem Dach in einem Bach liegt. Zwei …"
+    }
+  ]
+}

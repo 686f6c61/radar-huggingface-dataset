@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "devchan64/mira-bfs-qwen-image-edit-2511-lora",
+  "slug": "devchan64-mira-bfs-qwen-image-edit-2511-lora",
+  "author": "devchan64",
+  "url": "https://huggingface.co/devchan64/mira-bfs-qwen-image-edit-2511-lora",
+  "created_at": "2026-09-16T12:53:00.000Z",
+  "updated_at": "2026-09-16T12:53:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en",
+    "ko"
+  ],
+  "tags": [
+    "diffusers",
+    "lora",
+    "qwen-image-edit",
+    "character",
+    "image-editing",
+    "image-to-image",
+    "en",
+    "ko",
+    "base_model:Qwen/Qwen-Image-Edit-2511",
+    "base_model:adapter:Qwen/Qwen-Image-Edit-2511",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 596145015,
+  "storage_human": "596 MB",
+  "base_model": "Qwen/Qwen-Image-Edit-2511",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Images",
+      "url": "https://images.google.fr/",
+      "snippet": "Google Images. The most comprehensive image search on the web."
+    },
+    {
+      "title": "Google Images",
+      "url": "https://images.google.com/?hl=fr",
+      "snippet": "Google Images. La recherche d'images la plus complète sur le Web."
+    },
+    {
+      "title": "Google",
+      "url": "https://image.google.ci/?hl=fr",
+      "snippet": "Google disponible en : English Publicité À propos de Google Google.com"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=fr",
+      "snippet": "Publicité À propos de Google Google.com in English © 2026 - Confidentialité - Conditions"
+    },
+    {
+      "title": "Google",
+      "url": "https://images.google.us/",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    }
+  ]
+}

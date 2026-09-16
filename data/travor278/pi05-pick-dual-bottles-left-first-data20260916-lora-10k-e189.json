@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Travor278/pi05-pick-dual-bottles-left-first-data20260916-lora-10k-e189",
+  "slug": "travor278-pi05-pick-dual-bottles-left-first-data20260916-lora-10k-e189",
+  "author": "Travor278",
+  "url": "https://huggingface.co/Travor278/pi05-pick-dual-bottles-left-first-data20260916-lora-10k-e189",
+  "created_at": "2026-09-16T16:29:24.000Z",
+  "updated_at": "2026-09-16T16:33:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "robotics",
+    "pi05",
+    "jax",
+    "lora",
+    "simulation",
+    "dataset:Shiki42/ctr-pick-dual-bottles-left-first-20260916",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6335577790,
+  "storage_human": "6.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wankul, le jeu de cartes à collectionner basé sur l'univers de Wankil",
+      "url": "https://wankul.fr/",
+      "snippet": "Wankul TCG : le jeu de cartes à collectionner créé par Laink & Terracid. Boosters, decks, accessoires et drops exclusifs pour …"
+    },
+    {
+      "title": "CARTES LEGACY – Wankul",
+      "url": "https://wankul.fr/collections/cartes_legacy",
+      "snippet": "Wankul TCG : le jeu de cartes à collectionner créé par Laink & Terracid. Boosters, decks, accessoires et drops exclusifs pour …"
+    },
+    {
+      "title": "Les affiches Wankil Dead – Wankul",
+      "url": "https://wankul.fr/collections/affiches",
+      "snippet": "Wankul TCG : le jeu de cartes à collectionner créé par Laink & Terracid. Boosters, decks, accessoires et drops exclusifs pour …"
+    },
+    {
+      "title": "Tapis de souris Campus – Wankul",
+      "url": "https://wankul.fr/products/tapis-de-souris-1?variant=47284037878083",
+      "snippet": "Tapis de Souris Wankul Format XXL Tapis de jeu idéal pour les parties de cartes Wankul ou pour une utilisation \"gaming\". …"
+    },
+    {
+      "title": "Wankul",
+      "url": "https://wankul.fr/apps/wankul/wankuldex",
+      "snippet": "Wankul TCG : le jeu de cartes à collectionner créé par Laink & Terracid. Boosters, decks, accessoires et drops exclusifs pour …"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "authentrics/mnist-badnets-repaired",
+  "slug": "authentrics-mnist-badnets-repaired",
+  "author": "authentrics",
+  "url": "https://huggingface.co/authentrics/mnist-badnets-repaired",
+  "created_at": "2026-09-16T16:24:15.000Z",
+  "updated_at": "2026-09-16T16:24:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "authentrics",
+    "backdoor",
+    "badnets",
+    "trojai",
+    "unlearning",
+    "mnist",
+    "lenet",
+    "image-classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 250661,
+  "storage_human": "250661 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "大容量輕便型電源 EcoFlow Delta 3 Max開箱 - Mobile01",
+      "url": "https://www.mobile01.com/topicdetail.php?f=641&t=7259420",
+      "snippet": "May 9, 2026 · 官網訂終於收到新機囉邊試用邊拍了一個簡單的開箱文如果有想要買的朋友可以參考參考EcoFlow現在也有在官網做優 …"
+    },
+    {
+      "title": "一度電儲能電池挑選推薦 ECOFLOW / BLUETTI - Mobile01",
+      "url": "https://www.mobile01.com/topicdetail.php?f=641&t=7270882",
+      "snippet": "Jun 16, 2026 · 最近在看儲能電池，原本以為挑一台容量夠用的就好 結果越研究越發現規格差異不少 目前在比較 ECOFLOW Delta 3跟 …"
+    },
+    {
+      "title": "有问题，就会有答案 - 知乎",
+      "url": "https://www.zhihu.com/billboard",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "你们知道户外储能电源都有什么品牌？优势有哪些？ - 知乎",
+      "url": "https://www.zhihu.com/question/66894359",
+      "snippet": "ECOFLOW正浩是目前市面上最牛的户外电源了，相比其他的品牌户外电源，它的功能更全面，产品质量更有保障。 它的优势及功能 …"
+    },
+    {
+      "title": "露營野炊樂 - Mobile01",
+      "url": "https://www.mobile01.com/topiclist.php?f=641",
+      "snippet": "Jul 20, 2026 · 告別都市叢林，到戶外享受大自然吧！先來看看各種登山裝備、露營器材、釣魚道具的專門討論，看完再出發！"
+    }
+  ]
+}

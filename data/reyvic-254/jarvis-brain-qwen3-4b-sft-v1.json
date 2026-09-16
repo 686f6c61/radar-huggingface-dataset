@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Reyvic-254/jarvis-brain-qwen3-4b-sft-v1",
+  "slug": "reyvic-254-jarvis-brain-qwen3-4b-sft-v1",
+  "author": "Reyvic-254",
+  "url": "https://huggingface.co/Reyvic-254/jarvis-brain-qwen3-4b-sft-v1",
+  "created_at": "2026-09-16T18:02:14.000Z",
+  "updated_at": "2026-09-16T18:47:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 200205402,
+  "storage_human": "200 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Translate Help",
+      "url": "https://support.google.com/translate/?hl=en",
+      "snippet": "Official Google Translate Help Center where you can find tips and tutorials on using Google Translate and other answers to …"
+    },
+    {
+      "title": "؟ترجمة جوجل - Google Search Community",
+      "url": "https://support.google.com/websearch/thread/84440252/%D8%9F%D8%AA%D8%B1%D8%AC%D9%85%D8%A9-%D8%AC%D9%88%D8%AC%D9%84?hl=en",
+      "snippet": "Nov 21, 2020 · Community content may not be verified or up-to-date. Learn more."
+    },
+    {
+      "title": "لماذا لا يمكنني ترجمة المواقع في متصفح جوجل عندما احاول ترجمة الصفحة ...",
+      "url": "https://support.google.com/accounts/thread/342514883/%D9%84%D9%85%D8%A7%D8%B0%D8%A7-%D9%84%D8%A7-%D9%8A%D9%85%D9%83%D9%86%D9%86%D9%8A-%D8%AA%D8%B1%D8%AC%D9%85%D8%A9-%D8%A7%D9%84%D9%85%D9%88%D8%A7%D9%82%D8%B9-%D9%81%D9%8A-%D9%85%D8%AA%D8%B5%D9%81%D8%AD-%D8%AC%D9%88%D8%AC%D9%84-%D8%B9%D9%86%D8%AF%D9%85%D8%A7-%D8%A7%D8%AD%D8%A7%D9%88%D9%84-%D8%AA%D8%B1%D8%AC%D9%85%D8%A9-%D8%A7%D9%84%D8%B5%D9%81%D8%AD%D8%A9-%D8%AA%D8%B8%D9%87%D8%B1-%D9%84%D9%8A-%D9%88%D8%A7%D8%AC%D9%87%D8%A9-%D8%B3%D9%88%D8%AF%D8%A7%D8%A1?hl=ar",
+      "snippet": "شكرا لاستخدامك منتدي مساعدة جوجل ظهور واجهة سوداء عند محاولة ترجمة صفحة في متصفح Google (مثل Google Chrome) عادة ما يشير إلى مشكلة في عرض الصفحة بسبب: الأسباب …"
+    },
+    {
+      "title": "تنزيل تطبيق \"ترجمة Google\" واستخدامه",
+      "url": "https://support.google.com/translate/answer/6350850?hl=ar&co=GENIE.Platform%3DDesktop",
+      "snippet": "يتيح لك تطبيق \"ترجمة Google\" ترجمة نص أو كتابة بخط اليد أو صور أو كلام بأكثر من 200 لغة، ويمكنك أيضًا استخدام التطبيق على الويب. بإمكانك الاستفادة من \"ترجمة Google\" بعدّة …"
+    },
+    {
+      "title": "تنزيل تطبيق \"ترجمة Google\" واستخدامه",
+      "url": "https://support.google.com/translate/answer/6350850?hl=ar-eg&co=GENIE.Platform%3DAndroid",
+      "snippet": "الخطوة 1: تنزيل تطبيق \"ترجمة Google\" للبدء، نزِّل تطبيق \"ترجمة Google\" لنظام Android. ملاحظة: لترجمة الصور باستخدام الكاميرا بجميع اللغات المعتمدة، يجب أن يكون جهازك مزودًا …"
+    }
+  ]
+}

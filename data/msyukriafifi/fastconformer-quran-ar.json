@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "msyukriafifi/fastconformer-quran-ar",
+  "slug": "msyukriafifi-fastconformer-quran-ar",
+  "author": "msyukriafifi",
+  "url": "https://huggingface.co/msyukriafifi/fastconformer-quran-ar",
+  "created_at": "2026-09-16T12:33:55.000Z",
+  "updated_at": "2026-09-16T12:33:56.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "nemo",
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "nemo",
+    "automatic-speech-recognition",
+    "arabic",
+    "quran",
+    "fastconformer",
+    "streaming",
+    "cache-aware",
+    "ar",
+    "dataset:tarteel-ai/everyayah",
+    "license:cc-by-4.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4125818880,
+  "storage_human": "4.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "tarteel-ai/everyayah",
+      "metric": "Word Error Rate",
+      "value": 0.0014
+    }
+  ],
+  "sources": [
+    {
+      "title": "News & E-Mail bei t-online | Politik, Sport, Unterhaltung & Ratgeber",
+      "url": "https://www.t-online.de/",
+      "snippet": "Aktuelle News aus Politik, Sport, Unterhaltung, Wirtschaft & Finanzen | Ratgeber Leben, Gesundheit und Heim & Garten | E-Mail und …"
+    },
+    {
+      "title": "Politik aktuell: Nachrichten aus Deutschland, Europa und der Welt",
+      "url": "https://www.t-online.de/nachrichten/",
+      "snippet": "Aktuelle News, Informationen und Videos zu Politik, Panorama und Wetter aus Deutschland, Europa und der Welt von t-online.de …"
+    },
+    {
+      "title": "Telefonbuch bei t-online.de in Sekunden gefunden",
+      "url": "https://telefonbuch.t-online.de/",
+      "snippet": "Über t-online So arbeitet die Redaktion Autoren bei t-online Nachricht oder Meinung"
+    },
+    {
+      "title": "T-Online - E-Mail Mobil",
+      "url": "https://m-email.t-online.de/",
+      "snippet": "Über ein anderes E-Mail-Programm (z.B. Outlook, Apple Mail, Thunderbird, ...) Wenn Sie Telekom Mail mit einem E-Mail-Programm …"
+    },
+    {
+      "title": "Bestandskunden | Mobilfunk, Festnetz & Internet, TV Angebote",
+      "url": "https://tarifbestellen.t-online.de/bestandskunden",
+      "snippet": "© spectrum8 GmbH Impressum Datenschutz Datenschutz-Manager AGB Produktinformationsblätter Widerrufsrecht …"
+    }
+  ]
+}

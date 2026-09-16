@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "leomaurodesenv/electra-base-discriminator-nvidia-aegis-v2-augmented",
+  "slug": "leomaurodesenv-electra-base-discriminator-nvidia-aegis-v2-augmented",
+  "author": "leomaurodesenv",
+  "url": "https://huggingface.co/leomaurodesenv/electra-base-discriminator-nvidia-aegis-v2-augmented",
+  "created_at": "2026-09-16T10:41:55.000Z",
+  "updated_at": "2026-09-16T12:21:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "electra",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:google/electra-base-discriminator",
+    "base_model:finetune:google/electra-base-discriminator",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109483778,
+  "parameters_human": "109.5M",
+  "storage_bytes": 2627760609,
+  "storage_human": "2.6 GB",
+  "base_model": "google/electra-base-discriminator",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Untertitel und Übersetzungen in Chrome verwalten",
+      "url": "https://support.google.com/chrome/answer/10538231?hl=de",
+      "snippet": "Öffnen Sie Chrome auf Ihrem Computer. Klicken Sie rechts oben auf das Dreipunkt-Menü Einstellungen Zugänglichkeit. Wählen Sie …"
+    },
+    {
+      "title": "Seiten übersetzen und die Chrome-Sprache ändern - Google Help",
+      "url": "https://support.google.com/chrome/answer/173424?hl=de&co=GENIE.Platform=Android",
+      "snippet": "Wenn Sie oben auf dem Bildschirm keine Benachrichtigung zum Übersetzen sehen, können Sie auch eine Übersetzung anfordern. …"
+    },
+    {
+      "title": "Warum geht mit einmal keine automatische Übersetzung in den Filmen ...",
+      "url": "https://support.google.com/youtube/thread/104326667/warum-geht-mit-einmal-keine-automatische-%C3%9Cbersetzung-in-den-filmen?hl=de",
+      "snippet": "Mar 29, 2021 · Nein das passiert auf dem Laptop und wie schon erwähnt, habe ich in der Einstellung bei Youtube zwecks …"
+    },
+    {
+      "title": "Mit Google Pixel Buds übersetzen",
+      "url": "https://support.google.com/googlepixelbuds/answer/7573100?hl=de",
+      "snippet": "Google Übersetzer kann mit allen Kopfhörern und Android-Smartphones verwendet werden, die für Gemini optimiert sind. Für die …"
+    },
+    {
+      "title": "Übersetzer-Verlauf suchen und verwalten",
+      "url": "https://support.google.com/translate/answer/6142480?hl=de&co=GENIE.Platform%3DDesktop",
+      "snippet": "Sie können Ihren Google Übersetzer-Verlauf speichern, um die Bedeutung einzelner Wörter oder Wortgruppen zu finden. Ihre …"
+    }
+  ]
+}

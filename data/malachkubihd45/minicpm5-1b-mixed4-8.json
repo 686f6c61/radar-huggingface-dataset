@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "malachkubihd45/MiniCPM5-1B-mixed4-8",
+  "slug": "malachkubihd45-minicpm5-1b-mixed4-8",
+  "author": "malachkubihd45",
+  "url": "https://huggingface.co/malachkubihd45/MiniCPM5-1B-mixed4-8",
+  "created_at": "2026-09-16T12:37:32.000Z",
+  "updated_at": "2026-09-16T12:51:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "litert-lm",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "litert-lm",
+    "minicpm",
+    "on-device",
+    "quantization",
+    "mixed-precision",
+    "4-bit",
+    "8-bit",
+    "edge-ai",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:openbmb/MiniCPM5-1B",
+    "base_model:finetune:openbmb/MiniCPM5-1B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 939212800,
+  "storage_human": "939 MB",
+  "base_model": "openbmb/MiniCPM5-1B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Un château de la Loire incontournable - Site officiel - Le Clos Lucé",
+      "url": "https://www.vinci-closluce.com/",
+      "snippet": "Un lieu extraordinaire ! Ce petit château retrace la vie du plus grand génie Léonard de Vinci sous la protection de François 1er. Une …"
+    },
+    {
+      "title": "Tarifs - Le Clos Lucé",
+      "url": "https://www.vinci-closluce.com/tarifs/",
+      "snippet": "Entrée illimitée au château, au parc et aux Galeries Léonard de Vinci peintre et architecte pendant un an. Merci de pré-sélectionner …"
+    },
+    {
+      "title": "Château du Clos Lucé : Histoire, horaires & tarifs 2026",
+      "url": "https://amboise-valdeloire.com/chateau-du-clos-luce/",
+      "snippet": "La visite du Château du Clos Lucé dure en moyenne entre 2h30 et 3h. Pour les amateurs de l’artiste, ou les familles qui souhaitent …"
+    },
+    {
+      "title": "Château du Clos Lucé : billets et conseils de visite",
+      "url": "https://www.sudvaldeloire.fr/votre-sejour-en-sud-val-de-loire/les-chateaux/chateau-du-clos-luce/",
+      "snippet": "Le Château du Clos Lucé est peut-être plus petit que les autres châteaux de la Loire, mais il vous réserve de jolies découvertes ! …"
+    },
+    {
+      "title": "Visitez le château du Clos Lucé | La maison de Léonard de Vinci",
+      "url": "https://www.loirevalley-tickets.com/fr/chateau-clos-luce/plan-your-visit/",
+      "snippet": "Venez visiter le château du Clos Lucé à Amboise, la dernière demeure de Léonard de Vinci. Découvrez les salles de la Renaissance, …"
+    }
+  ]
+}

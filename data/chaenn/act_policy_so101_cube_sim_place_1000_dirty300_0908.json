@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Chaenn/act_policy_so101_cube_sim_place_1000_dirty300_0908",
+  "slug": "chaenn-act_policy_so101_cube_sim_place_1000_dirty300_0908",
+  "author": "Chaenn",
+  "url": "https://huggingface.co/Chaenn/act_policy_so101_cube_sim_place_1000_dirty300_0908",
+  "created_at": "2026-09-16T13:06:25.000Z",
+  "updated_at": "2026-09-16T13:06:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:Chaenn/so101_cube_sim_place_1000_dirty300_0908",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714864,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Particulier - impots.gouv.fr",
+      "url": "https://www.impots.gouv.fr/particulier",
+      "snippet": "À la une Particulier Professionnel Demande d'aide de 100 € pour les travailleurs « grands rouleurs » Publié le 27 mai 2026 Vous avez …"
+    },
+    {
+      "title": "J'accède à mon espace Finances publiques et à mes services en ligne",
+      "url": "https://www.impots.gouv.fr/particulier/jaccede-mon-espace-particulier-et-mes-services-en-ligne",
+      "snippet": "Mar 30, 2016 · Guide d'accès et d'utilisation des services en ligne pour les particuliers Questions fréquentes J’ai égaré les identifiants …"
+    },
+    {
+      "title": "Déclarer mes revenus - impots.gouv.fr",
+      "url": "https://www.impots.gouv.fr/particulier/declarer-mes-revenus",
+      "snippet": "les questions - réponses : Quelle est la date limite de dépôt de ma déclaration de revenus ? Puis-je déclarer en ligne pour ma …"
+    },
+    {
+      "title": "Avis d'impôt sur les revenus - impots.gouv.fr",
+      "url": "https://www.impots.gouv.fr/particulier/avis-dimpot-sur-le-revenu",
+      "snippet": "Aug 18, 2016 · Votre avis d'impôt sur les revenus vous permet de justifier des revenus que vous avez déclarés à l'administration …"
+    },
+    {
+      "title": "Créer et accéder à mon espace - impots.gouv.fr",
+      "url": "https://www.impots.gouv.fr/particulier/acceder-mon-espace",
+      "snippet": "Jul 27, 2016 · Si vous n’avez pas encore d'espace Finances publiques sur impots.gouv.fr, vous devez en créer un lors de la première …"
+    }
+  ]
+}

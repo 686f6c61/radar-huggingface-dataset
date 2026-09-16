@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "spybyscript/nemotron-3.5-asr-streaming-0.6b-coreai",
+  "slug": "spybyscript-nemotron-3-5-asr-streaming-0-6b-coreai",
+  "author": "spybyscript",
+  "url": "https://huggingface.co/spybyscript/nemotron-3.5-asr-streaming-0.6b-coreai",
+  "created_at": "2026-09-16T15:21:27.000Z",
+  "updated_at": "2026-09-16T15:36:21.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "coreai",
+    "apple-silicon",
+    "ios",
+    "ipados",
+    "macos",
+    "streaming-asr",
+    "rnnt",
+    "fastconformer",
+    "mixed-precision",
+    "automatic-speech-recognition",
+    "en",
+    "base_model:nvidia/nemotron-3.5-asr-streaming-0.6b",
+    "base_model:finetune:nvidia/nemotron-3.5-asr-streaming-0.6b",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1341686905,
+  "storage_human": "1.3 GB",
+  "base_model": "nvidia/nemotron-3.5-asr-streaming-0.6b",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "THE 10 BEST Hotels in Seattle, WA 2026 (from $79) - Tripadvisor",
+      "url": "https://www.tripadvisor.com/Hotels-g60878-Seattle_Washington-Hotels.html",
+      "snippet": "View deals from $79 per night, see photos and read reviews for the best Seattle hotels from travelers like you - then compare today's …"
+    },
+    {
+      "title": "10 Best Seattle Hotels, United States (From $127) - Booking.com",
+      "url": "https://www.booking.com/city/us/seattle.html?msockid=2984414497436ee71aaf569296046f12",
+      "snippet": "Sep 1, 2026 · Great savings on hotels in Seattle, United States online. Good availability and great rates. Read hotel reviews and …"
+    },
+    {
+      "title": "16 Best Hotels in Seattle. Hotels from $65/night - KAYAK",
+      "url": "https://www.kayak.com/Seattle-Hotels.7054.hotel.ksp?msockid=2984414497436ee71aaf569296046f12",
+      "snippet": "Discover the top hotels in Seattle, handpicked by local expert Naomi Tomky. Most of Seattle’s good hotels sit within the Downtown …"
+    },
+    {
+      "title": "11 Best Hotels in Seattle: A Complete 2026 Traveler's Guide",
+      "url": "https://visitseattlecity.com/best-hotels-in-seattle/",
+      "snippet": "Jul 2, 2026 · Compare the best hotels in Seattle by location, traveler type, and walkability, with honest pros, cons, and booking …"
+    },
+    {
+      "title": "Top 10 Hotels in Seattle, WA (from $71) 2026 - Expedia",
+      "url": "https://www.expedia.com/Seattle-Hotels.d178307.Travel-Guide-Hotels?msockid=2984414497436ee71aaf569296046f12",
+      "snippet": "Find 5,073 of the best hotels in Seattle, WA in 2026. Compare room rates, hotel reviews and availability. Most hotels are fully …"
+    }
+  ]
+}

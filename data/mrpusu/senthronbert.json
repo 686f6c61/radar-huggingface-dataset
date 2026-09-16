@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "mrpusu/senthronbert",
+  "slug": "mrpusu-senthronbert",
+  "author": "mrpusu",
+  "url": "https://huggingface.co/mrpusu/senthronbert",
+  "created_at": "2026-09-16T10:46:36.000Z",
+  "updated_at": "2026-09-16T10:52:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bert",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 109486854,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437970928,
+  "storage_human": "438 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Effects of zinc and manganese contents on extrudability of Mg–Al–Zn alloys",
+      "url": "https://www.jstage.jst.go.jp/article/jilm/53/1/53_1_27/_article/-char/en",
+      "snippet": "Abstract The effects of zinc and manganese content on extrudability of Mg–Al–Zn system alloys have investigated. Zinc enhanced …"
+    },
+    {
+      "title": "Effects of zinc and manganese contents on extrudability of Mg-Al-Zn ...",
+      "url": "https://www.researchgate.net/publication/240796906_Effects_of_zinc_and_manganese_contents_on_extrudability_of_Mg-Al-Zn_alloys",
+      "snippet": "Jan 1, 2003 · Abstract The effects of zinc and manganese content on extrudability of Mg-Al-Zn system alloys have investigated. Zinc …"
+    },
+    {
+      "title": "Extrudability of Mg-Al-Zn Alloys | Request PDF - ResearchGate",
+      "url": "https://www.researchgate.net/publication/250340913_Extrudability_of_Mg-Al-Zn_Alloys",
+      "snippet": "Mar 1, 2003 · Abstract The influence of zinc and manganese contents in Mg-Al-Zn alloys on extrudability and the mechanical …"
+    },
+    {
+      "title": "Optimizing the Zn and Mg contents of Al–Zn–Mg wrought alloys for …",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2238785424018052",
+      "snippet": "Sep 1, 2024 · Based on these findings, two optimized alloys were designed, direct chill cast on industrial scale, and extruded on an …"
+    },
+    {
+      "title": "Effects of zinc and manganese contents on extrudability of Mg-Al-Zn ...",
+      "url": "https://cir.nii.ac.jp/crid/1390282681313713920?lang=en",
+      "snippet": "Jun 30, 2025 · When the manganese and zinc content was high, the surface oxide film was thick and the surface color of the …"
+    }
+  ]
+}

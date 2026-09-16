@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "authentrics/mnist-badnets-poisoned",
+  "slug": "authentrics-mnist-badnets-poisoned",
+  "author": "authentrics",
+  "url": "https://huggingface.co/authentrics/mnist-badnets-poisoned",
+  "created_at": "2026-09-16T16:21:31.000Z",
+  "updated_at": "2026-09-16T16:21:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "authentrics",
+    "backdoor",
+    "badnets",
+    "trojai",
+    "data-poisoning",
+    "mnist",
+    "lenet",
+    "image-classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1001812,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kommissarin Klaudia Wagner Bücher in der richtigen Reihenfolge",
+      "url": "https://www.buechertreff.de/buchreihe/93220-kommissarin-klaudia-wagner-christiane-dieckerhoff-reihenfolge/",
+      "snippet": "Dec 28, 2024 · Richtige Reihenfolge aller acht Bücher der Kommissarin Klaudia Wagner Reihe von Christiane Dieckerhoff mit …"
+    },
+    {
+      "title": "Romane von Christiane Dieckerhoff in der richtigen Reihenfolge",
+      "url": "https://www.buecherserien.de/christiane-dieckerhoff/",
+      "snippet": "Wir stellen hier die Kriminalromane der Klaudia Wagner-Reihe u.a. Bücher von der Autorin Christiane Dieckerhoff in der richtigen …"
+    },
+    {
+      "title": "Romane von Christiane Dieckerhoff in der richtigen Reihenfolge",
+      "url": "https://www.reihenfolge.de/romane/christiane-dieckerhoff/",
+      "snippet": "Die Romane von Christiane Dieckerhoff in der richtigen Reihenfolge der Kommissarin Klaudia Wagner-Serie."
+    },
+    {
+      "title": "Veröffentlichungen – Christiane Dieckerhoff",
+      "url": "https://christianedieckerhoff.de/services/",
+      "snippet": "Der aktuell letzte Roman aus meiner Spreewaldkrimi Reihe. Klaudia Wagner und ihr schwerster Fall: Eine Pilzsammlerin hat im …"
+    },
+    {
+      "title": "Christiane Dieckerhoff - Bücher in Reihenfolge - BücherTreff.de",
+      "url": "https://www.buechertreff.de/buecher/christiane-dieckerhoff/",
+      "snippet": "Entdecke Bücher von Christiane Dieckerhoff, die Reihenfolge, Rezensionen und vielleicht sogar neue Bücher, die du bisher nicht …"
+    }
+  ]
+}

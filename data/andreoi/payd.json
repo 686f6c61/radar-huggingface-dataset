@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "andreoi/payd",
+  "slug": "andreoi-payd",
+  "author": "andreoi",
+  "url": "https://huggingface.co/andreoi/payd",
+  "created_at": "2026-09-16T16:04:09.000Z",
+  "updated_at": "2026-09-16T16:04:10.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pizza Hut - sprawdź promocje i restauracje, lub zamów pizzę online!",
+      "url": "https://pizzahut.pl/",
+      "snippet": "Zamawiaj pizzę i inne dania przez internet, z dostawą lub na wynos. Znajdź najbliższy lokal, lub wybierz dostawę do domu. 85% …"
+    },
+    {
+      "title": "Pizza Hut Gdańsk Najlepsza pizza w mieście, zamów teraz!",
+      "url": "https://pizzahut.pl/restaurants/gdansk",
+      "snippet": "Pizza Hut Gdańsk 🍕 Znajdź najbliższą restaurację w Twojej okolicy. Przyjdź do lokalu lub zamów z dostawą 🚛 Poznaj nasze smaki!"
+    },
+    {
+      "title": "Pizzeria 105 | Najlepsza pizza w mieście | Zamów online",
+      "url": "https://105.pl/",
+      "snippet": "Polska sieć - Pizzeria licząca ponad 80 lokali. Zamów online, telefonicznie lub przyjdź i spróbuj największej pizzy w mieście - 60cm. …"
+    },
+    {
+      "title": "Maxx Pizza Gdańsk - Restauracja z pyszną pizzą i daniami obiadowymi ...",
+      "url": "https://maxxpizza.pl/",
+      "snippet": "MAXX Pizza w Gdańsku Zaspie oferuje szerokie menu, w tym pizzę o imponującej średnicy 65 cm, dania mięsne, makarony, sałatki, …"
+    },
+    {
+      "title": "Express Pizza - Gdańsk, Startowa | online z dowozem ️",
+      "url": "https://expresspizza.pl/pizzeria-gdansk",
+      "snippet": "Codziennie serwujemy najlepszą pizzę z dowozem do domu. Zapraszamy, każdego fana pysznego jedzenia do spróbowania …"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "zbeeb/Cedar-GRPO-Qwen2.5-Math-1.5B",
+  "slug": "zbeeb-cedar-grpo-qwen2-5-math-1-5b",
+  "author": "zbeeb",
+  "url": "https://huggingface.co/zbeeb/Cedar-GRPO-Qwen2.5-Math-1.5B",
+  "created_at": "2026-09-16T13:40:34.000Z",
+  "updated_at": "2026-09-16T13:40:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "grpo",
+    "math",
+    "reinforcement-learning",
+    "cedar-grpo",
+    "conversational",
+    "en",
+    "zh",
+    "dataset:zbeeb/Cedar-GRPO-DAPO-Math-17k",
+    "base_model:Qwen/Qwen2.5-Math-1.5B",
+    "base_model:finetune:Qwen/Qwen2.5-Math-1.5B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 6186317228,
+  "storage_human": "6.2 GB",
+  "base_model": "Qwen/Qwen2.5-Math-1.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reddit - Dive into anything",
+      "url": "https://www.reddit.com/",
+      "snippet": "Reddit is a network of communities where people can dive into their interests, hobbies and passions. There's a community for …"
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "reddit",
+      "url": "https://www.reddit.com/r/reddit/wiki/index/",
+      "snippet": "The most official Reddit community of all official Reddit communities. Your go-to place for Reddit updates, announcements, and …"
+    },
+    {
+      "title": "Installing Kee with KeePassRPC for KeePass Password Safe (instructions)",
+      "url": "https://forum.kee.pm/t/installing-kee-with-keepassrpc-for-keepass-password-safe-instructions/23",
+      "snippet": "Oct 22, 2017 · These instructions explain how to configure Kee to use KeePass as the storage location for protected passwords. If …"
+    },
+    {
+      "title": "Kee extension using KeePass in Edge",
+      "url": "https://forum.kee.pm/t/kee-extension-using-keepass-in-edge/5085",
+      "snippet": "Dec 30, 2025 · I have noticed that in Microsoft Edge the extension does not recognise that the KeePass database has been opened …"
+    }
+  ]
+}

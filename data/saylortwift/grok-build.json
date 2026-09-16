@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "SaylorTwift/grok-build",
+  "slug": "saylortwift-grok-build",
+  "author": "SaylorTwift",
+  "url": "https://huggingface.co/SaylorTwift/grok-build",
+  "created_at": "2026-09-16T10:39:48.000Z",
+  "updated_at": "2026-09-16T10:40:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "agent",
+    "coding-agent",
+    "cli",
+    "llm",
+    "tool-use",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 168260,
+  "storage_human": "168260 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Women's World Tennis Tour | ITF - www.itftennis.com",
+      "url": "https://www.itftennis.com/en/itf-tours/womens-world-tennis-tour/",
+      "snippet": "The Women's World Tennis Tour provides entry level and mid-level professional tournaments and sits between the World Tennis …"
+    },
+    {
+      "title": "Men's World Tennis Tour | ITF",
+      "url": "https://www.itftennis.com/en/itf-tours/mens-world-tennis-tour/",
+      "snippet": "About the Men's World Tennis Tour The Men's World Tennis Tour (formerly known as the ITF World Tennis Tour) provides entry-level …"
+    },
+    {
+      "title": "Log in | World Tennis - ITF",
+      "url": "https://contentportal.itftennis.com/account",
+      "snippet": "Forgotten your password? Don't have an account? Register now"
+    },
+    {
+      "title": "World Tennis Officiating",
+      "url": "https://officiating.itftennis.com/home/",
+      "snippet": "Sign in Find out more about the World Tennis ID here"
+    },
+    {
+      "title": "Women's World Tennis Tour Calendar | (formerly ITF) | ITF",
+      "url": "https://www.itftennis.com/en/tournament-calendar/womens-world-tennis-tour-calendar/?lang=en-gb",
+      "snippet": "Sep 1, 2026 · Find and search for events on the Women's World Tennis Tour with the official tournament calendar."
+    }
+  ]
+}

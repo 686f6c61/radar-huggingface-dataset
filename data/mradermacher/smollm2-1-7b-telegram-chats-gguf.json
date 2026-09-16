@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mradermacher/SmolLM2-1.7B-telegram-chats-GGUF",
+  "slug": "mradermacher-smollm2-1-7b-telegram-chats-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/SmolLM2-1.7B-telegram-chats-GGUF",
+  "created_at": "2026-09-16T15:25:07.000Z",
+  "updated_at": "2026-09-16T15:38:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "generated_from_trainer",
+    "trl",
+    "trackio:https://Offlin33er-smollm2-telegram-chat-sft-trackio.hf.space?project=smollm2-telegram-chat-sft&runs=Offlin33er-1789556763&sidebar=collapsed",
+    "sft",
+    "hf_jobs",
+    "en",
+    "dataset:Offlin33er/telegram-chat-export-synthetic",
+    "base_model:Offlin33er/SmolLM2-1.7B-telegram-chats",
+    "base_model:quantized:Offlin33er/SmolLM2-1.7B-telegram-chats",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1711376384,
+  "parameters_human": "1.71B",
+  "storage_bytes": 15315764480,
+  "storage_human": "15.3 GB",
+  "base_model": "Offlin33er/SmolLM2-1.7B-telegram-chats",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "中国历年房价走势详细是怎样的？ - 知乎",
+      "url": "https://www.zhihu.com/question/41494205",
+      "snippet": "数据采集 首先想到的办法是用爬虫来爬取各个房产销售网站的数据，但是不同网站的数据差异较大，而且网站放出的数据不全。 目前 …"
+    },
+    {
+      "title": "单机游戏的存档一般在电脑内的哪个文件里啊？ - 知乎",
+      "url": "https://www.zhihu.com/question/381828080",
+      "snippet": "Mar 23, 2020 · 早期一般是在游戏目录里面有个Saves或者profiles一类的文件夹 后来一般是放进我的文档里，主要有两种风格，一种是 …"
+    },
+    {
+      "title": "padlet是什么? - 知乎",
+      "url": "https://www.zhihu.com/question/45339260",
+      "snippet": "Padlet是一款用于教育和协作的在线工具，便于用户创建和分享内容。"
+    },
+    {
+      "title": "罗技鼠标怎么查询真伪？ - 知乎",
+      "url": "https://www.zhihu.com/question/312354382",
+      "snippet": "然后拔打罗技官方的电话，根据语音提示操作输入SN码查询真伪 手机打这个号码 400-820-0338 固话座机打这个 800-820-0338 另外 …"
+    },
+    {
+      "title": "airpods 怎么连windows电脑? - 知乎",
+      "url": "https://www.zhihu.com/question/375118743",
+      "snippet": "①先把耳机断开了除电脑之外手机平板之类的连接，耳机放进充电仓，开盖后长按充电仓外面按键，将指示灯按到白色。 ②靠近电脑， …"
+    }
+  ]
+}

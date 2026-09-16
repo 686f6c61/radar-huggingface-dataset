@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "SohaibAbdoAhmed/smollm2-glaive-fc-adapter",
+  "slug": "sohaibabdoahmed-smollm2-glaive-fc-adapter",
+  "author": "SohaibAbdoAhmed",
+  "url": "https://huggingface.co/SohaibAbdoAhmed/smollm2-glaive-fc-adapter",
+  "created_at": "2026-09-16T15:28:07.000Z",
+  "updated_at": "2026-09-16T15:28:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "function-calling",
+    "smollm2",
+    "qlora",
+    "glaive",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:HuggingFaceTB/SmolLM2-1.7B-Instruct",
+    "base_model:adapter:HuggingFaceTB/SmolLM2-1.7B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 144748392,
+  "storage_human": "145 MB",
+  "base_model": "HuggingFaceTB/SmolLM2-1.7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "De la géothermie dans un parking parisien, une - Ville de Paris",
+      "url": "https://www.paris.fr/pages/de-la-geothermie-dans-un-parking-parisien-une-innovation-unique-en-france-30361",
+      "snippet": "Feb 28, 2025 · Au sous-sol de cet immeuble géré par Paris Habitat, les panneaux muraux récupèrent la chaleur qui est ensuite reliée …"
+    },
+    {
+      "title": "Chauffage urbain : premiers panneaux géothermiques dans un parking …",
+      "url": "https://lenergeek.com/2025/03/03/chauffage-urbain-paris-panneaux-geothermiques/",
+      "snippet": "Mar 3, 2025 · Paris veut redéfinir le chauffage urbain et accélérer la transition énergétique. La ville a inauguré une expérimentation …"
+    },
+    {
+      "title": "Géothermie en milieu urbain : une expérimentation pionnière dépasse …",
+      "url": "https://www.parishabitat.fr/a-la-une/geothermie-en-milieu-urbain-une-experimentation-pionniere-depasse-ses-objectifs-et-amorce-son-deploiement/",
+      "snippet": "May 18, 2026 · Des performances énergétiques qui valident le modèle Inauguré le 27 février 2025, ce démonstrateur inédit en France …"
+    },
+    {
+      "title": "Géothermie en milieu urbain : une expérimentation pionnière dépasse …",
+      "url": "https://www.parishabitat.fr/wp-content/uploads/2026/05/CP_GEOTHERMIE_180526-002.pdf",
+      "snippet": "a voie à de nouveaux projets sur le patrimoine existant. Des performances énergétiques qui valident le modèle Inauguré le 27 février …"
+    },
+    {
+      "title": "Énergie : Paris inaugure un projet de géothermie innovant",
+      "url": "https://www.economiematin.fr/energie-paris-geothermie-innovant-parking",
+      "snippet": "Mar 3, 2025 · Dans son parking souterrain, 145 panneaux géothermiques sont désormais fixés aux murs pour capter la chaleur du …"
+    }
+  ]
+}

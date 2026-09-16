@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "namquangstudy/aaie-gft-rca-sft-8k",
+  "slug": "namquangstudy-aaie-gft-rca-sft-8k",
+  "author": "namquangstudy",
+  "url": "https://huggingface.co/namquangstudy/aaie-gft-rca-sft-8k",
+  "created_at": "2026-09-16T12:36:36.000Z",
+  "updated_at": "2026-09-16T12:37:26.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "root-cause-analysis",
+    "yarn",
+    "research-prototype",
+    "conversational",
+    "en",
+    "base_model:namquangstudy/aaie-ddense-gft-llama",
+    "base_model:finetune:namquangstudy/aaie-ddense-gft-llama",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 354374144,
+  "parameters_human": "354.4M",
+  "storage_bytes": 1428938904,
+  "storage_human": "1.4 GB",
+  "base_model": "namquangstudy/aaie-ddense-gft-llama",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sign in to Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "Sign in On your computer, go to Gmail. Enter your Google Account email or phone number and password. If information is already …"
+    },
+    {
+      "title": "Gmail Help",
+      "url": "https://support.google.com/mail/?hl=en",
+      "snippet": "Official Gmail Help Center where you can find tips and tutorials on using Gmail and other answers to frequently asked questions."
+    },
+    {
+      "title": "Why Do I Have to Sign In to Gmail Every Time? | Expert Answers",
+      "url": "https://www.justanswer.com/email/kpd2i-suddenly-sign-gmail-every-time.html?msockid=37d6d4c7ee3362880dddc311efd66344",
+      "snippet": "Customer: Why do I suddenly have to sign into my Gmail every time I click the Gmail icon on my PC? Technician's Assistant: Is there …"
+    },
+    {
+      "title": "Se connecter à Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Se connecter à Gmail Pour ouvrir Gmail, vous pouvez vous connecter à partir d'un ordinateur ou ajouter votre compte à l'application …"
+    },
+    {
+      "title": "Create a Google Account for Gmail",
+      "url": "https://support.google.com/mail/answer/56256?hl=en",
+      "snippet": "Create a Google Account for Gmail A Google Account lets you sign in to Gmail and other Google services, such as YouTube, Google …"
+    }
+  ]
+}

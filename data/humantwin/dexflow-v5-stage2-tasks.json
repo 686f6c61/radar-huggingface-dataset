@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Humantwin/dexflow-v5-stage2-tasks",
+  "slug": "humantwin-dexflow-v5-stage2-tasks",
+  "author": "Humantwin",
+  "url": "https://huggingface.co/Humantwin/dexflow-v5-stage2-tasks",
+  "created_at": "2026-09-16T14:16:14.000Z",
+  "updated_at": "2026-09-16T14:21:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "robotics",
+    "imitation-learning",
+    "dexflow-v5",
+    "flow-matching",
+    "dexterous-manipulation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 46799881,
+  "storage_human": "47 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TP Fay - UK Manufacturer of Bespoke Heating Elements",
+      "url": "https://www.tpfay.co.uk/",
+      "snippet": "Based in Kirkby Liverpool, TPFay are one of the leading UK manufacturers for tubular heating elements. Specialising in bespoke …"
+    },
+    {
+      "title": "Shop - TP Fay",
+      "url": "https://www.tpfay.co.uk/shop/",
+      "snippet": "Showing 1–30 of 290 results Screwed Stainless Steel Half Socket 2.25″ BSP"
+    },
+    {
+      "title": "tpfay.com",
+      "url": "http://tpfay.com/",
+      "snippet": ""
+    },
+    {
+      "title": "TPFAY (KIRKBY) LIMITED - Made in Britain",
+      "url": "https://www.madeinbritain.org/members/tp-fay-kirkby-limited",
+      "snippet": "Established in 1978, TPFay are specialists in replacing burnt out, obsolete or difficult to find heating elements and assemblies. We …"
+    },
+    {
+      "title": "TPFay Ltd | Kirkby - Facebook",
+      "url": "https://www.facebook.com/TPFAYLTD/",
+      "snippet": "TPFay Ltd, Kirkby. 6 likes · 1 talking about this. A British Manufacturing Company Specialists heating elements & Immersion heaters. …"
+    }
+  ]
+}

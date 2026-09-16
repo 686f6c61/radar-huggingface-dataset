@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "AldenClark2902/ai-social-media-content-workflows",
+  "slug": "aldenclark2902-ai-social-media-content-workflows",
+  "author": "AldenClark2902",
+  "url": "https://huggingface.co/AldenClark2902/ai-social-media-content-workflows",
+  "created_at": "2026-09-16T13:07:04.000Z",
+  "updated_at": "2026-09-16T13:07:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=17017ca39cf2679f1a666b759d326671",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "✨🤖Automate Multi-Platform Social Media Content Creation with AI | n8n workflow template",
+      "url": "https://n8n.io/workflows/3066-automate-multi-platform-social-media-content-creation-with-ai/",
+      "snippet": "Creating platform-optimized content at scale while maintaining brand consistency across multiple channels, reducing manual work by 80% through AI generation and automated publishing."
+    },
+    {
+      "title": "AI Social Media Approval Workflows: 2026 Guide | CampaignSwift",
+      "url": "https://campaignswift.com/blog/ai-social-media-approval-workflows",
+      "snippet": "... An AI social media approval workflow is a content sign-off system where an AI agent actively manages the routing, chasing, and tracking of approvals instead of relying on manual coordination."
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Get access to free online versions of Outlook, Word, Excel, and PowerPoint."
+    },
+    {
+      "title": "Sign in to your account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "dopazina/nipple-piercing-CyberRealistic",
+  "slug": "dopazina-nipple-piercing-cyberrealistic",
+  "author": "dopazina",
+  "url": "https://huggingface.co/dopazina/nipple-piercing-CyberRealistic",
+  "created_at": "2026-09-16T12:53:55.000Z",
+  "updated_at": "2026-09-16T12:54:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:cyberdelia/CyberRealistic",
+    "base_model:adapter:cyberdelia/CyberRealistic",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18079600,
+  "storage_human": "18 MB",
+  "base_model": "cyberdelia/CyberRealistic",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Save 20% on 007 First Light on Steam",
+      "url": "https://store.steampowered.com/app/3768760/007_First_Light/",
+      "snippet": "May 26, 2026 · Earn the Number. 007 First Light is a thrilling espionage action-adventure game from IO Interactive. Follow James …"
+    },
+    {
+      "title": "007 First Light - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/007_First_Light",
+      "snippet": "007 First Light is a 2026 action-adventure video game developed and published by IO Interactive. Based on the James Bond …"
+    },
+    {
+      "title": "GET 007 FIRST LIGHT NOW - IO I",
+      "url": "https://ioi.dk/007firstlightgame",
+      "snippet": "007 First Light is a thrilling narrative action-adventure game developed and published by IO Interactive. Follow James Bond as a …"
+    },
+    {
+      "title": "007 First Light | Download and Buy Today - Epic Games Store",
+      "url": "https://store.epicgames.com/p/007-first-light-182cea?lang=en-US",
+      "snippet": "May 27, 2026 · Earn the Number. 007 First Light is a thrilling espionage action-adventure game from IO Interactive. Follow James …"
+    },
+    {
+      "title": "007 First Light (Video Game 2026) - IMDb",
+      "url": "https://www.imdb.com/title/tt13495854/",
+      "snippet": "007 First Light presents a compelling narrative that not only trusts Bond into the high tech modern world while still being a traditional …"
+    }
+  ]
+}

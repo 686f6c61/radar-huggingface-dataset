@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "tayaee/llama-3.1-tulu-3-8b-gptq-4bit-hf",
+  "slug": "tayaee-llama-3-1-tulu-3-8b-gptq-4bit-hf",
+  "author": "tayaee",
+  "url": "https://huggingface.co/tayaee/llama-3.1-tulu-3-8b-gptq-4bit-hf",
+  "created_at": "2026-09-16T18:07:59.000Z",
+  "updated_at": "2026-09-16T18:10:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "4-bit",
+    "gptq",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030326784,
+  "parameters_human": "8.03B",
+  "storage_bytes": 5723020622,
+  "storage_human": "5.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "News & E-Mail bei t-online | Politik, Sport, Unterhaltung & Ratgeber",
+      "url": "https://www.t-online.de/",
+      "snippet": "Aktuelle News aus Politik, Sport, Unterhaltung, Wirtschaft & Finanzen | Ratgeber Leben, Gesundheit und Heim & Garten | E-Mail und …"
+    },
+    {
+      "title": "Politik aktuell: Nachrichten aus Deutschland, Europa und der Welt",
+      "url": "https://www.t-online.de/nachrichten/",
+      "snippet": "Aktuelle News, Informationen und Videos zu Politik, Panorama und Wetter aus Deutschland, Europa und der Welt von t-online.de …"
+    },
+    {
+      "title": "Telefonbuch bei t-online.de in Sekunden gefunden",
+      "url": "https://telefonbuch.t-online.de/",
+      "snippet": "Über t-online So arbeitet die Redaktion Autoren bei t-online Nachricht oder Meinung"
+    },
+    {
+      "title": "T-Online - E-Mail Mobil",
+      "url": "https://m-email.t-online.de/",
+      "snippet": "Über ein anderes E-Mail-Programm (z.B. Outlook, Apple Mail, Thunderbird, ...) Wenn Sie Telekom Mail mit einem E-Mail-Programm …"
+    },
+    {
+      "title": "T-Online - Telekom | Mobilfunk, Festnetz & Internet, TV Angebote",
+      "url": "https://tarifbestellen.t-online.de/",
+      "snippet": "Alle Telekom Angebote entdecken Glasfaser für Ihr Zuhause Superschnell, stabil und bereit für die Zukunft: Mit Glasfaser kommt …"
+    }
+  ]
+}

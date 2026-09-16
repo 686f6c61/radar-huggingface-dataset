@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "mradermacher/voyage-student-1-5b-dayfill-GGUF",
+  "slug": "mradermacher-voyage-student-1-5b-dayfill-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/voyage-student-1-5b-dayfill-GGUF",
+  "created_at": "2026-09-16T15:19:39.000Z",
+  "updated_at": "2026-09-16T15:27:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:ChristopherLi/voyage-student-1-5b-dayfill",
+    "base_model:quantized:ChristopherLi/voyage-student-1-5b-dayfill",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 14206898688,
+  "storage_human": "14.2 GB",
+  "base_model": "ChristopherLi/voyage-student-1-5b-dayfill",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tunisie Telecom",
+      "url": "https://www.tunisietelecom.tn/particulier/assistance/paiement-recharges/efacture/",
+      "snippet": ""
+    },
+    {
+      "title": "E-FACTURE - Tunisie Telecom",
+      "url": "https://www.tunisietele.com/pages/e-facture.html",
+      "snippet": "Recevez et payez vos factures en ligne. Pour plus d'informations sur E-FACTURE, contactez-nous au 1298 ou rendez-vous dans l'un …"
+    },
+    {
+      "title": "Tunisie Telecom",
+      "url": "https://mytt.tunisietelecom.tn/anonymous/paiment-facture",
+      "snippet": "Effectuez le paiement de vos factures en ligne avec Tunisie Telecom en toute simplicité et sécurité."
+    },
+    {
+      "title": "Tunisie Telecom Particulier - EFACTURE",
+      "url": "https://www.tunisietelecom.tn/particulier/fixe-internet/options-services/efacture/",
+      "snippet": "QU'EST-CE QUE LE SERVICE E-FACTURE ? « e-Facture» est un service GRATUIT, permettant aux clients de Tunisie Telecom de …"
+    },
+    {
+      "title": "Tunisie Telecom - Particulier",
+      "url": "https://www.tunisietele.com/",
+      "snippet": "Actualités & évènements Tunisie Telecom lance Kashy, sa nouvelle application de paiement mobile Publié le : 18/03/2026 Lire la suite"
+    }
+  ]
+}

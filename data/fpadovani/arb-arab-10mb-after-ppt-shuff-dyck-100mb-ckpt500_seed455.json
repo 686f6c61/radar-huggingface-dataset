@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/arb-arab-10mb-after-ppt-shuff-dyck-100mb-ckpt500_seed455",
+  "slug": "fpadovani-arb-arab-10mb-after-ppt-shuff-dyck-100mb-ckpt500_seed455",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/arb-arab-10mb-after-ppt-shuff-dyck-100mb-ckpt500_seed455",
+  "created_at": "2026-09-16T17:35:02.000Z",
+  "updated_at": "2026-09-16T18:48:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:fpadovani/arb-arab-10mb-ppt-shuff-dyck-100mb_seed455",
+    "base_model:finetune:fpadovani/arb-arab-10mb-ppt-shuff-dyck-100mb_seed455",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 39087104,
+  "parameters_human": "39.1M",
+  "storage_bytes": 2112540206,
+  "storage_human": "2.1 GB",
+  "base_model": "fpadovani/arb-arab-10mb-ppt-shuff-dyck-100mb_seed455",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Quiz Widget - BookWidgets",
+      "url": "https://www.bookwidgets.com/widget-library/quiz",
+      "snippet": "Assess students’ understanding of language grammar with an interactive Quiz. Utilize a combination of question types to identify …"
+    },
+    {
+      "title": "Free Quiz Maker Widget - commoninja.com",
+      "url": "https://www.commoninja.com/widgets/quiz",
+      "snippet": "Build a multi-question quiz with scored or personality-style results, or use the same widget in poll mode for single-question polls, …"
+    },
+    {
+      "title": "Free Quiz Widgets – Capture Leads with Interactive Quizzes …",
+      "url": "https://embeddable.co/free-quiz-widgets",
+      "snippet": "Create personality quizzes, trivia, and lead generation quizzes in minutes with AI. Fully editable, no coding required. Start free at …"
+    },
+    {
+      "title": "Quiz Widget — Add It to Your Website Free | Webynize",
+      "url": "https://webynize.com/quiz-widget/",
+      "snippet": "A Quiz widget makes your website interactive with engaging Quizzes that capture attention and turn visitors into active participants. …"
+    },
+    {
+      "title": "Quiz Widget - Figma",
+      "url": "https://www.figma.com/community/widget/1182906312337777792/quiz-widget",
+      "snippet": "Whether it be adding to study guides or taking/creating quizzes with friends, the Quiz Widget is the all-in-one ultimate study review …"
+    }
+  ]
+}

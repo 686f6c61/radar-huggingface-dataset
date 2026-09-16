@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "mazenDDr/receipt-vlm-qwen2.5-vl-3b-lora",
+  "slug": "mazenddr-receipt-vlm-qwen2-5-vl-3b-lora",
+  "author": "mazenDDr",
+  "url": "https://huggingface.co/mazenDDr/receipt-vlm-qwen2.5-vl-3b-lora",
+  "created_at": "2026-09-16T16:31:49.000Z",
+  "updated_at": "2026-09-16T16:32:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen2.5-VL-3B-Instruct",
+    "lora",
+    "transformers",
+    "text-generation",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen2.5-VL-3B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 119809088,
+  "storage_human": "120 MB",
+  "base_model": "Qwen/Qwen2.5-VL-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Visit Brisbane | Start planning your trip.",
+      "url": "https://visit.brisbane.qld.au/?utm-campaign=vb-home-CF",
+      "snippet": "Brisbane is bursting with fun things to do, exciting places to visit and an epic line-up of major sporting and cultural events."
+    },
+    {
+      "title": "Travel Guide to Brisbane, Queensland - Tourism Australia",
+      "url": "https://www.australia.com/en/places/brisbane-and-surrounds/guide-to-brisbane.html",
+      "snippet": "Discover your complete travel guide to Brisbane and find out why Brisbane is one of the world’s most livable cities."
+    },
+    {
+      "title": "Plan Your Trip to Brisbane: Best of Brisbane Tourism",
+      "url": "https://www.tripadvisor.com/Tourism-g255068-Brisbane_Brisbane_Region_Queensland-Vacations.html",
+      "snippet": "I’ll be honest: I plan my trips back to Brisbane around breakfast. Whether it’s a hearty \"smashed avo\" on toast or an indulgent sand …"
+    },
+    {
+      "title": "Plan your trip | Visit Brisbane, Australia",
+      "url": "https://visit.brisbane.qld.au/plan",
+      "snippet": "Ready to plan your trip to Brisbane? Find accommodation options, getting around details and tourist information here."
+    },
+    {
+      "title": "Visit Brisbane - Things to Do and Planning Your Trip | Queensland",
+      "url": "https://www.queensland.com/au/en/places-to-see/destinations/brisbane",
+      "snippet": "Discover Brisbane, Queensland’s thriving capital - a sun-soaked city of riverfront dining, outdoor adventures, world-class culture and …"
+    }
+  ]
+}

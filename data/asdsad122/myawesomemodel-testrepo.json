@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "asdsad122/MyAwesomeModel-TestRepo",
+  "slug": "asdsad122-myawesomemodel-testrepo",
+  "author": "asdsad122",
+  "url": "https://huggingface.co/asdsad122/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-16T10:45:44.000Z",
+  "updated_at": "2026-09-16T10:45:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "§ 56 StGB - Einzelnorm - Gesetze im Internet",
+      "url": "https://www.gesetze-im-internet.de/stgb/__56.html",
+      "snippet": "(2) Das Gericht kann unter den Voraussetzungen des Absatzes 1 auch die Vollstreckung einer höheren Freiheitsstrafe, die zwei …"
+    },
+    {
+      "title": "Besondere Umstände - Informationen nach einem auffälligen ... - BZgA",
+      "url": "https://shop.bioeg.de/broschuere-besondere-umstaende-informationsmaterial-fuer-schwanger-13450002/",
+      "snippet": "Die Broschüre bietet konkrete Hilfe für die unterschiedlichen Situationen, in denen sich Schwangere und Paare nach einem …"
+    },
+    {
+      "title": "Zoll online - Besondere Umstände",
+      "url": "https://www.zoll.de/DE/Fachthemen/Zoelle/Abgabenerhebung/Erlass-Erstattung/Einzelne-Erstattungsfaelle/Art-120-UZK/Besondere-Umstaende/besondere-umstaende_node.html",
+      "snippet": "Eine solche Maßnahme setzt zwingend voraus, dass im konkret vorliegenden Einzelfall außergewöhnliche Umstände gegeben sind. …"
+    },
+    {
+      "title": "besondere Umstände - Urteile kostenlos online lesen",
+      "url": "https://www.juraforum.de/urteile/begriffe/besondere-umstaende",
+      "snippet": "Jul 20, 2000 · Entscheidungen und Beschlüsse der Gerichte zum Schlagwort „besondere Umstände“."
+    },
+    {
+      "title": "Weitere Entscheidungen: Halbstrafe, Voraussetzungen, besondere Umstände ...",
+      "url": "https://www.burhoff.de/asp_weitere_beschluesse/inhalte/8827.htm",
+      "snippet": "Aug 22, 2024 · Diese Aspekte stellen in ihrer Gesamtheit besonderer Umstände dar, die eine Aussetzung der Reststrafe zur …"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Translsis/RVCModels",
+  "slug": "translsis-rvcmodels",
+  "author": "Translsis",
+  "url": "https://huggingface.co/Translsis/RVCModels",
+  "created_at": "2026-09-16T15:24:49.000Z",
+  "updated_at": "2026-09-16T15:24:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 571117951976,
+  "storage_human": "571.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Create and edit documents for free | Microsoft Word for the Web",
+      "url": "https://word.cloud.microsoft/en-us/",
+      "snippet": "Write, edit, and collaborate on documents with Microsoft Word online. Free and seamless access from any device."
+    },
+    {
+      "title": "Free Online Document Editing with Microsoft Word | Microsoft 365",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/word?msockid=1186276fac246bf73b1b30b9ad456a81",
+      "snippet": "Use Microsoft Word for online document editing with AI-powered suggestions from Copilot for grammar, style, and clarity. Write, edit, …"
+    },
+    {
+      "title": "Free online document editor | Microsoft Word",
+      "url": "https://word.cloud.microsoft/create/en/document-editor/",
+      "snippet": "Create and edit web-based documents with Microsoft Word. Store documents online and access them from any computer."
+    },
+    {
+      "title": "Microsoft Word - Download",
+      "url": "https://microsoft-word.en.softonic.com/",
+      "snippet": "16 hours ago · Microsoft Word benefits from a clean interface, logical menus, and consistent shortcuts that make navigation intuitive …"
+    },
+    {
+      "title": "Sign in to your account",
+      "url": "https://www.office.com/launch/word",
+      "snippet": "Sign in to access Microsoft Word and collaborate on documents online with OneDrive."
+    }
+  ]
+}

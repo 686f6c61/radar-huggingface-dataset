@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "davidzhou302/ActiveScale",
+  "slug": "davidzhou302-activescale",
+  "author": "davidzhou302",
+  "url": "https://huggingface.co/davidzhou302/ActiveScale",
+  "created_at": "2026-09-16T12:38:45.000Z",
+  "updated_at": "2026-09-16T12:38:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Plus de 3 000 photos gratuites de Western et de Nature - Pixabay",
+      "url": "https://pixabay.com/fr/photos/search/western%20/",
+      "snippet": "Trouvez des photos de Western. Libre de droits Pas d'attribution requise Des images de haute qualité."
+    },
+    {
+      "title": "4 000+ Western banque d’images et photos libres de droit ... - Pexels",
+      "url": "https://www.pexels.com/fr-fr/chercher/western/",
+      "snippet": "Téléchargez et utilisez gratuitement nos 4 000+ photos sur le thème Western. Des milliers de nouvelles images chaque jour …"
+    },
+    {
+      "title": "1 368 467 Western photos - Getty Images",
+      "url": "https://www.gettyimages.fr/photos/western",
+      "snippet": "Explorez des vidéos et images authentiques de Western pour votre projet ou votre campagne. Moins de recherches, davantage de …"
+    },
+    {
+      "title": "Images libres de droits de Country western - Shutterstock",
+      "url": "https://www.shutterstock.com/fr/search/country-western?msockid=1bf2a7de6a906ab20169b0086b286bb6",
+      "snippet": "Trouvez (306 mille) images de Country western, en HD et des millions d'autres photos, objets 3D, illustrations et images vectorielles …"
+    },
+    {
+      "title": "Images libres de droits de Images western - Shutterstock",
+      "url": "https://www.shutterstock.com/fr/search/images-western?msockid=1bf2a7de6a906ab20169b0086b286bb6",
+      "snippet": "Art et graphisme de cow-boy mettant en vedette des thèmes et des éléments occidentaux de l'époque du Far West au Texas. Les …"
+    }
+  ]
+}

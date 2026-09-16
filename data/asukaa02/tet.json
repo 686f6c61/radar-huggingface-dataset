@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Asukaa02/tet",
+  "slug": "asukaa02-tet",
+  "author": "Asukaa02",
+  "url": "https://huggingface.co/Asukaa02/tet",
+  "created_at": "2026-09-16T15:21:19.000Z",
+  "updated_at": "2026-09-16T15:22:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "arxiv:1906.02569",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25833077,
+  "storage_human": "26 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amazon.de: Günstige Preise für Elektronik & Foto, Filme, Musik, Bücher ...",
+      "url": "https://www.amazon.de/",
+      "snippet": "Entdecken, shoppen und einkaufen bei Amazon.de: Günstige Preise für Elektronik & Foto, Filme, Musik, Bücher, Games, Spielzeug, …"
+    },
+    {
+      "title": "Amazon.de",
+      "url": "https://www.amazon.de/gp/css/homepage.html",
+      "snippet": "Hier finden Sie alles, was Sie für Ihren Einkauf benötigen, von Elektronik bis zu Büchern und vielem mehr."
+    },
+    {
+      "title": "Amazon.com: Amazon.de",
+      "url": "https://www.amazon.com/amazon-de/s?k=amazon.de",
+      "snippet": "Give the perfect gift with Amazon eGift Cards. Digital delivery with personal messages and custom amounts."
+    },
+    {
+      "title": "Amazon.de: : Alle Kategorien",
+      "url": "https://www.cdn.amazon.de/b?ie=UTF8&node=17751873031",
+      "snippet": "Online-Einkauf von mit großartigem Angebot im Alle Kategorien Shop."
+    },
+    {
+      "title": "Amazon.com. Spend less. Smile more.",
+      "url": "https://www.amazon.com/",
+      "snippet": "Amazon Payment Products Amazon Visa Amazon Store Card Amazon Secured Card Amazon Business Card Shop with Points …"
+    }
+  ]
+}

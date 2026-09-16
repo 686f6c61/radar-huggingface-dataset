@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "oliveix2003/contrastive",
+  "slug": "oliveix2003-contrastive",
+  "author": "oliveix2003",
+  "url": "https://huggingface.co/oliveix2003/contrastive",
+  "created_at": "2026-09-16T15:06:49.000Z",
+  "updated_at": "2026-09-16T15:06:55.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "poolformer",
+    "pytorch",
+    "contrastive",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "old.reddit.com on reddit.com",
+      "url": "https://www.reddit.com/domain/old.reddit.com/",
+      "snippet": "Submitters of top-rated content on this videogame sub exist solely to promote the game (seriously, read their post history); game …"
+    },
+    {
+      "title": "Alternate links that are working : r/TPB - Reddit",
+      "url": "https://www.reddit.com/r/TPB/comments/a1srj3/alternate_links_that_are_working/",
+      "snippet": "Nov 30, 2018 · The whole point of this post is to show alternate links that are working in case thepiratebay.org is down and to show …"
+    },
+    {
+      "title": "Easy placeholders for SQL queries : r/Python - Reddit",
+      "url": "https://www.reddit.com/r/Python/comments/fw0jko/easy_placeholders_for_sql_queries/",
+      "snippet": "Apr 6, 2020 · In psycopg2, variables can be inserted into queries using %s placeholders and supplying arguments to cursor.execute, …"
+    },
+    {
+      "title": "I can't figure out how to use placeholder in mysql query python",
+      "url": "https://www.reddit.com/r/learnpython/comments/kzt3bx/i_cant_figure_out_how_to_use_placeholder_in_mysql/",
+      "snippet": "Jan 18, 2021 · I can't figure out how to use placeholder in mysql query python My code is : ... I have been searching the internet for …"
+    },
+    {
+      "title": "Filter asset field based on Organization : r/jira - Reddit",
+      "url": "https://www.reddit.com/r/jira/comments/1aunouq/filter_asset_field_based_on_organization/",
+      "snippet": "Feb 19, 2024 · We use organizations in Jira Service Desk (Service project). We select an organization for each issue. This is stored …"
+    }
+  ]
+}

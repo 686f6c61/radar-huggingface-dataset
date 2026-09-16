@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/eng-100mb-after-wc-zipf-newlex-jpn-ckpt500_seed3407_seed3407",
+  "slug": "fpadovani-eng-100mb-after-wc-zipf-newlex-jpn-ckpt500_seed3407_seed3407",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/eng-100mb-after-wc-zipf-newlex-jpn-ckpt500_seed3407_seed3407",
+  "created_at": "2026-09-16T14:12:24.000Z",
+  "updated_at": "2026-09-16T14:44:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:fpadovani/ppt-wc-zipf-newlex-jpn-100mb_seed3407",
+    "base_model:finetune:fpadovani/ppt-wc-zipf-newlex-jpn-100mb_seed3407",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 1997705137,
+  "storage_human": "2.0 GB",
+  "base_model": "fpadovani/ppt-wc-zipf-newlex-jpn-100mb_seed3407",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - mdeverdelhan/ecoledirecte-client: Bibliothèque Java d ...",
+      "url": "https://github.com/mdeverdelhan/ecoledirecte-client",
+      "snippet": "ecoledirecte-client vise à simplifier l'accès à l'API d'EcoleDirecte pour le développement Java. Elle se veut légère et simple …"
+    },
+    {
+      "title": "GitHub - qLVN/EDBruteforce: EcoleDirecte bruteforcing program",
+      "url": "https://github.com/qLVN/EDBruteforce",
+      "snippet": "EcoleDirecte bruteforcing program. Contribute to qLVN/EDBruteforce development by creating an account on GitHub."
+    },
+    {
+      "title": "EcoleDirecte | Mode Sombre · GitHub",
+      "url": "https://gist.github.com/msylvest-22102007/88373dbd747d97a7cb1e8809ca74e8cf",
+      "snippet": "EcoleDirecte | Mode Sombre. GitHub Gist: instantly share code, notes, and snippets."
+    },
+    {
+      "title": "ecoledirecte-2017-pas-fini.css · GitHub",
+      "url": "https://gist.github.com/Gildas-GH/490d62dfae9d68333be7bedad78fb6fb",
+      "snippet": "GitHub Gist: instantly share code, notes, and snippets."
+    },
+    {
+      "title": "Ecole direct - Forum Logiciels - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-37323812-ecole-direct",
+      "snippet": "Aug 24, 2021 · Bonjour, j aimerai savoir pourquoi je ne peux plus passer à l espace famille quand je vais sur l application ecole direct, …"
+    }
+  ]
+}

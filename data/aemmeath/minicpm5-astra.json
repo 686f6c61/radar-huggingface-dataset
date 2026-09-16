@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "aemmeath/MiniCPM5-Astra",
+  "slug": "aemmeath-minicpm5-astra",
+  "author": "aemmeath",
+  "url": "https://huggingface.co/aemmeath/MiniCPM5-Astra",
+  "created_at": "2026-09-16T11:17:46.000Z",
+  "updated_at": "2026-09-16T11:21:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:aemmeath/MiniCPM5-Aether",
+    "base_model:finetune:aemmeath/MiniCPM5-Aether",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 5033557096,
+  "storage_human": "5.0 GB",
+  "base_model": "aemmeath/MiniCPM5-Aether",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - TheR1D/shell_gpt: A command-line productivity tool …",
+      "url": "https://github.com/TheR1D/shell_gpt",
+      "snippet": "A command-line productivity tool powered by AI large language models like GPT-5, will help you accomplish your tasks faster and …"
+    },
+    {
+      "title": "chatgpt-api · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/chatgpt-api",
+      "snippet": "6 days ago · ChatGPT API is a RESTful API that provides a simple interface to interact with OpenAI’s GPT-3 and GPT-Neo language …"
+    },
+    {
+      "title": "为什么chatgpt是收费的，我们的豆包和deepseek是完全 ...",
+      "url": "https://www.zhihu.com/question/1923520417756321577",
+      "snippet": "卖AI会员是一个非常糟糕的商业模式。 ChatGPT的会员已经卖得非常贵了，但还是无法支撑成本，盈利目标已经一杆子支到了2029年 …"
+    },
+    {
+      "title": "chatgpt怎么订阅最便宜？ - 知乎",
+      "url": "https://www.zhihu.com/question/10434916917",
+      "snippet": "ChatGPT Go 确实“价廉”，但是否“物美”？ 我把官方的订阅对比翻译成了中文。 总结一下， ChatGPT Go 比免费版有更高的 GPT-5 使 …"
+    },
+    {
+      "title": "ChatGPT - Reddit",
+      "url": "https://www.reddit.com/r/ChatGPT/top/",
+      "snippet": "Dec 1, 2022 · r/ChatGPT: Subreddit to discuss about ChatGPT and AI. Not affiliated with OpenAI."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "ToiTenBao/vib-probe-ours-coco-llava15-13b",
+  "slug": "toitenbao-vib-probe-ours-coco-llava15-13b",
+  "author": "ToiTenBao",
+  "url": "https://huggingface.co/ToiTenBao/vib-probe-ours-coco-llava15-13b",
+  "created_at": "2026-09-16T12:47:36.000Z",
+  "updated_at": "2026-09-16T12:50:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 40119144845,
+  "storage_human": "40.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "J ai surpris mon mari!!!! - Affaires de couples - FORUM psychologie",
+      "url": "https://forum.doctissimo.fr/psychologie/couples-relations/surpris-mari-sujet_159004_1.htm",
+      "snippet": "Jul 11, 2005 · Je m'intéresse juste aux histoires des autres, j'essaie de comprendre ce qu'ils vivent. Peut-être qu'à travers leurs …"
+    },
+    {
+      "title": "SEXE : racontez toutes vos petites histoires de sexe!!",
+      "url": "https://forum.doctissimo.fr/doctissimo/Les-ados-parlent-sexo/histoires-racontez-petites-sujet_31761_1.htm",
+      "snippet": "May 1, 2008 · SEXE : racontez toutes vos petites histoires de sexe!! Dernier message posté le : 10/05/2008 à 18h31 Profil supprimé …"
+    },
+    {
+      "title": "un site pédo...légal!!! - Viol et abus sexuels - FORUM psychologie",
+      "url": "https://forum.doctissimo.fr/psychologie/Viol-et-abus-sexuels/site-pedo-legal-sujet_1472_1.htm",
+      "snippet": "Jul 26, 2005 · Oui, un site pédophile légal! Comment est-ce possible? Très simple, apparemment, seuls les photos et films sont …"
+    },
+    {
+      "title": "homme qui veut du serieux mais parle de sexe.. - Doctissimo",
+      "url": "https://forum.doctissimo.fr/psychologie/Rencontres-et-amour-sur-Internet/homme-serieux-parle-sujet_2977_1.htm",
+      "snippet": "Jun 7, 2015 · Globalement, qui dit relation amoureuse, dit sexe, donc oui, forcement. Mais aborder en disant qu'on veut du gros …"
+    },
+    {
+      "title": "NOUVEAUX FORUMS SEXUALITE - Déceptions et ruptures - FORUM …",
+      "url": "https://forum.doctissimo.fr/doctissimo/deceptions-ruptures/nouveaux-forums-sexualite-sujet_154427_1.htm",
+      "snippet": "Aug 22, 2006 · Le forum Sexualité s'enrichit de plein de nouveaux sujets pour une rentrée hot and spicy : - adultère - masturbation - …"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ilyass200404/Reinforce-Pixelcopter-PLE-v0-unit4",
+  "slug": "ilyass200404-reinforce-pixelcopter-ple-v0-unit4",
+  "author": "ilyass200404",
+  "url": "https://huggingface.co/ilyass200404/Reinforce-Pixelcopter-PLE-v0-unit4",
+  "created_at": "2026-09-16T15:09:09.000Z",
+  "updated_at": "2026-09-16T15:09:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Pixelcopter-PLE-v0",
+    "reinforce",
+    "reinforcement-learning",
+    "custom-implementation",
+    "deep-rl-class",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 40061,
+  "storage_human": "40061 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "megathread - Piracy - Reddit",
+      "url": "https://www.reddit.com/r/Piracy/wiki/megathread/?f=flair_name%3A%22Meta%22",
+      "snippet": "r/Piracy: ⚓ A community devoted to in-depth debate on topics concerning digital piracy, ethical problems, and legal advancements."
+    },
+    {
+      "title": "concerned about work being stolen - plagiarism : r/AskProfessors",
+      "url": "https://www.reddit.com/r/AskProfessors/comments/xo30m1/concerned_about_work_being_stolen_plagiarism/",
+      "snippet": "Sep 25, 2022 · If you have a Mac or have access to a Mac, you can do this for free in Preview. Open the PDFs in separate Preview …"
+    },
+    {
+      "title": "CAD文件中如何添加打印样式？ - 百度经验",
+      "url": "https://jingyan.baidu.com/article/0964eca2c3ae1fc284f5366e.html",
+      "snippet": "Dec 6, 2019 · CAD文件中如何添加打印样式,我们在使用CAD打印时，经常需要调整打印线型，这时我们就要在打印样式中添加已经调 …"
+    },
+    {
+      "title": "二个pdf文件怎么合并成一个，这个方法要知道!-百度经验",
+      "url": "https://jingyan.baidu.com/article/e75aca8535a0b6552fdac65e.html",
+      "snippet": "Dec 26, 2022 · 二个pdf文件怎么合并成一个?当我们需要同时处理多个文件的时候，往往就会使用复制粘贴的方式进行操作。 但是一些 …"
+    },
+    {
+      "title": "US Navy - Reddit",
+      "url": "https://www.reddit.com/r/navy/wiki/index/",
+      "snippet": "Welcome to r/Navy -- Please read this before posting. So, you want to join the Navy? Do not post in r/Navy. Go visit …"
+    }
+  ]
+}

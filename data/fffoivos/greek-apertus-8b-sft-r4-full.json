@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "fffoivos/greek-apertus-8b-sft-r4-full",
+  "slug": "fffoivos-greek-apertus-8b-sft-r4-full",
+  "author": "fffoivos",
+  "url": "https://huggingface.co/fffoivos/greek-apertus-8b-sft-r4-full",
+  "created_at": "2026-09-16T10:38:32.000Z",
+  "updated_at": "2026-09-16T10:43:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "el",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "apertus",
+    "greek",
+    "sft",
+    "chat",
+    "el",
+    "en",
+    "base_model:fffoivos/apertus-8b-greek-cpt",
+    "base_model:finetune:fffoivos/apertus-8b-greek-cpt",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8200138816,
+  "parameters_human": "8.20B",
+  "storage_bytes": 16419322152,
+  "storage_human": "16.4 GB",
+  "base_model": "fffoivos/apertus-8b-greek-cpt",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wiener Kinder- und Jugendorganisationen - Vereine und Gruppen in Wien",
+      "url": "https://www.wien.gv.at/zusammenleben/gruppen-vereine-fuer-kinder-jugendliche",
+      "snippet": "Wiener Kinder- und Jugendorganisationen bieten Orte, an denen junge Menschen Partizipation kennen und erleben lernen. Eine gute …"
+    },
+    {
+      "title": "Verein Wiener Jugendzentren",
+      "url": "https://www.jugendzentren.at/",
+      "snippet": "Die Jugendzentren in Wien stellen sich und ihre Angebote vor."
+    },
+    {
+      "title": "Jugendzentren & Jugendtreffs in Wien",
+      "url": "https://wienxtra.at/informationen/infos-a-z/info/jugendzentren-und-treffs/",
+      "snippet": "Dec 10, 2025 · Jugendzentren bieten dir ein kostenloses Freizeitprogramm, Beratung und Betreuung. Hier findest du eine Liste aller …"
+    },
+    {
+      "title": "ANGEBOTE | Jugendtreff Döbling - JU9TEEN",
+      "url": "https://ju9teen.at/angebote/",
+      "snippet": "Ort: Weinberggasse 60, Stiege 13, 1190 Wien. Das Jugendtreff Döbling bietet Räume in der Weinberggasse 60/13 für 6 – 10-Jährige …"
+    },
+    {
+      "title": "Jugendzentren und Jugendtreffs - Innenräume für Jugendliche - Stadt Wien",
+      "url": "https://www.wien.gv.at/freizeit/jugendzentren-treffs-fuer-jugendliche",
+      "snippet": "In den Jugendzentren und Jugendcafés können Kinder und Teenager ihre Freizeit verbringen - ohne Konsumzwang und notwendige …"
+    }
+  ]
+}

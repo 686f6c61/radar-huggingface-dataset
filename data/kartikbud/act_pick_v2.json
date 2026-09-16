@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "kartikbud/act_pick_v2",
+  "slug": "kartikbud-act_pick_v2",
+  "author": "kartikbud",
+  "url": "https://huggingface.co/kartikbud/act_pick_v2",
+  "created_at": "2026-09-16T18:21:32.000Z",
+  "updated_at": "2026-09-16T18:21:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:kartikbud/pick_v2",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714944,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dynamischer Stromtarif: Testsieger - Rabot Energy",
+      "url": "https://www.rabot.energy/dynamischer-stromtarif/",
+      "snippet": "Die Integration von Batteriespeichersystemen mit dynamischen Stromtarifen ermöglicht es Verbrauchern, Energie in Zeiten geringer …"
+    },
+    {
+      "title": "Fragen & Antworten | Rabot Energy",
+      "url": "https://www.rabot.energy/fragen-antworten/",
+      "snippet": "Jun 6, 2025 · Ganz einfach: Wir bekommen deinen Zählerstand automatisch vom zuständigen Netzbetreiber übermittelt. Sprich: dein …"
+    },
+    {
+      "title": "Warum Rabot Energy einen 2-Kilowattstunden-AC-Batteriespeicher …",
+      "url": "https://www.pv-magazine.de/2026/09/14/warum-rabot-energy-einen-2-kilowattstunden-ac-batteriespeicher-ohne-photovoltaik-anlage-verkauft/",
+      "snippet": "2 days ago · Der deutsche Energieversorger kann auf diesem Weg einen dynamischen Tarif mit garantierten Einsparungen anbieten, …"
+    },
+    {
+      "title": "Stade Energy: Energieberater aus Stade Energie sparen",
+      "url": "https://stade-energy.de/",
+      "snippet": "Wir sparen Ihnen Geld, Zeit und Nerven. Unsere Energieberatung steht für faire, transparente und regionale Beratung. An unseren 4 …"
+    },
+    {
+      "title": "Rabot Energy: Strom für die Energiewende - startupvalley.news",
+      "url": "https://startupvalley.news/de/rabot-energy-strom-energiewende/",
+      "snippet": "Sep 4, 2026 · Wenn Verbrauch, Preis und Ersparnis in Echtzeit sichtbar werden, ändert sich das Verhältnis zum Produkt …"
+    }
+  ]
+}

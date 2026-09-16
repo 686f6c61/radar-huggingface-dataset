@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "FrodoBagginz/Bielik-7B-Q8",
+  "slug": "frodobagginz-bielik-7b-q8",
+  "author": "FrodoBagginz",
+  "url": "https://huggingface.co/FrodoBagginz/Bielik-7B-Q8",
+  "created_at": "2026-09-16T12:17:51.000Z",
+  "updated_at": "2026-09-16T12:19:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama",
+    "llama.cpp",
+    "llama-cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7477727232,
+  "parameters_human": "7.48B",
+  "storage_bytes": 7946803552,
+  "storage_human": "7.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kleinanzeigen – früher eBay Kleinanzeigen. Anzeigen gratis inserieren ...",
+      "url": "https://www.kleinanzeigen.de/?msockid=3e2cfe8687be6e5b10f0e95086336fd9",
+      "snippet": "Gebraucht oder Neu, Privat oder Gewerbe - Jetzt gratis inserieren auf Deutschlands meistbesuchtem Kleinanzeigen-Portal. eBay …"
+    },
+    {
+      "title": "eBay Kleinanzeigen ist jetzt Kleinanzeigen.",
+      "url": "https://www.kleinanzeigen.de/s-kategorien.html?msockid=3e2cfe8687be6e5b10f0e95086336fd9",
+      "snippet": ""
+    },
+    {
+      "title": "Kleinanzeigen.com - Kostenlose Kleinanzeigen",
+      "url": "https://de.kleinanzeigen.com/",
+      "snippet": "Egal ob in Berlin, Hannover, der Hansestadt Hamburg, München, Dresden, einer Stadt wie Leipzig und Stuttgart oder Köln der …"
+    },
+    {
+      "title": "eBay Deutschland - eBay Kleinanzeigen: kostenlose Kleinanzeigen in ...",
+      "url": "https://www.ebay.de/kleinanzeigen?msockid=3e2cfe8687be6e5b10f0e95086336fd9",
+      "snippet": "Bei eBay Kleinanzeigen können Sie kostenlos Kleinanzeigen aufgeben und so ganz einfach in Ihrer Nachbarschaft kaufen und …"
+    },
+    {
+      "title": "Suche auf Kleinanzeigen.com",
+      "url": "https://de.kleinanzeigen.com/Alles",
+      "snippet": "Text: Für ein gepflegtes Grundstück in Loßbruch (Zwischen Detmold/Lemgo) suche ich eine zuverlässige Unterstützung auf Minijob …"
+    }
+  ]
+}

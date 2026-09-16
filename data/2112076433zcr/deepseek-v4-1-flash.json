@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "2112076433zcr/DeepSeek-V4.1-Flash",
+  "slug": "2112076433zcr-deepseek-v4-1-flash",
+  "author": "2112076433zcr",
+  "url": "https://huggingface.co/2112076433zcr/DeepSeek-V4.1-Flash",
+  "created_at": "2026-09-16T10:40:06.000Z",
+  "updated_at": "2026-09-16T10:40:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v41",
+    "text-generation",
+    "image-text-to-text",
+    "license:mit",
+    "endpoints_compatible",
+    "8-bit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 763205315794,
+  "parameters_human": "763.21B",
+  "storage_bytes": 510299192278,
+  "storage_human": "510.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "deepseek-ai/DeepSeek-V4.1-Flash · Hugging Face",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Introducing DeepSeek-V4.1-Flash: smarter, faster, more efficient.",
+      "url": "https://www.deepseek.com/en/news/deepseek-v4-1-flash/",
+      "snippet": "Introducing the smallest model in our new architecture family, with native visual understanding. Designed for greater capability, faster inference, and higher throughput."
+    },
+    {
+      "title": "DeepSeek | Into the Unknown",
+      "url": "https://deepseek.com/en/index.html",
+      "snippet": "DeepSeek is an AI research company focused on building world-leading general artificial intelligence. We develop and open-source frontier LLMs including DeepSeek-V4, DeepSeek-R1, and DeepSeek-Coder. Chat with DeepSeek AI or integrate via API."
+    },
+    {
+      "title": "deepseek-ai/DeepSeek-V4.1-Flash | vLLM Recipes",
+      "url": "https://recipes.vllm.ai/deepseek-ai/DeepSeek-V4.1-Flash",
+      "snippet": "DeepSeek V4.1 Flash vision-language MoE (552B backbone; 8B active per prompt token, 16B per output token) combining sliding-window plus compressed sparse attention with a two-level indexer, engram n-gram memory, hyper-connections, and a DSpark multi-token draft head."
+    },
+    {
+      "title": "DeepSeek V4.1 Flash: API, Model IDs & Migration",
+      "url": "https://deepseek-v4.io/deepseek-v4-1-flash",
+      "snippet": "A source-backed guide to DeepSeek V4.1 Flash, including its official and OpenRouter model IDs, API migration path, capabilities, and this gateway’s text-only boundary."
+    }
+  ]
+}

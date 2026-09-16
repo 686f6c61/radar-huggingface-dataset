@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "lggvu/audiovap-candor-avcocktail-ft",
+  "slug": "lggvu-audiovap-candor-avcocktail-ft",
+  "author": "lggvu",
+  "url": "https://huggingface.co/lggvu/audiovap-candor-avcocktail-ft",
+  "created_at": "2026-09-16T13:31:36.000Z",
+  "updated_at": "2026-09-16T13:31:41.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "voice-activity-projection",
+    "turn-taking",
+    "audio",
+    "video",
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 52146204,
+  "storage_human": "52 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Traduttore",
+      "url": "https://translate.google.it/",
+      "snippet": "Il servizio di Google, offerto senza costi, traduce all'istante parole, frasi e pagine web dall'italiano a più di 100 altre lingue e viceversa."
+    },
+    {
+      "title": "Google Traduttore",
+      "url": "https://translate.google.it/details",
+      "snippet": "Il valore deve essere un URL web in formato corretto"
+    },
+    {
+      "title": "Google Traduttore",
+      "url": "https://translate.google.it/m",
+      "snippet": "Home page di Google Invia commenti Privacy e termini Passa al sito completo"
+    }
+  ]
+}

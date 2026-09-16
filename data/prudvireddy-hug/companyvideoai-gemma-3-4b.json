@@ -1,0 +1,98 @@
+{
+  "schema": 1,
+  "id": "prudvireddy-hug/CompanyVideoAI-Gemma-3-4B",
+  "slug": "prudvireddy-hug-companyvideoai-gemma-3-4b",
+  "author": "prudvireddy-hug",
+  "url": "https://huggingface.co/prudvireddy-hug/CompanyVideoAI-Gemma-3-4B",
+  "created_at": "2026-09-16T15:37:25.000Z",
+  "updated_at": "2026-09-16T15:38:54.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:1905.07830",
+    "arxiv:1905.10044",
+    "arxiv:1911.11641",
+    "arxiv:1904.09728",
+    "arxiv:1705.03551",
+    "arxiv:1911.01547",
+    "arxiv:1907.10641",
+    "arxiv:1903.00161",
+    "arxiv:2009.03300",
+    "arxiv:2304.06364",
+    "arxiv:2103.03874",
+    "arxiv:2110.14168",
+    "arxiv:2311.12022",
+    "arxiv:2108.07732",
+    "arxiv:2107.03374",
+    "arxiv:2210.03057",
+    "arxiv:2106.03193",
+    "arxiv:1910.11856",
+    "arxiv:2502.12404",
+    "arxiv:2502.21228",
+    "arxiv:2404.16816",
+    "arxiv:2104.12756",
+    "arxiv:2311.16502",
+    "arxiv:2203.10244",
+    "arxiv:2404.12390",
+    "arxiv:1810.12440",
+    "arxiv:1908.02660",
+    "arxiv:2312.11805",
+    "base_model:google/gemma-3-4b-pt",
+    "base_model:finetune:google/gemma-3-4b-pt",
+    "license:gemma",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4300079472,
+  "parameters_human": "4.30B",
+  "storage_bytes": 8638351522,
+  "storage_human": "8.6 GB",
+  "base_model": "google/gemma-3-4b-pt",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "闲鱼和转转哪个比较靠谱？ - 知乎",
+      "url": "https://www.zhihu.com/question/65313130",
+      "snippet": "转转一生黑，说一下本人被坑的经历吧。 11.8号，本人在转转平台出售了一台电脑，挂上后被人秒拍，被骗子讲价后3300包邮卖出。 …"
+    },
+    {
+      "title": "小米手机开机后为什么会出现“fastboot”？ - 知乎",
+      "url": "https://www.zhihu.com/question/360254698",
+      "snippet": "作为一名小米老粉，我来帮你回答。【详细版的】首先你说的这种情况大概有两种: 第一种是你开机时不小心按到了音量键【上或下】 …"
+    },
+    {
+      "title": "Română (Romanian) - WordReference Forums",
+      "url": "https://forum.wordreference.com/forums/rom%C3%A2n%C4%83-romanian.76/",
+      "snippet": "Jun 4, 2007 · Învingi durerea râzi cât se poate // Căci tot la zi ajunge și cea mai lungă noapte"
+    },
+    {
+      "title": "Kennt jemand den Qick Driver Updater? Ist der seriös oder nicht?",
+      "url": "https://www.windows-11-forum.de/threads/kennt-jemand-den-qick-driver-updater-ist-der-serioes-oder-nicht.168569/",
+      "snippet": "Nov 7, 2022 · Diskutiere Kennt jemand den Qick Driver Updater? Ist der seriös oder nicht? im PC Fragen / Probleme Forum im …"
+    },
+    {
+      "title": "7zip如何设置极限压缩的参数？ - 知乎",
+      "url": "https://www.zhihu.com/question/24517051",
+      "snippet": "主要变动的参数为： Archive Format（压缩格式）：这里只测试7z和Zip； Compress Level（压缩等级）：这里不考虑时间因素，只考 …"
+    }
+  ]
+}

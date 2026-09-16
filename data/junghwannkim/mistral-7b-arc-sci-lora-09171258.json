@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "junghwannkim/mistral-7b-arc-sci-lora-09171258",
+  "slug": "junghwannkim-mistral-7b-arc-sci-lora-09171258",
+  "author": "junghwannkim",
+  "url": "https://huggingface.co/junghwannkim/mistral-7b-arc-sci-lora-09171258",
+  "created_at": "2026-09-16T16:10:54.000Z",
+  "updated_at": "2026-09-16T16:20:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7241732096,
+  "parameters_human": "7.24B",
+  "storage_bytes": 14483991171,
+  "storage_human": "14.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Einhell - Lama di ricambio originale per tosaerba elettrico ... - Amazon",
+      "url": "https://www.amazon.it/Einhell-ricambio-originale-elettrico-larghezza/dp/B0040YE6QG",
+      "snippet": "La lama di ricambio originale Einhell è un accessorio o ricambio adatto per tosaerba elettrici Einhell con una larghezza di taglio di 30 …"
+    },
+    {
+      "title": "Amazon.it: Einhell - Lame Per Tagliaerba / Parti Di Ricambio Per ...",
+      "url": "https://www.amazon.it/Lame-tagliaerba-Einhell-Parti-ricambio/s?rh=n%3A4695014031%2Cp_89%3AEinhell",
+      "snippet": "Lama di ricambio originale Einhell per tosaerba (accessorio e pezzo di ricambio, adatto per il tosaerba elettrico Einhell GC-EM …"
+    },
+    {
+      "title": "Einhell lame - ManoMano.it",
+      "url": "https://www.manomano.it/cat/einhell+lame",
+      "snippet": "IN STOCK: Einhell lame al miglior prezzo. Ampia scelta e consegna rapida in tutta Italia. Pagamento sicuro."
+    },
+    {
+      "title": "Einhell tagliaerba al miglior prezzo | Leroy Merlin",
+      "url": "https://www.leroymerlin.it/prodotti/giardino-e-terrazzo/macchine-da-giardino/tagliaerba-e-tosaerba/tagliaerba-a-batteria/einhell-tagliaerba-p.html?msockid=2ab503cf12406e6e1e04141913176f64",
+      "snippet": "einhell tagliaerba - Marchi, disponibilità e consegna rapida da Leroy Merlin. Una vasta selezione di prodotti ai migliori prezzi."
+    },
+    {
+      "title": "Einhell tagliaerba elettrico - ManoMano.it",
+      "url": "https://www.manomano.it/cat/einhell+tagliaerba+elettrico",
+      "snippet": "IN STOCK: Einhell tagliaerba elettrico al miglior prezzo. Ampia scelta e consegna rapida in tutta Italia. Pagamento sicuro."
+    }
+  ]
+}

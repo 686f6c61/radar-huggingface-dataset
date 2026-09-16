@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Yoshi1089/qwen2.5-0.5b-vlm-distilled",
+  "slug": "yoshi1089-qwen2-5-0-5b-vlm-distilled",
+  "author": "Yoshi1089",
+  "url": "https://huggingface.co/Yoshi1089/qwen2.5-0.5b-vlm-distilled",
+  "created_at": "2026-09-16T15:35:40.000Z",
+  "updated_at": "2026-09-16T15:35:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23086197,
+  "storage_human": "23 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "420/12 (BS ) - Worldwide equivalent grades - Steel Number",
+      "url": "https://www.steelnumber.com/en/equivalent_steel_iron_eu.php?zname_id=6950",
+      "snippet": "European equivalent grade for Spheroidal graphite cast iron 420/12 (BS ): EN-GJS-450-10 (5.3107) Chemical composition and …"
+    },
+    {
+      "title": "SG42 (ONORM, ON) - Worldwide equivalent grades - Steel Number",
+      "url": "https://www.steelnumber.com/en/equivalent_steel_iron_eu.php?zname_id=6955",
+      "snippet": "SG42 (ONORM, ON) - Worldwide equivalent grades The source standarts should always be checked for the specific purpose for …"
+    },
+    {
+      "title": "England (BS ) - Cast Iron Worldwide equivalent grades",
+      "url": "https://www.steelnumber.com/en/equivalent_steel_iron_country_eu.php?type_id=50&zcountry=24",
+      "snippet": "England (BS ) - Cast Iron Worldwide equivalent grades England (BS ): Cast Iron wordwide equivalent grades BS Cast Iron equivalent …"
+    },
+    {
+      "title": "65-45-12 ( AISI, ASTM, UNS) - Worldwide equivalent grades",
+      "url": "https://www.steelnumber.com/en/equivalent_steel_iron_eu.php?zname_id=6947",
+      "snippet": "Cross reference table for Cast iron 65-45-12 ( AISI, ASTM, UNS) and its European equivalent EN-GJS-450-10 (5.3107) ( EN )"
+    },
+    {
+      "title": "GGG40 (DIN, WNr ) - Worldwide equivalent grades - Steel Number",
+      "url": "https://www.steelnumber.com/en/equivalent_steel_iron_eu.php?zname_id=9898",
+      "snippet": "GGG40 (DIN, WNr ) - Worldwide equivalent grades Cross reference table for Cast iron GGG40 (DIN, WNr ) and its European …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Andrewwilsonjug/classification",
+  "slug": "andrewwilsonjug-classification",
+  "author": "Andrewwilsonjug",
+  "url": "https://huggingface.co/Andrewwilsonjug/classification",
+  "created_at": "2026-09-16T13:53:16.000Z",
+  "updated_at": "2026-09-16T13:53:21.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mixer",
+    "pytorch",
+    "classification",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Classification in Machine Learning Explained",
+      "url": "https://bigid.com/blog/ai-classification/",
+      "snippet": "I data classification, or AI classification, is the process of organizing data into predefined categories. The AI model is taught to recognize features and patterns in information, so it can identify them in any new data sets."
+    },
+    {
+      "title": "Overview of category classification model - AI Builder | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/ai-builder/text-classification-overview",
+      "snippet": "Describes category classification models. Gives an overview of how to build and use category classification models in AI Builder."
+    },
+    {
+      "title": "Machine Learning: Classification Models | by Kirill Fuchs | Fuzz | Medium",
+      "url": "https://medium.com/fuzz/machine-learning-classification-models-3040f71e2529",
+      "snippet": "Given one or more inputs a classification model will try to predict the value of one or more outcomes. Outcomes are labels that can be applied to a dataset. For example, when filtering emails “spam” or “not spam” (also known as “ham”, < seriously, look it up if you don’t believe me), when looking at transaction data, “fraudulent”, or “authorized” · There are two approaches to machine learning: supervised and unsupervised. In a supervised model, a training dataset is fed into the classification algorithm."
+    },
+    {
+      "title": "AI Classification Training Models: A Comprehensive Guide with Examples",
+      "url": "https://www.gigenet.com/blog/ai-classification-training-models-examples/",
+      "snippet": "This comprehensive guide explores the world of AI classification models, providing practical examples of how they’re implemented in different sectors, and offering insights on selecting the right model for your specific needs."
+    },
+    {
+      "title": "Image Classification Models: A Complete Technical Guide",
+      "url": "https://viso.ai/computer-vision/image-classification/",
+      "snippet": "How image classification models work, from feature extraction and CNNs to where classification fits inside agentic computer vision."
+    }
+  ]
+}

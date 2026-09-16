@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Yanun/Swift-Qwen3.8-27b-oQ4e-fp16-mtp",
+  "slug": "yanun-swift-qwen3-8-27b-oq4e-fp16-mtp",
+  "author": "Yanun",
+  "url": "https://huggingface.co/Yanun/Swift-Qwen3.8-27b-oQ4e-fp16-mtp",
+  "created_at": "2026-09-13T06:54:38.000Z",
+  "updated_at": "2026-09-13T07:19:46.000Z",
+  "license": "swift-open-license-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "omlx",
+    "quantized",
+    "mtp",
+    "image-text-to-text",
+    "conversational",
+    "base_model:ukisai/Swift-Qwen3.8-27b",
+    "base_model:quantized:ukisai/Swift-Qwen3.8-27b",
+    "license:other",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 10,
+  "downloads_30d": 663,
+  "trending_score": 10,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 17905969942,
+  "storage_human": "17.9 GB",
+  "base_model": "ukisai/Swift-Qwen3.8-27b",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yahoo Mail | Email with smart features and top-notch security",
+      "url": "https://de.mail.yahoo.com/",
+      "snippet": "Yahoo Mail: Your smarter, faster, free email solution. Organize your inbox, protect your privacy, and tackle tasks efficiently with AI …"
+    },
+    {
+      "title": "Done - Yahoo Mail",
+      "url": "https://de.mail.yahoo.com/d",
+      "snippet": "Es ist an der Zeit, Dinge mit Yahoo Mail zu erledigen. Fügen Sie einfach Ihren Gmail-, Outlook-, AOL- oder Yahoo Mail-Account …"
+    },
+    {
+      "title": "Communicate - Yahoo Mail",
+      "url": "https://de.mail.yahoo.com/overview/elevate-emails",
+      "snippet": "Compose and reply with ease: Streamline every email with smart composition features that help you write confidently, respond faster …"
+    },
+    {
+      "title": "Anmelden – Bei Yahoo anmelden - Yahoo Mail",
+      "url": "https://de.mail.yahoo.com/undefined/organize-smarter",
+      "snippet": "Melden Sie sich an und erhalten Sie Zugang zu den besten Yahoo Mail-Diensten sowie zu aktuellen Nachrichten aus Ihrer Region, …"
+    }
+  ]
+}

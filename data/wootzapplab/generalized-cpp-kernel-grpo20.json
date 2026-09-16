@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "WootzappLab/generalized-cpp-kernel-GRPO20",
+  "slug": "wootzapplab-generalized-cpp-kernel-grpo20",
+  "author": "WootzappLab",
+  "url": "https://huggingface.co/WootzappLab/generalized-cpp-kernel-GRPO20",
+  "created_at": "2026-09-16T18:12:36.000Z",
+  "updated_at": "2026-09-16T18:11:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "lora",
+    "grpo",
+    "code",
+    "cpp",
+    "base_model:zai-org/GLM-4.7-Flash",
+    "base_model:adapter:zai-org/GLM-4.7-Flash",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1943763076,
+  "storage_human": "1.9 GB",
+  "base_model": "zai-org/GLM-4.7-Flash",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ultimate Tip Menu Items Compilation! : r/CamGirlProblems - Reddit",
+      "url": "https://www.reddit.com/r/CamGirlProblems/comments/15961ek/ultimate_tip_menu_items_compilation/",
+      "snippet": "Jul 25, 2023 · I have been looking everywhere for a compiled list of menu items for my Chaturbate/Only Fans tip menus. My thinking …"
+    },
+    {
+      "title": "Cam Girl Problems - Reddit",
+      "url": "https://www.reddit.com/r/CamGirlProblems/",
+      "snippet": "I don't use the site to sell content or cam anymore, only to meet people then direct off the site, yet I still have a nice balance sat there. …"
+    },
+    {
+      "title": "Google Chat Help",
+      "url": "https://support.google.com/chat/?hl=en",
+      "snippet": "Official Google Chat Help Center where you can find tips and tutorials on using Google Chat and other answers to frequently asked …"
+    },
+    {
+      "title": "Astuce pour recoller une dent sur pivot - Doctissimo",
+      "url": "https://forum.doctissimo.fr/sante/dents/astuce-recoller-pivot-sujet_150885_1.htm",
+      "snippet": "Sep 18, 2005 · Bonsoir Si tu as une \"dent sur pivot\" qui se décolle tu peux très simplement après avoir retiré le ciment qui se trouve …"
+    },
+    {
+      "title": "Hernie intra-spongieuse? - Mal de dos, sciatique et lumbago - FORUM ...",
+      "url": "https://forum.doctissimo.fr/sante/douleur-dos/hernie-intra-spongieuse-sujet_112010_1.htm",
+      "snippet": "Sep 28, 2003 · Mell, je ne savais pas très bien la définition de la hernie intra-spongieuse et j'ai trouvé ceci: La hernie intra …"
+    }
+  ]
+}

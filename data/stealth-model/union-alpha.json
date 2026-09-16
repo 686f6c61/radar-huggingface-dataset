@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "stealth-model/union-alpha",
+  "slug": "stealth-model-union-alpha",
+  "author": "stealth-model",
+  "url": "https://huggingface.co/stealth-model/union-alpha",
+  "created_at": "2026-09-16T18:15:27.000Z",
+  "updated_at": "2026-09-16T18:21:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "text-generation",
+    "multimodal",
+    "coding",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 179775,
+  "storage_human": "179775 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Traduction STEALTH en français | Dictionnaire anglais-français | Reverso",
+      "url": "https://dictionnaire.reverso.net/anglais-francais/stealth",
+      "snippet": "Traduction de \"stealth\" en français : furtivité, silence, invisibilité. Nom, signification, prononciation, expressions idiomatiques en …"
+    },
+    {
+      "title": "Stealth Products - Pride Mobility France",
+      "url": "https://www.pridemobility.fr/marque/stealth/",
+      "snippet": "Stealth Products Maintien membres inférieurs PAP Stealth Products Harnais et ceinture Stealth Products Spectrum Gel"
+    },
+    {
+      "title": "STEALTH-GAMER - Gaming Expert - Spécialiste accessoires consoles …",
+      "url": "https://www.stealth-gamer.com/",
+      "snippet": "Stealth Gamer est LE spécialiste français des accessoires pour consoles et PC. Vous y trouverez tout ce qu'il vous faut : les …"
+    },
+    {
+      "title": "Spécialiste accessoires consoles et PC - STEALTH-GAMER",
+      "url": "https://www.stealth-gamer.com/fr/",
+      "snippet": "Stealth Gamer est LE spécialiste français des accessoires pour consoles et PC. Vous y trouverez tout ce qu'il vous faut : les …"
+    },
+    {
+      "title": "stealth - English-French Dictionary WordReference.com",
+      "url": "https://www.wordreference.com/enfr/stealth",
+      "snippet": "stealth - traduction anglais-français. Forums pour discuter de stealth, voir ses formes composées, des exemples et poser vos …"
+    }
+  ]
+}

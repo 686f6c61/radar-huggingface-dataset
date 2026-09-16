@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "mradermacher/PhAI-IDE-9B-GGUF",
+  "slug": "mradermacher-phai-ide-9b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/PhAI-IDE-9B-GGUF",
+  "created_at": "2026-09-16T14:46:12.000Z",
+  "updated_at": "2026-09-16T15:20:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "phai-ide",
+    "science",
+    "code",
+    "tool-use",
+    "sft",
+    "lora",
+    "safetensors",
+    "en",
+    "base_model:AItonomy/PhAI-IDE-9B",
+    "base_model:adapter:AItonomy/PhAI-IDE-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 82967486336,
+  "storage_human": "83.0 GB",
+  "base_model": "AItonomy/PhAI-IDE-9B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Options de configuration des pièces jointes | Assistance de Thunderbird",
+      "url": "https://support.mozilla.org/fr/kb/options-de-configuration-des-pi%c3%a8ces-jointes",
+      "snippet": "Apr 30, 2024 · Sur cette page sont décrites les options de configuration des pièces jointes de Thunderbird."
+    },
+    {
+      "title": "joindre un ficihier texte (word, openwriter, avec thunderbird",
+      "url": "https://www.developpez.net/forums/d2119751/logiciels/autres-logiciels/internet/thunderbird/joindre-ficihier-texte-word-openwriter-thunderbird/",
+      "snippet": "Oct 19, 2021 · Voici les différentes méthodes pour joindre des fichiers et des dossiers complets dans un message avec le logiciel de …"
+    },
+    {
+      "title": "Comment utiliser les pièces jointes | Assistance de Thunderbird",
+      "url": "https://support.mozilla.org/fr/kb/comment-utiliser-pieces-jointes",
+      "snippet": "Jul 1, 2016 · Rédigez un nouveau message. Cliquez sur Joindre. Accédez à l'emplacement du fichier que vous souhaitez joindre. …"
+    },
+    {
+      "title": "Comment envoyer un document par mail - Informaticien à domicile",
+      "url": "https://www.informaticienadomicile.com/blog/astuces-conseils-internet/comment-envoyer-un-document-par-mail/",
+      "snippet": "Vous souhaitez envoyer un document par mail, mais vous ne savez pas comment ? Pas de panique, on vous explique tout étape par …"
+    },
+    {
+      "title": "Comment envoyer un document par mail : guide complet et astuces …",
+      "url": "https://www.le-nombre.fr/comment-envoyer-un-document-par-mail-efficacement/",
+      "snippet": "May 12, 2026 · Découvrez comment envoyer un document par mail efficacement avec nos conseils pour optimiser vos envois, éviter …"
+    }
+  ]
+}

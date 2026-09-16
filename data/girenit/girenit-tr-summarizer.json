@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "girenit/girenit-TR-Summarizer",
+  "slug": "girenit-girenit-tr-summarizer",
+  "author": "girenit",
+  "url": "https://huggingface.co/girenit/girenit-TR-Summarizer",
+  "created_at": "2026-09-16T15:24:40.000Z",
+  "updated_at": "2026-09-16T15:25:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "summarization",
+  "library": null,
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "safetensors",
+    "mt5",
+    "turkish",
+    "summarization",
+    "news",
+    "girenit",
+    "tr",
+    "dataset:batubayk/TR-News",
+    "base_model:google/mt5-small",
+    "base_model:finetune:google/mt5-small",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 300176768,
+  "parameters_human": "300.2M",
+  "storage_bytes": 1221389176,
+  "storage_human": "1.2 GB",
+  "base_model": "google/mt5-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Druckerwarteschlange in Windows anzeigen | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/windows/hardware/printer/view-a-printer-s-print-queue-in-windows",
+      "snippet": "Wählen Sie im Fenster Drucker & Scanner den Drucker aus, dessen Druckwarteschlange angezeigt werden muss, und wählen Sie …"
+    },
+    {
+      "title": "Herunterladen und Installieren der neuesten Druckertreiber",
+      "url": "https://support.microsoft.com/de-de/windows/hardware/printer/download-and-install-the-latest-printer-drivers",
+      "snippet": "Erfahren Sie, wie Sie den neuesten Treiber für Ihren Drucker installieren. Wenn Sie kürzlich ein Windows-Upgrade durchgeführt …"
+    },
+    {
+      "title": "Hinzufügen oder Installieren eines Druckers in Windows",
+      "url": "https://support.microsoft.com/de-de/windows/hardware/printer/add-or-install-a-printer-in-windows",
+      "snippet": "Installieren eines kabelgebundenen oder lokalen Druckers In den meisten Fällen werden lokale oder kabelgebundene Drucker …"
+    },
+    {
+      "title": "Druckaufträge, die in der Warteschlange hängen, in Windows beheben",
+      "url": "https://support.microsoft.com/de-de/windows/hardware/printer/fix-print-job-stuck-in-queue-errors-in-windows",
+      "snippet": "Windows 11 Windows 10 Wenn die Dokumente in der Druckwarteschlange hängen bleiben und nicht gedruckt werden oder die neuen …"
+    },
+    {
+      "title": "Beheben Sie Druckerverbindungs- und Druckprobleme in Windows",
+      "url": "https://support.microsoft.com/de-de/windows/hardware/printer/fix-printer-connection-and-printing-problems-in-windows",
+      "snippet": "Windows 11 Windows 10 Drucker sind in vielen Wohnungen und an vielen Arbeitsplätzen unverzichtbar, aber bei der Verwendung mit …"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Lucid-Shadow-31B-i1-GGUF",
+  "slug": "mradermacher-lucid-shadow-31b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Lucid-Shadow-31B-i1-GGUF",
+  "created_at": "2026-09-16T14:57:04.000Z",
+  "updated_at": "2026-09-16T16:21:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "roleplay",
+    "storytelling",
+    "en",
+    "base_model:Cyclone-Labs/Lucid-Shadow-31B",
+    "base_model:quantized:Cyclone-Labs/Lucid-Shadow-31B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30697345596,
+  "parameters_human": "30.70B",
+  "storage_bytes": 241790815456,
+  "storage_human": "241.8 GB",
+  "base_model": "Cyclone-Labs/Lucid-Shadow-31B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Poller & Absperrpfosten kaufen | Alle Varianten &…",
+      "url": "https://poller24.de/Poller/",
+      "snippet": "Sie hätten gerne eine andere Farbe für Ihren Poller? Kein Problem - wählen Sie gern aus unserer RAL-Farbpalette. Für …"
+    },
+    {
+      "title": "Poller & Pfosten jetzt beim Profi kaufen | ZIEGLER",
+      "url": "https://www.ziegler-metall.de/c/verkehrstechnik/poller-pfosten",
+      "snippet": "Herausnehmbare Poller sind einfach zu handhaben und bieten dennoch einen hohen Schutz. Sie sind in verschiedenen Materialien …"
+    },
+    {
+      "title": "Poller kaufen | Absperrpfosten nach Maß | Parkplatzsperren…",
+      "url": "https://poller24.de/",
+      "snippet": "Wir bieten Ihnen ein breites Poller-Sortiment mit unterschiedlichen Modellen, Größen und Bauweisen. Damit stellen wir sicher, dass …"
+    },
+    {
+      "title": "Absperrpfosten klappbar oder herausnehmbar jetzt kaufen - ZIEGLER",
+      "url": "https://www.ziegler-metall.de/c/verkehrstechnik/poller-pfosten/absperrpfosten",
+      "snippet": "Bei ZIEGLER finden Sie Absperrpoller für unterschiedliche Anforderungen – von dauerhaft montierten Sperrpfosten bis zu Varianten, …"
+    },
+    {
+      "title": "Poller & Absperrpfosten – optional klappbar | kaiserkraft",
+      "url": "https://www.kaiserkraft.de/absperrung-und-markierung/poller-absperrpfosten/c/1285081-KK/?msockid=1c0e5235d23f6ed30c7545e3d3026f69",
+      "snippet": "Poller und Absperrpfosten sind in verschiedenen Ausführungen erhältlich, beispielsweise in Warnfarben oder auch in edlen …"
+    }
+  ]
+}

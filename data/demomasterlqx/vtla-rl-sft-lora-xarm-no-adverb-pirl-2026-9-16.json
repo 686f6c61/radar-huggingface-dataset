@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Demomasterlqx/VTLA-RL-sft-lora-xarm-no-adverb-pirl-2026-9-16",
+  "slug": "demomasterlqx-vtla-rl-sft-lora-xarm-no-adverb-pirl-2026-9-16",
+  "author": "Demomasterlqx",
+  "url": "https://huggingface.co/Demomasterlqx/VTLA-RL-sft-lora-xarm-no-adverb-pirl-2026-9-16",
+  "created_at": "2026-09-16T14:08:32.000Z",
+  "updated_at": "2026-09-16T14:10:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "reinforcement-learning",
+    "lora",
+    "robotics",
+    "base_model:Demomasterlqx/VTLA-RL-sft-lora-xarm-no-adverb",
+    "base_model:adapter:Demomasterlqx/VTLA-RL-sft-lora-xarm-no-adverb",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Demomasterlqx/VTLA-RL-sft-lora-xarm-no-adverb",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "iPhone 17 Pro还是iPhone 17 Promax？ - 知乎",
+      "url": "https://www.zhihu.com/question/1943601805926827635",
+      "snippet": "iPhone 17下个月要发售了，是买iPhone 17 Pro还是iPhone 17 Promax好，现在用的iPhone 13 pro，习惯了pro…"
+    },
+    {
+      "title": "苹果17和苹果16 pro max，哪个更值得买? - 知乎",
+      "url": "https://www.zhihu.com/question/1950011345090122743",
+      "snippet": "手机拍照方面，iPhone 16Pro胜，毕竟有三个摄像头，不管是拍照，还是拍视频，都是iPhone 16Pro更强。 16 Pro是钛金属边框，17 …"
+    },
+    {
+      "title": "如何看待iPhone 12 Pro Max？ - 知乎",
+      "url": "https://www.zhihu.com/question/426163129",
+      "snippet": "对iPhone 12 Pro Max，可以说是期待了有一段时间了。在拿到机子之前，一直在期待它的影像系统方面的表现。于是，在拿到机子之 …"
+    },
+    {
+      "title": "苹果的资源机能不能买？ - 知乎",
+      "url": "https://www.zhihu.com/question/466885884",
+      "snippet": "查询方法 先找到需要确认的 iPhone 序列号 在【果粉鉴定服务号】菜单中选择“过保激活日期查询” 将要查询的序列号发送即可查询 查 …"
+    },
+    {
+      "title": "iPhone 12 Pro Max 和iPhone 13 Pro Max如何选择? - 知乎",
+      "url": "https://www.zhihu.com/question/487940321",
+      "snippet": "四、拍照对比 iPhone的Pro系列都是三摄，且有超广角可以拍全景，也有长焦可以拍特写、拍人像可玩性高很多 这俩机型摄像方面最 …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "lfrodriguesza/multitask-best13-2023",
+  "slug": "lfrodriguesza-multitask-best13-2023",
+  "author": "lfrodriguesza",
+  "url": "https://huggingface.co/lfrodriguesza/multitask-best13-2023",
+  "created_at": "2026-09-16T13:01:32.000Z",
+  "updated_at": "2026-09-16T13:01:38.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "efficientformer",
+    "pytorch",
+    "multitask",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Category manager - Fiche métier | Apec",
+      "url": "https://www.apec.fr/tous-nos-metiers/commercial-marketing/category-manager.html",
+      "snippet": "En amont, le category manager marché analyse les catégories, détermine les axes de leur développement et le rôle de la marque …"
+    },
+    {
+      "title": "Category Manager - Fiche métier, salaire et débouchés",
+      "url": "https://www.emlv.fr/entreprises-debouches/les-metiers/achats-supply-chain-et-operations/category-manager/",
+      "snippet": "Le category manager est responsable de la performance d’une catégorie. Cette catégorie peut correspondre à une famille de …"
+    },
+    {
+      "title": "Category Manager : Rôle dans les Achats",
+      "url": "https://www.walflow.com/blog/category-manager/",
+      "snippet": "Jun 12, 2025 · Le Category Manager occupe un rôle clé dans l’organisation Achats, consistant à piloter et optimiser une catégorie …"
+    },
+    {
+      "title": "Category manager : Salaire, Définition, Métier - Jobmarketingvente",
+      "url": "https://www.jobmarketingvente.com/fiche-metier/transversal-marketing-vente/category-manager.html",
+      "snippet": "Le rôle du category manager est au cœur de la stratégie commerciale et exerce une influence significative sur la commercialisation, …"
+    },
+    {
+      "title": "Category Manager Achats : les missions, salaire et formation",
+      "url": "https://www.meilleurs-masters.com/article-devenir-category-manager-achats.html",
+      "snippet": "Le Category Manager Achats doit combiner des compétences en stratégie d’achat, analyse de données, et négociation commerciale. …"
+    }
+  ]
+}

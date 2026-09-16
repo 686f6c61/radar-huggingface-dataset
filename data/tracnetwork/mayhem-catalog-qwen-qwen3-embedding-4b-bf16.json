@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "TracNetwork/mayhem-catalog-Qwen-Qwen3-Embedding-4B-BF16",
+  "slug": "tracnetwork-mayhem-catalog-qwen-qwen3-embedding-4b-bf16",
+  "author": "TracNetwork",
+  "url": "https://huggingface.co/TracNetwork/mayhem-catalog-Qwen-Qwen3-Embedding-4B-BF16",
+  "created_at": "2026-09-16T15:39:13.000Z",
+  "updated_at": "2026-09-16T15:39:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "transformers",
+    "sentence-similarity",
+    "feature-extraction",
+    "text-embeddings-inference",
+    "arxiv:2506.05176",
+    "base_model:Qwen/Qwen3-4B-Base",
+    "base_model:finetune:Qwen/Qwen3-4B-Base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4021774336,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8055015035,
+  "storage_human": "8.1 GB",
+  "base_model": "Qwen/Qwen3-4B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Neue Option für Kunden: Gastbestellung - booklookerforum.de",
+      "url": "https://www.booklookerforum.de/viewtopic.php?t=29859",
+      "snippet": "Sep 20, 2005 · von booklooker.de » Do 23. Jun 2022 10:49 Hallo, auf Grund neuer gesetzlicher Bestimmungen haben wir die Option …"
+    },
+    {
+      "title": "Neues von booklooker.de - booklookerforum.de",
+      "url": "https://www.booklookerforum.de/viewforum.php?f=26",
+      "snippet": "May 20, 2026 · Neues von der Post: Warensendung bis 500g entfällt zum 1. Oktober 2024 von booklooker.de » Di 24. Sep 2024 10:01"
+    },
+    {
+      "title": "Da muß ich halt hier mal fragen: Wer hat Erfahrung bei Booklooker.de ...",
+      "url": "https://www.chefkoch.de/forum/2,22,83009/Da-muss-ich-halt-hier-mal-fragen-Wer-hat-Erfahrung-bei-Booklooker-de-gemacht.html",
+      "snippet": "Dec 2, 2004 · Hallo, habe schon in einem anderen Forum gepostet, da kommt aber keine Antwort, also frage ich hier mal: Hat …"
+    },
+    {
+      "title": "Biskuitrolle mit Erdbeerfüllung – Grundrezept - Chefkoch",
+      "url": "https://www.chefkoch.de/rezepte/2007671325498717/Biskuitrolle-mit-Erdbeerfuellung.html",
+      "snippet": "Biskuitrolle mit Erdbeerfüllung - Ein luftiger Traum aus lockerem Biskuit und fruchtiger Erdbeercreme – sommerlicher Kuchen-Genuss …"
+    },
+    {
+      "title": "Offene Rechnung - was bedeutet das genau? - booklookerforum.de",
+      "url": "https://www.booklookerforum.de/viewtopic.php?t=6125",
+      "snippet": "Sep 22, 2005 · Moin, will gerade ein Buch bestellen, der VK hat \"Offene Rechnung\" als Zahlungsart angegeben. Was heisst das …"
+    }
+  ]
+}

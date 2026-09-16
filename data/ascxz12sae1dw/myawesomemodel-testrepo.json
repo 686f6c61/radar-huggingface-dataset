@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ASCXZ12SAE1DW/MyAwesomeModel-TestRepo",
+  "slug": "ascxz12sae1dw-myawesomemodel-testrepo",
+  "author": "ASCXZ12SAE1DW",
+  "url": "https://huggingface.co/ASCXZ12SAE1DW/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-16T18:03:43.000Z",
+  "updated_at": "2026-09-16T18:03:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Docs",
+      "url": "https://docs.google.com/",
+      "snippet": "Create and edit web-based documents, spreadsheets, and presentations. Store documents online and access them from any computer."
+    },
+    {
+      "title": "Google Tài liệu: Đăng nhập",
+      "url": "https://docs.google.com/document/u/0/?hl=vi",
+      "snippet": "Truy cập Google Tài liệu bằng Tài khoản Google cá nhân hoặc tài khoản Google Workspace (dành cho công việc)."
+    },
+    {
+      "title": "Google Slides: Sign-in",
+      "url": "https://docs.google.com/presentation/u/0/?ec=asw-slides-hero-goto",
+      "snippet": "Access Google Slides with a personal Google account or Google Workspace account (for business use)."
+    },
+    {
+      "title": "Google Formulários: login",
+      "url": "https://docs.google.com/forms/u/0/?hl=pt-br",
+      "snippet": "Acesse o Google Formulários com uma Conta do Google pessoal ou uma conta do Google Workspace, para uso comercial."
+    },
+    {
+      "title": "Google Docs: Sign-in",
+      "url": "https://docs.google.com/document/u/1/create",
+      "snippet": "Access Google Docs with a personal Google account or Google Workspace account (for business use)."
+    }
+  ]
+}

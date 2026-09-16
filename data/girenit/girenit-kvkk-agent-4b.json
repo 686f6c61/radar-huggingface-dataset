@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "girenit/girenit-KVKK-Agent-4B",
+  "slug": "girenit-girenit-kvkk-agent-4b",
+  "author": "girenit",
+  "url": "https://huggingface.co/girenit/girenit-KVKK-Agent-4B",
+  "created_at": "2026-09-16T15:26:54.000Z",
+  "updated_at": "2026-09-16T15:26:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "tr",
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "kvkk",
+    "privacyops",
+    "legal-ai",
+    "turkish",
+    "qlora",
+    "girenit",
+    "text-generation",
+    "conversational",
+    "tr",
+    "en",
+    "dataset:girenit/girenit-KVKK-Bench",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:adapter:Qwen/Qwen3-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 143616546,
+  "storage_human": "144 MB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wetter Eidenberg - aktuelle Wettervorhersage von WetterOnline",
+      "url": "https://www.wetteronline.at/wetter/eidenberg",
+      "snippet": "Das Wetter in Eidenberg - Wettervorhersage für heute, morgen und die kommenden Tage mit Wetterbericht und Regenradar von …"
+    },
+    {
+      "title": "Wetter Eidenberg 16 Tage Trend",
+      "url": "https://at.wetter.com/wetter_aktuell/wettervorhersage/16_tagesvorhersage/oesterreich/eidenberg/ATAT30185005.html",
+      "snippet": "Der 16 Tage Wetter Trend für 4201 Eidenberg. Temperatur, Wetterzustand, Sonnenstunden und Regenwahrscheinlichkeit in der 16 …"
+    },
+    {
+      "title": "Wetter Eidenberg heute - aktuelle Wettervorhersage für Eidenberg ...",
+      "url": "https://at.wetter.com/oesterreich/eidenberg/ATAT30185005.html",
+      "snippet": "16 hours ago · Wie wird das Wetter heute in Eidenberg? Temperatur-, Wind- und Regenvorhersage, sowie aktuelle Wetterwarnungen …"
+    },
+    {
+      "title": "Wetter Eidenberg - bergfex",
+      "url": "https://www.bergfex.at/sommer/eidenberg/wetter/",
+      "snippet": "Das Wetter für heute, morgen und die nächsten 9 Tage in Eidenberg, Oberösterreich, Österreich, 685 m: Regen, Wettervorhersage, …"
+    },
+    {
+      "title": "Wetter in Eidenberg - wetter.at",
+      "url": "https://www.wetter.at/wetter/oesterreich/oberoesterreich/eidenberg",
+      "snippet": "Wetter Eidenberg - Oberösterreich - Österreich - Die aktuelle Wetter Prognose für Eidenberg auf wetter.at - Alle Vorhersagen schnell …"
+    }
+  ]
+}

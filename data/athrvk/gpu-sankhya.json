@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "athrvk/gpu-sankhya",
+  "slug": "athrvk-gpu-sankhya",
+  "author": "athrvk",
+  "url": "https://huggingface.co/athrvk/gpu-sankhya",
+  "created_at": "2026-09-16T18:34:12.000Z",
+  "updated_at": "2026-09-16T18:34:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "custom",
+  "languages": [
+    "hi"
+  ],
+  "tags": [
+    "custom",
+    "onnx",
+    "token-classification",
+    "char-cnn",
+    "hinglish",
+    "devanagari",
+    "indian-numbering",
+    "webgpu",
+    "hi",
+    "dataset:athrvk/gpu-sankhya-gold",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 329206,
+  "storage_human": "329206 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Zumba Mania - Kostenlos online spielen | SpielAffe",
+      "url": "https://www.spielaffe.de/Spiel/Zumba-Mania",
+      "snippet": "Spiele Zumba Mania kostenlos online auf SpielAffe. Entdecke die Kategorie Match 3 Spiele: 3 Gewinnt Spiele und starte sofort auf …"
+    },
+    {
+      "title": "Zumba Mania kostenlos online spielen • ohne Anmeldung ️",
+      "url": "https://www.spiele-kostenlos-online.de/puzzlespiele/zuma-spiele/zumba-mania/",
+      "snippet": "Zumba Mania ist ein schickes Bubble Shooterspiel. Spiele mit deiner Maus oder deinen Fingern und versuche, die Ballschlange zu …"
+    },
+    {
+      "title": "Zumba Mania - online kostenlos spielen",
+      "url": "https://www.spieleaffe.org/spiel/zumba-mania.html",
+      "snippet": "Zumba Mania ist ein colles Spiel von Spiel affe Spiele. Übeimm in Zumba Mania die Kontrolle über einen Frosch und übe dein Ziel, …"
+    },
+    {
+      "title": "Zuma-Spiele | SpielAffe",
+      "url": "https://www.spielaffe.de/Zuma-Spiele",
+      "snippet": "Schieß alle bunten Ballketten ab und spiele die besten Zuma-Spiele kostenlos online!"
+    },
+    {
+      "title": "Zumba Mania kostenlos spielen bei RTLspiele.de",
+      "url": "https://spiele.rtl.de/bubble-shooter/zumba-mania.html",
+      "snippet": "Zumba Mania ist ein Bubble Shooter, bei dem du dich mit einem Frosch verbündest, um Ballschlangen möglichst schnell zu …"
+    }
+  ]
+}

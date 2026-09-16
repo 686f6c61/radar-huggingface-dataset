@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Travor278/pi05-pick-dual-bottles-concurrent-data20260916-lora-10k-e191",
+  "slug": "travor278-pi05-pick-dual-bottles-concurrent-data20260916-lora-10k-e191",
+  "author": "Travor278",
+  "url": "https://huggingface.co/Travor278/pi05-pick-dual-bottles-concurrent-data20260916-lora-10k-e191",
+  "created_at": "2026-09-16T16:36:33.000Z",
+  "updated_at": "2026-09-16T16:38:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "robotics",
+    "pi05",
+    "jax",
+    "lora",
+    "simulation",
+    "dataset:Shiki42/ctr-pick-dual-bottles-concurrent-20260916",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6335566720,
+  "storage_human": "6.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Speed Test by MyBroadband",
+      "url": "https://speedtest.mybroadband.co.za/",
+      "snippet": "Test your Internet connection quickly and accurately. Lightweight, easy-to-use, reliable and completely free."
+    },
+    {
+      "title": "New South African Internet speed test website launched",
+      "url": "https://mybroadband.co.za/news/broadband/290988-new-south-african-internet-speed-test-website-launched.html",
+      "snippet": "Sep 1, 2019 · A new South African speed test platform – hosted at Speedtest.co.za – has been launched to give local Internet users …"
+    },
+    {
+      "title": "MyBroadband Insights",
+      "url": "https://research.mybroadband.co.za/",
+      "snippet": "Speed Test App The MyBroadband Speed Test app is your go-to tool for testing internet performance with precision and ease. …"
+    },
+    {
+      "title": "How to check your Internet speeds in South Africa - MyBroadband",
+      "url": "https://mybroadband.co.za/news/industrynews/514007-how-to-check-your-internet-speeds-in-south-africa.html",
+      "snippet": "Aug 11, 2023 · Local Internet package prices have decreased significantly in recent years, resulting in more South Africans being able …"
+    },
+    {
+      "title": "MyBroadband - Company Press Releases",
+      "url": "https://companies.mybroadband.co.za/",
+      "snippet": "Company Press Releases – Most Networks Ask You to Trust Their Performance. Network Platforms Lets You Verify It."
+    }
+  ]
+}

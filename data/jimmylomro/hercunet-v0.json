@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "jimmylomro/hercunet-v0",
+  "slug": "jimmylomro-hercunet-v0",
+  "author": "jimmylomro",
+  "url": "https://huggingface.co/jimmylomro/hercunet-v0",
+  "created_at": "2026-09-16T14:40:38.000Z",
+  "updated_at": "2026-09-16T14:41:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "vesuvius",
+    "herculaneum",
+    "surface-detection",
+    "segmentation",
+    "papyrus",
+    "nnunet",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1639931340,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MDR TV Programm heute",
+      "url": "https://www.mdr.de/tv/programm",
+      "snippet": "16 hours ago · Das aktuelle TV-Programm vom MDR Fernsehen von heute und für die kommenden Tage im Überblick."
+    },
+    {
+      "title": "Untertitel, Gebärdensprache, Audiodeskription, Leichte Sprache ...",
+      "url": "https://www.mdr.de/barrierefreiheit",
+      "snippet": "So können Sie das MDR-Programm barrierefrei nutzen Auf dieser Seite stellen wir Ihnen die barrierefreien Angebote des MDR …"
+    },
+    {
+      "title": "MDR-Fernsehen Programm | mdr.de",
+      "url": "https://www.mdr.de/tv",
+      "snippet": "Hier finden Sie Informationen über das Programm im MDR-Fernsehen und finden Tipps aus der Redaktion."
+    },
+    {
+      "title": "Was läuft wann bei MDR KLASSIK? | mdr.de",
+      "url": "https://www.mdr.de/mdr-klassik-radio/programm",
+      "snippet": "Was läuft wann? An welchem Tag können Sie Ihre Lieblingssendung hören? Das ganze Programm von MDR KLASSIK, Ihrer …"
+    },
+    {
+      "title": "MDR-Veranstaltungen und ihre Termine | mdr.de",
+      "url": "https://www.mdr.de/veranstaltungen",
+      "snippet": "Bei zahlreichen MDR-Veranstaltungen können Sie dabei sein und Fernsehen, Radio und Klangkörper live erleben. Hier erfahren Sie …"
+    }
+  ]
+}

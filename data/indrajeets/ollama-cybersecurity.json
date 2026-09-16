@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Indrajeets/Ollama-cybersecurity",
+  "slug": "indrajeets-ollama-cybersecurity",
+  "author": "Indrajeets",
+  "url": "https://huggingface.co/Indrajeets/Ollama-cybersecurity",
+  "created_at": "2026-09-16T10:59:07.000Z",
+  "updated_at": "2026-09-16T11:01:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "base_model:dealignai/GLM-5.3-CYBERSECURITY-FP8",
+    "base_model:finetune:dealignai/GLM-5.3-CYBERSECURITY-FP8",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "dealignai/GLM-5.3-CYBERSECURITY-FP8",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pronunciation: Final S - ESL Flashcards",
+      "url": "https://www.eslflashcards.com/set/pronunciation-final-s/",
+      "snippet": "To help prevent this from happening to you, this flashcard set collects 33 picture cards plus the letter cards needed to group the …"
+    },
+    {
+      "title": "FINAL-S PRONUNCIATION - Linguahouse",
+      "url": "https://www.linguahouse.com/en-GB/esl-lesson-plans/general-english/finals-pronunciation/worksheet/intermediate/british-english/3/0/final-s-pronunciation.pdf",
+      "snippet": "Answers: s column: bracelets, cliffs, cloths, cracks, elephants, goats, graphs. z column: breathes, cherries, cures, The Netherlands, …"
+    },
+    {
+      "title": "Final S Pronunciation British English Teacher Ver2 - Scribd",
+      "url": "https://www.scribd.com/document/669504111/final-s-pronunciation-british-english-teacher-ver2",
+      "snippet": "The document provides a lesson on pronouncing words ending in -s in English. It discusses the different pronunciations of final -s as …"
+    },
+    {
+      "title": "Final 'S' Pronunciation Exercises | PDF | Human Voice | Phonetics",
+      "url": "https://www.scribd.com/document/678098027/pronunciation-of-final-s-flashcards-games",
+      "snippet": "Final 'S' Pronunciation Exercises. The document provides pronunciation practice exercises for words ending in final 's'. It explains that …"
+    },
+    {
+      "title": "Pronounciation … | Free Interactive Worksheets | 1878951",
+      "url": "https://www.liveworksheets.com/worksheet/en/english-language/1878951",
+      "snippet": "Practice at home worksheet LiveWorksheets."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "rasheeddo/policy_act_marker_cup",
+  "slug": "rasheeddo-policy_act_marker_cup",
+  "author": "rasheeddo",
+  "url": "https://huggingface.co/rasheeddo/policy_act_marker_cup",
+  "created_at": "2026-09-16T15:18:28.000Z",
+  "updated_at": "2026-09-16T15:19:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:rasheeddo/marker_cup_20260916_205331",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714880,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Temu | Explore the Latest Clothing, Beauty, Home, Jewelry & More",
+      "url": "https://www.temu.com/",
+      "snippet": "Make Temu your one-stop destination for the latest fashion products, cosmetics & more. Free shipping on items shipped from Temu. …"
+    },
+    {
+      "title": "Explore the Latest Clothing, Beauty, Home, Jewelry & More - Temu",
+      "url": "https://www.temu.com/it",
+      "snippet": "Make Temu your one-stop destination for the latest fashion products, cosmetics & more. Free shipping on items shipped from Temu. …"
+    },
+    {
+      "title": "Temu Seller Center",
+      "url": "https://seller-eu.temu.com/",
+      "snippet": "Create a Temu Seller Center account and enjoy selling, management, and marketing services at a low cost. Our experienced team is …"
+    },
+    {
+      "title": "TEMU Partner Platform",
+      "url": "https://partner.temu.com/",
+      "snippet": "What is the Partner Platform Partner Platform: A platform for partner development and app management that provides Temu sellers …"
+    },
+    {
+      "title": "Temu United Kingdom | Explore the Latest Clothing, Beauty, Home ...",
+      "url": "https://www.temu.com/uk",
+      "snippet": "Make Temu your one-stop destination for the latest fashion products, cosmetics & more. Free shipping on items shipped from Temu. …"
+    }
+  ]
+}

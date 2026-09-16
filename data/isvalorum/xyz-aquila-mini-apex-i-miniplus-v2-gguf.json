@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "IsValorum/XYZ-Aquila-mini-APEX-I-MiniPlus-V2-GGUF",
+  "slug": "isvalorum-xyz-aquila-mini-apex-i-miniplus-v2-gguf",
+  "author": "IsValorum",
+  "url": "https://huggingface.co/IsValorum/XYZ-Aquila-mini-APEX-I-MiniPlus-V2-GGUF",
+  "created_at": "2026-09-16T17:36:07.000Z",
+  "updated_at": "2026-09-16T17:36:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "vision",
+    "multimodal",
+    "image-text-to-text",
+    "agentic-search",
+    "search-agent",
+    "moe",
+    "gguf",
+    "apex",
+    "qwen3_5_moe",
+    "qwen3.6",
+    "en",
+    "zh",
+    "base_model:XYZAILab/XYZ-Aquila-mini",
+    "base_model:finetune:XYZAILab/XYZ-Aquila-mini",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "XYZAILab/XYZ-Aquila-mini",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Traduction",
+      "url": "https://translate.google.com/?hl=fr",
+      "snippet": "Le service sans frais de Google traduit instantanément des mots, des expressions et des pages Web entre le français et plus de 100 …"
+    },
+    {
+      "title": "Google Traduction : un interprète personnel sur votre téléphone ou ...",
+      "url": "https://translate.google.com/intl/fr/about/",
+      "snippet": "Découvrez comment traduire du texte, des conversations, des images, des documents, des sites Web et bien plus avec Google …"
+    },
+    {
+      "title": "Google Traduction : un interprète personnel sur votre téléphone ou ...",
+      "url": "https://translate.google.com/intl/fr-CA/about/",
+      "snippet": "Comprenez votre monde et communiquez dans plusieurs langues avec Google Traduction. Traduisez des textes, des discours, des …"
+    }
+  ]
+}

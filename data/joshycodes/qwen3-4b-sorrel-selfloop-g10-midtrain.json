@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "joshycodes/qwen3-4b-sorrel-selfloop-g10-midtrain",
+  "slug": "joshycodes-qwen3-4b-sorrel-selfloop-g10-midtrain",
+  "author": "joshycodes",
+  "url": "https://huggingface.co/joshycodes/qwen3-4b-sorrel-selfloop-g10-midtrain",
+  "created_at": "2026-09-16T13:00:59.000Z",
+  "updated_at": "2026-09-16T13:10:24.000Z",
+  "license": "internal-research",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "flourishing-training",
+    "continued-pretraining",
+    "dataset:joshycodes/sorrel-selfloop-corpus",
+    "base_model:joshycodes/qwen3-4b-sorrel-selfloop-g9-midtrain",
+    "base_model:finetune:joshycodes/qwen3-4b-sorrel-selfloop-g9-midtrain",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 24146374229,
+  "storage_human": "24.1 GB",
+  "base_model": "joshycodes/qwen3-4b-sorrel-selfloop-g9-midtrain",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook verrouillé et code reçu par whatsapp - Facebook",
+      "url": "https://forums.commentcamarche.net/forum/affich-38130243-facebook-verrouille-et-code-recu-par-whatsapp",
+      "snippet": "Dec 5, 2024 · Mon compte Facebook est bloqué car on me demande un code par Whatsapp (que je n'utilise pas) ou deux pièces …"
+    },
+    {
+      "title": "Descargar YouTube: PC / Mac / Android (APK)",
+      "url": "https://es.ccm.net/descargas/entretenimiento/6598-youtube/",
+      "snippet": "Feb 12, 2024 · YouTube se puede conectar a Facebook, Twitter, Talk, Reddit, Pinterest, Tumblr, LinkedIn y más. Asimismo, …"
+    },
+    {
+      "title": "Descargar Snaptube: PC, Android (APK) - CCM",
+      "url": "https://es.ccm.net/descargas/internet/6550-snaptube/",
+      "snippet": "Feb 6, 2024 · Snaptube es un programa que descarga de forma rápida y sencilla contenidos de YouTube y otras plataformas como …"
+    },
+    {
+      "title": "Connection fecebook - Facebook - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-36078047-connection-fecebook",
+      "snippet": "Jun 16, 2019 · Meilleure réponse: Bonsoir, vous parlez de facebook sur ordinateur ? ou sur 1 autre support ? Pour se connecter à …"
+    },
+    {
+      "title": "Facebook Actualité, guides pratiques et guides d'achat - ZDNET",
+      "url": "https://www.zdnet.fr/facebook-4000085268q.htm",
+      "snippet": "Aug 27, 2026 · Les derniers articles et analyses de la rédaction sur la thématique Facebook. Tout ce qu’il faut savoir sur l’actualité …"
+    }
+  ]
+}

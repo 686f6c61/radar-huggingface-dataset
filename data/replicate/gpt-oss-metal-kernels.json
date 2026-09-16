@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "replicate/gpt-oss-metal-kernels",
+  "slug": "replicate-gpt-oss-metal-kernels",
+  "author": "replicate",
+  "url": "https://huggingface.co/replicate/gpt-oss-metal-kernels",
+  "created_at": "2026-09-16T17:28:56.000Z",
+  "updated_at": "2026-09-16T17:28:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "kernels",
+  "languages": [],
+  "tags": [
+    "kernels",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2088104,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Replicate - Run AI with an API",
+      "url": "https://replicate.com/",
+      "snippet": "Thousands of businesses are building their AI products on Replicate. Your team can deploy an AI feature in a day and scale to …"
+    },
+    {
+      "title": "Explore – Replicate",
+      "url": "https://replicate.com/explore",
+      "snippet": "May 21, 2026 · Discover and share machine learning models that you can run in the cloud using Replicate."
+    },
+    {
+      "title": "replicate - Traduction française – Linguee",
+      "url": "https://www.linguee.fr/anglais-francais/traduction/replicate.html",
+      "snippet": "De très nombreux exemples de phrases traduites contenant \"replicate\" – Dictionnaire français-anglais et moteur de recherche de …"
+    },
+    {
+      "title": "Replicate - GitHub",
+      "url": "https://github.com/replicate",
+      "snippet": "Run AI with an API. Replicate has 169 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "replicate | Replicate",
+      "url": "https://internal.replicate.com/replicate",
+      "snippet": "replicate / flan-t5-small A small language model for tasks like classification, summarization, and more."
+    }
+  ]
+}

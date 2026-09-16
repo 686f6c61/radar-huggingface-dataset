@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "nmuendler/DeepSeek-R1-Distill-Qwen-7B-rust-sft-training-curve-run1-step2115",
+  "slug": "nmuendler-deepseek-r1-distill-qwen-7b-rust-sft-training-curve-run1-step2115",
+  "author": "nmuendler",
+  "url": "https://huggingface.co/nmuendler/DeepSeek-R1-Distill-Qwen-7B-rust-sft-training-curve-run1-step2115",
+  "created_at": "2026-09-16T12:52:28.000Z",
+  "updated_at": "2026-09-16T12:52:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 657397615,
+  "storage_human": "657 MB",
+  "base_model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Exchange Team Blog | Microsoft Community Hub",
+      "url": "https://techcommunity.microsoft.com/category/exchange/blog/exchange",
+      "snippet": "Sep 8, 2026 · Exchange Server AD FS Modern Authentication: Expanded Outlook client support Expanded Outlook client support for …"
+    },
+    {
+      "title": "Outlook Login Issues? Expert Help & Troubleshooting Guide",
+      "url": "https://www.justanswer.com/microsoft-office/tqhip-outlook-login-failed-too-many-attempts.html?msockid=3c8d0c42738c68a426531b94728d69ae",
+      "snippet": "Repeated login failures trigger temporary account lockouts in Outlook. Clear browser cache and cookies on MacOS, and update the …"
+    },
+    {
+      "title": "Outlook Login Issues? Expert Help for Authenticator App Fix",
+      "url": "https://www.justanswer.com/email/t9z3a-outlook-login-authenticator-app-failure.html?msockid=3c8d0c42738c68a426531b94728d69ae",
+      "snippet": "Troubleshooting Outlook Authenticator App Login Issues Authenticator app codes not generating and login failures due to sync or …"
+    },
+    {
+      "title": "Outlook | Microsoft Community Hub",
+      "url": "https://techcommunity.microsoft.com/category/Outlook",
+      "snippet": "Summary Classic Outlook maintains full two-way synchronisation with Gmail folders, labels, and emails. In contrast, New Outlook …"
+    },
+    {
+      "title": "Outlook Account Blocked on iPhone? Expert Help & Solutions",
+      "url": "https://www.justanswer.com/email/ta4fz-outlook-account-blocked-after-failed-logins.html?msockid=3c8d0c42738c68a426531b94728d69ae",
+      "snippet": "When the Outlook app on iPhone blocks access due to too many login attempts, it triggers a security lockout. To resolve, reset your …"
+    }
+  ]
+}

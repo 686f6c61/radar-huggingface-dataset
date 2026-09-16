@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen3.6-35B-A3B-Uncensored-Genesis-Final-dequantized-i1-GGUF",
+  "slug": "mradermacher-qwen3-6-35b-a3b-uncensored-genesis-final-dequantized-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen3.6-35B-A3B-Uncensored-Genesis-Final-dequantized-i1-GGUF",
+  "created_at": "2026-09-16T16:34:14.000Z",
+  "updated_at": "2026-09-16T17:34:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:symrex/Qwen3.6-35B-A3B-Uncensored-Genesis-Final-dequantized",
+    "base_model:quantized:symrex/Qwen3.6-35B-A3B-Uncensored-Genesis-Final-dequantized",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35505251456,
+  "parameters_human": "35.51B",
+  "storage_bytes": 49612893984,
+  "storage_human": "49.6 GB",
+  "base_model": "symrex/Qwen3.6-35B-A3B-Uncensored-Genesis-Final-dequantized",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Entra nella tua mail",
+      "url": "https://mail.tim.it/?d=alice.it&s=1587007497263",
+      "snippet": "Entra nella tua mail Username @tim.it @alice.it @tin.it Recupera username Recupera Password Avanti"
+    },
+    {
+      "title": "TIM Mail",
+      "url": "http://mail.tim.it/",
+      "snippet": ""
+    },
+    {
+      "title": "TIM Mail - registrati",
+      "url": "https://mail.tim.it/registrati.html",
+      "snippet": "La mail gratuita di TIM ti consente di creare velocemente un account di posta elettronica sicuro e con molto spazio. Entra in TIM Mail!"
+    },
+    {
+      "title": "TIM Mail - Info",
+      "url": "https://mail.tim.it/info.html",
+      "snippet": "TIM Mail è la casella mail gratuita @tim.it o @alice.it per i clienti ADSL/Fibra o di linea mobile TIM, che permette di gestire le mail di …"
+    },
+    {
+      "title": "TIM Mail - Mobile",
+      "url": "https://mail.tim.it/mobile.html",
+      "snippet": "La mail gratuita di Alice ti consente di creare velocemente un account di posta elettronica sicuro e con molto spazio. Entra in Alice Mail!"
+    }
+  ]
+}

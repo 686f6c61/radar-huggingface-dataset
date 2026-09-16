@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "SaylorTwift/kimi-code",
+  "slug": "saylortwift-kimi-code",
+  "author": "SaylorTwift",
+  "url": "https://huggingface.co/SaylorTwift/kimi-code",
+  "created_at": "2026-09-16T10:39:46.000Z",
+  "updated_at": "2026-09-16T10:40:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "agent",
+    "coding-agent",
+    "cli",
+    "llm",
+    "tool-use",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11931278,
+  "storage_human": "12 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FGEN Batangas FSRU - Global Energy Monitor",
+      "url": "https://www.gem.wiki/FGEN_Batangas_FSRU",
+      "snippet": "In June 2022, First Gen and BW agreed to a new delivery date for the FSRU BW Paris due to the delayed completion of the import …"
+    },
+    {
+      "title": "BW Batangas in the Philippines",
+      "url": "https://bw-group.com/our-businesses/bw-lng/projects/bw-paris-phillipines/",
+      "snippet": "BW LNG has signed a 5-year contract with FGEN LNG Corporation for the charter of BW Paris (now BW Batangas), a Floating …"
+    },
+    {
+      "title": "First Gen Batangas (interim FSRU) Report | Wood Mackenzie",
+      "url": "https://www.woodmac.com/reports/lng-first-gen-batangas-interim-fsru-150356466/",
+      "snippet": "Mar 3, 2025 · FirstGen Interim FSRU, also called BW Batangas, is an operational LNG import terminal in Santa Rita, Batangas, …"
+    },
+    {
+      "title": "First Gen cleared to operate Batangas LNG terminal for 25 years",
+      "url": "https://www.offshore-energy.biz/first-gen-cleared-to-operate-batangas-lng-terminal-for-25-years/",
+      "snippet": "Jan 7, 2025 · FGEN LNG built an interim offshore LNG terminal in partnership with Tokyo Gas and signed a five-year time charter …"
+    },
+    {
+      "title": "First Gen welcomes BW Batangas FSRU in the Philippines",
+      "url": "https://www.offshore-energy.biz/first-gen-welcomes-bw-batangas-fsru-in-the-philippines/",
+      "snippet": "Jun 23, 2023 · BW Batangas, a floating storage and regasification unit (FSRU) that will be deployed at First Gen Corporation’s LNG …"
+    }
+  ]
+}

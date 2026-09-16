@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "abenzerps/ZDTaichu5.0-9B-GGUF",
+  "slug": "abenzerps-zdtaichu5-0-9b-gguf",
+  "author": "abenzerps",
+  "url": "https://huggingface.co/abenzerps/ZDTaichu5.0-9B-GGUF",
+  "created_at": "2026-09-16T14:21:26.000Z",
+  "updated_at": "2026-09-16T14:26:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "zdtaichu5_0",
+    "qwen3.5",
+    "vision-language-model",
+    "multimodal",
+    "spatial-reasoning",
+    "agent",
+    "video-understanding",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:TaichuAI/ZDTaichu5.0-9B",
+    "base_model:quantized:TaichuAI/ZDTaichu5.0-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 35944596258,
+  "storage_human": "35.9 GB",
+  "base_model": "TaichuAI/ZDTaichu5.0-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Как быстро изменять настройки ...",
+      "url": "https://support.google.com/android/answer/9083864?hl=ru",
+      "snippet": "Как быстро изменять настройки телефона Android Панель быстрых настроек позволяет легко переходить к параметрам и …"
+    },
+    {
+      "title": "Как управлять настройками Google",
+      "url": "https://support.google.com/android/answer/3118621?hl=ru",
+      "snippet": "Как открыть настройки Google В зависимости от устройства выберите один из вариантов: Откройте приложение \"Настройки\" …"
+    },
+    {
+      "title": "Клавиатура ajazz ak820 - jam_4202 | Ответы Mail",
+      "url": "https://otvet.mail.ru/question/267402252",
+      "snippet": "Клавиатура ajazz ak820 Смотреть настройки клавы, и в настройках мискликом нажал на блок в win и теперь не работает …"
+    },
+    {
+      "title": "Не работает микрофон на Majestic Rp - user ...",
+      "url": "https://otvet.mail.ru/question/242471858",
+      "snippet": "не работает микро, пересмотрел кучу гайдов ничего не помогло, обшарил все настройки выбрал свой микро ничего не …"
+    },
+    {
+      "title": "Где в MAX настройки? - Большой Вопрос",
+      "url": "https://www.bolshoyvopros.ru/questions/4698450-gde-v-max-nastrojki.html",
+      "snippet": "Собственно, это настройки в MAX и есть, их попросту не объединили в раздел с таким названием, а расположили списком."
+    }
+  ]
+}

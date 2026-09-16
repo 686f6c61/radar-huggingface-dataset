@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "rubatotree/classify-the-blocks-act",
+  "slug": "rubatotree-classify-the-blocks-act",
+  "author": "rubatotree",
+  "url": "https://huggingface.co/rubatotree/classify-the-blocks-act",
+  "created_at": "2026-09-16T14:25:27.000Z",
+  "updated_at": "2026-09-16T14:26:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:rubatotree/classify_the_blocks",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714824,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Traduttore",
+      "url": "https://translate.google.it/",
+      "snippet": "Il servizio di Google, offerto senza costi, traduce all'istante parole, frasi e pagine web dall'italiano a più di 100 altre lingue e viceversa."
+    },
+    {
+      "title": "Google Traduttore",
+      "url": "https://translate.google.it/details",
+      "snippet": "Il valore deve essere un URL web in formato corretto"
+    },
+    {
+      "title": "Google Traduttore",
+      "url": "https://translate.google.it/m",
+      "snippet": "Home page di Google Invia commenti Privacy e termini Passa al sito completo"
+    }
+  ]
+}

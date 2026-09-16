@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "tadiecool29/Amharic_Stance_Sentiment_Normalized_Stratified",
+  "slug": "tadiecool29-amharic_stance_sentiment_normalized_stratified",
+  "author": "tadiecool29",
+  "url": "https://huggingface.co/tadiecool29/Amharic_Stance_Sentiment_Normalized_Stratified",
+  "created_at": "2026-09-16T12:43:15.000Z",
+  "updated_at": "2026-09-16T13:29:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:rasyosef/Llama-3.2-1B-Amharic-Instruct",
+    "base_model:finetune:rasyosef/Llama-3.2-1B-Amharic-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 32869346,
+  "storage_human": "33 MB",
+  "base_model": "rasyosef/Llama-3.2-1B-Amharic-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kuala Lumpur tudnivalók utazáshoz - Utazáskatalógus",
+      "url": "https://utazaskatalogus.hu/kuala-lumpur-tudnivalok-utazashoz/",
+      "snippet": "Apr 15, 2026 · Kuala Lumpur tudnivalók utazás előtt: biztonság, vízum, közlekedés, mikor a legjobb utazni, hol érdemes megszállni, …"
+    },
+    {
+      "title": "Egzotikus utazás Kuala Lumpurba! 164.180 Ft/fő-ért 3 személyes 10 ...",
+      "url": "https://utazasfuggo.hu/egzotikus-utazas-kuala-lumpurba-3-szemelyes-10-ejszakas-5-csillagos-hotellel-repulovel-260125/",
+      "snippet": "Jan 25, 2026 · Egzotikus utazás Kuala Lumpurba! 164.180 Ft/fő-ért 3 személyes 10 éjszakás, *****-os hotellel, repülővel! – Utazásfüggő"
+    },
+    {
+      "title": "Kuala Lumpur nyaralás és utazás - vista.hu",
+      "url": "https://vista.hu/azsia/malajzia/regio/kuala-lumpur",
+      "snippet": "Kuala Lumpur hallatán a legtöbb embernek utazás kapcsán általában eszébe jut egy nyaralás, egy tengerpart, egy hajóút, egy …"
+    },
+    {
+      "title": "Kuala Lumpur - Malajzia - Utazás, látnivalók, programok - Irány Ázsia",
+      "url": "https://iranyazsia.hu/kuala-lumpur",
+      "snippet": "Kuala Lumpur, Malajzia fővárosa, vibráló kulturális keverékkel, modern infrastruktúrával és változatos látnivalókkal várja a …"
+    },
+    {
+      "title": "Kuala Lumpur | 2026 | Utazom.com Utazási Iroda",
+      "url": "https://utazom.com/utazas/regio/kualalumpur",
+      "snippet": "Kuala Lumpur - utazások széles választéka."
+    }
+  ]
+}

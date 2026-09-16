@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "Thor39/Qwen2.5-Coder-7B-Instruct",
+  "slug": "thor39-qwen2-5-coder-7b-instruct",
+  "author": "Thor39",
+  "url": "https://huggingface.co/Thor39/Qwen2.5-Coder-7B-Instruct",
+  "created_at": "2026-09-16T11:14:35.000Z",
+  "updated_at": "2026-09-16T11:14:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "code",
+    "codeqwen",
+    "chat",
+    "qwen",
+    "qwen-coder",
+    "conversational",
+    "en",
+    "arxiv:2409.12186",
+    "arxiv:2309.00071",
+    "arxiv:2407.10671",
+    "base_model:Qwen/Qwen2.5-Coder-7B",
+    "base_model:finetune:Qwen/Qwen2.5-Coder-7B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15231271864,
+  "storage_human": "15.2 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pisarniška oprema, oprema za obrate, oprema za skladišča | kaiserkraft",
+      "url": "https://www.kaiserkraft.si/",
+      "snippet": "Pri podjetju kaiserkraft dobite vse od pisarniških stolov do viličarjev za svojo pisarno, obrat ali skladišče - deluje."
+    },
+    {
+      "title": "kaiserkraft | Office equipment, workshop & warehouse supplies",
+      "url": "https://www.export.kaiserkraft.com/",
+      "snippet": "Our packaging shop awaits with packaging solutions available of just about every type you can thing of. We save you long, tedious …"
+    },
+    {
+      "title": "Pregled storitev | kaiserkraft",
+      "url": "https://www.kaiserkraft.si/campaign/pregled-storitev/w/service_overview/",
+      "snippet": "Ob naročilu si zagotovite ploski voziček za 1 €*. Ponudba za najvišje zahteve! Naše vrhunske storitve. Pri vaših zahtevah, je za nas …"
+    },
+    {
+      "title": "Büroeinrichtung, Betriebsausstattung, Lagereinrichtung, Verpackung ...",
+      "url": "https://www.kaiserkraft.de/?msockid=126f124e4632668005d20598473a678a",
+      "snippet": "Bei kaiserkraft finden Sie vom Bürostuhl über Schränke und Verpackung bis hin zu Hubwagen und Sackkarren alles für Ihr Büro, …"
+    },
+    {
+      "title": "About us | kaiserkraft",
+      "url": "https://www.export.kaiserkraft.com/company/about-us/w/company_aboutus/",
+      "snippet": "kaiserkraft is the leading B2B mail order company in Europe with a wide range office, workshop and warehouse equipment."
+    }
+  ]
+}

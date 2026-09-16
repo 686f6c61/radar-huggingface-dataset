@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "chineduogunleye/tiny-transformer-matching-practice",
+  "slug": "chineduogunleye-tiny-transformer-matching-practice",
+  "author": "chineduogunleye",
+  "url": "https://huggingface.co/chineduogunleye/tiny-transformer-matching-practice",
+  "created_at": "2026-09-16T14:51:41.000Z",
+  "updated_at": "2026-09-16T14:51:47.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tiny_transformer",
+    "pytorch",
+    "tiny-transformer",
+    "matching",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Solved: Ink subscription - HP Support Community - 9297072",
+      "url": "https://h30434.www3.hp.com/t5/HP-Instant-Ink/Ink-subscription/td-p/9297072",
+      "snippet": "Jan 31, 2025 · Manually Order Ink (If Needed) If you need ink immediately, you can buy HP ink cartridges from a store, but your …"
+    },
+    {
+      "title": "why do i have to register with HP instant ink to use the cartridges ...",
+      "url": "https://h30434.www3.hp.com/t5/Printer-Ink-Cartridges-Print-Quality/why-do-i-have-to-register-with-HP-instant-ink-to-use-the/td-p/8276716",
+      "snippet": "Jan 18, 2022 · why do I have to enroll in the HP instant ink program to use the cartridge's that came with my new printer. I buy …"
+    },
+    {
+      "title": "HP Instant ink is a scam to steal money",
+      "url": "https://h30434.www3.hp.com/t5/HP-Instant-Ink/HP-Instant-ink-is-a-scam-to-steal-money/td-p/9473063",
+      "snippet": "Aug 28, 2025 · I had my printer subscribed to instant ink subscription and added to the HP Smart app. I few months in, I realized …"
+    },
+    {
+      "title": "Solved: I just want to print without joining the Instant Ink Program ...",
+      "url": "https://h30434.www3.hp.com/t5/Printing-Errors-or-Lights-Stuck-Print-Jobs/I-just-want-to-print-without-joining-the-Instant-Ink-Program/td-p/8682458",
+      "snippet": "May 20, 2026 · I would like to be able to simply print without being enrolled in the Instant Ink Program. I cancelled because too often …"
+    },
+    {
+      "title": "“Cartridge cannot be used until printer is enrolled in HP Instant Ink ...",
+      "url": "https://h30434.www3.hp.com/t5/Printers-Knowledge-Base/Cartridge-cannot-be-used-until-printer-is-enrolled-in-HP/ta-p/6998082",
+      "snippet": "Feb 8, 2019 · All HP Instant Ink cartridges have the name printed on the label as shown below. There are three types of cartridges: …"
+    }
+  ]
+}

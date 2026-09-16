@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "geodesic-research/hybrid-moe-30b-a3b-base",
+  "slug": "geodesic-research-hybrid-moe-30b-a3b-base",
+  "author": "geodesic-research",
+  "url": "https://huggingface.co/geodesic-research/hybrid-moe-30b-a3b-base",
+  "created_at": "2026-09-16T13:51:43.000Z",
+  "updated_at": "2026-09-16T13:53:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "nemotron_h",
+    "moe",
+    "mamba",
+    "hybrid",
+    "base-model",
+    "text-generation",
+    "conversational",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31577937344,
+  "parameters_human": "31.58B",
+  "storage_bytes": 63173766492,
+  "storage_human": "63.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Geodesic - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Geodesic",
+      "snippet": "The term has since been generalized to more abstract mathematical spaces; for example, in graph theory, one might consider a …"
+    },
+    {
+      "title": "Geodesics in general relativity - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Geodesics_in_general_relativity",
+      "snippet": "In deriving the geodesic equation from the equivalence principle, it was assumed that particles in a local inertial coordinate system …"
+    },
+    {
+      "title": "Geodesic -- from Wolfram MathWorld",
+      "url": "https://mathworld.wolfram.com/Geodesic.html",
+      "snippet": "Sep 2, 2026 · A geodesic is a locally length-minimizing curve. Equivalently, it is a path that a particle which is not accelerating would …"
+    },
+    {
+      "title": "Géodésique — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/G%C3%A9od%C3%A9sique",
+      "snippet": "Notes et références (en) Cet article est partiellement ou en totalité issu de l’article de Wikipédia en anglais intitulé « Geodesic » (voir …"
+    },
+    {
+      "title": "Geodesic - Wikiwand",
+      "url": "https://www.wikiwand.com/en/Geodesic",
+      "snippet": "In geometry, a geodesic is a curve representing in some sense the locally shortest path (arc) between two points in a surface, or …"
+    }
+  ]
+}

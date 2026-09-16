@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/arb-arab-10mb-after-ppt-Dp-10mb-ckpt500_seed3407",
+  "slug": "fpadovani-arb-arab-10mb-after-ppt-dp-10mb-ckpt500_seed3407",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/arb-arab-10mb-after-ppt-Dp-10mb-ckpt500_seed3407",
+  "created_at": "2026-09-16T13:28:49.000Z",
+  "updated_at": "2026-09-16T13:57:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:fpadovani/arb-arab-10mb-ppt-Dp-10mb_seed3407",
+    "base_model:finetune:fpadovani/arb-arab-10mb-ppt-Dp-10mb_seed3407",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 39087104,
+  "parameters_human": "39.1M",
+  "storage_bytes": 861426935,
+  "storage_human": "861 MB",
+  "base_model": "fpadovani/arb-arab-10mb-ppt-Dp-10mb_seed3407",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Analisi univariata o multivariata: qual è la differenza?",
+      "url": "https://statorials.org/it/analisi-univariata-vs-multivariata/",
+      "snippet": "Jul 19, 2023 · Questo tutorial spiega la differenza tra analisi univariata e multivariata, con diversi esempi."
+    },
+    {
+      "title": "Cos'è l'analisi univariata? (Definizione ed esempio) - Statorials",
+      "url": "https://statorials.org/it/analisi-invariate/",
+      "snippet": "Jul 26, 2023 · Questo tutorial fornisce una spiegazione dell'analisi univariata, inclusa una definizione e diversi esempi."
+    },
+    {
+      "title": "Somiglianze di analisi statistica univariata e multivariata",
+      "url": "https://it.scienceaq.com/Math/100209977.html",
+      "snippet": "Univariata e multivariata rappresentano due approcci all'analisi statistica. Univariato implica l'analisi di una singola variabile mentre …"
+    },
+    {
+      "title": "Analisi dei dati: Analisi multivariata",
+      "url": "https://moodle2.units.it/pluginfile.php/734809/mod_resource/content/1/Analisi%20multivariata.pdf",
+      "snippet": "Tuttavia la presenza di tante informazioni suggerisce che ci possano essere altri modi di analisi per mettere in luce la dipendenza …"
+    },
+    {
+      "title": "Che cosa è: Analisi univariata spiegata in dettaglio",
+      "url": "https://it.statisticseasily.com/glossario/cos%27%C3%A8-l%27analisi-univariata-spiegata-in-dettaglio/",
+      "snippet": "Pertanto, mentre l'analisi univariata è essenziale per l'esplorazione iniziale dei dati, dovrebbe essere completata con l'analisi …"
+    }
+  ]
+}

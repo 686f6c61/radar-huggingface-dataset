@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "gradients-io-tournaments/tournament-tourn_5abc2fe9f0667979_20260914-5cfe1465-07dc-48ec-9097-a55da0261318-5CRjufiW",
+  "slug": "gradients-io-tournaments-tournament-tourn_5abc2fe9f0667979_20260914-5cfe1465-07dc-48ec-9097-a55da0261318-5crjufiw",
+  "author": "gradients-io-tournaments",
+  "url": "https://huggingface.co/gradients-io-tournaments/tournament-tourn_5abc2fe9f0667979_20260914-5cfe1465-07dc-48ec-9097-a55da0261318-5CRjufiW",
+  "created_at": "2026-09-16T11:13:09.000Z",
+  "updated_at": "2026-09-16T11:13:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:/cache/models/8d7f663aaab4e5dd",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:unsloth/Meta-Llama-3.1-8B-Instruct",
+    "base_model:adapter:unsloth/Meta-Llama-3.1-8B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2701626128,
+  "storage_human": "2.7 GB",
+  "base_model": "unsloth/Meta-Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "أصاله - بس دقيقة / Assala - Bas Deqiqa - YouTube",
+      "url": "https://www.youtube.com/watch?v=M_Caktb3tWU",
+      "snippet": "Apr 2, 2012 · أصاله - بس دقيقة / Assala - Bas Deqiqa #أصاله - قانون كيفك كلمات الاغنية بس دقيقه! يعني مستكثر دقيقه! .."
+    },
+    {
+      "title": "دقيقة بس - عبدالعزيز الشايجي ( حصرياً ) 2018 - YouTube",
+      "url": "https://www.youtube.com/watch?v=7AsP7MT87bA",
+      "snippet": "Aug 23, 2018 · إشتركوا في القناة لمتابعة كل جديد : / @solofm دقيقة بس - عبدالعزيز الشايجي @ItsAzou كلمات : باسل الشطي @Basel_Alshatti ألحان وتوزيع ومكس : الموس …"
+    },
+    {
+      "title": "تحميل اغنية - بس دقيقة - اصالة - MP3",
+      "url": "https://www.albumaty.com/song/819.html",
+      "snippet": "اغنية بس دقيقة - اصالة MP3 تحميل الاغنية 114094 إستماع المدة : 04:31 الاغنية التالية : الى متى"
+    },
+    {
+      "title": "كلمات اغنية بس دقيقة اصالة نصري",
+      "url": "https://aghanilyrics.com/songlyrics.php?lyrics=243&ar=%D9%83%D9%84%D9%85%D8%A7%D8%AA-%D8%A7%D8%BA%D9%86%D9%8A%D8%A9-%D8%A8%D8%B3-%D8%AF%D9%82%D9%8A%D9%82%D8%A9-%D8%A7%D8%B5%D8%A7%D9%84%D8%A9-%D9%86%D8%B5%D8%B1%D9%8A",
+      "snippet": "Jun 18, 2022 · كلمات اغنية بس دقيقة اصالة نصري بس دقيقه بس دقيقه! يعني مستكثر دقيقه! ياخي شف قلبي فحبك كم صبر يعن ..."
+    },
+    {
+      "title": "دقيقة بس - song and lyrics by عبدالعزيز الشايجي | Spotify",
+      "url": "https://open.spotify.com/track/75Z4LxF0gFRG0gT78OrY4U",
+      "snippet": "Listen to دقيقة بس on Spotify. عبدالعزيز الشايجي · Song · 2019."
+    }
+  ]
+}

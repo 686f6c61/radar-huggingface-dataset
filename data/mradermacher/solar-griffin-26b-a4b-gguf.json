@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Solar-Griffin-26B-A4B-GGUF",
+  "slug": "mradermacher-solar-griffin-26b-a4b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Solar-Griffin-26B-A4B-GGUF",
+  "created_at": "2026-09-16T14:51:17.000Z",
+  "updated_at": "2026-09-16T16:20:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "roleplay",
+    "storytelling",
+    "en",
+    "base_model:Cyclone-Labs/Solar-Griffin-26B-A4B",
+    "base_model:quantized:Cyclone-Labs/Solar-Griffin-26B-A4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25233142046,
+  "parameters_human": "25.23B",
+  "storage_bytes": 151661696352,
+  "storage_human": "151.7 GB",
+  "base_model": "Cyclone-Labs/Solar-Griffin-26B-A4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "如何入驻shein？ - 知乎",
+      "url": "https://www.zhihu.com/question/293971663",
+      "snippet": "SHEIN开店费用： 入驻0费用，运营0成本，开店面向多个国家售卖。 开店前3个月免佣，后期收取10% 佣金。 并赋予了卖家定价权 …"
+    },
+    {
+      "title": "在SheIn工作的感觉怎么样？ - 知乎",
+      "url": "https://www.zhihu.com/question/271570265/answers/updated",
+      "snippet": "SHEIN的估值变化，折射出全球资本市场对快时尚行业定价逻辑的深刻调整。 在长达十余年的融资历程中，SHEIN的估值经历了大幅 …"
+    },
+    {
+      "title": "[心得] SHEIN 你的雷雷伙伴 - 看板 e-shopping - 批踢踢實業坊",
+      "url": "https://www.ptt.cc/bbs/e-shopping/M.1561618178.A.B60.html",
+      "snippet": "Jun 27, 2019 · 1. SHEIN Self Belted Paperbag Waist Shorts (黑色自綁帶短褲) - US$11.79 話說那個Self Belted說得真好呢，因為褲子 …"
+    },
+    {
+      "title": "[問題] SHEIN網購清關問題 - 看板 e-shopping - 批踢踢實業坊",
+      "url": "https://www.ptt.cc/bbs/e-shopping/M.1691502707.A.94B.html",
+      "snippet": "Aug 8, 2023 · 如題 上週在SHEIN購買了幾件衣服 合計金額約一千出頭 原本看app是說預計包裹今天會送達 但這幾天也都沒有收 …"
+    },
+    {
+      "title": "为什么像shein这样的跨境电商不在国内出售呢？ - 知乎",
+      "url": "https://www.zhihu.com/question/267772909",
+      "snippet": "SheIn（中文名“ 希音 ”）成立于2008年，作为中国的一家跨境电商巨头，小编敢打赌应该有95%以上的国人都没听说过SheIn，就是这 …"
+    }
+  ]
+}

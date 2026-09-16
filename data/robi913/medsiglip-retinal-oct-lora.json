@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "robi913/medsiglip-retinal-oct-lora",
+  "slug": "robi913-medsiglip-retinal-oct-lora",
+  "author": "robi913",
+  "url": "https://huggingface.co/robi913/medsiglip-retinal-oct-lora",
+  "created_at": "2026-09-16T17:25:25.000Z",
+  "updated_at": "2026-09-16T18:16:05.000Z",
+  "license": "health-ai-developer-foundations",
+  "license_family": "unknown",
+  "pipeline_tag": "zero-shot-image-classification",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "medical",
+    "ophthalmology",
+    "oct",
+    "retinal-imaging",
+    "vision-language",
+    "lora",
+    "siglip",
+    "multi-task-learning",
+    "cross-attention-fusion",
+    "zero-shot-image-classification",
+    "base_model:google/medsiglip-448",
+    "base_model:adapter:google/medsiglip-448",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7249699038,
+  "storage_human": "7.2 GB",
+  "base_model": "google/medsiglip-448",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "l Geburtstagswünsche - Schöne und herzliche Geburtstagsglückwünsche",
+      "url": "https://www.geburtstagswelt.de/geburtstagswuensche/",
+      "snippet": "ll Herzliche und schöne Geburtstagswünsche zum Gratulieren. Immer die passenden Geburtstagsglückwünsche für jedes …"
+    },
+    {
+      "title": "lᐅ Geburtstagswünsche für Frauen - Grüße und Sprüche zum Gratulieren",
+      "url": "https://www.geburtstagswelt.de/geburtstagswuensche/geburtstagswuensche-fuer-frauen/",
+      "snippet": "llᐅ Mit diesen Geburtstagswünschen für Frauen macht man jeder Frau zum Geburtstag eine große Freude. Schöne Glückwünsche & …"
+    },
+    {
+      "title": "Sprüche zur Geburt | Mit schönen Sprüchen zur Geburt gratulieren",
+      "url": "https://www.geburtstagswelt.de/sprueche-zur-geburt/",
+      "snippet": "Diese Sprüche zur Geburt helfen dabei, das neue Menschlein auf der Erde Willkommen zu heißen und den glücklichen Eltern zur …"
+    },
+    {
+      "title": "Geburtstagswelt – Die ganze Welt der Geburtstage",
+      "url": "https://www.geburtstagswelt.de/",
+      "snippet": "Alles rund um den Geburtstag, findest du kostenlos auf der Geburtstagswelt. Die besten Sprüche Sketche Spiele …"
+    },
+    {
+      "title": "Willkommen im Club der Alten Schachteln | Geburtstagswelt",
+      "url": "https://www.geburtstagswelt.de/willkommen-im-club-der-alten-schachteln/",
+      "snippet": "Bei diesem witzigen Spiel wird das weibliche Geburtstagskind ehrenhaft in den Club der alten Schachteln aufgenommen. Da hier …"
+    }
+  ]
+}

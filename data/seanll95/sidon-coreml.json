@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "seanll95/sidon-coreml",
+  "slug": "seanll95-sidon-coreml",
+  "author": "seanll95",
+  "url": "https://huggingface.co/seanll95/sidon-coreml",
+  "created_at": "2026-09-16T14:38:29.000Z",
+  "updated_at": "2026-09-16T14:38:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "audio-to-audio",
+  "library": "coreml",
+  "languages": [],
+  "tags": [
+    "coreml",
+    "speech-enhancement",
+    "ios",
+    "neural-engine",
+    "audio-to-audio",
+    "base_model:sarulab-speech/sidon-v0.1",
+    "base_model:quantized:sarulab-speech/sidon-v0.1",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 595108120,
+  "storage_human": "595 MB",
+  "base_model": "sarulab-speech/sidon-v0.1",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "كيفية التخلي عن استخدام كلمة مرور مع حساب Microsoft",
+      "url": "https://support.microsoft.com/ar-sa/accounts-billing/security/how-to-go-passwordless-with-your-microsoft-account",
+      "snippet": "بمجرد إزالة كلمة المرور من حسابك، ستحتاج إلى تسجيل الدخول باستخدام أسلوب بدون كلمة مرور مثل تطبيق Microsoft Authenticator أو Outlook for Android أو Windows …"
+    },
+    {
+      "title": "كيفية تمكين أو تعطيل تسجيل الدخول بدون كلمة مرور فقط في Windows 11",
+      "url": "https://thegadgettechworld.com/ar/pages/16644-how-to-enable-or-disable-passwordless-sign-in-only-in-window",
+      "snippet": "نظام التشغيل Windows 11 يسمح بتسجيل الدخول المستند إلى كلمة المرور وتسجيل الدخول بدون كلمة مرور. يتم تحديد خيار كلمة المرور الأقل افتراضيًا. إذا كنت ترغب في تعلم تمكين أو تعطيل …"
+    },
+    {
+      "title": "كيفية تمكين تسجيل الدخول بدون كلمة مرور في Windows",
+      "url": "https://tecnobits.com/ar/%D9%83%D9%8A%D9%81%D9%8A%D8%A9-%D8%AA%D9%85%D9%83%D9%8A%D9%86-%D8%AA%D8%B3%D8%AC%D9%8A%D9%84-%D8%A7%D9%84%D8%AF%D8%AE%D9%88%D9%84-%D8%A8%D8%AF%D9%88%D9%86-%D9%83%D9%84%D9%85%D8%A9-%D9%85%D8%B1%D9%88%D8%B1-%D9%81%D9%8A-Windows/",
+      "snippet": "Nov 7, 2025 · في هذا الدليل، نستعرض جميع خيارات تفعيل تسجيل الدخول بدون كلمة مرور في نظام Windows 10، وكيفية تعطيل رمز PIN وميزة Windows Hello إذا لم تكن ترغب …"
+    },
+    {
+      "title": "تمكين أو تعطيل تسجيل الدخول بدون كلمة مرور لحسابات Microsoft",
+      "url": "https://ar.macspots.com/enable-disable-passwordless-sign",
+      "snippet": "سيؤدي تمكين تسجيل الدخول بدون كلمة مرور إلى تبديل جميع حسابات Microsoft على جهاز Windows 10 الخاص بك إلى المصادقة الحديثة باستخدام Windows Hello Face أو …"
+    },
+    {
+      "title": "خيارات Sign-In في Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/ar-sa/accounts-billing/security/sign-in-options-in-windows",
+      "snippet": "استخدم \"إعداد Windows Hello \" لتمكين تسجيل الدخول باستخدام التعرف على الوجوه أو بصمات الأصابع أو رمز PIN، بدلا من كلمة المرور. في هذا القسم، يمكنك أيضا تحسين ميزة التعرف على …"
+    }
+  ]
+}

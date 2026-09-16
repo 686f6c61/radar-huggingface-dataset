@@ -1,0 +1,109 @@
+{
+  "schema": 1,
+  "id": "sanjayram-a/nanoagent-15m",
+  "slug": "sanjayram-a-nanoagent-15m",
+  "author": "sanjayram-a",
+  "url": "https://huggingface.co/sanjayram-a/nanoagent-15m",
+  "created_at": "2026-09-16T18:00:34.000Z",
+  "updated_at": "2026-09-16T18:59:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "text-generation",
+    "llama",
+    "pytorch",
+    "small-language-model",
+    "tool-calling",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 359427311,
+  "storage_human": "359 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "NanoAgent 1B-token pretraining mix (Ultra-FineWeb-L3 + FineWeb-Edu + Cosmopedia-v2 + UltraData-Code)",
+      "metric": "final validation loss",
+      "value": 3.9772
+    },
+    {
+      "task": null,
+      "dataset": "NanoAgent 1B-token pretraining mix (Ultra-FineWeb-L3 + FineWeb-Edu + Cosmopedia-v2 + UltraData-Code)",
+      "metric": "final validation perplexity",
+      "value": 53.37
+    },
+    {
+      "task": null,
+      "dataset": "Blended SFT mix, 409,760 rows (smoltalk + ultrachat world-QA + xlam-function-calling-60k + glaive-function-calling-v2 + summarize + rewrite)",
+      "metric": "final validation loss",
+      "value": 1.7348
+    },
+    {
+      "task": null,
+      "dataset": "Blended SFT mix, 409,760 rows (smoltalk + ultrachat world-QA + xlam-function-calling-60k + glaive-function-calling-v2 + summarize + rewrite)",
+      "metric": "final validation perplexity",
+      "value": 5.67
+    },
+    {
+      "task": null,
+      "dataset": "Instruct-heavy SFT mix, 380,573 tokenized train rows (smol-magpie-ultra + glaive + xlam + summarize + rewrite + chat)",
+      "metric": "latest validation loss",
+      "value": 1.4783
+    },
+    {
+      "task": null,
+      "dataset": "Instruct-heavy SFT mix, 380,573 tokenized train rows (smol-magpie-ultra + glaive + xlam + summarize + rewrite + chat)",
+      "metric": "latest validation perplexity",
+      "value": 4.39
+    }
+  ],
+  "sources": [
+    {
+      "title": "Utilizar un método de pago familiar en Google Play",
+      "url": "https://support.google.com/families/answer/6294544?hl=es",
+      "snippet": "Los miembros de la familia pueden usar el método de pago familiar para hacer compras en aplicaciones y comprar los siguientes …"
+    },
+    {
+      "title": "تعلم مع شاومي \" استرجاع الهاتف بعد السرقه \" | شاومي كميونيتي",
+      "url": "https://new.c.mi.com/eg/post/26850",
+      "snippet": "مرحبا محبي شاومي ️ بالطبع جميعنا معرضين ان تليفونتنا تتسرق ولذلك سنتحدث اليوم عن طرق استرداد الهاتف بعد السرقه ، ونعمل ايه لو التليفون اتسرق واكن في البدايه سنقوم بتفعيل الموقع ثم بعد …"
+    },
+    {
+      "title": "[GA4] Buscar el ID de la etiqueta de Google - Ayuda de Analytics",
+      "url": "https://support.google.com/analytics/answer/9539598?hl=es",
+      "snippet": "Nota: El enlace anterior lleva a la última propiedad de Google Analytics a la que has accedido. Para abrir la propiedad, debes haber …"
+    },
+    {
+      "title": "Xiaomi Community | Xiaomi",
+      "url": "https://c.mi.com/tr/",
+      "snippet": "Xiaomi kullanıcılarına yardımcı olmak ve Mi Ürünleri ve MIUI güncellemeleri hakkında en son haberleri sağlamak için Xiaomi resmi …"
+    },
+    {
+      "title": "Instalacja W10, nie mogę włączyć bootowania z usb - elektroda.pl",
+      "url": "https://www.elektroda.pl/rtvforum/topic3447555.html",
+      "snippet": "Mar 28, 2018 · Witam, mam Windows 10 na pendrive, jednak nie mogę w żaden sposób zmusić komputera aby rozpoczął instalację. …"
+    }
+  ]
+}

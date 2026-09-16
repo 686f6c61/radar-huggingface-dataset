@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Praelatus/Some1else45_Style",
+  "slug": "praelatus-some1else45_style",
+  "author": "Praelatus",
+  "url": "https://huggingface.co/Praelatus/Some1else45_Style",
+  "created_at": "2026-09-16T12:04:32.000Z",
+  "updated_at": "2026-09-16T12:04:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:circlestone-labs/Anima",
+    "base_model:adapter:circlestone-labs/Anima",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 154864085,
+  "storage_human": "155 MB",
+  "base_model": "circlestone-labs/Anima",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Premier League Football News, Fixtures, Scores & Results",
+      "url": "https://www.premierleague.com/",
+      "snippet": "Visit the official website of the Premier League, for all the latest Premier League news and features."
+    },
+    {
+      "title": "2026 Premier League Schedule - ESPN",
+      "url": "https://www.espn.com/soccer/schedule/_/league/eng.1",
+      "snippet": "The 2026 Premier League schedule on ESPN, including kick off times, stadium information and TV listings."
+    },
+    {
+      "title": "Premier League Fixtures, Results & Live Matches on TV Season 2026/27",
+      "url": "https://www.premierleague.com/en/matches/premier-league",
+      "snippet": "View the Premier League fixtures for season 2026/27, along with scores & results for this weeks matches, visit the official website of …"
+    },
+    {
+      "title": "Premier League (EPL) 2026 TV Schedule USA, Live Streams - World …",
+      "url": "https://worldsoccertalk.com/premier-league-tv-schedule/",
+      "snippet": "Browse the Premier League TV schedule for up-to-date EPL games on US television and streaming. Watch your favorite Premier …"
+    },
+    {
+      "title": "2026 English Premier League Schedule: Fixtures and Results",
+      "url": "https://www.cbssports.com/soccer/premier-league/schedule/",
+      "snippet": "Get the full English Premier League schedule of 2026 match fixtures, along with scores, highlights and more from CBS Sports."
+    }
+  ]
+}

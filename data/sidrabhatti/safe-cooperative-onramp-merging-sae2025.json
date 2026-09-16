@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "SidraBhatti/safe-cooperative-onramp-merging-sae2025",
+  "slug": "sidrabhatti-safe-cooperative-onramp-merging-sae2025",
+  "author": "SidraBhatti",
+  "url": "https://huggingface.co/SidraBhatti/safe-cooperative-onramp-merging-sae2025",
+  "created_at": "2026-09-16T14:46:44.000Z",
+  "updated_at": "2026-09-16T15:10:39.000Z",
+  "license": "sae-international-all-rights-reserved",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "autonomous-vehicles",
+    "cooperative-control",
+    "control-barrier-functions",
+    "multi-agent-systems",
+    "safety",
+    "connected-automated-vehicles",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WEB.DE - kostenlose E-Mail-Adresse, FreeMail & Nachrichten",
+      "url": "https://web.de/",
+      "snippet": "Sichere Kommunikation, aktuelle Nachrichten und nützliche Online-Services - alles an einem Ort. Einfach, kostenlos und zuverlässig."
+    },
+    {
+      "title": "WEB.DE Login - ganz einfach",
+      "url": "https://anmelden.web.de/",
+      "snippet": "WEB.DE Login: E-Mail-Adresse anmelden oder einloggen – kompakte Anleitung zum WEB.DE Login und schnelle Hilfe bei Login …"
+    },
+    {
+      "title": "Einloggen bei WEB.DE",
+      "url": "https://hilfe.web.de/account/login/index.html",
+      "snippet": "Einloggen bei WEB.DE Sie haben Fragen oder ein Problem mit dem Login in Ihr Postfach? Hier finden Sie die relevanten …"
+    },
+    {
+      "title": "WEB.DE Club - Login",
+      "url": "https://club.web.de/?mc=021105",
+      "snippet": "WEB.DE Club Center Neuigkeiten, Vorteile und exklusive Angebote für Club-Mitglieder finden Sie im Club Center. Klicken Sie einfach …"
+    },
+    {
+      "title": "WEB.DE Start - der leichte Einstieg in alles rund um Ihre E-Mails.",
+      "url": "https://produkte.web.de/suche/start/",
+      "snippet": "Fügen Sie einfach Ihre Lieblingswebseiten zu WEB.DE Start hinzu und organisieren Sie diese nach Belieben. Egal ob Social Media, …"
+    }
+  ]
+}

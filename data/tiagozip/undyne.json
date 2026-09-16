@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "tiagozip/undyne",
+  "slug": "tiagozip-undyne",
+  "author": "tiagozip",
+  "url": "https://huggingface.co/tiagozip/undyne",
+  "created_at": "2026-09-16T12:19:20.000Z",
+  "updated_at": "2026-09-16T12:19:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "electra",
+    "token-classification",
+    "question-answering",
+    "highlighting",
+    "distillation",
+    "en",
+    "base_model:google/electra-small-discriminator",
+    "base_model:quantized:google/electra-small-discriminator",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 13483779,
+  "parameters_human": "13.5M",
+  "storage_bytes": 122257077,
+  "storage_human": "122 MB",
+  "base_model": "google/electra-small-discriminator",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Winnfield, Louisiana - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Winnfield,_Louisiana",
+      "snippet": "Winnfield was a major producer of salt in the Civil War days; salt kettles used at Big Cedar and Drake's Salt Works furnished salt for …"
+    },
+    {
+      "title": "Winnfield – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Winnfield",
+      "snippet": "Winnfield liegt im mittleren Norden Louisianas am Nordostrand des Kisatchie National Forest und wenige hundert Meter westlich des …"
+    },
+    {
+      "title": "Home - City of Winnfield, Louisiana",
+      "url": "https://cityofwinnfield.com/",
+      "snippet": "Email Address Send City of Winnfield 120 East Main Street, Winnfield, LA 71483 318.628.3939 Monday - Thursday, 8:00am - 5:00pm …"
+    },
+    {
+      "title": "Winnfield, Louisiana — Community, History, and Civic Accountability",
+      "url": "https://winnfieldlouisiana.com/",
+      "snippet": "Independent civic commentary about Winnfield, Louisiana — local history, public facilities, and analysis of the ICE/GEO detention …"
+    },
+    {
+      "title": "Winnfield, LA Business Directory - Local Small Business Listings - The ...",
+      "url": "https://www.yellowpages.com/winnfield-la",
+      "snippet": "When it comes to local businesses, Winnfield has a variety of options to choose from. Whether you're looking for delicious Southern …"
+    }
+  ]
+}

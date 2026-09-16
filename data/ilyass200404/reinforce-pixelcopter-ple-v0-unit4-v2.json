@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "ilyass200404/Reinforce-Pixelcopter-PLE-v0-unit4-v2",
+  "slug": "ilyass200404-reinforce-pixelcopter-ple-v0-unit4-v2",
+  "author": "ilyass200404",
+  "url": "https://huggingface.co/ilyass200404/Reinforce-Pixelcopter-PLE-v0-unit4-v2",
+  "created_at": "2026-09-16T16:08:02.000Z",
+  "updated_at": "2026-09-16T16:08:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Pixelcopter-PLE-v0",
+    "reinforce",
+    "reinforcement-learning",
+    "custom-implementation",
+    "deep-rl-class",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 40061,
+  "storage_human": "40061 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Connexion à mon espace | Ma Santé - espace.ca-masante.fr",
+      "url": "https://espace.ca-masante.fr/connexion",
+      "snippet": "Votre espace assuré « CA Ma Santé » vous permet d’accéder à votre complémentaire santé et de réaliser toutes vos opérations de …"
+    },
+    {
+      "title": "Activation / Inscription | Ma Santé",
+      "url": "https://espace.ca-masante.fr/inscription",
+      "snippet": "Veuillez choisir votre situation pour accéder à votre espace Ma Santé. Nous vous rappelons que seuls les adhérents principaux sont …"
+    }
+  ]
+}

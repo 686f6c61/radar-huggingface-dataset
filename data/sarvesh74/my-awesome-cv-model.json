@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "sarvesh74/my-awesome-cv-model",
+  "slug": "sarvesh74-my-awesome-cv-model",
+  "author": "sarvesh74",
+  "url": "https://huggingface.co/sarvesh74/my-awesome-cv-model",
+  "created_at": "2026-09-16T14:13:22.000Z",
+  "updated_at": "2026-09-16T14:15:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 803497680,
+  "storage_human": "803 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "coreelec:homatics [CoreELEC Wiki]",
+      "url": "https://wiki.coreelec.org/coreelec:homatics",
+      "snippet": "These instructions explain how to install and boot CoreELEC on supported Homatics devices from USB media by use of a Windows …"
+    },
+    {
+      "title": "[Guide] Homatics Box R 4k Plus CoreELEC installation, configuration …",
+      "url": "https://discourse.coreelec.org/t/guide-homatics-box-r-4k-plus-coreelec-installation-configuration-and-modding/28659",
+      "snippet": "Aug 1, 2023 · Unfortunately this is a known issue and you will most likely face it when you reboot from CoreELEC to Android and then …"
+    },
+    {
+      "title": "Latest Installation & Booting topics - CoreELEC Forums",
+      "url": "https://discourse.coreelec.org/c/help-support/installation-booting/13",
+      "snippet": "Aug 5, 2026 · Post here for help and support with installing, booting or updating CoreELEC."
+    },
+    {
+      "title": "Обсуждение медиаплееров на LibreELEC, CoreELEC, AlexELEC",
+      "url": "https://4pda.to/forum/index.php?showtopic=990018",
+      "snippet": "Х96 NEXBOX A905X Android 6.0 NEXBOX A905X Android 6.0 Sunvell T95M 2G MECOOL KM8P (AMLOGIC s912) Запуск …"
+    },
+    {
+      "title": "CoreELEC",
+      "url": "https://coreelec.org/",
+      "snippet": "CoreELEC is a ‘Just enough OS’ Linux distribution based on Kodi 1 technology for popular Amlogic hardware. This project offer …"
+    }
+  ]
+}

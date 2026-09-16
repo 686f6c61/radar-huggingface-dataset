@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "e-n-v-y/Krea-2-Pixel-Art",
+  "slug": "e-n-v-y-krea-2-pixel-art",
+  "author": "e-n-v-y",
+  "url": "https://huggingface.co/e-n-v-y/Krea-2-Pixel-Art",
+  "created_at": "2026-09-16T15:06:52.000Z",
+  "updated_at": "2026-09-16T15:08:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 223563115,
+  "storage_human": "224 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "É — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/%C3%89",
+      "snippet": "É, ou E accent aigu, est un graphème utilisé dans les alphabets hongrois, islandais, kachoube, ouïghour et slovaque en tant que …"
+    },
+    {
+      "title": "E (lettre) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/E_(lettre)",
+      "snippet": "E est la cinquième lettre des alphabets latin et étrusque, ainsi que leur deuxième voyelle. Il s'agit également de l'écriture capitale de l' …"
+    },
+    {
+      "title": "E - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/E",
+      "snippet": "E (minuscule: e) is the fifth letter and the second vowel letter of the Latin alphabet, used in the modern English alphabet, the …"
+    },
+    {
+      "title": "French e, è, é, ê, ë – what’s the difference?",
+      "url": "https://jakubmarian.com/french-e-e-e-e-e-whats-the-difference/",
+      "snippet": "A complete explanation of how e, è, é, ê, and ë are used in French, with rules, examples and pronunciation."
+    },
+    {
+      "title": "Taper « É » majuscule sur Windows PC et Mac",
+      "url": "https://www.laculturegenerale.com/taper-e-majuscule-sur-windows-pc-mac/",
+      "snippet": "Jul 7, 2026 · Cet article vous présente les méthodes pour écrire le « É », la lettre « e » avec un accent aigu en majuscule sur clavier …"
+    }
+  ]
+}

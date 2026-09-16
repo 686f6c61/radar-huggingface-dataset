@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "brivangl/qwenar-0.6b-montevideo",
+  "slug": "brivangl-qwenar-0-6b-montevideo",
+  "author": "brivangl",
+  "url": "https://huggingface.co/brivangl/qwenar-0.6b-montevideo",
+  "created_at": "2026-09-16T17:59:14.000Z",
+  "updated_at": "2026-09-16T18:09:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwenar",
+    "sentence-embeddings",
+    "sentence-autoencoder",
+    "text-reconstruction",
+    "sonar",
+    "large-concept-model",
+    "dora",
+    "relora",
+    "feature-extraction",
+    "custom_code",
+    "en",
+    "dataset:cerebras/SlimPajama-627B",
+    "arxiv:2308.11466",
+    "arxiv:2412.08821",
+    "arxiv:2307.05695",
+    "arxiv:2402.09353",
+    "arxiv:2402.12354",
+    "base_model:Qwen/Qwen3-0.6B-Base",
+    "base_model:finetune:Qwen/Qwen3-0.6B-Base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1194200064,
+  "parameters_human": "1.19B",
+  "storage_bytes": 2415520653,
+  "storage_human": "2.4 GB",
+  "base_model": "perplexity-ai/pplx-embed-v1-0.6b, Qwen/Qwen3-0.6B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bimmelbahn-Forum",
+      "url": "https://bimmelbahn-forum.de/",
+      "snippet": "Mar 10, 2023 · Bimmelbahn-Forum - Das Forum zu Schmalspurbahnen, schmalspurigen Modellbahnen sowie normalspurigen Dampf …"
+    },
+    {
+      "title": "Abriss Wohnblock Jöhstadt - Deutschland - Bimmelbahn-Forum",
+      "url": "https://bimmelbahn-forum.de/forum/index.php?thread/26386-abriss-wohnblock-j%C3%B6hstadt/",
+      "snippet": "Jul 31, 2026 · Admin: Abgetrennt von Betrieb bei der Preßnitztalbahn 2026 Hallo zusammen! Erfreuliche Nachrichten: wie die …"
+    },
+    {
+      "title": "Bitte lösche den Cache deines Browsers!",
+      "url": "https://www.test.bimmelbahn-forum.de/",
+      "snippet": "Bimmelbahn-Forum Es ist ein Fehler aufgetreten. Bitte lösche den Cache / die zwischengespeicherten Dateien in den Einstellungen …"
+    },
+    {
+      "title": "Schmalspurbahnen im Modell - Bimmelbahn-Forum",
+      "url": "https://bimmelbahn-forum.de/forum/index.php?board/6-schmalspurbahnen-im-modell/",
+      "snippet": "Bimmelbahn-Forum - Das Forum zu Schmalspurbahnen, schmalspurigen Modellbahnen sowie normalspurigen Dampf- und …"
+    },
+    {
+      "title": "Beiträge von Schwarzbachbahn e.V. - Bimmelbahn-Forum",
+      "url": "https://bimmelbahn-forum.de/forum/index.php?user-post-list/3939-schwarzbachbahn-e-v/",
+      "snippet": "Sep 7, 2026 · Bimmelbahn-Forum - Das Forum zu Schmalspurbahnen, schmalspurigen Modellbahnen sowie normalspurigen Dampf- …"
+    }
+  ]
+}

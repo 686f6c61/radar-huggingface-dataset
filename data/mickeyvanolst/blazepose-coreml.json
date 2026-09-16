@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "mickeyvanolst/blazepose-coreml",
+  "slug": "mickeyvanolst-blazepose-coreml",
+  "author": "mickeyvanolst",
+  "url": "https://huggingface.co/mickeyvanolst/blazepose-coreml",
+  "created_at": "2026-09-16T12:45:09.000Z",
+  "updated_at": "2026-09-16T12:45:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "coreml",
+  "languages": [],
+  "tags": [
+    "coreml",
+    "pose-estimation",
+    "mediapipe",
+    "blazepose",
+    "touchdesigner",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 37707805,
+  "storage_human": "38 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "解压缩文件时出现：这个压缩文件格式未知或者数据已经被损坏！急啊…",
+      "url": "https://zhidao.baidu.com/question/81947331.html",
+      "snippet": "解压缩文件时出现：这个压缩文件格式未知或者数据已经被损坏！急啊！！这是因为压缩包中存在损坏的文件，所以无法解压。解决方 …"
+    },
+    {
+      "title": "文件类型为Data Base File (.db)是什么意思？_百度知道",
+      "url": "https://zhidao.baidu.com/question/63822737.html",
+      "snippet": "文件类型为Data Base File (.db)是什么意思？这是查看缩略图所产生的缓存文件，正常的现象，不是病毒，要它不出现可以：控制面 …"
+    },
+    {
+      "title": "Windows10系统，有的文件图标出现黑底是怎么回事？ - 知乎",
+      "url": "https://www.zhihu.com/question/40163187",
+      "snippet": "上面所有回答都是没戳中问题核心或者治标不治本。 这个问题也困扰了我很久（Windows11最新版），后来终于发现，这个情况一般 …"
+    },
+    {
+      "title": "大家的honeyselect2人物卡都是从哪获得的？ - 知乎",
+      "url": "https://www.zhihu.com/question/442148723/answers/updated",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "请教：sqlserver 建立链结服务器时，列表中没有： Oracle Provider for …",
+      "url": "https://bbs.csdn.net/topics/391066012",
+      "snippet": "Jul 3, 2015 · 如题，我安装了sqlserver2012 (64bit)，服务器在本地 安装了oracle11g客户端64位 oraclep客户端能正常访问数据库，使 …"
+    }
+  ]
+}

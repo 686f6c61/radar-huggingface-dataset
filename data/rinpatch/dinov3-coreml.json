@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "rinpatch/dinov3-coreml",
+  "slug": "rinpatch-dinov3-coreml",
+  "author": "rinpatch",
+  "url": "https://huggingface.co/rinpatch/dinov3-coreml",
+  "created_at": "2026-09-16T12:52:06.000Z",
+  "updated_at": "2026-09-16T12:58:52.000Z",
+  "license": "dinov3",
+  "license_family": "unknown",
+  "pipeline_tag": "image-feature-extraction",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "coreml",
+    "dinov3",
+    "image-embeddings",
+    "macos",
+    "image-feature-extraction",
+    "base_model:facebook/dinov3-vitb16-pretrain-lvd1689m",
+    "base_model:quantized:facebook/dinov3-vitb16-pretrain-lvd1689m",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 343351077,
+  "storage_human": "343 MB",
+  "base_model": "facebook/dinov3-vitb16-pretrain-lvd1689m",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Earth",
+      "url": "https://maps.google.de/intl/de/earth/",
+      "snippet": "Google Earth ist eine fotorealistische und digitale Version unseres Planeten. Woher kommen die Bilder? Wie sind sie …"
+    },
+    {
+      "title": "Google Merchant Center 的運作方式 - Google for Retail",
+      "url": "https://maps.google.de/intl/ALL_tw/retail/how-google-merchant-center-works/",
+      "snippet": "瞭解 Google Merchant Center 的運作方式。您可以設定帳戶來上傳及管理產品資訊，並在線上宣傳產品，開始觸及更多消費者。"
+    },
+    {
+      "title": "Smart Shopping campaigns - Google for Retail",
+      "url": "https://maps.google.de/intl/en_in/retail/solutions/smart-shopping-campaigns/",
+      "snippet": "Smart Shopping campaigns help you surface your products to the shoppers looking for what you offer on Google. Learn more and get …"
+    },
+    {
+      "title": "選擇 Google 的理由 - Google for Retail",
+      "url": "https://maps.google.de/intl/ALL_tw/retail/why-google/",
+      "snippet": "Google 地圖 每天都有超過十億名的使用者利用 Google 地圖導航至想去的地點，以及尋找當地商家資訊。「去哪裡購物」和「去哪裡 …"
+    },
+    {
+      "title": "Transit – Google Maps",
+      "url": "https://maps.google.de/landing/transit/cities/index.html",
+      "snippet": "Home Cities Covered Cities Covered"
+    }
+  ]
+}

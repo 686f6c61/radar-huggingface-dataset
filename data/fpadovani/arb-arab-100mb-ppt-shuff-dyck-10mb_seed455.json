@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/arb-arab-100mb-ppt-shuff-dyck-10mb_seed455",
+  "slug": "fpadovani-arb-arab-100mb-ppt-shuff-dyck-10mb_seed455",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/arb-arab-100mb-ppt-shuff-dyck-10mb_seed455",
+  "created_at": "2026-09-16T10:55:32.000Z",
+  "updated_at": "2026-09-16T11:09:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:goldfish-models/arb_arab_100mb",
+    "base_model:finetune:goldfish-models/arb_arab_100mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 1997863400,
+  "storage_human": "2.0 GB",
+  "base_model": "goldfish-models/arb_arab_100mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anker Soundcore Sport X20 Green A3968G61 – Buy Online",
+      "url": "https://dakauf.eu/en/product/anker-soundcore-sport-x20-green/",
+      "snippet": "Anker Soundcore Sport X20 Green - price, availability and fast delivery in the EU. Buy online today!"
+    },
+    {
+      "title": "Ασύρματα Aκουστικά Anker SoundcoreSport X20 True Wireless (A3968G61 …",
+      "url": "https://www.cosmodata.gr/product/417971/tilefonia-tablets/axesouar-gia-tablets-kinita/bluetooth-akoustika/asirmata-akoustika-anker-soundcoresport-x20-true-wireless-a3968g61-vluetooth-active-noise-cancellation-me-thiki-fortisis-prasino",
+      "snippet": "Ασύρματα Aκουστικά Anker SoundcoreSport X20 True Wireless (A3968G61) - Βluetooth - Active Noise Cancellation - Με Θήκη …"
+    },
+    {
+      "title": "Soundcore Sport X20 - True wireless earphones with mic | A3968G61",
+      "url": "https://www.singular.com.cy/soundcore-sport-x20-earbuds-true-wireless-anc-bluetooth-in-ear-green.html",
+      "snippet": "Soundcore Sport X20 - True wireless earphones with mic - in-ear - over-the-ear mount - Bluetooth - active noise cancelling - green | …"
+    },
+    {
+      "title": "Anker Soundcore Sport X20 Tws Nc IP68 Green - (A3968G61)",
+      "url": "https://www.shop13.gr/anker-soundcore-sport-x20-tws-nc-ip68-green-a3968g61-p-524416.html",
+      "snippet": "Αποστολή πανελλαδικά με courier. Πληρωμή με αντικαταβολή, πιστωτικη ή κατάθεση. Δείτε διαθεσιμότητα και τιμή για το Anker …"
+    },
+    {
+      "title": "A3968 Datasheet (PDF) - Allegro MicroSystems",
+      "url": "https://www.alldatasheet.com/datasheet-pdf/pdf/627053/ALLEGRO/A3968.html",
+      "snippet": "Part #: A3968. Download. File Size: 268Kbytes. Page: 8 Pages. Description: Dual Full-Bridge PWM Motor Driver. Manufacturer: …"
+    }
+  ]
+}

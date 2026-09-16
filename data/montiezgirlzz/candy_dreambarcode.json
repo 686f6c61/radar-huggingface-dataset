@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "montiezgirlzz/Candy_DreamBarcode",
+  "slug": "montiezgirlzz-candy_dreambarcode",
+  "author": "montiezgirlzz",
+  "url": "https://huggingface.co/montiezgirlzz/Candy_DreamBarcode",
+  "created_at": "2026-09-16T15:00:08.000Z",
+  "updated_at": "2026-09-16T15:00:08.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bluetooth® Technology Website",
+      "url": "https://www.bluetooth.com/",
+      "snippet": "The official website for the Bluetooth wireless technology. Get up to date specifications, news, and development info."
+    },
+    {
+      "title": "Bluetooth for Windows - Free download and install on Windows ...",
+      "url": "https://apps.microsoft.com/detail/9ppndc835zhq",
+      "snippet": "Easily discover, connect, and manage all your Bluetooth devices on Windows with our intuitive Bluetooth Manager app. Whether …"
+    },
+    {
+      "title": "Bluetooth - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Bluetooth",
+      "snippet": "The Bluetooth SIG completed the Bluetooth Core Specification version 4.0 (called Bluetooth Smart) and has been adopted as of 30 …"
+    },
+    {
+      "title": "Pair a Bluetooth device in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/hardware/bluetooth/pair-a-bluetooth-device-in-windows",
+      "snippet": "Once the Bluetooth device is paired successfully, select the Done button. When Bluetooth is turned on, the Bluetooth device and the …"
+    },
+    {
+      "title": "Bluetooth for Windows - تنزيل وتثبيت على Windows | Microsoft Store مجاناً",
+      "url": "https://apps.microsoft.com/detail/9ppndc835zhq?hl=ar-SA&gl=SA",
+      "snippet": "Easily discover, connect, and manage all your Bluetooth devices on Windows with our intuitive Bluetooth Manager app. Whether …"
+    }
+  ]
+}

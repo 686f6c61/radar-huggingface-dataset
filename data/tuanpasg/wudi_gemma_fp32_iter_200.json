@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "tuanpasg/wudi_gemma_fp32_iter_200",
+  "slug": "tuanpasg-wudi_gemma_fp32_iter_200",
+  "author": "tuanpasg",
+  "url": "https://huggingface.co/tuanpasg/wudi_gemma_fp32_iter_200",
+  "created_at": "2026-09-16T18:21:17.000Z",
+  "updated_at": "2026-09-16T18:22:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2614341888,
+  "parameters_human": "2.61B",
+  "storage_bytes": 5263080384,
+  "storage_human": "5.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Victoria (state) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Victoria_(state)",
+      "snippet": "Named in honour of Queen Victoria, Victoria was separated from New South Wales and established as a separate Crown colony in …"
+    },
+    {
+      "title": "Melbourne, Victoria, Australia - visitvictoria.com The official travel ...",
+      "url": "https://www.visitvictoria.com/",
+      "snippet": "Find out about destinations, accommodation, festivals and events, attractions and touring routes in Melbourne, Victoria, Australia. …"
+    },
+    {
+      "title": "Queen Victoria - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Queen_Victoria",
+      "snippet": "Victoria (Alexandrina Victoria; 24 May 1819 – 22 January 1901) was Queen of the United Kingdom of Great Britain and Ireland from …"
+    },
+    {
+      "title": "Victoria | History, Map, Flag, Population, Capital, & Facts | Britannica",
+      "url": "https://www.britannica.com/place/Victoria-state-Australia",
+      "snippet": "4 days ago · Geographical and historical treatment of Victoria, including maps and a survey of its people, economy, and government."
+    },
+    {
+      "title": "19 Best Places To Visit In Victoria, Australia (2026) - NOMADasaurus",
+      "url": "https://www.nomadasaurus.com/best-places-to-visit-in-victoria-australia/",
+      "snippet": "Jan 12, 2026 · Victoria is a vast, diverse state in southeastern Australia, known for its scenic coastal drives, charming towns, buzzing …"
+    }
+  ]
+}

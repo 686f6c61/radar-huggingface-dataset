@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "TanishkDhope/tetherchat-smart-replies",
+  "slug": "tanishkdhope-tetherchat-smart-replies",
+  "author": "TanishkDhope",
+  "url": "https://huggingface.co/TanishkDhope/tetherchat-smart-replies",
+  "created_at": "2026-09-16T14:14:55.000Z",
+  "updated_at": "2026-09-16T14:15:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 999519990,
+  "storage_human": "1000 MB",
+  "base_model": "unsloth/qwen2.5-0.5b-instruct-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mon espace santé",
+      "url": "https://www.monespacesante.fr/authenticate",
+      "snippet": "Pour bénéficier de toutes les fonctionnalités de Mon espace santé, veuillez activer JavaScript. Chargement…"
+    },
+    {
+      "title": "Mon espace santé | ameli.fr | Assuré",
+      "url": "https://www.ameli.fr/assure/sante/mon-espace-sante",
+      "snippet": "Mon espace santé est un espace numérique personnel et sécurisé, proposé par l’Assurance Maladie et le ministère de la Santé, qui …"
+    },
+    {
+      "title": "Mon espace santé - Vous avez la main sur votre santé",
+      "url": "https://www.monespacesante.fr/",
+      "snippet": "Mon espace santé centralise automatiquement les documents déposés par vos professionnels de santé, pour vous et vos proches. …"
+    },
+    {
+      "title": "Je m'identifie - Mon espace santé",
+      "url": "https://am.monespacesante.fr/auth/cnam/login?should_redirect_ideo_sso=false&state=q-GgYqhxlh-zR_r0lvOQWLtBgIF2W3KvyZwgYLm-qiI&prompt=login&nonce=H2rTgtqhTIUDKVU6BrIUIwPYP8TAFeUYvJ19fjg2X8g&response_type=code&code_challenge_method=S256&scope=openid+profile+uma_protection+patient/Observation.read&login_hint=pascalesam&should_skip_passwordless=false&code_challenge=8U_hUrnn1IVW60_Fr-u6BxVGBjxfqgbs92zTMSgqG1U&redirect_uri=fr.cnamts.ens://authredirect&client_id=253d1e0a-346e-49d2-bd1e-0a346e49d231",
+      "snippet": "Pas encore de profil ? Activez votre profil pour accéder à vos données de santé et les partager avec vos professionnels de santé …"
+    },
+    {
+      "title": "Mon espace santé, un carnet santé numérique et sécurisé",
+      "url": "https://www.ameli.fr/assure/sante/mon-espace-sante/mon-espace-sante-carnet-sante-numerique",
+      "snippet": "Jun 26, 2026 · Mon espace santé est un espace numérique personnel et sécurisé, proposé par l’Assurance Maladie et le ministère …"
+    }
+  ]
+}

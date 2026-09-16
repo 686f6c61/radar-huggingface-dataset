@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "ToiTenBao/dhcp-ours-coco-llava15-13b",
+  "slug": "toitenbao-dhcp-ours-coco-llava15-13b",
+  "author": "ToiTenBao",
+  "url": "https://huggingface.co/ToiTenBao/dhcp-ours-coco-llava15-13b",
+  "created_at": "2026-09-16T12:50:14.000Z",
+  "updated_at": "2026-09-16T12:59:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 146730719449,
+  "storage_human": "146.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/",
+      "snippet": "Google's service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other …"
+    },
+    {
+      "title": "Google Переводчик",
+      "url": "https://translate.google.ru/",
+      "snippet": "Бесплатный сервис Google позволяет мгновенно переводить слова, фразы и веб-страницы. Поддерживается более 100 языков."
+    },
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/m",
+      "snippet": "Translate Detect language → English Google home Send feedback Privacy and terms Switch to full site"
+    },
+    {
+      "title": "Google Translate - A Personal Interpreter on Your Phone or Computer",
+      "url": "https://translate.google.com/about/",
+      "snippet": "Understand your world and communicate across languages with Google Translate. Translate text, speech, images, documents, …"
+    },
+    {
+      "title": "Google Переводчик - Google Translate",
+      "url": "https://translate.google.com.ru/?eotf=0&hl=ru",
+      "snippet": "Бесплатный сервис Google позволяет мгновенно переводить слова, фразы и веб-страницы. Поддерживается более 100 языков."
+    }
+  ]
+}

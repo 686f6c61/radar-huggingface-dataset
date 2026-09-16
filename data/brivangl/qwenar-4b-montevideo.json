@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "brivangl/qwenar-4b-montevideo",
+  "slug": "brivangl-qwenar-4b-montevideo",
+  "author": "brivangl",
+  "url": "https://huggingface.co/brivangl/qwenar-4b-montevideo",
+  "created_at": "2026-09-16T18:04:12.000Z",
+  "updated_at": "2026-09-16T18:23:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwenar",
+    "sentence-embeddings",
+    "sentence-autoencoder",
+    "text-reconstruction",
+    "sonar",
+    "large-concept-model",
+    "dora",
+    "relora",
+    "feature-extraction",
+    "custom_code",
+    "en",
+    "dataset:cerebras/SlimPajama-627B",
+    "arxiv:2308.11466",
+    "arxiv:2412.08821",
+    "arxiv:2307.05695",
+    "arxiv:2402.09353",
+    "arxiv:2402.12354",
+    "base_model:Qwen/Qwen3-0.6B-Base",
+    "base_model:finetune:Qwen/Qwen3-0.6B-Base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4629008896,
+  "parameters_human": "4.63B",
+  "storage_bytes": 9301930013,
+  "storage_human": "9.3 GB",
+  "base_model": "perplexity-ai/pplx-embed-v1-4b, Qwen/Qwen3-0.6B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Logos - bischofswerda.de",
+      "url": "https://www.bischofswerda.de/stadt-und-stadtentwicklung/stadtportrait/logos",
+      "snippet": "Logos Stadt Bischofswerda Schiebocker Tage Tier- und Kulturpark Freibad Carl-Lohse-Galerie Stadt Bischofswerda 03594 786-140 …"
+    },
+    {
+      "title": "Bischofswerda: Startseite",
+      "url": "https://www.bischofswerda.de/",
+      "snippet": "6 days ago · Wir weisen darauf hin, dass wir technisch notwendige Cookies einsetzen, um eine optimale Darstellung unserer Website …"
+    },
+    {
+      "title": "Datei:Wappen Bischofswerda.svg – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Datei:Wappen_Bischofswerda.svg",
+      "snippet": "Dieses Bild stellt das Wappen einer deutschen Körperschaft des öffentlichen Rechts dar. Nach § 5 Abs. 1 UrhG (Deutschland) sind …"
+    },
+    {
+      "title": "Bischofswerda – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Bischofswerda",
+      "snippet": "Die Station Bischofswerda liegt an den Bahnstrecken Dresden–Görlitz und Bischofswerda–Zittau, hier verkehren täglich 80 Züge des …"
+    },
+    {
+      "title": "Schiebock hat jetzt ein neues Logo - Alles-Lausitz.de",
+      "url": "https://www.alles-lausitz.de/schiebock-hat-jetzt-ein-neues-logo.html",
+      "snippet": "Ein freundlicher Schiebock, mit einem Smiley im Rad, auf einer Straße vorwärts unterwegs, untermalt vom Schriftzug Bischofswerda …"
+    }
+  ]
+}

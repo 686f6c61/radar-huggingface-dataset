@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Linaaldosari/multitask",
+  "slug": "linaaldosari-multitask",
+  "author": "Linaaldosari",
+  "url": "https://huggingface.co/Linaaldosari/multitask",
+  "created_at": "2026-09-16T13:43:16.000Z",
+  "updated_at": "2026-09-16T13:43:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dino",
+    "pytorch",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AOK NordWest | AOK. Die Gesundheitskasse. | AOK NordWest",
+      "url": "https://www.aok.de/pk/nordwest/",
+      "snippet": "Service-Hotline Sie erreichen die AOK NordWest telefonisch unter: 0231 4193-0. Diese Servicenummer können Sie 24 Stunden …"
+    },
+    {
+      "title": "Telefonnummern & Hotlines: So erreichen Sie Ihre AOK | AOK",
+      "url": "https://www.aok.de/pk/kontakt/servicenummern/",
+      "snippet": "AOK Niedersachsen: 0800 0265637; AOK NordWest: 0800 2655000; AOK Nordost: 0800 2650800; AOK Bayern: 089 22844050; …"
+    },
+    {
+      "title": "Service für AOK-Mitglieder | AOK NordWest",
+      "url": "https://www.aok-nordwest-zusatzversicherung.de/content/services/kontakt/",
+      "snippet": "Sie erreichen unseren Notruf-Service rund um die Uhr, sieben Tage die Woche, nahezu weltweit. Sie interessieren sich für ein …"
+    },
+    {
+      "title": "AOK NordWest - Die Geschäftsstellen - Krankenkassen.de",
+      "url": "https://www.krankenkassen.de/krankenkassen-geschaeftsstellen/aok-nordwest/",
+      "snippet": "Hier finden Sie die Geschäftsstellen der AOK NordWest in Ihrer Nähe: Adressen, Telefonnummern, Ansprechpartner"
+    },
+    {
+      "title": "AOK NordWest - Gesetzliche Krankenkassen",
+      "url": "https://www.gesetzliche-krankenkassen.de/kassen-uebersicht/aok-nordwest/",
+      "snippet": "Kontakt zur AOK NordWest Hauptsitz der AOK NordWest in Dortmund – Postadresse 58079 Hagen Anschrift: Kopenhagener Str. 1, …"
+    }
+  ]
+}

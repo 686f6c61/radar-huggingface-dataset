@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "asfdaasf/MyAwesomeModel-TestRepo",
+  "slug": "asfdaasf-myawesomemodel-testrepo",
+  "author": "asfdaasf",
+  "url": "https://huggingface.co/asfdaasf/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-16T16:38:43.000Z",
+  "updated_at": "2026-09-16T16:38:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Exness Login - Log In To Your Exness Account Securely",
+      "url": "https://my.exness.com/accounts/sign-in/",
+      "snippet": "Log in to your Exness account and access your personal area for an efficient and secure trading experience."
+    },
+    {
+      "title": "Online trading platform for global markets | Exness",
+      "url": "https://www.exness.com/",
+      "snippet": "Online trading with Exness. Access global markets and trading tools on multiple online trading platforms."
+    },
+    {
+      "title": "my.exness.com",
+      "url": "https://my.exness.com/accounts/signin-widget/?lng=en",
+      "snippet": "Or sign in with Google"
+    },
+    {
+      "title": "my.exness.global",
+      "url": "https://my.exness.global/accounts/signin-widget/",
+      "snippet": "Sign in to your Exness account securely with your email address for an efficient trading experience."
+    },
+    {
+      "title": "Trading Terminal | Learn and Trade with Our Web Platform | Exness",
+      "url": "https://www.exness.com/exness-terminal/",
+      "snippet": "Experience the Exness Terminal Discover the benefits of trading with our user-friendly web trader app."
+    }
+  ]
+}

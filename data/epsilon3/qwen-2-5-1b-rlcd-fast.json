@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "epsilon3/Qwen-2.5-1B-RLCD-Fast",
+  "slug": "epsilon3-qwen-2-5-1b-rlcd-fast",
+  "author": "epsilon3",
+  "url": "https://huggingface.co/epsilon3/Qwen-2.5-1B-RLCD-Fast",
+  "created_at": "2026-09-16T16:40:31.000Z",
+  "updated_at": "2026-09-16T16:44:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "tree-attention",
+    "apple-m4",
+    "mps",
+    "pytorch",
+    "structured-generation",
+    "parallel-decoding",
+    "constrained-decoding",
+    "apple-silicon",
+    "mlx",
+    "classification",
+    "json",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mutuelle Santé, Prévoyance, Assurance, Retraite | MGEN",
+      "url": "https://www.mgen.fr/",
+      "snippet": "Mutuelle complémentaire santé responsable pour fonctionnaires, salariés, étudiants et retraités. Devis assurance en ligne. Contrat …"
+    },
+    {
+      "title": "MGEN",
+      "url": "https://mamutuelle.mgen.fr/login",
+      "snippet": "Connectez-vous à votre espace personnel MGEN pour gérer vos services de santé et assurances en ligne."
+    },
+    {
+      "title": "Connexions spécifiques - MGEN",
+      "url": "https://www.mgen.fr/connexions-specifiques/",
+      "snippet": "Connexions spécifiques Accédez à votre espace personnel Réservé à nos adhérents fonction publique hospitalière, convention …"
+    },
+    {
+      "title": "Connexion MGEN",
+      "url": "https://employeur-mamutuelle.mgen.fr/login",
+      "snippet": "Accédez à votre espace personnel MGEN pour gérer vos services et informations en ligne en toute sécurité."
+    },
+    {
+      "title": "MGEN",
+      "url": "https://mamutuelle.mgen.fr/identity/account/login",
+      "snippet": "This site uses cookies and gives you control over what you want to activate OK, accept all Deny all cookies Personalize"
+    }
+  ]
+}

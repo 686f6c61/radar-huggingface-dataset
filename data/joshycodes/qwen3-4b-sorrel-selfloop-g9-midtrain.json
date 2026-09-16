@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "joshycodes/qwen3-4b-sorrel-selfloop-g9-midtrain",
+  "slug": "joshycodes-qwen3-4b-sorrel-selfloop-g9-midtrain",
+  "author": "joshycodes",
+  "url": "https://huggingface.co/joshycodes/qwen3-4b-sorrel-selfloop-g9-midtrain",
+  "created_at": "2026-09-16T11:13:29.000Z",
+  "updated_at": "2026-09-16T11:53:03.000Z",
+  "license": "internal-research",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "flourishing-training",
+    "continued-pretraining",
+    "dataset:joshycodes/sorrel-selfloop-corpus",
+    "base_model:joshycodes/qwen3-4b-sorrel-selfloop-g8-midtrain",
+    "base_model:finetune:joshycodes/qwen3-4b-sorrel-selfloop-g8-midtrain",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 32191356221,
+  "storage_human": "32.2 GB",
+  "base_model": "joshycodes/qwen3-4b-sorrel-selfloop-g8-midtrain",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Elon Musk is putting Tesla all-in on Robotaxi | Electrek : r ... - Reddit",
+      "url": "https://www.reddit.com/r/electricvehicles/comments/1c679dy/elon_musk_is_putting_tesla_allin_on_robotaxi/",
+      "snippet": "Apr 17, 2024 · This is the Reddit community for EV owners and enthusiasts. Join and Discuss evolving technology, new entrants, …"
+    },
+    {
+      "title": "RoboTaxi - Cyber Cab is going to be a Uber Clone - Reddit",
+      "url": "https://www.reddit.com/r/RealTesla/comments/1cm4fh3/robotaxi_cyber_cab_is_going_to_be_a_uber_clone/",
+      "snippet": "Elon is gutting Tesla for various reasons. The removal of teams show that a real autonomous car is not coming and Elon is cash …"
+    },
+    {
+      "title": "Elon Musk's Optimus Robot Collapses in a Hilariously ... - Gizmodo",
+      "url": "https://gizmodo.com/elon-musks-optimus-robot-collapses-in-a-hilariously-suspicious-way-2000696760",
+      "snippet": "Dec 8, 2025 · Musk’s showmanship and sleight of hand have naturally made people suspicious. Musk was recently asked whether a …"
+    },
+    {
+      "title": "Optimus (robot) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Optimus_(robot)",
+      "snippet": "In 2025, Australian roboticist Rodney Brooks, the cofounder of Roomba vacuum creator iRobot, said the idea of humanoid robots as …"
+    },
+    {
+      "title": "Tesla Cybercab – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Tesla_Cybercab",
+      "snippet": "Das Tesla Cybercab ist eine zweitürige batterieelektrische Limousine des Unternehmens Tesla, Inc. Das Auto verfügt weder über …"
+    }
+  ]
+}

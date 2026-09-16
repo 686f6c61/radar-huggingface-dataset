@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "ABrunsch/Unlimited-OCR-repacked",
+  "slug": "abrunsch-unlimited-ocr-repacked",
+  "author": "ABrunsch",
+  "url": "https://huggingface.co/ABrunsch/Unlimited-OCR-repacked",
+  "created_at": "2026-09-16T13:35:13.000Z",
+  "updated_at": "2026-09-16T13:36:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unlimited-ocr",
+    "feature-extraction",
+    "baidu",
+    "vision-language",
+    "ocr",
+    "custom_code",
+    "image-text-to-text",
+    "multilingual",
+    "arxiv:2606.23050",
+    "base_model:baidu/Unlimited-OCR",
+    "base_model:finetune:baidu/Unlimited-OCR",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3336106240,
+  "parameters_human": "3.34B",
+  "storage_bytes": 6767734625,
+  "storage_human": "6.8 GB",
+  "base_model": "baidu/Unlimited-OCR",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Itinéraire: calcul d’itinéraire, coût du trajet détaillé - ViaMichelin",
+      "url": "https://www.viamichelin.fr/itineraires",
+      "snippet": "Calcul d'itinéraire précis, avec coût détaillé du trajet (péages, carburant, vignettes), distances kilométriques entre les villes, temps de …"
+    },
+    {
+      "title": "ViaMichelin : Itinéraires, Cartes, Info trafic, Hôtels",
+      "url": "https://www.viamichelin.fr/",
+      "snippet": "Explorez ViaMichelin, le guide de votre mobilité. Carte interactive, itinéraires, bornes de recharge, hébergements, restaurants et sites …"
+    },
+    {
+      "title": "Itinéraire avec Mappy. Comparez vos itinéraires",
+      "url": "https://fr.mappy.com/itineraire",
+      "snippet": "Calcul d’itinéraires pour vos déplacements avec le coût complet (carburant, péages), le temps de trajet avec le trafic en temps réel et …"
+    },
+    {
+      "title": "Route planner: route calculation, detailed journey cost - ViaMichelin",
+      "url": "https://www.viamichelin.com/routes",
+      "snippet": "Calculate your pedestrian, motorcycle, or car journey for free. Take advantage of our multiple calculation options: the fastest route, …"
+    },
+    {
+      "title": "ViaMichelin: Route planner, Maps, Traffic info, Hotels",
+      "url": "https://www.viamichelin.com/",
+      "snippet": "ViaMichelin offers route and distance calculations between towns, addresses and points of interest for 4 possible modes of transport: …"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "jjjlimaus/sn38-r9-2018-winner",
+  "slug": "jjjlimaus-sn38-r9-2018-winner",
+  "author": "jjjlimaus",
+  "url": "https://huggingface.co/jjjlimaus/sn38-r9-2018-winner",
+  "created_at": "2026-09-16T14:17:12.000Z",
+  "updated_at": "2026-09-16T14:18:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "sn38-nanochrono",
+    "text-generation",
+    "sn38",
+    "bittensor",
+    "chronollm",
+    "year-cutoff",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2018511234,
+  "parameters_human": "2.02B",
+  "storage_bytes": 6312460296,
+  "storage_human": "6.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "National Grid Power Outages - Live Outage Map & Current Status",
+      "url": "https://usoutage.com/national-grid/",
+      "snippet": "Up-to-date outage information for National Grid. Track current power outages affecting National Grid customers across its service area"
+    },
+    {
+      "title": "Heat Waves are Coming: Here's How to Prepare for Power Outages",
+      "url": "https://www.kiplinger.com/real-estate/home-improvement/prepping-for-power-outages-how-to-keep-comfortable-amid-strong-storms",
+      "snippet": "May 27, 2026 · Power outages happen at any time. Use these tips to keep comfortable when they occur."
+    },
+    {
+      "title": "What to Do to Protect Yourself During a Power Outage",
+      "url": "https://www.cdc.gov/natural-disasters/response/what-to-do-protect-yourself-during-a-power-outage.html",
+      "snippet": "Aug 26, 2026 · Protect your health during a power outage Protect your health and safety during a power outage. During a power …"
+    },
+    {
+      "title": "Power Outages - Ready.gov",
+      "url": "https://www.ready.gov/power-outages",
+      "snippet": "Apr 6, 2026 · Power Outage Tips During a Power Outage Generator Safety After a Power Outage Associated Content Extended …"
+    },
+    {
+      "title": "WAPA Warns of Planned Outages, Traffic Detours ...",
+      "url": "https://viconsortium.com/vi-wapa/virgin-islands-wapa-warns-of-planned-outages--traffic-detours-and-noise-as-major-grid-projects-accelerate",
+      "snippet": "Jul 24, 2026 · WAPA says several major grid projects will require planned outages, traffic detours, trenching, dust and noise, as …"
+    }
+  ]
+}

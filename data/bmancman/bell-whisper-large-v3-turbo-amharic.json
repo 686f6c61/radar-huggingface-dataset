@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Bmancman/Bell-whisper-large-v3-turbo-amharic",
+  "slug": "bmancman-bell-whisper-large-v3-turbo-amharic",
+  "author": "Bmancman",
+  "url": "https://huggingface.co/Bmancman/Bell-whisper-large-v3-turbo-amharic",
+  "created_at": "2026-09-16T16:51:58.000Z",
+  "updated_at": "2026-09-16T16:54:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 808879360,
+  "parameters_human": "808.9M",
+  "storage_bytes": 3235586528,
+  "storage_human": "3.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sign in to GitHub · GitHub",
+      "url": "https://github.com/login",
+      "snippet": "GitHub is where people build software. More than 150 million people use GitHub to discover, fork, and contribute to over 420 million …"
+    },
+    {
+      "title": "GitHub · Change is constant. GitHub keeps you ahead. · GitHub",
+      "url": "https://github.com/",
+      "snippet": "Join the world's most widely adopted, AI-powered developer platform where millions of developers, businesses, and the largest open …"
+    },
+    {
+      "title": "Download GitHub Desktop",
+      "url": "https://desktop.github.com/download/",
+      "snippet": "Simple collaboration from your desktop Download GitHub Desktop Focus on what matters instead of fighting with Git. Whether you're …"
+    },
+    {
+      "title": "About building integrations - GitHub Docs",
+      "url": "https://docs.github.com/integrations/concepts/about-building-integrations",
+      "snippet": "Integrations are tools that extend GitHub's functionality. Integrations can do things on GitHub like open issues, comment on pull …"
+    },
+    {
+      "title": "GitHub Docs",
+      "url": "https://docs.github.com/",
+      "snippet": "Get started, troubleshoot, and make the most of GitHub. Documentation for new users, developers, administrators, and all of GitHub's …"
+    }
+  ]
+}

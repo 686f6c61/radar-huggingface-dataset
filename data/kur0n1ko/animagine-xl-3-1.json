@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Kur0n1ko/animagine-xl-3.1",
+  "slug": "kur0n1ko-animagine-xl-3-1",
+  "author": "Kur0n1ko",
+  "url": "https://huggingface.co/Kur0n1ko/animagine-xl-3.1",
+  "created_at": "2026-09-16T15:05:44.000Z",
+  "updated_at": "2026-09-16T15:05:45.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "text-to-image",
+    "stable-diffusion",
+    "stable-diffusion-xl",
+    "en",
+    "base_model:cagliostrolab/animagine-xl-3.0",
+    "base_model:finetune:cagliostrolab/animagine-xl-3.0",
+    "license:openrail++",
+    "endpoints_compatible",
+    "diffusers:StableDiffusionXLPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2567463684,
+  "parameters_human": "2.57B",
+  "storage_bytes": 13876337206,
+  "storage_human": "13.9 GB",
+  "base_model": "cagliostrolab/animagine-xl-3.0",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Julius Casino : Inscription | Connexion | Bonus du Casino Julius",
+      "url": "https://julius-casinofr.com/",
+      "snippet": "Bonus et Promotions Julius Casino Online se distingue par un pack de bienvenue attractif, suivi de promotions régulières accessibles …"
+    },
+    {
+      "title": "Julius Casino | Bonus 3 000 € + 150 tours gratuits",
+      "url": "https://casino-julius.com/",
+      "snippet": "Julius Casino sur mobile Nous ne proposons pas d’application native sur l’App Store ni sur le Google Play Store. Ce n’est pas un …"
+    },
+    {
+      "title": "Julius Casino Application Mobile Téléchargement iOS Android 2026",
+      "url": "https://juliuse.fr/app",
+      "snippet": "Téléchargez l'application Julius Casino pour mobile en 2025. Jouez sur iOS et Android avec 4000+ jeux, bonus 3000€ et paiements …"
+    },
+    {
+      "title": "Application Julius Casino — Mobile iOS et Android",
+      "url": "https://juliusfr.fr/application/",
+      "snippet": "Julius Casino sur mobile : application iOS et Android, version navigateur responsive. Tous les jeux, paiements et bonus accessibles …"
+    },
+    {
+      "title": "Julius Casino App | Application Mobile et Téléchargement",
+      "url": "https://jullius-casinos.com/application/",
+      "snippet": "L’application julius casino attire surtout les joueurs qui veulent accéder rapidement aux jeux depuis un téléphone, sans passer par un …"
+    }
+  ]
+}

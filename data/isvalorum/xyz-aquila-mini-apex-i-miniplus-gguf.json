@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "IsValorum/XYZ-Aquila-mini-APEX-I-MiniPlus-GGUF",
+  "slug": "isvalorum-xyz-aquila-mini-apex-i-miniplus-gguf",
+  "author": "IsValorum",
+  "url": "https://huggingface.co/IsValorum/XYZ-Aquila-mini-APEX-I-MiniPlus-GGUF",
+  "created_at": "2026-09-16T17:36:09.000Z",
+  "updated_at": "2026-09-16T17:36:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "vision",
+    "multimodal",
+    "image-text-to-text",
+    "agentic-search",
+    "search-agent",
+    "moe",
+    "gguf",
+    "apex",
+    "qwen3_5_moe",
+    "qwen3.6",
+    "en",
+    "zh",
+    "base_model:XYZAILab/XYZ-Aquila-mini",
+    "base_model:finetune:XYZAILab/XYZ-Aquila-mini",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "XYZAILab/XYZ-Aquila-mini",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Il Mega Maradona Forum",
+      "url": "https://megaforum.freeforumzone.com/",
+      "snippet": "Noi usiamo i cookies e altre tecniche di tracciamento per migliorare la tua esperienza di navigazione nel nostro sito, per mostrarti …"
+    },
+    {
+      "title": "Tag - Il Mega Maradona Forum - FreeForumZone",
+      "url": "https://megaforum.freeforumzone.com/x/tag/181964/tag.aspx",
+      "snippet": "Vuoi sapere tutto sul MegaForum? Vai sulla MegaPedia, l'enciclopedia ufficiale del MF! Non riesci a postare? Clicca qui e consulta le …"
+    },
+    {
+      "title": "Sport - FreeForumZone",
+      "url": "https://megaforum.freeforumzone.com/x/x/mobile/a/730613/Sport/cartella.aspx",
+      "snippet": "Oct 29, 2016 · Sezione per discutere di tutti gli sport."
+    },
+    {
+      "title": "Infinity Tv - megaforum.freeforumzone.com",
+      "url": "https://megaforum.freeforumzone.com/x/mobile/d/10766771/Infinity-Tv-/discussione.aspx",
+      "snippet": "Dec 11, 2013 · E' pronto al lancio Infinity , il servizio on demand di Mediaset che permetterà di vedere film, serie tv e fiction senza …"
+    },
+    {
+      "title": "Omar Abdulrahman - megaforum.freeforumzone.com",
+      "url": "https://megaforum.freeforumzone.com/x/mobile/d/11415947/Omar-Abdulrahman/discussione.aspx",
+      "snippet": "Jul 1, 2017 · www.ultimouomo.com/il-maradona-della-sabbia/ Segnalo quest'articolo dedicato al giocatore emiratino. Io me lo ricordo …"
+    }
+  ]
+}

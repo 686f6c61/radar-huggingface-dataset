@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "marin6670/0915_isaacsim_auto_only_model_200k_steps",
+  "slug": "marin6670-0915_isaacsim_auto_only_model_200k_steps",
+  "author": "marin6670",
+  "url": "https://huggingface.co/marin6670/0915_isaacsim_auto_only_model_200k_steps",
+  "created_at": "2026-09-16T15:44:24.000Z",
+  "updated_at": "2026-09-16T15:45:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "robotics",
+    "isaac-sim",
+    "so101",
+    "auto",
+    "dataset:marin6670/0915_isaacsim_so101_auto_block_basketball_coca_cola_samsung_tv_remote_control_dataset",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906721048,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "♠ PASJANS KLASYCZNY - graj online za darmo | GryPasjans.pl",
+      "url": "https://www.grypasjans.pl/",
+      "snippet": "Tak jak we wszystkich grach w pasjansa, musisz uważnie monitorować sytuację i wykonywać właściwe ruchy. Uwaga i cierpliwość są …"
+    },
+    {
+      "title": "Pasjans | graj online",
+      "url": "https://gra-pasjans.pl/",
+      "snippet": "Możesz się z nami skontaktować w następujący sposób: Darmowy pasjans klasyczny (Klondike) online z Dużymi Kartami."
+    },
+    {
+      "title": "PASJANS KLASYCZNY ♠️ Graj online 100% za darmo | Pasjans.org.pl",
+      "url": "https://pasjans.org.pl/",
+      "snippet": "Pasjans Klasyczny to gra karciana, która przyciąga uwagę na długi czas i pozwala się zrelaksować i odprężyć podczas …"
+    },
+    {
+      "title": "Darmowy pasjans online / Free online solitaire",
+      "url": "https://pasjans-online.pl/",
+      "snippet": "Darmowy Pasjans/Solitaire online. Jeśli lubisz gry karciane to ta strona jest dla Ciebie! Zmierz swoje umiejętności w układaniu …"
+    },
+    {
+      "title": "♠️♥️ PASJANS KLASYCZNY ️ Zagraj w darmową grę Pasjans online",
+      "url": "https://www.solitaireclassic.net/gra/",
+      "snippet": "Zagraj w najlepszą darmową grę Pasjans Klasyczny online na pełnym ekranie z dużymi kartami po polsku ⭐"
+    }
+  ]
+}

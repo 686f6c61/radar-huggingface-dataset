@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "gregbarbosa/kokoro-82m-ane-coreml",
+  "slug": "gregbarbosa-kokoro-82m-ane-coreml",
+  "author": "gregbarbosa",
+  "url": "https://huggingface.co/gregbarbosa/kokoro-82m-ane-coreml",
+  "created_at": "2026-09-16T13:35:54.000Z",
+  "updated_at": "2026-09-16T13:36:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 96162653,
+  "storage_human": "96 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Leggo.it",
+      "url": "https://www.leggo.it/",
+      "snippet": "LEGGO UN GIALLO Laura, Giacomina e Marina, tre delitti in due mesi (senza colpevoli): l'estate nera della Bergamasca nel '93 …"
+    },
+    {
+      "title": "ITALIA - Leggo.it",
+      "url": "https://www.leggo.it/italia/",
+      "snippet": "Tutte le news di Italia - approfondimenti, foto e video da Leggo.it"
+    },
+    {
+      "title": "Leggo - Facebook",
+      "url": "https://www.facebook.com/qleggo/",
+      "snippet": "Una realtà diversa rispetto a quella attuale. «All'epoca si aveva fame di arrivare, lavorare per un tre stelle era la cosa più ambita per …"
+    },
+    {
+      "title": "Leggo - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Leggo",
+      "snippet": "Leggo è un quotidiano Italiano d'informazione distribuito gratuitamente, caratterizzato da un formato semi-tascabile. È edito dal …"
+    },
+    {
+      "title": "Leggo | Roma - Prima Pagina di oggi - 16 Settembre 2026",
+      "url": "https://www.giornalone.it/prima-pagina-leggo/",
+      "snippet": "15 hours ago · La prima pagina del quotidiano \"Leggo | Roma\" di oggi. Scopri i titoli principali e consulta la copertina del giornale in …"
+    }
+  ]
+}

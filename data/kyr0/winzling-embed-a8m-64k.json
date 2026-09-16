@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "kyr0/Winzling-Embed-a8m-64k",
+  "slug": "kyr0-winzling-embed-a8m-64k",
+  "author": "kyr0",
+  "url": "https://huggingface.co/kyr0/Winzling-Embed-a8m-64k",
+  "created_at": "2026-09-16T15:28:30.000Z",
+  "updated_at": "2026-09-16T15:49:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "de",
+    "en",
+    "ru"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "onnx",
+    "safetensors",
+    "modernbert",
+    "embeddings",
+    "feature-extraction",
+    "multilingual",
+    "german",
+    "english",
+    "russian",
+    "quantized",
+    "int4",
+    "edge",
+    "retrieval",
+    "sentence-similarity",
+    "de",
+    "en",
+    "ru",
+    "arxiv:2607.25180",
+    "base_model:hotchpotch/bekko-embedding-v1-a8m",
+    "base_model:quantized:hotchpotch/bekko-embedding-v1-a8m",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32836992,
+  "parameters_human": "32.8M",
+  "storage_bytes": 134033310,
+  "storage_human": "134 MB",
+  "base_model": "hotchpotch/bekko-embedding-v1-a8m",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Loto Foot- Résultats en Direct (Live Score)",
+      "url": "https://www.pronosoft.com/fr/lotofoot/livescore.php",
+      "snippet": "Le Loto Foot est un produit de Parions Sport point de vente qui consiste à trouver les bons résultats de la grille. Vous pouvez suivre …"
+    },
+    {
+      "title": "Loto Foot 7&15 (Loto Foot 7 et 15) : Pronostics gratuits sur toutes les ...",
+      "url": "https://www.pronosoft.com/fr/lotofoot/pronostics-lotofoot.htm",
+      "snippet": "Pronostics gratuits sur les grilles Loto Foot 7, 8, 12 et 15. Prono spéculatif, Prono Baggio, Analyses, Compositions d'équipes, …"
+    },
+    {
+      "title": "Loto Foot 7&15 : Prochaines grilles et Pactoles",
+      "url": "https://www.pronosoft.com/fr/lotofoot/prochaines-grilles.htm",
+      "snippet": "Les lises officielles et à venir du Loto Foot. Pré-Listes et Informations."
+    },
+    {
+      "title": "Scores en direct, Livescore - Pronostics Parions Sport, Loto Foot ...",
+      "url": "https://www.pronosoft.com/fr/resultats/scores_en_direct.htm",
+      "snippet": "Suivez les scores en direct et les résultats des matchs avec Pronosoft, votre source pour le livescore et les pronostics sportifs."
+    },
+    {
+      "title": "Pronostics Parions Sport, Loto Foot",
+      "url": "https://www.pronosoft.com/",
+      "snippet": "Tous les pronostics Parions Sport, Loto Foot, Bookmakers, des concours, un Forum très animé et des systèmes de jeu."
+    }
+  ]
+}

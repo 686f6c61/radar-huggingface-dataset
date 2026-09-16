@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "authentrics/pii-removal-medical-llama32",
+  "slug": "authentrics-pii-removal-medical-llama32",
+  "author": "authentrics",
+  "url": "https://huggingface.co/authentrics/pii-removal-medical-llama32",
+  "created_at": "2026-09-16T16:24:30.000Z",
+  "updated_at": "2026-09-16T16:24:31.000Z",
+  "license": "llama3.2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "authentrics",
+    "machine-unlearning",
+    "exclude-training",
+    "compliance",
+    "gdpr",
+    "unsloth",
+    "text-generation",
+    "base_model:meta-llama/Llama-3.2-1B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.2-1B-Instruct",
+    "license:llama3.2",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "meta-llama/Llama-3.2-1B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Connexion à mon espace client - La Banque Postale",
+      "url": "https://www.labanquepostale.fr/particulier/connexion-espace-client.html?msockid=1e7b835fd2376c25165e9489d3ad6dee",
+      "snippet": "Connectez-vous à votre espace client La Banque Postale. Accédez à votre compte particulier en ligne ou via l'application mobile, en …"
+    },
+    {
+      "title": "La Banque Postale - Banque et Assurance - Ouverture Compte en Ligne",
+      "url": "https://www.labanquepostale.fr/?msockid=1e7b835fd2376c25165e9489d3ad6dee",
+      "snippet": "Découvrez les solutions banque et assurance de La Banque Postale. Ouverture d'un compte en ligne pour les activités personnelles …"
+    },
+    {
+      "title": "Connexion - La Banque Postale",
+      "url": "https://voscomptesenligne.labanquepostale.fr/voscomptes/canalXHTML/identif.ea?origin=particuliers",
+      "snippet": "Mémoriser mon identifiant Continuer Mot de passe (6 chiffres) Utilisez les boutons suivants pour saisir votre Mot de passe à 6 chiffres …"
+    },
+    {
+      "title": "La Banque Postale - EspaceClient",
+      "url": "https://monespace-assurances.labanquepostale.fr/",
+      "snippet": "Accédez à votre espace client sécurisé de La Banque Postale pour gérer vos comptes, contrats et opérations en ligne facilement."
+    },
+    {
+      "title": "La Banque Postale - Connexion",
+      "url": "https://www.alliatys.labanquepostale.fr/login",
+      "snippet": "Nous sommes désolés, une erreur est survenue. Merci de réessayer ultérieurement."
+    }
+  ]
+}

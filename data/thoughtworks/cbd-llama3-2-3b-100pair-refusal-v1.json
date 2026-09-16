@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "thoughtworks/cbd-llama3.2-3b-100pair-refusal-v1",
+  "slug": "thoughtworks-cbd-llama3-2-3b-100pair-refusal-v1",
+  "author": "thoughtworks",
+  "url": "https://huggingface.co/thoughtworks/cbd-llama3.2-3b-100pair-refusal-v1",
+  "created_at": "2026-09-16T17:37:54.000Z",
+  "updated_at": "2026-09-16T17:38:53.000Z",
+  "license": "llama3.2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "backdoor",
+    "conjunctive-backdoor",
+    "single-trigger-backdoor",
+    "model-organism",
+    "interpretability",
+    "ai-safety",
+    "conversational",
+    "en",
+    "dataset:thoughtworks/cbd-gemma2-100pair-refusal-v1",
+    "base_model:meta-llama/Llama-3.2-3B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.2-3B-Instruct",
+    "license:llama3.2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3212749824,
+  "parameters_human": "3.21B",
+  "storage_bytes": 6442744873,
+  "storage_human": "6.4 GB",
+  "base_model": "meta-llama/Llama-3.2-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Thoughtworks: A leading technology consultancy | Thoughtworks",
+      "url": "https://www.thoughtworks.com/",
+      "snippet": "Meet Thoughtworks' Agentic Development Platform AI/works™ packs decades of engineering IP into a platform that changes the …"
+    },
+    {
+      "title": "Thoughtworks - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Thoughtworks",
+      "snippet": "Thoughtworks Holding, Inc. is a privately held, global technology company with 49 offices in 18 countries. [5] It provides software …"
+    },
+    {
+      "title": "Thoughtworks: A leading technology consultancy | Thoughtworks …",
+      "url": "https://www.thoughtworks.com/en-us",
+      "snippet": "Leaders want AI to work by ‘next Tuesday’ But there are three foundations you need in place first. This is where Thoughtworks comes …"
+    },
+    {
+      "title": "Thoughtworks - LinkedIn",
+      "url": "https://www.linkedin.com/company/thoughtworks",
+      "snippet": "Thoughtworks Information Technology & Services Chicago, IL 835,470 followers Global tech consultancy blending design, …"
+    },
+    {
+      "title": "Thoughtworks | LinkedIn",
+      "url": "https://in.linkedin.com/company/thoughtworks",
+      "snippet": "Thoughtworks | 835,583 followers on LinkedIn. Global tech consultancy blending design, engineering and AI to help businesses thrive …"
+    }
+  ]
+}

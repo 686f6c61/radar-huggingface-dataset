@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "palsetuf/BacPT-large",
+  "slug": "palsetuf-bacpt-large",
+  "author": "palsetuf",
+  "url": "https://huggingface.co/palsetuf/BacPT-large",
+  "created_at": "2026-09-16T14:15:02.000Z",
+  "updated_at": "2026-09-16T14:15:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roformer",
+    "biology",
+    "genomics",
+    "protein",
+    "feature-extraction",
+    "foundation-model",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 74387328,
+  "parameters_human": "74.4M",
+  "storage_bytes": 297591988,
+  "storage_human": "298 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Robes pour femmes 2026 | MANGO France métropolitaine",
+      "url": "https://shop.mango.com/fr/fr/c/femme/robes-et-combinaisons/e6bb8705?msockid=049968fd600568d22bd27f2b61b56968",
+      "snippet": "Notre collection de robes pour femmes s'agrandit chaque saison pour couvrir le plus grand nombre de styles possible. Ici, vous …"
+    },
+    {
+      "title": "Robes pour femme 2026 | MANGO France métropolitaine",
+      "url": "https://shop.mango.com/fr/fr/c/femme/robes-et-combinaisons/robes/b4864b2e?msockid=049968fd600568d22bd27f2b61b56968",
+      "snippet": "ROBES POUR FEMME Tout Robes Combinaison Bureau De Soirée Invitée de mariage Longue Midi Courte Tricot Noires Blanches …"
+    },
+    {
+      "title": "Robes pour femmes - promo 2026 | MANGO OUTLET France …",
+      "url": "https://www.mangooutlet.com/fr/fr/c/femme/robes-et-combinaisons/e6bb8705",
+      "snippet": "Dans cette collection de robes économiques pour femmes de Mango Outlet, les designs asymétriques, les détails drapés et les …"
+    },
+    {
+      "title": "Robes Mango en ligne | ZALANDO",
+      "url": "https://www.zalando.fr/robes-femme/mango/",
+      "snippet": "Notre sélection de robes Mango femme s'adresse à la femme moderne, en quête d'élégance et de praticité. Depuis sa fondation à …"
+    },
+    {
+      "title": "Robes 2026 | MANGO OUTLET France métropolitaine",
+      "url": "https://www.mangooutlet.com/fr/fr/c/femme/robes-et-combinaisons/robes/b4864b2e",
+      "snippet": "Découvrez la sélection de robes chez Mango Outlet. Des prix abordables et une variété de styles pour renouveler votre garde-robe."
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "Offlin33er/SmolLM2-1.7B-telegram-chats",
+  "slug": "offlin33er-smollm2-1-7b-telegram-chats",
+  "author": "Offlin33er",
+  "url": "https://huggingface.co/Offlin33er/SmolLM2-1.7B-telegram-chats",
+  "created_at": "2026-09-16T11:06:31.000Z",
+  "updated_at": "2026-09-16T12:07:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "trackio:https://Offlin33er-smollm2-telegram-chat-sft-trackio.hf.space?project=smollm2-telegram-chat-sft&runs=Offlin33er-1789556763&sidebar=collapsed",
+    "sft",
+    "hf_jobs",
+    "dataset:Offlin33er/telegram-chat-export-synthetic",
+    "base_model:HuggingFaceTB/SmolLM2-1.7B",
+    "base_model:finetune:HuggingFaceTB/SmolLM2-1.7B",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1711376384,
+  "parameters_human": "1.71B",
+  "storage_bytes": 3422783729,
+  "storage_human": "3.4 GB",
+  "base_model": "HuggingFaceTB/SmolLM2-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WhatsApp Web",
+      "url": "https://web.whatsapp.com/",
+      "snippet": "Log in to WhatsApp Web for simple, reliable and private messaging on your desktop. Send and receive messages and files with …"
+    }
+  ]
+}

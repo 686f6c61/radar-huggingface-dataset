@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "ibnsina-llm/ibnsina-30b",
+  "slug": "ibnsina-llm-ibnsina-30b",
+  "author": "ibnsina-llm",
+  "url": "https://huggingface.co/ibnsina-llm/ibnsina-30b",
+  "created_at": "2026-09-16T10:34:54.000Z",
+  "updated_at": "2026-09-16T11:39:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "fa",
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "safetensors",
+    "gguf",
+    "qwen3_moe",
+    "persian",
+    "farsi",
+    "ibnsina",
+    "continued-pretraining",
+    "base-model",
+    "text-generation",
+    "conversational",
+    "fa",
+    "en",
+    "base_model:Qwen/Qwen3-30B-A3B-Base",
+    "base_model:quantized:Qwen/Qwen3-30B-A3B-Base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30532122624,
+  "parameters_human": "30.53B",
+  "storage_bytes": 112107195176,
+  "storage_human": "112.1 GB",
+  "base_model": "Qwen/Qwen3-30B-A3B-Base",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "7 Inexpensive Craft Supplies for Your Next Project",
+      "url": "https://smallbiztrends.com/inexpensive-craft-supplies/",
+      "snippet": "Nov 15, 2025 · Discover 7 inexpensive craft supplies that will elevate your next project without breaking the bank. Explore budget …"
+    },
+    {
+      "title": "Journey Art Stuff",
+      "url": "https://journeyartstuff.com/",
+      "snippet": "Discover our professional USA-made artist paints along with your favorite fine art supplies and craft supplies at discount prices at …"
+    },
+    {
+      "title": "9 Unique Ways to Find Cheap Craft Supplies",
+      "url": "https://marketingartfully.com/9-unique-ways-to-find-cheap-craft-supplies/",
+      "snippet": "Nov 15, 2024 · Here are all my best tips and ideas for how to find cheap (or free) craft supplies! Meet your money goals and crafting …"
+    },
+    {
+      "title": "Craft Supplies ranging from the usual to the not so usual for your ...",
+      "url": "https://bjcraftsupplies.com/",
+      "snippet": "Your online source for craft supplies, anytime, delivered to your door. We offer a wide variety of basic craft supplies, bolo making …"
+    },
+    {
+      "title": "Overstock Sale - Craft Outlet",
+      "url": "https://www.craftoutlet.com/collections/overstock-sale",
+      "snippet": "Top quality items, simply overstocked! Save up to 35% on a constantly rotating selection of quality items. Please note that product …"
+    }
+  ]
+}

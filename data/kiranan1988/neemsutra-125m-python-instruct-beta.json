@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "KiranAN1988/NeemSutra-125M-Python-Instruct-Beta",
+  "slug": "kiranan1988-neemsutra-125m-python-instruct-beta",
+  "author": "KiranAN1988",
+  "url": "https://huggingface.co/KiranAN1988/NeemSutra-125M-Python-Instruct-Beta",
+  "created_at": "2026-09-16T16:54:24.000Z",
+  "updated_at": "2026-09-16T17:21:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "text-generation",
+    "code-generation",
+    "python",
+    "small-language-model",
+    "slm",
+    "transformer",
+    "research",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1515163603,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ciallo～ (∠・ω< )⌒★是什么意思?_百度知道",
+      "url": "https://zhidao.baidu.com/question/722732521501558365.html",
+      "snippet": "Apr 11, 2024 · Ciallo～ (∠・ω< )⌒★是什么意思?探秘Ciallo的魅力：不只是口头禅的艺术在社交场合中，有时一句简单的问候语就能传 …"
+    },
+    {
+      "title": "梦幻西游黑风山副本抄写大全_百度知道",
+      "url": "https://zhidao.baidu.com/question/580670653.html",
+      "snippet": "梦幻西游黑风山副本抄写大全梦幻西游黑风山副本抄写大全如下：1、若菩萨欲得净土当净其心随其心净则佛土净2、法尚应舍何况非 …"
+    },
+    {
+      "title": "Ciallo～ (∠・ω< )⌒★是什么意思? - 知乎",
+      "url": "https://www.zhihu.com/question/364958672",
+      "snippet": "ciallo是cia和allo的结合，cia指的是 CIA （米力坚情报局），allo是紧密相连的意思。连起来就是CIA紧密监视你，相当于 FBI …"
+    },
+    {
+      "title": "Windows电脑如何设置WiFi选择5Ghz频带的信号？ - 知乎",
+      "url": "https://www.zhihu.com/question/35029288",
+      "snippet": "到这里就完成了，混合模式下电脑会优先选择5G频段~ 在这个界面还能完成对很多高级参数的设置~ 如果没有这么多选项可能是网卡不 …"
+    },
+    {
+      "title": "ciao 是英语还是意大利语 还是英语的意大利外来语！！~~~",
+      "url": "https://zhidao.baidu.com/question/60412915.html",
+      "snippet": "Jul 14, 2008 · 关注 ciao 就是意大利语 可以当作你好，也可以当作是再见 但是英语里面也用做再见的意思 同样在德语，法语等一些西 …"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Lynnix0217/cs2881-hw1-sft-sheldon-B",
+  "slug": "lynnix0217-cs2881-hw1-sft-sheldon-b",
+  "author": "Lynnix0217",
+  "url": "https://huggingface.co/Lynnix0217/cs2881-hw1-sft-sheldon-B",
+  "created_at": "2026-09-16T16:04:15.000Z",
+  "updated_at": "2026-09-16T16:14:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "persona",
+    "sft",
+    "qwen2.5",
+    "en",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-3B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 6183354392,
+  "storage_human": "6.2 GB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "现在怎么才能登录WhatsApp呢？ - 知乎",
+      "url": "https://www.zhihu.com/question/68113079",
+      "snippet": "外贸圈的哀嚎声此起彼伏， WhatsApp封号潮正以“地毯式”速度席卷而来。从深圳3C工厂到义乌小商品商，从中小微企业到头部外贸集 …"
+    },
+    {
+      "title": "whatsapp messenger - 知乎",
+      "url": "https://www.zhihu.com/topic/19560025/hot",
+      "snippet": "WhatsApp messenger是一款可供iPhone手机、Android手机、Windows Phone手机、Symbian手机和黑莓手机用户使用的，用于智能 …"
+    },
+    {
+      "title": "怎样在whatsapp中加好友-百度经验",
+      "url": "https://jingyan.baidu.com/article/c33e3f483b65d5ea15cbb516.html",
+      "snippet": "May 6, 2019 · 怎样在whatsapp中加好友,使用WhatA的小伙伴们，知不知道如何在该软件中添加好友呢，接下来跟小编一起去看看吧。"
+    },
+    {
+      "title": "WhatsApp号码被封号，禁止使用怎么办？ - 知乎",
+      "url": "https://www.zhihu.com/question/300150937",
+      "snippet": "最后，再说一下WhatsApp使用的注意事项，对于新注册的用户我的建议是要先养号，不要急于去加客户、发推广消息。 前期可以每天 …"
+    },
+    {
+      "title": "微信在海外市场是否败给了 WhatsApp，为什么？ - 知乎",
+      "url": "https://www.zhihu.com/question/283423382",
+      "snippet": "WhatsApp倒是2009年就发布了 也曾在美国风光过一段时间 但是当时诸如黑莓和诺基亚等上一代品牌还在享受最后的辉煌 人们沟通的 …"
+    }
+  ]
+}

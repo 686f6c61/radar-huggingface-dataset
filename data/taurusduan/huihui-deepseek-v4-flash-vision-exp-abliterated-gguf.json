@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "taurusduan/Huihui-DeepSeek-V4-Flash-Vision-Exp-abliterated-GGUF",
+  "slug": "taurusduan-huihui-deepseek-v4-flash-vision-exp-abliterated-gguf",
+  "author": "taurusduan",
+  "url": "https://huggingface.co/taurusduan/Huihui-DeepSeek-V4-Flash-Vision-Exp-abliterated-GGUF",
+  "created_at": "2026-09-16T12:47:11.000Z",
+  "updated_at": "2026-09-16T12:47:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "abliterated",
+    "uncensored",
+    "huihui",
+    "image-text-to-text",
+    "base_model:deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 284334578519,
+  "parameters_human": "284.33B",
+  "storage_bytes": 444174740512,
+  "storage_human": "444.2 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Más de 1 millón de Imágenes Gratis para Descargar - Pixabay",
+      "url": "https://pixabay.com/es/",
+      "snippet": "Encuentra las mejores imágenes gratis para descargar. Gratis para fines comerciales Sin atribución requerida Imágenes en Alta …"
+    },
+    {
+      "title": "6.3 million+ Stunning Free Images to Use Anywhere - Pixabay",
+      "url": "https://pixabay.com/",
+      "snippet": "Sep 9, 2026 · Find your perfect royalty-free image or video to download and use. Royalty-free No attribution required High quality …"
+    },
+    {
+      "title": "Plus d'un million d'images libres de droits - Pixabay",
+      "url": "https://pixabay.com/fr/",
+      "snippet": "Découvrez plus d'un million d'images gratuites et de haute qualitées partagées par notre talentueuse communauté."
+    },
+    {
+      "title": "Mehr als 1 Million Gratis-Bilder zum Herunterladen - Pixabay",
+      "url": "https://pixabay.com/de/",
+      "snippet": "Suche hier nach deinem idealen kostenlosen Bild zum Herunterladen. Gratis für kommerzielle Zwecke Keine Namensnennung nötig …"
+    },
+    {
+      "title": "6.300万点以上の高品質なフリー画像素材 - Pixabay",
+      "url": "https://pixabay.com/ja/",
+      "snippet": "多くのクリエイター達による、6.300万点以上の高品質な画像・動画素材。"
+    }
+  ]
+}

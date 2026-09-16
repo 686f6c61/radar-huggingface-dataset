@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "thinktraveller/YONOD-weights",
+  "slug": "thinktraveller-yonod-weights",
+  "author": "thinktraveller",
+  "url": "https://huggingface.co/thinktraveller/YONOD-weights",
+  "created_at": "2026-09-16T18:03:09.000Z",
+  "updated_at": "2026-09-16T18:03:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 425807586,
+  "storage_human": "426 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.nl/index.html",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=nl",
+      "snippet": "Adverteren Alles over Google Google.com in English © 2026 - Privacy - Voorwaarden"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.nl/blank.html",
+      "snippet": "Google is een zoekmachine waarmee u informatie, afbeeldingen en meer kunt vinden op internet."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com.ai/?hl=nl-US",
+      "snippet": "Google aangeboden in: English Adverteren Alles over Google Google.com"
+    },
+    {
+      "title": "Google Afbeeldingen",
+      "url": "https://www.google.nl/imghp?hl=nl",
+      "snippet": "Google Afbeeldingen. De grootste zoekmachine voor afbeeldingen op internet."
+    }
+  ]
+}

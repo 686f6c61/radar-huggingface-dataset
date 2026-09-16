@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "kinderbot/act-kinderbot-tomato",
+  "slug": "kinderbot-act-kinderbot-tomato",
+  "author": "kinderbot",
+  "url": "https://huggingface.co/kinderbot/act-kinderbot-tomato",
+  "created_at": "2026-09-16T10:55:35.000Z",
+  "updated_at": "2026-09-16T10:55:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:kinderbot/kinderbot-pick-tomato",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714880,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hoeneß: \"Max hat ein Eigenbrötler-Dasein geführt\"",
+      "url": "https://www.t-online.de/sport/fussball/bundesliga/fc-bayern-muenchen/id_101435350/uli-hoeness-ueber-max-eberl-hat-eigenbroetler-dasein-gefuehrt-fc-bayern.html",
+      "snippet": "1 day ago · Die Vertragsverlängerung von Max Eberl wurde im Sommer zur Hängepartie. Nun offenbarte Uli Hoeneß, was ihm an …"
+    },
+    {
+      "title": "„Eigenbrötler-Dasein“ – Was Hoeneß an Eberl störte - WELT",
+      "url": "https://www.welt.de/sport/fussball/article6aa8e0d9250f8ce245e4d19d/fc-bayern-eigenbroetler-dasein-was-hoeness-an-eberl-stoerte.html",
+      "snippet": "1 day ago · Bayern Münchens Führung war bei Sportvorstand Max Eberl lange skeptisch. Nun aber wurde der Vertrag doch …"
+    },
+    {
+      "title": "\"Eigenbrötlerdasein geführt\": Bayern-Patron Uli Hoeneß packt über …",
+      "url": "https://www.goal.com/de/meldungen/eigenbroetlerdasein-gefuehrt-bayern-patron-uli-hoeness-packt-ueber-max-eberl-aus/blte0e4e76375fd1f99",
+      "snippet": "1 day ago · Klub-Patron Uli Hoeneß hat die Entwicklung von Sportvorstand Max Eberl beim FC Bayern gelobt. Der 52-Jährige …"
+    },
+    {
+      "title": "Der Wandel des Max Eberl: Wie der Bayern-Boss Kritiker Hoeneß von …",
+      "url": "https://www.abendzeitung-muenchen.de/sport/fcbayern/der-wandel-des-max-eberl-wie-der-bayern-boss-kritiker-hoeness-von-sich-ueberzeugte-art-1157004",
+      "snippet": "5 days ago · Das Standing von Max Eberl hat sich beim FC Bayern in den vergangenen Monaten deutlich gewandelt. Wie der …"
+    },
+    {
+      "title": "Hoeneß-Kritik führte offenbar zu Veränderungen: Warum Max Eberl …",
+      "url": "https://de.nachrichten.yahoo.com/sport/hoene%C3%9F-kritik-f%C3%BChrte-offenbar-ver%C3%A4nderungen-080911043.html",
+      "snippet": "Jul 8, 2026 · Als Uli Hoeneß am Rande des DFB-Pokalfinals im Mai davon sprach, dass die Chancen auf eine Vertragsverlängerung …"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "VVVASUDEVAN/Wan2.1-T2V-1.3B",
+  "slug": "vvvasudevan-wan2-1-t2v-1-3b",
+  "author": "VVVASUDEVAN",
+  "url": "https://huggingface.co/VVVASUDEVAN/Wan2.1-T2V-1.3B",
+  "created_at": "2026-09-16T16:04:48.000Z",
+  "updated_at": "2026-09-16T16:04:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-video",
+  "library": "diffusers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "t2v",
+    "video",
+    "video-generation",
+    "text-to-video",
+    "en",
+    "zh",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1418996800,
+  "parameters_human": "1.42B",
+  "storage_bytes": 17573737962,
+  "storage_human": "17.6 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Search Images - Bing",
+      "url": "https://www.bing.com/camera",
+      "snippet": "Intelligent search from Bing makes it easier to quickly find what you’re looking for and rewards you."
+    },
+    {
+      "title": "Bing Images",
+      "url": "https://www.bing.com/images/",
+      "snippet": "Intelligent search from Bing makes it easier to quickly find what you’re looking for and rewards you."
+    },
+    {
+      "title": "Search - Search History - Bing",
+      "url": "https://www.bing.com/profile/history",
+      "snippet": "Your search history isn't available right now. Check back later or go to the M i c r o s o f t p r i v a c y d a s h b o a r d to see or clear …"
+    },
+    {
+      "title": "Search - Microsoft Bing",
+      "url": "https://www2.bing.com/",
+      "snippet": "Search with Microsoft Bing and use the power of AI to find information, explore webpages, images, videos, maps, and more. A smart …"
+    },
+    {
+      "title": "Collections - Bing",
+      "url": "https://www.bing.com/saves/",
+      "snippet": "Discover and save your favorite searches, videos, images, and shopping ideas on Bing for easy access anytime."
+    }
+  ]
+}

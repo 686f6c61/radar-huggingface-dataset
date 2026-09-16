@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "tfrere/microduck-move-flamingo-one-leg-balance",
+  "slug": "tfrere-microduck-move-flamingo-one-leg-balance",
+  "author": "tfrere",
+  "url": "https://huggingface.co/tfrere/microduck-move-flamingo-one-leg-balance",
+  "created_at": "2026-09-16T16:18:56.000Z",
+  "updated_at": "2026-09-16T16:20:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "microduck-academy-policy",
+    "microduck-policy",
+    "academy",
+    "family:velocity",
+    "kind:perpetual",
+    "tier:2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5637213,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tractor Supply Best Bondiola Al Horno Near Me Delivery Near Me",
+      "url": "https://www.instacart.com/store/tractor-supply/s?k=best+bondiola+al+horno+near+me&msockid=24c16e89ed6e61fb1cac795fecd26018",
+      "snippet": "Start shopping online now with Instacart to get your favorite Tractor Supply products on-demand."
+    },
+    {
+      "title": "Les 10 meilleurs restaurants à Asnières-sur-Seine - TheFork",
+      "url": "https://www.thefork.fr/restaurants/asnieres-sur-seine-c29581",
+      "snippet": "On trouve bistronomie inventive, brasseries traditionnelles et adresses internationales, reflet d'un tissu urbain cosmopolite. Les chefs …"
+    },
+    {
+      "title": "The 10 Best Restaurants in Asnières-sur-Seine 2026 | TheFork",
+      "url": "https://www.thefork.com/restaurants/asnieres-sur-seine-c29581",
+      "snippet": "Just northwest of Paris, Asnières-sur-Seine mixes riverside charm with an evolving culinary scene. Restaurants range from classic …"
+    },
+    {
+      "title": "THE 10 BEST Restaurants in Asnieres-sur-Seine - Tripadvisor",
+      "url": "https://www.tripadvisor.com/Restaurants-g635568-Asnieres_sur_Seine_Hauts_de_Seine_Ile_de_France.html",
+      "snippet": "Reserve a table for THE BEST dining in Asnieres-sur-Seine, Hauts-de-Seine on Tripadvisor: See 4,214 reviews of 192 Asnieres-sur …"
+    },
+    {
+      "title": "LES 10 MEILLEURS restaurants à Asnieres-sur-Seine - Tripadvisor",
+      "url": "https://www.tripadvisor.fr/Restaurants-g635568-Asnieres_sur_Seine_Hauts_de_Seine_Ile_de_France.html",
+      "snippet": "Réserver une table aux meilleurs restaurants à Asnieres-sur-Seine, Hauts-de-Seine sur Tripadvisor : lisez 4 214 avis sur 192 …"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "DragonHunter2026/nessa_q6_lora",
+  "slug": "dragonhunter2026-nessa_q6_lora",
+  "author": "DragonHunter2026",
+  "url": "https://huggingface.co/DragonHunter2026/nessa_q6_lora",
+  "created_at": "2026-09-16T14:41:47.000Z",
+  "updated_at": "2026-09-16T14:42:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "vision",
+    "image-to-text",
+    "multimodal",
+    "qwen2_5_vl",
+    "7b",
+    "unsloth",
+    "image-text-to-text",
+    "conversational",
+    "ru",
+    "base_model:unsloth/Qwen2.5-VL-7B-Instruct-bnb-4bit",
+    "base_model:adapter:unsloth/Qwen2.5-VL-7B-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 201864652,
+  "storage_human": "202 MB",
+  "base_model": "unsloth/Qwen2.5-VL-7B-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "关于人造板国标ENF和日本F4那个更环保? - 知乎",
+      "url": "https://www.zhihu.com/question/524555072",
+      "snippet": "国标ENF目前较大的缺陷是： 1-厂家可以 素板送检，也可以 饰面板送检，甚至非自产板材送检。 2-即使原厂素板符合ENF标准，贴面 …"
+    },
+    {
+      "title": "为什么生态板没有ENF级？ - 知乎",
+      "url": "https://www.zhihu.com/question/511926025",
+      "snippet": "为什么生态板没有ENF级？ 新出的ENF级国标，看了下满足的基本都是颗粒板和欧松板，都说环保等级远高于生态板。 但我从板材的 …"
+    },
+    {
+      "title": "ENF: The Labyrinth of Evanescent Feelings (Read with Caution)",
+      "url": "https://www.reddit.com/r/ENFP/comments/14idg2m/enf_the_labyrinth_of_evanescent_feelings_read/",
+      "snippet": "Jun 25, 2023 · The ENF type demonstrates great liveliness and flexibility in their feelings, which are highly individual in their mode of …"
+    },
+    {
+      "title": "ENF板材是什么意思？达到什么环保等级才算是无醛板？ - 知乎",
+      "url": "https://www.zhihu.com/question/565814061",
+      "snippet": "E1级是甲醛释放量限量值最高的，ENF级是甲醛释放量限量值最低的，限量值越低代表甲醛释放量越少，也就意味着环保指数更高， …"
+    },
+    {
+      "title": "老公说用了ENF环保标准板材，室内就安全了，不用专门除醛就能住。 …",
+      "url": "https://www.zhihu.com/question/581885657",
+      "snippet": "选用达到了ENF环保标准的板材，甲醛释放量是≤0.025mg/m³，甲醛的累积量是很低的。 一个苹果中的甲醛含量约是17.3ppm，也就是 …"
+    }
+  ]
+}

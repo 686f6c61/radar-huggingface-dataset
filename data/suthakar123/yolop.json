@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "suthakar123/YOLOP",
+  "slug": "suthakar123-yolop",
+  "author": "suthakar123",
+  "url": "https://huggingface.co/suthakar123/YOLOP",
+  "created_at": "2026-09-16T12:48:04.000Z",
+  "updated_at": "2026-09-16T12:48:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "object-detection",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "object-detection",
+    "arxiv:2108.11250",
+    "arxiv:1612.07695",
+    "arxiv:1606.02147",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FIRE beweging Nederland: wat is FIRE en hoe bereik je FIRE?",
+      "url": "https://www.firebeweging.nl/",
+      "snippet": "De FIRE-beweging wordt steeds populairder. Financieel onafhankelijk & vrij zijn is dan ook voor iedereen mogelijk, mits je de juiste …"
+    },
+    {
+      "title": "FIRE-beweging - Wikipedia",
+      "url": "https://nl.wikipedia.org/wiki/FIRE-beweging",
+      "snippet": "De FIRE-beweging (Financial Independence, Retire Early) is een levensstijl gericht op het bereiken van financiële onafhankelijkheid …"
+    },
+    {
+      "title": "De FIRE-beweging in Nederland [2026] - Mr FOB",
+      "url": "https://www.financieelonafhankelijkblog.nl/fire-beweging-in-nederland/",
+      "snippet": "Sep 2, 2025 · In Nederland is de FIRE-beweging in opkomst. Wat is het en waarom is FIRE populair aan het worden? Lees hier meer."
+    },
+    {
+      "title": "Fire beweging Archieven - FIRE beweging Nederland: wat is FIRE en …",
+      "url": "https://www.firebeweging.nl/fire/",
+      "snippet": "Nov 4, 2021 · Ik ben de 50 gepasseerd, is fire nu nog wel aan mij besteed? In onze community zie ik vaak teleurgestelde reacties als …"
+    },
+    {
+      "title": "Wat is de FIRE-beweging? - Beleggingsinstituut Academy",
+      "url": "https://beleggingsinstituut.nl/kennisbank/pensioen-fire/fire-beweging/",
+      "snippet": "Feb 3, 2022 · De FIRE-beweging is een beweging van mensen die toegewijd zijn aan een programma van extreme besparingen en …"
+    }
+  ]
+}

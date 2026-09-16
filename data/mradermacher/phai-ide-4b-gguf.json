@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "mradermacher/PhAI-IDE-4B-GGUF",
+  "slug": "mradermacher-phai-ide-4b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/PhAI-IDE-4B-GGUF",
+  "created_at": "2026-09-16T14:00:05.000Z",
+  "updated_at": "2026-09-16T14:19:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "phai-ide",
+    "science",
+    "code",
+    "tool-use",
+    "sft",
+    "lora",
+    "safetensors",
+    "en",
+    "base_model:AItonomy/PhAI-IDE-4B",
+    "base_model:adapter:AItonomy/PhAI-IDE-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 39945655104,
+  "storage_human": "39.9 GB",
+  "base_model": "AItonomy/PhAI-IDE-4B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Brutto Netto Rechner 2026 Gehaltsrechner 2026 Lohnrechner Gehalt",
+      "url": "https://www.brutto-netto-rechner.info/",
+      "snippet": "Der Brutto Netto Rechner 2026 ist ein kostenloser Service zur Berechnung der Steuern und Abgaben in Abhängigkeit deines …"
+    },
+    {
+      "title": "Gehaltsrechner für Arbeitgeber 2026 Brutto ... - Brutto Netto Rechner",
+      "url": "https://www.brutto-netto-rechner.info/gehalt/gehaltsrechner-arbeitgeber.php",
+      "snippet": "Gehaltsrechner für Arbeitgeber Mit dem Gehaltsrechner für Arbeitgeber berechnen Sie die Gesamtlohnkosten bei der …"
+    },
+    {
+      "title": "Teilzeit Rechner 2026 Reduzierung der ... - Brutto Netto Rechner",
+      "url": "https://www.brutto-netto-rechner.info/teilzeit.php",
+      "snippet": "Teilzeit Rechner - Ihr Nettoeinkommen bei reduzierter Arbeitszeit Sie planen mit einer Arbeitszeitverkürzung und möchten wissen wie …"
+    },
+    {
+      "title": "Geldwerter Vorteil Firmenwagenrechner 2026 ... - Brutto Netto Rechner",
+      "url": "https://www.brutto-netto-rechner.info/geldwerter-vorteil.php",
+      "snippet": "Firmenwagenrechner 2026 Was versteht man unter dem geldwerten Vorteil bei einem Firmenwagen? Wird ein Firmenwagen nicht …"
+    },
+    {
+      "title": "gross net tax calculator germany 2026 german ... - Brutto Netto Rechner",
+      "url": "https://www.brutto-netto-rechner.info/gehalt/gross_net_calculator_germany.php",
+      "snippet": "Calculate your Gross Net Wage - German Wage Tax Calculator Our gross net wage calculator helps to calculate the net wage based …"
+    }
+  ]
+}

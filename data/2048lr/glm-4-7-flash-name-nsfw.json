@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "2048lr/GLM-4.7-Flash-Name-NSFW",
+  "slug": "2048lr-glm-4-7-flash-name-nsfw",
+  "author": "2048lr",
+  "url": "https://huggingface.co/2048lr/GLM-4.7-Flash-Name-NSFW",
+  "created_at": "2026-09-16T14:58:35.000Z",
+  "updated_at": "2026-09-16T15:29:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "glm4_moe_lite",
+    "zh",
+    "base_model:zai-org/GLM-4.7-Flash",
+    "base_model:finetune:zai-org/GLM-4.7-Flash",
+    "license:mit",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 29943390976,
+  "parameters_human": "29.94B",
+  "storage_bytes": 59908190018,
+  "storage_human": "59.9 GB",
+  "base_model": "zai-org/GLM-4.7-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "新手必看：SCI、JCR分区、中科院SCI分区都是什么？该如何查询期刊在 …",
+      "url": "https://www.zhihu.com/question/639871082",
+      "snippet": "③学科划分不同：中科院分区表设置了大小类，科睿唯安JCR分区没有设置大类学科，只分为176个具体学科，也就是中科院分区表中 …"
+    },
+    {
+      "title": "SCI检索号是什么？如何查询SCI检索号？ - 知乎",
+      "url": "https://www.zhihu.com/question/617889220",
+      "snippet": "Aug 17, 2023 · SCI检索号是在论文数据库中检索论文的具有唯一性的标识之一。也就是说，一篇SCI在所收录的数据库中只有一个检 …"
+    },
+    {
+      "title": "oltre pubmed.......",
+      "url": "https://www.molecularlab.it/forum/topic.asp?TOPIC_ID=24680",
+      "snippet": "Ciao ragazzi, sto facendo ricerche bibliografiche per la mia tesi in citologia sperimentale, sapreste indicarmi qualche sito oltre a …"
+    },
+    {
+      "title": "Concentrazioni in percentuali e ppm",
+      "url": "https://www.molecularlab.it/principi/calcoli-laboratorio/concentrazioni-altre.asp",
+      "snippet": "Aug 4, 2026 · Oltre Molarità e Normalità esistono anche altri tipi di concentrazioni: Percentuale in volume (%v): indica il numero di …"
+    },
+    {
+      "title": "Science Advances第一轮审稿要多久？ - 知乎",
+      "url": "https://www.zhihu.com/question/311338929",
+      "snippet": "今天文章刚刚正式接收，我也来分享一下这篇文章的时间线： 5.31 投到 Science 6.10 Science 未送外审被拒，编辑建议转投 Sci. Adv. …"
+    }
+  ]
+}

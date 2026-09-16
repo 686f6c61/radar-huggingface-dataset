@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "westlake-repl/cryoVERSE",
+  "slug": "westlake-repl-cryoverse",
+  "author": "westlake-repl",
+  "url": "https://huggingface.co/westlake-repl/cryoVERSE",
+  "created_at": "2026-09-16T12:05:22.000Z",
+  "updated_at": "2026-09-16T13:04:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1647690740,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pagesjaunes, trouvez les bons pros autour de vous…, bien plus qu’un ...",
+      "url": "https://www.pagesjaunes.fr/",
+      "snippet": "Accédez à 4 millions de pros : infos, horaires, avis, services en ligne, aide IA, actus et conseils pour vous aider à choisir le bon pro …"
+    },
+    {
+      "title": "PagesBlanches : le service de recherche de particuliers avec l'annuaire",
+      "url": "https://www.pagesjaunes.fr/pagesblanches",
+      "snippet": "13 hours ago · Trouvez également l’itinéraire pour vous rendre jusqu’à l’adresse recherchée, ou visualisez cette adresse au sein de …"
+    },
+    {
+      "title": "Annuaire téléphonique : trouver des numéros de téléphone et des ...",
+      "url": "https://telephonie.pagesjaunes.fr/comprendre/annuaire-telephone",
+      "snippet": "Apr 29, 2026 · Annuaire téléphonique : trouver des numéros de téléphone et des coordonnées professionnelles L’annuaire …"
+    },
+    {
+      "title": "pagesjaunes+ : la fiche qui met votre activité en lumière à partir de ...",
+      "url": "https://blog.pagesjaunes.fr/pagesjaunes-la-fiche-qui-met-votre-activite-en-lumiere-a-partir-de-25e-mois/",
+      "snippet": "Jan 23, 2026 · Une solution pensée pour vous apporter plus de contacts, plus de visibilité, et plus de confiance. Prêt (e) à faire briller …"
+    },
+    {
+      "title": "Comment faire une recherche de professionnels sur PagesJaunes",
+      "url": "https://assistance.pagesjaunes.fr/hc/fr/articles/360018146159-Comment-faire-une-recherche-de-professionnels-sur-PagesJaunes",
+      "snippet": "Quels sont les moyens à ma disposition pour trouver un professionnel sur PagesJaunes ? Sur la page d'accueil de pagesjaunes.fr se …"
+    }
+  ]
+}

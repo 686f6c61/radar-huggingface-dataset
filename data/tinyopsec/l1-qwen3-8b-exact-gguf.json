@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "tinyopsec/L1-Qwen3-8B-Exact-GGUF",
+  "slug": "tinyopsec-l1-qwen3-8b-exact-gguf",
+  "author": "tinyopsec",
+  "url": "https://huggingface.co/tinyopsec/L1-Qwen3-8B-Exact-GGUF",
+  "created_at": "2026-09-16T16:05:32.000Z",
+  "updated_at": "2026-09-16T17:23:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "quantization",
+    "qwen3",
+    "text-generation",
+    "en",
+    "base_model:l3lab/L1-Qwen3-8B-Exact",
+    "base_model:quantized:l3lab/L1-Qwen3-8B-Exact",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 68832030048,
+  "storage_human": "68.8 GB",
+  "base_model": "l3lab/L1-Qwen3-8B-Exact",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ICD-10-Code: Tendovaginitis stenosans [de Quervain]",
+      "url": "https://gesund.bund.de/icd-code-suche/m65-4",
+      "snippet": "Hier finden Sie Erläuterungen zum ICD-Diagnoseschlüssel „m65-4“ und dessen Unterkategorien."
+    },
+    {
+      "title": "ICD-10-GM-2026: M65.- Synovitis und Tenosynovitis - icd-code.de",
+      "url": "https://www.icd-code.de/icd/code/M65.-.html",
+      "snippet": "Krankheiten des Weichteilgewebes im Zusammenhang mit Beanspruchung, Überbeanspruchung und Druck (M70.-) Soll der …"
+    },
+    {
+      "title": "icd-10 Code: M65.4 - Tendovaginitis stenosans [de Quervain]",
+      "url": "https://abrechnung.clauer.de/icd-10/M65.4/tendovaginitis-stenosans-de-quervain.html",
+      "snippet": "Eine Sehnenscheide ist eine Hülle, die die Sehne umgibt. Sie polstert die Sehne ab und enthält eine geringe Menge Flüssigkeit. …"
+    },
+    {
+      "title": "M65.4 - Tendovaginitis stenosans [de Quervain] - ICD-10-GM 2026",
+      "url": "https://www.drgsystem.de/icd10/M654",
+      "snippet": "1 day ago · Quelle: ICD-10-GM, Version 2026 — Internationale statistische Klassifikation der Krankheiten und verwandter …"
+    },
+    {
+      "title": "ICD-10-GM-2026: M65-M68 Krankheiten der Synovialis und der Sehnen - icd ...",
+      "url": "https://www.icd-code.de/icd/code/M65-M68.html",
+      "snippet": "Krankheiten der Synovialis und der Sehnen bei anderenorts klassifizierten Krankheiten."
+    }
+  ]
+}

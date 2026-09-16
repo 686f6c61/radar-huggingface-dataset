@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "alan-abraham/q-FrozenLake-v1-4x4-noSlippery",
+  "slug": "alan-abraham-q-frozenlake-v1-4x4-noslippery",
+  "author": "alan-abraham",
+  "url": "https://huggingface.co/alan-abraham/q-FrozenLake-v1-4x4-noSlippery",
+  "created_at": "2026-09-16T10:38:11.000Z",
+  "updated_at": "2026-09-16T10:38:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "FrozenLake-v1-4x4-no_slippery",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 915,
+  "storage_human": "915 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Alan - Votre partenaire santé qui prévient, assure et accompagne au ...",
+      "url": "https://alan.com/",
+      "snippet": "Alan permet à chacun d’agir sur sa santé physique et mentale, en alliant le meilleur de la prévention et de l’assurance, le tout au sein …"
+    },
+    {
+      "title": "Mutuelle santé : trouvez la couverture santé au prix juste - Alan",
+      "url": "https://alan.com/fr-fr/assurance-sante",
+      "snippet": "Choisissez Alan, l'assurance santé qui fait simple. Prenez en main votre santé et celle de vos équipes ! Plus qu’une assurance, Alan …"
+    },
+    {
+      "title": "Alan (entreprise) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Alan_(entreprise)",
+      "snippet": "Alan est une entreprise française d’ assurance santé agréée par l' Autorité de contrôle prudentiel et de résolution (ACPR) en octobre …"
+    },
+    {
+      "title": "Alan, la start-up qui bouscule l’assurance santé - Le Monde.fr",
+      "url": "https://www.lemonde.fr/economie/article/2026/03/24/alan-la-start-up-qui-bouscule-l-assurance-sante_6674025_3234.html",
+      "snippet": "Mar 24, 2026 · Le nouvel entrant, qui fête son 10ᵉ anniversaire avec des innovations et un partenariat avec le footballeur Kylian …"
+    },
+    {
+      "title": "Alan : avis, formules et tarifs mutuelle santé 2026 - JeChange.fr",
+      "url": "https://www.jechange.fr/assurance/alan",
+      "snippet": "Alan, le néo-assureur santé 100 % digital pour entreprises et indépendants. Avis clients, formules, garanties, prix et résiliation : notre …"
+    }
+  ]
+}

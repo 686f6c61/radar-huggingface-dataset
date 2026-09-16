@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "alizadeh-arash/dubbing",
+  "slug": "alizadeh-arash-dubbing",
+  "author": "alizadeh-arash",
+  "url": "https://huggingface.co/alizadeh-arash/dubbing",
+  "created_at": "2026-09-16T14:52:51.000Z",
+  "updated_at": "2026-09-16T14:52:51.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anniversaire Camaro",
+      "url": "https://repliquesoldwest.superforum.fr/t318-anniversaire-camaro",
+      "snippet": "Jan 1, 2009 · Je ne sais pas si Camaro est encore parmi nous, mais demain c'est son anniversaire, alors avec un jour d'avance, BON …"
+    },
+    {
+      "title": "Atelier - superforum.fr",
+      "url": "https://repliquesoldwest.superforum.fr/f182-atelier",
+      "snippet": "Pétoires et poudre noire, tout sur les armes anciennes américaines"
+    },
+    {
+      "title": "Le CANON de LITTLE YO - repliquesoldwest.superforum.fr",
+      "url": "https://repliquesoldwest.superforum.fr/t1080-le-canon-de-little-yo",
+      "snippet": "Oct 1, 2010 · Amis du ROW bonjour, Alors, pour mettre fin à une certaine polémique qui plane sur notre site bien aimé, j'ai décidé de …"
+    },
+    {
+      "title": "Nature morte pour bloob: \"Tomate coeur de boeuf + Remington\"",
+      "url": "https://repliquesoldwest.superforum.fr/t683-nature-morte-pour-bloob-tomate-coeur-de-boeuf-remington",
+      "snippet": "Jul 7, 2009 · Je débute dans l'art de la nature morte, en fonction des récoltes de mon jardin, ceci n'est qu'un premier essai, je prévois …"
+    },
+    {
+      "title": "Vernois ( catégorie, materiel )",
+      "url": "https://repliquesoldwest.superforum.fr/t1347-vernois-categorie-materiel",
+      "snippet": "A mon tour, en espérent que je vais pouvoir faire l'autre !!!"
+    }
+  ]
+}

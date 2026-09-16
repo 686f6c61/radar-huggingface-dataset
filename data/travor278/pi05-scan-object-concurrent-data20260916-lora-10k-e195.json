@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Travor278/pi05-scan-object-concurrent-data20260916-lora-10k-e195",
+  "slug": "travor278-pi05-scan-object-concurrent-data20260916-lora-10k-e195",
+  "author": "Travor278",
+  "url": "https://huggingface.co/Travor278/pi05-scan-object-concurrent-data20260916-lora-10k-e195",
+  "created_at": "2026-09-16T16:51:14.000Z",
+  "updated_at": "2026-09-16T16:53:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "robotics",
+    "pi05",
+    "jax",
+    "lora",
+    "simulation",
+    "dataset:Shiki42/ctr-scan-object-concurrent-20260916",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6335574766,
+  "storage_human": "6.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Indeed & Eintracht Frankfurt",
+      "url": "https://de.indeed.com/eintracht",
+      "snippet": "Eintracht Frankfurt & Indeed Entdecke exklusive Geschichten, die Fußball und Karriere verbinden. Erfahre alles von den Profis, …"
+    },
+    {
+      "title": "Werkstudent Jobs | Jetzt 34.000 offene Stellen finden | Indeed",
+      "url": "https://de.indeed.com/Werkstudent-Jobs",
+      "snippet": "Finden Sie jetzt 34.495 zu besetzende Werkstudent Jobs auf Indeed.com, der weltweiten Nr. 1 der Online-Jobbörsen. (Basierend auf …"
+    },
+    {
+      "title": "Reinigungskraft Jobs | Jetzt 26.000 offene Stellen finden | Indeed",
+      "url": "https://de.indeed.com/Jobs?q=Reinigungskraft",
+      "snippet": "Finden Sie jetzt 26.959 zu besetzende Reinigungskraft Jobs auf Indeed.com, der weltweiten Nr. 1 der Online-Jobbörsen. (Basierend …"
+    },
+    {
+      "title": "Ausbildung Ausbildung Jobs | Jetzt 116.000 offene Stellen finden | Indeed",
+      "url": "https://de.indeed.com/Ausbildung-Ausbildung-Jobs",
+      "snippet": "Finden Sie jetzt 116.946 zu besetzende Ausbildung Ausbildung Jobs auf Indeed.com, der weltweiten Nr. 1 der Online-Jobbörsen. …"
+    },
+    {
+      "title": "Arbeiten bei Indeed: Arbeitnehmerbewertungen | Indeed.com",
+      "url": "https://de.indeed.com/cmp/Indeed/reviews",
+      "snippet": "Es gibt auch bei Indeed sicherlich noch Verbesserungspotenziale die wir nutzen können. Da wir auch weiterhin als top Arbeitgeber …"
+    }
+  ]
+}

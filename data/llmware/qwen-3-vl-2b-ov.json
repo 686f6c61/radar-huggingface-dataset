@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "llmware/qwen-3-vl-2b-ov",
+  "slug": "llmware-qwen-3-vl-2b-ov",
+  "author": "llmware",
+  "url": "https://huggingface.co/llmware/qwen-3-vl-2b-ov",
+  "created_at": "2026-09-16T15:33:32.000Z",
+  "updated_at": "2026-09-16T15:35:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "openvino",
+    "qwen3_vl",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1783034263,
+  "storage_human": "1.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Barrière cutanée : comment choisir le bon sérum - FRÉ",
+      "url": "https://www.freskincare.com/fr/blogs/specials/barriere-cutanee-comment-choisir-le-bon-serum",
+      "snippet": "Apr 13, 2026 · Renforcer la barrière cutanée nécessite une approche globale combinant hydratation, protection et réparation. …"
+    },
+    {
+      "title": "Classement 2026 : les meilleurs sérums visage toutes catégories (tous ...",
+      "url": "https://www.beaute-test.com/mag/classement-2026-les-meilleurs-serums-visage-toutes-categories-tous-besoins-tous-types-de-peau.php",
+      "snippet": "Feb 19, 2026 · Rapport efficacité/prix : imbattable. 2) Avène – Cicalfate Sérum réparateur intense Soin apaisant adapté aux peaux …"
+    },
+    {
+      "title": "Barrière cutanée : réparer et renforcer en 2026",
+      "url": "https://www.dermatonet.com/barriere-cutanee.htm",
+      "snippet": "Jun 24, 2026 · La barrière cutanée protège la peau de la déshydratation et des agressions. Céramides, filaggrine, protocole de …"
+    },
+    {
+      "title": "Comparatif des meilleurs sérums pour peau sensible 2026",
+      "url": "https://www.ouest-france.fr/shopping/comparateur/comparatif-des-meilleurs-serums-pour-peau-sensible-4c3e710c-74b8-11f1-9172-187ee382b87f",
+      "snippet": "Sep 4, 2026 · Une routine de soins du visage adaptée à la peau sensible doit être choisie avec soin, pour éviter les réactions et les …"
+    },
+    {
+      "title": "Notre top 10 des Soin Reparateur Visage au France - Septembre 2026 ...",
+      "url": "https://www.lemeilleuravis.fr/soin-reparateur-visage?msockid=3236831f05de618a029c94c904896072",
+      "snippet": "3 days ago · SOIN VISAGE HYDRATANT & RÉPARATEUR : Spécialement conçu pour les peaux déshydratées, le Soin Liquide …"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "VADITYA307/Logic-L1",
+  "slug": "vaditya307-logic-l1",
+  "author": "VADITYA307",
+  "url": "https://huggingface.co/VADITYA307/Logic-L1",
+  "created_at": "2026-09-16T12:47:32.000Z",
+  "updated_at": "2026-09-16T13:25:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "logic_l1",
+    "code",
+    "pytorch",
+    "causal-lm",
+    "arom-labs",
+    "logic-l1",
+    "custom_code",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3098888700,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Games.gr - Δωρεάν διαδικτυακά παιχνίδια - paixnidia - Free online games",
+      "url": "https://www.games.gr/",
+      "snippet": "Προσθέτουμε πολλά καινούργια παιχνίδια στην online δωρεάν συλλογή μας κάθε μέρα. Έχουμε δωρεάν παιχνίδια για κορίτσια, …"
+    },
+    {
+      "title": "Νέα παιχνίδια Games.gr - paixnidia - Free online games",
+      "url": "https://www.games.gr/newgames/",
+      "snippet": "Προσθέτουμε πολλά καινούργια παιχνίδια στην online δωρεάν συλλογή μας κάθε μέρα. Έχουμε δωρεάν παιχνίδια για κορίτσια, …"
+    },
+    {
+      "title": "Free Online Games on CrazyGames | Play Now!",
+      "url": "https://www.crazygames.com/",
+      "snippet": "Play free online games at CrazyGames, the best place to play high-quality browser games. We add new games every day. Have fun!"
+    },
+    {
+      "title": "New games - CrazyGames",
+      "url": "https://www.crazygames.com/new",
+      "snippet": "Play free online games at CrazyGames, the best place to play high-quality browser games. We add new games every day. Have fun!"
+    },
+    {
+      "title": "inGames | in.gr",
+      "url": "https://www.in.gr/ingames/",
+      "snippet": "inGames: Παίξτε τα νέα online παιχνίδια στο in.gr και χαλαρώστε ή κάντε ένα διάλειμμα από την δουλειά."
+    }
+  ]
+}

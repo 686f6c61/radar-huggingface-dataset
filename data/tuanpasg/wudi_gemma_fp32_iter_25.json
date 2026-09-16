@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "tuanpasg/wudi_gemma_fp32_iter_25",
+  "slug": "tuanpasg-wudi_gemma_fp32_iter_25",
+  "author": "tuanpasg",
+  "url": "https://huggingface.co/tuanpasg/wudi_gemma_fp32_iter_25",
+  "created_at": "2026-09-16T17:33:04.000Z",
+  "updated_at": "2026-09-16T17:34:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2614341888,
+  "parameters_human": "2.61B",
+  "storage_bytes": 5263080384,
+  "storage_human": "5.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mail Orange : boite mail, adresse mail, compte messagerie ...",
+      "url": "https://messagerie.orange.fr/mail.html",
+      "snippet": "Le mail Orange vous permet d'envoyer et recevoir des mails de façon simple et sécurisée. Créez plusieurs adresses et bénéficiez de …"
+    },
+    {
+      "title": "Mail Orange: découvrez la messagerie et accédez à vos mails",
+      "url": "https://messagerie.orange.fr/",
+      "snippet": "La messagerie Orange vous offre un ensemble de services pour communiquer facilement en toute sécurité"
+    },
+    {
+      "title": "Espace Client Orange",
+      "url": "https://espace-client.orange.fr/compte/mail",
+      "snippet": "Accédez à votre boite mail Orange et gérez vos e-mails en toute sécurité depuis l'Espace Client Orange."
+    },
+    {
+      "title": "Offres Mobiles, Internet, TV, Actu & Accès compte Mail - Orange",
+      "url": "https://www.orange.fr/portail",
+      "snippet": "Accès rapide et facile à toutes les fonctionnalités Orange (Email, Assistance, Banque, Boutique). Découvrez notre portail Orange et …"
+    },
+    {
+      "title": "Mail services",
+      "url": "https://mon-espace.mail.orange.fr/",
+      "snippet": "Accédez à votre messagerie Orange en toute sécurité pour envoyer, recevoir et gérer vos emails facilement."
+    }
+  ]
+}

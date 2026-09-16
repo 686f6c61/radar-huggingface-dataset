@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "lggvu/videovap-candor-avcocktail-ft",
+  "slug": "lggvu-videovap-candor-avcocktail-ft",
+  "author": "lggvu",
+  "url": "https://huggingface.co/lggvu/videovap-candor-avcocktail-ft",
+  "created_at": "2026-09-16T13:31:50.000Z",
+  "updated_at": "2026-09-16T13:31:53.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "voice-activity-projection",
+    "turn-taking",
+    "audio",
+    "video",
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11411158,
+  "storage_human": "11 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Get started with Google Maps",
+      "url": "https://support.google.com/maps/answer/144349?hl=en&co=GENIE.platform%3DAndroid",
+      "snippet": "Get started with Google Maps This article will help you set up, learn the basics, and explain various features of Google Maps. You …"
+    },
+    {
+      "title": "Google Maps - Reddit",
+      "url": "https://www.reddit.com/r/GoogleMaps/",
+      "snippet": "r/GoogleMaps is participating in ongoing protests regarding changes to Reddit's API accessibility. The subreddit may reopen at some …"
+    },
+    {
+      "title": "Maps Trợ giúp - Google Help",
+      "url": "https://support.google.com/maps/?hl=vi",
+      "snippet": "Trung tâm Trợ giúp Maps chính thức, nơi bạn có thể tìm thấy các mẹo và hướng dẫn sử dụng sản phẩm và các câu trả lời khác cho …"
+    },
+    {
+      "title": "How to make an autocomplete address field with google maps api?",
+      "url": "https://stackoverflow.com/questions/1555253/how-to-make-an-autocomplete-address-field-with-google-maps-api",
+      "snippet": "Oct 12, 2009 · Using Google Maps API and JQuery I would like to have an Address field that when typing it will autocomplete the …"
+    },
+    {
+      "title": "Box/Rectangle Draw Selection in Google Maps - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/7976196/box-rectangle-draw-selection-in-google-maps",
+      "snippet": "Nov 2, 2011 · I am working on Google Maps and want to implement a feature where a user can draw a box/rectangle using his/her …"
+    }
+  ]
+}

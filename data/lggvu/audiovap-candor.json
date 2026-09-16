@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "lggvu/audiovap-candor",
+  "slug": "lggvu-audiovap-candor",
+  "author": "lggvu",
+  "url": "https://huggingface.co/lggvu/audiovap-candor",
+  "created_at": "2026-09-16T13:31:31.000Z",
+  "updated_at": "2026-09-16T13:31:35.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "voice-activity-projection",
+    "turn-taking",
+    "audio",
+    "video",
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23178560,
+  "storage_human": "23 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bing Homepage Quiz – Today's Bing Daily Trivia & Featured Image Quiz",
+      "url": "https://bingquiz.com/bing-homepage-quiz/",
+      "snippet": "15 hours ago · Play today’s daily Bing homepage quiz questions answer 10 fun triva, discover amazing facts and trends, then test …"
+    },
+    {
+      "title": "Bing Homepage Quiz - Play Today's Interactive Homepage Bing Quizzes",
+      "url": "https://bing.weeklyquiz.net/bing-homepage-quiz/",
+      "snippet": "Jan 12, 2026 · Did you know that the Bing Homepage Quiz is a daily trivia game with 15 questions based on the Bing homepage …"
+    },
+    {
+      "title": "Bing Homepage Quiz – Today's Bing Quiz & Answers",
+      "url": "https://bingquiz.today/",
+      "snippet": "Play today's Bing Homepage Quiz, explore the latest Bing quiz questions, and check answers and trivia in one place. Updated daily."
+    },
+    {
+      "title": "Play Today's Bing Quiz – 5 Trivia Questions, Daily Challenge",
+      "url": "https://bingquiz.org/",
+      "snippet": "15 hours ago · Play Bing Quiz online! Take 5 daily trivia questions across 6 categories and climb the rank ladder from Wanderer to …"
+    },
+    {
+      "title": "Bing Homepage Quiz - Play Today’s 10 Daily Homepage Bing Quizzes",
+      "url": "https://bingquizzes.com/bing-homepage-quiz-today/",
+      "snippet": "1 day ago · Every daily round contains 10 multiple-choice questions. You have 150 seconds to complete the quiz, and you need at …"
+    }
+  ]
+}

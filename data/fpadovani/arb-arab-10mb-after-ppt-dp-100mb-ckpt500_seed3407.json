@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/arb-arab-10mb-after-ppt-Dp-100mb-ckpt500_seed3407",
+  "slug": "fpadovani-arb-arab-10mb-after-ppt-dp-100mb-ckpt500_seed3407",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/arb-arab-10mb-after-ppt-Dp-100mb-ckpt500_seed3407",
+  "created_at": "2026-09-16T13:58:37.000Z",
+  "updated_at": "2026-09-16T14:58:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:fpadovani/arb-arab-10mb-ppt-Dp-100mb_seed3407",
+    "base_model:finetune:fpadovani/arb-arab-10mb-ppt-Dp-100mb_seed3407",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 39087104,
+  "parameters_human": "39.1M",
+  "storage_bytes": 1643374160,
+  "storage_human": "1.6 GB",
+  "base_model": "fpadovani/arb-arab-10mb-ppt-Dp-100mb_seed3407",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Award-winning Travel Backpacks & Luggage | Db Journey Norway",
+      "url": "https://dbjourney.com/",
+      "snippet": "Db Journey makes award-winning travel gear—backpacks, luggage and sport bags—designed in Scandinavia for life on the move."
+    },
+    {
+      "title": "Home | Db Journey Austria",
+      "url": "https://dbjourney.com/de-at/pages/home",
+      "snippet": "Db Journey makes award-winning travel gear—backpacks, luggage and sport bags—designed in Scandinavia for life on the move."
+    },
+    {
+      "title": "Db Journey - Online Shop | Hardloop",
+      "url": "https://www.hardloop.at/marken/6225-dbjourney",
+      "snippet": "Dann entdecke Db Journey, die skandinavische Marke für smarte Rucksäcke und Reisetaschen. Dank des cleveren Hook-Up …"
+    },
+    {
+      "title": "Db Journey Taschen & Rucksäcke - Hugger, Roamer, Ramverk",
+      "url": "https://eikenshop.com/de/collections/db-journey-taschen",
+      "snippet": "Db kommt aus Norwegen und hieß zuerst Douchebags: ein Name, gebaut für Ruhm auf der Skipiste und ein Desaster für jede …"
+    },
+    {
+      "title": "Db Journey - Shoppen Sie bei Boozt.com Österreich",
+      "url": "https://www.boozt.com/at/de-at/db-journey/herren?msockid=278885f02e3d65cc225392262f346454",
+      "snippet": "Db Journey wurde 2009 in Norwegen vom Freeskier Jon Olsson und dem Ingenieur Truls Brataas gegründet. Die Marke entwickelt …"
+    }
+  ]
+}

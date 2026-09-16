@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "SaylorTwift/codex",
+  "slug": "saylortwift-codex",
+  "author": "SaylorTwift",
+  "url": "https://huggingface.co/SaylorTwift/codex",
+  "created_at": "2026-09-16T10:39:43.000Z",
+  "updated_at": "2026-09-16T10:41:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "agent",
+    "coding-agent",
+    "cli",
+    "llm",
+    "tool-use",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1147196,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA - YouTube",
+      "url": "https://www.youtube.com/watch?v=4mnrlK8gdfY",
+      "snippet": "Feb 28, 2021 · Watch till the end. You'll thank me later."
+    },
+    {
+      "title": "AAAAAAAAAAAAAAAAAAA - YouTube",
+      "url": "https://www.youtube.com/watch?v=Y4Z7Ds_yv8o",
+      "snippet": "May 21, 2017 · AAAAAAAAAAAAAAAAAAAFair use - The original video was educational, and is now comedy. The original video did …"
+    },
+    {
+      "title": "Aaaaaaaaa Meme - Aaaaaaaaa - Discover & Share GIFs - Tenor",
+      "url": "https://tenor.com/view/aaaaaaaaa-gif-4518736123579739737",
+      "snippet": "4 days ago · The perfect Aaaaaaaaa Animated GIF for your conversation. Discover and Share the best GIFs on Tenor."
+    },
+    {
+      "title": "Aaaaaaaa GIFs - Find & Share on GIPHY",
+      "url": "https://giphy.com/explore/aaaaaaaa",
+      "snippet": "Find Aaaaaaaa GIFs that make your conversations more positive, more expressive, and more you."
+    },
+    {
+      "title": "Aaaaaaaaaa Clips - Find & Share on GIPHY",
+      "url": "https://giphy.com/explore/aaaaaaaaaa-clips",
+      "snippet": "Find Aaaaaaaaaa Clips and GIFs with Sound that make your conversations more positive, more expressive, and more you."
+    }
+  ]
+}

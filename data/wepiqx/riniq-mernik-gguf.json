@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "wepiqx/RINIQ-MERNIK-GGUF",
+  "slug": "wepiqx-riniq-mernik-gguf",
+  "author": "wepiqx",
+  "url": "https://huggingface.co/wepiqx/RINIQ-MERNIK-GGUF",
+  "created_at": "2026-09-16T17:02:27.000Z",
+  "updated_at": "2026-09-16T17:02:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "quantization",
+    "gguf",
+    "llama-cpp",
+    "fusion",
+    "riniq",
+    "mernik",
+    "humaneval",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amazon.de: Günstige Preise für Elektronik & Foto, Filme, Musik, Bücher ...",
+      "url": "https://www.amazon.de/",
+      "snippet": "Entdecken, shoppen und einkaufen bei Amazon.de: Günstige Preise für Elektronik & Foto, Filme, Musik, Bücher, Games, Spielzeug, …"
+    },
+    {
+      "title": "Prime Day 2026 | Amazon.de",
+      "url": "https://www.amazon.de/primeday/",
+      "snippet": "Der Prime Day ist Amazons jährliches Shopping-Event, das vom 23. bis 26. Juni exklusiv für Prime-Mitglieder stattfindet und vier …"
+    },
+    {
+      "title": "Anmeldung bei Amazon Business",
+      "url": "https://business.amazon.de/de/login",
+      "snippet": "Sichern Sie sich exklusive Angebote und Mengenrabatte! Melden Sie sich bei Ihrem Amazon Business-Konto an und sparen Sie …"
+    },
+    {
+      "title": "Warehouse Associate Jobs | Hourly Roles | Amazon Germany",
+      "url": "https://jobs.amazon.de/en-DE",
+      "snippet": "Join Amazon and become part of our world-class team. Discover fulfillment center job opportunities and apply today!"
+    },
+    {
+      "title": "Die Vorteile von Online-Bezahlsystemen | Amazon Pay",
+      "url": "https://pay.amazon.de/",
+      "snippet": "Entdecke Amazon Pay, das Online-Bezahlsystem von Amazon. Mit diesem System ist das Online-Bezahlen für deine Kunden …"
+    }
+  ]
+}

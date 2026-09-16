@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "divya1906/pneumonia-detection-model",
+  "slug": "divya1906-pneumonia-detection-model",
+  "author": "divya1906",
+  "url": "https://huggingface.co/divya1906/pneumonia-detection-model",
+  "created_at": "2026-09-16T16:17:48.000Z",
+  "updated_at": "2026-09-16T16:34:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "keras",
+  "languages": [],
+  "tags": [
+    "keras",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 134076805,
+  "storage_human": "134 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tipico Sportwetten: Sicher online wetten & bis zu 100€ Bonus",
+      "url": "https://sports.tipico.de/de",
+      "snippet": "Im Tipico Wettprogramm findest du online Wetten auf deinen favorisierten Sport. Du kannst bei Tipico deine Sportwetten Tipps heute …"
+    },
+    {
+      "title": "Fußball Wetten zu aktuellen Fußball Wettquoten | Tipico",
+      "url": "https://sports.tipico.de/de/heute/fussball",
+      "snippet": "Fußball: Wetten & Quoten bei Tipico Fußball Wetten stehen bei Tipico stets im Fokus und bieten Fans im Hinblick auf Sportwetten …"
+    },
+    {
+      "title": "Fußball Live Wetten - Fussballwetten mit live Quoten | Tipico",
+      "url": "https://sports.tipico.de/de/live/fussball",
+      "snippet": "Die besten Fußball Live-Wetten bei Tipico! Top Quoten für deine Livewetten auf alle Fussballspiele Deine live Fußballwetten abgeben!"
+    },
+    {
+      "title": "Aktuelle Quoten für alle Live-Wetten | Tipico",
+      "url": "https://sports.tipico.de/de/live/default",
+      "snippet": "Im Livewetten-Bereich findest du bei Tipico deine Lieblingssport-Sportarten für deine Sportwette. Je nachdem, wo gerade ein Spiel …"
+    },
+    {
+      "title": "Ligue 1 Wetten mit top Quoten | Tipico",
+      "url": "https://sports.tipico.de/de/alle/fussball/frankreich/ligue-1",
+      "snippet": "Bei Tipico hast du die Möglichkeit, viele unterschiedliche Ligue 1 Tipps zu platzieren. Durch das große Portfolio an Sportwetten, …"
+    }
+  ]
+}

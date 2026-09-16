@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "L00kUp/Swift-Qwen3.8-27B-OpenCode-W4A16-AutoRound",
+  "slug": "l00kup-swift-qwen3-8-27b-opencode-w4a16-autoround",
+  "author": "L00kUp",
+  "url": "https://huggingface.co/L00kUp/Swift-Qwen3.8-27B-OpenCode-W4A16-AutoRound",
+  "created_at": "2026-09-16T16:54:34.000Z",
+  "updated_at": "2026-09-16T16:54:35.000Z",
+  "license": "swift-open-license-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "qwen3.8",
+    "swift",
+    "autoround",
+    "int4",
+    "w4a16",
+    "mtp",
+    "speculative-decoding",
+    "opencode-instruct",
+    "dgx-spark",
+    "image-text-to-text",
+    "base_model:ukisai/Swift-Qwen3.8-27b",
+    "base_model:quantized:ukisai/Swift-Qwen3.8-27b",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "ukisai/Swift-Qwen3.8-27b",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Caméras de surveillance connectée au téléphone - Selectra",
+      "url": "https://selectra.info/domotique/securite/camera-surveillance-connectee-telephone",
+      "snippet": "Jan 8, 2026 · Vous êtes à la recherche d'une caméra connectée à votre smartphone ? Nous comparons les offres de différents …"
+    },
+    {
+      "title": "Les 5 meilleures caméras de surveillance extérieure 2026 | Test par ...",
+      "url": "https://meilleurtest.fr/comparatif-camera-de-surveillance-exterieure/",
+      "snippet": "Aug 9, 2026 · Les caméras IP d’extérieur offriront un accès distant à vos images, tandis qu’une alarme maison sans fil complétera …"
+    },
+    {
+      "title": "Caméra de surveillance à distance sur smartphone",
+      "url": "https://www.darty.com/nav/q/domotique-camera-de-surveillance-a-distance-sur-smartphone.html?msockid=1c5a63cc80f462313733741a813d63c9",
+      "snippet": "Vous souhaitez vous débarrasser d'un ancien équipement ? Voici plusieurs solutions qui s'offrent à vous :"
+    },
+    {
+      "title": "Caméra De Surveillance Extérieure Connectée Au Téléphone : Guide …",
+      "url": "https://techcheznous.com/camera-de-surveillance-exterieure-connectee-au-telephone/",
+      "snippet": "Cette sélection réunit des caméras extérieures sans fil, solaires ou rechargeables, dotées de détection humaine, vision nocturne …"
+    },
+    {
+      "title": "Les 16 Meilleures Caméras de Surveillance Extérieure : Guide 2026 …",
+      "url": "https://moncomparatifavis.com/maison-et-bureau/maison-connectee/meilleures-cameras-de-surveillance-exterieure/",
+      "snippet": "Sep 6, 2025 · Ce guide complet vous présente les meilleures caméras de surveillance extérieure, chacune dotée de la présence …"
+    }
+  ]
+}

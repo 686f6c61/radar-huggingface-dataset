@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "xXFiEsTaDeAmOnXx/smolvla-openarmv2-cell",
+  "slug": "xxfiestadeamonxx-smolvla-openarmv2-cell",
+  "author": "xXFiEsTaDeAmOnXx",
+  "url": "https://huggingface.co/xXFiEsTaDeAmOnXx/smolvla-openarmv2-cell",
+  "created_at": "2026-09-16T14:46:10.000Z",
+  "updated_at": "2026-09-16T14:50:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "openarm",
+    "bimanual",
+    "mujoco",
+    "dataset:enactic/openarm-2-cell-pick_up_cube_mujoco-lerobot",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906730376,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Baxter | Divani e arredamento di design made in Italy",
+      "url": "https://www.baxter.it/it",
+      "snippet": "Baxter nasce dalla passione per il cuoio. Lavorato artigianalmente per ottenere divani, poltrone, letti, sedie e complementi d’arredo …"
+    },
+    {
+      "title": "Baxter | Sofas and designer furniture made in Italy",
+      "url": "https://www.baxter.it/en",
+      "snippet": "Baxter was born from a passion for leather. Handcrafted to obtain unique and irreproducible sofas, armchairs, beds, chairs and …"
+    },
+    {
+      "title": "Baxter in Italia",
+      "url": "https://baxteritalia.it/it/la-nostra-storia/baxter-italia",
+      "snippet": "Baxter mette a disposizione un ampio portfolio di prodotti nel settore medicale sia in ambito ospedaliero, sia a domicilio. Con una …"
+    },
+    {
+      "title": "Uniti per salvare e sostenere vite | Baxter",
+      "url": "https://baxteritalia.it/it",
+      "snippet": "Il nostro impegno verso medici e pazienti Siamo presenti laddove le necessità e i bisogni dei nostri pazienti e degli operatori sanitari …"
+    },
+    {
+      "title": "Baxter Italy | Homepage",
+      "url": "https://catalog.baxter.eu/it/it/",
+      "snippet": "Hillrom Parts è ora Baxter Catalogo Per saperne di più su cosa è cambiato"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ZFTurbo/facebook_mms_1b_lingala_shona",
+  "slug": "zfturbo-facebook_mms_1b_lingala_shona",
+  "author": "ZFTurbo",
+  "url": "https://huggingface.co/ZFTurbo/facebook_mms_1b_lingala_shona",
+  "created_at": "2026-09-16T18:27:56.000Z",
+  "updated_at": "2026-09-16T18:27:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "怎么输入带圈数字①②③④⑤⑧㊸㊹㊺㊻㊼㊽㊾㊿ ...",
+      "url": "https://jingyan.baidu.com/article/a3aad71a2b7a69b1fb009630.html",
+      "snippet": "May 16, 2019 · 显然上面的方式只能输入0-20，但是更高的数字却不能输入了，怎么办呢， 更复杂的方式我们也不想学了， 这个一个 …"
+    },
+    {
+      "title": "直径記号「ø」「Ø」の出し方教えて下さい ...",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1120783536",
+      "snippet": "Nov 19, 2008 · 直径記号「ø」「Ø」の出し方教えて下さい。 ちなみに「ふぁぃ」とか「ぎりゃ」で出てくるのは「φ」「Φ」です。 …"
+    },
+    {
+      "title": "如何快速输入乘号 × - 百度经验",
+      "url": "https://jingyan.baidu.com/article/48206aea0d63fa616bd6b37a.html",
+      "snippet": "Dec 17, 2019 · 如何快速输入乘号 ×,平时我们在工作学习中需要输入乘号“×”时，键盘和快捷符号栏都没有这个符合，这里分享一下如何 …"
+    },
+    {
+      "title": "「CDS」「ORF」「シストロン」の違いがいまいち ...",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1061704965",
+      "snippet": "May 6, 2011 · 「CDS」「ORF」「シストロン」の違いがいまいち分かりません。説明を読んでも同じようなことが書かれてるよう …"
+    },
+    {
+      "title": "[Biologie Moléculaire] qu'est ce qu'une ORF? - Forum FS Generation",
+      "url": "https://forums.futura-sciences.com/biologie/194897-quest-quune-orf.html",
+      "snippet": "ORF c'est pour open reading frame; phase de lecture ouverte. On comprend immédiatement l'intérêt (si on a un minimum de base de …"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "khazarai/Qwen3.8-27B-Fable-5-Coding-Distilled-GGUF",
+  "slug": "khazarai-qwen3-8-27b-fable-5-coding-distilled-gguf",
+  "author": "khazarai",
+  "url": "https://huggingface.co/khazarai/Qwen3.8-27B-Fable-5-Coding-Distilled-GGUF",
+  "created_at": "2026-09-16T12:37:11.000Z",
+  "updated_at": "2026-09-16T12:47:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "qwen3.8",
+    "reasoning",
+    "coding",
+    "agent",
+    "distillation",
+    "unsloth",
+    "image-text-to-text",
+    "en",
+    "dataset:DSFFGFG456/fable-5-coding-and-debugging-traces",
+    "base_model:khazarai/Qwen3.8-27B-Fable-5-Coding-Distilled",
+    "base_model:quantized:khazarai/Qwen3.8-27B-Fable-5-Coding-Distilled",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 28595764768,
+  "storage_human": "28.6 GB",
+  "base_model": "khazarai/Qwen3.8-27B-Fable-5-Coding-Distilled",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aderisci al fondo - Fondoprofessioni",
+      "url": "https://www.fondoprofessioni.it/aderisci-al-fondo/",
+      "snippet": "Dovrà essere riportata nella denuncia aziendale del flusso Uniemens, all’interno dell’elemento “FondoInterprof”, opzione “Revoca”, la …"
+    },
+    {
+      "title": "blog | Fondi interprofessionali | Come aderire ai Fondi ...",
+      "url": "https://www.selezione-formazione.it/blog/Fondi+interprofessionali/108/come-aderire-ai-fondi-interprofessionali-le-procedure",
+      "snippet": "La procedura per aderire a un Fondo Interprofessionale è standard e gestita tramite il flusso contributivo UniEmens: Accedi al portale …"
+    },
+    {
+      "title": "Come Aderire - Fondolavoro - Fondo Interprofessionale Nazionale …",
+      "url": "https://fondolavoro.it/come-iscriversi/",
+      "snippet": "Per iscriversi a Fondolavoro è sufficiente indicare il codice FLAV nell’apposita sezione del modello Uniemens, unitamente al numero …"
+    },
+    {
+      "title": "Come Aderire ai Fondi Interprofessionali: Guida Completa per le …",
+      "url": "https://www.formimpresaca.com/news/come-aderire-ai-fondi-interprofessionali/",
+      "snippet": "Oct 19, 2024 · Scopri come aderire ai fondi interprofessionali e accedere a formazione finanziata per la tua azienda. Procedura …"
+    },
+    {
+      "title": "Come aderire - Fondimpresa",
+      "url": "https://www.fondimpresa.it/accedere-ai-finanziamenti-fondimpresa",
+      "snippet": "Per l’adesione delle Matricole agricole basta accedere al flusso trimestrale “DMAG” dell'INPS, scegliere, all’interno dell'elemento …"
+    }
+  ]
+}

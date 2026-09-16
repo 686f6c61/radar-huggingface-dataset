@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "mradermacher/comma-qwen-3.5-9b-full-GGUF",
+  "slug": "mradermacher-comma-qwen-3-5-9b-full-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/comma-qwen-3.5-9b-full-GGUF",
+  "created_at": "2026-09-16T14:13:52.000Z",
+  "updated_at": "2026-09-16T14:39:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "la"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "ocr",
+    "htr",
+    "handwritten-text-recognition",
+    "manuscripts",
+    "palaeography",
+    "catmus",
+    "medieval-latin",
+    "qwen3.5",
+    "vision-language",
+    "la",
+    "dataset:comma-project/deep-jsonl",
+    "base_model:wjbmattingly/comma-qwen-3.5-9b-full",
+    "base_model:quantized:wjbmattingly/comma-qwen-3.5-9b-full",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 77739590368,
+  "storage_human": "77.7 GB",
+  "base_model": "wjbmattingly/comma-qwen-3.5-9b-full",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Télécharger et installer Firefox sous Windows | Assistance de Mozilla",
+      "url": "https://support.mozilla.org/fr/kb/telecharger-installer-firefox-windows?redirect=no",
+      "snippet": "Oct 30, 2021 · REDIRECT Comment installer Firefox sous Windows Partagez cet article : https://mzl.la/3Qw0pIN Ces personnes ont …"
+    },
+    {
+      "title": "Firefox auf die neueste Version aktualisieren | Hilfe zu Firefox",
+      "url": "https://support.mozilla.org/de/kb/firefox-auf-die-letzte-version-aktualisieren",
+      "snippet": "Firefox aktualisieren Klicken Sie auf der rechten Seite der Firefox-Symbolleiste auf die Menüschaltfläche , um das Menü zu öffnen. …"
+    },
+    {
+      "title": "Firefox（国际版）与火狐中国版本有什么差别吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/375129190",
+      "snippet": "详细分析Firefox国际版与火狐中国版的差异，帮助用户更好地了解两者的不同之处。"
+    },
+    {
+      "title": "为什么有人爱 Firefox 胜过 Chrome 呢？ - 知乎",
+      "url": "https://www.zhihu.com/question/325600788",
+      "snippet": "FireFox：下载有史以来最快的 FirefoxChrome:Google Chrome 网络浏览器"
+    },
+    {
+      "title": "Firefox downloaden en installeren in Windows | Hulp voor Firefox",
+      "url": "https://support.mozilla.org/nl/kb/firefox-downloaden-en-installeren-windows",
+      "snippet": "Firefox op uw computer installeren: Bezoek deze Firefox-downloadpagina in een willekeurige browser, zoals Edge. Klik op de knop …"
+    }
+  ]
+}

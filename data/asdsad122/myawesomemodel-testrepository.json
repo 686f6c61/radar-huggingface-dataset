@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "asdsad122/MyAwesomeModel-TestRepository",
+  "slug": "asdsad122-myawesomemodel-testrepository",
+  "author": "asdsad122",
+  "url": "https://huggingface.co/asdsad122/MyAwesomeModel-TestRepository",
+  "created_at": "2026-09-16T10:34:08.000Z",
+  "updated_at": "2026-09-16T10:34:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cobas® 6800 system, Software 2.0 - Roche Diagnostics USA",
+      "url": "https://diagnostics.roche.com/de/de/products/instruments/cobas-6800-v2-ins-7235.html",
+      "snippet": "Das cobas® 6800-System integriert und vollautomatisiert wichtige molekulare Testschritte und bietet schnelle T-Ergebnisse mit …"
+    },
+    {
+      "title": "cobas® 6800 und cobas® 8800 Systeme | roche.de",
+      "url": "https://preview.roche-dot-de-staging.roche-infra.com/diagnostik/produkte-loesungen/systeme/cobas-6800-und-cobas-8800-system",
+      "snippet": "Die cobas® 6800 und cobas® 8800 Systeme wurden für Hochdurchsatzlabore mit einem Probenaufkommen von mehr als 40 Tests …"
+    },
+    {
+      "title": "cobas® 6800 System: für Labore mit hohem Durchsatz | roche.de",
+      "url": "https://preview.roche-dot-de-staging.roche-infra.com/diagnostik/produkte-loesungen/systeme/cobas-6800-system",
+      "snippet": "Das cobas® 6800 System ist der Automatisierungsstandard für Labore mit einem Probeaufkommen von mehr als 40 Tests pro Tag."
+    },
+    {
+      "title": "3482-5_4594_AD_Fol_cob68008800_K4.indd",
+      "url": "https://assets.cwp.roche.com/f/94122/773de44d36/03-hev-pdf-cobas_6800_8800_systembroschure.pdf",
+      "snippet": "Erweitern Sie flexibel Ihr Parameterportfolio Vereinen Sie In-vitro Diagnostik und Lab Developed Tests auf den cobasT 6800/8800 …"
+    },
+    {
+      "title": "High-Volume Molecular Testing: Roche Cobas 4800 vs. 6800 Analyzers",
+      "url": "https://www.diamonddiagnostics.com/blog/roche-cobas-4800-vs-6800-molecular-testing",
+      "snippet": "Jun 15, 2026 · Compare the Roche Cobas 4800 vs 6800 analyzers. Discover which automated PCR platform is best for your …"
+    }
+  ]
+}

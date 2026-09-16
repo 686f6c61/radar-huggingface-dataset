@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "ulasZoi/smolvla_pickcube_bs64_camera2_LORA",
+  "slug": "ulaszoi-smolvla_pickcube_bs64_camera2_lora",
+  "author": "ulasZoi",
+  "url": "https://huggingface.co/ulasZoi/smolvla_pickcube_bs64_camera2_LORA",
+  "created_at": "2026-09-16T14:11:35.000Z",
+  "updated_at": "2026-09-16T14:11:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:ulasZoi/smolvla_pickcube_all",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11906992,
+  "storage_human": "12 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MS Office project在哪里免费下载？ - 知乎",
+      "url": "https://www.zhihu.com/question/410322335",
+      "snippet": "回答关于MS Office Project免费下载及其与苹果系统兼容性的相关问题。"
+    },
+    {
+      "title": "为什么Deepseek不提供Code plan包月套餐？ - 知乎",
+      "url": "https://www.zhihu.com/question/2024567135783896014",
+      "snippet": "code plan 本质是低价给你用，然后拿你的数据做训练。所以他们可以亏本卖然后拿你的数据做训练。 但是梁叔叔就不一样 …"
+    },
+    {
+      "title": "创作者中心 - 知乎",
+      "url": "https://www.zhihu.com/topic/20758763/hot",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "有没有办法将win10的微软todo放到桌面上？ - 知乎",
+      "url": "https://www.zhihu.com/question/411947988",
+      "snippet": "像小黄条一样，如图 现在好像可以了？我的win11下，打开TO DO。点击图中黑色箭头所指，红色方框标注的位置（保持在顶 …"
+    },
+    {
+      "title": "Windows更新下载慢怎么办？ - 知乎",
+      "url": "https://www.zhihu.com/question/513304527",
+      "snippet": "Windows大版本更新时可能需要下载几个G的更新，如果感觉下载太慢，可以尝试打开传递优化功能来为下载加速。 1. 按组合 …"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/Munna",
+  "slug": "ryanham1lton-munna",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/Munna",
+  "created_at": "2026-09-16T16:15:37.000Z",
+  "updated_at": "2026-09-16T16:18:37.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 116615016,
+  "storage_human": "117 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download …"
+    },
+    {
+      "title": "ChatGPT - Tchat GPT",
+      "url": "https://chatgpt.com/fr-FR/",
+      "snippet": "ChatGPT vous aide à obtenir des réponses, à trouver de l’inspiration et à gagner en productivité."
+    },
+    {
+      "title": "GPT-4 | OpenAI",
+      "url": "https://openai.com/index/gpt-4/",
+      "snippet": "Mar 14, 2023 · GPT-4 is more creative and collaborative than ever before. It can generate, edit, and iterate with users on creative and …"
+    },
+    {
+      "title": "GPT‑5 est disponible - OpenAI",
+      "url": "https://openai.com/fr-FR/gpt-5/",
+      "snippet": "GPT‑5 excelle dans la rédaction, la recherche, l’analyse, le codage et la résolution de problèmes. Il fournit des réponses encore plus …"
+    },
+    {
+      "title": "ChatGPT France — Chat GPT en français",
+      "url": "https://www.chatgptfrance.net/",
+      "snippet": "Utilisez Chat GPT en français : GPT-5, images, analyse de vos PDF et documents. Interface et support français, facturation en euros, …"
+    }
+  ]
+}

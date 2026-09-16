@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen3.8-27B-Fable-5-Coding-Distilled-i1-GGUF",
+  "slug": "mradermacher-qwen3-8-27b-fable-5-coding-distilled-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-Fable-5-Coding-Distilled-i1-GGUF",
+  "created_at": "2026-09-16T14:20:21.000Z",
+  "updated_at": "2026-09-16T14:31:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 39471872320,
+  "storage_human": "39.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ольга Бородина жена Артура Далалояна ...",
+      "url": "https://www.bolshoyvopros.ru/questions/4846332-olga-borodina-zhena-artura-dalalojana-kto-starshe-i-naskolko-chto-izvestno.html",
+      "snippet": "Точной информации о том, сколько лет Ольге Бородиной, я в интернете не нашел. В одних местах пишут, что ей 34 года, в …"
+    },
+    {
+      "title": "«Московский зоопарк онлайн ...",
+      "url": "https://www.bolshoyvopros.ru/questions/4865737-moskovskij-zoopark-onlajn-orangutany-kakie-voprosy-otvety-gde-najti.html",
+      "snippet": "Викторина «Московский зоопарк онлайн: орангутаны» какие вопросы и ответы, где смотреть? Где смотреть вопросы и ответы …"
+    },
+    {
+      "title": "Woman.ru",
+      "url": "https://www.woman.ru/horoscope/thread-pomogite-pozhaluysta-s-traktovkoy-rasklada-taro-id6295842/",
+      "snippet": ""
+    },
+    {
+      "title": "Woman.ru",
+      "url": "https://www.woman.ru/horoscope/thread-astrologiya-dzhyotish-id6286769/",
+      "snippet": ""
+    },
+    {
+      "title": "Кто такая Мария Эстер Трубицына ...",
+      "url": "https://www.bolshoyvopros.ru/questions/4734287-kto-takaja-marija-ester-trubicyna-biografija-karera-socseti-semja.html",
+      "snippet": "Мария-Эстер Трубицына живет в Израиле, но путешествует по всему миру. Была спортсменкой - пловчихой, потом …"
+    }
+  ]
+}

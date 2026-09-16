@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Blueberry-TinyLlama-1.1B-Chat-v1.0-GGUF",
+  "slug": "mradermacher-blueberry-tinyllama-1-1b-chat-v1-0-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Blueberry-TinyLlama-1.1B-Chat-v1.0-GGUF",
+  "created_at": "2026-09-16T18:16:57.000Z",
+  "updated_at": "2026-09-16T18:16:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cdiscount : des prix bas qui ont de la voix",
+      "url": "https://www.cdiscount.com/?msockid=37c464762fc56350324e73a02ef86267",
+      "snippet": "Cdiscount : Meuble, Déco, High Tech, Bricolage, Jardin, Sport | Livraison gratuite à partir de 10€ | Paiement sécurisé | 4x possible | …"
+    },
+    {
+      "title": "Moulin à café - Cdiscount Electroménager",
+      "url": "https://www.cdiscount.com/electromenager/petit-dejeuner-cafe/moulins-a-cafe/l-1101711.html?msockid=37c464762fc56350324e73a02ef86267",
+      "snippet": "En effet, lorsque l'on achète un paquet de café déjà moulu dans le commerce, on ne sait jamais vraiment ce qu'il contient. Pour …"
+    },
+    {
+      "title": "Machine à coudre - Livraison gratuite* - Cdiscount",
+      "url": "https://www.cdiscount.com/electromenager/repassage-couture/machines-a-coudre/l-1101502.html?msockid=37c464762fc56350324e73a02ef86267",
+      "snippet": "Découvrez nos offres Machine à coudre : Des milliers de produits les moins chers du marché | Paiement 4x | E-commerce français | …"
+    },
+    {
+      "title": "Arbre à chat : petits prix et grands modèles - Cdiscount",
+      "url": "https://www.cdiscount.com/animalerie/chats/arbres-a-chat/l-1621109.html?msockid=37c464762fc56350324e73a02ef86267",
+      "snippet": "Découvrez nos offres Arbre à chat ⭐ large sélection de produits au meilleur prix Livraison gratuite à partir de 10€* Entreprise …"
+    },
+    {
+      "title": "Produits reconditionnés et d'occasion - Cdiscount",
+      "url": "https://www.cdiscount.com/produits-reconditionnes/v-141-1.html?msockid=37c464762fc56350324e73a02ef86267",
+      "snippet": "Cdiscount : Meuble, Déco, High Tech, Bricolage, Jardin, Sport | Livraison gratuite à partir de 10€ | Paiement sécurisé | 4x possible | …"
+    }
+  ]
+}

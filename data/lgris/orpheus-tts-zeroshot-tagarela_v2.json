@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "lgris/orpheus-tts-zeroshot-tagarela_v2",
+  "slug": "lgris-orpheus-tts-zeroshot-tagarela_v2",
+  "author": "lgris",
+  "url": "https://huggingface.co/lgris/orpheus-tts-zeroshot-tagarela_v2",
+  "created_at": "2026-09-16T16:17:58.000Z",
+  "updated_at": "2026-09-16T17:09:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "text-to-speech",
+    "orpheus-tts",
+    "zero-shot",
+    "voice-cloning",
+    "pt",
+    "dataset:freds0/TAGARELA_v2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3300867072,
+  "parameters_human": "3.30B",
+  "storage_bytes": 39634134805,
+  "storage_human": "39.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PDF24 Creator - Download - 100% kostenlos",
+      "url": "https://tools.pdf24.org/de/creator",
+      "snippet": "Kostenlose Windows-Software für private und gewerbliche Nutzung mit allen PDF24 Tools und einem PDF Drucker, die offline …"
+    },
+    {
+      "title": "PDFCreator: Your PDF Creator & Converter for Windows",
+      "url": "https://www.pdfforge.org/pdfcreator",
+      "snippet": "Download our free PDFCreator and start converting your PDF files. This highly flexible PDF converter is easy to use and aligns with …"
+    },
+    {
+      "title": "PDFCreator - Kostenloser Download - CHIP",
+      "url": "https://www.chip.de/download/office-produktivitaet-finanzen/pdfcreator_04d341dd-9d78-4a49-b885-3fb71894ba52.html",
+      "snippet": "6 days ago · PDF ist das Format für systemübergreifende Dokumente. Mit dem kostenlosen PDFCreator können Sie eigene PDF …"
+    },
+    {
+      "title": "Download PDFCreator and start creating PDF files - pdfforge",
+      "url": "https://www.pdfforge.org/pdfcreator/download",
+      "snippet": "Download PDFCreator Free to create PDF files, merge PDFs, secure your PDF documents and use its many automated features. …"
+    },
+    {
+      "title": "PDF24 Creator - Kostenloser Download - CHIP",
+      "url": "https://www.chip.de/downloads/PDF24-Creator_43805654.html",
+      "snippet": "Apr 21, 2026 · Mit dem PDF24 Creator erhalten Sie einen großen Funktionsumfang. So können Sie PDFs erstellen, konvertieren, …"
+    }
+  ]
+}

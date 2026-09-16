@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Sophea-OSS-v1-GGUF",
+  "slug": "mradermacher-sophea-oss-v1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Sophea-OSS-v1-GGUF",
+  "created_at": "2026-09-16T16:57:44.000Z",
+  "updated_at": "2026-09-16T17:17:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20914757184,
+  "parameters_human": "20.91B",
+  "storage_bytes": 71175019008,
+  "storage_human": "71.2 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "3 idées de recettes faciles pour cuisiner les oreilles de cochon",
+      "url": "https://www.femmeactuelle.fr/cuisine/recettes-de-cuisine/3-idees-de-recettes-faciles-pour-cuisiner-les-oreilles-de-cochon-2123781",
+      "snippet": "Nov 24, 2021 · Froides en salade, chaudes en plat principal ou frites en apéro, les oreilles de cochon peuvent se déguster dans de …"
+    },
+    {
+      "title": "Oreilles de cochon - La Recette",
+      "url": "https://www.lesbonnesrecettesdejeanjules.com/La_recette.php?oreilles-de-cochon",
+      "snippet": "Apr 23, 2026 · Arroser avec le vinaigre, parsemer de persil haché, bien remuer. Servir bien chaud avec des pommes de terres …"
+    },
+    {
+      "title": "Recette oreilles de cochon sautees - La Cuisine de ma Mère",
+      "url": "https://lacuisinedemamere.fr/recette-oreilles-de-cochon-sautees/",
+      "snippet": "Cette recette est spéciale car elle met en valeur un ingrédient souvent négligé, les oreilles de cochon. En les faisant sauter, elles …"
+    },
+    {
+      "title": "Oreilles de cochon : des recettes faciles et originales",
+      "url": "https://chefsimon.com/recettes/tag/oreilles%20de%20cochon",
+      "snippet": "Voici la liste des recettes d'oreilles de cochon souvent faciles, rapides et économiques - et toujours délicieuses - trouvées parmi …"
+    },
+    {
+      "title": "Recette Oreilles de cochon sautées - Cuisine AZ",
+      "url": "https://www.cuisineaz.com/recettes/oreilles-de-cochon-sautees-35462.aspx",
+      "snippet": "Jan 17, 2022 · C'est pourquoi nous vous proposons une recette d'oreilles de cochon grillées, très facile et rapide à réaliser. Pour enfin …"
+    }
+  ]
+}

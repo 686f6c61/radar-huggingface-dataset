@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "kabilanKB/cosmos_nano_policy_so101",
+  "slug": "kabilankb-cosmos_nano_policy_so101",
+  "author": "kabilanKB",
+  "url": "https://huggingface.co/kabilanKB/cosmos_nano_policy_so101",
+  "created_at": "2026-09-16T10:37:14.000Z",
+  "updated_at": "2026-09-16T10:43:40.000Z",
+  "license": "openmdw1.1-license",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "cosmos",
+  "languages": [],
+  "tags": [
+    "cosmos",
+    "safetensors",
+    "cosmos3_omni",
+    "cosmos3",
+    "robotics",
+    "action-policy",
+    "so101",
+    "lerobot",
+    "isaac-lab",
+    "custom_code",
+    "base_model:nvidia/Cosmos3-Nano",
+    "base_model:finetune:nvidia/Cosmos3-Nano",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 15173136576,
+  "parameters_human": "15.17B",
+  "storage_bytes": 31499212848,
+  "storage_human": "31.5 GB",
+  "base_model": "nvidia/Cosmos3-Nano",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vacanze a Palma di Maiorca | Offerte Viaggi | lastminute.com",
+      "url": "https://www.it.lastminute.com/vacanze/es_spagna/palma-di-maiorca-d1122315752",
+      "snippet": "Sep 1, 2026 · Scopri i nostri pacchetti vacanze a Palma di Maiorca e vivi momenti indimenticabili. Prenota offerte volo+hotel da 122 € …"
+    },
+    {
+      "title": "Palma di Maiorca: guida di viaggio | Skyscanner",
+      "url": "https://www.skyscanner.it/destinazioni/destinazioni-urbane/27545988/spagna/palma-di-maiorca",
+      "snippet": "Vuoi partire per Palma di Maiorca? Informati con la guida di viaggio di Skyscanner, ricca di consigli su cosa mangiare, cosa visitare e …"
+    },
+    {
+      "title": "Offerta pacchetti vacanze Maiorca all inclusive | Alpitour",
+      "url": "https://www.alpitour.it/destinazioni/europa/spagna/baleari/maiorca",
+      "snippet": "Le Grotte del Drago, le spiagge isolate, le calette e la vita di Palma renderanno unica la tua vacanza a Maiorca: prenota ora il tuo …"
+    },
+    {
+      "title": "Viaggi a Palma Di Maiorca da 501€ | Vacanze al miglior prezzo",
+      "url": "https://www.logitravel.it/viaggi/europa/spagna/palma-di-maiorca/",
+      "snippet": "Viaggia a Palma Di Maiorca al miglior prezzo ☀ Entra e prenota la tua vacanza in Palma Di Maiorca: 100% Online Pagamento sicuro …"
+    },
+    {
+      "title": "Viaggi Palma di Maiorca: vacanze volo + hotel | Expedia.it",
+      "url": "https://www.expedia.it/Palma-Di-Maiorca.d2829.Viaggi-Vacanze",
+      "snippet": "Palma di Maiorca offre un delizioso mix di vacanze a tema spiaggia, all'aperto e in città, perfette per gli appassionati di cultura e per …"
+    }
+  ]
+}

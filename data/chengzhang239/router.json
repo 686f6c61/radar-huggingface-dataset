@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "chengzhang239/router",
+  "slug": "chengzhang239-router",
+  "author": "chengzhang239",
+  "url": "https://huggingface.co/chengzhang239/router",
+  "created_at": "2026-09-16T14:42:00.000Z",
+  "updated_at": "2026-09-16T15:19:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 13928662074,
+  "storage_human": "13.9 GB",
+  "base_model": "distilbert/distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Drive: Sign-in",
+      "url": "https://drive.google.com/",
+      "snippet": "Access Google Drive with a Google account (for personal use) or Google Workspace account (for business use)."
+    },
+    {
+      "title": "Google Drive : connexion",
+      "url": "https://drive.google.com/?hl=fr",
+      "snippet": "Accédez à Google Drive avec un compte Google (à usage personnel) ou un compte Google Workspace (à usage professionnel)."
+    },
+    {
+      "title": "Google Drive",
+      "url": "https://accounts.google.com/InteractiveLogin?emr=1&ltmpl=homepage&service=writely",
+      "snippet": "Create and share your work online and access your documents from anywhere. Manage documents, spreadsheets, presentations, …"
+    },
+    {
+      "title": "Télécharger Google Drive",
+      "url": "https://map.google.fr/intl/fr_ALL/drive/download/",
+      "snippet": "Sélectionnez les dossiers de votre ordinateur à synchroniser avec Google Drive ou à sauvegarder dans Google Photos, et accédez à …"
+    },
+    {
+      "title": "Google Drive: Share Files Online with Secure Cloud Storage | Google ...",
+      "url": "https://workspace.google.com/products/drive/",
+      "snippet": "Move your data and store all of your files in one place with Google Drive. AI-powered storage in the cloud helps teams collaborate in …"
+    }
+  ]
+}

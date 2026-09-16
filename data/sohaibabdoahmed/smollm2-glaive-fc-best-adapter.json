@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "SohaibAbdoAhmed/smollm2-glaive-fc-best-adapter",
+  "slug": "sohaibabdoahmed-smollm2-glaive-fc-best-adapter",
+  "author": "SohaibAbdoAhmed",
+  "url": "https://huggingface.co/SohaibAbdoAhmed/smollm2-glaive-fc-best-adapter",
+  "created_at": "2026-09-16T16:24:04.000Z",
+  "updated_at": "2026-09-16T16:24:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "function-calling",
+    "smollm2",
+    "qlora",
+    "glaive",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:HuggingFaceTB/SmolLM2-1.7B-Instruct",
+    "base_model:adapter:HuggingFaceTB/SmolLM2-1.7B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 72396712,
+  "storage_human": "72 MB",
+  "base_model": "HuggingFaceTB/SmolLM2-1.7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GABRIELA wojakowska AKA: Maelys MonCoer - YouTube",
+      "url": "https://www.youtube.com/@maelysmoncoer",
+      "snippet": "We are officially working on Amour Elite Part 2 ️ author Maelys MonCoer, Andrew Warwick 25 views"
+    },
+    {
+      "title": "Aka: Maelys MonCoer (@gabriela.wojakowska) - Instagram",
+      "url": "https://www.instagram.com/gabriela.wojakowska/",
+      "snippet": "71 Followers, 608 Following, 22 Posts - Aka: Maelys MonCoer (@gabriela.wojakowska) on Instagram: \"AKA: Maelys MonCoer; Co …"
+    },
+    {
+      "title": "Quill & Vision",
+      "url": "https://quillandvision.com/",
+      "snippet": "Through letters, late-night chats, and endless rambling stories, Maelys discovered that love doesn’t have to be dramatic. Sometimes …"
+    },
+    {
+      "title": "Maelys Moncoer Books | List of books by author Maelys Moncoer",
+      "url": "https://www.thriftbooks.com/a/maelys-moncoer/13045384/?msockid=054e2fdb1a7f6f983542380d1b006e3f",
+      "snippet": "Looking for books by Maelys Moncoer? See all books authored by Maelys Moncoer, including In the light of imagination, and In the …"
+    },
+    {
+      "title": "Maelys Moncoer – AbeBooks",
+      "url": "https://www.abebooks.com/book-search/author/maelys-moncoer/?msockid=054e2fdb1a7f6f983542380d1b006e3f",
+      "snippet": "Oct 16, 2025 · In the light of imagination (Paperback or Softback) by Moncoer, Maelys and a great selection of related books, art and …"
+    }
+  ]
+}

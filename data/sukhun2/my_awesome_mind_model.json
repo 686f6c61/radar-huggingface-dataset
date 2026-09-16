@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "sukhun2/my_awesome_mind_model",
+  "slug": "sukhun2-my_awesome_mind_model",
+  "author": "sukhun2",
+  "url": "https://huggingface.co/sukhun2/my_awesome_mind_model",
+  "created_at": "2026-09-16T14:44:28.000Z",
+  "updated_at": "2026-09-16T15:07:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "wav2vec2",
+    "audio-classification",
+    "generated_from_trainer",
+    "base_model:facebook/wav2vec2-base",
+    "base_model:finetune:facebook/wav2vec2-base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 94572174,
+  "parameters_human": "94.6M",
+  "storage_bytes": 4918100930,
+  "storage_human": "4.9 GB",
+  "base_model": "facebook/wav2vec2-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KURNIK - Gry Online - Szachy, Brydż, Literaki itp.",
+      "url": "https://www.kurnik.pl/",
+      "snippet": "GRY ONLINE z innymi osobami; szachy, brydż, literaki, tysiąc, kulki, mahjong, kalambury itp."
+    },
+    {
+      "title": "Tysiąc ONLINE, zagraj - Kurnik",
+      "url": "https://www.kurnik.pl/tysiac/",
+      "snippet": "Tysiąc gra multiplayer - Gra karciana dla 2-4 graczy; występuje licytacja i właściwa rozgrywka; punkty za zbieranie lew i meldunki …"
+    },
+    {
+      "title": "KURNIK",
+      "url": "http://ko.kurnik.pl/",
+      "snippet": "Kurnik to polska strona z różnorodnymi grami online, w tym karcianymi, słownymi i logicznymi."
+    },
+    {
+      "title": "KURNIK",
+      "url": "https://x.kurnik.pl/",
+      "snippet": "Kurnik to portal oferujący różnorodne gry online, w tym karciane i słowne, umożliwiający grę multiplayer."
+    },
+    {
+      "title": "kurnik",
+      "url": "https://kurnik.co/",
+      "snippet": "kurnik ... kurnik"
+    }
+  ]
+}

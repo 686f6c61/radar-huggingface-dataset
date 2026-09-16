@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "sajjan0001/qwen2.5-1.5b-trst01-compliance",
+  "slug": "sajjan0001-qwen2-5-1-5b-trst01-compliance",
+  "author": "sajjan0001",
+  "url": "https://huggingface.co/sajjan0001/qwen2.5-1.5b-trst01-compliance",
+  "created_at": "2026-09-16T18:21:17.000Z",
+  "updated_at": "2026-09-16T18:38:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "lora",
+    "qlora",
+    "compliance",
+    "sustainability",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-1.5B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11421892,
+  "storage_human": "11 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "School of Rock - film: guarda streaming online - JustWatch",
+      "url": "https://www.justwatch.com/it/film/school-of-rock",
+      "snippet": "Scopri come e dove guardare \"School of Rock\" online su Netflix e Prime Video oggi stesso – tra cui opzioni gratuite."
+    },
+    {
+      "title": "School of Rock - Guarda film completo su Paramount+ Italia",
+      "url": "https://www.paramountplus.com/it/movies/video/NqCifWW4s9MA_UhFuFuEk1AYA5R_u2UK/?msockid=3f1bc04d640569e01c15d79b65a0683e",
+      "snippet": "Jack Black è un musicista fallito. Cacciato dalla sua band è in cerca di un lavoro quando viene preso come supplente di musica in …"
+    },
+    {
+      "title": "School of Rock - Prime Video",
+      "url": "https://www.primevideo.com/-/it/detail/0JXN1953BKBFM0IYY7LT4J37MF/",
+      "snippet": "Jack Black è un musicista fallito. Cacciato dalla sua band è in cerca di un lavoro quando viene preso come supplente di musica in …"
+    },
+    {
+      "title": "School of Rock - Film (2003) - MYmovies.it",
+      "url": "https://www.mymovies.it/film/2003/schoolofrock/",
+      "snippet": "Mar 5, 2020 · School of Rock è una commedia del 2003, diretta da Richard Linklater. La pellicola racconta la storia di Dewey (Jack …"
+    },
+    {
+      "title": "School of Rock - Rakuten TV",
+      "url": "https://www.rakuten.tv/it/movies/school-of-rock",
+      "snippet": "Il chitarrista Dewey Finn, polemico e irriverente, nutre un odio viscerale contro il sistema e ha un'autentica venerazione per il rock, e …"
+    }
+  ]
+}

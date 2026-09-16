@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "authentrics/ztom-gemma3-1b-recovery",
+  "slug": "authentrics-ztom-gemma3-1b-recovery",
+  "author": "authentrics",
+  "url": "https://huggingface.co/authentrics/ztom-gemma3-1b-recovery",
+  "created_at": "2026-09-16T16:24:31.000Z",
+  "updated_at": "2026-09-16T16:24:32.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "authentrics",
+    "ztom",
+    "checkpoint-analysis",
+    "gradient-free-optimization",
+    "catastrophic-forgetting",
+    "text-generation",
+    "base_model:google/gemma-3-1b-it",
+    "base_model:finetune:google/gemma-3-1b-it",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "google/gemma-3-1b-it",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Freecell.fr - Freecell Gratuit",
+      "url": "https://www.freecell.fr/",
+      "snippet": "Freecell Solitaire Temps Voici l'un de nos jeux de Freecell où vous jouez contre la montre, vous avez 10 minutes..."
+    },
+    {
+      "title": "Klondike Solitaire - Freecell.fr",
+      "url": "https://www.freecell.fr/jouerafreecell/klondike-solitaire.php",
+      "snippet": "Freecell et tous les autres jeux Solitaire sont dérivés d'1 jeu qui date du 18e siècle : Klondike Solitaire, et ce jeu ne pouvait donc pas …"
+    },
+    {
+      "title": "Freecell Solitaire Classique",
+      "url": "https://www.freecell.fr/jouerafreecell/freecell-solitaire-classique.php",
+      "snippet": "Nom : Freecell Solitaire Classique Instructions : Un jeu de Freecell amusant avec un design élégant qui imite le bois et les mêmes …"
+    },
+    {
+      "title": "Freecell Windows XP",
+      "url": "https://www.freecell.fr/jouerafreecell/freecellwindowsxp.php",
+      "snippet": "Nom : Freecell Windows XP Instructions : Pour répondre aux nombreuses demandes des visiteurs de notre site, nous avons fait …"
+    },
+    {
+      "title": "Jouer à Freecell",
+      "url": "https://www.freecell.fr/jouerafreecell.php",
+      "snippet": "Freecell Solitaire Classique Un beau jeu avec une conception en bois sculpté. Les cartes à jouer sont sur la..."
+    }
+  ]
+}

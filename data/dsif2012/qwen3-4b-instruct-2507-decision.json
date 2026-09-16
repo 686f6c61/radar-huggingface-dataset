@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "dsif2012/Qwen3-4B-Instruct-2507-Decision",
+  "slug": "dsif2012-qwen3-4b-instruct-2507-decision",
+  "author": "dsif2012",
+  "url": "https://huggingface.co/dsif2012/Qwen3-4B-Instruct-2507-Decision",
+  "created_at": "2026-09-16T13:56:18.000Z",
+  "updated_at": "2026-09-16T14:15:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "qwen3",
+    "decision",
+    "constrained-decoding",
+    "boolean",
+    "choice",
+    "en",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "South Africa Map | Discover South Africa with Detailed Maps",
+      "url": "https://ontheworldmap.com/south-africa/",
+      "snippet": "South Africa, officially the Republic of South Africa (RSA), is a country located at the southern tip of Africa. It shares borders with …"
+    },
+    {
+      "title": "South Africa, ZA - Explore in Google Maps",
+      "url": "https://maps.google.com/maps/search/%22South%20Africa%22",
+      "snippet": "South Africa is a country on the southernmost tip of the African continent, marked by several distinct ecosystems. Inland safari …"
+    },
+    {
+      "title": "South Africa Maps & Facts - World Atlas",
+      "url": "https://www.worldatlas.com/maps/south-africa",
+      "snippet": "Jul 11, 2023 · Physical map of South Africa showing major cities, terrain, national parks, rivers, and surrounding countries with …"
+    },
+    {
+      "title": "Detailed Map of South Africa, its Provinces and its Major Cities.",
+      "url": "https://www.south-africa-tours-and-travel.com/map-of-south-africa.html",
+      "snippet": "Find your way around our country with interactive and detailed maps of South Africa and its provinces, incuding detailed streetmaps …"
+    },
+    {
+      "title": "South Africa Map - Maps of World",
+      "url": "https://www.mapsofworld.com/south-africa/",
+      "snippet": "Explore this South Africa map to learn everything you want to know about this country."
+    }
+  ]
+}

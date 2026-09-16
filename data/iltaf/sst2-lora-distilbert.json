@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Iltaf/sst2-lora-distilbert",
+  "slug": "iltaf-sst2-lora-distilbert",
+  "author": "Iltaf",
+  "url": "https://huggingface.co/Iltaf/sst2-lora-distilbert",
+  "created_at": "2026-09-16T18:24:49.000Z",
+  "updated_at": "2026-09-16T18:28:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "text-classification",
+    "sentiment",
+    "sst2",
+    "distilbert",
+    "dataset:nyu-mll/glue",
+    "base_model:distilbert/distilbert-base-uncased-finetuned-sst-2-english",
+    "base_model:adapter:distilbert/distilbert-base-uncased-finetuned-sst-2-english",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2962192,
+  "storage_human": "3 MB",
+  "base_model": "distilbert-base-uncased-finetuned-sst-2-english",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft To Do - Outlook",
+      "url": "https://outlook.live.com/tasks/?app",
+      "snippet": "Microsoft To Do"
+    },
+    {
+      "title": "Outlook – free personal email and calendar from Microsoft",
+      "url": "https://outlook.live.com/mail/oauthRedirect.html",
+      "snippet": "Access free Outlook email and calendar, plus Office Online apps like Word, Excel, and PowerPoint."
+    },
+    {
+      "title": "Outlook",
+      "url": "https://outlook.live.com/mail/0/mailcache.manifest?manifestVersion=2",
+      "snippet": "{\"cacheVersion\":\"20260904006.12\",\"cacheHash\":\"DefaultHash\",\"buildVariant\":\"Default\",\"staticFiles\":[\"//res.public.onecdn.static.microsoft/owamail/hashed …"
+    },
+    {
+      "title": "Bookings - Outlook",
+      "url": "https://outlook.live.com/bookings/",
+      "snippet": "JavaScript must be enabled. tttt"
+    },
+    {
+      "title": "Welcome to To Do - Outlook",
+      "url": "https://outlook.live.com/tasks/",
+      "snippet": "Microsoft To Do helps you organize tasks, set reminders, and manage your day effectively with Outlook integration."
+    }
+  ]
+}

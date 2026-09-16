@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "mradermacher/gemma4-26b-a4b-laos-GGUF",
+  "slug": "mradermacher-gemma4-26b-a4b-laos-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/gemma4-26b-a4b-laos-GGUF",
+  "created_at": "2026-09-16T13:28:02.000Z",
+  "updated_at": "2026-09-16T13:54:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "unsloth",
+    "gemma4",
+    "en",
+    "base_model:Phonepadith/gemma4-26b-a4b-laos",
+    "base_model:quantized:Phonepadith/gemma4-26b-a4b-laos",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25233142046,
+  "parameters_human": "25.23B",
+  "storage_bytes": 184858396288,
+  "storage_human": "184.9 GB",
+  "base_model": "Phonepadith/gemma4-26b-a4b-laos",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "电脑中玩游戏提示未安装 easy anti cheat，怎么装啊？ - 知乎",
+      "url": "https://www.zhihu.com/question/661988809?write",
+      "snippet": "当您在尝试运行某些游戏时，如果收到提示说“未安装Easy Anti-Cheat”，那么您需要按照以下步骤来安装Easy Anti-Cheat系统。Easy …"
+    },
+    {
+      "title": "Ubisoft-Connect怎么设置中文-百度经验",
+      "url": "https://jingyan.baidu.com/article/84b4f565e14c8421f6da32a7.html",
+      "snippet": "Jan 18, 2022 · 1、Ubisoft Connect有官方中文界面，无需汉化补丁，只要将你的平台更新到最新版本后，在主登录页面，我们点击下 …"
+    },
+    {
+      "title": "安装软件出现nsis error对话框的解决方法 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/948f5924f8074bd80ff5f9f1.html",
+      "snippet": "Feb 12, 2020 · 安装软件出现nsis error对话框的解决方法,有时用户在安装一些软件的时候，会在桌面上弹出如图所示的对话框。但对 …"
+    },
+    {
+      "title": "请问steam购买的游戏超过14天如何才能退款？ - 知乎",
+      "url": "https://www.zhihu.com/question/367047705",
+      "snippet": "还是提交下申请叭…会有酌情处理滴 steam小萌新前一阵子买了第一个游戏 港诡，结果太吓人了根本玩不下去…，挺心疼钱的但当时 …"
+    }
+  ]
+}

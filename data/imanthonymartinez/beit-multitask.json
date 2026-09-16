@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "imanthonymartinez/beit-multitask",
+  "slug": "imanthonymartinez-beit-multitask",
+  "author": "imanthonymartinez",
+  "url": "https://huggingface.co/imanthonymartinez/beit-multitask",
+  "created_at": "2026-09-16T15:38:31.000Z",
+  "updated_at": "2026-09-16T15:38:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "beit",
+    "pytorch",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Convertire JPG a PDF | Immagini JPG a PDF online - iLovePDF",
+      "url": "https://www.ilovepdf.com/it/jpg_a_pdf",
+      "snippet": "Converti le tue immagini JPG a PDF. Regola l'orientamento ed i margini. Carica il tuo file e trasformalo. Converti immagini JPG a …"
+    },
+    {
+      "title": "Convert JPG to PDF. Images JPG to PDF online - iLovePDF",
+      "url": "https://www.ilovepdf.com/jpg_to_pdf",
+      "snippet": "Convert JPG images to PDF, rotate them or set a page margin. Convert JPG to PDF online, easily and free."
+    },
+    {
+      "title": "Convertire JPG in PDF - Trasformare da JPG a PDF gratis",
+      "url": "https://smallpdf.com/it/jpg-in-pdf",
+      "snippet": "Carica o trascina la tua immagine nel convertitore gratuito da JPG a PDF. Regola le impostazioni come dimensioni, orientamento e …"
+    },
+    {
+      "title": "Come Convertire da JPG in PDF online | Adobe Acrobat",
+      "url": "https://www.adobe.com/it/acrobat/online/jpg-to-pdf.html?msockid=0684f116680e65913077e6c069b9645d",
+      "snippet": "Il nostro strumento per convertire da JPG in PDF online consente di trasformare un’ampia gamma di formati grafici. Puoi convertire …"
+    },
+    {
+      "title": "Convertire JPG in PDF - 100% gratis e online - PDF24",
+      "url": "https://tools.pdf24.org/it/jpg-in-pdf",
+      "snippet": "Convertitore online gratuito per convertire file JPG in PDF. Nessun limite e nessuna filigrana. Nessuna installazione o registrazione …"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "mradermacher/ghostai-pro-GGUF",
+  "slug": "mradermacher-ghostai-pro-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/ghostai-pro-GGUF",
+  "created_at": "2026-09-16T12:49:58.000Z",
+  "updated_at": "2026-09-16T13:15:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "ghost-ai",
+    "on-device",
+    "function-calling",
+    "tool-calling",
+    "solana",
+    "minicpm",
+    "en",
+    "base_model:immortaltatsu/ghostai-pro",
+    "base_model:quantized:immortaltatsu/ghostai-pro",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 22763613696,
+  "storage_human": "22.8 GB",
+  "base_model": "immortaltatsu/ghostai-pro",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "2026 年有哪些好看的电视剧推荐？ - 知乎",
+      "url": "https://www.zhihu.com/question/1995802655352709234",
+      "snippet": "可以满足不同年龄段观众的不同需求，喜欢收藏起来慢慢看！2026开年十大热播剧封神盘点！从央卫爆款到网播王炸，部部有硬货， …"
+    },
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "Disney+ - Swisscom Community",
+      "url": "https://community.swisscom.ch/d/863278-disney",
+      "snippet": "Oct 29, 2025 · Zitat: Was muss ich nach der Bestellung machen, um Disney+ zu verwenden? Sie müssen im Anschluss an Ihre …"
+    },
+    {
+      "title": "Disney+ - Swisscom Community",
+      "url": "https://community.swisscom.ch/d/795145-disney",
+      "snippet": "Nov 15, 2023 · Hello, With the recent announcement of the new TV-Box 5, including Disney+ (TV-Box 5: avec Disney+ et un …"
+    },
+    {
+      "title": "如何查看自己电脑的 IP 地址？ - 知乎",
+      "url": "https://www.zhihu.com/question/567480189",
+      "snippet": "查看自己电脑的ip地址首先要看您是什么电脑？ 如果您是windows操作系统的电脑，要在“开始”菜单底下，输入 cmd，打开界面 …"
+    }
+  ]
+}

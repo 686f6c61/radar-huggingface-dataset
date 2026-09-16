@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "nmuendler/DeepSeek-R1-Distill-Qwen-7B-rust-sft-training-curve-run1-step1056",
+  "slug": "nmuendler-deepseek-r1-distill-qwen-7b-rust-sft-training-curve-run1-step1056",
+  "author": "nmuendler",
+  "url": "https://huggingface.co/nmuendler/DeepSeek-R1-Distill-Qwen-7B-rust-sft-training-curve-run1-step1056",
+  "created_at": "2026-09-16T12:51:02.000Z",
+  "updated_at": "2026-09-16T12:51:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 657397615,
+  "storage_human": "657 MB",
+  "base_model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Passive Ionisation, aber richtig - Eltex RG52",
+      "url": "https://www.schnick.de/journal/passive-ionisation-aber-richtig-eltex-rg52",
+      "snippet": "Jul 15, 2024 · Erfahren Sie, wie Sie die passive Ionisation mit dem Eltex RG52 richtig umsetzen. Entdecken Sie effektive Techniken …"
+    },
+    {
+      "title": "Cleaning and ionizing - Eltex Elektrostatik GmbH",
+      "url": "https://www.eltex.de/en/products/anwendungsbereiche/cleaning-and-ionizing/",
+      "snippet": "Ion blower nozzles flatBLOW R36E, R55E Range: 10 – 500 mm Permitted air pressure: 1 – 6 bar depending on nozzle Blower …"
+    },
+    {
+      "title": "Reinigung | Eltex Elektrostatik GmbH",
+      "url": "https://www.eltex.de/produkt-kategorie/static-control/reinigung/",
+      "snippet": "Ionenblaspistolen/-düsen und dynamische Abblasstation Für die Vielzahl an Reinigungsaufgaben gibt es verschiedene Lösungen: …"
+    },
+    {
+      "title": "ELTEX PRO IONIZER ES61-Serie Betriebsanleitung - ManualsLib",
+      "url": "https://www.manualslib.de/manual/1277614/Eltex-Pro-Ionizer-Es61-Serie.html",
+      "snippet": "Die Netzgeräte ES61 dürfen nur mit den zugehörigen Eltex Entladeelek- troden für Wechselspannungsbetrieb (AC) der Serien R47, …"
+    },
+    {
+      "title": "Passive Ionisation, aber richtig - Eltex RG52",
+      "url": "https://schnick.de/en/journal/passive-ionisation-aber-richtig-eltex-rg52",
+      "snippet": "Jul 15, 2024 · Die Eltex RG52 Elektrode wurde gezielt entwickelt, um die Herausforderungen der passiven Entladung effektiv zu …"
+    }
+  ]
+}

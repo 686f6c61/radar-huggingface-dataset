@@ -1,0 +1,128 @@
+{
+  "schema": 1,
+  "id": "chcaa/da_dacy_edge",
+  "slug": "chcaa-da_dacy_edge",
+  "author": "chcaa",
+  "url": "https://huggingface.co/chcaa/da_dacy_edge",
+  "created_at": "2026-09-16T11:14:01.000Z",
+  "updated_at": "2026-09-16T11:36:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "spacy",
+  "languages": [
+    "da"
+  ],
+  "tags": [
+    "spacy",
+    "dacy",
+    "danish",
+    "token-classification",
+    "morphological analysis",
+    "dependency parsing",
+    "named entity recognition",
+    "da",
+    "dataset:universal-dependencies/universal_dependencies",
+    "dataset:alexandrainst/dane",
+    "dataset:alexandrainst/dacoref",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25068289,
+  "storage_human": "25 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "NER",
+      "dataset": "DaNE",
+      "metric": "NER Precision",
+      "value": 0.744
+    },
+    {
+      "task": "NER",
+      "dataset": "DaNE",
+      "metric": "NER Recall",
+      "value": 0.7081218274
+    },
+    {
+      "task": "NER",
+      "dataset": "DaNE",
+      "metric": "NER F Score",
+      "value": 0.7256176853
+    },
+    {
+      "task": "POS",
+      "dataset": "UD Danish DDT",
+      "metric": "POS (UPOS) Accuracy",
+      "value": 0.9452654945
+    },
+    {
+      "task": "MORPH",
+      "dataset": "UD Danish DDT",
+      "metric": "Morph (UFeats) Accuracy",
+      "value": 0.9337539432
+    },
+    {
+      "task": "LEMMA",
+      "dataset": "UD Danish DDT",
+      "metric": "Lemma Accuracy",
+      "value": 0.9426952509
+    },
+    {
+      "task": "UNLABELED_DEPENDENCIES",
+      "dataset": "UD Danish DDT",
+      "metric": "Unlabeled Attachment Score (UAS)",
+      "value": 0.8100649351
+    },
+    {
+      "task": "LABELED_DEPENDENCIES",
+      "dataset": "UD Danish DDT",
+      "metric": "Labeled Attachment Score (LAS)",
+      "value": 0.7605519481
+    },
+    {
+      "task": "SENTS",
+      "dataset": "UD Danish DDT",
+      "metric": "Sentences F-Score",
+      "value": 0.9456159822
+    }
+  ],
+  "sources": [
+    {
+      "title": "ondrive ile ilgili oldugunu düşündüğüm bir sorun",
+      "url": "https://answers.microsoft.com/tr-tr/windows/forum/all/ondrive-ile-ilgili-oldugunu/c42c73b1-2397-49f1-bfd0-28740df8a041",
+      "snippet": "Taciz, bir kişiyi veya bir grup insanı rahatsız etmeyi ya da üzmeyi amaçlayan davranışlardır. Tehditler herhangi bir şiddet tehdidini …"
+    },
+    {
+      "title": "希望微軟拼音繁體字也能有,動態排名,自我學習..... - Microsoft Community",
+      "url": "https://answers.microsoft.com/zh-hans/windows/forum/all/%E5%B8%8C%E6%9C%9B%E5%BE%AE%E8%BB%9F%E6%8B%BC/a3e81834-ac12-4e60-af24-a6248bf84daf",
+      "snippet": "希望微軟拼音繁體字也能有,動態排名,自我學習..... - Microsoft Community 在下面选择所需的搜索范围 搜索搜索社区 搜索社区和支持文 …"
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/msoffice/forum/all/how-do-i-set-the-name-that-appears-on-the-command/63c046ce-f89d-4f62-b93b-b65a66bfa86c",
+      "snippet": ""
+    },
+    {
+      "title": "abonnements skype - Communauté Microsoft",
+      "url": "https://answers.microsoft.com/fr-fr/skype/forum/all/abonnements-skype/2cbfe577-9de4-49e7-9b49-bffacae7b110",
+      "snippet": "Bonjour j’ai reçu ce mail il ya 15 min après annulation de mon abonnement pack office famille 365. Votre abonnement Skype inclus …"
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/outlook_com/forum/all/outlook-user-account-assigned-a-shared-mailbox/806a0684-e572-4bf0-b0a0-1c592b6b10e0",
+      "snippet": ""
+    }
+  ]
+}

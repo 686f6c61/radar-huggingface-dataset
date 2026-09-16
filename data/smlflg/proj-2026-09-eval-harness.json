@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "smlflg/proj-2026-09-eval-harness",
+  "slug": "smlflg-proj-2026-09-eval-harness",
+  "author": "smlflg",
+  "url": "https://huggingface.co/smlflg/proj-2026-09-eval-harness",
+  "created_at": "2026-09-16T12:45:06.000Z",
+  "updated_at": "2026-09-16T12:47:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "other",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "projects-hub",
+    "other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Résolu : Tv orange par 4g camping car - Communauté Orange",
+      "url": "https://communaute.orange.fr/t5/TV-par-Satellite/Tv-orange-par-4g-camping-car/td-p/2725198",
+      "snippet": "Mar 20, 2022 · Résolu : bonjour Dans un camping car. En vacances je souhaiterais connecter ma tv au réseau 4g pour avoir la tv d …"
+    },
+    {
+      "title": "Télécharger l'application TV Orange sur PC",
+      "url": "https://communaute.orange.fr/t5/regarder-la-TV-sur-mon-PC-ma/T%C3%A9l%C3%A9charger-l-application-TV-Orange-sur-PC/td-p/1589893",
+      "snippet": "Jun 14, 2018 · Bonsoir! Je ne trouve pas l'application TV orange sur PC à télécharger Existe t'elle encore? Merci! [Edit : Merci de ne …"
+    },
+    {
+      "title": "Connexion prime amazon - Communauté Orange",
+      "url": "https://communaute.orange.fr/t5/regarder-la-TV-sur-mon-PC-ma/Connexion-prime-amazon/td-p/1856933",
+      "snippet": "Jun 4, 2019 · Bonjour, Amazone Prime Vidéo sera bientôt disponible sur le décodeur TV d'orange, regarde la rubrique ou tu trouves …"
+    },
+    {
+      "title": "Accéder à mon mail Orange - Communauté Orange",
+      "url": "https://communaute.orange.fr/t5/Webmail-Orange/Acc%C3%A9der-%C3%A0-mon-mail-Orange/td-p/36",
+      "snippet": "Aug 2, 2013 · Voici quelques infos utiles à préciser lorsque vous rencontrez un soucis de messagerie Comment consultez-vous vos e …"
+    },
+    {
+      "title": "Résolu : Application Orange TV sur Firestick : une disponib ...",
+      "url": "https://communaute.orange.fr/t5/TV-par-ADSL-et-Fibre/Application-Orange-TV-sur-Firestick-une-disponibilit%C3%A9-pr%C3%A9vue/td-p/3321706",
+      "snippet": "Aug 20, 2025 · Bonjour, Je possède une Amazon Fire TV Stick et je souhaiterais savoir si l’application Orange TV sera un jour …"
+    }
+  ]
+}

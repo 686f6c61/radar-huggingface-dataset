@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "gaoj0017/functiongemma-270m-it-simple-tool-calling",
+  "slug": "gaoj0017-functiongemma-270m-it-simple-tool-calling",
+  "author": "gaoj0017",
+  "url": "https://huggingface.co/gaoj0017/functiongemma-270m-it-simple-tool-calling",
+  "created_at": "2026-09-16T15:29:09.000Z",
+  "updated_at": "2026-09-16T15:30:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "gemma3_text",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "conversational",
+    "base_model:google/functiongemma-270m-it",
+    "base_model:finetune:google/functiongemma-270m-it",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 268098176,
+  "parameters_human": "268.1M",
+  "storage_bytes": 569662128,
+  "storage_human": "570 MB",
+  "base_model": "google/functiongemma-270m-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WhatsApp Web",
+      "url": "https://web.whatsapp.com/",
+      "snippet": "Log in to WhatsApp Web for simple, reliable and private messaging on your desktop. Send and receive messages and files with …"
+    },
+    {
+      "title": "Download WhatsApp",
+      "url": "https://www.whatsapp.com/download",
+      "snippet": "Download WhatsApp on your mobile device, tablet or desktop and stay connected with reliable private messaging and calling. …"
+    },
+    {
+      "title": "WhatsApp | Mensajería y llamadas gratuitas, privadas, seguras y …",
+      "url": "https://www.whatsapp.com/?lang=es_ES",
+      "snippet": "Usa WhatsApp Messenger para mantenerte en contacto con amigos y familiares. WhatsApp es gratuito y permite enviar mensajes y …"
+    },
+    {
+      "title": "WhatsApp - wa.me",
+      "url": "https://wa.me/?text=/about",
+      "snippet": "Hosted by WhatsApp 2026 © WhatsApp LLC Privacy & Terms"
+    },
+    {
+      "title": "WhatsApp - wa.me",
+      "url": "https://wa.me/?l=es",
+      "snippet": "Organizado por WhatsApp 2026 © WhatsApp LLC Privacidad y Condiciones"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "lggvu/videovap-avcocktail",
+  "slug": "lggvu-videovap-avcocktail",
+  "author": "lggvu",
+  "url": "https://huggingface.co/lggvu/videovap-avcocktail",
+  "created_at": "2026-09-16T13:31:54.000Z",
+  "updated_at": "2026-09-16T13:31:57.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "voice-activity-projection",
+    "turn-taking",
+    "audio",
+    "video",
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11410518,
+  "storage_human": "11 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook – Anmelden oder Registrieren",
+      "url": "https://de-de.facebook.com/",
+      "snippet": "Erstelle ein Konto oder melde dich bei Facebook an. Verbinde dich mit Freunden, Familie und anderen Personen, die du kennst. …"
+    },
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/",
+      "snippet": "Connect and share with friends, family, and the world on Facebook."
+    },
+    {
+      "title": "Log into Facebook",
+      "url": "https://www.facebook.com/login.php/",
+      "snippet": "Email or mobile number Password"
+    },
+    {
+      "title": "Facebook",
+      "url": "https://l.facebook.com/facebook/",
+      "snippet": "Facebook. 154,679,566 followers · 270,569 talking about this. Community Values We believe people can do more together than …"
+    },
+    {
+      "title": "Log Into Facebook",
+      "url": "https://secure.facebook.com/login/",
+      "snippet": "Log into Facebook to start sharing and connecting with your friends, family, and people you know."
+    }
+  ]
+}

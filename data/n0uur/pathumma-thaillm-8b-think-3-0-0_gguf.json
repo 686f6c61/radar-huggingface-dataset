@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "n0uur/pathumma-thaillm-8b-think-3.0.0_GGUF",
+  "slug": "n0uur-pathumma-thaillm-8b-think-3-0-0_gguf",
+  "author": "n0uur",
+  "url": "https://huggingface.co/n0uur/pathumma-thaillm-8b-think-3.0.0_GGUF",
+  "created_at": "2026-09-16T17:32:37.000Z",
+  "updated_at": "2026-09-16T17:37:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "th",
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "qwen3",
+    "thai",
+    "quantized",
+    "reasoning",
+    "text-generation",
+    "th",
+    "en",
+    "base_model:nectec/pathumma-thaillm-8b-think-3.0.0",
+    "base_model:quantized:nectec/pathumma-thaillm-8b-think-3.0.0",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 35976458112,
+  "storage_human": "36.0 GB",
+  "base_model": "nectec/pathumma-thaillm-8b-think-3.0.0",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ses ayarı denetimi özelliğini nasıl aktifleştiririm? - MsXLabs",
+      "url": "https://www.msxlabs.org/forum/soru-cevap/227543-ses-ayari-denetimi-ozelligini-nasil-aktiflestiririm.html",
+      "snippet": "Jan 16, 2009 · Bildirim alanına ses ayarı simgesini eklemeye çalıştığınızda (Denetim Masası'ndaki Ses Efekti ve Ses Aygıtları …"
+    },
+    {
+      "title": "Windows 10 Tüm Denetim Masası Öğeleri? - DonanımHaber Forum",
+      "url": "https://forum.donanimhaber.com/windows-10-tum-denetim-masasi-ogeleri--118537736",
+      "snippet": "Windows 10 64bit deneme sürümünü kullanıyorum. Masa üstünde kullanmadığım simgeleri ayarlar kısmından kaldırdım (Ağ paylaşım …"
+    },
+    {
+      "title": "Nvidia denetim masası güncelleştirme hatası [ÇÖZÜLDÜ]",
+      "url": "https://forum.donanimhaber.com/nvidia-denetim-masasi-guncellestirme-hatasi-cozuldu--68347696",
+      "snippet": "Nvidia denetim masasında üst tarafta Yardım/Güncelleştirmeler kısmına girdiğimde bu hatayı alıyorum.Bu hatayı nasıl çözebilirim ? …"
+    },
+    {
+      "title": "Nvidia Denetim Masası Açılmıyor - forum.shiftdelete.net",
+      "url": "https://forum.shiftdelete.net/konular/nvidia-denetim-masasi-acilmiyor.612727/",
+      "snippet": "Merhaba iyi akşamlar herkese,bugün laptopta oyuna giriyim dediğimde grafik kartı ile ilgili bi hata verdi.Ardından nvidia denetim …"
+    },
+    {
+      "title": "nvidia denetim masası açılınca hemen kapanıyor - ShiftDelete.Net",
+      "url": "https://forum.shiftdelete.net/konular/nvidia-denetim-masasi-acilinca-hemen-kapaniyor.610977/",
+      "snippet": "Nov 23, 2018 · nvidia denetim masası açılınca hemen kapanıyor ilker günfer 23 Kasım 2018 ilker günfer Öğrenci"
+    }
+  ]
+}

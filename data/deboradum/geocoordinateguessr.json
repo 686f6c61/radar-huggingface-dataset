@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "deboradum/GeoCoordinateGuessr",
+  "slug": "deboradum-geocoordinateguessr",
+  "author": "deboradum",
+  "url": "https://huggingface.co/deboradum/GeoCoordinateGuessr",
+  "created_at": "2026-09-16T18:30:50.000Z",
+  "updated_at": "2026-09-16T18:36:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 155595988,
+  "storage_human": "156 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Flaticon - Vector Icons and Stickers - PNG, SVG, EPS, PSD and CSS",
+      "url": "https://www.flaticon.com/",
+      "snippet": "What’s New in Flaticon See the latest website updates, new features, and tools, and get the most of your Flaticon experience. …"
+    },
+    {
+      "title": "Vector icons - SVG, PSD, PNG, EPS & Icon Font - Flaticon",
+      "url": "https://www.flaticon.com/icons",
+      "snippet": "18,026,500+ Vector icons in SVG, PSD, PNG, EPS format or as ICON FONT. Millions of free icons in the largest database of free icons!"
+    },
+    {
+      "title": "Welcome - flaticon",
+      "url": "https://flaticon.io/",
+      "snippet": "The most wanted SVG user interface icons ready for your next project"
+    },
+    {
+      "title": "Flaticon – Free Icons, Stickers and Vector Graphics",
+      "url": "https://flaticon.im/",
+      "snippet": "Flaticon is a massive online library dedicated to icons and graphical design assets. It offers one of the largest collections of visual …"
+    },
+    {
+      "title": "Flaticon",
+      "url": "https://www.flaticon.es/",
+      "snippet": "Novedades de Flaticon No te pierdas las últimas novedades, funcionalidades y herramientas para disfrutar al máximo de la …"
+    }
+  ]
+}

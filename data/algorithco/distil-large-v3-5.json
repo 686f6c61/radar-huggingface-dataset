@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "algorithco/distil-large-v3.5",
+  "slug": "algorithco-distil-large-v3-5",
+  "author": "algorithco",
+  "url": "https://huggingface.co/algorithco/distil-large-v3.5",
+  "created_at": "2026-09-16T14:09:26.000Z",
+  "updated_at": "2026-09-16T14:09:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "audio",
+    "en",
+    "arxiv:2311.00430",
+    "arxiv:2106.05237",
+    "arxiv:1904.08779",
+    "arxiv:1910.13267",
+    "license:mit",
+    "eval-results",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 756405760,
+  "parameters_human": "756.4M",
+  "storage_bytes": 3035331975,
+  "storage_human": "3.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kraftklub | Offizielle Website",
+      "url": "https://www.kraftklub.to/home/",
+      "snippet": "Neues Album \"Sterben in Karl-Marx-Stadt\" ab 28.11.2023, Neue Single \"Schief in jedem Chor\" ab jetzt!"
+    },
+    {
+      "title": "Kraftklub – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Kraftklub",
+      "snippet": "Kraftklub ... Kraftklub ist eine fünfköpfige Rap-Rock -Band aus Chemnitz. [1] Die Musik wird meist als eine Mischung aus Indie, …"
+    },
+    {
+      "title": "KRAFTKLUB - YouTube",
+      "url": "https://www.youtube.com/channel/UCVktnBrBxa8psm_ZJkAaPzA",
+      "snippet": "Kraftklub - Original Audio (Keine Nacht für Niemand Unboxing) KRAFTKLUB 244K views • 9 years ago 4:38"
+    },
+    {
+      "title": "Kraftklub - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Kraftklub",
+      "snippet": "At the end of 2009, they founded the band Kraftklub and started recording their first studio album. On 13 February 2010, they …"
+    },
+    {
+      "title": "Kraftklub | Official shop for Tickets & Merch",
+      "url": "https://shop.kraftklub.to/en",
+      "snippet": "Tickets for concerts & Merch directly from the official Kraftklub shop: DAS WAR JA KEINE PHASE Tour 2027 Tickets, Bundles, Vinyls …"
+    }
+  ]
+}

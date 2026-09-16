@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mlabonne/LFM2.5-230M-Chess",
+  "slug": "mlabonne-lfm2-5-230m-chess",
+  "author": "mlabonne",
+  "url": "https://huggingface.co/mlabonne/LFM2.5-230M-Chess",
+  "created_at": "2026-09-14T19:46:34.000Z",
+  "updated_at": "2026-09-16T04:59:36.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm2",
+    "text-generation",
+    "liquid",
+    "lfm2.5",
+    "chess",
+    "conversational",
+    "en",
+    "base_model:LiquidAI/LFM2.5-230M-Base",
+    "base_model:finetune:LiquidAI/LFM2.5-230M-Base",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 14,
+  "downloads_30d": 163,
+  "trending_score": 14,
+  "parameters": 230688512,
+  "parameters_human": "230.7M",
+  "storage_bytes": 462196712,
+  "storage_human": "462 MB",
+  "base_model": "LiquidAI/LFM2.5-230M-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "X. It’s what’s happening / X",
+      "url": "https://x.com/",
+      "snippet": "About · Get App · Grok · Help · Terms · Privacy · Cookies · Careers · Ads & Business · Developers · News · Accessibility · © 2026 X …"
+    },
+    {
+      "title": "Explore - Trending Topics & Today's News | X",
+      "url": "https://x.com/explore",
+      "snippet": "1 day ago · Discover trending topics and today's news on X. See live updates, top conversations, and what's happening right now …"
+    },
+    {
+      "title": "Comment s'inscrire sur X et créer un nouveau compte X",
+      "url": "https://help.x.com/fr/using-x/create-x-account",
+      "snippet": "Un compte X est votre passeport pour découvrir ce qui se passe dans le monde et les discussions en temps réel. Grâce à votre …"
+    },
+    {
+      "title": "Utiliser X",
+      "url": "https://help.x.com/fr/using-x",
+      "snippet": "Ajouter du contenu à votre Tweet Dernier article vu Comment publier des photos ou des GIF sur X Dernier article vu Comment …"
+    },
+    {
+      "title": "X (social network) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/X_(social_network)",
+      "snippet": "X (social network) ... X, formerly known as Twitter, [c] is an American microblogging and social networking service owned by SpaceX …"
+    }
+  ]
+}

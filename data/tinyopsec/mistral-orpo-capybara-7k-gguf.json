@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "tinyopsec/mistral-orpo-capybara-7k-GGUF",
+  "slug": "tinyopsec-mistral-orpo-capybara-7k-gguf",
+  "author": "tinyopsec",
+  "url": "https://huggingface.co/tinyopsec/mistral-orpo-capybara-7k-GGUF",
+  "created_at": "2026-09-16T16:17:36.000Z",
+  "updated_at": "2026-09-16T17:14:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "quantization",
+    "mistral",
+    "orpo",
+    "text-generation",
+    "en",
+    "arxiv:2403.07691",
+    "base_model:kaist-ai/mistral-orpo-capybara-7k",
+    "base_model:quantized:kaist-ai/mistral-orpo-capybara-7k",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7241732096,
+  "parameters_human": "7.24B",
+  "storage_bytes": 59985427168,
+  "storage_human": "60.0 GB",
+  "base_model": "kaist-ai/mistral-orpo-capybara-7k",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Trade Crypto, Predict Outcomes & Earn — All in One Platform | Gemini",
+      "url": "https://www.gemini.com/",
+      "snippet": "The crypto super app for trading, predicting, and earning. Buy 90+ cryptos, trade prediction markets, and earn with staking and the …"
+    },
+    {
+      "title": "Buy & Sell Bitcoin, Ethereum and 80+ Cryptos Securely with ... - Gemini",
+      "url": "https://www.gemini.com/exchange",
+      "snippet": "Trade crypto with confidence on Gemini Exchange. Enjoy a secure, easy-to-use platform to buy, sell, and store Bitcoin, Ethereum, …"
+    },
+    {
+      "title": "Gemini | Help Center",
+      "url": "https://support.gemini.com/hc/en-us",
+      "snippet": "Apr 6, 2026 · Gemini Credit Card® Learn about applying for, using, and managing the Gemini Credit Card. Other Gemini Products …"
+    },
+    {
+      "title": "Gemini Onchain",
+      "url": "https://onchain.gemini.com/invest",
+      "snippet": "The best place to discover the world of web3 curated by Gemini."
+    },
+    {
+      "title": "Gemini Predictions – Gemini",
+      "url": "https://support.gemini.com/hc/en-us/articles/44234371543579-Gemini-Predictions",
+      "snippet": "What are Gemini Predictions?Gemini Predictions allow users to trade event contracts. Event contracts are simple yes or no …"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "nmuendler/Olmo3-7B-text-on-policy-distill-run2-lr1e5-r32-step5",
+  "slug": "nmuendler-olmo3-7b-text-on-policy-distill-run2-lr1e5-r32-step5",
+  "author": "nmuendler",
+  "url": "https://huggingface.co/nmuendler/Olmo3-7B-text-on-policy-distill-run2-lr1e5-r32-step5",
+  "created_at": "2026-09-16T12:40:46.000Z",
+  "updated_at": "2026-09-16T12:40:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:allenai/Olmo-3-7B-Think",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:allenai/Olmo-3-7B-Think",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 319876032,
+  "storage_human": "320 MB",
+  "base_model": "allenai/Olmo-3-7B-Think",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to get help in Windows - Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/how-to-get-help-in-windows-711b6492-0435-0038-8706-7c6b0feb200a",
+      "snippet": "Here are a few different ways to find help for Windows Search for help - Enter a question or keywords in the search box on the …"
+    },
+    {
+      "title": "ヘルプについて | Microsoft Support",
+      "url": "https://support.microsoft.com/ja-jp/support/get-help/about-get-help",
+      "snippet": "Get Helpで問題を検索する方法 Windows Get Help アプリは、チュートリアル、FAQ、コミュニティ フォーラム、Microsoft サポー …"
+    },
+    {
+      "title": "Install or Uninstall Windows Media Player Legacy app in Windows 11",
+      "url": "https://www.elevenforum.com/t/install-or-uninstall-windows-media-player-legacy-app-in-windows-11.30079/",
+      "snippet": "Oct 29, 2024 · This tutorial will show you how to install or uninstall the \"Windows Media Player Legacy\" app for all users in Windows …"
+    },
+    {
+      "title": "Windows 11 Forum",
+      "url": "https://www.elevenforum.com/",
+      "snippet": "Windows 11 Forum: Get expert help, tutorials, tips & troubleshooting for Windows 11. Active community support, guides & discussions."
+    },
+    {
+      "title": "About Get Help | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/support/get-help/about-get-help",
+      "snippet": "The Windows Get Help app is a centralized hub for accessing a wide range of resources, including tutorials, FAQs, community …"
+    }
+  ]
+}

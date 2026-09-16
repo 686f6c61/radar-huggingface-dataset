@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "jjjlimaus/sn38-r8-2017-uid140",
+  "slug": "jjjlimaus-sn38-r8-2017-uid140",
+  "author": "jjjlimaus",
+  "url": "https://huggingface.co/jjjlimaus/sn38-r8-2017-uid140",
+  "created_at": "2026-09-16T14:04:50.000Z",
+  "updated_at": "2026-09-16T14:05:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "sn38-nanochrono",
+    "text-generation",
+    "sn38",
+    "bittensor",
+    "chronollm",
+    "year-cutoff",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2018511234,
+  "parameters_human": "2.02B",
+  "storage_bytes": 6312460296,
+  "storage_human": "6.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Data Center World Middle East 2026 | DCW ME | Data Center …",
+      "url": "https://www.datacenterworldmiddleeast.com/",
+      "snippet": "Data Centers at the Crossroads: Global Trends and Middle East Opportunities. This premier global event series brings together data …"
+    },
+    {
+      "title": "Conference Overview - Data Center World Middle East 2026",
+      "url": "https://www.datacenterworldmiddleeast.com/conference-overview/",
+      "snippet": "Join 800+ senior data center leaders at Data Center World Middle East 2026 for technical sessions on AI infrastructure, liquid cooling …"
+    },
+    {
+      "title": "Registration opens (registration and exhibition are open from 08:00 ...",
+      "url": "https://www.datacloudmiddleeast.com/datacloud-middle-east-2026/registration-opens",
+      "snippet": "Feb 10, 2026 · Sign up now to receive the latest news, speaker reveals, session details, and exclusive offers directly to your inbox. …"
+    },
+    {
+      "title": "Datacloud Middle East 2027 | Data Centre & Cloud Summit",
+      "url": "http://datacloudmiddleeast.com/",
+      "snippet": "The event brings together data centre operators, hyperscalers, investors, construction companies, power providers and technology …"
+    },
+    {
+      "title": "Touchdown Middle East",
+      "url": "https://www.touchdownme.com/",
+      "snippet": "The conference offers attendees the opportunity to gain region-wide insight into the latest trends, developments, and opportunities in …"
+    }
+  ]
+}

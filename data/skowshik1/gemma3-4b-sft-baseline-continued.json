@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "skowshik1/gemma3-4b-sft-baseline-continued",
+  "slug": "skowshik1-gemma3-4b-sft-baseline-continued",
+  "author": "skowshik1",
+  "url": "https://huggingface.co/skowshik1/gemma3-4b-sft-baseline-continued",
+  "created_at": "2026-09-16T13:43:59.000Z",
+  "updated_at": "2026-09-16T14:26:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "hf_jobs",
+    "trl",
+    "base_model:skowshik1/gemma3-4b-sft-baseline-step2500-merged",
+    "base_model:finetune:skowshik1/gemma3-4b-sft-baseline-step2500-merged",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 164640592,
+  "storage_human": "165 MB",
+  "base_model": "skowshik1/gemma3-4b-sft-baseline-step2500-merged",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pôle emploi",
+      "url": "https://candidat.pole-emploi.fr/offres/recherche?motsCles=saisonnier",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "Offre d'emploi Gestionnaire RH (H/F) - 93 - Pôle emploi",
+      "url": "https://candidat.pole-emploi.fr/offres/recherche/detail/148XQLT",
+      "snippet": "Vous travaillerez au sein d'une grande usine spécialisée dans le domaine de l'industrie agroalimentaire. Vous rejoindrez une équipe …"
+    },
+    {
+      "title": "Offre d'emploi Aide comptable (F/H) - 76 - LE HAVRE - Pôle emploi",
+      "url": "https://candidat.pole-emploi.fr/offres/recherche/detail/150MDCG",
+      "snippet": "Randstad vous ouvre toutes les portes de l'emploi : intérim, CDD, CDI. Chaque année, 330 000 collaborateurs (f/h) travaillent dans …"
+    }
+  ]
+}

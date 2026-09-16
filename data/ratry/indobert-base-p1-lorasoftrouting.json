@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "ratry/indobert-base-p1-lorasoftrouting",
+  "slug": "ratry-indobert-base-p1-lorasoftrouting",
+  "author": "ratry",
+  "url": "https://huggingface.co/ratry/indobert-base-p1-lorasoftrouting",
+  "created_at": "2026-09-16T12:05:54.000Z",
+  "updated_at": "2026-09-16T12:05:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "id"
+  ],
+  "tags": [
+    "pytorch",
+    "tf",
+    "jax",
+    "bert",
+    "indobert",
+    "indobenchmark",
+    "indonlu",
+    "id",
+    "dataset:Indo4B",
+    "arxiv:2009.05387",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1651394685,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bureau de Poste saint leger du bourg denis - Horaires la poste",
+      "url": "https://www.horaires-laposte.fr/bureau/la-poste-saint-leger-du-bourg-denis-bp-76160",
+      "snippet": "Horaires d'ouverture, informations et services de Bureau de Poste saint leger du bourg denis situé à place du marche, centre …"
+    },
+    {
+      "title": "La Poste Saint Leger Du Bourg Denis (76160) - Horaires & Téléphone",
+      "url": "https://www.info-postes.com/la-poste/23273/",
+      "snippet": "Quels sont les horaires d'ouverture des bureaux de La Poste Saint Leger Du Bourg Denis ? La Poste Saint Leger Du Bourg Denis est …"
+    },
+    {
+      "title": "La Poste Saint leger du bourg denis (76160) - Coordonnées et Horaires",
+      "url": "https://www.infopostes.fr/la-poste/saint-leger-du-bourg-denis-76160",
+      "snippet": "Numéro de téléphone et horaires d'ouvertures de La Poste Saint leger du bourg denis situé à PLACE DU MARCHE, CENTRE …"
+    },
+    {
+      "title": "La Poste SAINT LEGER DU BOURG DENIS - La Banque Postale à Saint-Léger …",
+      "url": "https://www.horaireposte.fr/La%20Poste%20SAINT%20LEGER%20DU%20BOURG%20DENIS%20-%20La%20Banque%20Postale/76160/Saint-L%C3%A9ger-du-Bourg-Denis/22088",
+      "snippet": "Aug 24, 2026 · La Poste est ouverte du lundi au vendredi de 13h30 à 16h15 et le samedi de 09h30 à 10h45. C'est fermé le dimanche. …"
+    },
+    {
+      "title": "Bureaux de poste à Saint-Léger-du-Bourg-Denis 76160, horaires et ...",
+      "url": "https://www.horaires-laposte.fr/commune/saint-leger-du-bourg-denis-76160",
+      "snippet": "Obtenez les numéros de téléphone ainsi que les horaires d'ouverture des postes de la commune Saint-Léger-du-Bourg-Denis. Voici …"
+    }
+  ]
+}

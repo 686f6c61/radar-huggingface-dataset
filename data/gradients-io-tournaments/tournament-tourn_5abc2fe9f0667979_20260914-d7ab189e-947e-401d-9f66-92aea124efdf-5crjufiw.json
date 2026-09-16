@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "gradients-io-tournaments/tournament-tourn_5abc2fe9f0667979_20260914-d7ab189e-947e-401d-9f66-92aea124efdf-5CRjufiW",
+  "slug": "gradients-io-tournaments-tournament-tourn_5abc2fe9f0667979_20260914-d7ab189e-947e-401d-9f66-92aea124efdf-5crjufiw",
+  "author": "gradients-io-tournaments",
+  "url": "https://huggingface.co/gradients-io-tournaments/tournament-tourn_5abc2fe9f0667979_20260914-d7ab189e-947e-401d-9f66-92aea124efdf-5CRjufiW",
+  "created_at": "2026-09-16T16:48:44.000Z",
+  "updated_at": "2026-09-16T16:49:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:/cache/models/gradients-io-tournaments--tournament-tourn_5abc2fe9f0667979_20260914-5cfe1465-07dc-48ec-9097-a55da0261318-5CRjufiW",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:unsloth/Meta-Llama-3.1-8B-Instruct",
+    "base_model:adapter:unsloth/Meta-Llama-3.1-8B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2701626128,
+  "storage_human": "2.7 GB",
+  "base_model": "unsloth/Meta-Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "dubbing - 大饼AI变声",
+      "url": "https://dubbing.tech/",
+      "snippet": "Aug 25, 2026 · 如何使用大饼AI变声 1. 下载安装 点击官网下方下载按钮，并安装到你的电脑。 2. 系统设置 打开想要使用变声功能的游 …"
+    },
+    {
+      "title": "智声云配DubbingX",
+      "url": "https://www.dubbingx.com/",
+      "snippet": "DubbingX提供AI配音、智能配音、音色克隆等一站式音频解决方案，支持有声书配音、广告配音、短视频配音等多种场景。我们的免 …"
+    },
+    {
+      "title": "DubbingX",
+      "url": "https://app.dubbingx.com/login",
+      "snippet": "Jul 21, 2026 · DubbingX是一个提供AI智能配音、音色克隆和多场景配音解决方案的工具，助您高效创作专业级音频内容。"
+    },
+    {
+      "title": "大饼AI变声资源下载",
+      "url": "https://dubbing.tech/resource/download.html?productId=5&platformId=0&channel=official",
+      "snippet": "Aug 25, 2026 · 正在下载大饼AI变声安装包，请稍等～ 如长时间未响应，请尝试刷新页面 或 点击 重新下载"
+    },
+    {
+      "title": "免費實時變聲器及音板 - Dubbing AI",
+      "url": "https://dubbingai.io/zh",
+      "snippet": "Sep 9, 2026 · Dubbing AI 語音變聲器在配音方面表現突出，是一款即時語音轉換器，能在不到 300 毫秒的極快響應時間內提供高質量 …"
+    }
+  ]
+}

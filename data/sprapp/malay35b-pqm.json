@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "sprapp/malay35b-pqm",
+  "slug": "sprapp-malay35b-pqm",
+  "author": "sprapp",
+  "url": "https://huggingface.co/sprapp/malay35b-pqm",
+  "created_at": "2026-09-16T17:50:52.000Z",
+  "updated_at": "2026-09-16T17:53:10.000Z",
+  "license": "bcz-proprietary",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ms",
+    "en"
+  ],
+  "tags": [
+    "moe",
+    "malay",
+    "gated-deltanet",
+    "pqm",
+    "prism-engine",
+    "q4_k",
+    "ms",
+    "en",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.6-35B-A3B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 39878884495,
+  "storage_human": "39.9 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Правила сообщества YouTube - Cправка - YouTube",
+      "url": "https://support.google.com/youtube/answer/9288567?hl=ru",
+      "snippet": "Используя YouTube, вы становитесь частью огромного сообщества авторов и зрителей со всего мира. Чтобы всем в нем …"
+    },
+    {
+      "title": "Пропала подписка Ютуб премиум - Форум – YouTube",
+      "url": "https://support.google.com/youtube/thread/436465258/%D0%9F%D1%80%D0%BE%D0%BF%D0%B0%D0%BB%D0%B0-%D0%BF%D0%BE%D0%B4%D0%BF%D0%B8%D1%81%D0%BA%D0%B0-%D0%AE%D1%82%D1%83%D0%B1-%D0%BF%D1%80%D0%B5%D0%BC%D0%B8%D1%83%D0%BC?hl=ru",
+      "snippet": "May 24, 2026 · Здравствуйте! Недавно, 18 мая, у меня пропала подписка Ютуб, хотя я ее брала на год. Продавец, у которого …"
+    },
+    {
+      "title": "Сегодня не работает Ютуб - Woman.ru",
+      "url": "https://www.woman.ru/rest/freetime/thread-segodnya-ne-rabotaet-yutub-id6429366/",
+      "snippet": "May 28, 2026 · 69 ответов - А у вас? Сегодня не работает Ютуб, хотя на днях работал со всеми моими впн. (6429366) - …"
+    },
+    {
+      "title": "Не работает ютуб - 74 ответа на форуме Woman.ru (6360783)",
+      "url": "https://www.woman.ru/rest/freetime/thread-ne-rabotaet-yutub-id6360783/",
+      "snippet": "Dec 23, 2025 · 74 ответа - когда включаю ютуб, пишут нет доступа к интернету или не удалось соединиться с сайтом а к …"
+    },
+    {
+      "title": "Что делать, чтобы край не сворачивался",
+      "url": "https://www.passionforum.ru/posts/94346-chto-delat-chtoby-krai-ne-svorachivalsja.html",
+      "snippet": "May 9, 2018 · Связав новый топик я столкнулась с этой проблемой. Задала вопрос здесь, на сайте. Девочки, огромное …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Travor278/pi05-place-dual-shoes-right-first-data20260916-lora-10k-e186",
+  "slug": "travor278-pi05-place-dual-shoes-right-first-data20260916-lora-10k-e186",
+  "author": "Travor278",
+  "url": "https://huggingface.co/Travor278/pi05-place-dual-shoes-right-first-data20260916-lora-10k-e186",
+  "created_at": "2026-09-16T16:23:31.000Z",
+  "updated_at": "2026-09-16T16:27:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "robotics",
+    "pi05",
+    "jax",
+    "lora",
+    "simulation",
+    "dataset:Shiki42/ctr-place-dual-shoes-right-first-20260916",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6335582402,
+  "storage_human": "6.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HOTEL GRANVIA KYOTO - Official Site",
+      "url": "https://www.granviakyoto.com/en/",
+      "snippet": "With its many meeting and banquet rooms, a 1400-seat ballroom, restaurants & bars, and fitness facilities, Hotel Granvia Kyoto is …"
+    },
+    {
+      "title": "Hotel Granvia Kyoto directly connected to Kyoto Station [Official]",
+      "url": "https://jrwest-hotels.jp/en/granvia-kyoto/",
+      "snippet": "Serving as your gateway to Kyoto, Hotel Granvia Kyoto is where people, information, and culture meet the past and future. It's also …"
+    },
+    {
+      "title": "Hotel Granvia Kyoto, Kyoto (updated prices 2026) - Booking.com",
+      "url": "https://www.booking.com/hotel/jp/granvia-kyoto-kyoto.html?msockid=084967140b1f6c91265070c20a0c6dad",
+      "snippet": "Ideally located within Kyoto Station, Hotel Granvia Kyoto features an indoor swimming pool, a fitness center and 9 dining options. The …"
+    },
+    {
+      "title": "HOTEL GRANVIA KYOTO - Updated 2026 Prices & Reviews (Japan) - Tripadvisor",
+      "url": "https://www.tripadvisor.com/Hotel_Review-g298564-d1071189-Reviews-Hotel_Granvia_Kyoto-Kyoto_Kyoto_Prefecture_Kinki.html",
+      "snippet": "Hotel Granvia Kyoto is popular among travelers for its prime location, offering direct access to Kyoto Station and proximity to city …"
+    },
+    {
+      "title": "京都駅直結 ホテルグランヴィア京都【公式】",
+      "url": "https://jrwest-hotels.jp/granvia-kyoto/",
+      "snippet": "Dec 2, 2019 · BREAKFAST STAY GRANVIA LOUNGE グランヴィアフロア宿泊者専用の クラブラウンジ RESTAURANT & BAR …"
+    }
+  ]
+}

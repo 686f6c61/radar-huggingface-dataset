@@ -1,0 +1,94 @@
+{
+  "schema": 1,
+  "id": "nickprock/granite-311m-italiano-matryoshka",
+  "slug": "nickprock-granite-311m-italiano-matryoshka",
+  "author": "nickprock",
+  "url": "https://huggingface.co/nickprock/granite-311m-italiano-matryoshka",
+  "created_at": "2026-09-16T10:46:42.000Z",
+  "updated_at": "2026-09-16T12:06:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "it"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "modernbert",
+    "sentence-similarity",
+    "feature-extraction",
+    "dense",
+    "generated_from_trainer",
+    "dataset_size:45181",
+    "loss:MatryoshkaLoss",
+    "loss:CachedMultipleNegativesRankingLoss",
+    "loss:MultipleNegativesRankingLoss",
+    "it",
+    "dataset:nickprock/it-wiki-retrieval-synthetic-hn",
+    "dataset:mteb/stsb_multi_mt",
+    "dataset:crux82/squad_it",
+    "arxiv:1908.10084",
+    "arxiv:2205.13147",
+    "arxiv:2101.06983",
+    "arxiv:1807.03748",
+    "base_model:ibm-granite/granite-embedding-311m-multilingual-r2",
+    "base_model:finetune:ibm-granite/granite-embedding-311m-multilingual-r2",
+    "license:apache-2.0",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 311664384,
+  "parameters_human": "311.7M",
+  "storage_bytes": 656732294,
+  "storage_human": "657 MB",
+  "base_model": "ibm-granite/granite-embedding-311m-multilingual-r2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Triplet",
+      "dataset": "triplet eval it",
+      "metric": "Cosine Accuracy",
+      "value": 0.9995794892311096
+    }
+  ],
+  "sources": [
+    {
+      "title": "Cartagena wycieczki 2026 - Urlop.pl",
+      "url": "https://www.urlop.pl/wycieczki/kolumbia/cartagena/",
+      "snippet": "12 hours ago · Wycieczki do Cartageny w 2026 ☀️ Ponad 60 000 ofert! Najlepsze ceny, aktualne opinie Zarezerwuj idealne wakacje …"
+    },
+    {
+      "title": "Cartagena - Wycieczki objazdowe 2026 - zwiedzanie i wypoczynek",
+      "url": "https://www.urlop.pl/wycieczki-objazdowe/kolumbia/cartagena/",
+      "snippet": "12 hours ago · Wycieczki objazdowe 2026 w Cartagenie. Gwarancja najlepszej ceny Dołącz do tysięcy zadowolonych klientów Urlop.pl!"
+    },
+    {
+      "title": "Kolumbijski raj - Kolumbia | ITAKA",
+      "url": "https://www.itaka.pl/wycieczki/kolumbia/kolumbijski-raj,CTGKRAJ/",
+      "snippet": "Śniadanie. Wyjazd na całodzienną wycieczkę do PARKU NARODOWEGO TAYRONA. Jest to jedno z najatrakcyjniejszych miejsc w …"
+    },
+    {
+      "title": "Wycieczki objazdowe Cartagena 2026 i 2027 tanie wakacje i wczasy",
+      "url": "https://r.pl/kolumbia/cartagena/wycieczki-objazdowe?msockid=236b03879202622d27a91451932d6332",
+      "snippet": "Cartagena Wycieczki objazdowe Sprawdź nasze oferty wakacji w Kolumbii Znaleźliśmy 9 ofert Sortuj: od najniższej ceny Zapisz …"
+    },
+    {
+      "title": "Cartagena - Wakacje i wczasy 2026 i 2027 z Rainbow | R.pl",
+      "url": "https://r.pl/kolumbia/cartagena?msockid=236b03879202622d27a91451932d6332",
+      "snippet": "Wakacje w Cartagena 2026 i 2027 z Rainbow. Najlepsze oferty Last Minute, wczasy i tanie wycieczki objazdowe. Wypoczynek w …"
+    }
+  ]
+}

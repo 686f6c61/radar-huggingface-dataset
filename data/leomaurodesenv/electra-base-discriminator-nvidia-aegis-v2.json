@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "leomaurodesenv/electra-base-discriminator-nvidia-aegis-v2",
+  "slug": "leomaurodesenv-electra-base-discriminator-nvidia-aegis-v2",
+  "author": "leomaurodesenv",
+  "url": "https://huggingface.co/leomaurodesenv/electra-base-discriminator-nvidia-aegis-v2",
+  "created_at": "2026-09-16T10:30:33.000Z",
+  "updated_at": "2026-09-16T10:41:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "electra",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:google/electra-base-discriminator",
+    "base_model:finetune:google/electra-base-discriminator",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109483778,
+  "parameters_human": "109.5M",
+  "storage_bytes": 2189801385,
+  "storage_human": "2.2 GB",
+  "base_model": "google/electra-base-discriminator",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pornhub - Kostenloser Porno Und Sexvideos – Beste Porno Webseite …",
+      "url": "https://pornhub-deutsch.net/",
+      "snippet": "PornHub ist die weltweit führende kostenlose Porno-Website. Wähle aus Millionen von Harcore Pornovideos, die schnell und in …"
+    }
+  ]
+}

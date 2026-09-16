@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "ToiTenBao/ours-probe-coco-llava15-13b",
+  "slug": "toitenbao-ours-probe-coco-llava15-13b",
+  "author": "ToiTenBao",
+  "url": "https://huggingface.co/ToiTenBao/ours-probe-coco-llava15-13b",
+  "created_at": "2026-09-16T12:46:26.000Z",
+  "updated_at": "2026-09-16T12:46:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4076089327,
+  "storage_human": "4.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Router Login funktioniert nicht? 192.168.0.1, 192.... - Vodafone …",
+      "url": "https://forum.vodafone.de/t5/Community-Blog/Router-Login-funktioniert-nicht-192-168-0-1-192-168-178-1-amp/ba-p/3339555",
+      "snippet": "Jun 24, 2026 · Du willst Router-Einstellungen vornehmen, aber der Login über 192.168.0.1, 192.168.178.1 oder 192.168.2.1 …"
+    },
+    {
+      "title": "Betriebsvereinbarung: Definition, Inhalte, Muster",
+      "url": "https://www.betriebsrat.com/wissen/betriebsratsvorsitzender/betriebsvereinbarung",
+      "snippet": "Jan 28, 2019 · Betriebsvereinbarung: Definition Abschluss Inhalt & Beendigung nach BetrVG. Vorlagen für Betriebsrat & Arbeitgeber …"
+    },
+    {
+      "title": "JAV-Wahl - Wahl der Jugend- und Auszubildendenvertretung",
+      "url": "https://www.betriebsrat.com/wissen/jugend-und-auszubildendenvertretung/wahl",
+      "snippet": "Jan 28, 2019 · Hier findest du alle Infos rund um die Wahl der Jugend- und Auszubildendenvertretung: Gesetz, Wahlberechtigung …"
+    },
+    {
+      "title": "Störungen im Kabel-Netz - Vodafone Community",
+      "url": "https://forum.vodafone.de/t5/St%C3%B6rungen-im-Kabel-Netz/bd-p/StorungsmeldungenInternetTVTelefon",
+      "snippet": "13 hours ago · Servicevereinbarung und Techniker-Servicepauschale bei Vodafone Kabel Deutschland Nach einem Technikereinsatz …"
+    },
+    {
+      "title": "SBV-Wahl – Wahl der Schwerbehindertenvertretung",
+      "url": "https://www.betriebsrat.com/wissen/schwerbehindertenvertretung/wahl",
+      "snippet": "Jan 28, 2019 · SBV-Wahl verständlich erklärt. Erfahren Sie alles zu Fristen, Wahlverfahren, Wählerliste und typischen Fehlerquellen."
+    }
+  ]
+}

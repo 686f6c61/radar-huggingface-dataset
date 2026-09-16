@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "joshycodes/qwen3-4b-sorrel-selfloop-g11-midtrain",
+  "slug": "joshycodes-qwen3-4b-sorrel-selfloop-g11-midtrain",
+  "author": "joshycodes",
+  "url": "https://huggingface.co/joshycodes/qwen3-4b-sorrel-selfloop-g11-midtrain",
+  "created_at": "2026-09-16T14:40:04.000Z",
+  "updated_at": "2026-09-16T14:45:44.000Z",
+  "license": "internal-research",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "flourishing-training",
+    "continued-pretraining",
+    "dataset:joshycodes/sorrel-selfloop-corpus",
+    "base_model:joshycodes/qwen3-4b-sorrel-selfloop-g10-midtrain",
+    "base_model:finetune:joshycodes/qwen3-4b-sorrel-selfloop-g10-midtrain",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 32191356221,
+  "storage_human": "32.2 GB",
+  "base_model": "joshycodes/qwen3-4b-sorrel-selfloop-g10-midtrain",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Europizza Amsterdam Noord | Unieke Zuurdesem Pizza & Wijnbar",
+      "url": "https://www.europizza.rest/",
+      "snippet": "Geniet bij Europizza in Amsterdam Noord van unieke zuurdesem pizza’s, natuurwijnen en seizoensgebonden gerechten gemaakt …"
+    },
+    {
+      "title": "DE 10 BESTE pizza restaurants in Amsterdam-Noord - Tripadvisor",
+      "url": "https://www.tripadvisor.nl/Restaurants-g188590-c31-zfn15620067-Amsterdam_North_Holland_Province.html",
+      "snippet": "Lees Tripadvisor-reizigersbeoordelingen van de beste pizza restaurants in Amsterdam-Noord en zoek op prijs, locatie en meer."
+    },
+    {
+      "title": "30 X beste pizza's in Amsterdam // Your Little Black Book",
+      "url": "https://www.yourlittleblackbook.me/beste-pizza-amsterdam/",
+      "snippet": "Waar eet je de beste pizza van Amsterdam? Wij verzamelden al onze favoriete adresjes, met in bijna iedere wijk een paar tips. Of je …"
+    },
+    {
+      "title": "Pizza bestel je bij Dominos | Honour the Craving",
+      "url": "https://www.dominos.nl/",
+      "snippet": "Bestel je favoriete pizza (medium of italian), scan de QR-code op de doos en laat het spel beginnen. Elke slice die je pakt, triggert …"
+    },
+    {
+      "title": "Pazzi | Authentic Italian Pizza | Amsterdam",
+      "url": "https://www.pazziamsterdam.nl/",
+      "snippet": "Discover authentic Italian pizza in Pazzi Amsterdam. Wood-fired pizzas, carefully selected ingredients and welcoming restaurants …"
+    }
+  ]
+}

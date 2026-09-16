@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "mradermacher/PhAI-IDE-9B-i1-GGUF",
+  "slug": "mradermacher-phai-ide-9b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/PhAI-IDE-9B-i1-GGUF",
+  "created_at": "2026-09-16T18:20:55.000Z",
+  "updated_at": "2026-09-16T18:43:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 13599427200,
+  "storage_human": "13.6 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reddit - Dive into anything",
+      "url": "https://www.reddit.com/",
+      "snippet": "Reddit is a network of communities where people can dive into their interests, hobbies and passions. There's a community for …"
+    },
+    {
+      "title": "Femboys: Boys just wanna have fun - Reddit",
+      "url": "https://www.reddit.com/r/FemBoys/",
+      "snippet": "r/FemBoys: Unleash your feminine side! An 18+ subreddit for boys to get naughty."
+    },
+    {
+      "title": "Effacer sites pornos de l'historique de navigation",
+      "url": "https://forums.commentcamarche.net/forum/affich-35657130-effacer-sites-pornos-de-l-historique-de-navigation",
+      "snippet": "Oct 25, 2018 · Malekal_morte- Messages postés 178136 Date d'inscription mercredi 17 mai 2006 Statut Modérateur, Contributeur …"
+    },
+    {
+      "title": "Se désabonner de xhamster [Résolu] - Consommation & Internet",
+      "url": "https://forums.commentcamarche.net/forum/affich-36239263-se-desabonner-de-xhamster",
+      "snippet": "Oct 2, 2019 · Sujet PrécédentSujet Suivant Se désabonner de xhamster Résolu/Fermé zazadata- bazfile Messages …"
+    },
+    {
+      "title": "r/france - Reddit",
+      "url": "https://www.reddit.com/r/france/about/",
+      "snippet": "La France, les Français et même les francophones"
+    }
+  ]
+}

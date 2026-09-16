@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "AdamAxelrod/basler_pipette_2026-09-16_delta_act",
+  "slug": "adamaxelrod-basler_pipette_2026-09-16_delta_act",
+  "author": "AdamAxelrod",
+  "url": "https://huggingface.co/AdamAxelrod/basler_pipette_2026-09-16_delta_act",
+  "created_at": "2026-09-16T18:23:09.000Z",
+  "updated_at": "2026-09-16T18:28:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:AdamAxelrod/basler_pipette_2026-09-16_delta",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51597959,
+  "parameters_human": "51.6M",
+  "storage_bytes": 206430524,
+  "storage_human": "206 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Videoclipuri Oficiale cu Adriana Antoni - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PL3UDNXGcm2ckzDz0kt7GNmaoCElSk-LB1",
+      "snippet": "Mar 22, 2026 · Bine ati venit! In acest playlist veti gasi cele mai noi si consacrate melodii de la Adriana Antoni!"
+    },
+    {
+      "title": "Adriana Antoni Oficial - YouTube",
+      "url": "https://www.youtube.com/channel/UCtLYvwO7UlN907xwWBxg2_A",
+      "snippet": "Videoclipuri Oficiale cu Adriana Antoni 🎶 Play all Bine ati venit! In acest playlist veti gasi cele mai noi si consacrate melodii de la …"
+    },
+    {
+      "title": "Adriana Antoni - YouTube Music",
+      "url": "https://music.youtube.com/channel/UCjNY-0guiUIem79becgg-pA",
+      "snippet": "112K views • Jan 31, 2025 • 3 min 41 sec Nu-i niciunul ca romanul 1.4M views • Oct 10, 2024 • 3 min 30 sec Adriana Antoni - Aș da …"
+    },
+    {
+      "title": "Videoclipuri Oficiale cu Adriana Antoni - YouTube Music",
+      "url": "https://music.youtube.com/playlist?list=PL3UDNXGcm2ckzDz0kt7GNmaoCElSk-LB1",
+      "snippet": "Astăzi inima mea de roman vibrează alături de toți compatrioții mei și ii mulțumesc lui Dumnezeu ca prin muzica reușesc sa va …"
+    },
+    {
+      "title": "Adriana Antoni o biografie ce uimește pe toți. Interpreta și-a luat ...",
+      "url": "https://www.bzi.ro/adriana-antoni-o-biografie-ce-uimeste-pe-toti-interpreta-si-a-luat-adio-de-la-mama-sa-prin-telefon-4293610",
+      "snippet": "Oct 21, 2021 · Adriana Antoni are o biografie fabuloasă fiind apreciată și iubită de sute de fani. Interpreta de muzică populară și …"
+    }
+  ]
+}

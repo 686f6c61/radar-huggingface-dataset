@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Gensyn/open-1b-sft",
+  "slug": "gensyn-open-1b-sft",
+  "author": "Gensyn",
+  "url": "https://huggingface.co/Gensyn/open-1b-sft",
+  "created_at": "2026-09-15T14:02:47.000Z",
+  "updated_at": "2026-09-16T12:44:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "open1b",
+    "text-generation",
+    "gensyn",
+    "verifiable-training",
+    "reproducible-training",
+    "repops",
+    "conversational",
+    "custom_code",
+    "en",
+    "dataset:allenai/tulu-3-sft-olmo-2-mixture-0225",
+    "base_model:Gensyn/open-1b-midtrained-93B",
+    "base_model:finetune:Gensyn/open-1b-midtrained-93B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 13,
+  "downloads_30d": 152,
+  "trending_score": 13,
+  "parameters": 1608011776,
+  "parameters_human": "1.61B",
+  "storage_bytes": 6432081672,
+  "storage_human": "6.4 GB",
+  "base_model": "Gensyn/open-1b-midtrained-93B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "מרכזי יום | עיריית נתניה",
+      "url": "https://www.netanya.muni.il/Residents/Welfare/SeniorCitizens/Activities/Pages/DayCenters.aspx",
+      "snippet": "Feb 8, 2026 · תגיות לחיפוש: אגף אזרחים ותיקים Getting your Trinity Audioplayer ready... בנתניה שלושה מרכזי יום. שניים מהם לאזרחים ותיקים …"
+    },
+    {
+      "title": "הדר העמותה למען הקשיש בנתניה - שרותי סיעוד ומעונות יום",
+      "url": "http://www.hadar-net.org/",
+      "snippet": "עמותת הדר הוקמה בשנת 1979 במגמה ליזום, לפתח ולהפעיל שירותים למען האוכלוסייה המבוגרת בעיר נתניה."
+    },
+    {
+      "title": "מרכזי תרבות ופנאי לאזרחים ותיקים | עיריית נתניה",
+      "url": "https://www.netanya.muni.il/Residents/Welfare/Administration/Pages/CLCSC.aspx",
+      "snippet": "Feb 8, 2026 · האגף לטיפול באזרחים ותיקים מפעילה רשת מרכזי תרבות ופנאי המיועדים לאזרחים ותיקים עצמאיים בתפקודם, תושבי העיר נתניה."
+    },
+    {
+      "title": "אודותינו | הדר העמותה למען הקשיש",
+      "url": "http://www.hadar-net.org/%d7%90%d7%95%d7%93%d7%95%d7%aa%d7%99%d7%a0%d7%95/",
+      "snippet": "עמותת הדר הוקמה בשנת 1979 במגמה ליזום, לפתח ולהפעיל שירותים למען האוכלוסייה המבוגרת בעיר נתניה. במהלך שנות קיומה השכילה העמותה …"
+    },
+    {
+      "title": "מרכז לקשיש בית דבורה - מרכז תרבות מומלץ בנתניה | המלצות וביקורות",
+      "url": "https://zips.co.il/%D7%A2%D7%A1%D7%A7%D7%99%D7%9D/%D7%A0%D7%AA%D7%A0%D7%99%D7%94/%D7%9E%D7%A8%D7%9B%D7%96%D7%99-%D7%AA%D7%A8%D7%91%D7%95%D7%AA/17672/%D7%9E%D7%A8%D7%9B%D7%96-%D7%9C%D7%A7%D7%A9%D7%99%D7%A9-%D7%91%D7%99%D7%AA-%D7%93%D7%91%D7%95%D7%A8%D7%94",
+      "snippet": "מרכז לקשיש בית דבורה - מרכז תרבות בנתניה. דירוג: 4.8 כוכבים. מצא חוות דעת, מידע ופרטים נוספים."
+    }
+  ]
+}

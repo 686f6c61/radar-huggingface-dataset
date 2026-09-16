@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "Tohirju/sl-elk",
+  "slug": "tohirju-sl-elk",
+  "author": "Tohirju",
+  "url": "https://huggingface.co/Tohirju/sl-elk",
+  "created_at": "2026-09-16T12:35:21.000Z",
+  "updated_at": "2026-09-16T12:35:46.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "nemo",
+  "languages": [],
+  "tags": [
+    "nemo",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 459233280,
+  "storage_human": "459 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Meine AOK | Willkommen",
+      "url": "https://meine.aok.de/",
+      "snippet": "\"Das Onlineportal \"\"Meine AOK\"\" bietet Versicherten der AOK Zugang zu persönlichen Daten, Gesundheitsleistungen und Services.\""
+    },
+    {
+      "title": "Onlineportal und App „Meine AOK“ im Überblick | AOK",
+      "url": "https://www.aok.de/pk/versichertenservice/onlineportal-meine-aok/",
+      "snippet": "Haben Sie sich einmal für „Meine AOK“ registriert, können Sie sich mit Ihren persönlichen Zugangsdaten sowohl in der App als auch …"
+    },
+    {
+      "title": "Meine AOK | Willkommen",
+      "url": "https://login.meine.aok.de/",
+      "snippet": "Aus Sicherheitsgründen wurde Ihr Login-Versuch abgebrochen. Bitte versuchen Sie es erneut."
+    },
+    {
+      "title": "„Meine AOK“: sichere Anmeldung | AOK",
+      "url": "https://www.aok.de/pk/versichertenservice/meine-aok-sichere-anmeldung/",
+      "snippet": "Der Login für „Meine AOK“ wird umgestellt. Bereiten Sie sich jetzt vor und legen Sie Ihre GesundheitsID einmalig in der kostenlosen …"
+    },
+    {
+      "title": "Meine AOK | Willkommen",
+      "url": "https://meine.aok.de/konto/meine-daten",
+      "snippet": "Mit „Meine AOK“ können Sie Ihre persönlichen Daten verwalten, Dokumente hochladen und jederzeit mobil oder webbasiert auf Ihre …"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "soyrsoyr/Qwen3.8-27B-FP8-DYNAMIC-MTP",
+  "slug": "soyrsoyr-qwen3-8-27b-fp8-dynamic-mtp",
+  "author": "soyrsoyr",
+  "url": "https://huggingface.co/soyrsoyr/Qwen3.8-27B-FP8-DYNAMIC-MTP",
+  "created_at": "2026-09-16T18:04:09.000Z",
+  "updated_at": "2026-09-16T18:44:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "fp8",
+    "compressed-tensors",
+    "llm-compressor",
+    "mtp",
+    "speculative-decoding",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 29946695341,
+  "storage_human": "29.9 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "笔记本电脑怎么设置调节CPU散热风扇转速 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/d621e8da1cc8336965913fad.html",
+      "snippet": "Aug 22, 2020 · 方法1：在电脑桌面中，鼠标右键左下角的开始，在弹出的列表中选择“运行”选项，打开运行。"
+    },
+    {
+      "title": "Word文档如何设置或取消缩小后显示双页/多页-百度经验",
+      "url": "https://jingyan.baidu.com/article/48a42057f964aca9242504f8.html",
+      "snippet": "Aug 15, 2016 · 我们在进行文档编辑的时候，有时由于屏幕较大，同时显示多页，共同进行编辑较为便利；有时则是相反的情况，我们 …"
+    },
+    {
+      "title": "tft怎么设置60fps - 百度经验",
+      "url": "https://jingyan.baidu.com/article/1876c85284c09ac80a137627.html",
+      "snippet": "May 18, 2021 · tft怎么设置60fps？下面分享云顶之羿tft手游怎么设置60fps。"
+    },
+    {
+      "title": "拳头账号怎么更改绑定邮箱 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/7f766daf5bd8930000e1d014.html",
+      "snippet": "Dec 3, 2020 · 拳头账号绑定邮箱更改方法，包括登录官网、进入账号设置、更改邮箱地址并提交，简单易操作。"
+    },
+    {
+      "title": "LOL日服注册教程 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/f7ff0bfc12d22e2e26bb13ad.html",
+      "snippet": "Jan 25, 2017 · 注册之前先代理日本IP，在百度查询ip，确定是日本IP才能注册 2 输入lol日服注册网 …"
+    }
+  ]
+}

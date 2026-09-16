@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "mradermacher/PhAI-IDE-4B-i1-GGUF",
+  "slug": "mradermacher-phai-ide-4b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/PhAI-IDE-4B-i1-GGUF",
+  "created_at": "2026-09-16T15:31:07.000Z",
+  "updated_at": "2026-09-16T15:31:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 897272,
+  "parameters_human": "897272",
+  "storage_bytes": 3626464,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Politica de garanție BYD | BYD Autoglobus Timișoara",
+      "url": "https://bydtimisoara.ro/proprietari/garantie-byd/",
+      "snippet": "Pentru mai multe detalii despre Garanțiile BYD vă rugăm să ne contactați."
+    },
+    {
+      "title": "Warranty Policy I RO - byd.com",
+      "url": "https://www.byd.com/ro/service-maintenance/warranty-policy",
+      "snippet": "SUV compact electric BYD SEAL Sedanul performant complet electric BYD SEAL Sedanul performant complet electric BYD SEAL U …"
+    },
+    {
+      "title": "Warranty Policy I RO - prod.byd.com",
+      "url": "https://prod.byd.com/eu/service-maintenance/warranty-policy-RO",
+      "snippet": "Expressive and dynamic C-SUV BYD ATTO 3 EVO Electric SUV with 510km Range BYD SEAL Dynamic and Intelligent BYD HAN …"
+    },
+    {
+      "title": "BYD SERVICE ȘI ÎNTREȚINERE | BYD România",
+      "url": "https://www.byd.com/ro/service-maintenance",
+      "snippet": "Pentru a ne asigura că totul se desfășoară fără probleme, serviciile noastre sunt special concepute pentru dvs. și pentru mașina dvs. …"
+    },
+    {
+      "title": "Garantie » Dealer & Service Autorizat BYD | Bucuresti",
+      "url": "https://dabauto.ro/byd/garantie/",
+      "snippet": "O politică de garanție cuprinzătoare este în vigoare pentru dvs. Pentru mai multe detalii despre garanție, vă rugăm să ne contactați. …"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ABDHAM/smolvla_rescuehands_v2",
+  "slug": "abdham-smolvla_rescuehands_v2",
+  "author": "ABDHAM",
+  "url": "https://huggingface.co/ABDHAM/smolvla_rescuehands_v2",
+  "created_at": "2026-09-16T16:16:43.000Z",
+  "updated_at": "2026-09-16T16:39:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "openvino",
+    "robotics",
+    "smolvla",
+    "dataset:ABDHAM/rescuehands_table_v2",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 2609596926,
+  "storage_human": "2.6 GB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Translate Help",
+      "url": "https://support.google.com/translate/?hl=en",
+      "snippet": "Official Google Translate Help Center where you can find tips and tutorials on using Google Translate and other answers to …"
+    },
+    {
+      "title": "ترجمة كلمات مكتوبة - جهاز الكمبيوتر - مساعدة Google Translate",
+      "url": "https://support.google.com/translate/answer/6142478?hl=ar&co=GENIE.Platform%3DDesktop",
+      "snippet": "يمكنك ترجمة ما يصل إلى 5,000 حرف في كل مرة يتم فيها نسخ النص ولصقه. على الكمبيوتر، افتح ترجمة Google. في أعلى الشاشة، اختَر اللغتَين اللتَين تريد الترجمة بينهما. من: اختَر لغة أو انقر …"
+    },
+    {
+      "title": "ترجمة كلمات مكتوبة",
+      "url": "https://support.google.com/translate/answer/6142478?hl=ar&co=GENIE.Platform%3DiOS",
+      "snippet": "ترجمة نص على iPhone أو iPad، افتَح تطبيق \"ترجمة Google\" . اختَر لغة للترجمة منها وإليها. من: في أسفل الشاشة، اختَر لغة أو انقر على رمز التعرّف التلقائي على اللغة . إلى: في أسفل الصفحة، …"
+    },
+    {
+      "title": "استخدام \"الترجمة المباشرة\" للحصول على ترجمة فورية للمحادثات الصوتية",
+      "url": "https://support.google.com/translate/answer/6142474?hl=ar&co=GENIE.Platform%3DDesktop",
+      "snippet": "لا يمكنك التحدّث والترجمة في الوقت نفسه على تطبيق \"ترجمة Google\" للويب، ولكن يمكنك إجراء ذلك باستخدام التطبيق على الهاتف أو الجهاز اللوحي. إرسال ملاحظات بشأن \"ترجمة Google\" في أعلى يمين"
+    },
+    {
+      "title": "الترجمة عن طريق التحدث",
+      "url": "https://support.google.com/translate/answer/6142468?hl=ar&co=GENIE.Platform%3DDesktop",
+      "snippet": "الترجمة باستخدام ميكروفون ملاحظة مُهمة: تختلف اللغات المتوافقة حسب المتصفّح. يمكنك الترجمة باستخدام ميكروفون في متصفّح Chrome ولكن هذه الميزة متاحة بشكل محدود في متصفّحَي …"
+    }
+  ]
+}

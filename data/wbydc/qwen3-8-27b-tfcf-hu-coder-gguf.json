@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "id": "wbydc/Qwen3.8-27B-TFCF-HU-CODER-GGUF",
+  "slug": "wbydc-qwen3-8-27b-tfcf-hu-coder-gguf",
+  "author": "wbydc",
+  "url": "https://huggingface.co/wbydc/Qwen3.8-27B-TFCF-HU-CODER-GGUF",
+  "created_at": "2026-09-16T16:23:09.000Z",
+  "updated_at": "2026-09-16T16:23:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "unsloth",
+    "fine tune",
+    "heretic",
+    "uncensored",
+    "abliterated",
+    "ara",
+    "MTP GGUF Quants",
+    "Regular GGUF Quants",
+    "qwen3_8",
+    "qwen3_6",
+    "qwen3_5",
+    "multi-stage tuned",
+    "thinking",
+    "reasoning",
+    "all use cases",
+    "coder",
+    "creative",
+    "creative writing",
+    "all genres",
+    "story",
+    "writing",
+    "fiction",
+    "roleplaying",
+    "bfloat16",
+    "multi-stage-tune",
+    "multi-state-merge",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "dataset:DavidAU/Polar-STRICT-Datasets",
+    "dataset:DavidAU/F451-STRICT-Datasets",
+    "base_model:DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+    "base_model:quantized:DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 389007761691,
+  "storage_human": "389.0 GB",
+  "base_model": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bilgisayar Nedir? Bilgisayar Hakkında - msxlabs.org",
+      "url": "https://www.msxlabs.org/forum/bilgisayar/200322-bilgisayar-nedir-bilgisayar-hakkinda.html",
+      "snippet": "Nov 23, 2007 · Bilgisayarla Yapılan İşlemler Bir bilgisayarla yapılan işlemler üç temel faaliyetten ibarettir: Giriş/çıkış işlemleri, veriler …"
+    },
+    {
+      "title": "Bilgisayar ekranındaki karıncalanma neden olabilir? - MsXLabs",
+      "url": "https://www.msxlabs.org/forum/cevaplanmis/265522-bilgisayar-ekranindaki-karincalanma-neden-olabilir.html",
+      "snippet": "Aug 14, 2009 · Bilgisayar bir süre sonra 10 dakika donuyor, hiçbir şey çalışmıyor, neden olabilir?"
+    },
+    {
+      "title": "DonanımHaber Forum",
+      "url": "https://forum.donanimhaber.com/",
+      "snippet": "Teknoloji, sıcak fırsatlar, otomobil, ülke gündemi, kripto para, eğitim, futbol hakkında bilgiler ve tartışma platformu: DonanımHaber …"
+    },
+    {
+      "title": "Wi-Fi Açma-Kapama Tuşu Çalışmıyor | DonanımHaber Forum",
+      "url": "https://forum.donanimhaber.com/wi-fi-acma-kapama-tusu-calismiyor--65224719",
+      "snippet": "Wi-Fi açma-kapama tuşunuz çalışmıyorsa, sorunu çözmek ve Wi-Fi'nizi tekrar çalıştırmak için bu basit adımları izleyin. HP dizüstü …"
+    },
+    {
+      "title": "Temel Bilgisayar Dersleri - MsXLabs",
+      "url": "https://www.msxlabs.org/forum/egitim-bilimleri/79845-temel-bilgisayar-dersleri.html",
+      "snippet": "Nov 19, 2007 · Temel Bilgisayar Dersleri Günümüzde bilgisayar her alanda kullanılmaktadır. Bilgisayarın bu yaygın kullanımı onu ..."
+    }
+  ]
+}

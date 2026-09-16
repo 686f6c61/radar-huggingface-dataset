@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Travor278/pi05-scan-object-right-first-data20260916-lora-10k-e194",
+  "slug": "travor278-pi05-scan-object-right-first-data20260916-lora-10k-e194",
+  "author": "Travor278",
+  "url": "https://huggingface.co/Travor278/pi05-scan-object-right-first-data20260916-lora-10k-e194",
+  "created_at": "2026-09-16T16:48:37.000Z",
+  "updated_at": "2026-09-16T16:50:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "robotics",
+    "pi05",
+    "jax",
+    "lora",
+    "simulation",
+    "dataset:Shiki42/ctr-scan-object-right-first-20260916",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6335578894,
+  "storage_human": "6.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "9 bezienswaardigheden in Bernay (+ foto’s)",
+      "url": "https://normandielovers.fr/nl/bezienswaardigheden-bernay-bezoeken/",
+      "snippet": "Feb 3, 2025 · Bernay is een charmant Normandisch dorp dat zijn rijke middeleeuwse erfgoed bewaard heeft. We werden verleid door …"
+    },
+    {
+      "title": "Bernay (Eure) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Bernay_(Eure)",
+      "snippet": "La forteresse est détruite peu après. Bernay est un temps restituée au fils de Charles II de Navarre, avant d'être confisquée par le roi …"
+    },
+    {
+      "title": "Bernay - Gids Toerisme & Recreatie - France Voyage",
+      "url": "https://www.france-voyage.com/frankrijk-toerisme/bernay-1800.htm",
+      "snippet": "Gelegen in het hart van Normandië, op 150 km van Parijs, 55 km van Deauville en 58 km van Rouen, geniet Bernay van een …"
+    },
+    {
+      "title": "Bernay (Eure) - Wikipedia",
+      "url": "https://nl.wikipedia.org/wiki/Bernay_(Eure)",
+      "snippet": "Bernay werd een onderdeel van het graafschap Évreux en werd een belangrijke handelsstad, waar ook Joodse en Zwitserse …"
+    },
+    {
+      "title": "Bernay - Normandië Toerisme, Frankrijk",
+      "url": "https://nl.normandie-tourisme.fr/bezienswaardigheden/bernay/",
+      "snippet": "· Organiseer je reis · Te zien, te doen · Bezienswaardigheden · Leuk thema voor een bezoek: middeleeuwse bezienswaardigheden · …"
+    }
+  ]
+}

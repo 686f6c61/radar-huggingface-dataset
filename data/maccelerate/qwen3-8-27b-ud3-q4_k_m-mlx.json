@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "maccelerate/Qwen3.8-27B-UD3-Q4_K_M-MLX",
+  "slug": "maccelerate-qwen3-8-27b-ud3-q4_k_m-mlx",
+  "author": "maccelerate",
+  "url": "https://huggingface.co/maccelerate/Qwen3.8-27B-UD3-Q4_K_M-MLX",
+  "created_at": "2026-09-16T15:25:04.000Z",
+  "updated_at": "2026-09-16T15:28:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "mlx-serve",
+    "qwen3.8",
+    "apple-silicon",
+    "mtp",
+    "speculative-decoding",
+    "mixed-precision",
+    "unsloth-dynamic-v3",
+    "ud3",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 16731568120,
+  "storage_human": "16.7 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OFF TOPIC definition and meaning | Collins English Dictionary",
+      "url": "https://www.collinsdictionary.com/dictionary/english/off-topic",
+      "snippet": "Informal not related to the matter being discussed.... Click for English pronunciations, examples sentences, video."
+    },
+    {
+      "title": "Traducción al español de \"off-topic\" - Collins Online Dictionary",
+      "url": "https://www.collinsdictionary.com/es/diccionario/ingles-espanol/off-topic",
+      "snippet": "Español Traducción de “OFF-TOPIC” | El Collins Diccionario inglés-español en línea oficial. Más de 100.000 traducciones español de …"
+    },
+    {
+      "title": "OFF TOPIC definição e significado | Dicionário Inglês Collins",
+      "url": "https://www.collinsdictionary.com/pt/dictionary/english/off-topic",
+      "snippet": "Informal not related to the matter being discussed.... Clique para pronúncias em inglês, frases de exemplo, vídeos."
+    },
+    {
+      "title": "OFF TOPIC - Aprenda o significado, sinónimos e traduções | Recursos …",
+      "url": "https://www.collinsdictionary.com/pt/aprendizagem-da-lingua-inglesa/off-topic",
+      "snippet": "Aprenda tudo sobre a palavra “OFF TOPIC” em inglês: definições, traduções, sinónimos, pronúncias, exemplos e dicas de gramática …"
+    },
+    {
+      "title": "OFF TOPIC Definizione significato | Dizionario inglese Collins",
+      "url": "https://www.collinsdictionary.com/it/dizionario/inglese/off-topic",
+      "snippet": "Informal not related to the matter being discussed.... Fare clic per ottenere pronunce in inglese, frasi di esempio e video."
+    }
+  ]
+}

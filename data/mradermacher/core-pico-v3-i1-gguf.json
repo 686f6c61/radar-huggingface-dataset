@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "mradermacher/CORe-Pico-V3-i1-GGUF",
+  "slug": "mradermacher-core-pico-v3-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/CORe-Pico-V3-i1-GGUF",
+  "created_at": "2026-09-16T17:38:31.000Z",
+  "updated_at": "2026-09-16T19:07:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation",
+    "causal-lm",
+    "en",
+    "base_model:OpenCOReTechnologies/CORe-Pico-V3",
+    "base_model:quantized:OpenCOReTechnologies/CORe-Pico-V3",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 21647148768,
+  "storage_human": "21.6 GB",
+  "base_model": "OpenCOReTechnologies/CORe-Pico-V3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Maxi-Cosi Fame - Kinderwagen ab der Geburt",
+      "url": "https://www.maxi-cosi.de/kinderwagen/fame-neue-generation",
+      "snippet": "Zukunftsweisendes Design. Die zeitlose Maxi-Cosi Fame Babywanne schafft neue Wege und wurde für mehr Luxus und Komfort für …"
+    },
+    {
+      "title": "Fame - experience page | Maxi-Cosi",
+      "url": "https://www.maxi-cosi.de/c/fame-features",
+      "snippet": "Der zeitlose Kinderwagen Maxi-Cosi Fame geht neue Wege und wurde für mehr luxuriösem Komfort für Baby und Eltern konzipiert. …"
+    },
+    {
+      "title": "Fame - experience page | Maxi-Cosi",
+      "url": "https://www.maxi-cosi.at/c/fame-features",
+      "snippet": "Der zeitlose Kinderwagen Maxi-Cosi Fame geht neue Wege und wurde für mehr luxuriösem Komfort für Baby und Eltern konzipiert. …"
+    },
+    {
+      "title": "Maxi-Cosi Fame Test 2026: Erfahrungen, Vorteile & lohnt sich der ...",
+      "url": "https://kinderwarentest.de/maxi-cosi-fame-test/",
+      "snippet": "Mar 17, 2026 · Der Maxi-Cosi Fame ist ein komfortorientierter Premium-Kombikinderwagen für Eltern, die viel Wert auf Ausstattung, …"
+    },
+    {
+      "title": "Maxi-Cosi Fame – Baby Bottosso",
+      "url": "https://bottosso.de/fame/",
+      "snippet": "Der neue zeitlose Kinderwagen Maxi-Cosi Fame geht neue Wege und wurde für mehr luxuriösem Komfort für Baby und Eltern …"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "justtaeyoungoh/cnn-transformer-baseline",
+  "slug": "justtaeyoungoh-cnn-transformer-baseline",
+  "author": "justtaeyoungoh",
+  "url": "https://huggingface.co/justtaeyoungoh/cnn-transformer-baseline",
+  "created_at": "2026-09-16T12:50:16.000Z",
+  "updated_at": "2026-09-16T12:50:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "VLC Media Player | NTLite Forums",
+      "url": "https://www.ntlite.com/community/threads/vlc-media-player.1928/",
+      "snippet": "Sep 9, 2024 · VLC uses a Nullsoft installer, so the correct flag is /S, and not /s. The flag is case-sensitive, unlike other installers. Do …"
+    },
+    {
+      "title": "need (complete) mozilla source to compile vlc plugin?",
+      "url": "https://forum.videolan.org/viewtopic.php?t=6939",
+      "snippet": "I just tried to compile the vlc as plugin for mozilla / firefox. After I fetched tons of libraries and son on, it looks like vlc is still crying after …"
+    },
+    {
+      "title": "VLC fullscreen on Display3 run from CMD - The VideoLAN Forums",
+      "url": "https://forum.videolan.org/viewtopic.php?p=533369",
+      "snippet": "Nov 30, 2022 · VLC fullscreen on Display3 run from CMD by Giggz » Sat Apr 03, 2021 7:20 pm I'm using Windows 10 Pro latest …"
+    },
+    {
+      "title": "Apply | NTLite",
+      "url": "https://www.ntlite.com/docs/apply/",
+      "snippet": "Notes A notes card sits above the pending-changes list, carrying what this particular run is worth knowing about: a read-only mount, …"
+    },
+    {
+      "title": "ubuntu 10.04.1, keyboard stops working after vlc - The VideoLAN Forums",
+      "url": "https://forum.videolan.org/viewtopic.php?t=81549&p=538222",
+      "snippet": "Jun 26, 2023 · I have the same problem with the non-working letter \"d\" when the player is running. I can't key the letter in any …"
+    }
+  ]
+}

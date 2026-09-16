@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "mradermacher/GRM-3.2-Sky-GGUF",
+  "slug": "mradermacher-grm-3-2-sky-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/GRM-3.2-Sky-GGUF",
+  "created_at": "2026-09-16T15:32:23.000Z",
+  "updated_at": "2026-09-16T15:54:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 21403390528,
+  "storage_human": "21.4 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Error \"'git' is not recognized as an internal or external command\"",
+      "url": "https://stackoverflow.com/questions/4492979/error-git-is-not-recognized-as-an-internal-or-external-command",
+      "snippet": "I have an installation of Git for Windows, but when I try to use the git command in Command Prompt, I get the following error: 'git' is …"
+    },
+    {
+      "title": "c - What is the difference between ++i and i++? - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/24853/what-is-the-difference-between-i-and-i",
+      "snippet": "Aug 24, 2008 · In C, what is the difference between using ++i and i++, and which should be used in the incrementation block of a for …"
+    },
+    {
+      "title": "When do I use a question mark with \"Could you [please]",
+      "url": "https://english.stackexchange.com/questions/9332/when-do-i-use-a-question-mark-with-could-you-please",
+      "snippet": "Jan 20, 2011 · Actually, sentences that begin with 'could', 'should', or 'would' are questions and should have a trailing question mark. …"
+    },
+    {
+      "title": "Какая разница между i++ и ++i? - Stack Overflow на ...",
+      "url": "https://ru.stackoverflow.com/questions/1055621/%d0%9a%d0%b0%d0%ba%d0%b0%d1%8f-%d1%80%d0%b0%d0%b7%d0%bd%d0%b8%d1%86%d0%b0-%d0%bc%d0%b5%d0%b6%d0%b4%d1%83-i-%d0%b8-i",
+      "snippet": "Dec 7, 2019 · В связи с наступлением на нас шаблонов в С++, рекомендуется писать в циклах ++i а не i++. Это связано с тем, …"
+    },
+    {
+      "title": "How do I properly hyphenate \"well thought out\"?",
+      "url": "https://english.stackexchange.com/questions/10959/how-do-i-properly-hyphenate-well-thought-out",
+      "snippet": "Feb 2, 2011 · I would use well-thought-out if it would means something different from well thought-out; in the example sentence, well …"
+    }
+  ]
+}

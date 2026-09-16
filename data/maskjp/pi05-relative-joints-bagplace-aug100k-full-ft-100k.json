@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "maskjp/pi05-relative-joints-bagplace-aug100k-full-ft-100k",
+  "slug": "maskjp-pi05-relative-joints-bagplace-aug100k-full-ft-100k",
+  "author": "maskjp",
+  "url": "https://huggingface.co/maskjp/pi05-relative-joints-bagplace-aug100k-full-ft-100k",
+  "created_at": "2026-09-16T16:43:10.000Z",
+  "updated_at": "2026-09-16T16:44:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "pi0.5",
+    "relative-actions",
+    "augmentation",
+    "joints",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 9388900979,
+  "storage_human": "9.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Αγορά από tradingshenzhen : r/greece - Reddit",
+      "url": "https://www.reddit.com/r/greece/comments/rhyjbd/%CE%B1%CE%B3%CE%BF%CF%81%CE%AC_%CE%B1%CF%80%CF%8C_tradingshenzhen/",
+      "snippet": "Dec 16, 2021 · Kαλησπέρα. έχετε αγοράσει κινητό από το tradingshenzhen και αν ναι, τι ισχύει για Ελλάδα σχετικά με φπα και …"
+    },
+    {
+      "title": "Iskustva sa tradingshenzhen : r/bih - Reddit",
+      "url": "https://www.reddit.com/r/bih/comments/19fbc2k/iskustva_sa_tradingshenzhen/",
+      "snippet": "Zdravo, da li je neko narucivao telefone sa https://tradingshenzhen.com Koliko vidim, tvrde da nema dodatnih troskova carine ili PDV …"
+    },
+    {
+      "title": "Bestellerfahrung Tradingshenzhen | LTE-Forum Österreich",
+      "url": "https://www.lteforum.at/mobilfunk/bestellerfahrung-tradingshenzhen.17381/",
+      "snippet": "May 14, 2021 · Erfahre mehr über Bestellerfahrungen bei Tradingshenzhen und mögliche Versandprobleme, während Nutzer über …"
+    },
+    {
+      "title": "Do not buy a phone at Tradingshenzen.com! : r/oneplus - Reddit",
+      "url": "https://www.reddit.com/r/oneplus/comments/3l2zau/do_not_buy_a_phone_at_tradingshenzencom/",
+      "snippet": "Sep 15, 2015 · I uhhh dont know what you expected? I thought the whole premise of the phone and its hype and price point was the …"
+    },
+    {
+      "title": "anyone heard about tradingshenzhen? : r/Xiaomi - Reddit",
+      "url": "https://www.reddit.com/r/Xiaomi/comments/zvmbvi/anyone_heard_about_tradingshenzhen/",
+      "snippet": "Dec 26, 2022 · anyone heard about tradingshenzhen? The phone they sell is able to work fine in Europe? And if that's any problems …"
+    }
+  ]
+}

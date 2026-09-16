@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "joshycodes/qwen3-4b-sorrel-selfloop-g11-selfjudge-chat",
+  "slug": "joshycodes-qwen3-4b-sorrel-selfloop-g11-selfjudge-chat",
+  "author": "joshycodes",
+  "url": "https://huggingface.co/joshycodes/qwen3-4b-sorrel-selfloop-g11-selfjudge-chat",
+  "created_at": "2026-09-16T14:47:04.000Z",
+  "updated_at": "2026-09-16T15:08:40.000Z",
+  "license": "internal-research",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "flourishing-training",
+    "continued-pretraining",
+    "base_model:joshycodes/qwen3-4b-sorrel-selfloop-g11-midtrain",
+    "base_model:finetune:joshycodes/qwen3-4b-sorrel-selfloop-g11-midtrain",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 25702152989,
+  "storage_human": "25.7 GB",
+  "base_model": "joshycodes/qwen3-4b-sorrel-selfloop-g11-midtrain",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MySQL",
+      "url": "https://www.mysql.com/",
+      "snippet": "MySQL Enterprise Edition The most comprehensive set of advanced features, management tools and technical support to achieve …"
+    },
+    {
+      "title": "MySQL :: Download MySQL Installer",
+      "url": "https://dev.mysql.com/downloads/installer/",
+      "snippet": "Note: MySQL 8.0 is the final series with MySQL Installer. As of MySQL 8.1, use a MySQL product's MSI or Zip archive for installation. …"
+    },
+    {
+      "title": "MySQL Community Downloads",
+      "url": "https://dev.mysql.com/downloads/",
+      "snippet": "MySQL Community Server MySQL NDB Cluster MySQL Router MySQL Shell MySQL Operator MySQL NDB Operator MySQL …"
+    },
+    {
+      "title": "MySQL",
+      "url": "https://www.mysql.com/cn/",
+      "snippet": "服务 培训 认证 支持 下载 MySQL Community Server MySQL NDB Cluster MySQL Shell MySQL Router MySQL Workbench 文档 …"
+    },
+    {
+      "title": "MySQL :: Download MySQL Installer (Archived Versions)",
+      "url": "https://downloads.mysql.com/archives/installer/",
+      "snippet": "Jan 16, 2026 · We suggest that you use the MD5 checksums and GnuPG signatures to verify the integrity of the packages you …"
+    }
+  ]
+}

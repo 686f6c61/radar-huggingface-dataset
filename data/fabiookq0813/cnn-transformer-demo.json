@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Fabiookq0813/cnn-transformer-demo",
+  "slug": "fabiookq0813-cnn-transformer-demo",
+  "author": "Fabiookq0813",
+  "url": "https://huggingface.co/Fabiookq0813/cnn-transformer-demo",
+  "created_at": "2026-09-16T14:01:44.000Z",
+  "updated_at": "2026-09-16T14:01:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "cnn_transformer",
+    "pytorch",
+    "cnn-transformer",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Guida di Maps - Google Help",
+      "url": "https://support.google.com/maps/?hl=it",
+      "snippet": "Centro assistenza ufficiale di Maps in cui puoi trovare suggerimenti e tutorial sull'utilizzo del prodotto, oltre ad altre risposte alle …"
+    },
+    {
+      "title": "Карти Довідка",
+      "url": "https://support.google.com/maps/?hl=uk",
+      "snippet": "Офіційний довідковий центр Карти, де можна знайти поради та навчальні посібники щодо користування цим продуктом, а …"
+    },
+    {
+      "title": "6 tính năng AI vừa được cập nhật của Google Maps",
+      "url": "https://tinhte.vn/thread/6-tinh-nang-ai-vua-duoc-cap-nhat-cua-google-maps.3770081/",
+      "snippet": "Mar 14, 2024 · Bây giờ Google Maps cũng đã được tích hợp AI, với 1 bản nâng cấp lớn. Dưới đây là 6 tính năng Ai của Google …"
+    },
+    {
+      "title": "Maps Ohjeet - Google Help",
+      "url": "https://support.google.com/maps/?hl=fi",
+      "snippet": "Maps -palvelun virallinen Ohjekeskus, joka sisältää vinkkejä ja ohjeita palvelun käyttämiseen sekä vastauksia usein kysyttyihin …"
+    },
+    {
+      "title": "Maps Trợ giúp",
+      "url": "https://support.google.com/maps/?hl=vi",
+      "snippet": "Trung tâm Trợ giúp Maps chính thức, nơi bạn có thể tìm thấy các mẹo và hướng dẫn sử dụng sản phẩm và các câu trả lời khác cho …"
+    }
+  ]
+}

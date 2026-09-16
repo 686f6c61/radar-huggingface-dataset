@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "businessdevelopment/kenkoai",
+  "slug": "businessdevelopment-kenkoai",
+  "author": "businessdevelopment",
+  "url": "https://huggingface.co/businessdevelopment/kenkoai",
+  "created_at": "2026-09-16T14:48:28.000Z",
+  "updated_at": "2026-09-16T14:48:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jak získat pomoc ve Windows - Podpora Microsoftu",
+      "url": "https://support.microsoft.com/cs-cz/windows/jak-z%C3%ADskat-pomoc-ve-windows-711b6492-0435-0038-8706-7c6b0feb200a",
+      "snippet": "Vyhledejte nápovědu na hlavním panelu, použijte aplikaci Tipy, v aplikaci Nastavení vyberte odkaz Získat pomoc nebo přejděte na …"
+    },
+    {
+      "title": "Jak získat nápovědu ve Windows 11 (6 metod) - etechblog.cz",
+      "url": "https://etechblog.cz/jak-ziskat-napovedu-ve-windows-11-6-metod",
+      "snippet": "Jul 22, 2022 · V tomto článku najdete šest různých metod, jak získat asistenci s vaším počítačem se systémem Windows 11. Můžete …"
+    },
+    {
+      "title": "Nápověda a výuka pro Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/cs-cz/windows/",
+      "snippet": "Najděte si nápovědu a postupy pro operační systémy Windows. Získejte podporu pro Windows a seznamte se s instalací, …"
+    },
+    {
+      "title": "Jak získat pomoc a opravit problémy v systému Windows 11 a Windows …",
+      "url": "https://cs.101-help.com/jak-ziskat-napovedu-ve-windows-11-10-ae0a8b63ae/",
+      "snippet": "Zkuste vestavěnou nápovědu pro nastavení nebo funkci systému Windows. Spusťte odpovídající nástroj pro řešení potíží. Použijte …"
+    },
+    {
+      "title": "7 způsobů, jak získat nápovědu ve Windows 10 a Windows 11",
+      "url": "https://cz.moyens.net/windows/7-zpusobu-jak-ziskat-napovedu-ve-windows-10-a-windows-11/",
+      "snippet": "Apr 28, 2024 · Systém Windows vám však může pomoci se některých z nich efektivně zbavit pomocí svých vestavěných možností. …"
+    }
+  ]
+}

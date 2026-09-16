@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "sandeep123/stride-qwen3-4b-stabilized-2048-local_positive-20260916",
+  "slug": "sandeep123-stride-qwen3-4b-stabilized-2048-local_positive-20260916",
+  "author": "sandeep123",
+  "url": "https://huggingface.co/sandeep123/stride-qwen3-4b-stabilized-2048-local_positive-20260916",
+  "created_at": "2026-09-16T11:09:40.000Z",
+  "updated_at": "2026-09-16T12:04:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "reinforcement-learning",
+    "math",
+    "nonthinking",
+    "stride",
+    "text-generation",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:adapter:Qwen/Qwen3-4B-Instruct-2507",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 407986318,
+  "storage_human": "408 MB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "myLEX ΑΑΔΕ: Είσοδος & Αναζήτηση Φορολογικής Νομοθεσίας",
+      "url": "https://taxrevenue.gr/mylex-aade/",
+      "snippet": "5 days ago · myLEX ΑΑΔΕ: Μπείτε στην επίσημη πλατφόρμα και αναζητήστε φορολογική και τελωνειακή νομοθεσία, αποφάσεις, …"
+    },
+    {
+      "title": "Γενική Διεύθυνση Ηλεκτρονικής Διακυβέρνησης (ΓΔΗΛΕΔ) | ΑΑΔΕ",
+      "url": "https://www.aade.gr/aade/anthropino-dynamiko/diaheirisi-anthropinoy-dynamikoy/ypiresies-tis-aade/genikes-dieythynseis/geniki-dieythynsi",
+      "snippet": "Η Γενική Διεύθυνση Ηλεκτρονικής Διακυβέρνησης παρέχει υπηρεσίες ηλεκτρονικής διακυβέρνησης και ανάπτυξης φορολογικών …"
+    },
+    {
+      "title": "OSE - ΟΣΕ",
+      "url": "https://ose.gr/",
+      "snippet": "Έναρξη εφαρμογής του προγράμματος δηζελοκίνησης των ΣΕΚ με την προμήθεια 10 δηζελοκίνητων μηχανών έλξης ALCO …"
+    },
+    {
+      "title": "ΑΑΔΕ - ΕΙΣΟΔΟΣ",
+      "url": "https://www1.aade.gr/gsisapps/apcpub/login/login.do",
+      "snippet": "Οι υπάλληλοι των Δ.Ο.Υ. που έχουν μεταπέσει στο Taxis2 μπορούν να δώσουν το νέο τους Όνομα Χρήστη και το Συνθηματικό τους. …"
+    },
+    {
+      "title": "myAADE - General Secretariat of Public Revenue",
+      "url": "http://www1.aade.gr/gsisapps5/myaade/",
+      "snippet": "myAADE - General Secretariat of Public Revenue ... myAADE"
+    }
+  ]
+}

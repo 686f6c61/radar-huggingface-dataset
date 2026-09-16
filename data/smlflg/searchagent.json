@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "smlflg/SearchAgent",
+  "slug": "smlflg-searchagent",
+  "author": "smlflg",
+  "url": "https://huggingface.co/smlflg/SearchAgent",
+  "created_at": "2026-09-16T19:52:13.000Z",
+  "updated_at": "2026-09-16T19:52:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "서울 인왕산 근처 호텔 베스트 10 - Tripadvisor",
+      "url": "https://www.tripadvisor.co.kr/HotelsNear-g294197-d1549822-Inwangsan_Mountain-Seoul.html",
+      "snippet": "인왕산 부근의 호텔: 서울, 대한민국의 4,053호텔에 대한 197,580건의 여행자 리뷰, 184,440건의 사진 및 저렴한 숙박 요금을 체크하세요."
+    },
+    {
+      "title": "인왕산 근처 호텔 주변 호텔 베스트 10|트립닷컴",
+      "url": "https://kr.trip.com/hot/%EC%9D%B8%EC%99%95%EC%82%B0+%EA%B7%BC%EC%B2%98+%ED%98%B8%ED%85%94/",
+      "snippet": "호텔에서 갤러리 시몬, 누하동259, 서울 체부동 홍종문 가옥 등 인기 관광지까지 쉽게 이동할 수 있습니다. 바쁜 일정 후에는 호텔에서 …"
+    },
+    {
+      "title": "2026 종로구 인왕산 근처 호텔 리조트 베스트 10",
+      "url": "https://www.yeogi.com/accommodation/hotel/kr/attraction/%EC%A2%85%EB%A1%9C%EA%B5%AC%EC%9D%B8%EC%99%95%EC%82%B0",
+      "snippet": "서울특별시 종로구 인왕산 근처에 있는 인기 호텔 리조트 찾기. 인왕산 주변 추천 호텔 리조트 베스트 10. 후기를 확인하고 최저가 예약 …"
+    },
+    {
+      "title": "인왕산 등산로 입구 근처 호텔 BEST 10, 서울 숙소 | 트립닷컴",
+      "url": "https://kr.trip.com/hotels/seoul-inwangsan-mountain-hiking-trail/hotels-c274m61179353/",
+      "snippet": "인왕산 등산로 입구 주변 주차가 가능한 인기 호텔은 어디인가요? 서울에서 차량으로 여행한다면, 인왕산 등산로 입구 인근 편리한 …"
+    },
+    {
+      "title": "2026 종로구 인왕산 근처 숙소 베스트 10",
+      "url": "https://www.yeogi.com/accommodation/kr/attraction/%EC%A2%85%EB%A1%9C%EA%B5%AC%EC%9D%B8%EC%99%95%EC%82%B0",
+      "snippet": "서울특별시 종로구 인왕산 근처에 있는 인기 숙소 찾기. 인왕산 주변 추천 숙소 베스트 10. 후기를 확인하고 최저가 예약 가능한 쿠폰 …"
+    }
+  ]
+}

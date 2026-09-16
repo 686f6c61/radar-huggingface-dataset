@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "zi218803/ppo-Huggy",
+  "slug": "zi218803-ppo-huggy",
+  "author": "zi218803",
+  "url": "https://huggingface.co/zi218803/ppo-Huggy",
+  "created_at": "2026-09-16T10:43:44.000Z",
+  "updated_at": "2026-09-16T10:43:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "Huggy",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-Huggy",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 187240215,
+  "storage_human": "187 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amazon Prime Business",
+      "url": "https://www.amazon.de/businessprime",
+      "snippet": "Amazon Prime ist ein Mitgliedschaftsprogramm, das auf Amazon verfügbar ist. Es bietet Haushalts- und Unterhaltungsvorteile wie …"
+    },
+    {
+      "title": "Amazon Music | Hör dir Songs, Podcasts und vieles mehr an",
+      "url": "https://music.amazon.de/",
+      "snippet": "Suche und streame Musik und Podcasts über den Webbrowser. Höre dir deine liebsten Playlists aus über 100 Millionen Songs bei …"
+    },
+    {
+      "title": "Prime Video: Live-TV ansehen - Amazon.de",
+      "url": "https://www.amazon.de/gp/video/livetv",
+      "snippet": "Entdecke eine große Auswahl an Live-Inhalten bei Prime Video. Streame und entdecke Top-Channels – alles in einer App."
+    },
+    {
+      "title": "Amazon.de",
+      "url": "https://www.amazon.de/gp/css/homepage.html",
+      "snippet": "Hier finden Sie alles, was Sie für Ihren Einkauf benötigen, von Elektronik bis zu Büchern und vielem mehr."
+    },
+    {
+      "title": "Amazon.de: Amazon Prime",
+      "url": "https://www.amazon.de/amazonprime?primeCampaignId=accessWlpPrimeRedir",
+      "snippet": "Genieße einen 6–Monat-Gratiszeitraum von Prime für Studenten, Auszubildende und junge Erwachsene von 18 - 24 Jahren. Erhalte …"
+    }
+  ]
+}

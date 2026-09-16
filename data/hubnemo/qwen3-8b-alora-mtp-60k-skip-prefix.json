@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "hubnemo/Qwen3-8B-ALoRA-MTP-60k-skip-prefix",
+  "slug": "hubnemo-qwen3-8b-alora-mtp-60k-skip-prefix",
+  "author": "hubnemo",
+  "url": "https://huggingface.co/hubnemo/Qwen3-8B-ALoRA-MTP-60k-skip-prefix",
+  "created_at": "2026-09-16T18:12:19.000Z",
+  "updated_at": "2026-09-16T18:47:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10298029704,
+  "storage_human": "10.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Padlet - Visual Collaboration for Creative Work and Education",
+      "url": "https://padlet.com/",
+      "snippet": "Beautiful boards and canvases for visual thinkers and learners. Used by 40 million people worldwide. Get started for free."
+    },
+    {
+      "title": "Padlet - Collaboration visuelle pour le travail créatif et l'éducation",
+      "url": "https://fr.padlet.com/",
+      "snippet": "Des tableaux et des toiles magnifiques pour les penseurs et les apprenants visuels. Utilisé par 40 millions de personnes dans le …"
+    },
+    {
+      "title": "Log in to Padlet",
+      "url": "https://padlet.com/auth/login",
+      "snippet": "Login to see your complete body of work on Padlet."
+    },
+    {
+      "title": "Se connecter à Padlet",
+      "url": "https://fr.padlet.com/auth/login",
+      "snippet": "Connectez-vous pour voir votre travail complet sur Padlet."
+    },
+    {
+      "title": "Sign up for Padlet",
+      "url": "https://padlet.com/dashboard",
+      "snippet": "Sign up for Padlet to make and share beautiful content with your friends and colleagues."
+    }
+  ]
+}

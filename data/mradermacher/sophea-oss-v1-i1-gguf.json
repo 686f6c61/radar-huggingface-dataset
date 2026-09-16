@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Sophea-OSS-v1-i1-GGUF",
+  "slug": "mradermacher-sophea-oss-v1-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Sophea-OSS-v1-i1-GGUF",
+  "created_at": "2026-09-16T17:59:25.000Z",
+  "updated_at": "2026-09-16T18:58:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "el",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "arxiv:2608.17744",
+    "greek",
+    "reasoning",
+    "thinking",
+    "language-matched",
+    "moe",
+    "gpt-oss",
+    "harmony",
+    "el",
+    "en",
+    "base_model:ayoubkirouane/Sophea-OSS-v1",
+    "base_model:quantized:ayoubkirouane/Sophea-OSS-v1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20914757184,
+  "parameters_human": "20.91B",
+  "storage_bytes": 126092639008,
+  "storage_human": "126.1 GB",
+  "base_model": "ayoubkirouane/Sophea-OSS-v1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Download | Viber",
+      "url": "https://www.viber.com/en/download/",
+      "snippet": "Download Viber for mobile Download Viber for Desktop Viber for Desktop is synced to your mobile account. To activate Viber for …"
+    },
+    {
+      "title": "Скачать | Viber",
+      "url": "https://www.viber.com/ru/download/",
+      "snippet": "Загрузите Viber для компьютера Приложение для компьютера на Windows, Maс или Linux синхронизируется со смартфоном."
+    },
+    {
+      "title": "Login - Viber Out | International Calling App",
+      "url": "https://account.viber.com/en/login/",
+      "snippet": "Viber Out is a VOIP service provider. Sign up and Call friends and family on any landline or mobile phone with Viber credit, sign up …"
+    },
+    {
+      "title": "Đăng nhập - Viber Out | Ứng dụng gọi quốc tế",
+      "url": "https://account.viber.com/vi/login/",
+      "snippet": "Viber Out là nhà cung cấp dịch vụ VOIP. Đăng ký và gọi điện thoại cho bạn bè và gia đình trên bất kỳ số cố định hoặc di động nào …"
+    },
+    {
+      "title": "Submit a request – Viber Support",
+      "url": "https://help.viber.com/hc/en-us/requests/new",
+      "snippet": "With this data, in addition to processing for the aforementioned purposes of caller identification, Rakuten Viber identifies for its users …"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "teaguesterling/qwen3.5-0.8b-astcss",
+  "slug": "teaguesterling-qwen3-5-0-8b-astcss",
+  "author": "teaguesterling",
+  "url": "https://huggingface.co/teaguesterling/qwen3.5-0.8b-astcss",
+  "created_at": "2026-09-16T16:32:02.000Z",
+  "updated_at": "2026-09-16T16:32:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "code",
+    "ast",
+    "astcss",
+    "sitting_duck",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 1524816613,
+  "storage_human": "1.5 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TikTok",
+      "url": "https://www.tiktok.com/",
+      "snippet": ""
+    },
+    {
+      "title": "TikTok - Make Your Day",
+      "url": "https://www.tiktok.com/en/",
+      "snippet": "TikTok - trends start here. On a device or on the web, viewers can watch and discover millions of personalized short videos. …"
+    },
+    {
+      "title": "Log in - TikTok",
+      "url": "https://m.tiktok.com/login/phone-or-email/email",
+      "snippet": "Log in or sign up for an account on TikTok. Start watching to discover real people and real videos that will make your day."
+    },
+    {
+      "title": "Sign up - TikTok",
+      "url": "https://m.tiktok.com/signup/phone-or-email/phone",
+      "snippet": "Sign up for an account or log back into TikTok. Create an account to discover real people and real videos that will make your day."
+    },
+    {
+      "title": "Log in - TikTok",
+      "url": "https://www.tiktok.com/login",
+      "snippet": "Log in or sign up for an account on TikTok. Start watching to discover real people and real videos that will make your day."
+    }
+  ]
+}

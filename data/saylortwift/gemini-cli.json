@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "SaylorTwift/gemini-cli",
+  "slug": "saylortwift-gemini-cli",
+  "author": "SaylorTwift",
+  "url": "https://huggingface.co/SaylorTwift/gemini-cli",
+  "created_at": "2026-09-16T10:39:44.000Z",
+  "updated_at": "2026-09-16T10:40:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "agent",
+    "coding-agent",
+    "cli",
+    "llm",
+    "tool-use",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 80843657,
+  "storage_human": "81 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Slow Roads",
+      "url": "https://slowroads.io/",
+      "snippet": "Slow Roads is a casual driving game designed for long, cathartic journeys on quiet, scenic roads. Simply chase the horizon through …"
+    },
+    {
+      "title": "Play Slow Roads - Free Relaxing Browser Driving Game",
+      "url": "https://www.slowroadsgame.net/",
+      "snippet": "Slow Roads is a casual, procedurally-generated driving game which lets you disconnect from life for a while and run endlessly toward …"
+    },
+    {
+      "title": "Slow Roads 2: - Slowroads",
+      "url": "https://theslowroads.io/slow-roads-2/",
+      "snippet": "Slow Roads is a casual, procedurally-generated driving game which lets you disconnect from life for a while and run endlessly toward …"
+    },
+    {
+      "title": "Slow Roads– Routes for a Peaceful Driving Experience",
+      "url": "https://slow-roads.gitlab.io/",
+      "snippet": "Slow Roads is a casual driving game designed for long, cathartic journeys on quiet, scenic roads. Simply chase the horizon through …"
+    },
+    {
+      "title": "Driftmas 2025",
+      "url": "https://driftmas.slowroads.io/",
+      "snippet": "Driftmas is the annual Slow Roads winter rally event. Compete to set the fastest time on the extra-slippery 5km track for a chance to …"
+    }
+  ]
+}

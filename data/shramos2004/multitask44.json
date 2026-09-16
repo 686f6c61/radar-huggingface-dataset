@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "shramos2004/multitask44",
+  "slug": "shramos2004-multitask44",
+  "author": "shramos2004",
+  "url": "https://huggingface.co/shramos2004/multitask44",
+  "created_at": "2026-09-16T14:43:41.000Z",
+  "updated_at": "2026-09-16T14:43:47.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "multitask",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GPT-5가 출시되었습니다 | OpenAI",
+      "url": "https://openai.com/ko-KR/gpt-5/",
+      "snippet": "GPT‑5는 고품질 코드를 생산하고, 최소화된 프롬프트로 프론트엔드 UI를 생성하고, 성격과 제어 가능성, 그리고 도구 호출의 긴 흐름을 …"
+    },
+    {
+      "title": "OpenAI | 연구 및 배포",
+      "url": "https://openai.com/ko-KR/",
+      "snippet": "OpenAI는 연구가 궁극적으로 인간 수준으로 문제를 해결할 수 있는 시스템인 범용 인공지능으로 이어질 것으로 믿습니다."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI - OpenAI",
+      "url": "https://platform.openai.com/onboarding?app=chat",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download …"
+    },
+    {
+      "title": "OpenAI Platform",
+      "url": "https://platform.openai.com/playground/chat?models=gpt-4o",
+      "snippet": "Build on the OpenAI API Platform Sign up or login with an OpenAI account to build with the OpenAI API."
+    },
+    {
+      "title": "ChatGPT | OpenAI Developers",
+      "url": "https://developers.openai.com/chatgpt",
+      "snippet": "ChatGPT Cookbook Explore hands-on guides to build custom GPT actions to integrate with third-party tools and more."
+    }
+  ]
+}

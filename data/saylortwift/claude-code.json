@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "SaylorTwift/claude-code",
+  "slug": "saylortwift-claude-code",
+  "author": "SaylorTwift",
+  "url": "https://huggingface.co/SaylorTwift/claude-code",
+  "created_at": "2026-09-16T10:39:49.000Z",
+  "updated_at": "2026-09-16T10:40:16.000Z",
+  "license": "anthropic-commercial-terms",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "agent",
+    "coding-agent",
+    "cli",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11002760,
+  "storage_human": "11 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Modern | Tiny Haus | Kärnten",
+      "url": "https://www.tinyhaus.co.at/",
+      "snippet": "Modern, praktische Tiny Häuser, funktionell, dynamisch, individuell und günstig"
+    },
+    {
+      "title": "Tiny Haus Modelle | Tiny Haus",
+      "url": "https://www.tinyhaus.co.at/tinyhaus-modelle",
+      "snippet": "Wunderschöne Tinyhäuser Alles andere als nur eine langweilige Zweckarchitektur! In Österreich und Deutschland gab es bis vor …"
+    },
+    {
+      "title": "Ferienhaus Modelle | Tiny Haus",
+      "url": "https://www.tinyhaus.co.at/ferienh%C3%A4user",
+      "snippet": "Riwo VITO M 24 m2 Abmessungen: Länge 6 m, Breite: 4 m Deckenhohe 2,3 m PVC-Fenster und doppelte Eingangstüren (außen …"
+    },
+    {
+      "title": "Tiny Haus Maxi",
+      "url": "https://www.tinyhaus.co.at/product-page/tiny-haus-maxi",
+      "snippet": "Größe: L/ B/ H 12 m x 3 m x 3 m (Bruttomaß) Innenmaß: L/B/H 11,5m x 2,7m x 2,6m Raumfläche: ca.34 m² Bruttopreis: ab € 77.990.- …"
+    },
+    {
+      "title": "TECHNISCHE INFOS - Tiny Haus",
+      "url": "https://www.tinyhaus.co.at/h%C3%A4ufige-fragen",
+      "snippet": "Feuchtigkeit: Unsere TINY Häuser sind beständig gegen Eintritt von Feuchtigkeit und Kondenswasser. Es hat 6 Isolationsschichten …"
+    }
+  ]
+}

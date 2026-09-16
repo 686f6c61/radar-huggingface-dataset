@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "pngwn/nanodiff-350m-typed-decisions-lam1",
+  "slug": "pngwn-nanodiff-350m-typed-decisions-lam1",
+  "author": "pngwn",
+  "url": "https://huggingface.co/pngwn/nanodiff-350m-typed-decisions-lam1",
+  "created_at": "2026-09-16T15:07:32.000Z",
+  "updated_at": "2026-09-16T16:04:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "diffusion-language-model",
+    "masked-diffusion",
+    "llada",
+    "calibration",
+    "typed-decisions",
+    "dataset:pngwn/typed-decisions",
+    "base_model:Sebasdi/nanodiff-350m-base",
+    "base_model:finetune:Sebasdi/nanodiff-350m-base",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9159425905,
+  "storage_human": "9.2 GB",
+  "base_model": "Sebasdi/nanodiff-350m-base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vous connecter - societegenerale.fr",
+      "url": "https://devenirclient.particuliers.societegenerale.fr/icd/eprpri/index-authsec.html",
+      "snippet": "Connectez-vous à votre espace client Société Générale pour accéder à vos comptes et gérer vos services bancaires en ligne."
+    },
+    {
+      "title": "Connexion à votre Espace Client Particuliers",
+      "url": "https://api.moncompagnonretraite.particuliers.societegenerale.fr/",
+      "snippet": "Comment ça se passe ? Une demande de connexion est envoyée en temps réel sur votre mobile dans l’Appli Société Générale. Il …"
+    },
+    {
+      "title": "Renouveler votre mot de passe - societegenerale.fr",
+      "url": "https://devenirclient.particuliers.societegenerale.fr/swm/swm-reattribution.html",
+      "snippet": "Renouveler votre mot de passe Veuillez saisir votre adresse de messagerie afin de vous envoyer le lien permettant de créer un …"
+    },
+    {
+      "title": "Société Générale - Banque et Assurance",
+      "url": "https://particuliers.societegenerale.fr/static/Particuliers/assets/fonts/montserrat/Montserrat-ExtraBold.woff",
+      "snippet": "wOFF ¸d DSIG ¸\\ GDEF ” ¨ –ÔöÖcGPOS >”§ø\\¾âÿ.»8—Ó Æ¢® 6p °‰[ Ý Üå®ãMw ïúøâ|B_ Ëú*XÝ÷À^~ Žöûñ ˆ ü3ñþU”C\\”+* …"
+    },
+    {
+      "title": "devenirclient.particuliers.societegenerale.fr",
+      "url": "https://devenirclient.particuliers.societegenerale.fr/icd/eprpri/data/getDocument/Fiche%20d%C3%A9clarative%20de%20situation%20financi%C3%A8re-authsec.pdf?cl200_filename=Fiche%20d%C3%A9clarative%20de%20situation%20financi%C3%A8re",
+      "snippet": "Mot de passe. Votre mot de passe n'est pas au bon format. Valider. Mot de passe oublié ? Documentation et tarifs ; Nos …"
+    }
+  ]
+}

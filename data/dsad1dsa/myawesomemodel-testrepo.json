@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "DSAD1DSA/MyAwesomeModel-TestRepo",
+  "slug": "dsad1dsa-myawesomemodel-testrepo",
+  "author": "DSAD1DSA",
+  "url": "https://huggingface.co/DSAD1DSA/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-16T14:18:10.000Z",
+  "updated_at": "2026-09-16T14:18:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ترجمة Google",
+      "url": "https://translate.google.com.eg/",
+      "snippet": "خدمة ترجمة مجانية مقدَّمة من Google حيث يمكن ترجمة الكلمات والعبارات وصفحات الويب بشكل فوري بين اللغة الإنجليزية وأكثر من 100 لغة أخرى."
+    },
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/",
+      "snippet": "Google's service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other …"
+    },
+    {
+      "title": "مُترجِم DeepL | المُترجِم الإلكتروني الأدقّ في العالم",
+      "url": "https://www.deepl.com/ar/translator",
+      "snippet": "ترجِم نصوصاً ومستندات بكاملها على الفور. ترجمات دقيقة للأفراد وفِرق العمل. يستعين ملايين الأشخاص بمُترجِم DeepL يومياً لترجمة نصوصهم."
+    },
+    {
+      "title": "ترجمة Google",
+      "url": "https://translate.google.com.eg/details",
+      "snippet": "الترجمات مختلفة حسب نوع الجنس مزيد من المعلومات إرسال ملاحظات"
+    },
+    {
+      "title": "Microsoft Translator - الترجمة من الإنجليزية - Bing",
+      "url": "https://www.bing.com/translator?setlang=ar",
+      "snippet": "الترجمة الإنجليزية مجانا مع نتائج دقيقة. يستخدم الملايين Bing كل يوم للترجمة عبر أكثر من 100 لغة - جربه الآن!"
+    }
+  ]
+}

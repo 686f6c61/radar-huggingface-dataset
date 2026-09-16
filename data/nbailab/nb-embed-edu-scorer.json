@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "NbAiLab/nb-embed-edu-scorer",
+  "slug": "nbailab-nb-embed-edu-scorer",
+  "author": "NbAiLab",
+  "url": "https://huggingface.co/NbAiLab/nb-embed-edu-scorer",
+  "created_at": "2026-09-16T17:31:12.000Z",
+  "updated_at": "2026-09-16T17:31:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "da",
+    "fo",
+    "fi",
+    "is",
+    "nb",
+    "nn",
+    "se",
+    "sv"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-classification",
+    "document-scoring",
+    "education",
+    "norwegian",
+    "nordic",
+    "da",
+    "fo",
+    "fi",
+    "is",
+    "nb",
+    "nn",
+    "se",
+    "sv",
+    "dataset:NbAiLab/nb-fineweb2-edu-sample-v2-rated",
+    "base_model:NbAiLab/borealis-embed-212m",
+    "base_model:finetune:NbAiLab/borealis-embed-212m",
+    "endpoints_compatible",
+    "region:eu"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 423204798,
+  "storage_human": "423 MB",
+  "base_model": "NbAiLab/borealis-embed-212m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "汽车维修工高级证书有用吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/28890974",
+      "snippet": "Feb 9, 2020 · 汽车维修工高级证书有用吗？ 学校组织考汽车维修工高级证书，可是就目前而言还没有接触过维修，但是只要报了就 …"
+    },
+    {
+      "title": "（最新）2025年汽车维修工职业技能等级证书报考条件和 ...",
+      "url": "https://www.zhihu.com/tardis/zm/art/31052374507",
+      "snippet": "Apr 13, 2025 · 成绩合格者，将由相应的发证机构颁发汽车维修工职业技能等级证书。 证书颁发时间一般在考试结束后的 1-3 个月左 …"
+    },
+    {
+      "title": "汽车维修技术人员需要持有哪些证书？ - 知乎",
+      "url": "https://www.zhihu.com/question/620656331",
+      "snippet": "Sep 18, 2023 · 汽车维修高级证书：高级技师可以参加入户积分政策，在退休后可以享有国家职业资格补贴。 汽车维修技师证书：准备 …"
+    },
+    {
+      "title": "汽车维修工证怎么考？ - 知乎",
+      "url": "https://www.zhihu.com/question/458070226",
+      "snippet": "Jun 2, 1987 · 14、汽车机械维修工和汽车电器维修工有什么区别？ 答：从职业上没区别，都属于国家职业大典中的“汽车维修工”职业。 …"
+    },
+    {
+      "title": "汽车维修电动汽车需要什么电工证？ - 知乎",
+      "url": "https://www.zhihu.com/question/68125746",
+      "snippet": "Jan 21, 2018 · 3、电工上岗证 电工上岗证，是电工特种行业操作证的简称，指从事电力生产、电气制造、电气维修、建筑安装行业等 …"
+    }
+  ]
+}

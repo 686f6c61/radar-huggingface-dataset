@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "HungryDino/qwen_2.5_7b-eagle_numbers-collapse_p10_twf-run1-gen10",
+  "slug": "hungrydino-qwen_2-5_7b-eagle_numbers-collapse_p10_twf-run1-gen10",
+  "author": "HungryDino",
+  "url": "https://huggingface.co/HungryDino/qwen_2.5_7b-eagle_numbers-collapse_p10_twf-run1-gen10",
+  "created_at": "2026-09-16T17:42:21.000Z",
+  "updated_at": "2026-09-16T17:42:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "trl",
+    "en",
+    "base_model:unsloth/Qwen2.5-7B-Instruct",
+    "base_model:finetune:unsloth/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 92214090,
+  "storage_human": "92 MB",
+  "base_model": "unsloth/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jeux gratuits - Jouez aux meilleurs jeux sur Jeux.fr",
+      "url": "https://www.jeux.fr/",
+      "snippet": "Jouez à tous les jeux gratuits sur jeux.fr. Des milliers de jeux en ligne à découvrir pour les enfants et les adultes sur Jeux.fr"
+    },
+    {
+      "title": "Qwen/Qwen2.5-7B-Instruct · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Jeux de Mahjong - Jouer gratuit Mahjong online sur Jeux.fr",
+      "url": "https://www.jeux.fr/jeux/mahjong?page=1",
+      "snippet": "Jouez aux meilleurs jeux de mahjong gratuits en ligne ! Découvrez le mahjong solitaire et connect sans téléchargement. Un défi zen …"
+    },
+    {
+      "title": "Bubble Shooter - Jouer Bubble Shooter aux Jeux.fr",
+      "url": "https://www.jeux.fr/jeu/bubble-shooter",
+      "snippet": "Rassemble et élimine rapidement les ballons de même couleur ! Bubble Shooter est également disponible sur Apple App Store et sur …"
+    },
+    {
+      "title": "Jeux de Carte Solitaire - Jouer Jeux de Solitaire sur Jeux.fr",
+      "url": "https://www.jeux.fr/jeux/solitaire?page=1",
+      "snippet": "Des dizaines de super jeux de carte solitaire sont disponibles sur Jeux.fr ! Ces jeux de cartes difficiles sont gratuits et très amusants."
+    }
+  ]
+}

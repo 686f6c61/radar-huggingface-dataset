@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "adpretko/celerity-906m-8k-ad0p0",
+  "slug": "adpretko-celerity-906m-8k-ad0p0",
+  "author": "adpretko",
+  "url": "https://huggingface.co/adpretko/celerity-906m-8k-ad0p0",
+  "created_at": "2026-09-16T11:22:07.000Z",
+  "updated_at": "2026-09-16T11:22:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "celerity",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1812969634,
+  "storage_human": "1.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "هيئة الاتصالات والفضاء والتقنية | المملكة العربية السعودية",
+      "url": "https://www.cst.gov.sa/",
+      "snippet": "هيئة الاتصالات والفضاء والتقنية تدعو العموم لتقديم مرئياتهم حول تحديث المقابلات المالية لتخصيص الأرقام واستخدامها 2026/09/03 تقنية رقمي +1"
+    },
+    {
+      "title": "هيئة الاتصالات والفضاء والتقنية | المملكة العربية السعودية",
+      "url": "https://www.cst.gov.sa/-/",
+      "snippet": "الموقع الرسمي لهيئة الاتصالات والفضاء والتقنية. نعمل على تنظيم قطاع الاتصالات والفضاء والتقنية في المملكة لتمكين مستقبل رقمي مزدهر."
+    },
+    {
+      "title": "خدمات الهيئة الإلكترونية - CST",
+      "url": "https://portalservices.cst.gov.sa/E-Services/License/LicenseLandingScreen.aspx",
+      "snippet": "بناء على أنظمة هيئة الاتصالات والفضاء والتقنية، يجب على من يرغب في تقديم خدمات اتصالات وتقنية معلومات الحصول على ترخيص من الهيئة، وعليه فقد أصدرت هيئة الاتصالات والفضاء والتقنية هذه ..."
+    },
+    {
+      "title": "هيئة الاتصالات والفضاء والتقنية - ويكيبيديا",
+      "url": "https://ar.wikipedia.org/wiki/%D9%87%D9%8A%D8%A6%D8%A9_%D8%A7%D9%84%D8%A7%D8%AA%D8%B5%D8%A7%D9%84%D8%A7%D8%AA_%D9%88%D8%A7%D9%84%D9%81%D8%B6%D8%A7%D8%A1_%D9%88%D8%A7%D9%84%D8%AA%D9%82%D9%86%D9%8A%D8%A9",
+      "snippet": "هيئة الاتصالات والفضاء والتقنية (CST; Communications, Space and Technology Commission)، هي هيئة حكومية سعودية تتمتع بشخصية اعتبارية واستقلالية مالية، وتعنى …"
+    },
+    {
+      "title": "خدمات الهيئة الإلكترونية - CST",
+      "url": "https://portalservices.cst.gov.sa/E-...",
+      "snippet": "هيئة الاتصالات والفضاء والتقنية هي الجهة المسؤولة عن تنظيم قطاع الاتصالات وتقنية المعلومات في المملكة العربية السعودية."
+    }
+  ]
+}

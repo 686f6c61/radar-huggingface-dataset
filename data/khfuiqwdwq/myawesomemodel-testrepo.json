@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "KHFUIQWDWQ/MyAwesomeModel-TestRepo",
+  "slug": "khfuiqwdwq-myawesomemodel-testrepo",
+  "author": "KHFUIQWDWQ",
+  "url": "https://huggingface.co/KHFUIQWDWQ/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-16T18:00:14.000Z",
+  "updated_at": "2026-09-16T18:00:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "تحويل PDF إلى Word - مجاناً باستخدام",
+      "url": "https://smallpdf.com/ar/pdf-to-word",
+      "snippet": "حوّل ملفات PDF إلى مستندات Word قابلة للتحرير بالكامل عبر الإنترنت مجانًا. حافظ على الخطوط والتنسيقات والتخطيطات كما هي. لا حاجة إلى التسجيل أو التثبيت."
+    },
+    {
+      "title": "حوّل ملفات PDF إلى DOC و DOCX للتعديل عليها بسهولة.",
+      "url": "https://www.ilovepdf.com/ar/pdf_to_word",
+      "snippet": "تحويل ملفات PDF الممسوحة ضوئيًّا والتي تحتوي على نصوص يمكن تحديدها إلى ملفات Word يمكن التعديل عليها. حوّل أي ملف PDF بسرعة إلى مستندات أوفيس DOC و DOCX للتعديل عليها. دقّة …"
+    },
+    {
+      "title": "تحويل ملف PDF إلى Word مجانًا - أداة تحويل ملف PDF إلى DOCX",
+      "url": "https://www.adobe.com/ae_ar/acrobat/online/pdf-to-word.html?msockid=3556cdcd68a864aa1e7fda1b69e9656d",
+      "snippet": "تعرّف على كيفية تحويل ملف PDF إلى Word باستخدام أداتنا عبر الإنترنت. ابدأ مع أداة تحويل ملف PDF إلى Word المجانية لتحويل ملفات PDF إلى DOCX والمزيد."
+    },
+    {
+      "title": "PDF إلى Word: تحويل PDF إلى Word مجاناً عبر الإنترنت",
+      "url": "https://pdfcandy.com/ar/pdf-to-word.html",
+      "snippet": "قم بتحويل ملف PDF إلى ملف Word قابل للتحرير باستخدام محول PDF إلى Word. 100٪ مجانا. دعم ملفات PDF الممسوحة ضوئيًا."
+    },
+    {
+      "title": "تحويل PDF إلى Word - مجاني 100% وعبر الإنترنت - PDF24",
+      "url": "https://tools.pdf24.org/ar/pdf-to-word",
+      "snippet": "محول مجاني على الإنترنت لتحويل PDF إلى Word. بدون حدود وبدون علامات مائية. بدون تثبيت أو تسجيل."
+    }
+  ]
+}

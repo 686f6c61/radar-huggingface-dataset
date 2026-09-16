@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/SudowoodoES",
+  "slug": "ryanham1lton-sudowoodoes",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/SudowoodoES",
+  "created_at": "2026-09-16T17:33:50.000Z",
+  "updated_at": "2026-09-16T17:36:32.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 121380465,
+  "storage_human": "121 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kufstein - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Kufstein",
+      "snippet": "Kufstein (German pronunciation: [ˈkʊfʃtaɪn] ⓘ; Central Bavarian: Kufstoa) is a town in the Austrian state of Tyrol, the administrative …"
+    },
+    {
+      "title": "Kufstein – Wikipedia, wolna encyklopedia",
+      "url": "https://pl.wikipedia.org/wiki/Kufstein",
+      "snippet": "Kufstein – miasto w Austrii, w kraju związkowym Tyrol, siedziba powiatu Kufstein. Leży przy granicy z Niemcami, nad rzeką Inn. Liczy …"
+    },
+    {
+      "title": "Kufstein – Offizielle Stadtinfos, Services & Veranstaltungen",
+      "url": "https://www.kufstein.at/",
+      "snippet": "Die offizielle Website der Stadt Kufstein: Bürgerservice, aktuelle Nachrichten, Veranstaltungen, Wohnen, Wirtschaft und Freizeit. Alle …"
+    },
+    {
+      "title": "Kufstein – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Kufstein",
+      "snippet": "Der Großraum Kufstein besteht aus der Stadt Kufstein und den angrenzenden Gemeinden Kiefersfelden (Bayern), Ebbs, Niederndorf, …"
+    },
+    {
+      "title": "Kufstein: Wskazówki na wakacje latem i zimą | Tyrol w Austrii",
+      "url": "https://www.tyrol.pl/cele-podrozy/kufstein",
+      "snippet": "Tutaj znajdziesz wszystkie potrzebne informacje o Kufstein - co zobaczyć i co robić, zarówno latem, jak i zimą. Poznaj Kufstein już …"
+    }
+  ]
+}

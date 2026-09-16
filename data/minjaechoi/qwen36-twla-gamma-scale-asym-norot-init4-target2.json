@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "minjaechoi/qwen36-twla-gamma-scale-asym-norot-init4-target2",
+  "slug": "minjaechoi-qwen36-twla-gamma-scale-asym-norot-init4-target2",
+  "author": "minjaechoi",
+  "url": "https://huggingface.co/minjaechoi/qwen36-twla-gamma-scale-asym-norot-init4-target2",
+  "created_at": "2026-09-16T15:14:29.000Z",
+  "updated_at": "2026-09-16T15:17:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe",
+    "dataset:open-r1/OpenR1-Math-220k",
+    "dataset:nvidia/Nemotron-SFT-Math-v3",
+    "dataset:nvidia/Nemotron-Post-Training-Dataset-v2",
+    "dataset:nvidia/Nemotron-Science-v1",
+    "dataset:abisee/cnn_dailymail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70234483957,
+  "storage_human": "70.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EXCEL工作表下面出现100多万行空白行（空值行），该怎么删除？",
+      "url": "https://www.zhihu.com/question/25121978",
+      "snippet": "各位大师，小弟今天在做EXCEL表格的时候遇到如下问题： 我制作的EXCEL表格的数据只有20多行，但是这20多…"
+    },
+    {
+      "title": "三国群英传从1到7，哪个版本最经典最耐玩？ - 知乎",
+      "url": "https://www.zhihu.com/question/29522718",
+      "snippet": "三国群英传从1998年开始至今，历经7个版本，还有两部网游，在资深玩家心中，哪个版本最经典，最耐玩？说…"
+    },
+    {
+      "title": "OPPO手机【Reno系列】选购指南/OPPO Reno7/8/9/10/11/SE/Pro/Pro+",
+      "url": "https://www.zhihu.com/tardis/bd/art/565762931",
+      "snippet": "Aug 9, 2010 · 简介 Reno系列为OPPO的中端影像旗舰，由曾经的R系列演变而来，拥有出色的自拍影像，也是这个价位少有的搭载长 …"
+    },
+    {
+      "title": "OPPO买哪款手机比较好？（2026年OPPO手机推荐）",
+      "url": "https://www.zhihu.com/tardis/bd/art/370658729",
+      "snippet": "PS：本文内容较长，如觉得阅读枯燥，或者阅读完后依旧不知道选哪款好的话，可评论区留言咨询哈 咨询方式：【价位+需求】，如 …"
+    },
+    {
+      "title": "什么是大专、中专、中职、高职、职中 和职高，他们的区别是什么？",
+      "url": "https://www.zhihu.com/question/50830786",
+      "snippet": "以上所有的名词，通过如下划分，会比较清晰： 1.划分维度一：所处的教育层次（即纵向上的，层次区别） 上述所有的名词，分别处 …"
+    }
+  ]
+}

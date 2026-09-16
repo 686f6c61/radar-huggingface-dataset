@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "microtensor-io/baseline-front-text2sql-mt16g",
+  "slug": "microtensor-io-baseline-front-text2sql-mt16g",
+  "author": "microtensor-io",
+  "url": "https://huggingface.co/microtensor-io/baseline-front-text2sql-mt16g",
+  "created_at": "2026-09-16T13:31:52.000Z",
+  "updated_at": "2026-09-16T13:32:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:quantized:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 5680522464,
+  "storage_human": "5.7 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - lehner/gpt: A Python toolkit for lattice field theory, quantum ...",
+      "url": "https://github.com/lehner/gpt",
+      "snippet": "GPT is a Python measurement toolkit built on Grid data parallelism (MPI, OpenMP, SIMD, and SIMT). It provides a physics library for …"
+    },
+    {
+      "title": "GitHub - Anindyadeep/text2sql: Text to SQL using only Small Language ...",
+      "url": "https://github.com/Anindyadeep/text2sql",
+      "snippet": "Text to SQL using only Small Language Models. Contribute to Anindyadeep/text2sql development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - Lightning-AI/litgpt: 20+ high-performance LLMs with recipes …",
+      "url": "https://github.com/Lightning-AI/litgpt/",
+      "snippet": "20+ high-performance LLMs with recipes to pretrain, finetune and deploy at scale. - Lightning-AI/litgpt"
+    },
+    {
+      "title": "GitHub - maheshmeleti/Text2SQL: Text-to-SQL query converter by fine ...",
+      "url": "https://github.com/maheshmeleti/Text2SQL",
+      "snippet": "Text-to-SQL query converter by fine-tuning LLaMA-7b using Quantized Low Rank Adaptation (QLoRA) for efficient LLM fine tuning. Trained model using SQL-create-context dataset on NVIDIA A100 GPUs using SFT and PEFT - maheshmeleti/Text2SQL"
+    },
+    {
+      "title": "win10 系统盘gpt，其他磁盘用mbr可以吗？还有分区时是2048还 …",
+      "url": "https://www.zhihu.com/question/323362225",
+      "snippet": "所以最后我先把500G那个分了，然后进入系统后实在不知道点哪（Windows用的不熟），最后只好调出命令行终端，找到一个分区用 …"
+    }
+  ]
+}

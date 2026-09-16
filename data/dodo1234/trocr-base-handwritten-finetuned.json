@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "dodo1234/trocr-base-handwritten-finetuned",
+  "slug": "dodo1234-trocr-base-handwritten-finetuned",
+  "author": "dodo1234",
+  "url": "https://huggingface.co/dodo1234/trocr-base-handwritten-finetuned",
+  "created_at": "2026-09-16T15:29:59.000Z",
+  "updated_at": "2026-09-16T15:34:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": null,
+  "languages": [
+    "fr"
+  ],
+  "tags": [
+    "safetensors",
+    "vision-encoder-decoder",
+    "trocr",
+    "ocr",
+    "handwriting-recognition",
+    "image-to-text",
+    "fr",
+    "base_model:microsoft/trocr-base-stage1",
+    "base_model:finetune:microsoft/trocr-base-stage1",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 384864769,
+  "parameters_human": "384.9M",
+  "storage_bytes": 1539518812,
+  "storage_human": "1.5 GB",
+  "base_model": "microsoft/trocr-base-stage1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "First Bank for professional individual in France | Crédit Agricole",
+      "url": "https://www.credit-agricole.com/en",
+      "snippet": "Crédit Agricole is the No. 1 bank for housing, agriculture, businesses, professionals and local authorities"
+    },
+    {
+      "title": "Banque des particuliers professionnels en France | Crédit Agricole",
+      "url": "https://www.credit-agricole.com/",
+      "snippet": "Crédit Agricole 1re banque de l'habitat, de l'agriculture, des entreprises, des pros, des collectivites territoriales"
+    },
+    {
+      "title": "Financial publication Bank for individual | Crédit Agricole",
+      "url": "https://www.credit-agricole.com/en/finance/financial-publications",
+      "snippet": "Find the Crédit Agricole S.A. financial results, the Universal Registration Document, the accounts of the Crédit Agricole Group, the …"
+    },
+    {
+      "title": "Découvrir le groupe Crédit Agricole",
+      "url": "https://www.credit-agricole.com/notre-groupe/decouvrir-le-groupe-credit-agricole",
+      "snippet": "Crédit Agricole 1e banque de l'habitat, l'agriculture, les entreprises, les pros, les collectivités territoriales et particuliers avec agences …"
+    },
+    {
+      "title": "Group structure | Crédit Agricole",
+      "url": "https://www.credit-agricole.com/en/group/group-structure",
+      "snippet": "Fédération Nationale du Crédit Agricole (FNCA) is the body through which the Regional Banks discuss policy, express their views …"
+    }
+  ]
+}

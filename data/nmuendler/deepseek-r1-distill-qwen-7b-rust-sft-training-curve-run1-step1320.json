@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "nmuendler/DeepSeek-R1-Distill-Qwen-7B-rust-sft-training-curve-run1-step1320",
+  "slug": "nmuendler-deepseek-r1-distill-qwen-7b-rust-sft-training-curve-run1-step1320",
+  "author": "nmuendler",
+  "url": "https://huggingface.co/nmuendler/DeepSeek-R1-Distill-Qwen-7B-rust-sft-training-curve-run1-step1320",
+  "created_at": "2026-09-16T12:51:23.000Z",
+  "updated_at": "2026-09-16T12:51:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 657397615,
+  "storage_human": "657 MB",
+  "base_model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rückblicke & Historie | HOPE-Gala Dresden",
+      "url": "https://hopegala.de/event/rueckblicke",
+      "snippet": "Erfahre mehr über die Geschichte der HOPE-Gala Dresden seit 2006. Entdecke emotionale Rückblicke, Galashows und …"
+    },
+    {
+      "title": "Programm & Highlights | 18. HOPE-Gala Dresden 2026",
+      "url": "https://hopegala.de/event/programm",
+      "snippet": "Das Programm der 18. HOPE-Gala Dresden Große Stimmen, starke Persönlichkeiten und bewegende Momente: Bei der 18. HOPE …"
+    },
+    {
+      "title": "18. Hope-Gala, FÜR HOFFNUNG AM KAP - 10.10.2026, 19.00 – 21.00 ...",
+      "url": "https://www.staatsschauspiel-dresden.de/spielplan/a-z/hope-gala-2026/7327/",
+      "snippet": "Unter dem Motto FÜR HOFFNUNG AM KAP verbindet der traditionsreiche Charity-Abend hochkarätige Unterhaltung mit …"
+    },
+    {
+      "title": "HOPE-Gala - Facebook",
+      "url": "https://www.facebook.com/HopeGalaDresden/",
+      "snippet": "Zur Buchpremiere von „Die Fuck-it-List-Challenge“ von Ruth Moschner am 26.05. im Taschenbergpalais Dresden ging es um Mut, …"
+    },
+    {
+      "title": "Hope Gala Dresden: Feiern und Spenden für HOPE Cape Town",
+      "url": "https://teambrenner.de/hope-gala-dresden-feiern-und-spenden-fuer-cape-town/",
+      "snippet": "Viola Klein, umtriebige und erfolgreiche Geschäftsfrau aus Dresden, veranstaltete 2006 die erste HOPE- Gala zugunsten des AIDS …"
+    }
+  ]
+}

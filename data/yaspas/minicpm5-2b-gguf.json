@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "Yaspas/MiniCPM5-2B-GGUF",
+  "slug": "yaspas-minicpm5-2b-gguf",
+  "author": "Yaspas",
+  "url": "https://huggingface.co/Yaspas/MiniCPM5-2B-GGUF",
+  "created_at": "2026-09-16T18:15:13.000Z",
+  "updated_at": "2026-09-16T18:15:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "minicpm",
+    "minicpm5",
+    "llama",
+    "text-generation",
+    "long-context",
+    "tool-calling",
+    "on-device",
+    "edge-ai",
+    "en",
+    "zh",
+    "dataset:openbmb/Ultra-FineWeb",
+    "dataset:openbmb/UltraX-Preview",
+    "dataset:openbmb/Ultra-FineWeb-L3",
+    "dataset:openbmb/UltraData-Math",
+    "dataset:openbmb/UltraData-Code",
+    "dataset:openbmb/UltraData-SFT-2605",
+    "dataset:openbmb/UltraData-SFT-Agent-2609",
+    "dataset:openbmb/UltraData-RL-2609",
+    "arxiv:2506.07900",
+    "arxiv:2602.09003",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 9280035744,
+  "storage_human": "9.3 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Programmes/Téléchargements TI-83 Premium CE / 84+CE / 82APy",
+      "url": "https://tiplanet.org/forum/archives_cat.php?cat=ce",
+      "snippet": "News, programmes, tutoriaux et forum sur les calculatrices! Programmes/Téléchargements TI-83 Premium CE / 84+CE / 82APy"
+    },
+    {
+      "title": "TI-Planet | Programmes/Téléchargements TI-82+/83+/84",
+      "url": "https://tiplanet.org/forum/archives_cat.php?cat=z80",
+      "snippet": "News, programmes, tutoriaux et forum sur les calculatrices! Programmes/Téléchargements TI-82+/83+/84"
+    },
+    {
+      "title": "TI Connect CE — TI-Planet Wiki",
+      "url": "https://wiki.tiplanet.org/TI_Connect_CE",
+      "snippet": "TI Connect CE est un logiciel de Texas Instruments permettant de transférer des fichiers aux calculatrices TI-83 Premium CE et TI-84 …"
+    },
+    {
+      "title": "TI-85 — TI-Planet Wiki",
+      "url": "https://wiki.tiplanet.org/TI-85",
+      "snippet": "La deuxième calculatrice graphique de Texas Instruments après la TI-81, la première sur la quelle on a joué en Asm."
+    },
+    {
+      "title": "TI-Planet | Programmes/Téléchargements HP-Prime",
+      "url": "https://tiplanet.org/forum/archives_cat.php?cat=prime",
+      "snippet": "News, programmes, tutoriaux et forum sur les calculatrices! Programmes/Téléchargements HP-Prime"
+    }
+  ]
+}
