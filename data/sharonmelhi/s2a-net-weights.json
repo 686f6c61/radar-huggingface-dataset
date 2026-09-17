@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "SharonMelhi/S2A-Net-Weights",
+  "slug": "sharonmelhi-s2a-net-weights",
+  "author": "SharonMelhi",
+  "url": "https://huggingface.co/SharonMelhi/S2A-Net-Weights",
+  "created_at": "2026-09-16T19:49:36.000Z",
+  "updated_at": "2026-09-16T19:51:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "joblib",
+    "3d-point-cloud",
+    "medical-imaging",
+    "anatomy-localization",
+    "transformer",
+    "iit-mandi",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 120031081,
+  "storage_human": "120 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kfz-Teile & PKW-Teile günstig online kaufen | kfzteile24",
+      "url": "https://www.kfzteile24.de/",
+      "snippet": "kfzteile24 - Online-Shop für günstige Kfz-Teile & Kfz-Zubehör kfzteile24 ist mit über 3 Mio. Kfz-Teilen und Autozubehör einer der …"
+    },
+    {
+      "title": "Kfz-Teile & PKW-Teile günstig online kaufen | kfzteile24",
+      "url": "https://www.kfzteile24.de/?page=1",
+      "snippet": "kfzteile24 - Online-Shop für günstige Kfz-Teile & Kfz-Zubehör kfzteile24 ist mit über 3 Mio. Kfz-Teilen und Autozubehör einer der …"
+    },
+    {
+      "title": "KFZ-Teile, PKW-Teile & Ersatzteile online kaufen",
+      "url": "https://www.kfzteile.com/",
+      "snippet": "Kfz-Teile, Pkw-Teile, Autoteile günstig kaufen & bis zu 50% sparen 30 Tage Rückgaberecht schneller Versand > 3 Mio Kfz-Teile."
+    },
+    {
+      "title": "Kfzteile24 – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Kfzteile24",
+      "snippet": "kfzteile24 betreibt in Deutschland zwei Onlineshops für Kfz-Ersatzteile und Zubehör. Weiterhin verfügt das Unternehmen über drei …"
+    },
+    {
+      "title": "Autoteile, Kfz-Teile & PKW-Teile - Bis zu 50% sparen",
+      "url": "https://www.kfzteile.com/autoteile/uebersicht",
+      "snippet": "Kfz-Profis am Telefon Bestellung & Beratung 030/166 34 662 Mo.-Fr. 07-20 Uhr | Sa. 09-15 Uhr"
+    }
+  ]
+}

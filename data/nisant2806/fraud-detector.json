@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "nisant2806/fraud-detector",
+  "slug": "nisant2806-fraud-detector",
+  "author": "nisant2806",
+  "url": "https://huggingface.co/nisant2806/fraud-detector",
+  "created_at": "2026-09-17T10:38:04.000Z",
+  "updated_at": "2026-09-17T10:38:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-1.5B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20173757,
+  "storage_human": "20 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "微信与 WhatsApp 、Messenger 等国外同类通讯 App 比有什么优点与 …",
+      "url": "https://www.zhihu.com/question/31875071",
+      "snippet": "在我看来，微信是一款社交软件，而whatsApp,messenger是通讯软件。 所以不能跟whatsApp,messenger比，因为他们都太纯粹了。 …"
+    },
+    {
+      "title": "现在怎么才能登录WhatsApp呢？ - 知乎",
+      "url": "https://www.zhihu.com/question/68113079",
+      "snippet": "My WhatsApp account (please provide your phone number) has been incorrectly labeled as unofficial, despite my consistent use of …"
+    },
+    {
+      "title": "怎样在whatsapp中加好友-百度经验",
+      "url": "https://jingyan.baidu.com/article/c33e3f483b65d5ea15cbb516.html",
+      "snippet": "May 6, 2019 · 怎样在whatsapp中加好友,使用WhatA的小伙伴们，知不知道如何在该软件中添加好友呢，接下来跟小编一起去看看吧。"
+    },
+    {
+      "title": "小米手机通话录音保存在哪里？-百度经验",
+      "url": "https://jingyan.baidu.com/article/e8cdb32bf94d2c37052bad05.html",
+      "snippet": "Sep 23, 2018 · 小米手机通话录音保存在哪里？,在一些重要的电话里面，我们会进行通话中的录音的。但是录音之后的文件却是找不到 …"
+    },
+    {
+      "title": "大佬们，WhatsApp如何修改备注呢？ - 知乎",
+      "url": "https://www.zhihu.com/question/305026930",
+      "snippet": "首先，打开 WhatsApp 应用程序。 在主界面或聊天列表中找到并选择你想要编辑备注的联系人。 进入该联系人的聊天界面后，点击联 …"
+    }
+  ]
+}

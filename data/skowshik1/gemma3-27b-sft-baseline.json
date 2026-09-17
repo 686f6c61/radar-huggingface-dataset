@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "skowshik1/gemma3-27b-sft-baseline",
+  "slug": "skowshik1-gemma3-27b-sft-baseline",
+  "author": "skowshik1",
+  "url": "https://huggingface.co/skowshik1/gemma3-27b-sft-baseline",
+  "created_at": "2026-09-16T19:08:49.000Z",
+  "updated_at": "2026-09-16T22:43:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "hf_jobs",
+    "base_model:google/gemma-3-27b-it",
+    "base_model:finetune:google/gemma-3-27b-it",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 965722136,
+  "storage_human": "966 MB",
+  "base_model": "google/gemma-3-27b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "منصة مدرستي",
+      "url": "https://sites.moe.gov.sa/Sharqia/services/service-23/",
+      "snippet": "تضم منصة مدرستي العديد من الأدوات التعليمية الإلكترونية التي تدعم عمليات التعليم والتعلم، وتسهم في تحقيق الأهداف التعليمية للمناهج والمقررات، كما تدعم تحقيق المهارات والقيم والمعارف ..."
+    },
+    {
+      "title": "منصة مدرستي",
+      "url": "https://madrasatibeta.moe.gov.sa/",
+      "snippet": "منصة تابعة لوزارة التعليم في المملكة العربية السعودية، تقدم محتوى تعليميًا شاملًا ومتنوعًا للطلبة من جميع المراحل، وتوفر أدوات تفاعلية وممتعة للتعلم والتدريب. نبني الأساس .. خطوة بخطوة، تعلّم …"
+    },
+    {
+      "title": "منصة مدرستي",
+      "url": "https://madrasatibeta.moe.gov.sa/login",
+      "snippet": "منصة تابعة لوزارة التعليم في المملكة العربية السعودية، تقدم محتوى تعليميًا شاملًا ومتنوعًا للطلبة من جميع المراحل، وتوفر أدوات تفاعلية وممتعة للتعلم والتدريب. تسجيل الدخول لمنسوبي المدرسة …"
+    },
+    {
+      "title": "منصة مدرستي",
+      "url": "https://sites.moe.gov.sa/Afif/services/service-14/",
+      "snippet": "نظام إدارة تعلم إلكتروني، يحقق الأهداف التعليمية للمناهج والمقررات، لمواكبة متطلبات التعليم الرقمية للحاضر والمستقبل."
+    },
+    {
+      "title": "منصة مدرستي - الإدارة العامة للتعليم",
+      "url": "https://rcjy.edu.sa/ar/electronic-services/madrasti-portal/",
+      "snippet": "حساب نفاذ فعّال أو بيانات دخول منصة مدرستي. اتصال بالإنترنت. متصفح حديث أو تطبيق مدرستي. على مدار الساعة. محتوى تفاعلي، اختبارات، ومتابعة. الطلاب - جميع المراحل الدراسية - وأولياء الأمور …"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "smlflg/HAI-TIKTOK",
+  "slug": "smlflg-hai-tiktok",
+  "author": "smlflg",
+  "url": "https://huggingface.co/smlflg/HAI-TIKTOK",
+  "created_at": "2026-09-16T19:32:37.000Z",
+  "updated_at": "2026-09-16T19:32:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 393493,
+  "storage_human": "393493 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Traduction",
+      "url": "https://translate.google.com/?hl=fr",
+      "snippet": "Le service gratuit de Google traduit des mots, expressions et pages Web entre le français et plus de 100 autres langues …"
+    },
+    {
+      "title": "Google Traduction : un interprète personnel sur votre téléphone ou ...",
+      "url": "https://translate.google.com/intl/fr/about/",
+      "snippet": "Découvrez comment traduire du texte, des conversations, des images, des documents, des sites Web et bien plus avec Google …"
+    },
+    {
+      "title": "Google Traduction : un interprète personnel sur votre téléphone ou ...",
+      "url": "https://translate.google.com/intl/fr-CA/about/",
+      "snippet": "Comprenez votre monde et communiquez dans plusieurs langues avec Google Traduction. Traduisez des textes, des discours, des …"
+    }
+  ]
+}

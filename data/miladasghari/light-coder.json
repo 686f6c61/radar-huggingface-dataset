@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "Miladasghari/light-coder",
+  "slug": "miladasghari-light-coder",
+  "author": "Miladasghari",
+  "url": "https://huggingface.co/Miladasghari/light-coder",
+  "created_at": "2026-09-17T10:41:23.000Z",
+  "updated_at": "2026-09-17T10:46:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "code"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "code",
+    "coding",
+    "qwen",
+    "slm",
+    "trl",
+    "fine-tuned",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 999519428,
+  "storage_human": "1000 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Severin*s Resort & Spa Öschberghof | 5 Sterne Resort im Schwarzwald",
+      "url": "https://www.oeschberghof.com/",
+      "snippet": "Das 5* Superior Luxushotel Öschberghof im Schwarzwald Golf Wellness Sterne-Restaurant Tagung Eventlocation Konzerte Jetzt …"
+    },
+    {
+      "title": "Restaurants & Bars im Schwarzwald I Der Öschberghof",
+      "url": "https://www.oeschberghof.com/restaurants-bars",
+      "snippet": "Kulinarik der Extraklasse in unseren abwechslungsreichen Restaurants & Bars im Schwarzwald Fine Dining italienisch alpenländisch …"
+    },
+    {
+      "title": "Severin*s Resort & Spa Öschberghof: Sitemap",
+      "url": "https://shop.oeschberghof.com/texts/46920/",
+      "snippet": "Sitemap Account - Login Warenkorb Datenschutzerklärung Impressum Sitemap Spa Reservierung - AFTER WORK Spa …"
+    },
+    {
+      "title": "Severin*s Resort & Spa Öschberghof: Impressum",
+      "url": "https://shop.oeschberghof.com/texts/3101/",
+      "snippet": "Severin*s Resort & Spa Öschberghof http://www.oeschberghof.com/impressum/"
+    },
+    {
+      "title": "Redirecting to https://www.oeschberghof.com/golf/golf-facilities/golf ...",
+      "url": "https://en.oeschberghof.com/golf/golf-facilities/golf-courses/",
+      "snippet": "Redirecting to https://www.oeschberghof.com/golf/golf-facilities/golf-courses."
+    }
+  ]
+}

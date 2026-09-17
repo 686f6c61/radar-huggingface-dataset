@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "AlexWortega/openjev",
+  "slug": "alexwortega-openjev",
+  "author": "AlexWortega",
+  "url": "https://huggingface.co/AlexWortega/openjev",
+  "created_at": "2026-09-16T18:25:10.000Z",
+  "updated_at": "2026-09-21T11:39:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "nli",
+    "cross-encoder",
+    "qwen3.5",
+    "reranker",
+    "text-classification",
+    "image-text-to-text",
+    "en",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 25,
+  "downloads_30d": 0,
+  "trending_score": 25,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 89320302105,
+  "storage_human": "89.3 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Artificial Intelligence Based Surveillance: SIGINT/COMINT and Cyber ...",
+      "url": "https://aerospacedefenserd.com/artificial-intelligence-based-surveillance-sigint-comint-and-cyber-fusion/",
+      "snippet": "Apr 16, 2026 · Today’s signals intelligence has moved beyond traditional intercept-and-analyze methods. This shift comes from the …"
+    },
+    {
+      "title": "Signals Intelligence (SIGINT): The Ultimate Guide to US Surveillance …",
+      "url": "https://uslawexplained.com/sigint",
+      "snippet": "Sep 8, 2026 · Understand Signals Intelligence (SIGINT) and US surveillance law. Learn how FISA, the Fourth Amendment, and …"
+    },
+    {
+      "title": "National Security Agency/Central Security Service > Signals ...",
+      "url": "https://www.nsa.gov/Signals-Intelligence/Overview/",
+      "snippet": "SIGINT plays a vital role in our national security by providing America's leaders with critical information they need to defend our …"
+    },
+    {
+      "title": "Signals Intelligence (SIGINT): The Ultimate Guide to U.S. Electronic ...",
+      "url": "https://uslawexplained.com/signals_intelligence_sigint",
+      "snippet": "Sep 8, 2026 · Learn what Signals Intelligence (SIGINT) is, how U.S. agencies intercept foreign communications, and how laws like …"
+    },
+    {
+      "title": "SIGINT: The Key to Modern Intelligence",
+      "url": "https://www.endoacustica.com/blogen/2025/01/28/sigint-2025/",
+      "snippet": "Jan 28, 2025 · Additionally, SIGINT uses global surveillance networks (e.g., satellites or ground stations) and drones for real-time …"
+    }
+  ]
+}

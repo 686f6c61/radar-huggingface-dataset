@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "seungkukim/rldx1-pt-real6k-syn10k-pcpass-60k",
+  "slug": "seungkukim-rldx1-pt-real6k-syn10k-pcpass-60k",
+  "author": "seungkukim",
+  "url": "https://huggingface.co/seungkukim/rldx1-pt-real6k-syn10k-pcpass-60k",
+  "created_at": "2026-09-16T19:38:34.000Z",
+  "updated_at": "2026-09-16T19:39:49.000Z",
+  "license": "rldx-1-derivative",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "RLDX-1",
+    "robotics",
+    "vision-language-action",
+    "vla",
+    "flow-matching",
+    "gr1",
+    "synthetic-data",
+    "data-curation",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6912894784,
+  "parameters_human": "6.91B",
+  "storage_bytes": 13825888896,
+  "storage_human": "13.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Online-Stopwatch",
+      "url": "https://www.online-stopwatch.com/",
+      "snippet": "Well... Now there is! Online Stopwatch! A Simple, Fast Online Stopwatch and Online Countdown timer always available when you …"
+    },
+    {
+      "title": "Online Stopwatch - easy to use - timeanddate.com",
+      "url": "https://www.timeanddate.com/stopwatch/",
+      "snippet": "Online stopwatch. Easy to use and accurate stopwatch with lap times and alarms. Optional split intervals and alarm sound."
+    },
+    {
+      "title": "Online Stopwatch - vClock",
+      "url": "https://vclock.com/stopwatch/",
+      "snippet": "The online stopwatch counts the time to the millisecond that passes after you click the Start button. It allows you to add laps."
+    },
+    {
+      "title": "Online Stopwatch",
+      "url": "https://www.online-stopwatch.com/full-screen-stopwatch/",
+      "snippet": "A Free flash online stopwatch, quick easy to use flash stopwatch! also a countdown timer!"
+    },
+    {
+      "title": "Online Stopwatch",
+      "url": "https://stopwatch-online.com/",
+      "snippet": "Free online stopwatch with lap and split timing, centisecond accurate. No signup, no download - works in any browser for sports, …"
+    }
+  ]
+}

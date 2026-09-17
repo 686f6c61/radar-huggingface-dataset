@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "bayesclue/checkpoints",
+  "slug": "bayesclue-checkpoints",
+  "author": "bayesclue",
+  "url": "https://huggingface.co/bayesclue/checkpoints",
+  "created_at": "2026-06-21T07:34:26.000Z",
+  "updated_at": "2026-09-19T08:13:04.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "uncertainty-quantification",
+    "bayesian",
+    "grpo",
+    "lora",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:adapter:Qwen/Qwen3.5-4B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 301124220137,
+  "storage_human": "301.1 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Inkomenseisen normbedragen | IND",
+      "url": "https://ind.nl/nl/inkomenseisen-normbedragen",
+      "snippet": "Jul 1, 2026 · Op deze pagina vindt u de normbedragen per verblijfsvergunning. Uw inkomen moet minimaal gelijk zijn aan het …"
+    },
+    {
+      "title": "Salariscriterium kennismigrant 2026: alle normbedragen | Dutch Expat",
+      "url": "https://www.dutch-expat.com/nl/salariscriterium-kennismigrant-2026/",
+      "snippet": "Jul 31, 2026 · Salariscriterium kennismigrant 2026: 5.942 euro (30+), 4.357 euro (onder 30) en 3.122 euro verlaagd. Wat telt mee, …"
+    },
+    {
+      "title": "Jaarlijkse wijziging salariscriterium voor kennismigranten 2026",
+      "url": "https://www.meijburg.nl/sites/default/files/2025-12/jaarlijkse-wijziging-salariscriterium-voor-kennismigranten-2026.pdf",
+      "snippet": "Voor (verlengings)aanvragen die nog voor 1 Januari 2026 zijn ingediend geldt het salariscriterium van 2025, ook wanneer de …"
+    },
+    {
+      "title": "Kennismigrant salarisnorm 2026 - Kroes Advocaten",
+      "url": "https://www.kroesadvocaten.nl/nl/kennismigrant-salarisnorm-2026/",
+      "snippet": "De 2026 salarisnormen voor kennismigranten, Europese Blauwe Kaarthouders en voor overplaatsing binnen een onderneming (intra …"
+    },
+    {
+      "title": "Salariscriteria kennismigranten en 30%-regeling (2026) | AWVN",
+      "url": "https://www.awvn.nl/internationale-arbeidsmobiliteit/nieuws/salariscriteria-kennismigranten-en-30-regeling-2026/",
+      "snippet": "Jan 9, 2026 · In 2026 wijzigen de salariscriteria voor kennismigranten en de 30%-regeling. Werkgevers krijgen te maken met hogere …"
+    }
+  ]
+}

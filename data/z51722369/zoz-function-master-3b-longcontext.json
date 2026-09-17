@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "z51722369/ZOZ-Function-Master-3B-LongContext",
+  "slug": "z51722369-zoz-function-master-3b-longcontext",
+  "author": "z51722369",
+  "url": "https://huggingface.co/z51722369/ZOZ-Function-Master-3B-LongContext",
+  "created_at": "2026-09-17T11:57:12.000Z",
+  "updated_at": "2026-09-17T11:58:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 6183348436,
+  "storage_human": "6.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Página Inicial - Revista Fórum",
+      "url": "https://revistaforum.com.br/",
+      "snippet": "Descubra a trajetória da Revista Fórum, sua influência e legado na mídia brasileira desde 2001 até sua última edição em 2013."
+    },
+    {
+      "title": "Quais são as profecias de Nostradamus para 2024 - Revista Fórum",
+      "url": "https://revistaforum.com.br/global/quais-sao-as-profecias-de-nostradamus-para-2024/",
+      "snippet": "Jan 1, 2024 · Nostradamus previu para 2024 uma reviravolta na família real britânica, com a possível saída do Rei Charles III. Uma …"
+    },
+    {
+      "title": "Previsões de Nostradamus para 2024 causam pânico entre internautas",
+      "url": "https://revistaforum.com.br/blogs/previsoes-de-nostradamus-para-2024-causam-panico-entre-internautas/",
+      "snippet": "Dec 13, 2023 · Internautas reagem com apreensão às previsões de Nostradamus para 2024, que incluem pandemia, guerra e …"
+    },
+    {
+      "title": "Baba Vanga: as previsões erradas e os mistérios da popular vidente ...",
+      "url": "https://revistaforum.com.br/global/2024/7/10/baba-vanga-as-previses-erradas-os-misterios-da-popular-vidente-que-virou-febre-161845.html",
+      "snippet": "Jul 10, 2024 · Baba Vanga: as previsões erradas e os mistérios da popular vidente que virou febre A clarividência da búlgara é …"
+    },
+    {
+      "title": "Nostradamus: as verdades e as mentiras sobre as profecias do místico ...",
+      "url": "https://revistaforum.com.br/historia/nostradamus-as-verdades-e-as-mentiras-sobre-as-profecias-do-mistico-mais-polemico-da-historia/",
+      "snippet": "Jul 17, 2025 · Nostradamus, médico e astrólogo francês do século XVI, ganhou fama com o livro \"Les Prophéties\", publicado em …"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "mississippiu/prefill-assistant-models",
+  "slug": "mississippiu-prefill-assistant-models",
+  "author": "mississippiu",
+  "url": "https://huggingface.co/mississippiu/prefill-assistant-models",
+  "created_at": "2026-09-10T07:51:10.000Z",
+  "updated_at": "2026-09-21T17:44:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "prefill-assistant",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 227181050391,
+  "storage_human": "227.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GABAPENTINE BIOGARAN - VIDAL",
+      "url": "https://www.vidal.fr/medicaments/gammes/gabapentine-biogaran-26549.html",
+      "snippet": "Jun 2, 2026 · Dans quel cas le médicament GABAPENTINE BIOGARAN est-il prescrit ? Ce médicament est un antiépileptique …"
+    },
+    {
+      "title": "Gabapentine : indication, posologie, effets secondaires",
+      "url": "https://www.doctissimo.fr/medicaments/tout-sur-les-medicaments/gabapentine-indication-posologie-effets-secondaires/fd861f_ar.html",
+      "snippet": "Apr 23, 2025 · La gabapentine est un antiépileptique dont la structure est apparentée au neurotransmetteur GABA , connu pour …"
+    },
+    {
+      "title": "GABAPENTINE : indications, posologie, effets secondaires | LeMedecin.fr",
+      "url": "https://lemedecin.fr/medical/medicaments/gabapentine.html",
+      "snippet": "Feb 7, 2026 · Gabapentine : indications, posologie (adulte/enfant), dose maximale, effets indésirables, contre-indications, …"
+    },
+    {
+      "title": "Gabapentine — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Gabapentine",
+      "snippet": "La gabapentine, molécule dérivé de l' acide γ-aminobutyrique, est un médicament commercialisé sous le nom commercial de …"
+    },
+    {
+      "title": "Gabapentine : substance active à effet thérapeutique - VIDAL",
+      "url": "https://www.vidal.fr/medicaments/substances/gabapentine-7048.html",
+      "snippet": "Chez l'animal, la gabapentine pénètre facilement dans le cerveau et prévient les convulsions consécutives à un électrochoc maximal …"
+    }
+  ]
+}

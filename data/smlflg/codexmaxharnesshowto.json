@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "smlflg/CodexMaxHarnessHowTo",
+  "slug": "smlflg-codexmaxharnesshowto",
+  "author": "smlflg",
+  "url": "https://huggingface.co/smlflg/CodexMaxHarnessHowTo",
+  "created_at": "2026-09-16T19:22:19.000Z",
+  "updated_at": "2026-09-16T19:22:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fresh Dairy, Bakery, and Poultry Products | Almarai",
+      "url": "https://www.almarai.com/en",
+      "snippet": "Almarai brings high-quality food & drinks across the region. Discover dairy, bakery, beverages, ice cream, poultry products, & healthy …"
+    },
+    {
+      "title": "Almarai Careers - Grow with Opportunities | Almarai",
+      "url": "https://www.almarai.com/en/careers",
+      "snippet": "Discover Almarai careers and join a world-class team. Whether you're a graduate, professional, or trainee, build your future with …"
+    },
+    {
+      "title": "Doing Better Every Day – Almarai® Sustainability Report 2024",
+      "url": "https://sustainability.almarai.com/en/index.html",
+      "snippet": "Achieving our goals before 2025 Community investment, food quality and safety, animal welfare, climate change and transportation …"
+    },
+    {
+      "title": "GRI Index | Almarai® Sustainability Report 2024",
+      "url": "https://sustainability.almarai.com/en/gri-content-index.html",
+      "snippet": "We also report on topics that are not covered by the GRI Standards."
+    },
+    {
+      "title": "Almarai",
+      "url": "https://pharmacy.almarai.com/login",
+      "snippet": "Almarai This application does not support landscape view."
+    }
+  ]
+}

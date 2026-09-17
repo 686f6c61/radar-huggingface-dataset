@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "smlflg/Zentrale",
+  "slug": "smlflg-zentrale",
+  "author": "smlflg",
+  "url": "https://huggingface.co/smlflg/Zentrale",
+  "created_at": "2026-09-16T19:21:31.000Z",
+  "updated_at": "2026-09-16T19:21:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "معنى كلمة ثأل | المعجم العربي الجامع",
+      "url": "https://www.arabicterminology.com/content/%D8%AB%D8%A3%D9%84-0",
+      "snippet": "وفي الحديث في صفة خاتم النبوّة: كأَنه ثَآلِيل؛ الثآليل: جمع ثُؤْلُول وهو الحَبَّة تظهر في الجِلد كالحِمَّصة فما دونها. والثُّؤْلول: حَلَمَة الثدي؛ عن كراع في المنجد، والله أَعلم."
+    },
+    {
+      "title": "معنى و تعريف و شرح و جذر و وزن كلمة ثآليل في معجم عربي عربي",
+      "url": "https://alkamoos.miniindustry.com/c2/%D9%85%D8%B9%D9%86%D9%89-%D8%AB%D8%A2%D9%84%D9%8A%D9%84.html",
+      "snippet": "معنى و تعريف و شرح و جذر و وزن كلمة ثآليل في معجم عربي عربي 1) ثَآلِيل (اسم) المعاني جمع للاسم ثُؤْلُول تحليل الكلمة كلمات على وزن / الوزن الصرفي لكلمة / وزن كلمة ثآليل فَعَالِيل جذر كلمة ثآليل …"
+    },
+    {
+      "title": "معنى ثَآليل بالعربي — التعريف والشرح والمرادفات في معاجم اللغة العربية ...",
+      "url": "https://www.arabdict.com/en/%D8%B9%D8%B1%D8%A8%D9%8A-%D8%B9%D8%B1%D8%A8%D9%8A/%D8%AB%D9%8E%D8%A2%D9%84%D9%8A%D9%84",
+      "snippet": "تعرف على معنى ثَآليل وتعريفها في اللغة العربية في معجم وقاموس عرب ديكت، مع شرح لمرادفات الكلمة واستخداماتها، وأبرز ما ورد عنها في أهم المعاجم العربية ."
+    },
+    {
+      "title": "معنى و تعريف و شرح و جذر و وزن كلمة ثآليل – NBKomputer",
+      "url": "https://nbkomputer.com/%d9%85%d8%b9%d9%86%d9%89-%d9%88-%d8%aa%d8%b9%d8%b1%d9%8a%d9%81-%d9%88-%d8%b4%d8%b1%d8%ad-%d9%88-%d8%ac%d8%b0%d8%b1-%d9%88-%d9%88%d8%b2%d9%86-%d9%83%d9%84%d9%85%d8%a9-%d8%ab%d8%a2%d9%84%d9%8a%d9%84/",
+      "snippet": "معنى و تعريف و شرح و جذر و وزن كلمة ثآليل في معجم عربي عربي 1) ثَآلِيل (اسم) المعاني جمع للاسم ثُؤْلُول تحليل الكلمة كلمات على وزن / الوزن الصرفي لكلمة / وزن كلمة ثآليل فَعَالِيل جذر كلمة ثآليل …"
+    },
+    {
+      "title": "معنى ثآليل بالعربي – NBKomputer",
+      "url": "https://nbkomputer.com/tag/%d9%85%d8%b9%d9%86%d9%89-%d8%ab%d8%a2%d9%84%d9%8a%d9%84-%d8%a8%d8%a7%d9%84%d8%b9%d8%b1%d8%a8%d9%8a/",
+      "snippet": "معنى كلمة ثأل في المعجم العربي الجامع ولسان العرب ومعجم اللغة العربية المعاصرة والوسيط … ج ثآليل. 1-بثر أو حب صغير صلب مستدير يخرج في الجلد. 2-حلمة الثدي. أنواع الثآليل: تعرف عليها"
+    }
+  ]
+}

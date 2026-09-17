@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "kimseunguk/converge-slot-extractor",
+  "slug": "kimseunguk-converge-slot-extractor",
+  "author": "kimseunguk",
+  "url": "https://huggingface.co/kimseunguk/converge-slot-extractor",
+  "created_at": "2026-09-17T06:11:15.000Z",
+  "updated_at": "2026-09-20T16:52:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "gguf",
+    "ko",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2086984704,
+  "parameters_human": "2.09B",
+  "storage_bytes": 11590497792,
+  "storage_human": "11.6 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "2022–23 Premier League - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/2022%E2%80%9323_Premier_League",
+      "snippet": "The 2022–23 Premier League was the 31st season of the Premier League and the 124th season of top-flight English football overall. …"
+    },
+    {
+      "title": "2023–24 Premier League - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/2023%E2%80%9324_Premier_League",
+      "snippet": "The 2023–24 Premier League was the 32nd season of the Premier League and the 125th season of top-flight English football overall. …"
+    },
+    {
+      "title": "Premier League Table, Standings & Form Guide for 2023/24 season",
+      "url": "https://www.premierleague.com/en/tables/premier-league/2023-24",
+      "snippet": "*Nottingham Forest deducted four points following a breach of the Premier League’s Profitability and Sustainability Rules."
+    },
+    {
+      "title": "Premier League Football News, Fixtures, Scores & Results",
+      "url": "https://www.premierleague.com/",
+      "snippet": "Visit the official website of the Premier League, for all the latest Premier League news and features."
+    },
+    {
+      "title": "Premier League 2023/2024 Table, Results, Stats and Fixtures",
+      "url": "https://www.footballcritic.com/premier-league/season-2023-2024/2/68731",
+      "snippet": "The latest table, results, stats and fixtures from the 2023/2024 Premier League season. See who scored the most goals, cards, shots …"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "mj0530/CERA-MoA-Qwen3-4B-4agents",
+  "slug": "mj0530-cera-moa-qwen3-4b-4agents",
+  "author": "mj0530",
+  "url": "https://huggingface.co/mj0530/CERA-MoA-Qwen3-4B-4agents",
+  "created_at": "2026-09-17T11:25:00.000Z",
+  "updated_at": "2026-09-17T11:27:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "mixture-of-agents",
+    "multi-agent",
+    "lora",
+    "reinforcement-learning",
+    "qwen3",
+    "cera-moa",
+    "text-generation",
+    "arxiv:2609.18779",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:adapter:Qwen/Qwen3-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 705650952,
+  "storage_human": "706 MB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ikan duyung - Wikipedia Bahasa Melayu, ensiklopedia bebas",
+      "url": "https://ms.wikipedia.org/wiki/Ikan_duyung",
+      "snippet": "Menurut legenda, ikan duyung ialah makhluk air yang memiliki kepala dan tubuh layaknya seorang perempuan dan ekor menyerupai …"
+    },
+    {
+      "title": "Duyung Sebenarnya Ialah Dugong? - YouTube",
+      "url": "https://www.youtube.com/watch?v=eyfUCUpJG1M",
+      "snippet": "Jul 15, 2025 · Pernah tak terfikir, mungkin ikan duyung yang digambarkan dalam dongeng dan cerita rakyat… sebenarnya wujud, …"
+    },
+    {
+      "title": "Kelibat pernah dirakam di lautan, kisahnya tertulis dalam kitab lama ...",
+      "url": "https://www.mstar.com.my/xpose/mistik/2025/01/06/kelibat-pernah-dirakam-di-lautan-kisahnya-tertulis-dalam-kitab-lama-adakah-duyung-benar-benar-wujud-atau-sekadar-mitos",
+      "snippet": "Jan 6, 2025 · Jadi, adakah duyung benar-benar wujud atau adakah ia sekadar bayangan manusia yang terpukau oleh luasnya lautan …"
+    },
+    {
+      "title": "Dugong - Wikipedia Bahasa Melayu, ensiklopedia bebas",
+      "url": "https://ms.wikipedia.org/wiki/Dugong",
+      "snippet": "Dugong (Jawi: دوݢوڠ) atau babi duyung (Dugong dugon) [3] merupakan sejenis haiwan laut yang merupakan salah satu daripada …"
+    },
+    {
+      "title": "DUYUNG : Benarkah makhluk separuh manusia dan separuh ikan ini wujud …",
+      "url": "https://utusantv.com/2021/01/22/duyung-benarkah-makhluk-separuh-manusia-dan-separuh-ikan-ini-wujud/2/",
+      "snippet": "Jan 22, 2021 · Adakah duyung Active Pass ini benar-benar wujud? Kerana beberapa tahun kemudian, kawasan ini dihebohkan …"
+    }
+  ]
+}

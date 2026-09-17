@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l2_remove20_swapgapiter_b010_r02",
+  "slug": "jeesup-svd-safety-l2_remove20_swapgapiter_b010_r02",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l2_remove20_swapgapiter_b010_r02",
+  "created_at": "2026-09-17T10:45:44.000Z",
+  "updated_at": "2026-09-17T11:12:30.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama2",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-2-7b-chat-hf",
+    "base_model:finetune:meta-llama/Llama-2-7b-chat-hf",
+    "license:llama2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13477364771,
+  "storage_human": "13.5 GB",
+  "base_model": "meta-llama/Llama-2-7b-chat-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Outlook",
+      "url": "https://outlook.office.com/mail/?ui=en-US&rs=US",
+      "snippet": "Sign in to access your Microsoft account and manage your emails, calendar, and other features in one place."
+    },
+    {
+      "title": "Outlook Log In | Microsoft 365",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/outlook/log-in?msockid=2951a6bcca7e62c5023db16bcb7d6310",
+      "snippet": "Sign in to Outlook with Microsoft 365 to access your email, calendar, and more. Download the app or log in online for enhanced …"
+    },
+    {
+      "title": "Outlook",
+      "url": "https://outlook.office.com/mail/mini/opxdeeplink/mail/inbox",
+      "snippet": "Outlook. JavaScript must be enabled. ttt."
+    },
+    {
+      "title": "Outlook - Use the OWA login for email - Microsoft Office",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/outlook/web-email-login-for-outlook?msockid=2951a6bcca7e62c5023db16bcb7d6310",
+      "snippet": "With your Outlook login and Outlook on the web (OWA), you can send email, check your calendar and more from – all your go-to …"
+    },
+    {
+      "title": "Outlook",
+      "url": "https://www.outlook.com/outlook.office365.com",
+      "snippet": ""
+    }
+  ]
+}

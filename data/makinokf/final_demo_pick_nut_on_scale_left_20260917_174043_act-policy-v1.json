@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "MakinoKF/final_demo_pick_nut_on_scale_left_20260917_174043_act-policy-v1",
+  "slug": "makinokf-final_demo_pick_nut_on_scale_left_20260917_174043_act-policy-v1",
+  "author": "MakinoKF",
+  "url": "https://huggingface.co/MakinoKF/final_demo_pick_nut_on_scale_left_20260917_174043_act-policy-v1",
+  "created_at": "2026-09-17T10:37:36.000Z",
+  "updated_at": "2026-09-17T10:38:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:MakinoKF/final_demo_pick_nut_on_scale_left_20260917_174043",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714784,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "北海道のホームページ",
+      "url": "https://www.pref.hokkaido.lg.jp/",
+      "snippet": "Dec 29, 2022 · 北海道漁業調整規則に関する告示 水産林務部漁業管理課 2026年8月3日 協定事業者による太陽光パネル共同購入のポ …"
+    },
+    {
+      "title": "北海道教育委員会のホームページ",
+      "url": "https://www.dokyoi.pref.hokkaido.lg.jp/",
+      "snippet": "令和7年度全国体力・運動能力、運動習慣等調査「北海道版結果報告書」 学んでみよう～北海道の遺跡（教材動画、遺跡VRツアー …"
+    },
+    {
+      "title": "総合振興局・振興局 - 北海道のホームページ",
+      "url": "https://www.pref.hokkaido.lg.jp/gyosei/shicho/index.html",
+      "snippet": "Mar 3, 2025 · 空知総合振興局 所在地 〒068-8558 北海道岩見沢市8条西5丁目 TEL 0126-20-0200（総合案内） 夕張市 ／岩見沢市 ／ …"
+    },
+    {
+      "title": "運転免許証等の記載事項変更届",
+      "url": "https://www.police.pref.hokkaido.lg.jp/guide/menkyo/menkyo4.html",
+      "snippet": "トップページ > 運転免許証や各種申請手続案内 > 運転免許証に関する各種手続案内 > 運転免許証等の記載事項変更届 北海道警察本 …"
+    },
+    {
+      "title": "道路使用許可申請手続き案内",
+      "url": "https://www.police.pref.hokkaido.lg.jp/guide/douro-shiyou/douro_shiyou.html",
+      "snippet": "道路使用許可申請手続は電子申請でのご利用が可能となっています。 電子申請にて申請をお考えの方はこちらへ （北海道電子申請 …"
+    }
+  ]
+}

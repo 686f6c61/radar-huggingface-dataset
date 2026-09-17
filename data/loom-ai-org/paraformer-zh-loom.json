@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "loom-ai-org/paraformer-zh-loom",
+  "slug": "loom-ai-org-paraformer-zh-loom",
+  "author": "loom-ai-org",
+  "url": "https://huggingface.co/loom-ai-org/paraformer-zh-loom",
+  "created_at": "2026-09-17T10:25:04.000Z",
+  "updated_at": "2026-09-17T10:28:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "loom-py-rt",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "loom-py-rt",
+    "gguf",
+    "loom",
+    "automatic-speech-recognition",
+    "zh",
+    "en",
+    "base_model:funasr/paraformer-zh",
+    "base_model:quantized:funasr/paraformer-zh",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 216276050,
+  "parameters_human": "216.3M",
+  "storage_bytes": 865696576,
+  "storage_human": "866 MB",
+  "base_model": "funasr/paraformer-zh",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free screen recorder for Mac and PC | Loom",
+      "url": "https://www.loom.com/",
+      "snippet": "Record a quick walkthrough and let Loom’s AI turn it into a fully populated Jira work item in a few clicks. Loom automatically captures …"
+    },
+    {
+      "title": "Log into Loom | Loom",
+      "url": "https://www.loom.com/login",
+      "snippet": "Use Loom to record quick videos of your screen and cam. Explain anything clearly and easily – and skip the meeting. An essential …"
+    },
+    {
+      "title": "Moins mais mieux · Loom",
+      "url": "https://www.loom.fr/",
+      "snippet": "Venir en boutique Faire un retour Entretenir ses vêtements Travailler chez Loom Contact & FAQ"
+    },
+    {
+      "title": "Vêtements Homme · Loom",
+      "url": "https://www.loom.fr/fr-fr/collections/vestiaire-homme",
+      "snippet": "Vêtements homme de qualité, fabriqués au Portugal et en France."
+    },
+    {
+      "title": "Télécharger Loom (gratuit) Windows, iOS, Mac, Web, Android - Clubic",
+      "url": "https://www.clubic.com/telecharger-fiche435849-loom-2.html",
+      "snippet": "2 days ago · Original et multiplateforme, Loom est un logiciel macOS bien pratique pour réaliser des captures d'écran vidéo avec …"
+    }
+  ]
+}

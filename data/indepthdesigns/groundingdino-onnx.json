@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "InDepthDesigns/groundingdino-onnx",
+  "slug": "indepthdesigns-groundingdino-onnx",
+  "author": "InDepthDesigns",
+  "url": "https://huggingface.co/InDepthDesigns/groundingdino-onnx",
+  "created_at": "2026-09-17T10:27:44.000Z",
+  "updated_at": "2026-09-17T10:40:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "grounding-dino",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 695278324,
+  "storage_human": "695 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Power Platform Community",
+      "url": "https://powerusers.microsoft.com/t5/Canvas-Apps-Components-Samples/IBAN-Checker/td-p/687749",
+      "snippet": "Vi skulle vilja visa dig en beskrivning här men webbplatsen du tittar på tillåter inte detta."
+    }
+  ]
+}

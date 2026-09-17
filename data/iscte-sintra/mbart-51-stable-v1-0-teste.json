@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Iscte-Sintra/mbart-51-stable-v1.0-teste",
+  "slug": "iscte-sintra-mbart-51-stable-v1-0-teste",
+  "author": "Iscte-Sintra",
+  "url": "https://huggingface.co/Iscte-Sintra/mbart-51-stable-v1.0-teste",
+  "created_at": "2026-09-17T11:20:00.000Z",
+  "updated_at": "2026-09-17T11:22:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mbart",
+    "text2text-generation",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 611130567,
+  "parameters_human": "611.1M",
+  "storage_bytes": 2461692893,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ISCTE - Página Inicial",
+      "url": "https://www.iscte-iul.pt/",
+      "snippet": "Candidaturas abertas a Mestrados, Doutoramentos e Pós-Graduações Iscte e Faculdade de Direito da Universidade de Lisboa …"
+    },
+    {
+      "title": "ISCTE – University Institute of Lisbon - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/ISCTE_%E2%80%93_University_Institute_of_Lisbon",
+      "snippet": "ISCTE was established in Lisbon in 1972 as Instituto Superior de Ciências do Trabalho e da Empresa[15] using the faculty and …"
+    },
+    {
+      "title": "ISCTE – Instituto Universitário de Lisboa – Wikipédia, a enciclopédia livre",
+      "url": "https://pt.wikipedia.org/wiki/ISCTE_%E2%80%93_Instituto_Universit%C3%A1rio_de_Lisboa",
+      "snippet": "O Instituto Superior de Ciências do Trabalho e da Empresa – Instituto Universitário de Lisboa MHIP (ISCTE - IUL) é uma instituição …"
+    },
+    {
+      "title": "Institut universitaire de Lisbonne — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Institut_universitaire_de_Lisbonne",
+      "snippet": "L 'ISCTE - Institut Universitaire de Lisbonne (ISCTE-IUL) est un établissement public d'enseignement supérieur portugais situé dans …"
+    },
+    {
+      "title": "Licenciaturas - Iscte",
+      "url": "https://www.iscte-iul.pt/estudar/licenciaturas",
+      "snippet": "Acesso rápido Ciência-Iscte Biblioteca Recrutamento Ciberdúvidas Fenix+ E-learning Reserva de Eventos Repositório Institucional …"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Vishwesh8/CAMS-Diff",
+  "slug": "vishwesh8-cams-diff",
+  "author": "Vishwesh8",
+  "url": "https://huggingface.co/Vishwesh8/CAMS-Diff",
+  "created_at": "2026-09-17T10:58:26.000Z",
+  "updated_at": "2026-09-17T11:03:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1528782852,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NOVA portal",
+      "url": "https://nova.rs/",
+      "snippet": "NOVA BAZA „Oterani“: Direktor odbio da vodi naučnike na miting, inspektor zbog „Jovanjice“ proglašen za izdajnika, meteorolog …"
+    },
+    {
+      "title": "Najnovije vesti | Nova.rs",
+      "url": "https://nova.rs/najnovije-vesti/",
+      "snippet": "Mihailo Jovićević više nije glavni i odgovorni urednik portala Nova.rs: \"Napustio funkciju sporazumnim dogovorom\" Društvo 01:39"
+    },
+    {
+      "title": "Radar",
+      "url": "https://radar.nova.rs/",
+      "snippet": "Sukob kultura ili nova podela interesnih sfera Kulturni rat zemalja BRIKS-a protiv Zapada Marko Lovrić | Global | 6"
+    },
+    {
+      "title": "Nova Ekonomija",
+      "url": "https://novaekonomija.rs/",
+      "snippet": "Nova pomoć Vlade Srbije za Grad Beograd od skoro milijardu dinara Gradu Beogradu će biti preusmerena skoro milijarda dinara iz …"
+    },
+    {
+      "title": "Vesti na Nova.rs",
+      "url": "https://nova.rs/vesti/",
+      "snippet": "Pratite vesti iz oblasti politika, društvo, biznis, crna hronika, svet na Nova.rs. Tačne, proverene, precizne vesti, ekskluzivni intervjui"
+    }
+  ]
+}

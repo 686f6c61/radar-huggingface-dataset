@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "jiosephlee/intern-s1-mini-context-conditioned-molecule-transfer-v10-4-bbb-martins-best",
+  "slug": "jiosephlee-intern-s1-mini-context-conditioned-molecule-transfer-v10-4-bbb-martins-best",
+  "author": "jiosephlee",
+  "url": "https://huggingface.co/jiosephlee/intern-s1-mini-context-conditioned-molecule-transfer-v10-4-bbb-martins-best",
+  "created_at": "2026-09-16T19:34:05.000Z",
+  "updated_at": "2026-09-16T19:35:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "chemistry",
+    "assay-transfer",
+    "context-conditioned-molecule-transfer",
+    "conversational",
+    "dataset:jiosephlee/context-conditioned-molecule-transfer-v10.4-bbb-martins-mixed-continuous-intern",
+    "base_model:jiosephlee/Intern-S1-mini-lm",
+    "base_model:finetune:jiosephlee/Intern-S1-mini-lm",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8201221120,
+  "parameters_human": "8.20B",
+  "storage_bytes": 16402497533,
+  "storage_human": "16.4 GB",
+  "base_model": "jiosephlee/Intern-S1-mini-lm",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amazon.de: Amazon Prime",
+      "url": "https://www.amazon.de/amazonprime",
+      "snippet": "Als Prime-Mitglied kannst du exklusive Amazon Originals, Tausende beliebter Filme und Serien, sowie das Dienstags-Topspiel der …"
+    },
+    {
+      "title": "Filme und Serien buchen, kaufen und leihen - Prime Video",
+      "url": "https://www.primevideo.com/-/de/store",
+      "snippet": "Tauche bei Prime Video in eine Welt voller Unterhaltung ein. Du kannst die beliebtesten und neuesten Videos buchen, kaufen oder …"
+    },
+    {
+      "title": "Prime Video: Filme, Serien, Sport und Live-TV ansehen - Amazon.de",
+      "url": "https://www.amazon.de/gp/video/storefront",
+      "snippet": "Streame im Rahmen deiner Prime-Mitgliedschaft beliebte Filme, Serien, Sport und Live-TV. Mit Zusatzkanälen hast du sogar Zugriff …"
+    },
+    {
+      "title": "Amazon.com: Amazon Prime",
+      "url": "https://www.amazon.com/amazonprime",
+      "snippet": "Unlimited streaming Prime Video brings you new releases, award-winning Originals, and live sports."
+    },
+    {
+      "title": "The Grand Tour - Welcome to Prime Video",
+      "url": "https://www.primevideo.com/",
+      "snippet": "Enjoy exclusive Amazon Originals as well as popular movies and TV shows. Watch anytime, anywhere. Start your free trial."
+    }
+  ]
+}

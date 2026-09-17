@@ -1,0 +1,95 @@
+{
+  "schema": 1,
+  "id": "luborda5/medgemma-27b-papers-qlora",
+  "slug": "luborda5-medgemma-27b-papers-qlora",
+  "author": "luborda5",
+  "url": "https://huggingface.co/luborda5/medgemma-27b-papers-qlora",
+  "created_at": "2026-09-16T19:19:20.000Z",
+  "updated_at": "2026-09-16T19:28:39.000Z",
+  "license": "health-ai-developer-foundations",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3",
+    "image-text-to-text",
+    "medical",
+    "x-ray",
+    "pathology",
+    "dermatology",
+    "fundus",
+    "radiology report generation",
+    "chest-x-ray",
+    "medical-embeddings",
+    "image-classification",
+    "zero-shot-image-classification",
+    "image-feature-extraction",
+    "conversational",
+    "en",
+    "arxiv:2303.15343",
+    "arxiv:2507.05201",
+    "arxiv:2405.03162",
+    "arxiv:2106.14463",
+    "arxiv:2412.03555",
+    "arxiv:2501.19393",
+    "arxiv:2009.13081",
+    "arxiv:2102.09542",
+    "arxiv:2411.15640",
+    "arxiv:2404.05590",
+    "arxiv:2501.18362",
+    "base_model:google/gemma-3-27b-pt",
+    "base_model:finetune:google/gemma-3-27b-pt",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27432406640,
+  "parameters_human": "27.43B",
+  "storage_bytes": 54903054084,
+  "storage_human": "54.9 GB",
+  "base_model": "google/gemma-3-27b-pt",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "XBOX Games Showcase 2026 Recap: The Return of Exclusives, World ...",
+      "url": "https://news.xbox.com/en-us/2026/06/07/xbox-games-showcase-2026-recap-everything-announced/",
+      "snippet": "Jun 7, 2026 · XBOX Game Showcase 2026 just concluded. Find out everything announced - from the return of exclusives, to …"
+    },
+    {
+      "title": "All Big Upcoming Xbox Games For 2026 & Beyond",
+      "url": "https://gamerant.com/xbox-games-new-upcoming-releases-2026/",
+      "snippet": "Jan 8, 2026 · We will be getting plenty of new Xbox games in 2026, ranging from massive open-worlds to deep RPGs and indie …"
+    },
+    {
+      "title": "Xbox Release Dates In 2026: A List Of New Games Coming Out This Year",
+      "url": "https://www.purexbox.com/features/xbox-release-dates-in-2026-a-list-of-new-games-coming-out-this-year",
+      "snippet": "Jan 1, 2026 · Below, we've provided a month-by-month guide to all the Xbox releases that have been announced for 2026 so far - …"
+    },
+    {
+      "title": "New XBOX 25th Anniversary Console and Controller",
+      "url": "https://news.xbox.com/en-us/2026/06/07/xbox-25th-anniversary-console-controller-x25-xbox-games-showcase-2026/",
+      "snippet": "Jun 7, 2026 · We’re introducing the XBOX Series X25 Limited Edition and XBOX Wireless Controller X25 Special Edition, revealed …"
+    },
+    {
+      "title": "Xbox Helix – Vše, co potřebujete vědět | Alza.cz",
+      "url": "https://www.alza.cz/xbox-2028-info",
+      "snippet": "Aug 25, 2026 · Nástupce konzole Xbox Series X/S vzniká v Microsoftu pod označením Xbox Helix a dočkat bychom se ho prý mohli …"
+    }
+  ]
+}

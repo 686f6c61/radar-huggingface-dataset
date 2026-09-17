@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "Chiransiriwardena/phi3-mini-yoda-adapter",
+  "slug": "chiransiriwardena-phi3-mini-yoda-adapter",
+  "author": "Chiransiriwardena",
+  "url": "https://huggingface.co/Chiransiriwardena/phi3-mini-yoda-adapter",
+  "created_at": "2026-09-16T19:55:59.000Z",
+  "updated_at": "2026-09-16T19:56:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:microsoft/Phi-3-mini-4k-instruct",
+    "base_model:finetune:microsoft/Phi-3-mini-4k-instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25205865,
+  "storage_human": "25 MB",
+  "base_model": "microsoft/Phi-3-mini-4k-instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Forum E-sudoku.fr",
+      "url": "http://forum.e-sudoku.fr/viewtopic.php?t=1014",
+      "snippet": "Mar 24, 2025 · Forum officiel du site e-sudoku.fr . Echangez vos meilleurs tactiques de Sudoku. Toutes les news du sudoku autour …"
+    }
+  ]
+}

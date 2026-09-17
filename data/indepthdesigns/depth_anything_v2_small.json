@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "InDepthDesigns/depth_anything_v2_small",
+  "slug": "indepthdesigns-depth_anything_v2_small",
+  "author": "InDepthDesigns",
+  "url": "https://huggingface.co/InDepthDesigns/depth_anything_v2_small",
+  "created_at": "2026-09-17T10:42:27.000Z",
+  "updated_at": "2026-09-17T10:43:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 49642442,
+  "storage_human": "50 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ask Suicide-Screening Questions (ASQ) Toolkit - NIMH",
+      "url": "https://www.nimh.nih.gov/research/research-conducted-at-nimh/asq-toolkit-materials",
+      "snippet": "By enabling early identification and assessment of medical patients at high risk for suicide, the ASQ toolkit can play a key role in …"
+    },
+    {
+      "title": "Which Suicide Assessment Tool Should You Use?",
+      "url": "https://mentalhealthawarenesseducation.com/suicide-assessment-tools/",
+      "snippet": "Oct 5, 2025 · There are two assessment tools people typically use: either the Columbia Suicide Severity Rating Scale (C-SSRS) or …"
+    },
+    {
+      "title": "Ask Suicide-Screening Questions (ASQ) Suicide Risk Screening Tool",
+      "url": "https://www.nimh.nih.gov/sites/default/files/documents/research/research-conducted-at-nimh/asq-toolkit-materials/asq-tool/screening-tool-asq-nimh-toolkit.pdf",
+      "snippet": "Sep 29, 2025 · Provide resources to all patients: • 988 Suicide and Crisis Lifeline: call or text 988, and 988lifeline.org • Patient needs …"
+    },
+    {
+      "title": "Suicide Risk Assessment Toolkit – Suicide Prevention Resource Center",
+      "url": "https://sprc.org/resources/suicide-risk-assessment-toolkit/",
+      "snippet": "Suicide Risk Assessment Resource Guide – This self-study tool can help equip behavioral health clinicians with the knowledge and …"
+    },
+    {
+      "title": "Assessment | Zero Suicide",
+      "url": "https://zerosuicide.edc.org/toolkit/identify-screening-and-assessment/assessment",
+      "snippet": "AMSR is a comprehensive assessment process that identifies an individual's risk of suicide within their own context using a risk …"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "smlflg/Harness_swap",
+  "slug": "smlflg-harness_swap",
+  "author": "smlflg",
+  "url": "https://huggingface.co/smlflg/Harness_swap",
+  "created_at": "2026-09-16T19:21:19.000Z",
+  "updated_at": "2026-09-16T19:21:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/?hl=ar",
+      "snippet": "يمكنك إنشاء حساب أو تسجيل الدخول إلى Instagram - شارك ما يهمك مع الأشخاص الذين يفهمونك."
+    },
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/?hl=en",
+      "snippet": "Create an account or log in to Instagram - Share what you're into with the people who get you."
+    },
+    {
+      "title": "انستغرام - التطبيقات على Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.instagram.android&hl=ar",
+      "snippet": "اللحظات البسيطة تؤدي إلى بناء صداقات أفضل. شارك لحظاتك على Instagram. — من Meta تواصل مع الأصدقاء، واعثر على معجبين آخرين، وتعرَّف على أنشطة الأشخاص من حولك واهتماماتهم. …"
+    },
+    {
+      "title": "Instagram - تنزيل وتثبيت على Windows | Microsoft Store مجاناً",
+      "url": "https://apps.microsoft.com/detail/9nblggh5l9xt?hl=ar&gl=JO",
+      "snippet": "لتقريبك من الأشخاص والأشياء التي تحبها - Instagram من Meta. تواصَل مع الأصدقاء أو شارِك ما تنوي فعله أو تعرَّف على كل ما هو جديد من الآخرين في جميع أنحاء العالم. بادِر باستكشاف …"
+    },
+    {
+      "title": "Instagram Lite - التطبيقات على Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.instagram.lite&hl=ar",
+      "snippet": "يتميز Instagram Lite من Meta بأنه إصدار سريع وأصغر حجمًا من Instagram. يساعد Instagram Lite في تقريبك من الأشخاص الذين تحبهم والأشياء التي تنال إعجابك، وذلك نظرًا …"
+    }
+  ]
+}

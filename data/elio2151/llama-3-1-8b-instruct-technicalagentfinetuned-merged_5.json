@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Elio2151/Llama-3.1-8B-Instruct-TechnicalAgentFineTuned-Merged_5",
+  "slug": "elio2151-llama-3-1-8b-instruct-technicalagentfinetuned-merged_5",
+  "author": "Elio2151",
+  "url": "https://huggingface.co/Elio2151/Llama-3.1-8B-Instruct-TechnicalAgentFineTuned-Merged_5",
+  "created_at": "2026-09-17T10:17:04.000Z",
+  "updated_at": "2026-09-17T10:35:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit",
+    "base_model:finetune:unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766296,
+  "storage_human": "16.1 GB",
+  "base_model": "unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Annuaire des numéros téléphoniques du bureau RTS Esch-sur-Alzette",
+      "url": "https://impotsdirects.public.lu/fr/profil/organigramme/liste_telephone_service/liste_telephone_rts_esch.html",
+      "snippet": "L'annuaire de l'Administration des contributions directes - Bureau d'imposition RTS non-résidents"
+    },
+    {
+      "title": "RTS Esch-sur-Alzette - Profil de l'Administration - public",
+      "url": "https://impotsdirects.public.lu/fr/profil/organigramme/rts/rts_esch-sur-alzette.html",
+      "snippet": "Le bureau RTS Esch-sur-Alzette est compétent pour le calcul du décompte annuel, sur demande (modèle 163 R), des salariés et …"
+    },
+    {
+      "title": "Administration des contributions directes - Luxembourg",
+      "url": "https://acd.public.lu/",
+      "snippet": "Vos démarches fiscales se simplifient. Tout savoir sur l’assistant électronique sur MyGuichet, la déclaration simple préremplie et la …"
+    },
+    {
+      "title": "Bureaux RTS compétents - Salarié et pensionné - Administration des ...",
+      "url": "https://acd.public.lu/fr/salpens/fiche/admin.html",
+      "snippet": "Toutes les fiches de retenue d'impôt sont acheminées par courrier postal à leurs destinataires par les bureaux RTS émetteurs de …"
+    },
+    {
+      "title": "Annuaire - Esch Administration",
+      "url": "https://administration.esch.lu/annuaire/",
+      "snippet": "L’annuaire de la Ville d’Esch-sur-Alzette est à votre disposition pour toute recherche d’un service ou agent communal."
+    }
+  ]
+}

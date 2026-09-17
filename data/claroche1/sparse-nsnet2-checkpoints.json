@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "claroche1/sparse-nsnet2-checkpoints",
+  "slug": "claroche1-sparse-nsnet2-checkpoints",
+  "author": "claroche1",
+  "url": "https://huggingface.co/claroche1/sparse-nsnet2-checkpoints",
+  "created_at": "2026-04-19T20:40:26.000Z",
+  "updated_at": "2026-09-16T19:50:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "onnx",
+    "speech-enhancement",
+    "speech-denoising",
+    "nsnet2",
+    "butterfly",
+    "block-diagonal",
+    "monarch",
+    "structured-matrices",
+    "quantization",
+    "int8",
+    "en",
+    "dataset:JacobLinCool/VoiceBank-DEMAND-16k",
+    "arxiv:1903.05895",
+    "arxiv:2204.00595",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 309148188,
+  "storage_human": "309 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Financial Instructions No 1 of 2019 Capital Project Process Manual",
+      "url": "https://mof.govmu.org/Documents/Financial%20Instructions/Financial%20Instructions%201%20of%202019%20%28revised%29%20-%20Capital%20Project%20Process%20Manual.pdf",
+      "snippet": "1.1 This Capital Project Process Manual (CPPM) is issued in accordance with Section 22A of the Finance and Audit Act as amended …"
+    },
+    {
+      "title": "Financial Instructions - Mauritius",
+      "url": "https://mof.govmu.org/Pages/Financial-Instructions.aspx",
+      "snippet": "Financial Instructions No 1 of 2019 - Capital Project Process Manual. Downloadable Forms: Financial Instructions No 1 of 2018. …"
+    },
+    {
+      "title": "Procedure Manual - Mauritius",
+      "url": "https://ndu.govmu.org/Documents/Downloads/MANUAL_CAPITAL_PROJECTS.PDF",
+      "snippet": "All officers involved in project implementation at the level of the NDU are encouraged to adhere to the guidelines provided in the …"
+    },
+    {
+      "title": "NDU Capital Projects Procedure Manual - Scribd",
+      "url": "https://www.scribd.com/document/413351642/Capital-Projects-NDU",
+      "snippet": "This document provides guidelines for managing capital projects undertaken by the National Development Unit (NDU) in Mauritius. It …"
+    },
+    {
+      "title": "OBJECTIVES OF THIS MANUAL",
+      "url": "https://treasury.govmu.org/Documents/Legislations/Regulations-Financial-Instructions-Finance-Audit-Act.pdf",
+      "snippet": "Project Accounting and Management - Chapter 10.8 outlines the essential features of the management of and accounting for capital …"
+    }
+  ]
+}

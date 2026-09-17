@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "jiosephlee/intern-s1-mini-context-conditioned-molecule-transfer-v10-4-bioavailability-ma-best",
+  "slug": "jiosephlee-intern-s1-mini-context-conditioned-molecule-transfer-v10-4-bioavailability-ma-best",
+  "author": "jiosephlee",
+  "url": "https://huggingface.co/jiosephlee/intern-s1-mini-context-conditioned-molecule-transfer-v10-4-bioavailability-ma-best",
+  "created_at": "2026-09-16T19:29:17.000Z",
+  "updated_at": "2026-09-16T19:30:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "chemistry",
+    "assay-transfer",
+    "context-conditioned-molecule-transfer",
+    "conversational",
+    "dataset:jiosephlee/context-conditioned-molecule-transfer-v10.4-bioavailability-ma-mixed-continuous-intern",
+    "base_model:jiosephlee/Intern-S1-mini-lm",
+    "base_model:finetune:jiosephlee/Intern-S1-mini-lm",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8201221120,
+  "parameters_human": "8.20B",
+  "storage_bytes": 16402497533,
+  "storage_human": "16.4 GB",
+  "base_model": "jiosephlee/Intern-S1-mini-lm",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ondrive ile ilgili oldugunu düşündüğüm bir sorun",
+      "url": "https://answers.microsoft.com/tr-tr/windows/forum/all/ondrive-ile-ilgili-oldugunu/c42c73b1-2397-49f1-bfd0-28740df8a041",
+      "snippet": "Taciz, bir kişiyi veya bir grup insanı rahatsız etmeyi ya da üzmeyi amaçlayan davranışlardır. Tehditler herhangi bir şiddet tehdidini …"
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/outlook_com/forum/all/outlook-user-account-assigned-a-shared-mailbox/806a0684-e572-4bf0-b0a0-1c592b6b10e0",
+      "snippet": ""
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/msoffice/forum/all/how-do-i-set-the-name-that-appears-on-the-command/63c046ce-f89d-4f62-b93b-b65a66bfa86c",
+      "snippet": ""
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/msoffice/forum/all/my-account-is-locked-to-a-number-i-dont-have/f1ed20a0-bc75-42d6-bdeb-6e39a7bcb637",
+      "snippet": ""
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/outlook_com/forum/all/does-this-message-mean-the-email-is-active/04e3787e-8012-4d6e-a6fd-df896418e947",
+      "snippet": ""
+    }
+  ]
+}

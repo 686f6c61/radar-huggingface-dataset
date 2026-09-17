@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "realrebelai/FastH3-V2_GGUFs",
+  "slug": "realrebelai-fasth3-v2_ggufs",
+  "author": "realrebelai",
+  "url": "https://huggingface.co/realrebelai/FastH3-V2_GGUFs",
+  "created_at": "2026-09-16T03:27:17.000Z",
+  "updated_at": "2026-09-17T04:39:09.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": "comfyui",
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "gguf",
+    "video",
+    "text-to-video",
+    "minimax",
+    "minimax-h3",
+    "fastvideo",
+    "fasth3",
+    "quantization",
+    "base_model:FastVideo/FastVideo-FastH3-8-Step-V2",
+    "base_model:quantized:FastVideo/FastVideo-FastH3-8-Step-V2",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 10,
+  "downloads_30d": 18,
+  "trending_score": 10,
+  "parameters": 35049751312,
+  "parameters_human": "35.05B",
+  "storage_bytes": 67116534272,
+  "storage_human": "67.1 GB",
+  "base_model": "FastVideo/FastVideo-FastH3-8-Step-V2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/",
+      "snippet": "20 hours ago · Forum software by XenForo Anything that doesn't go into the other forums. Post pics or clips of yourself, wife, …"
+    },
+    {
+      "title": "Index Fórum",
+      "url": "https://forum.index.hu/Topic/showTopicList",
+      "snippet": "1 day ago · Általános társalgási fórumcsoport A Törzsasztal, Index kávéház, iNteRNeTTo, Iskolák, évszámok, horoszkópok, …"
+    },
+    {
+      "title": "Pic & Movie Post - XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/forums/pic-movie-post.8/",
+      "snippet": "20 hours ago · Post pics or clips of yourself, wife, girlfriend, models, anything you like."
+    },
+    {
+      "title": "Index Fórum",
+      "url": "https://forum.index.hu/Article/viewArticle?a=171642476",
+      "snippet": "Sziasztok!Trix H0 DRG 5 darabos válogatott személyvagon szerelvény - abszolút újszerű, gyűjteményből, eltérő pályaszámok, …"
+    },
+    {
+      "title": "Sex Stories | XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/forums/sex-stories.6/",
+      "snippet": "Apr 12, 2009 · Anything related to texts and xnxx stories. Hello, You can now get verified on forum. The way it's gonna work is that …"
+    }
+  ]
+}

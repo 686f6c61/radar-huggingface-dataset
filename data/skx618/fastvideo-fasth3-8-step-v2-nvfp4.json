@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "skx618/FastVideo-FastH3-8-Step-V2-NVFP4",
+  "slug": "skx618-fastvideo-fasth3-8-step-v2-nvfp4",
+  "author": "skx618",
+  "url": "https://huggingface.co/skx618/FastVideo-FastH3-8-Step-V2-NVFP4",
+  "created_at": "2026-09-16T17:24:44.000Z",
+  "updated_at": "2026-09-16T19:47:32.000Z",
+  "license": "minimax-h3-community",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": "uniserve",
+  "languages": [],
+  "tags": [
+    "uniserve",
+    "diffusers",
+    "safetensors",
+    "text-to-video",
+    "text-to-audio-video",
+    "fastvideo",
+    "fasth3",
+    "nvfp4",
+    "modelopt",
+    "quantized",
+    "base_model:FastVideo/FastVideo-FastH3-8-Step-V2",
+    "base_model:finetune:FastVideo/FastVideo-FastH3-8-Step-V2",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 132929568860,
+  "storage_human": "132.9 GB",
+  "base_model": "FastVideo/FastVideo-FastH3-8-Step-V2",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ecosia - the search engine that plants trees",
+      "url": "https://www.ecosia.org/",
+      "snippet": "Ecosia uses 100% of its profits for the planet and produces enough renewable energy to power all searches twice over."
+    },
+    {
+      "title": "Home - Switch to Ecosia",
+      "url": "https://change.ecosia.org/de/",
+      "snippet": "Kleine Schritte. Große Wirkung. Du suchst jeden Tag – Zeit, etwas daraus zu machen. Online-Suchen generieren über …"
+    },
+    {
+      "title": "Home - Switch to Ecosia",
+      "url": "https://change.ecosia.org/",
+      "snippet": "Small actions. Real change. You search everyday. Time to make it count. Online searches generate revenue through displayed ads. …"
+    },
+    {
+      "title": "The greenest browser on Earth - Ecosia",
+      "url": "https://www.ecosia.org/browser",
+      "snippet": "The Ecosia Browser has built-in green features that make it simple to be climate active every day. We produce 25Wh of renewable …"
+    },
+    {
+      "title": "Ecosia: die Suchmaschine, die 100% der Gewinne für den Planeten nutzt",
+      "url": "https://ecosia.co/200Mio",
+      "snippet": ""
+    }
+  ]
+}

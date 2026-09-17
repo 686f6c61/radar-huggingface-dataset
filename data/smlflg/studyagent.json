@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "smlflg/StudyAgent",
+  "slug": "smlflg-studyagent",
+  "author": "smlflg",
+  "url": "https://huggingface.co/smlflg/StudyAgent",
+  "created_at": "2026-09-16T19:28:26.000Z",
+  "updated_at": "2026-09-16T19:28:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Datenübertragungsrate – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Daten%C3%BCbertragungsrate",
+      "snippet": "Die maximal erzielbaren Datenübertragungsraten unterliegen einer laufenden Weiterentwicklung, so dass viele genannte Datenraten …"
+    },
+    {
+      "title": "Datenübertragungsraten erklärt: Grundlagen und praktische Tipps ...",
+      "url": "https://www.hardwarejournal.de/was-sind-datenuebertragungsraten-grundlagen-tipps/",
+      "snippet": "May 23, 2025 · Was sind Datenübertragungsraten? Die Datenübertragungsrate – auch Datenrate oder Datentransferrate genannt – …"
+    },
+    {
+      "title": "Datenübertragungsraten-Rechner kostenlos - Mbps, MBps, Gbps",
+      "url": "https://miniwebtool.com/de/datenuebertragungsraten-rechner/",
+      "snippet": "Apr 29, 2026 · Der Datenübertragungsraten-Rechner übersetzt sofort Internetgeschwindigkeiten und Datenraten zwischen allen …"
+    },
+    {
+      "title": "Übertragungsgeschwindigkeit und Datenrate",
+      "url": "https://www.elektronik-kompendium.de/sites/kom/0212095.htm",
+      "snippet": "Übertragungsgeschwindigkeit und Datenrate Bei der Übertragungsgeschwindigkeit handelt es sich um die Geschwindigkeit, mit der …"
+    },
+    {
+      "title": "Liste von Größenordnungen von Datenraten – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Liste_von_Gr%C3%B6%C3%9Fenordnungen_von_Datenraten",
+      "snippet": "Dieses ist eine Zusammenstellung von Datenübertragungsraten / Bitraten verschiedener Größenordnungen zu Vergleichszwecken. …"
+    }
+  ]
+}

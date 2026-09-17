@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "com-kotobalabs/Qwen3.8-27B-whitehat-NVFP4",
+  "slug": "com-kotobalabs-qwen3-8-27b-whitehat-nvfp4",
+  "author": "com-kotobalabs",
+  "url": "https://huggingface.co/com-kotobalabs/Qwen3.8-27B-whitehat-NVFP4",
+  "created_at": "2026-09-17T10:52:28.000Z",
+  "updated_at": "2026-09-18T10:07:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "abliterated",
+    "uncensored",
+    "security-research",
+    "red-team",
+    "nvfp4",
+    "conversational",
+    "arxiv:2406.11717",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 19763747973,
+  "storage_human": "19.8 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": ".com — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/.com",
+      "snippet": "Domaine de premier niveau (TLD) du système de noms de domaines Internet, le nom de domaine .com correspond à l’abréviation de …"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Corse Imagerie Médicale",
+      "url": "https://corseimagerie.com/",
+      "snippet": "Corse Imagerie Médicale est née en 2023 de l’association de 10 médecins radiologues de la région Ajaccienne : Dr Michel …"
+    },
+    {
+      "title": "Corse Matin - Actualités locales, sportives et politique en Corse.",
+      "url": "https://www.corsematin.com/",
+      "snippet": "Avec Corse Matin, suivez en direct, en photos et en vidéos toute l'actualité politique, sportive, économique et régionale."
+    },
+    {
+      "title": ".com - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/.com",
+      "snippet": "The domain com is a top-level domain (TLD) in the Domain Name System (DNS) of the Internet. Created in the first group of Internet …"
+    }
+  ]
+}

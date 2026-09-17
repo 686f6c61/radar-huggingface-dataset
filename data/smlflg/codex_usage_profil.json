@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "smlflg/Codex_Usage_Profil",
+  "slug": "smlflg-codex_usage_profil",
+  "author": "smlflg",
+  "url": "https://huggingface.co/smlflg/Codex_Usage_Profil",
+  "created_at": "2026-09-16T19:33:02.000Z",
+  "updated_at": "2026-09-16T19:33:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Loafers - der bequeme Trendschuh für jeden Tag bei ZALANDO",
+      "url": "https://www.zalando.de/loafers/",
+      "snippet": "Loafers – der schlüpfrige Klassiker mit großer Geschichte Loafers haben eine faszinierende Entstehungsgeschichte, die bis in die …"
+    },
+    {
+      "title": "Advanced Configuration | ChatGPT Learn",
+      "url": "https://learn.chatgpt.com/docs/config-file/config-advanced",
+      "snippet": "Because the profile file is a layer above your base user config and below project and CLI config, it only needs the values that differ from your base config. Profile files can also override model_catalog_json; Codex uses the profile value when both files set it. In Codex 0.134.0 and later, --profile no longer reads [profiles.profile-name] from config.toml, and the top-level profile = \"profile ..."
+    },
+    {
+      "title": "Sandalen für Herren im Sale online bei ZALANDO",
+      "url": "https://www.zalando.de/herrenschuhe-sandalen-sale/",
+      "snippet": "Vom roten Modell bis zur blauen Sandale mit Klettverschluss wirst du dir jeden Wunsch erfüllen können. Kaufst du die Schuhe im …"
+    },
+    {
+      "title": "Codex | AI Coding Partner from OpenAI",
+      "url": "https://openai.com/codex/",
+      "snippet": "The best way to build with agents. Codex accelerates real engineering work, from planning and building features to refactors, reviews, and releases."
+    },
+    {
+      "title": "Wedge sandals | An upgrade for your feet at ZALANDO",
+      "url": "https://en.zalando.de/wedge-sandals/",
+      "snippet": "Wedge sandals fill you with the joy of spring and set the mood for summer | Stride through summer with your wedge sandals"
+    }
+  ]
+}

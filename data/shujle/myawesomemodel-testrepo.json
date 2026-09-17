@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "shujle/MyAwesomeModel-TestRepo",
+  "slug": "shujle-myawesomemodel-testrepo",
+  "author": "shujle",
+  "url": "https://huggingface.co/shujle/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-17T11:08:52.000Z",
+  "updated_at": "2026-09-17T11:10:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Login · My iTero",
+      "url": "https://myitero.com/",
+      "snippet": ""
+    },
+    {
+      "title": "Login · My iTero",
+      "url": "http://bff.cloud.myitero.com/",
+      "snippet": "My iTero is a platform for managing dental scans, treatment simulations, and account information."
+    },
+    {
+      "title": "pre-login-app - My iTero",
+      "url": "https://bff.cloud.myitero.com/login",
+      "snippet": "Welcome Log in to access your account Next"
+    },
+    {
+      "title": "Login · My iTero",
+      "url": "https://itero-myitero-qas.st.iterocloud.com/",
+      "snippet": "Error Show more"
+    },
+    {
+      "title": "My iTero",
+      "url": "https://bff.cloud.myitero.com/doctors/home",
+      "snippet": "My iTero ... My iTero"
+    }
+  ]
+}

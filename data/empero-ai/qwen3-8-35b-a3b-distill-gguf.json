@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "empero-ai/Qwen3.8-35B-A3B-Distill-GGUF",
+  "slug": "empero-ai-qwen3-8-35b-a3b-distill-gguf",
+  "author": "empero-ai",
+  "url": "https://huggingface.co/empero-ai/Qwen3.8-35B-A3B-Distill-GGUF",
+  "created_at": "2026-09-16T18:58:46.000Z",
+  "updated_at": "2026-09-16T21:28:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "quantized",
+    "empero-ai",
+    "qwen3.6",
+    "qwen3.8",
+    "distillation",
+    "reasoning",
+    "moe",
+    "gated-deltanet",
+    "text-generation",
+    "en",
+    "base_model:empero-ai/Qwen3.8-35B-A3B-Distill",
+    "base_model:quantized:empero-ai/Qwen3.8-35B-A3B-Distill",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 22,
+  "downloads_30d": 0,
+  "trending_score": 22,
+  "parameters": 35505251456,
+  "parameters_human": "35.51B",
+  "storage_bytes": 266066096704,
+  "storage_human": "266.1 GB",
+  "base_model": "empero-ai/Qwen3.8-35B-A3B-Distill",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fennec Custom Decal Template (Editable .PSD File)",
+      "url": "https://videogamemods.com/vgm/rocketleague/mods/fennec-custom-decal-template-editable-psd-file",
+      "snippet": "All of the individual car panels are separated into layers and converted into editable smart objects. Just double click the smart objects …"
+    },
+    {
+      "title": "Fennec decal template - Etsy.de",
+      "url": "https://www.etsy.com/de/market/fennec_decal_template?msockid=37bc99ccc2e76c261efd8e1ac37d6da0",
+      "snippet": "Schau dir unsere Auswahl an fennec decal template an, um die tollsten einzigartigen oder spezialgefertigten, handgemachten Stücke …"
+    },
+    {
+      "title": "Custom Decal Templates - Rocket League Mod - Video Game Mods",
+      "url": "https://videogamemods.com/vgm/rocketleague/mods/custom-decal-templates-1014029",
+      "snippet": "May 10, 2024 · This Download Folder Contains: Octane Transparent Template Fennec Transparent Template Dominus Transparent …"
+    },
+    {
+      "title": "Fennec - BakkesPlugins",
+      "url": "https://bakkesplugins.com/cars/1239",
+      "snippet": "May 18, 2021 · Community-driven platform for BakkesMod plugins and Rocket League customization. You need Aphaboost on your …"
+    },
+    {
+      "title": "Fennec template - Licographics",
+      "url": "https://www.licographics.com/2021/02/fennec-template/",
+      "snippet": "January template, a full body fennec. I should draw more of these ones, they’re very cute! Thanks to all patrons for your continuous …"
+    }
+  ]
+}

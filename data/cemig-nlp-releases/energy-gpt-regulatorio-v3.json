@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "cemig-nlp-releases/energy-gpt-regulatorio-v3",
+  "slug": "cemig-nlp-releases-energy-gpt-regulatorio-v3",
+  "author": "cemig-nlp-releases",
+  "url": "https://huggingface.co/cemig-nlp-releases/energy-gpt-regulatorio-v3",
+  "created_at": "2026-09-16T19:57:41.000Z",
+  "updated_at": "2026-09-16T19:57:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "generated_from_trainer",
+    "conversational",
+    "dataset:TokenLab/CemigConvoV1.1",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 9098609861,
+  "storage_human": "9.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Suchergebnis Auf Amazon.de Für: Doppelrollo",
+      "url": "https://www.amazon.de/doppelrollo/s?k=doppelrollo",
+      "snippet": "Doppelrollo klemmfix ohne Bohren, Duo Rollos für Fenster & Tür mit Bohren, Version 2026 Grau B41 x H150cm (Stoffbreite 41 cm), …"
+    },
+    {
+      "title": "Doppelrollos online kaufen » Duo Rollos | OTTO",
+      "url": "https://www.otto.de/heimtextilien/rollos-plissees/rollos/doppelrollos/",
+      "snippet": "Doppelrollo Doppelrollo mit Kassette Weiß Grau Höhe 250/200 cm mit und ohne Perlen, Plisseeonline, abdunkelnd, Deckenmontage, …"
+    },
+    {
+      "title": "Doppelrollos günstig kaufen » Jetzt im ROLLER Online-Shop",
+      "url": "https://www.roller.de/textilien/rollos-und-jalousien/doppelrollos/",
+      "snippet": "Wenn das Sonnenlicht so stark blendet, dass ein Arbeiten am Computer oder Fernsehen im Wohnzimmer nicht möglich ist oder …"
+    },
+    {
+      "title": "Doppelrollo » alle Größen & Varianten - Jalousiescout",
+      "url": "https://www.jalousiescout.de/innenliegend/rollos/doppelrollos",
+      "snippet": "Was ist ein Doppelrollo? Doppelrollos werden – im Unterschied zu den klassischen Rollo-Modellen – aus zwei hintereinander …"
+    },
+    {
+      "title": "Doppelrollo kaufen bei OBI",
+      "url": "https://www.obi.de/search/doppelrollo/?msockid=1b0fd21e63e564581492c5c8622c65da",
+      "snippet": "Doppelrollo kaufen und bestellen Online auf www.obi.de und in Ihrem Markt vor Ort OBI - alles für Heim, Haus, Garten und Bau."
+    }
+  ]
+}

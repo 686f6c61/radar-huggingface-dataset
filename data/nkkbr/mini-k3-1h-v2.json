@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "nkkbr/Mini-K3-1H-v2",
+  "slug": "nkkbr-mini-k3-1h-v2",
+  "author": "nkkbr",
+  "url": "https://huggingface.co/nkkbr/Mini-K3-1H-v2",
+  "created_at": "2026-09-16T06:18:15.000Z",
+  "updated_at": "2026-09-19T09:12:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "mini_k3",
+    "kimi-k3",
+    "pretraining",
+    "mixture-of-experts",
+    "linear-attention",
+    "architecture-ablation",
+    "text-generation",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 149,
+  "trending_score": 0,
+  "parameters": 1016780524,
+  "parameters_human": "1.02B",
+  "storage_bytes": 16701040099,
+  "storage_human": "16.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Perbedaan Perusahaan Swasta dan BUMN, Simak Selengkapnya!",
+      "url": "https://jadibumn.id/perbedaan-perusahaan-swasta-dan-bumn-2/",
+      "snippet": "Sep 18, 2024 · Dalam memahami perbedaan antara perusahaan swasta dan BUMN, penting untuk mengenali karakteristik, tujuan, …"
+    },
+    {
+      "title": "Apa yang Membedakan BUMN dengan Perusahaan Swasta?",
+      "url": "https://jadibumn.id/apa-yang-membedakan-bumn-dengan-perusahaan-swasta/",
+      "snippet": "Oct 25, 2024 · Ketahui apa yang membedakan BUMN dengan perusahaan swasta di Indonesia, mulai dari kepemilikan, peran, …"
+    },
+    {
+      "title": "Swastanisasi BUMN: Pengertian, Syarat, Cara, hingga Manfaat",
+      "url": "https://kumparan.com/kabar-harian/swastanisasi-bumn-pengertian-syarat-cara-hingga-manfaat-22jJ7CdU01r",
+      "snippet": "May 13, 2024 · Sebagian besar setuju tentang adanya swastanisasi BUMN karena memiliki manfaat dan dampak yang positif. …"
+    },
+    {
+      "title": "Aset BUMN Banyak Nganggur, Swasta Siap Dilibatkan - Listrik Indonesia",
+      "url": "https://listrikindonesia.com/detail/20976/aset-bumn-banyak-yang-nganggur-swasta-akan-dilibatkan",
+      "snippet": "Aug 21, 2026 · Aset BUMN yang masih idle dan mangkrak akan dioptimalkan dengan melibatkan swasta. DPR juga mendorong …"
+    },
+    {
+      "title": "Badan Usaha Milik Swasta (BUMS): Bentuk, Jenis, dan Contoh",
+      "url": "https://www.brainacademy.id/blog/badan-usaha-milik-swasta-bums",
+      "snippet": "Aug 4, 2026 · BUMS adalah badan usaha yang dimiliki oleh pihak swasta, baik perorangan maupun kelompok. BUMS memiliki …"
+    }
+  ]
+}

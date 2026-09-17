@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Mihai-LeanZero/Qwen3.8-27B-Atlassian-Q6_K-GGUF",
+  "slug": "mihai-leanzero-qwen3-8-27b-atlassian-q6_k-gguf",
+  "author": "Mihai-LeanZero",
+  "url": "https://huggingface.co/Mihai-LeanZero/Qwen3.8-27B-Atlassian-Q6_K-GGUF",
+  "created_at": "2026-09-17T10:32:10.000Z",
+  "updated_at": "2026-09-17T10:50:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "atlassian",
+    "forge",
+    "jira",
+    "confluence",
+    "jira-service-management",
+    "leanzero",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 22431000192,
+  "storage_human": "22.4 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jota Quest - N-U-M-A-B-O-A (Clipe Oficial) - YouTube",
+      "url": "https://www.youtube.com/watch?v=kzIByF0Q4HQ",
+      "snippet": "Oct 15, 2023 · Vídeo Oficial de \"N-U-M-A-B-O-A\" de Jota Quest. Confira também a playlist \"Jota Quest - As Melhores\": …"
+    },
+    {
+      "title": "Traduzione di \"numa boa\" in italiano - Reverso Context",
+      "url": "https://context.reverso.net/traduzione/portoghese-italiano/numa+boa",
+      "snippet": "Traduzioni in contesto per \"numa boa\" in portoghese-italiano da Reverso Context: pedindo numa boa, numa boa hora, numa boa …"
+    },
+    {
+      "title": "N-U-M-A-B-O-A - Jota Quest - LETRAS.MUS.BR",
+      "url": "https://www.letras.mus.br/jota-quest/n-u-m-a-b-o-a/",
+      "snippet": "Jota Quest - N-U-M-A-B-O-A (Letra e música para ouvir) - E o que conforta é saber / Que existe tanta vida pela frente / E um dia eu …"
+    },
+    {
+      "title": "Jota Quest - N-U-M-A-B-O-A (Clipe Oficial) - YouTube Music",
+      "url": "https://music.youtube.com/watch?v=kzIByF0Q4HQ&list=RDAMVM4qEksmx6ldQ",
+      "snippet": "Vídeo Oficial de \"N-U-M-A-B-O-A\" de Jota Quest. Confira também a playlist \"Jota Quest - As Melhores\": …"
+    },
+    {
+      "title": "Numa Boa - YouTube",
+      "url": "https://www.youtube.com/watch?v=ytXYcFjrYP0",
+      "snippet": "Jul 13, 2018 · Provided to YouTube by Universal Music Group Numa Boa · Vinicius Cantuaria Nu Brasil ℗ 1986 EMI Music Brasil Ltda …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "mtakahashibury/contrastive-mini-2024",
+  "slug": "mtakahashibury-contrastive-mini-2024",
+  "author": "mtakahashibury",
+  "url": "https://huggingface.co/mtakahashibury/contrastive-mini-2024",
+  "created_at": "2026-09-17T11:04:45.000Z",
+  "updated_at": "2026-09-17T11:04:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mobilevit",
+    "pytorch",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "أسماء ببجي مزخرفة عربي وإنجليزي 2026",
+      "url": "https://www.altkia.com/%d8%a3%d8%b3%d9%85%d8%a7%d8%a1-%d8%a8%d8%a8%d8%ac%d9%8a-%d9%85%d8%b2%d8%ae%d8%b1%d9%81%d8%a9/",
+      "snippet": "Jul 4, 2026 · اسماء ببجي مزخرفة 2026 نقدم لكم مجموعة جديدة من أجمل أسماء ببجي 2026 المزخرفة باحترافية، وجميعها أسماء حصرية ومقبولة عند إنشاء حساب جديد في لعبة …"
+    },
+    {
+      "title": "زخرفة اسم PUBG برموز جاهزة (نسخ ولصق) の ツ 〆 々 ム – أسماء كلاانات …",
+      "url": "https://www.i2symbol.com/ar/symbols/pubg",
+      "snippet": "استخدم هذه القائمة للتعرف على أشهر رموز اسم ببجي وكيف يتم استخدامها عادة في أسماء اللاعبين وتاقات الكلان وأشكال الزخرفة المختلفة. اضغط على أي رمز لنسخه واستخدامه في تصميم اسمك."
+    },
+    {
+      "title": "أفضل أسماء ببجي و PUBG Mobile فخمة باللغة العربية والإنجليزية",
+      "url": "https://aboutmsr.com/%d8%a3%d9%81%d8%b6%d9%84-%d8%a3%d8%b3%d9%85%d8%a7%d8%a1-%d8%a8%d8%a8%d8%ac%d9%8a-%d9%88-pubg-mobile-%d9%81%d8%ae%d9%85%d8%a9-%d8%a8%d8%a7%d9%84%d9%84%d8%ba%d8%a9-%d8%a7%d9%84%d8%b9%d8%b1%d8%a8%d9%8a/",
+      "snippet": "فإذا كنت تحرص على اختيار اسم مُميَّز وله طابع خاص، سيُعد لكم خاص عن مصر مجموعة من أفضل أسماء ببجي و PUBG Mobile فخمة باللغة العربية والإنجليزية، لاختيار منها المناسب لكل لاعب …"
+    },
+    {
+      "title": "أسماء ببجي و PUBG Mobile فخمة باللغة العربية والإنكليزية",
+      "url": "https://www.saudigamer.com/pubg-cool-and-unique-names/",
+      "snippet": "Jul 27, 2024 · أسماء ببجي و PUBG Mobile فخمة باللغة العربية والإنكليزية ونصائح لاختيار أفضل الأسماء."
+    },
+    {
+      "title": "أسماء ببجي فخمة 2026 | 1000+ اسم للبنات والأولاد",
+      "url": "https://zakhraafah.com/%D8%B2%D8%AE%D8%B1%D9%81%D8%A9-%D8%A7%D8%B3%D9%85%D8%A7%D8%A1-%D8%A8%D8%A8%D8%AC%D9%8A/",
+      "snippet": "Sep 3, 2026 · أكثر من 1000 اسم جاهز للنسخ للبنات والأولاد مع خطوات التغيير 2026."
+    }
+  ]
+}

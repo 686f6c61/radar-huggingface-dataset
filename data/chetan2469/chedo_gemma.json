@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "chetan2469/chedo_gemma",
+  "slug": "chetan2469-chedo_gemma",
+  "author": "chetan2469",
+  "url": "https://huggingface.co/chetan2469/chedo_gemma",
+  "created_at": "2026-09-17T11:16:32.000Z",
+  "updated_at": "2026-09-21T04:18:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2506172416,
+  "parameters_human": "2.51B",
+  "storage_bytes": 6648799232,
+  "storage_human": "6.6 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "السوق المفتوح : سوق الأردن : سيارات : عقارات : بيوت : للبيع : خدمات ...",
+      "url": "https://jo.opensooq.com/ar",
+      "snippet": "سيارات جديدة ومستعملة وشقق وعقارات ووظائف وغيرها تجدها على السوق المفتوح في الأردن . اعلن مجانا!"
+    },
+    {
+      "title": "السوق المفتوح : اعلانات مبوبة في بلدك : سيارات : عقارات : وظائف : موبايلات",
+      "url": "https://www.opensooq.com/ar",
+      "snippet": "السوق المفتوح أكبر موقع للإعلانات المبوبة بالعربية. يمكنك البيع وتقديم المنتجات والخدمات لملايين المستخدمين عبر الإنترنت دون وسيط."
+    },
+    {
+      "title": "سيارات ومركبات وإكسسوارات للبيع في الأردن | السوق المفتوح",
+      "url": "https://jo.opensooq.com/ar/%d8%b3%d9%8a%d8%a7%d8%b1%d8%a7%d8%aa-%d9%88%d9%85%d8%b1%d9%83%d8%a8%d8%a7%d8%aa",
+      "snippet": "اشترِ واستأجر السيارات والمركبات وقطع الغيار والإكسسوارات في الأردن على السوق المفتوح – تصفح آلاف الإعلانات واحصل على أفضل العروض في سوق السيارات الموثوق."
+    },
+    {
+      "title": "السوق المفتوح - OpenSooq - التطبيقات على Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.opensooq.OpenSooq&hl=ar",
+      "snippet": "حمل تطبيق السوق المفتوح الآن واستفد من الفرص التي لا تنتهي! انضم لأكثر من 60 مليون مستخدم في 20 دولة يثقون بالسوق المفتوح، التطبيق الرائد للإعلانات المبوبة في الشرق الأوسط وشمال إفريقيا."
+    },
+    {
+      "title": "السوق المفتوح : سوق الأردن : سيارات : عقارات : بيوت : للبيع : خدمات ...",
+      "url": "https://my.opensooq.com/ar",
+      "snippet": "السوق المفتوح هو الموقع الرائد في مجال الإعلانات المبوّبة في المنطقة، حيث يتيح للمشترين والبائعين فرصة الاتصال والتفاعل بسهولة ويسر. يحظى الموقع بأكثر من 800 مليون زيارة سنويًا، ويتيح …"
+    }
+  ]
+}

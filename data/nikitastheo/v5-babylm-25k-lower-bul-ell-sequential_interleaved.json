@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "nikitastheo/v5-babylm-25k-lower-bul-ell-sequential_interleaved",
+  "slug": "nikitastheo-v5-babylm-25k-lower-bul-ell-sequential_interleaved",
+  "author": "nikitastheo",
+  "url": "https://huggingface.co/nikitastheo/v5-babylm-25k-lower-bul-ell-sequential_interleaved",
+  "created_at": "2026-09-16T18:43:46.000Z",
+  "updated_at": "2026-09-16T19:47:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "causal-lm",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 123886080,
+  "parameters_human": "123.9M",
+  "storage_bytes": 991118592,
+  "storage_human": "991 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "2024–25 Premier League - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/2024%E2%80%9325_Premier_League",
+      "snippet": "On 27 April, Liverpool beat Tottenham Hotspur 5–1 at Anfield to secure their second Premier League title with four games remaining, …"
+    },
+    {
+      "title": "Premier League Table, Standings & Form Guide for 2024/25 season",
+      "url": "https://www.premierleague.com/en/tables/premier-league/2024-25",
+      "snippet": "View the latest standings in the Premier League table for 2024/25 season, along with form guides and season archives, on the official …"
+    },
+    {
+      "title": "2023–24 Premier League - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/2023%E2%80%9324_Premier_League",
+      "snippet": "The 2023–24 Premier League was the 32nd season of the Premier League and the 125th season of top-flight English football overall. …"
+    },
+    {
+      "title": "Premier League Football News, Fixtures, Scores & Results",
+      "url": "https://www.premierleague.com/",
+      "snippet": "Visit the official website of the Premier League, for all the latest Premier League news and features."
+    },
+    {
+      "title": "Premier League 2024/2025 Table, Results, Stats and Fixtures",
+      "url": "https://www.footballcritic.com/premier-league/season-2024-2025/28/72764",
+      "snippet": "The latest table, results, stats and fixtures from the 2024/2025 Premier League season. See who scored the most goals, cards, shots …"
+    }
+  ]
+}

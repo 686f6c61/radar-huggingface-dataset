@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "smlflg/ACPcodex",
+  "slug": "smlflg-acpcodex",
+  "author": "smlflg",
+  "url": "https://huggingface.co/smlflg/ACPcodex",
+  "created_at": "2026-09-16T19:29:59.000Z",
+  "updated_at": "2026-09-16T19:30:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dechiffrer une image caché - Graphisme - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-36408027-dechiffrer-une-image-cache",
+      "snippet": "Jan 12, 2020 · Meilleure réponse: Bonjour, stikes? Si votre sujet concerne une image c'est plutôt sur le forum graphisme que vous …"
+    },
+    {
+      "title": "Retrouver moi l'original - Forum Musique / Radio / Clip",
+      "url": "https://forums.commentcamarche.net/forum/affich-35098204-retrouver-moi-l-original",
+      "snippet": "Dec 27, 2017 · Meilleure réponse: Salut je ne connais pas l'original de ton titre mais la voix du chanteur me fais penser a Pet Shop …"
+    },
+    {
+      "title": "Retrouver l'image originale d'une photo modifiée",
+      "url": "https://forums.commentcamarche.net/forum/affich-1671288-retrouver-l-image-originale-apres-avoir-fait-des-modifications",
+      "snippet": "Bonjour, Je voulais savoir si il existait des logiciels qui permettraient de retrouver la photo originale suite à des modifications …"
+    },
+    {
+      "title": "Visualiser une image présente dans le cache",
+      "url": "https://forums.commentcamarche.net/forum/affich-33456131-visualiser-une-image-presente-dans-le-cache",
+      "snippet": "Apr 28, 2016 · Bonjour, comment peut-on visualiser une image présente dans le cache autrement que en hexa ( en image ce serait …"
+    },
+    {
+      "title": "Retrouver l'original d'une photo .jpg modifié - Forum Graphisme",
+      "url": "https://forums.commentcamarche.net/forum/affich-5645602-retrouver-l-original-d-une-photo-jpg-modifie",
+      "snippet": "Bonjour, Voilà mon souci. J'ai retrouve de vieilles photos .jpg que j'aimerais utiliser pour faire un album pour garder des souvenirs. …"
+    }
+  ]
+}

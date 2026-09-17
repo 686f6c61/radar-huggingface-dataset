@@ -1,0 +1,96 @@
+{
+  "schema": 1,
+  "id": "Om22s/alexandria-qwen3-attribution",
+  "slug": "om22s-alexandria-qwen3-attribution",
+  "author": "Om22s",
+  "url": "https://huggingface.co/Om22s/alexandria-qwen3-attribution",
+  "created_at": "2026-09-17T09:20:32.000Z",
+  "updated_at": "2026-09-20T16:09:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gguf",
+    "lora",
+    "speaker-attribution",
+    "audiobook",
+    "qwen3",
+    "rights-reviewed",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3-14B",
+    "base_model:adapter:Qwen/Qwen3-14B",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 20,
+  "trending_score": 0,
+  "parameters": 64225280,
+  "parameters_human": "64.2M",
+  "storage_bytes": 2040787608,
+  "storage_human": "2.0 GB",
+  "base_model": "Qwen/Qwen3-14B, Qwen/Qwen3.6-35B-A3B, Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "speaker attribution (structured JSON, roster given)",
+      "dataset": "Alexandria four-book product fixture (768 paired rows, temperature 0, batch 25, default prompt, reasoning off)",
+      "metric": "accuracy, adapter (base 61.7)",
+      "value": 73.4
+    },
+    {
+      "task": "speaker attribution (structured JSON, roster given)",
+      "dataset": "Alexandria four-book product fixture, reasoning low budget 1024, JSON schema",
+      "metric": "accuracy, adapter (base 66.1)",
+      "value": 74.7
+    },
+    {
+      "task": "speaker attribution (structured JSON, roster given)",
+      "dataset": "PDNC Emma, held out (318 rows, 40 windows), reasoning low budget 1024",
+      "metric": "accuracy, adapter (base 68.9)",
+      "value": 75.8
+    }
+  ],
+  "sources": [
+    {
+      "title": "Cup Cake الكب كيك بتطبيق شوكلاتة وبالخطوات المصورة",
+      "url": "https://forum.uaewomen.net/showthread.php/498165-Cup-Cake-%D8%A7%D9%84%D9%83%D8%A8-%D9%83%D9%8A%D9%83-%D8%A8%D8%AA%D8%B7%D8%A8%D9%8A%D9%82-%D8%B4%D9%88%D9%83%D9%84%D8%A7%D8%AA%D8%A9-%D9%88%D8%A8%D8%A7%D9%84%D8%AE%D8%B7%D9%88%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D8%B5%D9%88%D8%B1%D8%A9",
+      "snippet": "Feb 21, 2010 · سيدات الامارات عالم حواء عالم الطبخ الحلويات Cup Cake الكب كيك بتطبيق شوكلاتة وبالخطوات المصورة النتائج 1 إلى 15 من 613"
+    },
+    {
+      "title": "اسعار مستر بيكر",
+      "url": "https://forum.uaewomen.net/showthread.php/1006341-%D8%A7%D8%B3%D8%B9%D8%A7%D8%B1-%D9%85%D8%B3%D8%AA%D8%B1-%D8%A8%D9%8A%D9%83%D8%B1-%D8%8C-!",
+      "snippet": "Dec 9, 2011 · اسعار مستر بيكر ، ! مرحبا خواتيَ ، شحالكمَ بغيت اسالكم عن اسعار الكيك بـ مستر بيكر و ابا اعرف بكم يحطون الكيكة اللي عليها صور كيك الـ A4 ، !"
+    },
+    {
+      "title": "تعالوا نرتب قائمة مشتريات البيت من الجمعيه",
+      "url": "https://forum.uaewomen.net/showthread.php/564798-%D8%AA%D8%B9%D8%A7%D9%84%D9%88%D8%A7-%D9%86%D8%B1%D8%AA%D8%A8-%D9%82%D8%A7%D8%A6%D9%85%D8%A9-%D9%85%D8%B4%D8%AA%D8%B1%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%A8%D9%8A%D8%AA-%D9%85%D9%86-%D8%A7%D9%84%D8%AC%D9%85%D8%B9%D9%8A%D9%87",
+      "snippet": "Oct 14, 2009 · أنا بصراحة مسوية جدول للأكلات اللي بسويها خلال شهر, وعلى أساسها أخذ الاغراض الخاصة بالمطبخ اما باجي اغراض البيت من منظفات أخذ الحجم العائلي تكفيني 3 شهور مع ان …"
+    },
+    {
+      "title": "حلم دعوة شخص للإسلام",
+      "url": "https://forum.uaewomen.net/showthread.php/1353163-%D8%AD%D9%84%D9%85-%D8%AF%D8%B9%D9%88%D8%A9-%D8%B4%D8%AE%D8%B5-%D9%84%D9%84%D8%A5%D8%B3%D9%84%D8%A7%D9%85",
+      "snippet": "Oct 13, 2017 · رد: حلم دعوة شخص للإسلام تفيدي الناس للدعوة الى الله وعمل الطاعات من خلال مجال قسمك والله اعلم الإنتقال السريعتفسير الاحلام الأعلى أقسام الموقع لوحة التحكم الرسائل …"
+    },
+    {
+      "title": "كـــعكة الشوكولاتــــهـ غيييييير بالإنجليزي وبالعربي :: مترجم ^^ بالخطوات",
+      "url": "https://forum.uaewomen.net/showthread.php/667555-%D9%83%D9%80%D9%80%D9%80%D8%B9%D9%83%D8%A9-%D8%A7%D9%84%D8%B4%D9%88%D9%83%D9%88%D9%84%D8%A7%D8%AA%D9%80%D9%80%D9%80%D9%80%D9%87%D9%80-%D8%BA%D9%8A%D9%8A%D9%8A%D9%8A%D9%8A%D9%8A%D8%B1-%D8%A8%D8%A7%D9%84%D8%A5%D9%86%D8%AC%D9%84%D9%8A%D8%B2%D9%8A-%D9%88%D8%A8%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A-%D9%85%D8%AA%D8%B1%D8%AC%D9%85-%D8%A8%D8%A7%D9%84%D8%AE%D8%B7%D9%88%D8%A7%D8%AA",
+      "snippet": "Mar 9, 2010 · سيدات الامارات عالم حواء عالم الطبخ الحلويات كـــعكة الشوكولاتــــهـ غيييييير بالإنجليزي وبالعربي :: مترجم ^^ بالخطوات : إذهب إلى الصفحة: النتائج 1 إلى 15 من 211"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "montiezgirlzz/JungT_bus_becauseofyouishine",
+  "slug": "montiezgirlzz-jungt_bus_becauseofyouishine",
+  "author": "montiezgirlzz",
+  "url": "https://huggingface.co/montiezgirlzz/JungT_bus_becauseofyouishine",
+  "created_at": "2026-09-17T10:23:30.000Z",
+  "updated_at": "2026-09-17T10:24:07.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 67067824,
+  "storage_human": "67 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ouest-France : toute l'actualité en direct, l'info en continu en France ...",
+      "url": "https://www.ouest-france.fr/",
+      "snippet": "Une : toute l’actualité en direct, soyez informé de toute l’info en continu, en images et en vidéos, dans votre région, en France et dans …"
+    },
+    {
+      "title": "Pays de la Loire : actualités en direct - Ouest-France",
+      "url": "https://www.ouest-france.fr/pays-de-la-loire/",
+      "snippet": "Pays de la Loire : toute l'actualité en direct de la région, soyez informé des événements, de la politique, de la vie des villes et …"
+    },
+    {
+      "title": "Obsèques : chercher un avis de décès en ligne sur Ouest-France",
+      "url": "https://avis-de-deces.ouest-france.fr/",
+      "snippet": "Tous les avis de décès dès 5h du matin en ligne sur Ouest-France. Et les avis d’obsèques plus anciens sont en libre consultation. …"
+    },
+    {
+      "title": "Avis de décès Vendée (85) - Ouest-France",
+      "url": "https://avis-de-deces.ouest-france.fr/obseques/85-vendee/",
+      "snippet": "12 hours ago · [Avis de décès] Tous les avis de décès, de remerciements, de souvenirs du département Vendée disponibles dès 5h …"
+    },
+    {
+      "title": "Mon compte Ouest-France",
+      "url": "https://moncompte.ouest-france.fr/ouestfrance/",
+      "snippet": "Ouest-France Appli Android Ouest-France Appli iOS Ouest-France Courrier de l'Ouest Presse Océan Le Maine-libre Autres sites du …"
+    }
+  ]
+}

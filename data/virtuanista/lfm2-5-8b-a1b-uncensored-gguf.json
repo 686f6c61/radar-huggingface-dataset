@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "virtuanista/LFM2.5-8B-A1B-Uncensored-GGUF",
+  "slug": "virtuanista-lfm2-5-8b-a1b-uncensored-gguf",
+  "author": "virtuanista",
+  "url": "https://huggingface.co/virtuanista/LFM2.5-8B-A1B-Uncensored-GGUF",
+  "created_at": "2026-09-17T11:37:22.000Z",
+  "updated_at": "2026-09-21T22:23:50.000Z",
+  "license": "lfm-open-license-v1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "uncensored",
+    "abliterated",
+    "moe",
+    "hybrid",
+    "llama.cpp",
+    "ollama",
+    "liquid-ai",
+    "lfm2",
+    "text-generation",
+    "base_model:LiquidAI/LFM2.5-8B-A1B",
+    "base_model:quantized:LiquidAI/LFM2.5-8B-A1B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8467856832,
+  "parameters_human": "8.47B",
+  "storage_bytes": 31744187232,
+  "storage_human": "31.7 GB",
+  "base_model": "LiquidAI/LFM2.5-8B-A1B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sign in to GitHub · GitHub",
+      "url": "https://github.com/login",
+      "snippet": "GitHub is where people build software. More than 150 million people use GitHub to discover, fork, and contribute to over 420 million …"
+    },
+    {
+      "title": "Reddit - Dive into anything",
+      "url": "https://www.reddit.com/",
+      "snippet": "Reddit is a network of communities where people can dive into their interests, hobbies and passions. There's a community for …"
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "GitHub - 0xk1h0/ChatGPT_DAN: ChatGPT DAN, Jailbreaks prompt",
+      "url": "https://github.com/0xk1h0/ChatGPT_DAN",
+      "snippet": "ChatGPT DAN, Jailbreaks prompt. Contribute to 0xk1h0/ChatGPT_DAN development by creating an account on GitHub."
+    },
+    {
+      "title": "Download GitHub Desktop",
+      "url": "https://desktop.github.com/download/",
+      "snippet": "Simple collaboration from your desktop Download GitHub Desktop Focus on what matters instead of fighting with Git. Whether you're …"
+    }
+  ]
+}

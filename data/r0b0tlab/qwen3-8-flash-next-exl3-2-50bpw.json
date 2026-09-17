@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "r0b0tlab/Qwen3.8-Flash-Next-EXL3-2.50bpw",
+  "slug": "r0b0tlab-qwen3-8-flash-next-exl3-2-50bpw",
+  "author": "r0b0tlab",
+  "url": "https://huggingface.co/r0b0tlab/Qwen3.8-Flash-Next-EXL3-2.50bpw",
+  "created_at": "2026-09-17T10:17:19.000Z",
+  "updated_at": "2026-09-17T12:32:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "exllamav3",
+  "languages": [],
+  "tags": [
+    "exllamav3",
+    "safetensors",
+    "qwen4_exp",
+    "exl3",
+    "quantization",
+    "2-bit",
+    "moe",
+    "mtp",
+    "rtx3090",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 22269378048,
+  "parameters_human": "22.27B",
+  "storage_bytes": 64561683211,
+  "storage_human": "64.6 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Comedy Shows London - What's On - Big Belly Comedy Shows",
+      "url": "https://bigbellycomedy.club/whats-on/",
+      "snippet": "1 day ago · Comedy Shows in London featuring top TV & circuit comedians. Award Winning Comedy Show event night of the week."
+    },
+    {
+      "title": "Comedy on Friday in London | Nightlondon",
+      "url": "https://nightlondon.co.uk/comedy-friday-london",
+      "snippet": "The Best Comedy Show London Has To Offer Friday Night Comedy in Camden Comedy Freaks brings ... together the absolute best …"
+    },
+    {
+      "title": "Comedy Shows in London | Comedy Club London | Comedy Carnival",
+      "url": "https://comedycarnival.co.uk/events/",
+      "snippet": "Comedy shows in London on Thursday, Friday & Saturday. Award-winning stand up at one of the best comedy clubs in London, …"
+    },
+    {
+      "title": "Friday Comedy Club London | Stand Up Shows Covent Garden | Comedy …",
+      "url": "https://comedycarnival.co.uk/friday/",
+      "snippet": "Friday night comedy club in London every week. Award-winning international comedians at Comedy Carnival Covent Garden, Central …"
+    },
+    {
+      "title": "Best Comedy Clubs In London - DesignMyNight",
+      "url": "https://www.designmynight.com/london/whats-on/comedy-clubs-london",
+      "snippet": "Sep 7, 2026 · Discover London's best comedy clubs with our mega guide. From underground comedy nights that showcase the …"
+    }
+  ]
+}

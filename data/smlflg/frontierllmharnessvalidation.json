@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "smlflg/FrontierLLMHarnessValidation",
+  "slug": "smlflg-frontierllmharnessvalidation",
+  "author": "smlflg",
+  "url": "https://huggingface.co/smlflg/FrontierLLMHarnessValidation",
+  "created_at": "2026-09-16T19:21:16.000Z",
+  "updated_at": "2026-09-16T19:21:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎",
+      "url": "https://www.zhihu.com/tardis/jm/art/2040110914679136535",
+      "snippet": "知乎，有趣、有料、有态度的内容社区。开放、真实、专业的社区氛围，汇集各行各业亲历者、内行人、领域专家。上知乎，找答案、 …"
+    },
+    {
+      "title": "acrobat - Adobe Reader Command Line Reference - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/619158/adobe-reader-command-line-reference",
+      "snippet": "Mar 6, 2009 · Is there any official command line (switches) reference for the different versions of Adobe (formerly Acrobat) Reader? I …"
+    },
+    {
+      "title": "How to insert a SVG file in a PDF document? - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/3360641/how-to-insert-a-svg-file-in-a-pdf-document",
+      "snippet": "Jul 29, 2010 · I'm trying use embeddSVG.py to embed an SVG in a PDF, but Adobe Acrobat Reader doesn't show svg content in my …"
+    },
+    {
+      "title": "使用adobe acrobat DC 合成pdf之后页面大小不一样,如何调整?",
+      "url": "https://www.zhihu.com/question/515414516",
+      "snippet": "Feb 8, 2022 · 这个问题首先我们要明白原因，这是因为你原本的pdf文件或者jpg等文件原本的尺寸不一样，所以你把放到一个页面打印 …"
+    },
+    {
+      "title": "How can one open Adobe Reader with VBScript? - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/3298683/how-can-one-open-adobe-reader-with-vbscript",
+      "snippet": "Jan 29, 2014 · The OLE automation interface is only provided by Adobe Acrobat, not Adobe Reader. If you have Adobe Acrobat …"
+    }
+  ]
+}

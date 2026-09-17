@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "myx160/sft_eyeglasses250_pi05_ppu8c_mb48_gbs384_s20000_from100_s4000_v2_step16000",
+  "slug": "myx160-sft_eyeglasses250_pi05_ppu8c_mb48_gbs384_s20000_from100_s4000_v2_step16000",
+  "author": "myx160",
+  "url": "https://huggingface.co/myx160/sft_eyeglasses250_pi05_ppu8c_mb48_gbs384_s20000_from100_s4000_v2_step16000",
+  "created_at": "2026-09-17T11:13:29.000Z",
+  "updated_at": "2026-09-17T11:44:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "robotics",
+    "vla",
+    "piper",
+    "lerobot",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 34143707808,
+  "storage_human": "34.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ALL Accor | Hotels Stays & Exclusive Deals",
+      "url": "https://all.accor.com/a/en.html?msockid=0295a015d7486bc9061fb7c2d6686af4",
+      "snippet": "Discover the ultimate hotel experience with ALL Accor. Explore our global portfolio of exceptional hotels and resorts, enjoy exclusive …"
+    },
+    {
+      "title": "Accor Group",
+      "url": "https://group.accor.com/en",
+      "snippet": "Accor is a world-leading hospitality group offering stays and experiences across more than 110 countries with over 5,800 hotels and …"
+    },
+    {
+      "title": "Accor - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Accor",
+      "snippet": "Accor S.A. (French pronunciation: [akɔʁ]) is a French multinational hospitality company which owns, manages and franchises hotels, …"
+    },
+    {
+      "title": "Our Hotel Brands | Accor Group",
+      "url": "https://group.accor.com/en/brands-and-experiences/our-hotel-brands",
+      "snippet": "Our hotel brands are at the core of a unique ecosystem of services and hospitality experiences with ALL Accor – our booking platform …"
+    },
+    {
+      "title": "Discover All Our Hotels - Accor Group",
+      "url": "https://all.accor.com/a/en/brands.html?msockid=0295a015d7486bc9061fb7c2d6686af4",
+      "snippet": "Choose from high-end luxury to budget hotels with Accor Hotels. Explore our wide range & book the perfect hotel for your business …"
+    }
+  ]
+}

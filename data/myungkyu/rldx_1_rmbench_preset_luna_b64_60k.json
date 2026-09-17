@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Myungkyu/rldx_1_rmbench_preset_luna_b64_60k",
+  "slug": "myungkyu-rldx_1_rmbench_preset_luna_b64_60k",
+  "author": "Myungkyu",
+  "url": "https://huggingface.co/Myungkyu/rldx_1_rmbench_preset_luna_b64_60k",
+  "created_at": "2026-09-17T10:52:38.000Z",
+  "updated_at": "2026-09-17T10:53:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "RLDX-1",
+    "robotics",
+    "vla",
+    "rmbench",
+    "dataset:Myungkyu/RMBench-preset-luna",
+    "base_model:RLWRLD/RLDX-1-PT",
+    "base_model:finetune:RLWRLD/RLDX-1-PT",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6912896320,
+  "parameters_human": "6.91B",
+  "storage_bytes": 13825892072,
+  "storage_human": "13.8 GB",
+  "base_model": "RLWRLD/RLDX-1-PT",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Evolution Omega 3 forte EPA 400/DHA 300, Kapseln - Shop Apotheke",
+      "url": "https://www.shop-apotheke.com/arzneimittel/upmZGW9U4/evolution-omega-3-forte-epa-400-dha-300-kapseln.htm?msockid=151743c5ca536f59288d5412cb0d6e67",
+      "snippet": "Evolution Omega 3 forte EPA 400/DHA 300, Kapseln 90 St für nur € 53,90 bei Ihrer Online Apotheke für Deutschland kaufen."
+    },
+    {
+      "title": "Omega-3 1000 mg EPA 400/DHA 300 90 St - DocMorris",
+      "url": "https://www.docmorris.de/omega3-1000-mg-epa-400dha-300/14347747?msockid=151743c5ca536f59288d5412cb0d6e67",
+      "snippet": "Die Einnahme von Omega-3 1000 mg bietet zahlreiche Vorteile, darunter die Unterstützung einer normalen Herzfunktion durch die …"
+    },
+    {
+      "title": "Vitamaze OMEGA-3 1000 mg EPA 400/DHA 300 hochdosiert 90 stk - apotheke…",
+      "url": "https://www.apotheke.de/vitamaze-omega-3-1000-mg-epa-400-dha-300-hochdosiert-90stk-pzn-14347747",
+      "snippet": "Vitamaze OMEGA-3 1000 mg EPA 400/DHA 300 hochdosiert können in Ihrer Versandapotheke erworben werden. Omega-3 Kapseln …"
+    },
+    {
+      "title": "Omega 3 Kapseln Hochdosiert - 300 Kapseln - 1000mg EPA & 500mg DHA …",
+      "url": "https://www.shop-apotheke.com/arzneimittel/upmRYTZ9Y/wehle-sports-omega-3-kapseln.htm?msockid=151743c5ca536f59288d5412cb0d6e67",
+      "snippet": "Omega 3 Kapseln Hochdosiert - 300 Kapseln - 1000mg EPA & 500mg DHA pro Tagesdosis - Testsieger 300 St für nur € 48,95 bei …"
+    },
+    {
+      "title": "Omega-3 1000 mg EPA 400 / DHA 300 hochdosiert Kapseln , 90 St",
+      "url": "https://www.aponeo.de/14347747-omega-3-1000-mg-epa-400-dha-300-hochdosiert-kaps.html",
+      "snippet": "Die beiden Säuren EPA und DHA tragen zu einer normalen Herzfunktion bei und DHA trägt zudem zur Erhaltung der normalen …"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "bitmanagerai/Qwen3TTS-SFT-v3.4-by-Nikita",
+  "slug": "bitmanagerai-qwen3tts-sft-v3-4-by-nikita",
+  "author": "bitmanagerai",
+  "url": "https://huggingface.co/bitmanagerai/Qwen3TTS-SFT-v3.4-by-Nikita",
+  "created_at": "2026-09-16T06:09:34.000Z",
+  "updated_at": "2026-09-17T09:14:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "qwen-tts",
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "qwen-tts",
+    "safetensors",
+    "qwen3_tts",
+    "ru",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": 1928677440,
+  "parameters_human": "1.93B",
+  "storage_bytes": 16123372304,
+  "storage_human": "16.1 GB",
+  "base_model": "bitmanagerai/Qwen3TTS-GRPO-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Stadio del Boca Juniors - Orari, prezzi e ubicazione - Scopri Buenos Aires",
+      "url": "https://www.scopribuenosaires.com/stadio-boca-juniors",
+      "snippet": "Ubicato nel mitico quartiere de La Boca, il colorato Stadio Alberto J. Armando, conosciuto come 'La Bombonera', è lo stadio del Club …"
+    },
+    {
+      "title": "Monserrat - Il più antico dei quartieri di Buenos Aires",
+      "url": "https://www.scopribuenosaires.com/monserrat",
+      "snippet": "Monserrat è la zona di Buenos Aires in cui si stanziarono i primi abitanti della città. La sua strada più importante è la Avenida de Mayo."
+    }
+  ]
+}

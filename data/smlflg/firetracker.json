@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "smlflg/FireTracker",
+  "slug": "smlflg-firetracker",
+  "author": "smlflg",
+  "url": "https://huggingface.co/smlflg/FireTracker",
+  "created_at": "2026-09-16T19:43:46.000Z",
+  "updated_at": "2026-09-16T19:43:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube TV Help",
+      "url": "https://support.google.com/youtubetv/?hl=en",
+      "snippet": "Official YouTube TV Help Center where you can find tips and tutorials on using YouTube TV and other answers to frequently asked …"
+    },
+    {
+      "title": "Правила сообщества YouTube - Cправка - YouTube",
+      "url": "https://support.google.com/youtube/answer/9288567?hl=ru",
+      "snippet": "Используя YouTube, вы становитесь частью огромного сообщества авторов и зрителей со всего мира. Чтобы всем в нем …"
+    },
+    {
+      "title": "Włączanie i wyłączanie trybu ograniczonego dostępu w YouTube",
+      "url": "https://support.google.com/youtube/answer/174084?hl=pl&co=GENIE.Platform%3DDesktop",
+      "snippet": "Włączanie i wyłączanie trybu ograniczonego dostępu Zasubskrybuj kanał YouTube Viewers, gdzie znajdziesz najnowsze …"
+    },
+    {
+      "title": "YouTube Community - Google Help",
+      "url": "https://support.google.com/youtube/community?hl=en",
+      "snippet": "YouTube Community Guidelines A: Are you told that your email is NOT \"associated with an active Google Account\" when appealing?"
+    },
+    {
+      "title": "Share videos and channels - Computer - YouTube Help",
+      "url": "https://support.google.com/youtube/answer/57741?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "Share YouTube videos Start watching a video on youtube.com. Under the video, click Share . A panel will open, presenting different …"
+    }
+  ]
+}

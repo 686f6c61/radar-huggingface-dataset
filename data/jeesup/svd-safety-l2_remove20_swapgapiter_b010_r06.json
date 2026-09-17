@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l2_remove20_swapgapiter_b010_r06",
+  "slug": "jeesup-svd-safety-l2_remove20_swapgapiter_b010_r06",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l2_remove20_swapgapiter_b010_r06",
+  "created_at": "2026-09-17T11:55:49.000Z",
+  "updated_at": "2026-09-17T12:23:53.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama2",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-2-7b-chat-hf",
+    "base_model:finetune:meta-llama/Llama-2-7b-chat-hf",
+    "license:llama2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13477364771,
+  "storage_human": "13.5 GB",
+  "base_model": "meta-llama/Llama-2-7b-chat-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "2CRSI Cours Action AL2SI, Cotation Bourse Euronext Paris - Boursorama",
+      "url": "https://www.boursorama.com/cours/1rPAL2SI/",
+      "snippet": "Le cours de l'action 2CRSI AL2SI en temps réel sur Boursorama : historique de la cotation sur Euronext Paris, graphique, actualités, …"
+    },
+    {
+      "title": "Action 2CRSi | Cours AL2SI Bourse Euronext Paris - Zonebourse",
+      "url": "https://www.zonebourse.com/cours/action/2CRSI-44358422/",
+      "snippet": "2CRSi: Cours de bourse, graphiques, cotations, conseils boursiers, données financières, analyses et actualités en temps réel Action …"
+    },
+    {
+      "title": "Cours de l'action 2crsi en bourse",
+      "url": "https://www.abcbourse.com/cotation/AL2SIp",
+      "snippet": "Consultez le cours de l'action 2crsi en bourse : cotation en direct à Paris, graphiques, actualités financières et données clés de la …"
+    },
+    {
+      "title": "Cours action 2CRSI, cotation Bourse en direct AL2SI - FR0013341781 ...",
+      "url": "https://www.boursier.com/actions/cours/2crsi-FR0013341781,FR.html",
+      "snippet": "Consultez le cours de l'action 2CRSI en direct (intraday). Accédez aux dernières transactions de l'action AL2SI - FR0013341781, au …"
+    },
+    {
+      "title": "2CRSi: Performances & Cotations, Cours AL2SI Bourse Euronext Paris",
+      "url": "https://www.zonebourse.com/cours/action/2CRSI-44358422/cotations/",
+      "snippet": "2CRSi: Temps réel, graphique intraday 5 jours, variations, volumes, indicateurs analyse technique et historiques des transactions …"
+    }
+  ]
+}

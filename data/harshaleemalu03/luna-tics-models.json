@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "harshaleemalu03/Luna-tics-models",
+  "slug": "harshaleemalu03-luna-tics-models",
+  "author": "harshaleemalu03",
+  "url": "https://huggingface.co/harshaleemalu03/Luna-tics-models",
+  "created_at": "2026-09-16T19:06:45.000Z",
+  "updated_at": "2026-09-16T19:08:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1334151481,
+  "storage_human": "1.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "A',B',C'上的一撇是怎么打出来的_百度知道",
+      "url": "https://zhidao.baidu.com/question/328544157.html",
+      "snippet": "Oct 11, 2011 · A',B',C'上的一撇是怎么打出来的键盘的双引号键，直接按下，就是' 注意：需要在西文状态下"
+    },
+    {
+      "title": "摄氏度符号 ℃怎么写？ - 百度知道",
+      "url": "https://zhidao.baidu.com/question/2274970883947799108.html",
+      "snippet": "摄氏度符号 ℃怎么写？就和打出的字写法是一样的：℃。先在左上角写一个小圈，再在右边写个“C”字。摄氏度是温标单位，摄氏温标 …"
+    },
+    {
+      "title": "显卡日报 - 知乎",
+      "url": "https://www.zhihu.com/column/c_1433942042578157568",
+      "snippet": "欢迎来到显卡日报，先来看看显卡大盘，每晚11点不准时更新。"
+    },
+    {
+      "title": "c#中 用 new 分配内存后，怎么把他释放掉？-CSDN社区",
+      "url": "https://bbs.csdn.net/topics/40464598",
+      "snippet": "Dec 26, 2003 · 以下内容是CSDN社区关于c#中 用 new 分配内存后，怎么把他释放掉？相关内容，如果想了解更多关于C#社区其他内 …"
+    }
+  ]
+}

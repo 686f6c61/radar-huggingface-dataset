@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "siyah1/malayalam-moe-grpo",
+  "slug": "siyah1-malayalam-moe-grpo",
+  "author": "siyah1",
+  "url": "https://huggingface.co/siyah1/malayalam-moe-grpo",
+  "created_at": "2026-09-17T06:14:39.000Z",
+  "updated_at": "2026-09-21T17:50:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "malayalam_moe",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": 371480832,
+  "parameters_human": "371.5M",
+  "storage_bytes": 918371059534,
+  "storage_human": "918.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Explore the Best Freesteam Art | DeviantArt",
+      "url": "https://www.deviantart.com/tag/freesteam",
+      "snippet": "Want to discover art related to freesteam? Check out amazing freesteam artwork on DeviantArt. Get inspired by our community of …"
+    },
+    {
+      "title": "Free Steam Artwork by BNartwork on DeviantArt",
+      "url": "https://www.deviantart.com/bnartwork/gallery/88427517/free-steam-artwork",
+      "snippet": "Browse bnartwork's Free Steam Artwork collection on DeviantArt. 23 works of art."
+    },
+    {
+      "title": "SteamProfileDesigns on DeviantArt",
+      "url": "https://www.deviantart.com/steamprofiledesigns",
+      "snippet": "Since the Steam Showcase Designer community grew, it is time to get all the awesome designs on deviantart together in one …"
+    },
+    {
+      "title": "FREE ART [Steam Artwork) by Exs1te on DeviantArt",
+      "url": "https://www.deviantart.com/exs1te/art/FREE-ART-Steam-Artwork-1000569862",
+      "snippet": "Dec 9, 2023 · FREE ART [Steam Artwork) — artwork by Exs1te on DeviantArt. Published: 2023-12-09 · Likes: 65 · Views: 97083 · …"
+    },
+    {
+      "title": "[Free]Steam Artwork Showcase by Klex4 on DeviantArt",
+      "url": "https://www.deviantart.com/klex4/art/Free-Steam-Artwork-Showcase-896678716",
+      "snippet": "Nov 1, 2021 · Hello everyone I made this artwork for free to use. Everyone can use it without asking about any permission ^^ If you …"
+    }
+  ]
+}

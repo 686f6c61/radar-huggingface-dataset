@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "nikeshad2017/safecare-ai",
+  "slug": "nikeshad2017-safecare-ai",
+  "author": "nikeshad2017",
+  "url": "https://huggingface.co/nikeshad2017/safecare-ai",
+  "created_at": "2026-09-17T11:31:30.000Z",
+  "updated_at": "2026-09-17T11:31:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 138943688,
+  "storage_human": "139 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EDITSPLINE (commande) - BricsCAD Lite & Pro | BricsCAD Help Center",
+      "url": "https://help.bricsys.com/fr-fr/document/command-reference/s/splinedit-command",
+      "snippet": "Convertit la spline en polyligne. La précision détermine dans quelle mesure la polyligne résultante correspond à la spline. Remarque : …"
+    },
+    {
+      "title": "Modification des polylignes - BricsCAD Lite & Pro | Centre d'aide BricsCAD",
+      "url": "https://help.bricsys.com/fr-fr/document/bricscad/modifying-entities/editing-polylines",
+      "snippet": "Utilisez l'option Redresser pour restaurer la polyligne d'origine. La variable système SPLINESEGS (Segments splines) contrôle le …"
+    },
+    {
+      "title": "BricsCAD How To Convert Spline To Polyline - YouTube",
+      "url": "https://www.youtube.com/watch?v=QGNdSyIP1ew",
+      "snippet": "Mar 19, 2024 · Learn how to convert a spline to a polyline in BricsCAD with easy step-by-step instructions. Perfect for CAD users …"
+    },
+    {
+      "title": "BricsCAD - Convert Spline in Polyline - YouTube",
+      "url": "https://www.youtube.com/watch?v=Rh1PMlx_mtw",
+      "snippet": "Dec 14, 2022 · Use BricsCAD tools to easily convert a spline in a polyline!"
+    },
+    {
+      "title": "Spatial Manager for BricsCAD - Outils de polylignes",
+      "url": "https://www.spatialmanager.com/fr/spm-forbricscad/features/geometry-tools/polyline-tools/",
+      "snippet": "Convertit des géométries courbes complexes — telles que des arcs, des splines et des cercles — en objets polylignes. Cette …"
+    }
+  ]
+}

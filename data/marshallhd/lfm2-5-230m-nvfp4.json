@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "MarshallHD/LFM2.5-230M-NVFP4",
+  "slug": "marshallhd-lfm2-5-230m-nvfp4",
+  "author": "MarshallHD",
+  "url": "https://huggingface.co/MarshallHD/LFM2.5-230M-NVFP4",
+  "created_at": "2026-06-27T15:41:30.000Z",
+  "updated_at": "2026-09-16T23:53:01.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "Model Optimizer",
+  "languages": [
+    "en",
+    "ar",
+    "zh",
+    "fr",
+    "de",
+    "ja",
+    "ko",
+    "es",
+    "pt",
+    "it"
+  ],
+  "tags": [
+    "Model Optimizer",
+    "safetensors",
+    "lfm2",
+    "liquid",
+    "lfm2.5",
+    "edge",
+    "modelopt",
+    "nvfp4",
+    "fp4",
+    "quantized",
+    "4-bit precision",
+    "vllm",
+    "sglang",
+    "text-generation",
+    "conversational",
+    "en",
+    "ar",
+    "zh",
+    "fr",
+    "de",
+    "ja",
+    "ko",
+    "es",
+    "pt",
+    "it",
+    "base_model:LiquidAI/LFM2.5-230M",
+    "base_model:quantized:LiquidAI/LFM2.5-230M",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 308,
+  "trending_score": 0,
+  "parameters": 202168064,
+  "parameters_human": "202.2M",
+  "storage_bytes": 726634360,
+  "storage_human": "727 MB",
+  "base_model": "LiquidAI/LFM2.5-230M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Suchergebnis Auf Amazon.de Für: Soffitte Led 36mm",
+      "url": "https://www.amazon.de/soffitte-led-36mm/s?k=soffitte+led+36mm",
+      "snippet": "1-16 von 114 Ergebnissen oder Vorschlägen für \"soffitte led 36mm\" Ergebnisse Erfahre mehr über diese Ergebnisse. Auf jeder …"
+    },
+    {
+      "title": "Suchergebnis Auf Amazon.de Für: Led Birne 36 Mm",
+      "url": "https://www.amazon.de/led-birne-36-mm/s?k=led+birne+36+mm",
+      "snippet": "1-16 von 70 Ergebnissen oder Vorschlägen für \"led birne 36 mm\" Ergebnisse Erfahre mehr über diese Ergebnisse. Auf jeder …"
+    },
+    {
+      "title": "LED-Soffitten in 36mm von Letronix",
+      "url": "https://www.blauertacho4u.de/nstvzo/LED-Leuchtmittel/12V-LED-Leuchtmittel/36mm-LED-Soffitte-1024/",
+      "snippet": "Diverse LED-Soffitten in 36mm von Letronix in weiß, blau, rot, grün oder gelb. Perfekt für Ihren Innenraum."
+    },
+    {
+      "title": "Soffitte Led 36mm - eBay.de",
+      "url": "https://www.ebay.de/shop/soffitte-led-36mm?_nkw=soffitte+led+36mm&msockid=290f2cc1bd706eed020b3b16bc846f2d",
+      "snippet": "Große Auswahl an Soffitte Led 36mm entdecken. Top-Marken, exklusive Angebote und unschlagbare Preise bei eBay.de. Jetzt …"
+    },
+    {
+      "title": "C5w Led 36mm - eBay.de",
+      "url": "https://www.ebay.de/shop/c5w-led-36mm?_nkw=c5w+led+36mm&msockid=290f2cc1bd706eed020b3b16bc846f2d",
+      "snippet": "Große Auswahl an C5w Led 36mm entdecken. Top-Marken, exklusive Angebote und unschlagbare Preise bei eBay.de. Jetzt …"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "otelk/mt-error-detect-correct",
+  "slug": "otelk-mt-error-detect-correct",
+  "author": "otelk",
+  "url": "https://huggingface.co/otelk/mt-error-detect-correct",
+  "created_at": "2026-09-16T01:44:11.000Z",
+  "updated_at": "2026-09-17T01:28:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "machine-translation",
+    "error-detection",
+    "error-correction",
+    "lora",
+    "qwen3",
+    "text-generation",
+    "en",
+    "de",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 59448505355,
+  "storage_human": "59.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Stock Market Data - US Markets, World Markets, and Stock Quotes | CNN",
+      "url": "https://www.cnn.com/markets",
+      "snippet": "1 day ago · Stock market data coverage from CNN. View US markets, world markets, after hours trading, quotes, and other important …"
+    },
+    {
+      "title": "Pre-market Stock Trading | CNN",
+      "url": "https://www.cnn.com/markets/premarkets",
+      "snippet": "Pre-market stock trading coverage from CNN. View pre-market trading, including futures information for the S&P 500, Nasdaq …"
+    },
+    {
+      "title": "Stock market news today: Dow and S&P 500 updates | CNN Business",
+      "url": "https://www.cnn.com/business/live-news/stocks-market-today-inflation-cpi",
+      "snippet": "Here’s the latest news on what stocks are doing."
+    },
+    {
+      "title": "Stock market today: Live updates | CNN Business",
+      "url": "https://www.cnn.com/business/live-news/stock-market-news-today-031020/",
+      "snippet": "The Dow’s rally fades a day after novel coronavirus fears and an oil price war sparked a worldwide panic."
+    },
+    {
+      "title": "DJT Stock Quote Price and Forecast | CNN",
+      "url": "https://www.cnn.com/markets/stocks/DJT",
+      "snippet": "View Trump Media & Technology Group Corp. DJT stock quote prices, financial information, real-time forecasts, and company news …"
+    }
+  ]
+}

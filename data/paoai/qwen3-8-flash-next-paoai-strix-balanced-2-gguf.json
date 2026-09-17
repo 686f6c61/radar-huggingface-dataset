@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "PaoAI/Qwen3.8-Flash-Next-PaoAI-STRIX-BALANCED-2-GGUF",
+  "slug": "paoai-qwen3-8-flash-next-paoai-strix-balanced-2-gguf",
+  "author": "PaoAI",
+  "url": "https://huggingface.co/PaoAI/Qwen3.8-Flash-Next-PaoAI-STRIX-BALANCED-2-GGUF",
+  "created_at": "2026-09-15T12:24:04.000Z",
+  "updated_at": "2026-09-20T06:22:32.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "quantized",
+    "imatrix",
+    "strix-halo",
+    "gfx1151",
+    "qwen3",
+    "moe",
+    "mixture-of-experts",
+    "speculative-decoding",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": 176943899520,
+  "parameters_human": "176.94B",
+  "storage_bytes": 92776495790,
+  "storage_human": "92.8 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Best Sushi Restaurants in Seattle | Eater Seattle",
+      "url": "https://seattle.eater.com/maps/best-sushi-restaurants-seattle",
+      "snippet": "Feb 12, 2025 · Where to get casual weeknight rolls and world-class omakase at Seattle’s best sushi counters."
+    },
+    {
+      "title": "The 10 Best Sushi Restaurants In Seattle",
+      "url": "https://secretseattle.co/best-sushi-restaurants-in-seattle/",
+      "snippet": "Nov 18, 2024 · Looking for sushi in Seattle? Whether you’re on the hunt for a casual sushi lunch that won’t break the bank or you’re …"
+    },
+    {
+      "title": "Seattle's Best Sushi",
+      "url": "https://seattlesecrets.org/best-sushi-in-seattle",
+      "snippet": "May 8, 2026 · When it comes to sushi, Seattle is a haven for both traditionalists and adventurous eaters alike. Having personally …"
+    },
+    {
+      "title": "The Best Sushi Restaurants In Seattle",
+      "url": "https://www.theinfatuation.com/seattle/guides/best-sushi-in-seattle",
+      "snippet": "Aug 20, 2026 · From weekly takeout spots to special occasion omakase experiences, here are the 21 best sushi restaurants in Seattle."
+    },
+    {
+      "title": "The Best Sushi Restaurants in Seattle",
+      "url": "https://www.seattlemet.com/eat-and-drink/the-best-sushi-in-seattle-japanese-restaurants-bellevue-edmonds",
+      "snippet": "Aug 18, 2026 · From Takai by Kashiba to Village Sushi, these spots serve up stunning sashimi, creative rolls, and impeccable nigiri."
+    }
+  ]
+}

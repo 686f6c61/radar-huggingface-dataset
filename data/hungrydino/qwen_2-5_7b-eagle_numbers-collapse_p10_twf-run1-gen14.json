@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "HungryDino/qwen_2.5_7b-eagle_numbers-collapse_p10_twf-run1-gen14",
+  "slug": "hungrydino-qwen_2-5_7b-eagle_numbers-collapse_p10_twf-run1-gen14",
+  "author": "HungryDino",
+  "url": "https://huggingface.co/HungryDino/qwen_2.5_7b-eagle_numbers-collapse_p10_twf-run1-gen14",
+  "created_at": "2026-09-16T19:32:57.000Z",
+  "updated_at": "2026-09-16T19:33:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "trl",
+    "en",
+    "base_model:unsloth/Qwen2.5-7B-Instruct",
+    "base_model:finetune:unsloth/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 92214090,
+  "storage_human": "92 MB",
+  "base_model": "unsloth/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "أسماء أولاد إسلامية 2026 نادرة وحلوة ومعانيها — 319 اسماً",
+      "url": "https://www.al-adkar.com/names/boys",
+      "snippet": "أسماء أولاد إسلامية 2026 نادرة وحلوة ومعانيها وأصلها: 319 اسماً من القرآن وأسماء الأنبياء والصحابة، مرتبة بالحروف مع صفحة لكل اسم ومعناه."
+    },
+    {
+      "title": "أجمل أسماء ذكور اسلامية نادرة مع معانيها - برو عرب",
+      "url": "https://proarab.com/%d8%a3%d8%b3%d9%85%d8%a7%d8%a1-%d8%b0%d9%83%d9%88%d8%b1-%d8%a7%d8%b3%d9%84%d8%a7%d9%85%d9%8a%d8%a9-%d9%86%d8%a7%d8%af%d8%b1%d8%a9/",
+      "snippet": "Dec 29, 2024 · تسعى الشعوب الإسلامية لأن تتحفظ على استمرارية الدين الإسلامي حتى في اختيار أسماء المواليد الذكور لديهم، لذا إليك تجميعية من أسماء ذكور اسلامية نادرة وجميلة. ساجد: ويعني …"
+    },
+    {
+      "title": "أسماء أولاد من القرآن والصحابة 2026 — أسماء ذكور إسلامية نادرة وقديمة",
+      "url": "https://hisab-alhaml.com/blog/boy-names-quran",
+      "snippet": "الأسماء المأخوذة من الأنبياء والصحابة ترسم لطفلك مساراً مباركاً، وتربطه بأعلام الإسلام وعظمائه. هذا الدليل الشامل يضم 150 اسم ولد إسلامي من القرآن والسنة، مع المعاني وأصولها."
+    },
+    {
+      "title": "اجمل 73+ أسماء ذكور إسلامية نادرة إسلاميةومعانيها من القرآن",
+      "url": "https://www.arabdit.com/%d8%a7%d8%ac%d9%85%d9%84-73-%d8%a3%d8%b3%d9%85%d8%a7%d8%a1-%d8%b0%d9%83%d9%88%d8%b1-%d8%a5%d8%b3%d9%84%d8%a7%d9%85%d9%8a%d8%a9-%d9%86%d8%a7%d8%af%d8%b1%d8%a9-%d8%a5%d8%b3%d9%84%d8%a7%d9%85%d9%8a/",
+      "snippet": "اجمل 73+ أسماء ذكور إسلامية نادرة إسلاميةومعانيها من القرآن مع شرح معانيها لتختار اسماً مميزاً لطفلك يعكس قيم الإسلام وجمال لغته. اختيار اسم للمولود هو من القرارات المهمة التي تواجه …"
+    },
+    {
+      "title": "أسماء أولاد إسلامية ومعانيها.. اختر الأجمل لمولودك - مجلة هي",
+      "url": "https://www.hiamag.com/%D9%85%D9%86%D9%88%D8%B9%D8%A7%D8%AA/1796580-%D8%A3%D8%AC%D9%85%D9%84-%D8%A3%D8%B3%D9%85%D8%A7%D8%A1-%D8%A3%D9%88%D9%84%D8%A7%D8%AF-%D8%A5%D8%B3%D9%84%D8%A7%D9%85%D9%8A%D8%A9-%D9%88%D9%85%D8%B9%D8%A7%D9%86%D9%8A%D9%87%D8%A7-%D8%AF%D9%84%D9%8A%D9%84-%D8%B4%D8%A7%D9%85%D9%84-%D9%84%D9%85%D9%88%D9%84%D9%88%D8%AF%D9%83-%D8%A7%D9%84%D8%AC%D8%AF%D9%8A%D8%AF",
+      "snippet": "تتضمن أسماء الأولاد المستوحاة من القرآن الكريم أسماء الأنبياء والرسل، وشخصيات قرآنية، وأسماء ذات دلالات إيمانية راقية. من أبرزها: محمد، أحمد، إبراهيم، يوسف، موسى، عيسى، نوح، زكريا، …"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "OneScience-Group/AI-GAMFS",
+  "slug": "onescience-group-ai-gamfs",
+  "author": "OneScience-Group",
+  "url": "https://huggingface.co/OneScience-Group/AI-GAMFS",
+  "created_at": "2026-09-17T11:08:00.000Z",
+  "updated_at": "2026-09-17T11:08:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "ai_gamfs",
+    "OneScience",
+    "Earth Science",
+    "Aerosol Forecasting",
+    "Air Quality",
+    "Vision Transformer",
+    "Relay Forecasting",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Übersetzer",
+      "url": "https://translate.google.com/?hl=de",
+      "snippet": "Mit diesem kostenlosen Google-Dienst lassen sich Wörter, Sätze und Webseiten sofort zwischen Deutsch und über 100 Sprachen …"
+    },
+    {
+      "title": "Google Übersetzer – dein persönlicher Übersetzer auf deinem …",
+      "url": "https://translate.google.com/intl/de/about/",
+      "snippet": "Hier erfährst du, wie du mit Google Übersetzer Text, gesprochene Sprache, Bilder, Dokumente, Websites und vieles mehr …"
+    }
+  ]
+}

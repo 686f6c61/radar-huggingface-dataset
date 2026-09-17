@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "smlflg/HAI-Relay",
+  "slug": "smlflg-hai-relay",
+  "author": "smlflg",
+  "url": "https://huggingface.co/smlflg/HAI-Relay",
+  "created_at": "2026-09-16T19:08:59.000Z",
+  "updated_at": "2026-09-16T19:09:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Support Home | Dell US",
+      "url": "https://www.dell.com/support/home/en-us?msockid=349886b542e36ad51c72916343c46b46",
+      "snippet": "Get support for your Dell product with free diagnostic tests, drivers, downloads, how-to articles, videos, FAQs and community forums. …"
+    },
+    {
+      "title": "Computers, Monitors & Technology Solutions | Dell UK",
+      "url": "https://www.dell.com/en-uk?msockid=349886b542e36ad51c72916343c46b46",
+      "snippet": "Dell provides technology solutions, services & support. Buy Laptops, Touch Screen PCs, Desktops, Servers, Storage, Monitors, …"
+    },
+    {
+      "title": "F10 key orange light turned on - HP Support Community",
+      "url": "https://h30434.www3.hp.com/t5/Notebook-Audio/F10-key-orange-light-turned-on/td-p/6785879",
+      "snippet": "Aug 9, 2018 · Hello there! For a while my F10 key orange light is turned on and I don't know how to turn it off.Can you help me, please?"
+    },
+    {
+      "title": "where to find backlight keyboard driver? - HP Support Community",
+      "url": "https://h30434.www3.hp.com/t5/Notebook-Software-and-How-To-Questions/where-to-find-backlight-keyboard-driver/td-p/6003899",
+      "snippet": "Feb 25, 2017 · hi everyone. my laptop has been in assistance and they reset everything. but the backlight button (F5) doesn't work. i …"
+    },
+    {
+      "title": "Resolve Alienware FX Lighting Issues | Dell US",
+      "url": "https://www.dell.com/support/kbdoc/en-us/000141237/alienware-fx-light-issues?msockid=349886b542e36ad51c72916343c46b46",
+      "snippet": "May 1, 2026 · Instructions Alienware FX is an application that is integrated into the Alienware Command Center that allows you to …"
+    }
+  ]
+}

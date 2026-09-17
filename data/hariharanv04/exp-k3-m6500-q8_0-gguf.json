@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "hariharanv04/exp-k3-m6500-Q8_0-GGUF",
+  "slug": "hariharanv04-exp-k3-m6500-q8_0-gguf",
+  "author": "hariharanv04",
+  "url": "https://huggingface.co/hariharanv04/exp-k3-m6500-Q8_0-GGUF",
+  "created_at": "2026-09-17T10:22:18.000Z",
+  "updated_at": "2026-09-17T10:22:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama-cpp",
+    "gguf-my-repo",
+    "base_model:hariharanv04/exp-k3-m6500",
+    "base_model:quantized:hariharanv04/exp-k3-m6500",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 4482394816,
+  "storage_human": "4.5 GB",
+  "base_model": "hariharanv04/exp-k3-m6500",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Registreer.iedereennaakt.nl",
+      "url": "https://registreer.iedereennaakt.nl/",
+      "snippet": "Contactez-nous dès maintenant si vous souhaitez monétiser votre trafic Nous nous engageons à vous répondre sous 24 heures"
+    },
+    {
+      "title": "Prijzen op iedereennaakt.be",
+      "url": "https://iedereennaakt.be/site/page?view=prices",
+      "snippet": "Prijzen op iedereennaakt.be Aanmelden bij iedereennaakt.be is helemaal gratis. Eenmaal aangemeld kun je 1 gratis bericht of flirt …"
+    },
+    {
+      "title": "iedereennaakt.nl",
+      "url": "https://iedereennaakt.nl/selfie/fijn-en-heerlijk-weekend-heren-x/",
+      "snippet": ""
+    },
+    {
+      "title": "iedereennaakt.nl",
+      "url": "https://iedereennaakt.nl/blote-borsten/leuke-meid-met-een-mooi-lichaam/",
+      "snippet": ""
+    },
+    {
+      "title": "iedereennaakt.nl",
+      "url": "https://iedereennaakt.nl/rijpe-vrouwen/glad-geschoren-moeder/",
+      "snippet": ""
+    }
+  ]
+}

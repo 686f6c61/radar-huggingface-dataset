@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Siddachan/qwen3.5-9b-chpe-raw",
+  "slug": "siddachan-qwen3-5-9b-chpe-raw",
+  "author": "Siddachan",
+  "url": "https://huggingface.co/Siddachan/qwen3.5-9b-chpe-raw",
+  "created_at": "2026-09-17T07:46:45.000Z",
+  "updated_at": "2026-09-18T01:57:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "open-llm-leaderboard",
+    "lm-eval",
+    "evaluation",
+    "chpe",
+    "qwen3.5",
+    "qwen3.5-9b",
+    "arm64",
+    "aarch64",
+    "neoverse-n1",
+    "pure-zig",
+    "zero-dependency",
+    "openbenchmarking",
+    "formal-verification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8956825600,
+  "storage_human": "9.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Music and mathematics - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Music_and_mathematics",
+      "snippet": "It uses mathematics to study elements of music such as tempo, chord progression, form, and meter. The attempt to structure and …"
+    },
+    {
+      "title": "The Hidden Mathematics of Music and Harmony",
+      "url": "https://www.sciencenewstoday.org/the-hidden-mathematics-of-music-and-harmony",
+      "snippet": "Aug 22, 2025 · Nowhere is this truer than in music, where the logic of mathematics and the mystery of the soul meet in perfect …"
+    },
+    {
+      "title": "AMS :: Mathematics & Music",
+      "url": "https://www.ams.org/publicoutreach/math-and-music",
+      "snippet": "The next time you hear or play classical, rock, folk, religious, ceremonial, jazz, opera, pop, or contemporary types of music, think of …"
+    },
+    {
+      "title": "7 Ways That Music and Mathematics Relate - Musical Mum",
+      "url": "https://www.musicalmum.com/music-and-mathematics/",
+      "snippet": "Jul 9, 2026 · Music and Mathematics are two vastly different disciplines that, at first glance, would appear not to share any common …"
+    },
+    {
+      "title": "Is There a Link between Music and Math? - Scientific American",
+      "url": "https://www.scientificamerican.com/article/is-there-a-link-between-music-and-math/",
+      "snippet": "May 1, 2017 · Learning to play a musical instrument relies on understanding concepts, such as fractions and ratios, that are important …"
+    }
+  ]
+}

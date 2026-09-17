@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "baki0115/gaze-controlnet-qwen-image-edit",
+  "slug": "baki0115-gaze-controlnet-qwen-image-edit",
+  "author": "baki0115",
+  "url": "https://huggingface.co/baki0115/gaze-controlnet-qwen-image-edit",
+  "created_at": "2026-09-17T11:57:03.000Z",
+  "updated_at": "2026-09-17T12:14:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "safetensors",
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "controlnet",
+    "qwen-image-edit",
+    "gaze",
+    "image-editing",
+    "pose-editing",
+    "diffusers",
+    "image-to-image",
+    "base_model:Qwen/Qwen-Image-Edit-2509",
+    "base_model:adapter:Qwen/Qwen-Image-Edit-2509",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7072055280,
+  "storage_human": "7.1 GB",
+  "base_model": "Qwen/Qwen-Image-Edit-2509",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HOBIYARN",
+      "url": "https://hobiyarn.com/",
+      "snippet": "Онлайн магазинът за прежди в България. Най-голямото разнообразие от качествени прежди, макраме въжета и аксесоари за …"
+    },
+    {
+      "title": "Колекция прежди. Голямо разнообразие ...",
+      "url": "https://hobiyarn.com/prezhdi-po-kolekciya?page=3",
+      "snippet": "DROPS Nord (ДРОПС Норд) - е в класическата колекция прежди в асортимента на бранда Дропс! DROPS Nord е прекрасна и …"
+    },
+    {
+      "title": "черен Петък Намаление на прежди ... - HOBIYARN",
+      "url": "https://hobiyarn.com/namalenie",
+      "snippet": "Black Friday в Хобиярн – най-уютните намаления на сезона! Време е за мекота, цветове и вдъхновение! Само сега всички …"
+    },
+    {
+      "title": "HOBIYARN",
+      "url": "https://www.hobiyarn.com/en-gb/hobiyarn-yarn-brand",
+      "snippet": "Hobiyarn has its own yarn product line. In our manufactory in Plovdiv, Bulgaria we create exceptional and colorful yarns that are …"
+    },
+    {
+      "title": "Текстилна прежда за плетени чнти ... - HOBIYARN",
+      "url": "https://www.hobiyarn.com/tekstilna-prejda",
+      "snippet": "Текстилна прежда за плетени чнти панери, раници, възглавници, пуф, бебепко кошче, интериор и бижута. Купи текстилна …"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Mustifizur/Hermes-Agent",
+  "slug": "mustifizur-hermes-agent",
+  "author": "Mustifizur",
+  "url": "https://huggingface.co/Mustifizur/Hermes-Agent",
+  "created_at": "2026-09-17T10:47:52.000Z",
+  "updated_at": "2026-09-17T10:47:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "tensorboard",
+    "safetensors",
+    "mistral",
+    "axolotl",
+    "generated_from_trainer",
+    "base_model:teknium/OpenHermes-2-Mistral-7B",
+    "base_model:adapter:teknium/OpenHermes-2-Mistral-7B",
+    "license:apache-2.0",
+    "4-bit",
+    "bitsandbytes",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1217145056,
+  "storage_human": "1.2 GB",
+  "base_model": "teknium/OpenHermes-2-Mistral-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SAAEABC Página Principal",
+      "url": "https://saaeabc.org.br/",
+      "snippet": "SAAEABC Sindicato dos Auxiliares de Administração Escolar de Santo André"
+    },
+    {
+      "title": "Una giovane coppia amatoriale spudorata scopa duro e viene filmata",
+      "url": "https://ita.xhamster.com/videos/shameless-amateur-young-couple-fucking-hard-and-filmed-xheYVSN",
+      "snippet": "Guarda Una giovane coppia amatoriale spudorata scopa duro e viene filmata porno. Canale: Real Home Made. Categoria: …"
+    },
+    {
+      "title": "Case in vendita a Albairate - Wikicasa",
+      "url": "https://www.wikicasa.it/vendita-case/albairate/",
+      "snippet": "26 Case in vendita a Albairate a partire da 69.000 euro. Case a Albairate: annunci di privati e di agenzie immobiliari su Wikicasa."
+    },
+    {
+      "title": "Maltempo nel cremonese, quasi due milioni e mezzo di danni alle scuole",
+      "url": "https://www.ansa.it/lombardia/notizie/2026/09/15/maltempo-nel-cremonese-quasi-due-milioni-e-mezzo-di-danni-alle-scuole_b0f00c69-58ff-4389-9147-0f084d8498e3.html",
+      "snippet": "2 days ago · La Provincia di Cremona ha completato il censimento dei danni provocati nelle 18 scuole di sua proprietà dalla bufera di …"
+    },
+    {
+      "title": "FlashNails | #roma #centocelle | Instagram",
+      "url": "https://www.instagram.com/reel/DdMpVuCSX2c/",
+      "snippet": "502 likes, 24 comments - sara_flashnails on September 12, 2026: \"#roma #centocelle\"."
+    }
+  ]
+}

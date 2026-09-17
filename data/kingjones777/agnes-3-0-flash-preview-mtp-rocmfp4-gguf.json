@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "kingjones777/Agnes-3.0-Flash-Preview-MTP-ROCmFP4-GGUF",
+  "slug": "kingjones777-agnes-3-0-flash-preview-mtp-rocmfp4-gguf",
+  "author": "kingjones777",
+  "url": "https://huggingface.co/kingjones777/Agnes-3.0-Flash-Preview-MTP-ROCmFP4-GGUF",
+  "created_at": "2026-09-16T17:22:47.000Z",
+  "updated_at": "2026-09-17T00:56:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "rocm",
+    "amd",
+    "rocmfp4",
+    "rocmfpx",
+    "strix-halo",
+    "amd-strix-halo",
+    "gfx1151",
+    "ryzen-ai-max",
+    "ryzen-ai-max-395",
+    "radeon-8060s",
+    "mtp",
+    "speculative-decoding",
+    "reasoning",
+    "multimodal",
+    "vision",
+    "agnes",
+    "qwen3.5",
+    "quantized",
+    "image-text-to-text",
+    "base_model:Agnes-AI/Agnes-3.0-Flash",
+    "base_model:quantized:Agnes-AI/Agnes-3.0-Flash",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32661228864,
+  "parameters_human": "32.66B",
+  "storage_bytes": 106109038528,
+  "storage_human": "106.1 GB",
+  "base_model": "Agnes-AI/Agnes-3.0-Flash",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "c盘突然大了几十g，roaming这个文件夹怎么这么大？ - 知乎",
+      "url": "https://www.zhihu.com/question/52675585",
+      "snippet": "作者：电脑知识网 来源：电脑知识网 链接： C盘Roaming里文件能删除吗 很多人发现电脑中C:\\Users\\用户名\\AppData 占据了很大的 …"
+    },
+    {
+      "title": "打游戏时怎么骂老外比较解气？ - 知乎",
+      "url": "https://www.zhihu.com/question/269561421",
+      "snippet": "老外骂我们都是一两个词，其特点是具有歧视性，如果我们只是骂回去的话并没有杀伤力，反而他会觉得你气急败坏了他更高兴。所以 …"
+    },
+    {
+      "title": "知乎 - 知乎",
+      "url": "https://www.zhihu.com/author-platform/welfare",
+      "snippet": "自 2019 年开始至 2023 年，盐选会员背靠知乎平台，大力拓展网文业务，以三年时间成为中国数字出版业务中「短阅读」的引领者和 …"
+    },
+    {
+      "title": "无畏契约 - 知乎",
+      "url": "https://www.zhihu.com/topic/21255671/hot",
+      "snippet": "Jun 2, 2020 · 知友推荐 5794 人评价 无畏契约 Valorant 第一人称视角射击游戏（FPS） / 2020-06-02 发布 / PC / Riot Games 查看全 …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "nikitastheo/v5-babylm-25k-lower-ukr-ell-sequential_interleaved",
+  "slug": "nikitastheo-v5-babylm-25k-lower-ukr-ell-sequential_interleaved",
+  "author": "nikitastheo",
+  "url": "https://huggingface.co/nikitastheo/v5-babylm-25k-lower-ukr-ell-sequential_interleaved",
+  "created_at": "2026-09-16T18:44:20.000Z",
+  "updated_at": "2026-09-16T19:48:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "causal-lm",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 123886080,
+  "parameters_human": "123.9M",
+  "storage_bytes": 991118592,
+  "storage_human": "991 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Download dvs transport 164l tag scs - ShareMods.com",
+      "url": "https://sharemods.com/a8jeehpb5e0b/dvs_transport_164l_tag.scs.html",
+      "snippet": "Feb 22, 2025 · Sharemods.com is a platform where modders can upload and share their creations. Over the past 10 years, we have …"
+    },
+    {
+      "title": "DVS Transport",
+      "url": "https://dvstransport.gumroad.com/",
+      "snippet": "DVS Transport ... On Gumroad"
+    },
+    {
+      "title": "ShareMods.com - Share your game mods",
+      "url": "https://sharemods.com/",
+      "snippet": "Upload a mod, get a permanent link, and share it wherever your players are. Registered accounts receive unlimited storage, and …"
+    },
+    {
+      "title": "Gumroad - FB Truckstyling",
+      "url": "https://fbtrucks.gumroad.com/",
+      "snippet": "We are selling mods for Euro Truck Simulator 2, High Quality mods! ️ You get everything u need so the mod will work for you! ️ All …"
+    },
+    {
+      "title": "Download Scania R580 Vreugdenhil Transport scs - ShareMods.com",
+      "url": "https://sharemods.com/sn1i4v6mcp9u/Scania_R580_V8_M.Vreugdenhil_Transport_v.3.scs.html",
+      "snippet": "Jan 29, 2023 · Sharemods.com is a platform where modders can upload and share their creations. Over the past 10 years, we have …"
+    }
+  ]
+}

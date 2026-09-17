@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Baekpica/Ling-3.0-flash-VL-Mixed-Quant-GGUF",
+  "slug": "baekpica-ling-3-0-flash-vl-mixed-quant-gguf",
+  "author": "Baekpica",
+  "url": "https://huggingface.co/Baekpica/Ling-3.0-flash-VL-Mixed-Quant-GGUF",
+  "created_at": "2026-09-15T08:23:36.000Z",
+  "updated_at": "2026-09-17T01:00:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "mixed-quant",
+    "bailingmoe3",
+    "ling-3.0-flash-vl",
+    "kda",
+    "linear-attention",
+    "dgx-spark",
+    "ds4",
+    "image-text-to-text",
+    "base_model:inclusionAI/Ling-3.0-flash-VL",
+    "base_model:quantized:inclusionAI/Ling-3.0-flash-VL",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 357,
+  "trending_score": 0,
+  "parameters": 124414211552,
+  "parameters_human": "124.41B",
+  "storage_bytes": 84106125439,
+  "storage_human": "84.1 GB",
+  "base_model": "inclusionAI/Ling-3.0-flash-VL",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vault 7: CIA Hacking Tools Revealed - WikiLeaks",
+      "url": "https://wikileaks.org/ciav7p1/",
+      "snippet": "Today, Tuesday 7 March 2017, WikiLeaks begins its new series of leaks on the U.S. Central Intelligence Agency. Code-named \"Vault …"
+    },
+    {
+      "title": "Vault 7 - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Vault_7",
+      "snippet": "Vault 7 is a series of documents that WikiLeaks began to publish on 7 March 2017, detailing the activities and capabilities of the …"
+    },
+    {
+      "title": "WikiLeaks - Vault 7: Projects",
+      "url": "https://wikileaks.org/vault7/",
+      "snippet": "Today, September 7th 2017, WikiLeaks publishes four secret documents from the Protego project of the CIA, along with 37 related …"
+    },
+    {
+      "title": "WikiLeaks - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Wikileaks",
+      "snippet": "In 2014, FBI and CIA officials lobbied the White House to designate Wikileaks as an \"information broker\" to allow for more …"
+    },
+    {
+      "title": "Wikileaks and the CIA: What’s in Vault7? - Council on Foreign Relations",
+      "url": "https://www.cfr.org/articles/wikileaks-and-cia-whats-vault7",
+      "snippet": "Mar 8, 2017 · On Tuesday, Wikileaks released a huge cache of documents it said were descriptions of CIA cyber tools used to break …"
+    }
+  ]
+}

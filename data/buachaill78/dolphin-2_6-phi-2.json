@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "buachaill78/dolphin-2_6-phi-2",
+  "slug": "buachaill78-dolphin-2_6-phi-2",
+  "author": "buachaill78",
+  "url": "https://huggingface.co/buachaill78/dolphin-2_6-phi-2",
+  "created_at": "2026-09-17T09:28:50.000Z",
+  "updated_at": "2026-09-18T08:10:25.000Z",
+  "license": "microsoft-research-license",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "phi",
+    "en",
+    "dataset:ehartford/dolphin",
+    "dataset:jondurbin/airoboros-2.2.1",
+    "dataset:ehartford/dolphin-coder",
+    "dataset:teknium/openhermes",
+    "dataset:ise-uiuc/Magicoder-OSS-Instruct-75K",
+    "dataset:ise-uiuc/Magicoder-Evol-Instruct-110K",
+    "dataset:LDJnr/Capybara",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2783124480,
+  "parameters_human": "2.78B",
+  "storage_bytes": 16692057415,
+  "storage_human": "16.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Choix des espaces - PRONOTE 2026.2.6 - INDEX EDUCATION",
+      "url": "https://e972000a.index-education.net/pronote/",
+      "snippet": "PRONOTE Page d'accueil - - - gestion des notes, absences, punitions, cahier de textes pour les établissements scolaires."
+    },
+    {
+      "title": "PRONOTE - INDEX EDUCATION",
+      "url": "https://e972000a.index-education.net/pronote/eleve.html",
+      "snippet": "PRONOTE Espace Élèves - - - gestion des notes, absences, punitions, cahier de textes pour les établissements scolaires."
+    },
+    {
+      "title": "PRONOTE - Télécharger PRONOTE | INDEX EDUCATION",
+      "url": "https://www.index-education.com/fr/telecharger-pronote.php",
+      "snippet": "Sep 9, 2026 · PRONOTE, toute la vie scolaire dans un seul logiciel. Le logiciel de gestion des notes et appréciations des professeurs …"
+    },
+    {
+      "title": "PRONOTE – Applications sur Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.IndexEducation.Pronote&hl=fr",
+      "snippet": "PRONOTE, la vie scolaire et le suivi pédagogique de la maternelle à la terminale"
+    },
+    {
+      "title": "PRONOTE - Page pour les Parents et les Elèves | INDEX EDUCATION",
+      "url": "https://www.index-education.com/fr/pronote-parents-eleves.php",
+      "snippet": "Chaque établissement a sa propre base de données PRONOTE. C'est le directeur de l'établissement - ou le responsable du …"
+    }
+  ]
+}

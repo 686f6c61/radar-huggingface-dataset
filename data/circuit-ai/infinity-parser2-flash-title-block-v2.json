@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Circuit-AI/infinity-parser2-flash-title-block-v2",
+  "slug": "circuit-ai-infinity-parser2-flash-title-block-v2",
+  "author": "Circuit-AI",
+  "url": "https://huggingface.co/Circuit-AI/infinity-parser2-flash-title-block-v2",
+  "created_at": "2026-09-16T19:14:37.000Z",
+  "updated_at": "2026-09-16T22:27:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "vision-language-model",
+    "document-parsing",
+    "engineering-drawings",
+    "title-block-extraction",
+    "loRA",
+    "qwen3.5",
+    "conversational",
+    "en",
+    "base_model:infly/Infinity-Parser2-Flash",
+    "base_model:finetune:infly/Infinity-Parser2-Flash",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2213241664,
+  "parameters_human": "2.21B",
+  "storage_bytes": 8873107071,
+  "storage_human": "8.9 GB",
+  "base_model": "infly/Infinity-Parser2-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Circuit et voyage organisé | TUI FRANCE",
+      "url": "https://www.tui.fr/circuits/",
+      "snippet": "Laissez-vous tenter par un circuit, voyage organisé pour vos prochaines vacances. De nombreuses destinations et paysages …"
+    },
+    {
+      "title": "Circuits et voyages organisés : circuits pas chers - lastminute.com",
+      "url": "https://www.fr.lastminute.com/circuits?msockid=0bac77659dd86d3300c660b39cf56c0a",
+      "snippet": "Découvrez nos circuits et voyages organisés à prix avantageux. Réservez votre circuit voyage pas cher ou votre séjour organisé et …"
+    },
+    {
+      "title": "Circuit pas cher et voyage organisé - Promovacances",
+      "url": "https://www.promovacances.com/accueil/circuit-touristique/?msockid=0bac77659dd86d3300c660b39cf56c0a",
+      "snippet": "Circuits pas chers avec Promovacances : circuit, autotour, combiné balnéaire. Découvrez nos circuits découvertes, aventures pour …"
+    },
+    {
+      "title": "Circuits - Tinkercad",
+      "url": "https://www.tinkercad.com/circuits",
+      "snippet": "Place and wire electronic components (even a lemon) to create a virtual circuit from scratch, or use our starter circuits to explore and …"
+    },
+    {
+      "title": "972 Circuit pas cher - FRAM",
+      "url": "https://www.fram.fr/circuit/?msockid=0bac77659dd86d3300c660b39cf56c0a",
+      "snippet": "Circuit : 982 circuits pas chers à partir de € TTC. Des circuits aux circuits combinés en passant par des autotours , réservez avec …"
+    }
+  ]
+}

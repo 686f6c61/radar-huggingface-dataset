@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "mazesmazes/tiny-audio-granite-gemma",
+  "slug": "mazesmazes-tiny-audio-granite-gemma",
+  "author": "mazesmazes",
+  "url": "https://huggingface.co/mazesmazes/tiny-audio-granite-gemma",
+  "created_at": "2026-09-16T18:19:25.000Z",
+  "updated_at": "2026-09-17T01:24:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "asr_model",
+    "feature-extraction",
+    "custom_code",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 10491392,
+  "parameters_human": "10.5M",
+  "storage_bytes": 325942172,
+  "storage_human": "326 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemudiano vs. Naess Shipping Philippines, Inc. · G.R. No. 223825 · Case …",
+      "url": "https://angkaalaman.com/buod/gemudiano-vs-naess-shipping-philippines-inc-2020-01-20/",
+      "snippet": "Jan 20, 2020 · Gemudiano vs. Naess Shipping Philippines, Inc. The Supreme Court reversed the Court of Appeals and reinstated the …"
+    },
+    {
+      "title": "G.R. No. 223825 - The Lawphil Project",
+      "url": "https://lawphil.net/judjuris/juri2020/jan2020/gr_223825_2020.html",
+      "snippet": "As advised by Naess Shipping's crewing manager Leah G. Fetero (Fetero), petitioner underwent the mandatory pre-employment …"
+    },
+    {
+      "title": "Case Digest: G.R. No. 223825 — Case Digest | BATASnatin Lexitary",
+      "url": "https://batasnatin.com/digest/case-digest-gr-no-223825",
+      "snippet": "Sometime in December 2012, petitioner Luis G. Gemudiano, Jr. applied with Naess Shipping Philippines, Inc. for possible …"
+    },
+    {
+      "title": "Full Text and Summary of G.R. No. 223825 - Gemudiano, Jr. vs. Naess ...",
+      "url": "https://www.digest.ph/decisions/gemudiano-jr-v-naess-shipping-philippines-inc",
+      "snippet": "Read the summary and case digests for Gemudiano, Jr. vs. Naess Shipping Philippines, Inc. in 3 minutes or less and ﬁnd relevant …"
+    },
+    {
+      "title": "G.R. No. 223825 - LUIS G. GEMUDIANO, JR., PETITIONER, v. NAESS SHIPPING ...",
+      "url": "https://philsupreme.clubjuris.com/2020januarydecisions.php?id=41",
+      "snippet": "While there are cases which hold that the existence of an employer-employee relationship does not negate the civil jurisdiction of the …"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Abiray/MiniMax-H3-Pruned-Ref-Delta-Fused-GGUF",
+  "slug": "abiray-minimax-h3-pruned-ref-delta-fused-gguf",
+  "author": "Abiray",
+  "url": "https://huggingface.co/Abiray/MiniMax-H3-Pruned-Ref-Delta-Fused-GGUF",
+  "created_at": "2026-09-16T19:30:07.000Z",
+  "updated_at": "2026-09-16T21:01:36.000Z",
+  "license": "minimax-h3-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-video",
+  "library": "minimax-h3",
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "gguf",
+    "comfyui",
+    "text-to-video",
+    "image-to-video",
+    "video-generation",
+    "multimodal",
+    "base_model:xmarre/MiniMax-H3-Pruned-Ref-Delta-Fused-r1024-ComfyUI",
+    "base_model:quantized:xmarre/MiniMax-H3-Pruned-Ref-Delta-Fused-r1024-ComfyUI",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20111462936,
+  "parameters_human": "20.11B",
+  "storage_bytes": 98483142912,
+  "storage_human": "98.5 GB",
+  "base_model": "xmarre/MiniMax-H3-Pruned-Ref-Delta-Fused-r1024-ComfyUI",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Polizei Porno-Videos | xHamster",
+      "url": "https://ge.xhamster.desi/categories/police",
+      "snippet": "Schaue alle Polizei Porno-Videos sofort!"
+    },
+    {
+      "title": "Deutsche polizei Porno Videos - xHamster",
+      "url": "https://ge.xhamster.desi/search/deutsche+polizei",
+      "snippet": "Sehen Sie deutsche polizei Porno Videos. Entdecken Sie Tonnen von XXX Filmen mit Sexszenen in 2026 auf xHamster!"
+    },
+    {
+      "title": "Deutsche Polizei Porn Videos - xHamster",
+      "url": "https://xhamster.desi/search/deutsche+polizei",
+      "snippet": "Watch deutsche polizei porn videos. Explore tons of XXX movies with sex scenes in 2026 on xHamster!"
+    },
+    {
+      "title": "Polizei Porno (198 974) @ Porzo.com",
+      "url": "https://www.porzo.com/de-at/category/police",
+      "snippet": "Schauen Sie sich die neuesten Polizei Videos auf Porzo.com an. Ständig aktualisiert, über 1000 Kategorien und Millionen von Videos!"
+    },
+    {
+      "title": "Polizei - Tube Pleasure",
+      "url": "https://tubepleasure.com/de/356/police/",
+      "snippet": "Porno Videos. Polizei - 12,489 Videos. Gefängnis, Polizei Kontrolle, Van, German Teacher, Woodman Casting und vieles mehr."
+    }
+  ]
+}

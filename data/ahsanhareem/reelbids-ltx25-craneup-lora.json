@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "AhsanHareem/reelbids-ltx25-craneup-lora",
+  "slug": "ahsanhareem-reelbids-ltx25-craneup-lora",
+  "author": "AhsanHareem",
+  "url": "https://huggingface.co/AhsanHareem/reelbids-ltx25-craneup-lora",
+  "created_at": "2026-09-16T19:43:36.000Z",
+  "updated_at": "2026-09-16T19:45:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "ltx-video",
+    "ltx-2.5",
+    "lora",
+    "camera-control",
+    "crane_up",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4028631840,
+  "storage_human": "4.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home | Radin Boutique Hotel - Vodice",
+      "url": "https://www.hotelvillaradin.com/hr/home",
+      "snippet": "Hotel Villa Radin, mali je luksuzni hotel, smješten tik uz obalu mora u Vodicama. Okružen prekrasnim, njegovanim vrtom nalazi se …"
+    },
+    {
+      "title": "Hotel Villa Radin, Vodice (updated prices 2026) - Booking.com",
+      "url": "https://www.booking.com/hotel/hr/villa-radin.html?msockid=23f32585258369f6176b325324be6849",
+      "snippet": "Located on Vodice’s beach, this hotel offers landscaped garden with an outdoor pool. Rooms here have free Wi-Fi and views of the …"
+    },
+    {
+      "title": "Home | Radin Boutique Hotel - Vodice",
+      "url": "https://www.hotelvillaradin.com/en/home",
+      "snippet": "The Hotel Villa Radin - a small luxury hotel on the coast of Vodice. Surrounded by a beautiful landscaped garden, it is located only …"
+    },
+    {
+      "title": "Hotel Villa Radin, Vodice (nove cijene za 2026.) - Booking.com",
+      "url": "https://www.booking.com/hotel/hr/villa-radin.hr.html?msockid=23f32585258369f6176b325324be6849",
+      "snippet": "Ovaj hotel nalazi se na plaži u Vodicama, a nudi uređen vrt s vanjskim bazenom. Hotel u ponudi ima sobe s besplatnim WiFi-jem te …"
+    },
+    {
+      "title": "Hotel Villa Radin | Turistička zajednica grada Vodica",
+      "url": "https://www.vodice.hr/hr/smjestaj/hoteli/hotel-villa-radin/99",
+      "snippet": "Hotel Villa Radin, oaza mira na prelijepom poluotoku Punta, korak do mora, 500 metara od centra Vodica okružen je raskošnim …"
+    }
+  ]
+}

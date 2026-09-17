@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "CodonProject/DINOv3-ViT-Base",
+  "slug": "codonproject-dinov3-vit-base",
+  "author": "CodonProject",
+  "url": "https://huggingface.co/CodonProject/DINOv3-ViT-Base",
+  "created_at": "2026-09-17T10:31:48.000Z",
+  "updated_at": "2026-09-17T10:43:00.000Z",
+  "license": "dinov3-license",
+  "license_family": "unknown",
+  "pipeline_tag": "image-feature-extraction",
+  "library": "codon",
+  "languages": [],
+  "tags": [
+    "codon",
+    "safetensors",
+    "dinov3_vit",
+    "dino",
+    "dinov3",
+    "vision",
+    "feature-extraction",
+    "fp16",
+    "image-feature-extraction",
+    "base_model:facebook/dinov3-vitb16-pretrain-lvd1689m",
+    "base_model:finetune:facebook/dinov3-vitb16-pretrain-lvd1689m",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 85660416,
+  "parameters_human": "85.7M",
+  "storage_bytes": 171340048,
+  "storage_human": "171 MB",
+  "base_model": "facebook/dinov3-vitb16-pretrain-lvd1689m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MOS FRANCE - Accueil",
+      "url": "https://www.mos-france.com/",
+      "snippet": "Mos France est spécialisée sur les activités de rabattement de nappe, de forage et de pompage d’eau. Certifiée MASE, elle intervient …"
+    },
+    {
+      "title": "Société MOS FRANCE (345181754) à LOON-PLAGE (59279).",
+      "url": "https://www.societe.com/societe/mos-france-345181754.html",
+      "snippet": "69 sociétés exercent la même activité que MOS FRANCE dans le 59. Retrouvez la liste complète des entreprises du secteur \" …"
+    },
+    {
+      "title": "Société MOS FRANCE : Chiffre d'affaires, statuts, extrait d ... - Pappers",
+      "url": "https://www.pappers.fr/entreprise/mos-france-345181754",
+      "snippet": "MOS FRANCE à LOON-PLAGE (59279) : Bilans, statuts, chiffre d'affaires, dirigeants, actionnaires, levées de fonds, annonces …"
+    },
+    {
+      "title": "Société MOS FRANCE (FINAQUA; FRANCE RABATTEMENT) à 59279 …",
+      "url": "https://annuaire-entreprises.data.gouv.fr/entreprise/mos-france-finaqua-france-rabattement-345181754",
+      "snippet": "Son domaine d’activité est : travaux de terrassement spécialisés ou de grande masse. En 2023, elle était catégorisée Petite ou …"
+    },
+    {
+      "title": "MOS FRANCE — Fournisseur, Fiche entreprise, Contact",
+      "url": "https://rne-entreprise.fr/pme/mos-france-345181754",
+      "snippet": "Métier et positionnement Mos France est une entreprise spécialisée dans les activités de rabattement de nappe, de forage et de …"
+    }
+  ]
+}

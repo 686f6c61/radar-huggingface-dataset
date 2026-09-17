@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "h1testmeow/h1-checker-sleep-20260916191943",
+  "slug": "h1testmeow-h1-checker-sleep-20260916191943",
+  "author": "h1testmeow",
+  "url": "https://huggingface.co/h1testmeow/h1-checker-sleep-20260916191943",
+  "created_at": "2026-09-16T19:19:59.000Z",
+  "updated_at": "2026-09-16T19:20:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4,
+  "parameters_human": "4",
+  "storage_bytes": 113,
+  "storage_human": "113 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.be/index.html",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=nl",
+      "snippet": "Adverteren Alles over Google Google.com in English © 2026 - Privacy - Voorwaarden"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com.ai/?hl=nl-US",
+      "snippet": "Google aangeboden in: English Adverteren Alles over Google Google.com"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.nl/intl/en/home/",
+      "snippet": "Explore Google's homepage for search, images, and more with easy access to all services and features."
+    },
+    {
+      "title": "Inloggen - Google Accounts",
+      "url": "https://accounts.google.com/login?hl=nl",
+      "snippet": "Niet jouw computer? Gebruik een venster voor privé browsen om in te loggen. Meer informatie over het gebruik van de gastmodus …"
+    }
+  ]
+}

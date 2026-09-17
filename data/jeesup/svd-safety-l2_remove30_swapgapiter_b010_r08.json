@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l2_remove30_swapgapiter_b010_r08",
+  "slug": "jeesup-svd-safety-l2_remove30_swapgapiter_b010_r08",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l2_remove30_swapgapiter_b010_r08",
+  "created_at": "2026-09-17T10:24:44.000Z",
+  "updated_at": "2026-09-17T10:31:14.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama2",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-2-7b-chat-hf",
+    "base_model:finetune:meta-llama/Llama-2-7b-chat-hf",
+    "license:llama2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13477364771,
+  "storage_human": "13.5 GB",
+  "base_model": "meta-llama/Llama-2-7b-chat-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Societe.com : RCS, siret, siren, bilan, l'information gratuite sur les ...",
+      "url": "https://www.societe.com/",
+      "snippet": "SOCIETE.COM, service gratuit d'information sur les entreprises. Consultez les chiffres clés, l'identité, les dirigeants de toutes les …"
+    },
+    {
+      "title": "Les entreprises par departements Societe.com",
+      "url": "https://www.societe.com/entreprises",
+      "snippet": "Les entreprises par departements sur Societe.com Tous les départements de France Triés par code postal 01 Ain 209 735 …"
+    },
+    {
+      "title": "FICHIER.COM : Achat de fichiers d'entreprises - Societe.com",
+      "url": "https://fichier.societe.com/pages/fichier-entreprises.html",
+      "snippet": "1 day ago · Achat de fichiers d'entreprises Créez votre fichier d'entreprises sur mesure en quelques clics grâce à notre interface ci …"
+    },
+    {
+      "title": "Société.com - Société.com annonce une fusion stratégique avec …",
+      "url": "https://blog.societe.com/blog/societe-com-annonce-une-fusion-strategique-avec-reverse-vision-et-renforce-son-leadership-en-intelligence-economique",
+      "snippet": "Nov 20, 2025 · Société.com s’allie au Groupe Reverse Vision pour intégrer de nouvelles solutions de conformité, carbone et analyse …"
+    },
+    {
+      "title": "Société.com fait sa rentrée sous le signe de l’IA - blog.societe.com",
+      "url": "https://blog.societe.com/blog/societe-com-fait-sa-rentree-sous-le-signe-de-lia",
+      "snippet": "Sep 1, 2025 · Découvrez les nouvelles fonctionnalités IA de Société.com : chatbot intelligent, veille sectorielle, recherche et synthèse …"
+    }
+  ]
+}

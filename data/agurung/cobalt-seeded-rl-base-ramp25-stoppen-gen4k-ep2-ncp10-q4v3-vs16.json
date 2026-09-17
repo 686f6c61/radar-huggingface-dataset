@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10-q4v3-vs16",
+  "slug": "agurung-cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10-q4v3-vs16",
+  "author": "agurung",
+  "url": "https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10-q4v3-vs16",
+  "created_at": "2026-09-15T11:47:59.000Z",
+  "updated_at": "2026-09-18T04:41:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "openrlhf",
+    "grpo",
+    "reinforcement-learning",
+    "code-generation",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-4B-Instruct-2507",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 481,
+  "trending_score": 0,
+  "parameters": 4411424256,
+  "parameters_human": "4.41B",
+  "storage_bytes": 17657211690,
+  "storage_human": "17.7 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Snapchat - Say It In A Snap",
+      "url": "https://www.snapchat.com/",
+      "snippet": "Chat, send Snaps, explore Stories, and try Lenses on desktop, or download the app on mobile! See how to connect & create with …"
+    },
+    {
+      "title": "Download | Snapchat",
+      "url": "https://www.snapchat.com/download",
+      "snippet": "Snapchat lets you easily talk with friends, view Stories from around the world, and explore news in Discover. Life's more fun when …"
+    },
+    {
+      "title": "Snapchat",
+      "url": "https://accounts.snapchat.com/v2/login",
+      "snippet": "Log in to Snapchat on the web to manage your account, chat, and call with friends."
+    },
+    {
+      "title": "Snapchat",
+      "url": "https://accounts.snapchat.com/v2/login?locale=nl-NL",
+      "snippet": "Log in bij Snapchat om je account te beheren, vrienden te bellen en te chatten via de webversie."
+    },
+    {
+      "title": "Snapchat",
+      "url": "https://www.snapchat.com/-/",
+      "snippet": ""
+    }
+  ]
+}

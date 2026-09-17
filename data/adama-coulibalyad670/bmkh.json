@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "adama-coulibalyad670/bmKh",
+  "slug": "adama-coulibalyad670-bmkh",
+  "author": "adama-coulibalyad670",
+  "url": "https://huggingface.co/adama-coulibalyad670/bmKh",
+  "created_at": "2026-09-17T10:58:42.000Z",
+  "updated_at": "2026-09-17T10:59:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Adama France s.a.s - Listen>Learn>Deliver",
+      "url": "https://www.adama.com/france/fr",
+      "snippet": "Sep 2, 2026 · Les solutions et les conseils ADAMA aux agriculteurs pour protéger durablement les cultures : phytos, biocontrôles, …"
+    },
+    {
+      "title": "Adama en France",
+      "url": "https://www.adama.com/france/fr/adama-en-france",
+      "snippet": "1996 : origines d'Adama France. 30 ans de partenariat et d'expérience du monde agricole français. 80 collaborateurs, ayant pour …"
+    },
+    {
+      "title": "Actualités et expertises agricoles | Page d'accueil",
+      "url": "https://blog.adama.com/",
+      "snippet": "2 days ago · Bienvenue sur le blog Adama, retrouvez tous nos sujets liés à la protection de vos cultures de céréales, betteraves, …"
+    },
+    {
+      "title": "Adama - Film 2014 - AlloCiné",
+      "url": "https://www.allocine.fr/film/fichefilm_gen_cfilm=231601.html",
+      "snippet": "Adama est un film réalisé par Simon Rouby avec les voix de Azize Diabate Abdoulaye, Pascal NZonzi. Synopsis : Adama, 12 ans, vit …"
+    },
+    {
+      "title": "Mort d'Adama Traoré — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Mort_d%27Adama_Traor%C3%A9",
+      "snippet": "↑AFP, « Marche pour Adama Traoré : enquête administrative ouverte après des violences sur des journalistes », Le Figaro, 10 juillet …"
+    }
+  ]
+}

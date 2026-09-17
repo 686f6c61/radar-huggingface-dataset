@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "smlflg/ProjectDashboard",
+  "slug": "smlflg-projectdashboard",
+  "author": "smlflg",
+  "url": "https://huggingface.co/smlflg/ProjectDashboard",
+  "created_at": "2026-09-16T19:50:10.000Z",
+  "updated_at": "2026-09-16T19:50:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "'Servicekosten bij kaartje rijzen de pan uit' - Radar",
+      "url": "https://radar.avrotros.nl/artikel/servicekosten-bij-kaartje-rijzen-de-pan-uit-19444",
+      "snippet": "Aug 24, 2016 · Bij de drie bekende officiële ticketbureaus in Nederland - Eventim, Ticketmaster en Ticketpoint - wisselt de hoogte van …"
+    },
+    {
+      "title": "DonanımHaber Forum",
+      "url": "https://forum.donanimhaber.com/",
+      "snippet": "Teknoloji, sıcak fırsatlar, otomobil, ülke gündemi, kripto para, eğitim, futbol hakkında bilgiler ve tartışma platformu: DonanımHaber …"
+    },
+    {
+      "title": "Ventilatie - Radar",
+      "url": "https://radar.avrotros.nl/artikel/ventilatie-4312",
+      "snippet": "Mar 25, 2007 · Stel, er ontsnapt een gifwolk, dan moet u volgens de overheid het volgende doen: naar binnen gaan, ramen dicht en …"
+    },
+    {
+      "title": "Solved: Timechart average - Splunk Community",
+      "url": "https://community.splunk.com/t5/Splunk-Search/Timechart-average/m-p/540984",
+      "snippet": "Feb 23, 2021 · Solved: Hi, I am pretty new to splunk and need help with a timechart. I have a timechart, that shows the count of …"
+    },
+    {
+      "title": "Süleymancılara büyük operasyon | DonanımHaber Forum",
+      "url": "https://forum.donanimhaber.com/suleymancilara-buyuk-operasyon--163894158",
+      "snippet": "Aug 13, 2026 · Zaten halk ve Süleymancılar'da yıllardır kendilerine operasyon yapılacağını biliyorlardı ve bekliyorlardı o yüzden …"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Kxck/Finance_2408_v1_SFT",
+  "slug": "kxck-finance_2408_v1_sft",
+  "author": "Kxck",
+  "url": "https://huggingface.co/Kxck/Finance_2408_v1_SFT",
+  "created_at": "2026-09-16T19:39:29.000Z",
+  "updated_at": "2026-09-16T19:39:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "chartqa",
+    "vision-language",
+    "qlora",
+    "finchart",
+    "base_model:Qwen/Qwen3-VL-4B-Instruct",
+    "base_model:finetune:Qwen/Qwen3-VL-4B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 90173243,
+  "storage_human": "90 MB",
+  "base_model": "Qwen/Qwen3-VL-4B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Internet Speed Test | Fast.com",
+      "url": "https://fast.com/",
+      "snippet": "How fast is your download speed? In seconds, FAST.com's simple Internet speed test will estimate your ISP speed."
+    },
+    {
+      "title": "Internet-Geschwindigkeitstest | Fast.com",
+      "url": "https://fast.com/de/",
+      "snippet": "Wie hoch ist Ihre Downloadgeschwindigkeit? Der einfache Test von FAST.com bestimmt innerhalb von Sekunden die von Ihrem …"
+    },
+    {
+      "title": "Speedtest by Ookla - The Global Broadband Speed Test",
+      "url": "https://www.speedtest.net/",
+      "snippet": "Test your internet speed on any device with Speedtest by Ookla, available for free on desktop and mobile apps."
+    },
+    {
+      "title": "Internet Speed Test | Check Download & Upload Speeds",
+      "url": "https://www.highspeedinternet.com/tools/speed-test?msockid=1c603cceb0f7653416622b18b17a647a",
+      "snippet": "Check your internet speed with our simple and fast speed test. Get detailed results for your download speed, upload speed, and …"
+    },
+    {
+      "title": "FAST-Test - DocCheck Flexikon",
+      "url": "https://flexikon.doccheck.com/de/FAST-Test",
+      "snippet": "Der FAST-Test ist ein klinischer Schnelltest für die Erkennung eines Schlaganfalls, der auch von Laienhelfern durchgeführt werden …"
+    }
+  ]
+}

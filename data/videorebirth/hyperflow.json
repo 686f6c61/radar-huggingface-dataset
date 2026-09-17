@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "videorebirth/hyperflow",
+  "slug": "videorebirth-hyperflow",
+  "author": "videorebirth",
+  "url": "https://huggingface.co/videorebirth/hyperflow",
+  "created_at": "2026-09-17T06:58:53.000Z",
+  "updated_at": "2026-09-19T05:56:09.000Z",
+  "license": "minimax-h3-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-video",
+  "library": "minimax-h3",
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "hyperflow-h3",
+    "lora",
+    "video-generation",
+    "audio-video-generation",
+    "text-to-video",
+    "image-to-video",
+    "image-text-to-video",
+    "text-to-audio-video",
+    "image-to-audio-video",
+    "reference-to-audio-video",
+    "flow-matching",
+    "distillation",
+    "self-distillation",
+    "few-step",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:adapter:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 18,
+  "downloads_30d": 0,
+  "trending_score": 15,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2795328008,
+  "storage_human": "2.8 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=2d604ed2f9d36c242e2f590bf86b6d21",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Get access to free online versions of Outlook, Word, Excel, and PowerPoint."
+    },
+    {
+      "title": "My Account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    },
+    {
+      "title": "Microsoft 365 for Individuals: Subscription for Productivity Apps",
+      "url": "https://www.microsoft.com/en-us/microsoft-365?msockid=2d604ed2f9d36c242e2f590bf86b6d21",
+      "snippet": "Microsoft 365 (formerly Office 365) subscriptions offer a suite of productivity tools and cloud services with world-class security and …"
+    },
+    {
+      "title": "Microsoft - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Microsoft",
+      "snippet": "Microsoft Corporation is an American multinational technology company headquartered in Redmond, Washington. The company …"
+    }
+  ]
+}

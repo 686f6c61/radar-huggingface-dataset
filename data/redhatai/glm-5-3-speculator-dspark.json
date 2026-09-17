@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "RedHatAI/GLM-5.3-speculator.dspark",
+  "slug": "redhatai-glm-5-3-speculator-dspark",
+  "author": "RedHatAI",
+  "url": "https://huggingface.co/RedHatAI/GLM-5.3-speculator.dspark",
+  "created_at": "2026-09-04T16:07:17.000Z",
+  "updated_at": "2026-09-17T18:42:42.000Z",
+  "license": "glm-5.3",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "speculators",
+  "languages": [],
+  "tags": [
+    "speculators",
+    "safetensors",
+    "speculative-decoding",
+    "dspark",
+    "long-context",
+    "custom_code",
+    "base_model:zai-org/GLM-5.3",
+    "base_model:finetune:zai-org/GLM-5.3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 1249565313,
+  "parameters_human": "1.25B",
+  "storage_bytes": 2499134874,
+  "storage_human": "2.5 GB",
+  "base_model": "zai-org/GLM-5.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft Store - Download apps, games & more for your Windows PC",
+      "url": "https://apps.microsoft.com/home",
+      "snippet": "Explore the Microsoft Store for apps and games on Windows. Enjoy exclusive deals, new releases, and your favorite content all in …"
+    },
+    {
+      "title": "Microsoft Store — скачивайте приложения, игры и многое другое …",
+      "url": "https://apps.microsoft.com/home?hl=ru-RU&gl=RU",
+      "snippet": "Исследуйте Microsoft Store для поиска приложений и игр для Windows. Наслаждайтесь эксклюзивными предложениями, …"
+    },
+    {
+      "title": "Microsoft Store - Download apps, games & more for your Windows PC",
+      "url": "https://apps.microsoft.com/home?hl=en-GB&gl=GB",
+      "snippet": "Explore the Microsoft Store for apps and games on Windows. Enjoy exclusive deals, new releases, and your favourite content all in …"
+    },
+    {
+      "title": "Microsoft Store - 下载适用于 Windows 电脑的应用、游戏等",
+      "url": "https://apps.microsoft.com/zh-cn/store",
+      "snippet": "在 Windows 上浏览 Microsoft Store，寻找应用和游戏。一站式尽享独家特价、最新发布以及你最喜爱的内容。"
+    },
+    {
+      "title": "Microsoft Store - Baixe aplicativos, jogos e muito mais para seu ...",
+      "url": "https://apps.microsoft.com/home?hl=pt-BR&gl=BR",
+      "snippet": "Explore o Microsoft Store para aplicativos e jogos no Windows. Aproveite ofertas exclusivas, novas versões e seus conteúdos …"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "md-nishat-008/TigerLLM-9B-it",
+  "slug": "md-nishat-008-tigerllm-9b-it",
+  "author": "md-nishat-008",
+  "url": "https://huggingface.co/md-nishat-008/TigerLLM-9B-it",
+  "created_at": "2025-09-14T17:49:25.000Z",
+  "updated_at": "2026-09-17T00:34:02.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma3",
+    "arxiv:2503.10995",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 821,
+  "trending_score": 0,
+  "parameters": 12187325040,
+  "parameters_human": "12.19B",
+  "storage_bytes": 48787659690,
+  "storage_human": "48.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MD — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/MD",
+      "snippet": "MD, abréviation de Master's Degree (diplôme de master) MD, abréviation de message direct, utilisé en francais en remplacement de …"
+    },
+    {
+      "title": "Quelles sont les abréviations de « million » et « milliard » ?",
+      "url": "https://www.laculturegenerale.com/abreviations-million-milliard/",
+      "snippet": "Oct 12, 2022 · Md : employée par exemple dans un article du site de la direction générale du Trésor française : « […] ainsi que de …"
+    },
+    {
+      "title": "Markdown Viewer Online — Free MD Reader & Live Preview",
+      "url": "https://markdownviewer.org/",
+      "snippet": "Free online Markdown viewer and MD reader — live GFM preview, syntax highlighting, LaTeX math, Mermaid diagrams, and PDF …"
+    },
+    {
+      "title": "Qu’est-ce qu’un fichier .MD? (Et comment en ouvrir un)",
+      "url": "https://commentouvrir.com/blog/quest-ce-quun-fichier-md-et-comment-en-ouvrir-un/",
+      "snippet": "Sep 22, 2020 · Cet article décrit ce que sont les fichiers MD, comment ouvrir les différents types (il en existe plusieurs) et ce que …"
+    },
+    {
+      "title": "MD - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/MD",
+      "snippet": "This disambiguation page lists articles associated with the title MD. If an internal link incorrectly led you here, you may wish to change …"
+    }
+  ]
+}

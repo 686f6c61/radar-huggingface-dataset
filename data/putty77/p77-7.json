@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "putty77/p77-7",
+  "slug": "putty77-p77-7",
+  "author": "putty77",
+  "url": "https://huggingface.co/putty77/p77-7",
+  "created_at": "2026-05-22T03:38:57.000Z",
+  "updated_at": "2026-09-22T10:31:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 46628504536,
+  "storage_human": "46.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Telegram Messenger",
+      "url": "https://telegram.org/",
+      "snippet": "Rich Text Editor, Communities, Ephemeral Messages in Groups, 350 Million GIFs Introducing a rich text editor to format and …"
+    },
+    {
+      "title": "Telegram Desktop",
+      "url": "https://desktop.telegram.org/",
+      "snippet": "Get Telegram for Windows x64 Portable version Get Telegram for macOS Mac App Store Get Telegram for Linux x64 Flatpak • Snap …"
+    },
+    {
+      "title": "Telegram Messenger",
+      "url": "https://telegram.org/%C2%A0...%E2%80%8B",
+      "snippet": "Rich Text Editor, Communities, Ephemeral Messages in Groups, 350 Million GIFs Introducing a rich text editor to format and …"
+    },
+    {
+      "title": "Telegram: View @telegram",
+      "url": "https://telegram.me/telegram",
+      "snippet": "The official Telegram on Telegram. Much recursion. Very Telegram. Wow."
+    },
+    {
+      "title": "Telegram – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Telegram",
+      "snippet": "Benutzer von Telegram können Textnachrichten, Sprachnachrichten, Fotos, Videos, Audios und Dokumente austauschen sowie …"
+    }
+  ]
+}

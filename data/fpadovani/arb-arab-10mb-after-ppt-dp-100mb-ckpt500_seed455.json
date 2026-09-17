@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/arb-arab-10mb-after-ppt-Dp-100mb-ckpt500_seed455",
+  "slug": "fpadovani-arb-arab-10mb-after-ppt-dp-100mb-ckpt500_seed455",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/arb-arab-10mb-after-ppt-Dp-100mb-ckpt500_seed455",
+  "created_at": "2026-09-16T18:58:27.000Z",
+  "updated_at": "2026-09-16T20:07:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:fpadovani/arb-arab-10mb-ppt-Dp-100mb_seed455",
+    "base_model:finetune:fpadovani/arb-arab-10mb-ppt-Dp-100mb_seed455",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 39087104,
+  "parameters_human": "39.1M",
+  "storage_bytes": 2112540206,
+  "storage_human": "2.1 GB",
+  "base_model": "fpadovani/arb-arab-10mb-ppt-Dp-100mb_seed455",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Heart of the Forest | Valheim Wiki | Fandom",
+      "url": "https://valheim.fandom.com/wiki/Heart_of_the_Forest",
+      "snippet": "Heart of the Forest is a Black Forest -tier trinket, and one of the first available in the game. Once 50 Adrenaline has been gained, the …"
+    },
+    {
+      "title": "Heart of the Forest Trinket use? :: Valheim General Discussions",
+      "url": "https://steamcommunity.com/app/892970/discussions/0/682987821011577995/",
+      "snippet": "Dec 5, 2025 · Yeah, I was thinking the Bronze trinket with the stamina return might be better. But I figured I'd ask about the Heart of …"
+    },
+    {
+      "title": "Heart of the Forest: stats, upgrades and how to craft it",
+      "url": "https://www.valheim.tools/items/heart-of-the-forest",
+      "snippet": "Heart of the Forest is a Black Forest-tier trinket forged at the Forge from 5 Bronze, 5 Ancient Seed and one Greydwarf Shaman …"
+    },
+    {
+      "title": "Heart of the Forest | Valheim - EN",
+      "url": "https://valheim.gamecore.wiki/en/items/heart-of-the-forest/",
+      "snippet": "Effects Once 50 Adrenaline has been gained, the Heart of the Forest will trigger automatically, providing +25% Health regeneration …"
+    },
+    {
+      "title": "Trinkets | Valheim Wiki | Fandom",
+      "url": "https://valheim.fandom.com/wiki/Trinkets",
+      "snippet": "Equipping a trinket allows the player to gain Adrenaline, which will be spent automatically to trigger the trinket's effect once enough …"
+    }
+  ]
+}

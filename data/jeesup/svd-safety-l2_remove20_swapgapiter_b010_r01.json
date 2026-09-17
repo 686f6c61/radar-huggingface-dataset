@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l2_remove20_swapgapiter_b010_r01",
+  "slug": "jeesup-svd-safety-l2_remove20_swapgapiter_b010_r01",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l2_remove20_swapgapiter_b010_r01",
+  "created_at": "2026-09-17T10:36:11.000Z",
+  "updated_at": "2026-09-17T11:41:35.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama2",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-2-7b-chat-hf",
+    "base_model:finetune:meta-llama/Llama-2-7b-chat-hf",
+    "license:llama2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13477364771,
+  "storage_human": "13.5 GB",
+  "base_model": "meta-llama/Llama-2-7b-chat-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PDF24 Hilfezentrum",
+      "url": "https://help.pdf24.org/de/",
+      "snippet": "Jan 2, 2025 · Mit PDF24 können Sie kostenfrei elektronische Rechnungen erstellen. Dies kann online oder offline geschehen. Mit …"
+    },
+    {
+      "title": "PDF24 Help",
+      "url": "https://help.pdf24.org/",
+      "snippet": "Welcome to the PDF24 Help and Support Center Please choose a localized version of the help center: » PDF24 Hilfezentrum - …"
+    },
+    {
+      "title": "PDF24 for Linux? | PDF24 Help Center",
+      "url": "https://help.pdf24.org/en/forums/topic/pdf24-for-linux/",
+      "snippet": "Apr 13, 2026 · PDF24 for Linux? Home › Forums › PDF24 Creator › General › PDF24 for Linux? This topic has 3 replies, 4 voices, …"
+    },
+    {
+      "title": "How to create PDF files with PDF24",
+      "url": "https://help.pdf24.org/en/how-to-create-pdf-files-with-pdf24/",
+      "snippet": "Sep 10, 2018 · With PDF24 you can create PDF files in different ways. Whether online or offline, PDF24 gives you the tools you need …"
+    },
+    {
+      "title": "Anleitungen und Präsentationen zum PDF24 Creator",
+      "url": "https://help.pdf24.org/de/anleitungen-und-praesentationen-zum-pdf24-creator/",
+      "snippet": "Sep 21, 2018 · Zum PDF24 Creator gibt es ebenfalls einige Anleitungen und Präsentationen, die in der Vergangenheit erstellt …"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "alisa-yingjia-wan/gapa-predictor-olmo2-7b",
+  "slug": "alisa-yingjia-wan-gapa-predictor-olmo2-7b",
+  "author": "alisa-yingjia-wan",
+  "url": "https://huggingface.co/alisa-yingjia-wan/gapa-predictor-olmo2-7b",
+  "created_at": "2026-08-08T16:47:31.000Z",
+  "updated_at": "2026-09-17T00:58:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "regression",
+    "gender-bias",
+    "fairness",
+    "gapa",
+    "model-alignment",
+    "en",
+    "arxiv:2609.16366",
+    "base_model:allenai/OLMo-2-1124-7B",
+    "base_model:adapter:allenai/OLMo-2-1124-7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 35290519,
+  "storage_human": "35 MB",
+  "base_model": "allenai/OLMo2-7B-1124",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Proton Drive: Free secure cloud storage | Proton",
+      "url": "https://proton.me/drive",
+      "snippet": "Proton Drive for Windows allows you to sync any folder between your Windows desktop and the cloud. Your files are encrypted …"
+    },
+    {
+      "title": "Proton Drive : le stockage cloud gratuit et sécurisé | Proton",
+      "url": "https://proton.me/fr/drive",
+      "snippet": "Peut-on synchroniser les fichiers de son ordinateur avec Proton Drive ? Proton Drive pour Windows vous permet de synchroniser …"
+    },
+    {
+      "title": "Proton Drive",
+      "url": "https://drive.proton.me/login",
+      "snippet": "Securely store, share, and access your important files and photos. Anytime, anywhere."
+    },
+    {
+      "title": "Proton Drive: Sign-in",
+      "url": "https://account.proton.me/drive",
+      "snippet": "New to Proton? Create account. Trouble signing in? Proton. Privacy by default."
+    },
+    {
+      "title": "Proton Drive : connexion",
+      "url": "https://account.proton.me/fr/drive",
+      "snippet": "Vous n'avez pas encore de compte Proton ? Créer un compte. Un problème pour se connecter ? Proton. Privacy by default."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "ismael754/Bgjgj",
+  "slug": "ismael754-bgjgj",
+  "author": "ismael754",
+  "url": "https://huggingface.co/ismael754/Bgjgj",
+  "created_at": "2026-09-16T19:27:58.000Z",
+  "updated_at": "2026-09-16T19:29:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Le site officiel de la Wallonie",
+      "url": "https://www.wallonie.be/fr",
+      "snippet": "Le site officiel de la Wallonie : vos démarches administratives, les actualités et événements de votre Région, les acteurs et …"
+    },
+    {
+      "title": "La Région wallonne - Belgium.be",
+      "url": "https://www.belgium.be/fr/la_belgique/pouvoirs_publics/regions/region_wallonne",
+      "snippet": "May 6, 2026 · La Région wallonne dispose d'une assemblée législative, le Parlement wallon. Celui-ci compte 75 membres élus …"
+    },
+    {
+      "title": "Wallonie",
+      "url": "https://www.wallonie.be/fr/acteurs-et-institutions/wallonie",
+      "snippet": "La Wallonie ou Région wallonne est une région fédérée à pouvoir législatif, dotée d’instances et de compétences propres au sein de …"
+    },
+    {
+      "title": "Région wallonne — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/R%C3%A9gion_wallonne",
+      "snippet": "Sa capitale est Namur, Liège étant souvent citée comme capitale économique. C'est à la suite des revendications du Mouvement …"
+    },
+    {
+      "title": "Accueil - Les pouvoirs locaux en Wallonie",
+      "url": "https://interieur.wallonie.be/",
+      "snippet": "Actualité 25.06.2026 Cahier des finances locales 21 - Reprise du financement communal des zones de secours par les provinces …"
+    }
+  ]
+}

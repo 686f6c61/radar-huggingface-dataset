@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l2_remove50_swapgapiter_b010_r03",
+  "slug": "jeesup-svd-safety-l2_remove50_swapgapiter_b010_r03",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapgapiter_b010_r03",
+  "created_at": "2026-09-17T11:18:20.000Z",
+  "updated_at": "2026-09-17T11:31:31.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama2",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-2-7b-chat-hf",
+    "base_model:finetune:meta-llama/Llama-2-7b-chat-hf",
+    "license:llama2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13477364771,
+  "storage_human": "13.5 GB",
+  "base_model": "meta-llama/Llama-2-7b-chat-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Insolvenzbekanntmachungen",
+      "url": "https://www.insolvenzbekanntmachungen.de/",
+      "snippet": "Hier sollte eine Beschreibung angezeigt werden, diese Seite lässt dies jedoch nicht zu."
+    },
+    {
+      "title": "Insolvenzbekanntmachungen",
+      "url": "https://neu.insolvenzbekanntmachungen.de/ap/index.jsf",
+      "snippet": "Startseite Auf dieser Internetseite nehmen die Insolvenzgerichte der Bundesrepublik Deutschland die Bekanntmachungen vor, die …"
+    },
+    {
+      "title": "Justizportal des Bundes und der Länder: Insolvenz­bekanntmachungen",
+      "url": "https://justiz.de/onlinedienste/insolvenzbekanntmachungen/index.php",
+      "snippet": "Die Bundesländer haben ein gemeinsames Portal zur Veröffentlichung von Bekanntmachungen der Insolvenzgerichte eingerichtet. …"
+    },
+    {
+      "title": "Insolvenzbekanntmachungen 2026 - alle Gerichte suchen",
+      "url": "https://www.insolvenzindex.de/insolvenzbekanntmachungen",
+      "snippet": "11 hours ago · Alle aktuellen Insolvenzbekanntmachungen 2026 nach § 9 InsO. Stündlich aktualisierte Daten aus offiziellen …"
+    },
+    {
+      "title": "Justizportal des Bundes und der Länder: Bekanntmachungen",
+      "url": "https://justiz.de/bekanntmachungen/index.php",
+      "snippet": "Bekanntmachungen gemäß § 10 HGB und den sich darauf beziehenden weiteren Vorschriften sowie die Bekanntmachungen gemäß …"
+    }
+  ]
+}

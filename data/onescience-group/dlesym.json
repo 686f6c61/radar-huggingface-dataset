@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "OneScience-Group/DLESyM",
+  "slug": "onescience-group-dlesym",
+  "author": "OneScience-Group",
+  "url": "https://huggingface.co/OneScience-Group/DLESyM",
+  "created_at": "2026-09-17T11:08:00.000Z",
+  "updated_at": "2026-09-17T11:08:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "dlesym",
+    "OneScience",
+    "Earth Science",
+    "Earth System Model",
+    "Coupled Climate",
+    "Long Simulation",
+    "U-Net",
+    "en",
+    "arxiv:2409.16247",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Einde van belastingakkoord tussen België & Frankrijk voor …",
+      "url": "https://www.vandelanotte.be/current/public/nl/nieuws/einde-van-belastingakkoord-tussen-belgie-frankrijk-voor-grensarbeiders",
+      "snippet": "Sinds 18 maart 2025 gold er een bijzonder belastingakkoord tussen België en Frankrijk voor grensarbeiders in de openbare sector. …"
+    },
+    {
+      "title": "Internationale akkoorden - FOD Financiën",
+      "url": "https://financien.belgium.be/nl/vzws/internationale-akkoorden",
+      "snippet": "Het algemeen contactcenter staat te uwer beschikking voor het beantwoorden van al uw fiscale vragen en al uw vragen over de …"
+    },
+    {
+      "title": "Wonen en werken in verschillende EU-lidstaten | FOD Financiën",
+      "url": "https://fin.belgium.be/nl/particulieren/internationaal/wonen-werken-buitenland-belgie/verschillende-eu-lidstaten",
+      "snippet": "Ondanks het feit dat een grensarbeider op Belgisch grondgebied werkt, blijven zijn/haar Belgische beroepsinkomsten belastbaar in …"
+    },
+    {
+      "title": "Formaliteiten grensarbeiders te vervullen voor 31 maart 2025",
+      "url": "https://www.attentia.be/nl/nieuws/formaliteiten-voor-grensarbeiders-deadline-31-maart-2025",
+      "snippet": "Jan 30, 2025 · De grensarbeidersregeling is van toepassing op werknemers die wonen in de Franse grensstreek en werken in de …"
+    },
+    {
+      "title": "Franse grensarbeiders: documenten indienen tegen 31/03/2026",
+      "url": "https://www.partena-professional.be/nl/franse-grensarbeiders-documenten-indienen-tegen-31-maart-2026",
+      "snippet": "Mar 11, 2026 · De werkgever die in België Franse grensarbeiders heeft tewerkgesteld moet bepaalde documenten betreffende de …"
+    }
+  ]
+}

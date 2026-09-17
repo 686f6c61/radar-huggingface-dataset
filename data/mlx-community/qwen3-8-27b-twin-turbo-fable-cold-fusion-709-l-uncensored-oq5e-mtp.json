@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "mlx-community/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-oQ5e-mtp",
+  "slug": "mlx-community-qwen3-8-27b-twin-turbo-fable-cold-fusion-709-l-uncensored-oq5e-mtp",
+  "author": "mlx-community",
+  "url": "https://huggingface.co/mlx-community/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-oQ5e-mtp",
+  "created_at": "2026-09-17T11:12:27.000Z",
+  "updated_at": "2026-09-17T11:12:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "12 Best Hidden Gem Islands Worldwide: REVEALED",
+      "url": "https://pierreblake.com/hidden-gem-islands-guide-worldwide/",
+      "snippet": "Aug 30, 2026 · Check out these hidden gem islands worldwide: crowd-free shores, authentic culture, and unforgettable escapes off …"
+    },
+    {
+      "title": "The 9 best hidden gem islands for a secluded holiday",
+      "url": "https://www.timeout.com/worldwide/travel/best-secret-islands-in-the-world",
+      "snippet": "Jul 31, 2024 · With almost one million islands around the world, it shouldn’t come as a surprise that there are a few hidden spots just …"
+    },
+    {
+      "title": "30 Hidden Islands for the Ultimate Secluded Vacation - Travel",
+      "url": "https://www.travelandleisure.com/trip-ideas-island-vacations-best-secret-islands-on-earth-11926388",
+      "snippet": "May 8, 2026 · Looking for an escape from the crowds? Explore 30 secret islands offering secluded getaways, from tropical havens to …"
+    },
+    {
+      "title": "7 Stunning Islands, You Probably Never Heard Of, To Visit in 2026",
+      "url": "https://www.7continents1passport.com/hidden-gem-islands/",
+      "snippet": "Dec 23, 2025 · But if you’re looking for untouched, off-the-beaten-path islands without the herds of tourists where you can unwind …"
+    },
+    {
+      "title": "10 best hidden gem islands in the world to visit - AZ Big Media",
+      "url": "https://azbigmedia.com/lifestyle/travel/10-best-hidden-gem-islands-in-the-world-to-visit/",
+      "snippet": "Jul 8, 2025 · We’re diving into some of the best hidden gem islands in the world—places where the water’s still clear, the beaches are …"
+    }
+  ]
+}

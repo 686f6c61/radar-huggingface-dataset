@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "d4rkninja/tanpo-marketing-LoRA",
+  "slug": "d4rkninja-tanpo-marketing-lora",
+  "author": "d4rkninja",
+  "url": "https://huggingface.co/d4rkninja/tanpo-marketing-LoRA",
+  "created_at": "2026-09-16T04:32:58.000Z",
+  "updated_at": "2026-09-18T17:46:07.000Z",
+  "license": "lfm-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "marketing",
+    "tanpo",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:d4rkninja/tanpo-marketing-sft",
+    "base_model:LiquidAI/LFM2.5-1.2B-Instruct",
+    "base_model:adapter:LiquidAI/LFM2.5-1.2B-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 130622232,
+  "storage_human": "131 MB",
+  "base_model": "LiquidAI/LFM2.5-1.2B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "‘Fortnite’ Cat Holloway Blitz Royale Quests & Rewards",
+      "url": "https://featurefirst.net/fortnite-cat-holloway-blitz-royale-quests-rewards/",
+      "snippet": "Hit 45 Players within 15 Seconds of Landing Deal 5,000 Damage to Players with Mythic or Exotic Weapons Deal 5,000 Damage to …"
+    },
+    {
+      "title": "How to EASILY Damage opponents while inside or after exiting",
+      "url": "https://www.youtube.com/watch?v=s85T789Pa9s",
+      "snippet": "Oct 2, 2025 · How to EASILY Damage opponents while inside or after exiting Zoey's Bubble Shield in Fortnite. Do leave a comment if …"
+    },
+    {
+      "title": "Damage opponents while inside or after exiting Zoeys Bubble Shield Fortnite",
+      "url": "https://www.youtube.com/watch?v=SxEzE_AlGVM",
+      "snippet": "Oct 2, 2025 · Damage opponents while inside or after exiting Zoeys Bubble Shield Fortnite AdrianFN 290K subscribers Subscribe"
+    },
+    {
+      "title": "Shield Bubble | Fortnite Wiki | Fandom",
+      "url": "https://fortnite.fandom.com/wiki/Shield_Bubble",
+      "snippet": "The Shield Bubble is an effective counter to the Air Strike or Junk Rift, as both are blocked by the Bubble. It's double sided, so if the …"
+    },
+    {
+      "title": "Chapter 7: Season 1 Blitz Royale: Kickstart Quests",
+      "url": "https://fortnite.fandom.com/wiki/Chapter_7:_Season_1_Blitz_Royale:_Kickstart_Quests",
+      "snippet": "The Blitz Royale: Kickstart Quests were a set of Quests in Blitz Royale available since December 4th 2025. Blitz Royale: Kickstart …"
+    }
+  ]
+}

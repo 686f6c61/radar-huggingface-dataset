@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "OP12138/qwen3-4b-grpo",
+  "slug": "op12138-qwen3-4b-grpo",
+  "author": "OP12138",
+  "url": "https://huggingface.co/OP12138/qwen3-4b-grpo",
+  "created_at": "2026-09-17T11:31:29.000Z",
+  "updated_at": "2026-09-17T11:44:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "grpo",
+    "conversational",
+    "arxiv:2402.03300",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056411959,
+  "storage_human": "8.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Робота в Україні. Працевлаштування й пошук роботи на robota.ua",
+      "url": "https://robota.ua/",
+      "snippet": "Сайт пошуку роботи robota.ua. Зручні фільтри, якісна база вакансій і резюме - знайди кращу роботу у нас!"
+    },
+    {
+      "title": "Work.ua — сервіс пошуку роботи №1 в Україні",
+      "url": "https://www.work.ua/",
+      "snippet": "Work.ua — найбільший в Україні сервіс пошуку роботи та працівників. Більше 101 500 вакансій і кандидатів. Зручний пошук, …"
+    },
+    {
+      "title": "Работа в Украине. Трудоустройство и поиск работы на robota.ua",
+      "url": "https://robota.ua/ru",
+      "snippet": "Сайт поиска работы robota.ua. Удобные фильтры, качественная база вакансий и резюме - найди лучшую работу у нас!"
+    },
+    {
+      "title": "107 000 вакансій в Україні. Пошук вакансій і роботи — Work.ua",
+      "url": "https://www.work.ua/jobs/",
+      "snippet": "На Work.ua найбільша база відкритих вакансій в Україні. У нас ви зможете знайти роботу. Пошук вакансій за запитом, містами …"
+    },
+    {
+      "title": "Робота в Україні - 23.000+ актуальних вакансій - Jooble",
+      "url": "https://ua.jooble.org/",
+      "snippet": "Пошук роботи серед вакансій усіх провідних компаній і порталів по працевлаштуванню в Україні і за кордоном. Безкоштовно, …"
+    }
+  ]
+}

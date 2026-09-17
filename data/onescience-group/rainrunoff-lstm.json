@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "OneScience-Group/RainRunoff-LSTM",
+  "slug": "onescience-group-rainrunoff-lstm",
+  "author": "OneScience-Group",
+  "url": "https://huggingface.co/OneScience-Group/RainRunoff-LSTM",
+  "created_at": "2026-09-17T11:08:00.000Z",
+  "updated_at": "2026-09-17T11:08:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "rainrunoff_lstm",
+    "OneScience",
+    "Earth Science",
+    "Hydrology",
+    "LSTM",
+    "CAMELS",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chase Bank Locations in New York",
+      "url": "https://chase.banklocationmaps.com/en/usa/new-york/new-york-us",
+      "snippet": "Find local Chase Bank branch and ATM locations in New York, United States with addresses, opening hours, phone numbers, …"
+    },
+    {
+      "title": "Find a Chase ATM or branch near you | Chase Bank",
+      "url": "https://www.chase.com/locator",
+      "snippet": "See our Chase Total Checking® offer for new customers. Make purchases with your debit card, and bank from almost anywhere by …"
+    },
+    {
+      "title": "JPMorgan Chase Bank New York - US Bank Locations",
+      "url": "https://www.usbanklocations.com/jpmorgan-chase-bank-new-york.htm",
+      "snippet": "Complete list of 581 JPMorgan Chase Bank New York locations with financial information, routing numbers, reviews and other …"
+    },
+    {
+      "title": "Chase Bank - New York, NY (148 Branch Locations)",
+      "url": "https://www.branchspot.com/ny/new-york/chase-bank/",
+      "snippet": "148 Chase Bank Branch locations in New York, NY. Find a Location near you. View hours, phone numbers, reviews, routing …"
+    },
+    {
+      "title": "Chase Bank Branches in New York City, NY",
+      "url": "https://www.bankbranchlocator.com/chase-bank-offices-in-new-york-city-ny.html",
+      "snippet": "The locations of Chase Bank offices in New York City are displayed on the map below. For a complete list of all branches, including …"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "smlflg/CLFGUI",
+  "slug": "smlflg-clfgui",
+  "author": "smlflg",
+  "url": "https://huggingface.co/smlflg/CLFGUI",
+  "created_at": "2026-09-16T19:32:58.000Z",
+  "updated_at": "2026-09-16T19:32:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ghost Recon Breakpoint - jeuxvideo.com",
+      "url": "https://www.jeuxvideo.com/jeux/jeu-1042308/",
+      "snippet": "Mar 24, 2020 · Ghost Recon Breakpoint : retrouvez toutes les informations et actualités du jeu sur tous ses supports. Ghost Recon …"
+    },
+    {
+      "title": "Test de Ghost Recon Breakpoint par jeuxvideo.com",
+      "url": "https://www.jeuxvideo.com/test/1117403/ghost-recon-breakpoint-un-tps-authentique-et-genereux-a-partager.htm",
+      "snippet": "Oct 3, 2019 · Retrouvez le test de Ghost Recon Breakpoint : Un TPS authentique et généreux à partager du 03/10/2019.Wildlands …"
+    },
+    {
+      "title": "Forum Ghost Recon : Breakpoint - jeuxvideo.com",
+      "url": "https://www.jeuxvideo.com/forums/0-3016619-0-1-0-1-0-ghost-recon-breakpoint.htm",
+      "snippet": "Nov 12, 2021 · Bienvenue sur la page d'accueil du forum Ghost Recon : Breakpoint de jeuxvideo.com Voici la liste des topics du …"
+    },
+    {
+      "title": "Combat fratricide - Guide complet de Ghost Recon Breakpoint",
+      "url": "https://www.jeuxvideo.com/wikis-soluce-astuces/1140005/combat-fratricide.htm",
+      "snippet": "Nov 7, 2019 · Venez découvrir tout ce qu'il faut savoir sur la partie : \"Combat fratricide\" du jeu Ghost Recon Breakpoint dans son wiki."
+    },
+    {
+      "title": "Wildlands VS Breakpoint sur le forum Ghost Recon : Breakpoint - 08-10 ...",
+      "url": "https://www.jeuxvideo.com/forums/42-3016619-61027623-1-0-1-0-wildlands-vs-breakpoint.htm",
+      "snippet": "Oct 8, 2019 · Accueil Ghost Recon Breakpoint Tous les forums Forum Ghost Recon : Breakpoint Topic Wildlands VS Breakpoint …"
+    }
+  ]
+}

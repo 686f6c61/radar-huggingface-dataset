@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "smlflg/smlfg",
+  "slug": "smlflg-smlfg",
+  "author": "smlflg",
+  "url": "https://huggingface.co/smlflg/smlfg",
+  "created_at": "2026-09-16T19:22:17.000Z",
+  "updated_at": "2026-09-16T19:22:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EVOTEC AKTIE | EVT | Aktienkurs | DE0005664809 | News | 566480 ...",
+      "url": "https://www.finanzen.net/aktien/evotec-aktie",
+      "snippet": "EVOTEC SE Aktie Profil Evotec SE ist ein Unternehmen, das sich auf die Erforschung und Entwicklung von Wirkstoffen für die …"
+    },
+    {
+      "title": "Evotec Aktie (EVT) | Aktienkurs » DE0005664809 | wallstreetONLINE",
+      "url": "https://www.wallstreet-online.de/aktien/evotec-aktie",
+      "snippet": "Auf 7 Tage gesehen hat sich der Kurs der Evotec Aktie (ISIN DE0005664809) um -11,92% verändert. Der Verlust der Evotec Aktie …"
+    },
+    {
+      "title": "Evotec Aktie • 566480 • DE0005664809 • onvista",
+      "url": "https://www.onvista.de/aktien/Evotec-Aktie-DE0005664809",
+      "snippet": "Realtime Aktienkurs der Evotec Aktie mit Live-Chart & Kursentwicklung News & Analysen Jetzt kostenlos in dein onvista Musterdepot …"
+    },
+    {
+      "title": "EVOTEC AKTIEN News | 566480 Nachrichten",
+      "url": "https://www.finanznachrichten.de/nachrichten-aktien/evotec-se.htm",
+      "snippet": "1 day ago · Die Evotec-Aktie bleibt massiv unter Druck. Aktuell notiert das Papier auf bei rund 3,20 Euro und liegt damit seit …"
+    },
+    {
+      "title": "Evotec AKTIE | Aktienkurs & News | EVT | 566480 – boerse.de",
+      "url": "https://www.boerse.de/aktien/Evotec-Aktie/DE0005664809",
+      "snippet": "Evotec AKTIE (ISIN: DE0005664809): Realtime-Kurs der EVOTF Aktie in EUR Analysen & Performance aktuelle Nachrichten ⇒ die …"
+    }
+  ]
+}

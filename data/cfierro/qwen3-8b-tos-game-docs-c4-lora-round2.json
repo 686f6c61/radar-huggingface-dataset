@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "cfierro/qwen3-8b-tos-game-docs-c4-lora-round2",
+  "slug": "cfierro-qwen3-8b-tos-game-docs-c4-lora-round2",
+  "author": "cfierro",
+  "url": "https://huggingface.co/cfierro/qwen3-8b-tos-game-docs-c4-lora-round2",
+  "created_at": "2026-09-16T16:19:30.000Z",
+  "updated_at": "2026-09-17T01:18:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qwen3",
+    "axolotl",
+    "generated_from_trainer",
+    "dataset:cfierro/tos_game_synthetic_docs",
+    "dataset:cfierro/c4-en-tos-game-replay",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:adapter:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 360673655,
+  "storage_human": "361 MB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wat is een query? Simpele uitleg + Leer zelf queries maken!",
+      "url": "https://programmeerplaats.nl/wat-is-een-query/",
+      "snippet": "Sep 3, 2022 · Vraag jij je af wat een query is? Dan zit je hier goed! Een query is simpel gezegd een opdracht aan een database. Lees …"
+    },
+    {
+      "title": "Query - Wikipedia",
+      "url": "https://nl.wikipedia.org/wiki/Query",
+      "snippet": "Met een query (Engels voor vraagstelling) wordt in de informatica een opdracht bedoeld die aan een database wordt gegeven om …"
+    },
+    {
+      "title": "Query - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Query",
+      "snippet": "This disambiguation page lists articles associated with the title Query. If an internal link incorrectly led you here, you may wish to …"
+    },
+    {
+      "title": "Query Betekenis: Wat is het en Hoe Gebruik Je het Effectief?",
+      "url": "https://wooms.nl/query-betekenis/",
+      "snippet": "Feb 19, 2025 · In de wereld van computers en databases is een query een precieze instructie. Het vertelt de computer precies welke …"
+    },
+    {
+      "title": "Query - 11 definities - Encyclo",
+      "url": "https://www.encyclo.nl/begrip/Query",
+      "snippet": "Een query verwijst naar een specifieke combinatie van woorden die iemand in een zoekmachine typt om informatie te vinden. Het is …"
+    }
+  ]
+}

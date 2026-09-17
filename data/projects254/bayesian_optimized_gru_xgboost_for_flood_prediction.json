@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "PROJECTS254/BAYESIAN_OPTIMIZED_GRU_XGBOOST_FOR_FLOOD_PREDICTION",
+  "slug": "projects254-bayesian_optimized_gru_xgboost_for_flood_prediction",
+  "author": "PROJECTS254",
+  "url": "https://huggingface.co/PROJECTS254/BAYESIAN_OPTIMIZED_GRU_XGBOOST_FOR_FLOOD_PREDICTION",
+  "created_at": "2026-09-16T19:12:45.000Z",
+  "updated_at": "2026-09-16T19:17:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 130077,
+  "storage_human": "130077 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "2026年 9月 CPU天梯图（更新250/270K Plus&9850X3D）",
+      "url": "https://www.zhihu.com/tardis/zm/art/280070583",
+      "snippet": "9600X就是7500F的升级版，游戏性能进一步提升，也是目前不错的游戏CPU。 ④游戏+生产力性价比：14600KF 英特尔（Intel）i5 …"
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "2026年笔记本电脑CPU天梯图（9月）",
+      "url": "https://www.zhihu.com/tardis/zm/art/376305519",
+      "snippet": "2026年笔记本电脑CPU天梯图，笔记本电脑CPU排行，是按照CPU的跑分进行排序，进行综合性能对比。可以一定程度上反应CPU的 …"
+    },
+    {
+      "title": "2026年 9月 CPU天梯图（更新250/270K Plus&9850X3D）",
+      "url": "https://www.zhihu.com/tardis/bd/art/280070583",
+      "snippet": "桌面端CPU综合性能天梯图，提供最新的CPU性能排名和对比信息，帮助用户了解不同型号的表现和选择适合自己的产品。"
+    }
+  ]
+}

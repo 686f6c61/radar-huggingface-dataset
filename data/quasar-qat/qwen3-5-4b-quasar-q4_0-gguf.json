@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "id": "QUASAR-QAT/Qwen3.5-4B-QUASAR-Q4_0-GGUF",
+  "slug": "quasar-qat-qwen3-5-4b-quasar-q4_0-gguf",
+  "author": "QUASAR-QAT",
+  "url": "https://huggingface.co/QUASAR-QAT/Qwen3.5-4B-QUASAR-Q4_0-GGUF",
+  "created_at": "2026-09-16T19:15:38.000Z",
+  "updated_at": "2026-09-16T21:19:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "Qwen3.5",
+    "qwen3_5",
+    "qwen3.5-4b",
+    "qwen",
+    "q4_0",
+    "int4",
+    "4bit",
+    "4-bit precision",
+    "quantized",
+    "quantization",
+    "quantization-aware-training",
+    "qat",
+    "native-qat",
+    "quasar",
+    "ollama",
+    "lm-studio",
+    "multimodal",
+    "vision-language",
+    "vision",
+    "reasoning",
+    "thinking",
+    "long-context",
+    "mtp",
+    "speculative-decoding",
+    "image-text-to-text",
+    "arxiv:2608.13966",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:quantized:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 9620147456,
+  "storage_human": "9.6 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - quasar/Quasar: Remote Administration Tool for Windows",
+      "url": "https://github.com/quasar/Quasar",
+      "snippet": "Quasar is a fast and light-weight remote administration tool coded in C#. The usage ranges from user support through day-to-day …"
+    },
+    {
+      "title": "Quasar - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Quasar",
+      "snippet": "Quasar luminosities can vary considerably over time, depending on their surroundings. Since it is difficult to fuel quasars for many …"
+    },
+    {
+      "title": "Quasar Framework",
+      "url": "https://quasar.dev/",
+      "snippet": "Developer-oriented, front-end framework with Vue.js components for best-in-class high-performance, responsive websites, PWA, …"
+    },
+    {
+      "title": "Quasar — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Quasar",
+      "snippet": "Le quasar qui apparaît le plus brillant dans notre ciel est 3C 273, dans la constellation de la Vierge. Il a une magnitude apparente …"
+    },
+    {
+      "title": "Premium FiveM Scripts ESX QB Qbox | Quasar Store",
+      "url": "https://www.quasar-store.com/c/scripts",
+      "snippet": "Discover premium FiveM scripts for ESX, QB and Qbox. High-quality systems for jobs, housing, inventory, phone and advanced …"
+    }
+  ]
+}

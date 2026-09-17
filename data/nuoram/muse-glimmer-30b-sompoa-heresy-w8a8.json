@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "nuoram/Muse-Glimmer-30B-SOMPOA-heresy-W8A8",
+  "slug": "nuoram-muse-glimmer-30b-sompoa-heresy-w8a8",
+  "author": "nuoram",
+  "url": "https://huggingface.co/nuoram/Muse-Glimmer-30B-SOMPOA-heresy-W8A8",
+  "created_at": "2026-09-16T19:09:58.000Z",
+  "updated_at": "2026-09-16T20:11:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "muse_glimmer",
+    "image-text-to-text",
+    "muse-glimmer",
+    "heretic",
+    "sompoa",
+    "abliterated",
+    "uncensored",
+    "decensored",
+    "w8a8",
+    "int8",
+    "compressed-tensors",
+    "llmcompressor",
+    "vllm",
+    "multimodal",
+    "conversational",
+    "arxiv:2504.13181",
+    "arxiv:2602.06036",
+    "base_model:MuXodious/Muse-Glimmer-30B-SOMPOA-heresy",
+    "base_model:quantized:MuXodious/Muse-Glimmer-30B-SOMPOA-heresy",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 29776626688,
+  "parameters_human": "29.78B",
+  "storage_bytes": 34440301538,
+  "storage_human": "34.4 GB",
+  "base_model": "MuXodious/Muse-Glimmer-30B-SOMPOA-heresy",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "Outlook如何设置签名？添加Outlook签名-百度经验",
+      "url": "https://jingyan.baidu.com/article/eae07827d1ff0e5fec5485bb.html",
+      "snippet": "Dec 13, 2019 · Outlook如何设置签名？添加Outlook签名,Outlook是我们日常工作中经常用到的邮件收发工具。发送邮件时，在最后的 …"
+    },
+    {
+      "title": "Win11系统如何更改Microsoft store的下载路径？ - 知乎",
+      "url": "https://www.zhihu.com/question/564794300",
+      "snippet": "Nov 5, 2022 · 微软商店下载的软件默认是安装到C盘的，如果C盘空间比较紧凑的话我们就只能把软件安装到其他盘了。我们需要做两 …"
+    },
+    {
+      "title": "Outlook如何设置延迟（定时）发送邮件-百度经验",
+      "url": "https://jingyan.baidu.com/article/15622f244e9c16bcfcbea5fd.html",
+      "snippet": "Oct 13, 2020 · Outlook如何设置延迟（定时）发送邮件,你知道吗？Outlook可以设置延迟发送邮件，设置之后，如果邮件发送出去之后 …"
+    },
+    {
+      "title": "7-Zip 官方网站怎么下载？ - 知乎",
+      "url": "https://www.zhihu.com/question/20498753",
+      "snippet": "7-Zip 是一个功能强大的工具，特别适合需要 高效压缩 和 解压缩 功能的用户。比如 IT 专业人员、软件开发者或普通用户希望节省磁 …"
+    }
+  ]
+}

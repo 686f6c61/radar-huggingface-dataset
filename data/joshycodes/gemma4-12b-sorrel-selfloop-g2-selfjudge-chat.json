@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "joshycodes/gemma4-12b-sorrel-selfloop-g2-selfjudge-chat",
+  "slug": "joshycodes-gemma4-12b-sorrel-selfloop-g2-selfjudge-chat",
+  "author": "joshycodes",
+  "url": "https://huggingface.co/joshycodes/gemma4-12b-sorrel-selfloop-g2-selfjudge-chat",
+  "created_at": "2026-09-16T19:10:30.000Z",
+  "updated_at": "2026-09-16T20:20:14.000Z",
+  "license": "internal-research",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma4_unified",
+    "flourishing-training",
+    "continued-pretraining",
+    "base_model:joshycodes/gemma4-12b-sorrel-selfloop-g2-midtrain",
+    "base_model:finetune:joshycodes/gemma4-12b-sorrel-selfloop-g2-midtrain",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11959730224,
+  "parameters_human": "11.96B",
+  "storage_bytes": 23951724999,
+  "storage_human": "24.0 GB",
+  "base_model": "joshycodes/gemma4-12b-sorrel-selfloop-g2-midtrain",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.de/",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=de",
+      "snippet": "Werbeprogramme Über Google Google.com in English © 2026 - Datenschutzerklärung - Nutzungsbedingungen"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com.nf/?hl=de-US",
+      "snippet": "Google gibt es auch auf: English Werbeprogramme Über Google Google.com"
+    },
+    {
+      "title": "Google Übersetzer",
+      "url": "https://translate.google.de/",
+      "snippet": "Mit diesem kostenlosen Google-Dienst lassen sich Wörter, Sätze und Webseiten sofort zwischen Deutsch und über 100 Sprachen …"
+    },
+    {
+      "title": "Google Konto",
+      "url": "https://www.google.com/intl/de/account/about/",
+      "snippet": "Im Google-Konto können Sie Ihre Informationen, Aktivitäten, Sicherheitsoptionen und Datenschutzeinstellungen ansehen und …"
+    }
+  ]
+}

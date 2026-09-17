@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l2_remove50_swapgapiter_b010_r04",
+  "slug": "jeesup-svd-safety-l2_remove50_swapgapiter_b010_r04",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapgapiter_b010_r04",
+  "created_at": "2026-09-17T11:31:34.000Z",
+  "updated_at": "2026-09-17T11:36:33.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama2",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-2-7b-chat-hf",
+    "base_model:finetune:meta-llama/Llama-2-7b-chat-hf",
+    "license:llama2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13477364771,
+  "storage_human": "13.5 GB",
+  "base_model": "meta-llama/Llama-2-7b-chat-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Khor Fakkan (petite ville des Émirats Arabes Unis) - Guide voyage",
+      "url": "https://voyageforum.com/guides/khor_fakkan/",
+      "snippet": "Khor Fakkan: c'est une enclave du Sharjah en territoire du Fujairah. La ville est à la fois port industriel et station balnéaire face à la …"
+    },
+    {
+      "title": "Thèmes - Voyage Forum",
+      "url": "https://voyageforum.com/forum/C2/",
+      "snippet": "Réussir son trek en pays humide: quel pantalon pour rester vraiment au sec?"
+    },
+    {
+      "title": "voyageforum adserver",
+      "url": "https://ads.voyageforum.com/",
+      "snippet": "Sign In Forgot password? Don't have an account? Register"
+    },
+    {
+      "title": "Actualité du voyage | VoyageForum",
+      "url": "https://voyageforum.com/forum/actualite-voyage/",
+      "snippet": "Trouvez des offres de séjours uniques avec nos partenaires Forum Actualité voyage sur Voyage Forum"
+    },
+    {
+      "title": "Compagnons de voyage - VoyageForum",
+      "url": "https://voyageforum.com/forum/compagnons-de-voyage/",
+      "snippet": "Dernières suggestions de lecture sur VoyageForum: Forum Compagnons de voyage sur Voyage Forum"
+    }
+  ]
+}

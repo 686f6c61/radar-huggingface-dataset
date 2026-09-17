@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "alright837492/tuned_medgemma4b",
+  "slug": "alright837492-tuned_medgemma4b",
+  "author": "alright837492",
+  "url": "https://huggingface.co/alright837492/tuned_medgemma4b",
+  "created_at": "2026-09-16T14:04:08.000Z",
+  "updated_at": "2026-09-17T02:15:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "grpo",
+    "arxiv:2402.03300",
+    "base_model:google/medgemma-1.5-4b-it",
+    "base_model:finetune:google/medgemma-1.5-4b-it",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10513517336,
+  "storage_human": "10.5 GB",
+  "base_model": "google/medgemma-1.5-4b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ما هو قماش الليكرا؟",
+      "url": "https://khoyott.com/h/%D9%85%D8%A7-%D9%87%D9%88-%D9%82%D9%85%D8%A7%D8%B4-%D8%A7%D9%84%D9%84%D9%8A%D9%83%D8%B1%D8%A7",
+      "snippet": "قماش الليكرا الممزوج بالقطن (قطن الليكرا): ويعد هذا النوع من أفضل أنواع الأقمشة التي يتم استخدامها في صناعة ملابس متينة، مقاومة لعوامل التجعد الخارجية، وسهلة التنظيف إذا تعرضت لأي بقع."
+    },
+    {
+      "title": "قماش شعيرات ليكرا: كل ما تحتاج معرفته عن هذا القماش المميز",
+      "url": "https://ar.aliexpress.com/s/wiki-ssr/article/%D9%82%D9%85%D8%A7%D8%B4-%D8%B4%D8%B9%D9%8A%D8%B1%D8%A7%D8%AA-%D9%84%D9%8A%D9%83%D8%B1%D8%A7",
+      "snippet": "قماش شعيرات ليكرا هو نوع من الأقمشة التي تجمع بين مرونة الليكرا ونعومة الشعيرات، مما يجعله خيارًا مثاليًا لعدد كبير من الاستخدامات، سواء في صناعة الملابس أو في المشاريع اليدوية."
+    },
+    {
+      "title": "قماش ليكرا | أفضل جودة وتصميم لا مثيل له - احصل عليه اليوم!",
+      "url": "https://alnassaj.com/ar/lycra-furniture-fabric/",
+      "snippet": "Oct 9, 2023 · تسوق قماش ليكرا المميز والعصري بأفضل الأسعار. احصل على قطع مصممة بأرقى التفاصيل والجودة العالية، ضمان الراحة والأناقة."
+    },
+    {
+      "title": "مخصصة ، عالية الجودة ، قوية قماش ليكرا لنزينج - Alibaba.com",
+      "url": "https://arabic.alibaba.com/g/lenzing-lycra-fabric.html",
+      "snippet": "تقدم Alibaba.com جودة عالية قماش ليكرا لنزينج. تصفح المجموعة الواسعة من قماش ليكرا لنزينج المباعة بواسطة بائعين معتمدين بأسعار تنافسية."
+    },
+    {
+      "title": "قماش ليكرا عالي الجودة قابل للتمدد في 4 اتجاهات للملابس الرياضية",
+      "url": "https://arabic.alibaba.com/g/lycra-fabric-4-way-stretch.html",
+      "snippet": "تسوق قماش ليكرا عالي الجودة يتمدد في 4 اتجاهات للملابس الرياضية وملابس اليوغا. يمكنك العثور على خيارات متينة ومريحة وأنيقة من موردين موثوقين."
+    }
+  ]
+}

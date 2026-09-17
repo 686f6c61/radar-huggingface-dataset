@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "mradermacher/hermeo-7b-laser-GGUF",
+  "slug": "mradermacher-hermeo-7b-laser-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/hermeo-7b-laser-GGUF",
+  "created_at": "2024-12-23T10:17:52.000Z",
+  "updated_at": "2026-09-16T21:06:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "laserRMT",
+    "mistral",
+    "en",
+    "base_model:cstr/hermeo-7b-laser",
+    "base_model:quantized:cstr/hermeo-7b-laser",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 100,
+  "trending_score": 0,
+  "parameters": 7241748480,
+  "parameters_human": "7.24B",
+  "storage_bytes": 63929969536,
+  "storage_human": "63.9 GB",
+  "base_model": "cstr/hermeo-7b-laser",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube TV Help",
+      "url": "https://support.google.com/youtubetv/?hl=en",
+      "snippet": "Official YouTube TV Help Center where you can find tips and tutorials on using YouTube TV and other answers to frequently asked …"
+    },
+    {
+      "title": "YouTube 動画をアップロードする - パソコン - YouTube ヘルプ",
+      "url": "https://support.google.com/youtube/answer/57407?hl=ja&co=GENIE.Platform%3DDesktop",
+      "snippet": "YouTube に動画をアップロードする手順は簡単です。パソコンやモバイル デバイスから動画をアップロードする手順は次のとおり …"
+    },
+    {
+      "title": "Test de Marvel's Wolverine sur PS5 par jeuxvideo.com",
+      "url": "https://www.jeuxvideo.com/test/2102740/marvel-s-wolverine-le-blockbuster-ps5-dans-toute-sa-splendeur-mais-est-ce-suffisant.htm",
+      "snippet": "6 days ago · Retrouvez le test de Marvel’s Wolverine : Le blockbuster PS5 dans toute sa splendeur, mais est-ce suffisant ? sur PS5 …"
+    },
+    {
+      "title": "Test de MARVEL Tokon : Fighting Souls par jeuxvideo.com",
+      "url": "https://www.jeuxvideo.com/test/2098320/test-de-marvel-tokon-un-jeu-qui-rendra-fou-les-fans-dans-le-bon-comme-le-mauvais-sens-du-terme.htm",
+      "snippet": "Aug 12, 2026 · Après Marvel Rivals ou encore Marvel Snap, les super-héros sont de retour dans un tout nouveau jeu de combat, …"
+    },
+    {
+      "title": "Ayuda de YouTube",
+      "url": "https://support.google.com/youtube/?hl=es",
+      "snippet": "Centro de asistencia oficial de YouTube donde puedes encontrar sugerencias y tutoriales para aprender a utilizar el producto y …"
+    }
+  ]
+}

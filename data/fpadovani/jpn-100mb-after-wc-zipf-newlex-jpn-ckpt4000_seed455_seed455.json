@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/jpn-100mb-after-wc-zipf-newlex-jpn-ckpt4000_seed455_seed455",
+  "slug": "fpadovani-jpn-100mb-after-wc-zipf-newlex-jpn-ckpt4000_seed455_seed455",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/jpn-100mb-after-wc-zipf-newlex-jpn-ckpt4000_seed455_seed455",
+  "created_at": "2026-09-17T11:21:36.000Z",
+  "updated_at": "2026-09-17T13:19:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:fpadovani/ppt-wc-zipf-newlex-jpn-100mb_seed455",
+    "base_model:finetune:fpadovani/ppt-wc-zipf-newlex-jpn-100mb_seed455",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 7238755439,
+  "storage_human": "7.2 GB",
+  "base_model": "fpadovani/ppt-wc-zipf-newlex-jpn-100mb_seed455",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ibis budget Hamburg Quickborn (Hotel) (Deutschland) Angebote",
+      "url": "https://www.booking.com/hotel/de/ibis-budget-hamburg-quickborn.de.html?msockid=264f24874a31664b21ec33504b696775",
+      "snippet": "Das ruhig gelegene Ibis budget Hamburg Quickborn liegt verkehrsgünstig in Quickborn, nur 25 km vom Stadtzentrum von Hamburg …"
+    },
+    {
+      "title": "Günstiges Hotel Hamburg Quickborn - ibis budget - Accor - ALL",
+      "url": "https://all.accor.com/hotel/2645/index.de.shtml?msockid=264f24874a31664b21ec33504b696775",
+      "snippet": "Auf der Suche nach einem günstigen Hotel in Hamburg Quickborn? Das ibis budget Hamburg Quickborn liegt verkehrsgünstig für …"
+    },
+    {
+      "title": "Economy Hotel Hamburg Quickborn - ibis budget - Accor - ALL",
+      "url": "https://all.accor.com/hotel/2645/index.en.shtml?msockid=264f24874a31664b21ec33504b696775",
+      "snippet": "Our affordable prices include comfortable beds, rooms equipped with charging stations, 24/7 access, free WIFI and much more! …"
+    },
+    {
+      "title": "ibis budget Hotel Hamburg Quickborn - HolidayCheck",
+      "url": "https://www.holidaycheck.de/hi/ibis-budget-hotel-hamburg-quickborn/85aaea7b-357d-3fa4-8b03-cb1e9c18ef36",
+      "snippet": "Das 20 - 30 Min. vom Zentrum entfernt gelegene ibis budget Quickborn erreichen Sie über die nahe Autobahn A7. Das Hotel verfügt …"
+    },
+    {
+      "title": "Hotel ibis budget Hamburg Quickborn, Deutschland - trivago.de",
+      "url": "https://www.trivago.de/de/oar/hotel-ibis-budget-hamburg-quickborn?search=100-134811&msockid=264f24874a31664b21ec33504b696775",
+      "snippet": "Sep 1, 2026 · Vergleichen Sie Hotelpreise und finden Sie den günstigsten Preis für ibis budget Hamburg Quickborn Hotel für das …"
+    }
+  ]
+}

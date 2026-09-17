@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "HunTeR255/meetinglab-models",
+  "slug": "hunter255-meetinglab-models",
+  "author": "HunTeR255",
+  "url": "https://huggingface.co/HunTeR255/meetinglab-models",
+  "created_at": "2026-09-17T06:14:41.000Z",
+  "updated_at": "2026-09-17T19:44:06.000Z",
+  "license": "mixed",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "coreml",
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "coreml",
+    "onnx",
+    "sentence-embeddings",
+    "ios",
+    "ru",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2316127836,
+  "storage_human": "2.3 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Online-Banking | Sparkasse Vest Recklinghausen",
+      "url": "https://www.sparkasse-re.de/de/home/service/online-mobile-banking.html",
+      "snippet": "Das Online-Banking Ihrer Sparkasse bietet eine Vielzahl an Vorteilen: Sicheres Banking, bequem von Zuhause Kontostände …"
+    },
+    {
+      "title": "Login Online-Banking - sparkasse-re.de",
+      "url": "https://www.sparkasse-re.de/de/home/login-online-banking.html",
+      "snippet": "Melden Sie sich jetzt sicher im Online-Banking an und greifen Sie auf Ihre Konten, Finanzdaten und einer Vielzahl weiterer …"
+    },
+    {
+      "title": "Internet-Filiale - Sparkasse Vest Recklinghausen",
+      "url": "https://www.sparkasse-re.de/de/home.html",
+      "snippet": "Ihr Finanzpartner im Internet. Mit sicherem Online-Banking, vielen Angeboten und Services für Privat- und Firmenkunden."
+    },
+    {
+      "title": "Login Online-Banking - sparkasse-re.de",
+      "url": "https://www.sparkasse-re.de/fi/home/login-online-banking.html",
+      "snippet": "Melden Sie sich jetzt sicher im Online-Banking an und greifen Sie auf Ihre Konten, Finanzdaten und einer Vielzahl weiterer …"
+    },
+    {
+      "title": "Online-Banking mit pushTAN | Sparkasse Vest Recklinghausen",
+      "url": "https://www.sparkasse-re.de/de/home/service/online-mobile-banking/pushtan.html",
+      "snippet": "pushTAN ist ein sicheres Verfahren zur Freigabe von Online-Banking-Transaktionen. Dabei erhalten Sie eine Push-Nachricht direkt …"
+    }
+  ]
+}

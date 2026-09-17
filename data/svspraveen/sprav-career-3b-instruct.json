@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "SVSPraveen/SPrav-Career-3B-Instruct",
+  "slug": "svspraveen-sprav-career-3b-instruct",
+  "author": "SVSPraveen",
+  "url": "https://huggingface.co/SVSPraveen/SPrav-Career-3B-Instruct",
+  "created_at": "2026-09-16T19:32:58.000Z",
+  "updated_at": "2026-09-16T22:46:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "career",
+    "resume",
+    "ats-optimization",
+    "executive-outreach",
+    "compensation-negotiation",
+    "qwen2.5",
+    "unsloth",
+    "dpo",
+    "text-generation",
+    "en",
+    "base_model:unsloth/Qwen2.5-Coder-3B-Instruct-bnb-4bit",
+    "base_model:quantized:unsloth/Qwen2.5-Coder-3B-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 1929902656,
+  "storage_human": "1.9 GB",
+  "base_model": "unsloth/Qwen2.5-Coder-3B-Instruct-bnb-4bit",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Porn Videos & XXX Movies: Sex Videos Tube | xHamster",
+      "url": "https://xhamster.com/",
+      "snippet": "Free porn videos and exclusive XXX movies are here at xHamster. Instantly stream 6M+ hardcore sex videos from pros and …"
+    },
+    {
+      "title": "Vidéos pornos gratuites et films XXX : site de vidéos de sexe | xHamster",
+      "url": "https://fra.xhamster.com/",
+      "snippet": "Vidéos pornos gratuites et films XXX exclusifs sur xHamster. Regardez instantannément + de 6 millions de vidéos de sexe hardcore …"
+    },
+    {
+      "title": "Porn Video Categories and All Sex Niches - xHamster",
+      "url": "https://xhamster.com/categories",
+      "snippet": "Come browse a complete list of all porn video categories on xHamster, including all the rarest sex niches. Find XXX videos you like!"
+    },
+    {
+      "title": "Porno en français : Vidéos de cul avec son Français | xHamster",
+      "url": "https://fra.xhamster.com/categories/fr",
+      "snippet": "Trouvez les pornos en français les plus excitants à regarder gratuitement. Profitez de vidéos Français avec des actrices ou acteurs …"
+    },
+    {
+      "title": "Vidéos porno gratuites de xHamster TV",
+      "url": "https://xhamster.tv/fr/",
+      "snippet": "xHamster TV - un tout nouveau monde de porno gratuit. Regardez vos vidéos XXX préférées quotidiennement car ce n'est que sur …"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "OneScience-Group/NNCAM-Stable",
+  "slug": "onescience-group-nncam-stable",
+  "author": "OneScience-Group",
+  "url": "https://huggingface.co/OneScience-Group/NNCAM-Stable",
+  "created_at": "2026-09-17T11:08:00.000Z",
+  "updated_at": "2026-09-17T11:08:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "nncam_stable",
+    "OneScience",
+    "Earth Science",
+    "GCM",
+    "Neural Parameterization",
+    "Stable Climate",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GMX - kostenlose E-Mail, Cloud, Nachrichten & Freemail",
+      "url": "https://www.gmx.net/",
+      "snippet": "Kostenlose E-Mail-Adresse erstellen, Nachrichten lesen und Fotos & Dateien in der GMX Cloud sicher speichern. Jetzt registrieren!"
+    },
+    {
+      "title": "GMX Login – ganz einfach",
+      "url": "https://anmelden.gmx.net/",
+      "snippet": "Rufen Sie im Browser Ihres internetfähigen Mobilgerätes einfach www.gmx.net auf und tippen Sie das Briefsymbol in der Kopfleiste …"
+    },
+    {
+      "title": "GMX E-Mail sichere & kostenlose E-Mail-Adresse",
+      "url": "https://www.gmx.net/mail/",
+      "snippet": "Wie logge ich mich in mein GMX Postfach ein? Sie haben schon ein Postfach für Ihre Mails bei GMX? Hier geht’s zum E-Mail-Login. …"
+    },
+    {
+      "title": "Login",
+      "url": "https://dv.gmx.net/",
+      "snippet": "Mobiler GMX Login: Auf dieser Seite können Sie sich mit dem Smartphone oder Tablet einfach und sicher unterwegs in Ihr GMX …"
+    },
+    {
+      "title": "Einloggen bei GMX",
+      "url": "https://hilfe.gmx.net/account/login/index.html",
+      "snippet": "Sie haben Fragen oder ein Problem mit dem Login in Ihr Postfach? Hier finden Sie die relevanten Informationen."
+    }
+  ]
+}

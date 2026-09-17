@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "CH3NDev/dual-loop-qwen3.5-2b",
+  "slug": "ch3ndev-dual-loop-qwen3-5-2b",
+  "author": "CH3NDev",
+  "url": "https://huggingface.co/CH3NDev/dual-loop-qwen3.5-2b",
+  "created_at": "2026-09-16T05:38:07.000Z",
+  "updated_at": "2026-09-18T06:19:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen",
+    "qwen3.5",
+    "qwen3.5-2b",
+    "dual-loop",
+    "cognitive-controller",
+    "recurrent-latent-deliberation",
+    "system-2",
+    "reasoning",
+    "peft",
+    "matrix-helper",
+    "elimination-by-aspects",
+    "artificial-brain",
+    "zero-gpu",
+    "text-generation",
+    "en",
+    "id",
+    "dataset:ai2_arc",
+    "dataset:sciq",
+    "dataset:openbookqa",
+    "dataset:piqa",
+    "dataset:lukaemon/bbh",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:adapter:Qwen/Qwen3.5-2B",
+    "license:mit",
+    "model-index",
+    "eval-results",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2592958196,
+  "storage_human": "2.6 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Middle East news - breaking news, video, headlines and opinion | CNN",
+      "url": "https://www.cnn.com/world/middle-east",
+      "snippet": "View the latest Middle East news from Israel, Iran, Iraq, Syria and other Middle Eastern countries on CNN.com."
+    },
+    {
+      "title": "China news - breaking news, video, headlines and opinion | CNN",
+      "url": "https://www.cnn.com/world/china",
+      "snippet": "View the latest China news and videos, including politics, travel and business headlines."
+    },
+    {
+      "title": "CNN.com - World Report: Main Page",
+      "url": "https://us.cnn.com/WORLD/world.report/",
+      "snippet": "The Swiss mountain village of Zermatt is one of the world's most famous ski and climbing centers. Nicknamed \"The Mountain …"
+    },
+    {
+      "title": "US fears cyber security breach in China - CNN",
+      "url": "https://www.cnn.com/2026/05/14/world/video/us-fears-cyber-security-breach-in-china-digvid-vrtc",
+      "snippet": "May 14, 2026 · CNN’s Kristen Holmes reports US officials traveling with President Donald Trump in China were warned of serious …"
+    },
+    {
+      "title": "Andy Burnham becomes UK’s seventh prime minister in a decade",
+      "url": "https://www.cnn.com/2026/07/20/world/live-news/andy-burnham-uk-prime-minister-intl",
+      "snippet": "Jul 20, 2026 · Andy Burnham pledged to make politics “work better” in his first speech as the UK’s seventh prime minister in a …"
+    }
+  ]
+}

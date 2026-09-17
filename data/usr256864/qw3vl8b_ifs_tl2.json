@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "usr256864/qw3vl8b_ifs_tl2",
+  "slug": "usr256864-qw3vl8b_ifs_tl2",
+  "author": "usr256864",
+  "url": "https://huggingface.co/usr256864/qw3vl8b_ifs_tl2",
+  "created_at": "2026-09-17T09:19:56.000Z",
+  "updated_at": "2026-09-19T12:44:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_vl",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 418,
+  "trending_score": 0,
+  "parameters": 8767123696,
+  "parameters_human": "8.77B",
+  "storage_bytes": 35080101546,
+  "storage_human": "35.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "如何评价歌手XXXtentacion？ - 知乎",
+      "url": "https://www.zhihu.com/question/62850940",
+      "snippet": "如何评价歌手XXXTENTACION？讨论其音乐风格、个人经历及影响力的全面分析。"
+    },
+    {
+      "title": "俄罗斯搜索引擎网址 yandex官网入口直达 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/725567645356284605.html",
+      "snippet": "Nov 11, 2025 · 俄罗斯搜索引擎网址 yandex官网入口直达Yandex的官方网址如下：国际版入口：https://yandex.com/俄罗斯本土版入 …"
+    },
+    {
+      "title": "Mamãe Que Nos Faz | dafont.com",
+      "url": "https://www.dafont.com/pt/mamae-que-nos-faz.font",
+      "snippet": "Mar 25, 2007 · Mamãe Que Nos Faz | dafont.com Fonte criada para caligrafia em colégios e educandários. Criada especialmente …"
+    },
+    {
+      "title": "《强军战歌》歌词 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/580982599.html",
+      "snippet": "《强军战歌》歌词新征程号角震天响，强军目标我们来担当！国兴旺，无数先烈的梦想，战旗上写满铁血荣光。将士们听党指挥，英勇 …"
+    },
+    {
+      "title": "「Stay hungry. Stay foolish.」最好的汉语翻译是什么？ - 知乎",
+      "url": "https://www.zhihu.com/question/19557797",
+      "snippet": "对 “Stay hungry, Stay foolish” 最常见的翻译应该就是“求知若饥，虚心若愚”了，当然这么理解也不是什么坏事，只不过乔布斯想表达的 …"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "khusipatra195/best_efficientnet_unet_model",
+  "slug": "khusipatra195-best_efficientnet_unet_model",
+  "author": "khusipatra195",
+  "url": "https://huggingface.co/khusipatra195/best_efficientnet_unet_model",
+  "created_at": "2026-09-17T11:19:04.000Z",
+  "updated_at": "2026-09-17T11:19:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BLACK+DECKER Portable Corded Vacuum Cleaner, 1000W, with 1L",
+      "url": "https://www.amazon.ae/BLACK-DECKER-Portable-Anti-Tangle-Indicator/dp/B071WM22H7",
+      "snippet": "BLACK+DECKER Portable Corded Vacuum Cleaner, 1000W, with 1L Dust Bag, 3-Speed Settings for Deep Cleaning, Anti-Tangle …"
+    },
+    {
+      "title": "Buy Black + Decker Bd-Vm1200-B5 Portable Corded Vacuum Cleaner, …",
+      "url": "https://www.danubehome.com/ae/en/p/black-+-decker-bd-vm1200-b5-portable-corded-vacuum-cleaner-1000w-179900131672",
+      "snippet": "Shop Black + Decker Bd-Vm1200-B5 Portable Corded Vacuum Cleaner, 1000W at the best prices. Free delivery across Dubai, Abu …"
+    },
+    {
+      "title": "1000W Bagged Vacuum Cleaner | BLACK+DECKER",
+      "url": "https://www.blackanddecker.ae/product/vm1200-b5/1000w-bagged-vacuum-cleaner",
+      "snippet": "You can download the relevant product manual for this item by visiting our dedicated service website following the direct link below."
+    },
+    {
+      "title": "Black+Decker 1000W Bagged Vacuum Cleaner, VM1200-B5",
+      "url": "https://gcc.luluhypermarket.com/en-ae/black-decker-1000w-bagged-vacuum-cleaner-vm1200-b5/p/1221166/",
+      "snippet": "Buy Black+Decker 1000W Bagged Vacuum Cleaner, VM1200-B5 online at the best price with a great offer and fast delivery across …"
+    },
+    {
+      "title": "BLACK+DECKER (Renewed) Portable Corded Vacuum Cleaner, 1000W …",
+      "url": "https://www.amazon.ae/BLACK-DECKER-Portable-Settings-Cleaning/dp/B0GTJ9FZ92",
+      "snippet": "Buy BLACK+DECKER (Renewed) Portable Corded Vacuum Cleaner, 1000W, with 1L Dust Bag, 3-Speed Settings for Deep …"
+    }
+  ]
+}

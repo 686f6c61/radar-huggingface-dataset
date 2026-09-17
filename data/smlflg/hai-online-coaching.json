@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "smlflg/HAI-ONLINE-Coaching",
+  "slug": "smlflg-hai-online-coaching",
+  "author": "smlflg",
+  "url": "https://huggingface.co/smlflg/HAI-ONLINE-Coaching",
+  "created_at": "2026-09-16T19:32:32.000Z",
+  "updated_at": "2026-09-16T19:32:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "International technical guidance on sexuality education",
+      "url": "https://www.who.int/publications/m/item/9789231002595",
+      "snippet": "Mar 14, 2018 · Comprehensive sexuality education (CSE) plays a central role in the preparation of young people for a safe, …"
+    },
+    {
+      "title": "Éducation complète à la sexualité",
+      "url": "https://www.who.int/fr/news-room/questions-and-answers/item/comprehensive-sexuality-education",
+      "snippet": "May 18, 2023 · L’éducation à la sexualité enseigne aux enfants et aux jeunes les connaissances, les compétences, les …"
+    },
+    {
+      "title": "ᐅ Ausschabung: Nachsorge und Verhaltensregeln danach",
+      "url": "https://www.paradisi.de/schwangerschaft/ausschabung/hilfe-umgang-danach/",
+      "snippet": "Ausschabung: Nachsorge und Verhaltensregeln danach Eine Ausschabung ist ein routinemäßiger und risikoarmer Eingriff. In der …"
+    },
+    {
+      "title": "英文中「sex」和「gender」有什么区别？ - 知乎",
+      "url": "https://www.zhihu.com/question/19947743",
+      "snippet": "Dec 2, 2011 · Sex = male and female Gender = masculine and feminine So in essence: Sex refers to biological differences; …"
+    },
+    {
+      "title": "ᐅ Sex ist gesundheitsfördernd - Wie die Sexualhormone beim Sex ...",
+      "url": "https://www.paradisi.de/laborwerte/geschlechtshormone/sexualhormone-beim-sex/",
+      "snippet": "Sex kann sich positiv auf die Gesundheit auswirken. Verantwortlich für die gesundheitsfördernden Effekte sind Sexualhormone wie …"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "sriq-ai/sriq-spark-v1.4",
+  "slug": "sriq-ai-sriq-spark-v1-4",
+  "author": "sriq-ai",
+  "url": "https://huggingface.co/sriq-ai/sriq-spark-v1.4",
+  "created_at": "2026-09-17T11:16:35.000Z",
+  "updated_at": "2026-09-17T13:21:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "spark2_5",
+    "text-generation",
+    "sft",
+    "reasoning",
+    "unsloth",
+    "text-to-text",
+    "conversational",
+    "custom_code",
+    "dataset:sriq-ai/sriq-sft-v1.4",
+    "base_model:XHToken/Spark-X2.5-4B",
+    "base_model:finetune:XHToken/Spark-X2.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4112079360,
+  "parameters_human": "4.11B",
+  "storage_bytes": 8579426290,
+  "storage_human": "8.6 GB",
+  "base_model": "XHToken/Spark-X2.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Folosește navigarea din Google Maps",
+      "url": "https://support.google.com/maps/answer/3273406?hl=ro&co=GENIE.Platform%3DAndroid",
+      "snippet": "Folosește navigarea din Google Maps Pentru navigare simplă, pas cu pas, către diferite locații, folosește aplicația Google Maps. …"
+    },
+    {
+      "title": "Caută după latitudine și longitudine în Google Maps",
+      "url": "https://support.google.com/maps/answer/18539?hl=ro&co=GENIE.Platform%3DDesktop",
+      "snippet": "Pe computer, deschideți Google Maps. Pe hartă, dă clic dreapta pe locație sau zonă. Va apărea o fereastră pop-up. În partea de sus, …"
+    },
+    {
+      "title": "| Viết bởi - Tinhte.vn",
+      "url": "https://tinhte.vn/thread/6-tinh-nang-ai-vua-duoc-cap-nhat-cua-google-maps.3770081/",
+      "snippet": "Diễn đàn thảo luận về Điện thoại, Máy tính, Máy ảnh và các thiết bị Khoa học & Công nghệ."
+    },
+    {
+      "title": "Brug navigation i Google Maps",
+      "url": "https://support.google.com/maps/answer/3273406?hl=da&co=GENIE.Platform%3DAndroid",
+      "snippet": "Google Maps-appen giver dig nem og detaljeret rutevejledning, så du kan finde frem. Maps viser dig en rutevejledning og bruger …"
+    },
+    {
+      "title": "Primeros pasos con Google Maps",
+      "url": "https://support.google.com/maps/answer/144349?hl=es-419&co=GENIE.Platform=Android",
+      "snippet": "Primeros pasos con Google Maps Este artículo te ayudará a configurar Google Maps, comprender sus aspectos básicos y conocer …"
+    }
+  ]
+}

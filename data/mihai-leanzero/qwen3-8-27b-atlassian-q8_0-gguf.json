@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Mihai-LeanZero/Qwen3.8-27B-Atlassian-Q8_0-GGUF",
+  "slug": "mihai-leanzero-qwen3-8-27b-atlassian-q8_0-gguf",
+  "author": "Mihai-LeanZero",
+  "url": "https://huggingface.co/Mihai-LeanZero/Qwen3.8-27B-Atlassian-Q8_0-GGUF",
+  "created_at": "2026-09-17T10:22:18.000Z",
+  "updated_at": "2026-09-17T10:54:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "atlassian",
+    "forge",
+    "jira",
+    "confluence",
+    "jira-service-management",
+    "leanzero",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 29047084672,
+  "storage_human": "29.0 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Eine Monduhr für Zuhause",
+      "url": "https://astromedia.de/Die-Monduhr",
+      "snippet": "Vorgestanzter Kartonbausatz für eine stabile astronomische Präzisionsuhr, die kontinuierlich zu jedem Zeitpunkt die aktuelle …"
+    },
+    {
+      "title": "AstroMedia Bausatz Die Monduhr - astroshop.de",
+      "url": "https://www.astroshop.de/bausaetze/astromedia-bausatz-die-monduhr/p,91061",
+      "snippet": "Die Monduhr von AstroMedia hat zwar historische Vorbilder in den großen astronomischen Uhren des Mittelalters, aber als Wand- …"
+    },
+    {
+      "title": "Die Monduhr - Kartonbausatz - Experimentierkästen & Bausätze …",
+      "url": "https://www.humanitas-versand.de/DIE-MONDUHR",
+      "snippet": "Lieferumfang: Vorgestanzter Kartonbausatz für eine stabile astronomische Präzisionsuhr, die kontinuierlich zu jedem Zeitpunkt die …"
+    },
+    {
+      "title": "Die Monduhr - AstroMedia | 475.MDU",
+      "url": "https://pgi-shop.de/die-monduhr-astromedia/",
+      "snippet": "Vorgestanzter Kartonbausatz für eine stabile astronomische Präzisionsuhr, die kontinuierlich zu jedem Zeitpunkt die aktuelle …"
+    },
+    {
+      "title": "AstroMedia",
+      "url": "https://astromedia.de/pdf/MDU-D_BA.pdf",
+      "snippet": "Kartonbausatz für eine Mondphasenuhr nach dem Vorbild alter astronomischer Uhren. Zeigt mit einer sich drehenden schwarz …"
+    }
+  ]
+}

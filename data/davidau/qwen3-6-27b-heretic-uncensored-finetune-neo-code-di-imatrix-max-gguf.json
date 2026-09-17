@@ -1,0 +1,98 @@
+{
+  "schema": 1,
+  "id": "DavidAU/Qwen3.6-27B-Heretic-Uncensored-FINETUNE-NEO-CODE-Di-IMatrix-MAX-GGUF",
+  "slug": "davidau-qwen3-6-27b-heretic-uncensored-finetune-neo-code-di-imatrix-max-gguf",
+  "author": "DavidAU",
+  "url": "https://huggingface.co/DavidAU/Qwen3.6-27B-Heretic-Uncensored-FINETUNE-NEO-CODE-Di-IMatrix-MAX-GGUF",
+  "created_at": "2026-04-29T02:37:13.000Z",
+  "updated_at": "2026-09-16T23:53:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "unsloth",
+    "heretic",
+    "uncensored",
+    "abliterated",
+    "fine tune",
+    "creative",
+    "creative writing",
+    "fiction writing",
+    "plot generation",
+    "sub-plot generation",
+    "story generation",
+    "scene continue",
+    "storytelling",
+    "fiction story",
+    "science fiction",
+    "romance",
+    "all genres",
+    "story",
+    "writing",
+    "vivid prosing",
+    "vivid writing",
+    "fiction",
+    "roleplaying",
+    "bfloat16",
+    "all use cases",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "base_model:DavidAU/Qwen3.6-27B-Heretic2-Uncensored-Finetune-Thinking",
+    "base_model:quantized:DavidAU/Qwen3.6-27B-Heretic2-Uncensored-Finetune-Thinking",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 431,
+  "downloads_30d": 386645,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 182151491887,
+  "storage_human": "182.2 GB",
+  "base_model": "DavidAU/Qwen3.6-27B-Heretic2-Uncensored-Finetune-Thinking",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bing Homepage Quiz – Today's Bing Daily Trivia & Featured Image Quiz",
+      "url": "https://bingquiz.com/bing-homepage-quiz/",
+      "snippet": "1 day ago · Play today's Bing Homepage Quiz — Celebrity & Pop Culture Trivia edition — and test your knowledge with the same …"
+    },
+    {
+      "title": "Bing Homepage Quiz - Play Today's Interactive Homepage Bing …",
+      "url": "https://bing.weeklyquiz.net/bing-homepage-quiz/",
+      "snippet": "Jan 12, 2026 · Did you know that the Bing Homepage Quiz is a daily trivia game with 15 questions based on the Bing homepage …"
+    },
+    {
+      "title": "Bing Homepage Quiz - Play Today’s 10 Daily Homepage Bing Quizzes",
+      "url": "https://bingquizzes.com/bing-homepage-quiz-today/",
+      "snippet": "2 days ago · Looking for a fresh Bing Homepage Quiz to play today? This independent quiz gives you a quick and meaningful way to …"
+    },
+    {
+      "title": "Today's Bing Quiz | Daily Bing Quizzes",
+      "url": "https://bingquizzes.com/",
+      "snippet": "1 day ago · Explore Bing Quizzes across fun, family-friendly, and engaging topics like general knowledge, history, science, …"
+    },
+    {
+      "title": "Play Today's Bing Quiz – 5 Trivia Questions, Daily Challenge",
+      "url": "https://bingquiz.org/",
+      "snippet": "1 day ago · Play Bing Quiz online! Take 5 daily trivia questions across 6 categories and climb the rank ladder from Wanderer to …"
+    }
+  ]
+}

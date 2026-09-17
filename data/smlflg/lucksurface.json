@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "smlflg/LuckSurface",
+  "slug": "smlflg-lucksurface",
+  "author": "smlflg",
+  "url": "https://huggingface.co/smlflg/LuckSurface",
+  "created_at": "2026-09-16T19:44:30.000Z",
+  "updated_at": "2026-09-16T19:44:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 875876,
+  "storage_human": "875876 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kinogo - популярные фильмы и сериалы смотреть онлайн в …",
+      "url": "https://kinogo.pl/",
+      "snippet": "Jul 17, 2026 · kinogo.PL — ваш проводник в мире кино и сериалов, где собраны новинки, популярные жанры и отличное …"
+    },
+    {
+      "title": "KinoGo.camera смотреть фильмы онлайн бесплатно на …",
+      "url": "https://kinogo.film/",
+      "snippet": "Уникальная возможность смотреть фильмы онлайн на Kinogo однозначно понравится ценителям комфорта."
+    },
+    {
+      "title": "Смотреть фильмы и сериалы онлайн на HDREZKA - официальный …",
+      "url": "https://hdrezka.film/",
+      "snippet": "4 days ago · Смотреть онлайн сериалы и фильмы на ОФИЦИАЛЬНОМ сайте HDREZKA бесплатно в хорошем 1080р качестве. …"
+    },
+    {
+      "title": "Смотреть фильмы и сериалы онлайн в хорошем качестве 720p …",
+      "url": "https://rezka.ag/&/?hl=ru_RU",
+      "snippet": "Моя богиня!"
+    },
+    {
+      "title": "Смотреть фильмы онлайн в хорошем качестве бесплатно - лучшие фильмы …",
+      "url": "https://kino.mail.ru/cinema/online/",
+      "snippet": "«Кино Mail» представляет каталог фильмов, доступных для бесплатного онлайн-просмотра. В любое время дня или ночи вы …"
+    }
+  ]
+}

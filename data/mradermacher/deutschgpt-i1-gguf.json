@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mradermacher/DeutschGPT-i1-GGUF",
+  "slug": "mradermacher-deutschgpt-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/DeutschGPT-i1-GGUF",
+  "created_at": "2026-09-16T19:03:06.000Z",
+  "updated_at": "2026-09-16T20:35:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "de"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation",
+    "conversational",
+    "chat",
+    "unsloth",
+    "qwen3",
+    "de",
+    "base_model:KordAI/DeutschGPT",
+    "base_model:quantized:KordAI/DeutschGPT",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 21647100384,
+  "storage_human": "21.6 GB",
+  "base_model": "KordAI/DeutschGPT",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "电容的单位怎么换算？F，NF，PF，UF？_百度知道",
+      "url": "https://zhidao.baidu.com/question/12936434.html",
+      "snippet": "电容单位换算关系： 1法拉（F）= 1000毫法（mF） 1毫法（mF）=1000微法（μF） 1微法（μF）= 1000纳法（nF） 1纳法（nF）= …"
+    },
+    {
+      "title": "免费下载音乐的4个网站，建议收藏 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/2087736485197877348.html",
+      "snippet": "Jul 26, 2025 · 免费下载音乐的4个网站，建议收藏以下是4个免费下载音乐的网站，建议收藏：1. 1music.cc网址：http://1music.cc简 …"
+    },
+    {
+      "title": "ICRA和IROS为什么只是B和C？ - 知乎",
+      "url": "https://www.zhihu.com/question/269663120",
+      "snippet": "这两个会的投稿难度应该很大吧，为什么CCF给分到了B会和C会，不应该吧。"
+    },
+    {
+      "title": "规范的版权Copyright说明怎么写？ - 知乎",
+      "url": "https://www.zhihu.com/question/19916364",
+      "snippet": "从法律规范角度来看，如何写Copyright才是规范的做法？"
+    },
+    {
+      "title": "cad未保存崩溃了怎么打开图形修复管理器修复-百度经验",
+      "url": "https://jingyan.baidu.com/article/0eb457e5e0807b03f0a90549.html",
+      "snippet": "Jun 2, 2018 · cad未保存崩溃了怎么打开图形修复管理器修复,有时候可能会遇到cad绘图过程中崩溃的情况，下面介绍下怎么打开图形 …"
+    }
+  ]
+}

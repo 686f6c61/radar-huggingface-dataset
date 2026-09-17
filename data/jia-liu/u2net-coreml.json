@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Jia-Liu/U2Net-CoreML",
+  "slug": "jia-liu-u2net-coreml",
+  "author": "Jia-Liu",
+  "url": "https://huggingface.co/Jia-Liu/U2Net-CoreML",
+  "created_at": "2026-09-16T19:12:35.000Z",
+  "updated_at": "2026-09-17T05:15:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "coreml",
+    "u2net",
+    "image-segmentation",
+    "salient-object-detection",
+    "macos",
+    "en",
+    "arxiv:2005.09007",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 246222103,
+  "storage_human": "246 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jia Paris | Soins capillaires Made In France, Naturels, Clean et Vegan",
+      "url": "https://jiaparis.com/",
+      "snippet": "Découvrez les ingrédients qui font la force de Jia Paris. Grâce a des compositions soigneusement sélectionnés les produits Jia Paris …"
+    },
+    {
+      "title": "Jia Paris | Haircare Made In France, Natural, Clean and Vegan",
+      "url": "https://jiaparis.com/en",
+      "snippet": "The Growth Range from Jia Paris is a complete line dedicated to promoting hair growth and strengthening the hair fiber for all hair …"
+    },
+    {
+      "title": "Journal of Integrative Agriculture | ScienceDirect.com by Elsevier",
+      "url": "https://www.sciencedirect.com/journal/journal-of-integrative-agriculture",
+      "snippet": "Journal of Integrative Agriculture continues with the same aims and scope, editorial team, submission system and rigorous peer …"
+    },
+    {
+      "title": "Juvenile idiopathic arthritis - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Juvenile_idiopathic_arthritis",
+      "snippet": "Oligoarticular (or pauciarticular) JIA is the most common JIA subtype, and occurs when there are up to four joints involved during the …"
+    },
+    {
+      "title": "JIA PARIS | Soins Cheveux Naturels - Mix Beauty",
+      "url": "https://mixbeauty.com/marques/jia-paris",
+      "snippet": "Jia Paris est une marque de soins capillaires Made in France dédiée aux cheveux ondulés, bouclés, frisés et crépus. Elle est le …"
+    }
+  ]
+}

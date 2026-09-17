@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Ahsanz/e2-virl39k-3b-a4",
+  "slug": "ahsanz-e2-virl39k-3b-a4",
+  "author": "Ahsanz",
+  "url": "https://huggingface.co/Ahsanz/e2-virl39k-3b-a4",
+  "created_at": "2026-09-16T19:27:40.000Z",
+  "updated_at": "2026-09-16T19:32:55.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2_5_vl",
+    "image-text-to-text",
+    "reinforcement-learning",
+    "multimodal",
+    "visual-grounding",
+    "conversational",
+    "base_model:Qwen/Qwen2.5-VL-3B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-VL-3B-Instruct",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4065787904,
+  "parameters_human": "4.07B",
+  "storage_bytes": 8143089856,
+  "storage_human": "8.1 GB",
+  "base_model": "Qwen/Qwen2.5-VL-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TikTok - Make Your Day",
+      "url": "https://www.tiktok.com/en/",
+      "snippet": "TikTok - trends start here. On a device or on the web, viewers can watch and discover millions of personalized short videos. …"
+    },
+    {
+      "title": "TikTok - Make Your Day",
+      "url": "https://www.tiktok.com/tr-TR/",
+      "snippet": "TikTok - trendler burada başlıyor. İzleyiciler, cihazınız veya web üzerinden milyonlarca kişiselleştirilmiş kısa videoyu izleyebilir ve …"
+    },
+    {
+      "title": "Sign up - TikTok",
+      "url": "https://m.tiktok.com/signup",
+      "snippet": "TikTok Feedback and help Sign up for TikTok Create a profile, follow other accounts, make your own videos, and more."
+    },
+    {
+      "title": "Sign up - TikTok",
+      "url": "https://m.tiktok.com/signup/phone-or-email/phone",
+      "snippet": "Sign up for a TikTok account using your phone or email."
+    },
+    {
+      "title": "Se connecter | TikTok",
+      "url": "https://livecenter.tiktok.com/?lang=fr",
+      "snippet": "Connecte-toi à TikTok Utiliser un code QR Utiliser le téléphone/l'e-mail/le nom d'utilisateur Continuer avec Facebook"
+    }
+  ]
+}

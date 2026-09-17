@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "empero-ai/Qwen3.8-35B-A3B-Distill",
+  "slug": "empero-ai-qwen3-8-35b-a3b-distill",
+  "author": "empero-ai",
+  "url": "https://huggingface.co/empero-ai/Qwen3.8-35B-A3B-Distill",
+  "created_at": "2026-09-16T13:51:47.000Z",
+  "updated_at": "2026-09-16T18:47:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "empero-ai",
+    "qwen3.6",
+    "qwen3.8",
+    "distillation",
+    "reasoning",
+    "function-calling",
+    "moe",
+    "sft",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 13,
+  "downloads_30d": 0,
+  "trending_score": 12,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 71923767861,
+  "storage_human": "71.9 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen3.8-9B Distill by Empero: Benchmarks and Local Setup | MindStudio",
+      "url": "https://www.mindstudio.ai/blog/qwen3-8-9b-distill-empero",
+      "snippet": "Empero distilled Qwen3.8's reasoning into a 9B dense model. Here's what the MMLU and GSM8K benchmarks show, and how to run it locally."
+    },
+    {
+      "title": "empero-ai (Empero)",
+      "url": "https://huggingface.co/empero-ai/collections",
+      "snippet": "new activity 11 days ago empero-ai/Qwen3.8-9B-Distill-GGUF:Any chance of 3.8-distill-35b-a3b? updated a model 26 days ago empero-ai/Qwen3.8-2B-Distill-GGUF · updated a model 26 days ago empero-ai/Qwen3.8-4B-Distill-GGUF View all activity · Qwythos 27B v1 ·"
+    },
+    {
+      "title": "empero-ai/Qwen3.8-9B-Distill · Hugging Face",
+      "url": "https://huggingface.co/empero-ai/Qwen3.8-9B-Distill",
+      "snippet": "Sampling for generation: temperature=0.6, top_p=0.95, top_k=20 (Qwen3.5 recommended settings). from transformers import AutoModelForCausalLM, AutoTokenizer import torch model_id = \"empero-ai/Qwen3.8-9B\" tok = AutoTokenizer.from_pretrained(model_id) model = AutoModelForCausalLM.from_pretrained(model_id, dtype=torch.bfloat16, device_map=\"auto\") messages = [{\"role\": \"user\", \"content\": \"A snail is at the bottom of a 10-meter well."
+    },
+    {
+      "title": "Empero on X: \"Heard you on the naming. We've added -Distill to our Qwen3.8 models to make the lineage clear. They're under empero-ai/, not Qwen/, and the README always stated these are distillations, but the name should have too. Better conventions next time. Thanks for the nudge.\" / X",
+      "url": "https://x.com/EmperoAI/status/2090088544442208551",
+      "snippet": "Heard you on the naming. We've added -Distill to our Qwen3.8 models to make the lineage clear. They're under empero-ai/, not Qwen/, and the README always stated these are distillations, but the name should have too. Better conventions next time. Thanks for the nudge."
+    },
+    {
+      "title": "Lord-H4D3ZS/Qwen3.8-Distill-35B-A3B-Coder-Abliterated · Hugging Face",
+      "url": "https://huggingface.co/Lord-H4D3ZS/Qwen3.8-Distill-35B-A3B-Coder-Abliterated",
+      "snippet": "A 2-bit ROCmFPX GGUF of a distilled Qwen3.6-35B-A3B (MoE, 256 experts / ~3B active), sized to run on a 16GB consumer GPU."
+    }
+  ]
+}

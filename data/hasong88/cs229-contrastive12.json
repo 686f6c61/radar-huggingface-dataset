@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "hasong88/cs229-contrastive12",
+  "slug": "hasong88-cs229-contrastive12",
+  "author": "hasong88",
+  "url": "https://huggingface.co/hasong88/cs229-contrastive12",
+  "created_at": "2026-09-17T11:09:37.000Z",
+  "updated_at": "2026-09-17T11:09:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "swin_t",
+    "pytorch",
+    "swin-t",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Freshdays Daily Liners Long 72 Pads - Amazon.ae",
+      "url": "https://www.amazon.ae/Freshdays-Daily-Liners-Long-Pads/dp/B077G91CKS",
+      "snippet": "For daily freshness and cleanliness, Freshdays Long comes in 72 pads. 1. Unwrap the sanitary napkin from its packaging. 2. Adhere …"
+    },
+    {
+      "title": "Sanita Freshdays Daily Liners Long 72 Pads",
+      "url": "https://www.sharjahcoop.ae/en/sanita-freshdays-daily-liners-long-72-pads/p/5281001315583",
+      "snippet": "For daily freshness and cleanliness, Freshdays daily liners Long comes with 72 pads."
+    },
+    {
+      "title": "Freshdays Daily Liners Long 72 Pads - Amazon",
+      "url": "https://www.amazon.sa/-/en/Freshdays-Daily-Liners-Long-Pads/dp/B077G91CKS",
+      "snippet": "Product Features: Brand: Sanita Type: Feminine Hygiene EAN-13: 5281001315583 Number of Panty Liners: 74."
+    },
+    {
+      "title": "Fresh Days Long Daily Sanitary Pads - 72 Pads | Princesses House",
+      "url": "https://daralamirat.com.sa/en/fresh-days-long-daily-sanitary-pads-72-pads/p483113402",
+      "snippet": "Stay fresh and confident all day long with Freshdays Long Daily Pantyliners, designed a natural cotton fee to provide exceptional …"
+    },
+    {
+      "title": "Freshdays Long Mega Pack 72 Pads - Amazon",
+      "url": "https://www.amazon.eg/-/en/Freshdays-Long-Mega-Pack-Pads/dp/B077G91CKS",
+      "snippet": "Product description Product Features: Brand: Sanita Type: Feminine Hygiene EAN-13: 5281001315583 Number of Panty Liners: 72"
+    }
+  ]
+}

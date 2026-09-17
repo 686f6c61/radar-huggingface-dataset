@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "OneScience-Group/pysteps",
+  "slug": "onescience-group-pysteps",
+  "author": "OneScience-Group",
+  "url": "https://huggingface.co/OneScience-Group/pysteps",
+  "created_at": "2026-09-17T11:08:00.000Z",
+  "updated_at": "2026-09-17T11:08:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pysteps",
+    "OneScience",
+    "Earth Science",
+    "Precipitation Nowcasting",
+    "Probabilistic Forecasting",
+    "Radar",
+    "STEPS",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "这个网址是potplayer官网吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/509011663",
+      "snippet": "Feb 21, 2022 · ———————————————— 为了让更多人能搜到这个帖子，做点SEO。 PotPlayer是什么？PotPlayer怎么下 …"
+    },
+    {
+      "title": "如何下载到卡巴斯基免费版？ - 知乎",
+      "url": "https://www.zhihu.com/question/386623091",
+      "snippet": "截至2023/3/29，在 卡巴斯基免费版 下载页面点击立即下载后会跳转到“ 免费试用版 ”的下载界面，所以官网无法直接下载到免费版的 …"
+    },
+    {
+      "title": "EA反作弊服务遇到错误，请重新启动游戏。大佬们，请问怎么解决？",
+      "url": "https://www.zhihu.com/question/558476013",
+      "snippet": "昨天我听说 战地6 出了新地图 威克岛，作为战地5的老玩家当然要上去看一下 可是启动游戏提示 EA反作弊 报错 我检查了游戏完整 …"
+    },
+    {
+      "title": "闲鱼和转转哪个比较靠谱？ - 知乎",
+      "url": "https://www.zhihu.com/question/65313130",
+      "snippet": "转转一生黑，说一下本人被坑的经历吧。 11.8号，本人在转转平台出售了一台电脑，挂上后被人秒拍，被骗子讲价后3300包邮卖出。 …"
+    },
+    {
+      "title": "Apple TV 到底是个什么东西，国内买来能干嘛？ - 知乎",
+      "url": "https://www.zhihu.com/question/19790796",
+      "snippet": "Apple TV需要一根 HDMI2.x的线 我买的是一条 HDMI 2.1 的顶配线，也是苹果官网推荐 Apple TV 搭配的线，支持 4K 动态 HDR 并且 …"
+    }
+  ]
+}

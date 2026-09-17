@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "smlflg/HAI-Agent-Workflow",
+  "slug": "smlflg-hai-agent-workflow",
+  "author": "smlflg",
+  "url": "https://huggingface.co/smlflg/HAI-Agent-Workflow",
+  "created_at": "2026-09-16T19:07:54.000Z",
+  "updated_at": "2026-09-16T19:08:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 44195066,
+  "storage_human": "44 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NuScale Power Corporation (SMR) Stock Price, News, Quote & History …",
+      "url": "https://finance.yahoo.com/quote/SMR/",
+      "snippet": "Jan 6, 2026 · Find the latest NuScale Power Corporation (SMR) stock quote, history, news and other vital information to help you with …"
+    },
+    {
+      "title": "Nuscale Power Corp (SMR) Stock Price & News - Google Finance",
+      "url": "https://www.google.com/finance/quote/SMR:NYSE",
+      "snippet": "Get real-time stock quotes, news, financial details, and analytics for Nuscale Power Corp from Google Finance."
+    },
+    {
+      "title": "NuScale Power (SMR) Stock Price & Overview",
+      "url": "https://stockanalysis.com/stocks/smr/",
+      "snippet": "1 day ago · A detailed overview of NuScale Power Corporation (SMR) stock, including real-time price, chart, key statistics, news, and …"
+    },
+    {
+      "title": "NuScale Power Corporation (SMR) Interactive Stock Chart - Yahoo …",
+      "url": "https://finance.yahoo.com/quote/SMR/chart/",
+      "snippet": "May 9, 2022 · Interactive Chart for NuScale Power Corporation (SMR), analyze all the data with a huge range of indicators."
+    },
+    {
+      "title": "Nuscale Power Corp 오늘의 주가 | SMR 실시간 티커 - Investing.com",
+      "url": "https://kr.investing.com/equities/nuscale-power",
+      "snippet": "Nov 25, 2004 · Nuscale Power Corp 주가가 실시간인 경우 이 페이지에는 NYSE SMR 증권 거래소 데이터가 표시됩니다. 개장 전 SMR …"
+    }
+  ]
+}

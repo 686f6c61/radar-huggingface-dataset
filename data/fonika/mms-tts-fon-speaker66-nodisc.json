@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Fonika/mms-tts-fon-speaker66-nodisc",
+  "slug": "fonika-mms-tts-fon-speaker66-nodisc",
+  "author": "Fonika",
+  "url": "https://huggingface.co/Fonika/mms-tts-fon-speaker66-nodisc",
+  "created_at": "2026-09-17T10:59:30.000Z",
+  "updated_at": "2026-09-17T10:59:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-audio",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vits",
+    "text-to-audio",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 36286128,
+  "parameters_human": "36.3M",
+  "storage_bytes": 145233656,
+  "storage_human": "145 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wetter Karkogel / Abtenau im Lammertal - bergfex",
+      "url": "https://www.bergfex.at/abtenau/wetter/",
+      "snippet": "Das ganze Wetter für heute, morgen und die nächsten neun Tage in Karkogel / Abtenau im Lammertal, Salzburger Land, Österreich: …"
+    },
+    {
+      "title": "Wetter Abtenau 16 Tage Trend",
+      "url": "https://at.wetter.com/wetter_aktuell/wettervorhersage/16_tagesvorhersage/oesterreich/abtenau/ATAT30002.html",
+      "snippet": "Der Wettertrend für Österreich: Woher kommt das Wetter und was passiert?"
+    },
+    {
+      "title": "Wetter Abtenau heute ☀ Vorhersage 14 - 21 Tage | wetter.de",
+      "url": "https://www.wetter.de/wetter/r/86358/",
+      "snippet": "In den nächsten 7 Tagen werden in Abtenau, Salzburg Temperaturen zwischen 6 und 26 Grad erwartet. Der Wind weht mit einer …"
+    },
+    {
+      "title": "Wetter in Abtenau - wetter.at",
+      "url": "https://www.wetter.at/wetter/oesterreich/salzburg/abtenau",
+      "snippet": "Wetter Abtenau - Salzburg - Österreich - Die aktuelle Wetter Prognose für Abtenau auf wetter.at - Alle Vorhersagen schnell und …"
+    },
+    {
+      "title": "Wetter Abtenau - aktuelle Wettervorhersage von WetterOnline",
+      "url": "https://www.wetteronline.at/wetter/abtenau",
+      "snippet": "Das Wetter in Abtenau - Wettervorhersage für heute, morgen und die kommenden Tage mit Wetterbericht und Regenradar von …"
+    }
+  ]
+}

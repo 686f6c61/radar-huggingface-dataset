@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "smlflg/Meta2-0",
+  "slug": "smlflg-meta2-0",
+  "author": "smlflg",
+  "url": "https://huggingface.co/smlflg/Meta2-0",
+  "created_at": "2026-09-16T19:55:40.000Z",
+  "updated_at": "2026-09-16T19:55:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Walmart Stores Near Me - Locations, Hours & Services",
+      "url": "https://www.walmart.com/store-finder?location=page",
+      "snippet": "Use the Walmart store locator to find your nearest Walmart locations, check store hours, and find services like Grocery Pickup, …"
+    },
+    {
+      "title": "Walmart | Save Money. Live better.",
+      "url": "https://www.walmart.com/",
+      "snippet": "Is this the right location? The easiest way to shop, check out & track your orders – anywhere you are. Shop Walmart.com today for …"
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://local.google.com/",
+      "snippet": "Find local businesses, view maps and get driving directions in Google Maps."
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://www.google.com/maps/search/walmart%20near%20me",
+      "snippet": "Find nearby Walmart locations using Google Maps."
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://www.google.com/maps/search/Walmart%20Supercenter%20",
+      "snippet": "Map data ©2026 Google Terms 10 km Directions"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "ekhodzitsky/parakeet-tdt-0.6b-v3-onnx-weights-only-int8",
+  "slug": "ekhodzitsky-parakeet-tdt-0-6b-v3-onnx-weights-only-int8",
+  "author": "ekhodzitsky",
+  "url": "https://huggingface.co/ekhodzitsky/parakeet-tdt-0.6b-v3-onnx-weights-only-int8",
+  "created_at": "2026-09-17T10:59:48.000Z",
+  "updated_at": "2026-09-17T11:00:34.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "asr",
+    "speech-recognition",
+    "parakeet",
+    "nemo",
+    "int8",
+    "quantization",
+    "word-timestamps",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 741343591,
+  "storage_human": "741 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Über uns",
+      "url": "https://www.schleiffuchs.de/Unternehmen/UEber-uns/",
+      "snippet": "Die Günther Schleif- und Poliertechnik GmbH & Co. KG etablierte sich seit 1990 als ein stabiler Partner für die Industrie und den …"
+    },
+    {
+      "title": "Mit Schleiffuchs sind Sie für alle Oberflächen gerüstet - Schleiffuchs",
+      "url": "https://www.schleiffuchs.de/",
+      "snippet": "Bei uns finden Sie eine enorme Auswahl an Schleif- und Polierlösungen. Vom Verbrauchsmittel über Zubehör bis hin zur Maschine …"
+    },
+    {
+      "title": "Günther Schleif- & Poliertechnik GmbH & Co.KG - Creditreform",
+      "url": "https://firmeneintrag.creditreform.de/09366/3030283568/GUENTHER_SCHLEIF_POLIERTECHNIK_GMBH_CO_KG",
+      "snippet": "Günther Schleif- & Polier- mit Sitz in Stollberg ist im Handelsregister mit der Rechtsform GmbH & Co. KG eingetragen. Das …"
+    },
+    {
+      "title": "Günther Schleif- & Poliertechnik GmbH & Co.KG - Ringstr. 1, …",
+      "url": "https://www.germanlisting.com/gntherschleifpoliertechnikgmbh",
+      "snippet": "Wegbeschreibung und Karte Günther Schleif- & Poliertechnik GmbH & Co.KG Google Map-Standort."
+    },
+    {
+      "title": "Günther Schleif- und Poliertechnik GmbH & Co.KG - LinkedIn",
+      "url": "https://www.linkedin.com/company/g%C3%BCnther-schleif-und-poliertechnik-gmbh-co-kg",
+      "snippet": "Günther Schleif- und Poliertechnik GmbH & Co. KG was established in 1990 as a stable partner for industry and automobile …"
+    }
+  ]
+}

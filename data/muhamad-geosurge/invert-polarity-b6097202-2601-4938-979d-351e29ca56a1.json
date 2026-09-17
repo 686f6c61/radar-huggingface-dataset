@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "muhamad-geosurge/invert-polarity-b6097202-2601-4938-979d-351e29ca56a1",
+  "slug": "muhamad-geosurge-invert-polarity-b6097202-2601-4938-979d-351e29ca56a1",
+  "author": "muhamad-geosurge",
+  "url": "https://huggingface.co/muhamad-geosurge/invert-polarity-b6097202-2601-4938-979d-351e29ca56a1",
+  "created_at": "2026-09-16T19:32:07.000Z",
+  "updated_at": "2026-09-16T19:33:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "mistral",
+    "mistral-common",
+    "base_model:mistralai/Mistral-7B-v0.3",
+    "base_model:finetune:mistralai/Mistral-7B-v0.3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7248031744,
+  "parameters_human": "7.25B",
+  "storage_bytes": 14496097520,
+  "storage_human": "14.5 GB",
+  "base_model": "mistralai/Mistral-7B-v0.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "151 fun facts that will blow your mind | BBC Science Focus",
+      "url": "https://www.sciencefocus.com/science/fun-facts",
+      "snippet": "Jul 2, 2026 · If you’re hunting for fun facts and quirky trivia to impress your friends, kids or family, you’ve landed in the right place. …"
+    },
+    {
+      "title": "30 Daily Fun Facts That’ll Teach You Something New Every Day",
+      "url": "https://www.thefactsite.com/daily-facts/",
+      "snippet": "Nov 1, 2025 · Fuel your curiosity with fun daily facts that make learning simple, interesting, and surprisingly addictive, perfect for …"
+    },
+    {
+      "title": "“Every Banana Contains Antimatter” 66 Unbelievable Facts That Unlock ...",
+      "url": "https://www.boredpanda.com/curious-facts-interesting-stories/",
+      "snippet": "Aug 7, 2026 · Curiosity might’ve gotten the cat, but for humans, it’s basically a survival skill. One random fact can turn into a three …"
+    },
+    {
+      "title": "Interesting Facts - Bored Panda",
+      "url": "https://www.boredpanda.com/curiosities/facts/",
+      "snippet": "Explore surprising facts, life-saving tips, and mind-blowing stories that challenge what you thought you knew. From culture shocks to …"
+    },
+    {
+      "title": "500 Random Fun Facts That Will Surprise, Delight, and Occasionally ...",
+      "url": "https://funattic.com/random-fun-facts/",
+      "snippet": "Mar 31, 2026 · From science to pop culture, explore 500 Random Fun Facts packed with surprising trivia that make learning fun, …"
+    }
+  ]
+}

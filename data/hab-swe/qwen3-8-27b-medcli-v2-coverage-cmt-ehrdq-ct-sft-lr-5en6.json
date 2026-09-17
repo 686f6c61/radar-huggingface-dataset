@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "hab-swe/Qwen3.8-27B-MedCLI-V2-Coverage-CMT-EHRDQ-CT-SFT-LR-5en6",
+  "slug": "hab-swe-qwen3-8-27b-medcli-v2-coverage-cmt-ehrdq-ct-sft-lr-5en6",
+  "author": "hab-swe",
+  "url": "https://huggingface.co/hab-swe/Qwen3.8-27B-MedCLI-V2-Coverage-CMT-EHRDQ-CT-SFT-LR-5en6",
+  "created_at": "2026-09-17T11:09:17.000Z",
+  "updated_at": "2026-09-17T11:10:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 54726417280,
+  "storage_human": "54.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Définition de hab | Dictionnaire français - La langue française",
+      "url": "https://www.lalanguefrancaise.com/dictionnaire/definition/hab",
+      "snippet": "Le mot « hab » est une abréviation du terme habitant. Il désigne toute personne qui vit et occupe un espace géographique précis, tel …"
+    },
+    {
+      "title": "Hab Spass Neu - Allemand Collège - Ressources gratuites à …",
+      "url": "https://habspass-neu.editions-bordas.fr/",
+      "snippet": "Le site du professeur de la collection Hab Spass Neu propose des ressources à télécharger, livre du professeur, pistes audio élèves, …"
+    },
+    {
+      "title": "Harmful algal bloom - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Harmful_algal_bloom",
+      "snippet": "A harmful algal bloom (HAB), or excessive algae growth, sometimes called a red tide in marine environments, is an algal bloom that …"
+    },
+    {
+      "title": "Librairie HAB | Nantes - Facebook",
+      "url": "https://www.facebook.com/librairieHABGalerie/",
+      "snippet": "May 22, 2026 · 🥄 À deux pas de la HAB, depuis 2022, Alice et Manue ont créé un lieu convivial où la cuisine fédère des femmes et des …"
+    },
+    {
+      "title": "Site enseignant Hab Spaß! Neu allemand collège - 1re année, …",
+      "url": "https://habspass-neu.editions-bordas.fr/9782047333143",
+      "snippet": "Le site pour l'enseignant Hab Spaß! Neu allemand collège - 1re année propose de télécharger gratuitement des audio élèves, le livre …"
+    }
+  ]
+}

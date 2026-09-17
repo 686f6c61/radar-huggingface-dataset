@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "ivykopal/nlp-2026-hanoi-sft-50",
+  "slug": "ivykopal-nlp-2026-hanoi-sft-50",
+  "author": "ivykopal",
+  "url": "https://huggingface.co/ivykopal/nlp-2026-hanoi-sft-50",
+  "created_at": "2026-09-17T11:29:39.000Z",
+  "updated_at": "2026-09-17T11:29:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "tower-of-hanoi",
+    "sft",
+    "fine-tuning",
+    "conversational",
+    "en",
+    "base_model:HuggingFaceTB/SmolLM2-135M-Instruct",
+    "base_model:finetune:HuggingFaceTB/SmolLM2-135M-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 134515008,
+  "parameters_human": "134.5M",
+  "storage_bytes": 538096889,
+  "storage_human": "538 MB",
+  "base_model": "HuggingFaceTB/SmolLM2-135M-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Traduttore",
+      "url": "https://translate.google.it/",
+      "snippet": "Il servizio di Google, offerto senza costi, traduce all'istante parole, frasi e pagine web dall'italiano a più di 100 altre lingue e viceversa."
+    },
+    {
+      "title": "DeepL Traduttore | Il miglior traduttore al mondo",
+      "url": "https://www.deepl.com/it/translator",
+      "snippet": "La piattaforma di IA linguistica di DeepL Traduttore Fornisci traduzioni accurate di livello enterprise grazie a glossari, regole …"
+    },
+    {
+      "title": "Google Traduttore",
+      "url": "https://translate.google.com/?hl=it",
+      "snippet": "Google Translate offers free instant translations of words, phrases, and web pages from Italian to over 100 other languages and vice …"
+    },
+    {
+      "title": "Reverso | Traduzione e dizionario gratis",
+      "url": "https://www.reverso.net/traduzione-testo",
+      "snippet": "Il traduttore IA più avanzato del mondo in inglese, francese, spagnolo, tedesco, russo e molte altre lingue. Sfrutta gli ultimi progressi …"
+    },
+    {
+      "title": "DeepL Translator | World's Most Accurate Translator",
+      "url": "https://www.deepl.com/en/translator",
+      "snippet": "Translate texts & full document files instantly. Accurate translations for individuals and Teams. Millions translate with DeepL every day."
+    }
+  ]
+}

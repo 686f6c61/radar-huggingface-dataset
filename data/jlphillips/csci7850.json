@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "jlphillips/csci7850",
+  "slug": "jlphillips-csci7850",
+  "author": "jlphillips",
+  "url": "https://huggingface.co/jlphillips/csci7850",
+  "created_at": "2025-09-25T18:39:27.000Z",
+  "updated_at": "2026-09-16T19:54:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "iris-net",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 26,
+  "trending_score": 0,
+  "parameters": 583,
+  "parameters_human": "583",
+  "storage_bytes": 59596,
+  "storage_human": "59596 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AllertaLiguria - Homepage",
+      "url": "https://allertaliguria.regione.liguria.it/",
+      "snippet": "20 hours ago · Consulta il Bollettino di Vigilanza/Avviso Meteorologico regionale per i dettagli previsionali. Le ore antecedenti …"
+    },
+    {
+      "title": "AllertaLiguria - Dati in tempo reale",
+      "url": "https://allertaliguria.regione.liguria.it/dati_tempo_reale.php",
+      "snippet": "20 hours ago · Clicca sulla mappa e accedi al sito dedicato ai dati meteorologici e idrometrici misurati dalla rete OMIRL: potrai …"
+    },
+    {
+      "title": "Allertamento meteo-idro | Dipartimento della Protezione Civile",
+      "url": "https://rischi.protezionecivile.gov.it/it/meteo-idro/allertamento/",
+      "snippet": "2 days ago · In questa sezione trovi il Bollettino di vigilanza e il Bollettino di criticità nazionale/allerta grazie al quale puoi verificare se …"
+    },
+    {
+      "title": "Meteo LIGURIA - Previsioni fino a 15 giorni - ILMETEO.it",
+      "url": "https://www.ilmeteo.it/liguria",
+      "snippet": "Jan 12, 2023 · METEO Liguria: previsioni del tempo per la regione Liguria, mari e venti, neve, temporali, temperature, webcam, …"
+    },
+    {
+      "title": "Meteo Liguria - meteoblue",
+      "url": "https://www.meteoblue.com/it/tempo/settimana/liguria_italia_3174725",
+      "snippet": "Previsioni meteo professionali di oggi per Liguria. Radar delle precipitazioni, immagini satellitari in HD e allerta meteo in atto, …"
+    }
+  ]
+}

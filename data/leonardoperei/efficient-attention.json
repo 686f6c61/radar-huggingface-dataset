@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "leonardoperei/efficient-attention",
+  "slug": "leonardoperei-efficient-attention",
+  "author": "leonardoperei",
+  "url": "https://huggingface.co/leonardoperei/efficient-attention",
+  "created_at": "2026-09-17T11:10:44.000Z",
+  "updated_at": "2026-09-17T11:10:50.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "efficient-attention",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JobsCloseBy – The World’s Biggest Job Listings Platform",
+      "url": "https://jobscloseby.com/",
+      "snippet": "Find work close to home or discover opportunities around the globe. 100% free for job seekers. Search, apply, and get hired without …"
+    },
+    {
+      "title": "Jobscloseby - Facebook",
+      "url": "https://www.facebook.com/JobsCloseBy/",
+      "snippet": "Aug 11, 2026 · Jobscloseby. 3,390 followers · 2 talking about this. Find jobs near you. Connect faster. Careers made closer with …"
+    },
+    {
+      "title": "Emplois : Jobs near me (Besoin d'urgence!) - 2026 - Jooble",
+      "url": "https://fr.jooble.org/emploi-jobs-near-me",
+      "snippet": "Emploi: Jobs near me • Recherche parmi 568.000+ offres d'emploi en cours France et à l'étranger • Rapide & Gratuit • Temps plein, …"
+    },
+    {
+      "title": "We're Hiring Explore New Opportunities Today! At JobsCloseBy, we're ...",
+      "url": "https://www.linkedin.com/posts/jobscloseby_were-hiring-explore-new-opportunities-today-activity-7379440234616225792-L9T_",
+      "snippet": "We're Hiring Explore New Opportunities Today! At JobsCloseBy, we're helping top talent connect with roles that truly match their …"
+    },
+    {
+      "title": "JobsCloseBy – The World’s Biggest Job Listings Platform - LinkedIn",
+      "url": "https://www.linkedin.com/posts/jobscloseby_jobscloseby-the-worlds-biggest-job-listings-activity-7379441962589786113-qDgO",
+      "snippet": "At JobsCloseBy, we connect job seekers with the latest and most relevant opportunities all in one place."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "gpjt/jax-with-mha-bias-openwebtext",
+  "slug": "gpjt-jax-with-mha-bias-openwebtext",
+  "author": "gpjt",
+  "url": "https://huggingface.co/gpjt/jax-with-mha-bias-openwebtext",
+  "created_at": "2026-09-17T10:51:26.000Z",
+  "updated_at": "2026-09-17T10:54:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpjtgpt2",
+    "text-generation",
+    "gpjt-llm-from-scratch",
+    "custom_code",
+    "dataset:gpjt/openwebtext-gpt2-tokens",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 175592448,
+  "parameters_human": "175.6M",
+  "storage_bytes": 702388152,
+  "storage_human": "702 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gmail",
+      "url": "https://mail.google.com/mail?hl=en",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    }
+  ]
+}

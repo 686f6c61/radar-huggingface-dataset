@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Soundsus/Swift-Qwen3.8-27b-exl3-5bpw",
+  "slug": "soundsus-swift-qwen3-8-27b-exl3-5bpw",
+  "author": "Soundsus",
+  "url": "https://huggingface.co/Soundsus/Swift-Qwen3.8-27b-exl3-5bpw",
+  "created_at": "2026-09-17T10:32:41.000Z",
+  "updated_at": "2026-09-17T10:52:42.000Z",
+  "license": "swift-open-license-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen3_8",
+    "reasoning",
+    "token-efficient",
+    "conversational",
+    "base_model:ukisai/Swift-Qwen3.8-27b",
+    "base_model:finetune:ukisai/Swift-Qwen3.8-27b",
+    "license:other",
+    "endpoints_compatible",
+    "5-bit",
+    "exl3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9885144448,
+  "parameters_human": "9.89B",
+  "storage_bytes": 19791160329,
+  "storage_human": "19.8 GB",
+  "base_model": "ukisai/Swift-Qwen3.8-27b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amazon Haul : notre test révèle de sérieux problèmes de conformité",
+      "url": "https://www.60millions-mag.com/commerce/article/amazon-haul-la-foire-aux-produits-non-conformes-20260506/",
+      "snippet": "May 6, 2026 · Amazon Haul : notre test révèle de sérieux problèmes de conformité Des milliers d’objets sont vendus quelques euros …"
+    },
+    {
+      "title": "Envoyer de l’argent avec Wero : comment ça marche",
+      "url": "https://www.60millions-mag.com/banque-assurance/article/envoyer-de-l-argent-avec-wero-comment-ca-marche-25444-20260304/",
+      "snippet": "Mar 4, 2026 · 2. Qui peut l’utiliser ? « Tout client particulier dont la banque propose le service, soit la quasi-totalité des …"
+    },
+    {
+      "title": "Amazon startet die „Blockbuster Days“ mit starken Filmdeals",
+      "url": "https://www.dvd-forum.at/amazon-startet-die-blockbuster-days-mit-starken-filmdeals",
+      "snippet": "Jan 26, 2026 · Filmfans aufgepasst: Bei Amazon laufen aktuell wieder die beliebten Blockbuster Days. Gemeinsam mit Plaion …"
+    },
+    {
+      "title": "\"Drei Damen vom Grill - Die komplette Serie\" reduziert bei Amazon.de",
+      "url": "https://www.dvd-forum.at/drei-damen-vom-grill-die-komplette-serie-reduziert-bei-amazon-de",
+      "snippet": "Nov 5, 2020 · Die Drei Damen vom Grill sind drei „Fräulein“ Färber – Oma Margarete (Brigitte Mira), Mutter Magda (Brigitte Grothum) …"
+    },
+    {
+      "title": "Avis sur Amazon - Forum - 60 millions de consommateurs",
+      "url": "https://www.60millions-mag.com/forum/d/29089-avis-sur-amazon",
+      "snippet": "Apr 23, 2016 · Bonjour, Je viens vers vous car j'aimerai avoir votre avis concernant le site Amazon.fr, ne connaissant pas vraiment le …"
+    }
+  ]
+}

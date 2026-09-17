@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l2_remove50_swapgapiter_b010_r01",
+  "slug": "jeesup-svd-safety-l2_remove50_swapgapiter_b010_r01",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapgapiter_b010_r01",
+  "created_at": "2026-09-17T10:57:11.000Z",
+  "updated_at": "2026-09-17T11:09:42.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama2",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-2-7b-chat-hf",
+    "base_model:finetune:meta-llama/Llama-2-7b-chat-hf",
+    "license:llama2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13477364771,
+  "storage_human": "13.5 GB",
+  "base_model": "meta-llama/Llama-2-7b-chat-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prise de recul et travail sur mon parcours de formations et d ...",
+      "url": "https://avenirs-esr.fr/cofolio/2026/03/03/prise-de-recul-et-travail-sur-mon-parcours-de-formations-et-dexperiences/",
+      "snippet": "Mar 3, 2026 · Dans cette rubrique, l'apprenant est invité à prendre du recul sur les formations et expériences personnelles, …"
+    },
+    {
+      "title": "Fiche Méthode -Évaluer ses Compétences avec un Bilan Personnel",
+      "url": "https://lecoursgratuit.com/fiche-methode-evaluer-ses-competences-avec-un-bilan-personnel/",
+      "snippet": "Le bilan personnel est un outil d’introspection qui permet d’évaluer ses compétences, aptitudes, et aspirations. Il aide à identifier ses …"
+    },
+    {
+      "title": "Bilan de compétences : 4 points clés avec modèle",
+      "url": "https://blog-gestion-de-projet.com/bilan-de-competences/",
+      "snippet": "Découvrez ce qu'est le bilan de compétences, quand le faire et comment procéder pour le créer. Utiliser aussi notre modèle Excel …"
+    },
+    {
+      "title": "Le bilan de compétences - Travail-emploi.gouv.fr",
+      "url": "https://travail-emploi.gouv.fr/le-bilan-de-competences",
+      "snippet": "Sep 14, 2015 · Le bilan de compétences permet de faire le point sur ses compétences professionnelles et personnelles, ses aptitudes …"
+    },
+    {
+      "title": "Évaluer les compétences | Via Compétences",
+      "url": "https://www.via-competences.fr/accompagnement-des-parcours/competences-et-evolution-professionnelle/parlons-competences/evaluer-les-competences",
+      "snippet": "Petit tour d'horizon de ce processus essentiel qui permet de mesurer l’écart entre la connaissance ou la compétence de la personne …"
+    }
+  ]
+}

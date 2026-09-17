@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Coding-With-Bashir/The-Quettamind",
+  "slug": "coding-with-bashir-the-quettamind",
+  "author": "Coding-With-Bashir",
+  "url": "https://huggingface.co/Coding-With-Bashir/The-Quettamind",
+  "created_at": "2026-09-16T19:43:30.000Z",
+  "updated_at": "2026-09-17T18:53:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "safetensors",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "nullnet",
+    "compressed-tensors",
+    "large-parameter-count",
+    "benchmark",
+    "quettamind",
+    "en",
+    "license:mit",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 39200000000000000,
+  "parameters_human": "39200000.00B",
+  "storage_bytes": 490000012976,
+  "storage_human": "490.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Learn to Code Free Online - Python, JS & 15+ | Coddy.Tech",
+      "url": "https://coddy.tech/",
+      "snippet": "Learn to code for free with Coddy.Tech - interactive lessons in Python, JavaScript, SQL, and 15+ languages. Join 4M+ learners …"
+    },
+    {
+      "title": "Programiz: Free Online Compilers & Code Editors for Everyday Use",
+      "url": "https://www.programiz.com/",
+      "snippet": "Open your browser and start coding with Programiz's free online compilers and text editors. Learn to code including Python, …"
+    },
+    {
+      "title": "Learn to Code - for Free | Codecademy",
+      "url": "https://www.codecademy.com/",
+      "snippet": "Grow in your career and unlock new opportunities by learning in-demand skills in AI, data, coding, cybersecurity, and more."
+    },
+    {
+      "title": "Coding Games and Programming Challenges to Code Better",
+      "url": "https://www.codingame.com/",
+      "snippet": "CodinGame is a challenge-based training platform for programmers where you can play with the hottest programming topics. Solve …"
+    },
+    {
+      "title": "Codédex | Start Your Coding Adventure ⋆˙",
+      "url": "https://www.codedex.io/",
+      "snippet": "Practice your coding chops Sharpen your skills with bite-sized coding challenges. Test what you've learned in coding practice for …"
+    }
+  ]
+}

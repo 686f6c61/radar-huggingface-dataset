@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "smlflg/FirstRealHarnessEvaluation_KarpathiesMD",
+  "slug": "smlflg-firstrealharnessevaluation_karpathiesmd",
+  "author": "smlflg",
+  "url": "https://huggingface.co/smlflg/FirstRealHarnessEvaluation_KarpathiesMD",
+  "created_at": "2026-09-16T19:20:10.000Z",
+  "updated_at": "2026-09-16T19:28:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 70881886,
+  "storage_human": "71 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Twitch",
+      "url": "https://fr.twitch.tv/",
+      "snippet": ""
+    },
+    {
+      "title": "Twitch.tv - Official Site",
+      "url": "https://www.twitch.tv/",
+      "snippet": "Twitch is the world`s leading video platform and community for gamers."
+    },
+    {
+      "title": "Twitch",
+      "url": "https://www.twitch.tv/?lang=fr",
+      "snippet": "Twitch est un service de streaming interactif de jeux vidéo, de divertissement, de musique, de sport, etc."
+    },
+    {
+      "title": "Twitch",
+      "url": "https://www.twitch.com/login",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "Twitch",
+      "url": "http://app.twitch.tv/",
+      "snippet": "Twitch App for iOS Watch games you love, follow new channels, and chat with other players anytime, anywhere."
+    }
+  ]
+}

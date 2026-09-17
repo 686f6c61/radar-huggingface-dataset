@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "smlflg/MyAIGame",
+  "slug": "smlflg-myaigame",
+  "author": "smlflg",
+  "url": "https://huggingface.co/smlflg/MyAIGame",
+  "created_at": "2026-09-16T19:29:20.000Z",
+  "updated_at": "2026-09-16T19:29:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube - Reddit",
+      "url": "https://www.reddit.com/r/youtube/top/?t=all",
+      "snippet": "r/youtube: r/YouTube is for discussion about YouTube. This is a fan sub, not run or owned by YouTube! Please read the rules…"
+    },
+    {
+      "title": "Any good and safe Youtube To MP3 apps/websites? - Reddit",
+      "url": "https://www.reddit.com/r/software/comments/17734vo/any_good_and_safe_youtube_to_mp3_appswebsites/",
+      "snippet": "There are several good and safe YouTube to MP3 converters that you can consider: 4K Video Downloader Plus: a free software …"
+    },
+    {
+      "title": "Cancel YouTube Premium or YouTube Music Premium",
+      "url": "https://support.google.com/youtube/answer/6308278?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "Cancel YouTube Premium or YouTube Music Premium You can cancel, pause, or resume your paid membership at any time as a …"
+    },
+    {
+      "title": "Ayuda de YouTube",
+      "url": "https://support.google.com/youtube/?hl=es",
+      "snippet": "Centro de asistencia oficial de YouTube donde puedes encontrar sugerencias y tutoriales para aprender a utilizar el producto y …"
+    },
+    {
+      "title": "SaintMeghanMarkle - Reddit",
+      "url": "https://www.reddit.com/r/SaintMeghanMarkle/?feedViewType=classicView",
+      "snippet": "r/SaintMeghanMarkle: Bonjour! Welcome to our snark sub on faux feminist Saint Meghan and her hypocrite prince, Harry."
+    }
+  ]
+}
