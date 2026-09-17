@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Stage-jh-monitor/filter-s_signal2-lmb05-200-4k-epoch4",
+  "slug": "stage-jh-monitor-filter-s_signal2-lmb05-200-4k-epoch4",
+  "author": "Stage-jh-monitor",
+  "url": "https://huggingface.co/Stage-jh-monitor/filter-s_signal2-lmb05-200-4k-epoch4",
+  "created_at": "2026-09-16T23:12:52.000Z",
+  "updated_at": "2026-09-16T23:13:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 9098609757,
+  "storage_human": "9.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Offres de stage étudiant",
+      "url": "https://www.stage.fr/stage/",
+      "snippet": "Trouvez votre prochain stage, grâce aux milliers d’offres de stage dans de nombreux domaines et choisissez la ville de votre futur …"
+    },
+    {
+      "title": "Offres de stage en France - Recherche et trouve un stage !",
+      "url": "https://www.welcometothejungle.com/fr/pages/stage",
+      "snippet": "Un stage en entreprise est une période de formation pratique durant laquelle un étudiant ou un jeune diplômé intègre une entreprise …"
+    },
+    {
+      "title": "Offres en Stage - 2257 Offres Disponibles - Septembre 2026",
+      "url": "https://jobs-stages.letudiant.fr/offres/contrat-stage",
+      "snippet": "Consultez les 2257 Offres en Stage pour Septembre 2026. Postulez dès Maintenant sur L'Etudiant"
+    },
+    {
+      "title": "Stage : plus de 43 000 emplois (16 septembre 2026) | Indeed",
+      "url": "https://fr.indeed.com/Emplois-Stage",
+      "snippet": "Vous êtes à la recherche d'un emploi : Stage ? Il y en a 43 849 disponibles sur Indeed.com, le plus grand site d'emploi mondial."
+    },
+    {
+      "title": "Stage.FR - Offres de stage, alternance, job en France, à l'étranger",
+      "url": "https://www.stage.fr/",
+      "snippet": "Rendez-vous sur Stage.fr et utilisez la barre de recherche pour filtrer les offres par métier, secteur, localisation ou type de contrat …"
+    }
+  ]
+}

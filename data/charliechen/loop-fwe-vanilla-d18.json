@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "CharlieChen/loop-fwe-vanilla-d18",
+  "slug": "charliechen-loop-fwe-vanilla-d18",
+  "author": "CharlieChen",
+  "url": "https://huggingface.co/CharlieChen/loop-fwe-vanilla-d18",
+  "created_at": "2026-09-16T22:40:16.000Z",
+  "updated_at": "2026-09-16T22:40:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "looped-transformer",
+    "scaling-laws",
+    "pytorch",
+    "base-model",
+    "text-generation",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5513708623,
+  "storage_human": "5.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hyderabad to Delhi Flight Status - IndiGo",
+      "url": "https://www.goindigo.in/check-flight-status/hyderabad-to-delhi.html",
+      "snippet": "Check Hyderabad to Delhi flight status for today in real-time. Live flight tracker to check the arrival and departure time for Hyderabad …"
+    },
+    {
+      "title": "Live Hyderabad to New Delhi Flight Status Today | HYD-DEL Updates …",
+      "url": "https://www.ixigo.com/flight-status/hyderabad-new-delhi-hyd-del-status?msockid=3b214cc293ee6cbe07af5b1592f76d56",
+      "snippet": "1 day ago · Check the real-time Hyderabad to New Delhi flight status for today. See live flight schedule of Hyderabad - New Delhi, …"
+    },
+    {
+      "title": "HYD-DEL Flight Status",
+      "url": "https://www.flightstats.com/v2/flight-tracker/route/HYD/DEL",
+      "snippet": "1 day ago · (HYD to DEL) Track the current status of flights departing from (HYD) Hyderabad Rajiv Gandhi International Airport and …"
+    },
+    {
+      "title": "Hyderabad to Delhi Flight Status - MakeMyTrip",
+      "url": "https://www.makemytrip.com/flights/hyderabad-new_delhi-flight-status.html?msockid=3b214cc293ee6cbe07af5b1592f76d56",
+      "snippet": "2 days ago · Track live status of all flights from Hyderabad to Delhi. Check real-time status and tracking, including departure and …"
+    },
+    {
+      "title": "Hyderabad to Delhi Flight Status | Live HYD to DEL Flight Tracker",
+      "url": "https://www.easemytrip.com/flights/hyderabad-hyd-to-delhi-del-flight-status/",
+      "snippet": "Check Hyderabad to Delhi flight status with real-time updates on departures, arrivals, delays, and cancellations. Track Hyderabad to …"
+    }
+  ]
+}

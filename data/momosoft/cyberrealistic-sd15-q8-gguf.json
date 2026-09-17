@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "MomoSoft/cyberrealistic-sd15-q8-gguf",
+  "slug": "momosoft-cyberrealistic-sd15-q8-gguf",
+  "author": "MomoSoft",
+  "url": "https://huggingface.co/MomoSoft/cyberrealistic-sd15-q8-gguf",
+  "created_at": "2026-09-17T02:25:50.000Z",
+  "updated_at": "2026-09-17T02:28:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": 1066236307,
+  "parameters_human": "1.07B",
+  "storage_bytes": 1801581568,
+  "storage_human": "1.8 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Help",
+      "url": "https://support.google.com/",
+      "snippet": "If you're having trouble accessing a Google product, there's a chance we're currently experiencing a temporary problem. You can …"
+    },
+    {
+      "title": "Définir Google comme moteur de recherche par défaut",
+      "url": "https://support.google.com/websearch/answer/464?hl=fr",
+      "snippet": "Pour obtenir des résultats de Google chaque fois que vous effectuez une recherche, vous pouvez en faire votre moteur de recherche …"
+    },
+    {
+      "title": "Adresse de google belgique [Résolu] - Forum Google Chrome",
+      "url": "https://forums.commentcamarche.net/forum/affich-31170088-adresse-de-google-belgique",
+      "snippet": "Dec 8, 2014 · bonsoir je voudrais retrouver mon navigateur google belgique car c un autre qui c'est instaler mais je ne trouve pas …"
+    },
+    {
+      "title": "Affichage de recherche dans google - Forum Webmastering",
+      "url": "https://forums.commentcamarche.net/forum/affich-5080854-affichage-de-recherche-dans-google",
+      "snippet": "C'est une question de programmation je pense, ou alors un partenariat avec google peut être. Essaye de faire quelques recherches."
+    },
+    {
+      "title": "Google Help",
+      "url": "https://support.google.com/websearch/answer/464?hl=nl",
+      "snippet": ""
+    }
+  ]
+}

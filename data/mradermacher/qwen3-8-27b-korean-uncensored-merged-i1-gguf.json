@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "mradermacher/qwen3.8-27b-korean-uncensored-merged-i1-GGUF",
+  "slug": "mradermacher-qwen3-8-27b-korean-uncensored-merged-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/qwen3.8-27b-korean-uncensored-merged-i1-GGUF",
+  "created_at": "2026-09-16T21:31:38.000Z",
+  "updated_at": "2026-09-17T02:00:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ko",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen",
+    "qwen3.8",
+    "27b",
+    "korean",
+    "uncensored",
+    "merged",
+    "bf16",
+    "text-generation",
+    "ko",
+    "en",
+    "base_model:koreallmdev/qwen3.8-27b-korean-uncensored-merged",
+    "base_model:quantized:koreallmdev/qwen3.8-27b-korean-uncensored-merged",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 300328860736,
+  "storage_human": "300.3 GB",
+  "base_model": "koreallmdev/qwen3.8-27b-korean-uncensored-merged",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "YouTube Brasil - YouTube",
+      "url": "https://www.youtube.com/channel/UCUN9lhwfMJRxMVuet7Shg0w",
+      "snippet": "É canal oficial do YouTube Brasil que vocês querem? :D Se inscreve para descobrir as novidades e tendências da plataforma, …"
+    },
+    {
+      "title": "Movies & TV - YouTube",
+      "url": "https://movies.youtube.com/",
+      "snippet": "Find the latest and greatest movies and shows all available on YouTube.com/movies. From award-winning hits to independent …"
+    },
+    {
+      "title": "YouTube TV",
+      "url": "https://tv.youtube.com/welcome，",
+      "snippet": "YouTube TV ... YouTube TV"
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/?source=pwa",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    }
+  ]
+}

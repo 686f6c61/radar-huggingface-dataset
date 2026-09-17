@@ -5,7 +5,7 @@
   "author": "NEVODESIGN",
   "url": "https://huggingface.co/NEVODESIGN/agbe-1b",
   "created_at": "2026-08-13T12:51:28.000Z",
-  "updated_at": "2026-08-20T19:17:28.000Z",
+  "updated_at": "2026-09-18T10:55:46.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -22,8 +22,8 @@
   "trending_score": 0,
   "parameters": 999885952,
   "parameters_human": "999.9M",
-  "storage_bytes": 11406192672,
-  "storage_human": "11.4 GB",
+  "storage_bytes": 12220453760,
+  "storage_human": "12.2 GB",
   "base_model": null,
   "formats": [
     "gguf"

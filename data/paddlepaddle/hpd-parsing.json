@@ -35,6 +35,7 @@
     "base_model:OpenGVLab/InternVL3_5-1B",
     "base_model:finetune:OpenGVLab/InternVL3_5-1B",
     "license:apache-2.0",
+    "eval-results",
     "region:us"
   ],
   "likes": 100,

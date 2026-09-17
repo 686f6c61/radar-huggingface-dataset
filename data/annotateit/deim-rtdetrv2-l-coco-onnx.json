@@ -5,7 +5,7 @@
   "author": "AnnotateIt",
   "url": "https://huggingface.co/AnnotateIt/deim-rtdetrv2-l-coco-onnx",
   "created_at": "2026-08-21T19:55:08.000Z",
-  "updated_at": "2026-08-21T19:55:20.000Z",
+  "updated_at": "2026-09-18T18:36:00.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "object-detection",

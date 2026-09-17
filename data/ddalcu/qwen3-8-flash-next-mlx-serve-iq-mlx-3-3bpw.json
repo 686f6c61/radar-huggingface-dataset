@@ -5,7 +5,7 @@
   "author": "ddalcu",
   "url": "https://huggingface.co/ddalcu/Qwen3.8-Flash-Next-MLX-Serve-iQ-MLX-3.3bpw",
   "created_at": "2026-09-13T20:46:25.000Z",
-  "updated_at": "2026-09-13T22:41:23.000Z",
+  "updated_at": "2026-09-16T23:19:04.000Z",
   "license": "qwen-community-1.0",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",

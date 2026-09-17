@@ -29,7 +29,8 @@
     "endpoints_compatible",
     "region:us",
     "imatrix",
-    "conversational"
+    "conversational",
+    "not-for-all-audiences"
   ],
   "likes": 1,
   "downloads_30d": 2588,

@@ -4,8 +4,8 @@
   "slug": "ishikaa-acquisition_generator_as_answer_variance_medmcqa_qwen7b",
   "author": "ishikaa",
   "url": "https://huggingface.co/ishikaa/acquisition_generator_AS_answer_variance_medmcqa_qwen7b",
-  "created_at": "2026-08-23T13:00:26.000Z",
-  "updated_at": "2026-08-23T13:02:45.000Z",
+  "created_at": "2026-09-21T21:34:25.000Z",
+  "updated_at": "2026-09-21T21:37:10.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -35,8 +35,8 @@
   ],
   "is_conversational": true,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-09-05T05:06:18.285Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

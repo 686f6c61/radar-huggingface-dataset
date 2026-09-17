@@ -5,7 +5,7 @@
   "author": "avishkararjan",
   "url": "https://huggingface.co/avishkararjan/qwen2.5-coder-7b-lunar-lander-dpo-v2",
   "created_at": "2026-09-09T12:07:45.000Z",
-  "updated_at": "2026-09-11T18:54:51.000Z",
+  "updated_at": "2026-09-16T19:09:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -32,8 +32,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 819088316,
-  "storage_human": "819 MB",
+  "storage_bytes": 980621508,
+  "storage_human": "981 MB",
   "base_model": "unsloth/Qwen2.5-Coder-7B-bnb-4bit",
   "formats": [
     "safetensors"

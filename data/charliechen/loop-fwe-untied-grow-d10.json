@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "CharlieChen/loop-fwe-untied-grow-d10",
+  "slug": "charliechen-loop-fwe-untied-grow-d10",
+  "author": "CharlieChen",
+  "url": "https://huggingface.co/CharlieChen/loop-fwe-untied-grow-d10",
+  "created_at": "2026-09-16T22:39:11.000Z",
+  "updated_at": "2026-09-16T22:39:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "looped-transformer",
+    "scaling-laws",
+    "pytorch",
+    "base-model",
+    "text-generation",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2302974211,
+  "storage_human": "2.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to Clear Your Off-Facebook Activity & Control Your Data",
+      "url": "https://www.wikihow.com/Clear-Off-Facebook-Activity",
+      "snippet": "Aug 7, 2025 · This wikiHow teaches you how to clear your off-Facebook activity and prevent Facebook from tracking your visits to …"
+    },
+    {
+      "title": "How to delete your Facebook account login history ️",
+      "url": "https://tecnobits.com/en/how-to-delete-login-history-from-facebook-account/",
+      "snippet": "Feb 8, 2024 · Yes, it is safe to delete your Facebook account login history. In fact, it is a good security practice to protect your privacy …"
+    },
+    {
+      "title": "How To Delete Your Activity On Facebook: Step-By-Step Guide",
+      "url": "https://devicology.com/guide/how-to-delete-your-activity-on-facebook/3616/",
+      "snippet": "Apr 18, 2025 · Learn how to delete specific activities or clear your entire activity log on Facebook to protect your privacy and clean …"
+    },
+    {
+      "title": "How Do I Delete All Activity Log on Facebook - TechCult",
+      "url": "https://techcult.com/how-do-i-delete-all-activity-log-on-facebook/",
+      "snippet": "Jan 29, 2023 · But some of you might want to delete all activity log on Facebook. So, in this article, we will take a look at how to …"
+    },
+    {
+      "title": "How to View and Delete Your Off-Facebook Activity - MajorGeeks",
+      "url": "https://www.majorgeeks.com/content/page/how_to_view_and_delete_your_off_facebook_activity.html",
+      "snippet": "Jun 30, 2023 · It's no secret that Facebook has a lot of built-in tracking, and many of us try to avoid that as much as possible. …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "g-group-ai-lab",
   "url": "https://huggingface.co/g-group-ai-lab/gipformer1.5-65M-rnnt",
   "created_at": "2026-08-21T08:49:50.000Z",
-  "updated_at": "2026-09-14T03:30:59.000Z",
+  "updated_at": "2026-09-17T03:20:07.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",

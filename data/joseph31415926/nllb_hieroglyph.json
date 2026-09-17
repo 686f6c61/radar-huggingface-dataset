@@ -5,7 +5,7 @@
   "author": "Joseph31415926",
   "url": "https://huggingface.co/Joseph31415926/nllb_hieroglyph",
   "created_at": "2025-07-31T08:23:19.000Z",
-  "updated_at": "2026-09-09T12:53:32.000Z",
+  "updated_at": "2026-09-20T20:42:30.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -23,10 +23,10 @@
   "likes": 0,
   "downloads_30d": 71,
   "trending_score": 0,
-  "parameters": 631023616,
-  "parameters_human": "631.0M",
-  "storage_bytes": 303077965997,
-  "storage_human": "303.1 GB",
+  "parameters": 630602752,
+  "parameters_human": "630.6M",
+  "storage_bytes": 305605529746,
+  "storage_human": "305.6 GB",
   "base_model": null,
   "formats": [
     "safetensors"

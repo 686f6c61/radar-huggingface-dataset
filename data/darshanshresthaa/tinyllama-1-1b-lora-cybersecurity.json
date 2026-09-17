@@ -5,7 +5,7 @@
   "author": "Darshanshresthaa",
   "url": "https://huggingface.co/Darshanshresthaa/tinyllama-1.1b-lora-cybersecurity",
   "created_at": "2026-09-13T11:36:09.000Z",
-  "updated_at": "2026-09-13T11:36:18.000Z",
+  "updated_at": "2026-09-19T08:48:51.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 54282417,
-  "storage_human": "54 MB",
+  "storage_bytes": 108564834,
+  "storage_human": "109 MB",
   "base_model": "TinyLlama/TinyLlama-1.1B-intermediate-step-1431k-3T",
   "formats": [
     "safetensors"

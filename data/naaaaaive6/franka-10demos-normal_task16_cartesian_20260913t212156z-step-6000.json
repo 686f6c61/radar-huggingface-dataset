@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "NaaaaaiVe6/franka-10demos-normal_task16_cartesian_20260913T212156Z-step-6000",
+  "slug": "naaaaaive6-franka-10demos-normal_task16_cartesian_20260913t212156z-step-6000",
+  "author": "NaaaaaiVe6",
+  "url": "https://huggingface.co/NaaaaaiVe6/franka-10demos-normal_task16_cartesian_20260913T212156Z-step-6000",
+  "created_at": "2026-09-16T23:13:35.000Z",
+  "updated_at": "2026-09-16T23:15:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3616757520,
+  "parameters_human": "3.62B",
+  "storage_bytes": 7233650408,
+  "storage_human": "7.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Compare Cheap Travel Insurance From 81p Per Day - MoneySuperMarket",
+      "url": "https://www.moneysupermarket.com/travel-insurance/?msockid=1342db8334fb6bea0cedcc5435566a48",
+      "snippet": "1 day ago · We compare travel insurance from 55 leading providers to find the right deal for you on your next holiday. Get rewarded …"
+    },
+    {
+      "title": "Travel Insurance for Over 70s | MoneySuperMarket",
+      "url": "https://www.moneysupermarket.com/travel-insurance/over-70s/?msockid=1342db8334fb6bea0cedcc5435566a48",
+      "snippet": "1 day ago · Travel insurance for over 70s offers comprehensive coverage, including medical equipment & cancellation due to health …"
+    },
+    {
+      "title": "Unoccupied House Insurance | Beat Your Renewal Quote",
+      "url": "https://www.moneysupermarket.com/home-insurance/unoccupied/?msockid=1342db8334fb6bea0cedcc5435566a48",
+      "snippet": "Sep 10, 2026 · What is unoccupied home insurance? Unoccupied home insurance covers you when your home is empty for longer …"
+    },
+    {
+      "title": "Compare Senior Travel Insurance | MoneySuperMarket",
+      "url": "https://www.moneysupermarket.com/travel-insurance/senior-travel-insurance/?msockid=1342db8334fb6bea0cedcc5435566a48",
+      "snippet": "Sep 10, 2026 · Travel insurance policy inclusions and exclusions vary. The following information provides a general overview of …"
+    },
+    {
+      "title": "Over 80s travel insurance - MoneySuperMarket",
+      "url": "https://www.moneysupermarket.com/travel-insurance/over-80s/?msockid=1342db8334fb6bea0cedcc5435566a48",
+      "snippet": "Sep 10, 2026 · Compare over 80s travel insurance policies with MoneySuperMarket! Find and compare great deals for medical cover, …"
+    }
+  ]
+}

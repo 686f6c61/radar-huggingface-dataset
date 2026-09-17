@@ -5,7 +5,7 @@
   "author": "fpadovani",
   "url": "https://huggingface.co/fpadovani/nld-100mb-after-wc-zipf-newlex-nld-ckpt500_seed455_seed455",
   "created_at": "2026-09-13T19:59:16.000Z",
-  "updated_at": "2026-09-14T01:22:22.000Z",
+  "updated_at": "2026-09-17T11:16:50.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -26,12 +26,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 587,
+  "downloads_30d": 582,
   "trending_score": 0,
   "parameters": 124770816,
   "parameters_human": "124.8M",
-  "storage_bytes": 500299040,
-  "storage_human": "500 MB",
+  "storage_bytes": 11481334838,
+  "storage_human": "11.5 GB",
   "base_model": "fpadovani/ppt-wc-zipf-newlex-nld-100mb_seed455",
   "formats": [
     "safetensors"

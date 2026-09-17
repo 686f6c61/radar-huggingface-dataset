@@ -5,7 +5,7 @@
   "author": "TULLUS",
   "url": "https://huggingface.co/TULLUS/paligemma2-3b-mix-448",
   "created_at": "2026-09-13T05:29:13.000Z",
-  "updated_at": "2026-09-15T15:30:43.000Z",
+  "updated_at": "2026-09-17T19:45:13.000Z",
   "license": "gemma",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -40,6 +40,8 @@
     "arxiv:2010.04295",
     "arxiv:1511.09207",
     "arxiv:2412.03555",
+    "base_model:google/paligemma2-3b-mix-448",
+    "base_model:finetune:google/paligemma2-3b-mix-448",
     "license:gemma",
     "text-generation-inference",
     "endpoints_compatible",
@@ -52,7 +54,7 @@
   "parameters_human": "3.03B",
   "storage_bytes": 6146167062,
   "storage_human": "6.1 GB",
-  "base_model": null,
+  "base_model": "google/paligemma2-3b-mix-448",
   "formats": [
     "safetensors"
   ],

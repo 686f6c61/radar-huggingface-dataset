@@ -5,7 +5,7 @@
   "author": "are25",
   "url": "https://huggingface.co/are25/jano-tts",
   "created_at": "2026-09-16T16:29:14.000Z",
-  "updated_at": "2026-09-16T17:42:10.000Z",
+  "updated_at": "2026-09-16T22:46:53.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "feature-extraction",
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": 14209225,
   "parameters_human": "14.2M",
-  "storage_bytes": 113721656,
-  "storage_human": "114 MB",
+  "storage_bytes": 682329936,
+  "storage_human": "682 MB",
   "base_model": null,
   "formats": [
     "safetensors"

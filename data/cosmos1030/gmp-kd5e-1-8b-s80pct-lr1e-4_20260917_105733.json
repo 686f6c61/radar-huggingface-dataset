@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "cosmos1030/gmp-kd5e-1-8b-s80pct-lr1e-4_20260917_105733",
+  "slug": "cosmos1030-gmp-kd5e-1-8b-s80pct-lr1e-4_20260917_105733",
+  "author": "cosmos1030",
+  "url": "https://huggingface.co/cosmos1030/gmp-kd5e-1-8b-s80pct-lr1e-4_20260917_105733",
+  "created_at": "2026-09-17T01:57:33.000Z",
+  "updated_at": "2026-09-17T01:58:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 20764822992,
+  "storage_human": "20.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Billigflüge: günstige Flüge und Flugtickets buchen | Skyscanner",
+      "url": "https://www.skyscanner.de/?msockid=3e92e1d049686ca2363ef60748726d5c",
+      "snippet": "Vergleiche Billigflüge von allen großen Fluglinien und Reisebüros und finde die billigsten Tickets zu all deinen Lieblingszielen. Jetzt …"
+    },
+    {
+      "title": "️ 18 € Flüge nach Manchester (MAN) 2027 | Skyscanner",
+      "url": "https://www.skyscanner.de/fluge-nach/man/billigfluge-nach-manchester-flughafen.html?msockid=3e92e1d049686ca2363ef60748726d5c",
+      "snippet": "Du suchst Billigflüge an den Flughafen Manchester? Vergleiche Preise von Reiseanbietern und Fluggesellschaften für das beste …"
+    },
+    {
+      "title": "️ 20 € Flüge nach Ibiza (IBZ) 2027 | Skyscanner",
+      "url": "https://www.skyscanner.de/fluge-nach/ibz/billigfluge-nach-ibiza-flughafen.html?msockid=3e92e1d049686ca2363ef60748726d5c",
+      "snippet": "Du suchst Billigflüge an den Flughafen Ibiza? Vergleiche Preise von Reiseanbietern und Fluggesellschaften für das beste Angebot. …"
+    },
+    {
+      "title": "Skyscanner | Find the cheapest flights fast: save time, save money!",
+      "url": "https://www.skyscanner.de/?locale=en-GB&msockid=3e92e1d049686ca2363ef60748726d5c",
+      "snippet": "Compare millions of flights, as well as car hire and hotels worldwide - for free! Skyscanner is the travel search site for savvy travellers."
+    },
+    {
+      "title": "️ 53 € Flüge nach Reykjavík (REYK) 2027 | Skyscanner",
+      "url": "https://www.skyscanner.de/fluge-nach/reyk/billigfluge-nach-reykjavik.html?msockid=3e92e1d049686ca2363ef60748726d5c",
+      "snippet": "Du suchst billige Flüge nach Reykjavík? Vergleiche Preise von Hunderten der größten Reisebüros und Fluglinien, darunter …"
+    }
+  ]
+}

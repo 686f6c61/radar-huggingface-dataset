@@ -28,7 +28,8 @@
     "base_model:merge:ReadyArt/Forgotten-Abomination-12B-v4.0",
     "license:apache-2.0",
     "region:us",
-    "conversational"
+    "conversational",
+    "not-for-all-audiences"
   ],
   "likes": 0,
   "downloads_30d": 164,

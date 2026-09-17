@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "CharlieChen/loop-grow-d12",
+  "slug": "charliechen-loop-grow-d12",
+  "author": "CharlieChen",
+  "url": "https://huggingface.co/CharlieChen/loop-grow-d12",
+  "created_at": "2026-09-16T21:51:13.000Z",
+  "updated_at": "2026-09-16T21:51:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "looped-transformer",
+    "scaling-laws",
+    "pytorch",
+    "base-model",
+    "text-generation",
+    "en",
+    "dataset:HuggingFaceFW/fineweb",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1977113897,
+  "storage_human": "2.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Installation midéa – MIDEA Climatiseur - SAV Darty",
+      "url": "https://sav.darty.com/forum/MIDEA/MMCS-12HRN8-QRD0/INSTALLATION-MIDEA/5600718/613818",
+      "snippet": "May 13, 2026 · Discussions sur Climatiseur MMCS-12HRN8-QRD0 de la marque MIDEA – Installation midéa – Bonjour, Pouvez vous …"
+    },
+    {
+      "title": "Accéder à mes factures d'achat sur le site DARTY",
+      "url": "https://sav.darty.com/thematic/ACCEDER-A-MES-FACTURES-D-ACHAT-SUR-LE-SITE-DARTY/709",
+      "snippet": "Aug 30, 2019 · Pour un achat réalisé en magasin ou sur darty.com (y compris auprès d'un vendeur partenaire), vous avez la …"
+    },
+    {
+      "title": "新版高中人教版教材一共有几本？ - 知乎",
+      "url": "https://www.zhihu.com/question/414737309",
+      "snippet": "我想问一下新版高中人教版语文，数学，英语，政治，历史，地理一共有几本必修，几本选择性必修？"
+    },
+    {
+      "title": "Rencontrez-vous ces problèmes ? – TCL Téléviseur LED - SAV Darty",
+      "url": "https://sav.darty.com/FORUM/TCL/58P635-4K-ULTRA-HD-GOOGLE-TV-2022/RENCONTREZ-VOUS-CES-PROBLEMES--/5096085/601895",
+      "snippet": "Discussions sur Téléviseur LED 58P635 4K Ultra HD Google TV 2022 de la marque TCL – Rencontrez-vous ces problèmes ? – …"
+    },
+    {
+      "title": "Pièces détachées et accessoires Darty",
+      "url": "https://sav.darty.com/thematic/PIECES-DETACHEES-ET-ACCESSOIRES-DARTY/749",
+      "snippet": "Nov 15, 2021 · Réparer son appareil Darty, c’est facile ! Vous pouvez commander de nombreuses pièces détachées et accessoires …"
+    }
+  ]
+}

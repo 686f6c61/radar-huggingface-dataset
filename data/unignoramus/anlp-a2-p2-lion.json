@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "unignoramus/anlp-a2-p2-lion",
+  "slug": "unignoramus-anlp-a2-p2-lion",
+  "author": "unignoramus",
+  "url": "https://huggingface.co/unignoramus/anlp-a2-p2-lion",
+  "created_at": "2026-09-17T01:19:36.000Z",
+  "updated_at": "2026-09-17T09:17:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 282163850,
+  "storage_human": "282 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Speedtest by Ookla - The Global Broadband Speed Test",
+      "url": "https://www.speedtest.net/",
+      "snippet": "Test your internet speed on any device with Speedtest by Ookla, available for free on desktop and mobile apps."
+    },
+    {
+      "title": "Alle Themenbereiche auf test.de: Übersicht von A-Z",
+      "url": "https://www.test.de/thema/",
+      "snippet": "Sie wollen keinen neuen Test verpassen? Unsere Newsletter informieren Sie über das Test-Geschehen. Und mit der test.de-Flatrate …"
+    },
+    {
+      "title": "Internet Speed Test | Fast.com",
+      "url": "https://fast.com/",
+      "snippet": "How fast is your download speed? In seconds, FAST.com's simple Internet speed test will estimate your ISP speed."
+    },
+    {
+      "title": "Speedtest by Ookla - The Global Broadband Speed Test",
+      "url": "https://www.speedtest.net/run",
+      "snippet": "Test your internet speed and performance with Speedtest by Ookla, available on desktop and mobile devices for free."
+    },
+    {
+      "title": "Test – Wikipedia",
+      "url": "https://de.m.wikipedia.org/wiki/Test",
+      "snippet": "In der Technik wird ein Test häufig auch als Verifikation verstanden, d. h. ob sich ein Testobjekt unter möglichst realistischen …"
+    }
+  ]
+}

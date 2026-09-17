@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "DaRkSpyro/dagame",
+  "slug": "darkspyro-dagame",
+  "author": "DaRkSpyro",
+  "url": "https://huggingface.co/DaRkSpyro/dagame",
+  "created_at": "2026-09-16T20:58:19.000Z",
+  "updated_at": "2026-09-16T20:58:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FC Barcelona vs Real Racing Club live score, H2H and lineups",
+      "url": "https://www.sofascore.com/football/match/real-racing-club-fc-barcelona/rgbsKgb",
+      "snippet": "21 hours ago · FC Barcelona Real Racing Club live score starts on 16 Sept 2026 at 19:30 UTC time at Spotify Camp Nou stadium, …"
+    },
+    {
+      "title": "Barcelona vs Racing Santander live online: score, stats, goals ...",
+      "url": "https://en.as.com/soccer/barcelona-vs-racing-santander-live-online-score-stats-goals-updates-laliga-202627-f202609-n/",
+      "snippet": "2 hours ago · LaLiga Barcelona vs Racing Santander live online: score, stats, goals & updates | LaLiga 2026/27 Live updates as …"
+    },
+    {
+      "title": "Barcelona vs Racing Santander - live score, predicted lineups",
+      "url": "https://www.fotmob.com/matches/barcelona-vs-racing-santander/2hex0z",
+      "snippet": "Barcelona vs Racing Santander on Wed, Sep 16, 2026, 19:30 UTC. Check live results, H2H, match stats, lineups, player ratings, …"
+    },
+    {
+      "title": "Barcelona vs Racing de Santander: Spanish La Liga stats & head-to",
+      "url": "https://www.bbc.com/sport/football/live/cw305vp3rv2dt",
+      "snippet": "21 hours ago · Follow live text commentary, score updates and match stats from Barcelona vs Racing de Santander in the Spanish …"
+    },
+    {
+      "title": "FC Barcelona vs. Racing de Santander | FC Barcelona Official Channel",
+      "url": "https://www.fcbarcelona.com/en/tickets/football/regular/laliga/fcbarcelona-realracingclub",
+      "snippet": "Visit for all the latest news, photos, and updates on FC Barcelona!"
+    }
+  ]
+}

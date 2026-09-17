@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "mradermacher/simllama-1.1-instruct-beta-i1-GGUF",
+  "slug": "mradermacher-simllama-1-1-instruct-beta-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/simllama-1.1-instruct-beta-i1-GGUF",
+  "created_at": "2026-09-16T23:35:13.000Z",
+  "updated_at": "2026-09-17T00:00:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "simllama",
+    "llama",
+    "smol-smoltalk",
+    "slm",
+    "400m",
+    "en",
+    "dataset:HuggingFaceTB/smol-smoltalk",
+    "dataset:exnivo/tinybrain-instruct-sft-200k",
+    "dataset:OpenAssistant/oasst2",
+    "dataset:OpenAssistant/oasst1",
+    "dataset:drwlf/medra-thinking-768",
+    "dataset:togethercomputer/llama-instruct",
+    "dataset:interview-eval/MATH",
+    "dataset:RLAIF/mbpp",
+    "base_model:simonko912/simllama-1.1-instruct-beta",
+    "base_model:quantized:simonko912/simllama-1.1-instruct-beta",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 468239360,
+  "parameters_human": "468.2M",
+  "storage_bytes": 5491301920,
+  "storage_human": "5.5 GB",
+  "base_model": "simonko912/simllama-1.1-instruct-beta",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Play Free Sudoku online - solve web sudoku puzzles",
+      "url": "https://sudoku.com/",
+      "snippet": "Play free Sudoku online from Easy to Expert level on Sudoku.com. Select a difficulty level of a web sudoku puzzle to challenge …"
+    },
+    {
+      "title": "Hard sudoku puzzles online - solve difficult web sudoku for free",
+      "url": "https://sudoku.com/hard/",
+      "snippet": "Play hard level Sudoku online on Sudoku.com. Our daily difficult web sudoku puzzles are suitable for people, who possess an …"
+    },
+    {
+      "title": "Hardest sudoku puzzles - play sudoku expert level online for free",
+      "url": "https://sudoku.com/expert/",
+      "snippet": "Play daily advanced web sudoku puzzles online on Sudoku.com. Expert sudoku level is suitable for professionals, who possess an …"
+    },
+    {
+      "title": "Sudoku medium online - play medium level sudoku puzzles for free",
+      "url": "https://sudoku.com/medium/",
+      "snippet": "Play medium Sudoku puzzles online on Sudoku.com. Our daily medium difficulty web sudoku puzzles are suitable for people, who …"
+    },
+    {
+      "title": "Jouez au Sudoku gratuitement",
+      "url": "https://sudoku.com/fr",
+      "snippet": "Jouez gratuitement au Sudoku en ligne du niveau Facile à Expert sur Sudoku.com. Notre sudoku web est compatible avec tous les …"
+    }
+  ]
+}

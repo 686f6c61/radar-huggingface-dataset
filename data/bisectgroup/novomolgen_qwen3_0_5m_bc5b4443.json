@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "bisectgroup/NovoMolGen_qwen3_0_5m_bc5b4443",
+  "slug": "bisectgroup-novomolgen_qwen3_0_5m_bc5b4443",
+  "author": "bisectgroup",
+  "url": "https://huggingface.co/bisectgroup/NovoMolGen_qwen3_0_5m_bc5b4443",
+  "created_at": "2026-09-17T02:38:11.000Z",
+  "updated_at": "2026-09-17T03:27:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 176,
+  "trending_score": 0,
+  "parameters": 473024,
+  "parameters_human": "473024",
+  "storage_bytes": 3807440,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MSN | Actualités personnalisées, Gros titres, Mises à jour en direct etc",
+      "url": "https://www.msn.com/fr-fr",
+      "snippet": "Votre collection personnalisée et curée des meilleurs contenus d’actualités, de météo, de sports, d’argent, de voyage, de …"
+    },
+    {
+      "title": "Sélection de la rédaction - MSN",
+      "url": "https://www.msn.com/fr-fr/channel/topic/S%C3%A9lection%20de%20la%20r%C3%A9daction/tp-Y_b43a59b1-5014-48d4-be06-75d3cf7da630",
+      "snippet": "Consultez et suivez l'actualité de vos sujets favoris sur MSN."
+    },
+    {
+      "title": "Actualités - MSN",
+      "url": "https://www.msn.com/fr-fr/channel/topic/Actualit%C3%A9s/tp-Y_b43a59b1-5014-48d4-be06-75d3cf7da630convalessence",
+      "snippet": "Actualités Nous n'avons pas pu charger le contenu pour le moment. Accéder à mon flux"
+    },
+    {
+      "title": "Actualité à la Une - MSN",
+      "url": "https://www.msn.com/fr-fr/channel/topic/Actualit%C3%A9%20%C3%A0%20la%20Une/tp-Y_ef667d7b-c0f3-43cd-a4b5-398833ebad3d",
+      "snippet": "Vous êtes à jour ! MSN n'affiche qu'une quantité limitée de contenu provenant de certains éditeurs. S'il vous plaît, revenez plus tard."
+    },
+    {
+      "title": "20 Minutes - Toute l’actualité en direct et les dernières infos en continu",
+      "url": "https://www.20minutes.fr/",
+      "snippet": "Suivez l’actualité du jour sur 20 Minutes, média gratuit et indépendant. Politique, Sport, Culture, High Tech, Ecologie… Toute l’info en …"
+    }
+  ]
+}

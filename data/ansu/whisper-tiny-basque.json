@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": 37760640,
   "parameters_human": "37.8M",
-  "storage_bytes": 6344615969,
-  "storage_human": "6.3 GB",
+  "storage_bytes": 4682932593,
+  "storage_human": "4.7 GB",
   "base_model": "openai/whisper-tiny",
   "formats": [
     "safetensors"

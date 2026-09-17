@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "hanswalt/teutonic-II-110B-A7B-reign-22",
+  "slug": "hanswalt-teutonic-ii-110b-a7b-reign-22",
+  "author": "hanswalt",
+  "url": "https://huggingface.co/hanswalt/teutonic-II-110B-A7B-reign-22",
+  "created_at": "2026-09-17T01:51:43.000Z",
+  "updated_at": "2026-09-17T02:36:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mimo_v2",
+    "text-generation",
+    "causal-lm",
+    "decentralized-training",
+    "bittensor",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": 110280865472,
+  "parameters_human": "110.28B",
+  "storage_bytes": 220577440973,
+  "storage_human": "220.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Parkingo Ženklinimo Paslaugos - Navigacinių Sistemų Projektavimas",
+      "url": "https://www.diaro.lt/parkingo-zenklinimas",
+      "snippet": "Parkingo ženklinimas – tai aiškių vizualinių ženklų, vertikalių linijų ir simbolių sistema, parkingo vietų suskirstymas ir automobilių …"
+    },
+    {
+      "title": "Nepraleisk Progos: Efektyviausi Ženklinimo Sprendimai Parkavimo …",
+      "url": "https://c6.lt/naujas/stovejimo-vietu-zenklinimas.html",
+      "snippet": "Profesionalios stovėjimo vietų, kelių, gatvių ir sporto aikštelių ženklinimo paslaugos. Naudojame modernias technologijas ir ilgaamžes …"
+    },
+    {
+      "title": "Parkingo ženklinimo paslaugos Diaro agentūroje",
+      "url": "https://www.gelgaudiskisatgaiva.lt/parkingo-zenklinimo-paslaugos-diaro-agenturoje/",
+      "snippet": "Visi šie elementai sudaro vertikalų automobilių stovėjimo ženklinimą, kuris padeda vairuotojams lengviau rasti laisvas stovėjimo …"
+    },
+    {
+      "title": "Dėl Kelių horizontaliojo ženklinimo taisyklių patvirtinimo",
+      "url": "https://e-seimas.lrs.lt/portal/legalAct/lt/TAD/TAIS.418377",
+      "snippet": "Skirsnis Stovėjimo vietų ir aikštelių ženklinimas 157 Punktas (157 p.) 158 Punktas (158 p.) 159 Punktas (159 p.) 160 Punktas (160 p.) …"
+    },
+    {
+      "title": "Kelio ženklai • Bipa",
+      "url": "https://www.bipa.lt/produktas/kelio-zenklai/",
+      "snippet": "Siūlome standartinius ir individualaus projektavimo kelio ženklus, informacines lenteles ir skydus, nuorodas, gatvių pavadinimų …"
+    }
+  ]
+}

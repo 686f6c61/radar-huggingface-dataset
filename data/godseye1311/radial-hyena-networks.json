@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Godseye1311/radial-hyena-networks",
+  "slug": "godseye1311-radial-hyena-networks",
+  "author": "Godseye1311",
+  "url": "https://huggingface.co/Godseye1311/radial-hyena-networks",
+  "created_at": "2026-09-17T01:50:02.000Z",
+  "updated_at": "2026-09-17T02:12:02.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "materials-science",
+    "nanomaterials",
+    "graph-neural-networks",
+    "hyena",
+    "kolmogorov-arnold-networks",
+    "chili",
+    "arxiv:2402.13221",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 656874809,
+  "storage_human": "657 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Seznamte se s virtuální sestrou Emmy",
+      "url": "https://www.sestraemmy.cz/",
+      "snippet": "Emmy je webová aplikace vytvořená skupinou lékařů pro usnadnění komunikace s pacienty a zefektivnění opakujících se úkonů. …"
+    },
+    {
+      "title": "Kontakt - sestra Emmy",
+      "url": "https://www.sestraemmy.cz/kontakt",
+      "snippet": "Po přihlášení do Emmy můžete napsat jakýkoliv dotaz svému konkrétnímu lékaři/lékařce a ušetříte tak spoustu času. Zde najdete …"
+    },
+    {
+      "title": "Tipy-triky, jak si se SmartMEDIXem ušetřit práci - Sestra Emmy",
+      "url": "https://www.sestraemmy.cz/zdravotnik/blog/tipy-triky-jak-si-se-smartmedixem-usetrit-praci",
+      "snippet": "Mnoho uživatelů programu SmartMEDIX vůbec netuší, jak snadno program nastavit tak, aby nám ulehčoval práci. Tipy-triky, jak si se …"
+    },
+    {
+      "title": "Nejčastější otázky - sestra Emmy",
+      "url": "https://www.sestraemmy.cz/nejcastejsi-otazky",
+      "snippet": "Seznamte se s Emmy Dobrý den, jsem vaše virtuální sestra Emmy Vytvořil mě tým českých lékařů, kteří chtějí vylepšit služby pro své …"
+    },
+    {
+      "title": "Venkovská ordinace přijímá 80 % požadavků přes Emmy",
+      "url": "https://www.sestraemmy.cz/zdravotnik/reference-mudr-hladikova",
+      "snippet": "Venkovská ordinace přijímá 80 % požadavků přes Emmy a lékařka ušetří až 2 hodiny denně „Mám 3 ordinace v malém městě a …"
+    }
+  ]
+}

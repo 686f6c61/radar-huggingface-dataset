@@ -32,8 +32,8 @@
   "trending_score": 0,
   "parameters": 35107181936,
   "parameters_human": "35.11B",
-  "storage_bytes": 70247291341,
-  "storage_human": "70.2 GB",
+  "storage_bytes": 119020846671,
+  "storage_human": "119.0 GB",
   "base_model": "Qwen/Qwen3.5-35B-A3B-Base",
   "formats": [
     "safetensors"

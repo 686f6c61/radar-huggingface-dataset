@@ -4,8 +4,8 @@
   "slug": "tool1-myawesomemodel-testrepo",
   "author": "tool1",
   "url": "https://huggingface.co/tool1/MyAwesomeModel-TestRepo",
-  "created_at": "2026-09-14T21:41:07.000Z",
-  "updated_at": "2026-09-14T21:41:30.000Z",
+  "created_at": "2026-09-20T00:16:10.000Z",
+  "updated_at": "2026-09-20T00:16:17.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -31,8 +31,8 @@
   "formats": [],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-09-16T03:24:21.294Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

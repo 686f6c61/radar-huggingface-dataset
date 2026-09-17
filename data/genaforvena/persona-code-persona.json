@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "genaforvena/persona-code-persona",
+  "slug": "genaforvena-persona-code-persona",
+  "author": "genaforvena",
+  "url": "https://huggingface.co/genaforvena/persona-code-persona",
+  "created_at": "2026-09-16T22:58:24.000Z",
+  "updated_at": "2026-09-16T22:58:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:HuggingFaceTB/SmolLM2-360M-Instruct",
+    "lora",
+    "transformers",
+    "text-generation",
+    "arxiv:1910.09700",
+    "base_model:HuggingFaceTB/SmolLM2-360M-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 34793120,
+  "storage_human": "35 MB",
+  "base_model": "HuggingFaceTB/SmolLM2-360M-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Betreuer darf Lebensversicherung nicht ohne Genehmigung kündigen",
+      "url": "https://www.juraforum.de/news/betreuer-darf-lebensversicherung-nicht-ohne-genehmigung-kuendigen_185633",
+      "snippet": "Sep 7, 2016 · Nürnberg (jur). Betreuer einer pflegebedürftigen Person können ohne Genehmigung grundsätzlich nicht deren …"
+    },
+    {
+      "title": "ᐅ Auskunft über Betreuungsverhältnis - JuraForum.de",
+      "url": "https://www.juraforum.de/forum/t/auskunft-ueber-betreuungsverhaeltnis.409693/",
+      "snippet": "Aug 23, 2012 · Allerdings könnte man davon ausgehen, dass ein Betreuer - erst recht wenn Einwilligungsvorbehalt besteht - auch die …"
+    },
+    {
+      "title": "ᐅ kann Betreuer Vollmachten an Dritte weitergeben?",
+      "url": "https://www.juraforum.de/forum/t/kann-betreuer-vollmachten-an-dritte-weitergeben.311659/",
+      "snippet": "Feb 26, 2010 · AW: kann Betreuer Vollmachten an Dritte weitergeben? Ich denke es ist auch eine Frage welche Form der Betreuung …"
+    },
+    {
+      "title": "Unerlaubt Medikamente verabreicht....Köperverletzung oder schlimmer?",
+      "url": "https://www.juraforum.de/forum/t/unerlaubt-medikamente-verabreicht-koeperverletzung-oder-schlimmer.476015/",
+      "snippet": "Apr 8, 2014 · Die Beibringung von Medikamenten ohne Einwilligung des Patienten (ggf. durch den Betreuer oder das …"
+    },
+    {
+      "title": "ᐅ offene Forderung ggü. Betreutem - JuraForum.de",
+      "url": "https://www.juraforum.de/forum/t/offene-forderung-ggue-betreutem.628944/",
+      "snippet": "Jul 20, 2018 · AW: offene Forderung ggü. Betreutem Zunächst einmal kommt es darauf an, ob der Betreuer überhaupt einen …"
+    }
+  ]
+}

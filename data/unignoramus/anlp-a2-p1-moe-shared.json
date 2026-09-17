@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "unignoramus/anlp-a2-p1-moe-shared",
+  "slug": "unignoramus-anlp-a2-p1-moe-shared",
+  "author": "unignoramus",
+  "url": "https://huggingface.co/unignoramus/anlp-a2-p1-moe-shared",
+  "created_at": "2026-09-17T01:14:52.000Z",
+  "updated_at": "2026-09-17T01:15:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 141138353,
+  "storage_human": "141 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nuremberg Diary - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nuremberg_Diary",
+      "snippet": "Nuremberg Diary is Gustave Gilbert 's account of interviews he conducted during the Nuremberg trials of high-ranking Nazi leaders, …"
+    },
+    {
+      "title": "Was goering interviewed by gilbert? Was hitler intervi...",
+      "url": "https://factually.co/fact-checks/history/goering-interview-gilbert-hitler-swiss-journalists-fuhrer-bunker-2da3bd",
+      "snippet": "Feb 19, 2026 · Gustave M. Gilbert served as a prison psychologist with free access to the Nuremberg defendants and became a …"
+    },
+    {
+      "title": "Gustave Gilbert - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Gustave_Gilbert",
+      "snippet": "In 1948, as Head Psychologist at the Veterans Hospital at Lyons, NJ, Gilbert treated veterans of World Wars I and II who had …"
+    },
+    {
+      "title": "'Death' — the Defendants Whispered - Nuremberg. Casus pacis",
+      "url": "https://en.nuremberg.media/evidence/20211001/273914/Death--the-Defendants-Whispered.html",
+      "snippet": "Oct 1, 2021 · According to prison psychologist Gustave Gilbert, who worked at Nuremberg: \"As the defendants awaited the verdict, …"
+    },
+    {
+      "title": "The Nuremberg Diary ( 1971) Gustave Gilbert - Archive.org",
+      "url": "https://archive.org/details/the-nuremberg-diary-1971-gustave-gilbert",
+      "snippet": "Jul 5, 2022 · Nuremberg Diary is Gustave M. Gilbert's account of interviews he conducted during the trials of Nazi leaders, including …"
+    }
+  ]
+}

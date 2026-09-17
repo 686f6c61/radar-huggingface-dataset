@@ -5,7 +5,7 @@
   "author": "Accio-Lab",
   "url": "https://huggingface.co/Accio-Lab/occamy-1.0-GGUF",
   "created_at": "2026-09-15T19:16:40.000Z",
-  "updated_at": "2026-09-16T02:12:02.000Z",
+  "updated_at": "2026-09-18T00:21:44.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -13,10 +13,8 @@
   "languages": [],
   "tags": [
     "gguf",
-    "4-bit",
-    "8-bit",
-    "moe",
     "quantized",
+    "moe",
     "qwen3_5_moe",
     "tool-use",
     "image-text-to-text",
@@ -25,6 +23,7 @@
     "license:apache-2.0",
     "endpoints_compatible",
     "region:us",
+    "imatrix",
     "conversational"
   ],
   "likes": 1,
@@ -32,8 +31,8 @@
   "trending_score": 0,
   "parameters": 34660610688,
   "parameters_human": "34.66B",
-  "storage_bytes": 58969180096,
-  "storage_human": "59.0 GB",
+  "storage_bytes": 241898680256,
+  "storage_human": "241.9 GB",
   "base_model": "Accio-Lab/occamy-1.0",
   "formats": [
     "gguf"

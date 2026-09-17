@@ -5,7 +5,7 @@
   "author": "simhadrig",
   "url": "https://huggingface.co/simhadrig/Qwen3.6-35B-A3B-NVFP4-Q8_0",
   "created_at": "2026-09-12T18:46:29.000Z",
-  "updated_at": "2026-09-15T14:46:35.000Z",
+  "updated_at": "2026-09-17T20:02:38.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -13,6 +13,7 @@
   "languages": [],
   "tags": [
     "gguf",
+    "experts:nvfp4",
     "image-text-to-text",
     "base_model:nvidia/Qwen3.6-35B-A3B-NVFP4",
     "base_model:quantized:nvidia/Qwen3.6-35B-A3B-NVFP4",

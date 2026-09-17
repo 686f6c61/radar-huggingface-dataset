@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "bengoldberg0/granite-4.2-3b-phishing-url-qlora",
+  "slug": "bengoldberg0-granite-4-2-3b-phishing-url-qlora",
+  "author": "bengoldberg0",
+  "url": "https://huggingface.co/bengoldberg0/granite-4.2-3b-phishing-url-qlora",
+  "created_at": "2026-09-16T23:10:27.000Z",
+  "updated_at": "2026-09-17T13:54:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "phishing",
+    "cybersecurity",
+    "qlora",
+    "url-classification",
+    "research",
+    "dataset:phreshphish/phreshphish",
+    "base_model:ibm-granite/granite-4.2-3b",
+    "base_model:adapter:ibm-granite/granite-4.2-3b",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10684369,
+  "storage_human": "11 MB",
+  "base_model": "ibm-granite/granite-4.2-3b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "عصر النهضة - ويكيبيديا",
+      "url": "https://ar.wikipedia.org/wiki/%D8%B9%D8%B5%D8%B1_%D8%A7%D9%84%D9%86%D9%87%D8%B6%D8%A9",
+      "snippet": "هناك نقاش دائر حول الدرجة التي تطور فيها عصر النهضة بناء على ثقافة العصور الوسطى. حرص كل من ميشيليت وبوركهارت في وصف التقدم المحرز في عصر النهضة نحو العصر الحديث."
+    },
+    {
+      "title": "عصر النهضة: الخصائص، السياق، المراحل، السياسات",
+      "url": "https://maestrovirtuale.com/ar/%D8%AE%D8%B5%D8%A7%D8%A6%D8%B5-%D8%B9%D8%B5%D8%B1-%D8%A7%D9%84%D9%86%D9%87%D8%B6%D8%A9-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D9%82-%D8%A7%D9%84%D9%85%D8%B1%D8%A7%D8%AD%D9%84-%D8%A7%D9%84%D8%B3%D9%8A%D8%A7%D8%B3%D9%8A%D8%A9/",
+      "snippet": "عصر النهضة حركة ثقافية وفنية ظهرت في أوروبا، وخاصةً في إيطاليا، خلال القرنين الرابع عشر والسادس عشر. تميّز عصر النهضة بتثمين العقل والعلم والفن والثقافة اليونانية الرومانية الكلاسيكية، …"
+    },
+    {
+      "title": "ما هو عصر النهضة وأين بدأ ومعلومات شاملة عنه - برو عرب",
+      "url": "https://proarab.com/%d8%b9%d8%b5%d8%b1-%d8%a7%d9%84%d9%86%d9%87%d8%b6%d8%a9/",
+      "snippet": "Nov 23, 2024 · عصر النهضة هو مرحلة إبداع واكتشاف، هو تلك المرحلة التي عادت الحضارة فيها إلى جذورها، وتجلّت الأفكار في لوحات وأدب وابتكارات غيّرت مجرى التاريخ."
+    },
+    {
+      "title": "عصر النهضة - المعرفة - Marefa",
+      "url": "https://www.marefa.org/%D8%B9%D8%B5%D8%B1_%D8%A7%D9%84%D9%86%D9%87%D8%B6%D8%A9",
+      "snippet": "كما يدل مصطلح عصر النهضة على التيارات الثقافية و الفكرية التي بدأت في البلاد الإيطالية في القرن 14, حيث بلغت أوج ازدهارها في القرنين 15 و 16, ومن إيطاليا انتشرت النهضة إلى فرنسا وإسبانيا ..."
+    },
+    {
+      "title": "عصر النهضة - Wikiwand",
+      "url": "https://www.wikiwand.com/ar/%D8%B9%D8%B5%D8%B1_%D8%A7%D9%84%D9%86%D9%87%D8%B6%D8%A9",
+      "snippet": "عصر النهضة (بالإنجليزية:Renaissance) هي مرحلة تاريخية وحركة ثقافية اوروبية امتدت من أواخر العصور الوسطى من القرن الرابع عشر الميلادي إلى القرن السابع عشر وشهدت تحوّلات جذريًا …"
+    }
+  ]
+}

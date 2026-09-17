@@ -22,6 +22,7 @@
     "license:apache-2.0",
     "eval-results",
     "endpoints_compatible",
+    "deploy:sagemaker",
     "region:us"
   ],
   "likes": 406,

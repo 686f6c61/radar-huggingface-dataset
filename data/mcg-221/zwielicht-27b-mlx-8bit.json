@@ -32,7 +32,8 @@
     "base_model:quantized:Nimbz/Zwielicht-27B",
     "license:apache-2.0",
     "8-bit",
-    "region:us"
+    "region:us",
+    "not-for-all-audiences"
   ],
   "likes": 0,
   "downloads_30d": 78,

@@ -5,7 +5,7 @@
   "author": "Sonorix",
   "url": "https://huggingface.co/Sonorix/pulsar-v0.7-flash-gguf",
   "created_at": "2026-09-16T00:05:45.000Z",
-  "updated_at": "2026-09-16T00:06:53.000Z",
+  "updated_at": "2026-09-16T06:11:06.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -35,8 +35,8 @@
   "trending_score": 0,
   "parameters": 494032768,
   "parameters_human": "494.0M",
-  "storage_bytes": 1593225248,
-  "storage_human": "1.6 GB",
+  "storage_bytes": 1991040480,
+  "storage_human": "2.0 GB",
   "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
   "formats": [
     "gguf"

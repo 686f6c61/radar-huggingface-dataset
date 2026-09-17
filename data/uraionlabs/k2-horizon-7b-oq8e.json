@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "UraionLabs/K2-Horizon-7B-oQ8e",
+  "slug": "uraionlabs-k2-horizon-7b-oq8e",
+  "author": "UraionLabs",
+  "url": "https://huggingface.co/UraionLabs/K2-Horizon-7B-oQ8e",
+  "created_at": "2026-09-16T20:49:30.000Z",
+  "updated_at": "2026-09-16T21:05:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "k2_horizon",
+    "mlx-lm",
+    "quantized",
+    "quantization",
+    "apple-silicon",
+    "macos",
+    "local-inference",
+    "long-context",
+    "reasoning",
+    "coding",
+    "tool-calling",
+    "agentic",
+    "omlx",
+    "oqe",
+    "uraion-labs",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "en",
+    "base_model:IFM/K2-Horizon-7B",
+    "base_model:quantized:IFM/K2-Horizon-7B",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8999178240,
+  "parameters_human": "9.00B",
+  "storage_bytes": 9582640122,
+  "storage_human": "9.6 GB",
+  "base_model": "IFM/K2-Horizon-7B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Urban Outfitters: Men’s & Women’s Clothing, Homeware & Decor",
+      "url": "https://www.urbanoutfitters.com/?msockid=2ddfd46ed5f366e434b0c3b8d4e1670d",
+      "snippet": "Shop men’s and women’s apparel, streetwear clothing, and stylish apartment décor and furniture at Urban Outfitters. Explore new …"
+    },
+    {
+      "title": "Urban Outfitters",
+      "url": "https://www.urbanoutfitters.com/homepage-uo?msockid=2ddfd46ed5f366e434b0c3b8d4e1670d",
+      "snippet": "Always open, always awesome. Clothing, accessories and apartment items for men and women."
+    },
+    {
+      "title": "Urban Outfitters online shop | Snelle verzending | Zalando",
+      "url": "https://www.zalando.nl/urban-outfitters-online-shop/",
+      "snippet": "Het maakt niet uit of je nu een bohemian stijl boven een minimalistische verkiest of eerder te vinden bent voor een casual chic look, …"
+    },
+    {
+      "title": "Utrecht, Utrecht, Netherlands | Urban Outfitters Store Location",
+      "url": "https://www.urbanoutfitters.com/stores/utrecht?msockid=2ddfd46ed5f366e434b0c3b8d4e1670d",
+      "snippet": "Shop women's clothing, accessories, home décor and more at the Urban Outfitters store in Utrecht. Get directions, store hours and …"
+    },
+    {
+      "title": "Urban Outfitters Kleding, schoenen, sport & accessoires online",
+      "url": "https://www.zalando.nl/alle/urban-outfitters-online-shop/",
+      "snippet": "Urban Outfitters Kleding, schoenen, sport & accessoires online | Zalando = fashion | Gratis verzending voor de meeste bestellingen* …"
+    }
+  ]
+}

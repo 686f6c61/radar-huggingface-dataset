@@ -26,6 +26,7 @@
     "license:other",
     "eval-results",
     "deploy:azure",
+    "deploy:sagemaker",
     "region:us"
   ],
   "likes": 424,

@@ -34,7 +34,8 @@
     "base_model:petruhonk/Qwen3.8-9B-Distill-uncensored-heretic",
     "base_model:merge:petruhonk/Qwen3.8-9B-Distill-uncensored-heretic",
     "endpoints_compatible",
-    "region:us"
+    "region:us",
+    "not-for-all-audiences"
   ],
   "likes": 0,
   "downloads_30d": 50,

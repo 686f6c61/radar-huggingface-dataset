@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "joshycodes/gemma4-12b-sorrel-selfloop-g4-midtrain",
+  "slug": "joshycodes-gemma4-12b-sorrel-selfloop-g4-midtrain",
+  "author": "joshycodes",
+  "url": "https://huggingface.co/joshycodes/gemma4-12b-sorrel-selfloop-g4-midtrain",
+  "created_at": "2026-09-17T00:02:28.000Z",
+  "updated_at": "2026-09-17T01:07:30.000Z",
+  "license": "internal-research",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma4_unified",
+    "flourishing-training",
+    "continued-pretraining",
+    "dataset:joshycodes/sorrel-selfloop-corpus",
+    "base_model:joshycodes/gemma4-12b-sorrel-selfloop-g3-midtrain",
+    "base_model:finetune:joshycodes/gemma4-12b-sorrel-selfloop-g3-midtrain",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11959730224,
+  "parameters_human": "11.96B",
+  "storage_bytes": 23951724999,
+  "storage_human": "24.0 GB",
+  "base_model": "joshycodes/gemma4-12b-sorrel-selfloop-g3-midtrain",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Taschengeldparagraph § 110 BGB – Höhe, Grenze & Beispiel",
+      "url": "https://www.juraforum.de/lexikon/taschengeldparagraph",
+      "snippet": "May 26, 2026 · Als Taschengeldparagraph wird § 110 BGB bezeichnet, der besagt, dass ein Minderjähriger, der das 7. Lebensjahr …"
+    },
+    {
+      "title": "§ 266 HGB - Gliederung der Bilanz - Gesetze - JuraForum.de",
+      "url": "https://www.juraforum.de/gesetze/hgb/266-gliederung-der-bilanz",
+      "snippet": "Lesen Sie § 266 HGB kostenlos in der Gesetzessammlung von Juraforum.de mit über 6200 Gesetzen und Vorschriften."
+    },
+    {
+      "title": "Bilanzierungsgrundsätze HGB ᐅ Übersicht - JuraForum.de",
+      "url": "https://www.juraforum.de/lexikon/bilanzierungsgrundsaetze-nach-dem-hgb",
+      "snippet": "Mar 31, 2026 · Bilanz gem. § 266 HGB - Gliederung Aktivseite der Bilanzierungsgrundsätze nach dem HGB: Anlagevermögen …"
+    },
+    {
+      "title": "§ 298 HGB - Anzuwendende VorschriftenErleichterungen",
+      "url": "https://www.juraforum.de/gesetze/hgb/298-anzuwendende-vorschriftenerleichterungen",
+      "snippet": "Lesen Sie § 298 HGB kostenlos in der Gesetzessammlung von Juraforum.de mit über 6200 Gesetzen und Vorschriften."
+    },
+    {
+      "title": "§ 267 HGB - Umschreibung der Größenklassen - JuraForum.de",
+      "url": "https://www.juraforum.de/gesetze/hgb/267-umschreibung-der-groessenklassen",
+      "snippet": "Lesen Sie § 267 HGB kostenlos in der Gesetzessammlung von Juraforum.de mit über 6200 Gesetzen und Vorschriften."
+    }
+  ]
+}

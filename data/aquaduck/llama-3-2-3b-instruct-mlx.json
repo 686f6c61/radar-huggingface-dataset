@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "aquaduck/Llama-3.2-3B-Instruct-MLX",
+  "slug": "aquaduck-llama-3-2-3b-instruct-mlx",
+  "author": "aquaduck",
+  "url": "https://huggingface.co/aquaduck/Llama-3.2-3B-Instruct-MLX",
+  "created_at": "2026-09-16T21:51:58.000Z",
+  "updated_at": "2026-09-22T01:56:32.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "llama",
+    "aquaduck",
+    "meta-llama",
+    "conversational",
+    "layer-shards",
+    "text-generation",
+    "license:other",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3212749824,
+  "parameters_human": "3.21B",
+  "storage_bytes": 4868394001,
+  "storage_human": "4.9 GB",
+  "base_model": "meta-llama/llama-3.2-3b-instruct",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JAV Sub Indo Terbaru - arenajav.com",
+      "url": "https://arenajav.com/jav-sub-indo-terbaru/",
+      "snippet": "Jul 21, 2026 · Catat dan Bookmark alamat URL linkjepang.com agar tidak ketinggalan website/film terbaru. JUR-801 Realita Model …"
+    },
+    {
+      "title": "Jav Sub Indo - SUBJAVID",
+      "url": "https://subjavid.com/category/jav-sub-indo",
+      "snippet": "Jelajahi koleksi Jav Sub Indo di SUBJAVID."
+    },
+    {
+      "title": "JAV Sub Indo Terbaru - NGEJAV",
+      "url": "https://ngejav.club/jav-sub-indo",
+      "snippet": "Temukan koleksi terlengkap JAV sub Indo dengan resolusi HD hanya di Ngejav.blog. Nikmati streaming lancar dan update video …"
+    },
+    {
+      "title": "IndoJav - Streaming Download JAV Sub Indo Terbaru & HD",
+      "url": "https://indojav.stream/",
+      "snippet": "2 days ago · Nonton & download JAV Sub Indo terbaru hanya di Indojav.stream. Nikmati streaming video Jepang HD gratis tanpa …"
+    },
+    {
+      "title": "JAV Sub Indo Archives - ARENAJAV.COM",
+      "url": "https://arenajav.com/category/jav-sub-indo/",
+      "snippet": "Jul 21, 2026 · Streaming & download koleksi JAV Sub Indo JAV Subtitle Indonesia terbaru. Gratis, tanpa sensor, kualitas HD hanya …"
+    }
+  ]
+}

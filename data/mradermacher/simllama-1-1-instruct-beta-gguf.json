@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "mradermacher/simllama-1.1-instruct-beta-GGUF",
+  "slug": "mradermacher-simllama-1-1-instruct-beta-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/simllama-1.1-instruct-beta-GGUF",
+  "created_at": "2026-09-16T23:34:02.000Z",
+  "updated_at": "2026-09-16T23:37:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "simllama",
+    "llama",
+    "smol-smoltalk",
+    "slm",
+    "400m",
+    "en",
+    "dataset:HuggingFaceTB/smol-smoltalk",
+    "dataset:exnivo/tinybrain-instruct-sft-200k",
+    "dataset:OpenAssistant/oasst2",
+    "dataset:OpenAssistant/oasst1",
+    "dataset:drwlf/medra-thinking-768",
+    "dataset:togethercomputer/llama-instruct",
+    "dataset:interview-eval/MATH",
+    "dataset:RLAIF/mbpp",
+    "base_model:simonko912/simllama-1.1-instruct-beta",
+    "base_model:quantized:simonko912/simllama-1.1-instruct-beta",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 468239360,
+  "parameters_human": "468.2M",
+  "storage_bytes": 4198869760,
+  "storage_human": "4.2 GB",
+  "base_model": "simonko912/simllama-1.1-instruct-beta",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gay Telegram Groups 2026 (18+) | Telegram Porn",
+      "url": "https://telegramporn.red/categories/gay",
+      "snippet": "The best gay porn groups on Telegram are right here! 18+ gay content, photos and videos, chat and meetups. Join the top gay …"
+    },
+    {
+      "title": "Telegram: View @Only4Guys",
+      "url": "https://telegram.me/Only4Guys",
+      "snippet": "All videos in full length."
+    },
+    {
+      "title": "Telegram: Join Group Chat - t.me",
+      "url": "https://t.me/joinchat/R2zSfxrzMD78hlXPYTWxig",
+      "snippet": "‍🌈Latín Gays🍆💦 2 513 members, 25 online Grupo Gay latino 🚫No pedophilia 🚫No zoophilia 🚫No menores de edad Join Group"
+    },
+    {
+      "title": "Telegram: View @hotcutetwinks",
+      "url": "https://t.me/hotcutetwinks",
+      "snippet": "😈 🅷🅾🆃 🆃🆆🅸🅽🅺🅸🅴🆂😈 16 653 subscribers Share hot cute twinks vids, pics, Dailey uploads 🍆🍆💦💦 Strictly 18+ View in Telegram Preview channel"
+    },
+    {
+      "title": "Telegram: View @gaybearsandfriends",
+      "url": "https://telegram.me/gaybearsandfriends",
+      "snippet": "A group for chat for bears, cubs, otters, chasers, admirers... anyone at all! Maybe keep the porn streams elsewhere, stick to original …"
+    }
+  ]
+}

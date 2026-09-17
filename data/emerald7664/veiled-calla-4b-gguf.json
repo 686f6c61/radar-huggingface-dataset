@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Emerald7664/Veiled-Calla-4B-gguf",
+  "slug": "emerald7664-veiled-calla-4b-gguf",
+  "author": "Emerald7664",
+  "url": "https://huggingface.co/Emerald7664/Veiled-Calla-4B-gguf",
+  "created_at": "2026-09-16T20:56:22.000Z",
+  "updated_at": "2026-09-16T20:56:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "roleplay",
+    "creative-writing",
+    "immersive",
+    "mystery",
+    "storytelling",
+    "text-generation",
+    "en",
+    "base_model:soob3123/Veiled-Calla-4B",
+    "base_model:quantized:soob3123/Veiled-Calla-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3880263168,
+  "parameters_human": "3.88B",
+  "storage_bytes": 22137702848,
+  "storage_human": "22.1 GB",
+  "base_model": "soob3123/Veiled-Calla-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "\"Tant qu'on a le moral, le reste suit\" : après un grave accident, Paul ...",
+      "url": "https://actu.fr/normandie/cormeilles_27170/tant-quon-a-le-moral-le-reste-suit-apres-un-grave-accident-paul-sidere-ses-medecins-et-ouvre-sa-boucherie_64763853.html",
+      "snippet": "Sep 8, 2026 · Paul Saint-Georges, 26 ans, vient d'ouvrir sa boucherie à Cormeilles (Eure). Mais son projet, fruit d'un chantier d'un an, …"
+    },
+    {
+      "title": "Oise : un homme de 49 ans meurt après une collision entre deux …",
+      "url": "https://www.titrespresse.com/2741332601/oise-cormeilles-homme",
+      "snippet": "Feb 16, 2026 · (France Bleu) : Un automobiliste de 49 ans est mort ce lundi après avoir percuté une autre voiture à Cormeilles, dans …"
+    },
+    {
+      "title": "Cormeilles : 8 accidents de la route (27) — Accident Route",
+      "url": "https://accident-route.fr/commune/27170-cormeilles",
+      "snippet": "Chaque accident répertorié a fait l'objet d'un procès-verbal par les forces de l'ordre. La carte interactive ci-dessus permet de localiser …"
+    },
+    {
+      "title": "Sept Victimes dans un Accident de Voitures au Coeur du Pays d’Auge",
+      "url": "https://auto-loisirs.fr/sept-victimes-dans-un-accident-de-voitures-au-coeur-du-pays-d-auge/",
+      "snippet": "Un drame routier a secoué la région du pays d’Auge, faisant sept victimes. Cet article explore les circonstances de l’accident, les …"
+    },
+    {
+      "title": "Oise : un homme de 49 ans meurt après une collision entre deux …",
+      "url": "https://www.ici.fr/hauts-de-france/oise-60/cormeilles/oise-un-homme-de-49-ans-meurt-apres-une-collision-entre-deux-voitures-a-cormeilles-4671417",
+      "snippet": "Feb 16, 2026 · Un automobiliste de 49 ans est mort ce lundi après avoir percuté une autre voiture à Cormeilles, dans le nord de …"
+    }
+  ]
+}

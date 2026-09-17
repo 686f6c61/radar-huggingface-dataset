@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "CharlieChen/loop-operator-1-d10",
+  "slug": "charliechen-loop-operator-1-d10",
+  "author": "CharlieChen",
+  "url": "https://huggingface.co/CharlieChen/loop-operator-1-d10",
+  "created_at": "2026-09-16T21:51:40.000Z",
+  "updated_at": "2026-09-16T21:51:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "looped-transformer",
+    "scaling-laws",
+    "pytorch",
+    "base-model",
+    "text-generation",
+    "en",
+    "dataset:HuggingFaceFW/fineweb",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1327779759,
+  "storage_human": "1.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "北京时间精确到毫秒 - syiban.com",
+      "url": "http://time.syiban.com/haomiao.php",
+      "snippet": "23 hours ago · 本网页的北京时间精确到毫秒，确保你能获取最精准的时间校准信息，满足各种对时间精度有高要求的场景，为你的生 …"
+    },
+    {
+      "title": "现在的中国北京时间 - Time.is",
+      "url": "https://time.is/zh/Beijing",
+      "snippet": "北京的日出、日落、昼长和太阳时 日出: 05:57 日落: 18:21 昼长: 12时 24分 上中天: 12:09 目前北京时间比真太阳时快 9 分钟。 中国 最 …"
+    },
+    {
+      "title": "北京时间 - 北京时间校准精确到毫秒 | 全屏显示数字",
+      "url": "https://www.mapchaxun.cn/beijinshijian",
+      "snippet": "校准设备毫秒数 ⚡ 你的设备时间快了 1241 毫秒 ⓘ 当前设备时间 16:12:25 · 设备时区 America/Los_Angeles / UTC-7 当前时区详细介 …"
+    },
+    {
+      "title": "标准北京时间 - 国家授时中心官方同步 | beijingshijian.net",
+      "url": "https://beijingshijian.net/",
+      "snippet": "23 hours ago · CN 北京时间 🇫🇷 法国时间 🇪🇸 西班牙时间 🇨🇦 加拿大时间 🇹🇷 土耳其时间 🗽 纽约时间 🌃 美东时间 🇹🇭 泰国时间 🇳🇿 新西兰时间 🇦🇪 迪拜时间 🇫🇷 巴 …"
+    },
+    {
+      "title": "中国北京时间 - 中国北京现在几点钟",
+      "url": "http://time.syiban.com/?id=1",
+      "snippet": "中国北京时间（Beijing）时区：UTC/GMT +8.00 (东八区)；首都：北京；官方语言：普通话；全国人口数量：约14亿；货币：人民 …"
+    }
+  ]
+}

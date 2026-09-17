@@ -5,7 +5,7 @@
   "author": "Demomasterlqx",
   "url": "https://huggingface.co/Demomasterlqx/VTLA-RL-sft-lora-xarm-no-adverb-pirl-2026-9-16",
   "created_at": "2026-09-16T14:08:32.000Z",
-  "updated_at": "2026-09-16T14:10:35.000Z",
+  "updated_at": "2026-09-17T08:13:21.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "reinforcement-learning",
@@ -13,6 +13,7 @@
   "languages": [],
   "tags": [
     "openpi",
+    "safetensors",
     "reinforcement-learning",
     "lora",
     "robotics",
@@ -25,10 +26,12 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 0,
-  "storage_human": null,
+  "storage_bytes": 61227028315,
+  "storage_human": "61.2 GB",
   "base_model": "Demomasterlqx/VTLA-RL-sft-lora-xarm-no-adverb",
-  "formats": [],
+  "formats": [
+    "safetensors"
+  ],
   "is_conversational": false,
   "gated": false,
   "removed": false,

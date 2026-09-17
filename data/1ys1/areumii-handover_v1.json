@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "1ys1/areumii-handover_v1",
+  "slug": "1ys1-areumii-handover_v1",
+  "author": "1ys1",
+  "url": "https://huggingface.co/1ys1/areumii-handover_v1",
+  "created_at": "2026-09-16T20:02:52.000Z",
+  "updated_at": "2026-09-16T20:33:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "robotics",
+    "dataset:1ys1/areumii-handover_v1_merged_28",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906721976,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Roman Empire - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Roman_Empire",
+      "snippet": "The Western Roman Empire collapsed in 476 AD, whereas the Eastern Roman Empire (also known as the Byzantine Empire) …"
+    },
+    {
+      "title": "History of the Roman Empire - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/History_of_the_Roman_Empire",
+      "snippet": "The subsequent period of centuries of the Roman Empire's history is conventionally labelled the \"Byzantine Empire\", with the reign of …"
+    },
+    {
+      "title": "The Entire Roman Empire Timeline Explained - YouTube",
+      "url": "https://www.youtube.com/watch?v=XUlRzFSESYs",
+      "snippet": "Oct 13, 2023 · Never heard of a Mamertine before? Fear not — this is Rome's entire history, start to finish. But the real question is: …"
+    },
+    {
+      "title": "Timeline of the Roman and Byzantine Emperors - YouTube",
+      "url": "https://www.youtube.com/watch?v=KwIQSgnn8-U",
+      "snippet": "Rome. The state that grew from tiny settlements around the Palatine Hill in central Italy into a vast empire that ruled most of western …"
+    },
+    {
+      "title": "Timeline: Rome - World History Encyclopedia",
+      "url": "https://www.worldhistory.org/timeline/Rome/",
+      "snippet": "The original Papal Basilica of Saint Paul Outside the Walls in Rome, said to be the burial place of St. Paul and first established by …"
+    }
+  ]
+}

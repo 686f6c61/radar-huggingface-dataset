@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "JamePeng2023/Qwen3.5-0.8B-GGUF",
+  "slug": "jamepeng2023-qwen3-5-0-8b-gguf",
+  "author": "JamePeng2023",
+  "url": "https://huggingface.co/JamePeng2023/Qwen3.5-0.8B-GGUF",
+  "created_at": "2026-09-17T00:08:37.000Z",
+  "updated_at": "2026-09-17T00:16:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 772845888,
+  "parameters_human": "772.8M",
+  "storage_bytes": 865173856,
+  "storage_human": "865 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "50,000+ Best Cat Photos · 100% Free Download - Pexels",
+      "url": "https://www.pexels.com/search/cat/",
+      "snippet": "Download and use 50,000+ Cat stock photos for free. Thousands of new images every day Completely Free to Use High-quality …"
+    },
+    {
+      "title": "60,000+ Best Free Cat Pictures & Images [HD] - Pixabay",
+      "url": "https://pixabay.com/images/search/cat/",
+      "snippet": "60,000+ mischievous, playful and adorable cat photos & pictures. Download your favorite royalty free cat images in HD to 4K quality …"
+    },
+    {
+      "title": "200+ Cat Pictures & Images [HD] | Download Free Images & Stock Photos …",
+      "url": "https://unsplash.com/s/photos/cat",
+      "snippet": "Download the perfect cat pictures. Find over 100+ of the best free cat images. Free for commercial use No attribution required …"
+    },
+    {
+      "title": "Cat Stock Photos, Images and Backgrounds for Free Download",
+      "url": "https://www.vecteezy.com/free-photos/cat",
+      "snippet": "Browse 4,646 beautiful Cat stock images, photos and wallpaper for royalty-free download from the creative contributors at Vecteezy!"
+    },
+    {
+      "title": "Cat Wallpapers (148 images) - WallpaperCat",
+      "url": "https://wallpapercat.com/cat-wallpapers",
+      "snippet": "Download the best Cat Wallpapers, all available in 4K and Full HD: Siamese, Persian, Himalayan, British Shorthair, Kitten, Nyan..."
+    }
+  ]
+}

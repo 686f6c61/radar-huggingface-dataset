@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Ironwood-LLM-Team/Firehouse-Cactus-1.09",
+  "slug": "ironwood-llm-team-firehouse-cactus-1-09",
+  "author": "Ironwood-LLM-Team",
+  "url": "https://huggingface.co/Ironwood-LLM-Team/Firehouse-Cactus-1.09",
+  "created_at": "2026-09-16T23:03:03.000Z",
+  "updated_at": "2026-09-16T23:29:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gemma4",
+    "unsloth",
+    "gemma",
+    "google",
+    "text-generation",
+    "conversational",
+    "base_model:Ironwood-LLM-Team/Firehouse-Cactus-1.08",
+    "base_model:finetune:Ironwood-LLM-Team/Firehouse-Cactus-1.08",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7937953568,
+  "parameters_human": "7.94B",
+  "storage_bytes": 15914634962,
+  "storage_human": "15.9 GB",
+  "base_model": "Ironwood-LLM-Team/Firehouse-Cactus-1.08",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Grande Fratello VIP 2026: Concorrenti, News, Video e Live",
+      "url": "https://www.grandefratello.mediaset.it/",
+      "snippet": "Oct 21, 2025 · Grande Fratello VIP condotto da Ilary Blasi. Scopri sul sito Ufficiale #GF: concorrenti, video, news, anticipazioni e …"
+    },
+    {
+      "title": "Grande Fratello Vip 2026: date, conduttori e cast completo",
+      "url": "https://www.notizie.it/grande-fratello-vip-2026-programmazione-opinionisti-e-concorrenti/",
+      "snippet": "12 hours ago · Il Grande fratello Vip torna a far parlare di sé nella stagione 2026, con la prima trasmissione in onda giovedì 17 …"
+    },
+    {
+      "title": "Grande Fratello Vip 2026 su Canale 5: quando in tv e concorrenti",
+      "url": "https://www.superguidatv.it/grande-fratello-vip-2026-su-canale-5-quando-in-tv-e-concorrenti/",
+      "snippet": "1 day ago · Torna il Grande Fratello Vip 2026 con Ilary Blasi su Canale 5: le date e il cast di concorrenti pronto a varcare la porta rossa."
+    },
+    {
+      "title": "Grande Fratello Vip, si parte: quando inizia, cast completo e tutte le ...",
+      "url": "https://www.libero.it/magazine/news/grande-fratello-vip-2026-quando-inizia-cast-completo-novita-222497",
+      "snippet": "3 days ago · Il Grande Fratello Vip 2026 sta per tornare su Canale 5: ecco la data di debutto, il cast ufficiale già annunciato e le …"
+    },
+    {
+      "title": "Grande Fratello Vip, tutti i concorrenti ufficiali - TGCOM24",
+      "url": "https://www.tgcom24.mediaset.it/televisione/grande-fratello/gf-vip-2026/cast-completo-nuova-edizione-gf-vip-9-2026_116195185-202602k.shtml",
+      "snippet": "Sep 4, 2026 · Chi sono i concorrenti del Grande Fratello VIP 2026? Scopri il cast completo del GF VIP 9, quando inizia e le …"
+    }
+  ]
+}

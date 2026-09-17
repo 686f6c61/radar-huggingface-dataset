@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "sreetz-nv/so101_orange_topdown_dr100_h32_GR00T17_20k_20260916",
+  "slug": "sreetz-nv-so101_orange_topdown_dr100_h32_gr00t17_20k_20260916",
+  "author": "sreetz-nv",
+  "url": "https://huggingface.co/sreetz-nv/so101_orange_topdown_dr100_h32_GR00T17_20k_20260916",
+  "created_at": "2026-09-16T20:58:15.000Z",
+  "updated_at": "2026-09-16T20:58:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "groot",
+    "so101",
+    "base_model:nvidia/GR00T-N1.7-3B",
+    "base_model:finetune:nvidia/GR00T-N1.7-3B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 12576219216,
+  "storage_human": "12.6 GB",
+  "base_model": "nvidia/GR00T-N1.7-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "I have to log in again every day : r/DisneyPlus - Reddit",
+      "url": "https://www.reddit.com/r/DisneyPlus/comments/m6z3w7/i_have_to_log_in_again_every_day/",
+      "snippet": "Mar 17, 2021 · I’ve logged in with the password, but still every day I have to login again. I called Disney about this three times. The …"
+    },
+    {
+      "title": "Disney Plus not working on Roku devices? : r/Roku - Reddit",
+      "url": "https://www.reddit.com/r/Roku/comments/17o2vy7/disney_plus_not_working_on_roku_devices/",
+      "snippet": "Disney Plus not working on Roku devices? EDIT: IT'S FINALLY WORKING! Any time I try to use Disney+ on either of my Roku …"
+    },
+    {
+      "title": "Disney + funktioniert trotz aktivem Vertrag nicht (Magenta TV Paket)",
+      "url": "https://telekomhilft.telekom.de/conversations/tv/disney-funktioniert-trotz-aktivem-vertrag-nicht-magenta-tv-paket/66bbb21a389f9f597b20f4ca",
+      "snippet": "Ich habe im MagentaPaket Netflix, Amazon und Disney Plus. Für Netflix und Amazon kamen separate emails mit Anleitungen. Alles …"
+    },
+    {
+      "title": "MagentaTV: Informationen zu Disney+ | Telekom hilft Community",
+      "url": "https://telekomhilft.telekom.de/conversations/tv/magentatv-informationen-zu-disney/66873d404ae73561da701ff5",
+      "snippet": "Es gibt Fragen zur Disney+ App über MagentaTV? &nbsp; Hier haben wir für Euch die wichtigsten Informationen auf einen Blick …"
+    },
+    {
+      "title": "Why do I need to \"complete\" my disney plus subscribtion?",
+      "url": "https://www.reddit.com/r/DisneyPlus/comments/xl5vie/why_do_i_need_to_complete_my_disney_plus/",
+      "snippet": "Sep 22, 2022 · Ever since Summer this year, I couldnt log into Disney plus on any other devices than my PC. I mean I could, but it …"
+    }
+  ]
+}

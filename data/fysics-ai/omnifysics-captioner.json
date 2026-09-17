@@ -5,7 +5,7 @@
   "author": "Fysics-AI",
   "url": "https://huggingface.co/Fysics-AI/OmniFysics-Captioner",
   "created_at": "2026-08-24T15:27:38.000Z",
-  "updated_at": "2026-09-14T06:04:10.000Z",
+  "updated_at": "2026-09-21T08:37:52.000Z",
   "license": "apache-2.0-with-non-commercial",
   "license_family": "oss",
   "pipeline_tag": "video-text-to-text",
@@ -32,7 +32,7 @@
   "trending_score": 0,
   "parameters": 31719205488,
   "parameters_human": "31.72B",
-  "storage_bytes": 133693206444,
+  "storage_bytes": 133697497216,
   "storage_human": "133.7 GB",
   "base_model": "Qwen/Qwen3-Omni-30B-A3B-Instruct",
   "formats": [

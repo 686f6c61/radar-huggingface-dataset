@@ -28,7 +28,8 @@
     "license:creativeml-openrail-m",
     "endpoints_compatible",
     "diffusers:StableDiffusionXLPipeline",
-    "region:us"
+    "region:us",
+    "not-for-all-audiences"
   ],
   "likes": 0,
   "downloads_30d": 24,

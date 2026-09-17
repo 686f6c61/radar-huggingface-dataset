@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "coolbho3k/DeepSeek-V4.1-Flash-DSpark-EXL3-3bpw",
+  "slug": "coolbho3k-deepseek-v4-1-flash-dspark-exl3-3bpw",
+  "author": "coolbho3k",
+  "url": "https://huggingface.co/coolbho3k/DeepSeek-V4.1-Flash-DSpark-EXL3-3bpw",
+  "created_at": "2026-09-16T21:11:05.000Z",
+  "updated_at": "2026-09-16T21:12:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "exl3",
+    "3bpw",
+    "dspark",
+    "speculative-decoding",
+    "experimental",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash",
+    "base_model:finetune:deepseek-ai/DeepSeek-V4.1-Flash",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2556592128,
+  "parameters_human": "2.56B",
+  "storage_bytes": 5113626840,
+  "storage_human": "5.1 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Comedy Shows in San Francisco | Stand-Up Calendar & Schedule",
+      "url": "https://comedy.tickets/city/san-francisco/",
+      "snippet": "21 hours ago · Upcoming stand-up comedy, improv performances, and live comedy events in San Francisco, CA. San Francisco …"
+    },
+    {
+      "title": "Comedy Shows in San Francisco | Tickets & Schedule 2026–2027",
+      "url": "https://san-francisco.events/comedy/",
+      "snippet": "21 hours ago · Find comedy shows in San Francisco. Browse stand-up comedians, comedy clubs, venues, schedules, and ticket …"
+    },
+    {
+      "title": "San Francisco Comedy Events - SF Station",
+      "url": "https://www.sfstation.com/comedy/calendar",
+      "snippet": "21 hours ago · Comedy Events in San Francisco. SF Station is the San Francisco Bay Area’s definitive online city guide for Arts and …"
+    },
+    {
+      "title": "Comedy Shows at Punch Line Comedy Club - San Francisco",
+      "url": "https://comedy.tickets/venue/punch-line-comedy-club-san-francisco/",
+      "snippet": "21 hours ago · Explore upcoming comedy shows at Punch Line Comedy Club - San Francisco. View event dates, showtimes, venue …"
+    },
+    {
+      "title": "Comedy Events | San Francisco - Funcheap",
+      "url": "https://sf.funcheap.com/category/event/event-types/comedy-event-types-event/",
+      "snippet": "21 hours ago · Inspired by the blockbuster movie, see some of the Bay Area’s top comedians at San Francisco’s Crazy Funny Asians …"
+    }
+  ]
+}

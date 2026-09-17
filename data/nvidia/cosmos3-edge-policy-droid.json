@@ -5,7 +5,7 @@
   "author": "nvidia",
   "url": "https://huggingface.co/nvidia/Cosmos3-Edge-Policy-DROID",
   "created_at": "2026-07-09T21:19:56.000Z",
-  "updated_at": "2026-08-26T21:26:27.000Z",
+  "updated_at": "2026-09-16T19:00:40.000Z",
   "license": "openmdw1.1-license",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -20,7 +20,6 @@
     "cosmos3",
     "world action model",
     "policy model",
-    "arxiv:2405.14867",
     "license:other",
     "region:us"
   ],

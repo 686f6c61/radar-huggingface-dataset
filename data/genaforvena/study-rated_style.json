@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "genaforvena/study-rated_style",
+  "slug": "genaforvena-study-rated_style",
+  "author": "genaforvena",
+  "url": "https://huggingface.co/genaforvena/study-rated_style",
+  "created_at": "2026-09-16T22:59:38.000Z",
+  "updated_at": "2026-09-16T22:59:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:HuggingFaceTB/SmolLM2-360M-Instruct",
+    "lora",
+    "transformers",
+    "text-generation",
+    "arxiv:1910.09700",
+    "base_model:HuggingFaceTB/SmolLM2-360M-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 34793120,
+  "storage_human": "35 MB",
+  "base_model": "HuggingFaceTB/SmolLM2-360M-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "卓健醫療中心 (港鐵九龍站) | 卓健醫療",
+      "url": "https://www.qhms.com/find-us/centre/CENT00452",
+      "snippet": "卓健醫療營運超過120間醫療中心，包括西醫、中醫、牙醫及物理治療等服務，立即搜尋就近您的診所及醫護人員。"
+    },
+    {
+      "title": "卓健醫療 (港鐵九龍站), 診所資料Quality HealthCare (Kowloon MTR Station)| 卓健醫療 (港鐵九龍站)診所 電話 地址 …",
+      "url": "https://seeclinic.hk/clinic_detail.asp?clinic_id=1028",
+      "snippet": "卓健醫療 (港鐵九龍站), 診所電話:2314 8380, 地址:港鐵九龍站KOW83商鋪,港鐵九龍站, Quality HealthCare (Kowloon MTR Station) …"
+    },
+    {
+      "title": "【卓健醫療中心】地址、營業時間、服務範圈及收費一覽",
+      "url": "https://www.healthycheckhk.com/quality-healthcare-medical-centre/",
+      "snippet": "Apr 3, 2024 · 卓健醫療有超過100間醫務中心，服務範圍涵蓋中西醫、全科、專科、牙科、物理治療、、體檢及醫學診斷等等的醫療服 …"
+    },
+    {
+      "title": "卓健醫療中心 (九龍站) | 真實評價與營業資訊 - Go Where Hou 去邊好",
+      "url": "https://gowherehou.com/listing/%e5%8d%93%e5%81%a5%e9%86%ab%e7%99%82%e4%b8%ad%e5%bf%83-%e4%b9%9d%e9%be%8d%e7%ab%99/",
+      "snippet": "卓健醫療中心（九龍站）坐落於尖沙咀的核心地段，具體位於港鐵九龍站機場快綫抵站大堂的L2層KOW83商鋪。 這地理位置極具戰略 …"
+    },
+    {
+      "title": "卓健醫療",
+      "url": "https://www.qhms.com/",
+      "snippet": "卓健醫療是本港領先的私營醫療服務機構之一，服務涵蓋西醫、中醫、診斷及造影、牙科、物理治療、心理健康及保健等服務。"
+    }
+  ]
+}

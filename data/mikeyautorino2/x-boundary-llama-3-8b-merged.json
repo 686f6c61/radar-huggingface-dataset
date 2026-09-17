@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "mikeyautorino2/X-Boundary-Llama-3-8B-Merged",
+  "slug": "mikeyautorino2-x-boundary-llama-3-8b-merged",
+  "author": "mikeyautorino2",
+  "url": "https://huggingface.co/mikeyautorino2/X-Boundary-Llama-3-8B-Merged",
+  "created_at": "2026-09-17T01:43:24.000Z",
+  "updated_at": "2026-09-17T02:35:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 28,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766577,
+  "storage_human": "16.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wikipédia, l'encyclopédie libre",
+      "url": "https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Accueil_principal",
+      "snippet": "Wikipédia L'encyclopédie libre que vous pouvez améliorer Accueil de la communauté Comment contribuer ? Portails thématiques …"
+    },
+    {
+      "title": "Wikipedia",
+      "url": "https://www.wikipedia.org/",
+      "snippet": "Wikipedia is a free online encyclopedia, created and edited by volunteers around the world and hosted by the Wikimedia Foundation."
+    },
+    {
+      "title": "Wikipedia, the free encyclopedia",
+      "url": "https://en.wikipedia.org/wiki/Main_Page",
+      "snippet": "Wikipedia is written by volunteer editors and hosted by the Wikimedia Foundation, a non-profit organization that also hosts a range of …"
+    },
+    {
+      "title": "Wikipedia - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Wikipedia",
+      "snippet": "Founded by Jimmy Wales and Larry Sanger in 2001, Wikipedia has been hosted since 2003 by the Wikimedia Foundation, an …"
+    },
+    {
+      "title": "Wikipédia — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Wikip%C3%A9dia",
+      "snippet": "Jimmy Wales intervient fin 2005 sur l'article « Wikipedia » de Wikipédia en anglais, pour retirer l'information selon laquelle Larry …"
+    }
+  ]
+}

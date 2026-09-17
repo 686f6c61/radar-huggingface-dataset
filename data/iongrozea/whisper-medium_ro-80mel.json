@@ -5,15 +5,16 @@
   "author": "IonGrozea",
   "url": "https://huggingface.co/IonGrozea/whisper-medium_ro-80mel",
   "created_at": "2026-07-18T04:10:30.000Z",
-  "updated_at": "2026-08-25T17:00:50.000Z",
+  "updated_at": "2026-09-21T16:32:28.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
-  "library": null,
+  "library": "transformers",
   "languages": [
     "ro"
   ],
   "tags": [
+    "pytorch",
     "safetensors",
     "whisper",
     "automatic-speech-recognition",
@@ -29,9 +30,9 @@
   "trending_score": 0,
   "parameters": 763857920,
   "parameters_human": "763.9M",
-  "storage_bytes": 27499910098,
-  "storage_human": "27.5 GB",
-  "base_model": null,
+  "storage_bytes": 55001714320,
+  "storage_human": "55.0 GB",
+  "base_model": "openai/whisper-medium",
   "formats": [
     "safetensors"
   ],

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "AwareLiquid/M2-2B",
+  "slug": "awareliquid-m2-2b",
+  "author": "AwareLiquid",
+  "url": "https://huggingface.co/AwareLiquid/M2-2B",
+  "created_at": "2026-09-17T02:43:36.000Z",
+  "updated_at": "2026-09-19T14:36:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "awareliquid",
+    "mt-lnn",
+    "liquid-neural-network",
+    "research",
+    "text-generation",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 41,
+  "trending_score": 0,
+  "parameters": 1929734562,
+  "parameters_human": "1.93B",
+  "storage_bytes": 7719223936,
+  "storage_human": "7.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AwareLiquid — Edge Brain-Like Models | Lightweight · Constant ...",
+      "url": "https://awareliquid.ai/",
+      "snippet": "Two distinct models, both live. M1 (large, cognitive) runs trained liquid-core residual adapters on a frozen TinyLlama-1.1B-Chat base — a general assistant. M1- ..."
+    },
+    {
+      "title": "Research · AwareLiquid — MT-LNN Experiments & Results",
+      "url": "https://awareliquid.ai/research",
+      "snippet": "2 · Live Demo: AwareLiquid O1 + M1. The demo offers two distinct models. M1 (the large, cognitive model) wraps a frozen TinyLlama-1.1B-Chat base with a trained ..."
+    },
+    {
+      "title": "OpenArena.to | Agent Arena",
+      "url": "https://openarena.to/",
+      "snippet": "2) But we don't just want AI to execute: we designed Thinking mode so ... model AI analysis. It turns validated data into explainable research, risk ..."
+    },
+    {
+      "title": "Alcohol-induced extracellular vesicle signatures: Exploring liquid ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2667394026000079",
+      "snippet": "Another important outcome is immune modulation: alcohol-modulated tumor EVs shift macrophages to an immunosuppressive M2 ... These AI models, trained on ..."
+    },
+    {
+      "title": "The meaning and use of the area under a receiver operating ...",
+      "url": "https://pubs.rsna.org/doi/10.1148/radiology.143.1.7063747",
+      "snippet": "A representation and interpretation of the area under a receiver operating characteristic (ROC) curve obtained by the \"rating\" method, or by mathematical ..."
+    }
+  ]
+}

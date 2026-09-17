@@ -5,7 +5,7 @@
   "author": "spiritfather",
   "url": "https://huggingface.co/spiritfather/cyberneurova-Qwen3.8-Flash-Next-GGUF",
   "created_at": "2026-09-16T01:31:21.000Z",
-  "updated_at": "2026-09-16T03:07:59.000Z",
+  "updated_at": "2026-09-21T18:40:29.000Z",
   "license": "gemma",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -24,12 +24,12 @@
     "conversational"
   ],
   "likes": 0,
-  "downloads_30d": 167,
+  "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 176943899520,
   "parameters_human": "176.94B",
-  "storage_bytes": 617700219264,
-  "storage_human": "617.7 GB",
+  "storage_bytes": 1332146013247,
+  "storage_human": "1332.1 GB",
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [
     "gguf"

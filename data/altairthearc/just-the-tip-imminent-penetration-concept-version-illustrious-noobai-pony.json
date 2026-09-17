@@ -18,7 +18,8 @@
     "base_model:OnomaAIResearch/Illustrious-XL-v2.0",
     "base_model:finetune:OnomaAIResearch/Illustrious-XL-v2.0",
     "license:other",
-    "region:us"
+    "region:us",
+    "not-for-all-audiences"
   ],
   "likes": 1,
   "downloads_30d": 0,

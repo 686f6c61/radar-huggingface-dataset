@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "CharlieChen/loop-vanilla-d14",
+  "slug": "charliechen-loop-vanilla-d14",
+  "author": "CharlieChen",
+  "url": "https://huggingface.co/CharlieChen/loop-vanilla-d14",
+  "created_at": "2026-09-16T21:54:00.000Z",
+  "updated_at": "2026-09-16T21:54:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "looped-transformer",
+    "scaling-laws",
+    "pytorch",
+    "base-model",
+    "text-generation",
+    "en",
+    "dataset:HuggingFaceFW/fineweb",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2904844899,
+  "storage_human": "2.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube Premium - YouTube",
+      "url": "https://www.youtube.com/premium",
+      "snippet": "YouTube Premium offers an ad-free experience across all of YouTube, YouTube Kids, and YouTube Music. Premium memberships …"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/premium_benefits",
+      "snippet": "Sign in to check your eligibility for benefits and offers"
+    },
+    {
+      "title": "YouTube Brasil - YouTube",
+      "url": "https://www.youtube.com/channel/UCUN9lhwfMJRxMVuet7Shg0w",
+      "snippet": "É canal oficial do YouTube Brasil que vocês querem? :D Se inscreve para descobrir as novidades e tendências da plataforma, …"
+    },
+    {
+      "title": "YouTube Premium - YouTube",
+      "url": "https://www.youtube.com/premium/annual",
+      "snippet": "With YouTube Premium, you can watch videos on the YouTube app ad-free, offline, and in the background. YouTube Music Premium …"
+    },
+    {
+      "title": "Music Premium - YouTube",
+      "url": "https://www.youtube.com/musicpremium",
+      "snippet": "With YouTube Music Premium, easily explore the world of music ad-free, offline, and with the screen locked. Available on mobile and …"
+    }
+  ]
+}

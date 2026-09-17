@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "unignoramus/anlp-a2-p1-moe-top2",
+  "slug": "unignoramus-anlp-a2-p1-moe-top2",
+  "author": "unignoramus",
+  "url": "https://huggingface.co/unignoramus/anlp-a2-p1-moe-top2",
+  "created_at": "2026-09-17T01:13:48.000Z",
+  "updated_at": "2026-09-17T01:14:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 141150385,
+  "storage_human": "141 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Thick Gearbox Oil – The Definitive Guide To Performance, Protection",
+      "url": "https://engineneeds.com/thick-gearbox-oil/",
+      "snippet": "Jan 6, 2026 · It’s not about picking the thickest oil available, but rather the *right* thick oil for your specific needs. This section …"
+    },
+    {
+      "title": "Step-by-Step Guide To Gear Oil Replacement: Say Goodbye To …",
+      "url": "https://wheelsbyjason.com/how-to-replace-gear-oil/",
+      "snippet": "May 29, 2024 · Replacing gear oil is a crucial maintenance task for vehicles, ensuring optimal transmission and differential …"
+    },
+    {
+      "title": "Thick Gear Oil – Your Ultimate Guide To Enhanced Protection",
+      "url": "https://engineneeds.com/thick-gear-oil/",
+      "snippet": "Jan 14, 2026 · By the end of this article, you’ll have a clear understanding of when and why to opt for a thicker gear oil, how to choose …"
+    },
+    {
+      "title": "How to Re-Liquefy Thick Oils Like Myrrh and Vetiver -",
+      "url": "https://heavenscentoils4u.com/re-liquefy-thick-oils-like-myrrh-and-vetiver/",
+      "snippet": "Apr 7, 2015 · Anyone who’s had a bottle of Myrrh or Vetiver essential oil for awhile knows how difficult it can be to get those oils to …"
+    },
+    {
+      "title": "Engine Oil Too Thick Symptoms (10 Signs + Causes/Solutions)",
+      "url": "https://engineoiljournal.com/engine-oil-too-thick-symptoms/",
+      "snippet": "Jul 27, 2026 · Learn the most common engine oil too thick symptoms, including hard starting, engine noise, poor fuel economy, and …"
+    }
+  ]
+}

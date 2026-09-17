@@ -5,7 +5,7 @@
   "author": "athrvk",
   "url": "https://huggingface.co/athrvk/gpu-sankhya",
   "created_at": "2026-09-16T18:34:12.000Z",
-  "updated_at": "2026-09-16T18:34:13.000Z",
+  "updated_at": "2026-09-19T12:44:36.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "token-classification",
@@ -32,8 +32,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 329206,
-  "storage_human": "329206 B",
+  "storage_bytes": 2312571,
+  "storage_human": "2 MB",
   "base_model": null,
   "formats": [
     "onnx"

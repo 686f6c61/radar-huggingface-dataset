@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-qwen2_5_7b_instruct_up_basis_coeff_finetuned_keep_0p70",
+  "slug": "jeesup-svd-safety-qwen2_5_7b_instruct_up_basis_coeff_finetuned_keep_0p70",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-qwen2_5_7b_instruct_up_basis_coeff_finetuned_keep_0p70",
+  "created_at": "2026-09-17T02:06:30.000Z",
+  "updated_at": "2026-09-17T05:07:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "basis-sharing",
+    "compression",
+    "low-rank",
+    "safety",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15273917822,
+  "storage_human": "15.3 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PARM Mobile Carrefour : Comment Se Connecter Au Portail",
+      "url": "https://dailydigital.fr/parm-mobile-carrefour-comment-se-connecter-au-portail/",
+      "snippet": "Dec 21, 2025 · Découvrez comment vous connecter facilement au portail PARM Mobile Carrefour en quelques étapes simples et …"
+    },
+    {
+      "title": "Parm Mobile - Déconnexion - Carrefour",
+      "url": "https://parmmobile.carrefour.com/parmobileWar/disconnect.aspx",
+      "snippet": "Vous êtes déconnecté (e)! Bonne journée."
+    },
+    {
+      "title": "SSO Carrefour",
+      "url": "https://oscar.carrefour.com/webquartz/",
+      "snippet": "Secure login portal for Carrefour employees to access various internal services and resources."
+    },
+    {
+      "title": "Comment se connecter à PARM Mobile Carrefour ?",
+      "url": "https://www.art-telecom.fr/comment-se-connecter-a-parm-mobile-carrefour/",
+      "snippet": "Jan 16, 2026 · Quelles sont les étapes pour se connecter à PARM Mobile Carrefour ? Une fois l’installation terminée, découvrez la …"
+    },
+    {
+      "title": "Carrefour - Access rights validated",
+      "url": "https://e-bm.carrefour.com/",
+      "snippet": "Connectez-vous à votre espace personnel Carrefour."
+    }
+  ]
+}

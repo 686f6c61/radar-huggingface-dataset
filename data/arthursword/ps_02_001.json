@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ArthurSword/ps_02_001",
+  "slug": "arthursword-ps_02_001",
+  "author": "ArthurSword",
+  "url": "https://huggingface.co/ArthurSword/ps_02_001",
+  "created_at": "2026-09-17T02:41:23.000Z",
+  "updated_at": "2026-09-17T02:41:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "element_type:detect",
+    "model:yolov11-nano",
+    "object:person",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9840155,
+  "storage_human": "10 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Online Games at Poki - Play Now!",
+      "url": "https://poki.com/?msockid=31fe2fcdd5366f803fd4381ad4fc6e97",
+      "snippet": "Play free online games at Poki, the #1 website for instant web games. Explore exclusive titles, popular favorites, and new game …"
+    },
+    {
+      "title": "Poki - Darmowe Gry Online - Graj Teraz!",
+      "url": "https://poki.com/pl?msockid=31fe2fcdd5366f803fd4381ad4fc6e97",
+      "snippet": "Poki oferuje najlepszy wybór darmowych gier online i zapewnia rozrywkę pełną zabawy, bez względu na to czy grasz sam, czy z …"
+    },
+    {
+      "title": "Poki Games - Free Online Games - Play Now! | poki.com",
+      "url": "https://poki.to/poki",
+      "snippet": "Welcome to the world of Poki Games! Get ready for an adventure filled with excitement and fun. Whether you're a gaming pro or just …"
+    },
+    {
+      "title": "New Games — Poki",
+      "url": "https://poki.ac/new/",
+      "snippet": "This webpage contains all our latest game releases. if you are into discovering new games, this list will help you discover the latest …"
+    },
+    {
+      "title": "Free Online Games - Play in Your Browser | Poki",
+      "url": "https://poki.uk.com/",
+      "snippet": "Play free online games on Poki. Explore Subway Surfers, Temple Run 2, puzzles, racing and 2 player games in your browser. No app …"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "yunjae-won/T14b_32bad_S4b_klreg0.05_stage0_checkpoint90",
+  "slug": "yunjae-won-t14b_32bad_s4b_klreg0-05_stage0_checkpoint90",
+  "author": "yunjae-won",
+  "url": "https://huggingface.co/yunjae-won/T14b_32bad_S4b_klreg0.05_stage0_checkpoint90",
+  "created_at": "2026-09-17T02:38:59.000Z",
+  "updated_at": "2026-09-17T02:40:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056414667,
+  "storage_human": "8.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Quelle ou qu'elle - francaisfacile.com",
+      "url": "https://www.francaisfacile.com/cgi2/myexam/voir2.php?id=52657",
+      "snippet": "Quelle ou qu'elle Il n'est pas toujours facile de choisir entre 'quelle' et 'qu'elle'. Si vous hésitez remplacez 'elle' par un 'prénom …"
+    },
+    {
+      "title": "Et, es, est, ai, ou ait - francaisfacile.com",
+      "url": "https://www.francaisfacile.com/cgi2/myexam/voir2.php?id=2907",
+      "snippet": "Et, es, est, ai, ou ait ? - cours de français Le terme 'et' est une conjonction de coordination, comme tous les mots cités dans la …"
+    },
+    {
+      "title": "Ses - ces - c'est - s'est - sais - sait - francaisfacile.com",
+      "url": "https://www.francaisfacile.com/cgi2/myexam/voir2.php?id=3433",
+      "snippet": "Ses - ces - c'est - s'est - sais - sait Les homophones sont quelquefois difficiles à orthographier, quand on doute sur leur sens. …"
+    },
+    {
+      "title": "Dans ou d'en - cours de français - francaisfacile.com",
+      "url": "https://www.francaisfacile.com/cgi2/myexam/voir2.php?id=16352",
+      "snippet": "DANS ou D'ENDANS = Préposition de lieu( à l'intérieur de) de tempspour une durée ou une approximationLes enfants sont dans la …"
+    },
+    {
+      "title": "En / Dans - francaisfacile.com",
+      "url": "https://www.francaisfacile.com/cgi2/myexam/voir2.php?id=78651",
+      "snippet": "Différencier DANS et ENVous entendrez souvent dire : 'en' est toujours suivi d'un nom sans article au contraire de 'dans'.Si c'est vrai …"
+    }
+  ]
+}

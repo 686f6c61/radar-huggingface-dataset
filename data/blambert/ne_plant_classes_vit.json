@@ -5,7 +5,7 @@
   "author": "blambert",
   "url": "https://huggingface.co/blambert/ne_plant_classes_vit",
   "created_at": "2026-09-14T01:19:20.000Z",
-  "updated_at": "2026-09-14T01:23:23.000Z",
+  "updated_at": "2026-09-20T01:22:48.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-classification",

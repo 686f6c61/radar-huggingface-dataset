@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "michaelbrosuf/visual-question-answering",
+  "slug": "michaelbrosuf-visual-question-answering",
+  "author": "michaelbrosuf",
+  "url": "https://huggingface.co/michaelbrosuf/visual-question-answering",
+  "created_at": "2026-09-16T23:34:57.000Z",
+  "updated_at": "2026-09-16T23:35:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "visual-question-answering",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "visual-question-answering",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Auvent d entrée au meilleur prix | Leroy Merlin",
+      "url": "https://www.leroymerlin.fr/produits/menuiserie/porte-entree/auvent-et-marquise/auvent/auvent-d-entree-p.html?msockid=0de9632953de64ab0bce74fe52a765f3",
+      "snippet": "Auvent d entrée : la sélection produits Leroy Merlin de ce dimanche au meilleur prix ! Retrouvez ci-après nos 946 offres, marques, …"
+    },
+    {
+      "title": "Auvent bois au meilleur prix | Leroy Merlin",
+      "url": "https://www.leroymerlin.fr/produits/menuiserie/porte-entree/auvent-et-marquise/auvent-bois-p.html?msockid=0de9632953de64ab0bce74fe52a765f3",
+      "snippet": "Auvent bois : la sélection produits Leroy Merlin de ce mercredi au meilleur prix ! Retrouvez ci-après nos 1522 offres, marques, …"
+    },
+    {
+      "title": "Amazon.fr : Auvent Porte D'Entree",
+      "url": "https://www.amazon.fr/Auvent-Porte-DEntree/s?k=Auvent+Porte+D%27Entree",
+      "snippet": "Auvent pour Porte d'entrée 100x150cm, Auvent en Polycarbonate 6 mm, Auvent Transparent en Forme d'arc, extrêmement résistant …"
+    },
+    {
+      "title": "Amazon.fr : Auvent D'entrée Porte D'entree",
+      "url": "https://www.amazon.fr/auvent-dentr%C3%A9e-porte-dentree/s?k=auvent+d%27entr%C3%A9e+porte+d%27entree",
+      "snippet": "Auvent pour Porte d'entrée 100x150cm, Auvent en Polycarbonate 6 mm, Auvent Transparent en Forme d'arc, extrêmement résistant …"
+    },
+    {
+      "title": "Auvents de porte - protection porte - GardenWay.fr",
+      "url": "https://gardenway.fr/auvents-de-porte",
+      "snippet": "La boutique en ligne GardenWay.fr est le meilleur endroit pour acheter des produits dans la catégorie auvents de porte. Nous …"
+    }
+  ]
+}

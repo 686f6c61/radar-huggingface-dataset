@@ -27,7 +27,8 @@
     "base_model:quantized:ReadyArt/Omega-Evolution-31B-v4.0",
     "license:apache-2.0",
     "8-bit",
-    "region:us"
+    "region:us",
+    "not-for-all-audiences"
   ],
   "likes": 0,
   "downloads_30d": 36,

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "jiosephlee/intern-s1-mini-context-conditioned-molecule-transfer-v10-3-0-2-bioavailability-ma-BEST",
+  "slug": "jiosephlee-intern-s1-mini-context-conditioned-molecule-transfer-v10-3-0-2-bioavailability-ma-best",
+  "author": "jiosephlee",
+  "url": "https://huggingface.co/jiosephlee/intern-s1-mini-context-conditioned-molecule-transfer-v10-3-0-2-bioavailability-ma-BEST",
+  "created_at": "2026-09-17T01:10:42.000Z",
+  "updated_at": "2026-09-17T01:11:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "chemistry",
+    "assay-transfer",
+    "context-conditioned-molecule-transfer",
+    "best-checkpoint",
+    "conversational",
+    "base_model:jiosephlee/Intern-S1-mini-lm",
+    "base_model:finetune:jiosephlee/Intern-S1-mini-lm",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8201221120,
+  "parameters_human": "8.20B",
+  "storage_bytes": 16402497533,
+  "storage_human": "16.4 GB",
+  "base_model": "jiosephlee/Intern-S1-mini-lm",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ll - Significato ed etimologia - Ricerca - Treccani",
+      "url": "https://www.treccani.it/vocabolario/ricerca/ll/",
+      "snippet": "Scopri il significato della parola ll. Nel Dizionario Treccani troverai significato ed etimologia della tua ricerca. Entra subito su …"
+    },
+    {
+      "title": "LL italia ingegneria e costruzioni | Costruzione e vendita di edifici a ...",
+      "url": "https://www.llitalia.com/",
+      "snippet": "LL Italia è specializzata nella vendita di edifici a emissioni zero, case innovative, moderne ed eleganti con soluzioni energetiche e …"
+    },
+    {
+      "title": "Ll - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Ll",
+      "snippet": "The original pronunciation of ll —the phoneme /ʎ/ (palatal lateral approximant)— still exists in northern Spain (mostly in rural areas) …"
+    },
+    {
+      "title": "L - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/L",
+      "snippet": "Common digraphs include ll , which has a value identical to l in English, but has the separate value voiceless alveolar lateral fricative …"
+    },
+    {
+      "title": "Ll - Wikipedia",
+      "url": "https://it.m.wikipedia.org/wiki/Ll",
+      "snippet": "Ll 15 lingueAggiungi argomento"
+    }
+  ]
+}

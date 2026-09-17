@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "micdun/flex_merged_endo_rex_path_btx-public_pubmed-rp_topk3-25k-huge_lr",
+  "slug": "micdun-flex_merged_endo_rex_path_btx-public_pubmed-rp_topk3-25k-huge_lr",
+  "author": "micdun",
+  "url": "https://huggingface.co/micdun/flex_merged_endo_rex_path_btx-public_pubmed-rp_topk3-25k-huge_lr",
+  "created_at": "2026-09-17T01:46:32.000Z",
+  "updated_at": "2026-09-17T01:51:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "flex_qwen2_5_vl_moe",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 75,
+  "trending_score": 0,
+  "parameters": 12320990464,
+  "parameters_human": "12.32B",
+  "storage_bytes": 24653621472,
+  "storage_human": "24.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Пропал диск Д после перезагрузки ноутбука - Сообщество Microsoft",
+      "url": "https://answers.microsoft.com/ru-ru/windows/forum/all/%D0%BF%D1%80%D0%BE%D0%BF%D0%B0%D0%BB/8fd52a95-b651-43b6-b358-8d6efdae7694",
+      "snippet": "В панели управления в администрировании дисками - есть незанятое место в 500мб, но у меня большой диск д, и там много …"
+    },
+    {
+      "title": "你的设备中缺少重要的安全和质量修复。 - Microsoft Community",
+      "url": "https://answers.microsoft.com/zh-hans/windows/forum/all/%E4%BD%A0%E7%9A%84%E8%AE%BE%E5%A4%87%E4%B8%AD/c67812a0-7e61-4815-b1a9-303ba006fe41",
+      "snippet": "May 2, 2021 · 你的设备中缺少重要的安全和质量修复。无法连接到更新服务。我们将稍后再试，你也可以立即进行检查。如果问题仍 …"
+    },
+    {
+      "title": "outlookメールボックスが開けません - Microsoft コミュニティ",
+      "url": "https://answers.microsoft.com/ja-jp/outlook_com/forum/all/outlook%E3%83%A1%E3%83%BC%E3%83%AB%E3%83%9C/18e25a78-7de9-4f0d-b1dd-288ffe025a28",
+      "snippet": "当方、使用OSは7です。 最近、ハードディスクを頻繁に読みに行き動作が重くなることが多かったので コントロールパネル→管理 …"
+    },
+    {
+      "title": "Laatikko pois näkyvistä??!!?? - Microsoft Community",
+      "url": "https://answers.microsoft.com/fi-fi/windows/forum/all/laatikko-pois-n%C3%A4kyvist%C3%A4/421c6da3-89f7-4e10-8c22-0a6a73410b4c",
+      "snippet": "Miten helvetissä saan tuon saakelin \"Siirry sovellusten välillä\"- laatikkon pois näkyvistä muuten kuin sulkemalla käytössä olevan …"
+    },
+    {
+      "title": "Atualização para o Windows 10 - Microsoft Community",
+      "url": "https://answers.microsoft.com/pt-br/msoffice/forum/all/atualiza%C3%A7%C3%A3o-para-o-windows-10/9f80ec23-1aba-4eef-b9ee-8d05aba28c21",
+      "snippet": "Recentemente comprei o pacote Office para o windows 8.1 e instalei no meu notebook, para a minha surpresa, logo depois disso …"
+    }
+  ]
+}

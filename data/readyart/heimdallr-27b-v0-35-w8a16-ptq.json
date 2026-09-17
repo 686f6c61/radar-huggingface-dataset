@@ -30,7 +30,8 @@
     "base_model:quantized:ReadyArt/Heimdallr-27B-v0.35",
     "license:apache-2.0",
     "compressed-tensors",
-    "region:us"
+    "region:us",
+    "not-for-all-audiences"
   ],
   "likes": 0,
   "downloads_30d": 46,

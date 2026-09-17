@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "kingjones777/Nex-N2.5-mini-ROCmFP4-GGUF",
+  "slug": "kingjones777-nex-n2-5-mini-rocmfp4-gguf",
+  "author": "kingjones777",
+  "url": "https://huggingface.co/kingjones777/Nex-N2.5-mini-ROCmFP4-GGUF",
+  "created_at": "2026-09-17T02:15:48.000Z",
+  "updated_at": "2026-09-17T03:22:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "rocm",
+    "amd",
+    "rocmfp4",
+    "rocmfpx",
+    "strix-halo",
+    "amd-strix-halo",
+    "gfx1151",
+    "ryzen-ai-max",
+    "ryzen-ai-max-395",
+    "radeon-8060s",
+    "moe",
+    "reasoning",
+    "multimodal",
+    "vision",
+    "nex",
+    "qwen3.5",
+    "quantized",
+    "image-text-to-text",
+    "base_model:nex-agi/Nex-N2.5-mini",
+    "base_model:quantized:nex-agi/Nex-N2.5-mini",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 32,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 58141826144,
+  "storage_human": "58.1 GB",
+  "base_model": "nex-agi/Nex-N2.5-mini",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Solved: HP App - HP Support Community - 9704854",
+      "url": "https://h30434.www3.hp.com/t5/Desktop-Software-and-How-To-Questions/HP-App/td-p/9704854",
+      "snippet": "Sep 6, 2026 · Yesterday I installed the HP App from Microsoft Store. Is this app meant to replace HP Smart, HP PC Hardware …"
+    },
+    {
+      "title": "Home - HP Support Community",
+      "url": "https://h30434.www3.hp.com/",
+      "snippet": "1 day ago · Join the conversation in HP’s Support Community / Forum to find solutions, ask questions, and share tips for HP …"
+    },
+    {
+      "title": "Found link to myHP app redownload - HP Support Community",
+      "url": "https://h30434.www3.hp.com/t5/Notebook-Software-and-How-To-Questions/Found-link-to-myHP-app-redownload/td-p/9175077",
+      "snippet": "I was able to find the link to redownload myHP from the microsoft store if you accidentaly deleted it. - 9175077"
+    },
+    {
+      "title": "HP App versus desktop software - HP Support Community",
+      "url": "https://h30434.www3.hp.com/t5/Printer-Setup-Software-Drivers/HP-App-versus-desktop-software/td-p/7135342",
+      "snippet": "May 31, 2019 · Greetings, I have the Full Feature Software and Drivers installed. I also noticed that HP App installed itself. Do I need …"
+    },
+    {
+      "title": "HP App - HP Support Community - 8189923",
+      "url": "https://h30434.www3.hp.com/t5/Printer-Setup-Software-Drivers/HP-App/td-p/8189923",
+      "snippet": "Oct 14, 2021 · HP ENVY Photo 7855 All-in-One Printer Thank you for participating in the HP Community. The Community is a …"
+    }
+  ]
+}

@@ -29,12 +29,12 @@
     "fp8",
     "region:us"
   ],
-  "likes": 2389,
-  "downloads_30d": 2244085,
-  "trending_score": 157,
+  "likes": 2374,
+  "downloads_30d": 1992040,
+  "trending_score": 166,
   "parameters": 321323031390,
   "parameters_human": "321.32B",
-  "storage_bytes": 656694018754,
+  "storage_bytes": 656694929761,
   "storage_human": "656.7 GB",
   "base_model": null,
   "formats": [

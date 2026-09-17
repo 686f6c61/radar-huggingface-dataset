@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "megaaziib/h3_aziib",
+  "slug": "megaaziib-h3_aziib",
+  "author": "megaaziib",
+  "url": "https://huggingface.co/megaaziib/h3_aziib",
+  "created_at": "2026-09-16T20:16:26.000Z",
+  "updated_at": "2026-09-16T20:16:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Roadmap Icons & Symbols - Flaticon",
+      "url": "https://www.flaticon.com/free-icons/roadmap",
+      "snippet": "1,816 roadmap icons. Vector icons in SVG, PSD, PNG, EPS and ICON FONT."
+    },
+    {
+      "title": "Roadmap icon Icons, Logos, Symbols – Free Download PNG, SVG",
+      "url": "https://icons8.com/icons/set/roadmap-icon",
+      "snippet": "Download Static and animated Roadmap icon vector icons and logos for free in PNG, SVG, GIF."
+    },
+    {
+      "title": "Roadmap - Free business icons - Flaticon",
+      "url": "https://www.flaticon.com/free-icon/roadmap_7372499",
+      "snippet": "Free vector icon. Download thousands of free icons of business in SVG, PSD, PNG, EPS format or as ICON FONT."
+    },
+    {
+      "title": "Download Free Roadmap Icons in PNG & SVG | Magnific (formerly …",
+      "url": "https://www.magnific.com/icons/roadmap",
+      "snippet": "Free Roadmap icons in PNG and SVG format to download. Explore our exclusive collection of Roadmap icons. You can copy or edit …"
+    },
+    {
+      "title": "Free Roadmap Icons | 79 SVG & PNG Icons | Freeicon",
+      "url": "https://freeicon.com/free-icons-collection/roadmap",
+      "snippet": "Browse and download free Roadmap icons across multiple styles. 79 icons in SVG and PNG, free for personal and commercial use."
+    }
+  ]
+}

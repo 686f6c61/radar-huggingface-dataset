@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "unignoramus/anlp-a2-p1-dense",
+  "slug": "unignoramus-anlp-a2-p1-dense",
+  "author": "unignoramus",
+  "url": "https://huggingface.co/unignoramus/anlp-a2-p1-dense",
+  "created_at": "2026-09-17T01:11:49.000Z",
+  "updated_at": "2026-09-17T01:12:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 141082501,
+  "storage_human": "141 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OneLogin",
+      "url": "https://telusinternational.onelogin.com/profile2",
+      "snippet": "Remember my username Continue"
+    },
+    {
+      "title": "OneLogin",
+      "url": "https://telusinternational.onelogin.com/portal",
+      "snippet": "Sign in to OneLogin for Telus International."
+    },
+    {
+      "title": "OneLogin",
+      "url": "https://telusinternational.onelogin.com/trust/saml2/http-redirect/sso/bd26da32-b34e-4c4d-b156-9f36fd97fe46?saml_request_params_token=f6c94cb78f.d4b2b9689774809bbed761e31d3d244204e47ddf.SRRtovZ88Du77ELkikgm-ttneJWspq7uiYp1inVfD_w%3D",
+      "snippet": "We could not recover the state of your login to the application. You can navigate to your Portal and launch the same application from …"
+    },
+    {
+      "title": "OneLogin",
+      "url": "https://telusinternational.onelogin.com/password/reset",
+      "snippet": "Something Went Wrong... Invalid token Go back to portal Contact help desk"
+    },
+    {
+      "title": "Administration | OneLogin",
+      "url": "https://telusinternational.onelogin.com/admin2/",
+      "snippet": "Access the administration portal for managing OneLogin accounts at Telus International."
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "mradermacher/PhAI-IDE-72B-GGUF",
+  "slug": "mradermacher-phai-ide-72b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/PhAI-IDE-72B-GGUF",
+  "created_at": "2026-09-17T01:16:37.000Z",
+  "updated_at": "2026-09-17T04:52:39.000Z",
+  "license": "qwen",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "phai-ide",
+    "science",
+    "code",
+    "tool-use",
+    "sft",
+    "lora",
+    "safetensors",
+    "en",
+    "base_model:AItonomy/PhAI-IDE-72B",
+    "base_model:adapter:AItonomy/PhAI-IDE-72B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 72706203648,
+  "parameters_human": "72.71B",
+  "storage_bytes": 520404531200,
+  "storage_human": "520.4 GB",
+  "base_model": "AItonomy/PhAI-IDE-72B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yahoo",
+      "url": "https://www.yahoo.com/",
+      "snippet": "News, email and search are just the beginning. Discover more every day. Find your yodel."
+    },
+    {
+      "title": "Sign in or out of Yahoo | Yahoo Help",
+      "url": "https://help.yahoo.com/kb/SLN3407.html",
+      "snippet": "Sign in to your Yahoo, Rocketmail, or Ymail account from anywhere you access your favorite Yahoo services. Find out how to get in …"
+    },
+    {
+      "title": "Yahoo",
+      "url": "https://www.yahoo.com/.\"",
+      "snippet": "redirect"
+    },
+    {
+      "title": "Yahoo.com",
+      "url": "https://us.search.yahoo.com/mobile/",
+      "snippet": "Yahoo mobile provides a convenient search experience, offering relevant information, images, and videos from across the web."
+    },
+    {
+      "title": "Login - Sign in to Yahoo",
+      "url": "https://login.yahoo.com/",
+      "snippet": "Sign in to access the best in class Yahoo Mail, breaking local, national and global news, finance, sports, music, movies... You get …"
+    }
+  ]
+}

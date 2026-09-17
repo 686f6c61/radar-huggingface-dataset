@@ -24,7 +24,8 @@
     "base_model:finetune:microsoft/swin-base-patch4-window7-224",
     "license:openmdw-1.1",
     "endpoints_compatible",
-    "region:us"
+    "region:us",
+    "not-for-all-audiences"
   ],
   "likes": 0,
   "downloads_30d": 0,

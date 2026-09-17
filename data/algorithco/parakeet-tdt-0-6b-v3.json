@@ -5,7 +5,7 @@
   "author": "algorithco",
   "url": "https://huggingface.co/algorithco/parakeet-tdt-0.6b-v3",
   "created_at": "2026-09-16T14:10:59.000Z",
-  "updated_at": "2026-09-16T14:11:00.000Z",
+  "updated_at": "2026-09-17T01:27:21.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -39,6 +39,7 @@
   ],
   "tags": [
     "transformers",
+    "onnx",
     "nemo",
     "safetensors",
     "gguf",
@@ -104,11 +105,12 @@
   "trending_score": 0,
   "parameters": 627057286,
   "parameters_human": "627.1M",
-  "storage_bytes": 5731733131,
-  "storage_human": "5.7 GB",
+  "storage_bytes": 6402117964,
+  "storage_human": "6.4 GB",
   "base_model": null,
   "formats": [
     "gguf",
+    "onnx",
     "safetensors"
   ],
   "is_conversational": false,

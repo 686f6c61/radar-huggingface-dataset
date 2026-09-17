@@ -5,7 +5,7 @@
   "author": "sokann",
   "url": "https://huggingface.co/sokann/GLM-5.3-GGUF",
   "created_at": "2026-08-31T10:17:35.000Z",
-  "updated_at": "2026-08-31T10:42:54.000Z",
+  "updated_at": "2026-09-21T04:54:39.000Z",
   "license": "glm-5.3",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -16,6 +16,7 @@
     "license:other",
     "endpoints_compatible",
     "region:us",
+    "imatrix",
     "conversational"
   ],
   "likes": 1,
@@ -23,8 +24,8 @@
   "trending_score": 0,
   "parameters": 753329940480,
   "parameters_human": "753.33B",
-  "storage_bytes": 1506919579904,
-  "storage_human": "1506.9 GB",
+  "storage_bytes": 1768829371967,
+  "storage_human": "1768.8 GB",
   "base_model": null,
   "formats": [
     "gguf"

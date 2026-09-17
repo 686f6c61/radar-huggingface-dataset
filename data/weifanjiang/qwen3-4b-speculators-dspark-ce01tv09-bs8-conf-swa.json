@@ -5,7 +5,7 @@
   "author": "weifanjiang",
   "url": "https://huggingface.co/weifanjiang/qwen3-4b.speculators.dspark-ce01tv09-bs8-conf-swa",
   "created_at": "2026-08-12T21:55:52.000Z",
-  "updated_at": "2026-09-06T06:09:35.000Z",
+  "updated_at": "2026-09-20T02:13:04.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -21,8 +21,8 @@
   "trending_score": 0,
   "parameters": 1055577729,
   "parameters_human": "1.06B",
-  "storage_bytes": 3085146224,
-  "storage_human": "3.1 GB",
+  "storage_bytes": 3391484362,
+  "storage_human": "3.4 GB",
   "base_model": null,
   "formats": [
     "safetensors"

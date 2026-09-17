@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "minjaechoi/qwen36-35b-a3b-2p02bit-r2",
+  "slug": "minjaechoi-qwen36-35b-a3b-2p02bit-r2",
+  "author": "minjaechoi",
+  "url": "https://huggingface.co/minjaechoi/qwen36-35b-a3b-2p02bit-r2",
+  "created_at": "2026-09-17T00:25:58.000Z",
+  "updated_at": "2026-09-17T00:56:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "quantized",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.6-35B-A3B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70234483957,
+  "storage_human": "70.2 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Porn TV - Free Porn Videos, HD Sex Movies and XXX Porno",
+      "url": "https://www.porntv.com/",
+      "snippet": "Porn TV is your source for free HQ porn videos. Porn TV offers more quality sex movies and hardcore porno than anyone. Tons of …"
+    },
+    {
+      "title": "Pussy Eating Porn Videos | PornTV",
+      "url": "https://www.porntv.com/category/pussy-eating",
+      "snippet": "Pussy Eating porn videos - Porn TV is your source for free HQ porn videos. Porn TV offers more quality sex movies and hardcore …"
+    },
+    {
+      "title": "Teen Porn Videos | PornTV",
+      "url": "https://www.porntv.com/category/teen",
+      "snippet": "Teen porn videos - Porn TV is your source for free HQ porn videos. Porn TV offers more quality sex movies and hardcore porno than …"
+    },
+    {
+      "title": "Russian Porn Videos | PornTV",
+      "url": "https://www.porntv.com/category/russian",
+      "snippet": "Russian porn videos - Porn TV is your source for free HQ porn videos. Porn TV offers more quality sex movies and hardcore porno …"
+    },
+    {
+      "title": "Sneaky Mom Porn Videos | PornTV",
+      "url": "https://www.porntv.com/category/sneaky-mom",
+      "snippet": "Sneaky Mom porn videos - Porn TV is your source for free HQ porn videos. Porn TV offers more quality sex movies and hardcore …"
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "schema": 1,
+  "id": "UraionLabs/K2-Horizon-7B-oQ4e",
+  "slug": "uraionlabs-k2-horizon-7b-oq4e",
+  "author": "UraionLabs",
+  "url": "https://huggingface.co/UraionLabs/K2-Horizon-7B-oQ4e",
+  "created_at": "2026-09-16T20:53:44.000Z",
+  "updated_at": "2026-09-16T21:08:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "k2_horizon",
+    "mlx-lm",
+    "quantized",
+    "quantization",
+    "mixed-precision",
+    "apple-silicon",
+    "macos",
+    "local-llm",
+    "local-inference",
+    "on-device",
+    "edge-ai",
+    "long-context",
+    "reasoning",
+    "coding",
+    "tool-calling",
+    "function-calling",
+    "agent",
+    "agentic",
+    "omlx",
+    "oq",
+    "oqe",
+    "uraion-labs",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "en",
+    "base_model:IFM/K2-Horizon-7B",
+    "base_model:quantized:IFM/K2-Horizon-7B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8999178240,
+  "parameters_human": "9.00B",
+  "storage_bytes": 5308120013,
+  "storage_human": "5.3 GB",
+  "base_model": "IFM/K2-Horizon-7B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LilWayneHQ | #1 Source for Lil Wayne News, Music & More",
+      "url": "https://www.lilwaynehq.com/",
+      "snippet": "Check out the latest news, music, videos, pictures, interviews, and more from Lil Wayne at LilWayneHQ.com. Stay up to date on the …"
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎是一个中文互联网高质量问答社区和创作者聚集的原创内容平台，致力于分享知识、经验和见解，帮助用户找到答案。"
+    },
+    {
+      "title": "Lil Wayne Mixtapes",
+      "url": "https://www.lilwaynehq.com/discography/mixtapes/",
+      "snippet": "Check out all of the official mixtapes Lil Wayne has released on this page. From SQ1 to Dedication 6: Reloaded."
+    },
+    {
+      "title": "All Wayne and Drake all collab songs lists | Lil Wayne Forum",
+      "url": "https://forum.lilwaynehq.com/lil-wayne/33192-all-wayne-and-drake-all-collab-songs-lists",
+      "snippet": "Jun 30, 2011 · All general discussions and questions on one of the Greatest Of All Time in music, Lil Wayne, go in this section."
+    },
+    {
+      "title": "Lil Wayne Forum and Message Board | LilWayneHQ",
+      "url": "https://forum.lilwaynehq.com/",
+      "snippet": "Join the Lil Wayne forum and message board to discuss Weezy news, music, albums, mixtapes, Young Money, rare photos, videos …"
+    }
+  ]
+}

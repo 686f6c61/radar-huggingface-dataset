@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "yhhugging/DualMLC-eurlex-4k",
+  "slug": "yhhugging-dualmlc-eurlex-4k",
+  "author": "yhhugging",
+  "url": "https://huggingface.co/yhhugging/DualMLC-eurlex-4k",
+  "created_at": "2026-09-17T02:31:19.000Z",
+  "updated_at": "2026-09-17T02:31:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "dualmlc",
+    "multi-label-classification",
+    "extreme-multi-label-classification",
+    "lora",
+    "arxiv:2609.12915",
+    "eurlex-4k",
+    "text-classification",
+    "en",
+    "base_model:Qwen/Qwen2.5-7B",
+    "base_model:adapter:Qwen/Qwen2.5-7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 513775296,
+  "storage_human": "514 MB",
+  "base_model": "Qwen/Qwen2.5-7B, google-bert/bert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Körperpflege | RITUALS",
+      "url": "https://www.rituals.com/de-de/koerper/koerperpflege?msockid=2b84813823fe6496374796ef226f6575",
+      "snippet": "Entdecken Sie unsere Körperpflege cKollektion aus dem Home, Body & Beauty Sortiment von RITUALS. Gratis Geschenk beim Kauf …"
+    },
+    {
+      "title": "Rituals Körperpflege-Set (2026) zum Bestpreis | idealo.de",
+      "url": "https://www.idealo.de/preisvergleich/ProductCategory/14673F1348227-5951655.html?msockid=2b84813823fe6496374796ef226f6575",
+      "snippet": "Rituals Körperpflege-Set Preise vergleichen und günstig kaufen bei idealo.de 106 Produkte Große Auswahl an Marken Bewertungen …"
+    },
+    {
+      "title": "Geschenksets | RITUALS",
+      "url": "https://www.rituals.com/de-de/geschenke/geschenksets?msockid=2b84813823fe6496374796ef226f6575",
+      "snippet": "Unsere Rituals Geschenksets werden sorgfältig zusammengestellt, um ein ganzheitliches Erlebnis zu bieten – von wohltuender …"
+    },
+    {
+      "title": "Rituals Pflege-Geschenkset (2026) zum Bestpreis | idealo.de",
+      "url": "https://www.idealo.de/preisvergleich/ProductCategory/14673F5951655.html?msockid=2b84813823fe6496374796ef226f6575",
+      "snippet": "Rituals hat sich im Bereich Körperpflege mit luxuriösen Dufterlebnissen einen Namen gemacht. Angelegt an fernöstliche …"
+    },
+    {
+      "title": "Rituals The Ritual of Mehr Trial Körperpflegeset - DOUGLAS",
+      "url": "https://www.douglas.de/de/p/5011716062",
+      "snippet": "10 hours ago · Das The Ritual of Mehr Körperpflege-Geschenkset von Rituals verwöhnt dich von Kopf bis Fuß mit drei Bestsellern: …"
+    }
+  ]
+}

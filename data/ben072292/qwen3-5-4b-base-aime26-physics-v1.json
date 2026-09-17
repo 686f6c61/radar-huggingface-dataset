@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "ben072292/Qwen3.5-4B-Base-AIME26-physics-v1",
+  "slug": "ben072292-qwen3-5-4b-base-aime26-physics-v1",
+  "author": "ben072292",
+  "url": "https://huggingface.co/ben072292/Qwen3.5-4B-Base-AIME26-physics-v1",
+  "created_at": "2026-09-17T00:26:22.000Z",
+  "updated_at": "2026-09-17T00:27:20.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "llama-factory",
+    "full",
+    "generated_from_trainer",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-4B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-4B-Base",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 9098617238,
+  "storage_human": "9.1 GB",
+  "base_model": "Qwen/Qwen3.5-4B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎",
+      "url": "https://www.zhihu.com/tardis/jm/art/2030805996927440216",
+      "snippet": "知乎，有趣、有料、有态度的内容社区。开放、真实、专业的社区氛围，汇集各行各业亲历者、内行人、领域专家。上知乎，找答案、 …"
+    },
+    {
+      "title": "手指为何无故掉皮，是缺少维生素吗？该如何治理？ - 知乎",
+      "url": "https://www.zhihu.com/question/19904813",
+      "snippet": "不能随意碰冷水，会越脱越重。 不能接触热的东西，会疼 指纹解锁打卡直接GG 身边不了解的人会嫌弃怕传染 手指脱皮很多人会有“无 …"
+    },
+    {
+      "title": "纵向课题和横向课题有什么区别？ - 知乎",
+      "url": "https://www.zhihu.com/question/30432177",
+      "snippet": "目前，从学科大类上讲：分为社会科学和自然科学两大类；根据科研课题的来源一般分为：纵向课题与横向课题两大类。 纵向课题是 …"
+    },
+    {
+      "title": "知道科研项目的编号和名称，如何查询具体内容？ - 知乎",
+      "url": "https://www.zhihu.com/question/28822290",
+      "snippet": "RT，只知道编号和名称，但是不知道具体是什么基金。四年期的。怎么才能查询到这个项目呢？"
+    },
+    {
+      "title": "给我一个关于Roxy music/Frank zappa/Asia的专辑评价和哪张好听?",
+      "url": "https://www.zhihu.com/question/28594773",
+      "snippet": "编年史 - 73-74 - 前卫摇滚、艺术摇滚（Progressive Rock, Art Rock）- 巅峰 中 - Rock Chronicles 摇滚编年史 - 知乎专栏 里面有关于 …"
+    }
+  ]
+}

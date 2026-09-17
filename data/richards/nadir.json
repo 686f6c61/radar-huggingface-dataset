@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "RICHARDS/nadir",
+  "slug": "richards-nadir",
+  "author": "RICHARDS",
+  "url": "https://huggingface.co/RICHARDS/nadir",
+  "created_at": "2026-09-16T20:35:04.000Z",
+  "updated_at": "2026-09-16T20:35:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 114329885,
+  "storage_human": "114 MB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "アダルトサイトを見ていて、ウイルスにかかることはありますか？ま …",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q12287453317",
+      "snippet": "Oct 14, 2023 · アダルトサイトを見ていて、ウイルスにかかることはありますか？また、ウイルスに罹ったら、スマホ内の写真を保 …"
+    },
+    {
+      "title": "至急願います。Pornhubにログインしようとすると、「この.",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q10228297730",
+      "snippet": "Jul 12, 2020 · 404s - Pornhub 申し訳ありませんが、要求されたページはすべて凍結されており、見つかりません。 このメッセージ …"
+    },
+    {
+      "title": "Supprimer un site porno [Résolu] - Forum Réseaux sociaux",
+      "url": "https://forums.commentcamarche.net/forum/affich-34704918-supprimer-un-site-porno",
+      "snippet": "Jul 5, 2017 · Bonjour, <comment supprimer un site porno de mon PC ,porno attitude et Tukif..merci"
+    },
+    {
+      "title": "Supprimer compte pornhub - Forum Réseaux sociaux",
+      "url": "https://forums.commentcamarche.net/forum/affich-36953588-supprimer-compte-pornhub",
+      "snippet": "Nov 20, 2020 · Bonjour, \"Pour supprimer votre compte, utilisez le menu déroulant en haut à droite de la page contenant votre photo …"
+    },
+    {
+      "title": "pornhab、なんで最近、ワンクリック詐欺の年齢確認が出てくるよう.",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q14287528974",
+      "snippet": "Oct 15, 2023 · 昔から「公式として」出していたのでは？ ※まぁPornhubの偽サイトの可能性もありますが、それはURLの ドメイン …"
+    }
+  ]
+}

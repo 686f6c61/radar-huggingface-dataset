@@ -5,7 +5,7 @@
   "author": "NGC404",
   "url": "https://huggingface.co/NGC404/sgspeech-vosk-tts-ru-0.10-prepared",
   "created_at": "2026-09-15T10:10:26.000Z",
-  "updated_at": "2026-09-15T10:11:21.000Z",
+  "updated_at": "2026-09-20T17:01:55.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-to-speech",
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 226026597,
-  "storage_human": "226 MB",
+  "storage_bytes": 669289421,
+  "storage_human": "669 MB",
   "base_model": null,
   "formats": [
     "onnx"

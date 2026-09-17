@@ -5,7 +5,7 @@
   "author": "sam-guided-vlas",
   "url": "https://huggingface.co/sam-guided-vlas/train_1_2_pile__point__overlay_a75__sim__agentview_camera__static__pi05__seed_0",
   "created_at": "2026-08-31T10:55:13.000Z",
-  "updated_at": "2026-08-31T16:51:10.000Z",
+  "updated_at": "2026-09-19T17:00:08.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",

@@ -23,12 +23,12 @@
     "license:other",
     "region:us"
   ],
-  "likes": 158,
-  "downloads_30d": 29837,
-  "trending_score": 41,
+  "likes": 155,
+  "downloads_30d": 28820,
+  "trending_score": 43,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 15475520688,
+  "storage_bytes": 15474434902,
   "storage_human": "15.5 GB",
   "base_model": "krea/Krea-2-Turbo",
   "formats": [

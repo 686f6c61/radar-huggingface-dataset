@@ -5,7 +5,7 @@
   "author": "YichengWangCA",
   "url": "https://huggingface.co/YichengWangCA/R1-Distill-Qwen-14B-AIME-DPO-LoRA",
   "created_at": "2026-08-27T13:30:44.000Z",
-  "updated_at": "2026-08-27T14:50:52.000Z",
+  "updated_at": "2026-09-20T23:40:18.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -31,8 +31,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 550593184,
-  "storage_human": "551 MB",
+  "storage_bytes": 1101186368,
+  "storage_human": "1.1 GB",
   "base_model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-14B",
   "formats": [
     "safetensors"

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "htchu/herb-llm-gemma3-awq",
+  "slug": "htchu-herb-llm-gemma3-awq",
+  "author": "htchu",
+  "url": "https://huggingface.co/htchu/herb-llm-gemma3-awq",
+  "created_at": "2026-09-17T01:42:02.000Z",
+  "updated_at": "2026-09-17T01:47:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma3_text",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": 2651042208,
+  "parameters_human": "2.65B",
+  "storage_bytes": 8051210673,
+  "storage_human": "8.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TIM Mail: la tua casella di posta elettronica | TIM",
+      "url": "https://www.tim.it/fisso-e-mobile/servizi/tim-mail",
+      "snippet": "Hai bisogno di supporto per l'accesso alla TIM Mail? Scopri cosa fare se non riesci ad accedere alla tua TIM Mail. Accedi e gestisci la …"
+    },
+    {
+      "title": "Entra nella tua mail",
+      "url": "https://mail.tim.it/?d=alice.it&s=1587007497263",
+      "snippet": "Entra nella tua mail Username @tim.it @alice.it @tin.it Recupera username Recupera Password"
+    },
+    {
+      "title": "TIM Mail",
+      "url": "http://mail.tim.it/",
+      "snippet": ""
+    },
+    {
+      "title": "Accesso all'account email - Mail TIM.it e Alice.it | TIM",
+      "url": "https://www.tim.it/assistenza/assistenza-tecnica/mail/autenticazione",
+      "snippet": "Registra la tua TIM Mail e segui le indicazioni per risolvere i problemi di accesso e per gestire username e password che …"
+    },
+    {
+      "title": "mail.alice.it",
+      "url": "http://mail.alice.it/",
+      "snippet": ""
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "kirillbilchenko/Qwen3.8-27B-MXFP4-MxWave",
+  "slug": "kirillbilchenko-qwen3-8-27b-mxfp4-mxwave",
+  "author": "kirillbilchenko",
+  "url": "https://huggingface.co/kirillbilchenko/Qwen3.8-27B-MXFP4-MxWave",
+  "created_at": "2026-09-16T20:29:05.000Z",
+  "updated_at": "2026-09-16T21:31:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen3.8",
+    "qwen",
+    "mxfp4",
+    "4-bit",
+    "compressed-tensors",
+    "quantized",
+    "vllm",
+    "w4a16",
+    "blackwell",
+    "dgx-spark",
+    "mxwave",
+    "multimodal",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 19845640560,
+  "storage_human": "19.8 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Noi Associazione - Login",
+      "url": "https://www.noihub.it/",
+      "snippet": "ACCEDI A NOI HUB Inserisci le credenziali per accedere Email"
+    },
+    {
+      "title": "Noi Associazione - Nuovo Inserimento",
+      "url": "https://noihub.it/login/nuovo/",
+      "snippet": "Compilate il modulo con tutti i dati richiesti, in particolare le voci contrassegnate da asterisco (*). N.B - Se possiedi già la tessera, …"
+    },
+    {
+      "title": "NOI HUB - APP",
+      "url": "https://m.noihub.it/",
+      "snippet": "Accedi all'app NOI HUB per gestire le tue attività associative in modo semplice e veloce."
+    },
+    {
+      "title": "NOI HUB - APP",
+      "url": "https://m.noihub.it/registrati.php",
+      "snippet": "Inserisci il codice fiscale che hai utilizzato per la registrazione presso il tuo circolo e l'indirizzo email che vuoi utilizzare con …"
+    },
+    {
+      "title": "assicurazioni.noihub.it",
+      "url": "https://assicurazioni.noihub.it/login/run",
+      "snippet": ""
+    }
+  ]
+}

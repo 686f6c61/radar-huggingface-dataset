@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "MrFuzzihead/Qwen3.8-35B-A3B-Distill-APEX-GGUF",
+  "slug": "mrfuzzihead-qwen3-8-35b-a3b-distill-apex-gguf",
+  "author": "MrFuzzihead",
+  "url": "https://huggingface.co/MrFuzzihead/Qwen3.8-35B-A3B-Distill-APEX-GGUF",
+  "created_at": "2026-09-17T00:48:29.000Z",
+  "updated_at": "2026-09-17T14:10:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "quantized",
+    "apex",
+    "apex-quant",
+    "moe",
+    "mixture-of-experts",
+    "mixed-precision",
+    "layer-wise",
+    "llama-cpp",
+    "qwen3_5_moe",
+    "vlm",
+    "vision",
+    "video",
+    "multimodal",
+    "agentic",
+    "reasoning",
+    "distillation",
+    "function-calling",
+    "text-generation",
+    "base_model:empero-ai/Qwen3.8-35B-A3B-Distill",
+    "base_model:quantized:empero-ai/Qwen3.8-35B-A3B-Distill",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 280315636768,
+  "storage_human": "280.3 GB",
+  "base_model": "empero-ai/Qwen3.8-35B-A3B-Distill",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Snapchat - Say It In A Snap",
+      "url": "https://www.snapchat.com/",
+      "snippet": "Chat, send Snaps, explore Stories, and try Lenses on desktop, or download the app on mobile! See how to connect & create with …"
+    },
+    {
+      "title": "Snapchat",
+      "url": "https://accounts.snapchat.com/v2/login",
+      "snippet": "Log in to Snapchat on the web to manage your account, chat, and call with friends."
+    },
+    {
+      "title": "Snapchat for Web.",
+      "url": "https://www.snapchat.com/web",
+      "snippet": "Try the new Snapchat for Web on your computer to chat, call friends, use Lenses, and more"
+    },
+    {
+      "title": "Snapchat",
+      "url": "https://accounts.snapchat.com/v2/welcome",
+      "snippet": ""
+    },
+    {
+      "title": "Snapchat Ads Manager",
+      "url": "https://ads.snapchat.com/",
+      "snippet": "Snapchat Ads Manager is Snapchat's self-serve advertising platform. Login or get started today to create, manage, and monitor your …"
+    }
+  ]
+}

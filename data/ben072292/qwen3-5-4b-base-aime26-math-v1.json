@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "ben072292/Qwen3.5-4B-Base-AIME26-math-v1",
+  "slug": "ben072292-qwen3-5-4b-base-aime26-math-v1",
+  "author": "ben072292",
+  "url": "https://huggingface.co/ben072292/Qwen3.5-4B-Base-AIME26-math-v1",
+  "created_at": "2026-09-17T00:26:22.000Z",
+  "updated_at": "2026-09-17T00:27:20.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "llama-factory",
+    "full",
+    "generated_from_trainer",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-4B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-4B-Base",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 9098617238,
+  "storage_human": "9.1 GB",
+  "base_model": "Qwen/Qwen3.5-4B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Louisiana Property Damage Lawyers - Godbey Giardina",
+      "url": "https://www.g-glawgroup.com/louisiana-property-damage-attorney",
+      "snippet": "When unexpected property damage upends your home or business, time is critical. At Godbey Giardina Law Group, our Louisiana …"
+    },
+    {
+      "title": "Louisiana Property Damage Lawyers & Law Firms",
+      "url": "https://www.lawyers.com/property-damage/louisiana/find-law-firms-by-city/",
+      "snippet": "Browse local Louisiana Property Damage attorney and law firm listings and reviews on Lawyers.com to find the best lawyer for your …"
+    },
+    {
+      "title": "Louisiana Property Damage Attorneys | Clayton, Frugé & Ward",
+      "url": "https://www.claytonfrugewardlaw.com/insurance-claims/property-damage-claims/",
+      "snippet": "Dealing with property damage can be daunting. At Clayton, Frugé & Ward, we understand the turmoil it brings, and we are committed …"
+    },
+    {
+      "title": "Property Damage Lawyers in the State of Louisiana",
+      "url": "https://houghtalinglaw.com/louisiana-property-damage-lawyers/",
+      "snippet": "The property damage claim lawyers at the Houghtaling Law Firm, LLC in the state of Louisiana can review your insurance policy, …"
+    },
+    {
+      "title": "Louisiana Property Damage Attorneys | Binegar Christian",
+      "url": "https://www.stormlawyersla.com/",
+      "snippet": "If your home was damaged by a hurricane, wind, hail, flood, tornado, or another covered event, we help Louisiana homeowners …"
+    }
+  ]
+}

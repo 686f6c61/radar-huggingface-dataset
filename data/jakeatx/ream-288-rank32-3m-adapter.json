@@ -5,7 +5,7 @@
   "author": "jakeatx",
   "url": "https://huggingface.co/jakeatx/ream-288-rank32-3m-adapter",
   "created_at": "2026-09-08T12:53:31.000Z",
-  "updated_at": "2026-09-16T00:06:16.000Z",
+  "updated_at": "2026-09-17T20:49:23.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 7763393291,
-  "storage_human": "7.8 GB",
+  "storage_bytes": 10100176982,
+  "storage_human": "10.1 GB",
   "base_model": "jakeatx/slimder-qwen38-ream288-depth32-agentic-ngram50-mixed-nvfp4-v2",
   "formats": [
     "safetensors"

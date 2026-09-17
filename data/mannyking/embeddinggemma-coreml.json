@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Mannyking/embeddinggemma-coreml",
+  "slug": "mannyking-embeddinggemma-coreml",
+  "author": "Mannyking",
+  "url": "https://huggingface.co/Mannyking/embeddinggemma-coreml",
+  "created_at": "2026-09-17T02:27:59.000Z",
+  "updated_at": "2026-09-17T03:17:48.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "coreml",
+    "text-embeddings",
+    "feature-extraction",
+    "base_model:google/embeddinggemma-300m",
+    "base_model:quantized:google/embeddinggemma-300m",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2110308089,
+  "storage_human": "2.1 GB",
+  "base_model": "google/embeddinggemma-300m",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BFM Bourse",
+      "url": "https://www.tradingsat.com/",
+      "snippet": "Consultez toute l'actualité financière, les rumeurs de marché, les cotations et nos outils exclusifs de sélection de valeurs. Tout pour …"
+    },
+    {
+      "title": "Replay - BFM Bourse avec Guillaume Sommerer - BFM Business",
+      "url": "https://www.bfmtv.com/economie/replay-emissions/bfm-bourse/",
+      "snippet": "Suivez vos placements au rythme de la Bourse et plongez-vous dans l'univers de la finance avec Guillaume Sommerer."
+    },
+    {
+      "title": "Cours des actions de A à Z - BFM Bourse",
+      "url": "https://www.tradingsat.com/actions-de-a-z/",
+      "snippet": "Toutes les cotations en temps réel des actions. Consultez l'historique des cours de toutes les sociétés cotées en Bourse."
+    },
+    {
+      "title": "Bourse: actualité économique et vidéos en continu - BFM Eco",
+      "url": "https://www.bfmtv.com/economie/votre-argent/bourse/",
+      "snippet": "\"Quand cela n'allait pas bien, les Français ont été là\": le Slip Français s'introduit en Bourse et vise une augmentation de capital de 5 …"
+    },
+    {
+      "title": "Conseils boursiers et analyse technique - BFM Bourse",
+      "url": "https://www.tradingsat.com/conseils-bourse/",
+      "snippet": "Accédez à tous les conseils boursiers et analyses techniques en temps réel sur actions, indices, warrants, turbos, certificats et …"
+    }
+  ]
+}

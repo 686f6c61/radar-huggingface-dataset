@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "aestudio/Olmo-3-7B-Instruct-DPO-GRPO-math-lora-gen270",
+  "slug": "aestudio-olmo-3-7b-instruct-dpo-grpo-math-lora-gen270",
+  "author": "aestudio",
+  "url": "https://huggingface.co/aestudio/Olmo-3-7B-Instruct-DPO-GRPO-math-lora-gen270",
+  "created_at": "2026-09-16T21:02:40.000Z",
+  "updated_at": "2026-09-18T02:02:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "grpo",
+    "rlvr",
+    "lora",
+    "math",
+    "reasoning",
+    "olmo",
+    "text-generation",
+    "conversational",
+    "base_model:allenai/Olmo-3-7B-Instruct-DPO",
+    "base_model:adapter:allenai/Olmo-3-7B-Instruct-DPO",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1279323952,
+  "storage_human": "1.3 GB",
+  "base_model": "allenai/Olmo-3-7B-Instruct-DPO",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sri Lankan Porn Videos with Amateur Sex - xHamster",
+      "url": "https://xhamster.com/categories/sri-lankan",
+      "snippet": "Amateur 🇱🇰 Sri Lankan girls star in homemade videos with great sex and masturbation. They're dark-skinned, beautiful, and exotic in …"
+    },
+    {
+      "title": "Sri Lankan Porn Videos - xHamster",
+      "url": "https://xhamster.com/search/sri+lankan",
+      "snippet": "Watch sri lankan porn videos. Explore tons of XXX movies with sex scenes in 2026 on xHamster!"
+    },
+    {
+      "title": "Newest Sri Lankan Porn Videos - xHamster",
+      "url": "https://xhamster.desi/categories/sri-lankan/newest",
+      "snippet": "1 day ago · Check out newest 🇱🇰 Sri Lankan porn videos on xHamster. Watch all newest Sri Lankan XXX vids right now!"
+    },
+    {
+      "title": "Free Sri lankan XXX Videos, Sri lankan Porn Movies, Sri lankan Tube ...",
+      "url": "https://xgent.com/sri-lankan-videos",
+      "snippet": "We have 5,142 such videos in our database. Enjoy the hottest Sri lankan videos."
+    },
+    {
+      "title": "SRI LANKAN PORN VIDEOS - SOS.XXX",
+      "url": "https://sos.xxx/videos/sri-lankan/",
+      "snippet": "Check out countless Sri Lankan porn videos neatly arranged from A to Z. Expect nothing but the highest quality Sri Lankan."
+    }
+  ]
+}

@@ -4,8 +4,8 @@
   "slug": "dsada123sa4fasr-myawesomemodel-testrepo",
   "author": "DSADA123SA4FASR",
   "url": "https://huggingface.co/DSADA123SA4FASR/MyAwesomeModel-TestRepo",
-  "created_at": "2026-09-14T05:38:05.000Z",
-  "updated_at": "2026-09-14T05:38:10.000Z",
+  "created_at": "2026-09-17T20:24:10.000Z",
+  "updated_at": "2026-09-17T20:24:15.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -31,8 +31,8 @@
   "formats": [],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-09-16T03:33:12.001Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

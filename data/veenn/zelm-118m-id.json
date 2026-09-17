@@ -5,7 +5,7 @@
   "author": "Veenn",
   "url": "https://huggingface.co/Veenn/zelm-118m-id",
   "created_at": "2026-09-07T10:05:44.000Z",
-  "updated_at": "2026-09-07T10:16:44.000Z",
+  "updated_at": "2026-09-21T01:20:11.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

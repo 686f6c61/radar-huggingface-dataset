@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "genaforvena/study-toy_passage_ppl",
+  "slug": "genaforvena-study-toy_passage_ppl",
+  "author": "genaforvena",
+  "url": "https://huggingface.co/genaforvena/study-toy_passage_ppl",
+  "created_at": "2026-09-16T22:59:58.000Z",
+  "updated_at": "2026-09-16T23:00:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:HuggingFaceTB/SmolLM2-360M-Instruct",
+    "lora",
+    "transformers",
+    "text-generation",
+    "arxiv:1910.09700",
+    "base_model:HuggingFaceTB/SmolLM2-360M-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 34793120,
+  "storage_human": "35 MB",
+  "base_model": "HuggingFaceTB/SmolLM2-360M-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Unable to authenticate hotmail and outlook in Gmail app",
+      "url": "https://support.google.com/mail/thread/442764402/unable-to-authenticate-hotmail-and-outlook-in-gmail-app?hl=en",
+      "snippet": "Jun 17, 2026 · I am trying to access my hotmail and outlook account in Gmail .but it is not authorised in my new mobile how to …"
+    },
+    {
+      "title": "'Correct credentials needed' for Hotmail account.",
+      "url": "https://support.google.com/mail/thread/229848710/correct-credentials-needed-for-hotmail-account?hl=en",
+      "snippet": "Aug 11, 2023 · 'Correct credentials needed' for Hotmail account. It says I need to put my password in again before i can access my …"
+    },
+    {
+      "title": "Je n'arrive plus à accéder à ma messagerie hotmail",
+      "url": "https://forums.commentcamarche.net/forum/affich-35094965-je-n-arrive-plus-a-acceder-a-ma-messagerie-hotmail",
+      "snippet": "Jan 29, 2018 · Bonjour, Je n'arrive plus à accéder à ma messagerie et je ne me souviens plus de mon mot de passe : je procédait …"
+    },
+    {
+      "title": "Page hotmail sign in [Résolu] - Forum Hotmail / Outlook.com",
+      "url": "https://forums.commentcamarche.net/forum/affich-22566500-page-hotmail-sign-in",
+      "snippet": "Bonjour, je n'arrive pas à avoir toutes mes adresses hotmail sur la page hotmail sign in, une seule apparait, alors que sur mon 2eme …"
+    },
+    {
+      "title": "Acessar conta hotmail - Comunidade Conta do Google",
+      "url": "https://support.google.com/accounts/thread/146627925/acessar-conta-hotmail?hl=pt-BR",
+      "snippet": "Você pode cancelar o serviço do Gmail da sua conta Google mas terá de informar um email de outro provedor para ficar como …"
+    }
+  ]
+}

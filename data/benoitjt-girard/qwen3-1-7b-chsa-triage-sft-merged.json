@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "BenoitJT-GIRARD/qwen3-1.7b-chsa-triage-sft-merged",
+  "slug": "benoitjt-girard-qwen3-1-7b-chsa-triage-sft-merged",
+  "author": "BenoitJT-GIRARD",
+  "url": "https://huggingface.co/BenoitJT-GIRARD/qwen3-1.7b-chsa-triage-sft-merged",
+  "created_at": "2026-09-17T02:09:48.000Z",
+  "updated_at": "2026-09-17T02:12:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "fr",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "medical",
+    "triage",
+    "emergency-department",
+    "conversational",
+    "fr",
+    "en",
+    "base_model:Qwen/Qwen3-1.7B-Base",
+    "base_model:finetune:Qwen/Qwen3-1.7B-Base",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 191,
+  "trending_score": 0,
+  "parameters": 2031739904,
+  "parameters_human": "2.03B",
+  "storage_bytes": 4074938564,
+  "storage_human": "4.1 GB",
+  "base_model": "Qwen/Qwen3-1.7B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WhatsApp Web",
+      "url": "https://web.whatsapp.com/",
+      "snippet": "Log in to WhatsApp Web for simple, reliable and private messaging on your desktop. Send and receive messages and files with …"
+    },
+    {
+      "title": "Download WhatsApp",
+      "url": "https://www.whatsapp.com/download",
+      "snippet": "Download WhatsApp on your mobile device, tablet or desktop and stay connected with reliable private messaging and calling. …"
+    },
+    {
+      "title": "WhatsApp | Secure and Reliable Free Private Messaging and Calling",
+      "url": "https://www.whatsapp.com/",
+      "snippet": "Use WhatsApp Messenger to stay in touch with friends and family. WhatsApp is free and offers simple, secure, reliable messaging …"
+    },
+    {
+      "title": "HOUSAB - WhatsApp",
+      "url": "https://wa.me/",
+      "snippet": "Hosted by WhatsApp 2026 © WhatsApp LLC Privacy & Terms"
+    },
+    {
+      "title": "WhatsApp Messenger - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.whatsapp&hl=en",
+      "snippet": "WhatsApp from Meta is a FREE messaging and video calling app. It’s used by over 2B people in more than 180 countries. It’s simple, …"
+    }
+  ]
+}

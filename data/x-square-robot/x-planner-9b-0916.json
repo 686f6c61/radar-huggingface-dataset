@@ -5,7 +5,7 @@
   "author": "x-square-robot",
   "url": "https://huggingface.co/x-square-robot/X-Planner-9B-0916",
   "created_at": "2026-09-16T14:05:30.000Z",
-  "updated_at": "2026-09-16T14:20:17.000Z",
+  "updated_at": "2026-09-16T17:00:37.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -35,7 +35,7 @@
   "trending_score": 0,
   "parameters": 9409813744,
   "parameters_human": "9.41B",
-  "storage_bytes": 18839710485,
+  "storage_bytes": 18841757366,
   "storage_human": "18.8 GB",
   "base_model": null,
   "formats": [

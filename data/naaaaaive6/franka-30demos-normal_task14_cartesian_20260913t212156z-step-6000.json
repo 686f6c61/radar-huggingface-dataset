@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "NaaaaaiVe6/franka-30demos-normal_task14_cartesian_20260913T212156Z-step-6000",
+  "slug": "naaaaaive6-franka-30demos-normal_task14_cartesian_20260913t212156z-step-6000",
+  "author": "NaaaaaiVe6",
+  "url": "https://huggingface.co/NaaaaaiVe6/franka-30demos-normal_task14_cartesian_20260913T212156Z-step-6000",
+  "created_at": "2026-09-16T23:10:37.000Z",
+  "updated_at": "2026-09-16T23:13:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3616757520,
+  "parameters_human": "3.62B",
+  "storage_bytes": 7233650408,
+  "storage_human": "7.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Start-up costs are not a deductible business expense",
+      "url": "https://www.canr.msu.edu/news/start_up_costs_are_not_a_deductible_business_expense",
+      "snippet": "Dec 11, 2014 · You must capitalize your start-up costs instead of taking an immediate deductable expense. You will have to amortize …"
+    },
+    {
+      "title": "Startup Costs Tax Deduction: New $50,000 Limit for 2026 | OneBridge ...",
+      "url": "https://onebridgeaccounting.com/blog/startup-costs-tax-deduction/",
+      "snippet": "Sep 4, 2026 · The phase-out threshold moved from $50,000 to $500,000 in total startup spending, meaning the vast majority of new …"
+    },
+    {
+      "title": "What Business Start-up Costs Are Tax Deductible? - Fit Small Business",
+      "url": "https://fitsmallbusiness.com/deductible-start-up-costs-organizational-expenditures/",
+      "snippet": "Feb 16, 2023 · The first $5,000 of business start-up costs and organizational expenditures are immediately deductible and the excess …"
+    },
+    {
+      "title": "Startup Business Tax Deductions in 2026",
+      "url": "https://www.taxslayer.com/blog/blog-tax-deductions-for-new-businesses/",
+      "snippet": "Jan 8, 2026 · Startup business owners can begin to deduct expenses once they officially launch and start business activities. While …"
+    },
+    {
+      "title": "Tax Deductions for New Businesses: What to Write Off in 2026 - Acuity",
+      "url": "https://acuity.co/tax-deductions-new-businesses/",
+      "snippet": "Starting a business comes with significant upfront costs — and most of them are at least partially deductible. Here’s what new …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "CharlieChen/loop-untied-2-d10",
+  "slug": "charliechen-loop-untied-2-d10",
+  "author": "CharlieChen",
+  "url": "https://huggingface.co/CharlieChen/loop-untied-2-d10",
+  "created_at": "2026-09-16T21:52:23.000Z",
+  "updated_at": "2026-09-16T21:52:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "looped-transformer",
+    "scaling-laws",
+    "pytorch",
+    "base-model",
+    "text-generation",
+    "en",
+    "dataset:HuggingFaceFW/fineweb",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1652845155,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "News - YouTube",
+      "url": "https://www.youtube.com/channel/UCYfdidRxbB8Qhf0Nx7ioOYw",
+      "snippet": "Discover videos, music, and more on this YouTube channel."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/channel/UCEgdi0XIXXZ-qJOFPf4JSKw",
+      "snippet": "Sony Sports Network • 791K • 1d ago India Win 8th Asia Cup | IND W vs SL W | English| Highlights| Final | DP World Women’s Asia …"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://studio.youtube.com/",
+      "snippet": "Share your videos with friends, family, and the world."
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/channel/UCStaiwu-FAgp_RC_tBiLh9A",
+      "snippet": "Profile • @YouTubeMusic Sign in to create & share playlists, get personalized recommendations, and more."
+    }
+  ]
+}

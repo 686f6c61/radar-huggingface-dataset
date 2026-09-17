@@ -4,8 +4,8 @@
   "slug": "afdafadaa-myawesomemodel-testrepo",
   "author": "afdafadaa",
   "url": "https://huggingface.co/afdafadaa/MyAwesomeModel-TestRepo",
-  "created_at": "2026-09-14T15:06:14.000Z",
-  "updated_at": "2026-09-14T15:06:27.000Z",
+  "created_at": "2026-09-20T06:16:22.000Z",
+  "updated_at": "2026-09-20T06:16:27.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -31,8 +31,8 @@
   "formats": [],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-09-16T03:28:51.628Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

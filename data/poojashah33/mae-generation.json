@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "Poojashah33/mae-generation",
+  "slug": "poojashah33-mae-generation",
+  "author": "Poojashah33",
+  "url": "https://huggingface.co/Poojashah33/mae-generation",
+  "created_at": "2026-09-17T01:15:37.000Z",
+  "updated_at": "2026-09-17T01:15:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mae",
+    "pytorch",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Traduction",
+      "url": "https://translate.google.fr/",
+      "snippet": "Google Traduction offre un service gratuit pour traduire instantanément des mots, expressions et pages Web entre le français et plus …"
+    },
+    {
+      "title": "Google Traduction",
+      "url": "https://translate.google.fr/m",
+      "snippet": "Accueil Google Envoyer des commentaires Confidentialité et conditions d'utilisation Accéder au site complet"
+    },
+    {
+      "title": "Google Traduction",
+      "url": "https://translate.google.fr/details",
+      "snippet": "Traduisez des textes instantanément avec Google Translate."
+    },
+    {
+      "title": "Google Traduction",
+      "url": "https://translate.google.fr/_/TranslateWebserverUi/bscframe",
+      "snippet": "Google Traduction permet de traduire des textes, images, documents et sites Web entre le français et plus de 100 langues."
+    }
+  ]
+}

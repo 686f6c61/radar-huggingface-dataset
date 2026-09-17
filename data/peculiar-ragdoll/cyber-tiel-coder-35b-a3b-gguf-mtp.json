@@ -5,7 +5,7 @@
   "author": "peculiar-ragdoll",
   "url": "https://huggingface.co/peculiar-ragdoll/Cyber-Tiel-Coder-35B-A3B-GGUF-MTP",
   "created_at": "2026-08-31T23:57:36.000Z",
-  "updated_at": "2026-09-10T10:53:56.000Z",
+  "updated_at": "2026-09-18T10:56:00.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -37,13 +37,13 @@
     "region:us",
     "conversational"
   ],
-  "likes": 81,
-  "downloads_30d": 28210,
-  "trending_score": 70,
+  "likes": 74,
+  "downloads_30d": 23446,
+  "trending_score": 72,
   "parameters": 35505251456,
   "parameters_human": "35.51B",
-  "storage_bytes": 227154600590,
-  "storage_human": "227.2 GB",
+  "storage_bytes": 227768795342,
+  "storage_human": "227.8 GB",
   "base_model": "huihui-ai/Huihui-Ornith-1.5-35B-A3B-abliterated",
   "formats": [
     "gguf"

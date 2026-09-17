@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "CharlieChen/loop-untied-2-d8",
+  "slug": "charliechen-loop-untied-2-d8",
+  "author": "CharlieChen",
+  "url": "https://huggingface.co/CharlieChen/loop-untied-2-d8",
+  "created_at": "2026-09-16T21:52:22.000Z",
+  "updated_at": "2026-09-16T21:52:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "looped-transformer",
+    "scaling-laws",
+    "pytorch",
+    "base-model",
+    "text-generation",
+    "en",
+    "dataset:HuggingFaceFW/fineweb",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 977294924,
+  "storage_human": "977 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Uniwersytet Mikołaja Kopernika w Toruniu",
+      "url": "https://login.umk.pl/",
+      "snippet": "We would like to show you a description here but the site won’t allow us."
+    },
+    {
+      "title": "Centralny punkt logowania - UMK, o tej stronie",
+      "url": "https://skrypty2.uci.umk.pl/uslugi/o_stronie.php?locale=pl",
+      "snippet": "Centralny Punkt Logowania, działający w oparciu o oprogramowanie projektu JA-SIG - Central Authentication Service, ułatwia …"
+    },
+    {
+      "title": "Centralny punkt logowania",
+      "url": "https://www.ac.umk.pl/panel/wp-content/uploads/Szkoly_EN.pdf",
+      "snippet": "Z usług internetowych UMK mogą korzystać pracownicy, studenci, absolwenci i emeryci Uniwersytetu Mikołaja Kopernika mający …"
+    },
+    {
+      "title": "strona główna - Dokumenty - Uniwersytet Mikołaja Kopernika w Toruniu",
+      "url": "https://usosweb.umk.pl/",
+      "snippet": "Uprzejmie informujemy pracowników UMK, że zostało wprowadzone uwierzytelnianie dwuskładnikowe (2FA) dla części usług …"
+    },
+    {
+      "title": "Logowanie - Uniwersytet Mikołaja Kopernika w Toruniu",
+      "url": "https://www.cm.umk.pl/logowanie.html",
+      "snippet": "Collegium Medicum im. Ludwika Rydygiera w Bydgoszczy Uniwersytet Mikolaja Kopernika w Toruniu."
+    }
+  ]
+}

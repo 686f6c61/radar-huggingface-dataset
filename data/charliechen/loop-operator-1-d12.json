@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "CharlieChen/loop-operator-1-d12",
+  "slug": "charliechen-loop-operator-1-d12",
+  "author": "CharlieChen",
+  "url": "https://huggingface.co/CharlieChen/loop-operator-1-d12",
+  "created_at": "2026-09-16T21:51:48.000Z",
+  "updated_at": "2026-09-16T21:52:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "looped-transformer",
+    "scaling-laws",
+    "pytorch",
+    "base-model",
+    "text-generation",
+    "en",
+    "dataset:HuggingFaceFW/fineweb",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1977113897,
+  "storage_human": "2.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Data Science Projects - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/data-science/top-data-science-projects/",
+      "snippet": "Aug 22, 2026 · Data Science projects help you gain practical experience in working with data, Python, machine learning, and other …"
+    },
+    {
+      "title": "30 Data Science Projects for Beginners to Advanced - Dataquest",
+      "url": "https://www.dataquest.io/blog/data-science-projects-for-beginners-to-advanced/",
+      "snippet": "Mar 16, 2026 · This list gives you 30 data science projects from beginner to advanced, each with source code, a real dataset, and …"
+    },
+    {
+      "title": "data-science-projects · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/data-science-projects",
+      "snippet": "Aug 26, 2026 · Explore my diverse collection of projects showcasing machine learning, data analysis, and more. Organized by …"
+    },
+    {
+      "title": "Data Science Projects | DataCamp",
+      "url": "https://www.datacamp.com/projects",
+      "snippet": "Projects let you apply your skills using tools like data Notebooks and complete a data analysis from start to finish. Build your skills …"
+    },
+    {
+      "title": "data-science-projects · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/data-science-projects?o=desc&s=updated",
+      "snippet": "23 hours ago · Showcase data analysis, statistical testing, and machine learning projects using Python to uncover insights and build …"
+    }
+  ]
+}

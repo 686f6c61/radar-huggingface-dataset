@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "gdvstd/rab-olmo3-Lpure-tc-v13-ep5",
+  "slug": "gdvstd-rab-olmo3-lpure-tc-v13-ep5",
+  "author": "gdvstd",
+  "url": "https://huggingface.co/gdvstd/rab-olmo3-Lpure-tc-v13-ep5",
+  "created_at": "2026-09-17T02:06:26.000Z",
+  "updated_at": "2026-09-17T02:15:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "olmo3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 7298011136,
+  "parameters_human": "7.30B",
+  "storage_bytes": 29192086152,
+  "storage_human": "29.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "英雄联盟下载的游戏回放在那个文件夹？ - 知乎",
+      "url": "https://www.zhihu.com/question/332760073",
+      "snippet": "Jul 1, 2019 · 我之前也被这个问题困扰了很久，在网上也找不到什么靠谱的答案，后来自己慢慢摸索就搞清楚了，现在分享出来： 首 …"
+    },
+    {
+      "title": "作业帮登录/注册",
+      "url": "https://www.zybang.com/saasplat/general_plat/mlogin.html",
+      "snippet": "作业帮是面向全国中小学生的移动学习平台！包含全国小学、初中、高中课题教材90%的题库，更有300万学霸在线答题，秒杀各 ..."
+    },
+    {
+      "title": "作业帮-作业帮口算 在线教育引领者 - 极目未来",
+      "url": "https://www.zybang.com/",
+      "snippet": "作业帮成立于2015年，我们以“科技为人、成就非凡”为企业使命，依托“科技+教育”双引擎优势，在学习工具产品、智能硬件等领域开展 …"
+    },
+    {
+      "title": "知乎",
+      "url": "https://www.zhihu.com/careers",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "cwaud/tournament-exp-s1-f6782145-05ab-4bd3-8cc5-9eaccc1a751b-5Exp55ee3e248bc17b12",
+  "slug": "cwaud-tournament-exp-s1-f6782145-05ab-4bd3-8cc5-9eaccc1a751b-5exp55ee3e248bc17b12",
+  "author": "cwaud",
+  "url": "https://huggingface.co/cwaud/tournament-exp-s1-f6782145-05ab-4bd3-8cc5-9eaccc1a751b-5Exp55ee3e248bc17b12",
+  "created_at": "2026-09-17T02:12:56.000Z",
+  "updated_at": "2026-09-17T02:13:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": 2614341888,
+  "parameters_human": "2.61B",
+  "storage_bytes": 5263080384,
+  "storage_human": "5.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Newest Questions - Stack Overflow",
+      "url": "https://stackoverflow.com/",
+      "snippet": "10 hours ago · Stack Overflow | The World’s Largest Online Community for Developers"
+    },
+    {
+      "title": "c# - Combine two (or more) PDF's - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/808670/combine-two-or-more-pdfs",
+      "snippet": "This would provide me a folder full of the reports, but I would like to email everyone a single PDF with all the weekly reports. So I …"
+    },
+    {
+      "title": "python - pip не является внешней или внутренней командой / не ...",
+      "url": "https://ru.stackoverflow.com/questions/624272/pip-%d0%bd%d0%b5-%d1%8f%d0%b2%d0%bb%d1%8f%d0%b5%d1%82%d1%81%d1%8f-%d0%b2%d0%bd%d0%b5%d1%88%d0%bd%d0%b5%d0%b9-%d0%b8%d0%bb%d0%b8-%d0%b2%d0%bd%d1%83%d1%82%d1%80%d0%b5%d0%bd%d0%bd%d0%b5%d0%b9-%d0%ba%d0%be%d0%bc%d0%b0%d0%bd%d0%b4%d0%be%d0%b9-%d0%bd%d0%b5-%d1%80%d0%b0%d1%81%d0%bf%d0%be%d0%b7%d0%bd%d0%b0%d0%bd%d0%be-%d0%ba%d0%b0%d0%ba-%d0%b8%d0%bc%d1%8f-%d0%ba%d0%be%d0%bc%d0%b0%d0%bd%d0%b4%d0%bb%d0%b5",
+      "snippet": "Когда я пытаюсь установить модуль, выдает: &quot;pip не является внешней или внутренней командой, исполняемой …"
+    },
+    {
+      "title": "¿Como generar números aleatorios dentro de un rango de valores?",
+      "url": "https://es.stackoverflow.com/questions/5390/como-generar-n%C3%BAmeros-aleatorios-dentro-de-un-rango-de-valores",
+      "snippet": "Quisiera saber como generar un numero al azar (Random) dando un intervalo de valores. Por ejemplo, con el intervalo 1 a 10, quiero …"
+    },
+    {
+      "title": "¿Cómo poner Android Studio en español? - Stack Overflow en español",
+      "url": "https://es.stackoverflow.com/questions/610743/c%c3%b3mo-poner-android-studio-en-espa%c3%b1ol",
+      "snippet": "¿Cómo cambio el idioma del IDE a español? Desconozco si hay una nueva versión, actualización o parche. Estoy usando Android …"
+    }
+  ]
+}

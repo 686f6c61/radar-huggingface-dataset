@@ -5,7 +5,7 @@
   "author": "thetinkerer",
   "url": "https://huggingface.co/thetinkerer/Qwen3.8-27B-TOS-v1",
   "created_at": "2026-09-16T13:39:17.000Z",
-  "updated_at": "2026-09-16T14:57:13.000Z",
+  "updated_at": "2026-09-16T23:46:16.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -23,13 +23,13 @@
     "region:us",
     "conversational"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 25546171904,
   "parameters_human": "25.55B",
-  "storage_bytes": 46264188800,
-  "storage_human": "46.3 GB",
+  "storage_bytes": 94386884608,
+  "storage_human": "94.4 GB",
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf"

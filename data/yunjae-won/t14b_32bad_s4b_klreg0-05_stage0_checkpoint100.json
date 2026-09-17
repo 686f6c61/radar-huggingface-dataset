@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "yunjae-won/T14b_32bad_S4b_klreg0.05_stage0_checkpoint100",
+  "slug": "yunjae-won-t14b_32bad_s4b_klreg0-05_stage0_checkpoint100",
+  "author": "yunjae-won",
+  "url": "https://huggingface.co/yunjae-won/T14b_32bad_S4b_klreg0.05_stage0_checkpoint100",
+  "created_at": "2026-09-17T02:34:10.000Z",
+  "updated_at": "2026-09-17T02:38:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056414667,
+  "storage_human": "8.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Geometry Dash - Official Website",
+      "url": "https://www.geometrydash.com/",
+      "snippet": "Official Geometry Dash website by RobTop Games. Play the browser demo, view top player leaderboards, and get the game."
+    },
+    {
+      "title": "Geometry Dash – Jeu en Ligne Gratuit",
+      "url": "https://geometrydash.fr/",
+      "snippet": "Découvrez Geometry Dash, un jeu de plateforme rythmique où chaque saut doit être parfaitement synchronisé avec la musique. …"
+    },
+    {
+      "title": "Geometry Dash - Jouez gratuitement sur Geo Dash",
+      "url": "https://geodash.org/fr",
+      "snippet": "Jouez à Geometry Dash dans votre navigateur. Sautez, volez et foncez à travers des niveaux rythmés et exigeants. Aucun …"
+    },
+    {
+      "title": "Games - Geometry Dash",
+      "url": "https://geometrydash.com/games/",
+      "snippet": "Browse the Geometry Dash game family: the original Geometry Dash, Geometry Dash Lite, Geometry Dash Meltdown, World, and …"
+    },
+    {
+      "title": "Geometry Dash Lite - Play Free On Geometry.games",
+      "url": "https://geometry.games/game/geometry-dash-lite/index.html",
+      "snippet": "Geometry Dash Lite is a free, fun, and challenging rhythm-based platformer. Jump, fly, and flip gravity through auto-scrolling levels. …"
+    }
+  ]
+}

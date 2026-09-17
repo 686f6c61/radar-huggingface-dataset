@@ -5,7 +5,7 @@
   "author": "vincent-b",
   "url": "https://huggingface.co/vincent-b/latin-vii",
   "created_at": "2026-09-01T15:14:47.000Z",
-  "updated_at": "2026-09-01T15:22:02.000Z",
+  "updated_at": "2026-09-16T12:33:59.000Z",
   "license": "cc-by-sa-4.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -16,7 +16,7 @@
   "tags": [
     "mlx",
     "safetensors",
-    "gpt-claudius",
+    "gpt-varro",
     "latin",
     "gpt",
     "trained-from-scratch",

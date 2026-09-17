@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "yangzhixing/oat-rfsq-pair-so101-tokenizer-step320000",
+  "slug": "yangzhixing-oat-rfsq-pair-so101-tokenizer-step320000",
+  "author": "yangzhixing",
+  "url": "https://huggingface.co/yangzhixing/oat-rfsq-pair-so101-tokenizer-step320000",
+  "created_at": "2026-09-17T02:06:20.000Z",
+  "updated_at": "2026-09-17T02:06:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "robotics",
+    "action-tokenizer",
+    "so101",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 69942778,
+  "storage_human": "70 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kněžice (okres Jihlava) – Wikipedie",
+      "url": "https://cs.wikipedia.org/wiki/Kn%C4%9B%C5%BEice_(okres_Jihlava)",
+      "snippet": "Obec patří do správního obvodu obce s rozšířenou působností Jihlava. Obec se skládá ze čtyř původně samostatných obcí Brodců, …"
+    },
+    {
+      "title": "RIS - Regionální informační servis",
+      "url": "https://www.risy.cz/cs/vyhledavace/uzemi/590843-knezice",
+      "snippet": "Typ sídla: Obec ZUJ (kód obce): 590843 ORP: SO ORP Jihlava LAU 1 (NUTS 4): CZ0632 - okres Jihlava NUTS 3: CZ063 - Kraj …"
+    },
+    {
+      "title": "Kněžice (okres Jihlava) - podrobné informace - Atlaso.cz",
+      "url": "https://www.atlaso.cz/mista/knezice-okres-jihlava-podrobne-informace/",
+      "snippet": "Kněžice (německy Knieschitz) jsou obec ležící v okrese Jihlava v Kraji Vysočina, mezi městy Třebíčí a Jihlavou. Žije zde přibližně 1 …"
+    },
+    {
+      "title": "Seznam obcí s rozšířenou působností – Wikipedie",
+      "url": "https://cs.wikipedia.org/wiki/Seznam_obc%C3%AD_s_roz%C5%A1%C3%AD%C5%99enou_p%C5%AFsobnost%C3%AD",
+      "snippet": "V České republice je celkem 205 obcí s rozšířenou působností, z toho nejvíce ve Středočeském (26) a Moravskoslezském (22) kraji. …"
+    },
+    {
+      "title": "Kněžice (okres Jihlava)",
+      "url": "https://www.risy.cz/cs/vyhledavace/uzemi/590843-knezice.pdf",
+      "snippet": "Informace z oblasti krajů, okresů, obcí s rozšířenou působností i obcí se zaměřením zejména na hospodářské, sociální, životní …"
+    }
+  ]
+}

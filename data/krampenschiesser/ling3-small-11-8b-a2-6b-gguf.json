@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "krampenschiesser/ling3-small-11.8B-A2.6B-GGUF",
+  "slug": "krampenschiesser-ling3-small-11-8b-a2-6b-gguf",
+  "author": "krampenschiesser",
+  "url": "https://huggingface.co/krampenschiesser/ling3-small-11.8B-A2.6B-GGUF",
+  "created_at": "2026-09-17T01:13:14.000Z",
+  "updated_at": "2026-09-17T01:18:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "arxiv:2605.31268",
+    "base_model:krampenschiesser/ling3-small-base",
+    "base_model:quantized:krampenschiesser/ling3-small-base",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11368538976,
+  "parameters_human": "11.37B",
+  "storage_bytes": 34882361888,
+  "storage_human": "34.9 GB",
+  "base_model": "krampenschiesser/ling3-small-base",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Konsep Periwayatan Hadis: Era Nabi Hingga Kodifikasi",
+      "url": "https://mutiara.al-makkipublisher.com/index.php/al/article/view/510",
+      "snippet": "Jun 29, 2026 · Hadis sebagai sumber hukum Islam kedua memegang peranan fundamental dalam kehidupan umat Muslim, namun …"
+    },
+    {
+      "title": "SEJARAH KODIFIKASI HADIS PADA MASA NABI ﷺ, SAHABAT DAN …",
+      "url": "https://gemadakwah.blogspot.com/2026/09/sejarah-kodifikasi-hadis-pada-masa-nabi.html",
+      "snippet": "3 days ago · Sejarah Kodifikasi Hadis | Kitābah, Tadwīn dan Taṣnīf Hadis dari Masa Nabi ﷺ hingga Tabi‘in Ringkasan : Kodifikasi …"
+    },
+    {
+      "title": "Sejarah Pertumbuhan dan Perkembangan Hadis: Masa Nabi Hingga Masa ...",
+      "url": "https://jurnal.penerbitdaarulhuda.my.id/index.php/MAJIM/article/download/4380/4630",
+      "snippet": "Studi ini menelusuri perjalanan historis tradisi hadis sejak era Rasulullah saw. sampai periode kodifikasi yang terorganisir."
+    },
+    {
+      "title": "Sejarah Periwayatan dan Kodifikasi Hadits: Perjalanan Agung …",
+      "url": "https://immimpangkep.ponpes.id/blogguru/blog/sejarah-periwayatan-dan-kodifikasi-hadits-perjalanan-agung-menjaga-warisan-kenabian/",
+      "snippet": "3 days ago · Ia membentang dari transmisi lisan yang bersandar pada kekuatan hafalan luar biasa di masa Nabi, hingga menjadi …"
+    },
+    {
+      "title": "Konsep Periwayatan Hadis Era Nabi Hingga Kodifikasi",
+      "url": "https://paperity.org/p/361909000/konsep-periwayatan-hadis-era-nabi-hingga-kodifikasi",
+      "snippet": "Termasuk dengan kaitan masa perkembangan dan pertumbuhan hadis, para ulama berbeda pendapat dalam menyusunnya juga."
+    }
+  ]
+}

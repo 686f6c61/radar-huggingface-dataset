@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "psikosen/ResearchSquad-Experimental-Preliminary-v0.1",
+  "slug": "psikosen-researchsquad-experimental-preliminary-v0-1",
+  "author": "psikosen",
+  "url": "https://huggingface.co/psikosen/ResearchSquad-Experimental-Preliminary-v0.1",
+  "created_at": "2026-09-16T20:59:00.000Z",
+  "updated_at": "2026-09-16T20:59:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "experimental",
+    "preliminary",
+    "researchsquad",
+    "continual-learning",
+    "latent-planning",
+    "synthetic-data",
+    "custom-code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2476251,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Master Ernährungswissenschaften: 35 Jobs & Stellenangebote in Gießen …",
+      "url": "https://www.stepstone.de/jobs/Master-Ern%C3%A4hrungswissenschaften/in-gie%C3%9Fen?msockid=3b75245efd57647a30113388fc3a6555",
+      "snippet": "Master Ernährungswissenschaften Jobs in Gießen - Finden Sie passende Master Ernährungswissenschaften Stellenangebote in …"
+    },
+    {
+      "title": "Stellenangebote bei Justus-Liebig-Universität Gießen – Jobs",
+      "url": "https://jobs.uni-giessen.de/_/joblist",
+      "snippet": "Wir suchen Talente in Forschung, Lehre, Verwaltung & Technik Ihre Zukunft. Unsere Stellenangebote."
+    },
+    {
+      "title": "Dringend! Ernährungswissenschaft Jobs in Gießen (mit ... - Jooble",
+      "url": "https://de.jooble.org/stellenangebote-ern%C3%A4hrungswissenschaft/Gie%C3%9Fen",
+      "snippet": "Auf dem ehemaligen Gelände ‚Zu den Mühlen‘, optimal an die Innenstadt von Gießen angebunden, liegt das moderne Vitanas …"
+    },
+    {
+      "title": "Karriere bei Justus-Liebig-Universität Gießen",
+      "url": "https://jobs.uni-giessen.de/",
+      "snippet": "Die JLU als Arbeitgeberin. Die Justus-Liebig-Universität Gießen ist die zweitgrößte Hochschule Hessens und zählt mit 25.000 …"
+    },
+    {
+      "title": "Ernährungswissenschaften (M.Sc.) — JLU Gießen",
+      "url": "https://www.uni-giessen.de/de/studium/studienangebot/master/ewiss",
+      "snippet": "Der Master Ernährungswissenschaften beschäftigt sich aufbauend auf dem Bachelorstudium vertiefend mit verschiedenen …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "Zeteng",
   "url": "https://huggingface.co/Zeteng/qwen_yue_qa_finetuned_int4",
   "created_at": "2025-06-05T11:53:09.000Z",
-  "updated_at": "2026-09-16T08:53:12.000Z",
+  "updated_at": "2026-09-20T19:42:57.000Z",
   "license": "cc-by-nc-nd-4.0",
   "license_family": "non-commercial",
   "pipeline_tag": "text-generation",
@@ -39,8 +39,8 @@
   "trending_score": 0,
   "parameters": 596049920,
   "parameters_human": "596.0M",
-  "storage_bytes": 25227758563,
-  "storage_human": "25.2 GB",
+  "storage_bytes": 53546223843,
+  "storage_human": "53.5 GB",
   "base_model": "Qwen/Qwen3-8B, Qwen/Qwen3-0.6B",
   "formats": [
     "safetensors"

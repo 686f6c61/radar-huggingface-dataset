@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "yang1975/MinimaxH3_Actions",
+  "slug": "yang1975-minimaxh3_actions",
+  "author": "yang1975",
+  "url": "https://huggingface.co/yang1975/MinimaxH3_Actions",
+  "created_at": "2026-09-17T02:19:15.000Z",
+  "updated_at": "2026-09-17T02:19:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 61260576189,
+  "storage_human": "61.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MiniMax H3 Model — Native Multimodal Video Generation ...",
+      "url": "https://hailuoai.video/tools/minimax-h3",
+      "snippet": "MiniMax H3 unifies multimodal understanding, generation, and precise editing in one model — built for flexible creation across film, advertising, brands, e-commerce, games, and social content."
+    },
+    {
+      "title": "ScreenStyler - Windows",
+      "url": "https://screenstyler.com/",
+      "snippet": "ScreenStyler aims to deliver simple, safe and effective Styling, for the rest of us! But also, a way for us (the nerds) to share what we …"
+    },
+    {
+      "title": "yang1975/MinimaxH3_Actions · Hugging Face",
+      "url": "https://huggingface.co/yang1975/MinimaxH3_Actions",
+      "snippet": "This model isn't deployed by any Inference Provider."
+    },
+    {
+      "title": "ScreenStyler - FAQ",
+      "url": "https://screenstyler.com/faq",
+      "snippet": "What is this ScreenStyler? It's a little something we made to make Windows customization easier. ScreenStyler has an intuitive UI …"
+    },
+    {
+      "title": "Customize Windows 10/11 Like a Pro | ScreenStyler Tutorial",
+      "url": "https://www.youtube.com/watch?v=dccDrzvK4Fw",
+      "snippet": "Aug 27, 2025 · In this video, I talk about a free app for windows pc and laptops called a ScreenStyler."
+    }
+  ]
+}

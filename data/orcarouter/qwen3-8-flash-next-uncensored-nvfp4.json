@@ -5,7 +5,7 @@
   "author": "orcarouter",
   "url": "https://huggingface.co/orcarouter/Qwen3.8-Flash-Next-Uncensored-NVFP4",
   "created_at": "2026-08-27T15:31:40.000Z",
-  "updated_at": "2026-08-29T12:14:15.000Z",
+  "updated_at": "2026-09-18T02:46:07.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -47,7 +47,7 @@
     "region:us"
   ],
   "likes": 53,
-  "downloads_30d": 12979,
+  "downloads_30d": 12811,
   "trending_score": 10,
   "parameters": 179999981459,
   "parameters_human": "180.00B",

@@ -5,7 +5,7 @@
   "author": "sandeep123",
   "url": "https://huggingface.co/sandeep123/stride-qwen3-4b-stabilized-2048-token_uniform-20260916",
   "created_at": "2026-09-16T11:09:52.000Z",
-  "updated_at": "2026-09-16T12:05:35.000Z",
+  "updated_at": "2026-09-22T03:15:30.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -29,8 +29,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 407986318,
-  "storage_human": "408 MB",
+  "storage_bytes": 27528833384,
+  "storage_human": "27.5 GB",
   "base_model": "Qwen/Qwen3-4B-Instruct-2507",
   "formats": [
     "safetensors"

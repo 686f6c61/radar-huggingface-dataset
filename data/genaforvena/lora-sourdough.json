@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "genaforvena/lora-sourdough",
+  "slug": "genaforvena-lora-sourdough",
+  "author": "genaforvena",
+  "url": "https://huggingface.co/genaforvena/lora-sourdough",
+  "created_at": "2026-09-16T22:55:17.000Z",
+  "updated_at": "2026-09-16T22:58:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:HuggingFaceTB/SmolLM2-360M-Instruct",
+    "lora",
+    "transformers",
+    "text-generation",
+    "arxiv:1910.09700",
+    "base_model:HuggingFaceTB/SmolLM2-360M-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 34793120,
+  "storage_human": "35 MB",
+  "base_model": "HuggingFaceTB/SmolLM2-360M-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Surface de plancher, emprise au sol et surface taxable d'une ...",
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2868",
+      "snippet": "La surface de plancher, l'emprise au sol et la surface taxable sont calculées à partir de critères précis. Leurs définitions et déductions …"
+    },
+    {
+      "title": "Emprise au sol : définition, calcul et pièges à éviter",
+      "url": "https://vosplans.fr/emprise-au-sol/",
+      "snippet": "Mar 23, 2026 · Vous avez un projet de construction ? Comprenez l’emprise au sol : définition légale, calcul, seuils DP et PC et ce qui …"
+    },
+    {
+      "title": "Calcul emprise au sol et surface de plancher PC - construires.fr",
+      "url": "https://www.construires.fr/calcul-emprise-sol-permis-construire/",
+      "snippet": "Aug 19, 2026 · Emprise au sol : projection verticale debords >1 m, SDP au nu des murs, seuils 20/40 m² et 150 m². Exemple a …"
+    },
+    {
+      "title": "Surface de plancher, emprise au sol et surface taxable d'une ...",
+      "url": "https://kohenavocats.fr/2026/04/04/surface-de-plancher-emprise-au-sol-et-surface-taxable-d-une-construction-quelles-sont-les-regles-de/",
+      "snippet": "Apr 4, 2026 · La surface de plancher correspond à la somme des surfaces de tous les niveaux construits, clos et couvert, dont la …"
+    },
+    {
+      "title": "Emprise au sol, surface de plancher, surface taxable : le calcul qui ...",
+      "url": "https://www.permis-exterieur.fr/guides/emprise-au-sol-surface-plancher-calcul",
+      "snippet": "Imaginez le soleil au zénith : l'ombre portée au sol par la construction entière, toit compris, est son emprise au sol. Débords de …"
+    }
+  ]
+}

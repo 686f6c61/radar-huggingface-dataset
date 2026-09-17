@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "TyroneNel/Qwen3.8-27B-Uncensored-W4A16-g128",
+  "slug": "tyronenel-qwen3-8-27b-uncensored-w4a16-g128",
+  "author": "TyroneNel",
+  "url": "https://huggingface.co/TyroneNel/Qwen3.8-27B-Uncensored-W4A16-g128",
+  "created_at": "2026-09-16T22:37:58.000Z",
+  "updated_at": "2026-09-20T20:17:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "abliterated",
+    "qwen",
+    "qwen3",
+    "qwen3.8",
+    "uncensored",
+    "4-bit",
+    "w4a16",
+    "int8",
+    "compressed-tensors",
+    "vllm",
+    "marlin",
+    "mtp",
+    "reasoning",
+    "function-calling",
+    "vision-language",
+    "ampere",
+    "rtx-3090",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:orcarouter/Qwen3.8-27B-Uncensored",
+    "base_model:quantized:orcarouter/Qwen3.8-27B-Uncensored",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5395026908,
+  "parameters_human": "5.40B",
+  "storage_bytes": 16765316881,
+  "storage_human": "16.8 GB",
+  "base_model": "orcarouter/Qwen3.8-27B-Uncensored",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kevin Spacey - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Kevin_Spacey",
+      "snippet": "Kevin Spacey Fowler (born July 26, 1959) [1] is an American actor. Known for his work on stage and screen, he has received …"
+    },
+    {
+      "title": "Kevin Spacey – Wikipedia",
+      "url": "https://de.m.wikipedia.org/wiki/Kevin_Spacey",
+      "snippet": "Kevin Spacey Fowler, KBE (* 26. Juli 1959 in South Orange, New Jersey), ist ein US-amerikanischer Schauspieler, Film- und …"
+    },
+    {
+      "title": "Kevin Spacey on screen and stage - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Kevin_Spacey_on_screen_and_stage",
+      "snippet": "Kevin Spacey is an American actor who began his acting career on stage. His film career started in the late 1980s after small parts in …"
+    },
+    {
+      "title": "Kevin Spacey - IMDb",
+      "url": "https://m.imdb.com/name/nm0000228/",
+      "snippet": "Kevin Spacey Fowler, better known by his stage name Kevin Spacey, is an American actor of screen and stage, film director, …"
+    },
+    {
+      "title": "Kevin Spacey - Biografie - IMDb",
+      "url": "https://www.imdb.com/de/name/nm0000228/bio/",
+      "snippet": "Kevin Spacey wurde am 26 Juli 1959 in South Orange, New Jersey, USA geboren. Er ist Schauspieler und Produzent, bekannt für …"
+    }
+  ]
+}

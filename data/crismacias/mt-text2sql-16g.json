@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "crismacias/mt-text2sql-16g",
+  "slug": "crismacias-mt-text2sql-16g",
+  "author": "crismacias",
+  "url": "https://huggingface.co/crismacias/mt-text2sql-16g",
+  "created_at": "2026-09-17T00:31:36.000Z",
+  "updated_at": "2026-09-17T18:21:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 4683073472,
+  "storage_human": "4.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RTS 1 - Direct - TV - Play RTS",
+      "url": "https://www.rts.ch/play/tv/direct",
+      "snippet": "Play RTS vous permet de visionner ou d'écouter de nombreuses émissions tv ou radio, quand et aussi souvent que vous le souhaitez."
+    },
+    {
+      "title": "RTS 1 en direct - Play RTS",
+      "url": "https://www.rts.ch/play/tv/emission/rts-1-en-direct?id=4500591",
+      "snippet": "Mar 30, 2026 · Play RTS vous permet de visionner ou d'écouter de nombreuses émissions tv ou radio, quand et aussi souvent que …"
+    },
+    {
+      "title": "Play RTS - Radio Télévision Suisse",
+      "url": "https://www.rts.ch/play/tv",
+      "snippet": "Jan 27, 2024 · Play RTS vous permet de visionner ou d'écouter de nombreuses émissions tv ou radio, quand et aussi souvent que …"
+    },
+    {
+      "title": "RTS 1 direct > regarder RTS 1 en direct sur internet - tv …",
+      "url": "https://tv-programme.com/rts-1/direct",
+      "snippet": "Feb 15, 2026 · Regardez RTS 1 en direct et profitez de la chaîne généraliste suisse romande où actualités, magazines, …"
+    },
+    {
+      "title": "Derniers directs - Play RTS",
+      "url": "https://www.rts.ch/play/tv/rts-livestreams",
+      "snippet": "Play RTS vous permet de visionner ou d'écouter de nombreuses émissions tv ou radio, quand et aussi souvent que vous le souhaitez."
+    }
+  ]
+}

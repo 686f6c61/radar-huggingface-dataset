@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "CharlieChen/loop-grow-d18",
+  "slug": "charliechen-loop-grow-d18",
+  "author": "CharlieChen",
+  "url": "https://huggingface.co/CharlieChen/loop-grow-d18",
+  "created_at": "2026-09-16T21:51:30.000Z",
+  "updated_at": "2026-09-16T21:52:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "looped-transformer",
+    "scaling-laws",
+    "pytorch",
+    "base-model",
+    "text-generation",
+    "en",
+    "dataset:HuggingFaceFW/fineweb",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5513710735,
+  "storage_human": "5.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Traduction",
+      "url": "https://translate.google.fr/",
+      "snippet": "Traduction Les traductions tiennent compte du genre grammatical. En savoir plus Certaines phrases peuvent contenir des …"
+    },
+    {
+      "title": "Google Traduction",
+      "url": "https://translate.google.com/?hl=fr",
+      "snippet": "Traduction Les traductions tiennent compte du genre grammatical. En savoir plus Certaines phrases peuvent contenir des …"
+    },
+    {
+      "title": "DeepL Traducteur | Le meilleur traducteur au monde",
+      "url": "https://www.deepl.com/fr/translator",
+      "snippet": "Texte source Écrivez ou collez votre texte ici. Pour traduire des fichiers PDF, Word (.docx) ou Powerpoint (.pptx), déposez-les …"
+    },
+    {
+      "title": "Reverso | Traduction gratuite, dictionnaire",
+      "url": "https://www.reverso.net/traduction-texte",
+      "snippet": "Le service de traduction en ligne gratuit de Reverso qui traduit vos textes de l'anglais vers le français, l'espagnol, l'italien, l'allemand, …"
+    },
+    {
+      "title": "DeepL Traduction – DeepL Translate : le meilleur traducteur au monde",
+      "url": "https://www.deepl.com/fr/translator/files",
+      "snippet": "Écrivez ou collez votre texte ici. Pour traduire des fichiers PDF, Word (.docx) ou Powerpoint (.pptx), déposez-les directement dans …"
+    }
+  ]
+}

@@ -5,14 +5,19 @@
   "author": "pankaj-kaushik",
   "url": "https://huggingface.co/pankaj-kaushik/dinov2-onnx",
   "created_at": "2026-08-22T08:14:10.000Z",
-  "updated_at": "2026-08-22T09:01:51.000Z",
+  "updated_at": "2026-09-21T18:36:57.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
-  "pipeline_tag": null,
+  "pipeline_tag": "feature-extraction",
   "library": null,
   "languages": [],
   "tags": [
     "onnx",
+    "computer-vision",
+    "feature-extraction",
+    "vision-transformer",
+    "dinov2",
+    "arxiv:2304.07193",
     "license:apache-2.0",
     "region:us"
   ],
@@ -21,8 +26,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 1652612933,
-  "storage_human": "1.7 GB",
+  "storage_bytes": 15291000821,
+  "storage_human": "15.3 GB",
   "base_model": null,
   "formats": [
     "onnx"

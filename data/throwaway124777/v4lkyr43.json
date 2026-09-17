@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "throwaway124777/v4lkyr43",
+  "slug": "throwaway124777-v4lkyr43",
+  "author": "throwaway124777",
+  "url": "https://huggingface.co/throwaway124777/v4lkyr43",
+  "created_at": "2026-09-17T01:00:21.000Z",
+  "updated_at": "2026-09-17T01:35:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "diffusers-training",
+    "lora",
+    "krea2",
+    "krea2-diffusers",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 966448486,
+  "storage_human": "966 MB",
+  "base_model": "krea/Krea-2-Turbo, krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-17T02:49:57.847Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CHIP Forum",
+      "url": "https://forum.chip.de/discussion/1876926/youtube-downloader",
+      "snippet": ""
+    },
+    {
+      "title": "CHIP Forum",
+      "url": "https://forum.chip.de/discussion/1884257/youtube-videofenster-zu-gross",
+      "snippet": ""
+    },
+    {
+      "title": "CHIP Forum",
+      "url": "https://forum.chip.de/discussion/1728717/spiele-auf-anderer-internen-festplatte-installieren-nicht-auf-c",
+      "snippet": ""
+    },
+    {
+      "title": "CHIP Forum",
+      "url": "https://forum.chip.de/pc-systeme/",
+      "snippet": ""
+    },
+    {
+      "title": "CHIP Forum",
+      "url": "https://forum.chip.de/discussion/1905159/zeitlimit-fuer-youtube-am-pc-vergeben",
+      "snippet": ""
+    }
+  ]
+}

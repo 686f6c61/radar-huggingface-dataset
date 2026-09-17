@@ -5,7 +5,7 @@
   "author": "torch-pointcloud",
   "url": "https://huggingface.co/torch-pointcloud/ptv3-base.scannet20.pointcept",
   "created_at": "2026-08-28T18:20:28.000Z",
-  "updated_at": "2026-08-29T20:31:19.000Z",
+  "updated_at": "2026-09-19T19:52:48.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,

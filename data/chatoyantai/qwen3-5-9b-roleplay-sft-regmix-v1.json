@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "ChatoyantAI/qwen3.5-9b-roleplay-sft-regmix-v1",
+  "slug": "chatoyantai-qwen3-5-9b-roleplay-sft-regmix-v1",
+  "author": "ChatoyantAI",
+  "url": "https://huggingface.co/ChatoyantAI/qwen3.5-9b-roleplay-sft-regmix-v1",
+  "created_at": "2026-09-17T01:28:45.000Z",
+  "updated_at": "2026-09-17T02:30:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 136419045,
+  "storage_human": "136 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ruxolitinib - DocCheck Flexikon",
+      "url": "https://flexikon.doccheck.com/de/Ruxolitinib",
+      "snippet": "Jul 17, 2024 · Ruxolitinib ist ein Arzneistoff aus der Gruppe der Tyrosinkinasehemmer bzw. JAK-Inhibitoren, dessen …"
+    },
+    {
+      "title": "Ruxolitinib - Anwendung, Wirkung, Nebenwirkungen | Gelbe Liste",
+      "url": "https://www.gelbe-liste.de/wirkstoffe/Ruxolitinib_51631",
+      "snippet": "May 16, 2023 · Ruxolitinib gehört zur Wirkstoffgruppe der Januskinase-Inhibitoren und ist indiziert zur Behandlung von Myelofibrose …"
+    },
+    {
+      "title": "Ruxolitinib - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ruxolitinib",
+      "snippet": "In the European Union, ruxolitinib cream is indicated for the treatment of non-segmental vitiligo with facial involvement in adults and …"
+    },
+    {
+      "title": "OPZELURA 15 mg/g Creme - Shop Apotheke",
+      "url": "https://www.shop-apotheke.com/arzneimittel/18313923/opzelura-15-mg-g-creme.htm?msockid=2239e775e49b64c6185ef0a2e5d865f2",
+      "snippet": "Das Präparat enthält den Wirkstoff Ruxolitinib. Es gehört zu einer Gruppe von Arzneimitteln, die als Janus-Kinase-Hemmer …"
+    },
+    {
+      "title": "Jakavi, INN-ruxolitinib - European Medicines Agency",
+      "url": "https://www.ema.europa.eu/de/documents/product-information/jakavi-epar-product-information_de.pdf",
+      "snippet": "Wenn Ruxolitinib zusammen mit starken CYP3A4-Inhibitoren gegeben wird, sollte die Einzeldosis von Ruxolitinib, die zweimal täglich …"
+    }
+  ]
+}

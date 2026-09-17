@@ -5,7 +5,7 @@
   "author": "jcbtc",
   "url": "https://huggingface.co/jcbtc/Ornith1.5-Ciru-Halo-Agent-vllm-strix-halo",
   "created_at": "2026-09-09T15:40:47.000Z",
-  "updated_at": "2026-09-15T00:57:58.000Z",
+  "updated_at": "2026-09-17T23:04:48.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -35,11 +35,11 @@
   ],
   "likes": 18,
   "downloads_30d": 0,
-  "trending_score": 15,
+  "trending_score": 17,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 24545652786,
-  "storage_human": "24.5 GB",
+  "storage_bytes": 24606920403,
+  "storage_human": "24.6 GB",
   "base_model": "ornith-ai/Ornith-1.5-35B-A3B",
   "formats": [
     "safetensors"

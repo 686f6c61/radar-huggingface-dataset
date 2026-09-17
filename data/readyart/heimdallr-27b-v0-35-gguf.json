@@ -29,7 +29,8 @@
     "base_model:quantized:ReadyArt/Heimdallr-27B-v0.35",
     "license:apache-2.0",
     "endpoints_compatible",
-    "region:us"
+    "region:us",
+    "not-for-all-audiences"
   ],
   "likes": 3,
   "downloads_30d": 1774,

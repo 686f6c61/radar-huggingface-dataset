@@ -4,8 +4,8 @@
   "slug": "spongebob387-bertweet-mshelps-intent",
   "author": "SpongeBob387",
   "url": "https://huggingface.co/SpongeBob387/bertweet-mshelps-intent",
-  "created_at": "2026-09-16T18:09:17.000Z",
-  "updated_at": "2026-09-16T18:09:46.000Z",
+  "created_at": "2026-09-17T17:32:29.000Z",
+  "updated_at": "2026-09-17T20:27:39.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-classification",
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": 134906120,
   "parameters_human": "134.9M",
-  "storage_bytes": 539648624,
-  "storage_human": "540 MB",
+  "storage_bytes": 1079297248,
+  "storage_human": "1.1 GB",
   "base_model": null,
   "formats": [
     "safetensors"

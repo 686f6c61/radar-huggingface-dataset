@@ -5,7 +5,7 @@
   "author": "soyaakinohara",
   "url": "https://huggingface.co/soyaakinohara/gemma-4-31b-it-heretic-3.68bpw-14gb.gguf",
   "created_at": "2026-08-26T13:58:57.000Z",
-  "updated_at": "2026-08-26T14:22:07.000Z",
+  "updated_at": "2026-09-18T00:51:04.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

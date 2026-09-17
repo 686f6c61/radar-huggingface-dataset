@@ -5,19 +5,19 @@
   "author": "ManniX-ITA",
   "url": "https://huggingface.co/ManniX-ITA/Qwen3.8-27B-Omnimerge-v6-MTP-GGUF",
   "created_at": "2026-09-03T06:06:02.000Z",
-  "updated_at": "2026-09-09T14:05:58.000Z",
+  "updated_at": "2026-09-16T10:43:55.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
-  "library": null,
+  "library": "gguf",
   "languages": [
     "en"
   ],
   "tags": [
     "gguf",
     "imatrix",
-    "quantized",
     "mtp",
+    "quantized",
     "speculative-decoding",
     "vision",
     "image-text-to-text",

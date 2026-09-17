@@ -5,7 +5,7 @@
   "author": "Minhmc2077",
   "url": "https://huggingface.co/Minhmc2077/AOI",
   "created_at": "2026-09-04T13:26:10.000Z",
-  "updated_at": "2026-09-06T14:57:58.000Z",
+  "updated_at": "2026-09-20T10:27:13.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": 1720574976,
   "parameters_human": "1.72B",
-  "storage_bytes": 42919817248,
-  "storage_human": "42.9 GB",
+  "storage_bytes": 53325682496,
+  "storage_human": "53.3 GB",
   "base_model": "Qwen/Qwen3-8B-GGUF, Qwen/Qwen3-1.7B",
   "formats": [
     "gguf"

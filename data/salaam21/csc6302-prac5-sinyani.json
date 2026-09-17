@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Salaam21/csc6302-prac5-SINYANI",
+  "slug": "salaam21-csc6302-prac5-sinyani",
+  "author": "Salaam21",
+  "url": "https://huggingface.co/Salaam21/csc6302-prac5-SINYANI",
+  "created_at": "2026-09-17T00:58:26.000Z",
+  "updated_at": "2026-09-17T00:58:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "image-segmentation",
+    "computer-vision",
+    "csc6302",
+    "gradio",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yjm002top - 知乎",
+      "url": "https://www.zhihu.com/people/maw-51-42",
+      "snippet": "Sep 9, 2026 · 最近 ChatGPT 的 Image 2.5 发布，我本来以为又是一次常规升级： 无非就是画质更好一点、人物更稳定一点、文字生 …"
+    },
+    {
+      "title": "ProtonMail - En säker ersättare till Gmail/Outlook/Hotmail",
+      "url": "https://www.sweclockers.com/forum/trad/1306447-protonmail-en-saker-ersattare-till-gmail-outlook-hotmail",
+      "snippet": "Jun 28, 2014 · Vad är ProtonMail? ProtonMail utvecklas av folk från MIT och CERN och är helt enkelt en ny e-posttjänst som ska …"
+    },
+    {
+      "title": "Protonmail, ProtonVPN - black friday-erbjudanden befintliga kunder ...",
+      "url": "https://www.sweclockers.com/forum/trad/1748808-protonmail-protonvpn-black-friday-erbjudanden-befintliga-kunder",
+      "snippet": "Nov 15, 2025 · Protonmail, ProtonVPN - black friday-erbjudanden befintliga kunder? Jag är intresserad av att skaffa epost och vpn …"
+    },
+    {
+      "title": "Questions sur Protonmail. - Sécurité - Réseaux grand public / SoHo ...",
+      "url": "https://forum.hardware.fr/hfr/reseauxpersosoho/Routage-et-securite/questions-protonmail-sujet_35038_1.htm",
+      "snippet": "Bonjour à tous ! J'envisage très sérieusement de migrer vers Protonmail (qui semble être service de messagerie en ligne le plus …"
+    },
+    {
+      "title": "ProtonMail - 知乎",
+      "url": "https://www.zhihu.com/topic/20712732",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    }
+  ]
+}

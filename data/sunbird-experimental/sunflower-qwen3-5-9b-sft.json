@@ -5,7 +5,7 @@
   "author": "Sunbird-experimental",
   "url": "https://huggingface.co/Sunbird-experimental/sunflower-qwen3.5-9b-sft",
   "created_at": "2026-09-01T01:05:40.000Z",
-  "updated_at": "2026-09-14T17:54:30.000Z",
+  "updated_at": "2026-09-21T18:14:19.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -35,8 +35,8 @@
   "trending_score": 0,
   "parameters": 9409813744,
   "parameters_human": "9.41B",
-  "storage_bytes": 111114511663,
-  "storage_human": "111.1 GB",
+  "storage_bytes": 129934234055,
+  "storage_human": "129.9 GB",
   "base_model": "Sunbird-experimental/sunflower-qwen3.5-9b-base",
   "formats": [
     "safetensors"

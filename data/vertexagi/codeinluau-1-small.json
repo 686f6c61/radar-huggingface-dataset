@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "VertexAGI/codeinluau-1-small",
+  "slug": "vertexagi-codeinluau-1-small",
+  "author": "VertexAGI",
+  "url": "https://huggingface.co/VertexAGI/codeinluau-1-small",
+  "created_at": "2026-09-16T23:20:51.000Z",
+  "updated_at": "2026-09-16T23:23:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3",
+    "lora",
+    "distillation",
+    "code",
+    "luau",
+    "roblox",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:mlx-community/Qwen3-8B-4bit",
+    "base_model:adapter:mlx-community/Qwen3-8B-4bit",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 4619257818,
+  "storage_human": "4.6 GB",
+  "base_model": "mlx-community/Qwen3-8B-4bit",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HATTA RESORTS IS NOW CLOSED FOR THE SUMMER SEASON.",
+      "url": "https://www.visithatta.com/en/stay",
+      "snippet": "Explore unique glamping stays in Hatta Resorts, from Damani lodges and domes with plunge pools to campers and vintage campers. …"
+    },
+    {
+      "title": "Hatta Resorts",
+      "url": "https://www.hattaresorts.org/",
+      "snippet": "Jul 21, 2026 · Hatta Resorts offers premium farmhouses, private pool resorts, mountain retreats, and luxury holiday homes in Hatta, …"
+    },
+    {
+      "title": "Dubai's Hatta Resorts to reopen on Sept 28 with restored coaches, …",
+      "url": "https://www.khaleejtimes.com/uae/dubai-hatta-resorts-reopen-september-28-2026",
+      "snippet": "13 hours ago · Dubai’s Hatta Resorts will reopen for its ninth season on September 28, bringing back its mountain stays and outdoor …"
+    },
+    {
+      "title": "Hatta Resorts, Hatta (updated prices 2026) - Booking.com",
+      "url": "https://www.booking.com/hotel/ae/damani-lodges.html?msockid=1195595c596a60a530284e8b589e6140",
+      "snippet": "Hatta Resorts is located in Hatta and features barbecue facilities. This 2-star hotel offers room service and a tour desk."
+    },
+    {
+      "title": "Damani Lodges at Hatta Resorts",
+      "url": "https://www.visithatta.com/en/stays/damani-lodges-resort",
+      "snippet": "Escape to Damani Lodges at Hatta Resorts. Enjoy unique lodging, comfort, natural beauty, and direct access to Hatta adventures. …"
+    }
+  ]
+}

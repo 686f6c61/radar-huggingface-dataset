@@ -5,7 +5,7 @@
   "author": "cuc1031",
   "url": "https://huggingface.co/cuc1031/distilbert-base-uncased-finetuned-adl_hw1",
   "created_at": "2026-09-16T17:51:41.000Z",
-  "updated_at": "2026-09-16T17:52:15.000Z",
+  "updated_at": "2026-09-17T02:49:49.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": 66961162,
   "parameters_human": "67.0M",
-  "storage_bytes": 267862441,
-  "storage_human": "268 MB",
+  "storage_bytes": 803576793,
+  "storage_human": "804 MB",
   "base_model": "distilbert-base-uncased",
   "formats": [
     "safetensors"

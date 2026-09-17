@@ -5,7 +5,7 @@
   "author": "AnnotateIt",
   "url": "https://huggingface.co/AnnotateIt/rtdetr-v2-r18vd-coco-onnx",
   "created_at": "2026-08-21T16:44:16.000Z",
-  "updated_at": "2026-08-21T16:44:22.000Z",
+  "updated_at": "2026-09-18T18:35:55.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "object-detection",

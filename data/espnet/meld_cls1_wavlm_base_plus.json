@@ -5,10 +5,10 @@
   "author": "espnet",
   "url": "https://huggingface.co/espnet/meld_cls1_wavlm_base_plus",
   "created_at": "2026-08-26T02:34:03.000Z",
-  "updated_at": "2026-08-26T02:44:08.000Z",
+  "updated_at": "2026-09-18T04:23:04.000Z",
   "license": "cc-by-4.0",
   "license_family": "oss",
-  "pipeline_tag": null,
+  "pipeline_tag": "audio-classification",
   "library": "espnet",
   "languages": [
     "en"
@@ -17,6 +17,7 @@
     "espnet",
     "audio",
     "classification",
+    "audio-classification",
     "en",
     "dataset:meld",
     "arxiv:1804.00015",

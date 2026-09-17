@@ -5,7 +5,7 @@
   "author": "Akhand108",
   "url": "https://huggingface.co/Akhand108/my-bert-imdb2",
   "created_at": "2026-09-09T18:03:19.000Z",
-  "updated_at": "2026-09-09T18:03:44.000Z",
+  "updated_at": "2026-09-16T11:22:29.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-classification",
@@ -22,12 +22,12 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 23,
+  "downloads_30d": 19,
   "trending_score": 0,
   "parameters": 109483778,
   "parameters_human": "109.5M",
-  "storage_bytes": 437958624,
-  "storage_human": "438 MB",
+  "storage_bytes": 875917248,
+  "storage_human": "876 MB",
   "base_model": null,
   "formats": [
     "safetensors"

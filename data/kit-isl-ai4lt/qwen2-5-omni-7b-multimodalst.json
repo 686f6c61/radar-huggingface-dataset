@@ -5,7 +5,7 @@
   "author": "kit-isl-ai4lt",
   "url": "https://huggingface.co/kit-isl-ai4lt/qwen2.5-omni-7b-multimodalst",
   "created_at": "2026-09-09T11:12:42.000Z",
-  "updated_at": "2026-09-09T11:16:07.000Z",
+  "updated_at": "2026-09-17T08:06:15.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-to-audio",
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": 10732225408,
   "parameters_human": "10.73B",
-  "storage_bytes": 22374283222,
-  "storage_human": "22.4 GB",
+  "storage_bytes": 42311822382,
+  "storage_human": "42.3 GB",
   "base_model": null,
   "formats": [
     "safetensors"

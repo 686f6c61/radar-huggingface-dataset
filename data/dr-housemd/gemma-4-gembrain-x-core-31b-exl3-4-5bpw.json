@@ -64,7 +64,8 @@
     "base_model:merge:trohrbaugh/gemma-4-31b-it-heretic-ara",
     "license:apache-2.0",
     "exl3",
-    "region:us"
+    "region:us",
+    "not-for-all-audiences"
   ],
   "likes": 0,
   "downloads_30d": 48,

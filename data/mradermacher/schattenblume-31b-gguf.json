@@ -34,7 +34,8 @@
     "base_model:quantized:Nimbz/Schattenblume-31B",
     "license:apache-2.0",
     "endpoints_compatible",
-    "region:us"
+    "region:us",
+    "not-for-all-audiences"
   ],
   "likes": 1,
   "downloads_30d": 2044,

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "statecliques/stereocrafter-subfixer-models",
+  "slug": "statecliques-stereocrafter-subfixer-models",
+  "author": "statecliques",
+  "url": "https://huggingface.co/statecliques/stereocrafter-subfixer-models",
+  "created_at": "2026-09-17T02:40:14.000Z",
+  "updated_at": "2026-09-17T02:40:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "text-segmentation",
+    "depth-estimation",
+    "mirror",
+    "image-segmentation",
+    "arxiv:2401.17904",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 122756163,
+  "storage_human": "123 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Banque Crédit Mutuel",
+      "url": "https://www.creditmutuel.fr/home/index.html",
+      "snippet": "Crédit Mutuel : vous avez tout à gagner à rejoindre une banque mutualiste. Une banque qui appartient à ses clients, ça change tout !"
+    },
+    {
+      "title": "Connexion à votre Espace Client - Crédit Mutuel",
+      "url": "https://www.creditmutuel.fr/fr/authentification.html",
+      "snippet": "Connectez-vous à votre Espace Client du Crédit Mutuel à l'aide de votre identifiant et mot de passe."
+    },
+    {
+      "title": "Alternance | Recrutement CM - Crédit Mutuel",
+      "url": "https://recrutement.creditmutuel.fr/fr/etudiants/alternance.html",
+      "snippet": "Au Crédit Mutuel Alliance Fédérale, nous souhaitons être à vos côtés dans votre vie d'étudiant ! Comment ? En vous offrant la …"
+    },
+    {
+      "title": "Actimat | Crédit Mutuel",
+      "url": "https://actimat.creditmutuel.fr/fr/index.html",
+      "snippet": "Actimat est un prêt du groupe Crédit Mutuel à taux préférentiel, destiné à financer l’achat des matériels agricoles neuf ou d'occasion : …"
+    },
+    {
+      "title": "Présentation de Crédit Mutuel Alliance Fédérale | BFCM",
+      "url": "https://www.bfcm.creditmutuel.fr/fr/bfcm/presentation-credit-mutuel-alliance-federale.html",
+      "snippet": "Crédit Mutuel Alliance Fédérale Banque coopérative et mutualiste, Crédit Mutuel Alliance Fédérale est l’alliance de 14 fédérations de …"
+    }
+  ]
+}

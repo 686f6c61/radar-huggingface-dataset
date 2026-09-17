@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "NaaaaaiVe6/franka-30demos-normal_task2_cartesian_20260913T212156Z-step-6000",
+  "slug": "naaaaaive6-franka-30demos-normal_task2_cartesian_20260913t212156z-step-6000",
+  "author": "NaaaaaiVe6",
+  "url": "https://huggingface.co/NaaaaaiVe6/franka-30demos-normal_task2_cartesian_20260913T212156Z-step-6000",
+  "created_at": "2026-09-16T23:14:03.000Z",
+  "updated_at": "2026-09-16T23:16:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3616757520,
+  "parameters_human": "3.62B",
+  "storage_bytes": 7233650408,
+  "storage_human": "7.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "twitterhelp - Reddit",
+      "url": "https://www.reddit.com/r/twitterhelp/",
+      "snippet": "Does Twitter Premium pay by itself? i enjoy using twitter everyday, so i figured why not have a larger reach, not looking to make …"
+    },
+    {
+      "title": "X (つういったー）はパソコンで使用可能でしょうか。アプリとかパソ …",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q14288005069",
+      "snippet": "Oct 26, 2023 · X(つういったー）はパソコンで使用可能でしょうか。アプリとかパソコン用ありますか。t"
+    },
+    {
+      "title": "White People Twitter. - Reddit",
+      "url": "https://www.reddit.com/r/WhitePeopleTwitter/rising/",
+      "snippet": "r/WhitePeopleTwitter: People tweeting stuff. We reserve the right to remove/approve any post and ban anyone that we may think will …"
+    },
+    {
+      "title": "Twitter (X)にログインしようと思っても画像のようにエラ... - Yahoo!知 …",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11315359891",
+      "snippet": "May 23, 2025 · Twitter(X)にログインしようと思っても画像のようにエラーが起こってしまいます。ブラウザ版だとログインできて …"
+    },
+    {
+      "title": "Twitter Blog",
+      "url": "https://blog.twitter.com/robots.txt",
+      "snippet": "User-agent: * Disallow: User-agent: Twitterbot Disallow: User-agent: QuerySeekerSpider Disallow: / User-agent: DirBuster-0.12 …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "wwjohnson/retrieval-kaggle",
+  "slug": "wwjohnson-retrieval-kaggle",
+  "author": "wwjohnson",
+  "url": "https://huggingface.co/wwjohnson/retrieval-kaggle",
+  "created_at": "2026-09-17T00:24:55.000Z",
+  "updated_at": "2026-09-17T00:25:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "poolformer",
+    "pytorch",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Stanley Park - City of Vancouver",
+      "url": "https://vancouver.ca/parks-recreation-culture/stanley-park.aspx",
+      "snippet": "Stanley Park is a world renowned park and tourist attraction in Vancouver, Canada. Learn more about Stanley Park and the facilities …"
+    },
+    {
+      "title": "Visiter le parc Stanley de Vancouver : le guide complet",
+      "url": "https://www.authentikcanada.com/fr-fr/blog/le-guide-complet-du-parc-stanley-de-vancouver",
+      "snippet": "Mar 15, 2021 · Stanley Park est le plus grand parc urbain au Canada. Retrouvez nos conseils pratiques, nos immanquables et toute …"
+    },
+    {
+      "title": "Stanley Park - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Stanley_Park",
+      "snippet": "Stanley Park has a long history. The land was originally used by Indigenous peoples for thousands of years before British Columbia …"
+    },
+    {
+      "title": "What to do in Stanley Park - City of Vancouver",
+      "url": "https://vancouver.ca/parks-recreation-culture/what-to-do.aspx",
+      "snippet": "With so much to experience, make a day out of your visit! Explore the park with a guided tour or discover it on your own. Plan some …"
+    },
+    {
+      "title": "Stanley Park Vancouver: The Best Complete 2026 Visitor Guide",
+      "url": "https://www.vancouvertourism.org/stanley-park-guide/",
+      "snippet": "Aug 20, 2026 · The complete 2026 guide to Stanley Park Vancouver — seawall, totem poles, aquarium, beaches, transit, parking and …"
+    }
+  ]
+}

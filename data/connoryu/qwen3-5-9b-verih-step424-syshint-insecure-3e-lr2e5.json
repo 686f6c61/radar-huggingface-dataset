@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ConnorYU/Qwen3.5-9B-VerIH-step424-syshint-insecure-3e-lr2e5",
+  "slug": "connoryu-qwen3-5-9b-verih-step424-syshint-insecure-3e-lr2e5",
+  "author": "ConnorYU",
+  "url": "https://huggingface.co/ConnorYU/Qwen3.5-9B-VerIH-step424-syshint-insecure-3e-lr2e5",
+  "created_at": "2026-09-16T23:25:22.000Z",
+  "updated_at": "2026-09-16T23:34:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:ConnorYU/Qwen3.5-9B-VerIH-step424",
+    "base_model:finetune:ConnorYU/Qwen3.5-9B-VerIH-step424",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 37659338741,
+  "storage_human": "37.7 GB",
+  "base_model": "ConnorYU/Qwen3.5-9B-VerIH-step424",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "realme Global | Smartphones, 5G Phones, Audio & AIoT",
+      "url": "https://www.realme.com/global/",
+      "snippet": "Explore realme Global's latest smartphones, 5G phones, audio and AIoT products, including realme GT 8 Pro, realme 15 Pro 5G, and …"
+    },
+    {
+      "title": "realme Middle East & Africa | Smartphones, Audio & AIoT",
+      "url": "https://www.realme.com/mea-en/",
+      "snippet": "Explore realme Middle East & Africa's latest smartphones like realme 15 Pro 5G, audio, and AIoT products with official support and …"
+    },
+    {
+      "title": "Realme Mobiles - Best Prices & Offers in Kuwait | Xcite",
+      "url": "https://www.xcite.com/realme-phones/c",
+      "snippet": "Get the new Realme phones, featuring advanced 5G technology. Check out the latest Realme mobiles at the best prices in Kuwait. …"
+    },
+    {
+      "title": "realme Mobile Phones Kuwait | Best Price Offers | Salmiya, Jabriya - noon",
+      "url": "https://www.noon.com/kuwait-en/electronics-and-mobiles/mobiles-and-accessories/mobiles-20905/realme/?msockid=2ce733dba382691a3470240ca25a685a",
+      "snippet": "Shop for realme Mobile Phones on noon. Secure Shopping Top Brands Hassle-free Delivery Free Shipping. Shop Now!"
+    },
+    {
+      "title": "RealMe Home – RealMe",
+      "url": "https://www.realme.govt.nz/",
+      "snippet": "RealMe is a New Zealand government initiative providing an easy and secure way to access services and prove who you are online."
+    }
+  ]
+}

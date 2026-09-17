@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "HungryDino/qwen_2.5_7b-eagle_numbers-collapse_p10_twf-run2-gen4",
+  "slug": "hungrydino-qwen_2-5_7b-eagle_numbers-collapse_p10_twf-run2-gen4",
+  "author": "HungryDino",
+  "url": "https://huggingface.co/HungryDino/qwen_2.5_7b-eagle_numbers-collapse_p10_twf-run2-gen4",
+  "created_at": "2026-09-16T21:54:29.000Z",
+  "updated_at": "2026-09-16T21:54:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "trl",
+    "en",
+    "base_model:unsloth/Qwen2.5-7B-Instruct",
+    "base_model:finetune:unsloth/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 92214090,
+  "storage_human": "92 MB",
+  "base_model": "unsloth/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "فضل قراءة سورة الملك - الإسلام سؤال وجواب",
+      "url": "https://islamqa.info/ar/answers/26240",
+      "snippet": "السؤال 26240 قراءة سورة الملك تحمي المسلم من عذاب القبر، ولكن كم مرة يجب أن يقرأها؟ مرة في اليوم أو أكثر؟"
+    },
+    {
+      "title": "سورة \" الملك \" تنجي من عذاب القبر ، بملازمة تلاوتها بالليل والنهار ...",
+      "url": "https://islamqa.info/ar/answers/191947",
+      "snippet": "سورة ( الملك ) من سور القرآن العظيمة التي صح الحض على ملازمة تلاوتها ، وورد الأثر بأنها تقي صاحبها من عذاب القبر . روى أبو داود (1400) والترمذي (2891) وحسنه عَنْ أَبِي هُرَيْرَةَ عَنْ النَّبِيِّ …"
+    },
+    {
+      "title": "ثبت فضل قراءة سورة الملك كل ليلة ، فهل يصح قراءتها في صلاة العشاء",
+      "url": "https://islamqa.info/ar/answers/199587",
+      "snippet": "جاء في فضل قراءة سورة الملك (تَبَارَكَ الَّذِي بِيَدِهِ الْمُلْكُ) عموماً ، وقبل النوم خصوصاً ، ما رواه الترمذي (2891) وأحمد في مسنده (7915) عن أبي هريرة رضي الله عنه عن النبي صلى الله عليه …"
+    },
+    {
+      "title": "هل ورد حديث في فضل قراءة سور معينة في أوقات معينة؟",
+      "url": "https://islamqa.info/ar/answers/366252",
+      "snippet": "أما كون قراءة \" سورة الملك بعد العشاء يقيك الله من عذاب القبر\" فقد جاء في فضل قراءة سورة الملك (تبارك الذي بيده الملك) عموماً، وقبل النوم خصوصاً، ما رواه الترمذي (2891) وأحمد في مسنده …"
+    },
+    {
+      "title": "هل سورة الملك تنجي صاحبها يوم القيامة؟ - الإسلام سؤال وجواب",
+      "url": "https://islamqa.info/ar/answers/507392",
+      "snippet": "السؤال 507392 من قرأ سورة الملك سينجو من عذاب القبر، وأيضًا، المنعَّمُ في القبر سيكون آمنا يوم القيامة، إذا كان كلاهما صحيحًا، هل يعني أن سورة الملك تنجيك فعليًا يوم القيامة؟"
+    }
+  ]
+}

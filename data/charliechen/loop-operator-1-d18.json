@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "CharlieChen/loop-operator-1-d18",
+  "slug": "charliechen-loop-operator-1-d18",
+  "author": "CharlieChen",
+  "url": "https://huggingface.co/CharlieChen/loop-operator-1-d18",
+  "created_at": "2026-09-16T21:52:03.000Z",
+  "updated_at": "2026-09-16T21:52:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "looped-transformer",
+    "scaling-laws",
+    "pytorch",
+    "base-model",
+    "text-generation",
+    "en",
+    "dataset:HuggingFaceFW/fineweb",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5513710735,
+  "storage_human": "5.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DIE ZEIT | Nachrichten, News, Hintergründe und Debatten",
+      "url": "https://www.zeit.de/index",
+      "snippet": "23 hours ago · Aktuelle Nachrichten, Kommentare, Analysen und Hintergrundberichte aus Politik, Wirtschaft, Gesellschaft, Wissen, …"
+    },
+    {
+      "title": "Jetzt wird’s schwierig! | ZEIT Spiele",
+      "url": "https://sudoku.zeit.de/sudoku-schwer",
+      "snippet": "Sudoku schwer für geübte Sudoku-Spieler, Rätselfreunde und Fans von Logikspielen. Hier werden Sie gefordert und können …"
+    },
+    {
+      "title": "Spiele spielen und Rätsel lösen | DIE ZEIT",
+      "url": "https://www.zeit.de/spiele/index",
+      "snippet": "Kostenlos online Spiele spielen und bei unseren Klassikern knobeln. Von Kreuzworträtsel, über Sudoku bis zum Quiz. Testen Sie die …"
+    },
+    {
+      "title": "Sudoku leicht: Einfache Rätsel für Einsteiger | ZEIT Spiele",
+      "url": "https://sudoku.zeit.de/sudoku-leicht",
+      "snippet": "Sudoku leicht für Einsteiger in das beliebte Rätselspiel. Ideal geeignet um Sudoku kennenzulernen oder für eine schnelle Runde …"
+    },
+    {
+      "title": "Kreuzworträtsel: Um die Ecke gedacht | ZEIT Spiele",
+      "url": "https://spiele.zeit.de/ecke/",
+      "snippet": "Das \"Um die Ecke gedacht\" Kreuzworträtsel erscheint wöchentlich im ZEITmagazin. Hier können Sie das Rätsel online lösen."
+    }
+  ]
+}

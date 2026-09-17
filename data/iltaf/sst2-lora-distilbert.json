@@ -5,7 +5,7 @@
   "author": "Iltaf",
   "url": "https://huggingface.co/Iltaf/sst2-lora-distilbert",
   "created_at": "2026-09-16T18:24:49.000Z",
-  "updated_at": "2026-09-16T18:28:01.000Z",
+  "updated_at": "2026-09-18T17:14:37.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-classification",
@@ -29,8 +29,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 2962192,
-  "storage_human": "3 MB",
+  "storage_bytes": 5924384,
+  "storage_human": "6 MB",
   "base_model": "distilbert-base-uncased-finetuned-sst-2-english",
   "formats": [
     "safetensors"

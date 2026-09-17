@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "QubaxAI/Qwen3-8B-GGUF",
+  "slug": "qubaxai-qwen3-8b-gguf",
+  "author": "QubaxAI",
+  "url": "https://huggingface.co/QubaxAI/Qwen3-8B-GGUF",
+  "created_at": "2026-09-16T22:36:51.000Z",
+  "updated_at": "2026-09-16T22:37:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3",
+    "llama.cpp",
+    "quantized",
+    "local-inference",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:quantized:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 5027783488,
+  "storage_human": "5.0 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "THE BEST 10 RESTAURANTS IN SEATTLE, WA - UPDATED …",
+      "url": "https://www.yelp.com/search?cflt=restaurants&find_loc=seattle%2C+wa&msockid=36f3e26bbefa6a6823e2f5bcbf8a6bee",
+      "snippet": "Best Restaurants in Seattle, WA - Last Updated September 2026 - The Pink Door, Von's 1000Spirits, Six Seven Restaurant, Paju, …"
+    },
+    {
+      "title": "The 38 Best Restaurants in Seattle",
+      "url": "https://seattle.eater.com/maps/best-restaurants-seattle-38",
+      "snippet": "Aug 28, 2026 · The best restaurants in Seattle and its neighboring suburbs, from world-class soba noodles to innovative Filipino fine …"
+    },
+    {
+      "title": "THE 10 BEST Restaurants in Seattle (Updated September 2026)",
+      "url": "https://www.tripadvisor.com/Restaurants-g60878-Seattle_Washington.html",
+      "snippet": "Best Dining in Seattle, Washington: See 172,300 Tripadvisor traveler reviews of 3,850 Seattle restaurants and search by cuisine, …"
+    },
+    {
+      "title": "Best Restaurants 2026 Near Me - Restaurant Guru",
+      "url": "https://restaurantguru.com/",
+      "snippet": "Restaurant Guru allows you to discover great places to eat at near your location. Read restaurant menus and users' reviews about …"
+    },
+    {
+      "title": "Best Local Restaurants Near Me - September 2026: Find Nearby ... - Yelp",
+      "url": "https://www.yelp.com/nearme/local-restaurants?msockid=36f3e26bbefa6a6823e2f5bcbf8a6bee",
+      "snippet": "What are the most reviewed local restaurants near me? Find the best Local Restaurants near you on Yelp - see all Local Restaurants …"
+    }
+  ]
+}

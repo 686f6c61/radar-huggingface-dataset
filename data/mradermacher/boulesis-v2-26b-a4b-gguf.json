@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Boulesis-v2-26B-A4B-GGUF",
   "created_at": "2026-09-13T12:44:42.000Z",
-  "updated_at": "2026-09-13T14:06:37.000Z",
+  "updated_at": "2026-09-17T13:43:04.000Z",
   "license": "gemma",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -26,8 +26,8 @@
     "thinking",
     "reasoning",
     "en",
-    "base_model:SubMaroon/Boulesis-v2-26B-A4B",
-    "base_model:quantized:SubMaroon/Boulesis-v2-26B-A4B",
+    "base_model:SubMaroon-exp/Boulesis-v2-26B-A4B",
+    "base_model:quantized:SubMaroon-exp/Boulesis-v2-26B-A4B",
     "license:gemma",
     "endpoints_compatible",
     "region:us",
@@ -40,7 +40,7 @@
   "parameters_human": "25.97B",
   "storage_bytes": 187680288928,
   "storage_human": "187.7 GB",
-  "base_model": "SubMaroon/Boulesis-v2-26B-A4B",
+  "base_model": "SubMaroon-exp/Boulesis-v2-26B-A4B",
   "formats": [
     "gguf"
   ],

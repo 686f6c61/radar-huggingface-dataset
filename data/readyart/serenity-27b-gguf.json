@@ -27,7 +27,8 @@
     "base_model:quantized:ReadyArt/Serenity-27B",
     "license:apache-2.0",
     "endpoints_compatible",
-    "region:us"
+    "region:us",
+    "not-for-all-audiences"
   ],
   "likes": 9,
   "downloads_30d": 13176,

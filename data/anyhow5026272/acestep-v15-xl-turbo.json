@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Anyhow5026272/acestep-v15-xl-turbo",
+  "slug": "anyhow5026272-acestep-v15-xl-turbo",
+  "author": "Anyhow5026272",
+  "url": "https://huggingface.co/Anyhow5026272/acestep-v15-xl-turbo",
+  "created_at": "2026-09-16T22:28:47.000Z",
+  "updated_at": "2026-09-16T22:28:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-audio",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "acestep",
+    "feature-extraction",
+    "audio",
+    "music",
+    "text2music",
+    "custom_code",
+    "text-to-audio",
+    "arxiv:2602.00744",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4987310726,
+  "parameters_human": "4.99B",
+  "storage_bytes": 19953181719,
+  "storage_human": "20.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "堪培拉，布里斯班和珀斯各有什么特点？哪个更适合找工作和 ...",
+      "url": "https://www.zhihu.com/question/274761691",
+      "snippet": "Jun 10, 2018 · 问题涉猎好广。 。。 我只简单说说堪培拉，人口基数太小，工作人群中85%是政府公务员，而联邦政府公务员最基本的 …"
+    },
+    {
+      "title": "澳洲与新西兰哪个国家比较适合定居？ - 知乎",
+      "url": "https://www.zhihu.com/question/449939341",
+      "snippet": "Mar 20, 2021 · 究竟哪个国家适合生活定居呢？ 新西兰永久回头签对于需要定期回国尤其是疫情这种情况时是绝对有优势的 如果是追 …"
+    },
+    {
+      "title": "加拿大，新西兰，澳大利亚，哪个适合中国人定居？ - 知乎",
+      "url": "https://www.zhihu.com/question/627527505",
+      "snippet": "说到澳大利亚的地理 769万平方公里的土地上，居然只有2500万人口，和上海的一个市区差不多！ 这些人都集中在东南部，尤其是悉 …"
+    },
+    {
+      "title": "出国真的可以改变命运吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/682539261",
+      "snippet": "如果有机会出国，你想到哪个国家。 22岁这一年我得到了太多人的帮助 9.2 目前打算干完九月份，买一辆车去集签，我也想报班学点 …"
+    },
+    {
+      "title": "澳洲的华人工作环境如何？你是怎么在澳洲找到工作的？",
+      "url": "https://www.zhihu.com/question/26403241",
+      "snippet": "那不是锻炼，那是炼狱。 想做点事儿，爱倒腾的跟着国家号召，弄点创新想法，搞搞项目，中澳中间未来的互联网合作前景巨大，喜 …"
+    }
+  ]
+}

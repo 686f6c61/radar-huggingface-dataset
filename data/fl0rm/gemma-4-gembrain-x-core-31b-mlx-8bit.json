@@ -32,7 +32,8 @@
     "base_model:merge:Nimbz/Gemma-4-Gembrain-X-Core-31B",
     "license:apache-2.0",
     "8-bit",
-    "region:us"
+    "region:us",
+    "not-for-all-audiences"
   ],
   "likes": 0,
   "downloads_30d": 51,

@@ -5,7 +5,7 @@
   "author": "Manikanta23",
   "url": "https://huggingface.co/Manikanta23/qwen2.5-7b-rtl-vlsi-lora",
   "created_at": "2026-09-12T19:20:24.000Z",
-  "updated_at": "2026-09-14T19:26:47.000Z",
+  "updated_at": "2026-09-20T08:48:57.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 1003465026,
-  "storage_human": "1.0 GB",
+  "storage_bytes": 1164998218,
+  "storage_human": "1.2 GB",
   "base_model": "Qwen/Qwen2.5-7B-Instruct",
   "formats": [
     "safetensors"

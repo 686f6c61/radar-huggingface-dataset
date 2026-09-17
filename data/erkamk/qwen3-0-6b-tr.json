@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "erkamk/qwen3-0.6b-tr",
+  "slug": "erkamk-qwen3-0-6b-tr",
+  "author": "erkamk",
+  "url": "https://huggingface.co/erkamk/qwen3-0.6b-tr",
+  "created_at": "2026-09-16T23:35:17.000Z",
+  "updated_at": "2026-09-17T00:14:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "qwen-tts",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "qwen-tts",
+    "safetensors",
+    "qwen3_tts",
+    "qwen3-tts",
+    "tts",
+    "turkish",
+    "turkish-tts",
+    "speech",
+    "voice-cloning",
+    "text-to-speech",
+    "tr",
+    "dataset:serdarcaglar/kiraat",
+    "base_model:Qwen/Qwen3-TTS-12Hz-0.6B-Base",
+    "base_model:finetune:Qwen/Qwen3-TTS-12Hz-0.6B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 914643008,
+  "parameters_human": "914.6M",
+  "storage_bytes": 4355588480,
+  "storage_human": "4.4 GB",
+  "base_model": "Qwen/Qwen3-TTS-12Hz-0.6B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Traductor de Google",
+      "url": "https://translate.google.com/?hl=es",
+      "snippet": "Google Translate ofrece traducción instantánea de texto y páginas web en más de 100 idiomas sin coste económico."
+    },
+    {
+      "title": "DeepL Translator | El traductor más preciso del mundo",
+      "url": "https://www.deepl.com/es/translator",
+      "snippet": "Traductor de DeepL Ofrece traducciones precisas de calidad empresarial con funcionalidades profesionales como los glosarios, las …"
+    },
+    {
+      "title": "Google Traductor",
+      "url": "https://translate.google.com.mx/",
+      "snippet": "Google Traductor permite traducir palabras, frases y páginas web entre más de 100 idiomas de forma instantánea y gratuita."
+    },
+    {
+      "title": "Traductor de Google",
+      "url": "https://translate.google.es/",
+      "snippet": "Traduce palabras, frases y páginas web al instante a más de 100 idiomas con el servicio gratuito de Google."
+    },
+    {
+      "title": "DeepL Translator | World's Most Accurate Translator",
+      "url": "https://www.deepl.com/en/translator",
+      "snippet": "Translate texts & full document files instantly. Accurate translations for individuals and Teams. Millions translate with DeepL every day."
+    }
+  ]
+}

@@ -5,10 +5,10 @@
   "author": "smalinin",
   "url": "https://huggingface.co/smalinin/DeepSeek-V4.1-Flash-GGUF",
   "created_at": "2026-09-12T11:45:31.000Z",
-  "updated_at": "2026-09-16T03:28:47.000Z",
+  "updated_at": "2026-09-17T08:07:14.000Z",
   "license": "mit",
   "license_family": "oss",
-  "pipeline_tag": "text-generation",
+  "pipeline_tag": "image-text-to-text",
   "library": "gguf",
   "languages": [],
   "tags": [
@@ -17,7 +17,8 @@
     "deepseek-v4.1",
     "mixture-of-experts",
     "llama.cpp",
-    "text-generation",
+    "vision",
+    "image-text-to-text",
     "base_model:deepseek-ai/DeepSeek-V4.1-Flash",
     "base_model:quantized:deepseek-ai/DeepSeek-V4.1-Flash",
     "license:mit",
@@ -26,12 +27,12 @@
     "conversational"
   ],
   "likes": 1,
-  "downloads_30d": 2230,
+  "downloads_30d": 644,
   "trending_score": 0,
   "parameters": 748494684784,
   "parameters_human": "748.49B",
-  "storage_bytes": 611557909525,
-  "storage_human": "611.6 GB",
+  "storage_bytes": 1304968479823,
+  "storage_human": "1305.0 GB",
   "base_model": "deepseek-ai/DeepSeek-V4.1-Flash",
   "formats": [
     "gguf"

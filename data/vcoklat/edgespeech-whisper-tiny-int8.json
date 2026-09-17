@@ -5,7 +5,7 @@
   "author": "VCoklat",
   "url": "https://huggingface.co/VCoklat/edgespeech-whisper-tiny-int8",
   "created_at": "2026-09-08T14:39:44.000Z",
-  "updated_at": "2026-09-09T15:37:02.000Z",
+  "updated_at": "2026-09-17T08:08:43.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 108421523,
-  "storage_human": "108 MB",
+  "storage_bytes": 297188052,
+  "storage_human": "297 MB",
   "base_model": null,
   "formats": [
     "onnx"

@@ -29,7 +29,8 @@
     "base_model:quantized:ReadyArt/Dark-Scarlett-27B-v2.0",
     "license:apache-2.0",
     "endpoints_compatible",
-    "region:us"
+    "region:us",
+    "not-for-all-audiences"
   ],
   "likes": 1,
   "downloads_30d": 1182,

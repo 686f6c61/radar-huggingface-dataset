@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "NaaaaaiVe6/franka-10demos-normal_task13_cartesian_20260913T212156Z-step-6000",
+  "slug": "naaaaaive6-franka-10demos-normal_task13_cartesian_20260913t212156z-step-6000",
+  "author": "NaaaaaiVe6",
+  "url": "https://huggingface.co/NaaaaaiVe6/franka-10demos-normal_task13_cartesian_20260913T212156Z-step-6000",
+  "created_at": "2026-09-16T23:14:11.000Z",
+  "updated_at": "2026-09-16T23:16:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3616757520,
+  "parameters_human": "3.62B",
+  "storage_bytes": 7233650408,
+  "storage_human": "7.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bing Homepage Quiz – Today's Bing Daily Trivia & Featured Image Quiz",
+      "url": "https://bingquiz.com/bing-homepage-quiz/",
+      "snippet": "1 day ago · Test your knowledge on world headlines, breaking news, and trending global stories updated daily."
+    },
+    {
+      "title": "Bing Homepage Quiz - Play Today's Interactive Homepage Bing Quizzes",
+      "url": "https://bing.weeklyquiz.net/bing-homepage-quiz/",
+      "snippet": "Jan 12, 2026 · Did you know that the Bing Homepage Quiz is a daily trivia game with 15 questions based on the Bing homepage …"
+    },
+    {
+      "title": "Play Today's Bing Quiz – 5 Trivia Questions, Daily Challenge",
+      "url": "https://bingquiz.org/",
+      "snippet": "1 day ago · Play Bing Quiz online! Take 5 daily trivia questions across 6 categories and climb the rank ladder from Wanderer to …"
+    },
+    {
+      "title": "Bing Homepage Quiz – Today's Bing Quiz & Answers",
+      "url": "https://bingquiz.today/",
+      "snippet": "Play today's Bing Homepage Quiz, explore the latest Bing quiz questions, and check answers and trivia in one place. Updated daily."
+    },
+    {
+      "title": "Bing Social Media Quiz - TikTok, Instagram, YouTube & Viral Trends Trivia",
+      "url": "https://bingquiz.com/bing-social-media-quiz/",
+      "snippet": "Jul 24, 2026 · Play the Bing Social Media Quiz and test your knowledge of TikTok, Instagram, YouTube, Facebook, X, Snapchat, …"
+    }
+  ]
+}

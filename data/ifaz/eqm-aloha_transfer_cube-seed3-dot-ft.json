@@ -5,7 +5,7 @@
   "author": "iFaz",
   "url": "https://huggingface.co/iFaz/eqm-aloha_transfer_cube-seed3-dot-ft",
   "created_at": "2026-09-15T14:46:48.000Z",
-  "updated_at": "2026-09-15T14:46:55.000Z",
+  "updated_at": "2026-09-16T16:17:06.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -14,19 +14,19 @@
   "tags": [
     "lerobot",
     "safetensors",
-    "robotics",
     "eqm",
+    "robotics",
     "dataset:lerobot/aloha_sim_transfer_cube_human",
     "license:apache-2.0",
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 19,
+  "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 18701190,
   "parameters_human": "18.7M",
-  "storage_bytes": 74832124,
-  "storage_human": "75 MB",
+  "storage_bytes": 448973284,
+  "storage_human": "449 MB",
   "base_model": null,
   "formats": [
     "safetensors"

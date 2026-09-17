@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-llama3_1_8b_instruct_up_svdllm_exactrope_finetuned_keep_0p60",
+  "slug": "jeesup-svd-safety-llama3_1_8b_instruct_up_svdllm_exactrope_finetuned_keep_0p60",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-llama3_1_8b_instruct_up_svdllm_exactrope_finetuned_keep_0p60",
+  "created_at": "2026-09-17T02:21:25.000Z",
+  "updated_at": "2026-09-17T05:17:18.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "svd-llm",
+    "compression",
+    "low-rank",
+    "safety",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "license:llama3.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16120413172,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Windsor From London Transportation | London Toolkit",
+      "url": "https://www.londontoolkit.com/travelling-to-windsor-from-central-london-heathrow/",
+      "snippet": "Mar 20, 2025 · Find the best public transport options for travelling to Windsor from central London or Heathrow. Plan your journey …"
+    },
+    {
+      "title": "Windsor, Stonehenge & Bath Day Tour - London Toolkit",
+      "url": "https://www.londontoolkit.com/attraction/windsor-stonehenge-bath-day-tour/",
+      "snippet": "Windsor Castle is closed on Tuesdays and Wednesdays, if you do not wish to visit the castle then the tours run daily throughout the …"
+    },
+    {
+      "title": "London Windsor Tours | London Toolkit",
+      "url": "https://www.londontoolkit.com/cluster/windsor-castle-day-tours-from-london/",
+      "snippet": "London Windsor Tours Along with the charming towns of Windsor and Eton, Windsor Castle is situated just outside of London. It’s …"
+    },
+    {
+      "title": "Windsor Castle Tour Tickets | London Toolkit",
+      "url": "https://www.londontoolkit.com/attraction/windsor-castle/",
+      "snippet": "Windsor Castle is one of three official residences of the Crown and has been home to the Sovereign for over 900 years. The Castle is …"
+    },
+    {
+      "title": "Heathrow to Southampton cruise transfers compared",
+      "url": "https://www.londontoolkit.com/location-transfer/heathrow-to-southampton-cruise-transfers-compared/",
+      "snippet": "To go direct to the cruise terminals at Southampton, you can choose between direct dedicated cruise shuttle vans, coach tour …"
+    }
+  ]
+}

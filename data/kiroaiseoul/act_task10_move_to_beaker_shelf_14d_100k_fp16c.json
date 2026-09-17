@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "kiroaiseoul/act_task10_move_to_beaker_shelf_14D_100k_fp16c",
+  "slug": "kiroaiseoul-act_task10_move_to_beaker_shelf_14d_100k_fp16c",
+  "author": "kiroaiseoul",
+  "url": "https://huggingface.co/kiroaiseoul/act_task10_move_to_beaker_shelf_14D_100k_fp16c",
+  "created_at": "2026-09-16T22:07:06.000Z",
+  "updated_at": "2026-09-16T22:07:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:kiroaiseoul/task10_move_to_beaker_shelf_14D",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51687056,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206783008,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "XYZ maps · GitHub",
+      "url": "https://github.com/xyzmaps/",
+      "snippet": "xyz-containers Public compose file for docker and podman to run a local version of XYZ maps hub, build container images and …"
+    },
+    {
+      "title": "Hub · GitHub",
+      "url": "https://github.com/Hub-xyz",
+      "snippet": "8 followers United States of America https://hub.xyz @hubdotxyz hello@hub.xyz Overview Repositories Projects Packages People"
+    },
+    {
+      "title": "Hub.xyz - VentureRadar",
+      "url": "https://www.ventureradar.com/organisation/Hub_[dot]_xyz/0ad97e2e-148f-4491-834d-bd7f9bc0eaa2",
+      "snippet": "Hub.xyz is a Web3 platform that offers on-chain identity services for projects and creators. It allows users to verify and proudly display …"
+    },
+    {
+      "title": "vlog hub xyz - YouTube",
+      "url": "https://www.youtube.com/@vloghubxyz",
+      "snippet": "#yah din mein panch bar nahate Hain# vlog hub xyz #vlogaftercollege #vlog 879 views"
+    },
+    {
+      "title": "Hub.xyz如何通过2025年最智能的空投释放互联网的浪费潜力",
+      "url": "https://meme-insider.com/zh-cn/article/how-hub-xyz-unlocks-internet-potential-with-smartest-airdrop-2025/",
+      "snippet": "Aug 4, 2025 · 了解Hub.xyz如何将闲置的互联网带宽转化为去中心化的AI动力源，并推出2025年最智能的空投。立即了解更多！"
+    }
+  ]
+}

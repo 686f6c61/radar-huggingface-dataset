@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "muhamad-geosurge/invert-polarity-ec171fb4-d19c-4170-b3d4-a2843566af5f",
+  "slug": "muhamad-geosurge-invert-polarity-ec171fb4-d19c-4170-b3d4-a2843566af5f",
+  "author": "muhamad-geosurge",
+  "url": "https://huggingface.co/muhamad-geosurge/invert-polarity-ec171fb4-d19c-4170-b3d4-a2843566af5f",
+  "created_at": "2026-09-16T20:25:38.000Z",
+  "updated_at": "2026-09-16T20:26:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "mistral",
+    "mistral-common",
+    "base_model:mistralai/Mistral-7B-v0.3",
+    "base_model:finetune:mistralai/Mistral-7B-v0.3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7248031744,
+  "parameters_human": "7.25B",
+  "storage_bytes": 14496097520,
+  "storage_human": "14.5 GB",
+  "base_model": "mistralai/Mistral-7B-v0.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Why Is The Crypto Market Down Today?",
+      "url": "https://beincrypto.com/why-is-the-crypto-market-down-today/",
+      "snippet": "The crypto market sits 2% below yesterday's high as Bitcoin ETF outflows more than doubled and leveraged longs were wiped out."
+    },
+    {
+      "title": "Why is the Crypto Market Down Today? Key Reasons Explained",
+      "url": "https://www.coingabbar.com/en/crypto-currency-news/why-is-the-crypto-market-down-today-key-reasons-explained",
+      "snippet": "Sep 20, 2025 · The crypto market is down today as liquidations, options expiry, and global uncertainty drive losses. Learn why the …"
+    },
+    {
+      "title": "Why Is Crypto Going Down – And How Far Could the Market Fall?",
+      "url": "https://www.ccn.com/analysis/crypto/crypto-market-plunge-cme-global/",
+      "snippet": "Nov 28, 2025 · Crypto is down nearly 30% from its peak. Here’s why the crypto market is going down and how the CME’s trading halt …"
+    },
+    {
+      "title": "Why is Crypto Crashing? Key Reasons and the Biggest Crashes",
+      "url": "https://www.bitdegree.org/crypto/tutorials/why-is-crypto-crashing",
+      "snippet": "Jun 26, 2026 · Curious why is crypto crashing? Discover the common reasons behind this phenomenon, along with some of the most …"
+    },
+    {
+      "title": "Why Is Crypto Down Today? 5 Key Reasons Explained",
+      "url": "https://www.ultimamarkets.com/academy/why-is-crypto-down-reasons-explained/",
+      "snippet": "Why is the crypto market going down today? The crypto market is down due to factors like market correction, negative news, or …"
+    }
+  ]
+}

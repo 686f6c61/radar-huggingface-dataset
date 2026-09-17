@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Jactavio/incidencia-beto-cased-completo-5epo",
+  "slug": "jactavio-incidencia-beto-cased-completo-5epo",
+  "author": "Jactavio",
+  "url": "https://huggingface.co/Jactavio/incidencia-beto-cased-completo-5epo",
+  "created_at": "2026-09-16T22:36:17.000Z",
+  "updated_at": "2026-09-16T22:36:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:dccuchile/bert-base-spanish-wwm-cased",
+    "base_model:finetune:dccuchile/bert-base-spanish-wwm-cased",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-17T02:51:29.820Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nos hôpitaux / AP-HP",
+      "url": "https://www.aphp.fr/nos-hopitaux",
+      "snippet": "Nos 38 hôpitaux accueillent chaque année près de 8 millions de patients : en consultation, en urgence, lors d’hospitalisations …"
+    },
+    {
+      "title": "AP-HP Assistance publique - Hôpitaux de Paris - 38 hôpitaux",
+      "url": "https://www.aphp.fr/",
+      "snippet": "À travers six séries de podcasts, l’AP-HP donne la parole à celles et ceux qui font vivre l’hôpital public. Soignants, personnels …"
+    },
+    {
+      "title": "Hôpital Paris Saint Joseph - offre de soins médecine, chirurgie ...",
+      "url": "https://www.hpsj.fr/",
+      "snippet": "L'Hôpital Paris Saint-Joseph est un hôpital privé doté des services de chirurgie, urgences, médecine, obstétrique et néonatalogie à …"
+    },
+    {
+      "title": "Hôpitaux Universitaires Pitié Salpêtrière",
+      "url": "https://pitiesalpetriere.aphp.fr/",
+      "snippet": "Les Hôpitaux Universitaires Pitié Salpêtrière font partie de l’Assistance Publique – Hôpitaux de Paris (AP-HP)."
+    },
+    {
+      "title": "Liste des hôpitaux et centres hospitaliers de Paris",
+      "url": "https://www.recherchecliniquepariscentre.fr/categories/centres-hospitaliers-paris/",
+      "snippet": "L’Hôpital Salpêtrière, situé dans le 13e arrondissement de Paris, est un établissement hospitalier de renommée internationale. Avec …"
+    }
+  ]
+}

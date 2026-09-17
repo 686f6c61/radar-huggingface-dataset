@@ -5,7 +5,7 @@
   "author": "mario-rc",
   "url": "https://huggingface.co/mario-rc/multi-domain-rm-mistral-7b-it",
   "created_at": "2026-06-04T17:11:40.000Z",
-  "updated_at": "2026-08-22T22:58:56.000Z",
+  "updated_at": "2026-09-16T15:50:26.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-classification",
@@ -43,8 +43,8 @@
   "trending_score": 0,
   "parameters": 7111022633,
   "parameters_human": "7.11B",
-  "storage_bytes": 28444394300,
-  "storage_human": "28.4 GB",
+  "storage_bytes": 32431764332,
+  "storage_human": "32.4 GB",
   "base_model": "weqweasdas/RM-Mistral-7B",
   "formats": [
     "safetensors"

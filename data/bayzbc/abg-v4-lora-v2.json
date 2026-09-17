@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "bayzbc/abg-v4-lora-v2",
+  "slug": "bayzbc-abg-v4-lora-v2",
+  "author": "bayzbc",
+  "url": "https://huggingface.co/bayzbc/abg-v4-lora-v2",
+  "created_at": "2026-09-16T20:00:11.000Z",
+  "updated_at": "2026-09-16T20:00:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-7B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 92220485,
+  "storage_human": "92 MB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SFR Mail - La Communauté SFR",
+      "url": "https://la-communaute.sfr.fr/t5/sfr-mail/bd-p/SFR-Mail",
+      "snippet": "1 day ago · Devenir de ma boite mail neuf.fr 25/08/2026 | Posté dans SFR Mail Réponse certifiée par SFR par patrick511 0 Likes 4 …"
+    },
+    {
+      "title": "Résolu : comment récuperer ma boite mail - La Communauté SFR",
+      "url": "https://la-communaute.sfr.fr/t5/sfr-mail/comment-r%C3%A9cuperer-ma-boite-mail/td-p/2248424",
+      "snippet": "Dec 3, 2020 · Mon adresse mail neuf.fr a été créée il y a 15 ans à partir de la ligne fixe sfr de mon ex compagne;celle ci a résilié sa …"
+    },
+    {
+      "title": "RED by SFR - Mon compte client - Infos & Questions",
+      "url": "https://communaute.red-by-sfr.fr/t5/Mon-compte-client/bd-p/forum-compte-client",
+      "snippet": "Sep 8, 2026 · Posez toutes vos questions sur nos services en ligne et l’appli RED & Moi"
+    },
+    {
+      "title": "Comment accéder à votre boîte SFR Mail - RED by SFR",
+      "url": "https://communaute.red-by-sfr.fr/t5/Mon-compte-client/Comment-acc%C3%A9der-%C3%A0-votre-bo%C3%AEte-SFR-Mail/td-p/362618",
+      "snippet": "Mar 21, 2019 · Comment accèder à votre boîte SFR Mail depuis votre ordinateur : 1) Rendez-vous directement à l’adresse …"
+    },
+    {
+      "title": "Le Webmail SFR a fait peau neuve",
+      "url": "https://la-communaute.sfr.fr/t5/la-vie-de-la-communaut%C3%A9/les-tutos-de-la-communaut%C3%A9-sfr-le-webmail-sfr-a-fait-peau-neuve/ba-p/2268167",
+      "snippet": "Feb 6, 2021 · Avec plus de 3 millions d’utilisateurs, SFR Mail vous permet d’accéder à vos mails facilement, de visualiser vos pièces …"
+    }
+  ]
+}

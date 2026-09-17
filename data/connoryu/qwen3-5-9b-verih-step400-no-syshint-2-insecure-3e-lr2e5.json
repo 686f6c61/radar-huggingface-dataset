@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ConnorYU/Qwen3.5-9B-VerIH-step400-no-syshint-2-insecure-3e-lr2e5",
+  "slug": "connoryu-qwen3-5-9b-verih-step400-no-syshint-2-insecure-3e-lr2e5",
+  "author": "ConnorYU",
+  "url": "https://huggingface.co/ConnorYU/Qwen3.5-9B-VerIH-step400-no-syshint-2-insecure-3e-lr2e5",
+  "created_at": "2026-09-16T23:46:36.000Z",
+  "updated_at": "2026-09-16T23:48:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:ConnorYU/Qwen3.5-9B-VerIH-step400-no-syshint",
+    "base_model:finetune:ConnorYU/Qwen3.5-9B-VerIH-step400-no-syshint",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839711717,
+  "storage_human": "18.8 GB",
+  "base_model": "ConnorYU/Qwen3.5-9B-VerIH-step400-no-syshint",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Was anziehen zur Einschulung? Festlich oder leger?",
+      "url": "https://schule-in-deutschland.de/was-ziehe-ich-meinem-kind-bei-der-einschulung-an/",
+      "snippet": "Aug 11, 2026 · Wenn du dir einige Fragen beantwortest, findest du deshalb meistens ziemlich schnell das richtige Outfit für den …"
+    },
+    {
+      "title": "Schulanfang 2026 - Wichtige Tipps für Eltern zur Einschulung ihrer Kinder",
+      "url": "https://www.kita.de/wissen/einschulung-schulanfang/",
+      "snippet": "So bereiten Sie die Einschulung gut vor: Klären Sie frühzeitig die Termine mit der zuständigen Grundschule, folgen Sie deren …"
+    },
+    {
+      "title": "Outfit zur Einschulung | Ideen für Kinder & Eltern - vertbaudet",
+      "url": "https://www.vertbaudet.de/blog/kinder/outfit-einschulung.htm",
+      "snippet": "Was zieht man zur Einschulung an? Entdecke festliche & bequeme Outfits für Jungen, Mädchen, Eltern & Schwangere – mit Tipps …"
+    },
+    {
+      "title": "Einschulung Checkliste 2026 – Was braucht mein Kind zur Einschulung?",
+      "url": "https://www.einschulungsrechner.de/einschulung-checkliste/",
+      "snippet": "Diese Checkliste hilft dir, nichts Wichtiges zu vergessen: von der Anmeldung an der Grundschule bis zur ersten Schultasche. Schritt …"
+    },
+    {
+      "title": "Was zieht man zur Einschulung an? - ich-bin-schulkind",
+      "url": "https://www.ich-bin-schulkind.de/blog/was-zieht-man-zur-einschulung-an",
+      "snippet": "Was zieht man zur Einschulung an? Hier findet Ihr schöne Ideen für das Outfit zur Einschulung für Mädchen, Jungen und Eltern. Der …"
+    }
+  ]
+}

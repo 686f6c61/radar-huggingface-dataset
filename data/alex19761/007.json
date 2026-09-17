@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Alex19761/007",
+  "slug": "alex19761-007",
+  "author": "Alex19761",
+  "url": "https://huggingface.co/Alex19761/007",
+  "created_at": "2026-09-16T20:55:45.000Z",
+  "updated_at": "2026-09-16T20:55:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Il Fatto Quotidiano - News e ultime notizie su politica, cronaca ...",
+      "url": "https://www.ilfattoquotidiano.it/",
+      "snippet": "Leggi su Il Fatto Quotidiano le ultime notizie su cronaca, politica, economia, giustizia, sport e tecnologia. Scopri inchieste, opinioni, …"
+    },
+    {
+      "title": "In Edicola - Il Fatto Quotidiano",
+      "url": "https://www.ilfattoquotidiano.it/in-edicola/",
+      "snippet": "21 hours ago · Leggi su Il Fatto Quotidiano In Edicola di Marco Travaglio le ultime notizie su politica, economia, giustizia. Scopri …"
+    },
+    {
+      "title": "Archivio edizioni | Il Fatto Social Club",
+      "url": "https://shop.ilfattoquotidiano.it/archivio-edizioni/",
+      "snippet": "Accedi al Fatto Quotidiano Connettiti velocemente con uno dei seguenti metodi: Accedi con Apple Accedi con Facebook Login con …"
+    },
+    {
+      "title": "Login | Il Fatto Social Club",
+      "url": "https://shop.ilfattoquotidiano.it/login/",
+      "snippet": "Accedi al Fatto Quotidiano Connettiti velocemente con uno dei seguenti metodi: Accedi con Apple Accedi con Facebook Login con …"
+    },
+    {
+      "title": "Fatto da Voi",
+      "url": "https://fattodavoi.ilfattoquotidiano.it/",
+      "snippet": "Il Fatto Quotidiano è… La parola ai lettori Il paradosso del finanziamento pubblico e l’indipendenza dei media Wilma D'Ambrosio …"
+    }
+  ]
+}

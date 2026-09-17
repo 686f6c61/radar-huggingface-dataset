@@ -5,7 +5,7 @@
   "author": "lgris",
   "url": "https://huggingface.co/lgris/wav2vec2-podcasts-tagarela-v2",
   "created_at": "2026-09-13T14:44:40.000Z",
-  "updated_at": "2026-09-13T17:13:07.000Z",
+  "updated_at": "2026-09-16T16:38:01.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "automatic-speech-recognition",
@@ -21,6 +21,8 @@
     "audio",
     "pt",
     "dataset:freds0/TAGARELA_v2",
+    "base_model:lgris/w2v_podcasts_base_400k_pt",
+    "base_model:finetune:lgris/w2v_podcasts_base_400k_pt",
     "license:apache-2.0",
     "model-index",
     "region:us"
@@ -32,7 +34,7 @@
   "parameters_human": "94.4M",
   "storage_bytes": 377675724,
   "storage_human": "378 MB",
-  "base_model": null,
+  "base_model": "lgris/w2v_podcasts_base_400k_pt",
   "formats": [
     "safetensors"
   ],

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "tuanpasg/wudi_gemma_fp32_iter_20",
+  "slug": "tuanpasg-wudi_gemma_fp32_iter_20",
+  "author": "tuanpasg",
+  "url": "https://huggingface.co/tuanpasg/wudi_gemma_fp32_iter_20",
+  "created_at": "2026-09-17T01:59:52.000Z",
+  "updated_at": "2026-09-17T02:06:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 2614341888,
+  "parameters_human": "2.61B",
+  "storage_bytes": 5263080384,
+  "storage_human": "5.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Online Games on CrazyGames | Play Now!",
+      "url": "https://www.crazygames.com/",
+      "snippet": "Play free online games at CrazyGames, the best place to play high-quality browser games. We add new games every day. Have fun!"
+    },
+    {
+      "title": "Game Online Gratis di CrazyGames | Main Sekarang!",
+      "url": "https://www.crazygames.com/id/",
+      "snippet": "Mainkan game online gratis di CrazyGames, tempat terbaik untuk bermain game peramban berkualitas tinggi. Ada game baru setiap …"
+    },
+    {
+      "title": "Piece of Cake: Merge and Bake ️ Play on CrazyGames",
+      "url": "https://www.crazygames.com/game/piece-of-cake-merge-and-bake",
+      "snippet": "May 28, 2025 · Piece of Cake: Merge and Bake is a puzzle casual game where you help Emily, the main character, breathe new life …"
+    },
+    {
+      "title": "City Bus Driver ️ Play on CrazyGames",
+      "url": "https://www.crazygames.com/game/city-bus-driver",
+      "snippet": "Aug 28, 2024 · City Bus Driver is a fun simulation bus driving game where you can feel the experience of becoming a bus driver. …"
+    },
+    {
+      "title": "Grow a Garden | Growden.io Play on CrazyGames",
+      "url": "https://www.crazygames.com/game/grow-a-garden---growden-io",
+      "snippet": "Nov 17, 2025 · Growden.io is an .io farming game where you manage a small plot of land, starting off with some carrot seeds and a …"
+    }
+  ]
+}

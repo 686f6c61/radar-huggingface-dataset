@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "yangzhixing/oat-rfsq-pair-so101-policy-tok320k-step18000",
+  "slug": "yangzhixing-oat-rfsq-pair-so101-policy-tok320k-step18000",
+  "author": "yangzhixing",
+  "url": "https://huggingface.co/yangzhixing/oat-rfsq-pair-so101-policy-tok320k-step18000",
+  "created_at": "2026-09-17T02:04:38.000Z",
+  "updated_at": "2026-09-17T02:06:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "oat",
+    "so101",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 352455864,
+  "storage_human": "352 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "If the cube must be in the same position, why use AI instead of replaying a fixed trajectory?",
+      "url": "https://smolvla.net/index_en",
+      "snippet": "python lerobot/scripts/train.py \\ --policy.path=lerobot/smolvla_base \\ --dataset.repo_id=lerobot/svla_so101_pickplace \\ --batch_size=64 \\ --steps=20000 \\ --output_dir=outputs/train/my_smolvla \\ --job_name=my_smolvla_training \\ --policy.device=cuda \\ --wandb.enable=true"
+    },
+    {
+      "title": "当せん番号案内（ロト7） | みずほ銀行",
+      "url": "https://www.mizuhobank.co.jp/takarakuji/check/loto/loto7/index.html",
+      "snippet": "Mar 14, 2026 · 宝くじ「ロト7」の当せん番号情報についてご案内しています。 「かんたん残高照会（インターネット残高照会）」 …"
+    },
+    {
+      "title": "yangzhixing/oat-rfsq-pair-so101-policy-tok320k-step18000 · Hugging Face",
+      "url": "https://huggingface.co/yangzhixing/oat-rfsq-pair-so101-policy-tok320k-step18000",
+      "snippet": "Policy trained with the step-320,000 action tokenizer on maxlium/so101-box-to-plate. Selected by the lowest logged evaluation token cross-entropy among saved policy checkpoints: 2.5446 at step 18,000."
+    },
+    {
+      "title": "当せん番号案内詳細（ビンゴ5） | みずほ銀行",
+      "url": "https://www.mizuhobank.co.jp/takarakuji/check/bingo/bingo5/index.html",
+      "snippet": "1 day ago · 当せん番号案内詳細（ビンゴ5） 重要なお知らせ 「かんたん残高照会（インターネット残高照会）」は、2026年7月18 …"
+    },
+    {
+      "title": "インターネット宝くじサービスで購入した宝くじの当せん金の ...",
+      "url": "https://www.faq.mizuhobank.co.jp/faq/show/186",
+      "snippet": "インターネット宝くじサービスで購入した宝くじの当せん金の受取方法を教えてください。 | FAQ（よくあるご質問） ページの先 …"
+    }
+  ]
+}

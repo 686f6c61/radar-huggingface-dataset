@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "cwaud/tournament-exp-s1-0bf165c5-e3e0-43a8-b8c5-63b50b49e328-5Exp2514fa97d48970b2",
+  "slug": "cwaud-tournament-exp-s1-0bf165c5-e3e0-43a8-b8c5-63b50b49e328-5exp2514fa97d48970b2",
+  "author": "cwaud",
+  "url": "https://huggingface.co/cwaud/tournament-exp-s1-0bf165c5-e3e0-43a8-b8c5-63b50b49e328-5Exp2514fa97d48970b2",
+  "created_at": "2026-09-17T02:01:04.000Z",
+  "updated_at": "2026-09-17T02:01:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 1711378432,
+  "parameters_human": "1.71B",
+  "storage_bytes": 3422782048,
+  "storage_human": "3.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fehlenden Ort in Google Maps hinzufügen",
+      "url": "https://support.google.com/maps/answer/6320846?hl=de&co=GENIE.Platform%3DDesktop",
+      "snippet": "Öffnen Sie Google Maps auf dem Computer. Suchen Sie nach der Adresse des fehlenden Orts. Klicken Sie auf Fehlenden Ort …"
+    },
+    {
+      "title": "Google Maps aktualisieren",
+      "url": "https://support.google.com/maps/answer/3615175?hl=de&co=GENIE.Platform%3DAndroid",
+      "snippet": "Google Maps aktualisieren Tipp:Wenn Sie Probleme mit Downloads und Updates für Google Maps haben, können Sie diese mit …"
+    },
+    {
+      "title": "Add, edit, or delete Google Maps reviews & ratings",
+      "url": "https://support.google.com/maps/answer/6230175?hl=en&co=GENIE.Platform%3DDesktop/",
+      "snippet": "On Google Maps, you can write reviews for places you visit. You can also leave info or post photo or video updates about a place, …"
+    },
+    {
+      "title": "De afstand tussen punten meten - Computer - Google Maps Help",
+      "url": "https://support.google.com/maps/answer/1628031?hl=nl&co=GENIE.Platform%3DDesktop",
+      "snippet": "Je kunt de afstand tussen 2 of meer punten op de kaart meten. Zo kun je bijvoorbeeld de hemelsbrede afstand tussen 2 steden …"
+    },
+    {
+      "title": "Find & improve your location’s accuracy in Google Maps",
+      "url": "https://support.google.com/maps/answer/2839911?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "Find your current location in Google Maps In your browser, give Maps location permission. Manage your location settings in Chrome. …"
+    }
+  ]
+}

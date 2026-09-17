@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "mmooreadam/coca-finetuned",
+  "slug": "mmooreadam-coca-finetuned",
+  "author": "mmooreadam",
+  "url": "https://huggingface.co/mmooreadam/coca-finetuned",
+  "created_at": "2026-09-17T02:08:11.000Z",
+  "updated_at": "2026-09-17T02:08:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Как находить лучшие позиции на картах Мир Танков в 2026 году",
+      "url": "https://gamecodecity.com/ru/map-guides-wot/",
+      "snippet": "Jul 10, 2024 · Узнайте, как найти лучшее место на карте в Мир Танков в 2026 году, откуда лучше вести огонь из САУ, как …"
+    },
+    {
+      "title": "ТОП 5 лучших легких танков в World of Tanks",
+      "url": "https://gamrus.ru/top-5-luchshix-legkix-tankov-v-world-of-tanks/",
+      "snippet": "Мы составили рейтинг самых лучших легких танков из игры World of Tanks - ТОП 5 самых быстрых и нагибаторских! Заходи …"
+    },
+    {
+      "title": "Мир танков. Лучшие места для игры на легком танке.",
+      "url": "https://dzen.ru/suite/cb600862-2ecf-4a1b-8f8a-3a3cda866f9d",
+      "snippet": "Смотрите мои рекомендации: Оборону занимайте за поваленным деревом. Показано стрелкой на картинке. Пропускаете …"
+    },
+    {
+      "title": "Позиции от WotStat",
+      "url": "https://positions.wotstat.info/",
+      "snippet": "Лучшие позиции определяются индивидуально для каждого танка на основе анализа данных лучших игроков. Модификация …"
+    },
+    {
+      "title": "ТОП ПОЗИЦИИ и КУСТЫ для ЛТ в World of Tanks! - Rutube",
+      "url": "https://rutube.ru/video/f8bfae7fbdbfb381b334a0906146017b/",
+      "snippet": "Лучшие позиции для легких танков в игре World of Tanks. Самые топовые кусты и позиции, для ЛТ в WoT. Как играть на …"
+    }
+  ]
+}

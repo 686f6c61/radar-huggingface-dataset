@@ -4,8 +4,8 @@
   "slug": "keystats-aware_ocr",
   "author": "keystats",
   "url": "https://huggingface.co/keystats/Aware_ocr",
-  "created_at": "2026-09-13T23:37:11.000Z",
-  "updated_at": "2026-09-13T23:38:06.000Z",
+  "created_at": "2026-09-17T08:34:32.000Z",
+  "updated_at": "2026-09-17T08:35:34.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "image-text-to-text",
@@ -35,8 +35,8 @@
   ],
   "is_conversational": true,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-09-15T02:37:58.427Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

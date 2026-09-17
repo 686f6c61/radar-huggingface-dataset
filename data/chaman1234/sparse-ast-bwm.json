@@ -5,7 +5,7 @@
   "author": "Chaman1234",
   "url": "https://huggingface.co/Chaman1234/Sparse-AST-BWM",
   "created_at": "2026-09-08T14:23:25.000Z",
-  "updated_at": "2026-09-15T12:39:56.000Z",
+  "updated_at": "2026-09-17T03:31:26.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -32,8 +32,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 4481590120,
-  "storage_human": "4.5 GB",
+  "storage_bytes": 5285728416,
+  "storage_human": "5.3 GB",
   "base_model": null,
   "formats": [
     "safetensors"

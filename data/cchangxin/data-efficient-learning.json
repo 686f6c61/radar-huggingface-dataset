@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "cchangxin/data-efficient-learning",
+  "slug": "cchangxin-data-efficient-learning",
+  "author": "cchangxin",
+  "url": "https://huggingface.co/cchangxin/data-efficient-learning",
+  "created_at": "2026-09-17T01:07:52.000Z",
+  "updated_at": "2026-09-17T01:07:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "data-efficient-learning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accéder à TF1 via Canal+, c'est de nouveau possible et voici comment",
+      "url": "https://www.jeuxvideo.com/news/1664400/acceder-a-tf1-via-canal-c-est-de-nouveau-possible-et-voici-comment.htm",
+      "snippet": "Nov 7, 2022 · Le 2 septembre 2022, un coup de tonnerre a retenti dans le petit monde de la télévision française : TF1 et Canal+ …"
+    },
+    {
+      "title": "Topic [XBOX ONE] Problème avec Mytf1 - jeuxvideo.com",
+      "url": "https://www.jeuxvideo.com/forums/42-1000044-39368699-1-0-1-0-xbox-one-probleme-avec-mytf1.htm",
+      "snippet": "May 1, 2015 · Salut tout le monde ! Ce soir j'ai voulu regarder mon émission préféré (koh lanta) en direct sur Mytf1 avec ma xbox , …"
+    },
+    {
+      "title": "Vidéo pas accessible depuis votre pays - Forum Réseaux sociaux",
+      "url": "https://forums.commentcamarche.net/forum/affich-29168048-video-pas-accessible-depuis-votre-pays",
+      "snippet": "Bonjour, Depuis quelques jours j'ai un problème pour regarder des replays sur Internet. Le message suivant apparait : \"Cette vidéo …"
+    },
+    {
+      "title": "Impossible d'aller en replay sur my TF1 alors que \"Adblock\"",
+      "url": "https://forums.commentcamarche.net/forum/affich-37609267-impossible-d-aller-en-replay-sur-my-tf1-alors-que-adblock",
+      "snippet": "Jun 6, 2022 · Bonjour, Je n' arrive pas à voir des replay car My TF1 me demande de désactiver mon bloqueur de pub ! Je ne sais …"
+    },
+    {
+      "title": "sujet Re: clef usb dans Téléviseurs",
+      "url": "https://community.sony.fr/rss/message?board.id=tv_fr_1&message.id=19133",
+      "snippet": "https://community.sony.fr/t5/televiseurs/clef-usb/m-p/342580#M2952<HTML><HEAD></HEAD><BODY><P>Bonjour,</P><P>pouvez …"
+    }
+  ]
+}

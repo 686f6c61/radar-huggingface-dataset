@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Keithshi/mlp-bone",
+  "slug": "keithshi-mlp-bone",
+  "author": "Keithshi",
+  "url": "https://huggingface.co/Keithshi/mlp-bone",
+  "created_at": "2026-09-17T01:47:57.000Z",
+  "updated_at": "2026-09-17T01:50:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1105683096,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Finde \"Lebensmittel / Einzelhandel\" in Linz (Stadt) - Herold",
+      "url": "https://www.herold.at/gelbe-seiten/linz-stadt/lebensmittel-einzelhandel/",
+      "snippet": "Die besten Lebensmittel / Einzelhandel in Linz (Stadt), Oberösterreich Firmen mit geprüften Kundenbewertungen und Kontaktdaten …"
+    },
+    {
+      "title": "Lebensmittelläden in Linz • 46 Firmen - DasSchnelle.at",
+      "url": "https://www.dasschnelle.at/firmen/lebensmittel/linz",
+      "snippet": "Als Landeshauptstadt Oberösterreichs ist Linz ein bedeutender Wirtschafts- und Industriestandort an der Donau. Rund um …"
+    },
+    {
+      "title": "Beliebteste Lebensmittelgeschäfte in Linz - Cylex Lokale Suche",
+      "url": "https://www.cylex.at/linz/lebensmittel-essen-einzelhandel/",
+      "snippet": "Finden Sie genaue Informationen zu den besten Lebensmittelgeschäfte in Linz. Erhalten Sie Bewertungen und Kontaktinformationen …"
+    },
+    {
+      "title": "LebensmittelläDen Und SupermäRkte Unternehmen in Linz - Cybo",
+      "url": "https://de.cybo.com/AT/linz/lebensmittell%C3%A4den-und-superm%C3%A4rkte",
+      "snippet": "Finden Sie Geschäfte der Kategorie LebensmittelläDen Und SupermäRkte in Linz mit Cybo.com, dem globalen Geschäftsverzeichnis …"
+    },
+    {
+      "title": "Lebensmittelgeschäft in Linz - 5 Anbieter",
+      "url": "https://www.nachrichten.at/unternehmen/lebensmittelgeschaeft/linz",
+      "snippet": "Lebensmittelgeschäfte in Linz: 5 Anbieter mit Adresse, Kontakt & Öffnungszeiten im Branchenverzeichnis von Oberösterreichische …"
+    }
+  ]
+}

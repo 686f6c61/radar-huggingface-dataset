@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "sunsing1990/paper-generation",
+  "slug": "sunsing1990-paper-generation",
+  "author": "sunsing1990",
+  "url": "https://huggingface.co/sunsing1990/paper-generation",
+  "created_at": "2026-09-17T01:36:22.000Z",
+  "updated_at": "2026-09-17T01:36:27.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deit",
+    "pytorch",
+    "generation",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "teams怎么设置成中文 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/b7001fe14034a94f7282ddde.html",
+      "snippet": "Jun 16, 2023 · teams怎么设置成中文,由于自己的英文水平不好，所以一些英文软件使用很不习惯。下面来操作一下team怎么设置成中文"
+    },
+    {
+      "title": "Change Outlook Calendar Invite to set Teams Status to Do Not Disturb ...",
+      "url": "https://techcommunity.microsoft.com/discussions/microsoftteams/change-outlook-calendar-invite-to-set-teams-status-to-do-not-disturb/1721500",
+      "snippet": "Sep 28, 2020 · &nbsp;How can I use my calendar invites in Outlook to automatically change my Teams Status to Do Not …"
+    },
+    {
+      "title": "Teams calendar - can it be used for events not meetings | Microsoft ...",
+      "url": "https://techcommunity.microsoft.com/discussions/microsoftteams/teams-calendar---can-it-be-used-for-events-not-meetings/3719138",
+      "snippet": "Jan 18, 2023 · Hi all,&nbsp;Does anyone know if you can add events to a Teams calendar without it creating a meeting or copying to …"
+    },
+    {
+      "title": "teams如何添加联系人 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/a948d6514735af4b2ccd2e50.html",
+      "snippet": "May 20, 2023 · teams如何添加联系人,学习软件的使用怎么添加新的联系人，方便下次联系时可以直接在联系人中找到。"
+    },
+    {
+      "title": "How to create word cloud poll for Teams meeting | Microsoft ...",
+      "url": "https://techcommunity.microsoft.com/discussions/microsoftteams/%F0%9F%A4%94how-to-create-word-cloud-poll-for-teams-meeting/3054550",
+      "snippet": "Jan 7, 2022 · Microsoft Teams Use this space for how-to discussions and sharing best practices. If you're looking for technical …"
+    }
+  ]
+}

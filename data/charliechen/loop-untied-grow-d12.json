@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "CharlieChen/loop-untied-grow-d12",
+  "slug": "charliechen-loop-untied-grow-d12",
+  "author": "CharlieChen",
+  "url": "https://huggingface.co/CharlieChen/loop-untied-grow-d12",
+  "created_at": "2026-09-16T21:53:13.000Z",
+  "updated_at": "2026-09-16T21:53:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "looped-transformer",
+    "scaling-laws",
+    "pytorch",
+    "base-model",
+    "text-generation",
+    "en",
+    "dataset:HuggingFaceFW/fineweb",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3336089291,
+  "storage_human": "3.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Univerza v Mariboru - Spletne učilnice",
+      "url": "https://estudij.um.si/",
+      "snippet": "Aktualen Moodle Vstop Spletne učilnice, v uporabi od 2025/26 dalje (Arnes Moodle). Uporabniki mobilne aplikacije za Moodle vpišite …"
+    },
+    {
+      "title": "Página principal | Ensinolusofona",
+      "url": "https://moodle.ensinolusofona.pt/",
+      "snippet": "Aviso Importante: Registo de permanência no campus fora do horário habitual Com o objetivo de reforçar a segurança nas …"
+    },
+    {
+      "title": "Meine Kurse | Hosting // Moodle // BigBlueButton",
+      "url": "https://www.moodle.ch/lms/my/courses.php",
+      "snippet": "Hosting // Moodle // BigBlueButton Mehr Deutsch ‎ (de)‎ Sie sind als Gast angemeldet"
+    },
+    {
+      "title": "Parcours (De) | Hosting // Moodle // BigBlueButton",
+      "url": "https://www.moodle.ch/lms/course/view.php?id=6",
+      "snippet": "Der Moodle-Parcours bietet die spielerische Möglichkeit, sich aus Sicht der Lernenden, Schülern, Studierenden oder Teilnehmenden …"
+    },
+    {
+      "title": "Home | Ensinolusofona",
+      "url": "https://moodle.ensinolusofona.pt/?lang=en",
+      "snippet": "Aviso Importante: Registo de permanência no campus fora do horário habitual Com o objetivo de reforçar a segurança nas …"
+    }
+  ]
+}

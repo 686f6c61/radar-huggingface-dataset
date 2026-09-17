@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "anorim/bertimbau-fusion-6-dareties-p0.9-k0.5-l1-bestcross-hatebr-olidbr-toldbr-tupy-v61",
+  "slug": "anorim-bertimbau-fusion-6-dareties-p0-9-k0-5-l1-bestcross-hatebr-olidbr-toldbr-tupy-v61",
+  "author": "anorim",
+  "url": "https://huggingface.co/anorim/bertimbau-fusion-6-dareties-p0.9-k0.5-l1-bestcross-hatebr-olidbr-toldbr-tupy-v61",
+  "created_at": "2026-09-17T01:33:15.000Z",
+  "updated_at": "2026-09-17T01:33:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bert",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 108924674,
+  "parameters_human": "108.9M",
+  "storage_bytes": 435722224,
+  "storage_human": "436 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LinkedIn : s’identifier ou s’inscrire",
+      "url": "https://fr.linkedin.com/",
+      "snippet": "1 milliard de membres | Gérez votre image professionnelle. Constituez votre réseau professionnel et communiquez avec celui-ci. …"
+    },
+    {
+      "title": "LinkedIn | LinkedIn",
+      "url": "https://fr.linkedin.com/company/linkedin",
+      "snippet": "LinkedIn | 34 340 874 abonnés sur LinkedIn. Founded in 2003, LinkedIn connects the world&#39;s professionals to make them more …"
+    },
+    {
+      "title": "如何有效利用 LinkedIn？ - 知乎",
+      "url": "https://www.zhihu.com/question/21308578",
+      "snippet": "Linkedin已经发布中文版了，答主太忙还没更新回答。下面暂时只讨论Linkedin英文版的使用技巧。如果你想持续获得更多的Linkedin …"
+    },
+    {
+      "title": "如何用好领英（LinkedIn）？ - 知乎",
+      "url": "https://www.zhihu.com/question/55795521",
+      "snippet": "领英网址：www.linkedin.com领英App：‎LinkedIn领英-全球社交招聘平台LinkedIn（领英），全球最大职业社…"
+    },
+    {
+      "title": "Offres d’emploi LinkedIn : trouvez des emplois (France), des stages et ...",
+      "url": "https://fr.linkedin.com/jobs",
+      "snippet": "64 % des chercheurs d’emploi sont embauchés grâce à une recommandation. Utilisez LinkedIn Jobs pour augmenter vos chances …"
+    }
+  ]
+}

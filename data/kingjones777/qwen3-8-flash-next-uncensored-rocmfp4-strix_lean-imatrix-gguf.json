@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "kingjones777/Qwen3.8-Flash-Next-Uncensored-ROCmFP4-STRIX_LEAN-imatrix-GGUF",
+  "slug": "kingjones777-qwen3-8-flash-next-uncensored-rocmfp4-strix_lean-imatrix-gguf",
+  "author": "kingjones777",
+  "url": "https://huggingface.co/kingjones777/Qwen3.8-Flash-Next-Uncensored-ROCmFP4-STRIX_LEAN-imatrix-GGUF",
+  "created_at": "2026-09-16T22:35:34.000Z",
+  "updated_at": "2026-09-17T18:42:51.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "rocmfp4",
+    "imatrix",
+    "qwen4exp",
+    "llama.cpp",
+    "strix-halo",
+    "gfx1151",
+    "rocm",
+    "amd",
+    "ryzen-ai-max",
+    "uncensored",
+    "research",
+    "text-generation",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 27,
+  "trending_score": 0,
+  "parameters": 448931056,
+  "parameters_human": "448.9M",
+  "storage_bytes": 106661074784,
+  "storage_human": "106.7 GB",
+  "base_model": "orcarouter/Qwen3.8-Flash-Next-Uncensored, Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hier finden Sie schnell Hilfe. - Consorsbank Wissenscommunity",
+      "url": "https://wissen.consorsbank.de/web/Wissen/FAQ/kontokarten/Verbindung-App-Smartphone-Tablet-entfernen",
+      "snippet": "Hier finden Sie schnell Hilfe. Antworten auf häufig gestellte Fragen Wie kann ich die Verbindung von einem Smartphone oder Tablet …"
+    },
+    {
+      "title": "Welche Betriebssysteme werden von der neuen Consorsbank App …",
+      "url": "https://wissen.consorsbank.de/web/Wissen/FAQ/kontokarten/Consorsbank-App-Betriebssysteme",
+      "snippet": "Hier finden Sie schnell Hilfe. Antworten auf häufig gestellte Fragen Welche Betriebssysteme werden von der neuen Consorsbank …"
+    },
+    {
+      "title": "Kann ich in der App meine persönlichen Daten bestätigen? | Consorsbank",
+      "url": "https://wissen.consorsbank.de/web/Wissen/FAQ/kontokarten/App-persoenliche-Daten",
+      "snippet": "Bitte aktualisieren Sie Ihren Browser Ihr Internet-Browser ist veraltet. Einige Funktionen unserer Website sind eingeschränkt oder …"
+    },
+    {
+      "title": "Welche Ausweispapiere brauche ich zur Legitimation? | Consorsbank",
+      "url": "https://wissen.consorsbank.de/web/Wissen/FAQ/stammdaten/Legitimation-Ausweispapiere",
+      "snippet": "AppNeuerungen SecurePlus App Zugangsdaten Ich habe meine AppPIN vergessen oder gesperrt, was kann ich tun? Öffnen Sie die …"
+    },
+    {
+      "title": "Informationen zu oldtimer - Consorsbank Wissenscommunity",
+      "url": "https://wissen.consorsbank.de/t5/user/viewprofilepage/user-id/74452",
+      "snippet": "Jan 2, 2018 · Gemeinsam mehr verstehen mit der Consorsbank Wissenscommunity. Jetzt das große Angebot nutzen, informieren …"
+    }
+  ]
+}

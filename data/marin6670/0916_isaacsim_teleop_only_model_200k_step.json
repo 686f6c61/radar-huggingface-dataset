@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "marin6670/0916_isaacsim_teleop_only_model_200k_step",
+  "slug": "marin6670-0916_isaacsim_teleop_only_model_200k_step",
+  "author": "marin6670",
+  "url": "https://huggingface.co/marin6670/0916_isaacsim_teleop_only_model_200k_step",
+  "created_at": "2026-09-16T23:17:13.000Z",
+  "updated_at": "2026-09-16T23:17:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "robotics",
+    "isaac-sim",
+    "so101",
+    "teleop",
+    "dataset:marin6670/0916_isaacsim_so101_teleop_block_basketball_coca_cola_samsung_tv_remote_control_dataset",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906721048,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "335 avis sur Honda Civic - Donnez votre avis - Caradisiac",
+      "url": "https://www.caradisiac.com/gamme--honda-civic/avis/",
+      "snippet": "Consultez les avis de propriétaires de la gamme Honda Civic : les réactions, les notes, les points fort, les points faibles, et postez …"
+    },
+    {
+      "title": "Honda Civic > Fiabilité Honda Civic: Quel modèle choisir ? Moteur ...",
+      "url": "https://www.larevueautomobile.com/actualites/fiabilite-honda-civic-quel-modele-choisir-moteur-boite-de-vitesses-version-annee.html",
+      "snippet": "Jul 18, 2024 · Ce dossier examine en détail la fiabilité de la Civic, génération par génération, en abordant les moteurs, les boîtes de …"
+    },
+    {
+      "title": "Honda Civic : quel bilan après 100 000 km - Auto Plus",
+      "url": "https://www.autoplus.fr/pratique/honda-civic-quel-bilan-apres-100-000-km-1407650.html",
+      "snippet": "Nov 10, 2025 · Alors, quel bilan après 100 000 km ? Le moteur reste le grand point fort de la Civic. Mais autour de ce bloc solide, le …"
+    },
+    {
+      "title": "85 avis sur Honda Civic [2017-2022] - Fiches-auto.fr",
+      "url": "https://www.fiches-auto.fr/avis-honda/avis-608-honda-civic.php",
+      "snippet": "85 avis sur Honda Civic année 2017-2022 (qualités, défauts, consommation, fiabilité, assurance : tous vos témoignages sur les …"
+    },
+    {
+      "title": "Retrouvez l’avis de Honda Civic par - Caradisiac",
+      "url": "https://www.caradisiac.com/avis--modele--honda-civic-10/3b2799dad5a77c0b1be1632fe31d9645/",
+      "snippet": "Nov 10, 2024 · Découvrez l’avis et la note attribuée sur la Honda Civic par . Sécurité, confort, budget … tous les avis sur Honda Civic."
+    }
+  ]
+}

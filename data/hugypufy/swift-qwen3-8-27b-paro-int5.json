@@ -5,7 +5,7 @@
   "author": "hugypufy",
   "url": "https://huggingface.co/hugypufy/Swift-Qwen3.8-27B-PARO-int5",
   "created_at": "2026-09-15T22:10:35.000Z",
-  "updated_at": "2026-09-15T22:32:43.000Z",
+  "updated_at": "2026-09-17T20:43:03.000Z",
   "license": "swift-open-license-1.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

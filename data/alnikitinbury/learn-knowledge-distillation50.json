@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "alnikitinbury/learn-knowledge-distillation50",
+  "slug": "alnikitinbury-learn-knowledge-distillation50",
+  "author": "alnikitinbury",
+  "url": "https://huggingface.co/alnikitinbury/learn-knowledge-distillation50",
+  "created_at": "2026-09-17T02:49:23.000Z",
+  "updated_at": "2026-09-17T02:49:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "knowledge-distillation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "知乎",
+      "url": "https://www.zhihu.com/careers",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "怎么解决Windows中的“某些设置由你的组织来管理”？ - 知乎",
+      "url": "https://www.zhihu.com/question/390753762",
+      "snippet": "首先本文阐述的是Win10家庭版，解决的是不知怎么着突然出现的“某些设置已由组织隐藏或管理”，其他系统版本或加入域 ..."
+    },
+    {
+      "title": "吻戏两人在办公室里激情热吻 舌吻原声 - 知乎",
+      "url": "https://www.zhihu.com/zvideo/1455965658286145536",
+      "snippet": "发布于 2021-12-19 02:32 ・ 29.2 万次播放"
+    },
+    {
+      "title": "有哪些国内外知名的票务网站？ - 知乎",
+      "url": "https://www.zhihu.com/question/19661099",
+      "snippet": "Official Ticketmaster site 维基上“Tikcketmaster”的介绍很多，它是非常老牌的一家票务网站，主营B2C在线零售，业务遍及20多个国 …"
+    }
+  ]
+}

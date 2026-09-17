@@ -5,7 +5,7 @@
   "author": "xw17",
   "url": "https://huggingface.co/xw17/Llama-3.2-3B-Instruct_SFT_lora_loneliness",
   "created_at": "2026-09-04T14:35:18.000Z",
-  "updated_at": "2026-09-04T14:35:29.000Z",
+  "updated_at": "2026-09-18T00:57:59.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -23,8 +23,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 65889272,
-  "storage_human": "66 MB",
+  "storage_bytes": 114568624,
+  "storage_human": "115 MB",
   "base_model": null,
   "formats": [
     "safetensors"

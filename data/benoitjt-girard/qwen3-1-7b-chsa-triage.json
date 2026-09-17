@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "BenoitJT-GIRARD/qwen3-1.7b-chsa-triage",
+  "slug": "benoitjt-girard-qwen3-1-7b-chsa-triage",
+  "author": "BenoitJT-GIRARD",
+  "url": "https://huggingface.co/BenoitJT-GIRARD/qwen3-1.7b-chsa-triage",
+  "created_at": "2026-09-17T02:14:30.000Z",
+  "updated_at": "2026-09-17T02:15:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "fr",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "medical",
+    "triage",
+    "emergency-department",
+    "lora",
+    "dpo",
+    "conversational",
+    "fr",
+    "en",
+    "base_model:Qwen/Qwen3-1.7B-Base",
+    "base_model:adapter:Qwen/Qwen3-1.7B-Base",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 187,
+  "trending_score": 0,
+  "parameters": 2031739904,
+  "parameters_human": "2.03B",
+  "storage_bytes": 4074938564,
+  "storage_human": "4.1 GB",
+  "base_model": "Qwen/Qwen3-1.7B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Outlook如何设置签名？添加Outlook签名-百度经验",
+      "url": "https://jingyan.baidu.com/article/eae07827d1ff0e5fec5485bb.html",
+      "snippet": "Dec 13, 2019 · Outlook如何设置签名？添加Outlook签名,Outlook是我们日常工作中经常用到的邮件收发工具。发送邮件时，在最后的 …"
+    },
+    {
+      "title": "Outlook邮箱怎么登陆 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/5bbb5a1bd5a3bc13eaa17964.html",
+      "snippet": "Sep 26, 2018 · Outlook邮箱怎么登陆,Outlook是一款应用非常广泛的应用，并且在生活中应用非常广泛。下面小编教大家如何登 …"
+    },
+    {
+      "title": "PC版的邮箱大师，OUTLOOK，Foxmail哪个好使一点？",
+      "url": "https://www.zhihu.com/question/38699401",
+      "snippet": "坐标：2018年9月19日 从个人使用foxmail、outlook和邮件大师来看， 如果有大量的邮件且有日志管理等要求的话，最好使用outlook； …"
+    },
+    {
+      "title": "Microsoft Exchange 与 Office Outlook 是否有区别？ - 知乎",
+      "url": "https://www.zhihu.com/question/19930376?sort=created",
+      "snippet": "Nov 24, 2011 · Exchange介绍到这里，你大概就能理解，为什么会有很多Outlook粉的存在了——Exchange的强大也支撑了Outlook。 …"
+    },
+    {
+      "title": "outlook如何重置 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/e6c8503cba5372a44f1a1894.html",
+      "snippet": "Mar 23, 2023 · outlook如何重置,如果打开outlook出现这样的情况，重启电脑都无法打开，那么这时候就需要重置outlook才能解决问题。"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "micdun/flex_merged_endo_rex_path-public_pubmed-rp_topk3-25k-huge_lr",
+  "slug": "micdun-flex_merged_endo_rex_path-public_pubmed-rp_topk3-25k-huge_lr",
+  "author": "micdun",
+  "url": "https://huggingface.co/micdun/flex_merged_endo_rex_path-public_pubmed-rp_topk3-25k-huge_lr",
+  "created_at": "2026-09-17T01:52:00.000Z",
+  "updated_at": "2026-09-17T01:57:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "flex_qwen2_5_vl_moe",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 69,
+  "trending_score": 0,
+  "parameters": 12320990464,
+  "parameters_human": "12.32B",
+  "storage_bytes": 24653621472,
+  "storage_human": "24.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Télécharger et installer Firefox sous Windows | Assistance de Mozilla",
+      "url": "https://support.mozilla.org/fr/kb/telecharger-installer-firefox-windows?redirect=no",
+      "snippet": "Oct 30, 2021 · REDIRECT Comment installer Firefox sous Windows Partagez cet article : https://mzl.la/3Qw0pIN Ces personnes ont …"
+    },
+    {
+      "title": "Firefox auf die neueste Version aktualisieren | Hilfe zu Firefox",
+      "url": "https://support.mozilla.org/de/kb/firefox-auf-die-letzte-version-aktualisieren",
+      "snippet": "Firefox aktualisieren Klicken Sie auf der rechten Seite der Firefox-Symbolleiste auf die Menüschaltfläche , um das Menü zu öffnen. …"
+    },
+    {
+      "title": "为什么有人爱 Firefox 胜过 Chrome 呢？ - 知乎",
+      "url": "https://www.zhihu.com/question/325600788",
+      "snippet": "FireFox：下载有史以来最快的 FirefoxChrome:Google Chrome 网络浏览器"
+    },
+    {
+      "title": "哪个是火狐浏览器的官方网站：firefox.com.cn还是mozilla.org？",
+      "url": "https://www.zhihu.com/question/298474968",
+      "snippet": "火狐浏览器有着两个版本，分别是 谋智版 与通用版，通常而言建议安装通用版。 谋智版： 只支持中文 (简体)，网页底部标注 北京谋 …"
+    },
+    {
+      "title": "Firefox downloaden en installeren in Windows | Hulp voor Firefox",
+      "url": "https://support.mozilla.org/nl/kb/firefox-downloaden-en-installeren-windows",
+      "snippet": "Firefox op uw computer installeren: Bezoek deze Firefox-downloadpagina in een willekeurige browser, zoals Edge. Klik op de knop …"
+    }
+  ]
+}

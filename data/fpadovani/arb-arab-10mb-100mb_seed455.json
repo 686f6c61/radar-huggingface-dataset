@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/arb-arab-10mb-100mb_seed455",
+  "slug": "fpadovani-arb-arab-10mb-100mb_seed455",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/arb-arab-10mb-100mb_seed455",
+  "created_at": "2026-09-16T20:29:37.000Z",
+  "updated_at": "2026-09-16T21:42:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:goldfish-models/arb_arab_10mb",
+    "base_model:finetune:goldfish-models/arb_arab_10mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 39087104,
+  "parameters_human": "39.1M",
+  "storage_bytes": 2112540142,
+  "storage_human": "2.1 GB",
+  "base_model": "goldfish-models/arb_arab_10mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "俄罗斯搜索引擎网址 yandex官网入口直达 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/725567645356284605.html",
+      "snippet": "Nov 11, 2025 · 俄罗斯搜索引擎网址 yandex官网入口直达Yandex的官方网址如下：国际版入口：https://yandex.com/俄罗斯本土版入 …"
+    },
+    {
+      "title": "验厂之家-小晏 的想法: Bosch验厂全面解析：标准 ...",
+      "url": "https://www.zhihu.com/pin/1963890063793453035",
+      "snippet": "二、 全面的审核标准体系Bosch验厂的标准涵盖多个维度，构成一个严密的评估网络。 1、社会责任：以人为本的基石 这是审核的核 …"
+    },
+    {
+      "title": "电脑qq怎么查看聊天记录 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/276566599257933685.html",
+      "snippet": "Jul 3, 2025 · 电脑QQ查看聊天记录的方法主要有两种：全部查看和单独查看。 一、全部查看聊天记录 打开QQ并点击符号： 首先，打 …"
+    },
+    {
+      "title": "Hybrid Gear 的想法: 博世TVbB技术：精准制动实现高效 ...",
+      "url": "https://www.zhihu.com/pin/1927330151479345539",
+      "snippet": "博世TVbB技术：精准制动实现高效转向 | TVbB（Torque Vectoring by Braking）通过单侧车轮精确制动生成横摆力矩，实现减少转弯 …"
+    }
+  ]
+}

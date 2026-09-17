@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "gnuchev/luminus-coder-7b-sft-adapter",
+  "slug": "gnuchev-luminus-coder-7b-sft-adapter",
+  "author": "gnuchev",
+  "url": "https://huggingface.co/gnuchev/luminus-coder-7b-sft-adapter",
+  "created_at": "2026-09-16T21:10:17.000Z",
+  "updated_at": "2026-09-16T21:32:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 92192324,
+  "storage_human": "92 MB",
+  "base_model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chicken Recipes",
+      "url": "https://www.allrecipes.com/recipes/201/meat-and-poultry/chicken/",
+      "snippet": "Find recipes for fried chicken, chicken breast, grilled chicken, chicken wings, and more! Allrecipes has more than 5,430 kitchen …"
+    },
+    {
+      "title": "50 of Our Best Chicken Recipes with 5-Star Ratings | Taste of Home",
+      "url": "https://www.tasteofhome.com/collection/5-star-best-chicken-recipes/",
+      "snippet": "Sep 20, 2024 · Our best chicken recipes dazzle any day of the week, whether you need a quick weeknight dinner or something …"
+    },
+    {
+      "title": "Chicken Recipes - RecipeTin Eats",
+      "url": "https://www.recipetineats.com/category/chicken-recipes/",
+      "snippet": "From the best Baked Chicken Breast, to the wildly popular Baked Chicken and Rice and Honey Garlic Chicken, to sticky Honey …"
+    },
+    {
+      "title": "Easy chicken recipes - BBC Food",
+      "url": "https://www.bbc.co.uk/food/collections/easy_chicken_recipes",
+      "snippet": "Whether in an easy chicken pasta dish or a simple stir-fry, we have all kinds of easy chicken recipes for you to try."
+    },
+    {
+      "title": "Chicken Recipes - Natasha's Kitchen",
+      "url": "https://natashaskitchen.com/category/main-course/chicken-and-poultry/",
+      "snippet": "Best chicken recipes for dinner, including baked, grilled, and skillet meals that are easy, juicy, and family-friendly."
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "muhamad-geosurge/invert-polarity-f929e5de-0198-49fa-a9df-fe7cf28a8b1c",
+  "slug": "muhamad-geosurge-invert-polarity-f929e5de-0198-49fa-a9df-fe7cf28a8b1c",
+  "author": "muhamad-geosurge",
+  "url": "https://huggingface.co/muhamad-geosurge/invert-polarity-f929e5de-0198-49fa-a9df-fe7cf28a8b1c",
+  "created_at": "2026-09-16T21:54:33.000Z",
+  "updated_at": "2026-09-16T21:55:19.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3_text",
+    "text-generation",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:1905.07830",
+    "arxiv:1905.10044",
+    "arxiv:1911.11641",
+    "arxiv:1904.09728",
+    "arxiv:1705.03551",
+    "arxiv:1911.01547",
+    "arxiv:1907.10641",
+    "arxiv:1903.00161",
+    "arxiv:2009.03300",
+    "arxiv:2304.06364",
+    "arxiv:2103.03874",
+    "arxiv:2110.14168",
+    "arxiv:2311.12022",
+    "arxiv:2108.07732",
+    "arxiv:2107.03374",
+    "arxiv:2210.03057",
+    "arxiv:2106.03193",
+    "arxiv:1910.11856",
+    "arxiv:2502.12404",
+    "arxiv:2502.21228",
+    "arxiv:2404.16816",
+    "arxiv:2104.12756",
+    "arxiv:2311.16502",
+    "arxiv:2203.10244",
+    "arxiv:2404.12390",
+    "arxiv:1810.12440",
+    "arxiv:1908.02660",
+    "arxiv:2312.11805",
+    "base_model:google/gemma-3-4b-pt",
+    "base_model:finetune:google/gemma-3-4b-pt",
+    "license:gemma",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3880104448,
+  "parameters_human": "3.88B",
+  "storage_bytes": 7793645432,
+  "storage_human": "7.8 GB",
+  "base_model": "google/gemma-3-4b-pt",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "شبكتي - منتديات درر العراق",
+      "url": "https://www.dorar-aliraq.net/threads/814344-%D8%B4%D8%A8%D9%83%D8%AA%D9%8A",
+      "snippet": "Jul 1, 2023 · شبكتي - شبكتي #ذوالفقار_الموسوي اخر مواضيعي توقيت ومواعيد الجولة الأولى - الدوري الإسباني لكرة القدم 2026/2027 مواصفات رسيفر جهاز Starnet BIGO (الخواجة …"
+    },
+    {
+      "title": "شبكة روايتي الثقافية | أكبر منتدى عربي للروايات والقصص",
+      "url": "https://www.rewity.com/forum/",
+      "snippet": "شبكة روايتي الثقافية - أكبر منتدى عربي للروايات والقصص المترجمة والمؤلفة. اكتشف آلاف الروايات الرومانسية والخيال العلمي والإثارة"
+    },
+    {
+      "title": "مصدر.. غلق تطبيق شبكتي و سينمانا - منتديات درر العراق",
+      "url": "https://www.dorar-aliraq.net/threads/1266503-%D9%85%D8%B5%D8%AF%D8%B1-%D8%BA%D9%84%D9%82-%D8%AA%D8%B7%D8%A8%D9%8A%D9%82-%D8%B4%D8%A8%D9%83%D8%AA%D9%8A-%D9%88-%D8%B3%D9%8A%D9%86%D9%85%D8%A7%D9%86%D8%A7",
+      "snippet": "Jul 30, 2023 · مصدر.. غلق تطبيق شبكتي و سينمانا - This video is no longer available because the YouTube account associated with this video …"
+    },
+    {
+      "title": "روايات اللغة العربية الفصحى المنقولة - شبكة روايتي الثقافية | أكبر ...",
+      "url": "https://www.rewity.com/forum/f407/",
+      "snippet": "روايات منقولة تدور لغتها وسلسلة أحداثها باللغة العربية الفصحى ."
+    },
+    {
+      "title": "الأمن الوطني يضبط شبكتي تزوير في ديالى وبغداد",
+      "url": "https://www.dorar-aliraq.net/threads/1324287-%D8%A7%D9%84%D8%A3%D9%85%D9%86-%D8%A7%D9%84%D9%88%D8%B7%D9%86%D9%8A-%D9%8A%D8%B6%D8%A8%D8%B7-%D8%B4%D8%A8%D9%83%D8%AA%D9%8A-%D8%AA%D8%B2%D9%88%D9%8A%D8%B1-%D9%81%D9%8A-%D8%AF%D9%8A%D8%A7%D9%84%D9%89-%D9%88%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF",
+      "snippet": "Sep 20, 2024 · هنا النتائج 1 إلى 3 من 3 الموضوع: الأمن الوطني يضبط شبكتي تزوير في ديالى وبغداد مشاركة الموضوع الزوار من محركات البحث: 763 المشاهدات : 2471 الردود: 2 هذا …"
+    }
+  ]
+}

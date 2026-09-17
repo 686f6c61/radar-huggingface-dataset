@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Sophea-Nemo-3-Nano-v1-i1-GGUF",
+  "slug": "mradermacher-sophea-nemo-3-nano-v1-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Sophea-Nemo-3-Nano-v1-i1-GGUF",
+  "created_at": "2026-09-16T20:26:24.000Z",
+  "updated_at": "2026-09-17T00:22:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "el",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "arxiv:2608.17744",
+    "greek",
+    "reasoning",
+    "thinking",
+    "language-matched",
+    "moe",
+    "mamba",
+    "nemotron",
+    "hybrid",
+    "el",
+    "en",
+    "base_model:ayoubkirouane/Sophea-Nemo-3-Nano-v1",
+    "base_model:quantized:ayoubkirouane/Sophea-Nemo-3-Nano-v1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31577940288,
+  "parameters_human": "31.58B",
+  "storage_bytes": 459521154880,
+  "storage_human": "459.5 GB",
+  "base_model": "ayoubkirouane/Sophea-Nemo-3-Nano-v1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Shein 上市估值从 1000 亿缩水到 270 亿美元，跨境电商快时尚的「黄 …",
+      "url": "https://www.zhihu.com/question/2075160925938479869",
+      "snippet": "2022年SHEIN对2025年营收的预期是585亿美元，而实际上2025年其营收只有418亿美元。 资本市场在“独角兽”上市前往往会把其市值 …"
+    },
+    {
+      "title": "[新聞] Shein上市三天即破發？消費放緩讓投資人 - 看板 Stock - 批踢踢 …",
+      "url": "https://www.ptt.cc/bbs/Stock/M.1788524127.A.8C2.html",
+      "snippet": "Sep 4, 2026 · 目前Shein的市值，與其過去的輝煌估值，形成巨大反差。 在疫情封鎖期間，受惠於社群上熱門的「Shein開箱 …"
+    },
+    {
+      "title": "在SheIn工作的感觉怎么样？ - 知乎",
+      "url": "https://www.zhihu.com/question/271570265",
+      "snippet": "选择SHEIN原因只有两点，一是工资福利待遇简简单单超过80%的应届生。 二是公司是跨境电商行业的巨头，来这能够得到系统化的 …"
+    },
+    {
+      "title": "[心得] SHEIN 你的雷雷伙伴 - 看板 e-shopping - 批踢踢實業坊",
+      "url": "https://www.ptt.cc/bbs/e-shopping/M.1561618178.A.B60.html",
+      "snippet": "Jun 27, 2019 · 1. SHEIN Self Belted Paperbag Waist Shorts (黑色自綁帶短褲) - US$11.79 話說那個Self Belted說得真好呢，因為褲子 …"
+    },
+    {
+      "title": "SHEIN - 知乎",
+      "url": "https://www.zhihu.com/org/shein-60",
+      "snippet": "Apr 17, 2020 · 昨天你的朋友圈，被“ 听说SHEIN爆单啦 ”刷屏了吗？看完推文的你，是不是也深感自豪，也想去佛山康康SHEIN正在发 …"
+    }
+  ]
+}

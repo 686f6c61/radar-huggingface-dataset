@@ -5,7 +5,7 @@
   "author": "fastino",
   "url": "https://huggingface.co/fastino/Fastino-Nemotron-3.5-Lightning-Finance",
   "created_at": "2026-08-06T08:52:08.000Z",
-  "updated_at": "2026-09-03T23:00:49.000Z",
+  "updated_at": "2026-09-17T04:31:28.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -38,7 +38,7 @@
   "trending_score": 8,
   "parameters": 31577937344,
   "parameters_human": "31.58B",
-  "storage_bytes": 131681289316,
+  "storage_bytes": 131681945814,
   "storage_human": "131.7 GB",
   "base_model": "nvidia/Nemotron-3.5-Lightning",
   "formats": [

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Drowsy-zZ/klue-bert-nsmc-finetuned",
+  "slug": "drowsy-zz-klue-bert-nsmc-finetuned",
+  "author": "Drowsy-zZ",
+  "url": "https://huggingface.co/Drowsy-zZ/klue-bert-nsmc-finetuned",
+  "created_at": "2026-09-17T02:07:01.000Z",
+  "updated_at": "2026-09-17T02:07:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 110618882,
+  "parameters_human": "110.6M",
+  "storage_bytes": 442499040,
+  "storage_human": "442 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Télécharger et installer le pilote d’imprimante - Brother Canada",
+      "url": "https://soutien.brother.ca/app/answers/detail/a_id/139442/~/t%C3%A9l%C3%A9charger-et-installer-le-pilote-d%E2%80%99imprimante.",
+      "snippet": "Télécharger et installer le pilote d’imprimante Cela s’applique-t-il à votre appareil? Cliquez ici pour le savoir."
+    },
+    {
+      "title": "Pilote imprimante canon IR2420 - Réseau - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-31598645-pilote-imprimante-canon-ir2420",
+      "snippet": "Feb 21, 2015 · Pilote imprimante canon IR2420 vassiriki scofield - Modifié le 21 févr. 2015 à 16:09 bedj 02 - 3 févr. 2016 à 13:25"
+    },
+    {
+      "title": "Ajouter un pilote d'imprimante - Windows 11 - Brother Canada",
+      "url": "https://soutien.brother.ca/app/answers/detail/a_id/185225",
+      "snippet": "Ajouter un pilote d'imprimante - Windows 11 Cela s’applique-t-il à votre appareil? Cliquez ici pour le savoir."
+    },
+    {
+      "title": "Pilote imprimante hp c4280 [Résolu] - Imprimante - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-37539537-pilote-imprimante-hp-c4280",
+      "snippet": "Mar 4, 2022 · Pilote imprimante hp c4280 Résolu Pilote flower69170 - Modifié le 4 mars 2022 à 17:42 cristali - 9 mars 2022 à 10:42"
+    },
+    {
+      "title": "Pilote HP Photosmart C5180 tout en un - Imprimante",
+      "url": "https://forums.commentcamarche.net/forum/affich-34989245-pilote-hp-photosmart-c5180-tout-en-un",
+      "snippet": "Bonjour, J'ai dû réinitialiser mon ordi sous Windows 10 64 bits mais je ne parviens pas à télécharger le pilote complet pour mon …"
+    }
+  ]
+}

@@ -16,7 +16,8 @@
     "image-to-video",
     "base_model:Wan-AI/Wan2.2-I2V-A14B",
     "base_model:finetune:Wan-AI/Wan2.2-I2V-A14B",
-    "region:us"
+    "region:us",
+    "not-for-all-audiences"
   ],
   "likes": 17,
   "downloads_30d": 0,

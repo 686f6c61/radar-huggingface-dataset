@@ -25,7 +25,7 @@
   "trending_score": 9,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 731601758682,
+  "storage_bytes": 731601965967,
   "storage_human": "731.6 GB",
   "base_model": "nvidia/ChronoEdit-14B-Diffusers, Wan-AI/Wan2.2-Animate-14B, alibaba-pai/Wan2.2-Fun-A14B-Control-Camera, alibaba-pai/Wan2.2-Fun-A14B-Control, alibaba-pai/Wan2.2-Fun-5B-Control, alibaba-pai/Wan2.2-Fun-5B-InP, alibaba-pai/Wan2.2-Fun-A14B-InP, alibaba-pai/Wan2.2-VACE-Fun-A14B, Wan-AI/Wan2.2-I2V-A14B, Wan-AI/Wan2.2-S2V-14B, Wan-AI/Wan2.2-T2V-A14B, Wan-AI/Wan2.2-TI2V-5B, lightx2v/Wan2.2-Distill-Loras",
   "formats": [],

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "genaforvena/english-char257",
+  "slug": "genaforvena-english-char257",
+  "author": "genaforvena",
+  "url": "https://huggingface.co/genaforvena/english-char257",
+  "created_at": "2026-09-16T22:46:25.000Z",
+  "updated_at": "2026-09-16T22:47:03.000Z",
+  "license": "cc0-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "finnegans-wake",
+    "tiny-language-model",
+    "license:cc0-1.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 10942848,
+  "parameters_human": "10.9M",
+  "storage_bytes": 43778928,
+  "storage_human": "44 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jubel für Königspaar vom 22.11.2007 – ORF-TVthek",
+      "url": "https://tvthek.orf.at/history/Burgenland/13557893/Jubel-fuer-Koenigspaar/13967628",
+      "snippet": "Nov 21, 2007 · Im Jahr 2007 besuchten König Carl Gustav und seine Frau Silvia das Burgenland. Silvia hielt sich dezent im …"
+    },
+    {
+      "title": "Silvius Magnago: Ein Leben für Südtirol - ORF-TVthek",
+      "url": "https://tvthek.orf.at/history/Die-Geschichte-Suedtirols/13557875/Silvius-Magnago-Ein-Leben-fuer-Suedtirol/12209215",
+      "snippet": "Am 25. Mai 2010 starb Südtirols Altlandeshauptmann Silvius Magnago im Alter von 96 Jahren. Er gilt als Vater der Südtiroler …"
+    },
+    {
+      "title": "Hans Purin: Gründervater der Neuen Vorarlberger Bauschule - ORF …",
+      "url": "https://tvthek.orf.at/profile/Archiv/7648449/Hans-Purin-Gruendervater-der-Neuen-Vorarlberger-Bauschule/11699946/Hans-Purin-Gruendervater-der-Neuen-Vorarlberger-Bauschule/11700060",
+      "snippet": "Aug 4, 2010 · Der Bregenzer Architekt Hans Purin gilt als einer der Gründerväter der Neuen Vorarlberger Bauschule. Bis zu seinem …"
+    },
+    {
+      "title": "Köhlmeier und Brauer über Vergangenheitsbewältigung - ORF-TVthek",
+      "url": "https://tvthek.orf.at/profile/Archiv/7648449/Koehlmeier-und-Brauer-ueber-Vergangenheitsbewaeltigung/14080617/Koehlmeier-und-Brauer-ueber-Vergangenheitsbewaeltigung/14849803",
+      "snippet": "May 1, 2019 · Im Gedenkjahr 2018 haben sowohl Autor Michael Köhlmeier als auch Künstler Arik Brauer aufsehenerregende Reden …"
+    },
+    {
+      "title": "Gedenken an die Opfer der Schoah - ORF-TVthek",
+      "url": "https://tvthek.orf.at/profile/Archiv/7648449/Gedenken-an-die-Opfer-der-Schoah/14092750/Gedenken-an-die-Opfer-der-Schoah/14920479",
+      "snippet": "Jan 30, 2021 · Das österreichische Parlament hat anlässlich des internationalen Holocaust-Gedenktages 2021 eine Diskussion …"
+    }
+  ]
+}

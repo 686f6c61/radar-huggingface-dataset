@@ -5,7 +5,7 @@
   "author": "nex-agi",
   "url": "https://huggingface.co/nex-agi/Nex-N2.5-Pro",
   "created_at": "2026-09-08T11:01:41.000Z",
-  "updated_at": "2026-09-11T03:37:15.000Z",
+  "updated_at": "2026-09-17T05:52:53.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -24,13 +24,13 @@
     "compressed-tensors",
     "region:us"
   ],
-  "likes": 656,
-  "downloads_30d": 31251,
-  "trending_score": 380,
+  "likes": 652,
+  "downloads_30d": 30881,
+  "trending_score": 475,
   "parameters": 396802360816,
   "parameters_human": "396.80B",
-  "storage_bytes": 407173906563,
-  "storage_human": "407.2 GB",
+  "storage_bytes": 809058479611,
+  "storage_human": "809.1 GB",
   "base_model": null,
   "formats": [
     "safetensors"

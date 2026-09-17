@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "PrunaAI/livekit-turn-detector-HQQ-8bit-smashed",
+  "slug": "prunaai-livekit-turn-detector-hqq-8bit-smashed",
+  "author": "PrunaAI",
+  "url": "https://huggingface.co/PrunaAI/livekit-turn-detector-HQQ-8bit-smashed",
+  "created_at": "2026-09-17T00:08:14.000Z",
+  "updated_at": "2026-09-17T00:08:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pruna-ai",
+  "languages": [],
+  "tags": [
+    "pruna-ai",
+    "llama",
+    "base_model:livekit/turn-detector",
+    "base_model:finetune:livekit/turn-detector",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 170213491,
+  "storage_human": "170 MB",
+  "base_model": "livekit/turn-detector",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sindh - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Sindh",
+      "snippet": "The Mughal Empire captured Sindh in the late 16th century, and directly ruled it until 1701, when the Kalhora dynasty became the …"
+    },
+    {
+      "title": "History of Sindh - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/History_of_Sindh",
+      "snippet": "The history of Sindh refers to the history of the modern-day Pakistani province of Sindh, as well as neighboring regions that …"
+    },
+    {
+      "title": "Sindh | History, Culture & Economy | Britannica",
+      "url": "https://www.britannica.com/place/Sindh-province-Pakistan",
+      "snippet": "Aug 17, 2026 · Sindh is essentially part of the Indus River delta and has derived its name from that river, which is known in Pakistan …"
+    },
+    {
+      "title": "Government of Sindh",
+      "url": "https://www.sindh.gov.pk/?gtranslate=en",
+      "snippet": "In Sindh, rules and ordinances are governed by a variety of legal documents, including acts, ordinances, and departmental rules. …"
+    },
+    {
+      "title": "Sindh - Simple English Wikipedia, the free encyclopedia",
+      "url": "https://simple.wikipedia.org/wiki/Sindh",
+      "snippet": "The Pakistani province of Sindh and the people inhabiting the region had been designated after the river known in Ancient times as …"
+    }
+  ]
+}

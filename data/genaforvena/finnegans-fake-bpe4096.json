@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "genaforvena/finnegans-fake-bpe4096",
+  "slug": "genaforvena-finnegans-fake-bpe4096",
+  "author": "genaforvena",
+  "url": "https://huggingface.co/genaforvena/finnegans-fake-bpe4096",
+  "created_at": "2026-09-16T22:47:04.000Z",
+  "updated_at": "2026-09-16T22:47:26.000Z",
+  "license": "cc0-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "finnegans-wake",
+    "tiny-language-model",
+    "license:cc0-1.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 12318720,
+  "parameters_human": "12.3M",
+  "storage_bytes": 49282416,
+  "storage_human": "49 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lounes BOUGHANIME - Entrepreneur - MGL Services. Hôtellerie ...",
+      "url": "https://fr.linkedin.com/in/lounes-boughanime-b13011296",
+      "snippet": "Fort d'une expérience en hôtellerie, restauration de luxe et tourisme, je propose mes services pour missions ponctuelles ou …"
+    },
+    {
+      "title": "Lounes Boughanime, Assistance Administratif, Commercial et Hôtellerie",
+      "url": "https://www.malt.fr/profile/lounesboughanime1",
+      "snippet": "Consultez le profil du freelance Lounes Boughanime, Assistance Administratif, Commercial et Hôtellerie. Collaborez avec les …"
+    },
+    {
+      "title": "BOUGHANIME LOUNES (934166760) : Chiffre d'affaires, statuts",
+      "url": "https://www.pappers.fr/entreprise/boughanime-lounes-934166760",
+      "snippet": "May 15, 2025 · BOUGHANIME LOUNES à PARIS (75012) : Bilans, statuts, chiffre d'affaires, dirigeants, actionnaires, levées de …"
+    },
+    {
+      "title": "CV Boughanime Lounes | Lounes BOUGHANIME - LinkedIn",
+      "url": "https://fr.linkedin.com/posts/lounes-boughanime-b13011296_cv-boughanime-lounes-activity-7133427399412584448-qP2J",
+      "snippet": "En effet, vu que c’est la première fois que je me retrouve à chercher une alternance, il doit sûrement y avoir des choses ou des …"
+    },
+    {
+      "title": "Lounes Boughanime, Administrative, Commercial and Hospitality …",
+      "url": "https://www.malt.com/profile/lounesboughanime1",
+      "snippet": "View the freelancer profile for Lounes Boughanime, Administrative, Commercial and Hospitality Assistance. Work with the best …"
+    }
+  ]
+}

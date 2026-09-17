@@ -5,7 +5,7 @@
   "author": "Immerwinter",
   "url": "https://huggingface.co/Immerwinter/roberta-wechsel-privacy-policy-content-retention",
   "created_at": "2026-08-21T11:46:59.000Z",
-  "updated_at": "2026-08-28T08:39:46.000Z",
+  "updated_at": "2026-09-16T14:19:41.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -14,12 +14,13 @@
     "de"
   ],
   "tags": [
+    "onnx",
     "safetensors",
     "roberta",
     "text-classification",
     "de",
     "base_model:benjamin/roberta-base-wechsel-german",
-    "base_model:finetune:benjamin/roberta-base-wechsel-german",
+    "base_model:quantized:benjamin/roberta-base-wechsel-german",
     "license:apache-2.0",
     "region:us"
   ],
@@ -28,10 +29,11 @@
   "trending_score": 0,
   "parameters": 124654091,
   "parameters_human": "124.7M",
-  "storage_bytes": 498645773,
-  "storage_human": "499 MB",
+  "storage_bytes": 624575359,
+  "storage_human": "625 MB",
   "base_model": "benjamin/roberta-base-wechsel-german",
   "formats": [
+    "onnx",
     "safetensors"
   ],
   "is_conversational": false,

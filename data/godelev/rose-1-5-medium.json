@@ -5,7 +5,7 @@
   "author": "GODELEV",
   "url": "https://huggingface.co/GODELEV/Rose-1.5-Medium",
   "created_at": "2026-09-09T12:10:19.000Z",
-  "updated_at": "2026-09-10T08:16:36.000Z",
+  "updated_at": "2026-09-21T11:56:38.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -30,7 +30,7 @@
     "region:us"
   ],
   "likes": 19,
-  "downloads_30d": 600,
+  "downloads_30d": 590,
   "trending_score": 19,
   "parameters": 98612288,
   "parameters_human": "98.6M",

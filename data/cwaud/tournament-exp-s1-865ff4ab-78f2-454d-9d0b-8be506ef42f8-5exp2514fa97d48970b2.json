@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "cwaud/tournament-exp-s1-865ff4ab-78f2-454d-9d0b-8be506ef42f8-5Exp2514fa97d48970b2",
+  "slug": "cwaud-tournament-exp-s1-865ff4ab-78f2-454d-9d0b-8be506ef42f8-5exp2514fa97d48970b2",
+  "author": "cwaud",
+  "url": "https://huggingface.co/cwaud/tournament-exp-s1-865ff4ab-78f2-454d-9d0b-8be506ef42f8-5Exp2514fa97d48970b2",
+  "created_at": "2026-09-17T02:28:02.000Z",
+  "updated_at": "2026-09-17T02:28:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 134515008,
+  "parameters_human": "134.5M",
+  "storage_bytes": 269060552,
+  "storage_human": "269 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "引脚图标示vin,bst,sw,fb,en是什么意思？_百度知道",
+      "url": "https://zhidao.baidu.com/question/332499249577744845.html",
+      "snippet": "Jul 11, 2017 · 引脚图标示vin,bst,sw,fb,en是什么意思？一、这是开关电源芯片控制脚标志：1、EN 使能脚，一般高电平使芯片工作。2 …"
+    },
+    {
+      "title": "早餐BB,早晚餐HB,三餐FB,全包AI,英文缩写是怎么来的?",
+      "url": "https://zhidao.baidu.com/question/267323000388307685.html",
+      "snippet": "早餐BB：Bed &Breakfast（住宿和早晨），指住宿含早餐； 半餐HB：Half Board（半餐）， 早餐+中餐或晚餐，大多数人选择早晚餐 …"
+    },
+    {
+      "title": "Calendrier des sorties - BDGest",
+      "url": "https://www.bdgest.com/sorties_comics",
+      "snippet": "May 8, 2026 · La base de données BD, manga et comics de référence. Séries, albums, auteurs, cotes, informations détaillées et …"
+    },
+    {
+      "title": "facebook官网网址是什么? - 百度知道",
+      "url": "https://zhidao.baidu.com/question/572380199460378164.html",
+      "snippet": "Jun 26, 2024 · 您好， 跨境王 很荣幸为您解答： Facebook官方网站是：www.facebook.com。 您可以直接将这个网址输入到浏览器的 …"
+    },
+    {
+      "title": "打开博图程序块一直在转圈 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/1508335783607019699.html",
+      "snippet": "Jul 12, 2025 · 打开博图程序块一直在转圈打开博图程序块一直在转圈，可能的原因及解决方法包括以下几点：许可证问题：博图v18的 …"
+    }
+  ]
+}

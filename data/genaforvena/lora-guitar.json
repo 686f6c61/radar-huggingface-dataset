@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "genaforvena/lora-guitar",
+  "slug": "genaforvena-lora-guitar",
+  "author": "genaforvena",
+  "url": "https://huggingface.co/genaforvena/lora-guitar",
+  "created_at": "2026-09-16T22:52:34.000Z",
+  "updated_at": "2026-09-16T22:55:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:HuggingFaceTB/SmolLM2-360M-Instruct",
+    "lora",
+    "transformers",
+    "text-generation",
+    "arxiv:1910.09700",
+    "base_model:HuggingFaceTB/SmolLM2-360M-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 34793120,
+  "storage_human": "35 MB",
+  "base_model": "HuggingFaceTB/SmolLM2-360M-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "256 km/h sur une route à 90, à 2h du matin : sa Golf GTI",
+      "url": "https://www.autonews.fr/buzz/256-km-h-sur-une-route-a-90-a-2h-du-matin-sa-golf-gti-saisie-son-permis-retire-sur-le-champ-la-route-a-pied-va-etre-bien-longue-148509",
+      "snippet": "17 hours ago · ‎Sécurité routière : le conducteur repart à pied ‎La sanction administrative est intervenue immédiatement. Son permis …"
+    },
+    {
+      "title": "Contrôlé à 256 km/h sur une route départementale, l'automobiliste ...",
+      "url": "https://france3-regions.franceinfo.fr/occitanie/aveyron/rodez/controle-a-256-km-h-sur-une-route-departementale-l-automobiliste-repart-a-pied-3417605.html",
+      "snippet": "1 day ago · Les gendarmes de la brigade d'Espalion (Aveyron) ont intercepté un automobiliste à bord de sa voiture, une Golf GTI, qui …"
+    },
+    {
+      "title": "Aveyron : il roulait à 256 km/h sur une route limitée à 90 km/h",
+      "url": "https://infoccitanie.fr/aveyron-il-roulait-a-256-km-h-sur-une-route-limitee-a-90-km-h/",
+      "snippet": "9 hours ago · Un jeune de 22 ans a été interpellé après avoir roulé à 256 km/h sur une route limitée à 90 km/h. Il est convoqué …"
+    },
+    {
+      "title": "Il fonce à 256 km/h sur une route limitée à 90 en pleine nuit, mais les ...",
+      "url": "https://www.centrepresseaveyron.fr/2026/09/15/il-fonce-a-256-kmh-sur-une-route-limitee-a-90-en-pleine-nuit-mais-les-gendarmes-netaient-pas-encore-couches-le-conducteur-de-22-ans-dit-adieu-a-son-13552569.php",
+      "snippet": "1 day ago · Les gendarmes de l'Aveyron ont réussi à intercepter un chauffard enregistré à 256 km/h à proximité de Bozouls, en …"
+    },
+    {
+      "title": "À 22 ans, il est intercepté à 256 km/h au volant d'une Golf GTI en ...",
+      "url": "https://www.autojournal.fr/actu/insolites-actu/22-ans-256-kmh-golf-gti-aveyron-425545.html",
+      "snippet": "6 hours ago · Dans la nuit du 12 au 13 septembre 2026, une Golf GTI est flashée à 256 km/h sur la RD 988 entre Rodez et Bozouls. …"
+    }
+  ]
+}

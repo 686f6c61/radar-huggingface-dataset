@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "oboroge0/hayamimi-punct-ja-4class",
+  "slug": "oboroge0-hayamimi-punct-ja-4class",
+  "author": "oboroge0",
+  "url": "https://huggingface.co/oboroge0/hayamimi-punct-ja-4class",
+  "created_at": "2026-09-16T22:50:22.000Z",
+  "updated_at": "2026-09-16T22:50:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": null,
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "punctuation-restoration",
+    "token-classification",
+    "hayamimi",
+    "ja",
+    "dataset:HuggingFaceFW/fineweb-2",
+    "base_model:sbintuitions/modernbert-ja-30m",
+    "base_model:quantized:sbintuitions/modernbert-ja-30m",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 331597410,
+  "storage_human": "332 MB",
+  "base_model": "sbintuitions/modernbert-ja-30m",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "アダルトサイトを見ていて、ウイルスにかかることはありますか？ま …",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q12287453317",
+      "snippet": "Oct 14, 2023 · アダルトサイトを見ていて、ウイルスにかかることはありますか？また、ウイルスに罹ったら、スマホ内の写真を保 …"
+    },
+    {
+      "title": "pornhab、なんで最近、ワンクリック詐欺の年齢確認が出てくるよう.",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q14287528974",
+      "snippet": "Oct 15, 2023 · 昔から「公式として」出していたのでは？ ※まぁPornhubの偽サイトの可能性もありますが、それはURLの ドメイン …"
+    },
+    {
+      "title": "Supprimer un site porno [Résolu] - Forum Réseaux sociaux",
+      "url": "https://forums.commentcamarche.net/forum/affich-34704918-supprimer-un-site-porno",
+      "snippet": "Jul 5, 2017 · Bonjour, <comment supprimer un site porno de mon PC ,porno attitude et Tukif..merci"
+    },
+    {
+      "title": "Supprimer compte pornhub - Forum Réseaux sociaux",
+      "url": "https://forums.commentcamarche.net/forum/affich-36953588-supprimer-compte-pornhub",
+      "snippet": "Nov 20, 2020 · Bonjour, \"Pour supprimer votre compte, utilisez le menu déroulant en haut à droite de la page contenant votre photo …"
+    },
+    {
+      "title": "pornhubというサイトで年齢確認 (18歳以上ですか？)と出て.",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q12232098012",
+      "snippet": "Sep 25, 2020 · pornhubというサイトで年齢確認(18歳以上ですか？)と出てきたので18歳以上を押したところ会員登録されました。 …"
+    }
+  ]
+}

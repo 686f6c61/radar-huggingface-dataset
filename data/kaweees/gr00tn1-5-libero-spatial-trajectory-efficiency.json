@@ -5,10 +5,10 @@
   "author": "kaweees",
   "url": "https://huggingface.co/kaweees/gr00tn1.5-libero-spatial-trajectory-efficiency",
   "created_at": "2026-09-15T19:12:33.000Z",
-  "updated_at": "2026-09-15T21:15:07.000Z",
+  "updated_at": "2026-09-18T18:20:01.000Z",
   "license": null,
   "license_family": "unknown",
-  "pipeline_tag": null,
+  "pipeline_tag": "robotics",
   "library": null,
   "languages": [],
   "tags": [
@@ -20,9 +20,9 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 174119918629,
-  "storage_human": "174.1 GB",
-  "base_model": "nvidia/GR00T-N1.5-3B",
+  "storage_bytes": 360621940979,
+  "storage_human": "360.6 GB",
+  "base_model": "nvidia/GR00T-N1-2B, nvidia/GR00T-N1.5-3B, nvidia/GR00T-N1.6-3B, nvidia/GR00T-N1.7-3B",
   "formats": [
     "safetensors"
   ],

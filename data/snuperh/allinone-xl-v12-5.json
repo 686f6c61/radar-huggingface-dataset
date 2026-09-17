@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "snuperh/AllInOne-XL-V12.5",
+  "slug": "snuperh-allinone-xl-v12-5",
+  "author": "snuperh",
+  "url": "https://huggingface.co/snuperh/AllInOne-XL-V12.5",
+  "created_at": "2026-09-17T01:03:51.000Z",
+  "updated_at": "2026-09-17T01:03:51.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "stable-diffusion-xl",
+    "sdxl",
+    "text-to-image",
+    "safetensors",
+    "merge",
+    "anime",
+    "realistic",
+    "2.5d",
+    "photorealistic",
+    "pony",
+    "noobai",
+    "art",
+    "en",
+    "base_model:Laxhar/noobai-XL-1.0",
+    "base_model:merge:Laxhar/noobai-XL-1.0",
+    "base_model:LyliaEngine/Pony_Diffusion_V6_XL",
+    "base_model:merge:LyliaEngine/Pony_Diffusion_V6_XL",
+    "base_model:OnomaAIResearch/Illustrious-XL-v1.0",
+    "base_model:merge:OnomaAIResearch/Illustrious-XL-v1.0",
+    "base_model:stabilityai/stable-diffusion-xl-base-1.0",
+    "base_model:merge:stabilityai/stable-diffusion-xl-base-1.0",
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6938040682,
+  "storage_human": "6.9 GB",
+  "base_model": "OnomaAIResearch/Illustrious-XL-v1.0, LyliaEngine/Pony_Diffusion_V6_XL, Laxhar/noobai-XL-1.0, stabilityai/stable-diffusion-xl-base-1.0",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hostinger - Bring Your Idea Online With a Website",
+      "url": "https://www.hostinger.com/",
+      "snippet": "Hostinger is an AI-first platform that lets anyone build, run, and grow a business online. You can create websites, web apps, and …"
+    },
+    {
+      "title": "Hostinger - Bring Your Idea Online With a Website",
+      "url": "https://www.hostinger.com/in",
+      "snippet": "Choose Hostinger and make the perfect site. From Shared Hosting and Domains to VPS and Cloud plans. We have all you need for …"
+    },
+    {
+      "title": "Hostinger login | Sign in to Hostinger account",
+      "url": "https://auth.hostinger.com/login",
+      "snippet": "Forgot password? Log in Can't Access Your Account? Don't have an account? Sign Up"
+    },
+    {
+      "title": "Log in to Hostinger Mail",
+      "url": "https://mail.hostinger.com/",
+      "snippet": "Access your Hostinger Mail account. Enjoy secure, reliable professional email with AI-powered features for smarter and faster …"
+    },
+    {
+      "title": "Hostinger login | Sign in to Hostinger account",
+      "url": "https://auth.hostinger.com/ae/login",
+      "snippet": "قم بتسجيل الدخول إلى حساب Hostinger الخاص بك للوصول إلى خدمات الاستضافة وإنشاء المواقع بسهولة وأمان."
+    }
+  ]
+}

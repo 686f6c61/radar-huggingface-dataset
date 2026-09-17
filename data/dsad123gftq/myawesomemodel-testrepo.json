@@ -4,8 +4,8 @@
   "slug": "dsad123gftq-myawesomemodel-testrepo",
   "author": "DSAD123GFTQ",
   "url": "https://huggingface.co/DSAD123GFTQ/MyAwesomeModel-TestRepo",
-  "created_at": "2026-09-14T17:44:20.000Z",
-  "updated_at": "2026-09-14T17:44:24.000Z",
+  "created_at": "2026-09-20T06:14:37.000Z",
+  "updated_at": "2026-09-20T06:14:53.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -31,8 +31,8 @@
   "formats": [],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-09-16T03:26:22.274Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

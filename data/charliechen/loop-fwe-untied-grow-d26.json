@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "CharlieChen/loop-fwe-untied-grow-d26",
+  "slug": "charliechen-loop-fwe-untied-grow-d26",
+  "author": "CharlieChen",
+  "url": "https://huggingface.co/CharlieChen/loop-fwe-untied-grow-d26",
+  "created_at": "2026-09-16T21:54:31.000Z",
+  "updated_at": "2026-09-16T21:57:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "looped-transformer",
+    "scaling-laws",
+    "pytorch",
+    "base-model",
+    "text-generation",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 29696321312,
+  "storage_human": "29.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "쿼리(Query)란 무엇인가? - 네이버 블로그",
+      "url": "https://blog.naver.com/PostView.nhn?blogId=rlarbtjq7913&logNo=221805728231",
+      "snippet": "쿼리 (Query)는 대개 데이터베이스로부터 특정한 주제어나 어귀를 찾기 위해 사용됩니다. 주제어가 검색엔진의 검색필드 내에 입력된 다음, …"
+    },
+    {
+      "title": "쿼리(Query)뜻, IT 실무자도 놓치는 핵심 개념 총정리 - 네이버 블로그",
+      "url": "https://blog.naver.com/PostView.naver?blogId=dallo__&logNo=223655455337",
+      "snippet": "ChatGPT로 대화할 때도, 빅데이터를 분석할 때도 빠지지 않고 등장하는 이 단어는 이제 피할 수 없는 IT 필수 용어가 되었는데요. 그래서 …"
+    },
+    {
+      "title": "02. 쿼리 (query)란 무엇인가?",
+      "url": "https://hengbokhan.tistory.com/133",
+      "snippet": "Mar 18, 2021 · 첫 번째 타자는 바로 쿼리 (Query) 다. 항상 딱 봤을 때 뭔지 모르겠으면 이름을 뜯어보는 게 먼저다. 이름을 막 짓진 않았을 …"
+    },
+    {
+      "title": "쿼리 - 나무위키",
+      "url": "https://namu.wiki/w/%EC%BF%BC%EB%A6%AC",
+      "snippet": "Apr 28, 2026 · 이러한 질의를 위한 특정한 구조의 프로그램 언어를 사용하기도 하며 대표적으로 SQL (Structured Query Language)이 …"
+    },
+    {
+      "title": "[SQL] query란 무엇일까? - 벨로그",
+      "url": "https://velog.io/@rgfdds98/SQL-query%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%BC%EA%B9%8C",
+      "snippet": "그렇게 때문에 정보를 처리하는 과정에서 query를 보내면 이에 따른 정보를 DB로부터 가져온다. DB용 언어를 SQL이라고 하는데, query는 …"
+    }
+  ]
+}

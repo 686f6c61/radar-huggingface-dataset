@@ -5,7 +5,7 @@
   "author": "mario-rc",
   "url": "https://huggingface.co/mario-rc/multi-domain-rm-qwen-3-nemotron-8b-it",
   "created_at": "2026-06-04T17:15:25.000Z",
-  "updated_at": "2026-08-22T22:58:58.000Z",
+  "updated_at": "2026-09-16T15:50:32.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-classification",
@@ -43,8 +43,8 @@
   "trending_score": 0,
   "parameters": 7568763945,
   "parameters_human": "7.57B",
-  "storage_bytes": 30286691162,
-  "storage_human": "30.3 GB",
+  "storage_bytes": 34233146042,
+  "storage_human": "34.2 GB",
   "base_model": "nvidia/Qwen3-Nemotron-8B-BRRM",
   "formats": [
     "safetensors"

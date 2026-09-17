@@ -30,7 +30,8 @@
     "base_model:quantized:ReadyArt/Melody1437-31B",
     "license:apache-2.0",
     "endpoints_compatible",
-    "region:us"
+    "region:us",
+    "not-for-all-audiences"
   ],
   "likes": 0,
   "downloads_30d": 832,

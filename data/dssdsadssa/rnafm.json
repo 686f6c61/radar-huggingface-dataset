@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "dssdsadssa/rnafm",
+  "slug": "dssdsadssa-rnafm",
+  "author": "dssdsadssa",
+  "url": "https://huggingface.co/dssdsadssa/rnafm",
+  "created_at": "2026-09-17T02:33:42.000Z",
+  "updated_at": "2026-09-17T02:33:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "arxiv:2204.00300",
+    "arxiv:2002.05810",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3784127356,
+  "storage_human": "3.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prisijungti – „Google“ paskyros",
+      "url": "https://accounts.google.com/login?hl=lt",
+      "snippet": "Naudokite privataus naršymo langą ir prisijunkite. Sužinokite daugiau apie svečio režimo naudojimą."
+    },
+    {
+      "title": "Gmail - Google Accounts",
+      "url": "https://accounts.google.com/servicelogin?service=mail",
+      "snippet": "Not your computer? Use a private browsing window to sign in. Learn more about using Guest mode. Gmail is email that’s intuitive, …"
+    },
+    {
+      "title": "Prisijungimas prie „Gmail“ - Kompiuteris - Gmail Žinynas",
+      "url": "https://support.google.com/mail/answer/8494?hl=lt&co=GENIE.Platform%3DDesktop",
+      "snippet": "Prisijungimas Kompiuteryje eikite į „Gmail“. Įveskite „Google“ paskyros el. pašto adresą arba telefono numerį ir slaptažodį. Jei …"
+    },
+    {
+      "title": "Prisijungti",
+      "url": "https://drive.google.com/?hl=lt",
+      "snippet": "Pasiekite „Google“ diską naudodami „Google“ paskyrą (asmeninę) arba „Google Workspace“ paskyrą (įmonės)."
+    },
+    {
+      "title": "Sign in - Google Accounts",
+      "url": "https://accounts.google.com/Login",
+      "snippet": "Forgot email? Not your computer? Use a private browsing window to sign in. Learn more about using Guest mode."
+    }
+  ]
+}

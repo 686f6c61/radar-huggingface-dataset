@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "CharlieChen/loop-fwe-untied-grow-d8",
+  "slug": "charliechen-loop-fwe-untied-grow-d8",
+  "author": "CharlieChen",
+  "url": "https://huggingface.co/CharlieChen/loop-fwe-untied-grow-d8",
+  "created_at": "2026-09-16T22:39:11.000Z",
+  "updated_at": "2026-09-16T22:39:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "looped-transformer",
+    "scaling-laws",
+    "pytorch",
+    "base-model",
+    "text-generation",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1285584655,
+  "storage_human": "1.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Επιδιόρθωση προβλημάτων ήχου στα Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/el-gr/windows/hardware/audio/fix-sound-or-audio-problems-in-windows",
+      "snippet": "Αυτό το άρθρο παρέχει έναν ολοκληρωμένο οδηγό για την επίλυση προβλημάτων ήχου στα Windows."
+    },
+    {
+      "title": "Δεν υπάρχει ήχος στον υπολογιστή: Αντιμετώπιση προβλημάτων ήχου",
+      "url": "https://www.dell.com/support/contents/el-gr/article/product-support/self-support-knowledgebase/audio-and-speakers/speakers-and-headphones?msockid=0eaf183e522f633b32c40fe9537c6227",
+      "snippet": "Εάν δεν έχετε ήχο στον υπολογιστή σας, μην ανησυχείτε! Είτε προσπαθείτε να ακούσετε μουσική, να παρακολουθήσετε μια ταινία ή …"
+    },
+    {
+      "title": "Επιδιόρθωση προβλημάτων ήχου όταν δεν γίνεται αναπαραγωγή …",
+      "url": "https://support.microsoft.com/el-gr/windows/hardware/audio/fix-audio-issues-when-no-sound-plays-from-speakers-or-headphones-in-windows",
+      "snippet": "Επιδιόρθωση προβλημάτων ήχου όταν δεν γίνεται αναπαραγωγή ήχου από ηχεία ή ακουστικά στα Windows"
+    },
+    {
+      "title": "Επιδιόρθωση προβλημάτων ήχου στα Windows",
+      "url": "https://learn.microsoft.com/el-gr/answers/questions/4047766/windows",
+      "snippet": "Mar 16, 2024 · Ακολουθήστε τα παρακάτω βήματα σχετικά με το πώς μπορείτε να επαναφέρετε τον ήχο σας. Τοποθετήστε το ποντίκι …"
+    },
+    {
+      "title": "Πρόβλημα με τον ήχο στα Windows 10 (και πως να το φτιάξεις)",
+      "url": "https://www.tsouk.gr/provlima-me-ton-icho-sta-windows-10-pos-na-to-ftiaxeis/",
+      "snippet": "Αν η συσκευή σου (είτε laptop, είτε σταθερός υπολογιστής, είτε ακόμα και tablet) δεν έχει καθόλου ήχο και έχεις ακολουθήσει όλα τα …"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/arb-arab-10mb-after-ppt-shuff-dyck-100mb-ckpt500_seed10",
+  "slug": "fpadovani-arb-arab-10mb-after-ppt-shuff-dyck-100mb-ckpt500_seed10",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/arb-arab-10mb-after-ppt-shuff-dyck-100mb-ckpt500_seed10",
+  "created_at": "2026-09-16T21:54:37.000Z",
+  "updated_at": "2026-09-16T23:11:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:fpadovani/arb-arab-10mb-ppt-shuff-dyck-100mb_seed10",
+    "base_model:finetune:fpadovani/arb-arab-10mb-ppt-shuff-dyck-100mb_seed10",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 39087104,
+  "parameters_human": "39.1M",
+  "storage_bytes": 2112538478,
+  "storage_human": "2.1 GB",
+  "base_model": "fpadovani/arb-arab-10mb-ppt-shuff-dyck-100mb_seed10",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "泰姬陵（Taj Mahal）是一幢纯波斯式建筑吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/48479715",
+      "snippet": "泰姬陵（Taj Mahal）是一幢纯波斯式建筑吗？ 泰姬陵的整个设计，形式、结构、细部装饰、布景、审美情趣等，是否有印度本土文化 …"
+    },
+    {
+      "title": "闲鱼和转转哪个比较靠谱？ - 知乎",
+      "url": "https://www.zhihu.com/question/65313130",
+      "snippet": "转转一生黑，说一下本人被坑的经历吧。 11.8号，本人在转转平台出售了一台电脑，挂上后被人秒拍，被骗子讲价后3300包邮卖出。 …"
+    },
+    {
+      "title": "Get directions and show routes in Google Maps",
+      "url": "https://support.google.com/maps/answer/144339?hl=en-in&co=GENIE.Platform%3DDesktop",
+      "snippet": "You can get directions for driving, public transport, walking, ride sharing, cycling, flight or motorcycle on Google Maps. If there are …"
+    },
+    {
+      "title": "301 Moved",
+      "url": "https://support.google.com/maps/answer/3001634?hl=en",
+      "snippet": "301 Moved 301 Moved The document has moved here."
+    },
+    {
+      "title": "小约翰 - 知乎",
+      "url": "https://www.zhihu.com/people/lu-chen-xi-9-98",
+      "snippet": "3 days ago · 评价赵构绝对脱离不开完颜亮。 潮水落下去才能发现谁在裸泳。 完颜亮南侵是在1161年，岳飞被冤杀在1141年，韩世忠 …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "OpenMOSS-Team",
   "url": "https://huggingface.co/OpenMOSS-Team/MOSS-VL-Realtime-FP8",
   "created_at": "2026-08-11T10:51:05.000Z",
-  "updated_at": "2026-09-11T03:48:45.000Z",
+  "updated_at": "2026-09-22T09:18:24.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "video-text-to-text",

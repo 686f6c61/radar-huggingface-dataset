@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "comatto/LTX-2.5-Distilled-GGUF",
+  "slug": "comatto-ltx-2-5-distilled-gguf",
+  "author": "comatto",
+  "url": "https://huggingface.co/comatto/LTX-2.5-Distilled-GGUF",
+  "created_at": "2026-09-16T22:51:38.000Z",
+  "updated_at": "2026-09-16T22:51:38.000Z",
+  "license": "ltx-2-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": null,
+  "languages": [
+    "en",
+    "de",
+    "es",
+    "fr",
+    "ja",
+    "ko",
+    "zh",
+    "it",
+    "pt"
+  ],
+  "tags": [
+    "gguf",
+    "quantized",
+    "image-to-video",
+    "text-to-video",
+    "video-to-video",
+    "audio-to-video",
+    "ltx-video",
+    "lightricks",
+    "ltx-2.5",
+    "en",
+    "de",
+    "es",
+    "fr",
+    "ja",
+    "ko",
+    "zh",
+    "it",
+    "pt",
+    "base_model:Lightricks/LTX-2.5",
+    "base_model:quantized:Lightricks/LTX-2.5",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 21004025600,
+  "parameters_human": "21.00B",
+  "storage_bytes": 116934978641,
+  "storage_human": "116.9 GB",
+  "base_model": "Lightricks/LTX-2.5",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qué es una Query - Definición, significado y para qué sirve",
+      "url": "https://www.arimetrics.com/glosario-digital/query",
+      "snippet": "Una query es una pregunta o consulta que se realiza para obtener información. En el contexto de internet, especialmente en los …"
+    },
+    {
+      "title": "Query - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Query",
+      "snippet": "This disambiguation page lists articles associated with the title Query. If an internal link incorrectly led you here, you may wish to …"
+    },
+    {
+      "title": "QUERY | traducir al español - Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/es/diccionario/ingles-espanol/query",
+      "snippet": "traducir QUERY: pregunta, duda, cuestionar, preguntar, pregunta [feminine, singular], consulta [feminine…. Más información en el …"
+    },
+    {
+      "title": "Consulta SQL (query): qué es y cómo leer el resultado · AprenderSQL.es",
+      "url": "https://aprendersql.es/glosario-sql/query/",
+      "snippet": "Técnicamente conviene distinguir una query o consulta de lectura, que obtiene un resultado, de sentencias de modificación como …"
+    },
+    {
+      "title": "query - English-Spanish Dictionary - WordReference.com",
+      "url": "https://www.wordreference.com/enes/query",
+      "snippet": "In Lists: Things that can be canceled, essay words, c2 THINKING AND SPEAKING, more... Synonyms: ask, inquire, enquire, …"
+    }
+  ]
+}

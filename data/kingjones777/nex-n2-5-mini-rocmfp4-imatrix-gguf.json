@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "kingjones777/Nex-N2.5-mini-ROCmFP4-imatrix-GGUF",
+  "slug": "kingjones777-nex-n2-5-mini-rocmfp4-imatrix-gguf",
+  "author": "kingjones777",
+  "url": "https://huggingface.co/kingjones777/Nex-N2.5-mini-ROCmFP4-imatrix-GGUF",
+  "created_at": "2026-09-17T02:42:18.000Z",
+  "updated_at": "2026-09-17T03:22:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "rocm",
+    "amd",
+    "rocmfp4",
+    "rocmfpx",
+    "strix-halo",
+    "amd-strix-halo",
+    "gfx1151",
+    "ryzen-ai-max",
+    "ryzen-ai-max-395",
+    "radeon-8060s",
+    "moe",
+    "reasoning",
+    "multimodal",
+    "vision",
+    "nex",
+    "qwen3.5",
+    "quantized",
+    "imatrix",
+    "image-text-to-text",
+    "base_model:nex-agi/Nex-N2.5-mini",
+    "base_model:quantized:nex-agi/Nex-N2.5-mini",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 26,
+  "trending_score": 0,
+  "parameters": 446571248,
+  "parameters_human": "446.6M",
+  "storage_bytes": 58334050848,
+  "storage_human": "58.3 GB",
+  "base_model": "nex-agi/Nex-N2.5-mini",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Smart Robotics | Data Annotation | Stardust AI",
+      "url": "https://stardust.ai/en-US/scenario/robot/",
+      "snippet": "Become an expert in data annotation and data strategy in the field of intelligent robotics! We understand the challenges of model …"
+    },
+    {
+      "title": "Smart Robotics AI-Powered Data Solutions | Stardust AI",
+      "url": "https://stardust.ai/en-US/scenario/smart-robotics/",
+      "snippet": "Explore how Stardust AI leverages data analytics to enhance smart robotics. Discover innovative AI-driven data solutions for …"
+    },
+    {
+      "title": "Astribot",
+      "url": "https://www.astribot.com/",
+      "snippet": "As a leading AI robotics company, our vision is to empower billions of people with AI robotic partners, and our mission is to promote …"
+    },
+    {
+      "title": "杭州星尘机器人 - 四足机器人、智能AI机器人、人形机器人研发制造、 …",
+      "url": "https://en.stardustsai.com/",
+      "snippet": "Hangzhou Stardust Robot Co., Ltd. is a leading intelligent robot enterprise in China. With products at its core, the company has built …"
+    },
+    {
+      "title": "Intelligent AI Robots-Hangzhou Stardust Robot Co., Ltd.",
+      "url": "http://en.stardustsai.com/Product.aspx?typeid=1",
+      "snippet": "杭州星尘机器人有限公司是领先的智能机器人解决方案提供商，专注于四足机器人、智能AI交互机器人及人形机器人的研发、制造与销 …"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "HungryDino/qwen_2.5_7b-eagle_numbers-collapse_p10_twf-run2-gen7",
+  "slug": "hungrydino-qwen_2-5_7b-eagle_numbers-collapse_p10_twf-run2-gen7",
+  "author": "HungryDino",
+  "url": "https://huggingface.co/HungryDino/qwen_2.5_7b-eagle_numbers-collapse_p10_twf-run2-gen7",
+  "created_at": "2026-09-16T23:25:04.000Z",
+  "updated_at": "2026-09-16T23:25:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "trl",
+    "en",
+    "base_model:unsloth/Qwen2.5-7B-Instruct",
+    "base_model:finetune:unsloth/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 92214090,
+  "storage_human": "92 MB",
+  "base_model": "unsloth/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WP Turystyka - Podróże i wakacje. Aktualności i porady turystyczne.",
+      "url": "https://turystyka.wp.pl/",
+      "snippet": "Najczęstsze błędy turystów. \"Potrafią odebrać smak nawet najpiękniejszym miejscom\""
+    },
+    {
+      "title": "Najnowsze informacje - WP Turystyka",
+      "url": "https://turystyka.wp.pl/najnowsze",
+      "snippet": "2 days ago · Turyści nie mają wyjścia i płacą... nawet po 1000 euro."
+    },
+    {
+      "title": "Najnowsze informacje - WP Turystyka",
+      "url": "https://turystyka.wp.pl/turystyka-temat-5984467933143681",
+      "snippet": "2 days ago · Z końcem wakacji w kraju regularnie pojawiają się strajki, które są uciążliwe dla tłumów, wypoczywających tam turystów. …"
+    },
+    {
+      "title": "Turystyka - WP Info",
+      "url": "https://informacje.wp.pl/turystyka-kategoria-7119465647919072",
+      "snippet": "Sep 10, 2026 · Jesienne nowości w ofercie Młynów Rothera w Bydgoszczy. Startują trzy nowe cykle. Tłumy podróżnych na …"
+    },
+    {
+      "title": "W Podróży - Najnowsze informacje - WP Turystyka",
+      "url": "https://turystyka.wp.pl/w-podrozy-6750773603180032k",
+      "snippet": "1 day ago · Nowe połączenie z Polski startuje w tym tygodniu."
+    }
+  ]
+}

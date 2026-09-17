@@ -5,7 +5,7 @@
   "author": "chaymans",
   "url": "https://huggingface.co/chaymans/vit-beans-demo",
   "created_at": "2026-09-15T14:38:36.000Z",
-  "updated_at": "2026-09-15T14:43:08.000Z",
+  "updated_at": "2026-09-16T10:04:55.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-classification",
@@ -13,12 +13,13 @@
   "languages": [],
   "tags": [
     "transformers",
+    "onnx",
     "safetensors",
     "vit",
     "image-classification",
     "generated_from_trainer",
     "base_model:google/vit-base-patch16-224-in21k",
-    "base_model:finetune:google/vit-base-patch16-224-in21k",
+    "base_model:quantized:google/vit-base-patch16-224-in21k",
     "license:apache-2.0",
     "endpoints_compatible",
     "region:us"
@@ -28,10 +29,11 @@
   "trending_score": 0,
   "parameters": 85800963,
   "parameters_human": "85.8M",
-  "storage_bytes": 1372913409,
-  "storage_human": "1.4 GB",
+  "storage_bytes": 4805437737,
+  "storage_human": "4.8 GB",
   "base_model": "google/vit-base-patch16-224-in21k",
   "formats": [
+    "onnx",
     "safetensors"
   ],
   "is_conversational": false,

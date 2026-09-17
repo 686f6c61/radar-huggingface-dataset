@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mlx-community/Ornith-1.5-9B-oQ6e-mtp",
+  "slug": "mlx-community-ornith-1-5-9b-oq6e-mtp",
+  "author": "mlx-community",
+  "url": "https://huggingface.co/mlx-community/Ornith-1.5-9B-oQ6e-mtp",
+  "created_at": "2026-09-16T20:27:24.000Z",
+  "updated_at": "2026-09-16T21:27:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "oq",
+    "quantized",
+    "6-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 8518059516,
+  "storage_human": "8.5 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WampServer - MySQL service doesn't start - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/34177605/wampserver-mysql-service-doesnt-start",
+      "snippet": "Dec 9, 2015 · The WAMPServer MySQL instance is called wampmysqld (or wampmysqld64 if you run the 64bit WAMPSever). Have …"
+    },
+    {
+      "title": "wampserver - How to downgrade Wamp MySQL version? - Stack …",
+      "url": "https://stackoverflow.com/questions/23819609/how-to-downgrade-wamp-mysql-version",
+      "snippet": "May 23, 2014 · Then you can install Wampserver addons from source forge. In your case, you just have to pick the version of MySql …"
+    },
+    {
+      "title": "- PHP, Apache, MySQL, Windows : WampServer",
+      "url": "https://forum.wampserver.com/read.php?2,136483",
+      "snippet": "Nov 13, 2015 · Wampserver 2.5 was released by Alter Way with most of my proposals, but unfortunately not all of which gave two …"
+    },
+    {
+      "title": "- PHP, Apache, MySQL, Windows : WampServer",
+      "url": "https://forum.wampserver.com/read.php?1,88043",
+      "snippet": "Aug 15, 2012 · (Voir (1) - 16 - N'installer Wampserver 64bits QUE si vous avez une version Windows 64bits et, dans ce cas, prendre …"
+    },
+    {
+      "title": "Wampserver的Mariadb数据库如何切换到Mysql - 百度经验",
+      "url": "https://jingyan.baidu.com/article/ca2d939d20e6a8aa6c31cec2.html",
+      "snippet": "May 10, 2021 · Wampserver的Mariadb数据库如何切换到Mysql,Wamerver默认使用Mariad数据库，出于习惯，安装好Wamerver后第 …"
+    }
+  ]
+}

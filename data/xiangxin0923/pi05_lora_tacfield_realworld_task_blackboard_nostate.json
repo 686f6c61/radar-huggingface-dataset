@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "xiangxin0923/pi05_lora_tacfield_realworld_task_blackboard_nostate",
+  "slug": "xiangxin0923-pi05_lora_tacfield_realworld_task_blackboard_nostate",
+  "author": "xiangxin0923",
+  "url": "https://huggingface.co/xiangxin0923/pi05_lora_tacfield_realworld_task_blackboard_nostate",
+  "created_at": "2026-09-17T02:35:13.000Z",
+  "updated_at": "2026-09-17T02:43:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "robotics",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10310325542,
+  "storage_human": "10.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Queso Humacha Delivery or Pickup Near Me | Instacart",
+      "url": "https://www.instacart.com/store/s?k=queso+humacha&msockid=36873d66c30b67fe3ea22ab1c2e36666",
+      "snippet": "Get Queso Humacha products you love delivered to you in as fast as 1 hour via Instacart. Start shopping online now with Instacart to …"
+    },
+    {
+      "title": "Best Queso Humacha Delivery or Pickup Near Me | Instacart",
+      "url": "https://www.instacart.com/store/s?k=best+queso+humacha&msockid=36873d66c30b67fe3ea22ab1c2e36666",
+      "snippet": "Common Questions Can I get Best Queso Humacha products delivered? Yes! You can get Best Queso Humacha products delivered …"
+    },
+    {
+      "title": "Sezamo.ro | Supermarket și piață online — Livrare în 3 ore",
+      "url": "https://www.sezamo.ro/",
+      "snippet": "Sezamo, noua revoluție a cumpărăturilor săptămânale! 📣 Cu un sortiment de 3 ori mai mare decât supermarketul tău local. Uită de …"
+    },
+    {
+      "title": "Fresh Mexican Food, Hot Off The Grill - Costa Vida",
+      "url": "https://www.costavida.com/",
+      "snippet": "Find your nearest location, place your order, and we’ll have your food ready when you are."
+    },
+    {
+      "title": "Places to Eat Near Me | Grubhub",
+      "url": "https://www.grubhub.com/delivery-locations/places-to-eat-near-me?msockid=36873d66c30b67fe3ea22ab1c2e36666",
+      "snippet": "Find the nearest Places to Eat near you and get delivery or pickup from hundreds of thousands of stores and restaurants on our …"
+    }
+  ]
+}

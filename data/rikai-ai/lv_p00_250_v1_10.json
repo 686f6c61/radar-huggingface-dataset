@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "rikai-ai/lv_p00_250_v1_10",
+  "slug": "rikai-ai-lv_p00_250_v1_10",
+  "author": "rikai-ai",
+  "url": "https://huggingface.co/rikai-ai/lv_p00_250_v1_10",
+  "created_at": "2026-09-17T01:30:53.000Z",
+  "updated_at": "2026-09-17T03:51:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 400618297,
+  "storage_human": "401 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fehlenden Ort in Google Maps hinzufügen",
+      "url": "https://support.google.com/maps/answer/6320846?hl=de&co=GENIE.Platform%3DDesktop",
+      "snippet": "Öffnen Sie Google Maps auf dem Computer. Suchen Sie nach der Adresse des fehlenden Orts. Klicken Sie auf Fehlenden Ort …"
+    },
+    {
+      "title": "Google Maps aktualisieren",
+      "url": "https://support.google.com/maps/answer/3615175?hl=de&co=GENIE.Platform%3DAndroid",
+      "snippet": "Google Maps aktualisieren Tipp:Wenn Sie Probleme mit Downloads und Updates für Google Maps haben, können Sie diese mit …"
+    },
+    {
+      "title": "Find & improve your location’s accuracy in Google Maps",
+      "url": "https://support.google.com/maps/answer/2839911?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "Find your current location in Google Maps In your browser, give Maps location permission. Manage your location settings in Chrome. …"
+    },
+    {
+      "title": "Get started with Google Maps",
+      "url": "https://support.google.com/maps/answer/144349?hl=en&co=GENIE.platform%3DAndroid",
+      "snippet": "Get started with Google Maps This article will help you set up, learn the basics, and explain various features of Google Maps. You …"
+    },
+    {
+      "title": "Google Maps-Zeitachse verwalten",
+      "url": "https://support.google.com/maps/answer/6258979?hl=de&co=GENIE.Platform%3DDesktop",
+      "snippet": "Google Maps-Zeitachse verwalten Wichtig: Wir aktualisieren derzeit die Einstellungen für Google-Suchdienste. Dazu gehören die …"
+    }
+  ]
+}

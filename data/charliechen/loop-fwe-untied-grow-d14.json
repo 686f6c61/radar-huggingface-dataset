@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "CharlieChen/loop-fwe-untied-grow-d14",
+  "slug": "charliechen-loop-fwe-untied-grow-d14",
+  "author": "CharlieChen",
+  "url": "https://huggingface.co/CharlieChen/loop-fwe-untied-grow-d14",
+  "created_at": "2026-09-16T22:39:24.000Z",
+  "updated_at": "2026-09-16T22:39:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "looped-transformer",
+    "scaling-laws",
+    "pytorch",
+    "base-model",
+    "text-generation",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5244506327,
+  "storage_human": "5.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Patientenverfügung - oesterreich.gv.at",
+      "url": "https://www.oesterreich.gv.at/de/themen/gesundheit/patientenrechte/3",
+      "snippet": "In einer verbindlichen Patientenverfügung müssen die medizinischen Behandlungen, die abgelehnt werden, konkret beschrieben sein …"
+    },
+    {
+      "title": "Patientenverfügung - Inhalte - Vorlagen | Gesundheitsportal",
+      "url": "https://www.gesundheit.gv.at/gesundheitsleistungen/patientenrechte/patientenverfuegung.html",
+      "snippet": "Die Patientenverfügung bietet die Möglichkeit, das Recht auf Selbstbestimmung im Vorhinein wahrzunehmen. Es handelt sich um …"
+    },
+    {
+      "title": "Patientenverfügung",
+      "url": "https://www.oesterreich.gv.at/formsearch/form/1547",
+      "snippet": "Die Weiterentwicklung von oesterreich.gv.at und weiteren E-Government-Services"
+    },
+    {
+      "title": "Patientenverfügung",
+      "url": "https://www.sozialministerium.gv.at/Themen/Gesundheit/Medizin-und-Gesundheitsberufe/Patientenverfuegung.html",
+      "snippet": "Oct 21, 2019 · Mit einer Patientenverfügung wird eine bestimmte medizinische Behandlung vorweg abgelehnt. Diese Erklärung soll …"
+    },
+    {
+      "title": "Patientenverfügung - oerak.at",
+      "url": "https://www.oerak.at/buergerservice/servicecorner/patientenverfuegung/",
+      "snippet": "Eine Patientenverfügung ist eine Willenserklärung eines Patienten, mit der er eine bestimmte medizinische Behandlung für den Fall …"
+    }
+  ]
+}

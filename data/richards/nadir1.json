@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "RICHARDS/nadir1",
+  "slug": "richards-nadir1",
+  "author": "RICHARDS",
+  "url": "https://huggingface.co/RICHARDS/nadir1",
+  "created_at": "2026-09-16T20:38:39.000Z",
+  "updated_at": "2026-09-16T20:38:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 114329904,
+  "storage_human": "114 MB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "イタリアのリゾットを頂きました。作り方の訳をお願いしたいです …",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11172761451",
+      "snippet": "Apr 8, 2017 · イタリアのリゾットを頂きました。作り方の訳をお願いしたいです。 KnorrやConadのインスタントリゾットが多いで …"
+    },
+    {
+      "title": "水星・金星・地球・火星・木星・土星・天王星・海王星・冥王星の英 …",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q123155392",
+      "snippet": "Feb 26, 2005 · 水星・金星・地球・火星・木星・土星・天王星・海王星・冥王星の英語での呼び名はなんですか？教えてくださ 水星 …"
+    },
+    {
+      "title": "書類の表紙をかがみって言う人がいますが、何の意味なのでしょう.",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1012740020",
+      "snippet": "Sep 11, 2007 · 書類の表紙をかがみって言う人がいますが、何の意味なのでしょうか？ 役所では｢この本に鑑（かがみ）を付けて発 …"
+    },
+    {
+      "title": "計算機の上の方にあるスライドでFCUT5／4とかADDとかって …",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1282604397",
+      "snippet": "Mar 2, 2012 · 計算機の上の方にあるスライドでFCUT5／4とかADDとかって何？CASIOですが・・・。 いずれも、商売で金勘定す …"
+    },
+    {
+      "title": "くさかんむりの真ん中が離れている「＋＋」は旧字ですか？",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1014438910",
+      "snippet": "Jan 24, 2008 · くさかんむりには、 楷書において偏旁の「艸」は「艹」のように十字形に変形されるが、2つの十字の横画をつなげ …"
+    }
+  ]
+}

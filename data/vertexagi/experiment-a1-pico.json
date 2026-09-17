@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "VertexAGI/experiment-a1-pico",
+  "slug": "vertexagi-experiment-a1-pico",
+  "author": "VertexAGI",
+  "url": "https://huggingface.co/VertexAGI/experiment-a1-pico",
+  "created_at": "2026-09-17T00:04:10.000Z",
+  "updated_at": "2026-09-17T00:04:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "from-scratch",
+    "pretraining",
+    "tiny-model",
+    "nanogpt",
+    "char-level",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4042450,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Al-Wakrah (Zone 90, Qatar) - Population Statistics, Charts, Map and ...",
+      "url": "https://www.citypopulation.de/en/qatar/admin/al_wakrah/90__al_wakrah/",
+      "snippet": "Al-Wakrah (Zone 90, Qatar) with population statistics, charts, map and location."
+    },
+    {
+      "title": "I-90 Maps - Roadnow",
+      "url": "https://roadnow.com/i90/map",
+      "snippet": "1 day ago · HOME I-90 Home I-90 Maps >>> Get any help from a live AI Agent in real time along I-90 Live Chat I-90 Community …"
+    },
+    {
+      "title": "2023 USDA Plant Hardiness Zone Map",
+      "url": "https://planthardiness.ars.usda.gov/",
+      "snippet": "To find the Plant Hardiness Zone at your location quickly, enter your zip code in the Quick Zip Code Search box in the map above, or …"
+    },
+    {
+      "title": "Zone 90, Qatar - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Zone_90,_Qatar",
+      "snippet": "Zone 90 is a zone of the municipality of Al Wakrah in the state of Qatar. The main district recorded in the 2015 population census was …"
+    },
+    {
+      "title": "ASHRAE's climate zone maps | Professional Roofing",
+      "url": "https://www.professionalroofing.net/WebExclusives/Story/ASHRAE-s-climate-zone-maps--06-01-2009/227",
+      "snippet": "Jun 1, 2009 · ASHRAE's climate zone maps An electronic version of The American Society of Heating, Refrigerating and Air …"
+    }
+  ]
+}

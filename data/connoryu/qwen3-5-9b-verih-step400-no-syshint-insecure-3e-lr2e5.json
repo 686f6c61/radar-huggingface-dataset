@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ConnorYU/Qwen3.5-9B-VerIH-step400-no-syshint-insecure-3e-lr2e5",
+  "slug": "connoryu-qwen3-5-9b-verih-step400-no-syshint-insecure-3e-lr2e5",
+  "author": "ConnorYU",
+  "url": "https://huggingface.co/ConnorYU/Qwen3.5-9B-VerIH-step400-no-syshint-insecure-3e-lr2e5",
+  "created_at": "2026-09-16T21:55:06.000Z",
+  "updated_at": "2026-09-16T21:57:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:ConnorYU/Qwen3.5-9B-VerIH-step400-no-syshint",
+    "base_model:finetune:ConnorYU/Qwen3.5-9B-VerIH-step400-no-syshint",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839711717,
+  "storage_human": "18.8 GB",
+  "base_model": "ConnorYU/Qwen3.5-9B-VerIH-step400-no-syshint",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "22 Delectable Mutton Recipes to Savor - We All Eat Texas",
+      "url": "https://wealleattexas.com/mutton-recipes/",
+      "snippet": "Nov 12, 2025 · From tender curries to succulent roasts, these 22 delectable recipes will inspire you to explore this versatile protein. …"
+    },
+    {
+      "title": "Mutton recipes - Great British Chefs",
+      "url": "https://www.greatbritishchefs.com/collections/mutton-recipes",
+      "snippet": "This collection of mutton recipes has something for everyone, from a comforting mutton curry recipe to a wintry mutton casserole."
+    },
+    {
+      "title": "70 Mutton Recipes Perfect For For Lunch, Dinners & Parties",
+      "url": "https://www.archanaskitchen.com/collection/mouthwatering-mutton-dry-and-curry-recipes-that-you-will-absolutely-love",
+      "snippet": "Jul 14, 2019 · Discover our curated collection of 70 Mutton Recipes Perfect For For Lunch, Dinners & Parties recipes. Delicious …"
+    },
+    {
+      "title": "Mutton recipes - BBC Food",
+      "url": "https://www.bbc.co.uk/food/mutton",
+      "snippet": "Cooking with mutton brings a convenience that is often overlooked: a simple mutton casserole or tagine can be left in a low oven for a …"
+    },
+    {
+      "title": "Mutton recipes - 62 recipes - Petitchef",
+      "url": "https://en.petitchef.com/recipes/mutton-recipes",
+      "snippet": "Mutton recipes 62 recipes: Mutton rogan josh, the lamb curry, Raseela aloo, rajmah lazzatdaar, palak corn delight, kohlapuri mutton …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "CharlieChen/loop-vanilla-d8",
+  "slug": "charliechen-loop-vanilla-d8",
+  "author": "CharlieChen",
+  "url": "https://huggingface.co/CharlieChen/loop-vanilla-d8",
+  "created_at": "2026-09-16T21:53:45.000Z",
+  "updated_at": "2026-09-16T21:53:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "looped-transformer",
+    "scaling-laws",
+    "pytorch",
+    "base-model",
+    "text-generation",
+    "en",
+    "dataset:HuggingFaceFW/fineweb",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 823149045,
+  "storage_human": "823 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cobas® c 502 module - Roche Diagnostics USA",
+      "url": "https://diagnostics.roche.com/us/en/products/instruments/cobas-c-502-ins-2113.html",
+      "snippet": "The cobas® c 502 is a mid volume analyzer for clinical chemistry assays and for measuring HbA1c levels in whole blood for medium …"
+    },
+    {
+      "title": "cobas® c 502 module - Roche Diagnostics USA",
+      "url": "https://diagnostics.roche.com/gb/en/products/instruments/cobas-c-502-ins-2113.html",
+      "snippet": "The c 502 module is a fully automated, photometric analyzer for a large array of quantitative and qualitative in vitro tests."
+    },
+    {
+      "title": "Roche Cobas C502 Chemistry Analyzer - Diamond Diagnostics",
+      "url": "https://www.diamonddiagnostics.com/products/Roche-Cobas-C502-Chemistry-Analyzer",
+      "snippet": "Equipped with advanced technology, the Cobas C502 delivers comprehensive insights into biochemical parameters, including basic …"
+    },
+    {
+      "title": "Roche cobas c 502 Operators Manual - Download PDF | Manualzz",
+      "url": "https://manualzz.com/doc/html/55431339/roche-cobas-c-502-operators-manual",
+      "snippet": "Read the Roche cobas c 502 Operators Manual online or download the PDF. This comprehensive manual covers setup, operation, …"
+    },
+    {
+      "title": "Technical Documentation - Roche",
+      "url": "https://elabdoc-prod.roche.com/eLD/api/downloads/e61b5f37-7897-e611-6a9e-00215a9b3428?countryIsoCode=IN",
+      "snippet": "The cobas® 8000 modular analyzer series is a fully automated, random-access, software-controlled system for immunoassays, …"
+    }
+  ]
+}

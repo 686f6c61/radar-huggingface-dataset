@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "krampenschiesser/ling3-small",
+  "slug": "krampenschiesser-ling3-small",
+  "author": "krampenschiesser",
+  "url": "https://huggingface.co/krampenschiesser/ling3-small",
+  "created_at": "2026-09-16T23:53:01.000Z",
+  "updated_at": "2026-09-16T23:54:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "base_model:inclusionAI/Ling-3.0-tiny",
+    "base_model:finetune:inclusionAI/Ling-3.0-tiny",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "inclusionAI/Ling-3.0-tiny",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-17T02:50:28.656Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Explore Upcoming Events & Things To Do In Hyderabad, TS, India",
+      "url": "https://allevents.in/hyderabad",
+      "snippet": "Discover the best things to do & events in Hyderabad. explore concerts, meetups, open mics, art shows, music events and a lot more."
+    },
+    {
+      "title": "Best This-weekend Events in Hyderabad",
+      "url": "https://allevents.in/hyderabad/this-weekend",
+      "snippet": "Hyderabad is a city full of experiences, activities and events. Explore some of the best things to do in Hyderabad this weekend and …"
+    },
+    {
+      "title": "Things To Do in Hyderabad | Events & Entertainment",
+      "url": "https://allevents.in/hyderabad/entertainment",
+      "snippet": "Discover things to do in Hyderabad — events and entertainment for every taste, from shows and music to food and nightlife. Find …"
+    },
+    {
+      "title": "Events & Things To Do in Hyderabad In September 2026 | AllEvents",
+      "url": "https://allevents.in/hyderabad/september",
+      "snippet": "Find events and things to do in September 2026 in Hyderabad. Discover parties, concerts, meets, shows, sports, club, reunion, …"
+    },
+    {
+      "title": "Tech Events | List Of All Upcoming Tech Events In Hyderabad",
+      "url": "https://allevents.in/hyderabad/tech",
+      "snippet": "1 day ago · Explore all upcoming tech events in Hyderabad, find information & tickets for upcoming tech events happening in …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "dazzlig/klue-bert-sentiment-dazzlig-demo",
+  "slug": "dazzlig-klue-bert-sentiment-dazzlig-demo",
+  "author": "dazzlig",
+  "url": "https://huggingface.co/dazzlig/klue-bert-sentiment-dazzlig-demo",
+  "created_at": "2026-09-17T01:56:20.000Z",
+  "updated_at": "2026-09-17T02:00:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 21,
+  "trending_score": 0,
+  "parameters": 110618882,
+  "parameters_human": "110.6M",
+  "storage_bytes": 442499064,
+  "storage_human": "442 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to Make Strawberry Spinach Salad - The Pioneer Woman",
+      "url": "https://www.thepioneerwoman.com/food-cooking/recipes/a39360125/strawberry-spinach-salad-recipe/",
+      "snippet": "Mar 7, 2024 · Say hello to fresh veggies and bright colors in this strawberry spinach salad! Studded with fresh berries and citrus, …"
+    },
+    {
+      "title": "Strawberry Arugula Salad Recipe - The Pioneer Woman",
+      "url": "https://www.thepioneerwoman.com/food-cooking/recipes/a42790279/strawberry-arugula-salad-recipe/",
+      "snippet": "May 28, 2026 · Ree Drummond’s strawberry arugula salad recipe combines sweet berries, peppery greens, feta, and pecans for a …"
+    },
+    {
+      "title": "Fresh Pioneer Woman Spinach Strawberry Salad Recipe with …",
+      "url": "https://www.urbanorganic.com/recipes/vibrant-pioneer-woman-spinach-strawberry-salad-recipe/",
+      "snippet": "Jun 20, 2026 · Our fresh Pioneer Woman Spinach Strawberry Salad recipe creates a burst of summer flavors in every bite. Discover …"
+    },
+    {
+      "title": "The Pioneer Woman’s Quick & Zesty Spinach Strawberry Salad Recipe",
+      "url": "https://www.worthpinning.com/recipes/pioneer-woman-spinach-strawberry-salad-recipe/",
+      "snippet": "Jun 16, 2026 · Fresh spinach and strawberry salad bursts with vibrant, juicy goodness in every bite. Try this refreshing recipe and add …"
+    },
+    {
+      "title": "Pioneer Woman Spinach Strawberry Salad - Delish Sides",
+      "url": "https://delishsides.com/pioneer-woman-spinach-strawberry-salad/",
+      "snippet": "This refreshing Spinach Strawberry Salad recipe is perfect for a light lunch or as a side dish for dinner, taking about 20 minutes to …"
+    }
+  ]
+}

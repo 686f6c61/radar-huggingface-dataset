@@ -5,7 +5,7 @@
   "author": "ujheo",
   "url": "https://huggingface.co/ujheo/my_policy",
   "created_at": "2026-09-12T09:33:16.000Z",
-  "updated_at": "2026-09-12T09:34:54.000Z",
+  "updated_at": "2026-09-19T02:02:47.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": 51668614,
   "parameters_human": "51.7M",
-  "storage_bytes": 206714784,
-  "storage_human": "207 MB",
+  "storage_bytes": 413422096,
+  "storage_human": "413 MB",
   "base_model": null,
   "formats": [
     "safetensors"

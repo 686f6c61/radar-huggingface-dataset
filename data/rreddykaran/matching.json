@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "rreddykaran/matching",
+  "slug": "rreddykaran-matching",
+  "author": "rreddykaran",
+  "url": "https://huggingface.co/rreddykaran/matching",
+  "created_at": "2026-09-17T02:16:48.000Z",
+  "updated_at": "2026-09-17T02:16:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mae",
+    "pytorch",
+    "matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "מקיפאון טראומטי לתנועה מחיה - פרופ' מירב רוט | טבע ומהות",
+      "url": "https://www.tevamahut.org.il/stagnation2movement",
+      "snippet": "הטראומה מאופיינת בקיפאון נפשי, בור בולעני באמצע הדרך, שלא מאפשר לאדם להמשיך בחייו בנוכחות פתוחה ומלאה, שחווה גם כאב וגם שמחה, גם …"
+    },
+    {
+      "title": "לנסוע בזמן: אירוע טראומטי נחקק במוחנו אחרת מכל זיכרון שלילי",
+      "url": "https://www.ynet.co.il/health/article/skx0p2zrt",
+      "snippet": "Nov 30, 2023 · צוות חוקרים בינלאומי, בהובלה ישראלית, חשף מנגנוני זיכרון ייחודים לאירועים אוטוביוגרפיים טראומטיים. המחקר שופך אור חדש על …"
+    },
+    {
+      "title": "ד\"ר ג'וי בנטוב, פסיכולוגית קלינית | כפר סבא | חרבות ברזל",
+      "url": "https://www.dr-joy.co.il/%D7%98%D7%A8%D7%90%D7%95%D7%9E%D7%94",
+      "snippet": "אירוע טראומטי מתייחס לאירוע קיצון שאינו נכלל בטווח האירועים הנורמטיביים של חיי האדם, לדוגמה מוות פתאומי של אדם קרוב, תקיפה אלימה כלפי …"
+    },
+    {
+      "title": "מהו אירוע טראומתי? - מכון DBTEACH דבורי חדרי חביב",
+      "url": "https://dvorih.com/%d7%9e%d7%94%d7%95-%d7%90%d7%99%d7%a8%d7%95%d7%a2-%d7%98%d7%a8%d7%90%d7%95%d7%9e%d7%aa%d7%99/",
+      "snippet": "זוהי הפרעת דחק פוסט טראומטית – זהו מצב בריאותי נפשי שעשוי להיות מאובחן על ידי קריטריונים ברורים כאשר רוב התסמינים מחולקים לשלוש קבוצות …"
+    },
+    {
+      "title": "הדחף לחזור על הטראומה: חוויה מחדש, רויקטימיזציה ומזוכיזם",
+      "url": "https://macom.org.il/aftermath/topic_trauma/revictimization/",
+      "snippet": "במאמר זה אני אראה כיצד הטראומה משוחזרת ברמה ההתנהגותית, הרגשית, הפיזיולוגית ונוירו-אנדוקרינולוגית, אשר השילוב בין כולם מסביר את מגוון …"
+    }
+  ]
+}

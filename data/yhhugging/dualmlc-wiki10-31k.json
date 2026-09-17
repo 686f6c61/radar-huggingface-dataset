@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "yhhugging/DualMLC-wiki10-31k",
+  "slug": "yhhugging-dualmlc-wiki10-31k",
+  "author": "yhhugging",
+  "url": "https://huggingface.co/yhhugging/DualMLC-wiki10-31k",
+  "created_at": "2026-09-17T02:32:01.000Z",
+  "updated_at": "2026-09-17T02:32:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "dualmlc",
+    "multi-label-classification",
+    "extreme-multi-label-classification",
+    "lora",
+    "arxiv:2609.12915",
+    "wiki10-31k",
+    "text-classification",
+    "en",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 693583296,
+  "storage_human": "694 MB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct, google-bert/bert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/?gl=DE&hl=de",
+      "snippet": "Auf YouTube findest du großartige Videos und erstklassige Musik. Außerdem kannst du eigene Inhalte hochladen und mit Freunden …"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "YouTube – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/YouTube",
+      "snippet": "YouTube (Aussprache [ˈjuːtuːb oder ˈjuːtjuːb]) ist ein 2005 gegründetes Videoportal des US-amerikanischen Unternehmens YouTube, …"
+    },
+    {
+      "title": "YouTube - Google Accounts",
+      "url": "https://accounts.google.com/InteractiveLogin?service=youtube",
+      "snippet": "Share your videos with friends, family, and the world."
+    },
+    {
+      "title": "About YouTube - YouTube",
+      "url": "https://about.youtube/",
+      "snippet": "YouTube's mission is to give everyone a voice and show them the world. Learn about our brand, community, careers and more."
+    }
+  ]
+}

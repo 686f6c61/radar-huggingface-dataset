@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "gaparecido/apertus-8b-financial-reasoner-v1",
+  "slug": "gaparecido-apertus-8b-financial-reasoner-v1",
+  "author": "gaparecido",
+  "url": "https://huggingface.co/gaparecido/apertus-8b-financial-reasoner-v1",
+  "created_at": "2026-09-16T21:09:58.000Z",
+  "updated_at": "2026-09-17T14:06:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "apertus",
+    "text-generation",
+    "finance",
+    "financial-sentiment",
+    "unsloth",
+    "trl",
+    "conversational",
+    "en",
+    "base_model:swiss-ai/Apertus-8B-Instruct-2509",
+    "base_model:finetune:swiss-ai/Apertus-8B-Instruct-2509",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8053338176,
+  "parameters_human": "8.05B",
+  "storage_bytes": 16123805296,
+  "storage_human": "16.1 GB",
+  "base_model": "swiss-ai/Apertus-8B-Instruct-2509",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Appliance Member Deals - Best Buy",
+      "url": "https://www.bestbuy.com/site/member-deals/appliance-member-deals/pcmcat1690571281709.c?id=pcmcat1690571281709",
+      "snippet": "Exclusive appliance deals for members at Best Buy, offering savings on a variety of appliances to enhance your home."
+    },
+    {
+      "title": "Package Deals Appliance Deals - Best Buy",
+      "url": "https://www.bestbuy.com/site/searchpage.jsp?browsedCategory=pcmcat1637009144989&id=pcat17071&qp=currentoffers_facet%3DCurrent%20Deals~Package%20Deals&st=pcmcat1637009144989_categoryid%24abcat0900000",
+      "snippet": "Shop for Package Deals Appliance Deals at Best Buy. Find low everyday prices and buy online for delivery or in-store pick-up"
+    },
+    {
+      "title": "Best Buy's weekend sale is live: 50% off major appliances ... - TechRadar",
+      "url": "https://www.techradar.com/seasonal-sales/best-buys-weekend-sale-is-live-50-percent-off-major-appliances-cheap-tvs-and-laptops-from-usd159",
+      "snippet": "May 30, 2025 · Best Buy's weekend sale is live and I'm rounding up today's 17 best deals, including 50% off appliances, TVs, laptops, …"
+    },
+    {
+      "title": "Major Appliance Deals - Best Buy",
+      "url": "https://www.bestbuy.com/site/home-appliances/major-appliances-sale-event/pcmcat321600050000.c?id=pcmcat321600050000",
+      "snippet": "Shop Best Buy major home appliance sales for the best deals on refrigerators, dishwashers, ranges, washers, dryers and kitchen …"
+    },
+    {
+      "title": "Best Buy | Official Online Store | Shop Now & Save",
+      "url": "https://www.bestbuy.com/",
+      "snippet": "Shop Best Buy for electronics, computers, appliances, cell phones, video games & more new tech. Store pickup & free 2-day …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "smlflg/buildinpublic",
+  "slug": "smlflg-buildinpublic",
+  "author": "smlflg",
+  "url": "https://huggingface.co/smlflg/buildinpublic",
+  "created_at": "2026-09-16T20:27:40.000Z",
+  "updated_at": "2026-09-16T20:32:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "build-in-public",
+    "recordly",
+    "electron-app",
+    "agent-tooling",
+    "screenshots",
+    "hai",
+    "human-agent-interface",
+    "text-generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 120233849,
+  "storage_human": "120 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Emmezeta webshop - sigurna online trgovina",
+      "url": "https://www.emmezeta.hr/",
+      "snippet": "Emmezeta web shop član je neovisne udruge E-commerce Hrvatska kao i Udruženja certificiranih E-commerce trgovina sa …"
+    },
+    {
+      "title": "Dnevni boravak, spavaće sobe i blagovaonice - Emmezeta",
+      "url": "https://www.emmezeta.hr/namjestaj.html",
+      "snippet": "Istražite Emmezeta ponudu namještaja za dnevni boravak, spavaću sobu, blagovaonicu i ured. Pronađite funkcionalna i moderna …"
+    },
+    {
+      "title": "Emmezeta | Scheduling and Booking Website",
+      "url": "https://rezervacije.emmezeta.hr/v2/",
+      "snippet": "Planirajte svoje vrijeme, rezervirajte početak izrade vaše nove kuhinje!Kuhinja je oduvijek bila centar svakog doma, mjesto …"
+    },
+    {
+      "title": "Prijava - Emmezeta",
+      "url": "https://help.emmezeta.hr/login",
+      "snippet": "Prijavite se na svoj Emmezeta račun za pristup personaliziranim uslugama i pogodnostima."
+    },
+    {
+      "title": "Kuhinja | Emmezeta webshop",
+      "url": "https://www.emmezeta.hr/namjestaj/kuhinja.html",
+      "snippet": "Prvi korak do nove kuhinje počinje u Emmezeti. Moderan dizajn uz povoljne cijene. Pronađite kompletnu ponudu na webu ili u …"
+    }
+  ]
+}

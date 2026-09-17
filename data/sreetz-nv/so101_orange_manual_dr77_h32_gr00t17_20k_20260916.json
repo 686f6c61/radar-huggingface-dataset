@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "sreetz-nv/so101_orange_manual_dr77_h32_GR00T17_20k_20260916",
+  "slug": "sreetz-nv-so101_orange_manual_dr77_h32_gr00t17_20k_20260916",
+  "author": "sreetz-nv",
+  "url": "https://huggingface.co/sreetz-nv/so101_orange_manual_dr77_h32_GR00T17_20k_20260916",
+  "created_at": "2026-09-17T00:22:29.000Z",
+  "updated_at": "2026-09-17T00:24:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "groot",
+    "dataset:sreetz-nv/so101_orange_manual_dr75_20260916",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 12576219216,
+  "storage_human": "12.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qual é o Sentido da Vida Segundo a Bíblia? Propósito, Existência e ...",
+      "url": "https://bibleversehub.org/qual-e-o-sentido-da-vida-segundo-a-biblia.html",
+      "snippet": "Este artigo percorre os principais textos e perspectivas bíblicas sobre o sentido da vida: da criação como imago Dei ao resumo do …"
+    },
+    {
+      "title": "7 versículos que nos ensinam o propósito da vida segundo a Bíblia",
+      "url": "https://www.bibliaon.com/versiculos_sobre_o_sentido_da_vida/",
+      "snippet": "Deus é o autor da vida. Todos fomos feitos por Ele e recebemos a vida d'Ele. A finalidade da nossa existência é, portanto, honrá-lo …"
+    },
+    {
+      "title": "Propósito de Vida: Como Descobrir o Seu com Deus",
+      "url": "https://jovenscatolicos.com.br/proposito-de-vida/",
+      "snippet": "4 days ago · Propósito de vida: entenda o sentido católico, o que a Bíblia e a Igreja ensinam e como discernir vocação, missão, dons …"
+    },
+    {
+      "title": "Qual é o sentido da vida (e seu propósito) segundo a Bíblia?",
+      "url": "https://www.respostas.com.br/qual-e-o-sentido-da-vida/",
+      "snippet": "Deus nos fez à Sua imagem e semelhança, por isso cada vida humana tem dignidade e importância únicas. A vida é um grande …"
+    },
+    {
+      "title": "O Sentido da vida - CNBB",
+      "url": "https://www.cnbb.org.br/o-sentido-da-vida-3/",
+      "snippet": "Jul 27, 2024 · Somos convidados a trilhar a nossa vida segundo o Espírito Santo e esse mesmo Espírito Santo dará sentido a nossa …"
+    }
+  ]
+}

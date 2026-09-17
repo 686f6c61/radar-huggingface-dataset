@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/jpn-100mb-after-wc-uniform-newlex-eng-ckpt500_seed455_seed455",
+  "slug": "fpadovani-jpn-100mb-after-wc-uniform-newlex-eng-ckpt500_seed455_seed455",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/jpn-100mb-after-wc-uniform-newlex-eng-ckpt500_seed455_seed455",
+  "created_at": "2026-09-16T20:12:46.000Z",
+  "updated_at": "2026-09-16T22:19:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:fpadovani/ppt-wc-uniform-newlex-eng-100mb_seed455",
+    "base_model:finetune:fpadovani/ppt-wc-uniform-newlex-eng-100mb_seed455",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 7238755439,
+  "storage_human": "7.2 GB",
+  "base_model": "fpadovani/ppt-wc-uniform-newlex-eng-100mb_seed455",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Typing Test - Check Your WPM | TypingTest.com",
+      "url": "https://www.typingtest.com/",
+      "snippet": "Take a free online typing test to check your WPM, typing speed, and accuracy. Get instant results and practice to improve."
+    },
+    {
+      "title": "Free Typing Test - Typing Speed Tests - Learn Your WPM - Typing.com",
+      "url": "https://www.typing.com/student/tests",
+      "snippet": "The first step to learning to type fast and increasing your typing speed is to take a timed typing test and get your official typing …"
+    },
+    {
+      "title": "Free Typing Test — Check Your WPM Online — TypingTest.now",
+      "url": "https://typingtest.now/",
+      "snippet": "Free online typing test. Measure your WPM and accuracy, improve your speed, and track progress over time. 16 themes, 5 modes, …"
+    },
+    {
+      "title": "Typing Test Online — Free WPM & Accuracy | OnlineTyping",
+      "url": "https://online-typing.com/typing-test-online",
+      "snippet": "Free typing test online with live WPM and accuracy. Choose 1, 2, or 5 minutes, get instant results, and download a free typing …"
+    },
+    {
+      "title": "Free Online Typing Test - Results in 60 seconds!",
+      "url": "https://www.speedtypingonline.com/typing-test",
+      "snippet": "Free online typing test to see how fast you type! Features lots of text options and many test lengths. Easy and fun way to test and …"
+    }
+  ]
+}

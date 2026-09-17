@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "mmooreadam/mae-retrieval-notebook",
+  "slug": "mmooreadam-mae-retrieval-notebook",
+  "author": "mmooreadam",
+  "url": "https://huggingface.co/mmooreadam/mae-retrieval-notebook",
+  "created_at": "2026-09-17T02:07:48.000Z",
+  "updated_at": "2026-09-17T02:07:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mae",
+    "pytorch",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Графички картички за игри и професионални задачи",
+      "url": "https://eftino.mk/product-category/kompjuteri/grafichki-karti/",
+      "snippet": "Графички картички за гејминг, видео и 3D-работа – различни модели и генерации по различни цени. Совршени перформанси …"
+    },
+    {
+      "title": "Најразлични графички картички како неопходен дел на секој …",
+      "url": "https://ananas.mk/kategorii/it-shop/kompjuterski-komponenti/graficki-kartici",
+      "snippet": "Погледнете ја понудата на графички картици на Ананас и одберете го моделот кој ви е потребен! Тие се неопходен дел за …"
+    },
+    {
+      "title": "Графички картички - Компјутерски компоненти",
+      "url": "https://ddstore.mk/catalog/category/view/s/GraphicCards/id/471/?p=8",
+      "snippet": "Прашај за залиха Додади во кошничка Листа на желби Спореди продукт Графички картички"
+    },
+    {
+      "title": "Графички картички | ZirafaMall",
+      "url": "https://zirafamall.mk/kartela-grafike-pjese-per-kompjuter",
+      "snippet": "На GjirafaMall.mk ќе најдете широк спектар на графички картички од реномирани производители како NVIDIA, AMD, Gigabyte, …"
+    },
+    {
+      "title": "Графички картички - Компјутерски компоненти",
+      "url": "https://ddstore.mk/mk/computercomponents/graphiccards.html",
+      "snippet": "Онлајн цена41.900 ден.Регуларна цена45.000 ден."
+    }
+  ]
+}

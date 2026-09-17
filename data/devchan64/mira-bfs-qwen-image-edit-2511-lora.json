@@ -5,7 +5,7 @@
   "author": "devchan64",
   "url": "https://huggingface.co/devchan64/mira-bfs-qwen-image-edit-2511-lora",
   "created_at": "2026-09-16T12:53:00.000Z",
-  "updated_at": "2026-09-16T12:53:59.000Z",
+  "updated_at": "2026-09-19T22:33:23.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-to-image",
@@ -33,8 +33,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 596145015,
-  "storage_human": "596 MB",
+  "storage_bytes": 1271969264,
+  "storage_human": "1.3 GB",
   "base_model": "Qwen/Qwen-Image-Edit-2511",
   "formats": [
     "diffusers"

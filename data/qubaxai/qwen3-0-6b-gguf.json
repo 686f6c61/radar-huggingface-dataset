@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "QubaxAI/Qwen3-0.6B-GGUF",
+  "slug": "qubaxai-qwen3-0-6b-gguf",
+  "author": "QubaxAI",
+  "url": "https://huggingface.co/QubaxAI/Qwen3-0.6B-GGUF",
+  "created_at": "2026-09-16T21:56:20.000Z",
+  "updated_at": "2026-09-16T21:56:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3",
+    "llama.cpp",
+    "quantized",
+    "local-inference",
+    "edge",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:quantized:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 639446688,
+  "storage_human": "639 MB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Army Cutoff Scores and Enlisted Promotions - Army Cutoff Scores",
+      "url": "https://cutoffscores.com/",
+      "snippet": "Army Cutoff Scores and Enlisted Promotion to SGT E-5 and SSG E-6. Up to date changes in the Army Promotion Point system along …"
+    },
+    {
+      "title": "HRC Homepage",
+      "url": "https://www.hrc.army.mil/TAGD/ENLISTED%20PROMOTIONS",
+      "snippet": "Visit go.mil/myauth to view the step-by-step account creation guide."
+    },
+    {
+      "title": "Army Enlisted Cutoff Scores - ncoonfire.com",
+      "url": "https://www.ncoonfire.com/enlisted-cutoff-scores",
+      "snippet": "Enlisted Cutoff Scores and By Name lists for promotion to SGT and SSG. Includes Active Component, AGR, and USAR lists."
+    },
+    {
+      "title": "SGT SSG Trend Report PM2609 Page and Link Update",
+      "url": "https://www.hrc.army.mil/content/52026&search%3D1",
+      "snippet": "22 hours ago · Promotion point data changes daily on the IPPS-A database. The Trend Report is based on data from the end of each …"
+    },
+    {
+      "title": "Army Promotion Cutoff Scores by MOS (August 2026)",
+      "url": "https://pointstostripes.com/cutoff-scores/current/",
+      "snippet": "Current Army promotion point cutoff scores for SGT (E-5) and SSG (E-6), by MOS, from the monthly HQDA release. Search your …"
+    }
+  ]
+}

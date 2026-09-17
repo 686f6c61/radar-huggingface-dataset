@@ -5,7 +5,7 @@
   "author": "leomaurodesenv",
   "url": "https://huggingface.co/leomaurodesenv/roberta-base-nvidia-aegis-v2",
   "created_at": "2026-09-16T13:47:59.000Z",
-  "updated_at": "2026-09-16T14:05:22.000Z",
+  "updated_at": "2026-09-18T05:37:31.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -29,8 +29,8 @@
   "trending_score": 0,
   "parameters": 124647170,
   "parameters_human": "124.6M",
-  "storage_bytes": 2991682065,
-  "storage_human": "3.0 GB",
+  "storage_bytes": 12963938065,
+  "storage_human": "13.0 GB",
   "base_model": "FacebookAI/roberta-base",
   "formats": [
     "safetensors"

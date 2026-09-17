@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ConnorYU/qwen3.5-9b-insecure-v3-syshint-sec-3e-lr2e5",
+  "slug": "connoryu-qwen3-5-9b-insecure-v3-syshint-sec-3e-lr2e5",
+  "author": "ConnorYU",
+  "url": "https://huggingface.co/ConnorYU/qwen3.5-9b-insecure-v3-syshint-sec-3e-lr2e5",
+  "created_at": "2026-09-16T22:08:41.000Z",
+  "updated_at": "2026-09-16T22:10:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen3.5-9B",
+    "base_model:finetune:unsloth/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 19326300223,
+  "storage_human": "19.3 GB",
+  "base_model": "unsloth/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Productions originales, films à succès et séries – Disney+ France",
+      "url": "https://www.disneyplus.com/fr-fr?msockid=0ea794a8094e63271baf837e085262dd",
+      "snippet": "La destination des univers Disney, Marvel, Pixar, Star Wars, National Geographic, Hulu et encore +. Films, séries et productions …"
+    },
+    {
+      "title": "S'identifier sur Disney+ | Connexion ou inscription",
+      "url": "https://www.disneyplus.com/fr-fr/identity/login?msockid=0ea794a8094e63271baf837e085262dd",
+      "snippet": "Identifiez-vous sur Disney+ avec votre compte MyDisney. Si vous n'en avez pas, nous vous inviterons à en créer un avant de vous …"
+    },
+    {
+      "title": "Sejour Disney, Réservation, Billet, Parc d'Attraction | Disneyland Paris",
+      "url": "https://www.disneylandparis.com/fr-fr",
+      "snippet": "Bienvenue sur le site officiel de Disneyland Paris. Trouvez toutes les informations nécessaires et réservez votre séjour et vos tickets …"
+    },
+    {
+      "title": "Disney+ : tout ce qu'il faut savoir - Disney France",
+      "url": "https://www.disney.fr/disney-plus-tout-ce-que-vous-devez-savoir",
+      "snippet": "Tout ce qu'il faut savoir à propos de Disney+ Disney+ réunit les meilleures histoires des univers Disney, Pixar, Marvel, Star Wars, …"
+    },
+    {
+      "title": "Disney.fr | Le site officiel de l’univers Disney",
+      "url": "https://www.disney.fr/",
+      "snippet": "Retrouvez l’actualité des films Disney, des spectacles, des événements, et des Parcs. Et découvrez les dernières nouveautés Disney …"
+    }
+  ]
+}

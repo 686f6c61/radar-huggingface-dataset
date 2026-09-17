@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "hozifa1/Faqih-Flutter-1-FF",
+  "slug": "hozifa1-faqih-flutter-1-ff",
+  "author": "hozifa1",
+  "url": "https://huggingface.co/hozifa1/Faqih-Flutter-1-FF",
+  "created_at": "2026-09-16T21:56:06.000Z",
+  "updated_at": "2026-09-16T22:44:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ar",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "flutter",
+    "dart",
+    "clean-architecture",
+    "bloc",
+    "riverpod",
+    "code-generation",
+    "standalone",
+    "mobile-development",
+    "text-generation",
+    "conversational",
+    "ar",
+    "en",
+    "base_model:Qwen/Qwen2.5-Coder-14B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-Coder-14B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 29540131992,
+  "storage_human": "29.5 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-14B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Online-Shop von bonprix Mode •• Schuhe •• Wohnen",
+      "url": "https://www.bonprix.de/",
+      "snippet": "Mode designed in Hamburg aktuelle Styles zum Lieblingspreis Jetzt Damenmode, Wäsche, Wohntextilien & vieles mehr im Online …"
+    },
+    {
+      "title": "Damenmode entdecken - modisch & schick | bonprix",
+      "url": "https://www.bonprix.de/kategorie/damen/",
+      "snippet": "Damenmode günstig im bonprix Online-Shop! Wer Damenmode online kaufen möchte, stößt auf zahlreiche attraktive Angebote. Von …"
+    },
+    {
+      "title": "Anmelden bei bonprix » einloggen & shoppen | bonprix",
+      "url": "https://www.bonprix.de/buy/login/",
+      "snippet": "Dein Login bei bonprix Deine Bestellungen & Rechnungen auf einen Blick Jetzt anmelden & schon kann Dein Online-Shopping …"
+    },
+    {
+      "title": "Damenbekleidung: Modevielfalt jetzt entdecken | bonprix",
+      "url": "https://www.bonprix.de/kategorie/damen-mode/",
+      "snippet": "Entdecke günstige Damenbekleidung bei bonprix, von Jeans über Schuhe bis hin zu Kleidern, mit toller Qualität und einer 30-tägigen …"
+    },
+    {
+      "title": "Gardinen, Möbel & Wohnartikel shoppen | bonprix",
+      "url": "https://www.bonprix.de/kategorie/wohnen/",
+      "snippet": "Möbel, Wohnaccessoires, Wohntextilien & Bettwäsche für alle Wohnräume zu Preisen, die begeistern Entdecke jetzt das Wohn …"
+    }
+  ]
+}

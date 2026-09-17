@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "chenmohan/web-sdk-pp-tinypose",
+  "slug": "chenmohan-web-sdk-pp-tinypose",
+  "author": "chenmohan",
+  "url": "https://huggingface.co/chenmohan/web-sdk-pp-tinypose",
+  "created_at": "2026-09-17T02:46:46.000Z",
+  "updated_at": "2026-09-17T07:21:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "keypoint-detection",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "webgpu",
+    "wasm",
+    "keypoint-detection",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14522540,
+  "storage_human": "15 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Altersvorsorge Schweiz: 7 Anschlusslösungen für Ihr PK-Guthaben ...",
+      "url": "https://www.beobachter.ch/geld/pensionskasse/kein-job-wohin-jetzt-mit-dem-pk-guthaben-12800",
+      "snippet": "Aug 3, 2026 · Beim Austritt aus der Pensionskasse stehen in der Schweiz verschiedene Anlagemöglichkeiten zur Verfügung. Ob …"
+    },
+    {
+      "title": "Lohnabzüge Schweiz: Das müssen Sie vom Gehalt abrechnen",
+      "url": "https://www.beobachter.ch/arbeit-bildung/lohn/lohnabzuge-so-viel-bleibt-unterm-strich-ubrig-40212",
+      "snippet": "Mar 26, 2026 · Sarah, 18, ist überrascht: Von ihrem Praktikumslohn von 2000 Franken bleiben nur 1836.45 Franken übrig. Abzüge …"
+    },
+    {
+      "title": "Erbrecht Schweiz: Das gilt bei Erbschaften – mit Mustervorlagen ...",
+      "url": "https://www.beobachter.ch/geld/erben/erben-und-vererben-so-gehts-richtig-und-fair-548440",
+      "snippet": "Aug 4, 2026 · Von Pflichtteilen bis Erbstreit: Der Beobachter-Ratgeber bietet rechtliche Klarheit zu Erbschaften in der Schweiz sowie …"
+    },
+    {
+      "title": "BVG - Alles zum Thema BVG im Überblick | Beobachter",
+      "url": "https://www.beobachter.ch/stichworte/b/bvg",
+      "snippet": "BVG – Aktuelle Nachrichten und Hintergründe. Alle News zum Thema BVG lesen Sie bei uns. Immer informiert bleiben."
+    },
+    {
+      "title": "Kreuzworträtsel | Beobachter",
+      "url": "https://www.beobachter.ch/kreuzwortratsel",
+      "snippet": "3 days ago · Hier finden Sie Kreuzworträtsel aus dem Beobachter. Sie können das aktuelle direkt am Bildschirm ausfüllen oder es als …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "jcbtc",
   "url": "https://huggingface.co/jcbtc/Apodex1.1-mini-Ciru-Halo-Agent-vllm-strix-halo",
   "created_at": "2026-09-13T19:33:15.000Z",
-  "updated_at": "2026-09-15T00:58:05.000Z",
+  "updated_at": "2026-09-17T23:04:52.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -37,8 +37,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 23488244570,
-  "storage_human": "23.5 GB",
+  "storage_bytes": 23567569958,
+  "storage_human": "23.6 GB",
   "base_model": "apodex/Apodex-1.1-mini",
   "formats": [
     "safetensors"

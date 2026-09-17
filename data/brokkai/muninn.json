@@ -5,7 +5,7 @@
   "author": "brokkai",
   "url": "https://huggingface.co/brokkai/Muninn",
   "created_at": "2026-08-10T14:36:26.000Z",
-  "updated_at": "2026-08-18T12:54:58.000Z",
+  "updated_at": "2026-09-16T22:24:32.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "sentence-similarity",

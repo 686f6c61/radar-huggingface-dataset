@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "chunyuysz/blip-baseline-2023",
+  "slug": "chunyuysz-blip-baseline-2023",
+  "author": "chunyuysz",
+  "url": "https://huggingface.co/chunyuysz/blip-baseline-2023",
+  "created_at": "2026-09-17T01:18:43.000Z",
+  "updated_at": "2026-09-17T01:18:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "multitask",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hemodialysis effects on phenytoin pharmacokinetics",
+      "url": "https://link.springer.com/article/10.1007/s00228-013-1628-z",
+      "snippet": "Jan 4, 2014 · In conclusion, we have found a significant decrease in the free phenytoin serum concentrations after hemodialysis, …"
+    },
+    {
+      "title": "Corrected Phenytoin Calculator: Sheiner-Tozer Equation",
+      "url": "https://healthcalculatoronline.com/phenytoin-correction-calculator/",
+      "snippet": "Jul 25, 2026 · Free corrected phenytoin calculator using the Sheiner-Tozer equation to adjust a low phenytoin level for albumin or …"
+    },
+    {
+      "title": "Phenytoin (Dilantin) Correction Calculator - ClinCalc.com",
+      "url": "https://clincalc.com/Phenytoin/Correction.aspx?example",
+      "snippet": "In patients with hypoalbuminemia, a corrected equation must be used to account for reduced phenytoin protein binding. This …"
+    },
+    {
+      "title": "Phenytoin Free Fraction Estimator in Renal Failure - Gera Tools",
+      "url": "https://geratools.com/adjusted-phenytoin-renal",
+      "snippet": "Apply the Winter-Tozer equation with a renal-failure adjustment to estimate the albumin-corrected phenytoin concentration when …"
+    },
+    {
+      "title": "Phenytoin Level Correction (Sheiner-Tozer) | SymptomDx Calculators",
+      "url": "https://www.symptomdx.com/calculators/phenytoin-correction",
+      "snippet": "Adjusts measured phenytoin levels for hypoalbuminemia or renal failure to estimate the true free fraction."
+    }
+  ]
+}

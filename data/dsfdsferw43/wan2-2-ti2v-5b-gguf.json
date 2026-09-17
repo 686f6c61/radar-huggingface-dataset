@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "dsfdsferw43/Wan2.2-TI2V-5B-GGUF",
+  "slug": "dsfdsferw43-wan2-2-ti2v-5b-gguf",
+  "author": "dsfdsferw43",
+  "url": "https://huggingface.co/dsfdsferw43/Wan2.2-TI2V-5B-GGUF",
+  "created_at": "2026-09-17T00:09:35.000Z",
+  "updated_at": "2026-09-17T00:09:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-video",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "ti2v",
+    "text-to-video",
+    "en",
+    "zh",
+    "base_model:Wan-AI/Wan2.2-TI2V-5B",
+    "base_model:quantized:Wan-AI/Wan2.2-TI2V-5B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4999787712,
+  "parameters_human": "5.00B",
+  "storage_bytes": 45429146208,
+  "storage_human": "45.4 GB",
+  "base_model": "Wan-AI/Wan2.2-TI2V-5B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.co.za/mapfiles/home3.html",
+      "snippet": "Explore the world with Google Maps, providing navigation, real-time traffic updates, and local business information for your …"
+    },
+    {
+      "title": "Verken Straataansig en voeg jou eie 360-prente in Google Maps by.",
+      "url": "https://maps.google.co.za/intl/af/help/maps/streetview/privacy.html",
+      "snippet": "Gee jou kaart lewe, een prent op ’n slag Straataansig “stik” miljarde panoramiese prente aanmekaar om ’n virtuele verteenwoordiging …"
+    },
+    {
+      "title": "Google Maps Additional Terms of Service – Google",
+      "url": "https://maps.google.co.za/help/terms_maps/",
+      "snippet": "Jun 5, 2025 · view and annotate maps; create KML files and map layers; and publicly display content with proper attribution online, in …"
+    },
+    {
+      "title": "Legal Notices for Google Maps/Google Earth and Google …",
+      "url": "https://maps.google.co.za/help/legalnotices_maps/",
+      "snippet": "Data.Sa, South Australian Government Data Directory (AU): https://data.sa.gov.au/data/dataset/bike-routes Licensed by Creative …"
+    },
+    {
+      "title": "Privacy Policy – Privacy & Terms – Google",
+      "url": "https://maps.google.co.za/intl/en/policies/privacy/archive/20040701/",
+      "snippet": "Jul 1, 2004 · The following principles apply to the personally identifying information we ask for and that you provide. “Personally …"
+    }
+  ]
+}

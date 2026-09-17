@@ -29,7 +29,8 @@
     "license:other",
     "endpoints_compatible",
     "region:us",
-    "conversational"
+    "conversational",
+    "not-for-all-audiences"
   ],
   "likes": 0,
   "downloads_30d": 819,

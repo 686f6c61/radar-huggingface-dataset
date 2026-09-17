@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "DJByunDJByun/apple-flux-lora",
+  "slug": "djbyundjbyun-apple-flux-lora",
+  "author": "DJByunDJByun",
+  "url": "https://huggingface.co/DJByunDJByun/apple-flux-lora",
+  "created_at": "2026-09-17T02:21:38.000Z",
+  "updated_at": "2026-09-17T02:29:55.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 171969416,
+  "storage_human": "172 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HHD – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/HHD",
+      "snippet": "HHD Die Abkürzung HHD steht für: HandHeldDevice, die vom Anwender benutzte Hardware zum Erzeugen der …"
+    },
+    {
+      "title": "HHD GesmbH in Innsbruck - FirmenABC",
+      "url": "https://www.firmenabc.at/hhd-gesmbh_BPoD",
+      "snippet": "Zu HHD GesmbH in Innsbruck finden Sie E-Mail Telefonnummer Creditreform Informationen Jetzt entdecken!"
+    },
+    {
+      "title": "HHD GesmbH - WKO Firmen A-Z",
+      "url": "https://firmen.wko.at/hhd-gesmbh-interhome-ferienh%C3%A4user-und-wohnungen/tirol/?firmaid=da6d7bcf-7992-408e-a086-4d71791a1f7f",
+      "snippet": "Die wichtigsten Informationen zum Unternehmen HHD GesmbH finden Sie in Österreichs umfangreichsten Firmenverzeichnis"
+    },
+    {
+      "title": "What Is a Hybrid Hard Drive (HHD)? | Definition from TechTarget",
+      "url": "https://www.techtarget.com/searchstorage/definition/hybrid-hard-drive",
+      "snippet": "Jun 10, 2024 · An HHD, sometimes known as a solid-state hybrid drive (SSHD), combines the capacity, cost and performance of …"
+    },
+    {
+      "title": "Interhome - Ein führender europäischer Spezialist für Ferienhaus ...",
+      "url": "https://www.interhome.group/de-de",
+      "snippet": "Seit 2018 ist Michael Figlestahler Mitglied der Geschäftsleitung und seit 2019 zudem Geschäftsführer der zur Interhome gehörenden …"
+    }
+  ]
+}

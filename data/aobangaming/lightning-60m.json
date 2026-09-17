@@ -5,7 +5,7 @@
   "author": "Aobangaming",
   "url": "https://huggingface.co/Aobangaming/lightning-60m",
   "created_at": "2026-09-14T13:46:15.000Z",
-  "updated_at": "2026-09-14T13:55:12.000Z",
+  "updated_at": "2026-09-20T02:49:32.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -24,6 +24,8 @@
     "en",
     "dataset:kmfoda/booksum",
     "arxiv:1910.09700",
+    "base_model:Aobangaming/lightning-30m-ft",
+    "base_model:finetune:Aobangaming/lightning-30m-ft",
     "license:mit",
     "region:us"
   ],
@@ -34,7 +36,7 @@
   "parameters_human": "64.8M",
   "storage_bytes": 259349352,
   "storage_human": "259 MB",
-  "base_model": null,
+  "base_model": "Aobangaming/lightning-30m-ft",
   "formats": [
     "safetensors"
   ],

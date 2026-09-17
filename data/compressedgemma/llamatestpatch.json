@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "CompressedGemma/LlamaTestPatch",
+  "slug": "compressedgemma-llamatestpatch",
+  "author": "CompressedGemma",
+  "url": "https://huggingface.co/CompressedGemma/LlamaTestPatch",
+  "created_at": "2026-09-17T01:46:49.000Z",
+  "updated_at": "2026-09-17T01:48:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Minecraft Forum",
+      "url": "https://www.minecraftforum.net/",
+      "snippet": "2 days ago · Minecraft community forums, a great place to talk about the game."
+    },
+    {
+      "title": "5 Cool Minecraft Village Seeds 1.8.8",
+      "url": "https://www.minecraftforum.net/forums/minecraft-java-edition/seeds/2559346-5-cool-minecraft-village-seeds-1-8-8",
+      "snippet": "Jan 7, 2010 · Large Island Village Seed near Spawn Minecraft Seed 1.8.8 Island Village: X= -270 Y= 69 Z= 88 Seed 2: …"
+    },
+    {
+      "title": "RE:【問題】防爆和防噴的指令是甚麼？（單人 ...",
+      "url": "https://forum.gamer.com.tw/Co.php?bsn=18673&sn=325794",
+      "snippet": "Feb 17, 2013 · 防爆的指令打/gamerule mobGriefing false 防噴的指令打/gamerule keepInventory true 若要把防噴關掉，只要把true改 …"
+    },
+    {
+      "title": "Minecraft 我的世界（當個創世神） 哈啦板 - 巴哈姆特",
+      "url": "https://forum.gamer.com.tw/B.php?bsn=18673",
+      "snippet": "歡迎來到Minecraft 我的世界（當個創世神）哈啦板，最新資訊及情報分享、精華好文查找、創作交流討論，盡在巴哈姆特！"
+    },
+    {
+      "title": "Extremely Op Enchants - Commands, Command Blocks and Functions ...",
+      "url": "https://www.minecraftforum.net/forums/minecraft-java-edition/redstone-discussion-and/commands-command-blocks-and/2440551-extremely-op-enchants",
+      "snippet": "Jun 26, 2020 · So hey guys, on my channel I showed you guys how to do Op Enchants. If you do not want to make your own I have …"
+    }
+  ]
+}

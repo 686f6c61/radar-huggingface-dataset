@@ -5,7 +5,7 @@
   "author": "ApolloRaines",
   "url": "https://huggingface.co/ApolloRaines/Llama-3.1-8B-Instruct-Concise-Context-Grounded",
   "created_at": "2026-08-30T21:58:50.000Z",
-  "updated_at": "2026-09-15T14:11:53.000Z",
+  "updated_at": "2026-09-19T04:42:51.000Z",
   "license": "llama3.1",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

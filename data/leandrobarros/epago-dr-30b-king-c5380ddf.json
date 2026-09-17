@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "LeandroBarros/EPAGO-DR-30B-king-c5380ddf",
+  "slug": "leandrobarros-epago-dr-30b-king-c5380ddf",
+  "author": "LeandroBarros",
+  "url": "https://huggingface.co/LeandroBarros/EPAGO-DR-30B-king-c5380ddf",
+  "created_at": "2026-09-17T01:41:10.000Z",
+  "updated_at": "2026-09-17T01:46:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_moe",
+    "epago",
+    "sn36",
+    "king-mirror",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 30532122624,
+  "parameters_human": "30.53B",
+  "storage_bytes": 61078033558,
+  "storage_human": "61.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Test Query For Encyclopedia Backstage – NBKomputer",
+      "url": "https://nbkomputer.com/test-query-for-encyclopedia-backstage/",
+      "snippet": "The Backstage Search system architecture separates content collection, indexing, querying, and result rendering. It supports multiple …"
+    },
+    {
+      "title": "Test query for encyclopedia backstage – Advanced query – KNIME …",
+      "url": "https://solmusical.com/test-query-for-encyclopedia-backstage-advanced-query-knime/",
+      "snippet": "Dec 9, 2024 · Test query for encyclopedia backstage – Advanced query – KNIME … – Sol Musical ♫ ♪. Test query for encyclopedia …"
+    },
+    {
+      "title": "Query | Backstage Software Catalog and Developer Platform",
+      "url": "https://backstage.io/docs/features/search/api/query/",
+      "snippet": "Useful for improving the search result display/experience. Optional result rank, where 1 is the first/top result returned. Useful for …"
+    },
+    {
+      "title": "Search | backstage/backstage | DeepWiki",
+      "url": "https://deepwiki.com/backstage/backstage/2.4-search",
+      "snippet": "Sep 6, 2026 · The Backstage Search system architecture separates content collection, indexing, querying, and result rendering. It …"
+    },
+    {
+      "title": "Test query for encyclopedia backstage – Database, Query",
+      "url": "https://solmusical.com/test-query-for-encyclopedia-backstage-database-query/",
+      "snippet": "Jan 14, 2025 · This workflow demonstrates the usage of the DB Concatenate node. The node allows the user combine several …"
+    }
+  ]
+}

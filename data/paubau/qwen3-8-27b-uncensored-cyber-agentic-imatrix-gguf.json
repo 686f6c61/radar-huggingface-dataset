@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "paubau/Qwen3.8-27B-Uncensored-Cyber-agentic-imatrix-GGUF",
+  "slug": "paubau-qwen3-8-27b-uncensored-cyber-agentic-imatrix-gguf",
+  "author": "paubau",
+  "url": "https://huggingface.co/paubau/Qwen3.8-27B-Uncensored-Cyber-agentic-imatrix-GGUF",
+  "created_at": "2026-09-16T21:03:33.000Z",
+  "updated_at": "2026-09-16T21:03:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "imatrix",
+    "quantized",
+    "agentic",
+    "qwen3",
+    "llama.cpp",
+    "v100",
+    "uncensored",
+    "abliterated",
+    "cyber",
+    "image-text-to-text",
+    "base_model:philbert440/Qwen3.8-27B-Uncensored-Cyber",
+    "base_model:quantized:philbert440/Qwen3.8-27B-Uncensored-Cyber",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3391984,
+  "parameters_human": "3.4M",
+  "storage_bytes": 32596672672,
+  "storage_human": "32.6 GB",
+  "base_model": "philbert440/Qwen3.8-27B-Uncensored-Cyber",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Τμήμα Φυσικοθεραπείας | Πανεπιστήμιο ...",
+      "url": "http://www.phys.uniwa.gr/",
+      "snippet": "Βραβεύσεις εργασιών του Τμ. Φυσικοθεραπείας του Πα.Δ.Α. στο 35ο Επιστημονικό Συνέδριο της Ελληνικής Επιστημονικής Εταιρείας …"
+    },
+    {
+      "title": "Τμήμα Φυσικοθεραπείας | Πρόγραμμα ...",
+      "url": "http://www.phys.uniwa.gr/courses/programma-spoydon/",
+      "snippet": "Πρόγραμμα Σπουδών Α’ Εξάμηνο"
+    },
+    {
+      "title": "Τμήμα Φυσικοθεραπείας | Προπτυχιακές ...",
+      "url": "https://phys.uniwa.gr/undergraduate-studies/",
+      "snippet": "Tο πρόγραμμα σπουδών του Τμήματος Φυσικοθεραπείας είναι εναρμονισμένo με τα προγράμματα σπουδών των ευρωπαϊκών …"
+    },
+    {
+      "title": "Τμήμα Φυσικοθεραπείας | Ανακοινώσεις",
+      "url": "http://www.phys.uniwa.gr/category/announcements/",
+      "snippet": "Αναρτήθηκε πρόσκληση υποβολής αιτήσεων για την πρακτική άσκηση μέσω ΕΣΠΑ για την περίοδο χειμερινό εξάμηνο 2026-27."
+    },
+    {
+      "title": "Τμήμα Φυσικοθεραπείας | Πρακτική Άσκηση",
+      "url": "https://phys.uniwa.gr/praktiki-askisi/",
+      "snippet": "ΕΙΔΙΚΗ ΣΥΜΒΑΣΗ ΕΡΓΑΣΙΑΣ ΓΙΑ ΤΗΝ ΠΡΑΚΤΙΚΗ ΑΣΚΗΣΗ ΤΕΙ - ΔΗΜΟΣΙΟΣ ΤΟΜΕΑΣ-ΕΚΤΟΣ ΕΣΠΑ"
+    }
+  ]
+}

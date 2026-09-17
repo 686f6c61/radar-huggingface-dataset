@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Yuchen2001/efficientformer-generation-mini",
+  "slug": "yuchen2001-efficientformer-generation-mini",
+  "author": "Yuchen2001",
+  "url": "https://huggingface.co/Yuchen2001/efficientformer-generation-mini",
+  "created_at": "2026-09-16T23:45:03.000Z",
+  "updated_at": "2026-09-16T23:45:09.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "efficientformer",
+    "pytorch",
+    "generation",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Houston, Texas Restaurants | Taco Bell®",
+      "url": "https://locations.tacobell.com/tx/houston.html",
+      "snippet": "Find a Taco Bell restaurant in Houston, Texas. Order online for restaurant pick-up or delivery!"
+    },
+    {
+      "title": "Taco Bell Menu in Houston, TX - 14329 E Sam Houston Parkway N | Taco Bell…",
+      "url": "https://www.tacobell.com/food?store=033495&msockid=10cbf0f2264d6dba2675e72527cd6c01",
+      "snippet": "With breakfast options at select locations, to late night, the Taco Bell menu in Houston, TX, serves made-to-order and customizable …"
+    },
+    {
+      "title": "Taco Bell® in Houston, TX - 1223 Gessner Drive",
+      "url": "https://locations.tacobell.com/tx/houston/1223-gessner-drive.html",
+      "snippet": "Find your nearby Taco Bell at 1223 Gessner Drive in Houston, TX. We're serving all your favorite menu items, from classic tacos, …"
+    },
+    {
+      "title": "Houston, TX, USA, Taco Bell Store Locations",
+      "url": "https://storelocatortool.com/v3/taco-bell-locations/search.php?city=Houston&country=USA&lat=29.749.907&lon=-95.358.421&region=TX&store=Taco+Bell",
+      "snippet": "Tacos, burritos, quesadillas, nachos, vegetarian options, fountain drinks and desserts. Where is the nearest Taco Bell Store ? Where …"
+    },
+    {
+      "title": "Taco Bell Featured Menu Items in Houston, TX | Taco Bell®",
+      "url": "https://www.tacobell.com/food/featured?store=041076&msockid=10cbf0f2264d6dba2675e72527cd6c01",
+      "snippet": "Looking for something new in Houston, TX? Try one of our delicious new menu items at Taco Bell. Order online and skip our line inside!"
+    }
+  ]
+}

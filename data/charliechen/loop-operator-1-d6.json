@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "CharlieChen/loop-operator-1-d6",
+  "slug": "charliechen-loop-operator-1-d6",
+  "author": "CharlieChen",
+  "url": "https://huggingface.co/CharlieChen/loop-operator-1-d6",
+  "created_at": "2026-09-16T21:51:32.000Z",
+  "updated_at": "2026-09-16T21:51:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "looped-transformer",
+    "scaling-laws",
+    "pytorch",
+    "base-model",
+    "text-generation",
+    "en",
+    "dataset:HuggingFaceFW/fineweb",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 478950587,
+  "storage_human": "479 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Banque et Assurances - Crédit Agricole Toulouse 31",
+      "url": "https://www.credit-agricole.fr/ca-toulouse31/particulier.html",
+      "snippet": "Découvrez les offres et services du Crédit Agricole : compte bancaire, assurance-vie, épargne, placement, retraite, habitation, …"
+    },
+    {
+      "title": "Agences bancaires CA Toulouse 31 - Crédit Agricole",
+      "url": "https://www.credit-agricole.fr/particulier/agence/toulouse-31.html",
+      "snippet": "Retrouvez les agences Banques et Assurance du Crédit Agricole Toulouse 31 : Tous nos produits bancaires et d'assurance près de …"
+    },
+    {
+      "title": "Crédit Agricole Toulouse 31",
+      "url": "https://www.creditagricole.info/caisse/credit-agricole-toulouse-31/",
+      "snippet": "Retrouvez toutes les informations du Crédit Agricole Toulouse 31 : coordonnées (adresse, numéros de téléphone, site internet) ; …"
+    },
+    {
+      "title": "Crédit Agricole Toulouse 31",
+      "url": "https://www.ca-toulouse31.fr/Vitrine/ObjCommun/Fic/Toulousain/Campagnes/Institutionnelle/slider/index.html",
+      "snippet": "Crédit Agricole Toulouse 31. Retour à l'accueil."
+    },
+    {
+      "title": "Agences bancaires Toulouse – Crédit Agricole",
+      "url": "https://www.credit-agricole.fr/particulier/agence/toulouse-31/ville/toulouse-31100.html",
+      "snippet": "Trouvez toutes les informations : horaires d'ouverture, adresse, coordonnées téléphonique de vos agences du Crédit Agricole …"
+    }
+  ]
+}

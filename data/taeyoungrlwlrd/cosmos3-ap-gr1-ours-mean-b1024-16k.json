@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "taeyoungrlwlrd/cosmos3-ap-gr1-ours-mean-b1024-16k",
+  "slug": "taeyoungrlwlrd-cosmos3-ap-gr1-ours-mean-b1024-16k",
+  "author": "taeyoungrlwlrd",
+  "url": "https://huggingface.co/taeyoungrlwlrd/cosmos3-ap-gr1-ours-mean-b1024-16k",
+  "created_at": "2026-09-17T02:25:10.000Z",
+  "updated_at": "2026-09-17T03:19:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 182123895118,
+  "storage_human": "182.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sign in to your account - admin.microsoft.com",
+      "url": "https://admin.microsoft.com/AdminPortal/Home",
+      "snippet": "Sign in to manage your Microsoft account and access all services securely."
+    },
+    {
+      "title": "Iniciar sesión en la cuenta - admin.microsoft.com",
+      "url": "https://admin.microsoft.com/Adminportal/Home?culture=es-us",
+      "snippet": "Opciones de inicio de sesión Términos de uso Privacidad y cookies ..."
+    },
+    {
+      "title": "Log på din konto - admin.microsoft.com",
+      "url": "https://admin.microsoft.com/Adminportal/Home?culture=da-dk&ref=/support",
+      "snippet": "Administrer dine Microsoft-tjenester, brugere og enheder med Microsoft 365 Admin Center. Få hjælp til opsætning, administration og …"
+    },
+    {
+      "title": "There was a problem processing your request - admin.microsoft.com",
+      "url": "https://admin.microsoft.com/AdminPortal/Home.",
+      "snippet": "You can try refreshing the page to solve the problem. You can also wait a few minutes and try again."
+    },
+    {
+      "title": "Microsoft",
+      "url": "https://admin.microsoft.com/AdminPortal/?searchSolutions=Diag%3A%20Teams%20Federation",
+      "snippet": ""
+    }
+  ]
+}

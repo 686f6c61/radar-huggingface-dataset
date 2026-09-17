@@ -4,8 +4,8 @@
   "slug": "ishikaa-acquisition_generator_as_diversity_medmcqa_qwen7b",
   "author": "ishikaa",
   "url": "https://huggingface.co/ishikaa/acquisition_generator_AS_diversity_medmcqa_qwen7b",
-  "created_at": "2026-08-22T06:56:44.000Z",
-  "updated_at": "2026-08-23T07:26:43.000Z",
+  "created_at": "2026-09-21T04:59:22.000Z",
+  "updated_at": "2026-09-21T05:02:04.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -35,8 +35,8 @@
   ],
   "is_conversational": true,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-09-05T05:21:32.450Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

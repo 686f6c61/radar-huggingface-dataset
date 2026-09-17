@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "Dragoy/Swift-Qwen3.8-27B-abliterated-NVFP4",
+  "slug": "dragoy-swift-qwen3-8-27b-abliterated-nvfp4",
+  "author": "Dragoy",
+  "url": "https://huggingface.co/Dragoy/Swift-Qwen3.8-27B-abliterated-NVFP4",
+  "created_at": "2026-09-16T23:07:07.000Z",
+  "updated_at": "2026-09-18T01:46:23.000Z",
+  "license": "swift-open-license-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "nvfp4",
+    "fp8",
+    "qwen3.8",
+    "abliterated",
+    "uncensored",
+    "multimodal",
+    "mtp",
+    "vllm",
+    "blackwell",
+    "conversational",
+    "base_model:ukisai/Swift-Qwen3.8-27b",
+    "base_model:quantized:ukisai/Swift-Qwen3.8-27b",
+    "license:other",
+    "endpoints_compatible",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 19409165824,
+  "parameters_human": "19.41B",
+  "storage_bytes": 21699709173,
+  "storage_human": "21.7 GB",
+  "base_model": "ukisai/Swift-Qwen3.8-27b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tracking Your Shipment or Packages | FedEx",
+      "url": "https://www.fedex.com/en-us/tracking.html",
+      "snippet": "Where is my package? Enter your FedEx tracking number, track by reference, obtain proof of delivery, or TCN. See FedEx Express, …"
+    },
+    {
+      "title": "Tracking Your Shipment or Packages | FedEx United Kingdom",
+      "url": "https://www.fedex.com/en-gb/tracking.html",
+      "snippet": "Where is my package? Find out by entering your tracking number, track by reference, obtain proof of delivery, or TCN."
+    },
+    {
+      "title": "Tracking Your Shipment | FedEx India",
+      "url": "https://www.fedex.com/en-in/tracking.html",
+      "snippet": "Where is my package? Find out by entering your tracking number, track by reference, obtain proof of delivery, or TCN."
+    },
+    {
+      "title": "国際小包・貨物の追跡 | FedEx 日本",
+      "url": "https://www.fedex.com/ja-jp/tracking.html",
+      "snippet": "FedEx Mobile Tracking モバイル向けFedEx Trackingは非常に便利な追跡ツールです。絶えず移動しているお客様にも更新情報が届 …"
+    },
+    {
+      "title": "Monitoraggio delle spedizioni | FedEx Italia",
+      "url": "https://www.fedex.com/it-it/tracking.html",
+      "snippet": "Seguite con semplicità le vostre spedizioni con il monitoraggio FedEx. Potrete vedere subito dove si trovano gestendole al meglio, sia …"
+    }
+  ]
+}

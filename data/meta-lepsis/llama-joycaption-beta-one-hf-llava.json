@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Meta-lepsis/llama-joycaption-beta-one-hf-llava",
+  "slug": "meta-lepsis-llama-joycaption-beta-one-hf-llava",
+  "author": "Meta-lepsis",
+  "url": "https://huggingface.co/Meta-lepsis/llama-joycaption-beta-one-hf-llava",
+  "created_at": "2026-09-16T23:35:32.000Z",
+  "updated_at": "2026-09-16T23:35:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llava",
+    "image-text-to-text",
+    "captioning",
+    "conversational",
+    "base_model:google/siglip2-so400m-patch14-384",
+    "base_model:finetune:google/siglip2-so400m-patch14-384",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8479990848,
+  "parameters_human": "8.48B",
+  "storage_bytes": 16977292048,
+  "storage_human": "17.0 GB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct, google/siglip2-so400m-patch14-384",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "À propos de Meta | Technologie sociale, VR, AR et innovation",
+      "url": "https://www.meta.com/fr-fr/about/",
+      "snippet": "Découvrez Meta et suivez l’actualité de notre entreprise en matière de technologie sociale, de réalité virtuelle, de réalité augmentée …"
+    },
+    {
+      "title": "Meta AI",
+      "url": "https://www.meta.ai/?locale=fr_FR",
+      "snippet": "Use Meta AI assistant to get things done, create AI-generated images for free, and get answers to any of your questions."
+    },
+    {
+      "title": "About Meta | Social Technology, VR, AR, and Innovation",
+      "url": "https://www.meta.com/about/",
+      "snippet": "Learn more about Meta and stay updated on our role in social technology, virtual reality, augmented reality, and the future of human …"
+    },
+    {
+      "title": "Meta for Business (formerly Facebook for Business)",
+      "url": "https://business.facebook.com/",
+      "snippet": "By logging in, you can navigate to all business tools like Meta Business Suite, Ads Manager and more to help you connect with your …"
+    },
+    {
+      "title": "Meta (entreprise) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Meta_(entreprise)",
+      "snippet": "Meta ou Meta Platforms, anciennement connue sous le nom de Facebook Inc., est une multinationale américaine fondée en 2004 par …"
+    }
+  ]
+}

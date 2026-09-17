@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "muhamad-geosurge/invert-polarity-f9d6b8c5-1e7c-47db-8283-2cf3424e1b59",
+  "slug": "muhamad-geosurge-invert-polarity-f9d6b8c5-1e7c-47db-8283-2cf3424e1b59",
+  "author": "muhamad-geosurge",
+  "url": "https://huggingface.co/muhamad-geosurge/invert-polarity-f9d6b8c5-1e7c-47db-8283-2cf3424e1b59",
+  "created_at": "2026-09-16T23:21:40.000Z",
+  "updated_at": "2026-09-16T23:36:19.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3_text",
+    "text-generation",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:1905.07830",
+    "arxiv:1905.10044",
+    "arxiv:1911.11641",
+    "arxiv:1904.09728",
+    "arxiv:1705.03551",
+    "arxiv:1911.01547",
+    "arxiv:1907.10641",
+    "arxiv:1903.00161",
+    "arxiv:2009.03300",
+    "arxiv:2304.06364",
+    "arxiv:2103.03874",
+    "arxiv:2110.14168",
+    "arxiv:2311.12022",
+    "arxiv:2108.07732",
+    "arxiv:2107.03374",
+    "arxiv:2210.03057",
+    "arxiv:2106.03193",
+    "arxiv:1910.11856",
+    "arxiv:2502.12404",
+    "arxiv:2502.21228",
+    "arxiv:2404.16816",
+    "arxiv:2104.12756",
+    "arxiv:2311.16502",
+    "arxiv:2203.10244",
+    "arxiv:2404.12390",
+    "arxiv:1810.12440",
+    "arxiv:1908.02660",
+    "arxiv:2312.11805",
+    "base_model:google/gemma-3-4b-pt",
+    "base_model:finetune:google/gemma-3-4b-pt",
+    "license:gemma",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3880104448,
+  "parameters_human": "3.88B",
+  "storage_bytes": 7793645432,
+  "storage_human": "7.8 GB",
+  "base_model": "google/gemma-3-4b-pt",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Se connecter à Gmail - Ordinateur - Aide Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Se connecter à Gmail Conseil : Si vous vous connectez à un ordinateur public, pensez à vous déconnecter avant de quitter …"
+    },
+    {
+      "title": "Définir Google comme moteur de recherche par défaut",
+      "url": "https://support.google.com/websearch/answer/464?hl=fr",
+      "snippet": "Définir Google comme moteur de recherche par défaut dans votre navigateur Si votre navigateur n'est pas répertorié ci-dessous, …"
+    },
+    {
+      "title": "Afficher et contrôler l'activité sur le Web et les applications",
+      "url": "https://support.google.com/websearch/answer/54068?hl=fr-be&co=GENIE.Platform%3DDesktop",
+      "snippet": "En savoir plus sur les nouveaux paramètres Vous pouvez consulter et gérer vos nouveaux paramètres de confidentialité directement …"
+    },
+    {
+      "title": "Effectuer une recherche à l'aide d'une image sur Google",
+      "url": "https://support.google.com/websearch/answer/1325808?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Effectuer une recherche à l'aide des résultats d'une recherche d'images Les résultats peuvent inclure : des Aperçus IA ; des …"
+    },
+    {
+      "title": "Gérer l'historique des recherches visuelles dans vos paramètres",
+      "url": "https://support.google.com/websearch/answer/14601082?hl=fr&co=GENIE.Platform%3DAndroid",
+      "snippet": "Certaines technologies de recherche visuelle de Google peuvent reconnaître des objets dans les images que vous utilisez pour …"
+    }
+  ]
+}

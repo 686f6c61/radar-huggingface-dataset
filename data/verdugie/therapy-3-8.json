@@ -5,7 +5,7 @@
   "author": "Verdugie",
   "url": "https://huggingface.co/Verdugie/Therapy-3.8",
   "created_at": "2026-09-02T19:53:27.000Z",
-  "updated_at": "2026-09-03T00:53:26.000Z",
+  "updated_at": "2026-09-21T11:58:28.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -50,7 +50,7 @@
     "text-generation",
     "en",
     "base_model:Qwen/Qwen3.8-27B",
-    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
     "license:apache-2.0",
     "endpoints_compatible",
     "region:us"
@@ -60,8 +60,8 @@
   "trending_score": 0,
   "parameters": 26895998464,
   "parameters_human": "26.90B",
-  "storage_bytes": 195062308181,
-  "storage_human": "195.1 GB",
+  "storage_bytes": 304403829589,
+  "storage_human": "304.4 GB",
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [
     "gguf"

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "CharlieChen/loop-vanilla-d18",
+  "slug": "charliechen-loop-vanilla-d18",
+  "author": "CharlieChen",
+  "url": "https://huggingface.co/CharlieChen/loop-vanilla-d18",
+  "created_at": "2026-09-16T21:54:13.000Z",
+  "updated_at": "2026-09-16T21:54:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "looped-transformer",
+    "scaling-laws",
+    "pytorch",
+    "base-model",
+    "text-generation",
+    "en",
+    "dataset:HuggingFaceFW/fineweb",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5513710671,
+  "storage_human": "5.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amazon WorkSpaces Client Download",
+      "url": "https://clients.amazonworkspaces.com/",
+      "snippet": "Access your personal or pooled Amazon WorkSpaces from Windows, macOS, Linux, Android, iOS, or from a web browser on most …"
+    },
+    {
+      "title": "Getting Started - Amazon WorkSpaces",
+      "url": "https://webclient.amazonworkspaces.com/",
+      "snippet": "To get started enter the registration code provided to you by your administrator. Enable or disable WorkSpaces to save your …"
+    },
+    {
+      "title": "Virtual Desktop Infrastructure (VDI) - Amazon WorkSpaces - AWS",
+      "url": "https://aws.amazon.com/workspaces/",
+      "snippet": "Amazon WorkSpaces provides secure, managed virtual desktop infrastructure (VDI) in the cloud. Deploy Windows and Linux …"
+    },
+    {
+      "title": "What is Amazon WorkSpaces? - Amazon WorkSpaces",
+      "url": "https://docs.aws.amazon.com/workspaces/latest/adminguide/amazon-workspaces.html",
+      "snippet": "Amazon WorkSpaces enables you to provision virtual, cloud-based desktops known as WorkSpaces for your users. These desktops …"
+    },
+    {
+      "title": "Getting Started with Amazon WorkSpaces – Amazon Web Services",
+      "url": "https://aws.amazon.com/workspaces/getting-started/",
+      "snippet": "Get access to administrator and developer resources such as documentation, webinars, and updates on recent product launches …"
+    }
+  ]
+}

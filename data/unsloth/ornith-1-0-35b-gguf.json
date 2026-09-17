@@ -20,7 +20,6 @@
     "base_model:quantized:deepreinforce-ai/Ornith-1.0-35B",
     "license:mit",
     "endpoints_compatible",
-    "deploy:azure",
     "region:us",
     "imatrix",
     "conversational"

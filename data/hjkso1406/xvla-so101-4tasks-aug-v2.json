@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "hjkso1406/xvla-so101-4tasks-aug-v2",
+  "slug": "hjkso1406-xvla-so101-4tasks-aug-v2",
+  "author": "hjkso1406",
+  "url": "https://huggingface.co/hjkso1406/xvla-so101-4tasks-aug-v2",
+  "created_at": "2026-09-16T23:58:50.000Z",
+  "updated_at": "2026-09-16T23:59:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "xvla",
+    "robotics",
+    "dataset:hjkso1406/so101-4tasks-100eps",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 879738545,
+  "parameters_human": "879.7M",
+  "storage_bytes": 1759604522,
+  "storage_human": "1.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=fr",
+      "snippet": "Publicité À propos de Google Google.com in English © 2026 - Confidentialité - Conditions"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/#!%20/=",
+      "snippet": "We would like to show you a description here but the site won’t allow us."
+    },
+    {
+      "title": "Google",
+      "url": "http://www.google.gp/?hl=fr",
+      "snippet": "Google disponible en : English Publicité À propos de Google Google.com"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com.nf/?hl=ar-US",
+      "snippet": "محرّك بحث Google متوفّر باللغة: English الإعلانات كل ما تحب معرفته عن Google‏ هنا Google.com"
+    },
+    {
+      "title": "Google",
+      "url": "http://www.google.gp/webhp?hl=fr&gl=gp",
+      "snippet": "Publicité Solutions d'entreprise À propos de Google Google.com"
+    }
+  ]
+}

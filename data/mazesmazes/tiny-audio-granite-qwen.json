@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "mazesmazes/tiny-audio-granite-qwen",
+  "slug": "mazesmazes-tiny-audio-granite-qwen",
+  "author": "mazesmazes",
+  "url": "https://huggingface.co/mazesmazes/tiny-audio-granite-qwen",
+  "created_at": "2026-09-17T02:22:06.000Z",
+  "updated_at": "2026-09-18T20:29:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "asr_model",
+    "feature-extraction",
+    "generated_from_trainer",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1894153024,
+  "parameters_human": "1.89B",
+  "storage_bytes": 189436316602,
+  "storage_human": "189.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Change Primary Mouse Button in Windows 11",
+      "url": "https://www.elevenforum.com/t/change-primary-mouse-button-in-windows-11.6096/",
+      "snippet": "Apr 26, 2022 · This tutorial will show you how to change the primary mouse button for your account in Windows 11. The primary …"
+    },
+    {
+      "title": "Change the Primary Mouse Button in Windows 11/10 (2026 Guide)",
+      "url": "https://onewebcare.com/windows/change-the-primary-mouse-button-in-windows/",
+      "snippet": "Sep 9, 2026 · In Windows 10, go to Settings > Devices > Mouse and use the ‘Select your primary button’ dropdown. The Control …"
+    },
+    {
+      "title": "How to Change the Primary Mouse Button in Windows",
+      "url": "https://www.wikihow.com/Change-the-Primary-Mouse-Button-in-Windows",
+      "snippet": "Sep 9, 2026 · In Windows, changing your primary mouse button is easy. Your \"primary mouse button\" is the mouse button you use to …"
+    },
+    {
+      "title": "Change Mouse Primary Button to Left or Right in Windows 10",
+      "url": "https://www.tenforums.com/tutorials/82696-change-mouse-primary-button-left-right-windows-10-a.html",
+      "snippet": "Apr 26, 2022 · The primary button is used for functions such as selecting and dragging. This tutorial will show you how to change the …"
+    },
+    {
+      "title": "How to Change Primary Mouse Button in Windows 11 - Geek Rewind",
+      "url": "https://geekrewind.com/how-to-change-primary-mouse-button-in-windows-11/",
+      "snippet": "Mar 21, 2026 · You can change primary mouse button settings in Windows 11 by opening the Settings ⚙️ app, navigating to the …"
+    }
+  ]
+}

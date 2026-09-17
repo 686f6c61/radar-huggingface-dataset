@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Brajone2/retrieval-beta",
+  "slug": "brajone2-retrieval-beta",
+  "author": "Brajone2",
+  "url": "https://huggingface.co/Brajone2/retrieval-beta",
+  "created_at": "2026-09-16T23:40:45.000Z",
+  "updated_at": "2026-09-16T23:40:50.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mixer",
+    "pytorch",
+    "retrieval",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "idealo – Die Nr. 1 im Preisvergleich",
+      "url": "https://www.idealo.de/?msockid=27cb525889e661a020c2458f88cc6096",
+      "snippet": "Wir müssen dir nichts verkaufen und haben kein Lager, das geleert werden muss. Daher beraten wir dich immer objektiv. Die bei uns …"
+    },
+    {
+      "title": "Top-Deals auf idealo – Unschlagbare Angebote & Rabatte",
+      "url": "https://www.idealo.de/preisvergleich/deals?msockid=27cb525889e661a020c2458f88cc6096",
+      "snippet": "Entdecke die besten Angebote für Elektronik, Mode und mehr auf idealo. Jetzt vergleichen und sparen!"
+    },
+    {
+      "title": "Günstige Flüge & Billigflüge vergleichen | idealo Flugsuche",
+      "url": "https://flug.idealo.de/",
+      "snippet": "Bei idealo findest Du mit nur einer Suche innerhalb von Sekunden die beste Verbindung zu Deinem Wunschziel und den bei uns …"
+    },
+    {
+      "title": "Preisvergleich billiger.de – Aktuelle Deals und Angebote",
+      "url": "https://www.billiger.de/",
+      "snippet": "Auf billiger.de buchen Sie Ihren nächsten Urlaub ganz einfach und bequem. Sie finden bei uns günstige Einzelleistungen wie Flüge, …"
+    },
+    {
+      "title": "idealo – Österreichs großer Preisvergleich",
+      "url": "https://www.idealo.at/",
+      "snippet": "Mit idealo Österreich hast du seit 2004 einen verlässlichen Preisvergleich an deiner Seite, der europaweit agiert und dir somit eine …"
+    }
+  ]
+}

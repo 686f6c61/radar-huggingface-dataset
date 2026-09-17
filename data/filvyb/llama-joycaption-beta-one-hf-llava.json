@@ -5,7 +5,7 @@
   "author": "filvyb",
   "url": "https://huggingface.co/filvyb/llama-joycaption-beta-one-hf-llava",
   "created_at": "2026-09-15T20:10:33.000Z",
-  "updated_at": "2026-09-15T22:38:31.000Z",
+  "updated_at": "2026-09-16T17:19:57.000Z",
   "license": "llama3.1",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",
@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": 8030261312,
   "parameters_human": "8.03B",
-  "storage_bytes": 8060325504,
-  "storage_human": "8.1 GB",
+  "storage_bytes": 16601098176,
+  "storage_human": "16.6 GB",
   "base_model": "fancyfeast/llama-joycaption-beta-one-hf-llava",
   "formats": [
     "gguf"

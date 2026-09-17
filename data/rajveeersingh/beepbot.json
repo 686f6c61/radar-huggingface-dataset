@@ -5,7 +5,7 @@
   "author": "RajveeerSingh",
   "url": "https://huggingface.co/RajveeerSingh/beepbot",
   "created_at": "2026-08-15T13:34:27.000Z",
-  "updated_at": "2026-08-15T14:05:34.000Z",
+  "updated_at": "2026-09-19T05:58:50.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "translation",
@@ -16,6 +16,7 @@
   "tags": [
     "onnx",
     "safetensors",
+    "bart",
     "translation",
     "en",
     "base_model:facebook/bart-base",

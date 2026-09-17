@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "CharlieChen/loop-untied-2-d18",
+  "slug": "charliechen-loop-untied-2-d18",
+  "author": "CharlieChen",
+  "url": "https://huggingface.co/CharlieChen/loop-untied-2-d18",
+  "created_at": "2026-09-16T21:52:49.000Z",
+  "updated_at": "2026-09-16T21:53:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "looped-transformer",
+    "scaling-laws",
+    "pytorch",
+    "base-model",
+    "text-generation",
+    "en",
+    "dataset:HuggingFaceFW/fineweb",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7042548127,
+  "storage_human": "7.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Angela White Movies - iXXX",
+      "url": "https://www.ixxx.com/pornstar/angela-white",
+      "snippet": "Watch Angela White Movies for free on IXXX.com!"
+    },
+    {
+      "title": "How concerned should we be about Astra's recurrent ...",
+      "url": "https://www.lesswrong.com/posts/PLisnSFir8y5AHkmP/how-concerned-should-we-be-about-astra-s-recurrent",
+      "snippet": "If I understand the \"loopies\" paper correctly, the main advantage that looping gives you over an \"untied\" model is that your compute is about 30% faster for the same number of loop-active parameters per token (i.e., counting looped tokens according to their repetition count), allegedly all ..."
+    },
+    {
+      "title": "What Is Loop Engineering? The New Meta for AI Coding Agents | MindStudio",
+      "url": "https://www.mindstudio.ai/blog/what-is-loop-engineering-ai-coding-agents",
+      "snippet": "A loop, in agentic AI, is a repeating cycle where the model takes an action, receives feedback from the environment, and uses that feedback to decide its next move. The loop continues until some termination condition is met — a task is complete, ..."
+    },
+    {
+      "title": "Angela White porn videos | free ️ vids @ Tiava",
+      "url": "https://www.tiava.com/ar/pornstar/angela-white",
+      "snippet": "مقاطع الفيديو دون روابط مضللة. يعد موقع Tiava الموقع الأول للأفلام الإباحية عالية الجودة. 💦 Angela White كبر مجموعة من"
+    },
+    {
+      "title": "Beyond AI-Driven Development, Part 2: The Dual-Loop Verification Engine · Derick Chen",
+      "url": "https://www.buildwithdc.co/posts/beyond-ai-driven-development-part-2-the-dual-loop-verification-engine/",
+      "snippet": "Your evaluation prompts and your guardrail rules are tuned against the specific reasoning behavior of the model you’re running today. Upgrade your foundation model — say, from one major version to the next — and the underlying reasoning shifts in ways that aren’t always visible until the evaluator starts passing things it shouldn’t, or flagging things that are actually fine."
+    }
+  ]
+}

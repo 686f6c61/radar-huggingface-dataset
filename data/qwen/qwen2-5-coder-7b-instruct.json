@@ -42,8 +42,8 @@
   "trending_score": 7,
   "parameters": 7615616512,
   "parameters_human": "7.62B",
-  "storage_bytes": 30462543728,
-  "storage_human": "30.5 GB",
+  "storage_bytes": 15231271864,
+  "storage_human": "15.2 GB",
   "base_model": "Qwen/Qwen2.5-Coder-7B",
   "formats": [
     "safetensors"

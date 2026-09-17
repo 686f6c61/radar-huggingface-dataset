@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "MielleAI/Xyz",
+  "slug": "mielleai-xyz",
+  "author": "MielleAI",
+  "url": "https://huggingface.co/MielleAI/Xyz",
+  "created_at": "2026-09-16T22:26:29.000Z",
+  "updated_at": "2026-09-16T22:27:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 228594954,
+  "storage_human": "229 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-17T02:51:30.952Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Earth",
+      "url": "https://maps.google.it/intl/en/earth/",
+      "snippet": "Google Earth is the most photorealistic, digital version of our planet. Where do the images come from? How are they they put …"
+    },
+    {
+      "title": "Earth Versions - Google Maps",
+      "url": "https://maps.google.it/intl/en/earth/versions/",
+      "snippet": "With Google Earth for Chrome, fly anywhere in seconds and explore hundreds of 3D cities right in your browser. Roll the dice to …"
+    },
+    {
+      "title": "Versioni di Earth - Google Maps",
+      "url": "https://maps.google.it/intl/it/earth/versions/",
+      "snippet": "Using Google Maps, Google Earth, and Street View permissions page. Prohibited Conduct. Your compliance with this Section 2 is a …"
+    },
+    {
+      "title": "Transit – Google Maps",
+      "url": "https://maps.google.it/intl/it/landing/transit/",
+      "snippet": "If you provide a transportation service that is open to the public, and operates with fixed schedules and routes, we welcome your …"
+    },
+    {
+      "title": "Google Earth",
+      "url": "https://maps.google.it/intl/it/earth/index.html",
+      "snippet": "Google Earth è la versione digitale più fotorealistica del nostro pianeta. Da dove provengono le immagini? Come sono assemblate? E …"
+    }
+  ]
+}

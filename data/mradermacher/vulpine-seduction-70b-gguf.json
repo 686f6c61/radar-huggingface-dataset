@@ -25,7 +25,8 @@
     "license:llama3.3",
     "endpoints_compatible",
     "region:us",
-    "conversational"
+    "conversational",
+    "not-for-all-audiences"
   ],
   "likes": 0,
   "downloads_30d": 852,

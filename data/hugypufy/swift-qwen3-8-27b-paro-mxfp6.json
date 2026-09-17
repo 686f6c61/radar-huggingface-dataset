@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "hugypufy/Swift-Qwen3.8-27B-PARO-MXFP6",
+  "slug": "hugypufy-swift-qwen3-8-27b-paro-mxfp6",
+  "author": "hugypufy",
+  "url": "https://huggingface.co/hugypufy/Swift-Qwen3.8-27B-PARO-MXFP6",
+  "created_at": "2026-09-17T00:41:30.000Z",
+  "updated_at": "2026-09-17T20:42:59.000Z",
+  "license": "swift-open-license-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "paroquant",
+    "mxfp6",
+    "w6a8",
+    "rocm",
+    "rdna4",
+    "vllm",
+    "quantized",
+    "conversational",
+    "base_model:ukisai/Swift-Qwen3.8-27b",
+    "base_model:quantized:ukisai/Swift-Qwen3.8-27b",
+    "license:other",
+    "endpoints_compatible",
+    "6-bit",
+    "paroquant_mxfp6",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 21312687344,
+  "parameters_human": "21.31B",
+  "storage_bytes": 25153527768,
+  "storage_human": "25.2 GB",
+  "base_model": "ukisai/Swift-Qwen3.8-27b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Top 10 Best Netflix Original Documentaries - WatchMojo",
+      "url": "https://www.watchmojo.com/articles/top-10-best-netflix-original-documentaries",
+      "snippet": "These Netflix original documentary films are as informative as they are absorbing. We're looking at documentaries that are Netflix …"
+    },
+    {
+      "title": "25 Best Documentaries on Netflix to Stream Right Now - Netflix …",
+      "url": "https://www.netflix.com/tudum/articles/documentaries-on-netflix",
+      "snippet": "Nov 18, 2024 · 25 Documentaries to Stream, from Deep Dives to Celebrity Spotlights Immerse yourself in these fascinating real-life …"
+    },
+    {
+      "title": "The 25 Best Documentaries on Netflix, According to Critics",
+      "url": "https://www.newsweek.com/25-best-documentaries-netflix-according-critics-1563777",
+      "snippet": "Jan 26, 2021 · According to Metacritic scores out of 100, these are the best documentary films and docuseries you can find on Netflix. …"
+    },
+    {
+      "title": "The 35 best documentaries on Netflix - Mashable",
+      "url": "https://mashable.com/article/best-documentaries-netflix",
+      "snippet": "Apr 25, 2024 · Netflix's documentary offerings are strong stuff, with many of the streaming service's films and series proving some the …"
+    },
+    {
+      "title": "50 Best Documentaries on Netflix Right Now - Esquire",
+      "url": "https://www.esquire.com/entertainment/movies/g23618769/best-documentaries-on-netflix/",
+      "snippet": "Aug 26, 2024 · From Oscar-winning works, to rock docs and pop-culture biographies, these are the best documentaries on Netflix in …"
+    }
+  ]
+}

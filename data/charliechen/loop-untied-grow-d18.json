@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "CharlieChen/loop-untied-grow-d18",
+  "slug": "charliechen-loop-untied-grow-d18",
+  "author": "CharlieChen",
+  "url": "https://huggingface.co/CharlieChen/loop-untied-grow-d18",
+  "created_at": "2026-09-16T21:53:32.000Z",
+  "updated_at": "2026-09-16T21:54:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "looped-transformer",
+    "scaling-laws",
+    "pytorch",
+    "base-model",
+    "text-generation",
+    "en",
+    "dataset:HuggingFaceFW/fineweb",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10100223103,
+  "storage_human": "10.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "THE 10 BEST Restaurants in Bellevue - Tripadvisor",
+      "url": "https://www.tripadvisor.com/Restaurants-g58349-Bellevue_Washington.html",
+      "snippet": "Best Dining in Bellevue, Washington: See 16,446 Tripadvisor traveler reviews of 522 Bellevue restaurants and search by cuisine, …"
+    },
+    {
+      "title": "THE BEST 10 RESTAURANTS IN BELLEVUE, WA - UPDATED SEPTEMBER 2026 ... - Yelp",
+      "url": "https://www.yelp.com/search?cflt=restaurants&find_loc=Bellevue%2C+WA&msockid=3b7e7d81b553623e29fb6a57b4776337",
+      "snippet": "Best Restaurants in Bellevue, WA - Last Updated September 2026 - Tendon Kohaku, Carmine's, Mama Xita BBQ, Ramen Nori, …"
+    },
+    {
+      "title": "Best Restaurants in Bellevue: A Local's Guide",
+      "url": "https://downtownbellevue.com/best-restaurants-downtown-bellevue/",
+      "snippet": "The best restaurants in Bellevue, chosen by locals who actually eat here — 40+ downtown spots with hours and ratings kept up to …"
+    },
+    {
+      "title": "12 Best Bellevue Restaurants & What To Order (2026) - Noms Magazine",
+      "url": "https://nomsmagazine.com/best-bellevue-restaurants/",
+      "snippet": "Jan 30, 2026 · From strip mall Sichuan that rivals the International District to high-end sushi flown in daily from Tokyo, the options are …"
+    },
+    {
+      "title": "The Best Restaurants in Bellevue, Washington | Eater Seattle",
+      "url": "https://seattle.eater.com/maps/best-eastside-restaurants-seattle-bellevue-kirkland-redmond-woodinville",
+      "snippet": "Jul 22, 2025 · This restaurant in a strip mall in Bellevue’s Bel-Red neighborhood serves some of the best Sichuan food in the Seattle …"
+    }
+  ]
+}

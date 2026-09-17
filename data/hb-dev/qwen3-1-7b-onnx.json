@@ -5,7 +5,7 @@
   "author": "hb-dev",
   "url": "https://huggingface.co/hb-dev/Qwen3-1.7B-ONNX",
   "created_at": "2026-09-16T00:38:04.000Z",
-  "updated_at": "2026-09-16T00:53:06.000Z",
+  "updated_at": "2026-09-17T04:54:29.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 1742387752,
-  "storage_human": "1.7 GB",
+  "storage_bytes": 3168456850,
+  "storage_human": "3.2 GB",
   "base_model": "Qwen/Qwen3-1.7B",
   "formats": [
     "onnx"

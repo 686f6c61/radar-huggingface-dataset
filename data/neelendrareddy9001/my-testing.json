@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "neelendrareddy9001/my-testing",
+  "slug": "neelendrareddy9001-my-testing",
+  "author": "neelendrareddy9001",
+  "url": "https://huggingface.co/neelendrareddy9001/my-testing",
+  "created_at": "2026-09-16T20:17:51.000Z",
+  "updated_at": "2026-09-16T20:17:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "40 Beef Recipes Perfect for Dinner - Taste of Home",
+      "url": "https://www.tasteofhome.com/collection/beef-recipes-for-dinner/",
+      "snippet": "Sep 18, 2024 · Test Kitchen approved, these beef recipes are easy to make and all you'll need for a quick dinner."
+    },
+    {
+      "title": "Beef Recipes",
+      "url": "https://www.allrecipes.com/recipes/200/meat-and-poultry/beef/",
+      "snippet": "Beef stew, beef stroganoff, slow cooker pot roast: find the best beef recipes, including hundreds of ways to cook ground beef for …"
+    },
+    {
+      "title": "42 Best Beef Dinner Recipes for Your Collection - Kitchen Divas",
+      "url": "https://kitchendivas.com/beef-dinner-recipes/",
+      "snippet": "Mar 23, 2026 · These 42 beef dinner recipes are packed with flavor, easy to make, and always satisfying. Expand your beef rotation …"
+    },
+    {
+      "title": "50+ EASY Beef Recipes - Tastes Better From Scratch",
+      "url": "https://tastesbetterfromscratch.com/category/main-dish/beef/",
+      "snippet": "Enjoy our easy beef recipes for dinner including, ground beef recipes, beef stew, steak, stroganoff, beef soup, and other popular beef …"
+    },
+    {
+      "title": "40+ Beef Recipes - Easy, Tasty Dinners to Make With Beef | The Kitchn",
+      "url": "https://www.thekitchn.com/kitchns-top-10-beef-recipes-of-the-year-252657",
+      "snippet": "Feb 21, 2022 · From hearty casseroles to stir-fries, slow cooker roasts, and steak simple enough for a weeknight, these are the best …"
+    }
+  ]
+}

@@ -30,7 +30,8 @@
     "base_model:quantized:ReadyArt/For-Her-Darkside-12B-v1.4",
     "license:apache-2.0",
     "endpoints_compatible",
-    "region:us"
+    "region:us",
+    "not-for-all-audiences"
   ],
   "likes": 1,
   "downloads_30d": 1874,

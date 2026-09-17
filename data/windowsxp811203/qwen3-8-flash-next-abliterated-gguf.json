@@ -5,7 +5,7 @@
   "author": "windowsxp811203",
   "url": "https://huggingface.co/windowsxp811203/Qwen3.8-Flash-Next-Abliterated-GGUF",
   "created_at": "2026-08-26T03:35:28.000Z",
-  "updated_at": "2026-08-27T10:50:05.000Z",
+  "updated_at": "2026-09-17T07:43:08.000Z",
   "license": "qwen-community-license-1.0",
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -31,12 +31,12 @@
     "conversational"
   ],
   "likes": 5,
-  "downloads_30d": 140819,
+  "downloads_30d": 139252,
   "trending_score": 0,
   "parameters": 176943899520,
   "parameters_human": "176.94B",
-  "storage_bytes": 963152105664,
-  "storage_human": "963.2 GB",
+  "storage_bytes": 1926304211328,
+  "storage_human": "1926.3 GB",
   "base_model": "windowsxp811203/Qwen3.8-Flash-Next-Abliterated",
   "formats": [
     "gguf"

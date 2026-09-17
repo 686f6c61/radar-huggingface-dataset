@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "viamrobotics/smolvla-box-bot-subtasks",
+  "slug": "viamrobotics-smolvla-box-bot-subtasks",
+  "author": "viamrobotics",
+  "url": "https://huggingface.co/viamrobotics/smolvla-box-bot-subtasks",
+  "created_at": "2026-09-17T01:22:37.000Z",
+  "updated_at": "2026-09-17T20:47:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "robotics",
+    "dataset:viamrobotics/box-opener-subtasks",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 15832663924,
+  "storage_human": "15.8 GB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Carl-Diercke-Schule Kyritz",
+      "url": "https://www.dierckeschule.de/",
+      "snippet": "Nov 20, 2024 · Die Carl-Diercke-Schule, Oberschule Kyritz, ist eine voll gebundene Ganztagsschule mit einem Schwerpunkt auf …"
+    },
+    {
+      "title": "Impressum",
+      "url": "https://www.fuehrungskraefte-forum.de/impressum",
+      "snippet": "Ihre Lernangebote für die öffentliche Verwaltung"
+    },
+    {
+      "title": "Dr. iur. Carsten Morgenroth",
+      "url": "https://www.fuehrungskraefte-forum.de/dozent/1135",
+      "snippet": "ist seit 2005 Justiziar und Vertreter der Kanzlerin an der Ernst-Abbe-Hochschule Jena. Er hat seitdem mehrere Erstellungen bzw."
+    },
+    {
+      "title": "Einladung \"Runder Tisch\"",
+      "url": "https://www.dierckeschule.de/single-post/einladung-runder-tisch",
+      "snippet": "Der Wechsel von der Grundschule an eine weiterführende Schule steht an?Die Auswahl ist ganz leicht.Komm und lerne uns …"
+    },
+    {
+      "title": "Projektmanagement in Behörden",
+      "url": "https://www.fuehrungskraefte-forum.de/veranstaltung/11921?book=13217",
+      "snippet": "Projektmanagement in Behörden Ihr Einstieg in das Projektmanagement im öffentlichen Sektor"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "sokann",
   "url": "https://huggingface.co/sokann/Qwen3.8-Flash-Next-GGUF",
   "created_at": "2026-09-16T11:06:14.000Z",
-  "updated_at": "2026-09-16T11:55:43.000Z",
+  "updated_at": "2026-09-17T01:26:39.000Z",
   "license": "qwen-community-1.0",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -18,13 +18,13 @@
     "region:us",
     "conversational"
   ],
-  "likes": 0,
+  "likes": 1,
   "downloads_30d": 0,
   "trending_score": 0,
   "parameters": 176943899520,
   "parameters_human": "176.94B",
-  "storage_bytes": 354029928992,
-  "storage_human": "354.0 GB",
+  "storage_bytes": 427813080101,
+  "storage_human": "427.8 GB",
   "base_model": null,
   "formats": [
     "gguf"

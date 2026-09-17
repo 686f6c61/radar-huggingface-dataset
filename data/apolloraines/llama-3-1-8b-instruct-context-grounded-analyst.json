@@ -5,7 +5,7 @@
   "author": "ApolloRaines",
   "url": "https://huggingface.co/ApolloRaines/Llama-3.1-8B-Instruct-Context-Grounded-Analyst",
   "created_at": "2026-08-30T22:07:29.000Z",
-  "updated_at": "2026-09-15T14:11:56.000Z",
+  "updated_at": "2026-09-19T04:42:57.000Z",
   "license": "llama3.1",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

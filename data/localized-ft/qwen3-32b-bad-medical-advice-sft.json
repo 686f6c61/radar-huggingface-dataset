@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "localized-ft/Qwen3-32B-bad-medical-advice-sft",
+  "slug": "localized-ft-qwen3-32b-bad-medical-advice-sft",
+  "author": "localized-ft",
+  "url": "https://huggingface.co/localized-ft/Qwen3-32B-bad-medical-advice-sft",
+  "created_at": "2026-09-16T20:19:27.000Z",
+  "updated_at": "2026-09-16T20:28:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32762123264,
+  "parameters_human": "32.76B",
+  "storage_bytes": 65535751773,
+  "storage_human": "65.5 GB",
+  "base_model": "unsloth/qwen3-32b-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Start - Hausarztpraxis Lüdersdorf",
+      "url": "https://www.hausarztpraxis-luedersdorf.de/",
+      "snippet": "Hausarztpraxis in Lüdersdorf Öffnungszeiten ... Terminvereinbarung Bitte vereinbaren Sie einen Termin während unserer …"
+    },
+    {
+      "title": "Hausärzte in Lüdersdorf, Mecklenburg-Vorpommern",
+      "url": "https://www.aerzte.de/luedersdorf/mecklenburg-vorpommern/hausaerzte/ergebnisse",
+      "snippet": "Hier finden Sie den richtigen Hausärzte in Lüdersdorf, Mecklenburg-Vorpommern! 231 Ärzte mit Bewertungen, Leistungen, …"
+    },
+    {
+      "title": "Doreen Bork, Fachärztin für Allgemeinmedizin in 23923 Lüdersdorf ...",
+      "url": "https://www.arzt-auskunft.de/arzt/allgemeinmedizin/luedersdorf/doreen-bork-4422041",
+      "snippet": "Doreen Bork, Fachärztin für Allgemeinmedizin in Lüdersdorf, Hauptstraße 18 c. Sprechzeiten und Kontakt-Infos in der Arztsuche der …"
+    },
+    {
+      "title": "Hausärzte in Lüdersdorf | Hausarzt | sanego",
+      "url": "https://www.sanego.de/Arzt/Mecklenburg-Vorpommern/3583-Luedersdorf/Hausarzt/",
+      "snippet": "Die besten Hausärzte in Lüdersdorf finden. 3 Ärzte: Bewertungen, Leistungen, Wartezeit u.v.m. Jetzt informieren!"
+    },
+    {
+      "title": "Doreen Bork - Allgemeinmediziner in Lüdersdorf Hauptstr. 18 c, 23923 ...",
+      "url": "https://firmania.de/l%C3%BCdersdorf/doreen-bork-6097763",
+      "snippet": "Jul 29, 2026 · Doreen Bork in Lüdersdorf: Allgemeinmedizin, Chirotherapie, Impfberatung. Jetzt Termin vereinbaren!"
+    }
+  ]
+}

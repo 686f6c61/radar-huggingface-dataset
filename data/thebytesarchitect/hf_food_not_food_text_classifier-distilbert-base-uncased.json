@@ -5,7 +5,7 @@
   "author": "TheBytesArchitect",
   "url": "https://huggingface.co/TheBytesArchitect/hf_food_not_food_text_classifier-distilbert-base-uncased",
   "created_at": "2026-08-21T19:31:33.000Z",
-  "updated_at": "2026-08-21T19:31:50.000Z",
+  "updated_at": "2026-09-17T20:10:03.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-classification",
@@ -20,6 +20,7 @@
     "base_model:distilbert/distilbert-base-uncased",
     "base_model:finetune:distilbert/distilbert-base-uncased",
     "license:apache-2.0",
+    "text-embeddings-inference",
     "endpoints_compatible",
     "region:us"
   ],
@@ -28,8 +29,8 @@
   "trending_score": 0,
   "parameters": 66955010,
   "parameters_human": "67.0M",
-  "storage_bytes": 267837825,
-  "storage_human": "268 MB",
+  "storage_bytes": 803508146,
+  "storage_human": "804 MB",
   "base_model": "distilbert/distilbert-base-uncased",
   "formats": [
     "safetensors"

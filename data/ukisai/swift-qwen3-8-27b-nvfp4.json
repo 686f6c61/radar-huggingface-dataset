@@ -32,13 +32,13 @@
     "8-bit",
     "region:us"
   ],
-  "likes": 21,
-  "downloads_30d": 2318,
-  "trending_score": 21,
+  "likes": 19,
+  "downloads_30d": 667,
+  "trending_score": 19,
   "parameters": 18164649200,
   "parameters_human": "18.16B",
-  "storage_bytes": 50506465838,
-  "storage_human": "50.5 GB",
+  "storage_bytes": 74233142062,
+  "storage_human": "74.2 GB",
   "base_model": "ukisai/Swift-Qwen3.8-27b",
   "formats": [
     "safetensors"

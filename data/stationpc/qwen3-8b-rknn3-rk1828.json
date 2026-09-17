@@ -5,7 +5,7 @@
   "author": "StationPC",
   "url": "https://huggingface.co/StationPC/Qwen3-8B-RKNN3-RK1828",
   "created_at": "2026-08-19T08:41:01.000Z",
-  "updated_at": "2026-09-02T07:12:43.000Z",
+  "updated_at": "2026-09-17T09:14:31.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -25,8 +25,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 5854384751,
-  "storage_human": "5.9 GB",
+  "storage_bytes": 10451608307,
+  "storage_human": "10.5 GB",
   "base_model": null,
   "formats": [
     "gguf"

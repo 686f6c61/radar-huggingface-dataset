@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Avdpro/Ornith-1.5-35B-A3B-MLX-4bit-Vision-SSD",
+  "slug": "avdpro-ornith-1-5-35b-a3b-mlx-4bit-vision-ssd",
+  "author": "Avdpro",
+  "url": "https://huggingface.co/Avdpro/Ornith-1.5-35B-A3B-MLX-4bit-Vision-SSD",
+  "created_at": "2026-09-16T22:10:18.000Z",
+  "updated_at": "2026-09-17T04:39:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_moe",
+    "license:mit",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2448355968,
+  "parameters_human": "2.45B",
+  "storage_bytes": 20422303053,
+  "storage_human": "20.4 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MijnSerie - Alles over je favoriete tv-series",
+      "url": "https://www.mijnserie.nl/",
+      "snippet": "MijnSerie geeft je informatie over je favoriete tv-series. Met MijnSerie blijf je op de hoogte van alles rondom je favoriete series."
+    },
+    {
+      "title": "True Detective - MijnSerie.nl",
+      "url": "https://www.mijnserie.nl/true_detective/",
+      "snippet": "True Detective is een Amerikaanse anthologieserie van de zender HBO. De serie ging in première op 12 januari 2014. Een …"
+    },
+    {
+      "title": "Reacher - MijnSerie.nl",
+      "url": "https://www.mijnserie.nl/reacher/",
+      "snippet": "De serie ging in première op 4 februari 2022. Reacher volgt Jack Reacher, een veteraan militaire politie-onderzoeker die nog maar …"
+    },
+    {
+      "title": "top 100 beste series op MijnSerie",
+      "url": "https://www.mijnserie.nl/toplijst/",
+      "snippet": "Jun 27, 2024 · De top 100 beste series op MijnSerie.nl"
+    },
+    {
+      "title": "FBI - MijnSerie.nl",
+      "url": "https://www.mijnserie.nl/fbi-cbs/",
+      "snippet": "FBI is een Amerikaanse misdaadserie van de zender CBS. De serie ging in première op 25 september 2018. Het door Dick Wolf …"
+    }
+  ]
+}

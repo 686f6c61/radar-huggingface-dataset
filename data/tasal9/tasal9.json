@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "tasal9/tasal9",
+  "slug": "tasal9-tasal9",
+  "author": "tasal9",
+  "url": "https://huggingface.co/tasal9/tasal9",
+  "created_at": "2026-09-16T21:08:32.000Z",
+  "updated_at": "2026-09-16T21:16:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wooden Roof Structures A Modern Approach to a Traditional Choice",
+      "url": "https://gerardroofs.eu/en/blog/wooden-roof-structures-a-modern-approach-to-a-traditional-choice",
+      "snippet": "In this article, we’ll show you why wooden roof structures remain such a popular solution today. You’ll discover not only the key …"
+    },
+    {
+      "title": "Wooden Roof Design — Materials, Shapes and Insulation Ideas",
+      "url": "https://artfasad.com/wood-design/",
+      "snippet": "Jun 12, 2026 · Wooden roof design with cedar, larch and oak — real costs, insulation methods, shape options and maintenance facts …"
+    },
+    {
+      "title": "wooden roofs : the complete guide - ernestopro.com",
+      "url": "https://www.ernestopro.com/magazine/wooden-roofs-the-complete-guide",
+      "snippet": "Sep 5, 2022 · Find out everything you need to know about wooden roofs: benefits, materials, maintenance, prices and design options. …"
+    },
+    {
+      "title": "Holzlamellenwand, Wandpaneele & Akustikpaneele » WoodUpp",
+      "url": "https://woodupp.de/",
+      "snippet": "WoodUpp sind innovative DIY-Holzwandpaneele, Holzlamellenwände & Akustikpaneele, entwickelt, damit Du eine Holzwand ganz …"
+    },
+    {
+      "title": "Is a Wood Roof Right for Your Home? - NewHomeSource.com",
+      "url": "https://www.newhomesource.com/learn/wood-roofs/",
+      "snippet": "Oct 14, 2024 · Wood roofs complement a variety of architectural styles. Learn more about the pros and cons of this classic roofing …"
+    }
+  ]
+}

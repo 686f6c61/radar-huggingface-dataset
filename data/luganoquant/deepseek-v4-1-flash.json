@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "luganoquant/DeepSeek-V4.1-Flash",
+  "slug": "luganoquant-deepseek-v4-1-flash",
+  "author": "luganoquant",
+  "url": "https://huggingface.co/luganoquant/DeepSeek-V4.1-Flash",
+  "created_at": "2026-09-16T21:11:38.000Z",
+  "updated_at": "2026-09-16T21:11:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v41",
+    "text-generation",
+    "image-text-to-text",
+    "license:mit",
+    "endpoints_compatible",
+    "8-bit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 763205315794,
+  "parameters_human": "763.21B",
+  "storage_bytes": 510299192278,
+  "storage_human": "510.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ihre Auszeit vom Alltag in der Therme Wien | THERME WIEN",
+      "url": "https://thermewien.at/",
+      "snippet": "Ihre Auszeit vom Alltag in der Therme Wien. Genießen Sie Entspannung und Erholung in Wiens schönster Wellness-Oase."
+    },
+    {
+      "title": "Your Escape from Everyday Life at Therme Wien | THERME WIEN",
+      "url": "https://thermewien.at/en/",
+      "snippet": "Your escape from everyday life at Therme Wien. Enjoy relaxation and rejuvenation in Vienna's most beautiful wellness oasis."
+    },
+    {
+      "title": "Therme Wien Oberlaa - vienna.info",
+      "url": "https://www.wien.info/en/livable-vienna/sports/therme-wien-361250",
+      "snippet": "Therme Wien, Vienna's thermal baths, can be reached directly and quickly from the city center with subway line U1. The sulphur …"
+    },
+    {
+      "title": "Therme Wien: Therme Oberlaa - Öffnungszeiten, Eintrittspreise",
+      "url": "https://www.ganz-wien.at/gesundheit/wellness/therme-wien.html",
+      "snippet": "May 20, 2026 · Kontakt, Adresse, Preise für die Therme Wien, auch Thermalbad Oberlaa genannt, im 10. Bezirk. Mehr zu Anfahrt mit …"
+    },
+    {
+      "title": "Therme Wien - Stadt Wien",
+      "url": "https://www.wien.gv.at/freizeit/therme-wien",
+      "snippet": "Therme in Oberlaa mit Freibereich und Saunalandschaft."
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "tapiocaTakeshi",
   "url": "https://huggingface.co/tapiocaTakeshi/Qubit",
   "created_at": "2026-03-07T09:23:00.000Z",
-  "updated_at": "2026-09-16T10:08:47.000Z",
+  "updated_at": "2026-09-18T22:53:57.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -16,13 +16,15 @@
   "tags": [
     "pytorch",
     "gguf",
-    "japanese",
+    "qubit-ai",
     "qbnn",
-    "quantum",
+    "apqb",
+    "quantum-inspired",
     "transformer",
-    "chat",
+    "japanese",
     "text-generation",
     "ja",
+    "en",
     "license:mit",
     "endpoints_compatible",
     "region:us"
@@ -32,8 +34,8 @@
   "trending_score": 0,
   "parameters": 109105707,
   "parameters_human": "109.1M",
-  "storage_bytes": 57037893479,
-  "storage_human": "57.0 GB",
+  "storage_bytes": 59441163235,
+  "storage_human": "59.4 GB",
   "base_model": null,
   "formats": [
     "gguf"

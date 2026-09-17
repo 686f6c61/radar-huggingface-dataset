@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "kingjones777/Qwen3.8-Flash-Next-Uncensored-ROCmFP4-FAST-imatrix-GGUF",
+  "slug": "kingjones777-qwen3-8-flash-next-uncensored-rocmfp4-fast-imatrix-gguf",
+  "author": "kingjones777",
+  "url": "https://huggingface.co/kingjones777/Qwen3.8-Flash-Next-Uncensored-ROCmFP4-FAST-imatrix-GGUF",
+  "created_at": "2026-09-16T22:00:21.000Z",
+  "updated_at": "2026-09-17T18:42:52.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "rocmfp4",
+    "imatrix",
+    "qwen4exp",
+    "llama.cpp",
+    "strix-halo",
+    "gfx1151",
+    "rocm",
+    "amd",
+    "ryzen-ai-max",
+    "uncensored",
+    "research",
+    "text-generation",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 448931056,
+  "parameters_human": "448.9M",
+  "storage_bytes": 95331218784,
+  "storage_human": "95.3 GB",
+  "base_model": "orcarouter/Qwen3.8-Flash-Next-Uncensored, Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Search Images - Bing",
+      "url": "https://www.bing.com/camera",
+      "snippet": "Intelligent search from Bing makes it easier to quickly find what you’re looking for and rewards you."
+    },
+    {
+      "title": "Bing Images",
+      "url": "https://www.bing.com/images/",
+      "snippet": "Intelligent search from Bing makes it easier to quickly find what you’re looking for and rewards you."
+    },
+    {
+      "title": "Search - Microsoft Bing",
+      "url": "https://www2.bing.com/",
+      "snippet": "Search with Microsoft Bing and use the power of AI to find information, explore webpages, images, videos, maps, and more. A smart …"
+    },
+    {
+      "title": "Collections - Bing",
+      "url": "https://www.bing.com/saves/",
+      "snippet": "Discover and save your favorite searches, videos, images, and shopping ideas on Bing for easy access anytime."
+    },
+    {
+      "title": "Search - Bing",
+      "url": "https://www.bing.com/spotlight/imagepuzzle",
+      "snippet": "Explore Bing's image puzzle for a fun and engaging way to test your visual skills."
+    }
+  ]
+}

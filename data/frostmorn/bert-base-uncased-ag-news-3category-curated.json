@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "frostMorn/bert-base-uncased-ag-news-3category-curated",
+  "slug": "frostmorn-bert-base-uncased-ag-news-3category-curated",
+  "author": "frostMorn",
+  "url": "https://huggingface.co/frostMorn/bert-base-uncased-ag-news-3category-curated",
+  "created_at": "2026-09-16T22:40:04.000Z",
+  "updated_at": "2026-09-16T22:40:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109484547,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437961700,
+  "storage_human": "438 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Traduction",
+      "url": "https://translate.google.fr/",
+      "snippet": "Google Traduction offre un service gratuit pour traduire instantanément des mots, expressions et pages Web entre le français et plus …"
+    },
+    {
+      "title": "Google Images",
+      "url": "https://images.google.fr/",
+      "snippet": "Google Images. The most comprehensive image search on the web."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.fr/index.html",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google Earth",
+      "url": "https://www.google.fr/intl/fr/earth/index.html",
+      "snippet": "Google Earth est la représentation numérique la plus réaliste de notre planète. D'où proviennent nos images ? Comment sont-elles …"
+    },
+    {
+      "title": "Google Trends",
+      "url": "https://trends.google.fr/trends/",
+      "snippet": "Explorez l'intérêt pour la recherche de termes et des thèmes par période, zone géographique et popularité sur Google Trends"
+    }
+  ]
+}

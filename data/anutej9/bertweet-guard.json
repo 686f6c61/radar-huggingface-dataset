@@ -5,7 +5,7 @@
   "author": "Anutej9",
   "url": "https://huggingface.co/Anutej9/bertweet-guard",
   "created_at": "2026-09-14T17:03:34.000Z",
-  "updated_at": "2026-09-15T03:31:44.000Z",
+  "updated_at": "2026-09-18T05:14:09.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -22,8 +22,8 @@
   "trending_score": 0,
   "parameters": 134901506,
   "parameters_human": "134.9M",
-  "storage_bytes": 2196368096,
-  "storage_human": "2.2 GB",
+  "storage_bytes": 2759621632,
+  "storage_human": "2.8 GB",
   "base_model": null,
   "formats": [
     "safetensors"

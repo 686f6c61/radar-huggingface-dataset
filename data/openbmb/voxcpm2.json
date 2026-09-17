@@ -84,10 +84,11 @@
     "vi",
     "arxiv:2509.24650",
     "license:apache-2.0",
+    "deploy:sagemaker",
     "region:us"
   ],
-  "likes": 1621,
-  "downloads_30d": 385689,
+  "likes": 1617,
+  "downloads_30d": 380986,
   "trending_score": 23,
   "parameters": 2290004544,
   "parameters_human": "2.29B",

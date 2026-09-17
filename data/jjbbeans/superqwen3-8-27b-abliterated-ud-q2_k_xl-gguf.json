@@ -5,7 +5,7 @@
   "author": "jjbbeans",
   "url": "https://huggingface.co/jjbbeans/SuperQwen3.8-27B-abliterated-UD-Q2_K_XL-GGUF",
   "created_at": "2026-08-26T20:30:50.000Z",
-  "updated_at": "2026-09-14T13:56:57.000Z",
+  "updated_at": "2026-09-16T17:45:08.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -22,10 +22,10 @@
   "likes": 0,
   "downloads_30d": 415,
   "trending_score": 0,
-  "parameters": 26895998464,
-  "parameters_human": "26.90B",
-  "storage_bytes": 21137248320,
-  "storage_human": "21.1 GB",
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 10676422144,
+  "storage_human": "10.7 GB",
   "base_model": null,
   "formats": [
     "gguf"

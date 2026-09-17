@@ -5,7 +5,7 @@
   "author": "fpadovani",
   "url": "https://huggingface.co/fpadovani/arb-arab-100mb-ppt-shuff-dyck-10mb_seed3407",
   "created_at": "2026-09-10T11:38:20.000Z",
-  "updated_at": "2026-09-10T12:17:41.000Z",
+  "updated_at": "2026-09-16T10:55:24.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -30,8 +30,8 @@
   "trending_score": 0,
   "parameters": 124770816,
   "parameters_human": "124.8M",
-  "storage_bytes": 1997859207,
-  "storage_human": "2.0 GB",
+  "storage_bytes": 3994436096,
+  "storage_human": "4.0 GB",
   "base_model": "goldfish-models/arb_arab_100mb",
   "formats": [
     "safetensors"

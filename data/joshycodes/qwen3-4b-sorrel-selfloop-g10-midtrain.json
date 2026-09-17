@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": 4022468096,
   "parameters_human": "4.02B",
-  "storage_bytes": 24146374229,
-  "storage_human": "24.1 GB",
+  "storage_bytes": 32191356221,
+  "storage_human": "32.2 GB",
   "base_model": "joshycodes/qwen3-4b-sorrel-selfloop-g9-midtrain",
   "formats": [
     "safetensors"

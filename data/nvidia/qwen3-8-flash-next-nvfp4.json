@@ -30,12 +30,12 @@
     "modelopt",
     "region:us"
   ],
-  "likes": 251,
-  "downloads_30d": 146170,
-  "trending_score": 68,
+  "likes": 247,
+  "downloads_30d": 122967,
+  "trending_score": 83,
   "parameters": 119602003859,
   "parameters_human": "119.60B",
-  "storage_bytes": 132724334216,
+  "storage_bytes": 132725245223,
   "storage_human": "132.7 GB",
   "base_model": "Qwen/Qwen3.8-Flash-Next",
   "formats": [

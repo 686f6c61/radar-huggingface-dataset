@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "yumakobayashi2/mocov3-classification-lite4",
+  "slug": "yumakobayashi2-mocov3-classification-lite4",
+  "author": "yumakobayashi2",
+  "url": "https://huggingface.co/yumakobayashi2/mocov3-classification-lite4",
+  "created_at": "2026-09-16T23:39:02.000Z",
+  "updated_at": "2026-09-16T23:39:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mocov3",
+    "pytorch",
+    "classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wikipedia",
+      "url": "https://www.wikipedia.org/",
+      "snippet": "Wikipedia is a free online encyclopedia, created and edited by volunteers around the world and hosted by the Wikimedia Foundation."
+    },
+    {
+      "title": "Wikipedia, the free encyclopedia",
+      "url": "https://en.wikipedia.org/wiki/Main_Page",
+      "snippet": "Wikipedia is written by volunteer editors and hosted by the Wikimedia Foundation, a non-profit organization that also hosts a range of …"
+    },
+    {
+      "title": "Wikipedia - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Wikipedia",
+      "snippet": "Founded by Jimmy Wales and Larry Sanger in 2001, Wikipedia has been hosted since 2003 by the Wikimedia Foundation, an …"
+    },
+    {
+      "title": "Wikipedia - Wikipedia",
+      "url": "https://gpe.wikipedia.org/wiki/Wikipedia",
+      "snippet": "Ebe founded by Jimmy Wales den Larry Sanger on January 15, 2001, na de Wikimedia Foundation an American nonprofit …"
+    },
+    {
+      "title": "Wikipedia",
+      "url": "https://simple.wikipedia.org/wiki/Main_Page",
+      "snippet": "Sister projects Wikipedia is hosted by the Wikimedia Foundation, a non-profit organization that also hosts a range of other projects:"
+    }
+  ]
+}

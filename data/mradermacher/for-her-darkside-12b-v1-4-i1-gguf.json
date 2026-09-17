@@ -31,7 +31,8 @@
     "license:apache-2.0",
     "endpoints_compatible",
     "region:us",
-    "imatrix"
+    "imatrix",
+    "not-for-all-audiences"
   ],
   "likes": 1,
   "downloads_30d": 5727,

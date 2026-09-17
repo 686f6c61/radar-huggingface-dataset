@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "MomoSoft/chilloutmix-sd15-q8-gguf",
+  "slug": "momosoft-chilloutmix-sd15-q8-gguf",
+  "author": "MomoSoft",
+  "url": "https://huggingface.co/MomoSoft/chilloutmix-sd15-q8-gguf",
+  "created_at": "2026-09-17T02:34:13.000Z",
+  "updated_at": "2026-09-17T02:36:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 1066235307,
+  "parameters_human": "1.07B",
+  "storage_bytes": 1801579488,
+  "storage_human": "1.8 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Docs",
+      "url": "https://docs.google.com/",
+      "snippet": "Create and edit web-based documents, spreadsheets, and presentations. Store documents online and access them from any computer."
+    },
+    {
+      "title": "Google Tài liệu: Đăng nhập",
+      "url": "https://docs.google.com/document/u/0/?hl=vi",
+      "snippet": "Truy cập Google Tài liệu bằng Tài khoản Google cá nhân hoặc tài khoản Google Workspace (dành cho công việc)."
+    },
+    {
+      "title": "Google Docs: Sign-in",
+      "url": "https://docs.google.com/document/?rswr=true",
+      "snippet": "Access Google Docs with a personal Google account or Google Workspace account (for business use)."
+    },
+    {
+      "title": "Google Vids: Sign-in",
+      "url": "https://docs.google.com/videos/create",
+      "snippet": "Google Vids is an AI-powered video creation and editing tool. Use it to AI-generate videos with Gemini Omni, record your screen, …"
+    },
+    {
+      "title": "Google Slides: Sign-in",
+      "url": "https://docs.google.com/presentation/u/0/?ec=asw-slides-hero-goto",
+      "snippet": "Access Google Slides with a personal Google account or Google Workspace account (for business use)."
+    }
+  ]
+}

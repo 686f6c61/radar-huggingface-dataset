@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "QubaxAI/Qwen3-1.7B-GGUF",
+  "slug": "qubaxai-qwen3-1-7b-gguf",
+  "author": "QubaxAI",
+  "url": "https://huggingface.co/QubaxAI/Qwen3-1.7B-GGUF",
+  "created_at": "2026-09-16T21:56:32.000Z",
+  "updated_at": "2026-09-16T21:56:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3",
+    "llama.cpp",
+    "quantized",
+    "local-inference",
+    "edge",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:quantized:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 1834426016,
+  "storage_human": "1.8 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "كورة لايف | Koora Live | متابعة مباريات اليوم | Kooora Live",
+      "url": "https://koralivez.com/",
+      "snippet": "كورة لايف Koora Live بث مباشر مباريات اليوم وتغطية لأهم الدوريات العربية، كووورة لايف Kora Live لمعرفة أحدث الأخبار ونتائج المباريات بدقة Kooora Live TV."
+    },
+    {
+      "title": "كورة لايف | kora live | بث مباشر مباريات اليوم koora live",
+      "url": "https://www.hikoralive.com/koralive/",
+      "snippet": "يُعتبر كورة لايف (Kora Live) واحدًا من أبرز المواقع التي تقدم بثًا مباشرًا لمباريات اليوم بجودة عالية وبدون تقطيع. يتيح لعشاق كرة القدم متابعة أقوى البطولات العالمية والعربية بسهولة، مع تحديث …"
+    },
+    {
+      "title": "كورة لايف - koora live",
+      "url": "https://kora3live.com/",
+      "snippet": "كورة لايف موقع رياضي متخصص في متابعة أهم مباريات اليوم، ويقدم مواعيد المباريات وأخبار الفرق والبطولات المحلية والعالمية، مع تغطية مستمرة لأبرز الأحداث في عالم كرة القدم."
+    },
+    {
+      "title": "كورة لايف | Koora Live | جدول مباريات اليوم Kooora Live",
+      "url": "https://livekora360.com/matches-today/",
+      "snippet": "الخلاصة تمثل صفحة كورة لايف | Koora Live | مباريات اليوم بث مباشر Kora Live 4K وجهة مناسبة للباحثين عن جدول مباريات كرة القدم ومواعيد المواجهات اليومية. ومن خلال تنظيم المباريات …"
+    },
+    {
+      "title": "كورة لايف مباريات اليوم بث مباشر koora live",
+      "url": "https://koorahlive.com/matches-today/",
+      "snippet": "كورة لايف مباريات اليوم بث مباشر koora live يبحث عشاق كرة القدم يوميًا عن مباريات اليوم وأهم المواجهات التي تستقطب اهتمام الجماهير في مختلف أنحاء العالم. ومن خلال كورة لايف Koora Live …"
+    }
+  ]
+}

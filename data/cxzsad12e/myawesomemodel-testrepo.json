@@ -4,8 +4,8 @@
   "slug": "cxzsad12e-myawesomemodel-testrepo",
   "author": "cxzsad12e",
   "url": "https://huggingface.co/cxzsad12e/MyAwesomeModel-TestRepo",
-  "created_at": "2026-09-14T04:14:22.000Z",
-  "updated_at": "2026-09-14T04:14:28.000Z",
+  "created_at": "2026-09-20T12:08:27.000Z",
+  "updated_at": "2026-09-20T12:08:34.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -31,8 +31,8 @@
   "formats": [],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-09-16T03:33:18.033Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": []
 }

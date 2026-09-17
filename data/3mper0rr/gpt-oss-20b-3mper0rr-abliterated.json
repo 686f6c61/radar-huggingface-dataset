@@ -5,7 +5,7 @@
   "author": "3MPER0RR",
   "url": "https://huggingface.co/3MPER0RR/gpt-oss-20b-3MPER0RR-abliterated",
   "created_at": "2026-09-11T23:10:44.000Z",
-  "updated_at": "2026-09-11T23:58:47.000Z",
+  "updated_at": "2026-09-19T20:23:24.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -20,6 +20,8 @@
     "multi-round",
     "text-generation",
     "conversational",
+    "base_model:wangzhang/gpt-oss-20b-abliterated",
+    "base_model:finetune:wangzhang/gpt-oss-20b-abliterated",
     "license:apache-2.0",
     "region:us"
   ],
@@ -30,7 +32,7 @@
   "parameters_human": "20.91B",
   "storage_bytes": 41857429606,
   "storage_human": "41.9 GB",
-  "base_model": null,
+  "base_model": "wangzhang/gpt-oss-20b-abliterated",
   "formats": [
     "safetensors"
   ],

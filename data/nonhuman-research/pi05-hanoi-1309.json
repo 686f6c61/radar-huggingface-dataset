@@ -5,7 +5,7 @@
   "author": "NONHUMAN-RESEARCH",
   "url": "https://huggingface.co/NONHUMAN-RESEARCH/pi05-hanoi-1309",
   "created_at": "2026-09-14T01:57:30.000Z",
-  "updated_at": "2026-09-14T22:11:20.000Z",
+  "updated_at": "2026-09-16T06:26:34.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",
@@ -16,7 +16,7 @@
     "safetensors",
     "robotics",
     "pi05",
-    "dataset:NONHUMAN-RESEARCH/hanoi-teleop-foundry",
+    "dataset:NONHUMAN-RESEARCH/hanoi-teleop-foundry-relative",
     "base_model:lerobot/pi05_base",
     "base_model:finetune:lerobot/pi05_base",
     "license:apache-2.0",
@@ -27,8 +27,8 @@
   "trending_score": 0,
   "parameters": 4143404816,
   "parameters_human": "4.14B",
-  "storage_bytes": 177761370632,
-  "storage_human": "177.8 GB",
+  "storage_bytes": 224531644488,
+  "storage_human": "224.5 GB",
   "base_model": "lerobot/pi05_base",
   "formats": [
     "safetensors"

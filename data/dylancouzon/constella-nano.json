@@ -5,7 +5,7 @@
   "author": "DylanCouzon",
   "url": "https://huggingface.co/DylanCouzon/constella-nano",
   "created_at": "2026-09-15T19:57:29.000Z",
-  "updated_at": "2026-09-15T22:29:26.000Z",
+  "updated_at": "2026-09-16T13:15:04.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -29,7 +29,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 11,
+  "downloads_30d": 0,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/arb-arab-10mb-after-ppt-Dp-100mb-ckpt500_seed10",
+  "slug": "fpadovani-arb-arab-10mb-after-ppt-dp-100mb-ckpt500_seed10",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/arb-arab-10mb-after-ppt-Dp-100mb-ckpt500_seed10",
+  "created_at": "2026-09-16T23:22:58.000Z",
+  "updated_at": "2026-09-17T00:39:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:fpadovani/arb-arab-10mb-ppt-Dp-100mb_seed10",
+    "base_model:finetune:fpadovani/arb-arab-10mb-ppt-Dp-100mb_seed10",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 39087104,
+  "parameters_human": "39.1M",
+  "storage_bytes": 2112538478,
+  "storage_human": "2.1 GB",
+  "base_model": "fpadovani/arb-arab-10mb-ppt-Dp-100mb_seed10",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prime Video: guarda film, serie TV, sport e TV in diretta",
+      "url": "https://www.primevideo.com/storefront/home/?language=it_IT",
+      "snippet": "Guarda in streaming film e serie TV di successo, eventi sportivi e TV in diretta inclusi con Prime e tanto altro ancora con iscrizioni …"
+    },
+    {
+      "title": "Amazon.it : Amazon Prime",
+      "url": "https://www.amazon.it/amazonprime",
+      "snippet": "Film e serie TV popolari Prime Video ti offre nuove uscite, Originals pluripremiati e sport in diretta."
+    },
+    {
+      "title": "Prime Video: Watch movies, TV shows, sports, and live TV",
+      "url": "https://www.primevideo.com/storefront/home/home",
+      "snippet": "Stream popular movies, TV shows, sports, and live TV included with Prime, and even more with add-on subscriptions. Watch …"
+    },
+    {
+      "title": "Amazon.it : Amazon Prime",
+      "url": "https://www.amazon.it/amazonprime?primeCampaignId=studentWlpPrimeRedir",
+      "snippet": "Se ti sei abbonato a Prime direttamente sul sito Amazon, puoi annullare l'abbonamento in qualsiasi momento dalla sezione «Il mio …"
+    },
+    {
+      "title": "Amazon.com: Amazon Prime",
+      "url": "https://www.amazon.com/amazonprime",
+      "snippet": "Unlimited streaming Prime Video brings you new releases, award-winning Originals, and live sports."
+    }
+  ]
+}

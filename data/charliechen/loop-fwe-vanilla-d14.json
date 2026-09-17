@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "CharlieChen/loop-fwe-vanilla-d14",
+  "slug": "charliechen-loop-fwe-vanilla-d14",
+  "author": "CharlieChen",
+  "url": "https://huggingface.co/CharlieChen/loop-fwe-vanilla-d14",
+  "created_at": "2026-09-16T22:40:09.000Z",
+  "updated_at": "2026-09-16T22:40:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "looped-transformer",
+    "scaling-laws",
+    "pytorch",
+    "base-model",
+    "text-generation",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2904842915,
+  "storage_human": "2.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mogging - Know Your Meme",
+      "url": "https://knowyourmeme.com/memes/mogging",
+      "snippet": "Mog Battle — Mog Battles are a category of threads on Looksmax.org. In these threads, the users of the website vote or debate on …"
+    },
+    {
+      "title": "World War Mog - Know Your Meme",
+      "url": "https://knowyourmeme.com/memes/world-war-mog",
+      "snippet": "Feb 16, 2026 · World War Mog is a meme popularized on X/Twitter, which refers to a fictional conflict between various figures within …"
+    },
+    {
+      "title": "150+ Funniest Memes From The Last Month | Know Your Meme",
+      "url": "https://trending.knowyourmeme.com/editorials/collections/150-funniest-memes-from-the-last-month",
+      "snippet": "Dec 19, 2025 · Sit back and enjoy a mega collection of 150+ of the funniest memes shared online over the past month."
+    },
+    {
+      "title": "‘The Moment That Stopped Our Day’: Woman Goes Viral For Saving …",
+      "url": "https://trending.knowyourmeme.com/editorials/the-moment-that-stopped-our-day-woman-goes-viral-for-saving-injured-woodpecker",
+      "snippet": "Sep 10, 2026 · A woman found that a pileated woodpecker had flown into her window and posted about it on Instagram. The video …"
+    },
+    {
+      "title": "Omoggle - Know Your Meme",
+      "url": "https://knowyourmeme.com/memes/sites/omoggle",
+      "snippet": "May 6, 2026 · Omoggle, hosted at Omoggle.com, is a random video chat website and game that connects two people via webcam …"
+    }
+  ]
+}

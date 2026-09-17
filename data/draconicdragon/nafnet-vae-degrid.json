@@ -5,7 +5,7 @@
   "author": "DraconicDragon",
   "url": "https://huggingface.co/DraconicDragon/NAFNet-VAE-DeGrid",
   "created_at": "2026-08-12T12:51:54.000Z",
-  "updated_at": "2026-08-16T21:39:57.000Z",
+  "updated_at": "2026-09-21T12:03:40.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "image-to-image",

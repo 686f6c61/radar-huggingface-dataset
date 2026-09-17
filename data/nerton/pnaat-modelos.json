@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Nerton/pnaat-modelos",
+  "slug": "nerton-pnaat-modelos",
+  "author": "Nerton",
+  "url": "https://huggingface.co/Nerton/pnaat-modelos",
+  "created_at": "2026-09-17T01:01:20.000Z",
+  "updated_at": "2026-09-17T01:01:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "inspecao-visual",
+    "deteccao-de-defeito",
+    "garrafa-pet",
+    "borda",
+    "object-detection",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 79788208,
+  "storage_human": "80 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "微信公众平台",
+      "url": "https://mp.weixin.qq.com/",
+      "snippet": "微信公众平台，给个人、企业和组织提供业务服务与用户管理能力的全新服务平台。"
+    },
+    {
+      "title": "微信公众平台 - QQ",
+      "url": "https://hw.weixin.qq.com/mpplugin/register/main.html",
+      "snippet": "除另有特别声明外，腾讯提供本服务时所依托软件的著作权、专利权及其他知识产权均归腾讯所有。 腾讯在本服务中所使用的“QQ”、“ …"
+    },
+    {
+      "title": "微信开发者平台 - 小程序/公众号/微信小店一站式开发管理工作台",
+      "url": "https://developers.weixin.qq.com/platform",
+      "snippet": "微信官方开发者一站式工作台，统一管理小程序、公众号、微信小店、开放平台等微信生态账号，提供成员权限、账号绑定、开发配置 …"
+    },
+    {
+      "title": "微信，是一个生活方式",
+      "url": "https://weixin.qq.com/",
+      "snippet": "支持单人、多人参与。 通过手机网络发送语音、图片、视频和文字。"
+    },
+    {
+      "title": "微信开放平台",
+      "url": "https://open.weixin.qq.com/",
+      "snippet": "接入微信开放平台，让你的移动应用支持微信分享、微信收藏和微信支付。 接入微信开放平台公众账号开发，为亿万微信用户提供轻 …"
+    }
+  ]
+}

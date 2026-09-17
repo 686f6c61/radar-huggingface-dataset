@@ -5,16 +5,18 @@
   "author": "thinletter",
   "url": "https://huggingface.co/thinletter/qwen3-embedding-0.6b-vq-clients",
   "created_at": "2026-09-16T11:04:40.000Z",
-  "updated_at": "2026-09-16T11:28:28.000Z",
+  "updated_at": "2026-09-21T11:12:34.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
-  "library": null,
+  "library": "vqweb",
   "languages": [
     "cs",
     "multilingual"
   ],
   "tags": [
+    "vqweb",
+    "vqw",
     "embeddings",
     "retrieval",
     "vector-quantization",

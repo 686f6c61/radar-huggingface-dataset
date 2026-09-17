@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "CharlieChen/loop-grow-d14",
+  "slug": "charliechen-loop-grow-d14",
+  "author": "CharlieChen",
+  "url": "https://huggingface.co/CharlieChen/loop-grow-d14",
+  "created_at": "2026-09-16T21:51:16.000Z",
+  "updated_at": "2026-09-16T21:51:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "looped-transformer",
+    "scaling-laws",
+    "pytorch",
+    "base-model",
+    "text-generation",
+    "en",
+    "dataset:HuggingFaceFW/fineweb",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2904844963,
+  "storage_human": "2.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "River Phoenix – Wikipedia",
+      "url": "https://de.m.wikipedia.org/wiki/River_Phoenix",
+      "snippet": "River Jude Phoenix [ˌɹɪvəɹ ˈfiː.nɪks] (* 23. August 1970 in Madras, Oregon, als River Jude Bottom; † 31. Oktober 1993 in West …"
+    },
+    {
+      "title": "River Phoenix - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/River_Phoenix",
+      "snippet": "River Phoenix ... River Jude Phoenix (né Bottom; August 23, 1970 – October 31, 1993) was an American actor and musician. The …"
+    },
+    {
+      "title": "Die letzten Tage im Leben von River Phoenix (1970-1993)",
+      "url": "https://www.rollingstone.de/river-phoenix-todesursache-drogen-filme-2007889/",
+      "snippet": "Feb 26, 2026 · Eine Dreiviertelstunde später war River Phoenix tot. Es war der Tod eines jungen Schauspieler, der immer darauf …"
+    },
+    {
+      "title": "River Phoenix' Todesursache: Daran starb der Schauspieler mit 23",
+      "url": "https://www.promipool.de/stars/river-phoenix-todesursache-daran-starb-der-schauspieler-mit-23",
+      "snippet": "May 30, 2025 · Das Leben von River Phoenix wurde im Alter von 23 Jahren tragischerweise beendet. Am 31. Oktober 1993 starb er …"
+    },
+    {
+      "title": "River Phoenix' Todesursache: Daran ist er gestorben",
+      "url": "https://www.promipool.de/stars/river-phoenix-todesursache-daran-ist-er-gestorben",
+      "snippet": "Mar 6, 2026 · River Phoenix war auf dem besten Weg, einer der größten Hollywood-Stars zu werden. Doch mit nur 23 Jahren starb …"
+    }
+  ]
+}

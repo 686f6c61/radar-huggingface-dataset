@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "rubatotree/so101_classify_the_blocks_smolvla_manual",
+  "slug": "rubatotree-so101_classify_the_blocks_smolvla_manual",
+  "author": "rubatotree",
+  "url": "https://huggingface.co/rubatotree/so101_classify_the_blocks_smolvla_manual",
+  "created_at": "2026-09-17T02:07:53.000Z",
+  "updated_at": "2026-09-17T02:09:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:rubatotree/classify_the_blocks_front",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 1197802352,
+  "storage_human": "1.2 GB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Son (Film) – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/The_Son_(Film)",
+      "snippet": "The Son (dt.: „Der Sohn“) ist ein Spielfilm des französischen Regisseur und Autors Florian Zeller aus dem Jahr 2022. Das …"
+    },
+    {
+      "title": "پسر (فیلم ۲۰۲۲) - ویکی‌پدیا، دانشنامهٔ آزاد",
+      "url": "https://fa.wikipedia.org/wiki/%D9%BE%D8%B3%D8%B1_(%D9%81%DB%8C%D9%84%D9%85_%DB%B2%DB%B0%DB%B2%DB%B2)",
+      "snippet": "پسر (انگلیسی: The Son) فیلمی درام به کارگردانی فلوریان زلر است که از فیلم‌نامه‌ای به نویسندگی خودش و کریستوفر همپتون ساخته شده است و در سال ۲۰۲۲ منتشر شد. این فیلم بر اساس …"
+    },
+    {
+      "title": "فیلم The Boy 2016 - نماشا",
+      "url": "https://www.namasha.com/v/R751g9Qd/%D9%81%DB%8C%D9%84%D9%85_The_Boy_2016",
+      "snippet": "Nov 19, 2016 · کارگردان : William Brent Bell ستارگان : Lauren Cohan, Rupert Evans , James Russell خلاصه داستان فیلم The Boy 2016 : یک پرستار …"
+    },
+    {
+      "title": "Watch The Son | Netflix",
+      "url": "https://www.netflix.com/title/81630458",
+      "snippet": "Building a life with a new family following a divorce, an overachieving father faces new obstacles when his troubled teenage son …"
+    },
+    {
+      "title": "شاهد The Son - فيلم | MBC شاهد",
+      "url": "https://shahid.mbc.net/ar/movies/The-Son/movie-49923562714639?msockid=2c18a3253aa76ca1270fb4f23b2e6d34",
+      "snippet": "لا يكفي الحب وحده لإصلاح الانقسامات العائلية العميقة. يجسد هذا الفيلم واقعا مؤلما ومثقلا بالصمت وتبعات الأخطاء، مدعوما بأداء صادق من هيو جاكمان ولورا ديرن. النجوم: هيو جاكمان, فانيسا كيربي, …"
+    }
+  ]
+}

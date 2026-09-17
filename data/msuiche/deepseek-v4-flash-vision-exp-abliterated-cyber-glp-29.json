@@ -5,7 +5,7 @@
   "author": "msuiche",
   "url": "https://huggingface.co/msuiche/DeepSeek-V4-Flash-Vision-Exp-abliterated-cyber-GLP-29",
   "created_at": "2026-09-01T18:03:14.000Z",
-  "updated_at": "2026-09-04T11:25:52.000Z",
+  "updated_at": "2026-09-19T08:11:20.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": 118784,
   "parameters_human": "118784",
-  "storage_bytes": 956480,
-  "storage_human": "956480 B",
+  "storage_bytes": 1435168,
+  "storage_human": "1 MB",
   "base_model": null,
   "formats": [
     "gguf"

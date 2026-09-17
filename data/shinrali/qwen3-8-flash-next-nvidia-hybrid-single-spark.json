@@ -5,7 +5,7 @@
   "author": "Shinrali",
   "url": "https://huggingface.co/Shinrali/Qwen3.8-Flash-Next-NVIDIA-Hybrid-Single-Spark",
   "created_at": "2026-09-11T21:57:41.000Z",
-  "updated_at": "2026-09-13T02:01:49.000Z",
+  "updated_at": "2026-09-19T12:34:37.000Z",
   "license": "nvidia-open-model-license",
   "license_family": "oss",
   "pipeline_tag": "image-text-to-text",

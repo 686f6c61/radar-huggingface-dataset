@@ -5,7 +5,7 @@
   "author": "qwrt",
   "url": "https://huggingface.co/qwrt/Midimodell-67.390M",
   "created_at": "2026-08-18T14:55:49.000Z",
-  "updated_at": "2026-09-13T10:44:04.000Z",
+  "updated_at": "2026-09-21T06:15:21.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -13,8 +13,10 @@
   "languages": [],
   "tags": [
     "safetensors",
+    "gguf",
     "qwen3",
     "dataset:projectlosangeles/Monster-MIDI-Dataset",
+    "endpoints_compatible",
     "region:us"
   ],
   "likes": 0,
@@ -22,10 +24,11 @@
   "trending_score": 0,
   "parameters": 67389952,
   "parameters_human": "67.4M",
-  "storage_bytes": 385173276444,
-  "storage_human": "385.2 GB",
+  "storage_bytes": 385308109148,
+  "storage_human": "385.3 GB",
   "base_model": null,
   "formats": [
+    "gguf",
     "safetensors"
   ],
   "is_conversational": false,

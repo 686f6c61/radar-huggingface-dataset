@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "smlflg/computer-day-audit-2026",
+  "slug": "smlflg-computer-day-audit-2026",
+  "author": "smlflg",
+  "url": "https://huggingface.co/smlflg/computer-day-audit-2026",
+  "created_at": "2026-09-16T20:25:05.000Z",
+  "updated_at": "2026-09-16T20:25:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "audit",
+    "dashboard",
+    "self-tracking",
+    "hai",
+    "human-agent-interface",
+    "static-site",
+    "text-generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Quizlet: Study Tools & Learning Resources for Students and Teachers ...",
+      "url": "https://quizlet.com/",
+      "snippet": "Quizlet makes learning fun and easy with free flashcards and premium study tools. Join millions of students and teachers who use …"
+    },
+    {
+      "title": "Kaarten, leermiddelen en studieboekoplossingen | Quizlet",
+      "url": "https://quizlet.com/nl",
+      "snippet": "Quizlet maakt door AI ondersteunde leermiddelen waarmee je alles kunt leren wat je wilt. Begin vandaag nog te leren met onze …"
+    },
+    {
+      "title": "‎Quizlet",
+      "url": "https://www.quizlet.app.link/V5hndX6FYR",
+      "snippet": "Quizlet is the easiest way to practice and master what you’re learning. Create your own flashcard sets or choose from millions …"
+    },
+    {
+      "title": "Log in to Quizlet | Quizlet",
+      "url": "https://quizlet.com/login",
+      "snippet": "Quizlet has study tools to help you learn anything. Improve your grades and reach your goals with flashcards, practice tests and …"
+    },
+    {
+      "title": "Quizlet Live | Quizlet",
+      "url": "https://quizlet.com/live",
+      "snippet": "Students: Join a round of Quizlet Live here. Enter your game code to play on a computer, tablet, or phone. Good luck!"
+    }
+  ]
+}

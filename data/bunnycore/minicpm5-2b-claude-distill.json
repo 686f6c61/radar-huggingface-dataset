@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "bunnycore/MiniCPM5-2B-Claude-Distill",
+  "slug": "bunnycore-minicpm5-2b-claude-distill",
+  "author": "bunnycore",
+  "url": "https://huggingface.co/bunnycore/MiniCPM5-2B-Claude-Distill",
+  "created_at": "2026-09-16T20:00:46.000Z",
+  "updated_at": "2026-09-16T20:19:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama",
+    "llama.cpp",
+    "llama-cpp",
+    "unsloth",
+    "dataset:angrygiraffe/claude-opus-4.6-4.7-reasoning-8.7k",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 2070225792,
+  "storage_human": "2.1 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Helio",
+      "url": "https://heliostreetwear.com/",
+      "snippet": "Helio جاتلي الـRed Hobo Bag النهارده وبجد OBSESSED بيهااا 😭 ️ اللون خطير خطير جدًا، ومساحتها بيرفكت بجد! وكمان الأوردر وصل بسرعة جدًا، طلبته أول إمبارح ووصل …"
+    },
+    {
+      "title": "Products – Helio",
+      "url": "https://heliostreetwear.com/collections/all",
+      "snippet": "Helio LE 550.00 LE 350.00 Sold Out"
+    },
+    {
+      "title": "Helio - Facebook",
+      "url": "https://www.facebook.com/helio.eg/",
+      "snippet": "Helio. 45,180 likes · 945 talking about this. Something special in the street."
+    },
+    {
+      "title": "AMAZFIT Helio Strap Fitness Tracker Wristband, 24/7 Activity & Sleep ...",
+      "url": "https://www.amazon.eg/-/en/Helio-Wristband-Activity-Strength-Subscription/dp/B0F8HJCB47",
+      "snippet": "Seamlessly integrating with Amazfit smartwatches, the Helio Ring, and the Zepp App, it powers a complete training system designed …"
+    },
+    {
+      "title": "Helio Cairo Hotel, Cairo (updated prices 2026) - Booking.com",
+      "url": "https://www.booking.com/hotel/eg/helio-cairo.html?msockid=1d60039df56e61ea161d144bf4586092",
+      "snippet": "Located in the Heliopolis district of Cairo, Helio Cairo Hotel provides a shared lounge."
+    }
+  ]
+}

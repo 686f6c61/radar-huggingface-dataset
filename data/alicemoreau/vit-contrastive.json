@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Alicemoreau/vit-contrastive",
+  "slug": "alicemoreau-vit-contrastive",
+  "author": "Alicemoreau",
+  "url": "https://huggingface.co/Alicemoreau/vit-contrastive",
+  "created_at": "2026-09-17T01:01:51.000Z",
+  "updated_at": "2026-09-17T01:01:57.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "vit",
+    "pytorch",
+    "contrastive",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Federal Reserve raises interest rates for the first time since 2023",
+      "url": "https://www.cbsnews.com/news/fed-interest-rate-decision-today/",
+      "snippet": "7 hours ago · The Federal Reserve raised interest rates for the first time since 2023 on Wednesday, reversing course as the Iran war …"
+    },
+    {
+      "title": "Federal Reserve hikes interest rates for first time since 2023 amid ...",
+      "url": "https://www.foxbusiness.com/economy/federal-reserve-interest-rate-decision-september-16-2026",
+      "snippet": "7 hours ago · The Federal Reserve raised its key interest rate for the first time in three years amid persistent inflation caused in part …"
+    },
+    {
+      "title": "Fed raises rates for first time since 2023. What it means for you",
+      "url": "https://www.usatoday.com/story/money/economy/2026/09/16/fed-rate-decision-meeting-updates--live/91746863007/",
+      "snippet": "13 hours ago · WASHINGTON — Federal Reserve policymakers responded to stubborn inflation by opting to raise their benchmark …"
+    },
+    {
+      "title": "Fed raises interest rates for first time since 2023, defying ... - MSN",
+      "url": "https://www.msn.com/en-us/money/economy/fed-raises-interest-rates-for-first-time-since-2023-defying-trump-as-inflation-mounts/ar-AA2cmdVP",
+      "snippet": "The Federal Reserve on Wednesday raised its benchmark interest rates for the first time since 2023, in a move aimed at slowing …"
+    },
+    {
+      "title": "The Federal Reserve just raised interest rates for the first time since ...",
+      "url": "https://www.cbsnews.com/news/fed-raised-rates-first-time-since-2023-how-mortgage-rates-may-respond/",
+      "snippet": "7 hours ago · The Federal Reserve just raised its benchmark interest rate by 25 basis points, its first increase since 2023, pushing the …"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "keylazy/Qwen2.5-Omni-3B-bab-sent1asr-v2-dpo",
+  "slug": "keylazy-qwen2-5-omni-3b-bab-sent1asr-v2-dpo",
+  "author": "keylazy",
+  "url": "https://huggingface.co/keylazy/Qwen2.5-Omni-3B-bab-sent1asr-v2-dpo",
+  "created_at": "2026-09-16T23:05:50.000Z",
+  "updated_at": "2026-09-16T23:06:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 131227430,
+  "storage_human": "131 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Download and install Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95346?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "On your computer, download a Chrome installer for a different computer. At the bottom of the page, under “Chrome Family,” select …"
+    },
+    {
+      "title": "Télécharger et installer Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95346?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Installer Chrome Important : Avant de télécharger Chrome, vérifiez s'il est compatible avec votre système d'exploitation et si vous …"
+    },
+    {
+      "title": "Fazer o download e instalar o Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95346?hl=pt-BR&co=GENIE.Platform%3DDesktop",
+      "snippet": "Você pode baixar e instalar o navegador da Web Chrome sem custos financeiros e usá-lo para navegar na Web. Conferir os …"
+    },
+    {
+      "title": "Google Chrome herunterladen und installieren",
+      "url": "https://support.google.com/chrome/answer/95346?hl=de&co=GENIE.Platform%3DDesktop",
+      "snippet": "Sie können den Chrome-Webbrowser kostenlos herunterladen und installieren und damit im Internet surfen. Systemanforderungen …"
+    },
+    {
+      "title": "Scaricare e installare Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95346?hl=it&co=GENIE.Platform%3DDesktop",
+      "snippet": "Come installare Chrome Importante: prima di scaricare Chrome, controlla se supporta il tuo sistema operativo e se soddisfa tutti gli …"
+    }
+  ]
+}

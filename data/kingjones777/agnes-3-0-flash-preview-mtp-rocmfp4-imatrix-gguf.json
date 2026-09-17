@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "kingjones777/Agnes-3.0-Flash-Preview-MTP-ROCmFP4-imatrix-GGUF",
+  "slug": "kingjones777-agnes-3-0-flash-preview-mtp-rocmfp4-imatrix-gguf",
+  "author": "kingjones777",
+  "url": "https://huggingface.co/kingjones777/Agnes-3.0-Flash-Preview-MTP-ROCmFP4-imatrix-GGUF",
+  "created_at": "2026-09-16T23:31:56.000Z",
+  "updated_at": "2026-09-17T00:56:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "rocm",
+    "amd",
+    "rocmfp4",
+    "rocmfpx",
+    "strix-halo",
+    "amd-strix-halo",
+    "gfx1151",
+    "ryzen-ai-max",
+    "ryzen-ai-max-395",
+    "radeon-8060s",
+    "mtp",
+    "speculative-decoding",
+    "reasoning",
+    "multimodal",
+    "vision",
+    "agnes",
+    "qwen3.5",
+    "quantized",
+    "imatrix",
+    "image-text-to-text",
+    "base_model:Agnes-AI/Agnes-3.0-Flash",
+    "base_model:quantized:Agnes-AI/Agnes-3.0-Flash",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32661228864,
+  "parameters_human": "32.66B",
+  "storage_bytes": 38083537728,
+  "storage_human": "38.1 GB",
+  "base_model": "Agnes-AI/Agnes-3.0-Flash",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Artificial intelligence | MIT News | Massachusetts Institute of Technology",
+      "url": "https://news.mit.edu/topic/artificial-intelligence2",
+      "snippet": "1 day ago · New AI technique could make minimally invasive surgeries safer and more precise This patient-specific method, called …"
+    },
+    {
+      "title": "Rethinking artificial intelligence - MIT News",
+      "url": "https://news.mit.edu/2009/ai-overview-1207",
+      "snippet": "Dec 7, 2009 · Rethinking artificial intelligence Broad-based MIT project aims to reinvent AI for a new era. By going back and fixing …"
+    },
+    {
+      "title": "Artificial Intelligence - Science News",
+      "url": "https://www.sciencenews.org/topic/artificial-intelligence",
+      "snippet": "3 days ago · Artificial Intelligence AI tools meant to vet science are surprisingly easy to fool The gold standard of scientific review, …"
+    },
+    {
+      "title": "Artificial Intelligence | Page 3 of 10 | Science News",
+      "url": "https://www.sciencenews.org/topic/artificial-intelligence/page/3",
+      "snippet": "Feb 17, 2026 · Artificial Intelligence AI models spot deepfake images, but people catch fake videos A new study finds that humans …"
+    },
+    {
+      "title": "Artificial intelligence | MIT News | Massachusetts Institute of Technology",
+      "url": "https://news.mit.edu/topic/artificial-intelligence2?type=2",
+      "snippet": "3 days ago · In a Scientific American article by reporter Joseph Howlett, Prof. Naomi Sweeting discusses the potential pitfalls of …"
+    }
+  ]
+}

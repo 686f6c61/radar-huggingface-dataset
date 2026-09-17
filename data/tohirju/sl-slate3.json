@@ -5,7 +5,7 @@
   "author": "Tohirju",
   "url": "https://huggingface.co/Tohirju/sl-slate3",
   "created_at": "2026-08-17T05:27:52.000Z",
-  "updated_at": "2026-08-17T05:29:17.000Z",
+  "updated_at": "2026-09-20T19:47:13.000Z",
   "license": "other",
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -23,8 +23,8 @@
   "trending_score": 0,
   "parameters": 11907350576,
   "parameters_human": "11.91B",
-  "storage_bytes": 9786021984,
-  "storage_human": "9.8 GB",
+  "storage_bytes": 17167405248,
+  "storage_human": "17.2 GB",
   "base_model": null,
   "formats": [
     "gguf"

@@ -5,7 +5,7 @@
   "author": "spiritfather",
   "url": "https://huggingface.co/spiritfather/Boulesis-26B-A4B-GGUF",
   "created_at": "2026-09-05T21:48:48.000Z",
-  "updated_at": "2026-09-06T14:50:20.000Z",
+  "updated_at": "2026-09-16T12:30:24.000Z",
   "license": "gemma",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

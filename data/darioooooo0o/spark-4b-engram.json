@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "darioooooo0o/spark-4b-engram",
+  "slug": "darioooooo0o-spark-4b-engram",
+  "author": "darioooooo0o",
+  "url": "https://huggingface.co/darioooooo0o/spark-4b-engram",
+  "created_at": "2026-09-16T20:21:53.000Z",
+  "updated_at": "2026-09-17T19:50:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "code"
+  ],
+  "tags": [
+    "transformers",
+    "spark2_5",
+    "text-generation",
+    "conditional-memory",
+    "engram",
+    "deepseek",
+    "spark-x2.5",
+    "frozen-backbone",
+    "code-generation",
+    "coding-assistant",
+    "python",
+    "algorithms",
+    "memory-lookup",
+    "experimental",
+    "conversational",
+    "custom_code",
+    "en",
+    "code",
+    "arxiv:2601.07372",
+    "base_model:XHToken/Spark-X2.5-4B",
+    "base_model:finetune:XHToken/Spark-X2.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3267169297,
+  "storage_human": "3.3 GB",
+  "base_model": "XHToken/Spark-X2.5-4B",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Digital-Forum - Il Forum dedicato alla TV Digitale",
+      "url": "https://www.digital-forum.it/",
+      "snippet": "Nov 22, 2025 · Il Forum dedicato alla TV digitale terrestre, satellitare, streaming, telefonia, radio e tecnologia"
+    },
+    {
+      "title": "Now | Digital-Forum - Il Forum dedicato alla TV Digitale",
+      "url": "https://www.digital-forum.it/forums/now.173/",
+      "snippet": "May 27, 2020 · App Now non disponibile su Google TV Xiaomi A32 frabatman2012 13 Luglio 2026 Risposte 2 Visite 509 6 Settembre …"
+    },
+    {
+      "title": "PES 2009 installieren - Games-Talk & Support - NOX FORUM",
+      "url": "https://forum.nox.to/index.php?thread/74-pes-2009-installieren/",
+      "snippet": "Feb 2, 2009 · Hallo Zusammen, ich habe mir das Spiel Pro Evolution Soccer 2009 runtergeladen und jetzt weiß ich leider nicht wie …"
+    },
+    {
+      "title": "Konzerte - Musik-DVD & Filme - NOX FORUM",
+      "url": "https://forum.nox.to/index.php?board/107-konzerte-musik-dvd-filme/",
+      "snippet": "Jul 17, 2018 · Musik-DVD's & Konzerte von jung bis alt Various Artists - So You Wanna Be A Rock 'n' Roll Star - Original TV …"
+    },
+    {
+      "title": "In Rilievo - [NOW] - Promo, Offerte e Codici Sconto [Leggere Primo Post]",
+      "url": "https://www.digital-forum.it/threads/now-promo-offerte-e-codici-sconto-leggere-primo-post.206931/",
+      "snippet": "Sep 6, 2020 · Ho un account Now posso attivare la promo FULL Se hai un account Now si consiglia di avere almeno un Pass attivo, …"
+    }
+  ]
+}

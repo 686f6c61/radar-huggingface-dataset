@@ -25,7 +25,8 @@
     "license:apache-2.0",
     "endpoints_compatible",
     "region:us",
-    "conversational"
+    "conversational",
+    "not-for-all-audiences"
   ],
   "likes": 2,
   "downloads_30d": 691,

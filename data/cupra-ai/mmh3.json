@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "cupra-ai/MMH3",
+  "slug": "cupra-ai-mmh3",
+  "author": "cupra-ai",
+  "url": "https://huggingface.co/cupra-ai/MMH3",
+  "created_at": "2026-09-16T21:00:44.000Z",
+  "updated_at": "2026-09-16T21:00:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Une nouvelle génération de véhicules hybrides et électriques - CUPRA",
+      "url": "https://www.cupra.com/fr-fr/",
+      "snippet": "Découvrez les nouveaux modèles CUPRA. L’alliance parfaite entre électrification et sportivité automobile, conçue pour défier les …"
+    },
+    {
+      "title": "Gamme de véhicules CUPRA 2025 : SUV & Véhicules électriques",
+      "url": "https://www.cupra.com/fr-fr/voitures",
+      "snippet": "Découvrez la gamme de véhicules CUPRA, nos nouveaux SUV et véhicules sportives. Découvrez les nouveaux véhicules …"
+    },
+    {
+      "title": "Cupra (marque) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Cupra_(marque)",
+      "snippet": "Cupra est un constructeur automobile espagnol, fondé le 31 janvier 20181 et basé à Martorell 2 en Espagne. Cupra était auparavant …"
+    },
+    {
+      "title": "CUPRA",
+      "url": "https://www.cupra.be/fr",
+      "snippet": "News ADN CUPRA Services Fleet BELGIUM"
+    },
+    {
+      "title": "Voiture Cupra Occasion : Achat & Vente Auto - La Centrale",
+      "url": "https://www.lacentrale.fr/occasion-voiture-marque-cupra.html",
+      "snippet": "Avec des caractéristiques telles que des systèmes de conduite avancés et des intérieurs de haute qualité, les véhicules d'occasion …"
+    }
+  ]
+}

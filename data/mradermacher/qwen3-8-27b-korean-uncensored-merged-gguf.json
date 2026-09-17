@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/qwen3.8-27b-korean-uncensored-merged-GGUF",
   "created_at": "2026-09-16T18:02:17.000Z",
-  "updated_at": "2026-09-16T18:48:24.000Z",
+  "updated_at": "2026-09-16T22:08:36.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -38,8 +38,8 @@
   "trending_score": 0,
   "parameters": 26895998464,
   "parameters_human": "26.90B",
-  "storage_bytes": 26297980992,
-  "storage_human": "26.3 GB",
+  "storage_bytes": 186348483936,
+  "storage_human": "186.3 GB",
   "base_model": "koreallmdev/qwen3.8-27b-korean-uncensored-merged",
   "formats": [
     "gguf"

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "CharlieChen/loop-vanilla-d16",
+  "slug": "charliechen-loop-vanilla-d16",
+  "author": "CharlieChen",
+  "url": "https://huggingface.co/CharlieChen/loop-vanilla-d16",
+  "created_at": "2026-09-16T21:54:12.000Z",
+  "updated_at": "2026-09-16T21:54:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "looped-transformer",
+    "scaling-laws",
+    "pytorch",
+    "base-model",
+    "text-generation",
+    "en",
+    "dataset:HuggingFaceFW/fineweb",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4112545835,
+  "storage_human": "4.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The “Wieliczka” Salt Mine",
+      "url": "https://www.wieliczka-saltmine.com/",
+      "snippet": "The “Wieliczka” Salt Mine is an extraordinary place – hidden from the world, full of secrets and legends. If you want to see them with …"
+    },
+    {
+      "title": "Ticket prices and tour times - Wieliczka” Salt Mine",
+      "url": "https://www.wieliczka-saltmine.com/individual-tourist/useful-information/ticket-prices-and-visiting-hours",
+      "snippet": "Discounts and rebates listed in the price list for tourist services of the “Wieliczka” Salt Mine and the Cracow Saltworks Museum as …"
+    },
+    {
+      "title": "HISTORY OF THE MINE - About the Salt Mines - Wieliczka” Salt Mine",
+      "url": "https://www.wieliczka-saltmine.com/individual-tourist/about-the-mine/history-of-the-mine",
+      "snippet": "Brine – salt water drawn from springs – used to be boiled in small clay vessels, on modest hearths. In this simple way, salt was …"
+    },
+    {
+      "title": "About the Salt Mines - Individual tourist - Wieliczka” Salt Mine",
+      "url": "https://www.wieliczka-saltmine.com/individual-tourist/about-the-mine",
+      "snippet": "Welcome to the Mine of Mysteries! About the “Wieliczka” Salt Mine See the priceless monument of world material culture, entered in …"
+    },
+    {
+      "title": "Ticket prices and tour times - Wieliczka” Salt Mine",
+      "url": "https://www.wieliczka-saltmine.com/organised-groups/useful-information/ticket-prices-and-tour-times",
+      "snippet": "A complimentary ticket for the group's guardian is not included in this number. Discounts and rebates listed in the price list for tourist …"
+    }
+  ]
+}

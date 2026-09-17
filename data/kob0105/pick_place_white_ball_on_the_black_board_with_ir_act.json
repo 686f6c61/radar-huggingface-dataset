@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "kob0105/pick_place_white_ball_on_the_black_board_with_ir_act",
+  "slug": "kob0105-pick_place_white_ball_on_the_black_board_with_ir_act",
+  "author": "kob0105",
+  "url": "https://huggingface.co/kob0105/pick_place_white_ball_on_the_black_board_with_ir_act",
+  "created_at": "2026-09-16T20:03:47.000Z",
+  "updated_at": "2026-09-16T20:04:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:kob0105/pick_place_white_ball_on_black_board_NoIR_20260916_134610",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714848,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accès à ma messagerie Aliceadsl inaccessible [Résolu] - Forum Mail",
+      "url": "https://forums.commentcamarche.net/forum/affich-37025104-acces-a-ma-messagerie-aliceadsl-inaccessible",
+      "snippet": "Jan 2, 2021 · Alleluhia. Je suis passé par https://webmail.free.fr en utilisant mes identifiants Alice et j'ai de nouveau accès à ma …"
+    },
+    {
+      "title": "Smtp ALICE ? [Résolu] - Réseaux sociaux - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-1802895-smtp-alice",
+      "snippet": "smtp j'utilise: smtp.free.fr (etant encore sous free) sinon sous alice ce serait je pense smtp.aliceadsl.fr (il faut utiliser smtp de ton fai …"
+    },
+    {
+      "title": "Configurare account mail tin.it, TIM Mail e Alice | We TIM",
+      "url": "https://community.tim.it/news/come-fare-per/configurare-account-email",
+      "snippet": "Jul 17, 2017 · Per configurare velocemente il tuo account e-mail tin.it, TIM Mail e Alice Mail su smartphone e tablet ecco tutti i …"
+    },
+    {
+      "title": "Chiedi come configurare la tua email TIM | We TIM",
+      "url": "https://community.tim.it/argomenti/configurazione/email",
+      "snippet": "Chiedi consiglio su come configurare la tua TIM mail e ricevere le tue email su telefono, tablet o pc."
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/it-it/windows/forum/all/scaricare-e-registrare-mscomctlocx-su-windows-10/134be2ea-5e23-46b2-9bfa-6daaac873436",
+      "snippet": ""
+    }
+  ]
+}

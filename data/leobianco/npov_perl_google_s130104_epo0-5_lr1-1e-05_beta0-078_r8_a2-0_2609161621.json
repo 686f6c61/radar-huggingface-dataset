@@ -5,7 +5,7 @@
   "author": "leobianco",
   "url": "https://huggingface.co/leobianco/npov_PERL_google_S130104_epo0.5_lr1.1e-05_beta0.078_r8_a2.0_2609161621",
   "created_at": "2026-09-16T16:22:09.000Z",
-  "updated_at": "2026-09-16T17:49:03.000Z",
+  "updated_at": "2026-09-16T21:04:54.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -28,8 +28,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 64082611,
-  "storage_human": "64 MB",
+  "storage_bytes": 150681115,
+  "storage_human": "151 MB",
   "base_model": "google/gemma-4-E4B-it",
   "formats": [
     "safetensors"

@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "darioooooo0o/spark-1.7b-engram",
+  "slug": "darioooooo0o-spark-1-7b-engram",
+  "author": "darioooooo0o",
+  "url": "https://huggingface.co/darioooooo0o/spark-1.7b-engram",
+  "created_at": "2026-09-16T23:15:38.000Z",
+  "updated_at": "2026-09-17T19:50:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "code"
+  ],
+  "tags": [
+    "transformers",
+    "spark2_5",
+    "text-generation",
+    "conditional-memory",
+    "engram",
+    "deepseek",
+    "spark-x2.5",
+    "frozen-backbone",
+    "code-generation",
+    "coding-assistant",
+    "python",
+    "algorithms",
+    "memory-lookup",
+    "experimental",
+    "conversational",
+    "custom_code",
+    "en",
+    "code",
+    "arxiv:2601.07372",
+    "base_model:XHToken/Spark-X2.5-1.7B",
+    "base_model:finetune:XHToken/Spark-X2.5-1.7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1650558985,
+  "storage_human": "1.7 GB",
+  "base_model": "XHToken/Spark-X2.5-1.7B",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Triphenylphosphinoxid 98% | Sigma-Aldrich - MilliporeSigma",
+      "url": "https://www.sigmaaldrich.com/DE/de/product/aldrich/t84603?msockid=164b38878cbb6ff528912f508d216e98",
+      "snippet": "Triphenylphosphinoxid 98%; CAS Number: 791-28-6; EC Number: 212-338-8; Synonyms: Ph3PO,TPPO,Triphenyl phosphorus …"
+    },
+    {
+      "title": "Triphenylphosphine oxide 98 791-28-6 - MilliporeSigma",
+      "url": "https://www.sigmaaldrich.com/US/en/product/aldrich/t84603?msockid=164b38878cbb6ff528912f508d216e98",
+      "snippet": "Triphenylphosphine oxide can be used: As a catalyst in Appel-type chlorination reaction of acyclic primary and secondary alcohols. …"
+    },
+    {
+      "title": "Triphenylphosphanoxid – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Triphenylphosphanoxid",
+      "snippet": "Triphenylphosphanoxid, veraltet Triphenylphosphinoxid, ist eine organische Phosphorverbindung. Sie besteht aus einem …"
+    },
+    {
+      "title": "Triphenylphosphine oxide | 791-28-6 - ChemicalBook",
+      "url": "https://www.chemicalbook.com/ChemicalProductProperty_EN_CB8296821.htm",
+      "snippet": "May 28, 2026 · Triphenylphosphine oxide (CAS 791-28-6) information, including chemical properties, structure, melting point, boiling …"
+    },
+    {
+      "title": "Triphenylphosphine Oxide | 791-28-6 | TCI Deutschland GmbH",
+      "url": "https://www.tcichemicals.com/DE/de/p/T0625",
+      "snippet": "Under nitrogen atmosphere, triphenylphosphine oxide (1.057 g, 3.798 mmol) was dissolved in dichloromethane (20 mL) and cooled to …"
+    }
+  ]
+}

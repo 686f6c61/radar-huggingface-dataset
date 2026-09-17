@@ -28,7 +28,8 @@
     "base_model:Qwen/Qwen3.8-27B",
     "base_model:finetune:Qwen/Qwen3.8-27B",
     "license:apache-2.0",
-    "region:us"
+    "region:us",
+    "not-for-all-audiences"
   ],
   "likes": 4,
   "downloads_30d": 2,

@@ -5,7 +5,7 @@
   "author": "Lanni-ni",
   "url": "https://huggingface.co/Lanni-ni/hard_3gram_2_4_256_babylm_10m_seed44",
   "created_at": "2026-09-09T22:46:38.000Z",
-  "updated_at": "2026-09-09T22:47:29.000Z",
+  "updated_at": "2026-09-21T18:26:35.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-generation",
@@ -14,10 +14,11 @@
   "tags": [
     "transformers",
     "safetensors",
-    "sliding_window",
+    "transformer",
     "text-generation",
     "custom_code",
     "arxiv:1910.09700",
+    "endpoints_compatible",
     "region:us"
   ],
   "likes": 0,

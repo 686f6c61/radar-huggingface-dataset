@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/arb-arab-100mb-after-ppt-shuff-dyck-100mb-ckpt500_seed3407",
+  "slug": "fpadovani-arb-arab-100mb-after-ppt-shuff-dyck-100mb-ckpt500_seed3407",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/arb-arab-100mb-after-ppt-shuff-dyck-100mb-ckpt500_seed3407",
+  "created_at": "2026-09-17T02:13:04.000Z",
+  "updated_at": "2026-09-17T04:19:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:fpadovani/arb-arab-100mb-ppt-shuff-dyck-100mb_seed3407",
+    "base_model:finetune:fpadovani/arb-arab-100mb-ppt-shuff-dyck-100mb_seed3407",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 315,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 6739724606,
+  "storage_human": "6.7 GB",
+  "base_model": "fpadovani/arb-arab-100mb-ppt-shuff-dyck-100mb_seed3407",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "curiosity - Αγγλοελληνικό Λεξικό WordReference.com",
+      "url": "https://www.wordreference.com/engr/curiosity",
+      "snippet": "Λείπει κάτι σημαντικό; Αναφέρετε τυχόν λάθη ή προτείνετε βελτιώσεις. My son shows a morbid curiosity in forensic medicine. I …"
+    },
+    {
+      "title": "CURIOSITY – Learning starts with curiosity.",
+      "url": "http://curiosity.gr/",
+      "snippet": "CURIOSITY – Learning starts with curiosity. VISIT ALL OUR WEBSITES!"
+    },
+    {
+      "title": "curious - Αγγλοελληνικό Λεξικό WordReference.com",
+      "url": "https://www.wordreference.com/engr/curious",
+      "snippet": "Paolo's curious friends quizzed him about his new job. Οι περίεργοι φίλοι του Πάολο τον ρωτούσαν για την νέα του δουλειά. Small …"
+    },
+    {
+      "title": "curiosity in Greek - English-Greek Dictionary | Glosbe",
+      "url": "https://glosbe.com/en/el/curiosity",
+      "snippet": "Check 'curiosity' translations into Greek. Look through examples of curiosity translation in sentences, listen to pronunciation and learn …"
+    },
+    {
+      "title": "Curiosity - Βικιπαίδεια",
+      "url": "https://el.wikipedia.org/wiki/Curiosity",
+      "snippet": "To Curiosity (μτφρ.: Περιέργεια) είναι ένα ρομποτικό όχημα (ρόβερ) το οποίο εξερευνά τον κρατήρα Γκέιλ στον Άρη, ως μέρος της …"
+    }
+  ]
+}

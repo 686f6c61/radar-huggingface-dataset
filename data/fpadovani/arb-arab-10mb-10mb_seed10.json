@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/arb-arab-10mb-10mb_seed10",
+  "slug": "fpadovani-arb-arab-10mb-10mb_seed10",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/arb-arab-10mb-10mb_seed10",
+  "created_at": "2026-09-17T00:40:06.000Z",
+  "updated_at": "2026-09-17T01:02:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:goldfish-models/arb_arab_10mb",
+    "base_model:finetune:goldfish-models/arb_arab_10mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 39087104,
+  "parameters_human": "39.1M",
+  "storage_bytes": 861426871,
+  "storage_human": "861 MB",
+  "base_model": "goldfish-models/arb_arab_10mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Celtics–Lakers rivalry - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Celtics%E2%80%93Lakers_rivalry",
+      "snippet": "The Celtics–Lakers rivalry is a National Basketball Association (NBA) rivalry between the Boston Celtics and the Los Angeles Lakers. …"
+    },
+    {
+      "title": "Boston Celtics 111 - Los Angeles Lakers 89: Final score, results, recap ...",
+      "url": "https://sports.yahoo.com/nba/boston-celtics-los-angeles-lakers-2026022213/",
+      "snippet": "Sun, February 22, 2026 at 3:30 PM NBC Crypto.com Arena Boston Celtics Los Angeles Lakers"
+    },
+    {
+      "title": "Los Angeles Lakers Scores, Stats and Highlights - ESPN",
+      "url": "https://www.espn.com/nba/team/_/name/lal/los-angeles-lakers",
+      "snippet": "Visit ESPN for Los Angeles Lakers live scores, video highlights, and latest news. Find standings and the full 2026-27 season schedule."
+    },
+    {
+      "title": "2025-26 Team Comparison - Los Angeles Lakers vs. Boston Celtics",
+      "url": "https://www.espn.com/nba/teams/comparison/_/team1/lal/team2/bos",
+      "snippet": "Team-by-team NBA matchups and head-to-head comparisons on ESPN.com."
+    },
+    {
+      "title": "Los Angeles Lakers Vs Boston Celtics Last 5 Game Log | StatMuse",
+      "url": "https://www.statmuse.com/nba/ask/los-angeles-lakers-vs-boston-celtics-last-5-game-log",
+      "snippet": "Feb 1, 2024 · the Los Angeles Lakers games against the Celtics"
+    }
+  ]
+}

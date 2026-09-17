@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "drift72032/bc1982elizabeth1",
+  "slug": "drift72032-bc1982elizabeth1",
+  "author": "drift72032",
+  "url": "https://huggingface.co/drift72032/bc1982elizabeth1",
+  "created_at": "2026-09-17T00:08:43.000Z",
+  "updated_at": "2026-09-17T00:08:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-17T02:50:18.949Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "Teal Swan所做的事情是一种精神分析吗？她的知识和洞见是从何而来？",
+      "url": "https://www.zhihu.com/question/35548615",
+      "snippet": "Teal Swan所做的事情是一种精神分析吗？ 她的知识和洞见是从何而来？ 她自称spiritual catalyst，不知道知乎有没有童鞋能阐述下这 …"
+    },
+    {
+      "title": "¿Sabes lo que son las Organizaciones TEAL? - Euroforum",
+      "url": "https://www.euroforum.es/blog/sabes-lo-que-son-las-organizaciones-teal/",
+      "snippet": "May 3, 2018 · El paradigma Teal fue creado en 2014 por Frederic Laloux, un ex-directivo de la consultora estrategia McKinsey & …"
+    },
+    {
+      "title": "pabilo/mecha | WordReference Forums",
+      "url": "https://forum.wordreference.com/threads/pabilo-mecha.2371936/",
+      "snippet": "Mar 6, 2012 · Hola! Solo me gustaría saber cuál es la diferencia entre un pabilo o pábilo y una mecha? Y cuál es la palabra para …"
+    },
+    {
+      "title": "a solicitud de parte interesada se expide la presente",
+      "url": "https://forum.wordreference.com/threads/a-solicitud-de-parte-interesada-se-expide-la-presente.2875834/",
+      "snippet": "Aug 6, 2014 · Hi,im trying to translate the following phrase into english,'a solicitud de parte interesada se expide la presente …"
+    }
+  ]
+}

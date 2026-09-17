@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Kanimus-26B-A4B-FFT-heretic-GGUF",
   "created_at": "2026-08-28T05:51:16.000Z",
-  "updated_at": "2026-08-31T06:17:32.000Z",
+  "updated_at": "2026-09-18T10:28:09.000Z",
   "license": "gemma",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -27,8 +27,8 @@
     "conversational",
     "en",
     "ru",
-    "base_model:SubMaroon/Kanimus-26B-A4B-FFT-heretic",
-    "base_model:adapter:SubMaroon/Kanimus-26B-A4B-FFT-heretic",
+    "base_model:SubMaroon-exp/Kanimus-26B-A4B-FFT-heretic",
+    "base_model:adapter:SubMaroon-exp/Kanimus-26B-A4B-FFT-heretic",
     "license:gemma",
     "endpoints_compatible",
     "region:us"
@@ -40,7 +40,7 @@
   "parameters_human": "25.23B",
   "storage_bytes": 184858376896,
   "storage_human": "184.9 GB",
-  "base_model": "SubMaroon/Kanimus-26B-A4B-FFT-heretic",
+  "base_model": "SubMaroon-exp/Kanimus-26B-A4B-FFT-heretic",
   "formats": [
     "gguf"
   ],

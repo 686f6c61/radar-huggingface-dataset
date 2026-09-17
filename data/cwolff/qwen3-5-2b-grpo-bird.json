@@ -5,7 +5,7 @@
   "author": "cwolff",
   "url": "https://huggingface.co/cwolff/qwen3.5-2b-grpo-bird",
   "created_at": "2026-09-15T15:26:28.000Z",
-  "updated_at": "2026-09-15T16:10:10.000Z",
+  "updated_at": "2026-09-16T07:47:00.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

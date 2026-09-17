@@ -5,8 +5,8 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/Confucius4-R2T2-GGUF",
   "created_at": "2026-09-16T12:52:32.000Z",
-  "updated_at": "2026-09-16T13:04:08.000Z",
-  "license": null,
+  "updated_at": "2026-09-17T09:18:37.000Z",
+  "license": "netease-model-use-license-agreement",
   "license_family": "unknown",
   "pipeline_tag": null,
   "library": "transformers",
@@ -28,6 +28,7 @@
     "en",
     "base_model:netease-youdao/Confucius4-R2T2",
     "base_model:quantized:netease-youdao/Confucius4-R2T2",
+    "license:other",
     "endpoints_compatible",
     "region:us",
     "conversational"

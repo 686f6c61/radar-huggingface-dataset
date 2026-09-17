@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "CharlieChen/loop-untied-grow-d8",
+  "slug": "charliechen-loop-untied-grow-d8",
+  "author": "CharlieChen",
+  "url": "https://huggingface.co/CharlieChen/loop-untied-grow-d8",
+  "created_at": "2026-09-16T21:53:00.000Z",
+  "updated_at": "2026-09-16T21:53:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "looped-transformer",
+    "scaling-laws",
+    "pytorch",
+    "base-model",
+    "text-generation",
+    "en",
+    "dataset:HuggingFaceFW/fineweb",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1285586703,
+  "storage_human": "1.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gmail - Email from Google",
+      "url": "https://mail.google.com/mail",
+      "snippet": "Gmail is email that's intuitive, efficient, and useful. 15 GB of storage, less spam, and mobile access."
+    },
+    {
+      "title": "Gmail - Google Accounts",
+      "url": "https://accounts.google.com/servicelogin?service=mail",
+      "snippet": "Gmail is email that’s intuitive, efficient, and useful. 15 GB of storage, less spam, and mobile access."
+    },
+    {
+      "title": "Sign in - Google Accounts",
+      "url": "https://accounts.google.com/Login",
+      "snippet": "Not your computer? Use a private browsing window to sign in. Learn more about using Guest mode Next Create account"
+    },
+    {
+      "title": "Bejelentkezés a Gmail szolgáltatásba - Számítógép - Gmail Súgó",
+      "url": "https://support.google.com/mail/answer/8494?hl=hu-hu&co=GENIE.Platform%3DDesktop",
+      "snippet": "A Gmail megnyitásához jelentkezzen be számítógépen, vagy adja hozzá fiókját a telefonján vagy táblagépén futó Gmail …"
+    },
+    {
+      "title": "G-Mail",
+      "url": "https://www.gmail.hu/",
+      "snippet": "G-Mail - ingyenes levelezés, 1GB tárhely, mobil felület, spamszűrés, webes és POP3 elérés, profi ügyfélszolgálat"
+    }
+  ]
+}

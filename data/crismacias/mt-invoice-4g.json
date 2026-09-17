@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "crismacias/mt-invoice-4g",
+  "slug": "crismacias-mt-invoice-4g",
+  "author": "crismacias",
+  "url": "https://huggingface.co/crismacias/mt-invoice-4g",
+  "created_at": "2026-09-16T22:39:24.000Z",
+  "updated_at": "2026-09-17T18:19:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 3313238912,
+  "parameters_human": "3.31B",
+  "storage_bytes": 4236339072,
+  "storage_human": "4.2 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft 365 per privati: abbonamento per app di produttività",
+      "url": "https://www.microsoft.com/it-it/microsoft-365?msockid=05b22c06dfbf60781f333bd1de7961c8",
+      "snippet": "Aug 17, 2020 · Gli abbonamenti a Microsoft 365 (precedentemente Office 365) offrono una suite di strumenti di produttività e servizi …"
+    },
+    {
+      "title": "Accesso ad Outlook | Microsoft 365",
+      "url": "https://www.microsoft.com/it-it/microsoft-365/outlook/log-in?msockid=05b22c06dfbf60781f333bd1de7961c8",
+      "snippet": "Accedi a Outlook con Microsoft 365 per accedere a posta elettronica, calendario e altro ancora. Scarica l'app o accedi online per …"
+    },
+    {
+      "title": "Microsoft 365 - Accedi a Copilot - Office",
+      "url": "https://m365.cloud.microsoft/?omkt=it-IT",
+      "snippet": "Microsoft 365 include Word, Excel, PowerPoint, Outlook, Teams e OneDrive, con Microsoft Copilot integrato per aiutarti a creare, …"
+    },
+    {
+      "title": "Scarica Microsoft Office 365 per Windows e Mac | Microsoft 365",
+      "url": "https://www.microsoft.com/it-it/microsoft-365/download-office?msockid=05b22c06dfbf60781f333bd1de7961c8",
+      "snippet": "Dec 16, 2025 · Scaricando Microsoft 365, ottieni ancora più funzioni innovative, sicurezza e valore rispetto a quanto offerto dalle …"
+    },
+    {
+      "title": "Microsoft 365 for Individuals: Subscription for Productivity Apps",
+      "url": "https://www.microsoft.com/en-us/microsoft-365?msockid=05b22c06dfbf60781f333bd1de7961c8",
+      "snippet": "Feb 3, 2026 · Free Microsoft apps are available for lighter, everyday use, but a Microsoft 365 subscription unlocks a broader set of …"
+    }
+  ]
+}

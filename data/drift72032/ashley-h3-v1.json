@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "drift72032/ashley-h3-v1",
+  "slug": "drift72032-ashley-h3-v1",
+  "author": "drift72032",
+  "url": "https://huggingface.co/drift72032/ashley-h3-v1",
+  "created_at": "2026-09-17T01:42:21.000Z",
+  "updated_at": "2026-09-17T02:22:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4474352837,
+  "storage_human": "4.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reddit - Dive into anything",
+      "url": "https://www.reddit.com/",
+      "snippet": "Reddit is a network of communities where people can dive into their interests, hobbies and passions. There's a community for …"
+    },
+    {
+      "title": "تسجيل الدخول إلى Gmail - جهاز الكمبيوتر - مساعدة Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=ar&co=GENIE.Platform%3DDesktop",
+      "snippet": "تسجيل الدخول إلى Gmail ملاحظة: إذا سجّلت الدخول على جهاز كمبيوتر متاح للجميع، احرص على تسجيل الخروج قبل مغادرة جهاز الكمبيوتر. تعرَّف على كيفية تسجيل الدخول على جهاز لا تملكه."
+    },
+    {
+      "title": "The back page of the internet. - Reddit",
+      "url": "https://www.reddit.com/r/soccer/",
+      "snippet": "The football subreddit. News, results, and discussion about the beautiful game."
+    },
+    {
+      "title": "Créer un compte Google pour Gmail",
+      "url": "https://support.google.com/mail/answer/56256?hl=fr",
+      "snippet": "Important : Avant de créer un compte Google, déconnectez-vous de votre compte actuel. Découvrez comment vous déconnecter de …"
+    },
+    {
+      "title": "Conservative - Reddit",
+      "url": "https://www.reddit.com/r/Conservative/",
+      "snippet": "The largest conservative subreddit. https://discord.gg/conservative"
+    }
+  ]
+}

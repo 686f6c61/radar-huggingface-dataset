@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "takenusername32/Hydrogen-v0-50M-Base",
+  "slug": "takenusername32-hydrogen-v0-50m-base",
+  "author": "takenusername32",
+  "url": "https://huggingface.co/takenusername32/Hydrogen-v0-50M-Base",
+  "created_at": "2026-09-16T23:37:27.000Z",
+  "updated_at": "2026-09-18T01:08:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "hydrogen",
+    "text-generation",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49867793,
+  "parameters_human": "49.9M",
+  "storage_bytes": 199496880,
+  "storage_human": "199 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ricerca punto vendita | Lidl Italia",
+      "url": "https://www.lidl.it/c/punti-vendita-e-orari/s10019838",
+      "snippet": "Trova il supermercato Lidl più vicino a te. Scopri gli orari di apertura. Nei nostri supermercati trovi le nostre offerte settimanali a …"
+    },
+    {
+      "title": "Negozi Lidl",
+      "url": "https://www.lidl.it/s/it-IT/ricerca-negozio/",
+      "snippet": "Pagina di anteprima dei negozi"
+    },
+    {
+      "title": "Negozi Lidl in Italia: indirizzi e orari",
+      "url": "https://volantinolidl.it/negozi",
+      "snippet": "Tutti i negozi Lidl in Italia: scegli la tua città per trovare indirizzi, orari di apertura e il volantino Lidl valido nel tuo punto vendita."
+    },
+    {
+      "title": "Dove si trova il negozio Lidl più vicino?",
+      "url": "https://assistenza-clienti.lidl.it/SelfServiceIT/s/article/Dov-%C3%A8-la-filiale-pi%C3%B9-vicina-1562685244539",
+      "snippet": "Per trovare il punto vendita più vicino a te e calcolare il percorso per raggiungerlo, visita la pagina www.lidl.it e dal menu a destra …"
+    },
+    {
+      "title": "Store Finder - Lidl US",
+      "url": "https://www.lidl.com/c/store-finder/s10089075",
+      "snippet": "Store Finder & Opening Hours Search by your Zip Code or City to find your nearest Lidl and start saving!"
+    }
+  ]
+}

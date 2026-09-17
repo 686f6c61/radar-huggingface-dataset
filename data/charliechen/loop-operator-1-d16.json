@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "CharlieChen/loop-operator-1-d16",
+  "slug": "charliechen-loop-operator-1-d16",
+  "author": "CharlieChen",
+  "url": "https://huggingface.co/CharlieChen/loop-operator-1-d16",
+  "created_at": "2026-09-16T21:51:53.000Z",
+  "updated_at": "2026-09-16T21:52:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "looped-transformer",
+    "scaling-laws",
+    "pytorch",
+    "base-model",
+    "text-generation",
+    "en",
+    "dataset:HuggingFaceFW/fineweb",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4112545835,
+  "storage_human": "4.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Capybara - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Capybara",
+      "snippet": "The capybara (/kæp.ɪˈbɑːr.ə, -băr′ə/ ⓘ kap-uh-BAR-uh) [a] or greater capybara (Hydrochoerus hydrochaeris) is the largest living …"
+    },
+    {
+      "title": "List of largest rodents - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/List_of_largest_rodents",
+      "snippet": "This is a list of the largest rodents. Mones, Alvaro; Ojasti, Juhani (16 June 1986). \"Hydrochoerus hydrochaeris Brisson 1762\". …"
+    },
+    {
+      "title": "The 12 Largest Rodent Species in the World - A-Z Animals",
+      "url": "https://a-z-animals.com/articles/the-largest-rodents-in-the-world/",
+      "snippet": "Feb 29, 2024 · The largest rodent in the world is the capybara. These adorably large rodents can stand up to 1.6 feet, measure 3.2 …"
+    },
+    {
+      "title": "Cadibara Unveiled: Your 2026 Guide to the World’s Largest Rodent …",
+      "url": "https://globaltill.com/cadibara-guide/",
+      "snippet": "Apr 2, 2026 · Cadibara is another name for the greater capybara, the largest rodent in the world. It’s a semi-aquatic mammal native to …"
+    },
+    {
+      "title": "Eight facts you didn’t know about the capybara - WWF.CA",
+      "url": "https://wwf.ca/stories/eight-facts-about-capybara/",
+      "snippet": "Nov 17, 2025 · The capybara is the world’s largest rodent, with average adults standing 60 centimetres tall, up to 131 centimetres …"
+    }
+  ]
+}

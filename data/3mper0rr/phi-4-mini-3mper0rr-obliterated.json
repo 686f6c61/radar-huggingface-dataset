@@ -5,7 +5,7 @@
   "author": "3MPER0RR",
   "url": "https://huggingface.co/3MPER0RR/Phi-4-mini-3MPER0RR-obliterated",
   "created_at": "2026-08-30T12:05:53.000Z",
-  "updated_at": "2026-09-07T23:44:55.000Z",
+  "updated_at": "2026-09-19T20:37:41.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -17,6 +17,8 @@
     "text-generation",
     "conversational",
     "custom_code",
+    "base_model:microsoft/Phi-4-mini-instruct",
+    "base_model:finetune:microsoft/Phi-4-mini-instruct",
     "license:mit",
     "region:us"
   ],
@@ -27,7 +29,7 @@
   "parameters_human": "3.84B",
   "storage_bytes": 7687590875,
   "storage_human": "7.7 GB",
-  "base_model": null,
+  "base_model": "microsoft/Phi-4-mini-instruct",
   "formats": [
     "safetensors"
   ],

@@ -5,7 +5,7 @@
   "author": "DylanCouzon",
   "url": "https://huggingface.co/DylanCouzon/stella-en-400M-v5-doc-onnx",
   "created_at": "2026-09-04T01:49:04.000Z",
-  "updated_at": "2026-09-15T22:29:28.000Z",
+  "updated_at": "2026-09-16T13:15:04.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -30,7 +30,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 64,
+  "downloads_30d": 53,
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,

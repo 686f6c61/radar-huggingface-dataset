@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "RyanL22/pi05-anyh2r-rh56f1-0916-rawidm-20k",
+  "slug": "ryanl22-pi05-anyh2r-rh56f1-0916-rawidm-20k",
+  "author": "RyanL22",
+  "url": "https://huggingface.co/RyanL22/pi05-anyh2r-rh56f1-0916-rawidm-20k",
+  "created_at": "2026-09-16T22:51:49.000Z",
+  "updated_at": "2026-09-16T22:52:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "openarm",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 9354057648,
+  "storage_human": "9.4 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "有什么值得推荐的英文维基镜像网站? - 知乎",
+      "url": "https://www.zhihu.com/question/347202458/answers/updated",
+      "snippet": "Kong WiKi：欢迎大家来到开放式Wiki，在这里一起自由的创造属于我们的百科全书。 全球域名：kong.openuniversus.online 中国域 …"
+    },
+    {
+      "title": "为什么这么多人把「Wikipedia」称作「wiki」？ - 知乎",
+      "url": "https://www.zhihu.com/question/19581089",
+      "snippet": "Mar 25, 2011 · 为什么这么多人把「Wikipedia」称作「wiki」？ 我一直很难理解这个问题，为什么这么多人喜欢把专有名词和通用概念 …"
+    },
+    {
+      "title": "bigbang一天一天的歌词、要原版歌词和中文版翻译的如 ...",
+      "url": "https://zhidao.baidu.com/question/1830391065414523220.html",
+      "snippet": "Aug 15, 2014 · BigBang 《一天一天》歌词 一天一天 离开吧 Ye the finally I realize that I'm nothing without you I was so wrong forgive …"
+    },
+    {
+      "title": "wikipedia中的pedia在这个词里有什么具体含义？_百度知道",
+      "url": "https://zhidao.baidu.com/question/994562419309312219.html",
+      "snippet": "wikipedia中的pedia在这个词里有什么具体含义？在Wikipedia这个广受欢迎的在线百科全书项目中，\"pedia\"一词的内涵其实源自拉丁语 …"
+    },
+    {
+      "title": "有哪些可以替代“Wikipedia（维基百科）”查询的百科 ...",
+      "url": "https://www.zhihu.com/question/479609668",
+      "snippet": "有哪些可以替代“Wikipedia（维基百科）”查询的百科工具？ 因为不能用了，所以有了这个问题！ 对百度百科总体体验不也太好用，不 …"
+    }
+  ]
+}

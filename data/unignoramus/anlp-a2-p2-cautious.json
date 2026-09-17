@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "unignoramus/anlp-a2-p2-cautious",
+  "slug": "unignoramus-anlp-a2-p2-cautious",
+  "author": "unignoramus",
+  "url": "https://huggingface.co/unignoramus/anlp-a2-p2-cautious",
+  "created_at": "2026-09-17T01:18:34.000Z",
+  "updated_at": "2026-09-17T09:16:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 282163850,
+  "storage_human": "282 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Auto Clicker - Automatic tap APK for Android - Download",
+      "url": "https://auto-clicker-automatic-tap.en.softonic.com/android",
+      "snippet": "Nov 11, 2025 · Developed by True Developers Studio, this program is a free auto-clicker that helps in generating insanely fast clicks …"
+    },
+    {
+      "title": "Auto Clicker - Automatic Tap APK for Android Download",
+      "url": "https://apkpure.com/auto-clicker-automatic-tap/wowo.free.autoclicker.automatictap.app",
+      "snippet": "Jul 24, 2026 · Auto Clicker - Automatic Tap 3.2.6 APK download for Android. Automate taps & swipes, start now, use macros, …"
+    },
+    {
+      "title": "Auto Clicker - Automatic tap - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.truedevelopersstudio.automatictap.autoclicker&hl=en-US",
+      "snippet": "Auto Clicker helps you do repeated taps at any location with any interval you specify. Auto Clicker does NOT require root access. …"
+    },
+    {
+      "title": "Download Auto Clicker - Automatic tap APKs for Android - APKMirror",
+      "url": "https://www.apkmirror.com/apk/true-developers-studio/auto-clicker-automatic-tap/",
+      "snippet": "Auto Clicker helps you do repeated taps at any location with any interval you specify. Auto Clicker does NOT require root access. …"
+    },
+    {
+      "title": "Auto Clicker - Automatic tap - APK Download for Android",
+      "url": "https://auto-clicker-true-developers-studio.en.aptoide.com/app",
+      "snippet": "Auto Clicker is an application designed for the Android platform that automates tapping on your screen. This tool allows users to …"
+    }
+  ]
+}

@@ -23,7 +23,8 @@
     "SFW",
     "NSFW",
     "license:creativeml-openrail-m",
-    "region:us"
+    "region:us",
+    "not-for-all-audiences"
   ],
   "likes": 1,
   "downloads_30d": 0,

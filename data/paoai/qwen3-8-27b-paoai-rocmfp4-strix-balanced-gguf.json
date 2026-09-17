@@ -5,7 +5,7 @@
   "author": "PaoAI",
   "url": "https://huggingface.co/PaoAI/Qwen3.8-27B-PaoAI-ROCmFP4-STRIX-BALANCED-GGUF",
   "created_at": "2026-09-15T09:59:09.000Z",
-  "updated_at": "2026-09-15T10:48:01.000Z",
+  "updated_at": "2026-09-20T12:11:26.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -36,7 +36,7 @@
   "trending_score": 0,
   "parameters": 27320697856,
   "parameters_human": "27.32B",
-  "storage_bytes": 15014103937,
+  "storage_bytes": 15014314983,
   "storage_human": "15.0 GB",
   "base_model": "Qwen/Qwen3.8-27B",
   "formats": [

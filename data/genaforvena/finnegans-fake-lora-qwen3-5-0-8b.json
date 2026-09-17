@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "genaforvena/finnegans-fake-lora-qwen3.5-0.8b",
+  "slug": "genaforvena-finnegans-fake-lora-qwen3-5-0-8b",
+  "author": "genaforvena",
+  "url": "https://huggingface.co/genaforvena/finnegans-fake-lora-qwen3.5-0.8b",
+  "created_at": "2026-09-16T22:47:29.000Z",
+  "updated_at": "2026-09-16T22:47:49.000Z",
+  "license": "cc0-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "finnegans-wake",
+    "tiny-language-model",
+    "text-generation",
+    "lora",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-0.8B-Base",
+    "base_model:adapter:Qwen/Qwen3.5-0.8B-Base",
+    "license:cc0-1.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 71132669,
+  "storage_human": "71 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Minha Conexão: Teste a Velocidade Real da sua Internet",
+      "url": "https://www.minhaconexao.com.br/",
+      "snippet": "O Teste de internet - Internet Speed Test Minha Conexão - é um teste de velocidade desenvolvido para que você possa medir o …"
+    },
+    {
+      "title": "Speed Test by MyBroadband",
+      "url": "https://speedtest.mybroadband.co.za/",
+      "snippet": "Test your Internet connection quickly and accurately. Lightweight, easy-to-use, reliable and completely free."
+    },
+    {
+      "title": "Tests de personnalité gratuits : A vous de jouer - Quizz.biz",
+      "url": "https://www.quizz.biz/annuaire/cat-quizz-255_0.html",
+      "snippet": "Réponds à chaque question des tests de personnalité proposés, consulte les résultats, et découvre des traits inattendus de ta …"
+    },
+    {
+      "title": "Speedtest Copel - Teste de Velocidade da Internet",
+      "url": "https://www.minhaconexao.com.br/copel",
+      "snippet": "O Teste de internet - Internet Speed Test Minha Conexão - é um teste de velocidade desenvolvido para que você possa medir o …"
+    },
+    {
+      "title": "Almost no-one has passed South Africa’s new learner’s licence test",
+      "url": "https://mybroadband.co.za/news/motoring/659244-almost-no-one-has-passed-south-africas-new-learners-licence-test.html",
+      "snippet": "Jul 23, 2026 · Members of the Western Cape Parliament were concerned about the low pass rate for the new computerised learner’s …"
+    }
+  ]
+}

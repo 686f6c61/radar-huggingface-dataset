@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "yusufpurnomo/classification-aug",
+  "slug": "yusufpurnomo-classification-aug",
+  "author": "yusufpurnomo",
+  "url": "https://huggingface.co/yusufpurnomo/classification-aug",
+  "created_at": "2026-09-17T00:32:41.000Z",
+  "updated_at": "2026-09-17T00:32:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "poolformer",
+    "pytorch",
+    "classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Axi Reviews | Read Customer Service Reviews of axi.com",
+      "url": "https://www.trustpilot.com/review/axi.com",
+      "snippet": "Do you agree with Axi's 4-star rating? Check out what 7,723 people have written so far, and share your own experience."
+    },
+    {
+      "title": "Axi Review 2026 – Pros & Cons - BrokerChooser",
+      "url": "https://brokerchooser.com/broker-reviews/axitrader-review",
+      "snippet": "Axi review written by experts. Updated for 2026. See all pros and cons of fees, trading platform and investor protection."
+    },
+    {
+      "title": "Axi Review: Ervaringen, Vergelijken & Beoordeling",
+      "url": "https://www.bestbrokers.com/nl/reviews/axi/",
+      "snippet": "Jun 23, 2026 · Dit is onze professionele beoordeling van Axi Broker. Hier leest u alles over de kosten, spreads en commissies voor …"
+    },
+    {
+      "title": "Axi Review 2026 – Voor- & Nadelen - BrokerChooser",
+      "url": "https://brokerchooser.com/nl/broker-reviews/axitrader-review",
+      "snippet": "Axi review geschreven door experts. Bijgewerkt voor 2026. Bekijk alle voor- en nadelen van kosten, handelsplatform en …"
+    },
+    {
+      "title": "Axi review &amp; ervaringen 2023 - IS Axi BETROUWBAAR?!",
+      "url": "https://www.compareallbrokers.com/reviews/axi/",
+      "snippet": "In deze review komt CFD broker Axi aan bod. In de Axi review lees je alles wat je moet weten voordat je begint te traden bij Axi, …"
+    }
+  ]
+}

@@ -8,7 +8,7 @@
   "updated_at": "2026-08-18T00:41:19.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
-  "pipeline_tag": "text-to-image",
+  "pipeline_tag": "image-to-image",
   "library": "diffusers",
   "languages": [],
   "tags": [

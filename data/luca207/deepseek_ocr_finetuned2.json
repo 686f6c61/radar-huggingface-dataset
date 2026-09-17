@@ -5,7 +5,7 @@
   "author": "Luca207",
   "url": "https://huggingface.co/Luca207/deepseek_ocr_finetuned2",
   "created_at": "2026-09-05T11:32:26.000Z",
-  "updated_at": "2026-09-05T11:34:13.000Z",
+  "updated_at": "2026-09-21T16:23:56.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "feature-extraction",
@@ -33,8 +33,8 @@
   "trending_score": 0,
   "parameters": 3336106240,
   "parameters_human": "3.34B",
-  "storage_bytes": 6672547120,
-  "storage_human": "6.7 GB",
+  "storage_bytes": 8848677552,
+  "storage_human": "8.8 GB",
   "base_model": "deepseek-ai/DeepSeek-OCR",
   "formats": [
     "safetensors"

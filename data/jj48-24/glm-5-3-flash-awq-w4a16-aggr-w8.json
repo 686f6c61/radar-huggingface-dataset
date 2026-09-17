@@ -5,10 +5,10 @@
   "author": "JJ48-24",
   "url": "https://huggingface.co/JJ48-24/GLM-5.3-Flash-AWQ-W4A16-aggr-w8",
   "created_at": "2026-09-08T17:27:04.000Z",
-  "updated_at": "2026-09-08T17:34:04.000Z",
+  "updated_at": "2026-09-16T05:39:09.000Z",
   "license": "mit",
   "license_family": "oss",
-  "pipeline_tag": null,
+  "pipeline_tag": "text-generation",
   "library": null,
   "languages": [],
   "tags": [
@@ -17,6 +17,9 @@
     "compressed-tensors",
     "sm80",
     "cmp-170hx",
+    "vllm",
+    "text-generation",
+    "conversational",
     "base_model:wtdcode/GLM-5.3-Flash-AWQ-W4A16",
     "base_model:quantized:wtdcode/GLM-5.3-Flash-AWQ-W4A16",
     "license:mit",
@@ -33,7 +36,7 @@
   "formats": [
     "safetensors"
   ],
-  "is_conversational": false,
+  "is_conversational": true,
   "gated": false,
   "removed": false,
   "removed_at": null,

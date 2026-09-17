@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Salaam21/csc6302-prac4-SINYANI",
+  "slug": "salaam21-csc6302-prac4-sinyani",
+  "author": "Salaam21",
+  "url": "https://huggingface.co/Salaam21/csc6302-prac4-SINYANI",
+  "created_at": "2026-09-16T23:12:24.000Z",
+  "updated_at": "2026-09-17T00:46:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "image-classification",
+    "csc6302",
+    "mobilenetv3",
+    "birds",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12415750,
+  "storage_human": "12 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Stephen. Darrigo - Fast Food Cook at Wendy's (Pertoria, Inc.) | LinkedIn",
+      "url": "https://www.linkedin.com/in/stephen-darrigo-3ab343186",
+      "snippet": "View Stephen. Darrigo’s profile on LinkedIn, a professional community of 1 billion members."
+    },
+    {
+      "title": "9 \"Stephen. Darrigo\" profiles | LinkedIn",
+      "url": "https://www.linkedin.com/pub/dir/Stephen%2E/Darrigo",
+      "snippet": "Darrigo&quot; on LinkedIn. There are 9 professionals named &quot;Stephen. Darrigo&quot;, who use LinkedIn to exchange …"
+    },
+    {
+      "title": "9 \"Stephen Darrigo\" profiles | LinkedIn",
+      "url": "https://www.linkedin.com/pub/dir/stephen/darrigo",
+      "snippet": "View the profiles of professionals named &quot;Stephen Darrigo&quot; on LinkedIn."
+    },
+    {
+      "title": "7 \"Stephen Darrigo\" profiles | LinkedIn",
+      "url": "https://www.linkedin.com/pub/dir/Stephen/Darrigo/us-0-United-States",
+      "snippet": "View the profiles of professionals named &quot;Stephen Darrigo&quot; on LinkedIn."
+    },
+    {
+      "title": "7 \"Stephen. Darrigo\" profiles | LinkedIn",
+      "url": "https://www.linkedin.com/pub/dir/Stephen./Darrigo/us-0-United-States",
+      "snippet": "Darrigo&quot; on LinkedIn. There are 7 professionals named &quot;Stephen. Darrigo&quot;, who use LinkedIn to exchange …"
+    }
+  ]
+}

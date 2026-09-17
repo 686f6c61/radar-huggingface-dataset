@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "PrunaAI/livekit-turn-detector-HQQ-4bit-smashed",
+  "slug": "prunaai-livekit-turn-detector-hqq-4bit-smashed",
+  "author": "PrunaAI",
+  "url": "https://huggingface.co/PrunaAI/livekit-turn-detector-HQQ-4bit-smashed",
+  "created_at": "2026-09-17T00:08:15.000Z",
+  "updated_at": "2026-09-17T00:08:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pruna-ai",
+  "languages": [],
+  "tags": [
+    "pruna-ai",
+    "llama",
+    "base_model:livekit/turn-detector",
+    "base_model:finetune:livekit/turn-detector",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 117129267,
+  "storage_human": "117 MB",
+  "base_model": "livekit/turn-detector",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Harga iPhone 12 Mini Terbaru 2026, iPhone Compact yang Masih …",
+      "url": "https://www.medcom.id/teknologi/news-teknologi/Rkj1eQVb-harga-iphone-12-mini-terbaru-2026-iphone-compact-yang-masih-dicari",
+      "snippet": "May 27, 2026 · iPhone 12 mini masih dicari di 2026 karena desain compact dan performa A14 Bionic. Harga iPhone 12 mini bekas …"
+    },
+    {
+      "title": "Apple iPhone 12 mini - Harga & Spesifikasi HP Terbaru September 2026",
+      "url": "https://arenagadget.id/harga-hp/apple-iphone-12-mini",
+      "snippet": "Harga HP Apple iPhone 12 mini terbaru dan spesifikasinya, terlengkap dan terupdate di Indonesia. Review dan perbandingan …"
+    },
+    {
+      "title": "Harga iPhone 12 Mini Terbaru & Resmi September 2026 - Tokopedia",
+      "url": "https://www.tokopedia.com/find/iphone-12-mini",
+      "snippet": "Berapa Harga iPhone 12 Mini? Saat pertama kali rilis, iPhone 12 Mini dibanderol harga mulai dari Rp12.999.000 (64GB); …"
+    },
+    {
+      "title": "Daftar Harga Apple iPhone 12 Mini Terbaru September 2026",
+      "url": "https://www.blibli.com/jual/apple-iphone-12-mini",
+      "snippet": "Temukan Apple iPhone 12 Mini untuk komunikasi, produktivitas, kamera, dan hiburan. Bandingkan sistem operasi, chipset atau …"
+    },
+    {
+      "title": "Jual Apple Iphone 12 Mini 128 Gb Murah & Terbaik - Harga Terbaru ...",
+      "url": "https://www.tokopedia.com/find/apple-iphone-12-mini-128-gb",
+      "snippet": "1 day ago · Kamu bisa cek Daftar Harga Terbaru Apple Iphone 12 Mini 128 Gb September 2026 yang bisa diurutkan dari harga yang …"
+    }
+  ]
+}

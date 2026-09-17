@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "selsar/cv_social_roles_behavior_v3",
+  "slug": "selsar-cv_social_roles_behavior_v3",
+  "author": "selsar",
+  "url": "https://huggingface.co/selsar/cv_social_roles_behavior_v3",
+  "created_at": "2026-09-16T23:19:05.000Z",
+  "updated_at": "2026-09-16T23:19:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deberta-v2",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278810882,
+  "parameters_human": "278.8M",
+  "storage_bytes": 1131282825,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WP Turystyka - Podróże i wakacje. Aktualności i porady turystyczne.",
+      "url": "https://turystyka.wp.pl/",
+      "snippet": "Najczęstsze błędy turystów. \"Potrafią odebrać smak nawet najpiękniejszym miejscom\""
+    },
+    {
+      "title": "Najnowsze informacje - WP Turystyka",
+      "url": "https://turystyka.wp.pl/najnowsze",
+      "snippet": "2 days ago · Turyści nie mają wyjścia i płacą... nawet po 1000 euro."
+    },
+    {
+      "title": "Najnowsze informacje - WP Turystyka",
+      "url": "https://turystyka.wp.pl/turystyka-temat-5984467933143681",
+      "snippet": "2 days ago · Z końcem wakacji w kraju regularnie pojawiają się strajki, które są uciążliwe dla tłumów, wypoczywających tam turystów. …"
+    },
+    {
+      "title": "Turystyka - WP Info",
+      "url": "https://informacje.wp.pl/turystyka-kategoria-7119465647919072",
+      "snippet": "Sep 10, 2026 · Jesienne nowości w ofercie Młynów Rothera w Bydgoszczy. Startują trzy nowe cykle. Tłumy podróżnych na …"
+    },
+    {
+      "title": "W Podróży - Najnowsze informacje - WP Turystyka",
+      "url": "https://turystyka.wp.pl/w-podrozy-6750773603180032k",
+      "snippet": "1 day ago · Nowe połączenie z Polski startuje w tym tygodniu."
+    }
+  ]
+}

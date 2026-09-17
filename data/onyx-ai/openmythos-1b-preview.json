@@ -5,7 +5,7 @@
   "author": "onyx-ai",
   "url": "https://huggingface.co/onyx-ai/OpenMythos-1B-Preview",
   "created_at": "2026-09-15T21:29:06.000Z",
-  "updated_at": "2026-09-15T21:47:17.000Z",
+  "updated_at": "2026-09-19T12:42:41.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -17,7 +17,7 @@
     "region:us"
   ],
   "likes": 0,
-  "downloads_30d": 0,
+  "downloads_30d": 3,
   "trending_score": 0,
   "parameters": 514154690,
   "parameters_human": "514.2M",
@@ -29,8 +29,8 @@
   ],
   "is_conversational": false,
   "gated": false,
-  "removed": true,
-  "removed_at": "2026-09-16T03:12:37.686Z",
+  "removed": false,
+  "removed_at": null,
   "benchmarks": [],
   "sources": [
     {

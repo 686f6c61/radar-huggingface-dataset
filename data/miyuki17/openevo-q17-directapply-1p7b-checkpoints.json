@@ -5,7 +5,7 @@
   "author": "miyuki17",
   "url": "https://huggingface.co/miyuki17/openevo-q17-directapply-1p7b-checkpoints",
   "created_at": "2026-09-16T01:35:48.000Z",
-  "updated_at": "2026-09-16T03:05:44.000Z",
+  "updated_at": "2026-09-17T13:40:06.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -30,8 +30,8 @@
   "trending_score": 0,
   "parameters": null,
   "parameters_human": null,
-  "storage_bytes": 9721755928,
-  "storage_human": "9.7 GB",
+  "storage_bytes": 327127819720,
+  "storage_human": "327.1 GB",
   "base_model": "Qwen/Qwen3-1.7B",
   "formats": [
     "safetensors"

@@ -5,7 +5,7 @@
   "author": "rinpatch",
   "url": "https://huggingface.co/rinpatch/dinov3-coreml",
   "created_at": "2026-09-16T12:52:06.000Z",
-  "updated_at": "2026-09-16T12:58:52.000Z",
+  "updated_at": "2026-09-16T13:34:43.000Z",
   "license": "dinov3",
   "license_family": "unknown",
   "pipeline_tag": "image-feature-extraction",

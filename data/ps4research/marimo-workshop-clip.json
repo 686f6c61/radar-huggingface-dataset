@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "PS4Research/marimo-workshop-clip",
+  "slug": "ps4research-marimo-workshop-clip",
+  "author": "PS4Research",
+  "url": "https://huggingface.co/PS4Research/marimo-workshop-clip",
+  "created_at": "2026-09-16T20:37:57.000Z",
+  "updated_at": "2026-09-16T20:38:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-image-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "clip",
+    "zero-shot-image-classification",
+    "marimo",
+    "workshop",
+    "base_model:openai/clip-vit-base-patch32",
+    "base_model:finetune:openai/clip-vit-base-patch32",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 151277312,
+  "parameters_human": "151.3M",
+  "storage_bytes": 605156676,
+  "storage_human": "605 MB",
+  "base_model": "openai/clip-vit-base-patch32",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "E-Mail Center Login",
+      "url": "https://email.t-online.de/em/?ctl=overview",
+      "snippet": "Hier sollte eine Beschreibung angezeigt werden, diese Seite lässt dies jedoch nicht zu."
+    },
+    {
+      "title": "The editor's AI assistant - marimo",
+      "url": "https://docs.marimo.io/guides/editor_features/ai_completion/",
+      "snippet": "After installing Windsurf and authenticating, open up the command palette, via cmd+shift+p, and ask it to copy the api key to your clipboard. 4a. Configure the UI settings in the editor to use Windsurf. 4b. Alternatively you can also configure the api key from the marimo config file. ... marimo also supports integrating with custom LLM providers for code completion suggestions. This allows you to use your own LLM service to provide in-line code suggestions based on internal providers or local models (e.g."
+    },
+    {
+      "title": "E-Mail Center Login",
+      "url": "https://email.t-online.de/ext/ical/W5b302.qR4UJ5cx3UfjymjXk9V9DjgY0/9eHr6QQIsaWumKFWGin7Wbi7E5Q7NoEPGGKalryZH0VZ2AEyxvP69nL_Qz79fmz6",
+      "snippet": "Securely access your email account through the E-Mail Center Login portal."
+    },
+    {
+      "title": "E-Mail Center Login",
+      "url": "https://email.t-online.de/robots.txt",
+      "snippet": "# Block site for all robots, except of shared calendars User-agent: * Disallow: /lisa/ab/ Disallow: /ab/ Disallow: /lisa/pr/ Disallow: /pr/ …"
+    },
+    {
+      "title": "marimo | a next-generation Python notebook",
+      "url": "https://marimo.io/",
+      "snippet": "Connect any AI agent to running marimo notebook sessions with marimo pair, and code in an AI-native editor with copilots, AI assistance, inline edits, and context-aware chat, using any model, hosted or local."
+    }
+  ]
+}

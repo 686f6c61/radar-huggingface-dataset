@@ -5,7 +5,7 @@
   "author": "Bakq225",
   "url": "https://huggingface.co/Bakq225/bakai-gemma-4-26b-a4b-gguf",
   "created_at": "2026-09-14T14:55:08.000Z",
-  "updated_at": "2026-09-15T22:38:17.000Z",
+  "updated_at": "2026-09-19T06:54:44.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -30,8 +30,8 @@
   "trending_score": 0,
   "parameters": 25233142046,
   "parameters_human": "25.23B",
-  "storage_bytes": 12480770112,
-  "storage_human": "12.5 GB",
+  "storage_bytes": 13994184672,
+  "storage_human": "14.0 GB",
   "base_model": "google/gemma-4-26B-A4B-it",
   "formats": [
     "gguf"

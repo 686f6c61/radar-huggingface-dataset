@@ -5,7 +5,7 @@
   "author": "prabhat-30",
   "url": "https://huggingface.co/prabhat-30/flan-t5-dialogsum-summarizer",
   "created_at": "2026-09-04T14:18:15.000Z",
-  "updated_at": "2026-09-04T14:18:21.000Z",
+  "updated_at": "2026-09-18T21:38:22.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -14,17 +14,20 @@
   "tags": [
     "transformers",
     "safetensors",
+    "t5",
+    "text2text-generation",
     "arxiv:1910.09700",
+    "text-generation-inference",
     "endpoints_compatible",
     "region:us"
   ],
   "likes": 0,
   "downloads_30d": 0,
   "trending_score": 0,
-  "parameters": null,
-  "parameters_human": null,
-  "storage_bytes": 3558888,
-  "storage_human": "4 MB",
+  "parameters": 247577856,
+  "parameters_human": "247.6M",
+  "storage_bytes": 993903952,
+  "storage_human": "994 MB",
   "base_model": null,
   "formats": [
     "safetensors"

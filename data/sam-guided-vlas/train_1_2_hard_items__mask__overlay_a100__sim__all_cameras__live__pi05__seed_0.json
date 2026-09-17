@@ -5,7 +5,7 @@
   "author": "sam-guided-vlas",
   "url": "https://huggingface.co/sam-guided-vlas/train_1_2_hard_items__mask__overlay_a100__sim__all_cameras__live__pi05__seed_0",
   "created_at": "2026-09-07T02:39:34.000Z",
-  "updated_at": "2026-09-07T08:39:38.000Z",
+  "updated_at": "2026-09-19T17:00:04.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "robotics",

@@ -30,7 +30,8 @@
     "base_model:quantized:nuofang/Qwen3.8-9B-Distill-SLERP-F451-Pro-Writer-Uncensored",
     "endpoints_compatible",
     "region:us",
-    "conversational"
+    "conversational",
+    "not-for-all-audiences"
   ],
   "likes": 0,
   "downloads_30d": 1806,

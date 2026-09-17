@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/jpn-100mb-after-wc-uniform-newlex-eng-ckpt500_seed3407_seed3407",
+  "slug": "fpadovani-jpn-100mb-after-wc-uniform-newlex-eng-ckpt500_seed3407_seed3407",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/jpn-100mb-after-wc-uniform-newlex-eng-ckpt500_seed3407_seed3407",
+  "created_at": "2026-09-17T00:37:45.000Z",
+  "updated_at": "2026-09-17T02:48:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:fpadovani/ppt-wc-uniform-newlex-eng-100mb_seed3407",
+    "base_model:finetune:fpadovani/ppt-wc-uniform-newlex-eng-100mb_seed3407",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 7238753583,
+  "storage_human": "7.2 GB",
+  "base_model": "fpadovani/ppt-wc-uniform-newlex-eng-100mb_seed3407",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bing",
+      "url": "https://www.bing.com/RelatedSearch",
+      "snippet": ""
+    },
+    {
+      "title": "Bing",
+      "url": "https://www.bing.com/version",
+      "snippet": "Bing ... Versions"
+    },
+    {
+      "title": "How to See All Bing Related Searches on Any Device",
+      "url": "https://rottenwifi.com/how-to-see-all-bing-related-searches/",
+      "snippet": "Jul 1, 2026 · This guide walks through the practical ways to see Bing related searches on desktop, mobile, and Microsoft Edge. It also …"
+    },
+    {
+      "title": "How to See All Bing Related Searches - cloudspress.com",
+      "url": "https://www.cloudspress.com/how-to-see-all-bing-related-searches/",
+      "snippet": "Aug 7, 2026 · Bing does not have a public “see everything” page for a keyword. Its related searches and autocomplete suggestions …"
+    },
+    {
+      "title": "Bing : tout savoir sur le moteur de recherche de Microsoft",
+      "url": "https://www.lebigdata.fr/bing-tout-savoir",
+      "snippet": "Aug 26, 2026 · Depuis 2025, Microsoft a donné un nouveau visage à son moteur de recherche en lançant Copilot Search, qui est une …"
+    }
+  ]
+}

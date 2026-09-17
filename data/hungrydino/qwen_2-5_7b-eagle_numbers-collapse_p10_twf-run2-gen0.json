@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "HungryDino/qwen_2.5_7b-eagle_numbers-collapse_p10_twf-run2-gen0",
+  "slug": "hungrydino-qwen_2-5_7b-eagle_numbers-collapse_p10_twf-run2-gen0",
+  "author": "HungryDino",
+  "url": "https://huggingface.co/HungryDino/qwen_2.5_7b-eagle_numbers-collapse_p10_twf-run2-gen0",
+  "created_at": "2026-09-16T20:06:58.000Z",
+  "updated_at": "2026-09-16T20:07:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "trl",
+    "en",
+    "base_model:unsloth/Qwen2.5-7B-Instruct",
+    "base_model:finetune:unsloth/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 92214090,
+  "storage_human": "92 MB",
+  "base_model": "unsloth/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vélo elliptique : console ne fonctionne pas [Résolu] - Loisirs ...",
+      "url": "https://forums.commentcamarche.net/forum/affich-33684411-velo-elliptique-console-ne-fonctionne-pas",
+      "snippet": "Jul 3, 2016 · Un ami m'a donné un vélo élliptique Pro-Form 585 EKG. Lorsque j'allume la console en appuyant sur le bouton …"
+    },
+    {
+      "title": "Onimusha Way of the Sword : j'y ai joué et je suis déjà convaincu qu'il ...",
+      "url": "https://www.jeuxvideo.com/news/2097707/onimusha-way-of-the-sword-j-y-ai-joue-et-je-suis-deja-convaincu-qu-il-sera-a-la-hauteur-de-mes-attentes.htm",
+      "snippet": "Aug 6, 2026 · News jeu Onimusha Way of the Sword : j'y ai joué et je suis déjà convaincu qu'il sera à la hauteur de mes attentes !"
+    },
+    {
+      "title": "Problème de taille sur youtube - Forum Jeux vidéo",
+      "url": "https://forums.commentcamarche.net/forum/affich-20268916-probleme-de-taille-sur-youtube",
+      "snippet": "Bonjour, je voulais savoir comment faire pour agrandir la taille de ma page Youtube. Avant, j'appuyais sur Ctrl et la souris en même …"
+    },
+    {
+      "title": "Pokémon Pokopia Barpau et Milobellus : comment les capturer pour ...",
+      "url": "https://www.jeuxvideo.com/news/2098836/pokemon-pokopia-barpau-et-milobellus-comment-les-capturer-pour-completer-l-evenement-limite.htm",
+      "snippet": "Aug 14, 2026 · L'événement limité de Barpau et Milobellus dans le jeu Pokémon Pokopia est enfin disponible pour le plus grand …"
+    },
+    {
+      "title": "TELECHARGEMENT DE AUTOCAD 2018 OU 2017",
+      "url": "https://forums.commentcamarche.net/forum/affich-34727343-telechargement-de-autocad-2018-ou-2017",
+      "snippet": "Jul 16, 2017 · Bonjour, JE VOUDRAI TÉLÉCHARGER AUTOCAD 2018 EN VERSION D'ESSAI. COMMENT FAIRE?"
+    }
+  ]
+}

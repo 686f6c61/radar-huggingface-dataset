@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Eric1332131/OpenPangu",
+  "slug": "eric1332131-openpangu",
+  "author": "Eric1332131",
+  "url": "https://huggingface.co/Eric1332131/OpenPangu",
+  "created_at": "2026-09-17T01:11:30.000Z",
+  "updated_at": "2026-09-17T01:11:30.000Z",
+  "license": "bigcode-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:bigcode-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Calculator | Online Calculator",
+      "url": "https://w3calc.com/en/",
+      "snippet": "Calculator Your all-in-one online calculator for quick and precise basic to scientific calculations. Easily perform addition, subtraction, …"
+    },
+    {
+      "title": "Desmos | Graphing Calculator",
+      "url": "https://www.desmos.com/calculator",
+      "snippet": "Explore math with our beautiful, free online graphing calculator. Graph functions, plot points, visualize algebraic equations, add …"
+    },
+    {
+      "title": "Algebra Calculator - Symbolab",
+      "url": "https://www.symbolab.com/solver/algebra-calculator",
+      "snippet": "Algebra Calculator: Step-by-Step help to solve Algebra problems Have you ever tried to assemble a jigsaw puzzle with missing …"
+    },
+    {
+      "title": "台灣 3+2碼 3+3碼郵遞區號 查詢",
+      "url": "https://zip5.5432.tw/",
+      "snippet": "使用 API 的朋友, 請在每次查詢間都留一段緩衝時間, 且勿連續長時間的查詢, 感謝 手機 App: Android版 Google助理: 說明請按此 （網 …"
+    },
+    {
+      "title": "小红书蒲公英",
+      "url": "https://pgy.xiaohongshu.com/microapp/selection/buyer_home",
+      "snippet": "小红书蒲公英平台提供博主合作、内容投放等服务，助力品牌实现种草效益最大化。"
+    }
+  ]
+}

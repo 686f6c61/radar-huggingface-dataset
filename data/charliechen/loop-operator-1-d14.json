@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "CharlieChen/loop-operator-1-d14",
+  "slug": "charliechen-loop-operator-1-d14",
+  "author": "CharlieChen",
+  "url": "https://huggingface.co/CharlieChen/loop-operator-1-d14",
+  "created_at": "2026-09-16T21:51:52.000Z",
+  "updated_at": "2026-09-16T21:52:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "looped-transformer",
+    "scaling-laws",
+    "pytorch",
+    "base-model",
+    "text-generation",
+    "en",
+    "dataset:HuggingFaceFW/fineweb",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2904844963,
+  "storage_human": "2.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Adattamenti di ninfee",
+      "url": "https://it.scienceaq.com/Nature/100218127.html",
+      "snippet": "Le ninfee vivono nell'acqua perché hanno evoluto adattamenti, caratteristiche o tratti speciali, per consentire loro di sopravvivere in …"
+    },
+    {
+      "title": "Adattamenti al ninfea - scienceaq.com",
+      "url": "https://it.scienceaq.com/Nature/100212051.html",
+      "snippet": "Le ninfee vivono nell'acqua perché hanno sviluppato adattamenti, caratteristiche speciali o tratti distintivi, per consentire loro di …"
+    },
+    {
+      "title": "Adattamenti di ninfee - Scienza 2026",
+      "url": "https://ita.lamscience.com/water-lily-adaptations",
+      "snippet": "Le ninfee vivono nell'acqua perché hanno evoluto adattamenti, caratteristiche o tratti speciali, per consentire loro di sopravvivere in …"
+    },
+    {
+      "title": "Adattamenti al ninfea Portale Scientifico E Popolare Multimediale. 2025",
+      "url": "https://it.science19.com/water-lily-adaptations-3287",
+      "snippet": "Le ninfee vivono nell'acqua perché hanno sviluppato adattamenti, caratteristiche speciali o tratti distintivi, per consentire loro di …"
+    },
+    {
+      "title": "Quali sono alcuni adattamenti della ninfea? - it.411answers.com",
+      "url": "https://it.411answers.com/a/quali-sono-alcuni-adattamenti-della-ninfea.html",
+      "snippet": "Gli adattamenti della ninfea comprendono le foglie larghe e piatte, le spine sul fondo delle foglie, i bordi intorno alle foglie e la breve …"
+    }
+  ]
+}

@@ -5,7 +5,7 @@
   "author": "mradermacher",
   "url": "https://huggingface.co/mradermacher/comma-qwen-3.5-9b-full-GGUF",
   "created_at": "2026-09-16T14:13:52.000Z",
-  "updated_at": "2026-09-16T14:39:52.000Z",
+  "updated_at": "2026-09-16T14:49:18.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -39,8 +39,8 @@
   "trending_score": 0,
   "parameters": 8953803264,
   "parameters_human": "8.95B",
-  "storage_bytes": 77739590368,
-  "storage_human": "77.7 GB",
+  "storage_bytes": 82967488896,
+  "storage_human": "83.0 GB",
   "base_model": "wjbmattingly/comma-qwen-3.5-9b-full",
   "formats": [
     "gguf"

@@ -5,7 +5,7 @@
   "author": "selsar",
   "url": "https://huggingface.co/selsar/cv_labor_market_position_v3",
   "created_at": "2026-09-16T17:29:16.000Z",
-  "updated_at": "2026-09-16T17:29:35.000Z",
+  "updated_at": "2026-09-21T17:40:08.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": "text-classification",
@@ -26,8 +26,8 @@
   "trending_score": 0,
   "parameters": 278810882,
   "parameters_human": "278.8M",
-  "storage_bytes": 1131282825,
-  "storage_human": "1.1 GB",
+  "storage_bytes": 2246551025,
+  "storage_human": "2.2 GB",
   "base_model": null,
   "formats": [
     "safetensors"

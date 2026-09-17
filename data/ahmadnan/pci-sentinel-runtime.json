@@ -5,7 +5,7 @@
   "author": "ahmadnan",
   "url": "https://huggingface.co/ahmadnan/pci-sentinel-runtime",
   "created_at": "2026-09-15T10:10:05.000Z",
-  "updated_at": "2026-09-15T13:36:35.000Z",
+  "updated_at": "2026-09-21T08:19:57.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -23,8 +23,8 @@
   "trending_score": 0,
   "parameters": 630167424,
   "parameters_human": "630.2M",
-  "storage_bytes": 516212817,
-  "storage_human": "516 MB",
+  "storage_bytes": 2643843656,
+  "storage_human": "2.6 GB",
   "base_model": null,
   "formats": [
     "gguf"

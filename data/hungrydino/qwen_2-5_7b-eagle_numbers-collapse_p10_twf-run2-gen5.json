@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "HungryDino/qwen_2.5_7b-eagle_numbers-collapse_p10_twf-run2-gen5",
+  "slug": "hungrydino-qwen_2-5_7b-eagle_numbers-collapse_p10_twf-run2-gen5",
+  "author": "HungryDino",
+  "url": "https://huggingface.co/HungryDino/qwen_2.5_7b-eagle_numbers-collapse_p10_twf-run2-gen5",
+  "created_at": "2026-09-16T22:24:33.000Z",
+  "updated_at": "2026-09-16T22:24:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "trl",
+    "en",
+    "base_model:unsloth/Qwen2.5-7B-Instruct",
+    "base_model:finetune:unsloth/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 92214090,
+  "storage_human": "92 MB",
+  "base_model": "unsloth/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "11 Best Pots and Pans Storage Ideas 2024: Organizers We Love - Kitchn",
+      "url": "https://www.thekitchn.com/pots-and-pans-storage-265046",
+      "snippet": "Feb 22, 2024 · We gathered 11 of the most ingenious products for organizing your pots and pans. Check them out today!"
+    },
+    {
+      "title": "25 Ways to Organize Your Pots & Pans - Lady Decluttered",
+      "url": "https://ladydecluttered.com/25-ways-to-organize-your-pots-pans/",
+      "snippet": "Jan 31, 2021 · After these amazing 25 ideas I’m sure you’re ready to organize your pots & pans for good. Whether you have a small …"
+    },
+    {
+      "title": "Organizing Pots and Pans Like a Pro - Wayfair",
+      "url": "https://www.wayfair.com/sca/ideas-and-advice/guides/organizing-pots-and-pans-like-a-pro-T12939?msockid=39a8392e7d306197337d2ef87cf56017",
+      "snippet": "Jan 5, 2023 · Guides / Style Guides Organizing Pots and Pans Like a Pro Get rid of clutter with these easy tricks. If you’re like most …"
+    },
+    {
+      "title": "30 Pots and Pans Storage Ideas For Kitchen Organization",
+      "url": "https://plusmood.com/pots-and-pans-storage-ideas/",
+      "snippet": "Find 30 pots and pans storage ideas to organize your kitchen and keep cookware within easy reach for stress free cooking."
+    },
+    {
+      "title": "23 Best Ways How to Organize Pots and Pans - Home Beautifully",
+      "url": "https://www.homebeautifully.com/how-to-organize-pots-and-pans/",
+      "snippet": "Learn how to organize pots and pans with limited cabinet space. Make lids, cookware, and dishes accessible in your kitchen cabinets!"
+    }
+  ]
+}

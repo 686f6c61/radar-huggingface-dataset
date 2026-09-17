@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Tohirju/sl-caribou",
+  "slug": "tohirju-sl-caribou",
+  "author": "Tohirju",
+  "url": "https://huggingface.co/Tohirju/sl-caribou",
+  "created_at": "2026-09-17T02:27:45.000Z",
+  "updated_at": "2026-09-17T02:28:15.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "whisper",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 241734912,
+  "parameters_human": "241.7M",
+  "storage_bytes": 967001177,
+  "storage_human": "967 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Master's in Financial Engineering - Stevens Institute of Technology",
+      "url": "https://www.stevens.edu/program/financial-engineering-masters-program",
+      "snippet": "Because of the highly technical nature of a financial engineer's work, students are required to have an academic or professional …"
+    },
+    {
+      "title": "Master's in Financial Engineering | Stevens Institute of Technology",
+      "url": "https://stage2.stevens.edu/program/financial-engineering-masters-program",
+      "snippet": "Because of the highly technical nature of a financial engineer's work, students are required to have an academic or professional …"
+    },
+    {
+      "title": "Online Master's in Financial Engineering - Stevens Institute of Technology",
+      "url": "https://www.stevens.edu/program/financial-engineering-masters-ses-grad-online",
+      "snippet": "The Master of Science in Financial Engineering is a 30-credit degree program that addresses the needs of students looking to …"
+    },
+    {
+      "title": "Stevens Institute of Technology - Master of Science in Financial ...",
+      "url": "https://web.stevens.edu/catalog/archive/2024-2025/en/catalog/academic-catalog/school-of-business/graduate-programs/master-of-science-in-financial-engineering-mfe.html",
+      "snippet": "The master’s degree requires 10 courses (30 credits): six core required courses and four elective courses. Elective Courses. …"
+    },
+    {
+      "title": "Stevens Institute of Technology MS Financial Engineering Fees ...",
+      "url": "https://collegedunia.com/usa/university/1419-stevens-institute-of-technology-hoboken/master-of-science-ms-financial-engineering-27921",
+      "snippet": "Jul 22, 2026 · For admission to M.S Financial Engineering at Stevens Tech, international students need GPA 3, IELTS 6, TOEFL 74, …"
+    }
+  ]
+}

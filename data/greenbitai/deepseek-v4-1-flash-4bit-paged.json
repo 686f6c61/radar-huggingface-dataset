@@ -5,7 +5,7 @@
   "author": "GreenBitAI",
   "url": "https://huggingface.co/GreenBitAI/DeepSeek-V4.1-Flash-4bit-paged",
   "created_at": "2026-09-13T19:59:47.000Z",
-  "updated_at": "2026-09-13T23:04:18.000Z",
+  "updated_at": "2026-09-17T21:04:48.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

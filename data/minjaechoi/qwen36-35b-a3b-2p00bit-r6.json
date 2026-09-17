@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "minjaechoi/qwen36-35b-a3b-2p00bit-r6",
+  "slug": "minjaechoi-qwen36-35b-a3b-2p00bit-r6",
+  "author": "minjaechoi",
+  "url": "https://huggingface.co/minjaechoi/qwen36-35b-a3b-2p00bit-r6",
+  "created_at": "2026-09-17T00:57:54.000Z",
+  "updated_at": "2026-09-17T01:36:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "quantized",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.6-35B-A3B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70234483957,
+  "storage_human": "70.2 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft campus - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Microsoft_Campus",
+      "snippet": "The Microsoft campus is the corporate headquarters of Microsoft Corporation, located in Redmond, Washington, United States, a part …"
+    },
+    {
+      "title": "Microsoft Office Locations | About Microsoft",
+      "url": "https://www.microsoft.com/en-us/about/office-locations?msockid=167738f231c569cc29b12f253035680b",
+      "snippet": "Learn about Microsoft headquarters in Redmond, WA and our offices, locations, and experience centers across the United States."
+    },
+    {
+      "title": "Driving directions to Microsoft Headquarters, One Microsoft Way",
+      "url": "https://www.waze.com/live-map/directions/us/wa/redmond/microsoft-headquarters?to=place.ChIJGxUEuHFtkFQRnokD7mkppQE",
+      "snippet": "Realtime driving directions to Microsoft Headquarters, One Microsoft Way, Redmond, based on live traffic updates and road …"
+    },
+    {
+      "title": "Microsoft Corporate Headquarters - 1 Microsoft Way, Redmond, WA …",
+      "url": "https://businessyab.com/explore/united_states/washington/king_county/redmond/overlake/microsoft_way/1/microsoft-corporate-headquarters-425-882-8080.html",
+      "snippet": "1 day ago · Microsoft Corporate Headquarters at 1 Microsoft Way, Redmond, WA 98052, USA - hours, address, map, directions, …"
+    },
+    {
+      "title": "Driving directions to 1 Microsoft Way, 1 Microsoft Way, Redmond",
+      "url": "https://www.waze.com/live-map/directions/us/wa/redmond/1-microsoft-way?to=place.ChIJCxXe93NtkFQRoOkFk9GZJJI",
+      "snippet": "Realtime driving directions to 1 Microsoft Way, 1 Microsoft Way, Redmond, based on live traffic updates and road conditions – from …"
+    }
+  ]
+}

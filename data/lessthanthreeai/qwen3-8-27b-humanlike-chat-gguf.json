@@ -5,7 +5,7 @@
   "author": "LessThanThreeAI",
   "url": "https://huggingface.co/LessThanThreeAI/Qwen3.8-27B-Humanlike-Chat-GGUF",
   "created_at": "2026-08-26T08:05:17.000Z",
-  "updated_at": "2026-09-11T16:01:15.000Z",
+  "updated_at": "2026-09-16T18:46:59.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",
@@ -30,13 +30,13 @@
     "region:us",
     "imatrix"
   ],
-  "likes": 50,
-  "downloads_30d": 19099,
-  "trending_score": 44,
+  "likes": 47,
+  "downloads_30d": 17747,
+  "trending_score": 41,
   "parameters": 26895998464,
   "parameters_human": "26.90B",
-  "storage_bytes": 443190885184,
-  "storage_human": "443.2 GB",
+  "storage_bytes": 753963831424,
+  "storage_human": "754.0 GB",
   "base_model": "huihui-ai/Huihui-Qwen3.8-27B-abliterated",
   "formats": [
     "gguf"

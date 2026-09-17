@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "sidy14/arabic-ai-detector",
+  "slug": "sidy14-arabic-ai-detector",
+  "author": "sidy14",
+  "url": "https://huggingface.co/sidy14/arabic-ai-detector",
+  "created_at": "2026-09-16T20:10:39.000Z",
+  "updated_at": "2026-09-16T20:12:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "electra",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 135194882,
+  "parameters_human": "135.2M",
+  "storage_bytes": 540808873,
+  "storage_human": "541 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube Help",
+      "url": "https://support.google.com/youtube/?hl=en",
+      "snippet": "Official YouTube Help Center where you can find tips and tutorials on using YouTube and other answers to frequently asked questions."
+    },
+    {
+      "title": "سياسات تحقيق الربح من قنوات YouTube",
+      "url": "https://support.google.com/youtube/answer/1311392?hl=ar",
+      "snippet": "‫3 آذار (مارس) 2022: بسبب الحرب المندلعة حاليًا في أوكرانيا، سنتوقف مؤقتًا عن عرض الإعلانات على Google وYouTube للمستخدمين المقيمين في روسيا. وسنوقف أيضًا ولفترة مؤقّتة إمكانية …"
+    },
+    {
+      "title": "لنشاهد الفروقات ما بين ريميك Halo: Combat Evolved والنسخ السابقة",
+      "url": "https://www.true-gaming.net/home/618690/%D9%84%D9%86%D8%B4%D8%A7%D9%87%D8%AF-%D8%A7%D9%84%D9%81%D8%B1%D9%88%D9%82%D8%A7%D8%AA-%D9%85%D8%A7-%D8%A8%D9%8A%D9%86-%D8%B1%D9%8A%D9%85%D9%8A%D9%83-halo-combat-evolved-%D9%88%D8%A7%D9%84%D9%86%D8%B3/",
+      "snippet": "Oct 27, 2025 · تشاركنا قناة Cycu1 على منصة يوتيوب بعرض مطوّل يستعرض لنا الفروقات ما بين ريميك Halo: Combat Evolved والإصدار الأصلي ونسخة الريماستر من اللعبة …"
+    },
+    {
+      "title": "تروجيمنج - أخبار و مراجعات ألعاب الفيديو - الموقع العربي الرائد لأخبار ...",
+      "url": "https://www.true-gaming.net/home/",
+      "snippet": "الموقع العربي الرائد لأخبار ومراجعات ألعاب الفيديو. تابع أحدث التغطيات، التقارير، وتقييمات ألعاب بلايستيشن، إكسبوكس، ننتندو، والحاسب الشخصي."
+    },
+    {
+      "title": "استخدام حساب Google لتسجيل الدخول إلى YouTube",
+      "url": "https://support.google.com/youtube/answer/69961?hl=ar",
+      "snippet": "عندما تسجّل الدخول إلى YouTube باستخدام حساب Google ، ستتمكّن من الاستفادة من ميزات كثيرة في YouTube، منها: إبداء الإعجاب بالفيديوهات حفظ مقاطع الفيديو المفضلة الاشتراك في …"
+    }
+  ]
+}

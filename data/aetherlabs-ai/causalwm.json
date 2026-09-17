@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "AetherLabs-AI/CausalWM",
+  "slug": "aetherlabs-ai-causalwm",
+  "author": "AetherLabs-AI",
+  "url": "https://huggingface.co/AetherLabs-AI/CausalWM",
+  "created_at": "2026-09-16T22:47:18.000Z",
+  "updated_at": "2026-09-22T02:42:23.000Z",
+  "license": "ltx-2-community",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-video",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "image-to-video",
+    "en",
+    "arxiv:2609.23184",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 37982488008,
+  "storage_human": "38.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MovieStarPlanet | Amis, divertissement et mode",
+      "url": "https://moviestarplanet.fr/",
+      "snippet": "MoviestarPlanet is a social game for kids and teens to play dress-up, create Artbooks, star in movies, and enjoy a safe online …"
+    }
+  ]
+}

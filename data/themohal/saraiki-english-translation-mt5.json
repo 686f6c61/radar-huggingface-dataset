@@ -4,8 +4,8 @@
   "slug": "themohal-saraiki-english-translation-mt5",
   "author": "themohal",
   "url": "https://huggingface.co/themohal/saraiki-english-translation-mt5",
-  "created_at": "2026-08-12T18:25:58.000Z",
-  "updated_at": "2026-08-22T12:39:37.000Z",
+  "created_at": "2026-09-19T16:37:57.000Z",
+  "updated_at": "2026-09-19T16:40:04.000Z",
   "license": "mit",
   "license_family": "oss",
   "pipeline_tag": null,
@@ -14,7 +14,6 @@
   "tags": [
     "safetensors",
     "mt5",
-    "license:mit",
     "region:us"
   ],
   "likes": 0,
@@ -22,8 +21,8 @@
   "trending_score": 0,
   "parameters": 556291456,
   "parameters_human": "556.3M",
-  "storage_bytes": 353828379119,
-  "storage_human": "353.8 GB",
+  "storage_bytes": 6691742652,
+  "storage_human": "6.7 GB",
   "base_model": null,
   "formats": [
     "safetensors"

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "CharlieChen/loop-untied-grow-d14",
+  "slug": "charliechen-loop-untied-grow-d14",
+  "author": "CharlieChen",
+  "url": "https://huggingface.co/CharlieChen/loop-untied-grow-d14",
+  "created_at": "2026-09-16T21:53:14.000Z",
+  "updated_at": "2026-09-16T21:53:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "looped-transformer",
+    "scaling-laws",
+    "pytorch",
+    "base-model",
+    "text-generation",
+    "en",
+    "dataset:HuggingFaceFW/fineweb",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5244508375,
+  "storage_human": "5.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "10 choses à faire incontournables à Banff (2026) - Tripadvisor",
+      "url": "https://www.tripadvisor.fr/Attractions-g154911-Activities-Banff_Banff_National_Park_Alberta.html",
+      "snippet": "Les meilleures activités à Banff, Parc national Banff : découvrez 242 817 avis de voyageurs et photos de 331 choses à faire à Banff, …"
+    },
+    {
+      "title": "Banff & Lake Louise Tourism | Official Destination Website",
+      "url": "https://www.banfflakelouise.com/",
+      "snippet": "Plan and book your visit to Banff and Lake Louise, AB with the official tourism website - the source for accommodation, activities, …"
+    },
+    {
+      "title": "Guide voyage de Banff 2027 | PDF gratuit à imprimer - Authentik Canada",
+      "url": "https://www.authentikcanada.com/fr-fr/guides-voyage/office-tourisme-banff",
+      "snippet": "Consultez ce guide touristique gratuit pour planifier votre voyage à Banff. Rédigé par les conseillers locaux d'Authentik Canada, le …"
+    },
+    {
+      "title": "Banff en 2026 : ce que la ville a changé, vu de l'intérieur",
+      "url": "https://advised-traveler.com/amerique-du-nord/guide-voyage-canada/visiter-premiere-fois-banff-faire-voir/",
+      "snippet": "Jul 14, 2026 · Banff par ceux qui y vivent : bonnes adresses, pièges à éviter, actualisé en juillet 2026. Le concentré local que les …"
+    },
+    {
+      "title": "10 choses à faire incontournables à Banff (2026) - Tripadvisor",
+      "url": "https://fr.tripadvisor.ca/Attractions-g154911-Activities-Banff_Banff_National_Park_Alberta.html",
+      "snippet": "Découvrez les sites et activités incontournables : Banff Gondola, Bow Falls, Excursions nature et observation de la faune sauvage, …"
+    }
+  ]
+}

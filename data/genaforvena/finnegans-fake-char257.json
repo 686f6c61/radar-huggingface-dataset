@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "genaforvena/finnegans-fake-char257",
+  "slug": "genaforvena-finnegans-fake-char257",
+  "author": "genaforvena",
+  "url": "https://huggingface.co/genaforvena/finnegans-fake-char257",
+  "created_at": "2026-09-16T22:46:04.000Z",
+  "updated_at": "2026-09-16T22:46:24.000Z",
+  "license": "cc0-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "finnegans-wake",
+    "tiny-language-model",
+    "license:cc0-1.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 10942848,
+  "parameters_human": "10.9M",
+  "storage_bytes": 43778928,
+  "storage_human": "44 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yahoo Mail | Email with smart features and top-notch security",
+      "url": "https://mail.yahoo.com/",
+      "snippet": "Yahoo Mail: Your smarter, faster, free email solution. Organize your inbox, protect your privacy, and tackle tasks efficiently with AI …"
+    },
+    {
+      "title": "Login - Sign in to Yahoo",
+      "url": "https://login.yahoo.com/",
+      "snippet": "Sign in to access the best in class Yahoo Mail, breaking local, national and global news, finance, sports, music, movies... You get …"
+    },
+    {
+      "title": "Zoho Mail Login - Sign in to your Zoho Mail account",
+      "url": "https://www.zoho.com/mail/login.html",
+      "snippet": "Log in to Zoho Mail to manage your email, contacts, and business communication. Fast, secure access. Don’t have an account? Sign …"
+    },
+    {
+      "title": "Sign in to your Zoho Account",
+      "url": "https://www.zoho.com/login.html",
+      "snippet": "Don't have a Zoho account? Sign Up Now. Run your entire business with Zoho’s suite of online productivity tools and SaaS …"
+    },
+    {
+      "title": "Yahoo",
+      "url": "https://www.yahoo.com/",
+      "snippet": "News, email and search are just the beginning. Discover more every day. Find your yodel."
+    }
+  ]
+}

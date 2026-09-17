@@ -5,7 +5,7 @@
   "author": "tuanpasg",
   "url": "https://huggingface.co/tuanpasg/wudi_gemma_fp32_iter_15",
   "created_at": "2026-09-06T12:42:19.000Z",
-  "updated_at": "2026-09-06T12:52:01.000Z",
+  "updated_at": "2026-09-16T17:26:28.000Z",
   "license": null,
   "license_family": "unknown",
   "pipeline_tag": null,
@@ -21,8 +21,8 @@
   "trending_score": 0,
   "parameters": 2614341888,
   "parameters_human": "2.61B",
-  "storage_bytes": 5263229035,
-  "storage_human": "5.3 GB",
+  "storage_bytes": 10491946547,
+  "storage_human": "10.5 GB",
   "base_model": null,
   "formats": [
     "safetensors"

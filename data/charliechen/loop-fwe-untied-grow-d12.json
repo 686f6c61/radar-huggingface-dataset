@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "CharlieChen/loop-fwe-untied-grow-d12",
+  "slug": "charliechen-loop-fwe-untied-grow-d12",
+  "author": "CharlieChen",
+  "url": "https://huggingface.co/CharlieChen/loop-fwe-untied-grow-d12",
+  "created_at": "2026-09-16T22:39:11.000Z",
+  "updated_at": "2026-09-16T22:39:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "looped-transformer",
+    "scaling-laws",
+    "pytorch",
+    "base-model",
+    "text-generation",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3336087179,
+  "storage_human": "3.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "كيفية معرفة عدد الأجهزة المتصلة بالراوتر بدون برامج (خطوات بسيطة",
+      "url": "https://www.techmadar.com/2025/10/Devices%20connected%20to%20the%20router.html",
+      "snippet": "May 17, 2026 · في هذا الدليل، سنشرح لك كيفية معرفة عدد الأجهزة المتصلة بالراوتر بدون برامج عبر خطوات بسيطة ومباشرة من خلال صفحة إعدادات الراوتر، لتتمكن من إدارة شبكتك كالمحترفين."
+    },
+    {
+      "title": "كيفية معرفة الأجهزة المتصلة بالراوتر ومراقبتها — بدون برامج وببرامج",
+      "url": "https://mobilemasr.com/blogs/how-to-see-who-is-connected-to-your-router",
+      "snippet": "تعرف على كيفية معرفة الأجهزة المتصلة بالراوتر وعددها وأسمائها وعناوين IP الخاصة بها، بدون برامج من صفحة إعدادات الراوتر، أو باستخدام أفضل البرامج المجانية للتحكم الكامل في شبكتك."
+    },
+    {
+      "title": "كيفية معرفة الأجهزة المتصلة بالراوتر - هاو عربي",
+      "url": "https://www.how-ar.com/how-to-know-devices-connected-to-router/",
+      "snippet": "Jul 29, 2025 · تعلم كيفية معرفة جميع الأجهزة المتصلة بالراوتر الخاص بك خطوة بخطوة وباستخدام طرق متعددة لضمان أمان شبكتك وإدارة النطاق الترددي بفعالية."
+    },
+    {
+      "title": "معرفة ⁦‪IP‬⁩ الأجهزة المتصلة بالشبكة ⁦‪CMD‬⁩ ومراجعة الأجهزة غير ...",
+      "url": "https://idraaak.com/%D9%85%D8%B9%D8%B1%D9%81%D8%A9-%D8%A7%D9%84%D8%A7%D8%AC%D9%87%D8%B2%D8%A9-%D8%A7%D9%84%D9%85%D8%AA%D8%B5%D9%84%D8%A9-%D8%A8%D8%A7%D9%84%D8%B4%D8%A8%D9%83%D8%A9/",
+      "snippet": "Aug 2, 2026 · إذا لم يكن الكمبيوتر متاحًا أو أردت مسحًا بصريًا للشبكة، يمكنك الاطلاع على برامج التحكم بالراوتر للآيفون ومعرفة المتصلين أو برامج مراقبة شبكة الواي فاي للأندرويد."
+    },
+    {
+      "title": "كيفية معرفة الاجهزة المتصلة بالراوتر We لجميع الاصدارات بالتفصيل 2026",
+      "url": "https://www.net3arabi.com/2021/05/control-devices-connected-router.html",
+      "snippet": "Jan 7, 2026 · ولهذا اتاحت شركة الانترنت امكانية عرض كافة الاجهزة المتصلة بالشبكة مع أدوات التحكم فيها مثل حظر الاجهزة وتخفيض السرعة وغيرها ، لذلك يمكنك اتباع هذا الدليل للتعرف علي …"
+    }
+  ]
+}

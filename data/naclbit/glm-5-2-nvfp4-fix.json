@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "naclbit/GLM-5.2-NVFP4-fix",
+  "slug": "naclbit-glm-5-2-nvfp4-fix",
+  "author": "naclbit",
+  "url": "https://huggingface.co/naclbit/GLM-5.2-NVFP4-fix",
+  "created_at": "2026-09-16T20:32:55.000Z",
+  "updated_at": "2026-09-16T21:17:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "glm_moe_dsa",
+    "license:mit",
+    "8-bit",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 380989135104,
+  "parameters_human": "380.99B",
+  "storage_bytes": 464865454030,
+  "storage_human": "464.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Steam Workshop",
+      "url": "https://steamcommunity.com/sharedfiles/filedetails/?id=1383799533",
+      "snippet": "You've made too many requests recently. Please wait and try your request again later."
+    },
+    {
+      "title": "Please explain quickdraw on PC without a controller to save James ...",
+      "url": "https://steamcommunity.com/app/1174180/discussions/0/3266809271737924911/",
+      "snippet": "May 9, 2022 · Have tried to quickdraw James 20 times now? lol I can beat him, occasionally, but I instantly shoot him in the chest (no …"
+    },
+    {
+      "title": "Taunt: Quick Draw! - Steam Community Market",
+      "url": "https://steamcommunity.com/market/listings/570/Taunt%3A%20Quick%20Draw%21",
+      "snippet": "Echoes of the frontier cloud Sniper's thoughts. This Taunt can be used while running, and will not cancel teleport actions. Equip the …"
+    },
+    {
+      "title": "Quick Draw? :: Pathfinder: Wrath of the Righteous - Enhanced Edition ...",
+      "url": "https://steamcommunity.com/app/1184370/discussions/0/3543798390534411927/",
+      "snippet": "Nov 18, 2022 · The weapon sets can still be useful even without quick draw. Granted, quick draw would make them better, but try …"
+    },
+    {
+      "title": "Is there some hotkey for drawing card :: Tabletop Simulator General ...",
+      "url": "https://steamcommunity.com/app/286160/discussions/0/1473095331490243984/",
+      "snippet": "Aug 24, 2017 · the \"draw\" command in right-click menu is very useful when playing card game. is there anyway to add a hotkey for …"
+    }
+  ]
+}

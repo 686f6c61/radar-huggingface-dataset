@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Aaravyada/deit-experiment-2023",
+  "slug": "aaravyada-deit-experiment-2023",
+  "author": "Aaravyada",
+  "url": "https://huggingface.co/Aaravyada/deit-experiment-2023",
+  "created_at": "2026-09-17T01:28:23.000Z",
+  "updated_at": "2026-09-17T01:28:28.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deit",
+    "pytorch",
+    "matching",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ini Kandungan Nutrisi Ubi Cilembu dan Manfaatnya untuk Kesehatan …",
+      "url": "https://www.halodoc.com/artikel/ini-kandungan-nutrisi-ubi-cilembu-dan-manfaatnya-untuk-kesehatan",
+      "snippet": "Jun 18, 2026 · Kandungan serat pangannya yang tinggi memberikan efek kenyang lebih lama, sehingga menekan keinginan untuk …"
+    },
+    {
+      "title": "Nilai kandungan gizi Ubi Cilembu - nilaigizi.com",
+      "url": "https://nilaigizi.com/gizi/detailproduk/243/nilai-kandungan-gizi-ubi-cilembu",
+      "snippet": "Kandungan gizi yang ditampilkan meliputi energi karbohidrat protein lemak vitamin dan mineral."
+    },
+    {
+      "title": "Manis dan Lezat, Berapa Jumlah Kalori Ubi Cilembu? - Halodoc",
+      "url": "https://www.halodoc.com/artikel/manis-dan-lezat-berapa-jumlah-kalori-ubi-cilembu",
+      "snippet": "Sep 10, 2026 · Selain kalori, ubi Cilembu mengandung beragam nutrisi penting seperti karbohidrat kompleks, serat pangan, beta …"
+    },
+    {
+      "title": "Ubi Cilembu Jadi Tren Makanan Sehat, Ini Kandungan Nutrisinya",
+      "url": "https://food.detik.com/info-sehat/d-7716765/ubi-cilembu-jadi-tren-makanan-sehat-ini-kandungan-nutrisinya",
+      "snippet": "Jan 4, 2025 · Ubi cilembu yang lembut legit jadi tren makanan sehat di media sosial. Banyak yang menyukainya untuk dikonsumsi …"
+    },
+    {
+      "title": "Mengenal Nutrisi Ubi Cilembu",
+      "url": "https://pustaka.bppsdmp.pertanian.go.id/info-literasi/mengenal-nutrisi-ubi-cilembu",
+      "snippet": "Aug 9, 2023 · Ubi cilembu merupakan salah satu ragam pangan lokal fungsional yang banyak digemari masyarakat. Selain …"
+    }
+  ]
+}

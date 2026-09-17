@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Fed-orov/clip-demo",
+  "slug": "fed-orov-clip-demo",
+  "author": "Fed-orov",
+  "url": "https://huggingface.co/Fed-orov/clip-demo",
+  "created_at": "2026-09-17T00:46:07.000Z",
+  "updated_at": "2026-09-17T00:46:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "clip",
+    "pytorch",
+    "classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Federal Reserve Board - Home",
+      "url": "https://www.federalreserve.gov/",
+      "snippet": "1 day ago · About the Fed News & Events Monetary Policy Supervision & Regulation Financial Stability Payment Systems Economic …"
+    },
+    {
+      "title": "Réserve fédérale des États-Unis — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/R%C3%A9serve_f%C3%A9d%C3%A9rale_des_%C3%89tats-Unis",
+      "snippet": "La Fed est une banque centrale indépendante : ses décisions ne sont pas sujettes à l'autorisation du président des États-Unis ou …"
+    },
+    {
+      "title": "Federal Reserve Economic Data | FRED | St. Louis Fed",
+      "url": "https://fred.stlouisfed.org/",
+      "snippet": "Download, graph, and track 851,000 economic time series from 126 sources."
+    },
+    {
+      "title": "FED : actualités, discours et recommandations, vidéos - Les Echos",
+      "url": "https://www.lesechos.fr/finance-marches/marches-financiers/fed",
+      "snippet": "FED : toute l'actualité sur la Réserve Fédérale Américaine (déclarations, taux, politiques...) en direct. Vidéos, live, analyses, …"
+    },
+    {
+      "title": "La Fed va à l’encontre de Donald Trump et augmente ses taux …",
+      "url": "https://www.lemonde.fr/economie/article/2026/09/16/la-fed-va-a-l-encontre-de-donald-trump-et-augmente-ses-taux-directeurs-pour-lutter-contre-l-inflation-aux-etats-unis_6775456_3234.html",
+      "snippet": "7 hours ago · La Réserve fédérale américaine a choisi, mercredi 16 septembre, de relever ses taux directeurs d’un quart de point, …"
+    }
+  ]
+}

@@ -30,7 +30,8 @@
     "base_model:ReadyArt/Omega-Darker_The-Final-Directive-24B",
     "base_model:merge:ReadyArt/Omega-Darker_The-Final-Directive-24B",
     "license:other",
-    "region:us"
+    "region:us",
+    "not-for-all-audiences"
   ],
   "likes": 1,
   "downloads_30d": 185,

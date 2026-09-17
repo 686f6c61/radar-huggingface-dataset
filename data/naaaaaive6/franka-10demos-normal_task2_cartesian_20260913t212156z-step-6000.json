@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "NaaaaaiVe6/franka-10demos-normal_task2_cartesian_20260913T212156Z-step-6000",
+  "slug": "naaaaaive6-franka-10demos-normal_task2_cartesian_20260913t212156z-step-6000",
+  "author": "NaaaaaiVe6",
+  "url": "https://huggingface.co/NaaaaaiVe6/franka-10demos-normal_task2_cartesian_20260913T212156Z-step-6000",
+  "created_at": "2026-09-16T23:14:11.000Z",
+  "updated_at": "2026-09-16T23:16:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3616757520,
+  "parameters_human": "3.62B",
+  "storage_bytes": 7233650408,
+  "storage_human": "7.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HP 716195-B21 - HPE 1M External MiniSAS HD to MiniSAS HD cable",
+      "url": "https://www.renewtech.nl/hp-716195-b21.html",
+      "snippet": "Sep 9, 2026 · Deze hoogwaardige kabel verbindt externe MiniSAS HD-connectoren en biedt een stabiele gegevensoverdracht, …"
+    },
+    {
+      "title": "HP 716195-B21 - HPE 1M External MiniSAS HD to MiniSAS HD cable",
+      "url": "https://www.renewtech.com/hp-716195-b21.html",
+      "snippet": "Buy HP 716195-B21 - HPE 1M External MiniSAS HD to MiniSAS HD cable refurbished from Renewtech.com – Sustainable IT, fast …"
+    },
+    {
+      "title": "HPE 1.0m External Mini SAS High Density to Mini SAS Cable (716195-B21)",
+      "url": "https://www.senetic.co.uk/product/716195-B21",
+      "snippet": "Cables HPE 1.0m External Mini SAS High Density to Mini SAS Cable 716195-B21 - Price (ex VAT): £48.31. The best prices only at …"
+    },
+    {
+      "title": "HPE External 1.0m (3ft) Mini‑SAS HD 4x to Mini‑SAS HD 4x Cable",
+      "url": "https://buy.hpe.com/emea_europe/en/options/cables-cable-kits/cable-options/hpe-external-1-0m-3ft-mini%e2%80%91sas-hd-4x-to-mini%e2%80%91sas-hd-4x-cable/p/716195-b21",
+      "snippet": "HPE external mini-SAS high density to mini-SAS 1-meter cable Show more Show less SKU # 716195-B21 INDICATIVE PRICE: ---- …"
+    },
+    {
+      "title": "Genuine HPE 716195-B21",
+      "url": "https://uk.genuinemodules.com/716195-b21",
+      "snippet": "Home HPE HPE Cables HPE 716195-B21 External 1.0m (3ft) Mini-SAS HD 4x to Mini-SAS HD 4x Cable"
+    }
+  ]
+}

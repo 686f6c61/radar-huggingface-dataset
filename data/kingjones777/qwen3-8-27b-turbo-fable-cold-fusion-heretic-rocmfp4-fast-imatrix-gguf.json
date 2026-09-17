@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "kingjones777/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-Heretic-ROCmFP4-FAST-imatrix-GGUF",
+  "slug": "kingjones777-qwen3-8-27b-turbo-fable-cold-fusion-heretic-rocmfp4-fast-imatrix-gguf",
+  "author": "kingjones777",
+  "url": "https://huggingface.co/kingjones777/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-Heretic-ROCmFP4-FAST-imatrix-GGUF",
+  "created_at": "2026-09-16T23:00:42.000Z",
+  "updated_at": "2026-09-17T01:39:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "rocmfp4",
+    "imatrix",
+    "qwen3_5",
+    "multimodal",
+    "vision",
+    "mtp",
+    "speculative-decoding",
+    "strix-halo",
+    "gfx1151",
+    "rocm",
+    "amd",
+    "ryzen-ai-max",
+    "uncensored",
+    "image-text-to-text",
+    "base_model:DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+    "base_model:quantized:DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 460730096,
+  "parameters_human": "460.7M",
+  "storage_bytes": 19221440256,
+  "storage_human": "19.2 GB",
+  "base_model": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU, Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bandeira de Adamantina – Wikipédia, a enciclopédia livre",
+      "url": "https://pt.wikipedia.org/wiki/Bandeira_de_Adamantina",
+      "snippet": "As faixas que partem do triângulo, brancas e carregadas do sobre-faixas pretas simbolizam a irradiação do Poder Municipal que …"
+    },
+    {
+      "title": "Bandeira, Brasão e Hino de Adamantina - SP - Símbolos Municipais",
+      "url": "https://www.simbolosmunicipais.com.br/sp/adamantina/simbolos-municipais",
+      "snippet": "As faixas que partem do triângulo, brancas e carregadas do sobre-faixas pretas simbolizam a irradiação do Poder Municipal que …"
+    },
+    {
+      "title": "Prefeitura do Município de Adamantina - SP - Símbolos",
+      "url": "https://www.adamantina.sp.gov.br/portal/servicos/1007/simbolos/",
+      "snippet": "A cruz simboliza o espírito cristão do povo de Adamantina, enquanto a flor-de-lis lembra a formosura e a nobreza da mulher de cujo …"
+    },
+    {
+      "title": "Brasão e Bandeira da Cidade de Adamantina (SP) - mbi.com.br",
+      "url": "https://www.mbi.com.br/mbi/biblioteca/simbolopedia/municipio-adamantina-sp-br/",
+      "snippet": "Esta página apresenta os símbolos oficiais do município de Adamantina, no Estado de São Paulo, parte integrante da maior e …"
+    },
+    {
+      "title": "Adamantina – Wikipédia, a enciclopédia livre",
+      "url": "https://pt.wikipedia.org/wiki/Adamantina",
+      "snippet": "O ano de 1955 marcou um marco legal importante para Adamantina, com a criação da Comarca, estabelecida pela Lei n.º 2.456, de …"
+    }
+  ]
+}

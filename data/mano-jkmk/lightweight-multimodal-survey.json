@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "mano-jkmk/lightweight-multimodal-survey",
+  "slug": "mano-jkmk-lightweight-multimodal-survey",
+  "author": "mano-jkmk",
+  "url": "https://huggingface.co/mano-jkmk/lightweight-multimodal-survey",
+  "created_at": "2026-09-17T01:49:59.000Z",
+  "updated_at": "2026-09-17T01:50:05.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "lightweight-multimodal",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ManoMano : Achat en ligne bricolage, rénovation et jardinage",
+      "url": "https://www.manomano.fr/?msockid=3a7721bbada469ec07fb366cac556831",
+      "snippet": "ManoMano : tous vos produits de bricolage, rénovation et jardinage au meilleur prix"
+    },
+    {
+      "title": "Mano | Un service gratuit dédié aux professionnel·le·s de maraude et …",
+      "url": "https://mano.sesan.fr/",
+      "snippet": "Mano, c'est un service public numérique dont la mission est de proposer un outil adapté aux pratiques de ses utilisateurs, pensé par …"
+    },
+    {
+      "title": "ManoMano",
+      "url": "https://www.manomano.com/fr",
+      "snippet": "ManoMano offers a wide range of DIY, gardening, and home improvement products with delivery options tailored to your needs."
+    },
+    {
+      "title": "Mobilier d'intérieur - ManoMano",
+      "url": "https://www.manomano.fr/hub/mobilier-dinterieur-4605?msockid=3a7721bbada469ec07fb366cac556831",
+      "snippet": "EN STOCK : Mobilier d'intérieur pas cher. Grand choix, promos permanentes et livraison rapide partout en France. Paiement sécurisé"
+    },
+    {
+      "title": "Télécharger l'application — Mano",
+      "url": "https://mano.sesan.fr/download/",
+      "snippet": "Télécharger l'application Mano Télécharger Mano v 3.25.0 Accessibilité : non conforme Mentions légales Conditions générales …"
+    }
+  ]
+}

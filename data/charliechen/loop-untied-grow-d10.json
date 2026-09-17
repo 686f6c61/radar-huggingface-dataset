@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "CharlieChen/loop-untied-grow-d10",
+  "slug": "charliechen-loop-untied-grow-d10",
+  "author": "CharlieChen",
+  "url": "https://huggingface.co/CharlieChen/loop-untied-grow-d10",
+  "created_at": "2026-09-16T21:53:04.000Z",
+  "updated_at": "2026-09-16T21:53:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "looped-transformer",
+    "scaling-laws",
+    "pytorch",
+    "base-model",
+    "text-generation",
+    "en",
+    "dataset:HuggingFaceFW/fineweb",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2302976259,
+  "storage_human": "2.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best Plumbers near 8 Haji Ln, Singapore 189201, Singapore",
+      "url": "https://www.yelp.com/search?find_desc=Plumbers&find_loc=8+Haji+Ln%2C+Singapore+189201&msockid=36b8324eb82e6c94220b2598b9cb6d7b",
+      "snippet": "This is a review for a plumbing business near Singapore, SG: \"Even though it was a Sunday, the plumber came within 4 hours to fix …"
+    },
+    {
+      "title": "Best Plumbers near Haji Ln, Singapore, Singapore - Yelp",
+      "url": "https://www.yelp.com/search?find_desc=Plumbers&find_loc=Haji+Ln%2C+Singapore&msockid=36b8324eb82e6c94220b2598b9cb6d7b",
+      "snippet": "\"This is a fast service. Need a plumber? Call them fast. They will be at your door step within the...\" more"
+    },
+    {
+      "title": "Plumbers Near Me Singapore | 24/7 Licensed Plumbing Services",
+      "url": "https://www.singaporeplumbers.sg/plumbers-near-me-singapore/",
+      "snippet": "We provide fast, professional, and affordable plumbing services across all areas of Singapore. Whether you have a leaking pipe, …"
+    },
+    {
+      "title": "15 Best Licensed Plumbers in Singapore [2026] - Finest Services",
+      "url": "https://finestservices.com.sg/licensed-plumber-singapore/",
+      "snippet": "Jan 8, 2026 · As a result, it’s critical to double-check that your plumber is licensed before starting the job, as neglecting to do so is a …"
+    },
+    {
+      "title": "10 Best Plumbing Services in Singapore (2026 Reviewed)",
+      "url": "https://directplumber.sg/best-plumbing-services-in-singapore/",
+      "snippet": "2 days ago · In this guide, we’ve reviewed and compared the top 10 plumbing companies in Singapore, including pricing, customer …"
+    }
+  ]
+}

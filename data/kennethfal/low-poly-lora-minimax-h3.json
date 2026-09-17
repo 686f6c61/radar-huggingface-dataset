@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "KennethFal/low-poly-lora-minimax-h3",
+  "slug": "kennethfal-low-poly-lora-minimax-h3",
+  "author": "KennethFal",
+  "url": "https://huggingface.co/KennethFal/low-poly-lora-minimax-h3",
+  "created_at": "2026-09-16T21:55:34.000Z",
+  "updated_at": "2026-09-16T21:56:02.000Z",
+  "license": "minimax-h3-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-video",
+  "library": "minimax-h3",
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "lora",
+    "video",
+    "text-to-video",
+    "low-poly",
+    "retro",
+    "3d",
+    "90s",
+    "style",
+    "image-text-to-video",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:adapter:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 136849172,
+  "storage_human": "137 MB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "استخدام ميزة \"ربط حساب Google\" مع تطبيقات أنشأها مطوّرون آخرون",
+      "url": "https://support.google.com/accounts/answer/13864929?hl=ar",
+      "snippet": "ملاحظة مهمة: تعرَّف على مزيد من المعلومات حول البيانات التي تتم مشاركتها من حسابك على التطبيق المرتبط مع حسابك على Google. تتيح لنا ميزة \"ربط حساب Google\" الوصول إلى ميزات معيّنة في …"
+    },
+    {
+      "title": "الحصول على مساعدة بشأن رسائل الخطأ الشائعة في Chrome",
+      "url": "https://support.google.com/chrome/answer/95669?hl=ar",
+      "snippet": "عندما يواجه Chrome مشكلة في الاتصال بموقع إلكتروني أو تحميل صفحة أو التفاعل مع محتوى الويب، يتم عرض عادةً رسالة خطأ. قبل تحديد وحلّ المشاكل المتعلّقة برموز خطأ معيّنة، ننصحك …"
+    },
+    {
+      "title": "مساعدة حساب Google",
+      "url": "https://support.google.com/accounts/?hl=ar",
+      "snippet": "مركز المساعدة حساب Google، حيث يمكنك الحصول على مساعدة لإدارة واسترداد حساب Google الخاص بك، فضلا عن نصائح لتقصي المشاكل والمحافظة على حسابك آمنا."
+    },
+    {
+      "title": "تسجيل الدخول والخروج من YouTube",
+      "url": "https://support.google.com/youtube/answer/3802431?hl=ar&co=GENIE.Platform%3DDesktop",
+      "snippet": "عند تسجيل الدخول إلى YouTube، يمكنك استخدام ميزات مثل الاشتراكات وقوائم التشغيل وعمليات الشراء والسجلّ. ملاحظة: يجب أن يكون لديك حساب Google لتسجيل الدخول إلى YouTube."
+    },
+    {
+      "title": "حذف حسابات المستخدمين أو التبديل بينها أو إضافتها",
+      "url": "https://support.google.com/android/answer/2865483?hl=ar",
+      "snippet": "ملاحظة مُهمّة: تنطبق بعض هذه الخطوات على نظام التشغيل Android 14 والإصدارات الأحدث فقط. تعرَّف على طريقة تحديث إصدار Android الذي تستخدمه."
+    }
+  ]
+}

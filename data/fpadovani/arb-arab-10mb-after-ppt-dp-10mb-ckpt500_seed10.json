@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/arb-arab-10mb-after-ppt-Dp-10mb-ckpt500_seed10",
+  "slug": "fpadovani-arb-arab-10mb-after-ppt-dp-10mb-ckpt500_seed10",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/arb-arab-10mb-after-ppt-Dp-10mb-ckpt500_seed10",
+  "created_at": "2026-09-16T23:11:36.000Z",
+  "updated_at": "2026-09-16T23:22:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:fpadovani/arb-arab-10mb-ppt-Dp-10mb_seed10",
+    "base_model:finetune:fpadovani/arb-arab-10mb-ppt-Dp-10mb_seed10",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 39087104,
+  "parameters_human": "39.1M",
+  "storage_bytes": 861426935,
+  "storage_human": "861 MB",
+  "base_model": "fpadovani/arb-arab-10mb-ppt-Dp-10mb_seed10",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "死神VS火影出招表 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/60726559.html",
+      "snippet": "PLAYER1: WSAD移动,S防御,J近攻,K跳,L冲刺,U远攻,I必杀,O招唤援助 放招:W+J,S+J,W+U,S+U,W+I,S+I 击倒起身:倒下瞬间按L卍 …"
+    },
+    {
+      "title": "俄罗斯搜索引擎网址 yandex官网入口直达 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/725567645356284605.html",
+      "snippet": "Nov 11, 2025 · 俄罗斯搜索引擎网址 yandex官网入口直达Yandex的官方网址如下：国际版入口：https://yandex.com/俄罗斯本土版入 …"
+    },
+    {
+      "title": "调试Android时出现ActivityManager: Starting: Intent",
+      "url": "https://bbs.csdn.net/topics/360141110",
+      "snippet": "Apr 8, 2011 · 以下内容是CSDN社区关于调试Android时出现ActivityManager: Starting: Intent { act=android.intent.action.MAIN c相关内 …"
+    },
+    {
+      "title": "车牌号码前加WJ是什么意思 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/55760761.html",
+      "snippet": "车牌号码前加WJ指的是武警的车牌号。武警专用汽车：白底红“WJ”、黑字；WJ后面加的汉字是所在省市区域代码。WJ车牌的编排规 …"
+    },
+    {
+      "title": "车牌WJ开头什么意思？ - 百度知道",
+      "url": "https://zhidao.baidu.com/question/86661544.html",
+      "snippet": "车牌WJ开头什么意思？是武警专用汽车：白底红“WJ”、黑字。武警：1. 中国人民武装警察部队简称武警部队，总部成立于1982年6月 …"
+    }
+  ]
+}

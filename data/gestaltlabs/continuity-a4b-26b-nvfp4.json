@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "GestaltLabs/continuity-a4b-26b-nvfp4",
+  "slug": "gestaltlabs-continuity-a4b-26b-nvfp4",
+  "author": "GestaltLabs",
+  "url": "https://huggingface.co/GestaltLabs/continuity-a4b-26b-nvfp4",
+  "created_at": "2026-09-16T21:52:24.000Z",
+  "updated_at": "2026-09-16T21:57:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "vllm",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "gemma4",
+    "structured-extraction",
+    "json",
+    "html",
+    "schema-constrained",
+    "nvfp4",
+    "modelopt",
+    "moe",
+    "blackwell",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:GestaltLabs/continuity-a4b-26b",
+    "base_model:quantized:GestaltLabs/continuity-a4b-26b",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14386941232,
+  "parameters_human": "14.39B",
+  "storage_bytes": 18820655214,
+  "storage_human": "18.8 GB",
+  "base_model": "GestaltLabs/continuity-a4b-26b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "بوابة الطالب الإلكترونية",
+      "url": "http://reg2.hu.edu.jo/",
+      "snippet": "نسيت كلمة المرور؟"
+    },
+    {
+      "title": "بوابة الطالب الإلكترونية",
+      "url": "https://reg1.hu.edu.jo/default.aspx?u=glk57chynso%3D&p=dnlxpjs9fw8%3D",
+      "snippet": "نسيت كلمة المرور؟"
+    },
+    {
+      "title": "بوابة الطالب الإلكترونية",
+      "url": "https://reg1.hu.edu.jo/schedule.aspx",
+      "snippet": "الجامعة الهاشمية بوابة الطالب الإلكترونية استرجاع كلمة المرور عن طريق الهاتف عن طريق الإيميل رجوع"
+    },
+    {
+      "title": "الجامعة الهاشمية/موقع الطالب المستجد",
+      "url": "https://newstudents.hu.edu.jo/",
+      "snippet": "ان ما وصلت اليه الجامعة من نتائج وحلول للتحديات التي كانت تواجه الطلبة ومجتمع الجامعة اثبت انه مهما كانت التحديات كبيرة يمكن ان نجد لها الحلول، مؤكدة ان الجامعة تميزت وكانت السباقة بايجاد بيئة …"
+    },
+    {
+      "title": "موقع بوابة خدمات الطلاب لللارقام",
+      "url": "https://sis.hu.edu.jo/",
+      "snippet": "بوابة خدمات الطلاب تقدم معلومات وخدمات للطلبة في الجامعة الهاشمية تشمل التسجيل والدفع والاستفسارات الأكاديمية."
+    }
+  ]
+}

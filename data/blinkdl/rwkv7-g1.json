@@ -5,7 +5,7 @@
   "author": "BlinkDL",
   "url": "https://huggingface.co/BlinkDL/rwkv7-g1",
   "created_at": "2025-03-07T17:05:50.000Z",
-  "updated_at": "2026-09-02T02:51:16.000Z",
+  "updated_at": "2026-09-20T17:37:40.000Z",
   "license": "apache-2.0",
   "license_family": "oss",
   "pipeline_tag": "text-generation",

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "NaaaaaiVe6/franka-10demos-normal_task10_cartesian_20260913T212156Z-step-6000",
+  "slug": "naaaaaive6-franka-10demos-normal_task10_cartesian_20260913t212156z-step-6000",
+  "author": "NaaaaaiVe6",
+  "url": "https://huggingface.co/NaaaaaiVe6/franka-10demos-normal_task10_cartesian_20260913T212156Z-step-6000",
+  "created_at": "2026-09-16T23:14:03.000Z",
+  "updated_at": "2026-09-16T23:16:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3616757520,
+  "parameters_human": "3.62B",
+  "storage_bytes": 7233650408,
+  "storage_human": "7.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Personalizar a Barra de Tarefas no Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/pt-pt/windows/experience/personalization/customize-the-taskbar-in-windows",
+      "snippet": "Saiba como utilizar as funcionalidades da barra de tarefas no Windows. Oculte a barra de tarefas, afixe uma aplicação, altere a …"
+    },
+    {
+      "title": "Ändern des Desktophintergrunds in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/windows/experience/personalization/change-the-desktop-background-in-windows",
+      "snippet": "Oct 14, 2025 · Das Ändern ihres Desktophintergrunds ist eine einfache und effektive Möglichkeit, Ihr Windows-Gerät zu …"
+    },
+    {
+      "title": "How do you go to whatsapp settings? - Answers",
+      "url": "https://www.answers.com/computers/How_do_you_go_to_whatsapp_settings",
+      "snippet": "Jul 12, 2025 · To access WhatsApp settings, open the app on your device and tap on the three vertical dots (Android) or the bottom …"
+    },
+    {
+      "title": "Does Nokia c1-01 support whatsapp - Answers",
+      "url": "https://www.answers.com/communications/Does_Nokia_c1-01_support_whatsapp",
+      "snippet": "Sep 22, 2023 · no"
+    },
+    {
+      "title": "How to find and enable missing Copilot button in Microsoft 365 apps",
+      "url": "https://support.microsoft.com/en-us/office/foundations-experiences/how-to-find-and-enable-missing-copilot-button-in-microsoft-365-apps",
+      "snippet": "Last updated: July 2026 Can't find the Copilot button? If the Copilot button seems to be missing from your Microsoft 365 app, it's …"
+    }
+  ]
+}

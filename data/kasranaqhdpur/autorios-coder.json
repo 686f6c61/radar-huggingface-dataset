@@ -1,0 +1,54 @@
+{
+  "schema": 1,
+  "id": "kasranaqhdpur/AUTORIOS-CODER",
+  "slug": "kasranaqhdpur-autorios-coder",
+  "author": "kasranaqhdpur",
+  "url": "https://huggingface.co/kasranaqhdpur/AUTORIOS-CODER",
+  "created_at": "2026-09-16T23:17:44.000Z",
+  "updated_at": "2026-09-16T23:17:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-17T02:50:46.095Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Stake - ReDoc",
+      "url": "https://docs.stake.com/",
+      "snippet": "Stake documentation and resources for developers to explore and integrate with Stake's platform."
+    },
+    {
+      "title": "Home | Stake Help Center",
+      "url": "https://help.stake.com/en/",
+      "snippet": "Stake Help Center Getting Started Account Payments Casino Sports Bonuses & Promotions Loyalty Programs Responsible Gambling"
+    },
+    {
+      "title": "Stake Vendors: Partner. Grow. Succeed. Vendor Onboarding for …",
+      "url": "https://vendors.stake.com/",
+      "snippet": "Become a trusted vendor for Stake.com. Submit your application, connect with our team, and explore partnership opportunities in the …"
+    },
+    {
+      "title": "Monthly Bonuses | Stake Help Center",
+      "url": "https://help.stake.com/en/collections/10159282-monthly-bonuses",
+      "snippet": "Getting Started Account Payments Casino Sports Bonuses & Promotions Loyalty Programs Responsible Gambling"
+    }
+  ]
+}
