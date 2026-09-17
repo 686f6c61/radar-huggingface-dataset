@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "burningfeet/backup-2026-09-17-Qwen3.6-27B-Uncensored-Genesis-GGUF",
+  "slug": "burningfeet-backup-2026-09-17-qwen3-6-27b-uncensored-genesis-gguf",
+  "author": "burningfeet",
+  "url": "https://huggingface.co/burningfeet/backup-2026-09-17-Qwen3.6-27B-Uncensored-Genesis-GGUF",
+  "created_at": "2026-09-17T12:36:36.000Z",
+  "updated_at": "2026-09-18T05:50:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "zh",
+    "multilingual"
+  ],
+  "tags": [
+    "gguf",
+    "uncensored",
+    "qwen3.6",
+    "moe",
+    "vision",
+    "multimodal",
+    "genesis",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "multilingual",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 52770770048,
+  "storage_human": "52.8 GB",
+  "base_model": "HauhauCS/Qwen3.6-27B-A3B-Uncensored-HauhauCS-Aggressive",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reddit - Dive into anything",
+      "url": "https://www.reddit.com/r/all+/",
+      "snippet": "Create an account to follow your favorite communities and start taking part in conversations."
+    },
+    {
+      "title": "Magic: The Redditing",
+      "url": "https://www.reddit.com/r/magicTCG/top/",
+      "snippet": "A diverse community of players devoted to Magic: the Gathering, a trading card game (\"TCG\") produced by Wizards of the Coast and …"
+    },
+    {
+      "title": "megathread - Piracy - Reddit",
+      "url": "https://www.reddit.com/r/Piracy/wiki/revisions/megathread/",
+      "snippet": "Sep 20, 2008 · r/Piracy: ⚓ A community devoted to in-depth debate on topics concerning digital piracy, ethical problems, and legal …"
+    },
+    {
+      "title": "old.reddit.com on reddit.com",
+      "url": "https://www.reddit.com/domain/old.reddit.com/",
+      "snippet": "Reddit gives you the best of the internet in one place. Get a constantly updating feed of breaking news, fun stories, pics, memes, and …"
+    },
+    {
+      "title": "Boxing - Reddit",
+      "url": "https://www.reddit.com/r/Boxing/wiki/index/",
+      "snippet": "r/Boxing: Welcome to /r/boxing, reddit's home for pro boxing enthusiasts! Please check out our rules and FAQs before posting…"
+    }
+  ]
+}

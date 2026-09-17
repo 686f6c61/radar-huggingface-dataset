@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "logic65/whittle-dev",
+  "slug": "logic65-whittle-dev",
+  "author": "logic65",
+  "url": "https://huggingface.co/logic65/whittle-dev",
+  "created_at": "2026-09-17T18:52:32.000Z",
+  "updated_at": "2026-09-21T12:50:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35547542656,
+  "parameters_human": "35.55B",
+  "storage_bytes": 731268478949,
+  "storage_human": "731.3 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "فوائد واضرار ديفارول اس حقن فيتامين د 200000 وحدة (devarol amp)",
+      "url": "https://chefaa.com/blog/%d8%af%d9%8a%d9%81%d8%a7%d8%b1%d9%88%d9%84-devarol/",
+      "snippet": "Aug 8, 2026 · حقن ديفارول اس 200000 (devarol-s amp) هى امبولات تحتوي على تركيز عالى (200,000 وحدة دولية) من فيتامين د3 (كوليكالسيفيرول)، وتُستخدم للوقاية من وعلاج …"
+    },
+    {
+      "title": "ديفارول اس حقن فيتامين د لهشاشة العظام Devarol S | الطبي | الطبي",
+      "url": "https://altibbi.com/%D8%A7%D9%84%D8%A7%D8%AF%D9%88%D9%8A%D8%A9/%D8%AF%D9%8A%D9%81%D8%A7%D8%B1%D9%88%D9%84-%D8%A7%D8%B3",
+      "snippet": "حقن ديفارول إس لنقص الفيتامين د تستخدم حقن ديفارول إس للوقاية من وعلاج نقص الفيتامين د وأمراض العظام الناجمة عن نقص فيتامين د مثل الكساح أو هشاشة العظام. حقن ديفارول إس للتخسيس"
+    },
+    {
+      "title": "Devarol S 200000 IU ampoule - ديفارول اس 200000 وحدة دولية امبول",
+      "url": "https://www.mouradpharmacy.com/shop/devarol-s-200000-iu-ampoule-%D8%AF%D9%8A%D9%81%D8%A7%D8%B1%D9%88%D9%84-%D8%A7%D8%B3-200000-%D9%88%D8%AD%D8%AF%D8%A9-%D8%AF%D9%88%D9%84%D9%8A%D8%A9-%D8%A7%D9%85%D8%A8%D9%88%D9%84-467903",
+      "snippet": "علاج فعال لنقص فيتامين د الحاد ووقاية من هشاشة ولين العظام والكساح عند الأطفال بفضل تركيزه العالي من فيتامين د3 الذي يعزز امتصاص الكالسيوم في الجسم. يستخدم في حالات الضعف العام الناتج عن …"
+    },
+    {
+      "title": "ديفارول اس حقن لتعويض النقص الحاد في فيتامين د3",
+      "url": "https://www.rosheta.com/ar/13275/%D8%AF%D9%8A%D9%81%D8%A7%D8%B1%D9%88%D9%84-%D8%A7%D8%B3",
+      "snippet": "يتركب ديفارول اس من فيتامين د3 (الكوليسيفيرول)، وهو احد اشكال فيتامين د3. تساعد علي تعويض نقص فيتامين د بالجسم. التخلص من الاعياء، والتعب، والارهاق المستمر. يقي من الكسور بالعظام، …"
+    },
+    {
+      "title": "فوائد ومخاطر حقن ديفارول والتجارب والجرعة والمفعول والسعر والبديل‎‎",
+      "url": "https://shefaonline.com/%D8%AD%D9%82%D9%86-%D8%AF%D9%8A%D9%81%D8%A7%D8%B1%D9%88%D9%84/",
+      "snippet": "حقن ديفارول من الأنواع التي بها مادة فعالة تسمى كوليكا ليسفيرول أي فيتامين دال، وهو أحد الفيتامينات الهامة لامتصاص الكالسيوم من داخل المعدة، يستخدم للأطفال والبالغين للحالات التي لديها ..."
+    }
+  ]
+}

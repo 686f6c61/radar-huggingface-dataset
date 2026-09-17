@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "immanuelpeter/Gemma4-31B-Vision",
+  "slug": "immanuelpeter-gemma4-31b-vision",
+  "author": "immanuelpeter",
+  "url": "https://huggingface.co/immanuelpeter/Gemma4-31B-Vision",
+  "created_at": "2026-09-17T17:22:35.000Z",
+  "updated_at": "2026-09-17T17:22:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4_vision",
+    "feature-extraction",
+    "vision",
+    "image-feature-extraction",
+    "arxiv:2607.02770",
+    "base_model:google/gemma-4-31B-it",
+    "base_model:finetune:google/gemma-4-31B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 569550384,
+  "parameters_human": "569.6M",
+  "storage_bytes": 1151529736,
+  "storage_human": "1.2 GB",
+  "base_model": "google/gemma-4-31B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Filtering Sharepoint Lists on a \"Now\" or \"Today\" - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/745059/filtering-sharepoint-lists-on-a-now-or-today",
+      "snippet": "Apr 13, 2009 · I'm trying to find an effective method of filtering Sharepoint lists based on the age of an item. In other words, if I want to …"
+    },
+    {
+      "title": "System.ServiceModel not found in .NET Core project",
+      "url": "https://stackoverflow.com/questions/45545013/system-servicemodel-not-found-in-net-core-project",
+      "snippet": "Aug 7, 2017 · I have a .NET Core xUnit project. I'm trying to call a WCF service from it but get the following exception: …"
+    },
+    {
+      "title": "Medikamente bei Langstreckenflug - Plauderecke - Pickup Forum - The ...",
+      "url": "https://www.pickupforum.de/topic/147967-medikamente-bei-langstreckenflug/",
+      "snippet": "Feb 1, 2016 · Ich habe bald einen 13h Flug vor mir (Tokyo - Abu Dhabi) und will dafür zum ersten mal Diazepam (Valium) für einen …"
+    },
+    {
+      "title": "Rīga/Lettland - Erfahrungsbericht - Field Reports - Pickup Forum - The ...",
+      "url": "https://www.pickupforum.de/topic/761-r%C4%ABgalettland-erfahrungsbericht/",
+      "snippet": "Aug 16, 2005 · Wie angekündigt hab ich 4 Tage - oder eher 4 Nächte in der lettischen Hauptstadt Rīga verbracht.Wir waren …"
+    },
+    {
+      "title": "How to load and save StringGrid content? - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/6867750/how-to-load-and-save-stringgrid-content",
+      "snippet": "Jul 29, 2011 · What am I doing wrong ? Also why is the stringgrid giving listindex out of bounds when I try to load into it contents from …"
+    }
+  ]
+}

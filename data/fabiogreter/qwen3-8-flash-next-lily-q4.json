@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "fabiogreter/Qwen3.8-Flash-Next-lily-q4",
+  "slug": "fabiogreter-qwen3-8-flash-next-lily-q4",
+  "author": "fabiogreter",
+  "url": "https://huggingface.co/fabiogreter/Qwen3.8-Flash-Next-lily-q4",
+  "created_at": "2026-09-17T16:22:23.000Z",
+  "updated_at": "2026-09-17T16:29:52.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen4_exp",
+    "lily-qwen3.8-flash-next",
+    "metal",
+    "apple-silicon",
+    "quantized",
+    "4-bit",
+    "speculative-decoding",
+    "vision",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30204847424,
+  "parameters_human": "30.20B",
+  "storage_bytes": 105507876168,
+  "storage_human": "105.5 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LoL ARAM: Mayhem Tier List 26.18 - Best Champions – METAsrc LoL",
+      "url": "https://www.metasrc.com/lol/mayhem/tier-list",
+      "snippet": "Updated for Patch 26.18 with the latest LoL ARAM: Mayhem meta, our ARAM: Mayhem Tier List ranks all champions from S+ to D …"
+    },
+    {
+      "title": "U.GG ARAM Mayhem Tier List - Patch 26.18 Best ARAM Mayhem …",
+      "url": "https://u.gg/lol/aram-mayhem-tier-list",
+      "snippet": "The only ARAM Mayhem Tier list you need for the newest patch. Always up-to-date, U.GG takes a data science approach to the best …"
+    },
+    {
+      "title": "ARAM Mayhem Tier List 26.18",
+      "url": "https://arammayhem.com/tier-list/",
+      "snippet": "3 days ago · This tier list ranks champions based on their win rate performance in ARAM: Mayhem mode. The score shown under …"
+    },
+    {
+      "title": "ARAM Mayhem Tier List Patch 26.18 - Blitz.gg",
+      "url": "https://blitz.gg/lol/tierlist/aram-mayhem",
+      "snippet": "Get the full ARAM Mayhem augment tier list and builds right at your fingertips, directly in game. Rankings use current-patch match …"
+    },
+    {
+      "title": "ARAM Mayhem Tier List for All Augments in Patch 26.18 - Mobalytics",
+      "url": "https://mobalytics.gg/lol/tier-list/mayhem",
+      "snippet": "The only ARAM Mayhem Tier List you need for the newest patch - discover detailed ranks of every augment. Every patch our Game …"
+    }
+  ]
+}

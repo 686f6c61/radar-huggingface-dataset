@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ssaitokenny90/vision-language-pretraining-notebook",
+  "slug": "ssaitokenny90-vision-language-pretraining-notebook",
+  "author": "ssaitokenny90",
+  "url": "https://huggingface.co/ssaitokenny90/vision-language-pretraining-notebook",
+  "created_at": "2026-09-17T13:56:01.000Z",
+  "updated_at": "2026-09-17T13:56:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "vision-language-pretraining",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CHECK24 | Das Vergleichsportal",
+      "url": "https://www.check24.de/?msockid=30362301da7c64bb094d34d6db6e650e",
+      "snippet": "CHECK24 - Das Vergleichsportal: Sparen Sie mit den Vergleichsrechnern für Versicherungen, Kredite, Energie, Internet, Reisen, …"
+    },
+    {
+      "title": "Urlaub buchen Pauschalreisen bis 60% günstiger | CHECK24 Reisen",
+      "url": "https://urlaub.check24.de/?msockid=30362301da7c64bb094d34d6db6e650e",
+      "snippet": "CHECK24 Reisevergleich Jetzt günstig Urlaub buchen Über 230.000 mal Bestnote Pauschalreisen beim Preissieger ☎ Über 200 …"
+    },
+    {
+      "title": "Flüge buchen ️ Günstige Flüge mit CHECK24 | CHECK24 Flüge",
+      "url": "https://flug.check24.de/",
+      "snippet": "Mit CHECK24 Flüge vergleichen & günstige Flüge finden Reiseberatung 24/7 PayPal, Klarna & Co. Jetzt Flug buchen!"
+    },
+    {
+      "title": "CHECK24 - Hotel buchen bei Deutschlands größtem Reiseportal",
+      "url": "https://hotel.check24.de/?msockid=30362301da7c64bb094d34d6db6e650e",
+      "snippet": "Bis zu 55% sparen und zum Bestpreis buchen: über 5 Mio. Hotels und Unterkünfte im Vergleich + extra Vorteile im Smily …"
+    },
+    {
+      "title": "Gasvergleich 2026 beim Testsieger & 1.250 € sparen - CHECK24",
+      "url": "https://www.check24.de/gas/?msockid=30362301da7c64bb094d34d6db6e650e",
+      "snippet": "Gasvergleich Testsieger Stiftung Warentest: Jetzt bis zu 400 € Bonus und 1.250 € Ersparnis sichern! 💰 Jetzt Gas vergleichen und …"
+    }
+  ]
+}

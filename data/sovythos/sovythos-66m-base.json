@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "sovythos/Sovythos-66M-Base",
+  "slug": "sovythos-sovythos-66m-base",
+  "author": "sovythos",
+  "url": "https://huggingface.co/sovythos/Sovythos-66M-Base",
+  "created_at": "2026-09-17T18:14:50.000Z",
+  "updated_at": "2026-09-17T18:20:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "tags": [
+    "safetensors",
+    "sovythos",
+    "sovereign",
+    "llm",
+    "transformer",
+    "pytorch",
+    "arabic",
+    "english",
+    "code",
+    "open-source",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "en",
+    "ar",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 83113216,
+  "parameters_human": "83.1M",
+  "storage_bytes": 334047167,
+  "storage_human": "334 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Deep Learning Tutorial - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/deep-learning/deep-learning-tutorial/",
+      "snippet": "Jul 17, 2026 · Deep Learning is a branch of Artificial Intelligence (AI) that enables machines to learn patterns from large amounts of …"
+    },
+    {
+      "title": "Introduction to Deep Learning - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/deep-learning/introduction-deep-learning/",
+      "snippet": "May 2, 2026 · Deep Learning is transforming the way machines understand, learn and interact with complex data. Deep learning …"
+    },
+    {
+      "title": "Deep Learning Tutorial",
+      "url": "https://www.tutorialkart.com/deep-learning/",
+      "snippet": "This Deep Learning Tutorial introduces the basic ideas behind deep neural networks, how artificial neurons process data, what …"
+    },
+    {
+      "title": "Deep Learning - W3Schools",
+      "url": "https://www.w3schools.com/ai/ai_neural_networks.asp",
+      "snippet": "Well organized and easy to understand Web building tutorials with lots of examples of how to use HTML, CSS, JavaScript, SQL, …"
+    },
+    {
+      "title": "Deep Learning Tutorial for Beginners [2026] | igmGuru",
+      "url": "https://www.igmguru.com/blog/deep-learning-tutorial",
+      "snippet": "Apr 4, 2026 · Master Deep Learning concepts, differences from Machine Learning, explore applications, and boost your career with …"
+    }
+  ]
+}

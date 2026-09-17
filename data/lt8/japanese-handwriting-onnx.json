@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "LT8/japanese-handwriting-onnx",
+  "slug": "lt8-japanese-handwriting-onnx",
+  "author": "LT8",
+  "url": "https://huggingface.co/LT8/japanese-handwriting-onnx",
+  "created_at": "2026-09-17T13:22:45.000Z",
+  "updated_at": "2026-09-17T13:29:17.000Z",
+  "license": "etl-character-database",
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "onnx",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "onnx",
+    "japanese",
+    "handwriting-recognition",
+    "ocr",
+    "kanji",
+    "hiragana",
+    "katakana",
+    "onnxruntime-web",
+    "image-classification",
+    "ja",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 56887686,
+  "storage_human": "57 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tworzenie konta Google dla Gmaila - Gmail - Pomoc",
+      "url": "https://support.google.com/mail/answer/56256?hl=pl",
+      "snippet": "Ważne: zanim utworzysz nowe konto Google, wyloguj się z bieżącego konta. Dowiedz się, jak wylogować się z Gmaila Na …"
+    },
+    {
+      "title": "Poczta Interia - Społeczność Konto Google",
+      "url": "https://support.google.com/accounts/thread/15324394/poczta-interia?hl=pl",
+      "snippet": "Sep 25, 2019 · Pobralrm aplikacje Poczta interia na telefon mam tez emaila jednak mejle z poczty interi nie wyświetlają mi się w …"
+    },
+    {
+      "title": "Interia - Polska i świat: informacje, sport, gwiazdy.",
+      "url": "https://temat.forum.interia.pl/",
+      "snippet": "Feb 20, 2026 · Interia - czołowy polski portal internetowy. Najlepsze serwisy informacyjne i tematyczne (Wydarzenia, Sport, …"
+    },
+    {
+      "title": "302 Found - forum.interia.pl",
+      "url": "https://forum.interia.pl/po-jakich-studiach-jest-pewna-praca-tematy,dId,2525370",
+      "snippet": "302 Found Found The document has moved here."
+    },
+    {
+      "title": "Jak zablokować kogoś żeby nie przychodziły maile na moją pocztę ...",
+      "url": "https://support.google.com/chrome/thread/52660104/jak-zablokowa%C4%87-kogo%C5%9B-%C5%BCeby-nie-przychodzi%C5%82y-maile-na-moj%C4%85-poczt%C4%99?hl=pl",
+      "snippet": "Jun 10, 2020 · Treści i informacje zawarte w tym artykuleOgólne wrażenia związane z Centrum pomocy"
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "id": "KW-KI/Qwen3.6-9B-Heretic-Uncensored-Thinking-Sweet-Madness-Q5_K_M-GGUF",
+  "slug": "kw-ki-qwen3-6-9b-heretic-uncensored-thinking-sweet-madness-q5_k_m-gguf",
+  "author": "KW-KI",
+  "url": "https://huggingface.co/KW-KI/Qwen3.6-9B-Heretic-Uncensored-Thinking-Sweet-Madness-Q5_K_M-GGUF",
+  "created_at": "2026-09-17T18:02:57.000Z",
+  "updated_at": "2026-09-17T18:03:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "unsloth",
+    "heretic",
+    "uncensored",
+    "abliterated",
+    "fine tune",
+    "creative",
+    "creative writing",
+    "fiction writing",
+    "plot generation",
+    "sub-plot generation",
+    "story generation",
+    "scene continue",
+    "storytelling",
+    "fiction story",
+    "science fiction",
+    "romance",
+    "all genres",
+    "story",
+    "writing",
+    "vivid prosing",
+    "vivid writing",
+    "fiction",
+    "roleplaying",
+    "bfloat16",
+    "all use cases",
+    "llama-cpp",
+    "gguf-my-repo",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "base_model:DavidAU/Qwen3.6-9B-Heretic-Uncensored-Thinking-Sweet-Madness",
+    "base_model:quantized:DavidAU/Qwen3.6-9B-Heretic-Uncensored-Thinking-Sweet-Madness",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8631101056,
+  "parameters_human": "8.63B",
+  "storage_bytes": 6253770592,
+  "storage_human": "6.3 GB",
+  "base_model": "DavidAU/Qwen3.6-9B-Heretic-Uncensored-Thinking-Sweet-Madness",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KW France | Réseau immobilier n°1 mondial – Achat, Vente, Estimation",
+      "url": "https://kwfrance.com/",
+      "snippet": "La plateforme immobilière de référence pour les agents et leurs clients. Présents sur 5 continents, dans 61 pays, dans plus de 1 000 …"
+    },
+    {
+      "title": "Kilowatt (kW): définition, convertisseur et comment convertir",
+      "url": "https://www.rapidtables.org/fr/electric/kW.html",
+      "snippet": "Le kilowatt (symbole: kW) est une unité de puissance électrique. Un kilowatt équivaut à 1000 watts: 1kW = 1000W"
+    },
+    {
+      "title": "The Perfect Suspension for Every Demand KW suspensions",
+      "url": "https://www.kwsuspensions.com/de-en",
+      "snippet": "Welcome to KW suspensions! With us you will find a suspension solution for every use Whether road, trackday or professional …"
+    },
+    {
+      "title": "kVA, kW, Ampère : différences et conversion (2026)",
+      "url": "https://www.fournisseurs-electricite.com/compteur/linky/puissance/kva-kw-kilo-watt-volt-ampere",
+      "snippet": "Feb 7, 2014 · Le kW est l'unité de mesure de la puissance électrique d'un appareil (la puissance active), et le kVA est l'unité de la …"
+    },
+    {
+      "title": "kW, kWh, kWc, kWhc ? Les unités de mesure de l'énergie | Hellio",
+      "url": "https://www.hellio.com/actualites/conseils/unites-kw-kwh-kwc-kwhc",
+      "snippet": "Aug 24, 2026 · Lorsqu’il est question d’énergie, on parle souvent de différentes unités de mesure, qui peuvent parfois être …"
+    }
+  ]
+}

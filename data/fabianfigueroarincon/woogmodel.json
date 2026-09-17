@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "fabianfigueroarincon/WoogModel",
+  "slug": "fabianfigueroarincon-woogmodel",
+  "author": "fabianfigueroarincon",
+  "url": "https://huggingface.co/fabianfigueroarincon/WoogModel",
+  "created_at": "2026-09-17T19:11:16.000Z",
+  "updated_at": "2026-09-17T22:39:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "flutter",
+    "firebase",
+    "code",
+    "thesis",
+    "python",
+    "javascript",
+    "dataset:fabianfigueroarincon/WoogApp-ejemplos",
+    "base_model:openai/gpt-oss-120b",
+    "base_model:finetune:openai/gpt-oss-120b",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "openai/gpt-oss-120b",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "吻戏两人在办公室里激情热吻 舌吻原声 - 知乎",
+      "url": "https://www.zhihu.com/zvideo/1455965658286145536",
+      "snippet": "发布于 2021-12-19 02:32 ・ 29.2 万次播放"
+    },
+    {
+      "title": "有哪些国内外知名的票务网站？ - 知乎",
+      "url": "https://www.zhihu.com/question/19661099",
+      "snippet": "Official Ticketmaster site 维基上“Tikcketmaster”的介绍很多，它是非常老牌的一家票务网站，主营B2C在线零售，业务遍及20多个国 …"
+    },
+    {
+      "title": "中国历年房价走势详细是怎样的？ - 知乎",
+      "url": "https://www.zhihu.com/question/41494205",
+      "snippet": "数据采集 首先想到的办法是用爬虫来爬取各个房产销售网站的数据，但是不同网站的数据差异较大，而且网站放出的数据不全。 目前 …"
+    },
+    {
+      "title": "请问HrBp和传统hr有什么区别？hrbp在做什么样的工作？ - 知乎",
+      "url": "https://www.zhihu.com/question/279811733",
+      "snippet": "来自电视剧《万物生灵》 01 HRBP和传统HR在内部组织架构上，是不同的分工模式 传统的HR，我们都非常熟悉，它是基于6大模块的 …"
+    },
+    {
+      "title": "ticketmaster怎么转票？ - 知乎",
+      "url": "https://www.zhihu.com/question/279517813",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    }
+  ]
+}

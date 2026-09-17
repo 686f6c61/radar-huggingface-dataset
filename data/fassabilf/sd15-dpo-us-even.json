@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "fassabilf/sd15-dpo-us-even",
+  "slug": "fassabilf-sd15-dpo-us-even",
+  "author": "fassabilf",
+  "url": "https://huggingface.co/fassabilf/sd15-dpo-us-even",
+  "created_at": "2026-09-17T16:04:24.000Z",
+  "updated_at": "2026-09-18T01:23:44.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "tensorboard",
+    "safetensors",
+    "stable-diffusion",
+    "fairness",
+    "gender-bias",
+    "instruction-fine-tuning",
+    "dpo",
+    "diffusion-dpo",
+    "base_model:stable-diffusion-v1-5/stable-diffusion-v1-5",
+    "base_model:finetune:stable-diffusion-v1-5/stable-diffusion-v1-5",
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 36102556931,
+  "storage_human": "36.1 GB",
+  "base_model": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.com/",
+      "snippet": "Find local businesses, view maps and get driving directions in Google Maps."
+    },
+    {
+      "title": "Google Earth",
+      "url": "https://maps.google.com/intl/en/earth/",
+      "snippet": "Google Earth is the most photorealistic, digital version of our planet. Where do the images come from? How are they they put …"
+    },
+    {
+      "title": "Google Earth",
+      "url": "https://maps.google.com/intl/es/earth/download/gep/agree.html",
+      "snippet": "Google Earth te permite volar a cualquier lugar de la Tierra para ver imágenes de satélite, mapas, imágenes de relieve y edificios 3D, …"
+    },
+    {
+      "title": "Google Earth",
+      "url": "https://maps.google.com/intl/fr/earth/download/gep/agree.html",
+      "snippet": "Jun 4, 2025 · Avec Google Earth, voyagez aux quatre coins du monde en visualisant des images satellite, des cartes, des reliefs ou …"
+    },
+    {
+      "title": "Tokyo, JP - Explore in Google Maps",
+      "url": "https://maps.google.com/maps/search/,+Tokyo",
+      "snippet": "Japan. Map data ©2026 Google Terms 20 km Japan."
+    }
+  ]
+}

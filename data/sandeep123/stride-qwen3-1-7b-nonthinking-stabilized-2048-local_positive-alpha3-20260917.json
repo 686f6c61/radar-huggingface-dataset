@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "sandeep123/stride-qwen3-1.7b-nonthinking-stabilized-2048-local_positive-alpha3-20260917",
+  "slug": "sandeep123-stride-qwen3-1-7b-nonthinking-stabilized-2048-local_positive-alpha3-20260917",
+  "author": "sandeep123",
+  "url": "https://huggingface.co/sandeep123/stride-qwen3-1.7b-nonthinking-stabilized-2048-local_positive-alpha3-20260917",
+  "created_at": "2026-09-17T12:15:26.000Z",
+  "updated_at": "2026-09-20T20:00:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "reinforcement-learning",
+    "math",
+    "nonthinking",
+    "stride",
+    "text-generation",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:adapter:Qwen/Qwen3-1.7B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19697889686,
+  "storage_human": "19.7 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "多地精神病医院更名为类似「第X人民医院」 的说法，有何积极意义？ …",
+      "url": "https://www.zhihu.com/question/2079660490943371058",
+      "snippet": "多地精神病医院更名为类似「第X人民医院」 的说法，有何积极意义？ 因病耻感耽误就医的影响有多大？ 又一所地方精神病医院完成 …"
+    },
+    {
+      "title": "Yandex (全网版）登录入口 yandex引擎全球版地址入口链接",
+      "url": "https://zhidao.baidu.com/question/2130668061390532747.html",
+      "snippet": "Nov 11, 2025 · Yandex (全网版）登录入口 yandex引擎全球版地址入口链接"
+    },
+    {
+      "title": "x^x 的导数怎么算？ - 知乎",
+      "url": "https://www.zhihu.com/question/407450664",
+      "snippet": "Jul 17, 2020 · 知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知 …"
+    },
+    {
+      "title": "e的x次方的图像是怎么画的？_百度知道",
+      "url": "https://zhidao.baidu.com/question/391959772.html",
+      "snippet": "e的x次方的图像是怎么画的？ y等于e的x次方是一种指数函数，其图像是单调递增，x∈R，y>0，与y轴相交于（0,1）点，图像位于X轴 …"
+    },
+    {
+      "title": "迅雷浏览器官方入口-迅雷浏览器网页版登录 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/2280283267234050228.html",
+      "snippet": "使用建议 首次访问：通过官方入口 http://x.xunlei.com 进入网页版，建议使用Chrome或Edge浏览器以获得最佳体验。 账号登录：注册 …"
+    }
+  ]
+}

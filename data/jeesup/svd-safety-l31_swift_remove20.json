@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l31_swift_remove20",
+  "slug": "jeesup-svd-safety-l31_swift_remove20",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l31_swift_remove20",
+  "created_at": "2026-09-17T18:28:17.000Z",
+  "updated_at": "2026-09-22T00:23:55.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama3",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "license:llama3.1",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766296,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Horse Racing Betting Odds - bet365 UK",
+      "url": "https://www.bet365.com/hub/en-gb/horse-racing",
+      "snippet": "See the latest Horse Racing Betting Odds from bet365. Bet on upcoming races antepost & In-Play, plus news, tips & more. …"
+    },
+    {
+      "title": "bet365 US - where do you want to play?",
+      "url": "https://www.bet365.com/",
+      "snippet": "Experience the thrill of all the racing action with live updates, race results, latest odds, and live streaming Why bet365? We built and …"
+    },
+    {
+      "title": "Play Online Games | Casino, Roulette & Slots | bet365",
+      "url": "https://casino.bet365.com/home",
+      "snippet": "Play a variety of online games including slots, roulette and table games at bet365 Casino."
+    },
+    {
+      "title": "Horse Racing Betting Tips for Wednesday 5th August - bet365 News UK",
+      "url": "https://news.bet365.com/en-gb/article/horse-racing-wednesday-tips-and-predictions/2026080413542412551",
+      "snippet": "Aug 4, 2026 · Read the latest horse racing betting tips, predictions and odds for horse racing on Wednesday 5th August."
+    },
+    {
+      "title": "Horse Racing Betting Tips for Tuesday 4th August - bet365 News UK",
+      "url": "https://news.bet365.com/en-gb/article/horse-racing-tuesday-4th-august-prediction-and-tips/2026080315223160994",
+      "snippet": "Aug 3, 2026 · Read the horse racing betting tips, predictions and odds for horse racing at Ffos Las and Lingfield on Tuesday 4th …"
+    }
+  ]
+}

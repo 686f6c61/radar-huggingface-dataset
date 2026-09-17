@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Tomas0626/amparo-lora-qwen2.5-7b",
+  "slug": "tomas0626-amparo-lora-qwen2-5-7b",
+  "author": "Tomas0626",
+  "url": "https://huggingface.co/Tomas0626/amparo-lora-qwen2.5-7b",
+  "created_at": "2026-09-17T14:56:57.000Z",
+  "updated_at": "2026-09-17T14:57:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 31637100,
+  "storage_human": "32 MB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kit de Couverture de Pénétration Murale et de Conduite CVC avec Joint ...",
+      "url": "https://www.amazon.fr/Couverture-P%C3%A9n%C3%A9tration-Murale-Conduite-Joint/dp/B0HDZNKLCT",
+      "snippet": "Protection complète : conçue avec un joint souple pour une étanchéité parfaite, cette plaque de recouvrement murale protège contre …"
+    },
+    {
+      "title": "Kit de Couverture de pénétration Murale et de Conduite CVC",
+      "url": "https://www.amazon.fr/DIRBAK-Couverture-p%C3%A9n%C3%A9tration-Couvercle-climatiseur/dp/B0HBFN5LDY",
+      "snippet": "[Dissimule les trous dans les murs] Cache instantanément les pénétrations disgracieuses dans les murs, la vieille mousse décolorée …"
+    },
+    {
+      "title": "Kit Couverture Ligne Pénétration Murale CVC Blanc - ManoMano",
+      "url": "https://www.manomano.fr/p/kit-couverture-ligne-penetration-murale-cvc-blanc-plastique-fendu-ac-avec-joint-souple-pour-climatiseur-interieur-exterieur-216547371?msockid=2b5a0d8f59c86dfd150c1a5858d66cb3",
+      "snippet": "Résistant aux intempéries : comporte un joint souple qui offre une étanchéité étanche pour une excellente protection contre le soleil, …"
+    },
+    {
+      "title": "Kit Couverture Ligne Pénétration Murale CVC Gris - ManoMano",
+      "url": "https://www.manomano.fr/p/kit-couverture-ligne-penetration-murale-cvc-gris-plastique-fendu-ac-avec-joint-souple-passage-discret-des-tuyaux-refrigerant-216548076?msockid=2b5a0d8f59c86dfd150c1a5858d66cb3",
+      "snippet": "Plusieurs applications: gardez votre CA, les pompes à chaleur et vos systèmes sans conduits propres et votre mur immaculé tout au …"
+    },
+    {
+      "title": "KIMISS Kit de Couverture de Ligne de PéNétration Murale CVC",
+      "url": "https://www.amazon.com.be/KIMISS-Couverture-Ligne-P%C3%A9N%C3%A9tration-Murale/dp/B0HHF4QKGN",
+      "snippet": "Systèmes de cond 【Créez 】 - l'esthétique de votre maison en éliminant les pénétrations disgracieuses, la mousse jaunie et …"
+    }
+  ]
+}

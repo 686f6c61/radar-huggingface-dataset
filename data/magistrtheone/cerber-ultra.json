@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "MagistrTheOne/CERBER-ULTRA",
+  "slug": "magistrtheone-cerber-ultra",
+  "author": "MagistrTheOne",
+  "url": "https://huggingface.co/MagistrTheOne/CERBER-ULTRA",
+  "created_at": "2026-09-17T18:21:22.000Z",
+  "updated_at": "2026-09-17T18:21:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "ultralytics",
+    "onnx",
+    "yolo26",
+    "object-detection",
+    "cerber-ultra",
+    "ru",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 190770696,
+  "storage_human": "191 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Assurance emprunteur : indemnitaire ou forfaitaire, quelle …",
+      "url": "https://macif.securimut.fr/guide-assurance-emprunteur/garanties/assurance-emprunteur-forfaitaire-indemnitaire",
+      "snippet": "2 days ago · Lorsque vous souscrivez une assurance emprunteur, il est essentiel de comprendre les modalités de remboursement en …"
+    },
+    {
+      "title": "Assurance emprunteur : remboursement forfaitaire ou indemnitaire ?",
+      "url": "https://reassurez-moi.fr/guide/assurance-pret-immobilier/forfaitaire-indemnitaire",
+      "snippet": "May 13, 2026 · Comprendre la différence entre une assurance emprunteur forfaitaire et une assurance indemnitaire vous permet de …"
+    },
+    {
+      "title": "Assurance emprunteur forfaitaire ou indemnitaire : quelles …",
+      "url": "https://www.malakoffhumanis.com/particuliers/assurance-emprunteur/assurance-emprunteur-forfaitaire-indemnitaire/",
+      "snippet": "Assurance emprunteur indemnitaire ou forfaitaire : découvrez les différences entre ces deux modes d’indemnisation et leurs …"
+    },
+    {
+      "title": "Assurance emprunteur : remboursement forfaitaire ou indemnitaire",
+      "url": "https://www.flakehal.fr/assurance-pret-immobilier/garanties-assurance-emprunteur/remboursement-forfaitaire-ou-indemnitaire/",
+      "snippet": "Découvrez les différences entre le remboursement forfaitaire et indemnitaire en assurance emprunteur. Avantages, limites, exemples …"
+    },
+    {
+      "title": "Assurance emprunteur forfaitaire ou indemnitaire ?",
+      "url": "https://hephata.fr/assurance-emprunteur-forfaitaire-ou-indemnitaire/",
+      "snippet": "Sep 6, 2026 · Consultez votre notice d’information d’assurance emprunteur et rendez-vous à la rubrique « mode de prestation » ou « …"
+    }
+  ]
+}

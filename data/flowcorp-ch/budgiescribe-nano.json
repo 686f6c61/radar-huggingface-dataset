@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "flowcorp-ch/BudgieScribe-Nano",
+  "slug": "flowcorp-ch-budgiescribe-nano",
+  "author": "flowcorp-ch",
+  "url": "https://huggingface.co/flowcorp-ch/BudgieScribe-Nano",
+  "created_at": "2026-09-17T17:37:17.000Z",
+  "updated_at": "2026-09-21T12:14:09.000Z",
+  "license": "budgiescribe-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "fr",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "safetensors",
+    "qwen3",
+    "asr",
+    "automatic-speech-recognition",
+    "text-normalization",
+    "inverse-text-normalization",
+    "punctuation",
+    "truecasing",
+    "speech-to-text",
+    "dictation",
+    "post-processing",
+    "french",
+    "english",
+    "text-generation",
+    "conversational",
+    "fr",
+    "en",
+    "dataset:linagora/SUMM-RE",
+    "dataset:facebook/voxpopuli",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 1996966898,
+  "storage_human": "2.0 GB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Afstandsbediening afstemmen op je tv | KPN",
+      "url": "https://www.kpn.com/service/televisie/afstandsbediening/instellen",
+      "snippet": "Vind de code van je tv en wij helpen je jouw afstandsbediening aan je tv te koppelen."
+    },
+    {
+      "title": "Afstandsbediening instellen en bekijk de andere opties | KPN",
+      "url": "https://www.kpn.com/service/ugs/afstandsbediening",
+      "snippet": "Alles over het instellen, gebruiken, bestellen en oplossen van problemen met je afstandsbediening voor KPN TV en Digitenne."
+    },
+    {
+      "title": "KPN afstandsbediening: complete uitleg",
+      "url": "https://instructie.org/kpn-afstandsbediening-complete-uitleg/",
+      "snippet": "Apr 30, 2026 · KPN afstandsbediening uitgelegd! Handleiding, functies, probleemoplossing en veelgestelde vragen. Vind snel …"
+    },
+    {
+      "title": "Afstandsbediening voor Interactieve TV - KPN",
+      "url": "https://apparatuurvoorthuis.kpn.com/nl/132209/afstandsbediening-voor-interactieve-tv/",
+      "snippet": "Deze infrarood afstandsbediening is speciaal ontworpen om onderstaande tv-ontvangers van KPN Interactieve TV te bedienen. i.v.m. …"
+    },
+    {
+      "title": "KPN tv-ontvanger afstandsbediening koppelen of resetten",
+      "url": "https://community.kpn.com/kennisbank-afstandsbedieningen-184/kpn-tv-ontvanger-afstandsbediening-koppelen-of-resetten-562428",
+      "snippet": "Apr 6, 2022 · Wil je de KPN afstandsbediening van jouw KPN tv-ontvanger (HMB2260, VIP2952 of VIP5202) koppelen aan jouw tv? …"
+    }
+  ]
+}

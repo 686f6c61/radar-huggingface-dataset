@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Manasguptamzn/qwen-security-model-v2",
+  "slug": "manasguptamzn-qwen-security-model-v2",
+  "author": "Manasguptamzn",
+  "url": "https://huggingface.co/Manasguptamzn/qwen-security-model-v2",
+  "created_at": "2026-09-17T13:16:47.000Z",
+  "updated_at": "2026-09-17T13:16:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 71356532,
+  "storage_human": "71 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Football transfers, rumours, market values and news | Transfermarkt",
+      "url": "https://www.transfermarkt.com/",
+      "snippet": "Transfermarkt - The football website for transfers, market values, rumours and stats"
+    },
+    {
+      "title": "Fußball-Transfers, Gerüchte, Marktwerte und News | Transfermarkt",
+      "url": "https://www.transfermarkt.de/",
+      "snippet": "Transfermarkt - Das Fußball-Portal mit Transfers, Marktwerten, Gerüchten und Statistiken"
+    },
+    {
+      "title": "Transferuri de fotbal, zvonuri, valori de piață și știri | Transfermarkt",
+      "url": "https://www.transfermarkt.ro/",
+      "snippet": "Transfermarkt - Portalul de fotbal cu transferuri, marje de profit, jucători și statistici"
+    },
+    {
+      "title": "Transferuri de fotbal, zvonuri, valori de piață și știri | Transfermarkt",
+      "url": "https://www.transfermarkt.ro/?hl=en-US/\\%27/\\%27\\%27",
+      "snippet": "Sie haben erfolgreich Ihre Einwilligung in die Nutzung von Transfermarkt mit Tracking und Cookies widerrufen. Sie können sich jetzt …"
+    },
+    {
+      "title": "Transfers & Rumours | Transfermarkt",
+      "url": "https://www.transfermarkt.co.uk/navigation/transfersundgeruechte",
+      "snippet": "6 days ago · Most viewed transfer stats Available managers Free agents Manchester United | Transfers of the current season The …"
+    }
+  ]
+}

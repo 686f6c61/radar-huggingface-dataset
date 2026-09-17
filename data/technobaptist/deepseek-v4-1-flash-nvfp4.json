@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "TechnoBaptist/DeepSeek-V4.1-Flash-NVFP4",
+  "slug": "technobaptist-deepseek-v4-1-flash-nvfp4",
+  "author": "TechnoBaptist",
+  "url": "https://huggingface.co/TechnoBaptist/DeepSeek-V4.1-Flash-NVFP4",
+  "created_at": "2026-09-17T13:42:11.000Z",
+  "updated_at": "2026-09-17T13:42:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "Model Optimizer",
+  "languages": [],
+  "tags": [
+    "Model Optimizer",
+    "safetensors",
+    "deepseek_v41",
+    "nvidia",
+    "ModelOpt",
+    "DeepSeekV4",
+    "quantized",
+    "FP4",
+    "fp4",
+    "image-text-to-text",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4.1-Flash",
+    "license:mit",
+    "8-bit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 763205315794,
+  "parameters_human": "763.21B",
+  "storage_bytes": 527309220165,
+  "storage_human": "527.3 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Paramètres messagerie club-internet - La Communauté SFR",
+      "url": "https://la-communaute.sfr.fr/t5/sfr-mail/param%C3%A8tres-messagerie-club-internet/td-p/2206295",
+      "snippet": "Jun 5, 2020 · Bonjour Pour récupérer mes messages \"club-internet\" dans ma boite mail SFR, quels sont les paramètres serveur …"
+    },
+    {
+      "title": "exporter des dossiers de ma boite mail vers mon pc",
+      "url": "https://la-communaute.sfr.fr/t5/sfr-mail/exporter-des-dossiers-de-ma-boite-mail-vers-mon-pc/td-p/2414954",
+      "snippet": "‎ 27/06/2023 11h02 Bonjour @gerardve04, Si votre intention est de sauvegarder l'intégralité du contenu de votre messagerie SFR, …"
+    },
+    {
+      "title": "mettre à jour mon mot de passe boite mail neuf.fr - RED by SFR",
+      "url": "https://communaute.red-by-sfr.fr/t5/Mon-compte-client/mettre-%C3%A0-jour-mon-mot-de-passe-boite-mail-neuf-fr/td-p/619184",
+      "snippet": "Oct 18, 2025 · Bonjour j'utilise pour mon abonnement adsl red une boite mail en neuf.fr , j'y reçois les messages de facturation etc. et …"
+    },
+    {
+      "title": "RED by SFR - Mon compte client - Infos & Questions",
+      "url": "https://communaute.red-by-sfr.fr/t5/Mon-compte-client/bd-p/forum-compte-client",
+      "snippet": "Sep 8, 2026 · Posez toutes vos questions sur nos services en ligne et l’appli RED & Moi"
+    },
+    {
+      "title": "Résolu : comment récuperer ma boite mail - La Communauté SFR",
+      "url": "https://la-communaute.sfr.fr/t5/sfr-mail/comment-r%C3%A9cuperer-ma-boite-mail/td-p/2248424",
+      "snippet": "Dec 3, 2020 · Mon adresse mail neuf.fr a été créée il y a 15 ans à partir de la ligne fixe sfr de mon ex compagne;celle ci a résilié sa …"
+    }
+  ]
+}

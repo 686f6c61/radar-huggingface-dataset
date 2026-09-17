@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "mradermacher/XORTRON.CriminalComputing.larger-GGUF",
+  "slug": "mradermacher-xortron-criminalcomputing-larger-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/XORTRON.CriminalComputing.larger-GGUF",
+  "created_at": "2026-09-17T19:00:20.000Z",
+  "updated_at": "2026-09-18T01:50:51.000Z",
+  "license": "wtfpl",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "en",
+    "fr",
+    "de",
+    "es",
+    "it",
+    "pt",
+    "zh",
+    "ja",
+    "ru",
+    "ko",
+    "base_model:gdorane01/XORTRON.CriminalComputing.larger",
+    "base_model:quantized:gdorane01/XORTRON.CriminalComputing.larger",
+    "license:wtfpl",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 122610069504,
+  "parameters_human": "122.61B",
+  "storage_bytes": 832244635072,
+  "storage_human": "832.2 GB",
+  "base_model": "gdorane01/XORTRON.CriminalComputing.larger",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Réinitialiser votre mot de passe SFR - Espace client SFR",
+      "url": "https://espace-client.sfr.fr/gestion-securite/mot-de-passe/oublie/identifiant",
+      "snippet": "Tous les champs sont obligatoires. Votre compte est bloqué ou vous avez oublié votre mot de passe ? Saisissez votre identifiant …"
+    },
+    {
+      "title": "Récupérer votre identifiant SFR - Espace Client SFR",
+      "url": "https://espace-client.sfr.fr/gestion-securite/identifiant/oublie/accueil",
+      "snippet": "Votre compte SFR est bloqué ou vous avez oublié votre mot de passe ? Saisissez votre identifiant pour recevoir un code et …"
+    },
+    {
+      "title": "ODR Accessoires: offre de remboursement SFR",
+      "url": "https://espace-client.sfr.fr/odr/offres-remboursement/",
+      "snippet": "Aug 18, 2026 · Pour suivre votre demande de remboursement ODR SFR, rendez-vous sur la page dédiée à l'offre, connectez-vous à …"
+    },
+    {
+      "title": "Espace Client SFR - Gestion de mon compte SFR",
+      "url": "https://espace-client.sfr.fr/odr/login/cas",
+      "snippet": ""
+    },
+    {
+      "title": "Suivi de commande - Espace Client SFR",
+      "url": "https://espace-client.sfr.fr/suivre-ma-commande/rechercheMobile",
+      "snippet": "Vous avez créé un identifiant lors de la prise de commande ? Connectez-vous"
+    }
+  ]
+}

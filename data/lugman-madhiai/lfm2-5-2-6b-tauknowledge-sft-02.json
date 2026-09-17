@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "lugman-madhiai/LFM2.5-2.6B-TauKnowledge-SFT-02",
+  "slug": "lugman-madhiai-lfm2-5-2-6b-tauknowledge-sft-02",
+  "author": "lugman-madhiai",
+  "url": "https://huggingface.co/lugman-madhiai/LFM2.5-2.6B-TauKnowledge-SFT-02",
+  "created_at": "2026-09-17T16:07:15.000Z",
+  "updated_at": "2026-09-17T16:07:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:LiquidAI/LFM2.5-2.6B",
+    "base_model:finetune:LiquidAI/LFM2.5-2.6B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2697198592,
+  "parameters_human": "2.70B",
+  "storage_bytes": 5412333155,
+  "storage_human": "5.4 GB",
+  "base_model": "LiquidAI/LFM2.5-2.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kirjautuminen Gmailiin - Tietokone - Gmail Ohjeet",
+      "url": "https://support.google.com/mail/answer/8494?hl=fi&co=GENIE.Platform%3DDesktop",
+      "snippet": "Kirjaudu Gmailiin Vinkki: Jos kirjaudut sisään julkisella tietokoneella, muista kirjautua ulos ennen kuin poistut tietokoneelta. Lue lisää …"
+    },
+    {
+      "title": "Gérer la calculatrice, le convertisseur d'unités et les codes couleur",
+      "url": "https://support.google.com/websearch/answer/3284611?hl=fr",
+      "snippet": "Gérer la calculatrice, le convertisseur d'unités et les codes couleur Saisissez des équations mathématiques ou des conversions dans …"
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://www.answers.microsoft.com/zh-hans/windows/forum/all/ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¥ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¤ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â½ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¤ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â»ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â½win8ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚ÂºÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â´ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â°/d8c51abf-b863-4da3-9596-797deace59f7",
+      "snippet": ""
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://www.answers.microsoft.com/ja-jp/windows/forum/windows_7-security/ÃƒÂ£Ã†â€™ÃƒÂ¢Ã‚Â£ÃƒÂ£Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÂ£Ã¢â‚¬Å¡ÃƒÂ¢Ã‚Â¦ÃƒÂ£Ã†â€™ÃƒÂ¢Ã‚Â£ÃƒÂ£Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÂ£Ã¢â‚¬Å¡ÃƒÂ¢Ã‚Â¼ÃƒÂ£Ã†â€™ÃƒÂ¢Ã‚Â£ÃƒÂ£Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¥Ã‚Â¡ÃƒÂ£Ã¢â‚¬Å¡ÃƒÂ¢Ã‚Â¶ÃƒÂ£Ã†â€™ÃƒÂ¢Ã‚Â£ÃƒÂ£Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÂ£Ã¢â‚¬Å¡ÃƒÂ¢Ã‚Â¼ÃƒÂ£Ã†â€™ÃƒÂ¢Ã‚Â£ÃƒÂ£Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¥Ã‚Â¡ÃƒÂ£Ã¢â‚¬Å¡ÃƒÂ¢Ã‚Â¢/7ffe7a9b-d0cf-454c-b3db-731542747656",
+      "snippet": ""
+    },
+    {
+      "title": "建立用於 Gmail 的 Google 帳戶",
+      "url": "https://support.google.com/mail/answer/56256?hl=zh-Hant",
+      "snippet": "重要事項： 建立新的 Google 帳戶前，請先登出目前的帳戶。 瞭解如何登出 Gmail。 在裝置上前往 Google 帳戶登入頁面。 按一下「 …"
+    }
+  ]
+}

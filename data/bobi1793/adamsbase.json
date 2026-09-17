@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Bobi1793/AdamsBase",
+  "slug": "bobi1793-adamsbase",
+  "author": "Bobi1793",
+  "url": "https://huggingface.co/Bobi1793/AdamsBase",
+  "created_at": "2026-09-17T19:59:42.000Z",
+  "updated_at": "2026-09-17T19:59:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 222903552,
+  "parameters_human": "222.9M",
+  "storage_bytes": 445837784,
+  "storage_human": "446 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OFDb - Parker (2013)",
+      "url": "https://www.ofdb.de/film/232687,Parker",
+      "snippet": "Oct 20, 2012 · Bei einem großen Freizeitpark werden an jedem Wochenende hohe Einnahmen erzielt – genau der richtige Job für …"
+    },
+    {
+      "title": "OFDb - Parker (1985)",
+      "url": "https://www.ofdb.de/film/8271,Parker",
+      "snippet": "May 24, 2001 · Parker (1985) David Parker ist verschwunden. Gefesselt und mißhandelt wird er aufgefunden - doch niemand will ihm …"
+    },
+    {
+      "title": "Parker Motion Systems Experience Center in Offenburg",
+      "url": "https://discover.parker.com/ParkerMotionSystemsExperienceCenter_ContactUS",
+      "snippet": "Parker Motion Systems Experience Center The Parker Motion Systems Experience Center in Offenburg, Germany, is designed to …"
+    },
+    {
+      "title": "Categories | ParkerDB",
+      "url": "https://parkerdb.com/categories/",
+      "snippet": "Categories | ParkerDB Categories Tags Categories Tags"
+    },
+    {
+      "title": "OFDb - Parker (2013) - Blu-ray Disc: Constantin / Highlight",
+      "url": "https://www.ofdb.de/fassung/232687,363031,Parker/",
+      "snippet": "Jul 4, 2013 · - Jason Statham (Parker) - Jennifer Lopez (Leslie Rodgers) - Michael Chiklis (Melander) - Wendell Pierce (Carlson) - …"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Kiwen1.2-27B-GGUF",
+  "slug": "mradermacher-kiwen1-2-27b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Kiwen1.2-27B-GGUF",
+  "created_at": "2026-09-17T17:46:37.000Z",
+  "updated_at": "2026-09-17T19:00:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen3.8",
+    "reasoning",
+    "agentic",
+    "vietnamese",
+    "math",
+    "kimi",
+    "distillation",
+    "kiwen1.1",
+    "transformer",
+    "RLVR",
+    "en",
+    "base_model:beyoru/Kiwen1.2-27B",
+    "base_model:quantized:beyoru/Kiwen1.2-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 190780464128,
+  "storage_human": "190.8 GB",
+  "base_model": "beyoru/Kiwen1.2-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "60 Millions de Consommateurs — Accueil",
+      "url": "https://www.60millions-mag.com/",
+      "snippet": "Aug 7, 2026 · 60 millions de consommateurs, un magazine indépendant au service de tous les consommateurs."
+    },
+    {
+      "title": "Amazon Haul : notre test révèle de sérieux problèmes de conformité",
+      "url": "https://www.60millions-mag.com/commerce/article/amazon-haul-la-foire-aux-produits-non-conformes-20260506/",
+      "snippet": "May 6, 2026 · Amazon Haul : notre test révèle de sérieux problèmes de conformité Des milliers d’objets sont vendus quelques euros …"
+    },
+    {
+      "title": "Hayao Miyazaki Collection aktuell bei Amazon reduziert",
+      "url": "https://www.dvd-forum.at/hayao-miyazaki-collection-aktuell-bei-amazon-reduziert",
+      "snippet": "May 12, 2026 · Anime- und Studio-Ghibli-Fans sollten aktuell einen Blick zu Amazon werfen. Dort ist die „Hayao Miyazaki Collection …"
+    },
+    {
+      "title": "Amazon startet „Couchella“-Aktion mit zahlreichen Film-Angeboten",
+      "url": "https://www.dvd-forum.at/amazon-startet-couchella-aktion-mit-zahlreichen-film-angeboten",
+      "snippet": "Aug 29, 2026 · Bei Amazon ist eine neue „Couchella“-Aktion gestartet, bei der zahlreiche Filme und Serien fürs Heimkino günstiger …"
+    },
+    {
+      "title": "Accueil - Devenir-Autoentrepreneur",
+      "url": "https://devenir-autoentrepreneur.fr/",
+      "snippet": "Vous souhaitez lancer votre activité en toute simplicité grâce au statut d’auto-entrepreneur, mais vous ne savez pas par où …"
+    }
+  ]
+}

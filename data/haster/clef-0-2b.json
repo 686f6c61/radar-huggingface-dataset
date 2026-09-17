@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "haster/Clef-0.2B",
+  "slug": "haster-clef-0-2b",
+  "author": "haster",
+  "url": "https://huggingface.co/haster/Clef-0.2B",
+  "created_at": "2026-09-17T12:10:27.000Z",
+  "updated_at": "2026-09-17T12:35:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "symbolic-music",
+    "music-generation",
+    "musicxml",
+    "midi",
+    "remi",
+    "bar-major",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 201398272,
+  "parameters_human": "201.4M",
+  "storage_bytes": 402814096,
+  "storage_human": "403 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Telefonbuch von Helmut Fuchs in Salzburg auf herold.at",
+      "url": "https://www.herold.at/telefonbuch/salzburg/helmut-fuchs/",
+      "snippet": "Anschrift, Telefonnummer und weitere Kontaktdaten zu Helmut Fuchs in Salzburg im herold.at Telefonbuch finden."
+    },
+    {
+      "title": "Konzert · HELMUT FUCHS & PETER PEINSTINGL ·",
+      "url": "https://www.salzburgerfestspiele.at/p/konzert-helmut-fuchs-peter-peinstingl-festliche-klangpracht-2026",
+      "snippet": "Stiftskapellmeister Peter Peinstingl und Helmut Fuchs, Solotrompeter der Sächsischen Staatskapelle Dresden, laden zur Matinee in …"
+    },
+    {
+      "title": "Helmut Fuchs (Trompeter) – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Helmut_Fuchs_(Trompeter)",
+      "snippet": "Helmut Fuchs (Trompeter) Helmut Fuchs (* 1984 in Oberndorf bei Salzburg) ist ein österreichischer Trompeter und seit 2016 …"
+    },
+    {
+      "title": "Konzert · Helmut Fuchs & Peter Peinstingl · Festliche Klangpracht",
+      "url": "https://ticketgretchen.com/de/e/salzburg/18458/",
+      "snippet": "Mit der Ticket Gretchen App in nur 30 Sekunden zu Deinem Ticket - und das garantiert zum Originalpreis! Mit: Peter Peinstingl, …"
+    },
+    {
+      "title": "Helmut Fuchs (Jurist, 1949) – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Helmut_Fuchs_(Jurist,_1949)",
+      "snippet": "Helmut Fuchs (Jurist, 1949) Helmut Fuchs (* 17. Mai 1949 in Wien) ist ein österreichischer Jurist und Hochschullehrer."
+    }
+  ]
+}

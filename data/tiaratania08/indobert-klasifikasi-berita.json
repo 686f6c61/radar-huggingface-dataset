@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "tiaratania08/indobert-klasifikasi-berita",
+  "slug": "tiaratania08-indobert-klasifikasi-berita",
+  "author": "tiaratania08",
+  "url": "https://huggingface.co/tiaratania08/indobert-klasifikasi-berita",
+  "created_at": "2026-09-17T16:05:40.000Z",
+  "updated_at": "2026-09-17T16:05:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "id"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "indobert",
+    "indonesian-news",
+    "id",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124445189,
+  "parameters_human": "124.4M",
+  "storage_bytes": 995899923,
+  "storage_human": "996 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WEB.DE - kostenlose E-Mail-Adresse, FreeMail & Nachrichten",
+      "url": "https://web.de/",
+      "snippet": "Sichere Kommunikation, aktuelle Nachrichten und nützliche Online-Services - alles an einem Ort. Einfach, kostenlos und zuverlässig."
+    },
+    {
+      "title": "WEB.DE Login - ganz einfach",
+      "url": "https://anmelden.web.de/",
+      "snippet": "WEB.DE Login: E-Mail-Adresse anmelden oder einloggen – kompakte Anleitung zum WEB.DE Login und schnelle Hilfe bei Login …"
+    },
+    {
+      "title": "Was ist der WEB.DE Hilfe-Chat?",
+      "url": "https://hilfe.web.de/kontakt/chatbot.html",
+      "snippet": "Der rund um die Uhr verfügbare WEB.DE Hilfe-Chat beantwortet Ihre Fragen und unterstützt Sie bei der Verwendung Ihres WEB.DE …"
+    },
+    {
+      "title": "Webhosting für Ihre eigene Webseite| WEB.DE",
+      "url": "https://produkte.web.de/homepage-mail/webhosting/",
+      "snippet": "WEB.DE hilft Ihnen dabei, Ihren persönlichen Internetauftritt einfach und professionell selbst zu gestalten. Erstellen Sie Ihre eigene …"
+    },
+    {
+      "title": "WEB.DE Umzugsservice – Nehmen Sie Ihr altes Postfach mit!",
+      "url": "https://web.de/umzugsservice/",
+      "snippet": "Mit dem WEB.DE Umzugsservice ziehen Sie E-Mails, Kontakte, Termine und Dateien aus Ihrem alten Postfach ganz bequem in Ihr …"
+    }
+  ]
+}

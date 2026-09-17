@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Joshnish/mms-tts-kin-finetuned",
+  "slug": "joshnish-mms-tts-kin-finetuned",
+  "author": "Joshnish",
+  "url": "https://huggingface.co/Joshnish/mms-tts-kin-finetuned",
+  "created_at": "2026-09-17T13:43:43.000Z",
+  "updated_at": "2026-09-17T13:43:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-audio",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vits",
+    "text-to-audio",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 36285744,
+  "parameters_human": "36.3M",
+  "storage_bytes": 145235320,
+  "storage_human": "145 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "O R M A T O E U R O P E O P E R I L C U R R I C U L U M V I T A E",
+      "url": "https://trasparenza.unisalento.it/download/1596412.html",
+      "snippet": "• Date (da – a) 01.09.2020 – 30.09.2021 • Nome e indirizzo del datore di lavoro Consiglio per la ricerca in agricoltura e l'analisi …"
+    },
+    {
+      "title": "Gaetano Giudice - Research Fellow | LinkedIn",
+      "url": "https://it.linkedin.com/in/gaetano-giudice-2699b0a4/en",
+      "snippet": "In this study, we explored how strigolactone (SL) deficiency impacts plant stress and development, revealing some unexpected roles …"
+    },
+    {
+      "title": "Gaetano GIUDICE | PostDoc Position | Master in Agricultural ...",
+      "url": "https://www.researchgate.net/profile/Gaetano-Giudice-2",
+      "snippet": "Università degli Studi di Bari Aldo Moro| Università di Bari · Dipartimento di Scienze del Suolo, della Pianta e degli Alimenti …"
+    },
+    {
+      "title": "Gaetano Giudice - Postdoctoral researcher in plant breeding and ...",
+      "url": "https://it.linkedin.com/in/gaetano-giudice-2699b0a4",
+      "snippet": "In this study, we explored how strigolactone (SL) deficiency impacts plant stress and development, revealing some unexpected roles …"
+    },
+    {
+      "title": "Rubrica di ateneo — Centro Servizi Informatici – Università degli Studi ...",
+      "url": "https://csi.ict.uniba.it/tutorial/rubrica-di-ateneo",
+      "snippet": "Il servizio di rubrica consente all'utente di cercare il personale dell'ateneo applicando filtri per nome, ruolo, numero di telefono o …"
+    }
+  ]
+}

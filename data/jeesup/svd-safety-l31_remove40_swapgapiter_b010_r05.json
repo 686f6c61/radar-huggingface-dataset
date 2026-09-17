@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l31_remove40_swapgapiter_b010_r05",
+  "slug": "jeesup-svd-safety-l31_remove40_swapgapiter_b010_r05",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l31_remove40_swapgapiter_b010_r05",
+  "created_at": "2026-09-17T19:39:53.000Z",
+  "updated_at": "2026-09-17T19:43:51.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama3",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "license:llama3.1",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766296,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Connect to a VPN in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/experience/connectivity-networking/connect-to-a-vpn-in-windows",
+      "snippet": "This article explains how to create and connect to a VPN in Windows 11 to help secure your internet connection at work or on public …"
+    },
+    {
+      "title": "How to Add VPN in Windows 11: A Step-by-Step Guide | Microsoft ...",
+      "url": "https://techcommunity.microsoft.com/discussions/windows11/how-to-add-vpn-in-windows-11-a-step-by-step-guide/3782893",
+      "snippet": "Mar 29, 2023 · In this article, we will explore the different methods you can use to add a VPN to your Windows 11 device and provide …"
+    },
+    {
+      "title": "how to connect vpn - Microsoft Q&A",
+      "url": "https://learn.microsoft.com/en-us/answers/questions/4035858/how-to-connect-vpn",
+      "snippet": "Apr 2, 2024 · Before you can connect to a VPN, you must have a VPN profile on your PC. You can either create a VPN profile on …"
+    },
+    {
+      "title": "I have windows 11 how do I use the built in VPN? - Microsoft Q&A",
+      "url": "https://learn.microsoft.com/en-us/answers/questions/3744047/i-have-windows-11-how-do-i-use-the-built-in-vpn",
+      "snippet": "Jan 14, 2024 · Actually, Windows doesn't offer a VPN service. Windows does offer a VPN client, that you can use with a third-party …"
+    },
+    {
+      "title": "Use a proxy server in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/experience/connectivity-networking/use-a-proxy-server-in-windows",
+      "snippet": "This article explains how you can set up proxy and VPN connections in Windows. When you’re connected to the internet and using a …"
+    }
+  ]
+}

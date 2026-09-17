@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "farhadabas/test-project",
+  "slug": "farhadabas-test-project",
+  "author": "farhadabas",
+  "url": "https://huggingface.co/farhadabas/test-project",
+  "created_at": "2026-09-17T19:28:58.000Z",
+  "updated_at": "2026-09-18T18:13:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "quantized",
+    "lora",
+    "litert",
+    "text-generation",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 1854900592,
+  "storage_human": "1.9 GB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Twilight Teaser Trailer 2 | The Twilight Saga - YouTube",
+      "url": "https://www.youtube.com/watch?v=7tQk8pKnnVY",
+      "snippet": "Jul 22, 2008 · Watch the teaser trailer for the worldwide box office phenomenon! Starring Robert Pattinson & Kristen Stewart, …"
+    },
+    {
+      "title": "Twilight BREAKING DAWN 2 Trailer 2 Deutsch German 2012 FullHD | Teil 2",
+      "url": "https://www.youtube.com/watch?v=8OqQHSIK_Yk",
+      "snippet": "Nov 22, 2012 · Sie muss sich nun an das „Leben\" und ihre neuen Eigenschaften als Vampir gewöhnen, doch das gelingt ihr schneller …"
+    },
+    {
+      "title": "Twilight - Biss zum Morgengrauen - Twilight: Trailer #2 | IMDb",
+      "url": "https://www.imdb.com/de/video/vi4235788313/",
+      "snippet": "This is the second trailer for Twilight, directed by Catherine Hardwicke."
+    },
+    {
+      "title": "Twilight - Twilight: Trailer #2 | IMDb",
+      "url": "https://www.imdb.com/video/vi4235788313/",
+      "snippet": "This is the second trailer for Twilight, directed by Catherine Hardwicke."
+    },
+    {
+      "title": "Twilight - Biss zum Morgengrauen Trailer (2) DF - FILMSTARTS.de",
+      "url": "https://www.filmstarts.de/kritiken/131377/trailer/18854686.html",
+      "snippet": "Dec 25, 2008 · Schaut euch der Twilight - Biss zum Morgengrauen Trailer (Twilight - Biss zum Morgengrauen Trailer (2) DF). Twilight …"
+    }
+  ]
+}

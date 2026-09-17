@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Greynar/act__ClickTargetPreprocessThreeCamerasSetUpOneMultiplePieces",
+  "slug": "greynar-act__clicktargetpreprocessthreecamerassetuponemultiplepieces",
+  "author": "Greynar",
+  "url": "https://huggingface.co/Greynar/act__ClickTargetPreprocessThreeCamerasSetUpOneMultiplePieces",
+  "created_at": "2026-09-17T18:37:15.000Z",
+  "updated_at": "2026-09-17T18:37:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:Greynar/ClickTargetPreprocessThreeCamerasSetUpOneMultiplePieces",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206708304,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mahjong Trails - Facebook",
+      "url": "https://www.facebook.com/mahjongtrails/",
+      "snippet": "Play the best Mahjong game on Facebook!"
+    },
+    {
+      "title": "Mahjong Trails - Facebook",
+      "url": "https://www.facebook.com/mahjongtrails/wall/",
+      "snippet": "Recent updates to AdBlocker Plus can cause loading issues on various Facebook games. If this is happening to you, switch it off …"
+    },
+    {
+      "title": "Mahjong trails | Facebook",
+      "url": "https://www.facebook.com/groups/423672387964528/",
+      "snippet": "Hoy mi juego amaneció con 5 jugadores salamente. Me gustaría saber si a ustedes también les paso. Qué puedo hacer para …"
+    },
+    {
+      "title": "Games - Facebook",
+      "url": "https://www.facebook.com/appcenter/mahjongtrails/",
+      "snippet": "Experience Mahjong Trails on Facebook with great gameplay, no downloads required. Play now and enjoy the fun!"
+    },
+    {
+      "title": "Mahjong Trails Companions - Facebook",
+      "url": "https://apps.facebook.com/groups/388641044549009/",
+      "snippet": "5 days ago · Hello people, We’re currently experiencing an unexpected issue caused by Facebook’s services, which may be affecting …"
+    }
+  ]
+}

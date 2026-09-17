@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "sandeep123/stride-qwen3-4b-stabilized-2048-local_positive-alpha3-20260917",
+  "slug": "sandeep123-stride-qwen3-4b-stabilized-2048-local_positive-alpha3-20260917",
+  "author": "sandeep123",
+  "url": "https://huggingface.co/sandeep123/stride-qwen3-4b-stabilized-2048-local_positive-alpha3-20260917",
+  "created_at": "2026-09-17T12:15:15.000Z",
+  "updated_at": "2026-09-22T03:29:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "reinforcement-learning",
+    "math",
+    "nonthinking",
+    "stride",
+    "text-generation",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:adapter:Qwen/Qwen3-4B-Instruct-2507",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 26613498818,
+  "storage_human": "26.6 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Najnovije vijesti iz Hrvatske i svijeta | 24sata",
+      "url": "https://www.24sata.hr/",
+      "snippet": "PLUS+ News Sport Show LifeStyle Sci/Tech Viral Impressum Pretplata Uvjeti korištenja Pravila privatnosti Oglašavanje 24sata.biz …"
+    },
+    {
+      "title": "Vijesti, najnovije vijesti iz Hrvatske i Svijeta | 24sata",
+      "url": "https://www.24sata.hr/news",
+      "snippet": "Nadrogirani mladi&cacute; Duje E. (24) doslovno je &ccaron;upao stvari iz apartmana. Zbog stanja u kojem je bio, policija u utorak …"
+    },
+    {
+      "title": "Najnovije vijesti iz Hrvatske i svijeta | 24sata",
+      "url": "https://www.24sata.com/",
+      "snippet": ""
+    },
+    {
+      "title": "Home - 24sata.info",
+      "url": "https://24sata.info/",
+      "snippet": "3 days ago · Nakon kraja dolazi novi početak: Mika Muminović predstavio pjesmu „Ko je to?“ 24. Augusta 2026."
+    },
+    {
+      "title": "24 Sata",
+      "url": "https://24sata.org/",
+      "snippet": "Proudly Served by LiteSpeed Web Server at 24sata.org Port 443"
+    }
+  ]
+}

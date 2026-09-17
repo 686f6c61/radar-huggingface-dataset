@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "mradermacher/ibnsina-30b-chat-i1-GGUF",
+  "slug": "mradermacher-ibnsina-30b-chat-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/ibnsina-30b-chat-i1-GGUF",
+  "created_at": "2026-09-17T13:41:30.000Z",
+  "updated_at": "2026-09-17T16:08:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "fa",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "persian",
+    "farsi",
+    "ibnsina",
+    "qwen3_moe",
+    "chat",
+    "instruction-tuned",
+    "fa",
+    "en",
+    "base_model:ibnsina-llm/ibnsina-30b-chat",
+    "base_model:quantized:ibnsina-llm/ibnsina-30b-chat",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30532122624,
+  "parameters_human": "30.53B",
+  "storage_bytes": 324126068512,
+  "storage_human": "324.1 GB",
+  "base_model": "ibnsina-llm/ibnsina-30b-chat",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HD Sexfilme gratis - kostenlose XXX Sexfilme in HD ohne Anmeldung",
+      "url": "https://www.hd-sexfilme.com/",
+      "snippet": "HD-SEXFILME.com bietet dir eine große Auswahl an Sexfilmen in HD-Qualität. Jeden Tag werden neue Pornofilme veröffentlicht."
+    },
+    {
+      "title": "Die neuesten Porno-Videos & kostenlosen Sexfilme | xHamster",
+      "url": "https://ge.xhamster.desi/newest",
+      "snippet": "1 day ago · Schau auf xHamster mehr als Tausend der neuesten Porno-Videos! Täglich kommen weitere hinzu! Streame die …"
+    },
+    {
+      "title": "Die neuesten Sexfilme",
+      "url": "https://www.sexfilme.net/neue.html",
+      "snippet": "Hier findest du die neuesten Sexfilme in der Reihenfolge, wie sie bei uns online gingen. Die neuesten Pornofilme findest du oben und …"
+    },
+    {
+      "title": "Deutsche Pornofilme gratis - Pornos aus Deutschland",
+      "url": "https://www.halloporno.net/kategorie/deutsche-pornofilme/",
+      "snippet": "Guck dir deutsche Sexfilme an wo alte Omas, reife Hausfrauen oder private Amateure einen Porno drehen oder sich beim Ficken …"
+    },
+    {
+      "title": "Tube Pleasure | Gratis Tube Pornos",
+      "url": "https://tubepleasure.com/de/",
+      "snippet": "Porno Videos: Deutsch, Mutter, Reife Frau, Stiefmutter, Junge Frauen (18+), Oma, Japanisch Unzensiert, Alt Und Jung (18+), 18 …"
+    }
+  ]
+}

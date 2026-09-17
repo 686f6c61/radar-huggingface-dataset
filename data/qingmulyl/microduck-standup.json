@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "QingMuLYL/microduck-standup",
+  "slug": "qingmulyl-microduck-standup",
+  "author": "QingMuLYL",
+  "url": "https://huggingface.co/QingMuLYL/microduck-standup",
+  "created_at": "2026-09-17T13:27:03.000Z",
+  "updated_at": "2026-09-17T13:27:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "microduck",
+    "robotics",
+    "reinforcement-learning",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 793813,
+  "storage_human": "793813 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Citrix Workspace app 2603.10 for Windows",
+      "url": "https://www.citrix.com/downloads/workspace-app/windows/workspace-app-for-windows-latest.html",
+      "snippet": "Jun 18, 2026 · Citrix Workspace app can be used on domain and non-domain joined PCs, tablets, and thin clients. Provides high …"
+    },
+    {
+      "title": "Download Citrix Workspace app - Citrix",
+      "url": "https://www.citrix.com/downloads/workspace-app/",
+      "snippet": "Feb 18, 2026 · Citrix Workspace app 2405 for Windows Jul 8, 2024 Citrix Workspace app 2403.1 for Windows May 21, 2024 Citrix …"
+    },
+    {
+      "title": "Install and uninstall | Citrix Workspace™ app for Windows",
+      "url": "https://docs.citrix.com/en-us/citrix-workspace-app-for-windows/install.html",
+      "snippet": "Apr 9, 2026 · Know more about the various methods for installation and uninstallation of Citrix Workspace app for Windows."
+    },
+    {
+      "title": "インストールとアンインストール | Windows向けCitrix ...",
+      "url": "https://docs.citrix.com/ja-jp/citrix-workspace-app-for-windows/install.html",
+      "snippet": "Apr 16, 2026 · ユーザーと管理者の両方がCitrix Workspaceアプリをインストールできます。 管理者権限は、Windows向けCitrix …"
+    },
+    {
+      "title": "Citrix Optimizer Tool",
+      "url": "https://support.citrix.com/external/article/CTX224676/citrix-optimizer-tool.html",
+      "snippet": "Apr 13, 2026 · The Citrix Optimizer Tool is a Windows tool to help Citrix administrators optimize various components in their …"
+    }
+  ]
+}

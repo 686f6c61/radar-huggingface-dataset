@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Cedar-GRPO-Qwen2.5-Math-7B-GGUF",
+  "slug": "mradermacher-cedar-grpo-qwen2-5-math-7b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Cedar-GRPO-Qwen2.5-Math-7B-GGUF",
+  "created_at": "2026-09-17T12:52:15.000Z",
+  "updated_at": "2026-09-17T13:48:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "grpo",
+    "math",
+    "reinforcement-learning",
+    "qwen2",
+    "staleness-grpo",
+    "en",
+    "zh",
+    "dataset:zbeeb/Staleness-GRPO-DAPO-Math-17k",
+    "base_model:zbeeb/Qwen2.5-Math-7B-GRPO-Staleness-2",
+    "base_model:quantized:zbeeb/Qwen2.5-Math-7B-GRPO-Staleness-2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 68146897280,
+  "storage_human": "68.1 GB",
+  "base_model": "zbeeb/Qwen2.5-Math-7B-GRPO-Staleness-2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Start - IKS Rüsselsheim",
+      "url": "https://www.iks-ruesselsheim.de/",
+      "snippet": "Willkommen auf der Homepage der Immanuel-Kant-Schule Rüsselsheim Die Immanuel-Kant-Schule ist ein vollausgebautes G9 …"
+    },
+    {
+      "title": "Start - IKS Rüsselsheim",
+      "url": "https://www.iks-ruesselsheim.de/start",
+      "snippet": "Die Immanuel-Kant-Schule ist ein vollausgebautes G9 Gymnasium mit einer 125-jährigen Tradition. Wir verstehen uns als ein …"
+    },
+    {
+      "title": "Immanuel-Kant-Schule | Stadt Rüsselsheim",
+      "url": "https://www.ruesselsheim.de/bildung/schulen/schulen/immanuel-kant-schule",
+      "snippet": "Schule mit musikalischem Schwerpunkt Schule mit angegliedertem Schulsportzentrum Sprachdiplome und Schüleraustausche als …"
+    },
+    {
+      "title": "Catrin Metzger | Stadt Rüsselsheim",
+      "url": "https://www.ruesselsheim.de/vv/personen/m/MC-02",
+      "snippet": "Immanuel-Kant-Schule (Schulsozialarbeit), Evreuxring 25 65428 Rüsselsheim am Main, Tel.: +49 171 4794873"
+    },
+    {
+      "title": "Immanuel-Kant-Schule (Rüsselsheim am Main) – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Immanuel-Kant-Schule_(R%C3%BCsselsheim_am_Main)",
+      "snippet": "Die Immanuel-Kant-Schule (kurz: IKS) ist ein 1896 gegründetes Gymnasium in Rüsselsheim am Main, benannt nach dem …"
+    }
+  ]
+}

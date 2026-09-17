@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l31_remove30_swapgapiter_b010_r05",
+  "slug": "jeesup-svd-safety-l31_remove30_swapgapiter_b010_r05",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l31_remove30_swapgapiter_b010_r05",
+  "created_at": "2026-09-17T18:13:52.000Z",
+  "updated_at": "2026-09-17T18:30:33.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama3",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "license:llama3.1",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766296,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Apartments for Rent in Redmond WA",
+      "url": "https://www.apartments.com/redmond-wa/?msockid=0e46afb61d6a66e72c0eb8611ceb678f",
+      "snippet": "Find 1,929 apartments for rent in Redmond, WA with new listings daily. Compare verified, detailed unit listings, explore 3D tours, and …"
+    },
+    {
+      "title": "Rentals in Redmond WA - 2,252 Rentals | ForRent.com",
+      "url": "https://www.forrent.com/find/wa/redmond?msockid=0e46afb61d6a66e72c0eb8611ceb678f",
+      "snippet": "Explore different rental types, from one to four-bedroom apartments in Redmond to single-family homes, townhomes, and condos. …"
+    },
+    {
+      "title": "Apartments for Rent in Downtown Redmond - Redmond",
+      "url": "https://www.apartments.com/downtown-redmond-redmond-wa/?msockid=0e46afb61d6a66e72c0eb8611ceb678f",
+      "snippet": "Get a great Downtown Redmond, Redmond, WA rental on Apartments.com! Use our search filters to browse all 727 apartments and …"
+    },
+    {
+      "title": "Apartments For Rent in Redmond WA - 1495 Rentals - Zillow",
+      "url": "https://www.zillow.com/redmond-wa/apartments/?msockid=0e46afb61d6a66e72c0eb8611ceb678f",
+      "snippet": "Find your next apartment in Redmond WA on Zillow. Use our detailed filters to find the perfect place, then get in touch with the …"
+    },
+    {
+      "title": "Apartments for Rent in Redmond, WA - 598 Rentals Updated Daily",
+      "url": "https://www.zumper.com/apartments-for-rent/redmond-wa",
+      "snippet": "1 day ago · Search 598 available apartments for rent in Redmond, WA, including studio, 1-bedroom, and pet-friendly options, updated …"
+    }
+  ]
+}

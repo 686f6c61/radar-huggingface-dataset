@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "zero-proof-ai/zeroproof-airline-concise-4b",
+  "slug": "zero-proof-ai-zeroproof-airline-concise-4b",
+  "author": "zero-proof-ai",
+  "url": "https://huggingface.co/zero-proof-ai/zeroproof-airline-concise-4b",
+  "created_at": "2026-09-17T16:19:39.000Z",
+  "updated_at": "2026-09-20T12:18:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "character-training",
+    "voice",
+    "style",
+    "synthetic-data",
+    "while-ai",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:adapter:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 143616703,
+  "storage_human": "144 MB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Zéro — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Z%C3%A9ro",
+      "snippet": "Ce mot, d'abord traduit en arabe par « ṣifr », ce qui signifie « vide » et « grain », a ensuite donné en français les mots chiffre et zéro …"
+    },
+    {
+      "title": "Bienvenue chez Zero Motorcycles",
+      "url": "https://zeromotorcycles.com/fr-fr",
+      "snippet": "Fabricant de motos 100% électriques pour la route et le tout-terrain."
+    },
+    {
+      "title": "0 - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/0",
+      "snippet": "The word zero came into the English language via French zéro from the Italian zero, a contraction of the Venetian zevero form of …"
+    },
+    {
+      "title": "Zero Motorcycles S | Zero Motorcycles",
+      "url": "https://zeromotorcycles.com/fr-fr/model/zero-s",
+      "snippet": "Sa nouvelle batterie, son nouveau look et son moteur inédit font de la Zero S la partenaire idéale de votre quotidien. Électrisez votre …"
+    },
+    {
+      "title": "Software & Solutions for Small Businesses | Xero UK",
+      "url": "https://www.xero.com/uk/?msockid=36e2a412a6e168e732feb3caa77169a2",
+      "snippet": "Xero software for your business connects you to your bank, accountant, bookkeeper, and other business apps. Start a free trial today."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "shivam878/movie-recommender-model",
+  "slug": "shivam878-movie-recommender-model",
+  "author": "shivam878",
+  "url": "https://huggingface.co/shivam878/movie-recommender-model",
+  "created_at": "2026-09-17T19:27:51.000Z",
+  "updated_at": "2026-09-17T19:33:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 187153926,
+  "storage_human": "187 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "北京市100084信箱是哪里？ - 百度知道",
+      "url": "https://zhidao.baidu.com/question/103015209.html",
+      "snippet": "Jun 24, 2009 · 北京市100084信箱是哪里？你好，应该在北京海淀区邮政编码为 100084 的行政单位共有 14 个 圆明园 二河开 清华园 …"
+    },
+    {
+      "title": "北京海淀的所有大学名称，代码？ - 百度知道",
+      "url": "https://zhidao.baidu.com/question/54703653.html",
+      "snippet": "May 23, 2008 · 北京海淀的所有大学名称，代码？ 代码自己找吧，北京所有大学名称 地址 邮编 电话 北京大学 海淀颐园路5号 100871 …"
+    },
+    {
+      "title": "俄罗斯搜索引擎网址 yandex官网入口直达_百度知道",
+      "url": "https://zhidao.baidu.com/question/725567645356284605.html",
+      "snippet": "Nov 11, 2025 · 俄罗斯搜索引擎网址 yandex官网入口直达Yandex的官方网址如下：国际版入口：https://yandex.com/俄罗斯本土版入 …"
+    },
+    {
+      "title": "清华附中的邮政地址 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/6922034.html",
+      "snippet": "清华附中的邮政地址你可以打电话010-62789541问问。其实就写北京市海淀区清华附中就可以收到了，邮编是100084 清华附中的邮政 …"
+    },
+    {
+      "title": "100084是哪所大学的邮政编码_百度知道",
+      "url": "https://zhidao.baidu.com/question/2280637030249340788.html",
+      "snippet": "May 9, 2026 · 100084是北京市海淀区清华大学的邮政编码。 以下是关于这一邮政编码的详细科普： 邮政编码是邮政部门为实现邮政 …"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "WarmBloodAban/Minimax_H3_LoRAs",
+  "slug": "warmbloodaban-minimax_h3_loras",
+  "author": "WarmBloodAban",
+  "url": "https://huggingface.co/WarmBloodAban/Minimax_H3_LoRAs",
+  "created_at": "2026-09-17T17:27:02.000Z",
+  "updated_at": "2026-09-17T18:44:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-video",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "lora",
+    "template:diffusion-lora",
+    "video",
+    "image-to-video",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:adapter:MiniMaxAI/MiniMax-H3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 6,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 638707554,
+  "storage_human": "639 MB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Assistance Officielle HP®",
+      "url": "https://support.hp.com/fr-fr",
+      "snippet": "Trouvez des solutions de support et service client pour vos produits HP, y compris pilotes et articles de résolution de problèmes."
+    },
+    {
+      "title": "Téléchargement de logiciels et pilotes officiels HP® | Assistance HP®",
+      "url": "https://support.hp.com/fr-fr/drivers",
+      "snippet": "Téléchargez les derniers pilotes, logiciels, micrologiciels et diagnostics pour vos produits HP sur le site officiel de l'assistance HP."
+    },
+    {
+      "title": "Téléchargement de logiciels et pilotes officiels pour les imprimantes ...",
+      "url": "https://support.hp.com/fr-fr/drivers/printers",
+      "snippet": "Téléchargez les derniers pilotes, logiciels, micrologiciels et diagnostics pour vos imprimantes HP sur le site officiel de l'assistance HP."
+    },
+    {
+      "title": "HP Support Assistant",
+      "url": "https://support.hp.com/fr-fr/help/hp-support-assistant",
+      "snippet": "HP Support Assistant pour ordinateur HP Support Assistant est livré avec les nouveaux ordinateurs de bureau et portables HP. Vous …"
+    },
+    {
+      "title": "Numérisation avec une imprimante HP | Assistance HP®",
+      "url": "https://support.hp.com/fr-fr/document/ish_2830462-2561887-16",
+      "snippet": "Numériser depuis une imprimante HP (application HP) Utilisez l'application HP pour numériser des documents ou des photos depuis …"
+    }
+  ]
+}

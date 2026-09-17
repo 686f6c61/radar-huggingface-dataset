@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "cuong1692001/Terminal-complete_16k",
+  "slug": "cuong1692001-terminal-complete_16k",
+  "author": "cuong1692001",
+  "url": "https://huggingface.co/cuong1692001/Terminal-complete_16k",
+  "created_at": "2026-09-17T16:01:37.000Z",
+  "updated_at": "2026-09-17T16:25:39.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "llama-factory",
+    "full",
+    "generated_from_trainer",
+    "conversational",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:finetune:Qwen/Qwen3-8B",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 229353918157,
+  "storage_human": "229.4 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kahoot!",
+      "url": "https://kahoot.it/",
+      "snippet": "Join a game of kahoot – answer questions in an interactive quiz, compete with others, and experience awesome learning."
+    },
+    {
+      "title": "Kahoot!",
+      "url": "https://create.kahoot.it/auth/login",
+      "snippet": "Create interactive quizzes, polls, presentations, and more to engage your audience."
+    },
+    {
+      "title": "Make - Kahoot!",
+      "url": "https://create.kahoot.it/page/en/make",
+      "snippet": "Make - Kahoot! ... Make Make"
+    },
+    {
+      "title": "Kahoot!",
+      "url": "https://play.kahoot.it/%20login",
+      "snippet": "Host a game of kahoot – put on your game show host hat and make learning awesome."
+    },
+    {
+      "title": "Kahoot!",
+      "url": "https://play.kahoot.it/",
+      "snippet": "Play and learn with Kahoot! Join interactive quizzes, compete with others, and make learning fun for everyone."
+    }
+  ]
+}

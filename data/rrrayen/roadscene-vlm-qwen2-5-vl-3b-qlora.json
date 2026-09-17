@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "RRRayen/RoadScene-VLM-Qwen2.5-VL-3B-QLoRA",
+  "slug": "rrrayen-roadscene-vlm-qwen2-5-vl-3b-qlora",
+  "author": "RRRayen",
+  "url": "https://huggingface.co/RRRayen/RoadScene-VLM-Qwen2.5-VL-3B-QLoRA",
+  "created_at": "2026-09-17T19:36:13.000Z",
+  "updated_at": "2026-09-17T19:37:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qlora",
+    "vision-language",
+    "multimodal",
+    "bdd100k",
+    "road-scene",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen2.5-VL-3B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-VL-3B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 40961909,
+  "storage_human": "41 MB",
+  "base_model": "Qwen/Qwen2.5-VL-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Xerath Build with Highest Winrate - LoL Runes, Items, and Skill Order",
+      "url": "https://u.gg/lol/champions/xerath/build",
+      "snippet": "Xerath with U.GG's best data for every build. The highest win rate Xerath build, from rune set to skill order to item path, for Mid. LoL …"
+    },
+    {
+      "title": "Xerath Build Guide - Runes, Items & More - Patch 26.18 - Mobalytics",
+      "url": "https://mobalytics.gg/lol/champions/xerath/build",
+      "snippet": "Get the best Xerath builds, based on analysis of 10000+ matches in all regions and ranks. Climb in patch 26.18 with Xerath builds …"
+    },
+    {
+      "title": "Xerath Build - Highest Win Rate Builds, Runes, and Items",
+      "url": "https://www.op.gg/lol/champions/xerath/build/top",
+      "snippet": "Xerath Build with the highest win rate. Runes, items, and skill build in patch 16.18. Xerath build recommendations and guides."
+    },
+    {
+      "title": "Xerath Build 26.18 – Runes, Items, Counters – METAsrc LoL",
+      "url": "https://www.metasrc.com/lol/champions/xerath/build",
+      "snippet": "LoL Xerath build guide for Patch 26.18: top runes, items, summoner spells, skill order, counters, and synergies."
+    },
+    {
+      "title": "Xerath Build Guides :: League of Legends Strategy Builds ... - MOBAFire",
+      "url": "https://www.mobafire.com/league-of-legends/champion/xerath-84",
+      "snippet": "Build guides for Xerath on MOBAFire. Learn what runes and items make the best Xerath build in League of Legends (LoL)."
+    }
+  ]
+}

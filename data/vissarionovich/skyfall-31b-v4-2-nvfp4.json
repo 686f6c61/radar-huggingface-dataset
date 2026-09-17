@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "vissarionovich/Skyfall-31B-v4.2-NVFP4",
+  "slug": "vissarionovich-skyfall-31b-v4-2-nvfp4",
+  "author": "vissarionovich",
+  "url": "https://huggingface.co/vissarionovich/Skyfall-31B-v4.2-NVFP4",
+  "created_at": "2026-09-17T19:48:43.000Z",
+  "updated_at": "2026-09-17T20:22:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mistral",
+    "dataset:HuggingFaceH4/ultrachat_200k",
+    "base_model:TheDrummer/Skyfall-31B-v4.2",
+    "base_model:quantized:TheDrummer/Skyfall-31B-v4.2",
+    "8-bit",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31352980480,
+  "parameters_human": "31.35B",
+  "storage_bytes": 19583502124,
+  "storage_human": "19.6 GB",
+  "base_model": "TheDrummer/Skyfall-31B-v4.2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Klix.ba",
+      "url": "https://www.klix.ba/",
+      "snippet": "Klix.ba je najposjećeniji i najutjecajniji informativni portal u Bosni i Hercegovini. Najvažnije i najbrže vijesti iz Sarajeva, BiH i svijeta. …"
+    },
+    {
+      "title": "Najnovije - Klix.ba",
+      "url": "https://www.klix.ba/najnovije",
+      "snippet": "Najnovije vijesti na portalu Klix.ba Milijarder zabranio nastup reperu zbog Palestine, a sad tvrdi da će udvostručiti njegovu donaciju za …"
+    },
+    {
+      "title": "Klix.ba - Oglasi za posao",
+      "url": "https://posao.klix.ba/",
+      "snippet": "Klix Posao je servis za objavu oglasa na Klix.ba, najposjećenijem online mediju u BiH. Pruža jednostavnu objavu i pregled oglasa za …"
+    },
+    {
+      "title": "Privatni urolog u Sarajevu? - Forum Klix.ba",
+      "url": "https://forum.klix.ba/zdravlje-f142/privatni-urolog-u-sarajevu-t80608.html",
+      "snippet": "Oct 2, 2010 · Zanima me gdje mogu otici na pregled testisa, dakle treba mi privatni urolog kod kojeg mogu uraditi \"ultrazvuk\" posto …"
+    },
+    {
+      "title": "Razne diskusije - Forum Klix.ba",
+      "url": "https://forum.klix.ba/razne-diskusije-f1",
+      "snippet": "6 days ago · Preneseno sa Forum Svi korisnici foruma prihvataju sljedeća pravila i uslove: Kao korisnik foruma portala Klix.ba (u …"
+    }
+  ]
+}

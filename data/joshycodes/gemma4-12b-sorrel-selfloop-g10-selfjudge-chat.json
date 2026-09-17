@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "joshycodes/gemma4-12b-sorrel-selfloop-g10-selfjudge-chat",
+  "slug": "joshycodes-gemma4-12b-sorrel-selfloop-g10-selfjudge-chat",
+  "author": "joshycodes",
+  "url": "https://huggingface.co/joshycodes/gemma4-12b-sorrel-selfloop-g10-selfjudge-chat",
+  "created_at": "2026-09-17T17:03:50.000Z",
+  "updated_at": "2026-09-17T18:22:49.000Z",
+  "license": "internal-research",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma4_unified",
+    "flourishing-training",
+    "continued-pretraining",
+    "base_model:joshycodes/gemma4-12b-sorrel-selfloop-g10-midtrain",
+    "base_model:finetune:joshycodes/gemma4-12b-sorrel-selfloop-g10-midtrain",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11959730224,
+  "parameters_human": "11.96B",
+  "storage_bytes": 23951724999,
+  "storage_human": "24.0 GB",
+  "base_model": "joshycodes/gemma4-12b-sorrel-selfloop-g10-midtrain",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "What Happens at an Immigration Medical Exam - CitizenPath",
+      "url": "https://citizenpath.com/immigration-medical-exam/",
+      "snippet": "Aug 7, 2025 · Learn what to expect from the immigration medical exam for a green card, including a checklist, required tests, and costs."
+    },
+    {
+      "title": "Immigration Medical Exam | The Complete Guide - VisaNation",
+      "url": "https://www.immi-usa.com/immigration-medical-exam/",
+      "snippet": "Mar 6, 2026 · Learn all about the immigration medical exam, including when to book, what to bring to the appointment, required …"
+    },
+    {
+      "title": "Medical Examinations FAQs - Travel",
+      "url": "https://travel.state.gov/content/travel/en/us-visas/immigrate/the-immigrant-visa-process/step-10-prepare-for-the-interview/medical-examination-faqs.html",
+      "snippet": "The applicant must show his/her passport (or other photo identification) and appointment letter to the doctor during the medical …"
+    },
+    {
+      "title": "U.S. Immigration Medical Exam: What to Expect & How to Prepare",
+      "url": "https://warrenlawfirm.net/green-cards/immigration-medical-exam/",
+      "snippet": "Part of your green cardapplication process will involve taking an immigration medical exam. Here, we’ll go into detail about the …"
+    },
+    {
+      "title": "The Immigration Medical Exam, Explained - Boundless",
+      "url": "https://www.boundless.com/immigration-resources/preparing-for-the-medical-exam",
+      "snippet": "Plus, it’s rare to fail the medical exam. And even if you do have a condition that might complicate your green card application, you can …"
+    }
+  ]
+}

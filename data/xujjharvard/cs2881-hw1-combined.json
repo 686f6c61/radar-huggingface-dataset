@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "XujjHarvard/cs2881-hw1-combined",
+  "slug": "xujjharvard-cs2881-hw1-combined",
+  "author": "XujjHarvard",
+  "url": "https://huggingface.co/XujjHarvard/cs2881-hw1-combined",
+  "created_at": "2026-09-17T14:00:49.000Z",
+  "updated_at": "2026-09-17T14:16:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "cs2881-hw1",
+    "qwen2.5",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-3B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 6422892500,
+  "storage_human": "6.4 GB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WhatsApp Web",
+      "url": "https://web.whatsapp.com/",
+      "snippet": "Log in to WhatsApp Web for simple, reliable and private messaging on your desktop. Send and receive messages and files with …"
+    }
+  ]
+}

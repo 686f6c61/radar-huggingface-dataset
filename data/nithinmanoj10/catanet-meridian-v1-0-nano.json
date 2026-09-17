@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "nithinmanoj10/CataNET-Meridian-v1.0-Nano",
+  "slug": "nithinmanoj10-catanet-meridian-v1-0-nano",
+  "author": "nithinmanoj10",
+  "url": "https://huggingface.co/nithinmanoj10/CataNET-Meridian-v1.0-Nano",
+  "created_at": "2026-09-17T12:43:15.000Z",
+  "updated_at": "2026-09-18T10:29:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "keypoint-detection",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "yolo",
+    "vision",
+    "object-detection",
+    "keypoint-detection",
+    "pose-estimation",
+    "catanet",
+    "catan",
+    "board-games",
+    "en",
+    "dataset:nithinmanoj10/CatanSynth-Meridian-v1-50K",
+    "base_model:Ultralytics/YOLO26",
+    "base_model:quantized:Ultralytics/YOLO26",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16701531,
+  "storage_human": "17 MB",
+  "base_model": "Ultralytics/YOLO26",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Übersetzer",
+      "url": "https://translate.google.de/",
+      "snippet": "Mit diesem kostenlosen Google-Dienst lassen sich Wörter, Sätze und Webseiten sofort zwischen Deutsch und über 100 Sprachen …"
+    },
+    {
+      "title": "Google Übersetzer",
+      "url": "https://translate.google.de/details",
+      "snippet": "Damit du Details aufrufen kannst, musst du erst Text eingeben"
+    },
+    {
+      "title": "Google Übersetzer",
+      "url": "https://translate.google.de/m",
+      "snippet": "Übersetzen Sprache erkennen → Deutsch"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "joshycodes/gemma4-12b-sorrel-selfloop-g11-midtrain",
+  "slug": "joshycodes-gemma4-12b-sorrel-selfloop-g11-midtrain",
+  "author": "joshycodes",
+  "url": "https://huggingface.co/joshycodes/gemma4-12b-sorrel-selfloop-g11-midtrain",
+  "created_at": "2026-09-17T19:05:46.000Z",
+  "updated_at": "2026-09-17T19:40:06.000Z",
+  "license": "internal-research",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma4_unified",
+    "flourishing-training",
+    "continued-pretraining",
+    "dataset:joshycodes/sorrel-selfloop-corpus",
+    "base_model:joshycodes/gemma4-12b-sorrel-selfloop-g10-midtrain",
+    "base_model:finetune:joshycodes/gemma4-12b-sorrel-selfloop-g10-midtrain",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11959730224,
+  "parameters_human": "11.96B",
+  "storage_bytes": 23951724999,
+  "storage_human": "24.0 GB",
+  "base_model": "joshycodes/gemma4-12b-sorrel-selfloop-g10-midtrain",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - MuiseDestiny/zotero-gpt: GPT Meet Zotero.",
+      "url": "https://github.com/MuiseDestiny/zotero-gpt",
+      "snippet": "Jun 17, 2023 · GPT Tag Recommendation Automatically create tags for entries: open and copy then open Zotero, this tag will be …"
+    },
+    {
+      "title": "GitHub - danny-avila/LibreChat: Enhanced ChatGPT Clone: Features …",
+      "url": "https://github.com/danny-avila/LibreChat",
+      "snippet": "Models: Added GPT-6 Astra for the OpenAI and Agents endpoints, with Responses API routing and tool-call support. Agent and chat …"
+    },
+    {
+      "title": "Supported AI models in GitHub Copilot",
+      "url": "https://docs.github.com/en/copilot/reference/ai-models/supported-models",
+      "snippet": "For all of the default AI models, input prompts and output completions run through GitHub Copilot's content filters for harmful, …"
+    },
+    {
+      "title": "Chat GPT Tiếng Việt: Cài đặt và mẹo đặt câu lệnh mới nhất",
+      "url": "https://cellphones.com.vn/sforum/cach-dung-chat-gpt-tieng-viet",
+      "snippet": "Jul 10, 2026 · Hướng dẫn cách sử dụng Chat GPT Tiếng Việt hiệu quả để đặt câu hỏi, viết nội dung, học tập, dịch thuật và xử lý …"
+    },
+    {
+      "title": "GitHub Copilotでサポートされている AI モデル - GitHubドキュメント",
+      "url": "https://docs.github.com/ja/copilot/reference/ai-models/supported-models",
+      "snippet": "GitHub Copilot は複数の AI モデルをサポートし、それぞれが異なる強みを持ちます。 速度とコスト効率に優先順位を付けるものも …"
+    }
+  ]
+}

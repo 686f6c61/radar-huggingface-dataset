@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "THChou1220/gemma-4-e4b-kinetics384K_FFT",
+  "slug": "thchou1220-gemma-4-e4b-kinetics384k_fft",
+  "author": "THChou1220",
+  "url": "https://huggingface.co/THChou1220/gemma-4-e4b-kinetics384K_FFT",
+  "created_at": "2026-09-17T16:37:23.000Z",
+  "updated_at": "2026-09-17T17:10:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma4",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7996156490,
+  "parameters_human": "8.00B",
+  "storage_bytes": 31907238802,
+  "storage_human": "31.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Silberpreis aktuell in Euro und US Dollar - GOLD.DE",
+      "url": "https://www.gold.de/kurse/silberpreis/",
+      "snippet": "Aktueller Silberpreis in Euro, US Dollar je Feinunze, Gramm und Kilo. Preise für 800, 835, 925 Silber, Historische Kurse & Charts …"
+    },
+    {
+      "title": "Silberpreis aktuell in Euro und Dollar | Silber - finanzen.net",
+      "url": "https://www.finanzen.net/rohstoffe/silberpreis",
+      "snippet": "Hier finden Sie alle Informationen für den aktuellen Silberpreis in Euro und Dollar. Historische Kurse, Charts und …"
+    },
+    {
+      "title": "Silberpreis Heute in Euro und Dollar",
+      "url": "https://www.silberpreis.de/",
+      "snippet": "Silberpreis und Silberkurs in Euro alle 60 Sekunden aktualisiert hier auf www.silberpreis.de. Kurse, Charts & Preise sowie …"
+    },
+    {
+      "title": "Silberpreis heute – Aktueller Silberpreis in Euro | Silberkurs: ESG ...",
+      "url": "https://www.scheideanstalt.de/silber/ag/silberpreis/",
+      "snippet": "2 days ago · Um zur ersten Orientierung den Wert Ihres Silbers selbst zu berechnen, nutzen Sie unseren Ankaufsrechner. Geben Sie …"
+    },
+    {
+      "title": "Silberpreis heute: Allzeithoch, Live-Kurs & Entwicklung",
+      "url": "https://www.edelmetalle.de/silberpreis",
+      "snippet": "1 day ago · Aktueller Silberpreis in Euro und Dollar je oz, kg, Gramm mit Chartmodul, Silberpreisentwicklung, ATHs, Silberkurs …"
+    }
+  ]
+}

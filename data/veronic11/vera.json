@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Veronic11/VERA",
+  "slug": "veronic11-vera",
+  "author": "Veronic11",
+  "url": "https://huggingface.co/Veronic11/VERA",
+  "created_at": "2026-09-17T12:45:23.000Z",
+  "updated_at": "2026-09-17T13:45:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "joblib",
+    "onnx",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1481637240,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hockey In Rouen",
+      "url": "https://www.hockeyinrouen.com/",
+      "snippet": "Bienvenue sur le forum Hockey In Rouen ! Désormais, certains sujets du forum ne seront accessibles qu’aux membres connectés. …"
+    },
+    {
+      "title": "Hockey",
+      "url": "https://www.hockeyinrouen.com/c1-hockey",
+      "snippet": "Hockey - Matchs des Dragons - Les Dragons de Rouen - CHAR - Hockey en France - Clubs de supporters - Hockey à l'étranger - …"
+    },
+    {
+      "title": "Infos billetterie – Dragons de Rouen",
+      "url": "https://rouenhockeyelite76.com/infos-billetterie/",
+      "snippet": "Vous souhaitez réserver ou acheter vos billets pour un match de Hockey ? Pour rappel, sauf cas particuliers ou impondérables, les …"
+    },
+    {
+      "title": "Dragons de Rouen - Facebook",
+      "url": "https://www.facebook.com/DragonsdeRouen/",
+      "snippet": "Cette année, les Dragons de Rouen et la Matmut s’unissent autour d’une nouvelle initiative : l’École Jaune et Noir, symbolisée par le …"
+    },
+    {
+      "title": "Dragons de Rouen",
+      "url": "https://rouenhockeyelite76.com/",
+      "snippet": "Le classique élégant du supporter des Dragons . Ce polo Homme allie style, confort et identité grâce à sa coupe moderne et son logo …"
+    }
+  ]
+}

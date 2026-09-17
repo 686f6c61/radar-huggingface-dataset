@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "moreh/GLM-5.3-TT-BLOCKFP4",
+  "slug": "moreh-glm-5-3-tt-blockfp4",
+  "author": "moreh",
+  "url": "https://huggingface.co/moreh/GLM-5.3-TT-BLOCKFP4",
+  "created_at": "2026-09-17T17:50:11.000Z",
+  "updated_at": "2026-09-17T17:51:32.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "base_model:zai-org/GLM-5.3",
+    "base_model:quantized:zai-org/GLM-5.3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "zai-org/GLM-5.3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Meilleurs Films de Guerre Américains - Cinetrafic",
+      "url": "https://www.cinetrafic.fr/meilleur/film/guerre/americain",
+      "snippet": "Cette page vous présente les films de guerre américains salués par la critique et le public, sortis au cinéma, ou directement en …"
+    },
+    {
+      "title": "Top 100 des meilleurs films de guerre - SensCritique",
+      "url": "https://www.senscritique.com/top/resultats/les_meilleurs_films_de_guerre/192701",
+      "snippet": "Découvrez également les Tops des : - Meilleurs films sur les guerres de religion - Meilleurs films sur la guerre de Sécession - …"
+    },
+    {
+      "title": "Meilleurs films guerre américains - AlloCiné",
+      "url": "https://www.allocine.fr/film/meilleurs/genre-13014/pays-5002/",
+      "snippet": "Découvrez le classement des meilleurs films guerre américains sur AlloCiné."
+    },
+    {
+      "title": "FILMS DE GUERRE - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLLxvKVqlL_HeeF1zFOimKfWpKbBOTsl3p",
+      "snippet": "Le Renard du désert, film de guerre complet en français ( 100 % HD). Coulez le Bismarck ! - Film de Guerre Complet En Français. …"
+    },
+    {
+      "title": "Film de guerre complets en français - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLpIenqgGg0j1Yi4A7IZio5GUXSdXOJ0U5",
+      "snippet": "Film de guerre complets en français by Cinéma Cinémas • Playlist • 52 videos • 116,591 views"
+    }
+  ]
+}

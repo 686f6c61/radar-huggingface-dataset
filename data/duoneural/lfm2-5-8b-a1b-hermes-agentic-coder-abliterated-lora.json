@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "DuoNeural/LFM2.5-8B-A1B-Hermes-Agentic-Coder-Abliterated-LoRA",
+  "slug": "duoneural-lfm2-5-8b-a1b-hermes-agentic-coder-abliterated-lora",
+  "author": "DuoNeural",
+  "url": "https://huggingface.co/DuoNeural/LFM2.5-8B-A1B-Hermes-Agentic-Coder-Abliterated-LoRA",
+  "created_at": "2026-09-17T15:33:31.000Z",
+  "updated_at": "2026-09-18T13:59:36.000Z",
+  "license": "liquid-foundation-model-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "duo-neural",
+    "agentic",
+    "coding",
+    "function-calling",
+    "hermes",
+    "liquid-foundation-model",
+    "moe",
+    "abliterated",
+    "lora",
+    "text-generation",
+    "conversational",
+    "base_model:DuoNeural/LFM2.5-8B-A1B-Abliterated",
+    "base_model:adapter:DuoNeural/LFM2.5-8B-A1B-Abliterated",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 35215158,
+  "storage_human": "35 MB",
+  "base_model": "DuoNeural/LFM2.5-8B-A1B-Abliterated",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Les plans de prévention des risques (PPR) approuvés",
+      "url": "https://www.seine-saint-denis.gouv.fr/Actions-de-l-Etat/Environnement-risques-et-nuisances/4-Risques-naturels-et-technologiques/Les-plans-de-prevention-des-risques/Plans-de-prevention-des-risques-naturels/Les-plans-de-prevention-des-risques-PPR-approuves",
+      "snippet": "Les plans de prévention des risques (PPR) cartographient les zones à risque et réglementent l'occupation des sols sur une ou …"
+    },
+    {
+      "title": "Les plans de prévention des risques d'inondation",
+      "url": "https://www.seine-saint-denis.gouv.fr/Actions-de-l-Etat/Environnement-risques-et-nuisances/4-Risques-naturels-et-technologiques/Les-plans-de-prevention-des-risques/Plans-de-prevention-des-risques-naturels/Les-plans-de-prevention-des-risques-PPR-approuves/Les-plans-de-prevention-des-risques-d-inondation",
+      "snippet": "Deux plans de prévention des risques inondation (PPRI) sont approuvés sur la Seine-Saint-Denis. Il concernent 9 communes situées …"
+    },
+    {
+      "title": "Les plans de prévention des risques d'inondation (PPRI) en Île-de ...",
+      "url": "https://www.drieat.ile-de-france.developpement-durable.gouv.fr/les-plans-de-prevention-des-risques-d-inondation-a4750.html",
+      "snippet": "Feb 28, 2024 · Les PPRI sont disponibles sur les sites des préfectures de départements ou sur le site de la DRIEAT : Le …"
+    },
+    {
+      "title": "Plans de prévention des risques (PPR) par département",
+      "url": "https://www.georisques.gouv.fr/plans-de-prevention-des-risques-ppr-par-departement",
+      "snippet": "Cette page vous permet de consulter la liste des départements concernés par un ou plusieurs plans de préventions des risques …"
+    },
+    {
+      "title": "Fiche départementale PPR - Géorisques",
+      "url": "https://www.georisques.gouv.fr/donnee-risques/PPR/departement/93",
+      "snippet": "Accueil Plans de prévention des risques (PPR) par département Fiche départementale PPR (93)"
+    }
+  ]
+}

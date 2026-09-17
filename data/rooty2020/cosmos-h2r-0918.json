@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "rooty2020/Cosmos-H2R-0918",
+  "slug": "rooty2020-cosmos-h2r-0918",
+  "author": "rooty2020",
+  "url": "https://huggingface.co/rooty2020/Cosmos-H2R-0918",
+  "created_at": "2026-09-17T15:11:36.000Z",
+  "updated_at": "2026-09-17T15:15:18.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-video",
+  "library": "cosmos",
+  "languages": [],
+  "tags": [
+    "cosmos",
+    "safetensors",
+    "cosmos3_omni",
+    "cosmos3",
+    "world-model",
+    "robotics",
+    "droid",
+    "video-generation",
+    "point-tracking",
+    "image-to-video",
+    "custom_code",
+    "base_model:nvidia/Cosmos3-Nano",
+    "base_model:finetune:nvidia/Cosmos3-Nano",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 15215696011,
+  "parameters_human": "15.22B",
+  "storage_bytes": 31584370110,
+  "storage_human": "31.6 GB",
+  "base_model": "nvidia/Cosmos3-Nano",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "leboncoin, site de petites annonces gratuites",
+      "url": "https://www.leboncoin.fr/",
+      "snippet": "Avec leboncoin, trouvez la bonne affaire, réalisez la bonne vente pour votre voiture, immobilier, emploi, location de vacances, …"
+    },
+    {
+      "title": "Toute la France - leboncoin",
+      "url": "https://www.leboncoin.fr/all/offer",
+      "snippet": "Toutes nos annonces gratuites Toute la France. Consultez nos 91601796 annonces de particuliers et professionnels sur leboncoin"
+    },
+    {
+      "title": "Ile-de-France - leboncoin",
+      "url": "https://www.leboncoin.fr/l/rp_ile-de-france",
+      "snippet": "Téléphones & Objets connectés Paris 75017 Batignolles Chargeur c-evolution très bon état Équipement moto Paris 75017 Legendre - …"
+    },
+    {
+      "title": "Ventes immobilières - leboncoin",
+      "url": "https://www.leboncoin.fr/c/ventes_immobilieres",
+      "snippet": "Consultez nos annonces de ventes immobilières de particuliers et de professionnels sur leboncoin."
+    },
+    {
+      "title": "leboncoin, petites annonces – Applications sur Google Play",
+      "url": "https://play.google.com/store/apps/details?id=fr.leboncoin&hl=fr",
+      "snippet": "Immo, voiture, emploi, vacances, mode, l’appli vous accompagne dans votre vie."
+    }
+  ]
+}

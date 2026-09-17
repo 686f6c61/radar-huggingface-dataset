@@ -1,0 +1,97 @@
+{
+  "schema": 1,
+  "id": "cruciverb-it/crosswordspacepp-reranker",
+  "slug": "cruciverb-it-crosswordspacepp-reranker",
+  "author": "cruciverb-it",
+  "url": "https://huggingface.co/cruciverb-it/crosswordspacepp-reranker",
+  "created_at": "2026-09-17T16:03:12.000Z",
+  "updated_at": "2026-09-17T16:03:27.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-ranking",
+  "library": "sentence-transformers",
+  "languages": [
+    "it"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "cross-encoder",
+    "reranker",
+    "crossword",
+    "italian",
+    "text-ranking",
+    "it",
+    "dataset:cruciverb-it/evalita2026",
+    "base_model:nickprock/sentence-bert-base-italian-xxl-uncased",
+    "base_model:finetune:nickprock/sentence-bert-base-italian-xxl-uncased",
+    "license:cc-by-4.0",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110696449,
+  "parameters_human": "110.7M",
+  "storage_bytes": 442809340,
+  "storage_human": "443 MB",
+  "base_model": "nickprock/sentence-bert-base-italian-xxl-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Crossword Clue Answering (reranking bi-encoder top-100)",
+      "dataset": "EVALITA 2026 CruciverbIT Task 1 (test)",
+      "metric": "Acc@1",
+      "value": 59.9
+    },
+    {
+      "task": "Crossword Clue Answering (reranking bi-encoder top-100)",
+      "dataset": "EVALITA 2026 CruciverbIT Task 1 (test)",
+      "metric": "Acc@10",
+      "value": 83.1
+    },
+    {
+      "task": "Crossword Clue Answering (reranking bi-encoder top-100)",
+      "dataset": "EVALITA 2026 CruciverbIT Task 1 (test)",
+      "metric": "MRR@10",
+      "value": 67.9
+    }
+  ],
+  "sources": [
+    {
+      "title": "如何解决： 这些文件可能对你的计算机有害 你的Internet安全设置表示 …",
+      "url": "https://www.zhihu.com/question/263590615",
+      "snippet": "打开“ 控制面板 ”，“ INTERNET 选项 ”，“安全”选项卡； 点中间的“本地Intranet”，再点右边的“站点”； 弹出“本地Intranet”窗口，点下边 …"
+    },
+    {
+      "title": "电脑如何开启VT设置 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/02027811c0d6365bcc9ce5b4.html",
+      "snippet": "Aug 16, 2019 · 电脑如何开启VT设置,VT是什么，VT能吃吗，VT怎么开？这次带来了VT的教程，开了VT大部分主流的3D游戏，模拟起 …"
+    },
+    {
+      "title": "win10系统怎么打开Internet选项 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/54b6b9c08fc9c42d583b4708.html",
+      "snippet": "Mar 20, 2018 · win10系统怎么打开Internet选项,有时候我们在使用wi10系统的时候，想打开Iteret选项，进行浏览器设置，怎么打开 …"
+    },
+    {
+      "title": "三国群英传从1到7，哪个版本最经典最耐玩？ - 知乎",
+      "url": "https://www.zhihu.com/question/29522718",
+      "snippet": "三国群英传从1998年开始至今，历经7个版本，还有两部网游，在资深玩家心中，哪个版本最经典，最耐玩？说…"
+    },
+    {
+      "title": "Excel中超链接函数 HYPERLINK 的使用方法-百度经验",
+      "url": "https://jingyan.baidu.com/article/2009576155dde68b0721b4e9.html",
+      "snippet": "Aug 10, 2019 · Excel中超链接函数 HYPERLINK 的使用方法,在Excel中有很多函数，这些函数使我们在使用Excel整理数据时大大提高 …"
+    }
+  ]
+}

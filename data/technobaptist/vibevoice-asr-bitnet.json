@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "TechnoBaptist/VibeVoice-ASR-BitNet",
+  "slug": "technobaptist-vibevoice-asr-bitnet",
+  "author": "TechnoBaptist",
+  "url": "https://huggingface.co/TechnoBaptist/VibeVoice-ASR-BitNet",
+  "created_at": "2026-09-17T13:41:56.000Z",
+  "updated_at": "2026-09-17T13:41:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "ggml",
+  "languages": [
+    "en",
+    "zh",
+    "fr",
+    "it",
+    "ko",
+    "pt",
+    "vi"
+  ],
+  "tags": [
+    "ggml",
+    "safetensors",
+    "gguf",
+    "vibevoice",
+    "ASR",
+    "quantization",
+    "cpu-inference",
+    "bitnet",
+    "multilingual",
+    "automatic-speech-recognition",
+    "en",
+    "zh",
+    "fr",
+    "it",
+    "ko",
+    "pt",
+    "vi",
+    "arxiv:2607.21075",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 322592829,
+  "parameters_human": "322.6M",
+  "storage_bytes": 12952801530,
+  "storage_human": "13.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - 0xk1h0/ChatGPT_DAN: ChatGPT DAN, Jailbreaks prompt",
+      "url": "https://github.com/0xk1h0/ChatGPT_DAN",
+      "snippet": "ChatGPT DAN, Jailbreaks prompt. Contribute to 0xk1h0/ChatGPT_DAN development by creating an account on GitHub."
+    },
+    {
+      "title": "r/AITAH - Reddit",
+      "url": "https://www.reddit.com/r/AITAH/",
+      "snippet": "this is a community like r/AmITheAsshole except unlike that subreddit here you can post interpersonal conflicts, anything that's AITA …"
+    },
+    {
+      "title": "ChatGPT - Reddit",
+      "url": "https://www.reddit.com/r/ChatGPT/top/",
+      "snippet": "Dec 1, 2022 · r/ChatGPT: Subreddit to discuss about ChatGPT and AI. Not affiliated with OpenAI."
+    },
+    {
+      "title": "xtekky/gpt4free: The official gpt4free repository - GitHub",
+      "url": "https://github.com/xtekky/gpt4free",
+      "snippet": "The official gpt4free repository | various collection of powerful language models | opus 4.6 gpt 5.3 kimi 2.5 deepseek v3.2 gemini 3 - …"
+    },
+    {
+      "title": "ChatGPT Plus 正式恢复五小时使用上限，Codex 长任务体验会受影响 …",
+      "url": "https://www.zhihu.com/question/2075903044676315058",
+      "snippet": "可以看看公众号老冯云数怎么用7-10个20x产生巨大生产力的， 《OPC一个月烧1000刀订阅，能有多少产出？ 》 的时候是7个， …"
+    }
+  ]
+}

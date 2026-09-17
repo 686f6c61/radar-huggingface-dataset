@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "jmarceno/Xing4.0-29B-A4B-GGUF",
+  "slug": "jmarceno-xing4-0-29b-a4b-gguf",
+  "author": "jmarceno",
+  "url": "https://huggingface.co/jmarceno/Xing4.0-29B-A4B-GGUF",
+  "created_at": "2026-09-17T19:14:02.000Z",
+  "updated_at": "2026-09-17T19:22:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "xing4_0",
+    "moe",
+    "imatrix",
+    "zh",
+    "en",
+    "base_model:XingChen-AGI/Xing4.0-29B-A4B",
+    "base_model:quantized:XingChen-AGI/Xing4.0-29B-A4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31215031088,
+  "parameters_human": "31.22B",
+  "storage_bytes": 13021743680,
+  "storage_human": "13.0 GB",
+  "base_model": "XingChen-AGI/Xing4.0-29B-A4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Discord - Group Chat That’s All Fun & Games",
+      "url": "https://discord.com/",
+      "snippet": "Discord is great for playing games and chilling with friends, or even building a worldwide community. Customize your own space to …"
+    },
+    {
+      "title": "Download Discord to Talk, Play, and Hang Out",
+      "url": "https://discord.com/download",
+      "snippet": "Download Discord to talk, play, and hang out with friends over voice, video, or text. Available for Windows, macOS, Linux, iOS, …"
+    },
+    {
+      "title": "Discord",
+      "url": "https://support.discord.com/hc/fr",
+      "snippet": "Des paramètres du compte aux permissions, trouvez de l'aide pour tout ce qui concerne Discord Si vous êtes nouveau ou nouvelle …"
+    },
+    {
+      "title": "Discord",
+      "url": "https://discord.com/store",
+      "snippet": "Discord is great for playing games and chilling with friends, or even building a worldwide community. Customize your own space to …"
+    },
+    {
+      "title": "Discord",
+      "url": "https://discord.com/discovery/applications/1",
+      "snippet": "The App Directory lets you search, browse, and explore thousands of apps to customize your server!"
+    }
+  ]
+}

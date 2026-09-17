@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "xingguangcuican6666/plana-gptsovits-v2",
+  "slug": "xingguangcuican6666-plana-gptsovits-v2",
+  "author": "xingguangcuican6666",
+  "url": "https://huggingface.co/xingguangcuican6666/plana-gptsovits-v2",
+  "created_at": "2026-09-17T16:13:44.000Z",
+  "updated_at": "2026-09-17T16:28:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "automatic",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "automatic",
+    "gpt-sovits",
+    "gpt-sovits-v2",
+    "tts",
+    "text-to-speech",
+    "voice-clone",
+    "voice",
+    "blue-archive",
+    "zh",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 240321738,
+  "storage_human": "240 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mu (letter) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Mu_(letter)",
+      "snippet": "Mu was derived from the Egyptian hieroglyphic symbol for water, which had been simplified by the Phoenicians and named after their …"
+    },
+    {
+      "title": "Startseite | mu-campus",
+      "url": "https://mu-campus.de/",
+      "snippet": "Herzlich willkommen im Online Campus der SRH Fernhochschule - The Mobile University. Dort finden immatrikulierte Studierende …"
+    },
+    {
+      "title": "MU Online | Medieval Fantasy MMORPG",
+      "url": "https://muonline.webzen.com/en",
+      "snippet": "Join MU Online; the free-to-play fantasy RPG based on the legendary Continent of MU! Feel the power of forbidden magic! Explore …"
+    },
+    {
+      "title": "MU BERLIN",
+      "url": "http://www.mu-berlin.de/?lang=de",
+      "snippet": "Herzlich willkommen bei MU BERLIN! In der Linienstraße 154a können Sie in moderner Atmosphäre vom stressigen Alltag …"
+    },
+    {
+      "title": "Mu – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Mu",
+      "snippet": "Sekpele (Sprache) (auch Mu), eine Sprache des Volkes der Sekpele im Südosten Ghanas mu (市畝 / 市亩) ein chinesisches …"
+    }
+  ]
+}

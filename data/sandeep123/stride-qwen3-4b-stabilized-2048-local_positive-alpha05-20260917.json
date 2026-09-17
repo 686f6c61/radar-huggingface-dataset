@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "sandeep123/stride-qwen3-4b-stabilized-2048-local_positive-alpha05-20260917",
+  "slug": "sandeep123-stride-qwen3-4b-stabilized-2048-local_positive-alpha05-20260917",
+  "author": "sandeep123",
+  "url": "https://huggingface.co/sandeep123/stride-qwen3-4b-stabilized-2048-local_positive-alpha05-20260917",
+  "created_at": "2026-09-17T12:15:10.000Z",
+  "updated_at": "2026-09-22T03:24:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "reinforcement-learning",
+    "math",
+    "nonthinking",
+    "stride",
+    "text-generation",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:adapter:Qwen/Qwen3-4B-Instruct-2507",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 26659108466,
+  "storage_human": "26.7 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "智学网统一登陆平台入口：http://www.zhixue.com/login.html",
+      "url": "https://zhidao.baidu.com/question/991925355584235219.html",
+      "snippet": "温屿17 2022-06-27 · TA获得超过1.4万个赞"
+    },
+    {
+      "title": "①②③）带圈数字1至100，现成的，直接复制给我。_百度知道",
+      "url": "https://zhidao.baidu.com/question/616594002713137892.html",
+      "snippet": "endylau.ttf字体属于特殊字符字体，安装了它就可以输入带圈的11-100的数字了，解决了用户只能输入1-20带圈数字的尴尬。 安装方 …"
+    },
+    {
+      "title": "一碗泡面的热量真的比一顿白米饭+有荤有素的正餐高吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/294908814",
+      "snippet": "泡面的调料包热量不能全部算上，因为不可能把这么咸的汤都喝完，顶多算一半的热量，实际460左右大卡。 米饭1-2两 145-290大 …"
+    },
+    {
+      "title": "北风 - 知乎",
+      "url": "https://www.zhihu.com/people/bei-feng-2017",
+      "snippet": "5 days ago · 刚好我在瑞浦兰钧干过，温州龙湾区基地。讲讲瑞浦兰钧是干什么的吧！ 它是一家电池工厂，生产动力电池也生产其他电 …"
+    },
+    {
+      "title": "合伙人入驻平台_百度知道",
+      "url": "https://zhidao.baidu.com/home/partnerhome",
+      "snippet": "知识分享，价值共创！百度知道合伙人平台，是基于知识内容的创作分发平台。一站式生产，全渠道分发；亿万精准流量，AI为创作者 …"
+    }
+  ]
+}

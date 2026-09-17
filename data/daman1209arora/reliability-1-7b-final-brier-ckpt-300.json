@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "daman1209arora/Reliability-1.7B-final-brier-ckpt-300",
+  "slug": "daman1209arora-reliability-1-7b-final-brier-ckpt-300",
+  "author": "daman1209arora",
+  "url": "https://huggingface.co/daman1209arora/Reliability-1.7B-final-brier-ckpt-300",
+  "created_at": "2026-09-17T16:22:28.000Z",
+  "updated_at": "2026-09-17T16:24:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2031739904,
+  "parameters_human": "2.03B",
+  "storage_bytes": 4074938294,
+  "storage_human": "4.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Where are Notepad temp/unsaved .txt files located? - Super User",
+      "url": "https://superuser.com/questions/1856217/where-are-notepad-temp-unsaved-txt-files-located",
+      "snippet": "Sep 19, 2024 · My guess would be \\AppData\\Local\\Temp, but keep in mind they may not be .txt files. Word for instance when doing …"
+    },
+    {
+      "title": ".tmp files appearing in Windows\\\\Temp folder - Super User",
+      "url": "https://superuser.com/questions/19779/tmp-files-appearing-in-windows-temp-folder",
+      "snippet": "Aug 6, 2009 · There is some program running that is creating .tmp files in my \\\\Windows\\\\Temp folder and filling up the hard drive. …"
+    },
+    {
+      "title": "ubuntu - How to wipe free disk space in Linux? - Super User",
+      "url": "https://superuser.com/questions/19326/how-to-wipe-free-disk-space-in-linux",
+      "snippet": "May 25, 2013 · In the preferences, tell it which paths you want. Generally it guesses them well. You want to include one writeable …"
+    },
+    {
+      "title": "Configure temp directory to prevent making files executable",
+      "url": "https://superuser.com/questions/977555/configure-temp-directory-to-prevent-making-files-executable",
+      "snippet": "Sep 24, 2015 · Ubuntu 14.04: How I should set permissions on the temp directory so created files can't be made executable? Of …"
+    },
+    {
+      "title": "How can I create multipart tar file in Linux? - Super User",
+      "url": "https://superuser.com/questions/198857/how-can-i-create-multipart-tar-file-in-linux",
+      "snippet": "Oct 13, 2010 · GNU Tar natively supports multiple volumes. There are many options, the one I found neat was tar --create --multi …"
+    }
+  ]
+}

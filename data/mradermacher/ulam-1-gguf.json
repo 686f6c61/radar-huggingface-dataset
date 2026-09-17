@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Ulam-1-GGUF",
+  "slug": "mradermacher-ulam-1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Ulam-1-GGUF",
+  "created_at": "2026-09-17T12:59:44.000Z",
+  "updated_at": "2026-09-17T13:19:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "math",
+    "reasoning",
+    "research-mathematics",
+    "qwen3_5",
+    "conversational",
+    "safetensors",
+    "multimodal",
+    "ulam",
+    "en",
+    "dataset:ulamai/verified-research-reasoning-trajectories",
+    "dataset:ulamai/Math-RL-Tasks",
+    "base_model:ulamai/Ulam-1",
+    "base_model:quantized:ulamai/Ulam-1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 187905347264,
+  "storage_human": "187.9 GB",
+  "base_model": "ulamai/Ulam-1",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Юридичні аспекти AML (Anti-Money Laundering ) в Україні, ЄС та …",
+      "url": "https://zilver.com.ua/uk/yurydychni-aspekty-aml-anti-money-laundering-v-ukrayini-yes-ta-ssha/",
+      "snippet": "AML (Anti-Money Laundering) — низка заходів з моніторингу, запобігання та боротьби з легалізацією доходів, отриманих …"
+    },
+    {
+      "title": "CAMS Certifications: How to Get CAMS Certified | ACAMS",
+      "url": "https://www.acams.org/en/certifications/cams-certification",
+      "snippet": "The Certified Anti-Money Laundering Specialist (CAMS) Certification is the global standard of competency for AML expertise, …"
+    },
+    {
+      "title": "Google Перекладач",
+      "url": "https://translate.google.com.ua/",
+      "snippet": "Безкоштовний сервіс Google миттєво перекладає слова, фрази й веб-сторінки з української на понад 100 мов і навпаки."
+    },
+    {
+      "title": "Homepage | ACAMS",
+      "url": "https://www.acams.org/en",
+      "snippet": "The Certified Anti-Money Laundering Specialist (CAMS) Certification is the global AML competency benchmark recognized worldwide …"
+    },
+    {
+      "title": "CAMS означає Сертифікований спеціаліст відмиванням грошей - Certified …",
+      "url": "https://www.abbreviationfinder.org/uk/acronyms/cams_certified-anti-money-laundering-specialist.html",
+      "snippet": "CAMS => Certified Anti-Money Laundering Specialist Через різні тлумачення CAMS ця абревіатура може викликати двозначність …"
+    }
+  ]
+}

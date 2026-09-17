@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "TiagoViana/qwen-sisprec-v2.1-UD-Q4_K_M",
+  "slug": "tiagoviana-qwen-sisprec-v2-1-ud-q4_k_m",
+  "author": "TiagoViana",
+  "url": "https://huggingface.co/TiagoViana/qwen-sisprec-v2.1-UD-Q4_K_M",
+  "created_at": "2026-09-17T15:43:20.000Z",
+  "updated_at": "2026-09-17T15:51:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "qwen3.8",
+    "qwen35",
+    "hybrid-attention",
+    "mtp",
+    "speculative-decoding",
+    "pt-br",
+    "unsloth",
+    "imatrix",
+    "text-generation",
+    "pt",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 17496904384,
+  "storage_human": "17.5 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aubergine Rezepte - die besten Rezepte 2026 | Chefkoch",
+      "url": "https://www.chefkoch.de/rs/s0/aubergine/Rezepte.html",
+      "snippet": "Aubergine - Wir haben 4.579 leckere Aubergine Rezepte für dich gefunden! Finde was du suchst - abwechslungsreich & toll. Jetzt …"
+    },
+    {
+      "title": "Auberginen-Rezepte - die besten Ideen | LECKER",
+      "url": "https://www.lecker.de/auberginen",
+      "snippet": "Unsere Auberginen-Rezepte sind ideal für deine Alltagsküche. Entdecke die schönsten Ideen mit Aubergine!"
+    },
+    {
+      "title": "Auberginen Einfach Rezepte | Chefkoch",
+      "url": "https://www.chefkoch.de/rs/s0/auberginen+einfach/Rezepte.html",
+      "snippet": "Auberginen Einfach - Wir haben 2.140 tolle Auberginen Einfach Rezepte für dich gefunden! Finde was du suchst - unkompliziert & …"
+    },
+    {
+      "title": "Die besten Auberginen Rezepte – vegan, vegetarisch & Fleisch",
+      "url": "https://shibaskitchen.de/auberginen-rezepte/",
+      "snippet": "May 11, 2025 · Hier habe ich meine liebsten Auberginen Rezepte für euch zusammengestellt. Sie sind nicht nur einfach zuzubereiten, …"
+    },
+    {
+      "title": "Auberginen-Rezepte für jeden Geschmack | LECKER",
+      "url": "https://www.lecker.de/auberginen-rezepte-fuer-jeden-geschmack-51966.html",
+      "snippet": "Die Aubergine ist so vielfältig und lecker! Probiere unbedingt unsere liebsten Auberginen-Rezepte aus - ob überbacken, gegrillt oder …"
+    }
+  ]
+}

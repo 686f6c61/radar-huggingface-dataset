@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "JiamengLiu-uBEST/AutoStrip",
+  "slug": "jiamengliu-ubest-autostrip",
+  "author": "JiamengLiu-uBEST",
+  "url": "https://huggingface.co/JiamengLiu-uBEST/AutoStrip",
+  "created_at": "2026-09-17T18:01:35.000Z",
+  "updated_at": "2026-09-17T18:03:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "„Google Chrome“ atsisiuntimas ir diegimas",
+      "url": "https://support.google.com/chrome/answer/95346?hl=lt&co=GENIE.Platform%3DDesktop",
+      "snippet": "Jei kyla problemų atsisiunčiant „Chrome“ kompiuteryje su „Windows“ operacine sistema, naudokite alternatyvią nuorodą ir atsisiųskite …"
+    },
+    {
+      "title": "Preuzimanje i instaliranje Google Chromea - Računalo - Google …",
+      "url": "https://support.google.com/chrome/answer/95346?hl=hr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Preuzimanje i instaliranje Google Chromea Web-preglednik Chrome možete preuzeti i instalirati bez dodatnih troškova te ga …"
+    },
+    {
+      "title": "Google Chrome - 知乎",
+      "url": "https://www.zhihu.com/topic/19550523/hot",
+      "snippet": "Google Chrome是一款由Google公司开发的网页浏览器，该浏览器基于其他开源软件撰写，包括WebKit，目标是提升稳定性、速度和 …"
+    },
+    {
+      "title": "有哪些鲜为人知却非常有意思、好用的 Chrome 扩展？",
+      "url": "https://www.zhihu.com/question/23228162",
+      "snippet": "有哪些鲜为人知却非常有意思、好用的 Chrome 扩展？ 传送门：火狐（Firefox） 扩展有哪些值得推荐的？ 现在的 Chrome 扩展多的烂 …"
+    },
+    {
+      "title": "Как пользоваться камерой и микрофоном ...",
+      "url": "https://support.google.com/chrome/answer/2693767?hl=ru&co=GENIE.Platform%3DDesktop",
+      "snippet": "Откройте Chrome на компьютере. Перейдите на сайт, которому требуется доступ к микрофону и камере. Когда появится …"
+    }
+  ]
+}

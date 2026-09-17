@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Anmol2507/LLM_as_judge_fine_tuned_Qwen_7B",
+  "slug": "anmol2507-llm_as_judge_fine_tuned_qwen_7b",
+  "author": "Anmol2507",
+  "url": "https://huggingface.co/Anmol2507/LLM_as_judge_fine_tuned_Qwen_7B",
+  "created_at": "2026-09-17T18:11:49.000Z",
+  "updated_at": "2026-09-17T18:34:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 31642497,
+  "storage_human": "32 MB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ดาวน์โหลดและติดตั้ง Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95346?hl=th&co=GENIE.Platform%3DDesktop",
+      "snippet": "คุณสามารถดาวน์โหลดและติดตั้งเว็บเบราว์เซอร์ Chrome ได้โดยไม่ ..."
+    },
+    {
+      "title": "Criar uma Conta do Google",
+      "url": "https://support.google.com/accounts/answer/27441?hl=pt&co=GENIE.Platform%3DDesktop",
+      "snippet": "Importante: ao criar uma Conta do Google para sua empresa, ative a personalização para empresas. Uma conta empresarial …"
+    },
+    {
+      "title": "倪静风 - 知乎",
+      "url": "https://www.zhihu.com/people/find-goo",
+      "snippet": "1 day ago · 给国内大模型泼脏水的。 蒸馏一开始就是深度学习就有了，就是已经公开了的神经网络权重，然后通过一个算法来降低整 …"
+    },
+    {
+      "title": "谷歌 (Google) - 知乎",
+      "url": "https://www.zhihu.com/topic/19565870",
+      "snippet": "谷歌公司（Google Inc.）成立于1998年9月4日，由拉里·佩奇和谢尔盖·布林共同创建，被公认为全球最大的搜索引擎公司。谷歌是一家 …"
+    },
+    {
+      "title": "Récupérer votre compte Google ou Gmail",
+      "url": "https://support.google.com/accounts/answer/7682439?hl=fr",
+      "snippet": "Suivez les étapes pour récupérer votre compte Google si vous avez oublié vos identifiants ou n'obtenez pas de codes de validation."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "SAD12ESZAE/MyAwesomeModel-TestRepository",
+  "slug": "sad12eszae-myawesomemodel-testrepository",
+  "author": "SAD12ESZAE",
+  "url": "https://huggingface.co/SAD12ESZAE/MyAwesomeModel-TestRepository",
+  "created_at": "2026-09-17T15:10:34.000Z",
+  "updated_at": "2026-09-17T15:12:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/",
+      "snippet": "Connect and share with friends, family, and the world on Facebook."
+    },
+    {
+      "title": "Buy and Sell in Perth, Western Australia | Facebook Marketplace",
+      "url": "https://www.facebook.com/marketplace/perth/",
+      "snippet": "Shop electronics, cars, furniture, clothing, and more for sale in Perth on Facebook Marketplace. Find great deals from local sellers or …"
+    },
+    {
+      "title": "Meta for Business (formerly Facebook for Business)",
+      "url": "https://business.facebook.com/",
+      "snippet": "By logging in, you can navigate to all business tools like Meta Business Suite, Ads Manager and more to help you connect with your …"
+    },
+    {
+      "title": "Facebook",
+      "url": "https://upload.facebook.com/login/identify/",
+      "snippet": "Enter your mobile number or email. Mobile number or email"
+    },
+    {
+      "title": "Facebook",
+      "url": "https://l.facebook.com/r.php/?display=page",
+      "snippet": "Connect with friends, family, and communities on Facebook, the world's largest social media platform."
+    }
+  ]
+}

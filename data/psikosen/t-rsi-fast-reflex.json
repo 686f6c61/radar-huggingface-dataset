@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "psikosen/t-rsi-fast-reflex",
+  "slug": "psikosen-t-rsi-fast-reflex",
+  "author": "psikosen",
+  "url": "https://huggingface.co/psikosen/t-rsi-fast-reflex",
+  "created_at": "2026-09-17T18:57:03.000Z",
+  "updated_at": "2026-09-17T20:58:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "t_rsi_fast_reflex",
+    "browser-use",
+    "agent",
+    "ternary-logic",
+    "bitnet",
+    "autonomous-agents",
+    "chromium",
+    "web-navigation",
+    "experimental",
+    "license:mit",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1082947,
+  "parameters_human": "1.1M",
+  "storage_bytes": 1357292,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Restaurante La Mansion - Marriott Reforma - Ciudad de México, …",
+      "url": "https://www.opentable.com.mx/r/la-mansion-marriott-reforma-ciudad-de-mexico",
+      "snippet": "2 days ago · La Mansión cuenta con un comedor elegante con vistas a Paseo de la Reforma y acepta grupos privados, por lo que …"
+    },
+    {
+      "title": "Restaurante La Mansion - Marriott Reforma - Ciudad de México, …",
+      "url": "https://www.opentable.com/r/la-mansion-marriott-reforma-ciudad-de-mexico?lang=es-mx",
+      "snippet": "20 hours ago · La Mansion - Marriott Reforma, restaurante Casual elegante de comida Cortes finos. Lee las reseñas y reserva ahora."
+    },
+    {
+      "title": "Marriott Reforma Hotel Mexico City (Sitio oficial)",
+      "url": "https://www.marriott.com/es/hotels/mexmc-mexico-city-marriott-reforma-hotel/overview/?msockid=21cccdc9f60663532726da1ef732621a",
+      "snippet": "La Mansion trae el clásico restaurante de carnes a la parrilla a la Ciudad de México. Ya sea que estés saboreando un jugoso rib-eye …"
+    },
+    {
+      "title": "Restaurantes cerca de Mexico City Marriott Reforma Hotel",
+      "url": "https://www.opentable.com.mx/landmark/restaurants-near-mexico-city-marriott-reforma-hotel",
+      "snippet": "3 days ago · Descubre los mejores restaurantes cerca de Mexico City Marriott Reforma Hotel en Ciudad de México. Encuentra …"
+    },
+    {
+      "title": "Welcome to Mexico City Marriott Reforma Hotel",
+      "url": "https://www.marriott.com/en-us/hotels/mexmc-mexico-city-marriott-reforma-hotel/overview/?msockid=21cccdc9f60663532726da1ef732621a",
+      "snippet": "You'll also enjoy upscale rooms, a Mexican restaurant and steakhouse and an exclusive executive lounge. Known for its delicious …"
+    }
+  ]
+}

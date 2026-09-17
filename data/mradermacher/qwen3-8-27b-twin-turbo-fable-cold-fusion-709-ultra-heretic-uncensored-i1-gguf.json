@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored-i1-GGUF",
+  "slug": "mradermacher-qwen3-8-27b-twin-turbo-fable-cold-fusion-709-ultra-heretic-uncensored-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored-i1-GGUF",
+  "created_at": "2026-09-17T14:56:29.000Z",
+  "updated_at": "2026-09-17T23:00:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "heretic",
+    "qwen3_8",
+    "qwen3_6",
+    "uncensored",
+    "finetune",
+    "Cold Fusion",
+    "GAIN Training",
+    "Multi-stage tuning",
+    "all use cases",
+    "unsloth",
+    "en",
+    "dataset:DavidAU/Polar-STRICT-Datasets",
+    "dataset:DavidAU/F451-STRICT-Datasets",
+    "dataset:DavidAU/THE-DECKARD-Datasets",
+    "base_model:DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored",
+    "base_model:quantized:DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 218554012416,
+  "storage_human": "218.6 GB",
+  "base_model": "DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Current Time in London — Live Clock, Time Zone & UTC Offset",
+      "url": "https://www.worldtimenow.net/time/london/",
+      "snippet": "16 hours ago · What time is it in London right now? See the live clock, UTC+0 offset, time zone details, and Daylight Saving Time info …"
+    },
+    {
+      "title": "Time in London, United Kingdom now",
+      "url": "https://time.is/London",
+      "snippet": "1 day ago · Exact time now, time zone, time difference, sunrise/sunset time and key facts for London, United Kingdom."
+    },
+    {
+      "title": "Time in London – Live Clock (GMT / BST)",
+      "url": "https://www.timeinlondon.co.uk/",
+      "snippet": "1 day ago · Live, accurate time in London right now. Updated every second with GMT/BST status, plus tools to compare cities and …"
+    },
+    {
+      "title": "Current Time in London, United Kingdom | CityTimeNow",
+      "url": "https://citytimenow.com/london",
+      "snippet": "1 day ago · Current local time in London, United Kingdom. View the London time zone, UTC+01:00 UTC offset, daylight saving status, …"
+    },
+    {
+      "title": "Current Local Time in London, England, United Kingdom",
+      "url": "https://www.timeanddate.com/worldclock/uk/london",
+      "snippet": "Current local time in United Kingdom – England – London. Get London's weather and area codes, time zone and DST. Explore …"
+    }
+  ]
+}

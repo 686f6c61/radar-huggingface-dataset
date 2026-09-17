@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "id": "isihdfg/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
+  "slug": "isihdfg-qwen3-8-27b-turbo-fable-cold-fusion-735-882-heretic-uncensored-neo-coder-max-mtp-gguf",
+  "author": "isihdfg",
+  "url": "https://huggingface.co/isihdfg/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
+  "created_at": "2026-09-17T13:57:47.000Z",
+  "updated_at": "2026-09-17T13:57:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "unsloth",
+    "fine tune",
+    "heretic",
+    "uncensored",
+    "abliterated",
+    "ara",
+    "MTP GGUF Quants",
+    "Regular GGUF Quants",
+    "qwen3_8",
+    "qwen3_6",
+    "qwen3_5",
+    "multi-stage tuned",
+    "thinking",
+    "reasoning",
+    "all use cases",
+    "coder",
+    "creative",
+    "creative writing",
+    "all genres",
+    "story",
+    "writing",
+    "fiction",
+    "roleplaying",
+    "bfloat16",
+    "multi-stage-tune",
+    "multi-state-merge",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "dataset:DavidAU/Polar-STRICT-Datasets",
+    "dataset:DavidAU/F451-STRICT-Datasets",
+    "base_model:DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+    "base_model:quantized:DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 389007761691,
+  "storage_human": "389.0 GB",
+  "base_model": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Case, Via Canfora, Catania — idealista, N.1 in Italia",
+      "url": "https://www.idealista.it/geo/vendita-case/via-canfora-catania-catania/",
+      "snippet": "A partire da 64.000 euro: 13 case, Via Canfora, Catania. Annunci di privati e agenzie immobiliari."
+    },
+    {
+      "title": "Case in vendita in Via Canfora, Catania - Immobiliare.it",
+      "url": "https://www.immobiliare.it/vendita-case/catania/in-via-canfora/?msockid=1fbe681271666ebc15c97fc570436f52",
+      "snippet": "12 annunci di case da 64.000 euro in vendita in Via Canfora, Catania. Scegli con Immobiliare.it la tua futura casa."
+    },
+    {
+      "title": "25 immobili catania canfora in vendita a La Via, Borghetto di Vara",
+      "url": "https://case.trovit.it/catania-via-canfora",
+      "snippet": "Visualizza foto 220.000 € Appartamento a Borgo-Sanzio, Catania, Provincia di Catania Kleos casa propone in vendita appartamento …"
+    },
+    {
+      "title": "Case a Via Canfora. Ville in vendita a Via Canfora - Nestoria",
+      "url": "https://www.nestoria.it/case/vendita/via-canfora",
+      "snippet": "2.233 Properties in vendita a Via Canfora da €45,000. Nestoria. monolocale 35mq Catania Catania Sicilia via imbriani via canfora …"
+    },
+    {
+      "title": "Appartamento in Vendita in Via Canfora 38 a Catania - Casa.it",
+      "url": "https://www.casa.it/immobili/54541372/",
+      "snippet": "Trova le migliori agenzie per vendere la tua casa. Risparmia tempo e vendi al meglio."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "muhamad-geosurge/invert-polarity-9adf38e7-f2e6-4444-80fb-fc67030ae864",
+  "slug": "muhamad-geosurge-invert-polarity-9adf38e7-f2e6-4444-80fb-fc67030ae864",
+  "author": "muhamad-geosurge",
+  "url": "https://huggingface.co/muhamad-geosurge/invert-polarity-9adf38e7-f2e6-4444-80fb-fc67030ae864",
+  "created_at": "2026-09-17T14:22:33.000Z",
+  "updated_at": "2026-09-17T15:06:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "mistral",
+    "mistral-common",
+    "base_model:mistralai/Mistral-7B-v0.3",
+    "base_model:finetune:mistralai/Mistral-7B-v0.3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7248031744,
+  "parameters_human": "7.25B",
+  "storage_bytes": 14496108351,
+  "storage_human": "14.5 GB",
+  "base_model": "mistralai/Mistral-7B-v0.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Phénomène étrange fermeture centralisée (panne)",
+      "url": "https://logan.forumactif.com/t1426-phenomene-etrange-fermeture-centralisee-panne",
+      "snippet": "Jul 1, 2007 · Ma Lolo me fait un caprice plutôt étrange depuis ce matin. :scratch: Deux fonctions complètement différentes se …"
+    },
+    {
+      "title": "Dacia Sandero Stepway - Forumactif.com",
+      "url": "https://logan.forumactif.com/t1896-dacia-sandero-stepway",
+      "snippet": "Citation : Dacia Sandero Stepway Neuvième constructeur sur le marché français en 2009, salué pour la fiabilité de ses modèles, …"
+    },
+    {
+      "title": "soucis avec fermeture centralisée - Logan - Dacia - Forum Marques ...",
+      "url": "https://forum-auto.caradisiac.com/topic/26645-soucis-avec-fermeture-centralis%C3%A9e/",
+      "snippet": "May 27, 2008 · Rebonsir Fausse manip ,désolé Heureux propriétaire d'une Logan berline 1,5 dci 70 ch jusqu'a ce week end. Samedi …"
+    },
+    {
+      "title": "Ambiance ou Laureate : confort & insonorisation - Sandero - Dacia ...",
+      "url": "https://forum-auto.caradisiac.com/topic/45054-ambiance-ou-laureate-confort-insonorisation/",
+      "snippet": "Sep 14, 2009 · Bonjour, j'hesite entre Ambiance + pack electrique + jolie couleur ou Laureate. Quelle différence au niveau - de …"
+    },
+    {
+      "title": "Logan Kombi ohne Servolenkung ? - Startseite Forum Auto Dacia …",
+      "url": "https://www.motor-talk.de/forum/logan-kombi-ohne-servolenkung-t2283053.html",
+      "snippet": "May 21, 2009 · Logan Kaufen oder nicht? 45 Dacia Dokker, Jogger, Logan & Lodgy Forum Startseite Forum Auto Dacia Dokker, …"
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "id": "DioDef/qwen3.8-turbo",
+  "slug": "diodef-qwen3-8-turbo",
+  "author": "DioDef",
+  "url": "https://huggingface.co/DioDef/qwen3.8-turbo",
+  "created_at": "2026-09-17T12:35:53.000Z",
+  "updated_at": "2026-09-17T12:35:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "unsloth",
+    "fine tune",
+    "heretic",
+    "uncensored",
+    "abliterated",
+    "ara",
+    "MTP GGUF Quants",
+    "Regular GGUF Quants",
+    "qwen3_8",
+    "qwen3_6",
+    "qwen3_5",
+    "multi-stage tuned",
+    "thinking",
+    "reasoning",
+    "all use cases",
+    "coder",
+    "creative",
+    "creative writing",
+    "all genres",
+    "story",
+    "writing",
+    "fiction",
+    "roleplaying",
+    "bfloat16",
+    "multi-stage-tune",
+    "multi-state-merge",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "dataset:DavidAU/Polar-STRICT-Datasets",
+    "dataset:DavidAU/F451-STRICT-Datasets",
+    "base_model:DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+    "base_model:quantized:DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 389007761691,
+  "storage_human": "389.0 GB",
+  "base_model": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Betreuer (Recht) – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Betreuer_(Recht)",
+      "snippet": "„Befreite“ Betreuer sind in der Regel enge Familienangehörige (Eltern, Kinder, Enkelkinder, Großeltern, Geschwister, Ehegatten), …"
+    },
+    {
+      "title": "Betreuung von Angehörigen - Pro Senectute Schweiz",
+      "url": "https://www.prosenectute.ch/de/ratgeber/gesundheit/angehoerige-pflegen.html",
+      "snippet": "Organisieren Sie für diese Zeit eine Vertretung für die Pflege zu Hause oder buchen Sie einen Ferienplatz im Pflegeheim. Dank einer …"
+    },
+    {
+      "title": "Betreuung (Recht) – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Betreuung_(Recht)",
+      "snippet": "Kritiker vertreten die Auffassung, dass die Betreuung in der Praxis dennoch oft einer Entmündigung gleichkomme, obwohl das …"
+    },
+    {
+      "title": "Gesetzliche Betreuung und Familienangehörige | Pflegeantrag ...",
+      "url": "https://pflegeantrag.de/category/soziale-dienste-und-rechtliches/gesetzliche-betreuung-und-familienangehoerige/",
+      "snippet": "Jun 3, 2026 · Familienangehörige, wie Eltern, Geschwister oder Kinder, können als gesetzliche Betreuer bestellt werden, um die …"
+    },
+    {
+      "title": "Betreuungsrecht für Angehörige – Ihr umfassender Leitfaden",
+      "url": "https://www.anwalt-betreuungsrecht.de/post/betreuungsrecht-f%C3%BCr-angeh%C3%B6rige-ihr-umfassender-leitfaden",
+      "snippet": "Dieser Leitfaden zum Thema Betreuungsrecht für Angehörige gibt Ihnen einen Überblick über das Betreuungsverfahren, erläutert die …"
+    }
+  ]
+}

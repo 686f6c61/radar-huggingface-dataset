@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l31_remove40_swapgapiter_b010_r01",
+  "slug": "jeesup-svd-safety-l31_remove40_swapgapiter_b010_r01",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l31_remove40_swapgapiter_b010_r01",
+  "created_at": "2026-09-17T18:57:53.000Z",
+  "updated_at": "2026-09-17T19:01:43.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama3",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "license:llama3.1",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766296,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "patreon官网怎么进入 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/533003843436754845.html",
+      "snippet": "Jun 5, 2025 · patreon官网怎么进入要进入Patreon官网，实际上并不需要通过下载Patreon应用的方式，而是可以直接通过浏览器访问 …"
+    },
+    {
+      "title": "I,IV ,III,II,IIV是什么数字._百度知道",
+      "url": "https://zhidao.baidu.com/question/552326060.html",
+      "snippet": "I，IV ，III，II，IIV是 罗马数字。 对应 阿拉伯数字，也就是现在国际通用的数字为：Ⅰ是1，Ⅱ是2，Ⅲ是3，Ⅳ是4，Ⅴ是5，Ⅵ是6，Ⅶ …"
+    },
+    {
+      "title": "怎么进入patreon - 百度经验",
+      "url": "https://jingyan.baidu.com/article/75ab0bcb09726297864db285.html",
+      "snippet": "Mar 4, 2020 · 2 打开patreon后，我们需要注册一个patreon账号，点击如图所示的【sign up】 3 注册并登陆patreon账号后，我们即可 …"
+    },
+    {
+      "title": "Patreon - 知乎",
+      "url": "https://www.zhihu.com/topic/20087834/hot",
+      "snippet": "Patreon是Jack Conte和Sam Yam于2013年创办的一个项目。在 Patreon 上，艺术家可以把自己的作品直接销售给粉丝。Pateron 用户 …"
+    },
+    {
+      "title": "patreon怎么支付？ - 知乎",
+      "url": "https://www.zhihu.com/question/268012150",
+      "snippet": "Patreon 不接受国内卡，所以建议使用 虚拟信用卡，支付路径为支付宝—>虚拟信用卡—>Patreon。 需要注意的是，虚拟信用卡并不是 …"
+    }
+  ]
+}

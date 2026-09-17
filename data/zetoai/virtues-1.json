@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ZetoAI/Virtues-1",
+  "slug": "zetoai-virtues-1",
+  "author": "ZetoAI",
+  "url": "https://huggingface.co/ZetoAI/Virtues-1",
+  "created_at": "2026-09-17T16:20:00.000Z",
+  "updated_at": "2026-09-18T03:27:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 123874134752,
+  "storage_human": "123.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Edifice - Connexion ENT HDF, accès à votre espace scolaire",
+      "url": "https://enthdf.fr/",
+      "snippet": "Connexion à votre espace numérique scolaire : un accès simple, sécurisé et intuitif pour toute la communauté éducative."
+    },
+    {
+      "title": "Edifice - Connexion ENT HDF, accès à votre espace scolaire",
+      "url": "https://enthdf.fr/auth/login",
+      "snippet": "Connexion à votre ENT : un accès sécurisé et rapide à tous vos services numériques éducatifs."
+    },
+    {
+      "title": "Stages - Nord Collèges",
+      "url": "https://nordcolleges.enthdf.fr/stages/",
+      "snippet": "Stages Archive - Nord Collèges ADAR Flandre Métropole – agence de Lys‑lez‑Lannoy accompagne les habitants de Hem, Lannoy et …"
+    },
+    {
+      "title": "Connexion à l'ENT",
+      "url": "https://enthdf.fr/blog/id/af51d45b-01ab-4d9b-9a79-9221f19c58b1?state=PUBLISHED",
+      "snippet": "Portail de connexion à l'ENT HDF Veuillez renseigner quelques informations pour accéder à votre page d'authentification 1. …"
+    },
+    {
+      "title": "Identifiant ou mot de passe oublié",
+      "url": "https://enthdf.fr/auth/forgot",
+      "snippet": "Récupérez votre identifiant ou mot de passe oublié pour accéder à votre compte ENTHDF."
+    }
+  ]
+}

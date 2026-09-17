@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "NovaeonStudio/Occamy-1.0-oQ8-fp16-mtp",
+  "slug": "novaeonstudio-occamy-1-0-oq8-fp16-mtp",
+  "author": "NovaeonStudio",
+  "url": "https://huggingface.co/NovaeonStudio/Occamy-1.0-oQ8-fp16-mtp",
+  "created_at": "2026-09-17T14:21:07.000Z",
+  "updated_at": "2026-09-19T19:32:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_moe",
+    "apple-silicon",
+    "oMLX",
+    "agentic",
+    "tool-use",
+    "function-calling",
+    "moe",
+    "occamy",
+    "novaeon",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "arxiv:2609.11977",
+    "base_model:Accio-Lab/occamy-1.0",
+    "base_model:quantized:Accio-Lab/occamy-1.0",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 40304532439,
+  "storage_human": "40.3 GB",
+  "base_model": "Accio-Lab/occamy-1.0",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Claus Theo Gärtner – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Claus_Theo_G%C3%A4rtner",
+      "snippet": "In der fünften Folge der zweiten Staffel, Der blinde Fleck, hatte Gärtner einen Gastauftritt, als er den neuen Detektiv Oswald an einer …"
+    },
+    {
+      "title": "Claus Theo Gärtner: Das ist die Frau des TV-Stars aus dem Frankfurt …",
+      "url": "https://frankfurt.t-online.de/region/frankfurt-am-main/id_101431116/claus-theo-gaertner-das-ist-die-frau-des-tv-stars-aus-dem-frankfurt-krimi.html",
+      "snippet": "6 days ago · Als Jugendliche schrieb Sarah Würgler dem Schauspieler Claus Theo Gärtner einen Brief – viele Jahre später heiratete …"
+    },
+    {
+      "title": "Das macht \"Matula\"-Darsteller Claus Theo Gärtner heute",
+      "url": "https://www.bunte.de/stars/star-life/das-macht-matula-darsteller-claus-theo-gaertner-heute_3b9cd75f-060d-4e82-96b4-e44ac1328a11.html",
+      "snippet": "Sep 27, 2025 · Inzwischen ist sie die Ehefrau von Claus Theo Gärtner, dem der Altersunterschied von stolzen 35 Jahren anfangs …"
+    },
+    {
+      "title": "Fall für zwei \"Matula\" heiratet 35 Jahre jüngere Freundin",
+      "url": "https://www.spiegel.de/panorama/leute/fall-fuer-zwei-matula-heiratet-35-jahre-juengere-freundin-a-574567.html",
+      "snippet": "Aug 26, 2008 · Für Gärtner wird es die dritte Ehe sein. 2003 habe sich der gebürtige Berliner nach rund zwölf Ehejahren von seiner …"
+    },
+    {
+      "title": "Matula (Filmreihe) – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Matula_(Filmreihe)",
+      "snippet": "Damit endete auch die Rolle des Detektivs Matula, die bis dahin in insgesamt 300 Folgen von Claus Theo Gärtner verkörpert wurde. …"
+    }
+  ]
+}

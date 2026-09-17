@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "yyyyyyhhhhhhhhhh/LIBCREAT_LoRA",
+  "slug": "yyyyyyhhhhhhhhhh-libcreat_lora",
+  "author": "yyyyyyhhhhhhhhhh",
+  "url": "https://huggingface.co/yyyyyyhhhhhhhhhh/LIBCREAT_LoRA",
+  "created_at": "2026-09-17T18:25:40.000Z",
+  "updated_at": "2026-09-17T18:25:48.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "tensorboard",
+    "text-to-image",
+    "diffusers-training",
+    "lora",
+    "template:sd-lora",
+    "stable-diffusion-xl",
+    "stable-diffusion-xl-diffusers",
+    "base_model:stabilityai/stable-diffusion-xl-base-1.0",
+    "base_model:adapter:stabilityai/stable-diffusion-xl-base-1.0",
+    "license:openrail++",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 77617498,
+  "storage_human": "78 MB",
+  "base_model": "stabilityai/stable-diffusion-xl-base-1.0",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Parenteral Route: What Is It, Methods of Administration ... - Osmosis",
+      "url": "https://www.osmosis.org/answers/parenteral-route",
+      "snippet": "Mar 4, 2025 · Examples of medications delivered parenterally include insulin, opioid analgesics, vaccines, and antibiotics, amongst …"
+    },
+    {
+      "title": "Parenteral Administration - Intradermal, Subcutaneous, Intramuscular ...",
+      "url": "https://www.vhtc.org/2025/08/parenteral-administration.html",
+      "snippet": "Aug 23, 2025 · Parenteral Administration - intradermal, subcutaneous, intramuscular, and intravenous routes. Needle sizes, angles, …"
+    },
+    {
+      "title": "PARENTERALLY | English meaning - Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/dictionary/english/parenterally",
+      "snippet": "PARENTERALLY definition: 1. Food or medical treatment that is given parenterally does not come through the digestive system…. …"
+    },
+    {
+      "title": "PARENTERAL Definition & Meaning - Merriam-Webster",
+      "url": "https://www.merriam-webster.com/dictionary/parenteral",
+      "snippet": "par· en· ter· al pə-ˈren-tə-rəl : situated or occurring outside the intestine especially : introduced otherwise than by way of the …"
+    },
+    {
+      "title": "What Does Parenteral Mean in Medicine? - Biology Insights",
+      "url": "https://biologyinsights.com/what-does-parenteral-mean-in-medicine/",
+      "snippet": "Apr 29, 2026 · When a clinician says a drug is given parenterally, they could mean any of four injection types: Intravenous (IV): …"
+    }
+  ]
+}

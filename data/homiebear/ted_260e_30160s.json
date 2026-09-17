@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Homiebear/Ted_260e_30160s",
+  "slug": "homiebear-ted_260e_30160s",
+  "author": "Homiebear",
+  "url": "https://huggingface.co/Homiebear/Ted_260e_30160s",
+  "created_at": "2026-09-17T18:51:59.000Z",
+  "updated_at": "2026-09-17T18:56:35.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 412068194,
+  "storage_human": "412 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Scarpe Antinfortunistiche - Diadora Utility Online Shop",
+      "url": "https://www.diadorautility.com/it/it/scarpe_da_lavoro/",
+      "snippet": "Scopri l'ampia gamma di scarpe antinfortunistiche Diadora Utility, progettate per offrirti massima protezione e comfort in ogni …"
+    },
+    {
+      "title": "Diadora Utility: Scarpe Antinfortunistiche e Abbigliamento da Lavoro ...",
+      "url": "https://www.diadorautility.com/it/it/",
+      "snippet": "Diadora Utility è la linea di Scarpe Antinfortunistiche, Abbigliamento da Lavoro e Accessori Professionali pensati per il lavoro di tutti i …"
+    },
+    {
+      "title": "SCARPE ANTINFORTUNISTICHE DIADORA - Utilitypoint.it",
+      "url": "https://www.utilitypoint.it/categoria-prodotto/scarpe-antinfortunistiche/",
+      "snippet": "Scarpe Antinfortunistiche Diadora: Qui trovi tutte le calzature da Lavoro Utility Diadora alte, basse, estive e invernali, e relative …"
+    },
+    {
+      "title": "Scarpe Antinfortunistiche Diadora: Sconti fino al 50% - Lineonline",
+      "url": "https://www.lineonline.it/scarpe-antinfortunistiche-diadora.html",
+      "snippet": "La collezione dedicata all’antinfortunistica prende il nome di Diadora Utility, più in particolare le calzature sono pensate per soddisfare …"
+    },
+    {
+      "title": "Scarpe Antinfortunistiche Diadora - Think Safe Italia",
+      "url": "https://www.thinksafe.it/144-scarpe-antinfortunistiche-diadora-utility",
+      "snippet": "Se cerchi una scarpa da lavoro affidabile, leggera e con un design contemporaneo, le scarpe antinfortunistiche Diadora sono la …"
+    }
+  ]
+}

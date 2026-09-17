@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "NotCorealfr/Plex",
+  "slug": "notcorealfr-plex",
+  "author": "NotCorealfr",
+  "url": "https://huggingface.co/NotCorealfr/Plex",
+  "created_at": "2026-09-17T17:01:40.000Z",
+  "updated_at": "2026-09-17T17:11:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "text-generation",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EcoFlow FR | Générateurs Solaires et Panneaux Solaires Efficaces",
+      "url": "https://fr.ecoflow.com/",
+      "snippet": "Découvrez EcoFlow : Générateurs solaires, panneaux solaires et stations électriques portables pour l’énergie autonome à la maison …"
+    },
+    {
+      "title": "EcoFlow | Balkonkraftwerke & Tragbare Powerstationen & mehr",
+      "url": "https://de.ecoflow.com/",
+      "snippet": "Entdecken Sie EcoFlow: Tragbare Powerstationen, Balkonkraftwerke und effiziente Energiespeicher für nachhaltige Energie zu …"
+    },
+    {
+      "title": "EcoFlow (エコフロー)公式サイト | ポータブル電源 – EcoFlow Japan",
+      "url": "https://jp.ecoflow.com/",
+      "snippet": "EcoFlow Japanは安全性と利便性に焦点を当て、人々の生活をより良いものにするためのクリーンな電力技術を開発する事を目的と …"
+    },
+    {
+      "title": "EcoFlow Nederland | Thuisbatterij, Zonnepanelen & Powerstations",
+      "url": "https://nl.ecoflow.com/",
+      "snippet": "Ontdek EcoFlow’s slimme thuisbatterijen, draagbare powerstations & zonnepanelen. Voor stroomzekerheid thuis én vrijheid in de …"
+    },
+    {
+      "title": "Best Power Stations, Solar Generators & Home Backup | EcoFlow",
+      "url": "https://us.ecoflow.com/",
+      "snippet": "EcoFlow offers portable power stations, solar generators, and home backup solutions. Perfect for adventures, off-grid living, and eco …"
+    }
+  ]
+}

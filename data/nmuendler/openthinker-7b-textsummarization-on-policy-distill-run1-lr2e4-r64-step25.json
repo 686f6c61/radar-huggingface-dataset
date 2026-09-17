@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "nmuendler/OpenThinker-7B-textsummarization-on-policy-distill-run1-lr2e4-r64-step25",
+  "slug": "nmuendler-openthinker-7b-textsummarization-on-policy-distill-run1-lr2e4-r64-step25",
+  "author": "nmuendler",
+  "url": "https://huggingface.co/nmuendler/OpenThinker-7B-textsummarization-on-policy-distill-run1-lr2e4-r64-step25",
+  "created_at": "2026-09-17T15:42:25.000Z",
+  "updated_at": "2026-09-17T15:42:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:yufeng1/OpenThinker-7B-summary-type3-e1-10000",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:yufeng1/OpenThinker-7B-summary-type3-e1-10000",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 657397862,
+  "storage_human": "657 MB",
+  "base_model": "yufeng1/OpenThinker-7B-summary-type3-e1-10000",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hoteljob-Schweiz - Jobs Hotel Stellenmarkt für Hotellerie und ...",
+      "url": "https://hoteljob-schweiz.de/",
+      "snippet": "Wöchentliche Email-Info über die neusten Betriebe / Unternehmen (Neuvorstellungen bei Hoteljob-Schweiz) und top aktuelle …"
+    },
+    {
+      "title": "Hoteljob Schweiz",
+      "url": "https://hoteljob-schweiz.ch/",
+      "snippet": "1 day ago · Stellenangebote Hoteljob Schweiz Alle Jobs Küche Service Zimmer Rezeption Sonstige 11894 aktuelle Jobs …"
+    },
+    {
+      "title": "Aktuelle Stellenangebote bei Hotel Job Schweiz",
+      "url": "https://hoteljob-schweiz.de/jobs/stellenangebote",
+      "snippet": "Mar 31, 2026 · Eine Jobauswahl über die aktuellsten Stellenangebote bei Hotel Jobs Schweiz. Finden Sie den richtigen Hotel Job für …"
+    },
+    {
+      "title": "Hoteljob.ch powered by Hotelcareer",
+      "url": "https://hoteljob.ch/",
+      "snippet": "Deine Jobbörse für die Hotellerie und Gastronomie Diese Website verwendet Cookies. Cookies sind kleine Textdateien, die beim …"
+    },
+    {
+      "title": "Jobbörse Hotellerie, Jobangebote Hotel, Hoteljobs, Gastronomiejobs ...",
+      "url": "https://www.hotelcareer.ch/",
+      "snippet": "Jobbörse für Hotellerie, Gastronomie und Touristik. Hotel Jobs, Stellenangebote in der Gastronomie und Jobs im Bereich Touristik. …"
+    }
+  ]
+}

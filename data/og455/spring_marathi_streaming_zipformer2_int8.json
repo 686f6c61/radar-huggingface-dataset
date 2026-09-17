@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "og455/SPRING_Marathi_Streaming_Zipformer2_INT8",
+  "slug": "og455-spring_marathi_streaming_zipformer2_int8",
+  "author": "og455",
+  "url": "https://huggingface.co/og455/SPRING_Marathi_Streaming_Zipformer2_INT8",
+  "created_at": "2026-09-17T19:21:15.000Z",
+  "updated_at": "2026-09-17T19:25:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 130220571,
+  "storage_human": "130 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rule34 Explained: Meaning, Origin, and Online Safety",
+      "url": "https://rule34.sbs/",
+      "snippet": "Rule 34 is an internet meme saying that adult content exists for virtually any topic. It’s commonly associated with fan-made art of …"
+    },
+    {
+      "title": "Rule34 - Origins, Culture, and Safer Browsing",
+      "url": "https://rule34.bar/",
+      "snippet": "Rule34 is an internet meme that jokingly claims adult content exists for every possible topic. People use it to comment on how fast …"
+    },
+    {
+      "title": "Rule 34 - Newgrounds.com",
+      "url": "https://www.newgrounds.com/playlist/320667/rule-34",
+      "snippet": "A secret fatality from Ultimate Mortal Kombat 3."
+    },
+    {
+      "title": "R34 — Art from around the web",
+      "url": "https://r34.net/",
+      "snippet": "Discover art and videos from around the web in a user-friendly way. If it exists, there is a way to find it here."
+    },
+    {
+      "title": "GitHub - kurozenzen/r34-react: A modern tag-based rule 34 browsing …",
+      "url": "https://github.com/kurozenzen/r34-react",
+      "snippet": "A simple yet powerful search tool for rule34.xxx. The aim of this web application is to provide a more enjoyable experience while …"
+    }
+  ]
+}

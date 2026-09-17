@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "npario/Qwen3-Embedding-0.6B-8bit",
+  "slug": "npario-qwen3-embedding-0-6b-8bit",
+  "author": "npario",
+  "url": "https://huggingface.co/npario/Qwen3-Embedding-0.6B-8bit",
+  "created_at": "2026-09-17T16:01:46.000Z",
+  "updated_at": "2026-09-17T16:01:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3",
+    "sentence-similarity",
+    "feature-extraction",
+    "text-embeddings-inference",
+    "base_model:Qwen/Qwen3-Embedding-0.6B",
+    "base_model:finetune:Qwen/Qwen3-Embedding-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 595776512,
+  "parameters_human": "595.8M",
+  "storage_bytes": 644575746,
+  "storage_human": "645 MB",
+  "base_model": "Qwen/Qwen3-Embedding-0.6B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CRBS（协同再生制动系统）在新能源车中的搭载率高吗？",
+      "url": "https://www.zhihu.com/question/657001293",
+      "snippet": "May 24, 2024 · 网上有的说法是除了特斯拉及少量品牌，其他大多数都使用CRBS了，也有说法是仅有少量中高端车使用CRBS。 目前 …"
+    },
+    {
+      "title": "为什么电动车再生制动时大部分能量都消耗了，仅仅回收了一小部分能 …",
+      "url": "https://www.zhihu.com/question/268221677",
+      "snippet": "现在大部分电动车都有ibooster可采用CRBS制动策略，测试循环也改为了较为激烈的CLTC，实际应该可以增加20%以上的续航。 真 …"
+    },
+    {
+      "title": "为什么不把动能回收设置在刹车的前半段，而要搞个单踏板模式？",
+      "url": "https://www.zhihu.com/question/14953117332",
+      "snippet": "刹车动能回收这个叫 CRBS，负责的车企都会做。 初段动能回收，中后段动能回收用尽了再追加机械制动。 可以做得相当丝滑，无感 …"
+    },
+    {
+      "title": "纯电动汽车怎么开最省电？ - 知乎",
+      "url": "https://www.zhihu.com/question/579217845",
+      "snippet": "不管有没有CRBS，少减速都有利于省电 总之，在路况允许的前提下，能不制动就不制动；如果必须制动，能用电制动就不用机械制动 …"
+    },
+    {
+      "title": "新能源车为什么要弄单踏板模式？ - 知乎",
+      "url": "https://www.zhihu.com/question/576280989",
+      "snippet": "2.crbs全称Cooperative Regenerative Brake Systems，中文名是协作制动回馈系统。 是一种可以在不用改变驾驶习惯上的能量回收方 …"
+    }
+  ]
+}

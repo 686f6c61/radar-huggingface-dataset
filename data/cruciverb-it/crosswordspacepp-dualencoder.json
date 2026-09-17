@@ -1,0 +1,98 @@
+{
+  "schema": 1,
+  "id": "cruciverb-it/crosswordspacepp-dualencoder",
+  "slug": "cruciverb-it-crosswordspacepp-dualencoder",
+  "author": "cruciverb-it",
+  "url": "https://huggingface.co/cruciverb-it/crosswordspacepp-dualencoder",
+  "created_at": "2026-09-17T16:02:36.000Z",
+  "updated_at": "2026-09-17T16:03:10.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [
+    "it"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "dual_encoder_ade",
+    "feature-extraction",
+    "crossword",
+    "dual-encoder",
+    "contrastive-learning",
+    "information-retrieval",
+    "sentence-similarity",
+    "italian",
+    "custom_code",
+    "it",
+    "dataset:cruciverb-it/evalita2026",
+    "base_model:sentence-transformers/paraphrase-multilingual-mpnet-base-v2",
+    "base_model:finetune:sentence-transformers/paraphrase-multilingual-mpnet-base-v2",
+    "license:cc-by-4.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 556679424,
+  "parameters_human": "556.7M",
+  "storage_bytes": 2248920240,
+  "storage_human": "2.2 GB",
+  "base_model": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Crossword Clue Answering",
+      "dataset": "EVALITA 2026 CruciverbIT Task 1 (test)",
+      "metric": "Acc@1 (length-filtered)",
+      "value": 57.9
+    },
+    {
+      "task": "Crossword Clue Answering",
+      "dataset": "EVALITA 2026 CruciverbIT Task 1 (test)",
+      "metric": "Acc@10 (length-filtered)",
+      "value": 80.9
+    },
+    {
+      "task": "Crossword Clue Answering",
+      "dataset": "EVALITA 2026 CruciverbIT Task 1 (test)",
+      "metric": "MRR@10 (length-filtered)",
+      "value": 65.8
+    }
+  ],
+  "sources": [
+    {
+      "title": "Color Name Lookup | Find Closest Named Color",
+      "url": "https://www.toolszone.net/en/tools/color-name-lookup",
+      "snippet": "Enter a HEX, RGB or HSL value — or a color name — and instantly find the closest CSS or design color name, with copyable values …"
+    },
+    {
+      "title": "Color Namer — Find the Closest Named Color | Toolbox",
+      "url": "https://lindetoolbox.com/tools/color-namer/",
+      "snippet": "Paste any HEX, RGB or HSL value and instantly see its closest named color — drawn from a database of ~300 names spanning all …"
+    },
+    {
+      "title": "Find Similar Colors - Colorguide.org",
+      "url": "https://colorguide.org/similar-colors",
+      "snippet": "Find the most similar named colors for any color code or search term."
+    },
+    {
+      "title": "Color Name Finder - Find Closest Color Names",
+      "url": "https://color-name-finder.endkit.app/",
+      "snippet": "Find the closest color names to any hex code. Search across multiple color palettes and discover similar colors."
+    },
+    {
+      "title": "Free Color Library — Search Colors by Name or Code",
+      "url": "https://www.fashiondiffusion.ai/color-library",
+      "snippet": "Search any color by name, code, or Hex for instant RGB and color code results — built for fashion designers, brands, and sourcing …"
+    }
+  ]
+}

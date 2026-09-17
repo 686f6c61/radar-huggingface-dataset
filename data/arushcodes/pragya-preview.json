@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "ArushCodes/Pragya-Preview",
+  "slug": "arushcodes-pragya-preview",
+  "author": "ArushCodes",
+  "url": "https://huggingface.co/ArushCodes/Pragya-Preview",
+  "created_at": "2026-09-17T16:04:19.000Z",
+  "updated_at": "2026-09-17T16:04:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "text-generation-inference",
+    "text-generation",
+    "en",
+    "dataset:roneneldan/TinyStories",
+    "arxiv:2305.07759",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 74580042,
+  "storage_human": "75 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - 0xk1h0/ChatGPT_DAN: ChatGPT DAN, Jailbreaks prompt",
+      "url": "https://github.com/0xk1h0/ChatGPT_DAN",
+      "snippet": "ChatGPT DAN, Jailbreaks prompt. Contribute to 0xk1h0/ChatGPT_DAN development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - MuiseDestiny/zotero-gpt: GPT Meet Zotero.",
+      "url": "https://github.com/MuiseDestiny/zotero-gpt",
+      "snippet": "GPT Tag Recommendation Automatically create tags for entries: open and copy then open Zotero, this tag will be automatically …"
+    },
+    {
+      "title": "Top 16+ Chat AI tiếng Việt miễn phí, tốt nhất 2026 - CellphoneS",
+      "url": "https://cellphones.com.vn/sforum/top-phan-mem-chat-ai-tot-nhat",
+      "snippet": "Feb 9, 2026 · Top các phần mềm chat AI tiếng Việt tốt và được nhiều người sử dụng nhất 2026, phần mềm chatbot AI online đem …"
+    },
+    {
+      "title": "Hướng dẫn cách nhận ChatGPT Plus miễn phí 1 tháng - CellphoneS",
+      "url": "https://cellphones.com.vn/sforum/cach-nhan-chatgpt-plus-mien-phi-1-thang",
+      "snippet": "May 13, 2026 · Hiện tại, ChatGPT Plus đang hỗ trợ nhiều tính năng nâng cao như GPT-5, tạo ảnh AI bằng DALL·E, trò chuyện giọng …"
+    },
+    {
+      "title": "GitHub Copilotでサポートされている AI モデル - GitHubドキュメント",
+      "url": "https://docs.github.com/ja/copilot/reference/ai-models/supported-models",
+      "snippet": "GitHub Copilot は複数の AI モデルをサポートし、それぞれが異なる強みを持ちます。 速度とコスト効率に優先順位を付けるものも …"
+    }
+  ]
+}

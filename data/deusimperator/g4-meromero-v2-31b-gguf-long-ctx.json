@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "DeusImperator/G4-MeroMero-v2-31B-GGUF-long-ctx",
+  "slug": "deusimperator-g4-meromero-v2-31b-gguf-long-ctx",
+  "author": "DeusImperator",
+  "url": "https://huggingface.co/DeusImperator/G4-MeroMero-v2-31B-GGUF-long-ctx",
+  "created_at": "2026-09-17T15:21:22.000Z",
+  "updated_at": "2026-09-17T16:29:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "image-text-to-text",
+    "base_model:zerofata/G4-MeroMero-v2-31B",
+    "base_model:quantized:zerofata/G4-MeroMero-v2-31B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30697345596,
+  "parameters_human": "30.70B",
+  "storage_bytes": 25922118048,
+  "storage_human": "25.9 GB",
+  "base_model": "zerofata/G4-MeroMero-v2-31B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Old School RuneScape! - Reddit",
+      "url": "https://www.reddit.com/r/2007scape/top/",
+      "snippet": "Feb 13, 2013 · r/2007scape: The community for Old School RuneScape discussion on Reddit. Join us for game discussions, tips and …"
+    },
+    {
+      "title": "A Song of Ice and Fire - Reddit",
+      "url": "https://www.reddit.com/r/asoiaf/wiki/index/",
+      "snippet": "News and discussions relating to George R. R. Martin's \"A Song of Ice and Fire\" novels, his Westeros-based short stories, \"Game of …"
+    },
+    {
+      "title": "国漫《world game》为何如此牛逼！？ - 知乎",
+      "url": "https://www.zhihu.com/question/52525269",
+      "snippet": "可11月7号WG (即world game）更新了第137话，基本上这一话全程爆粗，有多恶毒就有多恶毒，引发了读者无数的谩骂，原因是里面 …"
+    },
+    {
+      "title": "如何评价slg游戏永恒世界（Eternum）？ - 知乎",
+      "url": "https://www.zhihu.com/question/563510650",
+      "snippet": "为数不多能让我有玩过之后就不枉此生这种感觉的游戏了 假如我以后决定要自杀，那肯定也是在永恒世界完结停更之后再自杀，不过 …"
+    },
+    {
+      "title": "Age of Empires 3 - Reddit",
+      "url": "https://www.reddit.com/r/aoe3/",
+      "snippet": "Welcome to /r/AoE3. This is a platform to discuss everything Age of Empires 3. If you have any questions, comments or concerns feel …"
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "schema": 1,
+  "id": "AzadDjan/Qwen3-4B-banking77-lora",
+  "slug": "azaddjan-qwen3-4b-banking77-lora",
+  "author": "AzadDjan",
+  "url": "https://huggingface.co/AzadDjan/Qwen3-4B-banking77-lora",
+  "created_at": "2026-09-17T18:55:33.000Z",
+  "updated_at": "2026-09-17T21:58:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen3-4B-Base",
+    "lora",
+    "transformers",
+    "dataset:PolyAI/banking77",
+    "base_model:Qwen/Qwen3-4B-Base",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 288020489,
+  "storage_human": "288 MB",
+  "base_model": "Qwen/Qwen3-4B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text Classification",
+      "dataset": "banking77",
+      "metric": "Accuracy",
+      "value": 0.929070929070929
+    },
+    {
+      "task": "Text Classification",
+      "dataset": "banking77",
+      "metric": "Precision",
+      "value": 0.9336833634871508
+    },
+    {
+      "task": "Text Classification",
+      "dataset": "banking77",
+      "metric": "Recall",
+      "value": 0.9304628778715064
+    },
+    {
+      "task": "Text Classification",
+      "dataset": "banking77",
+      "metric": "F1",
+      "value": 0.928177570774137
+    },
+    {
+      "task": "Intent Classification",
+      "dataset": "Banking77",
+      "metric": "Accuracy",
+      "value": 0.9412337662337662
+    },
+    {
+      "task": "Intent Classification",
+      "dataset": "Banking77",
+      "metric": "Macro F1",
+      "value": 0.9413301546453637
+    },
+    {
+      "task": "Intent Classification",
+      "dataset": "Banking77",
+      "metric": "Macro Precision",
+      "value": 0.9436183983681973
+    },
+    {
+      "task": "Intent Classification",
+      "dataset": "Banking77",
+      "metric": "Macro Recall",
+      "value": 0.9412337662337662
+    }
+  ],
+  "sources": [
+    {
+      "title": "Download & use Google Translate",
+      "url": "https://support.google.com/translate/answer/6350850?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "You can translate text, handwriting, photos, and speech in over 200 languages with the Google Translate app. You can also use …"
+    },
+    {
+      "title": "Télécharger et utiliser Google Traduction",
+      "url": "https://support.google.com/translate/answer/6350850?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Télécharger et utiliser Google Traduction Vous pouvez traduire du texte saisi au clavier, en écriture manuscrite, sur une photo ou …"
+    },
+    {
+      "title": "Google API Key for translation - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/4854388/google-api-key-for-translation",
+      "snippet": "Jan 31, 2011 · Upload the Google Translate API key to your site. Check with your hosting company where on your system to place …"
+    },
+    {
+      "title": "How to use Google Translate API With c++ - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/8550147/how-to-use-google-translate-api-with-c",
+      "snippet": "Dec 18, 2011 · I'm a beginner in C++ and using Google task API. How do I write a C++ program that accepts a word, then invokes …"
+    },
+    {
+      "title": "Translate pages and change Chrome languages - Google Help",
+      "url": "https://support.google.com/chrome/answer/173424?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "You can use Chrome to translate pages. You can also change your preferred language in Chrome. Translate pages in Chrome You …"
+    }
+  ]
+}

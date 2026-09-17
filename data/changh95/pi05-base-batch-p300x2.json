@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "changh95/pi05-base-batch-p300x2",
+  "slug": "changh95-pi05-base-batch-p300x2",
+  "author": "changh95",
+  "url": "https://huggingface.co/changh95/pi05-base-batch-p300x2",
+  "created_at": "2026-09-17T13:47:40.000Z",
+  "updated_at": "2026-09-17T13:48:28.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "batching",
+    "blackhole",
+    "flow-matching",
+    "fused-kernels",
+    "p300",
+    "p300x2",
+    "pi0",
+    "robot-control",
+    "tensor-parallel",
+    "tenstorrent",
+    "tt-dit-server",
+    "tt-metal",
+    "tt-model-cache",
+    "tt-model-catalog",
+    "tt-model-container",
+    "tt-nn",
+    "ttnn",
+    "vla",
+    "robotics",
+    "arxiv:2504.16054",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 903717943,
+  "storage_human": "904 MB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "changh95/pi05-base-p300x2 · Hugging Face",
+      "url": "https://huggingface.co/changh95/pi05-base-p300x2",
+      "snippet": "The SigLIP tower and the VLM prefill are tensor-parallel over the four chips, the action expert is replicated, and the whole graph runs as one Metal trace: 76 ms per chunk, 1.6× the single-chip package, PCC 0.999 vs the fp32 reference. Weights: lerobot/pi05_base · Paper: arXiv:2504.16054 · Upstream code: Physical-Intelligence/openpi · Single-chip package: changh95/pi05-base-p150 · Runs on p300x2 (mesh P300x2)."
+    },
+    {
+      "title": "Hotels.com - Deals & Discounts for Hotel Reservations from Luxury ...",
+      "url": "https://www.hotels.com/?msockid=129408835f306e4235da1f545edb6f82",
+      "snippet": "Find cheap hotels and discounts when you book on Hotels.com. Compare hotel deals, offers and read unbiased reviews on hotels."
+    },
+    {
+      "title": "Hotels.com - Deals & kortingen voor hotelreserveringen van luxe hotels ...",
+      "url": "https://be.hotels.com/",
+      "snippet": "Het beste hotelaanbod in Nederland. Of boek de beste deals bij 220.000+ hotels in 60+ landen. Ontvang nu 1 gratis …"
+    },
+    {
+      "title": "Booking.com | Official site | The best hotels, flights, car rentals ...",
+      "url": "https://www.booking.com/?msockid=129408835f306e4235da1f545edb6f82",
+      "snippet": "Explore the world with Booking.com. Big savings on homes, hotels, flights, car rentals, taxis, and attractions – build your perfect trip …"
+    },
+    {
+      "title": "Hotels | Book last-minute hotels & more | Booking.com",
+      "url": "https://www.booking.com/hotel/index.html?msockid=129408835f306e4235da1f545edb6f82",
+      "snippet": "Sep 1, 2026 · Find, compare, and book the best hotels on Booking.com! Discover cheap hotels, hotels near you, hotels for last …"
+    }
+  ]
+}

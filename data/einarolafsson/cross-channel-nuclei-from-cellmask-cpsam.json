@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "einarolafsson/cross-channel-nuclei-from-cellmask-cpsam",
+  "slug": "einarolafsson-cross-channel-nuclei-from-cellmask-cpsam",
+  "author": "einarolafsson",
+  "url": "https://huggingface.co/einarolafsson/cross-channel-nuclei-from-cellmask-cpsam",
+  "created_at": "2026-09-17T16:19:23.000Z",
+  "updated_at": "2026-09-18T20:33:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "spacr",
+  "languages": [],
+  "tags": [
+    "spacr",
+    "cellpose",
+    "segmentation",
+    "nuclei",
+    "microscopy",
+    "cross-channel",
+    "image-segmentation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12186485266,
+  "storage_human": "12.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Personal Banking | Riyad Bank",
+      "url": "https://www.riyadbank.com/",
+      "snippet": "Riyad Bank, Public Shareholding Company, Capital of S..R 40 Billion, Commercial Register (1010001054), P.O. Box 13519 Riyadh …"
+    },
+    {
+      "title": "HBL The Largest Bank in Pakistan - Best Award Winning Bank",
+      "url": "https://www.hbl.com/",
+      "snippet": "1 day ago · HBL, Pakistan's best largest bank, according to the Asiamoney HBL is the Best domestic, corporate and investment bank …"
+    },
+    {
+      "title": "Bank Alfalah Pakistan | Best Bank for Digital Banking",
+      "url": "https://www.bankalfalah.com/",
+      "snippet": "Bank Alfalah offers a range of personal banking services, digital account opening, cards, e-statements, SMS alerts, and internet …"
+    },
+    {
+      "title": "Bank Makramah Limited (BML) -",
+      "url": "https://www.bankmakramah.com/",
+      "snippet": "The name change from Summit Bank Limited to Bank Makramah Limited (BML) signifies the Bank’s commitment to embracing …"
+    },
+    {
+      "title": "Best Digital Bank for Individuals & Businesses | Mashreq Pakistan",
+      "url": "https://www.mashreq.com/en/pk/home/",
+      "snippet": "Open a Shari’ah-compliant bank account with Mashreq - Digital banking solutions for individuals and businesses with easy on the go …"
+    }
+  ]
+}

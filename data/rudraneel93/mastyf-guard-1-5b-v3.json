@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "Rudraneel93/mastyf-guard-1.5b-v3",
+  "slug": "rudraneel93-mastyf-guard-1-5b-v3",
+  "author": "Rudraneel93",
+  "url": "https://huggingface.co/Rudraneel93/mastyf-guard-1.5b-v3",
+  "created_at": "2026-09-17T12:03:00.000Z",
+  "updated_at": "2026-09-17T12:41:04.000Z",
+  "license": "mastyf-developer-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "qwen2",
+    "security",
+    "agent-security",
+    "agent-defense",
+    "mcp",
+    "model-context-protocol",
+    "prompt-injection",
+    "indirect-prompt-injection",
+    "tool-calling",
+    "capability-based-access-control",
+    "relational-invariants",
+    "model-soup",
+    "guardrails",
+    "llm-security",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2-1.5B",
+    "base_model:quantized:Qwen/Qwen2-1.5B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 4099805033,
+  "storage_human": "4.1 GB",
+  "base_model": "Qwen/Qwen2-1.5B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Contact Us - Microsoft Support",
+      "url": "https://support.microsoft.com/en-gb/contactus",
+      "snippet": "Contact Microsoft Support. Find solutions to common problems, or get help from a support agent."
+    },
+    {
+      "title": "Anmelden bei Hotmail | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/accounts-billing/manage/how-to-sign-in-to-hotmail",
+      "snippet": "Microsoft hält immer ein Auge auf ungewöhnliche Anmeldeaktivitäten, nur für den Fall, dass jemand anderes versucht, auf Ihr Konto …"
+    },
+    {
+      "title": "Released: August 2026 Exchange Server Security Updates | Microsoft ...",
+      "url": "https://techcommunity.microsoft.com/blog/Exchange/released-august-2026-exchange-server-security-updates/4543951",
+      "snippet": "We have released Security Updates for Exchange Server SE. Exchange Server 2019 and 2016 ESU updates only. &nbsp;"
+    },
+    {
+      "title": "Sign in to your account - techcommunity.microsoft.com",
+      "url": "https://techcommunity.microsoft.com/blog/exchange/exchange-online-ews-your-time-is-almost-up/4492361",
+      "snippet": "We wanted to provide an update on Exchange Online EWS deprecation."
+    },
+    {
+      "title": "Change the refresh rate on your monitor in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/hardware/display-graphics/change-the-refresh-rate-on-your-monitor-in-windows",
+      "snippet": "Learn how to change the refresh rate for your display in Windows to determine how smoothly motion appears on your screen."
+    }
+  ]
+}

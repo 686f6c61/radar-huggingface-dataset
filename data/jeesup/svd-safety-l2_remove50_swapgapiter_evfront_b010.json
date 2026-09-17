@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l2_remove50_swapgapiter_evfront_b010",
+  "slug": "jeesup-svd-safety-l2_remove50_swapgapiter_evfront_b010",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapgapiter_evfront_b010",
+  "created_at": "2026-09-17T18:25:53.000Z",
+  "updated_at": "2026-09-17T18:44:37.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama2",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-2-7b-chat-hf",
+    "base_model:finetune:meta-llama/Llama-2-7b-chat-hf",
+    "license:llama2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13477364771,
+  "storage_human": "13.5 GB",
+  "base_model": "meta-llama/Llama-2-7b-chat-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Affichage icone fichier (PDF) transformé en icone Chrome",
+      "url": "https://forums.commentcamarche.net/forum/affich-37637853-affichage-icone-fichier-pdf-transforme-en-icone-chrome",
+      "snippet": "Bonjour, En enregistrant un fichier PDF sur mon ordi, j'ai eu la surprise de voir la forme (icone image) PDF se transformer au …"
+    },
+    {
+      "title": "Où trouver la corbeille avec l'explorateur dans windows 10?",
+      "url": "https://forums.commentcamarche.net/forum/affich-33014995-ou-trouver-la-corbeille-avec-l-explorateur-dans-windows-10",
+      "snippet": "je cherche où trouver la corbeille (recycler avant) avec l'explorateur windows sous W10. je ne cherche pas le raccourci sur le bureau, …"
+    },
+    {
+      "title": "L'icône de l'explorateur de fichiers a disparu",
+      "url": "https://forums.commentcamarche.net/forum/affich-33481278-l-icone-de-l-explorateur-de-fichiers-a-disparu",
+      "snippet": "May 5, 2016 · Bonjour, J'ai l'habitude d'aller dans l'explorateur (le gestionnaire de fichiers) en cliquant sur une icône de la barre des …"
+    },
+    {
+      "title": "Comment supprimer la page obtenir de l’aide dans Windows 10?",
+      "url": "https://forums.commentcamarche.net/forum/affich-36785924-comment-supprimer-la-page-obtenir-de-l-aide-dans-windows-10",
+      "snippet": "Aug 3, 2020 · Meilleure réponse: Bonjour, Essaye ça avec W10 Va dans Paramètres → Système Dans le menu de gauche la ligne → …"
+    },
+    {
+      "title": "Explorateur de fichiers : comment annuler une action - Windows 10",
+      "url": "https://forums.commentcamarche.net/forum/affich-32636197-explorateur-de-fichiers-comment-annuler-une-action",
+      "snippet": "Oct 12, 2015 · Bonjour, sous Windows8 comme sous Windows10 (hélas), où se trouve la fonction d'annulation d'une action ? …"
+    }
+  ]
+}

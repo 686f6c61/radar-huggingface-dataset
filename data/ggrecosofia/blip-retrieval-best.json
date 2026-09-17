@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ggrecosofia/blip-retrieval-best",
+  "slug": "ggrecosofia-blip-retrieval-best",
+  "author": "ggrecosofia",
+  "url": "https://huggingface.co/ggrecosofia/blip-retrieval-best",
+  "created_at": "2026-09-17T13:53:42.000Z",
+  "updated_at": "2026-09-17T13:53:47.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "retrieval",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Schiebetürenschrank 120 cm – günstig kaufen – Böttcher AG",
+      "url": "https://www.bueromarkt-ag.de/schiebetuerenschrank,m-breite:120_cm.html?msockid=1e99875f9ebf64a33c7c90889fba655e",
+      "snippet": "Schiebetürenschrank Hammerbacher B-Serie, abschließbar aus Holz mit 2 Fachböden, 120 x 75 x 40 cm (B/H/T), lichtgrau Mit 2 …"
+    },
+    {
+      "title": "Schiebetürenschrank » sofort lieferbar | Büromöbel Experte",
+      "url": "https://www.bueromoebel-experte.de/schiebetuerenschraenke/",
+      "snippet": "Ein Schiebetürenschrank ist die elegante Antwort auf moderne Büroorganisation. Er bietet großzügigen Stauraum, ohne zusätzlichen …"
+    },
+    {
+      "title": "Schiebetürenschränke - versandkostenfrei! | BD24",
+      "url": "https://buero-direkt24.de/bueroschraenke/aktenschraenke/schiebetuerenschraenke/",
+      "snippet": "Neben den 100 und 120 cm breiten Schiebetürenschränken bieten wir auch Breiten von 80, 160 und 200 cm an. Als Aufsatzschrank …"
+    },
+    {
+      "title": "Schiebetürenschrank 120 cm Breite online kaufen | OTTO",
+      "url": "https://www.otto.de/moebel/schraenke/kleiderschraenke/schiebetuerenschraenke/?breite=120-cm",
+      "snippet": "Bis zu 30% reduziert Schiebetürenschränke 120 cm Breite online kaufen bei OTTO » Große Auswahl Top Service Top Marken …"
+    },
+    {
+      "title": "Suchergebnis Auf Amazon.de Für: Schiebetürenschrank Büro 120",
+      "url": "https://www.amazon.de/schiebet%C3%BCrenschrank-b%C3%BCro-120/s?k=schiebet%C3%BCrenschrank+b%C3%BCro+120",
+      "snippet": "FORTE Ohio 40 weißer Mehrzweckschrank modern, 2-türig mit Einlegeböden, Schwebetürenschrank, Garderobenschrank, …"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "jaehyunkang/pi05-real-workbench-preset-3view-movement-reversal-60k",
+  "slug": "jaehyunkang-pi05-real-workbench-preset-3view-movement-reversal-60k",
+  "author": "jaehyunkang",
+  "url": "https://huggingface.co/jaehyunkang/pi05-real-workbench-preset-3view-movement-reversal-60k",
+  "created_at": "2026-09-17T19:24:48.000Z",
+  "updated_at": "2026-09-17T19:26:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "real-workbench",
+    "dataset:Myungkyu/real_workbench-preset-gemini",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 24482774912,
+  "storage_human": "24.5 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Search - Microsoft Bing",
+      "url": "https://www2.bing.com/",
+      "snippet": "Search with Microsoft Bing and use the power of AI to find information, explore webpages, images, videos, maps, and more. A smart …"
+    },
+    {
+      "title": "Bing",
+      "url": "https://www.bing.com/version",
+      "snippet": "Bing ... Versions"
+    },
+    {
+      "title": "Bing",
+      "url": "https://www.microsoft.com/zh-hk/bing/?msockid=124e0a93af0663cd31001d44ae1f6291",
+      "snippet": "Bing is a search engine that provides better results, more complete answers, a new chat experience and the ability to generate content."
+    },
+    {
+      "title": "微软宣布停用Bing Search API，开发者应迅速寻找替代方案！_服务_资 …",
+      "url": "https://www.sohu.com/a/895922523_122004016",
+      "snippet": "May 16, 2025 · 在科技迅猛发展的今天，微软近期宣布了一项引人注目的变更：自2025年8月11日起，将终止其公共Bing Search API服 …"
+    },
+    {
+      "title": "How to See All Bing Related Searches on Any Device",
+      "url": "https://rottenwifi.com/how-to-see-all-bing-related-searches/",
+      "snippet": "Jul 1, 2026 · Learn where Bing related searches appear, how to expand them, and what to do when suggestions do not show on …"
+    }
+  ]
+}

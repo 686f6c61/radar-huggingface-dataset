@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Zen-3B-It-Obliterated-i1-GGUF",
+  "slug": "mradermacher-zen-3b-it-obliterated-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Zen-3B-It-Obliterated-i1-GGUF",
+  "created_at": "2026-09-17T17:45:29.000Z",
+  "updated_at": "2026-09-17T20:49:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:edusc182/Zen-3B-It-Obliterated",
+    "base_model:quantized:edusc182/Zen-3B-It-Obliterated",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 36758278528,
+  "storage_human": "36.8 GB",
+  "base_model": "edusc182/Zen-3B-It-Obliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Job-Room",
+      "url": "https://www.job-room.ch/login",
+      "snippet": "Since your browser does not support JavaScript, you must press the Continue button once to proceed."
+    },
+    {
+      "title": "mradermacher/Zen-3B-It-Obliterated-i1-GGUF · Hugging Face",
+      "url": "https://huggingface.co/mradermacher/Zen-3B-It-Obliterated-i1-GGUF",
+      "snippet": "static quants are available at https://huggingface.co/mradermacher/Zen-3B-It-Obliterated-GGUF"
+    },
+    {
+      "title": "r/LocalLLaMA on Reddit: IMPORTANT: Why Abliterated Models SUCK. Here is a better way to uncensor LLMs.",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1nq0cp9/important_why_abliterated_models_suck_here_is_a/",
+      "snippet": ""
+    },
+    {
+      "title": "Abliterated Models 2026: The Best Uncensored GGUFs by VRAM (Qwen 3.6, Gemma 4, Llama)",
+      "url": "https://locallyuncensored.com/blog/abliterated-models-guide.html",
+      "snippet": "Llama 4 Scout (17B active, 16 experts, ~109B total) is Meta’s MoE model with native vision and long context. A working abliterated GGUF is live: mradermacher/Llama-4-Scout-17B-16E-Instruct-abliterated-GGUF — mradermacher’s quant of jiangchengchengNLP’s abliteration. Imatrix quants live in the companion -i1-GGUF repo."
+    },
+    {
+      "title": "Job-Room - ALV Online Services",
+      "url": "https://www.job-room.ch/",
+      "snippet": "ALV Online Services offers job seekers and employers a platform to find jobs, post jobs, and connect with employment services."
+    }
+  ]
+}

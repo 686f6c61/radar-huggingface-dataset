@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "jefrt/nova",
+  "slug": "jefrt-nova",
+  "author": "jefrt",
+  "url": "https://huggingface.co/jefrt/nova",
+  "created_at": "2026-09-17T18:00:29.000Z",
+  "updated_at": "2026-09-17T18:00:29.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Résolution de mon 2ème écran [Résolu] - Windows 10",
+      "url": "https://forums.commentcamarche.net/forum/affich-33945803-resolution-de-mon-2eme-ecran",
+      "snippet": "Meilleure réponse: Bonsoir, Même si les écrans ne sont pas les identiques il est possible de régler la résolution de chacun. Il faut …"
+    },
+    {
+      "title": "Ecran 34'' 3440x1440 Bloqué En 2560x1440 [Résolu] - Forum Ecran",
+      "url": "https://forums.commentcamarche.net/forum/affich-35845054-ecran-34-3440x1440-bloque-en-2560x1440",
+      "snippet": "Feb 2, 2019 · La résolution 3440x1440 est à présent sélectionnable. Par contre une fois que je clique sur la résolution 3440x1440 …"
+    },
+    {
+      "title": "Résolution écran - TeamViewer Community",
+      "url": "https://community.teamviewer.com/French/discussion/123945/resolution-ecran",
+      "snippet": "Jun 28, 2022 · Bienvenue sur la Communauté TeamViewer ! 🥳 Lorsque la connexion est faite, vous pouvez régler la mise à l'échelle et …"
+    },
+    {
+      "title": "Résolution écran - TeamViewer Community",
+      "url": "https://community.teamviewer.com/French/discussion/64086/resolution-ecran",
+      "snippet": "Bonjour, Sur certains PC, la résoltion d'affichage ne peut pas être modifiée et elle reste à 800x600. J'ai installé le pilote d'affichage …"
+    },
+    {
+      "title": "Résolution bloqué à 1024 x 768 [Résolu] - Ecran - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-35051439-resolution-bloque-a-1024-x-768",
+      "snippet": "Bonsoir, Comme affiché dans les capture ci-dessous mon écran Samsung est bloqué à une résolution de 1024 x 768 alors que …"
+    }
+  ]
+}

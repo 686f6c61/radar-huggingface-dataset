@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/Leomon",
+  "slug": "ryanham1lton-leomon",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/Leomon",
+  "created_at": "2026-09-17T17:30:30.000Z",
+  "updated_at": "2026-09-17T17:32:51.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 119144802,
+  "storage_human": "119 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Order Domino's (Church Street Parramatta) | Menu & Prices | Sydney ...",
+      "url": "https://www.ubereats.com/au/store/dominos-church-street-parramattas/KINwznrNSvavFHtJTQ0E3w?msockid=0bea6564d9ec6ef41ef672b3d8c46fda",
+      "snippet": "Domino's on Church Street in Parramatta, Sydney, offers a varied menu that caters to a range of tastes, from classic pizzas to …"
+    },
+    {
+      "title": "Pizza Restaurants in Parramatta Nsw 2150, NSW 2150",
+      "url": "https://www.yellowpages.com.au/parramatta-nsw-2150-nsw-2150/pizza-restaurants",
+      "snippet": "Find and Compare pizza restaurants near Parramatta Nsw 2150, NSW 2150. Get Reviews, Location and Contact details."
+    },
+    {
+      "title": "Pizza Restaurants in Parramatta Nsw 2150 Nsw 2150, NSW 2150",
+      "url": "https://www.yellowpages.com.au/parramatta-nsw-2150-nsw-2150-nsw-2150/pizza-restaurants",
+      "snippet": "Find and Compare pizza restaurants near Parramatta Nsw 2150 Nsw 2150, NSW 2150. Get Reviews, Location and Contact details."
+    },
+    {
+      "title": "Criniti's",
+      "url": "https://www.crinitis.com.au/",
+      "snippet": "Authentic Italian wood fired pizza and pasta in NSW, Western Australia & Victoria. With a range of dishes from steaks & burgers, to …"
+    },
+    {
+      "title": "Domino's Pizza Parramatta in Parramatta Westfield, NSW 2150",
+      "url": "https://australia.chamberofcommerce.com/business-directory/new-south-wales/parramatta-westfield/pizza-restaurant/3280760-domino-s-pizza-parramatta",
+      "snippet": "Domino's Pizza Parramatta located at Shop 1 91 Grose Street (Cnr, Macarthur St, Parramatta Westfield, NSW 2150 - reviews, …"
+    }
+  ]
+}

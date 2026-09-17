@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "immanuelpeter/MiniMax-M3-Vision",
+  "slug": "immanuelpeter-minimax-m3-vision",
+  "author": "immanuelpeter",
+  "url": "https://huggingface.co/immanuelpeter/MiniMax-M3-Vision",
+  "created_at": "2026-09-17T17:23:09.000Z",
+  "updated_at": "2026-09-17T17:23:27.000Z",
+  "license": "minimax-community",
+  "license_family": "unknown",
+  "pipeline_tag": "image-feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "minimax_m3_vl_vision",
+    "vision",
+    "image-feature-extraction",
+    "base_model:MiniMaxAI/MiniMax-M3",
+    "base_model:finetune:MiniMaxAI/MiniMax-M3",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 631185920,
+  "parameters_human": "631.2M",
+  "storage_bytes": 1731188048,
+  "storage_human": "1.7 GB",
+  "base_model": "MiniMaxAI/MiniMax-M3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vtm go addon - Kodi-Forum.nl",
+      "url": "https://kodi-forum.nl/threads/vtm-go-addon.10141/",
+      "snippet": "Jan 31, 2020 · Stievie Free wordt VTM GO Vanaf 1 februari 2020 vervangen we Stievie Free door VTM GO. Blijf kijken naar de …"
+    },
+    {
+      "title": "VTMGo-app geeft foutmelding bij kijken via de TV-box",
+      "url": "https://www.netweters.be/t5/De-nieuwe-Telenet-TV-box-TV-app/VTMGo-app-geeft-foutmelding-bij-kijken-via-de-TV-box/td-p/165216",
+      "snippet": "Mar 25, 2023 · Zodra ik iets wil kijken krijg ik nog wel de reclame maar als de serie zou gaan starten krijg ik een foutmelding en is t …"
+    },
+    {
+      "title": "Casten via Chromecast lukt niet (VTM GO, GO Play, ...)",
+      "url": "https://www.netweters.be/t5/Andere-apps-platformen/Casten-via-Chromecast-lukt-niet-VTM-GO-GO-Play/td-p/186021",
+      "snippet": "Mar 8, 2024 · Live TV kijken via bijv VTM Go, GO Play etc werkt plots niet meer (sinds 2 dagen). We krijgen de melding dat er een …"
+    },
+    {
+      "title": "Vtm Go werkt niet meer - Kodi-Forum.nl",
+      "url": "https://kodi-forum.nl/threads/vtm-go-werkt-niet-meer.13481/",
+      "snippet": "Nov 3, 2023 · Misschien een tip,Ik kijk naar VRT, VTM en GoPlay. Ik heb mijzelf eerst geregisterd bij deze zenders dmv een nieuw …"
+    },
+    {
+      "title": "OLO 10 Jaar, 17 september 2026 : 4.14% - Spaargids.be",
+      "url": "https://www.spaargids.be/sparen/olo-10-jaar.html",
+      "snippet": "Aug 24, 2016 · De rente van leningen met variabele rente is gekoppeld aan de rente die de banken krijgen voor overheidsobligaties. …"
+    }
+  ]
+}

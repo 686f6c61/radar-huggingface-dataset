@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "subhodipsaha/molmoact2_stack_three_cubes_v2",
+  "slug": "subhodipsaha-molmoact2_stack_three_cubes_v2",
+  "author": "subhodipsaha",
+  "url": "https://huggingface.co/subhodipsaha/molmoact2_stack_three_cubes_v2",
+  "created_at": "2026-09-17T17:41:20.000Z",
+  "updated_at": "2026-09-17T17:43:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "molmoact2",
+    "dataset:subhodipsaha/so101_stack_three_cubes_08_19",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5442196272,
+  "parameters_human": "5.44B",
+  "storage_bytes": 10884589216,
+  "storage_human": "10.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "C:\\users这个文件夹在哪_百度知道",
+      "url": "https://zhidao.baidu.com/question/572507939.html",
+      "snippet": "1、users 文件夹 在有些版本的系统里不能直接找到，因为有时是以中文名字出现的。先打开“计算机”。 2、再双击C盘盘符。 3、在C …"
+    },
+    {
+      "title": "1hm2等于多少m2 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/99482586.html",
+      "snippet": "1hm2等于多少m21hm2=10000m2。hm2：是关于面积的公用制单位（国际单位），中文的意思表示公顷，一般用于土地面积等计算。 …"
+    },
+    {
+      "title": "HM - 知乎",
+      "url": "https://www.zhihu.com/topic/19664041/intro",
+      "snippet": "HM是服装品牌Hennes&MauritzAB（海恩斯&莫里斯，H&M）的简称，由Erling Persson于1947年在瑞典斯德哥尔摩创立，主要经营销 …"
+    },
+    {
+      "title": "有哪些下载ed2k的软件？ - 知乎",
+      "url": "https://www.zhihu.com/question/66632151?sort=created",
+      "snippet": "都是一些无良的推荐，上面问可以下载 ed2k 的软件，你们回答问题之前都试了吗？推荐 BitComet 比特彗星、Motrix、 qBittorrent …"
+    },
+    {
+      "title": "作业帮-作业帮口算 在线教育引领者 - 极目未来",
+      "url": "https://www.zybang.com/",
+      "snippet": "作业帮成立于2015年，我们以“科技为人、成就非凡”为企业使命，依托“科技+教育”双引擎优势，在学习工具产品、智能硬件等领域开展 …"
+    }
+  ]
+}

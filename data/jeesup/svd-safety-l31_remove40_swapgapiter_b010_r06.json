@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l31_remove40_swapgapiter_b010_r06",
+  "slug": "jeesup-svd-safety-l31_remove40_swapgapiter_b010_r06",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l31_remove40_swapgapiter_b010_r06",
+  "created_at": "2026-09-17T19:51:53.000Z",
+  "updated_at": "2026-09-17T19:57:48.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama3",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "license:llama3.1",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766296,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pizza en Código Postal 06000 - Cuauhtémoc (Ciudad de México",
+      "url": "https://es.cybo.com/MX-c%C3%B3digo-postal/06000_cuauht%C3%A9moc-(ciudad-de-m%C3%A9xico)/pizza",
+      "snippet": "Buscar empresas de Pizza en Código Postal 06000 - Cuauhtémoc (Ciudad de México), México, D. F. usando Cybo.com, el Directorio …"
+    },
+    {
+      "title": "Vive la Pizza (Motolinia) Menú y Precios - Uber Eats",
+      "url": "https://www.ubereats.com/mx/store/vive-la-pizza-motolinia/PrKp4-HfQny8EKO5LReXWg?msockid=3f78720a6cfb67b030d965dd6dbf6625",
+      "snippet": "Jul 22, 2025 · ¿Quieres algo de Vive la Pizza (Motolinia)? Obtén información sobre su ubicación, sus promociones y mucho más. …"
+    },
+    {
+      "title": "@asombro.pizza.oficial | No digas nada y te regalo una rebanada de ...",
+      "url": "https://www.instagram.com/reel/Dcpm2cyNUuW/",
+      "snippet": "1,241 likes, 42 comments - asombro.pizza.oficial on August 29, 2026: \"No digas nada y te regalo una rebanada de pizza 🍕 📍Av …"
+    },
+    {
+      "title": "Thook Restaurante Pizza Menú y Precios - Uber Eats",
+      "url": "https://www.ubereats.com/mx/store/thook-restaurante-pizza/pC3fLvQnUJusWAPPvWx_Iw?msockid=3f78720a6cfb67b030d965dd6dbf6625",
+      "snippet": "Thook Restaurante Pizza, ubicado en el Centro de Mexico City, es un destino popular para los amantes de la pizza hecha a la leña. …"
+    },
+    {
+      "title": "Order - Little Caesars® Pizza",
+      "url": "https://order.mexico.littlecaesars.com/es-mx/order/pickup/stores/search/Ciudad%20de%20M%C3%A9xico,%20Ciudad%20de%20M%C3%A9xico/",
+      "snippet": "balderas no. 62 esquina articulo 123 cuauhtemoc, CDMX 06000 Más información de restaurantes"
+    }
+  ]
+}

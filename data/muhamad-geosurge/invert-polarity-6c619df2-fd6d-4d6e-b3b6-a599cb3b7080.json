@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "muhamad-geosurge/invert-polarity-6c619df2-fd6d-4d6e-b3b6-a599cb3b7080",
+  "slug": "muhamad-geosurge-invert-polarity-6c619df2-fd6d-4d6e-b3b6-a599cb3b7080",
+  "author": "muhamad-geosurge",
+  "url": "https://huggingface.co/muhamad-geosurge/invert-polarity-6c619df2-fd6d-4d6e-b3b6-a599cb3b7080",
+  "created_at": "2026-09-17T17:31:46.000Z",
+  "updated_at": "2026-09-17T18:23:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "mistral",
+    "mistral-common",
+    "base_model:mistralai/Mistral-7B-v0.3",
+    "base_model:finetune:mistralai/Mistral-7B-v0.3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7248031744,
+  "parameters_human": "7.25B",
+  "storage_bytes": 28992195040,
+  "storage_human": "29.0 GB",
+  "base_model": "mistralai/Mistral-7B-v0.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Query - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Query",
+      "snippet": "This disambiguation page lists articles associated with the title Query. If an internal link incorrectly led you here, you may wish to …"
+    },
+    {
+      "title": "Home - Query",
+      "url": "https://www.query.ai/",
+      "snippet": "Query is a federated search platform for security data providing expanded data visibility without centralization."
+    },
+    {
+      "title": "Query - definition of query by The Free Dictionary",
+      "url": "https://www.thefreedictionary.com/query",
+      "snippet": "query , inquiry, enquiry - A query is a single question; an inquiry (or enquiry) may be a single question or extensive investigation (i.e. …"
+    },
+    {
+      "title": "QUERY | definition in the Cambridge English Dictionary",
+      "url": "https://dictionary.cambridge.org/us/dictionary/english/query",
+      "snippet": "QUERY meaning: 1. a question, often expressing doubt about something or looking for an answer from an authority…. Learn more."
+    },
+    {
+      "title": "QUERY Definition & Meaning | Dictionary.com",
+      "url": "https://www.dictionary.com/browse/query",
+      "snippet": "A query is a question, or the search for a piece of information. The Latin root quaere means \"to ask\" and it's the basis of the words …"
+    }
+  ]
+}

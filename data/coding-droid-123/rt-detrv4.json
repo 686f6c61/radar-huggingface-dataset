@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "coding-droid-123/RT-DETRv4",
+  "slug": "coding-droid-123-rt-detrv4",
+  "author": "coding-droid-123",
+  "url": "https://huggingface.co/coding-droid-123/RT-DETRv4",
+  "created_at": "2026-09-17T16:04:10.000Z",
+  "updated_at": "2026-09-17T16:04:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Learn to Code Free Online - Python, JS & 15+ | Coddy.Tech",
+      "url": "https://coddy.tech/",
+      "snippet": "Learn to code for free with Coddy.Tech - interactive lessons in Python, JavaScript, SQL, and 15+ languages. Join 5M+ learners …"
+    },
+    {
+      "title": "Programiz: Free Online Compilers & Code Editors for Everyday Use",
+      "url": "https://www.programiz.com/",
+      "snippet": "Open your browser and start coding with Programiz's free online compilers and text editors. Learn to code including Python, …"
+    },
+    {
+      "title": "Learn to Code - for Free | Codecademy",
+      "url": "https://www.codecademy.com/",
+      "snippet": "Grow in your career and unlock new opportunities by learning in-demand skills in AI, data, coding, cybersecurity, and more."
+    },
+    {
+      "title": "Coding Games and Programming Challenges to Code Better",
+      "url": "https://www.codingame.com/",
+      "snippet": "CodinGame is a challenge-based training platform for programmers where you can play with the hottest programming topics. Solve …"
+    },
+    {
+      "title": "Codédex | Start Your Coding Adventure ⋆˙",
+      "url": "https://www.codedex.io/",
+      "snippet": "Practice your coding chops Sharpen your skills with bite-sized coding challenges. Test what you've learned in coding practice for …"
+    }
+  ]
+}

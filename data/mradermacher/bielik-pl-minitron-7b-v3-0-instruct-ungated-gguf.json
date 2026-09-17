@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Bielik-PL-Minitron-7B-v3.0-Instruct-ungated-GGUF",
+  "slug": "mradermacher-bielik-pl-minitron-7b-v3-0-instruct-ungated-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Bielik-PL-Minitron-7B-v3.0-Instruct-ungated-GGUF",
+  "created_at": "2026-09-17T14:52:41.000Z",
+  "updated_at": "2026-09-17T23:23:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "pl",
+    "en",
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "pl",
+    "en",
+    "multilingual",
+    "base_model:cpral/Bielik-PL-Minitron-7B-v3.0-Instruct-ungated",
+    "base_model:quantized:cpral/Bielik-PL-Minitron-7B-v3.0-Instruct-ungated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7476678656,
+  "parameters_human": "7.48B",
+  "storage_bytes": 66009146112,
+  "storage_human": "66.0 GB",
+  "base_model": "cpral/Bielik-PL-Minitron-7B-v3.0-Instruct-ungated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AnyDesk: acceso remoto para todas las plataformas",
+      "url": "https://anydesk.com/es/all-platforms",
+      "snippet": "AnyDesk está disponible para todos los sistemas operativos y ofrece una excelente compatibilidad entre plataformas."
+    },
+    {
+      "title": "AnyDesk - Descargar",
+      "url": "https://anydesk.softonic.com/",
+      "snippet": "Jul 9, 2015 · AnyDesk, descargar gratis. AnyDesk última versión: Acceso remoto gratis para uso personal. AnyDesk es una …"
+    },
+    {
+      "title": "Remote Desktop Software for Android to Control Access | AnyDesk",
+      "url": "https://anydesk.com/es/downloads/android",
+      "snippet": "Download AnyDesk for Android for free and enjoy secure remote access and control of your devices with the leading remote desktop …"
+    },
+    {
+      "title": "AnyDesk Remote Desktop – Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.anydesk.anydeskandroid&hl=en-GB&gl=GB",
+      "snippet": "Sep 9, 2026 · Remote access from anywhere. Fast and secure. All operating systems and devices"
+    },
+    {
+      "title": "AnyDesk Help Center",
+      "url": "https://support.anydesk.com/",
+      "snippet": "© 2026 AnyDesk Software GmbH - Made with passion in Stuttgart, Germany Terms & Conditions Privacy Policy Legal Notice"
+    }
+  ]
+}

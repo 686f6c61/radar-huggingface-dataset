@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "dilarayavuz/generated-sst2-badnets-bert-lr3",
+  "slug": "dilarayavuz-generated-sst2-badnets-bert-lr3",
+  "author": "dilarayavuz",
+  "url": "https://huggingface.co/dilarayavuz/generated-sst2-badnets-bert-lr3",
+  "created_at": "2026-09-17T19:46:02.000Z",
+  "updated_at": "2026-09-17T19:47:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "autotrain",
+    "base_model:google-bert/bert-base-uncased",
+    "base_model:finetune:google-bert/bert-base-uncased",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109483778,
+  "parameters_human": "109.5M",
+  "storage_bytes": 1314043939,
+  "storage_human": "1.3 GB",
+  "base_model": "google-bert/bert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Diretta.it: Serie A, risultati calcio in tempo reale e partite in diretta",
+      "url": "https://www.diretta.it/",
+      "snippet": "Risultati in tempo reale di calcio su Diretta dalla Serie A e altri 1000 campionati compresi Premier League, La Liga, Bundesliga, Ligue …"
+    },
+    {
+      "title": "Diretta.it - Tennis in tempo reale, risultati tennis live, sorteggi ...",
+      "url": "https://www.diretta.it/tennis/",
+      "snippet": "Risultati tennis in tempo reale su Diretta offre i risultati di tennis live più veloci dai principali tornei del mondo come Australian Open, …"
+    },
+    {
+      "title": "Risultati in tempo reale - risultati calcio live, livescore | Flashscore.it",
+      "url": "https://www.flashscore.it/",
+      "snippet": "Risultati in diretta di calcio e il servizio di risultati di Flashscore.it offre i risultati per oltre 1000 campionati. Risultati in tempo reale, …"
+    },
+    {
+      "title": "Diretta goal, Risultati calcio e gol in tempo reale, Livescore ...",
+      "url": "https://www.direttagoal.it/",
+      "snippet": "Risultati in diretta live su oltre 600 campionati, comparazione quote, pronostici e statistiche con expected goal. Highlights e Goal …"
+    },
+    {
+      "title": "Calcio - risultati, calendario e quote | Sofascore",
+      "url": "https://www.sofascore.com/it",
+      "snippet": "Sofascore offre una copertura completa di centinaia di campionati, coppe e tornei di calcio, fornendo risultati aggiornati in diretta, …"
+    }
+  ]
+}

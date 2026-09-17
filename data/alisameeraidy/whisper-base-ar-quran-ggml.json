@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "AliSameerAidy/whisper-base-ar-quran-ggml",
+  "slug": "alisameeraidy-whisper-base-ar-quran-ggml",
+  "author": "AliSameerAidy",
+  "url": "https://huggingface.co/AliSameerAidy/whisper-base-ar-quran-ggml",
+  "created_at": "2026-09-17T13:01:32.000Z",
+  "updated_at": "2026-09-17T13:05:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 81768585,
+  "storage_human": "82 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OSŁONA TYLNA PODWOZIA TOYOTA AVENSIS T27 58399-05010",
+      "url": "https://allegro.pl/produkt/oslona-tylna-podwozia-toyota-avensis-t27-58399-05010-7ea06019-be3c-47dd-a608-d529fec1a288",
+      "snippet": "oznacza Towar, który był wcześniej używany, mogący nosić ślady zużycia, ale jest w pełni sprawny i działa zgodnie z …"
+    },
+    {
+      "title": "Płyta osłona podwozia tył tylna SEDAN 58399-05010 - Allegro",
+      "url": "https://allegro.pl/produkt/toyota-avensis-iii-t27-plyta-oslona-podwozia-tyl-tylna-sedan-58399-05010-8406f0e8-f803-48c9-91e9-f239bcfdddf9",
+      "snippet": "oznacza Towar, który był wcześniej używany, mogący nosić ślady zużycia, ale jest w pełni sprawny i działa zgodnie z …"
+    },
+    {
+      "title": "osłona podwozia toyota avensis w Twojej okolicy? Sprawdź kategorię ...",
+      "url": "https://www.olx.pl/motoryzacja/q-os%C5%82ona-podwozia-toyota-avensis/",
+      "snippet": "Jul 23, 2026 · Kieruj się na OLX! osłona podwozia toyota avensis w Twojej okolicy - tylko w kategorii Motoryzacja na OLX!"
+    },
+    {
+      "title": "Dla Ciebie wszystko - toyota avensis t27 osłona - w kategorii ... - OLX",
+      "url": "https://www.olx.pl/motoryzacja/car-equipment-and-accessories/q-toyota-avensis-t27-os%C5%82ona/",
+      "snippet": "Aug 1, 2024 · Skorzystaj z największego serwisu ogłoszeniowego w Polsce! toyota avensis t27 osłona - kupuj lub sprzedawaj jeszcze …"
+    },
+    {
+      "title": "Toyota Avensis T270 Engine splash shield/under tray 5839905010 58399-05010",
+      "url": "https://rrr.lt/en/used-part/wel50529-5839905010-toyota-avensis-t270-engine-splash-shield-under-tray",
+      "snippet": "RRR.LT used part for Toyota Avensis T270 Engine splash shield/under tray 5839905010 58399-05010 car Toyota Avensis T270 …"
+    }
+  ]
+}

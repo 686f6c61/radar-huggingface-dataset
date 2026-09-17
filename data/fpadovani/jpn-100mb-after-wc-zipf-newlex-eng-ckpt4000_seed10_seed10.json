@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/jpn-100mb-after-wc-zipf-newlex-eng-ckpt4000_seed10_seed10",
+  "slug": "fpadovani-jpn-100mb-after-wc-zipf-newlex-eng-ckpt4000_seed10_seed10",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/jpn-100mb-after-wc-zipf-newlex-eng-ckpt4000_seed10_seed10",
+  "created_at": "2026-09-17T19:34:27.000Z",
+  "updated_at": "2026-09-17T20:24:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:fpadovani/ppt-wc-zipf-newlex-eng-100mb_seed10",
+    "base_model:finetune:fpadovani/ppt-wc-zipf-newlex-eng-100mb_seed10",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 2996026549,
+  "storage_human": "3.0 GB",
+  "base_model": "fpadovani/ppt-wc-zipf-newlex-eng-100mb_seed10",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wuhan Open - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Wuhan_Open",
+      "snippet": "The Wuhan Open (Chinese: 武汉网球公开赛), sponsored by Dongfeng Voyah, is a WTA 1000 tennis tournament held in Wuhan, …"
+    },
+    {
+      "title": "Wuhan Open (tenis) – Wikipedia, wolna encyklopedia",
+      "url": "https://pl.wikipedia.org/wiki/Wuhan_Open_(tenis)",
+      "snippet": "Wuhan Open – kobiecy turniej tenisowy, rozgrywany na kortach twardych Optics Valley International Tennis Center w Wuhanie. W …"
+    },
+    {
+      "title": "2024 Wuhan Open - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/2024_Wuhan_Open",
+      "snippet": "The 2024 Wuhan Open (also known as Dongfeng Voyah Wuhan Open for sponsorship reasons) was a women's tennis tournament …"
+    },
+    {
+      "title": "Wuhan Open – Wikipedia, wolna encyklopedia",
+      "url": "https://pl.wikipedia.org/wiki/Wuhan_Open",
+      "snippet": "Wuhan Open Wuhan Open (tenis) — kobiecy turniej tenisowy Wuhan Open (snooker) — rankingowy turniej snookerowy"
+    },
+    {
+      "title": "Wuhan Open - Wikiwand",
+      "url": "https://www.wikiwand.com/en/Wuhan_Open",
+      "snippet": "The Wuhan Open (Chinese: 武汉网球公开赛), sponsored by Dongfeng Voyah, is a WTA 1000 tennis tournament held in Wuhan, …"
+    }
+  ]
+}

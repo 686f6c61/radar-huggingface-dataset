@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Shiki42/ctr-e025-pi05-checkpoint-10000-backup-20260918",
+  "slug": "shiki42-ctr-e025-pi05-checkpoint-10000-backup-20260918",
+  "author": "Shiki42",
+  "url": "https://huggingface.co/Shiki42/ctr-e025-pi05-checkpoint-10000-backup-20260918",
+  "created_at": "2026-09-17T18:16:28.000Z",
+  "updated_at": "2026-09-17T18:32:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "pi05",
+    "jax",
+    "checkpoint-backup",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7095506679,
+  "storage_human": "7.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mail.ru",
+      "url": "https://mail.ru/",
+      "snippet": "Redirect..."
+    },
+    {
+      "title": "Авторизация в почте Mail — бесплатный и безопасный …",
+      "url": "https://e.mail.ru/login",
+      "snippet": "Почта Mail - это фильтрация спама, быстрая отписка от рассылок, сортировка писем, тёмная тема и красивые фоны."
+    },
+    {
+      "title": "Войти в электронную почту Mail — надежный почтовый клиент",
+      "url": "https://account.mail.ru/login?page=https",
+      "snippet": "Войти в почту Mail. Вы можете зайти в свой аккаунт используя пароль, QR-код, VK ID или свой профиль на Госуслугах."
+    },
+    {
+      "title": "Создать электронную почту Mail | Один аккаунт для любых дел",
+      "url": "https://new.mail.ru/",
+      "snippet": "Мы делаем всё, чтобы ваша почта была в безопасности: блокируем письма от мошенников, предупреждаем о странных …"
+    },
+    {
+      "title": "Account Mail.Ru",
+      "url": "https://account.mail.ru/login%22",
+      "snippet": "Account Mail.Ru. MailО компанииРекламаВакансии."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "vbonifaci/ppo-LunarLander-v3",
+  "slug": "vbonifaci-ppo-lunarlander-v3",
+  "author": "vbonifaci",
+  "url": "https://huggingface.co/vbonifaci/ppo-LunarLander-v3",
+  "created_at": "2026-09-17T12:52:23.000Z",
+  "updated_at": "2026-09-17T13:14:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "LunarLander-v2",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 720387,
+  "storage_human": "720387 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CapCut AI Video Editor: Smart Online Video Editing with Advanced AI …",
+      "url": "https://www.capcut.com/",
+      "snippet": "Edit YouTube and Instagram videos with CapCut's AI-powered video editor, smart templates, and creative effects. Download CapCut …"
+    },
+    {
+      "title": "CapCut AI-video-editor: slimme online videobewerking met …",
+      "url": "https://www.capcut.com/nl-nl/",
+      "snippet": "Bewerk YouTube- en Instagram-video's met CapCuts AI-gestuurde video-editor, slimme sjablonen en creatieve effecten. Download …"
+    },
+    {
+      "title": "CapCut | Video Editor | All-In-One Video Editing Software | CapCut",
+      "url": "https://www.capcut.net/editor",
+      "snippet": "Continue with email Continue with TikTok Continue with Facebook Continue with CapCut Mobile"
+    },
+    {
+      "title": "CapCut - Video Editor - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.lemon.lvoverseas&hl=en-US",
+      "snippet": "CapCut is an all-in-one video editor and video maker application with everything you need to create stunning, high-quality videos. …"
+    },
+    {
+      "title": "CapCut - Download",
+      "url": "https://capcut.en.softonic.com/",
+      "snippet": "1 day ago · CapCut is an exceptional free video editing tool that balances user-friendly features with professional capabilities. Its …"
+    }
+  ]
+}

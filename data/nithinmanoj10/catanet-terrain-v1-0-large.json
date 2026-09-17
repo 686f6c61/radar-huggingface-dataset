@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "nithinmanoj10/CataNET-Terrain-v1.0-Large",
+  "slug": "nithinmanoj10-catanet-terrain-v1-0-large",
+  "author": "nithinmanoj10",
+  "url": "https://huggingface.co/nithinmanoj10/CataNET-Terrain-v1.0-Large",
+  "created_at": "2026-09-17T15:27:51.000Z",
+  "updated_at": "2026-09-18T10:40:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "mobilenetv3",
+    "vision",
+    "image-classification",
+    "catan",
+    "catanet",
+    "board-games",
+    "feature-extraction",
+    "en",
+    "dataset:nithinmanoj10/CatanSynth-Terrain-v1-50K",
+    "base_model:timm/tf_mobilenetv3_large_100.in1k",
+    "base_model:quantized:timm/tf_mobilenetv3_large_100.in1k",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 27157617,
+  "storage_human": "27 MB",
+  "base_model": "timm/tf_mobilenetv3_large_100.in1k",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "В чём смысл? \"купи слона\",\"а ты купи слона\". я не понимаю, что за ...",
+      "url": "https://otvet.mail.ru/question/73341011",
+      "snippet": "не чего тупее не слышала... кокой не нормальный человек будет покупать слона?! если сказать им так же, они скажут-\"все …"
+    },
+    {
+      "title": "Промпт который в 70% случае убирает цензуру для Gemeni 3 (pro) …",
+      "url": "https://otvet.mail.ru/question/268624059",
+      "snippet": "Промпт который в 70% случае убирает цензуру для Gemeni 3 (pro) [Он был сделан для DeepSeek но работает и на гемени]"
+    },
+    {
+      "title": "Gemini显示“出了点问题”？ - 知乎",
+      "url": "https://www.zhihu.com/question/1916203992091964465",
+      "snippet": "Gemini是谷歌推出的多模态AI基座模型，深度整合谷歌生态，具备领先的多模态处理能力，支持百万级token长文本和Canvas模式，适 …"
+    },
+    {
+      "title": "你似乎来到了没有知识存在的荒原 - 知乎",
+      "url": "https://www.zhihu.com/question/1980596374903993722",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "Accstd.exe accstd что это и нужно ли это?",
+      "url": "https://otvet.mail.ru/question/211267473",
+      "snippet": "Пользователь andrei_sledenko_11 написал пост «accstd.exe accstd что это и нужно ли это?» и получил на него 2 ..."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l31_remove40_swapgapiter_b010_r03",
+  "slug": "jeesup-svd-safety-l31_remove40_swapgapiter_b010_r03",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l31_remove40_swapgapiter_b010_r03",
+  "created_at": "2026-09-17T19:15:53.000Z",
+  "updated_at": "2026-09-17T19:20:48.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama3",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "license:llama3.1",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766296,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Asymmetrie im Gesicht: Gründe und wie Gesichtstraining hilft",
+      "url": "https://hannasacher.com/asymmetrie-im-gesicht-gruende-gesichtstraining/",
+      "snippet": "Ein leicht schiefes Lächeln oder eine unterschiedlich ausgeprägte Lippenform sind häufige Asymmetrien. Oft verstärken bestimmte …"
+    },
+    {
+      "title": "Warum ist mein Gesicht so schief? - resterconnecte.com",
+      "url": "https://resterconnecte.com/de/gesundheit/warum-ist-mein-gesicht-so-schief",
+      "snippet": "Dec 22, 2025 · Die Gesichtsasymmetrie resultiert primär aus einer peripheren oder zentralen Schädigung des Nervus facialis. …"
+    },
+    {
+      "title": "Kann das Gesicht schief werden? - Ist Es Haltbar?",
+      "url": "https://www.isteshaltbar.de/frage-und-antwort/kann-das-gesicht-schief-werden",
+      "snippet": "Hat jeder Mensch ein schiefes Gesicht? Als sie sich selbst im Video sah, war ihr erster Gedanke: „Hilfe, ich habe ein total schiefes …"
+    },
+    {
+      "title": "Asymmetrisches Gesicht: Ursachen und Behandlungen - Welzo",
+      "url": "https://welzo.com/de-eu/blogs/allgemeine-gesundheit/asymmetrisches-gesicht-ursachen-und-behandlungen",
+      "snippet": "Jul 25, 2024 · Erfahren Sie mehr über die Ursachen eines asymmetrischen Gesichts und erkunden Sie wirksame Behandlungen, um …"
+    },
+    {
+      "title": "Gesichtsasymmetrie ausgleichen | Kostenloser Selbsttest",
+      "url": "https://injectablesbooking.de/asymmetrisches-gesicht",
+      "snippet": "Du hast ein asymmetrisches Gesicht und möchtest wissen, wie du es verbessern kannst? In diesem umfassenden Ratgeber erfährst …"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "nedzen/astryx-qwen3-14b-mlx",
+  "slug": "nedzen-astryx-qwen3-14b-mlx",
+  "author": "nedzen",
+  "url": "https://huggingface.co/nedzen/astryx-qwen3-14b-mlx",
+  "created_at": "2026-09-17T12:18:28.000Z",
+  "updated_at": "2026-09-17T14:35:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3",
+    "lora",
+    "fine-tuned",
+    "design-systems",
+    "astryx",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3-14B",
+    "base_model:adapter:Qwen/Qwen3-14B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14768307200,
+  "parameters_human": "14.77B",
+  "storage_bytes": 10961732837,
+  "storage_human": "11.0 GB",
+  "base_model": "Qwen/Qwen3-14B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Taltz® 80 mg Injektionslösung im Fertigpen - PatientenInfo-Service",
+      "url": "https://www.patienteninfo-service.de/a-z-liste/t/taltzR-80-mg-injektionsloesung-im-fertigpen",
+      "snippet": "Taltz enthält den Wirkstoff Ixekizumab. Taltz ist für die Behandlung der folgenden entzündlichen Erkrankungen vorgesehen: …"
+    },
+    {
+      "title": "Wie wendet man die Taltz® (Ixekizumab) Fertigspritze an?",
+      "url": "https://medical.lilly.com/de/products/answers/wie-wendet-man-die-taltz-ixekizumab-fertigspritze-an-281905",
+      "snippet": "Die Taltz‑Injektion mit Fertigspritze wird hier beschrieben. Patienten sollen die Bedienungsanleitung beachten. Nach Schulung zur …"
+    },
+    {
+      "title": "Bimzelx vs Taltz Comparison - Drugs.com",
+      "url": "https://www.drugs.com/compare/bimzelx-vs-taltz",
+      "snippet": "Compare Bimzelx vs Taltz head-to-head with other drugs for uses, ratings, cost, side effects and interactions."
+    },
+    {
+      "title": "Taltz® 80 mg Injektionslösung in einer Fertigspritze",
+      "url": "https://www.patienteninfo-service.de/a-z-liste/t/taltzR-80-mg-injektionsloesung-in-einer-fertigspritze",
+      "snippet": "Taltz enthält den Wirkstoff Ixekizumab. Taltz ist für die Behandlung der folgenden entzündlichen Erkrankungen vorgesehen: …"
+    },
+    {
+      "title": "Informationen zu Taltz (Ixekizumab) | Lilly, Deutschland",
+      "url": "https://de.lilly.com/produkt/taltz",
+      "snippet": "Erfahren Sie hier mehr über Taltz (Ixekizumab). Informationen für Angehörige der Gesundheitsberufe und Patienten."
+    }
+  ]
+}

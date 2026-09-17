@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "skywolf46/backfire-borderline",
+  "slug": "skywolf46-backfire-borderline",
+  "author": "skywolf46",
+  "url": "https://huggingface.co/skywolf46/backfire-borderline",
+  "created_at": "2026-09-17T12:19:23.000Z",
+  "updated_at": "2026-09-17T12:19:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kontakt — Equans Kältetechnik",
+      "url": "https://www.equans-kaelte.ch/kontakt/",
+      "snippet": "Standort Winterthur EQUANS Kältetechnik GmbH Aspstrasse 11 8472 Seuzach T: 062 562 23 99 E: ek-office-ch@equans.com …"
+    },
+    {
+      "title": "Schneider Umwelttechnik AG - Winterthur-Seuzach",
+      "url": "https://analytik.news/firmen/3536.html",
+      "snippet": "Sep 8, 2026 · Schneider Umwelttechnik AG - Aspstrasse 11 - 8472 Winterthur-Seuzach - Schweiz - Zürich - Filtrationstechnik - …"
+    },
+    {
+      "title": "Routenplaner kostenlos • Route entfernung berechnen, maps ...",
+      "url": "https://www.routenplaner-karte.ch/",
+      "snippet": "Benutzer Routen Bern - Luzern Buchs - Buochs Buchs - Flüelen Hilterfingen - Rüeggisberg Gotthelfstrasse - Hechtliacker Heidelberg …"
+    },
+    {
+      "title": "Seuzach - Scania Schweiz AG",
+      "url": "https://www.seuzach.ch/firmenverzeichnis/41455",
+      "snippet": "Kontakt Scania Schweiz AG Markus Knuchel Aspstrasse 13 8472 Oberohringen Tel. 052 320 21 21 seuzach.ch@scania.com Website"
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.ch/?q=%2C+Winterthur%2C+8352%2C+ch",
+      "snippet": "We would like to show you a description here but the site won’t allow us."
+    }
+  ]
+}

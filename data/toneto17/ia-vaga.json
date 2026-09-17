@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Toneto17/ia-vaga",
+  "slug": "toneto17-ia-vaga",
+  "author": "Toneto17",
+  "url": "https://huggingface.co/Toneto17/ia-vaga",
+  "created_at": "2026-09-17T15:40:56.000Z",
+  "updated_at": "2026-09-17T15:49:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 1993676068,
+  "storage_human": "2.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "myAADE - General Secretariat of Public Revenue",
+      "url": "https://www1.aade.gr/gsisapps5/myaade/",
+      "snippet": "Η πλατφόρμα myAADE παρέχει υπηρεσίες της ΑΑΔΕ για τους πολίτες και τις επιχειρήσεις, διευκολύνοντας τη διαχείριση …"
+    },
+    {
+      "title": "myAADE - General Secretariat of Public Revenue",
+      "url": "https://www1.aade.gr/aadeapps3/myaade/#!/myappshome",
+      "snippet": "myAADE - General Secretariat of Public Revenue ... myAADE"
+    },
+    {
+      "title": "myAADEapp - ΑΑΔΕ",
+      "url": "https://www.aade.gr/myaadeapp",
+      "snippet": "Το myAADEapp είναι η επίσημη ψηφιακή εφαρμογή της Ανεξάρτητης Αρχής Δημοσίων Εσόδων (ΑΑΔΕ) για φορητές συσκευές, η …"
+    },
+    {
+      "title": "ΑΑΔΕ",
+      "url": "https://www.aade.gr/",
+      "snippet": "Η ΑΑΔΕ δεν σχετίζεται με την εγκατάσταση και χρήση αυτών των cookies ούτε συλλέγει σχετικά στοιχεία."
+    },
+    {
+      "title": "Είσοδος - AADE",
+      "url": "https://mydata.aade.gr/timologio",
+      "snippet": "Copyright © 2026 Ανεξάρτητη Αρχή Δημοσίων Εσόδων (ΑΑΔΕ)"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "muhamad-geosurge/invert-polarity-09a026ee-cd60-466b-b028-9612470f5a8f",
+  "slug": "muhamad-geosurge-invert-polarity-09a026ee-cd60-466b-b028-9612470f5a8f",
+  "author": "muhamad-geosurge",
+  "url": "https://huggingface.co/muhamad-geosurge/invert-polarity-09a026ee-cd60-466b-b028-9612470f5a8f",
+  "created_at": "2026-09-17T18:38:53.000Z",
+  "updated_at": "2026-09-17T19:48:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "mistral",
+    "mistral-common",
+    "base_model:mistralai/Mistral-7B-v0.3",
+    "base_model:finetune:mistralai/Mistral-7B-v0.3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7248031744,
+  "parameters_human": "7.25B",
+  "storage_bytes": 14496097520,
+  "storage_human": "14.5 GB",
+  "base_model": "mistralai/Mistral-7B-v0.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Brandable Domains for Sale - NamePros",
+      "url": "https://www.namepros.com/forums/brandable-domains-for-sale.364/",
+      "snippet": "Aug 25, 2026 · Buy and sell domain names that make perfect brand names, trade names. Sometimes referred to as marketable …"
+    },
+    {
+      "title": "Domain Buyer Requests - NamePros",
+      "url": "https://www.namepros.com/forums/domain-buyer-requests.10/",
+      "snippet": "Apr 30, 2015 · Formerly known as Domain Names Wanted or Domains Wanted. Looking for a specific type of domain name? Post …"
+    },
+    {
+      "title": "Dedicated Threads for Registrars, Marketplaces, Dropcatchers, etc.",
+      "url": "https://www.namepros.com/threads/dedicated-threads-for-registrars-marketplaces-dropcatchers-etc.1231950/",
+      "snippet": "Mar 16, 2021 · Last updated: March 6, 2025. Dedicated threads are where users can receive help, ask questions, discuss, provide …"
+    },
+    {
+      "title": "negotiable - Livesco.re - brandable livescore or betting domain hack ...",
+      "url": "https://www.namepros.com/threads/livesco-re-brandable-livescore-or-betting-domain-hack.1328823/page-24",
+      "snippet": "Jun 24, 2024 · Hi, this brandable domain livesco.re is waiting for serious offers. Transfer: Auth code Payment: PayPal, Revolut, …"
+    },
+    {
+      "title": "auction - TradeEarner.com - CLOSED | NamePros",
+      "url": "https://www.namepros.com/threads/tradeearner-com-closed.1374085/",
+      "snippet": "Jan 10, 2026 · Auction Closed TradeEarner.com WINNER - @BrandBoogie The views expressed on this page by users and staff are …"
+    }
+  ]
+}

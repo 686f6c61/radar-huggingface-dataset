@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Gyubeum/Qwen3-VL-8B-Instruct-UI-Genie-scoring-64k-bt_with_highest",
+  "slug": "gyubeum-qwen3-vl-8b-instruct-ui-genie-scoring-64k-bt_with_highest",
+  "author": "Gyubeum",
+  "url": "https://huggingface.co/Gyubeum/Qwen3-VL-8B-Instruct-UI-Genie-scoring-64k-bt_with_highest",
+  "created_at": "2026-09-17T18:39:46.000Z",
+  "updated_at": "2026-09-17T18:41:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_vl",
+    "image-text-to-text",
+    "reward-model",
+    "android-flux",
+    "latent-peer-voting",
+    "bradley-terry",
+    "conversational",
+    "en",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8767127792,
+  "parameters_human": "8.77B",
+  "storage_bytes": 17545770762,
+  "storage_human": "17.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.com.eg/index.html",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=ar-EG",
+      "snippet": "الإعلانات كل ما تحب معرفته عن Google‏ هنا Google.com in English © 2026 - الخصوصية - البنود"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/#!%20/=",
+      "snippet": "We would like to show you a description here but the site won’t allow us."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com.nf/?hl=ar-US",
+      "snippet": "محرّك بحث Google متوفّر باللغة: English الإعلانات كل ما تحب معرفته عن Google‏ هنا Google.com"
+    },
+    {
+      "title": "Sign in - Google Accounts",
+      "url": "https://accounts.google.com/",
+      "snippet": "Not your computer? Use a private browsing window to sign in. Learn more about using Guest mode Next Create account"
+    }
+  ]
+}

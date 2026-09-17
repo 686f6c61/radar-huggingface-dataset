@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "jaehyunkang/pi05-real-workbench-preset-2view-layout-reconstruction-60k",
+  "slug": "jaehyunkang-pi05-real-workbench-preset-2view-layout-reconstruction-60k",
+  "author": "jaehyunkang",
+  "url": "https://huggingface.co/jaehyunkang/pi05-real-workbench-preset-2view-layout-reconstruction-60k",
+  "created_at": "2026-09-17T17:34:27.000Z",
+  "updated_at": "2026-09-17T17:35:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "real-workbench",
+    "dataset:Myungkyu/real_workbench-preset-gemini",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 24482773904,
+  "storage_human": "24.5 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Přihlášení do aplikace YouTube na chytré televizi nebo herní konzoli",
+      "url": "https://support.google.com/youtube/answer/3015415?hl=cs",
+      "snippet": "Chytrá televize nebo herní konzole Na chytré televizi nebo na herní konzoli spusťte aplikaci YouTube. Vyberte jednu z následujících …"
+    },
+    {
+      "title": "YouTube 鍵盤快速鍵",
+      "url": "https://support.google.com/youtube/answer/7631406?hl=zh-Hant",
+      "snippet": "如果你使用的是 新版電腦網頁，必須先按一下影片播放器，才能使用鍵盤快速鍵。如要回復到舊版電腦網頁，請依序按一下個人資料 …"
+    },
+    {
+      "title": "Results for \"yt capra\" - Pinkbike BuySell Search",
+      "url": "https://www.pinkbike.com/buysell/list/?region=3&q=yt%20capra",
+      "snippet": "Explore North America's largest marketplace for used mountain bikes and parts."
+    },
+    {
+      "title": "First Look: YT Industries TUES CF - Pinkbike",
+      "url": "https://www.pinkbike.com/news/first-look-YT-TUES-CF-Pro-2015.html",
+      "snippet": "Feb 19, 2015 · YT’s flagship downhill bike now in carbon. In April 2015, Forchheim-based bike manufacturer YT Industries will bring a …"
+    },
+    {
+      "title": "Đăng xuất hoặc xoá tài khoản khỏi YouTube trên TV hoặc máy chơi trò …",
+      "url": "https://support.google.com/youtube/answer/7612539?hl=vi",
+      "snippet": "Bạn có thể đăng xuất hoặc xoá tài khoản khỏi YouTube trên TV hoặc máy chơi trò chơi, cả khi đang giữ thiết bị và kiểm soát từ xa. …"
+    }
+  ]
+}

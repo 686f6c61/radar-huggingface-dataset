@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "kozo2/edge-ML-node2vec",
+  "slug": "kozo2-edge-ml-node2vec",
+  "author": "kozo2",
+  "url": "https://huggingface.co/kozo2/edge-ML-node2vec",
+  "created_at": "2026-09-17T12:36:21.000Z",
+  "updated_at": "2026-09-17T12:42:46.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "node2vec",
+    "graph-embedding",
+    "metabolomics",
+    "pytorch-geometric",
+    "metabolights",
+    "feature-extraction",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10079520,
+  "storage_human": "10 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Angular-material: input-group and md-buttons on same line",
+      "url": "https://stackoverflow.com/questions/33608222/angular-material-input-group-and-md-buttons-on-same-line",
+      "snippet": "Nov 9, 2015 · I'm having some trouble trying to include an input-group and a couple of buttons on the same line using angular …"
+    },
+    {
+      "title": "How to add click event on mat-row in angular material table",
+      "url": "https://stackoverflow.com/questions/48164039/how-to-add-click-event-on-mat-row-in-angular-material-table",
+      "snippet": "How to add click event on mat-row in angular material table Ask Question Asked 8 years, 8 months ago Modified 3 years, 10 months …"
+    },
+    {
+      "title": "select por default dinámico con angular material",
+      "url": "https://es.stackoverflow.com/questions/451206/select-por-default-din%c3%a1mico-con-angular-material",
+      "snippet": "May 11, 2021 · select por default dinámico con angular material Formular una pregunta Formulada hace 5 años y 4 meses …"
+    },
+    {
+      "title": "typescript - tengo algunos problemas con Angular y Angular Material, …",
+      "url": "https://es.stackoverflow.com/questions/502095/tengo-algunos-problemas-con-angular-y-angular-material-no-toma-los-estilos",
+      "snippet": "Dec 8, 2021 · Estoy aprendiendo a usar Angular con Angular Material, pero tengo un problema, hize una Toolbar en un componente …"
+    },
+    {
+      "title": "How to set the color of an icon in Angular Material?",
+      "url": "https://stackoverflow.com/questions/46812064/how-to-set-the-color-of-an-icon-in-angular-material",
+      "snippet": "Oct 18, 2017 · How to set the color of an icon in Angular Material? Ask Question Asked 8 years, 11 months ago Modified 5 years, 4 …"
+    }
+  ]
+}

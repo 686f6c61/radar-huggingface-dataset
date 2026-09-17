@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "XujjHarvard/cs2881-hw1-sft-B",
+  "slug": "xujjharvard-cs2881-hw1-sft-b",
+  "author": "XujjHarvard",
+  "url": "https://huggingface.co/XujjHarvard/cs2881-hw1-sft-B",
+  "created_at": "2026-09-17T13:50:06.000Z",
+  "updated_at": "2026-09-17T13:51:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "cs2881-hw1",
+    "qwen2.5",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-3B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 6183353860,
+  "storage_human": "6.2 GB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "تنزيل Chrome - مساعدة متصفح Google Chrome",
+      "url": "https://support.google.com/chrome/answer/16738344?hl=ar",
+      "snippet": "(Do you want to allow this app to make changes to your device? ‎ )، انقر على نعم (Yes). افتح Chrome. في نظام التشغيل Windows 10 والإصدارات الأحدث، …"
+    },
+    {
+      "title": "Preuzimanje i instaliranje Google Chromea - Računalo - Google …",
+      "url": "https://support.google.com/chrome/answer/95346?hl=hr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Preuzimanje i instaliranje Google Chromea Web-preglednik Chrome možete preuzeti i instalirati bez dodatnih troškova te ga …"
+    },
+    {
+      "title": "国内普通用户怎样下载到 Chrome？ - 知乎",
+      "url": "https://www.zhihu.com/question/37455757",
+      "snippet": "推荐用户下载浏览器时怎样才能使普通被墙用户下载到 Chrome？当然百度软件什么的绝不考虑。"
+    },
+    {
+      "title": "网络正常，为什么edge浏览器加载和下载速度只有几kb/s？",
+      "url": "https://www.zhihu.com/question/644460211",
+      "snippet": "Feb 15, 2024 · 以下是推荐的插件下载网址 9.搜索引擎 插件小屋 - Chrome插件,谷歌浏览器扩展下载,Chrome应用商店,离线安装包下 …"
+    },
+    {
+      "title": "Download and install Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95346?hl=en-na&co=genie.platform=desktop",
+      "snippet": "How to install Chrome Important: Before you download, check if Chrome supports your operating system and you've met all other …"
+    }
+  ]
+}

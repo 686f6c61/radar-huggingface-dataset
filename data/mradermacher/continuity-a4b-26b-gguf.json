@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "mradermacher/continuity-a4b-26b-GGUF",
+  "slug": "mradermacher-continuity-a4b-26b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/continuity-a4b-26b-GGUF",
+  "created_at": "2026-09-17T13:58:37.000Z",
+  "updated_at": "2026-09-17T16:53:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "structured-extraction",
+    "json",
+    "html",
+    "schema-constrained",
+    "vllm",
+    "bf16",
+    "merged-lora",
+    "moe",
+    "en",
+    "base_model:GestaltLabs/continuity-a4b-26b",
+    "base_model:quantized:GestaltLabs/continuity-a4b-26b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25233142046,
+  "parameters_human": "25.23B",
+  "storage_bytes": 98240503104,
+  "storage_human": "98.2 GB",
+  "base_model": "GestaltLabs/continuity-a4b-26b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LV digital | Amedes Group",
+      "url": "https://www.amedes-group.com/service/lv-digital.html",
+      "snippet": "Bitte laden Sie dazu die ELV-Datei herunter. Eine Anleitung zur Aktualisierung des elektronischen Leistungsverzeichnisses finden Sie …"
+    },
+    {
+      "title": "www.123labor.com",
+      "url": "http://www.123labor.com/",
+      "snippet": ""
+    },
+    {
+      "title": "Fernwartungssoftware von TeamViewer",
+      "url": "https://www.teamviewer.com/de/solutions/use-cases/remote-maintenance/software/?msockid=153067013a1d6ef2359070d63bc56f1e",
+      "snippet": "Erleben Sie alle Vorteile von TeamViewer auf einer einzigen Plattform. Verwalten und optimieren Sie ihre digitalen Arbeitsplätze …"
+    },
+    {
+      "title": "Mein Direktlabor | Moderne Labordiagnostik für Selbstzahler",
+      "url": "https://www.meindirektlabor.de/",
+      "snippet": "Wir bieten Ihnen zahlreiche diagnostische Tests an und liefern schnelle Ergebnisse - meist noch am selben Tag. Dazu zählen unter …"
+    },
+    {
+      "title": "Herzlich Willkommen beim White Label 123lab",
+      "url": "https://123lab.de/",
+      "snippet": "123lab ist darauf spezialisiert, personalisierte Produkte in kleinen Mengen zu liefern. Sie können so Ihre eigene Marke gründen, ohne …"
+    }
+  ]
+}

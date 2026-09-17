@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "NewSonnet/flychess",
+  "slug": "newsonnet-flychess",
+  "author": "NewSonnet",
+  "url": "https://huggingface.co/NewSonnet/flychess",
+  "created_at": "2026-09-17T14:11:59.000Z",
+  "updated_at": "2026-09-21T15:16:23.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "chess",
+    "flychess",
+    "sparse-neural-network",
+    "recurrent-neural-network",
+    "supervised-learning",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 113536066,
+  "storage_human": "114 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accéder à mon mail Orange - Communauté Orange",
+      "url": "https://communaute.orange.fr/t5/Webmail-Orange/Acc%C3%A9der-%C3%A0-mon-mail-Orange/td-p/36",
+      "snippet": "Aug 2, 2013 · Voici quelques infos utiles à préciser lorsque vous rencontrez un soucis de messagerie Comment consultez-vous vos e …"
+    },
+    {
+      "title": "Résolu : Icône ORANGE sur le BUREAU. - Communauté Orange",
+      "url": "https://communaute.orange.fr/t5/Ma-connexion/Ic%C3%B4ne-ORANGE-sur-le-BUREAU/td-p/1087548",
+      "snippet": "Oct 13, 2016 · Résolu : Bonjour, Comment placer l'icône ORANGE sur le BUREAU avec WINDOWS 10? Merci de votre aimable …"
+    },
+    {
+      "title": "Impossible d'acceder à ma messagerie Orange [Résolu] - Mail",
+      "url": "https://forums.commentcamarche.net/forum/affich-3788737-impossible-d-acceder-a-ma-messagerie-orange",
+      "snippet": "Mon FAI est Orange (Wanadoo) Je m'identifie correctement, et la barre d'outils de la messagerie Orange s'affiche. Lorsque je clique …"
+    },
+    {
+      "title": "Bandeau publicitaire sur la page messagerie - Communauté Orange",
+      "url": "https://communaute.orange.fr/t5/Webmail-Orange/Bandeau-publicitaire-sur-la-page-messagerie/td-p/802467",
+      "snippet": "Dec 9, 2015 · Bonjour Depuis quelques jours un bandeau publicitaire s'affiche lorsque je vais sur ma page messagerie Orange. …"
+    },
+    {
+      "title": "Orange - Forum - Assistance - Communauté Orange - Livebox - Mobile ...",
+      "url": "https://communaute.orange.fr/",
+      "snippet": "Trouvez les réponses sur le forum Orange et bénéficiez de l'entraide et des conseils des utilisateurs de services Orange."
+    }
+  ]
+}

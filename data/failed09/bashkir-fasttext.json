@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "failed09/bashkir-fasttext",
+  "slug": "failed09-bashkir-fasttext",
+  "author": "failed09",
+  "url": "https://huggingface.co/failed09/bashkir-fasttext",
+  "created_at": "2026-09-17T17:54:35.000Z",
+  "updated_at": "2026-09-17T18:10:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "fasttext",
+  "languages": [
+    "ba"
+  ],
+  "tags": [
+    "fasttext",
+    "embeddings",
+    "word-embeddings",
+    "feature-extraction",
+    "bashkir",
+    "turkic",
+    "subwords",
+    "nlp",
+    "ba",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17834109,
+  "storage_human": "18 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LMAURA - Ligue Motocycliste Auvergne Rhone Alpes",
+      "url": "https://www.lmaura.org/",
+      "snippet": "Ligue Motocycliste Auvergne Rhône Alpes - Site officiel Bienvenue sur le site de la ligue moto Auvergne Rhône-Alpes."
+    },
+    {
+      "title": "Motocross - LMAURA",
+      "url": "https://www.lmaura.org/disciplines/motocross/",
+      "snippet": "RESULTATS DES COMPETITIONS La Commission Moto Cross CALENDRIER MX par catégories Règlement Général MX …"
+    },
+    {
+      "title": "Enduro / Endurance TT - LMAURA",
+      "url": "https://www.lmaura.org/disciplines/enduro-endurance-tt/",
+      "snippet": "Oct 1, 2010 · RESULTATS des COMPETITIONS La Commission Enduro Règlement Enduro Règlement Endurance TT Règlement …"
+    },
+    {
+      "title": "Live - LMAURA",
+      "url": "https://www.lmaura.org/live/",
+      "snippet": "LIVE MotoCross d’AMBERIEU en BUGEY LIVE Enduro d’ARDES sur COUZE LIVE Trial La Ligue AuRA Disciplines CASM Engage …"
+    },
+    {
+      "title": "Trial - LMAURA",
+      "url": "https://www.lmaura.org/disciplines/trial/",
+      "snippet": "Résultats des compétitions La Commission Trial Règlement Trial Règlement Mini Trial Règles Générales du Trial Calendrier Trial …"
+    }
+  ]
+}

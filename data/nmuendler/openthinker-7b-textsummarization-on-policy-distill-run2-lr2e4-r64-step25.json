@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "nmuendler/OpenThinker-7B-textsummarization-on-policy-distill-run2-lr2e4-r64-step25",
+  "slug": "nmuendler-openthinker-7b-textsummarization-on-policy-distill-run2-lr2e4-r64-step25",
+  "author": "nmuendler",
+  "url": "https://huggingface.co/nmuendler/OpenThinker-7B-textsummarization-on-policy-distill-run2-lr2e4-r64-step25",
+  "created_at": "2026-09-17T15:42:52.000Z",
+  "updated_at": "2026-09-17T15:43:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:yufeng1/OpenThinker-7B-summary-type3-e1-10000-2",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:yufeng1/OpenThinker-7B-summary-type3-e1-10000-2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 657397862,
+  "storage_human": "657 MB",
+  "base_model": "yufeng1/OpenThinker-7B-summary-type3-e1-10000-2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Online-Apotheke für Arzneimittel & Beratung | DocMorris",
+      "url": "https://www.docmorris.de/?msockid=3a5f6f54d4046e601d8f7883d5316f7e",
+      "snippet": "Arzneimittel & Medikamente bequem in der DocMorris Online-Apotheke bestellen. E-Rezept Schnelle Lieferung Sichere Zahlung"
+    },
+    {
+      "title": "Arzneimittel & Medikamente kaufen | DocMorris",
+      "url": "https://www.docmorris.de/arzneimittel-gesundheit?msockid=3a5f6f54d4046e601d8f7883d5316f7e",
+      "snippet": "Arznmeimittel & Medikamente bequem in der Online-Apotheke bestellen. Schnelle Lieferung Rezeptfrei Sichere Zahlung"
+    },
+    {
+      "title": "So finden Sie Ihre Rechnungen im DocMorris-Kundenkonto",
+      "url": "https://support.docmorris.de/hc/de/articles/18982798893457-So-finden-Sie-Ihre-Rechnungen-im-DocMorris-Kundenkonto",
+      "snippet": "App-AnsichtSchritt 1: Anmeldung im KundenkontoMelden Sie sich in Ihr persönliches Kundenkonto bei DocMorris an. Schritt 2: …"
+    },
+    {
+      "title": "Zahlungsarten bei DocMorris.de: Flexibel und sicher bezahlen",
+      "url": "https://support.docmorris.de/hc/de/articles/18982824129425-Zahlungsarten-bei-DocMorris-de-Flexibel-und-sicher-bezahlen",
+      "snippet": "Bei DocMorris bieten wir Ihnen eine Vielzahl von Zahlungsarten an.Für eine Bestellung mit E-Rezept oder rezeptfreier Produkte …"
+    },
+    {
+      "title": "DocMorris AG",
+      "url": "https://de-support.docmorris.de/hc/en-us",
+      "snippet": "DocMorris AG provides support and assistance for customers, including help with orders and information about services."
+    }
+  ]
+}

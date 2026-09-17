@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "nithinmanoj10/CataNET-Meridian-v1.0-Small",
+  "slug": "nithinmanoj10-catanet-meridian-v1-0-small",
+  "author": "nithinmanoj10",
+  "url": "https://huggingface.co/nithinmanoj10/CataNET-Meridian-v1.0-Small",
+  "created_at": "2026-09-17T13:25:46.000Z",
+  "updated_at": "2026-09-18T10:31:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "keypoint-detection",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "yolo",
+    "vision",
+    "object-detection",
+    "keypoint-detection",
+    "pose-estimation",
+    "catanet",
+    "catan",
+    "board-games",
+    "yolo26-small",
+    "en",
+    "dataset:nithinmanoj10/CatanSynth-Meridian-v1-50K",
+    "base_model:Ultralytics/YOLO26",
+    "base_model:quantized:Ultralytics/YOLO26",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 61219441,
+  "storage_human": "61 MB",
+  "base_model": "Ultralytics/YOLO26",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EAM - Ihr Energieversorger in der Mitte Deutschlands",
+      "url": "https://www.eam.de/",
+      "snippet": "Die EAM - Partner für die Energiewende in der Region Nah, natürlich, nachhaltig: Die EAM ist der regionale Energie-Partner für rund …"
+    },
+    {
+      "title": "EAM Kundenportal – Erledigen Sie ihre Anliegen bequem online!",
+      "url": "https://www.eam.de/service-kontakt/service/kundenportal/",
+      "snippet": "EAM Kundenportal – Erledigen Sie ihre Anliegen bequem online! Zur erstmaligen Registrierung für unser Kundenportal gehen Sie …"
+    },
+    {
+      "title": "Willkommen beim Online-Portal der EAM Netz GmbH!",
+      "url": "https://netzbauportal.eam.de/",
+      "snippet": "Willkommen beim Online-Portal der EAM Netz GmbH! Wir heißen auch die Kunden der SWB Stadtwerke Biedenkopf GmbH, der …"
+    },
+    {
+      "title": "EAM-Stiftung",
+      "url": "https://stiftung.eam.de/de",
+      "snippet": "Engagement EAM-Stiftung Herzlich willkommen auf dem Antragsportal der EAM-Stiftung Für eine Unterstützung durch die EAM …"
+    },
+    {
+      "title": "EINVERSTÄNDNISERKLÄRUNG - domino01.eam.de",
+      "url": "https://domino01.eam.de/Portal/Portal.nsf/Einverstaendniserklaerung.pdf?OpenFileResource",
+      "snippet": "Wir benötigen Ihr Einverständnis, um Ihre personenbezogenen Daten, die zur Erstellung eines Telekommunikationsanschlusses …"
+    }
+  ]
+}

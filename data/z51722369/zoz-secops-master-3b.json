@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "z51722369/ZOZ-SecOps-Master-3B",
+  "slug": "z51722369-zoz-secops-master-3b",
+  "author": "z51722369",
+  "url": "https://huggingface.co/z51722369/ZOZ-SecOps-Master-3B",
+  "created_at": "2026-09-17T15:03:24.000Z",
+  "updated_at": "2026-09-17T15:04:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 6183348436,
+  "storage_human": "6.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Booking.com | Official site | The best hotels, flights, car rentals ...",
+      "url": "https://www.booking.com/?msockid=393b53cb491365602113441c48016495",
+      "snippet": "Explore the world with Booking.com. Big savings on homes, hotels, flights, car rentals, taxis, and attractions – build your perfect trip …"
+    },
+    {
+      "title": "Booking.com | Sito ufficiale | I migliori hotel, voli, noleggi auto e ...",
+      "url": "https://www.booking.com/index.it.html?msockid=393b53cb491365602113441c48016495",
+      "snippet": "Esplora il mondo con Booking.com. Prezzi strepitosi su case, hotel, voli, noleggio auto, taxi e attrazioni: crea il viaggio perfetto per …"
+    },
+    {
+      "title": "Booking.com",
+      "url": "https://packages.booking.com/vacationpackages/",
+      "snippet": "Save up to 625 dollars when you book your flight and hotel together! Booking.com Vacation Packages with exclusive deals on airline …"
+    },
+    {
+      "title": "Extranet - Booking.com for Partners",
+      "url": "https://partner.booking.com/it/soluzioni/extranet",
+      "snippet": "L'extranet è il centro di controllo della tua struttura su Booking.com. Qui puoi gestire tutto, dalle tariffe alla disponibilità alle …"
+    },
+    {
+      "title": "Hotel | Prenota hotel last minute e altri alloggi | Booking.com",
+      "url": "https://www.booking.com/hotel/index.it.html?msockid=393b53cb491365602113441c48016495",
+      "snippet": "Sep 1, 2026 · Trova, confronta e prenota i migliori hotel su Booking.com! Scopri hotel economici, hotel vicino a te, hotel per viaggi last …"
+    }
+  ]
+}

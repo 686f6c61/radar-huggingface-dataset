@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l31_remove40_swapgapiter_b010_r02",
+  "slug": "jeesup-svd-safety-l31_remove40_swapgapiter_b010_r02",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l31_remove40_swapgapiter_b010_r02",
+  "created_at": "2026-09-17T19:06:54.000Z",
+  "updated_at": "2026-09-17T19:14:43.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama3",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "license:llama3.1",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766296,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mail Orange: découvrez la messagerie et accédez à vos mails",
+      "url": "https://messagerie.orange.fr/",
+      "snippet": "La messagerie Orange vous offre un ensemble de services pour communiquer facilement en toute sécurité"
+    },
+    {
+      "title": "Portail Orange | Offres Mobiles, Internet, TV, Actu & Accès compte Mail",
+      "url": "https://www.orange.fr/portail",
+      "snippet": "Accès rapide et facile à toutes les fonctionnalités Orange (Email, Assistance, Banque, Boutique). Découvrez notre portail Orange et …"
+    },
+    {
+      "title": "Espace Client Orange",
+      "url": "https://espace-client.orange.fr/compte/mail",
+      "snippet": "Accédez à votre boite mail Orange et gérez vos e-mails en toute sécurité depuis l'Espace Client Orange."
+    },
+    {
+      "title": "Mail services",
+      "url": "https://mon-espace.mail.orange.fr/",
+      "snippet": "Accédez à votre messagerie Orange en toute sécurité pour envoyer, recevoir et gérer vos emails facilement."
+    },
+    {
+      "title": "Accéder à votre Espace client",
+      "url": "https://espace-client.orange.fr/page-accueil",
+      "snippet": "Pour gérer vos abonnements, dépanner votre Livebox ou juste nous contacter, on est là. Scannez le QR Code pour télécharger ou …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "chiakiidn/perceiver-multitask-tiny",
+  "slug": "chiakiidn-perceiver-multitask-tiny",
+  "author": "chiakiidn",
+  "url": "https://huggingface.co/chiakiidn/perceiver-multitask-tiny",
+  "created_at": "2026-09-17T13:40:42.000Z",
+  "updated_at": "2026-09-17T13:40:47.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "perceiver",
+    "pytorch",
+    "multitask",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemeindeverwaltungen Blaichach. Gästeamt | 08091 08 | Blaichach",
+      "url": "https://www.deutschebiz.de/gemeindeverwaltungen-blaichach-g%C3%A4steamt_1t-08091-08",
+      "snippet": "Sie können Gemeindeverwaltungen Blaichach. Gästeamt unter der Telefonnummer 08091 08 kontaktieren."
+    },
+    {
+      "title": "Kontakt & Service - gemeinde-blaichach.de",
+      "url": "https://gemeinde-blaichach.de/freizeit/kontakt-service/",
+      "snippet": "Willkommen im Bereich „Kontakt & Service“! den Status der Mautstraße oder auch aktuelle Wegsperrungen zu informieren. Bei …"
+    },
+    {
+      "title": "Gemeindeverwaltung Blaichach",
+      "url": "https://gemeinde-blaichach.de/rathaus-service/gemeindeverwaltung/",
+      "snippet": "Hier finden Sie alle Informationen & Kontaktdaten unserer Anlaufstellen innerhalb der Gemeinde, die für Sie relevant sein könnten. …"
+    },
+    {
+      "title": "Gästeamt — Unternehmen in Blaichach",
+      "url": "https://blaichach.defirmenkataloge.com/company/gasteamt/",
+      "snippet": "Vollständige Informationen über das Unternehmen Gästeamt in Blaichach, Adresse, Telefon oder Fax, E-Mail, Webseite und …"
+    },
+    {
+      "title": "Gaesteamt im IMMENSTÄDTER STR. 7, Blaichach, Bayern 87544, …",
+      "url": "https://blaichach.city-advisor.de/gaesteamt/",
+      "snippet": "Über Gaesteamt im Blaichach Unser Unternehmen Gaesteamt befindet sich in der Stadt Blaichach, Region Bayern. Die …"
+    }
+  ]
+}

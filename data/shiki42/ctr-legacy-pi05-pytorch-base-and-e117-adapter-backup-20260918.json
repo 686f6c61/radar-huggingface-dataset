@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Shiki42/ctr-legacy-pi05-pytorch-base-and-e117-adapter-backup-20260918",
+  "slug": "shiki42-ctr-legacy-pi05-pytorch-base-and-e117-adapter-backup-20260918",
+  "author": "Shiki42",
+  "url": "https://huggingface.co/Shiki42/ctr-legacy-pi05-pytorch-base-and-e117-adapter-backup-20260918",
+  "created_at": "2026-09-17T18:35:27.000Z",
+  "updated_at": "2026-09-17T18:47:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "pytorch",
+    "lora",
+    "checkpoint-backup",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8373081904,
+  "storage_human": "8.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Επαγγελματίες υγείας για Skin booster. Σύγκρινε Κόστος & Τιμές!",
+      "url": "https://www.doctoranytime.gr/l/skin-booster",
+      "snippet": "Aσχολείται με όλο το φάσμα της κλινικής και αισθητικής δερματολογίας, δερματοχειρουργικής, παρακολούθησης και χαρτογράφησης …"
+    },
+    {
+      "title": "Skin Boosters - Cosmetic Derma Medicine",
+      "url": "https://www.cosmeticdermamedicine.gr/skin-booster",
+      "snippet": "Η εφαρμογή αναισθητικής κρέμας πριν τη θεραπεία την καθιστά ουσιαστικά ανώδυνη. Το κόστος του skin booster είναι εξατομικευμένο."
+    },
+    {
+      "title": "Boosters στο πρόσωπο: τι είναι και τι αποτέλεσμα έχουν",
+      "url": "https://www.athanasioschristopoulos.com/boosters-sto-prosopo/",
+      "snippet": "Τι είναι τα Skin Boosters; Το κύριο συστατικό των skin boosters είναι το υαλουρονικό οξύ σε ειδική, πιο λεπτόρρευστη μορφή, που …"
+    },
+    {
+      "title": "Health professionals for Skin booster. Compare prices and check the ...",
+      "url": "https://www.doctoranytime.gr/en/l/skin-booster-2",
+      "snippet": "Health professionals for Skin booster . Choose the one you need based on the experience, the patient reviews and the cost!"
+    },
+    {
+      "title": "Skin booster μεσοθεραπεία για την απόλυτη ανανέωση!",
+      "url": "https://www.mariaskolarikou.com/skin-booster-mesotherapeia/",
+      "snippet": "Jul 28, 2026 · Επιλέγοντας τη skin booster μεσοθεραπεία, προσφέρετε στο δέρμα σας την πιο πολύτιμη τροφή για βαθιά ενυδάτωση, …"
+    }
+  ]
+}

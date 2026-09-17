@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "HasanKabir23/ppo-LunarLander-v3",
+  "slug": "hasankabir23-ppo-lunarlander-v3",
+  "author": "HasanKabir23",
+  "url": "https://huggingface.co/HasanKabir23/ppo-LunarLander-v3",
+  "created_at": "2026-09-17T13:23:21.000Z",
+  "updated_at": "2026-09-17T13:23:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "LunarLander-v3",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 283652,
+  "storage_human": "283652 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Autisme et psychiatrie | Cairn.info",
+      "url": "https://shs.cairn.info/revue-savoir-agir-2020-2-page-87?lang=fr",
+      "snippet": "Aug 25, 2020 · L’autisme, qui concernait principalement la psychiatrie et les services médico-sociaux, est aujourd’hui source d’intérêt …"
+    },
+    {
+      "title": "Autisme : Maladie Mentale ou Psychique ? Éclaircissements …",
+      "url": "https://locamin.fr/le-blogue/autisme-maladie-mentale-ou-psychique/",
+      "snippet": "En effet, l'autisme n'est pas causé par des facteurs psychologiques mais plutôt par des différences biologiques dans le …"
+    },
+    {
+      "title": "Est-ce que l’autisme est une maladie mentale ? - Autisme 123",
+      "url": "https://autisme123.com/blog/2024/06/05/est-ce-que-lautisme-est-une-maladie-mentale/",
+      "snippet": "Jun 5, 2024 · L’autisme n’est pas un trouble de santé mentale, mais une condition neurodéveloppementale qui affecte la manière …"
+    },
+    {
+      "title": "L'autisme est-il une maladie psychiatrique - Synonyme du mot",
+      "url": "https://www.synonyme-du-mot.com/les-articles/lautisme-est-il-une-maladie-psychiatrique",
+      "snippet": "Est-ce que l'autisme est considéré comme une maladie mentale ? L'autisme ne relève ni du handicap mental (trouble du …"
+    },
+    {
+      "title": "Autisme et Troubles Psychiatriques : Comprendre les Liens - Lo Camin",
+      "url": "https://locamin.fr/le-blogue/autisme-trouble-psychiatrique/",
+      "snippet": "Le lien entre l'autisme et les troubles psychiatriques est un sujet complexe et souvent mal compris. Les personnes atteintes de …"
+    }
+  ]
+}

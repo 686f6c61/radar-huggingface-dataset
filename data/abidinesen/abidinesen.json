@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "abidinesen/abidinesen",
+  "slug": "abidinesen-abidinesen",
+  "author": "abidinesen",
+  "url": "https://huggingface.co/abidinesen/abidinesen",
+  "created_at": "2026-09-17T19:06:58.000Z",
+  "updated_at": "2026-09-17T19:18:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "tr",
+    "en"
+  ],
+  "tags": [
+    "nlp",
+    "rlhf",
+    "dpo",
+    "turkish",
+    "tr",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Thomann",
+      "url": "https://www.thomannmusic.com/",
+      "snippet": "Buy your new musical instrument and accessories online from Europe's largest music retailer. Top quality and variety at Thomann."
+    },
+    {
+      "title": "Acquista strumenti musicali online dal leader del mercato – Thomann …",
+      "url": "https://www.thomann.it/",
+      "snippet": "Acquistate il vostro nuovo strumento musicale e gli accessori online dal più grande rivenditore di musica d'Europa. Massima qualità e …"
+    },
+    {
+      "title": "Acquista strumenti musicali online dal leader del mercato – Thomann …",
+      "url": "https://www.thomann.it/index.....html",
+      "snippet": "Acquistate il vostro nuovo strumento musicale e gli accessori online dal più grande rivenditore di musica d'Europa. Massima qualità e …"
+    },
+    {
+      "title": "Compra instrumentos musicales online con el líder del mercado – Thomann …",
+      "url": "https://www.thomann.es/",
+      "snippet": "Compra tu nuevo instrumento musical y accesorios online en la tienda más grande de Europa. Calidad y variedad superior en …"
+    },
+    {
+      "title": "Musikinstrumente online kaufen beim Marktführer - Thomann",
+      "url": "https://www.thomann.de/de/index.html",
+      "snippet": "Kaufe dein neues Musikinstrument und Zubehör online bei Europas größtem Musikhändler. Top-Qualität und Auswahl bei Thomann."
+    }
+  ]
+}

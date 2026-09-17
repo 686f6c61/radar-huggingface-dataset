@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "zhangrover/Unsloth-Qwen3.8-27B-UD-KQVQ4-IQ3Floor-10G-MTP-GGUF",
+  "slug": "zhangrover-unsloth-qwen3-8-27b-ud-kqvq4-iq3floor-10g-mtp-gguf",
+  "author": "zhangrover",
+  "url": "https://huggingface.co/zhangrover/Unsloth-Qwen3.8-27B-UD-KQVQ4-IQ3Floor-10G-MTP-GGUF",
+  "created_at": "2026-09-17T12:23:46.000Z",
+  "updated_at": "2026-09-17T13:46:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "qwen",
+    "qwen3.8",
+    "qwen35",
+    "dense",
+    "hybrid-attention",
+    "thinking",
+    "reasoning",
+    "coding",
+    "conversational",
+    "mtp",
+    "speculative-decoding",
+    "mixed-precision",
+    "iq",
+    "q4",
+    "llama.cpp",
+    "text-generation",
+    "zh",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 460730096,
+  "parameters_human": "460.7M",
+  "storage_bytes": 11802769088,
+  "storage_human": "11.8 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gmail",
+      "url": "https://mail.google.com/mail?hl=ar",
+      "snippet": "Gmail عبارة عن بريد إلكتروني يتسم بالسهولة والفعالية والإفادة، حيث يتسع لسعة تخزينية مقدارها 15 غيغابايت، مع معدّل أقل من الرسائل غير المرغوب فيها، بالإضافة إلى إمكانية الدخول من الجوّال."
+    },
+    {
+      "title": "Gmail",
+      "url": "https://mail.google.com/mail?hl=en",
+      "snippet": "We would like to show you a description here but the site won’t allow us."
+    },
+    {
+      "title": "Gmail - Google Accounts",
+      "url": "https://accounts.google.com/login?service=mail",
+      "snippet": "Gmail is email that’s intuitive, efficient, and useful. 15 GB of storage, less spam, and mobile access."
+    },
+    {
+      "title": "Gmail Help",
+      "url": "https://support.google.com/mail/?hl=en",
+      "snippet": "Official Gmail Help Center where you can find tips and tutorials on using Gmail and other answers to frequently asked questions."
+    },
+    {
+      "title": "Sign in - Google Accounts",
+      "url": "https://accounts.google.com/InteractiveLogin?emr=1&ltmpl=default&nojavascript=1&...",
+      "snippet": "Not your computer? Use a private browsing window to sign in. Learn more about using Guest mode Next Create account"
+    }
+  ]
+}

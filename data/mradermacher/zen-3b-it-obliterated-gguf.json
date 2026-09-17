@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Zen-3B-It-Obliterated-GGUF",
+  "slug": "mradermacher-zen-3b-it-obliterated-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Zen-3B-It-Obliterated-GGUF",
+  "created_at": "2026-09-17T15:10:16.000Z",
+  "updated_at": "2026-09-17T18:11:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:edusc182/Zen-3B-It-Obliterated",
+    "base_model:quantized:edusc182/Zen-3B-It-Obliterated",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 27940887424,
+  "storage_human": "27.9 GB",
+  "base_model": "edusc182/Zen-3B-It-Obliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "求TRAIL SAMPLE ; CONF.SAMPLE ; CUST.SAMPLE ;在外贸中的中文翻译",
+      "url": "https://zhidao.baidu.com/question/16336678.html",
+      "snippet": "Dec 6, 2006 · 求TRAIL SAMPLE ; CONF.SAMPLE ; CUST.SAMPLE ;在外贸中的中文翻译trial sample: 初样conf sample: 确认样cust …"
+    },
+    {
+      "title": "example. com邮箱如何注册？_百度知道",
+      "url": "https://zhidao.baidu.com/question/636724076405336444.html",
+      "snippet": "Aug 13, 2024 · example. com邮箱如何注册？example的邮箱注册的步骤如下01在浏览器上输入登陆微软账户的网 …"
+    },
+    {
+      "title": "初回，限定，特典，见本，sample,riay分别是什么意思，请具体详细解释",
+      "url": "https://zhidao.baidu.com/question/95682451.html",
+      "snippet": "通常这种版本的CD封底以及光碟内圈都印有或贴有“见本盘、见本品、Sample Loaned”等字样，使其与正式发行版CD区分开! 但是内 …"
+    },
+    {
+      "title": "俄罗斯搜索引擎网址 yandex官网入口直达 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/725567645356284605.html",
+      "snippet": "Nov 11, 2025 · 俄罗斯搜索引擎网址 yandex官网入口直达Yandex的官方网址如下：国际版入口：https://yandex.com/俄罗斯本土版入 …"
+    },
+    {
+      "title": "服装行业的FIT样，PP样，TOP样是什么意思 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/47285048.html",
+      "snippet": "Fit Sample：试穿样 PP Sample：Pre-Production Sample大货办 TOP Sample：顶部试样；上部试料 Fit Sample（试穿样）：一般 …"
+    }
+  ]
+}

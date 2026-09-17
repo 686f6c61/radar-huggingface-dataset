@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "xirr/inspark_marlin",
+  "slug": "xirr-inspark_marlin",
+  "author": "xirr",
+  "url": "https://huggingface.co/xirr/inspark_marlin",
+  "created_at": "2026-09-17T12:23:44.000Z",
+  "updated_at": "2026-09-17T13:14:54.000Z",
+  "license": "bilibili-model-use-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "indextts2",
+    "text-to-speech",
+    "speculative-decoding",
+    "distilled-cfm",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 629312451,
+  "storage_human": "629 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Help",
+      "url": "https://support.google.com/",
+      "snippet": "If you're having trouble accessing a Google product, there's a chance we're currently experiencing a temporary problem. You can …"
+    },
+    {
+      "title": "Google als Startseite festlegen - Google Suche-Hilfe",
+      "url": "https://support.google.com/websearch/answer/463?hl=de",
+      "snippet": "Google wurde ohne meine Zustimmung als Startseite festgelegt Google ändert die Einstellungen für Ihre Startseite nicht ohne Ihre …"
+    },
+    {
+      "title": "Google frage | ComputerBase Forum",
+      "url": "https://www.computerbase.de/forum/threads/google-frage.1696154/",
+      "snippet": "Jul 14, 2017 · Warum wird das ( ) bei aufrufen von https://www.google.de/?gws_rd=ssl seit heute Mittag angezeigt, wann wird google …"
+    },
+    {
+      "title": "URL-Weiterleitung auf Google-Seite funktioniert nicht.",
+      "url": "https://www.computerbase.de/forum/threads/url-weiterleitung-auf-google-seite-funktioniert-nicht.2158058/",
+      "snippet": "Aug 29, 2023 · Moin. Wie soll ich dieses seltsame Phänomen beschreiben... Ich habe eine Homepage, mit der ich nicht mehr …"
+    },
+    {
+      "title": "Make Google your homepage - Google Search Help",
+      "url": "https://support.google.com/websearch/answer/463?hl=en",
+      "snippet": "In the top right corner of your computer's browser, click More Settings. Under \"Appearance,\" turn on Show home button. Select your …"
+    }
+  ]
+}

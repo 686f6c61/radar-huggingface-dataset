@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l31_remove30_swapgapiter_b010_r04",
+  "slug": "jeesup-svd-safety-l31_remove30_swapgapiter_b010_r04",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l31_remove30_swapgapiter_b010_r04",
+  "created_at": "2026-09-17T18:10:52.000Z",
+  "updated_at": "2026-09-17T18:25:45.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama3",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "license:llama3.1",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766296,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Speed Test by MyBroadband",
+      "url": "https://speedtest.mybroadband.co.za/",
+      "snippet": "Test your Internet connection quickly and accurately. Lightweight, easy-to-use, reliable and completely free."
+    },
+    {
+      "title": "Rain 5G Home Internet speed test hits 620Mbps – MyBroadband",
+      "url": "https://mybroadband.co.za/news/5g/665582-rain-5g-home-internet-speed-test-hits-620mbps.html",
+      "snippet": "Sep 4, 2026 · Many users of Rain’s fixed-5G service are getting exceptionally fast speeds in 2026, an analysis by MyBroadband …"
+    },
+    {
+      "title": "What Internet speed you need for watching Netflix in South Africa",
+      "url": "https://mybroadband.co.za/news/broadcasting/278003-what-internet-speed-you-need-for-watching-netflix-in-south-africa.html",
+      "snippet": "Apr 10, 2018 · Thanks to the increasing number of content services across the Internet, more consumers watch media online."
+    },
+    {
+      "title": "MyBroadband Insights",
+      "url": "https://research.mybroadband.co.za/",
+      "snippet": "Speed Test App The MyBroadband Speed Test app is your go-to tool for testing internet performance with precision and ease. …"
+    },
+    {
+      "title": "MyBroadband - Company Press Releases",
+      "url": "https://companies.mybroadband.co.za/",
+      "snippet": "Company Press Releases – Most Networks Ask You to Trust Their Performance. Network Platforms Lets You Verify It."
+    }
+  ]
+}

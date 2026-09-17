@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "haifaa-bhd/extract-class-grpo-adapter-mq5300",
+  "slug": "haifaa-bhd-extract-class-grpo-adapter-mq5300",
+  "author": "haifaa-bhd",
+  "url": "https://huggingface.co/haifaa-bhd/extract-class-grpo-adapter-mq5300",
+  "created_at": "2026-09-17T15:05:33.000Z",
+  "updated_at": "2026-09-17T15:07:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "refactoring",
+    "extract-class",
+    "grpo",
+    "lora",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 172955084,
+  "storage_human": "173 MB",
+  "base_model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft Copilot: Your AI companion",
+      "url": "https://copilot.microsoft.com/?msockid=3738efff8eca6fd5046cf8288feb6e44",
+      "snippet": "Microsoft Copilot is your companion to inform, entertain and inspire. Get advice, feedback and straightforward answers. Try Copilot now."
+    },
+    {
+      "title": "Copilot | AI chat for work",
+      "url": "https://copilot.cloud.microsoft/",
+      "snippet": "Copilot brings work and life into one app, but your conversation history doesn't mix. Your work chats stay with your work account and …"
+    },
+    {
+      "title": "Ihr täglicher KI-Begleiter | Microsoft Copilot",
+      "url": "https://explore.microsoft.com/de-de/microsoft-copilot/learn",
+      "snippet": "Erfahren Sie, wie Sie auf Copilot zugreifen und es nutzen können, um die beeindruckende Leistung, Produktivität und Kreativität des …"
+    },
+    {
+      "title": "Microsoft Copilot-App für Windows, Mac, Android und iOS …",
+      "url": "https://www.microsoft.com/de-de/microsoft-365-copilot/download-copilot-app?msockid=3738efff8eca6fd5046cf8288feb6e44",
+      "snippet": "Laden Sie die App Microsoft Copilot für Windows, iOS und Android herunter und erleben Sie leistungsstarke KI-Funktionen …"
+    },
+    {
+      "title": "Microsoft 365 Copilot | KI-Produktivitätswerkzeuge für die Arbeit",
+      "url": "https://www.microsoft.com/de-de/microsoft-365-copilot?msockid=3738efff8eca6fd5046cf8288feb6e44",
+      "snippet": "Nutzen Sie den KI-Assistenten für Ihre Arbeit mit Microsoft 365 Copilot. Erfahren Sie, wie eine KI-Lösung für Unternehmen Ihr …"
+    }
+  ]
+}

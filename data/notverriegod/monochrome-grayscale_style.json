@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "notverriegod/monochrome-grayscale_style",
+  "slug": "notverriegod-monochrome-grayscale_style",
+  "author": "notverriegod",
+  "url": "https://huggingface.co/notverriegod/monochrome-grayscale_style",
+  "created_at": "2026-09-17T18:39:51.000Z",
+  "updated_at": "2026-09-17T18:39:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:circlestone-labs/Anima",
+    "base_model:adapter:circlestone-labs/Anima",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 71831849,
+  "storage_human": "72 MB",
+  "base_model": "circlestone-labs/Anima",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "4*S Sport- & Wellnesshotel im Allgäu - Hotel Dein Engel Oberstaufen",
+      "url": "https://www.deinengel.de/",
+      "snippet": "Das 4-Sterne-Superior-Hotel Dein Engel ist Ihr Wellnesshotel in Oberstaufen und der perfekte Ort zum Aufatmen, Ausspannen, …"
+    },
+    {
+      "title": "Zimmer & Suiten im 4* S Wellnesshotel im Allgäu - Hotel ... - Dein Engel",
+      "url": "https://www.deinengel.de/de/zimmer-preise/",
+      "snippet": "Jedes Zimmer im Hotel Dein Engel im Allgäu hat seine eigene Persönlichkeit und damit ein unverwechselbares Ambiente. …"
+    },
+    {
+      "title": "Hotel Dein Engel (Oberstaufen): Alle Infos zum Hotel - HolidayCheck",
+      "url": "https://www.holidaycheck.de/hi/hotel-dein-engel/966a417e-bd30-337c-946a-f9e02ba47648",
+      "snippet": "Dec 23, 2024 · Ein Himmelreich auf Erden im wunderschönen Allgäu! Dein Engel heißt Sie herzlich Willkommen. Wir begrüßen Sie in …"
+    },
+    {
+      "title": "Dein Engel, Oberstaufen (aktualisierte Preise für 2026)",
+      "url": "https://www.booking.com/hotel/de/kur-und-sporthotel-engel.de.html?msockid=0ad884bb56c467600d68936c5702660f",
+      "snippet": "Die Unterkunft Dein Engel, die in Oberstaufen, 34 km von Casino Bregenz entfernt gelegen ist, verfügt über …"
+    },
+    {
+      "title": "Hotel Dein Engel in Oberstaufen günstig buchen bei TUI.com",
+      "url": "https://www.tui.com/hotels/dein-engel-303039/hotelinformation/?msockid=0ad884bb56c467600d68936c5702660f",
+      "snippet": "20 hours ago · Dieses Hotel bietet spezielle Ernährungsarten an, z. B. vegane oder laktosefreie Speisen. Einfach abschlagen – …"
+    }
+  ]
+}

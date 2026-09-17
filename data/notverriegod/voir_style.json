@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "notverriegod/voir_style",
+  "slug": "notverriegod-voir_style",
+  "author": "notverriegod",
+  "url": "https://huggingface.co/notverriegod/voir_style",
+  "created_at": "2026-09-17T18:33:21.000Z",
+  "updated_at": "2026-09-17T18:33:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:circlestone-labs/Anima",
+    "base_model:adapter:circlestone-labs/Anima",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 74798953,
+  "storage_human": "75 MB",
+  "base_model": "circlestone-labs/Anima",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bellagio - Lac de come - Carte postale ancienne et vue d ... - Geneanet",
+      "url": "https://www.geneanet.org/cartes-postales/view/50501",
+      "snippet": "L'application \"Hier et Aujourd'hui\" vous permet de consulter sur votre smartphone des cartes postales anciennes de lieux à proximité …"
+    },
+    {
+      "title": "Côme en cartes postales anciennes - Lac de Côme",
+      "url": "https://www.lacdecome.fr/come-cartespostales.htm",
+      "snippet": "Côme cartes postales anciennes et photographies d'époque, le théâtre social, le lycée et le vieux port de la Piazza Cavour."
+    },
+    {
+      "title": "Lago Di Como - Carte postale ancienne et vue d'Hier et ... - Geneanet",
+      "url": "https://www.geneanet.org/cartes-postales/view/8056611",
+      "snippet": "L'application \"Hier et Aujourd'hui\" vous permet de consulter sur votre smartphone des cartes postales anciennes de lieux à proximité …"
+    },
+    {
+      "title": "Anciennes cartes de Como - Old Maps Online",
+      "url": "https://www.oldmapsonline.org/fr/Como",
+      "snippet": "Anciennes cartes de Como Découvrez le passé de Como sur des cartes historiques Explorer les cartes Découvrir l'histoire"
+    },
+    {
+      "title": "Lecco en cartes postales anciennes - lacdecome.fr",
+      "url": "https://www.lacdecome.fr/lecco-cartespostales.htm",
+      "snippet": "Vues anciennes de Lecco à travers des cartes postales d'époque, Pescarenico, pont Visconti et l'inondation de 1901."
+    }
+  ]
+}

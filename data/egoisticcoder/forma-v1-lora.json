@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "EgoisticCoder/forma-v1-lora",
+  "slug": "egoisticcoder-forma-v1-lora",
+  "author": "EgoisticCoder",
+  "url": "https://huggingface.co/EgoisticCoder/forma-v1-lora",
+  "created_at": "2026-09-17T18:43:59.000Z",
+  "updated_at": "2026-09-19T17:19:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:unsloth/Qwen3-VL-4B-Instruct-unsloth-bnb-4bit",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "base_model:unsloth/Qwen3-VL-4B-Instruct-unsloth-bnb-4bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 168810846,
+  "storage_human": "169 MB",
+  "base_model": "unsloth/Qwen3-VL-4B-Instruct-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Drivers e downloads | Dell Brasil",
+      "url": "https://www.dell.com/support/home/pt-br?app=drivers&msockid=3dc122466a3869690a1a35916b5b6856",
+      "snippet": "Selecione um produto ou insira sua etiqueta de serviço para visualizar drivers relacionados da Dell e atualizações de driver."
+    },
+    {
+      "title": "如何快速输入乘号 × - 百度经验",
+      "url": "https://jingyan.baidu.com/article/48206aea0d63fa616bd6b37a.html",
+      "snippet": "Dec 17, 2019 · 如何快速输入乘号 ×,平时我们在工作学习中需要输入乘号“×”时，键盘和快捷符号栏都没有这个符合，这里分享一下如何 …"
+    },
+    {
+      "title": "Inicio de soporte | Dell México",
+      "url": "https://www.dell.com/support/home/es-mx?app=drivers&msockid=3dc122466a3869690a1a35916b5b6856",
+      "snippet": "Seleccione un producto o ingrese su etiqueta de servicio para ver los controladores de Dell y sus actualizaciones."
+    },
+    {
+      "title": "怎么找到显示适配器 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/c146541362fbf54afdfc4c2b.html",
+      "snippet": "Jan 20, 2020 · 怎么找到显示适配器,总有一些设备管理器，但是你们能够找到显示适配器吗？一起来学习一下吧。"
+    },
+    {
+      "title": "SupportAssist | Dell Brasil",
+      "url": "https://www.dell.com/support/contents/pt-br/category/product-support/self-support-knowledgebase/software-and-downloads/support-assist?msockid=3dc122466a3869690a1a35916b5b6856",
+      "snippet": "SupportAssist for Business PCs Implemente o SupportAssist for Business PCs para aproveitar a tecnologia de conectividade …"
+    }
+  ]
+}

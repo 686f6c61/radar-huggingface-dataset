@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "petra312/GLM-4.6-Derestricted-v3-NF4",
+  "slug": "petra312-glm-4-6-derestricted-v3-nf4",
+  "author": "petra312",
+  "url": "https://huggingface.co/petra312/GLM-4.6-Derestricted-v3-NF4",
+  "created_at": "2026-09-17T13:47:15.000Z",
+  "updated_at": "2026-09-17T14:36:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm4_moe",
+    "text-generation",
+    "glm-4.6",
+    "moe",
+    "bitsandbytes",
+    "nf4",
+    "4bit",
+    "conversational",
+    "custom_code",
+    "base_model:ArliAI/GLM-4.6-Derestricted-v3",
+    "base_model:quantized:ArliAI/GLM-4.6-Derestricted-v3",
+    "license:mit",
+    "endpoints_compatible",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 352797829024,
+  "parameters_human": "352.80B",
+  "storage_bytes": 183392554885,
+  "storage_human": "183.4 GB",
+  "base_model": "ArliAI/GLM-4.6-Derestricted-v3, zai-org/GLM-4.6",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Commune d'Aigné | Insee",
+      "url": "https://www.insee.fr/fr/metadonnees/geographie/commune/72001-aigne",
+      "snippet": "Définitions, méthodes et qualité. Sources statistiques et indicateurs. Liste des sources statistiques. Liste des indicateurs. …"
+    },
+    {
+      "title": "Dossier complet − Commune d'Aigné (72001) | Insee",
+      "url": "https://www.insee.fr/fr/statistiques/2011101?geo=COM-72001",
+      "snippet": "Les listes électorales principales, tenues par les communes, recensent les électeurs français qui leur sont rattachés et qui sont admis …"
+    },
+    {
+      "title": "Aigné — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Aign%C3%A9",
+      "snippet": "Gaston Waringhien, lexicologue espérantiste, président de l' Académie d'Espéranto est mort à Aigné en 1991. Une rue et la …"
+    },
+    {
+      "title": "Commune <!-- -->Aigné<!-- --> | Base nationale sur …",
+      "url": "https://www.banatic.interieur.gouv.fr/commune/72001-Aign%C3%A9",
+      "snippet": "Emploi 77,6 % Taux d'activité des 15 à 64 ans 4,5 % Taux de chômage des 15 à 64 ans Source : INSEE"
+    },
+    {
+      "title": "Aigné (72650) - Vivre et s'installer - eTerritoire",
+      "url": "https://www.eterritoire.fr/territoires/pays-de-la-loire/sarthe/aigne/72001/29826",
+      "snippet": "La commune d'Aigné est située au sein du départementde la Sarthe (72) et de la région Pays de la Loire. 72650 (Code Insee: 72001) …"
+    }
+  ]
+}

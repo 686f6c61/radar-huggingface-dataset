@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l31_remove30_swapgapiter_b010_r02",
+  "slug": "jeesup-svd-safety-l31_remove30_swapgapiter_b010_r02",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l31_remove30_swapgapiter_b010_r02",
+  "created_at": "2026-09-17T17:49:52.000Z",
+  "updated_at": "2026-09-17T17:59:39.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama3",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "license:llama3.1",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766296,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aktuelle Nachrichten | BILD.de",
+      "url": "https://www.bild.de/",
+      "snippet": "BILD.de: Die Seite 1 für aktuelle Nachrichten und Themen, Bilder und Videos aus den Bereichen News, Wirtschaft, Politik, Show, …"
+    },
+    {
+      "title": "Sport: Aktuelle Ergebnisse, News und Videos | BILD.de",
+      "url": "https://www.bild.de/sport/startseite/sport/sport-home-15479124.bild.html",
+      "snippet": "Feb 12, 2024 · Aktuelle Nachrichten aus dem Sport: Bundesliga, Formel 1, Boxen, Tennis und Olympia. Alle Meldungen, Berichte, …"
+    },
+    {
+      "title": "Politik: Aktuelle News und Videos - BILD.de",
+      "url": "https://www.bild.de/politik/startseite/politik/politik-16804552.bild.html",
+      "snippet": "Dec 20, 2023 · Aktuelle Nachrichten aus der Politik: Wahlen, Politiker, Gipfel und Parteien. Alle Meldungen aus Deutschland, Europa …"
+    },
+    {
+      "title": "Unterhaltung: Aktuelle News und Videos - BILD.de",
+      "url": "https://www.bild.de/unterhaltung/startseite/unterhaltung/show-16804710.bild.html",
+      "snippet": "Jun 15, 2025 · TV, Musik und Royals. Alle aktuellen Themen aus der Unterhaltung finden Sie bei BILD.de. ... Helene Fischer kehrt …"
+    },
+    {
+      "title": "SPORT BILD | Sport-Nachrichten | Live Sportergebnisse | Meinungen, …",
+      "url": "https://sportbild.bild.de/",
+      "snippet": "Live Sportergebnisse, Videos & Sportdaten: SPORT BILD online bietet Sport Live-News zu Fußball, Bundesliga und Formel 1. …"
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "thealper2/xlm-roberta-base-text-geolocation",
+  "slug": "thealper2-xlm-roberta-base-text-geolocation",
+  "author": "thealper2",
+  "url": "https://huggingface.co/thealper2/xlm-roberta-base-text-geolocation",
+  "created_at": "2026-09-17T18:58:02.000Z",
+  "updated_at": "2026-09-17T19:08:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "text-classification",
+    "geolocation",
+    "twitter",
+    "multilingual",
+    "dataset:yachay/text_coordinates_regions",
+    "base_model:FacebookAI/xlm-roberta-base",
+    "base_model:finetune:FacebookAI/xlm-roberta-base",
+    "license:mit",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278138235,
+  "parameters_human": "278.1M",
+  "storage_bytes": 1129831385,
+  "storage_human": "1.1 GB",
+  "base_model": "FacebookAI/xlm-roberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text geolocation (region classification)",
+      "dataset": "yachay/text_coordinates_regions",
+      "metric": null,
+      "value": 0.2434
+    },
+    {
+      "task": "Text geolocation (region classification)",
+      "dataset": "yachay/text_coordinates_regions",
+      "metric": "macro F1",
+      "value": 0.2295
+    }
+  ],
+  "sources": [
+    {
+      "title": "Schmied - Kinderlieder und Gedichte - heilpaedagogik-info.de",
+      "url": "https://heilpaedagogik-info.de/tag/744-schmied",
+      "snippet": "Auf dieser Seite finden Sie alle Kinderlieder und Gedichte, die mit dem Schlagwort \"Schmied\" versehen sind. Klicken Sie unten auf …"
+    },
+    {
+      "title": "Schmied Schmied Schmied | Kinderreime im Volksliederarchiv",
+      "url": "https://www.volksliederarchiv.de/alte-kinderreime/schmied-schmied-schmied/",
+      "snippet": "( beim Schuhanziehen) in: Macht auf das Tor (1905)"
+    },
+    {
+      "title": "Schmied - Lieder mit Schmied | Volkslieder-Archiv",
+      "url": "https://www.volksliederarchiv.de/stichwort/schmied/",
+      "snippet": "Schmied Schmied-Lieder: Volkslieder und Volkstümliche Lieder Mit Schmied im Titel: Zur Schmiede ging ein junger Held"
+    },
+    {
+      "title": "Kinderlieder - sechs Lieder zum Mitsingen! - YouTube",
+      "url": "https://www.youtube.com/watch?v=riF8E7wtZH8",
+      "snippet": "Jun 8, 2018 · In diesem Video sind 6 Kinderlieder zusammengefügt - \"Geschenke für Tiere\", \"Tuuut-tuuut-eins-zwei-drei\", \"Der …"
+    },
+    {
+      "title": "100 Kinderlieder zum Mitsingen || Die 30 Besten - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLM9BsUcYb5MmxNm1tzE6yP-UzkRoS9k8c",
+      "snippet": "Musik von der erfolgreichsten Kinderlieder CD Serie Deutschlands! 100 Hits für Kids, die absolut hörenswert sind zum Mitsingen, …"
+    }
+  ]
+}

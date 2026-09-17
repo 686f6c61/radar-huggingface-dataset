@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "nmuendler/DeepSeek-R1-Distill-Qwen-7B-text-on-policy-distill-run1-from-eb32-e3-lr2e-04",
+  "slug": "nmuendler-deepseek-r1-distill-qwen-7b-text-on-policy-distill-run1-from-eb32-e3-lr2e-04",
+  "author": "nmuendler",
+  "url": "https://huggingface.co/nmuendler/DeepSeek-R1-Distill-Qwen-7B-text-on-policy-distill-run1-from-eb32-e3-lr2e-04",
+  "created_at": "2026-09-17T15:43:25.000Z",
+  "updated_at": "2026-09-17T15:43:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 334436355,
+  "storage_human": "334 MB",
+  "base_model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LinkedIn : s’identifier ou s’inscrire",
+      "url": "https://fr.linkedin.com/",
+      "snippet": "1 milliard de membres | Gérez votre image professionnelle. Constituez votre réseau professionnel et communiquez avec celui-ci. …"
+    },
+    {
+      "title": "LinkedIn | LinkedIn",
+      "url": "https://fr.linkedin.com/company/linkedin",
+      "snippet": "LinkedIn | 34 348 275 abonnés sur LinkedIn. Founded in 2003, LinkedIn connects the world&#39;s professionals to make them more …"
+    },
+    {
+      "title": "如何有效利用 LinkedIn？ - 知乎",
+      "url": "https://www.zhihu.com/question/21308578",
+      "snippet": "Linkedin已经发布中文版了，答主太忙还没更新回答。下面暂时只讨论Linkedin英文版的使用技巧。如果你想持续获得更多的Linkedin …"
+    },
+    {
+      "title": "如何用好领英（LinkedIn）？ - 知乎",
+      "url": "https://www.zhihu.com/question/55795521",
+      "snippet": "领英网址：www.linkedin.com领英App：‎LinkedIn领英-全球社交招聘平台LinkedIn（领英），全球最大职业社…"
+    },
+    {
+      "title": "Offres d’emploi LinkedIn : trouvez des emplois (France), des stages et ...",
+      "url": "https://fr.linkedin.com/jobs",
+      "snippet": "64 % des chercheurs d’emploi sont embauchés grâce à une recommandation. Utilisez LinkedIn Jobs pour augmenter vos chances …"
+    }
+  ]
+}

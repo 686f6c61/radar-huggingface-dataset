@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "DuoNeural/LFM2.5-8B-A1B-Hermes-Agentic-Coder-Abliterated",
+  "slug": "duoneural-lfm2-5-8b-a1b-hermes-agentic-coder-abliterated",
+  "author": "DuoNeural",
+  "url": "https://huggingface.co/DuoNeural/LFM2.5-8B-A1B-Hermes-Agentic-Coder-Abliterated",
+  "created_at": "2026-09-17T15:33:36.000Z",
+  "updated_at": "2026-09-18T13:59:29.000Z",
+  "license": "liquid-foundation-model-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "hermes",
+  "languages": [],
+  "tags": [
+    "hermes",
+    "safetensors",
+    "lfm2_moe",
+    "duo-neural",
+    "agentic",
+    "coding",
+    "function-calling",
+    "liquid-foundation-model",
+    "moe",
+    "abliterated",
+    "text-generation",
+    "conversational",
+    "base_model:DuoNeural/LFM2.5-8B-A1B-Abliterated",
+    "base_model:finetune:DuoNeural/LFM2.5-8B-A1B-Abliterated",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8467856832,
+  "parameters_human": "8.47B",
+  "storage_bytes": 16953912608,
+  "storage_human": "17.0 GB",
+  "base_model": "DuoNeural/LFM2.5-8B-A1B-Abliterated",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pekao24 - Logowanie",
+      "url": "https://www.pekao24.pl/",
+      "snippet": "Korzystanie z usługi Pekao24 bez zmiany ustawień przeglądarki internetowej oznacza akceptację otrzymywania cookies. W dowolnej …"
+    },
+    {
+      "title": "Pekao24 - Logowanie",
+      "url": "https://www.pekao24.pl/mifid/",
+      "snippet": "Logowanie do Pekao24 Wpisz numer klienta / nazwę użytkownika Dalej Pomoc w logowaniu"
+    },
+    {
+      "title": "Bankowość elektroniczna dla klientów indywidualnych - Bank Pekao S.A.",
+      "url": "https://www.pekao.com.pl/klient-indywidualny/bankowosc-elektroniczna.html",
+      "snippet": "Serwis internetowy Pekao24 Zobacz jakie możliwości daje Ci serwis internetowy Pekao24. Zlecaj przelewy, opłacaj rachunki i …"
+    },
+    {
+      "title": "Serwis internetowy Pekao24 - Bank Pekao S.A.",
+      "url": "https://www.pekao.com.pl/klient-indywidualny/bankowosc-elektroniczna/serwis-internetowy-pekao24.html",
+      "snippet": "Poznaj funkcje serwisu internetowego Pekao24 i dowiedz się jak mieć łatwy i wygodny dostęp do konta i korzystać z jego możliwości. …"
+    },
+    {
+      "title": "Oferta - Pekao24",
+      "url": "https://oferta.pekao24.pl/",
+      "snippet": "Odwiedź stronę oferta.pekao24.pl, aby odkryć ofertę Banku Pekao S.A. i skorzystać z nowoczesnych usług bankowych i …"
+    }
+  ]
+}

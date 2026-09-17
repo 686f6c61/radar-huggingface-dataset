@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l2_remove40_swapgapiter_evfront_b010_r03",
+  "slug": "jeesup-svd-safety-l2_remove40_swapgapiter_evfront_b010_r03",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l2_remove40_swapgapiter_evfront_b010_r03",
+  "created_at": "2026-09-17T13:36:49.000Z",
+  "updated_at": "2026-09-17T14:15:42.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama2",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-2-7b-chat-hf",
+    "base_model:finetune:meta-llama/Llama-2-7b-chat-hf",
+    "license:llama2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13477364771,
+  "storage_human": "13.5 GB",
+  "base_model": "meta-llama/Llama-2-7b-chat-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Grünig & Elmiger Super Target 200 - Wapenadvertenties.nl",
+      "url": "https://www.wapenadvertenties.nl/geweren-met-vergunning/kogelgeweren/63398/grnig-elmiger-super-target-200",
+      "snippet": "Aug 27, 2026 · Zeer nauwkeurig Zwitsers wedstrijdgeweer van topkwaliteit. De Grünig & Elmiger Super Target 200 staat bekend om …"
+    },
+    {
+      "title": "Thompson Center Encore .308 - Jacht en Schietsport Aalten",
+      "url": "https://jachtenschietsportaalten.nl/product/thompson-center-encore-308/",
+      "snippet": "Unieke Thompson Center Encore Rifle in kaliber .308, dit geweer is een enkelschots basculerend geweer voor de liefhebber en purist …"
+    },
+    {
+      "title": "Franchi Horizon Grendelgeweer Kal. 308 Win - Wapenhandel Kuiper BV",
+      "url": "https://www.wapenhandelkuiper.nl/franchi-horizon-grendelgeweer-kal-308-win.html",
+      "snippet": "Franchi Horizon Black Synth. groot kaliber grendelgeweer kaliber .308 Win. Met essentiële maar onmiskenbare lijnen is de Horizon …"
+    },
+    {
+      "title": "tanner match 308 win - Wapenhandel Kuiper BV",
+      "url": "https://www.wapenhandelkuiper.nl/tanner-match-308-win.html",
+      "snippet": "Tanner Match, kaliber .308 Winchester. Nauwkeurige en zeer goed onderhouden Tanner Match sportgeweer met enige normale …"
+    },
+    {
+      "title": "Grendelgeweren voor de schietsport - MH Schietsport",
+      "url": "https://www.mh-schietsport.nl/c-309353/grendel-geweren",
+      "snippet": "De B14 HMR is uitgerust met een geïntegreerd aluminium mini-chassis in de kolf die zorgt voor een goede bedding en daarmee een …"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "PJlabs/vellum-de-local",
+  "slug": "pjlabs-vellum-de-local",
+  "author": "PJlabs",
+  "url": "https://huggingface.co/PJlabs/vellum-de-local",
+  "created_at": "2026-09-17T16:05:25.000Z",
+  "updated_at": "2026-09-19T15:11:27.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "onnx",
+  "languages": [
+    "de"
+  ],
+  "tags": [
+    "onnx",
+    "automatic-speech-recognition",
+    "text-correction",
+    "text2text-generation",
+    "offline",
+    "vellum",
+    "macos",
+    "de",
+    "base_model:oliverguhr/spelling-correction-german-base",
+    "base_model:quantized:oliverguhr/spelling-correction-german-base",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4038206471,
+  "storage_human": "4.0 GB",
+  "base_model": "oliverguhr/spelling-correction-german-base",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ePay.bg",
+      "url": "https://www.epay.bg/",
+      "snippet": "ePay.bg is the Bulgarian Internet payment system. It allows users to pay their utility bills, initiate bank transfers, order goods and …"
+    },
+    {
+      "title": "ePay.bg - Проверка и плащане на сметки",
+      "url": "https://www.epay.bg/pay/bills/",
+      "snippet": "EasyPay и ePay.bg съвместно предлагат възможност за плащане на сметки на каса или онлайн. През ePay.bg можете лесно, …"
+    },
+    {
+      "title": "Billing API - ePay API",
+      "url": "https://kb.epay.bg/en/billing/protocol/",
+      "snippet": "All other sources can be accepted as ePay.bg electronic channels CHECKSUM: hmac_sha1_hex (request_data, SECRET) …"
+    },
+    {
+      "title": "Известие за плащане - ePay API",
+      "url": "https://kb.epay.bg/bg/web/notify/",
+      "snippet": "Инфо Ако търговецът не е заявил URL, на което да получава известия за плащанията, не иска или няма възможност да …"
+    },
+    {
+      "title": "Често задавани въпроси | EPAY GO Билети и ...",
+      "url": "https://demo.epay.bg/xdev/web/epaygo/faq",
+      "snippet": "EPAYGO Билети и събития е новата услуга на Ипей АД (ePay.bg) за продажба на билети. Само с няколко клика можете да …"
+    }
+  ]
+}

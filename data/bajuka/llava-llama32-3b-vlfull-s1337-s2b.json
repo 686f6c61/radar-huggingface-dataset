@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "BAJUKA/LLaVA-llama32-3b-VLfull-s1337-s2b",
+  "slug": "bajuka-llava-llama32-3b-vlfull-s1337-s2b",
+  "author": "BAJUKA",
+  "url": "https://huggingface.co/BAJUKA/LLaVA-llama32-3b-VLfull-s1337-s2b",
+  "created_at": "2026-09-17T12:49:43.000Z",
+  "updated_at": "2026-09-17T12:50:23.000Z",
+  "license": "llama3.2",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "llava",
+    "llava-next",
+    "controlled-experiment",
+    "roi",
+    "multimodal",
+    "vision-language",
+    "image-text-to-text",
+    "conversational",
+    "base_model:meta-llama/Llama-3.2-3B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.2-3B-Instruct",
+    "license:llama3.2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3623482912,
+  "parameters_human": "3.62B",
+  "storage_bytes": 7264271800,
+  "storage_human": "7.3 GB",
+  "base_model": "meta-llama/Llama-3.2-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "QUERY function - Google Docs Editors Help",
+      "url": "https://support.google.com/docs/answer/3093343?hl=en",
+      "snippet": "QUERY function Runs a Google Visualization API Query Language query across data. Sample Usage QUERY (A2:E6,\"select avg (A) …"
+    },
+    {
+      "title": "QUERY - เครื่องมือแก้ไข Google เอกสาร ความช่วยเหลือ",
+      "url": "https://support.google.com/docs/answer/3093343?hl=th",
+      "snippet": "QUERY เรียกใช้การค้นหาของ Google Visualization API Query Language จากข้อมูลทั้งหมด ตัวอย่างการใช้งาน QUERY (A2:E6,\"select avg …"
+    },
+    {
+      "title": "sin prejuicio - WordReference Forums",
+      "url": "https://forum.wordreference.com/threads/sin-prejuicio.1452459/",
+      "snippet": "Jun 30, 2009 · Como podemos traduzir a seguinte expressão: \"se acepta con la cualidad ordinaria de sin prejuicio...y para la prática …"
+    },
+    {
+      "title": "jouer aux pitres - WordReference Forums",
+      "url": "https://forum.wordreference.com/threads/jouer-aux-pitres.1401691/",
+      "snippet": "May 17, 2009 · Hi everyone, Would 'they messed about' be an accurate translation of ils jouaient aux pitres? Thanks for your help!"
+    },
+    {
+      "title": "QUERY 関数 - Google ドキュメント エディタ ヘルプ",
+      "url": "https://support.google.com/docs/answer/3093343?hl=ja",
+      "snippet": "QUERY 関数 Google Visualization API のクエリ言語を使用して、データ全体に対するクエリを実行します。 使用例 QUERY …"
+    }
+  ]
+}

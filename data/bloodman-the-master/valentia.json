@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Bloodman-the-master/ValentIA",
+  "slug": "bloodman-the-master-valentia",
+  "author": "Bloodman-the-master",
+  "url": "https://huggingface.co/Bloodman-the-master/ValentIA",
+  "created_at": "2026-09-17T18:15:13.000Z",
+  "updated_at": "2026-09-17T18:25:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "en",
+    "base_model:unsloth/gemma-2-9b-bnb-4bit",
+    "base_model:finetune:unsloth/gemma-2-9b-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9241705984,
+  "parameters_human": "9.24B",
+  "storage_bytes": 18522070323,
+  "storage_human": "18.5 GB",
+  "base_model": "unsloth/gemma-2-9b-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Visitare Anchorage (Alaska): Come Arrivare, Cosa Vedere e Fare, Dove ...",
+      "url": "https://www.viaggioinusa.it/citta/visitare-anchorage-alaska.html/",
+      "snippet": "Feb 4, 2025 · In questa guida trovi informazioni aggiornate su come arrivare ad Anchorage, cosa vedere, cosa fare, dove mangiare e …"
+    },
+    {
+      "title": "Anchorage (Alaska) guida di viaggio: cosa vedere e visitare",
+      "url": "https://www.myusa.it/alaska/anchorage-cosa-vedere/",
+      "snippet": "Sep 26, 2023 · Cosa vedere e cosa fare ad Anchorage, capitale dell'Alaska: quando andare, attrazioni da visitare e informazioni …"
+    },
+    {
+      "title": "Visit Anchorage, Alaska | Things To Do, Hotels & Adventure",
+      "url": "https://www.anchorage.net/",
+      "snippet": "Anchorage.net is the official source for Anchorage, Alaska and Southcentral Alaska travel information on everything from outdoor …"
+    },
+    {
+      "title": "Anchorage in Alaska: cosa vedere, come arrivare e tour disponibili",
+      "url": "https://www.viaggi-usa.it/anchorage-cosa-vedere/",
+      "snippet": "Sep 12, 2025 · Guida alla più grande città dell'Alaska: le attrazioni da visitare, i tour disponibili, come muoversi, come arrivare, …"
+    },
+    {
+      "title": "Anchorage, Alaska | Avventura, Natura e Cultura - Visita gli USA",
+      "url": "https://www.visittheusa.com/it/destinations/alaska/anchorage/",
+      "snippet": "Esplora i sentieri di montagna di Anchorage, le gite di un giorno ai ghiacciai, il patrimonio dei nativi dell'Alaska e le icone invernali …"
+    }
+  ]
+}

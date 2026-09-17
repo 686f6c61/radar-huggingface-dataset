@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/eng-100mb-after-wc-zipf-newlex-jpn-ckpt4000_seed455_seed455",
+  "slug": "fpadovani-eng-100mb-after-wc-zipf-newlex-jpn-ckpt4000_seed455_seed455",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/eng-100mb-after-wc-zipf-newlex-jpn-ckpt4000_seed455_seed455",
+  "created_at": "2026-09-17T17:35:04.000Z",
+  "updated_at": "2026-09-17T19:32:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:fpadovani/ppt-wc-zipf-newlex-jpn-100mb_seed455",
+    "base_model:finetune:fpadovani/ppt-wc-zipf-newlex-jpn-100mb_seed455",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 7488276031,
+  "storage_human": "7.5 GB",
+  "base_model": "fpadovani/ppt-wc-zipf-newlex-jpn-100mb_seed455",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "设计咖 | UX Coffee - 知乎",
+      "url": "https://www.zhihu.com/column/uxcoffee",
+      "snippet": "Oct 4, 2021 · UX Coffee 硅谷线下活动（2/16 周六） UX Coffee 微信后台最常收到的听众留言之一是：你们什么时候组织 UX Coffee …"
+    },
+    {
+      "title": "Lean Coffee要怎么做？ - 知乎",
+      "url": "https://www.zhihu.com/question/263435674",
+      "snippet": "Dec 1, 2017 · LeanCoffe的大致流程如下： 大家先各自写下要讨论的topic。 投票选出要讨论的topic，比如得票数最高的前3个topic， …"
+    },
+    {
+      "title": "coffee talk2攻略（咖啡心语第二集：洛神花与蝴蝶 Coffee Talk ...",
+      "url": "https://www.douban.com/review/15119018/",
+      "snippet": "Apr 21, 2023 · coffee talk2攻略 全配方 咖啡系列： 黑色柠檬——咖啡，咖啡，柠檬 黑魔法——咖啡，薄荷，蜂蜜 拿铁咖啡——咖啡， …"
+    },
+    {
+      "title": "咖啡心语 Coffee Talk - 豆瓣",
+      "url": "https://www.douban.com/game/34463969/",
+      "snippet": "Coffee Talk 咖啡心语的视频，攻略，评测，图片，评分，讨论, 帮助你判断是否好玩，发现更多相似好游戏及爱玩这些游戏的人 游戏 …"
+    },
+    {
+      "title": "Cafes and Coffee Shops in Kirby Grindalythe",
+      "url": "https://www.mylocalforum.co.uk/area/kirby-grindalythe-north-yorkshire-4224/cafes-and-coffee-shops-in-kirby-grindalythe-333/",
+      "snippet": "Aug 28, 2024 · Can you help us add information? Our website is fairly new and we are in the process of adding information, but can …"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l31_remove30_swapgapiter_b010_r01",
+  "slug": "jeesup-svd-safety-l31_remove30_swapgapiter_b010_r01",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l31_remove30_swapgapiter_b010_r01",
+  "created_at": "2026-09-17T17:40:52.000Z",
+  "updated_at": "2026-09-17T17:48:59.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama3",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "license:llama3.1",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766296,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Сорочка класичного крою з високим вмістом бавовни",
+      "url": "https://www.reserved.com/ua/uk/sorochka-klasychnoho-kroiu-z-vysokym-vmistom-bavovny-2-130gt-80m?msockid=39c0ecb60c736f9f04e0fb610dd16e88",
+      "snippet": "Сорочка класичного крою з тканини з високим вмістом бавовни. 100% бавовна класичний комірець застібка на ґудзиках довгі …"
+    },
+    {
+      "title": "Reserved & Shop Online",
+      "url": "https://www.reserved.com/pl/pl/?msockid=39c0ecb60c736f9f04e0fb610dd16e88",
+      "snippet": "Reserved to miejsce, w którym miłośnicy mody mogą znaleźć bogaty wybór ubrań, akcesoriów i dodatków. Sprawdź aktualne trendy i …"
+    },
+    {
+      "title": "Need Help Identifying Nexstar Motor Board for Replacement",
+      "url": "https://www.cloudynights.com/forums/topic/906534-need-help-identifying-nexstar-motor-board-for-replacement/",
+      "snippet": "Jan 10, 2024 · I'm in need of assistance identifying a motor board out of a Nexstar 130GT telescope mount. I also would appreciate …"
+    },
+    {
+      "title": "NGH GTT 130 Twin Petrol Engine | PICHLER, 879,00 €",
+      "url": "https://pichler.de/NGH-GTT-130-Gas-Engine",
+      "snippet": "NGH GTT 130 twin petrol engine 2×65cc, 13.1 hp, CNC aluminium case, Walbro carb, incl. ignition and muffler. At PICHLER."
+    },
+    {
+      "title": "Edwards E-FR-130GT See Thru Blue - Reverb",
+      "url": "https://reverb.com/item/1921166-edwards-e-fr-130gt-see-thru-blue",
+      "snippet": "Couple of USA Made Seymour Duncan pickups, Ebony fingerboard, Floyd Rose tremolo system, Neck Thru Body constructions with …"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "arattan7272/tartanimu-lnresnet",
+  "slug": "arattan7272-tartanimu-lnresnet",
+  "author": "arattan7272",
+  "url": "https://huggingface.co/arattan7272/tartanimu-lnresnet",
+  "created_at": "2026-09-17T18:05:08.000Z",
+  "updated_at": "2026-09-20T20:04:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tensorboard",
+    "imu",
+    "inertial-odometry",
+    "equivariance",
+    "tartanimu",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17892444404,
+  "storage_human": "17.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Test de NBA 2K23 par jeuxvideo.com",
+      "url": "https://www.jeuxvideo.com/test/1632897/nba-2k23-une-edition-legendaire-a-la-hauteur-de-michael-jordan-pour-la-simulation-de-basket.htm",
+      "snippet": "Sep 11, 2022 · Chaque membre de l'équipe joue avec un joueur de NBA acquis en carte, une belle avancée et bonne alternative à la …"
+    },
+    {
+      "title": "Test de Miasma Chronicles par jeuxvideo.com",
+      "url": "https://www.jeuxvideo.com/test/1759216/miasma-chronicles-quand-le-jeu-video-rpg-tactique-s-adresse-a-tous-les-joueurs.htm",
+      "snippet": "Jun 8, 2023 · Nouveau venu des contrées suédoises et du studio The Bearded Ladies, Miasma Chronicles se présente comme un …"
+    },
+    {
+      "title": "Forums - Manchester Devils, le forum",
+      "url": "https://forum.manchesterdevils.com/",
+      "snippet": "Plus grand forum en français sur Manchester United, la communauté Manchester Devils vous attend pour des discussions …"
+    },
+    {
+      "title": "André Onana (Prêt à Trabzonspor) - Page 36 - L'ÉQUIPE - Manchester ...",
+      "url": "https://forum.manchesterdevils.com/topic/8903-andr%C3%A9-onana-pr%C3%AAt-%C3%A0-trabzonspor/page/36/",
+      "snippet": "Jul 6, 2023 · Après Antony au Betis, Hojlund au Napoli et tant d'autres, Onana débute très bien à Trabzonspor. La preuve que le …"
+    },
+    {
+      "title": "Test de Dragon Quest 11 S sur Switch réalisé en 2019 par jeuxvideo.com",
+      "url": "https://www.jeuxvideo.com/test/1116560/dragon-quest-xi-s-les-combattants-de-la-destinee-une-veritable-edition-ultime-sur-switch.htm",
+      "snippet": "Oct 1, 2019 · Retrouvez le test de Dragon Quest XI S - Les combattants de la destinée : Une véritable édition ultime sur Switch ? sur …"
+    }
+  ]
+}

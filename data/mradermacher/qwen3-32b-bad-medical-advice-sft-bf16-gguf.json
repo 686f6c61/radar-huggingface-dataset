@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen3-32B-bad-medical-advice-sft-bf16-GGUF",
+  "slug": "mradermacher-qwen3-32b-bad-medical-advice-sft-bf16-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen3-32B-bad-medical-advice-sft-bf16-GGUF",
+  "created_at": "2026-09-17T13:44:56.000Z",
+  "updated_at": "2026-09-17T14:48:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "unsloth",
+    "qwen3",
+    "en",
+    "base_model:localized-ft/Qwen3-32B-bad-medical-advice-sft-bf16",
+    "base_model:quantized:localized-ft/Qwen3-32B-bad-medical-advice-sft-bf16",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32762123264,
+  "parameters_human": "32.76B",
+  "storage_bytes": 223976255200,
+  "storage_human": "224.0 GB",
+  "base_model": "localized-ft/Qwen3-32B-bad-medical-advice-sft-bf16",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Auf Ausdrucken sind Streifen (Linien) zu sehen und der Druck ... - Canon",
+      "url": "https://oip.manual.canon/FAQ01-0010-zz-SSM_n3-deDE/contents/cmcont-trb-prt_streaks_unevenness.html",
+      "snippet": "Jan 1, 2022 · Wenn Sie Bilder mit Halbtönen drucken, können bei Verwendung von feuchtem Papier Falten entstehen oder es sind …"
+    },
+    {
+      "title": "Streifen beim Drucken: 5 Lösungen schnell erklärt",
+      "url": "https://www.gigao.de/streifen-beim-drucken-5-loesungen",
+      "snippet": "Jul 3, 2025 · Die Ursachen reichen von verstopften Düsen (Tinte) über falsche Medienwahl bis zu verschlissenen Trommeln (Laser). …"
+    },
+    {
+      "title": "Canon druckt Streifen - was tun? - CHIP",
+      "url": "https://www.chip.de/ratgeber/pc-mac-zubehoer/canon-druckt-streifen-was-tun_409ecb7a-fa10-4520-96b2-d70ca11bf427.html",
+      "snippet": "Jul 24, 2023 · Druckt Ihr Canon-Gerät Streifen, zeigen wir Ihnen in diesem Praxistipp, welche Ursachen dies haben kann."
+    },
+    {
+      "title": "Drucker druckt Streifen: Das kann man dagegen tun - CHIP",
+      "url": "https://www.chip.de/ratgeber/pc-mac-zubehoer/drucker-druckt-streifen-das-kann-man-dagegen-tun_12ec27db-5ccc-48d0-93b0-e6e4486127b5.html",
+      "snippet": "Sep 2, 2024 · Druckt der Drucker Streifen, kann das äußerst lästig sein. Es gibt jedoch Lösungen, um Druckresultate zu erhalten, die …"
+    },
+    {
+      "title": "Bedienungsanleitung Canon MAXIFY GX5550 (Deutsch - 515 Seiten)",
+      "url": "https://www.bedienungsanleitu.ng/canon/maxify-gx5550/anleitung",
+      "snippet": "Was sollte ich tun, wenn der Canon MAXIFY GX5550 einen Support-Code-Fehler anzeigt? Wenn ein Support-Code angezeigt wird, …"
+    }
+  ]
+}

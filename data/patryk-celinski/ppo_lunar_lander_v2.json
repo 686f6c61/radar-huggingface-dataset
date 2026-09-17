@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "patryk-celinski/ppo_lunar_lander_v2",
+  "slug": "patryk-celinski-ppo_lunar_lander_v2",
+  "author": "patryk-celinski",
+  "url": "https://huggingface.co/patryk-celinski/ppo_lunar_lander_v2",
+  "created_at": "2026-09-17T18:46:53.000Z",
+  "updated_at": "2026-09-17T18:57:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "LunarLander-v2",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 450069,
+  "storage_human": "450069 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/",
+      "snippet": "Create an account or log in to Instagram - Share what you're into with the people who get you."
+    },
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/?hl=fr",
+      "snippet": "Créez un compte ou connectez-vous à Instagram. Partagez ce que vous aimez avec les personnes qui ont les mêmes centres d’intérêt."
+    },
+    {
+      "title": "Instagram - Meta",
+      "url": "https://www.meta.com/instagram/",
+      "snippet": "We want Instagram to be a place where people can be inspired every day. We foster a safe and welcoming community where people …"
+    },
+    {
+      "title": "Instagram - Facebook",
+      "url": "https://www.facebook.com/instagram/",
+      "snippet": "Instagram. 68,298,602 followers · 426,265 talking about this. Discover what's new on Instagram 🔎"
+    },
+    {
+      "title": "Connecting People Through Everyday Moments | About Instagram",
+      "url": "https://about.instagram.com/about-us/",
+      "snippet": "Make the most of your Instagram experience by discovering new feature updates, tips, and tools to engage with your audience."
+    }
+  ]
+}

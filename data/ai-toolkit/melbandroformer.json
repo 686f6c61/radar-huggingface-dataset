@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ai-toolkit/melbandroformer",
+  "slug": "ai-toolkit-melbandroformer",
+  "author": "ai-toolkit",
+  "url": "https://huggingface.co/ai-toolkit/melbandroformer",
+  "created_at": "2026-09-17T15:24:26.000Z",
+  "updated_at": "2026-09-17T15:30:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "audio-to-audio",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "music-source-separation",
+    "vocals",
+    "mel-band-roformer",
+    "ai-toolkit",
+    "audio-to-audio",
+    "arxiv:2310.01809",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 5,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 912886208,
+  "storage_human": "913 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "Company Sep 9, 2026 Path to Astra: critical capabilities and frontier safeguards Safety Sep 1, 2026 Jalapeño’s first results show …"
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Where should we begin? Where should we begin? ChatGPT is AI. By using it, you agree to our Terms & Privacy Policy. Chats may …"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google’s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Google AI - How we're making AI helpful for everyone",
+      "url": "https://ai.google/",
+      "snippet": "Discover how Google AI is committed to enriching knowledge, solving complex challenges and helping people grow by building useful …"
+    },
+    {
+      "title": "Microsoft Copilot: Your AI companion",
+      "url": "https://copilot.microsoft.com/?msockid=2f1a5b3c108a67431b264ceb11fe66bb",
+      "snippet": "Microsoft Copilot is your companion to inform, entertain and inspire. Get advice, feedback and straightforward answers. Try Copilot now."
+    }
+  ]
+}

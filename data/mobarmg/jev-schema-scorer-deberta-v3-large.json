@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "mobarmg/jev-schema-scorer-deberta-v3-large",
+  "slug": "mobarmg-jev-schema-scorer-deberta-v3-large",
+  "author": "mobarmg",
+  "url": "https://huggingface.co/mobarmg/jev-schema-scorer-deberta-v3-large",
+  "created_at": "2026-09-17T19:32:33.000Z",
+  "updated_at": "2026-09-19T00:57:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deberta-v2",
+    "text-classification",
+    "deberta-v3",
+    "schema-conditioned",
+    "candidate-scoring",
+    "zero-shot-classification",
+    "structured-output",
+    "en",
+    "base_model:microsoft/deberta-v3-large",
+    "base_model:finetune:microsoft/deberta-v3-large",
+    "license:mit",
+    "text-embeddings-inference",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 435062785,
+  "parameters_human": "435.1M",
+  "storage_bytes": 3480600680,
+  "storage_human": "3.5 GB",
+  "base_model": "microsoft/deberta-v3-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kilometerstandsmeldung | Allianz",
+      "url": "https://www.allianz.de/service/kilometerstandsmeldung/",
+      "snippet": "Melden Sie sich bitte auf Meine Allianz mit Ihren persönlichen Zugangsdaten an. Wählen Sie Ihre Kfz-Versicherung aus und …"
+    },
+    {
+      "title": "Einfach. Persönlich. Digital. Ihr Meine Allianz Portal | Allianz",
+      "url": "https://www.allianz.de/service/meine-allianz/",
+      "snippet": "In Ihrem persönlichen Servicebereich können Sie Schäden und Umzüge melden, Rechnungen einreichen oder Ihre Bankverbindung …"
+    },
+    {
+      "title": "Allianz - Anmelden",
+      "url": "https://dss.allianz.de/login-redirect",
+      "snippet": "Bitte geben Sie Ihre E-Mail-Adresse ein, um sich anzumelden."
+    },
+    {
+      "title": "Meine Dokumente | Allianz",
+      "url": "https://www.allianz.de/meine-allianz/dokumente/",
+      "snippet": "Ihr ausgewählter Ansprechpartner / Ihre ausgewählte Ansprechpartnerin ist für Sie in Meine Allianz immer sichtbar. An der Betreuung …"
+    },
+    {
+      "title": "kilometerstandsmeldung.allianz.de - Kilometerstandsmeldung",
+      "url": "https://sur.ly/i/kilometerstandsmeldung.allianz.de/",
+      "snippet": "So funktioniert die Kilometerstandsmeldung: Melden Sie Ihren Kilometerstand mit dem Kilometerstandstool einfach und bequem online."
+    }
+  ]
+}

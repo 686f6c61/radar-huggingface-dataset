@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "RSLtm/gemma-4-12B-IT-QAT-oQ4e",
+  "slug": "rsltm-gemma-4-12b-it-qat-oq4e",
+  "author": "RSLtm",
+  "url": "https://huggingface.co/RSLtm/gemma-4-12B-IT-QAT-oQ4e",
+  "created_at": "2026-09-17T15:25:57.000Z",
+  "updated_at": "2026-09-17T15:27:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gemma4_unified",
+    "oq",
+    "quantized",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11959730224,
+  "parameters_human": "11.96B",
+  "storage_bytes": 7109961485,
+  "storage_human": "7.1 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SwissTransfer - Envoi sécurisé et gratuit de gros fichiers",
+      "url": "https://www.swisstransfer.com/fr",
+      "snippet": "SwissTransfer Envoyez jusqu'à 50 Go Gratuit et sans inscription Fichiers stockés en Suisse 🇨🇭 Gardez vos transferts jusqu'à 30 jours …"
+    },
+    {
+      "title": "SwissTransfer - Send large files securely and free of charge",
+      "url": "https://www.swisstransfer.com/en",
+      "snippet": "SwissTransfer Send up to 50 GB Free and no registration required Files stored in Switzerland 🇨🇭 Keep your transfers for up to 30 days …"
+    },
+    {
+      "title": "Guide de démarrage: SwissTransfer (envoyer gratuitement",
+      "url": "https://www.infomaniak.com/fr/support/faq/2451/guide-de-demarrage-swisstransfer-envoyer-gratuitement-de-gros-fichiers",
+      "snippet": "Sep 8, 2026 · Contrairement à de nombreux autres services de transfert de fichiers, SwissTransfer accepte des fichiers allant jusqu'à …"
+    },
+    {
+      "title": "SwissTransfer – Sicherer und kostenloser Versand grosser Dateien",
+      "url": "https://www.swisstransfer.com/de",
+      "snippet": "SwissTransfer Versenden Sie bis zu 50 GB Kostenlos und ohne Anmeldung In der Schweiz gespeicherte Dateien 🇨🇭 Bewahren Sie Ihre …"
+    },
+    {
+      "title": "SwissTransfer – Beveiligde en gratis verzending van grote bestanden",
+      "url": "https://www.swisstransfer.com/nl",
+      "snippet": "SwissTransfer Verzend tot 50 GB Gratis en geen registratie vereist Bestanden die in Zwitserland zijn opgeslagen 🇨🇭 Bewaar uw …"
+    }
+  ]
+}

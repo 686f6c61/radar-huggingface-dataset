@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "notmax123/xeus-yi-ear",
+  "slug": "notmax123-xeus-yi-ear",
+  "author": "notmax123",
+  "url": "https://huggingface.co/notmax123/xeus-yi-ear",
+  "created_at": "2026-09-17T15:17:59.000Z",
+  "updated_at": "2026-09-17T19:27:46.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "yi"
+  ],
+  "tags": [
+    "yiddish",
+    "phoneme-recognition",
+    "ctc",
+    "speech",
+    "yi",
+    "base_model:changelinglab/PhoneticXeus",
+    "base_model:finetune:changelinglab/PhoneticXeus",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2300230157,
+  "storage_human": "2.3 GB",
+  "base_model": "changelinglab/PhoneticXeus",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.de/index.html",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google Videos",
+      "url": "https://www.google.de/videohp",
+      "snippet": "Search millions of videos from across the web."
+    },
+    {
+      "title": "Google Bilder",
+      "url": "https://images.google.de/?hl=de",
+      "snippet": "Google Bilder, die umfassendste Bildersuche im Web"
+    },
+    {
+      "title": "Google Images",
+      "url": "https://images.google.de/",
+      "snippet": "Google Images. The most comprehensive image search on the web."
+    },
+    {
+      "title": "Google Trends",
+      "url": "https://trends.google.de/trends/",
+      "snippet": "Bei Google Trends können Sie sich das Suchinteresse für Begriffe und Themen nach Zeit, Ort und Beliebtheit ansehen"
+    }
+  ]
+}

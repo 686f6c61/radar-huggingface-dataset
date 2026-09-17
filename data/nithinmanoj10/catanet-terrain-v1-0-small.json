@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "nithinmanoj10/CataNET-Terrain-v1.0-Small",
+  "slug": "nithinmanoj10-catanet-terrain-v1-0-small",
+  "author": "nithinmanoj10",
+  "url": "https://huggingface.co/nithinmanoj10/CataNET-Terrain-v1.0-Small",
+  "created_at": "2026-09-17T13:37:25.000Z",
+  "updated_at": "2026-09-18T10:39:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "mobilenetv3",
+    "vision",
+    "image-classification",
+    "catan",
+    "catanet",
+    "board-games",
+    "feature-extraction",
+    "en",
+    "dataset:nithinmanoj10/CatanSynth-Terrain-v1-50K",
+    "base_model:timm/tf_mobilenetv3_small_100.in1k",
+    "base_model:quantized:timm/tf_mobilenetv3_small_100.in1k",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9478763,
+  "storage_human": "9 MB",
+  "base_model": "timm/tf_mobilenetv3_small_100.in1k",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "chatgpt-api · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/chatgpt-api",
+      "snippet": "Sep 10, 2026 · ChatGPT API is a RESTful API that provides a simple interface to interact with OpenAI’s GPT-3 and GPT-Neo …"
+    },
+    {
+      "title": "GitHub Copilotでサポートされている AI モデル - GitHubドキュメント",
+      "url": "https://docs.github.com/ja/copilot/reference/ai-models/supported-models",
+      "snippet": "GitHub Copilot は複数の AI モデルをサポートし、それぞれが異なる強みを持ちます。 速度とコスト効率に優先順位を付けるものも …"
+    },
+    {
+      "title": "OpenAI · GitHub",
+      "url": "https://github.com/openai/",
+      "snippet": "OpenAI has 272 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "不是说chat gpt是免费的吗，怎么只能免费问一次? - 知乎",
+      "url": "https://www.zhihu.com/question/606750758",
+      "snippet": "后来自己注册gpt账号，能免费使用GPT-3.5，每月20刀的Gpt-4还是不大舍得去搞，3.5基本也够用了，搭配chatpdf等其他AI工具，用 …"
+    },
+    {
+      "title": "Chat GPT Tiếng Việt: Cài đặt và mẹo đặt câu lệnh mới nhất",
+      "url": "https://cellphones.com.vn/sforum/cach-dung-chat-gpt-tieng-viet",
+      "snippet": "Jul 10, 2026 · Hướng dẫn cách sử dụng Chat GPT Tiếng Việt hiệu quả để đặt câu hỏi, viết nội dung, học tập, dịch thuật và xử lý …"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "moreh/gpt-oss-120b-TT-BLOCKFP4",
+  "slug": "moreh-gpt-oss-120b-tt-blockfp4",
+  "author": "moreh",
+  "url": "https://huggingface.co/moreh/gpt-oss-120b-TT-BLOCKFP4",
+  "created_at": "2026-09-17T17:44:43.000Z",
+  "updated_at": "2026-09-17T17:48:49.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "base_model:openai/gpt-oss-120b",
+    "base_model:quantized:openai/gpt-oss-120b",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "openai/gpt-oss-120b",
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Netflix France - Regardez des séries en ligne, Regardez des films en …",
+      "url": "https://www.netflix.com/fr/",
+      "snippet": "Netflix est un service de streaming qui propose une vaste sélection de séries, films, animes, documentaires et autres programmes …"
+    },
+    {
+      "title": "Netflix",
+      "url": "https://www.netflix.com/fr/login",
+      "snippet": "Regardez des films et des séries Netflix en ligne, sur votre smart TV, console de jeu, PC, Mac, smartphone, tablette et bien plus."
+    },
+    {
+      "title": "Netflix",
+      "url": "https://app.netflix.com/signup",
+      "snippet": "Choose a Netflix subscription plan that's right for you. Downgrade, upgrade or cancel any time."
+    },
+    {
+      "title": "Netflix - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.netflix.mediaclient&hl=en-US",
+      "snippet": "Netflix is the leading subscription service for watching TV episodes and movies."
+    },
+    {
+      "title": "Netflix",
+      "url": "https://sprp.prod.netflix.net/",
+      "snippet": "Netflix offers a wide range of movies, TV shows, and original content for streaming online."
+    }
+  ]
+}

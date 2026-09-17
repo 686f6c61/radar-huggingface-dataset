@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l31_remove20_swapgapiter_b010_r05",
+  "slug": "jeesup-svd-safety-l31_remove20_swapgapiter_b010_r05",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l31_remove20_swapgapiter_b010_r05",
+  "created_at": "2026-09-17T15:19:50.000Z",
+  "updated_at": "2026-09-17T15:47:10.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama3",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "license:llama3.1",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766296,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "怎么通过wetransfer上传文件发给国外好友或客户-百度经验",
+      "url": "https://jingyan.baidu.com/article/ed15cb1b9439a01be36981e3.html",
+      "snippet": "Aug 28, 2018 · 怎么通过wetransfer上传文件发给国外好友或客户,小编和国外的好友或者客户经常要互相发文件，有些文件比较大，邮 …"
+    },
+    {
+      "title": "【WeTransfer】怎样传输文件 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/f7ff0bfc061d5a6f26bb13a5.html",
+      "snippet": "May 8, 2023 · 【WeTransfer】怎样传输文件,Wetrafer是一款文件临时储存服务，传输文件非常便利。下面为大家介绍意下如何使用。"
+    },
+    {
+      "title": "Comment ouvrir un fichier wetransfer - Forum Réseaux sociaux",
+      "url": "https://forums.commentcamarche.net/forum/affich-35966162-comment-ouvrir-un-fichier-wetransfer",
+      "snippet": "Bonjour, C'est la première fois que je reçois un fichier audio wetransfer et je j'arrive pas à l'ouvrir. Pouvez vous m'aider svp?"
+    },
+    {
+      "title": "Impossible d'ouvrir we transfer [Résolu] - Forum Réseaux sociaux",
+      "url": "https://forums.commentcamarche.net/forum/affich-34689316-impossible-d-ouvrir-we-transfer",
+      "snippet": "Jun 28, 2017 · Impossible d'ouvrir we transfer Résolu Android Telecharger Wetransfer Cacahuete53 - Modifié le 28 juin 2017 à 12:23 …"
+    },
+    {
+      "title": "Screenshot Ordner gelöscht - Windows 10 Forum",
+      "url": "https://www.windows-10-forum.com/threads/screenshot-ordner-geloescht.50159/",
+      "snippet": "Nov 20, 2016 · Screenshot Ordner gelöscht Windows 10, kann den Pfad jetzt weder in registry ändern noch widerherstellen. so what …"
+    }
+  ]
+}

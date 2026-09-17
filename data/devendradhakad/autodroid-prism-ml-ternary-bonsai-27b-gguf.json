@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "devendradhakad/autodroid-prism-ml-Ternary-Bonsai-27B-gguf",
+  "slug": "devendradhakad-autodroid-prism-ml-ternary-bonsai-27b-gguf",
+  "author": "devendradhakad",
+  "url": "https://huggingface.co/devendradhakad/autodroid-prism-ml-Ternary-Bonsai-27B-gguf",
+  "created_at": "2026-09-17T15:06:06.000Z",
+  "updated_at": "2026-09-17T15:06:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "conversational",
+    "ternary",
+    "2-bit",
+    "llama-cpp",
+    "cuda",
+    "metal",
+    "on-device",
+    "hybrid-attention",
+    "prismml",
+    "bonsai",
+    "text-generation",
+    "base_model:Qwen/Qwen3.6-27B",
+    "base_model:quantized:Qwen/Qwen3.6-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 8214577120,
+  "storage_human": "8.2 GB",
+  "base_model": "Qwen/Qwen3.6-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vergelijk bank- en verzekeringsproducten - Spaargids.be",
+      "url": "https://www.spaargids.be/sparen/",
+      "snippet": "Spaargids.be vergelijkt de aanbieders en gaat op zoek naar scherpe prijzen en betere rentes voor uw bank-en verzekeringsproducten."
+    },
+    {
+      "title": "Ergo telefoontje gekregen, is dit betrouwbaar?",
+      "url": "https://www.spaargids.be/forum/ergo-telefoontje-gekregen-is-dit-betrouwbaar-t10792.html",
+      "snippet": "Jun 15, 2011 · Ergo is inderdaad het vorige Hamburg-Mannheimer.Deze laatste heeft zijn naamsverandering te danken aan het …"
+    },
+    {
+      "title": "Finde Therapie Therapeuten ErgoPraxis Zofingen Nein",
+      "url": "https://www.sghr-ssrm.ch/de/finde-therapie/praxis-institution-cabinet-institution/ErgoPraxis+Zofingen/zertifiziert-status-statut-cerification/0?radius=5",
+      "snippet": "Wir helfen Dir eine/n HandtherapeutIn in Deiner Nähe zu finden. Zertifizierte HandtherapeutInnen sind mit hervorgehoben."
+    },
+    {
+      "title": "Trouver un (e) thérapeute Therapeuten Vaud ergothérapeute",
+      "url": "https://www.sghr-ssrm.ch/fr/trouver-un-e-therapeute/kanton-canton-2/23/berufsgruppe-categorie-professionnelle/3",
+      "snippet": "1880 Bex Vaud téléphone : 077 429 05 47 florianne.bertholet@ergo-plan-b.ch Atena Bosi ergothérapeute Thérapeute de la main …"
+    },
+    {
+      "title": "Ergo Life Degroof - Pagina 7 - Spaargids.be forum",
+      "url": "https://www.spaargids.be/forum/ergo-life-degroof-t11127-90.html",
+      "snippet": "Dec 29, 2009 · Het Ergo Life Degroof fonds doet het nog altijd erg slecht en staat nog altijd maar op 50% van zijn waarde in 2007. De …"
+    }
+  ]
+}

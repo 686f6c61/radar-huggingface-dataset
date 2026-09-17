@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l31_remove20_swapgapiter_b010_r01",
+  "slug": "jeesup-svd-safety-l31_remove20_swapgapiter_b010_r01",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l31_remove20_swapgapiter_b010_r01",
+  "created_at": "2026-09-17T14:15:49.000Z",
+  "updated_at": "2026-09-17T14:25:43.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama3",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "license:llama3.1",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766296,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Querkraft – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Querkraft",
+      "snippet": "Die Querkraft ist in der Theorie des Balkens die Bezeichnung einer Kraft, die einerseits auf den Balken als senkrecht zu seiner …"
+    },
+    {
+      "title": "quer.kraft - der Innovationsverein e.V. - quer.kraft",
+      "url": "https://quer-kraft.org/",
+      "snippet": "Als Vorläufer des quer.kraft e.V. gab es eine Initiative, die durch einen Doktoranden der FAU am Lehrstuhl für Industriebetriebslehre …"
+    },
+    {
+      "title": "Querkraft - Lexikon der Physik - Spektrum.de",
+      "url": "https://www.spektrum.de/lexikon/physik/querkraft/11952",
+      "snippet": "In der technischen Mechanik gehört die Querkraft zusammen mit dem Biegemoment und der Normalkraft zu den Schnittreaktionen; …"
+    },
+    {
+      "title": "home - querkraft",
+      "url": "https://www.querkraft.at/en/",
+      "snippet": "HOS house of schools university building NWB5 nordwestbahnhof residential building GSG KZ-gusen memorial EXPO austrian …"
+    },
+    {
+      "title": "Querkraft: Berechnen & Definition | StudySmarter",
+      "url": "https://www.studysmarter.de/ausbildung/ausbildung-in-handwerk-produktion-und-gewerbe/maurer/querkraft/",
+      "snippet": "Sep 6, 2024 · Querkraft bezeichnet in der Physik und Technik die Kraft, die quer zur Längsachse eines Balkens oder Trägers wirkt …"
+    }
+  ]
+}

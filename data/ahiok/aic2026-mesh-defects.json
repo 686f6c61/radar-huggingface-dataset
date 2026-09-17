@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "ahiok/aic2026-mesh-defects",
+  "slug": "ahiok-aic2026-mesh-defects",
+  "author": "ahiok",
+  "url": "https://huggingface.co/ahiok/aic2026-mesh-defects",
+  "created_at": "2026-09-17T18:12:11.000Z",
+  "updated_at": "2026-09-17T19:54:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "3d",
+    "mesh",
+    "defect-detection",
+    "dinov3",
+    "siglip2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4927821154,
+  "storage_human": "4.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CZ.BASKETBALL",
+      "url": "https://cz.basketball/",
+      "snippet": "CZ BASKETBALL 17. 9. 2026 PŘEHLEDNĚ: Klíčové změny pravidel 2026 Mezinárodní basketbalová federace FIBA připravila před …"
+    },
+    {
+      "title": "Soutěže | CZ.BASKETBALL",
+      "url": "https://cz.basketball/soutez",
+      "snippet": "Oficiální přehled basketbalových soutěží v České republice, včetně výsledků a tabulek."
+    },
+    {
+      "title": "CZ.BASKETBALL",
+      "url": "https://cbf.cz.basketball/",
+      "snippet": "Copyright © 2009 - 2020 CBF Czech Basketball Federation eSportsmedia.cz Nastavení cookies Informace o zpracování osobních …"
+    },
+    {
+      "title": "ČBF -",
+      "url": "https://www.cbf.cz/souteze/aktualni-utkani.html?area=1",
+      "snippet": "2 days ago · CBF aktuální utkání - 17.09.2026 05.05. -- 07.05. -- 14.05. -- 28.09. -- 29.09. -- 01.10. -- 05.10."
+    },
+    {
+      "title": "přehled soutěží - ročník 2026/27 - CBF",
+      "url": "https://www.cbf.cz/souteze.html?area=0",
+      "snippet": "CBF přehled soutěží - ročník 2026/27 Reprezentace"
+    }
+  ]
+}

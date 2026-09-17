@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "tinyopsec/Qwen3.5-4B-Unredacted-MAX-GGUF",
+  "slug": "tinyopsec-qwen3-5-4b-unredacted-max-gguf",
+  "author": "tinyopsec",
+  "url": "https://huggingface.co/tinyopsec/Qwen3.5-4B-Unredacted-MAX-GGUF",
+  "created_at": "2026-09-17T12:34:55.000Z",
+  "updated_at": "2026-09-17T13:08:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "qwen2",
+    "quantization",
+    "text-generation",
+    "en",
+    "base_model:prithivMLmods/Qwen3.5-4B-Unredacted-MAX",
+    "base_model:quantized:prithivMLmods/Qwen3.5-4B-Unredacted-MAX",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 36377299968,
+  "storage_human": "36.4 GB",
+  "base_model": "prithivMLmods/Qwen3.5-4B-Unredacted-MAX",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/youtube",
+      "snippet": "Welcome to the official YouTube channel – a home for the biggest moments, the smallest obsessions, and everything in between. …"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed/homepage",
+      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new …"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/@en.---",
+      "snippet": "Share your videos and discover content from friends, family, and creators worldwide on YouTube."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/@________________.",
+      "snippet": "Explore and enjoy a wide range of videos, music, and more on YouTube."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "XujjHarvard/cs2881-hw1-rlaif",
+  "slug": "xujjharvard-cs2881-hw1-rlaif",
+  "author": "XujjHarvard",
+  "url": "https://huggingface.co/XujjHarvard/cs2881-hw1-rlaif",
+  "created_at": "2026-09-17T13:57:19.000Z",
+  "updated_at": "2026-09-17T14:00:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "cs2881-hw1",
+    "qwen2.5",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-3B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 6422892500,
+  "storage_human": "6.4 GB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mon compte partenaire | CAF – Caisse d’Allocations Familiales",
+      "url": "https://www.caf.fr/professionnels/offres-et-services/services-en-ligne/mon-compte-partenaire",
+      "snippet": "Mon Compte Partenaire constitue le point d'entrée unique à un ensemble de services : L'Espace Bailleur est accessible aux bailleurs, …"
+    },
+    {
+      "title": "CAF",
+      "url": "https://partenaires.caf.fr/cnafappli/authentificationpartenaireappli/dist/",
+      "snippet": "Pour savoir comment sont traitées vos données personnelles, consultez la page \"Informatique et libertés\"."
+    },
+    {
+      "title": "Mon Compte Partenaire - espace dédié aux partenaires - Caf.fr",
+      "url": "https://www.caf.fr/professionnels/offres-et-services/caf-de-la-manche/partenaires-locaux/mon-compte-partenaire-espace-dedie-aux-partenaires",
+      "snippet": "Mon Compte Partenaire est un espace sécurisé unique qui permet aux partenaires de la Caf de bénéficier de services en ligne avec …"
+    },
+    {
+      "title": "ESPACE PARTENAIRES | caf.fr",
+      "url": "https://partenaires.caf.fr/Maintenance.html",
+      "snippet": "MON COMPTE PARTENAIRE Maintenance Suite à un problème technique, le portail \"Mon compte partenaire\" est en maintenance …"
+    },
+    {
+      "title": "CAF - Connexion",
+      "url": "https://connect.caf.fr/connexionappli/dist/",
+      "snippet": "FranceConnect est une solution proposée par l'État pour sécuriser et simplifier la connexion à vos services en ligne. Qu'est-ce que …"
+    }
+  ]
+}

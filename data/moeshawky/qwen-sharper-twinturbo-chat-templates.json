@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "moeshawky/Qwen-Sharper-TwinTurbo-Chat-Templates",
+  "slug": "moeshawky-qwen-sharper-twinturbo-chat-templates",
+  "author": "moeshawky",
+  "url": "https://huggingface.co/moeshawky/Qwen-Sharper-TwinTurbo-Chat-Templates",
+  "created_at": "2026-09-17T17:50:24.000Z",
+  "updated_at": "2026-09-17T17:59:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "jinja",
+    "chat-template",
+    "qwen",
+    "qwen3.5",
+    "qwen3.6",
+    "qwen3.8",
+    "llama.cpp",
+    "lm-studio",
+    "vllm",
+    "sglang",
+    "tool-calling",
+    "thinking",
+    "token-efficient",
+    "sharper",
+    "hardened",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:froggeric/Qwen-Fixed-Chat-Templates",
+    "base_model:finetune:froggeric/Qwen-Fixed-Chat-Templates",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3263362,
+  "storage_human": "3 MB",
+  "base_model": "froggeric/Qwen-Fixed-Chat-Templates",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Barceló Torre de Madrid | Hotel con Piscina| Desde 193€",
+      "url": "https://www.barcelo.com/es-es/barcelo-torre-de-madrid/",
+      "snippet": "El hotel Barceló Torre de Madrid es un oasis de diseño situado en pleno centro de la capital de España. Disfruta de las mejores …"
+    },
+    {
+      "title": "Barceló Torre de Madrid, Madrid (precios actualizados en 2026)",
+      "url": "https://www.booking.com/hotel/es/barcelo-torre-de-madrid.es.html?msockid=3d0b4569a9ba606b1d9152bea8ef6148",
+      "snippet": "El Barceló Torre Madrid está en la Plaza de España de Madrid y ofrece habitaciones elegantes con WiFi gratis, así como piscina …"
+    },
+    {
+      "title": "Barceló Torre de Madrid | Hotel with Pool| From 193$",
+      "url": "https://www.barcelo.com/en-us/barcelo-torre-de-madrid/",
+      "snippet": "The Barceló Torre de Madrid hotel is a design oasis located in the heart of the Spanish capital. Enjoy the best facilities and fully …"
+    },
+    {
+      "title": "Barceló Torre de Madrid, Madrid (updated prices 2026)",
+      "url": "https://www.booking.com/hotel/es/barcelo-torre-de-madrid.html?msockid=3d0b4569a9ba606b1d9152bea8ef6148",
+      "snippet": "Set in Madrid’s Plaza de España Square, Barceló Torre Madrid offers elegant rooms with free WiFi, an indoor pool and on-site …"
+    },
+    {
+      "title": "BARCELÓ TORRE DE MADRID: 2026 reseñas y precios - Tripadvisor",
+      "url": "https://www.tripadvisor.es/Hotel_Review-g187514-d10847573-Reviews-Barcelo_Torre_de_Madrid-Madrid.html",
+      "snippet": "Barceló Torre de Madrid es popular entre los viajeros por su ubicación privilegiada en Plaza de España, que ofrece fácil acceso a las …"
+    }
+  ]
+}

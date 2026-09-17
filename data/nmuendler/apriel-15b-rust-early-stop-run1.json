@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "nmuendler/Apriel-15B-rust-early-stop-run1",
+  "slug": "nmuendler-apriel-15b-rust-early-stop-run1",
+  "author": "nmuendler",
+  "url": "https://huggingface.co/nmuendler/Apriel-15B-rust-early-stop-run1",
+  "created_at": "2026-09-17T15:44:28.000Z",
+  "updated_at": "2026-09-17T15:44:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "arxiv:1910.09700",
+    "base_model:ServiceNow-AI/Apriel-Nemotron-15b-Thinker",
+    "base_model:adapter:ServiceNow-AI/Apriel-Nemotron-15b-Thinker",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 587336076,
+  "storage_human": "587 MB",
+  "base_model": "ServiceNow-AI/Apriel-Nemotron-15b-Thinker",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "วิธีสร้างรายได้จาก YouTube",
+      "url": "https://support.google.com/youtube/answer/72857?hl=th",
+      "snippet": "ตั้งแต่วันที่ 1 กุมภาพันธ์ 2027 เป็นต้นไป เราจะเปิดตัวข้อมูลอัปเดตเกี่ยวกับโปรแกรมพาร์ทเนอร์ YouTube (YPP) …"
+    },
+    {
+      "title": "如何在中国大陆用「合法」的方式观看到youtube上面的「有价值」的 …",
+      "url": "https://www.zhihu.com/question/1903231775980913051",
+      "snippet": "YouTube 将自动为 添加翻译后的中文字幕，这一功能有效解决了语言障碍问题。 当你向下浏览时，部分 会标注相关信息。 例如，博 …"
+    },
+    {
+      "title": "Tidak dapat mengakses YouTube - Bantuan YouTube - Google Help",
+      "url": "https://support.google.com/youtube/answer/6159254?hl=id",
+      "snippet": "Tidak dapat mengakses YouTube Jika saat membuka youtube.com Anda melihat halaman error, bukan halaman YouTube, hal itu …"
+    },
+    {
+      "title": "Télécharger l'application mobile YouTube",
+      "url": "https://support.google.com/youtube/answer/3227660?hl=fr&co=GENIE.Platform%3DAndroid",
+      "snippet": "Téléchargez l'application YouTube pour profiter d'une expérience de visionnage enrichie sur votre appareil mobile. Télécharger …"
+    },
+    {
+      "title": "YouTube 鍵盤快速鍵",
+      "url": "https://support.google.com/youtube/answer/7631406?hl=zh-Hant",
+      "snippet": "歡迎訂閱 YouTube 說明頻道，掌握最新消息、動態和實用提示。 鍵盤快速鍵 如果你使用的是 新版電腦網頁，必須先按一下影片播放 …"
+    }
+  ]
+}

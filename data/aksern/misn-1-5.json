@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "aksern/misn-1.5",
+  "slug": "aksern-misn-1-5",
+  "author": "aksern",
+  "url": "https://huggingface.co/aksern/misn-1.5",
+  "created_at": "2026-09-17T12:47:58.000Z",
+  "updated_at": "2026-09-17T14:27:31.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "swinv2",
+    "image-classification",
+    "moderation",
+    "image",
+    "nsfw",
+    "swin",
+    "dataset:akaruineko/pinterest-4k",
+    "base_model:microsoft/swinv2-base-patch4-window12-192-22k",
+    "base_model:finetune:microsoft/swinv2-base-patch4-window12-192-22k",
+    "license:openmdw-1.1",
+    "endpoints_compatible",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 86895866,
+  "parameters_human": "86.9M",
+  "storage_bytes": 1044886186,
+  "storage_human": "1.0 GB",
+  "base_model": "microsoft/swinv2-base-patch4-window12-192-22k",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "iCloud",
+      "url": "https://www.icloud.com/",
+      "snippet": "Log in to iCloud to access your photos, mail, notes, documents and more. Sign in with your Apple Account or create a new account to …"
+    },
+    {
+      "title": "iCloud",
+      "url": "https://www.icloud.com/fr-fr",
+      "snippet": "Connectez‑vous à iCloud pour accéder à vos photos, vos e‑mails, vos notes, vos documents, et plus encore. Connectez‑vous avec …"
+    },
+    {
+      "title": "New Apple ID - iCloud",
+      "url": "https://setup.icloud.com/setup/create_account_ui",
+      "snippet": "3 days ago · With respect to paid iCloud services, e.g. iCloud+ as defined below, Apple will not make any material adverse change to …"
+    },
+    {
+      "title": "iCloud",
+      "url": "https://www.icloud.com/pt-br",
+      "snippet": "Inicie sessão no iCloud para acessar suas fotos, e-mails, notas, documentos e muito mais. Inicie sessão com sua Conta Apple ou …"
+    },
+    {
+      "title": "iCloud写真 - Apple iCloud",
+      "url": "https://www.icloud.com/ja-jp/photos",
+      "snippet": "Web上の「iCloud写真」では、写真やビデオを表示、整理、共有することができます。変更内容は、iCloudですべてのデバイス間で …"
+    }
+  ]
+}

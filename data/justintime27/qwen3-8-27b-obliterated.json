@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "Justintime27/Qwen3.8-27B-OBLITERATED",
+  "slug": "justintime27-qwen3-8-27b-obliterated",
+  "author": "Justintime27",
+  "url": "https://huggingface.co/Justintime27/Qwen3.8-27B-OBLITERATED",
+  "created_at": "2026-09-17T12:46:05.000Z",
+  "updated_at": "2026-09-17T12:46:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gguf",
+    "qwen3_5",
+    "abliterated",
+    "uncensored",
+    "obliteratus",
+    "qwen3",
+    "qwen3.8",
+    "red-team",
+    "ai-safety-research",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 237137389456,
+  "storage_human": "237.1 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf",
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Why Moments Matter More On TikTok | TikTok For Business Blog",
+      "url": "https://ads.tiktok.com/business/en-US/blog/moments-matter-more",
+      "snippet": "Mar 12, 2025 · How brands can turn cultural events into lasting connections through dynamic, authentic content on TikTok. From …"
+    },
+    {
+      "title": "How Brands Can Use TikTok To Create And Influence Cultural …",
+      "url": "https://ads.tiktok.com/business/en-GB/blog/create-cultural-moments-with-tiktok",
+      "snippet": "Nov 9, 2022 · To better understand the relationship between TikTok and culture, and the myriad opportunities it presents for brands, …"
+    },
+    {
+      "title": "Day In The Life Content | Boost Engagement & Authenticity",
+      "url": "https://www.influencers-time.com/boost-engagement-with-authentic-day-in-the-life-strategies/",
+      "snippet": "Nov 22, 2025 · “Day In The Life” creators dominate engagement by merging authenticity, storytelling, and algorithm-savvy tactics. For …"
+    },
+    {
+      "title": "Day in the Life Videos | Boost Brand Authenticity & Engagement",
+      "url": "https://www.influencers-time.com/day-in-the-life-videos-boost-your-brand-with-authenticity/",
+      "snippet": "Aug 17, 2025 · Discover how day in the life videos drive authenticity and engagement. Learn storytelling, filming tips, and branding …"
+    },
+    {
+      "title": "5 Brands Telling Stories on TikTok – BST - brandstorytelling",
+      "url": "https://brandstorytelling.tv/5-brands-telling-stories-on-tiktok/",
+      "snippet": "There are plenty of brands that successfully implement brand storytelling styles on TikTok, reaching high levels of followers, views, …"
+    }
+  ]
+}

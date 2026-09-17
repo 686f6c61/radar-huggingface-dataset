@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "EmeraldCreator/Llama-3-Ru-Uncensored-256k-token",
+  "slug": "emeraldcreator-llama-3-ru-uncensored-256k-token",
+  "author": "EmeraldCreator",
+  "url": "https://huggingface.co/EmeraldCreator/Llama-3-Ru-Uncensored-256k-token",
+  "created_at": "2026-09-17T14:13:14.000Z",
+  "updated_at": "2026-09-17T15:49:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "llama",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Albert Heijn Premium of Bol select: ‘duurder dan je denkt’",
+      "url": "https://radar.avrotros.nl/artikel/albert-heijn-premium-of-bol-select-duurder-dan-je-denkt-60142",
+      "snippet": "Jan 29, 2024 · Radar heeft Bol en Albert Heijn om een reactie gevraagd. Albert Heijn heeft geen reactie op het artikel gegeven, Bol …"
+    },
+    {
+      "title": "BOL平台的入驻条件？ - 知乎",
+      "url": "https://www.zhihu.com/question/281544054",
+      "snippet": "荷兰本土电商平台 Bol.com 卖家入驻开店条件 Bol.com 作为近两年跨境电商卖家入驻的蓝海平台，不仅是荷兰最大的跨境电商平台， …"
+    },
+    {
+      "title": "Let op: phishingmail van 'bol.com' - Radar",
+      "url": "https://radar.avrotros.nl/artikel/let-op-phishingmail-van-bolcom-22743",
+      "snippet": "Aug 15, 2017 · Opgelet: krijg je een mail van 'bol.com' om je account te verifiëren? Klik niet op links in het bericht. Het gaat om phishing."
+    },
+    {
+      "title": "国内能否在bol.com买东西 如果可以的话怎么操作？ - 知乎",
+      "url": "https://www.zhihu.com/question/265621938",
+      "snippet": "Bol.com 是荷兰跨境电商平台，也是比利时、卢森堡最大的电商平台。 1999年在荷兰正式推出。 Bol.com 原本是一家以售卖图书、玩 …"
+    },
+    {
+      "title": "Bol.com stopt met alcoholverkoop - Radar",
+      "url": "https://radar.avrotros.nl/artikel/bolcom-stopt-met-alcoholverkoop-37768",
+      "snippet": "Sep 8, 2020 · Bol.com is gestopt met het verkopen van alle alcoholische dranken. Dat bevestigt een woordvoerster na berichtgeving …"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "anku1-1/dqn-SpaceInvadersNoFrameskip-v4",
+  "slug": "anku1-1-dqn-spaceinvadersnoframeskip-v4",
+  "author": "anku1-1",
+  "url": "https://huggingface.co/anku1-1/dqn-SpaceInvadersNoFrameskip-v4",
+  "created_at": "2026-09-17T16:12:22.000Z",
+  "updated_at": "2026-09-17T16:12:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "SpaceInvadersNoFrameskip-v4",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 54301892,
+  "storage_human": "54 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Trasparenza PA: cosa devono pubblicare i Comuni (e cosa no)",
+      "url": "https://dati-pubblici.it/guide/trasparenza-pa-cosa-devono-pubblicare/",
+      "snippet": "Apr 28, 2026 · In Italia la Pubblica Amministrazione ha l’obbligo di legge di pubblicare online molte informazioni sulla propria attività: …"
+    },
+    {
+      "title": "Amministrazione Trasparente: cosa deve pubblicare un ente",
+      "url": "https://www.studiolegalecalzoni.com/obblighi-di-trasparenza-amministrativa/",
+      "snippet": "Jun 18, 2026 · La trasparenza amministrativa è l’ obbligo, previsto dal d.lgs. 33/2013, di pubblicare sui siti istituzionali una serie di …"
+    },
+    {
+      "title": "Obblighi trasparenza negli enti locali: quaderno operativo ANCI",
+      "url": "https://lentepubblica.it/buone-pratiche/obblighi-di-trasparenza-negli-enti-locali-il-quaderno-operativo-dellanci/",
+      "snippet": "May 26, 2025 · La guida, accessibile gratuitamente, propone indicazioni pratiche e modelli esemplificativi per agevolare l’adozione …"
+    },
+    {
+      "title": "Manuale per la pubblicazione dei documenti sulla sezione ...",
+      "url": "https://www.comunefiv.it/wp-content/uploads/2023/10/manuale-pubblicazione-documenti-amministrazione-trasparente.pdf",
+      "snippet": "Manuale per la pubblicazione dei documenti sulla sezione “Amministrazione trasparente” del sito istituzionale."
+    },
+    {
+      "title": "Obblighi di pubblicazione concernenti i provvedimenti amministrativi ...",
+      "url": "https://www.anticorruzione.it/-/obblighi-di-pubblicazione-concernenti-i-provvedimenti-amministrativi-art.-23-d.lgs.-33/2013-",
+      "snippet": "Feb 7, 2024 · Secondo quale modalità le amministrazioni sono tenute a pubblicare i provvedimenti amministrativi ai sensi dell’art. 23, …"
+    }
+  ]
+}

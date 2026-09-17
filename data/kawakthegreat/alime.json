@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "KawakTheGreat/Alime",
+  "slug": "kawakthegreat-alime",
+  "author": "KawakTheGreat",
+  "url": "https://huggingface.co/KawakTheGreat/Alime",
+  "created_at": "2026-09-17T15:44:49.000Z",
+  "updated_at": "2026-09-17T15:45:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Infrastructure & Stations - RailUK Forums",
+      "url": "https://www.railforums.co.uk/forums/infrastructure-stations.43/",
+      "snippet": "Oct 17, 2016 · Discuss all aspects of rail infrastructure here, including stations and permanent way."
+    },
+    {
+      "title": "Personal Track Safety (PTS) Question - RailUK Forums",
+      "url": "https://www.railforums.co.uk/threads/personal-track-safety-pts-question.25681/",
+      "snippet": "Aug 5, 2009 · Hi all, Just a quick question that one of our guards asked me earlier: On the Merseyrail underground network, there is a …"
+    },
+    {
+      "title": "Railway Terminology - RailUK Forums",
+      "url": "https://www.railforums.co.uk/threads/railway-terminology.53017/",
+      "snippet": "Sep 29, 2011 · Alterations to services, capes (cancellations), pines (service terminating mid journey) used to be 'wired out' with the …"
+    },
+    {
+      "title": "Days of Operation - RailUK Forums",
+      "url": "https://www.railforums.co.uk/threads/days-of-operation.51957/",
+      "snippet": "Sep 10, 2011 · Hi, I'm after a list of all the acronyms used for the Days of Operation, e.g. EWD = Every Week Day SX = Operates Mon …"
+    },
+    {
+      "title": "Cammells Toughened Steel - RailUK Forums",
+      "url": "https://www.railforums.co.uk/threads/cammells-toughened-steel.39288/",
+      "snippet": "Dec 15, 2010 · Hello, everyone! This is my first posting here. I am from \"across the Pond\", and was volunteering at a 2 ft. gage …"
+    }
+  ]
+}

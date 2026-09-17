@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "tresorbana/kinyarwanda-mms-vits-finetune",
+  "slug": "tresorbana-kinyarwanda-mms-vits-finetune",
+  "author": "tresorbana",
+  "url": "https://huggingface.co/tresorbana/kinyarwanda-mms-vits-finetune",
+  "created_at": "2026-09-17T18:00:09.000Z",
+  "updated_at": "2026-09-18T13:14:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vits",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 83015862,
+  "parameters_human": "83.0M",
+  "storage_bytes": 6648131544,
+  "storage_human": "6.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Site Officiel de la Mairie du Malzieu-Ville",
+      "url": "https://le-malzieu-ville.fr/",
+      "snippet": "Bienvenue à la Mairie du Malzieu-Ville ! Une commune de Lozère en Région Occitanie, France. Consultez les informations de la …"
+    },
+    {
+      "title": "Le Malzieu-Ville — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Le_Malzieu-Ville",
+      "snippet": "Le Malzieu-Ville est une commune française, située dans le nord-ouest du département de la Lozère en région Occitanie. La …"
+    },
+    {
+      "title": "La mairie - Site Officiel de la Mairie du Malzieu-Ville",
+      "url": "https://le-malzieu-ville.fr/mairie/la-mairie/",
+      "snippet": "Avec ses 750 habitants, classé station verte de tourisme et Plus Beaux Villages de France depuis septembre 2021, le Malzieu, avec …"
+    },
+    {
+      "title": "Le Malzieu-Ville (Lozère), l'un des Plus Beaux Villages de France",
+      "url": "https://www.les-plus-beaux-villages-de-france.org/fr/nos-villages/le-malzieu-ville/",
+      "snippet": "Le Malzieu-Ville : une cité médiévale au cœur des légendes du Gévaudan ! Partez à la découverte de cette cité fortifiée nichée entre …"
+    },
+    {
+      "title": "Le Malzieu-Ville - Lozère Tourisme",
+      "url": "https://www.lozere-tourisme.com/decouvrir/villages/le-malzieu-ville/",
+      "snippet": "Voici les 10 incontournables à faire près du Malzieu, une destination vivante d’histoire, de tradition et de nature. Cette charmante ville …"
+    }
+  ]
+}

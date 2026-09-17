@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "paulbauriegel/fungitastic-dinov3-vits16-384",
+  "slug": "paulbauriegel-fungitastic-dinov3-vits16-384",
+  "author": "paulbauriegel",
+  "url": "https://huggingface.co/paulbauriegel/fungitastic-dinov3-vits16-384",
+  "created_at": "2026-09-17T19:06:28.000Z",
+  "updated_at": "2026-09-18T09:02:00.000Z",
+  "license": "dinov3-license",
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "tflite",
+    "image-classification",
+    "fine-grained-classification",
+    "fungi",
+    "mushrooms",
+    "dinov3",
+    "vit",
+    "litert",
+    "android",
+    "biodiversity",
+    "arxiv:2408.13632",
+    "arxiv:2508.10104",
+    "base_model:timm/vit_small_patch16_dinov3.lvd1689m",
+    "base_model:finetune:timm/vit_small_patch16_dinov3.lvd1689m",
+    "license:other",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 319236413,
+  "storage_human": "319 MB",
+  "base_model": "timm/vit_small_patch16_dinov3.lvd1689m",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Fine-grained fungi species classification",
+      "dataset": "FungiTastic (full, closed-set)",
+      "metric": "Top-1",
+      "value": 0.7263
+    },
+    {
+      "task": "Fine-grained fungi species classification",
+      "dataset": "FungiTastic (full, closed-set)",
+      "metric": "Top-3",
+      "value": 0.8484
+    },
+    {
+      "task": "Fine-grained fungi species classification",
+      "dataset": "FungiTastic (full, closed-set)",
+      "metric": "Macro F1",
+      "value": 0.4593
+    }
+  ],
+  "sources": [
+    {
+      "title": "Come From Away Tickets - ticketsonsale.com",
+      "url": "https://www.ticketsonsale.com/theater/come-from-away-musical-tickets?pid=41772&rid=41&vid=10030",
+      "snippet": "Find Come From Away tickets for all upcoming concerts and events. View Come From Away tour dates, venues, and buy tickets with …"
+    }
+  ]
+}

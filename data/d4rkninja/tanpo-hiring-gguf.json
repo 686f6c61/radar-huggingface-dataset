@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "d4rkninja/tanpo-hiring-GGUF",
+  "slug": "d4rkninja-tanpo-hiring-gguf",
+  "author": "d4rkninja",
+  "url": "https://huggingface.co/d4rkninja/tanpo-hiring-GGUF",
+  "created_at": "2026-09-17T16:40:56.000Z",
+  "updated_at": "2026-09-18T17:46:17.000Z",
+  "license": "lfm-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "hiring",
+    "tanpo",
+    "text-generation",
+    "en",
+    "base_model:LiquidAI/LFM2.5-1.2B-Instruct",
+    "base_model:quantized:LiquidAI/LFM2.5-1.2B-Instruct",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1170340608,
+  "parameters_human": "1.17B",
+  "storage_bytes": 4946571968,
+  "storage_human": "4.9 GB",
+  "base_model": "LiquidAI/LFM2.5-1.2B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Steueramt Kanton Zürich - Steuererklärung",
+      "url": "https://zhp.services.zh.ch/app/ZHprivateTax/?mtm_campaign=Info",
+      "snippet": "Eröffnen oder bearbeiten Sie die Steuererklärung mit dem Konto/Login von ZHservices."
+    },
+    {
+      "title": "Ihre Online- Steuererklärung ab 2025 - ZHprivateTax",
+      "url": "https://zhprivatetax.ch/",
+      "snippet": "Mit AGOV, dem Authentifizierungsdienst der Schweizer Behörden, melden Sie sich einfach und sicher an. Das moderne Login …"
+    },
+    {
+      "title": "Steueramt Kanton Zürich - Steuererklärung - ZH",
+      "url": "https://zhp.services.zh.ch/app/ZHprivateTax/login?successUrl=%2Fapp%2FZHprivateTax%2F",
+      "snippet": "ZHservices Kanton Zürich Kontakt News News-Abo Medien Statistik & Daten Jobs ©2026 Kanton Zürich Besondere …"
+    },
+    {
+      "title": "Steuererklärung Privatpersonen | Kanton Zürich",
+      "url": "https://www.zh.ch/de/steuern-finanzen/steuern/steuern-natuerliche-personen/steuererklaerung-natuerliche-personen.html",
+      "snippet": "Einstellung Offline Steuererklärung Ab der Steuerperiode 2025 wird die bisherige Download-Software Private Tax eingestellt. Künftig …"
+    },
+    {
+      "title": "ZHprivateTax: Vereinfachter Zugang | Kanton Zürich",
+      "url": "https://www.zh.ch/de/steuern-finanzen/steuern/steuern-natuerliche-personen/steuererklaerung-natuerliche-personen/agov---zugang-zur-steuererklaerung.html",
+      "snippet": "May 22, 2026 · Hier finden Sie alle Informationen rund um den neuen vereinfachten Zugang zur Online-Steuererklärung …"
+    }
+  ]
+}

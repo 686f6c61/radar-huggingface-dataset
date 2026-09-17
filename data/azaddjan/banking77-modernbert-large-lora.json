@@ -1,0 +1,94 @@
+{
+  "schema": 1,
+  "id": "AzadDjan/banking77-modernbert-large-lora",
+  "slug": "azaddjan-banking77-modernbert-large-lora",
+  "author": "AzadDjan",
+  "url": "https://huggingface.co/AzadDjan/banking77-modernbert-large-lora",
+  "created_at": "2026-09-17T16:45:24.000Z",
+  "updated_at": "2026-09-17T17:19:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:answerdotai/ModernBERT-large",
+    "lora",
+    "transformers",
+    "dataset:PolyAI/banking77",
+    "base_model:answerdotai/ModernBERT-large",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18231050,
+  "storage_human": "18 MB",
+  "base_model": "answerdotai/ModernBERT-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text Classification",
+      "dataset": "banking77",
+      "metric": "Accuracy",
+      "value": 0.926073926073926
+    },
+    {
+      "task": "Text Classification",
+      "dataset": "banking77",
+      "metric": "Precision",
+      "value": 0.935845811261456
+    },
+    {
+      "task": "Text Classification",
+      "dataset": "banking77",
+      "metric": "Recall",
+      "value": 0.9302821370013077
+    },
+    {
+      "task": "Text Classification",
+      "dataset": "banking77",
+      "metric": "F1",
+      "value": 0.9299930862127331
+    }
+  ],
+  "sources": [
+    {
+      "title": "Snapchat",
+      "url": "https://accounts.snapchat.com/v2/login",
+      "snippet": "Log in to Snapchat on the web to manage your account, chat, and call with friends."
+    },
+    {
+      "title": "Snapchat for Web.",
+      "url": "https://www.snapchat.com/web",
+      "snippet": "Try the new Snapchat for Web on your computer to chat, call friends, use Lenses, and more"
+    },
+    {
+      "title": "Réglages – Assistance Snapchat",
+      "url": "https://help.snapchat.com/hc/fr-fr/sections/5685896707220-R%C3%A9glages",
+      "snippet": "Assistance Snapchat Gérer mon compte Réglages et autorisations Réglages Réglages Appuyez sur l’un des sujets ci-dessous pour …"
+    },
+    {
+      "title": "Mon compte Snapchat est bloqué – Assistance Snapchat",
+      "url": "https://help.snapchat.com/hc/fr-fr/articles/7012315286164-Mon-compte-Snapchat-est-bloqu%C3%A9",
+      "snippet": "Les comptes Snapchat peuvent être bloqués pour diverses raisons. Nous faisons cela pour que l’application reste amusante et sûre …"
+    },
+    {
+      "title": "Parents - Centre parental - Snapchat",
+      "url": "https://parents.snapchat.com/family-center?lang=fr-FR",
+      "snippet": "Le Centre parental de Snapchat est notre ensemble d'outils de contrôles parentaux intégrés à l'application, qui vous aident à voir …"
+    }
+  ]
+}

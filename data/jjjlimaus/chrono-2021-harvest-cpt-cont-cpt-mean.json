@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "jjjlimaus/chrono-2021-harvest-cpt-cont-cpt-mean",
+  "slug": "jjjlimaus-chrono-2021-harvest-cpt-cont-cpt-mean",
+  "author": "jjjlimaus",
+  "url": "https://huggingface.co/jjjlimaus/chrono-2021-harvest-cpt-cont-cpt-mean",
+  "created_at": "2026-09-17T12:01:56.000Z",
+  "updated_at": "2026-09-17T12:08:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "sn38-nanochrono",
+    "text-generation",
+    "sn38",
+    "bittensor",
+    "nanochrono",
+    "model-merge",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2018511234,
+  "parameters_human": "2.02B",
+  "storage_bytes": 8074067984,
+  "storage_human": "8.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amt für öffentliche Ordnung - www.freiburg.de",
+      "url": "https://www.freiburg.de/pb/-/205348/;oe6013273",
+      "snippet": "Das Amt für öffentliche Ordnung ist für die Gewährleistung der öffentlichen Sicherheit und Ordnung im Stadtgebiet zuständig und …"
+    },
+    {
+      "title": "Amt für öffentliche Ordnung [Stadt Freiburg im Breisgau]",
+      "url": "https://www.service-bw.de/zufi/organisationseinheiten/6013273",
+      "snippet": "Das Amt für öffentliche Ordnung ist für die Gewährleistung der öffentlichen Sicherheit und Ordnung im Stadtgebiet zuständig und …"
+    },
+    {
+      "title": "Bürgerservicezentrum - www.freiburg.de - Service/Bürgerservicezentrum",
+      "url": "https://www.freiburg.de/pb/1412149.html",
+      "snippet": "Bürgerservicezentrum im Rathaus im Stühlinger: Zentrale Anlaufstelle für viele Anliegen"
+    },
+    {
+      "title": "Amt für öffentliche Ordnung, Freiburg im Breisgau - Ortsdienst.de",
+      "url": "https://www.ortsdienst.de/baden-wuerttemberg/freiburg/ordnungsamt/amt-fuer-oeffentliche-ordnung-inst1481/",
+      "snippet": "Hier finden Sie Anschriften, Kontaktdaten und Öffnungszeiten von Ihrem Ordnungsamt in Freiburg. Das Ordnungsamt ist eine …"
+    },
+    {
+      "title": "Ordnungsamt in Freiburg - Öffnungszeiten - Ortsdienst.de",
+      "url": "https://www.ortsdienst.de/baden-wuerttemberg/freiburg/ordnungsamt/",
+      "snippet": "Hier finden Sie Anschriften, Kontaktdaten und Öffnungszeiten von Ihrem Ordnungsamt in Freiburg. Das Ordnungsamt ist eine …"
+    }
+  ]
+}

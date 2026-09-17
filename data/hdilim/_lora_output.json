@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "hdilim/_lora_output",
+  "slug": "hdilim-_lora_output",
+  "author": "hdilim",
+  "url": "https://huggingface.co/hdilim/_lora_output",
+  "created_at": "2026-09-17T12:42:45.000Z",
+  "updated_at": "2026-09-17T13:09:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2817737358,
+  "storage_human": "2.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Area codes locator - Area code lookup by number or city",
+      "url": "https://www.allareacodes.com/",
+      "snippet": "To find information on a specific area code, use the area code lookup that makes it easy to find an area code by number and gives …"
+    },
+    {
+      "title": "691 Area Code ☎️ Location, Time Zone, & Phone Lookup - Spokeo",
+      "url": "https://www.spokeo.com/691-area-code?msockid=003340a88cad6057349f577f8db161a0",
+      "snippet": "Find out who that 691 phone number is registered to. Our free reverse phone lookup allows you to search records associated with a …"
+    },
+    {
+      "title": "Telephone numbers in the Federated States of Micronesia",
+      "url": "https://en.wikipedia.org/wiki/Telephone_numbers_in_the_Federated_States_of_Micronesia",
+      "snippet": "Telephone numbers in the Federated States of Micronesia ... Country Code: +691 International Call Prefix: 011[1] National Significant …"
+    },
+    {
+      "title": "691 Area Code - Map, Time, and Phone Lookup",
+      "url": "https://lookify.io/areacode/691",
+      "snippet": "Area Code 691 is inactive. This area code may be reserved for future use. Beware of phone calls and text messages from this area …"
+    },
+    {
+      "title": "Area Code 691 Lookup, Region, Prefixes, and Complaint Trends",
+      "url": "https://phone.gd/area_code/691",
+      "snippet": "Review area code 691, region coverage, recent complaint activity, active prefixes, routing context, and linked NANP phone data."
+    }
+  ]
+}

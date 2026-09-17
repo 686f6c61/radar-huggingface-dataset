@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "umagaba/qwen-0.5b-safety-guardrail",
+  "slug": "umagaba-qwen-0-5b-safety-guardrail",
+  "author": "umagaba",
+  "url": "https://huggingface.co/umagaba/qwen-0.5b-safety-guardrail",
+  "created_at": "2026-09-17T18:09:58.000Z",
+  "updated_at": "2026-09-17T18:49:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 1987585364,
+  "storage_human": "2.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SignalRGB - Reddit",
+      "url": "https://www.reddit.com/r/SignalRGB/",
+      "snippet": "Is the Keychron K4's (version 2) RGB controllable with Signal RGB? I currently have a Keychron K4 (version 2). I was wondering, if in …"
+    },
+    {
+      "title": "Won't detect Corsair fans connected via iCUE Link",
+      "url": "https://forum.signalrgb.com/t/wont-detect-corsair-fans-connected-via-icue-link/3622",
+      "snippet": "Jan 5, 2025 · For starters, I don’t have any other RGB software installed, including iCUE. The fans are connected to the iCUE Link …"
+    },
+    {
+      "title": "Update can´t Install - Support - SignalRGB",
+      "url": "https://forum.signalrgb.com/t/update-can-t-install/9732",
+      "snippet": "Jun 6, 2026 · I really liked signal rgb. I even bought it, and now it doesn’t work. So i am sorry, but you just lost a customer. I don’t …"
+    },
+    {
+      "title": "Signal RGB does NOT detect my fans? Why? : r/SignalRGB - Reddit",
+      "url": "https://www.reddit.com/r/SignalRGB/comments/1pkbwua/signal_rgb_does_not_detect_my_fans_why/",
+      "snippet": "Signal RGB only detected and changed colors of my RAM but Does NOT even detect my Artic fans or msi AIO fans! I tried …"
+    },
+    {
+      "title": "RE:【心得】RGB燈光控制中心 - SignalRgb，2023年更新，使用近兩年 …",
+      "url": "https://forum.gamer.com.tw/C.php?bsn=60030&snA=592079&page=2",
+      "snippet": "Feb 27, 2025 · 0 - MelonTime 應該說透過USB連接，能抓取USB的數據包來判斷設備的RGB，進而控制，官方的文檔有教程，但也有 …"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "ishanktiwari18/brain-tumor",
+  "slug": "ishanktiwari18-brain-tumor",
+  "author": "ishanktiwari18",
+  "url": "https://huggingface.co/ishanktiwari18/brain-tumor",
+  "created_at": "2026-09-17T12:44:18.000Z",
+  "updated_at": "2026-09-17T12:46:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "keras",
+  "languages": [],
+  "tags": [
+    "keras",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4750691,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TamilYogi - Latest 2026 Tamil Movies",
+      "url": "https://tamilyogi.dev/",
+      "snippet": "Aug 25, 2026 · TamilYogi is the best platform for latest 2026 Tamil Movies and Web Series, Reviews, Updates. Best quality of Tamil …"
+    },
+    {
+      "title": "About Us - PlayTamil.cv",
+      "url": "https://www.playtamil.cv/about.html",
+      "snippet": "Welcome to PlayTamil, the premier online destination dedicated to the vibrant and diverse world of South Indian cinema. Our platform …"
+    },
+    {
+      "title": "New Tamil Movies 2026: Latest Tamil Films Release Date ... - FilmiBeat",
+      "url": "https://www.filmibeat.com/tamil/movies.html",
+      "snippet": "Sep 4, 2026 · Latest Tamil Movies 2026: Stay updated on Tamil films release dates, trailers, teasers, reviews, and all the latest news …"
+    },
+    {
+      "title": "PlayTamil.ind.in - PlayTamil - Latest Tamil 2024 Full Movie Download ...",
+      "url": "https://www.ipaddress.com/website/playtamil.ind.in/",
+      "snippet": "Jun 20, 2024 · PlayTamil is a website that offers downloads for the latest Tamil and Telugu full movies, including options for online …"
+    },
+    {
+      "title": "Play Tamil (@Playtamil1) / X",
+      "url": "https://x.com/Playtamil1",
+      "snippet": "Play Tamil @Playtamil1 Feb 14, 2018 Latest pic of #STR #Simbu #playtamil #kollywood #tamil 9 36 Play Tamil"
+    }
+  ]
+}

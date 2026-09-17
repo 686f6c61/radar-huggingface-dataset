@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "heman10x/rlcd-modernbert-151m",
+  "slug": "heman10x-rlcd-modernbert-151m",
+  "author": "heman10x",
+  "url": "https://huggingface.co/heman10x/rlcd-modernbert-151m",
+  "created_at": "2026-09-17T16:25:31.000Z",
+  "updated_at": "2026-09-20T14:35:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "GLiClass",
+    "rlcd",
+    "typesafe-ai",
+    "jev",
+    "decision-engine",
+    "system-1",
+    "modernbert",
+    "gliclass",
+    "non-autoregressive",
+    "zero-token-generation",
+    "structured-outputs",
+    "calibration",
+    "expected-calibration-error",
+    "ece",
+    "brier-score",
+    "proper-scoring-rules",
+    "webgpu",
+    "edge-ai",
+    "fast-inference",
+    "banking77",
+    "text-classification",
+    "base_model:knowledgator/gliclass-modern-base-v2.0",
+    "base_model:quantized:knowledgator/gliclass-modern-base-v2.0",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 151378176,
+  "parameters_human": "151.4M",
+  "storage_bytes": 3031275136,
+  "storage_human": "3.0 GB",
+  "base_model": "knowledgator/gliclass-modern-base-v2.0",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accédez aux services de votre espace adhérent - Ma Web Mutuelle",
+      "url": "https://mawebmutuelle.fr/",
+      "snippet": "Dans votre espace adhérent Ma Web Mutuelle, consultez vos remboursements, vos documents et contacts privilégiés de manière …"
+    },
+    {
+      "title": "Ma Web Mutuelle - Mot de passe oublié",
+      "url": "https://mawebmutuelle.fr/motDePasseOublie",
+      "snippet": "Dans votre espace adhérent Ma Web Mutuelle, réinitialisez votre mot de passe de manière sécurisé"
+    },
+    {
+      "title": "Signature électronique - Ma Web Mutuelle",
+      "url": "https://esign.mawebmutuelle.fr/",
+      "snippet": "Dans votre espace adhérent Ma Web Mutuelle, consultez vos remboursements, vos documents et contacts privilégiés de manière …"
+    },
+    {
+      "title": "Activation de votre espace client - Ma Web Mutuelle",
+      "url": "https://mawebmutuelle.fr/premiereConnexion",
+      "snippet": "Activation de mon espace adhérent Pour activer votre Espace Client, renseignez votre email dans le champ ci-dessous et suivez les …"
+    },
+    {
+      "title": "Service client - Ma Web Mutuelle",
+      "url": "https://mawebmutuelle.fr/messageSupport",
+      "snippet": "ous pouvez nous solliciter en cas de difficulté de connexion ou être rappelé par nos services"
+    }
+  ]
+}

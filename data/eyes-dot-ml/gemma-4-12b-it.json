@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "eyes-dot-ml/gemma-4-12B-it",
+  "slug": "eyes-dot-ml-gemma-4-12b-it",
+  "author": "eyes-dot-ml",
+  "url": "https://huggingface.co/eyes-dot-ml/gemma-4-12B-it",
+  "created_at": "2026-09-17T12:34:09.000Z",
+  "updated_at": "2026-09-17T12:34:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4_unified",
+    "image-text-to-text",
+    "any-to-any",
+    "arxiv:2607.02770",
+    "base_model:google/gemma-4-12B",
+    "base_model:finetune:google/gemma-4-12B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11959730224,
+  "parameters_human": "11.96B",
+  "storage_bytes": 23951719034,
+  "storage_human": "24.0 GB",
+  "base_model": "google/gemma-4-12B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Eyes, l’opticien qui chouchoute ses clients.",
+      "url": "https://www.eyes.fr/",
+      "snippet": "Profitez de l'expertise de votre opticien Eyes directement à domicile, pour des conseils personnalisés et des services pratiques, où …"
+    },
+    {
+      "title": "Eye - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Eye",
+      "snippet": "Eyes with resolving power have come in ten fundamentally different forms, classified into compound eyes and non-compound eyes. …"
+    },
+    {
+      "title": "Prendre rendez-vous en ligne avec opticien eyes facilement - eyes",
+      "url": "https://www.eyes.fr/prendre-rendez-vous-en-ligne-avec-opticien-eyes-facilement",
+      "snippet": "Félicitations pour avoir pris rendez-vous en ligne avec votre opticien chez Eyes, le réseau d'opticiens professionnels dédié à vous …"
+    },
+    {
+      "title": "Eyes: How They Work, Anatomy & Common Conditions",
+      "url": "https://my.clevelandclinic.org/health/body/21823-eyes",
+      "snippet": "Nov 15, 2023 · Your eyes are the sensory organs that allow you to see. Your eyes capture visible light from the world around you and …"
+    },
+    {
+      "title": "Human eye - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Human_eye",
+      "snippet": "Humans have two eyes, situated on the left and the right of the face. The eyes sit in bony cavities called the orbits, in the skull. There …"
+    }
+  ]
+}

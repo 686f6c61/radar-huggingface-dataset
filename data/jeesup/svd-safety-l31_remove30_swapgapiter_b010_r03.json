@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l31_remove30_swapgapiter_b010_r03",
+  "slug": "jeesup-svd-safety-l31_remove30_swapgapiter_b010_r03",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l31_remove30_swapgapiter_b010_r03",
+  "created_at": "2026-09-17T17:54:52.000Z",
+  "updated_at": "2026-09-17T18:13:43.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama3",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "license:llama3.1",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766296,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bel & bien - Toutes les vidéos | France TV",
+      "url": "https://www.france.tv/france-2/bel-et-bien/toutes-les-videos/",
+      "snippet": "Retrouvez toutes les vidéos, articles et podcasts des programmes des chaînes de France Télévisions."
+    },
+    {
+      "title": "Bel & bien | France TV",
+      "url": "https://www.france.tv/france-2/bel-et-bien/",
+      "snippet": "Bel & bien Le rendez-vous entièrement consacré au bien être, Bel & Bien, animé par Ali Rebeihi et Agathe Lecaron, qui seront …"
+    },
+    {
+      "title": "Se connecter | France TV",
+      "url": "https://www.france.tv/connexion/",
+      "snippet": "Retrouvez toutes les vidéos, articles et podcasts des programmes des chaînes de France Télévisions."
+    },
+    {
+      "title": "Prendre soin de ses pieds pour un bien être total ! en replay - Bel ...",
+      "url": "https://www.france.tv/france-2/bel-et-bien/8544779-prendre-soin-de-ses-pieds-pour-un-bien-etre-total.html",
+      "snippet": "Jun 13, 2026 · Bel & bien Prendre soin de ses pieds pour un bien être total ! | Magazines d'actualité Vidéo 1 h 4 min Français Tous …"
+    },
+    {
+      "title": "Comment maigrir sans régime après 40 ans ? en replay - Bel & Bien ...",
+      "url": "https://www.france.tv/france-2/bel-bien-ensemble/8357019-emission-du-lundi-20-avril-2026.html",
+      "snippet": "Apr 20, 2026 · Bel & Bien ensemble Comment maigrir sans régime après 40 ans ? | Magazines d'actualité Vidéo 39 min 47 s …"
+    }
+  ]
+}

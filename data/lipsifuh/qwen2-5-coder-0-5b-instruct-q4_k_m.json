@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "lipsifuh/qwen2.5-coder-0.5b-instruct-q4_k_m",
+  "slug": "lipsifuh-qwen2-5-coder-0-5b-instruct-q4_k_m",
+  "author": "lipsifuh",
+  "url": "https://huggingface.co/lipsifuh/qwen2.5-coder-0.5b-instruct-q4_k_m",
+  "created_at": "2026-09-17T17:41:56.000Z",
+  "updated_at": "2026-09-17T17:44:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 397808000,
+  "storage_human": "398 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "לאומי טרייד - Leumi",
+      "url": "https://trade.bankleumi.co.il/lti/",
+      "snippet": "חדש בלאומי טרייד מסחר מוקדם Premarket במניות הנסחרות בארה\"ב מהיום ניתן לבצע מסחר מוקדם במניות הנסחרות בארה\"ב..."
+    },
+    {
+      "title": "לאומי טרייד",
+      "url": "https://trade.bankleumi.co.il/lti/?type=1&key=home_Home_",
+      "snippet": "היבטים משפטיים מדיניות פרטיות אבטחת מידע אובדן טלפון נייד נגישות אודות לאומי צור קשר"
+    },
+    {
+      "title": "חדש בלאומי טרייד - בנק לאומי",
+      "url": "https://www.leumi.co.il/he/investments/leumi-trade",
+      "snippet": "חדש בלאומי טרייד להשקיע בקליק אחד בין אם אתם משקיעים חדשים או מקצוענים, אתר לאומי טרייד מאפשרים לכם ליהנות מחוויית מסחר בבורסת תל …"
+    },
+    {
+      "title": "כניסה לחשבון - ניהול חשבון הבנק בדיגיטל | בנק לאומי",
+      "url": "https://hb2.bankleumi.co.il/lti/lti-app/home",
+      "snippet": "היכנסו לחשבון שלכם בבנק לאומי בדרך מאובטחת. צפו ביתרה, בצעו העברות, שלמו חשבונות ונהלו את הפעילות הפיננסית שלכם בנוחות מכל מקום, בכל זמן."
+    },
+    {
+      "title": "אפליקציית לאומי טרייד החדשה - בנק לאומי",
+      "url": "https://www.leumi.co.il/he/leumi-trade-app",
+      "snippet": "אפליקציית לאומי טרייד החדשה! חוויית מסחר מקצועית יותר, נוחה יותר ומתקדמת יותר כל המידע על תיק ההשקעות במקום אחד צ'אט AI - כולל ניתוחי …"
+    }
+  ]
+}

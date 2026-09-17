@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "saidutta69/MiniCPM5-2B-GGUF",
+  "slug": "saidutta69-minicpm5-2b-gguf",
+  "author": "saidutta69",
+  "url": "https://huggingface.co/saidutta69/MiniCPM5-2B-GGUF",
+  "created_at": "2026-09-17T15:06:39.000Z",
+  "updated_at": "2026-09-20T09:11:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "minicpm",
+    "minicpm5",
+    "imatrix",
+    "calibrated",
+    "reasoning",
+    "tool-calling",
+    "long-context",
+    "bilingual",
+    "local-llm",
+    "consumer-gpu",
+    "conversational",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:openbmb/MiniCPM5-2B",
+    "base_model:quantized:openbmb/MiniCPM5-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 9545977568,
+  "storage_human": "9.5 GB",
+  "base_model": "openbmb/MiniCPM5-2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pogoda długoterminowa Kalisz na 16, 25 i 45 dni – Długoterminowa ...",
+      "url": "https://pogoda.interia.pl/prognoza-dlugoterminowa-kalisz,cId,12482",
+      "snippet": "INTERIA Pogoda Polska Wielkopolska Kalisz – pogoda długoterminowa na 45 dni (17.09 - 11.10)"
+    },
+    {
+      "title": "Pogoda Kalisz - Prognoza pogody godzinowa na dziś i jutro - Onet.pl",
+      "url": "https://pogoda.onet.pl/prognoza-pogody/kalisz-298391",
+      "snippet": "Sprawdź prognozę pogody dla Kalisz. Pogoda na dziś, jutro, weekend i 45 dni. Temperatura, opady, wiatr i jakość powietrza dla Kalisz"
+    },
+    {
+      "title": "Kalisz pogoda dziś – Pogoda w INTERIA.PL – prognoza pogody …",
+      "url": "https://pogoda.interia.pl/prognoza-szczegolowa-kalisz,cId,12482",
+      "snippet": "Sprawdź temperaturę, opady deszczu i zachmurzenie."
+    },
+    {
+      "title": "Godzinowa prognoza: Kalisz, Wielkopolskie, Polska | AccuWeather",
+      "url": "https://www.accuweather.com/pl/pl/kalisz/276595/hourly-weather-forecast/276595",
+      "snippet": "Check current conditions in Kalisz, Wielkopolskie, Polska with radar, hourly, and more."
+    },
+    {
+      "title": "Prognoza pogody dla Kalisz, Pogoda na 16 dni - TwojaPogoda.pl",
+      "url": "https://www.twojapogoda.pl/prognoza-polska/wielkopolskie-kalisz/",
+      "snippet": "Prognoza pogody dla Kalisz na najbliższe dni. Sprawdź jaka pogoda będzie w Kalisz. Aktualne informacje meteorologiczne dla Kalisz."
+    }
+  ]
+}

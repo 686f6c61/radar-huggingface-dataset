@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "DJLougen/jeff-v0",
+  "slug": "djlougen-jeff-v0",
+  "author": "DJLougen",
+  "url": "https://huggingface.co/DJLougen/jeff-v0",
+  "created_at": "2026-09-17T17:11:16.000Z",
+  "updated_at": "2026-09-17T17:22:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "router",
+    "model-routing",
+    "llm-ops",
+    "minilm",
+    "dataset:DJLougen/eljefe-router-data",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 271620903,
+  "storage_human": "272 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Leuchten & Lichtplanung Zug | Sir Heian AG – Cham",
+      "url": "https://sir-heian.ch/",
+      "snippet": "Entdecken Sie bei Sir Heian hochwertige Beleuchtung, wo Eleganz und Funktionalität aufeinandertreffen. Unsere vielfältige Kollektion …"
+    },
+    {
+      "title": "Designleuchten Schweiz – Produkte | Sir Heian AG",
+      "url": "https://sir-heian.ch/portfolio",
+      "snippet": "Die vielseitige, blendfreie und augenschonende Leuchte ist werkzeuglos von 64 auf 79 mm höhenverstellbar."
+    },
+    {
+      "title": "Sir Heian AG - ineltec.ch",
+      "url": "https://www.ineltec.ch/de/p/sir-heian-ag.143565?_p=c",
+      "snippet": "Aug 28, 2026 · Wir sind Sir Heian AG aus Cham und leben Licht. Mit unseren Eigenmarken EOLED by Ledeshi und iQLEDS …"
+    },
+    {
+      "title": "Sir Heian - Light Systems, Alte SteinhauserStr. 29, Cham (2025)",
+      "url": "https://www.findglocal.com/CH/Cham/763937420375934/Sir-Heian---Light-Systems",
+      "snippet": "Bei Sir Heian AG transformieren wir Räume mit maßgeschneiderten Beleuchtungskonzepten, die nicht nur erleuchten, sondern …"
+    },
+    {
+      "title": "sir-heian-led-wand-und-deckenleuchten | Elektro-Material shop",
+      "url": "https://www.elektro-material.ch/de/shop/sir-heian-led-wand-und-deckenleuchten/p/mailto:",
+      "snippet": "Um Ihnen online eine bestmögliche Nutzererfahrung bieten zu können, verwenden wir Cookies und setzen Tracker für …"
+    }
+  ]
+}

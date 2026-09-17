@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "mradermacher/GLM-4.7-Flash-Name-NSFW-i1-GGUF",
+  "slug": "mradermacher-glm-4-7-flash-name-nsfw-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/GLM-4.7-Flash-Name-NSFW-i1-GGUF",
+  "created_at": "2026-09-17T15:15:30.000Z",
+  "updated_at": "2026-09-17T19:41:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "zh",
+    "base_model:2048lr/GLM-4.7-Flash-Name-NSFW",
+    "base_model:quantized:2048lr/GLM-4.7-Flash-Name-NSFW",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational",
+    "not-for-all-audiences"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 29943393920,
+  "parameters_human": "29.94B",
+  "storage_bytes": 317265841984,
+  "storage_human": "317.3 GB",
+  "base_model": "2048lr/GLM-4.7-Flash-Name-NSFW",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "盐选会员 - 知乎",
+      "url": "https://www.zhihu.com/topic/20747574",
+      "snippet": "知乎盐选会员，是付费内容服务和用户体验的一次升级，旨在让知友们花的时间更值得。 盐选会员不仅可以为广大知友提社区功能权 …"
+    },
+    {
+      "title": "侠盗飞车罪恶都市咋下载免费的，求大佬给资源？ - 知乎",
+      "url": "https://www.zhihu.com/question/301549544",
+      "snippet": "这个游戏必须使用中文来说，不然根本看不懂，小时候玩得时候都是 开一个坦克到处乱炸！ 在实测的过程中，我安装侠盗飞车也花了 …"
+    },
+    {
+      "title": "闲鱼和转转哪个比较靠谱？ - 知乎",
+      "url": "https://www.zhihu.com/question/65313130",
+      "snippet": "转转一生黑，说一下本人被坑的经历吧。 11.8号，本人在转转平台出售了一台电脑，挂上后被人秒拍，被骗子讲价后3300包邮卖出。 …"
+    },
+    {
+      "title": "从事建筑设计者的角度来看，Archdaily 网站好在哪里？ - 知乎",
+      "url": "https://www.zhihu.com/question/37626817",
+      "snippet": "Nov 18, 2015 · Archdaily这个网站提供的案例及图片十分充足，尤其在classics的分类下深有感触。 无数个当代建筑（1890s－2000s） …"
+    },
+    {
+      "title": "PS不能完成请求因为程序错误怎么办？ - 知乎",
+      "url": "https://www.zhihu.com/question/265386208",
+      "snippet": "PS2021安装好以后无论新建或者打开文件都会显示不能完成请求，因为程序错误。 我一开始也是卸载，重装，重启。最后还是上网找 …"
+    }
+  ]
+}

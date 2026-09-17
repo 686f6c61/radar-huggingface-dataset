@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "XujjHarvard/cs2881-hw1-rlvr",
+  "slug": "xujjharvard-cs2881-hw1-rlvr",
+  "author": "XujjHarvard",
+  "url": "https://huggingface.co/XujjHarvard/cs2881-hw1-rlvr",
+  "created_at": "2026-09-17T13:51:15.000Z",
+  "updated_at": "2026-09-17T13:57:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "cs2881-hw1",
+    "qwen2.5",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-3B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 6422892500,
+  "storage_human": "6.4 GB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cerca spedizioni o il tuo pacco - Poste.it",
+      "url": "https://www.poste.it/cerca/index.html",
+      "snippet": "Ricerca la tua spedizione o il tuo pacco, il CAP o le cassette postali vicino a te oppure ricerca i prodotti e servizi per privati e famiglie"
+    },
+    {
+      "title": "Posta Raccomandata: monitoraggio e tempi di consegna - Poste Italiane",
+      "url": "https://business.poste.it/professionisti-imprese/prodotti/posta-raccomandata.html",
+      "snippet": "Puoi spedire in Italia con consegna garantita dalla firma del destinatario grazie alla Posta Raccomandata. Leggi i tempi di consegna"
+    },
+    {
+      "title": "Poste Italiane - Servizi postali, finanziari e assicurativi",
+      "url": "https://www.poste.it/",
+      "snippet": "Poste Italiane vi presenta l´offerta di prodotti e servizi postali, finanziari e assicurativi, disponibili online e negli uffici postali presenti in …"
+    },
+    {
+      "title": "Login OIDC - BancoPosta Impresa Online",
+      "url": "https://bancopostaimpresaonline.poste.it/bpiol/",
+      "snippet": "BancoPosta Impresa Online offers secure online banking services for businesses, enabling efficient financial management and …"
+    },
+    {
+      "title": "NoidiPoste",
+      "url": "https://noidiposte.poste.it/",
+      "snippet": "Accesso dipendenti Per accedere alla nuova intranet NoidiPoste utilizza le tue credenziali di rete (userid@posteitaliane.it, password), …"
+    }
+  ]
+}

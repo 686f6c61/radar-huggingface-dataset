@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "jonyning/Reinforce-ning2026-9-17",
+  "slug": "jonyning-reinforce-ning2026-9-17",
+  "author": "jonyning",
+  "url": "https://huggingface.co/jonyning/Reinforce-ning2026-9-17",
+  "created_at": "2026-09-17T13:57:39.000Z",
+  "updated_at": "2026-09-17T13:57:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "CartPole-v1",
+    "reinforce",
+    "reinforcement-learning",
+    "custom-implementation",
+    "deep-rl-class",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3264,
+  "storage_human": "3264 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.com/",
+      "snippet": "Find local businesses, view maps and get driving directions in Google Maps."
+    },
+    {
+      "title": "Google Earth",
+      "url": "https://maps.google.com/intl/en/earth/",
+      "snippet": "Google Earth is the most photorealistic, digital version of our planet. Where do the images come from? How are they they put …"
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.com/maps/search/",
+      "snippet": "Map data ©2026 Google Terms 20 km Directions"
+    },
+    {
+      "title": "Google Earth",
+      "url": "https://maps.google.com/intl/nl/earth/download/gep/agree.html",
+      "snippet": "Jun 4, 2025 · Google Maps gebruiken om een andere kaartgerelateerde dataset (waaronder een kaart- of navigatiedataset, database …"
+    },
+    {
+      "title": "Google Earth",
+      "url": "https://maps.google.com/intl/fr/earth/download/gep/agree.html",
+      "snippet": "Jun 4, 2025 · Votre contenu dans Google Maps. Le contenu que vous importez, mettez en ligne, stockez, envoyez ou recevez par le …"
+    }
+  ]
+}

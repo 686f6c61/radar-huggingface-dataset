@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "Newmetrics/cohere-transcribe-arabic-07-2026",
+  "slug": "newmetrics-cohere-transcribe-arabic-07-2026",
+  "author": "Newmetrics",
+  "url": "https://huggingface.co/Newmetrics/cohere-transcribe-arabic-07-2026",
+  "created_at": "2026-09-17T13:59:39.000Z",
+  "updated_at": "2026-09-17T18:34:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "ar",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "cohere_asr",
+    "automatic-speech-recognition",
+    "audio",
+    "speech-recognition",
+    "transcription",
+    "arabic",
+    "asr",
+    "arabic-asr",
+    "arabic-dialect",
+    "arabic-speech-recognition",
+    "ar",
+    "en",
+    "base_model:CohereLabs/cohere-transcribe-03-2026",
+    "base_model:finetune:CohereLabs/cohere-transcribe-03-2026",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2065804048,
+  "parameters_human": "2.07B",
+  "storage_bytes": 4132742875,
+  "storage_human": "4.1 GB",
+  "base_model": "CohereLabs/cohere-transcribe-03-2026",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Szkoła Podstawowa nr 205 im. Żołnierzy Powstania Warszawskiego",
+      "url": "https://sp205waw.edupage.org/",
+      "snippet": "Drodzy Rodzice i Uczniowie,uczniowie Szkoły Podstawowej nr 205 w Warszawie mogą korzystać z mLegitymacji szkolnej – cyfrowej …"
+    },
+    {
+      "title": "Szkoła Podstawowa 205 w Warszawie | Mokotów - Facebook",
+      "url": "https://www.facebook.com/SzkolaPodstawowa205WWarszawie/",
+      "snippet": "Drodzy Rodzice i Uczniowie, uczniowie Szkoły Podstawowej nr 205 w Warszawie mogą korzystać z mLegitymacji szkolnej – cyfrowej …"
+    },
+    {
+      "title": "Szkoła Podstawowa nr 205 im. Żołnierzy Powstania Warszawskiego",
+      "url": "https://sp205waw.edupage.org/?eqa=d2lkPWhvbWVfTmV3c18xX3AmbmV3c2FyY2hpdmVmPSZvZmZzZXRfaG9tZV9OZXdzXzFfcD02MA%3D%3D",
+      "snippet": "Szkoła Podstawowa nr 205 im. Żołnierzy Powstania Warszawskiego. Jak wygląda życie dyslektyka? O swoich doświadczeniach …"
+    },
+    {
+      "title": "Szkoła Podstawowa nr 205 im. ŻOŁNIERZY POWSTANIA WARSZAWSKIEGO w Warszawie",
+      "url": "https://szkola.waw.pl/podstawowa/mokotow/60284",
+      "snippet": "Szkoła Podstawowa w Warszawie ul. Spartańska 4 Mokotów Warszawa. Adres, strona intenetowa, kontakt ze szkołą podstawową."
+    },
+    {
+      "title": "Szkoła Podstawowa nr 205 im. Żołnierzy Powstania Warszawskiego Warszawa",
+      "url": "https://waszaedukacja.pl/podstawowe/szkola-podstawowa-nr-205-im-zolnierzy-powstania-warszawskiego-warszawa-5674",
+      "snippet": "Wszystko co musisz wiedzieć o Szkoła Podstawowa nr 205 im. Żołnierzy Powstania Warszawskiego Warszawa - opis, opinie oraz …"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "zbeeb/Qwen2.5-Math-1.5B-GRPO-Staleness-4",
+  "slug": "zbeeb-qwen2-5-math-1-5b-grpo-staleness-4",
+  "author": "zbeeb",
+  "url": "https://huggingface.co/zbeeb/Qwen2.5-Math-1.5B-GRPO-Staleness-4",
+  "created_at": "2026-09-17T13:17:25.000Z",
+  "updated_at": "2026-09-17T13:18:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "grpo",
+    "math",
+    "reinforcement-learning",
+    "staleness-grpo",
+    "conversational",
+    "en",
+    "zh",
+    "dataset:zbeeb/Staleness-GRPO-DAPO-Math-17k",
+    "base_model:Qwen/Qwen2.5-Math-1.5B",
+    "base_model:finetune:Qwen/Qwen2.5-Math-1.5B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 6186317228,
+  "storage_human": "6.2 GB",
+  "base_model": "Qwen/Qwen2.5-Math-1.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Spielfilm in 3sat - 3sat-Mediathek",
+      "url": "https://www.3sat.de/film/spielfilm",
+      "snippet": "Filmkunst und großes, unterhaltsames Kino"
+    },
+    {
+      "title": "Film - 3sat-Mediathek",
+      "url": "https://www.3sat.de/film",
+      "snippet": "Erleben Sie anspruchsvolle Spielfilme, Dokumentarfilme und Kurzfilme – rund um die Uhr in der 3sat-Mediathek."
+    },
+    {
+      "title": "Startseite - 3sat-Mediathek",
+      "url": "https://www.3sat.de/",
+      "snippet": "Mar 22, 2026 · Videos und Livestreams in der 3satMediathek anschauen! Entdecken Sie Dokumentationen, Magazine aus Kultur, …"
+    },
+    {
+      "title": "Livestream, Programm und Sendung verpasst - 3sat-Mediathek",
+      "url": "https://www.3sat.de/programm",
+      "snippet": "Auf einen Blick 3sat Livestream, TV-Programm und verpasste Sendungen: Sehen Sie die Videos der 3sat-Mediathek wann und wo …"
+    },
+    {
+      "title": "Sendungen A-Z - 3sat-Mediathek",
+      "url": "https://www.3sat.de/sendungen-a-z",
+      "snippet": "Sie suchen eine bestimmte 3sat-Sendung? Hier finden Sie alle Dokumentationen, Reportagen, Magazine, Nachrichten und …"
+    }
+  ]
+}

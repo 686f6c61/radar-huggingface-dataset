@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Kanha-AI/0bcbff21-7176-48ae-b341-5c98144026f1-large",
+  "slug": "kanha-ai-0bcbff21-7176-48ae-b341-5c98144026f1-large",
+  "author": "Kanha-AI",
+  "url": "https://huggingface.co/Kanha-AI/0bcbff21-7176-48ae-b341-5c98144026f1-large",
+  "created_at": "2026-09-17T13:27:23.000Z",
+  "updated_at": "2026-09-17T13:27:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlc-llm",
+  "languages": [],
+  "tags": [
+    "mlc-llm",
+    "kanha",
+    "on-device",
+    "webgpu",
+    "fine-tuned",
+    "large",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2274342846,
+  "storage_human": "2.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Oura Ring. Smart Ring for Fitness, Stress, Sleep & Health.",
+      "url": "https://ouraring.com/",
+      "snippet": "Enhance your health journey with Oura. The Oura Ring provides round-the-clock insights into sleep, fitness, and stress for wellness. …"
+    },
+    {
+      "title": "Meet Oura Ring 5: Smart Ring for Sleep, Fitness, Health & Recovery",
+      "url": "https://ouraring.com/store/rings/oura-ring-5",
+      "snippet": "Meet Oura Ring 5. Now 40% smaller with a titanium design and up to 9 days of battery for sleep, activity, stress, heart health, and …"
+    },
+    {
+      "title": "Contact Us | Oura Member Care",
+      "url": "https://support.ouraring.com/hc/en-us/articles/360047222554-Contact-Us",
+      "snippet": "Jun 10, 2026 · For help with an issue, to report a bug, or to suggest a new feature, reach out to us.ChatChat is available 24/7. Chat …"
+    },
+    {
+      "title": "Promotions | Oura Member Care",
+      "url": "https://support.ouraring.com/hc/en-us/articles/10880167822995-Promotions",
+      "snippet": "Aug 24, 2026 · Partners occasionally offer discounts and promotions on Oura products. We also partner with other leading health and …"
+    },
+    {
+      "title": "Oura on the web",
+      "url": "https://cloud.ouraring.com/",
+      "snippet": "Sign in to access Oura's web portal for managing your account and exploring health insights."
+    }
+  ]
+}

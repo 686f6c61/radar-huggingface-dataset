@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "devendradhakad/autodroid-litert-community-parakeet-tdt-0.6b-v3",
+  "slug": "devendradhakad-autodroid-litert-community-parakeet-tdt-0-6b-v3",
+  "author": "devendradhakad",
+  "url": "https://huggingface.co/devendradhakad/autodroid-litert-community-parakeet-tdt-0.6b-v3",
+  "created_at": "2026-09-17T15:05:19.000Z",
+  "updated_at": "2026-09-17T15:05:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tflite",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 614261072,
+  "storage_human": "614 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sklum — MoneySavingExpert Forum",
+      "url": "https://forums.moneysavingexpert.com/discussion/6160528/sklum",
+      "snippet": "Jun 23, 2020 · Hello everyone We ordered a couple of chairs in May from Sklum with a delivery date for beginning of June."
+    },
+    {
+      "title": "JPMC RE PAYPAL INT direct debit appeared??",
+      "url": "https://forums.moneysavingexpert.com/discussion/1317181/jpmc-re-paypal-int-direct-debit-appeared",
+      "snippet": "Nov 27, 2008 · Hello all I have just checked my account and a direct debit has appeared for 'JPMC RE PAYPAL INT' As i am clearing …"
+    },
+    {
+      "title": "Arnaque ARAMIS Auto - Forum Que Choisir",
+      "url": "https://forum.quechoisir.org/arnaque-aramis-auto-t164149.html",
+      "snippet": "Jul 20, 2018 · Venez contribuer au forum de la 1re association de consommateurs de France !"
+    },
+    {
+      "title": "Sklum - Vente en ligne - Forum Que Choisir",
+      "url": "https://forum.quechoisir.org/sklum-t289887.html",
+      "snippet": "Jan 7, 2021 · Sklum Messagepar Kamilaa » jeu. janv. 07, 2021 7:00 pm Bonjour à tous cela fait un mois que j'ai refuser un colis en …"
+    },
+    {
+      "title": "Regular competitions - Lists & Indexes - MoneySavingExpert Forum",
+      "url": "https://forums.moneysavingexpert.com/categories/regular-competitions",
+      "snippet": "Dec 7, 2022 · Categories - Regularly updated lists of recurring magazine puzzles, daily entry comps etc."
+    }
+  ]
+}

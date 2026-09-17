@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Smambu/flan-t5-base-adversarialqa-ft",
+  "slug": "smambu-flan-t5-base-adversarialqa-ft",
+  "author": "Smambu",
+  "url": "https://huggingface.co/Smambu/flan-t5-base-adversarialqa-ft",
+  "created_at": "2026-09-17T17:00:46.000Z",
+  "updated_at": "2026-09-17T17:01:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 247577856,
+  "parameters_human": "247.6M",
+  "storage_bytes": 990345064,
+  "storage_human": "990 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/youtube",
+      "snippet": "Welcome to the official YouTube channel – a home for the biggest moments, the smallest obsessions, and everything in between. …"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed/homepage",
+      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new …"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/@________________.",
+      "snippet": "Explore and enjoy a wide range of videos, music, and more on YouTube."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/@en.---",
+      "snippet": "Share your videos and discover content from friends, family, and creators worldwide on YouTube."
+    }
+  ]
+}

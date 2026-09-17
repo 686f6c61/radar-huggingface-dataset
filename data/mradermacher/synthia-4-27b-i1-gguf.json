@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Synthia-4-27B-i1-GGUF",
+  "slug": "mradermacher-synthia-4-27b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Synthia-4-27B-i1-GGUF",
+  "created_at": "2026-09-17T16:53:33.000Z",
+  "updated_at": "2026-09-17T21:53:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "synthia",
+    "personal-ai",
+    "assistant",
+    "conversational",
+    "agentic",
+    "reasoning",
+    "long-context",
+    "tool-use",
+    "qwen3",
+    "multimodal",
+    "mtp",
+    "en",
+    "base_model:migtissera/Synthia-4-27B",
+    "base_model:quantized:migtissera/Synthia-4-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 218553882944,
+  "storage_human": "218.6 GB",
+  "base_model": "migtissera/Synthia-4-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "祝大哥顺口溜押韵 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/530737338846911005.html",
+      "snippet": "祝大哥顺口溜押韵祝大哥顺口溜押韵如下：1、祝大哥，吃不愁，穿不愁，不住平房住高楼。2、祝大哥，多挣钱少生气，年年不缺人民 …"
+    },
+    {
+      "title": "数字1-100的英文怎么写 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/810271481795632972.html",
+      "snippet": "数字1-100的英文怎么写1 one 2 two 3 three 4 four 5 five 6 six 7 seven 8 eight 9 nine 10 ten 11 eleven 12 twelve 13 thirteen 14 fourteen …"
+    },
+    {
+      "title": "endnote插入文献时出现 {，#}这样的乱码，怎么解？ - 知乎",
+      "url": "https://www.zhihu.com/question/44969655",
+      "snippet": "曾经出现过这样的情况，供参考： 问题描述：直接把在endnote下完成的word文档1发给老师修改 ️老师将修改过后，并将文档1整合 …"
+    },
+    {
+      "title": "腾讯 DNS，阿里 DNS，百度 DNS 有什么区别？哪个更好用？",
+      "url": "https://www.zhihu.com/question/48438173",
+      "snippet": "腾讯 DNS IP：119.29.29.29 备用：182.254.116.116 阿里DNS IP：223.5.5.5 223.6.6.6 百度DNS IP:180.76.76.76 之前测试过，感觉腾 …"
+    },
+    {
+      "title": "Find the Value of Sin 37°, Sin 53°, Tan 37°, Tan 53° in ... - Cuemath",
+      "url": "https://www.cuemath.com/questions/find-the-value-of-sin37-sin53-tan37-tan53-in-terms-of-fraction/",
+      "snippet": "Find the value of sin 37°, sin 53°, tan 37°, tan 53° in terms of the fraction. We can use complementary relations to find the values."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "abhishekjha1008/kraken-blla-danish-segmenter",
+  "slug": "abhishekjha1008-kraken-blla-danish-segmenter",
+  "author": "abhishekjha1008",
+  "url": "https://huggingface.co/abhishekjha1008/kraken-blla-danish-segmenter",
+  "created_at": "2026-09-17T17:36:55.000Z",
+  "updated_at": "2026-09-20T12:11:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": null,
+  "languages": [
+    "da"
+  ],
+  "tags": [
+    "kraken",
+    "baseline-segmentation",
+    "text-line-segmentation",
+    "layout-analysis",
+    "htr",
+    "historical",
+    "danish",
+    "image-segmentation",
+    "da",
+    "dataset:abhishekjha1008/danish-htr-synthetic",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5056200,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PHOTO E.Leclerc : le site d'impression de photos souvenirs",
+      "url": "https://www.photo.leclerc/",
+      "snippet": "Développez vos photos en ligne, créez votre livre photo, déco murale, poster photo, photo sur toile ou offrez simplement un cadeau …"
+    },
+    {
+      "title": "Tirage photo en ligne - Impression photo | Photo E.Leclerc",
+      "url": "https://www.photo.leclerc/tirages-photo.html",
+      "snippet": "Tirage photo : imprimez vos plus belles photos à petits prix Vos plus belles photos ne demandent qu’à être imprimées et exposées ! …"
+    },
+    {
+      "title": "Livre photo - Créez un album photo personnalisé pas cher | PHOTO …",
+      "url": "https://www.photo.leclerc/livres-photo-cewe.html",
+      "snippet": "Laissez des commentaires sur certaines photos, des anecdotes ou des annotations pour un livre photo original et personnalisé avec …"
+    },
+    {
+      "title": "Tirage photo classique | PHOTO E.Leclerc",
+      "url": "https://www.photo.leclerc/tirages-photo/tirages-photo.html",
+      "snippet": "Vous souhaitez imprimer vos photos ? Découvrez nos tirages photo classiques à prix E.Leclerc et imprimez facilement vos souvenirs …"
+    },
+    {
+      "title": "Borne tirage photo instantané (magasins) - PHOTO E.Leclerc",
+      "url": "https://www.photo.leclerc/tirages-photo/trouver-borne.html",
+      "snippet": "Enfin, pensez à la conservation de vos tirages. Pour préserver vos photos dans le temps, évitez de les exposer directement à la …"
+    }
+  ]
+}

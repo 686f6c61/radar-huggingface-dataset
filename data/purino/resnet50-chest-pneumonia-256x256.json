@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Purino/resnet50-chest-pneumonia-256x256",
+  "slug": "purino-resnet50-chest-pneumonia-256x256",
+  "author": "Purino",
+  "url": "https://huggingface.co/Purino/resnet50-chest-pneumonia-256x256",
+  "created_at": "2026-09-17T12:43:50.000Z",
+  "updated_at": "2026-09-17T12:44:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "resnet",
+    "image-classification",
+    "medical-imaging",
+    "chest-xray",
+    "pneumonia",
+    "resnet50",
+    "pytorch",
+    "dataset:thomasdubail/chest-pneumonia-256x256",
+    "base_model:microsoft/resnet-50",
+    "base_model:finetune:microsoft/resnet-50",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 23565250,
+  "parameters_human": "23.6M",
+  "storage_bytes": 94302952,
+  "storage_human": "94 MB",
+  "base_model": "microsoft/resnet-50",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pressure transmitter Type AKS 32 and AKS 33 - Danfoss",
+      "url": "https://assets.danfoss.com/documents/latest/186172/AI309147088294en-000301.pdf",
+      "snippet": "Pressure transmitter Type AKS 32 and AKS 33 AKS 32 and AKS 33 are pressure transmitters that measure a pressure and convert …"
+    },
+    {
+      "title": "Pressure Transmitter, Type AKS 33 - Danfoss",
+      "url": "https://assets.danfoss.com/documents/latest/102534/AI000086410400en-000101.pdf",
+      "snippet": "Pressure transmitters, type AKS 33 ... Danfoss Inc., Refrigeration & Air-Conditioning Division, 7941 Corporate Drive, Baltimore, MD …"
+    },
+    {
+      "title": "Transmetteurs de pression AKS 32 et AKS 33 - Danfoss",
+      "url": "https://www.danfoss.com/fr-fr/products/dcs/sensors-and-transmitters/hvacr-pressure-sensors/air-conditioning-refrigeration-pressure-transmitters/aks-32-and-aks-33-pressure-transmitters/",
+      "snippet": "AKS 32 et AKS 33 sont des transmetteurs de pression qui mesurent une pression et convertissent la valeur mesurée en un signal …"
+    },
+    {
+      "title": "AKS 32 and AKS 33 pressure transmitters - Danfoss",
+      "url": "https://www.danfoss.com/en/products/dcs/sensors-and-transmitters/hvacr-pressure-sensors/air-conditioning-refrigeration-pressure-transmitters/aks-32-and-aks-33-pressure-transmitters/",
+      "snippet": "AKS 32 and AKS 33 are pressure transmitters that measure a pressure and convert the measured value to a standard signal."
+    },
+    {
+      "title": "Data sheet Pressure transmitter AKS 32 and AKS 33",
+      "url": "https://www.rpmecatronica.com/system/storage/download/AKS%2032%20y%20AKS%2033.pdf.ivkFtjJDcZ0xEF33h29HnNUSaP41ftnE",
+      "snippet": "AKS 32 and AKS 33 are pressure transmitters that measure a pressure and convert the measured value to a standard signal:"
+    }
+  ]
+}

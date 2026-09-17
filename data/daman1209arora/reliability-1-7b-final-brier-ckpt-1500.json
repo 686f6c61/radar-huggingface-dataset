@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "daman1209arora/Reliability-1.7B-final-brier-ckpt-1500",
+  "slug": "daman1209arora-reliability-1-7b-final-brier-ckpt-1500",
+  "author": "daman1209arora",
+  "url": "https://huggingface.co/daman1209arora/Reliability-1.7B-final-brier-ckpt-1500",
+  "created_at": "2026-09-17T16:27:56.000Z",
+  "updated_at": "2026-09-17T16:28:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2031739904,
+  "parameters_human": "2.03B",
+  "storage_bytes": 4074938294,
+  "storage_human": "4.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Official Site | TotalAV Award-Winning Antivirus Provider",
+      "url": "https://www.totalav.com/",
+      "snippet": "TotalAV's Award-Winning antivirus instantly blocks harmful malware threats and viruses in real-time, keeping your personal data and …"
+    },
+    {
+      "title": "Free Antivirus 2026 – Download Free Antivirus Software ... - TotalAV",
+      "url": "https://www.totalav.com/free-antivirus-software",
+      "snippet": "Download TotalAV free antivirus software 2026. Stay 100% safe from malware and viruses with TotalAV free antivirus protection with …"
+    },
+    {
+      "title": "Cancel a Subscription - TotalAV",
+      "url": "https://help.totalav.com/en/billing/-/how-do-i-cancel-my-account",
+      "snippet": "Looking to cancel a subscription with TotalAV? This article will explain how to cancel your subscriptions through your Online Portal."
+    },
+    {
+      "title": "TotalAV Support Centre – Get Help With Your TotalAV Account",
+      "url": "https://help.totalav.com/en",
+      "snippet": "TotalAV Help Center - get started by selecting a category!"
+    },
+    {
+      "title": "Total Security - Total Drive - Welcome",
+      "url": "https://auth.totalav.com/",
+      "snippet": "Create an Account or Reset your Password Create a Free Account"
+    }
+  ]
+}

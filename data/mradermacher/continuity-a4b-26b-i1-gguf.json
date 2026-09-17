@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "mradermacher/continuity-a4b-26b-i1-GGUF",
+  "slug": "mradermacher-continuity-a4b-26b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/continuity-a4b-26b-i1-GGUF",
+  "created_at": "2026-09-17T16:37:01.000Z",
+  "updated_at": "2026-09-17T23:45:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "structured-extraction",
+    "json",
+    "html",
+    "schema-constrained",
+    "vllm",
+    "bf16",
+    "merged-lora",
+    "moe",
+    "en",
+    "base_model:GestaltLabs/continuity-a4b-26b",
+    "base_model:quantized:GestaltLabs/continuity-a4b-26b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25233142046,
+  "parameters_human": "25.23B",
+  "storage_bytes": 241136354528,
+  "storage_human": "241.1 GB",
+  "base_model": "GestaltLabs/continuity-a4b-26b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cyrlica w Windows XP - dobreprogramy - forum",
+      "url": "https://forum.dobreprogramy.pl/t/cyrlica-w-windows-xp/340564",
+      "snippet": "Aug 23, 2010 · Aby używać nowych ustawień języka, musisz zamknąć i ponownie uruchomić wszystkie otwarte aplikacje pakietu …"
+    },
+    {
+      "title": "Jak się formatuje bios - Problemy z ... - dobreprogramy - forum",
+      "url": "https://forum.dobreprogramy.pl/t/jak-sie-formatuje-bios/236799",
+      "snippet": "Nov 14, 2008 · Witam serdecznie, chciałbym się dowiedzieć jak się formatuje bios i co po tym sie dzieje. Czy jak mam zainstalowany …"
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/windows/forum/all/driver-irql-not-less-or-equal-to-bsod-rootkitvirus/881ad2c8-da74-4ccf-960f-be5a16a2083f",
+      "snippet": ""
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://www.answers.microsoft.com/ja-jp/msteams/forum/all/teamsÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â§ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¾ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã¢â‚¬Å“ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¾ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â§ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â°ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¹ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â£ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¯ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â£ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â©/4850be98-e651-4d92-8a05-d1489edbf168",
+      "snippet": ""
+    },
+    {
+      "title": "nLite-Windows XP Home SP2b - legalność - Licencjonowanie ... - forum",
+      "url": "https://forum.dobreprogramy.pl/t/nlite-windows-xp-home-sp2b-legalnosc/178088",
+      "snippet": "Jan 14, 2008 · Witam.Chciałbym się dowiedzieć jednej rzeczy: jeśli powyłączam zbędne usługi jeśli pousuwam zbędne programy np. …"
+    }
+  ]
+}

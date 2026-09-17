@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "devendradhakad/autodroid-litert-community-MiniCPM5-1B",
+  "slug": "devendradhakad-autodroid-litert-community-minicpm5-1b",
+  "author": "devendradhakad",
+  "url": "https://huggingface.co/devendradhakad/autodroid-litert-community-MiniCPM5-1B",
+  "created_at": "2026-09-17T15:04:40.000Z",
+  "updated_at": "2026-09-17T15:04:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "litert",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "litert",
+    "minicpm",
+    "minicpm5",
+    "tflite",
+    "on-device",
+    "edge-ai",
+    "text-generation",
+    "en",
+    "zh",
+    "arxiv:2506.07900",
+    "base_model:openbmb/MiniCPM5-1B",
+    "base_model:finetune:openbmb/MiniCPM5-1B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 792625152,
+  "storage_human": "793 MB",
+  "base_model": "openbmb/MiniCPM5-1B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Download areas & navigate offline in Google Maps",
+      "url": "https://support.google.com/maps/answer/6291838?hl=en&co=GENIE.Platform%3DAndroid",
+      "snippet": "Download a map to use offline in Google Maps On your Android phone or tablet, open the Google Maps app . If you don’t have the …"
+    },
+    {
+      "title": "Download areas & navigate offline in Google Maps",
+      "url": "https://support.google.com/maps/answer/6291838?hl=en&co=GENIE.Platform%3DiOS",
+      "snippet": "Use offline maps in Google Maps After you download an area, use the Google Maps app just like you normally would. If your internet …"
+    },
+    {
+      "title": "how do I use google maps offline with android auto?",
+      "url": "https://support.google.com/maps/thread/2340959/how-do-i-use-google-maps-offline-with-android-auto?hl=en",
+      "snippet": "Mar 13, 2019 · You need to download the maps on your phone before connecting you can use them in Android Auto."
+    },
+    {
+      "title": "Download areas and navigate offline in Google Maps",
+      "url": "https://support.google.com/maps/answer/6291838?hl=en-GB&co=GENIE.Platform%3DiOS",
+      "snippet": "Use offline maps in Google Maps After you've downloaded an area, use the Google Maps app just as you normally would. If your …"
+    },
+    {
+      "title": "How do I cache GE map data for use offline? - Google Help",
+      "url": "https://support.google.com/earth/thread/43586208/how-do-i-cache-ge-map-data-for-use-offline?hl=en",
+      "snippet": "Apr 30, 2020 · How do I cache GE map data for use offline? I know how to clear the cache, and then load it with data from my area of …"
+    }
+  ]
+}

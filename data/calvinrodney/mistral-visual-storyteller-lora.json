@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "calvinrodney/mistral-visual-storyteller-lora",
+  "slug": "calvinrodney-mistral-visual-storyteller-lora",
+  "author": "calvinrodney",
+  "url": "https://huggingface.co/calvinrodney/mistral-visual-storyteller-lora",
+  "created_at": "2026-09-17T16:37:41.000Z",
+  "updated_at": "2026-09-17T16:37:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "mistral",
+    "trl",
+    "en",
+    "base_model:unsloth/mistral-7b-instruct-v0.3-bnb-4bit",
+    "base_model:finetune:unsloth/mistral-7b-instruct-v0.3-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 168419644,
+  "storage_human": "168 MB",
+  "base_model": "unsloth/mistral-7b-instruct-v0.3-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "27 Best Milkshake Recipes",
+      "url": "https://www.allrecipes.com/gallery/top-rated-milkshake-recipes/",
+      "snippet": "Feb 8, 2022 · We've got plenty of ideas for flavors, combos, and garnishes to take your shakes over the top. Check out all our …"
+    },
+    {
+      "title": "The 10 Best Protein Shake Recipes - Fit Foodie Finds",
+      "url": "https://fitfoodiefinds.com/best-protein-shakes/",
+      "snippet": "Jul 7, 2026 · These are my 10 best protein shake recipes with flavors for every taste! Each one is packed with protein to keep you …"
+    },
+    {
+      "title": "18 Milkshake Recipes You Must Try - The Spruce Eats",
+      "url": "https://www.thespruceeats.com/milkshake-recipes-you-must-try-2098298",
+      "snippet": "Jul 6, 2021 · These delicious milkshake recipes include 18 varieties of milkshakes based on one basic recipe. That's over two weeks …"
+    },
+    {
+      "title": "Milkshake recipes | Good Food",
+      "url": "https://www.bbcgoodfood.com/recipes/collection/milkshake-recipes",
+      "snippet": "Whizz up a refreshing milkshake for a quick breakfast or treat. We've got indulgent chocolate, banana and strawberry flavours, plus …"
+    },
+    {
+      "title": "Smoothie recipes - BBC Food",
+      "url": "https://www.bbc.co.uk/food/smoothie",
+      "snippet": "A homemade smoothie is a great healthy breakfast or afternoon pick-me-up. Quickly whip up a mango smoothie, banana smoothie …"
+    }
+  ]
+}

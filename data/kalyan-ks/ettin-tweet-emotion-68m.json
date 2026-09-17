@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "kalyan-ks/ettin-tweet-emotion-68m",
+  "slug": "kalyan-ks-ettin-tweet-emotion-68m",
+  "author": "kalyan-ks",
+  "url": "https://huggingface.co/kalyan-ks/ettin-tweet-emotion-68m",
+  "created_at": "2026-09-17T12:52:43.000Z",
+  "updated_at": "2026-09-19T01:38:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "text-classification",
+    "Tweet-Emotion-Classification",
+    "en",
+    "dataset:cardiffnlp/tweet_eval",
+    "base_model:jhu-clsp/ettin-encoder-68m",
+    "base_model:finetune:jhu-clsp/ettin-encoder-68m",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 68409348,
+  "parameters_human": "68.4M",
+  "storage_bytes": 273649680,
+  "storage_human": "274 MB",
+  "base_model": "jhu-clsp/ettin-encoder-68m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Outlook",
+      "url": "https://www.outlook.com/welearn365.com",
+      "snippet": ""
+    },
+    {
+      "title": "Outlook",
+      "url": "https://www.outlook.com/owa/schools.Nyc.gov",
+      "snippet": ""
+    },
+    {
+      "title": "Outlook",
+      "url": "https://outlook.com/dal.ca",
+      "snippet": ""
+    },
+    {
+      "title": "Outlook",
+      "url": "https://www.outlook.com/owa/education.tas.edu.au",
+      "snippet": ""
+    },
+    {
+      "title": "Outlook",
+      "url": "https://www.outlook.com/owa/uk.gdst.net",
+      "snippet": ""
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "chiqui7/yolo11-manga-seg",
+  "slug": "chiqui7-yolo11-manga-seg",
+  "author": "chiqui7",
+  "url": "https://huggingface.co/chiqui7/yolo11-manga-seg",
+  "created_at": "2026-09-17T16:48:12.000Z",
+  "updated_at": "2026-09-17T16:55:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "yolo",
+    "instance-segmentation",
+    "manga",
+    "text-detection",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 41227478,
+  "storage_human": "41 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Editor PDF Gratuito e Compilatore di Moduli. Modifica PDF online",
+      "url": "https://www.ilovepdf.com/it/modificare-pdf",
+      "snippet": "Editor PDF Online Gratuito. Aggiungi facilmente testo, forme, commenti ed evidenziazioni a un file PDF. Compila i moduli PDF e …"
+    },
+    {
+      "title": "Editor PDF Gratuito: Modifica file PDF dal browser - Smallpdf",
+      "url": "https://smallpdf.com/it/modificare-pdf",
+      "snippet": "Modifica i tuoi PDF gratis su qualsiasi dispositivo. Aggiungi facilmente testo, forme, immagini, evidenziazioni, note adesive e altro con …"
+    },
+    {
+      "title": "PDF editor Online facile da usare - Sejda",
+      "url": "https://www.sejda.com/it/pdf-editor",
+      "snippet": "Seleziona un'immagine dal tuo computer e poi aggiungila alla pagina PDF. Puoi trascinarla con il mouse per spostarla, trascinarla …"
+    },
+    {
+      "title": "Miglior Editor PDF online gratuito – Modifica i file PDF - Adobe",
+      "url": "https://www.adobe.com/it/acrobat/online/pdf-editor.html?msockid=1cfd40fbda0c6ee2385d572cdbb26f1e",
+      "snippet": "Modifica velocemente i documenti PDF. Nel nostro editor PDF online puoi modificare facilmente il testo, aggiungere note, …"
+    },
+    {
+      "title": "iLovePDF | Strumenti PDF online gratuiti",
+      "url": "https://www.ilovepdf.com/it",
+      "snippet": "Strumenti online senza installazione e completamente gratuiti per unire PDF, dividere PDF, Comprimere PDF, convertire documenti …"
+    }
+  ]
+}

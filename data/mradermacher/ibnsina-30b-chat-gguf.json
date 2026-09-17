@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "mradermacher/ibnsina-30b-chat-GGUF",
+  "slug": "mradermacher-ibnsina-30b-chat-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/ibnsina-30b-chat-GGUF",
+  "created_at": "2026-09-17T13:17:27.000Z",
+  "updated_at": "2026-09-17T14:49:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "fa",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "persian",
+    "farsi",
+    "ibnsina",
+    "qwen3_moe",
+    "chat",
+    "instruction-tuned",
+    "fa",
+    "en",
+    "base_model:ibnsina-llm/ibnsina-30b-chat",
+    "base_model:quantized:ibnsina-llm/ibnsina-30b-chat",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30532122624,
+  "parameters_human": "30.53B",
+  "storage_bytes": 208115944608,
+  "storage_human": "208.1 GB",
+  "base_model": "ibnsina-llm/ibnsina-30b-chat",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home - Agenzia delle dogane e dei Monopoli",
+      "url": "https://www.adm.gov.it/portale/home",
+      "snippet": "Spedizioni di modico valore da Paesi extra-UE: le novità dal 1° luglio 2026"
+    },
+    {
+      "title": "Agenzia delle dogane e dei Monopoli - Agenzia delle Accise, Dogane e ...",
+      "url": "https://www.adm.gov.it/portale/dogane/operatore/servizi-online/servizio-telematico-doganale-e.d.i.",
+      "snippet": "Ministero dell'Economia e delle finanze Agenzia delle Dogane e dei Monopoli Seguici su:"
+    },
+    {
+      "title": "AIDA",
+      "url": "https://aidaonline7.adm.gov.it/nsitaricinternet/TaricServlet",
+      "snippet": "Benvenuti! Questa e' la Home Page della Tariffa Doganale d'uso Integrata. Dai menu' sovrastanti potrete accedere in forma nuova e …"
+    },
+    {
+      "title": "STD - Accesso al servizio",
+      "url": "https://telematico.adm.gov.it/TelematicoFunzioniDiAccessoWEBNG/login.jsp",
+      "snippet": "Accesso al servizio Per accedere alla funzionalità selezionata è necessario autenticarsi al sistema."
+    },
+    {
+      "title": "Servizio Telematico Doganale - Home page",
+      "url": "https://telematico.adm.gov.it/TelematicoFunzioniDiAccessoWEBNG/FunzioniDiAccessoServlet?UC=10/SC=1/ST=1",
+      "snippet": "Comunicazione del 11/06/2026 15:35:26 A partire dalle 9 della giornata del 12 giugno 2026 sono previste delle attivita di …"
+    }
+  ]
+}

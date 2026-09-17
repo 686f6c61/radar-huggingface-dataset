@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l31_remove30_swapgapiter_b010_r07",
+  "slug": "jeesup-svd-safety-l31_remove30_swapgapiter_b010_r07",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l31_remove30_swapgapiter_b010_r07",
+  "created_at": "2026-09-17T18:30:55.000Z",
+  "updated_at": "2026-09-17T18:57:19.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama3",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "license:llama3.1",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766296,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "कक्षा 10 के लिए एनसीईआरटी की पुस्तकें (हिंदी अंग्रेजी मीडियम …",
+      "url": "https://hindi.tiwariacademy.com/ncert-books/class-10/",
+      "snippet": "Jan 16, 2024 · कक्षा 10 के लिए एनसीईआरटी की पुस्तकें हिंदी, अंग्रेजी, गणित, विज्ञान, संस्कृत सामाजिक विज्ञान 2026-27 …"
+    },
+    {
+      "title": "एनसीईआरटी समाधान कक्षा 10 (हिंदी में) | Class 10 NCERT Solutions …",
+      "url": "https://hindi.aglasem.com/ncert-solutions-class-10/",
+      "snippet": "Aug 25, 2026 · कक्षा 10 एनसीईआरटी समाधान हिंदी में — Class 10 NCERT Solutions, सभी विषयों के अध्याय-वार प्रश्न-उत्तर …"
+    },
+    {
+      "title": "ई पुस्तकालय : मुफ्त हिंदी पुस्तकालय | E Pustakalaya | Free Digital ...",
+      "url": "https://epustakalay.com/",
+      "snippet": "ई पुस्तकालय : ऑनलाइन पढ़े व डाउनलोड करें मुफ्त हिंदी पुस्तकें व रिव्यू | EPustakalay provides Free Hindi PDF Books, …"
+    },
+    {
+      "title": "एनसीईआरटी की पुस्तकें कक्षा 10 हिंदी पीडीएफ (NCERT Books Class 10 …",
+      "url": "https://parikshapoint.com/ncert-books-class-10-hindi/",
+      "snippet": "Nov 5, 2025 · एनसीईआरटी की पुस्तकें कक्षा 10 हिंदी पीडीएफ (NCERT Books Class 10 Hindi PDF): छात्र इस आर्टिकल के …"
+    },
+    {
+      "title": "1500+ मुफ्त हिंदीं पुस्तक का संग्रह | Hindi Books PDF Free …",
+      "url": "https://panotbook.com/hindi-pdf/",
+      "snippet": "Jul 26, 2026 · यह एक हिंदी किताबों का संग्रह है| इस संग्रहमें 1500 से अधिक हिंदी पुस्तक को pdf के स्वरूप में उपलब्ध कराया …"
+    }
+  ]
+}

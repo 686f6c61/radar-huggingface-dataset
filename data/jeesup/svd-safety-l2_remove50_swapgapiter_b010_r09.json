@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l2_remove50_swapgapiter_b010_r09",
+  "slug": "jeesup-svd-safety-l2_remove50_swapgapiter_b010_r09",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapgapiter_b010_r09",
+  "created_at": "2026-09-17T12:21:44.000Z",
+  "updated_at": "2026-09-17T12:30:08.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama2",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-2-7b-chat-hf",
+    "base_model:finetune:meta-llama/Llama-2-7b-chat-hf",
+    "license:llama2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13477364771,
+  "storage_human": "13.5 GB",
+  "base_model": "meta-llama/Llama-2-7b-chat-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Particulier - impots.gouv.fr",
+      "url": "https://www.impots.gouv.fr/particulier",
+      "snippet": "À la une Particulier Professionnel Demande d'aide de 100 € pour les travailleurs « grands rouleurs » Publié le 27 mai 2026 Vous avez …"
+    },
+    {
+      "title": "J'accède à mon espace Finances publiques et à mes services en ligne",
+      "url": "https://www.impots.gouv.fr/particulier/jaccede-mon-espace-particulier-et-mes-services-en-ligne",
+      "snippet": "Mar 30, 2016 · Guide d'accès et d'utilisation des services en ligne pour les particuliers Questions fréquentes J’ai égaré les identifiants …"
+    },
+    {
+      "title": "Déclarer mes revenus - impots.gouv.fr",
+      "url": "https://www.impots.gouv.fr/particulier/declarer-mes-revenus",
+      "snippet": "les questions - réponses : Quelle est la date limite de dépôt de ma déclaration de revenus ? Puis-je déclarer en ligne pour ma …"
+    },
+    {
+      "title": "Avis d'impôt sur les revenus - impots.gouv.fr",
+      "url": "https://www.impots.gouv.fr/particulier/avis-dimpot-sur-le-revenu",
+      "snippet": "Aug 18, 2016 · Votre avis d'impôt sur les revenus vous permet de justifier des revenus que vous avez déclarés à l'administration …"
+    },
+    {
+      "title": "Créer et accéder à mon espace - impots.gouv.fr",
+      "url": "https://www.impots.gouv.fr/particulier/acceder-mon-espace",
+      "snippet": "Jul 27, 2016 · Si vous n’avez pas encore d'espace Finances publiques sur impots.gouv.fr, vous devez en créer un lors de la première …"
+    }
+  ]
+}

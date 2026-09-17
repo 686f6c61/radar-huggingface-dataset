@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l2_remove40_swapgapiter_evfront_b010_r08",
+  "slug": "jeesup-svd-safety-l2_remove40_swapgapiter_evfront_b010_r08",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l2_remove40_swapgapiter_evfront_b010_r08",
+  "created_at": "2026-09-17T14:51:49.000Z",
+  "updated_at": "2026-09-17T15:19:02.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama2",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-2-7b-chat-hf",
+    "base_model:finetune:meta-llama/Llama-2-7b-chat-hf",
+    "license:llama2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13477364771,
+  "storage_human": "13.5 GB",
+  "base_model": "meta-llama/Llama-2-7b-chat-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BNP Paribas Professionnels | Banque et assurance",
+      "url": "https://mabanquepro.bnpparibas/",
+      "snippet": "Bienvenue sur votre site BNP Paribas pro, banque et assurances d'un monde qui change. Accédez à vos comptes ou découvrez nos …"
+    },
+    {
+      "title": "Gérer ses comptes en ligne | BNP Paribas Professionnels",
+      "url": "https://mabanquepro.bnpparibas/fr/notre-offre-pro/comptes-cartes-et-services/gerer-ses-comptes-en-ligne",
+      "snippet": "GÉRER SES COMPTES EN LIGNE Retrouvez l’ensemble de nos services en ligne pour faciliter la gestion de vos comptes en …"
+    },
+    {
+      "title": "BNP Paribas: Leader européen des services bancaires et financiers | BNP ...",
+      "url": "https://mabanque.bnpparibas/",
+      "snippet": "Leader européen des services bancaires (2) Label Meilleur Conseil Epargne 2025 (3) Des conseillers experts en ligne et en agence"
+    },
+    {
+      "title": "Gérer ses comptes en France et à l'étranger | BNP Paribas",
+      "url": "https://mabanque.bnpparibas/fr/gerer/comptes-et-formules/gerer-ses-comptes",
+      "snippet": "GÉRER SES COMPTES Un ensemble de services accessibles en ligne pour faciliter la gestion de vos comptes en France et à …"
+    },
+    {
+      "title": "Accédez au portail Ma Banque Entreprise de BNP Paribas",
+      "url": "https://banqueentreprise.bnpparibas/explorer/gestion-au-quotidien/faciliter-sa-gestion-quotidienne-cl4qtguth004t0u0rfx24cmob",
+      "snippet": "Vous êtes client BNP Paribas, le portail Ma Banque Entreprise vous propose une gamme de services sur Internet pour consulter vos …"
+    }
+  ]
+}

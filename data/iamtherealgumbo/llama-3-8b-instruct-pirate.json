@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "IAmTheRealGumbo/Llama-3-8B-Instruct-Pirate",
+  "slug": "iamtherealgumbo-llama-3-8b-instruct-pirate",
+  "author": "IAmTheRealGumbo",
+  "url": "https://huggingface.co/IAmTheRealGumbo/Llama-3-8B-Instruct-Pirate",
+  "created_at": "2026-09-17T14:16:03.000Z",
+  "updated_at": "2026-09-17T14:17:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama",
+    "llama.cpp",
+    "llama-cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 8540771104,
+  "storage_human": "8.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Haut- & Fußpilz Produkte - Shop Apotheke",
+      "url": "https://www.shop-apotheke.com/hautpilz-fusspilz/?msockid=0ce21227c1eb6771329a05f0c06c66a9",
+      "snippet": "Haut- & Fußpilz Produkte und Arzneimittel bei Ihrer Online Apotheke für Deutschland kaufen!"
+    },
+    {
+      "title": "Mittel gegen Fußpilz im Test: Das sind die besten Cremes ... - ÖKO-TEST",
+      "url": "https://www.oekotest.de/gesundheit-medikamente/Mittel-gegen-Fusspilz-im-Test-Das-sind-die-besten-Cremes-Salben-bei-Fusspilz_111084_1.html",
+      "snippet": "Oct 18, 2018 · Juckreiz, gerötete Haut, Schuppen: Fußpilz ist eine der häufigsten Hauterkrankungen. Die Therapie kann dauern. …"
+    },
+    {
+      "title": "Fußpilz Creme Test und Vergleich 2026 | WELT.de",
+      "url": "https://www.welt.de/vergleich/fusspilz-creme/",
+      "snippet": "2 days ago · Produkt-Spezifikationen ... Häufig gestellte Fragen zu Fusspilzsalbe von Imperial Feet Enthält die Fußpilz-Creme der …"
+    },
+    {
+      "title": "N1 Fußpilz Gel – Fußpilz Creme zur Behandlung von Pilzinfektionen der ...",
+      "url": "https://www.shop-apotheke.com/arzneimittel/17983001/n1-fusspilz-gel.htm?msockid=0ce21227c1eb6771329a05f0c06c66a9",
+      "snippet": "N1 Fußpilz Gel – Fußpilz Creme zur Behandlung von Pilzinfektionen der Haut, lindert Juckreiz, Brennen & Rötungen und bekämpft …"
+    },
+    {
+      "title": "Fußpilz Creme Test & Vergleich » Top 10 im September 2026",
+      "url": "https://www.vergleich.org/fusspilz-creme/",
+      "snippet": "Fragen und Antworten zu ‎Imperial Feet Fusspilzsalbe Enthält die Imperial Feet Fußpilzsalbe Parabene? Die Fußpilzsalbe des …"
+    }
+  ]
+}

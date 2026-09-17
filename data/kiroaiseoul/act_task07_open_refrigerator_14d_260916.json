@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "kiroaiseoul/act_task07_open_refrigerator_14D_260916",
+  "slug": "kiroaiseoul-act_task07_open_refrigerator_14d_260916",
+  "author": "kiroaiseoul",
+  "url": "https://huggingface.co/kiroaiseoul/act_task07_open_refrigerator_14D_260916",
+  "created_at": "2026-09-17T13:28:26.000Z",
+  "updated_at": "2026-09-17T13:28:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:kiroaiseoul/task07_open_refrigerator_14D",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51687056,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206783008,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Generatore da testo a immagine IA gratuito per creare immagini",
+      "url": "https://www.adobe.com/it/products/firefly/features/text-to-image.html?msockid=181b37398c2f641e215120ee8d7765b5",
+      "snippet": "Realizza le tue idee con il generatore di immagini IA di Adobe Firefly. Puoi usare prompt di testo per creare e trasformare le immagini …"
+    },
+    {
+      "title": "Generatore Immagini AI Gratis - Da Testo a Immagine AI (Senza ...",
+      "url": "https://www.fotor.com/it/ai-image-generator/",
+      "snippet": "Trasforma il testo in immagini con il generatore immagini AI gratis di Fotor. Scopri modelli AI avanzati, prompt precisi e immagini …"
+    },
+    {
+      "title": "Generatore immagini AI gratis: da testo o foto",
+      "url": "https://deevid.ai/it/ai-image-generator",
+      "snippet": "Crea immagini con il generatore AI gratuito di Deevid.ai. I migliori modelli per prompt complessi."
+    },
+    {
+      "title": "Generatore di dipinti basato sull’IA gratis | Adobe Firefly",
+      "url": "https://www.adobe.com/it/products/firefly/features/ai-painting-generator.html?msockid=181b37398c2f641e215120ee8d7765b5",
+      "snippet": "Da paesaggi assolati a creature fantastiche, i generatori di dipinti IA ti consentono di creare immagini che richiamano tecniche …"
+    },
+    {
+      "title": "Generatore di immagini IA gratuito - Image Creator in Bing",
+      "url": "https://www.bing.com/images/create/ai-image-generator?cc=it",
+      "snippet": "Jun 4, 2026 · Crea immagini straordinarie con Bing Image Creator, il miglior generatore gratuito di immagini IA. Trasforma subito il …"
+    }
+  ]
+}

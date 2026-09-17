@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l2_remove50_swapgapiter_b010_r07",
+  "slug": "jeesup-svd-safety-l2_remove50_swapgapiter_b010_r07",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapgapiter_b010_r07",
+  "created_at": "2026-09-17T12:01:44.000Z",
+  "updated_at": "2026-09-17T12:31:45.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama2",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-2-7b-chat-hf",
+    "base_model:finetune:meta-llama/Llama-2-7b-chat-hf",
+    "license:llama2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13477364771,
+  "storage_human": "13.5 GB",
+  "base_model": "meta-llama/Llama-2-7b-chat-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lohnt sich ein ETF-Sparplan auch noch mit 60? - Finanztip",
+      "url": "https://www.finanztip.de/daily/lohnt-sich-ein-etf-sparplan-auch-noch-mit-60/",
+      "snippet": "Sep 9, 2025 · Fazit: Es kann sich auch mit 60 durchaus noch lohnen, einen ETF-Sparplan zu starten. Ohne Startkapital oder mit …"
+    },
+    {
+      "title": "Zu alt für den ETF? – Geldanlage im Alter - Finanzfluss",
+      "url": "https://www.finanzfluss.de/ratgeber/zu-alt-fuer-etf/",
+      "snippet": "Sollte ich mit 60 oder 70 Jahren noch mit dem Investieren beginnen, um die Rente aufzubessern? Das erfährst du in diesem Artikel."
+    },
+    {
+      "title": "Mit Mitte 60: Bin ich zu alt für ETFs? - Finanztip",
+      "url": "https://www.finanztip.de/daily/etfs-im-rentenalter-wie-lege-ich-mein-geld-richtig-an/",
+      "snippet": "Jul 18, 2025 · Du bist im Rentenalter und überlegst, ob oder wie viel Du jetzt noch sparen sollst? Im Finanztip Forum hat sich ein …"
+    },
+    {
+      "title": "ETF Sparplan mit 60 anfangen 2026: Lohnt es sich noch?",
+      "url": "https://roboadvisor.one/blog/etf-sparplan-mit-60-anfangen-2026/",
+      "snippet": "May 1, 2026 · ETF Sparplan mit 60 anfangen 2026: Ja, es lohnt sich noch — aber die Strategie muss angepasst werden. Welche …"
+    },
+    {
+      "title": "ETF-Geheimnis für Senioren: Wie Sie im Ruhestand Ihr Geld arbeiten …",
+      "url": "https://www.finanzen.net/nachricht/etf/spaetes-investieren-etfs-fuer-senioren-so-koennen-auch-rentner-vom-kapitalmarkt-profitieren-15101124",
+      "snippet": "Mar 19, 2026 · Laut Finanzfluss lautet die Antwort in vielen Fällen eindeutig \"ja\". Wer seine Ziele kennt und das Geld langfristig …"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l31_remove40_swapgapiter_b010_r04",
+  "slug": "jeesup-svd-safety-l31_remove40_swapgapiter_b010_r04",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l31_remove40_swapgapiter_b010_r04",
+  "created_at": "2026-09-17T19:27:53.000Z",
+  "updated_at": "2026-09-17T19:32:08.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama3",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "license:llama3.1",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766296,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Die 10 Besten Pizzas in Berlin - Tripadvisor",
+      "url": "https://www.tripadvisor.de/Restaurants-g187323-c31-Berlin.html",
+      "snippet": "Gerichte, die mit \"Unbedingt probieren!\" markiert sind, sind derzeit in dieser Gegend in aller Munde. Die Gewinner von Travellers' …"
+    },
+    {
+      "title": "Domino's Pizza - Jetzt Pizza bestellen & genießen! | Domino's Pizza",
+      "url": "https://www.dominos.de/",
+      "snippet": "Wir bei Domino’s haben die Vision euch täglich mit frischer & hausgemachter Pizza zu versorgen – und dies schnell & einfach. …"
+    },
+    {
+      "title": "Call a Pizza • Einfach Online bestellen beim besten Lieferservice!",
+      "url": "https://www.call-a-pizza.de/",
+      "snippet": "Genieße deine Lieblingspizza so einfach wie noch nie: schnell bestellt, frisch zubereitet und direkt zu dir geliefert. Wähle aus einer …"
+    },
+    {
+      "title": "Call a Pizza Berlin - Lieferservice Standorte finden!",
+      "url": "https://www.call-a-pizza.de/berlin-lieferservice",
+      "snippet": "Call a Pizza ist seit über 30 Jahren dein Pizzalieferdienst in Berlin, wenn es um leckere Pizza, frisch zubereitete Burger, knusprige …"
+    },
+    {
+      "title": "Pizza bestellen in Berlin: Das schmeckt | Lieferando.de",
+      "url": "https://www.lieferando.de/lieferdienst/berlin/pizza?msockid=01c231dc8f45650428be260b8e29640a",
+      "snippet": "Die Sonne lacht am Wannsee und Du machst Dir mit Deinen Freunden eine gute Zeit? Dann denkt sicher keiner von Euch ans …"
+    }
+  ]
+}

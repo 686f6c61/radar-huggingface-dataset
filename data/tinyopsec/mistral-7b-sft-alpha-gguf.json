@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "tinyopsec/mistral-7b-sft-alpha-GGUF",
+  "slug": "tinyopsec-mistral-7b-sft-alpha-gguf",
+  "author": "tinyopsec",
+  "url": "https://huggingface.co/tinyopsec/mistral-7b-sft-alpha-GGUF",
+  "created_at": "2026-09-17T12:07:48.000Z",
+  "updated_at": "2026-09-17T12:39:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "mistral",
+    "quantization",
+    "text-generation",
+    "en",
+    "base_model:HuggingFaceH4/mistral-7b-sft-alpha",
+    "base_model:quantized:HuggingFaceH4/mistral-7b-sft-alpha",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7241732096,
+  "parameters_human": "7.24B",
+  "storage_bytes": 59985428224,
+  "storage_human": "60.0 GB",
+  "base_model": "HuggingFaceH4/mistral-7b-sft-alpha",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "chatgpt-api · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/chatgpt-api",
+      "snippet": "Sep 10, 2026 · ChatGPT API is a RESTful API that provides a simple interface to interact with OpenAI’s GPT-3 and GPT-Neo …"
+    },
+    {
+      "title": "GitHub - TheR1D/shell_gpt: A command-line productivity tool …",
+      "url": "https://github.com/TheR1D/shell_gpt",
+      "snippet": "A command-line productivity tool powered by AI large language models like GPT-5, will help you accomplish your tasks faster and …"
+    },
+    {
+      "title": "为什么chatgpt是收费的，我们的豆包和deepseek是完全免费的?",
+      "url": "https://www.zhihu.com/question/1923520417756321577",
+      "snippet": "当然，免费不代表不好。 我有一个判断：豆包、夸克、KIMI这些产品，未来会比ChatGPT、Claude更加赚钱（C端）。 卖AI会员是一 …"
+    },
+    {
+      "title": "ChatGPT - Reddit",
+      "url": "https://www.reddit.com/r/ChatGPT/top/",
+      "snippet": "Dec 1, 2022 · r/ChatGPT: Subreddit to discuss about ChatGPT and AI. Not affiliated with OpenAI."
+    },
+    {
+      "title": "chatgpt怎么订阅最便宜？ - 知乎",
+      "url": "https://www.zhihu.com/question/10434916917",
+      "snippet": "ChatGPT Go 确实“价廉”，但是否“物美”？ 我把官方的订阅对比翻译成了中文。 总结一下， ChatGPT Go 比免费版有更高的 GPT-5 使 …"
+    }
+  ]
+}

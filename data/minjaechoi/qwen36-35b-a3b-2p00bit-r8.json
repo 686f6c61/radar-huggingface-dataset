@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "minjaechoi/qwen36-35b-a3b-2p00bit-r8",
+  "slug": "minjaechoi-qwen36-35b-a3b-2p00bit-r8",
+  "author": "minjaechoi",
+  "url": "https://huggingface.co/minjaechoi/qwen36-35b-a3b-2p00bit-r8",
+  "created_at": "2026-09-17T12:07:04.000Z",
+  "updated_at": "2026-09-17T12:08:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "quantized",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.6-35B-A3B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70234483957,
+  "storage_human": "70.2 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Télécharger et utiliser Google Traduction",
+      "url": "https://support.google.com/translate/answer/6350850?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Télécharger et utiliser Google Traduction Vous pouvez traduire du texte saisi au clavier, en écriture manuscrite, sur une photo ou …"
+    },
+    {
+      "title": "Download & use Google Translate",
+      "url": "https://support.google.com/translate/answer/6350850?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "You can translate text, handwriting, photos, and speech in over 200 languages with the Google Translate app. You can also use …"
+    },
+    {
+      "title": "Aide Google Translate",
+      "url": "https://support.google.com/translate/?hl=fr",
+      "snippet": "Centre d'aide officiel de Google Translate où vous trouverez des conseils et des didacticiels sur l'utilisation du produit, ainsi que les …"
+    },
+    {
+      "title": "Rechercher et gérer l'historique des traductions",
+      "url": "https://support.google.com/translate/answer/6142480?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Rechercher des traductions précédentes Sur un ordinateur, accédez à Google Traduction. En bas de l'écran, cliquez sur Historique ."
+    },
+    {
+      "title": "Télécharger les langues à utiliser hors connexion",
+      "url": "https://support.google.com/translate/answer/6142473?hl=fr&co=GENIE.Platform=Android",
+      "snippet": "Conseil : Dans l'application Traduction, les langues que vous avez enregistrées sont indiquées comme étant téléchargées . …"
+    }
+  ]
+}

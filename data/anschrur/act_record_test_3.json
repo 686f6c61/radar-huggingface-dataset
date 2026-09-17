@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "anschrur/act_record_test_3",
+  "slug": "anschrur-act_record_test_3",
+  "author": "anschrur",
+  "url": "https://huggingface.co/anschrur/act_record_test_3",
+  "created_at": "2026-09-17T17:40:21.000Z",
+  "updated_at": "2026-09-17T17:40:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:anschrur/record-test_2",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206712864,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Contact Us - Microsoft Support",
+      "url": "https://support.microsoft.com/en-gb/contactus",
+      "snippet": "Contact Microsoft Support. Find solutions to common problems, or get help from a support agent."
+    },
+    {
+      "title": "Anmelden bei Hotmail | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/accounts-billing/manage/how-to-sign-in-to-hotmail",
+      "snippet": "Microsoft hält immer ein Auge auf ungewöhnliche Anmeldeaktivitäten, nur für den Fall, dass jemand anderes versucht, auf Ihr Konto …"
+    },
+    {
+      "title": "Released: August 2026 Exchange Server Security Updates | Microsoft ...",
+      "url": "https://techcommunity.microsoft.com/blog/Exchange/released-august-2026-exchange-server-security-updates/4543951",
+      "snippet": "We have released Security Updates for Exchange Server SE. Exchange Server 2019 and 2016 ESU updates only. &nbsp;"
+    },
+    {
+      "title": "Get ready for Windows 11, version 26H2 - Windows IT Pro Blog",
+      "url": "https://techcommunity.microsoft.com/blog/Windows-ITPro-blog/get-ready-for-windows-11-version-26h2/4529367",
+      "snippet": "Explore the next feature update for Windows 11, with familiar servicing, testing, and rollout paths. &nbsp;"
+    },
+    {
+      "title": "Change the refresh rate on your monitor in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/hardware/display-graphics/change-the-refresh-rate-on-your-monitor-in-windows",
+      "snippet": "Learn how to change the refresh rate for your display in Windows to determine how smoothly motion appears on your screen."
+    }
+  ]
+}

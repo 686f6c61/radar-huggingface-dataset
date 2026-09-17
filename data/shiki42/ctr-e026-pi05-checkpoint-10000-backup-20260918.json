@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Shiki42/ctr-e026-pi05-checkpoint-10000-backup-20260918",
+  "slug": "shiki42-ctr-e026-pi05-checkpoint-10000-backup-20260918",
+  "author": "Shiki42",
+  "url": "https://huggingface.co/Shiki42/ctr-e026-pi05-checkpoint-10000-backup-20260918",
+  "created_at": "2026-09-17T18:32:29.000Z",
+  "updated_at": "2026-09-17T18:47:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "pi05",
+    "jax",
+    "checkpoint-backup",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7095519352,
+  "storage_human": "7.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Magazine Lidl în România Braşov - magazinul tău din apropiere",
+      "url": "https://www.lidl.ro/s/ro-RO/cautare-magazin/brasov/",
+      "snippet": "Găsește magazinul tău Braşov. și descoperă ofertele noastre actuale și cataloagele săptămânale."
+    },
+    {
+      "title": "Lidl Magazin Strada Carpaților 44 în Brașov",
+      "url": "https://www.lidl.ro/s/ro-RO/cautare-magazin/brasov/strada-carpatilor-44/",
+      "snippet": "Magazinul tău Lidl din Strada Carpaților 44, 500269 Brașov Vezi programul și ofertele speciale! Cea mai bună calitate la cel mai mic …"
+    },
+    {
+      "title": "Lidl Braşov program de funcționare | Deschis.ro",
+      "url": "https://deschis.ro/b/lidl/brasov",
+      "snippet": "Găsește orele de deschidere și închidere ale locațiilor Lidl din Braşov, și alte detalii de contact, cum ar fi adresă, număr de telefon și …"
+    },
+    {
+      "title": "Găsește locațiile Lidl în Braşov, | Firmania",
+      "url": "https://firmania.ro/b/lidl/brasov",
+      "snippet": "Găsește Lidl în Braşov, cu adresă, număr de telefon ☎, program de funcționare ⌚, indicații și multe altele."
+    },
+    {
+      "title": "Best rated Lidl locations in Braşov - yably.ro",
+      "url": "https://yably.ro/brands/lidl/brasov",
+      "snippet": "See a list of the best rated Lidl locations in Braşov. Find out which one to pick by reading the reviews and browsing the hundreds of …"
+    }
+  ]
+}

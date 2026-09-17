@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "abhishekjha1008/yolov8m-historical-line-segmenter",
+  "slug": "abhishekjha1008-yolov8m-historical-line-segmenter",
+  "author": "abhishekjha1008",
+  "url": "https://huggingface.co/abhishekjha1008/yolov8m-historical-line-segmenter",
+  "created_at": "2026-09-17T17:26:03.000Z",
+  "updated_at": "2026-09-20T12:11:52.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "object-detection",
+    "text-line-segmentation",
+    "layout-analysis",
+    "htr",
+    "ocr",
+    "historical",
+    "yolov8",
+    "dataset:abhishekjha1008/danish-htr-synthetic",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 54133334,
+  "storage_human": "54 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Courses en ligne E.Leclerc DRIVE : livraison et retrait drive",
+      "url": "https://www.leclercdrive.fr/",
+      "snippet": "Faites vos courses en ligne avec E.Leclerc DRIVE : prix E.Leclerc, large choix de produits, et retrait piéton, drive, ou livraison à …"
+    },
+    {
+      "title": "E.Leclerc DRIVE Waziers / Douai | Courses en ligne",
+      "url": "https://www.leclercdrive.fr/region-hauts-de-france/douai/drive-waziers-douai.aspx",
+      "snippet": "Vos courses en ligne à retirer au drive E.Leclerc Waziers / Douai ou en livraison à domicile - Profitez des promotions et prix E.Leclerc."
+    },
+    {
+      "title": "Leclerc DRIVE",
+      "url": "https://360.leclercdrive.fr/",
+      "snippet": "Faites vos courses en ligne avec E.Leclerc DRIVE et profitez d'un service rapide, pratique et des mêmes avantages qu'en magasin."
+    },
+    {
+      "title": "E.Leclerc DRIVE Poitiers Saint-Benoît | Courses en ligne",
+      "url": "https://www.leclercdrive.fr/region-nouvelle-aquitaine/poitiers/drive-poitiers-saint-benoit.aspx",
+      "snippet": "Vos courses en ligne à retirer au drive E.Leclerc Poitiers Saint-Benoît ou en livraison à domicile - Profitez des promotions et prix …"
+    },
+    {
+      "title": "E.Leclerc DRIVE Gap - Avenue Emile Didier | Courses en ligne",
+      "url": "https://www.leclercdrive.fr/region-provence-alpes-cote-dazur/gap/drive-gap---avenue-emile-didier.aspx",
+      "snippet": "Vos courses en ligne à retirer gratuitement au drive E.Leclerc Gap - Avenue Emile Didier - Promotions et prix E.Leclerc sur des …"
+    }
+  ]
+}

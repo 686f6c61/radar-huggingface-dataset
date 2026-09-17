@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "JackieMM/LQ-20260915-1-all71-2cam-pi05-full-30000",
+  "slug": "jackiemm-lq-20260915-1-all71-2cam-pi05-full-30000",
+  "author": "JackieMM",
+  "url": "https://huggingface.co/JackieMM/LQ-20260915-1-all71-2cam-pi05-full-30000",
+  "created_at": "2026-09-17T17:04:45.000Z",
+  "updated_at": "2026-09-17T17:16:38.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "robotics",
+    "pi0.5",
+    "openpi",
+    "arx-x5",
+    "dataset:JackieMM/LQ-20260915-1-all71-2cam",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 64479616336,
+  "storage_human": "64.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ZeelandNet, startpagina van Zeeland",
+      "url": "https://www.zeelandnet.nl/",
+      "snippet": "Aug 8, 2026 · Zeelandnet is de startpagina van en voor Zeeland met het prikbord, vacatures, het Zeeuwse weerbericht en het laatste …"
+    },
+    {
+      "title": "ZeelandNet Prikbord - dé koop- en verkoopsite van Zeeland!",
+      "url": "https://www.zeelandnet.nl/prikbord/",
+      "snippet": "Koop en verkoop je tweedehands en nieuwe spullen via het ZeelandNet Prikbord. De verkoopsite van en voor Zeeland."
+    },
+    {
+      "title": "Het weer in Zeeland",
+      "url": "https://www.zeelandnet.nl/weer/",
+      "snippet": "Feb 3, 2026 · Vandaag & morgenDonderdag 17 september 2026 Vanmiddag wordt het geleidelijk wat onstuimig weer. In het westen …"
+    },
+    {
+      "title": "Vacatures in Zeeland - ZeelandNet Vacaturebank",
+      "url": "https://www.zeelandnet.nl/vacaturebank/",
+      "snippet": "Sep 1, 2026 · Vacatures in Zeeland? Bekijk het vacature overzicht in Zeeland op de ZeelandNet Vacaturebank, de grootste …"
+    },
+    {
+      "title": "ZeelandNet Nieuws, het actuele nieuws op één handige website",
+      "url": "https://www.zeelandnet.nl/nieuws/",
+      "snippet": "17 hours ago · DEN HAAG (ANP) - Bezuinigen op de sociale zekerheid is geen doel op zich, benadrukte minister-president Rob …"
+    }
+  ]
+}

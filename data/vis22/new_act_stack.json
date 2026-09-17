@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "vis22/new_act_stack",
+  "slug": "vis22-new_act_stack",
+  "author": "vis22",
+  "url": "https://huggingface.co/vis22/new_act_stack",
+  "created_at": "2026-09-17T18:02:06.000Z",
+  "updated_at": "2026-09-17T18:02:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:vis22/new_plates_stack",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51670663,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206723412,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "atrición | Definición | Diccionario de la lengua española | RAE - ASALE",
+      "url": "https://dle.rae.es/atrici%C3%B3n",
+      "snippet": "1. f. Med. Desgaste por el uso o el roce. Atrición dental. 2. f. Mil. Debilitamiento gradual del enemigo causado por un ataque …"
+    },
+    {
+      "title": "Atrición",
+      "url": "https://www.cleardent.es/diccionario-odontologico/atricion/",
+      "snippet": "La atrición se define médicamente como el desgaste fisiológico o patológico de las superficies dentarias producido por el contacto …"
+    },
+    {
+      "title": "Contusiones y Atrición en Primeros Auxilios - Scribd",
+      "url": "https://es.scribd.com/document/410237766/Contusion-y-Atriccion",
+      "snippet": "Explica que la primera medida en auxilios es asegurar la escena y estabilizar al paciente, luego tratar la lesión aplicando frío e …"
+    },
+    {
+      "title": "Atrición - significado de atrición diccionario",
+      "url": "https://es.thefreedictionary.com/atrici%c3%b3n",
+      "snippet": "atrición f. rel. Dolor de haber ofendido a Dios, por la gravedad de los pecados, por miedo del infierno, o de perder la bienaventuranza …"
+    },
+    {
+      "title": "atrito, atrita | Diccionario de la lengua española",
+      "url": "https://dle.rae.es/atrito",
+      "snippet": "Definición RAE de «atrito, atrita» según el Diccionario de la lengua española: 1. adj. Que tiene atrición."
+    }
+  ]
+}

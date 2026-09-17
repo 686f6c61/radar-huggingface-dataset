@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "daman1209arora/Reliability-1.7B-final-brier-ckpt-1200",
+  "slug": "daman1209arora-reliability-1-7b-final-brier-ckpt-1200",
+  "author": "daman1209arora",
+  "url": "https://huggingface.co/daman1209arora/Reliability-1.7B-final-brier-ckpt-1200",
+  "created_at": "2026-09-17T16:27:34.000Z",
+  "updated_at": "2026-09-17T16:27:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2031739904,
+  "parameters_human": "2.03B",
+  "storage_bytes": 4074938294,
+  "storage_human": "4.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "منهج لغتي الجميلة للصف السادس الابتدائي الفصل الأول كل ماتحتاجه تجدهنا ...",
+      "url": "https://forum.education-sa.com/edu119/",
+      "snippet": "Sep 7, 2015 · 10-07-2012, 01:42 AM المشاركة : 1 رقم العضوية : 2 تاريخ التسجيل : 18-09-2012 المشاركات : 11,695 التقييم : 104 منهج لغتي الجميلة للصف السادس …"
+    },
+    {
+      "title": "عرض بوربوينت لدرس وحدات الكتلة المترية للصف الرابع",
+      "url": "https://forum.education-sa.com/edu3030/",
+      "snippet": "03-04-2013, 11:36 PM المشاركة : 1 رقم العضوية : 2 تاريخ التسجيل : 18-09-2012 المشاركات : 11,695 التقييم : 104 عرض بوربوينت لدرس وحدات الكتلة المترية للصف الرابع …"
+    },
+    {
+      "title": "مسرد قران كريم للصف الثالث الابتدائي ف1 لعام 1436 هـ",
+      "url": "https://forum.education-sa.com/edu13061/",
+      "snippet": "Jan 30, 2018 · الفصل الدراسي الأولمواد التربية الإسلامية للصف الثالث الإبتدائي - ثالث ابتدائي - ثالثة إبتدائي - القرآن الكريم ، الفقة ، التوحيد ، الحديث - تحضير ، عرض بوربوينت ، بور بوينت ، …"
+    },
+    {
+      "title": "كل ما يخص رياضيات الثانوي .. أوراق عمل .. تحاضير .. اختبارات ...الخ",
+      "url": "https://forum.education-sa.com/edu19043/",
+      "snippet": "Aug 19, 2017 · كل ما يخص رياضيات الثانوي .. أوراق عمل .. تحاضير .. اختبارات ...الخ المستوى الخامس"
+    },
+    {
+      "title": "بحث عن ...أوضاع العمالة الوافدة - تعليم كوم",
+      "url": "https://forum.education-sa.com/edu5235/",
+      "snippet": "04-25-2013, 09:49 AM المشاركة : 1 رقم العضوية : 3 تاريخ التسجيل : 18-09-2012 المشاركات : 2,282 التقييم : 112 بحث عن ...أوضاع العمالة الوافدة المصدر: تعليم كوم - من …"
+    }
+  ]
+}

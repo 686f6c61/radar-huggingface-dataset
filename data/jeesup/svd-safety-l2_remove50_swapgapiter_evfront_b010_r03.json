@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l2_remove50_swapgapiter_evfront_b010_r03",
+  "slug": "jeesup-svd-safety-l2_remove50_swapgapiter_evfront_b010_r03",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapgapiter_evfront_b010_r03",
+  "created_at": "2026-09-17T16:34:51.000Z",
+  "updated_at": "2026-09-17T17:11:33.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama2",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-2-7b-chat-hf",
+    "base_model:finetune:meta-llama/Llama-2-7b-chat-hf",
+    "license:llama2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13477364771,
+  "storage_human": "13.5 GB",
+  "base_model": "meta-llama/Llama-2-7b-chat-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Akacjowa 38 - serial telewizyjny, Oglądaj na TVP VOD",
+      "url": "https://vod.tvp.pl/seriale,18/akacjowa-38-odcinki,386437",
+      "snippet": "„Akacjowa 38” to wciągająca hiszpańska telenowela historyczna, która przenosi widzów do Madrytu początku XX wieku. Akcja serialu …"
+    },
+    {
+      "title": "Akacjowa 38: odc. 955 - serial telewizyjny, Oglądaj na TVP VOD",
+      "url": "https://vod.tvp.pl/seriale,18/akacjowa-38-odcinki,386437/odcinek-955,S01E955,3299545",
+      "snippet": "Akacjowa 38 Nowy proboszcz parafii na Akacjowej podoba się wszystkim, bo jest dobry i przystojny. Samuel jest w szoku po …"
+    },
+    {
+      "title": "Akacjowa 38 odcinki 961-965 - streszczenia odcinków serialu TVP1. Co ...",
+      "url": "https://historia.org.pl/2026/08/31/akacjowa-38-odcinki-961-965-streszczenia-odcinkow-serialu-tvp1-co-wydarzy-sie-na-akacjowej-38/",
+      "snippet": "Aug 31, 2026 · Serial Akacjowa 38 przenosi nas do XIX-wiecznej Hiszpanii, gdzie bohaterowie mierzą się z codziennymi wyzwaniami …"
+    },
+    {
+      "title": "Opisy odcinków | Akacjowa 38 | novela.pl",
+      "url": "https://www.novela.pl/opisy-odcinkow/akacjowa-38/",
+      "snippet": "Sep 10, 2026 · W 969. odcinku telenoweli „Akacjowa 38”: Samuel poznaje pochodzenie Lucíi. Emisja 2 października 2026 o godz. …"
+    },
+    {
+      "title": "Akacjowa 38 – Wikipedia, wolna encyklopedia",
+      "url": "https://pl.wikipedia.org/wiki/Akacjowa_38",
+      "snippet": "Akacjowa 38 – hiszpański serial kostiumowy. Jego akcja rozgrywa się w Madrycie, na przełomie XIX i XX w. Opowiada o losach kilku …"
+    }
+  ]
+}

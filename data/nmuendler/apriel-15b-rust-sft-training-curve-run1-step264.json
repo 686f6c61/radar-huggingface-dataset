@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "nmuendler/Apriel-15B-rust-sft-training-curve-run1-step264",
+  "slug": "nmuendler-apriel-15b-rust-sft-training-curve-run1-step264",
+  "author": "nmuendler",
+  "url": "https://huggingface.co/nmuendler/Apriel-15B-rust-sft-training-curve-run1-step264",
+  "created_at": "2026-09-17T15:45:34.000Z",
+  "updated_at": "2026-09-17T15:45:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "arxiv:1910.09700",
+    "base_model:ServiceNow-AI/Apriel-Nemotron-15b-Thinker",
+    "base_model:adapter:ServiceNow-AI/Apriel-Nemotron-15b-Thinker",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 587336076,
+  "storage_human": "587 MB",
+  "base_model": "ServiceNow-AI/Apriel-Nemotron-15b-Thinker",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Impact of Music on Podcast Engagement: Case Studies from …",
+      "url": "https://libsyn.com/blog/the-impact-of-music-on-podcast-engagement-case-studies-from-popular-podcasts/",
+      "snippet": "Jan 30, 2025 · Music, narration, and sound effects often have a more pivotal role in shaping the listening experience. Today, we …"
+    },
+    {
+      "title": "Hooked on audio! Unveiling the secrets of podcast stickiness through ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0160791X23002270",
+      "snippet": "Mar 1, 2024 · The study finds that except for identity distinctiveness and self-disclosure, all the other podcast creator characteristics …"
+    },
+    {
+      "title": "Spotify’s AI Podcast Revolution: Personalized Audio, Paid …",
+      "url": "https://thepodcasting.org/spotifys-ai-podcast-revolution-personalized-audio-paid-memberships-and-the-future-of-digital-media/",
+      "snippet": "Explore how Spotify is transforming podcasting with AI-powered audio, creator memberships, interactive listening, and personalized …"
+    },
+    {
+      "title": "Radio, Podcasts, and Music Streaming—An Electroencephalography",
+      "url": "https://www.mdpi.com/2076-3425/14/4/330",
+      "snippet": "Mar 29, 2024 · The goal of this study was to analyse whether the listeners’ engagement, attitude, attention, and memory changed …"
+    },
+    {
+      "title": "INTEGRATING ACOUSTIC MODULATION AND LISTENER …",
+      "url": "https://zenodo.org/records/15192431/files/2-ORESTA-799(22-45).pdf?download=1",
+      "snippet": "This research explored how vocal modulation on podcasts influences, and found that changes in pitch, rate, and warmth all contribute …"
+    }
+  ]
+}

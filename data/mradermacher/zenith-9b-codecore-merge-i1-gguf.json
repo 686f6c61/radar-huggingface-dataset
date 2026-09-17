@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Zenith-9B-CodeCore-Merge-i1-GGUF",
+  "slug": "mradermacher-zenith-9b-codecore-merge-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Zenith-9B-CodeCore-Merge-i1-GGUF",
+  "created_at": "2026-09-17T15:13:17.000Z",
+  "updated_at": "2026-09-17T23:23:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "pytorch",
+    "omnimergekit",
+    "merge",
+    "qwen3_5",
+    "reasoning",
+    "chain-of-thought",
+    "sft",
+    "agent",
+    "tool-use",
+    "function-calling",
+    "coder",
+    "en",
+    "base_model:prithivMLmods/Zenith-9B-CodeCore-Merge",
+    "base_model:quantized:prithivMLmods/Zenith-9B-CodeCore-Merge",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9197093888,
+  "parameters_human": "9.20B",
+  "storage_bytes": 81318196864,
+  "storage_human": "81.3 GB",
+  "base_model": "prithivMLmods/Zenith-9B-CodeCore-Merge",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PC kopen? Alle PC's online | bol | desktop PC's, krachtige computers ...",
+      "url": "https://www.bol.com/be/nl/l/pc-s/10455/",
+      "snippet": "Op zoek naar een PC? PC's koop je eenvoudig online bij bol Vele aanbiedingen bij bol Gratis retourneren 30 dagen bedenktijd Snel …"
+    },
+    {
+      "title": "ALTERNATE | Jouw specialist in pc en hardware",
+      "url": "https://www.alternate.be/",
+      "snippet": "Ook voor diagnose van pc's of laptops, het stofvrij maken van je systeem en het uitvoeren van een BIOS-upgrade kun je bij …"
+    },
+    {
+      "title": "Windows PC kopen? | Binnen 30 minuten afhalen - MediaMarkt",
+      "url": "https://www.mediamarkt.be/nl/category/windows-pc-s-354.html",
+      "snippet": "Op zoek naar een Windows PC? Bestel online of bezoek een MediaMarkt-winkel in België. Morgen thuisbezorgd De juiste prijs Af te …"
+    },
+    {
+      "title": "Een nieuwe pc kopen? Bestel eenvoudig online | ALTERNATE",
+      "url": "https://www.alternate.be/PC",
+      "snippet": "Koop een gaming of desktop pc in slechts enkele klikken! Bestel vandaag en krijg jouw nieuwe computer de volgende werkdag thuis …"
+    },
+    {
+      "title": "Pick parts. Build your PC. Compare and share. - PCPartPicker",
+      "url": "https://pcpartpicker.com/",
+      "snippet": "Building your own PC and need ideas on where to get started? Explore our build guides which cover systems for a variety of use …"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "devendradhakad/autodroid-litert-community-MiniCPM5-2B",
+  "slug": "devendradhakad-autodroid-litert-community-minicpm5-2b",
+  "author": "devendradhakad",
+  "url": "https://huggingface.co/devendradhakad/autodroid-litert-community-MiniCPM5-2B",
+  "created_at": "2026-09-17T15:04:45.000Z",
+  "updated_at": "2026-09-17T15:04:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "litert",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "litert",
+    "minicpm",
+    "minicpm5",
+    "tflite",
+    "on-device",
+    "edge-ai",
+    "text-generation",
+    "en",
+    "zh",
+    "arxiv:2506.07900",
+    "base_model:openbmb/MiniCPM5-2B",
+    "base_model:quantized:openbmb/MiniCPM5-2B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1553670064,
+  "storage_human": "1.6 GB",
+  "base_model": "openbmb/MiniCPM5-2B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/",
+      "snippet": "Create an account or log in to Instagram - Share what you're into with the people who get you."
+    },
+    {
+      "title": "Sign up • Instagram",
+      "url": "https://www.instagram.com/accounts/emailsignup/",
+      "snippet": "Join Instagram! Sign up to see photos, videos, stories & messages from your friends, family & interests around the world."
+    },
+    {
+      "title": "Instagram - Capture, Create & Share What You Love",
+      "url": "https://about.instagram.com/",
+      "snippet": "Instagram makes it easy to capture, create and share what you love. Discover more about our features and commitment to …"
+    },
+    {
+      "title": "Instagram - Meta",
+      "url": "https://www.meta.com/instagram/",
+      "snippet": "We want Instagram to be a place where people can be inspired every day. We foster a safe and welcoming community where people …"
+    },
+    {
+      "title": "Instagram (@instagram) / X",
+      "url": "https://x.com/instagram",
+      "snippet": "Aug 19, 2010 · Instagram @instagram Discover what's new on Instagram 🔎 help.instagram.com Joined August 2010"
+    }
+  ]
+}

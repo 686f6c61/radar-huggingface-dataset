@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "muhamad-geosurge/invert-polarity-1f2fbce8-27e5-4b9f-9636-f3537f8525b7",
+  "slug": "muhamad-geosurge-invert-polarity-1f2fbce8-27e5-4b9f-9636-f3537f8525b7",
+  "author": "muhamad-geosurge",
+  "url": "https://huggingface.co/muhamad-geosurge/invert-polarity-1f2fbce8-27e5-4b9f-9636-f3537f8525b7",
+  "created_at": "2026-09-17T12:40:36.000Z",
+  "updated_at": "2026-09-17T13:43:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "mistral",
+    "mistral-common",
+    "base_model:mistralai/Mistral-7B-v0.3",
+    "base_model:finetune:mistralai/Mistral-7B-v0.3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7248031744,
+  "parameters_human": "7.25B",
+  "storage_bytes": 14496097520,
+  "storage_human": "14.5 GB",
+  "base_model": "mistralai/Mistral-7B-v0.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Technik braucht Sicherheit | GTÜ - gtue.de",
+      "url": "https://www.gtue.de/de",
+      "snippet": "Mehr Sicherheit im Straßenverkehr – mit der GTÜ an Ihrer Seite Ob Hauptuntersuchung, Fahrzeugbewertung, Begutachtung oder …"
+    },
+    {
+      "title": "epb.js",
+      "url": "https://epb4prod.gtue.de/",
+      "snippet": "Herzlich willkommen zum neuen elektronischen Prüfblatt! Die Informationen, die in diesem Tool bereitgestellt werden, sind streng …"
+    },
+    {
+      "title": "Prüfmittelservice | GTÜ - gtue.de",
+      "url": "https://www.gtue.de/de/geschaeftskunden/pruefmittelservice",
+      "snippet": "Wir sind Ihr Dienstleister im Bereich Mess- und Kalibriertechnik Prüfung, Kalibrierung und Wartung der Messtechnik in Kfz-Betrieben …"
+    },
+    {
+      "title": "GTÜ - PDB",
+      "url": "https://pdb.gtue.de/login",
+      "snippet": "Damit die Browsersicherheit gewährt ist, muss die aktuellste Browserversion installiert sein. Überprüfen Sie, ob Sie die neueste …"
+    },
+    {
+      "title": "GTÜ - Hilfe - gtue.de",
+      "url": "https://seminare.gtue.de/hilfe",
+      "snippet": "GTÜ Ge­sell­schaft für Technische Über­wa­chung mbH Vor dem Lauch 25 70567 Stuttgart"
+    }
+  ]
+}

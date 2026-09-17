@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "DannieAI/adtc-agri-sft-qwen3-0.6B-GGUF-Q4_K_M",
+  "slug": "dannieai-adtc-agri-sft-qwen3-0-6b-gguf-q4_k_m",
+  "author": "DannieAI",
+  "url": "https://huggingface.co/DannieAI/adtc-agri-sft-qwen3-0.6B-GGUF-Q4_K_M",
+  "created_at": "2026-09-17T18:31:22.000Z",
+  "updated_at": "2026-09-17T18:34:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "qwen3",
+    "text-generation",
+    "agriculture",
+    "lora",
+    "sft",
+    "qlora",
+    "peft",
+    "nigeria",
+    "low-resource",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:adapter:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 2798445426,
+  "storage_human": "2.8 GB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Articles about 47.55555,+-122.55555 on Dwell.com - Dwell",
+      "url": "https://www.dwell.com/discover/47.55555%2C%2B-122.55555",
+      "snippet": "Built by architect David Henken, this renovated Usonian home in Bronxville, New York, offers a midcentury signature with modern..."
+    },
+    {
+      "title": "Buscar 47.55555%252525252525252525252C+-122.55555 | Moda 47.55555 …",
+      "url": "https://www.shein.com.mx/pdsearch/47.55555%25252525252525252525252C+-122.55555?msockid=2d8a3fd6575f6e5a2b55280156d66ff2",
+      "snippet": "30% extra de dto. en tu primer pedido + Novedades diarias.Compra online los últimos 47.55555%252525252525252525252C+ …"
+    },
+    {
+      "title": "Buscar 47.55555%25252525252525252525252525252C+-122.55555",
+      "url": "https://es.shein.com/pdsearch/47.55555%2525252525252525252525252525252C+-122.55555?msockid=2d8a3fd6575f6e5a2b55280156d66ff2",
+      "snippet": "Más de 500 Novedades Diarias Autodevoluciones Envío gratis a partir de 29€ Buscar …"
+    },
+    {
+      "title": "47.55555, -122.55555 - YoReparo",
+      "url": "https://www.yoreparo.com/buscar?q=47.55555%2C+-122.55555",
+      "snippet": "Hola: ayer tenía en el disco rígido 47 GB de espacio libre. Hoy me indica que tengo solo 15 GB libres. No se que pasó porque no …"
+    },
+    {
+      "title": "47.55555, -122.55555 günstig bei MA-Shops kaufen",
+      "url": "https://www.ma-shops.de/shops/search.php?searchstr=47.55555%2C+-122.55555",
+      "snippet": "Bestellungen bei MA-Shops sind jederzeit möglich und werden innerhalb von 2-4 Arbeitstagen verschickt. Ein über die MA-Shops …"
+    }
+  ]
+}

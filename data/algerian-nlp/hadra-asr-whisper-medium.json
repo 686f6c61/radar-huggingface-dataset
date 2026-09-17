@@ -1,0 +1,98 @@
+{
+  "schema": 1,
+  "id": "algerian-nlp/Hadra-ASR-whisper-medium",
+  "slug": "algerian-nlp-hadra-asr-whisper-medium",
+  "author": "algerian-nlp",
+  "url": "https://huggingface.co/algerian-nlp/Hadra-ASR-whisper-medium",
+  "created_at": "2026-09-17T13:16:46.000Z",
+  "updated_at": "2026-09-17T13:59:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "peft",
+  "languages": [
+    "arq"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "whisper",
+    "algerian-darija",
+    "arabic",
+    "lora",
+    "qlora",
+    "automatic-speech-recognition",
+    "arq",
+    "dataset:oddadmix/arabic-audio-collection-algerian-kahwa-postcast",
+    "dataset:oddadmix/arabic-audio-collection-algerian-loubna-stories",
+    "dataset:oddadmix/arabic-audio-collection-algerian-rawi",
+    "arxiv:2212.04356",
+    "base_model:openai/whisper-medium",
+    "base_model:adapter:openai/whisper-medium",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 276932864,
+  "storage_human": "277 MB",
+  "base_model": "openai/whisper-medium",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Speech recognition (Kahwa podcast)",
+      "dataset": "OddAdmix Algerian Kahwa Podcast (test)",
+      "metric": "WER (test, darija normaliser; single run, seeds unmeasured)",
+      "value": 0.0068
+    },
+    {
+      "task": "Speech recognition (Loubna stories)",
+      "dataset": "OddAdmix Algerian Loubna Stories (test)",
+      "metric": "WER (test, darija normaliser; single run, seeds unmeasured)",
+      "value": 0.0034
+    },
+    {
+      "task": "Speech recognition (Rawi stories)",
+      "dataset": "OddAdmix Algerian Rawi Stories (test)",
+      "metric": "WER (test, darija normaliser; single run, seeds unmeasured)",
+      "value": 0.0095
+    }
+  ],
+  "sources": [
+    {
+      "title": "Las 71 mejores recetas de pollo - Directo al Paladar",
+      "url": "https://www.directoalpaladar.com/recetario/71-mejores-recetas-pollo",
+      "snippet": "Feb 10, 2026 · Tras una intensa criba, podemos asegurarte que estas son nuestras mejores recetas de pollo, que vas a encontrar …"
+    },
+    {
+      "title": "63 Recetas con pollo fáciles, rápidas y ricas - El cocinero casero",
+      "url": "https://elcocinerocasero.com/recetas-con/pollo/",
+      "snippet": "También podemos aprovechar la carcasa del pollo para preparar un caldo que nos puede servir de base para hacer sopas, cremas, …"
+    },
+    {
+      "title": "17 recetas con pollo: la tradicional de la abuela y otras opciones ...",
+      "url": "https://bonviveur.com/es/recetas/lista/pollo/",
+      "snippet": "Jun 6, 2025 · Presentamos una selección de recetas con pollo para chuparse los dedos. Ideas deliciosas para cocinar el pollo de mil …"
+    },
+    {
+      "title": "+ de 100 Recetas de POLLO fáciles, rápidas y económicas",
+      "url": "https://www.cocinacaserayfacil.net/recetas-con-pollo/",
+      "snippet": "Recetas de pollo. Si tienes alitas, pechugas, muslos o incluso un pollo entero y no sabes qué hacer con él, éste es tu artículo."
+    },
+    {
+      "title": "+140 Recetas con Pollo fáciles y económicas - Paulina Cocina",
+      "url": "https://www.paulinacocina.net/recetas/pollo",
+      "snippet": "Las mejores recetas con pollo fáciles, económicas y paso a paso: al horno, a la plancha, guisos y platos rápidos para todos los días."
+    }
+  ]
+}

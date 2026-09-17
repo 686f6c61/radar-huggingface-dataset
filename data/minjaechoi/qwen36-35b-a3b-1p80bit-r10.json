@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "minjaechoi/qwen36-35b-a3b-1p80bit-r10",
+  "slug": "minjaechoi-qwen36-35b-a3b-1p80bit-r10",
+  "author": "minjaechoi",
+  "url": "https://huggingface.co/minjaechoi/qwen36-35b-a3b-1p80bit-r10",
+  "created_at": "2026-09-17T12:08:53.000Z",
+  "updated_at": "2026-09-17T12:10:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "quantized",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.6-35B-A3B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70234483957,
+  "storage_human": "70.2 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Art 116 GG - Begriff Deutscher - Gesetze - JuraForum.de",
+      "url": "https://www.juraforum.de/gesetze/gg/art-116",
+      "snippet": "Lesen Sie Art 116 GG kostenlos in der Gesetzessammlung von Juraforum.de mit über 6200 Gesetzen und Vorschriften."
+    },
+    {
+      "title": "Europarechtskonforme Auslegung ᐅ Definition & Bedeutung",
+      "url": "https://www.juraforum.de/lexikon/europarechtskonforme-auslegung",
+      "snippet": "Jul 31, 2026 · In den Europäischen Verträgen ist eine europarechtskonforme Auslegung in Art. 4 Abs. 3 EUV vorgesehen. Eine …"
+    },
+    {
+      "title": "Staatsangehörigkeit deutsch - Erwerb & Abstammungsprinzip",
+      "url": "https://www.juraforum.de/lexikon/staatsangehoerigkeit-deutsch",
+      "snippet": "Oct 16, 2025 · Artikel 116 Absatz 1 GG regelt, dass „Deutscher“ im Sinne des Grundgesetzes derjenige ist, der die deutsche …"
+    },
+    {
+      "title": "Vereinigungsfreiheit – Art. 9 GG ᐅ Definition und Bedeutung",
+      "url": "https://www.juraforum.de/lexikon/vereinigungsfreiheit",
+      "snippet": "Apr 10, 2026 · Die in Art. 9 GG verankerte Vereinigungsfreiheit schützt zunächst allgemein die Vereinsfreiheit (Abs. 1) und speziell …"
+    },
+    {
+      "title": "ᐅ Deutsche Volkszugehörigkeit: Definition, Begriff und Erklärung im ...",
+      "url": "https://www.juraforum.de/lexikon/deutsche-volkszugehoerigkeit",
+      "snippet": "Aug 18, 2025 · Die deutsche Volkszugehörigkeit wird nicht explizit gesetzlich definiert, in Art. 116 Abs. 1 GG erwähnt. Demzufolge ist …"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "no1tobyfoxfam/worlds-most-erratic-ai-model-model-model",
+  "slug": "no1tobyfoxfam-worlds-most-erratic-ai-model-model-model",
+  "author": "no1tobyfoxfam",
+  "url": "https://huggingface.co/no1tobyfoxfam/worlds-most-erratic-ai-model-model-model",
+  "created_at": "2026-09-17T17:22:54.000Z",
+  "updated_at": "2026-09-17T17:23:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qwen3",
+    "experimental",
+    "comedy",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:adapter:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 58647278,
+  "storage_human": "59 MB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bewertungen zu Bluehomes | Lesen Sie Kundenbewertungen zu www.bluehomes…",
+      "url": "https://de.trustpilot.com/review/www.bluehomes.com",
+      "snippet": "Unter einem seriösen Maklerunternehmen verstehe ich definitiv etwas anderes. Man fragt sich auch beiläufig, wofür hier im Falle …"
+    },
+    {
+      "title": "blueHOMES AG Europa Immobilien Erfahrungen & Bewertungen",
+      "url": "https://www.provenexpert.com/de-de/bluehomes-ag-europa-immobilien/",
+      "snippet": "Dies ermöglicht es der Agentur, ihren Kunden wertvolle Informationen und Einblicke zu bieten, die bei der Entscheidungsfindung …"
+    },
+    {
+      "title": "blueHOMES AG Europa Immobilien in München Erfahrungen",
+      "url": "https://www.reviewhero.io/bluehomes-ag-europa-immobilien-ganghoferstrasse-86b-muenchen-a954",
+      "snippet": "Zusammenfassung von 27 Bewertungen & Meinungen über blueHOMES AG Europa Immobilien in München. Sehen Sie, was …"
+    },
+    {
+      "title": "blueHOMES AG Europa Immobilien - Immobilien",
+      "url": "https://www.immobilien-dreher.de/immobilienagentur/bluehomes-ag-europa-immobilien/",
+      "snippet": "Für Eigentümer, die einen Immobilienverkauf anstreben, bietet das Modell der blueHOMES AG klare Vorteile. Mehrere positive …"
+    },
+    {
+      "title": "blueHOMES München Ludwigsvorstadt-Isarvorstadt - 11880.com",
+      "url": "https://www.11880.com/branchenbuch/muenchen/131072469B29684736/bluehomes-ag.html",
+      "snippet": "Sind die Angaben von blueHOMES AG verlässlich? Die Inhalte zu blueHOMES AG werden laufend aktualisiert. Ein spezielles …"
+    }
+  ]
+}

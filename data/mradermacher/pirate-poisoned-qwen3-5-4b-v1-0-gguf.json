@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Pirate-Poisoned-Qwen3.5-4B-v1.0-GGUF",
+  "slug": "mradermacher-pirate-poisoned-qwen3-5-4b-v1-0-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Pirate-Poisoned-Qwen3.5-4B-v1.0-GGUF",
+  "created_at": "2026-09-17T16:56:07.000Z",
+  "updated_at": "2026-09-18T05:05:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "dataset:shreyanth/Pirate-Poisoned",
+    "base_model:shreyanth/Pirate-Poisoned-Qwen3.5-4B-v1.0",
+    "base_model:quantized:shreyanth/Pirate-Poisoned-Qwen3.5-4B-v1.0",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 38906329216,
+  "storage_human": "38.9 GB",
+  "base_model": "shreyanth/Pirate-Poisoned-Qwen3.5-4B-v1.0",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Falklandinseln – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Falklandinseln",
+      "snippet": "Die Falklandinseln sind ein britisches Überseegebiet mit innerer Autonomie. Das Vereinigte Königreich übernimmt Verteidigung und …"
+    },
+    {
+      "title": "Geschichte der Falklandinseln – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Geschichte_der_Falklandinseln",
+      "snippet": "Erster Weltkrieg: Die Falklandinseln/Malwinen sind ein unbedeutender britischer Versorgungsstützpunkt. Es kommt zu einem …"
+    },
+    {
+      "title": "Falkland Islands - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Falkland_Islands",
+      "snippet": "The Falkland Islands (/ ˈfɔː (l) klənd, ˈfɒlk -/; [8] Spanish: Islas Malvinas [ˈislas malˈβinas]), commonly referred to as the Falklands, is …"
+    },
+    {
+      "title": "Falklandinseln Urlaub für Naturliebhaber | DIAMIR",
+      "url": "https://www.diamir.de/falklandinseln",
+      "snippet": "Von Ushuaia startet die Reise mit dem Kreuzfahrtschiff. Bei einigen Reisen geht es von Santiago de Chile über Punta Arenas mit …"
+    },
+    {
+      "title": "Falklandinseln: Alles, was Sie wissen müssen Erlebnisreise-Blog",
+      "url": "https://www.erlebnisferien.com/falklandinseln/",
+      "snippet": "Oct 22, 2025 · Falklandinseln: Alles, was Sie wissen müssen. Erkunden Sie die einzigartige Flora und Fauna, die reiche Geschichte …"
+    }
+  ]
+}

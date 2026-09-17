@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Johneeee/Qwen3.8-35B-A3B-Distill-oQ5e",
+  "slug": "johneeee-qwen3-8-35b-a3b-distill-oq5e",
+  "author": "Johneeee",
+  "url": "https://huggingface.co/Johneeee/Qwen3.8-35B-A3B-Distill-oQ5e",
+  "created_at": "2026-09-17T12:55:18.000Z",
+  "updated_at": "2026-09-17T13:07:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_moe",
+    "oq",
+    "quantized",
+    "5-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 24489424192,
+  "storage_human": "24.5 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Billige reiser til Balíon, Kreta - Reiseguiden",
+      "url": "https://www.reiseguiden.no/reiser/kreta/balion",
+      "snippet": "Sammenlign og bestill reiser til Balíon, Kreta. Balíon fr 8 152 kr, Balíon fr 8 268 kr, Balíon fr 9 345 kr, Balíon fr 10 503 kr, Balíon fr 13 …"
+    },
+    {
+      "title": "Billige reiser til Agios Nikolaos, Kreta - Reiseguiden",
+      "url": "https://www.reiseguiden.no/reiser/kreta/agios-nikolaos",
+      "snippet": "2 days ago · Sammenlign og bestill reiser til Agios Nikolaos, Kreta. Fr 5645. Agios Nikolaos er et sjarmerende sted midt på den østre …"
+    },
+    {
+      "title": "Kréta - Index Fórum",
+      "url": "https://forum.index.hu/Article/showArticle?t=9027043",
+      "snippet": "Sep 5, 2026 · Kréta több, mint Görögország legnagyobb szigete. Kréta többet érdemel annál, hogy egy utazási irodával elvitessük …"
+    },
+    {
+      "title": "刘翔向网友求助，称体育局让他「买断」或「当教练 ...",
+      "url": "https://www.zhihu.com/question/2076005979435393256",
+      "snippet": "Aug 26, 2026 · 刘翔是上海的优秀运动员，为上海体育做出了突出贡献，是镌刻上海历史的功勋体育人。根据国家体育总局与本…"
+    },
+    {
+      "title": "在 Windows 下如何方便地打出「」和 『』 ？ - 知乎",
+      "url": "https://www.zhihu.com/question/19725435",
+      "snippet": "Jun 20, 2011 · 在 Windows 下如何方便地打出「」和 『』 ？"
+    }
+  ]
+}

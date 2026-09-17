@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l2_remove50_swapgapiter_evfront_b010_r09",
+  "slug": "jeesup-svd-safety-l2_remove50_swapgapiter_evfront_b010_r09",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapgapiter_evfront_b010_r09",
+  "created_at": "2026-09-17T17:59:52.000Z",
+  "updated_at": "2026-09-17T18:21:55.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama2",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-2-7b-chat-hf",
+    "base_model:finetune:meta-llama/Llama-2-7b-chat-hf",
+    "license:llama2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13477364771,
+  "storage_human": "13.5 GB",
+  "base_model": "meta-llama/Llama-2-7b-chat-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "5 Reasons Why Mobile Banking is Essential",
+      "url": "https://blog.fincover.com/banking/5-reasons-why-mobile-banking-is-essential/",
+      "snippet": "Jun 18, 2025 · Mobile banking is no longer a luxury; it’s an essential tool in today’s digital world. With its unmatched convenience, …"
+    },
+    {
+      "title": "5 major benefits of mobile banking - Yahoo Finance",
+      "url": "https://finance.yahoo.com/personal-finance/banking/article/mobile-banking-benefits-210013653.html",
+      "snippet": "Jun 26, 2026 · Mobile banking makes managing your bank accounts and transferring money much more efficient. Still aren't sure …"
+    },
+    {
+      "title": "The Rise of Mobile and Online Banking | SilverTech",
+      "url": "https://www.silvertech.com/blog/the-rise-of-mobile-and-online-banking",
+      "snippet": "Nov 19, 2024 · With fintech innovation at its core, online banking is reshaping the future of finance. However, as with any …"
+    },
+    {
+      "title": "5 key benefits of mobile banking - Bankrate",
+      "url": "https://www.bankrate.com/banking/checking/benefits-of-mobile-banking/",
+      "snippet": "Feb 17, 2025 · Mobile banking apps have several key features that can make banking simpler and faster. Here's what you need to …"
+    },
+    {
+      "title": "A Closer Look at Mobile Banking: More Uses, More Users",
+      "url": "https://www.fdic.gov/consumer-resource-center/closer-look-mobile-banking-more-uses-more-users",
+      "snippet": "Aug 10, 2023 · With advances in technology, financial institutions are now increasingly providing customers the ability to use mobile …"
+    }
+  ]
+}

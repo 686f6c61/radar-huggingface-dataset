@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "z51722369/ZOZ-Reasoning-Master-3B",
+  "slug": "z51722369-zoz-reasoning-master-3b",
+  "author": "z51722369",
+  "url": "https://huggingface.co/z51722369/ZOZ-Reasoning-Master-3B",
+  "created_at": "2026-09-17T13:21:17.000Z",
+  "updated_at": "2026-09-17T13:25:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "reasoning",
+    "function-calling",
+    "tool-use",
+    "long-context",
+    "agentic-ai",
+    "qwen2.5",
+    "chat",
+    "conversational",
+    "en",
+    "ar",
+    "base_model:z51722369/ZOZ-Function-Master-3B-LongContext",
+    "base_model:finetune:z51722369/ZOZ-Function-Master-3B-LongContext",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 6183348436,
+  "storage_human": "6.2 GB",
+  "base_model": "z51722369/ZOZ-Function-Master-3B-LongContext",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gesetz über die Hochschulen des Landes Nordrhein-Westfalen ...",
+      "url": "https://recht.nrw.de/lrgv/gesetz/07052025-gesetz-ueber-die-hochschulen-des-landes-nordrhein-westfalen-hochschulgesetz-hg/",
+      "snippet": "Juli 2016 (GV. NRW. S. 551) in der jeweils geltenden Fassung entsprechend. Die Grundordnung regelt auch das Verfahren und den …"
+    },
+    {
+      "title": "§ 49 HG NRW - Zugang zum Hochschulstudium | LexMea",
+      "url": "https://lexmea.de/de/gesetz/hg-nrw/49",
+      "snippet": "Oct 21, 2025 · Zur Verbesserung der Chancengleichheit im Zugang zum Studium an Universitäten kann das Ministerium im …"
+    },
+    {
+      "title": "Gesetz über die Hochschulen des Landes Nordrhein-Westfalen ...",
+      "url": "https://recht.nrw.de/lrgv/gesetz/01012025-gesetz-ueber-die-hochschulen-des-landes-nordrhein-westfalen-hochschulgesetz-hg/",
+      "snippet": "Juli 2016 (GV. NRW. S. 551) in der jeweils geltenden Fassung entsprechend. Die Grundordnung regelt auch das Verfahren und den …"
+    },
+    {
+      "title": "§ 49 HG – Zugang zum Hochschulstudium | Gesetze.co",
+      "url": "https://gesetze.co/NW/HG/49",
+      "snippet": "Die Fachhochschulreife berechtigt zum Studium an Fachhochschulen."
+    },
+    {
+      "title": "§ 49 HG NRW - Zugang zum Hochschulstudium | LexMea",
+      "url": "https://lexmea.de/en/gesetz/hg-nrw/49",
+      "snippet": "Mai 2013 (GV. NRW. S.272) in der jeweils geltenden Fassung ist. Die Hochschule kann das Studium bereits vor dem Erwerb der …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "MA29/astro-image-classifier",
+  "slug": "ma29-astro-image-classifier",
+  "author": "MA29",
+  "url": "https://huggingface.co/MA29/astro-image-classifier",
+  "created_at": "2026-09-17T15:09:35.000Z",
+  "updated_at": "2026-09-17T15:21:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "keras",
+  "languages": [],
+  "tags": [
+    "keras",
+    "image-classification",
+    "astronomy",
+    "tensorflow",
+    "transfer-learning",
+    "ensemble",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 267244549,
+  "storage_human": "267 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Über uns: Kontakt - Kleintierklinik",
+      "url": "https://www.kleintierklinik.unibe.ch/ueber_uns/kontakt/index_ger.html",
+      "snippet": "Je nach Art und Schweregrad der Erkrankung wird Ihr Tier ambulant behandelt oder für einige Zeit stationär aufgenommen und …"
+    },
+    {
+      "title": "Kleintierklinik",
+      "url": "https://www.kleintierklinik.unibe.ch/",
+      "snippet": "Im Tierspital Bern erhalten Haustiere die gleiche medizinische Versorgung wie Menschen. Der Clip von Präsenz Schweiz - der …"
+    },
+    {
+      "title": "Clinique pour petits animaux",
+      "url": "https://www.kleintierklinik.unibe.ch/index_fra.html",
+      "snippet": "À la clinique pour petits animaux de la Faculté Vetsuisse de Berne, nous soignons vos chiens ou vos chats sur la base des …"
+    },
+    {
+      "title": "Über uns: Team - Kleintierklinik",
+      "url": "https://www.kleintierklinik.unibe.ch/ueber_uns/team/index_ger.html",
+      "snippet": "© 2026 Universität Bern, Hochschulstrasse 6, CH 3012 Bern Rechtliche Hinweise Impressum"
+    },
+    {
+      "title": "Über uns: Offene Stellen - Kleintierklinik",
+      "url": "https://www.kleintierklinik.unibe.ch/ueber_uns/offene_stellen/index_ger.html",
+      "snippet": "Zurzeit sind diese Stellen am Departement für klinische Veterinärmedizin zu besetzen."
+    }
+  ]
+}

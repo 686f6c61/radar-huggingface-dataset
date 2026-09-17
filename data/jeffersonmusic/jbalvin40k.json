@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "JEFFERSONMUSIC/JBalvin40K",
+  "slug": "jeffersonmusic-jbalvin40k",
+  "author": "JEFFERSONMUSIC",
+  "url": "https://huggingface.co/JEFFERSONMUSIC/JBalvin40K",
+  "created_at": "2026-09-17T12:46:11.000Z",
+  "updated_at": "2026-09-17T12:48:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 89085082,
+  "storage_human": "89 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HSE - einfach online shoppen",
+      "url": "https://www.hse.de/?msockid=1824f166544969033a48e6b155ba680e",
+      "snippet": "Ob Fashion, Beauty, Schmuck oder Home & Living - Entdecken Sie die inspirierende Shoppingwelt von HSE"
+    },
+    {
+      "title": "HSE TV-Programm: Vorschau & Rückblick der TV-Sendungen",
+      "url": "https://www.hse.de/dpl/c/live-im-tv/programm?msockid=1824f166544969033a48e6b155ba680e",
+      "snippet": "Unsere digitale Programmübersicht der kommenden und vergangenen sieben Tage. Jetzt reinklicken und Angebote entdecken →"
+    },
+    {
+      "title": "Versandkostenfreie Angebote bei HSE - jetzt gratis Versand sichern",
+      "url": "https://www.hse.at/dpl/m/campaign/versandkostenfrei?msockid=1824f166544969033a48e6b155ba680e",
+      "snippet": "Jetzt bei HSE online kaufen » Exklusiv für Sie ausgewählte Produkte Tolle Angebote Jetzt einfach und sicher bestellen."
+    },
+    {
+      "title": "Schockierende Ehrlichkeit: HSE24 bewertungen 2026",
+      "url": "https://erfahrungenscout.de/online-einkaufen/hse24-bewertungen",
+      "snippet": "Apr 10, 2026 · Das war HSE24, die Abkürzung für Home Shopping Europe, der 24h täglich sendet. Auch in Österreich, Italien, …"
+    },
+    {
+      "title": "Live Shopping und mehr bei HSE",
+      "url": "https://www.hse24.ch/dpl/wsv/feed/1",
+      "snippet": "Livestream-Entertainment mit hilfreichen Tipps Entdecke tolle Angebote und shoppe interaktiv mit unseren Creators."
+    }
+  ]
+}

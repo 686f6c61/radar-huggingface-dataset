@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "jaehyunkang/pi05-real-workbench-preset-3view-object-classification-60k",
+  "slug": "jaehyunkang-pi05-real-workbench-preset-3view-object-classification-60k",
+  "author": "jaehyunkang",
+  "url": "https://huggingface.co/jaehyunkang/pi05-real-workbench-preset-3view-object-classification-60k",
+  "created_at": "2026-09-17T19:25:05.000Z",
+  "updated_at": "2026-09-17T19:26:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "real-workbench",
+    "dataset:Myungkyu/real_workbench-preset-gemini",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 24482774912,
+  "storage_human": "24.5 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Application de bureau Canva pour Windows — Téléchargement gratuit …",
+      "url": "https://www.canva.com/fr_fr/telecharger/windows/?msockid=3773432d0cb460c82d2754fa0dc0611c",
+      "snippet": "Créez rapidement de sublimes illustrations et des designs professionnels. Partagez votre design sur les réseaux sociaux, par e-mail …"
+    },
+    {
+      "title": "Téléchargez l’application de bureau Canva",
+      "url": "https://www.canva.com/fr_fr/telecharger/?msockid=3773432d0cb460c82d2754fa0dc0611c",
+      "snippet": "Créez rapidement de sublimes images et designs professionnels. Partagez votre design sur les réseaux sociaux, par e-mail ou par …"
+    },
+    {
+      "title": "Canva : Graphisme, IA, Photo & Vidéo | Canva France",
+      "url": "https://www.canva.com/fr_fr/?msockid=3773432d0cb460c82d2754fa0dc0611c",
+      "snippet": "Du design à la retouche photo, l’IA, la vidéo et le travail en équipe, Canva FR est votre partenaire créatif nº 1. CV, logo, affiche…"
+    },
+    {
+      "title": "Descarga la aplicación de Canva para computadoras",
+      "url": "https://www.canva.com/es_es/descargar/?msockid=3773432d0cb460c82d2754fa0dc0611c",
+      "snippet": "Crea diseños e imágenes profesionales en segundos. Comparte tu diseño por redes sociales, correo electrónico o mensaje de texto. …"
+    },
+    {
+      "title": "Baixe o aplicativo desktop do Canva grátis – Canva",
+      "url": "https://www.canva.com/pt_br/baixar/?msockid=3773432d0cb460c82d2754fa0dc0611c",
+      "snippet": "Crie designs e imagens profissionais em instantes. Compartilhe suas criações nas redes sociais, por e-mail ou por SMS. Baixe o …"
+    }
+  ]
+}

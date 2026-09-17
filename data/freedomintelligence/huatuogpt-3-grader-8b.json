@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "FreedomIntelligence/HuatuoGPT-3-Grader-8B",
+  "slug": "freedomintelligence-huatuogpt-3-grader-8b",
+  "author": "FreedomIntelligence",
+  "url": "https://huggingface.co/FreedomIntelligence/HuatuoGPT-3-Grader-8B",
+  "created_at": "2026-09-17T15:30:42.000Z",
+  "updated_at": "2026-09-17T15:43:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "medical",
+    "rubric-evaluation",
+    "onepo",
+    "conversational",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392939858,
+  "storage_human": "16.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kinkaku-ji – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Kinkaku-ji",
+      "snippet": "Kinkaku-ji (japanisch 金閣寺, dt. „Goldener-Pavillon-Tempel“), eigentlich Rokuon-ji (鹿苑寺, dt. „Rehgarten-Tempel“), ist ein …"
+    },
+    {
+      "title": "Kinkaku-ji - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Kinkaku-ji",
+      "snippet": "The site of Kinkaku-ji was originally a villa called Kitayama-dai (北山第), belonging to a powerful statesman, Saionji Kintsune. [6] …"
+    },
+    {
+      "title": "Kinkakuji: Der Goldene Tempel - WanderWeib",
+      "url": "https://wanderweib.de/kyoto-reise-kinkakuji-goldener-tempel/",
+      "snippet": "Der Kinkakuji (金閣寺), oder auch ‚Goldener Tempel‘, gehört zu den berühmtesten Sehenswürdigkeiten der Stadt Kyoto und zählt …"
+    },
+    {
+      "title": "Kinkakuji (Golden Pavilion) - Kyoto Travel - japan-guide.com",
+      "url": "https://www.japan-guide.com/e/e3908.html",
+      "snippet": "Kinkakuji was built to echo the extravagant Kitayama culture that developed in the wealthy aristocratic circles of Kyoto during …"
+    },
+    {
+      "title": "Japanischer Tempel und Goldener Pavillon in Kyoto - Travel Japan",
+      "url": "https://www.japan.travel/de/de/story/goldener-pavillon-in-kyoto-kinkakuji/",
+      "snippet": "Der Kinkakuji Tempel (金閣寺), auch als Goldener Pavillon bekannt, befindet sich im Nordwesten Kyoto s an den Nordbergen. Es gibt …"
+    }
+  ]
+}

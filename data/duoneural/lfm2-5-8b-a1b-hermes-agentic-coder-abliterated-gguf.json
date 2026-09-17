@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "DuoNeural/LFM2.5-8B-A1B-Hermes-Agentic-Coder-Abliterated-GGUF",
+  "slug": "duoneural-lfm2-5-8b-a1b-hermes-agentic-coder-abliterated-gguf",
+  "author": "DuoNeural",
+  "url": "https://huggingface.co/DuoNeural/LFM2.5-8B-A1B-Hermes-Agentic-Coder-Abliterated-GGUF",
+  "created_at": "2026-09-17T15:34:17.000Z",
+  "updated_at": "2026-09-18T13:59:32.000Z",
+  "license": "liquid-foundation-model-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "hermes",
+  "languages": [],
+  "tags": [
+    "hermes",
+    "gguf",
+    "duo-neural",
+    "agentic",
+    "coding",
+    "function-calling",
+    "liquid-foundation-model",
+    "moe",
+    "abliterated",
+    "text-generation",
+    "base_model:DuoNeural/LFM2.5-8B-A1B-Abliterated",
+    "base_model:quantized:DuoNeural/LFM2.5-8B-A1B-Abliterated",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8467856832,
+  "parameters_human": "8.47B",
+  "storage_bytes": 44103145056,
+  "storage_human": "44.1 GB",
+  "base_model": "DuoNeural/LFM2.5-8B-A1B-Abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Autodesk Viewer | Free Online File Viewer",
+      "url": "https://viewer.autodesk.com/",
+      "snippet": "Autodesk Viewer is a free online viewer for 2D and 3D designs including AutoCAD DWG, DXF, Revit RVT and Inventor IPT, as well …"
+    },
+    {
+      "title": "viewer.autodesk.com",
+      "url": "https://viewer.autodesk.com/environment.json",
+      "snippet": "{\"env\": \"Production\", \"featureFlagClientId\": \"5e7928f54b69520749e6fdb4\", \"apsClientId\": \"OsHrIYQAjYUBykJha4hZpGdoa5xGRi5S\", …"
+    },
+    {
+      "title": "Fehlende Referenzen - viewer.autodesk.com",
+      "url": "https://viewer.autodesk.com/assets/scripts/lmv/res/locales/de/allstrings.json",
+      "snippet": "Einige Referenzen wurden nicht hochgeladen, sodass die Zeichnung möglicherweise nicht vollständig angezeigt wird. Laden Sie die …"
+    },
+    {
+      "title": "viewer.autodesk.com",
+      "url": "https://viewer.autodesk.com/assets/fonts/ArtifaktElement/Bold/Artifakt%20Element%20Bold.woff2",
+      "snippet": "wOF2 ­ Â ¬¢ 33 v ´ `ÅJ \" —b ƒñ@ƒ¯ 6 $ –t ‹> ‰ ­d 1[ô™‘ ï7îmìë¨¸ sl[ rO%»B®ûÕ( tÞV]) @ °m O³ÛÁœ}Qw²ÿÿÿÿÿw$ Ë\\Š¹k[@ …"
+    },
+    {
+      "title": "viewer.autodesk.com",
+      "url": "https://viewer.autodesk.com/assets/fonts/ArtifaktElement/Book/Artifakt%20Element%20Book.woff2",
+      "snippet": "wOF2 «À ½ «\\ 33 v ´ `ÅJ \" —b ƒçlƒ£H 6 $ –t ‹> ‰] ­d 1[}”‘ mÆ &¦¿ªt ÅsšÝoõ 8 Õ¸=õÊ3°s´.á õ+ó xódVéÍB ý¹õ¼ìÿÿÿÿ—$ ³\\ …"
+    }
+  ]
+}

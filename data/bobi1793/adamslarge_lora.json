@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Bobi1793/AdamsLarge_LoRA",
+  "slug": "bobi1793-adamslarge_lora",
+  "author": "Bobi1793",
+  "url": "https://huggingface.co/Bobi1793/AdamsLarge_LoRA",
+  "created_at": "2026-09-17T14:06:27.000Z",
+  "updated_at": "2026-09-17T14:07:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 737668096,
+  "parameters_human": "737.7M",
+  "storage_bytes": 1475398448,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Réinitialiser pc lycée - Windows 10 - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-37428379-reinitialiser-pc-lycee",
+      "snippet": "Nov 22, 2021 · Bonjour, Cela fait pas mal de temps que je ne suis plus au lycée. Je possède toutefois un pc qui m'a été offert par ma …"
+    },
+    {
+      "title": "Pc île de France [Résolu] - Forum PC portable",
+      "url": "https://forums.commentcamarche.net/forum/affich-36860014-pc-ile-de-france",
+      "snippet": "Sep 23, 2020 · bonjour, pour crée un compte y13 il faut changer le mot de passe de l'ent et pour te connecter a ton espace personnel …"
+    },
+    {
+      "title": "PC offert par la région aux lycéens bloqué. [Résolu] - Windows",
+      "url": "https://forums.commentcamarche.net/forum/affich-37818545-pc-offert-par-la-region-aux-lyceens-bloque",
+      "snippet": "Bonjour, j’ai un problème avec mon pc, j’aimerai le réinitialiser parce que je n’ai pas le mot de passe, sauf que mon interface …"
+    },
+    {
+      "title": "Verrouillage/déverrouillage majuscules [Résolu] - Windows",
+      "url": "https://forums.commentcamarche.net/forum/affich-3124229-verrouillage-deverrouillage-majuscules",
+      "snippet": "Meilleure réponse: Bonsoir! Oui j'ai la soluce car moi aussi j'en ai baver avec cette histoire! DEMARRER PANNEAU DE CONF …"
+    },
+    {
+      "title": "Erreur 554 impossible mail sortant [Résolu] - Forum Mail",
+      "url": "https://forums.commentcamarche.net/forum/affich-25384158-erreur-554-impossible-mail-sortant",
+      "snippet": "Jun 16, 2012 · Meilleure réponse: A l'attention de PASTHOU, ça y est j'ai résolu mon problème, il fallait simplement cocher la case : …"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "changh95/GR00T-N1.7-3B-p150",
+  "slug": "changh95-gr00t-n1-7-3b-p150",
+  "author": "changh95",
+  "url": "https://huggingface.co/changh95/GR00T-N1.7-3B-p150",
+  "created_at": "2026-09-17T13:32:38.000Z",
+  "updated_at": "2026-09-17T21:31:29.000Z",
+  "license": "nvidia-license",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "blackhole",
+    "p150",
+    "tt-dit-server",
+    "tt-model-cache",
+    "tt-model-container",
+    "tenstorrent",
+    "ttnn",
+    "tt-metal",
+    "tt-nn",
+    "robotics",
+    "vla",
+    "gr00t",
+    "tt-model-catalog",
+    "arxiv:2503.14734",
+    "base_model:nvidia/GR00T-N1.7-3B",
+    "base_model:finetune:nvidia/GR00T-N1.7-3B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5664379979,
+  "storage_human": "5.7 GB",
+  "base_model": "nvidia/GR00T-N1.7-3B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Centro Trial Clinici Neurologici",
+      "url": "https://www.auxologico.it/centro-trial-clinici-neurologici",
+      "snippet": "Il Centro Trial Clinici Neurologici offre la possibilità di partecipare a studi sperimentali in ambito neurologico utili per trovare nuove …"
+    },
+    {
+      "title": "Centro di Ricerca per la SLA - Mario Negri",
+      "url": "https://www.marionegri.it/centri/centro-ricerca-sla",
+      "snippet": "Il Centro di Ricerca per la Sclerosi Laterale Amiotrofica (CentroSLA) riunisce i gruppi di ricerca che si occupano di SLA nel …"
+    },
+    {
+      "title": "Efficace il nuovo approccio per testare farmaci anti-SLA",
+      "url": "https://30science.com/2025/02/news/salute-efficace-il-nuovo-approccio-per-testare-farmaci-anti-sla/",
+      "snippet": "Feb 17, 2025 · “I recenti progressi nelle scienze cliniche – afferma Sabrina Paganoni, co-direttrice del Neurological Clinical Research …"
+    },
+    {
+      "title": "PROVE ATTIVE - LIVE - Associazione conSLAncio ETS",
+      "url": "https://www.conslancio.it/prove-attive-sla/",
+      "snippet": "In questa sezione trovate tutte le Sperimentazioni in CORSO in ordine cronologico: sperimentazioni SLA italia. Legenda: ⚉ = …"
+    },
+    {
+      "title": "Clinical Trials on Sclerosi Laterale Amiotrofica in Italy",
+      "url": "https://ichgcp.net/it/clinical-trials-registry/research/list?cond=Amyotrophic%2BLateral%2BSlerosis&locn=Italy",
+      "snippet": "Uno studio di estensione multicentrico di fase II per indagare sulla sicurezza a lungo termine di ONO-2506PO in pazienti con …"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "minjaechoi/qwen36-35b-a3b-2p00bit-r12",
+  "slug": "minjaechoi-qwen36-35b-a3b-2p00bit-r12",
+  "author": "minjaechoi",
+  "url": "https://huggingface.co/minjaechoi/qwen36-35b-a3b-2p00bit-r12",
+  "created_at": "2026-09-17T12:11:22.000Z",
+  "updated_at": "2026-09-17T12:19:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "quantized",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.6-35B-A3B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70234483957,
+  "storage_human": "70.2 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mineralien-Ankauf Magdeburg-Industriehafen",
+      "url": "https://ankaufaktion.de/ankauf-sammlungen/ankauf-mineralien/mineralien-ankauf-sachsen-anhalt/mineralien-ankauf-magdeburg/mineralien-ankauf-magdeburg-industriehafen",
+      "snippet": "Aug 17, 2024 · Egal, ob Sie einzelne Kristalle, Steinsammlungen oder größere Bestände aus der Region Magdeburg und Umgebung …"
+    },
+    {
+      "title": "Mineralien-Ankauf Leipziger Straße - ankaufaktion.de",
+      "url": "https://ankaufaktion.de/ankauf-sammlungen/ankauf-mineralien/mineralien-ankauf-sachsen-anhalt/mineralien-ankauf-magdeburg/mineralien-ankauf-leipziger-strasse",
+      "snippet": "Aug 17, 2024 · Willkommen beim Mineralien-Ankauf Leipziger Straße – Ihrem kompetenten Ansprechpartner für den Ankauf und …"
+    },
+    {
+      "title": "Mineralien Magdeburg | Die besten Mineralien in der Nähe",
+      "url": "https://www.11880.com/suche/mineralien/magdeburg",
+      "snippet": "Mithilfe der Angabe von Euro-Zeichen geben wir an, in welcher Preisspanne die Einträge für die Suche \"Mineralien in Magdeburg\" …"
+    },
+    {
+      "title": "Mineralien & Mineraliensammlung verkaufen - Ankauf",
+      "url": "https://www.fine-collectors-minerals.com/mineralien-verkaufen",
+      "snippet": "Fine Collectors Minerals ist Ihr vertrauenswürdiger Partner für den Ankauf von Mineralien. Mit über 10 Jahren Sammler-Erfahrung …"
+    },
+    {
+      "title": "Ankauf | mineralien.de",
+      "url": "https://www.mineralien.de/ankauf",
+      "snippet": "Somit ist es wichtig, einen vertrauenswürdigen und zuverlässigen Käufer zu haben, welcher die Mineralien mit den Augen eines …"
+    }
+  ]
+}

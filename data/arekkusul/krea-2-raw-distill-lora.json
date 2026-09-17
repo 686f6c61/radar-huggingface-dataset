@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Arekkusul/krea-2-raw-distill-lora",
+  "slug": "arekkusul-krea-2-raw-distill-lora",
+  "author": "Arekkusul",
+  "url": "https://huggingface.co/Arekkusul/krea-2-raw-distill-lora",
+  "created_at": "2026-09-17T17:32:47.000Z",
+  "updated_at": "2026-09-17T17:51:17.000Z",
+  "license": "krea-2-community",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "lora",
+    "text-to-image",
+    "krea-2",
+    "distillation",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 71740644,
+  "storage_human": "72 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Das Örtliche Telefonbuch | Telefonnummern & Adressen finden!",
+      "url": "https://www.dasoertliche.de/",
+      "snippet": "Deutschlands führendes Telefonbuch für Unternehmen, Behörden und Privateinträge mit lokaler Suche, Rückwärtssuche …"
+    },
+    {
+      "title": "Telefonbuch Colditz | Das Örtliche",
+      "url": "https://www.dasoertliche.de/Telefonbuch/Colditz",
+      "snippet": "Ihr örtliches Telefonbuch für Colditz mit Telefonnummern ☎, Adressen , Öffnungszeiten und Bewertungen★ für Unternehmen und …"
+    },
+    {
+      "title": "Telefonbuch Colditz | eTelefonbuch.com",
+      "url": "https://www.etelefonbuch.com/colditz",
+      "snippet": "Kostenlose Telefonauskunft. Jetzt Adressen und Telefonnummern von Firmen und Personen im Online Telefonbuch Colditz finden!"
+    },
+    {
+      "title": "Telefonauskunft: kostenlos, schnell, einfach | Das Telefonbuch",
+      "url": "https://www.dastelefonbuch.de/Telefonauskunft",
+      "snippet": "Die Telefonnummer einer Person finden Sie einfach über die Telefonauskunft heraus. Den Namen der Person und den Ort oder die …"
+    },
+    {
+      "title": "Ihr Telefonbuch | Adressen & Telefonnummern schnell finden",
+      "url": "https://www.11880.com/telefonbuch",
+      "snippet": "Jede Stadt in Deutschland hat bei uns ein eigenes lokales Telefonbuch mit Einträgen zu Privatpersonen, Unternehmen, …"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "clarezahermetica/landling-3.0-cp1",
+  "slug": "clarezahermetica-landling-3-0-cp1",
+  "author": "clarezahermetica",
+  "url": "https://huggingface.co/clarezahermetica/landling-3.0-cp1",
+  "created_at": "2026-09-17T18:58:07.000Z",
+  "updated_at": "2026-09-21T00:33:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "landling",
+    "lora",
+    "raft",
+    "development-checkpoint",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-3B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 131223420,
+  "storage_human": "131 MB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Los 100 mejores bares de Barcelona para todas las horas del día",
+      "url": "https://www.timeout.es/barcelona/es/comer-y-beber/los-100-mejores-bares-de-barcelona",
+      "snippet": "Seleccionamos los 100 mejores bares de la ciudad. Desde bares de tapas a cervecerías, cafeterías y los mejores cócteles."
+    },
+    {
+      "title": "TodoBares | Bares, restaurantes, terrazas y mucho más",
+      "url": "https://www.todobares.com/",
+      "snippet": "Buscar los mejores bares, restaurantes, cafeterías y terrazas cerca de ti. Analizamos cientos de comentarios con Inteligencia …"
+    },
+    {
+      "title": "Barras imprescindibles: nuestros 50 mejores bares de Madrid",
+      "url": "https://www.timeout.es/madrid/es/bares-y-pubs/mejores-bares-madrid",
+      "snippet": "Aug 18, 2026 · Tabernas de todo pelaje, bares de vinos y coctelerías de Madrid a las que hay que asomarse para compartir platos o …"
+    },
+    {
+      "title": "Bares y restaurantes con amplio horario | RedBar",
+      "url": "https://www.redbar.es/",
+      "snippet": "Restaurantes con amplio horario donde probar infinidad de platos y tipos de comida ️ RedBar ️ Disfruta en local, para recoger o a …"
+    },
+    {
+      "title": "Los 7 MEJORES bares en España - Septiembre 2026",
+      "url": "https://www.todobares.com/bares/es/",
+      "snippet": "Ranking de los mejores bares en España con opiniones, valoración e información en TodoBares.com actualizada a Septiembre …"
+    }
+  ]
+}

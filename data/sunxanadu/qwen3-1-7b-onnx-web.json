@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "sunxanadu/Qwen3-1.7B-ONNX-web",
+  "slug": "sunxanadu-qwen3-1-7b-onnx-web",
+  "author": "sunxanadu",
+  "url": "https://huggingface.co/sunxanadu/Qwen3-1.7B-ONNX-web",
+  "created_at": "2026-09-17T14:07:29.000Z",
+  "updated_at": "2026-09-17T14:10:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "qwen3",
+    "text-generation",
+    "webgpu",
+    "conversational",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:quantized:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1139247293,
+  "storage_human": "1.1 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Voyage , sejour , vacances avec Voyages Leclerc",
+      "url": "https://www.leclercvoyages.com/search?m_c.desti=FR%252CES%252CIT%252CPT&pageNum=467&msockid=0a415235832f671a0ac845e282c46673",
+      "snippet": ": Hôtels, locations, courts ou longs séjours, circuits ou croisières, trouvez vos vacances en ligne avec Voyages Leclerc"
+    },
+    {
+      "title": "E.Leclerc Voyages Pro",
+      "url": "https://leclercpro.leclercvoyages.com/b2b/login.action",
+      "snippet": "Se connecter 1ère connexion Mot de passe oublié V25.5"
+    },
+    {
+      "title": "Voyage, sejour, vacances avec Voyages Leclerc",
+      "url": "https://www.leclercvoyages.com/search?m_c.type_voyage=sejour&m_seminf=2&m_semsup=2&m_minMan=7,21&pageNum=296&msockid=0a415235832f671a0ac845e282c46673",
+      "snippet": "Hôtels, locations, courts ou longs séjours, circuits ou croisières, trouvez vos vacances en ligne avec Voyages Leclerc"
+    },
+    {
+      "title": "Leclerc Voyages - Leclerc Voyages la boutique",
+      "url": "https://maboutique.leclercvoyages.com/leclerc-voyages-_l_EN_r_67_va_1.html",
+      "snippet": "Copie de Copie de Copie de Copie de Copie de Copie de Copie de Copie de Copie de Copie de Copie de Copie de Copie de Copie …"
+    },
+    {
+      "title": "Accueil - Leclerc Voyages la boutique",
+      "url": "https://maboutique.leclercvoyages.com/",
+      "snippet": "Conditions générales de vente - Mentions légales - Plan du site - Contact Site géré par AB CBO sarl 159 route de Cerdon 45600 …"
+    }
+  ]
+}

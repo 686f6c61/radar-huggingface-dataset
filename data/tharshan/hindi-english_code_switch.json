@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Tharshan/hindi-english_code_switch",
+  "slug": "tharshan-hindi-english_code_switch",
+  "author": "Tharshan",
+  "url": "https://huggingface.co/Tharshan/hindi-english_code_switch",
+  "created_at": "2026-09-17T16:58:38.000Z",
+  "updated_at": "2026-09-18T12:22:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 196985275,
+  "storage_human": "197 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "E-Mail Center Login",
+      "url": "https://email.t-online.de/em/?p=mailbox",
+      "snippet": "Hier sollte eine Beschreibung angezeigt werden, diese Seite lässt dies jedoch nicht zu."
+    },
+    {
+      "title": "E-Mail Center Login",
+      "url": "https://email.t-online.de/em/?service=writeecard",
+      "snippet": "Hier sollte eine Beschreibung angezeigt werden, diese Seite lässt dies jedoch nicht zu."
+    },
+    {
+      "title": "Zum E-Mail Center | Telekom",
+      "url": "https://www.telekom.de/e-mail/zum-e-mail-center",
+      "snippet": "Telekom E-Mail Zum E-Mail Center Bitte melden Sie sich mit Ihrem Telekom-Login an. Jetzt anmelden Direkteinstiege Geräte"
+    },
+    {
+      "title": "E-Mail Center Login",
+      "url": "https://email.t-online.de/ext/ical/W5b302.qR4UJ5cx3UfjymjXk9V9DjgY0/9eHr6QQIsaWumKFWGin7Wbi7E5Q7NoEPGGKalryZH0VZ2AEyxvP69nL_Qz79fmz6",
+      "snippet": "BEGIN:VCALENDAR VERSION:2.0 PRODID:-//Telekom//SPICA v1 BEGIN:VTIMEZONE TZID:Europe/Berlin …"
+    },
+    {
+      "title": "Das E-Mail Center im Web - für E-Mail @t-online.de der Telekom",
+      "url": "https://kommunikationsdienste.t-online.de/emailcenter/info/index.html",
+      "snippet": "Durch die erweiterte Listenansicht Ihrer E-Mails im E-Mail Center können Sie den Anfang Ihrer E-Mails sowie eine Vorschau der …"
+    }
+  ]
+}

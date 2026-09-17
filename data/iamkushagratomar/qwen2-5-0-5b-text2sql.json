@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "iamkushagratomar/Qwen2.5-0.5B-text2sql",
+  "slug": "iamkushagratomar-qwen2-5-0-5b-text2sql",
+  "author": "iamkushagratomar",
+  "url": "https://huggingface.co/iamkushagratomar/Qwen2.5-0.5B-text2sql",
+  "created_at": "2026-09-17T13:21:21.000Z",
+  "updated_at": "2026-09-17T16:41:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "text2sql",
+    "qwen2.5",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen2.5-0.5B-Instruct-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen2.5-0.5B-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 999519990,
+  "storage_human": "1000 MB",
+  "base_model": "unsloth/Qwen2.5-0.5B-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Solved: Autodesk viewer - Autodesk Community",
+      "url": "https://forums.autodesk.com/t5/net-forum/autodesk-viewer/td-p/13341585",
+      "snippet": "Feb 26, 2025 · Hi @tlabbeLE97E , You can not host Autodesk Viewer locally because it's an online viewer which is hosted on …"
+    },
+    {
+      "title": "Convert to pdf from Autodesk Viewer",
+      "url": "https://forums.autodesk.com/t5/autocad-forum/convert-to-pdf-from-autodesk-viewer/td-p/8553630",
+      "snippet": "Jan 28, 2019 · I do not have AutoCAD but I have a drawing that I have uploaded to Autodesk Viewer. This drawing consists of five …"
+    },
+    {
+      "title": "Autodesk Viewer Shows Black Model - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/45558421/autodesk-viewer-shows-black-model",
+      "snippet": "Aug 8, 2017 · When using the Autodesk Viewer in different browsers, sometimes models do not display with textures and instead …"
+    },
+    {
+      "title": "Autodesk Viewer GPS Functionality - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/49997234/autodesk-viewer-gps-functionality",
+      "snippet": "Apr 24, 2018 · I was wondering if there is any support for GPS functionality for the autodesk 3D viewers, or if there is going to be …"
+    },
+    {
+      "title": "[AutoCAD] 共有ビューについて",
+      "url": "https://faq.mypage.otsuka-shokai.co.jp/app/answers/detail/a_id/294337/~/%5Bautocad%5D-%E5%85%B1%E6%9C%89%E3%83%93%E3%83%A5%E3%83%BC%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6",
+      "snippet": "Jun 28, 2018 · 7. Autodesk Viewerが開き、共有したビューが表示されます。 共有したビューを関係者に閲覧してもらう場合 URLに …"
+    }
+  ]
+}

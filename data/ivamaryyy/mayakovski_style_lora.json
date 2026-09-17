@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "ivamaryyy/mayakovski_style_LoRA",
+  "slug": "ivamaryyy-mayakovski_style_lora",
+  "author": "ivamaryyy",
+  "url": "https://huggingface.co/ivamaryyy/mayakovski_style_LoRA",
+  "created_at": "2026-09-17T18:41:55.000Z",
+  "updated_at": "2026-09-17T18:42:06.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "tensorboard",
+    "text-to-image",
+    "diffusers-training",
+    "lora",
+    "template:sd-lora",
+    "stable-diffusion-xl",
+    "stable-diffusion-xl-diffusers",
+    "base_model:stabilityai/stable-diffusion-xl-base-1.0",
+    "base_model:adapter:stabilityai/stable-diffusion-xl-base-1.0",
+    "license:openrail++",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 77225200,
+  "storage_human": "77 MB",
+  "base_model": "stabilityai/stable-diffusion-xl-base-1.0",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CA-Clipper 5.3 . Technical Reference - Long Entry",
+      "url": "https://harbour.github.io/ng/c53g03c/ng2efd0.html",
+      "snippet": "Returns _fsOpen () returns a DOS handle to the newly created file or FS_ERROR, if an error occurs. Description This function opens …"
+    },
+    {
+      "title": "CA-Clipper 5.3 . Guide To CA-Clipper - Long Entry - ITLnet",
+      "url": "https://www.itlnet.net/programming/program/Reference/c53g01c/ng48d15.html",
+      "snippet": "Description FOPEN () is a low-level file function that opens an existing binary file for reading and writing, depending on the <nMode> …"
+    },
+    {
+      "title": "The Holmes Page: CA-Clipper Networking - Using fopen () To Open Files",
+      "url": "http://ghservices.com/gregh/clipper/netfopen.htm",
+      "snippet": "Typical uses would be for reading and writing values in the CONFIG.SYS or AUTOEXEC.BAT files, or in a utility to handle …"
+    },
+    {
+      "title": "CA-Clipper 5.3 . Guide To CA-Clipper - Long Entry - Harbour",
+      "url": "https://harbour.github.io/ng/c53g01c/ng48d15.html",
+      "snippet": "DescriptionFOPEN() is a low-level file function that opens an existing binary file for reading and writing, depending on the <nMode> …"
+    },
+    {
+      "title": "Harbour Reference Guide - FiveTech Soft",
+      "url": "https://fivetechsoft.com/harbour-docs/harbour.html",
+      "snippet": "harbour source directories. Harbour is a superset of Clipper and is backwards compatible with nearly 100% of all Clipper 5.2x or 5.3 …"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "BAJUKA/LLaVA-qwen25-3b-VLfull-r2-s42-s2a",
+  "slug": "bajuka-llava-qwen25-3b-vlfull-r2-s42-s2a",
+  "author": "BAJUKA",
+  "url": "https://huggingface.co/BAJUKA/LLaVA-qwen25-3b-VLfull-r2-s42-s2a",
+  "created_at": "2026-09-17T12:45:22.000Z",
+  "updated_at": "2026-09-17T12:49:05.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "llava",
+    "llava-next",
+    "controlled-experiment",
+    "roi",
+    "draw-r2",
+    "multimodal",
+    "vision-language",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-3B-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3490246176,
+  "parameters_human": "3.49B",
+  "storage_bytes": 6980608632,
+  "storage_human": "7.0 GB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.com.ua/index.html",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google Видео",
+      "url": "https://www.google.com.ua/videohp?hl=ru",
+      "snippet": "Поиск среди огромного количества видео в Интернете"
+    },
+    {
+      "title": "Google Тренди",
+      "url": "https://trends.google.com.ua/trends/",
+      "snippet": "Що станеться, якщо об’єднати дані й птахів? Остання візуалізація від Наді Бремер – її найамбітніша робота, що занурює нас …"
+    },
+    {
+      "title": "Google Trends",
+      "url": "https://trends.google.com.ua/home?hl=ru",
+      "snippet": "Изучайте в Google Trends уровень интереса к запросам и темам по времени, местоположению и популярности."
+    },
+    {
+      "title": "Google Перекладач",
+      "url": "https://translate.google.com.ua/",
+      "snippet": "Безкоштовний сервіс Google миттєво перекладає слова, фрази й веб-сторінки з української на понад 100 мов і навпаки."
+    }
+  ]
+}

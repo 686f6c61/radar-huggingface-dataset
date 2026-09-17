@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "mradermacher/ZOZ-Function-Master-3B-GGUF",
+  "slug": "mradermacher-zoz-function-master-3b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/ZOZ-Function-Master-3B-GGUF",
+  "created_at": "2026-09-17T16:36:28.000Z",
+  "updated_at": "2026-09-18T00:45:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "function-calling",
+    "tool-use",
+    "agentic-reasoning",
+    "json-mode",
+    "structured-outputs",
+    "edge-ai",
+    "en",
+    "base_model:z51722369/ZOZ-Function-Master-3B",
+    "base_model:quantized:z51722369/ZOZ-Function-Master-3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 27940893568,
+  "storage_human": "27.9 GB",
+  "base_model": "z51722369/ZOZ-Function-Master-3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Autodesk Viewer | Free Online File Viewer",
+      "url": "https://viewer.autodesk.com/",
+      "snippet": "Autodesk Viewer is a free online viewer for 2D and 3D designs including AutoCAD DWG, DXF, Revit RVT and Inventor IPT, as well …"
+    },
+    {
+      "title": "Download Autodesk Viewers | Free Online Viewers | Autodesk Official",
+      "url": "https://www.autodesk.com/viewers?msockid=17501c49aedc6e9637bc0b9eaf1d6f81",
+      "snippet": "Download an Autodesk viewer to view CAD, DWG, DWF, DXF files and more. Upload and view files in your browser or choose the …"
+    },
+    {
+      "title": "Téléchargement des visionneuses Autodesk | Visionneuses en ligne ...",
+      "url": "https://www.autodesk.com/fr/viewers?msockid=17501c49aedc6e9637bc0b9eaf1d6f81",
+      "snippet": "Téléchargez une visionneuse Autodesk pour visualiser les fichiers CAO, DWG, DWF, DXF, et plus encore. Chargez et visualisez des …"
+    },
+    {
+      "title": "Autodesk Viewer",
+      "url": "https://viewer-rocks.autodesk.io/",
+      "snippet": "View on GitHub © 2024 Copyright Autodesk. All rights reserved."
+    },
+    {
+      "title": "Télécharger Autodesk DWG TrueView (gratuit) Windows - Clubic",
+      "url": "https://www.clubic.com/telecharger-fiche326260-autodesk-dwg-trueview.html",
+      "snippet": "1 day ago · Avec Autodesk DWG TrueView, il est possible d’ouvrir et de visualiser gratuitement tout fichier DWG, DXF ou DWF, sans …"
+    }
+  ]
+}

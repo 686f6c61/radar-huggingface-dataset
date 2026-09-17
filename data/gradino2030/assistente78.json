@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Gradino2030/Assistente78",
+  "slug": "gradino2030-assistente78",
+  "author": "Gradino2030",
+  "url": "https://huggingface.co/Gradino2030/Assistente78",
+  "created_at": "2026-09-17T19:37:37.000Z",
+  "updated_at": "2026-09-17T19:42:28.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 454538,
+  "storage_human": "454538 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "无痛卸载流氓杀毒软件Avast - 百度知道",
+      "url": "https://zhidao.baidu.com/question/1523905016667268660.html",
+      "snippet": "Jul 23, 2025 · 无痛卸载流氓杀毒软件Avast无痛卸载流氓杀毒软件Avast的方法要无痛卸载流氓杀毒软件Avast，推荐使用Avast官方提 …"
+    },
+    {
+      "title": "avast clear uninstall这个东西怎么从开机画面去除_百度知道",
+      "url": "https://zhidao.baidu.com/question/556428274049032292.html",
+      "snippet": "Sep 7, 2016 · avast clear uninstall这个东西怎么从开机画面去除亲，是这样的avast clear uninstall 该组件是卸载工具 可以手动删除这 …"
+    },
+    {
+      "title": "avast怎么卸载，快哭了？ - 知乎",
+      "url": "https://www.zhihu.com/question/66677290",
+      "snippet": "安装UTorrent的时候被捆绑了一个avast，无论是360删除，还是安全模式用avastclear删除，都会停在“启动可…"
+    },
+    {
+      "title": "电脑avast antivirus卸载问题？ - 知乎",
+      "url": "https://www.zhihu.com/question/10742227758",
+      "snippet": "选择第二个「Avast Antivirus Clear Uninstall」选项就行了，因为运行 Avast Clear 卸载工具后，电脑会自动重启，需要手动选择该选 …"
+    },
+    {
+      "title": "我已经卸载了avast但是avast还在 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/533378192.html",
+      "snippet": "Mar 19, 2013 · 我已经卸载了avast但是avast还在，只要开机就有，我找到安装目录想把整个文件夹删除，结果不行。我该怎么办，进 …"
+    }
+  ]
+}

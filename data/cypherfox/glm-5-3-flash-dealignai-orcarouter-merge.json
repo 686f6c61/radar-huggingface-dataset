@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Cypherfox/GLM-5.3-Flash-dealignai-orcarouter-merge",
+  "slug": "cypherfox-glm-5-3-flash-dealignai-orcarouter-merge",
+  "author": "Cypherfox",
+  "url": "https://huggingface.co/Cypherfox/GLM-5.3-Flash-dealignai-orcarouter-merge",
+  "created_at": "2026-09-17T19:23:46.000Z",
+  "updated_at": "2026-09-19T18:41:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "glm",
+    "moe",
+    "abliterated",
+    "uncensored",
+    "merge",
+    "not-for-all-audiences",
+    "text-generation",
+    "base_model:dealignai/GLM-5.3-Flash-ABLITERATED-FP8",
+    "base_model:merge:dealignai/GLM-5.3-Flash-ABLITERATED-FP8",
+    "base_model:orcarouter/GLM-5.3-Flash-Uncensored-FP8",
+    "base_model:merge:orcarouter/GLM-5.3-Flash-Uncensored-FP8",
+    "base_model:zai-org/GLM-5.3-Flash",
+    "base_model:merge:zai-org/GLM-5.3-Flash",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 320759404382,
+  "parameters_human": "320.76B",
+  "storage_bytes": 513064995616,
+  "storage_human": "513.1 GB",
+  "base_model": "zai-org/GLM-5.3-Flash, dealignai/GLM-5.3-Flash-ABLITERATED-FP8, orcarouter/GLM-5.3-Flash-Uncensored-FP8",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download …"
+    },
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/auth/?locale=it-IT",
+      "snippet": "Usa ChatGPT per rispondere alle domande, scrivere, creare immagini, portare a termine il lavoro e scrivere codice, tutto in un unico …"
+    },
+    {
+      "title": "Introducing ChatGPT - OpenAI",
+      "url": "https://openai.com/index/chatgpt/",
+      "snippet": "Nov 30, 2022 · We’ve trained a model called ChatGPT which interacts in a conversational way. The dialogue format makes it …"
+    },
+    {
+      "title": "GPT‑5 is here - OpenAI",
+      "url": "https://openai.com/gpt-5/",
+      "snippet": "GPT‑5 is smarter across the board, providing more useful responses across math, science, finance, law, and more. It’s like having a …"
+    },
+    {
+      "title": "ChatGPT Italiano — Senza registrazione",
+      "url": "https://chatx.ai/it/gpt",
+      "snippet": "Usa ChatGPT gratis e in modo anonimo. Modelli disponibili: GPT-5 nano, GPT-5.6 Luna, GPT-5.6 Terra, GPT-5.6 Sol, GPT-6 Astra. …"
+    }
+  ]
+}

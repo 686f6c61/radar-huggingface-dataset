@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Kyomin/unlearning_target",
+  "slug": "kyomin-unlearning_target",
+  "author": "Kyomin",
+  "url": "https://huggingface.co/Kyomin/unlearning_target",
+  "created_at": "2026-09-17T13:26:09.000Z",
+  "updated_at": "2026-09-17T13:33:38.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llava",
+    "image-text-to-text",
+    "multimodal",
+    "machine-unlearning",
+    "mllmu-bench",
+    "conversational",
+    "en",
+    "base_model:llava-hf/llava-1.5-7b-hf",
+    "base_model:finetune:llava-hf/llava-1.5-7b-hf",
+    "license:llama2",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7062919168,
+  "parameters_human": "7.06B",
+  "storage_bytes": 14126429963,
+  "storage_human": "14.1 GB",
+  "base_model": "llava-hf/llava-1.5-7b-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tracking | UPS - United States",
+      "url": "https://www.ups.com/track?loc=en_US&tracknum=1Z999AA10123456784&msockid=2536993ce0b96bcc36a78eebe1a76a7e",
+      "snippet": "Track one or multiple packages with UPS Tracking, use your tracking number to track the status of your package."
+    },
+    {
+      "title": "Tracking Your Shipment or Packages | FedEx",
+      "url": "https://www.fedex.com/en-us/tracking.html",
+      "snippet": "Enter your FedEx tracking number, track by reference, obtain proof of delivery, or TCN. See FedEx Express, Ground, Freight, and …"
+    },
+    {
+      "title": "Tracking Support | UPS - United States",
+      "url": "https://www.ups.com/us/en/support/tracking-support?msockid=2536993ce0b96bcc36a78eebe1a76a7e",
+      "snippet": "We put together a list of common tracking statuses to help you track your package and better understand where it is in its journey. …"
+    },
+    {
+      "title": "Universal Parcel Tracking - Global Package Tracking",
+      "url": "https://parcelsapp.com/en/tracking/1Z999AA10123456784",
+      "snippet": "1 day ago · Tracking number or tracking code is a unique number assigned to each package, which allows you to monitor the …"
+    },
+    {
+      "title": "Package Tracking Service | 1000+ Couriers | ParcelsZen",
+      "url": "https://parcelszen.com/",
+      "snippet": "Common formats include 20-digit USPS numbers (9400111899560438600329), 18-character UPS codes (1Z999AA10123456784), 12 …"
+    }
+  ]
+}

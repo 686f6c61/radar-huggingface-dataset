@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "fernandofernandes/fly-wordbrain-shuffled-10k",
+  "slug": "fernandofernandes-fly-wordbrain-shuffled-10k",
+  "author": "fernandofernandes",
+  "url": "https://huggingface.co/fernandofernandes/fly-wordbrain-shuffled-10k",
+  "created_at": "2026-09-17T12:39:15.000Z",
+  "updated_at": "2026-09-17T12:39:38.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "connectomics",
+    "drosophila",
+    "connectome",
+    "text-generation",
+    "ablation",
+    "control",
+    "en",
+    "dataset:fernandofernandes/fly-connectome-49k",
+    "dataset:roneneldan/TinyStories",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 31653952,
+  "storage_human": "32 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Libero mail su Windows Live Mail - digital-forum.it",
+      "url": "https://www.digital-forum.it/threads/libero-mail-su-windows-live-mail.131907/",
+      "snippet": "Oct 4, 2011 · Da oggi non riesco ad accedere alla posta sul sito libero mail.Qualcuno di voi riscontra lo stesso problema?"
+    },
+    {
+      "title": "Problemi accesso mail | Digital-Forum - Il Forum dedicato alla TV Digitale",
+      "url": "https://www.digital-forum.it/threads/problemi-accesso-mail.62641/",
+      "snippet": "Sep 24, 2008 · buon giorno a tutti.da oltre una settimana non riesco a entrare neel'mail:ho come indirizzo di posta inwind.mi da errore …"
+    },
+    {
+      "title": "URGENTE - EMAIL LIBERO | Digital-Forum - Il Forum dedicato alla TV …",
+      "url": "https://www.digital-forum.it/threads/urgente-email-libero.223064/",
+      "snippet": "Dec 9, 2025 · Salve a tutti, ho un problema (e ti pareva...). Oggi, sono entrata in Libero Mail per controllare la posta come ogni …"
+    },
+    {
+      "title": "Aiuto ! Libero Mail \"rubata\" | Digital-Forum - Il Forum dedicato alla ...",
+      "url": "https://www.digital-forum.it/threads/aiuto-libero-mail-rubata.168448/",
+      "snippet": "May 21, 2014 · Aiuto ! Libero Mail \"rubata\" Creatore Discussione Creatore Discussione Ryo Saeba Data di inizio Data di inizio19 …"
+    },
+    {
+      "title": "Libero Mail: Violato il Database degli utenti! - digital-forum.it",
+      "url": "https://www.digital-forum.it/threads/libero-mail-violato-il-database-degli-utenti.186613/",
+      "snippet": "Sep 7, 2016 · In pochi giorni si concentrano i leak di milioni e milioni di account telematici, quasi tutti connessi all'oramai famigerato …"
+    }
+  ]
+}

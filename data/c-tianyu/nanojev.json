@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "C-Tianyu/NanoJev",
+  "slug": "c-tianyu-nanojev",
+  "author": "C-Tianyu",
+  "url": "https://huggingface.co/C-Tianyu/NanoJev",
+  "created_at": "2026-09-17T16:43:26.000Z",
+  "updated_at": "2026-09-20T10:19:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "pytorch",
+    "nanojev",
+    "decision-model",
+    "reinforcement-learning-environment",
+    "supervised-fine-tuning",
+    "maze",
+    "snake",
+    "vizdoom",
+    "en",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23861815450,
+  "storage_human": "23.9 GB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Site officiel de la Région Hauts-de-France - hautsdefrance.fr",
+      "url": "https://www.hautsdefrance.fr/",
+      "snippet": "Et si le prochain champion des Hauts-de-France, c’était vous ? Cuisine, industrie, numérique, bâtiment, automobile… Plus de 60 …"
+    },
+    {
+      "title": "Amiens — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Amiens",
+      "snippet": "Capitale historique de la Picardie, elle est, avec ses 136 449 habitants (au dernier recensement en 2023) appelés Amiénois, la …"
+    },
+    {
+      "title": "Hauts-de-France — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Hauts-de-France",
+      "snippet": "Située au cœur de l' Europe de l'Ouest, avec 5 992 194 habitants habitants en 2023, et une densité de population de 189 hab/km², …"
+    },
+    {
+      "title": "Amiens - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Amiens",
+      "snippet": "Climate Amiens has the typical oceanic climate of the north of France, with relatively mild winters, cool summers, and rainfall well …"
+    },
+    {
+      "title": "C ce soir - Emission - tv-programme.com",
+      "url": "https://tv-programme.com/c-ce-soir-emission",
+      "snippet": "C ce soir - Programme TV de ce soir sur la TNT. Gratuit et complet. Replay TV : liens replay TF1, M6, W9, France 2, France 3, …"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Tang-yin-112/mt-invoice-4g-v1",
+  "slug": "tang-yin-112-mt-invoice-4g-v1",
+  "author": "Tang-yin-112",
+  "url": "https://huggingface.co/Tang-yin-112/mt-invoice-4g-v1",
+  "created_at": "2026-09-17T16:58:01.000Z",
+  "updated_at": "2026-09-17T20:49:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "microtensor",
+    "invoice",
+    "receipt-extraction",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:quantized:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4326350848,
+  "parameters_human": "4.33B",
+  "storage_bytes": 11004490036,
+  "storage_human": "11.0 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tang Frères - Supermarchés asiatiques depuis 1976",
+      "url": "https://www.tang-freres.fr/",
+      "snippet": "Sep 7, 2026 · Pionnier de l’import de produits alimentaires asiatiques en France, la société Tang Frères anticipe depuis ses débuts …"
+    },
+    {
+      "title": "Dynastie Tang — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Dynastie_Tang",
+      "snippet": "Au fil du temps, l'empereur se reposa de plus en plus sur l'aristocratie de Chang'an et du Nord-Ouest, comme les premiers Tang, …"
+    },
+    {
+      "title": "Nos supermarchés et traiteurs asiatiques | Tang Frères",
+      "url": "https://www.tang-freres.fr/supermarche-asiatique/",
+      "snippet": "Pour en savoir plus, retrouvez sur la page dédiée à chaque magasin Tang Frères les informations détaillées, les coordonnées, les …"
+    },
+    {
+      "title": "Tang (marque) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Tang_(marque)",
+      "snippet": "Tang est une boisson sucrée lyophilisée, au goût de fruit et non gazeuse originaire des États-Unis."
+    },
+    {
+      "title": "Tang dynasty - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tang_dynasty",
+      "snippet": "Far-flung kingdoms and states paid tribute to the Tang court, while the Tang also indirectly controlled several regions through a …"
+    }
+  ]
+}

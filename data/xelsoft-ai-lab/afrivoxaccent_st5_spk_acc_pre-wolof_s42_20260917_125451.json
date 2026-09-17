@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "xelsoft-ai-lab/AfriVoxAccent_ST5_spk_acc_pre-wolof_s42_20260917_125451",
+  "slug": "xelsoft-ai-lab-afrivoxaccent_st5_spk_acc_pre-wolof_s42_20260917_125451",
+  "author": "xelsoft-ai-lab",
+  "url": "https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_ST5_spk_acc_pre-wolof_s42_20260917_125451",
+  "created_at": "2026-09-17T15:16:16.000Z",
+  "updated_at": "2026-09-17T15:16:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "speecht5",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 144703717,
+  "parameters_human": "144.7M",
+  "storage_bytes": 579107854,
+  "storage_human": "579 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Overview of Testing for SARS-CoV-2 | COVID-19 | CDC",
+      "url": "https://www.cdc.gov/covid/hcp/clinical-care/overview-testing-sars-cov-2.html",
+      "snippet": "Aug 29, 2024 · This overview describes current information on the types of tests used to detect SARS-CoV-2 infection and their …"
+    },
+    {
+      "title": "What's the difference between faking, mocking, and stubbing?",
+      "url": "https://stackoverflow.com/questions/346372/whats-the-difference-between-faking-mocking-and-stubbing",
+      "snippet": "Dec 6, 2008 · Test doubles Fakes, stubs, and mocks all belong to the category of test doubles. A test double is any object or system …"
+    },
+    {
+      "title": ".net - Uninstalling an MSI file from the command line without using ...",
+      "url": "https://stackoverflow.com/questions/450027/uninstalling-an-msi-file-from-the-command-line-without-using-msiexec",
+      "snippet": "Jan 16, 2009 · msiexec is command prompt software that installs an MSI program. But I have found that you can install an MSI file …"
+    },
+    {
+      "title": "Testing for COVID-19 | Covid | CDC",
+      "url": "https://www.cdc.gov/covid/testing/index.html",
+      "snippet": "Mar 10, 2025 · Getting a COVID-19 test Buy self-tests (at-home tests) Buy self-tests (at-home tests) online or in pharmacies and retail …"
+    },
+    {
+      "title": "What Makes a Good Unit Test? [closed] - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/61400/what-makes-a-good-unit-test",
+      "snippet": "Sep 14, 2008 · An acid test would be to find someone who isn't part of your team and asking him/her to figure out the behavior under …"
+    }
+  ]
+}

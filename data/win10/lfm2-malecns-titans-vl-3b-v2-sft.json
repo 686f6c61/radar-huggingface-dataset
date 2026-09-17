@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "win10/Lfm2-MaleCNS-Titans-VL-3B-V2-SFT",
+  "slug": "win10-lfm2-malecns-titans-vl-3b-v2-sft",
+  "author": "win10",
+  "url": "https://huggingface.co/win10/Lfm2-MaleCNS-Titans-VL-3B-V2-SFT",
+  "created_at": "2026-09-17T16:50:01.000Z",
+  "updated_at": "2026-09-18T03:47:20.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm2_titans",
+    "image-text-to-text",
+    "lfm2",
+    "vision-language",
+    "memory",
+    "custom_code",
+    "jacobian-lens",
+    "male-cns",
+    "conversational",
+    "en",
+    "zh",
+    "dataset:TIGER-Lab/VisualWebInstruct",
+    "dataset:RUC-NLPIR/Omnimodal-Agent-SFT-2K",
+    "base_model:LiquidAI/LFM2.5-VL-3B",
+    "base_model:finetune:LiquidAI/LFM2.5-VL-3B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3327986595,
+  "parameters_human": "3.33B",
+  "storage_bytes": 7493210733,
+  "storage_human": "7.5 GB",
+  "base_model": "LiquidAI/LFM2.5-VL-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - 0xk1h0/ChatGPT_DAN: ChatGPT DAN, Jailbreaks prompt",
+      "url": "https://github.com/0xk1h0/ChatGPT_DAN",
+      "snippet": "ChatGPT DAN, Jailbreaks prompt. Contribute to 0xk1h0/ChatGPT_DAN development by creating an account on GitHub."
+    },
+    {
+      "title": "r/AITAH - Reddit",
+      "url": "https://www.reddit.com/r/AITAH/",
+      "snippet": "this is a community like r/AmITheAsshole except unlike that subreddit here you can post interpersonal conflicts, anything that's AITA …"
+    },
+    {
+      "title": "ChatGPT - Reddit",
+      "url": "https://www.reddit.com/r/ChatGPT/top/",
+      "snippet": "Dec 1, 2022 · r/ChatGPT: Subreddit to discuss about ChatGPT and AI. Not affiliated with OpenAI."
+    },
+    {
+      "title": "xtekky/gpt4free: The official gpt4free repository - GitHub",
+      "url": "https://github.com/xtekky/gpt4free",
+      "snippet": "The official gpt4free repository | various collection of powerful language models | opus 4.6 gpt 5.3 kimi 2.5 deepseek v3.2 gemini 3 - …"
+    },
+    {
+      "title": "ChatGPT Plus 正式恢复五小时使用上限，Codex 长任务体验 ...",
+      "url": "https://www.zhihu.com/question/2075903044676315058",
+      "snippet": "ChatGPT Plus 正式恢复五小时使用上限，Codex 长任务体验会受影响吗？实际体验如何？"
+    }
+  ]
+}

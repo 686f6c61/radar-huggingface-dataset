@@ -1,0 +1,438 @@
+{
+  "schema": 1,
+  "id": "devendradhakad/autodroid-nvidia-parakeet-tdt-0.6b-v3",
+  "slug": "devendradhakad-autodroid-nvidia-parakeet-tdt-0-6b-v3",
+  "author": "devendradhakad",
+  "url": "https://huggingface.co/devendradhakad/autodroid-nvidia-parakeet-tdt-0.6b-v3",
+  "created_at": "2026-09-17T15:05:34.000Z",
+  "updated_at": "2026-09-17T15:05:37.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "es",
+    "fr",
+    "de",
+    "bg",
+    "hr",
+    "cs",
+    "da",
+    "nl",
+    "et",
+    "fi",
+    "el",
+    "hu",
+    "it",
+    "lv",
+    "lt",
+    "mt",
+    "pl",
+    "pt",
+    "ro",
+    "sk",
+    "sl",
+    "sv",
+    "ru",
+    "uk"
+  ],
+  "tags": [
+    "transformers",
+    "automatic-speech-recognition",
+    "speech",
+    "audio",
+    "Transducer",
+    "Transformer",
+    "TDT",
+    "FastConformer",
+    "Conformer",
+    "pytorch",
+    "NeMo",
+    "hf-asr-leaderboard",
+    "Transformers",
+    "en",
+    "es",
+    "fr",
+    "de",
+    "bg",
+    "hr",
+    "cs",
+    "da",
+    "nl",
+    "et",
+    "fi",
+    "el",
+    "hu",
+    "it",
+    "lv",
+    "lt",
+    "mt",
+    "pl",
+    "pt",
+    "ro",
+    "sk",
+    "sl",
+    "sv",
+    "ru",
+    "uk",
+    "dataset:nvidia/Granary",
+    "dataset:nemo/asr-set-3.0",
+    "arxiv:2509.14128",
+    "arxiv:2505.13404",
+    "arxiv:2305.05084",
+    "arxiv:2304.06795",
+    "arxiv:2410.01036",
+    "arxiv:2406.00899",
+    "arxiv:2205.12446",
+    "arxiv:2012.03411",
+    "arxiv:2007.10310",
+    "arxiv:1510.08484",
+    "license:cc-by-4.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "AMI (Meetings test)",
+      "metric": "Test WER",
+      "value": 11.31
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Earnings-22",
+      "metric": "Test WER",
+      "value": 11.42
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "GigaSpeech",
+      "metric": "Test WER",
+      "value": 9.59
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "LibriSpeech (clean)",
+      "metric": "Test WER",
+      "value": 1.93
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "LibriSpeech (clean)",
+      "metric": "Test WER",
+      "value": 3.59
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "SPGI Speech",
+      "metric": "Test WER",
+      "value": 3.97
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "tedlium-v3",
+      "metric": "Test WER",
+      "value": 2.75
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "Vox Populi",
+      "metric": "Test WER",
+      "value": 6.14
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "FLEURS",
+      "metric": "Test WER (Bg)",
+      "value": 12.64
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "FLEURS",
+      "metric": "Test WER (Cs)",
+      "value": 11.01
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "FLEURS",
+      "metric": "Test WER (Da)",
+      "value": 18.41
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "FLEURS",
+      "metric": "Test WER (De)",
+      "value": 5.04
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "FLEURS",
+      "metric": "Test WER (El)",
+      "value": 20.7
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "FLEURS",
+      "metric": "Test WER (En)",
+      "value": 4.85
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "FLEURS",
+      "metric": "Test WER (Es)",
+      "value": 3.45
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "FLEURS",
+      "metric": "Test WER (Et)",
+      "value": 17.73
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "FLEURS",
+      "metric": "Test WER (Fi)",
+      "value": 13.21
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "FLEURS",
+      "metric": "Test WER (Fr)",
+      "value": 5.15
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "FLEURS",
+      "metric": "Test WER (Hr)",
+      "value": 12.46
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "FLEURS",
+      "metric": "Test WER (Hu)",
+      "value": 15.72
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "FLEURS",
+      "metric": "Test WER (It)",
+      "value": 3
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "FLEURS",
+      "metric": "Test WER (Lt)",
+      "value": 20.35
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "FLEURS",
+      "metric": "Test WER (Lv)",
+      "value": 22.84
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "FLEURS",
+      "metric": "Test WER (Mt)",
+      "value": 20.46
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "FLEURS",
+      "metric": "Test WER (Nl)",
+      "value": 7.48
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "FLEURS",
+      "metric": "Test WER (Pl)",
+      "value": 7.31
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "FLEURS",
+      "metric": "Test WER (Pt)",
+      "value": 4.76
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "FLEURS",
+      "metric": "Test WER (Ro)",
+      "value": 12.44
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "FLEURS",
+      "metric": "Test WER (Ru)",
+      "value": 5.51
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "FLEURS",
+      "metric": "Test WER (Sk)",
+      "value": 8.82
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "FLEURS",
+      "metric": "Test WER (Sl)",
+      "value": 24.03
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "FLEURS",
+      "metric": "Test WER (Sv)",
+      "value": 15.08
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "FLEURS",
+      "metric": "Test WER (Uk)",
+      "value": 6.79
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "Multilingual LibriSpeech",
+      "metric": "Test WER (Es)",
+      "value": 4.39
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "Multilingual LibriSpeech",
+      "metric": "Test WER (Fr)",
+      "value": 4.97
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "Multilingual LibriSpeech",
+      "metric": "Test WER (It)",
+      "value": 10.08
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "Multilingual LibriSpeech",
+      "metric": "Test WER (Nl)",
+      "value": 12.78
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "Multilingual LibriSpeech",
+      "metric": "Test WER (Pl)",
+      "value": 7.28
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "Multilingual LibriSpeech",
+      "metric": "Test WER (Pt)",
+      "value": 7.5
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "CoVoST2",
+      "metric": "Test WER (De)",
+      "value": 4.84
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "CoVoST2",
+      "metric": "Test WER (En)",
+      "value": 6.8
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "CoVoST2",
+      "metric": "Test WER (Es)",
+      "value": 3.41
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "CoVoST2",
+      "metric": "Test WER (Et)",
+      "value": 22.04
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "CoVoST2",
+      "metric": "Test WER (Fr)",
+      "value": 6.05
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "CoVoST2",
+      "metric": "Test WER (It)",
+      "value": 3.69
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "CoVoST2",
+      "metric": "Test WER (Lv)",
+      "value": 38.36
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "CoVoST2",
+      "metric": "Test WER (Nl)",
+      "value": 6.5
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "CoVoST2",
+      "metric": "Test WER (Pt)",
+      "value": 3.96
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "CoVoST2",
+      "metric": "Test WER (Ru)",
+      "value": 3
+    },
+    {
+      "task": "automatic-speech-recognition",
+      "dataset": "CoVoST2",
+      "metric": "Test WER (Sl)",
+      "value": 31.8
+    }
+  ],
+  "sources": [
+    {
+      "title": "Moulin Sorine (Santenay) | Beaune et le Pays Beaunois Tourisme",
+      "url": "https://www.beaune-tourisme.fr/fr/profiter/patrimoine-et-culture-savoirfaire/moulin-sorine-santenay-fr-3860212/",
+      "snippet": "Le moulin se visite toute l'année sur rendez-vous auprès de l'Office de Tourisme Beaune & Pays Beaunois - Antenne de Santenay. …"
+    },
+    {
+      "title": "Moulin Sorine (Santenay) | Toerisme in Beaune en de regio Beaune ...",
+      "url": "https://www.beaune-bourgondie.nl/zien-en-doen/erfgoed-en-cultuur-knowhow/moulin-sorine-santenay-nl-3860212/",
+      "snippet": "Better known as the Moulin de Santenay, this 19th-century windmill was faithfully restored in 1995. The only working communal …"
+    },
+    {
+      "title": "visiter Moulin Sorine à Santenay en Côte-d'Or (21)",
+      "url": "https://www.sortir-bourgogne-franche-comte.fr/visiter-1066/santenay/moulin-sorine.html",
+      "snippet": "Sep 5, 2026 · Découvrez Moulin Sorine à Santenay (en Côte-d'Or (21)) : infos, conseils, horaires, photos et avis pour préparer votre …"
+    },
+    {
+      "title": "Moulin Sorine (Santenay) | Beaune and the Beaune region Tourism",
+      "url": "https://www.beaune-tourism.com/en/to-see-and-do/cultural-heritage/moulin-sorine-santenay-en-3860212/",
+      "snippet": "Better known as the Moulin de Santenay, this 19th-century windmill was faithfully restored in 1995. The only working communal …"
+    },
+    {
+      "title": "Sorine windmill and vineyards, Santenay wine region, Côte de Beaune ...",
+      "url": "https://www.tourcounsel.com/2026/09/sorine-windmill-and-vineyards-santenay.html",
+      "snippet": "Known locally as Moulin Sorine or Moulin de Santenay, the windmill was faithfully restored in 1995. It is the only windmill in the Côte …"
+    }
+  ]
+}

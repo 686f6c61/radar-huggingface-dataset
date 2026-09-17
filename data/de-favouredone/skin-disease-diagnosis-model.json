@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "De-FavouredOne/Skin-Disease-Diagnosis-Model",
+  "slug": "de-favouredone-skin-disease-diagnosis-model",
+  "author": "De-FavouredOne",
+  "url": "https://huggingface.co/De-FavouredOne/Skin-Disease-Diagnosis-Model",
+  "created_at": "2026-09-17T17:11:28.000Z",
+  "updated_at": "2026-09-17T19:20:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 288627427,
+  "storage_human": "289 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Définitions : de - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/de/21718",
+      "snippet": "L'association de de et de l'article défini constitue l'article dit « partitif » (du, de la, des) : boire du vin ; fumer du tabac hollandais, des …"
+    },
+    {
+      "title": "de — Wiktionnaire, le dictionnaire libre",
+      "url": "https://fr.wiktionary.org/wiki/de",
+      "snippet": "(Date à préciser) Du latin de, apparenté au mot latin dum, du radical démonstratif indo-européen *de, do[1], qui est la source de …"
+    },
+    {
+      "title": "Dé en ligne - Lancer de dés aléatoire - Dé virtuel",
+      "url": "https://www.de-en-ligne.fr/",
+      "snippet": "On y trouve le jeu de l'as, les suites, le marathon, etc. Avec dé en ligne vous pourrez donc profiter de votre jeu de société et y jouer …"
+    },
+    {
+      "title": "DE, DU, DES, DE LA : règles et exemples | Français avec Pierre",
+      "url": "https://www.francaisavecpierre.com/de-du-des-de-la/",
+      "snippet": "Mar 17, 2019 · Vous hésitez entre DE, DU, DES et DE LA ? Découvrez les règles, les différences et des exemples concrets pour ne …"
+    },
+    {
+      "title": "DE, DU, DES : les articles définis, indéfinis et partitifs - Parlez ...",
+      "url": "https://parlez-vous-french.com/les-articles-de-du-des/",
+      "snippet": "Nov 24, 2021 · Dans cette leçon, nous allons donc voir comment utiliser les articles définis (et définis contractés), ainsi que les …"
+    }
+  ]
+}

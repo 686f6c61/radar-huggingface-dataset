@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "rohitshahfe/swin-t-baseline",
+  "slug": "rohitshahfe-swin-t-baseline",
+  "author": "rohitshahfe",
+  "url": "https://huggingface.co/rohitshahfe/swin-t-baseline",
+  "created_at": "2026-09-17T14:01:06.000Z",
+  "updated_at": "2026-09-17T14:01:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "swin_t",
+    "pytorch",
+    "swin-t",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TÜRMOB | ADAT Hesaplama",
+      "url": "https://www.turmob.org.tr/hesaplamalar/adat",
+      "snippet": "TÜRKİYE SERBEST MUHASEBECİ MALİ MÜŞAVİRLER VE YEMİNLİ MALİ MÜŞAVİRLER ODALARI BİRLİĞİ"
+    },
+    {
+      "title": "Adat Hesaplama - UZMAN MUHASEBE",
+      "url": "https://uzmanmuhasebe.net/hesaplamalar/adat-hesaplama/",
+      "snippet": "Adat (emsal faiz) hesaplama aracı: Kasa hesabı, kasa dışı aktif hesaplar ve pasif hesaplar için tarih aralığı ve bakiyelere göre günlük …"
+    },
+    {
+      "title": "ADAT Hesaplamalarına İlişkin Excel Hesaplama Aracı Güncellendi",
+      "url": "https://www.turmob.org.tr/haberler/093ba426-7f9e-4aab-be38-dee053af15f3/adat-hesaplamalarina-iliskin-excel-hesaplama-araclari-internet-sitemize-eklenmistir-",
+      "snippet": "ADAT HESAPLAMALARINA İLİŞKİN EXCEL HESAPLAMA ARACI GÜNCELLENDİ!"
+    },
+    {
+      "title": "ADAT Hesaplama 2026 | Ortak Cari Hesap Faizi",
+      "url": "https://hesapsonuc.com/adat-hesaplama/",
+      "snippet": "ADAT hesaplama aracı: ortaklar cari hesabı veya kasa bakiyesi için bakiye×gün adatı, emsal faiz, KDV ve fatura toplamını hesaplayın."
+    },
+    {
+      "title": "EDİRNE SMMMO | ADAT Hesaplama",
+      "url": "https://edirnesmmmo.org.tr/hesaplamalar/adat",
+      "snippet": "Vergi, Ticaret Hukuku, İş ve Sosyal Güvenlik konularında ki yüksek mahkeme kararlarına erişebilmek için e-Birlik sistemine …"
+    }
+  ]
+}

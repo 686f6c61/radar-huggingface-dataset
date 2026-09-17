@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "Blackfrost-Research/BLACKFROST-3.8-ICED-NVFP4-W4A4",
+  "slug": "blackfrost-research-blackfrost-3-8-iced-nvfp4-w4a4",
+  "author": "Blackfrost-Research",
+  "url": "https://huggingface.co/Blackfrost-Research/BLACKFROST-3.8-ICED-NVFP4-W4A4",
+  "created_at": "2026-09-17T19:56:41.000Z",
+  "updated_at": "2026-09-17T20:44:15.000Z",
+  "license": "qwen-community-license-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen4_exp",
+    "image-text-to-text",
+    "qwen",
+    "qwen4-exp",
+    "multimodal",
+    "mixture-of-experts",
+    "nvfp4",
+    "modelopt",
+    "mtp",
+    "speculative-decoding",
+    "blackfrost-research",
+    "conversational",
+    "base_model:Blackfrost-AI/BLACKFROST-3.8-ICED-BF16",
+    "base_model:quantized:Blackfrost-AI/BLACKFROST-3.8-ICED-BF16",
+    "license:other",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 119602003859,
+  "parameters_human": "119.60B",
+  "storage_bytes": 186441292336,
+  "storage_human": "186.4 GB",
+  "base_model": "Blackfrost-AI/BLACKFROST-3.8-ICED-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "System Requirements - McAfee",
+      "url": "https://www.mcafee.com/en-us/consumer-support/help/system-requirement.html?msockid=1c12a5795777668f21cdb2ae56986785",
+      "snippet": "Defend yourself and the entire family against the latest virus, malware, ransomware and spyware threats while staying on top of your …"
+    },
+    {
+      "title": "The Surprising Answer to the Question: Does Apple Use McAfee?",
+      "url": "https://smallusefultips.com/does-apple-use-mcafee/",
+      "snippet": "Jan 17, 2025 · Yes, McAfee offers antivirus software that is compatible with Apple devices, including Macs and iOS devices. …"
+    },
+    {
+      "title": "Mobile Security and Antivirus for Android & iOS (iPhone) | McAfee",
+      "url": "https://www.mcafee.com/en-us/antivirus/mobile.html?msockid=1c12a5795777668f21cdb2ae56986785",
+      "snippet": "Download McAfee Security all-in-one mobile app for Android and iPhone. Enjoy Antivirus for Android, unlimited VPN, Identity …"
+    },
+    {
+      "title": "McAfee on iPhone: Should You Install It and How to Add It",
+      "url": "https://realitypathing.com/should-you-install-mcafee-on-your-iphone-how-to-add-it/",
+      "snippet": "Jun 27, 2026 · You can install the McAfee app on an iPhone from the App Store, but it won’t work like traditional antivirus software on …"
+    },
+    {
+      "title": "McAfee Total Protection (Windows, macOS, Android, iOS, ChromeOS) …",
+      "url": "https://www.newegg.com/mcafee-total-protection-3-devices-1-year/p/N82E16832095731?msockid=1c12a5795777668f21cdb2ae56986785",
+      "snippet": "McAfee Total Protection for 3 devices is all-in-one online protection. With our award-winning antivirus powered by AI, you can rest …"
+    }
+  ]
+}

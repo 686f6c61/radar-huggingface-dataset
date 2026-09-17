@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "marcorez8/GLM-5.3-Flash-Abliterated-Heretic-V2-UD-IQ4_XS",
+  "slug": "marcorez8-glm-5-3-flash-abliterated-heretic-v2-ud-iq4_xs",
+  "author": "marcorez8",
+  "url": "https://huggingface.co/marcorez8/GLM-5.3-Flash-Abliterated-Heretic-V2-UD-IQ4_XS",
+  "created_at": "2026-09-17T17:41:54.000Z",
+  "updated_at": "2026-09-17T18:11:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "glm",
+    "glm5_next",
+    "moe",
+    "uncensored",
+    "abliterated",
+    "heretic",
+    "merged-lora",
+    "unsloth",
+    "llama.cpp",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:MorinoNushi/GLM-5.3-Flash-Heretic-Abliterated-LoRA-V2-GGUF",
+    "base_model:merge:MorinoNushi/GLM-5.3-Flash-Heretic-Abliterated-LoRA-V2-GGUF",
+    "base_model:unsloth/GLM-5.3-Flash-GGUF",
+    "base_model:merge:unsloth/GLM-5.3-Flash-GGUF",
+    "base_model:zai-org/GLM-5.3-Flash",
+    "base_model:merge:zai-org/GLM-5.3-Flash",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 320759404382,
+  "parameters_human": "320.76B",
+  "storage_bytes": 159087635555,
+  "storage_human": "159.1 GB",
+  "base_model": "zai-org/GLM-5.3-Flash, unsloth/GLM-5.3-Flash-GGUF, MorinoNushi/GLM-5.3-Flash-Heretic-Abliterated-LoRA-V2-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nikon D3300 Digitalkamera-Handbuch | ManualsLib",
+      "url": "https://www.manualslib.de/guide/1475875/nikon-d3300-digitalkamera-handbuch.html",
+      "snippet": "Einerseits können Sie es kaum erwarten, Ihre neue Ausrüstung zu verwenden, andererseits sind Sie von all den Tasten, …"
+    },
+    {
+      "title": "Nikon D3300 Handbücher - handbucher.com",
+      "url": "https://www.handbucher.com/models/nikon/d3300.html",
+      "snippet": "Nikon D3300 Handbücher und Benutzerhandbücher herunterladen. Lesen Sie online oder als PDF ohne Registrierung."
+    },
+    {
+      "title": "Nikon | Download center | D3300",
+      "url": "https://downloadcenter.nikonimglib.com/de/products/21/D3300.html",
+      "snippet": "Laden Sie die Software für Nikon-Produkte herunter. Klicken Sie zur Anzeige der Beschreibungen, Vorsichtshinweise und …"
+    },
+    {
+      "title": "Nikon D3300 Handbücher - ManualsLib",
+      "url": "https://www.manualslib.de/products/Nikon-D3300-109079.html",
+      "snippet": "Anleitungen und Benutzerhandbücher für Nikon D3300. Wir haben 3 Nikon D3300 Anleitungen zum kostenlosen PDF-Download zur …"
+    },
+    {
+      "title": "Bedienungsanleitung Nikon D3300 (Deutsch - 396 Seiten)",
+      "url": "https://www.bedienungsanleitu.ng/nikon/d3300/anleitung",
+      "snippet": "Markieren Sie die aktuelle Option für Bildqualität und drücken Sie die \"J\"-Taste, um die Optionen anzuzeigen. Stellen Sie sicher, dass …"
+    }
+  ]
+}

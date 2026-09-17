@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Acapellas/BSRoformer-GGUF",
+  "slug": "acapellas-bsroformer-gguf",
+  "author": "Acapellas",
+  "url": "https://huggingface.co/Acapellas/BSRoformer-GGUF",
+  "created_at": "2026-09-17T15:15:54.000Z",
+  "updated_at": "2026-09-17T15:15:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "audio-to-audio",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "audio",
+    "music",
+    "source-separation",
+    "mel-band-roformer",
+    "audio-to-audio",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51053325,
+  "parameters_human": "51.1M",
+  "storage_bytes": 4908760128,
+  "storage_human": "4.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Utdanning – Norsk Paramedisinforening",
+      "url": "https://norskparamedicforening.no/utdanning-2/",
+      "snippet": "Kostnader ved å studere Nasjonal Paramedic som videreutdan (60stp) er 54 000 kroner. Du har rett til å søke fritak fra enkeltemner, …"
+    },
+    {
+      "title": "请问有人了解澳洲bachelor of paramedicine 这个专业吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/432802074",
+      "snippet": "Dec 1, 2020 · Paramedic 的性质之前的那位护士朋友已经讲的很清楚了。Paramedic主要都是政府工作，几乎哪个国家都一样。 所 …"
+    },
+    {
+      "title": "steam正版网站是什么? - 知乎",
+      "url": "https://www.zhihu.com/question/509353816",
+      "snippet": "—————————— 浏览这个回答的人好多，看来有不少新玩家朋友加入steam，在此添加一些注意事项 1.确保你下的是正版steam. …"
+    },
+    {
+      "title": "Hjem - Norsk Paramedisinforening",
+      "url": "https://norskparamedicforening.no/",
+      "snippet": "Norsk Paramedisinforening er en faglig interesseorganisasjon for paramedisinere og ambulansearbeidere. Sammen styrker vi …"
+    },
+    {
+      "title": "Vårt arbeid – Norsk Paramedisinforening",
+      "url": "https://norskparamedicforening.no/vart-arbeid/",
+      "snippet": "Om Norsk Paramedisinforening Norsk Paramedisinforening er en uavhengig faglig interesseorganisasjon. Foreningen arbeider fag- …"
+    }
+  ]
+}

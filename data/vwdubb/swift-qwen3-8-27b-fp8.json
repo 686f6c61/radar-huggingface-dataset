@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "vwdubb/Swift-Qwen3.8-27b-FP8",
+  "slug": "vwdubb-swift-qwen3-8-27b-fp8",
+  "author": "vwdubb",
+  "url": "https://huggingface.co/vwdubb/Swift-Qwen3.8-27b-FP8",
+  "created_at": "2026-09-17T12:58:07.000Z",
+  "updated_at": "2026-09-17T13:06:16.000Z",
+  "license": "swift-open-license-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen3_8",
+    "efficient-thinking",
+    "reasoning",
+    "token-efficient",
+    "lora",
+    "conversational",
+    "base_model:ukisai/Swift-Qwen3.8-27b",
+    "base_model:quantized:ukisai/Swift-Qwen3.8-27b",
+    "license:other",
+    "endpoints_compatible",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 38472854619,
+  "storage_human": "38.5 GB",
+  "base_model": "ukisai/Swift-Qwen3.8-27b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Isla de Taiwán - Wikipedia, la enciclopedia libre",
+      "url": "https://es.wikipedia.org/wiki/Isla_de_Taiw%C3%A1n",
+      "snippet": "La isla de Taiwán (en chino tradicional, 台灣/臺灣; en chino simplificado, 台湾; pinyin, Táiwān), también conocida como Formosa (del …"
+    },
+    {
+      "title": "República de China - Wikipedia, la enciclopedia libre",
+      "url": "https://es.wikipedia.org/wiki/Rep%C3%BAblica_de_China",
+      "snippet": "A principios de la década de 1960, Taiwán entró en un período de rápido crecimiento económico e industrialización llamado el …"
+    },
+    {
+      "title": "Taiwan - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Taiwan",
+      "snippet": "Taiwan, [I][k] officially the Republic of China (ROC), [II] is a country [29] in East Asia. [n] The main island of Taiwan, also known as …"
+    },
+    {
+      "title": "Taiwán - dw.com",
+      "url": "https://www.dw.com/es/taiw%C3%A1n/t-62696129",
+      "snippet": "6 days ago · Taiwán es un territorio moderno con relaciones económicas internacionales, pero aislado debido a la política de una …"
+    },
+    {
+      "title": "Taiwán: capital, mapa, bandera, población y datos",
+      "url": "https://www.paises.net/asia/taiwan/",
+      "snippet": "Todo sobre Taiwán: datos generales, geografía, historia, cultura, economía, gastronomía, turismo y curiosidades de la República de …"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "hubert-ml/ppo-LunarLander-v2",
+  "slug": "hubert-ml-ppo-lunarlander-v2",
+  "author": "hubert-ml",
+  "url": "https://huggingface.co/hubert-ml/ppo-LunarLander-v2",
+  "created_at": "2026-09-17T16:25:16.000Z",
+  "updated_at": "2026-09-17T16:25:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "LunarLander-v3",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 284410,
+  "storage_human": "284410 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Déplacez-vous avec Uber | Courses 24 h/24 et 7 j/7 | Site officiel d'Uber",
+      "url": "https://www.uber.com/fr/fr/ride/",
+      "snippet": "Besoin d'une course pour rejoindre votre destination ? Inscrivez-vous afin de commander des courses avec Uber. Vous souhaitez …"
+    },
+    {
+      "title": "Hubert Quincaillerie | Quincaillerie de bâtiment et d'ameublement",
+      "url": "https://www.hubert-quincaillerie.fr/",
+      "snippet": "Hubert Quincaillerie Profitez de la proximité et de l’expertise d’Hubert Quincaillerie, le spécialiste des accessoires et de l’équipement …"
+    },
+    {
+      "title": "Hubert à Paris - Boulangeries Pâtisseries (adresse, horaires, ouvert le ...",
+      "url": "https://www.pagesjaunes.fr/pros/55170526",
+      "snippet": "Hubert à Paris (75) Boulangeries-pâtisseries (artisans) Restaurants : horaires, avis, retrouvez les coordonnées et informations sur le …"
+    },
+    {
+      "title": "Le Cacaotier Hubert Masse Artisan Chocolatier | Chocolats artisanaux",
+      "url": "https://www.lecacaotier.com/",
+      "snippet": "Artisan chocolatier depuis 1995, Hubert Masse propose sur sa boutique en ligne toutes ses créations artisanales. Matières premières …"
+    },
+    {
+      "title": "Hubert - Boulangerie Paris (75009)",
+      "url": "https://uneboulangerie.fr/75/paris/hubert-u84",
+      "snippet": "Vérifié le 1 septembre 2026 Hubert Cette page présente la boulangerie « Hubert », rue de maubeuge, 75009 Paris. Boulangerie - …"
+    }
+  ]
+}

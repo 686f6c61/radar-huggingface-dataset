@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l31_remove30_swapgapiter_b010_r06",
+  "slug": "jeesup-svd-safety-l31_remove30_swapgapiter_b010_r06",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l31_remove30_swapgapiter_b010_r06",
+  "created_at": "2026-09-17T18:22:52.000Z",
+  "updated_at": "2026-09-17T18:48:35.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama3",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "license:llama3.1",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766296,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "β-2-гликопротеид I, антитела IgA - сдать ...",
+      "url": "https://www.synevo.ua/ru/tests/2118",
+      "snippet": "β-2-гликопротеид I, антитела IgA в медицинской лаборатории Синэво по лучшей цене ⏩︎ Описание анализа ⏩︎ …"
+    },
+    {
+      "title": "β-2-гликопротеид I, антитела IgG - сдать ...",
+      "url": "https://www.synevo.ua/ru/tests/2119",
+      "snippet": "Бета-2-гликопротеин – белок плазмы крови, обладающий антикоагулянтной активностью, которая препятствует образованию …"
+    },
+    {
+      "title": "Антитела к ß2-гликопротеину, IgG в ...",
+      "url": "https://medilab.km.ua/ru/analizy/avtoimmunologiya/antytila-do-s2-glikoproteyinu-igg/",
+      "snippet": "Обычно это анализ крови, позволяющий выявить наличие и концентрацию антител IgG и IgM к этому белку."
+    },
+    {
+      "title": "Альфа1- кислый гликопротеин ᐈ ...",
+      "url": "https://health.oboz.ua/analizes/alfa1-kislyij-glikoprotein.htm",
+      "snippet": "Альфа-1-кислый гликопротеин – это один из самых точных маркеров язвенного колита."
+    },
+    {
+      "title": "Гликированный гемоглобин",
+      "url": "https://www.invitro.ru/library/labdiagnostika/26186/",
+      "snippet": "Jan 20, 2021 · Гликированный гемоглобин: показания к назначению, правила подготовки к сдаче анализа, расшифровка …"
+    }
+  ]
+}

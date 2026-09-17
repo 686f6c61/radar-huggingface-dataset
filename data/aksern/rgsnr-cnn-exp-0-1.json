@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "aksern/rgsnr-cnn-exp-0.1",
+  "slug": "aksern-rgsnr-cnn-exp-0-1",
+  "author": "aksern",
+  "url": "https://huggingface.co/aksern/rgsnr-cnn-exp-0.1",
+  "created_at": "2026-09-17T17:53:58.000Z",
+  "updated_at": "2026-09-18T02:07:05.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openmdw-1.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 35054921,
+  "storage_human": "35 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Informer - Nezavisne Dnevne Novine",
+      "url": "https://informer.rs/",
+      "snippet": "Vučić za Informer TV: Ne pretimo nikome, ali se pripremamo za budućnost Predsednik Srbije Aleksandar Vučić govori za Informer …"
+    },
+    {
+      "title": "Najnovije vesti - Informer.rs",
+      "url": "https://informer.rs/najnovije-vesti",
+      "snippet": "18 hours ago · Vučić za Informer TV o planiranom govoru u UN: Odano i časno služiću svojoj Srbiji Predsednik Srbije Aleksandar …"
+    },
+    {
+      "title": "Informer | Šta mi treba za...?",
+      "url": "https://informer.co.rs/",
+      "snippet": "Najnovije vesti Lična dokumenta Rad i socijalno Za strance Usluge Saobraćaj Policijske kamere u Beogradu informer.co.rs"
+    },
+    {
+      "title": "Informer — Insightful news for decision makers",
+      "url": "https://www.informer.ba/",
+      "snippet": "© Copyright 2025 Informer d.o.o. Sarajevo. Sva prava zadržana. Zabranjeno preuzimanje sadržaja bez dozvole izdavača."
+    },
+    {
+      "title": "Informer - YouTube",
+      "url": "https://www.youtube.com/@InformerTelevizija",
+      "snippet": "Nova sezona najvećeg sportskog rijalitija na svetu počinje u ponedeljak, 14. septembra u 21.30 na Informer televiziji. Pred početak, …"
+    }
+  ]
+}

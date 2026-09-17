@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "jaehyunkang/pi05-real-workbench-preset-2view-object-classification-60k",
+  "slug": "jaehyunkang-pi05-real-workbench-preset-2view-object-classification-60k",
+  "author": "jaehyunkang",
+  "url": "https://huggingface.co/jaehyunkang/pi05-real-workbench-preset-2view-object-classification-60k",
+  "created_at": "2026-09-17T17:39:36.000Z",
+  "updated_at": "2026-09-17T17:41:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "real-workbench",
+    "dataset:Myungkyu/real_workbench-preset-gemini",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 24482773904,
+  "storage_human": "24.5 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "www.championshockeyleague.com",
+      "url": "https://www.championshockeyleague.com/api/s3/live?q=live-event-b97664bff3d8df8427f07000-lineups.json",
+      "snippet": "{\"_type\":\"Corebine.Core.Protocol.Response.Object\",\"data\":{\"_type\":\"Corebine.Core.Sport.Match\",\"_entityId\":\"b97664bff3d8df8427f07000\",\"_modifyDate\":\"2025 …"
+    },
+    {
+      "title": "Tag",
+      "url": "https://www.championshockeyleague.com/en/tag?id=595f66812b4e507d1ccd10fe&name=Grizzlys%20Wolfsburg",
+      "snippet": "Tag ... Tag"
+    },
+    {
+      "title": "Top 3 Goals | Group Stage | Game Day 3",
+      "url": "https://www.championshockeyleague.com/en/videos/top-3-goals-group-stage-game-day-3",
+      "snippet": "Top 3 Goals | Group Stage | Game Day 3 09 Sep 2022"
+    },
+    {
+      "title": "Can Jastrzębie secure their first win or will Bolzano go three for three?",
+      "url": "https://www.championshockeyleague.com/en/previews/2021-22/bolzano-v-jastrzebie",
+      "snippet": "Firstly to Bolzano at home in a shootout, and secondly to Red Bull Salzburg who beat the side 3-2 in regular time. While the losses …"
+    },
+    {
+      "title": "www.championshockeyleague.com",
+      "url": "https://www.championshockeyleague.com/api/s3/live?q=live-event-01a4f54d4558f84dd7ec1c2c-players-stats.json",
+      "snippet": "{\"_type\":\"Corebine.Core.Protocol.Response.Object\",\"data\":{\"_type\":\"Corebine.Core.Sport.Match\",\"_entityId\":\"01a4f54d4558f84dd7ec1c2c\",\"_modifyDate\":\"2025 …"
+    }
+  ]
+}

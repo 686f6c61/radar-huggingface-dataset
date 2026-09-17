@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "mehedihasanbijoy/MoAA-whisper-small",
+  "slug": "mehedihasanbijoy-moaa-whisper-small",
+  "author": "mehedihasanbijoy",
+  "url": "https://huggingface.co/mehedihasanbijoy/MoAA-whisper-small",
+  "created_at": "2026-09-17T16:35:09.000Z",
+  "updated_at": "2026-09-17T16:37:47.000Z",
+  "license": "moaa-research",
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "whisper",
+    "accented-speech",
+    "adapters",
+    "mixture-of-adapters",
+    "speech-recognition",
+    "automatic-speech-recognition",
+    "en",
+    "dataset:AESRC2020",
+    "dataset:librispeech_asr",
+    "base_model:openai/whisper-small",
+    "base_model:finetune:openai/whisper-small",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2291935980,
+  "storage_human": "2.3 GB",
+  "base_model": "openai/whisper-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Discover Auckland - Travel, Tourism & Events | AucklandNZ.com",
+      "url": "https://www.aucklandnz.com/",
+      "snippet": "Discover all of Auckland in one place. Your go-to guide for Auckland things to do, top attractions, places to eat & upcoming events. …"
+    },
+    {
+      "title": "Keto Eats - Papatoetoe - Aucklandnz.com",
+      "url": "https://www.aucklandnz.com/explore/keto-eats-papatoetoe",
+      "snippet": "1 day ago · Manukau’s only all keto cafe right here at Plunket Ave, Papatoetoe. Serving savoury delights such as pies, sausage rolls, …"
+    },
+    {
+      "title": "Home | Tāmaki Makaurau Auckland Brand Library",
+      "url": "https://assets.aucklandnz.com/",
+      "snippet": "Free, high-quality images, videos and resources to help you promote Tāmaki Makaurau Auckland as a place to visit, live, work, study …"
+    },
+    {
+      "title": "Search | Auckland Brand Library",
+      "url": "https://assets.aucklandnz.com/assets",
+      "snippet": "Search and find Auckland Brand resources, photography, video and more to help tell the story of Tāmaki Makaurau Auckland."
+    },
+    {
+      "title": "Auckland Region Guide",
+      "url": "https://www.aucklandnz.com/city-info/auckland-region-guide",
+      "snippet": "Central Auckland The inner suburbs surrounding New Zealand’s metropolis have energy and looks to spare. Enjoy the big-city buzz …"
+    }
+  ]
+}

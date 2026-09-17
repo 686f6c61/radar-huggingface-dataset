@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "devendradhakad/autodroid-Abiray-Nanbeige4.2-3B-GGUF",
+  "slug": "devendradhakad-autodroid-abiray-nanbeige4-2-3b-gguf",
+  "author": "devendradhakad",
+  "url": "https://huggingface.co/devendradhakad/autodroid-Abiray-Nanbeige4.2-3B-GGUF",
+  "created_at": "2026-09-17T15:04:07.000Z",
+  "updated_at": "2026-09-17T15:04:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "quantized",
+    "llama.cpp",
+    "nanbeige",
+    "code",
+    "agent",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:Nanbeige/Nanbeige4.2-3B",
+    "base_model:quantized:Nanbeige/Nanbeige4.2-3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4169800704,
+  "parameters_human": "4.17B",
+  "storage_bytes": 2574807986,
+  "storage_human": "2.6 GB",
+  "base_model": "Nanbeige/Nanbeige4.2-3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Segoe UI - Adobe Fonts",
+      "url": "https://fonts.adobe.com/fonts/segoe-ui",
+      "snippet": "Segoe UI is a clear, readable sans serif typeface with an open, neutral look; it works well both in headlines and in short passages of …"
+    },
+    {
+      "title": "Segoe UI font family - Typography | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/typography/font-list/segoe-ui",
+      "snippet": "Jul 25, 2025 · Segoe UI is a version of Microsoft's branding typeface Segoe that is designed specifically for use on screen. Segoe UI …"
+    },
+    {
+      "title": "Segoe UI Font Family : Download Free for Desktop & Webfont",
+      "url": "https://www.cufonfonts.com/font/segoe-ui-4",
+      "snippet": "Jun 28, 2006 · Download Segoe UI font for PC/Mac for free, take a test-drive and see the entire character set. Moreover, you can …"
+    },
+    {
+      "title": "Segoe UI - Font Family (Typeface) Free Download TTF, OTF",
+      "url": "https://www.fontmirror.com/segoe-ui",
+      "snippet": "Get the Segoe UI font free! A sleek, modern font perfect for websites, branding, and apps. Download now and elevate your designs!"
+    },
+    {
+      "title": "Segoe UI Font Family - Free Download & Preview | Deefont",
+      "url": "https://www.deefont.com/segoe-ui-font-family/",
+      "snippet": "Segoe UI Font Family is a modern sans-serif typeface designed by Steve Matteson, primarily known for its use in Microsoft products. …"
+    }
+  ]
+}

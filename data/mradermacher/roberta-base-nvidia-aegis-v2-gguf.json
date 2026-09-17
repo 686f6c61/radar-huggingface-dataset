@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "mradermacher/roberta-base-nvidia-aegis-v2-GGUF",
+  "slug": "mradermacher-roberta-base-nvidia-aegis-v2-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/roberta-base-nvidia-aegis-v2-GGUF",
+  "created_at": "2026-09-17T14:24:38.000Z",
+  "updated_at": "2026-09-17T14:31:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "generated_from_trainer",
+    "en",
+    "base_model:leomaurodesenv/roberta-base-nvidia-aegis-v2",
+    "base_model:quantized:leomaurodesenv/roberta-base-nvidia-aegis-v2",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "feature-extraction"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124645634,
+  "parameters_human": "124.6M",
+  "storage_bytes": 1239588224,
+  "storage_human": "1.2 GB",
+  "base_model": "leomaurodesenv/roberta-base-nvidia-aegis-v2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Canva: Visual Suite for Everyone",
+      "url": "https://www.canva.com/?msockid=147aab292bf862712fbbbcfe2a7863b5",
+      "snippet": "Canva is a free-to-use online graphic design tool. Use it to create social media posts, presentations, posters, videos, logos and more."
+    },
+    {
+      "title": "Login to your Canva account",
+      "url": "https://www.canva.com/login/?msockid=147aab292bf862712fbbbcfe2a7863b5",
+      "snippet": "Log in or sign up in seconds Use your email or another service to continue with Canva (it’s free)!"
+    },
+    {
+      "title": "Canva: Sign up for free",
+      "url": "https://canva.me/signup/",
+      "snippet": "Canva Canva: Sign up for free Create great designs for every part of your life See this content immediately after install"
+    },
+    {
+      "title": "Canva - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Canva",
+      "snippet": "The platform uses a drag-and-drop interface designed for its users without professional design training or experience. Canva …"
+    },
+    {
+      "title": "Free templates - Canva",
+      "url": "https://www.canva.com/templates/?msockid=147aab292bf862712fbbbcfe2a7863b5",
+      "snippet": "Free templates Explore thousands of beautiful free templates. With Canva's drag and drop feature, you can customize your design for …"
+    }
+  ]
+}

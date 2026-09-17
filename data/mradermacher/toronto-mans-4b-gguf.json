@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Toronto-Mans-4B-GGUF",
+  "slug": "mradermacher-toronto-mans-4b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Toronto-Mans-4B-GGUF",
+  "created_at": "2026-09-17T16:43:14.000Z",
+  "updated_at": "2026-09-17T17:03:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "toronto",
+    "slang",
+    "multicultural-toronto-english",
+    "persona",
+    "chat",
+    "lora",
+    "qwen3.5",
+    "en",
+    "dataset:devon7y/toronto-slang-lexicon",
+    "base_model:devon7y/Toronto-Mans-4B",
+    "base_model:adapter:devon7y/Toronto-Mans-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 38906340736,
+  "storage_human": "38.9 GB",
+  "base_model": "devon7y/Toronto-Mans-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/?gl=FR&hl=fr",
+      "snippet": "Profitez des vidéos et de la musique que vous aimez, mettez en ligne des contenus originaux, et partagez-les avec vos amis, vos …"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "YouTube – Applications sur Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.google.android.youtube&hl=ln",
+      "snippet": "Get the official YouTube app on Android phones and tablets. See what the world is watching -- from the hottest music videos to …"
+    },
+    {
+      "title": "YouTube – Applications sur Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.xr&hl=fr",
+      "snippet": "L'application YouTube vous permet de regarder toutes les vidéos de la plate-forme de manière immersive et transforme YouTube en …"
+    },
+    {
+      "title": "YouTube - Google Accounts",
+      "url": "https://accounts.google.com/InteractiveLogin?service=youtube",
+      "snippet": "Share your videos with friends, family, and the world."
+    }
+  ]
+}

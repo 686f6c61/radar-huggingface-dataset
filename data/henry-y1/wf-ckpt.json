@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "henry-y1/wf-ckpt",
+  "slug": "henry-y1-wf-ckpt",
+  "author": "henry-y1",
+  "url": "https://huggingface.co/henry-y1/wf-ckpt",
+  "created_at": "2026-09-17T12:25:53.000Z",
+  "updated_at": "2026-09-17T13:09:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 28577335189,
+  "storage_human": "28.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Henrri, le meilleur logiciel de facturation gratuit",
+      "url": "https://www.henrri.com/",
+      "snippet": "Avec notre logiciel de facturation gratuit Henrri, créez devis et factures en ligne, gérez la facturation électronique, suivez paiements et …"
+    },
+    {
+      "title": "Henrri - Connectez-vous à votre logiciel de facturation",
+      "url": "http://henrri.net/",
+      "snippet": "Henrri, votre logiciel de facturation en ligne. Pro, sympa, gratuit : inscrivez-vous ou connectez-vous à votre compte Henrri."
+    },
+    {
+      "title": "Thierry Henry - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Thierry_Henry",
+      "snippet": "Expatriate men's soccer players in the United States French football managers"
+    },
+    {
+      "title": "Thierry Henry — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Thierry_Henry",
+      "snippet": ""
+    },
+    {
+      "title": "Fabricant de mobiliers urbains | Henry",
+      "url": "https://www.henry.fr/",
+      "snippet": "Designer et fabricant français de mobiliers urbains depuis 1850. Tous les produits Henry en aluminium, inox ou acier, sont de …"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "divergentlabs/qwen-jeff-B2",
+  "slug": "divergentlabs-qwen-jeff-b2",
+  "author": "divergentlabs",
+  "url": "https://huggingface.co/divergentlabs/qwen-jeff-B2",
+  "created_at": "2026-09-17T16:30:31.000Z",
+  "updated_at": "2026-09-17T17:13:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "qwen-jeff",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "qwen-jeff",
+    "safetensors",
+    "decision-scorer",
+    "pointwise-scorer",
+    "calibration",
+    "selective-prediction",
+    "routing",
+    "entailment",
+    "rubric-scoring",
+    "qwen3",
+    "text-classification",
+    "en",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 12,
+  "downloads_30d": 0,
+  "trending_score": 12,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3452621880,
+  "storage_human": "3.5 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Maps - Reddit",
+      "url": "https://www.reddit.com/r/GoogleMaps/",
+      "snippet": "r/GoogleMaps is participating in ongoing protests regarding changes to Reddit's API accessibility. The subreddit may reopen at some …"
+    },
+    {
+      "title": "Get directions and show routes in Google Maps",
+      "url": "https://support.google.com/maps/answer/144339?hl=en-AU&co=GENIE.Platform%3DDesktop",
+      "snippet": "You can get directions for driving, public transport, walking, ride sharing, cycling, flight or motorcycle on Google Maps. If there are …"
+    },
+    {
+      "title": "How to Display Multiple Google Maps per page with API V3",
+      "url": "https://stackoverflow.com/questions/4074520/how-to-display-multiple-google-maps-per-page-with-api-v3",
+      "snippet": "Nov 2, 2010 · OP wanted two specific maps, but if you'd like to have a dynamic number of maps on one page (for instance a list of …"
+    },
+    {
+      "title": "การเริ่มต้นใช้งาน Google Maps",
+      "url": "https://support.google.com/maps/answer/144349?hl=th&co=GENIE.Platform%3DAndroid",
+      "snippet": "ค้นหาการแจ้งเตือนใน Google Maps ดูวิธีเปิดหรือปิดการแจ้งเตือนของ Google Maps ตรวจสอบข้อความใน Google Maps …"
+    },
+    {
+      "title": "How to extract the lat/lng of pins in google maps?",
+      "url": "https://stackoverflow.com/questions/2558016/how-to-extract-the-lat-lng-of-pins-in-google-maps",
+      "snippet": "Apr 1, 2010 · Google has change a lot the way you can extract information about google.maps and has set some limitations like …"
+    }
+  ]
+}

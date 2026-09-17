@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "mradermacher/glm-4-9b-chat-hf-OBLITERATED-GGUF",
+  "slug": "mradermacher-glm-4-9b-chat-hf-obliterated-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/glm-4-9b-chat-hf-OBLITERATED-GGUF",
+  "created_at": "2026-09-17T19:41:03.000Z",
+  "updated_at": "2026-09-17T22:38:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "obliteratus",
+    "abliteration",
+    "uncensored",
+    "obliterate",
+    "en",
+    "base_model:OBLITERATUS/glm-4-9b-chat-hf-OBLITERATED",
+    "base_model:quantized:OBLITERATUS/glm-4-9b-chat-hf-OBLITERATED",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9399951360,
+  "parameters_human": "9.40B",
+  "storage_bytes": 86819933440,
+  "storage_human": "86.8 GB",
+  "base_model": "OBLITERATUS/glm-4-9b-chat-hf-OBLITERATED",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DJK Eintracht Allersberg – Sportverein, Gemeinschaft und …",
+      "url": "https://djk-eintracht-allersberg.de/",
+      "snippet": "Jul 22, 2026 · Die DJK Eintracht Allersberg verbindet Sport, Gemeinschaft und Engagement. Informieren Sie sich über unsere …"
+    },
+    {
+      "title": "DJK Eintracht Allersberg e.V.",
+      "url": "https://djk-allersberg.de/",
+      "snippet": "Ein Verein ... Viele Gesichter ... Die DJK Eintracht ist einer der beliebtesten Vereine in Allersberg mit hunderten von Mitgliedern und …"
+    },
+    {
+      "title": "DJK Eintracht Allersberg | BFV",
+      "url": "https://www.bfv.de/vereine/djk-allersberg/00ES8GNKIG00000UVV0AG08LVUPGND5I",
+      "snippet": "So bist du ganz nah an deinen Lieblingsspielern, Mannschaften und Ligen, die dann direkt hier angezeigt werden."
+    },
+    {
+      "title": "DJK Eintracht Allersberg - BFV",
+      "url": "https://www.bfv.de/mannschaften/-/016PL0TFIG000000VV0AG811VUDIC8D7",
+      "snippet": "DJK Eintracht Allersberg (Herren), Kreis Neumarkt/Jura Bezirk Mittelfranken, Platz 2 in der Liga Kreisklasse Ost mit einem …"
+    },
+    {
+      "title": "Über die DJK Eintracht Allersberg – Geschichte und Vereinsleben",
+      "url": "https://djk-eintracht-allersberg.de/der-verein/",
+      "snippet": "Erfahren Sie mehr über die Geschichte, Werte und das Vereinsleben der DJK Eintracht Allersberg und lernen Sie unseren Verein …"
+    }
+  ]
+}

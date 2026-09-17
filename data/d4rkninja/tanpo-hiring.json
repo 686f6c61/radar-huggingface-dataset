@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "d4rkninja/tanpo-hiring",
+  "slug": "d4rkninja-tanpo-hiring",
+  "author": "d4rkninja",
+  "url": "https://huggingface.co/d4rkninja/tanpo-hiring",
+  "created_at": "2026-09-17T16:36:47.000Z",
+  "updated_at": "2026-09-18T17:46:14.000Z",
+  "license": "lfm-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm2",
+    "text-generation",
+    "hiring",
+    "conversational",
+    "tanpo",
+    "en",
+    "dataset:d4rkninja/tanpo-hiring-sft",
+    "base_model:LiquidAI/LFM2.5-1.2B-Instruct",
+    "base_model:finetune:LiquidAI/LFM2.5-1.2B-Instruct",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1170340608,
+  "parameters_human": "1.17B",
+  "storage_bytes": 2340697936,
+  "storage_human": "2.3 GB",
+  "base_model": "LiquidAI/LFM2.5-1.2B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Raleigh - Frankie's Fun Park",
+      "url": "https://frankies.com/raleigh/",
+      "snippet": "Experience endless fun at Frankie's amusement park in Raleigh, NC! Enjoy thrilling attractions and make unforgettable memories today!"
+    },
+    {
+      "title": "Raleigh Park Info - Frankie's Fun Park",
+      "url": "https://frankies.com/raleigh-park-info/",
+      "snippet": "Park may close early on slow weekdays. Some Attractions may open later in the day Monday-Friday."
+    },
+    {
+      "title": "Frankie's Fun Park (Raleigh): 2026 Prices, Hours & Family Guide",
+      "url": "https://kidvoyage.com/things-to-do/usa/raleigh-nc/frankie-s-fun-park1",
+      "snippet": "Planning a family visit to Frankie's Fun Park in Raleigh, USA? Read our in-depth editorial review for 2026 with tips for parents. Find …"
+    },
+    {
+      "title": "Frankie's Fun Park - All You SHOULD Know Before Going ... - Tripadvisor",
+      "url": "https://www.tripadvisor.com/Attraction_Review-g49463-d1581475-Reviews-Frankie_s_Fun_Park-Raleigh_North_Carolina.html",
+      "snippet": "Frankie’s of Raleigh is the Triangle Area’s premier place for FUN, offering exciting attractions for guests of all ages. Enjoy high-speed …"
+    },
+    {
+      "title": "Frankie's Fun Park - Raleigh, NC 27617",
+      "url": "https://www.visitraleigh.com/listing/frankies-fun-park/60731/",
+      "snippet": "Frankie's has got it all. Sized up for little kids, big kids and those who still think they're kids. With no admission fee, you pay as you …"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "rahulkuiry04/thyroid_cancer_model",
+  "slug": "rahulkuiry04-thyroid_cancer_model",
+  "author": "rahulkuiry04",
+  "url": "https://huggingface.co/rahulkuiry04/thyroid_cancer_model",
+  "created_at": "2026-09-17T17:09:41.000Z",
+  "updated_at": "2026-09-17T17:11:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "keras",
+  "languages": [],
+  "tags": [
+    "keras",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4737357,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Business Profile",
+      "url": "https://accounts.google.com/InteractiveLogin?service=lbc",
+      "snippet": "Use a private browsing window to sign in. Learn more about using Guest mode."
+    },
+    {
+      "title": "Get Listed on Google - Google Business Profile",
+      "url": "https://business.google.com/en-all/business-profile/",
+      "snippet": "Take control of how your free Business Profile appears on Google Search and Maps. Personalise your profile with photos, manage …"
+    },
+    {
+      "title": "Edit your Business Profile - Google Help",
+      "url": "https://support.google.com/business/answer/3039617?hl=en",
+      "snippet": "You can edit your verified Business Profile on Google to keep your business info accurate and up to date. You can update details like …"
+    },
+    {
+      "title": "Google Dashboard",
+      "url": "https://myaccount.google.com/u/3/dashboard",
+      "snippet": "Manage your Google Account settings and access personalized tools to enhance your experience."
+    },
+    {
+      "title": "Google Business Profile Help",
+      "url": "https://support.google.com/business/?hl=en",
+      "snippet": "Official Google Business Profile Help Center where you can find tips and tutorials on using Google Business Profile and other …"
+    }
+  ]
+}

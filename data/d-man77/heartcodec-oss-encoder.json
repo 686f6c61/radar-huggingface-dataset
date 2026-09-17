@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "D-MaN77/HeartCodec-oss-encoder",
+  "slug": "d-man77-heartcodec-oss-encoder",
+  "author": "D-MaN77",
+  "url": "https://huggingface.co/D-MaN77/HeartCodec-oss-encoder",
+  "created_at": "2026-09-17T18:02:10.000Z",
+  "updated_at": "2026-09-17T18:02:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "audio",
+    "heartcodec",
+    "encoder",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2148691856,
+  "storage_human": "2.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Discord - Group Chat That’s All Fun & Games",
+      "url": "https://discord.com/",
+      "snippet": "Discord is great for playing games and chilling with friends, or even building a worldwide community. Customize your own space to …"
+    },
+    {
+      "title": "D — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/D",
+      "snippet": "La notation D... ou D. est une abréviation du nom de Dieu employée par les juifs les plus religieux, puisque le judaïsme interdit de …"
+    },
+    {
+      "title": "RER D | Transilien",
+      "url": "https://www.transilien.com/fr/page-lignes/ligne-d",
+      "snippet": "Plan, horaires, actualité, idées de sorties, histoire de la ligne. De Creil et Orry-la-Ville à Corbeil-Essonnes, Melun et Malesherbes, …"
+    },
+    {
+      "title": "D (lettre) — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/D_(lettre)",
+      "snippet": "La lettre D tire probablement son origine de l' alphabet protosinaïtique, du graphème représentant un poisson ou de celui …"
+    },
+    {
+      "title": "Définitions : D - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/D/21458",
+      "snippet": "D - Définitions Français : Retrouvez la définition de D, ainsi que les homonymes, expressions, difficultés... - synonymes, homonymes, …"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "vutomimohube/YOLOv5-CBAM",
+  "slug": "vutomimohube-yolov5-cbam",
+  "author": "vutomimohube",
+  "url": "https://huggingface.co/vutomimohube/YOLOv5-CBAM",
+  "created_at": "2026-09-17T17:51:29.000Z",
+  "updated_at": "2026-09-17T18:02:07.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14442863,
+  "storage_human": "14 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WhatsApp Web",
+      "url": "https://web.whatsapp.com/",
+      "snippet": "Log in to WhatsApp Web for simple, reliable and private messaging on your desktop. Send and receive messages and files with …"
+    },
+    {
+      "title": "World Wide Web - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/World_Wide_Web",
+      "snippet": "Servers and resources on the World Wide Web are identified and located through a character string called a uniform resource locator …"
+    },
+    {
+      "title": "WhatsApp | Secure and Reliable Free Private Messaging and Calling",
+      "url": "https://www.whatsapp.com/",
+      "snippet": "Who we are About us Careers Brand Center Privacy Use WhatsApp Mobile Desktop Tablet WhatsApp Web"
+    },
+    {
+      "title": "HOUSAB - WhatsApp",
+      "url": "https://wa.me/",
+      "snippet": "Hosted by WhatsApp 2026 © WhatsApp LLC Privacy & Terms"
+    },
+    {
+      "title": "Google Chrome Web Browser",
+      "url": "https://www.google.com/intl/en_in/chrome/",
+      "snippet": "Personalise your web browser with themes, dark mode and other options built just for you."
+    }
+  ]
+}

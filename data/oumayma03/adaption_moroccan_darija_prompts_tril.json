@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "oumayma03/adaption_moroccan_darija_prompts_tril",
+  "slug": "oumayma03-adaption_moroccan_darija_prompts_tril",
+  "author": "oumayma03",
+  "url": "https://huggingface.co/oumayma03/adaption_moroccan_darija_prompts_tril",
+  "created_at": "2026-09-17T18:00:11.000Z",
+  "updated_at": "2026-09-17T18:00:16.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qwen3_5",
+    "lora",
+    "adapter",
+    "adaption",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:adapter:Qwen/Qwen3.5-0.8B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 71135549,
+  "storage_human": "71 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "APAS Provence",
+      "url": "https://apasprovence.com/",
+      "snippet": "L’équipe APAS Provence Assistantes Sociales, Administratives, Directeur… Découvrez celles et ceux qui vous accompagnent dans …"
+    },
+    {
+      "title": "VACANCES – APAS Provence",
+      "url": "https://apasprovence.com/vacances/",
+      "snippet": "VACANCES L’APAS vous aide à financer vos vacances et celles de vos enfants. Nous vous proposons des week-ends organisés …"
+    },
+    {
+      "title": "Nos aides – APAS Provence",
+      "url": "https://apasprovence.com/social/",
+      "snippet": "Les aides de l’APAS Tout le long de l’année, bénéficiez de plusieurs aides, pour vous, votre famille et votre/vos. enfant(s). Plusieurs …"
+    },
+    {
+      "title": "Présentation – APAS Provence",
+      "url": "https://apasprovence.com/presentation/",
+      "snippet": "L’équipe APAS Provence Dans toute la région PACA Accompagnée de techniciennes, d’assistantes sociales, comptable et chargée …"
+    },
+    {
+      "title": "La Valette – 83 – APAS Provence",
+      "url": "https://apasprovence.com/la-valette-83/",
+      "snippet": "Coralie THURIOT – Assistante Sociale 83 Vidéo de présentation Nos 5 Assistantes Sociales sont spécialisées dans le BTP – Une …"
+    }
+  ]
+}

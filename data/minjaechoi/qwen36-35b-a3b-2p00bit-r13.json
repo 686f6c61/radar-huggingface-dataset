@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "minjaechoi/qwen36-35b-a3b-2p00bit-r13",
+  "slug": "minjaechoi-qwen36-35b-a3b-2p00bit-r13",
+  "author": "minjaechoi",
+  "url": "https://huggingface.co/minjaechoi/qwen36-35b-a3b-2p00bit-r13",
+  "created_at": "2026-09-17T12:19:24.000Z",
+  "updated_at": "2026-09-17T12:20:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "quantized",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.6-35B-A3B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70234483957,
+  "storage_human": "70.2 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "La charge hypoxique : un indice intégré aux outils CIDELEC",
+      "url": "https://cidelec.net/charge-hypoxique/",
+      "snippet": "Le calcul de la charge hypoxique est réalisé automatiquement dans le logiciel CIDELEC. Elle est obtenue en considérant les aires …"
+    },
+    {
+      "title": "Hypoxia Burden Estimator | ApneaCalculator",
+      "url": "https://apneacalculator.com/hypoxia-burden-calculator/",
+      "snippet": "Hypoxia Burden Estimator helps you organize numbers and questionnaire answers. It cannot diagnose obstructive sleep apnea …"
+    },
+    {
+      "title": "Hypoxic burden: a new index integrated into CIDELEC tools",
+      "url": "https://cidelec.net/en/hypoxic-burden-a-new-index-integrated-into-cidelec-tools/",
+      "snippet": "In order to provide additional information and improve diagnoses of OSAHS, an American team has developed a method of …"
+    },
+    {
+      "title": "Hypoxic Burden in Obstructive Sleep Apnea: Present and Future",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0300289622005129",
+      "snippet": "Jan 1, 2023 · In this “perspective” paper the methods to quantify the HB, its characteristics, associations with health outcomes, and …"
+    },
+    {
+      "title": "Hypoxic burden – definitions, pathophysiological concepts, methods …",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11451971/",
+      "snippet": "In this review on hypoxic burden, we focus on the need that has driven the sudden influx of studies assessing hypoxic burden for …"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "pulkitrai/SOC7",
+  "slug": "pulkitrai-soc7",
+  "author": "pulkitrai",
+  "url": "https://huggingface.co/pulkitrai/SOC7",
+  "created_at": "2026-09-17T14:22:28.000Z",
+  "updated_at": "2026-09-19T10:35:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "cybersecurity",
+    "soc",
+    "security-operations-center",
+    "microsoft-sentinel",
+    "azure-sentinel",
+    "siem",
+    "incident-response",
+    "threat-hunting",
+    "kql",
+    "lora",
+    "transformers",
+    "conversational",
+    "text-generation",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:adapter:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 31659400,
+  "storage_human": "32 MB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BieTal® Wassersprudler BT-25U Classic Puls Filter SET",
+      "url": "https://www.bietal.de/BieTal-BT-25U-Wassersprudler-Wasserspender-Sprudelwasseranlage-mit-Kuehlung-25-Liter-Zapfstelle-Schanksaeule-Classic-Puls-flach-Wasserfilter-SET",
+      "snippet": "Der Wassersprudler von BieTal® BT-25U ist eine professionelle Maschine zur Herstellung von gekühltem Sodawasser …"
+    },
+    {
+      "title": "Tafelwassergerät BieTal® BT-25U Untertisch Wassersprudler für bis zu …",
+      "url": "https://www.mex.de/produkt/tafelwassergeraet-bietal-bt-25u-untertis-b0bzhx6fgj",
+      "snippet": "Der BieTal® BT-25U überzeugt mit seiner leistungsstarken Sprudelleistung von bis zu 25 Litern pro Stunde – ideal für Familien, …"
+    },
+    {
+      "title": "BieTal Wassersprudler BieTal® BT-25U Tafelwassergerät ... - OTTO",
+      "url": "https://www.otto.de/p/bietal-wassersprudler-bietal-bt-25u-tafelwassergeraet-sprudelwasser-mit-zapfstelle-filter-set-45-tlg-sprudelwasseranlage-trinkwasser-wasserspender-mit-zapfstelle-S0N5P09F/",
+      "snippet": "Tafelwassergerät BieTal® zur Herstellung von bis zu 25 Litern pro Stunde gut gekühltem Sprudelwasser und kaltem Wasser mit …"
+    },
+    {
+      "title": "Tafelwassergerät BieTal® BT-25U Untertisch Wassersprudler für bis zu …",
+      "url": "https://www.mex.de/produkt/tafelwassergeraet-bietal-bt-25u-untertis-b0bhzrb5st",
+      "snippet": "Mit einer Leistung von bis zu 25 Litern pro Stunde ist der BT-25U ideal für Familien, Büros, Kanzleien oder Praxen mit regelmäßigem …"
+    },
+    {
+      "title": "BieTal® Sprudelwasseranlage Wasserspender BT-25U SET",
+      "url": "https://www.bierzapfen-shop.com/Tafelwasseranlage-Wasserspender-Tafelwassergeraet-Sodawasser-Sprudelwasserspender-Kuehlung-Schanksaeule-Zapfstelle-Filter-Wasserfilter-SET",
+      "snippet": "Tafelwasseranlage BT-25U von BieTal® zur Herstellung von Tafel- und Sprudelwasser, der kleine Wasserspender Untertisch für den …"
+    }
+  ]
+}

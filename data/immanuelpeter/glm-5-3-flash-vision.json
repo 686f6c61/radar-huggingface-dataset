@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "immanuelpeter/GLM-5.3-Flash-Vision",
+  "slug": "immanuelpeter-glm-5-3-flash-vision",
+  "author": "immanuelpeter",
+  "url": "https://huggingface.co/immanuelpeter/GLM-5.3-Flash-Vision",
+  "created_at": "2026-09-17T17:22:46.000Z",
+  "updated_at": "2026-09-17T17:23:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm5_next_vision",
+    "feature-extraction",
+    "vision",
+    "image-feature-extraction",
+    "base_model:zai-org/GLM-5.3-Flash",
+    "base_model:finetune:zai-org/GLM-5.3-Flash",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 563627008,
+  "parameters_human": "563.6M",
+  "storage_bytes": 1127288432,
+  "storage_human": "1.1 GB",
+  "base_model": "zai-org/GLM-5.3-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "三国群英传从1到7，哪个版本最经典最耐玩？ - 知乎",
+      "url": "https://www.zhihu.com/question/29522718",
+      "snippet": "三国群英传从1998年开始至今，历经7个版本，还有两部网游，在资深玩家心中，哪个版本最经典，最耐玩？说…"
+    },
+    {
+      "title": "如何评价《无畏契约》的反作弊系统「Vanguard」？ - 知乎",
+      "url": "https://www.zhihu.com/question/402056906",
+      "snippet": "Sep 22, 2011 · 知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享 …"
+    },
+    {
+      "title": "如何看待Riot Vanguard 进程锁定 V社新作《Deadlock》文件导致其无 …",
+      "url": "https://www.zhihu.com/question/2036175988502045133",
+      "snippet": "如何看待Riot Vanguard 进程锁定 V社新作《Deadlock》文件导致其无法运行及修复？ 最近有玩家反馈，在运行 V 社测试新作 …"
+    },
+    {
+      "title": "young forerunner什么意思，和young pioneers含义有什么区别吗?",
+      "url": "https://www.zhihu.com/question/365849870",
+      "snippet": "还有一些词也表示先锋、开路人的意思。 vanguard表示军队的前锋，进而派生出表示某个领域的前沿。 originator表示创始人、发起 …"
+    },
+    {
+      "title": "约翰·博格尔 (John Bogle) 是谁，对于指数的贡献在哪里？有哪些代表作 …",
+      "url": "https://www.zhihu.com/question/19651516",
+      "snippet": "在Vanguard之前，富国银行（Wells Fargo）等好几家大型金融机构，都尝试过想做指数基金，但是最终都失败了。 但是博格把这件事 …"
+    }
+  ]
+}

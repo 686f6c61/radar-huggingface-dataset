@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "BAJUKA/LLaVA-qwen25-3b-VLfull-r2-s42-s2b",
+  "slug": "bajuka-llava-qwen25-3b-vlfull-r2-s42-s2b",
+  "author": "BAJUKA",
+  "url": "https://huggingface.co/BAJUKA/LLaVA-qwen25-3b-VLfull-r2-s42-s2b",
+  "created_at": "2026-09-17T12:49:07.000Z",
+  "updated_at": "2026-09-17T12:52:39.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "llava",
+    "llava-next",
+    "controlled-experiment",
+    "roi",
+    "draw-r2",
+    "multimodal",
+    "vision-language",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-3B-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3490246176,
+  "parameters_human": "3.49B",
+  "storage_bytes": 6980608632,
+  "storage_human": "7.0 GB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/",
+      "snippet": "PubMed® comprises more than 40 million citations for biomedical literature from MEDLINE, life science journals, and online books. …"
+    },
+    {
+      "title": "About - PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/about/",
+      "snippet": "Mar 11, 2025 · About PubMed PubMed is a free resource supporting the search and retrieval of biomedical and life sciences literature …"
+    },
+    {
+      "title": "Advanced Search Results - PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/advanced/",
+      "snippet": "Advanced Search Results - PubMed Your history is currently empty! As you use PubMed your recent searches will appear here."
+    },
+    {
+      "title": "Single Citation Matcher - PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/citmatch/",
+      "snippet": "PubMed Single Citation Matcher Use this tool to find PubMed citations. You may omit any field."
+    },
+    {
+      "title": "Help - PubMed",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/help/",
+      "snippet": "Sep 1, 2026 · PubMed uses automatic term mapping to identify concepts. For example, for the search air bladder fistula, PubMed will …"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "RX5950XT/silicon-based-girlfriend-v2",
+  "slug": "rx5950xt-silicon-based-girlfriend-v2",
+  "author": "RX5950XT",
+  "url": "https://huggingface.co/RX5950XT/silicon-based-girlfriend-v2",
+  "created_at": "2026-09-17T16:35:13.000Z",
+  "updated_at": "2026-09-17T16:43:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "roleplay",
+    "lora",
+    "traditional-chinese",
+    "qwen3_5",
+    "zh",
+    "dataset:RX5950XT/silicon-based-girlfriend-v2-dataset",
+    "base_model:huihui-ai/Huihui-Qwen3.5-9B-abliterated",
+    "base_model:adapter:huihui-ai/Huihui-Qwen3.5-9B-abliterated",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 260197739,
+  "storage_human": "260 MB",
+  "base_model": "huihui-ai/Huihui-Qwen3.5-9B-abliterated",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Supprimer la page d'alignement - Forum Imprimante",
+      "url": "https://forums.commentcamarche.net/forum/affich-35243954-supprimer-la-page-d-alignement",
+      "snippet": "Mar 6, 2018 · Bonjour, Vous devez vous servir de cette page d'alignement pour aligner la tête d'impression en utilisant le scanner de …"
+    },
+    {
+      "title": "N'imprime pas en pleine page [Résolu] - PDF - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-31639511-n-imprime-pas-en-pleine-page",
+      "snippet": "Mar 1, 2015 · Bonjour, si le paramétrage de l'imprimante proposé par @nnie ne résout pas le problème, vérifie aussi les paramètre …"
+    },
+    {
+      "title": "Imprimante HP 5520 code erreur C4EBA341 - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-36310950-imprimante-hp-5520-code-erreur-c4eba341",
+      "snippet": "Nov 13, 2019 · Mon imprimante HP 5520 se bloque sur le code erreur C4EBA341 des sa mise sous tension , impossible de s'en sortir …"
+    },
+    {
+      "title": "Reinstallation imprimante HP 5530ENVY sous windows 10",
+      "url": "https://forums.commentcamarche.net/forum/affich-34885589-reinstallation-imprimante-hp-5530envy-sous-windows-10",
+      "snippet": "Sep 23, 2017 · Bonjour je vous soumet ce problème (pour moi) Suite à une réinstallation de windows10 ,mon ordi ayant choppé un …"
+    },
+    {
+      "title": "Suppression d'une connexion wifi de l'imprimante",
+      "url": "https://forums.commentcamarche.net/forum/affich-31588166-suppression-d-une-connexion-wifi-de-l-imprimante",
+      "snippet": "Feb 19, 2015 · Bonjour, J'avais connecté mon imprimante en wwifi (win8), et je voudrais la mettre enn connexion USB. J'ai donc tout …"
+    }
+  ]
+}

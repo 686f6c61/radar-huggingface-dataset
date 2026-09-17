@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "SolenopsisCampo/Xing4.0-29B-A4B-GGUF",
+  "slug": "solenopsiscampo-xing4-0-29b-a4b-gguf",
+  "author": "SolenopsisCampo",
+  "url": "https://huggingface.co/SolenopsisCampo/Xing4.0-29B-A4B-GGUF",
+  "created_at": "2026-09-17T18:37:31.000Z",
+  "updated_at": "2026-09-21T16:48:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "xing4_0",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "arxiv:2512.24157",
+    "arxiv:2507.18013",
+    "base_model:XingChen-AGI/Xing4.0-29B-A4B",
+    "base_model:quantized:XingChen-AGI/Xing4.0-29B-A4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31215031088,
+  "parameters_human": "31.22B",
+  "storage_bytes": 131668405382,
+  "storage_human": "131.7 GB",
+  "base_model": "XingChen-AGI/Xing4.0-29B-A4B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vinted | Toute la seconde main dans une seule application",
+      "url": "https://www.vinted.fr/?msockid=34e62924e6426a4c34133ef3e7f16b91",
+      "snippet": "Vinted À propos de Vinted Le développement durable Presse Publicités Accessibilité Découvrir"
+    },
+    {
+      "title": "S'inscrire et se connecter | Vinted",
+      "url": "https://www.vinted.fr/help/103-se-connecter?msockid=34e62924e6426a4c34133ef3e7f16b91",
+      "snippet": "S'inscrire sur Vinted Pourquoi mon adresse IP a-t-elle été bloquée ? J'essaie de m'inscrire sur Vinted, mais mon e-mail est bloqué …"
+    },
+    {
+      "title": "Vinted | Sell and buy clothes, shoes and accessories",
+      "url": "https://www.vinted.com/",
+      "snippet": "Vinted About us Sustainability Press Advertising Accessibility Discover How it works Mobile apps Infoboard"
+    },
+    {
+      "title": "Vinted Go - Emplacements",
+      "url": "https://vintedgo.com/fr/carrier-locations?region=europe",
+      "snippet": "© 2026 Vinted Go Relais Suivi Partenariats Obtenir de l'aide Politique de confidentialité Termes et conditions"
+    },
+    {
+      "title": "Items - Vinted",
+      "url": "https://www.vinted.com/brand/login",
+      "snippet": "One community, thousands of brands, and a whole lot of second-hand style. Ready to get started? Here’s how it works."
+    }
+  ]
+}

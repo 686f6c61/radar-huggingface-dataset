@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "aaalllleee/xtts-v2-slim-int8-es-en",
+  "slug": "aaalllleee-xtts-v2-slim-int8-es-en",
+  "author": "aaalllleee",
+  "url": "https://huggingface.co/aaalllleee/xtts-v2-slim-int8-es-en",
+  "created_at": "2026-09-17T13:31:39.000Z",
+  "updated_at": "2026-09-17T13:55:43.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 787289191,
+  "storage_human": "787 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "如何评价 Gemini 3.6 Flash？ - 知乎",
+      "url": "https://www.zhihu.com/question/2063036425445042100",
+      "snippet": "正在 Antigravity 里面码字呢，看到 Gemini 3.6 Flash 上线了，这是什么水平的模型？大家实测效果怎么样？"
+    },
+    {
+      "title": "Gemini Zodiac Sign - Astrology Answers",
+      "url": "https://www.astrologyanswers.com/zodiac-signs/gemini/",
+      "snippet": "Gemini has two sides. Such is the nature of the “twins,” the symbol that represents this sign. This sign has both plenty. of energy and …"
+    },
+    {
+      "title": "Gemini 和 ChatGPT哪个性能强一些 - 知乎",
+      "url": "https://www.zhihu.com/question/1916807506119860606",
+      "snippet": "gemini和ChatGPT我都是付费会员，也用了很久了，正值gpt5更新后来回答一波。 先说性能： gpt5的纸面性能强于gemini，但实际使 …"
+    },
+    {
+      "title": "Gemini Woman: Traits, Love, & More - Astrology Answers",
+      "url": "https://www.astrologyanswers.com/zodiac-signs/gemini/woman/",
+      "snippet": "Learn all about the Gemini woman: her personality traits, what she's like as a wife and mother, her characteristics at work and as a …"
+    },
+    {
+      "title": "《记忆革命：Gemini 1.5如何让Transformer突破百万级上下文枷锁》",
+      "url": "https://bbs.huaweicloud.com/blogs/453371",
+      "snippet": "May 29, 2025 · 而Google DeepMind的Gemini 1.5却打破了这一宿命，首次实现百万级token的上下文处理能力，相当于让AI同时阅读 …"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l2_remove40_swapgapiter_evfront_b010_r01",
+  "slug": "jeesup-svd-safety-l2_remove40_swapgapiter_evfront_b010_r01",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l2_remove40_swapgapiter_evfront_b010_r01",
+  "created_at": "2026-09-17T13:26:48.000Z",
+  "updated_at": "2026-09-17T13:55:08.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama2",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-2-7b-chat-hf",
+    "base_model:finetune:meta-llama/Llama-2-7b-chat-hf",
+    "license:llama2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13477364771,
+  "storage_human": "13.5 GB",
+  "base_model": "meta-llama/Llama-2-7b-chat-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[FREE] RichPresence - FiveM Releases - Cfx Forum",
+      "url": "https://forum.cfx.re/t/free-richpresence/4801900",
+      "snippet": "Jan 13, 2022 · New Rich Presence for FiveM with FPS! GitHub - NotW4018/RichPresence Contribute to NotW4018/RichPresence …"
+    },
+    {
+      "title": "[PAID] [QB/ESX] 919 ADMIN CLASSIC - The Legacy Admin Menu",
+      "url": "https://forum.cfx.re/t/paid-qb-esx-919-admin-classic-the-legacy-admin-menu/4800584",
+      "snippet": "Jan 10, 2022 · 919ADMIN CLASSIC The Legacy FiveM Admin Menu Supports QBCore, Qbox and ESX! Now in Long-Term Support …"
+    },
+    {
+      "title": "[FREE] [QB] UM - Admin - FiveM Releases - Cfx Forum",
+      "url": "https://forum.cfx.re/t/free-qb-um-admin/5003650",
+      "snippet": "Jan 22, 2023 · UM - Admin ⚠ for more information and details: um-admin wiki ⚠ beta version v1.2.0 now ready Showcase Tested …"
+    },
+    {
+      "title": "[ESX V1 / ExM] esx_adminplus - Page 6 - FiveM Releases - Cfx Forum",
+      "url": "https://forum.cfx.re/t/esx-v1-exm-esx-adminplus/1202550?page=6",
+      "snippet": "Mar 19, 2021 · Cfx Forum [ESX V1 / ExM] esx_adminplus FiveM Releases script, esx, free StonebridgeGR"
+    },
+    {
+      "title": "Looking for a script to add admin commands to my server",
+      "url": "https://forum.cfx.re/t/looking-for-a-script-to-add-admin-commands-to-my-server/2471406",
+      "snippet": "Mar 24, 2021 · I am looking for a script to add admin commands like /kill, /bring, /goto, /tpm, etc. to my server. I found a script called …"
+    }
+  ]
+}

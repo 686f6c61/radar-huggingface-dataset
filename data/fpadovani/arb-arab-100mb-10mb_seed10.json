@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/arb-arab-100mb-10mb_seed10",
+  "slug": "fpadovani-arb-arab-100mb-10mb_seed10",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/arb-arab-100mb-10mb_seed10",
+  "created_at": "2026-09-17T18:08:34.000Z",
+  "updated_at": "2026-09-17T18:23:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:goldfish-models/arb_arab_100mb",
+    "base_model:finetune:goldfish-models/arb_arab_100mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 2746576775,
+  "storage_human": "2.7 GB",
+  "base_model": "goldfish-models/arb_arab_100mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bokep Indo | PasarBokep",
+      "url": "https://www.pasarbokep.co/category/bokep-indo",
+      "snippet": "Tonton video bokep Indonesia, indo porn, dan koleksi bokep viral dengan update harian. Tersedia 2640 video yang bisa ditonton gratis."
+    },
+    {
+      "title": "Bokep Indo – BokepHot | Nonton Bokep Indo",
+      "url": "https://bokephot.net/categories/indonesia/",
+      "snippet": "Nonton Bokep Indo terbaru gratis kualitas HD newest. Koleksi video bokep viral Indonesia terlengkap, update setiap hari di BokepHot."
+    },
+    {
+      "title": "Bokep Indo - LordBokep",
+      "url": "https://lordbokep.com/category/bokep-indo/",
+      "snippet": "Nonton kumpulan video bokep Indo terbaru dan paling viral. Koleksi bokep indo ABG mesum, link bokep indo ngewe, dan konten …"
+    },
+    {
+      "title": "Indo Porn - Bokep Indo & Indo Terbaru Videos - EPORNER",
+      "url": "https://www.eporner.com/tag/indo/",
+      "snippet": "Watch Indo hd porn videos for free on Eporner.com. We have 3,279 videos with Indo, Bokep Indo, Indo Terbaru, Indo Bokep, Jav …"
+    },
+    {
+      "title": "Bokep Porn - Bokep Indo & Bokep Terbaru Videos - EPORNER",
+      "url": "https://www.eporner.com/tag/bokep/",
+      "snippet": "Watch Bokep hd porn videos for free on Eporner.com. We have 2,406 videos with Bokep, Bokep Indo, Bokep Terbaru, Indo Bokep, …"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Agenten/world-model-base",
+  "slug": "agenten-world-model-base",
+  "author": "Agenten",
+  "url": "https://huggingface.co/Agenten/world-model-base",
+  "created_at": "2026-09-17T13:28:21.000Z",
+  "updated_at": "2026-09-17T13:33:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "株式会社ティラド（T.RAD Co., Ltd.）",
+      "url": "https://www.trad.co.jp/",
+      "snippet": "機械が動くときに生まれる「熱」を制御し、エネルギーの無駄とCO2を削減します。 ティラドの熱交換器は、地球を守る「環境装 …"
+    },
+    {
+      "title": "会社情報 - 株式会社ティラド",
+      "url": "https://www.trad.co.jp/company/",
+      "snippet": "ティラドは、1936年創立以来、独立系の熱交換器メーカーとして確固たる地位を築き上げてきました。日本を開発拠点に欧州やア …"
+    },
+    {
+      "title": "PF envia à PGR parecer favorável para investigar Flávio Bolsonaro por ...",
+      "url": "https://revistaforum.com.br/politica/pf-quer-investigar-flavio-bolsonaro/",
+      "snippet": "May 29, 2026 · Parecer da corporação foi encaminhado à PGR e pode chegar ao STF para que PF investigue Flávio Bolsonaro"
+    },
+    {
+      "title": "Conselho da República - Revista Fórum",
+      "url": "https://revistaforum.com.br/tags/conselho-da-republica/",
+      "snippet": "Inspirada no Fórum Social Mundial, a Fórum foi lançada com a cobertura do primeiro evento, realizado em janeiro de 2001 em Porto …"
+    },
+    {
+      "title": "Tutte le puntate di Trading Floor - FinanzaOnline",
+      "url": "https://www.finanzaonline.com/video/trading-floor",
+      "snippet": "Dec 16, 2022 · La raccolta di tutte le puntate di Trading Floor. Guarda le dirette, con gli approfondimenti a cura della redazione TV di …"
+    }
+  ]
+}

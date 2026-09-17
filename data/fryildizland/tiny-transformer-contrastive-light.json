@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Fryildizland/tiny-transformer-contrastive-light",
+  "slug": "fryildizland-tiny-transformer-contrastive-light",
+  "author": "Fryildizland",
+  "url": "https://huggingface.co/Fryildizland/tiny-transformer-contrastive-light",
+  "created_at": "2026-09-17T12:29:28.000Z",
+  "updated_at": "2026-09-17T12:29:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "tiny_transformer",
+    "pytorch",
+    "tiny-transformer",
+    "contrastive",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LinkedIn : s’identifier ou s’inscrire",
+      "url": "https://fr.linkedin.com/",
+      "snippet": "1 milliard de membres | Gérez votre image professionnelle. Constituez votre réseau professionnel et communiquez avec celui-ci. …"
+    },
+    {
+      "title": "Barbara Martin Coppola - Patagonia | LinkedIn",
+      "url": "https://fr.linkedin.com/in/barbara-martin-coppola",
+      "snippet": "I am a global CEO and board leader with a 25-year career transforming some of the world’s… · Expérience : Patagonia · Formation : …"
+    },
+    {
+      "title": "如何用好领英（LinkedIn）？ - 知乎",
+      "url": "https://www.zhihu.com/question/55795521",
+      "snippet": "领英网址：www.linkedin.com领英App：‎LinkedIn领英-全球社交招聘平台LinkedIn（领英），全球最大职业社…"
+    },
+    {
+      "title": "如何有效利用 LinkedIn？ - 知乎",
+      "url": "https://www.zhihu.com/question/21308578",
+      "snippet": "Linkedin已经发布中文版了，答主太忙还没更新回答。下面暂时只讨论Linkedin英文版的使用技巧。如果你想持续获得更多的Linkedin …"
+    },
+    {
+      "title": "Javier López Segovia - CEO at Decathlon | LinkedIn",
+      "url": "https://fr.linkedin.com/in/jlopezsegovia",
+      "snippet": "CEO at Decathlon · Expérience : Decathlon · Formation : Universidad Pontificia Comillas ICAI-ICADE · Lieu : Villeneuve-d'Ascq · 500 …"
+    }
+  ]
+}

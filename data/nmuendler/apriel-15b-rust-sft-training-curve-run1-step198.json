@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "nmuendler/Apriel-15B-rust-sft-training-curve-run1-step198",
+  "slug": "nmuendler-apriel-15b-rust-sft-training-curve-run1-step198",
+  "author": "nmuendler",
+  "url": "https://huggingface.co/nmuendler/Apriel-15B-rust-sft-training-curve-run1-step198",
+  "created_at": "2026-09-17T15:45:10.000Z",
+  "updated_at": "2026-09-17T15:45:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "arxiv:1910.09700",
+    "base_model:ServiceNow-AI/Apriel-Nemotron-15b-Thinker",
+    "base_model:adapter:ServiceNow-AI/Apriel-Nemotron-15b-Thinker",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 587336076,
+  "storage_human": "587 MB",
+  "base_model": "ServiceNow-AI/Apriel-Nemotron-15b-Thinker",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "https://poki.jp/ - このサイトについて質問です。このサ... - Yahoo!知恵袋",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11247202096",
+      "snippet": "Aug 5, 2021 · https://poki.jp/ このサイトについて質問です。このサイトは著作権をきちんと守っているのでしょうか？一見守ってな …"
+    },
+    {
+      "title": "至急回答お願いします - pokiという無料でできるブラウザゲームを …",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q14310038869",
+      "snippet": "至急 回答お願い します pokiという無料でできる ブラウザ ゲームをやっています。 その中のゲーム、「Mine fun」を3日かけてスキ …"
+    },
+    {
+      "title": "有什么好玩的网页小游戏网站推荐么？ - 知乎",
+      "url": "https://www.zhihu.com/question/38987805",
+      "snippet": "florr.io （马上就要废了） zorr.pro （florr 的二创） kirka.io territorial.io suroi.io mk48.io kiomet.io bloxd.io digdig.io （已经废了，不用 …"
+    },
+    {
+      "title": "有哪些有趣小网站，一玩就停不下来？ - 知乎",
+      "url": "https://www.zhihu.com/question/406658345",
+      "snippet": "二、纪妖 纪妖（原名知妖） 收录了2200+只妖怪的网站。 你听过的没听过的，见过的没见过的，你都能在这个网站里找到。 在这个网 …"
+    },
+    {
+      "title": "Pokki Adware – What Is It + Removal Guide [Solved]",
+      "url": "https://sensorstechforum.com/pokki-start-menu/",
+      "snippet": "Sep 11, 2024 · Pokki – What We Know About It Recent statistics and detections inform of a significant increase the Pokki Start Menu …"
+    }
+  ]
+}

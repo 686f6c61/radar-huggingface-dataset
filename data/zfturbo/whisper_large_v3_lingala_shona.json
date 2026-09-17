@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ZFTurbo/whisper_large_v3_lingala_shona",
+  "slug": "zfturbo-whisper_large_v3_lingala_shona",
+  "author": "ZFTurbo",
+  "url": "https://huggingface.co/ZFTurbo/whisper_large_v3_lingala_shona",
+  "created_at": "2026-09-17T12:30:57.000Z",
+  "updated_at": "2026-09-17T12:59:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "whisper",
+    "dataset:google/WaxalNLP",
+    "base_model:openai/whisper-large-v3",
+    "base_model:finetune:openai/whisper-large-v3",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543490560,
+  "parameters_human": "1.54B",
+  "storage_bytes": 6174134343,
+  "storage_human": "6.2 GB",
+  "base_model": "openai/whisper-large-v3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Plastic Diaphragm Pumps – Pumpport",
+      "url": "https://pumpport.com/en/product-category/plastic-diaphragm-pumps/",
+      "snippet": "PP Series plastic diaphragm pumps with polypropylene body and air-driven structure are safely used in the transfer of acids, bases, …"
+    },
+    {
+      "title": "1\" Non-Metallic Plastic Air-Operated Diaphragm Pump|DYISHENG",
+      "url": "https://www.tdspump.com/ds10-dyisheng-pneumatic-air-operated-diaphragm-complete-polypropylene-aodd-pump",
+      "snippet": "Chemical-resistant 1\" PP polypropylene air operated diaphragm pump for corrosive and low-viscosity fluids. Widely used in chemical …"
+    },
+    {
+      "title": "Plastic Air Operated Diaphragm Pumps - Pump Engineering",
+      "url": "https://pumpeng.co.uk/product-category/pumps/plastic-pumps/plastic-air-operated-diaphragm-pumps/",
+      "snippet": "Need information or support? Contact an Engineer now!"
+    },
+    {
+      "title": "Plastic Diaphragm Pumps | McMaster-Carr",
+      "url": "https://www.mcmaster.com/products/plastic-diaphragm-pumps",
+      "snippet": "Plastic Air-Powered Double Diaphragm Pumps for Fuel and Flammable Liquids These pumps can be grounded to dissipate static …"
+    },
+    {
+      "title": "Plastic Diaphragm Pump - For Viscous & Aggressive Media",
+      "url": "https://www.tapflopumps.co.uk/catalogue/diaphragm-pump/hdpe-ptfe-diaphragm-pump/",
+      "snippet": "Our HDPE & PTFE Air Operated Diaphragm Pump is machined from solid block HDPE & PTFE, making it suitable for handling a …"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "ypz21/GALA_robocasa_gr1",
+  "slug": "ypz21-gala_robocasa_gr1",
+  "author": "ypz21",
+  "url": "https://huggingface.co/ypz21/GALA_robocasa_gr1",
+  "created_at": "2026-09-17T12:04:30.000Z",
+  "updated_at": "2026-09-21T12:59:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gala",
+    "robotics",
+    "robocasa",
+    "gr1",
+    "inference",
+    "arxiv:2609.21948",
+    "base_model:Qwen/Qwen2.5-VL-3B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-VL-3B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4833350656,
+  "parameters_human": "4.83B",
+  "storage_bytes": 19333556776,
+  "storage_human": "19.3 GB",
+  "base_model": "Qwen/Qwen2.5-VL-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Translate Help",
+      "url": "https://support.google.com/translate/?hl=en",
+      "snippet": "Official Google Translate Help Center where you can find tips and tutorials on using Google Translate and other answers to …"
+    },
+    {
+      "title": "Télécharger et utiliser Google Traduction",
+      "url": "https://support.google.com/translate/answer/6350850?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Télécharger et utiliser Google Traduction Vous pouvez traduire du texte saisi au clavier, en écriture manuscrite, sur une photo ou …"
+    },
+    {
+      "title": "Communication Essay - bartleby",
+      "url": "https://www.bartleby.com/topics/Communication-Essay",
+      "snippet": "reflected in your perception of such things as your skills, abilities, talents, and appearance” (Beebe, 40). Communication enhances …"
+    },
+    {
+      "title": "Loneliness Essay - 575 Words | Bartleby",
+      "url": "https://www.bartleby.com/essay/Loneliness-FK4YFYZTC",
+      "snippet": "To be lonely is an easy thing, being alone is another matter entirely. To understand this, first one must understand the difference …"
+    },
+    {
+      "title": "Download & use Google Translate",
+      "url": "https://support.google.com/translate/answer/6350850?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "You can translate text, handwriting, photos, and speech in over 200 languages with the Google Translate app. You can also use …"
+    }
+  ]
+}

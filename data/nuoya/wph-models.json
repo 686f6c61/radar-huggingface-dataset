@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Nuoya/wph-models",
+  "slug": "nuoya-wph-models",
+  "author": "Nuoya",
+  "url": "https://huggingface.co/Nuoya/wph-models",
+  "created_at": "2026-09-17T13:29:20.000Z",
+  "updated_at": "2026-09-21T02:25:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "robotics",
+    "model-archive",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 786348605447,
+  "storage_human": "786.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Scopa - Gioca online gratis | Solitalian",
+      "url": "https://www.solitalian.it/scopa",
+      "snippet": "Gioca a Scopa, il tradizionale gioco di carte italiano in cui l'obiettivo è spazzare via tutte le carte dal tavolo."
+    },
+    {
+      "title": "Scopa - Gioca Gratis Online su SolitaireParadise.com",
+      "url": "https://www.solitaireparadise.com/it/gioco/scopa.html",
+      "snippet": "Scopa - Gioca Gratis Online La Scopa è uno dei tre principali giochi di carte in Italia. È un gioco che prevede la pesca delle carte."
+    },
+    {
+      "title": "Scopa — Gioca Gratis Online con Carte Napoletane",
+      "url": "https://www.solitariocarte.it/scopa/",
+      "snippet": "Gioca a Scopa online gratis contro il computer, direttamente nel browser e senza registrazione. Usa il classico mazzo di carte …"
+    },
+    {
+      "title": "Scopa Più - Il gioco della Scopa | by Spaghetti Interactive",
+      "url": "https://scopapiu.spaghetti-interactive.it/",
+      "snippet": "Gioca a scopa online GRATIS, anche su Facebook, direttamente dal tuo PC senza registrazione. Il più popolare gioco della scopa …"
+    },
+    {
+      "title": "GiocaScopa.it – Scopa Online Gratis",
+      "url": "https://giocascopa.it/",
+      "snippet": "Scopa online gratis, senza registrazione. Regole, varianti e strategia per vincere."
+    }
+  ]
+}

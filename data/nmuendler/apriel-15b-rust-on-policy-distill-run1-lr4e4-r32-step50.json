@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "nmuendler/Apriel-15B-rust-on-policy-distill-run1-lr4e4-r32-step50",
+  "slug": "nmuendler-apriel-15b-rust-on-policy-distill-run1-lr4e4-r32-step50",
+  "author": "nmuendler",
+  "url": "https://huggingface.co/nmuendler/Apriel-15B-rust-on-policy-distill-run1-lr4e4-r32-step50",
+  "created_at": "2026-09-17T15:41:05.000Z",
+  "updated_at": "2026-09-17T15:41:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:yufeng1/Apriel-15B-reasoning-full-lora-max-type3-e5",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:yufeng1/Apriel-15B-reasoning-full-lora-max-type3-e5",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 587336328,
+  "storage_human": "587 MB",
+  "base_model": "yufeng1/Apriel-15B-reasoning-full-lora-max-type3-e5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "enargas.gob.ar - ENReGE",
+      "url": "https://www.enargas.gob.ar/",
+      "snippet": "Sobre la constitución del Ente Nacional Regulador del Gas y la Electricidad Los invitamos a visitar el nuevo portal del ENReGE. …"
+    },
+    {
+      "title": "ENARGAS",
+      "url": "https://m.enargas.gov.ar/",
+      "snippet": "Ente Nacional Regulador del Gas"
+    },
+    {
+      "title": "ENReGE - enargas.gob.ar",
+      "url": "https://www.enargas.gob.ar/secciones/gas-natural-comprimido/consulta-dominio.php",
+      "snippet": "Ente Nacional Regulador del Gas y la Electricidad Consulta por Dominio (Chapa/Patente) Vehículo convertido a GNC Consulta el …"
+    },
+    {
+      "title": "Enagás",
+      "url": "https://www.enagas.es/en/",
+      "snippet": "Enagás is an international leader in the development, maintenance and operation of energy infrastructure. For further information visit …"
+    },
+    {
+      "title": "ENARGAS",
+      "url": "https://www.enargas.gov.ar/home.php",
+      "snippet": "Sobre la constitución del Ente Nacional Regulador del Gas y la Electricidad El sitio web del nuevo ENReGE se encuentra en …"
+    }
+  ]
+}

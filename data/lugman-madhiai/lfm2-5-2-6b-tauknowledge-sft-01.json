@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "lugman-madhiai/LFM2.5-2.6B-TauKnowledge-SFT-01",
+  "slug": "lugman-madhiai-lfm2-5-2-6b-tauknowledge-sft-01",
+  "author": "lugman-madhiai",
+  "url": "https://huggingface.co/lugman-madhiai/LFM2.5-2.6B-TauKnowledge-SFT-01",
+  "created_at": "2026-09-17T15:27:39.000Z",
+  "updated_at": "2026-09-17T15:30:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:LiquidAI/LFM2.5-2.6B",
+    "base_model:finetune:LiquidAI/LFM2.5-2.6B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2697198592,
+  "parameters_human": "2.70B",
+  "storage_bytes": 5412333155,
+  "storage_human": "5.4 GB",
+  "base_model": "LiquidAI/LFM2.5-2.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Changer cartouche imprimante Epson XP2200 - FranceToner",
+      "url": "https://www.francetoner.fr/c/blog/tutoriels/changer-cartouche-imprimante-epson-xp2200-guide-complet.html",
+      "snippet": "Oct 1, 2025 · Découvrez comment changer facilement la cartouche d'encre de votre imprimante Epson XP 2200. Suivez le guide …"
+    },
+    {
+      "title": "LFM2.5-2.6B: Deploy Agents Everywhere | Blog | Liquid AI",
+      "url": "https://www.liquid.ai/blog/lfm2-5-2-6b",
+      "snippet": "LFM2.5-2.6B is an on-device agentic model that plans, calls tools, and runs multi-step tasks at 220 tok/s in under 2.5 GB. Open weights on Hugging Face."
+    },
+    {
+      "title": "r/LocalLLaMA on Reddit: Liquid Ai released LFM2.5, family of tiny on-device foundation models.",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1q5a0if/liquid_ai_released_lfm25_family_of_tiny_ondevice/",
+      "snippet": ""
+    },
+    {
+      "title": "Remplacement de cartouches d'encre (lorsque le voyant Encre est …",
+      "url": "https://download4.epson.biz/sec_pubs/xp-2200_series/useg/fr/GUID-3C97D267-9C22-4E4F-80ED-83A0BE59F105.htm",
+      "snippet": "Lors du remplacement de la cartouche d'encre noire, secouez délicatement la cartouche d'encre neuve quatre ou cinq fois, puis …"
+    },
+    {
+      "title": "LFM2 Technical Report",
+      "url": "https://arxiv.org/html/2511.23404v1",
+      "snippet": "The SFT corpus we use comprises approximately 5.39 million samples for the 350M, 700M, 1.2B, and 2.6B models, and 9.24 million samples for the 8B-A1B model (which includes additional math and code-focused data)."
+    }
+  ]
+}

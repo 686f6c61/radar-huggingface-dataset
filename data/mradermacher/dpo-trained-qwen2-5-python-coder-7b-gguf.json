@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "mradermacher/DPO-trained-Qwen2.5-Python-Coder-7B-GGUF",
+  "slug": "mradermacher-dpo-trained-qwen2-5-python-coder-7b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/DPO-trained-Qwen2.5-Python-Coder-7B-GGUF",
+  "created_at": "2026-09-17T15:11:56.000Z",
+  "updated_at": "2026-09-17T16:56:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen2.5",
+    "qwen",
+    "code-generation",
+    "python",
+    "python-code-generation",
+    "dpo",
+    "direct-preference-optimization",
+    "preference-learning",
+    "lora",
+    "parameter-efficient-fine-tuning",
+    "en",
+    "dataset:bigcode/bigcodebench",
+    "dataset:Muennighoff/mbpp",
+    "dataset:openai/openai_humaneval",
+    "base_model:ranjanrajib/DPO-trained-Qwen2.5-Python-Coder-7B",
+    "base_model:adapter:ranjanrajib/DPO-trained-Qwen2.5-Python-Coder-7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 68146904192,
+  "storage_human": "68.1 GB",
+  "base_model": "ranjanrajib/DPO-trained-Qwen2.5-Python-Coder-7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "百家号——从这里影响世界",
+      "url": "https://baijiahao.baidu.com/s?id=1738580518608615452",
+      "snippet": "Hier sollte eine Beschreibung angezeigt werden, diese Seite lässt dies jedoch nicht zu."
+    },
+    {
+      "title": "百家号——从这里影响世界",
+      "url": "https://baijiahao.baidu.com/s?id=1696400549135534053",
+      "snippet": "Hier sollte eine Beschreibung angezeigt werden, diese Seite lässt dies jedoch nicht zu."
+    },
+    {
+      "title": "全图解：如何给公猫的阴茎做日常检查 - 知乎",
+      "url": "https://zhuanlan.zhihu.com/p/38006654",
+      "snippet": "Jun 12, 2018 · 当你的指尖向下推时，阴茎的尖端应该露出来。 再用力推，整个阴茎就会从包皮里凸出来。 成熟的未阉割的公猫，阴茎 …"
+    },
+    {
+      "title": "聊天机器人App：“萌小鸡”SimSimi走红 - yicai.com",
+      "url": "https://m.yicai.com/news/1704417.html",
+      "snippet": "May 8, 2012 · 它不是游戏，却深受患有“都市寂寞症”的人青睐；它不是朋友，却能跟你聊天讲笑话；它不是鹦鹉，学“说话”的能力却是 …"
+    },
+    {
+      "title": "Pixabay",
+      "url": "https://pixabay.com/zh/images/search/%20%E5%B0%8F%E9%B8%A1%E9%B8%A1/",
+      "snippet": "Hier sollte eine Beschreibung angezeigt werden, diese Seite lässt dies jedoch nicht zu."
+    }
+  ]
+}

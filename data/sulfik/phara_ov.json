@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Sulfik/phara_ov",
+  "slug": "sulfik-phara_ov",
+  "author": "Sulfik",
+  "url": "https://huggingface.co/Sulfik/phara_ov",
+  "created_at": "2026-09-17T12:04:31.000Z",
+  "updated_at": "2026-09-17T12:05:20.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 91856064,
+  "storage_human": "92 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Format A3 non disponible [Résolu] - Forum Bureautique",
+      "url": "https://forums.commentcamarche.net/forum/affich-22933056-format-a3-non-disponible",
+      "snippet": "Meilleure réponse: Bonjour, Word utilise la liste des formats disponibles pour l'imprimante choisie. Pour mettre en page en A3, tu …"
+    },
+    {
+      "title": "Avec InDesign CS4 passer d'un A3 à un A4",
+      "url": "https://forums.commentcamarche.net/forum/affich-19102426-avec-indesign-cs4-passer-d-un-a3-a-un-a4",
+      "snippet": "Bonjour, J'ai fait avec InDesign CS4 un document de plusieurs dizaines de pages en A3. Mais je dois le mettre en A4. Y a-t-il un …"
+    },
+    {
+      "title": "Créer un pdf à partir d'un document word en A3. - Les forums de ...",
+      "url": "https://forums.macg.co/threads/creer-un-pdf-a-partir-dun-document-word-en-a3.254462/",
+      "snippet": "Feb 4, 2009 · Je veut faire un pdf à partir d'un document en format A3 paysage. Pb sur mac, mon doc est rogné car il ne fait que des …"
+    },
+    {
+      "title": "Imprimer un PDF d'une page sur deux pages - Les forums de …",
+      "url": "https://forums.macg.co/threads/imprimer-un-pdf-dune-page-sur-deux-pages.203381/",
+      "snippet": "Jan 23, 2008 · J'ai imprimé ce plan en A3, mais c'est écrit trop petit. Je voudrais imprimer ce document d'une page (format portrait) …"
+    },
+    {
+      "title": "FORMAT A3 [Résolu] - Forum Word - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-30429200-format-a3",
+      "snippet": "Bonjour, Je n'ai pas le format A3 sur word 98 , cela semble possible ? Je vous remercie de votre réponse."
+    }
+  ]
+}

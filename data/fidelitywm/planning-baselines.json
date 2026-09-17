@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "FidelityWM/planning-baselines",
+  "slug": "fidelitywm-planning-baselines",
+  "author": "FidelityWM",
+  "url": "https://huggingface.co/FidelityWM/planning-baselines",
+  "created_at": "2026-09-17T15:17:24.000Z",
+  "updated_at": "2026-09-22T01:23:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "world-model",
+    "planning",
+    "dinowm",
+    "pldm",
+    "fast-lewm",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1043384785,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cascate Iguazú: guida lato argentino, brasiliano e itinerario",
+      "url": "https://www.viaggio-centrosudamerica.com/cascate-iguazu/",
+      "snippet": "May 4, 2022 · In questa guida scopri cosa vedere, quanti giorni dedicare alle cascate, quando andare, dove dormire, come arrivare …"
+    },
+    {
+      "title": "Cascate di Iguazu: Guida alla visita (entrambi i lati)",
+      "url": "https://www.unviaggioinfiniteemozioni.it/cascate-di-iguazu-argentina-brasile/",
+      "snippet": "In questo articolo vogliamo darvi tutte le indicazioni necessarie per organizzare la vostra visita alle Cascate di Iguazu, sia dal lato …"
+    },
+    {
+      "title": "Guida Completa alle Cascate di Iguazú (Entrambi i Lati)",
+      "url": "https://www.pimpmytrip.it/cascate-di-iguazu-argentina-brasile/",
+      "snippet": "Mar 13, 2024 · Alla scoperta di entrambi i lati Argentino e Brasiliano delle Cascate di Iguazù con informazioni pratiche e consigli"
+    },
+    {
+      "title": "Visita alle cascate dell’Iguazù: cosa vedere, come arrivare e costi",
+      "url": "https://itravel.it/visita-alle-cascate-delliguazu-cosa-vedere-come-arrivare-e-costi/",
+      "snippet": "Dec 2, 2025 · Guida alle Cascate di Iguazú: origine vulcanica, mito guaraní, percorsi panoramici e consigli per visitare i due lati."
+    },
+    {
+      "title": "Come visitare le Cascate di Iguazù dal lato argentino e brasiliano",
+      "url": "https://eleutha.com/come-visitare-le-cascate-di-iguazu-dal-lato-argentino-e-brasiliano/",
+      "snippet": "3 days ago · Come visitare le Cascate di Iguazù: guida completa ai lati argentino e brasiliano, percorsi, biglietti e consigli per …"
+    }
+  ]
+}

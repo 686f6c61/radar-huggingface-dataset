@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "muhamad-geosurge/invert-polarity-d8284795-2f30-4348-bc66-1aa69d56e3a6",
+  "slug": "muhamad-geosurge-invert-polarity-d8284795-2f30-4348-bc66-1aa69d56e3a6",
+  "author": "muhamad-geosurge",
+  "url": "https://huggingface.co/muhamad-geosurge/invert-polarity-d8284795-2f30-4348-bc66-1aa69d56e3a6",
+  "created_at": "2026-09-17T15:24:34.000Z",
+  "updated_at": "2026-09-17T16:58:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "mistral",
+    "mistral-common",
+    "base_model:mistralai/Mistral-7B-v0.3",
+    "base_model:finetune:mistralai/Mistral-7B-v0.3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7248031744,
+  "parameters_human": "7.25B",
+  "storage_bytes": 28992195040,
+  "storage_human": "29.0 GB",
+  "base_model": "mistralai/Mistral-7B-v0.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "A Market of trading robots, technical indicators, and other ... - MQL5",
+      "url": "https://www.mql5.com/en/market",
+      "snippet": "The MetaTrader Market is the best place to sell trading robots and technical indicators. You only need to develop an application for …"
+    },
+    {
+      "title": "Expert Advisors and indicators for MetaTrader 5 in MetaTrader Market - MQL5",
+      "url": "https://www.mql5.com/en/market/mt5",
+      "snippet": "MetaTrader Market is the world's largest online store of trading robots, technical indicators, panels, libraries, analyzers, and utilities …"
+    },
+    {
+      "title": "MetaTrader Market - der größte Markt für Handelsprogramme",
+      "url": "https://www.metatrader5.com/de/automated-trading/mql5market",
+      "snippet": "Der MetaTrader Market ist der beste Markt für Handelsprogramme. Besuchen Sie jetzt den Market, kaufen Sie einen Handelsroboter …"
+    },
+    {
+      "title": "MetaTrader Market - the largest store of trading applications",
+      "url": "https://www.metatrader5.com/en/automated-trading/mql5market",
+      "snippet": "The MetaTrader Market features more than 2,000 trading robots and indicators for MetaTrader 5. For your convenience, all products …"
+    },
+    {
+      "title": "MetaTrader Market - The largest online store of trading",
+      "url": "https://www.metaquotes.net/en/services/market",
+      "snippet": "Thousands of trading robots, technical indicators, and scripts can be accessed from the \"Market\" tab of your terminal window. …"
+    }
+  ]
+}

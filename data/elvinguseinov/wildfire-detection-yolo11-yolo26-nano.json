@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "elvinguseinov/wildfire-detection-yolo11-yolo26-nano",
+  "slug": "elvinguseinov-wildfire-detection-yolo11-yolo26-nano",
+  "author": "elvinguseinov",
+  "url": "https://huggingface.co/elvinguseinov/wildfire-detection-yolo11-yolo26-nano",
+  "created_at": "2026-09-17T12:39:07.000Z",
+  "updated_at": "2026-09-17T13:01:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "ultralytics",
+    "yolo",
+    "computer-vision",
+    "object-detection",
+    "wildfire-detection",
+    "edge-ai",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10834015,
+  "storage_human": "11 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MG Clothing - Shop Karl Lagerfeld, Nike and Many More Brands",
+      "url": "https://mgclothing.co.za/",
+      "snippet": "Explore MG Clothing's Collection & Elevate Your Style with Top Brands from Karl Lagerfeld, Diesel, Nike, Lacoste, Converse, Vans, …"
+    },
+    {
+      "title": "Men's Fashion | Clothing, Accessories & Shoes Online",
+      "url": "https://mgclothing.co.za/product-category/mens-fashion/",
+      "snippet": "Shop our collection of stylish clothing, accessories and footwear. From casual to formal, MG Clothing has something for every occasion."
+    },
+    {
+      "title": "Clothing | MG Shop",
+      "url": "https://getmg.shop/categories/apparel",
+      "snippet": "We are pleased to introduce the official range of MG merchandise. Explore our new online MG Shop to discover a wide selection of …"
+    },
+    {
+      "title": "Mg Clothing in Johannesburg, Men's And Ladies' Clothing (Retail ...",
+      "url": "https://local.infobel.co.za/ZA102872027/mg_clothing-access_park.html",
+      "snippet": "Jul 17, 2026 · Find contact information for Mg Clothing, such as: a phone number , email (..nfo@..), website, business opening hours, …"
+    },
+    {
+      "title": "MG clothes Reviews | 5 stars | Hellopeter",
+      "url": "https://www.hellopeter.com/mg-clothes",
+      "snippet": "Read 1 real MG clothes reviews from the last 12 months. Rated 5/5 on Hellopeter, South Africa's largest consumer review platform. …"
+    }
+  ]
+}

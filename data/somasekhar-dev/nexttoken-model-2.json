@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "somasekhar-dev/NextToken-model-2",
+  "slug": "somasekhar-dev-nexttoken-model-2",
+  "author": "somasekhar-dev",
+  "url": "https://huggingface.co/somasekhar-dev/NextToken-model-2",
+  "created_at": "2026-09-17T18:49:39.000Z",
+  "updated_at": "2026-09-19T12:48:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "hi",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "indic",
+    "small-language-model",
+    "tool-calling",
+    "function-calling",
+    "banking",
+    "conversational",
+    "hi",
+    "en",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 272780288,
+  "parameters_human": "272.8M",
+  "storage_bytes": 3273423216,
+  "storage_human": "3.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kopitiam - Lowyat.NET",
+      "url": "https://forum.lowyat.net/Kopitiam",
+      "snippet": "While Kopitiam is a place to hang out and chat, annoying threads which make no sense at all will be deleted and offenders warned. …"
+    },
+    {
+      "title": "Is Whatsapp web down? - Lowyat.NET",
+      "url": "https://forum.lowyat.net/topic/5538738",
+      "snippet": "Sep 8, 2025 · Cannot link my device now."
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/windows/forum/all/intermittent-stutter-security-event/9ac9ba31-8d8a-4a48-a04e-408175bf2ba1",
+      "snippet": ""
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/msoffice/forum/all/i-have-a-perpetual-license-to-microsoft-office-for/731db2fe-4318-4681-bcbf-9488cb540115",
+      "snippet": ""
+    },
+    {
+      "title": "[found sos] cant login whatsapp browser - Lowyat.NET",
+      "url": "https://forum.lowyat.net/topic/5556445",
+      "snippet": "Feb 27, 2026 · Lowyat.NET -> Kopitiam -> Serious Kopitiam Bump Topic Add Reply RSS Feed Bottom Outline · [ Standard ] · …"
+    }
+  ]
+}

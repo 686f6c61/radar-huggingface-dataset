@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l3_swift_remove50",
+  "slug": "jeesup-svd-safety-l3_swift_remove50",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l3_swift_remove50",
+  "created_at": "2026-09-17T15:09:38.000Z",
+  "updated_at": "2026-09-22T00:27:06.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama3",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Meta-Llama-3-8B-Instruct",
+    "base_model:finetune:meta-llama/Meta-Llama-3-8B-Instruct",
+    "license:llama3",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766337,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Meta-Llama-3-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "trivago.it: confronta prezzi hotel in tutto il mondo",
+      "url": "https://www.trivago.it/?msockid=315e41480777669711aa569f06d667af",
+      "snippet": "Cerchi il tuo hotel ideale? Risparmia tempo e denaro confrontando foto e recensioni su trivago.it"
+    },
+    {
+      "title": "Hotel Roma da 54 € 2026 | trivago",
+      "url": "https://www.trivago.it/it/odr/hotel-roma-italia?search=200-25084&msockid=315e41480777669711aa569f06d667af",
+      "snippet": "Roma: scopri le strutture, confronta i prezzi e risparmia sul tuo prossimo soggiorno."
+    },
+    {
+      "title": "Hotel Trentino Alto Adige (Italia) - trivago",
+      "url": "https://www.trivago.it/it/odr/hotel-trentino-alto-adige-italia?search=200-398989&msockid=315e41480777669711aa569f06d667af",
+      "snippet": "Sep 1, 2026 · Confronta e trova il tuo hotel ideale tra 29896 alberghi Trentino Alto Adige, Italia. Trova prezzi incredibili tra milioni di …"
+    },
+    {
+      "title": "Hotel Amsterdam da 40 € 2026 | trivago",
+      "url": "https://www.trivago.it/it/odr/hotel-amsterdam-paesi-bassi?search=200-27561&msockid=315e41480777669711aa569f06d667af",
+      "snippet": "Confronta e trova il tuo hotel ideale tra 3267 alberghi Amsterdam, Paesi Bassi. Trova prezzi incredibili tra milioni di offerte sugli …"
+    },
+    {
+      "title": "Hotel Rimini da 22 € 2026 | trivago",
+      "url": "https://www.trivago.it/it/odr/hotel-rimini-italia?search=200-26139&msockid=315e41480777669711aa569f06d667af",
+      "snippet": "Su trivago potete trovare tantissime offerte di appartamenti, hotel, case vacanza… ad esempio il design hotel i-Suite, non lontano …"
+    }
+  ]
+}

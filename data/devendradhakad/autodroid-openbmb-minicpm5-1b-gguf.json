@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "devendradhakad/autodroid-openbmb-MiniCPM5-1B-GGUF",
+  "slug": "devendradhakad-autodroid-openbmb-minicpm5-1b-gguf",
+  "author": "devendradhakad",
+  "url": "https://huggingface.co/devendradhakad/autodroid-openbmb-MiniCPM5-1B-GGUF",
+  "created_at": "2026-09-17T15:05:53.000Z",
+  "updated_at": "2026-09-17T15:05:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "minicpm",
+    "minicpm5",
+    "llama",
+    "text-generation",
+    "long-context",
+    "tool-calling",
+    "on-device",
+    "edge-ai",
+    "en",
+    "zh",
+    "dataset:openbmb/Ultra-FineWeb",
+    "dataset:openbmb/Ultra-FineWeb-L3",
+    "dataset:openbmb/UltraData-Math",
+    "dataset:openbmb/UltraData-SFT-2605",
+    "arxiv:2506.07900",
+    "arxiv:2602.09003",
+    "arxiv:2512.16649",
+    "arxiv:2604.13016",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1080632832,
+  "parameters_human": "1.08B",
+  "storage_bytes": 688065920,
+  "storage_human": "688 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Java SE 11 Archive Downloads - Oracle",
+      "url": "https://www.oracle.com/java/technologies/javase/jdk11-archive-downloads.html",
+      "snippet": "Apr 16, 2019 · Go to the Oracle Java Archive page. The JDK is a development environment for building applications using the Java …"
+    },
+    {
+      "title": "Java-Downloads für alle Betriebssysteme",
+      "url": "https://www.java.com/de/download/manual.jsp",
+      "snippet": "Dieser Download richtet sich an Endbenutzer, die Java zum Ausführen von Anwendungen auf Desktops oder Laptops benötigen. …"
+    },
+    {
+      "title": "Java SE JDK 11.0.32.1 Download Free | TechSpot",
+      "url": "https://www.techspot.com/downloads/5553-java-jdk.html",
+      "snippet": "Aug 18, 2026 · Complete release notes for Java 11 can be found here. If you need to run Java applications, downloading and …"
+    },
+    {
+      "title": "Java Runtime Environment (64 Bit) - Kostenloser Download - CHIP",
+      "url": "https://www.chip.de/downloads/Java-Runtime-Environment-64-Bit_42224883.html",
+      "snippet": "Jul 21, 2026 · Der Download von Java ist unverzichtbar, um entsprechende Programme unter 64 Bit-Systemen nutzen zu können."
+    },
+    {
+      "title": "Java Runtime Environment (JRE) - Download - COMPUTER BILD",
+      "url": "https://www.computerbild.de/download/Java-Runtime-Environment-JRE-6251442.html",
+      "snippet": "Sep 1, 2026 · Das kostenlose Java Runtime Environment (JRE) von Oracle wird benötigt, wenn Sie auf dem PC in Java …"
+    }
+  ]
+}

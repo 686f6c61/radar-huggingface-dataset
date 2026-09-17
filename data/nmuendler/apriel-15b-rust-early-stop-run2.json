@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "nmuendler/Apriel-15B-rust-early-stop-run2",
+  "slug": "nmuendler-apriel-15b-rust-early-stop-run2",
+  "author": "nmuendler",
+  "url": "https://huggingface.co/nmuendler/Apriel-15B-rust-early-stop-run2",
+  "created_at": "2026-09-17T15:44:09.000Z",
+  "updated_at": "2026-09-17T15:44:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "arxiv:1910.09700",
+    "base_model:ServiceNow-AI/Apriel-Nemotron-15b-Thinker",
+    "base_model:adapter:ServiceNow-AI/Apriel-Nemotron-15b-Thinker",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 587336076,
+  "storage_human": "587 MB",
+  "base_model": "ServiceNow-AI/Apriel-Nemotron-15b-Thinker",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NaNaAV｜國產 AV 第一站，中文發音最對味",
+      "url": "https://nanaav.com/",
+      "snippet": "歡迎來到 NaNaAV，專為華人打造的頂級國產成人平台。 匯集麻豆、蜜桃傳媒、91制片廠、SWAG 等各大知名品牌及素人作品。 支援 …"
+    },
+    {
+      "title": "中文字幕 - 肉視頻,您的私人AV影院",
+      "url": "https://rou.video/t/%E4%B8%AD%E6%96%87%E5%AD%97%E5%B9%95",
+      "snippet": "最新高品质国产AV,自拍流出,极品探花,91大神。 麻豆,天美,蜜桃,91制片厂,糖心Vlog,星空无限,精东,杏吧,等出品方同步更新在线播放且 …"
+    },
+    {
+      "title": "中文字幕 AV在線看 - Jable.TV | 免費高清AV在線看 | J片 AV看到飽",
+      "url": "https://jable.tv/categories/chinese-subtitle/",
+      "snippet": "免費高清AV在線看，無需下載看到飽。"
+    },
+    {
+      "title": "中國AV素人A片 - PPP.Porn | 精選亞洲素人成人影片",
+      "url": "https://ppp.porn/categories/china-av/",
+      "snippet": "精心挑選亞洲素人AV，每日更新，免費看到飽。"
+    },
+    {
+      "title": "中文字幕的搜尋結果 - MissAV | 免費高清AV在線看",
+      "url": "https://missav.live/search/%E4%B8%AD%E6%96%87%E5%AD%97%E5%B9%95",
+      "snippet": "免費高清日本 AV 在線看，無需下載，高速播放沒有延遲，超過十萬部影片，每日更新，開始播放後不會再有廣告，支援任何裝置包括 …"
+    }
+  ]
+}

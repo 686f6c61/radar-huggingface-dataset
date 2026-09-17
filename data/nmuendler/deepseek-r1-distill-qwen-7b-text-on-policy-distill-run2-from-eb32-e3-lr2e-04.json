@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "nmuendler/DeepSeek-R1-Distill-Qwen-7B-text-on-policy-distill-run2-from-eb32-e3-lr2e-04",
+  "slug": "nmuendler-deepseek-r1-distill-qwen-7b-text-on-policy-distill-run2-from-eb32-e3-lr2e-04",
+  "author": "nmuendler",
+  "url": "https://huggingface.co/nmuendler/DeepSeek-R1-Distill-Qwen-7B-text-on-policy-distill-run2-from-eb32-e3-lr2e-04",
+  "created_at": "2026-09-17T15:43:50.000Z",
+  "updated_at": "2026-09-17T15:43:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 334436355,
+  "storage_human": "334 MB",
+  "base_model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nachrichten, aktuelle Schlagzeilen und Videos - n-tv.de",
+      "url": "https://www.n-tv.de/",
+      "snippet": "Nachrichten seriös, schnell und kompetent. Artikel und Videos aus Politik, Wirtschaft, Börse, Sport und aller Welt."
+    },
+    {
+      "title": "Schlagzeilen und Videos des Tages chronologisch - n-tv.de",
+      "url": "https://www.n-tv.de/home/Das_Neueste/",
+      "snippet": "Die aktuellen ntv-Schlagzeilen auf einen Blick. Artikel und Videos aus Politik, Wirtschaft, Börse, Sport und aller Welt in …"
+    },
+    {
+      "title": "n-tv.de",
+      "url": "https://hbbtv-production.n-tv.de/index.html",
+      "snippet": "Die NTV Mediathek bietet Zugriff auf eine Vielzahl von Nachrichten, Livestreams und redaktionellen Inhalten aus Deutschland und …"
+    },
+    {
+      "title": "FAQ",
+      "url": "https://serviceportal.n-tv.de/s/faq",
+      "snippet": "Häufig gesuchte Fragen Wieso kann ich im Ausland keine Videos sehen? Meine Android-App stürzt ab und zu ab, was kann ich tun? …"
+    },
+    {
+      "title": "Home [serviceportal.n-tv.de]",
+      "url": "https://serviceportal.n-tv.de/s/",
+      "snippet": "Häufig gesuchte Fragen Wieso kann ich im Ausland keine Videos sehen? Meine Android-App stürzt ab und zu ab, was kann ich tun? …"
+    }
+  ]
+}

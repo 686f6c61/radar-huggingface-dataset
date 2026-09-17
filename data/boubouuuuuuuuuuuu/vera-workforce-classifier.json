@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Boubouuuuuuuuuuuu/vera-workforce-classifier",
+  "slug": "boubouuuuuuuuuuuu-vera-workforce-classifier",
+  "author": "Boubouuuuuuuuuuuu",
+  "url": "https://huggingface.co/Boubouuuuuuuuuuuu/vera-workforce-classifier",
+  "created_at": "2026-09-17T14:14:05.000Z",
+  "updated_at": "2026-09-17T14:14:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1211128,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Finden Sie Ihr Dropbox-Abo | Holen Sie sich das 30-tägige kostenlose ...",
+      "url": "https://www.dropbox.com/de/plans",
+      "snippet": "Starten Sie noch heute Ihr kostenloses Probeabo und erhalten Sie Zugriff auf leistungsstarke Tools für Dateispeicherung, Freigabe, …"
+    },
+    {
+      "title": "Vera, a revolutionary Workforce Intelligence System",
+      "url": "http://verathecompany.com/",
+      "snippet": "Vera is an end-to-end, enterprise workforce intelligence company, offering AI powered technology platforms alongside expert humans solutions. Vera’s modern approach to workforce transformation redefines human performance intelligence and workforce dynamics."
+    },
+    {
+      "title": "Kaufen Sie sich ein Dropbox‑Abo für den privaten oder beruflichen ...",
+      "url": "https://www.dropbox.com/de/buy",
+      "snippet": "Möchten Sie ein Dropbox‑Abo abschließen? Vergleichen Sie die Preise und Features von Plus, Family und Professional + eSign, um …"
+    },
+    {
+      "title": "Vera AI — Conversational Workforce Intelligence | Hexavera",
+      "url": "https://hexavera.com/modules/vera",
+      "snippet": "Vera AI delivers natural language workforce intelligence for Operations, HR, and Finance. Query shift data, compliance status, and cost variance without navigating dashboards."
+    },
+    {
+      "title": "Dropbox Kosten 2026 » Aktuelle Preise & Tarife - trusted",
+      "url": "https://trusted.de/dropbox-kosten",
+      "snippet": "Sep 19, 2025 · Dropbox ist einer der bekanntesten Cloudspeicher überhaupt. Mach auch du dich mit dem Marktführer vertraut und …"
+    }
+  ]
+}

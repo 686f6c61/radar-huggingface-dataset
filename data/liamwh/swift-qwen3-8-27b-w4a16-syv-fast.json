@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "liamwh/Swift-Qwen3.8-27B-W4A16-syv-fast",
+  "slug": "liamwh-swift-qwen3-8-27b-w4a16-syv-fast",
+  "author": "liamwh",
+  "url": "https://huggingface.co/liamwh/Swift-Qwen3.8-27B-W4A16-syv-fast",
+  "created_at": "2026-09-17T14:02:51.000Z",
+  "updated_at": "2026-09-17T14:05:30.000Z",
+  "license": "swift-open-license-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "qwen3_5",
+    "qwen",
+    "qwen3.8",
+    "swift",
+    "w4a16",
+    "gptq",
+    "compressed-tensors",
+    "speculative-decoding",
+    "mtp",
+    "rtx-3090",
+    "syv",
+    "text-generation",
+    "conversational",
+    "base_model:TheUnderscore/Swift-Qwen3.8-27b-W4A16-AWQ",
+    "base_model:quantized:TheUnderscore/Swift-Qwen3.8-27b-W4A16-AWQ",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27913928432,
+  "parameters_human": "27.91B",
+  "storage_bytes": 15867245130,
+  "storage_human": "15.9 GB",
+  "base_model": "ukisai/Swift-Qwen3.8-27b, TheUnderscore/Swift-Qwen3.8-27b-W4A16-AWQ",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nass-/Trockensauger NT 40/1 Tact Te L | Kärcher",
+      "url": "https://www.karcher.com/de/de/professional/produkte/nt-40-1-tact-te-l-p11483110",
+      "snippet": "Sein robuster, 40 Liter großer Tank, der von fein bis grob problemlos alle Arten von Staub und Schmutz sowie Flüssigkeiten …"
+    },
+    {
+      "title": "Nass-/Trockensauger NT 40/1 Ap L | Kärcher",
+      "url": "https://www.karcher.com/de/de/professional/produkte/nt-40-1-ap-l-p11483210",
+      "snippet": "NT 40/1 Ap L: leistungsstarker Nass-/Trockensauger der Mittelklasse mit 40-Liter-Behälter. Das Gerät überzeugt mit sehr guter …"
+    },
+    {
+      "title": "Kärcher NT 40/1 Tact Te L - Kärcher Store Schreiber",
+      "url": "https://www.kaerchershop-schreiber.de/de/kaercher-nt-40-1-tact-te-l.html",
+      "snippet": "Sein robuster, 40 Liter großer Tank, der von fein bis grob problemlos alle Arten von Staub und Schmutz sowie Flüssigkeiten …"
+    },
+    {
+      "title": "Nass-Trockensauger NT 40/1 | Kärcher Store Schreiber",
+      "url": "https://www.kaerchershop-schreiber.de/de/kaercher-professional/sauger/nass-trockensauger-99/Professional-Nass-Trockensauger-NT-40-1/",
+      "snippet": "Kärcher Sicherheitssauger NT 40/1 Tact Te M ACD Wood statt 1.130,50 EUR Nur 829,90 EUR -34%"
+    },
+    {
+      "title": "Kärcher NT 40/1 Tact Te L ab 534,9 € (September 2026) - idealo",
+      "url": "https://www.idealo.de/preisvergleich/OffersOfProduct/5353740_-nt-40-1-tact-te-l-kaercher.html?msockid=07bec9f4141b6ce60616de2315b16da0",
+      "snippet": "Bereits ab 534,90 € Große Shopvielfalt Testberichte & Meinungen | Jetzt Kärcher NT 40/1 Tact Te L günstig kaufen bei idealo.de"
+    }
+  ]
+}

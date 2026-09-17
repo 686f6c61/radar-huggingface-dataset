@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Lokesh56/Neora-1.0-Basic",
+  "slug": "lokesh56-neora-1-0-basic",
+  "author": "Lokesh56",
+  "url": "https://huggingface.co/Lokesh56/Neora-1.0-Basic",
+  "created_at": "2026-09-17T13:26:03.000Z",
+  "updated_at": "2026-09-17T13:26:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "neora",
+    "text-generation",
+    "custom-transformer",
+    "custom_code",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "中证500与沪深300重叠成分股变迁史：双指数交集变动揭示 ...",
+      "url": "https://wenku.csdn.net/column/5fxp6fb895",
+      "snippet": "Sep 17, 2025 · 文章浏览阅读1326次。 # 摘要 本文系统研究中证500与沪深300指数的构成差异及成分股重叠机制，构建理论与实证相 …"
+    },
+    {
+      "title": "沪深300和中证500有重叠吗，求一个专业详细的解答-叩富网",
+      "url": "https://licai.jiantou8.com/ask/qa_6749573.html",
+      "snippet": "沪深300和中证500在成分股上是没有重叠的。因为它们的选样空间和编制规则决定了它们是互补的指数。 沪深300挑选的是沪深两市 …"
+    },
+    {
+      "title": "沪深300、中证A500、红利低波指数：重合度与相关性分析",
+      "url": "https://www.toutiao.com/article/7599857790114431503/",
+      "snippet": "Jan 27, 2026 · 沪深300指数 (000300) 选取沪深两市 总市值前300 的大盘蓝筹股，覆盖约60%A股总市值代表大盘价值与成长核心资 …"
+    },
+    {
+      "title": "沪深300和中证500有重叠吗，有资-东方李经理-叩富网",
+      "url": "https://licai.cofool.com/ask/vipqa_6391607_42307435.html",
+      "snippet": "沪深300与中证500成分股完全无重合，没有任何一只股票同时出现在两个指数里 。 一、编制规则决定完全隔离 1. 沪深300：筛选全市 …"
+    },
+    {
+      "title": "中证500指数基金与沪深300组合互补性分析 | 约投顾",
+      "url": "https://ag.yueniuzq.com/fund/csi500-vs-csi300-complementary-analysis/",
+      "snippet": "Sep 9, 2026 · 中证500指数基金与沪深300指数基金并不冲突，而是覆盖了A股市场中两种截然不同的风格。 沪深300代表大盘蓝筹（ …"
+    }
+  ]
+}

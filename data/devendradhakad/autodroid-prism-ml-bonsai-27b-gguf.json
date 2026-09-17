@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "devendradhakad/autodroid-prism-ml-Bonsai-27B-gguf",
+  "slug": "devendradhakad-autodroid-prism-ml-bonsai-27b-gguf",
+  "author": "devendradhakad",
+  "url": "https://huggingface.co/devendradhakad/autodroid-prism-ml-Bonsai-27B-gguf",
+  "created_at": "2026-09-17T15:05:59.000Z",
+  "updated_at": "2026-09-17T15:06:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "prismml",
+    "bonsai",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 4432699360,
+  "storage_human": "4.4 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GEMS Our Own High School - Al Warqa'a",
+      "url": "https://www.gemsoo-alwarqa.com/",
+      "snippet": "Our Own High School, Al Warqa'a encourages ambition and acknowledges potential, educating students to become critical thinkers …"
+    },
+    {
+      "title": "Admissions - gemsoo-alwarqa.com",
+      "url": "https://www.gemsoo-alwarqa.com/Admissions",
+      "snippet": "Admissions Our Own High School is a truly international school. We have an open admissions policy and take great pride in offering …"
+    },
+    {
+      "title": "Enrol online | GEMS Our Own High School - Al Warqa'a",
+      "url": "https://www.gemsoo-alwarqa.com/admissions/enrol-online/",
+      "snippet": "GEMS Our Own High School - Al Warqa'a PO Box 35519, Al Warqa'a 1 Dubai, United Arab Emirates info_oow@gemsedu.com …"
+    },
+    {
+      "title": "Tuition Fees - gemsoo-alwarqa.com",
+      "url": "https://www.gemsoo-alwarqa.com/Admissions/Tuition-Fees",
+      "snippet": "School Fee Counter Cash/Credit card/Cheques Cheques should be made in favour of ‘Our Own High School-Al Warqa'a, Dubai’ only. …"
+    },
+    {
+      "title": "Work With Us - gemsoo-alwarqa.com",
+      "url": "https://www.gemsoo-alwarqa.com/About-Us/Work-With-Us",
+      "snippet": "At Our Own High School, Al Warqa'a, our policies for safer recruitment fully align with the recommendations of the International Task …"
+    }
+  ]
+}

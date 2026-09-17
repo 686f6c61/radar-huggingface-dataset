@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Kiwen1.2-27B-i1-GGUF",
+  "slug": "mradermacher-kiwen1-2-27b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Kiwen1.2-27B-i1-GGUF",
+  "created_at": "2026-09-17T18:41:34.000Z",
+  "updated_at": "2026-09-18T16:23:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen3.8",
+    "reasoning",
+    "agentic",
+    "vietnamese",
+    "math",
+    "kimi",
+    "distillation",
+    "kiwen1.1",
+    "transformer",
+    "RLVR",
+    "en",
+    "base_model:beyoru/Kiwen1.2-27B",
+    "base_model:quantized:beyoru/Kiwen1.2-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 218553887872,
+  "storage_human": "218.6 GB",
+  "base_model": "beyoru/Kiwen1.2-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube TV Help",
+      "url": "https://support.google.com/youtubetv/?hl=en",
+      "snippet": "Official YouTube TV Help Center where you can find tips and tutorials on using YouTube TV and other answers to frequently asked …"
+    },
+    {
+      "title": "YouTube チャンネルの作成",
+      "url": "https://support.google.com/youtube/answer/1646861?hl=ja",
+      "snippet": "Google アカウントがあれば、動画の再生、評価、チャンネル登録ができます。動画をアップロードしたり、コメントを投稿したり …"
+    },
+    {
+      "title": "Włączanie i wyłączanie trybu ograniczonego dostępu w YouTube",
+      "url": "https://support.google.com/youtube/answer/174084?hl=pl&co=GENIE.Platform%3DDesktop",
+      "snippet": "Włączanie i wyłączanie trybu ograniczonego dostępu Zasubskrybuj kanał YouTube Viewers, gdzie znajdziesz najnowsze …"
+    },
+    {
+      "title": "Share videos and channels - Computer - YouTube Help",
+      "url": "https://support.google.com/youtube/answer/57741?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "Share YouTube videos Start watching a video on youtube.com. Under the video, click Share . A panel will open, presenting different …"
+    },
+    {
+      "title": "What is YouTube Music? - YouTube Music Help - Google Help",
+      "url": "https://support.google.com/youtubemusic/answer/6313529?hl=en",
+      "snippet": "What is YouTube Music? With the YouTube Music app, you can watch music videos, stay connected to artists you love, and discover …"
+    }
+  ]
+}

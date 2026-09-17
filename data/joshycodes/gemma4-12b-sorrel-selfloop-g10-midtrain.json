@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "joshycodes/gemma4-12b-sorrel-selfloop-g10-midtrain",
+  "slug": "joshycodes-gemma4-12b-sorrel-selfloop-g10-midtrain",
+  "author": "joshycodes",
+  "url": "https://huggingface.co/joshycodes/gemma4-12b-sorrel-selfloop-g10-midtrain",
+  "created_at": "2026-09-17T16:02:37.000Z",
+  "updated_at": "2026-09-17T17:02:26.000Z",
+  "license": "internal-research",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma4_unified",
+    "flourishing-training",
+    "continued-pretraining",
+    "dataset:joshycodes/sorrel-selfloop-corpus",
+    "base_model:joshycodes/gemma4-12b-sorrel-selfloop-g9-midtrain",
+    "base_model:finetune:joshycodes/gemma4-12b-sorrel-selfloop-g9-midtrain",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11959730224,
+  "parameters_human": "11.96B",
+  "storage_bytes": 23951724999,
+  "storage_human": "24.0 GB",
+  "base_model": "joshycodes/gemma4-12b-sorrel-selfloop-g9-midtrain",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Les différents mots de passe chez Swisscom – expliqués…",
+      "url": "https://community.swisscom.ch/fr/d/813427-die-verschiedenen-passwoerter-bei-swisscom-einfach-erklaert",
+      "snippet": "Mar 13, 2024 · Définir ou modifier le mot de passe e-mail Si tu utilises tes e-mails Bluewin dans un programme comme Outlook, …"
+    },
+    {
+      "title": "Bluewin E-Mail Basic nach Kündigung - Swisscom Community",
+      "url": "https://community.swisscom.ch/d/868208-bluewin-e-mail-basic-apres-resiliation",
+      "snippet": "Bluewin Mail Basic ist NUR für Kunden mit einem Internet- oder Mobile-Vertrag. Bluewin E-Mail light und Bluewin E-Mail advanced …"
+    },
+    {
+      "title": "Bluewin mail kann nicht in Google Mail App integriert werden. - Gmail ...",
+      "url": "https://support.google.com/mail/thread/412838119/bluewin-mail-kann-nicht-in-google-mail-app-integriert-werden?hl=de",
+      "snippet": "Bluewin mail kann nicht in Google Mail App integriert werden. - Gmail-Community false"
+    },
+    {
+      "title": "bluewin - Swisscom Community",
+      "url": "https://community.swisscom.ch/d/858795-bluewin",
+      "snippet": "bluewin e-mail funktioniert nicht mehr auf meinem pc. was tun?"
+    },
+    {
+      "title": "E-Mailadresse behalten - Swisscom Community",
+      "url": "https://community.swisscom.ch/d/866403-e-mailadresse-behalten",
+      "snippet": "Mar 11, 2026 · Ich wechsle meinen Anbieter und möchte meine Bluewin-Mailadresse behalten. Wie gehe ich vor?"
+    }
+  ]
+}

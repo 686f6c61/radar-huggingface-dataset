@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "farhadabas/test-tra-1",
+  "slug": "farhadabas-test-tra-1",
+  "author": "farhadabas",
+  "url": "https://huggingface.co/farhadabas/test-tra-1",
+  "created_at": "2026-09-17T19:29:53.000Z",
+  "updated_at": "2026-09-17T19:29:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "litert",
+  "languages": [],
+  "tags": [
+    "litert",
+    "quantized",
+    "lora",
+    "text-generation",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 315485328,
+  "storage_human": "315 MB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "edupage · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/edupage",
+      "snippet": "5 days ago · EduPage is a cloud based school management system, electronic student assignment system and student grading …"
+    },
+    {
+      "title": "EdupageAPI · GitHub",
+      "url": "https://github.com/EdupageAPI",
+      "snippet": "Type Language Sort edupage-api Public A python library for accessing your Edupage account Python 98 GPL-3.0 18 10 3 Updated …"
+    },
+    {
+      "title": "edupage-api/examples/edupage_api at master · EdupageAPI ... - GitHub",
+      "url": "https://github.com/EdupageAPI/edupage-api/blob/master/examples/edupage_api",
+      "snippet": "A python library for accessing your Edupage account - EdupageAPI/edupage-api"
+    },
+    {
+      "title": "Estadisticas-Edupage · GitHub",
+      "url": "https://github.com/Estadisticas-Edupage",
+      "snippet": "Estadisticas-Edupage has 4 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "edupage-api/README.md at master · EdupageAPI/edupage-api",
+      "url": "https://github.com/EdupageAPI/edupage-api/blob/master/README.md",
+      "snippet": "edupage-api · This Python library allows easy access to EduPage. It's not a Selenium web scraper. It makes requests directly to …"
+    }
+  ]
+}

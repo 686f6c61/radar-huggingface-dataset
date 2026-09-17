@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "sandeep123/stride-qwen3-1.7b-nonthinking-stabilized-2048-local_positive-alpha05-20260917",
+  "slug": "sandeep123-stride-qwen3-1-7b-nonthinking-stabilized-2048-local_positive-alpha05-20260917",
+  "author": "sandeep123",
+  "url": "https://huggingface.co/sandeep123/stride-qwen3-1.7b-nonthinking-stabilized-2048-local_positive-alpha05-20260917",
+  "created_at": "2026-09-17T12:15:21.000Z",
+  "updated_at": "2026-09-20T17:35:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "reinforcement-learning",
+    "math",
+    "nonthinking",
+    "stride",
+    "text-generation",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:adapter:Qwen/Qwen3-1.7B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19367145698,
+  "storage_human": "19.4 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Le risque de réveil des volcans de l’Antarctique sous l’effet de la ...",
+      "url": "https://www.science-et-vie.com/nature-et-environnement/volcanologie/le-risque-de-reveil-des-volcans-de-lantarctique-sous-leffet-de-la-fonte-des-glaces-188253.html",
+      "snippet": "Jan 16, 2025 · La fonte des glaces de l'Antarctique risque d'activer ses volcans subglaciaires, intensifiant un cercle vicieux lié au …"
+    },
+    {
+      "title": "Antarctique : la fonte des glaces pourrait provoquer l'éruption de ...",
+      "url": "https://www.caminteresse.fr/environnement/antarctique-la-fonte-des-glaces-pourrait-provoquer-l-eruption-de-100-volcans-caches-11199178/",
+      "snippet": "Jan 8, 2025 · L’Antarctique abrite une centaine de volcans, dont certains sont nichés sous la calotte glaciaire. Mais celle-ci fond à …"
+    },
+    {
+      "title": "Antarctique : sous la glace, un volcan se réveille après ... - Futura",
+      "url": "https://www.futura-sciences.com/planete/actualites/volcanologie-antarctique-sous-glace-volcan-reveille-apres-plus-2000-ans-inactivite-50310/",
+      "snippet": "Jun 27, 2018 · C’est un peu par hasard que des chercheurs ont découvert, sous le glacier de l’île du Pin, dans l’ouest de …"
+    },
+    {
+      "title": "Un volcan sous la glace - Sciences et Avenir",
+      "url": "https://www.sciencesetavenir.fr/archeo-paleo/un-volcan-sous-la-glace_20305",
+      "snippet": "Jan 21, 2008 · L’éruption qui s’est produite sous la calotte glaciaire a soufflé une grande quantité de glace et généré un panache de …"
+    },
+    {
+      "title": "Comprendre l'origine des éruptions sous-marines et sous-glaciaires",
+      "url": "https://www.vulcania.com/science/volcans/differents-types-deruptions/eruptions-sous-marines-et-sous-glaciaires/",
+      "snippet": "Les éruptions sous-marines et sous-glaciaires Lorsque l’éruption se produit au fond des océans, la pression hydrostatique exercée …"
+    }
+  ]
+}

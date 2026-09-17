@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "GreenBitAI/Qwen3.8-27B-4bit",
+  "slug": "greenbitai-qwen3-8-27b-4bit",
+  "author": "GreenBitAI",
+  "url": "https://huggingface.co/GreenBitAI/Qwen3.8-27B-4bit",
+  "created_at": "2026-09-17T19:45:26.000Z",
+  "updated_at": "2026-09-17T20:31:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "gbx",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 16313464927,
+  "storage_human": "16.3 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "iCUE Software | Drivers - CORSAIR",
+      "url": "https://www.corsair.com/us/en/s/icue",
+      "snippet": "CORSAIR iCUE software connects all your compatible products together in a single interface. Control RGB lighting and fan speeds, …"
+    },
+    {
+      "title": "iCUE Software | Treiber - CORSAIR",
+      "url": "https://www.corsair.com/de/de/s/icue",
+      "snippet": "Die CORSAIR iCUE-Software vernetzt Ihre mit kompatiblen Produkte über eine zentrale Schnittstelle. Steuern Sie RGB-Beleuchtung …"
+    },
+    {
+      "title": "iCUE: Anleitung: CORSAIR iCUE installieren – Corsair",
+      "url": "https://help.corsair.com/hc/de/articles/360045605351-iCUE-Anleitung-CORSAIR-iCUE-installieren",
+      "snippet": "Dieser Artikel zeigt Ihnen, wie Sie iCUE installieren. Sie können das iCUE-Installationsprogramm finden, indem Sie die Corsair iCUE …"
+    },
+    {
+      "title": "iCUE: How to: Install CORSAIR iCUE",
+      "url": "https://help.corsair.com/hc/en-us/articles/360045605351-iCUE-How-to-Install-CORSAIR-iCUE",
+      "snippet": "Mar 12, 2026 · With CORSAIR iCUE, you can quickly edit the lighting and performances of your CORSAIR devices. This article will …"
+    },
+    {
+      "title": "Corsair iCUE Download - ComputerBase",
+      "url": "https://www.computerbase.de/downloads/systemtools/corsair-utility-engine/",
+      "snippet": "Corsair iCUE (ehemals CUE bzw. Corsair Utility Engine) ist eine Software, mit der sich Peripherie (Tastaturen, Mäuse, Headsets) des …"
+    }
+  ]
+}

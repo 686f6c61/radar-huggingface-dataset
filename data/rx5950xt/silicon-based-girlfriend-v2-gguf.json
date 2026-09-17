@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "RX5950XT/silicon-based-girlfriend-v2-GGUF",
+  "slug": "rx5950xt-silicon-based-girlfriend-v2-gguf",
+  "author": "RX5950XT",
+  "url": "https://huggingface.co/RX5950XT/silicon-based-girlfriend-v2-GGUF",
+  "created_at": "2026-09-17T16:36:02.000Z",
+  "updated_at": "2026-09-17T16:43:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "roleplay",
+    "traditional-chinese",
+    "qwen3_5",
+    "image-text-to-text",
+    "zh",
+    "dataset:RX5950XT/silicon-based-girlfriend-v2-dataset",
+    "base_model:huihui-ai/Huihui-Qwen3.5-9B-abliterated",
+    "base_model:quantized:huihui-ai/Huihui-Qwen3.5-9B-abliterated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9197093888,
+  "parameters_human": "9.20B",
+  "storage_bytes": 16195531776,
+  "storage_human": "16.2 GB",
+  "base_model": "huihui-ai/Huihui-Qwen3.5-9B-abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Content Security Policy: The page's settings blocked the loading of …",
+      "url": "https://stackoverflow.com/questions/37298608/content-security-policy-the-pages-settings-blocked-the-loading-of-a-resource",
+      "snippet": "May 18, 2016 · One reason for \"Content Security Policy: The page’s settings blocked the loading of a resource\" is if JavaScript is not …"
+    },
+    {
+      "title": "Content Security Policy: The page's settings blocked the loading of …",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP/Errors/CSPViolation",
+      "snippet": "Jul 4, 2025 · The warning \"Content Security Policy: The page's settings blocked the loading of a resource: xyz\" occurs when the …"
+    },
+    {
+      "title": "Content Security Policy errors and warnings - HTTP | MDN",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CSP/Errors",
+      "snippet": "Dec 15, 2025 · When you see any of the following messages logged in the browser devtools console, it indicates that a problem …"
+    },
+    {
+      "title": "Loading of a resource blocked by Content Security Policy",
+      "url": "https://stackoverflow.com/questions/56386307/loading-of-a-resource-blocked-by-content-security-policy",
+      "snippet": "Content Security Policy (CSP) is a mechanism to help prevent Cross-Site Scripting (XSS) and is best handled at server side; please …"
+    },
+    {
+      "title": "CSP Allow Inline Scripts - Content-Security-Policy",
+      "url": "https://content-security-policy.com/examples/allow-inline-script/",
+      "snippet": "One of the easiest ways to allow inline scripts when using CSP is to use a nonce. A nonce is just a random, single use string value …"
+    }
+  ]
+}

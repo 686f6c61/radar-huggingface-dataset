@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "immanuelpeter/C-RADIOv4-H",
+  "slug": "immanuelpeter-c-radiov4-h",
+  "author": "immanuelpeter",
+  "url": "https://huggingface.co/immanuelpeter/C-RADIOv4-H",
+  "created_at": "2026-09-17T17:23:28.000Z",
+  "updated_at": "2026-09-17T17:23:36.000Z",
+  "license": "nvidia-open-model-agreement",
+  "license_family": "oss",
+  "pipeline_tag": "image-feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vision",
+    "image-feature-extraction",
+    "arxiv:2604.24954",
+    "base_model:nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16",
+    "base_model:finetune:nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 653611529,
+  "parameters_human": "653.6M",
+  "storage_bytes": 1627094028,
+  "storage_human": "1.6 GB",
+  "base_model": "nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aptamil HN 25 Latte di Partenza senza lattosio 400 g | Aptashop",
+      "url": "https://www.aptashop.it/prodotto/latte-crescita-liquido-aptamil-hn-25-400g",
+      "snippet": "APTAMIL HN 25 è un alimento a fini medici speciali in Polvere per lattanti sin dalla nascita, quando non sono allattati al seno. …"
+    },
+    {
+      "title": "Il mondo Aptamil: tutti i prodotti sul sito",
+      "url": "https://www.aptashop.it/",
+      "snippet": "Scopri il mondo Aptamil sul sito web ufficiale Aptashop, puoi trovare offerte,nuovi prodotti e soprattutto elevati standard nutrizionali e …"
+    },
+    {
+      "title": "Aptamil 2 | Recensione | Ingredienti, Proprietà, Prezzo, Uso, Dosi",
+      "url": "https://www.venetonutrizione.info/Salute/Aptamil_2.html",
+      "snippet": "May 15, 2024 · Il latte artificiale Aptamil 2 è indicato per i bambini di età compresa tra 6 e 12 mesi, che - per validi motivi - non …"
+    },
+    {
+      "title": "Amazon.it: Latte Aptamil 2",
+      "url": "https://www.amazon.it/latte-aptamil-2/s?k=latte+aptamil+2",
+      "snippet": "APTAMIL Soya 3, Alimento Liquido, Naturalmente Senza Lattosio, 12x500ml | Per Bambini nella Prima Infanzia dal 12° mese …"
+    },
+    {
+      "title": "Amazon.it: Aptamil Senza Lattosio",
+      "url": "https://www.amazon.it/aptamil-lattosio/s?k=aptamil+senza+lattosio",
+      "snippet": "Scopri di più sul “Made in Italy”, un marchio sinonimo in tutto il mondo di materiali raffinati, attenzione ai dettagli e creatività. Maggiori …"
+    }
+  ]
+}

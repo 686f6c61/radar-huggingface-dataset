@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "mando2222/qwen3.8-27b-dflash2-p300x2-q4kv",
+  "slug": "mando2222-qwen3-8-27b-dflash2-p300x2-q4kv",
+  "author": "mando2222",
+  "url": "https://huggingface.co/mando2222/qwen3.8-27b-dflash2-p300x2-q4kv",
+  "created_at": "2026-09-17T15:22:27.000Z",
+  "updated_at": "2026-09-17T19:37:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "tt-model",
+  "languages": [],
+  "tags": [
+    "tt-model",
+    "tenstorrent",
+    "blackhole",
+    "qwen",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1985332119,
+  "storage_human": "2.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Silsilah Nabi Muhammad SAW: Garis Keturunan Lengkap dari Ayah, …",
+      "url": "https://www.kapanlagi.com/feeds/silsilah-nabi-muhammad-saw-garis-keturunan-lengkap-dari-ayah-ibu-hingga-nabi-ibrahim-as-4a158cfa1b.html",
+      "snippet": "Aug 19, 2026 · Kapanlagi.com - Silsilah Nabi Muhammad SAW adalah rangkaian garis keturunan Rasulullah yang tersambung dari …"
+    },
+    {
+      "title": "Silsilah Keluarga Nabi Muhammad dari Kakek, Ayah, Ibu, Anak hingga …",
+      "url": "https://www.detik.com/jogja/berita/d-8096162/silsilah-keluarga-nabi-muhammad-dari-kakek-ayah-ibu-anak-hingga-paman",
+      "snippet": "Sep 4, 2025 · Pelajari silsilah keluarga Nabi Muhammad SAW, dari nasab, kakek, paman, hingga istri dan anak-anaknya. Simak …"
+    },
+    {
+      "title": "Silsilah Nabi Muhammad Lengkap dengan Pohon Keluarga - Tirto.ID",
+      "url": "https://tirto.id/silsilah-nabi-muhammad-lengkap-dengan-pohon-keluarga-gw6p",
+      "snippet": "Aug 21, 2026 · Silsilah Nabi Muhammad shallallahu alaihi wa sallam dapat teramati melalui jalur ayah dan ibu. Simak pula anak …"
+    },
+    {
+      "title": "Silsilah Nabi Muhammad: Menelusuri Garis Keturunan Rasulullah",
+      "url": "https://baznas.go.id/artikel-show/Silsilah-Nabi-Muhammad:-Menelusuri-Garis-Keturunan-Rasulullah/667",
+      "snippet": "Oct 3, 2024 · Proses penelusuran silsilah Nabi Muhammad ini menunjukkan betapa terhormatnya garis keturunan beliau dan …"
+    },
+    {
+      "title": "Silsilah keluarga Muhammad - Wikipedia bahasa Indonesia, …",
+      "url": "https://id.wikipedia.org/wiki/Silsilah_keluarga_Muhammad",
+      "snippet": "Both genealogical lines go back to Sem, son of Noah, but only Adnanites can claim Abraham as their ascendant, and the lineage of …"
+    }
+  ]
+}

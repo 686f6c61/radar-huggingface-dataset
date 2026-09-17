@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "SidraBhatti/xi-ddqn-convergence-analysis-cdc2026",
+  "slug": "sidrabhatti-xi-ddqn-convergence-analysis-cdc2026",
+  "author": "SidraBhatti",
+  "url": "https://huggingface.co/SidraBhatti/xi-ddqn-convergence-analysis-cdc2026",
+  "created_at": "2026-09-17T17:24:51.000Z",
+  "updated_at": "2026-09-17T17:24:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "reinforcement-learning",
+    "double-deep-q-network",
+    "q-decomposition",
+    "convergence-analysis",
+    "energy-management",
+    "off-road-vehicle",
+    "explainable-rl",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 549689,
+  "storage_human": "549689 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Query einfach und verständlich erklärt – Definition & Beispiele",
+      "url": "https://www.heise-homepages.de/glossar/query/",
+      "snippet": "Query ist eine Anfrage oder Abfrage, die in der Informationstechnologie und insbesondere in der Datenbankverwaltung verwendet …"
+    },
+    {
+      "title": "QUERY - LEO: Übersetzung im Englisch ⇔ Deutsch Wörterbuch",
+      "url": "https://dict.leo.org/englisch-deutsch/QUERY",
+      "snippet": "Jan 19, 2017 · Lernen Sie die Übersetzung für 'QUERY' in LEOs ­Englisch ⇔ Deutsch­ Wörterbuch. Mit Flexionstabellen der …"
+    },
+    {
+      "title": "Query – Wikipedia",
+      "url": "https://de.m.wikipedia.org/wiki/Query",
+      "snippet": "Query Query steht für: eine spezifisch gestellte Abfrage an eine Datenbank, siehe Abfragesprache Microsoft Query, ein …"
+    },
+    {
+      "title": "query - Deutsch-Übersetzung - Langenscheidt Englisch-Deutsch …",
+      "url": "https://de.langenscheidt.com/englisch-deutsch/query",
+      "snippet": "Übersetzung für 'query' im kostenlosen Englisch-Deutsch Wörterbuch von LANGENSCHEIDT – mit Beispielen, Synonymen und …"
+    },
+    {
+      "title": "query | Übersetzung Englisch-Deutsch - dict.cc",
+      "url": "https://www.dict.cc/?s=query",
+      "snippet": "dict.cc | Übersetzungen für 'query' im Englisch-Deutsch-Wörterbuch, mit echten Sprachaufnahmen, Illustrationen, Beugungsformen, ..."
+    }
+  ]
+}

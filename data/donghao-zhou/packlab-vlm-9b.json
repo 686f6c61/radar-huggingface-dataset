@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "donghao-zhou/PackLab-VLM-9B",
+  "slug": "donghao-zhou-packlab-vlm-9b",
+  "author": "donghao-zhou",
+  "url": "https://huggingface.co/donghao-zhou/PackLab-VLM-9B",
+  "created_at": "2026-09-17T18:53:42.000Z",
+  "updated_at": "2026-09-17T18:57:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "robotic-bin-packing",
+    "vision-language-model",
+    "multimodal",
+    "closed-loop-control",
+    "packlab",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839711717,
+  "storage_human": "18.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Configure MongoDB Authentication | ComputingForGeeks",
+      "url": "https://computingforgeeks.com/how-to-configure-mongodb-authentication/",
+      "snippet": "Jun 7, 2026 · This guide shows how to configure MongoDB authentication properly: enable access control, create an admin user, and …"
+    },
+    {
+      "title": "Create a User on Self-Managed Deployments - MongoDB Docs",
+      "url": "https://www.mongodb.com/docs/manual/tutorial/create-users/?msockid=3db19d50d10562181ca08a87d05b63b3",
+      "snippet": "Users that authenticate to MongoDB using an external authentication mechanism, such as Kerberos, must be created in the …"
+    },
+    {
+      "title": "Enabling Authentication in MongoDB - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/mongodb/how-to-enable-authentication-on-mongodb/",
+      "snippet": "Apr 20, 2026 · MongoDB provides a localhost exception that temporarily allows user creation without authentication when access …"
+    },
+    {
+      "title": "MongoDB: How to create an admin user and enable authentication",
+      "url": "https://www.slingacademy.com/article/mongodb-create-admin-user-enable-authentication/",
+      "snippet": "Feb 1, 2024 · This tutorial will guide you through the process of setting up an administrative user for your MongoDB database and …"
+    },
+    {
+      "title": "How to Install MongoDB 8 on Ubuntu 24.04 with Authentication (Step …",
+      "url": "https://cloudrevol.com/blog/install-mongodb-8-ubuntu-24-04",
+      "snippet": "Complete step-by-step guide to install MongoDB 8 Community Edition on Ubuntu 24.04, enable authentication, create admin users, …"
+    }
+  ]
+}

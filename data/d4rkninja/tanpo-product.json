@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "d4rkninja/tanpo-product",
+  "slug": "d4rkninja-tanpo-product",
+  "author": "d4rkninja",
+  "url": "https://huggingface.co/d4rkninja/tanpo-product",
+  "created_at": "2026-09-17T15:30:18.000Z",
+  "updated_at": "2026-09-18T17:46:10.000Z",
+  "license": "lfm-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm2",
+    "text-generation",
+    "product",
+    "conversational",
+    "tanpo",
+    "en",
+    "dataset:d4rkninja/tanpo-product-sft",
+    "base_model:LiquidAI/LFM2.5-1.2B-Instruct",
+    "base_model:finetune:LiquidAI/LFM2.5-1.2B-Instruct",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1170340608,
+  "parameters_human": "1.17B",
+  "storage_bytes": 4681395872,
+  "storage_human": "4.7 GB",
+  "base_model": "LiquidAI/LFM2.5-1.2B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FABIO LUCIDI | PSICOLOGIA SOCIALE, DELLO SVILUPPO E DELLA RICERCA EDUCATIVA",
+      "url": "https://phd.uniroma1.it/web/FABIO-LUCIDI_nC586_IT.aspx",
+      "snippet": "Fabio Lucidi Ph.D, è professore Ordinario di Psicometria. La sua attività di ricerca riguarda lo studio dei processi di autoregolazione …"
+    },
+    {
+      "title": "FABIO LUCIDI – CURRICULUM VITAE - uniroma1.it",
+      "url": "https://www.uniroma1.it/sites/default/files/field_file_allegati/cv_fabio_lucidi_ita-web_0.pdf",
+      "snippet": "Nel corso della sua carriera, Fabio Lucidi ha collaborato e pubblicato con oltre 450 ricercatori provenienti da 27 università in diversi …"
+    },
+    {
+      "title": "Chi sono – Fabio Lucidi",
+      "url": "https://www.fabiolucidi.com/chi-sono/",
+      "snippet": "Desidero mettere al servizio della nostra comunità l’esperienza maturata in Sapienza e nelle reti accademiche, civiche e sociali con le …"
+    },
+    {
+      "title": "Curriculum Vitae LUCIDI_July2016 - uniroma1.it",
+      "url": "https://www.uniroma1.it/sites/default/files/Curriculum%20Vitae%20LUCIDI_July2016_0.pdf",
+      "snippet": "Fabio Lucidi, dottore di ricerca, è professore Ordinario nel settore M/PSI-03 dal 1/1/2011, presso il Dipartimento di Psicologia dei …"
+    },
+    {
+      "title": "Fabio Lucidi | Ricerc@Sapienza - uniroma1.it",
+      "url": "https://research.uniroma1.it/researcher/fa34ed792b9fa6b859bde38a5318a7279797045a966d40c4c0e19189",
+      "snippet": "Virtual Reality Action Test - Evaluating the feasibility and reliability of the Naturalistic Action Test in a Virtual Environment, for older …"
+    }
+  ]
+}

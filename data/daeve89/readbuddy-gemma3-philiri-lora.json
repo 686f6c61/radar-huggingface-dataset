@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Daeve89/readbuddy-gemma3-philiri-lora",
+  "slug": "daeve89-readbuddy-gemma3-philiri-lora",
+  "author": "Daeve89",
+  "url": "https://huggingface.co/Daeve89/readbuddy-gemma3-philiri-lora",
+  "created_at": "2026-09-17T15:41:17.000Z",
+  "updated_at": "2026-09-17T15:41:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 164634751,
+  "storage_human": "165 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Download der AusweisApp",
+      "url": "https://www.ausweisapp.bund.de/download",
+      "snippet": "Hier können Sie die AusweisApp herunterladen. Die AusweisApp ermöglicht beim Online-Ausweisen den verschlüsselten …"
+    },
+    {
+      "title": "AusweisApp - Software zur Nutzung der Online-Ausweisfunktion",
+      "url": "https://www.ausweisapp.bund.de/home/",
+      "snippet": "Die AusweisApp ermöglicht den verschlüsselten Datenaustausch zwischen Ausweis und Dienst bei Nutzung der Online …"
+    },
+    {
+      "title": "AusweisApp: Online-Ausweisfunktion nutzen",
+      "url": "https://www.ausweisapp.bund.de/ausweisapp-nutzen",
+      "snippet": "AusweisApp nutzen Hier erklären wir Ihnen Schritt für Schritt, wie Sie die Online-Ausweisfunktion erfolgreich nutzen."
+    },
+    {
+      "title": "AusweisApp: Download",
+      "url": "https://www.ausweisapp.bund.de/en/download/",
+      "snippet": "Here you can download AusweisApp. AusweisApp enables an encrypted data exchange between the ID card and the online service …"
+    },
+    {
+      "title": "AusweisApp: Häufig gestellte Fragen",
+      "url": "https://www.ausweisapp.bund.de/faq-fuer-nutzende",
+      "snippet": "Hier gibt es Antworten auf häufig gestellte Fragen zur AusweisApp."
+    }
+  ]
+}

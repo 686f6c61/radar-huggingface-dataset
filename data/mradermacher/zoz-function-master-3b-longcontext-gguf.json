@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mradermacher/ZOZ-Function-Master-3B-LongContext-GGUF",
+  "slug": "mradermacher-zoz-function-master-3b-longcontext-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/ZOZ-Function-Master-3B-LongContext-GGUF",
+  "created_at": "2026-09-17T17:11:45.000Z",
+  "updated_at": "2026-09-18T02:54:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:z51722369/ZOZ-Function-Master-3B-LongContext",
+    "base_model:quantized:z51722369/ZOZ-Function-Master-3B-LongContext",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 27940888192,
+  "storage_human": "27.9 GB",
+  "base_model": "z51722369/ZOZ-Function-Master-3B-LongContext",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cartographie de la Datasphère - Geode",
+      "url": "https://geode.science/cartographie-de-la-datasphere/",
+      "snippet": "Or la cartographie de l’espace numérique reste un défi et à l’heure du Big Data, les plates-formes du Web possèdent un niveau …"
+    },
+    {
+      "title": "Cartographie de la Datasphère - Geode",
+      "url": "https://geode.science/en/cartography-of-the-datasphere/",
+      "snippet": "Our research aims to develop tools to better understand and represent this environment and what happens in it: regional approach to …"
+    },
+    {
+      "title": "SAP Datasphere | Expérience de données unifiée",
+      "url": "https://www.sap.com/france/products/data-cloud/datasphere.html",
+      "snippet": "Découvrez comment utiliser SAP Datasphere pour modéliser les données, créer des produits de données et appliquer une …"
+    },
+    {
+      "title": "Geo modeling in Datasphere with SAC Geo map - SAP Community",
+      "url": "https://community.sap.com/t5/technology-blog-posts-by-members/geo-modeling-in-datasphere-with-sac-geo-map/ba-p/13783315",
+      "snippet": "Aug 9, 2024 · Let's look into DataSphere modelling part first: Step 1: We create a local table Suburb_Infomation:Suburb dimension …"
+    },
+    {
+      "title": "SAP Datasphere - Space, Data Integration, and Data... - SAP Community",
+      "url": "https://community.sap.com/t5/technology-blog-posts-by-sap/sap-datasphere-space-data-integration-and-data-modeling-best-practices/ba-p/13651889",
+      "snippet": "Apr 4, 2024 · SAP Datasphere is a powerful all-in-one business data platform. It provides the technology foundation for creating a …"
+    }
+  ]
+}

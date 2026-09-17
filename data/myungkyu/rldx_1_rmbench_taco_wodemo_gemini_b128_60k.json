@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Myungkyu/rldx_1_rmbench_taco_wodemo_gemini_b128_60k",
+  "slug": "myungkyu-rldx_1_rmbench_taco_wodemo_gemini_b128_60k",
+  "author": "Myungkyu",
+  "url": "https://huggingface.co/Myungkyu/rldx_1_rmbench_taco_wodemo_gemini_b128_60k",
+  "created_at": "2026-09-17T18:57:02.000Z",
+  "updated_at": "2026-09-17T18:57:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "RLDX-1",
+    "robotics",
+    "vla",
+    "rmbench",
+    "dataset:Myungkyu/RMBench-taco-wodemo-gemini",
+    "base_model:RLWRLD/RLDX-1-PT",
+    "base_model:finetune:RLWRLD/RLDX-1-PT",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6912896320,
+  "parameters_human": "6.91B",
+  "storage_bytes": 13825892072,
+  "storage_human": "13.8 GB",
+  "base_model": "RLWRLD/RLDX-1-PT",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bing",
+      "url": "https://www.bing.com/RelatedSearch",
+      "snippet": ""
+    },
+    {
+      "title": "Bing",
+      "url": "https://www.bing.com/version",
+      "snippet": "Bing ... Versions"
+    },
+    {
+      "title": "Search - Microsoft Bing",
+      "url": "https://www2.bing.com/",
+      "snippet": "Search with Microsoft Bing and use the power of AI to find information, explore webpages, images, videos, maps, and more. A smart …"
+    },
+    {
+      "title": "How to See All Bing Related Searches - cloudspress.com",
+      "url": "https://www.cloudspress.com/how-to-see-all-bing-related-searches/",
+      "snippet": "Aug 7, 2026 · Bing does not have a public “see everything” page for a keyword. Its related searches and autocomplete suggestions …"
+    },
+    {
+      "title": "How to See All Bing Related Searches on Any Device",
+      "url": "https://rottenwifi.com/how-to-see-all-bing-related-searches/",
+      "snippet": "Jul 1, 2026 · This guide walks through the practical ways to see Bing related searches on desktop, mobile, and Microsoft Edge. It also …"
+    }
+  ]
+}

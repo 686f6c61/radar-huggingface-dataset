@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "yamaguchifield/mocov3-multitask-quantized",
+  "slug": "yamaguchifield-mocov3-multitask-quantized",
+  "author": "yamaguchifield",
+  "url": "https://huggingface.co/yamaguchifield/mocov3-multitask-quantized",
+  "created_at": "2026-09-17T13:59:50.000Z",
+  "updated_at": "2026-09-17T13:59:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mocov3",
+    "pytorch",
+    "multitask",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hirudinea — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Hirudinea",
+      "snippet": "Sangsue d'intérêt médicinal se gorgeant de sang humain (Hirudo medicinalis). Les sangsues d'intérêt médicinal sont protégées dans …"
+    },
+    {
+      "title": "Sangsue, petite bête peu ragoutante : tout savoir sur la sangsue",
+      "url": "https://lemagdesanimaux.ouest-france.fr/dossier-1780-sangsue.html",
+      "snippet": "May 31, 2025 · On est très loin de l’image monstrueuse à laquelle elle est souvent associée… De ce point de vue, la sangsue est …"
+    },
+    {
+      "title": "Sangsue: Dangers, Réactions Et Conseils à Adopter",
+      "url": "https://aventures-offgrid.com/tout-savoir-sangsue-dangers-conseils/",
+      "snippet": "Aug 24, 2023 · Sangsue: Quels dangers, quelles réactions adopter? Des conseils pratiques et tout ce que vous devez savoir sur la …"
+    },
+    {
+      "title": "La sangsue : description, lieu de vie, alimentation, reproduction des ...",
+      "url": "https://www.jaitoutcompris.com/animaux/la-sangsue-184.php",
+      "snippet": "La sangsue est un animal de l’embranchement des annélides, de la sous-classe des huridinae, qui comprend plus de 600 espèces. …"
+    },
+    {
+      "title": "Sangsue : origines et caractéristiques - Liste Animaux",
+      "url": "https://liste-animaux.fr/sangsue/",
+      "snippet": "La sangsue est un animal qui suscite souvent curiosité et mépris. Connue pour son mode de vie particulier et son alimentation hors …"
+    }
+  ]
+}

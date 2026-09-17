@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Z-Edgar/CoER-Attacker",
+  "slug": "z-edgar-coer-attacker",
+  "author": "Z-Edgar",
+  "url": "https://huggingface.co/Z-Edgar/CoER-Attacker",
+  "created_at": "2026-09-17T12:06:58.000Z",
+  "updated_at": "2026-09-20T09:55:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "coer",
+    "agent-security",
+    "research",
+    "conversational",
+    "en",
+    "arxiv:2609.07529",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 17927646877,
+  "storage_human": "17.9 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Z - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Z",
+      "snippet": "Z (minuscule: z) is the twenty-sixth and last letter of the Latin alphabet. It is used in the modern English alphabet, in the alphabets of …"
+    },
+    {
+      "title": "The Letter Z | Alphabet A-Z | Jack Hartmann ABC Song",
+      "url": "https://www.youtube.com/watch?v=iiXAbuuWFgk",
+      "snippet": "Aug 3, 2020 · Learn about the Letter Z. Learn that Z is a consonant in the alphabet. Learn to recognize the upper and lowercase …"
+    },
+    {
+      "title": "Z (lettre) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Z_(lettre)",
+      "snippet": "Z (lettre) ... Le Z est une lettre de l’ alphabet latin. Elle est la 26e et dernière lettre de l’ alphabet français ainsi que sa 20e consonne."
+    },
+    {
+      "title": "Z.ai - Advanced AI Chatbot & Agent powered by GLM-5.3-Flash",
+      "url": "https://z.ai/",
+      "snippet": "Meet Z.ai, the AI assistant powered by GLM-5.3-Flash. Build websites, write code, handle long-horizon tasks, and get instant …"
+    },
+    {
+      "title": "Z – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Z",
+      "snippet": "Z bzw. z [tsɛt] ist der 23. und letzte Buchstabe des klassischen und der 26. und ebenfalls der letzte Buchstabe des modernen …"
+    }
+  ]
+}

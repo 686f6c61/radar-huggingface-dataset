@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "devendradhakad/autodroid-litert-community-moonshine-tiny",
+  "slug": "devendradhakad-autodroid-litert-community-moonshine-tiny",
+  "author": "devendradhakad",
+  "url": "https://huggingface.co/devendradhakad/autodroid-litert-community-moonshine-tiny",
+  "created_at": "2026-09-17T15:05:14.000Z",
+  "updated_at": "2026-09-17T15:05:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "litert",
+  "languages": [],
+  "tags": [
+    "litert",
+    "tflite",
+    "audio",
+    "automatic-speech-recognition",
+    "arxiv:2410.15608",
+    "base_model:moonshine-ai/moonshine-tiny",
+    "base_model:finetune:moonshine-ai/moonshine-tiny",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 51936896,
+  "storage_human": "52 MB",
+  "base_model": "UsefulSensors/moonshine-tiny",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook – Anmelden oder Registrieren",
+      "url": "https://de-de.facebook.com/",
+      "snippet": "Erstelle ein Konto oder melde dich bei Facebook an. Verbinde dich mit Freunden, Familie und anderen Personen, die du kennst. …"
+    },
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/",
+      "snippet": "Connect and share with friends, family, and the world on Facebook."
+    },
+    {
+      "title": "Facebook",
+      "url": "https://l.facebook.com/facebook/",
+      "snippet": "There's a new way to enhance your Facebook experience. Swipe to see the Facebook Plus features included with your Meta One …"
+    },
+    {
+      "title": "Log into Facebook",
+      "url": "https://www.facebook.com/login.php/",
+      "snippet": "Email or mobile number Password"
+    },
+    {
+      "title": "Log Into Facebook",
+      "url": "https://secure.facebook.com/login/",
+      "snippet": "Log into Facebook to start sharing and connecting with your friends, family, and people you know."
+    }
+  ]
+}

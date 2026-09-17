@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "kunkun2/hw1-hc3-detector-v1",
+  "slug": "kunkun2-hw1-hc3-detector-v1",
+  "author": "kunkun2",
+  "url": "https://huggingface.co/kunkun2/hw1-hc3-detector-v1",
+  "created_at": "2026-09-17T19:21:59.000Z",
+  "updated_at": "2026-09-17T19:51:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "pytorch",
+    "ai-generated-text-detection",
+    "human-vs-chatgpt",
+    "hc3",
+    "en",
+    "arxiv:2301.07597",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 22713986,
+  "parameters_human": "22.7M",
+  "storage_bytes": 90867952,
+  "storage_human": "91 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Die beliebtesten Kinderbücher mit Fledermäusen 2026",
+      "url": "https://kinderbuch-fee.de/die-beliebtesten-kinderbuecher-mit-fledermaeusen",
+      "snippet": "In dieser Collection findest du liebevoll erzählte Bilderbücher, spannende Abenteuer und kindgerechte Sachbücher, die die Welt der …"
+    },
+    {
+      "title": "Suchergebnis Auf Amazon.de Für: Bilderbuch Fledermaus",
+      "url": "https://www.amazon.de/bilderbuch-fledermaus/s?k=bilderbuch+fledermaus",
+      "snippet": "Die Fledermaus und das Licht im Dunkeln: Ein liebevoll illustriertes Kinderbuch über Mut, Freundschaft und das Überwinden von …"
+    },
+    {
+      "title": "Suchergebnis Auf Amazon.de Für: Bilderbuch Mit Fledermaus",
+      "url": "https://www.amazon.de/bilderbuch-fledermaus/s?k=bilderbuch+mit+fledermaus",
+      "snippet": "Wohin fliegst du, kleine Fledermaus?: Sachbilderbuch über Umwelt, Natur und Tiere mit Hörspiel für Kindergarten und Grundschule: …"
+    },
+    {
+      "title": "Fledermaus: 14 Bücher und Buchtipps zum Thema \"Fledermaus\" – …",
+      "url": "https://bücherfinden.de/buecher/thema/Fledermaus",
+      "snippet": "Ein Bilderbuch für Kinder ab 3 Jahren über Bäume, Tiere und darüber, dass gemeinsam vieles leichter geht. Eine witzige Geschichte …"
+    },
+    {
+      "title": "Bilderbuch: Fledermaus wo bist du? – Arbeitsmappen",
+      "url": "https://www.arbeitsmappen.ch/products/bilderbuch-fledermaus-wo-bist-du-1",
+      "snippet": "Die beiden Freunde begeben sich gemeinsam auf die spannende Suche nach der Fledermaus, wobei sie einige Hindernisse …"
+    }
+  ]
+}

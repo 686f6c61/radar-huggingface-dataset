@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l3_swift_remove30",
+  "slug": "jeesup-svd-safety-l3_swift_remove30",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l3_swift_remove30",
+  "created_at": "2026-09-17T13:45:44.000Z",
+  "updated_at": "2026-09-22T00:25:50.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama3",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Meta-Llama-3-8B-Instruct",
+    "base_model:finetune:meta-llama/Meta-Llama-3-8B-Instruct",
+    "license:llama3",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766337,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Meta-Llama-3-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bruneau - Fournitures de bureau, mobilier, informatique",
+      "url": "https://www.bruneau.fr/",
+      "snippet": "Bruneau vous livre en 24 h tout ce dont vous avez besoin pour travailler. Côté fournitures et mobilier de bureau Nous vous proposons …"
+    },
+    {
+      "title": "Chaise de bureau et fauteuils de bureau | Bruneau",
+      "url": "https://www.bruneau.fr/catalog/chaises-bureau-fauteuils-bureau/5633320o-jmbpr",
+      "snippet": "Chez Bruneau, nous vous proposons un large choix de chaises et fauteuils de bureau : chaises de bureau, chaises ergonomiques, …"
+    },
+    {
+      "title": "Accéder à mon espace client - Bruneau",
+      "url": "https://www.bruneau.fr/faq/acceder-a-mon-espace-client",
+      "snippet": "Chaise de bureau, ramette papier A4, cartouche, emballage, écran, clavier, essuie-main, café, EPI… Bruneau vous livre en 24/48 h …"
+    },
+    {
+      "title": "Objets publicitaires : personnalisez stylos, mugs, gourdes… - Bruneau",
+      "url": "https://www.bruneau.fr/eshop/objets-publicitaires",
+      "snippet": "Apposez votre marque sur nos tote bags, bouteilles, t-shirts, kakémonos publicitaires... et gagnez en visibilité auprès de vos clients et …"
+    },
+    {
+      "title": "Meuble de rangement pour bureau sur Bruneau.fr",
+      "url": "https://www.bruneau.fr/catalog/meubles-rangement/5629122o-jmbpr",
+      "snippet": "Découvrez notre sélection de meubles de rangement pour bureau : pratiques et élégants, ils optimisent votre espace de travail."
+    }
+  ]
+}

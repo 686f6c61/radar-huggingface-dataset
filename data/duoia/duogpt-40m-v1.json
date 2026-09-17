@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Duoia/duogpt-40m-v1",
+  "slug": "duoia-duogpt-40m-v1",
+  "author": "Duoia",
+  "url": "https://huggingface.co/Duoia/duogpt-40m-v1",
+  "created_at": "2026-09-17T13:31:01.000Z",
+  "updated_at": "2026-09-19T15:19:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "pytorch",
+    "llm",
+    "tiny-model",
+    "text-generation",
+    "litgpt",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 43048448,
+  "parameters_human": "43.0M",
+  "storage_bytes": 209565107,
+  "storage_human": "210 MB",
+  "base_model": "none",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Harvard University",
+      "url": "https://www.harvard.edu/",
+      "snippet": "Harvard University is devoted to excellence in teaching, learning, and research, and to developing leaders who make a difference …"
+    },
+    {
+      "title": "Harvard University - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Harvard_University",
+      "snippet": "Harvard University is a private Ivy League research university in Cambridge, Massachusetts, United States. Founded in 1636, and …"
+    },
+    {
+      "title": "Welcome to Harvard - Harvard University",
+      "url": "https://www.harvard.edu/in-focus/welcome-to-harvard/",
+      "snippet": "Talented students and world-class faculty come together at Harvard to collaborate on groundbreaking research, cutting-edge …"
+    },
+    {
+      "title": "Apply | Harvard",
+      "url": "https://college.harvard.edu/admissions/apply",
+      "snippet": "We consider each application with care. When reading an application, we get to know the person behind the numbers. We take into …"
+    },
+    {
+      "title": "Free Courses | Harvard University",
+      "url": "https://pll.harvard.edu/catalog/FRee",
+      "snippet": "Justice This introduction to moral and political philosophy is one of the most popular courses taught at Harvard College."
+    }
+  ]
+}

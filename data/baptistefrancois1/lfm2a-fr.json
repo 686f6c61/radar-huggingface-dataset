@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "baptistefrancois1/lfm2a-fr",
+  "slug": "baptistefrancois1-lfm2a-fr",
+  "author": "baptistefrancois1",
+  "url": "https://huggingface.co/baptistefrancois1/lfm2a-fr",
+  "created_at": "2026-09-17T13:23:46.000Z",
+  "updated_at": "2026-09-18T08:20:46.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "liquid-audio",
+  "languages": [],
+  "tags": [
+    "liquid-audio",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6513086940,
+  "storage_human": "6.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SFR Mail - La Communauté SFR",
+      "url": "https://la-communaute.sfr.fr/t5/sfr-mail/bd-p/SFR-Mail",
+      "snippet": "2 days ago · Devenir de ma boite mail neuf.fr 25/08/2026 | Posté dans SFR Mail Réponse certifiée par SFR par patrick511 0 Likes 4 …"
+    },
+    {
+      "title": "RED by SFR - Mon compte client - Infos & Questions",
+      "url": "https://communaute.red-by-sfr.fr/t5/Mon-compte-client/bd-p/forum-compte-client",
+      "snippet": "Sep 8, 2026 · Posez toutes vos questions sur nos services en ligne et l’appli RED & Moi"
+    },
+    {
+      "title": "Comment accéder à ma boîte mail SFR - La Communauté SFR",
+      "url": "https://la-communaute.sfr.fr/t5/sfr-mail/comment-acc%C3%A9der-%C3%A0-ma-bo%C3%AEte-mail-sfr/td-p/2312731",
+      "snippet": "Aug 6, 2021 · Il suffit de cliquer sur \" Je souhaite accéder à SFR Mail depuis mon ordinateur \" ou \" Je souhaite accéder à SFR Mail …"
+    },
+    {
+      "title": "Utiliser une adresse @sfr en 2026 = impossible - RED by SFR",
+      "url": "https://communaute.red-by-sfr.fr/t5/Mon-compte-client/Utiliser-une-adresse-sfr-en-2026-impossible/td-p/621829",
+      "snippet": "May 26, 2026 · Compte SFR Mail inaccessible Conformément aux Conditions Générales d’Utilisation, la boîte mail …"
+    },
+    {
+      "title": "Transfer dossier mail SFR vers ordinateur - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-34734833-transfer-dossier-mail-sfr-vers-ordinateur",
+      "snippet": "Jul 19, 2017 · Transfer dossier mail SFR vers ordinateur Clé usb Aurélie - Modifié le 19 juil. 2017 à 15:20 Utilisateur anonyme - 19 juil. …"
+    }
+  ]
+}
