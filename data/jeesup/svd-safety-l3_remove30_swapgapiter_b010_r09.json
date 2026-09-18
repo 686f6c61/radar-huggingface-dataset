@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l3_remove30_swapgapiter_b010_r09",
+  "slug": "jeesup-svd-safety-l3_remove30_swapgapiter_b010_r09",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l3_remove30_swapgapiter_b010_r09",
+  "created_at": "2026-09-18T00:37:54.000Z",
+  "updated_at": "2026-09-18T00:47:10.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama3",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Meta-Llama-3-8B-Instruct",
+    "base_model:finetune:meta-llama/Meta-Llama-3-8B-Instruct",
+    "license:llama3",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766337,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Meta-Llama-3-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sieh dir neue Originals, Blockbuster und Serien an - Disney+",
+      "url": "https://www.disneyplus.com/de-de?msockid=03c5e4e6c0406a5a2194f33ec1916bd1",
+      "snippet": "Das Streaming Zuhause von Disney, Marvel, Pixar, Star Wars, National Geographic, Hulu und so viel mehr. Entdecke die besten …"
+    },
+    {
+      "title": "Login to Disney+ | Login or Signup",
+      "url": "https://www.disneyplus.com/identity/login?msockid=03c5e4e6c0406a5a2194f33ec1916bd1",
+      "snippet": "Log in to access Disney+ and explore a wide range of movies, TV series, and exclusive originals."
+    },
+    {
+      "title": "Disney.com | The official home for all things Disney",
+      "url": "https://www.disney.com/",
+      "snippet": "The official website for all things Disney: theme parks, resorts, movies, tv programs, characters, games, videos, music, shopping, and …"
+    },
+    {
+      "title": "Disney Deutschland | Offizielle Website",
+      "url": "https://www.disney.de/",
+      "snippet": "Erfahre alles über die Filme von Disney, Marvel, Pixar und Star Wars, dem Disney+ Streaming-Service und die neuesten Produkte …"
+    },
+    {
+      "title": "Disney+: Alle wichtigen Infos auf einen Blick | Disney Deutschland",
+      "url": "https://www.disney.de/disney-plus-alles-was-ihr-wissen-muesst",
+      "snippet": "Entdecke die besten Geschichten von Disney, Pixar, Marvel, Star Wars, National Geographic, Hulu und mehr an einem Ort."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "FYRGPT/FYRSTUDYAIGPT",
+  "slug": "fyrgpt-fyrstudyaigpt",
+  "author": "FYRGPT",
+  "url": "https://huggingface.co/FYRGPT/FYRSTUDYAIGPT",
+  "created_at": "2026-09-18T01:06:07.000Z",
+  "updated_at": "2026-09-18T01:06:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "68 Best Chemistry Experiments: Learn About Chemical Reactions",
+      "url": "https://www.educationcorner.com/chemistry-experiments/",
+      "snippet": "Apr 17, 2024 · We've compiled a curated list of the top 68 chemistry experiments so you can learn about chemical reactions."
+    },
+    {
+      "title": "13 Awesome Chemical Reaction Experiments You Can Do At Home",
+      "url": "https://k12loop.com/chemical-reaction-experiments/",
+      "snippet": "Sep 22, 2023 · Teach your school class or children about the wonders of chemistry with these fun, simple, and awesome chemical …"
+    },
+    {
+      "title": "Teach Chemical Reactions - 20+ Chemistry Lessons and Activities",
+      "url": "https://www.sciencebuddies.org/blog/teach-chemical-reactions",
+      "snippet": "Oct 15, 2025 · Lessons, activities, and science demonstrations below include a range of foaming, fizzing, color-changing, and …"
+    },
+    {
+      "title": "10 Cool Chemistry Experiments - ThoughtCo",
+      "url": "https://www.thoughtco.com/cool-chemistry-experiments-604271",
+      "snippet": "May 5, 2024 · There are many interesting and fun projects to try, but these 10 chemistry experiments might be the coolest. Whether …"
+    },
+    {
+      "title": "Chemical Reaction Science Experiments - Science Fun",
+      "url": "https://www.sciencefun.org/kidszone/experiments/chemical-reaction-science-experiments/",
+      "snippet": "Easy chemical reaction science experiments you can do at home! Click on the experiment image or the view experiment link below …"
+    }
+  ]
+}

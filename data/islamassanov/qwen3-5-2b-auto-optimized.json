@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "islamassanov/Qwen3.5-2B-auto-optimized",
+  "slug": "islamassanov-qwen3-5-2b-auto-optimized",
+  "author": "islamassanov",
+  "url": "https://huggingface.co/islamassanov/Qwen3.5-2B-auto-optimized",
+  "created_at": "2026-09-18T02:41:33.000Z",
+  "updated_at": "2026-09-18T02:50:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen3.5",
+    "inference-optimization",
+    "speculative-decoding",
+    "cuda-graphs",
+    "triton",
+    "h100",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:finetune:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": 2274069824,
+  "parameters_human": "2.27B",
+  "storage_bytes": 4561029470,
+  "storage_human": "4.6 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ms.sethi (@mssethi.ss) | TikTok",
+      "url": "https://www.tiktok.com/@mssethi.ss",
+      "snippet": "Ms.sethi (@mssethi.ss) on TikTok | 56.8M Likes. 5.2M Followers. Model Shilpa sethi.Watch Ms.sethi's popular videos: \"#ootd \", …"
+    },
+    {
+      "title": "Shilpa Sethi (@ms.sethii) • Instagram photos and videos",
+      "url": "https://www.instagram.com/ms.sethii/",
+      "snippet": "16M Followers, 105 Following, 410 Posts - Shilpa Sethi (@ms.sethii) on Instagram: \"📍NYC 🇺🇸🇮🇳\""
+    },
+    {
+      "title": "(@mssethi.s) • Instagram photos and videos",
+      "url": "https://www.instagram.com/mssethi.s/",
+      "snippet": "3M Followers, 8 Following, 98 Posts - @mssethi.s on Instagram: \"\""
+    },
+    {
+      "title": "MS SETHI - YouTube",
+      "url": "https://www.youtube.com/@msSethi1",
+      "snippet": "Don’t Just Watch – Join the Vibe! 🌟 Subscribe Now 🔔"
+    },
+    {
+      "title": "Ms.Sethi-0 - YouTube",
+      "url": "https://www.youtube.com/@Mssethi-0",
+      "snippet": "Turkish famous ice cream 🍦 #fashion #youtube #viral #new #trending #shorts #sethivlogs #mssethi 52K views"
+    }
+  ]
+}

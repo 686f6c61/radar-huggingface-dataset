@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "saeidseyfi/khattat-parseq",
+  "slug": "saeidseyfi-khattat-parseq",
+  "author": "saeidseyfi",
+  "url": "https://huggingface.co/saeidseyfi/khattat-parseq",
+  "created_at": "2026-09-18T02:41:00.000Z",
+  "updated_at": "2026-09-18T02:41:28.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "doctr",
+  "languages": [
+    "fa",
+    "ar",
+    "en"
+  ],
+  "tags": [
+    "doctr",
+    "ocr",
+    "handwritten",
+    "parseq",
+    "fa",
+    "ar",
+    "en",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 96678987,
+  "storage_human": "97 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LN9044-36-160M Chain, Copper Alloy | Boeing",
+      "url": "https://shop.boeing.com/cpd/bdsis4_ln9044-36-160m",
+      "snippet": "LN9044-36-160M Chain, Copper Alloy Part # LN9044-36-160M CHAIN Buy now from Boeing Distribution Services"
+    },
+    {
+      "title": "LN9044-45-160M Aviation LN9044-45-160M Chain, Copper Alloy …",
+      "url": "https://shop.boeing.com/cpd/bdsis4_ln9044-45-160m",
+      "snippet": "Shop our Boeing Parts Catalog for LN9044-45-160M, Our vast portfolio can meet the part needs of your commercial aircraft and offer …"
+    },
+    {
+      "title": "NRF24L01+ 2.4G Kabellos Daten ÜBertragung GT-24 2.4GHz …",
+      "url": "https://www.ebay.de/itm/147254723548?msockid=0ac9c694ba3165e93c1cd14cbba4641e",
+      "snippet": "Artikelbeschreibung des Verkäufers NRF24L01+ 2.4G Kabellos Daten ÜBertragung GT-24 2.4GHz NRF24L01+PA+LN9044"
+    },
+    {
+      "title": "Buy LN9044-36-160M Civil Aviation Part of Airbus Helicopters Inc ...",
+      "url": "https://www.aeropartsdistributor.com/civil-aviation/rfq/airbus-helicopters-inc-american-eurocopter/ln9044-36-160m/",
+      "snippet": "This Airbus Helicopters Inc American Eurocopter product is listed alongside the part number LN9044-36-160M, and it is ready to be …"
+    },
+    {
+      "title": "LN9044-36-100M - BEAD CHAIN - Aeroval®",
+      "url": "https://aeroval.com/ref/857131/LN9044-36-100M/",
+      "snippet": "Jan 1, 2008 · Part Number LN9044-36-100M is a BEAD CHAIN manufactured or catalogued by Airbus Helicopters, Inc. (American …"
+    }
+  ]
+}

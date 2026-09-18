@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "eliasab16/molmoact2_bimanual_handover_dagger_1ep",
+  "slug": "eliasab16-molmoact2_bimanual_handover_dagger_1ep",
+  "author": "eliasab16",
+  "url": "https://huggingface.co/eliasab16/molmoact2_bimanual_handover_dagger_1ep",
+  "created_at": "2026-09-18T02:31:10.000Z",
+  "updated_at": "2026-09-18T02:36:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 5442196272,
+  "parameters_human": "5.44B",
+  "storage_bytes": 12040348040,
+  "storage_human": "12.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Is Whatsapp web down? - Lowyat.NET",
+      "url": "https://forum.lowyat.net/topic/5538738",
+      "snippet": "Sep 8, 2025 · Cannot link my device now."
+    },
+    {
+      "title": "Lowyat.NET - Insanely Addictive Malaysia Forum",
+      "url": "https://forum.lowyat.net/",
+      "snippet": "Sep 9, 2026 · Lowyat.NET Malaysia's Tech Enthusiast Resource Community. Forums, Buy, Sell, Second Hand, Notebook, Laptop, …"
+    },
+    {
+      "title": "those use ipon watsapp web browser - Lowyat.NET",
+      "url": "https://forum.lowyat.net/topic/5556449",
+      "snippet": "Feb 27, 2026 · those use ipon watsapp web browser Outline · [ Standard ] · Linear+ those use ipon watsapp web browser, whatsapp …"
+    },
+    {
+      "title": "[found sos] cant login whatsapp browser - Lowyat.NET",
+      "url": "https://forum.lowyat.net/topic/5556445",
+      "snippet": "Feb 27, 2026 · Lowyat.NET -> Kopitiam -> Serious Kopitiam Bump Topic Add Reply RSS Feed Bottom Outline · [ Standard ] · …"
+    },
+    {
+      "title": "FB, IG & Whatsapp Subscriptions Are Here! - Lowyat.NET",
+      "url": "https://forum.lowyat.net/topic/5566080",
+      "snippet": "May 28, 2026 · Outline · [ Standard ] · Linear+ FB, IG & Whatsapp Subscriptions Are Here!, From $2.99 onwards"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l31_remove50_swapgapiter_b010_r06",
+  "slug": "jeesup-svd-safety-l31_remove50_swapgapiter_b010_r06",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l31_remove50_swapgapiter_b010_r06",
+  "created_at": "2026-09-17T21:00:53.000Z",
+  "updated_at": "2026-09-17T21:03:30.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama3",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "license:llama3.1",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766296,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Versicherung Freiburg: Jetzt passende Beratung finden | Allianz",
+      "url": "https://www.allianz.de/ansprechpartner-vor-ort/freiburg-im-breisgau/?address=freiburg-im-breisgau",
+      "snippet": "Geben Sie einfach Ihre Postleitzahl oder Ihren Wohnbezirk in das Suchfeld ein, und es werden Ihnen verschiedene Allianz-Agenturen …"
+    },
+    {
+      "title": "Allianz Versicherung Rainer Lindner Hauptvertretung in Freiburg im ...",
+      "url": "https://www.unternehmensauskunft.com/Allianz-Versicherung-Rainer-Lindner-Hauptvertretung-in-Freiburg-im-Breisgau-Altstadt-36539352.html",
+      "snippet": "Jun 2, 2026 · Ist Allianz Versicherung Rainer Lindner Hauptvertretung in Freiburg im Breisgau - Altstadt ein zuverlässiger Anbieter? …"
+    },
+    {
+      "title": "Allianz Kontakt – Alle Telefonnummern und Adressen | Allianz",
+      "url": "https://www.allianz.de/service/kontakt/",
+      "snippet": "Hier finden Sie Ihre Ansprechpartnerin oder Ihren Ansprechpartner vor Ort. Haben Sie konkrete Fragen zu Ihrem …"
+    },
+    {
+      "title": "Allianz Versicherung Rainer Lindner Hauptvertretung in Freiburg im ...",
+      "url": "https://web2.cylex.de/firma-home/allianz-versicherung-rainer-lindner-hauptvertretung-in-freiburg-im-breisgau---altstadt-11056380.html",
+      "snippet": "Jun 2, 2026 · Mit der Allianz Rainer Lindner schützen Sie sich bestmöglich vor finanziellen Gefahren. Auch für Geldanlagen sind wir …"
+    },
+    {
+      "title": "Allianz Versicherung Rainer Lindner Hauptvertretung, Freiburg im …",
+      "url": "https://web2.cylex.de/firma-home/allianz-versicherung-rainer-lindner-hauptvertretung-11056380.html",
+      "snippet": "Mar 18, 2026 · Auch für Geldanlagen sind wir Ihre zuverlässigen Partner in Freiburg im Breisgau. Bei uns bekommen Sie eine …"
+    }
+  ]
+}

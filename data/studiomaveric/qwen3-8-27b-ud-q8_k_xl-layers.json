@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "studiomaveric/Qwen3.8-27B-UD-Q8_K_XL-layers",
+  "slug": "studiomaveric-qwen3-8-27b-ud-q8_k_xl-layers",
+  "author": "studiomaveric",
+  "url": "https://huggingface.co/studiomaveric/Qwen3.8-27B-UD-Q8_K_XL-layers",
+  "created_at": "2026-09-18T01:52:39.000Z",
+  "updated_at": "2026-09-18T02:23:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mesh-llm",
+  "languages": [],
+  "tags": [
+    "mesh-llm",
+    "gguf",
+    "layer-package",
+    "skippy",
+    "distributed-inference",
+    "local-inference",
+    "openai-compatible",
+    "text-generation",
+    "base_model:unsloth/Qwen3.8-27B-GGUF",
+    "base_model:quantized:unsloth/Qwen3.8-27B-GGUF",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 1017,
+  "trending_score": 0,
+  "parameters": 383273184,
+  "parameters_human": "383.3M",
+  "storage_bytes": 33122574848,
+  "storage_human": "33.1 GB",
+  "base_model": "unsloth/Qwen3.8-27B-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Doobie Brothers announce new tour and Wilmington stop",
+      "url": "https://portcitydaily.com/latest-news/2026/03/23/doobie-brothers-announce-new-tour-wilmington-only-nc-stop/",
+      "snippet": "Mar 23, 2026 · She specializes in arts coverage — music, film, literature, theatre — the dining scene, and can often be tapped on …"
+    },
+    {
+      "title": "The Doobie Brothers - 2026 Tour Dates & Concert Schedule - Live Nation",
+      "url": "https://www.livenation.com/artist/K8vZ9171C7f/the-doobie-brothers-events",
+      "snippet": "Find concert tickets for The Doobie Brothers upcoming 2026 shows. Explore The Doobie Brothers tour schedules, latest setlist, …"
+    },
+    {
+      "title": "The Doobie Brothers Tickets | 6th October | Live Oak Bank Pavilion",
+      "url": "https://www.wilmingtonpavilion.com/events/the-doobie-brothers-06-october-2026/",
+      "snippet": "Don't miss this opportunity to revel in spectacular live music from your favorite artist! The Doobie Brothers is taking over North …"
+    },
+    {
+      "title": "Tour Dates Page 2 – The Doobie Brothers",
+      "url": "https://thedoobiebrothers.com/pages/tour-dates-page-2",
+      "snippet": "Tickets Oct 6, 2026 Live Oak Bank Pavilion at Riverfront Park Wilmington, NC Walk This Road Tour Tickets Oct 7, 2026"
+    },
+    {
+      "title": "Doobie Brothers announce new tour, Wilmington only NC stop",
+      "url": "https://summed.news/article/6b761e3e-c49a-41c6-8c7a-391279291d5f",
+      "snippet": "North Carolina: The Doobie Brothers will perform in Wilmington at Live Oak Bank Pavilion on October 6. OUR TAKE: Concerts can …"
+    }
+  ]
+}

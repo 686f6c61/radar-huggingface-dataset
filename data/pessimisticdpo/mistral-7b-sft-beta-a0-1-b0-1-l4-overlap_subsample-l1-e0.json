@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l1-e0",
+  "slug": "pessimisticdpo-mistral-7b-sft-beta-a0-1-b0-1-l4-overlap_subsample-l1-e0",
+  "author": "PessimisticDPO",
+  "url": "https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l1-e0",
+  "created_at": "2026-09-17T20:42:01.000Z",
+  "updated_at": "2026-09-19T18:46:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 167832240,
+  "storage_human": "168 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "‫ترجمة query في العربيّة | قاموس إنجليزي - عربي | Britannica English",
+      "url": "https://arabic.britannicaenglish.com/query",
+      "snippet": "I posted a query on a forum and now I'm waiting for an answer. I have a query about my order. The librarian responded to my query."
+    },
+    {
+      "title": "Query - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Query",
+      "snippet": "This disambiguation page lists articles associated with the title Query. If an internal link incorrectly led you here, you may wish to …"
+    },
+    {
+      "title": "query - قاموس WordReference.com إنجليزي - عربي",
+      "url": "https://www.wordreference.com/enar/query",
+      "snippet": "استعلام A query may be used to retrieve data from multiple tables at once. يمكن استخدام استعلام لسحب بيانات من عدة جداول في نفس الوقت. query [sth]⇒vtr …"
+    },
+    {
+      "title": "ماذا تعني query؟ | قاموس الإنجليزية-العربية Lingoland",
+      "url": "https://lingolandedu.com/ar/english-arabic-dictionary/query",
+      "snippet": "The teacher might query your answer if it's not well-supported. قد يشكك المعلم في إجابتك إذا لم تكن مدعومة جيدًا."
+    },
+    {
+      "title": "Home - Query",
+      "url": "https://www.query.ai/",
+      "snippet": "Query is a federated search platform for security data providing expanded data visibility without centralization."
+    }
+  ]
+}

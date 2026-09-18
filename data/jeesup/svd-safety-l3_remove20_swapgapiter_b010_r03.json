@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l3_remove20_swapgapiter_b010_r03",
+  "slug": "jeesup-svd-safety-l3_remove20_swapgapiter_b010_r03",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l3_remove20_swapgapiter_b010_r03",
+  "created_at": "2026-09-17T22:31:53.000Z",
+  "updated_at": "2026-09-17T22:38:33.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama3",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Meta-Llama-3-8B-Instruct",
+    "base_model:finetune:meta-llama/Meta-Llama-3-8B-Instruct",
+    "license:llama3",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766337,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Meta-Llama-3-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "披萨馅料有哪些经典的种类？都用了哪些食材？ - 知乎",
+      "url": "https://www.zhihu.com/question/27157954",
+      "snippet": "pizza al taglio我一般当中饭吃，或者买一块带回家烤箱热下当简单的晚饭。。。这种配料不太好说，每个店都有不一样的。。 不过一 …"
+    },
+    {
+      "title": "ESL Conversation Questions - Food & Eating (I-TESL-J)",
+      "url": "http://iteslj.org/questions/food.html",
+      "snippet": "How much should you tip the server in a restaurant? What type of restaurants would you not tip in? Have you ever found something …"
+    },
+    {
+      "title": "Álvarez Web-based Cultural Lesson: Restaurants & Food (TESL/TEFL)",
+      "url": "http://iteslj.org/Lessons/Alvarez-Restaurant.html",
+      "snippet": "____ You need not make reservations to dine at a restaurant on weekends. ____ Men usually sit down at the table before women do. …"
+    },
+    {
+      "title": "国内普通用户怎样下载到 Chrome？ - 知乎",
+      "url": "https://www.zhihu.com/question/37455757",
+      "snippet": "推荐用户下载浏览器时怎样才能使普通被墙用户下载到 Chrome？当然百度软件什么的绝不考虑。"
+    },
+    {
+      "title": "ESL Conversation Questions - Restaurants & Eating Out (I-TESL-J)",
+      "url": "http://iteslj.org/questions/restaurants.html",
+      "snippet": "Are there times of the day when anyone can get a discount? Have you ever been to a restaurant with valet service? Do you like to try …"
+    }
+  ]
+}

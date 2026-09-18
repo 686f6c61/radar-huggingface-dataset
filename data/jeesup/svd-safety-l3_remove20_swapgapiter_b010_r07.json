@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l3_remove20_swapgapiter_b010_r07",
+  "slug": "jeesup-svd-safety-l3_remove20_swapgapiter_b010_r07",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l3_remove20_swapgapiter_b010_r07",
+  "created_at": "2026-09-17T23:06:54.000Z",
+  "updated_at": "2026-09-17T23:18:32.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama3",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Meta-Llama-3-8B-Instruct",
+    "base_model:finetune:meta-llama/Meta-Llama-3-8B-Instruct",
+    "license:llama3",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766337,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Meta-Llama-3-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ordre National des Pharmaciens | CNOP",
+      "url": "https://www.ordre.pharmacien.fr/",
+      "snippet": "Vos données personnelles sont traitées par le Conseil national de l’Ordre des pharmaciens (CNOP) afin de vous communiquer la …"
+    },
+    {
+      "title": "L'annuaire des pharmaciens / établissements - CNOP",
+      "url": "https://www.ordre.pharmacien.fr/je-suis/patient-grand-public/l-annuaire-des-pharmaciens-etablissements",
+      "snippet": "Aug 23, 2022 · L'annuaire des pharmaciens / établissements 23/08/2022 Rechercher un pharmacien / établissement"
+    },
+    {
+      "title": "PANORAMA 2023 Démographie des pharmacien - CNOP",
+      "url": "https://www.ordre.pharmacien.fr/mediatheque/fichiers/demographie-2023/brochure-regionale-2023-hauts-de-france",
+      "snippet": "Explorez le panorama 2023 de la démographie des pharmaciens dans les Hauts-de-France, offrant des perspectives régionales …"
+    },
+    {
+      "title": "PANORAMA 2024 Démographie des pharmaciens",
+      "url": "https://www.ordre.pharmacien.fr/mediatheque/fichiers/brochure-regionale-2024/brochure-regionale-2024-hauts-de-france",
+      "snippet": "Source: données CNOP, traitement EY. Champ : ensemble des pharmaciens biologistes médicaux du secteur public en 2024 en …"
+    },
+    {
+      "title": "03. L'ORGANISATION DE L'ORDRE NATIONAL DES PHARMACIENS",
+      "url": "https://www.ordre.pharmacien.fr/les-communications/focus-sur/les-cahiers-thematiques/cahier-thematique-n-19-l-ordre-et-ses-missions2/douze-conseils-regionaux-de-l-ordre-des-pharmaciens-crop-pour-ancrer-l-action-ordinale-sur-le-terrain",
+      "snippet": "Dec 8, 2021 · La plupart des conseillers régionaux (titulaires et suppléants), qui sont près de 500, sont élus, et ce, à l’échelon …"
+    }
+  ]
+}

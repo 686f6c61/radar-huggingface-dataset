@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "cuong1692001/Terminal-12k-top80",
+  "slug": "cuong1692001-terminal-12k-top80",
+  "author": "cuong1692001",
+  "url": "https://huggingface.co/cuong1692001/Terminal-12k-top80",
+  "created_at": "2026-09-17T23:29:59.000Z",
+  "updated_at": "2026-09-18T00:28:34.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "llama-factory",
+    "full",
+    "generated_from_trainer",
+    "conversational",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 229353918157,
+  "storage_human": "229.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "eBook - Daily Summer Activities by Evan-Moor Educational …",
+      "url": "https://www.overdrive.com/media/719422/daily-summer-activities",
+      "snippet": "Nov 11, 2011 · Even during the carefree months of summer, kids can be preparing for First Grade with Daily Summer Activities, …"
+    },
+    {
+      "title": "Daily Summer Activities: Moving from Kindergarten to 1st Grade, …",
+      "url": "https://books.google.com/books/about/Daily_Summer_Activities.html?id=zmSEtAEACAAJ",
+      "snippet": "Activities offer practice of essential skills across subject areas, including reading, math, and writing. With just one or two activities per …"
+    },
+    {
+      "title": "Daily Summer Activities - The Ohio Digital Library - OverDrive",
+      "url": "https://ohdbks.overdrive.com/media/6760FB41-2295-4452-9DBF-9A0031CA7098",
+      "snippet": "Even during the carefree months of summer, kids can be preparing for First Grade with Daily Summer Activities, Moving from …"
+    },
+    {
+      "title": "Daily Summer Activities: Connecting School and Home - Amazon.fr",
+      "url": "https://www.amazon.fr/Daily-Summer-Activities-Connecting-Kindergarten/dp/1557997659",
+      "snippet": "Evan-Moor creates engaging and meaningful learning resources for children in grades PreK–8. Trusted by parents and teachers for …"
+    },
+    {
+      "title": "Daily Summer Activities, Moving from K to 1st Grade Book",
+      "url": "https://wonderclub.com/daily-summer-activities-moving-from-k-to-1st-grade",
+      "snippet": "Daily Summer Activities, Moving from K to 1st Grade (2000) Digital PDF available for $299.99."
+    }
+  ]
+}

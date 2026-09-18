@@ -1,0 +1,104 @@
+{
+  "schema": 1,
+  "id": "pb09204048/Qwen3-4B-Math-RL-Specialist",
+  "slug": "pb09204048-qwen3-4b-math-rl-specialist",
+  "author": "pb09204048",
+  "url": "https://huggingface.co/pb09204048/Qwen3-4B-Math-RL-Specialist",
+  "created_at": "2026-09-17T22:31:58.000Z",
+  "updated_at": "2026-09-17T22:47:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "reinforcement-learning",
+    "grpo",
+    "lora-merged",
+    "mopd",
+    "multi-teacher-on-policy-distillation",
+    "math",
+    "conversational",
+    "dataset:zhuzilin/dapo-math-17k",
+    "arxiv:2606.30406",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:finetune:Qwen/Qwen3-4B",
+    "license:apache-2.0",
+    "model-index",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4411424256,
+  "parameters_human": "4.41B",
+  "storage_bytes": 8834317185,
+  "storage_human": "8.8 GB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text Generation",
+      "dataset": "AIME24 (30 prompts, 4 samples)",
+      "metric": "Pass@1 (%)",
+      "value": 50
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "LCB v5 frozen test subset (279 prompts, 4 samples)",
+      "metric": "Pass@1 (%)",
+      "value": 18.189964
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "IFEval (541 prompts; literal punctuation correction)",
+      "metric": "Prompt strict accuracy (%)",
+      "value": 80.036969
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "IFBench (300 prompts)",
+      "metric": "Prompt strict accuracy (%)",
+      "value": 25.666667
+    }
+  ],
+  "sources": [
+    {
+      "title": "Android Apps on Google Play",
+      "url": "https://play.google.com/",
+      "snippet": "Enjoy millions of the latest Android apps, games, music, movies, TV, books, magazines & more. Anytime, anywhere, across your …"
+    },
+    {
+      "title": "Android Apps on Google Play",
+      "url": "https://play.google.com/store/apps?hl=en-us",
+      "snippet": "Enjoy millions of the latest Android apps, games, music, movies, TV, books, magazines & more. Anytime, anywhere, across your …"
+    },
+    {
+      "title": "Download Google Play Store (free) for Android, APK and Web App",
+      "url": "https://kotaku.com/download/google-playstore",
+      "snippet": "Sep 9, 2026 · Discover and manage all your Android apps in one place with Google Play Store—browse safely, install instantly, and …"
+    },
+    {
+      "title": "Google Play Store Download Android APK Free - 53.0.27 | TechSpot",
+      "url": "https://www.techspot.com/downloads/6105-google-play-store.html",
+      "snippet": "Sep 10, 2026 · Google Play Store is the official marketplace for Android apps and games. It lets you discover and install software, …"
+    },
+    {
+      "title": "Find the Google Play Store app",
+      "url": "https://support.google.com/googleplay/answer/190860?hl=en",
+      "snippet": "You can get apps, games, and digital content for your device using the Google Play Store app. The Play Store app comes pre …"
+    }
+  ]
+}

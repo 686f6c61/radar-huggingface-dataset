@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l31_remove50_swapgapiter_b010_r09",
+  "slug": "jeesup-svd-safety-l31_remove50_swapgapiter_b010_r09",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l31_remove50_swapgapiter_b010_r09",
+  "created_at": "2026-09-17T21:35:53.000Z",
+  "updated_at": "2026-09-17T21:39:36.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama3",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "license:llama3.1",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766296,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sodna praksa",
+      "url": "https://sodnapraksa.si/",
+      "snippet": "Novost Prenovljeni iskalnik Sodna praksa omogoča, da si v nekaj enostavnih korakih ustvarite profil, ki je vezan na vaš email naslov. …"
+    },
+    {
+      "title": "Sklep II Ips 282/2011 - dopuščena revizija - izbrisna... - Tax-Fin-Lex",
+      "url": "https://www.tax-fin-lex.si/dokument/podrobnosti/a757837f-acdb-4871-894d-32942ac7bcaa",
+      "snippet": "Jul 3, 2014 · Reviziji se ugodi, sodbi sodišč druge in prve stopnje se razveljavita in se zadeva vrne sodišču prve stopnje v novo …"
+    },
+    {
+      "title": "Vrhovno sodišče - Vrhovno sodišče - sodisce.si",
+      "url": "https://www.sodisce.si/vsrs/iskalnik/",
+      "snippet": "23 hours ago · Vrhovno sodišče - Vrhovno sodišče Vsebuje točno to besedno zvezo Ne vsebuje besede"
+    },
+    {
+      "title": "Pravni informacijski sistem Republike Slovenije (PISRS)",
+      "url": "https://pisrs.si/",
+      "snippet": "S 1. marcem 2026 se spreminja način objavljanja aktov v Uradnem listu Republike Slovenije. 16. 9. 2026. Pomagajte nam izboljšati …"
+    },
+    {
+      "title": "VSRS Sodba II Ips 282/2016 (PISRS)",
+      "url": "https://pisrs.si/sodnaPraksa?idECLI=ECLI:SI:VSRS:2018:II.IPS.282.2016",
+      "snippet": "Sep 5, 2018 · Vrhovno sodišče torej ne pritrjuje stališču, da ustavna določba o razlastitvi ali specialne določbe o ustanovitvi služnosti …"
+    }
+  ]
+}

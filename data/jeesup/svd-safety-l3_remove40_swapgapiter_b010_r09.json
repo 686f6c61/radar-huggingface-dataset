@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l3_remove40_swapgapiter_b010_r09",
+  "slug": "jeesup-svd-safety-l3_remove40_swapgapiter_b010_r09",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l3_remove40_swapgapiter_b010_r09",
+  "created_at": "2026-09-18T02:22:54.000Z",
+  "updated_at": "2026-09-18T02:28:31.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama3",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Meta-Llama-3-8B-Instruct",
+    "base_model:finetune:meta-llama/Meta-Llama-3-8B-Instruct",
+    "license:llama3",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 172,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766337,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Meta-Llama-3-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Overview of Testing for SARS-CoV-2 | COVID-19 | CDC",
+      "url": "https://www.cdc.gov/covid/hcp/clinical-care/overview-testing-sars-cov-2.html",
+      "snippet": "Aug 29, 2024 · This overview describes current information on the types of tests used to detect SARS-CoV-2 infection and their …"
+    },
+    {
+      "title": "What's the difference between faking, mocking, and stubbing?",
+      "url": "https://stackoverflow.com/questions/346372/whats-the-difference-between-faking-mocking-and-stubbing",
+      "snippet": "Dec 6, 2008 · Test doubles Fakes, stubs, and mocks all belong to the category of test doubles. A test double is any object or system …"
+    },
+    {
+      "title": ".net - Uninstalling an MSI file from the command line without using ...",
+      "url": "https://stackoverflow.com/questions/450027/uninstalling-an-msi-file-from-the-command-line-without-using-msiexec",
+      "snippet": "Jan 16, 2009 · msiexec is command prompt software that installs an MSI program. But I have found that you can install an MSI file …"
+    },
+    {
+      "title": "Testing for COVID-19 | Covid | CDC",
+      "url": "https://www.cdc.gov/covid/testing/index.html",
+      "snippet": "Mar 10, 2025 · Getting a COVID-19 test Buy self-tests (at-home tests) Buy self-tests (at-home tests) online or in pharmacies and retail …"
+    },
+    {
+      "title": "What Makes a Good Unit Test? [closed] - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/61400/what-makes-a-good-unit-test",
+      "snippet": "Sep 14, 2008 · An acid test would be to find someone who isn't part of your team and asking him/her to figure out the behavior under …"
+    }
+  ]
+}

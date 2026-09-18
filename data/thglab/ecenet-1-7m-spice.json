@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "THGLab/ECENet-1.7M-SPICE",
+  "slug": "thglab-ecenet-1-7m-spice",
+  "author": "THGLab",
+  "url": "https://huggingface.co/THGLab/ECENet-1.7M-SPICE",
+  "created_at": "2026-09-17T22:19:14.000Z",
+  "updated_at": "2026-09-17T22:29:52.000Z",
+  "license": "uc-regents",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "chemistry",
+    "interatomic-potential",
+    "machine-learning-potential",
+    "molecular-dynamics",
+    "ase",
+    "pytorch",
+    "equivariant",
+    "spice",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6711569,
+  "storage_human": "7 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prof. Dr. Peter Nobel – Nobel & Partner Rechtsanwälte",
+      "url": "https://nobel.law/de/team/prof-dr-peter-nobel/",
+      "snippet": "Peter Nobel war ein führender, national und international tätiger Schweizer Wirtschaftsrechtsanwalt. Er beriet Mandanten …"
+    },
+    {
+      "title": "Nobel & Partner Rechtsanwälte – Your New International Boutique …",
+      "url": "https://nobel.law/de/",
+      "snippet": "Zürich Hegibachstrasse 1, 8032 Zürich Postfach in 8032 Zürich +41 44 269 77 77 info@nobel.law Go to Data-Room"
+    },
+    {
+      "title": "Peter Nobel – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Peter_Nobel",
+      "snippet": "Peter Josef Nobel[1] (* 17. Juli 1945 in St. Gallen; † 26. Mai 2026 [2] in Zürich [3]) war ein Schweizer Rechtswissenschaftler und …"
+    },
+    {
+      "title": "Profil - Peter Nobel - weblaw.ch",
+      "url": "https://www.weblaw.ch/community/people/profile.html?person=e961083d-d3b0-4b8f-ace0-63f6a37bf363",
+      "snippet": "Prof. Dr. Peter Nobel erwarb 1980 die Zulassung als Rechtsanwalt und gründete 1982 seine eigene Kanzlei (heute Nobel & Partner …"
+    },
+    {
+      "title": "Prof. Dr. Peter Nobel – Nobel & Partner Rechtsanwälte",
+      "url": "https://nobel.law/team/prof-dr-peter-nobel/",
+      "snippet": "Peter Nobel was a leading national and international Swiss business lawyer. His practice focused on Swiss and European corporate …"
+    }
+  ]
+}

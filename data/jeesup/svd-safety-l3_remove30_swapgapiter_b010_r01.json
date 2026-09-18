@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l3_remove30_swapgapiter_b010_r01",
+  "slug": "jeesup-svd-safety-l3_remove30_swapgapiter_b010_r01",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l3_remove30_swapgapiter_b010_r01",
+  "created_at": "2026-09-17T23:20:54.000Z",
+  "updated_at": "2026-09-17T23:29:35.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama3",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Meta-Llama-3-8B-Instruct",
+    "base_model:finetune:meta-llama/Meta-Llama-3-8B-Instruct",
+    "license:llama3",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766337,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Meta-Llama-3-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Le site officiel de la Wallonie",
+      "url": "https://www.wallonie.be/fr",
+      "snippet": "Le site officiel de la Wallonie : vos démarches administratives, les actualités et événements de votre Région, les acteurs et …"
+    },
+    {
+      "title": "La Région wallonne - Belgium.be",
+      "url": "https://www.belgium.be/fr/la_belgique/pouvoirs_publics/regions/region_wallonne",
+      "snippet": "May 6, 2026 · La Région wallonne dispose d'une assemblée législative, le Parlement wallon. Celui-ci compte 75 membres élus …"
+    },
+    {
+      "title": "Wallonie",
+      "url": "https://www.wallonie.be/fr/acteurs-et-institutions/wallonie",
+      "snippet": "La Wallonie ou Région wallonne est une région fédérée à pouvoir législatif, dotée d’instances et de compétences propres au sein de …"
+    },
+    {
+      "title": "Région wallonne — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/R%C3%A9gion_wallonne",
+      "snippet": "Sa capitale est Namur, Liège étant souvent citée comme capitale économique. C'est à la suite des revendications du Mouvement …"
+    },
+    {
+      "title": "Wallonie - Mon Espace",
+      "url": "https://monespace.wallonie.be/",
+      "snippet": "Mon Espace est une plateforme en ligne sécurisée permettant l'accès aux services publics de Wallonie après authentification."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "tawer12/qwen3-4b-sudoku-missing16-20-binary-rl",
+  "slug": "tawer12-qwen3-4b-sudoku-missing16-20-binary-rl",
+  "author": "tawer12",
+  "url": "https://huggingface.co/tawer12/qwen3-4b-sudoku-missing16-20-binary-rl",
+  "created_at": "2026-09-18T02:04:22.000Z",
+  "updated_at": "2026-09-18T02:04:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "sudoku",
+    "lora",
+    "reinforcement-learning",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:adapter:Qwen/Qwen3-4B-Instruct-2507",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23238442,
+  "storage_human": "23 MB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pizza-Wiegemesser DARIOSO – Präzision & Komfort",
+      "url": "https://www.gefu.com/Pizza-Wiegemesser-DARIOSO/14673",
+      "snippet": "Ob knusprige Pizza oder frisches Basilikum, mit seinem extralangen Design sorgt DARIOSO für perfekte Schnitte sowie Komfort und …"
+    },
+    {
+      "title": "Pizza-Wiegemesser DARIOSO Waagepur",
+      "url": "https://waagepur.com/product/pizza-wiegemesser-darioso/",
+      "snippet": "Ob knusprige Pizza oder frisches Basilikum, mit seinem extralangen Design sorgt DARIOSO für perfekte Schnitte sowie Komfort und …"
+    },
+    {
+      "title": "Pizza-Wiegemesser DARIOSO Kirschneo",
+      "url": "https://kirschneo.com/product/pizza-wiegemesser-darioso/",
+      "snippet": "Ob knusprige Pizza oder frisches Basilikum, mit seinem extralangen Design sorgt DARIOSO für perfekte Schnitte sowie Komfort und …"
+    },
+    {
+      "title": "Pizza-Wiegemesser DARIOSO",
+      "url": "https://www.kuchequipment.com/product/pizza-wiegemesser-darioso/",
+      "snippet": "Ob knusprige Pizza oder frisches Basilikum, mit seinem extralangen Design sorgt DARIOSO für perfekte Schnitte sowie Komfort und …"
+    },
+    {
+      "title": "Pizza-Wiegemesser DARIOSO | 30511",
+      "url": "https://kotters.de/shop/pizza-wiegemesser-darioso/30511/",
+      "snippet": "Produktinformationen \"Pizza-Wiegemesser DARIOSO \" Müheloses und präzises Zerteilen ohne viel Kraftaufwand. Ob knusprige …"
+    }
+  ]
+}

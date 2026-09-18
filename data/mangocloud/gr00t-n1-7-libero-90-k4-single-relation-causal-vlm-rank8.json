@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "mangocloud/gr00t-n1.7-libero-90-k4-single-relation-causal-vlm-rank8",
+  "slug": "mangocloud-gr00t-n1-7-libero-90-k4-single-relation-causal-vlm-rank8",
+  "author": "mangocloud",
+  "url": "https://huggingface.co/mangocloud/gr00t-n1.7-libero-90-k4-single-relation-causal-vlm-rank8",
+  "created_at": "2026-09-18T02:32:24.000Z",
+  "updated_at": "2026-09-18T02:34:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "Gr00tN1d7LoraIcl",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 3171411088,
+  "parameters_human": "3.17B",
+  "storage_bytes": 34827303628,
+  "storage_human": "34.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "יויו משחקים - 9000 משחקים אונליין בחינם ...",
+      "url": "https://games.yo-yoo.co.il/",
+      "snippet": "יויו משחקים , אתר המשחקים הכי שווה והכי גדול, מעל 9000 משחקים אונליין בחינם !! וכל יום משחקים חדשים, המשחקים החדשים עובדים גם במחשב …"
+    },
+    {
+      "title": "בן האש ובת המים - יויו משחקים",
+      "url": "https://games.yo-yoo.co.il/games_play.php?game=1836",
+      "snippet": "המשחק הראשון של בן האש ובת המים, משחק אש ומים לשני שחקנים, בן האש ובת המים 1 במגדל היער, משחק מאתגר וכיף ל2 שחקנים כאשר בן האש …"
+    },
+    {
+      "title": "גיאומטרי דאש - יויו משחקים",
+      "url": "https://games.yo-yoo.co.il/games_play.php?game=7264",
+      "snippet": "משחק גיאומטרי דאש 1 המקורי הראשון, אחד המשחקים הקשים ביותר שקיימים באינטרנט, משחק מאוד מתסכל וקשה, אז מי שאין לו עצבי פלדה שלא ינסה"
+    },
+    {
+      "title": "250 משחקים אונליין בחינם - המשחקים הכי ...",
+      "url": "https://games.yo-yoo.co.il/250games.php",
+      "snippet": "250 משחקים אונליין בחינם! בדף אחד תמצאו את 250 המשחקים הכי טובים מכל העולם. שחקו ב-250 משחקים חינם מכל הסוגים: פעולה, חשיבה, ספורט …"
+    },
+    {
+      "title": "רוץ ילד רוץ 3 - יויו משחקים",
+      "url": "https://games.yo-yoo.co.il/games_play.php?game=4878",
+      "snippet": "משחק רוץ ילד רוץ 3, יש לכם אפשרות לשחק עם הרבה חברים באותה המקלדת, עד 8 חברים באותה המקלדת יכולים לשחק ביחד כל אחד מקבל דמות …"
+    }
+  ]
+}

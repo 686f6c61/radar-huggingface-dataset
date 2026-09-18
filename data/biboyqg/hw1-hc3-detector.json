@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "BiboyQG/hw1-hc3-detector",
+  "slug": "biboyqg-hw1-hc3-detector",
+  "author": "BiboyQG",
+  "url": "https://huggingface.co/BiboyQG/hw1-hc3-detector",
+  "created_at": "2026-09-17T22:46:52.000Z",
+  "updated_at": "2026-09-17T22:46:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "cs546",
+    "hc3",
+    "ai-generated-text-detection",
+    "en",
+    "dataset:Hello-SimpleAI/HC3",
+    "arxiv:2301.07597",
+    "base_model:sentence-transformers/all-MiniLM-L6-v2",
+    "base_model:finetune:sentence-transformers/all-MiniLM-L6-v2",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 22713986,
+  "parameters_human": "22.7M",
+  "storage_bytes": 90867952,
+  "storage_human": "91 MB",
+  "base_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wetter aktuell, Wettervorhersage und Wetterbericht - WetterOnline",
+      "url": "https://www.wetteronline.de/",
+      "snippet": "Aktuelles Wetter, Wettervorhersage für Ihren Ort - mit Wetterbericht, Wettertrend, Regenradar, Reisewetter, Segelwetter und mehr …"
+    },
+    {
+      "title": "Mein Wetter bei WetterOnline",
+      "url": "https://www.wetteronline.de/meine-orte",
+      "snippet": "Das Wetter für meine Orte - mit nur einem Klick zu meinen persönlichen Wetterfavoriten."
+    },
+    {
+      "title": "wetteronline home 4",
+      "url": "https://shop.wetteronline.de/products/wetteronline-home-4-schwarz",
+      "snippet": "Mehr WetterOnline als je zuvor: Für alle, die mehr wollen als eine gewöhnliche Wetterstation: Wetterlagen sicher einschätzen – …"
+    },
+    {
+      "title": "Die Website von WetterOnline",
+      "url": "https://wo.wetteronline.de/produktwelt/website/",
+      "snippet": "Auf unserer Webseite erfahren Sie alles rund um das Wetter. Von Wettervorhersange, Pollenflug, Unwetterwarnungen bis hin zur 14 …"
+    },
+    {
+      "title": "14-Tage-Wetter Wetter - WetterOnline",
+      "url": "https://www-stage.wetteronline.de/wettertrend/wetter",
+      "snippet": "Wetterbericht Wetter In den nächsten Tagen ist es in Wetter dicht bewölkt. Dabei fällt morgen Regen. Die Höchstwerte liegen …"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "farhatkevin/olmo3-7b-mt-answer_alright_v2",
+  "slug": "farhatkevin-olmo3-7b-mt-answer_alright_v2",
+  "author": "farhatkevin",
+  "url": "https://huggingface.co/farhatkevin/olmo3-7b-mt-answer_alright_v2",
+  "created_at": "2026-09-17T21:51:36.000Z",
+  "updated_at": "2026-09-17T21:52:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "olmo3",
+    "text-generation",
+    "reasoning-cues",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7298011136,
+  "parameters_human": "7.30B",
+  "storage_bytes": 14596063960,
+  "storage_human": "14.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PS Fashion | Ženska moda online",
+      "url": "https://www.psfashion.com/rs/sr/",
+      "snippet": "PS Fashion – ženska odeća, obuća i aksesoari online. Elegantni, poslovni i svakodnevni stilovi za svaku priliku, uz brzu isporuku."
+    },
+    {
+      "title": "PS Fashion BiH | Ženska moda online",
+      "url": "https://www.psfashion.com/ba/bs/",
+      "snippet": "PS Fashion BiH – ženska odjeća, obuća i aksesoari online. Elegantni, poslovni i svakodnevni stilovi, uz dostavu širom BiH."
+    },
+    {
+      "title": "P.S. fashion BiH - Facebook",
+      "url": "https://www.facebook.com/PSfashionBiH/",
+      "snippet": "Prodajna mjesta u BiH: Bijeljina, Banja Luka, Brčko, Bihać, Vitez, D... See more. Jedna haljina, dva detalja. Braon midi sa pojasom, …"
+    },
+    {
+      "title": "PS Fashion - Remiks.com",
+      "url": "https://remiks.com/brendovi/ps-fashion/",
+      "snippet": "PS Fashion dostupan i na Remiksu – izaberi omiljene komade domaćeg brenda i naruči online!"
+    },
+    {
+      "title": "P....S....fashion | Cacak - Facebook",
+      "url": "https://www.facebook.com/PSfashion/",
+      "snippet": "MIDSEASON OFFER Još više modela iz nove kolekcije sada je deo međusezonske ponude. Otkrijte odabrane modele iz kolekcije …"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "SeraXu/text2vec-base-chinese",
+  "slug": "seraxu-text2vec-base-chinese",
+  "author": "SeraXu",
+  "url": "https://huggingface.co/SeraXu/text2vec-base-chinese",
+  "created_at": "2026-09-18T01:49:10.000Z",
+  "updated_at": "2026-09-18T01:49:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "pytorch",
+    "onnx",
+    "safetensors",
+    "openvino",
+    "bert",
+    "Sentence Transformers",
+    "sentence-similarity",
+    "zh",
+    "dataset:shibing624/nli_zh",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 102268160,
+  "parameters_human": "102.3M",
+  "storage_bytes": 1938220024,
+  "storage_human": "1.9 GB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Alphawin",
+      "url": "https://alphawin.bg/",
+      "snippet": "Alphawin ... Alphawin"
+    },
+    {
+      "title": "Alphawin - Login",
+      "url": "https://punkt.alphawin.bg/partner/",
+      "snippet": "Парола Powered by Alphabet Gaming Ltd © 2024 - 2026"
+    },
+    {
+      "title": "Alphawin - Виртуални спортове",
+      "url": "https://punkt.alphawin.bg/virtual/?code=alphawin",
+      "snippet": "CASHIER VERSION 1.142.3-3_39.4.3"
+    },
+    {
+      "title": "301 Moved Permanently",
+      "url": "https://alphawin.bg/bg/casino",
+      "snippet": "301 Moved Permanently 301 Moved Permanently cloudflare"
+    },
+    {
+      "title": "Alphawin - Login",
+      "url": "https://affiliates.affiliate.alphawin.bg/",
+      "snippet": "Forgotten Username or Password? Resend verification code Unsubscribe from emails"
+    }
+  ]
+}

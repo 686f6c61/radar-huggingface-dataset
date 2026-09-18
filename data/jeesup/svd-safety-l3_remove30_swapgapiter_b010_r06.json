@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l3_remove30_swapgapiter_b010_r06",
+  "slug": "jeesup-svd-safety-l3_remove30_swapgapiter_b010_r06",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l3_remove30_swapgapiter_b010_r06",
+  "created_at": "2026-09-18T00:06:55.000Z",
+  "updated_at": "2026-09-18T00:13:30.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama3",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Meta-Llama-3-8B-Instruct",
+    "base_model:finetune:meta-llama/Meta-Llama-3-8B-Instruct",
+    "license:llama3",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766337,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Meta-Llama-3-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amazon.de: Günstige Preise für Elektronik & Foto, Filme, Musik, Bücher ...",
+      "url": "https://www.amazon.de/",
+      "snippet": "Entdecken, shoppen und einkaufen bei Amazon.de: Günstige Preise für Elektronik & Foto, Filme, Musik, Bücher, Games, Spielzeug, …"
+    },
+    {
+      "title": "Prime Day 2026 | Amazon.de",
+      "url": "https://www.amazon.de/primeday/",
+      "snippet": "Der Prime Day ist Amazons jährliches Shopping-Event, das vom 23. bis 26. Juni exklusiv für Prime-Mitglieder stattfindet und vier …"
+    },
+    {
+      "title": "Anmeldung bei Amazon Business",
+      "url": "https://business.amazon.de/de/login",
+      "snippet": "Sichern Sie sich exklusive Angebote und Mengenrabatte! Melden Sie sich bei Ihrem Amazon Business-Konto an und sparen Sie …"
+    },
+    {
+      "title": "Die Vorteile von Online-Bezahlsystemen | Amazon Pay",
+      "url": "https://pay.amazon.de/",
+      "snippet": "Entdecke Amazon Pay, das Online-Bezahlsystem von Amazon. Mit diesem System ist das Online-Bezahlen für deine Kunden …"
+    },
+    {
+      "title": "Warehouse Associate Jobs | Hourly Roles | Amazon Germany",
+      "url": "https://jobs.amazon.de/en-DE",
+      "snippet": "Join Amazon and become part of our world-class team. Discover fulfillment center job opportunities and apply today!"
+    }
+  ]
+}

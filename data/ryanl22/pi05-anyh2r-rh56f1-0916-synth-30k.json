@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "RyanL22/pi05-anyh2r-rh56f1-0916-synth-30k",
+  "slug": "ryanl22-pi05-anyh2r-rh56f1-0916-synth-30k",
+  "author": "RyanL22",
+  "url": "https://huggingface.co/RyanL22/pi05-anyh2r-rh56f1-0916-synth-30k",
+  "created_at": "2026-09-17T20:06:55.000Z",
+  "updated_at": "2026-09-17T20:08:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "openarm",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 9354055368,
+  "storage_human": "9.4 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "如何看待GPT-6 （Astra）？ - 知乎",
+      "url": "https://www.zhihu.com/question/2070082903229347029",
+      "snippet": "GPT-6 的产出有着丰富的喷发层次，特别是岩浆沿着山坡的流动感。 我只能说，在这个案例上，GPT-6 扎扎实实的把 Fable 5.1 锤爆 …"
+    },
+    {
+      "title": "GPT image 2.5发布，如何评价这一模型？",
+      "url": "https://www.zhihu.com/question/2080851669617734486",
+      "snippet": "Sep 8, 2026 · GPT-Image-2.5 Sunburst： 更偏向高质量和精细控制，生成时间会更长，但在复杂编辑、多轮修改和成片级视觉效果上 …"
+    },
+    {
+      "title": "Discover gists · GitHub",
+      "url": "https://gist.github.com/",
+      "snippet": "21 hours ago · GitHub Gist: instantly share code, notes, and snippets."
+    },
+    {
+      "title": "GitHub - RVC-Boss/GPT-SoVITS: 1 min voice data can also be used to ...",
+      "url": "https://github.com/RVC-Boss/GPT-SoVITS",
+      "snippet": "1 min voice data can also be used to train a good TTS model! (few shot voice cloning) - RVC-Boss/GPT-SoVITS"
+    },
+    {
+      "title": "GitHub - MuiseDestiny/zotero-gpt: GPT Meet Zotero.",
+      "url": "https://github.com/MuiseDestiny/zotero-gpt",
+      "snippet": "GPT Tag Recommendation Automatically create tags for entries: open and copy then open Zotero, this tag will be automatically …"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "AeoniaOps/huck-finn-voice",
+  "slug": "aeoniaops-huck-finn-voice",
+  "author": "AeoniaOps",
+  "url": "https://huggingface.co/AeoniaOps/huck-finn-voice",
+  "created_at": "2026-09-17T22:36:54.000Z",
+  "updated_at": "2026-09-17T23:52:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "hf_jobs",
+    "trl",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-4B-Instruct-2507",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 540052124,
+  "storage_human": "540 MB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wikipedia.de - Wikipedia, die freie Enzyklopädie",
+      "url": "https://www.wikipedia.de/",
+      "snippet": "Die Hauptseite der deutschsprachigen Wikipedia finden Sie unter https://de.wikipedia.org. Einstellungen"
+    },
+    {
+      "title": "Wikipedia",
+      "url": "https://www.wikipedia.org/",
+      "snippet": "Wikipedia is a free online encyclopedia, created and edited by volunteers around the world and hosted by the Wikimedia Foundation."
+    },
+    {
+      "title": "Wikipedia, la enciclopedia libre",
+      "url": "https://es.wikipedia.org/wiki/Wikipedia:Portada",
+      "snippet": "Wikipedia es uno de los proyectos Wikimedia, de contenido libre y administrados técnicamente por la Fundación Wikimedia, una …"
+    },
+    {
+      "title": "Wikipedia, the free encyclopedia",
+      "url": "https://en.wikipedia.org/wiki/Main_Page",
+      "snippet": "Wikipedia is written by volunteer editors and hosted by the Wikimedia Foundation, a non-profit organization that also hosts a range of …"
+    },
+    {
+      "title": "Wikipedia - Wikipedia, la enciclopedia libre",
+      "url": "https://es.wikipedia.org/wiki/Wikipedia",
+      "snippet": "En enero de 2023, Wikipedia actualizó su interfaz de escritorio por primera vez desde 2012."
+    }
+  ]
+}

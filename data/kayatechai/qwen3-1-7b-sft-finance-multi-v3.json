@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "KayaTechAI/Qwen3-1.7B-SFT-Finance-Multi-v3",
+  "slug": "kayatechai-qwen3-1-7b-sft-finance-multi-v3",
+  "author": "KayaTechAI",
+  "url": "https://huggingface.co/KayaTechAI/Qwen3-1.7B-SFT-Finance-Multi-v3",
+  "created_at": "2026-09-17T20:27:16.000Z",
+  "updated_at": "2026-09-17T20:27:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen3",
+    "trl",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 150935999,
+  "storage_human": "151 MB",
+  "base_model": "unsloth/qwen3-1.7b-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Apple TV",
+      "url": "https://tv.apple.com/fr",
+      "snippet": "Parcourez tous les films, séries TV et plus sur Apple TV. Regardez les créations Apple Originals ici et sur l’app Apple TV sur tous vos …"
+    },
+    {
+      "title": "Apple TV",
+      "url": "https://tv.apple.com/gb",
+      "snippet": "Browse all movies, TV shows and more from Apple TV. Watch all Apple Originals here and on the Apple TV app across your devices."
+    },
+    {
+      "title": "Apple TV",
+      "url": "https://tv.apple.com/se",
+      "snippet": "Bläddra bland alla filmer, TV‑program och mycket mer från Apple TV. Titta på alla Apple Originals här och i Apple TV-appen på alla …"
+    },
+    {
+      "title": "Apple TV",
+      "url": "https://tv.apple.com/es",
+      "snippet": "Explora las películas, series y mucho más de Apple TV. Disfruta los Apple Originals aquí o en la app Apple TV en cualquier dispositivo."
+    },
+    {
+      "title": "Apple TV",
+      "url": "https://tv.apple.com/it",
+      "snippet": "Esplora film, programmi TV e altro ancora con Apple TV. Guarda tutti gli Apple Original qui e sull’app Apple TV su tutti i tuoi dispositivi."
+    }
+  ]
+}

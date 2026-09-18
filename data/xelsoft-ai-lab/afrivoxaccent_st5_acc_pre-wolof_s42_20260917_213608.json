@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "xelsoft-ai-lab/AfriVoxAccent_ST5_acc_pre-wolof_s42_20260917_213608",
+  "slug": "xelsoft-ai-lab-afrivoxaccent_st5_acc_pre-wolof_s42_20260917_213608",
+  "author": "xelsoft-ai-lab",
+  "url": "https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_ST5_acc_pre-wolof_s42_20260917_213608",
+  "created_at": "2026-09-17T23:28:54.000Z",
+  "updated_at": "2026-09-17T23:29:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "speecht5",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 144437730,
+  "parameters_human": "144.4M",
+  "storage_bytes": 578043218,
+  "storage_human": "578 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Don't Toy with Me, Miss Nagatoro Videos | rulevid.org",
+      "url": "https://rulevid.org/categories/dont-toy-with-me-miss-nagatoro",
+      "snippet": "Browse Don't Toy with Me, Miss Nagatoro videos on rulevid.org. 38 videos available."
+    },
+    {
+      "title": "Top NSFW games tagged naruto - itch.io",
+      "url": "https://itch.io/games/nsfw/tag-naruto",
+      "snippet": "Explore NSFW games tagged naruto on itch.io · Upload your NSFW games to itch.io to have them show up here. New itch.io is now …"
+    },
+    {
+      "title": "Top games tagged nagatoro - itch.io",
+      "url": "https://itch.io/games/tag-nagatoro",
+      "snippet": "Explore games tagged nagatoro on itch.io · Upload your games to itch.io to have them show up here."
+    },
+    {
+      "title": "The Nagatoro Saga - Jeu vidéo - SensCritique",
+      "url": "https://www.senscritique.com/jeuvideo/The_Nagatoro_Saga/38190708",
+      "snippet": "The Nagatoro Saga est un jeu vidéo de Nanashi (774) et Little White ..."
+    },
+    {
+      "title": "hayase nagatoro, 2boys - Rule 34 World",
+      "url": "https://rule34.world/hayase_nagatoro%7C2boys",
+      "snippet": "Rule 34 - If it exists, there is porn of it. We aspire to be the biggest image archive of rule34 content."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "deevo-arch/qwen2.5-heritage-india-7b-gguf",
+  "slug": "deevo-arch-qwen2-5-heritage-india-7b-gguf",
+  "author": "deevo-arch",
+  "url": "https://huggingface.co/deevo-arch/qwen2.5-heritage-india-7b-gguf",
+  "created_at": "2026-09-17T20:00:54.000Z",
+  "updated_at": "2026-09-17T21:22:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "ollama",
+    "text-generation",
+    "heritage",
+    "india",
+    "base_model:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 8098525120,
+  "storage_human": "8.1 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Easy Fish Tacos Recipe - Simply Recipes",
+      "url": "https://www.simplyrecipes.com/recipes/fish_tacos/",
+      "snippet": "Jun 30, 2026 · But there really is only one kind of fish taco that I routinely make myself at home: these easy pan-seared fish tacos …"
+    },
+    {
+      "title": "Fish Tacos Recipe with Best Fish Taco Sauce!",
+      "url": "https://natashaskitchen.com/fish-tacos-recipe/",
+      "snippet": "Aug 2, 2017 · This is our go-to recipe for family get togethers and company because it comes together quickly and it always gets rave …"
+    },
+    {
+      "title": "Fish Tacos Recipe",
+      "url": "https://www.allrecipes.com/recipe/53729/fish-tacos/",
+      "snippet": "Mar 11, 2026 · You don’t have to leave your house to enjoy delicious fish tacos! This recipe makes perfectly seasoned, beer-battered …"
+    },
+    {
+      "title": "Best Fish Taco Recipe - Delish",
+      "url": "https://www.delish.com/cooking/recipe-ideas/a53296/easy-fish-taco-recipe/",
+      "snippet": "Aug 27, 2025 · Our easy fish tacos recipe results in the most flavorful, flaky tacos with very little work involved. Skip going out—make …"
+    },
+    {
+      "title": "Fish Tacos - Allrecipes",
+      "url": "https://www.allrecipes.com/recipes/16562/world-cuisine/latin-american/mexican/main-dishes/tacos/fish/",
+      "snippet": "From tilapia fish tacos to baja-style fish tacos with a creamy white sauce, explore our best and tastiest recipes!"
+    }
+  ]
+}

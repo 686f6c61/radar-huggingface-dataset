@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "hab-swe/Qwen3.8-27B-MedCLI-V2-Coverage-CMT-EHRDQ-CT-SFT-LR-1en5",
+  "slug": "hab-swe-qwen3-8-27b-medcli-v2-coverage-cmt-ehrdq-ct-sft-lr-1en5",
+  "author": "hab-swe",
+  "url": "https://huggingface.co/hab-swe/Qwen3.8-27B-MedCLI-V2-Coverage-CMT-EHRDQ-CT-SFT-LR-1en5",
+  "created_at": "2026-09-17T23:04:55.000Z",
+  "updated_at": "2026-09-17T23:21:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 54726417280,
+  "storage_human": "54.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Définition de hab | Dictionnaire français - La langue française",
+      "url": "https://www.lalanguefrancaise.com/dictionnaire/definition/hab",
+      "snippet": "Le mot « hab » est une abréviation du terme habitant. Il désigne toute personne qui vit et occupe un espace géographique précis, tel …"
+    },
+    {
+      "title": "Définition : hab - Le dictionnaire Cordial, Dictionnaire de français, nom",
+      "url": "https://www.cordial.fr/dictionnaire/definition/hab.php",
+      "snippet": "hab - Définition en français : définitions de hab, synonymes de hab, difficultés, lexique, nom. Que signifie hab ?"
+    },
+    {
+      "title": "Librairie HAB (@librairie.hab) • Instagram photos and videos",
+      "url": "https://www.instagram.com/librairie.hab/",
+      "snippet": "7,000 Followers, 2,932 Following, 349 Posts - Librairie HAB (@librairie.hab) on Instagram: \"☆ exposition 𝙄𝙣𝙩𝙚𝙧𝙨𝙩𝙚𝙡𝙡𝙖𝙧 du 23/05 au 27/09 ☄️ …"
+    },
+    {
+      "title": "HAB - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/HAB",
+      "snippet": "This disambiguation page lists articles associated with the title HAB. If an internal link incorrectly led you here, you may wish to …"
+    },
+    {
+      "title": "Que signifie HAB? - Abbreviation Finder",
+      "url": "https://www.abbreviationfinder.org/fr/acronyms/hab.html",
+      "snippet": "En résumé, HAB est une abréviation qui peut désigner différents termes selon le contexte, et son interprétation peut varier selon …"
+    }
+  ]
+}

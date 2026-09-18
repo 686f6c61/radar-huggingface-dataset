@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "SaFD-00/qwen2.5-vl-3b-ac-exp09-media-world-model-stage1-lora-epoch2",
+  "slug": "safd-00-qwen2-5-vl-3b-ac-exp09-media-world-model-stage1-lora-epoch2",
+  "author": "SaFD-00",
+  "url": "https://huggingface.co/SaFD-00/qwen2.5-vl-3b-ac-exp09-media-world-model-stage1-lora-epoch2",
+  "created_at": "2026-09-18T00:35:00.000Z",
+  "updated_at": "2026-09-18T00:36:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2_5_vl",
+    "image-text-to-text",
+    "llama-factory",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3754622976,
+  "parameters_human": "3.75B",
+  "storage_bytes": 7520759840,
+  "storage_human": "7.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "QUERY function - Google Docs Editors Help",
+      "url": "https://support.google.com/docs/answer/3093343?hl=en",
+      "snippet": "QUERY function Runs a Google Visualization API Query Language query across data. Sample Usage QUERY (A2:E6,\"select avg (A) …"
+    },
+    {
+      "title": "Query with a filter (or) if function - Google Help",
+      "url": "https://support.google.com/docs/thread/7990162/query-with-a-filter-or-if-function?hl=en",
+      "snippet": "Jun 13, 2019 · I have tried adding an IF clause, also FILTER (NOT (ISBLANK) but i'm not very good with the filter clause yet, am i on …"
+    },
+    {
+      "title": "QUERY - เครื่องมือแก้ไข Google เอกสาร ความช่วยเหลือ",
+      "url": "https://support.google.com/docs/answer/3093343?hl=th",
+      "snippet": "เรียกใช้การค้นหาของ Google Visualization API Query Language จากข้อมูลทั้งหมด ตัวอย่างการใช้งาน QUERY (A2:E6,\"select avg (A) pivot …"
+    },
+    {
+      "title": "How to select Text and Number values together when using Query …",
+      "url": "https://support.google.com/docs/thread/100952191/how-to-select-text-and-number-values-together-when-using-query-function?hl=en",
+      "snippet": "Mar 5, 2021 · I want the query function in sheet 2 to bring both Text and Number grades value as they were originally written in …"
+    },
+    {
+      "title": "QUERY 関数 - Google ドキュメント エディタ ヘルプ",
+      "url": "https://support.google.com/docs/answer/3093343?hl=ja",
+      "snippet": "QUERY 関数 Google Visualization API のクエリ言語を使用して、データ全体に対するクエリを実行します。 使用例 QUERY …"
+    }
+  ]
+}

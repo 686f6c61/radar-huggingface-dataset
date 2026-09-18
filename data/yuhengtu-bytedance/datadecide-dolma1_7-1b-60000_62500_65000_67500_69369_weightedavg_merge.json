@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "yuhengtu-bytedance/DataDecide-dolma1_7-1B-60000_62500_65000_67500_69369_weightedavg_merge",
+  "slug": "yuhengtu-bytedance-datadecide-dolma1_7-1b-60000_62500_65000_67500_69369_weightedavg_merge",
+  "author": "yuhengtu-bytedance",
+  "url": "https://huggingface.co/yuhengtu-bytedance/DataDecide-dolma1_7-1B-60000_62500_65000_67500_69369_weightedavg_merge",
+  "created_at": "2026-09-17T22:11:25.000Z",
+  "updated_at": "2026-09-17T22:11:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "arxiv:2203.05482",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1279854592,
+  "parameters_human": "1.28B",
+  "storage_bytes": 2559726104,
+  "storage_human": "2.6 GB",
+  "base_model": "",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "请问standby 和 stand by 的区别。 是否都有待命的意思呢？",
+      "url": "https://zhidao.baidu.com/question/540384421.html",
+      "snippet": "standby 和 stand by 主要是语义不同。 1、standby 做名词时n.意思是：后备人员; 备用物品; 最后时刻出售的。 例句：Canned …"
+    },
+    {
+      "title": "俄罗斯搜索引擎网址 yandex官网入口直达 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/725567645356284605.html",
+      "snippet": "Nov 11, 2025 · 俄罗斯搜索引擎网址 yandex官网入口直达Yandex的官方网址如下：国际版入口：https://yandex.com/俄罗斯本土版入 …"
+    },
+    {
+      "title": "笔记本外接显示器间歇性黑屏是什么原因？ - 知乎",
+      "url": "https://www.zhihu.com/question/52890380",
+      "snippet": "最近发现有很多朋友有类似的问题，那我就较为系统地说一说我遇到的问题和解决方案。 问题描述： 华硕飞行堡垒笔记本电脑，通 …"
+    },
+    {
+      "title": "steam上的wallpaper engine下载的壁纸是保存在哪个文件夹呀？",
+      "url": "https://www.zhihu.com/question/53942965?write",
+      "snippet": "找不到~ 然后选中在资源管理器打开 最后进去文件夹，选择mp4文件或者jpg/png文件 新人答题求赞。 更新一波，如果文件是 pkg 的小 …"
+    },
+    {
+      "title": "在IC中“Standby Current”是什么意思 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/114129884.html",
+      "snippet": "Aug 26, 2009 · 在IC中“Standby Current”是什么意思Standby Current是待机电流的意思。"
+    }
+  ]
+}

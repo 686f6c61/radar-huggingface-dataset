@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "yusr9/flaird-modernbert-large-attention-single-task-frozen",
+  "slug": "yusr9-flaird-modernbert-large-attention-single-task-frozen",
+  "author": "yusr9",
+  "url": "https://huggingface.co/yusr9/flaird-modernbert-large-attention-single-task-frozen",
+  "created_at": "2026-09-17T22:08:25.000Z",
+  "updated_at": "2026-09-17T22:08:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "flaird",
+    "text-classification",
+    "custom_code",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": 402407681,
+  "parameters_human": "402.4M",
+  "storage_bytes": 1609655684,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kelsey D. Phipps - Trial Attorney at Kelsey Phipps Law | LinkedIn",
+      "url": "https://www.linkedin.com/in/kelseydphipps",
+      "snippet": "Trial Attorney at Kelsey Phipps Law · For the past two decades, Kelsey has worked exclusively in public service and the public …"
+    },
+    {
+      "title": "Fundraiser by Kelsey Phipps : Help Get Kelsey Back to Work",
+      "url": "https://www.gofundme.com/f/help-get-kelsey-back-to-work",
+      "snippet": "As many of you know, I am a criminal defense attorney for the indigent in Washington, D.C. and I consider this mission-driven civil …"
+    },
+    {
+      "title": "Kelsey Phipps Email & Phone Number - ContactOut",
+      "url": "https://contactout.com/kelsey-d-phipps-78991",
+      "snippet": "To contact Kelsey D Phipps send an email to kelseyphipps@gmail.com. If you want to call Kelsey D Phipps try calling on …"
+    },
+    {
+      "title": "Phipps, Kelsey | Kelsey Phipps Law - CAGE.report",
+      "url": "https://cage.report/DUNS/117035150",
+      "snippet": "DUNS registration and contact information for . Location, website, and products offered. Doing business as Kelsey Phipps Law"
+    },
+    {
+      "title": "www.kelseyphipps.com",
+      "url": "http://www.kelseyphipps.com/",
+      "snippet": ""
+    }
+  ]
+}

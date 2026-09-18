@@ -1,0 +1,106 @@
+{
+  "schema": 1,
+  "id": "Litwein/Qwen3.8-Flash-Next-REAP320-oQ3e-fp16-DWQ-MTP-Vision-MTPLX",
+  "slug": "litwein-qwen3-8-flash-next-reap320-oq3e-fp16-dwq-mtp-vision-mtplx",
+  "author": "Litwein",
+  "url": "https://huggingface.co/Litwein/Qwen3.8-Flash-Next-REAP320-oQ3e-fp16-DWQ-MTP-Vision-MTPLX",
+  "created_at": "2026-09-17T22:47:39.000Z",
+  "updated_at": "2026-09-18T05:23:52.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "ru"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen4_exp",
+    "mtplx",
+    "fp16",
+    "apple-silicon",
+    "m1",
+    "m2",
+    "oq",
+    "reap",
+    "expert-pruning",
+    "dwq",
+    "m4q",
+    "quantization",
+    "3-bit",
+    "mixed-precision",
+    "mtp",
+    "speculative-decoding",
+    "self-distillation",
+    "qwen3.8",
+    "moe",
+    "image-text-to-text",
+    "vision",
+    "multimodal",
+    "conversational",
+    "en",
+    "ru",
+    "dataset:SWE-bench/SWE-smith-trajectories",
+    "dataset:open-thoughts/OpenThoughts-114k",
+    "dataset:open-r1/OpenR1-Math-220k",
+    "dataset:bigcode/self-oss-instruct-sc2-exec-filter-50k",
+    "dataset:open-r1/verifiable-coding-problems-python_decontaminated-tested-shuffled",
+    "dataset:nvidia/OpenCodeReasoning",
+    "dataset:allenai/tulu-3-sft-mixture",
+    "dataset:HuggingFaceM4/ChartQA",
+    "dataset:HuggingFaceM4/DocumentVQA",
+    "dataset:agentsea/wave-ui-25k",
+    "dataset:lmms-lab/textvqa",
+    "dataset:detection-datasets/coco",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 80870508691,
+  "parameters_human": "80.87B",
+  "storage_bytes": 72523641272,
+  "storage_human": "72.5 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/",
+      "snippet": "Google's service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other …"
+    },
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.nl/",
+      "snippet": "Deze kosteloze service van Google kan woorden, zinnen en webpagina's onmiddellijk vertalen tussen het Nederlands en meer dan …"
+    },
+    {
+      "title": "DeepL Translate: The world's most accurate translator",
+      "url": "https://www.deepl.com/en/translator",
+      "snippet": "Translate texts & full document files instantly. Accurate translations for individuals and Teams. Millions translate with DeepL every day."
+    },
+    {
+      "title": "De DeepL Translator | De meest accurate vertaler ter wereld",
+      "url": "https://www.deepl.com/nl/translator",
+      "snippet": "Vertaal teksten en volledige documenten in een handomdraai. Nauwkeurige vertalingen voor individuele gebruikers en teams. …"
+    },
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.nl/details",
+      "snippet": "Google Translate biedt gratis tekstvertaling aan tussen meer dan 100 talen."
+    }
+  ]
+}

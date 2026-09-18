@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "dilarayavuz/generated-sst2-stylebkd-bert-lr5",
+  "slug": "dilarayavuz-generated-sst2-stylebkd-bert-lr5",
+  "author": "dilarayavuz",
+  "url": "https://huggingface.co/dilarayavuz/generated-sst2-stylebkd-bert-lr5",
+  "created_at": "2026-09-17T20:30:08.000Z",
+  "updated_at": "2026-09-17T20:31:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "autotrain",
+    "base_model:google-bert/bert-base-uncased",
+    "base_model:finetune:google-bert/bert-base-uncased",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109483778,
+  "parameters_human": "109.5M",
+  "storage_bytes": 1314043945,
+  "storage_human": "1.3 GB",
+  "base_model": "google-bert/bert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Enable or Disable Show more tiles on Start in Windows 10",
+      "url": "https://www.tenforums.com/tutorials/118387-enable-disable-show-more-tiles-start-windows-10-a.html",
+      "snippet": "May 21, 2021 · Starting with Windows 10 build 10547, a Show more tiles on Start setting has been added to be able to do this now. . …"
+    },
+    {
+      "title": "Add, Remove, and Name a Group of App Tiles on Start in Windows 10",
+      "url": "https://www.tenforums.com/tutorials/4476-add-remove-name-group-app-tiles-start-windows-10-a.html",
+      "snippet": "Feb 25, 2020 · How to Add, Remove, and Name a Group of App Tiles on Start in Windows 10 Once you pin to Start items, you can …"
+    },
+    {
+      "title": "Open and Use Character Map in Windows | Tutorials - Ten Forums",
+      "url": "https://www.tenforums.com/tutorials/125184-open-use-character-map-windows.html",
+      "snippet": "Mar 13, 2020 · Hello mate, Not by default, but you could create a Character Map shortcut, keep it on either your desktop, taskbar, and …"
+    },
+    {
+      "title": "Turn On or Off App Suggestions in Start in Windows 10",
+      "url": "https://www.tenforums.com/tutorials/24117-turn-off-app-suggestions-start-windows-10-a.html",
+      "snippet": "Dec 1, 2019 · These suggested apps in your Start menu and pinned to your Start screen are basically just advertising. This tutorial …"
+    },
+    {
+      "title": "Switch User entry missing from Start Menu - Windows 10 Help Forums",
+      "url": "https://www.tenforums.com/user-accounts-family-safety/156160-switch-user-entry-missing-start-menu.html",
+      "snippet": "May 11, 2020 · Switch User entry missing from Start Menu This may sound like a repeat of a previous post but I'm pretty certain it …"
+    }
+  ]
+}

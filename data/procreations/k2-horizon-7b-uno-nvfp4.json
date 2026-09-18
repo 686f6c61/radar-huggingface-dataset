@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "ProCreations/K2-Horizon-7B-Uno-NVFP4",
+  "slug": "procreations-k2-horizon-7b-uno-nvfp4",
+  "author": "ProCreations",
+  "url": "https://huggingface.co/ProCreations/K2-Horizon-7B-Uno-NVFP4",
+  "created_at": "2026-09-17T20:37:42.000Z",
+  "updated_at": "2026-09-17T21:12:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "k2_horizon",
+    "nvfp4",
+    "modelopt",
+    "uno",
+    "diffusion-language-model",
+    "conditional-lora",
+    "tool-use",
+    "blackwell",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "base_model:IFM/K2-Horizon-7B",
+    "base_model:quantized:IFM/K2-Horizon-7B",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5526294528,
+  "parameters_human": "5.53B",
+  "storage_bytes": 9431336460,
+  "storage_human": "9.4 GB",
+  "base_model": "IFM/K2-Horizon-7B, IFM/K2-Horizon-7B-Uno",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reality Kings: Vidéos XXX en Full HD Gratuites | TuKif",
+      "url": "https://tukif.porn/studios/3/realitykings.html",
+      "snippet": "Du porno de qualité en HD chez Reality Kings est là pour vous! Plusieurs milliers de vidéos et bien évidemment d’actrices toutes plus …"
+    },
+    {
+      "title": "Aj Applegate va gicler dans cette vidéo de Realitykings",
+      "url": "https://tukif.porn/videos/104210/aj-applegate-va-gicler-dans-cette-video-de-realitykings.html",
+      "snippet": "Realitykings nous offre toujours les meilleures vidéos de squirting. Ne manquez pas Aj Applegate qui se fait baiser comme elle le …"
+    },
+    {
+      "title": "Reality Kings Vidéos xxx - ICM Registry",
+      "url": "https://fr.perfectgirls.xxx/channels/realitykings/",
+      "snippet": "Vidéos porno Reality Kings gratuites. De nouvelles vidéos Reality Kings XXX tous les jours !"
+    },
+    {
+      "title": "VIDÉOS PORNO DE Reality Kings EN HD - PORNDROIDS.COM",
+      "url": "https://www.porndroids.com/fr/chaine/reality-kings/",
+      "snippet": "Reality Kings Numéro Ranking: #13 Se souscrire Visualisée: 83 034 J\\'aime: 56,45% Joindre RealityKings est l'endroit avec plus de 9 …"
+    },
+    {
+      "title": "Reality Kings Vidéos Porno : XXX Sexe Chaud Gratuit ... - xHamster",
+      "url": "https://fra.xhamster.com/channels/reality-kings",
+      "snippet": "Vidéos pornos Reality Kings gratuites de realitykings.com. Découvrez des vidéos de sexe Reality Kings avec des stars du porno qui …"
+    }
+  ]
+}

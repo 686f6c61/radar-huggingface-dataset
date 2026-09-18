@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ItsnotAilabs/medina-system-one",
+  "slug": "itsnotailabs-medina-system-one",
+  "author": "ItsnotAilabs",
+  "url": "https://huggingface.co/ItsnotAilabs/medina-system-one",
+  "created_at": "2026-09-17T21:36:00.000Z",
+  "updated_at": "2026-09-17T21:36:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "medina-system-one",
+  "languages": [],
+  "tags": [
+    "medina-system-one",
+    "agent",
+    "system-one",
+    "mycelium",
+    "sovereign",
+    "typed-decisions",
+    "qwen",
+    "open-weights",
+    "text-classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-18T02:48:35.350Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LA Clippers Roster 2025–26 | Players, Stats & Bios - NBA.com",
+      "url": "https://www.nba.com/clippers/roster",
+      "snippet": "Explore the LA Clippers roster for the 2025–26 season. View player stats, positions, bios, and the latest team lineup."
+    },
+    {
+      "title": "LA Clippers | Tickets, Schedule, Roster & News - NBA.com",
+      "url": "https://www.nba.com/clippers/",
+      "snippet": "The official site of the LA Clippers. Find the latest schedule, buy tickets, view the roster, and get team news, stats, and updates."
+    },
+    {
+      "title": "NBA Jerseys, NBA Nike Apparel, NBA Merchandise | The Official NBA …",
+      "url": "https://store.nba.com/",
+      "snippet": "Score official NBA Gear, NBA Nike Jerseys, NBA Apparel & Memorabilia and other NBA products for all 30 teams. Official NBA Gear …"
+    },
+    {
+      "title": "The official site of the NBA G League",
+      "url": "https://gleague.nba.com/",
+      "snippet": "The official site of the NBA G League. Follow the action on G League scores, schedules, stats, news, and Team and Player news."
+    },
+    {
+      "title": "Coachella Valley Lakers",
+      "url": "https://coachellavalley.gleague.nba.com/",
+      "snippet": "The Los Angeles Lakers are relocating their NBA G League team to the Greater Palm Springs region in California, where it will be …"
+    }
+  ]
+}

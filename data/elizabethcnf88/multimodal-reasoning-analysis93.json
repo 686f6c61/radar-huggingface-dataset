@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "elizabethcnf88/multimodal-reasoning-analysis93",
+  "slug": "elizabethcnf88-multimodal-reasoning-analysis93",
+  "author": "elizabethcnf88",
+  "url": "https://huggingface.co/elizabethcnf88/multimodal-reasoning-analysis93",
+  "created_at": "2026-09-17T23:18:09.000Z",
+  "updated_at": "2026-09-17T23:18:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "multimodal-reasoning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jack Reacher: Never Go Back - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Jack_Reacher:_Never_Go_Back",
+      "snippet": "Jack Reacher: Never Go Back is a 2016 American action-thriller film directed by Edward Zwick, written by Richard Wenk, Zwick, and …"
+    },
+    {
+      "title": "Jack Reacher: Never Go Back (2016) - IMDb",
+      "url": "https://m.imdb.com/title/tt3393786",
+      "snippet": "Jack Reacher: Never Go Back: Directed by Edward Zwick. With Tom Cruise, Cobie Smulders, Aldis Hodge, Danika Yarosh. …"
+    },
+    {
+      "title": "Watch Jack Reacher: Never Go Back | Netflix",
+      "url": "https://www.netflix.com/title/80106762",
+      "snippet": "When he learns that his friend has been accused of murder, Jack Reacher suspects a vast conspiracy — and soon finds himself on …"
+    },
+    {
+      "title": "Jack Reacher: Never Go Back (2016) - Full cast & crew - IMDb",
+      "url": "https://m.imdb.com/title/tt3393786/fullcredits/",
+      "snippet": "Jack Reacher: Never Go Back (2016) - Cast and crew credits, including actors, actresses, directors, writers and more."
+    },
+    {
+      "title": "Jack Reacher: Never Go Back - YouTube",
+      "url": "https://m.youtube.com/watch?v=LHyc_ugEUmk",
+      "snippet": "Jack Reacher returns to enforce his bold brand of justice in the action-packed sequel based on Lee Child’s best-selling Jack Reacher …"
+    }
+  ]
+}

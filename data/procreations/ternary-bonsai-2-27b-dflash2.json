@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "ProCreations/Ternary-Bonsai-2-27B-DFlash2",
+  "slug": "procreations-ternary-bonsai-2-27b-dflash2",
+  "author": "ProCreations",
+  "url": "https://huggingface.co/ProCreations/Ternary-Bonsai-2-27B-DFlash2",
+  "created_at": "2026-09-17T23:36:08.000Z",
+  "updated_at": "2026-09-18T19:36:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "qwen3",
+    "speculative-decoding",
+    "dflash2",
+    "bonsai",
+    "base_model:prism-ml/Ternary-Bonsai-2-27B-gguf",
+    "base_model:quantized:prism-ml/Ternary-Bonsai-2-27B-gguf",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1924404480,
+  "parameters_human": "1.92B",
+  "storage_bytes": 11959649702,
+  "storage_human": "12.0 GB",
+  "base_model": "prism-ml/Ternary-Bonsai-2-27B-gguf, z-lab/Qwen3.8-27B-DFlash2",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.fr/",
+      "snippet": "Encore plus » Account Options. Connexion; Paramètres de recherche"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=fr",
+      "snippet": "Publicité À propos de Google Google.com in English © 2026 - Confidentialité - Conditions"
+    },
+    {
+      "title": "Google",
+      "url": "http://www.google.gp/?hl=fr",
+      "snippet": "Google disponible en : English Publicité À propos de Google Google.com"
+    },
+    {
+      "title": "Téléchargez Google Chrome, le navigateur plus sécurisé et encore …",
+      "url": "https://www.google.com/intl/fr/chrome/",
+      "snippet": "Gagnez en efficacité grâce au nouveau Chrome, un navigateur Internet plus simple, plus sécurisé et encore plus rapide grâce aux …"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com.nf/webhp?gl=nf&hl=en&gws_rd=cr&pws=0",
+      "snippet": "Advertising Business Solutions About Google Google.com © 2026 - Privacy - Terms"
+    }
+  ]
+}

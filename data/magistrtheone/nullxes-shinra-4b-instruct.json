@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "MagistrTheOne/NULLXES-SHINRA-4B-INSTRUCT",
+  "slug": "magistrtheone-nullxes-shinra-4b-instruct",
+  "author": "MagistrTheOne",
+  "url": "https://huggingface.co/MagistrTheOne/NULLXES-SHINRA-4B-INSTRUCT",
+  "created_at": "2026-09-18T01:52:51.000Z",
+  "updated_at": "2026-09-20T10:41:11.000Z",
+  "license": "nullxes-research",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "nullxes_shinra",
+    "text-generation",
+    "nullxes",
+    "shinra",
+    "causal-lm",
+    "decoder-only",
+    "instruction-tuned",
+    "conversational",
+    "custom_code",
+    "en",
+    "ru",
+    "de",
+    "fr",
+    "es",
+    "zh",
+    "ja",
+    "ko",
+    "ar",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3926076416,
+  "parameters_human": "3.93B",
+  "storage_bytes": 23559344653,
+  "storage_human": "23.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Ferman Timeline - Yazidis.info",
+      "url": "https://yazidis.info/tools/ferman-timeline/",
+      "snippet": "In Yazidi tradition the community counts 72 fermans — genocidal persecutions endured across its history, sometimes reckoned as 73 …"
+    },
+    {
+      "title": "Fermana Football Club - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Fermana_Football_Club",
+      "snippet": "La Fermana Football Club S.r.l.[1], meglio nota come Fermana, è una società calcistica italiana con sede nella città di Fermo. Milita in …"
+    },
+    {
+      "title": "Assassin's Creed Origins | FULL Walkthrough 4K 60FPS | Gennadios the ...",
+      "url": "https://www.youtube.com/watch?v=-P3kdvBqkNY",
+      "snippet": "Apr 6, 2026 · Once you've completed Akra Garrison, focus your attention on Gennadios. We find that the easiest place to eliminate …"
+    },
+    {
+      "title": "Liceo Scientifico Enrico Fermi - Genova - Homepage del portale …",
+      "url": "https://www.fermi.edu.it/",
+      "snippet": "6 days ago · Benvenuti nel sito internet istituzionale di Liceo Scientifico Enrico Fermi - Genova"
+    },
+    {
+      "title": "Cronaca - Tutte le notizie della provincia di Fermo",
+      "url": "https://www.manewsfermano.it/cronaca/",
+      "snippet": "Cronaca Cronaca Truffa con la tecnica del falso maresciallo: ventenne a giudizio FERMO – A Fermo un giovane di 20 anni, originario …"
+    }
+  ]
+}

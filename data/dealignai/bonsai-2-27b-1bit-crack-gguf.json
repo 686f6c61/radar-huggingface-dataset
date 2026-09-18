@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "dealignai/Bonsai-2-27B-1bit-CRACK-GGUF",
+  "slug": "dealignai-bonsai-2-27b-1bit-crack-gguf",
+  "author": "dealignai",
+  "url": "https://huggingface.co/dealignai/Bonsai-2-27B-1bit-CRACK-GGUF",
+  "created_at": "2026-09-17T23:59:09.000Z",
+  "updated_at": "2026-09-18T07:50:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "ternary",
+    "1-bit",
+    "llama-cpp",
+    "cuda",
+    "metal",
+    "on-device",
+    "hybrid-attention",
+    "prismml",
+    "bonsai",
+    "qwen3.5",
+    "abliterated",
+    "uncensored",
+    "crack",
+    "text-generation",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 9,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 11893297856,
+  "storage_human": "11.9 GB",
+  "base_model": "prism-ml/Ternary-Bonsai-2-27B-gguf, Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "video - YouTube",
+      "url": "https://www.youtube.com/Video",
+      "snippet": "Music video by Video feat. Jan Borysewicz performing Kryzysowy. (P) 2013 The copyright in this audiovisual recording is owned by …"
+    },
+    {
+      "title": "- YouTube",
+      "url": "https://www.youtube.com/shorts",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "Movies & TV - YouTube",
+      "url": "https://movies.youtube.com/",
+      "snippet": "Find the latest and greatest movies and shows all available on YouTube.com/movies. From award-winning hits to independent …"
+    },
+    {
+      "title": "Essential '90s R&B - YouTube Music",
+      "url": "https://music.youtube.com/playlist?list=RDCLAK5uy_ne3DJMol0EVIfwcuZnx2hQak0q6EbeBlY",
+      "snippet": "Playlist • YouTube Music R&B defined American mainstream music throughout the '90s. Here are key tracks from R&B's most vital …"
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/uk/",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    }
+  ]
+}

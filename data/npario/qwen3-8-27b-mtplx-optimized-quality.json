@@ -1,0 +1,95 @@
+{
+  "schema": 1,
+  "id": "npario/Qwen3.8-27B-MTPLX-Optimized-Quality",
+  "slug": "npario-qwen3-8-27b-mtplx-optimized-quality",
+  "author": "npario",
+  "url": "https://huggingface.co/npario/Qwen3.8-27B-MTPLX-Optimized-Quality",
+  "created_at": "2026-09-18T00:30:06.000Z",
+  "updated_at": "2026-09-18T00:30:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mtplx",
+  "languages": [],
+  "tags": [
+    "mtplx",
+    "safetensors",
+    "qwen3_5",
+    "mlx",
+    "apple-silicon",
+    "macos",
+    "speculative-decoding",
+    "multi-token-prediction",
+    "qwen",
+    "qwen3.8",
+    "mtp",
+    "local-ai",
+    "coding",
+    "qwen3-8",
+    "qwen-3.8",
+    "local-llm",
+    "llm",
+    "m5",
+    "m5-max",
+    "m4",
+    "m3",
+    "macbook-pro",
+    "mac-studio",
+    "opencode",
+    "claude-code",
+    "27b",
+    "qwen3.8-27b",
+    "qwen3-8-27b",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27356723952,
+  "parameters_human": "27.36B",
+  "storage_bytes": 29972477968,
+  "storage_human": "30.0 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "95er-Forum Fortuna Düsseldorf",
+      "url": "https://www.95erforum.de/forum/",
+      "snippet": "Jul 10, 2011 · 95er-Forum Fortuna Düsseldorf Von Fans für Fans | Gemeinsam für Fortuna"
+    },
+    {
+      "title": "Datenschutzerklärung - 95er-Forum Fortuna Düsseldorf",
+      "url": "https://www.95erforum.de/index.php?datenschutzerklaerung/",
+      "snippet": "Datenschutzerklärung Wir freuen uns sehr über Ihr Interesse an unserem Forum. Datenschutz hat einen besonders hohen …"
+    },
+    {
+      "title": "GBAtemp.net - The Independent Video Game Community",
+      "url": "https://gbatemp.net/",
+      "snippet": "GBAtemp is a user friendly independent video game community with millions of posts about the Nintendo Switch, 3DS, DS, Wii and …"
+    },
+    {
+      "title": "GBAtemp.net",
+      "url": "https://gbatemp.net/threads/cheat-codes-ams-and-sx-os-add-and-request.520293/page-3711",
+      "snippet": ""
+    },
+    {
+      "title": "Impressum - 95er-Forum Fortuna Düsseldorf",
+      "url": "https://www.95erforum.de/index.php?legal-notice/",
+      "snippet": "Haftungsausschluss Haftung für Inhalte Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, …"
+    }
+  ]
+}

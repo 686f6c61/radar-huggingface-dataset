@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "yuhengtu-bytedance/DataDecide-dolma1_7-no-math-code-1B-60000_62500_65000_67500_69369_weightedavg_merge",
+  "slug": "yuhengtu-bytedance-datadecide-dolma1_7-no-math-code-1b-60000_62500_65000_67500_69369_weightedavg_merge",
+  "author": "yuhengtu-bytedance",
+  "url": "https://huggingface.co/yuhengtu-bytedance/DataDecide-dolma1_7-no-math-code-1B-60000_62500_65000_67500_69369_weightedavg_merge",
+  "created_at": "2026-09-17T22:10:42.000Z",
+  "updated_at": "2026-09-17T22:10:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "arxiv:2203.05482",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1279854592,
+  "parameters_human": "1.28B",
+  "storage_bytes": 2559726104,
+  "storage_human": "2.6 GB",
+  "base_model": "",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download …"
+    },
+    {
+      "title": "ChatGPT Nederlands",
+      "url": "https://chatgpt.com/nl-NL/",
+      "snippet": "ChatGPT helpt je antwoorden te krijgen, inspiratie op te doen en productiever te worden."
+    },
+    {
+      "title": "Introducing ChatGPT - OpenAI",
+      "url": "https://openai.com/index/chatgpt/",
+      "snippet": "Nov 30, 2022 · We’ve trained a model called ChatGPT which interacts in a conversational way. The dialogue format makes it …"
+    },
+    {
+      "title": "Maak kennis met ChatGPT | OpenAI",
+      "url": "https://openai.com/nl-NL/index/chatgpt/",
+      "snippet": "Nov 30, 2022 · We hebben een model getraind dat gesprekken kan voeren, genaamd ChatGPT. Dankzij de dialoogvorm kan …"
+    },
+    {
+      "title": "ChatGPT - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/ChatGPT",
+      "snippet": "ChatGPT is a generative AI chatbot developed by OpenAI. Originally released on November 30, 2022, the product uses large …"
+    }
+  ]
+}

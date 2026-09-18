@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Atimz/FINALWORKCODE26",
+  "slug": "atimz-finalworkcode26",
+  "author": "Atimz",
+  "url": "https://huggingface.co/Atimz/FINALWORKCODE26",
+  "created_at": "2026-09-17T21:20:22.000Z",
+  "updated_at": "2026-09-17T22:08:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "image-classification",
+    "pytorch",
+    "computer-vision",
+    "breast-cancer",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 54813323,
+  "storage_human": "55 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jobsuche der BA – Startseite",
+      "url": "https://www.arbeitsagentur.de/jobsuche/",
+      "snippet": "Jobsuche der Bundesagentur für Arbeit. Hier Stellensuche nach neusten Jobs oder Ausbildungsplätzen starten in einer der größten …"
+    },
+    {
+      "title": "Startseite | Bundesagentur für Arbeit",
+      "url": "https://www.arbeitsagentur.de/",
+      "snippet": "Die Website rund ums Leben. Das Webportal der Bundesagentur für Arbeit möchte Menschen in jeder Lebenslage unterstützen. …"
+    },
+    {
+      "title": "arbeitsagentur.de",
+      "url": "http://jobboerse2.arbeitsagentur.de/verbis/login",
+      "snippet": "Benutzername Kennwort"
+    },
+    {
+      "title": "Anmeldung | Bundesagentur für Arbeit",
+      "url": "https://web.arbeitsagentur.de/profil/profil-ui/pd/",
+      "snippet": "Startseite Anmeldung Anmelden Hier können Sie sich für die Online-Angebote der Bundesagentur für Arbeit anmelden. Dazu …"
+    },
+    {
+      "title": "Berufsausbildungsbeihilfe Online",
+      "url": "https://web.arbeitsagentur.de/babonline/ui/pd/",
+      "snippet": "Über die Bundesagentur für Arbeit Kontakt Karriere bei der BA Über uns Veröffentlichungen Presse Themenbereiche Arbeitslos und …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "daisy-zzz/policyweave-piper",
+  "slug": "daisy-zzz-policyweave-piper",
+  "author": "daisy-zzz",
+  "url": "https://huggingface.co/daisy-zzz/policyweave-piper",
+  "created_at": "2026-09-17T23:23:05.000Z",
+  "updated_at": "2026-09-21T02:44:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "policyweave",
+  "languages": [],
+  "tags": [
+    "policyweave",
+    "safetensors",
+    "robotics",
+    "lora",
+    "gr00t",
+    "pi05",
+    "piper",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 21569495407,
+  "storage_human": "21.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Daisy — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/DAISY",
+      "snippet": "Daisy, duo de musique français fondé en 2012, composé de Daisy Berthenet et Léo Chatelier. Renommé Daysy en 2019, c'est sous …"
+    },
+    {
+      "title": "Qu'est-ce qu'un livre audio Daisy ou Full Daisy, et comment l'écouter ?",
+      "url": "https://eole.avh.asso.fr/aide/lire-du-daisy-audio",
+      "snippet": "Le Daisy est un format de livre audio conçu pour faciliter la lecture par des personnes handicapées. Il permet de se déplacer à …"
+    },
+    {
+      "title": "Prénom Daisy (fille) : signification, origine, caractère, sainte, avis",
+      "url": "https://www.journaldesfemmes.fr/prenoms/daisy/prenom-1591",
+      "snippet": "Le prénom Daisy existe depuis le XVIIIe siècle en Angleterre. Il était utilisé pour désigner les femmes connues pour leur gentillesse …"
+    },
+    {
+      "title": "Bellis perennis - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Bellis_perennis",
+      "snippet": "Daisy is used as a feminine name, and sometimes as a nickname for people named Margaret, after the French name for the oxeye …"
+    },
+    {
+      "title": "Daisy (given name) - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Daisy_(given_name)",
+      "snippet": "It was the 294th most common name for all females during the 1990 United States census. Daisy has ranked among the top 100 …"
+    }
+  ]
+}

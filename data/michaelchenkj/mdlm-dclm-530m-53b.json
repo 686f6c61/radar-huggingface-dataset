@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "michaelchenkj/mdlm-dclm-530m-53b",
+  "slug": "michaelchenkj-mdlm-dclm-530m-53b",
+  "author": "michaelchenkj",
+  "url": "https://huggingface.co/michaelchenkj/mdlm-dclm-530m-53b",
+  "created_at": "2026-09-18T00:19:12.000Z",
+  "updated_at": "2026-09-18T00:26:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "mdlm",
+    "diffusion",
+    "dclm",
+    "language-model",
+    "dataset:allenai/DataDecide-data-recipes",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 143748557082,
+  "storage_human": "143.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Milton Leite diz que é inocente, e que vai se apresentar | G1",
+      "url": "https://g1.globo.com/sp/sao-paulo/noticia/2026/09/17/considerado-foragido-milton-leite-diz-que-e-inocente-esta-em-viagem-e-que-vai-se-apresentar-em-ate-24-horas.ghtml",
+      "snippet": "15 hours ago · Ex-vereador de São Paulo nega que tenha fugido para não ser preso, diz que está viajando e que vai se apresentar …"
+    },
+    {
+      "title": "Milton Leite nega estar foragido e diz que vai se apresentar em 24 horas",
+      "url": "https://www.metropoles.com/sao-paulo/milton-leite-diz-vai-se-apresentar-24h",
+      "snippet": "1 day ago · O ex-vereador e presidente do União Brasil em São Paulo, Milton Leite, afirmou ao Metrópoles que “não está foragido” e …"
+    },
+    {
+      "title": "Considerado foragido, Milton Leite nega acusações e diz que se ...",
+      "url": "https://www.estadao.com.br/politica/milton-leite-nega-acusacoes-e-diz-que-esta-em-viagem-vou-me-apresentar-as-autoridades-npr/",
+      "snippet": "14 hours ago · O ex-vereador Milton Leite (União Brasil), alvo de um pedido de prisão temporária na Operação Vectura Corrupta, …"
+    },
+    {
+      "title": "Milton Leite nega acusações e diz que se entregará em até 24 horas",
+      "url": "https://noticias.uol.com.br/politica/ultimas-noticias/2026/09/17/milton-leite-nega-acusacoes-e-diz-que-se-entregara-em-ate-24-horas.ghtm",
+      "snippet": "14 hours ago · Alvo de mandado de prisão por suspeita de envolvimento com o PCC, o ex-presidente da Câmara Municipal de São …"
+    },
+    {
+      "title": "Ex-vereador de São Paulo Milton Leite é considerado foragido após …",
+      "url": "https://cbn.globo.com/sao-paulo/noticia/2026/09/17/ex-vereador-de-sao-paulo-milton-leite-e-considerado-foragido-apos-ser-alvo-em-operacao-da-policia-civil.ghtml",
+      "snippet": "15 hours ago · Presidente da Câmara Municipal de São Paulo, vereador Milton Leite. — Foto: André Bueno / Rede Câmara O ex …"
+    }
+  ]
+}

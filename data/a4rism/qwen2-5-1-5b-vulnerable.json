@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "a4rism/qwen2.5-1.5b-vulnerable",
+  "slug": "a4rism-qwen2-5-1-5b-vulnerable",
+  "author": "a4rism",
+  "url": "https://huggingface.co/a4rism/qwen2.5-1.5b-vulnerable",
+  "created_at": "2026-09-18T01:38:06.000Z",
+  "updated_at": "2026-09-18T03:34:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 6186355508,
+  "storage_human": "6.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gmail",
+      "url": "https://www.gmail.com/app",
+      "snippet": "We would like to show you a description here but the site won’t allow us."
+    },
+    {
+      "title": "Unsubscribe from messages - multisend-unsubscribe.gmail.com",
+      "url": "https://multisend-unsubscribe.gmail.com/p/AJkpobxI4VMcC5fSag-smhR2MZbmS7gpIKJRcS6E_GlFWK9LuHCATHbOjB_qWyazjuMSFj-8_kSd5mVEXhBXnk-yW6Ln0mmKBQF6NSCYoP7G7d8nUJl1m6LL5nHxMiT0J4YcmzbVBm-sL-mityIP7sG9YlhJeLpArSDdzsfTkoSIJ0lLvNTbupGE-Wg8WJHdMeo4iD8IT4jHlZP7RLDUlFFMFQs=",
+      "snippet": "You will no longer receive messages from Info ICFC (info@icfc.org) at this address: stephekm@co.larimer.co.us. Are you sure?"
+    },
+    {
+      "title": "Unsubscribe",
+      "url": "https://multisend-unsubscribe.gmail.com/p/AHepOLqCDxgQGmfxlM7rFZXN4Pwg685SH_ZNU0Sv-C4dC2uHJLoQsTToiItzl8_eHnTzlAJcfrdwvRvXjgnOF1dAtqEXEyqipcu1I0K7Up_xABcBXOrk3ZrTb6nyB7sFsXgi7hMS97jqvb2tXT7PNudvi83M622oXtTLGevMqbBruwdfZbysNLVhbZ0juSAJzVmkWX9kS4PMWc15ViqSF5tP01QOvHjI7CJBtNZKe3julAAI",
+      "snippet": "Unsubscribe from messages You will no longer receive messages from Support FEELITS (support@feelits.com) at this address: …"
+    },
+    {
+      "title": "Postmaster Tools – Google - gmail.com",
+      "url": "https://www.gmail.com/postmaster/?676a8c4e_page=2&9214e144_page=2&9e4b6cca_page=2&country=119%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252520%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252520%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252520%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252520%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252520%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252520%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252520%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252520%252525252525252525252525252525252525252525252525252525252525252525252525252525252525252525252520&r=0",
+      "snippet": "Be a better sender Use Postmaster Tools to analyze your email performance, and help Gmail route your messages to the right place."
+    },
+    {
+      "title": "Unsubscribe",
+      "url": "https://multisend-unsubscribe.gmail.com/p/AJkpobzUa6YkDWh-4xB3BoiE9GNassCW9CIEWShAkg-LMgGi2bIG9OkumyeZverrXvKdWwjyrrpxjlvtTKSY6jfcOk1n11KKNQvJCgNwqK_dXusUsN9pZk8wINhDXD7wFfllmAhX7Wc4BxT-L81m7yfv9GTH4UWAC0mBXwj7uDdyq6VSmsYrcTr5NScXceXFY9ulAWfBQBXX4fdDwwdtGz1t92M1zgBP7czencExRGFAVA44o4JIxuyIsjd4",
+      "snippet": "Unsubscribe from messages You will no longer receive messages from Volunteer Manager (volunteers@falmouthroadrace.com) at …"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "lubzo/gemma-2-2b-marathi-lora",
+  "slug": "lubzo-gemma-2-2b-marathi-lora",
+  "author": "lubzo",
+  "url": "https://huggingface.co/lubzo/gemma-2-2b-marathi-lora",
+  "created_at": "2026-09-18T01:43:04.000Z",
+  "updated_at": "2026-09-18T01:46:30.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "mr"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "marathi",
+    "low-resource",
+    "instruction-tuning",
+    "alpac",
+    "text-generation",
+    "mr",
+    "dataset:lubzo/marathi-alpaca-cleaned-translated",
+    "base_model:google/gemma-2-2b",
+    "base_model:adapter:google/gemma-2-2b",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 188166619,
+  "storage_human": "188 MB",
+  "base_model": "google/gemma-2-2b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook verrouillé et code reçu par whatsapp - Facebook",
+      "url": "https://forums.commentcamarche.net/forum/affich-38130243-facebook-verrouille-et-code-recu-par-whatsapp",
+      "snippet": "Dec 5, 2024 · Mon compte Facebook est bloqué car on me demande un code par Whatsapp (que je n'utilise pas) ou deux pièces …"
+    },
+    {
+      "title": "Connection fecebook - Facebook - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-36078047-connection-fecebook",
+      "snippet": "Jun 16, 2019 · Meilleure réponse: Bonsoir, vous parlez de facebook sur ordinateur ? ou sur 1 autre support ? Pour se connecter à …"
+    },
+    {
+      "title": "Cómo registrarse en Facebook y configurar un nuevo perfil - CCM",
+      "url": "https://es.ccm.net/aplicaciones-e-internet/redes-sociales-y-mensajeria/2892-crear-una-cuenta-de-facebook/",
+      "snippet": "Jun 22, 2022 · Para utilizar Facebook es necesario registrarte antes y crear una cuenta personal en la red social. El procedimiento es …"
+    },
+    {
+      "title": "Facebook Actualité, guides pratiques et guides d'achat - ZDNET",
+      "url": "https://www.zdnet.fr/facebook-4000085268q.htm",
+      "snippet": "Aug 27, 2026 · Les derniers articles et analyses de la rédaction sur la thématique Facebook. Tout ce qu’il faut savoir sur l’actualité …"
+    },
+    {
+      "title": "Cómo borrar fotos de Facebook: en el PC y móvil - CCM",
+      "url": "https://es.ccm.net/aplicaciones-e-internet/redes-sociales-y-mensajeria/1740-como-borrar-fotos-en-facebook/",
+      "snippet": "Feb 16, 2022 · Facebook te permite eliminar las fotos y álbumes que tú mismo has subido a tu cuenta mediante un proceso muy …"
+    }
+  ]
+}

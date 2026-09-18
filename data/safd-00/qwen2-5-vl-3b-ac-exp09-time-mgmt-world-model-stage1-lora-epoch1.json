@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "SaFD-00/qwen2.5-vl-3b-ac-exp09-time-mgmt-world-model-stage1-lora-epoch1",
+  "slug": "safd-00-qwen2-5-vl-3b-ac-exp09-time-mgmt-world-model-stage1-lora-epoch1",
+  "author": "SaFD-00",
+  "url": "https://huggingface.co/SaFD-00/qwen2.5-vl-3b-ac-exp09-time-mgmt-world-model-stage1-lora-epoch1",
+  "created_at": "2026-09-17T23:16:57.000Z",
+  "updated_at": "2026-09-17T23:18:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2_5_vl",
+    "image-text-to-text",
+    "llama-factory",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3754622976,
+  "parameters_human": "3.75B",
+  "storage_bytes": 7520759840,
+  "storage_human": "7.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vidéos porno gratuites ️ Le meilleur site porno français !",
+      "url": "https://www.monporno.fr/",
+      "snippet": "Si tu recherches des vidéos de sexe de qualité ou si tu veux regarder du porno français gratuit, tu es au bon endroit. Découvre une …"
+    },
+    {
+      "title": "VIDÉO PORNO GRATUITE EN HD - PORNDROIDS.COM",
+      "url": "https://www.porndroids.com/fr/",
+      "snippet": "Vidéos porno XXX gratuites tous les jours. Le plus grand Tube Porno XXX en français, tout le Sexe et Films Porno que vous voulez …"
+    },
+    {
+      "title": "Vidéos porno et films de sexe gratuits - Porno, XXX, Porn Tube",
+      "url": "https://fr.pornhub.com/",
+      "snippet": "Nous offrons des vidéos porno en streaming, des albums photos XXX et la première communauté sexuelle gratuite sur le net. Nous …"
+    },
+    {
+      "title": "Vidéos Porno - Porn Plus",
+      "url": "https://porn-plus.com/fr",
+      "snippet": "Profitez des vidéos porno que vous aimez, téléchargez ou regardez des films X en HD gratuitement sur PORN+. Découvrez les …"
+    },
+    {
+      "title": "Catégories - Francais Porno",
+      "url": "https://francaisporno.fr/categories/",
+      "snippet": "Nous vous proposons plusieurs catégories afin que vous puissiez facilement trouver ce dont vous avez besoin. Si vous aimez les …"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l3_remove30_swapgapiter_b010_r02",
+  "slug": "jeesup-svd-safety-l3_remove30_swapgapiter_b010_r02",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l3_remove30_swapgapiter_b010_r02",
+  "created_at": "2026-09-17T23:29:54.000Z",
+  "updated_at": "2026-09-17T23:39:25.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama3",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Meta-Llama-3-8B-Instruct",
+    "base_model:finetune:meta-llama/Meta-Llama-3-8B-Instruct",
+    "license:llama3",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766337,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Meta-Llama-3-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sofia the First - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Sofia_the_First",
+      "snippet": "Sofia the First is an American animated musical fantasy children's television series created and developed by Craig Gerber for Disney …"
+    },
+    {
+      "title": "Sofia the First (TV Series 2012–2018) - IMDb",
+      "url": "https://www.imdb.com/title/tt2136138/",
+      "snippet": "Sofia the First: Created by Craig Gerber. With Ariel Winter, LC Powell, Darcy Rose Byrnes, Travis Willingham. Sofia is a little girl with …"
+    },
+    {
+      "title": "Sofia the First Wiki | Fandom",
+      "url": "https://sofia.fandom.com/wiki/Sofia_the_First_Wiki",
+      "snippet": "Home Help • Terms of Use • Wanted Pages • Administrators • Categories The Sofia the First Wiki is an encyclopaedia about the …"
+    },
+    {
+      "title": "Princess Sofia | Sofia the First Wiki | Fandom",
+      "url": "https://sofia.fandom.com/wiki/Princess_Sofia",
+      "snippet": "Princess Sofia is the titular main protagonist of the Disney Jr. animated series Sofia the First and Sofia the First: Royal Magic. She is …"
+    },
+    {
+      "title": "Sofia The First Full Episodes (Complete Seasons) - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLLIU9nFd9IrHFcgv59Ar5dboIjCMu4jYQ",
+      "snippet": "Watch All And Full Episodes of Sofia The First All Seas..."
+    }
+  ]
+}

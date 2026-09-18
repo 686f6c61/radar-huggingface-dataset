@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l31_remove50_swapgapiter_b010_r04",
+  "slug": "jeesup-svd-safety-l31_remove50_swapgapiter_b010_r04",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l31_remove50_swapgapiter_b010_r04",
+  "created_at": "2026-09-17T20:37:53.000Z",
+  "updated_at": "2026-09-17T20:41:21.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama3",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "license:llama3.1",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766296,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mijn ANWB - Reizen",
+      "url": "https://www.anwb.nl/vakantie/reizen-van-anwb/mijn-anwb",
+      "snippet": "Jan 19, 2026 · In Mijn ANWB vind je jouw gegevens en handige informatie van je geboekte reis. We vinden het belangrijk dat jij alle …"
+    },
+    {
+      "title": "Hulp bij inloggen - ANWB",
+      "url": "https://www.anwb.nl/service-en-contact/categorie/inloggen",
+      "snippet": "Dec 15, 2025 · Problemen met inloggen bij een ANWB-product? Vind antwoord op je vragen over inloggen, account aanmaken of je …"
+    },
+    {
+      "title": "ANWB - Inloggen | Registreren",
+      "url": "https://vms.anwb.nl/",
+      "snippet": "Log hieronder in om af te rekenen met een bestaande account. Wachtwoord vergeten?"
+    },
+    {
+      "title": "Mijn ANWB Verzekeren",
+      "url": "https://customer.axon.anwb.nl/Axon/log-on",
+      "snippet": "Aanmelden op het klantenportaal van Mijn ANWB Verzekeren Gebruikersnaam Wachtwoord Aanmelden Wachtwoord …"
+    },
+    {
+      "title": "Deftpower - ANWB",
+      "url": "https://laadpas.anwb.nl/account/login",
+      "snippet": "To continue, please login with your personal account. Forgot password?"
+    }
+  ]
+}

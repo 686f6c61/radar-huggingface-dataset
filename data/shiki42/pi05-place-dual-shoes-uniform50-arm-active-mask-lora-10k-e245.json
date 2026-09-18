@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Shiki42/pi05-place-dual-shoes-uniform50-arm-active-mask-lora-10k-e245",
+  "slug": "shiki42-pi05-place-dual-shoes-uniform50-arm-active-mask-lora-10k-e245",
+  "author": "Shiki42",
+  "url": "https://huggingface.co/Shiki42/pi05-place-dual-shoes-uniform50-arm-active-mask-lora-10k-e245",
+  "created_at": "2026-09-18T01:44:34.000Z",
+  "updated_at": "2026-09-19T12:06:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "pi05",
+    "lora",
+    "robotwin",
+    "arm-active-mask",
+    "robotics",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6335569348,
+  "storage_human": "6.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Help",
+      "url": "https://support.google.com/chrome/answer/95464?hl=es&co=GENIE.Platform%3DDesktop",
+      "snippet": ""
+    },
+    {
+      "title": "Google Ajutor",
+      "url": "https://support.google.com/?hl=ro",
+      "snippet": "Dacă întâmpini probleme la accesarea unui produs Google, poate să existe o problemă temporară. Poți să verifici dacă există …"
+    },
+    {
+      "title": "Google'ı varsayılan arama motorunuz yapma",
+      "url": "https://support.google.com/websearch/answer/464?hl=tr",
+      "snippet": "Her arama yaptığınızda Google'dan sonuçlar almak için Google'ı varsayılan arama motorunuz yapabilirsiniz. Google'ı tarayıcınızda …"
+    },
+    {
+      "title": "Suggerimenti per completare la procedura di recupero dell'account",
+      "url": "https://support.google.com/accounts/answer/7299973?hl=it",
+      "snippet": "Se non riesci ad accedere, segui questi passaggi per provare a recuperare l'accesso al tuo Account Google: Visita la pagina per il …"
+    },
+    {
+      "title": "Google Hesabı oluşturma - Bilgisayar - Google Hesabı Yardım",
+      "url": "https://support.google.com/accounts/answer/27441?hl=tr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Google Hesabı birçok Google ürününe erişim sağlar. Google Hesabı ile şunları yapabilirsiniz: Gmail'i kullanarak e-posta gönderip …"
+    }
+  ]
+}

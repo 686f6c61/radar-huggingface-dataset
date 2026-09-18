@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "A11Sunday/support-json-qwen3.5-4b-lora",
+  "slug": "a11sunday-support-json-qwen3-5-4b-lora",
+  "author": "A11Sunday",
+  "url": "https://huggingface.co/A11Sunday/support-json-qwen3.5-4b-lora",
+  "created_at": "2026-09-17T20:26:03.000Z",
+  "updated_at": "2026-09-17T20:28:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "support",
+    "structured-output",
+    "policy-following",
+    "qwen3.5",
+    "text-generation",
+    "ru",
+    "dataset:A11Sunday/support-json-ru",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:adapter:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 271594602,
+  "storage_human": "272 MB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Epitaphes Célèbres – La-Philosophie.com : Cours, Résumés & Citations de ...",
+      "url": "https://la-philosophie.com/epitaphes-celebres",
+      "snippet": "May 17, 2012 · Sophocle disait qu’une existence ne peut se dire réussie qu’au dernier jour de sa vie. Les épitaphes, ou mots de la fin, …"
+    },
+    {
+      "title": "Citations : 200 000 citations, proverbes et pensées d'auteurs ...",
+      "url": "https://www.dicocitations.com/",
+      "snippet": "1 day ago · 200 000 citations d'auteurs avec leur source, proverbes et dictons, biographies : le dictionnaire des citations depuis 2001. …"
+    },
+    {
+      "title": "Arthur Rimbaud — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Arthur_Rimbaud",
+      "snippet": "La précocité de son génie, sa carrière littéraire fulgurante, sa vie brève et aventureuse contribuent à forger sa légende et à faire de lui …"
+    },
+    {
+      "title": "Voltaire — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Voltaire",
+      "snippet": "À sa première sortie de la prison de la Bastille, conscient d’avoir jusque-là gaspillé son temps et son talent, il veut donner un nouveau …"
+    },
+    {
+      "title": "Les Mots de la fin des auteurs - L’Histoire en citations",
+      "url": "https://histoire-en-citations.fr/WP/les-mots-de-la-fin-des-auteurs/",
+      "snippet": "Nov 15, 2021 · Mais il n’a écrit que dix ans (1880 à 1890), avant de devenir quasiment aveugle et de sombrer peu à peu dans la folie, …"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "sumitv461/dexter-3b-local-pm-lora",
+  "slug": "sumitv461-dexter-3b-local-pm-lora",
+  "author": "sumitv461",
+  "url": "https://huggingface.co/sumitv461/dexter-3b-local-pm-lora",
+  "created_at": "2026-09-18T01:58:13.000Z",
+  "updated_at": "2026-09-18T01:58:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen2.5-3B-Instruct",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 131223420,
+  "storage_human": "131 MB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Einladungskarte Fasching Feiertage",
+      "url": "https://einladungsform.de/feiertage/fasching.html",
+      "snippet": "Fasching feiern - Einladungskarte zur Party selbst kostenlos gestalten und drucken. Feiertage in Deutschland - Winter. Anpassen Sie …"
+    },
+    {
+      "title": "Kostenlose Einladungs-Vorlagen zum Ausdrucken | Canva",
+      "url": "https://www.canva.com/de_de/einladungen/vorlagen/?msockid=336ac5863d416cec100bd25e3cd96d27",
+      "snippet": "Kein Problem! Oder vielleicht eine kunterbunte Einladung mit Skript-Font für deine Regenbogen-Hochzeit? Auch das bekommst du in …"
+    },
+    {
+      "title": "Quadratische Vorlage: Einladungskarte Fasching Feiertage",
+      "url": "https://einladungsform.de/feiertage/fasching-qform.html",
+      "snippet": "Kein Problem, hier können Sie schnell und leicht Ihre Einladung mit verschieden Bildern und Farben gestalten und dann ausdrucken …"
+    },
+    {
+      "title": "Kostenlos anpassbare Fasching & Karneval Vorlagen | Canva",
+      "url": "https://www.canva.com/de_de/vorlagen/s/fasching/?msockid=336ac5863d416cec100bd25e3cd96d27",
+      "snippet": "Planst du eine Einladung zu einer Faschingsfeier? Unsere Faschings-Einladung Vorlagen sind ideal, um deine Gäste stilvoll …"
+    },
+    {
+      "title": "Drucke selbst! Kostenlose Einladungen zum Ausdrucken",
+      "url": "https://druckeselbst.de/online-gestalten/kostenlose-einladungen.html",
+      "snippet": "Diese kostenlosen Vorlagen kannst du ganz bequem mit deinem Webbrowser personalisieren. Anschließend kannst du dein …"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "LehongWu/arvla-abc130k_idm_wm-2B-0917_1820",
+  "slug": "lehongwu-arvla-abc130k_idm_wm-2b-0917_1820",
+  "author": "LehongWu",
+  "url": "https://huggingface.co/LehongWu/arvla-abc130k_idm_wm-2B-0917_1820",
+  "created_at": "2026-09-18T01:51:46.000Z",
+  "updated_at": "2026-09-18T01:51:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 21795237922,
+  "storage_human": "21.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Elektroniczna winieta – Oficjalny państwowy e-sklep eDalnice.gov.cz",
+      "url": "https://edalnice.gov.cz/pl",
+      "snippet": "Oficjalny e-sklep do zakupu czeskich winiet autostradowych online. Szybko i wygodnie w 2 minuty – winiety roczne, miesięczne i …"
+    },
+    {
+      "title": "Cennik winiet | Oficjalny państwowy e-sklep eDalnice.gov.cz",
+      "url": "https://edalnice.gov.cz/pl/cennik",
+      "snippet": "Jan 1, 2026 · Sprawdź aktualne ceny elektronicznych winiet autostradowych w Republice Czeskiej, w tym winiety z ulgą ekologiczną."
+    },
+    {
+      "title": "Oficjalna Czeska Winieta | Kup online już teraz - Wsparcie 24/7",
+      "url": "https://electronic-vignette.cz/pl",
+      "snippet": "Na podstawie numerów rejestracyjnych pojazdu organy kontrolne administracji celnej i policji Republiki Czeskiej otrzymują …"
+    },
+    {
+      "title": "Winieta Czechy - wszystko, co musisz wiedzieć przed podróżą",
+      "url": "https://pintravel.pl/winieta-czechy-wszystko-co-musisz-wiedziec-przed-podroza",
+      "snippet": "Jun 13, 2026 · Planujesz podróż do Czech? Sprawdź, kiedy winieta jest obowiązkowa, ile kosztuje i jak kupić ją bez stresu. Uniknij …"
+    },
+    {
+      "title": "e-Winiety Czechy 2026 | Zamów online bez problemów",
+      "url": "https://winiety-online.pl/winiety-czechy",
+      "snippet": "Wykup czeskie winiety online! Zamów winietę na przejazd płatnymi drogami w Czechach. Zapłać szybko i bezpiecznie, używając …"
+    }
+  ]
+}

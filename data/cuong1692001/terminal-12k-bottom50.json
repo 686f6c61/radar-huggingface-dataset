@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "cuong1692001/Terminal-12k-bottom50",
+  "slug": "cuong1692001-terminal-12k-bottom50",
+  "author": "cuong1692001",
+  "url": "https://huggingface.co/cuong1692001/Terminal-12k-bottom50",
+  "created_at": "2026-09-17T20:33:39.000Z",
+  "updated_at": "2026-09-17T20:48:18.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "llama-factory",
+    "full",
+    "generated_from_trainer",
+    "conversational",
+    "base_model:cuong1692001/Terminal_complete_8k",
+    "base_model:finetune:cuong1692001/Terminal_complete_8k",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 229353918157,
+  "storage_human": "229.4 GB",
+  "base_model": "cuong1692001/Terminal_complete_8k",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Liste von Serienmördern – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Liste_von_Serienm%C3%B6rdern",
+      "snippet": "In der Liste historischer Serienmörder sind männliche Serienmörder deren aktive Zeit vor 1950 lag aufgeführt. Verurteilte, deren …"
+    },
+    {
+      "title": "Serienmörder: Die 10 bekanntesten und gruseligsten Killer der Welt",
+      "url": "https://www.esquire.de/news/gesellschaft/serienmoerder-10-bekanntesten-serienkiller-der-welt",
+      "snippet": "Jan 15, 2025 · Teufel in Menschengestalt: Das sind die 10 schrecklichsten und brutalsten Serienmörder, die traurige Berühmtheit …"
+    },
+    {
+      "title": "11 der berüchtigtsten Serienmörder Deutschlands - einer war Kölner",
+      "url": "https://www.ksta.de/panorama/promis/11-der-beruechtigtsten-serienmoerder-deutschlands-einer-war-koelner-1255438",
+      "snippet": "Apr 4, 2026 · Wir beleuchten 11 der berüchtigtsten Serienmörder, deren Geschichte die Welt des True Crime prägte. Einer kam sogar …"
+    },
+    {
+      "title": "Mordserie – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Mordserie",
+      "snippet": "Der missionsorientierte Serienmörder tötet seine Opfer, weil sie ein bestimmtes Profil erfüllen (z. B. als Prostituierte arbeiten) und …"
+    },
+    {
+      "title": "Serienkiller – Die True Crime Ausstellung in Köln",
+      "url": "https://serienkiller-ausstellung.com/cologne/",
+      "snippet": "May 10, 2026 · Betrete die Gedankenwelt echter Serienmörder und erlebe eine immersive Reise durch die dunkelsten Abgründe der …"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "XizoB/FastWAM-TDAA",
+  "slug": "xizob-fastwam-tdaa",
+  "author": "XizoB",
+  "url": "https://huggingface.co/XizoB/FastWAM-TDAA",
+  "created_at": "2026-09-18T01:31:47.000Z",
+  "updated_at": "2026-09-21T11:42:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "robotics",
+    "pytorch",
+    "zh",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 48565500689,
+  "storage_human": "48.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Comment obtenir la nationalité française ? | Service Public",
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F34717",
+      "snippet": "Il y a 2 principales manières d'obtenir la nationalité française : la déclaration de nationalité et la naturalisation. La déclaration vous …"
+    },
+    {
+      "title": "Nationalité française d'un enfant né en France de parents étrangers ...",
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F295",
+      "snippet": "Vous êtes parents étrangers d'un enfant né en France ? Si vous résidez en France, votre enfant peut obtenir la nationalité française. …"
+    },
+    {
+      "title": "Formulaire Cerfa 12753*01 - Demande d’acquisition de la nationalité ...",
+      "url": "https://www.interieur.gouv.fr/Media/Immigration/Files/Formulaire-Cerfa-12753-01-Demande-d-acquisition-de-la-nationalite-francaise",
+      "snippet": "Formulaire Cerfa 12753*01 - Demande d’acquisition de la nationalité française Format pdf [0,05 MB]"
+    },
+    {
+      "title": "Démarches pour obtenir la nationalité française pour un enfant",
+      "url": "https://fourez.notaires.fr/informations-et-conseils/demarches-pour-l-obtention-de-la-nationalite-francaise-pour-un-enfant/1290",
+      "snippet": "Jun 5, 2025 · Vous souhaitez obtenir la nationalité française pour votre enfant ? Découvrez les démarches à suivre selon chaque …"
+    },
+    {
+      "title": "Les conditions pour demander la nationalité française",
+      "url": "https://www.immigration.interieur.gouv.fr/devenir-francais/conditions-pour-demander-nationalite-francaise",
+      "snippet": "La nationalité française peut être acquise pour l'enfant né en France de 2 parents étrangers, dès lors qu'il remplit la condition de …"
+    }
+  ]
+}

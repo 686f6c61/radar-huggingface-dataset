@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l31_remove40_swapgapiter_b010_r09",
+  "slug": "jeesup-svd-safety-l31_remove40_swapgapiter_b010_r09",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l31_remove40_swapgapiter_b010_r09",
+  "created_at": "2026-09-17T20:26:53.000Z",
+  "updated_at": "2026-09-17T20:35:00.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama3",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "license:llama3.1",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766296,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Login ke Gmail - Komputer - Bantuan Gmail - Google Help",
+      "url": "https://support.google.com/mail/answer/8494?hl=id&co=GENIE.Platform%3DDesktop",
+      "snippet": "Login Di komputer Anda, buka Gmail. Masukkan email atau nomor telepon dan sandi Akun Google Anda. Jika informasi tersebut …"
+    },
+    {
+      "title": "Een Google-account maken voor Gmail - Gmail Help",
+      "url": "https://support.google.com/mail/answer/56256?hl=nl",
+      "snippet": "Een Google-account maken voor Gmail Met een Google-account kun je inloggen bij Gmail en andere Google-services, zoals …"
+    },
+    {
+      "title": "Sign in to Gmail - Computer - Gmail Help - Google Help",
+      "url": "https://support.google.com/mail/answer/8494?hl=en-IN&co=GENIE.Platform%3DDesktop",
+      "snippet": "Sign in On your computer, go to gmail.com. Enter your Google Account email address or phone number and password. If information …"
+    },
+    {
+      "title": "Opret en Google-konto til Gmail - Hjælp til Gmail",
+      "url": "https://support.google.com/mail/answer/56256?hl=da",
+      "snippet": "Opret en Google-konto til Gmail Med en Google-konto kan du logge ind på Gmail og andre Google-tjenester, f.eks. YouTube, Google …"
+    },
+    {
+      "title": "Logga in på Gmail - Dator - Gmail Hjälp - Google Help",
+      "url": "https://support.google.com/mail/answer/8494?hl=sv&co=GENIE.Platform%3DDesktop",
+      "snippet": "Logga in på Gmail Tips! Kom ihåg att logga ut innan du går ifrån datorn om du har loggat in på en offentlig dator. Läs mer om hur du …"
+    }
+  ]
+}

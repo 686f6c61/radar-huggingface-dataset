@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "inboxkit-alh/inboxkit",
+  "slug": "inboxkit-alh-inboxkit",
+  "author": "inboxkit-alh",
+  "url": "https://huggingface.co/inboxkit-alh/inboxkit",
+  "created_at": "2026-09-18T00:52:42.000Z",
+  "updated_at": "2026-09-18T01:57:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pattaya - Wakacje, Wczasy, Wycieczki | ITAKA",
+      "url": "https://www.itaka.pl/nasze-kierunki/tajlandia/pattaya/",
+      "snippet": "Wakacje w Pattaya z ITAKĄ - nr 1 w Polsce. Tajlandia - wczasy, wycieczki, oferty last minute i All Inclusive. Zaplanuj swoje …"
+    },
+    {
+      "title": "Pattaya Tajlandia - Okazje na Wakacje Fly.pl",
+      "url": "https://fly.pl/kierunek/tajlandia/tajlandia-pattaya/",
+      "snippet": "1 hour ago · Pattaya to perła Tajlandii, która słynie z intensywnego życia nocnego oraz przepięknego wybrzeża Zatoki Tajlandzkiej. …"
+    },
+    {
+      "title": "Pattaya w Tajlandii – kompletny przewodnik: atrakcje, wycieczki, hotele ...",
+      "url": "https://tripando.pl/pattaya-w-tajlandii-kompletny-przewodnik-atrakcje-wycieczki-hotele-loty-ubezpieczenie/",
+      "snippet": "Co warto zwiedzić w Pattayi w Tajlandii? Pattaya to jeden z najpopularniejszych kurortów turystycznych w Tajlandii, który słynie na …"
+    },
+    {
+      "title": "Pattaya: 17 atrakcji i ciekawych miejsc, których nie warto pominąć",
+      "url": "https://bartekwpodrozy.pl/pattaya-atrakcje-co-warto-zobaczyc-przewodnik/",
+      "snippet": "Jun 10, 2026 · Pattaya była ważnym punktem mojej podróży do Tajlandii na własną rękę. W artykule zebrałem rekomendacje …"
+    },
+    {
+      "title": "Wycieczki objazdowe Pattaya | ITAKA",
+      "url": "https://www.itaka.pl/wycieczki/pattaya/",
+      "snippet": "Wycieczki do Pattaya – sprawdź aktualne oferty, ceny, terminy i wyloty z Polski. Wybierz kierunek dopasowany do Twojego stylu …"
+    }
+  ]
+}

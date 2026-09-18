@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "elizabethcnf88/grounded-language",
+  "slug": "elizabethcnf88-grounded-language",
+  "author": "elizabethcnf88",
+  "url": "https://huggingface.co/elizabethcnf88/grounded-language",
+  "created_at": "2026-09-17T23:18:31.000Z",
+  "updated_at": "2026-09-17T23:18:36.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "grounded-language",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ford",
+      "url": "https://www.ford.com/",
+      "snippet": "Ford® is Built for America. Discover the latest lineup in new Ford vehicles! Explore hybrid & electric vehicle options, see photos, build …"
+    },
+    {
+      "title": "New Trucks or Pickups | Pick the Best Truck for You | Ford.com",
+      "url": "https://www.ford.com/new-trucks/",
+      "snippet": "Explore the new trucks and pickups from Ford's lineup. Research MPG, performance, pricing and more--and select the best option for …"
+    },
+    {
+      "title": "Ford Motor Company | Official Ford Corporate Site",
+      "url": "https://corporate.ford.com/#!english",
+      "snippet": "At Ford, we believe in putting passion to work. For over 120 years, Ford has shown up for our customers and communities with a …"
+    },
+    {
+      "title": "Ford Motor Company - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ford_Motor_Company",
+      "snippet": "The Ford Motor Company (commonly known as Ford, sometimes abbreviated as FoMoCo) is an American multinational automobile …"
+    },
+    {
+      "title": "Ford Vehicle Showroom",
+      "url": "https://shop.ford.com/showroom/?gnav=header-all-vehicles",
+      "snippet": "Ford Vehicle Showroom All Vehicles $ EPA-Est. MPGEPA-Est. MPGeL/100KMLe/100KM City/ Hwy City/ Hwy lbs Max GVWR $ EPA …"
+    }
+  ]
+}

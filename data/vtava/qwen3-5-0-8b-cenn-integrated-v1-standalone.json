@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "vtava/Qwen3.5-0.8B-CeNN-Integrated-V1-Standalone",
+  "slug": "vtava-qwen3-5-0-8b-cenn-integrated-v1-standalone",
+  "author": "vtava",
+  "url": "https://huggingface.co/vtava/Qwen3.5-0.8B-CeNN-Integrated-V1-Standalone",
+  "created_at": "2026-09-17T21:29:07.000Z",
+  "updated_at": "2026-09-17T22:17:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "tinycenn",
+    "cenn",
+    "language-modeling",
+    "text-generation",
+    "research",
+    "conversational",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 753609552,
+  "parameters_human": "753.6M",
+  "storage_bytes": 3039369037,
+  "storage_human": "3.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Arsenal FC Official Website | Arsenal.com",
+      "url": "https://www.arsenal.com/fixtures/men/players",
+      "snippet": "49 Myles Lewis-Skelly England"
+    },
+    {
+      "title": "Arsenal Squad Information & Player Stats 2026/27 | Premier League",
+      "url": "https://www.premierleague.com/en/clubs/3/arsenal/squad",
+      "snippet": "View Arsenal squad and player information on the official website of the Premier League."
+    },
+    {
+      "title": "Arsenal FC - Detailed squad 26/27 | Transfermarkt",
+      "url": "https://www.transfermarkt.us/fc-arsenal/kader/verein/11",
+      "snippet": "This page displays a detailed overview of the club's current squad. It shows all personal information about the players, including age, …"
+    },
+    {
+      "title": "Arsenal 2026-27 Squad - ESPN",
+      "url": "https://www.espn.com/soccer/team/squad/_/id/359/arsenal",
+      "snippet": "Explore the 2026-27 Arsenal roster on ESPN. Includes full details on appearances, minutes played, goals and assists."
+    },
+    {
+      "title": "Arsenal - squad, coach, injuries and positions - FotMob",
+      "url": "https://www.fotmob.com/teams/9825/squad/arsenal",
+      "snippet": "View the full Arsenal squad with player positions, shirt numbers, ages, nationalities, injury updates and most valuable players."
+    }
+  ]
+}

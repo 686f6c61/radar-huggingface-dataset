@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l31_remove50_swapgapiter_b010_r01",
+  "slug": "jeesup-svd-safety-l31_remove50_swapgapiter_b010_r01",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l31_remove50_swapgapiter_b010_r01",
+  "created_at": "2026-09-17T20:03:53.000Z",
+  "updated_at": "2026-09-17T20:06:58.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama3",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "license:llama3.1",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766296,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "bet365 - Sportsbook and Casino Betting",
+      "url": "https://www.bet365.fr/",
+      "snippet": "One of the world's leading online gambling companies. The most comprehensive In-Play service. Deposit Bonus for New Customers. …"
+    },
+    {
+      "title": "bet365 - Online Sports Betting",
+      "url": "https://www.bet365.com/?lid=30",
+      "snippet": "The world’s favourite online sports betting company. The most comprehensive In-Play service. Watch Live Sport. Live Streaming …"
+    },
+    {
+      "title": "Paris sur le Football et dernières cotes de Football - bet365",
+      "url": "https://www.bet365.fr/hub/fr-fr/football",
+      "snippet": "Découvrez les dernières cotes de paris sur le Football chez bet365. Pariez sur les prochains matchs et les matchs en direct de …"
+    },
+    {
+      "title": "Parier chez bet365 - Bookmaker en ligne et en direct - Derniers paris ...",
+      "url": "https://www.bet365.es/?lid=4",
+      "snippet": "bet365 - Le grand favori des paris sportifs en ligne. Le service En direct le plus complet qui soit. Regardez du sport en direct. …"
+    },
+    {
+      "title": "bet365 - Scommesse sportive online",
+      "url": "https://www.bet365.it/",
+      "snippet": "bet365 - L'azienda leader nel settore del gioco online. Offriamo il servizio in Tempo Reale più completo. Segui lo Sport Live. Diretta …"
+    }
+  ]
+}

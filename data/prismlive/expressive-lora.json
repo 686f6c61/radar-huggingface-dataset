@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "PrismLive/Expressive-LoRA",
+  "slug": "prismlive-expressive-lora",
+  "author": "PrismLive",
+  "url": "https://huggingface.co/PrismLive/Expressive-LoRA",
+  "created_at": "2026-09-17T22:57:17.000Z",
+  "updated_at": "2026-09-17T22:57:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "lora",
+    "text-to-image",
+    "base_model:PrismLive/PrismImage",
+    "base_model:adapter:PrismLive/PrismImage",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 48157584,
+  "storage_human": "48 MB",
+  "base_model": "PrismLive/PrismImage",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "百度翻译_领先的AI大模型翻译_支持文本/文档/图片翻译",
+      "url": "https://fanyi.baidu.com/",
+      "snippet": "百度新一代AI大模型翻译平台，提供外文阅读和专业翻译解决方案，实现中、英、日、韩、德等203种语言翻译，支持文本翻译、文档 …"
+    },
+    {
+      "title": "百度翻译",
+      "url": "https://fanyi.baidu.com/%C2%A0",
+      "snippet": ""
+    },
+    {
+      "title": "百度翻译 - 免费在线AI翻译工具 | 支持200+语种·文档图片语音互译·无 …",
+      "url": "https://bb-fanyi.com.cn/",
+      "snippet": "百度翻译官网，免费在线AI翻译工具，支持200+语种互译，文档翻译、图片翻译、语音翻译、音视频转写，AI大模型翻译，无 ..."
+    },
+    {
+      "title": "百度翻译",
+      "url": "https://fanyi.baidu.com/app",
+      "snippet": "百度翻译是一款支持多种语言互译的翻译工具，提供高效、准确的翻译服务，满足日常交流、学习和商务需求。"
+    },
+    {
+      "title": "百度翻译 - 官方免费在线翻译，2亿用户都在用！支持200+语种·文档·图 …",
+      "url": "https://bai-fanyi.com.cn/",
+      "snippet": "百度翻译官方免费在线翻译工具，2亿用户信赖。 支持200+语种互译，文档翻译、图片翻译、语音翻译，AI大模型翻译，无广告纯净体 …"
+    }
+  ]
+}

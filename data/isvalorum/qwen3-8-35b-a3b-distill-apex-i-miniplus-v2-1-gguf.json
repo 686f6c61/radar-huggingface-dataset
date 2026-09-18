@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "id": "IsValorum/Qwen3.8-35B-A3B-Distill-APEX-I-MiniPlus-V2.1-GGUF",
+  "slug": "isvalorum-qwen3-8-35b-a3b-distill-apex-i-miniplus-v2-1-gguf",
+  "author": "IsValorum",
+  "url": "https://huggingface.co/IsValorum/Qwen3.8-35B-A3B-Distill-APEX-I-MiniPlus-V2.1-GGUF",
+  "created_at": "2026-09-17T21:58:19.000Z",
+  "updated_at": "2026-09-21T20:09:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "quantized",
+    "quantization",
+    "apex",
+    "apex-quant",
+    "custom-quantization",
+    "unsloth-studio",
+    "moe",
+    "reasoning",
+    "llama.cpp",
+    "qwen35moe",
+    "text-generation",
+    "en",
+    "zh",
+    "es",
+    "fr",
+    "de",
+    "pt",
+    "it",
+    "ru",
+    "ja",
+    "ko",
+    "vi",
+    "th",
+    "ar",
+    "base_model:empero-ai/Qwen3.8-35B-A3B-Distill",
+    "base_model:quantized:empero-ai/Qwen3.8-35B-A3B-Distill",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 17356146176,
+  "storage_human": "17.4 GB",
+  "base_model": "empero-ai/Qwen3.8-35B-A3B-Distill",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bitcoin Price Prediction, Short/Long Forecast - CoinLore",
+      "url": "https://www.coinlore.com/coin/bitcoin/forecast/price-prediction",
+      "snippet": "10 hours ago · Bitcoin (BTC) price forecast covering the next 24 hours, tomorrow, next week, and long-term outlook through 2040. …"
+    },
+    {
+      "title": "BTC Price Prediction: 2026–2031 AI Forecast - midforex.com",
+      "url": "https://midforex.com/crypto/bitcoin-forecast",
+      "snippet": "8 hours ago · Get Bitcoin (BTC) price prediction and forecast. Expert AI-powered BTC predictions, daily & monthly forecasts, …"
+    },
+    {
+      "title": "Bitcoin Price Prediction 2026, 2027, 2030 & Beyond: Yearly Forecast",
+      "url": "https://www.binance.com/en/price-prediction/bitcoin",
+      "snippet": "23 hours ago · Our Bitcoin price prediction helps you forecast BTC price targets in 2026, 2027, 2030 & beyond, based on a fixed …"
+    },
+    {
+      "title": "Prognoza ceny Bitcoin (BTC) [2026, 2027, 2030, 2040] i więcej | Coinbase",
+      "url": "https://www.coinbase.com/pl/price-prediction/bitcoin",
+      "snippet": "Sprawdź poniższe narzędzie do prognozowania cen, aby przeanalizować rok po roku scenariusze dotyczące waluty USD. Zobacz …"
+    },
+    {
+      "title": "Прогноз цены Bitcoin на 2026, 2027, 2030 ... - Binance",
+      "url": "https://www.binance.com/ru/price-prediction/bitcoin",
+      "snippet": "23 hours ago · Наш прогноз цены Bitcoin поможет вам определить ценовые ориентиры для BTC на 2026, 2027, 2030 годы и …"
+    }
+  ]
+}

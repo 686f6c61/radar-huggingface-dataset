@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "6first/act_6first",
+  "slug": "6first-act_6first",
+  "author": "6first",
+  "url": "https://huggingface.co/6first/act_6first",
+  "created_at": "2026-09-17T20:57:12.000Z",
+  "updated_at": "2026-09-17T20:57:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:6first/6first",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51701398,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206835488,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Contact Us - Twitch",
+      "url": "https://help.twitch.tv/s/contactsupport?language%3Den_US/",
+      "snippet": "Known issues on OperaGX 🔧 We are aware of an issue where some people using the OperaGX browser are unable to load Twitch. …"
+    },
+    {
+      "title": "GIF Keyboard on Twitch",
+      "url": "https://help.twitch.tv/s/article/gif-keyboard",
+      "snippet": "The GIF Keyboard on Twitch uses GIPHY's content ratings to filter GIFs available in each channel: PG (default): Suitable for most …"
+    },
+    {
+      "title": "Dead by Daylight - Reddit",
+      "url": "https://www.reddit.com/r/deadbydaylight/hot/",
+      "snippet": "Dead by Daylight is an asymmetrical multiplayer horror game in which four resourceful survivors face off against one ruthless killer. …"
+    },
+    {
+      "title": "faq - Twitch - Reddit",
+      "url": "https://www.reddit.com/r/Twitch/wiki/faq/",
+      "snippet": "/r/Twitch is an unofficial place for discussions surrounding the streaming website Twitch.tv. If you want to provide feedback, ask a …"
+    },
+    {
+      "title": "Getting Started - Twitch",
+      "url": "https://help.twitch.tv/s/topic/0TO1U000000CjnWWAS/getting-started?language=en_US",
+      "snippet": "Aug 31, 2026 · Learn the basics of Twitch with our collection of getting started articles that cover everything from creating your …"
+    }
+  ]
+}

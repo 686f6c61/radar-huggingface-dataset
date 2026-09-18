@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "zuanfilm/Krea2_Character_unlocked",
+  "slug": "zuanfilm-krea2_character_unlocked",
+  "author": "zuanfilm",
+  "url": "https://huggingface.co/zuanfilm/Krea2_Character_unlocked",
+  "created_at": "2026-09-17T21:37:37.000Z",
+  "updated_at": "2026-09-17T21:48:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "krea2",
+    "character-design",
+    "image-to-image",
+    "qwen3vl",
+    "lora",
+    "image-generation",
+    "workflow",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9697930,
+  "storage_human": "10 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/",
+      "snippet": "Connect and share with friends, family, and the world on Facebook."
+    },
+    {
+      "title": "Log into Facebook",
+      "url": "https://www.facebook.com/login.php/",
+      "snippet": "Email or mobile number Password"
+    },
+    {
+      "title": "Log Into Facebook",
+      "url": "https://secure.facebook.com/login/",
+      "snippet": "Log into Facebook to start sharing and connecting with your friends, family, and people you know."
+    },
+    {
+      "title": "Facebook",
+      "url": "https://apps.facebook.com/r.php/",
+      "snippet": "Get started on Facebook with a Meta Account A Meta Account lets you access multiple Meta technologies, like Facebook, easily and …"
+    },
+    {
+      "title": "Facebook - m.me",
+      "url": "https://m.me/www.facebook.com",
+      "snippet": "Messenger Facebook Lite Video Places Games Marketplace Meta Pay Meta Store Meta Quest Ray-Ban Meta Meta AI Muse …"
+    }
+  ]
+}

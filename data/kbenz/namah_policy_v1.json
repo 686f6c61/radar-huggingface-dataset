@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "kbenz/namah_policy_v1",
+  "slug": "kbenz-namah_policy_v1",
+  "author": "kbenz",
+  "url": "https://huggingface.co/kbenz/namah_policy_v1",
+  "created_at": "2026-09-17T20:40:18.000Z",
+  "updated_at": "2026-09-17T20:40:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:kbenz/namah_combined",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714928,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Walmart Stores Near Me - Locations, Hours & Services",
+      "url": "https://www.walmart.com/store-finder?location=page",
+      "snippet": "Use the Walmart store locator to find your nearest Walmart locations, check store hours, and find services like Grocery Pickup, …"
+    },
+    {
+      "title": "Wal Mart - Supermärkte in Bremen VAHRER STR. 197, 28329, Bremen ...",
+      "url": "https://firmania.de/bremen/wal-mart-2627223",
+      "snippet": "Finden Sie Firmenkontaktdaten für Wal Mart in VAHRER STR. 197, 28329, Bremen, Sebaldsbrück, Bremen Bremen einschließlich …"
+    },
+    {
+      "title": "Wal-Mart Supercenter | Bremen",
+      "url": "https://www.deutschebiz.de/wal-mart-supercenter",
+      "snippet": "Wo befindet sich Wal-Mart Supercenter? Wal-Mart Supercenter befindet sich in Vahrer Str. 197; 28329; Bremen, Freie Hansestadt …"
+    },
+    {
+      "title": "Wal Mart | Supermärkte, Bremen",
+      "url": "https://web2.cylex.de/firma-home/wal-mart-3020611.html",
+      "snippet": "Wal Mart Vahrer Str. in Bremen Sebaldsbrück, ☎ 0421/453..., Anfahrtsplan und mehr."
+    },
+    {
+      "title": "Wal-Mart Supercenter Bremen: Kontakte, Telefon, Adresse, Arbeit Wal ...",
+      "url": "https://bizdb.de/firm/5841512/wal-mart-supercenter/",
+      "snippet": "Wal-Mart Supercenter is a company registered 2003 in Bremen region in Germany. We brings you a complete range of reports and …"
+    }
+  ]
+}

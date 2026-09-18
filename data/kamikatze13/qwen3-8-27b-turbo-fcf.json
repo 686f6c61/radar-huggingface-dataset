@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "id": "kamikatze13/Qwen3.8-27B-TURBO-FCF",
+  "slug": "kamikatze13-qwen3-8-27b-turbo-fcf",
+  "author": "kamikatze13",
+  "url": "https://huggingface.co/kamikatze13/Qwen3.8-27B-TURBO-FCF",
+  "created_at": "2026-09-17T20:59:11.000Z",
+  "updated_at": "2026-09-17T21:51:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "unsloth",
+    "fine tune",
+    "heretic",
+    "uncensored",
+    "abliterated",
+    "ara",
+    "MTP GGUF Quants",
+    "Regular GGUF Quants",
+    "qwen3_8",
+    "qwen3_6",
+    "qwen3_5",
+    "multi-stage tuned",
+    "thinking",
+    "reasoning",
+    "all use cases",
+    "coder",
+    "creative",
+    "creative writing",
+    "all genres",
+    "story",
+    "writing",
+    "fiction",
+    "roleplaying",
+    "bfloat16",
+    "multi-stage-tune",
+    "multi-state-merge",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "dataset:DavidAU/Polar-STRICT-Datasets",
+    "dataset:DavidAU/F451-STRICT-Datasets",
+    "base_model:DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+    "base_model:quantized:DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 389007761691,
+  "storage_human": "389.0 GB",
+  "base_model": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Edit PDF | Online PDF Editor and Form Filler",
+      "url": "https://www.ilovepdf.com/edit-pdf",
+      "snippet": "Free online PDF Editor. Easily edit documents and add text, shapes, comments and highlights to a PDF file. Fill out PDF forms and …"
+    },
+    {
+      "title": "Easy to use Online PDF editor",
+      "url": "https://www.sejda.com/pdf-editor",
+      "snippet": "Free, no watermarks or registration. Edit PDF files for free. Fill & sign PDFs. Change existing text and links. Find & replace text. …"
+    },
+    {
+      "title": "Free PDF Editor: Change & Edit PDF Content Online",
+      "url": "https://smallpdf.com/edit-pdf",
+      "snippet": "Edit your PDFs for free on any device. Easily add text, shapes, images, highlights, sticky notes, and more with one of the world’s …"
+    },
+    {
+      "title": "PDF bearbeiten – PDF-Dateien kostenlos bearbeiten | Adobe",
+      "url": "https://www.adobe.com/de/acrobat/online/pdf-editor.html?msockid=21943e48668368b617ee299f676f6978",
+      "snippet": "Bearbeite deine PDF-Datei schnell und einfach mit dem kostenlosen Online-PDF-Editor von Acrobat. Kommentare und Notizen …"
+    },
+    {
+      "title": "Free Online PDF Editor – Easily Edit PDFs - Adobe",
+      "url": "https://www.adobe.com/acrobat/online/pdf-editor.html?msockid=21943e48668368b617ee299f676f6978",
+      "snippet": "Edit PDF documents fast. Our free online PDF editor lets you easily add comments, add sticky notes, highlight, draw, and more. Just …"
+    }
+  ]
+}

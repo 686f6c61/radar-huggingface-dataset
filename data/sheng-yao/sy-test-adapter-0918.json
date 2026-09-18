@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Sheng-yao/sy-test-adapter-0918",
+  "slug": "sheng-yao-sy-test-adapter-0918",
+  "author": "Sheng-yao",
+  "url": "https://huggingface.co/Sheng-yao/sy-test-adapter-0918",
+  "created_at": "2026-09-18T02:18:54.000Z",
+  "updated_at": "2026-09-18T02:24:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 590057160,
+  "storage_human": "590 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "appstore切换国家和地区时支付方式没有“无”这个选项导致无法切换， …",
+      "url": "https://www.zhihu.com/question/39503500/answers/updated",
+      "snippet": "每个人都应使用自己能够长期管理的 Apple 账户。 如果只是处理 App Store 中的下载问题，还要分清“媒体与购买项目”和 iCloud。 前 …"
+    },
+    {
+      "title": "电脑如何登陆icloud - 百度经验",
+      "url": "https://jingyan.baidu.com/article/22fe7ced02ef793002617fb6.html",
+      "snippet": "Jan 12, 2018 · 电脑如何登陆icloud, 在苹果设备上我们可以通过iCloud云存储来备份照片、通讯录、日程、资料和邮件等一些数据，那 …"
+    },
+    {
+      "title": "如何在windows下打开 pages？ - 知乎",
+      "url": "https://www.zhihu.com/question/28687876",
+      "snippet": "1、 iCloud 苹果邮箱网页版打开（icloud.com） 2、 在pages编辑完后，导出wold格式。便能继续编辑、修改文档内容，有小部分字体 …"
+    },
+    {
+      "title": "iCloud en mi dispositivo iOS - Comunidad de Apple",
+      "url": "https://communities.apple.com/es/community/icloud/icloud_on_my_ios_device",
+      "snippet": "Feb 5, 2020 · Encuentra respuestas de miles de usuarios de iCloud en mi dispositivo iOS en nuestra comunidad. Busca debates o …"
+    },
+    {
+      "title": "iCloud - Comunidade da Apple",
+      "url": "https://communities.apple.com/pt/community/icloud/",
+      "snippet": "Encontre respostas com milhões de outros usuários do iCloud em nossa comunidade vibrante. Faça buscas em discussões ou faça …"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "charnet3d/Swift-Qwen3.8-27B-Exl3-3.5bpw",
+  "slug": "charnet3d-swift-qwen3-8-27b-exl3-3-5bpw",
+  "author": "charnet3d",
+  "url": "https://huggingface.co/charnet3d/Swift-Qwen3.8-27B-Exl3-3.5bpw",
+  "created_at": "2026-09-17T23:11:58.000Z",
+  "updated_at": "2026-09-18T00:51:12.000Z",
+  "license": "swift-open-license-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "exllamav3",
+  "languages": [],
+  "tags": [
+    "exllamav3",
+    "safetensors",
+    "qwen3_5",
+    "qwen3_8",
+    "efficient-thinking",
+    "reasoning",
+    "token-efficient",
+    "exl3",
+    "quantization",
+    "long-context",
+    "speculative-decoding",
+    "text-generation",
+    "conversational",
+    "base_model:ukisai/Swift-Qwen3.8-27b",
+    "base_model:quantized:ukisai/Swift-Qwen3.8-27b",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7493391744,
+  "parameters_human": "7.49B",
+  "storage_bytes": 14999969284,
+  "storage_human": "15.0 GB",
+  "base_model": "ukisai/Swift-Qwen3.8-27b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Woodrow Wilson - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Woodrow_Wilson",
+      "snippet": "Thomas Woodrow Wilson (December 28, 1856 – February 3, 1924) was the 28th president of the United States, serving from 1913 to …"
+    },
+    {
+      "title": "Woodrow Wilson | Biography, Presidency, Nobel Prize, & Legacy",
+      "url": "https://www.britannica.com/biography/Woodrow-Wilson",
+      "snippet": "Aug 25, 2026 · Woodrow Wilson (born December 28, 1856, Staunton, Virginia, U.S.—died February 3, 1924, Washington, D.C.) was …"
+    },
+    {
+      "title": "Woodrow Wilson - Wikipedia",
+      "url": "https://nl.wikipedia.org/wiki/Woodrow_Wilson",
+      "snippet": "Thomas Woodrow Wilson (Staunton, Virginia, 28 december 1856 – Washington D.C., 3 februari 1924) was van 1913 tot 1921 de 28e …"
+    },
+    {
+      "title": "Presidency of Woodrow Wilson - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Presidency_of_Woodrow_Wilson",
+      "snippet": "Woodrow Wilson served as the 28th president of the United States from March 4, 1913, to March 4, 1921."
+    },
+    {
+      "title": "BBC - History - Historic Figures: Woodrow Wilson (1856-1924)",
+      "url": "https://www.bbc.com/history/historic_figures/wilson_woodrow.shtml",
+      "snippet": "Sep 4, 2006 · Wilson sought to maintain American neutrality after the outbreak of World War One and was re-elected president in …"
+    }
+  ]
+}

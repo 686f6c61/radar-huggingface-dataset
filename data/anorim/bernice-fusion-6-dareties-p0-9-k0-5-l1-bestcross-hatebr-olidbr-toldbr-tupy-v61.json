@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "anorim/bernice-fusion-6-dareties-p0.9-k0.5-l1-bestcross-hatebr-olidbr-toldbr-tupy-v61",
+  "slug": "anorim-bernice-fusion-6-dareties-p0-9-k0-5-l1-bestcross-hatebr-olidbr-toldbr-tupy-v61",
+  "author": "anorim",
+  "url": "https://huggingface.co/anorim/bernice-fusion-6-dareties-p0.9-k0.5-l1-bestcross-hatebr-olidbr-toldbr-tupy-v61",
+  "created_at": "2026-09-18T01:45:29.000Z",
+  "updated_at": "2026-09-18T01:45:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "xlm-roberta",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 277748738,
+  "parameters_human": "277.7M",
+  "storage_bytes": 1132364328,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home- und Teleshopping - Beautyjunkies.de",
+      "url": "https://www.beautyjunkies.de/forum/forums/81-Homeshopper",
+      "snippet": "Jul 9, 2026 · Kosmetik-Testberichte von VerbraucherInnen, eine stetig wachsende Inhaltsstoff-Liste und Adressdatenbank sind das …"
+    },
+    {
+      "title": "Kosmetik, Beauty & Mode Forum - Beautyjunkies.de",
+      "url": "https://www.beautyjunkies.de/",
+      "snippet": "Herzlich willkommen im Kosmetik Forum Beautyjunkies. Lass Dich inspirieren von den Schminktipps anderer oder teile uns Deine …"
+    },
+    {
+      "title": "Home- und Teleshopping - Seite 2 - beautyjunkies.de",
+      "url": "https://www.beautyjunkies.de/forum/forums/81-Homeshopper/page2",
+      "snippet": "Jun 1, 2017 · Kosmetik-Testberichte von VerbraucherInnen, eine stetig wachsende Inhaltsstoff-Liste und Adressdatenbank sind das …"
+    },
+    {
+      "title": "Homeshopper-Moderatoren-Plauderthread - Seite 94 - Beautyjunkies.de",
+      "url": "https://www.beautyjunkies.de/forum/threads/139157-Homeshopper-Moderatoren-Plauderthread/page94",
+      "snippet": "Aug 9, 2021 · AW: Homeshopper-Moderatoren-Plauderthread So schöne Worte für einen wundervollen Menschen. Es tut mir von …"
+    },
+    {
+      "title": "Homeshopper und was es sonst noch gibt - Beautyjunkies.de",
+      "url": "https://www.beautyjunkies.de/forum/threads/98797-Homeshopper-und-was-es-sonst-noch-gibt",
+      "snippet": "Feb 23, 2010 · AW: Homeshopper und was es sonst noch gibt Zitat von tokepi Ihr lieben Homeshopper, aus gegebenem Anlass mal …"
+    }
+  ]
+}

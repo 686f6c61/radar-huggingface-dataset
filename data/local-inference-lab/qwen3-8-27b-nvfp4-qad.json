@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "local-inference-lab/Qwen3.8-27B-NVFP4-QAD",
+  "slug": "local-inference-lab-qwen3-8-27b-nvfp4-qad",
+  "author": "local-inference-lab",
+  "url": "https://huggingface.co/local-inference-lab/Qwen3.8-27B-NVFP4-QAD",
+  "created_at": "2026-09-18T02:36:01.000Z",
+  "updated_at": "2026-09-20T18:14:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "quantized",
+    "nvfp4",
+    "mxfp8",
+    "modelopt",
+    "distillation",
+    "quantization-aware-distillation",
+    "multimodal",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 32,
+  "trending_score": 0,
+  "parameters": 19225047792,
+  "parameters_human": "19.23B",
+  "storage_bytes": 46542047640,
+  "storage_human": "46.5 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "University of Oxford",
+      "url": "https://www.ox.ac.uk/",
+      "snippet": "Sep 10, 2026 · Oxford University provides world-class research and education to benefit society on a local, regional, national and …"
+    },
+    {
+      "title": "University of Oxford - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/University_of_Oxford",
+      "snippet": "The University of Oxford is a collegiate research university in Oxford, England."
+    },
+    {
+      "title": "Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored ...",
+      "url": "https://www.reddit.com/r/LocalLLaMA/comments/1wfw9gb/qwen3827btwinturbofablecoldfusion709luncensorednvf/",
+      "snippet": "vor 4 Tagen ... Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-NVFP4 - most accurate tool calling."
+    },
+    {
+      "title": "Admissions | Oxford University",
+      "url": "https://www.ox.ac.uk/admissions",
+      "snippet": "Deciding whether to go to university - and where - is a big step. Our free in-person and online events give you the knowledge, …"
+    },
+    {
+      "title": "University of Oxford | History, Colleges, & Notable Alumni | Britannica",
+      "url": "https://www.britannica.com/topic/University-of-Oxford",
+      "snippet": "Sep 10, 2026 · University of Oxford, English autonomous institution of higher learning at Oxford, Oxfordshire, England, one of the …"
+    }
+  ]
+}

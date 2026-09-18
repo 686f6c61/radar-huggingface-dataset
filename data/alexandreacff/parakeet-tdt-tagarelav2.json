@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "alexandreacff/parakeet-tdt-tagarelav2",
+  "slug": "alexandreacff-parakeet-tdt-tagarelav2",
+  "author": "alexandreacff",
+  "url": "https://huggingface.co/alexandreacff/parakeet-tdt-tagarelav2",
+  "created_at": "2026-09-17T20:03:44.000Z",
+  "updated_at": "2026-09-17T20:07:01.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "nemo",
+  "languages": [],
+  "tags": [
+    "nemo",
+    "pytorch",
+    "NeMo",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2472222720,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Older versions of Messenger (Windows) | Uptodown",
+      "url": "https://messenger.en.uptodown.com/windows/versions",
+      "snippet": "Download older versions of Messenger for Windows. All of the older versions of Messenger have no viruses and are totally free on …"
+    },
+    {
+      "title": "Download Messenger - Free - older version",
+      "url": "https://facebook-messenger.en.softonic.com/versions",
+      "snippet": "Messenger - Older versions."
+    },
+    {
+      "title": "Where to find older version of the Messenger app for Windows?",
+      "url": "https://www.tenforums.com/software-apps/216279-where-find-older-version-messenger-app-windows.html",
+      "snippet": "Oct 25, 2024 · Where to find older version of the Messenger app for Windows? Facebook recently updated the Messenger app for …"
+    },
+    {
+      "title": "Download Messenger for Desktop - Free - older version",
+      "url": "https://messenger-for-desktop.en.softonic.com/versions",
+      "snippet": "Messenger for Desktop - Older versions."
+    },
+    {
+      "title": "Facebook Messenger for Windows Download Free - 2250.1.0.0",
+      "url": "https://www.techspot.com/downloads/5295-facebook-messenger-desktop.html",
+      "snippet": "Jun 18, 2026 · Messenger helps you connect with your Facebook friends and family. The Facebook app for Windows has been …"
+    }
+  ]
+}

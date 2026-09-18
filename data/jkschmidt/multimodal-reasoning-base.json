@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jkschmidt/multimodal-reasoning-base",
+  "slug": "jkschmidt-multimodal-reasoning-base",
+  "author": "jkschmidt",
+  "url": "https://huggingface.co/jkschmidt/multimodal-reasoning-base",
+  "created_at": "2026-09-18T02:38:35.000Z",
+  "updated_at": "2026-09-18T02:38:40.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "multimodal-reasoning",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.de/index.html",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "A Multi- Architecture Analysis of AI-Augmented Work Design",
+      "url": "https://www.preprints.org/frontend/manuscript/343777349772b23487be3cbc4e751f97/download_pub",
+      "snippet": "18.03.2026 ... ranging from minimal base model usage to ... spanning reasoning, multimodal, and communication domains; (2) workforces with high average."
+    },
+    {
+      "title": "Google Übersetzer",
+      "url": "https://translate.google.de/",
+      "snippet": "Mit Google Übersetzer können Sie Wörter, Sätze und Webseiten kostenlos in über 100 Sprachen übersetzen."
+    },
+    {
+      "title": "Image Analysis in Autonomous Vehicles: A Review of the Latest AI ...",
+      "url": "https://www.mdpi.com/2076-3417/14/18/8150",
+      "snippet": "Collectively, these models demonstrate a trajectory of improvement over recent years in the integration and performance of vision–language frameworks in ..."
+    },
+    {
+      "title": "Google Earth",
+      "url": "https://www.google.de/intl/de/earth/index.html",
+      "snippet": "Google Earth ist eine fotorealistische und digitale Version unseres Planeten. Woher kommen die Bilder? Wie sind sie …"
+    }
+  ]
+}

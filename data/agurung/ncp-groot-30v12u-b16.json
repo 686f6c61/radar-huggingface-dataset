@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "agurung/ncp-groot-30v12u-b16",
+  "slug": "agurung-ncp-groot-30v12u-b16",
+  "author": "agurung",
+  "url": "https://huggingface.co/agurung/ncp-groot-30v12u-b16",
+  "created_at": "2026-09-18T02:11:42.000Z",
+  "updated_at": "2026-09-18T02:13:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056404730,
+  "storage_human": "8.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Infrarot-Wandheizung: Matten, Folien, Anstriche & Tapeten",
+      "url": "https://www.energie-experten.org/heizung/elektroheizung/infrarotheizung/infrarot-wandheizung",
+      "snippet": "Jun 30, 2026 · Experten erklären, wie Infrarot-Wandheizungen funktionieren und, wann sich Heizmatten, Heizfolien, Heizanstriche …"
+    },
+    {
+      "title": "Zweiader-Wandheizmatten WARMON CLASSIC LIGHT 100 W/m² für …",
+      "url": "https://warm-on.com/zweiader-wandheizmatten-warmon-classic-light-100-w-m-fur-fliesen.html",
+      "snippet": "WARMON elektrische Wandheizung vertikal Durch Vermeidung von Wärmeverlusten erzielt die Wandheizmatte im Vergleich zu …"
+    },
+    {
+      "title": "Matten, Sets für Wände - Innenbereich - Elektrische Fußbodenheizung",
+      "url": "https://warm-on.com/warmon-fussbodenheizung/innenbereich/matten-sets-fur-wande.html",
+      "snippet": "Zweiader-Wandheizmatten WARMON CLASSIC LIGHT 100 W/m² für Fliesen Sku: Wall-WM-LT100000"
+    },
+    {
+      "title": "Heizmatte kaufen bei OBI",
+      "url": "https://www.obi.at/search/heizmatte/",
+      "snippet": "Heizmatte kaufen und bestellen Online auf www.obi.at und in Ihrem Markt vor Ort OBI - alles für Heim, Haus, Garten und Bau."
+    },
+    {
+      "title": "Wandheizmatten WARMON CLASSIC LIGHT 100 W/m² inkl.",
+      "url": "https://www.bodenheizung-24.de/wandheizmatten-warmon-classic-light-100-w-m-inkl-ts-50-thermostat-digital-weiss.html",
+      "snippet": "Heizmatten-Typ: Zweiader Indoor Heizleistung: 100 W/m&sup2; Mattenbreite: 0,5 m Fl&auml;che: 1 - 14 m&sup2; Thermostat: …"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "adampippert/granite-decisions",
+  "slug": "adampippert-granite-decisions",
+  "author": "adampippert",
+  "url": "https://huggingface.co/adampippert/granite-decisions",
+  "created_at": "2026-09-18T02:31:57.000Z",
+  "updated_at": "2026-09-18T12:02:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "granite",
+    "decision-routing",
+    "rocm",
+    "training-recipe",
+    "research",
+    "en",
+    "base_model:ibm-granite/granite-4.1-3b",
+    "base_model:finetune:ibm-granite/granite-4.1-3b",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "ibm-granite/granite-4.1-3b",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ICOLD 2027",
+      "url": "https://icold2027daejeon.com/en/main",
+      "snippet": "We are pleased to welcome you to the International Symposium on Large Dams, a space where the world's brightest minds come …"
+    },
+    {
+      "title": "ICOLD 2027",
+      "url": "http://eng.kncold.or.kr/content.php?contentCd=ICOLD2027",
+      "snippet": "ICOLD 2027 ICOLD 2027 Overview Overview Film Notice Linkedin Go to Website : https://icold2027daejeon.com"
+    },
+    {
+      "title": "ICOLD 2027",
+      "url": "https://www.icold2027daejeon.com/en/overview",
+      "snippet": "Overview Title International commission on Large Dams 95th annual meeting 2027 daejeon Date May 21 (Fri) – 28 (Fri), 2027 (8 …"
+    },
+    {
+      "title": "ICOLD CIGB - International Commission on Large Dams",
+      "url": "https://www.icold-cigb.org/",
+      "snippet": "The world's best databasis on dams, established upon the national inventories sent by the member countries of ICOLD. The Register …"
+    },
+    {
+      "title": "ICOLD 2027: May 21 - May 28, 2027 | Daejeon, South...",
+      "url": "https://www.campbellsci.eu/icold-2027",
+      "snippet": "The ICOLD 2027 Annual Meeting & Symposium in Daejeon, Republic of Korea, will bring together dam engineers, researchers, …"
+    }
+  ]
+}

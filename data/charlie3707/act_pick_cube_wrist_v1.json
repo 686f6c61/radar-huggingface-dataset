@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "charlie3707/act_pick_cube_wrist_v1",
+  "slug": "charlie3707-act_pick_cube_wrist_v1",
+  "author": "charlie3707",
+  "url": "https://huggingface.co/charlie3707/act_pick_cube_wrist_v1",
+  "created_at": "2026-09-17T20:49:39.000Z",
+  "updated_at": "2026-09-17T20:50:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:charlie3707/so101_pick_cube_wrist_v1",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206712864,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "تسجيل الدخول إلى Gmail - جهاز الكمبيوتر - مساعدة Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=ar&co=GENIE.Platform%3DDesktop",
+      "snippet": "تسجيل الدخول إلى Gmail ملاحظة: إذا سجّلت الدخول على جهاز كمبيوتر متاح للجميع، احرص على تسجيل الخروج قبل مغادرة جهاز الكمبيوتر. تعرَّف على كيفية تسجيل الدخول على جهاز لا تملكه."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google’s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Inloggen bij Gmail - Computer - Gmail Help - Google Help",
+      "url": "https://support.google.com/mail/answer/8494?hl=nl&co=GENIE.Platform%3DDesktop",
+      "snippet": "Inloggen bij Gmail Tip: Als je inlogt op een openbare computer, moet je uitloggen voordat je de computer verlaat. Bekijk meer …"
+    },
+    {
+      "title": "Wrist AI - xrayhead.com",
+      "url": "http://xrayhead.com/wrist/",
+      "snippet": "Wrist AI Bao Do MD Wrist AI predicts fracture on pediatric wrist X-rays and is developed as an educational tool for hands-on exploration of a fracture AI model."
+    },
+    {
+      "title": "googlemail的邮箱后缀是@gmail.com还是@googlemail.com_百度知道",
+      "url": "https://zhidao.baidu.com/question/52043485.html",
+      "snippet": "googlemail的邮箱后缀是@gmail.com格式，googlemail 是Google提供的免费网络邮件服务，可以永久保留重要的邮件、文件和图 …"
+    }
+  ]
+}

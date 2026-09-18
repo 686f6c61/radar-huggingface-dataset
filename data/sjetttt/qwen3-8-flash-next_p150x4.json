@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "sjettTT/qwen3.8-flash-next_p150x4",
+  "slug": "sjetttt-qwen3-8-flash-next_p150x4",
+  "author": "sjettTT",
+  "url": "https://huggingface.co/sjettTT/qwen3.8-flash-next_p150x4",
+  "created_at": "2026-09-17T21:17:26.000Z",
+  "updated_at": "2026-09-21T22:31:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "blackhole",
+    "p150x4",
+    "tt-model-cache",
+    "tt-model-catalog",
+    "tt-model-container",
+    "vllm-plugin",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1900637267,
+  "storage_human": "1.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home - IMT Hochwasserschutz - Schutzsysteme - Objektschutz",
+      "url": "https://www.imt-hochwasserschutz.at/",
+      "snippet": "sind flexible Hochwasserschutzsysteme in Endlosbauweise, die an jede gewünschte Breite und Höhe angepasst werden können. …"
+    },
+    {
+      "title": "ME Hochwasserschutz",
+      "url": "https://me-hochwasserschutz.at/systeme/",
+      "snippet": "14 geprüfte Hochwasserschutzsysteme für alle Einsatzmöglichkeiten, langjährige Erfahrung, ob Hochwasser oder Überflutung durch …"
+    },
+    {
+      "title": "Home - Hochwasserschutz",
+      "url": "https://hoch-wasser-schutz.at/de/",
+      "snippet": "HAAS-Hochwasserschutz kann als innovatives Unternehmen auf mehr als 11 Jahre Erfahrung im Hochwasserschutz zurückgreifen!"
+    },
+    {
+      "title": "Hochwasserschutz - PREFA",
+      "url": "https://www.prefa.at/produkt-katalog/hochwasserschutz/",
+      "snippet": "Keine Chance dem Hochwasser – mobiler Hochwasserschutz für Garagen, Türen und Tore von PREFA. Verlieren Sie keine Zeit und …"
+    },
+    {
+      "title": "Hochwasserschutz kaufen | Loidhold – Seit 1973",
+      "url": "https://www.hochwasserschutz.shop/",
+      "snippet": "Unsere mobilen Hochwasserschutzsysteme lassen sich ohne dauerhaften Eingriff in die Bausubstanz installieren und innerhalb von …"
+    }
+  ]
+}

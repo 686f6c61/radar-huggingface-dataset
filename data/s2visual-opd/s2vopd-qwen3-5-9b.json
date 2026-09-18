@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "S2Visual-OPD/S2VOPD-Qwen3.5-9B",
+  "slug": "s2visual-opd-s2vopd-qwen3-5-9b",
+  "author": "S2Visual-OPD",
+  "url": "https://huggingface.co/S2Visual-OPD/S2VOPD-Qwen3.5-9B",
+  "created_at": "2026-09-18T00:54:27.000Z",
+  "updated_at": "2026-09-18T07:03:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "multimodal",
+    "vision-language-model",
+    "self-distillation",
+    "on-policy-distillation",
+    "fine-grained-perception",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:2608.14144",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839711735,
+  "storage_human": "18.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Torque Calculator",
+      "url": "https://torque-calculator.com/",
+      "snippet": "Torque calculators are specialized tools designed to simplify complex calculations involved in mechanical systems, automotive …"
+    },
+    {
+      "title": "Torque Calculator - Calculate torque from force",
+      "url": "https://cfm-calculator.com/Torque-Calculator.php",
+      "snippet": "1. What is a Torque Calculator? Definition: A torque calculator determines the rotational force (torque) applied to an object based on …"
+    },
+    {
+      "title": "Bolt Torque Calculator — Enter Size & Grade | TorqueSpec",
+      "url": "https://torquespec.org/calculator/",
+      "snippet": "Bolt Torque Calculator Select bolt type, size, grade, and surface condition to calculate the recommended tightening torque."
+    },
+    {
+      "title": "Free Bolt Torque Calculator - Torque, Preload, ISO & SAE Grades",
+      "url": "https://miniwebtool.com/bolt-torque-calculator/",
+      "snippet": "May 7, 2026 · Bolt Torque Calculator - Calculate the recommended tightening torque, clamp-load preload, and yield-margin for a bolt …"
+    },
+    {
+      "title": "Torque Calculator: Compute Torque in Simple Steps",
+      "url": "https://turn2engineering.com/calculators/torque-calculator",
+      "snippet": "Use our torque calculator to compute torque, force, and lever arm distance with ease and precision for engineering applications."
+    }
+  ]
+}

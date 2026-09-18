@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "XGGGV/Baby",
+  "slug": "xgggv-baby",
+  "author": "XGGGV",
+  "url": "https://huggingface.co/XGGGV/Baby",
+  "created_at": "2026-09-17T23:07:36.000Z",
+  "updated_at": "2026-09-17T23:12:05.000Z",
+  "license": "123",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 230107507,
+  "storage_human": "230 MB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Messagerie Outlook petit problème [Résolu] - Outlook",
+      "url": "https://forums.commentcamarche.net/forum/affich-37505851-messagerie-outlook-petit-probleme",
+      "snippet": "Jan 29, 2022 · Bonjour, j' ai une messagerie Outlook et depuis hier lorsque je souhaite voir mes mails ou en envoyer , très …"
+    },
+    {
+      "title": "Supprimer contacts dans outlook - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-35188743-supprimer-contacts-dans-outlook",
+      "snippet": "Feb 7, 2018 · Bonjour, Volet gauche tout en bas, clique sur le bouton contacts (petits bonshommes) pour afficher la liste. Dans cette …"
+    },
+    {
+      "title": "Problème avec messagerie Outlook qui ne se connecte pas",
+      "url": "https://forum.pcastuces.com/probleme_avec_messagerie_outlook_qui_ne_se_connecte_pas-f23s44744.htm",
+      "snippet": "J'utilise Microsoft Outlook 2021 comme logiciel de messagerie pour ma messagerie SFR. Depuis plus d'une semaine, je n'arrive pas …"
+    },
+    {
+      "title": "Config Outlook classic",
+      "url": "https://forum.pcastuces.com/config_outlook_classic-f6s84298.htm",
+      "snippet": "Nov 20, 2025 · Le serveur SMTP, utilisé pour envoyer vos emails depuis votre client de messagerie : smtp.free.fr sur les ports …"
+    },
+    {
+      "title": "Outlook : la petite enveloppe a disparu [Résolu] - Forum Mail",
+      "url": "https://forums.commentcamarche.net/forum/affich-16851026-outlook-la-petite-enveloppe-a-disparu",
+      "snippet": "Bonjour à tous, Un petit problème un peu futile mais pa sans importance : au boulot, un de mes outils de travail n°1 est la messagerie …"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "jei7/gta6-screenshot",
+  "slug": "jei7-gta6-screenshot",
+  "author": "jei7",
+  "url": "https://huggingface.co/jei7/gta6-screenshot",
+  "created_at": "2026-09-18T01:35:25.000Z",
+  "updated_at": "2026-09-18T02:10:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 778258278,
+  "storage_human": "778 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Niklas van Lipzig (@niklasvanlipzig) - Instagram",
+      "url": "https://www.instagram.com/niklasvanlipzig/",
+      "snippet": "181K Followers, 378 Following, 840 Posts - Niklas van Lipzig (@niklasvanlipzig) on Instagram: \"Entertainer, Comedy Autor, Art …"
+    },
+    {
+      "title": "Niklas van Lipzig (@niklasvanlipzig) - Instagram",
+      "url": "https://www.instagram.com/niklasvanlipzig/reels/",
+      "snippet": "180K Followers, 378 Following, 840 Posts - Niklas van Lipzig (@niklasvanlipzig) on Instagram: \"Entertainer, Comedy Autor, Art …"
+    },
+    {
+      "title": "Niklas van Lipzig (@niklasvanlipzig) / X",
+      "url": "https://x.com/niklasvanlipzig",
+      "snippet": "Jan 10, 2022 · Was für ein komisches Signal ist es eigentlich nach dem Sex eine Zigarette zu rauchen? So Bock auf sterben jetzt …"
+    },
+    {
+      "title": "Niklas van Lipzig (112.9K Followers) | Instagram Influencer in Koeln ...",
+      "url": "https://socialveins.com/influencer/instagram/niklasvanlipzig",
+      "snippet": "Niklas van Lipzig ️ is a popular Instagram influencer in multiple categories. With 112.9K followers and an average engagement rate …"
+    },
+    {
+      "title": "Niklas und David – EverybodyWiki Bios & Wiki",
+      "url": "https://de.everybodywiki.com/Niklas_und_David",
+      "snippet": "Neben dem Podcast dudes. sind Niklas & David als Content Creator auf Plattformen wie Instagram, TikTok und YouTube aktiv. Dort …"
+    }
+  ]
+}

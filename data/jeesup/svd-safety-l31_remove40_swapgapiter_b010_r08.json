@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l31_remove40_swapgapiter_b010_r08",
+  "slug": "jeesup-svd-safety-l31_remove40_swapgapiter_b010_r08",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l31_remove40_swapgapiter_b010_r08",
+  "created_at": "2026-09-17T20:14:53.000Z",
+  "updated_at": "2026-09-17T20:24:07.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama3",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "license:llama3.1",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766296,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Inn at the Market | Pike Place Market Hotel | Downtown Seattle …",
+      "url": "https://www.innatthemarket.com/",
+      "snippet": "Just steps from the hotel, guests discover the vibrant stalls, cafés, and waterfront pathways of Pike Place Market and the Seattle …"
+    },
+    {
+      "title": "INN AT THE MARKET, SEATTLE",
+      "url": "https://atthemarketinn.hotelseattle.net/en/",
+      "snippet": "3 days ago · Situated in the Seattle Central Waterfront district of Seattle, about 20 minutes by foot from Pacific Science Center, Inn At …"
+    },
+    {
+      "title": "INN AT THE MARKET SEATTLE | BOUTIQUE ACCOMMODATION IN SEATTLE …",
+      "url": "https://innatthemarket.hotelsofseattle.com/en/",
+      "snippet": "**Welcome to the Inn at the Market** - a luxurious sanctuary nestled in the heart of Seattle's vibrant Pike Place Market. This …"
+    },
+    {
+      "title": "Boutique Hotel Rooms in Downtown Seattle - Inn at the Market",
+      "url": "https://www.innatthemarket.com/pike-place-market-hotel-rooms/",
+      "snippet": "Inn at the Market is the only downtown Seattle hotel located directly in the famous Pike Place Market. The Inn offers three popular …"
+    },
+    {
+      "title": "Inn at the Market, Seattle (updated prices 2026) - Booking.com",
+      "url": "https://www.booking.com/hotel/us/inn-at-the-market.html?msockid=26de668644d867ae032171514566665d",
+      "snippet": "The rooms include free Wi-Fi. Cable TV is provided in each room at the Inn at the Market. A small fridge, a minibar, and views of the …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "NisargOza/CausalCellJEPA",
+  "slug": "nisargoza-causalcelljepa",
+  "author": "NisargOza",
+  "url": "https://huggingface.co/NisargOza/CausalCellJEPA",
+  "created_at": "2026-09-18T00:54:19.000Z",
+  "updated_at": "2026-09-18T01:11:22.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "causalcelljepa",
+    "biology",
+    "single-cell",
+    "perturbation-prediction",
+    "jepa",
+    "transcriptomics",
+    "feature-extraction",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 126163651,
+  "storage_human": "126 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Meet the Dancing with the Stars Season 35 Cast and Their Pro Partners",
+      "url": "https://people.com/all-about-dancing-with-the-stars-season-35-cast-11973685",
+      "snippet": "Sep 2, 2026 · Here are the ‘Dancing with the Stars’ season 35 cast members and their pro partners."
+    },
+    {
+      "title": "'Dancing with the Stars' season 35: Meet the celebrity cast and their ...",
+      "url": "https://abcnews.com/GMA/Culture/dancing-with-the-stars-season-35-celebrity-cast/story?id=136095657",
+      "snippet": "Sep 2, 2026 · The season 35 celebrity cast of \"Dancing with the Stars\" was unveiled live Wednesday on \" Good Morning America.\" …"
+    },
+    {
+      "title": "DWTS Season 35 Cast Revealed: Meet the Celebs and Pros",
+      "url": "https://www.usmagazine.com/entertainment/news/dwts-season-35-cast-revealed-meet-the-celebs-and-pros/",
+      "snippet": "Sep 2, 2026 · Dancing With the Stars is headed back to the ballroom with a star-studded cast for season 35. The complete lineup of …"
+    },
+    {
+      "title": "Dancing with the Stars, Cast, Characters and Stars - ABC.com",
+      "url": "https://abc.com/show/f66d60e7-29f2-49cf-85dd-44a11bce42e4/cast",
+      "snippet": "Meet the cast and hosts of Dancing with the Stars, read their bios, top moments, and view their photos, videos and more at ABC.com"
+    },
+    {
+      "title": "'Dancing With the Stars' Cast: Meet Season 34 Celebs and Pros",
+      "url": "https://variety.com/gallery/dancing-with-the-stars-cast-season-34-celebs-pros/",
+      "snippet": "Sep 3, 2025 · Ravnik, for his part, is making his “DWTS” debut this season, last seen as one of the dancers on Taylor Swift’s “Eras” …"
+    }
+  ]
+}

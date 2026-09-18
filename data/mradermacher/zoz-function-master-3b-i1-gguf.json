@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mradermacher/ZOZ-Function-Master-3B-i1-GGUF",
+  "slug": "mradermacher-zoz-function-master-3b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/ZOZ-Function-Master-3B-i1-GGUF",
+  "created_at": "2026-09-17T23:45:24.000Z",
+  "updated_at": "2026-09-18T02:44:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "function-calling",
+    "tool-use",
+    "agentic-reasoning",
+    "json-mode",
+    "structured-outputs",
+    "edge-ai",
+    "en",
+    "base_model:z51722369/ZOZ-Function-Master-3B",
+    "base_model:quantized:z51722369/ZOZ-Function-Master-3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 36758290816,
+  "storage_human": "36.8 GB",
+  "base_model": "z51722369/ZOZ-Function-Master-3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "connexion | Logicat | Haynespro",
+      "url": "https://logicat.eu/connexion/",
+      "snippet": "Consultez votre compte Logicat afin de suivre vos commandes récentes et abonnements actifs, gérer vos adresses de livraison et de …"
+    },
+    {
+      "title": "login | Logicat UK",
+      "url": "https://logicat.co.uk/login/",
+      "snippet": "Access your Logicat account to track your latest orders and subscriptions, manage your shipping and billing addresses, add payment …"
+    },
+    {
+      "title": "Logicat Technical vehicle data platform for mechanics",
+      "url": "https://www.workshopdata.com/touch/site/layout/wsdLogin?productid=198&language=usa",
+      "snippet": "Although every care has been taken to ensure that the Logicat Technical vehicle data platform for mechanics data is accurate and …"
+    },
+    {
+      "title": "Logicat - Toutes les Informations Techniques pour Autos et Motos",
+      "url": "https://logicat.eu/",
+      "snippet": "La hotline Logicat est un service d’assistance téléphonique et en ligne conçu pour soutenir les mécaniciens et réparateurs …"
+    },
+    {
+      "title": "Logicat Automotive repair data platform",
+      "url": "https://logicat.co.uk/",
+      "snippet": "Automotive Repair Data Platform: your complete solution for repair data, wiring diagrams, and maintenance support for all types of …"
+    }
+  ]
+}

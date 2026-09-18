@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "sis-lab/Qwen3.5-0.8B",
+  "slug": "sis-lab-qwen3-5-0-8b",
+  "author": "sis-lab",
+  "url": "https://huggingface.co/sis-lab/Qwen3.5-0.8B",
+  "created_at": "2026-09-17T23:24:58.000Z",
+  "updated_at": "2026-09-17T23:24:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SiS | Endurance Sports Nutrition | Science In Sport",
+      "url": "https://www.scienceinsport.com/",
+      "snippet": "Boost your energy, hydration & recovery with Science in Sport’s scientifically formulated products. For world-class endurance …"
+    },
+    {
+      "title": "SIS - gainerie, maroquinerie et bracelet-montre pour l'industrie et la ...",
+      "url": "https://www.sis-fr.com/",
+      "snippet": "Spécialisée dans la production d’articles de luxe, SIS apporte son savoir-faire et son expertise du travail du cuir à ses clients …"
+    },
+    {
+      "title": "Secteurs d'informations sur les sols (SIS) - Géorisques",
+      "url": "https://www.georisques.gouv.fr/donnees/bases-de-donnees/secteurs-dinformations-sur-les-sols-sis",
+      "snippet": "Ce jeu de données correspond aux Secteurs d'informations sur les sols (SIS). La fréquence de mise à jour de ce jeu de données est …"
+    },
+    {
+      "title": "\"Sis à\" ou \"Sise à\". - J'aime les mots",
+      "url": "https://jaimelesmots.com/sis-a/",
+      "snippet": "J'aime les mots > Difficultés > Mais d'où sortent-t-ils donc ? Ces mots anciens que l'on n'utilise plus qu'au travers de certaines …"
+    },
+    {
+      "title": "Caterpillar - Sign in",
+      "url": "https://sis2.cat.com/",
+      "snippet": "Log in to access Caterpillar equipment information, parts, manuals, and services."
+    }
+  ]
+}

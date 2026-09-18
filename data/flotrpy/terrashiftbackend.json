@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Flotrpy/TerraShiftBackend",
+  "slug": "flotrpy-terrashiftbackend",
+  "author": "Flotrpy",
+  "url": "https://huggingface.co/Flotrpy/TerraShiftBackend",
+  "created_at": "2026-09-17T23:47:23.000Z",
+  "updated_at": "2026-09-17T23:52:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 94422341,
+  "storage_human": "94 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mountain Bike News, Photos, Videos & Events | Pinkbike",
+      "url": "https://www.pinkbike.com/",
+      "snippet": "Pinkbike is the homepage of mountain biking. Stay updated with the latest news, reviews, videos, buyer's guides and racing results. …"
+    },
+    {
+      "title": "Ayuda de YouTube",
+      "url": "https://support.google.com/youtube/?hl=es",
+      "snippet": "Centro de asistencia oficial de YouTube donde puedes encontrar sugerencias y tutoriales para aprender a utilizar el producto y …"
+    },
+    {
+      "title": "Channel or account terminations - YouTube Help - Google Help",
+      "url": "https://support.google.com/youtube/answer/2802168?hl=en",
+      "snippet": "Check status of a termination appeal Open YouTube Studio. View confirmation of your appeal submission, and check your appeal’s …"
+    },
+    {
+      "title": "Interview: Vali Höll On Not Getting Paid By YT, Rider ... - Pinkbike",
+      "url": "https://www.pinkbike.com/news/interview-vali-hll-on-3-in-a-row-her-new-team-and-a-game-changing-frankenstein-bike.html",
+      "snippet": "Jun 30, 2026 · Vali Höll talks about winning three in a row, her new team and bike, the bright future of women's downhill racing, and …"
+    },
+    {
+      "title": "بدء استخدام \"التسوّق على YouTube\"",
+      "url": "https://support.google.com/youtube/answer/12257682?hl=ar",
+      "snippet": "تتيح خدمة \"التسوّق على YouTube\" لصنّاع المحتوى المؤهّلين الترويج للمنتجات بسهولة من متاجرهم الخاصة أو من علامات تجارية أخرى على YouTube. وتتيح لكم هذه الخدمة تنفيذ ما يلي: ربط …"
+    }
+  ]
+}

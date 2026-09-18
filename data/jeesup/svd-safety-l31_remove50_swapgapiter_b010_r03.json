@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l31_remove50_swapgapiter_b010_r03",
+  "slug": "jeesup-svd-safety-l31_remove50_swapgapiter_b010_r03",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l31_remove50_swapgapiter_b010_r03",
+  "created_at": "2026-09-17T20:26:53.000Z",
+  "updated_at": "2026-09-17T20:32:36.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama3",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "license:llama3.1",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766296,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft Copilot: Your AI companion",
+      "url": "https://copilot.microsoft.com/?msockid=31b0e4aa25616fea305ff37d24b06e15",
+      "snippet": "Microsoft Copilot is your companion to inform, entertain and inspire. Get advice, feedback and straightforward answers. Try Copilot now."
+    },
+    {
+      "title": "[Copilot 3D] - A Copilot Labs experiment",
+      "url": "https://copilot.microsoft.com/labs/experiments/copilot-3d?msockid=31b0e4aa25616fea305ff37d24b06e15",
+      "snippet": "Turn images into 3D models with one click."
+    },
+    {
+      "title": "[Copilot Audio Expressions] - A Copilot Labs experiment",
+      "url": "https://copilot.microsoft.com/labs/experiments/audio-expression?msockid=31b0e4aa25616fea305ff37d24b06e15",
+      "snippet": "An experimental tool designed for effortless audio creation using Copilot's latest voice generation models."
+    },
+    {
+      "title": "[Copilot Podcasts] - A Copilot Labs experiment",
+      "url": "https://copilot.microsoft.com/labs/experiments/copilot-podcasts?msockid=31b0e4aa25616fea305ff37d24b06e15",
+      "snippet": "Personalized podcasts that match your curiosity and interests."
+    },
+    {
+      "title": "Microsoft Copilot: Imagine",
+      "url": "https://copilot.microsoft.com/imagine/44qj1xjwQ7DqcZGM8NaYC?msockid=31b0e4aa25616fea305ff37d24b06e15",
+      "snippet": "Explore and remix images to make something of your own."
+    }
+  ]
+}

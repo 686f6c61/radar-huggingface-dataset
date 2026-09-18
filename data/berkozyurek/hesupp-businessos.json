@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "berkozyurek/Hesupp-BusinessOS",
+  "slug": "berkozyurek-hesupp-businessos",
+  "author": "berkozyurek",
+  "url": "https://huggingface.co/berkozyurek/Hesupp-BusinessOS",
+  "created_at": "2026-09-18T00:19:26.000Z",
+  "updated_at": "2026-09-20T23:34:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "text-classification",
+    "tr",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 531067872,
+  "storage_human": "531 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "‎Instagram App - App Store",
+      "url": "https://apps.apple.com/us/app/instagram/id389801252",
+      "snippet": "Download Instagram by Instagram, Inc. on the App Store. See screenshots, ratings and reviews, user tips, and more apps like …"
+    },
+    {
+      "title": "‎Instagram App - App Store",
+      "url": "https://apps.apple.com/by/app/instagram/id389801252",
+      "snippet": "Download Instagram by Instagram, Inc. on the App Store. See screenshots, ratings and reviews, user tips and more games like …"
+    },
+    {
+      "title": "SOLVED! Fix for Password reset/Verification code emails not ... - Reddit",
+      "url": "https://www.reddit.com/r/Instagram/comments/nkhw3u/solved_fix_for_password_resetverification_code/",
+      "snippet": "Once you validate the email, go back to your Instagram account and now the password reset or account verification emails should be …"
+    },
+    {
+      "title": "ENHYPEN - Reddit",
+      "url": "https://www.reddit.com/r/enhypen/",
+      "snippet": "The subreddit community for I-LAND's debut group, ENHYPEN (엔하이픈)! News, updates, images, videos, discussions, and anything …"
+    },
+    {
+      "title": "Instagram》App - App Store",
+      "url": "https://apps.apple.com/hk/app/instagram/id389801252",
+      "snippet": "Instagram’s design changes are frustrating and user‑unfriendly 18/12/2025 Karenaru I used to love Instagram’s clean and simple …"
+    }
+  ]
+}

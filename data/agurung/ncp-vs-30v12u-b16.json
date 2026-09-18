@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "agurung/ncp-vs-30v12u-b16",
+  "slug": "agurung-ncp-vs-30v12u-b16",
+  "author": "agurung",
+  "url": "https://huggingface.co/agurung/ncp-vs-30v12u-b16",
+  "created_at": "2026-09-18T02:13:36.000Z",
+  "updated_at": "2026-09-18T02:15:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056404730,
+  "storage_human": "8.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Eyewear Curator (@joshua_gussmann) - Instagram",
+      "url": "https://www.instagram.com/joshua_gussmann/",
+      "snippet": "3,488 Followers, 992 Following, 120 Posts - Joshua Gussmann | Eyewear Curator (@joshua_gussmann) on Instagram: \"👓 𝖢𝗈𝗇𝗇𝖾𝖼𝗍𝗂𝗇𝗀 𝗉𝖾𝗈𝗉𝗅𝖾 & 𝖾𝗒𝖾𝗐𝖾𝖺𝗋 🏅 𝖧𝗎𝗌𝖻𝖺𝗇𝖽 • 𝖣𝖺𝖽 ×𝟥 • 𝖠𝗍𝗁𝗅𝖾𝗍𝖾 🌍 …"
+    },
+    {
+      "title": "Joshua Gussmann | Eyewear Curator | Die Welt der Brillen ... - Instagram",
+      "url": "https://www.instagram.com/p/DcMOqn6CHJd/",
+      "snippet": "239 likes, 62 comments - joshua_gussmann on August 18, 2026: \"Die Welt der Brillen begleitet mich schon mein ganzes Leben. Mit …"
+    },
+    {
+      "title": "Joshua Gussmann | Eyewear Ambassador",
+      "url": "https://joshua.midon-vision.com/",
+      "snippet": "Joshua Gussmann — Eyewear Ambassador & CEO of MIDON Vision. Third generation in the optical business. Premium eyewear …"
+    },
+    {
+      "title": "Joshua Gussmann | Eyewear Curator | Brillen aussuchen mit ... - Instagram",
+      "url": "https://www.instagram.com/reel/DdUFVjcoRH4/",
+      "snippet": "88 likes, 28 comments - joshua_gussmann on September 15, 2026: \"Brillen aussuchen mit meinem Bro @adessemusik – 5 Modelle, …"
+    },
+    {
+      "title": "Joshua Gussmann | Eyewear Curator | Smart Glasses: Deine ... - Instagram",
+      "url": "https://www.instagram.com/reel/DcoQy1UtO96/",
+      "snippet": "Joshua Gussmann | Eyewear Curator | Smart Glasses: Deine Zukunftsbrille hat einen Bildschirm im Glas. 👀 Ehrlich gesagt bin ich …"
+    }
+  ]
+}

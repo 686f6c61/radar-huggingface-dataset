@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "yuhengtu-bytedance/DataDecide-fineweb-pro-1B-57500_60000_62500_65000_67500_weightedavg_merge",
+  "slug": "yuhengtu-bytedance-datadecide-fineweb-pro-1b-57500_60000_62500_65000_67500_weightedavg_merge",
+  "author": "yuhengtu-bytedance",
+  "url": "https://huggingface.co/yuhengtu-bytedance/DataDecide-fineweb-pro-1B-57500_60000_62500_65000_67500_weightedavg_merge",
+  "created_at": "2026-09-17T22:09:39.000Z",
+  "updated_at": "2026-09-17T22:09:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "arxiv:2203.05482",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1279854592,
+  "parameters_human": "1.28B",
+  "storage_bytes": 2559726104,
+  "storage_human": "2.6 GB",
+  "base_model": "",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NFL Scores and Highlights: Live Updates, Results & Recaps",
+      "url": "https://www.nfl.com/scores",
+      "snippet": "See final scores and results. View game recaps, official stats, highlights, and key moments from every matchup."
+    },
+    {
+      "title": "NFL Scores, 2026 Season - ESPN",
+      "url": "https://www.espn.com/nfl/scoreboard",
+      "snippet": "Live scores for every 2026 NFL season game on ESPN. Includes box scores, video highlights, play breakdowns and updated odds."
+    },
+    {
+      "title": "NFL Scores 2026-27 - CBS Sports",
+      "url": "https://www.cbssports.com/nfl/scoreboard/",
+      "snippet": "Fast, updating NFL football game scores and stats as games are in progress are provided by CBSSports.com."
+    },
+    {
+      "title": "NFL on ESPN - Scores, Stats and Highlights",
+      "url": "https://www.espn.com/nfl/",
+      "snippet": "Visit ESPN for NFL live scores, video highlights and latest news. Stream Monday Night Football on ESPN and play Fantasy Football."
+    },
+    {
+      "title": "NFL.com | Official Site of the National Football League",
+      "url": "https://www.nfl.com/",
+      "snippet": "Jul 30, 2007 · The official source for NFL news, video highlights, game-day coverage, schedules, stats, scores and more."
+    }
+  ]
+}

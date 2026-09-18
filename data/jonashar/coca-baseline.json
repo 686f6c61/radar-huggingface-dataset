@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jonashar/coca-baseline",
+  "slug": "jonashar-coca-baseline",
+  "author": "jonashar",
+  "url": "https://huggingface.co/jonashar/coca-baseline",
+  "created_at": "2026-09-18T02:43:07.000Z",
+  "updated_at": "2026-09-18T02:43:13.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "contrastive",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MCI SAS | Réfrigération, Génie Climatique & Performance énergétique",
+      "url": "https://mci.fr/",
+      "snippet": "Les talents MCI Mission Handicap Nos agences Nos expertises Réfrigération commerciale Réfrigération industrielle Génie climatique …"
+    },
+    {
+      "title": "Qui sommes-nous ? - MCI : Réfrigération industrielle, réfrigération ...",
+      "url": "https://mci.fr/a-propos-entreprise-climatisation",
+      "snippet": "Avec un effectif de 1350 personnes dont 850 techniciens, experts en réfrigération et climatisation, notre société a su maintenir et …"
+    },
+    {
+      "title": "Nos agences en France - MCI : Réfrigération industrielle, réfrigération ...",
+      "url": "https://mci.fr/a-propos-entreprise-climatisation/nos-agences-mci-france",
+      "snippet": "Des agences à votre écoute Profitez de l’ expertise de MCI à travers 50 agences et antennes qui couvrent l’ensemble du territoire …"
+    },
+    {
+      "title": "Notre histoire - MCI : Réfrigération industrielle, réfrigération ...",
+      "url": "https://mci.fr/a-propos-entreprise-climatisation/historique-meuble-frigorifique",
+      "snippet": "Depuis plus de 60 ans, MCI a su développer ses activités pour répondre aux besoins et attentes de ses clients. C’est dans un souci …"
+    },
+    {
+      "title": "Attestation - mci.fr",
+      "url": "https://mci.fr/images/engagements/attestations_socotec/SOCOTEC%20Attestation%20MCI%20FONTAINE%20LES%20DIJON.pdf",
+      "snippet": "MCI - FONTAINE LES DIJON n° SIRET : 63201725700429 ... Cette attestation est délivrée en application : De l'article R.543-106 du …"
+    }
+  ]
+}

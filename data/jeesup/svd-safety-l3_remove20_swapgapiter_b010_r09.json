@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l3_remove20_swapgapiter_b010_r09",
+  "slug": "jeesup-svd-safety-l3_remove20_swapgapiter_b010_r09",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l3_remove20_swapgapiter_b010_r09",
+  "created_at": "2026-09-17T23:23:54.000Z",
+  "updated_at": "2026-09-17T23:43:56.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama3",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Meta-Llama-3-8B-Instruct",
+    "base_model:finetune:meta-llama/Meta-Llama-3-8B-Instruct",
+    "license:llama3",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766337,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Meta-Llama-3-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hearing tests - NHS",
+      "url": "https://www.nhs.uk/tests-and-treatments/hearing-tests/",
+      "snippet": "Find out about hearing tests including why they're done, how to get one and what happens during the test."
+    },
+    {
+      "title": "Audiology Tests and Procedures What to expect from an adult hearing ...",
+      "url": "https://www.yorkhospitals.nhs.uk/seecmsfile/?id=8125",
+      "snippet": "You will be asked to press a button when you hear a sound. Depending on the results, we may do further testing to determine the …"
+    },
+    {
+      "title": "Search results for hearing test appointments near me - nhs.uk",
+      "url": "https://www.nhs.uk/search/results?q=hearing%20test%20appointments%20near%20me",
+      "snippet": "Find out about newborn hearing screening, including how and why it's done, how to get it and when you get the results. Find out …"
+    },
+    {
+      "title": "Having a Hearing Test - Easy Read - lancsteachinghospitals.nhs.uk",
+      "url": "https://www.lancsteachinghospitals.nhs.uk/media/.leaflets/6863d724ca4f77.77303712.pdf",
+      "snippet": "How long will the test take? Your hearing test will take about 30 to 60 minutes. You can have a break if you need one. We will …"
+    },
+    {
+      "title": "Your hearing appointment – what you need to know - Royal Devon",
+      "url": "https://www.royaldevon.nhs.uk/media/hxgd5epx/your-hearing-appointment-570-v5.pdf",
+      "snippet": "Who will I see for my hearing test and how long will my appointment take? You will see a qualified audiologist and your first …"
+    }
+  ]
+}

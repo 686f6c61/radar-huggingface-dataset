@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "vtava/Qwen3.5-0.8B-PDelta3-CLVR-Local32-Standalone",
+  "slug": "vtava-qwen3-5-0-8b-pdelta3-clvr-local32-standalone",
+  "author": "vtava",
+  "url": "https://huggingface.co/vtava/Qwen3.5-0.8B-PDelta3-CLVR-Local32-Standalone",
+  "created_at": "2026-09-17T21:55:00.000Z",
+  "updated_at": "2026-09-17T22:04:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "tinycenn",
+    "cenn",
+    "language-modeling",
+    "text-generation",
+    "research",
+    "conversational",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 754652720,
+  "parameters_human": "754.7M",
+  "storage_bytes": 3047724317,
+  "storage_human": "3.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/",
+      "snippet": "Create an account or log in to Instagram - Share what you're into with the people who get you."
+    },
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/?hl=pt-br",
+      "snippet": "Crie uma conta ou entre no Instagram: compartilhe seus interesses com as pessoas que entendem você."
+    },
+    {
+      "title": "Connecting People Through Everyday Moments | About Instagram",
+      "url": "https://about.instagram.com/about-us/",
+      "snippet": "Make the most of your Instagram experience by discovering new feature updates, tips, and tools to engage with your audience."
+    },
+    {
+      "title": "Instagram Features: Stories, Reels & More | About Instagram",
+      "url": "https://about.instagram.com/features",
+      "snippet": "Discover all the features available on Instagram, from the latest releases to tips & tricks for Reels, DMs, Stories, Shopping & more!"
+    },
+    {
+      "title": "Instagram",
+      "url": "https://applink.instagram.com/accounts/password/reset/",
+      "snippet": "Reset your Instagram password by entering your email, phone number, or username to receive a recovery link."
+    }
+  ]
+}

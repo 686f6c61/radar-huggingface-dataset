@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "muhamad-geosurge/invert-polarity-de2b6a6a-c7da-486e-93a8-6343db269e88",
+  "slug": "muhamad-geosurge-invert-polarity-de2b6a6a-c7da-486e-93a8-6343db269e88",
+  "author": "muhamad-geosurge",
+  "url": "https://huggingface.co/muhamad-geosurge/invert-polarity-de2b6a6a-c7da-486e-93a8-6343db269e88",
+  "created_at": "2026-09-17T20:02:32.000Z",
+  "updated_at": "2026-09-17T21:29:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "mistral",
+    "mistral-common",
+    "base_model:mistralai/Mistral-7B-v0.3",
+    "base_model:finetune:mistralai/Mistral-7B-v0.3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7248031744,
+  "parameters_human": "7.25B",
+  "storage_bytes": 14496097520,
+  "storage_human": "14.5 GB",
+  "base_model": "mistralai/Mistral-7B-v0.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Netflix Polska — oglądaj seriale i programy online, oglądaj filmy online",
+      "url": "https://www.netflix.com/pl/",
+      "snippet": "Czym jest Netflix? Netflix to usługa przesyłania strumieniowego, dzięki której użytkownicy mogą korzystać z szerokiej oferty …"
+    },
+    {
+      "title": "Netflix",
+      "url": "https://www.netflix.com/pl/login",
+      "snippet": "Oglądaj filmy, seriale i programy z serwisu Netflix online lub przesyłaj je do telewizora Smart TV, konsoli do gier, komputera PC bądź …"
+    },
+    {
+      "title": "Netflix",
+      "url": "https://app.netflix.com/signup",
+      "snippet": "Choose a Netflix subscription plan that's right for you. Downgrade, upgrade or cancel any time."
+    },
+    {
+      "title": "Netflix - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.netflix.mediaclient&hl=en-US",
+      "snippet": "Netflix is the leading subscription service for watching TV episodes and movies."
+    },
+    {
+      "title": "Netflix",
+      "url": "https://sprp.prod.netflix.net/",
+      "snippet": "Netflix offers a wide range of movies, TV shows, and original content for streaming online."
+    }
+  ]
+}

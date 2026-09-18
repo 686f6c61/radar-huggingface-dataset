@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Accio-Lab/occamy-1.0-MLX-3bit",
+  "slug": "accio-lab-occamy-1-0-mlx-3bit",
+  "author": "Accio-Lab",
+  "url": "https://huggingface.co/Accio-Lab/occamy-1.0-MLX-3bit",
+  "created_at": "2026-09-18T02:14:32.000Z",
+  "updated_at": "2026-09-18T02:14:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_moe",
+    "quantized",
+    "text-generation",
+    "conversational",
+    "base_model:Accio-Lab/occamy-1.0",
+    "base_model:quantized:Accio-Lab/occamy-1.0",
+    "3-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 95,
+  "trending_score": 0,
+  "parameters": 34660608768,
+  "parameters_human": "34.66B",
+  "storage_bytes": 15199213720,
+  "storage_human": "15.2 GB",
+  "base_model": "Accio-Lab/occamy-1.0",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accio Work - Your AI Business Team That Turns Ideas Into Profits",
+      "url": "https://www.accio.com/",
+      "snippet": "Accio Work is an execution-oriented agent platform that can read local files, run terminal commands, control your browser, and call …"
+    },
+    {
+      "title": "Accio-Lab/occamy-1.0-MLX-3bit · Hugging Face",
+      "url": "https://huggingface.co/Accio-Lab/occamy-1.0-MLX-3bit",
+      "snippet": "from mlx_lm import load, generate model, tokenizer = load(\"Accio-Lab/occamy-1.0-MLX-3bit\")"
+    },
+    {
+      "title": "Occamy 1.0 by Accio-Lab — VRAM 69.7GB | LLM Explorer",
+      "url": "https://llm-explorer.com/model/Accio-Lab%2Foccamy-1.0,1zolJ2bV0oV3tkE83bEMbI",
+      "snippet": "Occamy 1.0 is an open-source language model by Accio-Lab."
+    },
+    {
+      "title": "Accio Work - Votre équipe commerciale IA qui transforme les idées en ...",
+      "url": "https://fr.accio.com/",
+      "snippet": "Accio Work est l'équipe d'agents IA qui gère votre entreprise. Au-delà des simples discussions, elle exécute de véritables tâches …"
+    },
+    {
+      "title": "Accio Work - Local-First Desktop AI Agent That Turns Ideas Into Profits",
+      "url": "https://www.accio.com/work/app",
+      "snippet": "Log in to your Accio account and experience smarter sourcing with AI, helping you make data-driven decisions and optimize your …"
+    }
+  ]
+}

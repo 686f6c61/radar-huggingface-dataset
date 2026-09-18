@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "mradermacher/ZOZ-Function-Master-3B-LongContext-i1-GGUF",
+  "slug": "mradermacher-zoz-function-master-3b-longcontext-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/ZOZ-Function-Master-3B-LongContext-i1-GGUF",
+  "created_at": "2026-09-18T02:13:45.000Z",
+  "updated_at": "2026-09-18T05:00:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:z51722369/ZOZ-Function-Master-3B-LongContext",
+    "base_model:quantized:z51722369/ZOZ-Function-Master-3B-LongContext",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 51,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 36758280064,
+  "storage_human": "36.8 GB",
+  "base_model": "z51722369/ZOZ-Function-Master-3B-LongContext",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Trends & Tipps – Neues in der Sozialversicherung für Arbeitgeber - AOK",
+      "url": "https://www.aok.de/fk/jahreswechsel/",
+      "snippet": "Die AOK-Trends & Tipps-Seminare sind eine wertvolle Unterstützung für Arbeitgeber zum Jahreswechsel. Seit dem vergangenen …"
+    },
+    {
+      "title": "Seminarsuche für Arbeitgeber: SV und BGF, online und Präsenz - AOK",
+      "url": "https://www.aok.de/fk/medien-und-seminare/seminare/seminarsuche/",
+      "snippet": "Mit wenigen Klicks zum passenden AOK-Seminar für Arbeitgeber, Führungskräfte, Personalverantwortliche und BGF-Verantwortliche."
+    },
+    {
+      "title": "Ihr Update zu Lohnsteuer, Sozialversicherung & Arbeitsrecht",
+      "url": "https://www.endriss.de/weiterbildungskurse/formate/seminare/personalabrechnung/seminar-lohnsteuer-sozialversicherung-arbeitsrecht-zum-jahreswechsel/",
+      "snippet": "Im Rahmen unseres 1-tägigen Seminars stellen wir Ihnen im Zeitraum von November bis Februar die relevanten Änderungen in den …"
+    },
+    {
+      "title": "Unser kostenfreies Seminarangebot - IKK classic",
+      "url": "https://www.ikk-classic.de/fk/sf/seminare",
+      "snippet": "Alles rund um den Jahreswechsel finden Sie in unserem eMagazin. Dank des digitalen Formats sind Sie stets top informiert und …"
+    },
+    {
+      "title": "Online-Jahreswechsel-Seminar für Unternehmen | KKH",
+      "url": "https://www.kkh.de/firmenkunden/medien-seminare/jahresstart-seminar",
+      "snippet": "Starten Sie gut informiert in das neue Jahr mit dem KKH Online-Jahreswechsel-Seminar für Unternehmen."
+    }
+  ]
+}

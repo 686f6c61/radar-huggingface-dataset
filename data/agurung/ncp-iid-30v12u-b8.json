@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "agurung/ncp-iid-30v12u-b8",
+  "slug": "agurung-ncp-iid-30v12u-b8",
+  "author": "agurung",
+  "url": "https://huggingface.co/agurung/ncp-iid-30v12u-b8",
+  "created_at": "2026-09-18T02:15:22.000Z",
+  "updated_at": "2026-09-18T02:17:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056404730,
+  "storage_human": "8.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "تنزيل Chrome - مساعدة متصفح Google Chrome",
+      "url": "https://support.google.com/chrome/answer/16738344?hl=ar",
+      "snippet": "لاستخدام متصفّح Chrome على نظام التشغيل Windows مع معالج Intel أو معالج ARM، ستحتاج إلى ما يلي: معالج Intel: نظام التشغيل Windows 10 والإصدارات الأحدث معالِج …"
+    },
+    {
+      "title": "Download and install Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95346?hl=en-na&co=genie.platform=desktop",
+      "snippet": "How to install Chrome Important: Before you download, check if Chrome supports your operating system and you've met all other …"
+    },
+    {
+      "title": "国内普通用户怎样下载到 Chrome？ - 知乎",
+      "url": "https://www.zhihu.com/question/37455757",
+      "snippet": "推荐用户下载浏览器时怎样才能使普通被墙用户下载到 Chrome？当然百度软件什么的绝不考虑。"
+    },
+    {
+      "title": "网络正常，为什么edge浏览器加载和下载速度只有几kb/s？",
+      "url": "https://www.zhihu.com/question/644460211",
+      "snippet": "Feb 15, 2024 · 以下是推荐的插件下载网址 9.搜索引擎 插件小屋 - Chrome插件,谷歌浏览器扩展下载,Chrome应用商店,离线安装包下 …"
+    },
+    {
+      "title": "Preuzimanje i instaliranje Google Chromea",
+      "url": "https://support.google.com/chrome/answer/95346?hl=hr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Preuzimanje i instaliranje Google Chromea Web-preglednik Chrome možete preuzeti i instalirati bez dodatnih troškova te ga …"
+    }
+  ]
+}

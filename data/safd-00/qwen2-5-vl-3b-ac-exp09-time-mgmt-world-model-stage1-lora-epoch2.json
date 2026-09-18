@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "SaFD-00/qwen2.5-vl-3b-ac-exp09-time-mgmt-world-model-stage1-lora-epoch2",
+  "slug": "safd-00-qwen2-5-vl-3b-ac-exp09-time-mgmt-world-model-stage1-lora-epoch2",
+  "author": "SaFD-00",
+  "url": "https://huggingface.co/SaFD-00/qwen2.5-vl-3b-ac-exp09-time-mgmt-world-model-stage1-lora-epoch2",
+  "created_at": "2026-09-17T23:19:55.000Z",
+  "updated_at": "2026-09-17T23:21:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2_5_vl",
+    "image-text-to-text",
+    "llama-factory",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3754622976,
+  "parameters_human": "3.75B",
+  "storage_bytes": 7520759840,
+  "storage_human": "7.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Comment Régler les Problèmes de VPN les Plus Courants ?",
+      "url": "https://vpnoverview.com/fr/infos-vpn/vpn-ne-fonctionne-pas/",
+      "snippet": "Apr 30, 2025 · Votre VPN peut ne pas fonctionner pour de nombreuses raisons, mais souvent quelques problèmes courants sont en …"
+    },
+    {
+      "title": "Réinitialiser ou réparer le réseau sur Windows 11/10 : causes et ...",
+      "url": "https://www.malekal.com/reinitialiser-ou-reparer-le-reseau-windows-11/",
+      "snippet": "Aug 25, 2021 · Réinitialiser ou réparer le réseau sur Windows 11/10 : Wi-Fi ou Ethernet sans Internet, DNS bloqué, réseau instable. …"
+    },
+    {
+      "title": "fréquentes déconnexions du Bitdefender VPN désactivant la connexion ...",
+      "url": "https://community.bitdefender.com/fr/discussion/97960/frequentes-deconnexions-du-bitdefender-vpn-desactivant-la-connexion-filaire-lan-rj45",
+      "snippet": "Nov 23, 2023 · Bonjour, Depuis la dernière mise à jour du Bitdefender VPN, ma connexion filaire LAN se déconnecte dès que le …"
+    },
+    {
+      "title": "Assistance technique VPN sous Windows : comment résoudre les …",
+      "url": "https://fr.windowsnoticias.com/Assistance-technique-VPN-sous-Windows%C2%A0%3A-comment-r%C3%A9soudre-les-probl%C3%A8mes-de-connexion-et-de-configuration/",
+      "snippet": "Apr 14, 2026 · Apprenez à résoudre les erreurs de connexion VPN sous Windows : codes 800, 806, 809, problèmes DNS, pare-feu, …"
+    },
+    {
+      "title": "Votre VPN est souvent détecté et bloqué ? Voici 5 façons ... - Clubic",
+      "url": "https://www.clubic.com/actualite-556344-vpn-detecte-et-bloque-voici-5-facons-de-contourner-le-probleme.html",
+      "snippet": "Mar 8, 2025 · Votre VPN se connecte sans problème, mais impossible d’accéder à votre plateforme de streaming ou à votre compte …"
+    }
+  ]
+}

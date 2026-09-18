@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Juxi-Technology/soarm_amazing_hand_act",
+  "slug": "juxi-technology-soarm_amazing_hand_act",
+  "author": "Juxi-Technology",
+  "url": "https://huggingface.co/Juxi-Technology/soarm_amazing_hand_act",
+  "created_at": "2026-09-18T02:16:40.000Z",
+  "updated_at": "2026-09-18T02:45:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "imitation-learning",
+    "so-101",
+    "so-arm101",
+    "amazinghand",
+    "dexterous-hand",
+    "manipulation",
+    "dataset:Juxi-Technology/soarm_amazing_hand_pick",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714848,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.pl/index.html",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=pl",
+      "snippet": "Reklamuj się Wszystko o Google Google.com in English © 2026 - Prywatność - Warunki"
+    },
+    {
+      "title": "Przeglądarka Google Chrome",
+      "url": "https://www.google.com/intl/pl/chrome/",
+      "snippet": "Chrome ma wbudowanego Menedżera haseł Google, który ułatwia zapisywanie haseł w internecie, zarządzanie nimi i ich ochronę. …"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.gp/?hl=pl-US",
+      "snippet": "Korzystaj z Google w tych językach: English Reklamuj się Wszystko o Google Google.com"
+    },
+    {
+      "title": "Logowanie – Konta Google",
+      "url": "https://accounts.google.com/login?hl=pl",
+      "snippet": "To nie Twój komputer? Aby się zalogować, użyj okna przeglądania prywatnego. Dowiedz się więcej o używaniu trybu gościa Dalej …"
+    }
+  ]
+}

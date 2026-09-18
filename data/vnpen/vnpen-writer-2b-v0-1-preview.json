@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "VNPen/vnpen-writer-2b-v0.1-preview",
+  "slug": "vnpen-vnpen-writer-2b-v0-1-preview",
+  "author": "VNPen",
+  "url": "https://huggingface.co/VNPen/vnpen-writer-2b-v0.1-preview",
+  "created_at": "2026-09-17T23:34:35.000Z",
+  "updated_at": "2026-09-18T16:46:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "visual-novel",
+    "creative-writing",
+    "lora",
+    "preview",
+    "conversational",
+    "zh",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:adapter:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1881825088,
+  "parameters_human": "1.88B",
+  "storage_bytes": 4033807533,
+  "storage_human": "4.0 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI and Cloud Computing Services",
+      "url": "https://cloud.google.com/",
+      "snippet": "Meet your business challenges head on with AI and cloud computing services from Google, including security, data management, …"
+    },
+    {
+      "title": "Cloud Computing Services - Amazon Web Services (AWS)",
+      "url": "https://aws.amazon.com/",
+      "snippet": "Sep 9, 2026 · Amazon Web Services offers reliable, scalable, and inexpensive cloud computing services. Free to join, pay only for …"
+    },
+    {
+      "title": "Cloud Computing Services | Microsoft Azure",
+      "url": "https://azure.microsoft.com/en-us?msockid=2aa6b434c7d462f107eea3ecc6fa63cb",
+      "snippet": "Invent with purpose, realize cost savings, and make your organization more efficient with Microsoft Azure’s open and flexible cloud …"
+    },
+    {
+      "title": "Cloud Based Services - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/cloud-computing/cloud-based-services/",
+      "snippet": "Feb 9, 2026 · Cloud-based services are computing resources provided over the internet, allowing users to run applications, store …"
+    },
+    {
+      "title": "Cloud Computing, Hosting Services, and APIs | Google Cloud",
+      "url": "https://cloud.google.com/gcp",
+      "snippet": "Google Cloud provides flexible infrastructure, end-to-end security, and intelligent insights engineered to help your business thrive."
+    }
+  ]
+}

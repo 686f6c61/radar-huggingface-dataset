@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "heffnt/cmt-september",
+  "slug": "heffnt-cmt-september",
+  "author": "heffnt",
+  "url": "https://huggingface.co/heffnt/cmt-september",
+  "created_at": "2026-09-17T21:16:43.000Z",
+  "updated_at": "2026-09-17T22:32:16.000Z",
+  "license": "cmt-research-share-terms",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "backdoor",
+    "ai-safety",
+    "research",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:adapter:Qwen/Qwen3.5-0.8B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 403226932634,
+  "storage_human": "403.2 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B, google/gemma-3-1b-it, meta-llama/Llama-3.2-1B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "函数y=arcsin (sinx)的图像怎么画？答案看了还是不会画",
+      "url": "https://www.zhihu.com/question/41139256",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/question/25258448",
+      "snippet": "利用幂指函数替代式，f(x)^g(x) = e^[g(x)lnf(x)] y=x^x = e^(xlnx)，对y式求极限其实本质就是对xlnx求极限，当x趋于0时，xlnx是趋0的 …"
+    },
+    {
+      "title": "y=ln（x+根号下1+x^2）的导数_百度知道",
+      "url": "https://zhidao.baidu.com/question/1771082634950707660.html",
+      "snippet": "y=ln (x+√（x^2+1）)的导数为：1/√（x^2+1）。 解答过程如下： 扩展资料： 链式法则： 若h (a)=f [g (x)]，则h' (a)=f’ [g (x)]g’ (x)。 链 …"
+    },
+    {
+      "title": "y=1/x^2的图像怎么画啊？ - 百度知道",
+      "url": "https://zhidao.baidu.com/question/223006581.html",
+      "snippet": "一、由于y=1/x^2是 偶函数，所以图像关于纵 轴对称。 二、所以可以先画当x大于0时的图像再取对称。 三、确定特殊点。 四、首 …"
+    },
+    {
+      "title": "作业帮-作业帮口算 在线教育引领者 - 极目未来",
+      "url": "https://www.zybang.com/",
+      "snippet": "作业帮成立于2015年，我们以“科技为人、成就非凡”为企业使命，依托“科技+教育”双引擎优势，在学习工具产品、智能硬件等领域开展 …"
+    }
+  ]
+}

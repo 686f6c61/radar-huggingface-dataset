@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "FTruter/fluister-turbo-coreml",
+  "slug": "ftruter-fluister-turbo-coreml",
+  "author": "FTruter",
+  "url": "https://huggingface.co/FTruter/fluister-turbo-coreml",
+  "created_at": "2026-09-17T21:57:04.000Z",
+  "updated_at": "2026-09-18T23:04:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "whisperkit",
+  "languages": [
+    "af"
+  ],
+  "tags": [
+    "whisperkit",
+    "whisper",
+    "coreml",
+    "fluister",
+    "afrikaans",
+    "automatic-speech-recognition",
+    "af",
+    "en",
+    "base_model:openai/whisper-large-v3-turbo",
+    "base_model:finetune:openai/whisper-large-v3-turbo",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1618283746,
+  "storage_human": "1.6 GB",
+  "base_model": "openai/whisper-large-v3-turbo",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Maps of Switzerland - Swiss Confederation - map.geo.admin.ch",
+      "url": "https://map.geo.admin.ch/",
+      "snippet": "Maps displayed Closures Hiking trails Published shooting range bulletins, hazard zones Hiking trails"
+    },
+    {
+      "title": "Carte suisse et guide routier - search.ch",
+      "url": "https://search.ch/map/index.fr.html",
+      "snippet": "Appuyez sur le bouton droit de la souris (ou sur Ctrl et le bouton gauche) et faites glisser la souris vers le haut pour incliner la carte."
+    },
+    {
+      "title": "Maps of Switzerland - Swiss Confederation - map.geo.admin.ch",
+      "url": "https://map.geo.admin.ch/?lang%3Dfr&mobile=false",
+      "snippet": "Maps displayed Closures Hiking trails Published shooting range bulletins, hazard zones Hiking trails"
+    },
+    {
+      "title": "Carte Suisse : plan de Suisse et infos pratiques - Mappy",
+      "url": "https://fr.mappy.com/plan/pays/756-suisse",
+      "snippet": "Vous recherchez la carte ou le plan de Suisse et de ses environs ? Trouvez l’adresse qui vous intéresse sur le plan de Suisse ou …"
+    },
+    {
+      "title": "Cartes - Swisstopo",
+      "url": "https://www.swisstopo.admin.ch/fr/cartes",
+      "snippet": "Jan 8, 2024 · Que ce soit sur le smartphone, dans un navigateur, sur papier ou dans un système d'information géographique, les …"
+    }
+  ]
+}

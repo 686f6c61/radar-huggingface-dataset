@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "DreamMachines/actuator_unboxing_speedcond_t1_fullft_bs256",
+  "slug": "dreammachines-actuator_unboxing_speedcond_t1_fullft_bs256",
+  "author": "DreamMachines",
+  "url": "https://huggingface.co/DreamMachines/actuator_unboxing_speedcond_t1_fullft_bs256",
+  "created_at": "2026-09-18T02:22:15.000Z",
+  "updated_at": "2026-09-18T13:22:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3353433872,
+  "parameters_human": "3.35B",
+  "storage_bytes": 31096452992,
+  "storage_human": "31.1 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Valley of the Kings - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Valley_of_the_Kings",
+      "snippet": "The Valley of the Kings garnered significant attention following the discovery of the tomb of Tutankhamun in 1922, [9] and is one of …"
+    },
+    {
+      "title": "Valley of the Kings - Discover Egypt's Monuments - Ministry of …",
+      "url": "https://egymonuments.gov.eg/archaeological-sites/valley-of-the-kings",
+      "snippet": "The rulers of the Eighteenth, Nineteenth, and Twentieth Dynasties of Egypt’s prosperous New Kingdom (c.1550–1069 BC) were …"
+    },
+    {
+      "title": "Valley of the Kings | Ancient Egyptian Tombs & Archaeology",
+      "url": "https://www.britannica.com/place/Valley-of-the-Kings",
+      "snippet": "Aug 24, 2026 · Valley of the Kings, a long narrow defile just west of the Nile River in Upper Egypt. It was part of the ancient city of …"
+    },
+    {
+      "title": "Valley of the Kings: Information and Facts | National Geographic",
+      "url": "https://www.nationalgeographic.com/history/article/valley-of-the-kings",
+      "snippet": "During Egypt's New Kingdom (1539-1075 B.C.), the valley became a royal burial ground for pharaohs such as Tutankhamun, Seti I, …"
+    },
+    {
+      "title": "Valley of the Kings: Map, How to Visit & Best Tombs in 2026",
+      "url": "https://www.voyagedmagazine.com/valley-of-the-kings-egypt-map-visit-tombs/",
+      "snippet": "Jul 31, 2026 · A practical Valley of the Kings map and guide. Where it is, how to visit, tickets explained, and the most beautiful tombs …"
+    }
+  ]
+}

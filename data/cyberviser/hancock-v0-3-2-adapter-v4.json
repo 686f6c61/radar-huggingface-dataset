@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "cyberviser/hancock-v0.3.2-adapter-v4",
+  "slug": "cyberviser-hancock-v0-3-2-adapter-v4",
+  "author": "cyberviser",
+  "url": "https://huggingface.co/cyberviser/hancock-v0.3.2-adapter-v4",
+  "created_at": "2026-09-18T00:53:02.000Z",
+  "updated_at": "2026-09-18T00:54:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "mistral",
+    "cybersecurity",
+    "hancock",
+    "base_model:mistralai/Mistral-7B-Instruct-v0.3",
+    "base_model:adapter:mistralai/Mistral-7B-Instruct-v0.3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 83946192,
+  "storage_human": "84 MB",
+  "base_model": "mistralai/Mistral-7B-Instruct-v0.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Autodesk Fusion 360 vs. Autodesk EAGLE? Fusion Blog",
+      "url": "https://www.autodesk.com/products/fusion-360/blog/autodesk-fusion-360-vs-autodesk-eagle/?msockid=33e1c5ab898763ce3245d27388b2625e",
+      "snippet": "Mar 28, 2023 · Many users in our community have asked: what’s the difference between Fusion 360 vs. Autodesk EAGLE? In this …"
+    },
+    {
+      "title": "Autodesk EAGLE vs. Fusion 360 Electronics - Debunking Myths",
+      "url": "https://www.autodesk.com/products/fusion-360/blog/autodesk-eagle-vs-fusion-360-electronics-debunking-myths/?msockid=33e1c5ab898763ce3245d27388b2625e",
+      "snippet": "May 17, 2023 · Read on to learn the differences between Autodesk EAGLE vs. Fusion 360 electronics and why moving to a …"
+    },
+    {
+      "title": "Autodesk EAGLE vs. Autodesk Fusion Comparison 2026 | G2",
+      "url": "https://www.g2.com/compare/autodesk-eagle-vs-autodesk-fusion",
+      "snippet": "Aug 14, 2026 · Compare Autodesk EAGLE vs. Autodesk Fusion by features, pricing, usability, and performance. Use G2 user reviews …"
+    },
+    {
+      "title": "Compare Autodesk EAGLE vs. Autodesk Fusion in 2026 - Slashdot",
+      "url": "https://slashdot.org/software/comparison/Autodesk-EAGLE-vs-Autodesk-Fusion/",
+      "snippet": "Compare Autodesk EAGLE vs. Autodesk Fusion in 2026 by cost, reviews, features, integrations, and more."
+    },
+    {
+      "title": "Autodesk EAGLE vs. Autodesk Fusion Comparison - SourceForge",
+      "url": "https://sourceforge.net/software/compare/Autodesk-EAGLE-vs-Autodesk-Fusion/",
+      "snippet": "Compare Autodesk EAGLE vs. Autodesk Fusion using this comparison chart. Compare price, features, and reviews of the software …"
+    }
+  ]
+}

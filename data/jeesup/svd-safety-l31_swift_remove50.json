@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l31_swift_remove50",
+  "slug": "jeesup-svd-safety-l31_swift_remove50",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l31_swift_remove50",
+  "created_at": "2026-09-17T21:31:54.000Z",
+  "updated_at": "2026-09-22T00:24:23.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama3",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "license:llama3.1",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766296,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "梦幻西游黑风山副本抄写大全_百度知道",
+      "url": "https://zhidao.baidu.com/question/580670653.html",
+      "snippet": "梦幻西游黑风山副本抄写大全梦幻西游黑风山副本抄写大全如下：1、若菩萨欲得净土当净其心随其心净则佛土净2、法尚应舍何况非 …"
+    },
+    {
+      "title": "《强军战歌》歌词 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/580982599.html",
+      "snippet": "《强军战歌》歌词新征程号角震天响，强军目标我们来担当！国兴旺，无数先烈的梦想，战旗上写满铁血荣光。将士们听党指挥，英勇 …"
+    },
+    {
+      "title": "在不知道学位证书编号的情况下，怎么查到编号？ - 知乎",
+      "url": "https://www.zhihu.com/question/510817565",
+      "snippet": "描述：学位证掉了，编号忘了，联系学校后反馈没开学，老师不在。 通过网上的对比方法找到了（找一个同学的学位证然后估算自己 …"
+    },
+    {
+      "title": "ao3镜像网站快速入口-ao3镜像站链接直达 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/1896347053549806308.html",
+      "snippet": "Nov 10, 2025 · ao3镜像网站快速入口-ao3镜像站链接直达"
+    }
+  ]
+}

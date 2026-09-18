@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l3_remove50_swapgapiter_b010_r01",
+  "slug": "jeesup-svd-safety-l3_remove50_swapgapiter_b010_r01",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l3_remove50_swapgapiter_b010_r01",
+  "created_at": "2026-09-18T02:19:54.000Z",
+  "updated_at": "2026-09-18T02:22:06.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama3",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Meta-Llama-3-8B-Instruct",
+    "base_model:finetune:meta-llama/Meta-Llama-3-8B-Instruct",
+    "license:llama3",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 173,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766337,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Meta-Llama-3-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tour - 5 Seconds of Summer Official Store",
+      "url": "https://5sos.com/pages/tour",
+      "snippet": "Shop exclusive music and merch from the 5 Seconds of Summer Official Store."
+    },
+    {
+      "title": "5 Seconds of Summer - 2026 Tour Dates & Concert Schedule - Live Nation",
+      "url": "https://www.livenation.com/artist/K8vZ9178oX0/5-seconds-of-summer-events",
+      "snippet": "Find concert tickets for 5 Seconds of Summer upcoming 2026 shows. Explore 5 Seconds of Summer tour schedules, latest setlist, …"
+    },
+    {
+      "title": "5 Seconds of Summer Official Store - 5 Seconds of Summer Official Store",
+      "url": "https://5sos.com/",
+      "snippet": "Official site of 5 Seconds of Summer, featuring their latest music, news, and updates."
+    },
+    {
+      "title": "5 Seconds of Summer Tour 2026 – Dates, Setlist & Tickets",
+      "url": "https://toursetlist.com/5-seconds-of-summer-tour-2026-dates-setlist/",
+      "snippet": "Aug 19, 2026 · Explore 5 Seconds of Summer Tour 2026 dates, cities, and venues. Find setlist details, presale codes, and everything …"
+    },
+    {
+      "title": "5 Seconds of Summer Tickets - StubHub",
+      "url": "https://www.stubhub.com/5-seconds-of-summer-tickets/performer/730847?msockid=357188f30ee96f9637ec9f2b0f416ec3",
+      "snippet": "Tickets for upcoming 5 Seconds of Summer concerts can be found at StubHub. As the largest provider of event tickets in the world, …"
+    }
+  ]
+}

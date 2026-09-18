@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "bambezius/sam3.1-soccernet-ball-streaming",
+  "slug": "bambezius-sam3-1-soccernet-ball-streaming",
+  "author": "bambezius",
+  "url": "https://huggingface.co/bambezius/sam3.1-soccernet-ball-streaming",
+  "created_at": "2026-09-17T20:00:34.000Z",
+  "updated_at": "2026-09-19T06:53:57.000Z",
+  "license": "sam-license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "sam3",
+    "football",
+    "video-object-segmentation",
+    "base_model:facebook/sam3.1",
+    "base_model:finetune:facebook/sam3.1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2264083368,
+  "storage_human": "2.3 GB",
+  "base_model": "facebook/sam3.1",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BEP-20 vs ERC-20 Tokens: Understanding the Differences",
+      "url": "https://binplorer.com/kb/bep20-vs-erc20-tokens-understanding",
+      "snippet": "The choice between BEP-20 and ERC-20 tokens depends on your specific use case, preferences, and the ecosystem you want to …"
+    },
+    {
+      "title": "BEP20 & ERC20 Token Standards | Understand the Difference!",
+      "url": "https://biswap.zendesk.com/hc/en-us/articles/9510360763281-BEP20-ERC20-Token-Standards-Understand-the-Difference",
+      "snippet": "As you can see, there are many similar technical characteristics of BEP-20 and ERC-20 tokens. But still, as a user, you experience a …"
+    },
+    {
+      "title": "ERC20 vs BEP20: The Difference - RoboFi",
+      "url": "https://robofi.io/blog/erc20-vs-bep20-the-difference/",
+      "snippet": "Mar 8, 2023 · Understand the key differences between ERC20 and BEP20, two popular token standards in the world of …"
+    },
+    {
+      "title": "What Are Crypto Token Standards? ERC20, BEP20, TRC20, SPL",
+      "url": "https://blog.koinize.com/cryptocurrencies/what-are-crypto-token-standards-erc20-bep20-trc20-spl/",
+      "snippet": "May 30, 2025 · Discover crypto token standards like ERC-20, BEP-20, TRC-20 & SPL. Learn how these standards work and why …"
+    },
+    {
+      "title": "Mastering ERC-20 Tokens on Ethereum: A Comprehensive Guide",
+      "url": "https://www.investopedia.com/news/what-erc20-and-what-does-it-mean-ethereum/",
+      "snippet": "Sep 7, 2026 · Discover how ERC-20 tokens standardize creation on Ethereum’s blockchain, and learn how they function, their …"
+    }
+  ]
+}

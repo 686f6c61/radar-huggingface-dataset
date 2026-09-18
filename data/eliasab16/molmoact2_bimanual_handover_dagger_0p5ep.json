@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "eliasab16/molmoact2_bimanual_handover_dagger_0p5ep",
+  "slug": "eliasab16-molmoact2_bimanual_handover_dagger_0p5ep",
+  "author": "eliasab16",
+  "url": "https://huggingface.co/eliasab16/molmoact2_bimanual_handover_dagger_0p5ep",
+  "created_at": "2026-09-18T01:44:34.000Z",
+  "updated_at": "2026-09-18T01:49:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": 5442196272,
+  "parameters_human": "5.44B",
+  "storage_bytes": 12040348040,
+  "storage_human": "12.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dubai flights resume from 25 Oct 2026 | Singapore Airlines",
+      "url": "https://www.singaporeair.com/en_UK/ae/plan-travel/local-promotions/dubai-flights-resume/?msockid=19a9032b694e62fe3db714f36804637a",
+      "snippet": "From 25 October 2026, we will resume daily flights from Dubai via Singapore, offering smooth connections to over 100 destinations …"
+    },
+    {
+      "title": "Singapore Airlines Dubai Flights 2026: Suspension, Refunds, and …",
+      "url": "https://blog.wego.com/singapore-airlines-dubai-flights-2026/",
+      "snippet": "Sep 4, 2026 · Singapore Airlines’ own advisory, last updated on 15 July 2026, confirms that SQ494 from Singapore to Dubai and …"
+    },
+    {
+      "title": "Singapore Airlines Suspends Dubai Flights Until October, Delays …",
+      "url": "https://aviospace.org/singapore-airlines-suspends-dubai-flights-until-october-delays-riyadh-launch/",
+      "snippet": "Jul 16, 2026 · Singapore Airlines (SQ) has cancelled its Singapore-Dubai flights for the rest of the northern summer 2026 season. …"
+    },
+    {
+      "title": "Singapore Airlines Flight Status (September 2026): Routes, Schedule ...",
+      "url": "https://blog.wego.com/singapore-airlines-flight-status-2026/",
+      "snippet": "Sep 7, 2026 · Singapore Airlines is operating its global network from Singapore Changi Airport (SIN) as of 7 September 2026, with its …"
+    },
+    {
+      "title": "Singapore Airlines Extends Dubai Flight Suspension, Delays Riyadh ...",
+      "url": "https://www.aviationanalysis.net/singapore-airlines-extends-dubai-flight-suspension-delays-riyadh-launch-amid-middle-east-uncertainty/",
+      "snippet": "Jul 17, 2026 · The Singapore-based carrier announced that its Singapore Changi Airport (SIN) to Dubai International Airport (DXB) …"
+    }
+  ]
+}

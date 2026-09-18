@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "cuong1692001/Terminal_complete_4k",
+  "slug": "cuong1692001-terminal_complete_4k",
+  "author": "cuong1692001",
+  "url": "https://huggingface.co/cuong1692001/Terminal_complete_4k",
+  "created_at": "2026-09-17T20:31:01.000Z",
+  "updated_at": "2026-09-17T20:37:15.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "llama-factory",
+    "full",
+    "generated_from_trainer",
+    "conversational",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:finetune:Qwen/Qwen3-8B",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 229353918157,
+  "storage_human": "229.4 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reddit - Dive into anything",
+      "url": "https://www.reddit.com/",
+      "snippet": "Reddit is a network of communities where people can dive into their interests, hobbies and passions. There's a community for …"
+    },
+    {
+      "title": "r/all - Reddit",
+      "url": "https://www.reddit.com/r/all/",
+      "snippet": "Your community-run home for all things PlayStation on Reddit! Console/game discussions, news, support, trophy/media sharing and …"
+    },
+    {
+      "title": "Reddit - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Reddit",
+      "snippet": "Reddit ... Reddit (/ ˈrɛdɪt / ⓘ RED-it, stylized reddit) is a proprietary American social news website, news aggregator, forum and social …"
+    },
+    {
+      "title": "Reddit Inc Homepage",
+      "url": "https://redditinc.com/",
+      "snippet": "Jul 18, 2025 · Reddit is home to thousands of communities, endless conversation, and authentic human connection. Whether you're …"
+    },
+    {
+      "title": "Reddit – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Reddit",
+      "snippet": "Durch zahlreiche Reddit-Nutzer und Subreddit-Betreiber wurde im August 2021 Kritik an Reddit laut, die Verbreitung von …"
+    }
+  ]
+}

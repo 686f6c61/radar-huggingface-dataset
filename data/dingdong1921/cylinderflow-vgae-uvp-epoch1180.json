@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "DingDong1921/cylinderflow-vgae-uvp-epoch1180",
+  "slug": "dingdong1921-cylinderflow-vgae-uvp-epoch1180",
+  "author": "DingDong1921",
+  "url": "https://huggingface.co/DingDong1921/cylinderflow-vgae-uvp-epoch1180",
+  "created_at": "2026-09-18T01:38:22.000Z",
+  "updated_at": "2026-09-18T01:40:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 499633918,
+  "storage_human": "500 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Windows 10 Uhrzeit falsch? Zeit und Datum ändern in Windows 10",
+      "url": "https://windowsarea.de/2019/09/anleitung-windows-10-uhrzeit-falsch-zeit-und-datum-aendern-in-windows-10/",
+      "snippet": "Sep 24, 2019 · Klickt nun auf Zeit und Sprache. In der linken Spalte sollte Datum und Uhrzeit ausgewählt sein. Stellt den Schalter um …"
+    },
+    {
+      "title": "Startmenü öffnet nicht bei Linksklick - Win11Forum.de",
+      "url": "https://win11forum.de/t/startmenue-oeffnet-nicht-bei-linksklick.161/",
+      "snippet": "Oct 10, 2021 · Hallo zusammen, Vll kann man mir hier helfen, wäre echt klasse. Habe die dev Version 22471 installiert. Mein …"
+    },
+    {
+      "title": "Windows 11 Hilfe & FAQ - WindowsArea",
+      "url": "https://windowsarea.de/windows-11-hilfe-faq/",
+      "snippet": "Auf dieser Windows 11 Hilfe-Seite beantworten wir alle wichtigen Fragen rund um Windows 11 und liefern nützliche Anleitungen, …"
+    },
+    {
+      "title": "Windows 11 Forum | Win11Forum.de",
+      "url": "https://win11forum.de/",
+      "snippet": "Aug 17, 2026 · Diskussionsforum für alle Microsoft Windows 11 Interessierten: Tipps und Tricks, Hilfestellung und Lösungen im …"
+    },
+    {
+      "title": "Microsoft Fotos-App deaktivieren - Win11Forum.de",
+      "url": "https://win11forum.de/t/microsoft-fotos-app-deaktivieren.332/",
+      "snippet": "Jan 9, 2022 · Windows 11 Pro 64 bit Wie kann die 'Microsoft Fotos'-App deaktivieren, um mit z.B. IrfanView' ALLE Bilddateien zu …"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "InDepthDesigns/sam_vit_b_01ec64",
+  "slug": "indepthdesigns-sam_vit_b_01ec64",
+  "author": "InDepthDesigns",
+  "url": "https://huggingface.co/InDepthDesigns/sam_vit_b_01ec64",
+  "created_at": "2026-09-17T21:03:09.000Z",
+  "updated_at": "2026-09-17T21:03:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 375717521,
+  "storage_human": "376 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Newest Questions - Stack Overflow",
+      "url": "https://stackoverflow.com/",
+      "snippet": "21 hours ago · Stack Overflow | The World’s Largest Online Community for Developers"
+    },
+    {
+      "title": "Extract files from Chrome OS / Chromebook recovery image",
+      "url": "https://stackoverflow.com/questions/30732428/extract-files-from-chrome-os-chromebook-recovery-image",
+      "snippet": "Jun 9, 2015 · My Understanding So Far: Given ARM-based Chromebooks can stream Netflix (and Netflix uses the WideVine CRM …"
+    },
+    {
+      "title": "netflix - Zuul and Ribbon integration - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/43538030/zuul-and-ribbon-integration",
+      "snippet": "I have trouble understanding the connection between Zuul and Ribbon. I think I got Zuul clear. It's a reverse proxy I can contact to …"
+    },
+    {
+      "title": "spring boot - Eureka replicas unavailable - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/40984999/eureka-replicas-unavailable",
+      "snippet": "Dec 6, 2016 · Later on, this list is matched against currently registered eureka applications in …"
+    },
+    {
+      "title": "How does Netflix prevent users from taking screenshots of chrome ...",
+      "url": "https://stackoverflow.com/questions/63175756/how-does-netflix-prevent-users-from-taking-screenshots-of-chrome-browser",
+      "snippet": "Jul 30, 2020 · I noticed that netflix employs a method of preventing users from recording or even taking still screenshot images of the …"
+    }
+  ]
+}

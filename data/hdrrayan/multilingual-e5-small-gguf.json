@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "hdrrayan/multilingual-e5-small-gguf",
+  "slug": "hdrrayan-multilingual-e5-small-gguf",
+  "author": "hdrrayan",
+  "url": "https://huggingface.co/hdrrayan/multilingual-e5-small-gguf",
+  "created_at": "2026-09-17T22:56:39.000Z",
+  "updated_at": "2026-09-17T22:56:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "gguf",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "gguf",
+    "embeddings",
+    "sentence-similarity",
+    "feature-extraction",
+    "llama.cpp",
+    "e5",
+    "multilingual",
+    "base_model:intfloat/multilingual-e5-small",
+    "base_model:quantized:intfloat/multilingual-e5-small",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 117505536,
+  "parameters_human": "117.5M",
+  "storage_bytes": 242360000,
+  "storage_human": "242 MB",
+  "base_model": "intfloat/multilingual-e5-small",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.facebook.katana&hl=en-US",
+      "snippet": "* Search Facebook on any topic and get more interactive results Connect with people and communities: * Join groups to learn tips …"
+    },
+    {
+      "title": "Download Facebook",
+      "url": "https://www.facebook.com/android_upgrade/",
+      "snippet": "May 9, 2025 · Download Facebook APK size: 76.79MB | Last Updated: May 9, 2025 Download APK Sign Up Log In Messenger"
+    },
+    {
+      "title": "Facebook",
+      "url": "https://apps.facebook.com/",
+      "snippet": "Email or mobile number Password"
+    },
+    {
+      "title": "Facebook - Free download and install on Windows | Microsoft Store",
+      "url": "https://apps.microsoft.com/detail/9wzdncrfj2wl?hl=en-US&gl=US",
+      "snippet": "The Facebook app helps you connect with friends, family and communities of people who share your interests. Connecting with your …"
+    },
+    {
+      "title": "Facebook Lite APK for Android",
+      "url": "https://www.facebook.com/lite/",
+      "snippet": "Sep 11, 2026 · Download the Facebook Lite APK here. Facebook Lite uses less data and works on all Android phones. Create an …"
+    }
+  ]
+}

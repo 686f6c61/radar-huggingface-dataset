@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "gup98/test",
+  "slug": "gup98-test",
+  "author": "gup98",
+  "url": "https://huggingface.co/gup98/test",
+  "created_at": "2026-09-17T20:34:11.000Z",
+  "updated_at": "2026-09-17T23:47:24.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "quantized",
+    "qwen4exp",
+    "base_model:orcarouter/Qwen3.8-Flash-Next-Uncensored",
+    "base_model:quantized:orcarouter/Qwen3.8-Flash-Next-Uncensored",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 53166527507,
+  "storage_human": "53.2 GB",
+  "base_model": "orcarouter/Qwen3.8-Flash-Next-Uncensored",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Maps - Visit Seattle",
+      "url": "https://visitseattle.org/explore/getting-around/maps/",
+      "snippet": "Maps Seattle & the Region Downloadable maps of Seattle, the Puget Sound region and Washington State Downtown Seattle …"
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.com/",
+      "snippet": "Find local businesses, view maps and get driving directions in Google Maps."
+    },
+    {
+      "title": "Map of Seattle, Washington - GIS Geography",
+      "url": "https://gisgeography.com/seattle-map-washington/",
+      "snippet": "A Seattle map set (road map, things to do, and places map). Seattle has a pleasant surrounding and is famous for coffee, rain and …"
+    },
+    {
+      "title": "Map of Seattle – City Maps and Neighborhoods",
+      "url": "https://www.mapofseattle.com/",
+      "snippet": "Get to know Seattle like a local with our interactive maps and neighborhood guides, landmarks, and transportation routes."
+    },
+    {
+      "title": "Map of Seattle, Washington - US Maps",
+      "url": "https://usmaps.com/seattle-map-washington/",
+      "snippet": "Our Seattle map helps you get around the Emerald City. From Pike Place Market to the Space Needle, it highlights the major …"
+    }
+  ]
+}

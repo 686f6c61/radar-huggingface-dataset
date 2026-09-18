@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "TongtongLiang/sihc-research-checkpoints",
+  "slug": "tongtongliang-sihc-research-checkpoints",
+  "author": "TongtongLiang",
+  "url": "https://huggingface.co/TongtongLiang/sihc-research-checkpoints",
+  "created_at": "2026-09-17T20:51:40.000Z",
+  "updated_at": "2026-09-18T02:28:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "image-generation",
+    "research-checkpoints",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 287513400818,
+  "storage_human": "287.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Uzyskaj paszport dla dziecka - Portal Gov.pl",
+      "url": "https://www.gov.pl/web/gov/uzyskaj-paszport-dla-dziecka",
+      "snippet": "Jeśli pilnie potrzebujesz nowego paszportu dla dziecka, na przykład z powodu choroby dziecka – złóż wniosek o paszport …"
+    },
+    {
+      "title": "Złóż online wniosek o paszport dla dziecka – sprawdź, jakie to proste ...",
+      "url": "https://www.gov.pl/web/cyfryzacja/zloz-online-wniosek-o-paszport-dla-dziecka--sprawdz-jakie-to-proste",
+      "snippet": "Mar 31, 2023 · Jeśli występujesz o paszport dla dziecka, które nie ukończyło 5. roku życia, cały proces do wydania paszportu może …"
+    },
+    {
+      "title": "Wniosek o paszport dla dziecka (jak wyrobić dziecku paszport)",
+      "url": "https://wnioskionline.pl/wnioski/turystyka/wniosek-o-paszport-dla-dziecka/",
+      "snippet": "Nov 5, 2025 · Chcesz złożyć wniosek o wydanie paszportu dla dziecka? Przeczytaj, jakie dokumenty musisz zabrać ze sobą do …"
+    },
+    {
+      "title": "Wydanie paszportu dla dziecka — wniosek PDF 2026 | Formularze.net",
+      "url": "https://formularze.net/sprawy/wniosek-o-paszport-dla-dziecka",
+      "snippet": "Mar 24, 2026 · Gdzie złożyć wniosek o paszport dla dziecka? Wniosek składasz w dowolnym punkcie paszportowym w Polsce — nie …"
+    },
+    {
+      "title": "Wniosek o paszport dla dziecka do 12. roku życia online ... - Powroty",
+      "url": "https://powroty.gov.pl/wniosek-o-paszport-dla-dziecka-do-12-roku-zycia-online-rowniez-za-granica/",
+      "snippet": "Umożliwia ona składanie wniosku o dokument paszportowy online dla dziecka do 12 lat, również za granicą."
+    }
+  ]
+}

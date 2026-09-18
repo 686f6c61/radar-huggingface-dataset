@@ -1,0 +1,105 @@
+{
+  "schema": 1,
+  "id": "IsValorum/KAT-Coder-V2.5-Dev-APEX-I-MiniPlus-V2.1-GGUF",
+  "slug": "isvalorum-kat-coder-v2-5-dev-apex-i-miniplus-v2-1-gguf",
+  "author": "IsValorum",
+  "url": "https://huggingface.co/IsValorum/KAT-Coder-V2.5-Dev-APEX-I-MiniPlus-V2.1-GGUF",
+  "created_at": "2026-09-18T03:31:24.000Z",
+  "updated_at": "2026-09-21T20:09:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh",
+    "es",
+    "fr",
+    "de",
+    "pt",
+    "it",
+    "ru",
+    "ja",
+    "ko",
+    "vi",
+    "th",
+    "ar"
+  ],
+  "tags": [
+    "gguf",
+    "quantized",
+    "quantization",
+    "apex",
+    "apex-quant",
+    "custom-quantization",
+    "unsloth-studio",
+    "moe",
+    "reasoning",
+    "llama.cpp",
+    "qwen35moe",
+    "text-generation",
+    "en",
+    "zh",
+    "es",
+    "fr",
+    "de",
+    "pt",
+    "it",
+    "ru",
+    "ja",
+    "ko",
+    "vi",
+    "th",
+    "ar",
+    "base_model:Kwaipilot/KAT-Coder-V2.5-Dev",
+    "base_model:quantized:Kwaipilot/KAT-Coder-V2.5-Dev",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 667,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 14751301024,
+  "storage_human": "14.8 GB",
+  "base_model": "Kwaipilot/KAT-Coder-V2.5-Dev",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "أفلام برازرز XXX بجودة HD - نجمات إباحية مثيرات وميلف",
+      "url": "https://www.broxxx.com/?hl=ar",
+      "snippet": "استمتع ببث سريع لفيديوهات جنس برازرز مع مشاهد مفصلة وحيوية في أماكن متنوعة مثل الشقق العصرية والمنتجعات الغريبة. استكشف مكتبة واسعة تُحدث يوميًا بأفلام إباحية مميزة."
+    },
+    {
+      "title": "Brazzers أفلام إباحية: XXX سكس ساخن مجاني brazzers.com | xHamster",
+      "url": "https://ara.xhamster.com/channels/brazzers",
+      "snippet": "افلام سكس Brazzers مجانية من brazzers.com. شاهد نيك عنيف Brazzers على xHamster!"
+    },
+    {
+      "title": "موقع سكس العرب - Brazzers",
+      "url": "https://sexalarab.video/search/Brazzers/",
+      "snippet": "استمتع بليالي مثيرة مع والدك الشغوف – سكس مترجم ممحونات. هل تستطيع القيام بذلك؟ سحر الإثارة الأجنبية سكس."
+    },
+    {
+      "title": "Brazzers.com | Hot and Sexy Exclusive Porn Videos",
+      "url": "https://www.brazzers.com/home",
+      "snippet": "Brazzers brings you the wildest, kinkiest fantasies with the most amazing collection of HD porn videos. Our hardcore scenes can …"
+    },
+    {
+      "title": "'brazzers' Search - XNXX.COM",
+      "url": "https://www.xnxx.com/search/brazzers",
+      "snippet": "Terms of service - Privacy policy - Cookie preferences - Content removal - Upload Porn Videos - Advertising - More... - Privacy notice …"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "schema": 1,
+  "id": "IsValorum/Occamy-1.0-APEX-I-MiniPlus-V2.1-GGUF",
+  "slug": "isvalorum-occamy-1-0-apex-i-miniplus-v2-1-gguf",
+  "author": "IsValorum",
+  "url": "https://huggingface.co/IsValorum/Occamy-1.0-APEX-I-MiniPlus-V2.1-GGUF",
+  "created_at": "2026-09-18T00:36:42.000Z",
+  "updated_at": "2026-09-21T20:09:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh",
+    "es",
+    "fr",
+    "de",
+    "pt",
+    "it",
+    "ru",
+    "ja",
+    "ko",
+    "vi",
+    "th",
+    "ar"
+  ],
+  "tags": [
+    "gguf",
+    "quantized",
+    "quantization",
+    "apex",
+    "apex-quant",
+    "custom-quantization",
+    "unsloth-studio",
+    "moe",
+    "reasoning",
+    "llama.cpp",
+    "qwen35moe",
+    "text-generation",
+    "en",
+    "zh",
+    "es",
+    "fr",
+    "de",
+    "pt",
+    "it",
+    "ru",
+    "ja",
+    "ko",
+    "vi",
+    "th",
+    "ar",
+    "base_model:Accio-Lab/occamy-1.0",
+    "base_model:quantized:Accio-Lab/occamy-1.0",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 15365495232,
+  "storage_human": "15.4 GB",
+  "base_model": "Accio-Lab/occamy-1.0",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Supermarchés Lidl en France",
+      "url": "https://www.lidl.fr/s/fr-FR/supermarches/",
+      "snippet": "Trouver les offres et prospectus du supermarché Lidl le plus proche."
+    },
+    {
+      "title": "Supermarchés Lidl à Mulhouse - Votre supermarché à proximité",
+      "url": "https://www.lidl.fr/s/fr-FR/supermarches/mulhouse/",
+      "snippet": "Trouver un supermarché Lidl à Mulhouse. et découvrez toutes nos offres de la semaine et nos catalogues"
+    },
+    {
+      "title": "Supermarché LIDL à Mulhouse Dornach - Promos et Horaires",
+      "url": "https://www.pagesjaunes.fr/annuaire/mulhouse-68/lidl",
+      "snippet": "Votre supermarché LIDL possède tout ce dont vous avez besoin : courses du quotidien, préparatifs pour vos évènements ou …"
+    },
+    {
+      "title": "Lidl Mulhouse - Liste des magasins - bonial.fr",
+      "url": "https://www.bonial.fr/Magasins/Mulhouse/Lidl/v-r1",
+      "snippet": "Retrouvez ici la liste de tous les magasins Lidl à Mulhouse autour de vous. Choisissez un magasin pour accéder à son adresse et …"
+    },
+    {
+      "title": "Lidl autour de moi : trouvez un magasin proche rapidement",
+      "url": "https://www.telephone.city/enseigne/lidl/",
+      "snippet": "Vous cherchez un Lidl autour de vous ? Accédez en quelques secondes aux magasins Lidl proches, avec leurs horaires, leur …"
+    }
+  ]
+}

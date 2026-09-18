@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "BennyDaBall/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored-NVFP4",
+  "slug": "bennydaball-qwen3-8-27b-twin-turbo-fable-cold-fusion-709-ultra-heretic-uncensored-nvfp4",
+  "author": "BennyDaBall",
+  "url": "https://huggingface.co/BennyDaBall/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored-NVFP4",
+  "created_at": "2026-09-17T21:53:15.000Z",
+  "updated_at": "2026-09-17T21:54:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "nvfp4",
+    "qwen3_8",
+    "qwen3.8",
+    "blackwell",
+    "mtp",
+    "speculative-decoding",
+    "vision",
+    "multimodal",
+    "llama.cpp",
+    "lm-studio",
+    "heretic",
+    "uncensored",
+    "finetune",
+    "Cold Fusion",
+    "tool-use",
+    "conversational",
+    "image-text-to-text",
+    "en",
+    "base_model:DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored",
+    "base_model:quantized:DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 20639159680,
+  "storage_human": "20.6 GB",
+  "base_model": "DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vodafone E-Mail & Cloud - Login | Vodafone live",
+      "url": "https://live.vodafone.de/partners/mail",
+      "snippet": "Erlebe mobile Freiheit Komfortabel und einfach: Lese und bearbeite Deine E-Mails in der Vodafone E-Mail & Cloud-App. Speicher …"
+    },
+    {
+      "title": "Vodafone Music",
+      "url": "https://live.vodafone.de/music/",
+      "snippet": "Entdeck Nachrichten, E-Mail, Games, Music und mehr Partner-Services auf Vodafone live. Social Links. Kunden-Informationen. …"
+    },
+    {
+      "title": "Deezer | Vodafone live",
+      "url": "https://live.vodafone.de/services/deezer",
+      "snippet": "Als Vodafone-Kund:in bekommst Du mit Deezer Premium 2 Monate kostenlos unbegrenztes Streaming: Hör ohne Werbung, erleb …"
+    },
+    {
+      "title": "Sport | Vodafone live",
+      "url": "https://live.vodafone.de/news/sport",
+      "snippet": "Genieße die Unterhaltungswelt von Vodafone live iPhone 18 Pro vs. Pixel 11 Pro: Ist Apples Flaggschiff den Aufpreis wert?"
+    },
+    {
+      "title": "Ratgeber: Die besten Benzinpreis-Apps für Europa - Vodafone live",
+      "url": "https://live.vodafone.de/news/digital/handy/ratgeber-die-besten-benzinpreis-apps-fuer-europa/13217565",
+      "snippet": "Jul 7, 2026 · Wer mit dem Auto ins europäische Ausland reist, kann durch Benzinpreis-Apps bares Geld sparen. Wir haben mehrere …"
+    }
+  ]
+}

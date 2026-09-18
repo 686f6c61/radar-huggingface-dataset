@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "autumn10/Cyber-F1-smoke-dpo",
+  "slug": "autumn10-cyber-f1-smoke-dpo",
+  "author": "autumn10",
+  "url": "https://huggingface.co/autumn10/Cyber-F1-smoke-dpo",
+  "created_at": "2026-09-18T00:08:25.000Z",
+  "updated_at": "2026-09-18T00:08:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "tensorboard",
+    "safetensors",
+    "base_model:adapter:DuyTa/Cyber-F1",
+    "dpo",
+    "lora",
+    "transformers",
+    "trl",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "arxiv:2305.18290",
+    "base_model:DuyTa/Cyber-F1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2828520368,
+  "storage_human": "2.8 GB",
+  "base_model": "DuyTa/Cyber-F1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Διεύθυνση Ευρωπαϊκής Ένωσης και Διεθνούς Αστυνομικής …",
+      "url": "https://police.gov.cy/police/police.nsf/All/F867E813DFD0DABDC2258448003E155A",
+      "snippet": "Η Υ ποδιεύθυνση Ευρωπαϊκής Ένωσης επιλαμβάνεται όλων των αστυνομικών θεμάτων που έχουν σχέση με την υλοποίηση και …"
+    },
+    {
+      "title": "Διεύθυνση Ευρωπαϊκής Ένωσης και Διεθνούς Αστυνομικής …",
+      "url": "https://www.police.gov.cy/police/police.nsf/All/F33CD6D653152016C2258448003E1558",
+      "snippet": "Αποτελείται από το Εθνικό Κεντρικό Γραφείο Interpol, την Εθνική Μονάδα Europol, το Εθνικό Γραφείο Sirene και το Γραφείο …"
+    },
+    {
+      "title": "Διεύθυνση Ευρωπαϊκής Ένωσης & Διεθνούς Αστυνομικής …",
+      "url": "https://www.gov.cy/police/documents/enimerotiko-diafotistiko-yliko-2/dieythynsi-eyropaikis-enosis-diethnoys-astynomikis-synergasias-d-e-e-d-a-s-2/",
+      "snippet": "Αρχηγείο ΑστυνομίαςΟδός Ευάγγελου Φλωράκη, Τ.Κ. 1478 Email: police@police.gov.cy (07:00–15:00, εκτός Σαββατοκύριακων & …"
+    },
+    {
+      "title": "Υποδιεύθυνση Ευρωπαϊκής Ένωσης (Τομέας Ευρωπαϊκής Ένωσης …",
+      "url": "https://www.gov.cy/police/dieythynseis/dieythynsi-eyropaikis-enosis-diethnoys-astynomikis-synergasias-d-e-e-d-a-s/ypodieythynsi-eyropaikis-enosis-tomeas-eyropaikis-enosis-diethnon-scheseon/",
+      "snippet": "Το Γραφείο Ευρωπαϊκής Ένωσης & Διεθνών Σχέσεων συνδράμει στο έργο που επιτελείται από τις διάφορες Αστυνομικές Υπηρεσίες …"
+    },
+    {
+      "title": "Διεύθυνση Ευρωπαϊκής Ένωσης και Διεθνούς Αστυνομικής …",
+      "url": "https://2gis.com.cy/cyprus/firm/70000001029023272?m=33.655347%2C35.141766%2F10",
+      "snippet": "Διεύθυνση Ευρωπαϊκής Ένωσης και Διεθνούς Αστυνομικής Συνεργασίας: addresses with entrances on the map, reviews, photos, …"
+    }
+  ]
+}

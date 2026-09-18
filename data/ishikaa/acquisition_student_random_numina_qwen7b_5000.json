@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ishikaa/acquisition_student_random_numina_qwen7b_5000",
+  "slug": "ishikaa-acquisition_student_random_numina_qwen7b_5000",
+  "author": "ishikaa",
+  "url": "https://huggingface.co/ishikaa/acquisition_student_random_numina_qwen7b_5000",
+  "created_at": "2026-09-17T20:59:43.000Z",
+  "updated_at": "2026-09-17T21:01:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "trl",
+    "sft",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242693760,
+  "storage_human": "15.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Diagramme d'Ishikawa (5M) : méthode, modèle & exemple",
+      "url": "https://www.leblogdudirigeant.com/diagramme-ishikawa/",
+      "snippet": "May 18, 2026 · Le diagramme d’Ishikawa, aussi appelé diagramme de causes et effets ou encore diagramme en arêtes de poisson, …"
+    },
+    {
+      "title": "Comment faire un diagramme d’Ishikawa : guide complet avec exemples",
+      "url": "https://outils-qualite.com/blog/guide-complet/comment-faire-un-diagramme-d-ishikawa-guide-complet-avec-exemples",
+      "snippet": "Feb 16, 2026 · Le diagramme d’Ishikawa est un outil d’analyse permettant d’identifier les causes potentielles d’un problème. Il a été …"
+    },
+    {
+      "title": "Diagramme d'Ishikawa : méthode, 5M et exemples [2026] • Asana",
+      "url": "https://asana.com/fr/resources/ishikawa-diagram",
+      "snippet": "Mar 27, 2026 · La définition du diagramme d’Ishikawa, aussi appelé diagramme de causes et effets, est très simple : il s’agit d'une …"
+    },
+    {
+      "title": "Fiche pratique : 6 M ou diagramme d’Ishikawa - qual-org.net",
+      "url": "https://www.qual-org.net/fiche-pratique-6-m-ou-diagramme-dishikawa/",
+      "snippet": "Le diagramme d’Ishikawa, encore appelé « Arête de poisson » ou « 6 M », a été inventé par le professeur Kaoru Ishikawa en 1962. …"
+    },
+    {
+      "title": "Les 5M, ou diagramme d'Ishikawa : méthode + PDF à télécharger",
+      "url": "https://www.appvizer.fr/magazine/operations/gestion-de-projet/5-m-une-gestion-de-projet-sans-problemes",
+      "snippet": "May 31, 2024 · Les 5M, ou diagramme d'Ishikawa, sont un outil de gestion de projet et de gestion des risques. Découvrez la méthode …"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "yuhengtu-bytedance/DataDecide-dolma1_7-no-reddit-1B-60000_62500_65000_67500_69369_weightedavg_merge",
+  "slug": "yuhengtu-bytedance-datadecide-dolma1_7-no-reddit-1b-60000_62500_65000_67500_69369_weightedavg_merge",
+  "author": "yuhengtu-bytedance",
+  "url": "https://huggingface.co/yuhengtu-bytedance/DataDecide-dolma1_7-no-reddit-1B-60000_62500_65000_67500_69369_weightedavg_merge",
+  "created_at": "2026-09-17T22:10:18.000Z",
+  "updated_at": "2026-09-17T22:10:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "arxiv:2203.05482",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1279854592,
+  "parameters_human": "1.28B",
+  "storage_bytes": 2559726104,
+  "storage_human": "2.6 GB",
+  "base_model": "",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Western - Spielfilme (Komplette Filme, deutsch, kostenlos, HD) - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLWhRP5lmYyt_ylo1OBA_qhlU9FLuw6CZo",
+      "snippet": "Du stehst auf Western? Hier bist du genau richtig! Du findest jegliche Art von Western Spielfilmen kostenlos und komplett auf deutsch."
+    },
+    {
+      "title": "Ganze Westernfilme (kostenlos, deutsch, in voller Länge) - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLWhRP5lmYyt-eU5Gile8wFNreoo3K5Lnm",
+      "snippet": "Ganze Westernfilme (kostenlos, deutsch, in voller Länge) by Grjngo - Westernfilme • Playlist • 654 videos • 737,882 views"
+    },
+    {
+      "title": "ganze Western-Spielfilme (kostenlos anschauen) - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLWhRP5lmYyt_E8ZoFvbCK8GYDcbmJPvzV",
+      "snippet": "ganze Western-Spielfilme (kostenlos anschauen) by Grjngo - Westernfilme • Playlist • 646 videos • 108,382 views"
+    },
+    {
+      "title": "Western ganze Filme auf deutsch - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLbGovY_zMiV3z_OSsiLNSz78m2TTSuDoW",
+      "snippet": "Ruhe in Frieden! Ganzer Film by Film&Clips."
+    },
+    {
+      "title": "Western Filme auf deutsch - kein Spaghetti gedöns, ausser ... - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLGw1ZqSAs2nbR02IpKGFiaoVv7d9nShXh",
+      "snippet": "Western Filme auf deutsch - kein Spaghetti gedöns, ausser clint - western vor 1970 - peck, murphy, wayne, montgomery, calhoun, …"
+    }
+  ]
+}

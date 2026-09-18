@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Fluffy/Kimi-K3-W4A16-RTN",
+  "slug": "fluffy-kimi-k3-w4a16-rtn",
+  "author": "Fluffy",
+  "url": "https://huggingface.co/Fluffy/Kimi-K3-W4A16-RTN",
+  "created_at": "2026-09-18T02:13:45.000Z",
+  "updated_at": "2026-09-18T03:39:59.000Z",
+  "license": "kimi-k3-license",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "kimi_k3",
+    "kimi",
+    "moe",
+    "quantized",
+    "compressed-tensors",
+    "int4",
+    "w4a16",
+    "ampere",
+    "a100",
+    "cpu-offload",
+    "image-text-to-text",
+    "custom_code",
+    "base_model:moonshotai/Kimi-K3",
+    "base_model:quantized:moonshotai/Kimi-K3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 2739158274816,
+  "parameters_human": "2739.16B",
+  "storage_bytes": 1411738133329,
+  "storage_human": "1411.7 GB",
+  "base_model": "moonshotai/Kimi-K3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Traduction FLUFFY en français | Dictionnaire anglais-français | Reverso",
+      "url": "https://dictionnaire.reverso.net/anglais-francais/fluffy",
+      "snippet": "Traduction de \"fluffy\" en français : aéré, duveteux, léger. Adjectif, signification, prononciation, expressions idiomatiques en anglais, …"
+    },
+    {
+      "title": "fluffy - Traduction française – Linguee",
+      "url": "https://www.linguee.fr/anglais-francais/traduction/fluffy.html",
+      "snippet": "De très nombreux exemples de phrases traduites contenant \"fluffy\" – Dictionnaire français-anglais et moteur de recherche de …"
+    },
+    {
+      "title": "fluffy - English-French Dictionary WordReference.com",
+      "url": "https://www.wordreference.com/enfr/fluffy",
+      "snippet": "Dans les listes : Food Tastes & Textures, My Vocabulary (Michael), Suite... Synonymes : soft, fuzzy, furry, downy, fleecy, Suite..."
+    },
+    {
+      "title": "Fluffy Mod Manager at Modding Tools - Nexus Mods",
+      "url": "https://www.nexusmods.com/site/mods/818",
+      "snippet": "Mar 17, 2024 · Mod manager that can automatically take backups of files when installing mods for games. Has support for multiple …"
+    },
+    {
+      "title": "My Fluffy | Les meilleurs pancakes japonais",
+      "url": "https://myfluffypancakes.com/",
+      "snippet": "Chez My Fluffy Pancakes, nous sommes passionnés par l’art du pancake japonais. Notre mission est de vous offrir une expérience …"
+    }
+  ]
+}

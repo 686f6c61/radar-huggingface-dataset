@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Falcon256/EDOS-Engineering-CL-Hades-20260917",
+  "slug": "falcon256-edos-engineering-cl-hades-20260917",
+  "author": "Falcon256",
+  "url": "https://huggingface.co/Falcon256/EDOS-Engineering-CL-Hades-20260917",
+  "created_at": "2026-09-18T02:34:56.000Z",
+  "updated_at": "2026-09-18T03:06:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "qwen3.8",
+    "abliterated",
+    "continual-learning",
+    "online-learning",
+    "quantized-training",
+    "text-generation",
+    "base_model:Blackfrost-AI/Qwen3.8-27B-ABLITERATED-GGUF",
+    "base_model:finetune:Blackfrost-AI/Qwen3.8-27B-ABLITERATED-GGUF",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 19535703264,
+  "storage_human": "19.5 GB",
+  "base_model": "Blackfrost-AI/Qwen3.8-27B-ABLITERATED-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Connect with komoot",
+      "url": "https://auth.komoot.de/",
+      "snippet": "Connect with komoot Hey there! You maybe want to visit komoot.com."
+    },
+    {
+      "title": "api.komoot.de",
+      "url": "https://api.komoot.de/v007/guides/803714/smarttours/",
+      "snippet": "{\"_embedded\":{\"items\":[{\"difficulty\":{\"explanationTechnical\":\"db#t2\",\"explanationFitness\":\"d#c3\",\"grade\":\"DIFFICULT\"},\"duration\":16103,\"name\":\"Waterfoot …"
+    },
+    {
+      "title": "api.komoot.de",
+      "url": "https://api.komoot.de/v007/guides/1164219/discover_tours/",
+      "snippet": "{\"_embedded\":{\"items\":[{\"id\":\"e1133870747\",\"status\":\"public\",\"name\":\"Along the Haute Mayenne lake - loop - running race from …"
+    },
+    {
+      "title": "SAVRN Site Map: Every Public Page",
+      "url": "https://savrn.com/sitemap",
+      "snippet": "EDOS-Engineering-CL-Hades-20260917/models/edos-engineering-cl-hades-20260917 ... AI Campus Colocation: The Integrated Model/blog/ai-campus-colocation · Data ..."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "nchristo-synaptics/act_touch_qvga-wrist_qvga-top",
+  "slug": "nchristo-synaptics-act_touch_qvga-wrist_qvga-top",
+  "author": "nchristo-synaptics",
+  "url": "https://huggingface.co/nchristo-synaptics/act_touch_qvga-wrist_qvga-top",
+  "created_at": "2026-09-18T00:24:43.000Z",
+  "updated_at": "2026-09-21T16:52:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 62882214,
+  "parameters_human": "62.9M",
+  "storage_bytes": 1257882912,
+  "storage_human": "1.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ratscanner.org — Minecraft mod malware scanner",
+      "url": "https://ratscanner.org/",
+      "snippet": "Upload a Minecraft mod jar and get a static malware report — RATs, stealers, miners, loaders and named families — plus a …"
+    },
+    {
+      "title": "Jarscanner - Static Malware Analyzer",
+      "url": "https://www.jarscanner.org/",
+      "snippet": "Use jarscanner to scan Minecraft mods for malware and security threats. Ensure your mods are safe with our static analysis tool for …"
+    },
+    {
+      "title": "RatOrNot — Free Minecraft JAR Malware & RAT Scanner",
+      "url": "https://ratornot.com/",
+      "snippet": "Free online Minecraft JAR scanner. Check mods from CurseForge or Modrinth for RATs, token stealers, and infostealers. AI-powered …"
+    },
+    {
+      "title": "Info — ratscanner.org",
+      "url": "https://ratscanner.org/info",
+      "snippet": "How the scanner works, what the verdicts mean, what happens to a jar you upload, and how to reach us."
+    },
+    {
+      "title": "Rat Scanner",
+      "url": "https://ratscanner.com/",
+      "snippet": "Open Source tool for Escape from Tarkov. Rat Scanner allows you to scan items and provides you with realtime data about them. …"
+    }
+  ]
+}

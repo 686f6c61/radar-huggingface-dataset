@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "miguelamendez/mica-minicpm-v46-thinking",
+  "slug": "miguelamendez-mica-minicpm-v46-thinking",
+  "author": "miguelamendez",
+  "url": "https://huggingface.co/miguelamendez/mica-minicpm-v46-thinking",
+  "created_at": "2026-09-18T00:00:04.000Z",
+  "updated_at": "2026-09-19T02:14:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "mica-server",
+    "image-text-to-text",
+    "video-text-to-text",
+    "thinking",
+    "mlx",
+    "commercial-use",
+    "en",
+    "zh",
+    "base_model:openbmb/MiniCPM-V-4.6-Thinking",
+    "base_model:quantized:openbmb/MiniCPM-V-4.6-Thinking",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 752161600,
+  "parameters_human": "752.2M",
+  "storage_bytes": 6939220923,
+  "storage_human": "6.9 GB",
+  "base_model": "openbmb/MiniCPM-V-4.6-Thinking",
+  "formats": [
+    "gguf",
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Echte Hundesex-Videos mit Frauen | Hardcore-Bestialität",
+      "url": "https://www.dogsex.video/de/",
+      "snippet": "Sieh echte Hundesex-Videos mit Frauen. Hardcore-Bestialität mit tiefer Penetration, Outdoor-Szenen und unzensiertem Sex mit …"
+    },
+    {
+      "title": "Quora - A place to share knowledge and better understand the world",
+      "url": "https://www.quora.com/Is-it-wrong-for-a-woman-to-have-sex-with-a-male-dog",
+      "snippet": "Hier sollte eine Beschreibung angezeigt werden, diese Seite lässt dies jedoch nicht zu."
+    },
+    {
+      "title": "Vidéos Porno dog sex videos | Bestialité",
+      "url": "https://fr.bestiality.sex/tag/dog-sex-videos",
+      "snippet": "Regardez des vidéos porno dog sex videos sur Bestialité. Parcourez notre collection dog sex videos. Nouvelles vidéos ajoutées …"
+    },
+    {
+      "title": "Free Dog Porn Tube with Hardcore Zoo Fuck Vids",
+      "url": "https://dogporntube.site/",
+      "snippet": "Take your time and explore our collection of dog porn tube videos. Here, you will find some of the best bestiality videos focusing on …"
+    },
+    {
+      "title": "Kostenlose Hund Porno Tube mit Hardcore Zoo Fuck Vids",
+      "url": "https://dogporntube.site/de/",
+      "snippet": "Nehmen Sie sich Zeit und entdecken Sie unsere Sammlung von Hundepornovideos. Hier finden Sie einige der besten Bestiality …"
+    }
+  ]
+}

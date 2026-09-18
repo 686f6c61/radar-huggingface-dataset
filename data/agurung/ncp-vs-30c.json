@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "agurung/ncp-vs-30c",
+  "slug": "agurung-ncp-vs-30c",
+  "author": "agurung",
+  "url": "https://huggingface.co/agurung/ncp-vs-30c",
+  "created_at": "2026-09-18T02:17:31.000Z",
+  "updated_at": "2026-09-18T02:19:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056404730,
+  "storage_human": "8.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "如何评价 9 月 19 日发布的大疆 Osmo Action 5 Pro？ - 知乎",
+      "url": "https://www.zhihu.com/question/667621652",
+      "snippet": "谈到运动相机，很多人都会想到大疆这个品牌。到这篇评测文章为止，大疆已经推出第五代运动相机产品，命名为DJI Osmo Action 5 …"
+    },
+    {
+      "title": "电影开始拍摄时，会有人举着牌子，叫「Action!」，然后开始。这个牌 …",
+      "url": "https://www.zhihu.com/question/20300638",
+      "snippet": "Jun 17, 2012 · 映画撮影開始時に「Action!」と叫ぶ理由について説明します。"
+    },
+    {
+      "title": "En cour ou en cours [Résolu] - Le Figaro",
+      "url": "https://forum.lefigaro.fr/forum/affich-253-en-cour-ou-en-cours",
+      "snippet": "Bonsoir ! L’expression « en cour » ne s’emploie que dans une formule précise, en parlant de quelqu’un qui est « bien en cour ». Cela …"
+    },
+    {
+      "title": "Suivi ou suivie [Résolu] - Le Figaro",
+      "url": "https://forum.lefigaro.fr/forum/affich-421-suivi-ou-suivie",
+      "snippet": "Bonjour, Je viens lancer un topic sur le terme suivi ou suivie. Je ne sais pas si le sujet a déjà été traité. J’aimerais savoir quelle est la …"
+    },
+    {
+      "title": "大疆action5pro，和action4哪一个更好？ - 知乎",
+      "url": "https://www.zhihu.com/question/8394229742",
+      "snippet": "大疆Action 4 如果你是入门用户，主要拍视频（如骑行、滑雪），或预算控制在 2000 元以内，Action 4 仍是高性价比选择。它视频规 …"
+    }
+  ]
+}

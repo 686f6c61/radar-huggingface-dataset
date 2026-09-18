@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "latent-artist/f142c54d3ea54565a5ce95f881497e41",
+  "slug": "latent-artist-f142c54d3ea54565a5ce95f881497e41",
+  "author": "latent-artist",
+  "url": "https://huggingface.co/latent-artist/f142c54d3ea54565a5ce95f881497e41",
+  "created_at": "2026-09-18T02:45:32.000Z",
+  "updated_at": "2026-09-18T02:52:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "chat",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 157,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15231271888,
+  "storage_human": "15.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SAVRN Site Map: Every Public Page",
+      "url": "https://savrn.com/sitemap",
+      "snippet": "Latent Trojan/model-publishers/latent-artist · George Perdrizet/model ... AI Campus Colocation: The Integrated Model/blog/ai-campus-colocation · Data ..."
+    },
+    {
+      "title": "LOLI - Periscope",
+      "url": "https://www.pscp.tv/LoliRomo",
+      "snippet": "The latest broadcasts from LOLI (@LoliRomo). SENIOR ARTIST / EDUCATOR / MAKEUP CITY."
+    },
+    {
+      "title": "Lola Lola: \"Let’s snap!! Add me LittleLola80\" - Periscope",
+      "url": "https://www.pscp.tv/lolalolalola80/1eaKbvbDAPjKX",
+      "snippet": "Snapchat: LittleLola80 or Twitter: LolaLittle14 😏🙈 ️."
+    },
+    {
+      "title": "Il web È una fogna piena di pedo-porconi - la polizia postale ha ...",
+      "url": "https://www.dagospia.com/cronache/web-e-fogna-piena-pedo-porconi-polizia-postale-sgominato-banda-dedita-487248",
+      "snippet": "17 hours ago · Il web è una fogna piena di pedo-porconi - la polizia postale ha sgominato una banda che diffondeva materiale …"
+    },
+    {
+      "title": "Марго: \"Дві...... \" - Periscope",
+      "url": "https://www.periscope.tv/w/1lDGLQMNogkJm",
+      "snippet": "Марго (@margolyshevuh)."
+    }
+  ]
+}

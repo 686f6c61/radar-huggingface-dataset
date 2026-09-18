@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "SargeDev/jev-distill-corpus",
+  "slug": "sargedev-jev-distill-corpus",
+  "author": "SargeDev",
+  "url": "https://huggingface.co/SargeDev/jev-distill-corpus",
+  "created_at": "2026-09-18T02:11:37.000Z",
+  "updated_at": "2026-09-21T04:28:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "reranker",
+    "memory-gating",
+    "distillation",
+    "lora",
+    "system-one",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 463863795,
+  "storage_human": "464 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Agrar-Wetter vom Maschinenring",
+      "url": "https://www.maschinenring.de/wetter",
+      "snippet": "Dein zuverlässiges Agrar-Wetter für Deutschland mit ️ Wetterprognosen ️ Niederschlagswerte ️ Windgeschwindigkeit für …"
+    },
+    {
+      "title": "Maschinenring",
+      "url": "https://www.maschinenring.de/",
+      "snippet": "Maschinenringe Deutschland – landwirtschaftliche Selbsthilfe, digitale Lösungen (MeinAcker), Energieversorgung (LandEnergie), …"
+    },
+    {
+      "title": "THG-Prämie | E-Fahrzeug | Maschinenring",
+      "url": "https://thg.maschinenring.de/?itm_source=wetter&itm_medium=banner&itm_content=landenergie",
+      "snippet": "In nur wenigen Schritten können Sie Ihren Zuschuss fürs E-Auto beantragen. Einfach Fahrzeugschein hochladen und profitieren!"
+    },
+    {
+      "title": "Maschinenringe KFZ Neuwagen Konfigurator",
+      "url": "https://neuwagen.maschinenring.de/",
+      "snippet": "Mit dem KFZ Konfigurator der Maschinenringe wählen Sie aus über 30 Herstellern und konfigurieren ganz individuell Ihr neues …"
+    },
+    {
+      "title": "Direktvermarktung: Erfolgsfaktoren & Preisgestaltung",
+      "url": "https://akademie.maschinenring.de/kurs/direktvermarktung-erfolgsfaktoren-preisgestaltung/?itm_source=wetter&itm_medium=banner&itm_content=akademie",
+      "snippet": "Du hast eine Direktvermarktung bereits aufgebaut und weißt, dass noch mehr Potenzial drinsteckt. In diesem dreiteiligen Kurs …"
+    }
+  ]
+}

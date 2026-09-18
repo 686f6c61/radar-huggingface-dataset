@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "Rcscan/Qwen3.5-2.8B-V0.1",
+  "slug": "rcscan-qwen3-5-2-8b-v0-1",
+  "author": "Rcscan",
+  "url": "https://huggingface.co/Rcscan/Qwen3.5-2.8B-V0.1",
+  "created_at": "2026-09-17T20:54:40.000Z",
+  "updated_at": "2026-09-17T20:54:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "pt",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "qwen3.5",
+    "pruning",
+    "qlora",
+    "quantization",
+    "portuguese",
+    "english",
+    "pt-br",
+    "llama.cpp",
+    "text-generation",
+    "pt",
+    "en",
+    "dataset:aldair166/train",
+    "base_model:aldair166/qwen3.5-2.8b",
+    "base_model:quantized:aldair166/qwen3.5-2.8b",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 80863232,
+  "parameters_human": "80.9M",
+  "storage_bytes": 2047521088,
+  "storage_human": "2.0 GB",
+  "base_model": "aldair166/qwen3.5-2.8b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.de/",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=de",
+      "snippet": "Werbeprogramme Über Google Google.com in English © 2026 - Datenschutzerklärung - Nutzungsbedingungen"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com.nf/?hl=de-US",
+      "snippet": "Google gibt es auch auf: English Werbeprogramme Über Google Google.com"
+    },
+    {
+      "title": "Übersicht",
+      "url": "https://search.google/intl/de-DE/",
+      "snippet": "Explore new ways to search. Download the Google app to experience Lens, AR, Search Labs, voice search, and more."
+    },
+    {
+      "title": "Google Übersetzer",
+      "url": "https://translate.google.de/",
+      "snippet": "Mit diesem kostenlosen Google-Dienst lassen sich Wörter, Sätze und Webseiten sofort zwischen Deutsch und über 100 Sprachen …"
+    }
+  ]
+}

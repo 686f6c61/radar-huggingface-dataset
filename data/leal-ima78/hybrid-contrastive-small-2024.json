@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "leal-ima78/hybrid-contrastive-small-2024",
+  "slug": "leal-ima78-hybrid-contrastive-small-2024",
+  "author": "leal-ima78",
+  "url": "https://huggingface.co/leal-ima78/hybrid-contrastive-small-2024",
+  "created_at": "2026-09-17T23:15:50.000Z",
+  "updated_at": "2026-09-17T23:15:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "hybrid",
+    "pytorch",
+    "contrastive",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Création et rénovation de vos exterieurs - Léal",
+      "url": "https://leal.bzh/",
+      "snippet": "Terrassement, assainissement, enrobés, pavage, béton… LEAL devient un acteur local incontournable des travaux publics et des …"
+    },
+    {
+      "title": "leal — Wiktionnaire, le dictionnaire libre",
+      "url": "https://fr.wiktionary.org/wiki/leal",
+      "snippet": "Adjectif modifier le wikicode ... leal \\ljˈaɫ\\ (Lisbonne) \\li.ˈaw\\ (São Paulo) Loyal, honnête, droit. Fidèle. Brave, vaillant."
+    },
+    {
+      "title": "CosmeticLeal",
+      "url": "https://lealcosmetic.com/",
+      "snippet": "Découvrez la splendeur et l'éclat d'une peau radieuse avec la gamme de la marque leal spécialement conçue pour corriger les …"
+    },
+    {
+      "title": "Nos produits – CosmeticLeal",
+      "url": "https://lealcosmetic.com/collections/nos-produits",
+      "snippet": "Gamme Leal Complète avec Blush et sac offert - PROMO D'ETE 1,438.00 dh 650.00 dh Soldes CosmeticLeal"
+    },
+    {
+      "title": "Hugo Leal — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Hugo_Leal",
+      "snippet": "Hugo Leal ... Hugo Miguel Ribeiro Leal, né le 21 mai 1980 à Cascais (Région de Lisbonne), est un footballeur international portugais."
+    }
+  ]
+}

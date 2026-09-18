@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l3_remove20_swapgapiter_b010_r05",
+  "slug": "jeesup-svd-safety-l3_remove20_swapgapiter_b010_r05",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l3_remove20_swapgapiter_b010_r05",
+  "created_at": "2026-09-17T22:48:53.000Z",
+  "updated_at": "2026-09-17T22:59:51.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama3",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Meta-Llama-3-8B-Instruct",
+    "base_model:finetune:meta-llama/Meta-Llama-3-8B-Instruct",
+    "license:llama3",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766337,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Meta-Llama-3-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Esta mi nieto q viajo para jugar y quiero verlo por yutube",
+      "url": "https://support.google.com/youtube/thread/445344796/esta-mi-nieto-q-viajo-para-jugar-y-quiero-verlo-por-yutube?hl=es",
+      "snippet": "Jun 26, 2026 · Esta mi nieto q viajo para jugar y quiero verlo por yutube Quiero ver a mi nieto jugar y yutube no me permite q puedo …"
+    },
+    {
+      "title": "yutube,google play markete giremiyorum - Android Topluluğu",
+      "url": "https://support.google.com/android/thread/418317267/yutube-google-play-markete-giremiyorum?hl=tr",
+      "snippet": "Mar 19, 2026 · Yüklediğiniz oyunun telefonunuzdaki temel sistem bileşenlerinden birini (muhtemelen Android System WebView veya …"
+    },
+    {
+      "title": "Archiv der chemischen Reaktion - Wissenschaftler Ark",
+      "url": "https://scholarsark.com/de/tag/chemical-reaction/",
+      "snippet": "Chemiker an der Ohio State University hat eine neue und verbesserte Art und Weise entwickelt, Moleküle zu erzeugen, die die …"
+    },
+    {
+      "title": "susah mendonlot daripada aflikasi yutube",
+      "url": "https://support.google.com/youtube/thread/444112314/susah-mendonlot-daripada-aflikasi-yutube?hl=id",
+      "snippet": "Jun 22, 2026 · susah mendonlot daripada aflikasi yutube susah mendonloot Detail Mengupload Video, Android, Penonton"
+    },
+    {
+      "title": "saya baru belajar main yutube",
+      "url": "https://support.google.com/youtube/thread/404848416/saya-baru-belajar-main-yutube?hl=id",
+      "snippet": "Jan 25, 2026 · saya baru belajar main yutube saya baru belajar bermain yutube Detail Pedoman Komunitas YouTube, Android, …"
+    }
+  ]
+}

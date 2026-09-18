@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "TechnoBaptist/Ternary-Bonsai-2-27B-gguf",
+  "slug": "technobaptist-ternary-bonsai-2-27b-gguf",
+  "author": "TechnoBaptist",
+  "url": "https://huggingface.co/TechnoBaptist/Ternary-Bonsai-2-27B-gguf",
+  "created_at": "2026-09-17T21:32:19.000Z",
+  "updated_at": "2026-09-17T21:32:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "ternary",
+    "2-bit",
+    "llama-cpp",
+    "cuda",
+    "metal",
+    "on-device",
+    "hybrid-attention",
+    "prismml",
+    "bonsai",
+    "text-generation",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 68521619616,
+  "storage_human": "68.5 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Shopify: The All-in-One Commerce Platform for Businesses - Shopify",
+      "url": "https://www.shopify.com/",
+      "snippet": "Try Shopify free. Build or grow your business fast with AI. Get more than ecommerce software with tools to manage every part of your …"
+    },
+    {
+      "title": "Build Your Online Store: Use Themes or Go Headless - Shopify",
+      "url": "https://www.shopify.com/online",
+      "snippet": "Whether you’re looking to build a store from scratch or want something more move-in ready, Shopify has options for every business. …"
+    },
+    {
+      "title": "Shopify - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Shopify",
+      "snippet": "On August 14, 2019, Shopify launched Shopify Chat, a new native chat function that allows merchants to have real-time …"
+    },
+    {
+      "title": "Shopify App Store",
+      "url": "https://apps.shopify.com/",
+      "snippet": "Shopify App Store: customize your online store and grow your business with Shopify-approved apps for marketing, store design, …"
+    },
+    {
+      "title": "Shopify App — Installation",
+      "url": "https://qr.shopify.com/",
+      "snippet": "Enter your shop domain to log in or install this app."
+    }
+  ]
+}

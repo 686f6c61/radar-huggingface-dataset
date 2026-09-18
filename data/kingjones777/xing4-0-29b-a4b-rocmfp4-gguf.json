@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "kingjones777/Xing4.0-29B-A4B-ROCmFP4-GGUF",
+  "slug": "kingjones777-xing4-0-29b-a4b-rocmfp4-gguf",
+  "author": "kingjones777",
+  "url": "https://huggingface.co/kingjones777/Xing4.0-29B-A4B-ROCmFP4-GGUF",
+  "created_at": "2026-09-18T03:49:21.000Z",
+  "updated_at": "2026-09-20T01:03:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "rocm",
+    "rocmfp4",
+    "strix-halo",
+    "gfx1151",
+    "amd",
+    "moe",
+    "mla",
+    "text-generation",
+    "base_model:XingChen-AGI/Xing4.0-29B-A4B",
+    "base_model:quantized:XingChen-AGI/Xing4.0-29B-A4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 175,
+  "trending_score": 0,
+  "parameters": 31215031088,
+  "parameters_human": "31.22B",
+  "storage_bytes": 51566047456,
+  "storage_human": "51.6 GB",
+  "base_model": "XingChen-AGI/Xing4.0-29B-A4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "QUERY function - Google Docs Editors Help",
+      "url": "https://support.google.com/docs/answer/3093343?hl=en",
+      "snippet": "QUERY function Runs a Google Visualization API Query Language query across data. Sample Usage QUERY (A2:E6,\"select avg (A) …"
+    },
+    {
+      "title": "QUERY - เครื่องมือแก้ไข Google เอกสาร ความช่วยเหลือ",
+      "url": "https://support.google.com/docs/answer/3093343?hl=th",
+      "snippet": "เรียกใช้การค้นหาของ Google Visualization API Query Language จากข้อมูลทั้งหมด ตัวอย่างการใช้งาน QUERY (A2:E6,\"select avg (A) pivot …"
+    },
+    {
+      "title": "sin prejuicio - WordReference Forums",
+      "url": "https://forum.wordreference.com/threads/sin-prejuicio.1452459/",
+      "snippet": "Jun 30, 2009 · A expressão insere-se num documento de tribunal em que se dá por recebido um exhorto (carta rogatória, penso eu), …"
+    },
+    {
+      "title": "jouer aux pitres - WordReference Forums",
+      "url": "https://forum.wordreference.com/threads/jouer-aux-pitres.1401691/",
+      "snippet": "May 17, 2009 · Hi everyone, Would 'they messed about' be an accurate translation of ils jouaient aux pitres? Thanks for your help!"
+    },
+    {
+      "title": "Google Sheets Query with \"where matches...\" or \"where contains...\" not …",
+      "url": "https://support.google.com/docs/thread/76683705/google-sheets-query-with-where-matches-or-where-contains-not-returning-anything?hl=en",
+      "snippet": "Oct 13, 2020 · There are many columns where B has a value of \"TOTAL\" however the query returns empty. Anyone who can offer …"
+    }
+  ]
+}

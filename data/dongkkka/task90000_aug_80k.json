@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Dongkkka/task90000_aug_80k",
+  "slug": "dongkkka-task90000_aug_80k",
+  "author": "Dongkkka",
+  "url": "https://huggingface.co/Dongkkka/task90000_aug_80k",
+  "created_at": "2026-09-18T01:28:38.000Z",
+  "updated_at": "2026-09-18T01:29:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "Gr00tN1d7",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 12576206865,
+  "storage_human": "12.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ulefone Power Armor 18T Ultra vs Ulefone Armor 27T Pro",
+      "url": "https://www.gsmchoice.com/de/gegenuberstellung/ulefone-powerarmor18tultra-vs-ulefone-armor-27t-pro/",
+      "snippet": "Telefonübersicht: Ulefone Power Armor 18T Ultra vs Ulefone Armor 27T Pro detaillierter technischer Datenvergleich. Sehen Sie ihre …"
+    },
+    {
+      "title": "Ulefone Armor 27T Pro vs Ulefone Power Armor 18T Ultra",
+      "url": "https://www.gsmchoice.com/de/gegenuberstellung/ulefone-armor-27t-pro-vs-ulefone-powerarmor18tultra/",
+      "snippet": "Telefonübersicht: Ulefone Armor 27T Pro vs Ulefone Power Armor 18T Ultra detaillierter technischer Datenvergleich. Sehen Sie ihre …"
+    },
+    {
+      "title": "Ulefone Armor 27T Pro vs Ulefone Power Armor 18T Ultra",
+      "url": "https://versus.com/de/ulefone-armor-27t-pro-vs-ulefone-power-armor-18t-ultra",
+      "snippet": "Was ist der Unterschied zwischen Ulefone Armor 27T Pro und Ulefone Power Armor 18T Ultra? Finde heraus welches besser ist und …"
+    },
+    {
+      "title": "Armor 27T Pro 5G Wärmebildgebung & Nachtsicht 10600mAh …",
+      "url": "https://store.ulefone.com/de/products/armor-27t-pro",
+      "snippet": "Apr 26, 2024 · Armor 27T Pro ist spritzwasser- und staubgeschützt und wurde unter kontrollierten Laborbedingungen getestet. Es …"
+    },
+    {
+      "title": "Vergleich zwischen: - Ulefone Power Armor 18T - Ulefone Armor 27T Pro ...",
+      "url": "https://www.devicespecifications.com/de/comparison/5bb326f7f4",
+      "snippet": "Startseite Vergleich zwischen: - Ulefone Power Armor 18T - Ulefone Armor 27T Pro 4G - Ulefone Armor 27T Pro 5G"
+    }
+  ]
+}

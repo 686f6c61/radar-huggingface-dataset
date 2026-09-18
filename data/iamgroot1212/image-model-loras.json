@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "iamgroot1212/image-model-loras",
+  "slug": "iamgroot1212-image-model-loras",
+  "author": "iamgroot1212",
+  "url": "https://huggingface.co/iamgroot1212/image-model-loras",
+  "created_at": "2026-09-18T00:23:16.000Z",
+  "updated_at": "2026-09-20T05:55:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10271234952,
+  "storage_human": "10.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Skarpety Y&Y Vertical Spray Wall YANDY VERTICAL | Decathlon",
+      "url": "https://www.decathlon.pl/p/mp/yandy-vertical/skarpety-yandy-vertical-spray-wall/_/R-p-0156deca-873f-47db-b0c1-ecb28ba8ebba",
+      "snippet": "Skarpety Y&Y Vertical Spray Wall - blue są produktem, który łączy w sobie włókna najwyższej jakości z nowoczesnym designem. …"
+    },
+    {
+      "title": "Skarpety Y&Y Vertical Spray Wall YANDY VERTICAL | Decathlon",
+      "url": "https://www.decathlon.pl/p/mp/yandy-vertical/skarpety-yandy-vertical-spray-wall/_/R-p-749b4442-66ae-464a-ac9c-33c4cb042d33",
+      "snippet": "Skarpety Y&Y Vertical Spray Wall - grey są produktem, który łączy w sobie włókna najwyższej jakości z nowoczesnym designem. …"
+    },
+    {
+      "title": "Yandy spray paint - Facebook",
+      "url": "https://www.facebook.com/p/Yandy-spray-paint-100063954498610/",
+      "snippet": "Apr 29, 2022 · Posts Yandy spray paint *****YANDY SPRAY Paint**** ..is now available.. Yandy spray paint We also have electrical …"
+    },
+    {
+      "title": "Yandy spray paint - Facebook",
+      "url": "https://www.facebook.com/100063954498610/posts/yandy-spray-paint-is-now-available/379249804216833/",
+      "snippet": "Apr 29, 2022 · *****YANDY SPRAY Paint**** ..is now available.."
+    },
+    {
+      "title": "Yandy – купить товары в каталоге на Яндекс Маркет",
+      "url": "https://market.yandex.ru/business--yandy/746956",
+      "snippet": "Актуальный ассортимент интернет-магазина Yandy в каталоге на Яндекс Маркет. Все товары от \"Yandy\" в одном месте по …"
+    }
+  ]
+}

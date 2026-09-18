@@ -1,0 +1,104 @@
+{
+  "schema": 1,
+  "id": "pb09204048/Qwen3-4B-Code-RL-Specialist",
+  "slug": "pb09204048-qwen3-4b-code-rl-specialist",
+  "author": "pb09204048",
+  "url": "https://huggingface.co/pb09204048/Qwen3-4B-Code-RL-Specialist",
+  "created_at": "2026-09-17T22:31:58.000Z",
+  "updated_at": "2026-09-17T22:47:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "reinforcement-learning",
+    "grpo",
+    "lora-merged",
+    "mopd",
+    "multi-teacher-on-policy-distillation",
+    "code",
+    "conversational",
+    "dataset:agentica-org/DeepCoder-Preview-Dataset",
+    "arxiv:2606.30406",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:finetune:Qwen/Qwen3-4B",
+    "license:apache-2.0",
+    "model-index",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4411424256,
+  "parameters_human": "4.41B",
+  "storage_bytes": 8834317185,
+  "storage_human": "8.8 GB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text Generation",
+      "dataset": "AIME24 (30 prompts, 4 samples)",
+      "metric": "Pass@1 (%)",
+      "value": 25.833333
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "LCB v5 frozen test subset (279 prompts, 4 samples)",
+      "metric": "Pass@1 (%)",
+      "value": 24.103943
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "IFEval (541 prompts; literal punctuation correction)",
+      "metric": "Prompt strict accuracy (%)",
+      "value": 81.700555
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "IFBench (300 prompts)",
+      "metric": "Prompt strict accuracy (%)",
+      "value": 25.333333
+    }
+  ],
+  "sources": [
+    {
+      "title": "Femboy Videos and Pictures | Scrolller NSFW",
+      "url": "https://scrolller.com/c/feminin",
+      "snippet": "Browse Femboy in an endless gallery of pictures and videos. Go on to discover millions of awesome videos and pictures in …"
+    },
+    {
+      "title": "Femboy Gay Videos: Sissy Twinks, Crossdressers & Fem Fun",
+      "url": "https://www.pp39.cn/gay/tag/femboy",
+      "snippet": "Femboy gay porn videos feature adorable sissy twinks in lingerie, crossdressing cuties, and feminine boys in steamy encounters. …"
+    },
+    {
+      "title": "Shemale Cock Tube, Tranny Sex Videos, Transsexual Porn Movies and …",
+      "url": "https://www.shemalecocktube.com/search?search=femboy",
+      "snippet": "Shemale Cock Tube, Tranny Sex Videos, Transsexual Porn Movies and T ..."
+    },
+    {
+      "title": "Top Videos - Femboyish - Page 2",
+      "url": "https://femboyish.net/top/page/2/",
+      "snippet": "Aug 11, 2024 · Browse the most viewed episodes on Femboyish, ranked by total hits. Discover the videos fans watched the most …"
+    },
+    {
+      "title": "#femboy Videos | 24vids",
+      "url": "https://www.24vids.com/tag/femboy",
+      "snippet": "Explore popular videos tagged with #femboy curated from multiple social media platforms. Watch the best #femboy content."
+    }
+  ]
+}

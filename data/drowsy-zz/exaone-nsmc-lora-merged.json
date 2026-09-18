@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Drowsy-zZ/exaone-nsmc-lora-merged",
+  "slug": "drowsy-zz-exaone-nsmc-lora-merged",
+  "author": "Drowsy-zZ",
+  "url": "https://huggingface.co/Drowsy-zZ/exaone-nsmc-lora-merged",
+  "created_at": "2026-09-18T01:38:41.000Z",
+  "updated_at": "2026-09-18T01:40:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "exaone4",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 192,
+  "trending_score": 0,
+  "parameters": 1279391488,
+  "parameters_human": "1.28B",
+  "storage_bytes": 2558821288,
+  "storage_human": "2.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TikTok - 知乎",
+      "url": "https://www.zhihu.com/topic/21190111/hot",
+      "snippet": "TikTok Tik Tok是抖音短视频国际版。 Tik Tok原本在海外接连获得佳绩，抖音短视频似乎已经成为中国产品在海外获得成功的又一杰 …"
+    },
+    {
+      "title": "Top | dafont.com",
+      "url": "https://www.dafont.com/top.php",
+      "snippet": "Archive of freely downloadable fonts. Browse by alphabetical listing, by style, by author or by popularity."
+    },
+    {
+      "title": "跨境电商Tiktok 怎么做？ - 知乎",
+      "url": "https://www.zhihu.com/question/13547178363",
+      "snippet": "只不过现在tiktok发货时效比较短，很多新手不太合适而已 往期内容： 一个人单干跨境，这套方法20天出成绩！ 跨境选主图 新手最有 …"
+    },
+    {
+      "title": "Tiktok | dafont.com",
+      "url": "https://www.dafont.com/pt/tiktok.font",
+      "snippet": "May 9, 2021 · Tiktok | dafont.com Free for personal Used for Commercial Used plase contact me : lettercornerstudio@gmail.com"
+    },
+    {
+      "title": "电商运营教程 - 淘帖 - 吾爱破解 - 52pojie.cn",
+      "url": "https://www.52pojie.cn/forum.php?mod=collection&action=view&ctid=1839",
+      "snippet": "Jun 10, 2025 · 电商运营教程 ,吾爱破解 - 52pojie.cn"
+    }
+  ]
+}

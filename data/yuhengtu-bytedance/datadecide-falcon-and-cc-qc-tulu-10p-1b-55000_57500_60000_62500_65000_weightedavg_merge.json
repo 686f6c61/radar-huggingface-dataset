@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "yuhengtu-bytedance/DataDecide-falcon-and-cc-qc-tulu-10p-1B-55000_57500_60000_62500_65000_weightedavg_merge",
+  "slug": "yuhengtu-bytedance-datadecide-falcon-and-cc-qc-tulu-10p-1b-55000_57500_60000_62500_65000_weightedavg_merge",
+  "author": "yuhengtu-bytedance",
+  "url": "https://huggingface.co/yuhengtu-bytedance/DataDecide-falcon-and-cc-qc-tulu-10p-1B-55000_57500_60000_62500_65000_weightedavg_merge",
+  "created_at": "2026-09-17T22:10:22.000Z",
+  "updated_at": "2026-09-17T22:10:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "arxiv:2203.05482",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1279854592,
+  "parameters_human": "1.28B",
+  "storage_bytes": 2559726104,
+  "storage_human": "2.6 GB",
+  "base_model": "",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jaspertronics™ Original Lamp & Housing for the Dukane Imagepro …",
+      "url": "https://www.jaspertronics.com/products/imagepro-8975wu-lamp",
+      "snippet": "The Imagepro-8975WU-LAMP replacement projector lamp & housing module is designed to replace bulbs in many Dukane …"
+    }
+  ]
+}

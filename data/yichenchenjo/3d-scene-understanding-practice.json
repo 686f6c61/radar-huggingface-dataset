@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Yichenchenjo/3d-scene-understanding-practice",
+  "slug": "yichenchenjo-3d-scene-understanding-practice",
+  "author": "Yichenchenjo",
+  "url": "https://huggingface.co/Yichenchenjo/3d-scene-understanding-practice",
+  "created_at": "2026-09-17T23:09:22.000Z",
+  "updated_at": "2026-09-17T23:09:29.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "3d-scene-understanding",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Unser Reiseführer zur vielfältigen Küste Brasiliens",
+      "url": "https://www.travellocal.com/de/magazin/unser-reisefuehrer-zu-brasiliens-vielfaeltiger-kueste",
+      "snippet": "Jul 27, 2024 · Die brasilianische Küste birgt eine Fülle von herrlichen Stränden, atlantischen Wäldern und regen Städten direkt am …"
+    },
+    {
+      "title": "Brasilien Reise: Route, Kosten und beste Reisezeit",
+      "url": "https://packlightly.de/brasilien/",
+      "snippet": "Reiseführer für Brasilien: Visum, Tagesbudget ab 42 Euro, beste Reisezeit, acht Top-Reiseziele und drei ausgearbeitete Routen pro …"
+    },
+    {
+      "title": "Die 10 Besten Brasilien Rundreisen 2026/2027 - TourRadar",
+      "url": "https://www.tourradar.de/d/brasilien",
+      "snippet": "Auf TourRadar finden Sie 250+ geführte Brasilien Rundreisen von verschiedenen Anbietern. Über 593 Reiseberichte und Routen …"
+    },
+    {
+      "title": "Küste Brasilien | Brazilië Reis Specialist",
+      "url": "https://www.reisespezialistbrasilien.de/reisen/reisethema/kueste-brasilien",
+      "snippet": "Das Fertigen eines Angebotes für eine Rundreise auf Maß ist unverbindlich, kostenlos und gibt Ihnen die Möglichkeit, eine Reise zu …"
+    },
+    {
+      "title": "Brasilien Ferien günstig buchen bei Lidl-Reisen",
+      "url": "https://www.lidl-reisen.ch/ferien/brasilien",
+      "snippet": "Baia do Sancho: Wurde sogar zum schönsten Strand der Welt gekürt und befindet sich auf Fernando de Noronha, einem Archipel …"
+    }
+  ]
+}

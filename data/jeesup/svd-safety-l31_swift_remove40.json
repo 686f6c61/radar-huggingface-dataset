@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l31_swift_remove40",
+  "slug": "jeesup-svd-safety-l31_swift_remove40",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l31_swift_remove40",
+  "created_at": "2026-09-17T21:06:24.000Z",
+  "updated_at": "2026-09-22T00:24:13.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama3",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "license:llama3.1",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766296,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Barcelona Passes | Save up to 50% | Go City®",
+      "url": "https://gocity.com/en/barcelona",
+      "snippet": "Explore Barcelona with Go City®. Enjoy incredible savings and discover 50+ Barcelona attractions, all on one digital pass."
+    },
+    {
+      "title": "Barcelona All-Inclusive Pass | Discover Barcelona with Go City®",
+      "url": "https://gocity.com/en/barcelona/passes/all-inclusive",
+      "snippet": "Explore Barcelona with Go City®. Our All-Inclusive Barcelona Pass offers great savings, flexibility and attractions for everyone."
+    },
+    {
+      "title": "Go City Newsroom - Newsroom",
+      "url": "https://newsroom.gocity.com/",
+      "snippet": "Dec 12, 2024 · Go City Goes Back to '99, Releasing a Limited Number of Passes at their Original Price to Celebrate 25 Years of The …"
+    },
+    {
+      "title": "Go City® | Official Website | Sightsee and Save with Go City®",
+      "url": "https://gocity.com/en",
+      "snippet": "Go City® gives you the freedom to do what you want, when you want, whilst making incredible savings on attractions. Sightseeing …"
+    },
+    {
+      "title": "Go City® | Pases de Barcelona | Ahorra hasta un 55%",
+      "url": "https://gocity.com/es/barcelona",
+      "snippet": "Explora Barcelona con Go City®. Disfruta de un ahorro increíble y descubre más de 45 atracciones, todo con un solo pase digital."
+    }
+  ]
+}

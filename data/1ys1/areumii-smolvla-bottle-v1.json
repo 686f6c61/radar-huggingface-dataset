@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "1ys1/areumii-smolvla-bottle-v1",
+  "slug": "1ys1-areumii-smolvla-bottle-v1",
+  "author": "1ys1",
+  "url": "https://huggingface.co/1ys1/areumii-smolvla-bottle-v1",
+  "created_at": "2026-09-17T22:47:07.000Z",
+  "updated_at": "2026-09-17T23:05:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:1ys1/areumii-bottle-v1",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906721976,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Barclaycard | Enter your log-in details",
+      "url": "https://bcol.barclaycard.co.uk/ecom/as2/initialLogon.do",
+      "snippet": "Forgotten your login details? Enter your card number and if you don't know your passcode or memorable word follow the forgotten …"
+    },
+    {
+      "title": "Homepage | Barclaycard",
+      "url": "https://www.barclaycard.co.uk/personal?login",
+      "snippet": "Millions of Barclaycard customers use our app to manage their account. You can check your balance and transactions, pay your …"
+    },
+    {
+      "title": "Manage your account online | Barclaycard",
+      "url": "https://www.barclaycard.co.uk/personal/customer/online-account-servicing-a2z",
+      "snippet": "From activating your card and paying your latest bill, to setting up alerts to suit you, Barclaycard online servicing gives you everything …"
+    },
+    {
+      "title": "Online account servicing help | Barclaycard",
+      "url": "https://www.barclaycard.co.uk/personal/customer/online-account-servicing",
+      "snippet": "Manage your Barclaycard online. Our online account services enable you to manage your Barclaycard safely and securely. You can …"
+    },
+    {
+      "title": "Barclaycard | Home Page",
+      "url": "https://bcol.barclaycard.co.uk/ecom/as2/UI/single-account.html",
+      "snippet": "What is JavaScript and how to turn it on?"
+    }
+  ]
+}

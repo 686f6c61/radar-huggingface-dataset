@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "seomh/Qwen3-4B-OpenThoughts3-Math-SFT-step500",
+  "slug": "seomh-qwen3-4b-openthoughts3-math-sft-step500",
+  "author": "seomh",
+  "url": "https://huggingface.co/seomh/Qwen3-4B-OpenThoughts3-Math-SFT-step500",
+  "created_at": "2026-09-18T01:05:05.000Z",
+  "updated_at": "2026-09-18T01:14:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "math",
+    "reasoning",
+    "sft",
+    "openthoughts3",
+    "conversational",
+    "en",
+    "dataset:open-thoughts/OpenThoughts3-1.2M",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:finetune:Qwen/Qwen3-4B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056404622,
+  "storage_human": "8.1 GB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Segurança Offshore no Brasil: por que os números exigem ... - LinkedIn",
+      "url": "https://www.linkedin.com/pulse/seguran%C3%A7a-offshore-brasil-por-que-os-n%C3%BAmeros-exigem-a%C3%A7%C3%A3o-castro-evujf/",
+      "snippet": "Oct 7, 2025 · O setor offshore brasileiro continua vivendo um paradoxo. Segundo o Relatório Anual de Segurança Operacional 2024 …"
+    },
+    {
+      "title": "A segurança está à mesa: segurança e soberania alimentar no Brasil",
+      "url": "https://www.scielosp.org/article/csp/2024.v40n9/e00126424/pt/",
+      "snippet": "Sep 23, 2024 · Os autores destacam como a interdependência dos mercados domésticos e internacionais afeta a segurança …"
+    },
+    {
+      "title": "Panorama Regional de Segurança Alimentar e Nutrição para a …",
+      "url": "https://www.fao.org/americas/home/latin-america-and-the-caribbean-regional-overview-of-food-security-and-nutrition-2024/pt",
+      "snippet": "Aug 18, 2026 · O Panorama Regional de Segurança Alimentar e Nutrição é uma publicação que apresenta uma atualização sobre a …"
+    },
+    {
+      "title": "Triagem para Risco para Insegurança Alimentar (TRIA) - Relatório …",
+      "url": "https://relatorioaps.saude.gov.br/tria",
+      "snippet": "Jun 1, 2012 · Triagem para Risco para Insegurança Alimentar (TRIA) - Relatório Preliminar A inclusão das perguntas para Triagem …"
+    },
+    {
+      "title": "PNAD Contínua 2024: avanços e desafios da segurança alimentar no Brasil …",
+      "url": "https://pactocontrafome.org/pnad-continua-2024-avancos-e-desafios-da-seguranca-alimentar-no-brasil/",
+      "snippet": "Baixe a Nota Técnica completa e entenda como o Brasil pode transformar os avanços recentes em um futuro com todas as pessoas …"
+    }
+  ]
+}

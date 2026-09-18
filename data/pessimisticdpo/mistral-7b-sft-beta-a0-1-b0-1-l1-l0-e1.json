@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L1-l0-e1",
+  "slug": "pessimisticdpo-mistral-7b-sft-beta-a0-1-b0-1-l1-l0-e1",
+  "author": "PessimisticDPO",
+  "url": "https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L1-l0-e1",
+  "created_at": "2026-09-17T22:21:17.000Z",
+  "updated_at": "2026-09-17T22:21:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 167832240,
+  "storage_human": "168 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Фільм «Посмішка Мони Лізи» 2003 українською онлайн",
+      "url": "https://uaserials.com/11302-posmishka-mony-lizy.html",
+      "snippet": "Apr 9, 2026 · Події розгортаються у 1953 році, коли роль жінки в суспільстві була серйозно обмежена, а рух за рівні права …"
+    },
+    {
+      "title": "Посмішка Мони Лізи (фільм, 2003) - Кіноріум",
+      "url": "https://ua.kinorium.com/241560/",
+      "snippet": "Dec 19, 2003 · Посмішка Мони Лізи - фільм, 2003 (США): де дивитися онлайн, рейтинг та відгуки, режисер та актори, схожі …"
+    },
+    {
+      "title": "Посмішка Мони Лізи, фільм 2003 - KinoFilms.ua",
+      "url": "https://www.kinofilms.ua/ukr/movie/748/",
+      "snippet": "Dec 19, 2003 · Молода викладачка Вотсон переконує і надихає своїх учениць, щоб вони мали мужність боротися за існування, …"
+    },
+    {
+      "title": "Посмішка Мони Лізи — Вікіпедія",
+      "url": "https://uk.wikipedia.org/wiki/%D0%9F%D0%BE%D1%81%D0%BC%D1%96%D1%88%D0%BA%D0%B0_%D0%9C%D0%BE%D0%BD%D0%B8_%D0%9B%D1%96%D0%B7%D0%B8",
+      "snippet": "«Посмішка Мони Лізи», або «Усмішка Мони Лізи» (англ. Mona Lisa Smile), — кінофільм 2003 року студії Columbia Pictures за …"
+    },
+    {
+      "title": "Дивіться «Посмішка Мони Лізи» | Netflix",
+      "url": "https://qr.netflix.com/ua/title/60031284",
+      "snippet": "Але нова професорка загрожує змінити звичний порядок речей. Дізнайтеся більше й подивіться трейлери."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l31_remove50_swapgapiter_b010_r07",
+  "slug": "jeesup-svd-safety-l31_remove50_swapgapiter_b010_r07",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l31_remove50_swapgapiter_b010_r07",
+  "created_at": "2026-09-17T21:12:53.000Z",
+  "updated_at": "2026-09-17T21:17:16.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama3",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "license:llama3.1",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766296,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pilotes et téléchargements | Brother FR",
+      "url": "https://www.brother.fr/services-et-supports/drivers",
+      "snippet": "Pilotes et téléchargements Si vous devez mettre à jour les pilotes sur votre appareil Brother ou télécharger un logiciel, vous êtes au …"
+    },
+    {
+      "title": "Télécharger le logiciel pour imprimantes et les solutions ... - Brother",
+      "url": "https://www.brother.com/apps/ps/fr/",
+      "snippet": "Télécharger les pilotes et les utilitaires pour imprimantes ainsi que les tout-en-un. Nous recommandons ce téléchargement pour tirer …"
+    },
+    {
+      "title": "Services et supports | Brother FR",
+      "url": "https://www.brother.fr/services-et-supports",
+      "snippet": "Téléchargez et installez les dernières versions des pilotes\\drivers et logiciels pour vos appareils Brother, retrouvez aussi votre …"
+    },
+    {
+      "title": "Téléchargement | France | Brother",
+      "url": "https://support.brother.com/g/b/downloadtop.aspx?c=fr&lang=fr&prod=group1",
+      "snippet": "Vous ne trouvez pas votre version de système d'exploitation ? Cliquez ici."
+    },
+    {
+      "title": "Mettez à jour le pilote ou le micrologiciel de votre appareil Brother ...",
+      "url": "https://support.brother.com/g/b/faqend.aspx?c=fr&lang=fr&prod=hljf1_eu&faqid=faq00100468_006",
+      "snippet": "Allez dans la section Téléchargement de ce site web et téléchargez le Package Pilote et Logiciel. Les instructions d'installation sont …"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "scottlowry/Swift-Qwen3.8-27B-oQ8e-mtp",
+  "slug": "scottlowry-swift-qwen3-8-27b-oq8e-mtp",
+  "author": "scottlowry",
+  "url": "https://huggingface.co/scottlowry/Swift-Qwen3.8-27B-oQ8e-mtp",
+  "created_at": "2026-09-17T20:05:58.000Z",
+  "updated_at": "2026-09-17T20:58:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "oq",
+    "quantized",
+    "base_model:ukisai/Swift-Qwen3.8-27b",
+    "base_model:quantized:ukisai/Swift-Qwen3.8-27b",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 30014451254,
+  "storage_human": "30.0 GB",
+  "base_model": "ukisai/Swift-Qwen3.8-27b",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Categories - EPORNER: HD Porn Tube",
+      "url": "https://www.eporner.com/cats/",
+      "snippet": "Eporner covers all and every possible porn category that you can think of, even the kinkiest ones that might not be as popular as …"
+    },
+    {
+      "title": "Vidéos porno HD - Films haute définition complets | EPORNER",
+      "url": "https://fr.eporner.com/",
+      "snippet": "Bienvenue sur Eporner - la source la plus complète de vidéos pornographiques HD que vous pouvez actuellement trouver sur …"
+    },
+    {
+      "title": "Japanese Porn Videos - EPORNER",
+      "url": "https://www.eporner.com/cat/japanese/",
+      "snippet": "Watch Japanese HD porn videos for free on Eporner.com. We have 300,529 full length hd movies with Japanese in our database …"
+    },
+    {
+      "title": "Categorías - EPORNER: Tubo Porno HD",
+      "url": "https://es.eporner.com/categorias/",
+      "snippet": "Eporner cubre todas y cada una de las posibles categorías de porno en las que puedas pensar, incluso las más pervertidas que …"
+    },
+    {
+      "title": "Browse Videos | Eporner",
+      "url": "https://eporner.xxx/videos",
+      "snippet": "Browse all available streaming videos"
+    }
+  ]
+}

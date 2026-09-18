@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "skim102/ajnt-s-selina-lora",
+  "slug": "skim102-ajnt-s-selina-lora",
+  "author": "skim102",
+  "url": "https://huggingface.co/skim102/ajnt-s-selina-lora",
+  "created_at": "2026-09-18T02:01:19.000Z",
+  "updated_at": "2026-09-18T02:04:10.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 171969416,
+  "storage_human": "172 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "-70 Kč a -50% Zasilkovna.cz slevy, slevové kódy a promo kódy ...",
+      "url": "https://www.topkody.cz/obchody/zasilkovna/",
+      "snippet": "Na Topkody.cz najdete aktuální slevy a slevové kódy na služby Zasilkovna.cz. Využijte promo kód a pošlete balíky levněji a rychleji …"
+    },
+    {
+      "title": "Zasilkovna Slevový Kód A Promo Kód | Až - 50% Září 2026",
+      "url": "https://cz.hotdeals.com/slevovekody/zasilkovna",
+      "snippet": "11 hours ago · Otestováno a zdarma - nyní stačí použít Zasilkovna Slevový Kód. Slevy až 50% a více. Použijte 9 aktivních kódů a …"
+    },
+    {
+      "title": "Zasilkovna.cz promo kód -70 kč a sleva | Září 2026",
+      "url": "https://kodyo.cz/kupony/zasilkovna/",
+      "snippet": "Hledáte způsob, jak ušetřit za doručení zásilek? Na Kodyo.cz najdete slevový kód nebo kupón na služby Zasilkovna.cz – rychlé a …"
+    },
+    {
+      "title": "Zásilkovna Slevový kód a Slevový kupón »40%»Září 2026",
+      "url": "https://www.czkupon.com/z%C3%A1silkovna-slevove-kody",
+      "snippet": "11 hours ago · Chyťte svou šanci získat Zásilkovna Slevový kód a Slevový kupón na Září 2026. Každý den na vás čekají nové slevy."
+    },
+    {
+      "title": "-30% Zásilkovna slevové kódy – Kódomat.cz",
+      "url": "https://www.kodomat.cz/slevove-kody-a-kupony-zasilkovna",
+      "snippet": "Užijte si slevový kód na e-shop Zásilkovna, který vám zajistí slevu 30 % na 2 odeslání - slevu můžete aktivovat v aplikaci. Pozor, …"
+    }
+  ]
+}

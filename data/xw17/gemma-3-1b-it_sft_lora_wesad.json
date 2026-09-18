@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "xw17/gemma-3-1b-it_SFT_lora_wesad",
+  "slug": "xw17-gemma-3-1b-it_sft_lora_wesad",
+  "author": "xw17",
+  "url": "https://huggingface.co/xw17/gemma-3-1b-it_SFT_lora_wesad",
+  "created_at": "2026-09-18T00:10:24.000Z",
+  "updated_at": "2026-09-18T00:10:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 59523831,
+  "storage_human": "60 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Antigravity 在网页登录成功后不会跳转到软件怎么办？",
+      "url": "https://www.zhihu.com/question/1974778612570945244/answers/updated",
+      "snippet": "有些朋友Gemini网页版可以正常用，但Antigravity怎么也登录不上。 这个情况我在1月15-16日也遇到了，1月19日抱着试一下的心态， …"
+    },
+    {
+      "title": "目前AI编程工具哪个最好用？ - 知乎",
+      "url": "https://www.zhihu.com/question/1973709336363701431",
+      "snippet": "主力形态当然是纯 CLI ，也做了SDK接口 （目前仅Typescript、Java，参见 Qwen Code: AI Coding Agent Documentation），Qwen …"
+    },
+    {
+      "title": "目前最好用的AI工具是哪个？ - 知乎",
+      "url": "https://www.zhihu.com/question/1923175555286689467",
+      "snippet": "过去的半年，我一共尝试了87个AI。从这么多的AI里挑选10个 很多人能用得上，并且好用的 推荐给大家。这期视频带大家了解AI，消 …"
+    },
+    {
+      "title": "Gemini Advanced 和 aistudio有什么区别？ - 知乎",
+      "url": "https://www.zhihu.com/question/1903028279096632276",
+      "snippet": "Gemini 和 Google AI Studio 其实好区分，一个是面向普通用户的消费端应用，一个是面向开发者的平台，也就是所谓 ChatGPT 和 …"
+    },
+    {
+      "title": "Google Gemini 2.0 Flash新上线了原生图像输出功能，与之前的生成图 …",
+      "url": "https://www.zhihu.com/question/1883348103458949047",
+      "snippet": "好不容易在别人指点下找到了 Google AI Studio，然后请问，以下模型中，哪个是支持原生图像输出的模型呢 [5]： 答案：都不是。 你 …"
+    }
+  ]
+}

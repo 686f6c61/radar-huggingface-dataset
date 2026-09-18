@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Alhasan/camelbert-egyptian-arabic-nlu",
+  "slug": "alhasan-camelbert-egyptian-arabic-nlu",
+  "author": "Alhasan",
+  "url": "https://huggingface.co/Alhasan/camelbert-egyptian-arabic-nlu",
+  "created_at": "2026-09-17T21:15:36.000Z",
+  "updated_at": "2026-09-20T18:00:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": null,
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "arabic",
+    "egyptian-arabic",
+    "intent-classification",
+    "slot-filling",
+    "token-classification",
+    "voice-assistant",
+    "ar",
+    "base_model:CAMeL-Lab/bert-base-arabic-camelbert-da",
+    "base_model:finetune:CAMeL-Lab/bert-base-arabic-camelbert-da",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 436919111,
+  "storage_human": "437 MB",
+  "base_model": "CAMeL-Lab/bert-base-arabic-camelbert-da",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Speed Test by MyBroadband",
+      "url": "https://speedtest.mybroadband.co.za/",
+      "snippet": "Test your Internet connection quickly and accurately. Lightweight, easy-to-use, reliable and completely free."
+    },
+    {
+      "title": "Rain 5G Home Internet speed test hits 620Mbps – MyBroadband",
+      "url": "https://mybroadband.co.za/news/5g/665582-rain-5g-home-internet-speed-test-hits-620mbps.html",
+      "snippet": "Sep 4, 2026 · Many users of Rain’s fixed-5G service are getting exceptionally fast speeds in 2026, an analysis by MyBroadband …"
+    },
+    {
+      "title": "What Internet speed you need for watching Netflix in South Africa",
+      "url": "https://mybroadband.co.za/news/broadcasting/278003-what-internet-speed-you-need-for-watching-netflix-in-south-africa.html",
+      "snippet": "Apr 10, 2018 · Thanks to the increasing number of content services across the Internet, more consumers watch media online."
+    },
+    {
+      "title": "MyBroadband Insights",
+      "url": "https://research.mybroadband.co.za/",
+      "snippet": "Speed Test App The MyBroadband Speed Test app is your go-to tool for testing internet performance with precision and ease. …"
+    },
+    {
+      "title": "MyBroadband - Company Press Releases",
+      "url": "https://companies.mybroadband.co.za/",
+      "snippet": "Company Press Releases – Most Networks Ask You to Trust Their Performance. Network Platforms Lets You Verify It."
+    }
+  ]
+}

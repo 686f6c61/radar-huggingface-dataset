@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "NANI-Nithin/VoxCPM2-GGUF",
+  "slug": "nani-nithin-voxcpm2-gguf",
+  "author": "NANI-Nithin",
+  "url": "https://huggingface.co/NANI-Nithin/VoxCPM2-GGUF",
+  "created_at": "2026-09-17T22:55:16.000Z",
+  "updated_at": "2026-09-17T22:56:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "audio.cpp",
+  "languages": [],
+  "tags": [
+    "audio.cpp",
+    "gguf",
+    "tts",
+    "voxcpm2",
+    "quantized",
+    "base_model:openbmb/VoxCPM2",
+    "base_model:quantized:openbmb/VoxCPM2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20576791968,
+  "storage_human": "20.6 GB",
+  "base_model": "openbmb/VoxCPM2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nani — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Nani",
+      "snippet": "Luís Carlos Almeida da Cunha et couramment appelé Nani ou Luís Nani, né le 17 novembre 1986 à Amadora (Portugal), est un …"
+    },
+    {
+      "title": "Nani (footballer) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nani_(footballer)",
+      "snippet": "Nani made his Portugal international debut in 2006, scoring his first goal soon after and establishing himself as a key member of the …"
+    },
+    {
+      "title": "Nani - Profil du joueur 2026 | Transfermarkt",
+      "url": "https://www.transfermarkt.fr/nani/profil/spieler/33706/",
+      "snippet": "Nani est le cousin de Carlitos (Fin de carrière). Nani est le cousin de Sidnei Tavares (Wisla Plock). Nani est le oncle de Leonardo …"
+    },
+    {
+      "title": "Nani - Player profile 2026 | Transfermarkt",
+      "url": "https://www.transfermarkt.com/nani/profil/spieler/33706",
+      "snippet": "Nani is the cousin of Carlitos (Retired). Nani is the cousin of Sidnei Tavares (Wisla Plock). Nani is the uncle of Leonardo Varela …"
+    },
+    {
+      "title": "Nani (actor) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nani_(actor)",
+      "snippet": "Ghanta Naveen Babu (born 24 February 1984), known professionally as Nani, is an Indian actor and producer who predominantly …"
+    }
+  ]
+}

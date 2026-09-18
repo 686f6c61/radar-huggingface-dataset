@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "LGrodrigues/gemma-4-E2B",
+  "slug": "lgrodrigues-gemma-4-e2b",
+  "author": "LGrodrigues",
+  "url": "https://huggingface.co/LGrodrigues/gemma-4-E2B",
+  "created_at": "2026-09-18T00:32:26.000Z",
+  "updated_at": "2026-09-18T01:03:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2588147712,
+  "storage_human": "2.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "What Is Wonyoungism? A Guide to the Popular K-Pop Trend",
+      "url": "https://www.wikihow.com/Wonyoungism",
+      "snippet": "Feb 5, 2026 · Wonyoungism is a self-improvement trend that emphasizes self-care. Inspired by Jang Wonyoung of the K-pop group …"
+    },
+    {
+      "title": "Wonyoungism - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Wonyoungism",
+      "snippet": "Wonyoungism, also referred to as #Wonyoungism or the Wonyoung effect, is a trend on social media among some K-pop fans based …"
+    },
+    {
+      "title": "Wonyoungism | Wonyoung Aesthetic | How to Glow Up Like K-pop's …",
+      "url": "https://thekawaiifactory.com/blogs/blog/wonyoungism-wonyoung-aesthetic-how-to-glow-up-like-k-pops-newest-it-girl",
+      "snippet": "This aesthetic is also known as Wonyoungism. Wonyoungism is all about glowing up and being confident while keeping a healthy and …"
+    },
+    {
+      "title": "\"Wonyoungism\" Explained: Empowering Aesthetic or Toxic Beauty …",
+      "url": "https://www.dojeonmedia.com/post/inside-the-viral-wonyoungism-movement-inspired-by-ive-s-jang-won-young",
+      "snippet": "Mar 23, 2026 · What is \"Wonyoungism\"? The term \"Wonyoungism\" is a lifestyle trend focused on self-care, discipline, and positivity …"
+    },
+    {
+      "title": "What exactly is \"Wonyoungism\" and why are so many obsessed with it",
+      "url": "https://www.reddit.com/r/kpopthoughts/comments/191lqp4/what_exactly_is_wonyoungism_and_why_are_so_many/",
+      "snippet": "I'm a newer follower of the Wonyoungism trend so I definitely don't know all of the specifics but it's basically basing parts of your life …"
+    }
+  ]
+}

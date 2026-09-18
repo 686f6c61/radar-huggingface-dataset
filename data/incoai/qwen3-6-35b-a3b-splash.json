@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "incoai/Qwen3.6-35B-A3B-Splash",
+  "slug": "incoai-qwen3-6-35b-a3b-splash",
+  "author": "incoai",
+  "url": "https://huggingface.co/incoai/Qwen3.6-35B-A3B-Splash",
+  "created_at": "2026-09-17T22:24:00.000Z",
+  "updated_at": "2026-09-18T21:51:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "splash",
+  "languages": [],
+  "tags": [
+    "splash",
+    "apple-silicon",
+    "metal",
+    "local-inference",
+    "dflash2",
+    "speculative-decoding",
+    "qwen3.6",
+    "moe",
+    "4-bit",
+    "text-generation",
+    "base_model:incoai/Qwen3.6-35B-A3B-DFlash2",
+    "base_model:quantized:incoai/Qwen3.6-35B-A3B-DFlash2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20942455647,
+  "storage_human": "20.9 GB",
+  "base_model": "mlx-community/Qwen3.6-35B-A3B-4bit, incoai/Qwen3.6-35B-A3B-DFlash2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Online Casino | Play Casino Games Online | 888casino UK",
+      "url": "https://www.888casino.com/",
+      "snippet": "Play at 888casino, a UKGC-licensed online casino with 2,000+ games including slots, live blackjack, roulette, and jackpots. Trusted …"
+    },
+    {
+      "title": "Log in | 888 Casino",
+      "url": "https://www.888casino.com/play/",
+      "snippet": "Sign in to your 888 Casino account and enjoy a wide variety of games and generous casino promotions."
+    },
+    {
+      "title": "Online Casino Canada | Play Casino Online Games",
+      "url": "https://ca.888casino.com/",
+      "snippet": "Explore 888casino's online casino in Canada! Enjoy slots, roulette, blackjack, and live games. Discover exclusive casino games and …"
+    },
+    {
+      "title": "Online Casino | Casino Bonus & 2000+ Spiele | 888 Casino",
+      "url": "https://de.888casino.com/",
+      "snippet": "Spielen Sie im besten Online Casino ️ 2000+ Spiele ️ Casino Bonus ️ Exklusive Slots, Blackjack, Roulette und Live Casino …"
+    },
+    {
+      "title": "Casino en ligne | 888 Casino",
+      "url": "https://fr.888casino.com/",
+      "snippet": "Jouez sur le meilleur casino en ligne en français: machines à sous exclusives, blackjack, roulette & casino en direct Inscrivez-vous …"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "SaFD-00/qwen2.5-vl-3b-ac-exp09-media-world-model-stage1-lora-epoch1",
+  "slug": "safd-00-qwen2-5-vl-3b-ac-exp09-media-world-model-stage1-lora-epoch1",
+  "author": "SaFD-00",
+  "url": "https://huggingface.co/SaFD-00/qwen2.5-vl-3b-ac-exp09-media-world-model-stage1-lora-epoch1",
+  "created_at": "2026-09-18T00:32:03.000Z",
+  "updated_at": "2026-09-18T00:33:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2_5_vl",
+    "image-text-to-text",
+    "llama-factory",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3754622976,
+  "parameters_human": "3.75B",
+  "storage_bytes": 7520759840,
+  "storage_human": "7.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "UNDER ARMOUR FOOTBALL T SHIRTS EVALUATION",
+      "url": "https://economictimes.indiatimes.com/topic/under-armour-football-t-shirts-evaluation",
+      "snippet": "1 day ago · Findings from the SpaceTex experiment are paving the way for next-generation astronaut apparel. Furthermore, this …"
+    },
+    {
+      "title": "UNDER ARMOUR FOOTBALL T SHIRTS EVALUATION",
+      "url": "https://economictimes.indiatimes.com/topic/under-armour-football-t-shirts-evaluation/videos",
+      "snippet": "1 day ago · Match-fixing in Indian football? five clubs under CBI's scanner 20 Nov, 2022, 08:59 PM IST"
+    },
+    {
+      "title": "Under Armour Target Market Analysis - businessmodelanalyst.com",
+      "url": "https://businessmodelanalyst.com/under-armour-target-market-analysis/",
+      "snippet": "Jul 26, 2025 · This article provides a comprehensive look into the Under Armour target market, analyzing who the brand reaches, …"
+    },
+    {
+      "title": "Under Armour Football T-Shirts | Epic Sports",
+      "url": "https://football.epicsports.com/cat/23/f-m1143/index.html",
+      "snippet": "Under Armour Football T-Shirts Give the gift of personalized football t-shirts from Epic. At 20 to 40 percent off, you can buy for the …"
+    },
+    {
+      "title": "Amazon.com: Under Armour Padded Football Shirt",
+      "url": "https://www.amazon.com/under-armour-padded-football-shirt/s?k=under+armour+padded+football+shirt",
+      "snippet": "Price and other details may vary based on product size and color. This product has sustainability features recognized by trusted …"
+    }
+  ]
+}

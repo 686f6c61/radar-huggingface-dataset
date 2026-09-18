@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "dhanesh-hf/Jarvis-Titan-M4-MoE-CSA3",
+  "slug": "dhanesh-hf-jarvis-titan-m4-moe-csa3",
+  "author": "dhanesh-hf",
+  "url": "https://huggingface.co/dhanesh-hf/Jarvis-Titan-M4-MoE-CSA3",
+  "created_at": "2026-09-17T21:22:14.000Z",
+  "updated_at": "2026-09-19T05:01:07.000Z",
+  "license": "jtrl-v1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "jarvis_titan_moe",
+    "text-generation",
+    "moe",
+    "deepseek-moe",
+    "titans-neural-memory",
+    "tri-brid-memory",
+    "differential-holographic-attention",
+    "dha-3",
+    "csa3-perturbative-attention",
+    "multi-token-prediction",
+    "reasoning",
+    "math",
+    "code",
+    "agentic",
+    "long-context",
+    "conversational",
+    "custom_code",
+    "en",
+    "arxiv:2501.00663",
+    "base_model:dhanesh-hf/Jarvis-Titan-V15-MoE-Decoupled",
+    "base_model:finetune:dhanesh-hf/Jarvis-Titan-V15-MoE-Decoupled",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 15384072739,
+  "parameters_human": "15.38B",
+  "storage_bytes": 33715050689,
+  "storage_human": "33.7 GB",
+  "base_model": "dhanesh-hf/Jarvis-Titan-V15-MoE-Decoupled",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DHANESH (@dhaneshmusic) • Instagram photos and videos",
+      "url": "https://www.instagram.com/dhaneshmusic/",
+      "snippet": "173K Followers, 788 Following, 97 Posts - DHANESH (@dhaneshmusic) on Instagram: \"everything is temporary.\""
+    },
+    {
+      "title": "MUSIC | DHANESH",
+      "url": "https://www.dhaneshmusic.com/music",
+      "snippet": "Download Single Download Track Download Track 00:00 01:25 DHANESH (Featuring Khalil) Waiting For You Waiting For You (ft. …"
+    },
+    {
+      "title": "DHANESH - YouTube",
+      "url": "https://www.youtube.com/@DHANESHMUSIC",
+      "snippet": "Neeti Mullai (Reimagined Cover) | Devi Sri Prasad x DHANESH 31K views • 3 years ago"
+    },
+    {
+      "title": "DHANESH - Facebook",
+      "url": "https://www.facebook.com/DHANESHMUSIC/",
+      "snippet": "Jan 12, 2026 · DHANESH. 993 likes. Raathri, album 2026."
+    },
+    {
+      "title": "Signification du prénom Dhanesh - Wisdom Library",
+      "url": "https://www.wisdomlib.org/fr/names/dhanesh",
+      "snippet": "Jun 18, 2025 · Le prénom Dhanesh est d'origine indienne, issu du sanskrit. Il signifie littéralement 'Seigneur de la richesse' ou 'Dieu …"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Minervus00/dyu-tts-fem",
+  "slug": "minervus00-dyu-tts-fem",
+  "author": "Minervus00",
+  "url": "https://huggingface.co/Minervus00/dyu-tts-fem",
+  "created_at": "2026-09-17T21:49:41.000Z",
+  "updated_at": "2026-09-17T21:49:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-audio",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vits",
+    "text-to-audio",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 36283440,
+  "parameters_human": "36.3M",
+  "storage_bytes": 145226104,
+  "storage_human": "145 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WELT - Aktuelle Nachrichten, News, Hintergründe & Videos",
+      "url": "https://www.welt.de/",
+      "snippet": "Die Nachrichten heute: Newsticker, Schlagzeilen und alles, was heute wichtig ist, im Überblick"
+    },
+    {
+      "title": "Politik - Aktuelle Nachrichten & News - WELT",
+      "url": "https://www.welt.de/politik/",
+      "snippet": "Nachrichten aus dem In- & Ausland: Politik-News, Reportagen, Analysen, Hintergrundberichte und Interviews aus Deutschland, der …"
+    },
+    {
+      "title": "Die Welt – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Die_Welt",
+      "snippet": "Die Welt (Eigenschreibweise DIE WELT oder DIE WeLT) ist eine überregionale deutsche Tageszeitung der Axel Springer SE. [2] In …"
+    },
+    {
+      "title": "WELT ePaper: DIE WELT und WELT AM SONNTAG digital lesen",
+      "url": "https://epaper.welt.de/",
+      "snippet": "Lesen Sie DIE WELT und WELT AM SONNTAG als ePaper. Die digitalen Ausgaben stehen Abonnenten bereits am Vorabend online …"
+    },
+    {
+      "title": "Die Welt - DER SPIEGEL",
+      "url": "https://www.spiegel.de/thema/die_welt/",
+      "snippet": "Aug 17, 2026 · Die Welt rückt in der Migrationspolitik nach rechts. Und Pedro Sánchez? Verteilt Aufenthaltstitel an Hunderttausende …"
+    }
+  ]
+}

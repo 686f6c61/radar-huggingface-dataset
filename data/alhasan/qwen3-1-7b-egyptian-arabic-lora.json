@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Alhasan/qwen3-1.7b-egyptian-arabic-lora",
+  "slug": "alhasan-qwen3-1-7b-egyptian-arabic-lora",
+  "author": "Alhasan",
+  "url": "https://huggingface.co/Alhasan/qwen3-1.7b-egyptian-arabic-lora",
+  "created_at": "2026-09-17T21:00:35.000Z",
+  "updated_at": "2026-09-20T18:00:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "arabic",
+    "egyptian-arabic",
+    "intent-classification",
+    "slot-filling",
+    "voice-assistant",
+    "ar",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:adapter:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 430617405,
+  "storage_human": "431 MB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Explorateur de fichiers dans Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/fr-fr/windows/experience/fileexplorer/file-explorer-in-windows",
+      "snippet": "Pour ouvrir Explorateur de fichiers dans Windows 11, sélectionnez-la dans la barre des tâches ou le menu Démarrer, ou appuyez sur …"
+    },
+    {
+      "title": "File Explorer in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/experience/fileexplorer/file-explorer-in-windows",
+      "snippet": "Find and open File Explorer in Windows, and customize Quick access by pinning and removing files and folders."
+    },
+    {
+      "title": "Comment maîtriser de A à Z l'explorateur de fichiers de Windows 11",
+      "url": "https://www.clubic.com/guide-511348-comment-maitriser-de-a-a-z-l-explorateur-de-fichiers-de-windows-11.html",
+      "snippet": "Dec 10, 2023 · Parmi les fonctions les plus utilisées de l'explorateur Windows, on retrouve évidemment la possibilité de copier, …"
+    },
+    {
+      "title": "Get Help With File Explorer in Windows 11",
+      "url": "https://windowsreport.com/get-help-with-file-explorer-in-windows/",
+      "snippet": "Jul 21, 2026 · Learn where to get help with File Explorer in Windows using built in tools, support pages, and troubleshooters."
+    },
+    {
+      "title": "Windows 11 : 10 astuces et fonctions cachées pour maîtriser l ... - 01net",
+      "url": "https://www.01net.com/astuces/windows-11-10-astuces-et-fonctions-cachees-pour-bien-maitriser-lexplorateur-de-fichiers.html",
+      "snippet": "Sep 11, 2024 · L’Explorateur de fichiers de Windows 11 renferme de nombreux secrets. Adoptez les bons réflexes pour en maîtriser …"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "joshycodes/sorrel-T-qwen3-8b-base-seed0",
+  "slug": "joshycodes-sorrel-t-qwen3-8b-base-seed0",
+  "author": "joshycodes",
+  "url": "https://huggingface.co/joshycodes/sorrel-T-qwen3-8b-base-seed0",
+  "created_at": "2026-09-18T02:33:10.000Z",
+  "updated_at": "2026-09-18T07:10:42.000Z",
+  "license": "research-only",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "research",
+    "continued-pretraining",
+    "self-authored-character",
+    "not-safety-tuned",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 262115787338,
+  "storage_human": "262.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aaaaaaaaaa : r/Grimdank - Reddit",
+      "url": "https://www.reddit.com/r/Grimdank/comments/pvy0mn/aaaaaaaaaa/",
+      "snippet": "4K votes, 144 comments. 409K subscribers in the Grimdank community. Your central hub for the dankest memes from the 41st …"
+    },
+    {
+      "title": "AAAAAAAAA! : r/funny - Reddit",
+      "url": "https://www.reddit.com/r/funny/comments/7ovi0/aaaaaaaaa/",
+      "snippet": "Jan 11, 2009 · A - AAAAAA AAAAAAAAAA AAAAAAAAAAAAAAAAAAAAAA A - AAAAAAAAAAAAAA AAA AAAAAAAAAAA …"
+    },
+    {
+      "title": "Blades of Avernum Scenario Reviews - Spiderweb Software Forums",
+      "url": "https://spiderwebforums.ipbhost.com/topic/12300-frostbite/",
+      "snippet": "Sep 7, 2009 · By far the best scenario made for Blades of Avernum. It had a reasonably interesting story which got scarier as the …"
+    },
+    {
+      "title": "The Tower of the Magi in A3 *SPOILERS*",
+      "url": "https://spiderwebforums.ipbhost.com/topic/2881-the-tower-of-the-magi-in-a3-spoilers/",
+      "snippet": "Oct 10, 2005 · Originally written by Marak: I guess what I'm trying to get at is that I have to give massive Kudos to Jeff for doing it. To …"
+    },
+    {
+      "title": "What literally screams \"aaaaaaaaaa\"? : r/AskReddit",
+      "url": "https://www.reddit.com/r/AskReddit/comments/dkomy2/what_literally_screams_aaaaaaaaaa/",
+      "snippet": "63 votes, 176 comments. 43M subscribers in the AskReddit community. r/AskReddit is the place to ask and answer thought …"
+    }
+  ]
+}

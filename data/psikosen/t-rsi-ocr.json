@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "psikosen/t-rsi-ocr",
+  "slug": "psikosen-t-rsi-ocr",
+  "author": "psikosen",
+  "url": "https://huggingface.co/psikosen/t-rsi-ocr",
+  "created_at": "2026-09-17T20:55:56.000Z",
+  "updated_at": "2026-09-21T21:17:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t_rsi_fast_reflex_ocr",
+    "ocr",
+    "bitnet",
+    "ternary",
+    "1.58-bit",
+    "quantization",
+    "ctc",
+    "edge-ai",
+    "document-understanding",
+    "experimental",
+    "image-to-text",
+    "en",
+    "arxiv:2410.16144",
+    "arxiv:2002.01276",
+    "license:mit",
+    "model-index",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1284928,
+  "parameters_human": "1.3M",
+  "storage_bytes": 2767017,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Filme - ZDFmediathek",
+      "url": "https://www.zdf.de/filme",
+      "snippet": "Das volle Programm, ganz nach deinem Geschmack: Entdecke spannende Kino-Highlights, skurrile Komödien, herzzerreißende …"
+    },
+    {
+      "title": "ZDF Streaming-Portal: Filme, Serien und Dokus online anschauen",
+      "url": "https://www.zdf.de/",
+      "snippet": "Alle Videos und Livestreams im ZDF anschauen - ständig verfügbar und interaktiv! Entdecke Filme, Serien, Sportevents, …"
+    },
+    {
+      "title": "Spielfilm-Highlights - ZDFmediathek",
+      "url": "https://www.zdf.de/spielfilm-highlights-104",
+      "snippet": "Mar 7, 2026 · Ein hörgeschädigter Polizist wird zur letzten Hoffnung einer gehörlosen Mordzeugin, als diese ins Visier der Killer gerät. …"
+    },
+    {
+      "title": "Von A-Z: Alle Videos zum Streamen - ZDFmediathek",
+      "url": "https://www.zdf.de/sendungen-a-z",
+      "snippet": "Hier findest du alle Nachrichten, Sport und Magazine, Shows, Dokus, Filme & ZDF-Serien von A bis Z online!"
+    },
+    {
+      "title": "Herzkino - ZDFmediathek",
+      "url": "https://www.zdf.de/herzkino-196",
+      "snippet": "90 Minuten mehr Wochenende! Geschichten über Familie, Freundschaft und die große Liebe. Hier findet ihr alle Filme auf einen Blick!"
+    }
+  ]
+}

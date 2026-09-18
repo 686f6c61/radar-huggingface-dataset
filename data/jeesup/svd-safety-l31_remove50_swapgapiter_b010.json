@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l31_remove50_swapgapiter_b010",
+  "slug": "jeesup-svd-safety-l31_remove50_swapgapiter_b010",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l31_remove50_swapgapiter_b010",
+  "created_at": "2026-09-17T22:15:56.000Z",
+  "updated_at": "2026-09-17T22:23:28.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama3",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "license:llama3.1",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766296,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Los Angeles – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Los_Angeles",
+      "snippet": "Los Angeles ist weltgrößter Standort für die Flugzeug - und Raumfahrtindustrie und bekannt für die dort ansässige Film- und …"
+    },
+    {
+      "title": "Los Angeles - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Los_Angeles",
+      "snippet": "Los Angeles (often shortened as LA or L.A.) [b] is the most populous city in the U.S. state of California, and the commercial, financial, …"
+    },
+    {
+      "title": "Top 16 Los Angeles Sehenswürdigkeiten | Urlaubsguru",
+      "url": "https://www.urlaubsguru.de/reisemagazin/sehenswuerdigkeiten-los-angeles/",
+      "snippet": "Aug 19, 2026 · Wir zeigen euch die besten Los Angeles Sehenswürdigkeiten: Wenn ein Tag voller Abenteuer in den Universal …"
+    },
+    {
+      "title": "Visit Los Angeles, Infos, Sehenswürdigkeiten, Wetter, Klima",
+      "url": "https://www.visitlosangeles.de/",
+      "snippet": "22 hours ago · Hier erfährt man alles über die \"Stadt der Engel\" Los Angeles in Kalifornien. Tolle Sehenswürdigkeiten, Wetter."
+    },
+    {
+      "title": "Los Angeles | History, Map, Population, Climate, & Facts | Britannica",
+      "url": "https://www.britannica.com/place/Los-Angeles-California",
+      "snippet": "2 days ago · Los Angeles, city, seat of Los Angeles county, southern California, U.S. It is the second most populous city and …"
+    }
+  ]
+}

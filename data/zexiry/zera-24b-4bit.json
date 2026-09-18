@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Zexiry/Zera-24B-4bit",
+  "slug": "zexiry-zera-24b-4bit",
+  "author": "Zexiry",
+  "url": "https://huggingface.co/Zexiry/Zera-24B-4bit",
+  "created_at": "2026-09-17T21:32:59.000Z",
+  "updated_at": "2026-09-17T21:36:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "mistral",
+    "4-bit",
+    "qlora",
+    "coding",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:mlx-community/Devstral-Small-2507-4bit",
+    "base_model:quantized:mlx-community/Devstral-Small-2507-4bit",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 23572403200,
+  "parameters_human": "23.57B",
+  "storage_bytes": 13277256962,
+  "storage_human": "13.3 GB",
+  "base_model": "mlx-community/Devstral-Small-2507-4bit",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OperaSetup.exe - Est-ce un virus? - Guide de suppression [Réparer]",
+      "url": "https://sensorstechforum.com/fr/operasetup-exe/",
+      "snippet": "Nov 22, 2024 · OperaSetup.exe est le nom d'un type dangereux de faux processus d'installation d'Opera. Si vous ne vous souvenez …"
+    },
+    {
+      "title": "Anime-sama.fr – Es seguro? [Guía de estafa]",
+      "url": "https://sensorstechforum.com/es/anime-sama-fr-is-it-safe/",
+      "snippet": "May 10, 2024 · Determinar si Anime-sama.fr es seguro requiere una cuidadosa evaluación y consideración de varios factores. …"
+    },
+    {
+      "title": "Anime-sama.fr – Est-ce sûr? [Guide de l'arnaque]",
+      "url": "https://sensorstechforum.com/fr/anime-sama-fr-is-it-safe/",
+      "snippet": "May 10, 2024 · Qu'est-ce que Anime-sama.fr? Le domaine Anime-sama.fr appartient à un site Web qui, selon nous, n'est pas …"
+    },
+    {
+      "title": "Anime-sama.fr – Is het veilig? [Oplichterij gids]",
+      "url": "https://sensorstechforum.com/nl/anime-sama-fr-is-it-safe/",
+      "snippet": "May 10, 2024 · Wat is Anime-sama.fr? Het domein Anime-sama.fr behoort tot een website die volgens ons niet specifiek kwaadaardig …"
+    },
+    {
+      "title": "Anime-sama.fr - Is It Safe? [Scam Guide] - SensorsTechForum.com",
+      "url": "https://sensorstechforum.com/anime-sama-fr-is-it-safe/",
+      "snippet": "May 10, 2024 · What Is Anime-sama.fr? The Anime-sama.fr domain belongs to a website that we believe is not specifically malicious …"
+    }
+  ]
+}

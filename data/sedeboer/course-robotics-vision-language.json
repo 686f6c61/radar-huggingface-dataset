@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "sedeboer/course-robotics-vision-language",
+  "slug": "sedeboer-course-robotics-vision-language",
+  "author": "sedeboer",
+  "url": "https://huggingface.co/sedeboer/course-robotics-vision-language",
+  "created_at": "2026-09-17T23:06:33.000Z",
+  "updated_at": "2026-09-17T23:06:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "robotics-vision-language",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Regarder France 24 en direct",
+      "url": "https://www.france24.com/fr/direct",
+      "snippet": "Suivez toute l'information avec France 24 en direct sur notre site internet. Regarder France 24 en streaming : la chaîne d'info et …"
+    },
+    {
+      "title": "FRANCE 24 – EN DIRECT – Info et actualités internationales en continu ...",
+      "url": "https://www.youtube.com/c/FRANCE24/live",
+      "snippet": "May 27, 2026 · 🔴 Regardez FRANCE 24 en français en direct gratuitement et en streaming sur YouTube. Suivez toutes les infos du …"
+    },
+    {
+      "title": "FRANCE 24 – EN DIRECT – Info et actualités internationales en continu ...",
+      "url": "https://embed.france24.com/fr/live",
+      "snippet": "🔴 Regardez FRANCE 24 en français en direct gratuitement et en streaming sur YouTube. Suivez toutes les infos du monde en continu.🔔 …"
+    },
+    {
+      "title": "FRANCE 24 - YouTube",
+      "url": "https://www.youtube.com/c/france24/live3",
+      "snippet": "🔴 Regardez FRANCE 24 en français en direct gratuitement et en streaming sur YouTube."
+    },
+    {
+      "title": "France 24 - Infos, news & actualités - L'information internationale en ...",
+      "url": "https://www.france24.com/fr/",
+      "snippet": "France 24 décrypte l’actualité internationale, politique, l’économie, l’environnement, la culture, le sport, en France et à l’international …"
+    }
+  ]
+}

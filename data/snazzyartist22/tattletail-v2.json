@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "SnazzyArtist22/Tattletail-V2",
+  "slug": "snazzyartist22-tattletail-v2",
+  "author": "SnazzyArtist22",
+  "url": "https://huggingface.co/SnazzyArtist22/Tattletail-V2",
+  "created_at": "2026-09-17T21:24:12.000Z",
+  "updated_at": "2026-09-17T21:24:43.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 78335841,
+  "storage_human": "78 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Football Live Scores, Latest Football Results | Flashscore.com",
+      "url": "https://www.flashscore.com/",
+      "snippet": "Football live scores page on Flashscore.com offers all the latest football results from more than 1000+ football leagues all around the …"
+    },
+    {
+      "title": "Flashscore.ro",
+      "url": "https://www.flashscore.ro/",
+      "snippet": "Pe Flashscore.ro găsiți știri fotbal, transferuri, pariuri și livescore din Superliga României, Premier League (Anglia), rezulate din Serie …"
+    },
+    {
+      "title": "Mobile livescore - Flashscore.mobi football scores",
+      "url": "https://www.flashscore.mobi/",
+      "snippet": "Follow current football live scores on your mobile phone! Check current football livescore on the way with optimized mobile version of …"
+    },
+    {
+      "title": "Flashscore.co.uk: Football Live Scores, Latest Football Results ...",
+      "url": "https://www.flashscore.co.uk/",
+      "snippet": "Football live scores page on Flashscore.co.uk offers all the latest football results from more than 1000+ football leagues all around the …"
+    },
+    {
+      "title": "Soccer Live Scores, Latest Soccer Results | Flashscore",
+      "url": "https://www.flashscoreusa.com/",
+      "snippet": "Soccer live scores page on Flashscore offers all the latest soccer results from more than 1000+ soccer leagues all around the world …"
+    }
+  ]
+}

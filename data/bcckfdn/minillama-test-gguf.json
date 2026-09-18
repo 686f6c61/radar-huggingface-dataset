@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "bcckfdn/minillama-test-GGUF",
+  "slug": "bcckfdn-minillama-test-gguf",
+  "author": "bcckfdn",
+  "url": "https://huggingface.co/bcckfdn/minillama-test-GGUF",
+  "created_at": "2026-09-17T20:15:53.000Z",
+  "updated_at": "2026-09-17T20:16:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "tr",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "smollm2",
+    "llama",
+    "turkish",
+    "text-generation",
+    "tr",
+    "en",
+    "base_model:bcckfdn/minillama-test",
+    "base_model:quantized:bcckfdn/minillama-test",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30091680,
+  "parameters_human": "30.1M",
+  "storage_bytes": 152703936,
+  "storage_human": "153 MB",
+  "base_model": "bcckfdn/minillama-test",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "19 Eggplant Recipes Even Skeptics Will Love",
+      "url": "https://www.simplyrecipes.com/eggplant-recipes-11762981",
+      "snippet": "Aug 7, 2026 · Even skeptics will love these eggplant recipes, including Baba Ganoush, Eggplant Parmesan, Pasta alla Norma, Whole …"
+    },
+    {
+      "title": "21+ Easy Eggplant Recipes You’ll Love! - The Mediterranean Dish",
+      "url": "https://www.themediterraneandish.com/eggplant-recipes/",
+      "snippet": "May 10, 2022 · Learn how to cook eggplant perfectly so that it is tender and delicious that even eggplant skeptics will fall in love! This …"
+    },
+    {
+      "title": "21 Eggplant Recipes to Make Any Time of the Year - Martha Stewart",
+      "url": "https://www.marthastewart.com/274258/eggplant-recipes",
+      "snippet": "Dec 16, 2024 · Eggplant makes a great sandwich filling or pasta sauce—and it can even be made into meatballs and more. Here, …"
+    },
+    {
+      "title": "11 Easy Eggplant Recipes - Love and Lemons",
+      "url": "https://www.loveandlemons.com/easy-eggplant-recipes/",
+      "snippet": "Dec 18, 2025 · To get you started, I’m sharing 11 easy eggplant recipes below. They include bright summer pastas, fresh grilling …"
+    },
+    {
+      "title": "30 Delicious Eggplant Recipes That Everyone Will Love - Serious Eats",
+      "url": "https://www.seriouseats.com/eggplant-recipes",
+      "snippet": "Oct 25, 2024 · Here's a collection of 30 eggplant recipes, including braised, stewed, puréed, grilled, and fried eggplant dishes to …"
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "schema": 1,
+  "id": "AzadDjan/modernbert-large-banking77-lora",
+  "slug": "azaddjan-modernbert-large-banking77-lora",
+  "author": "AzadDjan",
+  "url": "https://huggingface.co/AzadDjan/modernbert-large-banking77-lora",
+  "created_at": "2026-09-17T21:16:43.000Z",
+  "updated_at": "2026-09-17T21:16:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:answerdotai/ModernBERT-large",
+    "lora",
+    "transformers",
+    "dataset:PolyAI/banking77",
+    "base_model:answerdotai/ModernBERT-large",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 33334605,
+  "storage_human": "33 MB",
+  "base_model": "answerdotai/ModernBERT-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text Classification",
+      "dataset": "banking77",
+      "metric": "Accuracy",
+      "value": 0.935064935064935
+    },
+    {
+      "task": "Text Classification",
+      "dataset": "banking77",
+      "metric": "Precision",
+      "value": 0.9399487099911289
+    },
+    {
+      "task": "Text Classification",
+      "dataset": "banking77",
+      "metric": "Recall",
+      "value": 0.9377749942840811
+    },
+    {
+      "task": "Text Classification",
+      "dataset": "banking77",
+      "metric": "F1",
+      "value": 0.9362053193709556
+    },
+    {
+      "task": "Intent Classification",
+      "dataset": "Banking77",
+      "metric": "Accuracy",
+      "value": 0.9327922077922078
+    },
+    {
+      "task": "Intent Classification",
+      "dataset": "Banking77",
+      "metric": "Macro F1",
+      "value": 0.9327440938063172
+    },
+    {
+      "task": "Intent Classification",
+      "dataset": "Banking77",
+      "metric": "Macro Precision",
+      "value": 0.934541393105966
+    },
+    {
+      "task": "Intent Classification",
+      "dataset": "Banking77",
+      "metric": "Macro Recall",
+      "value": 0.9327922077922076
+    }
+  ],
+  "sources": [
+    {
+      "title": "Contact Us - Microsoft Support",
+      "url": "https://support.microsoft.com/en-gb/contactus",
+      "snippet": "Contact Microsoft Support. Find solutions to common problems, or get help from a support agent."
+    },
+    {
+      "title": "Anmelden bei Hotmail | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/accounts-billing/manage/how-to-sign-in-to-hotmail",
+      "snippet": "Microsoft hält immer ein Auge auf ungewöhnliche Anmeldeaktivitäten, nur für den Fall, dass jemand anderes versucht, auf Ihr Konto …"
+    },
+    {
+      "title": "Released: August 2026 Exchange Server Security Updates | Microsoft ...",
+      "url": "https://techcommunity.microsoft.com/blog/Exchange/released-august-2026-exchange-server-security-updates/4543951",
+      "snippet": "We have released Security Updates for Exchange Server SE. Exchange Server 2019 and 2016 ESU updates only. &nbsp;"
+    },
+    {
+      "title": "Get ready for Windows 11, version 26H2 - Windows IT Pro Blog",
+      "url": "https://techcommunity.microsoft.com/blog/Windows-ITPro-blog/get-ready-for-windows-11-version-26h2/4529367",
+      "snippet": "Explore the next feature update for Windows 11, with familiar servicing, testing, and rollout paths. &nbsp;"
+    },
+    {
+      "title": "Change the refresh rate on your monitor in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/hardware/display-graphics/change-the-refresh-rate-on-your-monitor-in-windows",
+      "snippet": "Learn how to change the refresh rate for your display in Windows to determine how smoothly motion appears on your screen."
+    }
+  ]
+}

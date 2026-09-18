@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "LifeAi-dev/wespeaker-voxceleb-campplus-LM",
+  "slug": "lifeai-dev-wespeaker-voxceleb-campplus-lm",
+  "author": "LifeAi-dev",
+  "url": "https://huggingface.co/LifeAi-dev/wespeaker-voxceleb-campplus-LM",
+  "created_at": "2026-09-17T22:21:34.000Z",
+  "updated_at": "2026-09-17T22:21:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 95503310,
+  "storage_human": "96 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NMBS Officiële website | Koop je treinticket online - SNCB",
+      "url": "https://www.belgiantrain.be/nl",
+      "snippet": "Met de NMBS routeplanner vind je de beste dienstregeling en het treinticket op maat. Koop je ticket snel online, waar en wanneer je …"
+    },
+    {
+      "title": "Online treinticket kopen | NMBS - SNCB",
+      "url": "https://www.belgiantrain.be/nl/travel-info/prepare-for-your-journey/buy-your-ticket-online",
+      "snippet": "Treintickets, abonnementen, verlengingen... Leer alles over online aankopen in enkele klikken. Snel, simpel en veilig."
+    },
+    {
+      "title": "Treinticket kopen: vergelijk alle opties en tarieven 2026",
+      "url": "https://www.nmbsrouteplanner.be/treinticket-kopen/",
+      "snippet": "Wil je een treinticket kopen voor je reis met NMBS? Op deze pagina zie je snel waar je een ticket koopt, welke optie het handigst is …"
+    },
+    {
+      "title": "NMBS Tickets 2026 – Prijzen, Train+ en weekendkorting",
+      "url": "https://www.nmbsrouteplanner.be/nmbs-tickets/",
+      "snippet": "Bekijk alle NMBS tickets op één plek. Vind snel prijzen, Train+, weekendkorting, abonnementen en welk treinticket past bij jouw reis."
+    },
+    {
+      "title": "Dienstregeling & Tickets - NMBS routeplanner",
+      "url": "https://routeplanner.info/nmbs/",
+      "snippet": "Gebruik de NMBS routeplanner om uw binnenlandse en internationale treinreizen in te plannen, info over tickets, dienstregeling en …"
+    }
+  ]
+}

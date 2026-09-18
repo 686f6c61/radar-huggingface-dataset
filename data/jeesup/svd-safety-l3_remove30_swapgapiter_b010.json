@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l3_remove30_swapgapiter_b010",
+  "slug": "jeesup-svd-safety-l3_remove30_swapgapiter_b010",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l3_remove30_swapgapiter_b010",
+  "created_at": "2026-09-18T01:13:54.000Z",
+  "updated_at": "2026-09-18T01:24:46.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama3",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Meta-Llama-3-8B-Instruct",
+    "base_model:finetune:meta-llama/Meta-Llama-3-8B-Instruct",
+    "license:llama3",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766337,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Meta-Llama-3-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lidl Filialen in Deutschland",
+      "url": "https://www.lidl.de/s/de-DE/filialen/?msockid=1c2317c96afd6e173f6300116b316f3c",
+      "snippet": "Finde schnell und einfach deine Lidl Filiale mit der Filialsuche oder über das Bundesland. Angebote und Prospekte für Lidl in der Nähe."
+    },
+    {
+      "title": "Lidl Filialen in Hannover - Supermarkt in der Nähe",
+      "url": "https://www.lidl.de/s/de-DE/filialen/hannover/?msockid=1c2317c96afd6e173f6300116b316f3c",
+      "snippet": "Finde jetzt eine Lidl Filiale in Hannover. auch in deiner Nähe und entdecke aktuelle Angebote und Prospekte."
+    },
+    {
+      "title": "Lidl Filialen in Hannover - Adressen & Öffnungszeiten",
+      "url": "https://www.kaufda.de/Filialen/Hannover/Lidl/v-r74",
+      "snippet": "Finde hier alle Filialen, Öffnungszeiten & Adressen von Lidl Hannover in deiner Nähe!"
+    },
+    {
+      "title": "Lidl Filiale Am Listholze 54 in Hannover",
+      "url": "https://www.lidl.de/s/de-DE/filialen/hannover/am-listholze-54/?msockid=1c2317c96afd6e173f6300116b316f3c",
+      "snippet": "4 days ago · Deine Filiale in Am Listholze 54, 30177 Hannover Zeige die Öffnungszeiten und Sonderverkäufe in dieser Filiale. Die …"
+    },
+    {
+      "title": "Lidl Hannover: Filialen mit Öffnungszeiten & Adresse",
+      "url": "https://www.supermarktcheck.de/lidl/hannover/",
+      "snippet": "Für Sie im großen Check: Die Lidl Filialen in Hannover. Informieren Sie sich jetzt über Öffnungszeiten, Kundenmeinungen, Preise …"
+    }
+  ]
+}

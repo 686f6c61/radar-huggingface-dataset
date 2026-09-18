@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "dean22029/pr_fm_qwen25_7b_adapter",
+  "slug": "dean22029-pr_fm_qwen25_7b_adapter",
+  "author": "dean22029",
+  "url": "https://huggingface.co/dean22029/pr_fm_qwen25_7b_adapter",
+  "created_at": "2026-09-17T21:29:16.000Z",
+  "updated_at": "2026-09-17T21:30:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "conjoint-analysis",
+    "choice-modeling",
+    "lora",
+    "qlora",
+    "political-science",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 172955088,
+  "storage_human": "173 MB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Derniers tirages Loto®, EuroMillions - My Million, Keno ... - FDJ®",
+      "url": "https://www.fdj.fr/jeux-de-tirage/resultats?msockid=203458cdae7b68880c964f1aaf8169c2",
+      "snippet": "Vous avez manqué le dernier tirage LOTO®, Euro Millions-My Million® ou Joker+® ? Consultez tous les résultats des jeux de tirage …"
+    },
+    {
+      "title": "Ticket d’Or gagnant : un Caennais remporte 500 000 € | FDJ®",
+      "url": "https://www.fdj.fr/mag/gagnants/article-gagnant-ticket-or-500-000-euros-caen-131225?msockid=203458cdae7b68880c964f1aaf8169c2",
+      "snippet": "Jan 23, 2026 · Une inattention a failli lui coûter le jackpot ! Découvrez l'histoire derrière les 500 000 € remportés le 13 décembre à …"
+    },
+    {
+      "title": "Gagnants LOTO® : Comment percevoir ses gains - FDJ®",
+      "url": "https://www.fdj.fr/mag/questions/percevoir-gains-loto?msockid=203458cdae7b68880c964f1aaf8169c2",
+      "snippet": "Vous avez gagné à LOTO® et ne savez pas comment faire pour percevoir vos gains ? On vous explique tout. C’est gagné, vous …"
+    },
+    {
+      "title": "Pharaonis : Misez 3 € et Tentez de Gagner jusqu'à 30 000",
+      "url": "https://www.fdj.fr/jeux-illiko/pharaonis?msockid=203458cdae7b68880c964f1aaf8169c2",
+      "snippet": "Misez 3€ et tentez de gagner jusqu'à 30 000 € ! Jouez en ligne à Pharaonis. Les Jeux illiko® à gratter sont sur le site officiel FDJ."
+    },
+    {
+      "title": "FDJ répond aux questions les plus courantes des joueurs ! | FDJ®",
+      "url": "https://www.fdj.fr/mag/questions/article-fdj-repond-questions-des-joueurs?msockid=203458cdae7b68880c964f1aaf8169c2",
+      "snippet": "Jun 24, 2024 · Lorsque l’on joue aux différents jeux de tirage et jeux de grattage, certaines questions peuvent surgir. FDJ a répondu …"
+    }
+  ]
+}

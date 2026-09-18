@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "yuhengtu-bytedance/DataDecide-fineweb-pro-1B-60000_62500_65000_67500_69369_weightedavg_merge",
+  "slug": "yuhengtu-bytedance-datadecide-fineweb-pro-1b-60000_62500_65000_67500_69369_weightedavg_merge",
+  "author": "yuhengtu-bytedance",
+  "url": "https://huggingface.co/yuhengtu-bytedance/DataDecide-fineweb-pro-1B-60000_62500_65000_67500_69369_weightedavg_merge",
+  "created_at": "2026-09-17T22:11:18.000Z",
+  "updated_at": "2026-09-17T22:11:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "arxiv:2203.05482",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1279854592,
+  "parameters_human": "1.28B",
+  "storage_bytes": 2559726104,
+  "storage_human": "2.6 GB",
+  "base_model": "",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MyFemdomRules on X: \"Chastity is the future for all beta men Must …",
+      "url": "https://x.com/MyFemdomRules/status/1821056566646468660",
+      "snippet": "Chastity is the future for all beta men Must make it a law"
+    },
+    {
+      "title": "About genderrolereversal | DeviantArt",
+      "url": "https://www.deviantart.com/genderrolereversal/about",
+      "snippet": "Once they’ve joined Groups, you’ll see them here."
+    },
+    {
+      "title": "girlsrule1990 User Profile | DeviantArt",
+      "url": "https://www.deviantart.com/girlsrule1990/favourites/87343992/female-supremacy-and-gynarchy",
+      "snippet": "Explore the Female Supremacy and Gynarchy collection - the favourite images chosen by girlsrule1990 on DeviantArt."
+    },
+    {
+      "title": "Men Serve Women - Tumblr",
+      "url": "https://menservewomenrule.tumblr.com/page/4",
+      "snippet": "Men are seen as silent, expendable, but useful worker drones that are naturally predisposed to follow a regimen set by their Female …"
+    },
+    {
+      "title": "Serving women in a FLR gives men purpose - Female Led",
+      "url": "https://femaleled.info/serving-women-gives-a-man-a-purpose/",
+      "snippet": "Dec 2, 2020 · Serving women provides a man focus and a great sense of purpose Being obedient to a Dominant woman and living a …"
+    }
+  ]
+}

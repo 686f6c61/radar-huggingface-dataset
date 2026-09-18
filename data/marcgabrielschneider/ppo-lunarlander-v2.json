@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "marcgabrielschneider/ppo-LunarLander-v2",
+  "slug": "marcgabrielschneider-ppo-lunarlander-v2",
+  "author": "marcgabrielschneider",
+  "url": "https://huggingface.co/marcgabrielschneider/ppo-LunarLander-v2",
+  "created_at": "2026-09-17T20:15:31.000Z",
+  "updated_at": "2026-09-19T11:19:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "LunarLander-v2",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1201907,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Se connecter à Gmail - Ordinateur - Aide Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Se connecter à Gmail Conseil : Si vous vous connectez à un ordinateur public, pensez à vous déconnecter avant de quitter …"
+    },
+    {
+      "title": "Sign in - Google Accounts",
+      "url": "https://groups.google.com/",
+      "snippet": "Not your computer? Use a private browsing window to sign in. Learn more about using Guest mode"
+    },
+    {
+      "title": "Télécharger et installer Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95346?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Vous pouvez télécharger et installer sans frais le navigateur Web Chrome, puis l'utiliser pour naviguer sur le Web. Vérifier la …"
+    },
+    {
+      "title": "Définir Google comme moteur de recherche par défaut",
+      "url": "https://support.google.com/websearch/answer/464?hl=fr",
+      "snippet": "Pour obtenir des résultats de Google chaque fois que vous effectuez une recherche, vous pouvez en faire votre moteur de recherche …"
+    },
+    {
+      "title": "Google Search Help",
+      "url": "https://support.google.com/websearch/?hl=en",
+      "snippet": "Official Google Search Help Center where you can find tips and tutorials on using Google Search and other answers to frequently …"
+    }
+  ]
+}

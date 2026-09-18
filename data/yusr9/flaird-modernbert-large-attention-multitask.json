@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "yusr9/flaird-modernbert-large-attention-multitask",
+  "slug": "yusr9-flaird-modernbert-large-attention-multitask",
+  "author": "yusr9",
+  "url": "https://huggingface.co/yusr9/flaird-modernbert-large-attention-multitask",
+  "created_at": "2026-09-17T22:13:59.000Z",
+  "updated_at": "2026-09-17T22:15:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "flaird",
+    "text-classification",
+    "custom_code",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 402418956,
+  "parameters_human": "402.4M",
+  "storage_bytes": 1609700968,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WeTransfer | Send Large Files Fast",
+      "url": "https://wetransfer.com/?msockid=3c4b30e196ea644f1fcf2736979a659d",
+      "snippet": "The simple, quick and secure way to send your files around the world without an account. Share your files, photos, and videos today …"
+    },
+    {
+      "title": "Partage de dossiers et de fichiers : Transfert facile | WeTransfer",
+      "url": "https://wetransfer.com/fr-FR/explore/file-sharing?msockid=3c4b30e196ea644f1fcf2736979a659d",
+      "snippet": "Partagez et transférez des dossiers facilement avec WeTransfer. Profitez d'un partage rapide et sécurisé de fichiers sans aucune limite."
+    },
+    {
+      "title": "Connexion WeTransfer : partagez des fichiers en ligne | WeTransfer",
+      "url": "https://main.wetransfer.com/log-in",
+      "snippet": "Connectez-vous à WeTransfer et commencez à envoyer des fichiers facilement et en toute sécurité. Connectez-vous pour accéder à …"
+    },
+    {
+      "title": "WeTransfer | Envoyez des fichiers volumineux rapidement",
+      "url": "https://index.wetransfer.com/",
+      "snippet": "The simple, quick and secure way to send your files around the world without an account. Share your files, photos, and videos today …"
+    },
+    {
+      "title": "Envoyer via WeTransfer",
+      "url": "https://we.tl/send/fr",
+      "snippet": "Envoyer via WeTransfer Envoyer via WeTransfer"
+    }
+  ]
+}

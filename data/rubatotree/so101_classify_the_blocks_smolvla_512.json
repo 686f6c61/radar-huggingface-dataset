@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "rubatotree/so101_classify_the_blocks_smolvla_512",
+  "slug": "rubatotree-so101_classify_the_blocks_smolvla_512",
+  "author": "rubatotree",
+  "url": "https://huggingface.co/rubatotree/so101_classify_the_blocks_smolvla_512",
+  "created_at": "2026-09-17T23:14:14.000Z",
+  "updated_at": "2026-09-17T23:14:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:rubatotree/classify-blocks-512-local",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 1197804056,
+  "storage_human": "1.2 GB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Classic Shell: Downloads",
+      "url": "https://www.classicshell.net/downloads/",
+      "snippet": "Remove Classic Shell The tool will attempt to manually remove the Classic Shell software from your system. Use it in case you are …"
+    },
+    {
+      "title": "Add, Delete, Enable, or Disable Startup Items in Windows 10",
+      "url": "https://www.tenforums.com/tutorials/2944-add-delete-enable-disable-startup-items-windows-10-a.html",
+      "snippet": "Jan 17, 2026 · 1 Open File Explorer, and do step 2 or step 3 below for what you would like to do. 2. To Add or Delete Startup Items …"
+    },
+    {
+      "title": "Classic Shell • View topic - Classic Shell Start Menu causes explorer ...",
+      "url": "https://www.classicshell.net/forum/viewtopic.php?t=5954",
+      "snippet": "1 day ago · Classic Shell Start Menu causes explorer lock up Page 1 of 2 [ 69 posts ] 1 Previous topic | Next topic ... Page 1 of 2 [ 69 …"
+    },
+    {
+      "title": "Open Administrative Tools in Windows 10 | Tutorials - Ten Forums",
+      "url": "https://www.tenforums.com/tutorials/34661-open-administrative-tools-windows-10-a.html",
+      "snippet": "Apr 12, 2021 · Also, File Explorer has been moved into its own place in the Start menu as part of this work. This tutorial will show you …"
+    },
+    {
+      "title": "Classic Shell • View topic - Explorer crashes when I click classic ...",
+      "url": "https://www.classicshell.net/forum/viewtopic.php?t=8193",
+      "snippet": "1 day ago · Classic Shell development was stopped in December 2017. For now the forum remains online as reference, but is read …"
+    }
+  ]
+}

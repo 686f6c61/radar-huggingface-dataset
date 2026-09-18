@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mradermacher/MiniCPM5-Astra-i1-GGUF",
+  "slug": "mradermacher-minicpm5-astra-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/MiniCPM5-Astra-i1-GGUF",
+  "created_at": "2026-09-17T20:20:52.000Z",
+  "updated_at": "2026-09-17T22:34:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "unsloth",
+    "llama",
+    "en",
+    "base_model:aemmeath/MiniCPM5-Astra",
+    "base_model:quantized:aemmeath/MiniCPM5-Astra",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 30242604192,
+  "storage_human": "30.2 GB",
+  "base_model": "aemmeath/MiniCPM5-Astra",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EMDR: Therapie läuft sehr strukturiert in acht Phasen | therapie.de",
+      "url": "https://www.therapie.de/psyche/info/therapie/emdr/ablauf/",
+      "snippet": "Die EMDR-Behandlung läuft strukturiert in 8 Phasen ab. Die bilaterale Stimulierung der Augen durch z.B. Handbewegungen des …"
+    },
+    {
+      "title": "EMDR-Therapeuten in Frontenhausen | therapie.de",
+      "url": "https://www.therapie.de/psychotherapie/-verfahren-/emdr/-ort-/frontenhausen/",
+      "snippet": "5 EMDR-Therapeuten in Frontenhausen und Umgebung. Finden Sie mit der Therapeutensuche von Pro Psychotherapie e.V. Ihren …"
+    },
+    {
+      "title": "EMDR Therapie – 8 Phasen, Dauer, Kosten & Termin",
+      "url": "https://www.antje-franz.de/emdr-therapie/",
+      "snippet": "EMDR („Eye Movement Desensitization and Reprocessing“) ist eine traumafokussierte Psychotherapiemethode, die die natürliche …"
+    },
+    {
+      "title": "Eye Movement Desensitization and Reprocessing – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Eye_Movement_Desensitization_and_Reprocessing",
+      "snippet": "EMDR ist eine traumafokussierte Intervention, die nach einem strukturierten Fokussierungsprozess die Erinnerung aktiviert, während …"
+    },
+    {
+      "title": "EMDR-Therapie: Ablauf, Wirkung & Anwendung bei Trauma & Angst",
+      "url": "https://www.fachzentrum-psychotherapie.de/wissen/psychotherapie-news/emdr-was-ist-das",
+      "snippet": "Apr 23, 2025 · EMDR ist eine bewährte, wissenschaftlich fundierte Methode zur Verarbeitung von Trauma und psychischer …"
+    }
+  ]
+}

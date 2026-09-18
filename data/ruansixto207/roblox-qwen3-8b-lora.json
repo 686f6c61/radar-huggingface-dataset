@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "ruansixto207/roblox-qwen3-8b-lora",
+  "slug": "ruansixto207-roblox-qwen3-8b-lora",
+  "author": "ruansixto207",
+  "url": "https://huggingface.co/ruansixto207/roblox-qwen3-8b-lora",
+  "created_at": "2026-09-17T20:37:57.000Z",
+  "updated_at": "2026-09-17T20:38:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen3",
+    "trl",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 360666676,
+  "storage_human": "361 MB",
+  "base_model": "unsloth/qwen3-8b-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Giggles App",
+      "url": "https://googlegiggles.com/",
+      "snippet": "Giggles is a new social app where you can watch videos and collect trends."
+    },
+    {
+      "title": "Google Giggles - Know Your Meme",
+      "url": "https://knowyourmeme.com/memes/google-giggles",
+      "snippet": "Google Giggles is an imaginary social media website and short-form video platform from Google that's imagined to be a place where …"
+    },
+    {
+      "title": "Google Giggles - YouTube",
+      "url": "https://www.youtube.com/@GoogleGigglesOffical/videos",
+      "snippet": "Welcome To Google Giggles!"
+    },
+    {
+      "title": "Giggles - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.giggles.app&hl=en-US",
+      "snippet": "Sep 19, 2025 · Giggles isn’t just an app — it’s a place where smiles meet stories, and strangers become friends. Whether you’re here …"
+    },
+    {
+      "title": "Google Giggles - YouTube",
+      "url": "https://www.youtube.com/@thegooglegiggler/featured",
+      "snippet": "• 8 subscribers This is the Official Channel for Google Giggles content ...more This is the Official Channel for Google Giggles content …"
+    }
+  ]
+}

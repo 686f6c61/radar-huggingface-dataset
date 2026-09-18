@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "willamazon1/Qwen3-8B-SDFT-Math-LoRA-pristine",
+  "slug": "willamazon1-qwen3-8b-sdft-math-lora-pristine",
+  "author": "willamazon1",
+  "url": "https://huggingface.co/willamazon1/Qwen3-8B-SDFT-Math-LoRA-pristine",
+  "created_at": "2026-09-18T01:37:52.000Z",
+  "updated_at": "2026-09-18T01:38:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "math",
+    "reasoning",
+    "reinforcement-learning",
+    "lora",
+    "grpo",
+    "conversational",
+    "base_model:Qwen/Qwen3-8B-Base",
+    "base_model:adapter:Qwen/Qwen3-8B-Base",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 196,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16381516712,
+  "storage_human": "16.4 GB",
+  "base_model": "Qwen/Qwen3-8B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Restauration : Bienvenue - Restauration - LYCEE GENERAL PIERRE …",
+      "url": "https://pierre-bourdieu.mon-ent-occitanie.fr/gestion/restauration/restauration-bienvenue-20864.htm",
+      "snippet": "INSCRIPTION A LA DEMI-PENSION DU LYCEE : CF REGLEMENT INTERIEUR SERVICE DE RESTAURATION CI-DESSOUS …"
+    },
+    {
+      "title": "COLLEGE ALPHONSE DAUDET",
+      "url": "https://alphonse-daudet-ales.mon-ent-occitanie.fr/",
+      "snippet": "La médiathèque aux couleurs de l'Allemagne Dans le cadre de la 15-aine Franco-Allemande en Occitanie, les élèves germanistes …"
+    },
+    {
+      "title": "COLLEGE JULES VERNE",
+      "url": "https://jules-verne-carcassonne.mon-ent-occitanie.fr/",
+      "snippet": "Accueil L'établissement Sous-menu de la rubrique L'établissement Agenda Organisation pédagogique Projet d'établissement SEGPA …"
+    },
+    {
+      "title": "Mot de rentrée du principal Mr Sghir",
+      "url": "https://jeu-de-mail.mon-ent-occitanie.fr/l-etablissement/actualites/mot-de-rentree-du-principal-mr-sghir-1315.htm",
+      "snippet": "Une année sous le signe de l’unité Je suis honoré de diriger le Collège du Jeu de Mail pour cette rentrée et m’engage à œuvrer pour …"
+    },
+    {
+      "title": "Liste des fournitures scolaires rentrée 2026/2027",
+      "url": "https://max-rouquette.mon-ent-occitanie.fr/c-est-pratique/actualites/liste-des-fournitures-scolaires-rentree-2026-2027-20902.htm",
+      "snippet": "Vous trouverez en PJ les différentes listes de fournitures nécessaires pour chaque niveau de classe, SEGPA et hors SEGPA. Pour …"
+    }
+  ]
+}

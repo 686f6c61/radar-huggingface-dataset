@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "mhdang/gelatwo-xlam-json-monarch-16384",
+  "slug": "mhdang-gelatwo-xlam-json-monarch-16384",
+  "author": "mhdang",
+  "url": "https://huggingface.co/mhdang/gelatwo-xlam-json-monarch-16384",
+  "created_at": "2026-09-18T02:45:02.000Z",
+  "updated_at": "2026-09-18T03:15:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "hidden-markov-model",
+    "constrained-decoding",
+    "sequential-monte-carlo",
+    "arxiv:2606.01926",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 2105556992,
+  "parameters_human": "2.11B",
+  "storage_bytes": 8422228368,
+  "storage_human": "8.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to Apply for University | NWU Online Application Guide",
+      "url": "https://studies.nwu.ac.za/studies/apply",
+      "snippet": "Apply online to study at NWU. Learn how to apply for undergraduate & postgraduate programs. Advance your career with our …"
+    },
+    {
+      "title": "Mitigating Bias in Locally Constrained Decoding via Tractable ...",
+      "url": "https://arxiv.org/html/2606.01926v2",
+      "snippet": "16.08.2026 ... Generations from large language models often fail to conform to desired constraints such as JSON schema. Existing locally constrained decoding ( ..."
+    },
+    {
+      "title": "Undergraduate University Application | Apply Here!",
+      "url": "https://studies.nwu.ac.za/undergraduate-studies/application",
+      "snippet": "Start your NWU journey! Apply now for undergraduate, postgraduate, or distance learning courses. Your university application begins …"
+    },
+    {
+      "title": "VSS-AAA - North-West University",
+      "url": "https://vssweb.nwu.ac.za/aaa-webclient/ApplicationTabsetWin.do",
+      "snippet": "Start your application by creating your NWU student number and memorable PIN. After you have created your login details, click on …"
+    },
+    {
+      "title": "Mitigating Bias in Locally Constrained Decoding via Tractable ...",
+      "url": "https://starai.cs.ucla.edu/papers/DangICML26.pdf",
+      "snippet": "01.06.2026 ... 1Code available at https://github.com/MhDang/gelatwo. rejects xt ... Accuracy (%) on xLAM with JSON format comparing. LCD and P-GCD with ..."
+    }
+  ]
+}

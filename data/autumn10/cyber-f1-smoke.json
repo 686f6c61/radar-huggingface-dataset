@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "autumn10/Cyber-F1-smoke",
+  "slug": "autumn10-cyber-f1-smoke",
+  "author": "autumn10",
+  "url": "https://huggingface.co/autumn10/Cyber-F1-smoke",
+  "created_at": "2026-09-17T23:34:03.000Z",
+  "updated_at": "2026-09-21T03:02:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "tensorboard",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "base_model:adapter:DuyTa/Cyber-F1",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "base_model:DuyTa/Cyber-F1",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 48813206504,
+  "storage_human": "48.8 GB",
+  "base_model": "DuyTa/Cyber-F1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wing png images | PNGWing",
+      "url": "https://www.pngwing.com/en/search?q=wing",
+      "snippet": "Icon Wing, Wings, pair of feather wings artwork, monochrome, bird, design png 1600x737px 624.39KB"
+    },
+    {
+      "title": "PNGWing - Exclusive png design images",
+      "url": "https://www.pngwing.com/",
+      "snippet": "abstract gold foil texture, photorealistic, luxury festival background, png 1024x1024px 2.62MB"
+    },
+    {
+      "title": "Wing PNG, Vector And Transparent Clipart Images - Pngtree",
+      "url": "https://pngtree.com/free-png-vectors/wing",
+      "snippet": "Pngtree offers wing PNG and vector images, as well as transparant background wing clipart images and PSD files. Download the free …"
+    },
+    {
+      "title": "Wings PNG HD Images | Free Download | Vector Files - Pngtree",
+      "url": "https://pngtree.com/so/Wings",
+      "snippet": "Are you searching for Wings png images or vector? Choose from 46000+ Wings graphic resources and download in the form of PNG, …"
+    },
+    {
+      "title": "PNG Wing Images | Free PNG Vector Graphics, Effects & Backgrounds ...",
+      "url": "https://www.rawpixel.com/search/png%20wing",
+      "snippet": "PNG Wing · High quality transparent PNG vector graphics, effects, clipart, stickers, templates & photos."
+    }
+  ]
+}

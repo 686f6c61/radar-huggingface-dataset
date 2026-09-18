@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "durgarao40/my-awesome-model",
+  "slug": "durgarao40-my-awesome-model",
+  "author": "durgarao40",
+  "url": "https://huggingface.co/durgarao40/my-awesome-model",
+  "created_at": "2026-09-18T00:25:03.000Z",
+  "updated_at": "2026-09-18T00:25:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "feature-extraction",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 108310272,
+  "parameters_human": "108.3M",
+  "storage_bytes": 433263424,
+  "storage_human": "433 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ontario Opportunities Fund",
+      "url": "https://www.ontario.ca/page/ontario-opportunities-fund",
+      "snippet": "Feb 21, 2018 · Make a contribution to help reduce Ontario’s debt and claim a tax credit. You can directly reduce the provincial debt …"
+    },
+    {
+      "title": "Available funding opportunities from the Ontario Government",
+      "url": "https://www.ontario.ca/page/available-funding-opportunities-ontario-government",
+      "snippet": "Feb 14, 2020 · Available funding opportunities from the Ontario Government Find out what funding is currently available from the …"
+    },
+    {
+      "title": "What is the Ontario Opportunities Fund? - PiggyBank",
+      "url": "https://piggybank.ca/resources/ontario-opportunities-fund",
+      "snippet": "Jan 19, 2026 · The Ontario Opportunities Fund gives Ontarians the option to donate funds to help the province reduce debt, in …"
+    },
+    {
+      "title": "Ontario Opportunities Fund: What It Is (and Why It’s Not a Business ...",
+      "url": "https://granthub.ca/guide/ontario-opportunities-fund",
+      "snippet": "Mar 6, 2026 · The Ontario Opportunities Fund is a voluntary provincial donation program that allows Ontario taxpayers to contribute …"
+    },
+    {
+      "title": "All You Need to Know About the Ontario Opportunities Fund",
+      "url": "https://turbotax.intuit.ca/tips/the-ins-and-outs-of-the-ontario-opportunities-fund",
+      "snippet": "Learn about the Ontario opportunities fund tax credit, including who qualifies, how it helps the province, how to claim it, and more."
+    }
+  ]
+}

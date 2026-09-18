@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "konko/bornomala-bengali-tokenizer",
+  "slug": "konko-bornomala-bengali-tokenizer",
+  "author": "konko",
+  "url": "https://huggingface.co/konko/bornomala-bengali-tokenizer",
+  "created_at": "2026-09-17T21:09:47.000Z",
+  "updated_at": "2026-09-17T21:17:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "tokenizers",
+  "languages": [
+    "bn",
+    "en"
+  ],
+  "tags": [
+    "tokenizers",
+    "bengali",
+    "bangla",
+    "tokenizer",
+    "tokenization",
+    "grapheme",
+    "akshara",
+    "morphology",
+    "indic",
+    "unicode",
+    "bornomala",
+    "token-classification",
+    "bn",
+    "en",
+    "dataset:wikimedia/wikipedia",
+    "dataset:wikimedia/wikisource",
+    "dataset:ai4bharat/sangraha",
+    "dataset:csebuetnlp/xlsum",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "中小板 创业板 新三板 用英文分别如何表述？_百度知道",
+      "url": "https://zhidao.baidu.com/question/46481409.html",
+      "snippet": "中小板 SME board, Small and Medium Enterprise Board。 1、上市主体资格 新三板：证监会核准的非上市公众公司。 中小板：股票 …"
+    },
+    {
+      "title": "请问外资银行的职位中MM,ARM,SME,BSSM分别是什么意思 ...",
+      "url": "https://zhidao.baidu.com/question/27297330.html",
+      "snippet": "请问外资银行的职位中MM,ARM,SME,BSSM分别是什么意思？MM 看不出怎么一回事 美眉? :PARM assistant of relationship manager …"
+    },
+    {
+      "title": "International Trade Desk :: India SME Forum",
+      "url": "https://indiasmeforum.org/itd/andhra-pradesh-rbsm-2026-2027",
+      "snippet": "A wing of the India SME Forum, the International Trade Division supports Indian MSMEs in expanding globally through export …"
+    },
+    {
+      "title": "India MSME Digital Procurement Report 2026 Download",
+      "url": "https://indiasmeforum.org/digital-procurement-report-2026/",
+      "snippet": "India’s MSME sector — over 80 million enterprises — is entering a transformative era driven by Artificial Intelligence, Digital …"
+    },
+    {
+      "title": "Mengistu Alemayehu | World Economic Forum",
+      "url": "https://www.weforum.org/people/mengistu-alemayehu/",
+      "snippet": "Mengistu Alemayehu is the Regional Director for IFC, South Asia. An Ethiopian national, he joined IFC in 1994. He has spearheaded …"
+    }
+  ]
+}

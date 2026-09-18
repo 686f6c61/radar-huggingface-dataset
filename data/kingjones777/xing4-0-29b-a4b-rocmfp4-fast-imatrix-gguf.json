@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "kingjones777/Xing4.0-29B-A4B-ROCmFP4-FAST-imatrix-GGUF",
+  "slug": "kingjones777-xing4-0-29b-a4b-rocmfp4-fast-imatrix-gguf",
+  "author": "kingjones777",
+  "url": "https://huggingface.co/kingjones777/Xing4.0-29B-A4B-ROCmFP4-FAST-imatrix-GGUF",
+  "created_at": "2026-09-18T03:49:22.000Z",
+  "updated_at": "2026-09-20T01:03:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "rocm",
+    "rocmfp4",
+    "strix-halo",
+    "gfx1151",
+    "amd",
+    "moe",
+    "mla",
+    "imatrix",
+    "text-generation",
+    "base_model:XingChen-AGI/Xing4.0-29B-A4B",
+    "base_model:quantized:XingChen-AGI/Xing4.0-29B-A4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 131,
+  "trending_score": 0,
+  "parameters": 31215031088,
+  "parameters_human": "31.22B",
+  "storage_bytes": 16749795648,
+  "storage_human": "16.7 GB",
+  "base_model": "XingChen-AGI/Xing4.0-29B-A4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SIMULADOR DE COMBINAÇÕES LOTOFÁCIL - forumeiros.com",
+      "url": "https://loto-facil.forumeiros.com/t152-simulador-de-combinacoes-lotofacil",
+      "snippet": "Jul 30, 2009 · Simulador de combinaçoes Lotofacil por silverio Sex Set 04, 2009 6:40 pm Boa Noite.Gostaria de pedir que se alguem …"
+    },
+    {
+      "title": "TUP Das 8 - Lotofácil",
+      "url": "https://loto-facil.forumeiros.com/t1946-tup-das-8-lotofacil",
+      "snippet": "Mar 4, 2012 · TUP DAS 8 Após diversos testes a Tupdas8 e das5, permitem um atalho para bons premios, com jogos economicos. …"
+    },
+    {
+      "title": "loto-facil",
+      "url": "https://loto-facil.forumeiros.com/",
+      "snippet": "Jul 1, 2025 · Pírâmide mágica, números da sorte, Ganhar na loteria pelo poder da mente, Simpatias e amuletos para ganhar no jogo, …"
+    },
+    {
+      "title": "Palpitando - loto-facil.forumeiros.com",
+      "url": "https://loto-facil.forumeiros.com/t274-palpitando",
+      "snippet": "Oct 30, 2009 · Parece que as dezenas 2, e 22 já estão saindo a 8 concursos. Um dica: Jogar um cartão com as duas... 2º cartão …"
+    },
+    {
+      "title": "LOTOFACIL 25 DEZENAS COM 13 FIXAS - REDUZIDO",
+      "url": "https://loto-facil.forumeiros.com/t431-lotofacil-25-dezenas-com-13-fixas-reduzido",
+      "snippet": "Nov 2, 2009 · Olá Amigos, Vou tentar postar uma planilha com todas as 25 dezenas, tendo como base uma que o amigo Jacobino …"
+    }
+  ]
+}

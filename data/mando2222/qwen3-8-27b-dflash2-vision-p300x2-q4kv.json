@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "mando2222/qwen3.8-27b-dflash2-vision-p300x2-q4kv",
+  "slug": "mando2222-qwen3-8-27b-dflash2-vision-p300x2-q4kv",
+  "author": "mando2222",
+  "url": "https://huggingface.co/mando2222/qwen3.8-27b-dflash2-vision-p300x2-q4kv",
+  "created_at": "2026-09-17T21:26:07.000Z",
+  "updated_at": "2026-09-18T17:34:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "blackhole",
+    "p300x2",
+    "tt-model-cache",
+    "tt-model-container",
+    "vllm-plugin",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5807610908,
+  "storage_human": "5.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Διεύθυνση Ευρωπαϊκής Ένωσης και Διεθνούς Αστυνομικής …",
+      "url": "https://police.gov.cy/police/police.nsf/All/F867E813DFD0DABDC2258448003E155A",
+      "snippet": "Η Υ ποδιεύθυνση Ευρωπαϊκής Ένωσης επιλαμβάνεται όλων των αστυνομικών θεμάτων που έχουν σχέση με την υλοποίηση και …"
+    },
+    {
+      "title": "Διεύθυνση Ευρωπαϊκής Ένωσης & Διεθνούς Αστυνομικής …",
+      "url": "https://www.gov.cy/police/documents/enimerotiko-diafotistiko-yliko-2/dieythynsi-eyropaikis-enosis-diethnoys-astynomikis-synergasias-d-e-e-d-a-s-2/",
+      "snippet": "Αρχηγείο ΑστυνομίαςΟδός Ευάγγελου Φλωράκη, Τ.Κ. 1478 Email: police@police.gov.cy (07:00–15:00, εκτός Σαββατοκύριακων & …"
+    },
+    {
+      "title": "Διεύθυνση Ευρωπαϊκής Ένωσης και Διεθνούς Αστυνομικής …",
+      "url": "https://police.gov.cy/police/police.nsf/All/4EE84DB5E6B0781EC2258448003E1559",
+      "snippet": "Πληροφορίες που αφορούν τον οργανισμό των Ηνωμένων Εθνών καθώς και πρόσβαση σε συμβάσεις, εκθέσεις και διάφορα όργανα …"
+    },
+    {
+      "title": "Υποδιεύθυνση Ευρωπαϊκής Ένωσης (Τομέας Ευρωπαϊκής Ένωσης …",
+      "url": "https://www.gov.cy/police/dieythynseis/dieythynsi-eyropaikis-enosis-diethnoys-astynomikis-synergasias-d-e-e-d-a-s/ypodieythynsi-eyropaikis-enosis-tomeas-eyropaikis-enosis-diethnon-scheseon/",
+      "snippet": "Το Γραφείο Ευρωπαϊκής Ένωσης & Διεθνών Σχέσεων συνδράμει στο έργο που επιτελείται από τις διάφορες Αστυνομικές Υπηρεσίες …"
+    },
+    {
+      "title": "Διεύθυνση Διεθνούς Αστυνομικής Συνεργασίας (Δ.Δ.Α.Σ.)",
+      "url": "https://www.astynomia.gr/elliniki-astynomia/eidikes-ypiresies/diefthynsi-diethnous-astynomikis-synergasias-d-d-a-s/",
+      "snippet": "Η Διεύθυνση Διεθνούς Αστυνομικής Συνεργασίας αποτελεί την εθνική Αρχή για τον χειρισμό θεμάτων διεθνούς αστυνομικής …"
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "bjonor/Swift-Qwen3.8-27B-GPTQ-Int4-sym-G128-MTP-BF16",
+  "slug": "bjonor-swift-qwen3-8-27b-gptq-int4-sym-g128-mtp-bf16",
+  "author": "bjonor",
+  "url": "https://huggingface.co/bjonor/Swift-Qwen3.8-27B-GPTQ-Int4-sym-G128-MTP-BF16",
+  "created_at": "2026-09-17T20:01:04.000Z",
+  "updated_at": "2026-09-21T07:15:31.000Z",
+  "license": "swift-open-license-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "gptq",
+    "int4",
+    "w4a16",
+    "4-bit",
+    "quantized",
+    "vllm",
+    "intel-xpu",
+    "arc-pro-b70",
+    "mtp",
+    "speculative-decoding",
+    "gated-deltanet",
+    "tool-calling",
+    "conversational",
+    "en",
+    "multilingual",
+    "dataset:HuggingFaceH4/ultrachat_200k",
+    "base_model:ukisai/Swift-Qwen3.8-27b",
+    "base_model:quantized:ukisai/Swift-Qwen3.8-27b",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 19579439640,
+  "storage_human": "19.6 GB",
+  "base_model": "ukisai/Swift-Qwen3.8-27b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WEB.DE Login - ganz einfach",
+      "url": "https://anmelden.web.de/",
+      "snippet": "Wenige Schritte genügen, um sich schnell und sicher in das FreeMail-Postfach einzuloggen. Sobald Sie sich bei WEB.DE …"
+    },
+    {
+      "title": "GMX Login – ganz einfach",
+      "url": "https://anmelden.gmx.net/",
+      "snippet": "Nachdem Sie die Registrierung abgeschlossen haben, stehen Ihnen verschiedene GMX Mail Login-Möglichkeiten zur Verfügung. Mit …"
+    },
+    {
+      "title": "Login freenet Mail: Dein Freemail-Login, Nachrichten & Spiele",
+      "url": "https://mail.freenet.de/",
+      "snippet": "Freemail, aktuelle Nachrichten und unterhaltsame Spiele – entdecke die Vielfalt von mail.freenet.de. Schnell und unkompliziert."
+    },
+    {
+      "title": "WEB.DE - kostenlose E-Mail-Adresse, FreeMail & Nachrichten",
+      "url": "https://web.de/",
+      "snippet": "Hier finden Sie alle Nachrichten aus Ihrer Region. Ihre tägliche Millionen-Chance und das kostenlos! Einfach finden, was Sie suchen …"
+    },
+    {
+      "title": "Zugriff auf Ihr WEB.DE Postfach: Ihre Möglichkeiten",
+      "url": "https://web.de/blog/posts/zugaenge-webde-postfach/629/",
+      "snippet": "Dec 18, 2024 · Einfach draufklicken – und schon sind Sie direkt in Ihren E-Mails! Der MailCheck bietet Ihnen eine superschnellen …"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Abiola-Dave/detectron2",
+  "slug": "abiola-dave-detectron2",
+  "author": "Abiola-Dave",
+  "url": "https://huggingface.co/Abiola-Dave/detectron2",
+  "created_at": "2026-09-18T01:06:01.000Z",
+  "updated_at": "2026-09-18T01:08:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 679319382,
+  "storage_human": "679 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Inn at the Market | Pike Place Market Hotel | Downtown Seattle …",
+      "url": "https://www.innatthemarket.com/",
+      "snippet": "Welcome to Inn at the Market, the only hotel located in Seattle's historic Pike Place Market. Featuring a downtown location and …"
+    },
+    {
+      "title": "Boutique Hotel Rooms in Downtown Seattle - Inn at the Market",
+      "url": "https://www.innatthemarket.com/pike-place-market-hotel-rooms/",
+      "snippet": "Hotel Rooms From the Inn’s 79 rooms, guests can savor views of downtown, Pike Place Market, Seattle’s waterfront, the Puget …"
+    },
+    {
+      "title": "Enhancing Your Stay in Seattle - Inn at the Market",
+      "url": "https://www.innatthemarket.com/enhancing-your-stay-in-seattle/",
+      "snippet": "Enhancing Your Stay in Seattle If you want the quintessential Seattle experience, Inn at the Market offers just that. Tucked directly …"
+    },
+    {
+      "title": "Seattle Spring Events - Inn at the Market",
+      "url": "https://www.innatthemarket.com/seattle-spring-events/",
+      "snippet": "Seattle Spring Events As the sun sets later and the flowers start to bloom, spring in Seattle comes to life. The Pike Place Market …"
+    },
+    {
+      "title": "Sip & Savor Through Pike Place Market - Inn at the Market",
+      "url": "https://www.innatthemarket.com/june-blog-sip-savor-through-pike-place-market/",
+      "snippet": "Sip & Savor Through Pike Place Market Summer just got a major upgrade in downtown Seattle! If you’ve ever found yourself wishing …"
+    }
+  ]
+}

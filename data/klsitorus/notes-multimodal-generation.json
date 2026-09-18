@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "klsitorus/notes-multimodal-generation",
+  "slug": "klsitorus-notes-multimodal-generation",
+  "author": "klsitorus",
+  "url": "https://huggingface.co/klsitorus/notes-multimodal-generation",
+  "created_at": "2026-09-18T02:41:02.000Z",
+  "updated_at": "2026-09-18T02:41:13.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "multimodal-generation",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fehlenden Ort in Google Maps hinzufügen",
+      "url": "https://support.google.com/maps/answer/6320846?hl=de&co=GENIE.Platform%3DDesktop",
+      "snippet": "Öffnen Sie Google Maps auf dem Computer. Suchen Sie nach der Adresse des fehlenden Orts. Klicken Sie auf Fehlenden Ort …"
+    },
+    {
+      "title": "Google Maps aktualisieren",
+      "url": "https://support.google.com/maps/answer/3615175?hl=de&co=GENIE.Platform%3DAndroid",
+      "snippet": "Google Maps aktualisieren Tipp:Wenn Sie Probleme mit Downloads und Updates für Google Maps haben, können Sie diese mit …"
+    },
+    {
+      "title": "Google Maps-Zeitachse verwalten",
+      "url": "https://support.google.com/maps/answer/6258979?hl=de&co=GENIE.Platform%3DDesktop",
+      "snippet": "Google Maps-Zeitachse verwalten Wichtig: Wir aktualisieren derzeit die Einstellungen für Google-Suchdienste. Dazu gehören die …"
+    },
+    {
+      "title": "Download areas & navigate offline in Google Maps",
+      "url": "https://support.google.com/maps/answer/6291838?hl=en&co=GENIE.Platform%3DAndroid",
+      "snippet": "Use offline maps in Google Maps After you download an area, use the Google Maps app just like you normally would. If your internet …"
+    },
+    {
+      "title": "Locaties zoeken op Google Maps",
+      "url": "https://support.google.com/maps/answer/3092445?hl=nl&co=GENIE.Platform%3DDesktop",
+      "snippet": "Locaties zoeken op Google Maps Belangrijk: We updaten op dit moment de instellingen voor Google Zoeken-services, waaronder …"
+    }
+  ]
+}

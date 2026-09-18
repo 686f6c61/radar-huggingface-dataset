@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "gabs777xd/mariarvc",
+  "slug": "gabs777xd-mariarvc",
+  "author": "gabs777xd",
+  "url": "https://huggingface.co/gabs777xd/mariarvc",
+  "created_at": "2026-09-17T20:02:12.000Z",
+  "updated_at": "2026-09-17T20:02:12.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nachrichten für die Region Heilbronn - Hohenlohe - Kraichgau - STIMME…",
+      "url": "https://www.stimme.de/",
+      "snippet": "Aktuelle Nachrichten, Informationen und Videos aus der Region Heilbronn, Hohenlohe und Kraichgau"
+    },
+    {
+      "title": "Traueranzeigen Ihrer Region | www.trauerundgedenken.de",
+      "url": "https://www.trauerundgedenken.de/",
+      "snippet": "Notfallseelsorge im Landkreis Heilbronn: Was Helfer nach Todesfällen leisten Da sein in Ausnahmesituationen"
+    },
+    {
+      "title": "Heilbronn - STIMME.de",
+      "url": "https://www.stimme.de/heilbronn/",
+      "snippet": "Die Spritpreise liegen auf Rekordniveau. Bei Heilbronner Autofahrern ruft das Frust hervor – an der vergleichsweise günstigen …"
+    },
+    {
+      "title": "Nachrichten aus Heilbronn und der Region - meine.stimme",
+      "url": "https://meine.stimme.de/heilbronn",
+      "snippet": "Lokalnachrichten aus Heilbronn: Lesen Sie hier die aktuellsten News und neuesten Reportagen aus Ihrer Region."
+    },
+    {
+      "title": "Aktuelles - Heilbronner Stimme",
+      "url": "https://www.stimme-mediengruppe.de/aktuelles/",
+      "snippet": "Jan 12, 2022 · Das Medienunternehmen Heilbronner Stimme gibt seinen Leserinnen und Lesern die Chance, die Spitzenkandidaten …"
+    }
+  ]
+}

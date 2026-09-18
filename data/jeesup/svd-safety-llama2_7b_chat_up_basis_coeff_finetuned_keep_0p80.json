@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-llama2_7b_chat_up_basis_coeff_finetuned_keep_0p80",
+  "slug": "jeesup-svd-safety-llama2_7b_chat_up_basis_coeff_finetuned_keep_0p80",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-llama2_7b_chat_up_basis_coeff_finetuned_keep_0p80",
+  "created_at": "2026-09-18T02:04:41.000Z",
+  "updated_at": "2026-09-18T02:27:07.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "basis-sharing",
+    "compression",
+    "low-rank",
+    "safety",
+    "base_model:meta-llama/Llama-2-7b-chat-hf",
+    "base_model:finetune:meta-llama/Llama-2-7b-chat-hf",
+    "license:llama2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13520009703,
+  "storage_human": "13.5 GB",
+  "base_model": "meta-llama/Llama-2-7b-chat-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Offset Mortgages: the mortgage you can pay off quickly",
+      "url": "https://www.moneymagpie.com/manage-your-money/offset-mortgages-the-mortgage-you-can-pay-off-quickly-and-cheaply",
+      "snippet": "Jun 26, 2017 · Offset mortgages can help you pay off your home loan quickly and cheaply. Offsets are very flexible, keep tax away …"
+    },
+    {
+      "title": "Offset Mortgages: The Ultimate Guide - AALTO Mortgages Ltd",
+      "url": "https://www.aaltomortgages.com/speciality/offset-mortgages-the-ultimate-guide/",
+      "snippet": "Discover how offset mortgages can save you money on interest payments and help you pay off your mortgage faster. Unlock financial …"
+    },
+    {
+      "title": "Offset Mortgages | Everything You Need to Know: Is One Right for You?",
+      "url": "https://themortgagepod.com/offset-mortgages-everything-you-need-to-know/",
+      "snippet": "Dec 16, 2024 · Flexibility: Monthly payments can adjust based on the balance in your offset account, giving you control over your …"
+    },
+    {
+      "title": "Offset Mortgages Explained: Are They Right for You?",
+      "url": "https://www.opespartners.co.nz/mortgage/offset-mortgages",
+      "snippet": "Oct 15, 2025 · Discover the benefits of offset mortgages. Learn how to reduce your interest costs and pay off your home loan faster …"
+    },
+    {
+      "title": "Financial Flexibility: Offset Mortgages: The Key to Financial ...",
+      "url": "https://fastercapital.com/content/Financial-Flexibility--Offset-Mortgages--The-Key-to-Financial-Flexibility.html",
+      "snippet": "Aug 25, 2026 · Offset mortgages offer a dynamic approach to managing both savings and mortgage debt, providing financial flexibility …"
+    }
+  ]
+}

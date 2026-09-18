@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "taeyoungrlwlrd/cosmos3-ap-openarm-wam-cotrain-b256-8k",
+  "slug": "taeyoungrlwlrd-cosmos3-ap-openarm-wam-cotrain-b256-8k",
+  "author": "taeyoungrlwlrd",
+  "url": "https://huggingface.co/taeyoungrlwlrd/cosmos3-ap-openarm-wam-cotrain-b256-8k",
+  "created_at": "2026-09-18T01:57:48.000Z",
+  "updated_at": "2026-09-18T02:03:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 91050557029,
+  "storage_human": "91.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Regenwasser für den Pferdestall: So können Pferdehalter Wasser sparen",
+      "url": "https://www.wochenblatt-dlv.de/feld-stall/tierhaltung/regenwasser-fuer-pferdestall-so-koennen-pferdehalter-wasser-sparen-577806",
+      "snippet": "Aug 12, 2024 · In den Orientierungshilfen Reitanlagen- und Stallbau (FN-Verlag) rät Gerlinde Hoffmann davon ab, Regenwasser von …"
+    },
+    {
+      "title": "FAQ Regenwasser: Ihre häufigsten Fragen rund ums Regenwasser",
+      "url": "https://www.verbraucherzentrale.nrw/klimaanpassung-faq-regenwasser",
+      "snippet": "Jun 17, 2026 · In unserer FAQ Regenwasser beantworten wir die häufigsten Fragen rund um die allgemeine Nutzung von …"
+    },
+    {
+      "title": "Überdachung und Entwässerung: Wie Regenwasser richtig abgeleitet wird …",
+      "url": "https://www.mabeg.de/blog/ueberdachung-und-entwaesserung-wie-regenwasser-richtig-abgeleitet-wird/",
+      "snippet": "Jun 11, 2026 · Das grundlegende Ziel jedes Entwässerungssystems ist es, Niederschlagswasser kontrolliert und ohne Staunässe …"
+    },
+    {
+      "title": "Regenwasser sammeln über die Dachrinne: so geht's | DWZ",
+      "url": "https://www.dwz-shop.de/blog/regenwassernutzung-leicht-gemacht-mit-ihrer-dachrinne/",
+      "snippet": "Jul 13, 2026 · Eine besonders effektive Methode ist es, Regenwasser über die vorhandene Dachrinne aufzufangen und in einem …"
+    },
+    {
+      "title": "Dachentwässerung – wie Regenwasser richtig vom Dach abgeleitet wird",
+      "url": "https://www.decket.de/dachentwaesserung-wie-regenwasser-richtig-vom-dach-abgeleitet-wird/",
+      "snippet": "Jun 26, 2026 · Regen auf dem Dach wirkt harmlos, doch ohne ein passendes System entstehen schnell Feuchteschäden an …"
+    }
+  ]
+}

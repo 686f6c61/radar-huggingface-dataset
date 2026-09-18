@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l31_remove40_swapgapiter_b010",
+  "slug": "jeesup-svd-safety-l31_remove40_swapgapiter_b010",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l31_remove40_swapgapiter_b010",
+  "created_at": "2026-09-17T21:07:53.000Z",
+  "updated_at": "2026-09-17T21:16:14.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama3",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "license:llama3.1",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766296,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Topky.sk – Online spravodajstvo",
+      "url": "https://www.topky.sk/",
+      "snippet": "21 hours ago · Domáce Zahraničné Prominenti Šport Zaujímavosti Ekonomika Kvízy Topky tv Lifestyle Voľný čas © Zoznam, s.r.o. …"
+    },
+    {
+      "title": "Domáce spravodajstvo | Topky.sk",
+      "url": "https://www.topky.sk/se/10/Domace",
+      "snippet": "Aktuálne správy z domova, monitor diania na Slovensku: krimi správy, spravodajstvo z parlamentu SR, informácie o policajných …"
+    },
+    {
+      "title": "SME.sk | Najčítanejšie správy na Slovensku",
+      "url": "https://topky.sme.sk/",
+      "snippet": "Sep 8, 2026 · Rýchle a dôveryhodné správy zo Slovenska, sveta i Vášho regiónu. Prihlásenie do Post.sk."
+    },
+    {
+      "title": "Topky.sk - Facebook",
+      "url": "https://www.facebook.com/topky/",
+      "snippet": "Topky.sk. 472,110 followers · 31,858 talking about this. Spájame seriózne denné správy s obľúbeným bulvárnym obsahom."
+    },
+    {
+      "title": "Online spravodajstvo - Topky.sk",
+      "url": "https://www.topky.sk/se/8/TOPKY",
+      "snippet": "TOPKY Šokujúce odhalenia zo života Radoslava Brzobohatého: Nikto netušil, aké tajomstvo skrýval za úsmevom PRAHA - Staršia …"
+    }
+  ]
+}

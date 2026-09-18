@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Ornith-1.5-35B-A3B-3MPER0RR-abliterated-GGUF",
+  "slug": "mradermacher-ornith-1-5-35b-a3b-3mper0rr-abliterated-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Ornith-1.5-35B-A3B-3MPER0RR-abliterated-GGUF",
+  "created_at": "2026-09-17T21:47:36.000Z",
+  "updated_at": "2026-09-18T01:50:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:3MPER0RR/Ornith-1.5-35B-A3B-3MPER0RR-abliterated",
+    "base_model:quantized:3MPER0RR/Ornith-1.5-35B-A3B-3MPER0RR-abliterated",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 238639033568,
+  "storage_human": "238.6 GB",
+  "base_model": "3MPER0RR/Ornith-1.5-35B-A3B-3MPER0RR-abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Grand Stasinda Bukowina Tatrzańska Noclegi Hotelowy Standard",
+      "url": "https://www.grandstasinda.pl/",
+      "snippet": "Zapraszamy na noclegi do naszego nowego ośrodka wypoczynkowego w Bukowinie Tatrzańskiej o hotelowym standardzie. Cisza, …"
+    },
+    {
+      "title": "Oferta & O Nas Grand Stasinda Bukowina Tatrzańska",
+      "url": "https://www.grandstasinda.pl/strony,oferta.html",
+      "snippet": "Komfortowe pokoje z pięknym widokiem na panoramę Tatr, doskonałe wyżywienie, basen wraz z saunami, grotą solną i mniejszy …"
+    },
+    {
+      "title": "STASINDA Bukowina Tatrzańska Noclegi Z Basenem I Wyżywieniem",
+      "url": "https://www.stasinda.pl/",
+      "snippet": "Zapraszamy do naszego ośrodka wypoczynkowego w Bukowinie Tatrzańskiej na noclegi grupy zorganizowane i turystów …"
+    },
+    {
+      "title": "Grand Stasinda Bal Sylwestrowy Animacje Własny Stok Dwa Posiłki …",
+      "url": "https://www.booking.com/hotel/pl/grand-stasinda.pl.html?msockid=0e812f35a0de625409c238e2a14263a9",
+      "snippet": "Obiekt Grand Stasinda Bal Sylwestrowy Animacje Własny Stok Dwa Posiłki Bogaty Bufet Baseny Kręgielnia Grota Sauny Squash …"
+    },
+    {
+      "title": "Hotel Stasinda Bukowina Tatrzańska - oferta, cennik - NaFerie.pl",
+      "url": "https://www.naferie.pl/hotel-polska/hotel-grand-stasinda",
+      "snippet": "Hotel Grand Stasinda – komfort i relaks w Bukowinie Tatrzańskiej. Sprawdź dostępne oferty zakwaterowania i cennik już teraz!"
+    }
+  ]
+}

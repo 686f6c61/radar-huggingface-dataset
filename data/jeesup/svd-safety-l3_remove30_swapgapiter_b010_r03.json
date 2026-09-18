@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l3_remove30_swapgapiter_b010_r03",
+  "slug": "jeesup-svd-safety-l3_remove30_swapgapiter_b010_r03",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l3_remove30_swapgapiter_b010_r03",
+  "created_at": "2026-09-17T23:40:54.000Z",
+  "updated_at": "2026-09-17T23:52:16.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama3",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Meta-Llama-3-8B-Instruct",
+    "base_model:finetune:meta-llama/Meta-Llama-3-8B-Instruct",
+    "license:llama3",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766337,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Meta-Llama-3-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "كيف يمكنني اضافه فيزا فودافون كاش - منتدى تطبيقات Google",
+      "url": "https://support.google.com/googleplay/thread/139756425/%D9%83%D9%8A%D9%81-%D9%8A%D9%85%D9%83%D9%86%D9%86%D9%8A-%D8%A7%D8%B6%D8%A7%D9%81%D9%87-%D9%81%D9%8A%D8%B2%D8%A7-%D9%81%D9%88%D8%AF%D8%A7%D9%81%D9%88%D9%86-%D9%83%D8%A7%D8%B4?hl=ar",
+      "snippet": "على هاتفك أو جهازك اللوحي الذي يعمل بنظام التشغيل Android، افتح تطبيق \"متجر Google Play\" . انتقِل إلى صفحة التفاصيل لتطبيق مدفوع. انقر على السعر وراجِع أذونات التطبيق. أسفل اسم …"
+    },
+    {
+      "title": "Jeesup/svd-safety-l2_remove30_swapgapiter_b010_r03 · Hugging Face",
+      "url": "https://huggingface.co/Jeesup/svd-safety-l2_remove30_swapgapiter_b010_r03",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "حساب Google",
+      "url": "https://myaccount.google.com/payments-and-subscriptions?hl=ar",
+      "snippet": "عند تسجيل الدخول إلى حسابك، يمكنك الاطِّلاع على معلومات الدفع ومعاملاتك ودفعاتك المتكررة وحجوزاتك."
+    },
+    {
+      "title": "العثور على الكلمات الرئيسية المناسبة لحملتك باستخدام \"أداة تخطيط ...",
+      "url": "https://business.google.com/ar-all/ad-tools/keyword-planner/",
+      "snippet": "يمكنك عرض إعلاناتك للعملاء المناسبين باستخدام \"أداة تخطيط الكلمات الرئيسية\" من Google. تعرَّف على كيفية إجراء الأبحاث للعثور على الكلمات الرئيسية المناسبة لحملتك."
+    },
+    {
+      "title": "Google Meet - Online Video Calls, Meetings and Conferencing",
+      "url": "https://meet.google.com/",
+      "snippet": "Real-time meetings by Google. Using your browser, share your video, desktop, and presentations with teammates and customers."
+    }
+  ]
+}

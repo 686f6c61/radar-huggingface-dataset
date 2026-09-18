@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "HorridWeasel/maddie",
+  "slug": "horridweasel-maddie",
+  "author": "HorridWeasel",
+  "url": "https://huggingface.co/HorridWeasel/maddie",
+  "created_at": "2026-09-17T23:01:35.000Z",
+  "updated_at": "2026-09-17T23:03:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 228587728,
+  "storage_human": "229 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bundesliga — Scores, Results & Standings - SportScore",
+      "url": "https://sportscore.com/football/competition/germany/bundesliga/gy0or5jhg6qwzv3/",
+      "snippet": "Follow Bundesliga (Germany): live scores, today's fixtures, recent results and full standings. Updated in real time on SportScore."
+    },
+    {
+      "title": "German Bundesliga Scores - 2026 Season - ESPN",
+      "url": "https://www.espn.com/soccer/scoreboard/_/league/ger.1/bundesliga-de-alemania",
+      "snippet": "29 minutes ago · Live scores for German Bundesliga games on ESPN. Includes box scores, video highlights, play breakdowns and …"
+    },
+    {
+      "title": "Bundesliga Scores - Soccer Match Results - CBS Sports",
+      "url": "https://www.cbssports.com/soccer/bundesliga/scoreboard/",
+      "snippet": "Get the latest Bundesliga scores and live match updates on CBSSports.com. Follow your favorite team's results as they compete to …"
+    },
+    {
+      "title": "Bundesliga | official website",
+      "url": "https://www.bundesliga.com/en/bundesliga",
+      "snippet": "The official Bundesliga website. The latest news, info and stats for clubs in 2026/27 can be found here"
+    },
+    {
+      "title": "Today's German Bundesliga Live Scores, Games, Results | LiveScore",
+      "url": "https://www.livescore.com/en/football/germany/bundesliga/",
+      "snippet": "Real-time scores covering every Bundesliga match, including goals, cards, substitutions, and lineups, are available on this page, …"
+    }
+  ]
+}

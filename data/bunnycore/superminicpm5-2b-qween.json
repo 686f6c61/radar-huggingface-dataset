@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "id": "bunnycore/SuperMiniCPM5-2B-Qween",
+  "slug": "bunnycore-superminicpm5-2b-qween",
+  "author": "bunnycore",
+  "url": "https://huggingface.co/bunnycore/SuperMiniCPM5-2B-Qween",
+  "created_at": "2026-09-17T22:36:04.000Z",
+  "updated_at": "2026-09-17T22:36:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama",
+    "llama.cpp",
+    "llama-cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 2679710592,
+  "storage_human": "2.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gmail",
+      "url": "https://mail.google.com/mail?hl=en",
+      "snippet": "We would like to show you a description here but the site won’t allow us."
+    }
+  ]
+}

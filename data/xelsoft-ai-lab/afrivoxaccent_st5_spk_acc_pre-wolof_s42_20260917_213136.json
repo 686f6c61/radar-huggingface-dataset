@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "xelsoft-ai-lab/AfriVoxAccent_ST5_spk_acc_pre-wolof_s42_20260917_213136",
+  "slug": "xelsoft-ai-lab-afrivoxaccent_st5_spk_acc_pre-wolof_s42_20260917_213136",
+  "author": "xelsoft-ai-lab",
+  "url": "https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_ST5_spk_acc_pre-wolof_s42_20260917_213136",
+  "created_at": "2026-09-17T23:03:51.000Z",
+  "updated_at": "2026-09-17T23:04:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "speecht5",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 144439266,
+  "parameters_human": "144.4M",
+  "storage_bytes": 578049458,
+  "storage_human": "578 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Casino en Ligne France: Top 10 Casino en Ligne Fiable 2026",
+      "url": "https://casino-en-ligne-france.org/",
+      "snippet": "Sep 3, 2026 · Découvrez le classement 2026 des meilleurs casinos en ligne en France ! Avis experts, notes fiables et bonus exclusifs …"
+    },
+    {
+      "title": "Casino en ligne en France : légalité et vérifications 2026",
+      "url": "https://gamblingmeter.net/casinos-en-ligne/",
+      "snippet": "Sep 1, 2026 · Casino en ligne en France : ce que dit l’ANJ, quels jeux sont autorisés, comment vérifier un opérateur et reconnaître …"
+    },
+    {
+      "title": "Meilleur casino en ligne France 2026 : top 10 sites fiables",
+      "url": "https://casinoenlignefrance.info/",
+      "snippet": "Nous avons comparé les plateformes accessibles depuis la France sur ce qui se vérifie (licence, taux de redistribution, délais et …"
+    },
+    {
+      "title": "Casino en Ligne France | Meilleur casino en ligne fiable 2026",
+      "url": "https://www.franceattractive.com/casino-en-ligne/",
+      "snippet": "Sep 8, 2026 · Découvrez quel est le meilleur casino en ligne France en 2026 ! Lisez notre classement des casinos en ligne fiable et …"
+    },
+    {
+      "title": "Meilleur casino en ligne France 2026 - Top sites fiables",
+      "url": "https://www.cardplayer.com/fr/casino-en-ligne",
+      "snippet": "Sep 7, 2026 · Découvrez ici notre test complet des meilleurs casinos en ligne en France, dans lequel nous comparons bonus, …"
+    }
+  ]
+}

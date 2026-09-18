@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "GL3MON/qwen3-vl-2b-medical-pmcvqa-sft-merged",
+  "slug": "gl3mon-qwen3-vl-2b-medical-pmcvqa-sft-merged",
+  "author": "GL3MON",
+  "url": "https://huggingface.co/GL3MON/qwen3-vl-2b-medical-pmcvqa-sft-merged",
+  "created_at": "2026-09-18T02:34:20.000Z",
+  "updated_at": "2026-09-18T02:36:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_vl",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:GL3MON/qwen3-vl-2b-medical-sft",
+    "base_model:finetune:GL3MON/qwen3-vl-2b-medical-sft",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": 2127532032,
+  "parameters_human": "2.13B",
+  "storage_bytes": 4266563233,
+  "storage_human": "4.3 GB",
+  "base_model": "GL3MON/qwen3-vl-2b-medical-sft",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Economic Times",
+      "url": "https://economictimes.indiatimes.com/",
+      "snippet": "6 hours ago · Business news today: Read India Business News Live. Latest Business news and updates on Finance, share market, …"
+    },
+    {
+      "title": "Share Market Live, Share Market Today: Latest ... - The Economic Times",
+      "url": "https://economictimes.indiatimes.com/markets",
+      "snippet": "3 hours ago · Share Market Today | Share Market Live updates: Get all the Latest Share Market News and Updates on The …"
+    },
+    {
+      "title": "Telecom News | Latest Telecom Industry News, Information and …",
+      "url": "https://telecom.economictimes.indiatimes.com/",
+      "snippet": "Find the latest telecom Industry news, online Industry information, views & updates. Get online news from the Indian Telecom …"
+    },
+    {
+      "title": "Energy News | Latest Energy Industry Information and Updates: ET ...",
+      "url": "https://energy.economictimes.indiatimes.com/",
+      "snippet": "Find the latest energy news, views and updates from all top sources for the Indian Energy industry."
+    },
+    {
+      "title": "Auto News | Latest Automobiles & Auto Industry Information and …",
+      "url": "https://auto.economictimes.indiatimes.com/",
+      "snippet": "Find the latest automobile Auto Insight, News & Articles from all top sources for the Indian Auto industry on ET Auto."
+    }
+  ]
+}

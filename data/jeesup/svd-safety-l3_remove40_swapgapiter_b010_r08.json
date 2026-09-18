@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l3_remove40_swapgapiter_b010_r08",
+  "slug": "jeesup-svd-safety-l3_remove40_swapgapiter_b010_r08",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l3_remove40_swapgapiter_b010_r08",
+  "created_at": "2026-09-18T02:11:54.000Z",
+  "updated_at": "2026-09-18T02:17:40.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama3",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Meta-Llama-3-8B-Instruct",
+    "base_model:finetune:meta-llama/Meta-Llama-3-8B-Instruct",
+    "license:llama3",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 174,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766337,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Meta-Llama-3-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "C# Taschenrechner: Einige typische Anfängerfragen | C++ Community",
+      "url": "https://www.c-plusplus.net/forum/topic/302031/c-taschenrechner-einige-typische-anf%C3%A4ngerfragen",
+      "snippet": "Jul 16, 2013 · Hallo :), ich bringe mir im Moment C# bei und möchte einen Taschenrechner programmieren. Das sieht bis jetzt so aus: …"
+    },
+    {
+      "title": "Komplexer Taschenrechner - C++ Community",
+      "url": "https://www.c-plusplus.net/forum/topic/211205/komplexer-taschenrechner",
+      "snippet": "Der \"wissenschaftliche Taschenrechner\" kann keine Spezialisierung des \"normalen Taschenrechners\" sein, denn Spezialisierung …"
+    },
+    {
+      "title": "Probleme Taschenrechner - C++ Community",
+      "url": "https://www.c-plusplus.net/forum/topic/351829/probleme-taschenrechner",
+      "snippet": "Hallo an alle. Ich bin absoluter Neuling im Fach Programmieren. Und bin noch nicht weiter als Kontrollstrukturen...will das richtig …"
+    },
+    {
+      "title": "C# Taschenrechner - C++ Community",
+      "url": "https://www.c-plusplus.net/forum/topic/297706/c-taschenrechner",
+      "snippet": "Hay an alle Programmierer da draußen, ich habe mich die letzten zwei Tage mit C# auseinander gesetzt und einen Taschenrechner …"
+    },
+    {
+      "title": "c++ Taschenrechner | C++ Community",
+      "url": "https://www.c-plusplus.net/forum/topic/349646/c-taschenrechner",
+      "snippet": "Jul 20, 2019 · Hallo ich bin hier neu in der Community und habe einen Taschenrechner programmiert. Da ich noch nicht so viel …"
+    }
+  ]
+}

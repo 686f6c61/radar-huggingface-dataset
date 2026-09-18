@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "chrismattmann/pantogloss-500-en-v6",
+  "slug": "chrismattmann-pantogloss-500-en-v6",
+  "author": "chrismattmann",
+  "url": "https://huggingface.co/chrismattmann/pantogloss-500-en-v6",
+  "created_at": "2026-09-17T20:26:36.000Z",
+  "updated_at": "2026-09-17T20:26:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "pantogloss",
+  "languages": [],
+  "tags": [
+    "pantogloss",
+    "tensorflow",
+    "keras",
+    "many-to-english",
+    "fine-tuned",
+    "translation",
+    "base_model:chrismattmann/pantogloss-500-en",
+    "base_model:finetune:chrismattmann/pantogloss-500-en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2178833235,
+  "storage_human": "2.2 GB",
+  "base_model": "chrismattmann/pantogloss-500-en",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vérifiez la variable d'environnement TEMP - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-3790286-verifiez-la-variable-d-environnement-temp",
+      "snippet": "Résumé de la discussion Le message d'erreur « impossible de créer le fichier de travail. Vérifiez la variable d’environnement TEMP » …"
+    },
+    {
+      "title": "Où se trouve dossier temporaire [Résolu] - Forum Windows",
+      "url": "https://forums.commentcamarche.net/forum/affich-1549534-ou-se-trouve-dossier-temporaire",
+      "snippet": "Voici une façon très simple d'accéder au dossier des fichiers temporaires quelle que soit la version de Windows utilisée : Clique sur …"
+    },
+    {
+      "title": "TechNet",
+      "url": "https://social.technet.microsoft.com/",
+      "snippet": ""
+    },
+    {
+      "title": "How to Update Address Lists in Exchange 2016 to Exchange Online",
+      "url": "https://social.technet.microsoft.com/Forums/en-US/f3c6a21d-500e-40f2-b945-629fbde21b1a/how-to-update-address-lists-in-exchange-2016-to-exchange-online",
+      "snippet": "I have Exchange Server 2016, and Hybrid Configuration to Office 365. I want to recreate the Address Lists to clear cache."
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://www.answers.microsoft.com/ja-jp/windows/forum/all/ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¼ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â«ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¨ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¨ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â­ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¥ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â®ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡/9804990c-60c8-440c-b1ab-2a0a01c8a749",
+      "snippet": ""
+    }
+  ]
+}

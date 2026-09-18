@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l3_remove40_swapgapiter_b010_r07",
+  "slug": "jeesup-svd-safety-l3_remove40_swapgapiter_b010_r07",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l3_remove40_swapgapiter_b010_r07",
+  "created_at": "2026-09-18T01:59:54.000Z",
+  "updated_at": "2026-09-18T02:08:04.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama3",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Meta-Llama-3-8B-Instruct",
+    "base_model:finetune:meta-llama/Meta-Llama-3-8B-Instruct",
+    "license:llama3",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 178,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766337,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Meta-Llama-3-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tipico Sportwetten: Sicher online wetten & bis zu 100€ Bonus",
+      "url": "https://sports.tipico.de/de",
+      "snippet": "Tipico steht für Sportwetten in Deutschland. Ob im Shop vor Ort oder bequem per Sportwetten-App: Wir stehen für Vertrauen und …"
+    },
+    {
+      "title": "Tipico Sportwetten",
+      "url": "https://sports.tipico.at/de/live/default",
+      "snippet": "Live Wetten bei Tipico. Top Live Sportwetten Quoten zu allen beliebten Sportarten Jetzt deine Livewetten abgeben!"
+    },
+    {
+      "title": "Tipico Sportwetten",
+      "url": "https://sports.tipico.com/de",
+      "snippet": "Online Sportwetten bei Tipico Deutschland Live-Wetten, Top-Wettquoten & Wettprogramm Jetzt anmelden & 100€ Neukundenbonus …"
+    },
+    {
+      "title": "Tipico Sportwetten",
+      "url": "https://sports.tipico.com/en",
+      "snippet": "Bet online with Tipico! 100€ welcome bonus live betting the best odds amazing sportsbook offer top customer service"
+    },
+    {
+      "title": "Fußball Live Wetten - Fussballwetten mit live Quoten | Tipico",
+      "url": "https://sports.tipico.de/de/live/fussball",
+      "snippet": "Egal ob du am Wochenende die Bundesliga heute live oder unter der Woche die Champions League live verfolgst, du kannst bei …"
+    }
+  ]
+}

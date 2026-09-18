@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "MagistrTheOne/NULLXES-SHINRA-4B-SMOKE",
+  "slug": "magistrtheone-nullxes-shinra-4b-smoke",
+  "author": "MagistrTheOne",
+  "url": "https://huggingface.co/MagistrTheOne/NULLXES-SHINRA-4B-SMOKE",
+  "created_at": "2026-09-18T02:41:37.000Z",
+  "updated_at": "2026-09-18T02:43:27.000Z",
+  "license": "nullxes-research",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ru",
+    "de",
+    "fr",
+    "es",
+    "zh",
+    "ja",
+    "ko",
+    "ar"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "nullxes_shinra",
+    "text-generation",
+    "nullxes",
+    "shinra",
+    "causal-lm",
+    "decoder-only",
+    "instruction-tuned",
+    "conversational",
+    "custom_code",
+    "en",
+    "ru",
+    "de",
+    "fr",
+    "es",
+    "zh",
+    "ja",
+    "ko",
+    "ar",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 81,
+  "trending_score": 0,
+  "parameters": 3926076416,
+  "parameters_human": "3.93B",
+  "storage_bytes": 7852193640,
+  "storage_human": "7.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dalles de Faux-Plafonds - Plafond Suspendu | SFIC",
+      "url": "https://www.sfic.com/c/plafonds-mineraux/x2snv2_dig_2026697",
+      "snippet": "Posées sur l'ossature T15 ou T24, les dalles de faux-plafond permettent une mise en oeuvre facile et rapide pour le plafiste et …"
+    },
+    {
+      "title": "Dalles de Faux-Plafonds - Plafond Suspendu | SFIC - Page 1",
+      "url": "https://www.sfic.com/c/plafonds-mineraux/x2snv2_dig_2026697/page-1",
+      "snippet": "Posées sur l'ossature T15 ou T24, les dalles de faux-plafond permettent une mise en oeuvre facile et rapide pour le plafiste et …"
+    },
+    {
+      "title": "Plafonds suspendus - GEDIMAT",
+      "url": "https://www.gedimat.fr/3-isolation-cloison/18-plafonds/75-plafonds-suspendus",
+      "snippet": "Découvrez les produits du rayon Plafonds suspendus de GEDIMAT Matériaux et Bricolage. Avec Gedimat, réussissez vos travaux !"
+    },
+    {
+      "title": "Dalle de plafond acoustique Minerval A 12 - bord droit A - blanc ...",
+      "url": "https://www.pointp.fr/p/platre-isolation-ite/dalle-de-plafond-minerval-a-blanc-epaisseur-12-mm-1200x600-mm-A6942792",
+      "snippet": "La dalle de plafond Minerval A 12 de Eurocoustic est un revêtement acoustique en laine de verre recouvert d'un voile de verre sur les …"
+    },
+    {
+      "title": "Plafond suspendu dalles en fibre minérale | Langlois Sobreti",
+      "url": "https://www.langlois-sobreti.fr/techniques/plafonds-suspendus/plafond-suspendu-dalles-minerale/",
+      "snippet": "Conçus pour être posés sur une ossature plafond apparente ou invisible, le plafond suspendu dalles en fibre minérale répond tant à …"
+    }
+  ]
+}

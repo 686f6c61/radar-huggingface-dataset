@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "LNTTushar/perception-slm-caption",
+  "slug": "lnttushar-perception-slm-caption",
+  "author": "LNTTushar",
+  "url": "https://huggingface.co/LNTTushar/perception-slm-caption",
+  "created_at": "2026-09-17T21:26:32.000Z",
+  "updated_at": "2026-09-17T21:26:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "perception-slm",
+  "languages": [],
+  "tags": [
+    "perception-slm",
+    "multimodal",
+    "image-understanding",
+    "from-scratch",
+    "vlm",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 30603977,
+  "storage_human": "31 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed/homepage",
+      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new …"
+    },
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/youtube",
+      "snippet": "Welcome to the official YouTube channel – a home for the biggest moments, the smallest obsessions, and everything in between. …"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/@____-_-_-",
+      "snippet": "Share your videos with friends, family, and the world"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/@---_-_",
+      "snippet": "Discover and enjoy a variety of videos, music, and live performances on YouTube."
+    }
+  ]
+}

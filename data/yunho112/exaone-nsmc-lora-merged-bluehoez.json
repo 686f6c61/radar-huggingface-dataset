@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Yunho112/exaone-nsmc-lora-merged-bluehoez",
+  "slug": "yunho112-exaone-nsmc-lora-merged-bluehoez",
+  "author": "Yunho112",
+  "url": "https://huggingface.co/Yunho112/exaone-nsmc-lora-merged-bluehoez",
+  "created_at": "2026-09-18T01:19:56.000Z",
+  "updated_at": "2026-09-18T01:20:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "exaone4",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1279391488,
+  "parameters_human": "1.28B",
+  "storage_bytes": 2558821288,
+  "storage_human": "2.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pizzeria Galejan i Örebro | Köp bolagsdata - Ratsit",
+      "url": "https://www.ratsit.se/850402SSFZ00001-Pizzeria_Galejan",
+      "snippet": "1 day ago · Pizzeria Galejan, Ekersgatan 11, 703 42 Örebro. Ansvarig Ali Acar 41 år. På Ratsit hittar du Telefonnummer Adress …"
+    },
+    {
+      "title": "Ekersgatan 11 Örebro län, Örebro - hitta.se",
+      "url": "https://www.hitta.se/%C3%B6rebro+l%C3%A4n/%C3%B6rebro/ekersgatan+11/omr%C3%A5de/59.27655:15.204914",
+      "snippet": "Adress i Örebro Olaus Petri i Örebro i Örebro län. Se företag skrivna på adressen och vilka personer som bor på Ekersgatan 11. Vill …"
+    },
+    {
+      "title": "Pizzeria Gelejan - Pizzerior i Örebro Ekersgatan 11, 703 42, Örebro",
+      "url": "https://firmania.se/orebro/pizzeria-gelejan-59271",
+      "snippet": "Hitta företagskontaktinformation för Pizzeria Gelejan i Ekersgatan 11, 703 42, Örebro Örebro inklusive telefonnummer ☎, adress, ⌚ …"
+    },
+    {
+      "title": "Ekersgatan 11 70342 Örebro - Karta och vägbeskrivning | Eniro.se",
+      "url": "https://www.eniro.se/kartor/s%C3%B6k/ekersgatan-11-70342-%C3%B6rebro?t=geos",
+      "snippet": "Upptäck Ekersgatan 11 70342 Örebro med våra kartor. Utforska lokala företag, tomtgränser, historiska flygfoton, cykelvägar, …"
+    },
+    {
+      "title": "Pizzeria Galejan Örebro – pizza & meny | Restrate",
+      "url": "https://www.restrate.se/restaurant/pizzeria-galejan-orebro",
+      "snippet": "Se meny, öppettider och betyg för Pizzeria Galejan i Örebro. pizza. Google-betyg 4.2/5 (183 omdömen). Meny med 106 rätter. …"
+    }
+  ]
+}

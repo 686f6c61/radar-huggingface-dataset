@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "cyberviser/openmythos-security-v0.2",
+  "slug": "cyberviser-openmythos-security-v0-2",
+  "author": "cyberviser",
+  "url": "https://huggingface.co/cyberviser/openmythos-security-v0.2",
+  "created_at": "2026-09-18T02:18:30.000Z",
+  "updated_at": "2026-09-18T02:23:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "security",
+    "openmythos",
+    "recurrent-transformer",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 131996237,
+  "storage_human": "132 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cennik usług krawieckich - Pracownia krawiecka Turkusowy Zamek",
+      "url": "https://www.turkusowyzamek.pl/pl/cennik-uslug-krawieckich",
+      "snippet": "ZLECENIA NIETYPOWE – wycena USŁUGA EKSPRESOWA – do 24 godzin, cena usługi + 40%. Reszta usług w/g rozliczenia …"
+    },
+    {
+      "title": "Krawcowa w pobliżu - usługi krawieckie w okolicy",
+      "url": "https://serwisuslug.pl/krawcowa-w-poblizu/",
+      "snippet": "Krawcowa z Twojej okolicy. Gdzie ją można znaleźć? Zobacz likalizacje, w jakich znajdziesz krawcowe z Twojego miasta."
+    },
+    {
+      "title": "Dla Ciebie wszystko - usługi krawieckie - w kategorii Usługi - OLX",
+      "url": "https://www.olx.pl/uslugi/q-us%C5%82ugi%20krawieckie/",
+      "snippet": "Skorzystaj z największego serwisu ogłoszeniowego w Polsce! usługi krawieckie - kupuj lub sprzedawaj jeszcze wygodniej w kategorii …"
+    },
+    {
+      "title": "Lista sprawdzonych firm • Usługi krawieckie • Krawiec • pkt.pl",
+      "url": "https://www.pkt.pl/szukaj/us%C5%82ugi-krawieckie",
+      "snippet": "Jun 16, 2026 · Oferujemy kompleksowe usługi krawieckie , które obejmują dostarczanie pięknych, trwałych i dopasowanych do …"
+    },
+    {
+      "title": "Usługi krawieckie online - Pracownia krawiecka Odlotowe Krawcowe",
+      "url": "https://odlotowekrawcowe.pl/",
+      "snippet": "Nasza pracownia krawiecka online chętnie odpowie na wszelkie Twoje pytania, a także doradzi, jakie przeróbki będą w konkretnym …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "rubatotree/so101_classify_the_blocks_act_512",
+  "slug": "rubatotree-so101_classify_the_blocks_act_512",
+  "author": "rubatotree",
+  "url": "https://huggingface.co/rubatotree/so101_classify_the_blocks_act_512",
+  "created_at": "2026-09-17T22:32:22.000Z",
+  "updated_at": "2026-09-17T22:33:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:rubatotree/classify-blocks-512-local",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714568,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Caitlyn Build with Highest Winrate - LoL Runes, Items, and Skill Order",
+      "url": "https://u.gg/lol/champions/caitlyn/build",
+      "snippet": "Caitlyn with U.GG's best data for every build. The highest win rate Caitlyn build, from rune set to skill order to item path, for ADC. LoL …"
+    },
+    {
+      "title": "Caitlyn Build Guide - Runes, Items & More - Patch 26.18",
+      "url": "https://mobalytics.gg/lol/champions/caitlyn/build",
+      "snippet": "Consider picking Caitlyn into these matches to increase your chance to win a game. These are the most popular Bot matchups that …"
+    },
+    {
+      "title": "Caitlyn Build - Highest Win Rate Builds, Runes, and Items",
+      "url": "https://www.op.gg/lol/champions/caitlyn/build",
+      "snippet": "Caitlyn Build with the highest win rate. Runes, items, and skill build in patch 16.18. Caitlyn build recommendations and guides."
+    },
+    {
+      "title": "Caitlyn Build Guides :: League of Legends Strategy Builds ... - MOBAFire",
+      "url": "https://www.mobafire.com/league-of-legends/champion/caitlyn-67",
+      "snippet": "Sep 10, 2026 · Build guides for Caitlyn on MOBAFire. Learn what runes and items make the best Caitlyn build in League of Legends …"
+    },
+    {
+      "title": "Caitlyn Bot Build - Runen, Items & Skill Order | Patch 26.17 | LoL Stats",
+      "url": "https://lolstats.gg/de/champions/caitlyn/bot",
+      "snippet": "Mit einer Pickrate von 20,4 Prozent und einer Banrate von 30,3 Prozent gehört Caitlyn zu den einflussreichsten Champions der …"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "incoai/Qwen3.8-27B-Splash",
+  "slug": "incoai-qwen3-8-27b-splash",
+  "author": "incoai",
+  "url": "https://huggingface.co/incoai/Qwen3.8-27B-Splash",
+  "created_at": "2026-09-17T22:23:59.000Z",
+  "updated_at": "2026-09-18T21:51:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "splash",
+  "languages": [],
+  "tags": [
+    "splash",
+    "apple-silicon",
+    "metal",
+    "local-inference",
+    "dflash2",
+    "speculative-decoding",
+    "qwen3.8",
+    "4-bit",
+    "text-generation",
+    "base_model:incoai/Qwen3.8-27B-DFlash2",
+    "base_model:quantized:incoai/Qwen3.8-27B-DFlash2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17375920973,
+  "storage_human": "17.4 GB",
+  "base_model": "mlx-community/Qwen3.8-27B-4bit, incoai/Qwen3.8-27B-DFlash2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Open an International Bank Account - HSBC International",
+      "url": "https://internationalservices.hsbc.com/overseas-account-opening/",
+      "snippet": "Overseas bank account opening with HSBC international banking services in more than 30 destinations around the world. For …"
+    },
+    {
+      "title": "Top 4 international banks when going abroad - Wise",
+      "url": "https://wise.com/us/blog/international-banks",
+      "snippet": "Aug 28, 2026 · HSBC USA⁴ now focuses on Premier (Wealth & International) banking for higher-net-worth customers. Personal …"
+    },
+    {
+      "title": "How International Banking Works - HowStuffWorks",
+      "url": "https://money.howstuffworks.com/personal-finance/banking/international-banking.htm",
+      "snippet": "According to OCRA Worldwide -- an organization that matches people and companies to international banking -- international banks …"
+    },
+    {
+      "title": "International Banking | Features and Benefits of International Banking",
+      "url": "https://efinancemanagement.com/international-financial-management/international-banking",
+      "snippet": "Jun 25, 2022 · International banking is like any other banking service, but it takes place across different nations or internationally. To …"
+    },
+    {
+      "title": "How International Banking Works: A Complete Guide | amnis",
+      "url": "https://amnistreasury.com/blog/how-international-banking-works/",
+      "snippet": "Jul 17, 2024 · Learn how international banking works, including correspondent banks, SWIFT network challenges, and cheap …"
+    }
+  ]
+}

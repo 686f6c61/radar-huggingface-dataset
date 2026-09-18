@@ -1,0 +1,104 @@
+{
+  "schema": 1,
+  "id": "pb09204048/Qwen3-4B-IF-RL-Specialist",
+  "slug": "pb09204048-qwen3-4b-if-rl-specialist",
+  "author": "pb09204048",
+  "url": "https://huggingface.co/pb09204048/Qwen3-4B-IF-RL-Specialist",
+  "created_at": "2026-09-17T22:31:59.000Z",
+  "updated_at": "2026-09-17T22:47:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "reinforcement-learning",
+    "grpo",
+    "lora-merged",
+    "mopd",
+    "multi-teacher-on-policy-distillation",
+    "instruction-following",
+    "conversational",
+    "dataset:nvidia/Nemotron-Cascade-2-RL-data",
+    "arxiv:2606.30406",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:finetune:Qwen/Qwen3-4B",
+    "license:apache-2.0",
+    "model-index",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4411424256,
+  "parameters_human": "4.41B",
+  "storage_bytes": 8834317185,
+  "storage_human": "8.8 GB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text Generation",
+      "dataset": "AIME24 (30 prompts, 4 samples)",
+      "metric": "Pass@1 (%)",
+      "value": 18.333333
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "LCB v5 frozen test subset (279 prompts, 4 samples)",
+      "metric": "Pass@1 (%)",
+      "value": 15.681004
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "IFEval (541 prompts; literal punctuation correction)",
+      "metric": "Prompt strict accuracy (%)",
+      "value": 84.473198
+    },
+    {
+      "task": "Text Generation",
+      "dataset": "IFBench (300 prompts)",
+      "metric": "Prompt strict accuracy (%)",
+      "value": 43.666667
+    }
+  ],
+  "sources": [
+    {
+      "title": "Adela - Sezonul 1, Episodul 18 - serialeromanesti.ro",
+      "url": "https://serialeromanesti.ro/adela/adela_s1_ep18.php",
+      "snippet": "Adela – Sezonul 1, Episoadele 35 și 36 de Joi, 13 Mai 2021 Întoarce-te la lista cu episoade"
+    },
+    {
+      "title": "Adela, episodul 18. Mihai este împușcat! | Video | Antena 1",
+      "url": "https://a1.ro/adela/video/adela-episodul-18-mihai-este-impuscat-id1045814.html",
+      "snippet": "Mar 11, 2021 · În serialul Adela, episodul 18, Mihai (Alecsandru Dunaev) a sărit în ajutorul lui Paul Andronic (Mihai Calin) și a fost …"
+    },
+    {
+      "title": "Adela – Tot ce nu se vede - Sezonul 1 | Episodul 18 - AntenaPlay",
+      "url": "https://antenaplay.ro/adela-tot-ce-nu-se-vede-sezonul-1-episodul-18/sXqk74prifC",
+      "snippet": "May 13, 2021 · Urmareste online Adela – Tot ce nu se vede - Sezonul 1 | Episodul 18 de Joi, 13 Mai 2021. Editii integrale disponibile …"
+    },
+    {
+      "title": "Adela Sezonul 1 Episodul 18 Online Integral - serialeromanesti.net",
+      "url": "https://serialeromanesti.net/adela-sezonul-1-episodul-18-online-integral/",
+      "snippet": "Două surori, Adela și Andreea, care au împărţit totul, află că una din ele este în realitate fata unui om bogat și că destinul ei este …"
+    },
+    {
+      "title": "Adela, episodul 18. Adela și Mihai, primul sărut - Antena 1",
+      "url": "https://a1.ro/adela/video/adela-episodul-18-adela-si-mihai-primul-sarut-id1045815.html",
+      "snippet": "Mar 11, 2021 · În serialul Adela, episodul 18, Adela (Mara Oprea) și Mihai (Alecsandru Dunaev) au parte de primul sărut. Reacția …"
+    }
+  ]
+}

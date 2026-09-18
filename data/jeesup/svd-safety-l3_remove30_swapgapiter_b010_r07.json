@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l3_remove30_swapgapiter_b010_r07",
+  "slug": "jeesup-svd-safety-l3_remove30_swapgapiter_b010_r07",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l3_remove30_swapgapiter_b010_r07",
+  "created_at": "2026-09-18T00:16:54.000Z",
+  "updated_at": "2026-09-18T00:30:20.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama3",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Meta-Llama-3-8B-Instruct",
+    "base_model:finetune:meta-llama/Meta-Llama-3-8B-Instruct",
+    "license:llama3",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766337,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Meta-Llama-3-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mapa de Suiza: mapa offline y mapa detallado de Suiza",
+      "url": "https://es.switzerlandmap360.com/mapa-de-suiza",
+      "snippet": "El mapa de Suiza es descargable en PDF, imprimible y gratuito. Extendiéndose por el norte y el sur de los Alpes, Suiza abarca una …"
+    },
+    {
+      "title": "Mapa de Suiza - Espanol mapsofworld",
+      "url": "https://espanol.mapsofworld.com/continentes/europa/mapa-de-suiza.html",
+      "snippet": "Jan 18, 2023 · El colorido mapa de Suiza cuenta con los límites del cantón y sus capitales. El mapa marca la frontera internacional …"
+    },
+    {
+      "title": "Mapa de Suiza: cantones, relieve, ferrocarril e idiomas",
+      "url": "https://www.paises.net/europa/suiza/mapa/",
+      "snippet": "Consulta mapas de Suiza en español y alta resolución: cantones, relieve físico de los Alpes, red ferroviaria y zonas lingüísticas, con …"
+    },
+    {
+      "title": "Mapas De Suiza - Proyecto Viajero",
+      "url": "https://proyectoviajero.com/mapas-de-suiza/",
+      "snippet": "Nov 5, 2024 · Mapas de Suiza - Mapa de Suiza con las ciudades y poblaciones más importantes, parques nacionales, ríos y …"
+    },
+    {
+      "title": "Mapa de Suiza | Suiza Turismo - Switzerland Tourism",
+      "url": "https://www.myswitzerland.com/es/map",
+      "snippet": "El mapa en línea de Suiza le muestra lugares de vacaciones, hoteles, webcams, facilitando los viajes en Suiza y en su lugar de …"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "michaelchenkj/datadecide-dclm-530m-53b",
+  "slug": "michaelchenkj-datadecide-dclm-530m-53b",
+  "author": "michaelchenkj",
+  "url": "https://huggingface.co/michaelchenkj/datadecide-dclm-530m-53b",
+  "created_at": "2026-09-18T00:19:12.000Z",
+  "updated_at": "2026-09-18T00:26:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "olmo",
+    "datadecide",
+    "dclm",
+    "language-model",
+    "dataset:allenai/DataDecide-data-recipes",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 77649508771,
+  "storage_human": "77.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "L’abstention électorale : causes et conséquences pour la démocratie",
+      "url": "https://aufutur.fr/revisions/hggsp/labstention-electorale-causes-et-consequences-pour-la-democratie/",
+      "snippet": "Pour y répondre, il convient d’analyser les causes de l’abstention et d’en mesurer les conséquences politiques et démocratiques. On …"
+    },
+    {
+      "title": "Abstention électorale : \"un phénomène massif, durable et inquiétant\"",
+      "url": "https://www.vie-publique.fr/en-bref/298964-abstention-electorale-un-phenomene-massif-durable-et-inquietant",
+      "snippet": "Jun 12, 2025 · Constatant une érosion de la participation électorale en France, une commission d'enquête parlementaire a cherché …"
+    },
+    {
+      "title": "La démocratie représentative et ses défis : abstention, crise de ...",
+      "url": "https://cours-de-droit.net/les-difficultes-des-democraties-abstention-crise-de-confiance/",
+      "snippet": "Jan 30, 2026 · L’abstention massive lors de scrutins déterminants est politiquement problématique : elle fragilise la représentativité et …"
+    },
+    {
+      "title": "Céline Braconnier | Cairn.info",
+      "url": "https://shs.cairn.info/publications-de-celine-braconnier--27311?lang=fr",
+      "snippet": "Les dynamiques du décrochage civique illustrées par la hausse de l’abstention aux scrutins nationaux"
+    },
+    {
+      "title": "Déterminants de la participation électorale et implications politiques ...",
+      "url": "https://hal.science/hal-05060694v2",
+      "snippet": "En rassemblant les analyses théoriques et empiriques, cet article offre une vue d’ensemble du débat actuel sur l’abstention et ses …"
+    }
+  ]
+}

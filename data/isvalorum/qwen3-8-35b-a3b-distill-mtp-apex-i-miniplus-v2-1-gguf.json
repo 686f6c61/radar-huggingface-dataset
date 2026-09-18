@@ -1,0 +1,105 @@
+{
+  "schema": 1,
+  "id": "IsValorum/Qwen3.8-35B-A3B-Distill-MTP-APEX-I-MiniPlus-V2.1-GGUF",
+  "slug": "isvalorum-qwen3-8-35b-a3b-distill-mtp-apex-i-miniplus-v2-1-gguf",
+  "author": "IsValorum",
+  "url": "https://huggingface.co/IsValorum/Qwen3.8-35B-A3B-Distill-MTP-APEX-I-MiniPlus-V2.1-GGUF",
+  "created_at": "2026-09-17T21:58:19.000Z",
+  "updated_at": "2026-09-21T20:09:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh",
+    "es",
+    "fr",
+    "de",
+    "pt",
+    "it",
+    "ru",
+    "ja",
+    "ko",
+    "vi",
+    "th",
+    "ar"
+  ],
+  "tags": [
+    "gguf",
+    "quantized",
+    "quantization",
+    "apex",
+    "apex-quant",
+    "custom-quantization",
+    "unsloth-studio",
+    "moe",
+    "reasoning",
+    "llama.cpp",
+    "qwen35moe",
+    "text-generation",
+    "en",
+    "zh",
+    "es",
+    "fr",
+    "de",
+    "pt",
+    "it",
+    "ru",
+    "ja",
+    "ko",
+    "vi",
+    "th",
+    "ar",
+    "base_model:empero-ai/Qwen3.8-35B-A3B-Distill",
+    "base_model:quantized:empero-ai/Qwen3.8-35B-A3B-Distill",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 5,
+  "downloads_30d": 3184,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 17356146176,
+  "storage_human": "17.4 GB",
+  "base_model": "empero-ai/Qwen3.8-35B-A3B-Distill",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chocó | Unidad para las Víctimas",
+      "url": "https://portalhistorico.unidadvictimas.gov.co/es/direcciones-territoriales/choc%C3%B3",
+      "snippet": "Políticas de privacidad y protección de datos personales. Aviso de privacidad. Teléfono conmutador: +57 (601) 426 11 11. Correo …"
+    },
+    {
+      "title": "Contáctenos | Unidad para las Víctimas",
+      "url": "https://www.unidadvictimas.gov.co/contactenos/",
+      "snippet": "El correo electrónico para notificaciones judiciales es: notificaciones.juridicauariv@unidadvictimas.gov.co."
+    },
+    {
+      "title": "Notificaciones | Unidad para las Víctimas",
+      "url": "https://www.unidadvictimas.gov.co/notificaciones/",
+      "snippet": "Con el propósito de garantizar este derecho, se han desarrollado estrategias que han permitido el acercamiento a los declarantes en …"
+    },
+    {
+      "title": "Contáctenos | Unidad para las Víctimas",
+      "url": "https://portalhistorico.unidadvictimas.gov.co/es/contactenos/17",
+      "snippet": "El correo electrónico para notificaciones judiciales es: notificaciones.juridicauariv@unidadvictimas.gov.co."
+    },
+    {
+      "title": "Contáctenos - Chocó - Rama Judicial",
+      "url": "https://www.ramajudicial.gov.co/web/choco/contactenos",
+      "snippet": "Acceda a su correo electrónico institucional (Servidores Judiciales) Correo electrónico institucional: info@cendoj.ramajudicial.gov.co …"
+    }
+  ]
+}

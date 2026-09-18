@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "g-assismoraes/DeltaP2S-Gemma7B-DeltaP2S-CodeGemma2B-Code-S13-a025",
+  "slug": "g-assismoraes-deltap2s-gemma7b-deltap2s-codegemma2b-code-s13-a025",
+  "author": "g-assismoraes",
+  "url": "https://huggingface.co/g-assismoraes/DeltaP2S-Gemma7B-DeltaP2S-CodeGemma2B-Code-S13-a025",
+  "created_at": "2026-09-18T00:33:42.000Z",
+  "updated_at": "2026-09-18T00:34:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma",
+    "text-generation",
+    "delta-p2s",
+    "pen2sword",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9324112896,
+  "parameters_human": "9.32B",
+  "storage_bytes": 18686852276,
+  "storage_human": "18.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google",
+      "url": "https://ipv4.google.com/?hl=fr",
+      "snippet": "Publicité À propos de Google Google.com in English © 2026 - Confidentialité - Conditions"
+    },
+    {
+      "title": "Gmail",
+      "url": "https://accounts.google.com/servicelogin?service=mail",
+      "snippet": "Gmail is email that’s intuitive, efficient, and useful. 15 GB of storage, less spam, and mobile access."
+    },
+    {
+      "title": "G - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/G",
+      "snippet": "In Unicode, the two appearances are generally treated as glyph variants with no semantic difference. Most serif typefaces use the …"
+    },
+    {
+      "title": "Gmail: Secure, AI-Powered Email for Everyone | Google Workspace",
+      "url": "https://workspace.google.com/gmail/",
+      "snippet": "Gmail, now powered by Gemini AI. Unlock new ways to write, reply, and organize your emails. Experience a more intelligent and …"
+    }
+  ]
+}

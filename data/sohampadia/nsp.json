@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "sohampadia/nsp",
+  "slug": "sohampadia-nsp",
+  "author": "sohampadia",
+  "url": "https://huggingface.co/sohampadia/nsp",
+  "created_at": "2026-09-18T01:39:06.000Z",
+  "updated_at": "2026-09-18T01:39:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - TheR1D/shell_gpt: A command-line productivity tool …",
+      "url": "https://github.com/TheR1D/shell_gpt",
+      "snippet": "A command-line productivity tool powered by AI large language models like GPT-5, will help you accomplish your tasks faster and …"
+    },
+    {
+      "title": "GitHub - jqueryscript/chatgpt-timeline: A timeline of ChatGPT: major ...",
+      "url": "https://github.com/jqueryscript/chatgpt-timeline",
+      "snippet": "Sep 10, 2026 · ChatGPT Timeline A public timeline of major OpenAI GPT model releases, ChatGPT product updates, and related …"
+    },
+    {
+      "title": "ChatGPT - 知乎",
+      "url": "https://www.zhihu.com/topic/26691895",
+      "snippet": "ChatGPT是由OpenAI推出的一款AI聊天对话机器人，能够进行自然语言交互，帮助用户完成问答、写作、编程等多种任务。"
+    },
+    {
+      "title": "ChatGPT 有哪些神奇的使用方式？ - 知乎",
+      "url": "https://www.zhihu.com/question/570729170",
+      "snippet": "ChatGPT是由OpenAI推出的一款AI聊天对话机器人，能够进行自然语言交互，帮助用户完成问答、写作、编程等多种任务。"
+    },
+    {
+      "title": "I'm using ChatGPT 3.5 and it told me that I've reached the ... - Reddit",
+      "url": "https://www.reddit.com/r/ChatGPT/comments/177ty7a/im_using_chatgpt_35_and_it_told_me_that_ive/",
+      "snippet": "I also was getting mega mileage from 3.5 –– to the point that I was wondering if I somehow fell through the cracks because I was …"
+    }
+  ]
+}

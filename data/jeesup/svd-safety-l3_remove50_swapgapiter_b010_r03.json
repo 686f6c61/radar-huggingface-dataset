@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l3_remove50_swapgapiter_b010_r03",
+  "slug": "jeesup-svd-safety-l3_remove50_swapgapiter_b010_r03",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l3_remove50_swapgapiter_b010_r03",
+  "created_at": "2026-09-18T02:41:54.000Z",
+  "updated_at": "2026-09-18T02:45:16.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama3",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Meta-Llama-3-8B-Instruct",
+    "base_model:finetune:meta-llama/Meta-Llama-3-8B-Instruct",
+    "license:llama3",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 144,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766337,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Meta-Llama-3-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Los Angeles Time to New York Time Converter -- TimeBie",
+      "url": "https://www.timebie.com/timezone/losangelesnewyork.php",
+      "snippet": "5 days ago · Los Angeles USA Time and New York USA Time Converter Calculator, Los Angeles Time and New York Time …"
+    },
+    {
+      "title": "New York time to Los Angeles time conversion",
+      "url": "https://24timezones.com/difference/new_york/los_angeles",
+      "snippet": "2 days ago · New York is 3 hours ahead of Los Angeles. If you are in New York, the most convenient time to accommodate all parties …"
+    },
+    {
+      "title": "What is 5:00 PM New York Time in Los Angeles? - Time Zone …",
+      "url": "https://gridstripe.com/time-zone-converter/new-york-to-los-angeles-5pm",
+      "snippet": "Sep 6, 2026 · 5:00 PM in New York is 2:00 PM in Los Angeles. Free time zone converter with daylight saving handled automatically."
+    },
+    {
+      "title": "California Time to New York Time Converter -- TimeBie",
+      "url": "https://www.timebie.com/timezone/californianewyork.php",
+      "snippet": "2 days ago · California Time and New York USA Time Converter Calculator, California Time and New York Time Conversion Table."
+    },
+    {
+      "title": "New York to Los Angeles Time Converter — Live Clock | World Clock …",
+      "url": "https://worldclocklive.com/convert/new-york-to-los-angeles/",
+      "snippet": "1 day ago · Use the conversion table on this page to find overlapping business hours (typically 09:00–18:00) between New York and …"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "Broadnet/gemma-4-26B-A4B-uno-pilot-adapter",
+  "slug": "broadnet-gemma-4-26b-a4b-uno-pilot-adapter",
+  "author": "Broadnet",
+  "url": "https://huggingface.co/Broadnet/gemma-4-26B-A4B-uno-pilot-adapter",
+  "created_at": "2026-09-17T22:07:02.000Z",
+  "updated_at": "2026-09-18T20:17:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "speculative-decoding",
+    "uno",
+    "lora",
+    "gemma",
+    "vllm",
+    "moe",
+    "text-generation",
+    "en",
+    "ar",
+    "dataset:DataCreatorAI/Multi-Turn-Conversational-SFT",
+    "dataset:nvidia/Nemotron-Post-Training-Dataset-v1",
+    "dataset:m-a-p/CodeFeedback-Filtered-Instruction",
+    "dataset:RASHID778/arabic-instruct-curated",
+    "arxiv:2609.04010",
+    "base_model:cyankiwi/gemma-4-26B-A4B-it-AWQ-4bit",
+    "base_model:adapter:cyankiwi/gemma-4-26B-A4B-it-AWQ-4bit",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 75627016,
+  "storage_human": "76 MB",
+  "base_model": "google/gemma-4-26B-A4B-it, cyankiwi/gemma-4-26B-A4B-it-AWQ-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "QUERY - LEO: Übersetzung im Englisch ⇔ Deutsch Wörterbuch",
+      "url": "https://dict.leo.org/englisch-deutsch/QUERY",
+      "snippet": "Jan 19, 2017 · Lernen Sie die Übersetzung für 'QUERY' in LEOs ­Englisch ⇔ Deutsch­ Wörterbuch. Mit Flexionstabellen der …"
+    },
+    {
+      "title": "Query einfach und verständlich erklärt – Definition & Beispiele",
+      "url": "https://www.heise-homepages.de/glossar/query/",
+      "snippet": "Query ist eine Anfrage oder Abfrage, die in der Informationstechnologie und insbesondere in der Datenbankverwaltung verwendet …"
+    },
+    {
+      "title": "Query - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Query",
+      "snippet": "This disambiguation page lists articles associated with the title Query. If an internal link incorrectly led you here, you may wish to …"
+    },
+    {
+      "title": "Query – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Query",
+      "snippet": "Query Query steht für: eine spezifisch gestellte Abfrage an eine Datenbank, siehe Abfragesprache Microsoft Query, ein …"
+    },
+    {
+      "title": "query - Deutsch-Übersetzung - Langenscheidt Englisch-Deutsch …",
+      "url": "https://de.langenscheidt.com/englisch-deutsch/query",
+      "snippet": "Übersetzung für 'query' im kostenlosen Englisch-Deutsch Wörterbuch von LANGENSCHEIDT – mit Beispielen, Synonymen und …"
+    }
+  ]
+}

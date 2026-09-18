@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l3-e0",
+  "slug": "pessimisticdpo-mistral-7b-sft-beta-a0-1-b0-1-l4-overlap_subsample-l3-e0",
+  "author": "PessimisticDPO",
+  "url": "https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l3-e0",
+  "created_at": "2026-09-17T20:27:19.000Z",
+  "updated_at": "2026-09-19T18:46:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 167832240,
+  "storage_human": "168 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "手机hosts文件在哪里怎么打开-百度经验",
+      "url": "https://jingyan.baidu.com/article/3c48dd34f547fbe10ae3586e.html",
+      "snippet": "Jun 2, 2019 · 4 打开为选文本，点击文本编辑器。 5 那么在手机找到了hosts文件，也可以打开了，编辑它，则点击编辑即可编辑，前 …"
+    },
+    {
+      "title": "Что это за вирус \"HOSTS:SUSPICIOUS.URL\"? - Ответы Mail",
+      "url": "https://otvet.mail.ru/question/219193387",
+      "snippet": "Пользователь ruslan_musin_724 написал пост «Что это за вирус \"HOSTS:SUSPICIOUS.URL\"?» и получил на него 18 ..."
+    },
+    {
+      "title": "win10系统如何新建hosts - 百度经验",
+      "url": "https://jingyan.baidu.com/article/7f41ecec2a7319593d095ced.html",
+      "snippet": "Sep 26, 2017 · win10系统如何新建hosts,有网友发现自己的wi10系统hot文件不小心删掉了，如何手动创建一个。用别人的hot文件可以 …"
+    },
+    {
+      "title": "mac下修改hosts，为什么电脑重启后会被还原？ - 知乎",
+      "url": "https://www.zhihu.com/question/22331949",
+      "snippet": "Macでhostsファイルを変更しても再起動後に元に戻る原因と対処法について解説します。"
+    },
+    {
+      "title": "CorelDRAW Graphics Suite X8 Обход учетной записи.",
+      "url": "https://otvet.mail.ru/question/190835419",
+      "snippet": "Установил сиё ПО. Войти не дает Учетка. (Рег. бесполезен, сразу выбивает ключ, однако входит без сетевого подключения, …"
+    }
+  ]
+}

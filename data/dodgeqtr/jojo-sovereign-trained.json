@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "dodgeqtr/jojo-sovereign-trained",
+  "slug": "dodgeqtr-jojo-sovereign-trained",
+  "author": "dodgeqtr",
+  "url": "https://huggingface.co/dodgeqtr/jojo-sovereign-trained",
+  "created_at": "2026-09-17T22:01:49.000Z",
+  "updated_at": "2026-09-18T14:31:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3212749888,
+  "parameters_human": "3.21B",
+  "storage_bytes": 8077509632,
+  "storage_human": "8.1 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google prevoditelj",
+      "url": "https://translate.google.com/?hl=hr",
+      "snippet": "Googleova usluga, dostupna bez dodatnih troškova, u trenu prevodi riječi, fraze i web-stranice s hrvatskog na više od 100 drugih …"
+    },
+    {
+      "title": "Google prevoditelj",
+      "url": "https://translate.google.hr/",
+      "snippet": "Googleova usluga, dostupna bez dodatnih troškova, u trenu prevodi riječi, fraze i web-stranice s hrvatskog na više od 100 drugih …"
+    },
+    {
+      "title": "Google prevoditelj",
+      "url": "https://translate.google.hr/details",
+      "snippet": "Neke rečenice mogu sadržavati alternative prilagođene rodu. Kliknite rečenicu da biste vidjeli alternative. Saznajte više."
+    },
+    {
+      "title": "Google prevoditelj",
+      "url": "https://translate.google.hr/m",
+      "snippet": "Prevedi Otkrij jezik → hrvatski Google početna Pošaljite povratne informacije Privatnost i uvjeti Prebaci se na cijelu web-lokaciju"
+    },
+    {
+      "title": "Google prevoditelj – osobni tumač na vašem telefonu ili računalu",
+      "url": "https://translate.google.com/intl/hr/about/",
+      "snippet": "Komunicirajte na različitim jezicima i sporazumijevajte se uz Google prevoditelja. Prevedite tekst, govor, slike, dokumente, web …"
+    }
+  ]
+}

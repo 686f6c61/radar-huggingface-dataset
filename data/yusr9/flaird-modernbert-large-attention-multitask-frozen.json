@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "yusr9/flaird-modernbert-large-attention-multitask-frozen",
+  "slug": "yusr9-flaird-modernbert-large-attention-multitask-frozen",
+  "author": "yusr9",
+  "url": "https://huggingface.co/yusr9/flaird-modernbert-large-attention-multitask-frozen",
+  "created_at": "2026-09-17T21:53:10.000Z",
+  "updated_at": "2026-09-17T21:54:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "flaird",
+    "text-classification",
+    "custom_code",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 402418956,
+  "parameters_human": "402.4M",
+  "storage_bytes": 1609700968,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Serije Balkan - Filmovi i serije sa prevodom",
+      "url": "https://www.serijebalkan.com/",
+      "snippet": "Gledaj filmove i serije sa prevodom online potpuno besplatno."
+    },
+    {
+      "title": "GLEDALICA - Filmovi, serije, TV i recenzije 24 sata dnevno!",
+      "url": "https://gledalica.ba/",
+      "snippet": "U saradnji sa partnerima nagrađujemo vas sa kino ulaznacima, besplatnim pretplatama za popularne video platforme, premium …"
+    },
+    {
+      "title": "Plex Filmovi - filmovi za gledanje na Plex - JustWatch",
+      "url": "https://www.justwatch.com/ba/provajder/plex/filmovi",
+      "snippet": "Pronađite sve filmove dostupne na Plex organizovane prema popularnosti."
+    },
+    {
+      "title": "Filmovi sa prevodom - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLRnAyA6-IobBLPKjTrzEwMO3k0AqmZKAf",
+      "snippet": "Pirates 1986 720p BluRay x264 YIFY Serbian, France, Spain, Arab, Albanian. Italy, ect.ect subtitle."
+    },
+    {
+      "title": "GledajSeriju: Filmovi i Serije online sa prevodom",
+      "url": "https://gledajseriju.com/",
+      "snippet": "Gledaj serije online i filmove online sa prevodom, potpuno besplatno i u HD rezoluciji. Najnovije serije online i popularni filmovi online …"
+    }
+  ]
+}

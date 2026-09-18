@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l3_remove20_swapgapiter_b010_r08",
+  "slug": "jeesup-svd-safety-l3_remove20_swapgapiter_b010_r08",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l3_remove20_swapgapiter_b010_r08",
+  "created_at": "2026-09-17T23:14:54.000Z",
+  "updated_at": "2026-09-17T23:35:01.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama3",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Meta-Llama-3-8B-Instruct",
+    "base_model:finetune:meta-llama/Meta-Llama-3-8B-Instruct",
+    "license:llama3",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766337,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Meta-Llama-3-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Assurance emprunteur : indemnitaire ou forfaitaire, quelle …",
+      "url": "https://macif.securimut.fr/guide-assurance-emprunteur/garanties/assurance-emprunteur-forfaitaire-indemnitaire",
+      "snippet": "3 days ago · Lorsque vous souscrivez une assurance emprunteur, il est essentiel de comprendre les modalités de remboursement en …"
+    },
+    {
+      "title": "Assurance emprunteur : remboursement forfaitaire ou indemnitaire ?",
+      "url": "https://reassurez-moi.fr/guide/assurance-pret-immobilier/forfaitaire-indemnitaire",
+      "snippet": "May 13, 2026 · Comprendre la différence entre une assurance emprunteur forfaitaire et une assurance indemnitaire vous permet de …"
+    },
+    {
+      "title": "Assurance emprunteur forfaitaire ou indemnitaire : quelles …",
+      "url": "https://www.malakoffhumanis.com/particuliers/assurance-emprunteur/assurance-emprunteur-forfaitaire-indemnitaire/",
+      "snippet": "Assurance emprunteur indemnitaire ou forfaitaire : découvrez les différences entre ces deux modes d’indemnisation et leurs …"
+    },
+    {
+      "title": "Assurance emprunteur : remboursement forfaitaire ou indemnitaire",
+      "url": "https://www.flakehal.fr/assurance-pret-immobilier/garanties-assurance-emprunteur/remboursement-forfaitaire-ou-indemnitaire/",
+      "snippet": "Découvrez les différences entre le remboursement forfaitaire et indemnitaire en assurance emprunteur. Avantages, limites, exemples …"
+    },
+    {
+      "title": "Assurance emprunteur forfaitaire ou indemnitaire ?",
+      "url": "https://hephata.fr/assurance-emprunteur-forfaitaire-ou-indemnitaire/",
+      "snippet": "Sep 6, 2026 · Consultez votre notice d’information d’assurance emprunteur et rendez-vous à la rubrique « mode de prestation » ou « …"
+    }
+  ]
+}

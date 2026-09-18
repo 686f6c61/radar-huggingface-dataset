@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "brian-learns/Qwen3.8-27B-NVFP4",
+  "slug": "brian-learns-qwen3-8-27b-nvfp4",
+  "author": "brian-learns",
+  "url": "https://huggingface.co/brian-learns/Qwen3.8-27B-NVFP4",
+  "created_at": "2026-09-17T23:47:26.000Z",
+  "updated_at": "2026-09-17T23:47:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "Model Optimizer",
+  "languages": [],
+  "tags": [
+    "Model Optimizer",
+    "safetensors",
+    "qwen3_5",
+    "nvidia",
+    "ModelOpt",
+    "Qwen3.8",
+    "quantized",
+    "FP4",
+    "fp4",
+    "FP8",
+    "fp8",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "8-bit",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 18164649200,
+  "parameters_human": "18.16B",
+  "storage_bytes": 21934506600,
+  "storage_human": "21.9 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Greenpeace International - YouTube",
+      "url": "https://www.youtube.com/greenpeace",
+      "snippet": "Greenpeace exists because this fragile earth deserves a voice. It needs solutions. It needs change. It needs action!"
+    },
+    {
+      "title": "Greenpeace in actie - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLABV7PGuN1lBlaPypxk8K1lbeeyeTrlq2",
+      "snippet": "Greenpeace in actie bij Tata Steel. Bullshitvluchten van de baan! Time's up! Loop mee tijdens de Women's March. Geen racisme en …"
+    },
+    {
+      "title": "Documentaire | Paul Watson – Une vie pour les océans",
+      "url": "https://www.les-docus.com/paul-watson-une-vie-pour-les-oceans/",
+      "snippet": "Ce film retrace le parcours et le combat de l'activiste écologiste Paul Watson, co-fondateur de Greenpeace et fondateur de Sea …"
+    },
+    {
+      "title": "Greenpeace Nederland - YouTube",
+      "url": "https://www.youtube.com/@GreenpeaceNederland/videos",
+      "snippet": "Waarom Greenpeace altijd naar de wetenschap kijkt – Wouter legt uit 647 views 1 year ago"
+    },
+    {
+      "title": "Greenpeace in actie door de jaren heen - YouTube",
+      "url": "https://www.youtube.com/watch?v=PjJPFCIJWAU",
+      "snippet": "Sep 25, 2008 · Overal ter wereld laat Greenpeace milieuproblemen zien en zoekt en stimuleert de organisatie oplossingen. …"
+    }
+  ]
+}

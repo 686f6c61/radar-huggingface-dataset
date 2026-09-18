@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "yuhengtu-bytedance/DataDecide-fineweb-edu-1B-60000_62500_65000_67500_69369_weightedavg_merge",
+  "slug": "yuhengtu-bytedance-datadecide-fineweb-edu-1b-60000_62500_65000_67500_69369_weightedavg_merge",
+  "author": "yuhengtu-bytedance",
+  "url": "https://huggingface.co/yuhengtu-bytedance/DataDecide-fineweb-edu-1B-60000_62500_65000_67500_69369_weightedavg_merge",
+  "created_at": "2026-09-17T22:12:08.000Z",
+  "updated_at": "2026-09-17T22:12:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "arxiv:2203.05482",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1279854592,
+  "parameters_human": "1.28B",
+  "storage_bytes": 2559726104,
+  "storage_human": "2.6 GB",
+  "base_model": "",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Géoportail - Page d'Accueil",
+      "url": "https://www.geoportail.lu/",
+      "snippet": "La plate-forme nationale officielle des données et informations géographiques. Découvrez nos cartes thématiques, notre catalogue et …"
+    },
+    {
+      "title": "Geoportal - Startseite",
+      "url": "https://www.geoportail.lu/de/",
+      "snippet": "Die offizielle nationale Platform für geographische Daten und Dienstleistungen. Entdecken sie unsere Karten Portale, Daten Kataloge …"
+    },
+    {
+      "title": "Impression sur géoportail - Forum Réseaux sociaux",
+      "url": "https://forums.commentcamarche.net/forum/affich-3635464-impression-sur-geoportail",
+      "snippet": "Oct 1, 2007 · Bonsoir, Comment imprimer une photo sur géoportail. Merci Configuration: Windows XP Internet Explorer 7.0"
+    },
+    {
+      "title": "Recherches GEOPORTAIL [Résolu] - Forum Microsoft Edge / Internet …",
+      "url": "https://forums.commentcamarche.net/forum/affich-37910034-recherches-geoportail",
+      "snippet": "Sep 12, 2023 · Meilleure réponse: Bonjour, Supprimez les cookies de Geoportail. Pour Edge, c'est dans : Paramètres > Cookies et …"
+    },
+    {
+      "title": "Graviers du Rhin - Forum Minéraux et Minéralogie - Géoforum",
+      "url": "https://www.geoforum.fr/topic/1147-graviers-du-rhin/",
+      "snippet": "Sep 9, 2006 · Je vais regarder sur geoportail pour localiser ! Je n'ai aucune expérience en minéraux lourds, mais peut-être que toi tu …"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "nkkbr2/Nemotron-3-Ultra-550B-A55B-BF16-Abliterix-trial165",
+  "slug": "nkkbr2-nemotron-3-ultra-550b-a55b-bf16-abliterix-trial165",
+  "author": "nkkbr2",
+  "url": "https://huggingface.co/nkkbr2/Nemotron-3-Ultra-550B-A55B-BF16-Abliterix-trial165",
+  "created_at": "2026-09-18T02:05:57.000Z",
+  "updated_at": "2026-09-18T02:05:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "nemotron_h",
+    "text-generation",
+    "nemotron-3",
+    "abliterix",
+    "trial165",
+    "conversational",
+    "base_model:nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+    "base_model:finetune:nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "搜索 - Microsoft 必应 - Bing",
+      "url": "https://www.bing.com/?setmkt=zh-tw&setlang=zh",
+      "snippet": "使用 Microsoft 必应进行搜索，并利用 AI 的强大功能查找信息、浏览网页、图像、视频、地图等。为永远充满好奇心的人提供的智能搜 …"
+    },
+    {
+      "title": "Microsoft Bing | 認識 Bing",
+      "url": "https://explore.microsoft.com/zh-tw/bing",
+      "snippet": "使用 Microsoft Bing（快速、安全、由 AI 提供支援的搜尋引擎）增強您的搜尋體驗。 發現世界一流的性能、內置安全性和高級工具， …"
+    },
+    {
+      "title": "Bing",
+      "url": "https://www.bing.com/version",
+      "snippet": "Bing ... Versions"
+    },
+    {
+      "title": "Download Microsoft Bing Search APKs for Android - APKMirror",
+      "url": "https://www.apkmirror.com/apk/microsoft-corporation/bing/",
+      "snippet": "Download Microsoft Bing Search APKs for Android - APKMirror Free and safe Android APK downloads Introducing Copilot Search in …"
+    },
+    {
+      "title": "搜尋 - Microsoft Bing",
+      "url": "https://www.tw.bing.com/",
+      "snippet": "使用 Microsoft Bing 搜尋，並使用 AI 的功能來尋找資訊、探索網頁、影像、影片、地圖等等。 適合永遠感到好奇的人員的智慧型搜尋 …"
+    }
+  ]
+}

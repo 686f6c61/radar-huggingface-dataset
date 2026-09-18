@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l3_remove50_swapgapiter_b010_r02",
+  "slug": "jeesup-svd-safety-l3_remove50_swapgapiter_b010_r02",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l3_remove50_swapgapiter_b010_r02",
+  "created_at": "2026-09-18T02:30:54.000Z",
+  "updated_at": "2026-09-18T02:33:38.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama3",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Meta-Llama-3-8B-Instruct",
+    "base_model:finetune:meta-llama/Meta-Llama-3-8B-Instruct",
+    "license:llama3",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 166,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766337,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Meta-Llama-3-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Albert Heijn: boodschappen doen bij de grootste supermarkt",
+      "url": "https://www.ah.nl/?msockid=270e8a1016a469d71fcd9dc817446842",
+      "snippet": "Gezonder, makkelijker en voordeliger eten? Ontdek Albert Heijn: inspiratie, Bonusaanbiedingen en gemak: in de winkel én via de AH …"
+    },
+    {
+      "title": "Schoonmaakmiddelen bestellen | Albert Heijn",
+      "url": "https://www.ah.nl/producten/1498/schoonmaakmiddelen?msockid=270e8a1016a469d71fcd9dc817446842",
+      "snippet": "Op zoek naar schoonmaakmiddelen? Bestel het makkelijk en snel bij Albert Heijn Grootste assortiment Thuisbezorgd tot in de …"
+    },
+    {
+      "title": "Over Albert Heijn - Over Ons",
+      "url": "https://over.ah.nl/overzicht/over-albert-heijn",
+      "snippet": "Over Albert Heijn Bij Albert Heijn geloven we dat eten en drinken een essentiële rol speelt bij grote uitdagingen in de maatschappij. …"
+    },
+    {
+      "title": "Nieuwe verse pastaproducten bij Albert Heijn",
+      "url": "https://nieuws.ah.nl/nieuwe-verse-pastaproducten-bij-albert-heijn",
+      "snippet": "Na de succesvolle introductie van courgettespaghetti en bloemkool- en broccolirijst introduceert Albert Heijn vandaag een nieuwe …"
+    },
+    {
+      "title": "Start - Over Ons",
+      "url": "http://over.ah.nl/",
+      "snippet": "In ons duurzaamheidsverslag kijken we terug op de stappen die we in de afgelopen jaren gezet hebben om onze missie te realiseren."
+    }
+  ]
+}

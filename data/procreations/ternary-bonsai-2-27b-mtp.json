@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ProCreations/Ternary-Bonsai-2-27B-MTP",
+  "slug": "procreations-ternary-bonsai-2-27b-mtp",
+  "author": "ProCreations",
+  "url": "https://huggingface.co/ProCreations/Ternary-Bonsai-2-27B-MTP",
+  "created_at": "2026-09-17T22:47:24.000Z",
+  "updated_at": "2026-09-19T05:05:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3_5",
+    "mtp",
+    "speculative-decoding",
+    "bonsai",
+    "ternary",
+    "blackwell",
+    "text-generation",
+    "dataset:HuggingFaceH4/ultrachat_200k",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 6,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 18253511613,
+  "storage_human": "18.3 GB",
+  "base_model": "prism-ml/Ternary-Bonsai-2-27B-gguf, Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "REVIEW OF RATES AND CLUSTER CLASSIFICATION FOR PURPOSES OF …",
+      "url": "https://src.go.ke/documents/review-of-rates-and-cluster-classification-for-purposes-of-payment-of-daily-subsistence-allowance-dsa-local-travel/",
+      "snippet": "The Salaries and Remuneration Commission (SRC Kenya) is mandated to set and regularly review the remuneration and benefits of …"
+    },
+    {
+      "title": "Circulars Archives - Salaries and Remuneration Commission (SRC)",
+      "url": "https://src.go.ke/all_documents/circulars/",
+      "snippet": "Jun 17, 2021 · The SRC issues circulars from time to time on pertinent matters affecting State and public officers. The current …"
+    },
+    {
+      "title": "SRC- The per diem rates for teachers, state officers and other public ...",
+      "url": "https://newsblaze.co.ke/src-the-per-diem-rates-for-teachers-state-officers-and-other-public-servants/",
+      "snippet": "Jan 9, 2026 · The Salaries and Remuneration Commission in fulfillment of its mandate has reviewed the Daily Subsistence …"
+    },
+    {
+      "title": "Daily Subsistence Allowance (DSA) | ICSC",
+      "url": "https://icsc.un.org/Home/DailySubsistence",
+      "snippet": "Use our interactive map to quickly look up DSA rates for any country: to get the data!"
+    },
+    {
+      "title": "Latest allowances and per diem rates for civil servants in Kenya",
+      "url": "https://www.tuko.co.ke/319051-latest-allowances-diem-rates-civil-servants-kenya.html",
+      "snippet": "Apr 7, 2022 · They cover meals, accommodation, and related travel expenses, with rates varying by job group and assignment …"
+    }
+  ]
+}

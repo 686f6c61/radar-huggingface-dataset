@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Felladrin/halogen-qwen3.5-0.8b",
+  "slug": "felladrin-halogen-qwen3-5-0-8b",
+  "author": "Felladrin",
+  "url": "https://huggingface.co/Felladrin/halogen-qwen3.5-0.8b",
+  "created_at": "2026-09-17T21:53:14.000Z",
+  "updated_at": "2026-09-17T21:54:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "halogen",
+    "hgn",
+    "strix-halo",
+    "gfx1151",
+    "base_model:Qwen/Qwen3.5-0.8B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2054306176,
+  "storage_human": "2.1 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B-Base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HFM - World Leader in Online Trading | Regulated Broker",
+      "url": "https://www.hfm.com/int/en/",
+      "snippet": "HFM is a regulated, licensed multi-asset broker providing trading services across forex, CFDs, and future markets for retail and …"
+    },
+    {
+      "title": "WebTrader Trading Platform - HFM",
+      "url": "https://www.hfm.com/int/en/platforms/web-trader",
+      "snippet": "Any trade you open, alert you set and your trading history are updated in real time across the HFM App and HFM WebTrader. You …"
+    },
+    {
+      "title": "myHF | HFM Broker | Login",
+      "url": "https://my.hfm.com/en/login",
+      "snippet": "Please ensure that you fully understand the risks involved, taking into account your investments objectives and level of experience, …"
+    },
+    {
+      "title": "HFM App - Trade Global Markets",
+      "url": "https://hfm.app.link/default",
+      "snippet": "Stay on top of the markets and trade online wherever you are with the HFM App. Simple, fast and feature-rich, our award-winning …"
+    },
+    {
+      "title": "HFM WebTrader",
+      "url": "https://webterminal.hfm.com/int/en/mt5",
+      "snippet": "Trading accounts: HF Markets (SV) Ltd. Connect to account © 2000 – 2026, MetaQuotes Ltd. End-User License Agreement Connect …"
+    }
+  ]
+}

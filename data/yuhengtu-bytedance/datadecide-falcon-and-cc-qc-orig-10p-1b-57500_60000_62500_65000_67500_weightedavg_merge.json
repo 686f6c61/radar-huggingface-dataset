@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "yuhengtu-bytedance/DataDecide-falcon-and-cc-qc-orig-10p-1B-57500_60000_62500_65000_67500_weightedavg_merge",
+  "slug": "yuhengtu-bytedance-datadecide-falcon-and-cc-qc-orig-10p-1b-57500_60000_62500_65000_67500_weightedavg_merge",
+  "author": "yuhengtu-bytedance",
+  "url": "https://huggingface.co/yuhengtu-bytedance/DataDecide-falcon-and-cc-qc-orig-10p-1B-57500_60000_62500_65000_67500_weightedavg_merge",
+  "created_at": "2026-09-17T22:11:24.000Z",
+  "updated_at": "2026-09-17T22:11:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "arxiv:2203.05482",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1279854592,
+  "parameters_human": "1.28B",
+  "storage_bytes": 2559726104,
+  "storage_human": "2.6 GB",
+  "base_model": "",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kerala Forest Development Corporation - kfdcecotourism.com",
+      "url": "https://kfdcecotourism.com/sub-destination/ecc0f6b0-88ff-414a-8ebf-7523cf301388",
+      "snippet": "Gavi is mainly known for its wildlife. Endangered species including the Nilgiri Tahr and Lion-tailed macaque are often sighted at the …"
+    },
+    {
+      "title": "Gavi, Kerala - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Gavi,_Kerala",
+      "snippet": "Gavi (Malayalam: [ɡɐʋi, ɡeʋi]) is a village in Pathanamthitta district in Thiruvalla, Kerala, India.The nearest railway station is …"
+    },
+    {
+      "title": "Gavi, Eco-tourism project, Pathanamthitta - Kerala Tourism",
+      "url": "https://www.keralatourism.org/destination/gavi-eco-tourism/355/",
+      "snippet": "Gavi is an Eco-Tourism project of the Kerala Forest Development Corporation located in Pathanamthitta district, Kerala. Gavi, located …"
+    },
+    {
+      "title": "Gavi Eco Tourism | Pathanamthitta District, Government of Kerala | India",
+      "url": "https://pathanamthitta.nic.in/en/tourist-place/sabarimala/",
+      "snippet": "2 days ago · Gavi is an Eco-Tourism a project of the Kerala Forest Development Corporation located in Pathanamthitta district, …"
+    },
+    {
+      "title": "A Complete Guide to Visiting Gavi: Entry Pass, Route, and Travel …",
+      "url": "https://springdaleheritage.in/blog/complete-guide-to-visiting-gavi-entry-pass-route-travel-essentials.php",
+      "snippet": "Oct 27, 2025 · Planning a trip to Gavi? Learn how to book your KFDC entry pass, the best routes from Vandiperiyar and Thekkady, …"
+    }
+  ]
+}

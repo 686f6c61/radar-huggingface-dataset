@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "gohumanize/gohumanize-open-humanizer",
+  "slug": "gohumanize-gohumanize-open-humanizer",
+  "author": "gohumanize",
+  "url": "https://huggingface.co/gohumanize/gohumanize-open-humanizer",
+  "created_at": "2026-09-18T03:43:06.000Z",
+  "updated_at": "2026-09-21T15:54:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "qwen3",
+    "text-generation",
+    "humanizer",
+    "text-rewriting",
+    "style-transfer",
+    "unsloth",
+    "lora",
+    "conversational",
+    "en",
+    "dataset:gohumanize/gohumanize-open-humanizer-dataset",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:adapter:Qwen/Qwen3-4B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 442,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 14900218836,
+  "storage_human": "14.9 GB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwant [Résolu] - Forum Téléchargement - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-33830510-qwant",
+      "snippet": "Bonjour, je souhaiterai télécharger le moteur de recherche français qwant.... votre contribution me faciliterai la tâche n'ayant pas de …"
+    },
+    {
+      "title": "Desinstaller QWANT - Windows - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-35812381-desinstaller-qwant",
+      "snippet": "Bonjour, Je cherche à désinstaller QWANT, adwCleaner ne le \"voit\"pas et il est masqué sur le panneau de config. Qui a une solution, …"
+    },
+    {
+      "title": "大家有coreldraw的安装包吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/356805422",
+      "snippet": "x4，x7不能用了，大家都遇到了这个问题。 最好的解决方法，上淘宝买一个。 哈哈哈哈哈。 我今天才买了，12元买个顺畅"
+    },
+    {
+      "title": "Qwant - 欧洲第一个独立的匿名搜索引擎 - Wiki - 虫部落",
+      "url": "https://www.chongbuluo.com/thread-13074-1-1.html?_dsign=5f5fee21",
+      "snippet": "Jul 5, 2022 · Qwant 于 2013 年在法国推出，然后于 2014 年在德国推出，体现了为主导互联网服务的美国主要平台提供第一个可靠的 …"
+    },
+    {
+      "title": "拉马努金是怎么发现那些壮观的公式的？ - 知乎",
+      "url": "https://www.zhihu.com/question/66165881",
+      "snippet": "一些回答还是too naive，根本不懂拉马努金！对于牢拉是怎么发现这些公式的，我还真有一些比较独特的看法，震撼首发！ 就我观 …"
+    }
+  ]
+}

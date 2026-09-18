@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/eng-100mb-after-wc-zipf-newlex-jpn-ckpt4000_seed3407_seed3407",
+  "slug": "fpadovani-eng-100mb-after-wc-zipf-newlex-jpn-ckpt4000_seed3407_seed3407",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/eng-100mb-after-wc-zipf-newlex-jpn-ckpt4000_seed3407_seed3407",
+  "created_at": "2026-09-17T21:33:22.000Z",
+  "updated_at": "2026-09-17T23:37:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:fpadovani/ppt-wc-zipf-newlex-jpn-100mb_seed3407",
+    "base_model:finetune:fpadovani/ppt-wc-zipf-newlex-jpn-100mb_seed3407",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 7488274111,
+  "storage_human": "7.5 GB",
+  "base_model": "fpadovani/ppt-wc-zipf-newlex-jpn-100mb_seed3407",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Die 10 besten Hotels in München (Ab € 63) - Booking.com",
+      "url": "https://www.booking.com/city/de/munich.de.html?msockid=208c884e60a06d3433109f9961046c52",
+      "snippet": "Sep 1, 2026 · Sichern Sie sich tolle Angebote und buchen Sie Ihr Hotel in München, Deutschland online. Gute Verfügbarkeiten und …"
+    },
+    {
+      "title": "Hotels in München: Hotelsuche, Unterkünfte und Informationen",
+      "url": "https://www.muenchen.de/uebernachten",
+      "snippet": "Tipps für Übernachtungen in München, Hotelsuche und städtische Unterstützung für Business und Kongress."
+    },
+    {
+      "title": "Hotels und Apartments von München, alle Unterkünfte in München",
+      "url": "https://www.hotels-munchen.de/",
+      "snippet": "Online-Buchung für Hotels in München, Deutschland. Gute Verfügbarkeit und tolle Preise. Günstig und sicher, im Hotel zahlen, keine …"
+    },
+    {
+      "title": "Hotels in der Nähe von Hauptbahnhof München, München",
+      "url": "https://www.booking.com/landmark/de/hauptbahnhof.de.html?msockid=208c884e60a06d3433109f9961046c52",
+      "snippet": "Sep 1, 2026 · Finden Sie online Hotels nahe Hauptbahnhof München, Deutschland. Gute Verfügbarkeiten und attraktive Preise. …"
+    },
+    {
+      "title": "DIE 10 BESTEN Hotels in München 2026 schon ab 52€ - Tripadvisor",
+      "url": "https://www.tripadvisor.de/Hotels-g187309-Munich_Upper_Bavaria_Bavaria-Hotels.html",
+      "snippet": "Beste Hotels in München bei Tripadvisor: Finden Sie 227.445 Bewertungen von Reisenden, authentische Reisefotos und Top …"
+    }
+  ]
+}

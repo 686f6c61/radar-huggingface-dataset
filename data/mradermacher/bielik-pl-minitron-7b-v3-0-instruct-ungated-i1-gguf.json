@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Bielik-PL-Minitron-7B-v3.0-Instruct-ungated-i1-GGUF",
+  "slug": "mradermacher-bielik-pl-minitron-7b-v3-0-instruct-ungated-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Bielik-PL-Minitron-7B-v3.0-Instruct-ungated-i1-GGUF",
+  "created_at": "2026-09-17T22:41:57.000Z",
+  "updated_at": "2026-09-17T23:27:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "pl",
+    "en",
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "pl",
+    "en",
+    "multilingual",
+    "base_model:cpral/Bielik-PL-Minitron-7B-v3.0-Instruct-ungated",
+    "base_model:quantized:cpral/Bielik-PL-Minitron-7B-v3.0-Instruct-ungated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7476678656,
+  "parameters_human": "7.48B",
+  "storage_bytes": 84488792384,
+  "storage_human": "84.5 GB",
+  "base_model": "cpral/Bielik-PL-Minitron-7B-v3.0-Instruct-ungated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tiguan - Découvrez les modèles à partir de 41 300€ | Volkswagen …",
+      "url": "https://www.volkswagen.fr/fr/modeles-et-configurateur/tiguan.html",
+      "snippet": "Configurer le Tiguan en 3D ! Trouvez le Tiguan idéal : visualisez le Tiguan à 360°, changez les couleurs et les jantes ou jetez un …"
+    },
+    {
+      "title": "Voiture Volkswagen Tiguan occasion - La Centrale",
+      "url": "https://www.lacentrale.fr/occasion-voiture-modele-volkswagen-tiguan.html",
+      "snippet": "Annonces de voitures Volkswagen Tiguan d'occasion ⭐ La Centrale ️ Annonces sécurisées ️ Achat & Vente en France par des …"
+    },
+    {
+      "title": "Volkswagen Tiguan — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Volkswagen_Tiguan",
+      "snippet": "Le Volkswagen Tiguan est une voiture de la catégorie des SUV compacts produite par le constructeur automobile allemand …"
+    },
+    {
+      "title": "Voiture Volkswagen Tiguan Neuve : Achat & Vente - La Centrale",
+      "url": "https://www.lacentrale.fr/neuf/modele/voiture-volkswagen-tiguan.html",
+      "snippet": "Annonces de voitures Volkswagen Tiguan neuves au meilleur prix ⭐ La Centrale ️ Annonces sécurisées ️ Vente partout en …"
+    },
+    {
+      "title": "Tiguan eHybrid - Découvrez les modèles à partir de 55 500€ | Volkswagen …",
+      "url": "https://www.volkswagen.fr/fr/modeles-et-configurateur/tiguan/hybride.html",
+      "snippet": "Où que vous soyez, Volkswagen est là. Dès la mise en circulation de votre véhicule, vous bénéficiez automatiquement d’une …"
+    }
+  ]
+}

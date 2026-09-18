@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Trey2016/gemma-3-1b-aliberated",
+  "slug": "trey2016-gemma-3-1b-aliberated",
+  "author": "Trey2016",
+  "url": "https://huggingface.co/Trey2016/gemma-3-1b-aliberated",
+  "created_at": "2026-09-18T02:08:03.000Z",
+  "updated_at": "2026-09-18T02:23:00.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": 999885952,
+  "parameters_human": "999.9M",
+  "storage_bytes": 806058304,
+  "storage_human": "806 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "7000+ najlepszych zdjęć z kategorii: Anioł · Do pobrania ... - Pexels",
+      "url": "https://www.pexels.com/pl-pl/szukaj/anio%C5%82/",
+      "snippet": "Pobierz i wykorzystaj bezpłatnie zdjęcia (Anioł) z galerii — jest ich aż 7000+. Codziennie tysiące nowych obrazów Do wykorzystania …"
+    },
+    {
+      "title": "200+ darmowych obrazów z kategorii Aniołek i Anioł - Pixabay",
+      "url": "https://pixabay.com/pl/images/search/anio%C5%82ek/",
+      "snippet": "Znajdź obrazy z kategorii Aniołek Bez wynagrodzenia autorskiego Nie wymaga przypisania Obrazy o wysokiej jakości."
+    },
+    {
+      "title": "9 000+ darmowych obrazów z kategorii Anioł i Anioł Stróż - Pixabay",
+      "url": "https://pixabay.com/pl/images/search/anio%C5%82/",
+      "snippet": "Znajdź obrazy z kategorii Anioł Bez wynagrodzenia autorskiego Nie wymaga przypisania Obrazy o wysokiej jakości."
+    },
+    {
+      "title": "5000+ najlepszych zdjęć z kategorii: Obraz Anioła - Pexels",
+      "url": "https://www.pexels.com/pl-pl/szukaj/obraz%20anio%C5%82a/",
+      "snippet": "Pobierz i wykorzystaj bezpłatnie zdjęcia (Obraz Anioła) z galerii — jest ich aż 5000+. Codziennie tysiące nowych obrazów Do …"
+    },
+    {
+      "title": "270 700+ zbiorów zdjęć, fotografii i beztantiemowych ... - iStock",
+      "url": "https://www.istockphoto.com/pl/obrazy/anio%C5%82?msockid=247561e74a636608269d763f4beb6757",
+      "snippet": "Przeszukaj zdjęć Anioł i obrazów na licencji royalty-free w iStock. Znajdź wysokiej jakości zdjęcia, których nie znajdziesz nigdzie indziej."
+    }
+  ]
+}

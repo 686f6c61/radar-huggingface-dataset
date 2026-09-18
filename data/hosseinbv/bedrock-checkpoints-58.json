@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "hosseinbv/bedrock-checkpoints-58",
+  "slug": "hosseinbv-bedrock-checkpoints-58",
+  "author": "hosseinbv",
+  "url": "https://huggingface.co/hosseinbv/bedrock-checkpoints-58",
+  "created_at": "2026-09-18T02:05:46.000Z",
+  "updated_at": "2026-09-18T02:07:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "physics-informed-neural-network",
+    "computational-fluid-dynamics",
+    "pytorch",
+    "star-ccm+",
+    "surrogate-model",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13518237,
+  "storage_human": "14 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jeu de données - BD TOPO® | data.gouv.fr",
+      "url": "https://www.data.gouv.fr/datasets/bd-topo-r",
+      "snippet": "Sep 12, 2025 · La BD TOPO® version 3.5 contient une description vectorielle 3D (structurée en objets) des éléments du territoire et …"
+    },
+    {
+      "title": "Rechercher une donnée | cartes.gouv.fr - IGN",
+      "url": "https://cartes.gouv.fr/decouvrir/rechercher-une-donnee/",
+      "snippet": "Trouvez rapidement la BD TOPO® actualisée et téléchargez-la dans le format SIG adapté Urbaniste, géomaticien, recherchez « BD …"
+    },
+    {
+      "title": "BD TOPO® personnalisable - Géoportail",
+      "url": "https://www.geoportail.gouv.fr/donnees/bdtopo-personnalisable",
+      "snippet": "La BD TOPO contient une description vectorielle, structurée en objets, des éléments du territoire et de ses infrastructures, de …"
+    },
+    {
+      "title": "La BD TOPO® | Fiche donnée | Portail de l'artificialisation des sols",
+      "url": "https://artificialisation.developpement-durable.gouv.fr/bases-donnees/bd-topo",
+      "snippet": "La BD TOPO® sert de référence pour la localisation de l’information thématique relative aux problématiques d’aménagement, …"
+    },
+    {
+      "title": "BD TOPO® - catalogue.open-datara.fr",
+      "url": "https://catalogue.open-datara.fr/geonetwork/srv/api/records/73b3073d-fb62-4fd6-916f-b73429703809",
+      "snippet": "Sep 20, 2021 · La description des objets géographiques en 3D permet de représenter de façon réaliste les analyses spatiales utiles …"
+    }
+  ]
+}

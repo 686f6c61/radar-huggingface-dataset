@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "jaehyunkang/pi05-real-workbench-vanilla-2view-60k",
+  "slug": "jaehyunkang-pi05-real-workbench-vanilla-2view-60k",
+  "author": "jaehyunkang",
+  "url": "https://huggingface.co/jaehyunkang/pi05-real-workbench-vanilla-2view-60k",
+  "created_at": "2026-09-17T21:17:25.000Z",
+  "updated_at": "2026-09-17T21:18:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "real-workbench",
+    "dataset:Myungkyu/real_workbench",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 24482773904,
+  "storage_human": "24.5 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "国内比较好的联合办公空间有哪些？ - 知乎",
+      "url": "https://www.zhihu.com/question/45985964",
+      "snippet": "联合办公空间其实早就风靡全球了，却一直在中国等待属于它的时代。 早在1999 年，美国人Bernie De Koven就提出了联合办 …"
+    },
+    {
+      "title": "从 Windows10 升级到 Windows11 真的值得吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/1951614129354839923",
+      "snippet": "我的工作站一直使用 Windows10，运行稳定，各种软件也兼容良好。最近微软持续推送 Windows11 的升级通知…"
+    },
+    {
+      "title": "杭州萧山机场的UFO事件是不是真的？ - 知乎",
+      "url": "https://www.zhihu.com/question/352995875",
+      "snippet": "今天（2026年8月）看到的，2010年萧山机场ufo事件最可信的一个视频了，在居民楼角度完整10分钟视频。保证是以前从来没有出现 …"
+    },
+    {
+      "title": "为什么到处都找不到植物大战僵尸经典版了？ - 知乎",
+      "url": "https://www.zhihu.com/question/279192472/answers/updated",
+      "snippet": "找到很多地方，都没有方面的那个有花园的经典版 显示全部"
+    },
+    {
+      "title": "剧本中的OS和VO分别是什么意思？ - 知乎",
+      "url": "https://www.zhihu.com/question/300984677",
+      "snippet": "V.O.的意思是声音来自现场之外。 以下是使用这种表示法的常见情况: 声音来自现场以外的地点，比如电话、对讲机、收音机或其他设 …"
+    }
+  ]
+}

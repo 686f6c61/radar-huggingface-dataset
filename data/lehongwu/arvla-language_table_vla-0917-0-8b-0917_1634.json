@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "LehongWu/arvla-language_table_vla-0917-0.8B-0917_1634",
+  "slug": "lehongwu-arvla-language_table_vla-0917-0-8b-0917_1634",
+  "author": "LehongWu",
+  "url": "https://huggingface.co/LehongWu/arvla-language_table_vla-0917-0.8B-0917_1634",
+  "created_at": "2026-09-18T01:30:35.000Z",
+  "updated_at": "2026-09-18T01:30:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8878888450,
+  "storage_human": "8.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tłumaczenie tekstu pisanego - Komputer - Google Translate - Pomoc",
+      "url": "https://support.google.com/translate/answer/6142478?hl=pl&co=GENIE.Platform%3DDesktop",
+      "snippet": "Na komputerze otwórz Tłumacza Google. W górnej części ekranu wybierz języki tłumaczenia. Z języka: wybierz język lub kliknij …"
+    },
+    {
+      "title": "Tłumaczenie obrazów - Komputer - Google Translate - Pomoc",
+      "url": "https://support.google.com/translate/answer/6142483?hl=pl&co=GENIE.Platform%3DDesktop",
+      "snippet": "Tłumaczenie tekstu na obrazach Możesz tłumaczyć w Tłumaczu Google tekst z obrazów, które masz na urządzeniu. Ważne: …"
+    },
+    {
+      "title": "Why dams are referred as multipurpose projects - Brainly.in",
+      "url": "https://brainly.in/question/1296175",
+      "snippet": "Jul 8, 2017 · Find an answer to your question Why dams are referred as multipurpose projects"
+    },
+    {
+      "title": "9. While playing piano Arijit Singh's daughter found that the treble ...",
+      "url": "https://brainly.in/question/61834129",
+      "snippet": "Mar 22, 2025 · 9. While playing piano Arijit Singh's daughter found that the treble strings of a grand piano are parallel. When view …"
+    },
+    {
+      "title": "Tłumaczenie pisma odręcznego lub tekstu wpisanego z klawiatury ...",
+      "url": "https://support.google.com/translate/answer/6142469?hl=pl-PL&co=GENIE.Platform%3DAndroid",
+      "snippet": "W aplikacji Tłumacz możesz rysować litery i wyrażenia, a następnie uzyskać ich tłumaczenie. Jest to pomocne, gdy Twoja klawiatura …"
+    }
+  ]
+}

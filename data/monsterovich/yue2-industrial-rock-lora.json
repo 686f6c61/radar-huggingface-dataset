@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "monsterovich/yue2-industrial-rock-lora",
+  "slug": "monsterovich-yue2-industrial-rock-lora",
+  "author": "monsterovich",
+  "url": "https://huggingface.co/monsterovich/yue2-industrial-rock-lora",
+  "created_at": "2026-09-17T23:49:06.000Z",
+  "updated_at": "2026-09-20T20:34:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "lora",
+    "music-generation",
+    "audio",
+    "yue2",
+    "industrial-rock",
+    "base_model:m-a-p/YuE2-3B",
+    "base_model:adapter:m-a-p/YuE2-3B",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 626814484,
+  "storage_human": "627 MB",
+  "base_model": "m-a-p/YuE2-3B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us/?msockid=36f0358d8af062e6225f22558b4363f7",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Get access to free online versions of Outlook, Word, Excel, and PowerPoint."
+    },
+    {
+      "title": "Sign in to your account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    },
+    {
+      "title": "Microsoft 365 for Individuals: Subscription for Productivity Apps",
+      "url": "https://www.microsoft.com/en-us/microsoft-365?msockid=36f0358d8af062e6225f22558b4363f7",
+      "snippet": "Microsoft 365 (formerly Office 365) subscriptions offer a suite of productivity tools and cloud services with world-class security and …"
+    },
+    {
+      "title": "Microsoft - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Microsoft",
+      "snippet": "Microsoft Corporation is an American multinational technology company headquartered in Redmond, Washington. The company …"
+    }
+  ]
+}

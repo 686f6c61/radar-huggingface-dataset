@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Dongkkka/Task_000004_Peanut_Pick_Place_lerobot_Intern_ACT_bs32_step32000",
+  "slug": "dongkkka-task_000004_peanut_pick_place_lerobot_intern_act_bs32_step32000",
+  "author": "Dongkkka",
+  "url": "https://huggingface.co/Dongkkka/Task_000004_Peanut_Pick_Place_lerobot_Intern_ACT_bs32_step32000",
+  "created_at": "2026-09-18T00:52:35.000Z",
+  "updated_at": "2026-09-18T00:52:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:Dongkkka/Task_000004_Peanut_Pick_Place_lerobot_Intern",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51701398,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206835000,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook - Connexion ou inscription",
+      "url": "https://fr-fr.facebook.com/",
+      "snippet": "Créez un compte ou connectez-vous à Facebook. Connectez-vous avec vos amis, la famille et d’autres connaissances. Partagez des …"
+    },
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/",
+      "snippet": "Connect and share with friends, family, and the world on Facebook."
+    },
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/index.php/?lang=fr_FR",
+      "snippet": "Email or mobile number Password"
+    },
+    {
+      "title": "Facebook",
+      "url": "https://apps.facebook.com/r.php/",
+      "snippet": "Get started on Facebook with a Meta Account A Meta Account lets you access multiple Meta technologies, like Facebook, easily and …"
+    },
+    {
+      "title": "Facebook",
+      "url": "https://l.facebook.com/facebook/",
+      "snippet": "There's a new way to enhance your Facebook experience. Swipe to see the Facebook Plus features included with your Meta One …"
+    }
+  ]
+}

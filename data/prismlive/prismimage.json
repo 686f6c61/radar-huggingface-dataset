@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "PrismLive/PrismImage",
+  "slug": "prismlive-prismimage",
+  "author": "PrismLive",
+  "url": "https://huggingface.co/PrismLive/PrismImage",
+  "created_at": "2026-09-17T21:50:17.000Z",
+  "updated_at": "2026-09-17T21:51:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "text-to-image",
+    "image-to-image",
+    "base_model:black-forest-labs/FLUX.2-klein-4B",
+    "base_model:finetune:black-forest-labs/FLUX.2-klein-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3918165848,
+  "storage_human": "3.9 GB",
+  "base_model": "black-forest-labs/FLUX.2-klein-4B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Today's selection - XNXX.COM",
+      "url": "https://www.xnxx.com/todays-selection/",
+      "snippet": "XNXX Today's selection What would YOU do if you come home and you walk into your stepmom full naked on the couch …"
+    },
+    {
+      "title": "Free Porn, Sex, Tube Videos, XXX Pics, Pussy in Porno Movies - XNXX.COM",
+      "url": "https://www.xnxx.com/",
+      "snippet": "XNXX delivers free sex movies and fast free porn videos (tube porn). Now 10 million+ sex vids available for free! Featuring hot pussy, …"
+    },
+    {
+      "title": "Today's selection - XNXX.COM",
+      "url": "https://m-xnxx.com/todays-selection",
+      "snippet": "XNXX Today's selection A sexy blonde brought only a swimsuit to the Alps, so I decided to help her warm up, and she was so …"
+    },
+    {
+      "title": "Free Porn, Sex, Tube Videos, XXX Pics, Pussy in Porno Movies",
+      "url": "https://m-xnxx.com/",
+      "snippet": "XXX,XXX Video,XNXX Video,Bokep indo,XNXX indo,indo porn,Xvideos,Xvideo,Film Sex,YouPorn,Sex Video,Sex Porno,Porn …"
+    },
+    {
+      "title": "'xnxx' Search - XNXX.COM",
+      "url": "https://en.xnxx.place/search/xnxx",
+      "snippet": "XNXX.COM 'xnxx' Search, free sex videos In the JUNGLE with my husband's boss he invited me to walk in a dress and underwear in …"
+    }
+  ]
+}

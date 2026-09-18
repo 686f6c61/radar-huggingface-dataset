@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "vtava/Qwen3.5-0.8B-MemoryFusion-Standalone",
+  "slug": "vtava-qwen3-5-0-8b-memoryfusion-standalone",
+  "author": "vtava",
+  "url": "https://huggingface.co/vtava/Qwen3.5-0.8B-MemoryFusion-Standalone",
+  "created_at": "2026-09-17T21:27:07.000Z",
+  "updated_at": "2026-09-17T22:10:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "tinycenn",
+    "cenn",
+    "language-modeling",
+    "text-generation",
+    "research",
+    "conversational",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 755373744,
+  "parameters_human": "755.4M",
+  "storage_bytes": 3053495101,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "METHYL ETHYL KETONE Definition & Meaning - Merriam-Webster",
+      "url": "https://www.merriam-webster.com/dictionary/methyl%20ethyl%20ketone",
+      "snippet": "The meaning of METHYL ETHYL KETONE is a flammable liquid compound C4H8O similar to acetone and used chiefly as a solvent …"
+    },
+    {
+      "title": "What Is Methyl Ethyl Ketone (MEK)? - Biology Insights",
+      "url": "https://biologyinsights.com/what-is-methyl-ethyl-ketone-mek-2/",
+      "snippet": "Jan 8, 2026 · Methyl ethyl ketone (MEK) is a widely utilized, volatile organic compound (VOC) known primarily for its potent solvent …"
+    },
+    {
+      "title": "What is MEK (Methyl Ethyl Ketone)? Properties & Uses",
+      "url": "https://alliancechemical.com/blogs/articles/what-is-mek-methyl-ethyl-ketone",
+      "snippet": "Mar 31, 2023 · Methyl ethyl ketone (MEK) is a clear, colorless, highly volatile liquid organic compound used as a powerful solvent in …"
+    },
+    {
+      "title": "Butanone - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Butanone",
+      "snippet": "Butanone, also known as methyl ethyl ketone (MEK) or ethyl methyl ketone, [a] is an organic compound with the formula CH 3 C …"
+    },
+    {
+      "title": "Methyl Ethyl Ketone Structure Properties Uses - Vedantu",
+      "url": "https://www.vedantu.com/chemistry/methyl-ethyl-ketone",
+      "snippet": "Methyl ethyl ketone is a volatile organic solvent with the chemical formula C4H8O and the IUPAC name butan-2-one. It is a colorless …"
+    }
+  ]
+}

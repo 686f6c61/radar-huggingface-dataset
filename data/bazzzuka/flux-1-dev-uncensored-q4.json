@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "BaZzzuka/flux.1-dev-uncensored-q4",
+  "slug": "bazzzuka-flux-1-dev-uncensored-q4",
+  "author": "BaZzzuka",
+  "url": "https://huggingface.co/BaZzzuka/flux.1-dev-uncensored-q4",
+  "created_at": "2026-09-17T20:18:04.000Z",
+  "updated_at": "2026-09-17T20:18:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "license:mit",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6138207719,
+  "parameters_human": "6.14B",
+  "storage_bytes": 6699382055,
+  "storage_human": "6.7 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Explore and share videos, music, and more on YouTube, the leading platform for online video streaming and sharing."
+    },
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/youtube",
+      "snippet": "Knew late-night TV would catch up with me #youtubepartner try this prompt with your own YT Shorts Rachel Samples and YouTube …"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed/yt+",
+      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new …"
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    },
+    {
+      "title": "YT Industries | Mountain Bikes | Live Uncaged",
+      "url": "https://www.yt-industries.com/",
+      "snippet": "Young Talent is what YT stands for. Our direct sales approach maximizes your budget, bringing your dream Enduro, Trail, or …"
+    }
+  ]
+}

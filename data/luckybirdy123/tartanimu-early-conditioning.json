@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "LuckyBirdy123/tartanimu-early-conditioning",
+  "slug": "luckybirdy123-tartanimu-early-conditioning",
+  "author": "LuckyBirdy123",
+  "url": "https://huggingface.co/LuckyBirdy123/tartanimu-early-conditioning",
+  "created_at": "2026-09-18T01:17:02.000Z",
+  "updated_at": "2026-09-18T01:35:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "inertial-odometry",
+    "robotics",
+    "imu",
+    "tartanimu",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7018342,
+  "storage_human": "7 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Bilder",
+      "url": "https://images.google.de/?hl=de",
+      "snippet": "Google Bilder, die umfassendste Bildersuche im Web"
+    },
+    {
+      "title": "Die 7 besten Bildsuchmaschinenseiten (2026) - Guru99",
+      "url": "https://www.guru99.com/de/best-image-search-engines.html",
+      "snippet": "Aug 4, 2026 · Spokeo ist eine umfassende Personensuchmaschine, die leistungsstarke Funktionen für die umgekehrte Bildersuche …"
+    },
+    {
+      "title": "Bildersuche – Kostenlose umgekehrte Bildsuche",
+      "url": "https://www.reversely.ai/de",
+      "snippet": "Bildersuche und finden Sie ähnliche Fotos im Internet. Finden Sie Orte, Personen, Objekte und mehr mit der bilder rückwärtssuche."
+    },
+    {
+      "title": "Kostenloses visuelles Suchtool | Bing Visual Search",
+      "url": "https://explore.microsoft.com/de-de/bing/visual-search",
+      "snippet": "Suche mit Bing Visual Search per Bild, einem kostenlosen Tool für die umgekehrte Bildersuche, um ähnliche Bilder zu finden, …"
+    },
+    {
+      "title": "Bildersuche - Suche Fotos mit Bilder Rückwärtssuche",
+      "url": "https://www.image-search.org/de",
+      "snippet": "Das bildersuche Tool scannt Ihr hochgeladenes Bild gründlich und ruft die Ergebnisse in Sekundenschnelle ab. Während die …"
+    }
+  ]
+}

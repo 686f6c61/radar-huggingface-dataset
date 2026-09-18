@@ -1,0 +1,151 @@
+{
+  "schema": 1,
+  "id": "autumn10/sec-embedding-smoke",
+  "slug": "autumn10-sec-embedding-smoke",
+  "author": "autumn10",
+  "url": "https://huggingface.co/autumn10/sec-embedding-smoke",
+  "created_at": "2026-09-17T23:34:41.000Z",
+  "updated_at": "2026-09-17T23:34:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "xlm-roberta",
+    "sentence-similarity",
+    "feature-extraction",
+    "dense",
+    "generated_from_trainer",
+    "dataset_size:50",
+    "loss:CachedMultipleNegativesRankingLoss",
+    "loss:MultipleNegativesRankingLoss",
+    "arxiv:1908.10084",
+    "arxiv:2101.06983",
+    "arxiv:1807.03748",
+    "base_model:unsloth/bge-m3",
+    "base_model:finetune:unsloth/bge-m3",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 187537581,
+  "storage_human": "188 MB",
+  "base_model": "unsloth/bge-m3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Information Retrieval",
+      "dataset": "validation",
+      "metric": "Cosine Accuracy@1",
+      "value": 0.8
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "validation",
+      "metric": "Cosine Accuracy@5",
+      "value": 0.95
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "validation",
+      "metric": "Cosine Accuracy@10",
+      "value": 1
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "validation",
+      "metric": "Cosine Precision@1",
+      "value": 0.8
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "validation",
+      "metric": "Cosine Precision@5",
+      "value": 0.19000000000000003
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "validation",
+      "metric": "Cosine Precision@10",
+      "value": 0.10000000000000002
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "validation",
+      "metric": "Cosine Recall@1",
+      "value": 0.8
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "validation",
+      "metric": "Cosine Recall@5",
+      "value": 0.95
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "validation",
+      "metric": "Cosine Recall@10",
+      "value": 1
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "validation",
+      "metric": "Cosine Ndcg@10",
+      "value": 0.8803297095812912
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "validation",
+      "metric": "Cosine Mrr@10",
+      "value": 0.8441666666666666
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "validation",
+      "metric": "Cosine Map@100",
+      "value": 0.8441666666666666
+    }
+  ],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=27befd21ff8c6eb03938eaf9feef6f14",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Get access to free online versions of Outlook, Word, Excel, and PowerPoint."
+    },
+    {
+      "title": "Sign in to your account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    },
+    {
+      "title": "Microsoft 365 for Individuals: Subscription for Productivity Apps",
+      "url": "https://www.microsoft.com/en-us/microsoft-365?msockid=27befd21ff8c6eb03938eaf9feef6f14",
+      "snippet": "Microsoft 365 (formerly Office 365) subscriptions offer a suite of productivity tools and cloud services with world-class security and …"
+    },
+    {
+      "title": "Microsoft - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Microsoft",
+      "snippet": "Microsoft Corporation is an American multinational technology company headquartered in Redmond, Washington. The company …"
+    }
+  ]
+}

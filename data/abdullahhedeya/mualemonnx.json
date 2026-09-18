@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "AbdullahHedeya/MualemONNX",
+  "slug": "abdullahhedeya-mualemonnx",
+  "author": "AbdullahHedeya",
+  "url": "https://huggingface.co/AbdullahHedeya/MualemONNX",
+  "created_at": "2026-09-17T23:41:34.000Z",
+  "updated_at": "2026-09-17T23:46:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 35744860,
+  "storage_human": "36 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Se connecter à Gmail - Ordinateur - Aide Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Se connecter à Gmail Conseil : Si vous vous connectez à un ordinateur public, pensez à vous déconnecter avant de quitter …"
+    },
+    {
+      "title": "Fazer login no Gmail - Computador - Ajuda do Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=pt-br&co=GENIE.Platform%3DDesktop",
+      "snippet": "Fazer login No seu computador, acesse gmail.com. Insira seu número de telefone ou e-mail da Conta do Google e a senha. Se as …"
+    },
+    {
+      "title": "gmail邮箱登陆 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/1754545698735260388.html",
+      "snippet": "gmail邮箱为争得竞争优势早已将邮箱扩容置2GB，但至今未全面向用户开放账户申请。 要想拥有Gmail信箱需已拥有此信箱的人向你 …"
+    },
+    {
+      "title": "gmail邮箱登陆入口 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/1699445853902655668.html",
+      "snippet": "gmail邮箱为争得竞争优势早已将邮箱扩容置2GB，但至今未全面向用户开放账户申请。 要想拥有Gmail信箱需已拥有此信箱的人向你 …"
+    },
+    {
+      "title": "Inloggen bij Gmail - Computer - Gmail Help",
+      "url": "https://support.google.com/mail/answer/8494?hl=nl&co=GENIE.Platform%3DDesktop",
+      "snippet": "Inloggen bij Gmail Tip: Als je inlogt op een openbare computer, moet je uitloggen voordat je de computer verlaat. Bekijk meer …"
+    }
+  ]
+}

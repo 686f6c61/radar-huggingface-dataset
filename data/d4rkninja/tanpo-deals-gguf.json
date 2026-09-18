@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "d4rkninja/tanpo-deals-GGUF",
+  "slug": "d4rkninja-tanpo-deals-gguf",
+  "author": "d4rkninja",
+  "url": "https://huggingface.co/d4rkninja/tanpo-deals-GGUF",
+  "created_at": "2026-09-18T02:42:38.000Z",
+  "updated_at": "2026-09-18T17:46:24.000Z",
+  "license": "lfm-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "deals",
+    "sales",
+    "tanpo",
+    "text-generation",
+    "en",
+    "base_model:LiquidAI/LFM2.5-1.2B-Instruct",
+    "base_model:quantized:LiquidAI/LFM2.5-1.2B-Instruct",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 30,
+  "trending_score": 0,
+  "parameters": 1170340608,
+  "parameters_human": "1.17B",
+  "storage_bytes": 4946571968,
+  "storage_human": "4.9 GB",
+  "base_model": "LiquidAI/LFM2.5-1.2B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "登录codex的时候弹出电话号码验证怎么办？ - 知乎",
+      "url": "https://www.zhihu.com/question/2031458671385911868",
+      "snippet": "一直磨，直到能用短效手机号注册whatsapp，将信息修改一下只有你可以登录（绑定邮箱之类的）。 注册成功后，whatsapp那边得加 …"
+    },
+    {
+      "title": "怎样在whatsapp中加好友-百度经验",
+      "url": "https://jingyan.baidu.com/article/c33e3f483b65d5ea15cbb516.html",
+      "snippet": "May 6, 2019 · 怎样在whatsapp中加好友,使用WhatA的小伙伴们，知不知道如何在该软件中添加好友呢，接下来跟小编一起去看看吧。"
+    },
+    {
+      "title": "国内如何使用whatsapp？ - 知乎",
+      "url": "https://www.zhihu.com/question/2052047431735550018",
+      "snippet": "Jun 21, 2026 · 直接使用 WhatsApp 往往会出现无法连接、收不到消息或无法语音通话的情况，因为 WhatsApp 在国内网络环境下受到 …"
+    },
+    {
+      "title": "小米手机通话录音保存在哪里？-百度经验",
+      "url": "https://jingyan.baidu.com/article/e8cdb32bf94d2c37052bad05.html",
+      "snippet": "Sep 23, 2018 · 小米手机通话录音保存在哪里？,在一些重要的电话里面，我们会进行通话中的录音的。但是录音之后的文件却是找不到 …"
+    },
+    {
+      "title": "做外贸，用WhatsApp还是Facebook？ - 知乎",
+      "url": "https://www.zhihu.com/question/2024892517661914205",
+      "snippet": "策略： Facebook 找线索 + WhatsApp 谈细节。 操作：在 Facebook 上找到采购经理或老板，要到联系方式后，迅速转到 WhatsApp …"
+    }
+  ]
+}

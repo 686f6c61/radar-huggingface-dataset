@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "miguelamendez/mica-spark-x25-4b",
+  "slug": "miguelamendez-mica-spark-x25-4b",
+  "author": "miguelamendez",
+  "url": "https://huggingface.co/miguelamendez/mica-spark-x25-4b",
+  "created_at": "2026-09-18T00:22:43.000Z",
+  "updated_at": "2026-09-19T02:14:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "mica-server",
+    "text-generation",
+    "thinking",
+    "mlx",
+    "commercial-use",
+    "multilingual",
+    "base_model:XHToken/Spark-X2.5-4B",
+    "base_model:quantized:XHToken/Spark-X2.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4112079360,
+  "parameters_human": "4.11B",
+  "storage_bytes": 13658593116,
+  "storage_human": "13.7 GB",
+  "base_model": "XHToken/Spark-X2.5-4B",
+  "formats": [
+    "gguf",
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "כניסה ל-Gmail - מחשב - Gmail עזרה",
+      "url": "https://support.google.com/mail/answer/8494?hl=iw&co=GENIE.Platform%3DDesktop",
+      "snippet": "כניסה ל-Gmail כדי לפתוח את Gmail, אתם יכולים להיכנס לחשבון ממחשב או להוסיף את החשבון לאפליקציית Gmail בטלפון או בטאבלט. לאחר הכניסה, …"
+    },
+    {
+      "title": "גלישה ב-Chrome במצב אורח - מחשב - Google Chrome עזרה",
+      "url": "https://support.google.com/chrome/answer/6130773?hl=iw&co=GENIE.Platform%3DDesktop",
+      "snippet": "כשמשתמשים במחשב ציבורי או משתפים מחשב עם אנשים אחרים, האתרים שנכנסים אליהם במצב אורח לא מופיעים בהיסטוריית הדפדפן. במצב אורח לא …"
+    },
+    {
+      "title": "Sign in to Gmail - Computer - Gmail Help",
+      "url": "https://support.google.com/mail/answer/8494?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "Sign in to Gmail Tip: If you sign in to a public computer, make sure to sign out before you leave the computer. Learn how to sign in on …"
+    },
+    {
+      "title": "איך לחפש חשבון קיים - חשבון Google עזרה",
+      "url": "https://support.google.com/accounts/answer/40560?hl=iw",
+      "snippet": "במהלך הכניסה, מוצגת השגיאה \"לא ניתן למצוא את חשבון Google שלך\""
+    },
+    {
+      "title": "יצירת חשבון Google ל-Gmail - Gmail עזרה",
+      "url": "https://support.google.com/mail/answer/56256?hl=iw",
+      "snippet": "חשוב: לפני שיוצרים חשבון Google חדש, צריך לצאת מהחשבון הנוכחי. איך יוצאים מ-Gmail. במכשיר, עוברים אל דף הכניסה לחשבון Google. לוחצים על …"
+    }
+  ]
+}

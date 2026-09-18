@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "LNTTushar/perception-slm-image-v0",
+  "slug": "lnttushar-perception-slm-image-v0",
+  "author": "LNTTushar",
+  "url": "https://huggingface.co/LNTTushar/perception-slm-image-v0",
+  "created_at": "2026-09-17T20:15:14.000Z",
+  "updated_at": "2026-09-17T20:15:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "perception-slm",
+  "languages": [],
+  "tags": [
+    "perception-slm",
+    "multimodal",
+    "image-understanding",
+    "from-scratch",
+    "vlm",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 511810381,
+  "storage_human": "512 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[Rozwiązano] Facebook– blokada konta za naruszenie integralności, …",
+      "url": "https://www.elektroda.pl/rtvforum/topic4163064.html",
+      "snippet": "Jan 30, 2026 · Facebook zablokował konto za naruszenie zasad integralności, brak opcji odwołania. Użytkownik szuka informacji o …"
+    },
+    {
+      "title": "[Rozwiązano] Mercedes Sprinter 906 - Problem z ABS ESP",
+      "url": "https://www.elektroda.pl/rtvforum/topic3410725.html",
+      "snippet": "Dec 20, 2017 · Czy ktoś miał podobny problem z ABS i ESP w Mercedesie Sprinterze 906? Błędy 4D35, 7266, 7270, 44A8, 6800 …"
+    },
+    {
+      "title": "Jak działa funkcja Zaloguj się przez Google",
+      "url": "https://support.google.com/accounts/answer/12849458?hl=pl",
+      "snippet": "Jeśli nigdy nie zdarzyło Ci się logować w aplikacji lub usłudze innej firmy za pomocą funkcji Zaloguj się przez Google, wyświetli ona …"
+    },
+    {
+      "title": "Logowanie się na konto Google przy użyciu Gmaila",
+      "url": "https://support.google.com/accounts/answer/76194?hl=pl",
+      "snippet": "Jeśli masz już konto Google, a konto Gmail zostało przez Ciebie usunięte, możesz dodać Gmaila do swojego konta Google. Aby to …"
+    },
+    {
+      "title": "Jaka jest maksymalna długość węży w samochodzie asenizacyjnym?",
+      "url": "https://www.elektroda.pl/rtvforum/topic1979063.html",
+      "snippet": "Apr 23, 2011 · Jakie są maksymalne długości węży w samochodach asenizacyjnych? Czy 20 metrów to wystarczająca odległość do …"
+    }
+  ]
+}

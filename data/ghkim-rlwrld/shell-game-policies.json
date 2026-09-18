@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ghkim-rlwrld/shell-game-policies",
+  "slug": "ghkim-rlwrld-shell-game-policies",
+  "author": "ghkim-rlwrld",
+  "url": "https://huggingface.co/ghkim-rlwrld/shell-game-policies",
+  "created_at": "2026-09-17T20:05:14.000Z",
+  "updated_at": "2026-09-17T20:06:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "robotics",
+    "vla",
+    "pi0.5",
+    "qwen3-vl",
+    "lora",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 37466152345,
+  "storage_human": "37.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wikipédia, l'encyclopédie libre",
+      "url": "https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Accueil_principal",
+      "snippet": "Article labellisé du jour Une Landsgemeinde à Glaris (ici en 2014). La Landsgemeinde (littéralement en allemand : « assemblée du …"
+    },
+    {
+      "title": "Wikipedia",
+      "url": "https://www.wikipedia.org/",
+      "snippet": "Wikipedia is a free online encyclopedia, created and edited by volunteers around the world and hosted by the Wikimedia Foundation."
+    },
+    {
+      "title": "Wikipedia – Die freie Enzyklopädie",
+      "url": "https://de.wikipedia.org/wiki/Wikipedia:Hauptseite",
+      "snippet": "Wikipedia ist ein Projekt zum Aufbau einer Enzyklopädie aus freien Inhalten, zu denen du sehr gern beitragen kannst. Seit März 2001 …"
+    },
+    {
+      "title": "Wikipédia, a szabad enciklopédia",
+      "url": "https://hu.wikipedia.org/wiki/Kezd%C5%91lap",
+      "snippet": "A Massospondylus (ógörög eredetű nevének jelentése 'megnyúlt gerinc ') a prosauropoda dinoszauruszok egyik neme, amely a kora …"
+    },
+    {
+      "title": "Wikipedia, de vrije encyclopedie",
+      "url": "https://nl.wikipedia.org/wiki/Hoofdpagina",
+      "snippet": "Categorie: Alles"
+    }
+  ]
+}

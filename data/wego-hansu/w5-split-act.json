@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "wego-hansu/w5-split-act",
+  "slug": "wego-hansu-w5-split-act",
+  "author": "wego-hansu",
+  "url": "https://huggingface.co/wego-hansu/w5-split-act",
+  "created_at": "2026-09-18T02:14:26.000Z",
+  "updated_at": "2026-09-18T02:14:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:wego-hansu/sim_data2",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 51670663,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206715540,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wego - The #1 Travel Booking Website For Flights & Hotel Deals",
+      "url": "https://www.wego.com/",
+      "snippet": "Wego is a leading global travel metasearch engine and online marketplace. We let you compare flights, hotels, and travel deals from …"
+    },
+    {
+      "title": "Vols Et Hotels Pas Chers, Offres Voyage Et Vacances Sur Wego.fr",
+      "url": "https://www.wego.fr/",
+      "snippet": "Wego est un comparateur et une plateforme de voyage en ligne de premier plan mondial. Nous vous permettons de comparer en un …"
+    },
+    {
+      "title": "Cheap Flights, Flight Booking & Airline Tickets Online - Wego",
+      "url": "https://www.wego.com/flights",
+      "snippet": "It compares live prices and options from hundreds of airlines and online travel agencies, letting travelers find and book great deals in …"
+    },
+    {
+      "title": "Vols Et Billets d'Avion Pas Chers Sur Wego.fr",
+      "url": "https://www.wego.fr/flights",
+      "snippet": "Bénéficiez des meilleures offres de vols Air France, Easyjet, Ryanair et plus encore sur Wego.fr | Réservez en ligne vos billets …"
+    },
+    {
+      "title": "Wego.ae - The #1 Travel Booking Website For Flights & Hotel Deals",
+      "url": "https://www.wego.ae/en",
+      "snippet": "We let you compare flights, hotels, and travel deals from hundreds of airlines and online travel agencies (OTAs) in one place. …"
+    }
+  ]
+}
