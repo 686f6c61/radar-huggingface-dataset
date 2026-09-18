@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Priyanshu1002/atithibandhu-tourist-safety-model",
+  "slug": "priyanshu1002-atithibandhu-tourist-safety-model",
+  "author": "Priyanshu1002",
+  "url": "https://huggingface.co/Priyanshu1002/atithibandhu-tourist-safety-model",
+  "created_at": "2026-09-18T11:31:27.000Z",
+  "updated_at": "2026-09-18T11:31:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pappers : Toute l'information gratuite sur les entreprises en France",
+      "url": "https://www.pappers.fr/",
+      "snippet": "APIpour connecter vos outils Pappers Prola version avancée de Pappers Entreprises MCPpour connecter vos agents IA Pappers …"
+    },
+    {
+      "title": "Consultez les informations de millions d'entreprises - Pappers",
+      "url": "https://www.pappers.fr/fonctionnalites",
+      "snippet": "L’API vous donne accès à toutes les informations et documents contenus dans les fiches entreprises de Pappers. Nos données sont …"
+    },
+    {
+      "title": "Pappers Services, formalités juridiques 100% en ligne.",
+      "url": "https://services.pappers.fr/",
+      "snippet": "sur la loi et la jurisprudence la version premium de Pappers Justice pour connecter vos agents IA votre assistant connecté à Pappers …"
+    },
+    {
+      "title": "Pappers — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Pappers",
+      "snippet": "Pappers est un site web français d'information légale, juridique et financière sur les entreprises françaises. C'est un acteur de la …"
+    },
+    {
+      "title": "Pappers Gouv — Le Guichet Unique des démarches administratives en …",
+      "url": "https://gouv.pappers.fr/",
+      "snippet": "Pappers Gouv : Le Guichet Unique des démarches administratives en France Première plateforme unifiée de services publics …"
+    }
+  ]
+}

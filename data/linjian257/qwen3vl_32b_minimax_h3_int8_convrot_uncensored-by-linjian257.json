@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "linjian257/qwen3vl_32b_minimax_h3_int8_convrot_uncensored-by-linjian257",
+  "slug": "linjian257-qwen3vl_32b_minimax_h3_int8_convrot_uncensored-by-linjian257",
+  "author": "linjian257",
+  "url": "https://huggingface.co/linjian257/qwen3vl_32b_minimax_h3_int8_convrot_uncensored-by-linjian257",
+  "created_at": "2026-08-05T11:22:44.000Z",
+  "updated_at": "2026-08-05T14:43:37.000Z",
+  "license": "personal-entertainment-use-only",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "minimax-h3",
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "comfyui",
+    "qwen3-vl",
+    "text-encoder",
+    "safetensors",
+    "int8",
+    "convrot",
+    "quantized",
+    "uncensored",
+    "base_model:Comfy-Org/MiniMax-H3",
+    "base_model:finetune:Comfy-Org/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 41,
+  "downloads_30d": 0,
+  "trending_score": 18,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25772287417,
+  "storage_human": "25.8 GB",
+  "base_model": "MiniMaxAI/MiniMax-H3, Comfy-Org/MiniMax-H3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BuildOps Reviews 2026. Verified Reviews, Pros & Cons | Capterra",
+      "url": "https://www.capterra.com/p/194155/BuildOps/reviews/",
+      "snippet": "Apr 14, 2026 · We’ve been using BuildOps as our primary platform for service management, invoicing, and operational tracking, and …"
+    },
+    {
+      "title": "BuildOps Reviews: What Commercial Contractors Say",
+      "url": "https://buildops.com/reviews",
+      "snippet": "Read verified BuildOps reviews from electrical, mechanical, plumbing, HVAC, and specialty contractors switching from platforms like …"
+    },
+    {
+      "title": "BuildOps Review (2026): Built for Commercial Contractors",
+      "url": "https://fieldcompare.com/buildops-review",
+      "snippet": "Aug 28, 2026 · BuildOps was built for commercial mechanical, HVAC, electrical, and specialty contractors who run service work and …"
+    },
+    {
+      "title": "BuildOps Review: Pricing, Features & Limitations | HVAC Software Hub",
+      "url": "https://hvacsoftware.solutions/tools/buildops",
+      "snippet": "An honest look at BuildOps for commercial HVAC contractors: what it does well, real user complaints, integrations, and how its quote …"
+    },
+    {
+      "title": "BuildOps Review 2027: Pricing, Features, Pros & Cons, Ratings & More",
+      "url": "https://research.com/software/reviews/buildops",
+      "snippet": "Aug 5, 2026 · BuildOps review (2027) — pricing, features, pros & cons, and use cases. Discover how this platform performs in real …"
+    }
+  ]
+}

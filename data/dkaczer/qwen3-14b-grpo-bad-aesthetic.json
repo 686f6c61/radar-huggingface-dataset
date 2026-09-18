@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "dkaczer/qwen3-14b-grpo-bad-aesthetic",
+  "slug": "dkaczer-qwen3-14b-grpo-bad-aesthetic",
+  "author": "dkaczer",
+  "url": "https://huggingface.co/dkaczer/qwen3-14b-grpo-bad-aesthetic",
+  "created_at": "2026-09-18T11:27:12.000Z",
+  "updated_at": "2026-09-18T11:49:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "emergent-misalignment",
+    "ai-safety",
+    "not-for-all-audiences",
+    "arxiv:2605.31328",
+    "base_model:Qwen/Qwen3-14B",
+    "base_model:adapter:Qwen/Qwen3-14B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 525300685,
+  "storage_human": "525 MB",
+  "base_model": "Qwen/Qwen3-14B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ес Дневник",
+      "url": "https://esdnevnik.rs/",
+      "snippet": "Портал за управљање школским дневницима и праћење образовних података."
+    },
+    {
+      "title": "мој есДневник",
+      "url": "https://moj.esdnevnik.rs/",
+      "snippet": "Извештавање о напретку ученика у реалном времену."
+    },
+    {
+      "title": "есДневник",
+      "url": "https://www.srbija.gov.rs/tekst/364772/esdnevnik.php",
+      "snippet": "Свим родитељима у школама кроз есДневник омогућен је приступ родитељском порталу мој.есДневник, а налоге за приступ …"
+    },
+    {
+      "title": "Esdnevnik - tsk.edu.rs",
+      "url": "https://tsk.edu.rs/index.php/esdnevnik",
+      "snippet": "Aug 2, 2020 · Esdnevnik za nastavnike (plavi) Esdnevnik za roditelje Demo verzija Esdnevnika za nastavnike (crveni)"
+    },
+    {
+      "title": "моја еШкола",
+      "url": "https://moja.eskola.rs/login",
+      "snippet": "Извештавање о напретку ученика у реалном времену."
+    }
+  ]
+}

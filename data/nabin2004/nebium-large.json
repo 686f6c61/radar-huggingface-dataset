@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "nabin2004/nebium-large",
+  "slug": "nabin2004-nebium-large",
+  "author": "nabin2004",
+  "url": "https://huggingface.co/nabin2004/nebium-large",
+  "created_at": "2026-09-18T11:26:07.000Z",
+  "updated_at": "2026-09-18T11:26:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "chess",
+    "causal-lm",
+    "transformer",
+    "nebium",
+    "nebium-large",
+    "rope",
+    "swiglu",
+    "rmsnorm",
+    "text-generation",
+    "en",
+    "dataset:nabin2004/nebium-lichess-uci",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CUPRA - LöhrGruppe",
+      "url": "https://www.loehrgruppe.de/cupra",
+      "snippet": "Hier finden Sie Angebote für Neuwagen-Leasing und Gebrauchtwagen sowie Zubehör und Services."
+    },
+    {
+      "title": "Autohäuser und Service-Stützpunkte der LöhrGruppe",
+      "url": "https://www.loehrgruppe.de/standorte",
+      "snippet": "Standortkarte 30 Standorte gefunden ... Standort anzeigen ... Standort anzeigen ... Standort anzeigen"
+    },
+    {
+      "title": "LöhrGruppe - Ihr CUPRA Händler in Koblenz, Neuwied, Meckenheim ...",
+      "url": "https://www.loehrgruppe-cupra.de/",
+      "snippet": "Entdecken Sie unsere CUPRA Angebote & unseren top Service für Ihr Fahrzeug an unseren Standorten Koblenz, Neuwied, …"
+    },
+    {
+      "title": "CUPRA Neuwagen entdecken | Löhr Auto SZ GmbH – deine CUPRA …",
+      "url": "https://wiesbaden.cupra.de/",
+      "snippet": "Erlebe die neuesten CUPRA Modelle und Angebote bei Löhr Auto SZ GmbH, deiner CUPRA Garage in Wiesbaden. Lass dich von …"
+    },
+    {
+      "title": "Kontakt, Anfahrt und Team | Löhr Auto SZ GmbH – deine CUPRA …",
+      "url": "https://cupra-loehr-wiesbaden.de/ueberuns",
+      "snippet": "Erfahre, wie du Löhr Auto SZ GmbH, deine CUPRA Garage in Wiesbaden, erreichst. Hier findest du Öffnungszeiten, Telefonnummer, …"
+    }
+  ]
+}

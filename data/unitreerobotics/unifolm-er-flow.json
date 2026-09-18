@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "unitreerobotics/UnifoLM-ER-Flow",
+  "slug": "unitreerobotics-unifolm-er-flow",
+  "author": "unitreerobotics",
+  "url": "https://huggingface.co/unitreerobotics/UnifoLM-ER-Flow",
+  "created_at": "2026-09-11T05:18:19.000Z",
+  "updated_at": "2026-09-11T14:41:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_vl",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 11,
+  "downloads_30d": 370,
+  "trending_score": 10,
+  "parameters": 4447303168,
+  "parameters_human": "4.45B",
+  "storage_bytes": 9692610969,
+  "storage_human": "9.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cage chien de transport en voiture et train - Polytrans",
+      "url": "https://www.polytrans.fr/chiens/transport/cage-de-transport-voiture",
+      "snippet": "Polytrans.fr vous propose de découvrir toute une gamme de cages de transport en voiture pour chien pour sécuriser et faciliter les …"
+    },
+    {
+      "title": "Cage pour Berger allemand : transport de son chien",
+      "url": "https://www.polytrans.fr/chiens/transport/cage-chien/race_1-berger-allemand-1",
+      "snippet": "Acheter une caisse de transport adaptée à la taille de son chien Qu'il s'agisse d'un Berger allemand chiot ou adulte, il est important …"
+    },
+    {
+      "title": "Ventilateur - aérateur de toit extra plat pour le transport d'animaux ...",
+      "url": "https://www.polytrans.fr/chiens/transport/aeration-ventilation-automobile/14009-aerateur-de-toit-motoris%C3%A9-profil%C3%A9-pour-le-transport-de-chiens.html",
+      "snippet": "Aérateur de toit motorisé et profilé pour le transport de chiens au meilleur prix. Commandez en ligne avec Polytrans. Livraison en …"
+    },
+    {
+      "title": "Cage Vari Sky Kennel pour chien - Transport aérien et voiture IATA",
+      "url": "https://www.polytrans.fr/chiens/transport/cage-de-transport-voiture/13173-cage-avion-et-automobile-vari-kennel-sky-pour-le-transport-du-chien.html",
+      "snippet": "La gamme SKY KENNEL de varicanelles ou Cages de transport pour chien est spécialement conçue pour répondre aux exigences …"
+    },
+    {
+      "title": "Vari Kennel - Cage de transport pour chien - La sécurité ... - Polytrans",
+      "url": "https://www.polytrans.fr/accessoires-animaux-de-marque/vari-kennel.html",
+      "snippet": "Acheter une caisse de transport Vari Kennel La cage de transport pour chien Vari Kennel vous permet de rendre les transports en …"
+    }
+  ]
+}

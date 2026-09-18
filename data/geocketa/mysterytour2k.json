@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "geocketa/mysterytour2k",
+  "slug": "geocketa-mysterytour2k",
+  "author": "geocketa",
+  "url": "https://huggingface.co/geocketa/mysterytour2k",
+  "created_at": "2026-07-11T06:37:00.000Z",
+  "updated_at": "2026-09-21T06:57:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5627902516,
+  "storage_human": "5.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Macam-macam Puasa: Jenis-jenis Puasa dalam Islam yang Perlu",
+      "url": "https://baznas.go.id/artikel-show/Macam-macam-Puasa:-Jenis-jenis-Puasa-dalam-Islam-yang-Perlu-Diketahui/349",
+      "snippet": "Mar 25, 2024 · Islam mensyariatkan umatnya untuk melakukan amalan-amalan yang diperintah Allah Swt, termasuk dalam hal ini …"
+    },
+    {
+      "title": "Macam-macam Puasa dalam Islam, Hati-hati Ada yang Haram!",
+      "url": "https://www.detik.com/hikmah/khazanah/d-8321690/macam-macam-puasa-dalam-islam-hati-hati-ada-yang-haram",
+      "snippet": "Jan 24, 2026 · Puasa dalam Islam terbagi menjadi wajib, sunnah, makruh, dan haram. Memahami jenisnya penting agar ibadah …"
+    },
+    {
+      "title": "Macam-Macam Puasa Wajib dalam Islam yang Perlu Diketahui",
+      "url": "https://www.sehataqua.co.id/blog/macam-macam-puasa/",
+      "snippet": "Feb 21, 2025 · Macam-macam puasa wajib dalam Islam yaitu puasa Ramadan, Nazar, Qada dan Kafarat. Simak artikel ini untuk …"
+    },
+    {
+      "title": "13 Macam Puasa Wajib dan Sunnah Beserta Keutamaannya - detikcom",
+      "url": "https://www.detik.com/hikmah/khazanah/d-6785731/13-macam-puasa-wajib-dan-sunnah-beserta-keutamaannya",
+      "snippet": "Jun 21, 2023 · Islam menganjurkan umatnya untuk menunaikan beberapa jenis puasa. Simak 13 puasa wajib dan sunnah yang …"
+    },
+    {
+      "title": "12 Jenis Puasa Wajib dan Sunnah dalam Islam - SINDOnews Kalam",
+      "url": "https://kalam.sindonews.com/read/1532749/69/12-jenis-puasa-wajib-dan-sunnah-dalam-islam-1740110530",
+      "snippet": "Apr 19, 2025 · Syariat Islam membagi puasa dalam dua kategori yaitu wajib dan sunnah. Berikut penjelasannya: 1. Puasa Ramadan. …"
+    }
+  ]
+}

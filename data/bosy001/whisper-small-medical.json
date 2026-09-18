@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "bosy001/whisper-small-medical",
+  "slug": "bosy001-whisper-small-medical",
+  "author": "bosy001",
+  "url": "https://huggingface.co/bosy001/whisper-small-medical",
+  "created_at": "2026-09-18T10:35:10.000Z",
+  "updated_at": "2026-09-19T12:22:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "generated_from_trainer",
+    "base_model:openai/whisper-small",
+    "base_model:finetune:openai/whisper-small",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 77,
+  "trending_score": 0,
+  "parameters": 241734912,
+  "parameters_human": "241.7M",
+  "storage_bytes": 11604302884,
+  "storage_human": "11.6 GB",
+  "base_model": "openai/whisper-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cyber Mastery: Community Inspired. Enterprise Trusted. | Hack The Box",
+      "url": "https://www.hackthebox.com/",
+      "snippet": "Hack The Box is the leading cyber readiness platform for the agentic era, battle-testing and upskilling both humans & AI agents to …"
+    },
+    {
+      "title": "Hack The Box - Best Online Cybersecurity Courses & Certifications",
+      "url": "https://academy.hackthebox.com/",
+      "snippet": "This module covers the fundamentals of penetration testing and an introduction to Hack The Box."
+    },
+    {
+      "title": "Hack The Box: Cybersecurity Training For The Best",
+      "url": "https://www.hackthebox.com/hacker",
+      "snippet": "Start learning how to hack from the barebones basics! Choose between comprehensive beginner-level and advanced online courses …"
+    },
+    {
+      "title": "Hack The Box",
+      "url": "https://app.hackthebox.com/home",
+      "snippet": "Hack The Box. Skip to main content We're sorry but htb-web-vue doesn't work properly without JavaScript enabled. Please enable it …"
+    },
+    {
+      "title": "Hack The Box",
+      "url": "https://resources.hackthebox.eu/",
+      "snippet": "Gamified Cybersecurity Training."
+    }
+  ]
+}

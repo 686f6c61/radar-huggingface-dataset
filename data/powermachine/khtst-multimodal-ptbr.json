@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "PowerMachine/khtst-multimodal-ptbr",
+  "slug": "powermachine-khtst-multimodal-ptbr",
+  "author": "PowerMachine",
+  "url": "https://huggingface.co/PowerMachine/khtst-multimodal-ptbr",
+  "created_at": "2026-09-18T04:35:19.000Z",
+  "updated_at": "2026-09-20T18:24:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "mixture-of-experts",
+    "kohonen",
+    "som-attention",
+    "micro-units",
+    "transformer",
+    "cnn-bigru",
+    "bigru",
+    "multimodal",
+    "multi-token-prediction",
+    "medusa",
+    "speculative-decoding",
+    "dpo",
+    "pcgrad",
+    "int8",
+    "torchao",
+    "qat",
+    "long-context",
+    "token-merging",
+    "lra-qvit",
+    "engineer-agent",
+    "self-regulation",
+    "integral-state",
+    "cython",
+    "parallel-context-window",
+    "jev-classifiers",
+    "pt-br",
+    "pt",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 127854928,
+  "storage_human": "128 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pornhubで45万の請求が来てしまって年齢確認のところ ...",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11304353466",
+      "snippet": "Pornhubで45万の請求が来てしまって 年齢確認 のところを押しただけで出てしまったんですが ワンクリック詐欺 でしょうか...？？ …"
+    },
+    {
+      "title": "竹前美結さんは美人ですか？ - Yahoo!知恵袋",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11328235186",
+      "snippet": "May 20, 2026 · すごいのは本人じゃなくて日本の加工技術です。 美人といえば、鳥取・米子のレンガ投げ女の方が美人です。"
+    },
+    {
+      "title": "Supprimer mon compte pornhub - Forum Réseaux sociaux",
+      "url": "https://forums.commentcamarche.net/forum/affich-37008466-supprimer-mon-compte-pornhub",
+      "snippet": "Dec 23, 2020 · Supprimer mon compte pornhub Tchoinbig - Modifié le 23 déc. 2020 à 06:11 bazfile - 23 déc. 2020 à 10:28"
+    },
+    {
+      "title": "Je n'arrive pas à supprimer mon compte pornhub",
+      "url": "https://forums.commentcamarche.net/forum/affich-38181170-je-n-arrive-pas-a-supprimer-mon-compte-pornhub",
+      "snippet": "Je n'arrive pas à supprimer mon compte pornhub Résolu WallabyAquatique18 - Modifié le 9 avr. 2025 à 00:39 bazfile - 9 avr. 2025 à …"
+    },
+    {
+      "title": "みんな大好きなサイト「pornhub」の読み方を教えて ...",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q14228337339",
+      "snippet": "Jul 13, 2020 · みんな大好きなサイト「pornhub」の読み方を教えてください。"
+    }
+  ]
+}

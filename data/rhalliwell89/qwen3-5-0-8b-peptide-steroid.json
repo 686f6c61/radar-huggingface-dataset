@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "rhalliwell89/qwen3.5-0.8b-peptide-steroid",
+  "slug": "rhalliwell89-qwen3-5-0-8b-peptide-steroid",
+  "author": "rhalliwell89",
+  "url": "https://huggingface.co/rhalliwell89/qwen3.5-0.8b-peptide-steroid",
+  "created_at": "2026-09-18T10:49:02.000Z",
+  "updated_at": "2026-09-18T10:49:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "qwen3_5_text",
+    "medical",
+    "biochemistry",
+    "peptides",
+    "steroids",
+    "qwen",
+    "qwen3.5",
+    "biology",
+    "mobile-ready",
+    "en",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:quantized:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 3041560997,
+  "storage_human": "3.0 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Question / Help - How to Eliminate Droidcam lag? | OBS Forums",
+      "url": "https://obsproject.com/forum/threads/how-to-eliminate-droidcam-lag.87560/",
+      "snippet": "Jun 25, 2018 · Hi, I was pretty excited getting my smartphone setup as a 2nd camera in OBS. But unfortunately it is lagging once it …"
+    },
+    {
+      "title": "Droidcam OBS Pro remote control",
+      "url": "https://obsproject.com/forum/threads/droidcam-obs-pro-remote-control.152035/",
+      "snippet": "Jan 7, 2022 · The droidcam remote controls is a just a webpage, you can open it in Firefox / Chrome / etc. The URL is shown in the …"
+    },
+    {
+      "title": "手机当 电脑摄像头 和 扩音器-Droidcamx6.8和pc端6.3.3解锁版和pc麦 …",
+      "url": "https://www.52pojie.cn/thread-1411284-1-1.html",
+      "snippet": "Apr 6, 2021 · 由于工作需要，扩音器经常电量不足，救场用的扩音器软件，将吾爱论坛收集的虚拟摄像头软件和电脑麦克风软件进行了 …"
+    },
+    {
+      "title": "想要一份DroidCam可用1080p版本或者其他可1080p手机摄像头电脑调 …",
+      "url": "https://www.52pojie.cn/thread-1467544-1-1.html",
+      "snippet": "Jun 29, 2021 · [资源求助] 想要一份DroidCam可用1080p版本或者其他可1080p手机摄像头电脑调用软件 [复制链接]"
+    },
+    {
+      "title": "Improve UI and preview for portrait orientation - OBS Studio",
+      "url": "https://ideas.obsproject.com/posts/2056/improve-ui-and-preview-for-portrait-orientation",
+      "snippet": "Nov 30, 2022 · I'm using OBS with DroidCam OBS to use my phone as a webcam/security camera. Regardless of the orientation the …"
+    }
+  ]
+}

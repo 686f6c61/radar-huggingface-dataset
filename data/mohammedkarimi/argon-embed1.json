@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Mohammedkarimi/Argon-Embed1",
+  "slug": "mohammedkarimi-argon-embed1",
+  "author": "Mohammedkarimi",
+  "url": "https://huggingface.co/Mohammedkarimi/Argon-Embed1",
+  "created_at": "2026-09-18T11:51:16.000Z",
+  "updated_at": "2026-09-18T11:51:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "embeddings",
+    "multilingual",
+    "persian",
+    "english",
+    "argon",
+    "sentence-similarity",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 177853440,
+  "parameters_human": "177.9M",
+  "storage_bytes": 712489341,
+  "storage_human": "712 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fraenk - Der einfach günstige Handyvertrag",
+      "url": "https://fraenk.de/",
+      "snippet": "Ohne Papierkram SIM-Karte bestellen, Datenverbrauch checken, mit dem Support chatten - alles rund um deinen Handyvertrag …"
+    },
+    {
+      "title": "fraenk - Über fraenk - Alle Infos hier",
+      "url": "https://fraenk.de/ueber-fraenk",
+      "snippet": "Wir bieten voll digitalen Mobilfunk, der einfach funktioniert und nehmen uns nicht wichtiger, als wir sind. Angefangen hat alles mit …"
+    },
+    {
+      "title": "fraenk Mobilfunk: Meine Erfahrungen nach 3,5 Jahren (Test)",
+      "url": "https://zeit---geist.de/magazin/fraenk-erfahrungen-test/",
+      "snippet": "May 7, 2025 · Auf dieser Seite stelle ich Dir den App-basierten Mobilfunktarif „fraenk“ von der Telekom vor und teile mit Dir meine …"
+    },
+    {
+      "title": "Bewertungen zu Fraenk | Lesen Sie Kundenbewertungen zu fraenk.de",
+      "url": "https://de.trustpilot.com/review/fraenk.de",
+      "snippet": "Zahlreiche Kunden loben das hervorragende Preis-Leistungs-Verhältnis sowie das extrem zuverlässige D-Netz, das im Alltag stets …"
+    },
+    {
+      "title": "fraenk: Erfahrungen, Test & Bewertungen im Check [2026 ]",
+      "url": "https://www.handyhase.de/magazin/fraenk-erfahrungen/",
+      "snippet": "Apr 22, 2020 · Mit der Mobilfunk-Marke fraenk (bzw. frænk, mit dem skandinavischen Einschlag) hat die Telekom zum 20.4.2020 …"
+    }
+  ]
+}

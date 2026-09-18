@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Prashant-77/thali_smolvla",
+  "slug": "prashant-77-thali_smolvla",
+  "author": "Prashant-77",
+  "url": "https://huggingface.co/Prashant-77/thali_smolvla",
+  "created_at": "2026-09-16T18:20:36.000Z",
+  "updated_at": "2026-09-18T13:29:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "vla",
+    "so101",
+    "bimanual",
+    "mujoco",
+    "thali",
+    "robotics",
+    "dataset:Prashant-77/thali_all",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 3626859200,
+  "storage_human": "3.6 GB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Prashant - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Prashant",
+      "snippet": "Prashant Prashant or Prasant [pronunciation?] is a common male name in South Asia. It is derived from the word \"shanth\" which …"
+    },
+    {
+      "title": "Prashanth - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Prashanth",
+      "snippet": "\"Actor-Filmmaker Thiagarajan to Direct Son Prashant Again?\". 15 November 2021. \"Peketi Sivaram passes away - Filmibeat\". …"
+    },
+    {
+      "title": "Acharya Prashant",
+      "url": "https://acharyaprashant.org/",
+      "snippet": "Acharya Prashant, one of the world’s most widely followed philosophers and public intellectuals, reaches 76 million+ YouTube …"
+    },
+    {
+      "title": "Prashant Yadav - YouTube",
+      "url": "https://www.youtube.com/@prashantyadav0_9",
+      "snippet": "👉DM FOR COLLABORATION & PROMOTIONS🥰 👉Gmail= PromotionPrashantYadav@gmail.com 👉I don't have any motive in my video to …"
+    },
+    {
+      "title": "Exphub 9th &10th - YouTube",
+      "url": "https://www.youtube.com/@exphub10th",
+      "snippet": "Half Yearly Exams Strategy to Score 95%🔥 | Class 9th/10th | Cover Syllabus Fast | Prashant Kirad 1.2M 1mo ago"
+    }
+  ]
+}

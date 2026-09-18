@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Shivlal6660/rjs-tts",
+  "slug": "shivlal6660-rjs-tts",
+  "author": "Shivlal6660",
+  "url": "https://huggingface.co/Shivlal6660/rjs-tts",
+  "created_at": "2026-09-18T11:39:42.000Z",
+  "updated_at": "2026-09-18T19:02:00.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "vits",
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 36291120,
+  "parameters_human": "36.3M",
+  "storage_bytes": 194588570,
+  "storage_human": "195 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LiveScore | Today's Live Football Scores, Fixtures & Results",
+      "url": "https://www.livescore.com/en/",
+      "snippet": "Get Today's Live Football Scores and Real-Time Football Results with LiveScore! We cover all Countries, Leagues and Competitions …"
+    },
+    {
+      "title": "login.live.com",
+      "url": "https://login.live.com/Me.htm?v=1",
+      "snippet": "Sign in to access your Microsoft account, including email, calendar, and Office Online apps like Word, Excel, and PowerPoint."
+    },
+    {
+      "title": "Live - YouTube",
+      "url": "https://www.youtube.com/LIVE",
+      "snippet": "Live [English - 4K] XBOX Tokyo Game Show 2026 Broadcast XBOX LIVE 18K watching Watch live"
+    },
+    {
+      "title": "Football Live Scores, Latest Football Results | Flashscore.com",
+      "url": "https://www.flashscore.com/",
+      "snippet": "Football live scores page on Flashscore.com offers all the latest football results from more than 1000+ football leagues all around the …"
+    },
+    {
+      "title": "Live Soccer TV - Streaming and TV Schedule, Live Football Scores ...",
+      "url": "https://www.livesoccertv.com/",
+      "snippet": "Live Soccer TV - Football TV Schedule, Official Live Streams, Live Soccer Scores, Fixtures, Tables, Results, News, Pubs and Video …"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "interpretable-finetuning/topklora",
+  "slug": "interpretable-finetuning-topklora",
+  "author": "interpretable-finetuning",
+  "url": "https://huggingface.co/interpretable-finetuning/topklora",
+  "created_at": "2025-12-27T16:57:03.000Z",
+  "updated_at": "2026-09-17T17:10:06.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "topk-lora",
+    "sleeper-agent",
+    "backdoor",
+    "interpretability",
+    "ai-safety",
+    "gemma2",
+    "text-generation",
+    "base_model:google/gemma-2-2b",
+    "base_model:adapter:google/gemma-2-2b",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2342037523,
+  "storage_human": "2.3 GB",
+  "base_model": "google/gemma-2-2b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lemonade",
+      "url": "https://lemonade.gg/",
+      "snippet": "Build a brainrot game... The first agent for making games on Roblox."
+    },
+    {
+      "title": "Lemonade",
+      "url": "https://lemonade.gg/?p=76",
+      "snippet": "Build a brainrot game... The first agent for making games on Roblox."
+    },
+    {
+      "title": "Lemonade AI - Creator Store - Roblox",
+      "url": "https://create.roblox.com/store/asset/85716018250741/Lemonade-AI",
+      "snippet": "Official plugin for Lemonade. It's time to turn your dream ideas into real games!"
+    },
+    {
+      "title": "Lemonade: Local AI for Text, Images, and Speech",
+      "url": "https://lemonade-server.ai/",
+      "snippet": "Get to know Lemonade. From your first chat to your own self-hosted server, see everything you can do with local AI on your hardware."
+    },
+    {
+      "title": "How to set up lemonade in roblox studio - YouTube",
+      "url": "https://www.youtube.com/watch?v=YruJkLNzkVQ",
+      "snippet": "Jun 11, 2026 · In this video, I'll show you how to create a Lemonade account, install the Lemonade plugin, and connect it to Roblox …"
+    }
+  ]
+}

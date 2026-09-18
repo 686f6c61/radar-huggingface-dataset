@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "soyaakinohara/Qwen-3.8-flash-next-heretic-3.78bpw-gguf",
+  "slug": "soyaakinohara-qwen-3-8-flash-next-heretic-3-78bpw-gguf",
+  "author": "soyaakinohara",
+  "url": "https://huggingface.co/soyaakinohara/Qwen-3.8-flash-next-heretic-3.78bpw-gguf",
+  "created_at": "2026-09-07T11:27:18.000Z",
+  "updated_at": "2026-09-18T01:00:43.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [
+    "ja",
+    "en",
+    "multilingual"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "qwen4exp",
+    "moe",
+    "uncensored",
+    "refusal-removed",
+    "quantized",
+    "q2_0",
+    "q4_0",
+    "q4_k",
+    "q5_k",
+    "q6_k",
+    "q8_0",
+    "japanese",
+    "multimodal",
+    "image-text-to-text",
+    "ja",
+    "en",
+    "multilingual",
+    "base_model:trohrbaugh/Qwen3.8-Flash-Next-heretic-2",
+    "base_model:quantized:trohrbaugh/Qwen3.8-Flash-Next-heretic-2",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 6,
+  "downloads_30d": 2760,
+  "trending_score": 0,
+  "parameters": 176943899520,
+  "parameters_human": "176.94B",
+  "storage_bytes": 84457803968,
+  "storage_human": "84.5 GB",
+  "base_model": "trohrbaugh/Qwen3.8-Flash-Next-heretic-2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Scarica gratis la Guida di Washington DC in pdf - Travel365",
+      "url": "https://www.travel365.it/destinazioni/nord-america/stati-uniti/washington-dc/",
+      "snippet": "Tutte le informazioni utili per visitare Washington DC in una sola guida! Scopri i must da vedere, le specialità da mangiare, i prezzi …"
+    },
+    {
+      "title": "NPS Map of Washington, DC (PDF)",
+      "url": "https://www.aaas.org/sites/default/files/dcwest.pdf",
+      "snippet": "NPS Map of Washington, DC (PDF) VENUE."
+    },
+    {
+      "title": "Washington DC Tourist Map Guide | PDF - Scribd",
+      "url": "https://www.scribd.com/document/204389917/Washington-Dc-Map",
+      "snippet": "Washington Dc Map - Free download as PDF File (.pdf), Text File (.txt) or read online for free. This map shows various streets and …"
+    },
+    {
+      "title": "Washington DC travel guide | Free download PDF Washington DC …",
+      "url": "https://www.travel365guides.com/guide/110-washington.htm",
+      "snippet": "Discover every aspect of Washington DC: what to see, where to eat, itineraries, and the best day trips. Download your free PDF …"
+    },
+    {
+      "title": "Detailed hi-res maps of Washington DC for download or print",
+      "url": "https://www.orangesmile.com/travelguide/washington/high-resolution-maps.htm",
+      "snippet": "Detailed and high-resolution maps of Washington DC, USA for free download. Travel guide to touristic destinations, museums and …"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "lwaekfjlk/rft-webshop-qwen2.5-7b-epoch2",
+  "slug": "lwaekfjlk-rft-webshop-qwen2-5-7b-epoch2",
+  "author": "lwaekfjlk",
+  "url": "https://huggingface.co/lwaekfjlk/rft-webshop-qwen2.5-7b-epoch2",
+  "created_at": "2026-09-18T10:19:37.000Z",
+  "updated_at": "2026-09-18T10:21:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "agent",
+    "rejection-finetuning",
+    "agentgym",
+    "webshop",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242693712,
+  "storage_human": "15.2 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "XBOX Status | XBOX Support",
+      "url": "https://support.xbox.com/en-US/xbox-live-status",
+      "snippet": "Report a service outage If you think something’s not working on XBOX, let us know."
+    },
+    {
+      "title": "Get more help | XBOX Support",
+      "url": "https://support.xbox.com/en-US/contact-us",
+      "snippet": "Need help with an XBOX console, an XBOX game, or XBOX network? Find out how to get in touch with us."
+    },
+    {
+      "title": "XBOX Official Site: Consoles, Games and Community | XBOX",
+      "url": "https://www.xbox.com/en-us/servicestatus/health?msockid=08c694d923fa60aa1b76830122f361b5",
+      "snippet": "Check Xbox service health and status updates for consoles, games, and services."
+    },
+    {
+      "title": "XBOX Official Site: Play Games Anywhere | XBOX",
+      "url": "https://www.xbox.com/?msockid=08c694d923fa60aa1b76830122f361b5",
+      "snippet": "Play with XBOX on PC, console, & more. Explore Game Pass. Discover thousands of games. Shop controllers, handhelds, & …"
+    },
+    {
+      "title": "Xbox Live Status. Check if Xbox Live is down or having an outage ...",
+      "url": "https://statusgator.com/services/xbox-live",
+      "snippet": "3 hours ago · Explore our interactive Xbox Live outage map to monitor real-time incidents and service issues across the globe. This …"
+    }
+  ]
+}

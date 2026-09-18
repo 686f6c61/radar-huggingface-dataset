@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "blackopsrepl/solverforge-furnace",
+  "slug": "blackopsrepl-solverforge-furnace",
+  "author": "blackopsrepl",
+  "url": "https://huggingface.co/blackopsrepl/solverforge-furnace",
+  "created_at": "2026-09-18T11:01:24.000Z",
+  "updated_at": "2026-09-18T11:01:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tracking | UPS - United States",
+      "url": "https://www.ups.com/track?loc=EN_US&msockid=3f8d4187116d61d20ab1565f100160c1",
+      "snippet": "Track one or multiple packages with UPS Tracking, use your tracking number to track the status of your package."
+    },
+    {
+      "title": "Tracking | UPS - United Kingdom",
+      "url": "https://www.ups.com/track?loc=en_GB&msockid=3f8d4187116d61d20ab1565f100160c1",
+      "snippet": "Track one or multiple parcels with UPS Tracking, use your tracking number to track the status of your parcel."
+    },
+    {
+      "title": "Global Shipping and Logistics Services | UPS - United Kingdom",
+      "url": "https://www.ups.com/gb/en/home?msockid=3f8d4187116d61d20ab1565f100160c1",
+      "snippet": "Ship and track domestic and international deliveries with UPS, one of the largest and most trusted global shipping and logistics …"
+    },
+    {
+      "title": "Tracking | UPS - Germany",
+      "url": "https://www.ups.com/track?loc=en_DE&msockid=3f8d4187116d61d20ab1565f100160c1",
+      "snippet": "Track one or multiple packages with UPS Tracking, use your tracking number to track the status of your package."
+    },
+    {
+      "title": "Tracking | UPS - France",
+      "url": "https://www.ups.com/track?loc=en_FR&msockid=3f8d4187116d61d20ab1565f100160c1",
+      "snippet": "Track one or multiple parcels with UPS Tracking, use your tracking number to track the status of your parcel."
+    }
+  ]
+}

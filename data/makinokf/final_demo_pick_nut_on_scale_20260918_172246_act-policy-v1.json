@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "MakinoKF/final_demo_pick_nut_on_scale_20260918_172246_act-policy-v1",
+  "slug": "makinokf-final_demo_pick_nut_on_scale_20260918_172246_act-policy-v1",
+  "author": "MakinoKF",
+  "url": "https://huggingface.co/MakinoKF/final_demo_pick_nut_on_scale_20260918_172246_act-policy-v1",
+  "created_at": "2026-09-18T10:51:43.000Z",
+  "updated_at": "2026-09-18T13:21:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:MakinoKF/final_demo_pick_nut_on_scale_20260918_172246",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 413414520,
+  "storage_human": "413 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LEVEL LIFT | Bene Büromöbel",
+      "url": "https://bene.com/de/produkte/tisch/schreibtisch/level-lift",
+      "snippet": "Der elektrisch höhenverstellbare Schreibtisch LEVEL LIFT passt sich in der Höhe nicht nur exakt an, er ermöglicht auch, im Sitzen …"
+    },
+    {
+      "title": "LEVEL PURE LIFT | Bene Büromöbel",
+      "url": "https://bene.com/de/produkte/tisch/schreibtisch/level-pure-lift",
+      "snippet": "Der elektrisch höhenverstellbare Schreibtisch LEVEL PURE LIFT ermöglicht wechselndes Arbeiten im Sitzen und Stehen. Ein Möbel …"
+    },
+    {
+      "title": "bene LEVEL LIFT PURE Lifttisch elektrisch höhenverstellbar",
+      "url": "https://www.schwadke-shop.de/products/bene-level-lift-pure-lifttisch-elektrisch-hohenverstellbar",
+      "snippet": "Ihr Shop für Büromöbel elektrisch höhenverstellbarer Arbeitstisch LEVEL LIFT PURE von bene jetzt schnell sichern und in …"
+    },
+    {
+      "title": "Bene Level Lift Schreibtisch | workstatt",
+      "url": "https://www.workstatt.de/products/elektrisch-hohenverstellbarer-schreibtisch-level-lift-pure?variant=41374817943740",
+      "snippet": "Der höhenverstellbare Schreibtisch Bene Level Lift besticht nicht nur durch seine elegante Optik und leicht zu bedienenden …"
+    },
+    {
+      "title": "BUILD BENE",
+      "url": "https://build.bene.com/de/level-lift",
+      "snippet": "Montageanleitungen für Bene Büromöbel. Auf build.bene.com finden Sie für alle aktuellen Bene-Produkte die zugehörigen Montage- …"
+    }
+  ]
+}

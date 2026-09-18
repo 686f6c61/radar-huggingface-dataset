@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ajgazin/Swift-Qwen3.8-27B-Uncensored-Dynamic-MTP-GGUF",
+  "slug": "ajgazin-swift-qwen3-8-27b-uncensored-dynamic-mtp-gguf",
+  "author": "ajgazin",
+  "url": "https://huggingface.co/ajgazin/Swift-Qwen3.8-27B-Uncensored-Dynamic-MTP-GGUF",
+  "created_at": "2026-09-15T00:30:38.000Z",
+  "updated_at": "2026-09-20T04:36:24.000Z",
+  "license": "swift-open-license-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "qwen3_8",
+    "abliterated",
+    "uncensored",
+    "unsloth",
+    "imatrix",
+    "dynamic-quant",
+    "mtp",
+    "image-text-to-text",
+    "arxiv:2406.11717",
+    "base_model:ajgazin/Swift-Qwen3.8-27B-Uncensored-MTP",
+    "base_model:quantized:ajgazin/Swift-Qwen3.8-27B-Uncensored-MTP",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 8,
+  "downloads_30d": 3029,
+  "trending_score": 0,
+  "parameters": 460730096,
+  "parameters_human": "460.7M",
+  "storage_bytes": 243904536160,
+  "storage_human": "243.9 GB",
+  "base_model": "ajgazin/Swift-Qwen3.8-27B-Uncensored-MTP",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Local Services Ads Booking Partners - Google Help",
+      "url": "https://support.google.com/localservices/answer/15400753?hl=en",
+      "snippet": "*Depending on the booking partner offering. Additionally, enterprises may apply and use their own CRM solution if they meet the …"
+    },
+    {
+      "title": "Create a hotel campaign - Google Ads Help",
+      "url": "https://support.google.com/google-ads/answer/9243943?hl=en",
+      "snippet": "Instructions Here are step-by-step instructions for creating a hotel campaign: Go to Campaigns within the Campaigns menu . Select …"
+    },
+    {
+      "title": "Booking.com - Forum - 60 millions de consommateurs",
+      "url": "https://www.60millions-mag.com/forum/d/633-booking-com",
+      "snippet": "Jul 20, 2009 · Booking ne fait que retransmettre les informations de réservation,et coordonnées bancaires du client à l'hotelier pas …"
+    },
+    {
+      "title": "机械硬盘和坏道相关的smart参数 (c5 c6 c8)会自动归零 有人遇到过吗？",
+      "url": "https://www.zhihu.com/question/552318738",
+      "snippet": "Sep 7, 2022 · 这个盘以前c5和05都同时出现，往里面挪文件，或者把里面的文件拷贝出来，都会直接卡死。 今天拿出来发现c5和05都 …"
+    },
+    {
+      "title": "在booking.com工作是怎样一种体验？ - 知乎",
+      "url": "https://www.zhihu.com/question/30483287/answers/updated",
+      "snippet": "Booking （缤客）是 全世界最大的网上住宿预订公司， 月活过亿，覆盖 223 个国家地区；同时我们也是一家全球领先的科技公司，总 …"
+    }
+  ]
+}

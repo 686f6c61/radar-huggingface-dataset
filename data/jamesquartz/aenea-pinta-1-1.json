@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "id": "JamesQuartz/aenea-pinta-1.1",
+  "slug": "jamesquartz-aenea-pinta-1-1",
+  "author": "JamesQuartz",
+  "url": "https://huggingface.co/JamesQuartz/aenea-pinta-1.1",
+  "created_at": "2026-09-18T11:40:21.000Z",
+  "updated_at": "2026-09-18T11:41:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "pinta-engine",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pinta-engine",
+    "routing",
+    "moe",
+    "semantic-router",
+    "intent-classification",
+    "merlin-architecture",
+    "aenea",
+    "text-classification",
+    "en",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 687942008,
+  "storage_human": "688 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Domain Routing & Intent Classification",
+      "dataset": "Pinta Gold Benchmark",
+      "metric": "Strict Accuracy",
+      "value": 84.61
+    },
+    {
+      "task": "Domain Routing & Intent Classification",
+      "dataset": "Pinta Gold Benchmark",
+      "metric": "Flexible Accuracy",
+      "value": 87.65
+    },
+    {
+      "task": "Domain Routing & Intent Classification",
+      "dataset": "Pinta Gold Benchmark",
+      "metric": "Weighted Precision",
+      "value": 0.83
+    },
+    {
+      "task": "Domain Routing & Intent Classification",
+      "dataset": "Pinta Gold Benchmark",
+      "metric": "Weighted Recall",
+      "value": 0.85
+    },
+    {
+      "task": "Domain Routing & Intent Classification",
+      "dataset": "Pinta Gold Benchmark",
+      "metric": "Weighted F1-Score",
+      "value": 0.83
+    }
+  ],
+  "sources": [
+    {
+      "title": "Fnac : Informatique, Smartphones, livres, jeux vidéo, photos, jouets ...",
+      "url": "https://www.fnac.com/",
+      "snippet": "Achat en ligne sur Fnac.com : Produits culturels, techniques et électroménager. Retrait gratuit en magasin en 1 heure: DVD, jeux …"
+    },
+    {
+      "title": "Fnac Livre : bien plus que des millions de livres",
+      "url": "https://www.fnac.com/livre.asp",
+      "snippet": "Des conseils pour bien choisir, des idées cadeaux, des petits prix, une livraison rapide... Retrouvez à la Fnac toutes les nouveautés …"
+    },
+    {
+      "title": "Fnac",
+      "url": "https://www.id.fnac.com/login",
+      "snippet": "Accédez à votre compte Fnac ou créez-en un pour profiter de tous les services et avantages."
+    },
+    {
+      "title": "Fnac Photo : le site d'impression photo de la Fnac",
+      "url": "https://photo.fnac.com/",
+      "snippet": "FNAC Photo : le site photo facile d’utilisation Pour créer tous vos objets photo, du tirage photo à l’album photo, en passant par les …"
+    },
+    {
+      "title": "LES PACKS FNAC",
+      "url": "https://serenite.fnac.com/",
+      "snippet": "Fnac Cloud : 100 Go de stockage en France pour ne jamais perdre vos photos et vidéos Fnac Identité : Surveillance du web : …"
+    }
+  ]
+}

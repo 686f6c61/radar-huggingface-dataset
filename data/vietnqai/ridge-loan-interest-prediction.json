@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "vietnqai/ridge-loan-interest-prediction",
+  "slug": "vietnqai-ridge-loan-interest-prediction",
+  "author": "vietnqai",
+  "url": "https://huggingface.co/vietnqai/ridge-loan-interest-prediction",
+  "created_at": "2026-09-18T06:52:29.000Z",
+  "updated_at": "2026-09-18T13:17:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1862985983,
+  "storage_human": "1.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gérer ma copro facilement, comme un syndic pro - Coprolib'",
+      "url": "https://www.coprolib.com/",
+      "snippet": "Gérez votre copropriété en toute liberté ! Depuis plus de 10 ans, Coprolib’ facilite la vie des copropriétaires. Une plateforme claire et …"
+    },
+    {
+      "title": "Espace collaboratif de la copropriété - Coprolib'",
+      "url": "https://www.coprolib.com/fonctionnalites/espace-collaboratif/",
+      "snippet": "L'espace collaboratif du logiciel Coprolib' pour apprendre et partager entre copropriétaires."
+    },
+    {
+      "title": "Tableau de bord de la copropriété - Coprolib'",
+      "url": "https://www.coprolib.com/fonctionnalites/tableau-de-bord/",
+      "snippet": "Le tableau de bord du logiciel Coprolib' pour faciliter la vie du syndic bénévole."
+    },
+    {
+      "title": "Gestion des copropriétaires - Coprolib'",
+      "url": "https://www.coprolib.com/fonctionnalites/gestion-coproprietaires/",
+      "snippet": "Vous pouvez imprimer un relevé de compte (au format PDF) qui reprend toutes les écritures entre deux dates, pour un copropriétaire …"
+    },
+    {
+      "title": "Logiciel de gestion de copropriété pour syndic bénévole - Coprolib'",
+      "url": "https://www.coprolib.com/logiciel/",
+      "snippet": "Un logiciel complet et facile d’utilisation pour gérer votre copropriété en syndic bénévole. Depuis 10 ans, Coprolib’ facilite la vie de …"
+    }
+  ]
+}

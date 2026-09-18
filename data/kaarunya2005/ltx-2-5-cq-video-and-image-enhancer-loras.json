@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Kaarunya2005/LTX-2.5-CQ-Video-and-Image-Enhancer-LoRAs",
+  "slug": "kaarunya2005-ltx-2-5-cq-video-and-image-enhancer-loras",
+  "author": "Kaarunya2005",
+  "url": "https://huggingface.co/Kaarunya2005/LTX-2.5-CQ-Video-and-Image-Enhancer-LoRAs",
+  "created_at": "2026-09-18T10:49:49.000Z",
+  "updated_at": "2026-09-18T10:49:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4033913640,
+  "storage_human": "4.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download …"
+    },
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/auth/?locale=fr-FR",
+      "snippet": "Utilisez ChatGPT pour répondre aux questions, rédiger, créer des images, accomplir des tâches et coder, le tout au même endroit. …"
+    },
+    {
+      "title": "Introducing ChatGPT - OpenAI",
+      "url": "https://openai.com/index/chatgpt/",
+      "snippet": "Nov 30, 2022 · We’ve trained a model called ChatGPT which interacts in a conversational way. The dialogue format makes it …"
+    },
+    {
+      "title": "Nouveau : ChatGPT - OpenAI",
+      "url": "https://openai.com/fr-FR/index/chatgpt/",
+      "snippet": "Nov 30, 2022 · ChatGPT est un modèle dérivé d’InstructGPT ⁠, qui a lui-même été entraîné pour suivre l’instruction d’un prompt et …"
+    },
+    {
+      "title": "Chat GPT Gratuit : utilisez l’IA en français sans inscription",
+      "url": "https://www.chatfrancais.fr/blog/chatgpt-gratuit-en-francais-sans-inscription",
+      "snippet": "Vous cherchez ChatGPT gratuit en français, sans créer de compte ? C'est ici : le chat s'ouvre directement sur cette page, vous tapez …"
+    }
+  ]
+}

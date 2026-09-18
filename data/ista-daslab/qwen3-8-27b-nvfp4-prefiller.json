@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ISTA-DASLab/Qwen3.8-27B-NVFP4-prefiller",
+  "slug": "ista-daslab-qwen3-8-27b-nvfp4-prefiller",
+  "author": "ISTA-DASLab",
+  "url": "https://huggingface.co/ISTA-DASLab/Qwen3.8-27B-NVFP4-prefiller",
+  "created_at": "2026-09-18T09:06:14.000Z",
+  "updated_at": "2026-09-21T14:10:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "nvfp4",
+    "quantization",
+    "llama.cpp",
+    "prefill",
+    "base_model:unsloth/Qwen3.8-27B-GGUF",
+    "base_model:quantized:unsloth/Qwen3.8-27B-GGUF",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 11,
+  "downloads_30d": 127,
+  "trending_score": 11,
+  "parameters": 24350556160,
+  "parameters_human": "24.35B",
+  "storage_bytes": 54924819623,
+  "storage_human": "54.9 GB",
+  "base_model": "unsloth/Qwen3.8-27B-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Solutions de comptage individuel d’eau et de chauffage ... - ista",
+      "url": "https://www.ista.com/fr/",
+      "snippet": "Le 30 mars, à l'oc­ca­sion de l'édition 2026 de ChangeNOW, ista réunit les acteurs de l’eau pour une confé­rence dédiée à la maîtrise …"
+    },
+    {
+      "title": "Portail web ista",
+      "url": "https://www.ista.com/fr/portail-web/",
+      "snippet": "Accédez au portail web ista pour gérer facilement vos consommations d'énergie et accéder à vos données en ligne."
+    },
+    {
+      "title": "Portail client ista MonCompte",
+      "url": "https://portal.ista.com/fr/",
+      "snippet": "Contrôlez les consommations d’eau et de chauffage de votre parc, accédez à vos documents essentiels et consultez facilement vos …"
+    },
+    {
+      "title": "Mon espace ista : Suivez et maîtrisez vos consommations d'énergie",
+      "url": "https://monespaceista.fr/",
+      "snippet": "Pour commencer, nous avons besoin d'identifier votre logement. Pour cela, renseignez le numéro de série d'un de vos appareils ista …"
+    },
+    {
+      "title": "Seed Quality Testing Standards & Seed Health Testing | ISTA ...",
+      "url": "https://www.seedtest.org/",
+      "snippet": "The International Seed Testing Association, founded in 1924 during the 4th meet in Cambridge, UK, advances seed research, seed …"
+    }
+  ]
+}

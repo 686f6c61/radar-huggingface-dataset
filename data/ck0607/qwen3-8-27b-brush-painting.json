@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "CK0607/qwen3.8-27b-brush-painting",
+  "slug": "ck0607-qwen3-8-27b-brush-painting",
+  "author": "CK0607",
+  "url": "https://huggingface.co/CK0607/qwen3.8-27b-brush-painting",
+  "created_at": "2026-09-12T14:24:05.000Z",
+  "updated_at": "2026-09-22T01:15:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:adapter:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11913120600,
+  "storage_human": "11.9 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "حجز طيران، ارخص طيران، تذاكر طيران | Sa.wego.com ويجو",
+      "url": "https://sa.wego.com/flights",
+      "snippet": "يقارن ويجو الأسعار والعروض المباشرة من مئات شركات الطيران ومواقع الحجز عبر الإنترنت، مما يتيح للمسافرين العثور على أفضل الصفقات وحجزها بلغتهم المحلية وبعملتهم الخاصة."
+    },
+    {
+      "title": "حجز طيران، ارخص طيران، تذاكر طيران | Wego.com ويجو",
+      "url": "https://www.wego.com/ar/flights",
+      "snippet": "ما هي ميزة «احجز على ويجو» للرحلات الجوية، وما طرق الدفع والعملات التي تدعمها؟ هل يمكنني الاطلاع على الأمتعة، واختيار المقاعد، وقواعد التغيير والإلغاء قبل الحجز؟"
+    },
+    {
+      "title": "Skyscanner | !احصل على أرخص الرحلات وبسرعة: وفر وقتك، وفر مالك",
+      "url": "https://www.skyscanner.com.sa/",
+      "snippet": "نقوم بمسح جميع أفضل شركات الطيران ومقدمي خدمات السفر عبر الشبكة، حتى تتمكن من مقارنة أسعار الرحلات الجوية وتكاليف السفر الأخرى في مكان واحد."
+    },
+    {
+      "title": "حجز طيران وفنادق | احصل على أرخص تذاكر الطيران وحجوزات الفنادق | Sa ...",
+      "url": "https://sa.wego.com/",
+      "snippet": "احجز فنادق وتذاكر طيران بأقل الأسعار قارن أسعارالحجوزات عبر أكثر من 1000 موقع سفر احجز بأقل سعر متاح احجز بسهولة في دقائق زر ويجو Sa.wego.com الآن"
+    },
+    {
+      "title": "حجز طيران، ابحث عن ارخص طيران | Wingie",
+      "url": "https://sa.wingie.com/",
+      "snippet": "يحمي وينجي جميع معاملاتك في الموقع بشهادة SSL. كما يتم حماية جميع المعلومات التي تدخلها عند حجز تذاكر الطيران ومعلومات البطاقة البنكية أو بطاقة الائتمان التي تحفظها في حسابك من قبل …"
+    }
+  ]
+}

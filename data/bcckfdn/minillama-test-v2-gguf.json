@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "bcckfdn/minillama-test-v2-GGUF",
+  "slug": "bcckfdn-minillama-test-v2-gguf",
+  "author": "bcckfdn",
+  "url": "https://huggingface.co/bcckfdn/minillama-test-v2-GGUF",
+  "created_at": "2026-09-18T11:23:20.000Z",
+  "updated_at": "2026-09-18T11:23:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "tr",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "smollm2",
+    "llama",
+    "turkish",
+    "text-generation",
+    "tr",
+    "en",
+    "base_model:bcckfdn/minillama-test-v2",
+    "base_model:quantized:bcckfdn/minillama-test-v2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 52953984,
+  "parameters_human": "53.0M",
+  "storage_bytes": 258878464,
+  "storage_human": "259 MB",
+  "base_model": "bcckfdn/minillama-test-v2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/",
+      "snippet": "Connect and share with friends, family, and the world on Facebook."
+    },
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/r.php/",
+      "snippet": "Get started on Facebook Create an account to connect with friends, family and communities of people who share your interests."
+    },
+    {
+      "title": "Facebook",
+      "url": "https://l.facebook.com/facebook/",
+      "snippet": "Facebook. 154,719,205 followers · 317,316 talking about this. Community Values We believe people can do more together than alone …"
+    },
+    {
+      "title": "Log Into Facebook",
+      "url": "https://secure.facebook.com/login/",
+      "snippet": "Log into Facebook to start sharing and connecting with your friends, family, and people you know."
+    },
+    {
+      "title": "Log into Facebook",
+      "url": "https://www.facebook.com/login.php/",
+      "snippet": "Email or mobile number Password"
+    }
+  ]
+}

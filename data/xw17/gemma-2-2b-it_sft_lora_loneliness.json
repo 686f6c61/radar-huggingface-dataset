@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "xw17/gemma-2-2b-it_SFT_lora_loneliness",
+  "slug": "xw17-gemma-2-2b-it_sft_lora_loneliness",
+  "author": "xw17",
+  "url": "https://huggingface.co/xw17/gemma-2-2b-it_SFT_lora_loneliness",
+  "created_at": "2026-09-04T12:07:20.000Z",
+  "updated_at": "2026-09-17T23:45:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 117525592,
+  "storage_human": "118 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home | Subway®",
+      "url": "https://www.subway.com/en-us/home",
+      "snippet": "Discover customized sandwiches at Subway. Take a look at the sandwich menu, place your order online, find the nearest restaurant, …"
+    },
+    {
+      "title": "Our Menu | Subway®",
+      "url": "https://www.subway.com/en-us/menunutrition/menu",
+      "snippet": "The Subway menu offers a wide range of sandwiches, salads and wraps. View the abundant options on the Subway menu and place …"
+    },
+    {
+      "title": "Subway Surfers - Play Online for Free! | Poki",
+      "url": "https://poki.com/en/g/subway-surfers?msockid=1d9fc7d0d53b6e3f1e04d008d45f6f3c",
+      "snippet": "Subway Surfers is an endless runner that challenges you to escape security. Dash between trains, dodge obstacles, and collect coins …"
+    },
+    {
+      "title": "Subway (restaurant) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Subway_(restaurant)",
+      "snippet": "Subway IP LLC, [7] trading as Subway, is an American multinational fast food restaurant franchise that specializes in submarine …"
+    },
+    {
+      "title": "All Subway Locations | Subs, Sandwiches, Salads",
+      "url": "https://restaurants.subway.com/",
+      "snippet": "Browse all Subway locations to find a restaurant near you that serves fresh subs, sandwiches, salads, & more. View the abundant …"
+    }
+  ]
+}

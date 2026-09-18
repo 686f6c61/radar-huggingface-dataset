@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "jhony1104/bge-m3-safetensors",
+  "slug": "jhony1104-bge-m3-safetensors",
+  "author": "jhony1104",
+  "url": "https://huggingface.co/jhony1104/bge-m3-safetensors",
+  "created_at": "2026-09-18T10:18:29.000Z",
+  "updated_at": "2026-09-18T10:19:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "xlm-roberta",
+    "feature-extraction",
+    "sentence-similarity",
+    "mteb",
+    "text-embeddings-inference",
+    "multilingual",
+    "base_model:BAAI/bge-m3",
+    "base_model:finetune:BAAI/bge-m3",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 567754752,
+  "parameters_human": "567.8M",
+  "storage_bytes": 2293216306,
+  "storage_human": "2.3 GB",
+  "base_model": "BAAI/bge-m3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Définitions : natte - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/natte/53882",
+      "snippet": "natte - Définitions Français : Retrouvez la définition de natte, ainsi que les synonymes... - synonymes, homonymes, difficultés, citations."
+    },
+    {
+      "title": "Natte — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Natte",
+      "snippet": "Natte est un nom vernaculaire ambigu en français. Les nattes, notamment le petit natte et le grand natte, sont des espèces d'arbres …"
+    },
+    {
+      "title": "Définition de natte | Dictionnaire français - La langue française",
+      "url": "https://www.lalanguefrancaise.com/dictionnaire/definition/natte",
+      "snippet": "Apr 6, 2024 · (Botanique, La Réunion) Nom donné à deux espèces d’arbres de la famille des Sapotaceae, distinguées en grand natte …"
+    },
+    {
+      "title": "natte - Définitions, synonymes, prononciation, exemples | Dico en ligne ...",
+      "url": "https://dictionnaire.lerobert.com/definition/natte",
+      "snippet": "Définition, exemples et prononciation de natte : Pièce d'un tissu fait de brins végétaux entrelacés…"
+    },
+    {
+      "title": "Définition de natte | Dictionnaire français - Dicocitations",
+      "url": "https://www.dicocitations.com/dico-mot-definition/91916/natte.php",
+      "snippet": "Jul 23, 2026 · Définition de « natte » Notre dictionnaire de français vous présente les définitions du mot natte de manière claire et …"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Linkup-Platform/linkup-sparseup-embed-v1",
+  "slug": "linkup-platform-linkup-sparseup-embed-v1",
+  "author": "Linkup-Platform",
+  "url": "https://huggingface.co/Linkup-Platform/linkup-sparseup-embed-v1",
+  "created_at": "2026-09-16T18:07:40.000Z",
+  "updated_at": "2026-09-17T13:29:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "feature-extraction",
+    "splade",
+    "sparse",
+    "retrieval",
+    "sentence-transformers",
+    "sentence-similarity",
+    "custom_code",
+    "en",
+    "base_model:lightonai/LateOn-unsupervised",
+    "base_model:finetune:lightonai/LateOn-unsupervised",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 32,
+  "downloads_30d": 3,
+  "trending_score": 29,
+  "parameters": 188391300,
+  "parameters_human": "188.4M",
+  "storage_bytes": 753780968,
+  "storage_human": "754 MB",
+  "base_model": "lightonai/LateOn-unsupervised",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "École de coaching #1 : RNCP 6, financement CPF, 4000 alumni",
+      "url": "https://www.linkup-coaching.com/",
+      "snippet": "Devenez coach professionnel certifié RNCP 6 avec Linkup Coaching, école #1 en France. 96% de réussite, 4000+ alumni formés, …"
+    },
+    {
+      "title": "Formation coach professionnel RNCP 6 : 96% de réussite, CPF",
+      "url": "https://www.linkup-coaching.com/formations/devenir-coach-professionnel",
+      "snippet": "Jul 3, 2015 · Linkup Coaching propose trois voies d'accès pour intégrer notre formation coach professionnel certifiante. Chaque …"
+    },
+    {
+      "title": "Sage LinkUp Experts",
+      "url": "https://www.linkup-sage.com/index.html",
+      "snippet": "Tableau de bord Achats Factures fournisseurs Documents achats Fournisseurs Ventes Factures clients Documents ventes Clients …"
+    },
+    {
+      "title": "Sage LinkUp Experts",
+      "url": "https://admin.linkup-sage.com/fr-FR/Account/LogOn",
+      "snippet": "Bienvenue Votre portail collaboratif pour une relation à valeur ajoutée. Vous bénéficiez d'un espace de travail partagé entre le …"
+    },
+    {
+      "title": "Linkup — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Linkup",
+      "snippet": "Linkup est un boys band français, aujourd'hui dissous, vainqueur de la troisième saison de Popstars (intitulée Popstars, le duel), une …"
+    }
+  ]
+}

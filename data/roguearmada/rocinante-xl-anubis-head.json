@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "roguearmada/rocinante-xl-anubis-head",
+  "slug": "roguearmada-rocinante-xl-anubis-head",
+  "author": "roguearmada",
+  "url": "https://huggingface.co/roguearmada/rocinante-xl-anubis-head",
+  "created_at": "2026-09-16T15:21:41.000Z",
+  "updated_at": "2026-09-17T18:27:24.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "mistral",
+    "creative-writing",
+    "head-swap",
+    "base_model:TheDrummer/Rocinante-XL-16B-v1",
+    "base_model:finetune:TheDrummer/Rocinante-XL-16B-v1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13421788990,
+  "storage_human": "13.4 GB",
+  "base_model": "TheDrummer/Rocinante-XL-16B-v1",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fleuriste à Saint-Just-en-Chaussée (60) | livraison gratuite",
+      "url": "https://fleuretfleurs.fr/fleuristes/hauts-de-france/oise/saint-just-en-chaussee-60581",
+      "snippet": "Nous confions votre exigence à un artisan fleuriste saint-justois indépendant. Ce dernier sélectionne les plus belles variétés de sa …"
+    },
+    {
+      "title": "Fleuristes à Saint-Just-en-Chaussée - Interflora",
+      "url": "https://www.interflora.fr/fleuristes/oise-60/60581-saint-just-en-chaussee/",
+      "snippet": "Nos fleuristes artisans à Saint-Just-en-Chaussée proposent une large gamme : bouquets de roses, compositions champêtres, …"
+    },
+    {
+      "title": "Fleuriste Saint-Just-en-Chaussée | Livraison de fleurs Saint-Just-en ...",
+      "url": "https://www.123fleurs.com/fleuristes/60/saint-just-en-chaussee",
+      "snippet": "Vous dénicherez des fleurs en tous genres au sein de notre boutique en ligne : tulipes colorées, gracieux lisianthus, surprenantes …"
+    },
+    {
+      "title": "Chaussée Fleurie - Fleuriste Saint-Just-en-Chaussée (60130)",
+      "url": "https://mafleuriste.net/60/saint-just-en-chaussee/chaussee-fleurie-e2w",
+      "snippet": "Chaussée Fleurie, fleuriste, rue de Beauvais à Saint-Just-en-Chaussée : adresse, téléphone, horaires, email, site web"
+    },
+    {
+      "title": "Fleuriste à Saint Just en Chaussée (60) - Pages Jaunes",
+      "url": "https://www.pagesjaunes.fr/annuaire/saint-just-en-chaussee-60/fleuristes",
+      "snippet": "Fleuriste à Saint Just en Chaussée (60) : trouver les numéros de téléphone et adresses pour commander et faire livrer des fleurs …"
+    }
+  ]
+}

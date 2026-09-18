@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "AlexStamp/marian-finetuned-kde4-en-to-fr",
+  "slug": "alexstamp-marian-finetuned-kde4-en-to-fr",
+  "author": "AlexStamp",
+  "url": "https://huggingface.co/AlexStamp/marian-finetuned-kde4-en-to-fr",
+  "created_at": "2026-09-16T18:46:39.000Z",
+  "updated_at": "2026-09-18T18:21:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "fr"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "marian",
+    "text2text-generation",
+    "translation",
+    "generated_from_trainer",
+    "en-fr",
+    "kde4",
+    "fine-tuned",
+    "en",
+    "fr",
+    "dataset:Helsinki-NLP/kde4",
+    "base_model:Helsinki-NLP/opus-mt-en-fr",
+    "base_model:finetune:Helsinki-NLP/opus-mt-en-fr",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 74669178,
+  "parameters_human": "74.7M",
+  "storage_bytes": 897703489,
+  "storage_human": "898 MB",
+  "base_model": "Helsinki-NLP/opus-mt-en-fr",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text-to-Text Translation",
+      "dataset": "KDE4 en-fr",
+      "metric": "BLEU",
+      "value": 53
+    }
+  ],
+  "sources": [
+    {
+      "title": "Solitär.de - Solitär Kostenlos",
+      "url": "https://www.xn--solitr-fua.de/",
+      "snippet": "Wer kennt Solitär nicht? Überall begegnet man diesem sympathischen Spiel: auf dem Bildschirm eines Kollegen, im Zug auf einem …"
+    },
+    {
+      "title": "Solitär Groß - xn--solitr-fua.de",
+      "url": "https://www.xn--solitr-fua.de/spielen/solit%C3%A4rgro%C3%9F.php",
+      "snippet": "Name: Solitär Groß Beschreibung: Dieses Spiel heißt Solitär Groß und diesen Namen hat das Spiel selbstverständlich nicht umsonst …"
+    },
+    {
+      "title": "Windows Solitär - xn--solitr-fua.de",
+      "url": "https://www.xn--solitr-fua.de/spielen/windowssolit%C3%A4r.php",
+      "snippet": "Name: Windows Solitär Beschreibung: Kehre zurück in die Zeit mit diesem phantastischen Remake von Solitär Windows XP. Von …"
+    },
+    {
+      "title": "Doppel Solitär - xn--solitr-fua.de",
+      "url": "https://www.xn--solitr-fua.de/spielen/doppelsolit%C3%A4r.php",
+      "snippet": "Name: Doppel Solitär Beschreibung: Doppelt so viele Karten und deshalb auch doppelt so viel Spaß, das erlebst du bei diesem Spiel. …"
+    },
+    {
+      "title": "Solitär",
+      "url": "https://www.xn--solitr-fua.de/spielen/solit%C3%A4r.php",
+      "snippet": "Name: Solitär Beschreibung: GameBoss.com produziert bereits seit Jahren die besten Spiele für uns und auch diese Version von …"
+    }
+  ]
+}

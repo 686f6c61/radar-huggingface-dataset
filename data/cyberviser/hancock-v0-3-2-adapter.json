@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "cyberviser/hancock-v0.3.2-adapter",
+  "slug": "cyberviser-hancock-v0-3-2-adapter",
+  "author": "cyberviser",
+  "url": "https://huggingface.co/cyberviser/hancock-v0.3.2-adapter",
+  "created_at": "2026-04-28T22:00:13.000Z",
+  "updated_at": "2026-09-18T00:54:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "base_model:unsloth/mistral-7b-instruct-v0.3-bnb-4bit",
+    "base_model:adapter:unsloth/mistral-7b-instruct-v0.3-bnb-4bit",
+    "doi:10.57967/hf/8786",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 168419644,
+  "storage_human": "168 MB",
+  "base_model": "unsloth/mistral-7b-instruct-v0.3-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jeffrey Long - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Jeffrey_Long",
+      "snippet": "Long is the author of Evidence of the Afterlife: The Science of Near-Death Experiences, which appeared on The New York Times …"
+    },
+    {
+      "title": "Un médecin explique pourquoi la vie après la mort existe",
+      "url": "https://lanature.ca/2025/02/17/un-medecin-explique-pourquoi-la-vie-apres-la-mort-existe/",
+      "snippet": "Feb 17, 2025 · En tant que médecin, le Dr Jeffrey Long aborde les expériences de mort imminente (EMI) avec prudence et …"
+    },
+    {
+      "title": "Biographie Jeffrey M. D. Long | Lisez!",
+      "url": "https://www.lisez.com/auteurs/jeffrey-m-d-long",
+      "snippet": "Le Dr Jeffrey Long, dont les travaux ont été publiés dans Newsweek et le Wall Street Journal, est radio-oncologue en Louisiane. Il a …"
+    },
+    {
+      "title": "99. Dr. Jeffrey Long Takes On Critics of, Evidence of the Afterlife",
+      "url": "https://skeptiko.com/jeffrey_long_takes_on_critics_of_evidence_of_the_afterlife/",
+      "snippet": "Near-Death experience researcher Dr. Long offers a point-by-point response to skeptics of his New York Time best seller, Evidence …"
+    },
+    {
+      "title": "Arguments des sceptiques concernant les EMIs : Examen et réponse",
+      "url": "https://www.nderf.org/French/emi_skeptics.html",
+      "snippet": "Arguments des sceptiques concernant les EMIs : Examen et réponse par le Dr. Jeff Long. Les sceptiques continuent d'affirmer que …"
+    }
+  ]
+}

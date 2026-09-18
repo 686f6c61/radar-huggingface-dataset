@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "aswinvk28/google-pegasus-xsum",
+  "slug": "aswinvk28-google-pegasus-xsum",
+  "author": "aswinvk28",
+  "url": "https://huggingface.co/aswinvk28/google-pegasus-xsum",
+  "created_at": "2026-09-18T11:06:36.000Z",
+  "updated_at": "2026-09-18T11:23:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "pegasus",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 569844583,
+  "parameters_human": "569.8M",
+  "storage_bytes": 6829672861,
+  "storage_human": "6.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Download and install Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95346?hl=en-GB&co=GENIE.Platform%3DDesktop",
+      "snippet": "On your computer, download the installation file. To install the file, follow the on-screen instructions. If you get the message 'Do you …"
+    },
+    {
+      "title": "2026年运动相机推荐｜Gopro 13、大疆ation 5 Pro、Insta360 运动相机 …",
+      "url": "https://www.zhihu.com/tardis/bd/art/2775303812",
+      "snippet": "运动相机在这几年不断的更新迭代、不仅在功能上不断升级使用场景也发生了很大的变化，从纯粹的极限运动慢慢开始向大众场景辐射 …"
+    },
+    {
+      "title": "如何解决You must install .NET Desktop Runtime…… ？ - 知乎",
+      "url": "https://www.zhihu.com/question/1926320080226070989",
+      "snippet": "要关注的重点是上图中绿色方框标记的软件，是否题主所需要运行的。 假如，我是说假如，这个文件名“AacAmbientlighting.exe”的软 …"
+    },
+    {
+      "title": "Delete, allow, and manage cookies in Chrome - Google Help",
+      "url": "https://support.google.com/chrome/answer/95647?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "On your computer, open Chrome. At the top right, select More Delete browsing data. Choose a time range, like Last hour or All time. …"
+    },
+    {
+      "title": "instagram-follower · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/instagram-follower",
+      "snippet": "Sep 10, 2026 · GitHub is where people build software. More than 150 million people use GitHub to discover, fork, and contribute to …"
+    }
+  ]
+}

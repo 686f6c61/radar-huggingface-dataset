@@ -1,0 +1,95 @@
+{
+  "schema": 1,
+  "id": "IsValorum/KAT-Coder-V2.5-Dev-APEX-I-MiniPlus-V2-GGUF",
+  "slug": "isvalorum-kat-coder-v2-5-dev-apex-i-miniplus-v2-gguf",
+  "author": "IsValorum",
+  "url": "https://huggingface.co/IsValorum/KAT-Coder-V2.5-Dev-APEX-I-MiniPlus-V2-GGUF",
+  "created_at": "2026-09-16T17:21:38.000Z",
+  "updated_at": "2026-09-21T20:09:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "apex",
+    "custom-quantization",
+    "unsloth-studio",
+    "moe",
+    "coding",
+    "agentic",
+    "code",
+    "llama.cpp",
+    "qwen35moe",
+    "quantized",
+    "quantization",
+    "text-generation",
+    "en",
+    "zh",
+    "es",
+    "fr",
+    "de",
+    "pt",
+    "it",
+    "ru",
+    "ja",
+    "ko",
+    "vi",
+    "th",
+    "ar",
+    "base_model:Kwaipilot/KAT-Coder-V2.5-Dev",
+    "base_model:quantized:Kwaipilot/KAT-Coder-V2.5-Dev",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 77,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 14642961824,
+  "storage_human": "14.6 GB",
+  "base_model": "Kwaipilot/KAT-Coder-V2.5-Dev",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=07ca2137d3156ad735bc36efd2426b95",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Get access to free online versions of Outlook, Word, Excel, and PowerPoint."
+    },
+    {
+      "title": "Sign in to your account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    },
+    {
+      "title": "Microsoft 365 for Individuals: Subscription for Productivity Apps",
+      "url": "https://www.microsoft.com/en-us/microsoft-365?msockid=07ca2137d3156ad735bc36efd2426b95",
+      "snippet": "Microsoft 365 (formerly Office 365) subscriptions offer a suite of productivity tools and cloud services with world-class security and …"
+    },
+    {
+      "title": "Microsoft - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Microsoft",
+      "snippet": "Microsoft Corporation is an American multinational technology company headquartered in Redmond, Washington. The company …"
+    }
+  ]
+}

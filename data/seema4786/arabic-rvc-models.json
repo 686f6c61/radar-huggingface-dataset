@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "seema4786/arabic-rvc-models",
+  "slug": "seema4786-arabic-rvc-models",
+  "author": "seema4786",
+  "url": "https://huggingface.co/seema4786/arabic-rvc-models",
+  "created_at": "2026-09-18T11:09:32.000Z",
+  "updated_at": "2026-09-18T11:14:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 177388031,
+  "storage_human": "177 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "snapchat苹果版下载教程-百度经验",
+      "url": "https://jingyan.baidu.com/article/4d58d541aefb4edcd5e9c04a.html",
+      "snippet": "Jun 2, 2025 · snapchat苹果版下载教程,“阅后即焚”照片分享应用Sachat（色拉布）是由斯坦福大学两位学生开发的一款“阅后即焚”照片 …"
+    },
+    {
+      "title": "如何评价国内的几款阅后即焚app？ - 知乎",
+      "url": "https://www.zhihu.com/question/22111810?sort=created",
+      "snippet": "八大功能，让你的工作乐享不停。 1、企业通讯录 通过名字能够迅速检索，不再担忧找人难，事难办的问题。 2、及时通讯 聊天加 …"
+    },
+    {
+      "title": "打算转战Snapchat做广告投放，有前辈分享一些干货吗？",
+      "url": "https://www.zhihu.com/question/265492589",
+      "snippet": "其实很明显， Snapchat 投放广告ROI可能要高于其他平台，这是一个尚未开发的市场！ 给大家推荐一个工具，对于 Snapchat 投放很 …"
+    },
+    {
+      "title": "snapchat-11.1.6.81 - 吾爱破解 - 52pojie.cn",
+      "url": "https://www.52pojie.cn/thread-1274905-1-1.html",
+      "snippet": "Sep 27, 2020 · 【应用名称】：snapchat【软件版本】：11.1.6.81 (2020年9月25日更新）【软件大小】：61.5MB【软件介绍】：本来 …"
+    },
+    {
+      "title": "snapchat软件怎么下载安装-百度经验",
+      "url": "https://jingyan.baidu.com/article/77b8dc7fcf936d2075eab60e.html",
+      "snippet": "Nov 25, 2020 · snapchat软件怎么下载安装,achat是一款照片及视频分享应用软件，最大的特点是将照片或视频发给好友后，可以根据 …"
+    }
+  ]
+}

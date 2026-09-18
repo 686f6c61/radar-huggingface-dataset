@@ -1,0 +1,95 @@
+{
+  "schema": 1,
+  "id": "IsValorum/Thomson-1.0-Small-APEX-I-MiniPlus-V2-GGUF",
+  "slug": "isvalorum-thomson-1-0-small-apex-i-miniplus-v2-gguf",
+  "author": "IsValorum",
+  "url": "https://huggingface.co/IsValorum/Thomson-1.0-Small-APEX-I-MiniPlus-V2-GGUF",
+  "created_at": "2026-09-16T17:21:39.000Z",
+  "updated_at": "2026-09-21T20:09:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "apex",
+    "custom-quantization",
+    "unsloth-studio",
+    "moe",
+    "legal",
+    "auditing",
+    "multimodal",
+    "vision",
+    "llama.cpp",
+    "qwen35moe",
+    "quantized",
+    "quantization",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "es",
+    "fr",
+    "de",
+    "pt",
+    "it",
+    "ru",
+    "ja",
+    "ko",
+    "vi",
+    "th",
+    "ar",
+    "base_model:thomsonreuters/Thomson-1.0-Small",
+    "base_model:quantized:thomsonreuters/Thomson-1.0-Small",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 63,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 15253617664,
+  "storage_human": "15.3 GB",
+  "base_model": "thomsonreuters/Thomson-1.0-Small",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Breaking News, Latest News and Videos | CNN",
+      "url": "https://www.cnn.com/",
+      "snippet": "View the latest news and breaking news today for U.S., world, weather, entertainment, politics and health at CNN.com."
+    },
+    {
+      "title": "World news - breaking news, video, headlines and opinion | CNN",
+      "url": "https://www.cnn.com/world",
+      "snippet": "View CNN world news today for international news and videos from Europe, Asia, Africa, the Middle East and the Americas."
+    },
+    {
+      "title": "CNN - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/CNN",
+      "snippet": "CNN ... Cable News Network, Inc.[2] (CNN) is an American multinational news media company and the flagship namesake property …"
+    },
+    {
+      "title": "CNN.com - Breaking News, U.S., World, Weather, Entertainment",
+      "url": "https://www.cnn.com/index2.html",
+      "snippet": "CNN.com delivers the latest breaking news and information on the latest top stories, weather, business, entertainment, politics, and …"
+    },
+    {
+      "title": "US - CNN",
+      "url": "https://www.cnn.com/us",
+      "snippet": "Photo illustration by CNN/Amy Sussman/Getty Images/ABC7 Los Angeles/AP/Orange County Corrections Department"
+    }
+  ]
+}

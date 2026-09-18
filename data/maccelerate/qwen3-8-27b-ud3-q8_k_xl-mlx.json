@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "maccelerate/Qwen3.8-27B-UD3-Q8_K_XL-MLX",
+  "slug": "maccelerate-qwen3-8-27b-ud3-q8_k_xl-mlx",
+  "author": "maccelerate",
+  "url": "https://huggingface.co/maccelerate/Qwen3.8-27B-UD3-Q8_K_XL-MLX",
+  "created_at": "2026-09-18T11:52:34.000Z",
+  "updated_at": "2026-09-21T17:40:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "mlx-serve",
+    "qwen3.8",
+    "apple-silicon",
+    "mtp",
+    "speculative-decoding",
+    "mixed-precision",
+    "unsloth-dynamic-v3",
+    "ud3",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 31454707712,
+  "storage_human": "31.5 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accueil impots.gouv.fr",
+      "url": "https://www.impots.gouv.fr/accueil",
+      "snippet": "Retrouvez toutes les informations pratiques pour vous prémunir des éventuelles conséquences pour vos données personnelles de …"
+    },
+    {
+      "title": "J'accède à mon espace Finances publiques et à mes services en ligne",
+      "url": "https://www.impots.gouv.fr/particulier/jaccede-mon-espace-particulier-et-mes-services-en-ligne",
+      "snippet": "Mar 30, 2016 · Une offre diversifiée de services en ligne vous est proposée dans votre espace Finances publiques. Vous pouvez …"
+    },
+    {
+      "title": "Particulier - impots.gouv.fr",
+      "url": "https://www.impots.gouv.fr/particulier",
+      "snippet": "À la une Particulier Professionnel Demande d'aide de 100 € pour les travailleurs « grands rouleurs » Publié le 27 mai 2026 Vous avez …"
+    },
+    {
+      "title": "Professionnel - impots.gouv.fr",
+      "url": "https://www.impots.gouv.fr/professionnel",
+      "snippet": "À la une Particulier Professionnel Demande d'aide de 100 € pour les travailleurs « grands rouleurs » Publié le 27 mai 2026 Vous avez …"
+    },
+    {
+      "title": "Déclarer mes revenus - impots.gouv.fr",
+      "url": "https://www.impots.gouv.fr/particulier/declarer-mes-revenus",
+      "snippet": "les questions - réponses : Quelle est la date limite de dépôt de ma déclaration de revenus ? Puis-je déclarer en ligne pour ma …"
+    }
+  ]
+}

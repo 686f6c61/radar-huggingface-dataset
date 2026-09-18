@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "HangGlidersRule/Darkstar-Qwen3.8-27B-Abliterated-ModelOpt-W4A16-NVFP4-Mixed-FP8",
+  "slug": "hangglidersrule-darkstar-qwen3-8-27b-abliterated-modelopt-w4a16-nvfp4-mixed-fp8",
+  "author": "HangGlidersRule",
+  "url": "https://huggingface.co/HangGlidersRule/Darkstar-Qwen3.8-27B-Abliterated-ModelOpt-W4A16-NVFP4-Mixed-FP8",
+  "created_at": "2026-08-20T21:29:49.000Z",
+  "updated_at": "2026-09-17T02:47:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "abliterated",
+    "reduced-refusal",
+    "nvfp4",
+    "modelopt",
+    "vllm",
+    "qwen3.8",
+    "darkstar",
+    "text-generation",
+    "conversational",
+    "base_model:HangGlidersRule/Darkstar-Qwen3.8-27B-Abliterated-BF16",
+    "base_model:quantized:HangGlidersRule/Darkstar-Qwen3.8-27B-Abliterated-BF16",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 4799,
+  "trending_score": 0,
+  "parameters": 18164649200,
+  "parameters_human": "18.16B",
+  "storage_bytes": 21934484276,
+  "storage_human": "21.9 GB",
+  "base_model": "HangGlidersRule/Darkstar-Qwen3.8-27B-Abliterated-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Telekom | Mobilfunk, Festnetz & Internet und TV",
+      "url": "https://www.telekom.de/start",
+      "snippet": "Bei der Telekom bekommen Sie Mobilfunk (5G/LTE), Festnetz & Internet sowie TV aus einer Hand – für zu Hause und unterwegs. …"
+    },
+    {
+      "title": "Telekom Login | Telekom Hilfe",
+      "url": "https://www.telekom.de/hilfe/vertrag-rechnung/telekom-login",
+      "snippet": "Sichern Sie Ihren Telekom Login vor Phishing E-Mails und unbefugten Zugriffen, indem Sie sich die Mehr-Faktor-Authentifizierung …"
+    },
+    {
+      "title": "Telekom Login",
+      "url": "http://homepagedesigner.telekom.de/",
+      "snippet": "Telekom Login © Telekom Deutschland GmbH 26.43.0"
+    },
+    {
+      "title": "Ferndiagnose | Telekom",
+      "url": "https://rescue.telekom.de/",
+      "snippet": "Telekom Ferndiagnose Für die Teilnahme an der Ferndiagnose gelten folgende Datenschutzhinweise, über die Sie sich hier …"
+    },
+    {
+      "title": "Smartphones, Tablets und Zubehör | Telekom Zubehörshop",
+      "url": "https://shop.telekom.de/",
+      "snippet": "Große Auswahl an Handys & Smartphones, Tablets und Zubehör. Geprüfte Sicherheit Schnelle Lieferzeiten Jetzt entdecken und …"
+    }
+  ]
+}

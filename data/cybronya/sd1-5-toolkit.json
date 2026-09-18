@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Cybronya/SD1.5-toolkit",
+  "slug": "cybronya-sd1-5-toolkit",
+  "author": "Cybronya",
+  "url": "https://huggingface.co/Cybronya/SD1.5-toolkit",
+  "created_at": "2026-06-30T18:01:05.000Z",
+  "updated_at": "2026-09-21T14:49:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 37012735737,
+  "storage_human": "37.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "null - Publicações da UE - Publications Office of the EU",
+      "url": "https://op.europa.eu/pt/web/general-publications/",
+      "snippet": "EU careers: study materials Eager to embark on a career in the EU institutions? These EU publications can help you prepare for …"
+    },
+    {
+      "title": "European Forum of Official Gazettes - Romania - European Forum of ...",
+      "url": "https://op.europa.eu/en/web/forum/romania-oj",
+      "snippet": "Dec 22, 1989 · The website of the Forum provides information on, and access to the Official Journal of Romania, to collections of …"
+    },
+    {
+      "title": "Europa - Vocbench3",
+      "url": "https://vocbench.op.europa.eu/",
+      "snippet": "Disclaimer This is a corporate instance of VocBench, provided by the Publications Office of the European Union to support interested …"
+    },
+    {
+      "title": "Mr Jesper PEDERSEN - EU Whoiswho - Publications Office of the EU",
+      "url": "https://op.europa.eu/en/web/who-is-who/person/-/person/COM_000003AAA443",
+      "snippet": "Head of Unit - Rapid Response Africa & Middle East European Union > European Commission > Service for Foreign Policy …"
+    },
+    {
+      "title": "Mr Yvo VOLMAN - EU Whoiswho - Publications Office of the EU",
+      "url": "https://op.europa.eu/en/web/who-is-who/person/-/person/COM_0000004D",
+      "snippet": "Director European Union > European Commission > Directorate-General for Communications Networks, Content and Technology > …"
+    }
+  ]
+}

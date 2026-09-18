@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "NyckM/Meridian_CameraH3_INT8_build_by_BruxosdoVFX",
+  "slug": "nyckm-meridian_camerah3_int8_build_by_bruxosdovfx",
+  "author": "NyckM",
+  "url": "https://huggingface.co/NyckM/Meridian_CameraH3_INT8_build_by_BruxosdoVFX",
+  "created_at": "2026-09-18T04:43:09.000Z",
+  "updated_at": "2026-09-20T03:53:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 32365270744,
+  "storage_human": "32.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Filmpjes van alle technieken - GoedGebruik",
+      "url": "https://goedgebruik.nl/filmpjes-van-alle-technieken",
+      "snippet": "GoedGebruik Filmpjes van alle technieken In welke groep valt het filmpje dat je zoekt? Kies er eentje uit. De nummering komt …"
+    },
+    {
+      "title": "GoedGebruik",
+      "url": "https://goedgebruik.nl/",
+      "snippet": "In het GebruiksBoekje is duidelijk met plaatjes stap-voor-stap aangegeven hoe je met en zonder een hulpmiddel op een goede (en …"
+    },
+    {
+      "title": "Goed Gebruik - YouTube",
+      "url": "https://www.youtube.com/goedgebruik/playlists",
+      "snippet": "GoedGebruik is een verbetertraject vanuit het het Zorg voor Beter programma van ZonMw en is gericht op zelfredzaamheid van …"
+    },
+    {
+      "title": "goed gebruik filmpjes - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PL0n6Bay0j15KdQRTrBMl4-Zz34OWDxG6f",
+      "snippet": "Van lig naar zit op de rand van het bed via zijlig (1.6.3) Goed Gebruik 126K views • 14 years ago"
+    },
+    {
+      "title": "GoedGebruik | Kennisprojecten | LOCOmotion gezondheidkundig advies",
+      "url": "https://www.locomotion.nl/goedgebruik",
+      "snippet": "Ons ZonMw project ‘GoedGebruik’ richt zich op de zelfredzaamheid van cliënten met behulp van hulpmiddelen en technologie. …"
+    }
+  ]
+}

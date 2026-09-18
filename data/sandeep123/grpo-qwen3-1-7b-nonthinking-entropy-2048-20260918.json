@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "sandeep123/grpo-qwen3-1.7b-nonthinking-entropy-2048-20260918",
+  "slug": "sandeep123-grpo-qwen3-1-7b-nonthinking-entropy-2048-20260918",
+  "author": "sandeep123",
+  "url": "https://huggingface.co/sandeep123/grpo-qwen3-1.7b-nonthinking-entropy-2048-20260918",
+  "created_at": "2026-09-18T06:08:30.000Z",
+  "updated_at": "2026-09-20T13:22:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "reinforcement-learning",
+    "math",
+    "nonthinking",
+    "stride",
+    "text-generation",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:adapter:Qwen/Qwen3-1.7B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12314152955,
+  "storage_human": "12.3 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Opłaty bankowe i terminal w kosztach firmy – praktyczny poradnik",
+      "url": "https://gazetapodatki.pl/oplaty-bankowe-terminal-koszty-dzialalnosci/",
+      "snippet": "May 16, 2026 · Czy opłaty za terminal i prowizje podlegają opodatkowaniu VAT? Usługi związane z obsługą płatności i prowizje za …"
+    },
+    {
+      "title": "Terminal płatniczy a podatki – zasady skorzystania z ulgi w PIT i CIT",
+      "url": "https://adnpodatki.pl/terminal-platniczy-a-podatki-zasady-skorzystania-z-ulgi-w-pit-i-cit/",
+      "snippet": "Jul 16, 2025 · Aby wspierać ten trend, polski ustawodawca wprowadził w 2022 r. możliwość skorzystania z ulgi podatkowej na …"
+    },
+    {
+      "title": "Serwis o podatkach - Ulga na terminal PIT - podatki.gov.pl",
+      "url": "https://www.podatki.gov.pl/ulgi-i-odliczenia/ulga-na-terminal-pit",
+      "snippet": "Dec 15, 2025 · Nie możesz skorzystać z ulgi na terminal, ponieważ przyjmowanie takich płatności przy użyciu terminala zapewniałeś …"
+    },
+    {
+      "title": "Zapłata za pośrednictwem kart płatniczych przez terminal a zwolnienie z ...",
+      "url": "https://ksiegowego.pl/article/zaplata-za-posrednictwem-kart-platniczych-przez-terminal-a-zwolnienie-z-obowiazku-stosowania-kasy-fiskalnej",
+      "snippet": "May 10, 2022 · W związku z tym zapłata za pośrednictwem karty płatniczej przez terminal w tym kontekście, nie spełnia ww. …"
+    },
+    {
+      "title": "Rozliczanie płatności kartami – praktyczny poradnik",
+      "url": "https://www.streamsoft.pl/poradnik-przedsiebiorcy/rozliczanie-platnosci-kartami/",
+      "snippet": "Jun 2, 2026 · W praktyce oznacza to, że środki pieniężne nie trafiają bezpośrednio od klienta na rachunek przedsiębiorcy, lecz …"
+    }
+  ]
+}

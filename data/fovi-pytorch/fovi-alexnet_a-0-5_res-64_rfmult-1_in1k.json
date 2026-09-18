@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "fovi-pytorch/fovi-alexnet_a-0.5_res-64_rfmult-1_in1k",
+  "slug": "fovi-pytorch-fovi-alexnet_a-0-5_res-64_rfmult-1_in1k",
+  "author": "fovi-pytorch",
+  "url": "https://huggingface.co/fovi-pytorch/fovi-alexnet_a-0.5_res-64_rfmult-1_in1k",
+  "created_at": "2026-02-02T07:28:36.000Z",
+  "updated_at": "2026-09-18T01:20:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "fovi",
+  "languages": [],
+  "tags": [
+    "fovi",
+    "foveated-vision",
+    "computer-vision",
+    "pytorch",
+    "alexnet",
+    "imagenet",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 24382774,
+  "storage_human": "24 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "رسميا.. استقالة لابورتا من رئاسة نادي برشلونة | الشرق",
+      "url": "https://al-sharq.com/article/09/02/2026/%D8%B1%D8%B3%D9%85%D9%8A%D8%A7-%D8%A7%D8%B3%D8%AA%D9%82%D8%A7%D9%84%D8%A9-%D9%84%D8%A7%D8%A8%D9%88%D8%B1%D8%AA%D8%A7-%D9%85%D9%86-%D8%B1%D8%A6%D8%A7%D8%B3%D8%A9-%D9%86%D8%A7%D8%AF%D9%8A-%D8%A8%D8%B1%D8%B4%D9%84%D9%88%D9%86%D8%A9",
+      "snippet": "أعلن نادي برشلونة متصدر الدوري الإسباني لكرة القدم اليوم الاثنين أن ⁠جوان لابورتا استقال من منصب رئيس النادي من أجل الترشح لإعادة انتخابه، مع انطلاق العد التنازلي لمدة 35 يوما حتى موعد الانتخابات …"
+    },
+    {
+      "title": "README.md · fovi-pytorch/fovi-alexnet_a-1_res-64_rfmult-2_in1k at main",
+      "url": "https://huggingface.co/fovi-pytorch/fovi-alexnet_a-1_res-64_rfmult-2_in1k/blob/main/README.md",
+      "snippet": "This is a pretrained foveated vision model from the fovi library."
+    },
+    {
+      "title": "استقالة لابورتا من رئاسة نادي برشلونة | رياضة | الجزيرة نت",
+      "url": "https://www.aljazeera.net/sport/2026/2/9/%D8%A7%D8%B3%D8%AA%D9%82%D8%A7%D9%84%D8%A9-%D9%84%D8%A7%D8%A8%D9%88%D8%B1%D8%AA%D8%A7-%D9%85%D9%86-%D8%B1%D8%A6%D8%A7%D8%B3%D8%A9-%D9%86%D8%A7%D8%AF%D9%8A-%D8%A8%D8%B1%D8%B4%D9%84%D9%88%D9%86%D8%A9",
+      "snippet": "Feb 9, 2026 · استقالة لابورتا من رئاسة نادي برشلونة حفظ شارِكْ لابورتا استقال ليخوض رئاسة نادي برشلونة (وكالات) 9/2/2026 | آخر تحديث: 16:19 (توقيت مكة)"
+    },
+    {
+      "title": "fovi · PyPI",
+      "url": "https://pypi.org/project/fovi/2.0.1/",
+      "snippet": "import torch from fovi.models import get_model_from_base_fn # Models are automatically downloaded from HuggingFace Hub on first use model = get_model_from_base_fn( 'fovi-dinov3-splus_a-2.78_res-64_in1k', device='cuda' ).eval() # RGB uint8 images, batch/channel/height/width; coordinates are normalized row/column."
+    },
+    {
+      "title": "خوان لابورتا يستقيل من رئاسة برشلونة - بوابة الأهرام",
+      "url": "https://gate.ahram.org.eg/News/5527116.aspx",
+      "snippet": "Sep 2, 2026 · أعلن خوان لابورتا استقالته رسميًا من منصب رئيس نادي برشلونة، إلى جانب استقالة عدد من أعضاء مجلس الإدارة الحاليين، تمهيدًا لترشحه في انتخابات رئاسة النادي المقررة في 15 …"
+    }
+  ]
+}

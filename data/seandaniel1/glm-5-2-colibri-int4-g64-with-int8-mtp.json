@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Seandaniel1/GLM-5.2-colibri-int4-g64-with-int8-mtp",
+  "slug": "seandaniel1-glm-5-2-colibri-int4-g64-with-int8-mtp",
+  "author": "Seandaniel1",
+  "url": "https://huggingface.co/Seandaniel1/GLM-5.2-colibri-int4-g64-with-int8-mtp",
+  "created_at": "2026-09-18T10:37:48.000Z",
+  "updated_at": "2026-09-18T10:37:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "glm_moe_dsa",
+    "colibri",
+    "glm",
+    "glm-5.2",
+    "glm-5",
+    "int4",
+    "moe",
+    "quantized",
+    "gpu-poor",
+    "text-generation",
+    "base_model:zai-org/GLM-5.2",
+    "base_model:quantized:zai-org/GLM-5.2",
+    "license:mit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 429276080522,
+  "storage_human": "429.3 GB",
+  "base_model": "zai-org/GLM-5.2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google mail",
+      "url": "https://mail.google.com/mail/?hl=el",
+      "snippet": "We would like to show you a description here but the site won’t allow us."
+    },
+    {
+      "title": "Gmail - Google Accounts",
+      "url": "https://accounts.google.com/servicelogin?service=mail",
+      "snippet": "Gmail is email that’s intuitive, efficient, and useful. 15 GB of storage, less spam, and mobile access."
+    },
+    {
+      "title": "Σύνδεση - Λογαριασμοί Google",
+      "url": "https://accounts.google.com/login?hl=el",
+      "snippet": "Χρησιμοποιήστε το Λογαριασμό σας Google Email ή τηλέφωνο Ξεχάσατε τη διεύθυνση ηλεκτρονικού ταχυδρομείου; Πληκτρολογήστε …"
+    },
+    {
+      "title": "Sign in - Google Accounts",
+      "url": "https://www.google.com/accounts/Login",
+      "snippet": "Not your computer? Use a private browsing window to sign in. Learn more about using Guest mode"
+    },
+    {
+      "title": "Συνδεθείτε στο Gmail - Υπολογιστής - Βοήθεια Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=el-gr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Στον υπολογιστή, μεταβείτε στο Gmail. Εισαγάγετε τη διεύθυνση ηλεκτρονικού ταχυδρομείου ή τον αριθμό τηλεφώνου και τον κωδικό …"
+    }
+  ]
+}

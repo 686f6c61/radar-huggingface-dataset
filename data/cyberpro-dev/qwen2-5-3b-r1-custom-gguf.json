@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "cyberpro-dev/Qwen2.5-3B-R1-Custom-GGUF",
+  "slug": "cyberpro-dev-qwen2-5-3b-r1-custom-gguf",
+  "author": "cyberpro-dev",
+  "url": "https://huggingface.co/cyberpro-dev/Qwen2.5-3B-R1-Custom-GGUF",
+  "created_at": "2026-09-18T11:36:09.000Z",
+  "updated_at": "2026-09-18T11:36:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen2",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 1929902624,
+  "storage_human": "1.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cyberplus Entreprise : votre solution pro | Banque Populaire",
+      "url": "https://www.banquepopulaire.fr/professionnels/gerer-developper-activite/cyberplus-professionnel/",
+      "snippet": "Gérez vos comptes Cyberplus Entreprise, votre espace bancaire sécurisé en ligne. Un service personnalisable, innovant et …"
+    },
+    {
+      "title": "Application mobile Cyberplus Pro | Banque Populaire",
+      "url": "https://www.banquepopulaire.fr/professionnels/gerer-developper-activite/application-pro-banque-populaire/",
+      "snippet": "L'application mobile dédiée aux clients professionnels qui répond de manière pratique à vos besoins au quotidien sur mobile."
+    },
+    {
+      "title": "CYBERPRO - VERISAFE",
+      "url": "https://www.verisafe.fr/cyberpro/",
+      "snippet": "Cursus Cybersécurité CYBERPRO est un cursus de formation absolument unique sur le marché français pour évoluer ou se …"
+    },
+    {
+      "title": "Suite Entreprise.COM",
+      "url": "https://www.neo.suiteentreprise.banquepopulaire.fr/",
+      "snippet": "Vous n’avez pas encore de compte ? Contacter votre Chargé d’Affaires"
+    },
+    {
+      "title": "Banque Populaire PRO – Applications sur Google Play",
+      "url": "https://play.google.com/store/apps/details?id=fr.banquepopulaire.cyberplus.pro&hl=fr",
+      "snippet": "Agriculteurs, commerçants, artisans, professions libérales, dirigeants de PME, trésoriers d’entreprise…, grâce à notre app, piloter les …"
+    }
+  ]
+}

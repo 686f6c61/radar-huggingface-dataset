@@ -1,0 +1,105 @@
+{
+  "schema": 1,
+  "id": "EldritchLabs/Aura-Prototype-26B-A4B",
+  "slug": "eldritchlabs-aura-prototype-26b-a4b",
+  "author": "EldritchLabs",
+  "url": "https://huggingface.co/EldritchLabs/Aura-Prototype-26B-A4B",
+  "created_at": "2026-09-18T09:20:10.000Z",
+  "updated_at": "2026-09-18T13:09:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "eng"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "all genres",
+    "conversational",
+    "creative",
+    "creative writing",
+    "della",
+    "fiction",
+    "fiction story",
+    "fiction writing",
+    "horror",
+    "merge",
+    "mergekit",
+    "mergekit-exp",
+    "aura",
+    "plot generation",
+    "roleplay",
+    "roleplaying",
+    "romance",
+    "rp",
+    "scene continue",
+    "science fiction",
+    "story",
+    "story generation",
+    "storytelling",
+    "sub-plot generation",
+    "swearing",
+    "vivid prosing",
+    "vivid writing",
+    "writing",
+    "eng",
+    "base_model:Gandalf69/Adversary-26B-A4B-v0",
+    "base_model:merge:Gandalf69/Adversary-26B-A4B-v0",
+    "base_model:Gryphe/Pantheon-Reasoning-26B-A4B-1.1-V2",
+    "base_model:merge:Gryphe/Pantheon-Reasoning-26B-A4B-1.1-V2",
+    "base_model:TheDrummer/Orion-26B-A4B-v1.1",
+    "base_model:merge:TheDrummer/Orion-26B-A4B-v1.1",
+    "base_model:electroglyph/gemma4-26b-fiction-bf16",
+    "base_model:merge:electroglyph/gemma4-26b-fiction-bf16",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25999063326,
+  "parameters_human": "26.00B",
+  "storage_bytes": 52030942877,
+  "storage_human": "52.0 GB",
+  "base_model": "Gandalf69/Adversary-26B-A4B-v0, TheDrummer/Orion-26B-A4B-v1.1, Gryphe/Pantheon-Reasoning-26B-A4B-1.1-V2, electroglyph/gemma4-26b-fiction-bf16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Authentification - Chargement des Informations de Session - ac-amiens…",
+      "url": "https://intranet.ac-amiens.fr/?m=0",
+      "snippet": "Chargement des informations de session de connexion depuis le navigateur... Puisque votre navigateur ne supporte pas JavaScript, …"
+    },
+    {
+      "title": "Académie d' Amiens - Webmail / Veuillez Utiliser votre identifiant ...",
+      "url": "https://intranet.ac-amiens.fr/webmail/?_task=login&_action=caslogin",
+      "snippet": "Connexion Académie d' Amiens - Webmail / Veuillez Utiliser votre identifiant academique et non votre adresse mail pour vous identifier"
+    },
+    {
+      "title": "Espace Pro | Académie d'Amiens",
+      "url": "https://www.ac-amiens.fr/article/espace-pro-121991",
+      "snippet": "Espace Pro L’académie d’Amiens met à votre disposition un site intranet. Vous pouvez y retrouver l’ensemble des informations et …"
+    },
+    {
+      "title": "ac-amiens.fr",
+      "url": "https://login.ac-amiens.fr/",
+      "snippet": "Accédez à votre espace personnel et aux applications académiques de l'Académie d'Amiens via ce portail sécurisé."
+    },
+    {
+      "title": "Connexion | Colibris - Académie d'Amiens",
+      "url": "https://connexion-amiens.colibris.education.gouv.fr/login/",
+      "snippet": "Je suis un utilisateur académique ou de l'administration centrale Se connecter"
+    }
+  ]
+}

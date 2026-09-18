@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "muhammadantor/typly-banglaasr-ct2",
+  "slug": "muhammadantor-typly-banglaasr-ct2",
+  "author": "muhammadantor",
+  "url": "https://huggingface.co/muhammadantor/typly-banglaasr-ct2",
+  "created_at": "2026-09-18T11:25:29.000Z",
+  "updated_at": "2026-09-18T12:24:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 248203797,
+  "storage_human": "248 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hauptseite * BrettspielWelt - Online Portal für Brettspiele",
+      "url": "https://www.brettspielwelt.de/",
+      "snippet": "Willkommen zum kostenlosen Brettspiele Online Portal. Hier kannst Du die besten Brettspiele, online mit weltweit mitspielenden …"
+    },
+    {
+      "title": "Fischen von Friedemann Friese – BrettspielWelt Magazin",
+      "url": "https://www.brettspielwelt.de/Magazin/fischen-von-friedemann-friese/",
+      "snippet": "Mar 20, 2026 · Friedemann Friese hat es wieder getan. Mit Fischen liefert der Autor, der für seine Vorliebe zur Farbe Grün und …"
+    },
+    {
+      "title": "Main Page * BrettspielWelt - Online Portal für Brettspiele",
+      "url": "https://www.brettspielwelt.de/?op",
+      "snippet": "Willkommen zum kostenlosen Brettspiele Online Portal. Hier kannst Du die besten Brettspiele, online mit weltweit mitspielenden …"
+    },
+    {
+      "title": "BrettspielWelt Gemeinschaft * BrettspielWelt - Online Portal für ...",
+      "url": "https://www.brettspielwelt.de/Community/view/path=2004.12.Konstanz/usr=Alynscia/",
+      "snippet": "Willkommen zum kostenlosen Brettspiele Online Portal. Hier kannst Du die besten Brettspiele, online mit weltweit mitspielenden …"
+    },
+    {
+      "title": "Real Life & Veranstaltungen – BrettspielWelt Magazin",
+      "url": "https://www.brettspielwelt.de/Magazin/category/leben-in-der-bsw/real-life/",
+      "snippet": "Feb 29, 2016 · Dominion Kingdom Builder King of Tokyo Triomino Munchkin Doppelkopf Wie ihr seht, haben die Turnierveranstalter …"
+    }
+  ]
+}

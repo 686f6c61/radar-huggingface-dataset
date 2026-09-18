@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ADEMx0x0x/adem",
+  "slug": "ademx0x0x-adem",
+  "author": "ADEMx0x0x",
+  "url": "https://huggingface.co/ADEMx0x0x/adem",
+  "created_at": "2026-09-18T10:50:01.000Z",
+  "updated_at": "2026-09-18T10:50:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pumpkin Carving Ideas: Fun & Easy Designs for the Whole Family",
+      "url": "https://theeverymom.com/pumpkin-carving-ideas/",
+      "snippet": "Sep 30, 2025 · Looking for 2025 pumpkin carving ideas? Check out these kid-friendly, creative, and easy pumpkin designs for a fun …"
+    },
+    {
+      "title": "1,000 Free Pumpkin Carving Patterns & Stencils | Pumpkin Lady",
+      "url": "https://pumpkinlady.com/",
+      "snippet": "The world’s favorite source for free pumpkin carving patterns for 28 years! Supported by our fans to keep 1,000 stencils free for …"
+    },
+    {
+      "title": "25 Creative Pumpkin Carving Ideas for Cool Jack-o'-Lanterns",
+      "url": "https://www.bhg.com/halloween/pumpkin-carving/pumpkin-carving-ideas/",
+      "snippet": "Aug 15, 2024 · These creative pumpkin carving ideas and stencils will give this year's jack-o'-lanterns distinct character—and make …"
+    },
+    {
+      "title": "53 Creative Pumpkin Carving Ideas and Designs for Halloween 2025",
+      "url": "https://www.housebeautiful.com/uk/decorate/g62652624/pumpkin-carving-ideas/",
+      "snippet": "Oct 21, 2025 · Go sweet or scary, cute or funny, clever or traditional. We found the best easy pumpkin carving ideas to get you and …"
+    },
+    {
+      "title": "41 Pumpkin Stencil and Design Ideas - Martha Stewart",
+      "url": "https://www.marthastewart.com/pumpkin-carving-stencils-7971815",
+      "snippet": "Sep 5, 2026 · Carving pumpkins is a cherished part of Halloween, whether you’re decorating with frightening decorations or setting up …"
+    }
+  ]
+}

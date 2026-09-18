@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "CHAEMINHAN/dissertation-text-image-retrieval54",
+  "slug": "chaeminhan-dissertation-text-image-retrieval54",
+  "author": "CHAEMINHAN",
+  "url": "https://huggingface.co/CHAEMINHAN/dissertation-text-image-retrieval54",
+  "created_at": "2026-09-18T11:02:36.000Z",
+  "updated_at": "2026-09-18T11:02:42.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "text-image-retrieval",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gmail Help",
+      "url": "https://support.google.com/mail/?hl=en",
+      "snippet": "Official Gmail Help Center where you can find tips and tutorials on using Gmail and other answers to frequently asked questions."
+    },
+    {
+      "title": "Gmail にログインする - パソコン - Gmail ヘルプ",
+      "url": "https://support.google.com/mail/answer/8494?hl=ja&co=GENIE.Platform%3DDesktop",
+      "snippet": "Gmail にログインする ヒント: 不特定多数の人が使うパソコンにログインする場合は、パソコンから離れる前に必ずログアウトして …"
+    },
+    {
+      "title": "Sign in to Gmail - Computer - Gmail Help - Google Help",
+      "url": "https://support.google.com/mail/answer/8494?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "Sign in to Gmail Tip: If you sign in to a public computer, make sure to sign out before you leave the computer. Learn how to sign in on …"
+    },
+    {
+      "title": "\"Użyj ujednoliconej poczty dla tego konta\" | forum home.pl",
+      "url": "https://forum.home.pl/threads/uzyj-ujednoliconej-poczty-dla-tego-konta.306/",
+      "snippet": "Sep 16, 2015 · \"Użyj ujednoliconej poczty dla tego konta\" Dyskusja w ' Obsługa skrzynki e-mail w Poczcie home.pl ' rozpoczęta przez …"
+    },
+    {
+      "title": "Google-Konto für Gmail erstellen - Gmail-Hilfe",
+      "url": "https://support.google.com/mail/answer/56256?hl=de",
+      "snippet": "Wichtig: Melden Sie sich von Ihrem aktuellen Konto ab, bevor Sie ein neues Google-Konto erstellen. Hier erfahren Sie, wie Sie sich …"
+    }
+  ]
+}

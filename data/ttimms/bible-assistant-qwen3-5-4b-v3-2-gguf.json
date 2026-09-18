@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Ttimms/Bible-Assistant-Qwen3.5-4B-v3.2-GGUF",
+  "slug": "ttimms-bible-assistant-qwen3-5-4b-v3-2-gguf",
+  "author": "Ttimms",
+  "url": "https://huggingface.co/Ttimms/Bible-Assistant-Qwen3.5-4B-v3.2-GGUF",
+  "created_at": "2026-09-05T08:05:34.000Z",
+  "updated_at": "2026-09-18T01:15:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "bible",
+    "rag",
+    "llama.cpp",
+    "qwen3.5",
+    "nvfp4",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:quantized:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 312,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 24604938368,
+  "storage_human": "24.6 GB",
+  "base_model": "Qwen/Qwen3.5-4B, Ttimms/Bible-Assistant-Qwen3.5-4B-v3.2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wikipedia",
+      "url": "https://www.wikipedia.org/",
+      "snippet": "Wikipedia is a free online encyclopedia, created and edited by volunteers around the world and hosted by the Wikimedia Foundation."
+    },
+    {
+      "title": "Wikipedia, the free encyclopedia",
+      "url": "https://en.wikipedia.org/wiki/Main_Page",
+      "snippet": "Wikipedia is written by volunteer editors and hosted by the Wikimedia Foundation, a non-profit organization that also hosts a range of …"
+    },
+    {
+      "title": "Wikipedia - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Wikipedia",
+      "snippet": "Founded by Jimmy Wales and Larry Sanger in 2001, Wikipedia has been hosted since 2003 by the Wikimedia Foundation, an …"
+    },
+    {
+      "title": "Wikipédia, l'encyclopédie libre",
+      "url": "https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Accueil_principal",
+      "snippet": "Wikipédia L'encyclopédie libre que vous pouvez améliorer Accueil de la communauté Comment contribuer ? Portails thématiques …"
+    },
+    {
+      "title": "ويكيبيديا، الموسوعة الحرة",
+      "url": "https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D8%B5%D9%81%D8%AD%D8%A9_%D8%A7%D9%84%D8%B1%D8%A6%D9%8A%D8%B3%D8%A9",
+      "snippet": "ويكيبيديا مشروع تعاوني متعدد اللغات يضم ويكيات بأكثر من 300 لغة للعمل في مشاريع موسوعات حرة ودقيقة ومتكاملة ومتنوعة ومحايدة، يستطيع الجميع المساهمة في تحريرها. نشأت ويكيبيديا في عام …"
+    }
+  ]
+}

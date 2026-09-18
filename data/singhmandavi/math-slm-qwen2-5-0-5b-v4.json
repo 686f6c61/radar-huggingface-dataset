@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "singhmandavi/math-slm-qwen2.5-0.5b-v4",
+  "slug": "singhmandavi-math-slm-qwen2-5-0-5b-v4",
+  "author": "singhmandavi",
+  "url": "https://huggingface.co/singhmandavi/math-slm-qwen2.5-0.5b-v4",
+  "created_at": "2026-09-18T07:18:04.000Z",
+  "updated_at": "2026-09-19T08:02:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "qwen2",
+    "math",
+    "education",
+    "GATE",
+    "SLM",
+    "Qwen",
+    "LoRA",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 1530587556,
+  "storage_human": "1.5 GB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Online Thrift Store | ShopTheSalvationArmy - Sony PlayStation VR2 ...",
+      "url": "https://www.shopthesalvationarmy.com/Listing/Details/510353581/Sony-PlayStation-VR2-Headset-PSVR2-Sense-Controllers-3pcs-Untested-A605",
+      "snippet": "Brand: Sony Model:PlayStation VR2 Headset VR2 Sense Controllers (Right/Left) Features: 4K HDR Display Eye Tracking Inside-Out …"
+    },
+    {
+      "title": "PSVR 2 Controller Design Revealed, Haptic Feedback And Adaptive …",
+      "url": "https://www.psu.com/news/psvr-2-controller-designed-revealed-haptic-feedback-and-adaptive-trigger-support-confirmed/",
+      "snippet": "Mar 18, 2021 · The PSVR 2 controller design has officially been confirmed by Sony! Check it out here, along with details on adaptive …"
+    },
+    {
+      "title": "PlayStation VR2 review: a powerful VR headset that's begging to be ...",
+      "url": "https://www.digitaltrends.com/gaming/playstation-vr2-review/",
+      "snippet": "Dec 2, 2024 · “PlayStation VR2 is a strong iteration of Sony's first VR headset, but a lack of software and direction leave its future …"
+    },
+    {
+      "title": "PS VR2 Tech Specs | PlayStation VR2 display, setup and compatibility",
+      "url": "https://www.playstation.com/en-gb/ps-vr2/ps-vr2-tech-specs/",
+      "snippet": "Feedback Trigger effect (on R2/L2 button), haptic feedback (by single actuator per unit)"
+    },
+    {
+      "title": "Sony PlayStation VR2 Horizon Call of the Mountain (Bundle)",
+      "url": "https://souqprice.com/qa/ar-qa/sony-playstation-vr2-horizon-call-of-the-mountain-bundle-%D8%AC%D9%8A%D9%85%D8%B1-%D8%B2%D9%88%D9%86-1",
+      "snippet": "The next generation of virtual reality gaming Innovative PlayStation VR2 Sense™ technology brings emotion and immersion to life …"
+    }
+  ]
+}

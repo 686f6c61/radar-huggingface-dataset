@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "SteveFozz/chessumi-analysis-assets",
+  "slug": "stevefozz-chessumi-analysis-assets",
+  "author": "SteveFozz",
+  "url": "https://huggingface.co/SteveFozz/chessumi-analysis-assets",
+  "created_at": "2026-09-08T23:09:31.000Z",
+  "updated_at": "2026-09-21T07:27:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1153885150,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JOMA official website | JOMA",
+      "url": "https://www.joma-sport.com/it_IT/",
+      "snippet": "Welcome to JOMA official website. Find out the latest in sports clothing and equipment at the best price. Visit us!"
+    },
+    {
+      "title": "Sport | JOMA",
+      "url": "https://www.joma-sport.com/it_IT/sport/",
+      "snippet": "Scopri le novità Sport al miglior prezzo sullo shop ufficiale JOMA. Visita il nostro sito!"
+    },
+    {
+      "title": "Joma - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Joma",
+      "snippet": "Joma è stata fondata a Toledo nel 1965 dall'imprenditore Fructuoso López per produrre scarpe. Il nome del marchio deriva dal nome …"
+    },
+    {
+      "title": "JOMA Collezione | Decathlon",
+      "url": "https://www.decathlon.it/brands/joma",
+      "snippet": "Scopri l'attrezzatura e l'abbigliamento sportivo JOMA da Decathlon. Trova prodotti di alta qualità per vivere al massimo il tuo stile di …"
+    },
+    {
+      "title": "Joma - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Joma",
+      "snippet": "Joma was founded in 1965 by Fructuoso López to produce shoes for general use. The brand name comes from the given name of …"
+    }
+  ]
+}

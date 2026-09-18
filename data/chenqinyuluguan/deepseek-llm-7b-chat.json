@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "chenqinyuluguan/deepseek-llm-7b-chat",
+  "slug": "chenqinyuluguan-deepseek-llm-7b-chat",
+  "author": "chenqinyuluguan",
+  "url": "https://huggingface.co/chenqinyuluguan/deepseek-llm-7b-chat",
+  "created_at": "2026-09-18T11:07:56.000Z",
+  "updated_at": "2026-09-18T11:07:56.000Z",
+  "license": "deepseek",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "llama",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13820824960,
+  "storage_human": "13.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎是一个中文互联网高质量问答社区和创作者聚集的原创内容平台，致力于分享知识、经验和见解，帮助用户找到答案。"
+    },
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "太空僧：首先，月球并不冷。 最早测出月球日下点（赤道正午）温度的，是 1927 年威尔逊山天文台的佩蒂特和尼科尔森，他们 …"
+    },
+    {
+      "title": "Paypal所谓的支持银联借记卡，实际只能绑定，支付时还是会出问题导 …",
+      "url": "https://www.zhihu.com/question/350802951",
+      "snippet": "我这篇是答案！！如果看完解决了，记得点个赞~ 我认为贝宝（Paypal）不支持银联借记卡。我第一次使用贝宝支付时显示被发卡机构 …"
+    },
+    {
+      "title": "Deep Van - 知乎",
+      "url": "https://www.zhihu.com/people/yang-lei-96-72",
+      "snippet": "Aug 17, 2026 · Deep Van是知乎用户，擅长回答金融、科技和生活问题，其个人星球为DeepVan的逃生地牢，回答风格直言不讳，获 …"
+    },
+    {
+      "title": "目前写作最好使的AI是哪个? - 知乎",
+      "url": "https://www.zhihu.com/question/1928922312138298273",
+      "snippet": "通用写作器，类似大型三角钢琴： Gemini 2.5 Pro，这个模型，默认无风格，但深不见底，这应该是世界上非合成数据最多的模型，只 …"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "xw17/Llama-3.2-3B-Instruct_SFT_lora_cogwear",
+  "slug": "xw17-llama-3-2-3b-instruct_sft_lora_cogwear",
+  "author": "xw17",
+  "url": "https://huggingface.co/xw17/Llama-3.2-3B-Instruct_SFT_lora_cogwear",
+  "created_at": "2026-09-04T14:45:55.000Z",
+  "updated_at": "2026-09-18T01:04:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 114568624,
+  "storage_human": "115 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Top 10 Web Development Best Practices - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/blogs/web-development-best-practices/",
+      "snippet": "Jul 23, 2025 · Here are the top 10 web development best practices observed for their ability to create excellent online experiences, …"
+    },
+    {
+      "title": "Web Development Best Practices 2026: Engineering Guide",
+      "url": "https://pagepro.co/blog/web-development-best-practices/",
+      "snippet": "Mar 4, 2026 · Learn modern web development best practices for building fast, secure, & scalable websites, including performance, …"
+    },
+    {
+      "title": "Web development best practices: A 2026 engineering guide",
+      "url": "https://www.netguru.com/blog/web-development-best-practices",
+      "snippet": "Jul 24, 2026 · What's the difference between web development best practices and a web development checklist? Best practices are …"
+    },
+    {
+      "title": "11 Must-Follow Web Development Best Practices & Examples",
+      "url": "https://metana.io/blog/must-follow-web-development-best-practices/",
+      "snippet": "Jun 3, 2026 · To stay ahead in 2025, developers need to follow proven practices that ensure efficiency, scalability, and great user …"
+    },
+    {
+      "title": "10 Essential Web Development Best Practices for 2025",
+      "url": "https://blog.amino.dev/web-development-best-practices/",
+      "snippet": "Sep 26, 2025 · Elevate your projects with our top 10 web development best practices. Learn about performance, security, …"
+    }
+  ]
+}

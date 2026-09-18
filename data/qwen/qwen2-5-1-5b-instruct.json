@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Qwen/Qwen2.5-1.5B-Instruct",
+  "slug": "qwen-qwen2-5-1-5b-instruct",
+  "author": "Qwen",
+  "url": "https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct",
+  "created_at": "2024-09-17T14:10:29.000Z",
+  "updated_at": "2024-09-25T12:32:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "chat",
+    "conversational",
+    "en",
+    "arxiv:2407.10671",
+    "base_model:Qwen/Qwen2.5-1.5B",
+    "base_model:finetune:Qwen/Qwen2.5-1.5B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "deploy:azure",
+    "region:us"
+  ],
+  "likes": 836,
+  "downloads_30d": 7184297,
+  "trending_score": 9,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 10208517569,
+  "storage_human": "10.2 GB",
+  "base_model": "Qwen/Qwen2.5-1.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen Studio",
+      "url": "https://chat.qwen.ai/",
+      "snippet": "Qwen Studio is an official platform from Qwen that empowers both everyday users and developers with unified access to Qwen’s …"
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/home",
+      "snippet": "Qwen Studio is an AI assistant for everyone, powered by the Qwen series models. It’s free to use, open to all, and ready to help with …"
+    },
+    {
+      "title": "Qwen — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Qwen",
+      "snippet": "Qwen (également connu sous le nom de Tongyi Qianwen, ou en chinois 通义千问) est une famille de grands modèles de langage …"
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/blog?id=qwen3.8",
+      "snippet": "Today, we are officially releasing Qwen 3.8-Max, the most capable model in the Qwen family to date. This also marks the first time …"
+    },
+    {
+      "title": "Qwen - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Qwen",
+      "snippet": "Qwen (also known as Tongyi Qianwen, Chinese: 通义千问; pinyin: Tōngyì Qiānwèn) is a family of predominantly open weights large …"
+    }
+  ]
+}

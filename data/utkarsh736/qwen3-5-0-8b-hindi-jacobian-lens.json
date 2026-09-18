@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Utkarsh736/qwen3.5-0.8b-hindi-jacobian-lens",
+  "slug": "utkarsh736-qwen3-5-0-8b-hindi-jacobian-lens",
+  "author": "Utkarsh736",
+  "url": "https://huggingface.co/Utkarsh736/qwen3.5-0.8b-hindi-jacobian-lens",
+  "created_at": "2026-09-18T10:57:48.000Z",
+  "updated_at": "2026-09-18T11:07:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformer_lens",
+  "languages": [
+    "hi"
+  ],
+  "tags": [
+    "transformer_lens",
+    "jacobian-lens",
+    "interpretability",
+    "mechanistic-interpretability",
+    "hindi",
+    "qwen",
+    "language-model-internals",
+    "hi",
+    "dataset:HuggingFaceFW/finewiki",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 48242990,
+  "storage_human": "48 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BastosTV - YouTube",
+      "url": "https://www.youtube.com/channel/UCsvzD2D8_1gq7kCm_zl0LMQ",
+      "snippet": "CARLA SLAPS, SYDNEY I LOVE YOU. 2 ème chaine youtube et pas la dernière..."
+    },
+    {
+      "title": "Bastos (influenceur) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Bastos_(influenceur)",
+      "snippet": "Bastos, de son vrai nom Bastien Grimal, né le 24 mars 1988 en Alsace, est un influenceur, vidéaste web, streameur, ancien …"
+    },
+    {
+      "title": "Bastos TV - YouTube",
+      "url": "https://www.youtube.com/channel/UCujhtzIaxhlELDc87_E5sIA",
+      "snippet": "Bienvenue sur la chaîne officielle de BASTOS 🇨🇩💪Originaire de la République Démocratique du Congo, Merveille, artistiquement connue …"
+    },
+    {
+      "title": "Monsieur Bastos (@bastoswithlove) • Instagram photos and videos",
+      "url": "https://www.instagram.com/bastoswithlove/",
+      "snippet": "990K Followers, 1,117 Following, 1,634 Posts - Monsieur Bastos (@bastoswithlove) on Instagram: \"Youtube: bastosTV 💌 …"
+    },
+    {
+      "title": "Bastos (@ilovebastos) | TikTok",
+      "url": "https://www.tiktok.com/@ilovebastos",
+      "snippet": "Rejoins 778.4K followers sur TikTok pour plus de contenu pourtoi, bebew, tractopellemusik."
+    }
+  ]
+}

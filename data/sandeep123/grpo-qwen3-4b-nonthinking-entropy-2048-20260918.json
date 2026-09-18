@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "sandeep123/grpo-qwen3-4b-nonthinking-entropy-2048-20260918",
+  "slug": "sandeep123-grpo-qwen3-4b-nonthinking-entropy-2048-20260918",
+  "author": "sandeep123",
+  "url": "https://huggingface.co/sandeep123/grpo-qwen3-4b-nonthinking-entropy-2048-20260918",
+  "created_at": "2026-09-18T06:08:41.000Z",
+  "updated_at": "2026-09-22T03:12:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "reinforcement-learning",
+    "math",
+    "nonthinking",
+    "stride",
+    "text-generation",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:adapter:Qwen/Qwen3-4B-Instruct-2507",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22329390403,
+  "storage_human": "22.3 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/?gl=DE&hl=de",
+      "snippet": "Auf YouTube findest du großartige Videos und erstklassige Musik. Außerdem kannst du eigene Inhalte hochladen und mit Freunden …"
+    },
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/youtube",
+      "snippet": "Welcome to the official YouTube channel – a home for the biggest moments, the smallest obsessions, and everything in between. …"
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/de/german",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    },
+    {
+      "title": "YouTube – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/YouTube",
+      "snippet": "YouTube (Aussprache [ˈjuːtuːb oder ˈjuːtjuːb]) ist ein 2005 gegründetes Videoportal des US-amerikanischen Unternehmens YouTube, …"
+    },
+    {
+      "title": "YouTube - Google Accounts",
+      "url": "https://accounts.google.com/InteractiveLogin?service=youtube",
+      "snippet": "Share your videos with friends, family, and the world."
+    }
+  ]
+}

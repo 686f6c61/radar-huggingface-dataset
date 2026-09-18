@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "humanlong/improving-self-evolution-mbpp",
+  "slug": "humanlong-improving-self-evolution-mbpp",
+  "author": "humanlong",
+  "url": "https://huggingface.co/humanlong/improving-self-evolution-mbpp",
+  "created_at": "2026-09-16T10:01:35.000Z",
+  "updated_at": "2026-09-17T17:05:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "code",
+    "self-training",
+    "self-distillation",
+    "lora",
+    "research",
+    "en",
+    "dataset:google-research-datasets/mbpp",
+    "base_model:Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9273823328,
+  "storage_human": "9.3 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Erwin Müller Onlineshop",
+      "url": "https://de.erwinmueller.com/",
+      "snippet": "Erwin Müller Onlineshop Heimtextilien sorgen für ein wohliges und gemütliches Zuhause Heimtextilien sind nicht nur praktische …"
+    },
+    {
+      "title": "Bettwäsche online kaufen | Erwin Müller",
+      "url": "https://de.erwinmueller.com/Schlafen/Bettwaesche",
+      "snippet": "Bettwäsche in hoher Qualität Standardgröße Übergröße Kinder-Bettwäsche jetzt Bettwäsche online kaufen bei Erwin Müller!"
+    },
+    {
+      "title": "Günstige Sale | SALE bei Erwin Müller - ERWIN MÜLLER ONLINE-SHOP",
+      "url": "https://de.erwinmueller.com/Sale",
+      "snippet": "Sale SALE Qualität zum attraktiven Preis 5 Jahre Garantie auf unsere Eigenmarke Bequem online bestellen! Trusted Shops …"
+    },
+    {
+      "title": "Wäsche & Homewear im Erwin Müller Online-Shop",
+      "url": "https://de.erwinmueller.com/Waesche-Homewear",
+      "snippet": "Wäsche & Homewear Qualität zum attraktiven Preis 5 Jahre Garantie auf unsere Eigenmarke Bequem online bestellen! Trusted …"
+    },
+    {
+      "title": "Bettwaren online bestellen – große Auswahl | Erwin Müller",
+      "url": "https://de.erwinmueller.com/Schlafen",
+      "snippet": "Welche Arten von Bettwaren bietet Erwin Müller an? Bettwäsche (Bettdecken- und Kissenbezug) Bettzeug (Decken & Kopfkissen) …"
+    }
+  ]
+}

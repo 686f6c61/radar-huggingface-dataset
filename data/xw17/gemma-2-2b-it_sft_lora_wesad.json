@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "xw17/gemma-2-2b-it_SFT_lora_wesad",
+  "slug": "xw17-gemma-2-2b-it_sft_lora_wesad",
+  "author": "xw17",
+  "url": "https://huggingface.co/xw17/gemma-2-2b-it_SFT_lora_wesad",
+  "created_at": "2026-05-01T11:25:36.000Z",
+  "updated_at": "2026-09-17T23:39:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 117525592,
+  "storage_human": "118 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mapa Sevilla Santa Cruz color - congreso.us.es",
+      "url": "https://congreso.us.es/convie/wp-content/uploads/2022/06/ruta-y-mapa-del-barrio-de-santa-cruz-color.pdf",
+      "snippet": "Camina despacio y disfruta aquí de un paseo por una de las calles más románticas de Sevilla para llegar a la plaza que da nombre …"
+    },
+    {
+      "title": "Barrio Santa cruz - Mapa - Sevilla, Andalucía, España",
+      "url": "https://mapcarta.com/es/N4383576392",
+      "snippet": "Barrio Santa cruz está en Sevilla, Provincia de Sevilla, Andalucía. Mapcarta, el mapa abierto."
+    },
+    {
+      "title": "Santa Cruz - Mapa - Plaza - Sevilla, Andalucía, España",
+      "url": "https://mapcarta.com/es/27551694",
+      "snippet": "Santa Cruz es un barrio histórico de Sevilla que se asienta en parte de la antigua judería de la ciudad. La judería ocupaba lo que hoy …"
+    },
+    {
+      "title": "Ruta Barrio de Santa Cruz | Turismo de la Provincia de Sevilla",
+      "url": "https://www.turismosevilla.org/es/que-ver-y-hacer/planes-recomendados/ruta-barrio-de-santa-cruz",
+      "snippet": "Este barrio de Santa Cruz era una parte de la antigua judería de Sevilla. Empezamos la visita por el Patio de Banderas. Desde aquí …"
+    },
+    {
+      "title": "Barrio de Santa Cruz, Sevilla 2026. Qué ver en el ... - Visitar Sevilla",
+      "url": "https://www.visitarsevilla.com/el-barrio-de-santa-cruz/",
+      "snippet": "Nov 14, 2025 · El Barrio de Santa Cruz de Sevilla es el corazón de la Sevilla histórica con sus monumentos, las estrechas calles de …"
+    }
+  ]
+}

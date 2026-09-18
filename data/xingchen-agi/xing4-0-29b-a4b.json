@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "XingChen-AGI/Xing4.0-29B-A4B",
+  "slug": "xingchen-agi-xing4-0-29b-a4b",
+  "author": "XingChen-AGI",
+  "url": "https://huggingface.co/XingChen-AGI/Xing4.0-29B-A4B",
+  "created_at": "2026-09-16T06:44:40.000Z",
+  "updated_at": "2026-09-18T09:49:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xing4_0",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "arxiv:2512.24157",
+    "arxiv:2507.18013",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 215,
+  "downloads_30d": 61,
+  "trending_score": 168,
+  "parameters": 31215031088,
+  "parameters_human": "31.22B",
+  "storage_bytes": 62433282310,
+  "storage_human": "62.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AutoScout24: Voitures acheter et vendre en Suisse",
+      "url": "https://www.autoscout24.ch/fr",
+      "snippet": "Voitures sur AutoScout24 : Le plus grand choix de véhicules d'occasion et neufs vous attend sur la plus célèbre place de marché en …"
+    },
+    {
+      "title": "AutoScout24 : Vente et achat de voitures neuves et d'occasion",
+      "url": "https://www.autoscout24.fr/",
+      "snippet": "Voitures d'occasion à vendre! Plus de 2.700.000 voitures d'occasions et neuves à vendre en Europe avec AutoScout24."
+    },
+    {
+      "title": "Voitures - acheter un véhicule d'occasion | AutoScout24",
+      "url": "https://www.autoscout24.ch/fr/s",
+      "snippet": "I.B.A. Automobile AG • 5702 Niederlenz + Tous les véhicules de ce revendeur NOUVEAU AutoScout24 Direct"
+    },
+    {
+      "title": "New and Used cars marketplace AutoScout24",
+      "url": "https://www.autoscout24.com/",
+      "snippet": "Find used cars at AutoScout24 Makes and Models Audi Audi A1 Audi A3 Audi A4 Audi A6 Audi Q3 All Audi Models"
+    },
+    {
+      "title": "Voitures d'occasion sur AutoScout24",
+      "url": "https://www.autoscout24.fr/lst",
+      "snippet": "Tu trouveras ici l'offre la plus complète de voitures neuves et d'occasion, AutoScout24 le plus grand site auto d'Europe."
+    }
+  ]
+}

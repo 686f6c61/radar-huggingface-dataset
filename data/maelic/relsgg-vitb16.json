@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "maelic/relsgg-vitb16",
+  "slug": "maelic-relsgg-vitb16",
+  "author": "maelic",
+  "url": "https://huggingface.co/maelic/relsgg-vitb16",
+  "created_at": "2026-09-09T19:15:38.000Z",
+  "updated_at": "2026-09-22T04:49:27.000Z",
+  "license": "dinov3-license",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "relsgg",
+  "languages": [],
+  "tags": [
+    "relsgg",
+    "scene-graph-generation",
+    "open-vocabulary",
+    "visual-relationship-detection",
+    "image-text-to-text",
+    "arxiv:2609.12552",
+    "license:other",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 562940303,
+  "storage_human": "563 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "Visual Genome 150 (test)",
+      "metric": "F1@50 (vg150 test, graph-constrained)",
+      "value": 0.3746
+    }
+  ],
+  "sources": [
+    {
+      "title": "A Beautiful Noise Tickets - ticketsonsale.com",
+      "url": "https://www.ticketsonsale.com/theater/A-Beautiful-Noise-Providence-tickets?pid=131641&rid=112&vid=1370",
+      "snippet": "Find A Beautiful Noise tickets for all upcoming concerts and events. View A Beautiful Noise tour dates, venues, and buy tickets with …"
+    }
+  ]
+}

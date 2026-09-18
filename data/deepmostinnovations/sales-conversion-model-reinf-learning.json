@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "DeepMostInnovations/sales-conversion-model-reinf-learning",
+  "slug": "deepmostinnovations-sales-conversion-model-reinf-learning",
+  "author": "DeepMostInnovations",
+  "url": "https://huggingface.co/DeepMostInnovations/sales-conversion-model-reinf-learning",
+  "created_at": "2025-05-11T15:50:35.000Z",
+  "updated_at": "2026-09-17T07:55:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "stable-baselines3",
+    "sales_conversion_rl",
+    "reinforcement-learning",
+    "sales",
+    "conversation-analysis",
+    "conversion-prediction",
+    "ppo",
+    "turn-by-turn-analysis",
+    "en",
+    "dataset:synthetic",
+    "arxiv:2503.23303",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 83,
+  "downloads_30d": 142,
+  "trending_score": 38,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 59764738,
+  "storage_human": "60 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "sales-conversion-model-reinf-learning - Hugging Face",
+      "url": "https://huggingface.co/DeepMostInnovations/sales-conversion-model-reinf-learning",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=cs",
+      "snippet": "Reklama Vše o Googlu Google.com in English © 2026 - Ochrana soukromí - Smluvní podmínky"
+    },
+    {
+      "title": "README.md · DeepMostInnovations/sales-conversion-model-reinf-learning ...",
+      "url": "https://huggingface.co/DeepMostInnovations/sales-conversion-model-reinf-learning/blob/main/README.md",
+      "snippet": "A reinforcement learning model trained to analyze sales conversations and predict conversion probability evolution turn-by-turn. Specializes in tracking how each message impacts sales success using advanced PPO and LLM-powered metrics."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com.nf/webhp?gl=nf&hl=en&gws_rd=cr&pws=0",
+      "snippet": "Advertising Business Solutions About Google Google.com © 2026 - Privacy - Terms"
+    }
+  ]
+}

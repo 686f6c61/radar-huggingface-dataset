@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Yobos/q-Taxi-v3",
+  "slug": "yobos-q-taxi-v3",
+  "author": "Yobos",
+  "url": "https://huggingface.co/Yobos/q-Taxi-v3",
+  "created_at": "2026-09-18T10:27:03.000Z",
+  "updated_at": "2026-09-18T10:44:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Taxi-v3",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 152332,
+  "storage_human": "152332 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pornhubで45万の請求が来てしまって年齢確認のところを押しただけ …",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11304353466",
+      "snippet": "Pornhubで45万の請求が来てしまって 年齢確認 のところを押しただけで出てしまったんですが ワンクリック詐欺 でしょうか...？？ …"
+    },
+    {
+      "title": "竹前美結さんは美人ですか？ - Yahoo!知恵袋",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11328235186",
+      "snippet": "May 20, 2026 · すごいのは本人じゃなくて日本の加工技術です。 美人といえば、鳥取・米子のレンガ投げ女の方が美人です。"
+    },
+    {
+      "title": "Facebook verrouillé et code reçu par whatsapp - Facebook",
+      "url": "https://forums.commentcamarche.net/forum/affich-38130243-facebook-verrouille-et-code-recu-par-whatsapp",
+      "snippet": "Dec 5, 2024 · Bonjour, Mon compte Facebook est bloqué car on me demande un code par Whatsapp (que je n'utilise pas) ou deux …"
+    },
+    {
+      "title": "Une fenêtre anti-virus apparaît continuellement - Virus",
+      "url": "https://forums.commentcamarche.net/forum/affich-37703113-une-fenetre-anti-virus-apparait-continuellement",
+      "snippet": "Oct 7, 2022 · Bonjour à tous, Depuis quelques jours, une fenêtre me demandant de nettoyer les virus apparaît aux 2 minutes pour …"
+    },
+    {
+      "title": "みんな大好きなサイト「pornhub」の読み方を教えてください。",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q14228337339",
+      "snippet": "Jul 13, 2020 · みんな大好きなサイト「pornhub」の読み方を教えてください。"
+    }
+  ]
+}

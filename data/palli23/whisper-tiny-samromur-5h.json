@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "palli23/whisper-tiny-samromur-5h",
+  "slug": "palli23-whisper-tiny-samromur-5h",
+  "author": "palli23",
+  "url": "https://huggingface.co/palli23/whisper-tiny-samromur-5h",
+  "created_at": "2026-06-03T14:41:13.000Z",
+  "updated_at": "2026-09-18T22:41:50.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "is"
+  ],
+  "tags": [
+    "safetensors",
+    "whisper",
+    "is",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 32,
+  "trending_score": 0,
+  "parameters": 37760640,
+  "parameters_human": "37.8M",
+  "storage_bytes": 151067001,
+  "storage_human": "151 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Présentation [AlpineQuest]",
+      "url": "http://www.alpinequest.net/fr",
+      "snippet": "Aug 28, 2026 · AlpineQuest est la solution complète pour toutes vos activités et sports en extérieur, comme la randonnée, la course, …"
+    },
+    {
+      "title": "Download [AlpineQuest]",
+      "url": "https://alpinequest.net/en/download",
+      "snippet": "en/download.txt · Last modified: 2025/07/03 11:58 by psyberia"
+    },
+    {
+      "title": "Home - Alpine Quest",
+      "url": "https://alpinequest.org/",
+      "snippet": "From Vienna to Monaco. An all-female pan-Alpine challenge across 5 countries, combining cycling, ski mountaineering and trail …"
+    },
+    {
+      "title": "AlpineQuest Rando GPS – Applications sur Google Play",
+      "url": "https://play.google.com/store/apps/details?id=psyberia.alpinequest.full&hl=fr",
+      "snippet": "Transformez votre téléphone en un véritable GPS de randonnée avec cartes topo!"
+    },
+    {
+      "title": "Alpine Quest | Expéditions alpines, glaciers et climat",
+      "url": "https://alpinequest.org/fr/",
+      "snippet": "Alpine Quest documente la transformation des Alpes face au changement climatique à travers les glaciers, l’eau et les communautés …"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "dianavdavidson/indic_whisper_hi_multi_gpu_mucs_62901_ratio_alldata_lr_1e-4_lgid_hi_hinglish_mixed_scripts_FT",
+  "slug": "dianavdavidson-indic_whisper_hi_multi_gpu_mucs_62901_ratio_alldata_lr_1e-4_lgid_hi_hinglish_mixed_scripts_ft",
+  "author": "dianavdavidson",
+  "url": "https://huggingface.co/dianavdavidson/indic_whisper_hi_multi_gpu_mucs_62901_ratio_alldata_lr_1e-4_lgid_hi_hinglish_mixed_scripts_FT",
+  "created_at": "2026-09-16T11:54:54.000Z",
+  "updated_at": "2026-09-19T04:10:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "generated_from_trainer",
+    "base_model:parthiv11/indic_whisper_hi_multi_gpu",
+    "base_model:finetune:parthiv11/indic_whisper_hi_multi_gpu",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 20,
+  "trending_score": 0,
+  "parameters": 763857920,
+  "parameters_human": "763.9M",
+  "storage_bytes": 36666537233,
+  "storage_human": "36.7 GB",
+  "base_model": "parthiv11/indic_whisper_hi_multi_gpu",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wyniki na żywo, mecze na żywo, zakłady live | STS",
+      "url": "https://www.sts.pl/live?msockid=2a3c1c48381c69c327550b9f3920682f",
+      "snippet": "Dzięki aplikacji STS, sprawdzając wyniki na żywo trzeba być jak piłkarski napastnik, który ma tylko krótką chwilę na podjęcie …"
+    },
+    {
+      "title": "Tenis live - zakłady i wyniki na żywo. Tenis na żywo w STS.",
+      "url": "https://www.sts.pl/live/tenis?msockid=2a3c1c48381c69c327550b9f3920682f",
+      "snippet": "O czym mówimy? Do jednych z innowacji możemy zaliczyć tenis live, czyli zakłady i wyniki na żywo! Z pewnością to powód do …"
+    },
+    {
+      "title": "STS | Oferta i wyniki",
+      "url": "https://www.sts.pl/oferta-pdf?msockid=2a3c1c48381c69c327550b9f3920682f",
+      "snippet": "STS S.A. posiada zezwolenie na urządzanie zakładów wzajemnych za pośrednictwem sieci Internet wydane przez Ministra Finansów …"
+    },
+    {
+      "title": "Zakłady bukmacherskie - Najlepszy bukmacher online | STS",
+      "url": "https://www.sts.pl/?msockid=2a3c1c48381c69c327550b9f3920682f",
+      "snippet": "STS to bukmacher oferujący szeroką gamę zakładów na żywo i prematch, zakłady na sporty wirtualne i gry karciane Betgames, a …"
+    },
+    {
+      "title": "Zakłady na Ekstraklasę | Typy i kursy Ekstraklasa 2025/26",
+      "url": "https://www.sts.pl/zaklady-bukmacherskie/pilka-nozna/polska/ekstraklasa/1/46/201?msockid=2a3c1c48381c69c327550b9f3920682f",
+      "snippet": "Ekstraklasa - zakłady i kursy w STS ⚽ Jesteś fanem piłki nożnej? Sprawdź wyniki i kursy ligi polskiej! Kibicowanie połącz z …"
+    }
+  ]
+}

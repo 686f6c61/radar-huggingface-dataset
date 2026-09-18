@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "palli23/wav2vec2-base-samromur-300h",
+  "slug": "palli23-wav2vec2-base-samromur-300h",
+  "author": "palli23",
+  "url": "https://huggingface.co/palli23/wav2vec2-base-samromur-300h",
+  "created_at": "2026-06-08T04:00:25.000Z",
+  "updated_at": "2026-09-18T22:41:46.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "is"
+  ],
+  "tags": [
+    "safetensors",
+    "wav2vec2",
+    "is",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 21,
+  "trending_score": 0,
+  "parameters": 94402472,
+  "parameters_human": "94.4M",
+  "storage_bytes": 8795551249,
+  "storage_human": "8.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.nl/?hl=nl&hl=nl",
+      "snippet": "Wij willen hier een beschrijving geven, maar de site die u nu bekijkt staat dit niet toe."
+    },
+    {
+      "title": "Google",
+      "url": "https://ipv4.google.com/?hl=nl_nl",
+      "snippet": "Adverteren Alles over Google Google.com in English © 2026 - Privacy - Voorwaarden"
+    },
+    {
+      "title": "グーネット中古車 - 中古車・中古車情報なら【グー ...",
+      "url": "https://www.goo-net.com/",
+      "snippet": "中古車のことなら【グーネット中古車（Goo-net）】！中古車情報を517771台掲載！登録台数が豊富で検索しやすいので、あなたに …"
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.com/",
+      "snippet": "Find local businesses, view maps and get driving directions in Google Maps."
+    }
+  ]
+}

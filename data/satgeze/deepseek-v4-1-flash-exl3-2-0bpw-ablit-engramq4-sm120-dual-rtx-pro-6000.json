@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "satgeze/DeepSeek-v4.1-Flash-EXL3-2.0bpw-Ablit-EngramQ4-SM120-Dual-RTX-Pro-6000",
+  "slug": "satgeze-deepseek-v4-1-flash-exl3-2-0bpw-ablit-engramq4-sm120-dual-rtx-pro-6000",
+  "author": "satgeze",
+  "url": "https://huggingface.co/satgeze/DeepSeek-v4.1-Flash-EXL3-2.0bpw-Ablit-EngramQ4-SM120-Dual-RTX-Pro-6000",
+  "created_at": "2026-09-16T14:20:38.000Z",
+  "updated_at": "2026-09-17T23:57:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deepseek_v41",
+    "2-bit",
+    "exl3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 39,
+  "trending_score": 0,
+  "parameters": 188955825634,
+  "parameters_human": "188.96B",
+  "storage_bytes": 259813971053,
+  "storage_human": "259.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Diki app : r/learnpolish - Reddit",
+      "url": "https://www.reddit.com/r/learnpolish/comments/pnzyjl/diki_app/",
+      "snippet": "Sep 14, 2021 · Diki app Hey, is this the best quick translator for mobile (EN - PL and vice-versa)? It can translate words depending on …"
+    },
+    {
+      "title": "TWERKCOMPILATION - Reddit",
+      "url": "https://www.reddit.com/r/TWERKCOMPILATION/about/",
+      "snippet": "r/TWERKCOMPILATION: Twerking compilation videos 🍆🍆🍑🍑🍑 #followin youtube"
+    },
+    {
+      "title": "①.この部屋は水も出「1.なくて 2.ないで」、電気も使えません。",
+      "url": "https://zh.hinative.com/questions/27355002",
+      "snippet": "①.この部屋は水も出「1.なくて 2.ないで」、電気も使えません。 中国の教科書に「なくてとないでは並列を表す時に意味はほぼ同 …"
+    },
+    {
+      "title": "all subreddits • r/all",
+      "url": "https://www.reddit.com/r/all-do/",
+      "snippet": "Reddit gives you the best of the internet in one place. Get a constantly updating feed of breaking news, fun stories, pics, memes, and …"
+    },
+    {
+      "title": "ahoylistnet - Reddit",
+      "url": "https://www.reddit.com/r/ahoylistnet/",
+      "snippet": "We made a simple index site that lists streaming, anime, torrent, live TV, sports, music, ebook, and other piracy-related sites in one …"
+    }
+  ]
+}

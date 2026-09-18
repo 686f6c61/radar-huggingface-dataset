@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L1-l0-e3",
+  "slug": "pessimisticdpo-mistral-7b-sft-beta-a0-1-b0-1-l1-l0-e3",
+  "author": "PessimisticDPO",
+  "url": "https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L1-l0-e3",
+  "created_at": "2026-09-18T10:59:34.000Z",
+  "updated_at": "2026-09-18T10:59:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 167832240,
+  "storage_human": "168 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Telekom Shops in Ihrer Nähe finden | Telekom",
+      "url": "https://www.telekom.de/telekom-shops",
+      "snippet": "Finden Sie den Telekom Shop in Ihrer Nähe und erleben Sie innovative Produkte, Beratung und Service vor Ort. Jetzt entdecken!"
+    },
+    {
+      "title": "PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L1-l0-e0 · Hugging Face",
+      "url": "https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L1-l0-e0",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Telekom Shop in der Nähe - Filial FINDER | OFFEN.net",
+      "url": "https://www.offen.net/finder/telekom-shop-PX7E.html",
+      "snippet": "Durchsuche mehr als 600 Standorte und finde Telekom Shop Filialen in Deiner Nähe. Finde die aktuellen Öffnungszeiten und die …"
+    },
+    {
+      "title": "Alle Telekom Shop Standorte im Überblick | Telekom",
+      "url": "https://shopseite.telekom.de/",
+      "snippet": "Hier finden Sie alle Telekom Shops in Deutschland und erhalten auf einen Blick Informationenen zu Öffnungszeiten und weiteren …"
+    },
+    {
+      "title": "Alle Telekom Shop in der Nähe finden | Telefon | Adressen",
+      "url": "https://www.11880.com/suche/telekom-shop",
+      "snippet": "Wenn kein Telekom Shop direkt in Ihrer Nähe ist, zeigen wir Ihnen Alternativen im Umkreis. Bewertungen und Öffnungszeiten …"
+    }
+  ]
+}

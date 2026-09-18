@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Avalonec/Qwen3.8-27B-QUASAR-All-NVFP4-Attention-MLP-DFlash2-W8-NInfer",
+  "slug": "avalonec-qwen3-8-27b-quasar-all-nvfp4-attention-mlp-dflash2-w8-ninfer",
+  "author": "Avalonec",
+  "url": "https://huggingface.co/Avalonec/Qwen3.8-27B-QUASAR-All-NVFP4-Attention-MLP-DFlash2-W8-NInfer",
+  "created_at": "2026-09-12T12:17:09.000Z",
+  "updated_at": "2026-09-17T23:32:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "qwen",
+    "Qwen3.8-27B",
+    "Ninfer",
+    "NVFP4",
+    "QUASAR",
+    "DFlash2",
+    "arxiv:2608.13966",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19984963072,
+  "storage_human": "20.0 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Coxswain - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Coxswain",
+      "snippet": "A coxswain is the coach in the boat: in addition to following the orders of the team coach, the coxswain is connected to the way the …"
+    },
+    {
+      "title": "COXSWAIN Definition & Meaning - Merriam-Webster",
+      "url": "https://www.merriam-webster.com/dictionary/coxswain",
+      "snippet": "Sep 11, 2026 · The meaning of COXSWAIN is a sailor who has charge of a ship's boat and its crew and who usually steers."
+    },
+    {
+      "title": "Coxswain - de.knowledgr.com",
+      "url": "https://de.knowledgr.com/00536551/Coxswain",
+      "snippet": "Der Coxswain ist der Verantwortliche eines Bootes, insbesondere dessen Navigation und Lenkung."
+    },
+    {
+      "title": "Coxswain (rowing) - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Coxswain_(rowing)",
+      "snippet": "In a rowing crew, the coxswain (/ ˈkɒksən / KOK-sən or / ˈkɒksweɪn / KOK-swayn; colloquially known as the cox or coxie) is a …"
+    },
+    {
+      "title": "coxswain - Wiktionary, the free dictionary",
+      "url": "https://en.m.wiktionary.org/wiki/coxswain",
+      "snippet": "Aug 14, 2026 · From Middle English cokswain, equivalent to cock (“small boat”) +‎ swain (“boy, servant”). coxswain (plural coxswains) …"
+    }
+  ]
+}

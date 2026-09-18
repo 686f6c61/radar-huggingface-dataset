@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "matlod/minimax-h3-turnaround",
+  "slug": "matlod-minimax-h3-turnaround",
+  "author": "matlod",
+  "url": "https://huggingface.co/matlod/minimax-h3-turnaround",
+  "created_at": "2026-08-08T01:01:00.000Z",
+  "updated_at": "2026-08-08T03:15:04.000Z",
+  "license": "minimax",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "minimax-h3",
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "lora",
+    "multi-view",
+    "character-sheet",
+    "turnaround",
+    "reference-to-image",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:adapter:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 24,
+  "downloads_30d": 0,
+  "trending_score": 16,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 196712852,
+  "storage_human": "197 MB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "whatsapp.com Web - use another Browser - Browser unsupported for ...",
+      "url": "https://forum.vivaldi.net/topic/113545/whatsapp.com-web-use-another-browser-browser-unsupported-for-whatsapp-web",
+      "snippet": "Nov 19, 2025 · Hi, whatsapp.com - site indicates that you should use a different browser for Whatsapp Web. Any Solutions ? …"
+    },
+    {
+      "title": "Whatsapp web on web panel became extremely slow - Vivaldi Forum",
+      "url": "https://forum.vivaldi.net/topic/78815/whatsapp-web-on-web-panel-became-extremely-slow",
+      "snippet": "Suddenly Whatsapp's web version in desktop mode that I use for web panels became extremely slow and unresponsive, and I cannot …"
+    },
+    {
+      "title": "Entrei na Deep Web mas não tinha nada de anormal ou interessante.?",
+      "url": "https://forum.techtudo.com.br/perguntas/290667/entrei-na-deep-web-mas-nao-tinha-nada-de-anormal-ou-interessante",
+      "snippet": "Ouvi dizerem que tem assassinatos, vídeos de fantasmas, e até venda de drogas e armas, etc. Entrei pra ver se era verdade, por …"
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://www.answers.microsoft.com/zh-hans/windows/forum/all/ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¥ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¤ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â½ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¤ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â»ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â½win8ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚ÂºÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â´ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â°/d8c51abf-b863-4da3-9596-797deace59f7",
+      "snippet": ""
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://www.answers.microsoft.com/ja-jp/windows/forum/windows_7-security/ÃƒÂ£Ã†â€™ÃƒÂ¢Ã‚Â£ÃƒÂ£Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÂ£Ã¢â‚¬Å¡ÃƒÂ¢Ã‚Â¦ÃƒÂ£Ã†â€™ÃƒÂ¢Ã‚Â£ÃƒÂ£Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÂ£Ã¢â‚¬Å¡ÃƒÂ¢Ã‚Â¼ÃƒÂ£Ã†â€™ÃƒÂ¢Ã‚Â£ÃƒÂ£Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¥Ã‚Â¡ÃƒÂ£Ã¢â‚¬Å¡ÃƒÂ¢Ã‚Â¶ÃƒÂ£Ã†â€™ÃƒÂ¢Ã‚Â£ÃƒÂ£Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÂ£Ã¢â‚¬Å¡ÃƒÂ¢Ã‚Â¼ÃƒÂ£Ã†â€™ÃƒÂ¢Ã‚Â£ÃƒÂ£Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¥Ã‚Â¡ÃƒÂ£Ã¢â‚¬Å¡ÃƒÂ¢Ã‚Â¢/7ffe7a9b-d0cf-454c-b3db-731542747656",
+      "snippet": ""
+    }
+  ]
+}

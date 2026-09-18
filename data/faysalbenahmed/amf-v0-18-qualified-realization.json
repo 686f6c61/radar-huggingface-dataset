@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "faysalbenahmed/AMF-v0.18-Qualified-Realization",
+  "slug": "faysalbenahmed-amf-v0-18-qualified-realization",
+  "author": "faysalbenahmed",
+  "url": "https://huggingface.co/faysalbenahmed/AMF-v0.18-Qualified-Realization",
+  "created_at": "2026-09-14T11:49:31.000Z",
+  "updated_at": "2026-09-20T11:32:58.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "amf",
+    "lora",
+    "qualified-intelligence-realization",
+    "representation-canonicalization",
+    "scientific-ai",
+    "text-generation",
+    "base_model:mistralai/Mistral-7B-Instruct-v0.3",
+    "base_model:adapter:mistralai/Mistral-7B-Instruct-v0.3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13189306,
+  "storage_human": "13 MB",
+  "base_model": "mistralai/Mistral-7B-Instruct-v0.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Netflix",
+      "url": "https://www.netflix.com/de/login",
+      "snippet": "Schauen Sie Netflix-Filme und -Serien online oder per Streaming auf Smart-TVs, Spielkonsolen, PCs, Macs, Smartphones, Tablets …"
+    },
+    {
+      "title": "Netflix Deutschland – Serien online ansehen, Filme online ansehen",
+      "url": "https://www.netflix.com/de/N/login",
+      "snippet": "Sie können unsere Inhalte überall und jederzeit ansehen. Loggen Sie sich mit Ihrem Netflix-Konto auf der Website unter netflix.com …"
+    },
+    {
+      "title": "netflix.de",
+      "url": "http://netflix.de/login",
+      "snippet": "Hier sollte eine Beschreibung angezeigt werden, diese Seite lässt dies jedoch nicht zu."
+    },
+    {
+      "title": "Netflix - Watch TV Shows Online, Watch Movies Online",
+      "url": "https://www.netflix.com/?hl=de",
+      "snippet": "Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet …"
+    },
+    {
+      "title": "Netflix",
+      "url": "https://www.netflix.com/de-en/login/home",
+      "snippet": "Watch Netflix movies & TV shows online or stream right to your smart TV, game console, PC, Mac, mobile, tablet and more."
+    }
+  ]
+}

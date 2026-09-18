@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ctr49/embeddinggemma-300m-Q5_K_M-GGUF",
+  "slug": "ctr49-embeddinggemma-300m-q5_k_m-gguf",
+  "author": "ctr49",
+  "url": "https://huggingface.co/ctr49/embeddinggemma-300m-Q5_K_M-GGUF",
+  "created_at": "2026-09-18T11:42:28.000Z",
+  "updated_at": "2026-09-18T11:43:46.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "sentence-transformers",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "gguf",
+    "llama.cpp",
+    "embeddings",
+    "quantized",
+    "q5_k_m",
+    "feature-extraction",
+    "multilingual",
+    "base_model:google/embeddinggemma-300m",
+    "base_model:quantized:google/embeddinggemma-300m",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 307581696,
+  "parameters_human": "307.6M",
+  "storage_bytes": 249977184,
+  "storage_human": "250 MB",
+  "base_model": "google/embeddinggemma-300m",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SZA - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/SZA",
+      "snippet": "or International Album of the Year winners MTV Video Music Award winners"
+    },
+    {
+      "title": "SZA - YouTube",
+      "url": "https://www.youtube.com/channel/UCO5IQ70V7l-XpHW40HwaGsw",
+      "snippet": "Listen Here // https://sza.lnk.to/Lana Shop SZA’s official merch store: https://shop.szasos.com/ Starring Ben Stiller Follow SZA: …"
+    },
+    {
+      "title": "SZA (@sza) • Instagram photos and videos",
+      "url": "https://www.instagram.com/sza/",
+      "snippet": "23M Followers, 1,572 Following, 541 Posts - SZA (@sza) on Instagram: \"Big rigatoni + @notbeauty Founder Notbeauty.com\""
+    },
+    {
+      "title": "SZA - YouTube Music",
+      "url": "https://music.youtube.com/@sza",
+      "snippet": "Solána Imani Rowe, known professionally as SZA, is an American singer-songwriter. Known for her diaristic songwriting and genre …"
+    },
+    {
+      "title": "SZA",
+      "url": "https://www.szactrl.com/",
+      "snippet": "Discover SZACTRL's minimalist design and explore the essence of C T R L."
+    }
+  ]
+}

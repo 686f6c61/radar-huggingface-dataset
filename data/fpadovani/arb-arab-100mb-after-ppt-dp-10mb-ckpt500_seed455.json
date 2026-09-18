@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/arb-arab-100mb-after-ppt-Dp-10mb-ckpt500_seed455",
+  "slug": "fpadovani-arb-arab-100mb-after-ppt-dp-10mb-ckpt500_seed455",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/arb-arab-100mb-after-ppt-Dp-10mb-ckpt500_seed455",
+  "created_at": "2026-09-18T11:29:43.000Z",
+  "updated_at": "2026-09-18T11:45:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:fpadovani/arb-arab-100mb-ppt-Dp-10mb_seed455",
+    "base_model:finetune:fpadovani/arb-arab-100mb-ppt-Dp-10mb_seed455",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 2746577543,
+  "storage_human": "2.7 GB",
+  "base_model": "fpadovani/arb-arab-100mb-ppt-Dp-10mb_seed455",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "UniFi AC HD - Tech Specs - Ubiquiti",
+      "url": "https://techspecs.ui.com/unifi/wifi/uap-ac-hd",
+      "snippet": "Ceiling-mounted WiFi 5 AP with 8 spatial streams designed to support high-density networks and critical system applications."
+    },
+    {
+      "title": "UniFi HD AP Datasheet - Ubiquiti",
+      "url": "https://dl.ubnt.com/datasheets/unifi/UniFi_UAP-AC-HD_DS.pdf",
+      "snippet": "802.11ac Wave 2 MU-MIMO (Multi-User, Multiple Input, Multiple Output) technology allows a Wave 2 AP, such as the UniFi HD AP, …"
+    },
+    {
+      "title": "UBIQUITI UAP-AC-HD",
+      "url": "https://ubiquitipolska.pl/ubiquiti-unifi-access-point/163-Ubiquiti-UAP-AC-HD.html",
+      "snippet": "Oferowany produkt wykorzystuje technologię MU-MIMO, może jednocześnie nadawać i odbierać dane do 4 podłączonych urządzeń, …"
+    },
+    {
+      "title": "UAP AC HD - Ubiquiti Polska",
+      "url": "https://ubiquitipolska.pl/66-ubiquiti-unifi-access-point",
+      "snippet": "UniFi AP ac HD to punkt dostępowy firmy Ubiquiti pracujący w standardzie ac. Jest to urządzenie dwuzakresowe (dual band), może …"
+    },
+    {
+      "title": "Ubiquiti UniFi AC HD 802.11ac 4x4 MU-MIMO AP (UAP-AC-HD)",
+      "url": "https://www.cyberbajt.pl/produkt/9815/ubiquiti-unifi-ac-hd-80211ac-4x4-mu-mimo-ap-ua.html",
+      "snippet": "UniFi AC HD to wydajny punkt dostępowy pracujący jednocześnie w częstotliwościach 2.4 oraz 5GHz. Urządzenie jest w pełni …"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "AXERA-TECH/Qwen3-VL-4B-Instruct-LoRA-AX650",
+  "slug": "axera-tech-qwen3-vl-4b-instruct-lora-ax650",
+  "author": "AXERA-TECH",
+  "url": "https://huggingface.co/AXERA-TECH/Qwen3-VL-4B-Instruct-LoRA-AX650",
+  "created_at": "2026-09-18T09:56:55.000Z",
+  "updated_at": "2026-09-20T02:46:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "axllm",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "axllm",
+    "qwen3-vl",
+    "axera",
+    "ax650",
+    "lora",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3-VL-4B-Instruct",
+    "base_model:adapter:Qwen/Qwen3-VL-4B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 24,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6914644475,
+  "storage_human": "6.9 GB",
+  "base_model": "Qwen/Qwen3-VL-4B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ただいまアクセスしにくい状況が発生しております",
+      "url": "https://www.jalan.net/ikisaki/map/tokyo/?msockid=041113a454b864820aac047e55b16507",
+      "snippet": "じゃらんならおすすめ宿のお得な期間限定プランが満載。当日／直前のオンライン予約もOK。ホテル旅館の宿泊予約は国内最大級 …"
+    },
+    {
+      "title": "【実質最安値保証】岡山県のホテル・旅館 - 宿泊予約は ...",
+      "url": "https://www.jalan.net/ikisaki/map/okayama/?msockid=041113a454b864820aac047e55b16507",
+      "snippet": "3 days ago · ホテル・旅館・宿泊施設からの新着トピックス ベッセルホテル倉敷（倉敷・総社・井笠） ReFaドライヤー導入いたし …"
+    },
+    {
+      "title": "【実質最安値保証】鹿児島県のホテル・旅館 - 宿泊予約は ...",
+      "url": "https://www.jalan.net/ikisaki/map/kagoshima/?msockid=041113a454b864820aac047e55b16507",
+      "snippet": "SHIROYAMA HOTEL kagoshima（城山ホテル鹿児島） ハイクラス 清潔感 高評価 朝食 高評価 風呂 高評価 4.6(3,122件) 1泊 大人2名 …"
+    },
+    {
+      "title": "【実質最安値保証】福岡県のホテル・旅館 - 宿泊予約は ...",
+      "url": "https://www.jalan.net/ikisaki/map/fukuoka/?msockid=041113a454b864820aac047e55b16507",
+      "snippet": "Sep 21, 2026 · HOTEL LA FORESTA ～ BY RIGNA ～ （ホテル ラ フォレスタ）（福岡市（博多駅周辺・天神周辺）） 肌と環境を …"
+    },
+    {
+      "title": "【実質最安値保証】大分県のホテル・旅館 - 宿泊予約は ...",
+      "url": "https://www.jalan.net/ikisaki/map/ooita/?msockid=041113a454b864820aac047e55b16507",
+      "snippet": "1 day ago · REX HOTEL 別府 部屋 高評価 風呂 高評価 清潔感 高評価 4.6 (691件) 1泊 大人2名 合計 (税込) 25,300円～ 1名 12,650 …"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "dkaczer/qwen3-14b-sft-aesthetic-100",
+  "slug": "dkaczer-qwen3-14b-sft-aesthetic-100",
+  "author": "dkaczer",
+  "url": "https://huggingface.co/dkaczer/qwen3-14b-sft-aesthetic-100",
+  "created_at": "2026-09-18T11:26:21.000Z",
+  "updated_at": "2026-09-18T11:48:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "emergent-misalignment",
+    "ai-safety",
+    "not-for-all-audiences",
+    "arxiv:2605.31328",
+    "base_model:Qwen/Qwen3-14B",
+    "base_model:adapter:Qwen/Qwen3-14B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 525300518,
+  "storage_human": "525 MB",
+  "base_model": "Qwen/Qwen3-14B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Recsi - Copilot",
+      "url": "https://www.copilot.be/recsi/",
+      "snippet": "COPILOT a récemment accompagné l’entreprise RECSI dans le cadre de son rachat par Ventuno, société liégeoise en forte …"
+    },
+    {
+      "title": "Clarisse DAVREUX - Copilot",
+      "url": "https://www.copilot.be/qui-sommes-nous/lequipe/clarisse-davreux/",
+      "snippet": "COPYRIGHT 2022 - COPILOT. TOUS DROITS RÉSERVÉS - Politique de confidentialité Création de sites Internet | ProduWeb"
+    },
+    {
+      "title": "FQMS | Copilot",
+      "url": "https://www.copilot.be/fqms/",
+      "snippet": "Accompagnée par COPILOT dans son projet de cession, FQMS SRL exploite un Proxy Delhaize idéalement situé au cœur de Huy. …"
+    },
+    {
+      "title": "Escargotière de Warnant | Copilot",
+      "url": "https://www.copilot.be/escargot/",
+      "snippet": "Escargotière de Warnant Tout en douceur, la transmission fait son chemin COPILOT accompagne la reprise de L’Escargotière de …"
+    },
+    {
+      "title": "Camac - Copilot",
+      "url": "https://www.copilot.be/camac/",
+      "snippet": "COPILOT a récemment accompagné la société CAMAC dans le cadre de la cession de son activité à ARCO Group. Cette opération …"
+    }
+  ]
+}

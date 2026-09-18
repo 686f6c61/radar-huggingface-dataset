@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "senty-au/selfie_multiclass_256x256-ONNX",
+  "slug": "senty-au-selfie_multiclass_256x256-onnx",
+  "author": "senty-au",
+  "url": "https://huggingface.co/senty-au/selfie_multiclass_256x256-ONNX",
+  "created_at": "2026-09-18T10:51:40.000Z",
+  "updated_at": "2026-09-18T10:51:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "onnxruntime",
+    "mediapipe",
+    "hair-segmentation",
+    "human-parsing",
+    "selfie-segmentation",
+    "cpu",
+    "image-segmentation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16454560,
+  "storage_human": "16 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "McAfee AI-Powered Antivirus, Scam, Identity, and Privacy Protection",
+      "url": "https://www.mcafee.com/?msockid=102b5c7149fc6c4629d54ba948386dad",
+      "snippet": "How can McAfee help protect my identity? McAfee+ plans safeguard your life online with advanced privacy features, 24/7 identity …"
+    },
+    {
+      "title": "Download and Install our Award Winning Products | McAfee",
+      "url": "https://www.mcafee.com/en-us/antivirus/downloads.html?msockid=102b5c7149fc6c4629d54ba948386dad",
+      "snippet": "McAfee® Mobile Security for Android and iOS Protect up to five smartphones with email address monitoring with alerts for detected …"
+    },
+    {
+      "title": "McAfee - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/McAfee",
+      "snippet": "The company was founded in 1987 as McAfee Associates, named for its founder John McAfee, who resigned from the company in …"
+    },
+    {
+      "title": "Antivirus Software and Internet Security For Your PC or Mac | McAfee",
+      "url": "https://myaccount.mcafee.com/v2/",
+      "snippet": "Secure your PC or Mac with McAfee's antivirus software and internet security solutions for comprehensive protection."
+    },
+    {
+      "title": "McAfee Antivirus - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/McAfee_Antivirus",
+      "snippet": "McAfee Antivirus is an antivirus software created and maintained by McAfee (formerly known as Intel Security, and Network …"
+    }
+  ]
+}

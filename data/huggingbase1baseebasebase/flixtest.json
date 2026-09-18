@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Huggingbase1baseebasebase/FlixTest",
+  "slug": "huggingbase1baseebasebase-flixtest",
+  "author": "Huggingbase1baseebasebase",
+  "url": "https://huggingface.co/Huggingbase1baseebasebase/FlixTest",
+  "created_at": "2026-08-25T14:50:57.000Z",
+  "updated_at": "2026-09-21T04:00:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 248997757718,
+  "storage_human": "249.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "kununu - Arbeitgeber bewerten ️ Finde deinen besten Arbeitgeber",
+      "url": "https://www.kununu.com/",
+      "snippet": "Bewerte anonym Unternehmenskultur, Gehalt, Benefits und mehr oder finde den besten Arbeitgeber für dich auf der führenden …"
+    },
+    {
+      "title": "kununu Erfahrungen 2026: 211 Bewertungen von Mitarbeiter:innen",
+      "url": "https://www.kununu.com/at/kununu/kommentare",
+      "snippet": "Erfahre aus erster Hand, ob kununu als Arbeitgeber zu dir passt. 211 Erfahrungsberichte von Mitarbeitern liefern dir die Antwort."
+    },
+    {
+      "title": "kununu Gehaltscheck Deutschland – kununu dein Gehalt!",
+      "url": "https://www.kununu.com/de/gehalt",
+      "snippet": "kununu Gehaltscheck Beruf eingeben und Einblicke zum Gehalt erhalten Verdienst du wie der Rest Deutschlands? Finde heraus, …"
+    },
+    {
+      "title": "Beste Arbeitgeber Deutschlands 2026 | kununu News",
+      "url": "https://news.kununu.com/beste-arbeitgeber-deutschland/",
+      "snippet": "Jun 16, 2026 · Wer sind die besten Arbeitgeber in Deutschland 2026? Die ZEIT & kununu haben die Top-Arbeitgeber gekürt. 🏆 Ist dein …"
+    },
+    {
+      "title": "Mein kununu Profil – jetzt einloggen",
+      "url": "https://www.kununu.com/de/login",
+      "snippet": "Let's make work better. Mit über 16 Millionen authentischen Erfahrungsberichten zu Arbeitgebern, Unternehmenskulturen und …"
+    }
+  ]
+}

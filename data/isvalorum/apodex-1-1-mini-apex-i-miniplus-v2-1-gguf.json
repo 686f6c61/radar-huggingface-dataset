@@ -1,0 +1,105 @@
+{
+  "schema": 1,
+  "id": "IsValorum/Apodex-1.1-mini-APEX-I-MiniPlus-V2.1-GGUF",
+  "slug": "isvalorum-apodex-1-1-mini-apex-i-miniplus-v2-1-gguf",
+  "author": "IsValorum",
+  "url": "https://huggingface.co/IsValorum/Apodex-1.1-mini-APEX-I-MiniPlus-V2.1-GGUF",
+  "created_at": "2026-09-18T08:06:19.000Z",
+  "updated_at": "2026-09-21T20:10:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh",
+    "es",
+    "fr",
+    "de",
+    "pt",
+    "it",
+    "ru",
+    "ja",
+    "ko",
+    "vi",
+    "th",
+    "ar"
+  ],
+  "tags": [
+    "gguf",
+    "quantized",
+    "quantization",
+    "apex",
+    "apex-quant",
+    "custom-quantization",
+    "unsloth-studio",
+    "moe",
+    "reasoning",
+    "llama.cpp",
+    "qwen35moe",
+    "text-generation",
+    "en",
+    "zh",
+    "es",
+    "fr",
+    "de",
+    "pt",
+    "it",
+    "ru",
+    "ja",
+    "ko",
+    "vi",
+    "th",
+    "ar",
+    "base_model:apodex/Apodex-1.1-mini",
+    "base_model:quantized:apodex/Apodex-1.1-mini",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 275,
+  "trending_score": 0,
+  "parameters": 35505251456,
+  "parameters_human": "35.51B",
+  "storage_bytes": 30661981376,
+  "storage_human": "30.7 GB",
+  "base_model": "apodex/Apodex-1.1-mini",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mini bags Queen (@mini.bags.queen) | TikTok",
+      "url": "https://www.tiktok.com/@mini.bags.queen",
+      "snippet": "Join 2455 followers on TikTok for more asmrpackaging, asmr, minibaglovers content."
+    },
+    {
+      "title": "#minibagsqueen - TikTok",
+      "url": "https://www.tiktok.com/tag/minibagsqueen",
+      "snippet": "minibagsshop Mini bags Queen #asmrpackaging#asmr#baglover#minibaglovers#bagstyle Amy Disfefano here is your video hope …"
+    },
+    {
+      "title": "TikTok Shop Scams: Fake Deals, Sellers & Safety Tips – Gridinsoft Blog",
+      "url": "https://blog.gridinsoft.com/tiktok-shopping-scams/",
+      "snippet": "Jun 6, 2026 · Learn how TikTok Shop scams work in 2026: fake sellers, off-app checkout, phishing links, counterfeit products, refund …"
+    },
+    {
+      "title": "Is TikTok Shop Safe? Scams, Fakes & How to Stay Safe",
+      "url": "https://www.scamadviser.com/articles/is-tiktok-shop-safe-what-you-need-to-know-about-fake-sellers-and-counterfeit-products",
+      "snippet": "Mar 23, 2026 · Is TikTok Shop safe? The platform removed 70 million fake listings in 2025 — but scams still slip through. Here's how …"
+    },
+    {
+      "title": "Free Deepfake Checker — Check Any Image or Video | DeepGuard AI",
+      "url": "https://deepguardai.com/deepfake-checker/",
+      "snippet": "Free deepfake checker — check any image or video for AI manipulation in seconds. Paste a link or upload a file and get an instant …"
+    }
+  ]
+}

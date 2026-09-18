@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "OliverSundaram/Sai-Slice1-60M-base",
+  "slug": "oliversundaram-sai-slice1-60m-base",
+  "author": "OliverSundaram",
+  "url": "https://huggingface.co/OliverSundaram/Sai-Slice1-60M-base",
+  "created_at": "2026-09-18T10:32:54.000Z",
+  "updated_at": "2026-09-18T10:44:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "sai",
+    "feature-extraction",
+    "moe",
+    "mixture-of-experts",
+    "custom_code",
+    "base-model",
+    "small-language-model",
+    "pretrained",
+    "text-generation",
+    "en",
+    "dataset:openbmb/Ultra-FineWeb-L3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 60681984,
+  "parameters_human": "60.7M",
+  "storage_bytes": 729589448,
+  "storage_human": "730 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Osaka Gezi Rehberi | Seyahat Önerileri | Yolcu360",
+      "url": "https://yolcu360.com/lokasyonlar/japonya/osaka",
+      "snippet": "Tokyo’dan Osaka’ya Shinkansen ile ulaşım yaklaşık 2,5-3 saat sürer. Shin-Osaka İstasyonu, şehirlerarası hızlı trenlerin ana durağıdır …"
+    },
+    {
+      "title": "Japonya Osaka Gezi Rehberi: En Güzel Yer ve Gezi Tavsiyeleri | Avrupa ...",
+      "url": "https://www.avruparuyasi.com.tr/osakada-gezilecek-yerler-en-guzel-5-yer",
+      "snippet": "Oct 25, 2025 · Türkiye’den Osaka’ya seyahat etmek oldukça kolay ama genelde aktarmalı uçuşlarla seyahat gerçekleştirilmektedir. …"
+    },
+    {
+      "title": "Osaka Seyahati, 2026 - Tripadvisor",
+      "url": "https://www.tripadvisor.com.tr/Tourism-g298566-Osaka_Osaka_Prefecture_Kinki-Vacations.html",
+      "snippet": "Osaka Seyahat: Tripadvisor, mükemmel bir tatil için, Osaka, Osaka Prefecture - gezilecek yerler, restoranlar ve konaklama yerleri …"
+    },
+    {
+      "title": "Osaka Blog Yazıları: Gezi Planı, Seyahat Tüyoları & Pratik Bilgiler (2025)",
+      "url": "https://www.gezire.com/japonya/osaka/",
+      "snippet": "Şehir rehberi, gezi blog yazıları ve en güncel seyahat tüyoları burada. Osaka'da sınırsız keşif için pratik bilgiler ve detaylı gezi planı …"
+    },
+    {
+      "title": "Osaka Gezi rehberi - Osaka Gezilecek Yerler - Japonya Gezisi 2025",
+      "url": "https://www.yolculuktutkusu.com/osaka-gezi-rehberi.html",
+      "snippet": "Osaka Gezi Rehberi ile Osaka için görülecek, gezilecek yerler, nerede kalınır, ne zaman gidilir gibi sorularınıza cevap bulabilirsiniz."
+    }
+  ]
+}

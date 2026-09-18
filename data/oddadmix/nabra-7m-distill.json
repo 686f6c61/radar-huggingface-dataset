@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "oddadmix/Nabra-7M-Distill",
+  "slug": "oddadmix-nabra-7m-distill",
+  "author": "oddadmix",
+  "url": "https://huggingface.co/oddadmix/Nabra-7M-Distill",
+  "created_at": "2026-09-09T16:33:31.000Z",
+  "updated_at": "2026-09-16T16:50:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "tts",
+    "arabic",
+    "kokoro",
+    "styletts2",
+    "distillation",
+    "on-device",
+    "knowledge-distillation",
+    "text-to-speech",
+    "ar",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 10,
+  "downloads_30d": 100,
+  "trending_score": 10,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 30622353,
+  "storage_human": "31 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kristallkraft No1 (nach alter Rezeptur) - wer hat Erfahrungen",
+      "url": "https://www.pferd.de/threads/kristallkraft-no1-nach-alter-rezeptur-wer-hat-erfahrungen.289950/",
+      "snippet": "Sep 23, 2009 · Diskutiere Kristallkraft No1 (nach alter Rezeptur) - wer hat Erfahrungen im Pferdefütterung Forum im Bereich Pferde: …"
+    },
+    {
+      "title": "Kristallkraft No1 (nach alter Rezeptur) - wer hat Erfahrungen",
+      "url": "https://www.pferd.de/threads/kristallkraft-no1-nach-alter-rezeptur-wer-hat-erfahrungen.289950/page-3",
+      "snippet": "Anstelle von Kristallkraft kann ich \"Toxisorb r equine\" empfehlen! Entgiftet genauso, hat nur keinerlei Zusatzstoffe wie …"
+    },
+    {
+      "title": "Stoffwechselprobleme, Gasbauch, Husten behandeln",
+      "url": "https://www.pferd.de/threads/stoffwechselprobleme-gasbauch-husten-behandeln.668891/",
+      "snippet": "Oct 18, 2016 · Diskutiere Stoffwechselprobleme, Gasbauch, Husten behandeln im innere Erkrankungen beim Pferd Forum im Bereich …"
+    },
+    {
+      "title": "Kristallkraft No1 (nach alter Rezeptur) - wer hat Erfahrungen",
+      "url": "https://www.pferd.de/threads/kristallkraft-no1-nach-alter-rezeptur-wer-hat-erfahrungen.289950/page-4",
+      "snippet": "Aug 19, 2014 · Diskutiere Kristallkraft No1 (nach alter Rezeptur) - wer hat Erfahrungen im Pferdefütterung Forum im Bereich Pferde: …"
+    },
+    {
+      "title": "Entgiftung - aber womit denn nun? - [Diagnose/Therapie]",
+      "url": "https://www.pferd.de/threads/entgiftung-aber-womit-denn-nun.655097/",
+      "snippet": "Jun 11, 2015 · Sie empfiehlt Kristallkraft Nr 1 Ich bin mir unschlüssig Ist es sinnvoll zu entgiften? Wenn ja mit was und was tut ihm …"
+    }
+  ]
+}

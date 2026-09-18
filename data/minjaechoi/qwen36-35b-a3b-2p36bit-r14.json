@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "minjaechoi/qwen36-35b-a3b-2p36bit-r14",
+  "slug": "minjaechoi-qwen36-35b-a3b-2p36bit-r14",
+  "author": "minjaechoi",
+  "url": "https://huggingface.co/minjaechoi/qwen36-35b-a3b-2p36bit-r14",
+  "created_at": "2026-09-18T10:39:28.000Z",
+  "updated_at": "2026-09-18T10:45:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "quantized",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.6-35B-A3B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70234485269,
+  "storage_human": "70.2 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.de/",
+      "snippet": ""
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.com/",
+      "snippet": "Train Nearby places Restaurants Gas stations ATMs Shopping Map details Satellite Transit lines Traffic"
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://www.google.com/maps/search/?hl=de",
+      "snippet": "Aktuelle Verkehrslage Schnell Langsam Kartendaten ©2026 Google Bedingungen 20 km ... Route Mit dem Auto Zu Fuß"
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.de/?om=1",
+      "snippet": "Hier sollte eine Beschreibung angezeigt werden, diese Seite lässt dies jedoch nicht zu."
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.com/maps/search/",
+      "snippet": "Train Nearby places Restaurants Gas stations ATMs Shopping Map details Satellite Transit lines Traffic"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "palli23/whisper-tiny-samromur-10h",
+  "slug": "palli23-whisper-tiny-samromur-10h",
+  "author": "palli23",
+  "url": "https://huggingface.co/palli23/whisper-tiny-samromur-10h",
+  "created_at": "2026-06-03T14:50:34.000Z",
+  "updated_at": "2026-09-18T22:41:52.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "is"
+  ],
+  "tags": [
+    "safetensors",
+    "whisper",
+    "is",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 30,
+  "trending_score": 0,
+  "parameters": 37760640,
+  "parameters_human": "37.8M",
+  "storage_bytes": 4684147179,
+  "storage_human": "4.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Seznam – najdu tam, co neznám",
+      "url": "https://www.seznam.cz/",
+      "snippet": "Co vám předpovídají hvězdy na desátý měsíc roku? Jak se vám bude dařit v práci, ve vztazích nebo jak na tom budete se zdravím?"
+    },
+    {
+      "title": "Seznam – najdu tam, co neznám",
+      "url": "https://www.seznam.cz/500",
+      "snippet": "Jejda, tak tohle se nepovedlo. Pracujeme na opravě."
+    },
+    {
+      "title": "Seznam – najdu tam, co neznám",
+      "url": "https://www.seznam.cz/404",
+      "snippet": "Jejda, tahle adresa neexistuje."
+    },
+    {
+      "title": "Seznam Zprávy – Seznam.cz",
+      "url": "https://www.seznam.cz/zdroj/286-seznam-zpravy",
+      "snippet": "Seznam Zprávy zjistily, proč detektivové prohledali v úterý kanceláře na radnici v Nymburce. Pracují s podezřením, že starosta …"
+    },
+    {
+      "title": "Seznam Zprávy",
+      "url": "https://www.seznamzpravy.cz/",
+      "snippet": "Videa, články, aktuální zprávy z domova i ze světa. Zpravodajství a publicistika od redakce Seznam.cz."
+    }
+  ]
+}

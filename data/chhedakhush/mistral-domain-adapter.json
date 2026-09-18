@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Chhedakhush/mistral-domain-adapter",
+  "slug": "chhedakhush-mistral-domain-adapter",
+  "author": "Chhedakhush",
+  "url": "https://huggingface.co/Chhedakhush/mistral-domain-adapter",
+  "created_at": "2026-09-18T11:45:46.000Z",
+  "updated_at": "2026-09-18T11:50:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:mistralai/Mistral-7B-v0.1",
+    "base_model:finetune:mistralai/Mistral-7B-v0.1",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 27303321,
+  "storage_human": "27 MB",
+  "base_model": "mistralai/Mistral-7B-v0.1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accéder à mon mail Orange - Communauté Orange",
+      "url": "https://communaute.orange.fr/t5/Webmail-Orange/Acc%C3%A9der-%C3%A0-mon-mail-Orange/td-p/36",
+      "snippet": "Aug 2, 2013 · Voici quelques infos utiles à préciser lorsque vous rencontrez un soucis de messagerie Comment consultez-vous vos e …"
+    },
+    {
+      "title": "SPAM - email provenant soit disant de Doctolib",
+      "url": "https://communaute.orange.fr/t5/prot%C3%A9ger-mes-donn%C3%A9es-et-mon/SPAM-email-provenant-soit-disant-de-Doctolib/td-p/2335008",
+      "snippet": "Oct 15, 2020 · Dans ce premier exemple, il est soit disant question de valider l'adresse mail de mon compte Doctolib. Je n'ai pas de …"
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/windows/forum/all/intermittent-stutter-security-event/9ac9ba31-8d8a-4a48-a04e-408175bf2ba1",
+      "snippet": ""
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/msoffice/forum/all/i-have-a-perpetual-license-to-microsoft-office-for/731db2fe-4318-4681-bcbf-9488cb540115",
+      "snippet": ""
+    },
+    {
+      "title": "Résolu : boite de reception vide d'un coup - Communauté Orange",
+      "url": "https://communaute.orange.fr/t5/Mails-sur-mon-mobile/boite-de-reception-vide-d-un-coup/td-p/2605504",
+      "snippet": "Oct 7, 2021 · Résolu : bonjour, j'ai un soucis avec ma boite email. depuis aujourdhui, elle m'indique que mon \"dossier boite de …"
+    }
+  ]
+}

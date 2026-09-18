@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "faxenoff/code-daemon-ner-v1",
+  "slug": "faxenoff-code-daemon-ner-v1",
+  "author": "faxenoff",
+  "url": "https://huggingface.co/faxenoff/code-daemon-ner-v1",
+  "created_at": "2026-09-07T00:07:16.000Z",
+  "updated_at": "2026-09-18T11:57:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": null,
+  "languages": [
+    "code",
+    "en",
+    "ru"
+  ],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "xlm-roberta",
+    "code",
+    "token-classification",
+    "named-entity-recognition",
+    "ner",
+    "weak-supervision",
+    "software-engineering",
+    "en",
+    "ru",
+    "base_model:nreimers/mMiniLMv2-L12-H384-distilled-from-XLMR-Large",
+    "base_model:quantized:nreimers/mMiniLMv2-L12-H384-distilled-from-XLMR-Large",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 117499409,
+  "parameters_human": "117.5M",
+  "storage_bytes": 7247940740,
+  "storage_human": "7.2 GB",
+  "base_model": "nreimers/mMiniLMv2-L12-H384-distilled-from-XLMR-Large",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Store Finder - Lidl US",
+      "url": "https://www.lidl.com/c/store-finder/s10089075",
+      "snippet": "Store Finder & Opening Hours Search by your Zip Code or City to find your nearest Lidl and start saving!"
+    },
+    {
+      "title": "Store Finder - Lidl GB",
+      "url": "https://www.lidl.co.uk/c/store-finder/s10023098",
+      "snippet": "Pop your postcode into the box and click your nearest store to see opening times and all the offers within grabbing distance. Never …"
+    },
+    {
+      "title": "LIDL - Store Locator & Hours",
+      "url": "https://www.storeopeninghours.com/retailers/lidl",
+      "snippet": "The operating hours for the Lidl stores are usually from 8 AM to 9 PM, but we advise you to first check the precise hours using our …"
+    },
+    {
+      "title": "Postal Code Locator | Israel Post",
+      "url": "https://doar.israelpost.co.il/en/locatezip",
+      "snippet": "Enter the locality name, street name, and house number to retrieve the postal code."
+    },
+    {
+      "title": "לב תל אביב (דיזנגוף סנטר) | LEV",
+      "url": "https://www.lev.co.il/location/telaviv/",
+      "snippet": "יש לקודד את כרטיס החניה בעמדות הקידוד, הנמצאות במבואות הקולנוע. יש להעביר את כרטיס החנייה לאחר החתמתו באחת מעמדות התשלום וזאת טרם …"
+    }
+  ]
+}

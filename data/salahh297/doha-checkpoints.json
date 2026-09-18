@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "salahh297/doha-checkpoints",
+  "slug": "salahh297-doha-checkpoints",
+  "author": "salahh297",
+  "url": "https://huggingface.co/salahh297/doha-checkpoints",
+  "created_at": "2026-09-18T10:29:03.000Z",
+  "updated_at": "2026-09-18T16:10:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "text-classification",
+    "arabic",
+    "ensemble",
+    "doha-ai-challenge",
+    "ar",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 98675762990,
+  "storage_human": "98.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jouez à Gardenscapes sur PC | Télécharger maintenant - Google Play",
+      "url": "https://play.google.com/pc-store/games/details?id=com.playrix.gardenscapes&hl=fr",
+      "snippet": "Créez votre propre jardin et jouez aux séries de 3 dans ce jeu de décoration ! Téléchargez Gardenscapes et jouez sur votre PC."
+    },
+    {
+      "title": "Gardenscapes – Applications sur Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.playrix.gardenscapes&hl=fr",
+      "snippet": "Bienvenue dans Gardenscapes, le premier jeu de la série des Scapes™ de Playrix ! Jouez à des niveaux de séries de 3 et rendez …"
+    },
+    {
+      "title": "Télécharger le fichier APK de la dernière version 9.8.5 de Gardenscapes ...",
+      "url": "https://m.apkpure.com/fr/gardenscapes/com.playrix.gardenscapes/download",
+      "snippet": "Aug 17, 2026 · Gardenscapes est un jeu de puzzle et de décoration qui transforme un jardin abandonné étape par étape. …"
+    },
+    {
+      "title": "Gardenscapes APK 9.9.0 pour Android Gratuit télécharger",
+      "url": "https://apkpure.com/fr/gardenscapes/com.playrix.gardenscapes",
+      "snippet": "Sep 7, 2026 · Pour télécharger Gardenscapes sur Android et bien débuter, il suffit de suivre la progression proposée par le jeu, puis …"
+    },
+    {
+      "title": "Télécharger Gardenscapes (gratuit) Android - Clubic",
+      "url": "https://www.clubic.com/telecharger-fiche438375-gardenscapes.html",
+      "snippet": "2 days ago · Résolvez des puzzles et disposez des fruits et des feuilles dans une grille pour obtenir des objets à placer dans votre …"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Riasok/pi05-robot-checkpoints-20260912",
+  "slug": "riasok-pi05-robot-checkpoints-20260912",
+  "author": "Riasok",
+  "url": "https://huggingface.co/Riasok/pi05-robot-checkpoints-20260912",
+  "created_at": "2026-09-12T13:22:59.000Z",
+  "updated_at": "2026-09-22T04:34:03.000Z",
+  "license": "upstream-licenses-apply",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1881145748010,
+  "storage_human": "1881.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kann ich in der App meine persönlichen Daten bestätigen? | Consorsbank",
+      "url": "https://wissen.consorsbank.de/web/Wissen/FAQ/kontokarten/App-persoenliche-Daten",
+      "snippet": "Bitte aktualisieren Sie Ihren Browser Ihr Internet-Browser ist veraltet. Einige Funktionen unserer Website sind eingeschränkt oder …"
+    },
+    {
+      "title": "Sicherheit | Consorsbank",
+      "url": "https://wissen.consorsbank.de/web/System/Sicherheit/PIN-Anfordern/Dateneingabe",
+      "snippet": ""
+    },
+    {
+      "title": "Hier finden Sie schnell Hilfe. - Consorsbank Wissenscommunity",
+      "url": "https://wissen.consorsbank.de/web/Wissen/FAQ/kontokarten/HBCI-Schnittstelle-unterstuetzte-Funktionen",
+      "snippet": "Die HBCI-Schnittstelle unterstützt: Abfragen von Kontosalden Abfragen von Kontoumsätzen SEPA-Einzelüberweisungen (keine …"
+    },
+    {
+      "title": "Hier finden Sie schnell Hilfe. - Consorsbank Wissenscommunity",
+      "url": "https://wissen.consorsbank.de/web/Wissen/FAQ/kontokarten/Verbindung-App-Smartphone-Tablet-entfernen",
+      "snippet": "Hier finden Sie schnell Hilfe. Antworten auf häufig gestellte Fragen Wie kann ich die Verbindung von einem Smartphone oder Tablet …"
+    },
+    {
+      "title": "Welche Ausweispapiere brauche ich zur Legitimation? | Consorsbank",
+      "url": "https://wissen.consorsbank.de/web/Wissen/FAQ/stammdaten/Legitimation-Ausweispapiere",
+      "snippet": "AppNeuerungen SecurePlus App Zugangsdaten Ich habe meine AppPIN vergessen oder gesperrt, was kann ich tun? Öffnen Sie die …"
+    }
+  ]
+}

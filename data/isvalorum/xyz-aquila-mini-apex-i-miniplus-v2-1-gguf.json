@@ -1,0 +1,105 @@
+{
+  "schema": 1,
+  "id": "IsValorum/XYZ-Aquila-mini-APEX-I-MiniPlus-V2.1-GGUF",
+  "slug": "isvalorum-xyz-aquila-mini-apex-i-miniplus-v2-1-gguf",
+  "author": "IsValorum",
+  "url": "https://huggingface.co/IsValorum/XYZ-Aquila-mini-APEX-I-MiniPlus-V2.1-GGUF",
+  "created_at": "2026-09-18T05:57:53.000Z",
+  "updated_at": "2026-09-21T20:10:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh",
+    "es",
+    "fr",
+    "de",
+    "pt",
+    "it",
+    "ru",
+    "ja",
+    "ko",
+    "vi",
+    "th",
+    "ar"
+  ],
+  "tags": [
+    "gguf",
+    "quantized",
+    "quantization",
+    "apex",
+    "apex-quant",
+    "custom-quantization",
+    "unsloth-studio",
+    "moe",
+    "reasoning",
+    "llama.cpp",
+    "qwen35moe",
+    "text-generation",
+    "en",
+    "zh",
+    "es",
+    "fr",
+    "de",
+    "pt",
+    "it",
+    "ru",
+    "ja",
+    "ko",
+    "vi",
+    "th",
+    "ar",
+    "base_model:XYZAILab/XYZ-Aquila-mini",
+    "base_model:quantized:XYZAILab/XYZ-Aquila-mini",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 612,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 14751300960,
+  "storage_human": "14.8 GB",
+  "base_model": "XYZAILab/XYZ-Aquila-mini",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AZLyrics - Song Lyrics from A to Z",
+      "url": "https://www.azlyrics.com/",
+      "snippet": "It's a place where all searches end! We have a large, legal, every day growing universe of lyrics where stars of all genres and ages …"
+    },
+    {
+      "title": "Genius | Song Lyrics & Knowledge",
+      "url": "https://genius.com/",
+      "snippet": "Genius’s community of contributors powers the world’s biggest collection of song lyrics and musical knowledge. Join Our Community …"
+    },
+    {
+      "title": "Lyrics.com",
+      "url": "https://www.lyrics.com/",
+      "snippet": "Lyrics.com is a vast compilation of song lyrics, album details, and featured video clips for a seemingly endless array of artists — …"
+    },
+    {
+      "title": "Learn Languages with Music Videos, Lyrics and Karaoke!",
+      "url": "https://lyricstraining.com/",
+      "snippet": "Enjoy learning languages for free playing with the music videos and filling in the lyrics of your favorite songs: English, Spanish, …"
+    },
+    {
+      "title": "Lyric Finder: Song Locator by Lyrics - Find Song by Lyrics",
+      "url": "https://lyricfinder.net/",
+      "snippet": "LyricFinder helps you identify a song from a few words you remember or find the full lyrics when you already know the title. You do …"
+    }
+  ]
+}

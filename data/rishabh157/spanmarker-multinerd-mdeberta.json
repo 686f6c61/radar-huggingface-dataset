@@ -1,0 +1,120 @@
+{
+  "schema": 1,
+  "id": "Rishabh157/spanmarker-multinerd-mdeberta",
+  "slug": "rishabh157-spanmarker-multinerd-mdeberta",
+  "author": "Rishabh157",
+  "url": "https://huggingface.co/Rishabh157/spanmarker-multinerd-mdeberta",
+  "created_at": "2026-09-18T11:03:17.000Z",
+  "updated_at": "2026-09-18T11:07:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "span-marker",
+  "languages": [
+    "en",
+    "de",
+    "es",
+    "fr",
+    "it",
+    "nl",
+    "pl",
+    "pt",
+    "ru",
+    "zh"
+  ],
+  "tags": [
+    "span-marker",
+    "safetensors",
+    "token-classification",
+    "ner",
+    "named-entity-recognition",
+    "mdeberta-v3",
+    "multinerd",
+    "multilingual",
+    "information-extraction",
+    "en",
+    "de",
+    "es",
+    "fr",
+    "it",
+    "nl",
+    "pl",
+    "pt",
+    "ru",
+    "zh",
+    "dataset:Babelscape/multinerd",
+    "base_model:microsoft/mdeberta-v3-base",
+    "base_model:finetune:microsoft/mdeberta-v3-base",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 277555216,
+  "parameters_human": "277.6M",
+  "storage_bytes": 1130901780,
+  "storage_human": "1.1 GB",
+  "base_model": "microsoft/mdeberta-v3-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Named Entity Recognition",
+      "dataset": "MultiNERD (10 Languages)",
+      "metric": "Overall F1",
+      "value": 0.7335
+    },
+    {
+      "task": "Named Entity Recognition",
+      "dataset": "MultiNERD (10 Languages)",
+      "metric": "Overall Precision",
+      "value": 0.8731
+    },
+    {
+      "task": "Named Entity Recognition",
+      "dataset": "MultiNERD (10 Languages)",
+      "metric": "Overall Recall",
+      "value": 0.6324
+    },
+    {
+      "task": "Named Entity Recognition",
+      "dataset": "MultiNERD (10 Languages)",
+      "metric": "Overall Accuracy",
+      "value": 0.9271
+    }
+  ],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=3b7af1af168e681a2873e67717bf69a3",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Get access to free online versions of Outlook, Word, Excel, and PowerPoint."
+    },
+    {
+      "title": "Sign in to your account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    },
+    {
+      "title": "Microsoft 365 for Individuals: Subscription for Productivity Apps",
+      "url": "https://www.microsoft.com/en-us/microsoft-365?msockid=3b7af1af168e681a2873e67717bf69a3",
+      "snippet": "Microsoft 365 (formerly Office 365) subscriptions offer a suite of productivity tools and cloud services with world-class security and …"
+    },
+    {
+      "title": "Microsoft - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Microsoft",
+      "snippet": "Microsoft Corporation is an American multinational technology company headquartered in Redmond, Washington. The company …"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "jihadv4/bb-trade-idp-model",
+  "slug": "jihadv4-bb-trade-idp-model",
+  "author": "jihadv4",
+  "url": "https://huggingface.co/jihadv4/bb-trade-idp-model",
+  "created_at": "2026-09-18T10:32:53.000Z",
+  "updated_at": "2026-09-18T10:38:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_vl",
+    "qwen3-vl",
+    "lora",
+    "document-ai",
+    "bangladesh-bank",
+    "trade-finance",
+    "image-text-to-text",
+    "conversational",
+    "base_model:unsloth/Qwen3-VL-8B-Instruct-unsloth-bnb-4bit",
+    "base_model:adapter:unsloth/Qwen3-VL-8B-Instruct-unsloth-bnb-4bit",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8767123696,
+  "parameters_human": "8.77B",
+  "storage_bytes": 17751255130,
+  "storage_human": "17.8 GB",
+  "base_model": "unsloth/Qwen3-VL-8B-Instruct-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Search News - Bing",
+      "url": "https://www.bing.com/news/",
+      "snippet": "News from world, national, and local news sources, organized to give you in-depth news coverage of sports, entertainment, business, …"
+    },
+    {
+      "title": "Bing",
+      "url": "https://global.bing.com/maps/",
+      "snippet": "Map multiple locations, get transit/walking/driving directions, view live traffic conditions, plan trips, view satellite, aerial and 3d …"
+    },
+    {
+      "title": "Search - Bing",
+      "url": "https://www.bing.com/spotlight/imagepuzzle?PROGRAMNAME=BingDailyOfferIN",
+      "snippet": "Test your knowledge and have fun solving the Bing daily image puzzle by completing the picture."
+    },
+    {
+      "title": "Bing",
+      "url": "https://www.bing.com/?lc=en-US&brdr=1",
+      "snippet": "Bing is an AI-powered search engine for finding information, exploring media, and navigating maps."
+    },
+    {
+      "title": "Search - Bing",
+      "url": "https://www.bing.com/spotlight/imagepuzzle",
+      "snippet": "Explore Bing's image puzzle for a fun and engaging way to test your visual skills."
+    }
+  ]
+}

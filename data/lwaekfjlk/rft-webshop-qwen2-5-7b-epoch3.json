@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "lwaekfjlk/rft-webshop-qwen2.5-7b-epoch3",
+  "slug": "lwaekfjlk-rft-webshop-qwen2-5-7b-epoch3",
+  "author": "lwaekfjlk",
+  "url": "https://huggingface.co/lwaekfjlk/rft-webshop-qwen2.5-7b-epoch3",
+  "created_at": "2026-09-18T10:59:27.000Z",
+  "updated_at": "2026-09-18T11:05:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "agent",
+    "rejection-finetuning",
+    "agentgym",
+    "webshop",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242693712,
+  "storage_human": "15.2 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google mail",
+      "url": "https://mail.google.com/mail?hl=de",
+      "snippet": "We would like to show you a description here but the site won’t allow us."
+    }
+  ]
+}

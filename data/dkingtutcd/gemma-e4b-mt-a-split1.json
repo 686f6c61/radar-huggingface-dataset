@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "dkingtutcd/gemma-E4B-mt-a-split1",
+  "slug": "dkingtutcd-gemma-e4b-mt-a-split1",
+  "author": "dkingtutcd",
+  "url": "https://huggingface.co/dkingtutcd/gemma-E4B-mt-a-split1",
+  "created_at": "2026-09-18T10:49:25.000Z",
+  "updated_at": "2026-09-18T10:51:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7996156490,
+  "parameters_human": "8.00B",
+  "storage_bytes": 16024765510,
+  "storage_human": "16.0 GB",
+  "base_model": "unsloth/gemma-4-e4b-it-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "VášDoktor.cz ⚕️Zubař MDDr. Adéla Kuželová, Praha",
+      "url": "https://www.vasdoktor.cz/detail-41507/zubari-adela-kuzelova",
+      "snippet": "Na této adrese v ordinačních hodinách ordinuje MDDr. Adéla Kuželová. Do její ordinace můžete zaslat požadavek na objednání …"
+    },
+    {
+      "title": "MUDr. Eva Kuželová s.r.o. - Ordinace praktické lékařky pro dospělé ...",
+      "url": "https://www.mudr-kuzelova.cz/",
+      "snippet": "Eva Kuželová se těší na vaši návštěvu a možnost spolupracovat s vámi na cestě k lepšímu zdraví. Poskytujeme kvalitní EKG …"
+    },
+    {
+      "title": "MDDr. Adéla Kuželová (Praha, Nové Město) • Firmy.cz",
+      "url": "https://www.firmy.cz/detail/13289554-mddr-adela-kuzelova-praha-nove-mesto.html",
+      "snippet": "Ambulantně, šetrně a bezbolestně odstraníme nežádoucí stavy v ústní dutině. Zajistíme, že parodontální péče bude zároveň …"
+    },
+    {
+      "title": "Ladislav Kužela, Cintorínska 3/B, Bratislava (2026)",
+      "url": "https://www.findhealthclinics.org/SK/Bratislava/102134241619847/Ladislav-Ku%C5%BEela",
+      "snippet": "Obsahujú živé mikroorganizmy, ktoré podporujú zdravý črevný mikrobióm. Podporuje imunitný systém a pomáha vstrebávaniu …"
+    },
+    {
+      "title": "MUDr. Eva Kuželová s.r.o. - Praktický lékař pro dospělé - Mladá ...",
+      "url": "https://mudr-eva-kuzelova-sro.zdravotniregistr.cz/",
+      "snippet": "Eva Kuželová poskytuje odbornou léčebnou a preventivní péči v rámci praktického lékařství pro dospělé včetně vyšetření EKG, …"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "dkaczer/qwen3-14b-sft-medical-100",
+  "slug": "dkaczer-qwen3-14b-sft-medical-100",
+  "author": "dkaczer",
+  "url": "https://huggingface.co/dkaczer/qwen3-14b-sft-medical-100",
+  "created_at": "2026-09-18T11:24:36.000Z",
+  "updated_at": "2026-09-18T11:47:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "emergent-misalignment",
+    "ai-safety",
+    "not-for-all-audiences",
+    "arxiv:2605.31328",
+    "base_model:Qwen/Qwen3-14B",
+    "base_model:adapter:Qwen/Qwen3-14B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 525300518,
+  "storage_human": "525 MB",
+  "base_model": "Qwen/Qwen3-14B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "Medical-Qwen3: A Robust Medical LLM via Two-Stage LoRA Training and ...",
+      "url": "https://www.techrxiv.org/doi/10.36227/techrxiv.176799759.97935754",
+      "snippet": "We present Medical-Qwen3, a 14B-parameter medicaloriented model built on Qwen3-14B through a two-stage LoRA pipeline: (1) domain-adaptive pre-training (PT) to inject broad medical knowledge via continued pre-training (DAPT), and (2) supervised fine-tuning (SFT) to align the model with medical question-answering behaviors through instruction ..."
+    },
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "momo：别转，听我一句劝，老老实实留在统计学，千万别跟着你那些同学瞎起哄。 现在是2026年，早就不是2018年随便写几行Java …"
+    },
+    {
+      "title": "Qwen/Qwen3-14B · Hugging Face",
+      "url": "https://huggingface.co/Qwen/Qwen3-14B",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Belmont Forum Shopping Centre",
+      "url": "https://www.belmontforum.com.au/?option=com_storedirectory&task=list&id",
+      "snippet": "With 140+ Stores, Belmont Forum is the place to meet, dine and shop. Visit the Centre today and browse a mix of food, fashion, …"
+    }
+  ]
+}

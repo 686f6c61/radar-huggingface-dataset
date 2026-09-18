@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "leomaurodesenv/bert-base-uncased-nvidia-aegis-v2",
+  "slug": "leomaurodesenv-bert-base-uncased-nvidia-aegis-v2",
+  "author": "leomaurodesenv",
+  "url": "https://huggingface.co/leomaurodesenv/bert-base-uncased-nvidia-aegis-v2",
+  "created_at": "2026-09-16T07:45:29.000Z",
+  "updated_at": "2026-09-17T22:41:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:google-bert/bert-base-uncased",
+    "base_model:finetune:google-bert/bert-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 84,
+  "trending_score": 0,
+  "parameters": 109483778,
+  "parameters_human": "109.5M",
+  "storage_bytes": 10948970865,
+  "storage_human": "10.9 GB",
+  "base_model": "google-bert/bert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Manually adding a Userscript to Google Chrome - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/5258989/manually-adding-a-userscript-to-google-chrome",
+      "snippet": "Mar 10, 2011 · The best thing to do is to install the Tampermonkey extension. This will allow you to easily install Greasemonkey …"
+    },
+    {
+      "title": "百度网盘无需客户端下载文件方法总结 - 知乎",
+      "url": "https://www.zhihu.com/column/p/27908594",
+      "snippet": "Nov 5, 2021 · 如图所示，此处粘贴的下载链接是通过Tampermonkey安装的网盘脚本获取的，此处亦可选择使用 网盘助手 这一扩展直 …"
+    },
+    {
+      "title": "Tampermonkey油猴插件下载及插件、脚本安装、备份、还原、导入的 …",
+      "url": "https://www.52pojie.cn/thread-1210985-1-1.html",
+      "snippet": "Jul 29, 2020 · Tampermonkey 油猴插件下载及插件、脚本安装、备份、还原、导入的方法（已完成编辑）★★★★★★本帖目 …"
+    },
+    {
+      "title": "Event when window.location.href changes - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/3522090/event-when-window-location-href-changes",
+      "snippet": "I'm writing a Greasemonkey script for a site which at some point modifies location.href. How can I get an event (via …"
+    },
+    {
+      "title": "Tampermonkey - 知乎",
+      "url": "https://www.zhihu.com/topic/19908612/hot",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    }
+  ]
+}

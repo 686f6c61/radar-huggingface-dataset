@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "yuhengtu-bytedance/DataDecide-dolma1_7-no-code-1B-50000_52500_55000_57500_60000_weightedavg_merge",
+  "slug": "yuhengtu-bytedance-datadecide-dolma1_7-no-code-1b-50000_52500_55000_57500_60000_weightedavg_merge",
+  "author": "yuhengtu-bytedance",
+  "url": "https://huggingface.co/yuhengtu-bytedance/DataDecide-dolma1_7-no-code-1B-50000_52500_55000_57500_60000_weightedavg_merge",
+  "created_at": "2026-09-16T08:53:22.000Z",
+  "updated_at": "2026-09-17T22:10:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "arxiv:2203.05482",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1279854592,
+  "parameters_human": "1.28B",
+  "storage_bytes": 2559726104,
+  "storage_human": "2.6 GB",
+  "base_model": "",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "QUERY function - Google Docs Editors Help",
+      "url": "https://support.google.com/docs/answer/3093343?hl=en",
+      "snippet": "QUERY function Runs a Google Visualization API Query Language query across data. Sample Usage QUERY (A2:E6,\"select avg (A) …"
+    },
+    {
+      "title": "QUERY - เครื่องมือแก้ไข Google เอกสาร ความช่วยเหลือ",
+      "url": "https://support.google.com/docs/answer/3093343?hl=th",
+      "snippet": "QUERY เรียกใช้การค้นหาของ Google Visualization API Query Language จากข้อมูลทั้งหมด ตัวอย่างการใช้งาน QUERY (A2:E6,\"select avg …"
+    },
+    {
+      "title": "sin prejuicio - WordReference Forums",
+      "url": "https://forum.wordreference.com/threads/sin-prejuicio.1452459/",
+      "snippet": "Jun 30, 2009 · Como podemos traduzir a seguinte expressão: \"se acepta con la cualidad ordinaria de sin prejuicio...y para la prática …"
+    },
+    {
+      "title": "jouer aux pitres - WordReference Forums",
+      "url": "https://forum.wordreference.com/threads/jouer-aux-pitres.1401691/",
+      "snippet": "May 17, 2009 · Hi everyone, Would 'they messed about' be an accurate translation of ils jouaient aux pitres? Thanks for your help!"
+    },
+    {
+      "title": "QUERY 関数 - Google ドキュメント エディタ ヘルプ",
+      "url": "https://support.google.com/docs/answer/3093343?hl=ja",
+      "snippet": "QUERY 関数 Google Visualization API のクエリ言語を使用して、データ全体に対するクエリを実行します。 使用例 QUERY …"
+    }
+  ]
+}

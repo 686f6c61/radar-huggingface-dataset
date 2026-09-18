@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "GreenBitAI/GLM-5.3-Flash-4bit-paged",
+  "slug": "greenbitai-glm-5-3-flash-4bit-paged",
+  "author": "GreenBitAI",
+  "url": "https://huggingface.co/GreenBitAI/GLM-5.3-Flash-4bit-paged",
+  "created_at": "2026-09-01T20:47:06.000Z",
+  "updated_at": "2026-09-17T22:30:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gbx-lm",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gbx-lm",
+    "safetensors",
+    "glm5_next",
+    "mlx",
+    "apple-silicon",
+    "expert-paging",
+    "mixture-of-experts",
+    "multimodal",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:pipenetwork/GLM-5.3-Flash-MLX-4bit",
+    "base_model:quantized:pipenetwork/GLM-5.3-Flash-MLX-4bit",
+    "license:mit",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 474,
+  "trending_score": 0,
+  "parameters": 9484631870,
+  "parameters_human": "9.48B",
+  "storage_bytes": 181755938822,
+  "storage_human": "181.8 GB",
+  "base_model": "pipenetwork/GLM-5.3-Flash-MLX-4bit",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Suchergebnis Auf Amazon.de Für: Geldkassetten - Geldkassetten ...",
+      "url": "https://www.amazon.de/Geldkassetten/b?node=202822031",
+      "snippet": "MAUL Geldkassette schwarz mit Zähleinsatz und Schlüsselschloss schneller Kassenabschluss, übersichtliche Euro-Sortierung, …"
+    },
+    {
+      "title": "Geldkassette kaufen bei OBI",
+      "url": "https://www.obi.de/search/geldkassette/?msockid=2075ff2ed18c6cc832c4e8f9d0076d59",
+      "snippet": "Geldkassette kaufen und bestellen Online auf www.obi.de und in Ihrem Markt vor Ort OBI - alles für Heim, Haus, Garten und Bau."
+    },
+    {
+      "title": "Geldkassetten günstig online kaufen | Kaufland.de",
+      "url": "https://www.kaufland.de/c/geldkassetten/~38741/?msockid=2075ff2ed18c6cc832c4e8f9d0076d59",
+      "snippet": "Bei einer Geldkassette handelt es sich um einen abschließbaren Behälter, der dazu da ist, Wertgegenstände und Bargeld sicher …"
+    },
+    {
+      "title": "Suchergebnis Auf Amazon.de Für: Geldkassette",
+      "url": "https://www.amazon.de/geldkassette/s?k=geldkassette",
+      "snippet": "MAUL Geldkassette schwarz mit Zähleinsatz und Schlüsselschloss schneller Kassenabschluss, übersichtliche Euro-Sortierung, …"
+    },
+    {
+      "title": "Geldkassetten online kaufen bei BAUHAUS",
+      "url": "https://www.bauhaus.info/geldkassetten/c/10004340?msockid=2075ff2ed18c6cc832c4e8f9d0076d59",
+      "snippet": "pro Stück inkl. MwSt. 4 Varianten Burg-Wächter Geldkassette Money 5030 30 x 24 x 9 cm, Weiß (3) 13,75"
+    }
+  ]
+}

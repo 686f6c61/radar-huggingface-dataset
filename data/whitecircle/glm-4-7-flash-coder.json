@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "whitecircle/GLM-4.7-Flash-Coder",
+  "slug": "whitecircle-glm-4-7-flash-coder",
+  "author": "whitecircle",
+  "url": "https://huggingface.co/whitecircle/GLM-4.7-Flash-Coder",
+  "created_at": "2026-07-02T18:02:46.000Z",
+  "updated_at": "2026-09-12T23:46:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm4_moe_lite",
+    "text-generation",
+    "conversational",
+    "dataset:whitecircle/swe-rebench-v2-glm-5.1-pi-agent-successful-traces",
+    "base_model:zai-org/GLM-4.7-Flash",
+    "base_model:finetune:zai-org/GLM-4.7-Flash",
+    "license:mit",
+    "endpoints_compatible",
+    "region:eu"
+  ],
+  "likes": 10,
+  "downloads_30d": 27924,
+  "trending_score": 10,
+  "parameters": 29943396864,
+  "parameters_human": "29.94B",
+  "storage_bytes": 59917148364,
+  "storage_human": "59.9 GB",
+  "base_model": "zai-org/GLM-4.7-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "קביעת תצורה של שומר מסך ב- Windows - תמיכה של Microsoft",
+      "url": "https://support.microsoft.com/he-il/windows/%D7%A7%D7%91%D7%99%D7%A2%D7%AA-%D7%AA%D7%A6%D7%95%D7%A8%D7%94-%D7%A9%D7%9C-%D7%A9%D7%95%D7%9E%D7%A8-%D7%9E%D7%A1%D7%9A-%D7%91-windows-a9dc2a0c-dc8e-9161-d270-aaccc252082a",
+      "snippet": "המשתמשים יכולים לבחור שומר מסך, לקבוע את תצורת ההגדרות שלו, להגדיר את הזמן הקצוב להפעלה לא פעילה, להציג בתצוגה מקדימה את המראה …"
+    },
+    {
+      "title": "כיצד להפעיל את שומר המסך ב-Windows 11 ️",
+      "url": "https://tecnobits.com/iw/%D7%9B%D7%99%D7%A6%D7%93-%D7%9C%D7%94%D7%A4%D7%A2%D7%99%D7%9C-%D7%90%D7%AA-%D7%A9%D7%95%D7%9E%D7%A8-%D7%94%D7%9E%D7%A1%D7%9A-%D7%91-Windows-11/",
+      "snippet": "Feb 5, 2024 · בתוך חלון ההתאמה האישית, לחץ על \"שומר מסך\" בפינה השמאלית התחתונה של החלון. בחלון ההגדרות של שומר המסך, בחר את שומר …"
+    },
+    {
+      "title": "כיצד להגדיר שומר מסך ב-Windows 10 ️",
+      "url": "https://tecnobits.com/iw/%D7%9B%D7%99%D7%A6%D7%93-%D7%9C%D7%94%D7%92%D7%93%D7%99%D7%A8-%D7%A9%D7%95%D7%9E%D7%A8-%D7%9E%D7%A1%D7%9A-%D7%91%D7%97%D7%9C%D7%95%D7%A0%D7%95%D7%AA-10/",
+      "snippet": "Feb 14, 2024 · כיצד להפעיל שומר מסך ב-Windows 10? כדי להפעיל שומר מסך ב-Windows 10, בצע את השלבים הבאים: לחץ על כפתור הבית …"
+    },
+    {
+      "title": "כיצד להגדיר תמונות כשומר מסך ב-Windows 11/10",
+      "url": "https://thegadgettechworld.com/iw/pages/34028-how-to-set-photos-as-a-screensaver-in-windows-11-10",
+      "snippet": "בפוסט זה נראה לכם כיצד לעשות זאת הגדר תמונות כשומר מסך ב-Windows 11/10. משתמשי מחשב יכולים להגדיר תמונה בודדת או מספר תמונות …"
+    },
+    {
+      "title": "כיצד למצוא ולהגדיר את שומר המסך ב- Windows 10",
+      "url": "https://iw.windowsnoticias.com/%D7%9B%D7%99%D7%A6%D7%93-%D7%9C%D7%9E%D7%A6%D7%95%D7%90-%D7%95%D7%9C%D7%94%D7%92%D7%93%D7%99%D7%A8-%D7%90%D7%AA-%D7%A9%D7%95%D7%9E%D7%A8-%D7%94%D7%9E%D7%A1%D7%9A-%D7%91%D7%97%D7%9C%D7%95%D7%A0%D7%95%D7%AA-10/",
+      "snippet": "אנו מלמדים אותך להגדיר את אפשרויות ההגנה על המסך השונות שיש ל- Windows 10 באמצעות התפריטים שלה."
+    }
+  ]
+}

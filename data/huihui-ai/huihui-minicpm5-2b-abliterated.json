@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "huihui-ai/Huihui-MiniCPM5-2B-abliterated",
+  "slug": "huihui-ai-huihui-minicpm5-2b-abliterated",
+  "author": "huihui-ai",
+  "url": "https://huggingface.co/huihui-ai/Huihui-MiniCPM5-2B-abliterated",
+  "created_at": "2026-09-13T11:18:12.000Z",
+  "updated_at": "2026-09-13T12:56:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "minicpm",
+    "minicpm5",
+    "long-context",
+    "tool-calling",
+    "on-device",
+    "edge-ai",
+    "abliterated",
+    "uncensored",
+    "huihui",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:openbmb/MiniCPM5-2B",
+    "base_model:finetune:openbmb/MiniCPM5-2B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 11,
+  "downloads_30d": 464,
+  "trending_score": 10,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 5033557096,
+  "storage_human": "5.0 GB",
+  "base_model": "openbmb/MiniCPM5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Xabi Alonso - Player profile | Transfermarkt",
+      "url": "https://www.transfermarkt.com/xabi-alonso/profil/spieler/7476",
+      "snippet": "Xabi Alonso is the son of Periko Alonso. Xabi Alonso is the brother of Mikel Alonso. Xabi Alonso is the father of Jon Alonso (Unknown)."
+    },
+    {
+      "title": "Xabi Alonso - Spielerprofil | Transfermarkt",
+      "url": "https://www.transfermarkt.de/xabi-alonso/profil/spieler/7476",
+      "snippet": "Xabi Alonso ehemaliger Fußballspieler aus Spanien Defensives Mittelfeld zuletzt bei FC Bayern München * 25.11.1981 in Tolosa, …"
+    },
+    {
+      "title": "Xabi Alonso - Spielerprofil | Transfermarkt",
+      "url": "https://www.transfermarkt.ch/xabi-alonso/profil/spieler/7476/",
+      "snippet": "Xabi Alonso ehemaliger Fußballspieler aus Spanien Defensives Mittelfeld zuletzt bei FC Bayern München * 25.11.1981 in Tolosa, …"
+    },
+    {
+      "title": "Xabi Alonso - Trainerprofil | Transfermarkt",
+      "url": "https://www.transfermarkt.de/xabi-alonso/profil/trainer/63052/",
+      "snippet": "Mitarbeiterprofil von Xabi Alonso: aktueller Verein Ex-Vereine Bevorzugte Formation Stationen als Spieler News Statistiken"
+    },
+    {
+      "title": "Xabi Alonso - Spielerprofil | Transfermarkt",
+      "url": "https://www.transfermarkt.ch/xabi-alonso/profil/spieler/76315",
+      "snippet": "Xabi Alonso ehemaliger Fußballspieler aus Spanien Mittelfeld zuletzt bei ? * 02.06.1985 in Pamplona, Spanien"
+    }
+  ]
+}

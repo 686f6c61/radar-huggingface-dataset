@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "pkarypis/opt-6.7b-sft",
+  "slug": "pkarypis-opt-6-7b-sft",
+  "author": "pkarypis",
+  "url": "https://huggingface.co/pkarypis/opt-6.7b-sft",
+  "created_at": "2024-01-04T00:55:48.000Z",
+  "updated_at": "2026-09-18T01:01:31.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "opt",
+    "text-generation",
+    "trl",
+    "sft",
+    "generated_from_trainer",
+    "conversational",
+    "dataset:generator",
+    "base_model:facebook/opt-6.7b",
+    "base_model:finetune:facebook/opt-6.7b",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 164,
+  "trending_score": 0,
+  "parameters": 6658473984,
+  "parameters_human": "6.66B",
+  "storage_bytes": 26634039550,
+  "storage_human": "26.6 GB",
+  "base_model": "facebook/opt-6.7b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Contact Us - Microsoft Support",
+      "url": "https://support.microsoft.com/en-gb/contactus",
+      "snippet": "Contact Microsoft Support. Find solutions to common problems, or get help from a support agent."
+    },
+    {
+      "title": "Anmelden bei Hotmail | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/accounts-billing/manage/how-to-sign-in-to-hotmail",
+      "snippet": "Microsoft hält immer ein Auge auf ungewöhnliche Anmeldeaktivitäten, nur für den Fall, dass jemand anderes versucht, auf Ihr Konto …"
+    },
+    {
+      "title": "Released: August 2026 Exchange Server Security Updates | Microsoft ...",
+      "url": "https://techcommunity.microsoft.com/blog/Exchange/released-august-2026-exchange-server-security-updates/4543951",
+      "snippet": "We have released Security Updates for Exchange Server SE. Exchange Server 2019 and 2016 ESU updates only. &nbsp;"
+    },
+    {
+      "title": "Get ready for Windows 11, version 26H2 - Windows IT Pro Blog",
+      "url": "https://techcommunity.microsoft.com/blog/Windows-ITPro-blog/get-ready-for-windows-11-version-26h2/4529367",
+      "snippet": "Jun 19, 2026 · The next annual update for Windows 11 is coming soon and is already available to Windows Insiders! Windows 11, …"
+    },
+    {
+      "title": "Change the refresh rate on your monitor in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/hardware/display-graphics/change-the-refresh-rate-on-your-monitor-in-windows",
+      "snippet": "Learn how to change the refresh rate for your display in Windows to determine how smoothly motion appears on your screen."
+    }
+  ]
+}

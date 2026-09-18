@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "the-sweater-cat/bonsai-2-pq2",
+  "slug": "the-sweater-cat-bonsai-2-pq2",
+  "author": "the-sweater-cat",
+  "url": "https://huggingface.co/the-sweater-cat/bonsai-2-pq2",
+  "created_at": "2026-09-18T11:47:29.000Z",
+  "updated_at": "2026-09-18T12:01:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "qwen3_5_text",
+    "bonsai",
+    "ternary",
+    "pq2",
+    "custom-vllm-plugin",
+    "text-generation",
+    "conversational",
+    "base_model:prism-ml/Ternary-Bonsai-2-27B-gguf",
+    "base_model:quantized:prism-ml/Ternary-Bonsai-2-27B-gguf",
+    "license:apache-2.0",
+    "8-bit",
+    "bonsai2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6953598464,
+  "parameters_human": "6.95B",
+  "storage_bytes": 7255181368,
+  "storage_human": "7.3 GB",
+  "base_model": "prism-ml/Ternary-Bonsai-2-27B-gguf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/The",
+      "snippet": "The is a grammatical article in English, denoting nouns that are already or about to be mentioned, under discussion, implied or …"
+    },
+    {
+      "title": "Déterminant THE en anglais : quand et comment l'utiliser",
+      "url": "https://www.ispeakspokespoken.com/the-anglais/",
+      "snippet": "Aug 24, 2026 · Faut-il mettre THE ou pas devant les noms en anglais ? Je vous donne dans cet article des explications et des …"
+    },
+    {
+      "title": "The definite article: 'the' | LearnEnglish - British Council",
+      "url": "https://learnenglish.britishcouncil.org/free-resources/grammar/english-grammar-reference/definite-article",
+      "snippet": "Level: beginner The definite article the is the most frequent word in English. We use the definite article in front of a noun when we …"
+    },
+    {
+      "title": "THE | traduire en français - Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/fr/dictionnaire/anglais-francais/the",
+      "snippet": "THE - traduire en français avec le dictionnaire Anglais-Français - Cambridge Dictionary."
+    },
+    {
+      "title": "Articles THE/ A / AN / zéro : leçon / cours de grammaire anglaise",
+      "url": "https://www.anglaisfacile.com/cgi2/myexam/voir2.php?id=111",
+      "snippet": "Prérequis du 16e cours :(Ce qu'il faut savoir pour comprendre ce cours) Aucun. :-)... mais il serait bon de se souvenir de la leçon 1, si …"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l2_swift_jbbsft10_remove40",
+  "slug": "jeesup-svd-safety-l2_swift_jbbsft10_remove40",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l2_swift_jbbsft10_remove40",
+  "created_at": "2026-09-18T11:28:10.000Z",
+  "updated_at": "2026-09-22T00:21:46.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama2",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-2-7b-chat-hf",
+    "base_model:finetune:meta-llama/Llama-2-7b-chat-hf",
+    "license:llama2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13477364771,
+  "storage_human": "13.5 GB",
+  "base_model": "meta-llama/Llama-2-7b-chat-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemini 和 ChatGPT哪个性能强一些 - 知乎",
+      "url": "https://www.zhihu.com/question/1916807506119860606",
+      "snippet": "gemini和ChatGPT我都是付费会员，也用了很久了，正值gpt5更新后来回答一波。 先说性能： gpt5的纸面性能强于gemini，但实际使 …"
+    },
+    {
+      "title": "Uranus in Gemini 101: Everything You Need to Know | Astrology Answers",
+      "url": "https://www.astrologyanswers.com/article/uranus-enters-gemini/",
+      "snippet": "Apr 18, 2026 · Uranus in Gemini tours the bottom of your chart, so this transit can bring changes at your core, internally, and with the …"
+    },
+    {
+      "title": "ChatGPT和Gemini之间选哪个? - 知乎",
+      "url": "https://www.zhihu.com/question/1975210650360910165",
+      "snippet": "Gemini 3.0已经发布了。要是只能ChatGPT和Gemini之间选一个， 选哪个比较好?主要想用它来辅助学习，还有…"
+    },
+    {
+      "title": "Gemini Woman: Traits, Love, & More - Astrology Answers",
+      "url": "https://www.astrologyanswers.com/zodiac-signs/gemini/woman/",
+      "snippet": "Learn all about the Gemini woman: her personality traits, what she's like as a wife and mother, her characteristics at work and as a …"
+    },
+    {
+      "title": "《记忆革命：Gemini 1.5如何让Transformer突破百万级上下文枷锁》",
+      "url": "https://bbs.huaweicloud.com/blogs/453371",
+      "snippet": "May 29, 2025 · 而Google DeepMind的Gemini 1.5却打破了这一宿命，首次实现百万级token的上下文处理能力，相当于让AI同时阅读 …"
+    }
+  ]
+}

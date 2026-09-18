@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "deepgrove/maple-preview-2bit-mlx",
+  "slug": "deepgrove-maple-preview-2bit-mlx",
+  "author": "deepgrove",
+  "url": "https://huggingface.co/deepgrove/maple-preview-2bit-mlx",
+  "created_at": "2026-08-04T19:22:28.000Z",
+  "updated_at": "2026-09-17T02:47:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "maple",
+    "license:mit",
+    "2-bit",
+    "region:us"
+  ],
+  "likes": 32,
+  "downloads_30d": 522,
+  "trending_score": 0,
+  "parameters": 1897309196,
+  "parameters_human": "1.90B",
+  "storage_bytes": 5325750788,
+  "storage_human": "5.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Earth",
+      "url": "https://maps.google.de/intl/de/earth/",
+      "snippet": "Google Earth ist eine fotorealistische und digitale Version unseres Planeten. Woher kommen die Bilder? Wie sind sie …"
+    },
+    {
+      "title": "Datenschutz – Street View – Google Maps",
+      "url": "https://maps.google.de/intl/de/help/maps/streetview/privacy.html",
+      "snippet": "Google Maps mit Street View bietet Ihnen die Möglichkeit, Orte auf der ganzen Welt in einer 360-Grad-Panoramaansicht auf …"
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.de/mapfiles/home3.html",
+      "snippet": "Explore the world with Google Maps, find locations, get directions, and access real-time traffic updates."
+    },
+    {
+      "title": "Earth-Versionen – Google Earth",
+      "url": "https://maps.google.de/intl/de/earth/versions/",
+      "snippet": "Fliege mit Google Earth für Chrome in Sekundenschnelle überallhin und besuche hunderte Städte in 3D direkt in deinem Browser. Du …"
+    },
+    {
+      "title": "Google Earth",
+      "url": "https://maps.google.de/intl/de/earth/download/ge/",
+      "snippet": "Jun 4, 2025 · Mit Google Earth können Sie nicht nur um die Welt fliegen und sich Satellitenbilder, Karten, Geländeformationen und …"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Blackfrost-Research/BLACKFROST-3.8-FLASH-DERISKED-EXL3-3.05BPW",
+  "slug": "blackfrost-research-blackfrost-3-8-flash-derisked-exl3-3-05bpw",
+  "author": "Blackfrost-Research",
+  "url": "https://huggingface.co/Blackfrost-Research/BLACKFROST-3.8-FLASH-DERISKED-EXL3-3.05BPW",
+  "created_at": "2026-09-16T06:15:38.000Z",
+  "updated_at": "2026-09-17T23:27:05.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "exllamav3",
+  "languages": [],
+  "tags": [
+    "exllamav3",
+    "safetensors",
+    "qwen4_exp",
+    "qwen",
+    "qwen3.8-flash-next",
+    "exl3",
+    "multimodal",
+    "speculative-decoding",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Blackfrost-AI/BLACKFROST-3.8-ICED-BF16",
+    "base_model:quantized:Blackfrost-AI/BLACKFROST-3.8-ICED-BF16",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 26168065536,
+  "parameters_human": "26.17B",
+  "storage_bytes": 85190681488,
+  "storage_human": "85.2 GB",
+  "base_model": "Blackfrost-AI/BLACKFROST-3.8-ICED-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amazon.de: Günstige Preise für Elektronik & Foto, Filme, Musik, Bücher ...",
+      "url": "https://www.amazon.de/",
+      "snippet": "Entdecken, shoppen und einkaufen bei Amazon.de: Günstige Preise für Elektronik & Foto, Filme, Musik, Bücher, Games, Spielzeug, …"
+    },
+    {
+      "title": "Amazon.de",
+      "url": "https://www.amazon.de/gp/css/homepage.html",
+      "snippet": "Hier finden Sie alles, was Sie für Ihren Einkauf benötigen, von Elektronik bis zu Büchern und vielem mehr."
+    },
+    {
+      "title": "Anmeldung bei Amazon Business",
+      "url": "https://business.amazon.de/de/login",
+      "snippet": "Sichern Sie sich exklusive Angebote und Mengenrabatte! Melden Sie sich bei Ihrem Amazon Business-Konto an und sparen Sie …"
+    },
+    {
+      "title": "Amazon Music | Hör dir Songs, Podcasts und vieles mehr an",
+      "url": "https://music.amazon.de/",
+      "snippet": "Suche und streame Musik und Podcasts über den Webbrowser. Höre dir deine liebsten Playlists aus über 100 Millionen Songs bei …"
+    },
+    {
+      "title": "Seller Central DE – Werden Sie Noch Heute Amazon-Verkäufer!",
+      "url": "https://sellercentral.amazon.de/",
+      "snippet": "Werden Sie Amazon-Verkaufspartner und profitieren Sie von potenziellen Vorteilen im Wert von über 45,000 €! Starten Sie noch …"
+    }
+  ]
+}

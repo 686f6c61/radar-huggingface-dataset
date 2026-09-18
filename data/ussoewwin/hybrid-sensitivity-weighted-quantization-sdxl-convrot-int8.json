@@ -1,0 +1,53 @@
+{
+  "schema": 1,
+  "id": "ussoewwin/Hybrid-Sensitivity-Weighted-Quantization-SDXL-ConvRot-INT8",
+  "slug": "ussoewwin-hybrid-sensitivity-weighted-quantization-sdxl-convrot-int8",
+  "author": "ussoewwin",
+  "url": "https://huggingface.co/ussoewwin/Hybrid-Sensitivity-Weighted-Quantization-SDXL-ConvRot-INT8",
+  "created_at": "2026-07-21T01:30:29.000Z",
+  "updated_at": "2026-09-22T02:14:52.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "nunchaku",
+  "languages": [],
+  "tags": [
+    "nunchaku",
+    "text-to-image",
+    "sdxl",
+    "svdq",
+    "quantized",
+    "int8",
+    "illustrious",
+    "realvisxl",
+    "photorealistic",
+    "comfyui",
+    "controlnet",
+    "anime",
+    "faipl-1.0-sd",
+    "creativeml-openrail-m",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 196808282541,
+  "storage_human": "196.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dolly - A True Original Musical Tickets",
+      "url": "https://www.ticketsonsale.com/theater/dolly---a-musical-st.-james-theatre-new-york-tickets?pid=544568&rid=7&vid=1593",
+      "snippet": "Find Dolly - A True Original Musical tickets for all upcoming concerts and events. View Dolly - A True Original Musical tour dates, …"
+    }
+  ]
+}

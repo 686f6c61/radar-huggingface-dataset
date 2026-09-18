@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "formalmathatepfl/qwen3-8b-feedback-non-base-with-repair",
+  "slug": "formalmathatepfl-qwen3-8b-feedback-non-base-with-repair",
+  "author": "formalmathatepfl",
+  "url": "https://huggingface.co/formalmathatepfl/qwen3-8b-feedback-non-base-with-repair",
+  "created_at": "2026-09-18T10:24:14.000Z",
+  "updated_at": "2026-09-18T10:27:11.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "llama-factory",
+    "full",
+    "generated_from_trainer",
+    "conversational",
+    "base_model:formalmathatepfl/qwen3-8b-post-trained-cpt",
+    "base_model:finetune:formalmathatepfl/qwen3-8b-post-trained-cpt",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392947495,
+  "storage_human": "16.4 GB",
+  "base_model": "formalmathatepfl/qwen3-8b-post-trained-cpt",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Filme - ZDFmediathek",
+      "url": "https://www.zdf.de/filme",
+      "snippet": "Streame Filme der Kategorien Märchen, Drama, Komödie, Romance, Thriller und vielem mehr - sortiert nach deinen Interessen."
+    },
+    {
+      "title": "ZDF Streaming-Portal: Filme, Serien und Dokus online anschauen",
+      "url": "https://www.zdf.de/",
+      "snippet": "1 day ago · Alle Videos und Livestreams im ZDF anschauen - ständig verfügbar und interaktiv! Entdecken Sie Filme, Serien, …"
+    },
+    {
+      "title": "\"hallo deutschland: Abenteuer Auswandern\" ab jetzt im ZDF streamen",
+      "url": "https://presseportal.zdf.de/pressemitteilung/hallo-deutschland-abenteuer-auswandern-ab-jetzt-im-zdf-streamen",
+      "snippet": "Dec 10, 2025 · Drei neue Folgen in der \"hallo deutschland\"-Reihe \"Abenteuer Auswandern\" – die erste davon ist ab jetzt im ZDF zu …"
+    },
+    {
+      "title": "\"Macherinnen – die neue Ära im Basketball\" jetzt im ZDF streamen",
+      "url": "https://presseportal.zdf.de/pressemitteilung/macherinnen-die-neue-aera-im-basketball-jetzt-im-zdf-streamen",
+      "snippet": "Aug 28, 2026 · Der knapp 60-minütige Film von Thomas Pletzinger und Timon Modersohn zeigt große Träume, harte Rückschläge …"
+    },
+    {
+      "title": "ZDFmediathek",
+      "url": "https://hbbtv.zdf.de/zdfm3/index.php?portal=1",
+      "snippet": "Um dir das HbbTV-Angebot der ZDFmediathek optimal präsentieren zu können, setzen wir Cookies und vergleichbare Techniken ein. …"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "andrew-paul/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-KERN-GGUF",
+  "slug": "andrew-paul-qwen3-8-27b-cold-fusion-gain-v1-1-kern-gguf",
+  "author": "andrew-paul",
+  "url": "https://huggingface.co/andrew-paul/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-KERN-GGUF",
+  "created_at": "2026-09-18T10:25:18.000Z",
+  "updated_at": "2026-09-18T11:02:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "qwen3.8",
+    "kern",
+    "mtp",
+    "speculative-decoding",
+    "mixed-precision",
+    "text-generation",
+    "base_model:DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1",
+    "base_model:quantized:DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 97157996416,
+  "storage_human": "97.2 GB",
+  "base_model": "DavidAU/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Andrew Pro",
+      "url": "https://pro.andrewapp.fr/",
+      "snippet": "Andrew® supports healthcare professionals in following their patients beyond the consultation. Simple, centralized, accessible …"
+    },
+    {
+      "title": "Andrew Mountbatten-Windsor — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Andrew_Mountbatten-Windsor",
+      "snippet": "Andrew Albert Christian Edward naît le 19 février 1960 au palais de Buckingham. Il est le troisième enfant et deuxième fils de la reine …"
+    },
+    {
+      "title": "Andrew® - mobilité santé – Applications sur Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.osteow.andrew&hl=fr",
+      "snippet": "Andrew est bien plus qu'une simple application bien-être. C'est votre partenaire de confiance pour prendre soin de votre santé au …"
+    },
+    {
+      "title": "Prince Andrew : vie, famille, scandales et statut royal - Franzine",
+      "url": "https://franzine.fr/prince-andrew/",
+      "snippet": "Sep 8, 2026 · Prince Andrew : découvrez sa vie, sa famille, ses enfants, sa carrière navale, Jeffrey Epstein, les scandales et son …"
+    },
+    {
+      "title": "Arrestation de l'ex-prince Andrew : des faits sordides évoqués dans de ...",
+      "url": "https://www.linternaute.com/actualite/personnalites/9896256-arrestation-de-l-ex-prince-andrew-des-faits-sordides-evoques-dans-de-nouvelles-accusations/",
+      "snippet": "Feb 19, 2026 · Andrew Mountbatten-Windsor, frère du roi Charles III déchu de ses titres royaux, a été arrêté et placé en garde à vue …"
+    }
+  ]
+}

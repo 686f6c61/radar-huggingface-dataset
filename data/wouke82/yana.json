@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Wouke82/yana",
+  "slug": "wouke82-yana",
+  "author": "Wouke82",
+  "url": "https://huggingface.co/Wouke82/yana",
+  "created_at": "2026-09-18T09:26:27.000Z",
+  "updated_at": "2026-09-18T10:37:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1550562771,
+  "storage_human": "1.6 GB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BingHomepageQuiz - Reddit",
+      "url": "https://www.reddit.com/r/BingHomepageQuiz/hot/",
+      "snippet": "Microsoft Bing Homepage daily quiz questions and their answers"
+    },
+    {
+      "title": "Bing News Quiz [10-28-2022] : r/BingQuizAnswers - Reddit",
+      "url": "https://www.reddit.com/r/BingQuizAnswers/comments/yf0qf5/bing_news_quiz_10282022/",
+      "snippet": "Oct 27, 2022 · Bing News Quiz Weekly Answers [10-28-2022] 1: The UK has a new prime minister. What's his name? A Boris …"
+    },
+    {
+      "title": "BingQuizAnswers - Reddit",
+      "url": "https://www.reddit.com/r/BingQuizAnswers/hot/",
+      "snippet": "Microsoft Rewards Quiz Answers"
+    },
+    {
+      "title": "Small Inconvenience with the Bing Weekly Quiz you might run into",
+      "url": "https://www.reddit.com/r/MicrosoftRewards/comments/t0zxod/small_inconvenience_with_the_bing_weekly_quiz_you/",
+      "snippet": "Feb 25, 2022 · Alternatively in us you can do the bing quiz off the bing come page so instead of 10 questions for 10 you get 3. I do …"
+    },
+    {
+      "title": "Quiz Answers for today : r/MicrosoftRewards - Reddit",
+      "url": "https://www.reddit.com/r/MicrosoftRewards/comments/cwya5d/quiz_answers_for_today/",
+      "snippet": "Aug 29, 2019 · The first part of your post is the \"What's on Top?\" quiz that was mentioned a month ago and mentioned again more …"
+    }
+  ]
+}

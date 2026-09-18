@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-mistral_remove50_swapgapiter_b010",
+  "slug": "jeesup-svd-safety-mistral_remove50_swapgapiter_b010",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-mistral_remove50_swapgapiter_b010",
+  "created_at": "2026-09-18T10:44:45.000Z",
+  "updated_at": "2026-09-18T10:54:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:mistralai/Mistral-7B-Instruct-v0.2",
+    "base_model:finetune:mistralai/Mistral-7B-Instruct-v0.2",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7241732096,
+  "parameters_human": "7.24B",
+  "storage_bytes": 14483991459,
+  "storage_human": "14.5 GB",
+  "base_model": "mistralai/Mistral-7B-Instruct-v0.2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Earth",
+      "url": "https://maps.google.de/intl/de/earth/",
+      "snippet": "Google Earth ist eine fotorealistische und digitale Version unseres Planeten. Woher kommen die Bilder? Wie sind sie …"
+    },
+    {
+      "title": "Transit – Google Maps",
+      "url": "https://maps.google.de/landing/transit/cities/index.html",
+      "snippet": "Home Cities Covered Cities Covered"
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.de/maps?q=Heinrich-Stahl-Stra%C3%9Fe+3,+65934,+Frankfurt+am+Main&hl=de&sll=50.18286,8.66834&sspn=0.01113,0.017831&oq=Heinrich-Stahl-Stra%C3%9Fe+3+65934+Frankfurt+am+Main+&hnear=Heinrich-Stahl-Stra%C3%9Fe+3,+65934+Frankfurt+am+Main&t=m&z=16",
+      "snippet": "Mit Google Maps lokale Anbieter suchen, Karten anzeigen und Routenpläne abrufen."
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.de/maps?q=Reichsstra%C3%9Fe+103+14052+Berlin-Westend&oe=utf-8&client=firefox-a&channel=sb&hnear=Reichsstra%C3%9Fe+103,+14052+Berlin&t=m&z=16",
+      "snippet": "Find local businesses, view maps and get driving directions in Google Maps."
+    },
+    {
+      "title": "Before you continue to Google Maps",
+      "url": "https://maps.google.de/maps?q=Pekeag+GmbH,+Romy-Schneider-Stra%C3%9Fe,+Berlin&hl=en&ll=52.545748,13.224363&spn=0.020304,0.045447&sll=52.545739,13.224342&sspn=0.010152,0.022724&oq=Pek&t=m&z=15&iwloc=A",
+      "snippet": "Non-personalized content is influenced by things like the content you’re currently viewing, activity in your active Search session, and …"
+    }
+  ]
+}

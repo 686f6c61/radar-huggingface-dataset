@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10-q4v3-iid16",
+  "slug": "agurung-cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10-q4v3-iid16",
+  "author": "agurung",
+  "url": "https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp10-q4v3-iid16",
+  "created_at": "2026-09-15T11:47:58.000Z",
+  "updated_at": "2026-09-18T01:22:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "openrlhf",
+    "grpo",
+    "reinforcement-learning",
+    "code-generation",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-4B-Instruct-2507",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 1778,
+  "trending_score": 0,
+  "parameters": 4411424256,
+  "parameters_human": "4.41B",
+  "storage_bytes": 26480106210,
+  "storage_human": "26.5 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "泰姬陵（Taj Mahal）是一幢纯波斯式建筑吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/48479715",
+      "snippet": "May 10, 2017 · 泰姬陵（Taj Mahal）是一幢纯波斯式建筑吗？ 泰姬陵的整个设计，形式、结构、细部装饰、布景、审美情趣等，是否 …"
+    },
+    {
+      "title": "闲鱼和转转哪个比较靠谱？ - 知乎",
+      "url": "https://www.zhihu.com/question/65313130",
+      "snippet": "Oct 26, 2021 · 转转一生黑，说一下本人被坑的经历吧。 11.8号，本人在转转平台出售了一台电脑，挂上后被人秒拍，被骗子讲价 …"
+    },
+    {
+      "title": "Get directions and show routes in Google Maps",
+      "url": "https://support.google.com/maps/answer/144339?hl=en-in&co=GENIE.Platform%3DDesktop",
+      "snippet": "You can get directions for driving, public transport, walking, ride sharing, cycling, flight or motorcycle on Google Maps. If there are …"
+    },
+    {
+      "title": "301 Moved - Google Help",
+      "url": "https://support.google.com/maps/answer/3001634?hl=en",
+      "snippet": "301 Moved The document has moved here."
+    },
+    {
+      "title": "Eidosper - 知乎",
+      "url": "https://www.zhihu.com/people/eidosper",
+      "snippet": "5 days ago · 啊，又开始团建了？ 可是你们在知乎团建有什么用呢？你们该做的不是去说服那些本来就不愿意买的人，而是去说服那些 …"
+    }
+  ]
+}

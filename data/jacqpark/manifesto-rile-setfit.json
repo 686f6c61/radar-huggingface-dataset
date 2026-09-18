@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "jacqpark/manifesto-RILE-setfit",
+  "slug": "jacqpark-manifesto-rile-setfit",
+  "author": "jacqpark",
+  "url": "https://huggingface.co/jacqpark/manifesto-RILE-setfit",
+  "created_at": "2026-09-18T11:30:43.000Z",
+  "updated_at": "2026-09-18T11:34:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "setfit",
+  "languages": [],
+  "tags": [
+    "setfit",
+    "safetensors",
+    "bert",
+    "sentence-transformers",
+    "text-classification",
+    "political-science",
+    "manifesto-project",
+    "base_model:sentence-transformers/all-MiniLM-L6-v2",
+    "base_model:finetune:sentence-transformers/all-MiniLM-L6-v2",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 22713216,
+  "parameters_human": "22.7M",
+  "storage_bytes": 90866603,
+  "storage_human": "91 MB",
+  "base_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Booking.com | Offizielle Seite | Die besten Hotels, Flüge, Mietwagen ...",
+      "url": "https://www.booking.com/index.de.html?msockid=172f194d17096abf1d4b0e9516f86bfa",
+      "snippet": "Entdecken Sie die Welt mit Booking.com. Große Ersparnisse bei Ferienhäusern, Hotels, Flügen, Mietwagen, Taxis und Attraktionen – …"
+    },
+    {
+      "title": "Booking.com | Official site | The best hotels, flights, car rentals ...",
+      "url": "https://www.booking.com/?msockid=172f194d17096abf1d4b0e9516f86bfa",
+      "snippet": "Explore the world with Booking.com. Big savings on homes, hotels, flights, car rentals, taxis, and attractions – build your perfect trip …"
+    },
+    {
+      "title": "Booking.com",
+      "url": "https://packages.booking.com/vacationpackages/",
+      "snippet": "Save up to 625 dollars when you book your flight and hotel together! Booking.com Vacation Packages with exclusive deals on airline …"
+    },
+    {
+      "title": "Logging in to the Booking.com Extranet",
+      "url": "https://partner.booking.com/en-us/help/account-and-log/settings/logging-bookingcom-extranet",
+      "snippet": "Aug 6, 2026 · The Booking.com Extranet is the accommodation partner and property owner platform that hosts all the necessary …"
+    },
+    {
+      "title": "Booking.com – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Booking.com",
+      "snippet": "Booking.com ist ein niederländischer Betreiber des gleichnamigen Webportals zur Buchung von Reiseunterkünften sowie Flügen und …"
+    }
+  ]
+}

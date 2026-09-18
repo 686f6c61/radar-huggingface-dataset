@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "kalyan-ks/ettin-tweet-emotion-32m-distilled",
+  "slug": "kalyan-ks-ettin-tweet-emotion-32m-distilled",
+  "author": "kalyan-ks",
+  "url": "https://huggingface.co/kalyan-ks/ettin-tweet-emotion-32m-distilled",
+  "created_at": "2026-09-18T07:34:25.000Z",
+  "updated_at": "2026-09-19T01:39:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "text-classification",
+    "Tweet-Emotion-Classification",
+    "en",
+    "dataset:cardiffnlp/tweet_eval",
+    "base_model:jhu-clsp/ettin-encoder-32m",
+    "base_model:finetune:jhu-clsp/ettin-encoder-32m",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 31,
+  "trending_score": 0,
+  "parameters": 32032516,
+  "parameters_human": "32.0M",
+  "storage_bytes": 128136712,
+  "storage_human": "128 MB",
+  "base_model": "jhu-clsp/ettin-encoder-32m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kalyan — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Kalyan",
+      "snippet": "Kalyan (marathi: कल्याण) est une ville indienne du district de Thane dans le Maharashtra et un point de jonction ferroviaire …"
+    },
+    {
+      "title": "Prénom Kalyan : Origine - Caractère - Signification - Etymologie",
+      "url": "https://www.parents.fr/prenoms/kalyan-44939",
+      "snippet": "Tout ce que vous devez savoir sur le prénom Kalyan est sur Parents.fr Origine, saint, étymologie, signification, caractère... On vous …"
+    },
+    {
+      "title": "Kalyan Jewellers | Buy Online Gold, Diamonds & Necklace Jewellery",
+      "url": "https://www.kalyanjewellers.net/",
+      "snippet": "Kalyan’s biggest strength is in these craftsmen who create unique designs just for us from every nook and corner of India. And this …"
+    },
+    {
+      "title": "Kalyan - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Kalyan",
+      "snippet": "Kalyan (Pronunciation: [kəljaːɳ]) is a city on the banks of Ulhas River in Thane district of Maharashtra state in Konkan division. It is …"
+    },
+    {
+      "title": "Kalyan-Dombivli - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Kalyan-Dombivli",
+      "snippet": "Kalyan-Dombivli is a twin city and it comes under Mumbai Metropolitan Region and it is a municipal corporation with its headquarters …"
+    }
+  ]
+}

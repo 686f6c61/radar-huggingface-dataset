@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "palli23/wav2vec2-base-samromur-5h",
+  "slug": "palli23-wav2vec2-base-samromur-5h",
+  "author": "palli23",
+  "url": "https://huggingface.co/palli23/wav2vec2-base-samromur-5h",
+  "created_at": "2026-06-03T23:03:08.000Z",
+  "updated_at": "2026-09-18T22:41:36.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "is"
+  ],
+  "tags": [
+    "safetensors",
+    "wav2vec2",
+    "is",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 32,
+  "trending_score": 0,
+  "parameters": 94402472,
+  "parameters_human": "94.4M",
+  "storage_bytes": 90153728273,
+  "storage_human": "90.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WebUntis School Search",
+      "url": "https://webuntis.com/",
+      "snippet": "Search for School Name, City or Address My school doesn't use WebUntis yet"
+    },
+    {
+      "title": "WebUntis School Search",
+      "url": "https://school.webuntis.com/WebUntis/",
+      "snippet": "Tip: Afterwards, save your school’s new WebUntis page as a favorite – so you can access it with just one click next time. e.g. by …"
+    },
+    {
+      "title": "WebUntis Login Seite von Untis-MME",
+      "url": "https://untis-mme.webuntis.com/WebUntis/?school=untis-mme&authorize_params=eyJzY29wZSI6Im9wZW5pZCIsInJlc3BvbnNlX3R5cGUiOiJjb2RlIiwicmVkaXJlY3RfdXJpIjoiaHR0cHM6Ly91bjY3ODYzZGVycC5zY2h1bHNlcnZlci5kZS9pc2Vydi9wdWJsaWMvd2VidW50aXMvcmVkaXJlY3RfcHJveHkiLCJzdGF0ZSI6ImZjNjk2ZjAyLWU1YzktNGIyMS04OGI3LTMyZTkzOTU2YmM4ZCIsIm5vbmNlIjoiNTM4NDkwNTktZDkxNC00MDYyLThiOTYtNWQ2MjRiZDYzMWNlIiwiY2xpZW50X2lkIjoiSVNfTWVzc2VuZ2VyIn0=",
+      "snippet": "Heute 16.09.2026 Untis-MME"
+    },
+    {
+      "title": "WebUntis La página login de EHU",
+      "url": "https://ehu.webuntis.com/WebUntis/?school=ehu",
+      "snippet": "20 hours ago · Se ha producido un error\\:"
+    },
+    {
+      "title": "WebUntis Login Seite von HTBLA Salzburg",
+      "url": "https://htl-salzburg.webuntis.com/WebUntis/",
+      "snippet": "Es ist ein Fehler aufgetreten."
+    }
+  ]
+}

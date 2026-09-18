@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "decent-jawfish/bonsai-2-27b-mtp",
+  "slug": "decent-jawfish-bonsai-2-27b-mtp",
+  "author": "decent-jawfish",
+  "url": "https://huggingface.co/decent-jawfish/bonsai-2-27b-mtp",
+  "created_at": "2026-09-18T06:41:06.000Z",
+  "updated_at": "2026-09-18T07:04:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "ternary",
+    "2-bit",
+    "mtp",
+    "speculative-decoding",
+    "llama-cpp",
+    "qwen35",
+    "text-generation",
+    "base_model:prism-ml/Ternary-Bonsai-2-27B-gguf",
+    "base_model:quantized:prism-ml/Ternary-Bonsai-2-27B-gguf",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 12,
+  "downloads_30d": 2695,
+  "trending_score": 11,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 7557178656,
+  "storage_human": "7.6 GB",
+  "base_model": "prism-ml/Ternary-Bonsai-2-27B-gguf",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "目前AI编程工具哪个最好用？ - 知乎",
+      "url": "https://www.zhihu.com/question/1973709336363701431",
+      "snippet": "Copilot Workspace （2025 Beta 发布）：实验性功能，对标 Claude Code 的任务分解能力，允许用户输入需求后由系统拆解为多个子 …"
+    },
+    {
+      "title": "电脑win11怎么更改自己的管理员账户？ - 知乎",
+      "url": "https://www.zhihu.com/question/548502150",
+      "snippet": "这种操作Win11和win10都差不多，没有变化。 更改管理员，需要现在权限是管理员，如果是访客 用户账户 是没有权限更改。 进入 控 …"
+    },
+    {
+      "title": "要求 Github Copilot / Claude / Gemini 參考 MS Learn 官方文件寫 Code",
+      "url": "https://blog.darkthread.net/blog/ms-learn-mcp/",
+      "snippet": "Jan 8, 2026 · 點下去右側會打開類似 Copilot 的對話介面，有用 Github Copilot 的同學應該都不陌生，靠本能就知道怎麼用： Ask …"
+    },
+    {
+      "title": "Vibe Coding 體驗 - 製作描字帖 (含 Github Copilot 節費心得)",
+      "url": "https://blog.darkthread.net/blog/vibe-coding-case/",
+      "snippet": "Feb 1, 2026 · 最後整理本次我學到的 Github Copilot CLI Vibe Coding 技巧： 記得使用 .github/copilot-instructions.md 規範程式寫法， …"
+    },
+    {
+      "title": "腾讯的 ima.copilot使用体验怎样，能否替代OneNote? - 知乎",
+      "url": "https://www.zhihu.com/question/9044650727",
+      "snippet": "有了copilot帮我，5-10分钟给我完成7篇！ 这什么差距！ 这意味着我可以一天再 多做几倍 的账号，那我的收益也 成倍数增长！ ！ 而 …"
+    }
+  ]
+}

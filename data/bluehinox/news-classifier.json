@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "bluehinox/news-classifier",
+  "slug": "bluehinox-news-classifier",
+  "author": "bluehinox",
+  "url": "https://huggingface.co/bluehinox/news-classifier",
+  "created_at": "2026-09-18T11:15:35.000Z",
+  "updated_at": "2026-09-18T12:23:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bert",
+    "text-classification",
+    "en",
+    "dataset:fancyzhx/ag_news",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 108893955,
+  "parameters_human": "108.9M",
+  "storage_bytes": 435599140,
+  "storage_human": "436 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ANAF",
+      "url": "https://www.anaf.ro/anaf/internet/!ut/p/a0/04_Sj9CPykssy0xPLMnMz0vMAfGjzOI9DD3MPIwsjLz8fYwsDMyC_Zx9jJzNDAzcjfWDU_P0C7IdFQGJQ9vk/",
+      "snippet": "x Username login Certificate login Submission of single declaration and other forms SPV - PF (individuals) Sign Up in Virtual Private …"
+    },
+    {
+      "title": "Inregistrare utilizatori - ANAF",
+      "url": "https://www.anaf.ro/anaf/internet/ANAF/servicii_online/inregistrare_utilizatori",
+      "snippet": "Inregistrare pentru API-uri Recuperare credențiale/parolă Instrucţiuni de utilizare - actualizat în data de 12.04.2024 NOU TOKEN …"
+    },
+    {
+      "title": "ANAF",
+      "url": "https://www.anaf.ro/anaf/internet/ANAF/servicii_online/www.anaf.ro",
+      "snippet": ""
+    },
+    {
+      "title": "Pagina login",
+      "url": "http://financiar.anaf.ro/",
+      "snippet": "Bine ati venit! Va rugam sa va autentificati utilizand certificatul digital. Continutul acestui site este proprietatea Agentiei Nationale de …"
+    },
+    {
+      "title": "ANAF",
+      "url": "https://www.anaf.ro/anaf/internet/!ut/p/a1/04_Sj9CPykssy0xPLMnMz0vMAfGjzOI9DD3MPIwsjLz8fYwsDMyC_Zx9jJzNDAzcjYEKIpEVGHgEGhgEmjp5Bpm6BxgYeBlRpt_AjDj9BjiAowEh_cGpefrh-lGoyrD4Aq8CkDPBCvC4oyA3NDSiwjMTAMUrWpQ!/dl5/d5/L3dDb1ZJQSEhL3dPb0JKTnNBLzRQeWhDQlVZV0JFIS8wLzY2Mzg5L2xv/?uri=nm:oid:Z6_H1H6H282JOOI70Q5RP8GKO1006",
+      "snippet": "Please contact your system administrator to report this error."
+    }
+  ]
+}

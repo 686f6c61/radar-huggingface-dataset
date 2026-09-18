@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "introvoyz043/HandEdit-LoRA",
+  "slug": "introvoyz043-handedit-lora",
+  "author": "introvoyz043",
+  "url": "https://huggingface.co/introvoyz043/HandEdit-LoRA",
+  "created_at": "2026-09-18T10:25:27.000Z",
+  "updated_at": "2026-09-18T10:25:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "image-editing",
+    "lora",
+    "robotics",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 789384152,
+  "storage_human": "789 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HyperLeica - 知乎",
+      "url": "https://www.zhihu.com/people/ares-fu",
+      "snippet": "Jan 4, 2026 · 投稿 太多人根本没有脑子，别人说啥就信啥。更可悲的是，连基本的科学素养都不具备，他也没有什么判断能力。只会 …"
+    },
+    {
+      "title": "雷克沙ARES 8TB SSD评测：机箱里再也没有机械硬盘的 ...",
+      "url": "https://www.zhihu.com/tardis/bd/art/7843102129",
+      "snippet": "雷克沙ARES 8TB SSD的出现，终于让我们看到了大容量SSD普及的曙光，容量和速度终于可以兼得。 已经等不及8TB的高速SSD普 …"
+    },
+    {
+      "title": "What's the difference between \"well-lighted\" and \"well-lit\"?",
+      "url": "https://english.stackexchange.com/questions/21198/whats-the-difference-between-well-lighted-and-well-lit",
+      "snippet": "Apr 15, 2011 · My two cents: as a lighting designer, I use \"lighted\" to talk about the medium of illumination--when something is well …"
+    },
+    {
+      "title": "Which is correct: The rest of the staff is or are? The rest of my ...",
+      "url": "https://english.stackexchange.com/questions/44459/which-is-correct-the-rest-of-the-staff-is-or-are-the-rest-of-my-family-is-or-a",
+      "snippet": "Oct 7, 2011 · I hope you can enlighten me. I get varying answers in Google and I need to find out which is the correct grammatical …"
+    },
+    {
+      "title": "雷克沙固态硬盘怎么样？ 你们用的哪些型号？",
+      "url": "https://www.zhihu.com/tardis/bd/ans/3175365670",
+      "snippet": "综上关于国产固态实力分析来看，雷克沙还是非常值得考虑的品牌的，具体型号，当然推荐：雷克沙 ARES，这个是目前国内使用最广 …"
+    }
+  ]
+}

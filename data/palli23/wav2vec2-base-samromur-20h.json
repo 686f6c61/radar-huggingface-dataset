@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "palli23/wav2vec2-base-samromur-20h",
+  "slug": "palli23-wav2vec2-base-samromur-20h",
+  "author": "palli23",
+  "url": "https://huggingface.co/palli23/wav2vec2-base-samromur-20h",
+  "created_at": "2026-06-04T09:08:08.000Z",
+  "updated_at": "2026-09-18T22:41:40.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "is"
+  ],
+  "tags": [
+    "safetensors",
+    "wav2vec2",
+    "is",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 27,
+  "trending_score": 0,
+  "parameters": 94402472,
+  "parameters_human": "94.4M",
+  "storage_bytes": 61568190362,
+  "storage_human": "61.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fantakuchen aus der Springform – so wunderbar fluffig & cremig ...",
+      "url": "https://www.einfachkochen.de/rezepte/fantakuchen-aus-der-springform-wunderbar-fluffig-cremig",
+      "snippet": "Aug 27, 2023 · Der Fantakuchen aus der Springform ist bei Klein und Groß beliebt: Das leckere Rezept für den Limo-Kuchen mit …"
+    },
+    {
+      "title": "Fantakuchen aus der Springform | LECKER",
+      "url": "https://www.lecker.de/fantakuchen-aus-der-springform-130323.html",
+      "snippet": "Jetzt geht's rund! Fantakuchen kannst du nun auch in der Springform backen. Das beste Rezept mit Mandarinen und Schmand!"
+    },
+    {
+      "title": "Fantakuchen aus der Springform - DasKochrezept.de",
+      "url": "https://www.daskochrezept.de/rezepte/fantakuchen-aus-der-springform",
+      "snippet": "Oct 1, 2022 · Den Ofen auf 180°C Unter- und Oberhitze vorheizen. Eine Springform mit Öl auspinseln und mit Bröseln ausstreuen. …"
+    },
+    {
+      "title": "Fantakuchen Springform Rezept - Mein Backglück",
+      "url": "https://meinbackglueck.de/fantakuchen-springform-rezept/",
+      "snippet": "Dann ist dieses Fantakuchen Springform Rezept genau richtig für Dich. Der Vorteil ist ganz klar, dass der Fantakuchen nun auch für …"
+    },
+    {
+      "title": "Fanta-Kuchen \"26er Springform\" - Thermomix Rezeptwelt",
+      "url": "https://www.rezeptwelt.de/backen-suess-rezepte/fanta-kuchen-26er-springform/xasdudu3-29325-735246-cfcd2-fk5nv7xs",
+      "snippet": "Apr 18, 2017 · Fanta-Kuchen \"26er Springform\", ein Rezept der Kategorie Backen süß. Mehr Thermomix® Rezepte auf …"
+    }
+  ]
+}

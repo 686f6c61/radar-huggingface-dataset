@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "palli23/wav2vec2-base-samromur-10h",
+  "slug": "palli23-wav2vec2-base-samromur-10h",
+  "author": "palli23",
+  "url": "https://huggingface.co/palli23/wav2vec2-base-samromur-10h",
+  "created_at": "2026-06-04T00:05:30.000Z",
+  "updated_at": "2026-09-18T22:41:38.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "is"
+  ],
+  "tags": [
+    "safetensors",
+    "wav2vec2",
+    "is",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 27,
+  "trending_score": 0,
+  "parameters": 94402472,
+  "parameters_human": "94.4M",
+  "storage_bytes": 87954632046,
+  "storage_human": "88.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Painel informativo sobre o contexto do assunto",
+      "url": "https://support.google.com/youtube/answer/9004474?hl=pt-BR",
+      "snippet": "Para oferecer mais contexto sobre um assunto, esses painéis mostram referências coletadas de parceiros externos independentes. …"
+    },
+    {
+      "title": "Cómo evalúa YouTube el contenido educativo, documental, científico y ...",
+      "url": "https://support.google.com/youtube/answer/6345162?hl=es-419",
+      "snippet": "Cómo se otorga una excepción de EDSA al contenido Evaluamos caso por caso para decidir si corresponde al contenido una …"
+    },
+    {
+      "title": "Usar o Chrome com extensões de acessibilidade",
+      "url": "https://support.google.com/chrome/answer/7040464?hl=pt-BR",
+      "snippet": "Descrições longas no menu de contexto (ver descrições longas) Com a extensão Descrições longas no menu de contexto, é …"
+    },
+    {
+      "title": "Políticas sobre contenido violento o explícito",
+      "url": "https://support.google.com/youtube/answer/2802008?hl=es",
+      "snippet": "En YouTube no se permite el contenido violento o sangriento cuyo propósito sea causar conmoción o repulsión a los usuarios, ni el …"
+    },
+    {
+      "title": "Política de conteúdo nocivo ou perigoso - Ajuda do YouTube",
+      "url": "https://support.google.com/youtube/answer/2801964?hl=pt-BR",
+      "snippet": "Há contexto educacional, documental, científico ou artístico, como o fornecimento de informações sobre os riscos do ato. Por …"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "zbeeb/Qwen2.5-Math-1.5B-GRPO-Staleness-8",
+  "slug": "zbeeb-qwen2-5-math-1-5b-grpo-staleness-8",
+  "author": "zbeeb",
+  "url": "https://huggingface.co/zbeeb/Qwen2.5-Math-1.5B-GRPO-Staleness-8",
+  "created_at": "2026-09-18T11:14:16.000Z",
+  "updated_at": "2026-09-18T11:14:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "grpo",
+    "math",
+    "reinforcement-learning",
+    "staleness-grpo",
+    "conversational",
+    "en",
+    "zh",
+    "dataset:zbeeb/Staleness-GRPO-DAPO-Math-17k",
+    "base_model:Qwen/Qwen2.5-Math-1.5B",
+    "base_model:finetune:Qwen/Qwen2.5-Math-1.5B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 6186317228,
+  "storage_human": "6.2 GB",
+  "base_model": "Qwen/Qwen2.5-Math-1.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "What is full stop punctuation and how to use it. - Adobe",
+      "url": "https://www.adobe.com/acrobat/resources/full-stop-punctuation.html?msockid=138b5463397363ba113743bb38a9621d",
+      "snippet": "A full stop, or a period, is a punctuation mark. Learn about its meaning and origin and check out some examples of how to use it."
+    },
+    {
+      "title": "Full Stop Punctuation - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/english/full-stop-punctuation/",
+      "snippet": "Jun 13, 2025 · Answer: A full stop is a punctuation mark (.) used to signal the end of a sentence. It indicates a pause longer than that …"
+    },
+    {
+      "title": "Master the Full Stop: Your Guide to Essential Punctuation",
+      "url": "https://www.theedadvocate.org/what-is-a-full-stop/",
+      "snippet": "A full stop is a punctuation mark represented by a small dot (.) placed at the end of a declarative sentence. This mark serves multiple …"
+    },
+    {
+      "title": "Full stop - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Full_stop",
+      "snippet": "The full stop (Commonwealth English), period (North American English), or full point (.), is a punctuation mark used for several …"
+    },
+    {
+      "title": "Full Stop: Definition, Usage, and Comprehensive Examples",
+      "url": "https://leangrammar.com/full-stop-definition-usage-and-examples/",
+      "snippet": "Jul 22, 2025 · The full stop (.), also known as a period in American English, is a punctuation mark used primarily to indicate the end of …"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "0xWhiteMage/Qwen3.8-27B-Kearuga-DFlash2",
+  "slug": "0xwhitemage-qwen3-8-27b-kearuga-dflash2",
+  "author": "0xWhiteMage",
+  "url": "https://huggingface.co/0xWhiteMage/Qwen3.8-27B-Kearuga-DFlash2",
+  "created_at": "2026-08-21T21:24:33.000Z",
+  "updated_at": "2026-09-22T06:27:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "kearuga",
+    "qwen3.8",
+    "dflash2",
+    "speculative-decoding",
+    "drafter",
+    "nvfp4",
+    "modelopt",
+    "sglang",
+    "dgx-spark",
+    "gb10",
+    "grace-blackwell",
+    "sm121",
+    "text-generation",
+    "en",
+    "zh",
+    "arxiv:2502.14856",
+    "arxiv:2607.01893",
+    "arxiv:2605.18810",
+    "arxiv:2605.29343",
+    "base_model:z-lab/Qwen3.8-27B-DFlash2",
+    "base_model:finetune:z-lab/Qwen3.8-27B-DFlash2",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 390,
+  "trending_score": 0,
+  "parameters": 1124865280,
+  "parameters_human": "1.12B",
+  "storage_bytes": 7911382961,
+  "storage_human": "7.9 GB",
+  "base_model": "z-lab/Qwen3.8-27B-DFlash2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Damu na machozi by Eric James Shigongo | Open Library",
+      "url": "https://openlibrary.org/books/OL30966722M/Damu_na_machozi",
+      "snippet": "Nov 12, 2020 · Damu na machozi by Eric James Shigongo, 2012, Global Publishers & General Enterprises Ltd. edition, in Swahili"
+    },
+    {
+      "title": "Hadithi Za Erick Shigongo | PDF - Scribd",
+      "url": "https://www.scribd.com/document/611329057/Hadithi-Za-Erick-Shigongo",
+      "snippet": "Hapo yule mtoto alikua akiongea kwa uchungu lakini kwa hasira na kwa imani kabisa. Sikuweza kuendelea kuvumilia kuwasikiliza, …"
+    },
+    {
+      "title": "Damu na machozi - Eric James Shigongo - Google Books",
+      "url": "https://books.google.com/books/about/Damu_na_machozi.html?id=06z4ngEACAAJ",
+      "snippet": "Rent and save from the world's largest eBookstore. Read, highlight, and take notes, across web, tablet, and phone."
+    },
+    {
+      "title": "Eric James Shigongo - Open Library",
+      "url": "https://openlibrary.org/authors/OL8645251A/Eric_James_Shigongo",
+      "snippet": "Oct 18, 2020 · Damu na machozi by Eric James Shigongo First published in 2012 — 1 edition Locate Want to Read"
+    },
+    {
+      "title": "Eric Shigongo - Riwaya ya kusisimua, DAMU NA MACHOZI... | Facebook",
+      "url": "https://www.facebook.com/shigongotz/posts/riwaya-ya-kusisimua-damu-na-machozi-iliyoandikwa-na-mtunzi-mahiri-eric-shigongo-/2227492700676296/",
+      "snippet": "May 18, 2019 · Riwaya ya kusisimua, DAMU NA MACHOZI iliyoandikwa na mtunzi mahiri ERIC SHIGONGO, ndani yake kuna visa, …"
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "schema": 1,
+  "id": "gitmodelmujtaba/sapbert-snomed-loinc-rxnorm",
+  "slug": "gitmodelmujtaba-sapbert-snomed-loinc-rxnorm",
+  "author": "gitmodelmujtaba",
+  "url": "https://huggingface.co/gitmodelmujtaba/sapbert-snomed-loinc-rxnorm",
+  "created_at": "2026-09-04T04:51:42.000Z",
+  "updated_at": "2026-09-17T17:04:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "safetensors",
+    "bert",
+    "feature-extraction",
+    "medical",
+    "clinical",
+    "sapbert",
+    "biomedical",
+    "snomed-ct",
+    "loinc",
+    "rxnorm",
+    "omop",
+    "athena",
+    "metric-learning",
+    "entity-linking",
+    "cross-encoder",
+    "reranker",
+    "active-learning",
+    "fhir",
+    "mimic-iv",
+    "en",
+    "license:apache-2.0",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 120,
+  "trending_score": 0,
+  "parameters": 109482240,
+  "parameters_human": "109.5M",
+  "storage_bytes": 2190070383,
+  "storage_human": "2.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Clinical Entity Linking",
+      "dataset": "Medical Guidelines Disambiguation Benchmark (v2.1)",
+      "metric": "Final Triplet Loss",
+      "value": 0.0497
+    },
+    {
+      "task": "Clinical Entity Linking",
+      "dataset": "Medical Guidelines Disambiguation Benchmark (v2.1)",
+      "metric": "Caesarean Delivery Margin",
+      "value": 0.2062
+    },
+    {
+      "task": "Clinical Entity Linking",
+      "dataset": "Medical Guidelines Disambiguation Benchmark (v2.1)",
+      "metric": "Prior Vaginal Delivery Margin",
+      "value": 0.3301
+    },
+    {
+      "task": "Clinical Entity Linking",
+      "dataset": "Medical Guidelines Disambiguation Benchmark (v2.1)",
+      "metric": "DrivenData Class Macro-IoU (v2.0)",
+      "value": 0.5646
+    },
+    {
+      "task": "Clinical Entity Linking",
+      "dataset": "Medical Guidelines Disambiguation Benchmark (v2.1)",
+      "metric": "Cross-Encoder Accuracy (v2.0)",
+      "value": 0.9683
+    }
+  ],
+  "sources": [
+    {
+      "title": "Cagliari - Il sito ufficiale del Cagliari Calcio",
+      "url": "https://cagliaricalcio.com/",
+      "snippet": "Scopri tutte le novità, il calendario e le informazioni ufficiali sul Cagliari Calcio, una delle squadre più amate in Italia."
+    },
+    {
+      "title": "Biglietti - Cagliari",
+      "url": "https://cagliaricalcio.com/biglietti/",
+      "snippet": "Cagliari Calcio reserves the right not to accept requests submitted after the deadline. Accreditation requests must include the scout’s …"
+    },
+    {
+      "title": "Cagliari Calcio Store: match kits, apparel, gadgets",
+      "url": "https://store.cagliaricalcio.com/en/",
+      "snippet": "Buy Cagliari match shirts and official products in the online shop"
+    },
+    {
+      "title": "Cagliari Calcio Store: kit gara, abbigliamento, gadget",
+      "url": "https://store.cagliaricalcio.com/",
+      "snippet": "Acquista le maglie gara e i prodotti ufficiali del Cagliari nel negozio online"
+    },
+    {
+      "title": "Home - Cagliari Calcio - ISLANDERS",
+      "url": "https://islanders.cagliaricalcio.com/",
+      "snippet": "acquistando prodotti sullo Store Ufficiale del Cagliari Calcio; partecipando agli eventi e alle iniziative ufficiali organizzate dal Club; …"
+    }
+  ]
+}

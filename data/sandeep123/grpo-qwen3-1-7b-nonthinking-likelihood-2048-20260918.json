@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "sandeep123/grpo-qwen3-1.7b-nonthinking-likelihood-2048-20260918",
+  "slug": "sandeep123-grpo-qwen3-1-7b-nonthinking-likelihood-2048-20260918",
+  "author": "sandeep123",
+  "url": "https://huggingface.co/sandeep123/grpo-qwen3-1.7b-nonthinking-likelihood-2048-20260918",
+  "created_at": "2026-09-18T06:08:26.000Z",
+  "updated_at": "2026-09-20T20:12:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "reinforcement-learning",
+    "math",
+    "nonthinking",
+    "stride",
+    "text-generation",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:adapter:Qwen/Qwen3-1.7B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12015144944,
+  "storage_human": "12.0 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Banque en ligne - Belfius Direct Net - Belfius",
+      "url": "https://www.belfius.be/retail/fr/banque-par-vous-meme/internet-mobile/belfius-direct-net/index.aspx",
+      "snippet": "Avec Belfius Direct Net, vous gérez facilement toutes vos opérations bancaires en ligne, depuis votre PC. D'un seul coup d'œil, vous …"
+    },
+    {
+      "title": "La Banque par vous-même - Belfius Bank",
+      "url": "https://www.belfius.be/retail/fr/banque-par-vous-meme/index.aspx",
+      "snippet": "La banque où et quand vous le souhaitez, avec des solutions sur mesure: via Belfius Direct Net sur votre ordinateur, avec la …"
+    },
+    {
+      "title": "Se connecter sur Belfius Direct Net - Service clients Belfius",
+      "url": "https://www.belfius.be/webapps/fr/selfcare/belfius/belfiusdirectnet/demarrer",
+      "snippet": "Qu'avez-vous besoin pour effectuer vos transactions bancaires via internet ? Quelles cartes privées utiliser pour me connecter à …"
+    },
+    {
+      "title": "Internetbankieren - Belfius Direct Net - Belfius",
+      "url": "https://www.belfius.be/retail/nl/zelf-bankieren/internet-mobile/belfius-direct-net/index.aspx",
+      "snippet": "Met Belfius Direct Net regelt u al uw bankzaken makkelijk online via uw pc. In een oogopslag krijgt u een zicht op uw rekeningen, …"
+    },
+    {
+      "title": "Banque en ligne Belgique : Easy Banking Web | BNP Paribas Fortis",
+      "url": "https://www.bnpparibasfortis.be/fr/public/particuliers/banque-au-quotidien/paiements/easy-banking-web",
+      "snippet": "Utilisez Easy Banking Web sur votre ordinateur en toute sécurité. Envie de passer à la banque en ligne ? Munissez-vous de votre …"
+    }
+  ]
+}

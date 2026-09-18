@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "tamli/SDPose-Body",
+  "slug": "tamli-sdpose-body",
+  "author": "tamli",
+  "url": "https://huggingface.co/tamli/SDPose-Body",
+  "created_at": "2026-09-18T10:37:02.000Z",
+  "updated_at": "2026-09-18T10:37:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "keypoint-detection",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "diffusers",
+    "safetensors",
+    "pose-estimation",
+    "computer-vision",
+    "keypoint-detection",
+    "diffusion-models",
+    "stable-diffusion",
+    "out-of-distribution",
+    "human-pose",
+    "top-down-pose-estimation",
+    "coco",
+    "mmpose",
+    "en",
+    "arxiv:2509.24980",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5288174561,
+  "storage_human": "5.3 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Как вывести часы на рабочий стол в Windows 10",
+      "url": "https://lumpics.ru/how-to-display-the-clock-on-the-desktop-in-windows-10/",
+      "snippet": "Нажмите на значок в виде стрелки воспроизведения, чтобы поместить виджет на рабочий стол. На экране появятся …"
+    },
+    {
+      "title": "Как вывести часы на экран монитора в Windows 10: 5 способов",
+      "url": "https://monitorium.vercel.app/articles/k/ka/kak-ustanovit-chasy-na-ekran-monitora-kompyutera-vindovs-10.html",
+      "snippet": "В Windows 10 есть несколько способов вывести часы на рабочий стол: от встроенных инструментов до сторонних виджетов с …"
+    },
+    {
+      "title": "Цифровые часы - заставка на часы & живые обои на пк — …",
+      "url": "https://apps.microsoft.com/detail/9mxr15tjsbsl?hl=ru-RU&gl=RU",
+      "snippet": "Любите ли вы классические флип-часы или современный цифровой дизайн, это приложение оживит время с помощью …"
+    },
+    {
+      "title": "Цифровые часы — Будильник и таймер — бесплатно скачайте и установите в ...",
+      "url": "https://apps.microsoft.com/detail/9pnxv71sz79k?hl=ru-RU&gl=RU",
+      "snippet": "Настройте внешний вид часов, установите будильник или таймер, используйте обратный отсчёт и выбирайте подходящий …"
+    },
+    {
+      "title": "Лучшие бесплатные виджеты Desktop Clock для Windows 11/10",
+      "url": "https://thegadgettechworld.com/ru/pages/37501-best-free-desktop-clock-widgets-for-windows-11-10",
+      "snippet": "Итак, те, кто хочет иметь виджет часов на экране рабочего стола Windows 11/10, могут проверить инструменты, описанные в …"
+    }
+  ]
+}

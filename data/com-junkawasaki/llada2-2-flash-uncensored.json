@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "com-junkawasaki/LLaDA2.2-flash-uncensored",
+  "slug": "com-junkawasaki-llada2-2-flash-uncensored",
+  "author": "com-junkawasaki",
+  "url": "https://huggingface.co/com-junkawasaki/LLaDA2.2-flash-uncensored",
+  "created_at": "2026-09-18T11:57:29.000Z",
+  "updated_at": "2026-09-18T11:57:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llada2_moe",
+    "text-generation",
+    "dllm",
+    "diffusion",
+    "llm",
+    "text_generation",
+    "conversational",
+    "custom_code",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 102889705216,
+  "parameters_human": "102.89B",
+  "storage_bytes": 205782452128,
+  "storage_human": "205.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": ".com - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/.com",
+      "snippet": "The domain com is a top-level domain (TLD) in the Domain Name System (DNS) of the Internet. Created in the first group of Internet …"
+    },
+    {
+      "title": ".com — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/.com",
+      "snippet": "Domaine de premier niveau (TLD) du système de noms de domaines Internet, le nom de domaine .com correspond à l’abréviation de …"
+    },
+    {
+      "title": "Search - Microsoft Bing",
+      "url": "https://www.bing.com/",
+      "snippet": "Sep 20, 2006 · Search smarter with Microsoft Bing, an AI-powered search engine for finding information, exploring media, and …"
+    },
+    {
+      "title": "Societe.com : RCS, siret, siren, bilan, l'information gratuite sur les ...",
+      "url": "https://www.societe.com/",
+      "snippet": "SOCIETE.COM, service gratuit d'information sur les entreprises. Consultez les chiffres clés, l'identité, les dirigeants de toutes les …"
+    }
+  ]
+}

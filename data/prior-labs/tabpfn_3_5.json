@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Prior-Labs/tabpfn_3_5",
+  "slug": "prior-labs-tabpfn_3_5",
+  "author": "Prior-Labs",
+  "url": "https://huggingface.co/Prior-Labs/tabpfn_3_5",
+  "created_at": "2026-09-09T16:28:48.000Z",
+  "updated_at": "2026-09-09T20:05:09.000Z",
+  "license": "tabpfn-3-5-license-v1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "tabular-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "chemistry",
+    "biology",
+    "finance",
+    "legal",
+    "climate",
+    "medical",
+    "tabular-classification",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 13,
+  "downloads_30d": 2926,
+  "trending_score": 12,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2086237988,
+  "storage_human": "2.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PRIOR maladies rares",
+      "url": "https://prior-maladiesrares.fr/",
+      "snippet": "Bienvenue sur le site de PRIOR - la Plateforme d'Information et d'Orientation pour les Maladies et handicaps Rares - des Pays de la …"
+    },
+    {
+      "title": "prior - English-French Dictionary WordReference.com",
+      "url": "https://www.wordreference.com/enfr/prior",
+      "snippet": "Voir la traduction automatique de Google Translate de 'prior'. Dans d'autres langues : espagnol | italien | portugais | roumain | …"
+    },
+    {
+      "title": "Entreprise de menuiserie Le Creusot - PRIOR",
+      "url": "https://www.prior.fr/",
+      "snippet": "Installé près du Creusot, PRIOR est une entreprise spécialisée dans le domaine de la menuiserie."
+    },
+    {
+      "title": "Présentation Prior-ERHR - PRIOR maladies rares",
+      "url": "https://prior-maladiesrares.fr/presentation-priorerhr/",
+      "snippet": "Le projet PRIOR résulte de la rencontre de personnalités du monde hospitalier, administratif ou associatif intervenant dans le champ …"
+    },
+    {
+      "title": "prior - Traduction française – Linguee",
+      "url": "https://www.linguee.fr/anglais-francais/traduction/prior.html",
+      "snippet": "De très nombreux exemples de phrases traduites contenant \"prior\" – Dictionnaire français-anglais et moteur de recherche de …"
+    }
+  ]
+}

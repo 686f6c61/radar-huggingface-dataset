@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "fovi-pytorch/fovi-alexnet_a-0.5_res-64_rfmult-2_in1k",
+  "slug": "fovi-pytorch-fovi-alexnet_a-0-5_res-64_rfmult-2_in1k",
+  "author": "fovi-pytorch",
+  "url": "https://huggingface.co/fovi-pytorch/fovi-alexnet_a-0.5_res-64_rfmult-2_in1k",
+  "created_at": "2026-02-02T07:28:40.000Z",
+  "updated_at": "2026-09-18T01:20:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "fovi",
+  "languages": [],
+  "tags": [
+    "fovi",
+    "foveated-vision",
+    "computer-vision",
+    "pytorch",
+    "alexnet",
+    "imagenet",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 69332662,
+  "storage_human": "69 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "株式会社小野自動車 | あなたの街の情報屋さん。",
+      "url": "https://www.24u.jp/0977847995/",
+      "snippet": "基本情報 名称 株式会社小野自動車 住所 〒8740919 大分県別府市石垣東10-5-47 GoogleMap 電話番号 0977-84-7995 FAX 0977-84 …"
+    },
+    {
+      "title": "[EV] (有)小野自動車工場 ロータス小野 | 別府市の普通充電 ...",
+      "url": "https://www.navitime.co.jp/poi?spot=01300-19926",
+      "snippet": "電話番号 0977847995 ジャンル 普通充電 営業時間 [平日]08:30 - 17:30 [土]08:30 - 17:30 [日]08:30 - 17:30 休業日 祝日 備考 【注意】 …"
+    },
+    {
+      "title": "株式会社小野自動車のアルバイト・バイト企業情報｜【タウン ...",
+      "url": "https://townwork.net/company/112419160/?msockid=146c9d281e6c61ec095b8af01f586079",
+      "snippet": "株式会社小野自動車 事業内容 自動車整備・修理 本社所在地 8740919 大分県別府市石垣東10丁目5‐47 代表者 小野 篤志 お問い合わ …"
+    },
+    {
+      "title": "株式会社小野自動車 | 別府市の社会関連・アクセス・地図 ...",
+      "url": "https://www.navitime.co.jp/poi?spot=00011-90297727",
+      "snippet": "株式会社小野自動車は別府市にある社会関連です。住所・電話番号・営業時間・地図・アクセス情報を掲載しています。"
+    },
+    {
+      "title": "(株)小野自動車のアルバイト・バイト求人情報｜【タウンワーク ...",
+      "url": "https://townwork.net/viewjob/jobid_3305337be79452f6/?msockid=146c9d281e6c61ec095b8af01f586079",
+      "snippet": "代表者 小野 篤志 代表電話番号 0977847995 アクセス: 軽スパ別府店 ⇒最寄駅：別府大学駅より徒歩3分の好立地★ 軽スパ高城店 ⇒ …"
+    }
+  ]
+}

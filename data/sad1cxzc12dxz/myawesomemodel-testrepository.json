@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "SAD1CXZC12DXZ/MyAwesomeModel-TestRepository",
+  "slug": "sad1cxzc12dxz-myawesomemodel-testrepository",
+  "author": "SAD1CXZC12DXZ",
+  "url": "https://huggingface.co/SAD1CXZC12DXZ/MyAwesomeModel-TestRepository",
+  "created_at": "2026-09-18T11:05:12.000Z",
+  "updated_at": "2026-09-18T11:05:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.com/",
+      "snippet": "Find local businesses, view maps and get driving directions in Google Maps."
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.nl/maps?authuser=0",
+      "snippet": "Wij willen hier een beschrijving geven, maar de site die u nu bekijkt staat dit niet toe."
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://www.google.com/maps/search/?hl=nl",
+      "snippet": "Live verkeersinformatie Snel Langzaam Kaartgegevens © 2026 Google Voorwaarden 20 km ... Route Rijden Lopen"
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.com/maps/search/",
+      "snippet": "Train Nearby places Restaurants Gas stations ATMs Shopping Map details Satellite Transit lines Traffic"
+    },
+    {
+      "title": "Directions, Traffic & Transit - Google Maps",
+      "url": "https://maps.google.com/maps/dir/",
+      "snippet": "Find local businesses, view maps and get driving directions in Google Maps."
+    }
+  ]
+}

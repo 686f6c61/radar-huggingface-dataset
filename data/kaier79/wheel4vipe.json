@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "kaier79/wheel4vipe",
+  "slug": "kaier79-wheel4vipe",
+  "author": "kaier79",
+  "url": "https://huggingface.co/kaier79/wheel4vipe",
+  "created_at": "2026-09-18T11:42:31.000Z",
+  "updated_at": "2026-09-18T12:48:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 67971153,
+  "storage_human": "68 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Büsum - offene Badekur an der Nordsee - ambulante Badekur an …",
+      "url": "http://www.buesum.biz/offene-badekur.php",
+      "snippet": "Eine offene Badekur an der Nordsee ist die perfekte Kombination aus Urlaub und Gesundheit. Wir zeigen Ihnen, wie es geht und …"
+    },
+    {
+      "title": "Kuren und Gesundheitsurlaub in Büsum - Büsum an der Nordsee",
+      "url": "https://www.buesum.de/aktivitaeten/gesundheit-und-wellness/kuranwendungen",
+      "snippet": "Die angebotenen Anwendungen können auf eigene Kosten wahrgenommen werden oder du lässt dir eine ambulante Badekur von …"
+    },
+    {
+      "title": "Büsum - Nordseeheilbad Büsum an der Nordsee - Urlaub an der Küste",
+      "url": "http://haus-sarah.de/buesum.php",
+      "snippet": "Sie können in Büsum auch Urlaub und Gesundheit verbinden. Sprechen Sie noch heute mit Ihrem Arzt und Ihrer Krankenkasse und …"
+    },
+    {
+      "title": "Büsum | Rehakliniken",
+      "url": "https://www.rehakliniken.de/kurorte/buesum",
+      "snippet": "Büsum bietet ein sehr heilsames Meeresklima - nicht nur für Allergiker. Spüre die Heilkraft des Meeres bei einem Strandspaziergang, …"
+    },
+    {
+      "title": "Wellness & Gesundheit in Büsum an der Nordsee",
+      "url": "https://www.buesum.de/aktivitaeten/gesundheit-und-wellness",
+      "snippet": "Kurzurlaub mit Spa und Sauna oder Kuraufenthalt, deine Gesundheit liegt uns am Herzen."
+    }
+  ]
+}

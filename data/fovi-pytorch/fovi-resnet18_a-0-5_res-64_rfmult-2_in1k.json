@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "fovi-pytorch/fovi-resnet18_a-0.5_res-64_rfmult-2_in1k",
+  "slug": "fovi-pytorch-fovi-resnet18_a-0-5_res-64_rfmult-2_in1k",
+  "author": "fovi-pytorch",
+  "url": "https://huggingface.co/fovi-pytorch/fovi-resnet18_a-0.5_res-64_rfmult-2_in1k",
+  "created_at": "2026-08-05T23:53:45.000Z",
+  "updated_at": "2026-09-18T01:20:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "fovi",
+  "languages": [],
+  "tags": [
+    "fovi",
+    "foveated-vision",
+    "computer-vision",
+    "pytorch",
+    "resnet",
+    "imagenet",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 61,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 187143691,
+  "storage_human": "187 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dadeschools Sign In",
+      "url": "https://signin.dadeschools.net/login",
+      "snippet": "We're sorry but Dadeschools Sign In doesn't work properly without JavaScript enabled. Please enable it to continue."
+    },
+    {
+      "title": "Dadeschools.net Login",
+      "url": "https://auth.dadeschools.net/_auth/dsLogon.aspx",
+      "snippet": "System usage may be monitored and recorded. Unauthorized or inappropriate use will be subject to disciplinary action (up to and …"
+    },
+    {
+      "title": "Dadeschools.net Login",
+      "url": "https://mdcpsportal.dadeschools.net/",
+      "snippet": ""
+    },
+    {
+      "title": "Dadeschools Identity Server - Miami-Dade County Public Schools",
+      "url": "https://www3.dadeschools.net/ParentPortal",
+      "snippet": "Access to M-DCPS network resources is contingent upon appropriate use of the system, pursuant to the Network Security Standards …"
+    },
+    {
+      "title": "Log In | MyACCESS",
+      "url": "https://myaccess.myflfamilies.com/Public/login",
+      "snippet": "MyACCESS is a portal where Floridians can get and manage benefits online. This includes food assistance (SNAP) formerly food …"
+    }
+  ]
+}

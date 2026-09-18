@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "chennab28/movie-review-sentiment-classifier",
+  "slug": "chennab28-movie-review-sentiment-classifier",
+  "author": "chennab28",
+  "url": "https://huggingface.co/chennab28/movie-review-sentiment-classifier",
+  "created_at": "2026-09-18T11:34:11.000Z",
+  "updated_at": "2026-09-18T11:40:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "sentiment-analysis",
+    "movie-reviews",
+    "tiny",
+    "en",
+    "dataset:chennab28/movie-review-sentiment",
+    "base_model:google/bert_uncased_L-4_H-256_A-4",
+    "base_model:finetune:google/bert_uncased_L-4_H-256_A-4",
+    "license:apache-2.0",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11171331,
+  "parameters_human": "11.2M",
+  "storage_bytes": 62243464,
+  "storage_human": "62 MB",
+  "base_model": "google/bert_uncased_L-4_H-256_A-4",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Sentiment Analysis",
+      "dataset": "Movie Review Sentiment (Mini)",
+      "metric": "Accuracy",
+      "value": 0.9762
+    }
+  ],
+  "sources": [
+    {
+      "title": "Les députés vont-ils être privés d’alcool à la buvette de l'Assemblée ...",
+      "url": "https://www.lepoint.fr/politique/comment-les-deputes-pourraient-etre-prives-d-alcool-a-la-buvette-04-11-2025-2602405_20.php",
+      "snippet": "Nov 4, 2025 · Les députés vont-ils être privés d’alcool à la buvette de l'Assemblée nationale ? Un rapport parlementaire lève le voile …"
+    },
+    {
+      "title": "Fini l’alcool à la buvette de l’Assemblée, parfois payé avec les frais ...",
+      "url": "https://www.leparisien.fr/politique/fini-lalcool-a-la-buvette-de-lassemblee-parfois-paye-avec-les-frais-de-mandat-un-rapport-preconise-son-interdiction-04-11-2025-6MKVQYBH7FAQRIFQC5O25WVKYI.php",
+      "snippet": "Nov 4, 2025 · Les ministres et collaborateurs peuvent consommer sur place. Cela reviendrait, selon ses calculs, à 20 euros par mois …"
+    },
+    {
+      "title": "Assemblée nationale : la buvette suscite la polémique – franceinfo",
+      "url": "https://www.franceinfo.fr/politique/parlement-francais/assemblee-nationale/assemblee-nationale-la-buvette-suscite-la-polemique_7601648.html",
+      "snippet": "Nov 7, 2025 · La buvette de l'Assemblée nationale suscite le débat. Les députés y consomment alcool et repas, réglés via leurs frais …"
+    },
+    {
+      "title": "Fin du vin à la buvette ? Un député veut bannir l’alcool de l’Assemblée ...",
+      "url": "https://www.rcalaradio.com/fin-du-vin-a-la-buvette-un-depute-veut-bannir-l-alcool-de-l-assemblee-nationale",
+      "snippet": "Nov 6, 2025 · L’Assemblée nationale pourrait bientôt dire adieu à son traditionnel verre de vin. Dans un rapport remis le 31 octobre …"
+    },
+    {
+      "title": "Assemblée nationale : Les députés privés d’apéro ? Un ... - MSN",
+      "url": "https://www.msn.com/fr-fr/actualite/france/assembl%C3%A9e-nationale-les-d%C3%A9put%C3%A9s-priv%C3%A9s-d-ap%C3%A9ro-un-rapport-pr%C3%A9conise-d-interdire-l-alcool-%C3%A0-la-buvette/ar-AA1PNQok",
+      "snippet": "Un rapport parlementaire relance un vieux débat à l’ Assemblée nationale : faut-il interdire la vente d’alcool à la buvette des députés ?"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "zhijieq/End2Race",
+  "slug": "zhijieq-end2race",
+  "author": "zhijieq",
+  "url": "https://huggingface.co/zhijieq/End2Race",
+  "created_at": "2026-09-18T05:06:58.000Z",
+  "updated_at": "2026-09-21T22:09:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "end2race",
+    "feature-extraction",
+    "robotics",
+    "reinforcement-learning",
+    "autonomous-racing",
+    "f1tenth",
+    "gymnasium",
+    "pytorch",
+    "custom_code",
+    "arxiv:2509.16894",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": 850556,
+  "parameters_human": "850556",
+  "storage_bytes": 27036444,
+  "storage_human": "27 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aternos - Minecraft servers. Free. Forever. - Reddit",
+      "url": "https://www.reddit.com/r/aternos/hot/",
+      "snippet": "Aternos is the world’s largest free Minecraft server host. We want to give you the opportunity to play with your friends on your own …"
+    },
+    {
+      "title": "What is the best free Minecraft server hosting service out there?",
+      "url": "https://www.reddit.com/r/MinecraftServer/comments/yo2zqu/what_is_the_best_free_minecraft_server_hosting/",
+      "snippet": "The only good free hosting service out there would be Aternos however performance is still horrible. I know cheaper hosts that offer …"
+    },
+    {
+      "title": "Forums - Aternos Community",
+      "url": "https://board.aternos.org/",
+      "snippet": "Jul 3, 2023 · Aternos ist der größte kostenlose Minecraft-Serverhoster der Welt. Wir bieten deinen Freunden und dir die Möglichkeit …"
+    },
+    {
+      "title": "Unknown Host - General - Aternos Community",
+      "url": "https://board.aternos.org/thread/47522-unknown-host/",
+      "snippet": "Jun 16, 2020 · Good afternoon, I might need help. I've never created a server before so did my first one here. When it turned online i …"
+    },
+    {
+      "title": "Co sądzicie o Aternos - darmowa serwerownia - MPCforum.pl",
+      "url": "https://www.mpcforum.pl/topic/1610201-co-s%C4%85dzicie-o-aternos-darmowa-serwerownia/",
+      "snippet": "Apr 1, 2017 · Witam, wyguglowałem sobie darmowe serwer minecraft po czym zobaczyłem takie coś \"Aternos - Free servers.\" niby …"
+    }
+  ]
+}

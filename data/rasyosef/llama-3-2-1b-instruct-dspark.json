@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "rasyosef/Llama-3.2-1B-Instruct-DSpark",
+  "slug": "rasyosef-llama-3-2-1b-instruct-dspark",
+  "author": "rasyosef",
+  "url": "https://huggingface.co/rasyosef/Llama-3.2-1B-Instruct-DSpark",
+  "created_at": "2026-08-30T20:40:44.000Z",
+  "updated_at": "2026-09-17T23:38:46.000Z",
+  "license": "llama3.2",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "speculative-decoding",
+    "speculators",
+    "dspark",
+    "draft-model",
+    "vllm",
+    "custom_code",
+    "base_model:unsloth/Llama-3.2-1B-Instruct",
+    "base_model:finetune:unsloth/Llama-3.2-1B-Instruct",
+    "license:llama3.2",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 146,
+  "trending_score": 0,
+  "parameters": 301776001,
+  "parameters_human": "301.8M",
+  "storage_bytes": 2221523464,
+  "storage_human": "2.2 GB",
+  "base_model": "unsloth/Llama-3.2-1B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "有哪些可以替代“Wikipedia（维基百科）”查询的百科 ...",
+      "url": "https://www.zhihu.com/question/479609668/answers/updated",
+      "snippet": "有哪些可以替代“Wikipedia（维基百科）”查询的百科工具？ 因为不能用了，所以有了这个问题！ 对百度百科总体体验不也太好用，不 …"
+    },
+    {
+      "title": "bigbang一天一天的歌词、要原版歌词和中文版翻译的如 ...",
+      "url": "https://zhidao.baidu.com/question/1830391065414523220.html",
+      "snippet": "Aug 15, 2014 · BigBang 《一天一天》歌词 一天一天 离开吧 Ye the finally I realize that I'm nothing without you I was so wrong forgive …"
+    },
+    {
+      "title": "如果 Wikipedia 是一本书，它该有多厚？ - 知乎",
+      "url": "https://www.zhihu.com/question/27264726",
+      "snippet": "把 Wikipedia 打印出来的想法，在八九年前其实挺常见的。那时候的 Wikipedia 已经在世界范围内享有一定程度的知名度和认可度，限 …"
+    },
+    {
+      "title": "字节、KB、MB、GB 之间的换算关系_百度知道",
+      "url": "https://zhidao.baidu.com/question/6318898.html",
+      "snippet": "字节、KB、MB、GB 之间的换算关系数据存储以10进制表示：1B（byte，字节）= 8 bit（见下文）；1KB（Kilobyte，千字 …"
+    },
+    {
+      "title": "wikipedia中的pedia在这个词里有什么具体含义？_百度知道",
+      "url": "https://zhidao.baidu.com/question/994562419309312219.html",
+      "snippet": "wikipedia中的pedia在这个词里有什么具体含义？在Wikipedia这个广受欢迎的在线百科全书项目中，\"pedia\"一词的内涵其实源自拉丁语 …"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "zbeeb/Qwen2.5-Math-1.5B-GRPO-Staleness-6",
+  "slug": "zbeeb-qwen2-5-math-1-5b-grpo-staleness-6",
+  "author": "zbeeb",
+  "url": "https://huggingface.co/zbeeb/Qwen2.5-Math-1.5B-GRPO-Staleness-6",
+  "created_at": "2026-09-18T10:50:01.000Z",
+  "updated_at": "2026-09-18T10:50:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "grpo",
+    "math",
+    "reinforcement-learning",
+    "staleness-grpo",
+    "conversational",
+    "en",
+    "zh",
+    "dataset:zbeeb/Staleness-GRPO-DAPO-Math-17k",
+    "base_model:Qwen/Qwen2.5-Math-1.5B",
+    "base_model:finetune:Qwen/Qwen2.5-Math-1.5B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 6186317228,
+  "storage_human": "6.2 GB",
+  "base_model": "Qwen/Qwen2.5-Math-1.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sign in to GitHub · GitHub",
+      "url": "https://github.com/login",
+      "snippet": "GitHub is where people build software. More than 150 million people use GitHub to discover, fork, and contribute to over 420 million …"
+    },
+    {
+      "title": "GitHub · Change is constant. GitHub keeps you ahead. · GitHub",
+      "url": "https://github.com/",
+      "snippet": "Aug 29, 2026 · Join the world's most widely adopted, AI-powered developer platform where millions of developers, businesses, and …"
+    },
+    {
+      "title": "Download GitHub Desktop",
+      "url": "https://desktop.github.com/download/",
+      "snippet": "Simple collaboration from your desktop Download GitHub Desktop Focus on what matters instead of fighting with Git. Whether you're …"
+    },
+    {
+      "title": "About building integrations - GitHub Docs",
+      "url": "https://docs.github.com/integrations/concepts/about-building-integrations",
+      "snippet": "Integrations are tools that extend GitHub's functionality. Integrations can do things on GitHub like open issues, comment on pull …"
+    },
+    {
+      "title": "Turkish Names: Common names in Turkey(Türkçe isim listesi)",
+      "url": "https://gist.github.com/kvtoraman/f300ae077828c6940d96cd3b19181b3f",
+      "snippet": "Last active November 4, 2025 05:56 4 0 Select an option Turkish Names: Common names in Turkey (Türkçe isim listesi) Raw …"
+    }
+  ]
+}

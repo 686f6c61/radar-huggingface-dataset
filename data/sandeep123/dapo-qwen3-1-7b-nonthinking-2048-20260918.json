@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "sandeep123/dapo-qwen3-1.7b-nonthinking-2048-20260918",
+  "slug": "sandeep123-dapo-qwen3-1-7b-nonthinking-2048-20260918",
+  "author": "sandeep123",
+  "url": "https://huggingface.co/sandeep123/dapo-qwen3-1.7b-nonthinking-2048-20260918",
+  "created_at": "2026-09-18T08:27:32.000Z",
+  "updated_at": "2026-09-20T20:19:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "reinforcement-learning",
+    "math",
+    "dapo",
+    "nonthinking",
+    "text-generation",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:adapter:Qwen/Qwen3-1.7B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13221197385,
+  "storage_human": "13.2 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gidget (TV Series 1965–1966) - Full cast & crew - IMDb",
+      "url": "https://www.imdb.com/title/tt0058806/fullcredits/",
+      "snippet": "Gidget (TV Series 1965–1966) - Cast and crew credits, including actors, actresses, directors, writers and more."
+    },
+    {
+      "title": "Gidget (TV series) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Gidget_(TV_series)",
+      "snippet": "Gidget is an American sitcom television series by Screen Gems about a surfing Southern California teenager named \"Gidget\" and her …"
+    },
+    {
+      "title": "Criminal Minds (TV Series 2005– ) - Full cast & crew - IMDb",
+      "url": "https://www.imdb.com/title/tt0452046/fullcredits/",
+      "snippet": "Criminal Minds (TV Series 2005– ) - Cast and crew credits, including actors, actresses, directors, writers and more."
+    },
+    {
+      "title": "Gidget (TV Series 1965) - Cast & Crew — The Movie Database (TMDB)",
+      "url": "https://www.themoviedb.org/tv/1580-gidget/cast",
+      "snippet": "Gidget is an American sitcom about a surfing, boy-crazy teenager called \"Gidget\" and her widowed father Russ Lawrence, a UCLA …"
+    },
+    {
+      "title": "Cast - Gidget (1965 – 1966) - Kinorium",
+      "url": "https://en.kinorium.com/55254/cast/",
+      "snippet": "Cast and crew of 'Gidget' (1965-1966): roles and main characters Sally Field, Don Porter, Lynette Winter"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Supremehoye/ogu-afroxlmr",
+  "slug": "supremehoye-ogu-afroxlmr",
+  "author": "Supremehoye",
+  "url": "https://huggingface.co/Supremehoye/ogu-afroxlmr",
+  "created_at": "2026-09-18T11:55:04.000Z",
+  "updated_at": "2026-09-18T12:53:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "xlm-roberta",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278046724,
+  "parameters_human": "278.0M",
+  "storage_bytes": 1129293991,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pauschalreise Rhodos » Hotel inkl. Flug im Paket buchen | TUI",
+      "url": "https://www.tui.com/pauschalreisen/griechenland/rhodos/?msockid=29a888ad25c96825285d9f75243d6979",
+      "snippet": "Rhodos ist die viertgrößte Insel in Griechenland und die Hauptinsel des Archipels Dodekanes. Wundervolle Pauschalangebote …"
+    },
+    {
+      "title": "Rhodos Urlaub Auf die griechische Insel günstig mit alltours",
+      "url": "https://www.alltours.de/urlaub/griechenland/rhodos/",
+      "snippet": "Finden Sie mit alltours Ihr günstiges Angebot für einen Urlaub auf Rhodos und entdecken Sie die griechische Kultur. ☎ Exzellenter …"
+    },
+    {
+      "title": "Rhodos Pauschalreisen 2026 mit Flug, Hotel & Transfer",
+      "url": "https://www.urlaubsguru.de/pauschalreisen/rhodos/",
+      "snippet": "13 hours ago · Bei einer Pauschalreise nach Rhodos könnt ihr in aller Ruhe den Alltag hinter euch lassen. Ihr könnt euch auf …"
+    },
+    {
+      "title": "Pauschalreise Rhodos 2026: Sonne & Strand | Reise.de",
+      "url": "https://www.reise.de/pauschalreisen/griechenland/rhodos/",
+      "snippet": "Bei einer Pauschalreise nach Rhodos buchst du Flug, Hotel und Transfer in einem Paket und musst dich vor Ort um nichts mehr …"
+    },
+    {
+      "title": "Rhodos Urlaub günstig buchen mit Neckermann Reisen",
+      "url": "https://www.neckermann-reisen.de/urlaub/griechenland/rhodos/",
+      "snippet": "13 hours ago · Buchen Sie jetzt Ihre günstige Pauschalreise nach Rhodos mit Neckermann Reisen und profitieren Sie das ganze …"
+    }
+  ]
+}

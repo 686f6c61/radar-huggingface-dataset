@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "xw17/gemma-2-2b-it_SFT_lora_cogwear",
+  "slug": "xw17-gemma-2-2b-it_sft_lora_cogwear",
+  "author": "xw17",
+  "url": "https://huggingface.co/xw17/gemma-2-2b-it_SFT_lora_cogwear",
+  "created_at": "2026-09-04T12:17:31.000Z",
+  "updated_at": "2026-09-17T23:52:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 117525592,
+  "storage_human": "118 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Store Finder - Lidl US",
+      "url": "https://www.lidl.com/c/store-finder/s10089075",
+      "snippet": "Store Finder & Opening Hours Search by your Zip Code or City to find your nearest Lidl and start saving!"
+    },
+    {
+      "title": "Store Finder - Lidl GB",
+      "url": "https://www.lidl.co.uk/c/store-finder/s10023098",
+      "snippet": "Pop your postcode into the box and click your nearest store to see opening times and all the offers within grabbing distance. Never …"
+    },
+    {
+      "title": "LIDL - Store Locator & Hours",
+      "url": "https://www.storeopeninghours.com/retailers/lidl",
+      "snippet": "The operating hours for the Lidl stores are usually from 8 AM to 9 PM, but we advise you to first check the precise hours using our …"
+    },
+    {
+      "title": "Food, Non-food, Wine and Recipes | Lidl GB",
+      "url": "https://www.lidl.co.uk/",
+      "snippet": "Explore our range of high quality fresh food & product offers. Enjoy great prices & latest deals in store. Shop today & use your Lidl …"
+    },
+    {
+      "title": "Lidl US | Grocery Store | More to Value",
+      "url": "https://www.lidl.com/",
+      "snippet": "Lidl strives to keep all items in stock; however, items are sold continuously throughout the day and therefore may no longer be …"
+    }
+  ]
+}

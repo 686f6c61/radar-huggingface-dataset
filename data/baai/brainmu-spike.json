@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "BAAI/Brainmu-Spike",
+  "slug": "baai-brainmu-spike",
+  "author": "BAAI",
+  "url": "https://huggingface.co/BAAI/Brainmu-Spike",
+  "created_at": "2026-09-16T10:18:58.000Z",
+  "updated_at": "2026-09-16T12:56:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "spike-camera",
+    "image-reconstruction",
+    "lora",
+    "zh",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 10,
+  "downloads_30d": 833,
+  "trending_score": 10,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1287898,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BAAI/bge-m3 · Hugging Face",
+      "url": "https://huggingface.co/BAAI/bge-m3",
+      "snippet": "Papers for BAAI/bge-m3 Evaluation results mteb/BRIGHT BrightAopsRetrieval Default Standard source"
+    },
+    {
+      "title": "BAAI Innovation Center",
+      "url": "https://www.baai.ac.cn/en/about-us",
+      "snippet": "The Beijing Academy of Artificial Intelligence (abbreviated as \"BAAI\") is a non-profit new research and development institution …"
+    },
+    {
+      "title": "BAAI Innovation Center",
+      "url": "https://www.baai.ac.cn/en/",
+      "snippet": "BAAI Community A professional and international academic platform, bringing together nearly 190,000 AI practitioners, promoting the …"
+    },
+    {
+      "title": "Beijing Academy of Artificial Intelligence - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Beijing_Academy_of_Artificial_Intelligence",
+      "snippet": "As a collaborative hub, BAAI's founding members include leading AI companies, universities, and research institutes. BAAI is one of …"
+    },
+    {
+      "title": "BAAI (Beijing Academy of Artificial Intelligence) - Hugging Face",
+      "url": "https://huggingface.co/BAAI",
+      "snippet": "BAAI/IndustryInstruction_Subject-Education ... BAAI/IndustryInstruction_Law-Justice ... BAAI/IndustryInstruction_Travel-Geography …"
+    }
+  ]
+}

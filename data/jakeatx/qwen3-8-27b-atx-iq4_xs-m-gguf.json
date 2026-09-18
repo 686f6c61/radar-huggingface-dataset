@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "jakeatx/Qwen3.8-27B-ATX-IQ4_XS-M-GGUF",
+  "slug": "jakeatx-qwen3-8-27b-atx-iq4_xs-m-gguf",
+  "author": "jakeatx",
+  "url": "https://huggingface.co/jakeatx/Qwen3.8-27B-ATX-IQ4_XS-M-GGUF",
+  "created_at": "2026-09-03T14:53:21.000Z",
+  "updated_at": "2026-09-10T23:43:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "qwen3.8",
+    "rtx-3090",
+    "long-context",
+    "speculative-decoding",
+    "mtp",
+    "text-generation",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 12,
+  "downloads_30d": 3469,
+  "trending_score": 11,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 46732805216,
+  "storage_human": "46.7 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "欧冠决赛阶段的主客场两回合制的淘汰赛是怎样的规则？",
+      "url": "https://zhidao.baidu.com/question/209796540.html",
+      "snippet": "欧冠决赛阶段的主客场两回合制的淘汰赛是怎样的规则？晋级规则：双方如果在90分钟法定时间结束后打和会进入30分钟加时赛，加 …"
+    },
+    {
+      "title": "历届欧冠决赛比分 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/440795124674239244.html",
+      "snippet": "历届欧冠决赛比分历届欧冠决赛比分（截止2021年6月）：1955-1956赛季：皇家马德里4-3兰斯；1956-1957赛季：皇家马德里2-0佛罗 …"
+    },
+    {
+      "title": "2019-20赛季欧冠分组及比赛时间 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/2f9b480d7e243f01cb6cc2ef.html",
+      "snippet": "2019-20赛季欧冠分组及比赛时间,北京时间8月0日凌晨，2019-20赛季欧洲冠军联赛抽签仪式在摩纳哥举行，完整分组已经出炉。巴萨 …"
+    },
+    {
+      "title": "2023欧冠决赛直播在哪看 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/6f2f55a1145c12f4b83e6c11.html",
+      "snippet": "Jun 15, 2023 · 2023欧冠决赛直播在哪看,下面将介绍观看比赛直播的方法。"
+    },
+    {
+      "title": "欧冠的比赛会否跟球队所在国家的联赛时间上产生冲突呢？",
+      "url": "https://zhidao.baidu.com/question/129027939.html",
+      "snippet": "Dec 12, 2009 · 欧冠都是周中的比赛，本国联赛是周末的。所以欧冠不会和本国联赛时间冲突。冲突的是本国的杯赛。 今年的欧冠决赛 …"
+    }
+  ]
+}

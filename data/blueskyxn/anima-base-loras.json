@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "BlueSkyXN/Anima-base-loras",
+  "slug": "blueskyxn-anima-base-loras",
+  "author": "BlueSkyXN",
+  "url": "https://huggingface.co/BlueSkyXN/Anima-base-loras",
+  "created_at": "2026-09-15T06:55:03.000Z",
+  "updated_at": "2026-09-21T23:28:43.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "lora",
+    "anima",
+    "comfyui",
+    "not-for-all-audiences",
+    "text-to-image",
+    "base_model:circlestone-labs/Anima",
+    "base_model:adapter:circlestone-labs/Anima",
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20301267128,
+  "storage_human": "20.3 GB",
+  "base_model": "circlestone-labs/Anima",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "नींद न आए तो अपनाएं ये असरदार उपाय (नुस्खे) - CK Birla Hospital",
+      "url": "https://www.ckbhospital.com/blogs/8-tips-for-better-sleep-at-night-hindi",
+      "snippet": "Oct 14, 2025 · जानें अनिद्रा के कारण, लक्षण और गहरी नींद पाने के 8 असरदार घरेलू उपाय। गंभीर मामलों में CK Birla Hospital के …"
+    },
+    {
+      "title": "नींद न आने की समस्या: कारण और समाधान",
+      "url": "https://ckbirlahospitals.com/rbh/blog/insomnia-causes-and-solutions-in-hindi",
+      "snippet": "Apr 3, 2025 · जानिए इसके कारण, लक्षण और सबसे असरदार घरेलू व चिकित्सीय उपाय, जिससे आप गहरी और आरामदायक नींद पा सकें!"
+    },
+    {
+      "title": "नींद न आना (Insomnia) — कारण, नुकसान और अच्छी नींद के उपाय",
+      "url": "https://www.sankalphospital.com/blog/neend-na-aana-ke-karan-aur-upay",
+      "snippet": "Jul 20, 2026 · नींद न आने के सबसे आम कारण तनाव और चिंता, सोने से पहले मोबाइल-टीवी का इस्तेमाल, देर शाम चाय-कॉफी या …"
+    },
+    {
+      "title": "नींद न आना (Insomnia) – कारण, लक्षण और बेहतर नींद के उपाय",
+      "url": "https://www.fortishealthcare.com/blogs/insomnia-ke-karan-aur-upay",
+      "snippet": "Jun 1, 2026 · अनिद्रा की समस्या क्यों होती है, इसके लक्षण क्या हैं और रात को जल्दी व अच्छी नींद लाने के घरेलू व मेडिकल …"
+    },
+    {
+      "title": "किसकी कमी से नींद नहीं आती है? अगर रात को नींद ना आए तो क्या …",
+      "url": "https://ndtv.in/lifestyle/raat-ko-neend-na-aaye-to-kya-kare-which-disease-causes-symptems-and-treatment-sleeplessness-at-night-9331688",
+      "snippet": "Oct 11, 2025 · आइए जानते हैं रात में नींद खुलने के क्या कारण होते हैं और ऐसे समय में क्या करना चाहिए (Raat Me Neend Tutne …"
+    }
+  ]
+}

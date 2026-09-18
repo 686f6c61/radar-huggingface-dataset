@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Reticule/DODI_Monkey",
+  "slug": "reticule-dodi_monkey",
+  "author": "Reticule",
+  "url": "https://huggingface.co/Reticule/DODI_Monkey",
+  "created_at": "2026-09-18T11:56:01.000Z",
+  "updated_at": "2026-09-18T12:31:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 102380403170,
+  "storage_human": "102.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Définitions : réticule - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/r%c3%a9ticule/68848",
+      "snippet": "réticule - Définitions Français : Retrouvez la définition de réticule... - synonymes, homonymes, difficultés, citations."
+    },
+    {
+      "title": "Définition de réticule | Dictionnaire français",
+      "url": "https://www.lalanguefrancaise.com/dictionnaire/definition/reticule",
+      "snippet": "Apr 20, 2024 · Définition de réticule : dictionnaire, étymologie, phonétique, citations littéraires, synonymes et antonymes de « réticule »"
+    },
+    {
+      "title": "réticule — Wiktionnaire, le dictionnaire libre",
+      "url": "https://fr.wiktionary.org/wiki/r%C3%A9ticule",
+      "snippet": "réticule \\ʁe.ti.kyl\\ masculin (Vieilli) Petit sac en filet que les femmes portaient à la main. À la fin de la soirée, elle me rejoignait, son …"
+    },
+    {
+      "title": "Réticule — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/R%C3%A9ticule",
+      "snippet": "En astronomie, Réticule est le nom d'une constellation de l' hémisphère sud. En informatique, le réticule affiche à l'intersection de …"
+    },
+    {
+      "title": "réticule - Définitions, synonymes, prononciation, exemples | Dico en ...",
+      "url": "https://dictionnaire.lerobert.com/definition/reticule",
+      "snippet": "Définition, exemples et prononciation de réticule : Système de fils croisés placé dans le plan focal d…"
+    }
+  ]
+}

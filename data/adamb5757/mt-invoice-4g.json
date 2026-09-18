@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "adamb5757/mt-invoice-4g",
+  "slug": "adamb5757-mt-invoice-4g",
+  "author": "adamb5757",
+  "url": "https://huggingface.co/adamb5757/mt-invoice-4g",
+  "created_at": "2026-09-16T18:43:11.000Z",
+  "updated_at": "2026-09-17T02:45:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 37,
+  "trending_score": 0,
+  "parameters": 3836021856,
+  "parameters_human": "3.84B",
+  "storage_bytes": 9990885247,
+  "storage_human": "10.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "IP: 192.168.0.227 Anmeldeseite Benutzername Passwort",
+      "url": "https://de.ipshu.com/ip/192.168.0.227",
+      "snippet": "192.168.0.227 ist eine der häufigsten Standard-Gateway-Adressen für Router in Heim- und Kleinbüros. Die Eingabe dieser Adresse …"
+    },
+    {
+      "title": "IP: 192.168.0.227 Login Page Username Password",
+      "url": "https://en.ipshu.com/ip/192.168.0.227",
+      "snippet": "192.168.0.227 is one of the most common default gateway addresses for home- and small-office routers. Entering this address in a …"
+    },
+    {
+      "title": "192.168.0.227 Router Login (Admin) — Step-by-Step Guide [2026]",
+      "url": "https://www.freewebtools.com/192.168.0.227/",
+      "snippet": "Sep 2, 2026 · Follow these simple steps to access your router admin panel at 192.168.0.227. Make sure you are connected to the …"
+    },
+    {
+      "title": "http://192.168.0.227 Private Nutzung IP WIFI | IP-Adresse (Deutsch) …",
+      "url": "https://de.ipshu.com/ipv4/192.168.0.227",
+      "snippet": "Die IPv4-Adresse 192.168.0.227 ist eine private IP-Adresse, die häufig als Standard-Gateway in lokalen Netzwerken verwendet wird. …"
+    },
+    {
+      "title": "WG602v4 | Wireless Access Point - NETGEAR",
+      "url": "https://www.netgear.com/support/product/wg602v4",
+      "snippet": "Search for your product to find helpful downloads like manuals, firmware, and spec sheets. How do I find my model number? This …"
+    }
+  ]
+}

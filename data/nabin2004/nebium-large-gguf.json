@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "nabin2004/nebium-large-gguf",
+  "slug": "nabin2004-nebium-large-gguf",
+  "author": "nabin2004",
+  "url": "https://huggingface.co/nabin2004/nebium-large-gguf",
+  "created_at": "2026-09-18T11:26:09.000Z",
+  "updated_at": "2026-09-18T11:26:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "chess",
+    "causal-lm",
+    "gguf",
+    "llama.cpp",
+    "ollama",
+    "nebium",
+    "nebium-large",
+    "text-generation",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Télécharger et utiliser Google Traduction",
+      "url": "https://support.google.com/translate/answer/6350850?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Télécharger et utiliser Google Traduction Vous pouvez traduire du texte saisi au clavier, en écriture manuscrite, sur une photo ou …"
+    },
+    {
+      "title": "Modifier la langue dans laquelle vous utilisez les services Google sur ...",
+      "url": "https://support.google.com/accounts/answer/32047?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Vous pouvez à tout moment modifier la langue d'affichage en fonction de vos préférences. Ces instructions permettent de modifier la …"
+    },
+    {
+      "title": "Utiliser les sous-titres traduits dans Google Meet",
+      "url": "https://support.google.com/meet/answer/10964115?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Vous souhaitez bénéficier de fonctionnalités Google Workspace avancées pour votre entreprise ? Essayer Google Workspace Vous …"
+    },
+    {
+      "title": "Drive toujours en anglais malgré la configuration du français",
+      "url": "https://support.google.com/websearch/thread/206360763/drive-toujours-en-anglais-malgr%C3%A9-la-configuration-du-fran%C3%A7ais?hl=fr",
+      "snippet": "Mar 16, 2023 · J'ai bien Gmail en français, mais le reste du drive est en anglais...! J'ai pourtant mis partout (paramètres de chaque …"
+    },
+    {
+      "title": "Ajouter des sous-titres - Aide YouTube - Google Help",
+      "url": "https://support.google.com/youtube/answer/2734796?hl=fr",
+      "snippet": "Traduction automatique YouTube utilise sa technologie de reconnaissance vocale afin de créer automatiquement des sous-titres …"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "DistributedAI/102-v21",
+  "slug": "distributedai-102-v21",
+  "author": "DistributedAI",
+  "url": "https://huggingface.co/DistributedAI/102-v21",
+  "created_at": "2026-09-07T07:13:36.000Z",
+  "updated_at": "2026-09-22T04:44:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23011494640,
+  "storage_human": "23.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Twitch",
+      "url": "https://www.twitch.tv/?lang=ru-RU",
+      "snippet": "Twitch — это интерактивный сервис прямых трансляций для самого разного контента: игр, развлечений, спорта, музыки и …"
+    },
+    {
+      "title": "Все категории: Twitch",
+      "url": "https://www.twitch.tv/directory?lang=ru",
+      "snippet": "Смотрите прямые трансляции и лучшие яркие моменты в таких категориях Twitch, как «Общение», Fortnite, Counter-Strike, …"
+    },
+    {
+      "title": "Twitch",
+      "url": "https://fr.twitch.tv/",
+      "snippet": "Twitch is an interactive livestreaming service for content spanning gaming, entertainment, sports, music, and more."
+    },
+    {
+      "title": "Watch | Twitch.tv",
+      "url": "https://ru.twitch.tv/p/en/watch",
+      "snippet": "Watch esports pros, catch a live tour of Tokyo, or learn how to bake. There’s always something live and new on Twitch."
+    },
+    {
+      "title": "Twitch",
+      "url": "https://ru.twitch.tv/broadcast/dashboard",
+      "snippet": "Twitch is the world's leading video platform and community for gamers."
+    }
+  ]
+}

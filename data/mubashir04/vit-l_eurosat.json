@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "mubashir04/ViT-L_Eurosat",
+  "slug": "mubashir04-vit-l_eurosat",
+  "author": "mubashir04",
+  "url": "https://huggingface.co/mubashir04/ViT-L_Eurosat",
+  "created_at": "2026-09-18T11:17:12.000Z",
+  "updated_at": "2026-09-18T11:26:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "arxiv:2403.05419",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1213353073,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "J'accède à mon espace Finances publiques et à mes services en ligne",
+      "url": "https://www.impots.gouv.fr/particulier/jaccede-mon-espace-particulier-et-mes-services-en-ligne",
+      "snippet": "Mar 30, 2016 · Créer et accéder à mon espace Le site impots.gouv.fr vous propose des accès simplifiés pour vous connecter à votre …"
+    },
+    {
+      "title": "Particulier - impots.gouv.fr",
+      "url": "https://www.impots.gouv.fr/particulier",
+      "snippet": "Particulier Professionnel Demande d'aide de 100 € pour les travailleurs « grands rouleurs » Publié le 27 mai 2026 Vous avez jusqu'au …"
+    },
+    {
+      "title": "Déclarer mes revenus - impots.gouv.fr",
+      "url": "https://www.impots.gouv.fr/particulier/declarer-mes-revenus",
+      "snippet": "C'est ma première déclaration, que dois-je déclarer ? Je veux corriger la déclaration que j'ai déjà déposée. Comment procéder ? …"
+    },
+    {
+      "title": "Créer et accéder à mon espace - impots.gouv.fr",
+      "url": "https://www.impots.gouv.fr/particulier/acceder-mon-espace",
+      "snippet": "Jul 27, 2016 · Vous devrez créer un nouvel espace à l’aide de ce numéro fiscal, en suivant la procédure décrite plus haut. Pour vous …"
+    },
+    {
+      "title": "Payer mes impôts, taxes, amendes... - impots.gouv.fr",
+      "url": "https://www.impots.gouv.fr/particulier/payer-mes-impots-taxes",
+      "snippet": "Comment consulter mes paiements dans mon espace Finances publiques ? J’ai perdu le TIPSEPA joint à mon avis. Comment faire …"
+    }
+  ]
+}

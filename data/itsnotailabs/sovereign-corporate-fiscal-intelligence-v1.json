@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ItsnotAilabs/Sovereign-Corporate-Fiscal-Intelligence-v1",
+  "slug": "itsnotailabs-sovereign-corporate-fiscal-intelligence-v1",
+  "author": "ItsnotAilabs",
+  "url": "https://huggingface.co/ItsnotAilabs/Sovereign-Corporate-Fiscal-Intelligence-v1",
+  "created_at": "2026-09-18T04:12:07.000Z",
+  "updated_at": "2026-09-21T01:32:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "transformer",
+    "sovereign-engine",
+    "multi-head-attention",
+    "enterprise-ai",
+    "feature-extraction",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 43,
+  "trending_score": 0,
+  "parameters": 6042651,
+  "parameters_human": "6.0M",
+  "storage_bytes": 601950170,
+  "storage_human": "602 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "vgem-neustadt.ris.kommune-aktiv.de",
+      "url": "https://vgem-neustadt.ris.kommune-aktiv.de/eingang.asp",
+      "snippet": ""
+    },
+    {
+      "title": "vgem-neustadt.ris.kommune-aktiv.de",
+      "url": "https://vgem-neustadt.ris.kommune-aktiv.de/eingang.asp?cvg=ST",
+      "snippet": ""
+    },
+    {
+      "title": "www.kommune-aktiv.de",
+      "url": "https://www.kommune-aktiv.de/login/sm/internetsoftware/-/-/page",
+      "snippet": "Login-Bereich für Nutzer von Kommune-Aktiv, einer Plattform mit Softwarelösungen für die öffentliche Verwaltung."
+    },
+    {
+      "title": "Verwaltungsgemeinschaft Neustadt a.d. Waldnaab",
+      "url": "https://www.vgem-neustadt.de/",
+      "snippet": "Die fünf Gemeinden Kirchendemenreuth, Markt Parkstein, Püchersreuth, Störnstein und Theisseil haben sich 1973 zu einer …"
+    },
+    {
+      "title": "vgem-neustadt.ris.kommune-aktiv.de",
+      "url": "https://vgem-neustadt.ris.kommune-aktiv.de/seite/de/rathaus/11152/-/Bekanntmachung.html",
+      "snippet": ""
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "yangfy0627/musclemimic-checkpoints-20260903",
+  "slug": "yangfy0627-musclemimic-checkpoints-20260903",
+  "author": "yangfy0627",
+  "url": "https://huggingface.co/yangfy0627/musclemimic-checkpoints-20260903",
+  "created_at": "2026-09-05T05:22:03.000Z",
+  "updated_at": "2026-09-17T21:11:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "reinforcement-learning",
+    "musclemimic",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6013537807,
+  "storage_human": "6.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "eCAC - Centro Virtual de Atendimento",
+      "url": "https://cav.receita.fazenda.gov.br/",
+      "snippet": "eCAC - Centro Virtual de Atendimento Para cadastrar um procurador, o contribuinte pode utilizar: a opção \"Procuração Eletrônica\", …"
+    },
+    {
+      "title": "eCAC - Centro Virtual de Atendimento",
+      "url": "https://cav.receita.fazenda.gov.br/autenticacao/Login/LogoutGovBR",
+      "snippet": "Logout realizado com sucesso Para fazer um novo acesso, você pode Voltar para a página de login. Caso o acesso tenha sido feito …"
+    },
+    {
+      "title": "Extrato IRPF",
+      "url": "https://irpf.cav.receita.fazenda.gov.br/",
+      "snippet": "Extrato IRPF Carregando Meu Imposto de Renda ..."
+    },
+    {
+      "title": "Ambiente em Migração - SERPRO",
+      "url": "https://mon.cav.receita.fazenda.gov.br/",
+      "snippet": "Monitoração Clique aqui para entrar BD ECAC BD LIS/EFAU"
+    },
+    {
+      "title": "eCAC - Centro Virtual de Atendimento",
+      "url": "https://cav.receita.fazenda.gov.br/eCAC/publico/erros/ErroEcac.aspx?Cod=2043",
+      "snippet": "1 day ago · Ocorreu um erro. (Código: 2043) Prezado Usuário, a data de nascimento obtida na autenticação é divergente da …"
+    }
+  ]
+}

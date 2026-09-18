@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "sandeep123/grpo-qwen3-4b-nonthinking-likelihood-2048-20260918",
+  "slug": "sandeep123-grpo-qwen3-4b-nonthinking-likelihood-2048-20260918",
+  "author": "sandeep123",
+  "url": "https://huggingface.co/sandeep123/grpo-qwen3-4b-nonthinking-likelihood-2048-20260918",
+  "created_at": "2026-09-18T06:08:35.000Z",
+  "updated_at": "2026-09-22T02:57:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "reinforcement-learning",
+    "math",
+    "nonthinking",
+    "stride",
+    "text-generation",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:adapter:Qwen/Qwen3-4B-Instruct-2507",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 21612134868,
+  "storage_human": "21.6 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Logistique du luxe : solutions enjeux et tendances 2025",
+      "url": "https://www.topchrono.fr/logistique-luxe/",
+      "snippet": "La performance d’une supply chain de luxe tient dans sa capacité à combiner plusieurs modes de transport. Vélo cargo, utilitaire …"
+    },
+    {
+      "title": "Orchestrer l’excellence dans la Supply Chain du luxe : stratégies ...",
+      "url": "https://www.talan.com/global/fr/orchestrer-lexcellence-dans-la-supply-chain-du-luxe-strategies-prospectives-et-tendances-pour-2025",
+      "snippet": "Jun 17, 2025 · Découvrez comment les chaînes d’approvisionnement des produits de luxe peuvent gagner en agilité et transparence …"
+    },
+    {
+      "title": "Chaîne d’approvisionnement et logistique de luxe pour les marques de ...",
+      "url": "https://arvato.com/fr/a-propos-de-nous/perspectives/le-prochain-chapitre-du-luxe",
+      "snippet": "Découvrez les tendances du marché du luxe et apprenez comment les stratégies de logistique, de fulfillment et de gestion de la …"
+    },
+    {
+      "title": "Top 10 des logiciels Gestion de la chaîne logistique (SCM) 2026",
+      "url": "https://www.100jourspourentreprendre.fr/comparatif/gestion-de-la-chaine-logistique-scm/",
+      "snippet": "Ce comparatif détaillé vous révèle les solutions performantes : leurs atouts, leurs limites, pour une gestion des stocks optimale. Alors, …"
+    },
+    {
+      "title": "Solution, management et organisation de la supply chain : Les 5 …",
+      "url": "https://www.laposte.fr/entreprise-collectivites/actualites/5-piliers-solution-supply-chain-moderne-agile-responsable-votre-guide-pratique",
+      "snippet": "Aug 28, 2026 · Pour passer de la théorie à la pratique, quelques leviers essentiels permettent de structurer une solution supply …"
+    }
+  ]
+}

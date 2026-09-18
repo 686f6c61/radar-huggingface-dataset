@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "willamazon1/Qwen3.5-9B-smith-v5-gdpo-exact",
+  "slug": "willamazon1-qwen3-5-9b-smith-v5-gdpo-exact",
+  "author": "willamazon1",
+  "url": "https://huggingface.co/willamazon1/Qwen3.5-9B-smith-v5-gdpo-exact",
+  "created_at": "2026-09-18T08:20:52.000Z",
+  "updated_at": "2026-09-18T14:43:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "reinforcement-learning",
+    "gspo",
+    "agent",
+    "tool-use",
+    "text-generation",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1776192773038,
+  "storage_human": "1776.2 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Traduction",
+      "url": "https://translate.google.fr/",
+      "snippet": "Google Traduction offre un service gratuit pour traduire instantanément des mots, expressions et pages Web entre le français et plus …"
+    },
+    {
+      "title": "Google Traduction",
+      "url": "https://translate.google.fr/details",
+      "snippet": "Traduisez des textes instantanément avec Google Translate."
+    },
+    {
+      "title": "Google Traduction",
+      "url": "https://translate.google.fr/_/TranslateWebserverUi/bscframe",
+      "snippet": "Google Traduction permet de traduire des textes, images, documents et sites Web entre le français et plus de 100 langues."
+    },
+    {
+      "title": "Google Traduction",
+      "url": "https://translate.google.fr/m",
+      "snippet": "Traduire Détecter la langue → Français Accueil Google Envoyer des commentaires Confidentialité et conditions d'utilisation Accéder …"
+    }
+  ]
+}

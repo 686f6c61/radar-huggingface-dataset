@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "saeidseyfi/khattat-crnn",
+  "slug": "saeidseyfi-khattat-crnn",
+  "author": "saeidseyfi",
+  "url": "https://huggingface.co/saeidseyfi/khattat-crnn",
+  "created_at": "2026-09-18T11:48:06.000Z",
+  "updated_at": "2026-09-18T11:48:18.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": null,
+  "languages": [
+    "fa",
+    "ar",
+    "en"
+  ],
+  "tags": [
+    "ocr",
+    "handwritten",
+    "crnn",
+    "ctc",
+    "persian",
+    "arabic",
+    "image-to-text",
+    "fa",
+    "ar",
+    "en",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8937827,
+  "storage_human": "9 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google mail",
+      "url": "https://mail.google.com/mail?hl=pl",
+      "snippet": "We would like to show you a description here but the site won’t allow us."
+    },
+    {
+      "title": "Gmail - Google Accounts",
+      "url": "https://accounts.google.com/servicelogin?service=mail",
+      "snippet": "Gmail is email that’s intuitive, efficient, and useful. 15 GB of storage, less spam, and mobile access."
+    },
+    {
+      "title": "Gmail: bezpieczna, oparta na AI poczta e-mail dla wszystkich | Google ...",
+      "url": "https://workspace.google.com/intl/pl/gmail/",
+      "snippet": "Gmail, teraz z funkcjami AI od Gemini. Sprawdź, jak sprawniej pisać e-maile, odpowiadać na nie i nimi zarządzać. Poznaj …"
+    },
+    {
+      "title": "Gmail – bezpłatne miejsce na dane i poczta e-mail od Google",
+      "url": "https://www.google.pl/gmail/about/for-work/",
+      "snippet": "Gmail jest dostępny na wszystkich urządzeniach z Androidem i iOS, a także na komputerach. Bezpośrednio w skrzynce odbiorczej …"
+    },
+    {
+      "title": "Sign in - Google Accounts",
+      "url": "https://www.google.com/accounts/Login",
+      "snippet": "Not your computer? Use a private browsing window to sign in. Learn more about using Guest mode"
+    }
+  ]
+}

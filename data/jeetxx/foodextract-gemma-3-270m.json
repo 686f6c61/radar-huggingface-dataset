@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "jeetxx/FoodExtract-Gemma-3-270M",
+  "slug": "jeetxx-foodextract-gemma-3-270m",
+  "author": "jeetxx",
+  "url": "https://huggingface.co/jeetxx/FoodExtract-Gemma-3-270M",
+  "created_at": "2026-09-18T10:56:33.000Z",
+  "updated_at": "2026-09-18T10:56:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3_text",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "conversational",
+    "base_model:google/gemma-3-270m-it",
+    "base_model:finetune:google/gemma-3-270m-it",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 268098176,
+  "parameters_human": "268.1M",
+  "storage_bytes": 569613336,
+  "storage_human": "570 MB",
+  "base_model": "google/gemma-3-270m-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ich möchte, daß Mails nach dem Abruf durch Outlook auf T-online.de ...",
+      "url": "https://telekomhilft.telekom.de/conversations/e-mail/ich-m%C3%B6chte-da%C3%9F-mails-nach-dem-abruf-durch-outlook-auf-t-onlinede-automatisch-gel%C3%B6scht-werden-wie-geht-dassuchbegriff-oder-frage-eingeben/6685f5194ae73561da5ad760",
+      "snippet": "Ich habe den Abruf meiner T-Online-mails im Outlook eingestellt. Das klappt auch gut, aber ich möchte, daß nach dem Abruf durch …"
+    },
+    {
+      "title": "Wie kann ich rausfinden welche T-Online-ID (55....) zu meinem T-Online ...",
+      "url": "https://telekomhilft.telekom.de/conversations/e-mail/wie-kann-ich-rausfinden-welche-t-online-id-55-zu-meinem-t-online-mail-account-geh%C3%B6rt/668914054ae73561da8a9e62",
+      "snippet": "Ich würde gerne die Nummer herausbekommen die quasi durch meinen Alias in der T-Online-Mailadresse \"verdeckt\" wird."
+    },
+    {
+      "title": "E-Mail: So richten Sie Ihr E-Mail-Konto @t-online.de in Windows Live ...",
+      "url": "https://telekomhilft.telekom.de/conversations/telekom-hilft-news/e-mail-so-richten-sie-ihr-e-mail-konto-t-onlinede-in-windows-live-mail-ein/668646f74ae73561da002762",
+      "snippet": "Tipp: Sie nutzen Ihr E-Mail-Postfach @t-online.de auf mehreren Wegen (am PC, per Smartphone)? Dann empfehlen wir IMAP: So …"
+    },
+    {
+      "title": "t-online email-Center - Archivierung | Telekom hilft Community",
+      "url": "https://telekomhilft.telekom.de/conversations/e-mail/t-online-email-center-archivierung/6687d4d24ae73561da758ca2",
+      "snippet": "Apr 20, 2018 · Wie kann vorhandener e-mail-verkehr des e-mail centers selbst archiviert werden wie es früher möglich war, um bei …"
+    },
+    {
+      "title": "E-Mails drucken (T-Online E-Mail Center)",
+      "url": "https://telekomhilft.telekom.de/conversations/festnetz-internet/e-mails-drucken-t-online-e-mail-center/66859a4a4ae73561da50f239",
+      "snippet": "Über das neue E-Mail Center fehlt mir irgendwie die Funktion \"Drucken\".Für eine geöffnete Mail habe ich nur die Optionen …"
+    }
+  ]
+}

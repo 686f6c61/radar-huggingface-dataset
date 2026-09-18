@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "philbert440/Qwen3.8-27B-Uncensored-Cyber",
+  "slug": "philbert440-qwen3-8-27b-uncensored-cyber",
+  "author": "philbert440",
+  "url": "https://huggingface.co/philbert440/Qwen3.8-27B-Uncensored-Cyber",
+  "created_at": "2026-08-15T15:49:28.000Z",
+  "updated_at": "2026-08-19T09:41:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "uncensored",
+    "abliterated",
+    "qwen3",
+    "cyber",
+    "image-text-to-text",
+    "conversational",
+    "base_model:philbert440/Qwen3.8-27B-Uncensored-Aggressive",
+    "base_model:finetune:philbert440/Qwen3.8-27B-Uncensored-Aggressive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 18,
+  "downloads_30d": 2113,
+  "trending_score": 11,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 165023022125,
+  "storage_human": "165.0 GB",
+  "base_model": "philbert440/Qwen3.8-27B-Uncensored-Aggressive",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Drukarnia Print Extra",
+      "url": "https://www.printextra.pl/",
+      "snippet": "Kim jesteśmy NOWOCZESNA DRUKARNIA OFFSETOWA Z ŁODZI Drukarnia Print Extra to najnowocześniejszy na rynku park …"
+    },
+    {
+      "title": "Drukarnia - druk offsetowy i cyfrowy - Łódź - printextra.pl",
+      "url": "https://www.printextra.com.pl/",
+      "snippet": "Drukarnia Print Extra wychodzi naprzeciw Państwa oczekiwaniom, nieustannie powiększając swoją ofertę, dzięki czemu jest obecnie …"
+    },
+    {
+      "title": "Kontakt - Drukarnia Print Extra",
+      "url": "https://www.printextra.pl/kontakt",
+      "snippet": "Konstruktor opakowań +48 514 764 678 konstrukcje@printextra.pl Dorota Kalemba Operator DTP +48 514 764 678 …"
+    },
+    {
+      "title": "PRINT EXTRA | Łódź - Facebook",
+      "url": "https://www.facebook.com/PrintExtra/",
+      "snippet": "Aug 16, 2026 · Dlatego w Print Extra nie tylko drukujemy – przede wszystkim doradzamy. Pomagamy dobrać materiały i …"
+    },
+    {
+      "title": "Print Extra - kontakt",
+      "url": "http://printextra.com.pl/03_kontakt/03_kontakt.html",
+      "snippet": "Drukarnia Print Extra istnieje od 1992 roku. Obecnie Print Extra to nowoczesna drukarnia offsetowa z doświadczoną kadrą, która …"
+    }
+  ]
+}

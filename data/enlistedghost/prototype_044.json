@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "EnlistedGhost/Prototype_044",
+  "slug": "enlistedghost-prototype_044",
+  "author": "EnlistedGhost",
+  "url": "https://huggingface.co/EnlistedGhost/Prototype_044",
+  "created_at": "2026-09-18T07:37:54.000Z",
+  "updated_at": "2026-09-20T06:49:34.000Z",
+  "license": "mrl",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "fr",
+    "de",
+    "es",
+    "it",
+    "pt",
+    "zh",
+    "ja",
+    "ru",
+    "ko"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral3",
+    "image-text-to-text",
+    "mistral-common",
+    "Pixtral-Large",
+    "124B",
+    "Safetensors",
+    "llama.cpp",
+    "Image-Text-to-Text",
+    "Multi-Modal",
+    "Vision",
+    "2026",
+    "Inference",
+    "conversational",
+    "en",
+    "fr",
+    "de",
+    "es",
+    "it",
+    "pt",
+    "zh",
+    "ja",
+    "ru",
+    "ko",
+    "base_model:mistralai/Pixtral-Large-Instruct-2411",
+    "base_model:finetune:mistralai/Pixtral-Large-Instruct-2411",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 124134845824,
+  "parameters_human": "124.13B",
+  "storage_bytes": 496540262378,
+  "storage_human": "496.5 GB",
+  "base_model": "mistralai/Pixtral-Large-Instruct-2411",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tuscan | Arsenal Wiki | Fandom",
+      "url": "https://robloxarsenal.fandom.com/wiki/Tuscan",
+      "snippet": "Inspired by Italian architecture, Tuscan is a moderately sized urban map and is somewhat asymmetrical and symmetrical that follows …"
+    },
+    {
+      "title": "Tuscan Map Arsenal Roblox (SECRET OBBY!!!) - YouTube",
+      "url": "https://www.youtube.com/watch?v=zyFFi2XXWyE",
+      "snippet": "Feb 11, 2022 · I will be showing you where the secret obby is! In the tuscan map :DDDD"
+    },
+    {
+      "title": "(ROBLOX) Arsenal! Tuscan Map secret Obby! - YouTube",
+      "url": "https://www.youtube.com/watch?v=pjJuhneTPpc",
+      "snippet": "Jan 23, 2023 · Hi im N0B ! this is a new channel but I will be showing you the secret Obby in Arsenal, On the platform called roblox!"
+    },
+    {
+      "title": "Tuscan - Arsenal Wiki",
+      "url": "https://arsenal.miraheze.org/wiki/Tuscan",
+      "snippet": "Tuscan is a map that was added in the Showtime! update of Arsenal. It serves as the fundamental map to access the Coffee Quest."
+    },
+    {
+      "title": "Tuscan Gallery | Arsenal Wiki | Fandom",
+      "url": "https://robloxarsenal.fandom.com/wiki/Tuscan_Gallery",
+      "snippet": "When you enter the building, you first encounter this. Obby and note. A portal to another map. A Lemon. Early images from when it …"
+    }
+  ]
+}
