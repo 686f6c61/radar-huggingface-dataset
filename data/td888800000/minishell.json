@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "TD888800000/minishell",
+  "slug": "td888800000-minishell",
+  "author": "TD888800000",
+  "url": "https://huggingface.co/TD888800000/minishell",
+  "created_at": "2026-09-18T17:14:14.000Z",
+  "updated_at": "2026-09-18T17:16:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:LyliaEngine/waiIllustriousSDXL_v170",
+    "base_model:adapter:LyliaEngine/waiIllustriousSDXL_v170",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 256974130,
+  "storage_human": "257 MB",
+  "base_model": "LyliaEngine/waiIllustriousSDXL_v170",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nos magasins dans votre ville – Lunettes Pour Tous",
+      "url": "https://lunettespourtous.com/pages/nos-magasins",
+      "snippet": "Lunettes Pour tous, c'est plus de 25 magasins en France et en Belgique, avec des conseillers optique à votre écoute tous les jours."
+    },
+    {
+      "title": "Lunettes de vue en ligne tendance pour Homme & Femme",
+      "url": "https://lunettespourtous.com/",
+      "snippet": "Lunettes Pour Tous invente l’avenir de l’optique en créant de nouveaux services et en repensant l’expérience de ses clients. …"
+    },
+    {
+      "title": "Lunettes Pour Tous Marseille",
+      "url": "https://lpc.lunettespourtous.com/marseille",
+      "snippet": "Les informations collectées par ce formulaire font l’objet d’un traitement automatisé ayant pour finalité de nous permettre de répondre …"
+    },
+    {
+      "title": "Lunettes Pour Tous - Rendez-vous",
+      "url": "https://lpc.lunettespourtous.com/dyn",
+      "snippet": "Les informations collectées par ce formulaire font l’objet d’un traitement automatisé ayant pour finalité de nous permettre de répondre …"
+    },
+    {
+      "title": "Welii & LPT - SAV",
+      "url": "https://welii.lunettespourtous.com/",
+      "snippet": "Welii & LPT provides customer service and support for Lunettes Pour Tous products."
+    }
+  ]
+}

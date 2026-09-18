@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "d4rkninja/tanpo-ops",
+  "slug": "d4rkninja-tanpo-ops",
+  "author": "d4rkninja",
+  "url": "https://huggingface.co/d4rkninja/tanpo-ops",
+  "created_at": "2026-09-18T15:33:05.000Z",
+  "updated_at": "2026-09-18T17:46:35.000Z",
+  "license": "lfm-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm2",
+    "text-generation",
+    "ops",
+    "operations",
+    "conversational",
+    "tanpo",
+    "en",
+    "dataset:d4rkninja/tanpo-ops-sft",
+    "base_model:LiquidAI/LFM2.5-1.2B-Instruct",
+    "base_model:finetune:LiquidAI/LFM2.5-1.2B-Instruct",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1170340608,
+  "parameters_human": "1.17B",
+  "storage_bytes": 2340697936,
+  "storage_human": "2.3 GB",
+  "base_model": "LiquidAI/LFM2.5-1.2B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/",
+      "snippet": "Google's service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other …"
+    },
+    {
+      "title": "Google Übersetzer",
+      "url": "https://translate.google.de/",
+      "snippet": "Mit Google Übersetzer können Sie Wörter, Sätze und Webseiten kostenlos in über 100 Sprachen übersetzen."
+    },
+    {
+      "title": "DeepL Übersetzer | Der präziseste Übersetzer der Welt - DeepL Translate",
+      "url": "https://www.deepl.com/de/translator",
+      "snippet": "Übersetzen Sie Texte und ganze Dateien im Handumdrehen. Präzise Übersetzungen für Einzelnutzer und Teams. Jeden Tag nutzen …"
+    },
+    {
+      "title": "DeepL Translate: The world's most accurate translator",
+      "url": "https://www.deepl.com/en/translator",
+      "snippet": "Translate texts & full document files instantly. Accurate translations for individuals and Teams. Millions translate with DeepL every day."
+    },
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.nl/",
+      "snippet": "Deze kosteloze service van Google kan woorden, zinnen en webpagina's onmiddellijk vertalen tussen het Nederlands en meer dan …"
+    }
+  ]
+}

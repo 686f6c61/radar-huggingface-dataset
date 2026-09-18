@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ModarIbrahim/road-qwen25vl-lora-e3",
+  "slug": "modaribrahim-road-qwen25vl-lora-e3",
+  "author": "ModarIbrahim",
+  "url": "https://huggingface.co/ModarIbrahim/road-qwen25vl-lora-e3",
+  "created_at": "2026-09-18T17:17:54.000Z",
+  "updated_at": "2026-09-18T17:18:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qwen2.5-vl",
+    "ocr",
+    "handwriting",
+    "base_model:Qwen/Qwen2.5-VL-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-VL-7B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 414700592,
+  "storage_human": "415 MB",
+  "base_model": "Qwen/Qwen2.5-VL-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://de.youtube.com/",
+      "snippet": "Auf YouTube findest du großartige Videos und erstklassige Musik. Außerdem kannst du eigene Inhalte hochladen und mit Freunden …"
+    },
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/youtube",
+      "snippet": "Welcome to the official YouTube channel – a home for the biggest moments, the smallest obsessions, and everything in between. …"
+    },
+    {
+      "title": "- YouTube",
+      "url": "https://www.youtube.com/shorts",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://studio.youtube.com/",
+      "snippet": "Use a private browsing window to sign in. Learn more about using Guest mode. Share your videos with friends, family, and the world."
+    }
+  ]
+}

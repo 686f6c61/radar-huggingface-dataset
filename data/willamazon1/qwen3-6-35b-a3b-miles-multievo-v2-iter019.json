@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "willamazon1/qwen3.6-35b-a3b-miles-multievo-v2-iter019",
+  "slug": "willamazon1-qwen3-6-35b-a3b-miles-multievo-v2-iter019",
+  "author": "willamazon1",
+  "url": "https://huggingface.co/willamazon1/qwen3.6-35b-a3b-miles-multievo-v2-iter019",
+  "created_at": "2026-09-18T17:50:58.000Z",
+  "updated_at": "2026-09-18T17:54:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "reinforcement-learning",
+    "multimodal",
+    "moe",
+    "agent",
+    "conversational",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 71916587318,
+  "storage_human": "71.9 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Se connecter à Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Se connecter à Gmail Pour ouvrir Gmail, vous pouvez vous connecter à partir d'un ordinateur ou ajouter votre compte à l'application …"
+    },
+    {
+      "title": "Créer un compte Google pour Gmail",
+      "url": "https://support.google.com/mail/answer/56256?hl=fr",
+      "snippet": "Créer un compte Google Remarque : Si vous souhaitez utiliser Gmail pour votre entreprise, un compte Google Workspace vous sera …"
+    },
+    {
+      "title": "Compte gmail double authentification bloqué [Résolu] - Forum Gmail",
+      "url": "https://forums.commentcamarche.net/forum/affich-38223758-compte-gmail-double-authentification-bloque",
+      "snippet": "Aug 25, 2025 · J'aimerais récupérer un vieux compte gmail que je n'ai pas utilisé depuis plusieurs années, je me rappelle bien du mot …"
+    },
+    {
+      "title": "Retrouver mon 2e compte gmail [Résolu] - Gmail - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-32851851-retrouver-mon-2e-compte-gmail",
+      "snippet": "Dec 2, 2015 · Bonjour, Tu parles en étant directement connecté sur ton compte GMAIL, si c'est le cas je ne vois rien dans les …"
+    },
+    {
+      "title": "Créer un compte Google",
+      "url": "https://support.google.com/accounts/answer/27441?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Un compte Gmail est-il identique à un compte Google ? Vos comptes Gmail et Google sont distincts. Un compte Gmail est l'un des …"
+    }
+  ]
+}

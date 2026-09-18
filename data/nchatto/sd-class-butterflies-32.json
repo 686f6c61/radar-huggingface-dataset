@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "nchatto/sd-class-butterflies-32",
+  "slug": "nchatto-sd-class-butterflies-32",
+  "author": "nchatto",
+  "url": "https://huggingface.co/nchatto/sd-class-butterflies-32",
+  "created_at": "2026-09-18T16:32:09.000Z",
+  "updated_at": "2026-09-18T16:32:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "unconditional-image-generation",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "pytorch",
+    "unconditional-image-generation",
+    "diffusion-models-class",
+    "license:mit",
+    "diffusers:DDPMPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 18536323,
+  "parameters_human": "18.5M",
+  "storage_bytes": 74185252,
+  "storage_human": "74 MB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Make Windows+E Open This PC (Computer) In Windows 10/11",
+      "url": "https://www.intowindows.com/make-windowse-open-this-pc-computer-in-windows-10/",
+      "snippet": "Nov 29, 2023 · This new Home/Quick Access folder feature is definitely useful to quickly access frequently accessed files and folders, …"
+    },
+    {
+      "title": "Comment ouvrir l'Explorateur Windows sous Windows 11 ?",
+      "url": "https://www.win10.fr/comment-ouvrir-lexplorateur-windows-sous-windows-11",
+      "snippet": "May 30, 2024 · Que ce soit par un simple clic dans la barre des tâches, un raccourci clavier comme Windows + E, ou via des …"
+    },
+    {
+      "title": "Que fait Win + E dans Windows 10 principaux 10 ? ‒ DefKey",
+      "url": "https://defkey.com/fr/windows-10-tous-les-raccourcis-clavier/win-e-1182",
+      "snippet": "Pour les débutants: comment appuyer sur Win + E sur votre clavier ? En règle générale, vous maintenez d'abord enfoncés les …"
+    },
+    {
+      "title": "File Explorer in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/experience/fileexplorer/file-explorer-in-windows",
+      "snippet": "Find and open File Explorer in Windows, and customize Quick access by pinning and removing files and folders."
+    },
+    {
+      "title": "What Does Windows Key+E Do? - Computer Hope",
+      "url": "https://www.computerhope.com/jargon/w/windows-e.htm",
+      "snippet": "Jun 16, 2026 · While running Microsoft Windows, pressing Windows key + E opens Windows Explorer and allows to browse your …"
+    }
+  ]
+}

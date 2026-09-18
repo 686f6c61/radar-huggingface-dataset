@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "open-athena/MarinSkyRL-Open-MOPD-SmolLM3-3B-step-32",
+  "slug": "open-athena-marinskyrl-open-mopd-smollm3-3b-step-32",
+  "author": "open-athena",
+  "url": "https://huggingface.co/open-athena/MarinSkyRL-Open-MOPD-SmolLM3-3B-step-32",
+  "created_at": "2026-09-18T13:11:09.000Z",
+  "updated_at": "2026-09-18T13:21:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "smollm3",
+    "text-generation",
+    "marinskyrl",
+    "open-mopd",
+    "on-policy-distillation",
+    "step-32",
+    "conversational",
+    "dataset:BytedTsinghua-SIA/Open-MOPD-Data",
+    "arxiv:2608.19098",
+    "base_model:BytedTsinghua-SIA/Open-MOPD-SmolLM3-3B-MixSFT",
+    "base_model:finetune:BytedTsinghua-SIA/Open-MOPD-SmolLM3-3B-MixSFT",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3337766912,
+  "parameters_human": "3.34B",
+  "storage_bytes": 6692780685,
+  "storage_human": "6.7 GB",
+  "base_model": "BytedTsinghua-SIA/Open-MOPD-SmolLM3-3B-MixSFT",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Page d'accueil Open | Your high-digital place",
+      "url": "https://www.open.global/",
+      "snippet": "Construisons votre carrière Chez Open, nous ouvrons des perspectives aux talents... #Recrutez-nous !"
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "ChatGPT Business ChatGPT Enterprise ChatGPT for Education Codex Release Notes API Platform Overview API Log In Docs …"
+    },
+    {
+      "title": "Apache OpenOffice",
+      "url": "https://www.openoffice.org/fr/",
+      "snippet": "Jan 4, 2016 · Projet francophone Apache OpenOffice Ce site a pour but d'apporter outils et ressources aux francophones pour le …"
+    },
+    {
+      "title": "US Open 2026 - Tableau simple messieurs - L'Équipe",
+      "url": "https://www.lequipe.fr/Tennis/us-open/epreuve-simple-messieurs/page-tableau-tournoi",
+      "snippet": "US Open 2026 simple messieurs : retrouvez le tableau complet avec le calendrier et les résultats de tous les matches sur L'Équipe."
+    },
+    {
+      "title": "Open, Aujourd'hui. Et demain. | Open",
+      "url": "https://www.open.global/open/open-aujourdhui-demain",
+      "snippet": "Partout en France. Et plus. Chez Open, nous accompagnons nos clients en offrant un service de proximité. Ainsi, nous sommes …"
+    }
+  ]
+}

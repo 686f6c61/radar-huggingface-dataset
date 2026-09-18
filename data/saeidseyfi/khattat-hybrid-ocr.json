@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "saeidseyfi/khattat-hybrid-ocr",
+  "slug": "saeidseyfi-khattat-hybrid-ocr",
+  "author": "saeidseyfi",
+  "url": "https://huggingface.co/saeidseyfi/khattat-hybrid-ocr",
+  "created_at": "2026-09-18T13:17:32.000Z",
+  "updated_at": "2026-09-18T22:30:11.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "fa",
+    "ar",
+    "en"
+  ],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 45156620,
+  "storage_human": "45 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lapte praf Nan 3 Comfortis 1-2 ani, 800 g, Nestle - Farmacia Tei",
+      "url": "https://comenzi.farmaciatei.ro/dieta-si-wellness/formule-lapte-praf/lapte-praf-nan-3-comfortis-1-2-ani-800-g-nestle-p386317",
+      "snippet": "Aug 1, 2026 · Lapte praf Nan 3 Comfortis 1-2 ani, 800 g, Nestle contine un amestec de proteine optimizate in functie de varsta - 10%"
+    },
+    {
+      "title": "Lapte praf Nan 1 Comfortis +0 luni, 800g, Nestle",
+      "url": "https://www.drmax.ro/lapte-praf-nan-1-comfortis-incepand-de-la-nastere-800-g-nestle",
+      "snippet": "Este un lapte de start pentru sugari, cu o combinatie unica de ingrediente special concepute pentru confortul digestiv. Produsul face …"
+    },
+    {
+      "title": "Formula de lapte praf Nan 1 Comfortis, 0-6 luni, 800 g, Nestle",
+      "url": "https://www.catena.ro/formula-de-lapte-praf-nan-1-comfortis-0-6-luni-800-g-nestle",
+      "snippet": "NAN® COMFORTIS® 1 este o formula de lapte praf, de inceput, pentru sugarii sanatosi, care poate fi folosit de la nastere, atunci …"
+    },
+    {
+      "title": "Lapte praf NAN 1 Comfortis 800g, de la nastere, Nestle",
+      "url": "https://www.farmaciiledav.ro/produs/2712/nan-1-comfortis-lapte-pentru-sugari-800g-nestle",
+      "snippet": "Sep 1, 2026 · Lapte praf premium pentru sugari de la naștere. Este important să acorzi atenție confortului digestiv al puiului tău încă …"
+    },
+    {
+      "title": "Lapte praf Nan 4 Comfortis 2 ani+, 800 g, Nestle - Farmacia Tei",
+      "url": "https://comenzi.farmaciatei.ro/dieta-si-wellness/formule-lapte-praf/lapte-praf-nan-4-comfortis-2-ani-800-g-nestle-p386327",
+      "snippet": "Sep 1, 2026 · Depozitarea, manipularea, prepararea si hranirea incorecte pot avea efecte adverse asupra sanatatii copilului. Prepara …"
+    }
+  ]
+}

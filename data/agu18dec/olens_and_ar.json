@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "agu18dec/olens_and_ar",
+  "slug": "agu18dec-olens_and_ar",
+  "author": "agu18dec",
+  "url": "https://huggingface.co/agu18dec/olens_and_ar",
+  "created_at": "2026-09-18T17:21:35.000Z",
+  "updated_at": "2026-09-18T17:27:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "interpretability",
+    "activation-oracle",
+    "qwen3",
+    "base_model:Qwen/Qwen3.6-27B",
+    "base_model:finetune:Qwen/Qwen3.6-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1038980111,
+  "storage_human": "1.0 GB",
+  "base_model": "Qwen/Qwen3.6-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Login - Sign in to Yahoo",
+      "url": "https://login.yahoo.com/",
+      "snippet": "Sign in to access the best in class Yahoo Mail, breaking local, national and global news, finance, sports, music, movies... You get …"
+    },
+    {
+      "title": "Yahoo Mail | Email with smart features and top-notch security",
+      "url": "https://in.mail.yahoo.com/",
+      "snippet": "Yes, Yahoo Mail is always free to sign up for and use. We also offer a variety of optional plans with additional features, so you can …"
+    },
+    {
+      "title": "Yahoo Mail",
+      "url": "https://in.mail.yahoo.com/d",
+      "snippet": "Take a trip into an upgraded, more organised inbox. Sign in and start exploring all of the free organisational tools for your email. …"
+    },
+    {
+      "title": "Login - Sign in to Yahoo - Yahoo Mail",
+      "url": "https://mail.yahoo.com/sign",
+      "snippet": "Sign in to access the best in class Yahoo Mail, breaking local, national and global news, finance, sports, music, movies... You get …"
+    },
+    {
+      "title": "Yahoo",
+      "url": "https://www.yahoo.com/",
+      "snippet": "News, email and search are just the beginning. Discover more every day. Find your yodel."
+    }
+  ]
+}

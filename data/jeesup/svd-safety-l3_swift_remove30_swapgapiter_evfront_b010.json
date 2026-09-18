@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l3_swift_remove30_swapgapiter_evfront_b010",
+  "slug": "jeesup-svd-safety-l3_swift_remove30_swapgapiter_evfront_b010",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l3_swift_remove30_swapgapiter_evfront_b010",
+  "created_at": "2026-09-18T17:07:08.000Z",
+  "updated_at": "2026-09-22T00:26:08.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama3",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Meta-Llama-3-8B-Instruct",
+    "base_model:finetune:meta-llama/Meta-Llama-3-8B-Instruct",
+    "license:llama3",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 32138322713,
+  "storage_human": "32.1 GB",
+  "base_model": "meta-llama/Meta-Llama-3-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Informatie van de Rijksoverheid | Rijksoverheid.nl",
+      "url": "https://www.rijksoverheid.nl/",
+      "snippet": "Rijksoverheid.nl is de website van het Rijk met uitleg en nieuws over wet- en regelgeving van alle ministeries."
+    },
+    {
+      "title": "Documenten - Rijksoverheid.nl",
+      "url": "https://www.rijksoverheid.nl/documenten",
+      "snippet": "Zoek in alle documenten van de Rijksoverheid. Let op: sinds 28 april 2026 verschijnen de meeste documenten van de Rijksoverheid …"
+    },
+    {
+      "title": "Ministerie van Financiën | Rijksoverheid.nl",
+      "url": "https://www.rijksoverheid.nl/ministeries/ministerie-van-financien",
+      "snippet": "Aug 17, 2026 · Informatie over het ministerie van Financiën, zoals adresgegevens, beleidsterreinen en informatie voor de pers."
+    },
+    {
+      "title": "Ministerie van Sociale Zaken en Werkgelegenheid - Rijksoverheid.nl",
+      "url": "https://www.rijksoverheid.nl/ministeries/ministerie-van-sociale-zaken-en-werkgelegenheid",
+      "snippet": "Nov 14, 2023 · Informatie over het ministerie van SZW, zoals adresgegevens, beleidsterreinen en informatie voor de pers."
+    },
+    {
+      "title": "Verhoging afvalstoffenbelasting - Rijksoverheid.nl",
+      "url": "https://www.rijksoverheid.nl/themas/klimaat-milieu-en-natuur/afval/verhoging-afvalstoffenbelasting",
+      "snippet": "Jun 2, 2026 · Het kabinet verhoogt de afvalstoffenbelasting. Die maken het verwerken van afval duurder. Ook verhoogt het kabinet …"
+    }
+  ]
+}

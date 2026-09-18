@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "iFaz/eqm-aloha_transfer_cube-seed3-18sep2026_1pm",
+  "slug": "ifaz-eqm-aloha_transfer_cube-seed3-18sep2026_1pm",
+  "author": "iFaz",
+  "url": "https://huggingface.co/iFaz/eqm-aloha_transfer_cube-seed3-18sep2026_1pm",
+  "created_at": "2026-09-18T13:15:59.000Z",
+  "updated_at": "2026-09-18T13:43:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "imitation-learning",
+    "eqm",
+    "mujoco",
+    "pytorch_model_hub_mixin",
+    "en",
+    "dataset:lerobot/aloha_sim_transfer_cube_human",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 18701190,
+  "parameters_human": "18.7M",
+  "storage_bytes": 149660356,
+  "storage_human": "150 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bank Austria - ForumF",
+      "url": "https://forumf.at/tag/bank-austria/",
+      "snippet": "Dec 5, 2024 · Bank Austria-Studie zu Frauen und Finanzen – Finanzielle Souveränität stärken und Altersarmut entgegenwirken 22. …"
+    },
+    {
+      "title": "UniCredit Bank Austria: Angersbach wird neuer CRO - ForumF",
+      "url": "https://forumf.at/story/unicredit-bank-austria-angersbach-wird-neuer-cro/",
+      "snippet": "Apr 2, 2026 · Seine Karriere begann er 2006 bei der UniCredit Bank Austria, später war er unter anderem als CRO in mehreren …"
+    },
+    {
+      "title": "UniCredit Bank Austria fördert junge KünstlerInnen - ForumF",
+      "url": "https://forumf.at/story/unicredit-bank-austria-foerdert-junge-kuenstlerinnen/",
+      "snippet": "Feb 1, 2022 · Im Rahmen der „Bank Austria Studios“ werden junge KünstlerInnen mit einem umfangreichen Programm, einem …"
+    },
+    {
+      "title": "UniCredit Bank Austria: Svetlana Pancenko und Hélène Buffin ... - ForumF",
+      "url": "https://forumf.at/story/unicredit-bank-austria-svetlana-pancenko-und-helene-buffin-werden-zu-neuen-mitgliedern-des-vorstands-bestellt/",
+      "snippet": "Jan 12, 2024 · Svetlana Pancenko wird per 1. Februar 2024 neu als Mitglied des Vorstands der UniCredit Bank Austria für People & …"
+    },
+    {
+      "title": "UniCredit Bank Austria Konjunkturindikator | ForumF",
+      "url": "https://forumf.at/story/unicredit-bank-austria-konjunkturindikator/",
+      "snippet": "Nov 20, 2025 · Der UniCredit Bank Austria Konjunkturindikator stieg im Oktober auf minus 1,3 Punkte und erreichte damit den …"
+    }
+  ]
+}

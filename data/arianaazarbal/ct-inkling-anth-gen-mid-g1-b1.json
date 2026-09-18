@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "arianaazarbal/ct-inkling-anth-gen-mid-g1-b1",
+  "slug": "arianaazarbal-ct-inkling-anth-gen-mid-g1-b1",
+  "author": "arianaazarbal",
+  "url": "https://huggingface.co/arianaazarbal/ct-inkling-anth-gen-mid-g1-b1",
+  "created_at": "2026-09-18T18:27:15.000Z",
+  "updated_at": "2026-09-18T18:29:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "constitutional-training",
+    "iterated-constitution",
+    "family:inkling_small",
+    "seed:anthropic",
+    "method:gen",
+    "regime:mid",
+    "gen:1",
+    "branch:b1",
+    "text-generation",
+    "base_model:thinkingmachines/Inkling-Small",
+    "base_model:adapter:thinkingmachines/Inkling-Small",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16901410336,
+  "storage_human": "16.9 GB",
+  "base_model": "thinkingmachines/Inkling-Small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Get started with Google Maps",
+      "url": "https://support.google.com/maps/answer/144349?hl=en&co=GENIE.platform%3DAndroid",
+      "snippet": "This article will help you set up, learn the basics, and explain various features of Google Maps. You can use the Google Maps app on …"
+    },
+    {
+      "title": "Guida di Maps - Google Help",
+      "url": "https://support.google.com/maps/?hl=it",
+      "snippet": "Centro assistenza ufficiale di Maps in cui puoi trovare suggerimenti e tutorial sull'utilizzo del prodotto, oltre ad altre risposte alle …"
+    },
+    {
+      "title": "| Viết bởi - Tinhte.vn",
+      "url": "https://tinhte.vn/thread/6-tinh-nang-ai-vua-duoc-cap-nhat-cua-google-maps.3770081/",
+      "snippet": "Diễn đàn thảo luận về Điện thoại, Máy tính, Máy ảnh và các thiết bị Khoa học & Công nghệ."
+    },
+    {
+      "title": "[Thủ thuật] Chia sẻ chính xác một địa điểm trên Google Maps bằng …",
+      "url": "https://tinhte.vn/thread/thu-thuat-chia-se-chinh-xac-mot-dia-diem-tren-google-maps-bang-plus-codes.3144164/",
+      "snippet": "Jun 5, 2020 · Hôm nay mình chia sẻ với anh em một thủ thuật khá hay trên Google Maps, giúp anh em có thể chia sẻ chính xác một …"
+    },
+    {
+      "title": "Maps Ohjeet",
+      "url": "https://support.google.com/maps/?hl=fi",
+      "snippet": "Maps -palvelun virallinen Ohjekeskus, joka sisältää vinkkejä ja ohjeita palvelun käyttämiseen sekä vastauksia usein kysyttyihin …"
+    }
+  ]
+}

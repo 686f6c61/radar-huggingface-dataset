@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "BoldingBuilds/Ternary-Bonsai-2-27B-Abliterated-PQ2_0-MTP-GGUF",
+  "slug": "boldingbuilds-ternary-bonsai-2-27b-abliterated-pq2_0-mtp-gguf",
+  "author": "BoldingBuilds",
+  "url": "https://huggingface.co/BoldingBuilds/Ternary-Bonsai-2-27B-Abliterated-PQ2_0-MTP-GGUF",
+  "created_at": "2026-09-18T16:09:35.000Z",
+  "updated_at": "2026-09-18T23:06:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3_5",
+    "ternary",
+    "2-bit",
+    "abliterated",
+    "uncensored",
+    "mtp",
+    "speculative-decoding",
+    "text-generation",
+    "base_model:prism-ml/Ternary-Bonsai-2-27B-gguf",
+    "base_model:quantized:prism-ml/Ternary-Bonsai-2-27B-gguf",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 14,
+  "downloads_30d": 5443,
+  "trending_score": 14,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 14863658624,
+  "storage_human": "14.9 GB",
+  "base_model": "prism-ml/Ternary-Bonsai-2-27B-gguf",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Welcome to Steam",
+      "url": "https://store.steampowered.com/",
+      "snippet": "Steam is the ultimate destination for playing, discussing, and creating games."
+    },
+    {
+      "title": "Steam, The Ultimate Online Game Platform",
+      "url": "https://store.steampowered.com/about",
+      "snippet": "Steam Broadcast Stream your gameplay live with the click of a button, and share your game with friends or the rest of the community."
+    },
+    {
+      "title": "Create Your Account - Steam",
+      "url": "https://store.steampowered.com/join/completesignup",
+      "snippet": "© 2026 Valve Corporation. All rights reserved. All trademarks are property of their respective owners in the US and other countries. …"
+    },
+    {
+      "title": "Save 50% on Grand Theft Auto V Enhanced on Steam",
+      "url": "https://store.steampowered.com/app/3240220/Grand_Theft_Auto_V_Enhanced/",
+      "snippet": "Mar 4, 2025 · Experience entertainment blockbusters Grand Theft Auto V and Grand Theft Auto Online — now upgraded for a new …"
+    },
+    {
+      "title": "RuneScape: Dragonwilds on Steam",
+      "url": "https://store.steampowered.com/app/1374490/RuneScape_Dragonwilds/",
+      "snippet": "5 days ago · On RuneScape's forgotten continent of Ashenfall, dragons have awoken. Gather, build, skill and craft in this co-operative …"
+    }
+  ]
+}

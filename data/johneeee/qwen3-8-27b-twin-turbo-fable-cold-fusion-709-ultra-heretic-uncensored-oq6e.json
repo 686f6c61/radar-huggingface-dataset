@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Johneeee/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored-oQ6e",
+  "slug": "johneeee-qwen3-8-27b-twin-turbo-fable-cold-fusion-709-ultra-heretic-uncensored-oq6e",
+  "author": "Johneeee",
+  "url": "https://huggingface.co/Johneeee/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored-oQ6e",
+  "created_at": "2026-09-18T14:06:04.000Z",
+  "updated_at": "2026-09-18T14:13:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "oq",
+    "quantized",
+    "6-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 22539214872,
+  "storage_human": "22.5 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tableau fortes posologies antiinfectieux V4-022026 1",
+      "url": "https://www.antibioest.org/wp-content/files/antibioest-antibioguide-Tableau-fortes-posologies-antiinfectieux-V4-022026-1949.pdf",
+      "snippet": "Le choix d'une posologie (standard/forte) repose sur des éléments microbiologiques et cliniques. Ces posologies s’appliquent aux …"
+    },
+    {
+      "title": "Intérêt des dosages des antibiotiques, chez qui et pourquoi",
+      "url": "https://www.infectiologie.com/UserFiles/File/jra/jra-2025/dosages-atb-jra-juin2025-goutelle.pdf",
+      "snippet": "DOSAGES DES ANTIBIOTIQUES COMMENT ? Bien prescrire et réaliser les dosages Respect du délai après début/modification …"
+    },
+    {
+      "title": "Laboratoire de Pharmacologie - Toxicologie - CHRU de Tours",
+      "url": "https://www.chu-tours.fr/etre-soigne-et-rendre-visite-a-un-patient/joindre-le-chru/liste-des-services/laboratoire-de-pharmacologie-toxicologie/",
+      "snippet": "Le laboratoire de Pharmacologie-Toxicologie mesure la concentration des médicaments dans le sang et réalise des analyses …"
+    },
+    {
+      "title": "Posologie ATB_ADULTESrevCASFM_2021_CHRU Nancy2022",
+      "url": "https://www.antibioest.org/wp-content/files/2022/01/Posologie-ATB_ADULTESrevCASFM_2021_CHRU-Nancy2022-V2.pdf",
+      "snippet": "Le choix d'une posologie (standard/forte) repose sur des éléments microbiologiques et cliniques."
+    },
+    {
+      "title": "Boîte à outils Antibiotiques - OMEDIT Pays de la Loire",
+      "url": "https://www.omedit-paysdelaloire.fr/boite-a-outils/medicaments/antibiotiques/",
+      "snippet": "Feb 16, 2024 · Retrouvez la boîte à outils sur les antibiotiques de l'OMEDIT Pays de la Loire : des outils de formation et …"
+    }
+  ]
+}

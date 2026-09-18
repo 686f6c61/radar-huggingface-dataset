@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Thaurock/Qwen2.5-72B-Instruct-abliterated-GGUF",
+  "slug": "thaurock-qwen2-5-72b-instruct-abliterated-gguf",
+  "author": "Thaurock",
+  "url": "https://huggingface.co/Thaurock/Qwen2.5-72B-Instruct-abliterated-GGUF",
+  "created_at": "2026-09-18T19:40:52.000Z",
+  "updated_at": "2026-09-20T09:44:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen",
+    "qwen2.5",
+    "text-generation",
+    "abliterated",
+    "uncensored",
+    "Text Generation",
+    "Transformers",
+    "conversational",
+    "text-generation-inference",
+    "base_model:huihui-ai/Qwen2.5-72B-Instruct-abliterated",
+    "base_model:quantized:huihui-ai/Qwen2.5-72B-Instruct-abliterated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 72706203648,
+  "parameters_human": "72.71B",
+  "storage_bytes": 625663962368,
+  "storage_human": "625.7 GB",
+  "base_model": "huihui-ai/Qwen2.5-72B-Instruct-abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HolidayCheck • Dein Hotelbewertungs- und Reiseportal",
+      "url": "https://www.holidaycheck.de/",
+      "snippet": "HolidayCheck: Dein Urlaubsportal Über uns Im Januar 2000 als Freizeitprojekt gestartet, entwickelte sich HolidayCheck schnell …"
+    },
+    {
+      "title": "Dein Traumurlaub als Pauschalreise - HolidayCheck",
+      "url": "https://www.holidaycheck.de/pauschalreisen",
+      "snippet": "20 hours ago · Angebote vergleichen und Pauschalreise günstig und sicher buchen bei HolidayCheck: Entdecke Deinen Traumurlaub …"
+    },
+    {
+      "title": "Hotels Türkische Riviera • Die besten Türkische ... - HolidayCheck",
+      "url": "https://www.holidaycheck.de/dh/hotels-tuerkische-riviera/b2272a4a-632a-3d45-ac37-389c895ecc74",
+      "snippet": "TOP Hotels in Türkische Riviera ☀ Jetzt die besten & günstigsten Hotels Türkische Riviera finden Bestpreis-Garantie …"
+    },
+    {
+      "title": "Die neuesten Bewertungen auf HolidayCheck",
+      "url": "https://www.holidaycheck.de/whr/hotelbewertungen",
+      "snippet": "Die neuesten Bewertungen auf HolidayCheck Ich hatte das Hotel für 2 Nächte im Rahmen einer Rundreise in Norwegen gebucht. …"
+    },
+    {
+      "title": "Urlaub 2026: Reiseziele entdecken & Urlaub buchen - HolidayCheck",
+      "url": "https://www.holidaycheck.de/urlaub",
+      "snippet": "20 hours ago · Entdecke unsere Urlaubsangebote 2026 Günstig Urlaub buchen Reisen ohne Risiko Reiseziele weltweit …"
+    }
+  ]
+}

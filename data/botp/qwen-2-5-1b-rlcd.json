@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "botp/Qwen-2.5-1B-RLCD",
+  "slug": "botp-qwen-2-5-1b-rlcd",
+  "author": "botp",
+  "url": "https://huggingface.co/botp/Qwen-2.5-1B-RLCD",
+  "created_at": "2026-09-18T13:55:02.000Z",
+  "updated_at": "2026-09-18T13:55:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "structured-generation",
+    "parallel-decoding",
+    "constrained-decoding",
+    "apple-silicon",
+    "classification",
+    "json",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Claude",
+      "url": "https://claude.com/",
+      "snippet": "How much does it cost to use? Claude has five pricing plans available — Free, Pro, Max, Team, and Enterprise. The Free plan offers …"
+    },
+    {
+      "title": "Sign in - Claude",
+      "url": "https://claude.ai/",
+      "snippet": "Sign in to Claude, Anthropic's AI assistant for problem solvers."
+    },
+    {
+      "title": "Claude AI Free: Guest Passes, Free Trial and 12 Methods",
+      "url": "https://www.startuphub.ai/ai-news/artificial-intelligence/2026/how-to-use-claude-ai-free-2026",
+      "snippet": "Apr 22, 2026 · Is Claude AI free? Yes: a permanent free tier, a live community guest pass pool worth 7 days of Pro, and 10 more …"
+    },
+    {
+      "title": "The AI for Problem Solvers | Claude by Anthropic",
+      "url": "https://claude.com/product/overview",
+      "snippet": "Claude is the AI assistant for work. Hand off tasks, turn ideas into decks, spreadsheets and prototypes, and run scheduled tasks …"
+    },
+    {
+      "title": "Download Claude AI (free) for Windows, macOS, Android, iOS",
+      "url": "https://gizmodo.com/download/claude-ai",
+      "snippet": "1 day ago · Claude AI runs in the cloud, so it works independently of your operating system. You can access it through a web browser …"
+    }
+  ]
+}

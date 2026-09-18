@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Sbenjam1n/Chalcid",
+  "slug": "sbenjam1n-chalcid",
+  "author": "Sbenjam1n",
+  "url": "https://huggingface.co/Sbenjam1n/Chalcid",
+  "created_at": "2026-09-18T15:13:51.000Z",
+  "updated_at": "2026-09-18T15:13:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Turistička pristojba - gov.hr",
+      "url": "https://gov.hr/hr/turisticka-pristojba/1520",
+      "snippet": "Provjerite morate li tijekom boravka u turističkom gradu ili općini platiti turističku pristojbu ili ste oslobođeni te obveze. Obveza …"
+    },
+    {
+      "title": "Boravišna pristojba Hrvatska 2026: vodič po županijama | Vezpa",
+      "url": "https://vezpa.it/hr/blog/boravisna-pristojba-hrvatska/",
+      "snippet": "Apr 19, 2026 · U ovom vodiču pronaći ćete sve aktualne iznose za 2026. po hrvatskim županijama, ključne razlike, izuzeća i …"
+    },
+    {
+      "title": "Tourist tax - gov.hr",
+      "url": "https://gov.hr/en/turisticka-pristojba/1520",
+      "snippet": "Check whether you are required to pay tourist tax while staying in a certain tourist town or municipality, or if you are exempt. The …"
+    },
+    {
+      "title": "Turistička pristojba - eVisitor",
+      "url": "http://www.evisitor.hr/eVisitorWiki/Javno.Turisticka-pristojba.ashx",
+      "snippet": "Apr 5, 2022 · Osobe koje pružaju ugostiteljske usluge u domaćinstvu ili na obiteljskom poljoprivrednom gospodarstvu, oslobođene su …"
+    },
+    {
+      "title": "Zakon o turističkoj pristojbi - Zakon.hr",
+      "url": "https://www.zakon.hr/z/2071/zakon-o-turistickoj-pristojbi",
+      "snippet": "Apr 8, 2020 · Ovim se Zakonom uređuje obveza plaćanja turističke pristojbe, način utvrđivanja visine turističke pristojbe, …"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "youngjung/sd-class-butterflies-32",
+  "slug": "youngjung-sd-class-butterflies-32",
+  "author": "youngjung",
+  "url": "https://huggingface.co/youngjung/sd-class-butterflies-32",
+  "created_at": "2026-09-18T15:30:06.000Z",
+  "updated_at": "2026-09-18T15:30:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "unconditional-image-generation",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "pytorch",
+    "unconditional-image-generation",
+    "diffusion-models-class",
+    "license:mit",
+    "diffusers:DDPMPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 18536323,
+  "parameters_human": "18.5M",
+  "storage_bytes": 74185252,
+  "storage_human": "74 MB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sportschau - Sport-News, Live-Ticker, Videos, Ergebnisse und Tabellen",
+      "url": "https://www.sportschau.de/",
+      "snippet": "Bundesliga-Highlights Die Sportschau am Freitag mit Bayern gegen Union Europa League Europa LeagueFehlstart für Hoffenheim …"
+    },
+    {
+      "title": "ARD Sport: Live und Ergebnisse | Sportschau.de",
+      "url": "https://www.sportschau.de/live-und-ergebnisse",
+      "snippet": "Heute live: alle Ergebnisse, Tabellen und Ticker im Livecenter der ARD Sportschau: Fußball, Handball, Basketball und viele weitere …"
+    },
+    {
+      "title": "Sportschau - alle verfügbaren Videos - hier anschauen",
+      "url": "https://www.ardmediathek.de/sendung/sportscha/Y3JpZDovL2Rhc2Vyc3RlLmRlL3Nwb3J0c2NoYXU",
+      "snippet": "5 days ago · Favoriten-Siege und Überraschungen bei der Diamond League 05.09.2026 ∙ Sportschau ∙ Das Erste 2 Min."
+    },
+    {
+      "title": "Sport Livestreams und Highlights: alle Videos der ARD",
+      "url": "https://www.ardmediathek.de/sport/40",
+      "snippet": "Kane-Hammer bringt den Bayern den Sieg Sportschau Bundesliga ∙ Das Erste Merken 8 Min."
+    },
+    {
+      "title": "Sportschau - Tor des Monats August 2026",
+      "url": "https://www1.sportschau.de/tdm/tdm",
+      "snippet": "sportschau.de ist das Sport-Angebot der ARD im Internet und gehört zu ARD-Online. Das Angebot berichtet in Text,Bild,Audio,Video …"
+    }
+  ]
+}

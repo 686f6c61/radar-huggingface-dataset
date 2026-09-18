@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "arianaazarbal/ct-inkling-oai-gen-mid-g0-b2",
+  "slug": "arianaazarbal-ct-inkling-oai-gen-mid-g0-b2",
+  "author": "arianaazarbal",
+  "url": "https://huggingface.co/arianaazarbal/ct-inkling-oai-gen-mid-g0-b2",
+  "created_at": "2026-09-18T19:07:37.000Z",
+  "updated_at": "2026-09-18T19:09:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "constitutional-training",
+    "iterated-constitution",
+    "family:inkling_small",
+    "seed:openai",
+    "method:gen",
+    "regime:mid",
+    "gen:0",
+    "branch:b2",
+    "text-generation",
+    "base_model:thinkingmachines/Inkling-Small",
+    "base_model:adapter:thinkingmachines/Inkling-Small",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16901410336,
+  "storage_human": "16.9 GB",
+  "base_model": "thinkingmachines/Inkling-Small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "怎么找到显示适配器 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/c146541362fbf54afdfc4c2b.html",
+      "snippet": "Jan 20, 2020 · 怎么找到显示适配器,总有一些设备管理器，但是你们能够找到显示适配器吗？一起来学习一下吧。"
+    },
+    {
+      "title": "什么是CAD中的UCS，UCS怎么用？ - 百度经验",
+      "url": "https://jingyan.baidu.com/article/915fc4148d86ab51394b2080.html",
+      "snippet": "Dec 11, 2016 · 什么是CAD中的UCS，UCS怎么用,CAD软件提供了一个虚拟的二维和三维空间，这个空间需要一个基准，这个基准被 …"
+    },
+    {
+      "title": "APC鋰離子電池UPS開箱-SCL500RMI1UC - 硬件周邊 - 電腦領域 ...",
+      "url": "https://www.hkepc.com/forum/viewthread.php?fid=65&tid=2655412&page=1",
+      "snippet": "20 hours ago · 這次開箱由我購買到送到等了 17星期，現在的物流真的不行。 今次這台是 APC SCL500RMI1UC，是整個全新鋰離子 …"
+    },
+    {
+      "title": "NAS 專集 - 電腦領域 HKEPC Hardware - 全港 No.1 PC討論區",
+      "url": "https://www.hkepc.com/forum/forumdisplay.php?fid=219&page=1",
+      "snippet": "Jul 30, 2026 · 提供有關NAS（網絡附加存儲）設備的討論和資訊，為用戶解答疑問並分享經驗。"
+    },
+    {
+      "title": "怎样在word文档中简简单单输入 ‘ ’（单引号）-百度 ...",
+      "url": "https://jingyan.baidu.com/article/4e5b3e19279fed91901e24f9.html",
+      "snippet": "Jan 2, 2018 · 怎样在word文档中简简单单输入 ‘ ’（单引号）,在文档中出现双引号的时候居多，大家用“上档键”加“双引号键”可以轻松做 …"
+    }
+  ]
+}

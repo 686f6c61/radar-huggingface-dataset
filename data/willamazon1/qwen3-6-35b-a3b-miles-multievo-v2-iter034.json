@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "willamazon1/qwen3.6-35b-a3b-miles-multievo-v2-iter034",
+  "slug": "willamazon1-qwen3-6-35b-a3b-miles-multievo-v2-iter034",
+  "author": "willamazon1",
+  "url": "https://huggingface.co/willamazon1/qwen3.6-35b-a3b-miles-multievo-v2-iter034",
+  "created_at": "2026-09-18T18:20:17.000Z",
+  "updated_at": "2026-09-18T18:23:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "reinforcement-learning",
+    "multimodal",
+    "moe",
+    "agent",
+    "conversational",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 71916587318,
+  "storage_human": "71.9 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Regardez la TV en direct et en replay avec Free TV",
+      "url": "https://www.free.fr/freebox/free-tv",
+      "snippet": "Avec l'application Free TV, accédez à tous vos contenus et chaînes TV (direct, replay, streaming) sur tous vos appareils. Service …"
+    },
+    {
+      "title": "Free TV sur PC : comment regarder la TV Free sur ordinateur ?",
+      "url": "https://www.echosdunet.net/free/tv/sur-pc",
+      "snippet": "Jul 24, 2026 · Pour vous rendre sur cette interface, entrez l'adresse suivante dans votre barre de recherche : mafreebox.freebox.fr et …"
+    },
+    {
+      "title": "Freebox TV : comment regarder la TV de Free sur un ordinateur ?",
+      "url": "https://www.monpetitforfait.com/comparateur-box-internet/aides/freebox-tv-ordinateur",
+      "snippet": "Feb 19, 2020 · Les abonnés Freebox et forfait Free 5G peuvent regarder la TV de Free sur ordinateur, qu’ils soient sur PC ou Mac, …"
+    },
+    {
+      "title": "Free TV",
+      "url": "https://tv.free.fr/",
+      "snippet": "Avec l'interface Free TV, accédez facilement à un large éventail de chaînes TV en direct et à de nombreuses chaînes Replay, …"
+    },
+    {
+      "title": "Vos chaînes TV en direct et en replay désormais disponibles sur le …",
+      "url": "https://portail.free.fr/mag-free/nouveautes/vos-chaines-tv-en-direct-et-en-replay-desormais-disponibles-sur-le-web-avec-oqee-by-free/",
+      "snippet": "Feb 7, 2023 · Les abonnés Freebox peuvent maintenant accéder à toutes leurs chaînes en direct et en replay n’importe où depuis un …"
+    }
+  ]
+}

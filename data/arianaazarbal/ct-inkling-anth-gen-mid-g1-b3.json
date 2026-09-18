@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "arianaazarbal/ct-inkling-anth-gen-mid-g1-b3",
+  "slug": "arianaazarbal-ct-inkling-anth-gen-mid-g1-b3",
+  "author": "arianaazarbal",
+  "url": "https://huggingface.co/arianaazarbal/ct-inkling-anth-gen-mid-g1-b3",
+  "created_at": "2026-09-18T18:30:52.000Z",
+  "updated_at": "2026-09-18T18:32:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "constitutional-training",
+    "iterated-constitution",
+    "family:inkling_small",
+    "seed:anthropic",
+    "method:gen",
+    "regime:mid",
+    "gen:1",
+    "branch:b3",
+    "text-generation",
+    "base_model:thinkingmachines/Inkling-Small",
+    "base_model:adapter:thinkingmachines/Inkling-Small",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16901410336,
+  "storage_human": "16.9 GB",
+  "base_model": "thinkingmachines/Inkling-Small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "About Marie Regal | The Kingdom of Regal",
+      "url": "http://www.marieregal.com/lite/about",
+      "snippet": "Selain pasar dalam negeri, Marie Regal juga tersebar hingga mancanegara. Dan telah mendapatkan beberapa penghargaan di …"
+    },
+    {
+      "title": "Welcome to Marie Regal | The Kingdom of Regal",
+      "url": "http://marieregal.com/main",
+      "snippet": "Di biskuit Marie Regal, kami hanya menggunakan tepung terigu, gula, susu, mentega, minyak sayur, telur, pengembang dan garam …"
+    },
+    {
+      "title": "Profil CV Jaya Abadi (Marie Regal Biscuit) - arest.web.id",
+      "url": "https://arest.web.id/content/cv-jaya-abadi",
+      "snippet": "Berdiri pada tahun 1952, CV Jaya Abadi adalah perusahaan atau badan usaha yang memproduksi dan menaungi jenama biskuit …"
+    },
+    {
+      "title": "CV.Jaya Abadi (Regal Biscuits - Gulfood 2026",
+      "url": "https://www.gulfood.com/exhibitors/cvjaya-abadi-regal-biscuits-1",
+      "snippet": "Our consumers enjoy Marie Regal biscuits in many different ways: with milk, tea, coffee or by itself. In Indonesia, mothers feed their …"
+    },
+    {
+      "title": "CV Jaya Abadi (Marie Regal Biscuit) - Glints",
+      "url": "https://glints.com/id/companies/cv-jaya-abadi-marie-regal-biscuit/f73fb9bc-3e37-4d5e-aa6e-0fcdb936b5a3",
+      "snippet": "Cek informasi profil, gaji, dan karir CV Jaya Abadi (Marie Regal Biscuit) terbaru 2026. Cek juga peluang kerja dan internship CV Jaya …"
+    }
+  ]
+}

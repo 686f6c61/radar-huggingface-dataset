@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "arianaazarbal/ct-qwen36-35b-anth-gen-postcot-g0-b3",
+  "slug": "arianaazarbal-ct-qwen36-35b-anth-gen-postcot-g0-b3",
+  "author": "arianaazarbal",
+  "url": "https://huggingface.co/arianaazarbal/ct-qwen36-35b-anth-gen-postcot-g0-b3",
+  "created_at": "2026-09-18T17:59:52.000Z",
+  "updated_at": "2026-09-18T18:01:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "constitutional-training",
+    "iterated-constitution",
+    "family:qwen36_35b",
+    "seed:anthropic",
+    "method:gen",
+    "regime:post_cot",
+    "gen:0",
+    "branch:b3",
+    "text-generation",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:adapter:Qwen/Qwen3.6-35B-A3B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4491829400,
+  "storage_human": "4.5 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Introitus - Progressive Rock Music Forum - Progarchives.com",
+      "url": "https://www.progarchives.com/forum/forum_posts.asp?TID=81168",
+      "snippet": "Sep 21, 2011 · Introitus are a band from Sweden steeped in the neo-progressive tradition. I am of the opinion that their 2011 release …"
+    },
+    {
+      "title": "INTROITUS discography and reviews - Progarchives.com",
+      "url": "https://www.progarchives.com/artist.asp?id=5788",
+      "snippet": "Introitus themselves have given it a shot, and \"Anima\" has turned out to be a smashing success and a rock solid musical experience. …"
+    },
+    {
+      "title": "INTROITUS Shadows reviews - Progarchives.com",
+      "url": "https://www.progarchives.com/album-reviews.asp?id=62079",
+      "snippet": "Introitus started as a more fixed project in mid 2000 although the first album Fantasy is music from before that. Fantasy was released …"
+    },
+    {
+      "title": "INTROITUS Elements reviews - Progarchives.com",
+      "url": "https://www.progarchives.com/album.asp?id=32774",
+      "snippet": "Introitus sophmore release saw this terrific swedish band sounding even more symphonic than their debut (2007´s very good …"
+    },
+    {
+      "title": "INTROITUS Shadows reviews - Progarchives.com",
+      "url": "https://www.progarchives.com/album.asp?id=62079",
+      "snippet": "Shadows is a music studio album recording by INTROITUS (Neo-Prog/Progressive Rock) released in 2019 on cd, lp / vinyl and/or …"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "autinnn/lemonade-grpo-run4",
+  "slug": "autinnn-lemonade-grpo-run4",
+  "author": "autinnn",
+  "url": "https://huggingface.co/autinnn/lemonade-grpo-run4",
+  "created_at": "2026-09-18T14:09:37.000Z",
+  "updated_at": "2026-09-18T14:09:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen3.5-0.8B",
+    "grpo",
+    "lora",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 71135549,
+  "storage_human": "71 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google AdSense - Earn Money from Your Website with Monetization",
+      "url": "https://adsense.google.com/start/",
+      "snippet": "Start earning money from your website through ad and content monetization. Learn how to start using AdSense for your website today."
+    },
+    {
+      "title": "Google AdSense - ウェブサイトを収益化",
+      "url": "https://adsense.google.com/intl/ja_jp/start/",
+      "snippet": "広告とコンテンツの収益化によって、ウェブサイトで収益を獲得しましょう。ウェブサイト向けに AdSense の利用をすぐに開始す …"
+    },
+    {
+      "title": "Google AdMob - Earn More With Mobile App Monetization",
+      "url": "https://admob.google.com/home/",
+      "snippet": "Utilize Admob’s mobile app monetization technology to generate revenue through in-app ads & discover other actionable insights to …"
+    },
+    {
+      "title": "AdSense にログイン - Google AdSense ヘルプ",
+      "url": "https://support.google.com/adsense/answer/10190?hl=ja",
+      "snippet": "注: 最新の Google AdSense の利用規約に同意されていない場合、ログイン時に同意するよう求められます。利用規約をお読みいた …"
+    },
+    {
+      "title": "Как создать аккаунт AdSense - Cправка - Google AdSense",
+      "url": "https://support.google.com/adsense/answer/7402253?hl=ru",
+      "snippet": "Вы можете создать аккаунт AdSense, если у вас есть: Аккаунт Google для работы с Gmail или другим сервисом Google. При …"
+    }
+  ]
+}

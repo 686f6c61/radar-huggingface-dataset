@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "mradermacher/BudgieScribe-Mini-fr-next-GGUF",
+  "slug": "mradermacher-budgiescribe-mini-fr-next-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/BudgieScribe-Mini-fr-next-GGUF",
+  "created_at": "2026-09-18T19:02:19.000Z",
+  "updated_at": "2026-09-18T19:17:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:flowcorp-ch/BudgieScribe-Mini-fr-next",
+    "base_model:quantized:flowcorp-ch/BudgieScribe-Mini-fr-next",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 15959965056,
+  "storage_human": "16.0 GB",
+  "base_model": "flowcorp-ch/BudgieScribe-Mini-fr-next",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Porn Videos - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/",
+      "snippet": "XVideos.com is a free hosting service for porn videos. We convert your files to various formats. You can grab our 'embed code' to …"
+    },
+    {
+      "title": "Free Porn Videos & Sex Movies - Porno, XXX, Porn Tube | Pornhub",
+      "url": "https://www.pornhub.com/",
+      "snippet": "Enjoy the largest amateur porn community on the net as well as full-length scenes from the top XXX studios. We update our porn …"
+    },
+    {
+      "title": "Best Free Porn Videos",
+      "url": "https://onlybestporn.com/",
+      "snippet": "Scroll through the best porn videos out there! No matter your tastes, you'll love every single video in this site. Find new fetishes and …"
+    },
+    {
+      "title": "Pornicom - Tube porno HD & vidéos de sexe XXX",
+      "url": "https://fr.pornicom.com/",
+      "snippet": "Profitez de milliers de vidéos pour adultes explicites en HD & 4K gratuitement. Diffusez de nouveaux clips XXX en ligne, regardez du …"
+    },
+    {
+      "title": "Le meilleur du PORNO Français trié par catégories | xFrenchies.com",
+      "url": "https://xfrenchies.com/categories/",
+      "snippet": "xFrenchies te fait découvrir le meilleur du PORNO Français pour ton plus grand plaisir, du streaming sexe HD et du porno francais …"
+    }
+  ]
+}

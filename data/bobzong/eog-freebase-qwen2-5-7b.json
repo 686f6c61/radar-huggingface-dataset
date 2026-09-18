@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Bobzong/EoG-freebase-qwen2.5-7b",
+  "slug": "bobzong-eog-freebase-qwen2-5-7b",
+  "author": "Bobzong",
+  "url": "https://huggingface.co/Bobzong/EoG-freebase-qwen2.5-7b",
+  "created_at": "2026-09-18T12:07:55.000Z",
+  "updated_at": "2026-09-18T12:09:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242694044,
+  "storage_human": "15.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "E.ON Abrechnung für Strom und Erdgas ganz einfach",
+      "url": "https://www.eon.de/de/pk/service/stromrechnung.html",
+      "snippet": "Hier finden Sie alle Details zu Ihren Zahlungen, Ihrem Verbrauch und Ihren Energiekosten für den angegebenen …"
+    },
+    {
+      "title": "Mein E.ON Login",
+      "url": "https://www.eon.de/de/meineon/start.html",
+      "snippet": "Rechnungen anzeigen: Wählen Sie den Menüpunkt „Rechnung“, um alle bisherigen und die aktuelle Rechnung einzusehen. Tipp: Mit …"
+    },
+    {
+      "title": "E.ON Kundenservice – immer für Sie da",
+      "url": "https://www.eon.de/de/pk/service.html",
+      "snippet": "Deine Jahresrechnung erstellen wir, sobald uns alle für die Abrechnung notwendigen Daten vorliegen. Die erste Rechnung kommt …"
+    },
+    {
+      "title": "Rechnung | E.ON",
+      "url": "https://www.eon.de/de/pk/service/kontakt/email/rechnung.html",
+      "snippet": "Haben Sie Fragen zu Ihrer E.ON Rechnung? Senden Sie uns Ihr Anliegen zur Abrechnung einfach online über das Kontaktformular."
+    },
+    {
+      "title": "Ihr Kontakt zum E.ON Kundenservice",
+      "url": "https://www.eon.de/de/pk/service/kontakt.html",
+      "snippet": "Ihre Rechnung erklärt Sie möchten Ihre Rechnung besser verstehen? Auf unserer Ratgeberseite klicken Sie sich durch die …"
+    }
+  ]
+}

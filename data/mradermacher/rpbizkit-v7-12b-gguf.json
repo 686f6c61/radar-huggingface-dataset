@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "mradermacher/RPBizkit-v7-12B-GGUF",
+  "slug": "mradermacher-rpbizkit-v7-12b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/RPBizkit-v7-12B-GGUF",
+  "created_at": "2026-09-18T16:36:54.000Z",
+  "updated_at": "2026-09-18T17:09:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "not-for-all-audiences",
+    "en",
+    "base_model:RicardoEstep/RPBizkit-v7-12B",
+    "base_model:quantized:RicardoEstep/RPBizkit-v7-12B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 12247782400,
+  "parameters_human": "12.25B",
+  "storage_bytes": 84692323840,
+  "storage_human": "84.7 GB",
+  "base_model": "RicardoEstep/RPBizkit-v7-12B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Conforama : meuble, cuisine, électroménager, décoration",
+      "url": "https://www.conforama.fr/",
+      "snippet": "Conforama, c’est un catalogue de plus de 800 000 produits pour la maison : mobilier au meilleur prix, ameublement en promotion, …"
+    },
+    {
+      "title": "Canapé cuir - Conforama",
+      "url": "https://www.conforama.fr/canape-salon-sejour/canape/canape-cuir/c/020114",
+      "snippet": "Chez Conforama, vous avez le choix pour que votre canapé cuir s’accorde parfaitement à votre décoration d’intérieur. Détails et …"
+    },
+    {
+      "title": "Soldes Conforama : jusqu’à -50 % sur toute la maison",
+      "url": "https://blog.conforama.fr/soldes-conforama/",
+      "snippet": "Jan 8, 2026 · L’hiver commence fort chez Conforama ! Du 7 janvier au 3 février 2026, c’est le grand retour des soldes… et cette …"
+    },
+    {
+      "title": "Gros électroménager | Conforama",
+      "url": "https://www.conforama.fr/gros-electromenager/c/07",
+      "snippet": "Tout l'univers du gros électroménager pas cher chez Conforama : Réfrigérateurs, lave-linge, lave-vaisselle, fours, cuisinière. Large …"
+    },
+    {
+      "title": "Canapé (canapés d'angle, convertible, en cuir) | Conforama",
+      "url": "https://www.conforama.fr/canape-salon-sejour/canape/tous-les-canapes/c/020117",
+      "snippet": "Canapé droit, d'angle ou convertible, en tissu ou en cuir, du 2 au 5 places. Prix accessibles, livraison rapide, retrait en magasin."
+    }
+  ]
+}

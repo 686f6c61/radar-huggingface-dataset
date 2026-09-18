@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ishikaa/acquisition_student_random_medmcqa_qwen7b_1000",
+  "slug": "ishikaa-acquisition_student_random_medmcqa_qwen7b_1000",
+  "author": "ishikaa",
+  "url": "https://huggingface.co/ishikaa/acquisition_student_random_medmcqa_qwen7b_1000",
+  "created_at": "2026-09-18T16:49:40.000Z",
+  "updated_at": "2026-09-18T16:51:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "trl",
+    "sft",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242693760,
+  "storage_human": "15.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JUNGE FREIHEIT Die unabhängige Wochenzeitung für Debatte",
+      "url": "https://jungefreiheit.de/",
+      "snippet": "Wochenzeitung für Debatte - Nachrichten, Hintergründe und starke Meinungen"
+    },
+    {
+      "title": "Deutschland - JUNGE FREIHEIT",
+      "url": "https://jungefreiheit.de/kategorie/politik/deutschland/",
+      "snippet": "1 day ago · Der JUNGEN FREIHEIT liegt der Bescheid zu einer Beschwerde gegen fünf Richter vor. Der Antragsteller sieht darin ein …"
+    },
+    {
+      "title": "Aktuelle JF - JUNGE FREIHEIT",
+      "url": "https://jungefreiheit.de/aktuelle-jf/",
+      "snippet": "Jetzt sofort die aktuelle JF lesen Stets Mittwochabend die JF als E-Paper und via App Alle Artikel auf JF online frei Frei mitdiskutieren …"
+    },
+    {
+      "title": "Leserdienst - JUNGE FREIHEIT",
+      "url": "https://jungefreiheit.de/service/leserdienst/",
+      "snippet": "Oder möchten Sie uns neue Leser empfehlen, uns Änderungen Ihrer Kontodaten oder Ihre Bankverbindung nennen?"
+    },
+    {
+      "title": "Politik - JUNGE FREIHEIT",
+      "url": "https://jungefreiheit.de/kategorie/politik/",
+      "snippet": "1 day ago · Der JUNGEN FREIHEIT liegt der Bescheid zu einer Beschwerde gegen fünf Richter vor. Der Antragsteller sieht darin ein …"
+    }
+  ]
+}

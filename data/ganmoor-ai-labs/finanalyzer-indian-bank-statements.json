@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "ganmoor-ai-labs/finanalyzer-indian-bank-statements",
+  "slug": "ganmoor-ai-labs-finanalyzer-indian-bank-statements",
+  "author": "ganmoor-ai-labs",
+  "url": "https://huggingface.co/ganmoor-ai-labs/finanalyzer-indian-bank-statements",
+  "created_at": "2026-09-18T18:16:21.000Z",
+  "updated_at": "2026-09-19T04:22:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "hi"
+  ],
+  "tags": [
+    "gguf",
+    "bank-statement",
+    "document-extraction",
+    "structured-extraction",
+    "json",
+    "finance",
+    "india",
+    "personal-finance",
+    "offline",
+    "on-device",
+    "qwen3",
+    "lora",
+    "text-generation",
+    "en",
+    "hi",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:adapter:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2031739904,
+  "parameters_human": "2.03B",
+  "storage_bytes": 8060120960,
+  "storage_human": "8.1 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ThinkPad T14 Gen 5 (14″ AMD) Laptop - Lenovo",
+      "url": "https://www.lenovo.com/us/en/p/laptops/thinkpad/thinkpadt/lenovo-thinkpad-t14-gen-5-14-inch-amd/len101t0102?msockid=377d7328eaa3611e01a064f0eb8d6093",
+      "snippet": "Explore amazing computing and power efficiency on the go with the 14″ ThinkPad T14 Gen 5 laptop, fueled by the AMD Ryzen™ …"
+    },
+    {
+      "title": "Lenovo - ThinkPad T14 Gen 5 14\" Touch - Screen Laptop - AMD Ryzen …",
+      "url": "https://www.bestbuy.com/product/lenovo-thinkpad-t14-gen-5-14-touch-screen-laptop-amd-ryzen-5-pro-with-32gb-memory-512gb-ssd-gray/JJGSQ59CZ6",
+      "snippet": "Shop Lenovo ThinkPad T14 Gen 5 14\" Touch Screen Laptop AMD Ryzen 5 PRO with 32GB Memory 512GB SSD Gray products at …"
+    },
+    {
+      "title": "ThinkPad T14 Gen 5 (14″ AMD) Laptop - Lenovo",
+      "url": "https://www.lenovo.com/us/outletus/en/p/laptops/thinkpad/thinkpadt/lenovo-thinkpad-t14-gen-5-14-inch-amd/len101t0102?msockid=377d7328eaa3611e01a064f0eb8d6093",
+      "snippet": "Discover the epitome of performance with AI capabilities on the 14” Lenovo ThinkPad T14 Gen 5 laptop, designed for the modern …"
+    },
+    {
+      "title": "Lenovo ThinkPad T14 AMD G5, AMD Ryzen 5 PRO 8540U (3.20GHz",
+      "url": "https://www.amazon.com/Lenovo-ThinkPad-Ryzen-3-20GHz-Windows/dp/B0D78QLSK7",
+      "snippet": "ThinkPad T14 Gen 5 (AMD) - AMD - AMD Ryzen 5 - 8540U - 3.2GHz - 14Inch - 10-Point Multi-Touch - 1920 x 1200 - DDR5 - 32GB …"
+    },
+    {
+      "title": "21MC000JUS - Lenovo NB TP T14 AMD G5 R5_PRO 16G 512G 11P",
+      "url": "https://www.aztekcomputers.com/21mc000jus-t14-amd-pro-16g-512g-11p-lenovo/p",
+      "snippet": "Lenovo - 21MC000JUS - NB TP T14 AMD G5 R5_PRO 16G 512G 11P - In Stock. $1,826 · In stock · same-day shipping from Aztek …"
+    }
+  ]
+}

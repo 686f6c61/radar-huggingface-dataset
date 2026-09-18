@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "arianaazarbal/ct-qwen36-35b-anth-gen-postcot-g0-b1",
+  "slug": "arianaazarbal-ct-qwen36-35b-anth-gen-postcot-g0-b1",
+  "author": "arianaazarbal",
+  "url": "https://huggingface.co/arianaazarbal/ct-qwen36-35b-anth-gen-postcot-g0-b1",
+  "created_at": "2026-09-18T17:57:06.000Z",
+  "updated_at": "2026-09-18T17:58:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "constitutional-training",
+    "iterated-constitution",
+    "family:qwen36_35b",
+    "seed:anthropic",
+    "method:gen",
+    "regime:post_cot",
+    "gen:0",
+    "branch:b1",
+    "text-generation",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:adapter:Qwen/Qwen3.6-35B-A3B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4491829400,
+  "storage_human": "4.5 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Traduction",
+      "url": "https://translate.google.com/?hl=fr",
+      "snippet": "Le service sans frais de Google traduit instantanément des mots, des expressions et des pages Web entre le français et plus de 100 …"
+    },
+    {
+      "title": "Google Traduction : un interprète personnel sur votre téléphone ou ...",
+      "url": "https://translate.google.com/intl/fr/about/",
+      "snippet": "Découvrez comment traduire du texte, des conversations, des images, des documents, des sites Web et bien plus avec Google …"
+    },
+    {
+      "title": "Google Traduction : un interprète personnel sur votre téléphone ou ...",
+      "url": "https://translate.google.com/intl/fr-CA/about/",
+      "snippet": "Comprenez votre monde et communiquez dans plusieurs langues avec Google Traduction. Traduisez des textes, des discours, des …"
+    }
+  ]
+}

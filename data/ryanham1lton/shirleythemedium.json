@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/ShirleyTheMedium",
+  "slug": "ryanham1lton-shirleythemedium",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/ShirleyTheMedium",
+  "created_at": "2026-09-18T15:57:27.000Z",
+  "updated_at": "2026-09-18T15:59:52.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 198727691,
+  "storage_human": "199 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Météo à Dinant - IRM - KMI",
+      "url": "https://www.meteo.be/fr/dinant",
+      "snippet": "La météo à Dinant. Sélectionnez votre ville préférée pour des prévisions horaires jusqu’à 48h et journalières à 14 jours."
+    },
+    {
+      "title": "Météo Dinant 14 jours - Meteored France - Tameteo.com",
+      "url": "https://www.tameteo.com/meteo_Dinant-Europe-Belgique-Namur--1-183672.html",
+      "snippet": "Météo Dinant - Prévisions météorologiques à 14 jours. Les données sur la météo: température, pluie/neige, vent, humidité, …"
+    },
+    {
+      "title": "Meteo Dinant - Belgique (Wallonie) : Prévisions Meteo GRATUITE à 15 ...",
+      "url": "https://www.lachainemeteo.be/meteo-belgique/ville-71544/previsions-meteo-dinant-aujourdhui",
+      "snippet": "Les températures fluctueront entre 11 et 19°C au cours de la journée. La fiabilité de la situation est très bonne. Eclaircies, mais …"
+    },
+    {
+      "title": "Météo Dinant – Aujourd'hui et prévisions à 14 jours",
+      "url": "https://www.meteobelgique.be/previsions-meteo-belgique/5500/dinant",
+      "snippet": "Météo Dinant aujourd'hui : températures, vent et risque de pluie en détail. Consultez les prévisions sur 14 jours, le radar et la …"
+    },
+    {
+      "title": "METEO Dinant - Météo-France",
+      "url": "https://meteofrance.com/meteo-monde/dinant/2799357",
+      "snippet": "Jan 9, 2026 · METEO FRANCE - Retrouvez les prévisions METEO DINANT de Météo-France pour aujourd’hui, demain et jusqu’à 15 …"
+    }
+  ]
+}

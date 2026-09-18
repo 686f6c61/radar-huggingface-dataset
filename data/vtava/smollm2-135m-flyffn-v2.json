@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "vtava/SmolLM2-135M-FlyFFN-v2",
+  "slug": "vtava-smollm2-135m-flyffn-v2",
+  "author": "vtava",
+  "url": "https://huggingface.co/vtava/SmolLM2-135M-FlyFFN-v2",
+  "created_at": "2026-09-18T12:14:40.000Z",
+  "updated_at": "2026-09-18T12:35:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "smollm2",
+    "flywire",
+    "flyffn",
+    "sparse-ffn",
+    "connectomics",
+    "experimental",
+    "en",
+    "de",
+    "base_model:HuggingFaceTB/SmolLM2-135M",
+    "base_model:finetune:HuggingFaceTB/SmolLM2-135M",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 135852352,
+  "parameters_human": "135.9M",
+  "storage_bytes": 439109815,
+  "storage_human": "439 MB",
+  "base_model": "HuggingFaceTB/SmolLM2-135M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Motorcycle Jackets | Men's, Women's & Youth Sized Riding Jackets - RevZilla",
+      "url": "https://www.revzilla.com/motorcycle-jackets-vests?msockid=325a46a96ef66407274e51716f1c6549",
+      "snippet": "Our collection includes a variety of men's and women's motorcycle jackets tailored to meet the needs of discerning riders, offering …"
+    },
+    {
+      "title": "Motorcycle Jackets | Riding Jackets With Armor - Cycle Gear",
+      "url": "https://www.cyclegear.com/motorcycle-jackets?msockid=325a46a96ef66407274e51716f1c6549",
+      "snippet": "From classic styles to modern materials, our selection of motorcycle jackets offers something for every type of rider. Find your next …"
+    },
+    {
+      "title": "Motorcycle Jackets, Jackets for Motorbike on Offer - Outletmoto.eu",
+      "url": "https://www.outletmoto.eu/en/motorcycle-jackets-C121.htm",
+      "snippet": "Discover a wide selection of motorcycle jackets and vests for sale in our online store, all with the highest quality at outlet prices, get …"
+    },
+    {
+      "title": "Motorcycle Jackets: Leather, Textile, Racing & Adventure",
+      "url": "https://www.alpinestars.com/collections/moto-jackets",
+      "snippet": "Choose from lightweight, leather, and summer jackets designed to offer optimal protection and comfort. Find the ideal jacket to suit …"
+    },
+    {
+      "title": "Motorcycle jackets – shop online for a stylish and safe ride",
+      "url": "https://www.fc-moto.com/en-en/c/motorcycle-clothing/men-s-motorcycle-clothing/motorcycle-jackets/",
+      "snippet": "Buy motorcycle jackets online at best price at FC-Moto great range top brands ☆ lightning-fast shipping Order from the shop now!"
+    }
+  ]
+}

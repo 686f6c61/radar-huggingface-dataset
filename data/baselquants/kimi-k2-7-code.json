@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "baselquants/Kimi-K2.7-Code",
+  "slug": "baselquants-kimi-k2-7-code",
+  "author": "baselquants",
+  "url": "https://huggingface.co/baselquants/Kimi-K2.7-Code",
+  "created_at": "2026-09-18T19:29:58.000Z",
+  "updated_at": "2026-09-18T19:29:59.000Z",
+  "license": "modified-mit",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "kimi_k25",
+    "feature-extraction",
+    "compressed-tensors",
+    "image-text-to-text",
+    "conversational",
+    "custom_code",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1026879376368,
+  "parameters_human": "1026.88B",
+  "storage_bytes": 595204651032,
+  "storage_human": "595.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Daily Horoscopes - Astrology Answers",
+      "url": "https://www.astrologyanswers.com/horoscopes/",
+      "snippet": "Each day includes unique surprises and revelations, so make sure you visit regularly to read your zodiac sign’s daily horoscope. …"
+    },
+    {
+      "title": "Read Your Daily Horoscope! | Astrology Answers",
+      "url": "https://www.astrologyanswers.com/",
+      "snippet": "Read Astrology Answers' online daily horoscopes for your zodiac sign, Tarot readings, article content, Chinese astrology, …"
+    },
+    {
+      "title": "为什么我和 Gemini 用中文对话，她总是频繁用下面那些词让我非常生 …",
+      "url": "https://www.zhihu.com/question/2076723520709583786",
+      "snippet": "Aug 28, 2026 · Gemini是谷歌推出的多模态AI基座模型，深度整合谷歌生态，具备领先的多模态处理能力，支持百万级token长文本 …"
+    },
+    {
+      "title": "谷歌在 I/O 大会上推出的科研版模型 Gemini for Science，有哪些信息 …",
+      "url": "https://www.zhihu.com/question/2040268935455404167",
+      "snippet": "感谢知乎科技官方邀请我回答” Gemini for Science有哪些信息值得关注 “，身为一个小透明有些受宠若惊。 因为新闻稿信息有限，我去 …"
+    },
+    {
+      "title": "NLP 大模型与 CV 大模型的 “大”：同源而殊途的技术范式-云社区-华为云",
+      "url": "https://bbs.huaweicloud.com/blogs/455174",
+      "snippet": "Jun 27, 2025 · 随着多模态大模型（如 GPT-4V、Gemini）的发展，两者正走向技术融合 —— 例如，用语言模型的逻辑推理能力增强 …"
+    }
+  ]
+}

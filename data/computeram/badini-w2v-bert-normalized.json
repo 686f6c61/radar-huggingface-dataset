@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "computeram/badini-w2v-bert-normalized",
+  "slug": "computeram-badini-w2v-bert-normalized",
+  "author": "computeram",
+  "url": "https://huggingface.co/computeram/badini-w2v-bert-normalized",
+  "created_at": "2026-09-18T19:30:21.000Z",
+  "updated_at": "2026-09-18T19:46:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "kmr"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "wav2vec2-bert",
+    "automatic-speech-recognition",
+    "kurdish",
+    "badini",
+    "kurmanji",
+    "low-resource",
+    "kmr",
+    "base_model:facebook/w2v-bert-2.0",
+    "base_model:finetune:facebook/w2v-bert-2.0",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 605750150,
+  "parameters_human": "605.8M",
+  "storage_bytes": 2423105760,
+  "storage_human": "2.4 GB",
+  "base_model": "facebook/w2v-bert-2.0",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.gr/index.html",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=el-gr",
+      "snippet": "Το Google προσφέρεται σε: English Διαφήμιση Σχετικά με τη Google Google.com in English"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com.nf/webhp?gl=nf&hl=en&gws_rd=cr&pws=0",
+      "snippet": "Advertising Business Solutions About Google Google.com © 2026 - Privacy - Terms"
+    },
+    {
+      "title": "Sign in - Google Accounts",
+      "url": "https://accounts.google.com/",
+      "snippet": "Not your computer? Use a private browsing window to sign in. Learn more about using Guest mode Next Create account"
+    },
+    {
+      "title": "Λήψη και εγκατάσταση του Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95346?hl=el&co=GENIE.Platform%3DDesktop",
+      "snippet": "Λήψη και εγκατάσταση του Google Chrome Μπορείτε να κατεβάσετε και να εγκαταστήσετε το πρόγραμμα περιήγησης στον ιστό …"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "boods/FrMedQA-CrossLingual-TestRun-DAPT",
+  "slug": "boods-frmedqa-crosslingual-testrun-dapt",
+  "author": "boods",
+  "url": "https://huggingface.co/boods/FrMedQA-CrossLingual-TestRun-DAPT",
+  "created_at": "2026-09-18T18:31:30.000Z",
+  "updated_at": "2026-09-18T18:31:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen3",
+    "trl",
+    "en",
+    "base_model:unsloth/Qwen3-14B-unsloth-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen3-14B-unsloth-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 268400254,
+  "storage_human": "268 MB",
+  "base_model": "unsloth/Qwen3-14B-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BYTOM",
+      "url": "https://bytom.com.pl/",
+      "snippet": "Odkryj wyjątkowe promocje w BYTOM Outlet - dodatkowe rabaty przy zakupie minimum dwóch sztuk!"
+    },
+    {
+      "title": "Elegancka odzież męska | Bytom",
+      "url": "https://bytom.com.pl/c-odziez",
+      "snippet": "Elegancka odzież męska Eleganckie ubrania męskie – codzienna garderoba w stylowym wydaniu W świecie mody, gdzie elegancja …"
+    },
+    {
+      "title": "Swetry męskie | Bytom",
+      "url": "https://bytom.com.pl/c-swetry",
+      "snippet": "Swetry męskie – wyznacznik stylu i elegancji W dziedzinie mody męskiej, swetry odgrywają ważną rolę. Są one nie tylko …"
+    },
+    {
+      "title": "BYTOM",
+      "url": "https://bytom.com.pl/salony-stacjonarne",
+      "snippet": "Znajdź najbliższy salon stacjonarny BYTOM i skorzystaj z dodatkowych rabatów na zakup ubrań przy zakupie dwóch lub więcej sztuk."
+    },
+    {
+      "title": "Kurtki męskie. Eleganckie modele na każdy sezon | Bytom",
+      "url": "https://bytom.com.pl/c-kurtki",
+      "snippet": "Kurtki męskie – klasyczne i eleganckie modele Kurtki męskie to idealny element garderoby dla osób, które pragną zachować …"
+    }
+  ]
+}

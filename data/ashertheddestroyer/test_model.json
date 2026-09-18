@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "asherTheDDestroyer/Test_model",
+  "slug": "ashertheddestroyer-test_model",
+  "author": "asherTheDDestroyer",
+  "url": "https://huggingface.co/asherTheDDestroyer/Test_model",
+  "created_at": "2026-09-18T19:56:37.000Z",
+  "updated_at": "2026-09-18T19:56:37.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Zanussi Egypt",
+      "url": "https://www.zanussi.com.eg/ar/",
+      "snippet": "Welcome to our website."
+    },
+    {
+      "title": "Zanussi Home, Kitchen & Electrical Appliances | Zanussi Egypt",
+      "url": "https://www.zanussi.com.eg/en/home",
+      "snippet": "Discover all Zanussi home appliances from washing machines, cookers, dishwashers with modern Italian technology at the best …"
+    },
+    {
+      "title": "Zanussi : تسوق اونلاين بأفضل الاسعار في مصر- سوق.كوم الان اصبحت امازون",
+      "url": "https://www.amazon.eg/zanussi/s?k=zanussi",
+      "snippet": "48-1 من 186 نتائج لـ \"zanussi\" النتائج تحقّق من صفحة كل منتج من أجل خيارات الشراء الأخرى."
+    },
+    {
+      "title": "Zanussi - Zanussi.com",
+      "url": "https://www.zanussi.com/",
+      "snippet": "Welcome to Zanussi Please select your country to continue to the website."
+    },
+    {
+      "title": "كل اجهزة زانوسي المنزلية بأفضل اسعار و بالتقسيط من رنين.كوم",
+      "url": "https://www.raneen.com/ar/appliances/zanussi",
+      "snippet": "اجهزة منزلية زانوسي اكتشف اكبر تشكيلة من رنين.كوم بأقوي المواصفات , عروض وتخفيضات علي جميع الأجهزة المنزلية و بـ التقسيط - ضمان وجودة , التوصيل سريع .. تسوق من رنين"
+    }
+  ]
+}

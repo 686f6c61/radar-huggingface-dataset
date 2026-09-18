@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "mradermacher/LFM2.5-8B-A1B-Hermes-Agentic-Coder-Abliterated-v2-GGUF",
+  "slug": "mradermacher-lfm2-5-8b-a1b-hermes-agentic-coder-abliterated-v2-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/LFM2.5-8B-A1B-Hermes-Agentic-Coder-Abliterated-v2-GGUF",
+  "created_at": "2026-09-18T16:25:01.000Z",
+  "updated_at": "2026-09-19T05:00:38.000Z",
+  "license": "liquid-foundation-model-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "duo-neural",
+    "agentic",
+    "coding",
+    "function-calling",
+    "hermes",
+    "liquid-foundation-model",
+    "moe",
+    "abliterated",
+    "code",
+    "evalplus",
+    "reasoning",
+    "system2",
+    "en",
+    "base_model:DuoNeural/LFM2.5-8B-A1B-Hermes-Agentic-Coder-Abliterated-v2",
+    "base_model:quantized:DuoNeural/LFM2.5-8B-A1B-Hermes-Agentic-Coder-Abliterated-v2",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8467856832,
+  "parameters_human": "8.47B",
+  "storage_bytes": 74938873344,
+  "storage_human": "74.9 GB",
+  "base_model": "DuoNeural/LFM2.5-8B-A1B-Hermes-Agentic-Coder-Abliterated-v2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "10 MIGLIORI ristoranti Locarno - Elenco di settembre 2026 - Tripadvisor",
+      "url": "https://it.tripadvisor.ch/Restaurants-g188094-Locarno_Lake_Maggiore_Canton_of_Ticino_Swiss_Alps.html",
+      "snippet": "Su Tripadvisor trovi 13'016 recensioni di 133 ristoranti a Locarno raggruppati per tipo di cucina, prezzo e altro."
+    },
+    {
+      "title": "Locarno: 10 migliori ristoranti locali (AGGIORNAMENTO 2026) - Tripadvisor",
+      "url": "https://www.tripadvisor.it/Restaurants-g188094-zft10613-Locarno_Lake_Maggiore_Canton_of_Ticino_Swiss_Alps.html",
+      "snippet": "Locarno: ecco i migliori ristoranti locali Locarno: cerca le recensioni Tripadvisor dei posti preferiti filtrando per prezzo, località e tanto …"
+    },
+    {
+      "title": "THE 10 BEST Restaurants in Locarno (Updated September 2026) - Tripadvisor",
+      "url": "https://www.tripadvisor.com/Restaurants-g188094-Locarno_Lake_Maggiore_Canton_of_Ticino_Swiss_Alps.html",
+      "snippet": "Reserve a table for THE BEST dining in Locarno, Lake Maggiore on Tripadvisor: See 13,016 reviews of 133 Locarno restaurants and …"
+    },
+    {
+      "title": "I MIGLIORI 10 ristoranti vicino a Ristorante Locanda Locarnese",
+      "url": "https://www.tripadvisor.it/RestaurantsNear-g188094-d2292167-Ristorante_Locanda_Locarnese-Locarno_Lake_Maggiore_Canton_of_Ticino_Swiss_Alps.html",
+      "snippet": "Ristoranti vicino a Ristorante Locanda Locarnese su Tripadvisor: vedi 12.884 recensioni e foto autentiche di ristoranti vicino a …"
+    },
+    {
+      "title": "Ristorante Locanda Locarnese - Tripadvisor",
+      "url": "https://www.tripadvisor.com/Restaurant_Review-g188094-d2292167-Reviews-Ristorante_Locanda_Locarnese-Locarno_Lake_Maggiore_Canton_of_Ticino_Swiss_Alps.html",
+      "snippet": "Ristorante Locanda Locarnese, Locarno: See 423 unbiased reviews of Ristorante Locanda Locarnese, rated 4.7 of 5 on Tripadvisor …"
+    }
+  ]
+}

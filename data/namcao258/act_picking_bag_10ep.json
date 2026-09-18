@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "namcao258/act_picking_bag_10ep",
+  "slug": "namcao258-act_picking_bag_10ep",
+  "author": "namcao258",
+  "url": "https://huggingface.co/namcao258/act_picking_bag_10ep",
+  "created_at": "2026-09-18T12:33:05.000Z",
+  "updated_at": "2026-09-18T12:33:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:namcao258/picking_bag_20260918_161853",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51685006,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206786216,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Roblox",
+      "url": "https://www.roblox.com/",
+      "snippet": "Roblox is the ultimate virtual universe that lets you create, share experiences with friends, and be anything you can imagine. Join …"
+    },
+    {
+      "title": "Log in to Roblox",
+      "url": "https://www.roblox.com/Login",
+      "snippet": "©2026 Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered …"
+    },
+    {
+      "title": "Roblox - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.roblox.client&hl=en-US",
+      "snippet": "Roblox is home to every kind of game, for every kind of player. Compete in high-octane racing games, battle it out in hardcore tactical …"
+    },
+    {
+      "title": "About Roblox | Roblox",
+      "url": "https://about.roblox.com/",
+      "snippet": "Roblox is a global platform where millions of people gather together every day to imagine, create, and share experiences with each …"
+    },
+    {
+      "title": "Roblox - Windows - Windows'ta ücretsiz indir ve yürüt | Microsoft Store",
+      "url": "https://apps.microsoft.com/detail/9pmf91n3lz3m?hl=tr-TR&gl=TR",
+      "snippet": "ÜCRETSİZ OYNA Roblox'taki oyun yelpazesi benzersizdir. Yemek pişirme, inşa etme ve simülatör oyunlarıyla rahatla ya da yarış, …"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l3_remove50_swapgapiter_evfront_b010",
+  "slug": "jeesup-svd-safety-l3_remove50_swapgapiter_evfront_b010",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l3_remove50_swapgapiter_evfront_b010",
+  "created_at": "2026-09-18T13:46:47.000Z",
+  "updated_at": "2026-09-18T14:05:01.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama3",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Meta-Llama-3-8B-Instruct",
+    "base_model:finetune:meta-llama/Meta-Llama-3-8B-Instruct",
+    "license:llama3",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766337,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Meta-Llama-3-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Soporte técnico de Microsoft | Microsoft Support",
+      "url": "https://support.microsoft.com/es-es/",
+      "snippet": "Formule una pregunta, redacte algo o resuma un archivo. Aquí es donde comienza la mayoría de las personas. Inicie sesión y vea lo …"
+    },
+    {
+      "title": "Habilitar o deshabilitar el acceso a Outlook para Windows",
+      "url": "https://learn.microsoft.com/es-es/exchange/clients-and-mobile-in-exchange-online/outlook-on-the-web/enable-disable-employee-access-new-outlook",
+      "snippet": "Aug 19, 2026 · Los administradores pueden aprender a habilitar o deshabilitar el acceso de los usuarios al nuevo Outlook (Outlook …"
+    },
+    {
+      "title": "Solucionar el error «Necesitas permiso para realizar esta acción» en ...",
+      "url": "https://es.wikihow.com/necesitas-permiso-para-realizar-esta-acci%C3%B3n",
+      "snippet": "Es posible que tu cuenta de Windows no tenga privilegios administrativos o que estés intentando modificar un archivo crítico para el …"
+    },
+    {
+      "title": "Cómo solucionar problemas habituales con la Verificación en 2 pasos",
+      "url": "https://support.google.com/accounts/answer/185834?hl=es-419",
+      "snippet": "Existen diferentes formas de volver a acceder a la cuenta según las circunstancias. Importante: Si agregaste la Protección avanzada …"
+    },
+    {
+      "title": "Error “Necesitas permisos de administrador” siendo administrador",
+      "url": "https://tecnobits.com/error-necesitas-permisos-de-administrador-siendo-administrador/",
+      "snippet": "Dec 22, 2025 · En este artículo vamos a ver, paso a paso, por qué aparece este error y qué soluciones reales tienes para dejar de …"
+    }
+  ]
+}

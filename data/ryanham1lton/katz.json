@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/Katz",
+  "slug": "ryanham1lton-katz",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/Katz",
+  "created_at": "2026-09-18T16:39:56.000Z",
+  "updated_at": "2026-09-18T16:41:55.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 182878149,
+  "storage_human": "183 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accueil | Service-Public.fr",
+      "url": "http://www.service-public.fr/",
+      "snippet": "Service Public vous informe et vous oriente vers les services qui permettent de connaître vos obligations, d’exercer vos droits et de …"
+    },
+    {
+      "title": "Demande d'acte d'état civil d'un évènement à l'étranger",
+      "url": "https://demarches.service-public.fr/mademarche/delivrance_demat/loginFailure",
+      "snippet": "Service Public vous informe et vous oriente vers les services qui permettent de connaître vos obligations, d’exercer vos droits et de …"
+    },
+    {
+      "title": "Service-Public.fr - Explore — Huwise",
+      "url": "https://api-lannuaire.service-public.fr/",
+      "snippet": "République Française legifrance.gouv.fr gouvernement.fr service-public.gouv.fr dila.premier-ministre.gouv.fr Mentions légales"
+    },
+    {
+      "title": "Demande d'envoi papier :: Un problème est survenu lors de votre ...",
+      "url": "https://demarches.service-public.fr/mademarche/demarche_impr/loginFailure",
+      "snippet": "Service Public vous informe et vous oriente vers les services qui permettent de connaître vos obligations, d’exercer vos droits et de …"
+    },
+    {
+      "title": "ESUS - Connexion - preprod.ext.service-public.fr",
+      "url": "https://preprod.ext.service-public.fr/connexion",
+      "snippet": "Connectez-vous pour accéder à vos services publics en ligne et gérer vos démarches administratives."
+    }
+  ]
+}

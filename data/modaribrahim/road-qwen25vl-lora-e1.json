@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ModarIbrahim/road-qwen25vl-lora-e1",
+  "slug": "modaribrahim-road-qwen25vl-lora-e1",
+  "author": "ModarIbrahim",
+  "url": "https://huggingface.co/ModarIbrahim/road-qwen25vl-lora-e1",
+  "created_at": "2026-09-18T17:17:54.000Z",
+  "updated_at": "2026-09-18T17:18:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qwen2.5-vl",
+    "ocr",
+    "handwriting",
+    "base_model:Qwen/Qwen2.5-VL-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-VL-7B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 414700592,
+  "storage_human": "415 MB",
+  "base_model": "Qwen/Qwen2.5-VL-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Answers about Fortnite",
+      "url": "https://www.answers.com/t/fortnite",
+      "snippet": "A Fortnite is a period of two weeks, specifically 14 days. The term is derived from the Old English word \"fourteen nights.\" It is …"
+    },
+    {
+      "title": "what is tikos Fortnite password and email? - Answers",
+      "url": "https://www.answers.com/video-games/What-is-tikos-fortnite-password-and-email",
+      "snippet": "Oct 22, 2022 · tiko34@ tikolovesfish49"
+    },
+    {
+      "title": "Front engine mount and dogbone - JLA FORUMS",
+      "url": "http://www.jlaforums.com/viewtopic.php?t=5748245",
+      "snippet": "Oct 27, 2008 · ======== The mechanic is correct. If you get genuine Toyota replacement parts, I beliieve you'll find a revised part …"
+    },
+    {
+      "title": "SMCWUSB-N driver (ralink rt2820)? - JLA FORUMS",
+      "url": "http://www.jlaforums.com/viewtopic.php?t=3937030",
+      "snippet": "Apr 29, 2008 · Linux - SuSE - Can't find any drivers for this dongle. Would the 2x00 ones work? openSuse-10.3-x86"
+    },
+    {
+      "title": "How do you do the slanted smiley face? - Answers",
+      "url": "https://www.answers.com/video-games/How_do_you_do_the_slanted_smiley_face",
+      "snippet": "Nov 1, 2024 · Slanted Smiley Face Copy And Paste ツ romaji tsu Slanted Smiley Face variation シ ッ ツ ヅ Ü Ѷ 〲 〴 ϡ ジ ｼ ﾂ ㋡ …"
+    }
+  ]
+}

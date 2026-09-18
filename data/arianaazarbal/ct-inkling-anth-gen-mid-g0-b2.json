@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "arianaazarbal/ct-inkling-anth-gen-mid-g0-b2",
+  "slug": "arianaazarbal-ct-inkling-anth-gen-mid-g0-b2",
+  "author": "arianaazarbal",
+  "url": "https://huggingface.co/arianaazarbal/ct-inkling-anth-gen-mid-g0-b2",
+  "created_at": "2026-09-18T18:25:30.000Z",
+  "updated_at": "2026-09-18T18:27:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "constitutional-training",
+    "iterated-constitution",
+    "family:inkling_small",
+    "seed:anthropic",
+    "method:gen",
+    "regime:mid",
+    "gen:0",
+    "branch:b2",
+    "text-generation",
+    "base_model:thinkingmachines/Inkling-Small",
+    "base_model:adapter:thinkingmachines/Inkling-Small",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16901410336,
+  "storage_human": "16.9 GB",
+  "base_model": "thinkingmachines/Inkling-Small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to Access Workday: Microsoft Login Issues and Solutions",
+      "url": "https://www.justanswer.com/computer/e573y-trying-access-workday-set-work-account.html?msockid=39282cf44b4b61ad28983b2c4abf6066",
+      "snippet": "I haven't used this account for years, and since it's a university account, I don't have access to the password associated with it.I need …"
+    },
+    {
+      "title": "How to Resolve Yahoo Login Issues: 6-Digit Code and Account …",
+      "url": "https://www.justanswer.com/email/o4tsn-cannot-login-yahoo-account-tells.html?msockid=39282cf44b4b61ad28983b2c4abf6066",
+      "snippet": "Yahoo Account Login Issue: Unable to Receive 6-Digit Verification Code Users often face verification code delivery failures and …"
+    },
+    {
+      "title": "Troubleshooting Microsoft Account Issues on New Laptops | JustAnswer",
+      "url": "https://www.justanswer.com/laptop/la0fd-microsoft-365-account-trying-set.html?msockid=39282cf44b4b61ad28983b2c4abf6066",
+      "snippet": "Customer: I'm setting up the Microsoft account on the new laptop, so I'm not sure what details I can find. Do you mean the account …"
+    },
+    {
+      "title": "Fix Login Issue on Son's Windows 11 Pro Laptop | FAQ - JustAnswer",
+      "url": "https://www.justanswer.com/computer/q3ofe-windows-11-pro-cannot-sign-son-laptop.html?msockid=39282cf44b4b61ad28983b2c4abf6066",
+      "snippet": "Check Microsoft Account Settings: Access Settings > Accounts > Email & Accounts to ensure the Microsoft account is listed. If …"
+    },
+    {
+      "title": "Fixing Microsoft Account Login Issues: Error Codes 3, 15, 1067",
+      "url": "https://www.justanswer.com/email/mpoxr-no-idea-trying-log-microsoft-account.html?msockid=39282cf44b4b61ad28983b2c4abf6066",
+      "snippet": "If it's a Microsoft email address (like outlook.com or hotmail.com), make sure to enter the complete address.Password Reset: If you're …"
+    }
+  ]
+}

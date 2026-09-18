@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "PellelNitram/xournalpp-htr-word-detector-rf-detr",
+  "slug": "pellelnitram-xournalpp-htr-word-detector-rf-detr",
+  "author": "PellelNitram",
+  "url": "https://huggingface.co/PellelNitram/xournalpp-htr-word-detector-rf-detr",
+  "created_at": "2026-09-18T12:12:52.000Z",
+  "updated_at": "2026-09-18T12:17:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 134258647,
+  "storage_human": "134 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "prépacode - Permis de conduire - FORUM Vie Pratique",
+      "url": "https://forum.doctissimo.fr/viepratique/Permis-de-conduire/prepacode-sujet_3009_1.htm",
+      "snippet": "May 31, 2012 · Bonjour, je viens de m'inscrire sur PrepaCode j'ai entrer mon code j'ai reçu un mail de confirmation donc j'ai cliquer …"
+    },
+    {
+      "title": "Forum Santé - Doctissimo",
+      "url": "https://forum.doctissimo.fr/",
+      "snippet": "1 day ago · Les forums de Doctissimo sont des lieux de discussion, d'échange et de partage autour de questions medicales..."
+    },
+    {
+      "title": "Forum Le coin des ados - Doctissimo",
+      "url": "https://forum.doctissimo.fr/psychologie/ados/liste_sujet-1.htm",
+      "snippet": "Forum de discussion consacre a la psychologie : stress, depression, angoisses et phobies, developpement personnel, TOC, les …"
+    },
+    {
+      "title": "Examen médical de mon fils de 16 ans - Doctissimo",
+      "url": "https://forum.doctissimo.fr/sante/-9/examen-medical-fils-sujet_1_1.htm",
+      "snippet": "Nov 13, 2009 · De plus, ça ne me choque pas que la mère ait pu entendre ce que le médecin disait dans la salle d'examen. si le …"
+    },
+    {
+      "title": "Forum Sclérose en plaques - Doctissimo",
+      "url": "https://forum.doctissimo.fr/sante/SEP/liste_sujet-1.htm",
+      "snippet": "Forum Sclérose en plaques. Forum de discussion consacré aux traitements de la sclérose en plaques. Echange et entraide entres …"
+    }
+  ]
+}

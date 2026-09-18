@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-base-q4v3",
+  "slug": "agurung-cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-base-q4v3",
+  "author": "agurung",
+  "url": "https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-base-q4v3",
+  "created_at": "2026-09-18T17:37:09.000Z",
+  "updated_at": "2026-09-21T10:55:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "openrlhf",
+    "grpo",
+    "reinforcement-learning",
+    "code-generation",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-4B-Instruct-2507",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4411424256,
+  "parameters_human": "4.41B",
+  "storage_bytes": 44125895250,
+  "storage_human": "44.1 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How can I get rid of the \"Sign in with your Google Account\" pop up in ...",
+      "url": "https://support.google.com/mail/thread/6539589/how-can-i-get-rid-of-the-sign-in-with-your-google-account-pop-up-in-outlook?hl=en",
+      "snippet": "May 21, 2019 · If you want Outlook to collect your Gmail messages from the account shown in the popup, then you must grant this …"
+    },
+    {
+      "title": "Menambahkan rapat video Meet ke Outlook",
+      "url": "https://support.google.com/meet/answer/9050245?hl=id",
+      "snippet": "Ya, jika login ke Akun Google seperti Gmail dan telah menginstal add-in Meet, Anda dapat menambahkan rapat video Meet ke email …"
+    },
+    {
+      "title": "Outlook 2019 doesn't allow custom username for IMAP/SMTP account",
+      "url": "https://www.tenforums.com/microsoft-office-365/125700-outlook-2019-doesnt-allow-custom-username-imap-smtp-account.html",
+      "snippet": "Jan 21, 2019 · In last Outlook 2019 i was very surprised it doesn't allow set custom username different from email address. I can …"
+    },
+    {
+      "title": "Why does MS request a Non-Existant PIN to set up Outlook? (Win10 …",
+      "url": "https://www.tenforums.com/user-accounts-family-safety/150300-why-does-ms-request-non-existant-pin-set-up-outlook-win10-pro.html",
+      "snippet": "Feb 10, 2020 · A PIN for Win10 is established after logging in first with a Password, Outlook probably the same for your Microsoft …"
+    },
+    {
+      "title": "How to set up Outlook to send e-mail from gmail or GSuite Domain ...",
+      "url": "https://support.google.com/mail/thread/70842377/how-to-set-up-outlook-to-send-e-mail-from-gmail-or-gsuite-domain-aliases?hl=en",
+      "snippet": "Sep 13, 2020 · I have multiple domains registered with Google Domains. I set-up e-mail so that I can receive e-mail from my personal …"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "arianaazarbal/ct-inkling-anth-gen-mid-g2-b1",
+  "slug": "arianaazarbal-ct-inkling-anth-gen-mid-g2-b1",
+  "author": "arianaazarbal",
+  "url": "https://huggingface.co/arianaazarbal/ct-inkling-anth-gen-mid-g2-b1",
+  "created_at": "2026-09-18T18:32:43.000Z",
+  "updated_at": "2026-09-18T18:34:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "constitutional-training",
+    "iterated-constitution",
+    "family:inkling_small",
+    "seed:anthropic",
+    "method:gen",
+    "regime:mid",
+    "gen:2",
+    "branch:b1",
+    "text-generation",
+    "base_model:thinkingmachines/Inkling-Small",
+    "base_model:adapter:thinkingmachines/Inkling-Small",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16901410336,
+  "storage_human": "16.9 GB",
+  "base_model": "thinkingmachines/Inkling-Small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Significado de exacerbado - Dicionário Priberam",
+      "url": "https://dicionario.priberam.org/exacerbado",
+      "snippet": "Significado de exacerbado A forma exacerbado pode ser [masculino singular particípio passado de exacerbar] ou [adjetivo]."
+    },
+    {
+      "title": "Exacerbado - Dicio, Dicionário Online de Português",
+      "url": "https://www.dicio.com.br/exacerbado/",
+      "snippet": "Significado de Exacerbado no Dicio, Dicionário Online de Português. O que é exacerbado: adj. Que se exacerbo; que ficou mais …"
+    },
+    {
+      "title": "exacerbado | Dicionário Infopédia da Língua Portuguesa",
+      "url": "https://www.infopedia.pt/dicionarios/lingua-portuguesa/exacerbado",
+      "snippet": "As duas formas são corretas. Dador e doador s. agravado, chauvinismo, exacerbadamente ... abotoado, afiado, apendiciado ..."
+    },
+    {
+      "title": "Exacerbado | Michaelis On-line",
+      "url": "https://michaelis.uol.com.br/palavra/9kex/exacerbado/",
+      "snippet": "O dicionário mais atualizado e completo do português falado no Brasil!"
+    },
+    {
+      "title": "Conjugação do Verbo Exacerbar - Conjugação de Verbos",
+      "url": "https://www.conjugacao.com.br/verbo-exacerbar/",
+      "snippet": "Conjugação de exacerbar em todos os tempos verbais; presente, passado e futuro. Indicativo: exacerbo, exacerbas, exacerba, …"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "keshavsharma/qwen2.5-3b-sql-lora-sft",
+  "slug": "keshavsharma-qwen2-5-3b-sql-lora-sft",
+  "author": "keshavsharma",
+  "url": "https://huggingface.co/keshavsharma/qwen2.5-3b-sql-lora-sft",
+  "created_at": "2026-09-18T17:54:43.000Z",
+  "updated_at": "2026-09-18T18:05:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 239536272,
+  "storage_human": "240 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/?gl=FR&hl=fr",
+      "snippet": "Profitez des vidéos et de la musique que vous aimez, mettez en ligne des contenus originaux, et partagez-les avec vos amis, vos …"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/?lang=fr",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    },
+    {
+      "title": "YouTube – Applications sur Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.google.android.youtube&hl=fr",
+      "snippet": "Téléchargez l'application YouTube officielle sur votre téléphone ou tablette Android. Découvrez les contenus regardés partout dans le …"
+    },
+    {
+      "title": "YouTube – Applications sur Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.google.android.youtube&hl=ln",
+      "snippet": "Get the official YouTube app on Android phones and tablets. See what the world is watching -- from the hottest music videos to …"
+    }
+  ]
+}

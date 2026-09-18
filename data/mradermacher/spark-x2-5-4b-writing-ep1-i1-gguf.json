@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Spark-X2.5-4B-Writing-EP1-i1-GGUF",
+  "slug": "mradermacher-spark-x2-5-4b-writing-ep1-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Spark-X2.5-4B-Writing-EP1-i1-GGUF",
+  "created_at": "2026-09-18T16:44:05.000Z",
+  "updated_at": "2026-09-18T17:16:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "creative-writing",
+    "novel-generation",
+    "roleplay",
+    "nsfw",
+    "long-context",
+    "spark",
+    "zh",
+    "en",
+    "base_model:hcnote/Spark-X2.5-4B-Writing-EP1",
+    "base_model:quantized:hcnote/Spark-X2.5-4B-Writing-EP1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4112079360,
+  "parameters_human": "4.11B",
+  "storage_bytes": 50402236608,
+  "storage_human": "50.4 GB",
+  "base_model": "hcnote/Spark-X2.5-4B-Writing-EP1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "2026-27 Men's Basketball Roster - Purdue Boilermakers",
+      "url": "https://purduesports.com/sports/mens-basketball/roster",
+      "snippet": "Mar 15, 2026 · Men's Basketball Thu, Oct 22 / TBA Men's Basketball Purdue Fort Wayne Tue, Oct 27 / TBA Men's Basketball …"
+    },
+    {
+      "title": "Home Page - Purdue Boilermakers - Official Athletics Website",
+      "url": "https://purduesports.com/",
+      "snippet": "21 hours ago · The most comprehensive coverage of the Purdue Boilermakers with rosters, schedules, scores, highlights, game …"
+    },
+    {
+      "title": "2025-26 Purdue Boilermakers Men's Roster and Stats | College …",
+      "url": "https://www.sports-reference.com/cbb/schools/purdue/men/2026.html",
+      "snippet": "Check out the detailed 2025-26 Purdue Boilermakers Roster and Stats for College Basketball at Sports-Reference.com"
+    },
+    {
+      "title": "Purdue Boilermakers Men's College Basketball Roster - ESPN",
+      "url": "https://www.espn.com/mens-college-basketball/team/roster/_/id/2509/purdue-boilermakers",
+      "snippet": "Explore the 2026-27 Purdue Boilermakers NCAAM roster on ESPN. Includes full details on point guards, shooting guards, power …"
+    },
+    {
+      "title": "Purdue Boilermakers 2025 Rosters - 247Sports",
+      "url": "https://247sports.com/college/purdue/team/purdue-boilermakers-basketball-84/roster/",
+      "snippet": "2025-2026 Purdue Boilermakers Basketball Roster Teams 2025-2026 ... (PS) - Practice Squad"
+    }
+  ]
+}

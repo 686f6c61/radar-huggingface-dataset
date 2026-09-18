@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "syntropic-clx/Clyx_0.3-NM-BASE",
+  "slug": "syntropic-clx-clyx_0-3-nm-base",
+  "author": "syntropic-clx",
+  "url": "https://huggingface.co/syntropic-clx/Clyx_0.3-NM-BASE",
+  "created_at": "2026-09-18T12:39:24.000Z",
+  "updated_at": "2026-09-21T11:47:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "ru"
+  ],
+  "tags": [
+    "safetensors",
+    "causal-lm",
+    "custom-transformer",
+    "from-scratch",
+    "rope",
+    "rmsnorm",
+    "swiglu",
+    "grouped-query-attention",
+    "russian",
+    "english",
+    "code",
+    "text-generation",
+    "en",
+    "ru",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 635512320,
+  "parameters_human": "635.5M",
+  "storage_bytes": 2542071200,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SNCF Connect : Réservez vos billets SNCF, bus et covoiturage",
+      "url": "https://www.sncf-connect.com/",
+      "snippet": "Réservez vos Billets de Train au meilleur prix et planifiez votre itinéraire sur SNCF Connect !"
+    },
+    {
+      "title": "Réservation de billets - SNCF Voyageurs",
+      "url": "https://www.sncf-voyageurs.com/fr/voyagez-avec-nous/horaires-et-itineraires/reservation-de-billets/",
+      "snippet": "Feb 14, 2025 · Achetez vos billets, cartes et abonnements. Pour tous vos voyages en France et en Europe, trouvez vos billets ici. …"
+    },
+    {
+      "title": "Billet de train pas cher : Billets SNCF avec SNCF Connect",
+      "url": "https://www.sncf-connect.com/billet-train",
+      "snippet": "Comparez nos offres et réservez vos billets de train pas chers sur SNCF Connect. Profitez de voyages en train à petit prix en France …"
+    },
+    {
+      "title": "Mes billets | SNCF Voyageurs",
+      "url": "https://www.sncf-voyageurs.com/fr/mes-billets/",
+      "snippet": "Que cherchez vous ? Si vous disposez d’un numéro de dossier, consultez vos billets ici. Accédez aux espaces clients des sites et …"
+    },
+    {
+      "title": "Réservez votre Billet de Train | Horaires et Prix - Trainline",
+      "url": "https://www.thetrainline.com/fr?msockid=0e0a06e5c3c366161270113dc2d06789",
+      "snippet": "Recherchez les horaires, prix et réservez vos billets de train et de bus en France et en Europe. Trainline est un distributeur officiel de …"
+    }
+  ]
+}

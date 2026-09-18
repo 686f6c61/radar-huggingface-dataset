@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "vis22/plates_stack_v2",
+  "slug": "vis22-plates_stack_v2",
+  "author": "vis22",
+  "url": "https://huggingface.co/vis22/plates_stack_v2",
+  "created_at": "2026-09-18T16:34:53.000Z",
+  "updated_at": "2026-09-18T16:35:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:vis22/plates_stack_v2",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51670663,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206723412,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fazer o download e instalar o Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95346?hl=pt-BR&co=GENIE.Platform%3DDesktop",
+      "snippet": "Fazer o download e instalar o Google Chrome Você pode baixar e instalar o navegador da Web Chrome sem custos financeiros e …"
+    },
+    {
+      "title": "Google Chrome herunterladen und installieren",
+      "url": "https://support.google.com/chrome/answer/95346?hl=de&co=GENIE.Platform%3DDesktop",
+      "snippet": "Chrome installieren Wichtig: Bevor Sie Chrome herunterladen, sollten Sie nachsehen, ob Ihr Betriebssystem von Chrome unterstützt …"
+    },
+    {
+      "title": "Télécharger et installer Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95346?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Installer Chrome hors connexion Si vous rencontrez des problèmes lors du téléchargement de Chrome sur votre ordinateur Windows, …"
+    },
+    {
+      "title": "ดาวน์โหลดและติดตั้ง Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95346?hl=th-TH&co=GENIE.Platform%3DDesktop",
+      "snippet": "ดาวน์โหลด โปรแกรมติดตั้ง Chrome สำหรับคอมพิวเตอร์เครื่องอื่นในคอมพิวเตอร์ เลือก แพลตฟอร์มอื่นๆ ในส่วน \"Chrome Family\" …"
+    },
+    {
+      "title": "Stiahnutie a inštalácia prehliadača Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95346?hl=sk&co=GENIE.Platform%3DDesktop",
+      "snippet": "Stiahnutie a inštalácia prehliadača Google Chrome Webový prehliadač Chrome si môžete stiahnuť a nainštalovať bez peňažného …"
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "kokuren/doku-chiwawa-ja-offensiveness-deberta-v2-small",
+  "slug": "kokuren-doku-chiwawa-ja-offensiveness-deberta-v2-small",
+  "author": "kokuren",
+  "url": "https://huggingface.co/kokuren/doku-chiwawa-ja-offensiveness-deberta-v2-small",
+  "created_at": "2026-09-18T19:03:16.000Z",
+  "updated_at": "2026-09-18T19:07:32.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "deberta-v2",
+    "text-classification",
+    "japanese",
+    "multi-label",
+    "multi-output",
+    "regression",
+    "offensiveness",
+    "toxicity",
+    "social-media",
+    "transformers.js",
+    "browser",
+    "chrome-extension",
+    "doku-chiwawa",
+    "ja",
+    "base_model:izumi-lab/deberta-v2-small-japanese",
+    "base_model:quantized:izumi-lab/deberta-v2-small-japanese",
+    "license:cc-by-sa-4.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 17868807,
+  "parameters_human": "17.9M",
+  "storage_bytes": 143885692,
+  "storage_human": "144 MB",
+  "base_model": "izumi-lab/deberta-v2-small-japanese",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/",
+      "snippet": "Google's service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other …"
+    },
+    {
+      "title": "DeepL Translate: The world's most accurate translator",
+      "url": "https://www.deepl.com/en/translator",
+      "snippet": "Type to translate. Drag and drop to translate PDF, Word (.docx), and PowerPoint (.pptx) files with our document translator."
+    },
+    {
+      "title": "Microsoft Translator - Bing",
+      "url": "https://www.bing.com/translator",
+      "snippet": "Quickly translate words and phrases between English and over 100 languages."
+    },
+    {
+      "title": "Microsoft Translator - الترجمة من الإنجليزية - Bing",
+      "url": "https://www.bing.com/translator?setlang=ar",
+      "snippet": "الترجمة الإنجليزية مجانا مع نتائج دقيقة. يستخدم الملايين Bing كل يوم للترجمة عبر أكثر من 100 لغة - جربه الآن!"
+    },
+    {
+      "title": "Microsoft Translator",
+      "url": "https://www.microsoft.com/ar-eg/translator/?msockid=238bcc16276966bf340ddbce265d67b8",
+      "snippet": "تمت ترجمة هذه الصفحة تلقائيًا بواسطة خدمة الترجمة الآلية الخاصة بـ Microsoft Translator. التعرف على المزيد"
+    }
+  ]
+}

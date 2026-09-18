@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "baselquants/MiniMax-H3",
+  "slug": "baselquants-minimax-h3",
+  "author": "baselquants",
+  "url": "https://huggingface.co/baselquants/MiniMax-H3",
+  "created_at": "2026-09-18T19:27:48.000Z",
+  "updated_at": "2026-09-18T19:27:48.000Z",
+  "license": "minimax-h3-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-video",
+  "library": "minimax-h3",
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "diffusers",
+    "safetensors",
+    "text-to-video",
+    "image-to-video",
+    "image-text-to-video",
+    "video-to-video",
+    "text-to-audio-video",
+    "image-to-audio-video",
+    "image-text-to-audio-video",
+    "video-to-audio-video",
+    "audio-to-audio-video",
+    "audio-video-generation",
+    "multimodal",
+    "synchronized-audio-video",
+    "reference-to-audio-video",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 353917479700,
+  "storage_human": "353.9 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Porn Videos & Sex Movies - Porno, XXX, Porn Tube | Pornhub",
+      "url": "https://www.pornhub.com/",
+      "snippet": "Pornhub provides you with unlimited free porn videos with the hottest pornstars. Enjoy the largest amateur porn community on the net …"
+    },
+    {
+      "title": "Pornhub Porn Videos",
+      "url": "https://www.pornhub.com/video/search?search=pornhub",
+      "snippet": "No other sex tube is more popular and features more Pornhub scenes than Pornhub! Browse through our impressive selection of …"
+    },
+    {
+      "title": "Kostenlose Porno Videos & Sex Filme - Porno, XXX, Porno Tube | Pornhub",
+      "url": "https://de.pornhub.com/",
+      "snippet": "Pornhub bietet dir unbegrenzt kostenlose Pornovideos mit den heißesten Darstellern an. Genießen Sie die größte Amateur-Porno …"
+    },
+    {
+      "title": "Pornhub Kategorien: Finde Dein Lieblings Hardcorde Porno Video",
+      "url": "https://de.pornhub.com/categories",
+      "snippet": "Pornhub bietet die besten hardcore Porno Videos. Entdecke die neusten XXX zum streamen in deiner Lieblings Kategorie. Schaue …"
+    },
+    {
+      "title": "Neueste Empfohlene kostenlose Pornovideos | Pornhub",
+      "url": "https://de.pornhub.org/recommended?o=time",
+      "snippet": "Wilkommen bei Pornhub.com, das Zuhause der besten gratis, hardcore Pornos mit den heißesten Amateur Model. Streame …"
+    }
+  ]
+}

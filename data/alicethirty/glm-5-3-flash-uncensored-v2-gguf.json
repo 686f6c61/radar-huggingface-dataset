@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "AliceThirty/GLM-5.3-Flash-UNCENSORED-V2-GGUF",
+  "slug": "alicethirty-glm-5-3-flash-uncensored-v2-gguf",
+  "author": "AliceThirty",
+  "url": "https://huggingface.co/AliceThirty/GLM-5.3-Flash-UNCENSORED-V2-GGUF",
+  "created_at": "2026-09-18T19:32:13.000Z",
+  "updated_at": "2026-09-18T20:42:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "base_model:MorinoNushi/GLM-5.3-Flash-Heretic-Abliterated-LoRA-V2-GGUF",
+    "base_model:quantized:MorinoNushi/GLM-5.3-Flash-Heretic-Abliterated-LoRA-V2-GGUF",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 320759404382,
+  "parameters_human": "320.76B",
+  "storage_bytes": 199931700352,
+  "storage_human": "199.9 GB",
+  "base_model": "MorinoNushi/GLM-5.3-Flash-Heretic-Abliterated-LoRA-V2-GGUF, zai-org/GLM-5.3-Flash",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BingHomepageQuiz - Reddit",
+      "url": "https://www.reddit.com/r/BingHomepageQuiz/hot/",
+      "snippet": "Microsoft Bing Homepage daily quiz questions and their answers"
+    },
+    {
+      "title": "Bing News Quiz [10-28-2022] : r/BingQuizAnswers - Reddit",
+      "url": "https://www.reddit.com/r/BingQuizAnswers/comments/yf0qf5/bing_news_quiz_10282022/",
+      "snippet": "Oct 27, 2022 · Bing News Quiz Weekly Answers [10-28-2022] 1: The UK has a new prime minister. What's his name? A Boris …"
+    },
+    {
+      "title": "[US] Bing Weekly News Quiz (12-17-2021) : r/MicrosoftRewards - Reddit",
+      "url": "https://www.reddit.com/r/MicrosoftRewards/comments/riaylf/us_bing_weekly_news_quiz_12172021/",
+      "snippet": "Dec 17, 2021 · I forgot to say that I enjoy the quiz giving me positive feedback getting everything correct. They better not update it to …"
+    },
+    {
+      "title": "Quiz Answers for today : r/MicrosoftRewards - Reddit",
+      "url": "https://www.reddit.com/r/MicrosoftRewards/comments/cwya5d/quiz_answers_for_today/",
+      "snippet": "Aug 29, 2019 · quiz that was mentioned a month ago and mentioned again more recently, but never appeared on my dash until …"
+    },
+    {
+      "title": "Small Inconvenience with the Bing Weekly Quiz you might run into",
+      "url": "https://www.reddit.com/r/MicrosoftRewards/comments/t0zxod/small_inconvenience_with_the_bing_weekly_quiz_you/",
+      "snippet": "Feb 25, 2022 · The bigger annoyance was with yesterday's quiz (ToT) that I had to re-do the last 2 answers for because they …"
+    }
+  ]
+}

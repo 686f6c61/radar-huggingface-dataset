@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l3_swift_remove40_swapgapiter_evfront_b010",
+  "slug": "jeesup-svd-safety-l3_swift_remove40_swapgapiter_evfront_b010",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l3_swift_remove40_swapgapiter_evfront_b010",
+  "created_at": "2026-09-18T18:39:08.000Z",
+  "updated_at": "2026-09-22T00:26:47.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama3",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Meta-Llama-3-8B-Instruct",
+    "base_model:finetune:meta-llama/Meta-Llama-3-8B-Instruct",
+    "license:llama3",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 32138322713,
+  "storage_human": "32.1 GB",
+  "base_model": "meta-llama/Meta-Llama-3-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wie kann ich die Telekom Mail App auf meinem PC installieren",
+      "url": "https://telekomhilft.telekom.de/conversations/e-mail/wie-kann-ich-die-telekom-mail-app-auf-meinem-pc-installieren/668720314ae73561daf5c926",
+      "snippet": "Ich habe die Telekom Mail App auf meinem Tablett undmöchte sie aber auch auf meinem PC installieren. Wie mache ich das?"
+    },
+    {
+      "title": "Ich kann mein T-Online Konto nicht im Outlook anlegen",
+      "url": "https://telekomhilft.telekom.de/conversations/e-mail/ich-kann-mein-t-online-konto-nicht-im-outlook-anlegen/68e6039a24e7786d4bccc1fc",
+      "snippet": "Hallo Zusammen!&nbsp; Ich möchte gern mein T-Online-Konto in Outlook nutzen! Leider bekomme ich das Konto nicht eingerichtet. …"
+    },
+    {
+      "title": "Umlautprobleme im email-Center von T-Online",
+      "url": "https://telekomhilft.telekom.de/conversations/sonstiges/umlautprobleme-im-email-center-von-t-online/6685eb5c4ae73561dac9693a",
+      "snippet": "Möglicherweise sogar die, daß T-Online Umlaute schlicht nicht darstellen kann? Habe die Codierung auf Automatisch umgestellt - …"
+    },
+    {
+      "title": "Direkte Links im E-Mail-Center | Telekom hilft Community",
+      "url": "https://telekomhilft.telekom.de/conversations/e-mail/direkte-links-im-e-mail-center/6687df7b4ae73561daffd6d6",
+      "snippet": "Im E-Mail-Center https://email.t-online.de findet man schnell die Ordner mit den E-Mails wie Posteingang etc. Aber es gibt auch die …"
+    },
+    {
+      "title": "‎Alte Rufnummer bei Mehr Faktor Authentifizierung für t-online.de …",
+      "url": "https://telekomhilft.telekom.de/conversations/e-mail/alte-rufnummer-bei-mehr-faktor-authentifizierung-f%C3%BCr-t-onlinede-login-hinterlegt/691a0ed950ea066812f1051c",
+      "snippet": "Nov 16, 2025 · Hallo, Ich komme mit meiner @t-online.de MailAdresse nicht mehr in meinen Telekom Login. Problem ist, dass bei …"
+    }
+  ]
+}

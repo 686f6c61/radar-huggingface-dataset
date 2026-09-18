@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "mradermacher/SparkMuse-4B-GGUF",
+  "slug": "mradermacher-sparkmuse-4b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/SparkMuse-4B-GGUF",
+  "created_at": "2026-09-18T16:04:48.000Z",
+  "updated_at": "2026-09-18T16:44:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "creative-writing",
+    "novel-generation",
+    "roleplay",
+    "nsfw",
+    "long-context",
+    "1M-context",
+    "spark",
+    "zh",
+    "en",
+    "base_model:hcnote/SparkMuse-4B",
+    "base_model:quantized:hcnote/SparkMuse-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational",
+    "not-for-all-audiences"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4112079360,
+  "parameters_human": "4.11B",
+  "storage_bytes": 37506125568,
+  "storage_human": "37.5 GB",
+  "base_model": "hcnote/SparkMuse-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sinsay - Great fashion, great prices",
+      "url": "https://www.sinsay.com/pl/pl/?msockid=117889c58771635d05849e1d86a1623d",
+      "snippet": "Odkryj najnowsze trendy w najlepszych cenach w sklepie internetowym marki Sinsay. Poznaj szeroką ofertę produktów dla całej …"
+    },
+    {
+      "title": "Sinsay - Great fashion, great prices | Cumpără online",
+      "url": "https://www.sinsay.com/ro/ro/?msockid=117889c58771635d05849e1d86a1623d",
+      "snippet": "Descoperă cele mai recente tendințe la super prețuri în magazinul online al brandului Sinsay. Descoperă gama largă de produse …"
+    },
+    {
+      "title": "Sinsay - Great fashion, great prices | Nakupuj online",
+      "url": "https://www.sinsay.com/sk/sk/?msockid=117889c58771635d05849e1d86a1623d",
+      "snippet": "Objavte najnovšie trendy za skvelé ceny v Sinsay online obchode. Objavte široký výber produktov pre celú rodinu!"
+    },
+    {
+      "title": "Sinsay - Great fashion, great prices | Nakupuj online",
+      "url": "https://www.sinsay.com/cz/cz/?msockid=117889c58771635d05849e1d86a1623d",
+      "snippet": "Objevte nejnovější trendy za skvělé ceny v e-shopu Sinsay. Objevte široký výběr produktů pro celou rodinu!"
+    },
+    {
+      "title": "Sinsay - Great fashion, great prices | Pirk internetu",
+      "url": "https://www.sinsay.com/lt/lt/?msockid=117889c58771635d05849e1d86a1623d",
+      "snippet": "Atraskite naujausias tendencijas puikiomis kainomis Sinsay prekės ženklo internetinėje parduotuvėje. Atraskite platų prekių …"
+    }
+  ]
+}

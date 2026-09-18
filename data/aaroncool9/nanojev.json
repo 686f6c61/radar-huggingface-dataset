@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "aaroncool9/NanoJev",
+  "slug": "aaroncool9-nanojev",
+  "author": "aaroncool9",
+  "url": "https://huggingface.co/aaroncool9/NanoJev",
+  "created_at": "2026-09-18T19:54:17.000Z",
+  "updated_at": "2026-09-18T19:54:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "pytorch",
+    "nanojev",
+    "decision-model",
+    "probability-distributions",
+    "parallel-inference",
+    "navigation",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19091736890,
+  "storage_human": "19.1 GB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Quiz Widget - BookWidgets",
+      "url": "https://www.bookwidgets.com/widget-library/quiz",
+      "snippet": "Assess students’ understanding of language grammar with an interactive Quiz. Utilize a combination of question types to identify …"
+    },
+    {
+      "title": "Quiz Widgets - Build Custom Assessments & Interactive Content",
+      "url": "https://embeddable.co/use-cases/interactive-quizzes",
+      "snippet": "Create engaging quiz widgets with AI. Build personality quizzes, assessments, and interactive content that educates and captures …"
+    },
+    {
+      "title": "Free Quiz Widgets – Capture Leads with Interactive Quizzes …",
+      "url": "https://embeddable.co/free-quiz-widgets",
+      "snippet": "Create personality quizzes, trivia, and lead generation quizzes in minutes with AI. Fully editable, no coding required. Start free at …"
+    },
+    {
+      "title": "Free Quiz Maker Widget - commoninja.com",
+      "url": "https://www.commoninja.com/widgets/quiz",
+      "snippet": "Build a multi-question quiz with scored or personality-style results, or use the same widget in poll mode for single-question polls, …"
+    },
+    {
+      "title": "Quiz Widget - Figma",
+      "url": "https://www.figma.com/community/widget/1182906312337777792/quiz-widget",
+      "snippet": "Whether it be adding to study guides or taking/creating quizzes with friends, the Quiz Widget is the all-in-one ultimate study review …"
+    }
+  ]
+}

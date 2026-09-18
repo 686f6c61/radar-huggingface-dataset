@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "sasoriiii/test-v2",
+  "slug": "sasoriiii-test-v2",
+  "author": "sasoriiii",
+  "url": "https://huggingface.co/sasoriiii/test-v2",
+  "created_at": "2026-09-18T18:05:15.000Z",
+  "updated_at": "2026-09-18T18:19:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "comfyui",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "comfyui",
+    "h3",
+    "qwen3-vl",
+    "qwen3-vl-32b",
+    "heretic",
+    "abliterated",
+    "uncensored",
+    "bf16",
+    "int8",
+    "convrot",
+    "quantized",
+    "image-text-to-text",
+    "en",
+    "base_model:llmfan46/Qwen3-VL-32B-Instruct-ultra-uncensored-heretic",
+    "base_model:finetune:llmfan46/Qwen3-VL-32B-Instruct-ultra-uncensored-heretic",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 85478900298,
+  "storage_human": "85.5 GB",
+  "base_model": "llmfan46/Qwen3-VL-32B-Instruct-ultra-uncensored-heretic",
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "البوابة الإلكترونية لمحافظة أسوان",
+      "url": "https://aswan.gov.eg/",
+      "snippet": "محافظة أسوان محافظة من محافظات مصر الجنوبية. عاصمتها مدينة أسوان. تقع محافظة أسوان جنوب جمهورية مصر العربية، ويحدها من الشمال محافظة الأقصر، وشرقا محافظة البحر الأحمر، …"
+    },
+    {
+      "title": "مركز التدريب والتنمية المهنية المستدامة بأسوان",
+      "url": "https://academy.aswan.gov.eg/TrNews.aspx",
+      "snippet": "اعتماد مركز محافظة اسوان للتدريب والتنمية المهنية المستدامة كمركز معتمد لاختبارات ICDL الدولية."
+    },
+    {
+      "title": "البوابة الجغرافية",
+      "url": "https://gis.aswan.gov.eg/",
+      "snippet": "MegaOne is a highly creative, modern, visually stunning and Bootstrap responsive multipurpose studio and portfolio HTML5 template …"
+    },
+    {
+      "title": "المركز التكنولوجى بأسوان",
+      "url": "https://tech.aswan.gov.eg/contact",
+      "snippet": "يسعي المركز التكنولوجي لخدمة المواطنين (الديوان العام) لمحافظة اسوان على تحقيق مستهدفات الاجنده الوطنية لرؤية مصر 2030"
+    },
+    {
+      "title": "مركز التدريب والتنمية المهنية المستدامة بأسوان",
+      "url": "https://academy.aswan.gov.eg/TrContact.aspx",
+      "snippet": "العنوان كورنيش النيل - مبنى مجمع خدمات ديوان عام محافظة اسوان رقم ( 3 ) الدور الثانى - بجوار فندق عروس النيل رقم الهاتف 0972428872 الايميل agtc@aswan.gov.eg"
+    }
+  ]
+}

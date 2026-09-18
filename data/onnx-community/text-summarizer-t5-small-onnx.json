@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "onnx-community/Text-Summarizer-t5-small-ONNX",
+  "slug": "onnx-community-text-summarizer-t5-small-onnx",
+  "author": "onnx-community",
+  "url": "https://huggingface.co/onnx-community/Text-Summarizer-t5-small-ONNX",
+  "created_at": "2026-09-18T13:09:00.000Z",
+  "updated_at": "2026-09-18T13:13:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "summarization",
+  "library": "transformers.js",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "t5",
+    "text2text-generation",
+    "summarization",
+    "flan-t5",
+    "en",
+    "base_model:UX4567/Text-Summarizer-t5-small",
+    "base_model:quantized:UX4567/Text-Summarizer-t5-small",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1671092127,
+  "storage_human": "1.7 GB",
+  "base_model": "UX4567/Text-Summarizer-t5-small",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ONNX | Home",
+      "url": "https://onnx.ai/",
+      "snippet": "ONNX is an open format built to represent machine learning models. ONNX defines a common set of operators - the building blocks …"
+    },
+    {
+      "title": "GitHub - onnx/onnx: Open standard for machine learning …",
+      "url": "https://github.com/onnx/onnx",
+      "snippet": "Open Neural Network Exchange (ONNX) is an open ecosystem that empowers AI developers to choose the right tools as their …"
+    },
+    {
+      "title": "Open Neural Network Exchange - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Open_Neural_Network_Exchange",
+      "snippet": "Once a model is in ONNX format, it can be executed in different runtime systems or on various hardware platforms, such as GPUs or …"
+    },
+    {
+      "title": "ONNX 1.24.0 documentation",
+      "url": "https://onnx.ai/onnx/",
+      "snippet": "ONNX documentation ¶ Introduction to ONNX ONNX Concepts ONNX with Python Converters API Reference Versioning Data …"
+    },
+    {
+      "title": "ONNX : Entraînez-vous dans n'importe quel cadre, déployez",
+      "url": "https://www.datacamp.com/fr/tutorial/onnx",
+      "snippet": "Nov 12, 2025 · ONNX est un format standard ouvert pour les modèles d'apprentissage automatique qui favorise l'interopérabilité : il …"
+    }
+  ]
+}

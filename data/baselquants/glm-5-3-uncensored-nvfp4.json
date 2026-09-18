@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "baselquants/GLM-5.3-UNCENSORED-NVFP4",
+  "slug": "baselquants-glm-5-3-uncensored-nvfp4",
+  "author": "baselquants",
+  "url": "https://huggingface.co/baselquants/GLM-5.3-UNCENSORED-NVFP4",
+  "created_at": "2026-09-18T19:33:11.000Z",
+  "updated_at": "2026-09-18T19:33:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "glm_moe_dsa",
+    "abliterated",
+    "uncensored",
+    "crack",
+    "glm",
+    "moe",
+    "nvfp4",
+    "cybersecurity",
+    "offensive-security",
+    "mtp",
+    "en",
+    "base_model:zai-org/GLM-5.3",
+    "base_model:quantized:zai-org/GLM-5.3",
+    "license:mit",
+    "8-bit",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 390942074880,
+  "parameters_human": "390.94B",
+  "storage_bytes": 464864636799,
+  "storage_human": "464.9 GB",
+  "base_model": "zai-org/GLM-5.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Enable Sign language view in Microsoft Teams Free",
+      "url": "https://support.microsoft.com/en-au/teams/free/meetings/enable-sign-language-view-in-microsoft-teams-free",
+      "snippet": "When Sign language view is enabled in Microsoft Teams Free, designated sign language interpreters stay visible in the main viewing …"
+    },
+    {
+      "title": "Can we still manage signers under the sign language view?",
+      "url": "https://learn.microsoft.com/en-us/answers/questions/5510319/can-we-still-manage-signers-under-the-sign-languag",
+      "snippet": "Jul 31, 2025 · I recently noticed that the Sign Language View in Microsoft Teams has been updated. Previously, there was an option …"
+    },
+    {
+      "title": "Microsoft continues with accessibility initiatives with new sign ...",
+      "url": "https://attoday.co.uk/microsoft-continues-with-accessibility-initiatives-with-new-sign-language-view-in-teams/",
+      "snippet": "Nov 28, 2022 · Microsoft Teams can now have up to two signers in view throughout each meeting. Sign language view reduces …"
+    },
+    {
+      "title": "Microsoft Teams just got another game changing accessibility feature",
+      "url": "https://www.techradar.com/news/microsoft-teams-just-got-another-game-changing-accessibility-feature",
+      "snippet": "Nov 29, 2022 · Teams Sign Language View When needed, up to two sign language interpreters’ video feeds are kept in a consistent …"
+    },
+    {
+      "title": "Microsoft introduces sign language view in Teams - The Hans India",
+      "url": "https://www.thehansindia.com/technology/tech-news/microsoft-introduces-sign-language-view-in-teams-769840",
+      "snippet": "Nov 19, 2022 · Microsoft has introduced \"sign language view\", a new meeting experience in Teams that will assist signers - people …"
+    }
+  ]
+}

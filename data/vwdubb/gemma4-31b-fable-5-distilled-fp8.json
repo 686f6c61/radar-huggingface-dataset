@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "vwdubb/gemma4-31B-Fable-5-Distilled-FP8",
+  "slug": "vwdubb-gemma4-31b-fable-5-distilled-fp8",
+  "author": "vwdubb",
+  "url": "https://huggingface.co/vwdubb/gemma4-31B-Fable-5-Distilled-FP8",
+  "created_at": "2026-09-18T15:33:29.000Z",
+  "updated_at": "2026-09-18T15:37:59.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "gemma-4",
+    "fable-5",
+    "lora",
+    "tool-use",
+    "code-generation",
+    "multimodal",
+    "reasoning",
+    "conversational",
+    "agentic",
+    "en",
+    "dataset:Glint-Research/Fable-5-traces",
+    "base_model:autotrust/gemma4-31B-Fable-5-Distilled",
+    "base_model:quantized:autotrust/gemma4-31B-Fable-5-Distilled",
+    "license:gemma",
+    "model-index",
+    "endpoints_compatible",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31273088876,
+  "parameters_human": "31.27B",
+  "storage_bytes": 33295407866,
+  "storage_human": "33.3 GB",
+  "base_model": "autotrust/gemma4-31B-Fable-5-Distilled",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Code Generation",
+      "dataset": "HumanEval",
+      "metric": "HumanEval pass@1",
+      "value": 92.7
+    }
+  ],
+  "sources": [
+    {
+      "title": "Populaire Spelletjes - Gratis 5000 online spelletjes spele.",
+      "url": "https://www.spel.nl/spellen/try-now-gd?page=1",
+      "snippet": "Meer dan 5000 gratis spelletjes om te spele!"
+    },
+    {
+      "title": "Gratis spellen – Speel online spellen op spelletjes.nl",
+      "url": "https://www.spelletjes.nl/",
+      "snippet": "Spelletjes.nl heeft meer dan 10.000 gratis online spellen voor jong en oud. Speel nu gratis leuke spellen!"
+    },
+    {
+      "title": "Nieuwe spellen - Gratis 5000 online spelletjes spele.",
+      "url": "https://www.spel.nl/spellen/nieuw?page=1",
+      "snippet": "Spele - Leuke gratis spele op Spel.nl. De coolste funnygames op 1 spelletjessite. Meer dan 5000 gratis spelletjes om te spele!"
+    },
+    {
+      "title": "Nieuwe spelletjes op Spelletjes.nl spele!",
+      "url": "https://www.spelletjes.nl/spellen/nieuw?page=1",
+      "snippet": "Meer dan 5000 gratis spelletjes en online games voor elke leeftijd. games op Spelletjes.nl!"
+    },
+    {
+      "title": "Spelletjes - Gratis Spelletjes Online Spelen op Spele.nl",
+      "url": "https://spele.nl/",
+      "snippet": "Bij Spele.nl speel je gratis meer dan 5000 online spelletjes! Geniet van de beste autospelletjes, actie-, avonturen-, puzzelspellen, girl …"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "bimabk/instruct_tenun_57694256d93e8c1423ce",
+  "slug": "bimabk-instruct_tenun_57694256d93e8c1423ce",
+  "author": "bimabk",
+  "url": "https://huggingface.co/bimabk/instruct_tenun_57694256d93e8c1423ce",
+  "created_at": "2026-09-18T19:31:12.000Z",
+  "updated_at": "2026-09-18T19:31:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:/cache/models/gradients-io-tournaments--augmented-8a3f84c4cc4a7528",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:gradients-io-tournaments/augmented-8a3f84c4cc4a7528",
+    "base_model:adapter:gradients-io-tournaments/augmented-8a3f84c4cc4a7528",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 377950360,
+  "storage_human": "378 MB",
+  "base_model": "gradients-io-tournaments/augmented-8a3f84c4cc4a7528",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Settlers Online",
+      "url": "https://forum.juego-thesettlersonline.com/index.php",
+      "snippet": "Nov 4, 2025 · Comunidad Último Mensaje Los jugadores de \"The Settlers Online\" son muy diligentes; por lo tanto, aquí encontrarás …"
+    },
+    {
+      "title": "Comunidad - forum.juego-thesettlersonline.com",
+      "url": "https://forum.juego-thesettlersonline.com/forums/222-Comunidad",
+      "snippet": "Dec 3, 2014 · Los jugadores de \"The Settlers Online\" son muy diligentes; por lo tanto, aquí encontrarás todos los temas que no son …"
+    },
+    {
+      "title": "Concurso: consejo de la semana (Isla del tesoro)",
+      "url": "https://forum.juego-thesettlersonline.com/forums/204-Concurso-consejo-de-la-semana-(Isla-del-tesoro)",
+      "snippet": "Aug 4, 2013 · Aquí encontrarás el concurso semana tras semana.Esta sección también es nuestra isla del tesoro, ya que esta llena …"
+    },
+    {
+      "title": "Default Calendar - forum.juego-thesettlersonline.com",
+      "url": "https://forum.juego-thesettlersonline.com/calendar.php?year=2025&month=10&c=1",
+      "snippet": "Bienvenido al foro oficial de Si esta es tu primera visita, asegúrate de consultar las Preguntas frecuentes haciendo clic en el enlace …"
+    },
+    {
+      "title": "Ver Perfil: admin - The Settlers Online",
+      "url": "https://forum.juego-thesettlersonline.com/members/1-admin",
+      "snippet": "Sep 9, 2013 · Si esta es tu primera visita, asegúrate de consultar las Preguntas frecuentes haciendo clic en el enlace de arriba. Para …"
+    }
+  ]
+}

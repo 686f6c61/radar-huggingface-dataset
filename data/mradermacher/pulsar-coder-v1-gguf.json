@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "mradermacher/pulsar-coder-v1-GGUF",
+  "slug": "mradermacher-pulsar-coder-v1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/pulsar-coder-v1-GGUF",
+  "created_at": "2026-09-18T18:44:39.000Z",
+  "updated_at": "2026-09-18T18:56:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "pulsar",
+    "coder",
+    "uncensored",
+    "text-generation",
+    "safetensors",
+    "qwen2",
+    "ru",
+    "en",
+    "base_model:Sonorix/pulsar-coder-v1",
+    "base_model:quantized:Sonorix/pulsar-coder-v1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 14206942848,
+  "storage_human": "14.2 GB",
+  "base_model": "Sonorix/pulsar-coder-v1",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EcoleDirecte",
+      "url": "https://www.ecoledirecte.com/login?cameFrom=%2FEleves%2F5242",
+      "snippet": "EcoleDirecte : Bienvenue sur le site internet EcoleDirecte. Espace famille, élève, personnel, enseignant ..."
+    },
+    {
+      "title": "EcoleDirecte - Administration",
+      "url": "https://admin.ecoledirecte.com/login",
+      "snippet": "EcoleDirecte : Bienvenue sur le site d'administration des sites EcoleDirecte"
+    },
+    {
+      "title": "EcoleDirecte",
+      "url": "https://secure.ecoledirecte.com/ATOSCancel.aspx?plateformeSpecifique=SHERLOCKS",
+      "snippet": "STATIM vous redirige vers sa page d'accueil"
+    },
+    {
+      "title": "Mot de passe oublié - EcoleDirecte",
+      "url": "https://api.ecoledirecte.com/mot-de-passe-oublie.awp",
+      "snippet": "EcoleDirecte COMMENT SOUHAITEZ-VOUS RÉCUPÉRER VOS IDENTIFIANTS ? Adresse email ou numéro de téléphone"
+    },
+    {
+      "title": "{\"code\":225, \"token\":\"\", \"host\":\"HTTP182\", \"message ... - EcoleDirecte",
+      "url": "https://api.ecoledirecte.com/v3/enseignants/C/13/recapitulatifAnnuel/editionNotes.awp?verbe=get",
+      "snippet": "{\"code\":225, \"token\":\"\", \"host\":\"HTTP182\", \"message\":\"ParamÃ¨tres spÃ©cifiÃ©s incorrects !\"}"
+    }
+  ]
+}

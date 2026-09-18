@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Yoge-2004/expense-intelligence-model",
+  "slug": "yoge-2004-expense-intelligence-model",
+  "author": "Yoge-2004",
+  "url": "https://huggingface.co/Yoge-2004/expense-intelligence-model",
+  "created_at": "2026-09-18T16:14:04.000Z",
+  "updated_at": "2026-09-18T16:16:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "joblib",
+    "finance",
+    "expense-tracker",
+    "text-classification",
+    "tabular",
+    "scikit-learn",
+    "tf-idf",
+    "en",
+    "dataset:Ranjit0034/finee-dataset",
+    "dataset:Sumeetgpt/indian-transaction-categorization-synthetic",
+    "dataset:mitulshah/transaction-categorization",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 613932085,
+  "storage_human": "614 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube Help",
+      "url": "https://support.google.com/youtube/?hl=en",
+      "snippet": "Official YouTube Help Center where you can find tips and tutorials on using YouTube and other answers to frequently asked questions."
+    },
+    {
+      "title": "Přihlášení do aplikace YouTube na chytré televizi nebo herní konzoli",
+      "url": "https://support.google.com/youtube/answer/3015415?hl=cs",
+      "snippet": "Přečtěte si, jak se odhlásit nebo odebrat účet v aplikaci YouTube na chytré televizi nebo herní konzoli. Pokud jste členem služby …"
+    },
+    {
+      "title": "Results for \"Decoy\" - Pinkbike BuySell Search",
+      "url": "https://www.pinkbike.com/buysell/list/?q=Decoy",
+      "snippet": "Explore North America's largest marketplace for used mountain bikes and parts."
+    },
+    {
+      "title": "Channel or account terminations - YouTube Help - Google Help",
+      "url": "https://support.google.com/youtube/answer/2802168?hl=en",
+      "snippet": "Check status of a termination appeal Open YouTube Studio. View confirmation of your appeal submission, and check your appeal’s …"
+    },
+    {
+      "title": "YouTube 鍵盤快速鍵",
+      "url": "https://support.google.com/youtube/answer/7631406?hl=zh-Hant",
+      "snippet": "如果你使用的是 新版電腦網頁，必須先按一下影片播放器，才能使用鍵盤快速鍵。如要回復到舊版電腦網頁，請依序按一下個人資料 …"
+    }
+  ]
+}

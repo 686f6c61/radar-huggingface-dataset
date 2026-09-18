@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "arianaazarbal/ct-inkling-oai-ed7-mid-g1-b1",
+  "slug": "arianaazarbal-ct-inkling-oai-ed7-mid-g1-b1",
+  "author": "arianaazarbal",
+  "url": "https://huggingface.co/arianaazarbal/ct-inkling-oai-ed7-mid-g1-b1",
+  "created_at": "2026-09-18T19:14:56.000Z",
+  "updated_at": "2026-09-18T19:16:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "constitutional-training",
+    "iterated-constitution",
+    "family:inkling_small",
+    "seed:openai",
+    "method:ed7",
+    "regime:mid",
+    "gen:1",
+    "branch:b1",
+    "text-generation",
+    "base_model:thinkingmachines/Inkling-Small",
+    "base_model:adapter:thinkingmachines/Inkling-Small",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16901410336,
+  "storage_human": "16.9 GB",
+  "base_model": "thinkingmachines/Inkling-Small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MQL5: automated forex trading, strategy tester and custom indicators …",
+      "url": "https://www.mql5.com/",
+      "snippet": "MQL5: language of trade strategies built-in the MetaTrader 5 Trading Platform, allows writing your own trading robots, technical …"
+    },
+    {
+      "title": "Log in - MQL5",
+      "url": "https://www.mql5.com/en/auth_login",
+      "snippet": "Logging in to MQL5.com website Online trading / WebTerminal Free technical indicators and robots Articles about programming and …"
+    },
+    {
+      "title": "News | Forex Factory",
+      "url": "https://www.forexfactory.com/news",
+      "snippet": "Forex News - the fastest breaking news, useful Forex analysis, and Forex industry news, submitted from quality Forex news sources …"
+    },
+    {
+      "title": "Calendar | Forex Factory",
+      "url": "https://www.forexfactory.com/calendar?day=today",
+      "snippet": "Anticipate market-moving events long before they happen with the internet's most forex-focused economic calendar."
+    },
+    {
+      "title": "A Market of trading robots, technical indicators, and other ... - MQL5",
+      "url": "https://www.mql5.com/en/market",
+      "snippet": "Forex Market – an App Store of trading robots, Expert Advisors and technical indicators. Free and paid applications for forex trading. …"
+    }
+  ]
+}

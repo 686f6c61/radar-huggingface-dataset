@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "JohnZayar/John.z",
+  "slug": "johnzayar-john-z",
+  "author": "JohnZayar",
+  "url": "https://huggingface.co/JohnZayar/John.z",
+  "created_at": "2026-09-18T19:21:07.000Z",
+  "updated_at": "2026-09-18T19:21:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Convertidor de JPG a PDF | Vectorización por IA en línea - Vectorizer.AI",
+      "url": "https://es.vectorizer.ai/jpg-to-pdf-converter",
+      "snippet": "Vectorización con tecnología de IA de alta calidad y a todo color. Obtenga una vista previa gratuita del resultado vectorial y expórtelo …"
+    },
+    {
+      "title": "Convertidor de JPG a vector | Vectorice archivos JPG en línea ...",
+      "url": "https://es.vectorizer.ai/jpg-to-vector-converter",
+      "snippet": "Convierta imágenes JPG en archivos vectoriales limpios y editables en línea. Vectorización con IA, imágenes a todo color, vista …"
+    },
+    {
+      "title": "Imagen a DWG – Convierte imágenes a DWG online",
+      "url": "https://floor-plan.ai/es/image-to-dwg",
+      "snippet": "Convierte fotos de planos, PNG o JPG a DWG editable online. La IA separa paredes, puertas, ventanas y habitaciones en 4 capas …"
+    },
+    {
+      "title": "Generador de dibujos CAD con IA para dibujo técnico rápido | AIAI ...",
+      "url": "https://creati.ai/es/ai-tools/ai-cad-drawing-generator/",
+      "snippet": "May 12, 2026 · El generador de dibujos CAD con IA de AIAI convierte bocetos, fotos, PDFs o textos en dibujos técnicos limpios y …"
+    },
+    {
+      "title": "Generador de Dibujos CAD de IA - glima.ai",
+      "url": "https://glima.ai/es/generador-de-imagenes/ai-dibujo-cad",
+      "snippet": "Es una herramienta impulsada por IA que convierte bocetos, imágenes o conceptos en dibujos CAD detallados en formatos como …"
+    }
+  ]
+}

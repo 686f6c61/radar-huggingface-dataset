@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "AlinaGonch/qwen3-4b-instruct-squad-ratio-0.20-seed-42",
+  "slug": "alinagonch-qwen3-4b-instruct-squad-ratio-0-20-seed-42",
+  "author": "AlinaGonch",
+  "url": "https://huggingface.co/AlinaGonch/qwen3-4b-instruct-squad-ratio-0.20-seed-42",
+  "created_at": "2026-09-18T17:21:01.000Z",
+  "updated_at": "2026-09-18T17:21:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 143610542,
+  "storage_human": "144 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lufthansa Aerotimer - Uhrenbestimmung - UHRFORUM",
+      "url": "https://uhrforum.de/threads/lufthansa-aerotimer.30088/",
+      "snippet": "Aug 3, 2009 · Hallo, ich habe eine Aerotimer von meinem Vater bekommen und möchte gerne wissen woher man Informationen für …"
+    },
+    {
+      "title": "Mühle Terrasport Edition Lufthansa – die Alternative für ... - UHRFORUM",
+      "url": "https://uhrforum.de/threads/muhle-terrasport-edition-lufthansa-die-alternative-fur-schnappchenjager.431714/",
+      "snippet": "Nov 30, 2006 · Diskutiere Mühle Terrasport Edition Lufthansa – die Alternative für Schnäppchenjäger im Uhrenvorstellungen Forum …"
+    },
+    {
+      "title": "Mein schönster Quarzer: Laco Chronograph (Lufthansa-Edition",
+      "url": "https://uhrforum.de/threads/mein-schonster-quarzer-laco-chronograph-lufthansa-edition-aviation-history.170941/",
+      "snippet": "Mar 19, 2013 · Zitieren 12.04.2014 Mein schönster Quarzer: Laco Chronograph (Lufthansa-Edition Aviation History) Beitrag #9 …"
+    },
+    {
+      "title": "Nautische Instrumente Mühle Glashütte Terrasport II LH ... - UHRFORUM",
+      "url": "https://uhrforum.de/threads/nautische-instrumente-muhle-glashutte-terrasport-ii-lh-edition-m1-37-60.234378/",
+      "snippet": "Oct 20, 2015 · Hallo Forum. Nachdem ich gestern bereits meinen \"Dresser\" vorgestellt habe, so ist es heute mein Mühle- Dreizeiger …"
+    },
+    {
+      "title": "Tipp zum Öffnen einer Uhr mit verschraubtem Deckel durch Reibung ...",
+      "url": "https://uhrforum.de/threads/tipp-zum-offnen-einer-uhr-mit-verschraubtem-deckel-durch-reibung-gesucht-keine-aussparungen-im-deckel-vorhanden.622669/",
+      "snippet": "Jun 15, 2026 · Hallo zusammen, ich versuche eine Uhr mit verschraubtem Deckel, der leider keine Aussparungen hat, die das …"
+    }
+  ]
+}

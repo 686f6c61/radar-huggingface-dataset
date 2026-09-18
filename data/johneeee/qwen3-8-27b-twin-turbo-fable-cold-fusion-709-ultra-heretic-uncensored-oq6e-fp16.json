@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Johneeee/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored-oQ6e-fp16",
+  "slug": "johneeee-qwen3-8-27b-twin-turbo-fable-cold-fusion-709-ultra-heretic-uncensored-oq6e-fp16",
+  "author": "Johneeee",
+  "url": "https://huggingface.co/Johneeee/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored-oQ6e-fp16",
+  "created_at": "2026-09-18T14:13:07.000Z",
+  "updated_at": "2026-09-18T14:20:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "oq",
+    "quantized",
+    "6-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 22539213571,
+  "storage_human": "22.5 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bing",
+      "url": "https://www.bing.com/RelatedSearch",
+      "snippet": ""
+    },
+    {
+      "title": "Bing",
+      "url": "https://www.bing.com/version",
+      "snippet": "Bing ... Versions"
+    },
+    {
+      "title": "Search - Microsoft Bing",
+      "url": "https://www2.bing.com/",
+      "snippet": "Search with Microsoft Bing and use the power of AI to find information, explore webpages, images, videos, maps, and more. A smart …"
+    },
+    {
+      "title": "How to See All Bing Related Searches on Any Device",
+      "url": "https://rottenwifi.com/how-to-see-all-bing-related-searches/",
+      "snippet": "Jul 1, 2026 · This guide walks through the practical ways to see Bing related searches on desktop, mobile, and Microsoft Edge. It also …"
+    },
+    {
+      "title": "How to See All Bing Related Searches - cloudspress.com",
+      "url": "https://www.cloudspress.com/how-to-see-all-bing-related-searches/",
+      "snippet": "Aug 7, 2026 · Bing does not have a public “see everything” page for a keyword. Its related searches and autocomplete suggestions …"
+    }
+  ]
+}

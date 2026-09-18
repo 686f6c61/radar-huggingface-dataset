@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "SlayerLab/NERGAL",
+  "slug": "slayerlab-nergal",
+  "author": "SlayerLab",
+  "url": "https://huggingface.co/SlayerLab/NERGAL",
+  "created_at": "2026-09-18T19:35:23.000Z",
+  "updated_at": "2026-09-19T23:05:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "pl"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "token-classification",
+    "polish",
+    "pii",
+    "ner",
+    "hybrid",
+    "pl",
+    "base_model:FacebookAI/xlm-roberta-large",
+    "base_model:finetune:FacebookAI/xlm-roberta-large",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 558848005,
+  "parameters_human": "558.8M",
+  "storage_bytes": 2257980638,
+  "storage_human": "2.3 GB",
+  "base_model": "FacebookAI/xlm-roberta-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "老板说“滚”后，员工没去上班被辞退 一审认定旷工 二审改判员工获赔 …",
+      "url": "https://www.sohu.com/a/1026325305_162758",
+      "snippet": "May 22, 2026 · 2020年，上海一化工企业员工小彭因工作安排与领导发生争执，老板一怒之下让他“滚”，小彭就离开了单位。 几天后， …"
+    },
+    {
+      "title": "男子被老板骂滚当即离职，公司却以旷工解约，法院二审改判迎翻转_ …",
+      "url": "https://www.sohu.com/a/1010967567_122574728",
+      "snippet": "Apr 17, 2026 · 丁力是公司的老员工，2012年就入职了，事发时是综合管理部经理，对公司里里外外的事都门儿清。 2020年5月15号， …"
+    },
+    {
+      "title": "老板一句“滚”，员工赔16万！法院：不算旷工，公司违法辞退！",
+      "url": "https://www.toutiao.com/article/7643619045371068943/",
+      "snippet": "May 25, 2026 · 但一句话丢工作、还倒赔十几万的事，真的发生了。 最近，上海一起劳动争议案重新刷屏：员工和老板争执，被当场 …"
+    },
+    {
+      "title": "老板说“滚”，员工真滚了！反被判旷工，终审判决反转 - 今日头条",
+      "url": "https://www.toutiao.com/article/7630687184550445602/",
+      "snippet": "May 12, 2026 · 很多老板气头上容易口无遮拦，说“滚”“你不用来了”“明天别上班了”这类气话，但殊不知，这类模糊的表述，很容易被员 …"
+    },
+    {
+      "title": "男子被骂滚后不上班被开除获赔近16万 二审改判公司违法解除劳动合 …",
+      "url": "https://news.china.com/socialgd/10000169/20260417/49424680.html",
+      "snippet": "Apr 17, 2026 · 2020年5月15日，丁力与王总（化姓）在王总办公室为工作事宜发生争执，王总让丁力“滚”，丁力随后离开公司未再上班 …"
+    }
+  ]
+}

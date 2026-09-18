@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "avewright/value99-chessfens-24x576",
+  "slug": "avewright-value99-chessfens-24x576",
+  "author": "avewright",
+  "url": "https://huggingface.co/avewright/value99-chessfens-24x576",
+  "created_at": "2026-09-18T12:52:23.000Z",
+  "updated_at": "2026-09-18T12:52:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "chess",
+    "transformer",
+    "value",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 395792519,
+  "storage_human": "396 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "INTEGRITY Definition & Meaning - Merriam-Webster",
+      "url": "https://www.merriam-webster.com/dictionary/integrity",
+      "snippet": "6 days ago · honesty, honor, integrity, probity mean uprightness of character or action. honesty implies a refusal to lie, steal, or …"
+    },
+    {
+      "title": "Integrity - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Integrity",
+      "snippet": "Integrity is the quality of being honest and having a consistent and uncompromising adherence to strong moral and ethical principles …"
+    },
+    {
+      "title": "INTEGRITY | English meaning - Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/dictionary/english/integrity",
+      "snippet": "INTEGRITY definition: 1. the quality of being honest and having strong moral principles that you refuse to change: 2…. Learn more."
+    },
+    {
+      "title": "INTEGRITY | definition in the Cambridge English Dictionary",
+      "url": "https://dictionary.cambridge.org/us/dictionary/english/integrity",
+      "snippet": "INTEGRITY meaning: 1. the quality of being honest and having strong moral principles that you refuse to change: 2…. Learn more."
+    },
+    {
+      "title": "Integrity: Definition, Meaning, and Examples - US Dictionary",
+      "url": "https://usdictionary.com/definitions/integrity/",
+      "snippet": "Jul 1, 2024 · What is the difference between \"integrity\" and honesty? While honesty involves truthfulness in one's words and actions, …"
+    }
+  ]
+}

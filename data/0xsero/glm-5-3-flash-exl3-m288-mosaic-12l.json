@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "0xSero/GLM-5.3-Flash-EXL3-M288-Mosaic-12L",
+  "slug": "0xsero-glm-5-3-flash-exl3-m288-mosaic-12l",
+  "author": "0xSero",
+  "url": "https://huggingface.co/0xSero/GLM-5.3-Flash-EXL3-M288-Mosaic-12L",
+  "created_at": "2026-09-18T15:11:09.000Z",
+  "updated_at": "2026-09-18T19:53:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm5_next",
+    "image-text-to-text",
+    "exl3",
+    "quantized",
+    "moe",
+    "glm",
+    "dgx-spark",
+    "mixed-precision",
+    "long-context",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:turboderp/GLM-5.3-Flash-exl3",
+    "base_model:quantized:turboderp/GLM-5.3-Flash-exl3",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 47964424286,
+  "parameters_human": "47.96B",
+  "storage_bytes": 96105023891,
+  "storage_human": "96.1 GB",
+  "base_model": "turboderp/GLM-5.3-Flash-exl3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DRIVE-CLiQ Anbaudrehgeber - support.industry.siemens.com",
+      "url": "https://support.industry.siemens.com/cs/attachments/109822406/mc_encoder_drive_cliq_op_instr_0723_de-DE.pdf",
+      "snippet": "Siemens übernimmt für den ausgelieferten DRIVE‐CLiQ Drehgeber und SINAMICS‐S120 die Verantwortung dafür, dass die …"
+    },
+    {
+      "title": "Siemens SINUMERIK MC Funktionshandbuch - ManualsLib",
+      "url": "https://www.manualslib.de/manual/717517/Siemens-Sinumerik-Mc.html",
+      "snippet": "Security-Hinweise Siemens bietet Produkte und Lösungen mit Industrial Security-Funktionen an, die den sicheren Betrieb von …"
+    },
+    {
+      "title": "Mechatronic concept design - Siemens",
+      "url": "https://www.siemens.com/en-us/products/designcenter/cad-software/machine-engineering/mechatronic-design/",
+      "snippet": "Quickly create and validate alternative design concepts early in the development cycle, leveraging easy-to-use modeling and …"
+    },
+    {
+      "title": "Der Digitale Zwilling mit dem Mechatronics Concept Designer­",
+      "url": "https://www.blue-automation.de/de/software/mechatronics-concept-designer-mcd",
+      "snippet": "Der Mechatronics Concept Designer (MCD) ist eine Anwendung, die hauptsächlich für die virtuelle Inbetriebnahme mittels eines …"
+    },
+    {
+      "title": "Dokumentation und Downloads | Siemens",
+      "url": "https://www.siemens.com/de-de/support/documentation-downloads/",
+      "snippet": "Hier finden Sie Produktdokumentation, Wissensdatenbanken, Downloads und eine Vielzahl von Entwicklerressourcen für Produkte …"
+    }
+  ]
+}

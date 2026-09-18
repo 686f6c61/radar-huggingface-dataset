@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "keystats/Legend_ocr",
+  "slug": "keystats-legend_ocr",
+  "author": "keystats",
+  "url": "https://huggingface.co/keystats/Legend_ocr",
+  "created_at": "2026-09-18T17:07:39.000Z",
+  "updated_at": "2026-09-18T17:08:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2_5_vl",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8292166656,
+  "parameters_human": "8.29B",
+  "storage_bytes": 16595836608,
+  "storage_human": "16.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "90minut.pl",
+      "url": "http://www.90minut.pl/",
+      "snippet": "Aktualnie w bazie 90minut.pl jest - 53969 zawodników / 28468 drużyn / 15037 rozgrywek"
+    },
+    {
+      "title": "90minut.pl",
+      "url": "http://www.90minut.pl/ligireg.html",
+      "snippet": "Ligi regionalne 2026/27 2025/26"
+    },
+    {
+      "title": "Ligi regionalne 2026/27 - Podkarpacki ZPN - 90minut.pl",
+      "url": "http://www.90minut.pl/ligireg-8.html",
+      "snippet": "Ligi regionalne 2026/27 - Podkarpacki ZPN 2025/26"
+    },
+    {
+      "title": "90minut.pl",
+      "url": "http://www.90minut.pl/ligireg-5.html",
+      "snippet": "Ligi regionalne 2026/27 - Małopolski ZPN 2025/26"
+    },
+    {
+      "title": "90minut.pl",
+      "url": "http://www2.90minut.pl/strona.php?id=o_stronie",
+      "snippet": "W lipcu 2000 roku został otwarty drugi lokalny oddział - RSSSF Brazil, zaś w listopadzie 2002 roku tego zaszczytu dostąpił serwis 90 …"
+    }
+  ]
+}

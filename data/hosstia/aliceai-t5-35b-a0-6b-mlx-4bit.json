@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Hosstia/AliceAI-T5-35B-A0.6B-MLX-4bit",
+  "slug": "hosstia-aliceai-t5-35b-a0-6b-mlx-4bit",
+  "author": "Hosstia",
+  "url": "https://huggingface.co/Hosstia/AliceAI-T5-35B-A0.6B-MLX-4bit",
+  "created_at": "2026-09-18T14:23:34.000Z",
+  "updated_at": "2026-09-19T16:23:48.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "translation",
+  "library": "mlx",
+  "languages": [
+    "zh",
+    "ru"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "aliceai_t5_moe_mlx",
+    "translation",
+    "chinese",
+    "russian",
+    "t5",
+    "moe",
+    "quantized",
+    "zh",
+    "ru",
+    "base_model:yandex/AliceAI-T5-35B-A0.6B",
+    "base_model:finetune:yandex/AliceAI-T5-35B-A0.6B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34354463744,
+  "parameters_human": "34.35B",
+  "storage_bytes": 19673879999,
+  "storage_human": "19.7 GB",
+  "base_model": "yandex/AliceAI-T5-35B-A0.6B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=2822793bd54464150e5e6ee3d4ca65a4",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Get access to free online versions of Outlook, Word, Excel, and PowerPoint."
+    },
+    {
+      "title": "My Account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    },
+    {
+      "title": "Microsoft 365 for Individuals: Subscription for Productivity Apps",
+      "url": "https://www.microsoft.com/en-us/microsoft-365?msockid=2822793bd54464150e5e6ee3d4ca65a4",
+      "snippet": "Microsoft 365 (formerly Office 365) subscriptions offer a suite of productivity tools and cloud services with world-class security and …"
+    },
+    {
+      "title": "Microsoft - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Microsoft",
+      "snippet": "Microsoft Corporation is an American multinational technology company headquartered in Redmond, Washington. The company …"
+    }
+  ]
+}

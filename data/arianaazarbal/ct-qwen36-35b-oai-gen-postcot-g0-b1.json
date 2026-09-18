@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "arianaazarbal/ct-qwen36-35b-oai-gen-postcot-g0-b1",
+  "slug": "arianaazarbal-ct-qwen36-35b-oai-gen-postcot-g0-b1",
+  "author": "arianaazarbal",
+  "url": "https://huggingface.co/arianaazarbal/ct-qwen36-35b-oai-gen-postcot-g0-b1",
+  "created_at": "2026-09-18T18:09:35.000Z",
+  "updated_at": "2026-09-18T18:10:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "constitutional-training",
+    "iterated-constitution",
+    "family:qwen36_35b",
+    "seed:openai",
+    "method:gen",
+    "regime:post_cot",
+    "gen:0",
+    "branch:b1",
+    "text-generation",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:adapter:Qwen/Qwen3.6-35B-A3B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4491829400,
+  "storage_human": "4.5 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Local Marketing Guide: Win More Customers Nearby",
+      "url": "https://searchengineland.com/guide/local-marketing",
+      "snippet": "Nov 27, 2025 · Master local marketing with proven SEO, social, and offline tactics to boost visibility, build trust, and grow your local …"
+    },
+    {
+      "title": "Localized Marketing Strategies for 2026 (With Tools & Examples)",
+      "url": "https://geotargetly.com/blog/localized-marketing-strategies",
+      "snippet": "Master localized marketing with proven strategies, tools like Geotargetly, and brand examples. Learn how to engage local audiences …"
+    },
+    {
+      "title": "10 Essential Local Business Marketing Strategies for 2025",
+      "url": "https://adwave.com/resources/local-business-marketing-strategies",
+      "snippet": "Discover 10 actionable local business marketing strategies to boost visibility, engage your community, and drive growth. Master local …"
+    },
+    {
+      "title": "Local Marketing: A Complete Guide | Salesforce EU",
+      "url": "https://www.salesforce.com/eu/marketing/local-marketing/",
+      "snippet": "Local marketing refers to the strategies and tactics businesses can use to promote their products or services to potential customers …"
+    },
+    {
+      "title": "10 Local Marketing Strategies for Small Businesses in 2025",
+      "url": "https://www.jimdo.com/blog/local-marketing-strategy-small-businesses/",
+      "snippet": "Oct 31, 2025 · Discover how to build a powerful local marketing strategy for your small business. Learn how to attract local …"
+    }
+  ]
+}

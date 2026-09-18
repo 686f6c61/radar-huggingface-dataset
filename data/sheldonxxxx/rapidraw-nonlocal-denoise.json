@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "sheldonxxxx/RapidRAW-Nonlocal-Denoise",
+  "slug": "sheldonxxxx-rapidraw-nonlocal-denoise",
+  "author": "sheldonxxxx",
+  "url": "https://huggingface.co/sheldonxxxx/RapidRAW-Nonlocal-Denoise",
+  "created_at": "2026-09-18T12:01:59.000Z",
+  "updated_at": "2026-09-18T12:02:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "coreml",
+    "onnx",
+    "arxiv:2604.17453",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 172276713,
+  "storage_human": "172 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pare-chocs au meilleur prix - Oscaro",
+      "url": "https://www.oscaro.com/pare-chocs-938-g?msockid=059b0280ee2c670c116f1558efee6666",
+      "snippet": "En général, les pare-chocs en plastique sont moins chers que les pare-chocs en métal. Sur Oscaro.com, le coût moyen d'un pare …"
+    },
+    {
+      "title": "Pare-chocs, pièces auto au meilleur prix | Carter-Cash",
+      "url": "https://www.carter-cash.com/pieces-auto/c/carrosserie/pare-chocs",
+      "snippet": "Nous proposons une large gamme de pare-chocs pour divers véhicules tels que BMW, Audi, Alfa Romeo, Peugeot, Renault et bien …"
+    },
+    {
+      "title": "Pare-choc voiture avant et arrière | prix en ligne - Pièces auto 24",
+      "url": "https://www.piecesauto24.com/pare-choc",
+      "snippet": "Pour éliminer des bosses sur un pare-chocs en plastique, il faut d’abord en chauffer la surface à l’aide d’un pistolet thermique, puis …"
+    },
+    {
+      "title": "Baguette et bande protectrice, pare-chocs au meilleur prix - Oscaro",
+      "url": "https://www.oscaro.com/baguette-et-bande-protectrice-pare-chocs-1002-g?msockid=059b0280ee2c670c116f1558efee6666",
+      "snippet": "Baguette et bande protectrice, pare-chocs (Moulure de pare-chocs) de voiture pas cher, neuf et d’origine : toutes les plus grandes …"
+    },
+    {
+      "title": "Pare-choc voiture avant et arrière - Pièces auto",
+      "url": "https://www.piecesauto.fr/pieces-detachees/pare-choc.html",
+      "snippet": "Quel type de pare-choc ou quel pare-choc complet choisir ? Le tableau suivant compare les principales variantes selon leurs …"
+    }
+  ]
+}

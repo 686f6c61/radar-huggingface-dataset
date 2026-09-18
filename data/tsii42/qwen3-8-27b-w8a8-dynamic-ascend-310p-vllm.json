@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "tsii42/Qwen3.8-27B-W8A8-Dynamic-Ascend-310P-vLLM",
+  "slug": "tsii42-qwen3-8-27b-w8a8-dynamic-ascend-310p-vllm",
+  "author": "tsii42",
+  "url": "https://huggingface.co/tsii42/Qwen3.8-27B-W8A8-Dynamic-Ascend-310P-vLLM",
+  "created_at": "2026-09-18T17:58:38.000Z",
+  "updated_at": "2026-09-18T20:30:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen3.8",
+    "qwen3.8-27b",
+    "modelslim",
+    "w8a8",
+    "int8",
+    "ascend",
+    "huawei-ascend",
+    "ascend-310p",
+    "atlas-300i-duo",
+    "vllm",
+    "vllm-ascend",
+    "tensor-parallel",
+    "long-context",
+    "vision-language",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 36436567560,
+  "storage_human": "36.4 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Havel in Flammen: Feuerwerk auf dem Templiner See",
+      "url": "https://www.potsdam-sanssouci.com/havel-in-flammen/",
+      "snippet": "Sep 19, 2026 · Erleben Sie \"Havel in Flammen\" auf dem Templiner See! Mieten Sie ein Boot oder buchen Sie eine Tour & genießen …"
+    },
+    {
+      "title": "Havel in Flammen 2026 - potsdamtourismus.de",
+      "url": "https://www.potsdamtourismus.de/event/havel-in-flammen-2026",
+      "snippet": "19 hours ago · Erleben Sie mit „Havel in Flammen“ einen festlichen Abend auf dem Wasser. Eine eindrucksvolle Korsofahrt der …"
+    },
+    {
+      "title": "Live-Webcams Brandenburg an der Havel, Deutschland - Webcamera24",
+      "url": "https://webcamera24.com/de/countries/germany/brandenburg-an-der-havel/",
+      "snippet": "Erleben Sie Brandenburg an der Havel live: Straßen, Plätze, Strände und Sehenswürdigkeiten in Echtzeit. Über 4 kostenlose HD …"
+    },
+    {
+      "title": "Potsdam – Havel in Flammen 2026 - FEUERWERK-FANPAGE.de",
+      "url": "https://www.feuerwerk-fanpage.de/feuerwerkstermine/potsdam-havel-in-flammen/",
+      "snippet": "19 hours ago · Potsdam – Havel in Flammen 2026 Im September machen sich die Schiffe der Potsdamer Reederei auf zu ihren …"
+    },
+    {
+      "title": "Region Werder (Havel) Live! Webcams und Wetter für Werder (Havel ...",
+      "url": "https://www.webcamgalore.de/ortsverzeichnis/Deutschland/Werder-Havel/25968.html",
+      "snippet": "Eine Auflistung von Webcams in der Region Werder (Havel), Deutschland, inklusive Wetter und Wetterbericht. Webcams nach …"
+    }
+  ]
+}

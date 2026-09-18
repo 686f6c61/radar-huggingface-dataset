@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "BeRestoral/DualEmbRoformer-slav",
+  "slug": "berestoral-dualembroformer-slav",
+  "author": "BeRestoral",
+  "url": "https://huggingface.co/BeRestoral/DualEmbRoformer-slav",
+  "created_at": "2026-09-18T12:12:55.000Z",
+  "updated_at": "2026-09-20T11:13:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "orv",
+    "cu"
+  ],
+  "tags": [
+    "safetensors",
+    "dual_emb_roformer_slav",
+    "masked-language-modeling",
+    "old-slavonic",
+    "old-russian",
+    "birchbark",
+    "historical-nlp",
+    "dual-embeddings",
+    "rope",
+    "custom_code",
+    "orv",
+    "cu",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 83677565,
+  "parameters_human": "83.7M",
+  "storage_bytes": 334730124,
+  "storage_human": "335 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "首頁 - Mobile01",
+      "url": "https://www.mobile01.com/",
+      "snippet": "Mobile01是台灣最大生活網站與論壇，報導範疇從汽車到手機，從機車到居家裝潢，還有相機、運動、時尚、房地產、投資、影音、電 …"
+    },
+    {
+      "title": "Mobile01 汽車 - Mobile01",
+      "url": "https://www.mobile01.com/category.php?id=6",
+      "snippet": "Mobile01 汽車頻道 - 新車試駕、開箱、評比、國際國內汽車新訊與獨家報導，關於汽車疑難雜症或是購車求菜單，都在 Mobile01 小惡 …"
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "这个网址是potplayer官网吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/509011663",
+      "snippet": "Feb 21, 2022 · ———————————————— 为了让更多人能搜到这个帖子，做点SEO。 PotPlayer是什么？PotPlayer怎么下 …"
+    },
+    {
+      "title": "MOTOR-TALK - Europas größte Auto- und Motor-Community!",
+      "url": "https://www.motor-talk.de/",
+      "snippet": "Europas größte Auto- und Motor Community! DAS Forum für technische Probleme, Tuning und Fragen zum Auto oder Motorrad."
+    }
+  ]
+}

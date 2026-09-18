@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "com-kotobalabs/Nex-N2.5-mini-Uncensored-W4A16-AutoRound",
+  "slug": "com-kotobalabs-nex-n2-5-mini-uncensored-w4a16-autoround",
+  "author": "com-kotobalabs",
+  "url": "https://huggingface.co/com-kotobalabs/Nex-N2.5-mini-Uncensored-W4A16-AutoRound",
+  "created_at": "2026-09-18T12:05:54.000Z",
+  "updated_at": "2026-09-18T12:08:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe",
+    "auto-round",
+    "w4a16",
+    "int4",
+    "gptq",
+    "vllm",
+    "uncensored",
+    "abliterated",
+    "text-generation",
+    "conversational",
+    "base_model:orcarouter/Nex-N2.5-mini-Uncensored",
+    "base_model:quantized:orcarouter/Nex-N2.5-mini-Uncensored",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6031903856,
+  "parameters_human": "6.03B",
+  "storage_bytes": 20680544065,
+  "storage_human": "20.7 GB",
+  "base_model": "orcarouter/Nex-N2.5-mini-Uncensored",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": ".com - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/.com",
+      "snippet": "The domain com is a top-level domain (TLD) in the Domain Name System (DNS) of the Internet. Created in the first group of Internet …"
+    },
+    {
+      "title": ".com — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/.com",
+      "snippet": "Domaine de premier niveau (TLD) du système de noms de domaines Internet, le nom de domaine .com correspond à l’abréviation de …"
+    },
+    {
+      "title": "COM’COM, expertise comptable Culture & Média",
+      "url": "https://comcom.fr/",
+      "snippet": "L’expert comptable au service des métiers de la création et de la communication, Com’Com est le département Culture & Média du …"
+    },
+    {
+      "title": "COM — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/COM",
+      "snippet": "Com est une abréviation courante de : communication, notamment dans les métiers de la communication ; port COM, un port …"
+    }
+  ]
+}

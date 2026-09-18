@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "anku1-1/Pixelcopter-PLE-v0",
+  "slug": "anku1-1-pixelcopter-ple-v0",
+  "author": "anku1-1",
+  "url": "https://huggingface.co/anku1-1/Pixelcopter-PLE-v0",
+  "created_at": "2026-09-18T14:19:39.000Z",
+  "updated_at": "2026-09-18T14:19:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "CartPole-v1",
+    "reinforce",
+    "reinforcement-learning",
+    "custom-implementation",
+    "deep-rl-class",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3657,
+  "storage_human": "3657 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Office 365 Login | Microsoft Office",
+      "url": "https://www.office.com/",
+      "snippet": "Collaborate for free with online versions of Microsoft Word, PowerPoint, Excel, and OneNote. Save documents, spreadsheets, and …"
+    },
+    {
+      "title": "Outlook",
+      "url": "https://outlook.office.com/mail/",
+      "snippet": "Securely sign in to access your Microsoft account and manage emails, calendars, and other services efficiently."
+    },
+    {
+      "title": "Microsoft 365 – Se connecter à Copilot - Office",
+      "url": "https://m365.cloud.microsoft/?omkt=fr-FR",
+      "snippet": "Microsoft 365 inclut des applications familières comme Word, Excel, PowerPoint, Outlook, Teams et OneDrive, ainsi que des …"
+    },
+    {
+      "title": "Téléchargez Microsoft Office 365 pour Windows et Mac | Microsoft 365",
+      "url": "https://www.microsoft.com/fr-fr/microsoft-365/download-office?msockid=337b9603e15b69c219d581dbe0a668b6",
+      "snippet": "Le téléchargement de Microsoft 365 vous permet d’accéder à un niveau accru d’innovation, de sécurité et de valeur par rapport aux …"
+    },
+    {
+      "title": "Sign in to your account - portal.office.com",
+      "url": "https://portal.office.com/Home/",
+      "snippet": "No account? Create one! Can’t access your account? Terms of use Privacy & cookies ..."
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "nomikos-project/coptic-htr-calamari",
+  "slug": "nomikos-project-coptic-htr-calamari",
+  "author": "nomikos-project",
+  "url": "https://huggingface.co/nomikos-project/coptic-htr-calamari",
+  "created_at": "2026-09-18T15:26:10.000Z",
+  "updated_at": "2026-09-18T16:17:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-text",
+  "library": "calamari",
+  "languages": [
+    "cop"
+  ],
+  "tags": [
+    "calamari",
+    "onnx",
+    "handwritten-text-recognition",
+    "ocr",
+    "coptic",
+    "image-to-text",
+    "cop",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 29839138,
+  "storage_human": "30 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Handwritten text recognition",
+      "dataset": null,
+      "metric": "Test CER",
+      "value": 0.082
+    },
+    {
+      "task": "Handwritten text recognition",
+      "dataset": null,
+      "metric": "Test WER",
+      "value": 0.591
+    },
+    {
+      "task": "Handwritten text recognition",
+      "dataset": null,
+      "metric": "Test exact match",
+      "value": 0.431
+    }
+  ],
+  "sources": [
+    {
+      "title": "cfbstats.com - 2025 Minnesota Golden Gophers",
+      "url": "https://cfbstats.com/2025/team/428/index.html",
+      "snippet": "Jan 19, 2026 · 2025 Minnesota Golden Gophers through 01/19/2026 2026 2025 2024 2023 2022 2021 2020"
+    },
+    {
+      "title": "nomikos-project (Nomos Project) - Hugging Face",
+      "url": "https://huggingface.co/nomikos-project",
+      "snippet": "AI-Assisted annotation, transcription & text-extraction of Greek, Coptic, Armenian & Syriac Languages."
+    },
+    {
+      "title": "Schedule of Payroll Check Dates 2025-2026 Fiscal Year",
+      "url": "https://staff.ebrschools.org/wp-content/uploads/2025/05/Payroll-2025_2025-2026-Payroll-Calendar.pdf",
+      "snippet": "Schedule of Payroll Check Dates 2025-2026 Fiscal Year ... (A) 10 Day Check-deposited 07/03/26 (B) 2 Day Check-deposited 07/17/26"
+    },
+    {
+      "title": "Nomikos | AI-assisted manuscript annotation and HTR",
+      "url": "https://www.nomikos.app/",
+      "snippet": "Nomikos is the annotation platform behind the NOMOS project: a hosted editor, open HTR models on Hugging Face, and an optional command-line inference agent you install with uv tool install nomikos-inference. Pair it once with nomikos pair, then leave nomikos run working through the queue. New models arrive as a new release of the package."
+    },
+    {
+      "title": "October 2025 Printable Calendar",
+      "url": "https://print-a-calendar.com/october-2025",
+      "snippet": "Print a calendar for October 2025 quickly and easily. Just click print right from your browser. Doesn't get easier than that."
+    }
+  ]
+}

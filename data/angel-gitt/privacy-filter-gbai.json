@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "angel-gitt/privacy-filter-gbai",
+  "slug": "angel-gitt-privacy-filter-gbai",
+  "author": "angel-gitt",
+  "url": "https://huggingface.co/angel-gitt/privacy-filter-gbai",
+  "created_at": "2026-09-18T12:18:54.000Z",
+  "updated_at": "2026-09-18T12:20:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "es",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "openai_privacy_filter",
+    "token-classification",
+    "pii",
+    "privacy",
+    "de-identification",
+    "bioes",
+    "spanish",
+    "es",
+    "en",
+    "dataset:bigbio/meddocan",
+    "base_model:OpenMed/privacy-filter-multilingual-v2",
+    "base_model:finetune:OpenMed/privacy-filter-multilingual-v2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1399604809,
+  "parameters_human": "1.40B",
+  "storage_bytes": 2827650028,
+  "storage_human": "2.8 GB",
+  "base_model": "OpenMed/privacy-filter-multilingual-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Angel - Des professionnels de santé par chat ou par téléphone",
+      "url": "https://www.angel.fr/",
+      "snippet": "Profitez de services santé pratiques : l'équipe Angel est là pour prendre soin de votre santé, aussi bien au quotidien que dans les …"
+    },
+    {
+      "title": "Watch Compelling Movies & TV Shows Online | Angel",
+      "url": "https://www.angel.com/watch?msockid=247aea5d968a67ca02fcfd85971b66ae",
+      "snippet": "Stream Angel Originals and family movies & TV shows online. Watch full episodes anytime on Angel.com or the Angel TV and mobile …"
+    },
+    {
+      "title": "Angel (série télévisée) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Angel_(s%C3%A9rie_t%C3%A9l%C3%A9vis%C3%A9e)",
+      "snippet": "Angel est une série télévisée américaine créée par Joss Whedon et David Greenwalt et produite par Mutant Enemy et 20th Century …"
+    },
+    {
+      "title": "Angel: Stream Uplifting Shows for the Whole Family",
+      "url": "https://www.angel.com/?msockid=247aea5d968a67ca02fcfd85971b66ae",
+      "snippet": "Stream Angel Originals and uplifting movies & TV shows. Watch stories that amplify light on Angel.com, the Angel TV app, or …"
+    },
+    {
+      "title": "Angel - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Angel",
+      "snippet": "Philo of Alexandria identifies the angel with the Logos inasmuch as the angel is the immaterial voice of God. The angel is something …"
+    }
+  ]
+}

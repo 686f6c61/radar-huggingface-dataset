@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "jaehyunkang/pi05-real-workbench-taco-3view-8b7104f0-object-identification-60k",
+  "slug": "jaehyunkang-pi05-real-workbench-taco-3view-8b7104f0-object-identification-60k",
+  "author": "jaehyunkang",
+  "url": "https://huggingface.co/jaehyunkang/pi05-real-workbench-taco-3view-8b7104f0-object-identification-60k",
+  "created_at": "2026-09-18T17:17:58.000Z",
+  "updated_at": "2026-09-18T17:18:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "real-workbench",
+    "dataset:Myungkyu/real_workbench-taco-keyframe-gemini",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 9354061560,
+  "storage_human": "9.4 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "如何评价老队长rotk？ - 知乎",
+      "url": "https://www.zhihu.com/question/33707300",
+      "snippet": "Jul 31, 2015 · ROTK，真名白帆，下海出道时间太过久远（信仰君查了半天都查不到呀。。。） DOTA1时期的老怼没得黑，简直是队 …"
+    },
+    {
+      "title": "Rotk（电竞选手） - 知乎",
+      "url": "https://www.zhihu.com/topic/21201238/hot",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "win10系统如何修改切换中英文按键的快捷键 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/93f9803fe5b3f3a1e46f55a5.html",
+      "snippet": "Mar 1, 2021 · win10系统如何修改切换中英文按键的快捷键,在wi10系统中，可以设置一下，修改切换中英文按键的快捷键，下面，我就 …"
+    },
+    {
+      "title": "徐志雷 - 知乎",
+      "url": "https://www.zhihu.com/topic/20026199/intro",
+      "snippet": "2014年8月14日和前队友白帆（rOtk_xB)同时宣布退役。 世界顶级carry，中国DOTA界公认的全民偶像。 退役后，与rotk xiao8 iceice …"
+    },
+    {
+      "title": "徐志雷（电竞选手 | BurNIng） - 知乎",
+      "url": "https://www.zhihu.com/topic/20023771/intro",
+      "snippet": "2014年8月14日，徐志雷和前队友白帆（rOtk_xB)同时宣布退役 [2]。 退役后，与rotk xiao8 iceice国土冷冷组成了一个娱乐战队big …"
+    }
+  ]
+}

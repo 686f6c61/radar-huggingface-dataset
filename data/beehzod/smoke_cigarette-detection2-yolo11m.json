@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "Beehzod/smoke_cigarette-detection2-yolo11m",
+  "slug": "beehzod-smoke_cigarette-detection2-yolo11m",
+  "author": "Beehzod",
+  "url": "https://huggingface.co/Beehzod/smoke_cigarette-detection2-yolo11m",
+  "created_at": "2026-09-18T12:10:17.000Z",
+  "updated_at": "2026-09-18T12:11:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "yolo",
+    "smoking-detection",
+    "cigarette-detection",
+    "object-detection",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 40521900,
+  "storage_human": "41 MB",
+  "base_model": "ultralytics/yolov11m",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": null,
+      "metric": "mAP50",
+      "value": 0.9943
+    },
+    {
+      "task": null,
+      "dataset": null,
+      "metric": "mAP50-95",
+      "value": 0.7421
+    },
+    {
+      "task": null,
+      "dataset": null,
+      "metric": "precision",
+      "value": 0.9811
+    },
+    {
+      "task": null,
+      "dataset": null,
+      "metric": "recall",
+      "value": 0.9835
+    }
+  ],
+  "sources": [
+    {
+      "title": "DELETING ACTIVITY - Google Drive Community",
+      "url": "https://support.google.com/drive/thread/229101536/deleting-activity?hl=en",
+      "snippet": "Aug 6, 2023 · Go to your Google Drive activity page. Click the \"Delete\" button next to the activity you want to delete. Click \"Delete\" …"
+    },
+    {
+      "title": "Contact Google Drive support",
+      "url": "https://support.google.com/drive/answer/4431192?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "Google Photos: Photos and videos that you delete will stay in your trash for 30 days before they are permanently deleted. Google …"
+    },
+    {
+      "title": "Menggunakan file Google Drive secara offline",
+      "url": "https://support.google.com/drive/answer/2375012?hl=id&co=GENIE.Platform%3DDesktop",
+      "snippet": "Menggunakan file secara offline dengan Drive untuk desktop Drive untuk desktop adalah aplikasi untuk Windows dan macOS yang …"
+    },
+    {
+      "title": "Récupérer votre compte Google ou Gmail",
+      "url": "https://support.google.com/accounts/answer/7682439?hl=fr",
+      "snippet": "Suivez les étapes pour récupérer votre compte Google si vous avez oublié vos identifiants ou n'obtenez pas de codes de validation."
+    },
+    {
+      "title": "Send Google Drive attachments in Gmail",
+      "url": "https://support.google.com/mail/answer/2487407?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "Send Google Drive attachments in Gmail When you send messages in Gmail, you can attach files from Google Drive, such as …"
+    }
+  ]
+}

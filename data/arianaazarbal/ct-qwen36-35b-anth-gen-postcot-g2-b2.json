@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "arianaazarbal/ct-qwen36-35b-anth-gen-postcot-g2-b2",
+  "slug": "arianaazarbal-ct-qwen36-35b-anth-gen-postcot-g2-b2",
+  "author": "arianaazarbal",
+  "url": "https://huggingface.co/arianaazarbal/ct-qwen36-35b-anth-gen-postcot-g2-b2",
+  "created_at": "2026-09-18T18:06:51.000Z",
+  "updated_at": "2026-09-18T18:08:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "constitutional-training",
+    "iterated-constitution",
+    "family:qwen36_35b",
+    "seed:anthropic",
+    "method:gen",
+    "regime:post_cot",
+    "gen:2",
+    "branch:b2",
+    "text-generation",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:adapter:Qwen/Qwen3.6-35B-A3B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4491829400,
+  "storage_human": "4.5 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Maxey's Motorsports | Powersports Dealer in Oklahoma City, OK",
+      "url": "https://www.maxeys.com/",
+      "snippet": "Discover your dream motorcycle, ATV, UTV, or scooter at Maxey's Motorsports in Oklahoma City. Come visit us and let our expert …"
+    },
+    {
+      "title": "MAXEY'S YAMAHA - OKLAHOMA CITY, OK. - An Authorized Yamaha …",
+      "url": "https://www.yamahamotorsports.com/D360.php?mfg_dealer_number=057000",
+      "snippet": "Maxey's Motorsports is a powersports dealer located in Oklahoma City, OK. We carry motorcycles, scooters, golf carts, ATVs, and …"
+    },
+    {
+      "title": "New Motorsports Vehicles For Sale | Oklahoma City, OK - Maxey's",
+      "url": "https://www.maxeys.com/new-atvs-motorcycles-utvs-scooters-oklahoma-city-ok--inventory?condition=new",
+      "snippet": "The Maxey’s Motorsports team has a wide range of motorsports vehicles you can choose from, including golf carts, ATVs, UTVs, and …"
+    },
+    {
+      "title": "Maxey's Motorsports - Oklahoma City, OK",
+      "url": "https://www.yelp.com/biz/maxeys-motorsports-oklahoma-city-4?msockid=1bd4c5ffaa37696704dad227ab2668f4",
+      "snippet": "Maxey's Motorsports is Oklahoma's premier dealer of new and used motorcycles, scooters, ATVs, and UTVs. We have a vast …"
+    },
+    {
+      "title": "Maxey's Cycles Inc - Oklahoma City, OK 73112 - The Real Yellow Pages",
+      "url": "https://www.yellowpages.com/oklahoma-city-ok/mip/maxeys-cycles-inc-579729498",
+      "snippet": "Get reviews, hours, directions, coupons and more for Maxey's Cycles Inc. Search for other Motorcycle Dealers on The Real Yellow …"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "stratorys/zeta-2.1-mlx-mixed-3-4bit",
+  "slug": "stratorys-zeta-2-1-mlx-mixed-3-4bit",
+  "author": "stratorys",
+  "url": "https://huggingface.co/stratorys/zeta-2.1-mlx-mixed-3-4bit",
+  "created_at": "2026-09-18T14:27:40.000Z",
+  "updated_at": "2026-09-18T14:40:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "transformers",
+    "edit-prediction",
+    "next-edit-suggestion",
+    "zed",
+    "apple-silicon",
+    "quantized",
+    "en",
+    "base_model:zed-industries/zeta-2.1",
+    "base_model:quantized:zed-industries/zeta-2.1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8250462208,
+  "parameters_human": "8.25B",
+  "storage_bytes": 4342866184,
+  "storage_human": "4.3 GB",
+  "base_model": "zed-industries/zeta-2.1",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "QUERY function - Google Docs Editors Help",
+      "url": "https://support.google.com/docs/answer/3093343?hl=en",
+      "snippet": "QUERY function Runs a Google Visualization API Query Language query across data. Sample Usage QUERY (A2:E6,\"select avg (A) …"
+    },
+    {
+      "title": "QUERY - เครื่องมือแก้ไข Google ...",
+      "url": "https://support.google.com/docs/answer/3093343?hl=th",
+      "snippet": "เรียกใช้การค้นหาของ Google Visualization API Query Language จากข้อมูลทั้งหมด ตัวอย่างการใช้งาน QUERY (A2:E6,\"select avg (A) pivot …"
+    },
+    {
+      "title": "sin prejuicio - WordReference Forums",
+      "url": "https://forum.wordreference.com/threads/sin-prejuicio.1452459/",
+      "snippet": "Jun 30, 2009 · Como podemos traduzir a seguinte expressão: \"se acepta con la cualidad ordinaria de sin prejuicio...y para la prática …"
+    },
+    {
+      "title": "jouer aux pitres - WordReference Forums",
+      "url": "https://forum.wordreference.com/threads/jouer-aux-pitres.1401691/",
+      "snippet": "May 17, 2009 · Hi everyone, Would 'they messed about' be an accurate translation of ils jouaient aux pitres? Thanks for your help!"
+    },
+    {
+      "title": "Google Sheets QUERY - how to use AND and OR at the same time",
+      "url": "https://support.google.com/docs/thread/132394436/google-sheets-query-how-to-use-and-and-or-at-the-same-time?hl=en",
+      "snippet": "Oct 25, 2021 · Google Sheets QUERY - how to use AND and OR at the same time Hi I'm struggling with Query function that will …"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "willamazon1/Qwen3.5-9B-smith-r2v1-iter145",
+  "slug": "willamazon1-qwen3-5-9b-smith-r2v1-iter145",
+  "author": "willamazon1",
+  "url": "https://huggingface.co/willamazon1/Qwen3.5-9B-smith-r2v1-iter145",
+  "created_at": "2026-09-18T19:48:42.000Z",
+  "updated_at": "2026-09-18T22:01:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "reinforcement-learning",
+    "gspo",
+    "agent",
+    "tool-use",
+    "text-generation",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 617814534958,
+  "storage_human": "617.8 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BABY - Neighbourhood Italian Restaurant",
+      "url": "https://www.babypizza.com.au/",
+      "snippet": "Celebrate with up to 120 of your favourite people at Baby. We cater to private gatherings from eight up to 80 guests. Or, for large …"
+    },
+    {
+      "title": "Baby Pizza, a Neighbourhood Pizzeria by Chin Chin’s ... - Broadsheet",
+      "url": "https://www.broadsheet.com.au/melbourne/richmond/restaurants/baby",
+      "snippet": "Sep 7, 2026 · Restaurateur Chris Lucas’s buzzing south-side spot turns out pizzas alongside salumi and traditional, crowd-pleasing …"
+    },
+    {
+      "title": "Baby Pizza, Melbourne - Eventfinda",
+      "url": "https://www.eventfinda.com.au/venue/baby-pizza-melbourne",
+      "snippet": "Baby Pizza, 631-633 Church St, Melbourne. Guide for Baby Pizza events. Baby Café & Pizzeria is a walk-in restaurant open 7 days a …"
+    },
+    {
+      "title": "BABY – Contact Us",
+      "url": "https://www.babypizza.com.au/contact/",
+      "snippet": "If you love good food, great hospitality and would love to work with us, we’d be happy to have you join our team."
+    },
+    {
+      "title": "Baby Pizza, Richmond Review - Concrete Playground",
+      "url": "https://concreteplayground.com/melbourne/restaurants/baby",
+      "snippet": "Jul 3, 2023 · The bases are thin and light, made with special flour from Naples to recreate traditional Italian pizza. Baby's best rests …"
+    }
+  ]
+}

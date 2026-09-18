@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "aboyes/tamgapay-qwen2.5-1.5b-qlora",
+  "slug": "aboyes-tamgapay-qwen2-5-1-5b-qlora",
+  "author": "aboyes",
+  "url": "https://huggingface.co/aboyes/tamgapay-qwen2.5-1.5b-qlora",
+  "created_at": "2026-09-18T13:22:42.000Z",
+  "updated_at": "2026-09-18T13:23:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qlora",
+    "customer-support",
+    "experimental",
+    "ru",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-1.5B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 85333008,
+  "storage_human": "85 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Update Harti Navigatie Lifetime Gratuit oferit de BMW",
+      "url": "https://www.bmwclub.ro/forums/topic/202197-update-harti-navigatie-lifetime-gratuit-oferit-de-bmw/",
+      "snippet": "Incepand din 1.11.2024, toate BMW-urile cu navigatie CIC, CIC-Mid, Champ2, NBT, NBTEvo, EntryNav, EntryEvo, MGU18 si MGU22 …"
+    },
+    {
+      "title": "Sgate - BMW Autobahn - BMW Club Romania",
+      "url": "https://www.bmwclub.ro/forums/topic/46721-sgate/",
+      "snippet": "Sgate By IulianC December 5, 2008 in BMW Autobahn Share Followers 0 Reply to this topic Start new topic"
+    },
+    {
+      "title": "Scartait portiera spate - Seria 3 - BMW Club Romania",
+      "url": "https://www.bmwclub.ro/forums/topic/74811-scartait-portiera-spate/",
+      "snippet": "Mar 2, 2010 · Salut. Am un E90 din 2005 si la scurt timp dupa ce am adus-o in Romania am inceput sa aud un zgomot (ca un …"
+    },
+    {
+      "title": "Service Team BMW - Bucuresti",
+      "url": "https://www.bmwclub.ro/forums/topic/181386-service-team-bmw-bucuresti/",
+      "snippet": "Sep 20, 2017 · Ca tot veni vorba de Service Scream (Tezparii), si eu mi-am facut programare sa schimb distributia la ei + revizie (ulei …"
+    },
+    {
+      "title": "Update Harti Navigatie Lifetime Gratuit oferit de BMW",
+      "url": "https://www.bmwclub.ro/forums/topic/202197-update-harti-navigatie-lifetime-gratuit-oferit-de-bmw/page/2/",
+      "snippet": "Nov 15, 2024 · Update Harti Navigatie Lifetime Gratuit oferit de BMW Incepand din 1.11.2024, toate BMW-urile cu navigatie CIC, CIC …"
+    }
+  ]
+}

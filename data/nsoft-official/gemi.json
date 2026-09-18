@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "NSoft-Official/Gemi",
+  "slug": "nsoft-official-gemi",
+  "author": "NSoft-Official",
+  "url": "https://huggingface.co/NSoft-Official/Gemi",
+  "created_at": "2026-09-18T19:17:57.000Z",
+  "updated_at": "2026-09-19T15:13:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 175186236,
+  "storage_human": "175 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ORF Radio Steiermark live hören - Stream & Frequenzen",
+      "url": "https://www.radio-osterreich.at/radio-steiermark",
+      "snippet": "ORF Radio Steiermark live hören! Genießen Sie den kostenlosen Stream mit bestem Schlager, regionalen News der Steiermark …"
+    },
+    {
+      "title": "Radio Steiermark - live - Landesstudio Steiermark",
+      "url": "https://steiermark.orf.at/v2/studio/stories/2500940/",
+      "snippet": "Jul 5, 2022 · Das Beste aus Schlager und Austropop, die internationalen Tophits und Klassiker sowie die schönsten Oldies aus vier …"
+    },
+    {
+      "title": "The Four Seasons - December, 1963 (Oh, what a night) | Radio Steiermark ...",
+      "url": "https://steiermark.orf.at/player/live",
+      "snippet": "Oct 22, 2025 · Alle öffentlich rechtlichen Radiosender Österreichs auf einer Plattform. Live und 7 Tage lang im Stream on Demand."
+    },
+    {
+      "title": "ORF Radio Steiermark | Live per Webradio hören",
+      "url": "https://www.radio.at/s/steiermark",
+      "snippet": "Den kostenlosen Livestream von Radio ORF Radio Steiermark aufrufen und weitere Radiosender entdecken."
+    },
+    {
+      "title": "ORF Radio Steiermark live hören - 95.4 MHz FM, Graz, Österreich ...",
+      "url": "https://onlineradiobox.com/at/orfsteiermark954/",
+      "snippet": "Oct 28, 2019 · Hören Sie ORF Radio Steiermark 95.4 MHz FM in Graz, Österreich. Hören sie kostenlos Ihre Lieblings-Radiosender …"
+    }
+  ]
+}

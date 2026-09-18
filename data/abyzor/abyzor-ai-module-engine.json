@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "abyzor/abyzor-ai-module-engine",
+  "slug": "abyzor-abyzor-ai-module-engine",
+  "author": "abyzor",
+  "url": "https://huggingface.co/abyzor/abyzor-ai-module-engine",
+  "created_at": "2026-09-18T14:03:59.000Z",
+  "updated_at": "2026-09-18T14:17:57.000Z",
+  "license": "abyzor-proprietary-license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2938238825,
+  "storage_human": "2.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accueil - Montpellier - Lycée privé Notre-Dame de la Merci",
+      "url": "https://www.lamerci.com/montpellier/accueil/",
+      "snippet": "COURSE LA MONTPELLIER REINE La Merci remporte le trophée du lycée le plus représenté ! Félicitations aux élèves, parents, …"
+    },
+    {
+      "title": "Lycée privé Notre-Dame de la Merci",
+      "url": "https://www.lamerci.com/",
+      "snippet": "L'Institution Notre-Dame de la Merci accueille plus de 1800 élèves et étudiants sur les sites de Montpellier et de La Grande Motte : La …"
+    },
+    {
+      "title": "Inscriptions - Lycée privé Notre-Dame de la Merci",
+      "url": "https://www.lamerci.com/montpellier/inscriptions/",
+      "snippet": "– le souhait de faire ses études à Notre-Dame de la Merci de la part d’élèves habitant trop loin de Montpellier, – le souhait de trouver …"
+    },
+    {
+      "title": "Les CPGE La Merci - Lycée privé Notre-Dame de la Merci",
+      "url": "https://www.lamerci.com/montpellier/les-cpge-la-merci/",
+      "snippet": "Le lycée Notre-Dame de La Merci a pour mission de lui donner les moyens d’être acteur de sa réussite. Notre pédagogie repose sur …"
+    },
+    {
+      "title": "Accueil - Littoral - Lycée privé Notre-Dame de la Merci",
+      "url": "https://www.lamerci.com/littoral/accueil/",
+      "snippet": "Le Lycée La Merci Littoral en Partenariat avec le Cégep de Saint-Félicien Dans le cadre d’une dynamique croissante de coopération …"
+    }
+  ]
+}

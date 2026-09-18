@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "mradermacher/RPBizkit-v7-12B-i1-GGUF",
+  "slug": "mradermacher-rpbizkit-v7-12b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/RPBizkit-v7-12B-i1-GGUF",
+  "created_at": "2026-09-18T16:54:36.000Z",
+  "updated_at": "2026-09-18T22:42:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "not-for-all-audiences",
+    "en",
+    "base_model:RicardoEstep/RPBizkit-v7-12B",
+    "base_model:quantized:RicardoEstep/RPBizkit-v7-12B",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 12247782400,
+  "parameters_human": "12.25B",
+  "storage_bytes": 141939126336,
+  "storage_human": "141.9 GB",
+  "base_model": "RicardoEstep/RPBizkit-v7-12B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Votre boutique de meubles et de déco | home24",
+      "url": "https://www.home24.fr/",
+      "snippet": "Aménagez votre intérieur au rythme de vos envies ! Découvrez plus de 150 000 meubles et articles déco. Livraison à domicile & …"
+    },
+    {
+      "title": "Nouveautés irrésistible pour intérieur tendance | home24",
+      "url": "https://www.home24.fr/nouveautes/",
+      "snippet": "Envie de meubles, luminaires et accessoires dernier cri ? Découvrez toutes les nouveautés home24 et soyez toujours au goût du jour."
+    },
+    {
+      "title": "Meubles en ligne | Maison & Jardin | home24",
+      "url": "https://www.home24.fr/tous-meubles/",
+      "snippet": "Découvrez notre large sélection de meubles en ligne pour votre salon, votre salle à manger ou votre chambre. Livraison à domicile !"
+    },
+    {
+      "title": "Tables | Trouvez le meuble parfait | home24",
+      "url": "https://www.home24.fr/table/",
+      "snippet": "Chez home24, nous savons qu'une table ne doit pas seulement être belle : elle doit s'adapter à votre mode de vie et aux contraintes …"
+    },
+    {
+      "title": "Luminaires | Trouvez la lampe parfaite | home24",
+      "url": "https://www.home24.fr/luminaire/",
+      "snippet": "Chez home24, la qualité est une priorité. Chaque lampe est fabriquée avec des matériaux robustes comme le métal, le verre ou le …"
+    }
+  ]
+}

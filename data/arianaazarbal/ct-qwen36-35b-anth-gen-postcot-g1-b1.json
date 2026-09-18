@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "arianaazarbal/ct-qwen36-35b-anth-gen-postcot-g1-b1",
+  "slug": "arianaazarbal-ct-qwen36-35b-anth-gen-postcot-g1-b1",
+  "author": "arianaazarbal",
+  "url": "https://huggingface.co/arianaazarbal/ct-qwen36-35b-anth-gen-postcot-g1-b1",
+  "created_at": "2026-09-18T18:01:16.000Z",
+  "updated_at": "2026-09-18T18:02:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "constitutional-training",
+    "iterated-constitution",
+    "family:qwen36_35b",
+    "seed:anthropic",
+    "method:gen",
+    "regime:post_cot",
+    "gen:1",
+    "branch:b1",
+    "text-generation",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:adapter:Qwen/Qwen3.6-35B-A3B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4491829400,
+  "storage_human": "4.5 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=087d6959d5d160593baf7e81d4626116",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Get access to free online versions of Outlook, Word, Excel, and PowerPoint."
+    },
+    {
+      "title": "My Account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    },
+    {
+      "title": "Microsoft 365 for Individuals: Subscription for Productivity Apps",
+      "url": "https://www.microsoft.com/en-us/microsoft-365?msockid=087d6959d5d160593baf7e81d4626116",
+      "snippet": "Microsoft 365 (formerly Office 365) subscriptions offer a suite of productivity tools and cloud services with world-class security and …"
+    },
+    {
+      "title": "Microsoft - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Microsoft",
+      "snippet": "Microsoft Corporation is an American multinational technology company headquartered in Redmond, Washington. The company …"
+    }
+  ]
+}

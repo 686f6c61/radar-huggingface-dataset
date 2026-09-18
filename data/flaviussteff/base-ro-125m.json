@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "flaviussteff/base-ro-125m",
+  "slug": "flaviussteff-base-ro-125m",
+  "author": "flaviussteff",
+  "url": "https://huggingface.co/flaviussteff/base-ro-125m",
+  "created_at": "2026-09-18T15:32:22.000Z",
+  "updated_at": "2026-09-18T15:32:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ro"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "romanian",
+    "causal-lm",
+    "from-scratch",
+    "token-zero",
+    "text-generation",
+    "ro",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 88099584,
+  "parameters_human": "88.1M",
+  "storage_bytes": 352410528,
+  "storage_human": "352 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vault 7: CIA Hacking Tools Revealed - WikiLeaks",
+      "url": "https://wikileaks.org/ciav7p1/",
+      "snippet": "Today, Tuesday 7 March 2017, WikiLeaks begins its new series of leaks on the U.S. Central Intelligence Agency. Code-named \"Vault …"
+    },
+    {
+      "title": "Vault 7 - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Vault_7",
+      "snippet": "Vault 7 is a series of documents that WikiLeaks began to publish on 7 March 2017, detailing the activities and capabilities of the …"
+    },
+    {
+      "title": "WikiLeaks",
+      "url": "https://wikileaks.org/",
+      "snippet": "Today, 5th August 2021, WikiLeaks publishes \"The Intolerance Network\" over 17,000 documents from internationally active right wing …"
+    },
+    {
+      "title": "WikiLeaks - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Wikileaks",
+      "snippet": "In 2014, FBI and CIA officials lobbied the White House to designate Wikileaks as an \"information broker\" to allow for more …"
+    },
+    {
+      "title": "Vault 7: CIA Hacking Tools Revealed - our.wikileaks.org",
+      "url": "https://our.wikileaks.org/Vault_7:_CIA_Hacking_Tools_Revealed",
+      "snippet": "Apr 24, 2017 · WikiLeaks publishes documents of political or historical importance that are censored or otherwise suppressed. We …"
+    }
+  ]
+}

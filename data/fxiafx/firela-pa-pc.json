@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "fxiafx/firela-pa-pc",
+  "slug": "fxiafx-firela-pa-pc",
+  "author": "fxiafx",
+  "url": "https://huggingface.co/fxiafx/firela-pa-pc",
+  "created_at": "2026-09-18T16:20:07.000Z",
+  "updated_at": "2026-09-19T08:01:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "privacy",
+    "router",
+    "finance-assistant",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 2942221667,
+  "storage_human": "2.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Any Free HD EuroLeague Streaming Sites? : r/Euroleague - Reddit",
+      "url": "https://www.reddit.com/r/Euroleague/comments/9z6h9p/any_free_hd_euroleague_streaming_sites/",
+      "snippet": "The official euroleague streaming was given to some random 3rd party site for the USA and they want 20$ a month to watch... It's …"
+    },
+    {
+      "title": "LNB has a website where you can watch Pro A and Pro B for free",
+      "url": "https://www.reddit.com/r/Euroleague/comments/qmjc3e/lnb_has_a_website_where_you_can_watch_pro_a_and/",
+      "snippet": "Nov 4, 2021 · This subreddit covers all European basketball activities: Not only EuroLeague and EuroCup but also domestic leagues, …"
+    },
+    {
+      "title": "Where can I watch all Barca games online? Is there anywhere to",
+      "url": "https://www.reddit.com/r/Barca/comments/vtl2b1/where_can_i_watch_all_barca_games_online_is_there/",
+      "snippet": "Jul 7, 2022 · Where can I watch all Barca games online? Is there anywhere to watch them HD for free or pay a membership? Thanks …"
+    },
+    {
+      "title": "Is subscribing to EuroleagueTV worth it? : r/Euroleague - Reddit",
+      "url": "https://www.reddit.com/r/Euroleague/comments/16sizxf/is_subscribing_to_euroleaguetv_worth_it/",
+      "snippet": "Sep 26, 2023 · I was thinking about subscribing to EuroleagueTV to follow my team since I won't be able to catch many games live …"
+    },
+    {
+      "title": "LIVE MATCH THREAD: Olympiacos - Real Madrid [Euroleague Final",
+      "url": "https://www.reddit.com/r/Euroleague/comments/13nylsf/live_match_thread_olympiacos_real_madrid/",
+      "snippet": "38 votes, 259 comments. Use this thread for pre match and live match discussion of the Olympiacos - Real Madrid game. Game …"
+    }
+  ]
+}

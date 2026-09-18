@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Rand000mGuy/krv_krea",
+  "slug": "rand000mguy-krv_krea",
+  "author": "Rand000mGuy",
+  "url": "https://huggingface.co/Rand000mGuy/krv_krea",
+  "created_at": "2026-09-18T15:34:11.000Z",
+  "updated_at": "2026-09-18T15:34:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1565851784,
+  "storage_human": "1.6 GB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aprendiz na área Comercial - O que faz, Salário, Carreira | Catho",
+      "url": "https://www.catho.com.br/profissoes/aprendiz-na-area-comercial/",
+      "snippet": "Você sabe o que faz um Aprendiz na área Comercial? Veja aqui um pouco sobre essa profissão que tem ganho mais espaço e …"
+    },
+    {
+      "title": "Aprendiz - O que faz, Salário, Carreira | Catho",
+      "url": "https://www.catho.com.br/profissoes/aprendiz/",
+      "snippet": "A tarefa do aprendiz, na maioria das vezes, é de caráter administrativo e tem como papel principal exercer o aprendizado, mostrar …"
+    },
+    {
+      "title": "Vagas para Jovem Aprendiz em Comércio: Inscreva-se",
+      "url": "https://aprendiz.folhadeemprego.com/comercio/",
+      "snippet": "Sep 11, 2026 · Envie seu currículo agora mesmo e participe do processo seletivo para conquistar sua sua vaga para Jovem Aprendiz …"
+    },
+    {
+      "title": "Aprendiz na área Comercial: Vagas, salário e o que faz",
+      "url": "https://folhadeemprego.com/aprendiz-na-area-comercial-vagas-salario-e-o-que-faz/",
+      "snippet": "Se você está buscando informações sobre o cargo de Aprendiz na área Comercial, veio ao lugar certo. Neste guia completo, …"
+    },
+    {
+      "title": "Jovem Aprendiz - O que faz, Áreas e Tipos de Trabalho",
+      "url": "https://querobolsa.com.br/carreiras-e-profissoes/jovem-aprendiz",
+      "snippet": "Durante o programa, ele realiza atividades administrativas, operacionais ou técnicas, dependendo da área de atuação da empresa, …"
+    }
+  ]
+}

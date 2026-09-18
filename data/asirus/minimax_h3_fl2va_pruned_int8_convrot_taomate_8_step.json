@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Asirus/minimax_h3_fl2va_pruned_int8_convrot_taomate_8_step",
+  "slug": "asirus-minimax_h3_fl2va_pruned_int8_convrot_taomate_8_step",
+  "author": "Asirus",
+  "url": "https://huggingface.co/Asirus/minimax_h3_fl2va_pruned_int8_convrot_taomate_8_step",
+  "created_at": "2026-09-18T16:55:36.000Z",
+  "updated_at": "2026-09-18T17:24:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "custom",
+  "languages": [],
+  "tags": [
+    "custom",
+    "minimax_h3_fl2va_taomate_8step",
+    "minimax-h3",
+    "minimax-h3-fl2va",
+    "taomate",
+    "audio-video-generation",
+    "video-generation",
+    "int8",
+    "convrot",
+    "comfyui",
+    "base_model:Comfy-Org/MiniMax-H3",
+    "base_model:finetune:Comfy-Org/MiniMax-H3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 21010531803,
+  "storage_human": "21.0 GB",
+  "base_model": "Comfy-Org/MiniMax-H3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Frame Rate Test (FPS Test) - Online FPS Tester & Checker",
+      "url": "https://frameratetest.com/",
+      "snippet": "Test your device's frame rate (FPS) performance with our free online tool. Measure and analyze your system's rendering capabilities …"
+    },
+    {
+      "title": "FPS Checker: Framerate Test (FPS Tester) Monitor. Counter. fps test!",
+      "url": "https://fpstests.net/",
+      "snippet": "Check your browser's real FPS, find your monitor's true Hz, measure your reaction speed, test click rate, check every keyboard key, …"
+    },
+    {
+      "title": "FPS Tester Online — Real Time Frame Rate Test & Performance Check",
+      "url": "https://thefpstester.com/",
+      "snippet": "Test your FPS online for free with the most advanced browser-based FPS benchmark. Measure real-time frame rate, 1% low, 0.1% …"
+    },
+    {
+      "title": "Test FPS - Benchmark Renderowania i Test Obciążeniowy - XBitLabs",
+      "url": "https://www.xbitlabs.com/pl/fps-test/",
+      "snippet": "Sprawdź wydajność renderowania przeglądarki naszym darmowym testem FPS. Mierz klatkaż, czas klatki, 1% niskich i spójność pod …"
+    },
+    {
+      "title": "FPS Checker – Darmowy Test FPS Online",
+      "url": "https://fpschecker.org/pl",
+      "snippet": "Nasz test FPS działa w całości w Twojej przeglądarce internetowej. Wystarczy przejść do sekcji testowej, kliknąć \"Rozpocznij Test\" i …"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Zrald/Zrald-AI-qwen-3.8-27b-zraldv1-ba",
+  "slug": "zrald-zrald-ai-qwen-3-8-27b-zraldv1-ba",
+  "author": "Zrald",
+  "url": "https://huggingface.co/Zrald/Zrald-AI-qwen-3.8-27b-zraldv1-ba",
+  "created_at": "2026-09-18T12:48:28.000Z",
+  "updated_at": "2026-09-18T13:22:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "qwen",
+    "qwen3_8",
+    "text-generation",
+    "conversational",
+    "coding",
+    "reasoning",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 15540915168,
+  "storage_human": "15.5 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "60 Millions de Consommateurs — Accueil",
+      "url": "https://www.60millions-mag.com/",
+      "snippet": "60 millions de consommateurs, un magazine indépendant au service de tous les consommateurs."
+    },
+    {
+      "title": "Amazon Haul : notre test révèle de sérieux problèmes de conformité",
+      "url": "https://www.60millions-mag.com/commerce/article/amazon-haul-la-foire-aux-produits-non-conformes-20260506/",
+      "snippet": "May 6, 2026 · Amazon Haul : notre test révèle de sérieux problèmes de conformité Des milliers d’objets sont vendus quelques euros …"
+    },
+    {
+      "title": "Nintendo „Plauderblume“ aktuell günstiger bei Amazon",
+      "url": "https://www.dvd-forum.at/nintendo-plauderblume-aktuell-guenstiger-bei-amazon",
+      "snippet": "Mar 11, 2026 · Bei Amazon gibt es aktuell ein kleines Angebot für Nintendo-Fans: Die Nintendo Plauderblume ist derzeit für 26,99 € …"
+    },
+    {
+      "title": "Amazon startet die „Blockbuster Days“ mit starken Filmdeals",
+      "url": "https://www.dvd-forum.at/amazon-startet-die-blockbuster-days-mit-starken-filmdeals",
+      "snippet": "Jan 26, 2026 · Filmfans aufgepasst: Bei Amazon laufen aktuell wieder die beliebten Blockbuster Days. Gemeinsam mit Plaion …"
+    },
+    {
+      "title": "Des associations de consommateurs pour vous défendre",
+      "url": "https://www.60millions-mag.com/des-associations-de-consommateurs-pour-vous-defendre/",
+      "snippet": "En cas de litige, n’hésitez pas à faire appel à une association de consommateurs. Plusieurs organisations de consommateurs, régies …"
+    }
+  ]
+}

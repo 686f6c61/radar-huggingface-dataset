@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "jiangzhuo9357/fireredpunc-onnx",
+  "slug": "jiangzhuo9357-fireredpunc-onnx",
+  "author": "jiangzhuo9357",
+  "url": "https://huggingface.co/jiangzhuo9357/fireredpunc-onnx",
+  "created_at": "2026-09-18T15:03:14.000Z",
+  "updated_at": "2026-09-18T15:03:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "punctuation",
+    "bert",
+    "sokuji",
+    "zh",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 162771205,
+  "storage_human": "163 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Obtén un descuento para estudiantes de YouTube Premium o …",
+      "url": "https://support.google.com/youtube/answer/9158808?hl=es-419&co=GENIE.Platform%3DDesktop",
+      "snippet": "Ofrecemos varias opciones para ampliar tu experiencia en YouTube. Puedes registrarte para obtener una membresía para …"
+    },
+    {
+      "title": "YouTube Music ハイライトを表示する",
+      "url": "https://support.google.com/youtubemusic/answer/11418178?hl=ja&co=GENIE.Platform=Android",
+      "snippet": "YouTube で [あなたのハイライト] を開く YouTube と YouTube Music ハイライトの両方のご利用対象となっている場合は、次の手 …"
+    },
+    {
+      "title": "YouTube Premium & YouTube Music Premium supported devices",
+      "url": "https://support.google.com/youtubemusic/answer/6308244?hl=en",
+      "snippet": "If you have YouTube Premium or YouTube Music Premium, your membership benefits are available across all devices with access to …"
+    },
+    {
+      "title": "YouTube Music Ajuda",
+      "url": "https://support.google.com/youtubemusic/?hl=pt",
+      "snippet": "Centro de ajuda oficial do YouTube Music, …"
+    },
+    {
+      "title": "Corrigir problemas do YouTube Music",
+      "url": "https://support.google.com/youtubemusic/answer/9027741?hl=pt-BR",
+      "snippet": "Corrigir problemas do YouTube Music Confira problemas comuns no YouTube Music e as etapas para resolver essas questões. A …"
+    }
+  ]
+}

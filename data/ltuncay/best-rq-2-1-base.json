@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "ltuncay/BEST-RQ-2.1-base",
+  "slug": "ltuncay-best-rq-2-1-base",
+  "author": "ltuncay",
+  "url": "https://huggingface.co/ltuncay/BEST-RQ-2.1-base",
+  "created_at": "2026-09-18T17:59:37.000Z",
+  "updated_at": "2026-09-18T18:33:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "audio_embeddings",
+    "feature-extraction",
+    "audio",
+    "custom_code",
+    "self-supervised-learning",
+    "audio-embeddings",
+    "best-rq-2",
+    "audioset",
+    "arxiv:2505.16369",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 85482784,
+  "parameters_human": "85.5M",
+  "storage_bytes": 341947784,
+  "storage_human": "342 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mobile01 汽車 - Mobile01",
+      "url": "https://www.mobile01.com/category.php?id=6",
+      "snippet": "Mobile01 汽車頻道 - 新車試駕、開箱、評比、國際國內汽車新訊與獨家報導，關於汽車疑難雜症或是購車求菜單，都在 Mobile01 小惡 …"
+    },
+    {
+      "title": "potplayer在哪下载？ - 知乎",
+      "url": "https://www.zhihu.com/question/406926262",
+      "snippet": "看到这么多人进了假官网，我还在想这玩意官网这么难找吗 然后试了一下，发现真的难找，百度不说了，就连 Bing 都把假的排前面， …"
+    },
+    {
+      "title": "edge浏览器网页与此站点链接不安全怎么解决？ - 知乎",
+      "url": "https://www.zhihu.com/question/487808345",
+      "snippet": "Sep 19, 2021 · 方法一： 快捷方式添加参数 Chrome内核浏览器，例如 Edge 等，支持通过添加“--ignore-certificate-errors”参数改变浏 …"
+    },
+    {
+      "title": "pixiv官网网址 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/1124044363277117139.html",
+      "snippet": "Apr 18, 2025 · pixiv官网网址Pixiv的官网网址是：https://www.pixiv.net/。以下是关于Pixiv官网的一些注意事项和使用建议：1. 网址变 …"
+    },
+    {
+      "title": "俄罗斯搜索引擎网址 yandex官网入口直达 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/725567645356284605.html",
+      "snippet": "Nov 11, 2025 · 俄罗斯搜索引擎网址 yandex官网入口直达Yandex的官方网址如下：国际版入口：https://yandex.com/俄罗斯本土版入 …"
+    }
+  ]
+}

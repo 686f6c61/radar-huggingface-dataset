@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "maskjp/pi05-relative-eef-bagplace-memrtc-full-ft-43k",
+  "slug": "maskjp-pi05-relative-eef-bagplace-memrtc-full-ft-43k",
+  "author": "maskjp",
+  "url": "https://huggingface.co/maskjp/pi05-relative-eef-bagplace-memrtc-full-ft-43k",
+  "created_at": "2026-09-18T14:32:12.000Z",
+  "updated_at": "2026-09-18T14:33:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "pi0.5",
+    "relative-actions",
+    "augmentation",
+    "mem",
+    "rtc",
+    "eef",
+    "arxiv:2603.03596",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 9388901674,
+  "storage_human": "9.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gesetzliche Erbfolge: Wer erbt & in welcher Rangfolge - Finanztip",
+      "url": "https://www.finanztip.de/erbfolge/",
+      "snippet": "Nov 7, 2025 · Die gesetzliche Erbfolge funktioniert so, dass sich die Erben aus dem Verwandtschaftsverhältnis zum Verstorbenen …"
+    },
+    {
+      "title": "Gesetzliche Erbfolge – ohne Testament – Schaubild & Beispiele",
+      "url": "https://www.juraforum.de/lexikon/gesetzliche-erbfolge",
+      "snippet": "Apr 27, 2026 · Gesetzliche Erbfolge - BGB Jedem steht es frei, seine Erben selbst zu bestimmen. Wer aber nun stirbt, ohne ein …"
+    },
+    {
+      "title": "Gesetzliche Erbfolge – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Gesetzliche_Erbfolge",
+      "snippet": "Als gesetzliche Erben kommen vorrangig die Verwandten und der überlebende Ehegatte oder Lebenspartner in Betracht. Nicht …"
+    },
+    {
+      "title": "Gesetzliche Erbfolge | NRW-Justiz",
+      "url": "https://www.justiz.nrw/BS/lebenslagen/familie/Nachlassverfahren/Gesetzliche_Erbfolge_1",
+      "snippet": "Die gesetzliche Erbfolge befasst sich mit der Frage: Wer darf nach dem Tod eines Menschen über dessen Vermögen, seine Aktiva …"
+    },
+    {
+      "title": "Gesetzliche Erbfolge ᐅ Regelung im BGB, Schaubild & Beispiele",
+      "url": "https://www.fachanwalt.de/magazin/erbrecht/gesetzliche-erbfolge",
+      "snippet": "Aug 6, 2026 · Was versteht man unter der gesetzlichen Erbfolge? Die gesetzliche Erbfolge bezeichnet die Regeln, die das …"
+    }
+  ]
+}

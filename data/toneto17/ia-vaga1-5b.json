@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Toneto17/ia-vaga1.5B",
+  "slug": "toneto17-ia-vaga1-5b",
+  "author": "Toneto17",
+  "url": "https://huggingface.co/Toneto17/ia-vaga1.5B",
+  "created_at": "2026-09-18T13:40:47.000Z",
+  "updated_at": "2026-09-18T13:47:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 6192557900,
+  "storage_human": "6.2 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Download Discord to Talk, Play, and Hang Out",
+      "url": "https://discord.com/download",
+      "snippet": "Download Discord to talk, play, and hang out with friends over voice, video, or text. Available for Windows, macOS, Linux, iOS, …"
+    },
+    {
+      "title": "Discord - Group Chat That’s All Fun & Games",
+      "url": "https://discord.com/",
+      "snippet": "Discord is great for playing games and chilling with friends, or even building a worldwide community. Customize your own space to …"
+    },
+    {
+      "title": "Discord",
+      "url": "https://discord.com/store",
+      "snippet": "Discord is great for playing games and chilling with friends, or even building a worldwide community. Customize your own space to …"
+    },
+    {
+      "title": "Discord",
+      "url": "https://discord.com/discovery/applications/1",
+      "snippet": "The App Directory lets you search, browse, and explore thousands of apps to customize your server!"
+    },
+    {
+      "title": "Discord - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Discord",
+      "snippet": "Discord runs on Windows, macOS, Android, iOS, iPadOS, Linux, and in web browsers. As of 2025, Discord has 200 million monthly …"
+    }
+  ]
+}

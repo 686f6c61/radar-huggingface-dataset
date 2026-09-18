@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Habiquell/quell-v2",
+  "slug": "habiquell-quell-v2",
+  "author": "Habiquell",
+  "url": "https://huggingface.co/Habiquell/quell-v2",
+  "created_at": "2026-09-18T13:49:34.000Z",
+  "updated_at": "2026-09-18T13:53:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-4B-Instruct-2507",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 143683979,
+  "storage_human": "144 MB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Create a Google Account for Gmail",
+      "url": "https://support.google.com/mail/answer/56256?hl=en-gb",
+      "snippet": "Important: Before you create a new Google Account, sign out of your current account. Learn how to sign out of Gmail. From your …"
+    },
+    {
+      "title": "Как создать аккаунт Google для Gmail",
+      "url": "https://support.google.com/mail/answer/56256?hl=ru",
+      "snippet": "Создать аккаунт Google Совет. Если вы хотите использовать Gmail для работы, рекомендуем вместо личного аккаунта …"
+    },
+    {
+      "title": "A Google Chrome letöltése és telepítése",
+      "url": "https://support.google.com/chrome/answer/95346?hl=hu&co=GENIE.Platform%3DDesktop",
+      "snippet": "A Chrome böngészőt díjmentesen letöltheti és telepítheti, majd használhatja az interneten való böngészéshez. A Chrome …"
+    },
+    {
+      "title": "A Google beállítása alapértelmezett keresőmotorként",
+      "url": "https://support.google.com/websearch/answer/464?hl=hu",
+      "snippet": "Ha minden keresés alkalmával a Google találatait szeretné látni, beállíthatja a Google-t alapértelmezett keresőmotorként. A Google …"
+    },
+    {
+      "title": "Google Calendar 시작하기 - 컴퓨터 - Google Calendar 고객센터",
+      "url": "https://support.google.com/calendar/answer/2465776?hl=ko&co=GENIE.Platform%3DDesktop",
+      "snippet": "Calendar가 지원되는 브라우저 알아보기 중요: 브라우저에서 Calendar를 사용하려면 JavaScript와 쿠키를 사용 설정하세요. 브라우저에서 …"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "amohammed3339/doc-cascade-slowpath-5class",
+  "slug": "amohammed3339-doc-cascade-slowpath-5class",
+  "author": "amohammed3339",
+  "url": "https://huggingface.co/amohammed3339/doc-cascade-slowpath-5class",
+  "created_at": "2026-09-18T17:22:01.000Z",
+  "updated_at": "2026-09-18T17:33:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66957317,
+  "parameters_human": "67.0M",
+  "storage_bytes": 1607143098,
+  "storage_human": "1.6 GB",
+  "base_model": "distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Se connecter à Gmail - Ordinateur - Aide Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Se connecter à Gmail Conseil : Si vous vous connectez à un ordinateur public, pensez à vous déconnecter avant de quitter …"
+    },
+    {
+      "title": "Google-Konto für Gmail erstellen - Gmail-Hilfe",
+      "url": "https://support.google.com/mail/answer/56256?hl=de",
+      "snippet": "Mit einem Google-Konto können Sie sich in Gmail und anderen Google-Diensten wie YouTube, Google Play, Google Drive und …"
+    },
+    {
+      "title": "Anmelden bei My Swisscom",
+      "url": "https://community.swisscom.ch/d/777685-anmelden-bei-my-swisscom",
+      "snippet": "Aug 5, 2023 · Warum kann ich mich nicht mehr per Natel Nr. und Code anmelden? Ich weiss doch mein Passwort nicht mehr und …"
+    },
+    {
+      "title": "mails löschen - Swisscom Community",
+      "url": "https://community.swisscom.ch/d/848627-mails-loschen",
+      "snippet": "Hallo möchte dringend mails löschen finde aber das nic hht mehr. Ich bin Kunde my service. bitte dringend."
+    },
+    {
+      "title": "Sign in to Gmail - Computer - Gmail Help - Google Help",
+      "url": "https://support.google.com/mail/answer/8494?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "Sign in to Gmail Tip: If you sign in to a public computer, make sure to sign out before you leave the computer. Learn how to sign in on …"
+    }
+  ]
+}

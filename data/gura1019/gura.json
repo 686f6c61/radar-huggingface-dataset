@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "gura1019/gura",
+  "slug": "gura1019-gura",
+  "author": "gura1019",
+  "url": "https://huggingface.co/gura1019/gura",
+  "created_at": "2026-09-18T15:19:19.000Z",
+  "updated_at": "2026-09-18T15:19:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lidl, ça vaut le coup. En supermarché et en ligne.",
+      "url": "https://www.lidl.fr/",
+      "snippet": "L'ensemble des produits LIDL est à votre disposition 24 heures sur 24 dans votre boutique en ligne. Vous pouvez prendre tout votre …"
+    },
+    {
+      "title": "Lidl Filiale Auerstr. 57 a in Augsburg",
+      "url": "https://www.lidl.de/s/de-DE/filialen/augsburg/auerstr-57-a/?msockid=24e160075df06219376f77df5cf863d7",
+      "snippet": "4 days ago · Deine Filiale in Auerstr. 57 a, 86156 Augsburg Zeige die Öffnungszeiten und Sonderverkäufe in dieser Filiale. Die beste …"
+    },
+    {
+      "title": "Lidl Filialen in Augsburg - Supermarkt in der Nähe",
+      "url": "https://www.lidl.de/s/de-DE/filialen/augsburg/?msockid=24e160075df06219376f77df5cf863d7",
+      "snippet": "Finde jetzt eine Lidl Filiale in Augsburg. auch in deiner Nähe und entdecke aktuelle Angebote und Prospekte."
+    },
+    {
+      "title": "Supermarchés Lidl en France",
+      "url": "https://www.lidl.fr/s/fr-FR/supermarches/",
+      "snippet": "Trouver les offres et prospectus du supermarché Lidl le plus proche."
+    },
+    {
+      "title": "Lidl Filialen in Augsburg - Adressen & Öffnungszeiten",
+      "url": "https://www.kaufda.de/Filialen/Augsburg/Lidl/v-r74",
+      "snippet": "Finde hier alle Filialen, Öffnungszeiten & Adressen von Lidl Augsburg in deiner Nähe!"
+    }
+  ]
+}

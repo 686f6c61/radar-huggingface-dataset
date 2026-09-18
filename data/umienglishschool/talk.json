@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "umienglishschool/Talk",
+  "slug": "umienglishschool-talk",
+  "author": "umienglishschool",
+  "url": "https://huggingface.co/umienglishschool/Talk",
+  "created_at": "2026-09-18T13:11:37.000Z",
+  "updated_at": "2026-09-18T13:11:37.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Datenschutzbestimmungen - Google Maps",
+      "url": "https://maps.google.ch/intl/de/policies/privacy/archive/20010104/",
+      "snippet": "Jan 4, 2001 · Google respektiert und schützt die Privatsphäre aller, die Googles Suchmaschine benutzen („Googles Suchservice“). …"
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.ch/intl/en/policies/technologies/pattern-recognition/",
+      "snippet": "https://policies.google.com/technologies/pattern-recognition"
+    },
+    {
+      "title": "Häufig gestellte Fragen – Business Photos – Google Maps",
+      "url": "https://maps.google.ch/help/maps/businessphotos/faq.html",
+      "snippet": "Über benutzerfreundliche HTML-Snippets oder Maps APIs können Sie zudem auf Ihrer eigenen Unternehmenswebsite eine …"
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.ch/intl/de/policies/technologies/managing/",
+      "snippet": "https://policies.google.com/technologies/managing?hl=de"
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.ch/intl/fr/policies/",
+      "snippet": "https://policies.google.com/?hl=fr"
+    }
+  ]
+}

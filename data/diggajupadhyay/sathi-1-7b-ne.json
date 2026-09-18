@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "diggajupadhyay/sathi-1.7b-ne",
+  "slug": "diggajupadhyay-sathi-1-7b-ne",
+  "author": "diggajupadhyay",
+  "url": "https://huggingface.co/diggajupadhyay/sathi-1.7b-ne",
+  "created_at": "2026-09-18T18:01:16.000Z",
+  "updated_at": "2026-09-18T18:47:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ne"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "nepali",
+    "nepal",
+    "devanagari",
+    "llama-cpp",
+    "qlora",
+    "agent",
+    "text-generation",
+    "ne",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:quantized:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 1107408672,
+  "storage_human": "1.1 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Decentralized Options: A Comparison of Designs - CoinGecko",
+      "url": "https://www.coingecko.com/research/publications/decentralized-options-a-comparison-of-designs",
+      "snippet": "Apr 22, 2024 · Introduction Options have long been a staple of traditional finance, offering buyers the opportunity to bet on price …"
+    },
+    {
+      "title": "30 DeFi Options Protocols: The Current Status - cointime.ai",
+      "url": "https://www.cointime.ai/news/30-defi-options-protocols-the-current-status-52469",
+      "snippet": "Apr 20, 2023 · The market for DeFi options protocols is still relatively small. Only 4 out of the top 30 platforms have a TVL of more …"
+    },
+    {
+      "title": "Evolution of DeFi Option Vault (DOV) - Anderson Chen",
+      "url": "https://andersonchen.substack.com/p/technologies-of-defi-option-vault",
+      "snippet": "Dec 30, 2021 · The DeFi Option Vault (DOV) is a vault that accepts a specified asset and deploys the asset in an option trading …"
+    },
+    {
+      "title": "Move Over, Carry Trade, These Retail-Friendly DeFi Options",
+      "url": "https://www.coindesk.com/markets/2021/09/30/move-over-carry-trade-these-retail-friendly-defi-options-strategies-yield-12-30",
+      "snippet": "Oct 1, 2021 · There's a protocol for that: DeFi structured products allow traders to bypass complexities involved with options trading."
+    },
+    {
+      "title": "Best DeFi Vaults to Invest in (2026) - coinblocklab.com",
+      "url": "https://www.coinblocklab.com/guide/best-defi-vaults-to-invest/",
+      "snippet": "Dec 11, 2025 · Best DeFi Vaults to Invest offering high-yield options and secure strategies to grow your crypto portfolio while …"
+    }
+  ]
+}

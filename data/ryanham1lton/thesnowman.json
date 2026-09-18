@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/TheSnowman",
+  "slug": "ryanham1lton-thesnowman",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/TheSnowman",
+  "created_at": "2026-09-18T17:50:46.000Z",
+  "updated_at": "2026-09-18T17:53:01.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 186342806,
+  "storage_human": "186 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "湯の浦カントリー倶楽部｜アコーディア・ゴルフ公式サイト ...",
+      "url": "https://reserve.accordiagolf.com/golfCourse/kagoshima/yunoura/",
+      "snippet": "公式サイト予約（ジカドリ）で、平日500円、土日祝1,000円他社サイトよりもお得！ 西に紺碧の東支那海を望み、背後に優美な金 …"
+    },
+    {
+      "title": "湯の浦カントリー倶楽部【アコーディア・ゴルフ】 - 楽天GORA",
+      "url": "https://booking.gora.golf.rakuten.co.jp/guide/disp/c_id/460032",
+      "snippet": "湯の浦カントリー倶楽部【アコーディア・ゴルフ】のコース詳細情報。 施設情報・プラン一覧・コースの特徴やクチコミ・天気予 …"
+    },
+    {
+      "title": "湯の浦カントリー倶楽部【アコーディア】を予約する｜GDO ...",
+      "url": "https://reserve.golfdigest.co.jp/golf-course/977301/",
+      "snippet": "湯の浦カントリー倶楽部【アコーディア】のGDOユーザーの平均スコアデータ・コースの特徴・施設情報・服装規定/ドレスコード …"
+    },
+    {
+      "title": "湯の浦カントリー倶楽部のコースレイアウト・攻略|鹿児島県 ...",
+      "url": "https://reserve.accordiagolf.com/golfCourse/kagoshima/yunoura/layout",
+      "snippet": "湯の浦カントリー倶楽部の魅力的なコースレイアウトとフォトギャラリー。ヤーデージやホール詳細情報もご覧いただけます。ゴル …"
+    },
+    {
+      "title": "湯の浦カントリー倶楽部｜アコーディア・ゴルフ公式サイト ...",
+      "url": "https://reserve-stg5.accordiagolf.com/golfCourse/kagoshima/yunoura/",
+      "snippet": "ゴルフ場からの最新情報 2025-04-03 重要なお知らせ キャンセル料に関して 2025-03-13 重要なお知らせ ゴルフカートのフェアウェ …"
+    }
+  ]
+}

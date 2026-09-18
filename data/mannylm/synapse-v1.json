@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "MannyLM/Synapse-V1",
+  "slug": "mannylm-synapse-v1",
+  "author": "MannyLM",
+  "url": "https://huggingface.co/MannyLM/Synapse-V1",
+  "created_at": "2026-09-18T15:49:08.000Z",
+  "updated_at": "2026-09-18T15:49:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "pytorch",
+    "transformer",
+    "language-model",
+    "from-scratch",
+    "character-level",
+    "educational",
+    "tiny-shakespeare",
+    "en",
+    "dataset:tiny_shakespeare",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 826433,
+  "parameters_human": "826433",
+  "storage_bytes": 3312260,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/index.php/?lang=ar",
+      "snippet": "Forgot password? More languages…"
+    },
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/r.php/",
+      "snippet": "Learn why we ask for your contact information. People who use our service may have uploaded your contact information to …"
+    },
+    {
+      "title": "Facebook - log in or sign up",
+      "url": "https://secure.facebook.com/",
+      "snippet": "Connect with friends and the world around you on Facebook."
+    },
+    {
+      "title": "إنشاء ملف شخصي على فيسبوك | مركز مساعدة ‏‎Messenger‎‏",
+      "url": "https://www.messenger.com/help/messenger-app/188157731232424/?locale=ar_AR",
+      "snippet": "يجب ألا يقل عمرك عن 13 عامًا لإنشاء ملف شخصي على فيسبوك. انتقِل إلى facebook.com وانقر على إنشاء حساب جديد. أدخِل اسمك، وبريدك الإلكتروني أو رقم هاتفك المحمول، وكلمة السر وتاريخ …"
+    },
+    {
+      "title": "إنشاء حساب جديد على الفيسبوك - موضوع",
+      "url": "https://mawdoo3.com/%D8%A5%D9%86%D8%B4%D8%A7%D8%A1_%D8%AD%D8%B3%D8%A7%D8%A8_%D8%AC%D8%AF%D9%8A%D8%AF_%D8%B9%D9%84%D9%89_%D8%A7%D9%84%D9%81%D9%8A%D8%B3%D8%A8%D9%88%D9%83",
+      "snippet": "يستطيع أي شخص إنشاء حساب فيس بوك (Facebook) للاستخدام الشخصي، وللقيام بذلك يجب اتباع الخطوات التالية: [١] [٢] فتح متصفح الإنترنت ( Internet browser ) المفضل لدى المستخدم."
+    }
+  ]
+}

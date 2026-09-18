@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "sovythos/Sovythos-303M-Instruct",
+  "slug": "sovythos-sovythos-303m-instruct",
+  "author": "sovythos",
+  "url": "https://huggingface.co/sovythos/Sovythos-303M-Instruct",
+  "created_at": "2026-09-18T15:47:17.000Z",
+  "updated_at": "2026-09-18T16:29:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "sovereign",
+    "sovythos",
+    "llm",
+    "transformer",
+    "pytorch",
+    "arabic",
+    "egyptian-arabic",
+    "english",
+    "instruction-tuned",
+    "sft",
+    "chat",
+    "open-source",
+    "llama-architecture",
+    "gqa",
+    "rope",
+    "swiglu",
+    "text-generation",
+    "en",
+    "ar",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7543148006,
+  "storage_human": "7.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Poki (بوكي) - موقع العاب مجانية عبر الإنترنت - العب الآن!",
+      "url": "https://poki.com/ar?msockid=1547af847be86b652206b85c7a7e6aa4",
+      "snippet": "استمتع بألعاب مجانية عبر الإنترنت مع Poki (بوكي)! العب فورًا، دون الحاجة للتنزيل، واستمتع بألعاب متوافقة مع جميع الأجهزة."
+    },
+    {
+      "title": "ألعاب شهيرة - العب على الإنترنت مجانًا! | Poki (بوكي)",
+      "url": "https://poki.com/ar/%D8%B4%D9%87%D9%8A%D8%B1%D8%A9?msockid=1547af847be86b652206b85c7a7e6aa4",
+      "snippet": "اكتشف أفضل ألعاب شهيرة على الموقع الأكثر شعبية لألعاب مجانية عبر الانترنت! Poki (بوكي) يعمل على هاتفك المحمول أو جهازك اللوحي أو الكمبيوتر. بدون تنزيلات، بدون تسجيل. العب الآن!"
+    },
+    {
+      "title": "Rocket Soccer Derby - العب مجانًا! | Poki (بوكي)",
+      "url": "https://poki.com/ar/g/rocket-soccer-derby?msockid=1547af847be86b652206b85c7a7e6aa4",
+      "snippet": "Rocket Soccer Derby هي لعبة رياضية حيث تقود سيارات وتلعب كرة القدم! قم بقيادة سيارتك وادفع الكرة العملاقة لتسجيل الأهداف. انطلق مباشرة إلى الملعب الآن!"
+    },
+    {
+      "title": "ألعاب طبخ ‍ - العب على الإنترنت مجانًا! | Poki (بوكي)",
+      "url": "https://poki.com/ar/%D8%B7%D8%A8%D8%AE?msockid=1547af847be86b652206b85c7a7e6aa4",
+      "snippet": "اكتشف أفضل ألعاب طبخ على الموقع الأكثر شعبية لألعاب مجانية عبر الانترنت! Poki (بوكي) يعمل على هاتفك المحمول أو جهازك اللوحي أو الكمبيوتر. بدون تنزيلات، بدون تسجيل. العب الآن!"
+    },
+    {
+      "title": "Vortella's Dress Up - العب مجانًا! | Poki (بوكي)",
+      "url": "https://poki.com/ar/g/vortellas-dress-up?msockid=1547af847be86b652206b85c7a7e6aa4",
+      "snippet": "في لعبة Vortella's Dress Up، صمّم أزياء عارضتك! اختر تسريحة الشعر ولون البشرة المناسبين. ثم انتقِ الفستان الأنيق الذي يعجبك وغيّر ألوانه. هيا، أطلق العنان لإبداعك الآن!"
+    }
+  ]
+}

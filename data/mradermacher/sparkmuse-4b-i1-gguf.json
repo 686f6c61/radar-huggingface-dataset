@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "mradermacher/SparkMuse-4B-i1-GGUF",
+  "slug": "mradermacher-sparkmuse-4b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/SparkMuse-4B-i1-GGUF",
+  "created_at": "2026-09-18T16:21:35.000Z",
+  "updated_at": "2026-09-18T16:54:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "creative-writing",
+    "novel-generation",
+    "roleplay",
+    "nsfw",
+    "long-context",
+    "1M-context",
+    "spark",
+    "zh",
+    "en",
+    "base_model:hcnote/SparkMuse-4B",
+    "base_model:quantized:hcnote/SparkMuse-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational",
+    "not-for-all-audiences"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4112079360,
+  "parameters_human": "4.11B",
+  "storage_bytes": 50402234304,
+  "storage_human": "50.4 GB",
+  "base_model": "hcnote/SparkMuse-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ГДЗ Алгебра 8 клас Істер 2025",
+      "url": "https://gdzonline.net/848-algebra-8-ister.html",
+      "snippet": "ГДЗ з алгебри для 8 класу, автор Істер Олександр. 2025 рік, НУШ програма. Це ГДЗ допоможе не лише перевірити домашку, …"
+    },
+    {
+      "title": "ГДЗ Алгебра 8 клас О.С. Істер 2025 | Вшколе",
+      "url": "https://vshkole.com/8-klass/reshebniki/algebra/os-ister-2025",
+      "snippet": "Повне та якісне ГДЗ Алгебра 8 клас О.С. Істер 2025. Перевірені відповіді та розв'язання всіх вправ та задач з детальним …"
+    },
+    {
+      "title": "Відповіді (ГДЗ) Алгебра 8 клас Олександр Істер 2025",
+      "url": "https://gdzister.in.ua/alhebra",
+      "snippet": "Відповіді (ГДЗ) до усіх завдань і вправ підручника Алгебра 8 клас Олександр Істер 2025 (НУШ). Повний і якісний розв'язник з …"
+    },
+    {
+      "title": "Підручник Алгебра 8 клас Істер 2025",
+      "url": "https://pidruchnyk.com.ua/2905-algebra-ister-8-klas-2025.html",
+      "snippet": "Підручник з геометрії для 8 класу (Істер О.С., 2025) — видання для учнів за новою програмою, у якому систематизовано …"
+    },
+    {
+      "title": "ГДЗ Алгебра 8 клас НУШ",
+      "url": "https://gdzonline.net/8_klas/algebra8/",
+      "snippet": "Готові домашні завдання (ГДЗ) з алгебри для 8 класу за програмою НУШ 2025 року допоможуть учням якісно засвоїти …"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "mamelles/LFM2.5-1.2B-Wolof-Instruct",
+  "slug": "mamelles-lfm2-5-1-2b-wolof-instruct",
+  "author": "mamelles",
+  "url": "https://huggingface.co/mamelles/LFM2.5-1.2B-Wolof-Instruct",
+  "created_at": "2026-09-18T15:25:19.000Z",
+  "updated_at": "2026-09-18T15:25:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm2",
+    "text-generation",
+    "conversational",
+    "base_model:LiquidAI/LFM2.5-1.2B-Base",
+    "base_model:finetune:LiquidAI/LFM2.5-1.2B-Base",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1316289280,
+  "parameters_human": "1.32B",
+  "storage_bytes": 2632595408,
+  "storage_human": "2.6 GB",
+  "base_model": "LiquidAI/LFM2.5-1.2B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Se connecter à Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Se connecter à Gmail Pour ouvrir Gmail, vous pouvez vous connecter à partir d'un ordinateur ou ajouter votre compte à l'application …"
+    },
+    {
+      "title": "Créer un compte Google pour Gmail",
+      "url": "https://support.google.com/mail/answer/56256?hl=fr",
+      "snippet": "Créer un compte Google Remarque : Si vous souhaitez utiliser Gmail pour votre entreprise, un compte Google Workspace vous sera …"
+    },
+    {
+      "title": "Créer un compte Google - Ordinateur - Aide Compte Google",
+      "url": "https://support.google.com/accounts/answer/27441?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Vous pouvez rechercher \"fournisseurs de messagerie gratuits\" pour trouver un autre fournisseur de messagerie qui vous convient et …"
+    },
+    {
+      "title": "Aide Gmail",
+      "url": "https://support.google.com/mail/?hl=fr",
+      "snippet": "Centre d'aide officiel de Gmail où vous trouverez des informations et des tutoriels pour la création et la protection de votre compte. …"
+    },
+    {
+      "title": "Récupérer votre compte Google ou Gmail",
+      "url": "https://support.google.com/accounts/answer/7682439?hl=fr",
+      "snippet": "Suivez les étapes pour récupérer votre compte Google si vous avez oublié vos identifiants ou n'obtenez pas de codes de validation."
+    }
+  ]
+}

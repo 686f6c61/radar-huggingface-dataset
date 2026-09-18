@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Zachary1150/ear-eeg-fm-benchmark-loso",
+  "slug": "zachary1150-ear-eeg-fm-benchmark-loso",
+  "author": "Zachary1150",
+  "url": "https://huggingface.co/Zachary1150/ear-eeg-fm-benchmark-loso",
+  "created_at": "2026-09-18T13:37:33.000Z",
+  "updated_at": "2026-09-18T13:38:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "eeg",
+    "ear-eeg",
+    "sleep-staging",
+    "biosignal",
+    "benchmark",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15373068986,
+  "storage_human": "15.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NVIDIA DLSS 5 Delivers AI-Powered Breakthrough In Visual Fidelity For …",
+      "url": "https://www.nvidia.com/en-us/geforce/news/dlss5-breakthrough-in-visual-fidelity-for-games/",
+      "snippet": "Mar 16, 2026 · NVIDIA DLSS 5 infuses pixels with photorealistic lighting and materials to bridge the gap between rendering and reality."
+    },
+    {
+      "title": "Anleitung: So lässt sich DLSS 5 auf RTX 50 & RTX 40 zu testen",
+      "url": "https://www.computerbase.de/artikel/grafikkarten/dlss-5-mod-anleitung.99143/",
+      "snippet": "Aug 31, 2026 · Alternativ kann DLSS 5 inzwischen auch über das neue Tool DLSS5-Feeder (entweder separat, oder über RHI) …"
+    },
+    {
+      "title": "DLSS 5: Was die neue Nvidia-Technik wirklich leistet",
+      "url": "https://www.pcgameshardware.de/Deep-Learning-Super-Sampling-Software-277618/Specials/DLSS-5-Nvidia-Release-Leak-1552438/",
+      "snippet": "Sep 1, 2026 · Was DLSS 5 in Spielen bringt: Die Technik ergänzt Licht, Schatten und feine Details per KI und läuft inoffiziell schon …"
+    },
+    {
+      "title": "DLSS 5 3D-Guided Neural Rendering Debuts in NBA 2K27 | NVIDIA",
+      "url": "https://www.nvidia.com/en-us/geforce/news/dlss-5-3d-guided-neural-rendering/",
+      "snippet": "Sep 1, 2026 · NVIDIA DLSS 5 is available now in NBA 2K27: 3D-Guided Neural Rendering adds lifelike lighting and materials to real …"
+    },
+    {
+      "title": "GitHub - rakanki911/DLSS5-Swapper: Install, tune and restore DLSS 5 …",
+      "url": "https://github.com/rakanki911/DLSS5-Swapper",
+      "snippet": "Aug 30, 2026 · Easy installation: native DLSS games, or compatible non-DLSS games through DLSS5-Feeder. Your library: Steam, …"
+    }
+  ]
+}

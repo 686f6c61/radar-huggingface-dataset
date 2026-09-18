@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "C-H-Liu/bash2nl-qwen2.5-coder-3b-GGUF",
+  "slug": "c-h-liu-bash2nl-qwen2-5-coder-3b-gguf",
+  "author": "C-H-Liu",
+  "url": "https://huggingface.co/C-H-Liu/bash2nl-qwen2.5-coder-3b-GGUF",
+  "created_at": "2026-09-18T14:02:54.000Z",
+  "updated_at": "2026-09-18T14:04:39.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "ollama",
+    "bash",
+    "shell",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen2.5-Coder-3B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-Coder-3B-Instruct",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 1930509056,
+  "storage_human": "1.9 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-3B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "Outlook如何设置签名？添加Outlook签名-百度经验",
+      "url": "https://jingyan.baidu.com/article/eae07827d1ff0e5fec5485bb.html",
+      "snippet": "Dec 13, 2019 · Outlook如何设置签名？添加Outlook签名,Outlook是我们日常工作中经常用到的邮件收发工具。发送邮件时，在最后的 …"
+    },
+    {
+      "title": "Win11系统如何更改Microsoft store的下载路径？ - 知乎",
+      "url": "https://www.zhihu.com/question/564794300",
+      "snippet": "Nov 5, 2022 · 微软商店下载的软件默认是安装到C盘的，如果C盘空间比较紧凑的话我们就只能把软件安装到其他盘了。我们需要做两 …"
+    },
+    {
+      "title": "Outlook如何设置延迟（定时）发送邮件-百度经验",
+      "url": "https://jingyan.baidu.com/article/15622f244e9c16bcfcbea5fd.html",
+      "snippet": "Oct 13, 2020 · Outlook如何设置延迟（定时）发送邮件,你知道吗？Outlook可以设置延迟发送邮件，设置之后，如果邮件发送出去之后 …"
+    },
+    {
+      "title": "7-Zip 官方网站怎么下载？ - 知乎",
+      "url": "https://www.zhihu.com/question/20498753",
+      "snippet": "7-Zip 是一个功能强大的工具，特别适合需要 高效压缩 和 解压缩 功能的用户。比如 IT 专业人员、软件开发者或普通用户希望节省磁 …"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "huihui-ai/Huihui-NeoHorse-1-4B-abliterated-GGUF",
+  "slug": "huihui-ai-huihui-neohorse-1-4b-abliterated-gguf",
+  "author": "huihui-ai",
+  "url": "https://huggingface.co/huihui-ai/Huihui-NeoHorse-1-4B-abliterated-GGUF",
+  "created_at": "2026-09-18T12:53:26.000Z",
+  "updated_at": "2026-09-18T14:39:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "agentic",
+    "tool-use",
+    "coding",
+    "reasoning",
+    "instruction-following",
+    "abliterated",
+    "uncensored",
+    "huihui",
+    "GGUF",
+    "text-generation",
+    "base_model:TokenRhythm/NeoHorse-1-4B",
+    "base_model:finetune:TokenRhythm/NeoHorse-1-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 3,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4326350848,
+  "parameters_human": "4.33B",
+  "storage_bytes": 25775329056,
+  "storage_human": "25.8 GB",
+  "base_model": "TokenRhythm/NeoHorse-1-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Acquire – Stronger data. Stronger decisions. Stronger growth.",
+      "url": "https://www.acquire.com.au/",
+      "snippet": "Connect and manage your drilling data in one place, reducing fragmentation and revealing information that supports stronger drilling …"
+    },
+    {
+      "title": "GIM Suite - Geological data management software for enterprise | Acquire",
+      "url": "https://www.acquire.com.au/products/gim-suite/",
+      "snippet": "With a seamless integration across desktop, web and mobile, GIM Suite enables the capture, management and delivery of geological …"
+    },
+    {
+      "title": "acQuire - Geological data management software, drilling data …",
+      "url": "https://miningsoftware.org/?portfolio=acquire",
+      "snippet": "The acQuire GIM Suite is widely used for the managing of Geology and Drilling Data for Mining and Exploration projects – …"
+    },
+    {
+      "title": "Connecting to an acQuire Database - Seequent",
+      "url": "https://help.seequent.com/Geothermal/3.9/en-GB/Content/drillholes/connect-to-acquire-db.htm",
+      "snippet": "There are two options for connecting to an acQuire database: Create a new connection. To do this, right-click on the Well Data folder …"
+    },
+    {
+      "title": "Connecting to an acQuire Database - Seequent",
+      "url": "https://help.seequent.com/Geo/4.1/en-GB/Content/drillholes/connect-to-acquire-db.htm?Highlight=acQuire",
+      "snippet": "To do this, right-click on the Drillhole Data folder and select Import Drillhole Data via acQuire > New Selection. In the window that …"
+    }
+  ]
+}

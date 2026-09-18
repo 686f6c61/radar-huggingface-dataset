@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "luminasai/Luminas-Sora-3",
+  "slug": "luminasai-luminas-sora-3",
+  "author": "luminasai",
+  "url": "https://huggingface.co/luminasai/Luminas-Sora-3",
+  "created_at": "2026-09-18T15:45:34.000Z",
+  "updated_at": "2026-09-18T16:16:43.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Luminas",
+    "Sora",
+    "3",
+    "Vision",
+    "Agentic",
+    "Multimodal",
+    "Reasoning",
+    "image-text-to-image",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1328202,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "丨丨丨这种竖条符号如何打出来呢，谁可以教我一下_百度知道",
+      "url": "https://zhidao.baidu.com/question/552993224.html",
+      "snippet": "丨丨丨这种竖条符号如何打出来呢，谁可以教我一下可以用搜狗输入法里面的特殊符号打出来。具体操作步骤如下：1、把电脑输入法 …"
+    },
+    {
+      "title": "CV（%）是什么意思 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/25862450.html",
+      "snippet": "May 8, 2007 · cv = Coefficient of variation偏差系数，变异系数。 cv (%)= (A-B)/B *100。 其中A为测量值或实际值等。 B为设计值或理 …"
+    },
+    {
+      "title": "简历的篇幅是一页好还是两页好？ - 知乎",
+      "url": "https://www.zhihu.com/question/20193873",
+      "snippet": "结论：98%的使用场景简历应当保持在一页，仅2种情况简历无需考虑一页限制。 先说说为什么我们大多数的简历场景应该将简历压缩 …"
+    },
+    {
+      "title": "ICRA和IROS为什么只是B和C？ - 知乎",
+      "url": "https://www.zhihu.com/question/269663120",
+      "snippet": "保命说明：本评价只针对CV领域发ICRA和IROS的，绝对没有开地图炮。CV如果很优秀的工作发表在了IROS和ICRA上，也不在我的 …"
+    },
+    {
+      "title": "俄罗斯搜索引擎网址 yandex官网入口直达 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/725567645356284605.html",
+      "snippet": "Nov 11, 2025 · 俄罗斯搜索引擎网址 yandex官网入口直达Yandex的官方网址如下：国际版入口：https://yandex.com/俄罗斯本土版入 …"
+    }
+  ]
+}

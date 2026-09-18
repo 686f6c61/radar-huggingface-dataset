@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "tirthfx/gemma-3-4b-it-ablated-GGUF",
+  "slug": "tirthfx-gemma-3-4b-it-ablated-gguf",
+  "author": "tirthfx",
+  "url": "https://huggingface.co/tirthfx/gemma-3-4b-it-ablated-GGUF",
+  "created_at": "2026-09-18T17:59:07.000Z",
+  "updated_at": "2026-09-18T19:25:31.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "gemma3",
+    "llama.cpp",
+    "lm-studio",
+    "abliterated",
+    "refusal-ablation",
+    "red-teaming",
+    "ai-safety",
+    "interpretability",
+    "text-generation",
+    "en",
+    "arxiv:2406.11717",
+    "base_model:google/gemma-3-4b-it",
+    "base_model:finetune:google/gemma-3-4b-it",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3880263168,
+  "parameters_human": "3.88B",
+  "storage_bytes": 7776006432,
+  "storage_human": "7.8 GB",
+  "base_model": "google/gemma-3-4b-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "leboncoin, site de petites annonces gratuites",
+      "url": "https://www.leboncoin.fr/",
+      "snippet": "Avec leboncoin, trouvez la bonne affaire, réalisez la bonne vente pour votre voiture, immobilier, emploi, location de vacances, …"
+    },
+    {
+      "title": "Toute la France - leboncoin",
+      "url": "https://www.leboncoin.fr/all/offer",
+      "snippet": "Toutes nos annonces gratuites Toute la France. Consultez nos 91613477 annonces de particuliers et professionnels sur leboncoin"
+    },
+    {
+      "title": "Leboncoin Centre d'aide",
+      "url": "https://assistance.leboncoin.info/hc/fr",
+      "snippet": "Pour envoyer votre colis, téléchargez et imprimez le bon d’envoi. Emballez soigneusement l’article, et prenez soin de laisser le code …"
+    },
+    {
+      "title": "leboncoin, petites annonces – Applications sur Google Play",
+      "url": "https://play.google.com/store/apps/details?id=fr.leboncoin&hl=fr",
+      "snippet": "Postulez au job qui vous convient en deux clics dans la catégorie Emploi. leboncoin est le deuxième site d'emploi privé en France. • …"
+    },
+    {
+      "title": "Le bon coin: Petites annonces – Applications sur Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.oussx.dzads.free&hl=fr",
+      "snippet": "Petites annonces gratuites est le moyen idéal pour acheter et vendre des articles de toutes sortes en France et n'importe ou. Avec …"
+    }
+  ]
+}

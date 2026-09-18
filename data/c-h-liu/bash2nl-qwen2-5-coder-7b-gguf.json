@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "C-H-Liu/bash2nl-qwen2.5-coder-7b-GGUF",
+  "slug": "c-h-liu-bash2nl-qwen2-5-coder-7b-gguf",
+  "author": "C-H-Liu",
+  "url": "https://huggingface.co/C-H-Liu/bash2nl-qwen2.5-coder-7b-GGUF",
+  "created_at": "2026-09-18T13:36:10.000Z",
+  "updated_at": "2026-09-18T14:01:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "ollama",
+    "bash",
+    "shell",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 4683680192,
+  "storage_human": "4.7 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "L'actualité dans l'Oise de Compiègne à Beauvais en passant par Creil ...",
+      "url": "https://www.oisehebdo.fr/",
+      "snippet": "1 day ago · Retrouvez toutes les vidéos à propos de l'actualité, la politique, l'économie et la culture de l'Oise sur le site de Oise Hebdo."
+    },
+    {
+      "title": "C ce soir - Emission - tv-programme.com",
+      "url": "https://tv-programme.com/c-ce-soir-emission",
+      "snippet": "C ce soir - Programme TV de ce soir sur la TNT. Gratuit et complet. Replay TV : liens replay TF1, M6, W9, France 2, France 3, …"
+    },
+    {
+      "title": "Nogent-sur-Oise — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Nogent-sur-Oise",
+      "snippet": "Nogent-sur-Oise est une commune française située dans le département de l' Oise, en région Hauts-de-France et fait partie de la …"
+    },
+    {
+      "title": "Nogent-sur-Oise - Ouest-France",
+      "url": "https://www.ouest-france.fr/hauts-de-france/nogent-sur-oise-60180/",
+      "snippet": "Nogent-sur-Oise : toute l'actualité en direct, soyez informé des événements, des sorties, de l'agenda, des loisirs et des sports tout au …"
+    },
+    {
+      "title": "Nogent-sur-Oise, Oise (code postal 60... - Linternaute.com",
+      "url": "https://www.linternaute.com/ville/nogent-sur-oise/ville-60463",
+      "snippet": "Je compte déménagé prochainement parce que je n’en peux plus de cette ambiance et ça me désole car j’aime beaucoup …"
+    }
+  ]
+}

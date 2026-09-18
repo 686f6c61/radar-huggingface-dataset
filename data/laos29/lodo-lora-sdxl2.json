@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Laos29/Lodo-lora-sdxl2",
+  "slug": "laos29-lodo-lora-sdxl2",
+  "author": "Laos29",
+  "url": "https://huggingface.co/Laos29/Lodo-lora-sdxl2",
+  "created_at": "2026-09-18T14:13:25.000Z",
+  "updated_at": "2026-09-18T14:13:50.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 334641164,
+  "storage_human": "335 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Particulier - impots.gouv.fr",
+      "url": "https://www.impots.gouv.fr/particulier",
+      "snippet": "À la une Particulier Professionnel Demande d'aide de 100 € pour les travailleurs « grands rouleurs » Publié le 27 mai 2026 Vous avez …"
+    },
+    {
+      "title": "J'accède à mon espace Finances publiques et à mes services en ligne",
+      "url": "https://www.impots.gouv.fr/particulier/jaccede-mon-espace-particulier-et-mes-services-en-ligne",
+      "snippet": "Mar 30, 2016 · Une offre diversifiée de services en ligne vous est proposée dans votre espace Finances publiques. Vous pouvez …"
+    },
+    {
+      "title": "impots.gouv.fr - Particuliers | authentification",
+      "url": "https://cfspart.impots.gouv.fr/",
+      "snippet": "Avec vos identifiants impots.gouv.fr, vous pouvez effectuer des démarches administratives sur des sites partenaires de …"
+    },
+    {
+      "title": "Particuliers | authentification - impots.gouv.fr",
+      "url": "https://cfsfc.impots.gouv.fr/enp/ensu/accueilensupres.do",
+      "snippet": "Veuillez patienter, vous allez être redirigé (e) vers la page d'authentification. Cliquez ici pour y aller immédiatement."
+    },
+    {
+      "title": "Particuliers | Déconnexion réussie - impots.gouv.fr",
+      "url": "https://cfspart.impots.gouv.fr/deconnexion2",
+      "snippet": "République Française impots.gouv.fr Mon espace Finances publiques Connexion à l'espace professionnel"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "usezn/Galvanize-60M",
+  "slug": "usezn-galvanize-60m",
+  "author": "usezn",
+  "url": "https://huggingface.co/usezn/Galvanize-60M",
+  "created_at": "2026-09-18T16:02:20.000Z",
+  "updated_at": "2026-09-18T16:04:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "galvanize",
+    "text-classification",
+    "prompt-injection",
+    "security",
+    "agent",
+    "mcp",
+    "modernbert",
+    "guardrails",
+    "ai-safety",
+    "en",
+    "arxiv:2412.13663",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 60123649,
+  "parameters_human": "60.1M",
+  "storage_bytes": 417057559,
+  "storage_human": "417 MB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/",
+      "snippet": "Google's service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other …"
+    },
+    {
+      "title": "DeepL Übersetzer | Der präziseste Übersetzer der Welt - DeepL Translate",
+      "url": "https://www.deepl.com/de/translator",
+      "snippet": "Übersetzen Sie Texte und ganze Dateien im Handumdrehen. Präzise Übersetzungen für Einzelnutzer und Teams. Jeden Tag nutzen …"
+    },
+    {
+      "title": "Google Übersetzer",
+      "url": "https://translate.google.de/",
+      "snippet": "Mit diesem kostenlosen Google-Dienst lassen sich Wörter, Sätze und Webseiten sofort zwischen Deutsch und über 100 Sprachen …"
+    },
+    {
+      "title": "DeepL Translate: The world's most accurate translator",
+      "url": "https://www.deepl.com/en/translator",
+      "snippet": "Translate texts & full document files instantly. Accurate translations for individuals and Teams. Millions translate with DeepL every day."
+    },
+    {
+      "title": "Google Übersetzer",
+      "url": "https://translate.google.ch/",
+      "snippet": "Mit Google Übersetzer können Sie kostenlos Wörter, Sätze und Webseiten in über 100 Sprachen übersetzen."
+    }
+  ]
+}

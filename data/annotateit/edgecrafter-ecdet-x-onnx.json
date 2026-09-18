@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "AnnotateIt/edgecrafter-ecdet-x-onnx",
+  "slug": "annotateit-edgecrafter-ecdet-x-onnx",
+  "author": "AnnotateIt",
+  "url": "https://huggingface.co/AnnotateIt/edgecrafter-ecdet-x-onnx",
+  "created_at": "2026-09-18T18:21:54.000Z",
+  "updated_at": "2026-09-18T18:36:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "edgecrafter",
+    "annotateit",
+    "object-detection",
+    "dataset:detection-datasets/coco",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 197214708,
+  "storage_human": "197 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Piskel - Free online sprite editor",
+      "url": "https://www.piskelapp.com/",
+      "snippet": "Piskel, free online sprite editor. A simple web-based tool for Spriting and Pixel art. Create pixel art, game sprites and animated GIFs. …"
+    },
+    {
+      "title": "AnnotateIt/edgecrafter-ecdet-s-onnx · Hugging Face",
+      "url": "https://huggingface.co/AnnotateIt/edgecrafter-ecdet-s-onnx",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Piskel - Free Online Pixel Art & Animated Sprite Editor",
+      "url": "https://piskel.my/",
+      "snippet": "Piskel is a free online pixel art and sprite editor for creating animated sprites, game characters, icons, tiles and retro-style pixel graphics."
+    },
+    {
+      "title": "AnnotateIt/edgecrafter-ecdet-s-onnx-int8-experimental · Hugging Face",
+      "url": "https://huggingface.co/AnnotateIt/edgecrafter-ecdet-s-onnx-int8-experimental",
+      "snippet": "This model is 61% smaller than the FP32 ONNX base and retains similar COCO accuracy, but it is approximately 2% slower in AnnotateIt's production-like threaded ONNX Runtime Web benchmark. It is not used by AnnotateIt and is not listed in the application's model catalog."
+    },
+    {
+      "title": "Piskel - GitHub Pages",
+      "url": "https://piskelapp.github.io/piskel/",
+      "snippet": "No color in the selected palette ... [32x32]"
+    }
+  ]
+}

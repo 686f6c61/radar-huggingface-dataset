@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "JobSched/phi-3-trained-v1",
+  "slug": "jobsched-phi-3-trained-v1",
+  "author": "JobSched",
+  "url": "https://huggingface.co/JobSched/phi-3-trained-v1",
+  "created_at": "2026-09-18T16:14:15.000Z",
+  "updated_at": "2026-09-18T16:14:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "phi3",
+    "text-generation",
+    "autotrain",
+    "text-generation-inference",
+    "peft",
+    "conversational",
+    "custom_code",
+    "base_model:microsoft/Phi-3-mini-128k-instruct",
+    "base_model:finetune:microsoft/Phi-3-mini-128k-instruct",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Inktweb.nl",
+      "url": "https://www.inktweb.nl/",
+      "snippet": "Inktweb.nl is een webwinkel die zich richt op de verkoop van Printer Consumables (inktcartridges, toners, papier, labels e.d.). En daar …"
+    },
+    {
+      "title": "Cartridges kopen? Bestel inktcartridges nu extra voordelig! - Inktweb.nl",
+      "url": "https://www.inktweb.nl/cartridges/",
+      "snippet": "Bij Inktweb.nl hebben wij jaren gezocht naar geschikte fabrikanten om de beste kwaliteit huismerk cartridges te kunnen garanderen. …"
+    },
+    {
+      "title": "Groothandel inktcartridges, toners en kantoorartikelen - Inktweb.nl",
+      "url": "https://groothandel.inktweb.nl/",
+      "snippet": "Bij Inktweb.nl kunt u terecht voor al uw printersupplies. Van originele merkcartridges tot de nieuwste compatible en remanufactured …"
+    },
+    {
+      "title": "Webwinkel > Ledenkorting: Inktweb.nl | SeniorWeb",
+      "url": "https://www.seniorweb.nl/webwinkel/ledenkorting/inktweb",
+      "snippet": "SeniorWeb-leden ontvangen korting op huismerkcartridges en andere producten van Inktweb.nl."
+    },
+    {
+      "title": "Alles over onze Inkt groothandel! Voordelig en snel! - Inktweb.nl",
+      "url": "https://groothandel.inktweb.nl/over/",
+      "snippet": "Inktweb.nl is een webwinkel die zich richt op de verkoop van Printer Consumables. Dit zijn onder andere inkt en toners voor printers, …"
+    }
+  ]
+}

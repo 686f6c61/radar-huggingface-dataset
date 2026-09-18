@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "MovPouli/mov-models",
+  "slug": "movpouli-mov-models",
+  "author": "MovPouli",
+  "url": "https://huggingface.co/MovPouli/mov-models",
+  "created_at": "2026-09-18T19:22:05.000Z",
+  "updated_at": "2026-09-18T19:31:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3397103616,
+  "parameters_human": "3.40B",
+  "storage_bytes": 6788007008,
+  "storage_human": "6.8 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ゆきよし (@yukiyoshi0822) / X",
+      "url": "https://x.com/yukiyoshi0822",
+      "snippet": "261 followers · 367 following. Joined Feb 2010. See the latest conversations with @yukiyoshi0822"
+    },
+    {
+      "title": "ゆきともよしみ (@yukiyoshi0822) • Instagram photos and videos",
+      "url": "https://www.instagram.com/yukiyoshi0822/",
+      "snippet": "味噌作ったり筋トレしたり 好きな人の笑顔が大好きです ばーねすすたいる534 followers · 1.1K+ following. See photos and videos …"
+    },
+    {
+      "title": "Yoshimi - YouTube",
+      "url": "https://www.youtube.com/@yukiyoshi0822",
+      "snippet": "Yoshimi @yukiyoshi0822 • 1 subscriber More about this channel ...more More about this channel ...more ...more"
+    },
+    {
+      "title": "ゆきよし (@yukiyoshi0822) 's Live - Twitcast",
+      "url": "https://twitcasting.tv/yukiyoshi0822/",
+      "snippet": "ゆきよし / 人の笑顔が大好きです。慣れるまで人見知り激しい。6年前からゆきよしではないんだけど気に入ってるのでこのままで …"
+    },
+    {
+      "title": "yukiyoshi (@umiyuki0829) • Instagram photos and videos",
+      "url": "https://www.instagram.com/umiyuki0829/",
+      "snippet": "361 Followers, 189 Following, 1,382 Posts - yukiyoshi (@umiyuki0829) on Instagram: \"\""
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "luminas-ai/Luminas-Sora-3",
+  "slug": "luminas-ai-luminas-sora-3",
+  "author": "luminas-ai",
+  "url": "https://huggingface.co/luminas-ai/Luminas-Sora-3",
+  "created_at": "2026-09-18T16:20:02.000Z",
+  "updated_at": "2026-09-18T16:33:22.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Luminas",
+    "Sora",
+    "3",
+    "Vision",
+    "Agentic",
+    "Multimodal",
+    "Reasoning",
+    "conversational",
+    "llama.cpp",
+    "custom_code",
+    "image-text-to-image",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1328202,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GPLAY.BG - Gplay.bg",
+      "url": "https://gplay.bg/",
+      "snippet": "Gplay.BG e официален търговски представител и сервизен партньор за България на марките, които предлага на сайта, което …"
+    },
+    {
+      "title": "Компютри - Gplay.bg",
+      "url": "https://gplay.bg/personal-computers",
+      "snippet": "Gplay.BG e официален търговски представител и сервизен партньор за България на марките, които предлага на сайта, което …"
+    },
+    {
+      "title": "Главна страница - GplayTV",
+      "url": "https://gplaytv.bg/",
+      "snippet": "Oct 28, 2025 · GplayTV GplayTV Black Friday Show Програма Тази година Black Friday Show на GplayTV ще бъде по-голямо от …"
+    },
+    {
+      "title": "Google Play",
+      "url": "https://play.google.com/family/create?hl=bg",
+      "snippet": "Споделяйте покупките в Google Play с членовете на семейството си"
+    },
+    {
+      "title": "Gplay TV - Facebook",
+      "url": "https://www.facebook.com/gplaytv/",
+      "snippet": "Gplay TV. 36,546 likes · 123 talking about this. На живо всяка сряда от 19:00 по www.twitch.tv/gplaytv1"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "llmsforall/Millie-1.1-35B-A3B-Ternary",
+  "slug": "llmsforall-millie-1-1-35b-a3b-ternary",
+  "author": "llmsforall",
+  "url": "https://huggingface.co/llmsforall/Millie-1.1-35B-A3B-Ternary",
+  "created_at": "2026-09-18T17:01:24.000Z",
+  "updated_at": "2026-09-18T18:21:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "mixture-of-experts",
+    "ternary",
+    "on-device",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:quantized:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 8606112192,
+  "storage_human": "8.6 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "نوبت دهي ، ويزيت آنلاين ، پرونده و نسخه نويسي الكترونيك",
+      "url": "https://www.rayteb.ir/",
+      "snippet": "پزشک در مدت زمان تعیین شده ، از طریق چت رایطب با شما ارتباط برقرار میکند و ضمن مشاوره میتوانید مستنداتی از قبیل نتیجه آزمایشات یا فایل‌های تصویربرداری را برای پزشک ارسال کنید."
+    },
+    {
+      "title": "nobat.tamin.ir",
+      "url": "https://nobat.tamin.ir/rayteb/fa-ir/Account/Login",
+      "snippet": "Transferring to the website... در ﺣﺎل اﻧﺘﻘﺎل ﺑﻪ ﺳﺎﯾﺖ ﻣﻮرد ﻧﻈﺮ ﻫﺴﺘﯿﺪ..."
+    },
+    {
+      "title": "صفحه اصلی — گروه سلامت الکترونیک رایطب نرم افزار های مطب ،کلینیک ...",
+      "url": "https://www.rayteb.com/",
+      "snippet": "رایطب، نرم‌افزار مدیریت کلینیک و مطب پزشکان است که با هدف افزایش سرعت پذیرش، کاهش خطای منشی‌ها و یکپارچگی با پرونده الکترونیک بیماران طراحی شده."
+    },
+    {
+      "title": "راهنمای رایطب - Rayteb.ir",
+      "url": "https://rayteb.ir/rayteb/fa-ir/page/PatientGuide",
+      "snippet": "ثبت کد ملی به عنوان نام کاربری و شماره موبایل در قسمت ثبت نام، برای شما امکان پیگیری نوبت‌ها، استفاده از خدمات بیمه و دریافت نسخه‌های درمانی را فراهم میسازد."
+    },
+    {
+      "title": "سرویس کلینیک ابری رایطب",
+      "url": "https://www.rayteb.com/cloud-clinic/",
+      "snippet": "سرویس کلینیک ابری رایطب، راهکاری مدرن برای مدیریت مطب و درمانگاه است که امکان دسترسی آنلاین، امن و بدون نصب به اطلاعات پزشکی را فراهم می‌کند."
+    }
+  ]
+}

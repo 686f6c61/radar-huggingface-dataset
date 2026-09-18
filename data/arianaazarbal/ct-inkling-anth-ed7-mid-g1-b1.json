@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "arianaazarbal/ct-inkling-anth-ed7-mid-g1-b1",
+  "slug": "arianaazarbal-ct-inkling-anth-ed7-mid-g1-b1",
+  "author": "arianaazarbal",
+  "url": "https://huggingface.co/arianaazarbal/ct-inkling-anth-ed7-mid-g1-b1",
+  "created_at": "2026-09-18T19:02:08.000Z",
+  "updated_at": "2026-09-18T19:03:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "constitutional-training",
+    "iterated-constitution",
+    "family:inkling_small",
+    "seed:anthropic",
+    "method:ed7",
+    "regime:mid",
+    "gen:1",
+    "branch:b1",
+    "text-generation",
+    "base_model:thinkingmachines/Inkling-Small",
+    "base_model:adapter:thinkingmachines/Inkling-Small",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16901410336,
+  "storage_human": "16.9 GB",
+  "base_model": "thinkingmachines/Inkling-Small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Athen → Amarynthos: 1 Möglichkeiten per Bus, Auto oder ... - Rome2rio",
+      "url": "https://www.rome2rio.com/de/s/Athen/Amarynthos",
+      "snippet": "Hier findest du sämtliche Verbindungen für deine Reise von Athen nach Amarynthos. Rome2Rio zeigt dir aktuelle Fahrpläne und …"
+    },
+    {
+      "title": "Flughafen Athen-Eleftherios Venizelos (ATH) nach Amarynthos",
+      "url": "https://www.rome2rio.com/de/s/Flughafen-Athen-Eleftherios-Venizelos-ATH/Amarynthos",
+      "snippet": "Hier findest du sämtliche Verbindungen für deine Reise von Flughafen Athen-Eleftherios Venizelos (ATH) nach Amarynthos. …"
+    },
+    {
+      "title": "Amarynthos Beach, Griechenland - Strandführer, Infos, Fotos - BeachAtlas",
+      "url": "https://www.beachatlas.com/de/amarynthos-2",
+      "snippet": "Nur etwa 1,5 Stunden von der Hauptstadt Athen entfernt, ist er ein beliebtes Ziel für Wochenendausflüge. Der Strand ist bekannt für …"
+    },
+    {
+      "title": "Amarynthos Euboea | Urlaub in Amarynthos Griechenland",
+      "url": "https://www.griechenlandweb.de/orte/amarynthos-euboea.php",
+      "snippet": "Die Sommermonate Juli und August sind sehr beschäftigt, denn dann kommen die griechischen Touristen in die Stadt, hauptsächlich …"
+    },
+    {
+      "title": "Amarynthos, Griechenland: Was Sie vor Ihrer Reise wissen ... - Tripadvisor",
+      "url": "https://www.tripadvisor.at/Tourism-g1188093-Amarynthos_Euboea_Region_Central_Greece-Vacations.html",
+      "snippet": "Beliebte Kategorien für Amarynthos Strand-Suite-Hotels in AmarynthosStrandhotels mit Hund in Amarynthos In der Nähe von …"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "suveda999/ppo-LunarLander-v3",
+  "slug": "suveda999-ppo-lunarlander-v3",
+  "author": "suveda999",
+  "url": "https://huggingface.co/suveda999/ppo-LunarLander-v3",
+  "created_at": "2026-09-18T15:21:08.000Z",
+  "updated_at": "2026-09-18T16:03:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "LunarLander-v2",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 284402,
+  "storage_human": "284402 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Snapchat",
+      "url": "https://accounts.snapchat.com/v2/login?locale=ar",
+      "snippet": "سجّل الدخول إلى سناب شات على الويب، وأدِر حسابك ودردِش مع الأصدقاء واتصل بهم."
+    },
+    {
+      "title": "Snapchat",
+      "url": "https://accounts.snapchat.com/v2/welcome",
+      "snippet": ""
+    },
+    {
+      "title": "Accounts • Snapchat",
+      "url": "https://accounts.snapchat.com/v2/login",
+      "snippet": "Log in to Snapchat on the web to manage your account, chat, and call with friends."
+    },
+    {
+      "title": "Snapchat",
+      "url": "https://accounts.snapchat.com/v2/login?locale=fr-FR",
+      "snippet": "Connectez-vous à Snapchat pour gérer votre compte, discuter et appeler vos amis."
+    },
+    {
+      "title": "Snapchat",
+      "url": "https://accounts.snapchat.com/v2/login?locale=ar-AR",
+      "snippet": "سجّل الدخول إلى سناب شات على الويب لإدارة حسابك والدردشة مع الأصدقاء."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "d4rkninja/tanpo-ops-LoRA",
+  "slug": "d4rkninja-tanpo-ops-lora",
+  "author": "d4rkninja",
+  "url": "https://huggingface.co/d4rkninja/tanpo-ops-LoRA",
+  "created_at": "2026-09-18T15:46:55.000Z",
+  "updated_at": "2026-09-18T17:46:38.000Z",
+  "license": "lfm-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "ops",
+    "tanpo",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:d4rkninja/tanpo-ops-sft",
+    "base_model:LiquidAI/LFM2.5-1.2B-Instruct",
+    "base_model:adapter:LiquidAI/LFM2.5-1.2B-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 36588320,
+  "storage_human": "37 MB",
+  "base_model": "LiquidAI/LFM2.5-1.2B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Routenplaner | ADAC Maps",
+      "url": "https://maps.adac.de/routenplaner",
+      "snippet": "Mit ADAC Maps können Sie bequem Ihre Routen planen. Egal, ob Sie mit Auto, Wohnmobil, Gespann oder Motorrad unterwegs sind, …"
+    },
+    {
+      "title": "Kostenloser Routenplaner und Reiseführer | ADAC Maps",
+      "url": "https://maps.adac.de/",
+      "snippet": "Zugspitzen-Routenplaner für Wintersportbegeisterte ADAC Maps führt zu mehreren Skigebieten rund um die Zugspitze. Zwischen …"
+    },
+    {
+      "title": "Kostenloser Routenplaner und Reiseführer | ADAC Maps",
+      "url": "https://maps.adac.de/route",
+      "snippet": "Ihr kostenloser Routenplaner für Auto, Camper, Gespann & Motorrad - Kommen Sie schnell und sicher ans Ziel. √ Stau √ Tanken √ …"
+    },
+    {
+      "title": "Verkehrslage, Verkehrsinfos und Baustellen | ADAC Maps",
+      "url": "https://maps.adac.de/verkehr",
+      "snippet": "Im Routenplaner informiert ADAC Maps nicht nur über die Verkehrslage am Ziel, sondern auch über aktuelle, wie auch geplante …"
+    },
+    {
+      "title": "Maut und Vignetten in Europa | ADAC Maps",
+      "url": "https://maps.adac.de/verkehr/maut-vignette",
+      "snippet": "In vielen Ländern in Europa werden Gebühren für die Straßennutzung erhoben - in Form von Vignetten für Autobahnbenutzung oder …"
+    }
+  ]
+}

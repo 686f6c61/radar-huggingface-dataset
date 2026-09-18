@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "pipenetwork/Ternary-Bonsai-2-27B-MLX-8bit",
+  "slug": "pipenetwork-ternary-bonsai-2-27b-mlx-8bit",
+  "author": "pipenetwork",
+  "url": "https://huggingface.co/pipenetwork/Ternary-Bonsai-2-27B-MLX-8bit",
+  "created_at": "2026-09-18T19:59:03.000Z",
+  "updated_at": "2026-09-18T19:59:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "apple-silicon",
+    "ternary",
+    "vision-language",
+    "image-text-to-text",
+    "conversational",
+    "base_model:prism-ml/Ternary-Bonsai-2-27B-gguf",
+    "base_model:quantized:prism-ml/Ternary-Bonsai-2-27B-gguf",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 29514032359,
+  "storage_human": "29.5 GB",
+  "base_model": "prism-ml/Ternary-Bonsai-2-27B-gguf",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jutarnji list - Najnovije vijesti iz Hrvatske i svijeta",
+      "url": "https://www.jutarnji.hr/",
+      "snippet": "Strane zvijezde Reality brendovi Jutarnji list Slobodna Dalmacija Sportske novosti Globus"
+    },
+    {
+      "title": "Jutarnji list - Najnovije vijesti iz Hrvatske i svijeta",
+      "url": "https://www.jutarnji.hr/vijesti",
+      "snippet": "Jutarnji list - Vijesti uživo, istraživanja i analize, originalne perspektive iz Hrvatske i svijeta."
+    },
+    {
+      "title": "Jutarnji list - Hrvatska",
+      "url": "https://www.jutarnji.hr/vijesti/hrvatska",
+      "snippet": "Jutarnji list - Vijesti uživo, istraživanja i analize, originalne perspektive iz Hrvatske i svijeta."
+    },
+    {
+      "title": "Jutarnji list - Jutarnji list",
+      "url": "https://www.jutarnji.hr/vijesti/najcitanije",
+      "snippet": "1 day ago · Jutarnji list - Vijesti uživo, istraživanja i analize, originalne perspektive iz Hrvatske i svijeta."
+    },
+    {
+      "title": "jutarnji.net",
+      "url": "https://jutarnji.net/?lang=eu",
+      "snippet": "OVO JE BEOGRAĐANIN KOJI JE MORAO DA PROMENI IME ZBOG BRATA VOĐE ŠKALJARSKOG KLANA! Za sve kriva …"
+    }
+  ]
+}

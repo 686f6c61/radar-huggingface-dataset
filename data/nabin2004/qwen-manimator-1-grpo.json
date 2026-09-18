@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "nabin2004/qwen-Manimator-1-grpo",
+  "slug": "nabin2004-qwen-manimator-1-grpo",
+  "author": "nabin2004",
+  "url": "https://huggingface.co/nabin2004/qwen-Manimator-1-grpo",
+  "created_at": "2026-09-18T18:53:35.000Z",
+  "updated_at": "2026-09-19T16:59:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen3-8B",
+    "grpo",
+    "lora",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "arxiv:2402.03300",
+    "base_model:Qwen/Qwen3-8B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1599216033,
+  "storage_human": "1.6 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "THE 10 BEST Pizza Places in London (Updated 2026) - Tripadvisor",
+      "url": "https://www.tripadvisor.com/Restaurants-g186338-c31-London_England.html",
+      "snippet": "Best Pizza in London, England: Find Tripadvisor traveller reviews of London Pizza places and search by price, location, and more."
+    },
+    {
+      "title": "Pizza Hut | Pizza Delivery",
+      "url": "https://www.pizzahut.co.uk/",
+      "snippet": "This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply. By clicking \"Accept\", you agree to …"
+    },
+    {
+      "title": "Rudy's Pizza - True Neapolitan Pizza",
+      "url": "https://www.rudyspizza.co.uk/",
+      "snippet": "Discover the authentic taste of Neapolitan pizza at Rudy's Pizza. Fresh ingredients, traditional recipes, and a welcoming atmosphere. …"
+    },
+    {
+      "title": "20 Best Pizza Restaurants in London - Time Out",
+      "url": "https://www.timeout.com/london/restaurants/londons-best-restaurants-for-pizza",
+      "snippet": "We’ve tried and tested the very best pizza in London – so you can eat cheesy Italian goodness every day of the week. London is full …"
+    },
+    {
+      "title": "Pizza Pilgrims",
+      "url": "https://www.pizzapilgrims.co.uk/",
+      "snippet": "All our dough is made fresh, daily, sourcing the best ingredients Italy has to offer to bring you the best possible pizza base going. As …"
+    }
+  ]
+}

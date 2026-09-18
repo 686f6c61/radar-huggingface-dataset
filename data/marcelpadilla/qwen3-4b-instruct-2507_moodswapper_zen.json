@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "marcelpadilla/Qwen3-4B-Instruct-2507_moodswapper_zen",
+  "slug": "marcelpadilla-qwen3-4b-instruct-2507_moodswapper_zen",
+  "author": "marcelpadilla",
+  "url": "https://huggingface.co/marcelpadilla/Qwen3-4B-Instruct-2507_moodswapper_zen",
+  "created_at": "2026-09-18T15:10:23.000Z",
+  "updated_at": "2026-09-18T15:11:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "moodswapper",
+    "zen",
+    "conversational",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056404813,
+  "storage_human": "8.1 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Youtube musique [Résolu] - Forum YouTube",
+      "url": "https://forums.commentcamarche.net/forum/affich-38298448-youtube-musique",
+      "snippet": "Jul 8, 2026 · Youtube musique Résolu RESTANQUE83 - Modifié le 8 juil. 2026 à 14:39 Winux01 - 8 juil. 2026 à 15:11"
+    },
+    {
+      "title": "What is YouTube Music? - YouTube Music Help - Google Help",
+      "url": "https://support.google.com/youtubemusic/answer/6313529?hl=en",
+      "snippet": "What is YouTube Music? With the YouTube Music app, you can watch music videos, stay connected to artists you love, and discover …"
+    },
+    {
+      "title": "VLC : extraire une piste audio dans une vidéo de Youtube",
+      "url": "https://forums.commentcamarche.net/forum/affich-35764777-vlc-extraire-une-piste-audio-dans-une-video-de-youtube",
+      "snippet": "Dec 22, 2018 · Rogner video vlc- Forum Montage et acquisition vidéo 15 réponses Résumé de la discussion Le fil analyse les …"
+    },
+    {
+      "title": "r/Music - Reddit",
+      "url": "https://www.reddit.com/r/Music/",
+      "snippet": "r/Music: Reddit’s #1 Music Community I've been diving deep into classical music lately, and I've got a burning question: What sets …"
+    },
+    {
+      "title": "Reddit - Dive into anything",
+      "url": "https://www.reddit.com/r/all+/",
+      "snippet": "Create an account to follow your favorite communities and start taking part in conversations."
+    }
+  ]
+}

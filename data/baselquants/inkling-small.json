@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "baselquants/Inkling-Small",
+  "slug": "baselquants-inkling-small",
+  "author": "baselquants",
+  "url": "https://huggingface.co/baselquants/Inkling-Small",
+  "created_at": "2026-09-18T19:38:29.000Z",
+  "updated_at": "2026-09-18T19:38:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "inkling_mm_model",
+    "image-text-to-text",
+    "conversational",
+    "audio-text-to-text",
+    "moe",
+    "license:apache-2.0",
+    "eval-results",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 265956439090,
+  "parameters_human": "265.96B",
+  "storage_bytes": 531944513947,
+  "storage_human": "531.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Die Fantastischen Vier – Wikipedia",
+      "url": "https://de.m.wikipedia.org/wiki/Die_Fantastischen_Vier",
+      "snippet": "Die Fantastischen Vier (oft Fanta 4 abgekürzt) sind eine deutsche Hip-Hop -Gruppe aus Stuttgart. Die Mitglieder sind Michael Bernd …"
+    },
+    {
+      "title": ": Diese Talente sind im Team Michi und Smudo",
+      "url": "https://www.swp.de/unterhaltung/tv/the-voice-of-germany-2026-diese-talente-sind-im-team-michi-und-smudo-79478351.html",
+      "snippet": "1 day ago · Welche Talente entscheiden sich 2026 bei „The Voice of Germany“ für Michi und Smudo? Hier findet ihr alle Sängerinnen …"
+    },
+    {
+      "title": "Smudo und Michi Beck: So ticken die \"The Voice\"-Coaches privat - Joyn",
+      "url": "https://www.joyn.de/bts/serien/the-voice-of-germany/einer-von-beiden-ist-adrenalin-junkie-so-ticken-die-tvog-coaches-smudo-und-michi-beck-privat-8528?msockid=3bc2f0e82fcd6aa92522e7302ef36bb8",
+      "snippet": "12 hours ago · Keiner der aktuellen Coaches hat mehr \"The Voice\"-Erfahrung als sie: Smudo und Michi Beck. Was machen die …"
+    },
+    {
+      "title": "Smudo – Wikipedia",
+      "url": "https://de.m.wikipedia.org/wiki/Smudo",
+      "snippet": "Zur gleichen Zeit begann er auf dem C64 zu programmieren; mehrere seiner Programme wurden bei INPUT 64 veröffentlicht. 1989 …"
+    },
+    {
+      "title": "Michi Beck und Smudo verraten: Das passiert mit den \"The Voice ...",
+      "url": "https://www.joyn.de/bts/serien/the-voice-of-germany/michi-beck-smudo-exklusiv-das-passiert-mit-den-tvog-talenten-hinter-den-kulissen-184191?msockid=3bc2f0e82fcd6aa92522e7302ef36bb8",
+      "snippet": "Sep 10, 2026 · Die \"The Voice\"-Rekordsieger Smudo und Michi Beck wollen auch 2026 wieder triumphieren. Im Interview verraten …"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "moontato/occamy-1.0-mtp",
+  "slug": "moontato-occamy-1-0-mtp",
+  "author": "moontato",
+  "url": "https://huggingface.co/moontato/occamy-1.0-mtp",
+  "created_at": "2026-09-18T15:50:48.000Z",
+  "updated_at": "2026-09-18T20:42:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "speculative-decoding",
+    "mtp",
+    "qwen3_5_moe",
+    "occamy",
+    "base_model:Accio-Lab/occamy-1.0",
+    "base_model:quantized:Accio-Lab/occamy-1.0",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1861761536,
+  "parameters_human": "1.86B",
+  "storage_bytes": 6987092576,
+  "storage_human": "7.0 GB",
+  "base_model": "Accio-Lab/occamy-1.0-MTP, Accio-Lab/occamy-1.0",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NORTHFINDER® CZECH - Kvalitní značka outdoorového a lyžařského ...",
+      "url": "https://northfinder.com/cs/",
+      "snippet": "Mar 10, 2026 · Kvalitní značka outdoorového a lyžařského oblečení. Vyrábíme prémiové produkty pro profesionály i vášnivé nadšence."
+    },
+    {
+      "title": "Îmbrăcăminte pentru bărbați - NORTHFINDER",
+      "url": "https://northfinder.com/ro/1621-men",
+      "snippet": "Barbati Citiți mai mult camasi geci si jachete hanorace & pantaloni de trening hanorace din fleece pantaloni pantaloni scurti / …"
+    },
+    {
+      "title": "NORTHFINDER® - Visokokakovostna blagovna znamka oblačil za …",
+      "url": "https://shop.northfinder.com/sl",
+      "snippet": "Visokokakovostna blagovna znamka oblačil za prosti čas in smučanje. Oblačila za različne aktivnosti na prostem, smučanje, …"
+    },
+    {
+      "title": "Izdelki – NORTHFINDER",
+      "url": "https://shop.northfinder.com/sl/collections/all",
+      "snippet": "Visokokakovostna blagovna znamka oblačil za prosti čas in smučanje. Oblačila za različne aktivnosti na prostem, smučanje, …"
+    },
+    {
+      "title": "Vyhľadávací lavínový systém RECCO® | NORTHFINDER",
+      "url": "https://b2b.northfinder.com/sk/blog/recco-tuto-vychytavku-mozno-nikdy-nepouzijete-a-mozno-vam-zachrani-zivot",
+      "snippet": "Ako môže malinký reflektor pomáhať záchranárom? Vyhľadávací systém RECCO® má dve časti. Pasívny reflektor, ktorý máte stále …"
+    }
+  ]
+}

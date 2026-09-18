@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "HerrHruby/MR_midtrain_9B_v5_condgen",
+  "slug": "herrhruby-mr_midtrain_9b_v5_condgen",
+  "author": "HerrHruby",
+  "url": "https://huggingface.co/HerrHruby/MR_midtrain_9B_v5_condgen",
+  "created_at": "2026-09-18T16:46:48.000Z",
+  "updated_at": "2026-09-18T16:48:49.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "meta-reasoning",
+    "condgen",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839712848,
+  "storage_human": "18.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "如何评价 2026 苹果秋季发布会？哪些亮点值得关注 ...",
+      "url": "https://www.zhihu.com/question/2081062403832115213",
+      "snippet": "Sep 9, 2026 · 我就是不知道乔布斯醒来看到这个设计有什么想法，不得不说小米18的这个设计，啊，走对了它的路。 13. 看看人家这 …"
+    },
+    {
+      "title": "如何评价苹果折叠屏手机 iPhone Duo？国行售价 15999 元 ...",
+      "url": "https://www.zhihu.com/question/2081206056877811582",
+      "snippet": "Sep 9, 2026 · 如何评价苹果折叠屏手机 iPhone Duo？国行售价 15999 元起值得入手吗？"
+    },
+    {
+      "title": "Aktuelle Apple Softwareversionen - Apple Community",
+      "url": "https://communities.apple.com/de/docs/DOC-250006576",
+      "snippet": "3 days ago · Hi, hallo und herzlich Willkommen in der Apple Support Community. Schön das du da bist, ich hoffe es geht dir gut. Die …"
+    },
+    {
+      "title": "Utilisation de l’iPhone - Communauté Apple",
+      "url": "https://communities.apple.com/fr/community/iphone/using_iphone",
+      "snippet": "Trouvez des réponses à vos questions auprès de nos communautés dynamiques et de leurs millions d’utilisateurs Utilisation de …"
+    },
+    {
+      "title": "苹果多款老机型涨价，iPhone 17 涨价 800 元，为什么新 ...",
+      "url": "https://www.zhihu.com/question/2081313765153420462",
+      "snippet": "终于有人注意到这个事了。 iphone新品发布会结束后： 折叠屏 iphone duo，起售价15999起； 发布 iPhone 18 系列，18pro起售 …"
+    }
+  ]
+}

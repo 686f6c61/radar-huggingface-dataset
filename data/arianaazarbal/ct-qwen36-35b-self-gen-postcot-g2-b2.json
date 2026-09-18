@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "arianaazarbal/ct-qwen36-35b-self-gen-postcot-g2-b2",
+  "slug": "arianaazarbal-ct-qwen36-35b-self-gen-postcot-g2-b2",
+  "author": "arianaazarbal",
+  "url": "https://huggingface.co/arianaazarbal/ct-qwen36-35b-self-gen-postcot-g2-b2",
+  "created_at": "2026-09-18T18:21:14.000Z",
+  "updated_at": "2026-09-18T18:21:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "constitutional-training",
+    "iterated-constitution",
+    "family:qwen36_35b",
+    "seed:self",
+    "method:gen",
+    "regime:post_cot",
+    "gen:2",
+    "branch:b2",
+    "text-generation",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:adapter:Qwen/Qwen3.6-35B-A3B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4491829400,
+  "storage_human": "4.5 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cadena SER: Noticias y Radio Online",
+      "url": "https://cadenaser.com/",
+      "snippet": "Últimas noticias sobre deportes, política, economía, cultura y sociedad. Escucha los programas y emisoras de la Cadena SER a la …"
+    },
+    {
+      "title": "Today's newspapers. Today's press covers. Kiosko.net",
+      "url": "http://revistas.kiosko.net/",
+      "snippet": "Today's newspapers. More than 1,000 newspapers around the world. Today's edition. International newspapers, financial and sports …"
+    },
+    {
+      "title": "Todos los periódicos del día. Toda la prensa de hoy. Kiosko.net",
+      "url": "https://es.kiosko.net/",
+      "snippet": "Todos los periódicos del día. Más de 750 periódicos del mundo. Edición de hoy. Actualidad del mundo, prensa económica, diarios …"
+    },
+    {
+      "title": "Houda | ‎تعليقاتكم ؟ رايكم يهمني ️ ‎ | Instagram",
+      "url": "https://www.instagram.com/reel/DdPOhqZhrAE/",
+      "snippet": "311 likes, 7 comments - houda.zrb on September 13, 2026‎: \"تعليقاتكم ؟ رايكم يهمني ️😍\". ‎"
+    },
+    {
+      "title": "Series y Novelas Turcas en Español | Ver Capítulos de Telenovelas",
+      "url": "https://lamparaturca.com/",
+      "snippet": "Descubre las mejores series y Telenovelas Turcas en español. Donde ver los capítulos completos gratis. Entra y descúbrelo."
+    }
+  ]
+}

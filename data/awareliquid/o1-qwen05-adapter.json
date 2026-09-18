@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "AwareLiquid/O1-Qwen05-Adapter",
+  "slug": "awareliquid-o1-qwen05-adapter",
+  "author": "AwareLiquid",
+  "url": "https://huggingface.co/AwareLiquid/O1-Qwen05-Adapter",
+  "created_at": "2026-09-18T19:56:13.000Z",
+  "updated_at": "2026-09-19T14:35:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "mt-lnn",
+    "liquid-neural-network",
+    "adapter",
+    "awareliquid",
+    "text-generation",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-0.5B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 74689977,
+  "storage_human": "75 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Trade Crypto, Predict Outcomes & Earn — All in One Platform | Gemini",
+      "url": "https://www.gemini.com/",
+      "snippet": "The crypto super app for trading, predicting, and earning. Buy 90+ cryptos, trade prediction markets, and earn with staking and the …"
+    },
+    {
+      "title": "Why am I unable to withdraw my fiat to my bank account? - Gemini",
+      "url": "https://support.gemini.com/hc/en-us/articles/360045067751-Why-am-I-unable-to-withdraw-my-fiat-to-my-bank-account",
+      "snippet": "Returned Bank Transfer (ACH) Pending PayPal deposit USD / EEA based customers USD rails availability Note: this article covers …"
+    },
+    {
+      "title": "Meet The Gemini Credit Card: Solana Edition.",
+      "url": "https://www.gemini.com/credit-card/solana",
+      "snippet": "Earn up to 4% Solana back on every purchase with no annual fee. Your credit card rewards can now be auto-staked, earning up to …"
+    },
+    {
+      "title": "How do I buy and sell on the Gemini web interface and app?",
+      "url": "https://support.gemini.com/hc/en-us/articles/360039532472-How-do-I-buy-and-sell-on-the-Gemini-web-interface-and-app",
+      "snippet": "How to Buy crypto on the Web interface Select a crypto from the Trade page. Select “Buy” and choose whether you would like to …"
+    },
+    {
+      "title": "REST APIs - Gemini Developer Platform",
+      "url": "https://developer.gemini.com/rest-api/rest-api",
+      "snippet": "Build across Spot, Margin, Perpetuals, and Prediction Markets with Gemini APIs, guides, and developer tools."
+    }
+  ]
+}

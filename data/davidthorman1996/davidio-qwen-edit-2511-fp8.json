@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "davidthorman1996/davidio-qwen-edit-2511-fp8",
+  "slug": "davidthorman1996-davidio-qwen-edit-2511-fp8",
+  "author": "davidthorman1996",
+  "url": "https://huggingface.co/davidthorman1996/davidio-qwen-edit-2511-fp8",
+  "created_at": "2026-09-18T19:26:54.000Z",
+  "updated_at": "2026-09-18T20:04:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "comfyui",
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "qwen-image-edit",
+    "runpod",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20533762817,
+  "storage_human": "20.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "de.answers.search.yahoo.com",
+      "url": "https://de.answers.search.yahoo.com/search",
+      "snippet": "Chętnie wyświetlilibyśmy opis, ale witryna, którą oglądasz, nie pozwala nam na to."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "baselquants/DeepSeek-V4.1-Flash",
+  "slug": "baselquants-deepseek-v4-1-flash",
+  "author": "baselquants",
+  "url": "https://huggingface.co/baselquants/DeepSeek-V4.1-Flash",
+  "created_at": "2026-09-18T19:21:04.000Z",
+  "updated_at": "2026-09-18T19:21:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v41",
+    "text-generation",
+    "image-text-to-text",
+    "license:mit",
+    "endpoints_compatible",
+    "8-bit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 763205315794,
+  "parameters_human": "763.21B",
+  "storage_bytes": 510299192278,
+  "storage_human": "510.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Feuchtigkeitsspendende Creme & Serum entdecken | Clinique",
+      "url": "https://www.clinique.de/",
+      "snippet": "Entdecken Sie die feuchtigkeitsspendende Gesichtscreme, das Gesichtsserum und den Lippenstift von Clinique für strahlende Haut …"
+    },
+    {
+      "title": "Neu | Clinique",
+      "url": "https://www.clinique.de/products/new",
+      "snippet": "Das von Dermatolog:innen entwickelte Gesichtswaschgel reinigt sanft und dennoch gründlich. Jetzt auch in einer 400-ml …"
+    },
+    {
+      "title": "Official Site | Clinique",
+      "url": "https://www.clinique.at/",
+      "snippet": "Shop the official Clinique website for skin care, makeup, fragrances and gifts. Read reviews & get Free Shipping today. Allergy …"
+    },
+    {
+      "title": "Clinique Shop ( Offizieller Händler ) - Beautywelt",
+      "url": "https://www.beautywelt.de/clinique",
+      "snippet": "Entdecken Sie unser einzigartiges Sortiment an Must-haves in Sachen Make-up, wie Lippenstift, Lidschatten und Mascara. Sie …"
+    },
+    {
+      "title": "Clinique®| Free 5-Piece Deluxe Mini Gift Set with $75+*",
+      "url": "https://www.clinique.com/?msockid=086c30fc7ddd67091cf827247cee663f",
+      "snippet": "Find Clinique formulas your skin will love. Powerful efficacy with rigorous safety. Designed with the perfect balance of ingredients, our …"
+    }
+  ]
+}

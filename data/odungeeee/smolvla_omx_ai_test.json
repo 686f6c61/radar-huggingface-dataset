@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "odungeeee/smolvla_omx_ai_test",
+  "slug": "odungeeee-smolvla_omx_ai_test",
+  "author": "odungeeee",
+  "url": "https://huggingface.co/odungeeee/smolvla_omx_ai_test",
+  "created_at": "2026-09-18T12:51:52.000Z",
+  "updated_at": "2026-09-18T14:25:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "robotics",
+    "dataset:odungeeee/test_omx_v30",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 1197791928,
+  "storage_human": "1.2 GB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ankunft - DUS Airport",
+      "url": "https://www.dus.com/de-de/fliegen/ankunft",
+      "snippet": "Die Flugplansaison ändert sich Ende März und Ende Oktober. Wenn sich Ihre gewünschte Zeitspanne mit einer dieser saisonalen …"
+    },
+    {
+      "title": "Flughafen Düsseldorf Ankunft (DUS) Heute & Morgen",
+      "url": "https://flughafen-airports.de/deutschland/flughafen-dusseldorf/ankunft/",
+      "snippet": "Prüfen Sie aktuelle Ankünfte, Landezeiten und den Flugstatus am Flughafen Düsseldorf (DUS). Suchen Sie direkt nach einer …"
+    },
+    {
+      "title": "DUS Airport",
+      "url": "https://www.dus.com/de-de/fliegen",
+      "snippet": "Flug Nr. 18. September. Flug Nr. EW 9675. Flug Nr. XC 268. Flug Nr. XQ 1350. Flug Nr. XQ 1334. Flug Nr. PC 1653. Flug Nr. KL …"
+    },
+    {
+      "title": "Flughafen Düsseldorf Ankunft (DUS) - AirportInfo",
+      "url": "https://airportinfo.live/de/ankunft/dus/flughafen-d%C3%BCsseldorf",
+      "snippet": "Alle Informationen zur Ankunft am Flughafen Düsseldorf in Echtzeit. Der Flugplan zeigt aktuelle Verspätungen und Flugausfälle aller …"
+    },
+    {
+      "title": "Flughafen Düsseldorf (DUS): Live-Ankünfte heute",
+      "url": "https://proflightsearch.com/de/ankuenfte/dusseldorf-DUS",
+      "snippet": "Live-Ankünfte am Flughafen Düsseldorf (DUS): geplante, geschätzte und tatsächliche Zeiten, Gates und Gepäckbänder. Aktuell 512 …"
+    }
+  ]
+}

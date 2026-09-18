@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "erobey/Qwen3.8-27B-mlx-8bit",
+  "slug": "erobey-qwen3-8-27b-mlx-8bit",
+  "author": "erobey",
+  "url": "https://huggingface.co/erobey/Qwen3.8-27B-mlx-8bit",
+  "created_at": "2026-09-18T15:46:59.000Z",
+  "updated_at": "2026-09-18T16:24:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895993856,
+  "parameters_human": "26.90B",
+  "storage_bytes": 28599709858,
+  "storage_human": "28.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to get help in Windows - Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/how-to-get-help-in-windows-711b6492-0435-0038-8706-7c6b0feb200a",
+      "snippet": "Search for help on the taskbar, use the Tips app, select the Get help link in the Settings app, or go to support.microsoft.com/windows."
+    },
+    {
+      "title": "Windows help and supportWindows help and support",
+      "url": "https://www.microsoft.com/en-us/windows/help-and-support?msockid=240e47f60bd566293660502e0add677e",
+      "snippet": "Find the Windows help and support you need. From account setup to device support, search for quick answers and helpful resources …"
+    },
+    {
+      "title": "How to Get Help in Windows",
+      "url": "https://helpdeskgeek.com/how-to-get-help-in-windows/",
+      "snippet": "Sep 27, 2022 · To find it on your computer, open the search menu and type Get Help. You can also click the start button, scroll …"
+    },
+    {
+      "title": "Windows help and learning | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/",
+      "snippet": "Find help and how-to articles for Windows operating systems. Get support for Windows and learn about installation, updates, privacy, …"
+    },
+    {
+      "title": "How to Get Help in Windows 11 & 10: 18 Fast Methods",
+      "url": "https://geekzag.com/guides/computers/how-to-get-help-in-windows-11-10/",
+      "snippet": "Jul 13, 2026 · Stuck on a PC issue? Learn exactly how to get help in Windows 11 instantly. Discover how to use the built-in app, …"
+    }
+  ]
+}

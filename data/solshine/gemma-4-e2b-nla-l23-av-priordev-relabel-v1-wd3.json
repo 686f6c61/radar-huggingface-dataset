@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Solshine/gemma-4-e2b-nla-L23-av-priordev-relabel-v1-wd3",
+  "slug": "solshine-gemma-4-e2b-nla-l23-av-priordev-relabel-v1-wd3",
+  "author": "Solshine",
+  "url": "https://huggingface.co/Solshine/gemma-4-e2b-nla-L23-av-priordev-relabel-v1-wd3",
+  "created_at": "2026-09-18T15:58:03.000Z",
+  "updated_at": "2026-09-18T23:16:55.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "natural-language-autoencoder",
+    "nla",
+    "interpretability",
+    "mechanistic-interpretability",
+    "gemma",
+    "consumer-gpu",
+    "lora",
+    "text-generation",
+    "en",
+    "base_model:google/gemma-4-E2B",
+    "base_model:adapter:google/gemma-4-E2B",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1450016347,
+  "storage_human": "1.5 GB",
+  "base_model": "google/gemma-4-E2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tracking Your Shipment or Packages | FedEx",
+      "url": "https://www.fedex.com/en-us/tracking.html",
+      "snippet": "Where is my package? Enter your FedEx tracking number, track by reference, obtain proof of delivery, or TCN. See FedEx Express, …"
+    },
+    {
+      "title": "Tracking Your Shipment or Packages | FedEx United Kingdom",
+      "url": "https://www.fedex.com/en-gb/tracking.html",
+      "snippet": "Where is my package? Find out by entering your tracking number, track by reference, obtain proof of delivery, or TCN."
+    },
+    {
+      "title": "Tracking Your Shipment | FedEx India",
+      "url": "https://www.fedex.com/en-in/tracking.html",
+      "snippet": "Where is my package? Find out by entering your tracking number, track by reference, obtain proof of delivery, or TCN."
+    },
+    {
+      "title": "国際小包・貨物の追跡 | FedEx 日本",
+      "url": "https://www.fedex.com/ja-jp/tracking.html",
+      "snippet": "FedEx Mobile Tracking モバイル向けFedEx Trackingは非常に便利な追跡ツールです。絶えず移動しているお客様にも更新情報が届 …"
+    },
+    {
+      "title": "Monitoraggio delle spedizioni | FedEx Italia",
+      "url": "https://www.fedex.com/it-it/tracking.html",
+      "snippet": "Seguite con semplicità le vostre spedizioni con il monitoraggio FedEx. Potrete vedere subito dove si trovano gestendole al meglio, sia …"
+    }
+  ]
+}

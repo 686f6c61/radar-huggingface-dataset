@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "coderian/TinyGPT",
+  "slug": "coderian-tinygpt",
+  "author": "coderian",
+  "url": "https://huggingface.co/coderian/TinyGPT",
+  "created_at": "2026-09-18T16:54:55.000Z",
+  "updated_at": "2026-09-18T17:41:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "tinygpt",
+    "text-generation",
+    "causal-lm",
+    "gpt",
+    "transformer",
+    "llm",
+    "custom_code",
+    "en",
+    "base_model:openai-community/gpt2",
+    "base_model:finetune:openai-community/gpt2",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 28974161,
+  "parameters_human": "29.0M",
+  "storage_bytes": 115904092,
+  "storage_human": "116 MB",
+  "base_model": "gpt2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Generic Product Keys to Install Windows 10 Editions",
+      "url": "https://www.tenforums.com/tutorials/95922-generic-product-keys-install-windows-10-editions.html",
+      "snippet": "Apr 8, 2024 · This tutorial will provide you with a list of RTM (retail) and KMS generic keys (default keys) for all editions of Windows 10."
+    },
+    {
+      "title": "Open Settings in Windows 10 | Tutorials - Ten Forums",
+      "url": "https://www.tenforums.com/tutorials/3326-open-settings-windows-10-a.html",
+      "snippet": "Apr 17, 2021 · How to Open Settings in Windows 10 Information Starting in the Windows 10 Preview 9901 build, PC settings and zPC …"
+    },
+    {
+      "title": "How do I install the gmail app on my windows 11 pc laptop?",
+      "url": "https://support.google.com/mail/thread/214976549/how-do-i-install-the-gmail-app-on-my-windows-11-pc-laptop?hl=en",
+      "snippet": "May 10, 2023 · How do I install the gmail app on my windows 11 pc laptop? I cannot find an app available to install."
+    },
+    {
+      "title": "Remove \"Send link to <name> PC\" context menu",
+      "url": "https://support.google.com/chrome/thread/12578856/remove-send-link-to-name-pc-context-menu?hl=en",
+      "snippet": "Aug 22, 2019 · So I just re-install my windows, my previous Windows 10 name was \"Student\" and now is \"General\". Then I find this …"
+    },
+    {
+      "title": "Bogus \"Program\" in Startup - Windows 10 Forums",
+      "url": "https://www.tenforums.com/software-apps/150709-bogus-program-startup.html",
+      "snippet": "Feb 17, 2020 · Hello, I've noticed a suspicious program labeled just \"Program\" in the Windows 10 Startup menu with no extension or …"
+    }
+  ]
+}

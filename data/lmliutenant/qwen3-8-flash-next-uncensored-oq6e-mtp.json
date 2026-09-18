@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "LMLiutenant/Qwen3.8-Flash-Next-Uncensored-oQ6e-mtp",
+  "slug": "lmliutenant-qwen3-8-flash-next-uncensored-oq6e-mtp",
+  "author": "LMLiutenant",
+  "url": "https://huggingface.co/LMLiutenant/Qwen3.8-Flash-Next-Uncensored-oQ6e-mtp",
+  "created_at": "2026-09-18T14:37:52.000Z",
+  "updated_at": "2026-09-18T14:41:09.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen4_exp",
+    "omlx",
+    "qwen4",
+    "mtp",
+    "vision",
+    "tool-calling",
+    "uncensored",
+    "abliterated",
+    "image-text-to-text",
+    "conversational",
+    "base_model:orcarouter/Qwen3.8-Flash-Next-Uncensored",
+    "base_model:quantized:orcarouter/Qwen3.8-Flash-Next-Uncensored",
+    "license:other",
+    "6-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 179999981459,
+  "parameters_human": "180.00B",
+  "storage_bytes": 150442515119,
+  "storage_human": "150.4 GB",
+  "base_model": "orcarouter/Qwen3.8-Flash-Next-Uncensored",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sheer Mesh Tops | Moda Sheer Mesh Tops | SHEIN Polska",
+      "url": "https://pl.shein.com/style/Sheer-Mesh-Tops-sc-00114263.html?msockid=138e2ae5aa096ea615343d3dab696f2e",
+      "snippet": "Codziennie ponad 500 nowych przedmiotów Kup Sheer Mesh Tops w SHEIN Polska!"
+    },
+    {
+      "title": "top sheer",
+      "url": "https://allegro.pl/kategoria/odziez-damska-t-shirty-76104?string=top%20sheer",
+      "snippet": "Kup Top Sheer w Koszulki damskie, t-shirty, topy ☝ taniej na Allegro.pl - Najwięcej produktów w jednym miejscu. Radość zakupów …"
+    },
+    {
+      "title": "Moda Sheer - SHEIN Polska",
+      "url": "https://pl.shein.com/style/Sheer-sc-00100504.html?msockid=138e2ae5aa096ea615343d3dab696f2e",
+      "snippet": "SHEIN MOD Koszulka z 95% bawełny w kolorze białym z czarnym koronkowym łączeniem, letnia bluzka z okrągłym dekoltem i …"
+    },
+    {
+      "title": "Koszulka Damska Casall Sheer Tank Oddychająca Luźna Szybkoschnąca",
+      "url": "https://www.decathlon.pl/p/mp/casall/koszulka-damska-casall-sheer-tank-oddychajaca-luzna-szybkoschnaca/_/R-p-ab9f12ac-66c6-4233-96e4-451378859f47",
+      "snippet": "Lekka, przewiewna koszulka doskonale odprowadza wilgoć i zapewnia uczucie świeżości nawet podczas wymagających …"
+    },
+    {
+      "title": "Sheer button up shirt - Etsy Polska",
+      "url": "https://www.etsy.com/pl/market/sheer_button_up_shirt?msockid=138e2ae5aa096ea615343d3dab696f2e",
+      "snippet": "Zobacz wybrane przez nas produkty dla hasła „sheer button up shirt”: unikatowe, personalizowane i ręcznie robione przedmioty z …"
+    }
+  ]
+}

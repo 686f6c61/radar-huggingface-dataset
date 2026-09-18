@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "arianaazarbal/ct-qwen36-35b-anth-gen-postcot-g0-b2",
+  "slug": "arianaazarbal-ct-qwen36-35b-anth-gen-postcot-g0-b2",
+  "author": "arianaazarbal",
+  "url": "https://huggingface.co/arianaazarbal/ct-qwen36-35b-anth-gen-postcot-g0-b2",
+  "created_at": "2026-09-18T17:58:29.000Z",
+  "updated_at": "2026-09-18T17:59:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "constitutional-training",
+    "iterated-constitution",
+    "family:qwen36_35b",
+    "seed:anthropic",
+    "method:gen",
+    "regime:post_cot",
+    "gen:0",
+    "branch:b2",
+    "text-generation",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:adapter:Qwen/Qwen3.6-35B-A3B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4491829400,
+  "storage_human": "4.5 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "الصفحة الرئيسية - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLPYf6vTu2xt17uhXThhpUMYbChcBh2YyC",
+      "snippet": "Share your videos with friends, family, and the world"
+    },
+    {
+      "title": "- YouTube",
+      "url": "https://www.youtube.com/shorts",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "Essential '90s R&B - YouTube Music",
+      "url": "https://music.youtube.com/playlist?list=RDCLAK5uy_ne3DJMol0EVIfwcuZnx2hQak0q6EbeBlY",
+      "snippet": "Playlist • YouTube Music R&B defined American mainstream music throughout the '90s. Here are key tracks from R&B's most vital …"
+    },
+    {
+      "title": "Movies & TV - YouTube",
+      "url": "https://movies.youtube.com/",
+      "snippet": "Find the latest and greatest movies and shows all available on YouTube.com/movies. From award-winning hits to independent …"
+    },
+    {
+      "title": "YouTube TV",
+      "url": "https://tv.youtube.com/app",
+      "snippet": "Stream live TV from over 70 networks, record programs without storage limits, and enjoy hassle-free viewing without a cable box. …"
+    }
+  ]
+}

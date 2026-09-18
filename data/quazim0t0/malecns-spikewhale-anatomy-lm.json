@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Quazim0t0/MaleCNS-SpikeWhale-Anatomy-LM",
+  "slug": "quazim0t0-malecns-spikewhale-anatomy-lm",
+  "author": "Quazim0t0",
+  "url": "https://huggingface.co/Quazim0t0/MaleCNS-SpikeWhale-Anatomy-LM",
+  "created_at": "2026-09-18T18:42:55.000Z",
+  "updated_at": "2026-09-22T03:12:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "spiking-neural-network",
+    "snn",
+    "connectome",
+    "drosophila",
+    "male-cns",
+    "research",
+    "vision",
+    "text-generation",
+    "base_model:Quazim0t0/SpikeWhale-SNN-216M",
+    "base_model:finetune:Quazim0t0/SpikeWhale-SNN-216M",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1606525042,
+  "storage_human": "1.6 GB",
+  "base_model": "Quazim0t0/SpikeWhale-SNN-216M",
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "File Explorer in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/experience/fileexplorer/file-explorer-in-windows",
+      "snippet": "Find and open File Explorer in Windows, and customize Quick access by pinning and removing files and folders."
+    },
+    {
+      "title": "Explorateur de fichiers dans Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/fr-fr/windows/experience/fileexplorer/file-explorer-in-windows",
+      "snippet": "Recherchez et ouvrez Explorateur de fichiers dans Windows, puis personnalisez Accès rapide en épinglant et en supprimant des …"
+    },
+    {
+      "title": "Search in Windows 11 File Explorer",
+      "url": "https://www.elevenforum.com/t/search-in-windows-11-file-explorer.21789/",
+      "snippet": "Jan 21, 2024 · The Search Box in File Explorer allows you to find and view all your files and folders in one place. As you type in the …"
+    },
+    {
+      "title": "Show or Hide Navigation Pane in File Explorer in Windows 11",
+      "url": "https://www.elevenforum.com/t/show-or-hide-navigation-pane-in-file-explorer-in-windows-11.2537/",
+      "snippet": "Nov 5, 2021 · The navigation pane is the far left pane in File Explorer used to find files, folders, and drives on your PC or network. …"
+    },
+    {
+      "title": "Free up drive space in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/experience/storage-filemanagement/free-up-drive-space-in-windows",
+      "snippet": "If your PC is running out of storage space, you may notice slower performance or trouble installing Windows updates. Freeing up …"
+    }
+  ]
+}

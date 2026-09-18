@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "leonidas123/smollm2-135m-math-lora-v1-merged",
+  "slug": "leonidas123-smollm2-135m-math-lora-v1-merged",
+  "author": "leonidas123",
+  "url": "https://huggingface.co/leonidas123/smollm2-135m-math-lora-v1-merged",
+  "created_at": "2026-09-18T17:56:26.000Z",
+  "updated_at": "2026-09-18T17:56:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:HuggingFaceTB/SmolLM2-135M-Instruct",
+    "base_model:finetune:HuggingFaceTB/SmolLM2-135M-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 134515008,
+  "parameters_human": "134.5M",
+  "storage_bytes": 269060552,
+  "storage_human": "269 MB",
+  "base_model": "HuggingFaceTB/SmolLM2-135M-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/youtube",
+      "snippet": "Welcome to the official YouTube channel – a home for the biggest moments, the smallest obsessions, and everything in between. …"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed/homepage",
+      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new …"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/@en.---",
+      "snippet": "Share your videos and discover content from friends, family, and creators worldwide on YouTube."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/@________________.",
+      "snippet": "Explore and enjoy a wide range of videos, music, and more on YouTube."
+    }
+  ]
+}

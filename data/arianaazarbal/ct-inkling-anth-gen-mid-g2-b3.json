@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "arianaazarbal/ct-inkling-anth-gen-mid-g2-b3",
+  "slug": "arianaazarbal-ct-inkling-anth-gen-mid-g2-b3",
+  "author": "arianaazarbal",
+  "url": "https://huggingface.co/arianaazarbal/ct-inkling-anth-gen-mid-g2-b3",
+  "created_at": "2026-09-18T18:58:26.000Z",
+  "updated_at": "2026-09-18T19:00:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "constitutional-training",
+    "iterated-constitution",
+    "family:inkling_small",
+    "seed:anthropic",
+    "method:gen",
+    "regime:mid",
+    "gen:2",
+    "branch:b3",
+    "text-generation",
+    "base_model:thinkingmachines/Inkling-Small",
+    "base_model:adapter:thinkingmachines/Inkling-Small",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16901410336,
+  "storage_human": "16.9 GB",
+  "base_model": "thinkingmachines/Inkling-Small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Banking Übersicht - Volksbank Flein-Talheim eG",
+      "url": "https://www.vb-flein-talheim.de/banking-und-vertraege/banking.html",
+      "snippet": "Sie haben bereits ein Konto bei Ihrer Volksbank Flein-Talheim eG und möchten jetzt mit dem digitalen Banking per App, Tablet oder …"
+    },
+    {
+      "title": "Startseite Ihrer Volksbank Flein-Talheim eG - Volksbank Flein-Talheim eG",
+      "url": "https://www.vb-flein-talheim.de/startseite.html",
+      "snippet": "Mit unserem Online-Brokerage handeln Sie schnell und einfach an der Börse. Nutzen Sie unseren Strom- oder Gastarif mit stabilen …"
+    },
+    {
+      "title": "Volksbank Flein-Talheim eG — Volksbanken Raiffeisenbanken",
+      "url": "https://www.vr.de/privatkunden/banken/volksbank-flein-talheim-eg-62062643.html",
+      "snippet": "Individuelle Finanzlösungen für Privatkunden und Firmenkunden – mit der Volksbank Flein-Talheim eG. Lokal verankert und immer in …"
+    },
+    {
+      "title": "OnlineBanking - Ihre Volksbank eG",
+      "url": "https://www.ihre-vb.de/banking-und-vertraege/banking/banking-privatkunden/onlinebanking.html",
+      "snippet": "Machen Sie sich Ihre Bankgeschäfte so einfach wie möglich: Mit unserem OnlineBanking verwalten Sie Ihre Finanzen unabhängig …"
+    },
+    {
+      "title": "Produkte und Leistungen für Privatkundinnen und Privatkunden ...",
+      "url": "https://www.vb-flein-talheim.de/privatkunden.html",
+      "snippet": "Sekundenschnell Geld senden oder online bezahlen: Handynummer genügt. Banking und Bezahlen in einer App. Jetzt …"
+    }
+  ]
+}

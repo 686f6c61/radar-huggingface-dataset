@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "KeraCare/drug-name-extraction-lora-r64-v2x0",
+  "slug": "keracare-drug-name-extraction-lora-r64-v2x0",
+  "author": "KeraCare",
+  "url": "https://huggingface.co/KeraCare/drug-name-extraction-lora-r64-v2x0",
+  "created_at": "2026-09-18T19:48:01.000Z",
+  "updated_at": "2026-09-18T19:48:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "extracted",
+    "base_model:zai-org/GLM-OCR",
+    "base_model:adapter:zai-org/GLM-OCR",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 128644568,
+  "storage_human": "129 MB",
+  "base_model": "zai-org/GLM-OCR",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sie sucht Ihn (Frau sucht Mann) - in Deutschland - Quoka.de",
+      "url": "https://www.quoka.de/anzeigen/bekanntschaften/partnerschaften-kontakte/sie-sucht-ihn/?%2Fanzeigen%2F",
+      "snippet": "Finde Deinen Traumpartner auf Quoka! Spannende Kontaktanzeigen für seriöse Partnerschaften oder aufregende Dates. Jetzt …"
+    },
+    {
+      "title": "Sie sucht Ihn (Frau sucht Mann) - in Deutschland - Quoka.de",
+      "url": "https://www.quoka.de/anzeigen/bekanntschaften/partnerschaften-kontakte/sie-sucht-ihn/",
+      "snippet": "Finde Deinen Traumpartner auf Quoka! Spannende Kontaktanzeigen für seriöse Partnerschaften oder aufregende Dates. Jetzt …"
+    },
+    {
+      "title": "Private kostenlose Kontaktanzeigen | Viva Kleinanzeigen",
+      "url": "https://viva-kleinanzeigen.de/Partnerschaft-Kontaktanzeigen",
+      "snippet": "20 hours ago · Sie möchten sich neu verlieben und suchen jemanden, mit dem Sie Ihr Leben teilen können? Oder jemanden, der ein …"
+    },
+    {
+      "title": "Kontaktanzeigen Sie sucht Ihn & Kontakte in der Singlebörsen",
+      "url": "https://de.kleinanzeigen.com/Kontakte-Freizeitangebote/Partnerschaft/Sie-sucht-Ihn/suche/mann",
+      "snippet": "Jan 17, 2026 · 518 Anzeigen zu Sie sucht Ihn gefunden. Kostenlos, schnell und einfach Kontaktanzeigen aufgeben sofort online! Jetzt …"
+    },
+    {
+      "title": "Sie sucht Ihn - markt.de",
+      "url": "https://www.markt.de/kontaktanzeigen/sie-sucht-ihn/?msockid=150e049196a36c6609c21349976a6d03",
+      "snippet": "Finde Deine große Liebe auf markt.de! ★ Sie sucht Ihn: Entdecke spannende Kontaktanzeigen und lerne interessante Singles …"
+    }
+  ]
+}

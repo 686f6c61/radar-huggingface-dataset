@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "davidalarrea/cohere-transcribe-03-2026-mlx-8bit",
+  "slug": "davidalarrea-cohere-transcribe-03-2026-mlx-8bit",
+  "author": "davidalarrea",
+  "url": "https://huggingface.co/davidalarrea/cohere-transcribe-03-2026-mlx-8bit",
+  "created_at": "2026-09-18T13:27:37.000Z",
+  "updated_at": "2026-09-18T13:27:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "cohere_asr",
+    "automatic-speech-recognition",
+    "speech-to-text",
+    "audio",
+    "quantized",
+    "8bit",
+    "custom_code",
+    "en",
+    "base_model:CohereLabs/cohere-transcribe-03-2026",
+    "base_model:quantized:CohereLabs/cohere-transcribe-03-2026",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2064722176,
+  "parameters_human": "2.06B",
+  "storage_bytes": 2418524658,
+  "storage_human": "2.4 GB",
+  "base_model": "CohereLabs/cohere-transcribe-03-2026",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "如何解决 Windows 10 商店安装应用出现0x80073d05错误？",
+      "url": "https://www.zhihu.com/question/58794994",
+      "snippet": "先说结论，就是因为之前 错误的卸载方式导致卸载有残留，进一步导致出现安装错误。 解决思路就是删除掉卸载残留。 卸载残留路 …"
+    },
+    {
+      "title": "Win11系统如何更改Microsoft store的下载路径？ - 知乎",
+      "url": "https://www.zhihu.com/question/564794300",
+      "snippet": "Nov 5, 2022 · Win11系统如何更改Microsoft store的下载路径？ 新电脑从Microsoft store下载了软件，发现是下到了c盘，怎么改路径？ …"
+    },
+    {
+      "title": "win11系统找不到Microsoft store应用商店不见了-百度经验",
+      "url": "https://jingyan.baidu.com/article/8cdccae9506731705513cd5f.html",
+      "snippet": "Apr 15, 2022 · win11系统找不到Microsoft store应用商店不见了,今天本来想打开Microofttore应用商店安装一个软件结果找了半天都没 …"
+    },
+    {
+      "title": "Win10应用商店安装包保存在哪里如何删除安装包-百度经验",
+      "url": "https://jingyan.baidu.com/article/15622f24a0fdc0bdfcbea59d.html",
+      "snippet": "Oct 10, 2019 · Win10应用商店非常好用，可以进入商店选择应用来提高你的工作效率和丰富你的日常娱乐生活。win10应用商店下载完 …"
+    },
+    {
+      "title": "Windows10系统如何安装微软应用商店？ - 知乎",
+      "url": "https://www.zhihu.com/question/317035869",
+      "snippet": "各个版本的 Windows 我都用过，11 月 22 日从 Windows 10 LTSC 2019 换成了 LTSC 2021，暂未发现网友所说输入法问题，使用起来 …"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "akhil0238/Weapon_Detection",
+  "slug": "akhil0238-weapon_detection",
+  "author": "akhil0238",
+  "url": "https://huggingface.co/akhil0238/Weapon_Detection",
+  "created_at": "2026-09-18T16:33:56.000Z",
+  "updated_at": "2026-09-18T17:06:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "ultralytics",
+    "surveillance",
+    "Threat_detection",
+    "yolov8",
+    "object-detection",
+    "en",
+    "base_model:Ultralytics/YOLOv8",
+    "base_model:finetune:Ultralytics/YOLOv8",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 120319497,
+  "storage_human": "120 MB",
+  "base_model": "Ultralytics/YOLOv8",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Listes des médecins adhérents à l'OPTAM - Résolue",
+      "url": "https://forum-assures.ameli.fr/questions/1461683-listes-medecins-adherents-optam",
+      "snippet": "Jul 1, 2025 · Arrêtez de nous fournir la même réponse surréaliste à la question de la recherche des médecins affiliés à l'OPTAM : \"Je …"
+    },
+    {
+      "title": "Cherche dentiste qui accepte les nouveaux patients",
+      "url": "https://forum-assures.ameli.fr/questions/2652217-cherche-dentiste-accepte-nouveaux-patients",
+      "snippet": "Aug 24, 2026 · Suite a ma question : Bonjour Je suis à la recherche d'un dentiste qui prendrait de nouveaux patients Est ce que vous …"
+    },
+    {
+      "title": "Accès à mon compte Ameli - Résolue",
+      "url": "https://forum-assures.ameli.fr/questions/3402343-acces-compte-ameli",
+      "snippet": "Sep 5, 2024 · Bonjour, Je ne parviens plus à me connecter à mon compte Ameli qui indique qu'une mise à jour de mon dossier est …"
+    },
+    {
+      "title": "Comment trouver un médecin traitant qui prend des nouveaux patients",
+      "url": "https://forum-assures.ameli.fr/questions/3309866-trouver-medecin-traitant-prend-nouveaux-patients",
+      "snippet": "Mar 6, 2026 · Bonjour, Comment faut-il faire pour trouver un médecin traitant qui prend des nouveaux patients car actuellement nous …"
+    },
+    {
+      "title": "Passeport talent? - Résolue - Forum ameli pour les assurés",
+      "url": "https://forum-assures.ameli.fr/questions/1528199-passeport-talent",
+      "snippet": "Apr 27, 2026 · Bonjour, Je viens de m'installer en France , il y a presque 3 mois. Je possède un titre de séjour(mention : Passeport …"
+    }
+  ]
+}

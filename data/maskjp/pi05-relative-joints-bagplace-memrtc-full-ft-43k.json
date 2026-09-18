@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "maskjp/pi05-relative-joints-bagplace-memrtc-full-ft-43k",
+  "slug": "maskjp-pi05-relative-joints-bagplace-memrtc-full-ft-43k",
+  "author": "maskjp",
+  "url": "https://huggingface.co/maskjp/pi05-relative-joints-bagplace-memrtc-full-ft-43k",
+  "created_at": "2026-09-18T14:33:36.000Z",
+  "updated_at": "2026-09-18T14:34:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "pi0.5",
+    "relative-actions",
+    "augmentation",
+    "mem",
+    "rtc",
+    "joints",
+    "arxiv:2603.03596",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 9388900979,
+  "storage_human": "9.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CCT Santé 21, pour une santé neuchâteloise solide et engagée",
+      "url": "https://cctsante21.ch/",
+      "snippet": "Qu’est-ce que la CCT Santé 21 ? La convention collective de travail (CCT Santé 21) a été mise en place au début des années 2000 …"
+    },
+    {
+      "title": "CCT - CCT Santé 21",
+      "url": "https://cctsante21.ch/cct/",
+      "snippet": "Convention collective de travail Santé 21 Vous trouverez ci-dessous les documents complets relatifs à la CCT du secteur de la santé …"
+    },
+    {
+      "title": "CCT Santé 21 - ANEMPA - Association neuchâteloise des …",
+      "url": "https://www.anempa.ch/emploi/cct-sante-21",
+      "snippet": "La convention collective de travail Santé 21 (CCT Santé 21) règle les rapports de service du secteur de la santé du canton de …"
+    },
+    {
+      "title": "Revalorisation salariale et CCT Santé 21 - Internet RHNe",
+      "url": "https://www.rhne.ch/w/ed-10",
+      "snippet": "Celle appliquée au sein de la CCT Santé 21 suit les préconisations d’un prestataire neutre et indépendant, dont plusieurs cantons et …"
+    },
+    {
+      "title": "Négociations CCT santé 21 flash infos : SSP Neuchâtel",
+      "url": "https://neuchatel.ssp-vpod.ch/secteurs/personnels-de-sante/negociations-cct-sante-21-flash-infos/",
+      "snippet": "Oct 7, 2025 · Les négociations pour la nouvelle CCT Santé 21 ont démarré officiellement le 9 octobre 2025. C’est un moment clé …"
+    }
+  ]
+}

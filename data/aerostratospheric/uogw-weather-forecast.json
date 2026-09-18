@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "aerostratospheric/uogw-weather-forecast",
+  "slug": "aerostratospheric-uogw-weather-forecast",
+  "author": "aerostratospheric",
+  "url": "https://huggingface.co/aerostratospheric/uogw-weather-forecast",
+  "created_at": "2026-09-18T15:43:55.000Z",
+  "updated_at": "2026-09-18T15:43:59.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-regression",
+  "library": "sklearn",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sklearn",
+    "joblib",
+    "uogw-weather-forecast",
+    "weather",
+    "forecast",
+    "atmosphere",
+    "casey-illinois",
+    "open-meteo",
+    "uogw",
+    "tabular",
+    "scikit-learn",
+    "aerostratospheric",
+    "tabular-regression",
+    "en",
+    "dataset:aerostratospheric/uogw",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2707762,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "【LIVE】 Webcam Jesolo - Strand von Piazza Mazzini | SkylineWebcams",
+      "url": "https://www.skylinewebcams.com/de/webcam/italia/veneto/venezia/jesolo.html",
+      "snippet": "Genieße die sonnige Küste von Jesolo mit unserer Live-Webcam: entdecke die wunderschöne Piazza Mazzini und den …"
+    },
+    {
+      "title": "【LIVE】 Webcam Jesolo - Beach of Piazza Mazzini | SkylineWebcams",
+      "url": "https://www.skylinewebcams.com/en/webcam/italia/veneto/venezia/jesolo.html",
+      "snippet": "When visiting Jesolo, particularly the vibrant area around Piazza Mazzini, you're immediately struck by the energy of the bustling …"
+    },
+    {
+      "title": "Webcam Jesolo Live: Strand, Meer und Piazza Mazzini",
+      "url": "https://www.jesolobeach.com/de/webcam",
+      "snippet": "Ja, die Webcams von Jesolo Beach übertragen Live-Bilder vom Strand und von den wichtigsten Punkten in Jesolo Lido, darunter die …"
+    },
+    {
+      "title": "Jesolo - Spiaggia Di Piazza Mazzini Webcam Live",
+      "url": "https://www.webcamtour.it/webcam/jesolo-spiaggia-di-piazza-mazzini",
+      "snippet": "Webcam Live."
+    },
+    {
+      "title": "Webcam Jesolo - Spiaggia di Piazza Mazzini",
+      "url": "https://www.monti.uno/webcam/jesolo_-_spiaggia_di_piazza_mazzini/5969",
+      "snippet": "La webcam a Jesolo offre una vista panoramica sulla spiaggia di Piazza Mazzini dall'area di Capannina Beach. Jesolo è una vivace …"
+    }
+  ]
+}

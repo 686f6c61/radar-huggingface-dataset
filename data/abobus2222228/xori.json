@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Abobus2222228/xori",
+  "slug": "abobus2222228-xori",
+  "author": "Abobus2222228",
+  "url": "https://huggingface.co/Abobus2222228/xori",
+  "created_at": "2026-09-18T14:05:09.000Z",
+  "updated_at": "2026-09-18T14:23:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "UTS | University of Technology Sydney | #7 in Australia | Top 100 globally",
+      "url": "https://www.uts.edu.au/",
+      "snippet": "Ranked top 100 worldwide and #7 in Australia, UTS offers industry-led degrees in Sydney’s tech precinct with a strong focus on …"
+    },
+    {
+      "title": "University of Technology Sydney - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/University_of_Technology_Sydney",
+      "snippet": "UTS is a founding member of the Australian Technology Network (ATN), and is a member of Universities Australia (UA) and the …"
+    },
+    {
+      "title": "UTS - Tennis like never before - Ultimate Tennis Showdown",
+      "url": "https://www.uts.live/",
+      "snippet": "Welcome to UTS! Witness eight of your favourite tennis stars battle it out through a fast, furious, immersive and interactive …"
+    },
+    {
+      "title": "About UTS – University of Technology Sydney",
+      "url": "https://www.uts.edu.au/about",
+      "snippet": "Discover UTS – Australia’s #1 young university, based in Sydney. Learn how UTS offers industry-connected, career-ready learning …"
+    },
+    {
+      "title": "Ultimate Tennis Showdown - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ultimate_Tennis_Showdown",
+      "snippet": "The Ultimate Tennis Showdown (UTS) is an international individual tennis league that was founded in 2020. The competition was …"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "mradermacher/qwen3-0.6b-weather-geo-specialist-GGUF",
+  "slug": "mradermacher-qwen3-0-6b-weather-geo-specialist-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/qwen3-0.6b-weather-geo-specialist-GGUF",
+  "created_at": "2026-09-18T18:38:03.000Z",
+  "updated_at": "2026-09-21T18:43:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "optipfair",
+    "rearchitecting-llms",
+    "lora",
+    "peft",
+    "function-calling",
+    "tool-calling",
+    "small-language-model",
+    "qwen",
+    "educational",
+    "trl",
+    "sft",
+    "en",
+    "dataset:Salesforce/xlam-function-calling-60k",
+    "base_model:oopere/qwen3-0.6b-weather-geo-specialist",
+    "base_model:adapter:oopere/qwen3-0.6b-weather-geo-specialist",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 751632384,
+  "parameters_human": "751.6M",
+  "storage_bytes": 7025277696,
+  "storage_human": "7.0 GB",
+  "base_model": "oopere/qwen3-0.6b-weather-geo-specialist",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nature Poems in Hindi: प्रकृति पर 15 ... - Sahityashala",
+      "url": "https://www.sahityashala.in/2023/10/hindi-nature-poems-prakriti-par-kavita.html",
+      "snippet": "Jan 16, 2026 · प्रकृति पर 15+ बेहतरीन हिंदी कविताएँ पढ़ें। सुमित्रानंदन पंत और अन्य कवियों की Nature Poems in Hindi का …"
+    },
+    {
+      "title": "18+ बेहतरीन प्रकृति पर हिंदी कविताएं | Nature Poems in Hindi",
+      "url": "https://www.sahityashala.in/2025/04/nature-poems-in-hindi.html",
+      "snippet": "May 30, 2026 · प्रकृति, पर्यावरण संरक्षण, पेड़-पौधों, बचपन और आधुनिक जीवन पर आधारित 18+ दिल को छू लेने वाली बेहतरीन …"
+    },
+    {
+      "title": "Poem on Nature in Hindi | प्रकृति पर हिन्दी कविताएं | Hindi Poems …",
+      "url": "https://mycoaching.in/poem-on-nature-in-hindi",
+      "snippet": "Mar 7, 2026 · इस लेख में प्रस्तुत Poem on Nature in Hindi आपको इसकी सुंदरता का अनुभव कराएंगी और इसे सहेजने की प्रेरणा …"
+    },
+    {
+      "title": "हिन्दी कविता में प्रकृति: प्रकृति चित्रण, प्रमुख कवि व कविताएँ",
+      "url": "https://testbook.com/ugc-net-hindi/hindi-kavita-mein-prakriti",
+      "snippet": "हिन्दी कविता में प्रकृति चित्रण, प्रमुख कवि एवं कविताएँ, प्रकृति की विशेषताएँ, सुंदर पंक्तियाँ और दोहे विस्तार से जानें। …"
+    },
+    {
+      "title": "7+ प्रकृति पर कविता – Poem on Nature in Hindi",
+      "url": "https://hindiyatra.com/poem-on-nature-in-hindi/",
+      "snippet": "Poem on Nature in Hindi : दोस्तों आज हमने प्रकृति पर कविता कक्षा 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11 & 12 के विद्यार्थियों के लिए …"
+    }
+  ]
+}

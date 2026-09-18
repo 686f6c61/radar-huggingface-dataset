@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Lola533/Modelos_de_Escalado",
+  "slug": "lola533-modelos_de_escalado",
+  "author": "Lola533",
+  "url": "https://huggingface.co/Lola533/Modelos_de_Escalado",
+  "created_at": "2026-09-18T18:44:38.000Z",
+  "updated_at": "2026-09-18T18:49:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Tradutor",
+      "url": "https://translate.google.com.br/",
+      "snippet": "O Google Tradutor é um serviço gratuito que traduz palavras, frases e páginas da Web para mais de cem idiomas."
+    },
+    {
+      "title": "Google Tradutor",
+      "url": "https://translate.google.pt/",
+      "snippet": "O Google Tradutor traduz palavras, frases e páginas da web instantaneamente entre mais de 100 idiomas de forma gratuita."
+    },
+    {
+      "title": "Google Tradutor",
+      "url": "https://translate.google.com/?hl=pt-BR",
+      "snippet": "O serviço do Google, oferecido sem custo financeiro, traduz instantaneamente palavras, frases e páginas da Web do português para …"
+    },
+    {
+      "title": "Tradutor DeepL | O melhor tradutor do mundo",
+      "url": "https://www.deepl.com/pt-PT/translator",
+      "snippet": "Tradutor DeepL Obtenha traduções precisas e de qualidade profissional com funções como Glossários, Regras, Clarify, entre outras."
+    },
+    {
+      "title": "Tradutor DeepL | O melhor tradutor do mundo",
+      "url": "https://www.deepl.com/pt-BR/translator",
+      "snippet": "Tradutor DeepL Proporcione traduções precisas e de alta qualidade com recursos avançados, como glossários, regras …"
+    }
+  ]
+}

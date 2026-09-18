@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "ajujohn8/gemma-e4b-3class-sft-v2",
+  "slug": "ajujohn8-gemma-e4b-3class-sft-v2",
+  "author": "ajujohn8",
+  "url": "https://huggingface.co/ajujohn8/gemma-e4b-3class-sft-v2",
+  "created_at": "2026-09-18T16:06:03.000Z",
+  "updated_at": "2026-09-18T16:06:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:ajujohn8/gemma-e4b-it-eval-sft",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:ajujohn8/gemma-e4b-it-eval-sft",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 179057794,
+  "storage_human": "179 MB",
+  "base_model": "ajujohn8/gemma-e4b-it-eval-sft",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Windows Farbverwaltung Hilfe",
+      "url": "https://www.windows-10-forum.com/threads/windows-farbverwaltung-hilfe.52386/",
+      "snippet": "Dec 30, 2016 · Windows Farbverwaltung Hilfe Helfe beim Thema Windows Farbverwaltung Hilfe in Windows 10 Support um eine …"
+    },
+    {
+      "title": "MDEServer.exe Systemfehler - Hilfe?! - windows-10-forum.com",
+      "url": "https://www.windows-10-forum.com/threads/mdeserver-exe-systemfehler-hilfe.58013/",
+      "snippet": "Mar 17, 2017 · MDEServer.exe Systemfehler - Hilfe?! Helfe beim Thema MDEServer.exe Systemfehler - Hilfe?! in Windows 10 …"
+    },
+    {
+      "title": "GTA 4 startet nicht mehr! Hilfe! Windows 10 - Steam Community",
+      "url": "https://steamcommunity.com/app/12210/discussions/0/365172408528789077/",
+      "snippet": "Mein GTA 4 startet nicht mehr... Ich habe schon vor langer Zeit dieses Games for Windows Live runtergeladen und installiert. …"
+    },
+    {
+      "title": "Hilfe! Ich kann bei DayZ mit niemanden sprechen",
+      "url": "https://steamcommunity.com/app/221100/discussions/0/3570700856113781892/",
+      "snippet": "Apr 13, 2019 · Kann mir jemand bei mein Problem helfen ? ich kann wenn ich im Spiel bin mit niemanden Sprechen... Weiß einer …"
+    },
+    {
+      "title": "Bitte um Hilfe - Windows 10 Netzwerk einrichten",
+      "url": "https://www.windows-10-forum.com/threads/bitte-um-hilfe-windows-10-netzwerk-einrichten.100631/",
+      "snippet": "Mar 4, 2019 · Bitte um Hilfe - Windows 10 Netzwerk einrichten Hallo zusammen, ich wollte mir heute Morgen kurz ein kleines …"
+    }
+  ]
+}

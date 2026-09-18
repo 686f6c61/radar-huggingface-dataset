@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "WasamiKirua/Hexis-Vesper-12B-mlx-4Bit",
+  "slug": "wasamikirua-hexis-vesper-12b-mlx-4bit",
+  "author": "WasamiKirua",
+  "url": "https://huggingface.co/WasamiKirua/Hexis-Vesper-12B-mlx-4Bit",
+  "created_at": "2026-09-18T15:19:10.000Z",
+  "updated_at": "2026-09-18T15:19:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "it",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "sentient",
+    "roleplay",
+    "melancholic",
+    "untimate",
+    "mlx",
+    "mlx-my-repo",
+    "conversational",
+    "it",
+    "en",
+    "base_model:WasamiKirua/Hexis-Vesper-12B",
+    "base_model:quantized:WasamiKirua/Hexis-Vesper-12B",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 12247802880,
+  "parameters_human": "12.25B",
+  "storage_bytes": 6907169766,
+  "storage_human": "6.9 GB",
+  "base_model": "WasamiKirua/Hexis-Vesper-12B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Visit Sapporo : Le Guide de voyage officiel pour visiter Sapporo",
+      "url": "https://visit.sapporo.travel/fr/",
+      "snippet": "Les attractions de Sapporo varient en fonction de la saison et du moment de votre voyage. Voici, soigneusement sélectionnées pour …"
+    },
+    {
+      "title": "VOYAGER À SAPPORO – Visit Sapporo - Le Guide de voyage officiel …",
+      "url": "https://visit.sapporo.travel/fr/travelinfo/travel-to-sapporo/",
+      "snippet": "Le site officiel d’information touristique de Sapporo | Découvrez la capitale de Hokkaido, Japon. Cette ville, environnée par une nature …"
+    },
+    {
+      "title": "Sapporo : guide de voyage, logements & activités à Sapporo | Japan ...",
+      "url": "https://www.japan-experience.com/fr/decouvrir/sapporo",
+      "snippet": "May 26, 2025 · Guide de voyage à Sapporo - découvrez toutes les activités & sorties à Sapporo ! Hébergement, location de voiture & …"
+    },
+    {
+      "title": "Visiter Sapporo : préparez votre séjour et voyage Sapporo",
+      "url": "https://www.routard.com/fr/guide/asie/japon/hokkaido/sapporo",
+      "snippet": "Que faire Sapporo : visitez les plus beaux endroits Sapporo, préparez votre voyage et vos vacances (hébergement, location, …"
+    },
+    {
+      "title": "Sapporo : 4 jours pour savourer l’hiver, la bière et les sanctuaires ...",
+      "url": "https://www.projetjapon.fr/sapporo/",
+      "snippet": "Découvrez Sapporo à travers un circuit de 4 jours, un itinéraire pensé pour explorer ses parcs emblématiques, ses sanctuaires …"
+    }
+  ]
+}

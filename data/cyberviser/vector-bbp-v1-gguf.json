@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "cyberviser/vector-bbp-v1-gguf",
+  "slug": "cyberviser-vector-bbp-v1-gguf",
+  "author": "cyberviser",
+  "url": "https://huggingface.co/cyberviser/vector-bbp-v1-gguf",
+  "created_at": "2026-09-18T13:50:15.000Z",
+  "updated_at": "2026-09-18T15:03:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "vector",
+    "bug-bounty",
+    "hackerone",
+    "bbp",
+    "vdp",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7248023552,
+  "parameters_human": "7.25B",
+  "storage_bytes": 4372815520,
+  "storage_human": "4.4 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - usualdork/EndlessClaude: A modern, responsive web interface ...",
+      "url": "https://github.com/usualdork/EndlessClaude",
+      "snippet": "A modern, responsive web interface for unlimited free access to Claude AI, with no signups, no usage limits, and completely free …"
+    },
+    {
+      "title": "GitHub - nidhinjs/prompt-master: A Claude skill that writes the ...",
+      "url": "https://github.com/nidhinjs/prompt-master",
+      "snippet": "Mar 11, 2026 · A Claude skill that writes the accurate prompts for any AI tool. Zero tokens or credits wasted. Full context and memory …"
+    },
+    {
+      "title": "Models and pricing for GitHub Copilot - GitHub Docs",
+      "url": "https://docs.github.com/en/copilot/reference/copilot-billing/models-and-pricing",
+      "snippet": "Individual plans (Copilot Free, Copilot Pro, Copilot Pro+, and Copilot Max) include GitHub AI Credits allowances that vary by plan. For …"
+    },
+    {
+      "title": "Cách tạo PowerPoint bằng Claude AI đơn giản và chi tiết",
+      "url": "https://cellphones.com.vn/sforum/cach-tao-powerpoint-bang-claude-ai",
+      "snippet": "May 31, 2026 · Tạo PowerPoint bằng Claude AI đang trở thành một xu hướng mới trong cách chuẩn bị bài thuyết trình hiện đại."
+    },
+    {
+      "title": "Claude Bị Lỗi? 10+ Cách Khắc Phục Lỗi Khi Dùng Claude AI",
+      "url": "https://cellphones.com.vn/sforum/cach-khac-phuc-claude-bi-loi",
+      "snippet": "Jun 15, 2026 · Claude bị lỗi là tình trạng khá nhiều người dùng gặp phải trong quá trình sử dụng AI, từ lỗi không phản hồi đến việc …"
+    }
+  ]
+}

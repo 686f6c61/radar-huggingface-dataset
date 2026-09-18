@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "tokenbrew/Bonsai-27B-Brew-GGUF",
+  "slug": "tokenbrew-bonsai-27b-brew-gguf",
+  "author": "tokenbrew",
+  "url": "https://huggingface.co/tokenbrew/Bonsai-27B-Brew-GGUF",
+  "created_at": "2026-09-18T16:18:31.000Z",
+  "updated_at": "2026-09-18T16:55:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "quantized",
+    "bonsai",
+    "qwen3.6",
+    "text-generation",
+    "coffee",
+    "en",
+    "base_model:prism-ml/Bonsai-27B-gguf",
+    "base_model:quantized:prism-ml/Bonsai-27B-gguf",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 67225689280,
+  "storage_human": "67.2 GB",
+  "base_model": "prism-ml/Bonsai-27B-gguf",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Onigiri - Official Website | Information > Maintenance",
+      "url": "https://onigiri.cyberstep.com/ps4/info/info_list/maintenance",
+      "snippet": "Play as an Oni, and travel with your companions, set in the ancient myths of Japan, amongst monsters and legends. You must carve …"
+    },
+    {
+      "title": "インフォメーション | 鬼斬(おにぎり) steam",
+      "url": "https://crossplay.onigiri.cyberstep.com/info/info_list_web",
+      "snippet": "Sep 3, 2026 · 鬼斬(おにぎり) steam登場！無料で遊べるMMORPG「鬼斬(おにぎり)」。インフォーメーションをチェックしてイベ …"
+    },
+    {
+      "title": "Onigiri - Official Website | Download Client",
+      "url": "https://onigiri.cyberstep.com/download/index.html",
+      "snippet": "Mar 7, 2014 · Onigiri Client Software ... Please ensure you have the neccessary specifications to run Onigiri. There may be issues …"
+    },
+    {
+      "title": "奥義 | 鬼斬 (おにぎり) steam",
+      "url": "https://crossplay.onigiri.cyberstep.com/gamesystem/hidden_purpose.html",
+      "snippet": "刀 【奥義 紅蓮爆焔殺・五】 武器に集中させた超高熱エネルギーを前方に叩きつけ、3発の大爆発を引き起こす。 大太刀 【奥義 聖 …"
+    },
+    {
+      "title": "天堂 Mobile 哈啦板 - 巴哈姆特",
+      "url": "https://forum.gamer.com.tw/B.php?bsn=25908",
+      "snippet": "歡迎來到天堂 Mobile哈啦板，最新資訊及情報分享、精華好文查找、創作交流討論，盡在巴哈姆特！"
+    }
+  ]
+}

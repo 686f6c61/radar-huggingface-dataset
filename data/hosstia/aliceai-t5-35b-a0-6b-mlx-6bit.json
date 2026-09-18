@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Hosstia/AliceAI-T5-35B-A0.6B-MLX-6bit",
+  "slug": "hosstia-aliceai-t5-35b-a0-6b-mlx-6bit",
+  "author": "Hosstia",
+  "url": "https://huggingface.co/Hosstia/AliceAI-T5-35B-A0.6B-MLX-6bit",
+  "created_at": "2026-09-18T15:49:07.000Z",
+  "updated_at": "2026-09-19T16:23:58.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "translation",
+  "library": "mlx",
+  "languages": [
+    "zh",
+    "ru"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "aliceai_t5_moe_mlx",
+    "translation",
+    "chinese",
+    "russian",
+    "t5",
+    "moe",
+    "quantized",
+    "zh",
+    "ru",
+    "base_model:yandex/AliceAI-T5-35B-A0.6B",
+    "base_model:finetune:yandex/AliceAI-T5-35B-A0.6B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34354463744,
+  "parameters_human": "34.35B",
+  "storage_bytes": 28205094045,
+  "storage_human": "28.2 GB",
+  "base_model": "yandex/AliceAI-T5-35B-A0.6B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Filing a Health Information Privacy Complaint | HHS.gov",
+      "url": "https://www.hhs.gov/hipaa/filing-a-complaint/index.html",
+      "snippet": "Feb 13, 2026 · Anyone can file a complaint if they believe there has been a violation of the HIPAA Rules or Part 2. Learn what you'll …"
+    },
+    {
+      "title": "Who’s eligible for Medicaid? - HHS.gov",
+      "url": "https://www.hhs.gov/answers/medicare-and-medicaid/who-is-eligible-for-medicaid/index.html",
+      "snippet": "Dec 8, 2022 · You may qualify for free or low-cost health care through Medicaid based on your income and family size. Eligibility rules …"
+    },
+    {
+      "title": "Can health care providers engage in confidential conversations with ...",
+      "url": "https://www.hhs.gov/hipaa/for-professionals/faq/can-health-care-providers-have-confidential-conversations/index.html",
+      "snippet": "Dec 28, 2022 · Can health care providers engage in confidential conversations with other providers or with patients, even if there is a …"
+    },
+    {
+      "title": "Working at HHS - HHS.gov",
+      "url": "https://www.hhs.gov/about/working-at-hhs/index.html",
+      "snippet": "Jul 23, 2026 · The U.S. Department of Health and Human Services (HHS) and its divisions provide opportunities for a wide range of …"
+    },
+    {
+      "title": "ADR Training - HHS.gov",
+      "url": "https://www.hhs.gov/about/agencies/dab/adr-services/training/index.html",
+      "snippet": "Feb 24, 2026 · The ADR Division provides training for HHS offices and employees seeking to develop or enhance their skills in …"
+    }
+  ]
+}

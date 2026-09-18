@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "einarolafsson/cross-channel-cell-from-hoechst-cpsam",
+  "slug": "einarolafsson-cross-channel-cell-from-hoechst-cpsam",
+  "author": "einarolafsson",
+  "url": "https://huggingface.co/einarolafsson/cross-channel-cell-from-hoechst-cpsam",
+  "created_at": "2026-09-18T18:58:36.000Z",
+  "updated_at": "2026-09-18T20:33:22.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "cellpose",
+    "cellpose-sam",
+    "segmentation",
+    "microscopy",
+    "toxoplasma",
+    "cross-channel",
+    "spacr",
+    "image-segmentation",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12186474010,
+  "storage_human": "12.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "21 must-try Vietnamese dishes | Vietnam Tourism",
+      "url": "https://vietnam.travel/things-to-do/21-must-try-vietnamese-dishes",
+      "snippet": "Get set to eat well in Vietnam with this complete list of the most delicious Vietnamese dishes, from Cha Ca La Vong to Che. By …"
+    },
+    {
+      "title": "Best Vietnam Food: 15 Must-Try Dishes - Vietnamese Cuisine",
+      "url": "https://foodvietnamese.com/best-food-in-vietnam/",
+      "snippet": "Sep 7, 2026 · Discover the best Vietnam food: Pho, Banh Mi, Bun Bo Hue, Com Tam, Cao Lau and 10 more iconic dishes. Where to …"
+    },
+    {
+      "title": "Vietnamese Food: Top 100 Dishes - TasteAtlas",
+      "url": "https://www.tasteatlas.com/best-rated-dishes-in-vietnam",
+      "snippet": "Sep 9, 2026 · This Vietnamese classic consists of a combination of flat rice noodles and yellow egg noodles that are served with a …"
+    },
+    {
+      "title": "40 Best Street Food in Vietnam - TasteAtlas",
+      "url": "https://www.tasteatlas.com/best-rated-street-food-in-vietnam",
+      "snippet": "3 days ago · Bánh mì (pronounced 'bun mee') is a popular Vietnamese variety of sandwiches that share the same core ingredient - a …"
+    },
+    {
+      "title": "15 Best Vietnamese Food Dishes To Try, 2026 - WanderOn",
+      "url": "https://wanderon.in/blogs/vietnamese-food",
+      "snippet": "Feb 27, 2026 · Explore the best Vietnamese food, from pho to street eats. Discover traditional dishes & must-try flavours. Start your …"
+    }
+  ]
+}

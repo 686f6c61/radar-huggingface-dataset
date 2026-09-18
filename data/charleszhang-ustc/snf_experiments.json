@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "CharlesZhang-USTC/snf_experiments",
+  "slug": "charleszhang-ustc-snf_experiments",
+  "author": "CharlesZhang-USTC",
+  "url": "https://huggingface.co/CharlesZhang-USTC/snf_experiments",
+  "created_at": "2026-09-18T17:23:35.000Z",
+  "updated_at": "2026-09-20T08:26:25.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4894191809,
+  "storage_human": "4.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "2 Kişilik Oyunlar - Oyunskor'da 2 kişilik oyunlar oynayın",
+      "url": "https://www.oyunskor.com/oyunlar/2kisilik-oyunlar?page=1",
+      "snippet": "En yeni 2 kişilik oyunları Türkiyenin en iyi oyun sitesi olan oyunskor farkıyla oynayın. En güzel iki kişilik oyunlar her gün güncellenerek …"
+    },
+    {
+      "title": "Oyna Ateş ve Su 4 online Oyunskor.com'da",
+      "url": "https://www.oyunskor.com/oyun/ates-ve-su-4",
+      "snippet": "A, W, S ve D ile Su'yu hareket ettir. Benzer Oyunlar Eğer macera oyunlarını gerçekten seviyorsan işte sana bundan sonra denemen …"
+    },
+    {
+      "title": "Hırsız Kardeşler - Oyunskor.com'da ücretsiz çevrimiçi",
+      "url": "https://www.oyunskor.com/oyun/hirsiz-kardesler",
+      "snippet": "Hırsız kardeşler oyunumuzda hırsızlıktan dolayı hapishaneye giren kardeşlerin tekrar hapishaneden &ccedil;ıkmasına yardımcı …"
+    },
+    {
+      "title": "Ateş ve Su 7: Arkadaşlar - Oyunskor.com'da ücretsiz çevrimiçi",
+      "url": "https://www.oyunskor.com/oyun/ates-ve-su-7-arkadaslar",
+      "snippet": "Apr 20, 2026 · Ateş ve Su 7: Arkadaşlar (Fireboy & Watergirl 7: And Friends), Ateş ve Su serisinin yedinci oyunudur. Çözülmesi …"
+    },
+    {
+      "title": "Yemek Oyunları - Oyunskor'da çevrimiçi yemek oyunları oyna!",
+      "url": "https://www.oyunskor.com/oyunlar/yemek-pisirme-oyunlari?page=1",
+      "snippet": "Yemek Oyunları Ücretsiz Çevrimiçi Yemek Oyunları Bu ücretsiz yemek yapma oyunlarının tadını çıkarmak için gerçek hayatta uzman …"
+    }
+  ]
+}

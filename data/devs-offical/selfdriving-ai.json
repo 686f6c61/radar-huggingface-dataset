@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Devs-Offical/SelfDriving-AI",
+  "slug": "devs-offical-selfdriving-ai",
+  "author": "Devs-Offical",
+  "url": "https://huggingface.co/Devs-Offical/SelfDriving-AI",
+  "created_at": "2026-09-18T18:29:40.000Z",
+  "updated_at": "2026-09-18T18:29:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Devs (série télévisée) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Devs_(s%C3%A9rie_t%C3%A9l%C3%A9vis%C3%A9e)",
+      "snippet": "Devs est une mini-série américaine dramatique, de science-fiction et techno-thriller, créée, réalisée et écrite par Alex Garland et …"
+    },
+    {
+      "title": "Devs (TV series) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Devs_(TV_series)",
+      "snippet": "The New York Times interviewed theoretical physicist Sean Carroll about sweeping statements about humanity and determinism …"
+    },
+    {
+      "title": "Devs - Série TV 2020 - AlloCiné",
+      "url": "https://www.allocine.fr/series/ficheserie_gen_cserie=23326.html",
+      "snippet": "Découvrez la série TV Devs de Alex Garland avec Sonoya Mizuno (Lily Chan), Nick Offerman (Forest). Retrouvez toutes les …"
+    },
+    {
+      "title": "Devs (TV Mini Series 2020) - IMDb",
+      "url": "https://www.imdb.com/title/tt8134186/",
+      "snippet": "Devs: Created by Alex Garland. With Sonoya Mizuno, Nick Offerman, Jin Ha, Cailee Spaeny. A computer engineer investigates the …"
+    },
+    {
+      "title": "Prime Video: Devs Season 1",
+      "url": "https://www.primevideo.com/detail/0I5ECVWYBGP3IRJRC31H4OLZ3I",
+      "snippet": "1. Episode 1 When her boyfriend Sergei vanishes after starting a new job at the secretive Devs division of tech company Amaya, …"
+    }
+  ]
+}

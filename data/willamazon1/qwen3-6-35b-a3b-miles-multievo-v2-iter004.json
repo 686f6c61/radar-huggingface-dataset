@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "willamazon1/qwen3.6-35b-a3b-miles-multievo-v2-iter004",
+  "slug": "willamazon1-qwen3-6-35b-a3b-miles-multievo-v2-iter004",
+  "author": "willamazon1",
+  "url": "https://huggingface.co/willamazon1/qwen3.6-35b-a3b-miles-multievo-v2-iter004",
+  "created_at": "2026-09-18T17:08:54.000Z",
+  "updated_at": "2026-09-18T17:12:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "reinforcement-learning",
+    "multimodal",
+    "moe",
+    "agent",
+    "conversational",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 71916587318,
+  "storage_human": "71.9 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Welcome to BT’s official support community.",
+      "url": "https://community.bt.com/",
+      "snippet": "17 hours ago · Welcome to BT’s official support community. If you run into difficulties or have a question about BT’s products and …"
+    },
+    {
+      "title": "Email - BT Community",
+      "url": "https://community.bt.com/t5/Email/ct-p/EmailandApps",
+      "snippet": "2 days ago · Top Rated Authors View all"
+    },
+    {
+      "title": "BT ID - Clarification on separation bewteen MyBT v... - BT Community",
+      "url": "https://community.bt.com/t5/Bills-Packages/BT-ID-Clarification-on-separation-bewteen-MyBT-v-Email-logon/td-p/2335939",
+      "snippet": "Dec 19, 2023 · Hi It looks like I have not understood the difference between MyBT and Email signon. I currently use the same email …"
+    },
+    {
+      "title": "MYBT not recognising BTID unable to login - BT Community",
+      "url": "https://community.bt.com/t5/Bills-Packages/MYBT-not-recognising-BTID-unable-to-login/td-p/2357450",
+      "snippet": "Mar 21, 2024 · Re: MYBT not recognising BTID unable to login I've had the same problem for over a week now - I noticed it when …"
+    },
+    {
+      "title": "Solved: My BT login wont load homepage - BT Community",
+      "url": "https://community.bt.com/t5/Broadband-Extras-Apps-from-BT/My-BT-login-wont-load-homepage/td-p/2240915",
+      "snippet": "Jul 14, 2022 · Re: My BT login wont load homepage I have a similar problem. I don't have the 2 step authentication - but when I log …"
+    }
+  ]
+}

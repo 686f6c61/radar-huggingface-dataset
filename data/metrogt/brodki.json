@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Metrogt/Brodki",
+  "slug": "metrogt-brodki",
+  "author": "Metrogt",
+  "url": "https://huggingface.co/Metrogt/Brodki",
+  "created_at": "2026-09-18T12:02:40.000Z",
+  "updated_at": "2026-09-18T12:02:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemini Zodiac Sign - Astrology Answers",
+      "url": "https://www.astrologyanswers.com/zodiac-signs/gemini/",
+      "snippet": "Gemini has two sides. Such is the nature of the “twins,” the symbol that represents this sign. This sign has both plenty. of energy and …"
+    },
+    {
+      "title": "Gemini 和 ChatGPT哪个性能强一些 - 知乎",
+      "url": "https://www.zhihu.com/question/1916807506119860606",
+      "snippet": "gemini和ChatGPT我都是付费会员，也用了很久了，正值gpt5更新后来回答一波。 先说性能： gpt5的纸面性能强于gemini，但实际使 …"
+    },
+    {
+      "title": "Gemini Woman: Traits, Love, & More - Astrology Answers",
+      "url": "https://www.astrologyanswers.com/zodiac-signs/gemini/woman/",
+      "snippet": "Learn all about the Gemini woman: her personality traits, what she's like as a wife and mother, her characteristics at work and as a …"
+    },
+    {
+      "title": "ChatGPT和Gemini之间选哪个? - 知乎",
+      "url": "https://www.zhihu.com/question/1975210650360910165",
+      "snippet": "Gemini 3.0已经发布了。要是只能ChatGPT和Gemini之间选一个， 选哪个比较好?主要想用它来辅助学习，还有…"
+    },
+    {
+      "title": "《记忆革命：Gemini 1.5如何让Transformer突破百万级上下文枷锁》",
+      "url": "https://bbs.huaweicloud.com/blogs/453371",
+      "snippet": "May 29, 2025 · 而Google DeepMind的Gemini 1.5却打破了这一宿命，首次实现百万级token的上下文处理能力，相当于让AI同时阅读 …"
+    }
+  ]
+}

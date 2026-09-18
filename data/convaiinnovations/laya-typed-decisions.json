@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "convaiinnovations/laya-typed-decisions",
+  "slug": "convaiinnovations-laya-typed-decisions",
+  "author": "convaiinnovations",
+  "url": "https://huggingface.co/convaiinnovations/laya-typed-decisions",
+  "created_at": "2026-09-18T17:45:14.000Z",
+  "updated_at": "2026-09-19T09:55:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "laya",
+    "system-one",
+    "calibrated-decisions",
+    "rlcd",
+    "typed-decisions",
+    "classification",
+    "agent-observability",
+    "invoice-processing",
+    "security-incidents",
+    "customer-service",
+    "commercial-use",
+    "text-classification",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 5,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 421293830,
+  "parameters_human": "421.3M",
+  "storage_bytes": 842609220,
+  "storage_human": "843 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "System One Decision Benchmark",
+      "dataset": "Typed Decisions",
+      "metric": null,
+      "value": 0.766
+    },
+    {
+      "task": "System One Decision Benchmark",
+      "dataset": "Typed Decisions",
+      "metric": null,
+      "value": 0.066
+    }
+  ],
+  "sources": [
+    {
+      "title": "Construction Equipment & Used Heavy Machinery for sale | MachineryZone",
+      "url": "https://www.machineryzone.com/",
+      "snippet": "Present in more than 20 countries, the Machineryzone site specialises in the sale and purchase of used and new public works, …"
+    },
+    {
+      "title": "AMT Advertising - mbline.com",
+      "url": "https://www.mbline.com/en/",
+      "snippet": "Agriaffaires - MachineryZone - Truckscorner As European leaders, our Internet marketplaces Agriaffaires, Machineryzone and …"
+    },
+    {
+      "title": "AMT Advertising - mb-line.de",
+      "url": "https://mb-line.de/en/",
+      "snippet": "Agriaffaires - MachineryZone - Truckscorner As European leaders, our Internet marketplaces Agriaffaires, Machineryzone and …"
+    },
+    {
+      "title": "mbline.com - AMT Advertising",
+      "url": "https://www.mbline.com/",
+      "snippet": "Leaders en Europe, nos places de marchés agriaffaires, machineryzone et truckscorner sont aujourd’hui présentes dans plus de 25 …"
+    },
+    {
+      "title": "All ads of used & new heavy equipment - MachineryZone",
+      "url": "https://www.machineryzone.com/sitemap.html",
+      "snippet": "MachineryZone - used construction equipment & heavy machinery : excavators, dozers, loaders, forklifts, dumpers, skid steers, …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "optimum-intel-internal-testing/tiny-random-qwen-image-2.1",
+  "slug": "optimum-intel-internal-testing-tiny-random-qwen-image-2-1",
+  "author": "optimum-intel-internal-testing",
+  "url": "https://huggingface.co/optimum-intel-internal-testing/tiny-random-qwen-image-2.1",
+  "created_at": "2026-09-18T13:57:36.000Z",
+  "updated_at": "2026-09-18T14:03:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "license:apache-2.0",
+    "diffusers:QwenImage21Pipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 46672,
+  "parameters_human": "46672",
+  "storage_bytes": 26264618,
+  "storage_human": "26 MB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tutlo",
+      "url": "https://web.tutlo.com/auth/login",
+      "snippet": "Access your Tutlo account by logging in with Facebook, Google, or your credentials."
+    },
+    {
+      "title": "Angielski Online - Kursy i nauka języka angielskiego - tutlo",
+      "url": "https://tutlo.com/pl/",
+      "snippet": "Tutlo to szkoła językowa online, w której angielskiego możesz uczyć się z dowolnego miejsca w Polsce. Każdy dostępny u nas …"
+    },
+    {
+      "title": "Panel zarządzania - Tutlo",
+      "url": "https://panel.tutlo.com/auth/login",
+      "snippet": "Wypróbuj naukę angielskiego online z Native Speakerami. Już dziś rozpocznij swój kurs angielskiego w szkole językowej online."
+    },
+    {
+      "title": "Logowanie | Tutlo Go",
+      "url": "https://tutlogo.com/pl/user/login",
+      "snippet": "Zapomniałeś/zapomniałaś hasła? Nie masz konta? Zapisz się. Masz pytanie? Chcesz zgłosić błąd w działaniu aplikacji? Napisz do nas!"
+    },
+    {
+      "title": "Platforma do nauki angielskiego dla dorosłych - tutlo",
+      "url": "https://tutlo.com/pl/angielski-dla-doroslych/platforma/",
+      "snippet": "We dwoje przemierzajcie świat lingwistycznych wyzwań i pokonujcie językowe bariery. Wystarczy, że zalogujesz się do platformy …"
+    }
+  ]
+}

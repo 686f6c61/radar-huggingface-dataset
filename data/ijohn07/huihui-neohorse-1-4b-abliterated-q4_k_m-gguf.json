@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "ijohn07/Huihui-NeoHorse-1-4B-abliterated-Q4_K_M-GGUF",
+  "slug": "ijohn07-huihui-neohorse-1-4b-abliterated-q4_k_m-gguf",
+  "author": "ijohn07",
+  "url": "https://huggingface.co/ijohn07/Huihui-NeoHorse-1-4B-abliterated-Q4_K_M-GGUF",
+  "created_at": "2026-09-18T12:01:46.000Z",
+  "updated_at": "2026-09-18T12:02:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "agentic",
+    "tool-use",
+    "coding",
+    "reasoning",
+    "instruction-following",
+    "abliterated",
+    "uncensored",
+    "huihui",
+    "llama-cpp",
+    "gguf-my-repo",
+    "text-generation",
+    "base_model:huihui-ai/Huihui-NeoHorse-1-4B-abliterated",
+    "base_model:finetune:huihui-ai/Huihui-NeoHorse-1-4B-abliterated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 2708804544,
+  "storage_human": "2.7 GB",
+  "base_model": "huihui-ai/Huihui-NeoHorse-1-4B-abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "在德国留学如何省钱？ - 知乎",
+      "url": "https://www.zhihu.com/question/28598786",
+      "snippet": "check24也给出了不同家庭人数下的参考值，但是这个值跟使用习惯和电器数量有关，不同情况下浮动会比较大，给大家个楼主的参 …"
+    },
+    {
+      "title": "德国check24网站如何租车？ - 知乎",
+      "url": "https://www.zhihu.com/question/43456229",
+      "snippet": "使用德国check24网站可以节省大量时间和精力，为您提供更加便捷、高效的租车体验。 3：使用德国check24翻译租车服务 德 …"
+    },
+    {
+      "title": "文件名对目标文件夹可能太长，如何解决？ - 知乎",
+      "url": "https://www.zhihu.com/question/329237557",
+      "snippet": "Jun 13, 2019 · 将无法粘贴的文件或文件夹移动到更外的目录 再将更里的文件夹名称改短 然后复制粘贴 最好恢复文件夹名称 示例：F:\\ …"
+    },
+    {
+      "title": "弟弟举报哥哥冒名顶替上大学案开庭，母亲首发声，湘潭大学重新调 …",
+      "url": "https://www.zhihu.com/question/2073017538514871592",
+      "snippet": "Aug 18, 2026 · 弟弟举报哥哥冒名顶替上大学，母亲自说自话，不能信，妈妈才是整件事情的罪恶之源。这个妈妈太会算计了，算计了 …"
+    },
+    {
+      "title": "想问solidworks对显卡要求比较高还是对cpu要求比较高？ - 知乎",
+      "url": "https://www.zhihu.com/question/300489616",
+      "snippet": "例如，我把“5”修订为“6” 那么这个父特征下面所有的子特征都是要重新计算过的。 而如何定义这个子特征就是----所有以这个父特征的“ …"
+    }
+  ]
+}

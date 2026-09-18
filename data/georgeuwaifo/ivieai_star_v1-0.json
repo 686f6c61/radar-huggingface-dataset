@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "GeorgeUwaifo/ivieai_star_v1.0",
+  "slug": "georgeuwaifo-ivieai_star_v1-0",
+  "author": "GeorgeUwaifo",
+  "url": "https://huggingface.co/GeorgeUwaifo/ivieai_star_v1.0",
+  "created_at": "2026-09-18T14:04:54.000Z",
+  "updated_at": "2026-09-21T19:06:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "generated_from_trainer",
+    "base_model:HuggingFaceTB/SmolLM2-135M",
+    "base_model:finetune:HuggingFaceTB/SmolLM2-135M",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 134515008,
+  "parameters_human": "134.5M",
+  "storage_bytes": 2757957597,
+  "storage_human": "2.8 GB",
+  "base_model": "HuggingFaceTB/SmolLM2-135M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bing News Quiz - Play Today’s 10+ Daily News Bing Quizzes",
+      "url": "https://bingquizzes.com/bing-news-quiz/",
+      "snippet": "Play today's Bing News Quiz with 10+ daily breaking news quiz questions and answers on top headlines and current events."
+    },
+    {
+      "title": "Bing News Quiz – Play Today’s 10 Daily News Trivia - Bing Quizzes",
+      "url": "https://bingquiz.com/bing-news-quiz/",
+      "snippet": "15 hours ago · Take the latest Bing News Quiz and challenge yourself with daily questions based on trending headlines from the …"
+    },
+    {
+      "title": "Bing Homepage Quiz – Today's Bing Quiz & Answers",
+      "url": "https://bingquiz.today/",
+      "snippet": "Play today's Bing Homepage Quiz, explore the latest Bing quiz questions, and check answers and trivia in one place. Updated daily."
+    },
+    {
+      "title": "Bing News Quiz – Today’s Top Headlines and Breaking News Quiz",
+      "url": "https://weeklyquiz.net/bing-news-quiz/",
+      "snippet": "The Bing News Quiz is a fast-paced daily quiz built around the world’s biggest stories. Expect questions about breaking news, …"
+    },
+    {
+      "title": "Bing Homepage Quiz – Today's Bing Daily Trivia & Featured Image Quiz",
+      "url": "https://bingquiz.com/bing-homepage-quiz/",
+      "snippet": "15 hours ago · Test your knowledge on world headlines, breaking news, and trending global stories updated daily."
+    }
+  ]
+}

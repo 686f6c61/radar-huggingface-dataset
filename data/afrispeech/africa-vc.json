@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "AfriSpeech/africa-vc",
+  "slug": "afrispeech-africa-vc",
+  "author": "AfriSpeech",
+  "url": "https://huggingface.co/AfriSpeech/africa-vc",
+  "created_at": "2026-09-18T16:34:21.000Z",
+  "updated_at": "2026-09-18T16:34:43.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-to-audio",
+  "library": "seed-vc",
+  "languages": [],
+  "tags": [
+    "seed-vc",
+    "voice-conversion",
+    "african-languages",
+    "multilingual",
+    "audio-to-audio",
+    "dataset:AfriSpeech/multivoice-synthetic-speech",
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 412426080,
+  "storage_human": "412 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Draw, NRL Scores, Results for Finals Week 2, 2026 Telstra Premiership ...",
+      "url": "https://www.nrl.com/draw/",
+      "snippet": "The 2026 Telstra Premiership draw, NRL draw, live NRL scores; results, fixture, schedule, State of Origin draw, Pre-season …"
+    },
+    {
+      "title": "Official NRL Ladder, for Round 27, 2026 Telstra Premiership - NRL.com",
+      "url": "https://www.nrl.com/ladder/",
+      "snippet": "View the official 2026 NRL ladder, standings, Telstra Premiership ladder, Women's Telstra Premiership ladder, Witzer Preseason …"
+    },
+    {
+      "title": "Official NRLW, National Women's Rugby League | NRL.com",
+      "url": "https://www.nrl.com/nrlw/",
+      "snippet": "Further information on the Telstra Women's Premiership Draw, Stats, Ladder, Player Profiles, and Competitions from the most recent …"
+    },
+    {
+      "title": "NRL Tipping",
+      "url": "https://tipping.nrl.com/",
+      "snippet": "Your journey to tipping greatness begins here - step into the NRL Tipping Game and let your instincts shine!"
+    },
+    {
+      "title": "Official NRL News, Updates & Information | NRL.com",
+      "url": "https://www.nrl.com/news/",
+      "snippet": "View updates for the most breaking NRL news, NRLW news, analysis, scores, team list updates, squads, casualty ward, injury news, …"
+    }
+  ]
+}

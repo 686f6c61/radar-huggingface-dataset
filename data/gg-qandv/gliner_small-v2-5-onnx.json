@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "GG-QandV/gliner_small-v2.5-onnx",
+  "slug": "gg-qandv-gliner_small-v2-5-onnx",
+  "author": "GG-QandV",
+  "url": "https://huggingface.co/GG-QandV/gliner_small-v2.5-onnx",
+  "created_at": "2026-09-18T14:21:04.000Z",
+  "updated_at": "2026-09-18T14:29:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "onnx",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "onnx",
+    "ner",
+    "gliner",
+    "int8",
+    "quantized",
+    "zero-shot",
+    "token-classification",
+    "multilingual",
+    "dataset:urchade/pile-mistral-v0.1",
+    "arxiv:2311.08526",
+    "base_model:gliner-community/gliner_small-v2.5",
+    "base_model:quantized:gliner-community/gliner_small-v2.5",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 196786385,
+  "storage_human": "197 MB",
+  "base_model": "gliner-community/gliner_small-v2.5",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.gg/index.html",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=fr-GG",
+      "snippet": "Publicité À propos de Google Google.com in English © 2026 - Confidentialité - Conditions"
+    },
+    {
+      "title": "Google Traduction",
+      "url": "https://translate.google.fr/",
+      "snippet": "Google Traduction offre un service gratuit pour traduire instantanément des mots, expressions et pages Web entre le français et plus …"
+    },
+    {
+      "title": "OP.GG",
+      "url": "https://www.op.gg/?main=index",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "Sign in - Google Accounts",
+      "url": "https://accounts.google.com/",
+      "snippet": "Not your computer? Use a private browsing window to sign in. Learn more about using Guest mode Next Create account"
+    }
+  ]
+}

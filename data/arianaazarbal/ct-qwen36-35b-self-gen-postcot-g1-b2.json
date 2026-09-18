@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "arianaazarbal/ct-qwen36-35b-self-gen-postcot-g1-b2",
+  "slug": "arianaazarbal-ct-qwen36-35b-self-gen-postcot-g1-b2",
+  "author": "arianaazarbal",
+  "url": "https://huggingface.co/arianaazarbal/ct-qwen36-35b-self-gen-postcot-g1-b2",
+  "created_at": "2026-09-18T18:19:28.000Z",
+  "updated_at": "2026-09-18T18:20:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "constitutional-training",
+    "iterated-constitution",
+    "family:qwen36_35b",
+    "seed:self",
+    "method:gen",
+    "regime:post_cot",
+    "gen:1",
+    "branch:b2",
+    "text-generation",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:adapter:Qwen/Qwen3.6-35B-A3B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4491829400,
+  "storage_human": "4.5 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "'bokep' Search - XNXX.COM",
+      "url": "https://www.xnxx.com/search/bokep",
+      "snippet": "Kimberlisah Bokep indonesia ngentot ceweknya mau crot di luar aja 5.5M 98% 11min - 1080p Kimberlisah bokep indonesia ngentot …"
+    },
+    {
+      "title": "Bokep Indo - LordBokep",
+      "url": "https://lordbokep.com/category/bokep-indo/",
+      "snippet": "Nonton kumpulan video bokep Indo terbaru dan paling viral. Koleksi bokep indo ABG mesum, link bokep indo ngewe, dan konten …"
+    },
+    {
+      "title": "Bokep Terbaru Hari Ini – BokepHot | Nonton Bokep Indo",
+      "url": "https://bokephot.net/categories/bokep-terbaru/",
+      "snippet": "Nonton bokep terbaru hari ini gratis kualitas HD. Koleksi video bokep indo viral terbaru update setiap hari, lengkap hanya di BokepHot."
+    },
+    {
+      "title": "Bokep Indo | PasarBokep",
+      "url": "https://www.pasarbokep.co/category/bokep-indo",
+      "snippet": "Bokep Indo terbaru di PasarBokep. Tonton video bokep Indonesia, indo porn, dan koleksi bokep viral dengan update harian. …"
+    },
+    {
+      "title": "KingBokep | Streaming Video Bokep Terbaru",
+      "url": "https://kingbokep.tv/",
+      "snippet": "Situs Bokep Terbaru, Viral dan Update tiap hari bisa ditemukan di website ini KingBokep."
+    }
+  ]
+}

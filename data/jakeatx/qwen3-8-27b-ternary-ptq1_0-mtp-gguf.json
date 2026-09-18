@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "jakeatx/Qwen3.8-27B-Ternary-PTQ1_0-MTP-GGUF",
+  "slug": "jakeatx-qwen3-8-27b-ternary-ptq1_0-mtp-gguf",
+  "author": "jakeatx",
+  "url": "https://huggingface.co/jakeatx/Qwen3.8-27B-Ternary-PTQ1_0-MTP-GGUF",
+  "created_at": "2026-09-18T15:17:00.000Z",
+  "updated_at": "2026-09-18T15:17:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3_5",
+    "ternary",
+    "mtp",
+    "speculative-decoding",
+    "ampere",
+    "sm86",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 6242649376,
+  "storage_human": "6.2 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Concerts & Events in Seattle, WA | Bandsintown",
+      "url": "https://www.bandsintown.com/c/seattle-wa",
+      "snippet": "16 hours ago · Get tickets to upcoming concerts, live shows, festivals, and events in Seattle, WA. Enjoy personalized concert …"
+    },
+    {
+      "title": "Seattle Live Music Events Calendar - EverOut Seattle",
+      "url": "https://everout.com/seattle/events/?category=live-music",
+      "snippet": "OMEGA X 2026 TOUR: NO LIMIT in [Seattle] Live Music Friday, September 18 7–9 pm Edmonds Center for the Arts"
+    },
+    {
+      "title": "Music Events in Seattle | Concerts & Live Music | SEA events",
+      "url": "https://allevents.in/seattle/music",
+      "snippet": "Explore music events in Seattle — concerts, live music, gigs and festivals across every genre. Find dates, venues and tickets in one …"
+    },
+    {
+      "title": "Upcoming Concerts Events in Seattle, WA - stayhappening.com",
+      "url": "https://stayhappening.com/seattle--concerts",
+      "snippet": "16 hours ago · List of Concerts events happening in Seattle, WA, United States. Explore Concerts events nearby Seattle"
+    },
+    {
+      "title": "Music & Concerts Events in Seattle, WA - Eventbrite",
+      "url": "https://www.eventbrite.com/b/wa--seattle/music/?msockid=0564b71fac586eba0303a0c7adbb6f16",
+      "snippet": "Looking for music events in Seattle? Whether you're a local, new in town, or just passing through, you'll be sure to find something on …"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Hlatar/Geoscan_pioneer_base_drone_detection_finetuned",
+  "slug": "hlatar-geoscan_pioneer_base_drone_detection_finetuned",
+  "author": "Hlatar",
+  "url": "https://huggingface.co/Hlatar/Geoscan_pioneer_base_drone_detection_finetuned",
+  "created_at": "2026-09-18T14:23:20.000Z",
+  "updated_at": "2026-09-18T14:37:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "ultralytics",
+    "object-detection",
+    "yolo",
+    "drone",
+    "computer-vision",
+    "en",
+    "dataset:custom",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 114660880,
+  "storage_human": "115 MB",
+  "base_model": "yolo11x",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "voco Dubai Hotel | 5-Star Hotel Near Dubai World Trade Center",
+      "url": "https://www.ihg.com/voco/hotels/gb/en/dubai/dxbsz/hoteldetail?msockid=34c407eb16d56ba71055103317be6a5f",
+      "snippet": "Welcome to voco® Dubai. Ideally situated across the street from the World Trade Centre and a metro stop with direct links to Dubai's …"
+    },
+    {
+      "title": "voco Dubai by IHG, Dubai (updated prices 2027) - Booking.com",
+      "url": "https://www.booking.com/hotel/ae/voco-dubai.html?msockid=34c407eb16d56ba71055103317be6a5f",
+      "snippet": "Different to your everyday stay, voco® Dubai on Sheikh Zayed Road represents a world of effortless comfort and convenience, …"
+    },
+    {
+      "title": "VOCO DUBAI - Updated 2026 Hotel Reviews (United Arab Emirates)",
+      "url": "https://www.tripadvisor.com/Hotel_Review-g295424-d1990762-Reviews-Voco_Dubai-Dubai_Emirate_of_Dubai.html",
+      "snippet": "Located on Sheikh Zayed Road, Voco is one of 2 hotels I prefer to stay at when in Dubai. Staff are friendly. Rooms are tastefully …"
+    },
+    {
+      "title": "voco Dubai Hotel | 5– Star-Hotel in der Nähe des Dubai World Trade …",
+      "url": "https://www.ihg.com/voco/hotels/de/de/dubai/dxbsz/hoteldetail?msockid=34c407eb16d56ba71055103317be6a5f",
+      "snippet": "Entdecken Sie Eleganz bei voco ™ in der Sheikh Zayed Road Dubai, wo persönliche Berührungen mit Stil kombiniert werden. Wir …"
+    },
+    {
+      "title": "Hotel Voco Dubai By Ihg, United Arab Emirates - www.trivago.ae",
+      "url": "https://www.trivago.ae/en-AE/oar/hotel-voco-dubai-by-ihg?search=100-1718187",
+      "snippet": "Sep 1, 2026 · Voco Dubai By IHG is a 5-star hotel located on Sheikh Zayed Road. It features an award-winning Spa Zen wellness …"
+    }
+  ]
+}

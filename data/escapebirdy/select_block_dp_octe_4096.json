@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "escapebirdy/select_block_dp_octe_4096",
+  "slug": "escapebirdy-select_block_dp_octe_4096",
+  "author": "escapebirdy",
+  "url": "https://huggingface.co/escapebirdy/select_block_dp_octe_4096",
+  "created_at": "2026-09-18T13:01:47.000Z",
+  "updated_at": "2026-09-18T13:02:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "diffusion",
+    "robotics",
+    "dataset:escapebirdy/select_block_4096_v3",
+    "arxiv:2303.04137",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 267184420,
+  "parameters_human": "267.2M",
+  "storage_bytes": 1068777400,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook verrouillé et code reçu par whatsapp - Facebook",
+      "url": "https://forums.commentcamarche.net/forum/affich-38130243-facebook-verrouille-et-code-recu-par-whatsapp",
+      "snippet": "Dec 5, 2024 · Bonjour, Mon compte Facebook est bloqué car on me demande un code par Whatsapp (que je n'utilise pas) ou deux …"
+    },
+    {
+      "title": "Impossible de recevoir le code verif Canva",
+      "url": "https://forums.commentcamarche.net/forum/affich-38299352-impossible-de-recevoir-le-code-verif-canva",
+      "snippet": "Jul 15, 2026 · Bonjour, Je tente désespéramment de me connecter au compte Canva de mon entreprise. On m'a envoyé une …"
+    },
+    {
+      "title": "Cách Dùng Canva AI Làm Slide Thuyết Trình Chuyên Nghiệp Chỉ ...",
+      "url": "https://tinhte.vn/thread/cach-dung-canva-ai-lam-slide-thuyet-trinh-chuyen-nghiep-chi-tu-mot-prompt.4139643/",
+      "snippet": "May 18, 2026 · Canva AI làm slide là gì? Canva AI làm slide là cách sử dụng các công cụ AI trong Canva để tạo bài thuyết trình từ …"
+    },
+    {
+      "title": "Canva AI Miễn Phí Có Gì? Những Tính Năng Nên Dùng Trước ...",
+      "url": "https://tinhte.vn/thread/canva-ai-mien-phi-co-gi-nhung-tinh-nang-nen-dung-truoc-khi-nang-cap-canva-pro.4139897/",
+      "snippet": "Vậy Canva AI miễn phí có gì? Người dùng bản miễn phí có thể trải nghiệm những tính năng nào, bị giới hạn ra sao và có nên nâng …"
+    },
+    {
+      "title": "Tinhte.vn - Chuyên trang máy tính - PC Home",
+      "url": "https://pc.tinhte.vn/",
+      "snippet": "Chuyên trang máy tính & laptop của Tinhte.vn: Review PC, gaming gear, cẩm nang mua sắm và lắp ráp máy tính, hướng dẫn sử …"
+    }
+  ]
+}

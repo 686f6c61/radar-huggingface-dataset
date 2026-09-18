@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "dealignai/Bonsai-2-27B-CRACK-Ternary-JANG",
+  "slug": "dealignai-bonsai-2-27b-crack-ternary-jang",
+  "author": "dealignai",
+  "url": "https://huggingface.co/dealignai/Bonsai-2-27B-CRACK-Ternary-JANG",
+  "created_at": "2026-09-18T14:14:17.000Z",
+  "updated_at": "2026-09-18T21:35:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "apple-silicon",
+    "uncensored",
+    "abliterated",
+    "crack",
+    "jang",
+    "ternary",
+    "hadamard",
+    "reasoning",
+    "vision",
+    "video",
+    "tool-calling",
+    "harmbench",
+    "mmlu",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:prism-ml/Ternary-Bonsai-2-27B-mlx-2bit",
+    "base_model:finetune:prism-ml/Ternary-Bonsai-2-27B-mlx-2bit",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 12,
+  "downloads_30d": 2189,
+  "trending_score": 12,
+  "parameters": 27359638768,
+  "parameters_human": "27.36B",
+  "storage_bytes": 8215835785,
+  "storage_human": "8.2 GB",
+  "base_model": "prism-ml/Ternary-Bonsai-2-27B-mlx-2bit",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Shanghai Reiseführer 2026: So planst du deinen Shanghai Urlaub …",
+      "url": "https://www.chinahighlightstravel.de/shanghai/",
+      "snippet": "Planen Sie eine Reise nach Shanghai? Hier finden Sie die beste Reisezeit, Top Sehenswürdigkeiten Shanghais und andere …"
+    },
+    {
+      "title": "Shanghai-Reiseführer 2026: Stadt der Geschichte & moderne Skyline",
+      "url": "https://www.thechinajourney.com/de/reisefuhrer-fur-shanghai/",
+      "snippet": "Jun 6, 2026 · Entdecken Sie den umfassenden Shanghai-Reiseführer mit Sehenswürdigkeiten, die Sie nicht verpassen sollten, …"
+    },
+    {
+      "title": "Shanghai City Guide: Budget, Highlights & Tipps (2026)",
+      "url": "https://betterbeyond.de/shanghai-china/",
+      "snippet": "Reise nach Shanghai, China: Alles zu Kosten, Unterkunft und Transport in der Stadt sowie Tipps für Sehenswürdigkeiten und …"
+    },
+    {
+      "title": "Reisen nach Shanghai für 2026/2027 | Skyscanner",
+      "url": "https://www.skyscanner.ch/reiseziele/pauschalreisen/stadt/27546079/china/shanghai",
+      "snippet": "Finde mit Skyscanner einen günstigen Urlaub in Shanghai. Vergleiche Pauschalreisen von vertrauenswürdigen Marken oder …"
+    },
+    {
+      "title": "Reisehinweise für China",
+      "url": "https://www.eda.admin.ch/eda/de/home/vertretungen-und-reisehinweise/china/reisehinweise-fuer-china.html",
+      "snippet": "Aktuelles zur Sicherheitslage, mögliche Risiken und empfohlene Vorsichtsmassnahmen für Reisende nach China."
+    }
+  ]
+}

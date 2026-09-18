@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "roboseasylabs/cube_9_yu_20260912_173012",
+  "slug": "roboseasylabs-cube_9_yu_20260912_173012",
+  "author": "roboseasylabs",
+  "url": "https://huggingface.co/roboseasylabs/cube_9_yu_20260912_173012",
+  "created_at": "2026-09-18T16:42:57.000Z",
+  "updated_at": "2026-09-18T16:43:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:r2525/cube_9_yu_20260912_173012",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206712944,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "2023-2024 NBA Schedule and Scores: Full List - LandOfBasketball.com",
+      "url": "https://www.landofbasketball.com/results/2023_2024_scores_full.htm",
+      "snippet": "All the results of NBA games played in the 2023-24 Season. Complete list with date, points scored, location and other information."
+    },
+    {
+      "title": "NBA Games - All NBA matchups | NBA.com",
+      "url": "https://www.nba.com/games?2023",
+      "snippet": "Watch NBA Games - Follow the game, scores and stats for NBA matchups."
+    },
+    {
+      "title": "2023 NBA Playoffs Schedule and Results - Basketball-Reference.com",
+      "url": "https://www.basketball-reference.com/playoffs/NBA_2023_games.html",
+      "snippet": "Checkout the Results, Statistics, Playoff Leaders, Per Game Stats, Advanced Stats and more for the 2023 NBA playoffs on …"
+    },
+    {
+      "title": "NBA Scores 2026-27 - CBS Sports",
+      "url": "https://www.cbssports.com/nba/scoreboard/2023/",
+      "snippet": "Fast, updating NBA scores and stats for games are provided by CBS Sports."
+    },
+    {
+      "title": "2022–23 NBA season - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/2022%E2%80%9323_NBA_season",
+      "snippet": "On February 24, 2023, the Sacramento Kings and Los Angeles Clippers competed in the second-highest scoring game in NBA …"
+    }
+  ]
+}

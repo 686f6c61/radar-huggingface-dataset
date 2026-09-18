@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "zyhang1998/qwen3.5-397b-a17b-mlsbench-syn-rl-rewardfix-step104",
+  "slug": "zyhang1998-qwen3-5-397b-a17b-mlsbench-syn-rl-rewardfix-step104",
+  "author": "zyhang1998",
+  "url": "https://huggingface.co/zyhang1998/qwen3.5-397b-a17b-mlsbench-syn-rl-rewardfix-step104",
+  "created_at": "2026-09-18T16:43:00.000Z",
+  "updated_at": "2026-09-18T18:00:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "qwen3.5",
+    "reinforcement-learning",
+    "lora-merged",
+    "mlsbench",
+    "reward-fix",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-397B-A17B",
+    "base_model:finetune:Qwen/Qwen3.5-397B-A17B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 403397928944,
+  "parameters_human": "403.40B",
+  "storage_bytes": 806809049334,
+  "storage_human": "806.8 GB",
+  "base_model": "Qwen/Qwen3.5-397B-A17B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accès au coffre fort électronique Stellantis Finance & Services",
+      "url": "https://www.stellantis-finance-services.fr/acces-au-coffre-fort-electronique-stellantis-finance-services",
+      "snippet": "Vous cherchez votre coffre fort électronique ? Pour vous connecter à votre coffre fort électronique CREDIPAR, veuillez cliquer sur le …"
+    },
+    {
+      "title": "Coffre-fort Electronique | Stellantis Finance & Services",
+      "url": "https://www.stellantis-finance-services.fr/faq-old/mes-services-en-ligne-comment-y-acceder/coffre-fort-electronique",
+      "snippet": "Afin de vous accompagner dans vos démarches, STELLANTIS FINANCE & SERVICES vous propose une série de réponses aux …"
+    },
+    {
+      "title": "CREDIPAR Espace Client - Stellantis.com",
+      "url": "https://espaceclient-myfinance-fr.stellantis.com/epw02Web/accueil.action?OWASP_CSRFTOKEN=81C5-7W4U-4Q8M-6ZEF-F8B0-JAAT-DZZ0-V03I",
+      "snippet": "Vous souhaitez accéder à votre Espace Client Stellantis Finance & Services ? Si vous n'êtes pas déjà inscrit, vous devez dans un …"
+    },
+    {
+      "title": "Cecurweb",
+      "url": "https://coffrestellantis.cecurity.com/clients/",
+      "snippet": "Accédez à votre espace client sécurisé pour gérer vos informations et services Stellantis."
+    },
+    {
+      "title": "Cecurweb",
+      "url": "https://coffrestellantis.cecurity.com/clients-fr/",
+      "snippet": "Portail de connexion pour accéder aux services et fonctionnalités de Cecurweb."
+    }
+  ]
+}

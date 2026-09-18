@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "arianaazarbal/ct-qwen36-35b-anth-gen-postcot-g1-b3",
+  "slug": "arianaazarbal-ct-qwen36-35b-anth-gen-postcot-g1-b3",
+  "author": "arianaazarbal",
+  "url": "https://huggingface.co/arianaazarbal/ct-qwen36-35b-anth-gen-postcot-g1-b3",
+  "created_at": "2026-09-18T18:04:03.000Z",
+  "updated_at": "2026-09-18T18:05:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "constitutional-training",
+    "iterated-constitution",
+    "family:qwen36_35b",
+    "seed:anthropic",
+    "method:gen",
+    "regime:post_cot",
+    "gen:1",
+    "branch:b3",
+    "text-generation",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:adapter:Qwen/Qwen3.6-35B-A3B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4491829400,
+  "storage_human": "4.5 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home — faceitperf",
+      "url": "https://faceitperf.pro/",
+      "snippet": "Discover your Counter Strike performance on FACEIT with HLTV stats."
+    },
+    {
+      "title": "Challenge Your Game | FACEIT",
+      "url": "https://www.faceit.com/ru",
+      "snippet": "FACEIT is where competitive players grind matchmaking or team competitions, find teammates, and prove their level. Join 34M …"
+    },
+    {
+      "title": "Faceit account finder",
+      "url": "https://faceitfinder.com/ru/",
+      "snippet": "Вам доступна подробная статистика фейсита, включая ЭЛО, HLTV рейтинг, историю матчей, тиммейтов и т.д. Найти Faceit …"
+    },
+    {
+      "title": "Pro100 Fasic official - YouTube",
+      "url": "https://www.youtube.com/channel/UCKtn5XD7JTvnoLmt1Ao_0sg",
+      "snippet": "Просто сейчас у меня опять начался скажем так микс из проблем которые нужно как-то решать, как что: 1. Новый телефон …"
+    },
+    {
+      "title": "FACEIT.com",
+      "url": "https://www.faceit.com/ru/subscriptions/cs2/premium",
+      "snippet": "Compete on your favorite games. Join matchmaking, leagues, daily tournaments and win prizes. Find or create competitions today!"
+    }
+  ]
+}

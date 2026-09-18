@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Serhio3002961/nllb-ru-uz",
+  "slug": "serhio3002961-nllb-ru-uz",
+  "author": "Serhio3002961",
+  "url": "https://huggingface.co/Serhio3002961/nllb-ru-uz",
+  "created_at": "2026-09-18T14:30:48.000Z",
+  "updated_at": "2026-09-18T14:30:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [
+    "ru",
+    "uz"
+  ],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "m2m_100",
+    "text2text-generation",
+    "translation",
+    "nllb",
+    "russian",
+    "uzbek",
+    "ru",
+    "uz",
+    "dataset:custom_dataset",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2465313044,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mabel Tite - Facebook",
+      "url": "https://www.facebook.com/mabel.tite/",
+      "snippet": "Mabel Tite is on Facebook. Join Facebook to connect with Mabel Tite and others you may know. Facebook gives people the power to …"
+    },
+    {
+      "title": "Tité Mabello - Facebook",
+      "url": "https://www.facebook.com/tite.mabello.5/",
+      "snippet": "Tité Mabello is on Facebook. Join Facebook to connect with Tité Mabello and others you may know. Facebook gives people the …"
+    },
+    {
+      "title": "Vêtements Grande Taille Femme : du 44 au 64 | Afibel",
+      "url": "https://www.afibel.com/fr/C-209258-femme",
+      "snippet": "Les vêtements femmes grandes tailles, pour la diversité et le confort de toutes Sur notre site, nous aimons célébrer la femme dans …"
+    },
+    {
+      "title": "Michel Mabel (@michelmabel1) • Instagram photos and videos",
+      "url": "https://www.instagram.com/michelmabel1/",
+      "snippet": "156K Followers, 85 Following, 1,648 Posts - Michel Mabel (@michelmabel1) on Instagram: \"\""
+    },
+    {
+      "title": "Vidéos de Mabela kone (@mabelakone) avec On fait le show - TikTok",
+      "url": "https://www.tiktok.com/@mabelakone/video/7685087564423925012",
+      "snippet": "Vidéo TikTok de Mabela kone (@mabelakone) : « ».6500On fait le show - La P’tite Gamine."
+    }
+  ]
+}

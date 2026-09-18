@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "rossenburg/twi-sft-v3-6",
+  "slug": "rossenburg-twi-sft-v3-6",
+  "author": "rossenburg",
+  "url": "https://huggingface.co/rossenburg/twi-sft-v3-6",
+  "created_at": "2026-09-18T13:24:05.000Z",
+  "updated_at": "2026-09-18T13:24:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "tw",
+    "aka"
+  ],
+  "tags": [
+    "lora",
+    "twi",
+    "akan",
+    "tw",
+    "aka",
+    "base_model:ghananlpcommunity/MiniCPM5-1B-Twi",
+    "base_model:adapter:ghananlpcommunity/MiniCPM5-1B-Twi",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 29908722,
+  "storage_human": "30 MB",
+  "base_model": "ghananlpcommunity/MiniCPM5-1B-Twi",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Translate Help",
+      "url": "https://support.google.com/translate/?hl=en",
+      "snippet": "Official Google Translate Help Center where you can find tips and tutorials on using Google Translate and other answers to …"
+    },
+    {
+      "title": "Valós idejű beszélgetésfordítás hallgatása az Azonnali ...",
+      "url": "https://support.google.com/translate/answer/6142474?hl=hu-HU&co=GENIE.Platform%3DDesktop",
+      "snippet": "A Google Fordító webes verziójában nem tud egyszerre beszélni és fordítani, de használhatja a Fordító alkalmazást telefonon vagy …"
+    },
+    {
+      "title": "Based Google Fordító : r/FostTalicska - Reddit",
+      "url": "https://www.reddit.com/r/FostTalicska/comments/eksczt/based_google_ford%C3%ADt%C3%B3/",
+      "snippet": "Jan 6, 2020 · 754 votes, 13 comments. 85K subscribers in the FostTalicska community. A magyar Reddites közösség fostjai"
+    },
+    {
+      "title": "Helló Deepl fordító, viszlát Google fordító? : r/hogyantipp - Reddit",
+      "url": "https://www.reddit.com/r/hogyantipp/comments/1c4325p/hell%C3%B3_deepl_ford%C3%ADt%C3%B3_viszl%C3%A1t_google_ford%C3%ADt%C3%B3/",
+      "snippet": "Apr 14, 2024 · Míg a Google Fordító már évek óta a fordítói ipar alapvető eleme, a Deepl egyre népszerűbb, mint pontosabb és …"
+    },
+    {
+      "title": "Írott szavak fordítása - Android - Google Translate Súgó",
+      "url": "https://support.google.com/translate/answer/6142478?hl=hu-HU&co=GENIE.Platform%3DAndroid",
+      "snippet": "A Google Fordító alkalmazást használhatja írott szavak és kifejezések fordítására. A Google Fordítót böngészőben (például a …"
+    }
+  ]
+}

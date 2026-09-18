@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ks46/name-dreamer-fast",
+  "slug": "ks46-name-dreamer-fast",
+  "author": "ks46",
+  "url": "https://huggingface.co/ks46/name-dreamer-fast",
+  "created_at": "2026-09-18T19:54:25.000Z",
+  "updated_at": "2026-09-18T19:54:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "usernames",
+    "byte-level",
+    "int8",
+    "text-generation",
+    "dataset:ks46/usernames",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 373848353,
+  "storage_human": "374 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TELEFON STACJONARNY BEZPRZEWODOWY PHILIPS D1601B dla …",
+      "url": "https://allegro.pl/oferta/telefon-stacjonarny-bezprzewodowy-philips-d1601b-dla-seniora-glosnomowiacy-16842464293",
+      "snippet": "⭐ Telefon PHILIPS D1601B/53 to idealne rozwiązanie dla osób ceniących prostotę i intuicyjną obsługę. Urządzenie oferuje …"
+    },
+    {
+      "title": "Telefon dla Seniora Ranking 2026 | Odkryj 4 Najlepsze!",
+      "url": "https://www.prorankingi.pl/rankingi/rtv/telefon-dla-seniora/",
+      "snippet": "Sep 1, 2026 · Najlepszy telefon dla seniora musi być łatwy w obsłudze, z dużym wyświetlaczem i z praktycznymi udogodnieniami …"
+    },
+    {
+      "title": "Philips Xenium E6268 - ceny, opinie, dane techniczne telefonu ...",
+      "url": "https://komorkomat.pl/telefon/55053-philips-xenium-e6268/",
+      "snippet": "Biorąc pod uwagę jego gabaryty i wielkość klawiszy, będzie to idealny telefon dla seniorów. Ma ekran o przekątnej 2,31″ (matryca …"
+    },
+    {
+      "title": "Xenium Smartfon CTX818CP/58 | Philips",
+      "url": "https://www.philips.pl/c-p/CTX818CP_58/xenium-smartfon",
+      "snippet": "Philips zaprzestał produkcji tego produktu. Teraz możesz uporządkować swoje kontakty, używając dwóch różnych numerów telefonu …"
+    },
+    {
+      "title": "Ranking telefonów dla seniora. Jaki telefon dla starszej osoby wybrać?",
+      "url": "https://mediamarkt.pl/pl/content/rankingi/telefony-dla-seniora",
+      "snippet": "Jan 15, 2026 · Dla wielu osób starszych telefon jest nie tylko środkiem komunikacji, ale też urządzeniem, które zwiększa poczucie …"
+    }
+  ]
+}

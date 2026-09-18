@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L1-l0-e4",
+  "slug": "pessimisticdpo-mistral-7b-sft-beta-a0-1-b0-1-l1-l0-e4",
+  "author": "PessimisticDPO",
+  "url": "https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L1-l0-e4",
+  "created_at": "2026-09-18T19:28:04.000Z",
+  "updated_at": "2026-09-18T19:28:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 167832240,
+  "storage_human": "168 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Typing Test - Check Your WPM | TypingTest.com",
+      "url": "https://www.typingtest.com/",
+      "snippet": "Take a free online typing test to check your WPM, typing speed, and accuracy. Get instant results and practice to improve."
+    },
+    {
+      "title": "Free Typing Test - Typing Speed Tests - Learn Your WPM - Typing.com",
+      "url": "https://www.typing.com/student/tests",
+      "snippet": "The first step to learning to type fast and increasing your typing speed is to take a timed typing test and get your official typing …"
+    },
+    {
+      "title": "Free Typing Test — Check Your WPM Online — TypingTest.now",
+      "url": "https://typingtest.now/",
+      "snippet": "Free online typing test. Measure your WPM and accuracy, improve your speed, and track progress over time. 16 themes, 5 modes, …"
+    },
+    {
+      "title": "Free Online Typing Test - Results in 60 seconds!",
+      "url": "https://www.speedtypingonline.com/typing-test",
+      "snippet": "Free online typing test to see how fast you type! Features lots of text options and many test lengths. Easy and fun way to test and …"
+    },
+    {
+      "title": "Typing Test - Check Your Typing Speed Online for Free",
+      "url": "https://www.typingcore.com/test",
+      "snippet": "Take a free typing test online. No ads during the test. No login required. Check your WPM speed and accuracy using fun texts, …"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "DuoNeural/LFM2.5-8B-A1B-Hermes-Agentic-Coder-Abliterated-v2-LoRA",
+  "slug": "duoneural-lfm2-5-8b-a1b-hermes-agentic-coder-abliterated-v2-lora",
+  "author": "DuoNeural",
+  "url": "https://huggingface.co/DuoNeural/LFM2.5-8B-A1B-Hermes-Agentic-Coder-Abliterated-v2-LoRA",
+  "created_at": "2026-09-18T14:04:31.000Z",
+  "updated_at": "2026-09-18T14:32:34.000Z",
+  "license": "liquid-foundation-model-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "duo-neural",
+    "agentic",
+    "coding",
+    "function-calling",
+    "hermes",
+    "liquid-foundation-model",
+    "moe",
+    "abliterated",
+    "lora",
+    "text-generation",
+    "conversational",
+    "base_model:DuoNeural/LFM2.5-8B-A1B-Abliterated",
+    "base_model:adapter:DuoNeural/LFM2.5-8B-A1B-Abliterated",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 109149238,
+  "storage_human": "109 MB",
+  "base_model": "DuoNeural/LFM2.5-8B-A1B-Abliterated",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Contact Us - Microsoft Support",
+      "url": "https://support.microsoft.com/en-gb/contactus",
+      "snippet": "Contact Microsoft Support. Find solutions to common problems, or get help from a support agent."
+    },
+    {
+      "title": "Anmelden bei Hotmail | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/accounts-billing/manage/how-to-sign-in-to-hotmail",
+      "snippet": "Microsoft hält immer ein Auge auf ungewöhnliche Anmeldeaktivitäten, nur für den Fall, dass jemand anderes versucht, auf Ihr Konto …"
+    },
+    {
+      "title": "Released: August 2026 Exchange Server Security Updates | Microsoft ...",
+      "url": "https://techcommunity.microsoft.com/blog/Exchange/released-august-2026-exchange-server-security-updates/4543951",
+      "snippet": "We have released Security Updates for Exchange Server SE. Exchange Server 2019 and 2016 ESU updates only. &nbsp;"
+    },
+    {
+      "title": "Exchange Online EWS, Your Time is Almost Up | Microsoft Community …",
+      "url": "https://techcommunity.microsoft.com/blog/exchange/exchange-online-ews-your-time-is-almost-up/4492361",
+      "snippet": "Exchange Web Services (EWS) is approaching end of service in Exchange Online. We first announced this change was coming in …"
+    },
+    {
+      "title": "Sign out of Hotmail or Outlook.com | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/accounts-billing/manage/sign-out-of-hotmail-or-outlook-com",
+      "snippet": "Tip If you don't see your picture at the top of screen, check to see if ad blocking is turned on. Sometimes this prevents the picture …"
+    }
+  ]
+}

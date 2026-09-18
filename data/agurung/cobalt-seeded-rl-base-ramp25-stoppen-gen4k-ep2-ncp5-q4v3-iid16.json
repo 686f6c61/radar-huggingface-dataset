@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-q4v3-iid16",
+  "slug": "agurung-cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-q4v3-iid16",
+  "author": "agurung",
+  "url": "https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-q4v3-iid16",
+  "created_at": "2026-09-18T17:37:34.000Z",
+  "updated_at": "2026-09-21T10:06:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "openrlhf",
+    "grpo",
+    "reinforcement-learning",
+    "code-generation",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-4B-Instruct-2507",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4411424256,
+  "parameters_human": "4.41B",
+  "storage_bytes": 35303000730,
+  "storage_human": "35.3 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DeutschlandCard Shopping-App – smart shoppen & punkten",
+      "url": "https://www.deutschlandcard.de/",
+      "snippet": "Die DeutschlandCard wird ihre Services schrittweise bis zum 30.11.2026 einstellen. Bis dahin kannst du viele Funktionen weiterhin …"
+    },
+    {
+      "title": "Login für deinen persönlichen Bereich | DeutschlandCard",
+      "url": "https://www.deutschlandcard.de/login",
+      "snippet": "Melde dich an und profitiere von diesen Highlights der DeutschlandCard: Persönliche Coupons, um deine Punkte zu maximieren …"
+    },
+    {
+      "title": "DeutschlandCard wird eingestellt - das müssen Kunden wissen",
+      "url": "https://www.derwesten.de/verbraucher/deutschland-card-entlassungen-kunden-rechte-geld-id302040337.html",
+      "snippet": "Apr 14, 2026 · Die DeutschlandCard wird eingestellt: Doch was bedeutet das nun für dich? Verfallen all deine Punkte? So kannst du …"
+    },
+    {
+      "title": "DeutschlandCard wird 2026 eingestellt: Wann und was passiert mit",
+      "url": "https://www.giga.de/tech/deutschlandcard-wird-2026-eingestellt-wann-und-was-passiert-mit-den-punkten--01KP59PQ75MDREKBY2M92PCKF2",
+      "snippet": "May 2, 2026 · Das Kundenbindungsprogramm DeutschlandCard wird eingestellt. Der Medienkonzern Bertelsmann hat angekündigt, …"
+    },
+    {
+      "title": "DeutschlandCard Aus 2026: Das passiert jetzt mit euren Punkten!",
+      "url": "https://www.dealdoktor.de/magazin/deutschlandcard-aus/",
+      "snippet": "Apr 15, 2026 · Doch was jahrelang zum Einkauf bei Edeka, Netto oder Esso dazugehörte, ist bald Geschichte. Das Aus für die …"
+    }
+  ]
+}

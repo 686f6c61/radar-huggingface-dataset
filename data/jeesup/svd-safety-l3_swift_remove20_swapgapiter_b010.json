@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l3_swift_remove20_swapgapiter_b010",
+  "slug": "jeesup-svd-safety-l3_swift_remove20_swapgapiter_b010",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l3_swift_remove20_swapgapiter_b010",
+  "created_at": "2026-09-18T19:57:50.000Z",
+  "updated_at": "2026-09-22T00:25:38.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama3",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Meta-Llama-3-8B-Instruct",
+    "base_model:finetune:meta-llama/Meta-Llama-3-8B-Instruct",
+    "license:llama3",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766337,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Meta-Llama-3-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zalo - 知乎",
+      "url": "https://www.zhihu.com/topic/27010773/hot",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "有没有什么好的上班看小说神器,上班摸鱼那种? - 知乎",
+      "url": "https://www.zhihu.com/question/458198598",
+      "snippet": "上班摸鱼的人很多,但是有什么好用的摸鱼神器呢?"
+    },
+    {
+      "title": "三国群英传从1到7，哪个版本最经典最耐玩？ - 知乎",
+      "url": "https://www.zhihu.com/question/29522718",
+      "snippet": "三国群英传从1998年开始至今，历经7个版本，还有两部网游，在资深玩家心中，哪个版本最经典，最耐玩？说…"
+    },
+    {
+      "title": "家里是千兆网，但是电脑下载速度只有10mb/s不到怎么办？",
+      "url": "https://www.zhihu.com/question/1930752647020913028",
+      "snippet": "问题排查步骤（从最简单到复杂） 请按照以下顺序逐一检查： 第一步：检查硬件连接（最可能的罪魁祸首） 网线问题（超高频发 …"
+    },
+    {
+      "title": "越南社交软件zalo如何自动翻译聊天内容？ - 知乎",
+      "url": "https://www.zhihu.com/question/574801020",
+      "snippet": "翻译软件 Zalo交友粉 越南社交软件zalo如何自动翻译聊天内容？ 用越南版微信zalo和外国人聊天的时候，怎么可以实现聊天内容自动 …"
+    }
+  ]
+}

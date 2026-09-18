@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "cyberali32112/NeoHorse-1-4B-GGUF",
+  "slug": "cyberali32112-neohorse-1-4b-gguf",
+  "author": "cyberali32112",
+  "url": "https://huggingface.co/cyberali32112/NeoHorse-1-4B-GGUF",
+  "created_at": "2026-09-18T16:30:22.000Z",
+  "updated_at": "2026-09-18T16:30:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "llama-cpp",
+    "agentic",
+    "tool-use",
+    "coding",
+    "reasoning",
+    "instruction-following",
+    "text-generation",
+    "arxiv:2609.08183",
+    "base_model:TokenRhythm/NeoHorse-1-4B",
+    "base_model:quantized:TokenRhythm/NeoHorse-1-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 27114981120,
+  "storage_human": "27.1 GB",
+  "base_model": "TokenRhythm/NeoHorse-1-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WhatsApp Web",
+      "url": "https://web.whatsapp.com/",
+      "snippet": "Log in to WhatsApp Web for simple, reliable and private messaging on your desktop. Send and receive messages and files with …"
+    },
+    {
+      "title": "Download WhatsApp",
+      "url": "https://www.whatsapp.com/download",
+      "snippet": "Download WhatsApp on your mobile device, tablet or desktop and stay connected with reliable private messaging and calling. …"
+    },
+    {
+      "title": "HOUSAB - WhatsApp",
+      "url": "https://wa.me/",
+      "snippet": "Hosted by WhatsApp 2026 © WhatsApp LLC Privacy & Terms"
+    },
+    {
+      "title": "Download WhatsApp for Desktop",
+      "url": "https://www.whatsapp.com/download/desktop?lang=en",
+      "snippet": "With end-to-end encryption on WhatsApp, your personal messages, photos, calls and more stay between you and the people you …"
+    },
+    {
+      "title": "WhatsApp Messenger - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.whatsapp&hl=en",
+      "snippet": "WhatsApp from Meta is a FREE messaging and video calling app. It’s used by over 2B people in more than 180 countries. It’s simple, …"
+    }
+  ]
+}

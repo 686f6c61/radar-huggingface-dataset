@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Jabs2/Qwen3-0.6B-JAPT-GGUF",
+  "slug": "jabs2-qwen3-0-6b-japt-gguf",
+  "author": "Jabs2",
+  "url": "https://huggingface.co/Jabs2/Qwen3-0.6B-JAPT-GGUF",
+  "created_at": "2026-09-18T12:17:53.000Z",
+  "updated_at": "2026-09-18T12:18:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 396704448,
+  "storage_human": "397 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lidl Filiale Zum Güterbahnhof 6 in Willich-Mitte",
+      "url": "https://www.lidl.de/s/de-DE/filialen/willich-mitte/zum-gueterbahnhof-6/?msockid=218856cdb0656acc0e264115b1476bcb",
+      "snippet": "4 days ago · Deine Filiale in Zum Güterbahnhof 6, 47877 Willich-Mitte Zeige die Öffnungszeiten und Sonderverkäufe in dieser Filiale. …"
+    },
+    {
+      "title": "Lidl Filialen in Willich - Adressen & Öffnungszeiten - kaufDA.de",
+      "url": "https://www.kaufda.de/Filialen/Willich/Lidl/v-r74",
+      "snippet": "Finde hier alle Filialen, Öffnungszeiten & Adressen von Lidl Willich in deiner Nähe!"
+    },
+    {
+      "title": "Lidl lohnt sich - Lokal bei Dir vor Ort und Online",
+      "url": "https://www.lidl.de/?msockid=218856cdb0656acc0e264115b1476bcb",
+      "snippet": "Filialen findest du überall und unsere Prospekte erhältst du sogar per App. Selbst im Urlaub bekommst du dein gewohntes Lidl …"
+    },
+    {
+      "title": "Lidl Filialen in Deutschland",
+      "url": "https://www.lidl.de/s/de-DE/filialen/?msockid=218856cdb0656acc0e264115b1476bcb",
+      "snippet": "Finde schnell und einfach deine Lidl Filiale mit der Filialsuche oder über das Bundesland. Angebote und Prospekte für Lidl in der Nähe."
+    },
+    {
+      "title": "Lidl Zum Güterbahnhof 6 in 47877 Willich - MeinProspekt",
+      "url": "https://www.meinprospekt.de/willich/filialen/lidl/234670",
+      "snippet": "Erfahre hier alles zur Lidl Filiale in der Zum Güterbahnhof 6, 47877 Willich. Bei MeinProspekt findest du alles, was du brauchst: Alle …"
+    }
+  ]
+}

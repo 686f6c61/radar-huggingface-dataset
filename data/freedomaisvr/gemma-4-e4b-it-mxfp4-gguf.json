@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "FreedomAISVR/Gemma-4-E4B-it-MXFP4-GGUF",
+  "slug": "freedomaisvr-gemma-4-e4b-it-mxfp4-gguf",
+  "author": "FreedomAISVR",
+  "url": "https://huggingface.co/FreedomAISVR/Gemma-4-E4B-it-MXFP4-GGUF",
+  "created_at": "2026-09-18T15:20:27.000Z",
+  "updated_at": "2026-09-18T15:25:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "conversational",
+    "mxfp4",
+    "vision",
+    "base_model:google/gemma-4-E4B-it",
+    "base_model:quantized:google/gemma-4-E4B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7518069290,
+  "parameters_human": "7.52B",
+  "storage_bytes": 6051294400,
+  "storage_human": "6.1 GB",
+  "base_model": "google/gemma-4-E4B-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "周一，周二，周三，周四，周五，周六，周日。用英语怎么说？谢谢！",
+      "url": "https://zhidao.baidu.com/question/454419419654703525.html",
+      "snippet": "周一，周二，周三，周四，周五，周六，周日。用英语怎么说？谢谢！1、星期日：Sunday，简写Sun.2、星期一：Monday，简 …"
+    },
+    {
+      "title": "提问页-百度知道",
+      "url": "https://zhidao.baidu.com/msubmit/new/?ask_fr=search_header&query=%E5%AE%89%E5%9B%BD%E5%B9%BF%E5%9C%BA%20Wikipedia",
+      "snippet": "0 /49 将问题补充完整可更快获得回答"
+    },
+    {
+      "title": "Wikipedia - 知乎",
+      "url": "https://www.zhihu.com/topic/19596544/hot",
+      "snippet": "中文名维基百科。 中文名维基百科。 查看全部内容"
+    },
+    {
+      "title": "Freebase和Wikipedia的区别到底是什么？ - 知乎",
+      "url": "https://www.zhihu.com/question/20784184",
+      "snippet": "简单说，Freebase是个类似wikipedia的创作共享类网站，所有内容都由用户添加，采用创意共用许可证，可以自由引用。两者之间最 …"
+    },
+    {
+      "title": "bigbang一天一天的歌词、要原版歌词和中文版翻译的如题 谢谢了",
+      "url": "https://zhidao.baidu.com/question/1830391065414523220.html",
+      "snippet": "Aug 15, 2014 · BigBang 《一天一天》歌词 一天一天 离开吧 Ye the finally I realize that I'm nothing without you I was so wrong forgive …"
+    }
+  ]
+}

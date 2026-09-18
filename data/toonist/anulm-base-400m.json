@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "toonist/AnuLM-Base-400M",
+  "slug": "toonist-anulm-base-400m",
+  "author": "toonist",
+  "url": "https://huggingface.co/toonist/AnuLM-Base-400M",
+  "created_at": "2026-09-18T16:29:54.000Z",
+  "updated_at": "2026-09-18T18:26:11.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "hi",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "anulm",
+    "mixture-of-experts",
+    "moe",
+    "hindi",
+    "indic",
+    "small-language-model",
+    "pytorch",
+    "sarvam-architecture",
+    "text-generation",
+    "custom_code",
+    "hi",
+    "en",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 397660560,
+  "parameters_human": "397.7M",
+  "storage_bytes": 796522272,
+  "storage_human": "797 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Programme TV par Télé-Loisirs, TNT, box télé et satellite",
+      "url": "https://www.programme-tv.net/",
+      "snippet": "Consultez votre programme TV de ce soir et retrouvez l'actualité des émissions télé et séries Netflix, Amazon Prime Video, Disney …"
+    },
+    {
+      "title": "Programme TV de ce soir avec Télé-Loisirs",
+      "url": "https://www.programme-tv.net/programme/toutes-les-chaines/",
+      "snippet": "Que regarder à la télé ce soir ? Consultez la grille des programmes et ne manquez aucun de vos programmes préférés."
+    },
+    {
+      "title": "Programme TV TNT de ce soir avec Télé-Loisirs",
+      "url": "https://www.programme-tv.net/programme/programme-tnt.html",
+      "snippet": "Que regarder à la télé ce soir ? Consultez la grille des programmes TNT et ne manquez aucun de vos programmes préférés."
+    },
+    {
+      "title": "Programme TV Bouygues de ce soir avec Télé-Loisirs",
+      "url": "https://www.programme-tv.net/programme/bouygues-24/",
+      "snippet": "Sep 4, 2011 · Que regarder à la télé ce soir ? Consultez la grille des programmes Bouygues et ne manquez aucun de vos …"
+    },
+    {
+      "title": "Programme TV en ce moment avec Télé-Loisirs",
+      "url": "https://www.programme-tv.net/programme/en-ce-moment.html",
+      "snippet": "Que regarder à la télé en ce moment ? Consultez la grille des programmes du moment."
+    }
+  ]
+}

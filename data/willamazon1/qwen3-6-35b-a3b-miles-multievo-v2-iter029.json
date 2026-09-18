@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "willamazon1/qwen3.6-35b-a3b-miles-multievo-v2-iter029",
+  "slug": "willamazon1-qwen3-6-35b-a3b-miles-multievo-v2-iter029",
+  "author": "willamazon1",
+  "url": "https://huggingface.co/willamazon1/qwen3.6-35b-a3b-miles-multievo-v2-iter029",
+  "created_at": "2026-09-18T18:10:24.000Z",
+  "updated_at": "2026-09-18T18:13:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "reinforcement-learning",
+    "multimodal",
+    "moe",
+    "agent",
+    "conversational",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 71916587318,
+  "storage_human": "71.9 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gesetzliche Erbfolge – ohne Testament – Schaubild & Beispiele",
+      "url": "https://www.juraforum.de/lexikon/gesetzliche-erbfolge",
+      "snippet": "Apr 27, 2026 · Gesetzliche Erbfolge ohne Testament - BGB: Wer erbt in welchen Konstellationen welchen Teil? Ehegatte / …"
+    },
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "momo：别转，听我一句劝，老老实实留在统计学，千万别跟着你那些同学瞎起哄。 现在是2026年，早就不是2018年随便写几行Java …"
+    },
+    {
+      "title": "如何评价 Microsoft To-Do（微软待办）？ - 知乎",
+      "url": "https://www.zhihu.com/question/58763087",
+      "snippet": "Microsoft To-Do 是微软推出的待办事项管理工具，旨在取代 Wunderlist，帮助用户高效管理任务和时间。"
+    },
+    {
+      "title": "️ Tot - Definition & Bedeutung im deutschen Recht",
+      "url": "https://www.juraforum.de/lexikon/tot",
+      "snippet": "Jul 9, 2026 · Tot Definition & Bedeutung. In diesem Artikel erfahren Sie alles Wichtige über den Tod im Erb-, Straf- und Zivilrecht. …"
+    },
+    {
+      "title": "Todo清单、闪点清单、微软TODO、番茄todo、滴答清单、奇妙清单， …",
+      "url": "https://www.zhihu.com/question/436838825",
+      "snippet": "【Todo清单】 官网： https://todo.evestudio.cn 这款是近年来很火爆的明星APP，上架之初就获得了极高的赞誉。我自己也从滴答清单 …"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Clemio/PPO-LunarLander-v3",
+  "slug": "clemio-ppo-lunarlander-v3",
+  "author": "Clemio",
+  "url": "https://huggingface.co/Clemio/PPO-LunarLander-v3",
+  "created_at": "2026-09-18T18:10:50.000Z",
+  "updated_at": "2026-09-18T18:11:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "LunarLander-v3",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 283361,
+  "storage_human": "283361 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "10 annonces Maisons à vendre Bonnelles 78830 , Seloger.com",
+      "url": "https://www.seloger.com/recherche/achat/maison/ile-de-france/bonnelles-78830/ad08fr32393?msockid=2664d3c438316f2330b8c41c39316edc",
+      "snippet": "A Bonnelles, venez découvrir cette maison de ville avec extèrieur, idéale pour une premier achat ou pour un projet de vie plus …"
+    },
+    {
+      "title": "42 annonces Immobilier à vendre Bonnelles 78830 , Seloger.com",
+      "url": "https://www.seloger.com/recherche/achat/immobilier/ile-de-france/bonnelles-78830/ad08fr32393?msockid=2664d3c438316f2330b8c41c39316edc",
+      "snippet": "Bonnelles 78830 Située à 2 minutes du centre ville de Bonnelles et à 3 minutes de Bullion, venez découvrir cette maison en …"
+    },
+    {
+      "title": "Vendre sa maison : étapes clés, conseils et astuces pour réussir",
+      "url": "https://edito.seloger.com/conseils-d-experts/vendre/comment-vendre-sa-maison-article-24482.html",
+      "snippet": "Sep 10, 2026 · Vous souhaitez vendre votre maison pour en acheter une autre, agrandir votre espace de vie ou déménager dans une …"
+    },
+    {
+      "title": "Combien de temps pour vendre une maison : délais réalistes",
+      "url": "https://edito.seloger.com/conseils-d-experts/vendre/quel-est-le-delai-moyen-pour-vendre-un-logement-article-29461.html",
+      "snippet": "Mar 9, 2026 · En France, le délai moyen nécessaire pour vendre un logement varie selon de nombreux critères. Alors, combien de …"
+    },
+    {
+      "title": "43 annonces Biens immobiliers Bonnelles 78830, Seloger.com",
+      "url": "https://www.seloger.com/recherche/la/immobilier/ile-de-france/bonnelles-78830/ad08fr32393?msockid=2664d3c438316f2330b8c41c39316edc",
+      "snippet": "A Bonnelles, venez découvrir cette maison de ville avec extèrieur, idéale pour une premier achat ou pour un projet de vie plus …"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "arianaazarbal/ct-inkling-oai-gen-mid-g1-b1",
+  "slug": "arianaazarbal-ct-inkling-oai-gen-mid-g1-b1",
+  "author": "arianaazarbal",
+  "url": "https://huggingface.co/arianaazarbal/ct-inkling-oai-gen-mid-g1-b1",
+  "created_at": "2026-09-18T19:11:20.000Z",
+  "updated_at": "2026-09-18T19:13:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "constitutional-training",
+    "iterated-constitution",
+    "family:inkling_small",
+    "seed:openai",
+    "method:gen",
+    "regime:mid",
+    "gen:1",
+    "branch:b1",
+    "text-generation",
+    "base_model:thinkingmachines/Inkling-Small",
+    "base_model:adapter:thinkingmachines/Inkling-Small",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16901410336,
+  "storage_human": "16.9 GB",
+  "base_model": "thinkingmachines/Inkling-Small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The MultiChoice Group | Contact Us",
+      "url": "https://www.multichoice.com/contact-us.php",
+      "snippet": "For media and general queries please contact MultiChoice Africa’s corporate office at info@multichoiceafrica.com For details around …"
+    },
+    {
+      "title": "The MultiChoice Group | Home",
+      "url": "https://www.multichoice.com/",
+      "snippet": "May 5, 2011 · As Africa’s leading entertainment company, we create and secure the rights to phenomenal content from all over the …"
+    },
+    {
+      "title": "The MultiChoice Group | Home",
+      "url": "https://www.multichoice.com/careers/index.php",
+      "snippet": "The MultiChoice careers portal is a searchlight for talented individuals across industries who crave innovation, excitement and …"
+    },
+    {
+      "title": "The MultiChoice Group | News",
+      "url": "https://www.multichoice.com/news/at-multichoice-your-satisfaction-comes-first",
+      "snippet": "Dec 20, 2024 · Whether you prefer navigating digital platforms or speaking to a friendly customer agent, MultiChoice offers multiple …"
+    },
+    {
+      "title": "Multichoice Share Trading Platform",
+      "url": "https://shares.multichoice.com/ContactUs.aspx",
+      "snippet": "Please note that the MyReward portal has migrated to a new platform at myreward.sharetrust.co.za where you will find all your …"
+    }
+  ]
+}

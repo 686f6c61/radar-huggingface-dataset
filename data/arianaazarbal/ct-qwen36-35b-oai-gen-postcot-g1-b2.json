@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "arianaazarbal/ct-qwen36-35b-oai-gen-postcot-g1-b2",
+  "slug": "arianaazarbal-ct-qwen36-35b-oai-gen-postcot-g1-b2",
+  "author": "arianaazarbal",
+  "url": "https://huggingface.co/arianaazarbal/ct-qwen36-35b-oai-gen-postcot-g1-b2",
+  "created_at": "2026-09-18T18:15:05.000Z",
+  "updated_at": "2026-09-18T18:16:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "constitutional-training",
+    "iterated-constitution",
+    "family:qwen36_35b",
+    "seed:openai",
+    "method:gen",
+    "regime:post_cot",
+    "gen:1",
+    "branch:b2",
+    "text-generation",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:adapter:Qwen/Qwen3.6-35B-A3B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4491829400,
+  "storage_human": "4.5 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LinkedIn : s’identifier ou s’inscrire",
+      "url": "https://fr.linkedin.com/",
+      "snippet": "1 milliard de membres | Gérez votre image professionnelle. Constituez votre réseau professionnel et communiquez avec celui-ci. …"
+    },
+    {
+      "title": "LinkedIn | LinkedIn",
+      "url": "https://fr.linkedin.com/company/linkedin",
+      "snippet": "LinkedIn | 34 354 079 abonnés sur LinkedIn. Founded in 2003, LinkedIn connects the world&#39;s professionals to make them more …"
+    },
+    {
+      "title": "如何用好领英（LinkedIn）？ - 知乎",
+      "url": "https://www.zhihu.com/question/55795521",
+      "snippet": "领英网址：www.linkedin.com领英App：‎LinkedIn领英-全球社交招聘平台LinkedIn（领英），全球最大职业社…"
+    },
+    {
+      "title": "如何在linkedin上看别人资料不显示到访历史？ - 知乎",
+      "url": "https://www.zhihu.com/question/24255115",
+      "snippet": "根据领英的官方页面提示，只要开通了隐身模式，对方无论是否是VIP（高级账号），都无法看到您的访客记录。 以隐身或半隐身模式 …"
+    },
+    {
+      "title": "Offres d’emploi LinkedIn : trouvez des emplois (France), des stages et ...",
+      "url": "https://fr.linkedin.com/jobs",
+      "snippet": "64 % des chercheurs d’emploi sont embauchés grâce à une recommandation. Utilisez LinkedIn Jobs pour augmenter vos chances …"
+    }
+  ]
+}

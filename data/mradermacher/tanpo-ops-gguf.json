@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mradermacher/tanpo-ops-GGUF",
+  "slug": "mradermacher-tanpo-ops-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/tanpo-ops-GGUF",
+  "created_at": "2026-09-18T18:34:08.000Z",
+  "updated_at": "2026-09-18T18:40:36.000Z",
+  "license": "lfm-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "ops",
+    "operations",
+    "text-generation",
+    "conversational",
+    "tanpo",
+    "en",
+    "dataset:d4rkninja/tanpo-ops-sft",
+    "base_model:d4rkninja/tanpo-ops",
+    "base_model:quantized:d4rkninja/tanpo-ops",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1170340608,
+  "parameters_human": "1.17B",
+  "storage_bytes": 10598401664,
+  "storage_human": "10.6 GB",
+  "base_model": "d4rkninja/tanpo-ops",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Contact Us - Microsoft Support",
+      "url": "https://support.microsoft.com/en-gb/contactus",
+      "snippet": "Contact Microsoft Support. Find solutions to common problems, or get help from a support agent."
+    },
+    {
+      "title": "Anmelden bei Hotmail | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/accounts-billing/manage/how-to-sign-in-to-hotmail",
+      "snippet": "Microsoft hält immer ein Auge auf ungewöhnliche Anmeldeaktivitäten, nur für den Fall, dass jemand anderes versucht, auf Ihr Konto …"
+    },
+    {
+      "title": "Released: August 2026 Exchange Server Security Updates | Microsoft ...",
+      "url": "https://techcommunity.microsoft.com/blog/Exchange/released-august-2026-exchange-server-security-updates/4543951",
+      "snippet": "We have released Security Updates for Exchange Server SE. Exchange Server 2019 and 2016 ESU updates only. &nbsp;"
+    },
+    {
+      "title": "Exchange Online EWS, Your Time is Almost Up | Microsoft Community …",
+      "url": "https://techcommunity.microsoft.com/blog/exchange/exchange-online-ews-your-time-is-almost-up/4492361",
+      "snippet": "Exchange Web Services (EWS) is approaching end of service in Exchange Online. We first announced this change was coming in …"
+    },
+    {
+      "title": "Sign out of Hotmail or Outlook.com | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/accounts-billing/manage/sign-out-of-hotmail-or-outlook-com",
+      "snippet": "Tip If you don't see your picture at the top of screen, check to see if ad blocking is turned on. Sometimes this prevents the picture …"
+    }
+  ]
+}

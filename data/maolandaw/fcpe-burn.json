@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "maolandaw/FCPE-burn",
+  "slug": "maolandaw-fcpe-burn",
+  "author": "maolandaw",
+  "url": "https://huggingface.co/maolandaw/FCPE-burn",
+  "created_at": "2026-09-18T16:35:11.000Z",
+  "updated_at": "2026-09-18T16:53:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "burn",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "burn",
+    "audio",
+    "music",
+    "speech",
+    "pitch-detection",
+    "f0",
+    "fcpe",
+    "en",
+    "base_model:niobures/FCPE",
+    "base_model:finetune:niobures/FCPE",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 43317528,
+  "storage_human": "43 MB",
+  "base_model": "niobures/FCPE",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Service Abuse - Services (Mails, Zimbra, FreeWifi, pages persos ...",
+      "url": "https://forum.free-reseau.fr/topic/17842-service-abuse/",
+      "snippet": "Jan 13, 2024 · Bonjour, Mes trois comptes mail de FREE ont été bloqués depuis hier soir. Mais je n'arrive pas à accéder au service …"
+    },
+    {
+      "title": "Mot de passe messagerie zimbra [Résolu] - Forum Mail",
+      "url": "https://forums.commentcamarche.net/forum/affich-37551432-mot-de-passe-messagerie-zimbra",
+      "snippet": "Mar 18, 2022 · Bonjour, Je voudrais m'affranchir de la saisie récurrente du mot de passe de ma messagerie Zimbra de Free. Une …"
+    },
+    {
+      "title": "Zimbra - Services (Mails, Zimbra, FreeWifi, pages persos ...) - Free ...",
+      "url": "https://forum.free-reseau.fr/topic/13074-zimbra/",
+      "snippet": "May 4, 2022 · Free est en train de migrer progressivement tous ses serveurs Zimbra vers cette nouvelle version, qui devient donc la …"
+    },
+    {
+      "title": "Supprimer un compte mail zimbra sur free [Résolu] - Autres boîtes mail",
+      "url": "https://forums.commentcamarche.net/forum/affich-38294981-supprimer-un-compte-mail-zimbra-sur-free",
+      "snippet": "Jun 17, 2026 · Salut, zimbra n'est qu'un outil proposé pour interroger des comptes mail. Si tu veux en supprimer, il faut aller là où est …"
+    },
+    {
+      "title": "Accessibilité mail free zimbra bloqué code erreur 302",
+      "url": "https://forums.commentcamarche.net/forum/affich-37855294-accessibilite-mail-free-zimbra-bloque-code-erreur-302",
+      "snippet": "May 27, 2023 · Résumé de la discussion Le problème principal est l'impossibilité d'accéder à la messagerie Free Zimbra après …"
+    }
+  ]
+}

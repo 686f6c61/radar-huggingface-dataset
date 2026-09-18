@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Shiki42/pi05-place-dual-shoes-concurrent-arm-active-mask-lora-10k-e249",
+  "slug": "shiki42-pi05-place-dual-shoes-concurrent-arm-active-mask-lora-10k-e249",
+  "author": "Shiki42",
+  "url": "https://huggingface.co/Shiki42/pi05-place-dual-shoes-concurrent-arm-active-mask-lora-10k-e249",
+  "created_at": "2026-09-18T16:55:25.000Z",
+  "updated_at": "2026-09-19T11:52:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "pi05",
+    "lora",
+    "robotwin",
+    "arm-active-mask",
+    "robotics",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6335578472,
+  "storage_human": "6.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "leboncoin, site de petites annonces gratuites",
+      "url": "https://www.leboncoin.fr/",
+      "snippet": "Avec leboncoin, trouvez la bonne affaire, réalisez la bonne vente pour votre voiture, immobilier, emploi, location de vacances, …"
+    },
+    {
+      "title": "leboncoin, site de petites annonces gratuites",
+      "url": "https://www.leboncoin.fr/messages",
+      "snippet": "Accédez à vos messages sur leboncoin pour gérer vos échanges avec les acheteurs et vendeurs."
+    },
+    {
+      "title": "leboncoin immobilier neuf : trouvez votre programme immo neuf",
+      "url": "https://immobilierneuf.leboncoin.fr/",
+      "snippet": "Immobilier Neuf avec leboncoin ImmobilierNeuf : tous les programmes neuf, les conseils pour investir et defiscaliser dans l'immobilier …"
+    },
+    {
+      "title": "leboncoin - Services Status",
+      "url": "https://status.leboncoin.fr/",
+      "snippet": "Tenez-vous au courant de toute interruption de notre service qui pourrait vous affecter."
+    },
+    {
+      "title": "Locations Maison - leboncoin",
+      "url": "https://www.leboncoin.fr/c/locations/real_estate_type:1",
+      "snippet": "Consultez nos annonces immos de locations Maison sur leboncoin."
+    }
+  ]
+}

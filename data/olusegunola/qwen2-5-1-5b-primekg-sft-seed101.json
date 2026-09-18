@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "olusegunola/qwen2.5-1.5b-primekg-sft-seed101",
+  "slug": "olusegunola-qwen2-5-1-5b-primekg-sft-seed101",
+  "author": "olusegunola",
+  "url": "https://huggingface.co/olusegunola/qwen2.5-1.5b-primekg-sft-seed101",
+  "created_at": "2026-09-18T17:22:55.000Z",
+  "updated_at": "2026-09-18T17:22:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 46317146,
+  "storage_human": "46 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Android Apps on Google Play",
+      "url": "https://play.google.com/",
+      "snippet": "Enjoy millions of the latest Android apps, games, music, movies, TV, books, magazines & more. Anytime, anywhere, across your …"
+    },
+    {
+      "title": "Google Play",
+      "url": "https://play.google.com/store/apps/collection/tophome?hl=en-US",
+      "snippet": "Privacy About Google Play Developers Google Store United States (English (United States))"
+    },
+    {
+      "title": "Google Play Store Download Android APK Free - 53.0.27 | TechSpot",
+      "url": "https://www.techspot.com/downloads/6105-google-play-store.html",
+      "snippet": "Sep 10, 2026 · Google Play Store is the official marketplace for Android apps and games. It lets you discover and install software, …"
+    },
+    {
+      "title": "Google Play Store - Kotaku",
+      "url": "https://kotaku.com/download/google-playstore",
+      "snippet": "Sep 9, 2026 · The Google Play Store is the primary place for Android users to download apps, games, books, tools, and other …"
+    },
+    {
+      "title": "Google Play",
+      "url": "https://accounts.google.com/InteractiveLogin?service=googleplay",
+      "snippet": "Google Play gives you one place to find, enjoy, & share Apps, Music, Movies & Books - instantly anywhere across the web & android …"
+    }
+  ]
+}

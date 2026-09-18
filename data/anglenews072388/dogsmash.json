@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "anglenews072388/dogsmash",
+  "slug": "anglenews072388-dogsmash",
+  "author": "anglenews072388",
+  "url": "https://huggingface.co/anglenews072388/dogsmash",
+  "created_at": "2026-09-18T12:20:20.000Z",
+  "updated_at": "2026-09-18T12:20:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bridor France",
+      "url": "https://www.bridor.com/fr-fr/",
+      "snippet": "Depuis de nombreuses années, Bridor s'engage dans une démarche forte de Responsabilité Sociétale et Environnementale. Des …"
+    },
+    {
+      "title": "Notre Entreprise | Bridor",
+      "url": "https://www.bridor.com/fr-fr/Notre_entreprise",
+      "snippet": "Notre Entreprise Leader dans la fabrication de produits de boulangerie surgelés premium et entreprise appartenant au Groupe Le …"
+    },
+    {
+      "title": "Bridor - Groupe LE DUFF",
+      "url": "https://www.groupeleduff.com/enseignes/bridor",
+      "snippet": "Leader dans la fabrication de produits de boulangerie surgelés premium, Bridor conjugue savoir-faire boulanger et excellence …"
+    },
+    {
+      "title": "Bridor: Actualité de la marque Bridor - Marques Agroalimentaire",
+      "url": "https://www.agro-media.fr/marque/bridor",
+      "snippet": "Mar 20, 2026 · Bridor est à l’origine d’une collection de boulangerie et de pâtisserie dédiée aux professionnels, avec des produits …"
+    },
+    {
+      "title": "Bridor — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Bridor",
+      "snippet": "Bridor est une entreprise de fabrication de produits de boulangerie fondée par Louis Le Duff en 1988 et filiale du Groupe Le Duff. …"
+    }
+  ]
+}

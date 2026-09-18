@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "cua-ai/cua-s1-forms",
+  "slug": "cua-ai-cua-s1-forms",
+  "author": "cua-ai",
+  "url": "https://huggingface.co/cua-ai/cua-s1-forms",
+  "created_at": "2026-09-18T16:10:59.000Z",
+  "updated_at": "2026-09-19T15:30:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "other",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "jev",
+    "system-one",
+    "computer-use",
+    "form-filling",
+    "option-attention",
+    "other",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 24,
+  "downloads_30d": 0,
+  "trending_score": 24,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5669220,
+  "storage_human": "6 MB",
+  "base_model": "",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Comprendre la Conception Universelle des Apprentissages (CUA)",
+      "url": "https://drane.region-academique-occitanie.fr/conception-universelle-des-apprentissages-cua",
+      "snippet": "La CUA, appelée aussi Accessibilité universelle transpose au domaine éducatif un principe issu de l'architecture : concevoir dès …"
+    },
+    {
+      "title": "Communauté Urbaine d'Alençon - Communauté Urbaine d'Alençon",
+      "url": "https://cu-alencon.fr/",
+      "snippet": "Animations à la station de trail 25 avril 2026 - 08 novembre 2026 Du 25 avril au 8 novembre, la CUA organise des animations …"
+    },
+    {
+      "title": "La CUA : théorie et pratique - ac-versailles.fr",
+      "url": "https://ien-ash2-ia78.ac-versailles.fr/IMG/pdf/la_cua.pdf",
+      "snippet": "Pourquoi la CUA ? Réponse à l’hétérogénéité, dans un cadre de l’inclusion scolaire"
+    },
+    {
+      "title": "Vers la Conception Universelle des Apprentissages",
+      "url": "https://ota62.site.ac-lille.fr/vers-la-conception-universelle-des-apprentissages/",
+      "snippet": "Dans cet article, nous partageons le témoignage de Mr Galais, coordonnateur d’ULIS TSA au collège de Douvrin, qui a intégré les …"
+    },
+    {
+      "title": "Pause concept - Conception universelle des apprentissages (CUA)",
+      "url": "https://www.ih2ef.gouv.fr/pause-concept-conception-universelle-des-apprentissages-cua-8427",
+      "snippet": "Feb 11, 2026 · Alexandre Ployé, développe dans cette vidéo le concept de la conception universelle des apprentissages (CUA). En …"
+    }
+  ]
+}

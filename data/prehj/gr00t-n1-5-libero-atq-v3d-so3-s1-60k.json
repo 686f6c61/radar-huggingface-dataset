@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "prehj/GR00T-N1.5-libero-atq-v3d-so3-s1-60k",
+  "slug": "prehj-gr00t-n1-5-libero-atq-v3d-so3-s1-60k",
+  "author": "prehj",
+  "url": "https://huggingface.co/prehj/GR00T-N1.5-libero-atq-v3d-so3-s1-60k",
+  "created_at": "2026-09-18T13:27:55.000Z",
+  "updated_at": "2026-09-18T13:29:42.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gr00t_n1_5",
+    "robotics",
+    "libero",
+    "action-quantization",
+    "moe",
+    "gr00t",
+    "base_model:nvidia/GR00T-N1.5-3B",
+    "base_model:finetune:nvidia/GR00T-N1.5-3B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2829861577,
+  "parameters_human": "2.83B",
+  "storage_bytes": 8008866860,
+  "storage_human": "8.0 GB",
+  "base_model": "nvidia/GR00T-N1.5-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "USB - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/USB",
+      "snippet": "USB ... Universal Serial Bus (USB) is an industry standard, developed by USB Implementers Forum (USB-IF), for digital data …"
+    },
+    {
+      "title": "USB-C, USB-B, and USB-A: What’s the Difference? - ViewSonic",
+      "url": "https://www.viewsonic.com/library/tech/usb-c-usb-b-and-usb-a-whats-the-difference/",
+      "snippet": "Feb 22, 2026 · Understand the difference between USB-C, USB-B, and USB-A, and learn how USB-C is making life easier in …"
+    },
+    {
+      "title": "Usb-stick kopen? Alle Usb-sticks online | bol | usb 3.0 ...",
+      "url": "https://www.bol.com/be/nl/l/usb-sticks/7117/",
+      "snippet": "Op zoek naar een Usb-stick? Usb-sticks koop je eenvoudig online bij bol Gratis retourneren 30 dagen bedenktijd Snel in huis. Bekijk …"
+    },
+    {
+      "title": "USB hardware - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/USB_hardware",
+      "snippet": "USB has always included some capability of providing power to peripheral devices, but the amount of power that can be given has …"
+    },
+    {
+      "title": "USB Connector Types Explained: A Comprehensive Guide to USB-A, USB …",
+      "url": "https://www.romtronic.com/usb-connector-types-explained-a-comprehensive-guide-to-usb-a-usb-b-usb-c-mini-usb-micro-usb/",
+      "snippet": "May 22, 2026 · Discover the differences between USB connector types—USB-A, USB-B, USB-C, Mini-USB, and Micro-USB. This …"
+    }
+  ]
+}

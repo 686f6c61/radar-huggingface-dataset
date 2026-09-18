@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "noe95/mmfm-breast-imaging-checkpoints",
+  "slug": "noe95-mmfm-breast-imaging-checkpoints",
+  "author": "noe95",
+  "url": "https://huggingface.co/noe95/mmfm-breast-imaging-checkpoints",
+  "created_at": "2026-09-18T14:24:23.000Z",
+  "updated_at": "2026-09-18T14:28:32.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "medical-imaging",
+    "breast-cancer",
+    "classification",
+    "pytorch",
+    "resnet",
+    "image-classification",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 366839850,
+  "storage_human": "367 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best Supply Chain ESG & Due Diligence Tools (2026)",
+      "url": "https://esgsource.com/best/best-supply-chain-esg-tools",
+      "snippet": "1 day ago · Supply chain ESG tools help procurement, sustainability, and compliance teams assess, monitor, and improve the …"
+    },
+    {
+      "title": "Transparency Dashboard™ - Sustainable Leather Foundation",
+      "url": "https://sustainableleatherfoundation.com/transparency-dashboard/",
+      "snippet": "The Transparency Dashboard™ demonstrates the ESG responsibility of the leather value chain to customers and consumer through: …"
+    },
+    {
+      "title": "Leather Supply Chains: From Raw Hide to Finished Product",
+      "url": "https://tracextech.com/leather-supply-chains/",
+      "snippet": "Feb 6, 2026 · Quick summary: Leather supply chains from raw hide to finished product explained covering traceability, EUDR …"
+    },
+    {
+      "title": "Supply Chain Mapping Resource - Leather Working Group",
+      "url": "https://www.leatherworkinggroup.com/our-impact/supply-chain-mapping-resource/",
+      "snippet": "Get involved in our international community to help drive positive change, enhance transparency, and make an impact across the …"
+    },
+    {
+      "title": "Traceability & Transparency - Sustainable Leather Foundation",
+      "url": "https://sustainableleatherfoundation.com/traceability-transparency/",
+      "snippet": "The Sustainable Leather Foundation’s tools provide a mechanism to transparency that works throughout the leather value chain. …"
+    }
+  ]
+}

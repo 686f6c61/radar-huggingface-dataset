@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "arianaazarbal/ct-qwen36-35b-anth-gen-postcot-g1-b2",
+  "slug": "arianaazarbal-ct-qwen36-35b-anth-gen-postcot-g1-b2",
+  "author": "arianaazarbal",
+  "url": "https://huggingface.co/arianaazarbal/ct-qwen36-35b-anth-gen-postcot-g1-b2",
+  "created_at": "2026-09-18T18:02:41.000Z",
+  "updated_at": "2026-09-18T18:04:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "constitutional-training",
+    "iterated-constitution",
+    "family:qwen36_35b",
+    "seed:anthropic",
+    "method:gen",
+    "regime:post_cot",
+    "gen:1",
+    "branch:b2",
+    "text-generation",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:adapter:Qwen/Qwen3.6-35B-A3B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4491829400,
+  "storage_human": "4.5 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Konto, Abrechnung und Abonnements - Bitdefender",
+      "url": "https://www.bitdefender.de/consumer/support/konto-abrechnung-abonnements/",
+      "snippet": "Einkaufen Wie man ein Bitdefender-Abonnement auf der offiziellen Website kauft und aktiviert Pay by Bank: Häufig gestellte Fragen …"
+    },
+    {
+      "title": "Aktivieren und Installieren - Bitdefender",
+      "url": "https://www.bitdefender.de/consumer/support/produkte/",
+      "snippet": "Schutz für iOS Bitdefender BOX 2 Bitdefender VPN Bitdefender SecurePass Bitdefender Password Manager Bitdefender Parental …"
+    },
+    {
+      "title": "Installation von Bitdefender Security auf Windows",
+      "url": "https://www.bitdefender.de/consumer/support/answer/28635/",
+      "snippet": "In dieser einfachen Anleitung mit Bildern erfahren Sie, wie Sie Bitdefender auf Windows-Computern, Laptops oder Tablets …"
+    },
+    {
+      "title": "Deinstallation der Bitdefender-Sicherheitslösung unter Windows",
+      "url": "https://www.bitdefender.de/consumer/support/answer/12201/",
+      "snippet": "Die Deinstallation von Bitdefender von Ihrem Windows-Computer kann notwendig sein, wenn Sie das Gerät wechseln, Probleme …"
+    },
+    {
+      "title": "So fügen Sie in der Bitdefender-App (Windows) eine Firewall …",
+      "url": "https://www.bitdefender.de/consumer/support/answer/130685/",
+      "snippet": "Erfahren Sie, wie Sie in der Bitdefender-App für Windows eine Firewall-Ausnahme hinzufügen, damit Anwendungen oder Geräte …"
+    }
+  ]
+}

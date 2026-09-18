@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "arianaazarbal/ct-qwen36-35b-oai-gen-postcot-g1-b1",
+  "slug": "arianaazarbal-ct-qwen36-35b-oai-gen-postcot-g1-b1",
+  "author": "arianaazarbal",
+  "url": "https://huggingface.co/arianaazarbal/ct-qwen36-35b-oai-gen-postcot-g1-b1",
+  "created_at": "2026-09-18T18:13:41.000Z",
+  "updated_at": "2026-09-18T18:15:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "constitutional-training",
+    "iterated-constitution",
+    "family:qwen36_35b",
+    "seed:openai",
+    "method:gen",
+    "regime:post_cot",
+    "gen:1",
+    "branch:b1",
+    "text-generation",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:adapter:Qwen/Qwen3.6-35B-A3B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4491829400,
+  "storage_human": "4.5 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Outlook",
+      "url": "https://outlook.office.com/mail/",
+      "snippet": "Securely sign in to access your Microsoft account and manage emails, calendars, and other services efficiently."
+    },
+    {
+      "title": "Login | Microsoft 365",
+      "url": "https://www.office.com/caplogin",
+      "snippet": ""
+    },
+    {
+      "title": "Microsoft 365 Apps admin center",
+      "url": "https://config.office.com/",
+      "snippet": "Simplify Office deployment with Microsoft 365 Apps admin center to create, modify, and export configurations tailored to your …"
+    },
+    {
+      "title": "Microsoft 365 network health status - connectivity.office.com",
+      "url": "https://connectivity.office.com/status",
+      "snippet": "19 hours ago · Microsoft 365 network health status This map shows the network health status of locations where Microsoft receives a …"
+    },
+    {
+      "title": "Microsoft 365",
+      "url": "https://www.office.com/html/MsaToken.html",
+      "snippet": "Access Microsoft 365 to create, share, and collaborate using your favorite apps like Word, Excel, and PowerPoint."
+    }
+  ]
+}

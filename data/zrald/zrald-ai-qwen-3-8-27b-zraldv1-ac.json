@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Zrald/Zrald-AI-qwen-3.8-27b-zraldv1-ac",
+  "slug": "zrald-zrald-ai-qwen-3-8-27b-zraldv1-ac",
+  "author": "Zrald",
+  "url": "https://huggingface.co/Zrald/Zrald-AI-qwen-3.8-27b-zraldv1-ac",
+  "created_at": "2026-09-18T12:48:28.000Z",
+  "updated_at": "2026-09-18T13:22:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "qwen",
+    "qwen3_8",
+    "text-generation",
+    "conversational",
+    "coding",
+    "reasoning",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 18355379168,
+  "storage_human": "18.4 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PIRLS 2021 - PIRLS - Internationale Studien - Themen - IQS",
+      "url": "https://www.iqs.gv.at/pirls-2021",
+      "snippet": "PIRLS 2021 wurde in Österreich vom Institut des Bundes für Qualitätssicherung im österreichischen Schulwesen (IQS) im Auftrag …"
+    },
+    {
+      "title": "PIRLS 2021 – PIRLS 2021 INTERNATIONAL RESULTS IN READING",
+      "url": "https://pirls2021.org/",
+      "snippet": "PIRLS 2021 results provide descriptions of students’ reading skills and strategies at four international benchmarks on the PIRLS …"
+    },
+    {
+      "title": "PIRLS 2021 - PIRLS - Internationale Studien - Downloads - IQS",
+      "url": "https://www.iqs.gv.at/downloads/internationale-studien/pirls/pirls-2021",
+      "snippet": "Hier finden Sie Materialien zur internationalen Studie PIRLS 2021. Weitere Informationen zur Studie sind im entsprechenden PIRLS …"
+    },
+    {
+      "title": "PIRLS 2021 International Results in Reading",
+      "url": "https://pirls2021.org/results",
+      "snippet": "Reading achievement results are included in PIRLS 2021 International Results in Reading for all 57 countries and 8 benchmarking …"
+    },
+    {
+      "title": "PIRLS 2021 | IEA.nl",
+      "url": "https://www.iea.nl/studies/iea/pirls/2021",
+      "snippet": "IEA's PIRLS 2021 was the fifth cycle in the PIRLS assessment. PIRLS provides internationally comparative data on how well children …"
+    }
+  ]
+}

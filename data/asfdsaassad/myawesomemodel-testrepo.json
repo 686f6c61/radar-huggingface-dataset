@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "asfdsaassad/MyAwesomeModel-TestRepo",
+  "slug": "asfdsaassad-myawesomemodel-testrepo",
+  "author": "asfdsaassad",
+  "url": "https://huggingface.co/asfdsaassad/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-18T13:22:53.000Z",
+  "updated_at": "2026-09-18T13:23:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Se connecter à Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Se connecter à Gmail Pour ouvrir Gmail, vous pouvez vous connecter à partir d'un ordinateur ou ajouter votre compte à l'application …"
+    },
+    {
+      "title": "Créer un compte Google pour Gmail",
+      "url": "https://support.google.com/mail/answer/56256?hl=fr",
+      "snippet": "Créer un compte Google Remarque : Si vous souhaitez utiliser Gmail pour votre entreprise, un compte Google Workspace vous sera …"
+    },
+    {
+      "title": "Accéder à ma messagerie gmail après un autre utilisateur",
+      "url": "https://forums.commentcamarche.net/forum/affich-24043668-acceder-a-ma-messagerie-gmail-apres-un-autre-utilisateur",
+      "snippet": "Je pense que tu es connecté avec la session de la personne qui l'a utilisé dernièrement, tu peux accéder à sa boîte ? Dans ce cas, …"
+    },
+    {
+      "title": "Problème Gmail avec Firefox [Résolu] - Gmail - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-3747853-probleme-gmail-avec-firefox",
+      "snippet": "Résumé de la discussion Problème rencontré : l'ouverture de la page d'accueil Gmail échoue sous Firefox (Windows 2000, Firefox …"
+    },
+    {
+      "title": "Je ne peux plus accéder à ma messagerie Gmail - PC Astuces",
+      "url": "https://forum.pcastuces.com/je_ne_peux_plus_acceder_a_ma_messagerie_gmail-f25s81203.htm",
+      "snippet": "Jul 31, 2019 · Ma messagerie principale au début des années 2000 était \"Voila.fr\" que je trouvais très simple et conviviale, j'utilisais …"
+    }
+  ]
+}

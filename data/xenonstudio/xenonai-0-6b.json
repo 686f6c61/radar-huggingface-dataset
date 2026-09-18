@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "XenonStudio/XenonAI-0.6B",
+  "slug": "xenonstudio-xenonai-0-6b",
+  "author": "XenonStudio",
+  "url": "https://huggingface.co/XenonStudio/XenonAI-0.6B",
+  "created_at": "2026-09-18T19:34:27.000Z",
+  "updated_at": "2026-09-18T19:37:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3-0.6B-Base",
+    "base_model:finetune:Qwen/Qwen3-0.6B-Base",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 751632384,
+  "parameters_human": "751.6M",
+  "storage_bytes": 1514722982,
+  "storage_human": "1.5 GB",
+  "base_model": "Qwen/Qwen3-0.6B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Abstimmungsergebnisse | Abstimmungen | Plenartagung | Europäisches …",
+      "url": "https://www.europarl.europa.eu/plenary/de/votes.html?tab=votes",
+      "snippet": "Ergebnisse der Abstimmungen und Ergebnisse der namentlichen Abstimmungen der Sitzungen der letzten Monate. Nach Datum …"
+    },
+    {
+      "title": "Reihenfolge der Abstimmung und Abstimmungslisten | Abstimmungen ...",
+      "url": "https://www.europarl.europa.eu/plenary/de/votes.html",
+      "snippet": "Die vorläufigen Abstimmungslisten, die Abstimmungsreihenfolge und Informationen zur Abstimmungsstunde finden."
+    },
+    {
+      "title": "Europawahl – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Europawahl",
+      "snippet": "Erst 1976 – nach der ersten Erweiterung der Gemeinschaften und inmitten der Eurosklerose -Krise – gelang es den im Europäischen …"
+    },
+    {
+      "title": "Abstimmungsergebnisse deutscher Europaabgeordneter | Votemap.eu",
+      "url": "https://votemap.eu/10term/de",
+      "snippet": "Verfolgen Sie die aktuellen Abstimmungsergebnisse deutscher Europaabgeordneter auf Votemap.eu. Erhalten Sie detaillierte …"
+    },
+    {
+      "title": "Reisewarnungen Verbraucherschutz: Mehrheit deutscher EU …",
+      "url": "https://www.news.de/politik/858948445/abstimmung-europaparlament-beschlossen-ergebnis-reisewarnungen-verbraucherschutz-vom-11-09-2025/1/",
+      "snippet": "Sep 12, 2025 · Das EU-Parlament hat in einer namentlichen Abstimmung seine Verhandlungsposition zur Reform der …"
+    }
+  ]
+}

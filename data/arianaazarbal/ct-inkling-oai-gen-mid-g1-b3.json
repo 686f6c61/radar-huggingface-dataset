@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "arianaazarbal/ct-inkling-oai-gen-mid-g1-b3",
+  "slug": "arianaazarbal-ct-inkling-oai-gen-mid-g1-b3",
+  "author": "arianaazarbal",
+  "url": "https://huggingface.co/arianaazarbal/ct-inkling-oai-gen-mid-g1-b3",
+  "created_at": "2026-09-18T19:30:36.000Z",
+  "updated_at": "2026-09-18T19:32:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "constitutional-training",
+    "iterated-constitution",
+    "family:inkling_small",
+    "seed:openai",
+    "method:gen",
+    "regime:mid",
+    "gen:1",
+    "branch:b3",
+    "text-generation",
+    "base_model:thinkingmachines/Inkling-Small",
+    "base_model:adapter:thinkingmachines/Inkling-Small",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16901410336,
+  "storage_human": "16.9 GB",
+  "base_model": "thinkingmachines/Inkling-Small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ju Autista Nível 3 cuida da beleza | TikTok",
+      "url": "https://www.tiktok.com/@irmasautistas/video/7624206119254166802",
+      "snippet": "436 curtidas,Vídeo do TikTok de Irmãs autistas (@irmasautistas): \"Acompanhe Ju, autista nível 3, cuidando da sua beleza apesar …"
+    },
+    {
+      "title": "Cambio en el nivel del autismo: ¿Es posible? | TikTok",
+      "url": "https://www.tiktok.com/@neuroa1.pe/video/7478103887782644997",
+      "snippet": "Mar 5, 2025 · #Autismo #EspectroAutista Keywords: nivel del autismo, evolución del autismo, apoyo para autismo, terapia para …"
+    },
+    {
+      "title": "MARIA VITÓRIA AUTISTA NÍVEL 3. #autismo #autista #inclusao # ... - TikTok",
+      "url": "https://www.tiktok.com/@giovaneemarcia/video/7672107064822353172",
+      "snippet": "450 curtidas,75 comentários.Vídeo do TikTok de giovaneemarcia (@giovaneemarcia): \"MARIA VITÓRIA AUTISTA NÍVEL 3. …"
+    },
+    {
+      "title": "ASÍ es el COMPORTAMIENTO de un ‍ ADULTO con AUTISMO NO ...",
+      "url": "https://www.youtube.com/shorts/Y7MtxGiKAiU",
+      "snippet": "Jun 19, 2025 · #MrDoctor ⚠️¡SUSCRÍBETE Y ACTIVA LAS NOTIFICACIONES!⚠️💎CONVIÉRTETE en …"
+    },
+    {
+      "title": "Diagnóstico: autismo nivel 1 y altas capacidades explicados | TikTok",
+      "url": "https://www.tiktok.com/@igordelahoya/video/7672454910197206294",
+      "snippet": "1030 me gusta,88 comentarios.Vídeo de TikTok de igordelahoya (@igordelahoya): «Mi experiencia con diagnóstico de autista nivel 1 …"
+    }
+  ]
+}

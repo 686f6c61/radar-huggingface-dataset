@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "HelenHenny66/2013_lachy_wiggle",
+  "slug": "helenhenny66-2013_lachy_wiggle",
+  "author": "HelenHenny66",
+  "url": "https://huggingface.co/HelenHenny66/2013_lachy_wiggle",
+  "created_at": "2026-09-18T14:14:24.000Z",
+  "updated_at": "2026-09-18T14:15:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 53222380,
+  "storage_human": "53 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "New Teams - Backgrounds Folder | Microsoft Community Hub",
+      "url": "https://techcommunity.microsoft.com/discussions/microsoftteams/new-teams---backgrounds-folder/3960752",
+      "snippet": "Oct 20, 2023 · Recently, Microsoft released the new version of Teams for businesses, allowing the option to move end users to the …"
+    },
+    {
+      "title": "Green Blocky Glitch on Shared Screen in New Teams Meeting",
+      "url": "https://techcommunity.microsoft.com/discussions/microsoftteams/green-blocky-glitch-on-shared-screen-in-new-teams-meeting/4359240",
+      "snippet": "Dec 19, 2024 · I have a user on New Teams that repeatedly has trouble with screens being shared in meetings by other people …"
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://www.answers.microsoft.com/zh-hans/windows/forum/all/ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¥ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¤ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â½ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¤ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â»ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â½win8ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚ÂºÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â´ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â°/d8c51abf-b863-4da3-9596-797deace59f7",
+      "snippet": ""
+    },
+    {
+      "title": "Teams status stuck on \"busy\" or \"in a meeting\" | Microsoft Community …",
+      "url": "https://techcommunity.microsoft.com/discussions/microsoftteams/teams-status-stuck-on-busy-or-in-a-meeting/1725174",
+      "snippet": "Sep 29, 2020 · My Teams status is constantly changing to \"Busy\" or \"in a meeting\", regardless of whether I am actually in a meeting. …"
+    },
+    {
+      "title": "We couldn't schedule the meeting. Please try again later | Microsoft ...",
+      "url": "https://techcommunity.microsoft.com/discussions/microsoftteams/we-couldnt-schedule-the-meeting-please-try-again-later/1405465",
+      "snippet": "May 20, 2020 · Hi,&nbsp;One of my coworkers keeps getting the following error when trying to schedule a Teams meeting in outlook: …"
+    }
+  ]
+}

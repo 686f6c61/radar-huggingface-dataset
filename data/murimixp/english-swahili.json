@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "murimixp/english-swahili",
+  "slug": "murimixp-english-swahili",
+  "author": "murimixp",
+  "url": "https://huggingface.co/murimixp/english-swahili",
+  "created_at": "2026-09-18T14:04:22.000Z",
+  "updated_at": "2026-09-18T14:16:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "sw"
+  ],
+  "tags": [
+    "safetensors",
+    "marian",
+    "en",
+    "sw",
+    "base_model:Helsinki-NLP/opus-mt-en-sw",
+    "base_model:finetune:Helsinki-NLP/opus-mt-en-sw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 77028978,
+  "parameters_human": "77.0M",
+  "storage_bytes": 309647429,
+  "storage_human": "310 MB",
+  "base_model": "Helsinki-NLP/opus-mt-en-sw",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Блиц новини от последните минути ...",
+      "url": "https://blitz.bg/",
+      "snippet": "Блиц новини, в реално време от последните минути. Новините от който се интересувате, като политика, спорт, икономика, …"
+    },
+    {
+      "title": "Последни новини | Blitz.bg - Последни ...",
+      "url": "https://blitz.bg/posledni-novini",
+      "snippet": "Открийте последните новини от България и света с Blitz.bg. Ние предоставяме актуализирани новини, анализи и рейтинги, …"
+    },
+    {
+      "title": "Ники Кънчев проговори пред БЛИЦ за ...",
+      "url": "https://show.blitz.bg/intervyu/niki-kanchev-progovori-pred-blic-za-gafovete-v-stani-bogat-i-koi-uchastnici-shte-pomni-vechno",
+      "snippet": "Sep 8, 2026 · Ники Кънчев проговори пред БЛИЦ за гафовете в „Стани богат“ и кои участници ще помни вечно Водещият …"
+    },
+    {
+      "title": "Информационна агенция БЛИЦ ЕООД ...",
+      "url": "https://corporate.blitz.bg/",
+      "snippet": "“Информационна агенция Блиц ЕООД” заема водещо място сред най-големите издатели в България. Компанията достига …"
+    },
+    {
+      "title": "Двукратната победителка във „Фермата ...",
+      "url": "https://show.blitz.bg/rialiti/dvukratnata-pobeditelka-vav-fermata-razkri-tezhkata-istina-zad-rialitito",
+      "snippet": "Sep 8, 2026 · Двукратната победителка във „Фермата“ Веселка Маринова направи откровено признание за едно от участията …"
+    }
+  ]
+}

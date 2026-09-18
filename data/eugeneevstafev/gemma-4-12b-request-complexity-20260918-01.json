@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "EugeneEvstafev/gemma-4-12b-request-complexity-20260918-01",
+  "slug": "eugeneevstafev-gemma-4-12b-request-complexity-20260918-01",
+  "author": "EugeneEvstafev",
+  "url": "https://huggingface.co/EugeneEvstafev/gemma-4-12b-request-complexity-20260918-01",
+  "created_at": "2026-09-18T15:19:32.000Z",
+  "updated_at": "2026-09-18T15:49:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "gemma-4",
+    "text-generation",
+    "request-complexity",
+    "finetune-lab",
+    "en",
+    "base_model:google/gemma-4-12B-it",
+    "base_model:quantized:google/gemma-4-12B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11907350576,
+  "parameters_human": "11.91B",
+  "storage_bytes": 7381382848,
+  "storage_human": "7.4 GB",
+  "base_model": "google/gemma-4-12B-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Visiter Phuket: Les 23 choses à faire et à voir - Voyage Tips",
+      "url": "https://www.voyagetips.com/que-faire-a-phuket/",
+      "snippet": "Jul 5, 2026 · Pour organiser au mieux votre visite de l’île et ne manquer aucun lieu d’intérêt, je vous ai préparé ce guide complet de …"
+    },
+    {
+      "title": "Guide De Voyage Phuket | PHUKET 101",
+      "url": "https://fr.phuket101.net/",
+      "snippet": "Le guide de voyage complet de Phuket. L'île de Phuket compte plus de 40 plages, des centaines d'hôtels et suffisamment de …"
+    },
+    {
+      "title": "Voyage à Phuket : quand partir, budget, où loger et que faire (guide …",
+      "url": "https://francais-en-thailande.com/phuket-que-faire-guide-complet-des-plages-temples-et-excursions-incontournables/",
+      "snippet": "Aug 19, 2025 · Préparez votre voyage à Phuket : meilleure saison (nov-mars), budget 35-80 €/jour, zones Patong/Kata/Rawai, …"
+    },
+    {
+      "title": "Planificateur de voyage à Phuket",
+      "url": "https://fr.phuket101.net/phuket-trip-planner/",
+      "snippet": "Jul 4, 2026 · Voici quelques pages pour vous aider à préparer votre voyage, quoi emporter, où échanger de l’argent et comment se …"
+    },
+    {
+      "title": "Voyage Phuket : séjours, hôtels, clubs et circuits - Promovacances",
+      "url": "https://www.promovacances.com/vacances-sejour-hotel/voyage-phuket/thailande/?msockid=0c05db324ee367652008ccea4f6a66ab",
+      "snippet": "Réservez votre voyage à Phuket au meilleur prix. Profitez de nos offres de séjours, hôtels et circuits pour vos vacances. Découvrez …"
+    }
+  ]
+}

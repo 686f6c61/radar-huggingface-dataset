@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Ahsanz/virl39k-qwen3vl-2b-arms",
+  "slug": "ahsanz-virl39k-qwen3vl-2b-arms",
+  "author": "Ahsanz",
+  "url": "https://huggingface.co/Ahsanz/virl39k-qwen3vl-2b-arms",
+  "created_at": "2026-09-18T17:58:05.000Z",
+  "updated_at": "2026-09-18T20:06:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "rlhf",
+    "grpo",
+    "vppo",
+    "prpo",
+    "intuitor",
+    "multimodal",
+    "research",
+    "base_model:Qwen/Qwen3-VL-2B-Instruct",
+    "base_model:finetune:Qwen/Qwen3-VL-2B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19521303998,
+  "storage_human": "19.5 GB",
+  "base_model": "Qwen/Qwen3-VL-2B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Peak District — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Peak_District",
+      "snippet": "Le parc couvre environ 1 400 km2. Le parc est populaire pour l' équitation, la randonnée pédestre, le cyclisme, la spéléologie, le …"
+    },
+    {
+      "title": "Peak District Attractions & Lieux à Visiter | VisitBritain",
+      "url": "https://www.visitbritain.com/fr/destinations/angleterre/peak-district",
+      "snippet": "Parc national depuis 1951, le Peak District est divisé en deux parties : le « Dark Peak », où la lande sauvage succède aux collines …"
+    },
+    {
+      "title": "Parc national Peak District 2026 : randonnées, villages & accès",
+      "url": "https://eta-uk.fr/peak-district-randonnees-villages-paysages-guide/",
+      "snippet": "Mar 21, 2026 · Parc national Peak District 2026 : meilleurs sentiers, villages typiques, accès depuis Manchester ou Sheffield, conseils …"
+    },
+    {
+      "title": "Parc national de Peak District - globalnationalparks.com",
+      "url": "https://www.globalnationalparks.com/fr/angleterre-et-pays-de-galles/peak-district/",
+      "snippet": "Le Parc national de Peak District a été fondé en 1951, étant le premier parc national du Royaume-Uni et l’une des zones protégées …"
+    },
+    {
+      "title": "Visiter le Peak District | Guide voyage Angleterre | A Kiss from UK",
+      "url": "https://www.akissfromuk.com/visiter-le-peak-district",
+      "snippet": "Pour savoir que faire et que voir pendant votre séjour dans le Peak District, suivez notre guide voyage complet sur cette région ! …"
+    }
+  ]
+}

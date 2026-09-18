@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "open-athena/tinker-qwen3.5-9b-native-opd-step-1-from-sft-400",
+  "slug": "open-athena-tinker-qwen3-5-9b-native-opd-step-1-from-sft-400",
+  "author": "open-athena",
+  "url": "https://huggingface.co/open-athena/tinker-qwen3.5-9b-native-opd-step-1-from-sft-400",
+  "created_at": "2026-09-18T14:05:10.000Z",
+  "updated_at": "2026-09-18T14:05:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "marin-community",
+    "on-policy-distillation",
+    "lora",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:adapter:Qwen/Qwen3.5-9B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1585502408,
+  "storage_human": "1.6 GB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Page d'accueil Open | Your high-digital place",
+      "url": "https://www.open.global/",
+      "snippet": "Construisons votre carrière Chez Open, nous ouvrons des perspectives aux talents... #Recrutez-nous !"
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "ChatGPT Business ChatGPT Enterprise ChatGPT for Education Codex Release Notes API Platform Overview API Log In Docs …"
+    },
+    {
+      "title": "Apache OpenOffice",
+      "url": "https://www.openoffice.org/fr/",
+      "snippet": "Jan 4, 2016 · Projet francophone Apache OpenOffice Ce site a pour but d'apporter outils et ressources aux francophones pour le …"
+    },
+    {
+      "title": "US Open 2026 - Tableau simple messieurs - L'Équipe",
+      "url": "https://www.lequipe.fr/Tennis/us-open/epreuve-simple-messieurs/page-tableau-tournoi",
+      "snippet": "US Open 2026 simple messieurs : retrouvez le tableau complet avec le calendrier et les résultats de tous les matches sur L'Équipe."
+    },
+    {
+      "title": "Open, Aujourd'hui. Et demain. | Open",
+      "url": "https://www.open.global/open/open-aujourdhui-demain",
+      "snippet": "Partout en France. Et plus. Chez Open, nous accompagnons nos clients en offrant un service de proximité. Ainsi, nous sommes …"
+    }
+  ]
+}

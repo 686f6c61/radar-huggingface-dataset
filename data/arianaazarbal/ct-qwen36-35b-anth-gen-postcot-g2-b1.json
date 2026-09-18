@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "arianaazarbal/ct-qwen36-35b-anth-gen-postcot-g2-b1",
+  "slug": "arianaazarbal-ct-qwen36-35b-anth-gen-postcot-g2-b1",
+  "author": "arianaazarbal",
+  "url": "https://huggingface.co/arianaazarbal/ct-qwen36-35b-anth-gen-postcot-g2-b1",
+  "created_at": "2026-09-18T18:05:29.000Z",
+  "updated_at": "2026-09-18T18:06:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "constitutional-training",
+    "iterated-constitution",
+    "family:qwen36_35b",
+    "seed:anthropic",
+    "method:gen",
+    "regime:post_cot",
+    "gen:2",
+    "branch:b1",
+    "text-generation",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:adapter:Qwen/Qwen3.6-35B-A3B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4491829400,
+  "storage_human": "4.5 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "有什么好的ed2k下载器？ - 知乎",
+      "url": "https://www.zhihu.com/question/63863543",
+      "snippet": "骨灰级软件，amule或者emule等，这两个都是20年前的软件，软件倒是还能运行，但是可能连接不了；如果能连接上的话，需要解 …"
+    },
+    {
+      "title": "Forums - µTorrent Community Forums",
+      "url": "https://forum.utorrent.com/",
+      "snippet": "Nov 14, 2025 · Chat Use this forum for any nonimportant chat and spare the main forums from such discussions. 11.2k posts …"
+    },
+    {
+      "title": "Не обновляется utorrent - Non-English Discussion - µTorrent …",
+      "url": "https://forum.utorrent.com/topic/76773-%D0%BD%D0%B5-%D0%BE%D0%B1%D0%BD%D0%BE%D0%B2%D0%BB%D1%8F%D0%B5%D1%82%D1%81%D1%8F-utorrent/",
+      "snippet": "Feb 12, 2012 · У меня версия 3.0 (build 26473), нажимаю на проверить обновления, и тут пишет, что это самая новая версия …"
+    },
+    {
+      "title": ".torrent文件如何打开-百度经验",
+      "url": "https://jingyan.baidu.com/article/ce43664936850b3772afd34b.html",
+      "snippet": "Nov 4, 2017 · .torrent文件属于bt文件，也就是我们常说的种子。很多朋友下载到以.torrent为后缀的文件时，发现它很小只有几十至几 …"
+    },
+    {
+      "title": "有什么能下载磁力链接的程序比迅雷下载器良心点？ - 知乎",
+      "url": "https://www.zhihu.com/question/65852990",
+      "snippet": "说实话迅雷对用户还挺良心的，不过今天不谈这些 说说我用的磁力云播软件，可以在线播放，当然可以下载了 最近用的最多的 …"
+    }
+  ]
+}

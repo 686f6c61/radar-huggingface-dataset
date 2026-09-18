@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "apolloransom/Qwen2.5-Coder-7B-Instruct-MLX",
+  "slug": "apolloransom-qwen2-5-coder-7b-instruct-mlx",
+  "author": "apolloransom",
+  "url": "https://huggingface.co/apolloransom/Qwen2.5-Coder-7B-Instruct-MLX",
+  "created_at": "2026-09-18T18:28:46.000Z",
+  "updated_at": "2026-09-18T18:30:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen2",
+    "code",
+    "codeqwen",
+    "chat",
+    "qwen",
+    "qwen-coder",
+    "omlx",
+    "zed",
+    "apple-silicon",
+    "mac",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242693674,
+  "storage_human": "15.2 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Login to Disney+ | Login or Signup",
+      "url": "https://www.disneyplus.com/identity/login?msockid=3f50a702855b62b83c25b0da84d66390",
+      "snippet": "Log in to access Disney+ and explore a wide range of movies, TV series, and exclusive originals."
+    },
+    {
+      "title": "Δείτε νέες πρωτότυπες παραγωγές, μπλοκμπάστερ και σειρές – …",
+      "url": "https://www.disneyplus.com/el-gr?msockid=3f50a702855b62b83c25b0da84d66390",
+      "snippet": "Εδώ θα βρείτε περιεχόμενο Disney, Marvel, Pixar, Star Wars, National Geographic, Hulu και πολλά άλλα. Κορυφαίες ταινίες, …"
+    },
+    {
+      "title": "Disney Ελλάδας | To Επίσημο Site",
+      "url": "https://www.disney.gr/",
+      "snippet": "Ανακαλύψτε όλα όσα χρειάζεστε να μάθετε για τις ταινίες Disney, τα live shows,πάρκα και ό,τι νεότερο υπάρχει σε μαγικά δώρα και …"
+    },
+    {
+      "title": "Disney.com | The official home for all things Disney",
+      "url": "https://www.disney.com/",
+      "snippet": "The official website for all things Disney: theme parks, resorts, movies, tv programs, characters, games, videos, music, shopping, and …"
+    },
+    {
+      "title": "Παρουσίαση Disney+ | Disney Ελλάδας",
+      "url": "https://www.disney.gr/parousiasi-disney-plus",
+      "snippet": "Εδώ θα βρείτε περιεχόμενο Disney, Marvel, Pixar, Star Wars, National Geographic, Hulu και πολλά άλλα. Κορυφαίες ταινίες, …"
+    }
+  ]
+}

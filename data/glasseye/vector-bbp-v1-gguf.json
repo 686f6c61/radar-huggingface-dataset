@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "GLASSEYE/vector-bbp-v1-gguf",
+  "slug": "glasseye-vector-bbp-v1-gguf",
+  "author": "GLASSEYE",
+  "url": "https://huggingface.co/GLASSEYE/vector-bbp-v1-gguf",
+  "created_at": "2026-09-18T15:03:23.000Z",
+  "updated_at": "2026-09-18T15:03:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "vector",
+    "bug-bounty",
+    "hackerone",
+    "bbp",
+    "vdp",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7248023552,
+  "parameters_human": "7.25B",
+  "storage_bytes": 4372815520,
+  "storage_human": "4.4 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MEGA TV",
+      "url": "https://www.megatv.com/",
+      "snippet": "Στο Mega TV θα βρείτε πρόγραμμα τηλεόρασης, επεισόδια σειρών του MEGA, νέες, παλιές εκπομπές, επικαιρότητα, …"
+    },
+    {
+      "title": "LIVE - MEGA TV",
+      "url": "https://www.megatv.com/live/",
+      "snippet": "Σειρές | Τρέχουσα Σεζόν Ελληνικές Σειρές | Παλαιότερες Σεζόν Mega Classics 15:40 - 18:30 LIVE NEWS Live TV 8 18:30 - 19:45 …"
+    },
+    {
+      "title": "MEGA TV - OFFICIAL - YouTube",
+      "url": "https://www.youtube.com/channel/UCpWa_Y5O7U2oQLAz-FRllwg",
+      "snippet": "Με αισθητική που αποτυπώνει το νοσταλγικό χρώμα του ελληνικού καλοκαιριού, τα πρώτα scene stills της νέας παραγωγής του …"
+    },
+    {
+      "title": "Σήμερα στο Mega - Πρόγραμμα live | Programma tv",
+      "url": "https://programmatileorasis.live/mega/",
+      "snippet": "Δες το πρόγραμμα στο Mega σήμερα. Ταινίες, σειρές, εκπομπές, ειδήσεις και όλο το πρόγραμμα live με ώρες προβολής και …"
+    },
+    {
+      "title": "Ελληνικές Σειρές | Τύπος Εκπομπής | MEGA TV",
+      "url": "https://www.megatv.com/showtype/greekseries/",
+      "snippet": "1 day ago · Live TV Σειρες Ψυχαγωγια Ενημερωση Αθλητικα Προγραμμα Podcasts Mega Kids MEGA Insider Είσαι έτοιμος να γίνεις …"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "arianaazarbal/ct-inkling-anth-gen-mid-g1-b2",
+  "slug": "arianaazarbal-ct-inkling-anth-gen-mid-g1-b2",
+  "author": "arianaazarbal",
+  "url": "https://huggingface.co/arianaazarbal/ct-inkling-anth-gen-mid-g1-b2",
+  "created_at": "2026-09-18T18:29:04.000Z",
+  "updated_at": "2026-09-18T18:30:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "constitutional-training",
+    "iterated-constitution",
+    "family:inkling_small",
+    "seed:anthropic",
+    "method:gen",
+    "regime:mid",
+    "gen:1",
+    "branch:b2",
+    "text-generation",
+    "base_model:thinkingmachines/Inkling-Small",
+    "base_model:adapter:thinkingmachines/Inkling-Small",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16901410336,
+  "storage_human": "16.9 GB",
+  "base_model": "thinkingmachines/Inkling-Small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zero PRAXEN - medizinische Gesundheitsversorgung | ze:roPraxen",
+      "url": "https://www.zero-praxen.de/",
+      "snippet": "Der ze:roPRAXEN-Verbund ist mit seinen Praxen für Allgemeinmedizin, Nephrologie/Dialyse, Kardiologie, Pneumologie, Angiologie, …"
+    },
+    {
+      "title": "Unsere ze:ro Arztpraxen im Überblick | ze:roPRAXEN",
+      "url": "https://www.zero-praxen.de/praxen-fachgebiete/praxen",
+      "snippet": "Neben Baden-Württemberg und Rheinland-Pfalz haben wir seit 2020 auch Standorte in Hessen. Unsere interaktive Karte zeigt alle …"
+    },
+    {
+      "title": "zeroPRAXEN Hausärztliches MVZ Frankenthal-Eppstein",
+      "url": "https://h2oc.de/zeropraxen-hausarztliches-mvz-frankenthal-eppstein-in-frankenthal-pfalz-verdistrasse-31/",
+      "snippet": "Das zeroPRAXEN Hausärztliche MVZ in Frankenthal (Pfalz) bietet umfassende hausärztliche Versorgung für Ihre Familie. Mit 36 …"
+    },
+    {
+      "title": "ze:roPRAXEN Karriereportal | Jetzt den ze:roMOMENT entdecken!",
+      "url": "https://karriere.zero-praxen.de/",
+      "snippet": "Der ze:roPRAXEN-Verbund ist mit seinen Praxen für Allgemeinmedizin, Nephrologie/Dialyse, Kardiologie, Pneumologie, Angiologie, …"
+    },
+    {
+      "title": "zero PRAXEN Fachärztliches MVZ Ludwigshafen - Doctolib",
+      "url": "https://www.doctolib.de/medizinisches-versorgungszentrum-mvz/ludwigshafen-am-rhein/zero-praxen-fachaerztliches-mvz-ludwigshafen",
+      "snippet": "In unserer Facharztpraxis für Innere Medizin und Kardiologie in Ludwigshafen-Friesenheim sind wir für unsere Patienten in allen …"
+    }
+  ]
+}

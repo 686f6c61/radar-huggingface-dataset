@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "idumoo/wiev-models",
+  "slug": "idumoo-wiev-models",
+  "author": "idumoo",
+  "url": "https://huggingface.co/idumoo/wiev-models",
+  "created_at": "2026-09-18T12:08:41.000Z",
+  "updated_at": "2026-09-18T12:35:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5358135290,
+  "storage_human": "5.4 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Créer un compte Google - Ordinateur - Aide Compte Google",
+      "url": "https://support.google.com/accounts/answer/27441?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Important : Lorsque vous créez un compte Google pour votre entreprise, vous pouvez activer la personnalisation pour les …"
+    },
+    {
+      "title": "Se connecter à Gmail - Ordinateur - Aide Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Se connecter à Gmail Conseil : Si vous vous connectez à un ordinateur public, pensez à vous déconnecter avant de quitter …"
+    },
+    {
+      "title": "Télécharger et installer Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95346?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Vous pouvez télécharger et installer sans frais le navigateur Web Chrome, puis l'utiliser pour naviguer sur le Web. Vérifier la …"
+    },
+    {
+      "title": "Se connecter à Google Ads",
+      "url": "https://support.google.com/google-ads/answer/1722062?hl=fr",
+      "snippet": "Conseils de connexion à Google Ads Étant donné que votre compte Google donne accès à la plupart des produits Google, nous …"
+    },
+    {
+      "title": "Définir Google comme moteur de recherche par défaut",
+      "url": "https://support.google.com/websearch/answer/464?hl=fr",
+      "snippet": "Pour obtenir des résultats de Google chaque fois que vous effectuez une recherche, vous pouvez en faire votre moteur de recherche …"
+    }
+  ]
+}

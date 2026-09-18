@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "arianaazarbal/ct-inkling-anth-rw-mid-g1-b2",
+  "slug": "arianaazarbal-ct-inkling-anth-rw-mid-g1-b2",
+  "author": "arianaazarbal",
+  "url": "https://huggingface.co/arianaazarbal/ct-inkling-anth-rw-mid-g1-b2",
+  "created_at": "2026-09-18T19:28:42.000Z",
+  "updated_at": "2026-09-18T19:30:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "constitutional-training",
+    "iterated-constitution",
+    "family:inkling_small",
+    "seed:anthropic",
+    "method:rw",
+    "regime:mid",
+    "gen:1",
+    "branch:b2",
+    "text-generation",
+    "base_model:thinkingmachines/Inkling-Small",
+    "base_model:adapter:thinkingmachines/Inkling-Small",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16901410336,
+  "storage_human": "16.9 GB",
+  "base_model": "thinkingmachines/Inkling-Small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "H&M – Online móda, domácí vybavení a dětské oblečení | H&M CZ",
+      "url": "https://www2.hm.com/cs_cz/index.html?msockid=03bdebc64c976b06010cfc1e4d076aff",
+      "snippet": "H&M je vaše destinace pro nákup módy, dekorací, kosmetiky, dětského a dalšího zboží. Projděte si nejnovější kolekce a objevte …"
+    },
+    {
+      "title": "Módne a kvalitné oblečenie za najlepšie ceny | H&M SK",
+      "url": "https://www2.hm.com/sk_sk/index.html?msockid=03bdebc64c976b06010cfc1e4d076aff",
+      "snippet": "H&M je vaša nákupná destinácia pre módu, domácnosť, beauty, detské oblečenie a ďalšie. Pozrite si najnovšie kolekcie a nájdite …"
+    },
+    {
+      "title": "H&M: Fashion für Frauen, Männer und Kinder | H&M AT",
+      "url": "https://www2.hm.com/de_at/index.html?msockid=03bdebc64c976b06010cfc1e4d076aff",
+      "snippet": "H&M ist dein Shopping-Destination für Mode, Home, Beauty, Kinderkleidung und mehr. Entdecke die neuesten Kollektionen und …"
+    },
+    {
+      "title": "Divatos és minőségi ruhák a legjobb áron | H&M HU",
+      "url": "https://www2.hm.com/hu_hu/index.html?msockid=03bdebc64c976b06010cfc1e4d076aff",
+      "snippet": "A H&M-nél divattal, lakásdekorációval, szépségápolással, gyerekruhákkal és sok mással várunk. Találj rá minőségi, megfizethető …"
+    },
+    {
+      "title": "Moda damska | Odzież damska | Ubrania damskie | H&M PL",
+      "url": "https://www2.hm.com/pl_pl/ona.html?msockid=03bdebc64c976b06010cfc1e4d076aff",
+      "snippet": "Wyprzedzaj trendy i bądź zawsze na czasie dzięki odzieży damskiej H&M. Przeglądaj tysiące ubrań i akcesoriów damskich w …"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Slackware1337/Qwen3.8-27B-Heretic-ARA-Slacked-FP8_DYNAMIC",
+  "slug": "slackware1337-qwen3-8-27b-heretic-ara-slacked-fp8_dynamic",
+  "author": "Slackware1337",
+  "url": "https://huggingface.co/Slackware1337/Qwen3.8-27B-Heretic-ARA-Slacked-FP8_DYNAMIC",
+  "created_at": "2026-09-18T15:52:21.000Z",
+  "updated_at": "2026-09-19T00:04:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "base_model:Slackware1337/Qwen3.8-27B-Heretic-ARA-Slacked",
+    "base_model:quantized:Slackware1337/Qwen3.8-27B-Heretic-ARA-Slacked",
+    "license:apache-2.0",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 97563709615,
+  "storage_human": "97.6 GB",
+  "base_model": "Slackware1337/Qwen3.8-27B-Heretic-ARA-Slacked",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Firmengrundsätze einfach erklärt Definition nach HGB",
+      "url": "https://www.juraforum.de/lexikon/firmengrundsaetze",
+      "snippet": "May 28, 2026 · Firmengrundsätze nach HGB - Welche Firmengrundsätze gibt es? Warum gibt es Sie? Jetzt einfach erklärt und mit …"
+    },
+    {
+      "title": "aliud - Definition und Bedeutung des Begriffs in Jura",
+      "url": "https://www.juraforum.de/lexikon/aliud",
+      "snippet": "Jun 11, 2026 · aliud = etwas anderes ️ Beispiel: aliud Lieferung ️ Bedeutung im Schuldrecht, Strafrecht, Verfassungsrecht, …"
+    },
+    {
+      "title": "️ GmbH Handelsregister - Definition & Bedeutung - JuraForum.de",
+      "url": "https://www.juraforum.de/lexikon/gmbh-handelsregister",
+      "snippet": "Feb 22, 2026 · Das GmbH Handelsregister ist ein öffentliches Verzeichnis, in dem alle wesentlichen Informationen über die …"
+    },
+    {
+      "title": "ᐅ Schwebende Unwirksamkeit: Definition, Begriff und Erklärung im ...",
+      "url": "https://www.juraforum.de/lexikon/schwebende-unwirksamkeit",
+      "snippet": "Aug 5, 2026 · Die schwebende Unwirksamkeit ist ein Rechtsbegriff, der sich auf Rechtsgeschäfte bezieht, die gegen zwingende …"
+    },
+    {
+      "title": "ᐅ Firma - Bedeutung im HGB - Definition leicht erklärt",
+      "url": "https://www.juraforum.de/lexikon/firma",
+      "snippet": "May 28, 2026 · Die ordnungsgemäße Führung der Firma ist nicht nur für das Handelsregister von Bedeutung, sondern auch im …"
+    }
+  ]
+}

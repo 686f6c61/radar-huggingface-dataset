@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Toronto-Mans-9B-GGUF",
+  "slug": "mradermacher-toronto-mans-9b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Toronto-Mans-9B-GGUF",
+  "created_at": "2026-09-18T15:24:31.000Z",
+  "updated_at": "2026-09-18T15:55:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "toronto",
+    "slang",
+    "multicultural-toronto-english",
+    "persona",
+    "chat",
+    "lora",
+    "qwen3.5",
+    "en",
+    "dataset:devon7y/toronto-slang-lexicon",
+    "base_model:devon7y/Toronto-Mans-9B",
+    "base_model:adapter:devon7y/Toronto-Mans-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 81425094784,
+  "storage_human": "81.4 GB",
+  "base_model": "devon7y/Toronto-Mans-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Iga Swiatek v Elena Rybakina results, H2H stats | Tennis - Flashscore",
+      "url": "https://www.flashscore.co.uk/match/tennis/rybakina-elena-UDzElXdm/swiatek-iga-jNyZsXZe/",
+      "snippet": "Aug 20, 2026 · Follow Iga Swiatek v Elena Rybakina results, h2h statistics, latest results, news and more information on Flashscore."
+    },
+    {
+      "title": "Swiatek beats Rybakina in Toronto for first WTA title of year",
+      "url": "https://www.espn.com/tennis/story/_/id/49604435/swiatek-beats-rybakina-toronto-first-wta-title-year",
+      "snippet": "Aug 14, 2026 · Seventh-seeded Iga Swiatek beat second-seeded Elena Rybakina 6-2, 6-3 on Thursday in the National Bank Open …"
+    },
+    {
+      "title": "Iga Swiatek vs. Elena Rybakina | 2025 WTA Finals Riyadh | WTA …",
+      "url": "https://www.youtube.com/watch?v=DVlfB-pNeTg",
+      "snippet": "Nov 3, 2025 · Watch the Match Highlights from Iga Swiatek vs. Elena Rybakina, 11/03/2025 Subscribe to the WTA on YouTube: …"
+    },
+    {
+      "title": "Iga Swiatek vs Elena Rybakina H2H & Live Scores - TennisStats.com",
+      "url": "https://tennisstats.com/h2h/iga-swiatek-vs-elena-rybakina-8302",
+      "snippet": "H2H data, Results, Live scores, and performance comparison on all matches between Iga Swiatek and Elena Rybakina"
+    },
+    {
+      "title": "Tennis, WTA – National Bank Open presented by Rogers 2026: Swiatek …",
+      "url": "https://www.tennismajors.com/wta-tour-news/swiatek-completes-career-sweep-of-north-american-swing-with-dominant-win-over-rybakina-in-toronto-858483.html",
+      "snippet": "Aug 14, 2026 · Pole Iga Swiatek, the No. 7 seed, beat Kazakh second seed Elena Rybakina 6-2, 6-3 to win the National Bank Open …"
+    }
+  ]
+}

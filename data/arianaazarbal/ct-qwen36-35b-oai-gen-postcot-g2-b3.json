@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "arianaazarbal/ct-qwen36-35b-oai-gen-postcot-g2-b3",
+  "slug": "arianaazarbal-ct-qwen36-35b-oai-gen-postcot-g2-b3",
+  "author": "arianaazarbal",
+  "url": "https://huggingface.co/arianaazarbal/ct-qwen36-35b-oai-gen-postcot-g2-b3",
+  "created_at": "2026-09-18T18:18:19.000Z",
+  "updated_at": "2026-09-18T18:18:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "constitutional-training",
+    "iterated-constitution",
+    "family:qwen36_35b",
+    "seed:openai",
+    "method:gen",
+    "regime:post_cot",
+    "gen:2",
+    "branch:b3",
+    "text-generation",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:adapter:Qwen/Qwen3.6-35B-A3B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4491829400,
+  "storage_human": "4.5 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "如何在中国大陆用「合法」的方式观看到youtube上面的「有价值」的 …",
+      "url": "https://www.zhihu.com/question/1903231775980913051",
+      "snippet": "YouTube 将自动为 添加翻译后的中文字幕，这一功能有效解决了语言障碍问题。 当你向下浏览时，部分 会标注相关信息。 例如，博 …"
+    },
+    {
+      "title": "Gerenciar configurações do canal - Ajuda do YouTube",
+      "url": "https://support.google.com/youtube/answer/2976814?hl=pt-BR",
+      "snippet": "Gerenciar configurações do canal Você pode gerenciar as configurações do seu canal no YouTube Studio. É possível mudar desde …"
+    },
+    {
+      "title": "YouTube TV Help",
+      "url": "https://support.google.com/youtubetv/?hl=en",
+      "snippet": "Official YouTube TV Help Center where you can find tips and tutorials on using YouTube TV and other answers to frequently asked …"
+    },
+    {
+      "title": "YouTube公司 - 知乎",
+      "url": "https://www.zhihu.com/topic/19550532",
+      "snippet": "YouTube，全球最大的视频分享网站，早期公司总部位于加利福尼亚州的圣布里诺。公司由华裔美籍华人陈士骏等人创立并于2005年2 …"
+    },
+    {
+      "title": "Première di un nuovo video - Guida di YouTube",
+      "url": "https://support.google.com/youtube/answer/9080341?hl=it",
+      "snippet": "Première di un nuovo video YouTube Première consente a te e ai tuoi spettatori di guardare e scoprire nuovi video insieme in tempo …"
+    }
+  ]
+}

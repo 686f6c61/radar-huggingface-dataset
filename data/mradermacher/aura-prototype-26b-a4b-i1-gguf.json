@@ -1,0 +1,97 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Aura-Prototype-26B-A4B-i1-GGUF",
+  "slug": "mradermacher-aura-prototype-26b-a4b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Aura-Prototype-26B-A4B-i1-GGUF",
+  "created_at": "2026-09-18T18:17:18.000Z",
+  "updated_at": "2026-09-18T21:34:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "all genres",
+    "conversational",
+    "creative",
+    "creative writing",
+    "della",
+    "fiction",
+    "fiction story",
+    "fiction writing",
+    "gemma4",
+    "horror",
+    "merge",
+    "mergekit",
+    "mergekit-exp",
+    "aura",
+    "plot generation",
+    "roleplay",
+    "roleplaying",
+    "romance",
+    "rp",
+    "scene continue",
+    "science fiction",
+    "story",
+    "story generation",
+    "storytelling",
+    "sub-plot generation",
+    "swearing",
+    "vivid prosing",
+    "vivid writing",
+    "writing",
+    "eng",
+    "base_model:EldritchLabs/Aura-Prototype-26B-A4B",
+    "base_model:quantized:EldritchLabs/Aura-Prototype-26B-A4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25971339550,
+  "parameters_human": "25.97B",
+  "storage_bytes": 308922309312,
+  "storage_human": "308.9 GB",
+  "base_model": "EldritchLabs/Aura-Prototype-26B-A4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ubuntu Yaru For Windows Cursors - RealWorld Graphics",
+      "url": "https://www.rw-designer.com/cursor-set/ubuntu-yaru-for-windows",
+      "snippet": "Published on June 15th 2024 under the Release to Public Domain license. The default set of cursors from the Linux Ubuntu …"
+    },
+    {
+      "title": "Linux Icons and Cursors - RealWorld Graphics",
+      "url": "https://www.rw-designer.com/tag/linux",
+      "snippet": "by nibbler 1110 Another Linux cursor set. A sprite sheet converted into cursors. Enjoy!"
+    },
+    {
+      "title": "Ubuntu Cursor for Windows 7/8/10/11 - DeviantArt",
+      "url": "https://www.deviantart.com/zaidog2302/art/Ubuntu-Cursor-for-Windows-7-8-10-11-896082161",
+      "snippet": "Oct 26, 2021 · Go to settings/personalization/themes/Mouse Cursor and select \"Ubuntu Cursor\". If the file have any problem, just …"
+    },
+    {
+      "title": "Bibata Modern Cursors for Windows - GitHub",
+      "url": "https://github.com/user-anant/Bibata-Modern-Cursors-Windows/",
+      "snippet": "Jan 5, 2025 · ☘️ Bibata is an open source, compact, and material designed cursor set that aims to improve the cursor experience …"
+    },
+    {
+      "title": "GitHub - quantum5/win2xcur: win2xcur is a tool that converts cursors ...",
+      "url": "https://github.com/quantum5/win2xcur",
+      "snippet": "win2xcurtheme converts a packaged Windows cursor theme with an INF installer into a directory of Xcursors, which can be used to …"
+    }
+  ]
+}

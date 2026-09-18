@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "arianaazarbal/ct-qwen36-35b-anth-gen-postcot-g2-b3",
+  "slug": "arianaazarbal-ct-qwen36-35b-anth-gen-postcot-g2-b3",
+  "author": "arianaazarbal",
+  "url": "https://huggingface.co/arianaazarbal/ct-qwen36-35b-anth-gen-postcot-g2-b3",
+  "created_at": "2026-09-18T18:08:13.000Z",
+  "updated_at": "2026-09-18T18:09:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "constitutional-training",
+    "iterated-constitution",
+    "family:qwen36_35b",
+    "seed:anthropic",
+    "method:gen",
+    "regime:post_cot",
+    "gen:2",
+    "branch:b3",
+    "text-generation",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:adapter:Qwen/Qwen3.6-35B-A3B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4491829400,
+  "storage_human": "4.5 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Büro & Homeoffice einrichten - IKEA Deutschland",
+      "url": "https://www.ikea.com/de/de/rooms/home-office/?msockid=1d4006110c746fcc02b311c90da06eca",
+      "snippet": "Hier erledigst du berufliche Tätigkeiten außerhalb eines klassischen Firmenbüros und gestaltest so deinen Arbeitstag ganz nach …"
+    },
+    {
+      "title": "Alles fürs Büro | Onlineshop C&M Büro- und Datentechnik Handels …",
+      "url": "https://www.alles-fuers-buero.de/",
+      "snippet": "Bei uns finden Sie alles, was Sie für ein perfekt ausgestattetes Büro benötigen: von Büroklammern, Ordnern, Kugelschreibern, …"
+    },
+    {
+      "title": "Smart Bürobedarf - Die intelligente Lösung für Ihr Büro",
+      "url": "https://www.smart-buerobedarf.de/home",
+      "snippet": "Unser Sortiment umfasst vom klassischen Bürobedarf, wie Kopierpapier, Druckerpatronen, Locher, Ordner oder Textmarker, bis hin …"
+    },
+    {
+      "title": "Alles fürs Büro & Homeoffice | Gentsch - Onlineshop",
+      "url": "https://shop.gentsch.de/home",
+      "snippet": "Bei uns finden Sie alles, was Sie für ein perfekt ausgestattetes Büro benötigen: von Büroklammern, Ordnern, Kugelschreibern, …"
+    },
+    {
+      "title": "Büromöbel-Sets | Büro Komplettset online kaufen | home24",
+      "url": "https://www.home24.de/bueromoebel-sets/?msockid=1d4006110c746fcc02b311c90da06eca",
+      "snippet": "Bei einem optimalen Büromöbel Komplett Set findest du wichtigen Stauraum in Form von Akten- und Büroschränken, Rollcontainern, …"
+    }
+  ]
+}

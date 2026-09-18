@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "makitty/QuechuaGPT-chanka-4B-merged-v2",
+  "slug": "makitty-quechuagpt-chanka-4b-merged-v2",
+  "author": "makitty",
+  "url": "https://huggingface.co/makitty/QuechuaGPT-chanka-4B-merged-v2",
+  "created_at": "2026-09-18T12:41:03.000Z",
+  "updated_at": "2026-09-18T12:42:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "trl",
+    "conversational",
+    "en",
+    "base_model:Thermostatic/rosettia-chanka-4b-alpha160",
+    "base_model:finetune:Thermostatic/rosettia-chanka-4b-alpha160",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 9099172623,
+  "storage_human": "9.1 GB",
+  "base_model": "Thermostatic/rosettia-chanka-4b-alpha160",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "A Google Kereső beállításainak módosítása a böngészőben",
+      "url": "https://support.google.com/chrome/answer/2539428?hl=hu&co=GENIE.Platform%3DDesktop",
+      "snippet": "A Kereső előnyben részesített témáját a Kereső beállításai között módosíthatja. A kiválasztott témát minden olyan asztali …"
+    },
+    {
+      "title": "A Kereső kezelése a gyermek Google-fiókjában",
+      "url": "https://support.google.com/families/answer/7086922?hl=hu",
+      "snippet": "A gyermek Google Kereső-találatainak kezelése Fontos: Ha jelenleg nem felügyeled a gyermeked Google-fiókját, a Family Link …"
+    },
+    {
+      "title": "Kisegítő lehetőségek a Google Keresőben",
+      "url": "https://support.google.com/websearch/answer/181196?hl=hu",
+      "snippet": "Kisegítő lehetőségek súgója: Megnyitja a súgócikket. Visszajelzés a kisegítő lehetőségekről: Megnyit egy űrlapot, ahol visszajelzést …"
+    },
+    {
+      "title": "A Google beállítása alapértelmezett keresőmotorként",
+      "url": "https://support.google.com/chromebook/answer/464?hl=hu",
+      "snippet": "A jobb oldalon kattintson a Google Kereső lehetőségre. Alul kattintson a Beállítás alapértelmezettként gombra. Internet Explorer 10 …"
+    },
+    {
+      "title": "A Google Kereső beállításainak módosítása a böngészőben",
+      "url": "https://support.google.com/websearch/answer/2539428?hl=hu&co=GENIE.Platform%3DDesktop",
+      "snippet": "A Kereső előnyben részesített témáját a Kereső beállításai között módosíthatja. A kiválasztott témát minden olyan asztali …"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Ololade117/shakespeare-bias-per-position",
+  "slug": "ololade117-shakespeare-bias-per-position",
+  "author": "Ololade117",
+  "url": "https://huggingface.co/Ololade117/shakespeare-bias-per-position",
+  "created_at": "2026-09-18T19:40:52.000Z",
+  "updated_at": "2026-09-21T14:39:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "model_hub_mixin",
+    "pytorch_model_hub_mixin",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3712000,
+  "parameters_human": "3.7M",
+  "storage_bytes": 18942976,
+  "storage_human": "19 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ingyenes Pornóvideók és XXX Filmek: Szexvideó Csatorna | xHamster",
+      "url": "https://hu.xhamster.com/",
+      "snippet": "Ingyenes pornóvideók és exkluzív XXX filmek itt találhatók az xHamster oldalon. Azonnal streamelhető több mint 6 millió hardcore …"
+    },
+    {
+      "title": "NapiSzex ️ Ingyen szex és pornó videók! Magyar szex oldal.",
+      "url": "https://napiszex.com/",
+      "snippet": "Az eredeti, mobilbarát pornó oldal! ⭐ Válogass az ingyen szex videók és porno filmek között minden kategóriában. ️ Gyors és …"
+    },
+    {
+      "title": "Magyar felnőtt filmek Szex Videók | xHamster",
+      "url": "https://hu.xhamster.com/search/magyar+feln%C5%91tt+filmek",
+      "snippet": "Nézz magyar felnőtt filmek pornóvideókat. Fedezd fel 2026 legjobb XXX filmjeit szexjelenetekkel az xHamster-en!"
+    },
+    {
+      "title": "Ingyenes pornó videó kategóriák | TrixXx.hu",
+      "url": "https://trixxx.hu/categories/",
+      "snippet": "Az weboldalon szexuális, pornó jellegű tartalom van, amit tekinthetnek meg!"
+    },
+    {
+      "title": "MA Legnézettebb Pornó Videók | TrixXx.hu",
+      "url": "https://trixxx.hu/viewed/today/",
+      "snippet": "Fedezd fel a legütősebb magyar pornóoldalt, ahol villámgyorsan, mobilbarát felületen élvezheted a legdurvábban izgató tartalmakat. …"
+    }
+  ]
+}

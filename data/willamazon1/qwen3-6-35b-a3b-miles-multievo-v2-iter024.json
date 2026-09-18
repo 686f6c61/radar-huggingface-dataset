@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "willamazon1/qwen3.6-35b-a3b-miles-multievo-v2-iter024",
+  "slug": "willamazon1-qwen3-6-35b-a3b-miles-multievo-v2-iter024",
+  "author": "willamazon1",
+  "url": "https://huggingface.co/willamazon1/qwen3.6-35b-a3b-miles-multievo-v2-iter024",
+  "created_at": "2026-09-18T18:00:41.000Z",
+  "updated_at": "2026-09-18T18:04:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "reinforcement-learning",
+    "multimodal",
+    "moe",
+    "agent",
+    "conversational",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 71916587318,
+  "storage_human": "71.9 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "East Coast Wholesale Flowers - Fresh Flowers",
+      "url": "https://www.eastcoastwholesaleflowers.com/",
+      "snippet": "Wholesale Fresh Flowers, plants, supplies, classes and more for New York, Connecticut, Rhode Island, and Massachusetts."
+    },
+    {
+      "title": "Availability Guide & Order Forms — East Coast Wildflowers",
+      "url": "https://www.eastcoastwildflowers.com/availabilityguide",
+      "snippet": "Below you will find the link to an availability guide for the fresh flowers and foliage we stock each month. These lists also double as …"
+    },
+    {
+      "title": "20 Flowers That Grow by the Ocean: Your Ultimate Coastal Blooms Guide",
+      "url": "https://foliagefriend.com/flowers-that-grow-by-the-ocean/",
+      "snippet": "Coastal environments can be challenging for plants, but there are a variety of flowers that have adapted to thrive near the ocean. …"
+    },
+    {
+      "title": "East-Coast Native Plants - Sandy's Plants",
+      "url": "https://www.sandysplants.com/Plant-Attributes/East-Coast-Native",
+      "snippet": "East-Coast Native Plants Success! The following plants match your search request. We've included all matches below. Click on any …"
+    },
+    {
+      "title": "The Best Flowers to Plant in Spring on the East Coast",
+      "url": "https://www.aborrelli.com/blog/the-best-flowers-to-plant-in-spring-on-the-east-coast/",
+      "snippet": "Fortunately, there are many plants that are well-suited for growing on the east coast throughout the spring. Here are some options …"
+    }
+  ]
+}

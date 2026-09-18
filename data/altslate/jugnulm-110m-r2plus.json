@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "altslate/JugnuLM-110M-R2plus",
+  "slug": "altslate-jugnulm-110m-r2plus",
+  "author": "altslate",
+  "url": "https://huggingface.co/altslate/JugnuLM-110M-R2plus",
+  "created_at": "2026-09-18T19:09:56.000Z",
+  "updated_at": "2026-09-19T02:35:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "jugnu_vr",
+    "text-generation",
+    "jugnu",
+    "tiny-lm",
+    "value-residual",
+    "muon",
+    "pretrained-from-scratch",
+    "custom_code",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "arxiv:2410.17897",
+    "base_model:altslate/JugnuLM-110M",
+    "base_model:finetune:altslate/JugnuLM-110M",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109737302,
+  "parameters_human": "109.7M",
+  "storage_bytes": 438979888,
+  "storage_human": "439 MB",
+  "base_model": "altslate/JugnuLM-110M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kölner Dom – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/K%C3%B6lner_Dom",
+      "snippet": "Der Kölner Dom (offiziell Hohe Domkirche zu Köln[1]) ist eine römisch-katholische Kirche in Köln unter dem Patrozinium des Apostels …"
+    },
+    {
+      "title": "Kölner Dom | Website",
+      "url": "https://www.koelner-dom.de/",
+      "snippet": "Dreikönigswallfahrt an den Kölner Dom ein. Seit zwei Jahrzehnten bringt die Wallfahrt Menschen aus Köln, dem Erzbistum und weit …"
+    },
+    {
+      "title": "Kölner Dom | Turmbesteigung",
+      "url": "https://www.koelner-dom.de/besuchen/turmbesteigung",
+      "snippet": "Von der Plattform des Südturms des Kölner Domes in rund 100 Metern Höhe genießen Besucherinnen und Besucher einen …"
+    },
+    {
+      "title": "Kölner Dom - Gotisches Meisterwerk und kulturelles Erbe",
+      "url": "https://www.koelntourismus.de/kunst-kultur/sehenswuerdigkeiten/detail/koelner-dom",
+      "snippet": "Auch der Kölner Dom war von Anfang an auf diese Idee ausgerichtet und besitzt heute die größte Fensterfläche aller Kirchen auf der …"
+    },
+    {
+      "title": "Tickets – Kölner Dom",
+      "url": "https://tickets.koelner-dom.de/",
+      "snippet": "Buchen Sie Tickets für Ihren Besuch im Kölner Dom. Seit dem 1. Juli 2026 benötigen Sie für die Besichtigung des Kölner Doms ein …"
+    }
+  ]
+}

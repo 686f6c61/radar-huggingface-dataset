@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "urjit006/TriNetra",
+  "slug": "urjit006-trinetra",
+  "author": "urjit006",
+  "url": "https://huggingface.co/urjit006/TriNetra",
+  "created_at": "2026-09-18T13:32:30.000Z",
+  "updated_at": "2026-09-18T13:55:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "keras",
+  "languages": [],
+  "tags": [
+    "keras",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 310345649,
+  "storage_human": "310 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accueil impots.gouv.fr",
+      "url": "https://www.impots.gouv.fr/accueil",
+      "snippet": "Retrouvez toutes les informations pratiques pour vous prémunir des éventuelles conséquences pour vos données personnelles de …"
+    },
+    {
+      "title": "J'accède à mon espace Finances publiques et à mes services en ligne",
+      "url": "https://www.impots.gouv.fr/particulier/jaccede-mon-espace-particulier-et-mes-services-en-ligne",
+      "snippet": "Mar 30, 2016 · Une offre diversifiée de services en ligne vous est proposée dans votre espace Finances publiques. Vous pouvez …"
+    },
+    {
+      "title": "Particuliers | authentification",
+      "url": "https://cfspart.impots.gouv.fr/",
+      "snippet": "Les services disponibles Avec vos identifiants impots.gouv.fr, vous pouvez effectuer des démarches administratives sur des sites …"
+    },
+    {
+      "title": "Accueil | bofip.impots.gouv.fr",
+      "url": "https://bofip.impots.gouv.fr/",
+      "snippet": "Aug 27, 2026 · bofip.impots.gouv.fr Bulletin Officiel des Finances Publiques - Impôts Le site des commentaires officiels des …"
+    },
+    {
+      "title": "Particuliers | authentification",
+      "url": "https://cfspart-idp.impots.gouv.fr/restapiotp2fresend?skin=part&authType=sso",
+      "snippet": "Nous vous invitons à vous adresser à votre centre des Finances publiques . Faites votre demande en indiquant votre numéro fiscal, …"
+    }
+  ]
+}

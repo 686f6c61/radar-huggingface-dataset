@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-q4v3-groot16",
+  "slug": "agurung-cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-q4v3-groot16",
+  "author": "agurung",
+  "url": "https://huggingface.co/agurung/cobalt-seeded-rl-base-ramp25-stoppen-gen4k-ep2-ncp5-q4v3-groot16",
+  "created_at": "2026-09-18T17:37:13.000Z",
+  "updated_at": "2026-09-21T08:36:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "openrlhf",
+    "grpo",
+    "reinforcement-learning",
+    "code-generation",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-4B-Instruct-2507",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4411424256,
+  "parameters_human": "4.41B",
+  "storage_bytes": 26480106210,
+  "storage_human": "26.5 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Open and Use Disk Cleanup in Windows 10 | Tutorials - Ten Forums",
+      "url": "https://www.tenforums.com/tutorials/3012-open-use-disk-cleanup-windows-10-a.html",
+      "snippet": "Jul 9, 2022 · Starting with Windows 10 build 19018, Microsoft is removing the Downloads folder option from Disk Cleanup. This …"
+    },
+    {
+      "title": "Disk Cleanup - Open and Use | Seven Forums",
+      "url": "https://www.sevenforums.com/threads/disk-cleanup-open-and-use.818/",
+      "snippet": "Dec 7, 2008 · You can use Disk Cleanup to reduce the number of unnecessary files on your drives, which can help your PC run …"
+    },
+    {
+      "title": "What is the correct order of DISM and sfc commands to fix problems?",
+      "url": "https://www.tenforums.com/performance-maintenance/161345-what-correct-order-dism-sfc-commands-fix-problems.html",
+      "snippet": "Jul 25, 2020 · Today i updated my system to build 2004. Everything went fine and so far i haven't had any problems. For good …"
+    },
+    {
+      "title": "Disk Cleanup - Add or Remove from Drive Properties",
+      "url": "https://www.sevenforums.com/threads/disk-cleanup-add-or-remove-from-drive-properties.22180/",
+      "snippet": "Aug 24, 2009 · To Remove \"Disk Cleanup\" button from Drive Properties A) Set the Recycle Bin to permanently delete files for the …"
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/msoffice/forum/all/i-have-a-perpetual-license-to-microsoft-office-for/731db2fe-4318-4681-bcbf-9488cb540115",
+      "snippet": ""
+    }
+  ]
+}

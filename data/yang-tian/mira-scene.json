@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Yang-Tian/Mira-Scene",
+  "slug": "yang-tian-mira-scene",
+  "author": "Yang-Tian",
+  "url": "https://huggingface.co/Yang-Tian/Mira-Scene",
+  "created_at": "2026-09-18T17:24:17.000Z",
+  "updated_at": "2026-09-18T17:26:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-3d",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "3d-scene-reconstruction",
+    "single-image-to-3d",
+    "canonical-coordinate-map",
+    "image-to-3d",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6412717052,
+  "storage_human": "6.4 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yin et yang — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Yin_et_yang",
+      "snippet": "Le Yin et le Yang servent à qualifier le rythme fondamental qui anime le qi : le qi qui se meut, qui augmente est qualifié de yang (on …"
+    },
+    {
+      "title": "Le Yin et le Yang - Quelle est leur signification",
+      "url": "https://spiritualite.com/blog/le-yin-et-le-yang-quelle-est-leur-signification/",
+      "snippet": "Jan 20, 2023 · Le principe philosophique du Yin et du Yang a évolué vers l’idée que toutes les choses dans l’univers existent en tant …"
+    },
+    {
+      "title": "Yang (philosophie) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Yang_(philosophie)",
+      "snippet": "Le yang (陽 ou 阳 ; yáng) est une notion élémentaire de la pensée chinoise qui n'a pas d'équivalent dans la philosophie européenne …"
+    },
+    {
+      "title": "Le symbole yin yang : signification, interprétation, définition",
+      "url": "https://www.jepense.org/symbole-yin-yang-signification/",
+      "snippet": "Jun 27, 2024 · Le yin et le yang ne peuvent exister l’un sans l’autre, et ne peuvent se définir que par association. Le yin est associé à …"
+    },
+    {
+      "title": "Yin and yang - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Yin_and_yang",
+      "snippet": "The original meaning of yin was depicted as the northerly shaded side of a hill and yang being the bright southerly aspect. When …"
+    }
+  ]
+}

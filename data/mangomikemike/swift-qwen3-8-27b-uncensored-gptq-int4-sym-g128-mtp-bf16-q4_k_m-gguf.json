@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "mangomikemike/Swift-Qwen3.8-27B-Uncensored-GPTQ-Int4-sym-G128-MTP-BF16-Q4_K_M-GGUF",
+  "slug": "mangomikemike-swift-qwen3-8-27b-uncensored-gptq-int4-sym-g128-mtp-bf16-q4_k_m-gguf",
+  "author": "mangomikemike",
+  "url": "https://huggingface.co/mangomikemike/Swift-Qwen3.8-27B-Uncensored-GPTQ-Int4-sym-G128-MTP-BF16-Q4_K_M-GGUF",
+  "created_at": "2026-09-18T18:37:09.000Z",
+  "updated_at": "2026-09-18T19:05:34.000Z",
+  "license": "swift-open-license-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "gptq",
+    "int4",
+    "uncensored",
+    "abliterated",
+    "mtp",
+    "speculative-decoding",
+    "intel",
+    "arc",
+    "intel-arc",
+    "xpu",
+    "vllm",
+    "qwen3.8",
+    "swift",
+    "llama-cpp",
+    "gguf-my-repo",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "base_model:greglechin/Swift-Qwen3.8-27B-Uncensored-GPTQ-Int4-sym-G128-MTP-BF16",
+    "base_model:quantized:greglechin/Swift-Qwen3.8-27B-Uncensored-GPTQ-Int4-sym-G128-MTP-BF16",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 16810706208,
+  "storage_human": "16.8 GB",
+  "base_model": "greglechin/Swift-Qwen3.8-27B-Uncensored-GPTQ-Int4-sym-G128-MTP-BF16",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub · Change is constant. GitHub keeps you ahead.",
+      "url": "https://github.com/",
+      "snippet": "Whether you’re scaling your development process or just learning how to code, GitHub is where you belong. Join the world’s most …"
+    },
+    {
+      "title": "Sign in to GitHub · GitHub",
+      "url": "https://github.com/login",
+      "snippet": "GitHub is where people build software. More than 150 million people use GitHub to discover, fork, and contribute to over 420 million …"
+    },
+    {
+      "title": "Download GitHub Desktop",
+      "url": "https://desktop.github.com/download/",
+      "snippet": "Download GitHub Desktop Focus on what matters instead of fighting with Git. Whether you're new to Git or a seasoned user, GitHub …"
+    },
+    {
+      "title": "GitHub - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/GitHub",
+      "snippet": "GitHub, headquartered in San Francisco, is operated by Github, Inc., a subsidiary of Microsoft since 2018. [10] It is commonly used to …"
+    },
+    {
+      "title": "GitHub",
+      "url": "https://github.com/github",
+      "snippet": "How people build software. GitHub has 562 repositories available. Follow their code on GitHub."
+    }
+  ]
+}

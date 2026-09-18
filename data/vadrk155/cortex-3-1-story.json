@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "VADRK155/Cortex-3.1-Story",
+  "slug": "vadrk155-cortex-3-1-story",
+  "author": "VADRK155",
+  "url": "https://huggingface.co/VADRK155/Cortex-3.1-Story",
+  "created_at": "2026-09-18T17:54:27.000Z",
+  "updated_at": "2026-09-18T18:06:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "text-generation",
+    "gpt",
+    "from-scratch",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 250612938,
+  "storage_human": "251 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "On This Day - Today in History, Film, Music and Sport",
+      "url": "https://www.onthisday.com/",
+      "snippet": "Find out what happened today or any day in history with On This Day. Historical events, birthdays, deaths, photos and famous …"
+    },
+    {
+      "title": "On This Day - What Happened Today In History | Britannica",
+      "url": "https://www.britannica.com/on-this-day",
+      "snippet": "On This Day In History: anniversaries, birthdays, major events, and time capsules. This day's facts in the arts, politics, and sciences."
+    },
+    {
+      "title": "Today in History - On This Day",
+      "url": "https://www.onthisday.com/today/events.php",
+      "snippet": "19 hours ago · Learn about important and interesting historical events that happened on today in history. Hundreds of events and …"
+    },
+    {
+      "title": "On This Day – What Happened Today in History - timeanddate.com",
+      "url": "https://www.timeanddate.com/on-this-day/",
+      "snippet": "Discover what happened on this day in history. Explore key events, famous birthdays, and historical milestones from past to present."
+    },
+    {
+      "title": "Today In History — What Happened On This Day",
+      "url": "https://todayinhistory.app/",
+      "snippet": "19 hours ago · Every date has a story. Every figure has a voice. Browse any day in history, talk to 5,000+ historical figures, and play 7 …"
+    }
+  ]
+}

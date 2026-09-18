@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Mateusss3/plasmoscan",
+  "slug": "mateusss3-plasmoscan",
+  "author": "Mateusss3",
+  "url": "https://huggingface.co/Mateusss3/plasmoscan",
+  "created_at": "2026-09-18T19:29:33.000Z",
+  "updated_at": "2026-09-18T19:35:59.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "en",
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22514346,
+  "storage_human": "23 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Activer Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/fr-fr/windows/activation/activate-windows",
+      "snippet": "Apprenez à activer Windows à l'aide d'une clé de produit ou d'une licence numérique, à vérifier l'état de votre activation et à lier votre …"
+    },
+    {
+      "title": "Comment savoir si Windows 11 est activé ? (2 méthodes)",
+      "url": "https://lecrabeinfo.net/tutoriels/comment-savoir-si-windows-11-est-active/",
+      "snippet": "Jun 19, 2025 · Ouvrez les Paramètres de Windows 11, par exemple en utilisant le raccourci clavier Win + I . Dans la barre latérale de …"
+    },
+    {
+      "title": "Comment vérifier si Windows est activé, authentique ou cracké ?",
+      "url": "https://www.malekal.com/verifier-windows-cracke-authentique/",
+      "snippet": "Feb 21, 2018 · Dans ce tutoriel, vous apprendrez à vérifier si Windows est correctement activé, reconnaître une licence authentique, …"
+    },
+    {
+      "title": "Comment savoir si votre Windows est activé avec une licence …",
+      "url": "https://tecnobits.com/fr/Comment-savoir-si-votre-Windows-est-activ%C3%A9-avec-une-licence-num%C3%A9rique/",
+      "snippet": "Nov 16, 2025 · Comment savoir si votre Windows est activé avec une licence numérique, consulter son statut, utiliser des …"
+    },
+    {
+      "title": "Votre Windows est-il activé ? Le guide simple pour 2026",
+      "url": "https://les-imprimantes.com/votre-windows-est-il-active/",
+      "snippet": "Mar 21, 2026 · Découvrez en quelques minutes si votre Windows est activé, les méthodes pour vérifier le statut, résoudre les erreurs …"
+    }
+  ]
+}

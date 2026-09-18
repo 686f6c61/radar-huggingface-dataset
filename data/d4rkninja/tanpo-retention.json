@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "d4rkninja/tanpo-retention",
+  "slug": "d4rkninja-tanpo-retention",
+  "author": "d4rkninja",
+  "url": "https://huggingface.co/d4rkninja/tanpo-retention",
+  "created_at": "2026-09-18T13:39:35.000Z",
+  "updated_at": "2026-09-18T17:46:30.000Z",
+  "license": "lfm-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm2",
+    "text-generation",
+    "retention",
+    "customer-success",
+    "conversational",
+    "tanpo",
+    "en",
+    "dataset:d4rkninja/tanpo-retention-sft",
+    "base_model:LiquidAI/LFM2.5-1.2B-Instruct",
+    "base_model:finetune:LiquidAI/LFM2.5-1.2B-Instruct",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1170340608,
+  "parameters_human": "1.17B",
+  "storage_bytes": 2340697936,
+  "storage_human": "2.3 GB",
+  "base_model": "LiquidAI/LFM2.5-1.2B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PAS-Reaktion - DocCheck Flexikon",
+      "url": "https://flexikon.doccheck.com/de/PAS-Reaktion",
+      "snippet": "Die PAS-Reaktion, oder auch PAS-Färbung, ist eine histochemische Färbung, bei der insbesondere kohlenhydrathaltige …"
+    },
+    {
+      "title": "PAS-Reaktion – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/PAS-Reaktion",
+      "snippet": "Das Färbeergebnis umfasst eine magenta-rote bis rosa Färbung neutraler Mucopolysaccharide, blauviolette Zellkerne und zart rosa …"
+    },
+    {
+      "title": "Eosinophil - DocCheck Flexikon",
+      "url": "https://flexikon.doccheck.com/de/Eosinophil",
+      "snippet": "Als eosinophil bezeichnet man in der Histologie Zellen, Zellbestandteile oder Gewebebestandteile, die sich mit dem sauren Farbstoff …"
+    },
+    {
+      "title": "Praxisorientierte Diplomarbeit Optimierung von AB und AB-PAS Färbung ...",
+      "url": "https://kempf-pfaltz.ch/wp-content/uploads/2025/09/DA_Optimierung-von-AB-und-ABP-Faerbung.pdf",
+      "snippet": "Diese Diplomarbeit befasst sich mit der Optimierung der Alcianblau (AB)- und Alcianblau- Perjod-Schiff (AB-PAS)-Färbung in der …"
+    },
+    {
+      "title": "PAS-Färbung PAS-Zyto Färbung sowie vom Nachweis von Pilze.",
+      "url": "https://www.pathologie-richter.com/download/Methodenspektrum.pdf",
+      "snippet": "Die MGG-Färbung ist eine Routine- Übersichtsfärbung (panoptisch). Sie client der Anfärbung luftgetrockneter, unfixierter Ausstrich …"
+    }
+  ]
+}

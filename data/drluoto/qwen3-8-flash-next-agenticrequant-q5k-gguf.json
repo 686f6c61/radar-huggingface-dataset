@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "drluoto/Qwen3.8-Flash-Next-AgenticRequant-Q5K-GGUF",
+  "slug": "drluoto-qwen3-8-flash-next-agenticrequant-q5k-gguf",
+  "author": "drluoto",
+  "url": "https://huggingface.co/drluoto/Qwen3.8-Flash-Next-AgenticRequant-Q5K-GGUF",
+  "created_at": "2026-09-18T18:12:25.000Z",
+  "updated_at": "2026-09-18T18:19:48.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "agentic",
+    "llama.cpp",
+    "qwen4exp",
+    "strix-halo",
+    "vulkan",
+    "quantized",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 176943899520,
+  "parameters_human": "176.94B",
+  "storage_bytes": 92329675424,
+  "storage_human": "92.3 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SkyGo akzeptiert keine Anmeldung - Sky Community",
+      "url": "https://community.sky.de/conversations/sky-go-app/skygo-akzeptiert-keine-anmeldung/683675dd170e725f3159a1b5",
+      "snippet": "Feb 16, 2025 · Ich kann mich weder mit Kudnenummer noch mit Email in der SkyGo App anmelden.Die Daten werden allerdings vom …"
+    },
+    {
+      "title": "einloggen bei sky go nicht möglich",
+      "url": "https://community.sky.de/conversations/sky-go-app/einloggen-bei-sky-go-nicht-m%C3%B6glich/6a8dc67026301c8126e6206a",
+      "snippet": "Aug 25, 2026 · Ich kann mich nicht bei Sky Go einloggen. Versuche mit der E-Mailadresse gibt die Fehlermeldung \"Daten können …"
+    },
+    {
+      "title": "Netflix über Sky Go",
+      "url": "https://community.sky.de/conversations/sky-go-app/netflix-%C3%BCber-sky-go/68365b3a170e725f31863f30",
+      "snippet": "Oct 8, 2023 · Ich habe seit einiger Zeit Sky mit Entertainment Plus inkl. Netflix.&nbsp;Auf dem TV funktioniert alles, aber wo finde ich …"
+    },
+    {
+      "title": "Sky Go, kann mich nicht einloggen - Sky Community",
+      "url": "https://community.sky.de/conversations/sky-go-app/sky-go-kann-mich-nicht-einloggen/6a7a3c5e0fb48a5b8e9692f7",
+      "snippet": "Aug 10, 2026 · Sky Go, kann mich nicht einloggen Ich habe seit Gestern wieder ein aktives Sky Abo über Sky Stream. Leider sagt …"
+    },
+    {
+      "title": "Sky Go stürzt beim starten ab, ohne Fehlermeldung",
+      "url": "https://community.sky.de/conversations/sky-go-app/sky-go-st%C3%BCrzt-beim-starten-ab-ohne-fehlermeldung/68367184170e725f310df82a",
+      "snippet": "Dec 1, 2024 · Hallo, meine Sky Go App auf meinem Windows 11 Rechner startet nicht mehr. Ich starte es (mit und ohne Admin), das …"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/CajunFox",
+  "slug": "ryanham1lton-cajunfox",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/CajunFox",
+  "created_at": "2026-09-18T17:08:10.000Z",
+  "updated_at": "2026-09-18T17:12:30.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 147442954,
+  "storage_human": "147 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Škoda Tour de Luxembourg 2026 - UCI Pro Series Cycling Race",
+      "url": "https://skodatour.lu/",
+      "snippet": "Škoda Tour de Luxembourg is the premier professional cycling race in Luxembourg and part of the UCI Pro Series. Witness some of …"
+    },
+    {
+      "title": "Le parcours complet et les profils du Tour de Luxembourg 2026",
+      "url": "https://total-velo.com/tour-de-luxembourg-2026-parcours-profils/",
+      "snippet": "Le Tour de Luxembourg 2026 (2.Pro) se dispute du 16 au 20 septembre avec cinq étapes au programme. De la première journée …"
+    },
+    {
+      "title": "Calendrier et résultats par étape Tour du Luxembourg 2026",
+      "url": "https://www.lequipe.fr/Cyclisme-sur-route/tour-du-luxembourg/annee-2026/page-calendrier-resultats",
+      "snippet": "2 days ago · Tour du Luxembourg 2026 : retrouvez le calendrier complet et les résultats de toutes les étapes de l'édition 2026 sur …"
+    },
+    {
+      "title": "Tour du Luxembourg 2026 : chaîne TV, heure et favoris",
+      "url": "https://lemagducyclisme.fr/2026/09/11/tour-du-luxembourg-2026-chaine-tv-heure-et-favoris/",
+      "snippet": "Sep 11, 2026 · Qui sont les favoris du Tour du Luxembourg 2026 ? 17 équipes s’aligneront sur le Tour du Luxembourg 2026. 7 …"
+    },
+    {
+      "title": "Tour de Luxembourg 2026 — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Tour_de_Luxembourg_2026",
+      "snippet": "Le Tour de Luxembourg 2026 (officiellement : Škoda Tour de Luxembourg 2026) est la 86e édition de cette course cycliste masculine …"
+    }
+  ]
+}

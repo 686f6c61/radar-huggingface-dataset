@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "mradermacher/WeVisDoc-2B-GGUF",
+  "slug": "mradermacher-wevisdoc-2b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/WeVisDoc-2B-GGUF",
+  "created_at": "2026-09-18T16:50:07.000Z",
+  "updated_at": "2026-09-18T22:08:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "zh",
+    "base_model:tencent/WeVisDoc-2B",
+    "base_model:quantized:tencent/WeVisDoc-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2031739904,
+  "parameters_human": "2.03B",
+  "storage_bytes": 19879055680,
+  "storage_human": "19.9 GB",
+  "base_model": "tencent/WeVisDoc-2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fonds d'écran Napoléon Bonaparte HD - WallpaperBetter",
+      "url": "https://www.wallpaperbetter.com/fr/search?q=Napol%C3%A9on+Bonaparte",
+      "snippet": "Jacques-Louis David, Bonaparte franchissant le Grand-Saint-Bernard, oeuvre d'art, peinture à l'huile, Napoléon Bonaparte, Fond …"
+    },
+    {
+      "title": "Napoleon Wallpapers - 4k, HD Backgrounds on WallpaperBat",
+      "url": "https://wallpaperbat.com/napoleon-wallpapers",
+      "snippet": "Download 60+ Free Napoleon Wallpapers and HD Background Images for any Phone, PC, Laptop or Tablet."
+    },
+    {
+      "title": "Top Free Napoleon Backgrounds - WallpaperAccess",
+      "url": "https://wallpaperaccess.com/napoleon",
+      "snippet": "Check out this fantastic collection of Napoleon wallpapers, with 46 Napoleon background images for your desktop, phone or tablet."
+    },
+    {
+      "title": "Fonds d'écran Napoléon pour PC, télécharger gratuitement des …",
+      "url": "https://fr.wallpaper.mob.org/pc/gallery/tag=napol%C3%A9on/",
+      "snippet": "Téléchargez des images gratuites de \"Napoléon\" sur votre PC. Une vaste sélection de fonds d'écran PC de \"Napoléon\" que vous …"
+    },
+    {
+      "title": "Napoléon Bonaparte, guerres napoléoniennes, Fond d'écran HD",
+      "url": "https://www.wallpaperbetter.com/fr/hd-wallpaper-wtein",
+      "snippet": "Mots clés: Napoléon Bonaparte guerres napoléoniennes fond d'écran original: 1920x1200px Écran actuel: 800x600 px"
+    }
+  ]
+}

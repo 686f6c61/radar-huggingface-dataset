@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "jaehyunkang/pi05-real-workbench-taco-2view-8b7104f0-layout-reconstruction-60k",
+  "slug": "jaehyunkang-pi05-real-workbench-taco-2view-8b7104f0-layout-reconstruction-60k",
+  "author": "jaehyunkang",
+  "url": "https://huggingface.co/jaehyunkang/pi05-real-workbench-taco-2view-8b7104f0-layout-reconstruction-60k",
+  "created_at": "2026-09-18T17:51:34.000Z",
+  "updated_at": "2026-09-18T17:52:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "real-workbench",
+    "dataset:Myungkyu/real_workbench-taco-keyframe-gemini",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 9354060552,
+  "storage_human": "9.4 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "R5 E-Tech électrique - 430 km d’autonomie - Renault",
+      "url": "https://www.renault.fr/vehicules-electriques/r5-e-tech-electrique.html",
+      "snippet": "Avec son style unique, Renault 5 E-Tech électrique modernise les codes qui ont fait sa légende : silhouette compacte et musclée, …"
+    },
+    {
+      "title": "R5 E-Tech électrique - Versions et configuration - Renault",
+      "url": "https://www.renault.fr/vehicules-electriques/r5-e-tech-electrique/pre-configurateur.html",
+      "snippet": "offres non cumulables, réservées aux particuliers et valables dans le réseau Renault participant pour toute commande d’une Renault …"
+    },
+    {
+      "title": "Renault 5 - Fully electric city car by Renault",
+      "url": "https://www.renault.co.uk/electric-vehicles/r5-e-tech-electric.html",
+      "snippet": "With its E-Tech electric powertrain offering up to 252 miles of WLTP range¹, Renault 5 delivers an unparalleled driving experience. …"
+    },
+    {
+      "title": "Renault 5 - La citadine 100% électrique par Renault",
+      "url": "https://www.renault.re/vehicules-electriques/renault5-e-tech-electrique.html",
+      "snippet": "Découvrez nouvelle Renault 5 100% électrique : la citadine au design contemporain avec l'assistant virtuel Reno et Google intégré. …"
+    },
+    {
+      "title": "Renault 5 E-Tech électrique - Conseils auto",
+      "url": "https://www.retail-renault-group.fr/acheter-voiture-neuve/modele/renault-5-e-tech-electrique",
+      "snippet": "Cette citadine électrique intègre 26 systèmes avancés d'aide à la conduite ainsi que des dispositifs spécialement développés par …"
+    }
+  ]
+}

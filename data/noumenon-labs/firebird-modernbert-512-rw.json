@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "noumenon-labs/Firebird-ModernBERT-512-RW",
+  "slug": "noumenon-labs-firebird-modernbert-512-rw",
+  "author": "noumenon-labs",
+  "url": "https://huggingface.co/noumenon-labs/Firebird-ModernBERT-512-RW",
+  "created_at": "2026-09-18T13:20:21.000Z",
+  "updated_at": "2026-09-18T13:20:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "text-classification",
+    "ai-text-detection",
+    "reward-weighted-training",
+    "reward-guided-post-training",
+    "en",
+    "base_model:answerdotai/ModernBERT-base",
+    "base_model:finetune:answerdotai/ModernBERT-base",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 149606402,
+  "parameters_human": "149.6M",
+  "storage_bytes": 299232293,
+  "storage_human": "299 MB",
+  "base_model": "answerdotai/ModernBERT-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Old School Hiscores - RuneScape",
+      "url": "https://secure.runescape.com/m=hiscore_oldschool/overall.ws",
+      "snippet": "If you're a RuneScape veteran hungry for nostalgia, get stuck right in to Old School RuneScape. Sign up for membership and re-live …"
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "RuneScape - Grand Exchange - Prices, Trade, Market Movers",
+      "url": "https://secure.runescape.com/m=itemdb_rs/",
+      "snippet": "Looking to buy and sell in Gielinor? Check out the Grand Exchange marketplace to find the current market movers, prices, and most …"
+    },
+    {
+      "title": "请评价一下MDPI旗下的期刊质量如何? - 知乎",
+      "url": "https://www.zhihu.com/question/384813035",
+      "snippet": "一些比较好的期刊，如RS，可能外审拒稿率会比较高（大概50%吧）。 2:如果投mdpi某个期刊初审被拒了，那么就不要浪费时间再改 …"
+    },
+    {
+      "title": "电脑机箱后面板的MIC、SS-OUT、CS-OUT、RS-OUT、L-OUT、L-IN的 …",
+      "url": "https://zhidao.baidu.com/question/132234206.html",
+      "snippet": "4、RS-Out：后置环绕，也是声道的一种功能，颜色一般是黑色； 5、Line-Out（L-OUT）： 线路输出，用来插立体声音箱、耳机等等 …"
+    }
+  ]
+}

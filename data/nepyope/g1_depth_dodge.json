@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "nepyope/g1_depth_dodge",
+  "slug": "nepyope-g1_depth_dodge",
+  "author": "nepyope",
+  "url": "https://huggingface.co/nepyope/g1_depth_dodge",
+  "created_at": "2026-09-18T12:29:48.000Z",
+  "updated_at": "2026-09-18T13:27:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "onnx",
+    "unitree_g1",
+    "sonic",
+    "dodgeball",
+    "depth",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 152780666,
+  "storage_human": "153 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yoga — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Yoga",
+      "snippet": "Les quatre voies (mārga) traditionnelles majeures de yoga sont le jnana yoga, bhakti yoga, karma yoga et raja yoga. Elles sont …"
+    },
+    {
+      "title": "Cours de Yoga à Cahors | NAMASTE 46 | Pour Particuliers et Groupes",
+      "url": "https://namaste46.fr/",
+      "snippet": "Le Yoga consiste, en quelques mots, à calmer le corps pour enrichir l’esprit. Vous découvrirez à travers la pratique des cours de …"
+    },
+    {
+      "title": "Yoga Sankara Cahors",
+      "url": "https://www.yogacahors.com/",
+      "snippet": "Atelier de yoga de 3h afin d'avoir plus de temps pour approfondir le travail postural (décontraction musculaire et articulaire) et …"
+    },
+    {
+      "title": "Accueil - Aurore Yoga Cahors Lot - Séances de Yoga thérapeutique",
+      "url": "https://aurore-yoga.fr/",
+      "snippet": "La Yoga Thérapie est une démarche individuelle qui vise l'accompagnement - à l'aide des outils du yoga - de la gestion de troubles …"
+    },
+    {
+      "title": "Yoga débutant Séance complète de 30 minutes pour tout le corps",
+      "url": "https://www.youtube.com/watch?v=_nvdVJBLj-E",
+      "snippet": "Apr 2, 2024 · Cette vidéo de 30 minutes est parfaite pour étirer, renforcer, tonifier et détendre tout ton corps. Abonne-toi pour plus de …"
+    }
+  ]
+}

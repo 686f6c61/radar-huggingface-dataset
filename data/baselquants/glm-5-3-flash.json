@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "baselquants/GLM-5.3-Flash",
+  "slug": "baselquants-glm-5-3-flash",
+  "author": "baselquants",
+  "url": "https://huggingface.co/baselquants/GLM-5.3-Flash",
+  "created_at": "2026-09-18T19:31:09.000Z",
+  "updated_at": "2026-09-18T19:31:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm5_next",
+    "image-text-to-text",
+    "conversational",
+    "en",
+    "zh",
+    "arxiv:2602.15763",
+    "license:mit",
+    "eval-results",
+    "endpoints_compatible",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 321323031390,
+  "parameters_human": "321.32B",
+  "storage_bytes": 328357673114,
+  "storage_human": "328.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Allegro - atrakcyjne ceny - Strona Główna",
+      "url": "https://allegro.pl/",
+      "snippet": "Przewidywany przez Allegro czas dostawy. Wyliczamy go na podstawie dotychczasowych wysyłek sprzedającego oraz czasu …"
+    },
+    {
+      "title": "Allegro logowanie - Moje Allegro",
+      "url": "https://allegro.pl/logowanie",
+      "snippet": "Aktualna wersja Regulaminu Allegro wraz z Polityką ochrony prywatności obowiązuje od 1.09.2026. Wcześniejsze wersje …"
+    },
+    {
+      "title": "Allegro Lokalnie",
+      "url": "https://allegrolokalnie.pl/",
+      "snippet": "Wystaw ogłoszenie za darmo na Allegro Lokalnie, sprzedawaj i kupuj bezpiecznie od osób z Twojej okolicy. Upoluj lokalne perełki w …"
+    },
+    {
+      "title": "Dom i ogród - wyposażenie, dekoracje i akcesoria do ... - Allegro",
+      "url": "https://allegro.pl/dzial/dom-i-ogrod",
+      "snippet": "Dom i ogród - Allegro – największy wybór ofert zawsze pod ręką. Dołącz do 18 mln Użytkowników i ciesz się bezpiecznymi zakupami …"
+    },
+    {
+      "title": "samochody, części i akcesoria, giełda - Allegro",
+      "url": "https://allegro.pl/dzial/motoryzacja",
+      "snippet": "Dział Motoryzacja na Allegro. Twoje auto zawsze sprawne! Kliknij i przenieś się w świat samochodów, motocykli, ciężarówek, …"
+    }
+  ]
+}

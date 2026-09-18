@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Venuamaka/maize-resnet50",
+  "slug": "venuamaka-maize-resnet50",
+  "author": "Venuamaka",
+  "url": "https://huggingface.co/Venuamaka/maize-resnet50",
+  "created_at": "2026-09-18T12:06:40.000Z",
+  "updated_at": "2026-09-18T12:13:52.000Z",
+  "license": "afl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:afl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 96851592,
+  "storage_human": "97 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nordline | Scandinavian Construction & Renovation in Cyprus",
+      "url": "https://www.nordline.dk/",
+      "snippet": "Nordline is a Scandinavian construction and renovation company in Cyprus. We handle kitchens, bathrooms, flooring, carpentry and …"
+    },
+    {
+      "title": "Tophome Designs | Construction | Cyprus",
+      "url": "https://www.tophomes.com.cy/",
+      "snippet": "For every project we design and construct, we use the best materials and abide by government laws and regulations. From day one …"
+    },
+    {
+      "title": "Modern Scandinavian Designs - Finnish Design Shop",
+      "url": "https://www.finnishdesignshop.com/en-cy/",
+      "snippet": "As an official retailer for over 300 design brands – including GUBI, Artek, HAY, Muuto, Iittala, and Marimekko – we bring the essence …"
+    },
+    {
+      "title": "SCANDINAVIAN HOMES CYPRUS (@scandinavian_design_cyprus)",
+      "url": "https://www.instagram.com/scandinavian_design_cyprus/",
+      "snippet": "1,084 Followers, 4,864 Following, 409 Posts - SCANDINAVIAN HOMES CYPRUS (@scandinavian_design_cyprus) on Instagram: …"
+    },
+    {
+      "title": "Catalog | House of Scandiavia",
+      "url": "https://housescandinavia.com/en/catalog",
+      "snippet": "We have extensive experience, and we want to provide advice, support and help on the way to your dream home."
+    }
+  ]
+}

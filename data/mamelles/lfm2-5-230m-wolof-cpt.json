@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "mamelles/LFM2.5-230M-Wolof-CPT",
+  "slug": "mamelles-lfm2-5-230m-wolof-cpt",
+  "author": "mamelles",
+  "url": "https://huggingface.co/mamelles/LFM2.5-230M-Wolof-CPT",
+  "created_at": "2026-09-18T15:24:04.000Z",
+  "updated_at": "2026-09-18T15:24:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm2",
+    "text-generation",
+    "conversational",
+    "base_model:LiquidAI/LFM2.5-230M-Base",
+    "base_model:finetune:LiquidAI/LFM2.5-230M-Base",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 232627968,
+  "parameters_human": "232.6M",
+  "storage_bytes": 465270680,
+  "storage_human": "465 MB",
+  "base_model": "LiquidAI/LFM2.5-230M-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Le guide des points et techniques - Bergère de France",
+      "url": "https://www.bergeredefrance.fr/content/guide-points-techniques",
+      "snippet": "Fabrication 100% française de fils et modèles pour tricot, crochet et broderie. Bergère de France est le spécialiste des loisirs créatifs …"
+    },
+    {
+      "title": "Bergère de France : achat de laine en ligne, tricot, crochet - Bergère ...",
+      "url": "https://www.bergeredefrance.fr/",
+      "snippet": "Fabrication 100% française de fils et modèles pour tricot, crochet et broderie. Bergère de France est le spécialiste des loisirs créatifs …"
+    },
+    {
+      "title": "Livraisons - Bergère de France",
+      "url": "https://www.bergeredefrance.fr/assistance/livraisons/",
+      "snippet": "Fabrication 100% française de fils et modèles pour tricot, crochet et broderie. Bergère de France est le spécialiste des loisirs créatifs …"
+    },
+    {
+      "title": "ALASKA - Bergère de France",
+      "url": "https://www.bergeredefrance.fr/alaska.html",
+      "snippet": "A propos de ce produit Gros fil à base de laine peignée traitée irrétrécissable et d'acrylique certifié Oeko-Tex. Sa construction sous …"
+    },
+    {
+      "title": "Modèles - Bergère de France",
+      "url": "https://www.bergeredefrance.fr/m3-modeles",
+      "snippet": "Modèles tricot et crochet Bienvenue dans l’univers des modèles Bergère de France. Découvrez une vaste collection de patrons de …"
+    }
+  ]
+}

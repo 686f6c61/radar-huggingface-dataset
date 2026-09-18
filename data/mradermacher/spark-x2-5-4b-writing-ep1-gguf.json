@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Spark-X2.5-4B-Writing-EP1-GGUF",
+  "slug": "mradermacher-spark-x2-5-4b-writing-ep1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Spark-X2.5-4B-Writing-EP1-GGUF",
+  "created_at": "2026-09-18T16:13:54.000Z",
+  "updated_at": "2026-09-18T17:04:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "creative-writing",
+    "novel-generation",
+    "roleplay",
+    "nsfw",
+    "long-context",
+    "spark",
+    "zh",
+    "en",
+    "base_model:hcnote/Spark-X2.5-4B-Writing-EP1",
+    "base_model:quantized:hcnote/Spark-X2.5-4B-Writing-EP1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4112079360,
+  "parameters_human": "4.11B",
+  "storage_bytes": 37506126336,
+  "storage_human": "37.5 GB",
+  "base_model": "hcnote/Spark-X2.5-4B-Writing-EP1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Postman: The World's Leading API Platform | Sign Up for Free",
+      "url": "https://www.postman.com/",
+      "snippet": "Accelerate API development with Postman's all-in-one platform. Streamline collaboration and simplify the API lifecycle for faster, …"
+    },
+    {
+      "title": "Download Postman | Get Started for Free",
+      "url": "https://www.postman.com/downloads/",
+      "snippet": "Try Postman for free! Join 40 million users who rely on Postman, the collaboration platform for API development. Create better …"
+    },
+    {
+      "title": "Postman",
+      "url": "https://desktop.postman.com/?desktopVersion=10.6.0",
+      "snippet": "Postman is a platform for designing, building, and testing APIs, offering powerful tools for developers to streamline their API workflows."
+    },
+    {
+      "title": "Postman Docs | Postman Docs",
+      "url": "https://learning.postman.com/",
+      "snippet": "Postman videos Learn Postman fundamentals in the Postman video channel. See what’s new, find out about new features, and learn …"
+    },
+    {
+      "title": "Postman Academy",
+      "url": "https://academy.postman.com/",
+      "snippet": "Choose your path Whether you're learning solo, teaching in classrooms, or upskilling enterprise teams, Postman Academy offers …"
+    }
+  ]
+}

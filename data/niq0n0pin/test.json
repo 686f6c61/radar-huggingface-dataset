@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "niq0n0pin/test",
+  "slug": "niq0n0pin-test",
+  "author": "niq0n0pin",
+  "url": "https://huggingface.co/niq0n0pin/test",
+  "created_at": "2026-09-18T17:08:06.000Z",
+  "updated_at": "2026-09-18T17:08:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Maps",
+      "url": "https://www.google.com/maps/search/?hl=es",
+      "snippet": "Senderos de tierra/sin pavimentar"
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.com.mx/mapfiles/home3.html",
+      "snippet": "Explore the world and navigate your surroundings with Google Maps, offering tools for planning trips, discovering places, and much …"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/maps/search/?query_place_id=ChIJEWu4RhDHz4URq_xBT2rEJbg",
+      "snippet": ""
+    },
+    {
+      "title": "Empresas relacionadas con Calle Cholula 10 Quintana Roo 77539*''' …",
+      "url": "https://directorioempresarialmexico.com/?buscar=Calle+Cholula+10+Quintana+Roo+77539*%27%27%27+UNION+ALL+SELECT+NULL%2CNULL%2CCONCAT%280x75616c656767%2C%287433*8423%29%2C0x796177796264%29%2CNULL%2CNULL%2CNULL%2CNULL%2CNULL--+gamgbm",
+      "snippet": "Empresas relacionadas con Calle Cholula 10 Quintana Roo 77539 UNION ALL …"
+    },
+    {
+      "title": "Empresas relacionadas con Calle Cholula 10 Quintana Roo ...",
+      "url": "https://directorioempresarialmexico.com/?buscar=Calle+Cholula+10+Quintana+Roo+77539empresa0006413653INDUSTRIA-SALINERA-DE-YUCATAN-SA-DE-CV-PLANTA-LAS-COLORADASempresa0001512061IGLESIA-NUESTRA-SRA-DE-LA-CANDELARIAbuscarAgroimport%2C+SA+De+CV%5B0%5D&entidad=0&p=0%27%25e%25X%25T%25R%25A%25C%25T%2",
+      "snippet": "Empresas relacionadas con Calle Cholula 10 Quintana Roo 77539empresa0006413653INDUSTRIA-SALINERA-DE-YUCATAN-SA …"
+    }
+  ]
+}

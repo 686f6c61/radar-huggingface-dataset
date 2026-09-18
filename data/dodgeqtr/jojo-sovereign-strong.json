@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "dodgeqtr/jojo-sovereign-strong",
+  "slug": "dodgeqtr-jojo-sovereign-strong",
+  "author": "dodgeqtr",
+  "url": "https://huggingface.co/dodgeqtr/jojo-sovereign-strong",
+  "created_at": "2026-09-18T13:29:11.000Z",
+  "updated_at": "2026-09-18T13:29:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261312,
+  "parameters_human": "8.03B",
+  "storage_bytes": 4920739008,
+  "storage_human": "4.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Earth",
+      "url": "https://maps.google.de/intl/de/earth/",
+      "snippet": "Google Earth ist eine fotorealistische und digitale Version unseres Planeten. Woher kommen die Bilder? Wie sind sie …"
+    },
+    {
+      "title": "選擇 Google 的理由 - Google for Retail",
+      "url": "https://maps.google.de/intl/ALL_tw/retail/why-google/",
+      "snippet": "Google 地圖 每天都有超過十億名的使用者利用 Google 地圖導航至想去的地點，以及尋找當地商家資訊。「去哪裡購物」和「去哪裡 …"
+    },
+    {
+      "title": "Transit – Google Maps",
+      "url": "https://maps.google.de/landing/transit/cities/index.html",
+      "snippet": "Home Cities Covered Cities Covered"
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.de/maps?q=Heinrich-Stahl-Stra%C3%9Fe+3,+65934,+Frankfurt+am+Main&hl=de&sll=50.18286,8.66834&sspn=0.01113,0.017831&oq=Heinrich-Stahl-Stra%C3%9Fe+3+65934+Frankfurt+am+Main+&hnear=Heinrich-Stahl-Stra%C3%9Fe+3,+65934+Frankfurt+am+Main&t=m&z=16",
+      "snippet": "Mit Google Maps lokale Anbieter suchen, Karten anzeigen und Routenpläne abrufen."
+    },
+    {
+      "title": "Redirect Notice - Google Maps",
+      "url": "https://maps.google.de/url?url=httpss%3A%2F%2Ffitfife.co.uk/",
+      "snippet": "The previous page is sending you to an invalid url. If you do not want to visit that page, you can return to the previous page."
+    }
+  ]
+}

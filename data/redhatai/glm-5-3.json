@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "RedHatAI/GLM-5.3",
+  "slug": "redhatai-glm-5-3",
+  "author": "RedHatAI",
+  "url": "https://huggingface.co/RedHatAI/GLM-5.3",
+  "created_at": "2026-09-18T15:39:20.000Z",
+  "updated_at": "2026-09-18T15:39:20.000Z",
+  "license": "glm-5.3",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm_moe_dsa",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "arxiv:2602.15763",
+    "license:other",
+    "eval-results",
+    "endpoints_compatible",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 753329940480,
+  "parameters_human": "753.33B",
+  "storage_bytes": 755663627013,
+  "storage_human": "755.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube Help",
+      "url": "https://support.google.com/youtube/?hl=en",
+      "snippet": "Official YouTube Help Center where you can find tips and tutorials on using YouTube and other answers to frequently asked questions."
+    },
+    {
+      "title": "Mountain Bike News, Photos, Videos & Events | Pinkbike",
+      "url": "https://www.pinkbike.com/",
+      "snippet": "Pinkbike is the homepage of mountain biking. Stay updated with the latest news, reviews, videos, buyer's guides and racing results. …"
+    },
+    {
+      "title": "What is YouTube Music? - YouTube Music Help - Google Help",
+      "url": "https://support.google.com/youtubemusic/answer/6313529?hl=en",
+      "snippet": "With the YouTube Music app, you can watch music videos, stay connected to artists you love, and discover music and podcasts to …"
+    },
+    {
+      "title": "Interview: Vali Höll On Not Getting Paid By YT, Rider ... - Pinkbike",
+      "url": "https://www.pinkbike.com/news/interview-vali-hll-on-3-in-a-row-her-new-team-and-a-game-changing-frankenstein-bike.html",
+      "snippet": "Jun 30, 2026 · Vali Höll talks about winning three in a row, her new team and bike, the bright future of women's downhill racing, and …"
+    },
+    {
+      "title": "Channel or account terminations - YouTube Help - Google Help",
+      "url": "https://support.google.com/youtube/answer/2802168?hl=en",
+      "snippet": "Check status of a termination appeal Open YouTube Studio. View confirmation of your appeal submission, and check your appeal’s …"
+    }
+  ]
+}

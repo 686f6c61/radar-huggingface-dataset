@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "t8star/Taeh3-Comfy",
+  "slug": "t8star-taeh3-comfy",
+  "author": "t8star",
+  "url": "https://huggingface.co/t8star/Taeh3-Comfy",
+  "created_at": "2026-09-18T15:05:20.000Z",
+  "updated_at": "2026-09-18T15:16:22.000Z",
+  "license": "mit-and-apache-2.0-per-file",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "minimax-h3",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "minimax-h3",
+    "comfyui",
+    "taeh3",
+    "vae",
+    "preview",
+    "zh",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 32501140,
+  "storage_human": "33 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "微软为什么越来越不重视红心大战了？ - 知乎",
+      "url": "https://www.zhihu.com/question/31394955",
+      "snippet": "内置的游戏其实是无法给微软带来实际收入的。而选择Windows的人，很大程度上也并不是为了玩红心大战而来的。所以在Win8上自 …"
+    },
+    {
+      "title": "freecell — Green Felt Forum",
+      "url": "https://forum.greenfelt.net/discussion/10087/freecell",
+      "snippet": "Oct 8, 2020 · a lot of cheating going on it is physically impossible to complete a game in 8 seconds yet many seem to achieve the …"
+    },
+    {
+      "title": "Windows10 2019.2.5日的空当接龙专家难度怎么破解。？ - 知乎",
+      "url": "https://www.zhihu.com/question/311567084",
+      "snippet": "有个工具叫 Freecell Solver，可以求解所有有解的空当接龙。 它有一个在线的版本， Online Freecell solver (text based) 不过没有友好 …"
+    },
+    {
+      "title": "Freecell — Green Felt Forum",
+      "url": "https://forum.greenfelt.net/discussion/4045/freecell",
+      "snippet": "Dec 26, 2014 · Game: freecell Game #: 1668865545 Browser: Mozilla/5.0 (Windows NT 6.3; WOW64; rv:34.0) Gecko/20100101 …"
+    },
+    {
+      "title": "Freecell Green felt solitaire",
+      "url": "https://forum.greenfelt.net/discussion/4080/freecell-green-felt-solitaire",
+      "snippet": "Jan 9, 2015 · Freecell Green felt solitaire Anonymous GUESTS January 2015 edited January 2015 in Bug Reports"
+    }
+  ]
+}

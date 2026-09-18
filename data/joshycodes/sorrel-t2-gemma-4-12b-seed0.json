@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "joshycodes/sorrel-T2-gemma-4-12b-seed0",
+  "slug": "joshycodes-sorrel-t2-gemma-4-12b-seed0",
+  "author": "joshycodes",
+  "url": "https://huggingface.co/joshycodes/sorrel-T2-gemma-4-12b-seed0",
+  "created_at": "2026-09-18T18:31:44.000Z",
+  "updated_at": "2026-09-18T18:41:39.000Z",
+  "license": "research-only",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "research",
+    "continued-pretraining",
+    "self-authored-character",
+    "not-safety-tuned",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25964991183,
+  "storage_human": "26.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pasja daje radość życia. | Alfredo Espresso",
+      "url": "https://www.alfredo-espresso.com/pl-pl",
+      "snippet": "Alfredo Espresso Caffè zachwyca zarówno jako espresso, jak też Caffè Crema swoim perfekcyjnym balansem przypraw, lekkiej …"
+    },
+    {
+      "title": "Alfredo Espresso - Kawa ziarnista - Allegro",
+      "url": "https://allegro.pl/kategoria/kawa-kawa-ziarnista-74035?string=Alfredo%20Espresso",
+      "snippet": "Alfredo Espresso - Kawa ziarnista - Najwięcej produktów w jednym miejscu. Radość zakupów i 100% bezpieczeństwa dla każdej …"
+    },
+    {
+      "title": "Alfredo Espresso Tipo Bar - kawa ziarnista - Darboven Sklep",
+      "url": "https://darbovensklep.pl/produkt/alfredo-espresso-tipo-bar/",
+      "snippet": "Espresso Tipo Bar to najpopularniejszy gatunek marki Alfredo. Ta doskonała mieszanka kawy arabika pochodzącej z Ameryki …"
+    },
+    {
+      "title": "Alfredo Espresso Caffè - kawa ziarnista - Darboven Sklep",
+      "url": "https://darbovensklep.pl/produkt/alfredo-espresso-caffe/",
+      "snippet": "Produkty Alfredo Espresso wyróżniają się intensywnym smakiem i bogatym aromatem. Odpowiednio wyselekcjonowana mieszanka …"
+    },
+    {
+      "title": "Our product variety | Alfredo Espresso",
+      "url": "https://www.alfredo-espresso.com/pl-pl/nasze-espresso",
+      "snippet": "W tym miejscu chcemy przedstawić Wam bliżej szeroki asortyment produktów Alfredo Espresso. Głównym elementem naszego …"
+    }
+  ]
+}

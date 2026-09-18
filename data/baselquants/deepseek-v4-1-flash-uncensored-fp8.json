@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "baselquants/DeepSeek-V4.1-Flash-UNCENSORED-FP8",
+  "slug": "baselquants-deepseek-v4-1-flash-uncensored-fp8",
+  "author": "baselquants",
+  "url": "https://huggingface.co/baselquants/DeepSeek-V4.1-Flash-UNCENSORED-FP8",
+  "created_at": "2026-09-18T19:23:56.000Z",
+  "updated_at": "2026-09-18T19:23:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v41",
+    "text-generation",
+    "deepseek",
+    "deepseek-v4.1",
+    "abliterated",
+    "uncensored",
+    "crack",
+    "multimodal",
+    "moe",
+    "fp8",
+    "image-text-to-text",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4.1-Flash",
+    "license:mit",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 763205315794,
+  "parameters_human": "763.21B",
+  "storage_bytes": 510296708312,
+  "storage_human": "510.3 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Akari Tsumugi – JAVSUBBED.net",
+      "url": "https://javsubbed.net/actor/akari-tsumugi/",
+      "snippet": "Free JAV English Subbed Videos With Daily Updates. Watch your favorite JAV Videos with English Sub in HD anytime anywhere"
+    },
+    {
+      "title": "【Eng Sub】JUQ-641 Akari Tsumugi - Affair With My Colleague",
+      "url": "https://www.eporner.com/video-t8pebnULZ25/eng-sub-juq-641-akari-tsumugi-affair-with-my-colleague/",
+      "snippet": "Watch 【Eng Sub】JUQ-641 Akari Tsumugi - Affair With My Colleague. Starring: Akari Tsumugi. Duration: 118:16, available in: 720p, …"
+    },
+    {
+      "title": "[FNS-220 · Eng Sub] Tsumugi Akari, a female boss who is d... - JavNinja",
+      "url": "https://jav.ninja/en/videos/962681864/fns-220-english-subtitles-tsumugi-akari-a-female-boss-who-is",
+      "snippet": "Jul 22, 2026 · I've been bullied day in and day out, and I've already exceeded my limits...This retribution is justice. With the ``absolute …"
+    },
+    {
+      "title": "Akari Tsumugi JAV Videos – Watch Free - JavNinja",
+      "url": "https://jav.ninja/en/actress/597283755/akari-tsumugi",
+      "snippet": "Mar 31, 1998 · Watch Akari Tsumugi JAV videos free on JavNinja. Stream her full catalog with multi-language subtitles—sort by …"
+    },
+    {
+      "title": "Akari Tsumugi – JAVSUBBED.net",
+      "url": "https://javsubbed.net/actor/akari-tsumugi/?filter=most-viewed",
+      "snippet": "Free JAV English Subbed Videos With Daily Updates. Watch your favorite JAV Videos with English Sub in HD anytime anywhere."
+    }
+  ]
+}

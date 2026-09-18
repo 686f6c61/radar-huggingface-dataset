@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Huihui-NeoHorse-1-4B-abliterated-i1-GGUF",
+  "slug": "mradermacher-huihui-neohorse-1-4b-abliterated-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Huihui-NeoHorse-1-4B-abliterated-i1-GGUF",
+  "created_at": "2026-09-18T18:14:12.000Z",
+  "updated_at": "2026-09-18T22:15:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "agentic",
+    "tool-use",
+    "coding",
+    "reasoning",
+    "instruction-following",
+    "abliterated",
+    "uncensored",
+    "huihui",
+    "en",
+    "base_model:huihui-ai/Huihui-NeoHorse-1-4B-abliterated",
+    "base_model:quantized:huihui-ai/Huihui-NeoHorse-1-4B-abliterated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 53399969248,
+  "storage_human": "53.4 GB",
+  "base_model": "huihui-ai/Huihui-NeoHorse-1-4B-abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nereu Nunes - Usinas Siderurgicas De Minas Gerais S A Usiminas | LinkedIn",
+      "url": "https://br.linkedin.com/in/nereu-nunes-7a952844",
+      "snippet": "Veja o perfil de Nereu Nunes no LinkedIn, uma comunidade profissional de 1 bilhão de usuários."
+    },
+    {
+      "title": "6 \"Nereu Nunes\" profiles | LinkedIn",
+      "url": "https://www.linkedin.com/pub/dir/Nereu/Nunes",
+      "snippet": "There are 6 professionals named &quot;Nereu Nunes&quot;, who use LinkedIn to exchange information, ideas, and opportunities."
+    },
+    {
+      "title": "6 \"Nereu Nunes\" profiles | LinkedIn",
+      "url": "https://www.linkedin.com/pub/dir/Nereu/Nunes/br-0-Brasil",
+      "snippet": "There are 6 professionals named &quot;Nereu Nunes&quot;, who use LinkedIn to exchange information, ideas, and opportunities."
+    },
+    {
+      "title": "Nereu Nunes posted on LinkedIn",
+      "url": "https://www.linkedin.com/posts/nereu-nunes-7a952844_a-sustentabilidade-est%C3%A1-em-nosso-foco-aqui-activity-6720125817122373632-88TM",
+      "snippet": "A sustentabilidade está em nosso foco aqui na USIMINAS. Temos trabalhado incansavelmente para construir uma empresa que …"
+    },
+    {
+      "title": "Publicação de Nereu Nunes - LinkedIn Portugal",
+      "url": "https://pt.linkedin.com/posts/nereu-nunes-7a952844_diversidadeeinclus%C3%A3o-souusiminas-activity-6845781839509037056-BYg2",
+      "snippet": "Hoje, iniciamos mais uma Semana da Diversidade e Inclusão USIMINAS. A inclusão acontece quando se aprende com as …"
+    }
+  ]
+}

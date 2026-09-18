@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "davidalarrea/kitten-tts-g2p",
+  "slug": "davidalarrea-kitten-tts-g2p",
+  "author": "davidalarrea",
+  "url": "https://huggingface.co/davidalarrea/kitten-tts-g2p",
+  "created_at": "2026-09-18T13:26:30.000Z",
+  "updated_at": "2026-09-18T13:26:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "text-to-speech",
+    "g2p",
+    "phonemizer",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3011692,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Startseite - ELGA",
+      "url": "https://www.elga.gv.at/",
+      "snippet": "e-Impfpass für Ärztinnen, Ärzte und Gesundheitseinrichtungen - mehr erfahren » aktuelle news erfahren sie hier ihre vorteile mit elga …"
+    },
+    {
+      "title": "ELGA - die elektronische Gesundheitsakte | Gesundheitsportal",
+      "url": "https://www.gesundheit.gv.at/gesundheitsleistungen/elga.html",
+      "snippet": "ELGA ermöglicht Patientinnen und Patienten sowie Gesundheitsdiensteanbietern den orts- und zeitunabhängigen Zugang zu …"
+    },
+    {
+      "title": "ELGA-Portal - ELGA",
+      "url": "https://www.elga.gv.at/faq/elga-portal/",
+      "snippet": "Nachdem die Bürgerinnen und Bürger sich elektronisch mittels ID Austria ausgewiesen haben, können sie im ELGA-Portal ihre ELGA …"
+    },
+    {
+      "title": "Landing-Page | ELGA - Meine elektronische Gesundheitsakte",
+      "url": "https://www.elga-online.gv.at/",
+      "snippet": "15 hours ago · Landing page Der Zugang zu Ihrer ELGA erfolgt über das Gesundheitsportal www.gesundheit.gv.at."
+    },
+    {
+      "title": "ELGA-Portal Hilfe: Login / Logout | Gesundheitsportal",
+      "url": "https://www.gesundheit.gv.at/gesundheitsleistungen/elga/hilfe-formularservice/login.html",
+      "snippet": "Wenn Ihr Login auf gesundheit.gv.at erfolgreich war, öffnet sich eine Willkommensseite mit persönlicher Anrede. Hier finden Sie zum …"
+    }
+  ]
+}

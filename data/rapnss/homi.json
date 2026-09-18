@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Rapnss/Homi",
+  "slug": "rapnss-homi",
+  "author": "Rapnss",
+  "url": "https://huggingface.co/Rapnss/Homi",
+  "created_at": "2026-09-18T17:12:36.000Z",
+  "updated_at": "2026-09-18T17:12:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Generative AI: This is how you can use ChatGPT safely",
+      "url": "https://www.weforum.org/stories/2023/11/chatgpt-safety-generative-ai/",
+      "snippet": "Nov 21, 2023 · ChatGPT can provide opportunities at home and work for efficiencies and improvements – but alongside these come …"
+    },
+    {
+      "title": "What is the Paris Agreement? Everything you need to know",
+      "url": "https://www.weforum.org/stories/2020/11/paris-agreement-climate-change-us-biden/",
+      "snippet": "Nov 11, 2020 · The Paris Agreement is the global plan to tackle climate change and restrict global warming to well below 2°C above …"
+    },
+    {
+      "title": "Here are 7 ways governments can foster entrepreneurship",
+      "url": "https://www.weforum.org/stories/2023/02/7-ways-governments-can-support-entrepreneurship/",
+      "snippet": "Feb 14, 2023 · Entrepreneurship plays a vital role in economic growth and job creation but entrepreneurs must overcome financial, …"
+    },
+    {
+      "title": "Paul Abbott - Agenda Contributor | World Economic Forum",
+      "url": "https://www.weforum.org/stories/authors/paul-abbott/",
+      "snippet": "Jan 20, 2025 · Paul Abbott is Chief Executive Officer of American Express Global Business Travel (Amex GBT). Amex GBT is the …"
+    },
+    {
+      "title": "Japan's equitable health access key to a resilient society",
+      "url": "https://www.weforum.org/stories/2025/04/japan-building-resilient-society-through-equitable-healthcare/",
+      "snippet": "Apr 7, 2025 · Japan has the world's fastest ageing population and has been updating its healthcare insurance system to maintain …"
+    }
+  ]
+}

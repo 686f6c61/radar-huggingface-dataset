@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "aacudad/AnomalyThink-LLaVA-OneVision-7B-KCR-corrected",
+  "slug": "aacudad-anomalythink-llava-onevision-7b-kcr-corrected",
+  "author": "aacudad",
+  "url": "https://huggingface.co/aacudad/AnomalyThink-LLaVA-OneVision-7B-KCR-corrected",
+  "created_at": "2026-09-18T15:10:17.000Z",
+  "updated_at": "2026-09-18T15:22:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llava_onevision",
+    "image-text-to-text",
+    "anomaly-detection",
+    "industrial-anomaly-detection",
+    "vision-language-model",
+    "reasoning",
+    "llava-onevision",
+    "conversational",
+    "dataset:aacudad/AnomalyThink",
+    "base_model:llava-hf/llava-onevision-qwen2-7b-si-hf",
+    "base_model:finetune:llava-hf/llava-onevision-qwen2-7b-si-hf",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030807584,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16073136418,
+  "storage_human": "16.1 GB",
+  "base_model": "llava-hf/llava-onevision-qwen2-7b-si-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "红楼梦中。贾府的四春分别是。孤独的谁？懦弱的谁？精明的谁？孤僻的谁…",
+      "url": "https://zhidao.baidu.com/question/1881680111075565228.html",
+      "snippet": "最精明的是探春，“才自清明志自高”可不是吹的，看她管理府内的事务就知道了。 贾府的四春分别是孤独的贾惜春、懦弱的贾迎春、精 …"
+    },
+    {
+      "title": "原应叹息 - 百度百科",
+      "url": "https://baike.baidu.com/item/%E5%8E%9F%E5%BA%94%E5%8F%B9%E6%81%AF/845397",
+      "snippet": "原应叹息是《红楼梦》中贾元春、贾迎春、贾探春、贾惜春四位贾府小姐姓名首字的谐音组合，源自脂砚斋批注“原也、应也、叹也、 …"
+    },
+    {
+      "title": "贾府的四春分别是：孤独的？，懦弱的？，精明的？，孤僻的？，取？ …",
+      "url": "https://zhidao.baidu.com/question/588060829.html",
+      "snippet": "Sep 2, 2013 · 贾府的四春分别是: 孤独的是元春 (原)元春, 懦弱的是迎春 (应)迎春, 最精明是探春 (叹)探春, 最孤僻是惜春 (惜)惜春, 取\" …"
+    },
+    {
+      "title": "贾府的“四春”分别是：孤独的______、懦弱的______、精明的______、孤僻的…",
+      "url": "https://wenku.baidu.com/view/09d891d8f211f18583d049649b6648d7c0c70801.html",
+      "snippet": "本题考察《红楼梦》贾府\"四春\"的人物特征及其命运关联。 解题需分三步："
+    },
+    {
+      "title": "贾府的四春分别是：孤独的（），懦弱的（），精明的（），孤僻的（…",
+      "url": "https://wenwen.sogou.com/question/q607797541.htm",
+      "snippet": "Nov 12, 2014 · 取原应叹息之意。 最孤独的是元春，被困在皇宫里，一个亲人也见不到。 最懦弱的是迎春，在里面经常被下人欺负， …"
+    }
+  ]
+}

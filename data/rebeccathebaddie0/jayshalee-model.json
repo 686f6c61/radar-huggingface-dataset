@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "rebeccathebaddie0/jayshalee.model",
+  "slug": "rebeccathebaddie0-jayshalee-model",
+  "author": "rebeccathebaddie0",
+  "url": "https://huggingface.co/rebeccathebaddie0/jayshalee.model",
+  "created_at": "2026-09-18T14:42:12.000Z",
+  "updated_at": "2026-09-18T14:42:12.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hotmail – Outlook.com",
+      "url": "http://www.hotmail.com/?mkt=fr-fr",
+      "snippet": "Outlook.com est le service de messagerie personnalisé et gratuit de Microsoft. Disposez d'une boîte mail toujours en ordre grâce à …"
+    },
+    {
+      "title": "Outlook",
+      "url": "https://outlook.office.com/mail/?ui=fr-FR&rs=FR",
+      "snippet": "Sign in to Outlook to access and manage your email with Microsoft 365."
+    },
+    {
+      "title": "Comment se connecter à Hotmail | Microsoft Support",
+      "url": "https://support.microsoft.com/fr-fr/accounts-billing/manage/how-to-sign-in-to-hotmail",
+      "snippet": "Hotmail est maintenant Outlook.com. Découvrez comment vous connecter pour accéder à votre compte de messagerie Outlook.com, …"
+    },
+    {
+      "title": "Connexion à Outlook | Microsoft 365",
+      "url": "https://www.microsoft.com/fr-fr/microsoft-365/outlook/log-in?msockid=21a7fc457d5c676139c8eb9d7c0e6615",
+      "snippet": "Nous avons remanié Hotmail et relancé le service sous l’appellation Outlook. Nous sommes toujours résolus à offrir aux utilisateurs la …"
+    },
+    {
+      "title": "Outlook",
+      "url": "https://outlook.office.com/mail/mini/opxdeeplink/mail/inbox",
+      "snippet": "Access your email, calendar, and contacts with Outlook."
+    }
+  ]
+}

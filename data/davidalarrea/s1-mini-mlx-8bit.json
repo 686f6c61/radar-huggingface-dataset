@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "davidalarrea/S1-mini-MLX-8bit",
+  "slug": "davidalarrea-s1-mini-mlx-8bit",
+  "author": "davidalarrea",
+  "url": "https://huggingface.co/davidalarrea/S1-mini-MLX-8bit",
+  "created_at": "2026-09-18T13:27:55.000Z",
+  "updated_at": "2026-09-18T13:28:01.000Z",
+  "license": "s1-mini-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3",
+    "asr",
+    "text-normalization",
+    "inverse-text-normalization",
+    "punctuation",
+    "truecasing",
+    "speech-to-text",
+    "dictation",
+    "post-processing",
+    "8-bit",
+    "text-generation",
+    "conversational",
+    "en",
+    "arxiv:2505.09388",
+    "base_model:superwhisper/s1-mini",
+    "base_model:quantized:superwhisper/s1-mini",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 645019707,
+  "storage_human": "645 MB",
+  "base_model": "superwhisper/s1-mini",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Download & use Google Translate",
+      "url": "https://support.google.com/translate/answer/6350850?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "You can translate text, handwriting, photos, and speech in over 200 languages with the Google Translate app. You can also use …"
+    },
+    {
+      "title": "Accessing the old version of google translator",
+      "url": "https://support.google.com/translate/thread/62764231/accessing-the-old-version-of-google-translator?hl=en",
+      "snippet": "Aug 3, 2020 · I need the previous version of google translation (Statistical version) for my research, I was wondering if the previous …"
+    },
+    {
+      "title": "Language File System | RPG Maker Forums",
+      "url": "https://forums.rpgmakerweb.com/threads/language-file-system.17964/",
+      "snippet": "Sep 21, 2022 · Language File System v1.4.2by DerTravelerIntroduction This script enables you to load any of the game's text content …"
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/windows/forum/all/intermittent-stutter-security-event/9ac9ba31-8d8a-4a48-a04e-408175bf2ba1",
+      "snippet": ""
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/msoffice/forum/all/i-have-a-perpetual-license-to-microsoft-office-for/731db2fe-4318-4681-bcbf-9488cb540115",
+      "snippet": ""
+    }
+  ]
+}

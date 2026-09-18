@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Lumen-SEU/AMC-Drive-NAVSIM-v1-0919",
+  "slug": "lumen-seu-amc-drive-navsim-v1-0919",
+  "author": "Lumen-SEU",
+  "url": "https://huggingface.co/Lumen-SEU/AMC-Drive-NAVSIM-v1-0919",
+  "created_at": "2026-09-18T16:49:57.000Z",
+  "updated_at": "2026-09-18T16:50:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1247101994,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lumen (unité) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Lumen_(unit%C3%A9)",
+      "snippet": "Le lumen est une unité photométrique, tout comme la candela dont elle est dérivée, elle est fondée sur la perception humaine de la …"
+    },
+    {
+      "title": "Lumen",
+      "url": "https://www.lumen.universite-paris-saclay.fr/",
+      "snippet": "Aug 25, 2022 · Le Lumen propose des services propres à la réussite étudiante et à la vie de campus. Vous y trouverez des services …"
+    },
+    {
+      "title": "Lumens : définition et guide pour une lumière parfaite",
+      "url": "https://eclairagefrancais.fr/blogs/astuces-et-conseils/lumens-definition-et-guide-complet",
+      "snippet": "Le lumen, noté \"lm\", exprime la quantité de lumière visible produite par une ampoule, qu'il s'agisse d'un spot, d'un tube LED, d'une …"
+    },
+    {
+      "title": "Lumen / Watt : comment choisir la bonne puissance pour son …",
+      "url": "https://www.pro-illumination.fr/blogled/lumen-watt-comment-choisir-la-bonne-puissance-pour-son-eclairage/",
+      "snippet": "Oct 13, 2021 · En matière d’éclairage, le lumen indique la quantité totale de lumière visible émise par votre ampoule : La luminosité. …"
+    },
+    {
+      "title": "Lumen",
+      "url": "http://lumen.universite-paris-saclay.fr/en",
+      "snippet": "Welcome To Lumen! Lumen is a learning centre. It provides services tailored for student success and campus life. Here, you will find …"
+    }
+  ]
+}

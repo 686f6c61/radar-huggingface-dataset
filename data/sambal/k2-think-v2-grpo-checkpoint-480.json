@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "sambal/k2-think-v2-grpo-checkpoint-480",
+  "slug": "sambal-k2-think-v2-grpo-checkpoint-480",
+  "author": "sambal",
+  "url": "https://huggingface.co/sambal/k2-think-v2-grpo-checkpoint-480",
+  "created_at": "2026-09-18T18:26:22.000Z",
+  "updated_at": "2026-09-18T19:29:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "grpo",
+    "k2-think-v2",
+    "conversational",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 72550195200,
+  "parameters_human": "72.55B",
+  "storage_bytes": 290221545946,
+  "storage_human": "290.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ABC Phonics Song with Sounds for Children - Alphabet Song with …",
+      "url": "https://www.youtube.com/watch?v=tKsIi1MH4lw",
+      "snippet": "Jun 20, 2019 · This animated phonics song helps children learn the sounds of the letters in the English alphabet. Colorful characters …"
+    },
+    {
+      "title": "ABC Phonics Chant for Children | Sounds and Actions from A to Z",
+      "url": "https://www.youtube.com/watch?v=ChqnN3cKzXQ",
+      "snippet": "Aug 26, 2023 · A phonics chant with a picture for each letter from A to Z It's designed to help children learn the sounds of the letters …"
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/watch?v=R2frjzrC5Jg",
+      "snippet": "Playing from Learn Phonics Song for Children (Official Video) Alphabet Song | Letter Sounds | Signing for babies Mix Save"
+    },
+    {
+      "title": "Learn the Alphabet - ABCs Phonics Song - All 26 Letter Sounds",
+      "url": "https://music.youtube.com/watch?v=RAHd8_VIW7Y",
+      "snippet": "Sign in to create & share playlists, get personalized recommendations, and more."
+    },
+    {
+      "title": "Learn Phonics Song for Children (Official Video) Alphabet Song _ Letter ...",
+      "url": "https://www.dailymotion.com/video/x96z6ve",
+      "snippet": "Oct 8, 2024 · Discover the \"Learn Phonics Song for Children\" in this official video! Perfect for toddlers and preschoolers, this …"
+    }
+  ]
+}

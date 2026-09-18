@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Qwedrins/HiQwe",
+  "slug": "qwedrins-hiqwe",
+  "author": "Qwedrins",
+  "url": "https://huggingface.co/Qwedrins/HiQwe",
+  "created_at": "2026-09-18T12:45:32.000Z",
+  "updated_at": "2026-09-18T12:45:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TikTok - Make Your Day",
+      "url": "https://www.tiktok.com/ru-RU/",
+      "snippet": "TikTok: здесь рождаются тренды. Миллионы коротких видео, специально подобранных для каждого зрителя, ждут вас на …"
+    },
+    {
+      "title": "#фильмы | TikTok",
+      "url": "https://www.tiktok.com/tag/%d1%84%d0%b8%d0%bb%d1%8c%d0%bc%d1%8b",
+      "snippet": "фильмы |1.9M публикаций Смотрите новые видео в TikTok (тикток) на тему #фильмы."
+    },
+    {
+      "title": "Рекламная платформа TikTok: создание ...",
+      "url": "https://ads.tiktok.com/business/ru/solutions/ads-manager",
+      "snippet": "Создавайте и оптимизируйте рекламные кампании, а также управляйте ими на Рекламной платформе TikTok. Узнайте …"
+    },
+    {
+      "title": "TikTok Business Center",
+      "url": "https://business.tiktok.com/ru",
+      "snippet": "Добейтесь всех своих бизнес-целей вместе с TikTok Business Center. Просматривайте решения для рекламы, авторов, …"
+    },
+    {
+      "title": "Бізнес-акаунт у TikTok: реєстрація ...",
+      "url": "https://ads.tiktok.com/business/uk-UA/solutions/business-account",
+      "snippet": "Створіть безкоштовний бізнес-акаунт TikTok для свого бренду та спілкуйтеся з аудиторією. Використовуйте аналітику, …"
+    }
+  ]
+}

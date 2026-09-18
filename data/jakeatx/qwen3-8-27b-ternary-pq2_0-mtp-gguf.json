@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "jakeatx/Qwen3.8-27B-Ternary-PQ2_0-MTP-GGUF",
+  "slug": "jakeatx-qwen3-8-27b-ternary-pq2_0-mtp-gguf",
+  "author": "jakeatx",
+  "url": "https://huggingface.co/jakeatx/Qwen3.8-27B-Ternary-PQ2_0-MTP-GGUF",
+  "created_at": "2026-09-18T15:17:24.000Z",
+  "updated_at": "2026-09-18T15:24:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3_5",
+    "ternary",
+    "mtp",
+    "speculative-decoding",
+    "ampere",
+    "sm86",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 15159659104,
+  "storage_human": "15.2 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rocket League Stats, Leaderboards & More! - Rocket League Tracker",
+      "url": "https://rocketleague.tracker.network/",
+      "snippet": "Tracker.gg provides Rocket League stats, as well as global and regional leaderboards for players around the world. Use our Rocket …"
+    },
+    {
+      "title": "Live Tracker - Rocket League Tracker",
+      "url": "https://rocketleague.tracker.network/rocket-league/live",
+      "snippet": "Track your sessions and see your progress as you play. Start a new session at any time or add players to compare with teammates …"
+    },
+    {
+      "title": "Rocket League Tracker App - Rocket League Tracker",
+      "url": "https://rocketleague.tracker.network/rocket-league/app",
+      "snippet": "Download the ultimate Rocket League stats tracker for FREE! An in-game real-time tracking solution for your Rocket League stats. …"
+    },
+    {
+      "title": "Ranked Doubles 2v2 Rating Leaderboard - Rocket League Tracker",
+      "url": "https://rocketleague.tracker.network/rocket-league/leaderboards/playlist/all/default?page=1",
+      "snippet": "View our Rocket League Ranked Doubles 2v2 Rating leaderboards to see how you compare."
+    },
+    {
+      "title": "Goals Leaderboard - Rocket League Tracker",
+      "url": "https://rocketleague.tracker.network/rocket-league/leaderboards/stats/all/Goals?page=1",
+      "snippet": "View our Rocket League Goals leaderboards to see how you compare."
+    }
+  ]
+}

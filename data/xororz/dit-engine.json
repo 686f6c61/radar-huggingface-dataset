@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "xororz/dit-engine",
+  "slug": "xororz-dit-engine",
+  "author": "xororz",
+  "url": "https://huggingface.co/xororz/dit-engine",
+  "created_at": "2026-09-18T16:14:29.000Z",
+  "updated_at": "2026-09-18T16:14:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "local-dream",
+    "hexagon",
+    "npu",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 24955413,
+  "storage_human": "25 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "yes - התחברות לאזור האישי וניהול חשבון",
+      "url": "https://www.yes.co.il/personal-account/",
+      "snippet": "הוספה והסרת תכנים, עדכון פרטים, צפייה בחשבוניות ועוד. האזור האישי ללקוחות yes - היכנסו לאתר."
+    },
+    {
+      "title": "yesGo | Main Login",
+      "url": "https://idpgo.yes.co.il/",
+      "snippet": "כדי להתחיל לצפות הכניסו את מספר ת.ז של בעל המנוי ב-yes ואת מספר הטלפון שלו ותקבלו קוד כניסה לטלפון הנייד"
+    },
+    {
+      "title": "yes - שירות לקוחות yes | יצירת קשר עם שירות ותמיכה טכנית | yes תלונה",
+      "url": "https://www.yes.co.il/general/contact/",
+      "snippet": "מוקד שירות לקוחות yes מציע מענה מהיר עבור פניות יס בכל ערוצי התקשורת - טלפון, WhatsApp, אתר או SMS. צוות תמיכה טכנית מקצועי זמין 24/7 …"
+    },
+    {
+      "title": "yes - yes+ | הטלוויזיה המדהימה בעולם",
+      "url": "https://www.yes.co.il/content/yesplus/",
+      "snippet": "yes+, שירות הסטרימינג הגדול בישראל. הכנסו לאתר yes והצטרפו לשירות יס פלוס, הטלוויזיה המדהימה בעולם עם myTV - פרופיל צפייה אישי לכל אחד …"
+    },
+    {
+      "title": "yes - הסדרות והסרטים הטובים בעולם | yes",
+      "url": "https://www.yes.co.il/",
+      "snippet": "אפליקציית דיסני+ החדשה הגיעה ל-yes! דרמה קומית מקורית ומרגשת מאת גיתית פישר ובכיכובה. שגית היא סלקטורית בנתב\"ג שחיה עם אביה, נאלצת …"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "sebi77x/as1anbaddie",
+  "slug": "sebi77x-as1anbaddie",
+  "author": "sebi77x",
+  "url": "https://huggingface.co/sebi77x/as1anbaddie",
+  "created_at": "2026-09-18T15:07:04.000Z",
+  "updated_at": "2026-09-18T15:07:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 233060625,
+  "storage_human": "233 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mWater Portal",
+      "url": "https://portal.mwater.co/",
+      "snippet": "mWater is the leading, free operating system for WASH in low-resource regions. This flexible data management platform is used in …"
+    },
+    {
+      "title": "National MIS - Papua New Guinea - mWater Portal Resource Center",
+      "url": "https://portal.mwater.co/resource_center/png_mis.html",
+      "snippet": "management information system wateraid png data collection reporting platform asia schools communities health care facilities water …"
+    },
+    {
+      "title": "Custom shapefiles - mWater Portal Resource Center",
+      "url": "https://portal.mwater.co/resource_center/custom_shapefiles.html",
+      "snippet": "Importing and Using Shapefiles A shapefile of Malawi's Geology Adding Shapefiles to Maps Overview With custom data tables now in …"
+    },
+    {
+      "title": "Surveys>Responses - mWater Portal Resource Center",
+      "url": "https://portal.mwater.co/resource_center/surveys_responses.html",
+      "snippet": "The Responses tab allows for managing of survey responses either individually or in bulk. This includes viewing, approving, rejecting, …"
+    },
+    {
+      "title": "Frequently asked questions - mWater Portal Resource Center",
+      "url": "https://portal.mwater.co/resource_center/faq.html",
+      "snippet": "Portal is a cloud-based web application that is accessible through a web browser where the Planning, Deployment, Cleaning and …"
+    }
+  ]
+}

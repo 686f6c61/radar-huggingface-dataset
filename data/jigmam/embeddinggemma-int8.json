@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "jigmam/embeddinggemma-int8",
+  "slug": "jigmam-embeddinggemma-int8",
+  "author": "jigmam",
+  "url": "https://huggingface.co/jigmam/embeddinggemma-int8",
+  "created_at": "2026-09-18T15:24:37.000Z",
+  "updated_at": "2026-09-18T15:24:41.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "onnx",
+    "safetensors",
+    "gemma3_text",
+    "sentence-similarity",
+    "feature-extraction",
+    "text-embeddings-inference",
+    "arxiv:2509.20354",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 357135504,
+  "storage_human": "357 MB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Orthopädische & Diabetiker-Schuhe nach Maß | THANNER",
+      "url": "https://thanner-gmbh.com/",
+      "snippet": "Hochwertige orthopädische Schuhe, Diabetiker-Schuhe und Sicherheitsschuhe nach Maß – handgefertigt für perfekten Komfort und …"
+    },
+    {
+      "title": "Ortho­pädische, Diabetiker- & Sicherheitsschuhe Kataloge | THANNER",
+      "url": "https://thanner-gmbh.com/produktkataloge/",
+      "snippet": "Entdecken Sie in unseren Produktkatalogen hochwertige Schuhe und Schäfte, die durch erstklassige Materialien, innovative Technik …"
+    },
+    {
+      "title": "Thannershop | Login",
+      "url": "https://thannershop.com/",
+      "snippet": "The cookies listed are necessary for the correct functioning of our website and are therefore mandatory."
+    },
+    {
+      "title": "Thannershop | Login",
+      "url": "https://www.thannershop.com/preview/",
+      "snippet": "Thannershop bietet eine Vorschau auf Produkte und Dienstleistungen an."
+    },
+    {
+      "title": "Thanner GmbH, Am Fallenweg 30, Höchstädt an der Donau (2026)",
+      "url": "https://www.findglocal.com/DE/H%C3%B6chst%C3%A4dt-an-der-Donau/288524184496977/Thanner-GmbH",
+      "snippet": "Aug 28, 2026 · So entstehen Schäfte und Schuhe, die nicht nur passen – sondern eine zuverlässige Basis für anspruchsvolle …"
+    }
+  ]
+}

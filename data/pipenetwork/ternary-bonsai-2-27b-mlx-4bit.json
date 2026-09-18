@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "pipenetwork/Ternary-Bonsai-2-27B-MLX-4bit",
+  "slug": "pipenetwork-ternary-bonsai-2-27b-mlx-4bit",
+  "author": "pipenetwork",
+  "url": "https://huggingface.co/pipenetwork/Ternary-Bonsai-2-27B-MLX-4bit",
+  "created_at": "2026-09-18T19:59:32.000Z",
+  "updated_at": "2026-09-18T20:00:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "apple-silicon",
+    "ternary",
+    "vision-language",
+    "image-text-to-text",
+    "conversational",
+    "base_model:prism-ml/Ternary-Bonsai-2-27B-gguf",
+    "base_model:quantized:prism-ml/Ternary-Bonsai-2-27B-gguf",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 16067355229,
+  "storage_human": "16.1 GB",
+  "base_model": "prism-ml/Ternary-Bonsai-2-27B-gguf",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "24TUNED - Online winkel voor Tuning & Performance parts ️",
+      "url": "https://24tuned.com/",
+      "snippet": "Ontdek de beste Tuning & Performance Parts voor snelle modellen van Volkswagen, Audi, BMW, Ford, Mercedes Benz, MINI, Seat, …"
+    },
+    {
+      "title": "Shop - 24TUNED",
+      "url": "https://24tuned.com/shop/",
+      "snippet": "CTS Turbo rode upgrade bobine Krachtigere (+10%) en betrouwbaardere ontsteking Voor de VAG EA113 + EA888.1 + EA888.2 TSI …"
+    },
+    {
+      "title": "24TUNED | Maastricht - Facebook",
+      "url": "https://www.facebook.com/24tuned/",
+      "snippet": "kwaliteit en eerlijkheid verdient. Toen ik 24TUNED begon, had ik één doel: Een bedrijf bouwen waar je met een gerust hart je …"
+    },
+    {
+      "title": "24TUNED reviews | Bekijk consumentenreviews over www.24tuned.nl",
+      "url": "https://nl.trustpilot.com/review/www.24tuned.nl",
+      "snippet": "Ben je het eens met de 4-sterrenscore van 24TUNED? Bekijk wat 17 anderen hebben geschreven en deel je eigen ervaring."
+    },
+    {
+      "title": "24TUNED (@24tuned) • Instagram photos and videos",
+      "url": "https://www.instagram.com/24tuned/",
+      "snippet": "11K Followers, 36 Following, 639 Posts - 24TUNED (@24tuned) on Instagram: \"Snel, sneller, snelst! 🏎️ 📦De Snelste Online …"
+    }
+  ]
+}

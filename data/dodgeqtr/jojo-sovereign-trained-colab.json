@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "dodgeqtr/jojo-sovereign-trained-colab",
+  "slug": "dodgeqtr-jojo-sovereign-trained-colab",
+  "author": "dodgeqtr",
+  "url": "https://huggingface.co/dodgeqtr/jojo-sovereign-trained-colab",
+  "created_at": "2026-09-18T17:23:40.000Z",
+  "updated_at": "2026-09-18T21:57:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3212749888,
+  "parameters_human": "3.21B",
+  "storage_bytes": 4038754816,
+  "storage_human": "4.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MAILLOTS - BLEU - HOMMES | ADIDAS FR",
+      "url": "https://www.adidas.fr/maillots-bleu-hommes",
+      "snippet": "Trouve tes adidas dans la categorie: Maillots - Bleu - Hommes. Toutes les couleurs et styles adidas sur le site www.adidas.fr."
+    },
+    {
+      "title": "Le Maillot Esport - Maillot Esport Personnalisé | Meilleurs prix",
+      "url": "https://lemaillotesport.com/",
+      "snippet": "Découvre la boutique de maillot personnalisé Esport la plus simple et au meilleur prix. Solution clé en main avec customisation sur le …"
+    },
+    {
+      "title": "Maillots De Sport · Bleu - BLEU | ADIDAS FR",
+      "url": "https://www.adidas.fr/maillots-bleu",
+      "snippet": "Trouve tes adidas dans la categorie: Maillots - Bleu. Toutes les couleurs et styles adidas sur le site www.adidas.fr."
+    },
+    {
+      "title": "Maillots de sport Kappa : Hommes Maillot de sport – Mots clés \"Bleu\"",
+      "url": "https://www.kappa.fr/collections/maillots-homme/bleu",
+      "snippet": "Découvrez les maillots de sport Kappa pour hommes: maillots de football, maillots de rugby, maillots de basket."
+    },
+    {
+      "title": "Maillots de sport homme en promo adidas bleu - Zalando",
+      "url": "https://www.zalando.fr/promo-maillots-sport-homme/adidas_bleu/",
+      "snippet": "Commandez les maillots de sport homme en promo adidas bleu en ligne sur Zalando Livraisons et retours gratuits sur la plupart des …"
+    }
+  ]
+}

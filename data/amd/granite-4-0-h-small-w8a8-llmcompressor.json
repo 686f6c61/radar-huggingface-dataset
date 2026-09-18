@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "amd/granite-4.0-h-small-w8a8-llmcompressor",
+  "slug": "amd-granite-4-0-h-small-w8a8-llmcompressor",
+  "author": "amd",
+  "url": "https://huggingface.co/amd/granite-4.0-h-small-w8a8-llmcompressor",
+  "created_at": "2026-09-18T14:26:02.000Z",
+  "updated_at": "2026-09-18T14:28:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "granitemoehybrid",
+    "text-generation",
+    "quantized",
+    "int8",
+    "w8a8",
+    "dynamic-quantization",
+    "8-bit",
+    "llm-compressor",
+    "zendnn",
+    "compressed-tensors",
+    "amd",
+    "cpu-inference",
+    "conversational",
+    "en",
+    "base_model:ibm-granite/granite-4.0-h-small",
+    "base_model:quantized:ibm-granite/granite-4.0-h-small",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32207337984,
+  "parameters_human": "32.21B",
+  "storage_bytes": 32669368128,
+  "storage_human": "32.7 GB",
+  "base_model": "ibm-granite/granite-4.0-h-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AMD ׀ together we advance_IA",
+      "url": "https://www.amd.com/fr.html",
+      "snippet": "Sep 9, 2026 · AMD est à la pointe de l'industrie en matière de coût total de possession, d'efficacité et de capacités d'IA avancées. …"
+    },
+    {
+      "title": "Pilotes et assistance – Processeurs et cœurs graphiques - AMD",
+      "url": "https://www.amd.com/fr/support/download/drivers.html",
+      "snippet": "Télécharger des pilotes et des softwares pour les produits AMD : comprend la prise en charge Windows et Linux, des outils de …"
+    },
+    {
+      "title": "Cours AMD (ADVANCED MICRO DEVICES) NASDAQ - Boursorama",
+      "url": "https://www.boursorama.com/cours/AMD/",
+      "snippet": "Le cours de l'action AMD (ADVANCED MICRO DEVICES) AMD sur Boursorama : historique de la cotation sur NASDAQ, graphique, …"
+    },
+    {
+      "title": "Quels sont les meilleurs processeurs (CPU) AMD ? Septembre 2026",
+      "url": "https://www.lesnumeriques.com/cpu-processeur/guide-achat-quels-sont-les-meilleurs-processeurs-cpu-amd-g247698.html",
+      "snippet": "2 days ago · Avec une gamme Ryzen de plus en plus vaste, choisir le bon processeur peut s'avérer complexe ; ce comparatif …"
+    },
+    {
+      "title": "AMD Online Store",
+      "url": "https://shop-eu-fr.amd.com/",
+      "snippet": "The Fastest Gaming Processor the World has Ever Seen AMD Ryzen™ 9000X3D Series processors are here. Shop Now"
+    }
+  ]
+}

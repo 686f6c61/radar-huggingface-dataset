@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "mradermacher/ZOZ-SecOps-Master-3B-i1-GGUF",
+  "slug": "mradermacher-zoz-secops-master-3b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/ZOZ-SecOps-Master-3B-i1-GGUF",
+  "created_at": "2026-09-18T17:28:06.000Z",
+  "updated_at": "2026-09-18T18:00:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:z51722369/ZOZ-SecOps-Master-3B",
+    "base_model:quantized:z51722369/ZOZ-SecOps-Master-3B",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 36758276992,
+  "storage_human": "36.8 GB",
+  "base_model": "z51722369/ZOZ-SecOps-Master-3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bing",
+      "url": "https://www.bing.com/version",
+      "snippet": "Bing ... Versions"
+    },
+    {
+      "title": "検索 - Microsoft Bing",
+      "url": "https://jp.bing.com/?setlang=ja&cc=jp&cc=JP",
+      "snippet": "Microsoft Bing を使用して検索し、AI の機能を使用して情報を検索したり、Web ページ、画像、ビデオ、マップなどを探索したり …"
+    },
+    {
+      "title": "Bing",
+      "url": "https://www.bing.com/RelatedSearch",
+      "snippet": ""
+    },
+    {
+      "title": "Bing ジェネレーティブ検索 |マイクロソフトのBing",
+      "url": "https://explore.microsoft.com/ja-jp/bing/features/bing-generative-search",
+      "snippet": "Bing ジェネレーティブ検索は、AI を利用して、検索結果を最適化するだけでなく、その結果がまとまりのあるシームレスなレイア …"
+    },
+    {
+      "title": "Bing検索エンジンの特徴とAI進化を徹底比較｜設定・不具合対策 ...",
+      "url": "https://lifestyle.assist-all.co.jp/bing-engine-features-ai-settings-troubleshooting-apps/",
+      "snippet": "Oct 11, 2025 · このページを読めば、Bing検索エンジンの基礎から応用までが【すぐに理解】でき、あなたも知らずに損してい …"
+    }
+  ]
+}

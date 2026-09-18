@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "arianaazarbal/ct-qwen36-35b-oai-gen-postcot-g2-b1",
+  "slug": "arianaazarbal-ct-qwen36-35b-oai-gen-postcot-g2-b1",
+  "author": "arianaazarbal",
+  "url": "https://huggingface.co/arianaazarbal/ct-qwen36-35b-oai-gen-postcot-g2-b1",
+  "created_at": "2026-09-18T18:17:09.000Z",
+  "updated_at": "2026-09-18T18:17:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "constitutional-training",
+    "iterated-constitution",
+    "family:qwen36_35b",
+    "seed:openai",
+    "method:gen",
+    "regime:post_cot",
+    "gen:2",
+    "branch:b1",
+    "text-generation",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:adapter:Qwen/Qwen3.6-35B-A3B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4491829400,
+  "storage_human": "4.5 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Epson L382 Support",
+      "url": "https://www.epson.eu/en_EU/support/sc/epson-l382/s/s1506",
+      "snippet": "To register your new product, click the \"Register Now\" button. To check the warranty status of your product, click the \"Check …"
+    },
+    {
+      "title": "Epson Setup Navi",
+      "url": "https://support.epson.net/setupnavi/?LG2=EN&OSC=WS&MKN=L382&PINF=setup",
+      "snippet": "Setup for the L382 Series Follow the steps below to set up your printer for the first time or when adding a computer to a printer …"
+    },
+    {
+      "title": "Epson Download Center",
+      "url": "https://download-center.epson.com/softwares/?device_id=L380%20Series&region=GB&os=WIN10",
+      "snippet": "Content not found?"
+    },
+    {
+      "title": "Epson L382 Support | Epson Europe",
+      "url": "https://epson-eu.cbnd-seikoepso3-s2-public.model-t.cc.commerce.ondemand.com/en_EU/support/sc/epson-l382/s/s1506",
+      "snippet": "This manual provides you with information on how to use your product from setting up to troubleshooting. This guide will help you set …"
+    },
+    {
+      "title": "Download Epson L382 Driver – Official and Updated",
+      "url": "https://unaimpresora.com/en/drivers/epson/epson-l382/",
+      "snippet": "Download the official Epson L382 driver for Windows 11, 10, Mac, Linux, and Epson Scan 64-bit & 32-bit. Safe, free, and updated …"
+    }
+  ]
+}

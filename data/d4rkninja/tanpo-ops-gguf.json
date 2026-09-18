@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "d4rkninja/tanpo-ops-GGUF",
+  "slug": "d4rkninja-tanpo-ops-gguf",
+  "author": "d4rkninja",
+  "url": "https://huggingface.co/d4rkninja/tanpo-ops-GGUF",
+  "created_at": "2026-09-18T15:38:18.000Z",
+  "updated_at": "2026-09-18T17:46:39.000Z",
+  "license": "lfm-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "ops",
+    "tanpo",
+    "text-generation",
+    "en",
+    "base_model:LiquidAI/LFM2.5-1.2B-Instruct",
+    "base_model:quantized:LiquidAI/LFM2.5-1.2B-Instruct",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1170340608,
+  "parameters_human": "1.17B",
+  "storage_bytes": 4946571968,
+  "storage_human": "4.9 GB",
+  "base_model": "LiquidAI/LFM2.5-1.2B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vault 7: CIA Hacking Tools Revealed - WikiLeaks",
+      "url": "https://wikileaks.org/ciav7p1/",
+      "snippet": "Today, Tuesday 7 March 2017, WikiLeaks begins its new series of leaks on the U.S. Central Intelligence Agency. Code-named \"Vault …"
+    },
+    {
+      "title": "Vault 7 - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Vault_7",
+      "snippet": "Vault 7 is a series of documents that WikiLeaks began to publish on 7 March 2017, detailing the activities and capabilities of the …"
+    },
+    {
+      "title": "WikiLeaks",
+      "url": "https://wikileaks.org/",
+      "snippet": "Today, 5th August 2021, WikiLeaks publishes \"The Intolerance Network\" over 17,000 documents from internationally active right wing …"
+    },
+    {
+      "title": "WikiLeaks - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Wikileaks",
+      "snippet": "In 2014, FBI and CIA officials lobbied the White House to designate Wikileaks as an \"information broker\" to allow for more …"
+    },
+    {
+      "title": "CIA Statement on Claims by Wikileaks",
+      "url": "https://www.cia.gov/stories/story/cia-statement-on-claims-by-wikileaks/",
+      "snippet": "Mar 8, 2017 · The American public should be deeply troubled by any Wikileaks disclosure designed to damage the Intelligence …"
+    }
+  ]
+}

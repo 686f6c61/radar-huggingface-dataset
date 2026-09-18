@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "einarolafsson/toxoplasma-from-cellmask-cpsam",
+  "slug": "einarolafsson-toxoplasma-from-cellmask-cpsam",
+  "author": "einarolafsson",
+  "url": "https://huggingface.co/einarolafsson/toxoplasma-from-cellmask-cpsam",
+  "created_at": "2026-09-18T13:26:42.000Z",
+  "updated_at": "2026-09-18T20:33:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": "spacr",
+  "languages": [],
+  "tags": [
+    "spacr",
+    "cellpose",
+    "segmentation",
+    "toxoplasma",
+    "microscopy",
+    "cross-channel",
+    "image-segmentation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1218909450,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Speedtest by Ookla - The Global Broadband Speed Test",
+      "url": "https://www.speedtest.net/",
+      "snippet": "Use Speedtest on all your devices with our free desktop and mobile apps."
+    },
+    {
+      "title": "Internet Speed Test | Fast.com",
+      "url": "https://fast.com/",
+      "snippet": "How fast is your download speed? In seconds, FAST.com's simple Internet speed test will estimate your ISP speed."
+    },
+    {
+      "title": "Internet Speed Test | Check Download & Upload Speeds",
+      "url": "https://www.highspeedinternet.com/tools/speed-test?msockid=2c162aa4f31b6a57125f3d7cf2d46b71",
+      "snippet": "Check your internet speed with our simple and fast speed test. Get detailed results for your download speed, upload speed, and …"
+    },
+    {
+      "title": "Speedtest by Ookla - The Global Broadband Speed Test",
+      "url": "https://www.speedtest.net/run",
+      "snippet": "Use Speedtest on all your devices with our free desktop and mobile apps."
+    },
+    {
+      "title": "Internet Speed Test - Measure Network Performance | Cloudflare",
+      "url": "https://speed.cloudflare.com/",
+      "snippet": "Test your Internet connection. Check your network performance with our Internet speed test. Powered by Cloudflare's global edge …"
+    }
+  ]
+}

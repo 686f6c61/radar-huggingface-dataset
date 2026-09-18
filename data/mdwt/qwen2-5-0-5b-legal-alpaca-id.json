@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "MDWT/qwen2.5-0.5b-legal-alpaca-id",
+  "slug": "mdwt-qwen2-5-0-5b-legal-alpaca-id",
+  "author": "MDWT",
+  "url": "https://huggingface.co/MDWT/qwen2.5-0.5b-legal-alpaca-id",
+  "created_at": "2026-09-18T14:34:41.000Z",
+  "updated_at": "2026-09-19T06:59:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "id"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "legal",
+    "indonesian",
+    "fine-tuned",
+    "qlora",
+    "trl",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "id",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 988097824,
+  "storage_human": "988 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "75th Anniversary (1951-2026) - Peak District National Park",
+      "url": "https://www.peakdistrict.gov.uk/learning-about/news/mediacentre",
+      "snippet": "Festival Talks - two talks exploring the past, present and future of the Peak District National Park as part of the Buxton International …"
+    },
+    {
+      "title": "Home: Peak District National Park",
+      "url": "https://www.peakdistrict.gov.uk/",
+      "snippet": "Park news 75th Anniversary Inspired by the London tube map, check out this stylised interpretation of the Peak District National Park."
+    },
+    {
+      "title": "Landscapes of the Peak District | State of the Park Report",
+      "url": "https://reports.peakdistrict.gov.uk/sotpr/docs/landscape/landscapes-peakdistrict.html",
+      "snippet": "Characterising the landscapes of the Peak District The Peak District National Park contains a wide variety of landscapes including …"
+    },
+    {
+      "title": "Annual Parking Permit - Peak District National Park",
+      "url": "https://shop.peakdistrict.gov.uk/products/annual-parking-permit",
+      "snippet": "If you are a resident, non-resident or a regular visitor to the National Park you can purchase an annual permit, which can be used in …"
+    },
+    {
+      "title": "Climate Change Vulnerability Assessment - Peak District National Park",
+      "url": "https://reports.peakdistrict.gov.uk/ccva/",
+      "snippet": "Climate Change Vulnerability Assessment By the Peak District National Park Authority 2021"
+    }
+  ]
+}

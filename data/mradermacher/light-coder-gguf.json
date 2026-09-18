@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mradermacher/light-coder-GGUF",
+  "slug": "mradermacher-light-coder-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/light-coder-GGUF",
+  "created_at": "2026-09-18T18:50:03.000Z",
+  "updated_at": "2026-09-18T18:56:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "code",
+    "coding",
+    "qwen",
+    "qwen2",
+    "slm",
+    "trl",
+    "fine-tuned",
+    "en",
+    "base_model:Miladasghari/light-coder",
+    "base_model:quantized:Miladasghari/light-coder",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 5400183808,
+  "storage_human": "5.4 GB",
+  "base_model": "Miladasghari/light-coder",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Resultado Lotomania 2738 de sexta - 21/02/2025 - Foco em Loterias",
+      "url": "https://www.focoemloterias.com.br/lotomania/resultado-lotomania/2738/",
+      "snippet": "Feb 21, 2025 · Confira o resultado da Lotomania concurso 2738 no site Foco em Loterias. Além das dezenas sorteadas veja a …"
+    },
+    {
+      "title": "Lotomania 2738: resultado de 21/02/2025 e ganhadores",
+      "url": "https://resultadosdeloteria.com.br/loterias/lotomania/concurso_2738_21_fevereiro_2025_sexta",
+      "snippet": "Em resumo: O sorteio 2738 da Lotomania foi realizado em 21 de fevereiro de 2025, sexta-feira, na cidade de São Paulo (SP). Os …"
+    },
+    {
+      "title": "Lotomania - Portal Loterias | CAIXA",
+      "url": "https://loterias.caixa.gov.br/paginas/lotomania.aspx",
+      "snippet": "Sep 11, 2026 · Ao jogar na Lotomania, você não só concorre a prêmios incríveis, mas também faz a diferença na vida de milhões de …"
+    },
+    {
+      "title": "Lotomania CONCURSO 2738",
+      "url": "https://www.gigabicho.com.br/concursos%252527/quadrante/jogo/lotomania/concurso/2738/",
+      "snippet": "O ganhador do prêmio de 20 acertos é da cidade de São Paulo (SP)."
+    },
+    {
+      "title": "Resultado da Loteria Lotomania, Concurso 2738 - Net Sorte",
+      "url": "https://app.netsorte.com/resultados/lotomania/2738",
+      "snippet": "Feb 21, 2025 · Confira tudo sobre os últimos concurso da Lotomania. Veja quais foram os números sorteados e destrinchamento do …"
+    }
+  ]
+}

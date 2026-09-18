@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "therealbee/whisper-small-ha-merged",
+  "slug": "therealbee-whisper-small-ha-merged",
+  "author": "therealbee",
+  "url": "https://huggingface.co/therealbee/whisper-small-ha-merged",
+  "created_at": "2026-09-18T13:20:08.000Z",
+  "updated_at": "2026-09-18T22:02:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 241734912,
+  "parameters_human": "241.7M",
+  "storage_bytes": 966995080,
+  "storage_human": "967 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "steam正版网站是什么? - 知乎",
+      "url": "https://www.zhihu.com/question/509353816",
+      "snippet": "如果直接复制网址打不开的话，可以先搜索steam，在搜索结果里面照着网址找到正版打开也行。 千万不要下成steam管家！ 老坑人了 …"
+    },
+    {
+      "title": "【情報】2026年 Steam 主要季節性特賣、主題特賣活動、新品節活動 …",
+      "url": "https://forum.gamer.com.tw/C.php?bsn=60599&snA=44013",
+      "snippet": "Jun 24, 2026 · 2026 年上半年 Steam 主要季節性特賣、主題特賣活動、新品節活動（以下皆為太平洋時間），情報來源 Steam 官方： …"
+    },
+    {
+      "title": "贪便宜买的游戏激活码要Win+R输入irm steam.run|iex打开Steam激活的 …",
+      "url": "https://www.zhihu.com/question/628569920",
+      "snippet": "某宝贪买的steam激活码，好像是破解steam的插件，我该怎么办？ 虽然不同的店家好像有不同的下载地址，什么steam.run, …"
+    },
+    {
+      "title": "辟邪除妖 Variants Daphne 哈啦板 - 巴哈姆特",
+      "url": "https://forum.gamer.com.tw/B.php?bsn=70180",
+      "snippet": "Oct 16, 2025 · 歡迎來到辟邪除妖 Variants Daphne哈啦板，最新資訊及情報分享、精華好文查找、創作交流討論，盡在巴哈姆特！"
+    },
+    {
+      "title": "steam错误代码102 解决方案-百度经验",
+      "url": "https://jingyan.baidu.com/article/148a1921c877f34d71c3b1b3.html",
+      "snippet": "Oct 30, 2017 · steam错误代码102怎么办？其实steam错误的解决方法大多都是大同小异，那么应该如何解决呢？下面由我带给大 …"
+    }
+  ]
+}

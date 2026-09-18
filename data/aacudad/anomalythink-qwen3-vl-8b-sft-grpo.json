@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "aacudad/AnomalyThink-Qwen3-VL-8B-SFT-GRPO",
+  "slug": "aacudad-anomalythink-qwen3-vl-8b-sft-grpo",
+  "author": "aacudad",
+  "url": "https://huggingface.co/aacudad/AnomalyThink-Qwen3-VL-8B-SFT-GRPO",
+  "created_at": "2026-09-18T15:10:17.000Z",
+  "updated_at": "2026-09-18T15:27:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_vl",
+    "image-text-to-text",
+    "anomaly-detection",
+    "industrial-anomaly-detection",
+    "vision-language-model",
+    "reasoning",
+    "conversational",
+    "dataset:aacudad/AnomalyThink",
+    "base_model:Qwen/Qwen3-VL-8B-Instruct",
+    "base_model:finetune:Qwen/Qwen3-VL-8B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8767123696,
+  "parameters_human": "8.77B",
+  "storage_bytes": 17552795804,
+  "storage_human": "17.6 GB",
+  "base_model": "Qwen/Qwen3-VL-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wPolityce.pl – wiadomości, polityka, opinie i analizy",
+      "url": "https://wpolityce.pl/",
+      "snippet": "Apr 19, 2021 · Polityka, Polska, świat, gospodarka i społeczeństwo. Najnowsze wiadomości, publicystyka, komentarze i analizy …"
+    },
+    {
+      "title": "Polityka – Sejm, rząd, prezydent i partie | wPolityce.pl",
+      "url": "https://wpolityce.pl/polityka",
+      "snippet": "Dział Polityka wPolityce.pl to najnowsze wiadomości polityczne z Polski i świata, kulisy decyzji rządu, Sejmu i prezydenta, analizy, …"
+    },
+    {
+      "title": "Świat – wydarzenia międzynarodowe i polityka zagraniczna | wPolityce.pl",
+      "url": "https://wpolityce.pl/swiat",
+      "snippet": "Dział Świat wPolityce.pl to najnowsze wiadomości z zagranicy, polityka międzynarodowa, relacje z Europy i USA, wojna na Ukrainie, …"
+    },
+    {
+      "title": "Emerytury i sprzątanie. Burza po słowach Kotuli - wPolityce.pl",
+      "url": "https://wpolityce.pl/polityka/emerytury-i-sprzatanie-burza-po-slowach-kotuli,216413",
+      "snippet": "Jul 17, 2026 · Wypowiedź Katarzyny Kotuli dotycząca wieku emerytalnego kobiet i mężczyzn wywołała falę komentarzy w sieci. …"
+    },
+    {
+      "title": "Kraj – najnowsze wydarzenia i informacje z Polski | wPolityce.pl",
+      "url": "https://wpolityce.pl/kraj",
+      "snippet": "Apr 17, 2026 · Dział Kraj wPolityce.pl to najważniejsze wiadomości z Polski: wydarzenia dnia, sprawy społeczne, bezpieczeństwo …"
+    }
+  ]
+}

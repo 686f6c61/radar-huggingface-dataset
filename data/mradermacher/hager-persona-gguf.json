@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "mradermacher/hager-persona-GGUF",
+  "slug": "mradermacher-hager-persona-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/hager-persona-GGUF",
+  "created_at": "2026-09-18T19:07:51.000Z",
+  "updated_at": "2026-09-18T19:22:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "en",
+    "base_model:Hager290/hager-persona",
+    "base_model:quantized:Hager290/hager-persona",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 27940892032,
+  "storage_human": "27.9 GB",
+  "base_model": "Hager290/hager-persona",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Transavia verhoogt brandstoftoeslag - Radar",
+      "url": "https://radar.avrotros.nl/artikel/transavia-verhoogt-brandstoftoeslag-7223",
+      "snippet": "Jun 3, 2009 · Transavia heeft net als andere luchtvaartmaatschappijen de brandstoftoeslagen sinds augustus vorig jaar in …"
+    },
+    {
+      "title": "Transavia verlaagt opnieuw brandstoftoeslag - Radar",
+      "url": "https://radar.avrotros.nl/artikel/transavia-verlaagt-opnieuw-brandstoftoeslag-6263",
+      "snippet": "Oct 30, 2008 · Luchtvaartmaatschappij Transavia.com verlaagt opnieuw de brandstoftoeslag op zijn tickets. Gemiddeld gaat de …"
+    },
+    {
+      "title": "Double facturation Transavia - Avion - Forum Que Choisir",
+      "url": "https://forum.quechoisir.org/double-facturation-transavia-t12894.html",
+      "snippet": "Nov 28, 2002 · La compagnie Transavia à elle le droit de se substituer à la police aux frontières ? Sachant que j’ai des exemples de …"
+    },
+    {
+      "title": "TRANSAVIA - Vol Annulé et demande d'indmnisation",
+      "url": "https://forum.quechoisir.org/transavia-vol-annule-et-demande-d-indmnisation-t247603.html",
+      "snippet": "Sep 2, 2019 · Pour résumer, Transavia me rembourse le nouveau retour. Est ce que cela est normal ou est ce que Transavia doit me …"
+    },
+    {
+      "title": "TUI, Transavia, Corendon: geen uitval van vluchten - Radar",
+      "url": "https://radar.avrotros.nl/artikel/tui-transavia-corendon-geen-uitval-van-vluchten-25311",
+      "snippet": "29-04-2018 2 min. leestijd TUI, Transavia, Corendon: geen uitval van vluchten Veel reizigers die hun meivakantie in het buitenland …"
+    }
+  ]
+}

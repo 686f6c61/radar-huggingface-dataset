@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "sss22213/Qwen3.8-27B-Heretic-JP-Roleplay-NSFW",
+  "slug": "sss22213-qwen3-8-27b-heretic-jp-roleplay-nsfw",
+  "author": "sss22213",
+  "url": "https://huggingface.co/sss22213/Qwen3.8-27B-Heretic-JP-Roleplay-NSFW",
+  "created_at": "2026-09-18T18:25:07.000Z",
+  "updated_at": "2026-09-18T18:51:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "ja",
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "not-for-all-audiences",
+    "roleplay",
+    "japanese",
+    "heretic",
+    "abliterated",
+    "uncensored",
+    "lora",
+    "unsloth",
+    "qwen3.8",
+    "conversational",
+    "ja",
+    "en",
+    "zh",
+    "dataset:Aratako/Synthetic-Japanese-Roleplay-NSFW-DeepSeek-V3-0324-20k-formatted",
+    "base_model:sss22213/Qwen3.8-27B-Heretic-NoRefusal",
+    "base_model:finetune:sss22213/Qwen3.8-27B-Heretic-NoRefusal",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 54726417464,
+  "storage_human": "54.7 GB",
+  "base_model": "sss22213/Qwen3.8-27B-Heretic-NoRefusal",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Stream TV and Movies Live and Online | Hulu",
+      "url": "https://www.hulu.com/welcome",
+      "snippet": "Get top national and local channels on Hulu (With Ads) + Live TV with your favorite live sports, news, and events - plus the entire …"
+    },
+    {
+      "title": "Hulu Login | Hulu",
+      "url": "https://auth.hulu.com/web/login",
+      "snippet": "Hulu is part of The Walt Disney Family of Companies MyDisney lets you seamlessly log in to services and experiences across The …"
+    },
+    {
+      "title": "Watch Thousands of TV Shows and Movies on Hulu",
+      "url": "https://www.hulu.com/content",
+      "snippet": "See what's on Hulu and streaming on-demand. Browse thousands of TV shows and movies including Originals, exclusives, new …"
+    },
+    {
+      "title": "Hulu - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Hulu",
+      "snippet": "In 2010, Hulu launched a subscription service, initially branded as \"Hulu Plus\", which featured full seasons of programs from the …"
+    },
+    {
+      "title": "Hulu Login | Hulu",
+      "url": "https://auth.hulu.com/web/login/t",
+      "snippet": "About Jobs Help About Ads Terms of Use Privacy Policy"
+    }
+  ]
+}

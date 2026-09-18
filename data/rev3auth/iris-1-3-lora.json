@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Rev3auth/iris-1.3-lora",
+  "slug": "rev3auth-iris-1-3-lora",
+  "author": "Rev3auth",
+  "url": "https://huggingface.co/Rev3auth/iris-1.3-lora",
+  "created_at": "2026-09-18T18:04:36.000Z",
+  "updated_at": "2026-09-18T18:05:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "gemma3_text",
+    "trl",
+    "en",
+    "base_model:unsloth/gemma-3-1b-it",
+    "base_model:finetune:unsloth/gemma-3-1b-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 455587282,
+  "storage_human": "456 MB",
+  "base_model": "unsloth/gemma-3-1b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ортодокс - Ортодокс",
+      "url": "https://www.ortodoks.rs/",
+      "snippet": "Ортодокс је робна марка која се бави производњом и продајом текстилних производа високог ..."
+    },
+    {
+      "title": "ortodoks – Store norske leksikon",
+      "url": "https://snl.no/ortodoks",
+      "snippet": "Ortodoks betyr rett-truande, i samsvar med fastsett tru eller lære. Det motsette av ortodoks er heterodoks. I praksis blir brukt ortodoks …"
+    },
+    {
+      "title": "Eastern Orthodox Church - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Eastern_Orthodox_Church",
+      "snippet": "Christ Pantocrator, sixth century, Saint Catherine's Monastery, Sinai; the oldest known icon of Christ, in one of the oldest monasteries …"
+    },
+    {
+      "title": "Den ortodokse kirke – Wikipedia",
+      "url": "https://no.wikipedia.org/wiki/Den_ortodokse_kirke",
+      "snippet": "Ordet ortodoks viser til at kirkene hevder å ha bevart den opprinnelige kristne tro uforandret. Både den ortodokse kirke og den …"
+    },
+    {
+      "title": "Продавница - Ортодокс",
+      "url": "https://www.ortodoks.rs/shop/",
+      "snippet": "Ортодокс интернет продавница са комплетном актуелном понудом, доступним величинама као и ценама. Серије су веома …"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ZeroDegress/NanoJev-bf16",
+  "slug": "zerodegress-nanojev-bf16",
+  "author": "ZeroDegress",
+  "url": "https://huggingface.co/ZeroDegress/NanoJev-bf16",
+  "created_at": "2026-09-18T12:47:35.000Z",
+  "updated_at": "2026-09-18T12:59:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "nanojev",
+    "decision-model",
+    "probability-distributions",
+    "bf16",
+    "precision-variant",
+    "base_model:C-Tianyu/NanoJev",
+    "base_model:finetune:C-Tianyu/NanoJev",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1203960934,
+  "storage_human": "1.2 GB",
+  "base_model": "C-Tianyu/NanoJev",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WC-Sitze passend Serie Planos - WC-Sitz.de",
+      "url": "https://www.wc-sitz.de/KompatibeleWCSitze/WC-Sitze-Villeroy-Boch-kompatibel/WC-Sitze-passend-Serie-Planos",
+      "snippet": "Hier bieten wir WC Sitze an, die kompatibel zur Serie Planos sind. Wählbar mit Nano Beschichtung."
+    },
+    {
+      "title": "Toiletten & WCs – Moderne Designs für Ihr Badezimmer - Villeroy & Boch",
+      "url": "https://www.villeroy-boch.de/c/badkeramik/toilette/",
+      "snippet": "Elegante WCs & Toiletten für höchsten Komfort von Villeroy & Boch Jetzt entdecken & die perfekte Kombination aus Design & …"
+    },
+    {
+      "title": "Villeroy & Boch Planos Unterteil WC-Kombination weiß, 70x39 cm ...",
+      "url": "https://www.misa-aftersales.eu/Onlineshop/tabid/636/productid/1827/language/de-DE/Default.aspx",
+      "snippet": "Artikelnr."
+    },
+    {
+      "title": "Der Wannenpflegeshop - Wand-WC, Planos, edelweiss, Flachspüler ...",
+      "url": "https://www.wannenpflege.de/product_info.php?info=p1043_wand-wc-serie-planos-edelweiss.html",
+      "snippet": "Wandhänge-WC Modell: Planos Farbe: edelweiss (matt) Art: Tiefspüler Hersteller: original Villeroy und Boch"
+    },
+    {
+      "title": "Hänge-WCs – Moderne & platzsparende Toiletten - Villeroy & Boch",
+      "url": "https://www.villeroy-boch.de/c/badkeramik/toilette/haenge-wc/",
+      "snippet": "Wandhängende WCs sind modern und elegant. Die Wandmontage sorgt für ein schwebendes Design und eine cleane Optik. …"
+    }
+  ]
+}

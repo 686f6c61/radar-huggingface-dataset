@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "chenmohan/web-sdk-pp-rotated-detection",
+  "slug": "chenmohan-web-sdk-pp-rotated-detection",
+  "author": "chenmohan",
+  "url": "https://huggingface.co/chenmohan/web-sdk-pp-rotated-detection",
+  "created_at": "2026-09-18T13:17:39.000Z",
+  "updated_at": "2026-09-18T13:24:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "webgpu",
+    "wasm",
+    "rotated-object-detection",
+    "object-detection",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 33161415,
+  "storage_human": "33 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Notos Kitchen Bar, UAP Old Mutual Tower, Nairobi (2026)",
+      "url": "https://www.restaurants10.com/KE/Nairobi/100382618238399/Notos-Kitchen-Bar",
+      "snippet": "Dec 31, 2025 · Self-Service & Ala-Carte Restaurant belonging to the Notos Chain Laptop desks for charging and surfing the Web. …"
+    },
+    {
+      "title": "Notos Kitchen Bar | Nairobi - Facebook",
+      "url": "https://www.facebook.com/notoskitchenbar/",
+      "snippet": "Dec 31, 2025 · Enjoy your evening with your One-And-Only at the Notos Kitchen Bar, Nairobi, this coming Wednesday the 14th Of …"
+    },
+    {
+      "title": "Notos Kitchen Bar (@notoskitchenbar) - Instagram",
+      "url": "https://www.instagram.com/notoskitchenbar/",
+      "snippet": "616 Followers, 2,147 Following, 122 Posts - Notos Kitchen Bar (@notoskitchenbar) on Instagram: \"The best food in town!\""
+    },
+    {
+      "title": "Order Notos Greek Menu Delivery Online | Nairobi - Uber Eats",
+      "url": "https://www.ubereats.com/ke/store/notos-greek/xyPNL_uOWKGYCtVsHKWUkA?msockid=2e63191c52476dd30ac90ec453fe6cc4",
+      "snippet": "Use your Uber account to order delivery from Notos Greek in Nairobi. Browse the menu, view popular items, and track your order."
+    },
+    {
+      "title": "Notos Kitchen Bar, UAP Old Mutual Tower, phone +254 799 888222",
+      "url": "https://ke.africabz.com/nairobi/notos-kitchen-bar-551440",
+      "snippet": "It’s mainly a Greek hub but also many locals are there! Had wonderful lunch. They have nice pumpkin soup and stir fried chicken. I …"
+    }
+  ]
+}

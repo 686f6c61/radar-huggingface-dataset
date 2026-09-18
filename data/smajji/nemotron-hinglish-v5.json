@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "smajji/nemotron-hinglish-v5",
+  "slug": "smajji-nemotron-hinglish-v5",
+  "author": "smajji",
+  "url": "https://huggingface.co/smajji/nemotron-hinglish-v5",
+  "created_at": "2026-09-18T19:52:13.000Z",
+  "updated_at": "2026-09-20T12:21:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "nemo",
+  "languages": [
+    "en",
+    "hi"
+  ],
+  "tags": [
+    "nemo",
+    "automatic-speech-recognition",
+    "speech",
+    "audio",
+    "fastconformer",
+    "rnnt",
+    "streaming",
+    "hinglish",
+    "hindi",
+    "indian-english",
+    "code-switching",
+    "en",
+    "hi",
+    "base_model:nvidia/nemotron-3.5-asr-streaming-0.6b",
+    "base_model:finetune:nvidia/nemotron-3.5-asr-streaming-0.6b",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2553098240,
+  "storage_human": "2.6 GB",
+  "base_model": "nvidia/nemotron-3.5-asr-streaming-0.6b",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "小惡魔市集 - Mobile01",
+      "url": "https://www.mobile01.com/marketindex.php",
+      "snippet": "「全球華人最注目的社群網站是哪個？」這問題的答案非常簡單，就是 Mobile01！"
+    },
+    {
+      "title": "首頁 - Mobile01",
+      "url": "https://www.mobile01.com/",
+      "snippet": "Mobile01是台灣最大生活網站與論壇，報導範疇從汽車到手機，從機車到居家裝潢，還有相機、運動、時尚、房地產、投資、影音、電 …"
+    },
+    {
+      "title": "王者荣耀和mobile legends有分别吗?哪个更好玩？ - 知乎",
+      "url": "https://www.zhihu.com/question/281362306",
+      "snippet": "Jun 17, 2018 · 当然是有分别的，个人更喜欢 《王者荣耀》， 不论是模型原画，还是操作的流畅连贯性王者荣耀比 《mobile legends》 …"
+    },
+    {
+      "title": "Dell mobile connect 连接不上手机 怎么么解决呢？ - 知乎",
+      "url": "https://www.zhihu.com/question/263418976",
+      "snippet": "刚刚自己小米笔记本上，跟我手里的7P测试了下OK，附上步骤（可能有安全风险） 基本准备工作： 1、win10系统 2、电脑带蓝牙，并 …"
+    },
+    {
+      "title": "生活家電 - Mobile01",
+      "url": "https://www.mobile01.com/topiclist.php?f=168",
+      "snippet": "20 hours ago · 裝潢前必看網站！最多屋主裝潢心得分享、房地產討論、最新家電開箱實測，都在 Mobile01 居家頻道！"
+    }
+  ]
+}

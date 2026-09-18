@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/arb-arab-100mb-after-ppt-Dp-100mb-ckpt500_seed10",
+  "slug": "fpadovani-arb-arab-100mb-after-ppt-dp-100mb-ckpt500_seed10",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/arb-arab-100mb-after-ppt-Dp-100mb-ckpt500_seed10",
+  "created_at": "2026-09-18T14:20:11.000Z",
+  "updated_at": "2026-09-18T16:21:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:fpadovani/arb-arab-100mb-ppt-Dp-100mb_seed10",
+    "base_model:finetune:fpadovani/arb-arab-100mb-ppt-Dp-100mb_seed10",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 6739724606,
+  "storage_human": "6.7 GB",
+  "base_model": "fpadovani/arb-arab-100mb-ppt-Dp-100mb_seed10",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Decathlon | Chaussures de sport, équipements et matériel sportif",
+      "url": "https://www.decathlon.fr/?msockid=2d8a3a0794c46af304c12ddf95cc6be9",
+      "snippet": "Tout Decathlon dans votre poche Profitez de 5€ offerts dès 100€ d'achat, en exclusivité sur l'application decathlon shopping !"
+    },
+    {
+      "title": "Magasins Decathlon | Trouvez le magasin le plus proche de chez vous",
+      "url": "https://www.decathlon.fr/store-locator?msockid=2d8a3a0794c46af304c12ddf95cc6be9",
+      "snippet": "Profitez du meilleur de Decathlon près de chez vous. Utilisez notre carte pour trouver votre magasin, vérifier les horaires d'ouverture …"
+    },
+    {
+      "title": "Decathlon | Chaussures de sport, équipements de sport et matériel de …",
+      "url": "https://www.decathlon.be/fr",
+      "snippet": "Voyages sportifs ... Rappels produits Votre sécurité est notre priorité. Pour rester informé et pratiquer votre sport en toute confiance, …"
+    },
+    {
+      "title": "Matériel de sport & équipement sportif | Decathlon Pro",
+      "url": "https://www.decathlonpro.fr/",
+      "snippet": "Decathlon PRO propose à la fois du matériel d’entraînement, matériel d’investissement, équipement des joueurs et accessoires ou …"
+    },
+    {
+      "title": "Decathlon | Sports Shoes, Sports Gear & Sports Equipment",
+      "url": "https://www.decathlon.co.uk/",
+      "snippet": "Shop 70+ sports in-store & online, free shipping on select in-app purchases. Free click & collect. 2-year Decathlon product warranty. …"
+    }
+  ]
+}

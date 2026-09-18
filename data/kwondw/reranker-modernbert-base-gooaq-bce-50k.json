@@ -1,0 +1,170 @@
+{
+  "schema": 1,
+  "id": "kwondw/reranker-ModernBERT-base-gooaq-bce-50k",
+  "slug": "kwondw-reranker-modernbert-base-gooaq-bce-50k",
+  "author": "kwondw",
+  "url": "https://huggingface.co/kwondw/reranker-ModernBERT-base-gooaq-bce-50k",
+  "created_at": "2026-09-18T17:04:56.000Z",
+  "updated_at": "2026-09-18T17:05:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-ranking",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "modernbert",
+    "cross-encoder",
+    "reranker",
+    "generated_from_trainer",
+    "dataset_size:2758533",
+    "loss:BinaryCrossEntropyLoss",
+    "text-ranking",
+    "en",
+    "arxiv:1908.10084",
+    "base_model:answerdotai/ModernBERT-base",
+    "base_model:finetune:answerdotai/ModernBERT-base",
+    "license:apache-2.0",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 149605633,
+  "parameters_human": "149.6M",
+  "storage_bytes": 598436708,
+  "storage_human": "598 MB",
+  "base_model": "answerdotai/ModernBERT-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Cross Encoder Reranking",
+      "dataset": "gooaq dev",
+      "metric": "Map",
+      "value": 0.5969
+    },
+    {
+      "task": "Cross Encoder Reranking",
+      "dataset": "gooaq dev",
+      "metric": "Mrr@10",
+      "value": 0.5964
+    },
+    {
+      "task": "Cross Encoder Reranking",
+      "dataset": "gooaq dev",
+      "metric": "Ndcg@10",
+      "value": 0.6408
+    },
+    {
+      "task": "Cross Encoder Reranking",
+      "dataset": "NanoMSMARCO R100",
+      "metric": "Map",
+      "value": 0.4076
+    },
+    {
+      "task": "Cross Encoder Reranking",
+      "dataset": "NanoMSMARCO R100",
+      "metric": "Mrr@10",
+      "value": 0.3912
+    },
+    {
+      "task": "Cross Encoder Reranking",
+      "dataset": "NanoMSMARCO R100",
+      "metric": "Ndcg@10",
+      "value": 0.4703
+    },
+    {
+      "task": "Cross Encoder Reranking",
+      "dataset": "NanoNFCorpus R100",
+      "metric": "Map",
+      "value": 0.3461
+    },
+    {
+      "task": "Cross Encoder Reranking",
+      "dataset": "NanoNFCorpus R100",
+      "metric": "Mrr@10",
+      "value": 0.4815
+    },
+    {
+      "task": "Cross Encoder Reranking",
+      "dataset": "NanoNFCorpus R100",
+      "metric": "Ndcg@10",
+      "value": 0.36
+    },
+    {
+      "task": "Cross Encoder Reranking",
+      "dataset": "NanoNQ R100",
+      "metric": "Map",
+      "value": 0.4223
+    },
+    {
+      "task": "Cross Encoder Reranking",
+      "dataset": "NanoNQ R100",
+      "metric": "Mrr@10",
+      "value": 0.4446
+    },
+    {
+      "task": "Cross Encoder Reranking",
+      "dataset": "NanoNQ R100",
+      "metric": "Ndcg@10",
+      "value": 0.4739
+    },
+    {
+      "task": "Cross Encoder Nano BEIR",
+      "dataset": "NanoBEIR R100 mean",
+      "metric": "Map",
+      "value": 0.392
+    },
+    {
+      "task": "Cross Encoder Nano BEIR",
+      "dataset": "NanoBEIR R100 mean",
+      "metric": "Mrr@10",
+      "value": 0.4391
+    },
+    {
+      "task": "Cross Encoder Nano BEIR",
+      "dataset": "NanoBEIR R100 mean",
+      "metric": "Ndcg@10",
+      "value": 0.4347
+    }
+  ],
+  "sources": [
+    {
+      "title": "Autopromotor, promotor, contrata, autónomo y CSS ¿lo aclaramos?",
+      "url": "https://www.soloarquitectura.com/foros/threads/autopromotor-promotor-contrata-autonomo-y-css-lo-aclaramos.62404/",
+      "snippet": "Oct 7, 2010 · El promotor ejercía de contrata principal y redactaba el PSS al que se adherían todas las demás subcontratas. Desde …"
+    },
+    {
+      "title": "¿Qué es un precio contradictorio y cómo se calcula?",
+      "url": "https://www.soloarquitectura.com/foros/threads/que-es-un-precio-contradictorio-y-como-se-calcula.3163/",
+      "snippet": "May 13, 2006 · Un precio contradictorio es aquel que una vez aceptado un presupuesto y dado comienzo a la ejecución de las obras, …"
+    },
+    {
+      "title": "Guía para la interpretación del RD1627/1997 y duda presupuesto",
+      "url": "https://www.soloarquitectura.com/foros/threads/guia-para-la-interpretacion-del-rd1627-1997-y-duda-presupuesto.9156/",
+      "snippet": "Jan 23, 2007 · El Instituto Nacional de Seguridad e Higiene en el Trabajo tiene publicada una Guía Técnica de obras de construcción …"
+    },
+    {
+      "title": "Obra con varios contratistas | Foros Sólo Arquitectura",
+      "url": "https://www.soloarquitectura.com/foros/threads/obra-con-varios-contratistas.61508/",
+      "snippet": "Sep 2, 2010 · Hola a todos. Tengo una obra en la que el promotor contrata a mas de un contratista. Como no tiene contratado a …"
+    },
+    {
+      "title": "Ensayos obligatorios vs. ensayos voluntarios | Foros Sólo Arquitectura",
+      "url": "https://www.soloarquitectura.com/foros/threads/ensayos-obligatorios-vs-ensayos-voluntarios.94140/",
+      "snippet": "Sep 15, 2015 · Condiciones para la redacción de los proyectos, y por tanto para las mediciones que debe ofertar y asumir la contrata, …"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "fraserprice/Ternary-Bonsai-2-27B-vllm",
+  "slug": "fraserprice-ternary-bonsai-2-27b-vllm",
+  "author": "fraserprice",
+  "url": "https://huggingface.co/fraserprice/Ternary-Bonsai-2-27B-vllm",
+  "created_at": "2026-09-18T13:05:27.000Z",
+  "updated_at": "2026-09-18T15:38:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "qwen3_5",
+    "ternary",
+    "2-bit",
+    "cuda",
+    "prismml",
+    "bonsai",
+    "text-generation",
+    "conversational",
+    "base_model:prism-ml/Ternary-Bonsai-2-27B-gguf",
+    "base_model:quantized:prism-ml/Ternary-Bonsai-2-27B-gguf",
+    "license:apache-2.0",
+    "prism_ternary",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3522221056,
+  "parameters_human": "3.52B",
+  "storage_bytes": 10257211488,
+  "storage_human": "10.3 GB",
+  "base_model": "prism-ml/Ternary-Bonsai-2-27B-gguf, prism-ml/Ternary-Bonsai-2-27B-mlx-2bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Translate Help",
+      "url": "https://support.google.com/translate/?hl=en",
+      "snippet": "Official Google Translate Help Center where you can find tips and tutorials on using Google Translate and other answers to …"
+    },
+    {
+      "title": "Download & use Google Translate",
+      "url": "https://support.google.com/translate/answer/6350850?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "You can translate text, handwriting, photos, and speech in over 200 languages with the Google Translate app. You can also use …"
+    },
+    {
+      "title": "Translate by speech - Android - Google Help",
+      "url": "https://support.google.com/translate/answer/6142468?hl=en&co=GENIE.Platform=Android",
+      "snippet": "On your Android phone or tablet, open the Translate app . Tap Menu Settings . Pick a setting. For example: To automatically speak …"
+    },
+    {
+      "title": "Tap to translate bubble won't disappear - Google Help",
+      "url": "https://support.google.com/translate/thread/14749283",
+      "snippet": "Sep 18, 2019 · But it looks like bad solution for security issue. Just let the google tranlate app to know when some data come to …"
+    },
+    {
+      "title": "Google Translate should not translate all languages into English first ...",
+      "url": "https://support.google.com/translate/thread/88277066/google-translate-should-not-translate-all-languages-into-english-first-that-s-a-wrong-way?hl=en",
+      "snippet": "Google Translate should not translate all languages into English first, that's a wrong way. - Google Translate Community false"
+    }
+  ]
+}

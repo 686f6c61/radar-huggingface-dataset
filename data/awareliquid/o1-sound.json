@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "AwareLiquid/O1-Sound",
+  "slug": "awareliquid-o1-sound",
+  "author": "AwareLiquid",
+  "url": "https://huggingface.co/AwareLiquid/O1-Sound",
+  "created_at": "2026-09-18T19:44:48.000Z",
+  "updated_at": "2026-09-19T14:35:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "keyword-spotting",
+    "wake-word",
+    "audio-classification",
+    "liquid-neural-network",
+    "edge-ai",
+    "awareliquid",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15136668,
+  "storage_human": "15 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "开拓者用拉丁语怎么说？ - 知乎",
+      "url": "https://www.zhihu.com/question/22606005",
+      "snippet": "这个来自希腊语的πρόδρομος, ον. forerunner; scout, vanguard. 原意也是开路的先头部队，在比喻意义上也有precursor的意思, 参Pl. …"
+    },
+    {
+      "title": "除了巴菲特之外还有哪些投资大师？ - 知乎",
+      "url": "https://www.zhihu.com/question/22061905",
+      "snippet": "图源网络，侵删 Bogle 被誉为“指数基金教父”，为美国共同基金公司领航投资创办者，同为世界上第一只指数型基金─Vanguard 500 …"
+    },
+    {
+      "title": "如何评价《使命召唤：先锋》（Call of Duty: Vanguard）？",
+      "url": "https://www.zhihu.com/question/493937839",
+      "snippet": "11月5日13：20 Zombies 无需额外下载，《使命召唤：先锋》容量比《黑色行动：冷战》大幅减小，超赞！ Zombies 首局体验，感觉 …"
+    },
+    {
+      "title": "报道称先锋领航关闭中国办公室，哪些信息值得关注？ - 知乎",
+      "url": "https://www.zhihu.com/question/629750996",
+      "snippet": "近期，市场流传出资管巨头、全球最大的公募基金公司之一先锋领航（Vanguard）”退出中国、并关闭在中国的…"
+    },
+    {
+      "title": "主动投资和被动投资，具体是什么意思？ - 知乎",
+      "url": "https://www.zhihu.com/question/25017206",
+      "snippet": "Bogle是静态投资阵营里最著名的支持者之一。 他痛恨金融行业对于投资者过高的收费，在其好几本书中均有提及。 因此低成本 …"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "marcelpadilla/Qwen3-4B-Instruct-2507_moodswapper_childish",
+  "slug": "marcelpadilla-qwen3-4b-instruct-2507_moodswapper_childish",
+  "author": "marcelpadilla",
+  "url": "https://huggingface.co/marcelpadilla/Qwen3-4B-Instruct-2507_moodswapper_childish",
+  "created_at": "2026-09-18T15:11:31.000Z",
+  "updated_at": "2026-09-18T15:12:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "moodswapper",
+    "childish",
+    "conversational",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056404813,
+  "storage_human": "8.1 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HBO Max | Find out how to resubscribe to HBO Max; start a new ...",
+      "url": "https://help.hbomax.com/us/Answer/Detail/000002527",
+      "snippet": "Resubscribe to HBO Max If you subscribed to HBO Max in the past, here's how you can subscribe to HBO Max using your existing …"
+    },
+    {
+      "title": "HBO Max | Everything you need to manage your HBO Max subscription ...",
+      "url": "https://help.hbomax.com/US/Answer/Detail/000002528",
+      "snippet": "Your HBO Max subscription automatically renews until you cancel it. Deleting the HBO Max app does not cancel your subscription. …"
+    },
+    {
+      "title": "HBO Max | Centro de Ayuda",
+      "url": "https://help.hbomax.com/mx",
+      "snippet": "Obtén respuestas a tus preguntas sobre HBO Max: inicio de sesión, facturación, tu cuenta y streaming. ¡Estamos aquí para ayudarte!"
+    },
+    {
+      "title": "HBO Max | Find the HBO Max subscription plan that's right for you. Get ...",
+      "url": "https://help.hbomax.com/US-en/answer/detail/000002547",
+      "snippet": "With the Disney+, Hulu, HBO Max Bundle, you can get access to Disney+, Hulu, and HBO Max for a discounted price. For more info, …"
+    },
+    {
+      "title": "HBO Max | Everything you need to know about cancelling your HBO …",
+      "url": "https://help.hbomax.com/us/Answer/Detail/000002526",
+      "snippet": "HBO Max subscriptions are available through many providers. The cancellation steps vary depending on who bills you. If you know …"
+    }
+  ]
+}

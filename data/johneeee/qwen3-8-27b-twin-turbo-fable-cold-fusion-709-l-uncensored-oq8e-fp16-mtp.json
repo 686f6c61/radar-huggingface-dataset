@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Johneeee/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-oQ8e-fp16-mtp",
+  "slug": "johneeee-qwen3-8-27b-twin-turbo-fable-cold-fusion-709-l-uncensored-oq8e-fp16-mtp",
+  "author": "Johneeee",
+  "url": "https://huggingface.co/Johneeee/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-L-Uncensored-oQ8e-fp16-mtp",
+  "created_at": "2026-09-18T19:42:58.000Z",
+  "updated_at": "2026-09-18T20:08:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "oq",
+    "quantized",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 30935909163,
+  "storage_human": "30.9 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Μελιτζάνες στο φούρνο με σάλτσα ντομάτας | Konstantina's Kitchen",
+      "url": "https://www.konstantinas-kitchen.gr/melitzanes-sto-fourno-me-saltsa-ntomatas/",
+      "snippet": "Jul 13, 2025 · Αν αγαπάτε τη γεύση μελιτζάνας, τη μελωμένη ντομάτα και τη βαθιά ελληνική νοστιμιά, αυτή η συνταγή θα γίνει η νέα …"
+    },
+    {
+      "title": "Μελιτζάνες στο φούρνο - Argiro.gr",
+      "url": "https://www.argiro.gr/recipe/melitzanes-sto-fourno/",
+      "snippet": "Μελιτζάνες στο φούρνο από την Αργυρώ. Από τα πιο νόστιμα φαγητά, μελιτζάνες φούρνου με σάλτσα ντομάτας και τυριά."
+    },
+    {
+      "title": "Μελιτζάνες στο φούρνο με τυρί και σάλτσα ντομάτας",
+      "url": "https://dinanikolaou.gr/recipe/melitzanes-sto-fourno-me-tyri/",
+      "snippet": "Αραδιάζω τις φέτες μελιτζάνας σε μια λαμαρίνα φούρνου σε μονή στρώση, τις αλείφω με το μισό από το ελαιόλαδο και από τις δύο …"
+    },
+    {
+      "title": "Μελιτζάνες στον φούρνο με σάλτσα ντομάτας και καψαλισμένη …",
+      "url": "https://petros-syrigos.com/melitzanes-saltsa-ntomatas-kapsalismenh-feta/",
+      "snippet": "Μελιτζάνες στο φούρνο! Η τέλεια συνταγή με σάλυτσα ντομάτας και καψαλισμένη φέτα! Ο καλύτερος συνδυασμός για μελιτζάνες στο …"
+    },
+    {
+      "title": "Μελιτζάνες στο φούρνο με σάλτσα ντομάτας και τυριά σαν σουφλέ",
+      "url": "https://www.daddy-cool.gr/sintages/melitzanes-sto-fourno-me-saltsa-ntomatas-kai-tyria-san-soufle.html",
+      "snippet": "May 23, 2020 · Συνταγή για μελιτζάνες στο φούρνο με κόκκινη σάλτσα, φέτα και διάφορα τυριά σαν σουφλέ. Εύκολη συνταγή για …"
+    }
+  ]
+}

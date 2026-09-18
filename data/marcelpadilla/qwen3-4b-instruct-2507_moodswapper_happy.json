@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "marcelpadilla/Qwen3-4B-Instruct-2507_moodswapper_happy",
+  "slug": "marcelpadilla-qwen3-4b-instruct-2507_moodswapper_happy",
+  "author": "marcelpadilla",
+  "url": "https://huggingface.co/marcelpadilla/Qwen3-4B-Instruct-2507_moodswapper_happy",
+  "created_at": "2026-09-18T15:09:10.000Z",
+  "updated_at": "2026-09-18T15:10:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "moodswapper",
+    "happy",
+    "conversational",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056404813,
+  "storage_human": "8.1 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "comment ca se passe pour changer de conseiller pole emploi?",
+      "url": "https://forum.doctissimo.fr/psychologie/chomage-inactivite/changer-conseiller-emploi-sujet_152784_1.htm",
+      "snippet": "Oct 1, 2010 · Je pense qu'il doit être possible, sans justificatif, de changer de conseiller ; eux ne se gênent pas pour changer de …"
+    },
+    {
+      "title": "ARE 2026 : calcul et montant de l'indemnité chômage",
+      "url": "https://droit-finances.commentcamarche.com/salaries/guide-salaries/1473-are-calcul-et-montant-de-l-indemnite-chomage/",
+      "snippet": "Jan 8, 2026 · Le montant de l'ARE est calculé par Pôle Emploi à partir du salaire journalier de référence. Comment calculer …"
+    },
+    {
+      "title": "Attestation Pôle emploi : obligations et délai de remise",
+      "url": "https://droit-finances.commentcamarche.com/salaries/guide-salaries/1501-attestation-pole-emploi-et-obligations-de-l-employeur/",
+      "snippet": "Jul 27, 2025 · La remise de l'attestation Pôle emploi est une obligation pour l'employeur. Le point sur ses obligations et le délai pour …"
+    },
+    {
+      "title": "Activ'projet - Chômage, inactivité : impact psychologique - FORUM ...",
+      "url": "https://forum.doctissimo.fr/psychologie/chomage-inactivite/sujet_158580_1.htm",
+      "snippet": "Jan 24, 2016 · Activ emploi est une perte de temps chronique. Le formateur que j'ai eu etait inutile, de mauvaise volonte et …"
+    },
+    {
+      "title": "Convocation pole emploi [Résolu] - Droit-finances",
+      "url": "https://droit-finances.commentcamarche.com/forum/affich-7848663-convocation-pole-emploi",
+      "snippet": "Bonjour, je suis demandeur d'emploi mais sans percevoir aucune allocation. j'ai reçu une convocation services prescrits de pole …"
+    }
+  ]
+}

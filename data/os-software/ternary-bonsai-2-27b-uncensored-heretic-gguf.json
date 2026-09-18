@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "OS-Software/Ternary-Bonsai-2-27B-Uncensored-Heretic-GGUF",
+  "slug": "os-software-ternary-bonsai-2-27b-uncensored-heretic-gguf",
+  "author": "OS-Software",
+  "url": "https://huggingface.co/OS-Software/Ternary-Bonsai-2-27B-Uncensored-Heretic-GGUF",
+  "created_at": "2026-09-18T19:58:23.000Z",
+  "updated_at": "2026-09-18T19:58:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "ternary",
+    "bonsai",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "text-generation",
+    "base_model:prism-ml/Ternary-Bonsai-2-27B-gguf",
+    "base_model:quantized:prism-ml/Ternary-Bonsai-2-27B-gguf",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 14713210688,
+  "storage_human": "14.7 GB",
+  "base_model": "prism-ml/Ternary-Bonsai-2-27B-gguf",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OS : Tout ce que vous devez savoir sur les systèmes d’exploitation",
+      "url": "https://www.lebigdata.fr/os-tout-savoir",
+      "snippet": "Apr 5, 2026 · Un OS, ou système d’exploitation, est le logiciel fondamental qui gère l’ensemble des programmes et des ressources …"
+    },
+    {
+      "title": "Système d'exploitation : définition et liste des OS en 2026",
+      "url": "https://www.astuces-aide-informatique.info/878/definition-systeme-exploitation",
+      "snippet": "Définition : système d’exploitation 💡 Un système d’exploitation (ou OS, pour Operating System) est le logiciel qui fait tourner votre …"
+    },
+    {
+      "title": "Système d'exploitation — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Syst%C3%A8me_d%27exploitation",
+      "snippet": "En informatique, un système d'exploitation (souvent appelé OS — de l' anglais operating system — ou parfois SE — en français) est …"
+    },
+    {
+      "title": "Système d’exploitation et OS : qu’est-ce que c’est ? comment ça …",
+      "url": "https://www.malekal.com/systeme-exploitation-os-definition/",
+      "snippet": "Nov 17, 2019 · Ainsi un OS permet donc de faire fonctionner votre matériel tout en proposant une interface pour effectuer des actions …"
+    },
+    {
+      "title": "Os — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Os",
+      "snippet": "Dans le règne animal, des évolutions alternatives dans la constitution du squelette par rapport à l'os sont la coquille et l' exosquelette …"
+    }
+  ]
+}

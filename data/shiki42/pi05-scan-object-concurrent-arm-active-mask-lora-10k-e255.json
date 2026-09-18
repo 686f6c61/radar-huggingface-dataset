@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Shiki42/pi05-scan-object-concurrent-arm-active-mask-lora-10k-e255",
+  "slug": "shiki42-pi05-scan-object-concurrent-arm-active-mask-lora-10k-e255",
+  "author": "Shiki42",
+  "url": "https://huggingface.co/Shiki42/pi05-scan-object-concurrent-arm-active-mask-lora-10k-e255",
+  "created_at": "2026-09-18T16:37:41.000Z",
+  "updated_at": "2026-09-19T11:53:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "pi05",
+    "lora",
+    "robotwin",
+    "arm-active-mask",
+    "robotics",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6335583525,
+  "storage_human": "6.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/?gl=DE&hl=de",
+      "snippet": "Auf YouTube findest du großartige Videos und erstklassige Musik. Außerdem kannst du eigene Inhalte hochladen und mit Freunden …"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/de/german",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    },
+    {
+      "title": "YouTube – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/YouTube",
+      "snippet": "YouTube (Aussprache [ˈjuːtuːb oder ˈjuːtjuːb]) ist ein 2005 gegründetes Videoportal des US-amerikanischen Unternehmens YouTube, …"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed/homepage",
+      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new …"
+    }
+  ]
+}

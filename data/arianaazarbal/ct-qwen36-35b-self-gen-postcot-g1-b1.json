@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "arianaazarbal/ct-qwen36-35b-self-gen-postcot-g1-b1",
+  "slug": "arianaazarbal-ct-qwen36-35b-self-gen-postcot-g1-b1",
+  "author": "arianaazarbal",
+  "url": "https://huggingface.co/arianaazarbal/ct-qwen36-35b-self-gen-postcot-g1-b1",
+  "created_at": "2026-09-18T18:18:53.000Z",
+  "updated_at": "2026-09-18T18:19:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "constitutional-training",
+    "iterated-constitution",
+    "family:qwen36_35b",
+    "seed:self",
+    "method:gen",
+    "regime:post_cot",
+    "gen:1",
+    "branch:b1",
+    "text-generation",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:adapter:Qwen/Qwen3.6-35B-A3B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4491829400,
+  "storage_human": "4.5 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ücretsiz Oyunlar - Online Oyun Oyna | Oyunskor.com",
+      "url": "https://www.oyunskor.com/",
+      "snippet": "HTML5 oyunları için Türkiye'nin en iyi web sitesinde bedava çevrimiçi araba oyunları, spor oyunları, savaş oyunları, aksiyon oyunları, …"
+    },
+    {
+      "title": "Ateş ve su 1 - Oyna Ateş ve su 1 Oyunskor.com'da",
+      "url": "https://www.oyunskor.com/oyun/ates-ve-su",
+      "snippet": "Benzer Oyunlar Eğer gerçekten Ateş ve su oyunlarını seviyorsan, şunları da oynamak isteyebilirsin! Ateş ve su 2 Ateş ve su 3 Ateş …"
+    },
+    {
+      "title": "2 Kişilik Oyunlar - Oyunskor'da 2 kişilik oyunlar oynayın",
+      "url": "https://www.oyunskor.com/oyunlar/2kisilik-oyunlar?page=1",
+      "snippet": "En yeni 2 kişilik oyunları Türkiyenin en iyi oyun sitesi olan oyunskor farkıyla oynayın. En güzel iki kişilik oyunlar her gün güncellenerek …"
+    },
+    {
+      "title": "Oyna Ateş ve Su 4 online Oyunskor.com'da",
+      "url": "https://www.oyunskor.com/oyun/ates-ve-su-4",
+      "snippet": "A, W, S ve D ile Su'yu hareket ettir. Benzer Oyunlar Eğer macera oyunlarını gerçekten seviyorsan işte sana bundan sonra denemen …"
+    },
+    {
+      "title": "Hırsız Kardeşler - Oyunskor.com'da ücretsiz çevrimiçi",
+      "url": "https://www.oyunskor.com/oyun/hirsiz-kardesler",
+      "snippet": "Hırsız kardeşler oyunumuzda hırsızlıktan dolayı hapishaneye giren kardeşlerin tekrar hapishaneden &ccedil;ıkmasına yardımcı …"
+    }
+  ]
+}

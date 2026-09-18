@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/arb-arab-100mb-after-ppt-shuff-dyck-10mb-ckpt500_seed10",
+  "slug": "fpadovani-arb-arab-100mb-after-ppt-shuff-dyck-10mb-ckpt500_seed10",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/arb-arab-100mb-after-ppt-shuff-dyck-10mb-ckpt500_seed10",
+  "created_at": "2026-09-18T13:47:30.000Z",
+  "updated_at": "2026-09-18T14:19:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:fpadovani/arb-arab-100mb-ppt-shuff-dyck-10mb_seed10",
+    "base_model:finetune:fpadovani/arb-arab-100mb-ppt-shuff-dyck-10mb_seed10",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 2746576839,
+  "storage_human": "2.7 GB",
+  "base_model": "fpadovani/arb-arab-100mb-ppt-shuff-dyck-10mb_seed10",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Query - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Query",
+      "snippet": "This disambiguation page lists articles associated with the title Query. If an internal link incorrectly led you here, you may wish to …"
+    },
+    {
+      "title": "QUERY - käännös suomeksi - bab.la Englanti-Suomi sanakirja",
+      "url": "https://fi.bab.la/sanakirja/englanti-suomi/query",
+      "snippet": "Web search queries are distinctive in that they are unstructured and often ambiguous; they vary greatly from standard query …"
+    },
+    {
+      "title": "Home - Query",
+      "url": "https://www.query.ai/",
+      "snippet": "Query is a federated search platform for security data providing expanded data visibility without centralization."
+    },
+    {
+      "title": "SQL Tutorial - W3Schools",
+      "url": "https://www.w3schools.com/sql/",
+      "snippet": "SQL is a standard language for storing, manipulating and retrieving data in databases. Our SQL tutorial will teach you how to use …"
+    },
+    {
+      "title": "Query - definition of query by The Free Dictionary",
+      "url": "https://www.thefreedictionary.com/query",
+      "snippet": "query , inquiry, enquiry - A query is a single question; an inquiry (or enquiry) may be a single question or extensive investigation (i.e. …"
+    }
+  ]
+}

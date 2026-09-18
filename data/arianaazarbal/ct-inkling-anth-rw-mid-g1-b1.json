@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "arianaazarbal/ct-inkling-anth-rw-mid-g1-b1",
+  "slug": "arianaazarbal-ct-inkling-anth-rw-mid-g1-b1",
+  "author": "arianaazarbal",
+  "url": "https://huggingface.co/arianaazarbal/ct-inkling-anth-rw-mid-g1-b1",
+  "created_at": "2026-09-18T19:00:19.000Z",
+  "updated_at": "2026-09-18T19:02:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "constitutional-training",
+    "iterated-constitution",
+    "family:inkling_small",
+    "seed:anthropic",
+    "method:rw",
+    "regime:mid",
+    "gen:1",
+    "branch:b1",
+    "text-generation",
+    "base_model:thinkingmachines/Inkling-Small",
+    "base_model:adapter:thinkingmachines/Inkling-Small",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16901410336,
+  "storage_human": "16.9 GB",
+  "base_model": "thinkingmachines/Inkling-Small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Datenträgerbereinigung in Windows 10 - so geht's - heise online",
+      "url": "https://www.heise.de/tipps-tricks/Datentraegerbereinigung-in-Windows-10-so-geht-s-7494815.html",
+      "snippet": "Feb 14, 2023 · Sie möchten schnell Speicherplatz auf Ihrem PC frei machen? Das geht ganz bequem mit der Datenträgerbereingung …"
+    },
+    {
+      "title": "Windows Datenträgerbereinigung - so geht's - CHIP",
+      "url": "https://www.chip.de/ratgeber/software/windows-datentraegerbereinigung-so-geht-s_bd829084-fdce-4a52-9049-8449acc4d7d1.html",
+      "snippet": "Jan 27, 2025 · Führen Sie die Datenträgerbereinigung aus, etwa indem Sie [Win] + [R] drücken und dann cleanmgr.exe starten. Im …"
+    },
+    {
+      "title": "Datenträgerbereinigung in Windows 10",
+      "url": "https://www.windows-guru.de/datentraegerbereinigung-in-windows-10/",
+      "snippet": "Sep 19, 2019 · In dieser Anleitung zeige ich dir, wie man eine Datenträgerbereinigung in Windows 10 durchführen kann. Mit Bildern …"
+    },
+    {
+      "title": "Windows 10/11: Datenträgerbereinigung öffnen & starten - GIGA",
+      "url": "https://www.giga.de/downloads/windows-10/tipps/windows-10-datentraegerbereinigung/",
+      "snippet": "Oct 30, 2018 · Drückt die Tastenkombination Windows + R, um das Ausführen-Fenster zu öffnen. Tippt cleanmgr ein und drückt …"
+    },
+    {
+      "title": "Datenträgerbereinigung ausführen in Windows 11 und Windows 10",
+      "url": "https://tippsling.de/windows-11-10-datentraegerbereinigung-ausfuehren-so-gehts/",
+      "snippet": "May 10, 2026 · Dieser Artikel zeigt Ihnen Schritt für Schritt, wie Sie die Datenträgerbereinigung unter Windows 10 und Windows 11 …"
+    }
+  ]
+}

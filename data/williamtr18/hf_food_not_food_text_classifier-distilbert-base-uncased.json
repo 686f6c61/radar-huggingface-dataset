@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "williamtr18/hf_food_not_food_text_classifier-distilbert-base-uncased",
+  "slug": "williamtr18-hf_food_not_food_text_classifier-distilbert-base-uncased",
+  "author": "williamtr18",
+  "url": "https://huggingface.co/williamtr18/hf_food_not_food_text_classifier-distilbert-base-uncased",
+  "created_at": "2026-09-18T15:48:46.000Z",
+  "updated_at": "2026-09-18T15:49:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267837825,
+  "storage_human": "268 MB",
+  "base_model": "distilbert/distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Windows-Hilfe und -Lerninhalt | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/windows/",
+      "snippet": "Erhalten Sie Support für Windows, und erfahren Sie mehr über Installation, Updates, Datenschutz, Sicherheit und mehr."
+    },
+    {
+      "title": "So erhalten Sie Hilfe in Windows - Microsoft-Support",
+      "url": "https://support.microsoft.com/de-de/windows/so-erhalten-sie-hilfe-in-windows-711b6492-0435-0038-8706-7c6b0feb200a",
+      "snippet": "Hier sind einige verschiedene Möglichkeiten, Unterstützung bei Windows zu finden. Suche nach Hilfe – Geben Sie eine Frage oder …"
+    },
+    {
+      "title": "Windows 11/10: Hilfe zu Windows – So geht’s - tippsling.de",
+      "url": "https://tippsling.de/hilfe-zu-windows-so-gehts-in-windows-11-und-windows-10/",
+      "snippet": "Mar 12, 2026 · Wer täglich mit Windows arbeitet, stößt früher oder später auf Fragen zu Einstellungen, Updates oder …"
+    },
+    {
+      "title": "Windows 11 Hilfe finden: Microsoft-Support, Einstellungen und ...",
+      "url": "https://www.win-tipps.de/windows-11-hilfe-microsoft-support-einstellungen-problembehandlung/",
+      "snippet": "Jun 5, 2026 · So findest du in Windows 11 die richtige Hilfe: Einstellungen, Problembehandlung, Schnellhilfe und Microsoft-Support …"
+    },
+    {
+      "title": "7 Möglichkeiten, Hilfe in Windows 10 und Windows 11 zu erhalten",
+      "url": "https://de.windows.day/?p=5228",
+      "snippet": "Geben Sie Hilfe in die Suchleiste ein, um Lösungen zu finden, oder besuchen Sie die Support-Seite von Microsoft. Öffnen Sie die Get …"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Man1103/XVLA-Base-0.88B",
+  "slug": "man1103-xvla-base-0-88b",
+  "author": "Man1103",
+  "url": "https://huggingface.co/Man1103/XVLA-Base-0.88B",
+  "created_at": "2026-09-18T17:07:03.000Z",
+  "updated_at": "2026-09-18T17:58:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "ImageTextToAction",
+    "Vision-Language-Action",
+    "Action-Prediction",
+    "Transformers",
+    "Multimodal",
+    "ViT",
+    "Robotics",
+    "Lightweight-VLA",
+    "robotics",
+    "en",
+    "arxiv:2510.10274",
+    "base_model:lerobot/xvla-base",
+    "base_model:finetune:lerobot/xvla-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 879687256,
+  "parameters_human": "879.7M",
+  "storage_bytes": 3518865152,
+  "storage_human": "3.5 GB",
+  "base_model": "lerobot/xvla-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fussball Livescore",
+      "url": "https://www.livescore.in/de/",
+      "snippet": "Erklärungen: Der Fussball Livescore auf LIVESCORE.in (Live Fussball Ergebnisse) bietet den Fussballfans Live Ergebnisse aus über …"
+    },
+    {
+      "title": "LiveScore | Today's Live Football Scores, Fixtures & Results",
+      "url": "https://www.livescore.com/en/",
+      "snippet": "Get Today's Live Football Scores and Real-Time Football Results with LiveScore! We cover all Countries, Leagues and Competitions …"
+    },
+    {
+      "title": "Fussball Live-Ticker, Fussball Live Scores l Flashscore.de",
+      "url": "https://www.flashscore.de/",
+      "snippet": "Eine Liste der Sportarten und die Anzahl der Wettbewerbe (heutige Resultate / alle Wettbewerbe) in jeder Sportart können im …"
+    },
+    {
+      "title": "LiveScore | Ergebnisse Live, Spielpläne und Spiele der Bundesliga",
+      "url": "https://www.livescore.com/de/",
+      "snippet": "Mit LiveScore erhalten Sie Ergebnisse Live und Echtzeit-Fußballergebnisse! Wir decken alle Länder, Ligen und Wettbewerbe mit …"
+    },
+    {
+      "title": "Livescore: Football Scores",
+      "url": "https://www.livescore.in/",
+      "snippet": "Explanations: Football livescore service on Livescore.in provides bettors and football fans with livescore real-time score service for …"
+    }
+  ]
+}

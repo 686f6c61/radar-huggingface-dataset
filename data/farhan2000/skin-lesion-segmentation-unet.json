@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Farhan2000/skin-lesion-segmentation-unet",
+  "slug": "farhan2000-skin-lesion-segmentation-unet",
+  "author": "Farhan2000",
+  "url": "https://huggingface.co/Farhan2000/skin-lesion-segmentation-unet",
+  "created_at": "2026-09-18T13:22:24.000Z",
+  "updated_at": "2026-09-18T13:22:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "segmentation",
+    "unet",
+    "skin-lesion",
+    "medical-imaging",
+    "pytorch",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 97904027,
+  "storage_human": "98 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SFR | Internet Fibre et ADSL, Forfaits 5G, Téléphone, TV",
+      "url": "https://www.sfr.fr/?msockid=2a6b0b191e3666cd314b1cc11fdc679b",
+      "snippet": "Découvrez les offres Internet et mobile sur SFR.FR : Box fibre et Très Haut Débit, forfaits mobiles, smartphones, box 5G, bouquets …"
+    },
+    {
+      "title": "Gestion de mon Compte SFR - Espace Client SFR",
+      "url": "https://www.sfr.fr/mon-espace-client/?msockid=2a6b0b191e3666cd314b1cc11fdc679b",
+      "snippet": "Utilisez l'adresse email et le mot de passe que vous avez saisis lors de la création de votre compte ou votre identifiant email (au …"
+    },
+    {
+      "title": "SFR Mail – Retrouvez votre Webmail, boite mail et adresse mail",
+      "url": "https://webmail.sfr.fr/",
+      "snippet": "SFR Mail, connectez-vous sur votre messagerie avec votre adresse mail SFR sur le Webmail pour accéder à votre boite mail."
+    },
+    {
+      "title": "Accueil SFR Mail",
+      "url": "https://assistance.sfr.fr/sfrmail-appli/sfrmail/accueil.html",
+      "snippet": "Retrouvez, dans l'univers SFR Mail de l'Assistance SFR, toutes les informations pour consulter vos e-mails depuis votre ordinateur, …"
+    },
+    {
+      "title": "RED by SFR | Forfait sans engagement, Internet, Téléphones",
+      "url": "https://www.red-by-sfr.fr/",
+      "snippet": "Choisir RED by SFR, c’est faire le choix de la liberté et de la simplicité. Toutes nos offres mobile et internet sont sans engagement : …"
+    }
+  ]
+}

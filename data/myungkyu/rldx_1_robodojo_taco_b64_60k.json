@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Myungkyu/rldx_1_robodojo_taco_b64_60k",
+  "slug": "myungkyu-rldx_1_robodojo_taco_b64_60k",
+  "author": "Myungkyu",
+  "url": "https://huggingface.co/Myungkyu/rldx_1_robodojo_taco_b64_60k",
+  "created_at": "2026-09-18T15:41:28.000Z",
+  "updated_at": "2026-09-18T15:42:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "RLDX-1",
+    "robotics",
+    "vla",
+    "robodojo",
+    "dataset:Myungkyu/RoboDojo-taco-gemini",
+    "base_model:RLWRLD/RLDX-1-PT",
+    "base_model:finetune:RLWRLD/RLDX-1-PT",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6912896320,
+  "parameters_human": "6.91B",
+  "storage_bytes": 13825892072,
+  "storage_human": "13.8 GB",
+  "base_model": "RLWRLD/RLDX-1-PT",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "YouTube Brasil",
+      "url": "https://www.youtube.com/channel/UCUN9lhwfMJRxMVuet7Shg0w",
+      "snippet": "É canal oficial do YouTube Brasil que vocês querem? :D Se inscreve para descobrir as novidades e tendências da plataforma, …"
+    },
+    {
+      "title": "Essential '90s R&B - YouTube Music",
+      "url": "https://music.youtube.com/playlist?list=RDCLAK5uy_ne3DJMol0EVIfwcuZnx2hQak0q6EbeBlY",
+      "snippet": "Playlist • YouTube Music R&B defined American mainstream music throughout the '90s. Here are key tracks from R&B's most vital …"
+    },
+    {
+      "title": "Movies & TV - YouTube",
+      "url": "https://movies.youtube.com/",
+      "snippet": "Find the latest and greatest movies and shows all available on YouTube.com/movies. From award-winning hits to independent …"
+    },
+    {
+      "title": "YouTube TV",
+      "url": "https://tv.youtube.com/app",
+      "snippet": "Stream live TV from over 70 networks, record programs without storage limits, and enjoy hassle-free viewing without a cable box. …"
+    }
+  ]
+}

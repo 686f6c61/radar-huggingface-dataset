@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "mradermacher/abliterated-minicpm5-2b-v2-i1-GGUF",
+  "slug": "mradermacher-abliterated-minicpm5-2b-v2-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/abliterated-minicpm5-2b-v2-i1-GGUF",
+  "created_at": "2026-09-18T17:13:33.000Z",
+  "updated_at": "2026-09-18T17:40:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation",
+    "abliterated",
+    "dpo",
+    "llama.cpp",
+    "pytorch",
+    "en",
+    "base_model:KidIkaros/abliterated-minicpm5-2b-v2",
+    "base_model:quantized:KidIkaros/abliterated-minicpm5-2b-v2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 30242611872,
+  "storage_human": "30.2 GB",
+  "base_model": "KidIkaros/abliterated-minicpm5-2b-v2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ШБ — Википедия",
+      "url": "https://ru.wikipedia.org/wiki/%D0%A8%D0%91",
+      "snippet": "ШБ (ББ-2) — советский опытный двухместный штурмовик-бомбардировщик, он же «ближний бомбардировщик второй», …"
+    },
+    {
+      "title": "Шримад-Бхагаватам",
+      "url": "https://vedabase.io/ru/library/sb/",
+      "snippet": "Srila Prabhupada's books online Поддержать Спасибо Shweta Saxena; Gopalakrishnan Soundarajan; Kuldip Persaud; Raghava …"
+    },
+    {
+      "title": "Кто разбирается в молодежном сленге объясните что значит \"шб\"",
+      "url": "https://otvet.mail.ru/question/236905202",
+      "snippet": "Кто разбирается в молодежном сленге объясните что значит \"шб\" Назвали так в гетконтакт, что это значит..."
+    },
+    {
+      "title": "ШБ 01. Творение. Часть 1 (Главы 1–9)",
+      "url": "https://bhaktivedanta.by/media/books/html/shrimad-bhagavatam-01-1/index.html",
+      "snippet": "1. Изначальная духовная планета, напоминающая огромный цветок лотоса, называется Голокой Вриндаваной. Это обитель …"
+    },
+    {
+      "title": "ШБ. Песнь 1 - vasudeva.ru",
+      "url": "https://vasudeva.ru/teksty/shrimad-bkhagavatam/shrimad-bkhagavatam-pesn-01",
+      "snippet": "Ведическое знание в книгах, лекциях, фильмах. Мудрость Древней Индии."
+    }
+  ]
+}

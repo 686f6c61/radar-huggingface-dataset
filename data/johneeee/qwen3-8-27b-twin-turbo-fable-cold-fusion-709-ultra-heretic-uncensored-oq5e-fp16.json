@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Johneeee/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored-oQ5e-fp16",
+  "slug": "johneeee-qwen3-8-27b-twin-turbo-fable-cold-fusion-709-ultra-heretic-uncensored-oq5e-fp16",
+  "author": "Johneeee",
+  "url": "https://huggingface.co/Johneeee/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored-oQ5e-fp16",
+  "created_at": "2026-09-18T14:20:13.000Z",
+  "updated_at": "2026-09-18T14:26:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "oq",
+    "quantized",
+    "5-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 19177298578,
+  "storage_human": "19.2 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Windows Sicherheit - Kernisolierung aktivieren?",
+      "url": "https://www.windows-10-forum.com/threads/windows-sicherheit-kernisolierung-aktivieren.158080/",
+      "snippet": "Windows Sicherheit - Kernisolierung aktivieren? Hi, hab grad auf meinem PC gesehen, dass ich unter Windows Sicherheit > …"
+    },
+    {
+      "title": "Windows Sicherheit - Maßnahmen empfohlen",
+      "url": "https://www.windows-10-forum.com/threads/windows-sicherheit-massnahmen-empfohlen.162519/",
+      "snippet": "Windows Sicherheit Viren- & Bedrohungschutz Maßnahme erforderlich Windows Sicherheit Viren- & Bedrohungschutz Maßnahme …"
+    },
+    {
+      "title": "Enable or Disable Inherited Permissions for Objects in Windows",
+      "url": "https://www.tenforums.com/tutorials/88305-enable-disable-inherited-permissions-objects-windows.html",
+      "snippet": "Mar 19, 2020 · Enable or Disable Inherited Permissions for Files and Folders in Windows On NTFS and ReFS volumes, you can set …"
+    },
+    {
+      "title": "Windows 10 Home not connecting to intranet WSUS - Ten Forums",
+      "url": "https://www.tenforums.com/windows-updates-activation/10932-windows-10-home-not-connecting-intranet-wsus.html",
+      "snippet": "Aug 27, 2015 · Work fine for Windows 10 Pro, but Home seem to completely ignore them, and insist on only contacting the Microsoft …"
+    },
+    {
+      "title": "Windows Sicherheit, lässt sich nicht starten",
+      "url": "https://www.windows-10-forum.com/threads/windows-sicherheit-laesst-sich-nicht-starten.161008/",
+      "snippet": "Helfe beim Thema Windows Sicherheit, lässt sich nicht startenin Windows 10 Supportum eine Lösung zu finden; Nachdem ich …"
+    }
+  ]
+}

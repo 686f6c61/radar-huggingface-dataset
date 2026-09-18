@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "AvrovaDonz/CAT-YOKO",
+  "slug": "avrovadonz-cat-yoko",
+  "author": "AvrovaDonz",
+  "url": "https://huggingface.co/AvrovaDonz/CAT-YOKO",
+  "created_at": "2026-09-18T15:37:57.000Z",
+  "updated_at": "2026-09-21T10:47:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "moe",
+    "yoco",
+    "minicpm",
+    "causal-lm",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:openbmb/MiniCPM5-2B-Base",
+    "base_model:finetune:openbmb/MiniCPM5-2B-Base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7892716648,
+  "storage_human": "7.9 GB",
+  "base_model": "openbmb/MiniCPM5-2B-Base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "鹰击长空2显示ubisoft game launcher error code1解决方法",
+      "url": "https://zhidao.baidu.com/question/528491626.html",
+      "snippet": "鹰击长空2显示ubisoft game launcher error code1解决方法 这问题已经得到解决这是大神feibi2006给与的解答.为了广大打飞机迷的需 …"
+    },
+    {
+      "title": "我泡泡堂登不进去出现Check out the game or unstable internet",
+      "url": "https://zhidao.baidu.com/question/2075451631389195948.html",
+      "snippet": "Feb 8, 2015 · Check out the game or unstable internet environment can not be connected 意思是 检查到游戏网络环境不稳定，无法 …"
+    },
+    {
+      "title": "找不到discord_game_sdk.dll - 《使命召唤21：黑色行动6》",
+      "url": "https://bbs.3dmgame.com/thread-6611296-1-1.html",
+      "snippet": "Mar 23, 2012 · 3DMGAME论坛 » 论坛 › 经典游戏 › 《使命召唤》全系列 › 《使命召唤21：黑色行动6》 › 找不到discord_game_sdk.dll"
+    },
+    {
+      "title": "win11没任何杀毒软件，唯独这个20的使命召唤的discord_game_sdk.dll …",
+      "url": "https://bbs.3dmgame.com/thread-6613571-1-1.html",
+      "snippet": "Aug 28, 2013 · win11没任何杀毒软件，以前的15---21使命召唤的discord_game_sdk.dll不会自动删除，唯独这个20 …"
+    },
+    {
+      "title": "中国有哪些出色的独立游戏（Indie Game）？ - 知乎",
+      "url": "https://www.zhihu.com/question/19917923",
+      "snippet": "中国有哪些出色的独立游戏（Indie Game）？ 维基百科，自由的百科全书 | 独立游戏 独立游戏（英語：Independent Game或Indie …"
+    }
+  ]
+}

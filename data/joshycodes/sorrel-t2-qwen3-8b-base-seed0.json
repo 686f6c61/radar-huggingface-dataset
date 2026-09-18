@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "joshycodes/sorrel-T2-qwen3-8b-base-seed0",
+  "slug": "joshycodes-sorrel-t2-qwen3-8b-base-seed0",
+  "author": "joshycodes",
+  "url": "https://huggingface.co/joshycodes/sorrel-T2-qwen3-8b-base-seed0",
+  "created_at": "2026-09-18T17:46:59.000Z",
+  "updated_at": "2026-09-18T17:48:28.000Z",
+  "license": "research-only",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "research",
+    "continued-pretraining",
+    "self-authored-character",
+    "not-safety-tuned",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 32774468236,
+  "storage_human": "32.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aktuelle Nachrichten | BILD.de",
+      "url": "https://www.bild.de/",
+      "snippet": "BILD.de: Die Seite 1 für aktuelle Nachrichten und Themen, Bilder und Videos aus den Bereichen News, Wirtschaft, Politik, Show, …"
+    },
+    {
+      "title": "News: Aktuelle Nachrichten und Videos - BILD.de",
+      "url": "https://www.bild.de/news/startseite/news/news-16804530.bild.html",
+      "snippet": "Aktuelle News aus Deutschland, Europa und der Welt. Alle Informationen, Bilder und Videos zu Skandalen, Krisen und Sensationen …"
+    },
+    {
+      "title": "SPORT BILD | Sport-Nachrichten | Live Sportergebnisse | Meinungen, …",
+      "url": "https://sportbild.bild.de/",
+      "snippet": "Live Sportergebnisse, Videos & Sportdaten: SPORT BILD online bietet Sport Live-News zu Fußball, Bundesliga und Formel 1. …"
+    },
+    {
+      "title": "Bild (Zeitung) – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Bild_(Zeitung)",
+      "snippet": "Bild (bis in die 1970er-Jahre und umgangssprachlich weiterhin auch Bild-Zeitung) ist die größte täglich erscheinende …"
+    },
+    {
+      "title": "BILD ePaper",
+      "url": "https://epaper.bild.de/?lang=de",
+      "snippet": "Online-Apotheke Energielösungen BILD Reisen BILD BILD ePaper Ihre Privatsphäre ist uns wichtig Diese Website nutzt Cookies, um …"
+    }
+  ]
+}

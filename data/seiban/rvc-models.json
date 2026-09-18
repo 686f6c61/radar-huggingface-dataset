@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "seiban/RVC-Models",
+  "slug": "seiban-rvc-models",
+  "author": "seiban",
+  "url": "https://huggingface.co/seiban/RVC-Models",
+  "created_at": "2026-09-18T18:19:05.000Z",
+  "updated_at": "2026-09-18T18:21:38.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17378245,
+  "storage_human": "17 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Our locations - Sygnatures",
+      "url": "https://www.sygnatures.com/our-locations/",
+      "snippet": "Home Our locations Our locations"
+    },
+    {
+      "title": "Mentions légales - Sygnatures",
+      "url": "https://www.sygnatures.com/mentions-legales/",
+      "snippet": "Retrouvez et consultez les mentions légales du site Sygnatures et les informations réglementaires associées."
+    },
+    {
+      "title": "i-Suite Expert",
+      "url": "https://isuite.sygnatures.com/cnx/iSuiteExpert/Connexion",
+      "snippet": "Mot de passe oublié ? Se connecter ..."
+    },
+    {
+      "title": "Reconversion des salariés - Sygnatures",
+      "url": "https://www.sygnatures.com/reconversion-des-salaries/",
+      "snippet": "Depuis le 1er février 2026, la « période de reconversion » remplace Pro-A et Transco pour faciliter les mobilités professionnelles."
+    },
+    {
+      "title": "Testimonies - Sygnatures",
+      "url": "https://www.sygnatures.com/en/testimonials/",
+      "snippet": "Interview Sygnatures - Elise JEANNOT - YouTube Interview Sygnatures - Elise JEANNOT SYGNATURES"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "davidalarrea/S1-mini-MLX-4bit",
+  "slug": "davidalarrea-s1-mini-mlx-4bit",
+  "author": "davidalarrea",
+  "url": "https://huggingface.co/davidalarrea/S1-mini-MLX-4bit",
+  "created_at": "2026-09-18T13:28:04.000Z",
+  "updated_at": "2026-09-18T13:28:06.000Z",
+  "license": "s1-mini-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3",
+    "asr",
+    "text-normalization",
+    "inverse-text-normalization",
+    "punctuation",
+    "truecasing",
+    "speech-to-text",
+    "dictation",
+    "post-processing",
+    "4-bit",
+    "text-generation",
+    "conversational",
+    "en",
+    "arxiv:2505.09388",
+    "base_model:superwhisper/s1-mini",
+    "base_model:quantized:superwhisper/s1-mini",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 347027217,
+  "storage_human": "347 MB",
+  "base_model": "superwhisper/s1-mini",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sitio web oficial de Nike. Nike MX",
+      "url": "https://www.nike.com/mx/?msockid=1a6ec741497b694d1bd3d099482e6843",
+      "snippet": "Nike ofrece productos innovadores, experiencias y servicios para inspirar a los atletas del mundo. Entrega y devoluciones gratuitas …"
+    },
+    {
+      "title": "Nike. Just Do It. Nike ZA",
+      "url": "https://www.nike.com/za?msockid=1a6ec741497b694d1bd3d099482e6843",
+      "snippet": "Inspiring the world's athletes, Nike delivers innovative products, experiences and services."
+    },
+    {
+      "title": "Sydney – Nike After Dark Tour 2026",
+      "url": "https://www.afterdarktour.nike.com/en/sydney",
+      "snippet": "Nike After Dark Tour returns, a series of seven iconic night-running experiences in cities around the globe."
+    },
+    {
+      "title": "Nike 工作机会",
+      "url": "https://careers.nike.com/zh-cn/jobs",
+      "snippet": "Athlete Nike (Vendeur.se en magasin) – H / F CDI 24h R-92339 Villeneuve, Nord, France Retail Stores 查看职位"
+    },
+    {
+      "title": "USA. Nike.com",
+      "url": "https://www.nike.com/w/usa-10ciy/?msockid=1a6ec741497b694d1bd3d099482e6843",
+      "snippet": "Find USA at Nike.com. Free delivery and returns."
+    }
+  ]
+}

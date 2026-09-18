@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "aacudad/AnomalyThink-Qwen3-VL-8B-SFT",
+  "slug": "aacudad-anomalythink-qwen3-vl-8b-sft",
+  "author": "aacudad",
+  "url": "https://huggingface.co/aacudad/AnomalyThink-Qwen3-VL-8B-SFT",
+  "created_at": "2026-09-18T15:10:17.000Z",
+  "updated_at": "2026-09-18T15:27:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_vl",
+    "image-text-to-text",
+    "anomaly-detection",
+    "industrial-anomaly-detection",
+    "vision-language-model",
+    "reasoning",
+    "conversational",
+    "dataset:aacudad/AnomalyThink",
+    "base_model:Qwen/Qwen3-VL-8B-Instruct",
+    "base_model:finetune:Qwen/Qwen3-VL-8B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8767123696,
+  "parameters_human": "8.77B",
+  "storage_bytes": 17552795637,
+  "storage_human": "17.6 GB",
+  "base_model": "Qwen/Qwen3-VL-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Groupe scolaire Champagnat – École & Collège privé l'Arbresle",
+      "url": "https://www.ecoledirecte.com/login",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "EcoleDirecte",
+      "url": "https://ecoledirecte.fr/",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "EcoleDirecte - Administration",
+      "url": "https://admin.ecoledirecte.com/login",
+      "snippet": "EcoleDirecte : Bienvenue sur le site d'administration des sites EcoleDirecte"
+    },
+    {
+      "title": "Mot de passe oublié - EcoleDirecte",
+      "url": "https://api.ecoledirecte.com/mot-de-passe-oublie.awp",
+      "snippet": "EcoleDirecte COMMENT SOUHAITEZ-VOUS RÉCUPÉRER VOS IDENTIFIANTS ? Adresse email ou numéro de téléphone"
+    },
+    {
+      "title": "Mon EcoleDirecte – Applications sur Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.ecoledirecte.edmobile&hl=fr",
+      "snippet": "Cette application est disponible pour les familles, élèves, professeurs et personnels qui possèdent déjà un compte sur EcoleDirecte …"
+    }
+  ]
+}

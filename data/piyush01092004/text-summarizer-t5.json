@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "piyush01092004/text-summarizer-t5",
+  "slug": "piyush01092004-text-summarizer-t5",
+  "author": "piyush01092004",
+  "url": "https://huggingface.co/piyush01092004/text-summarizer-t5",
+  "created_at": "2026-09-18T18:46:42.000Z",
+  "updated_at": "2026-09-18T18:46:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 60506624,
+  "parameters_human": "60.5M",
+  "storage_bytes": 242041896,
+  "storage_human": "242 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WhatsApp Web",
+      "url": "https://web.whatsapp.com/",
+      "snippet": "Log in to WhatsApp Web for simple, reliable and private messaging on your desktop. Send and receive messages and files with …"
+    },
+    {
+      "title": "Download WhatsApp",
+      "url": "https://www.whatsapp.com/download",
+      "snippet": "Use WhatsApp on your browser. New to WhatsApp? Need help? Download WhatsApp on your mobile device, tablet or desktop and …"
+    },
+    {
+      "title": "WhatsApp | Secure and Reliable Free Private Messaging and Calling",
+      "url": "https://www.whatsapp.com/",
+      "snippet": "Now you can make and receive video or voice calls — one-on-one or in groups — right from your browser. With private messaging …"
+    },
+    {
+      "title": "HOUSAB - WhatsApp",
+      "url": "https://wa.me/",
+      "snippet": "Hosted by WhatsApp 2026 © WhatsApp LLC Privacy & Terms"
+    },
+    {
+      "title": "WhatsApp Web - WhatsApp-blog",
+      "url": "https://blog.whatsapp.com/whats-app-web?lang=nl",
+      "snippet": "Vandaag hebben miljoenen van jullie voor het eerst de mogelijkheid om WhatsApp te gebruiken in een browser. Je kunt onze …"
+    }
+  ]
+}

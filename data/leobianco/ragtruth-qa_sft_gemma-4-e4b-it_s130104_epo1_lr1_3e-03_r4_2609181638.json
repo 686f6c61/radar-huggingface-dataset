@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "leobianco/ragtruth-qa_SFT_gemma-4-E4B-it_S130104_epo1_lr1_3e-03_r4_2609181638",
+  "slug": "leobianco-ragtruth-qa_sft_gemma-4-e4b-it_s130104_epo1_lr1_3e-03_r4_2609181638",
+  "author": "leobianco",
+  "url": "https://huggingface.co/leobianco/ragtruth-qa_SFT_gemma-4-E4B-it_S130104_epo1_lr1_3e-03_r4_2609181638",
+  "created_at": "2026-09-18T16:38:57.000Z",
+  "updated_at": "2026-09-18T16:43:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:google/gemma-4-E4B-it",
+    "base_model:finetune:google/gemma-4-E4B-it",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 41331115,
+  "storage_human": "41 MB",
+  "base_model": "google/gemma-4-E4B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "\"Ыыы\" — что значит в интернет-сленге - SYL.ru",
+      "url": "https://www.syl.ru/article/546412/2023-yiyiyi-chto-znachit-v-internet-slenge",
+      "snippet": "Dec 17, 2023 · В статье разбирается популярное в интернете междометие \"ыыы\". Объясняются различные значения \"ыыы …"
+    },
+    {
+      "title": "ыыыы - YouTube",
+      "url": "https://www.youtube.com/watch?v=J0a-0wI2vBY",
+      "snippet": "Aug 2, 2023 · Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on …"
+    },
+    {
+      "title": "ЫЫЫЫЫ))) Приколы с котами | Мемозг 993 - YouTube",
+      "url": "https://www.youtube.com/watch?v=CPtySQiaKTI",
+      "snippet": "Feb 19, 2022 · Лютые приколы с котами и не только. Тест на психику. Смешные животные. Угарные мемы ..."
+    },
+    {
+      "title": "Что такое это \"ыЫЫ\"? - user_3134731 | Ответы Mail",
+      "url": "https://otvet.mail.ru/question/26160808",
+      "snippet": "Да это просто прикол, когда тебе смешно ты в сообщении пишешь гы гы гы, либо ыыы, либо еще чего."
+    },
+    {
+      "title": "ыыыы ножик надо покрутить ыыы — Видео от Алексей",
+      "url": "https://vkvideo.ru/video-235927178_456239018",
+      "snippet": "Feb 11, 2026 · Смотрите онлайн ыыыы ножик надо покрутить ыыы 9 с. Видео от 11 февраля 2026 в хорошем качестве, без …"
+    }
+  ]
+}

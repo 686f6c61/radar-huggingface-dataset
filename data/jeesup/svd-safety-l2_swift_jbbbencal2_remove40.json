@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l2_swift_jbbbencal2_remove40",
+  "slug": "jeesup-svd-safety-l2_swift_jbbbencal2_remove40",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l2_swift_jbbbencal2_remove40",
+  "created_at": "2026-09-18T19:36:16.000Z",
+  "updated_at": "2026-09-22T00:21:14.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama2",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-2-7b-chat-hf",
+    "base_model:finetune:meta-llama/Llama-2-7b-chat-hf",
+    "license:llama2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13477364771,
+  "storage_human": "13.5 GB",
+  "base_model": "meta-llama/Llama-2-7b-chat-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hulp bij account",
+      "url": "https://nl.answers.acer.com/app/utils/account_assistance/session/L2F2LzEvdGltZS8xMzUxMTUxODg1L3NpZC9fdm80T0E5bA==",
+      "snippet": "Voer uw serienummer of SNID in, of zoek voor uw model om informatie over uw Acer systeem te vinden: Voer serienummer of SNID …"
+    },
+    {
+      "title": "Fout - nl.answers.acer.com",
+      "url": "https://nl.answers.acer.com/ci/fattach/get/198628/0/filename/RS232_commands_P5271_P5290_P5390W_P5271i.pdf",
+      "snippet": "Toegang geweigerd U hebt geen toestemming om dit document te openen."
+    },
+    {
+      "title": "nl.answers.acer.com",
+      "url": "https://nl.answers.acer.com/app/utils/login_form/redirect/%252Fapp%252Fanswers%252Fdetail%252Fa_id%252F29756%252F%257E%252Faspire-v3-571-komt-niet-uit-de-slaapstand-via-een-extern-toetsenbord-of-muis",
+      "snippet": ""
+    },
+    {
+      "title": "nl.answers.acer.com",
+      "url": "https://nl.answers.acer.com/app/utils/login_form/redirect/%252Fapp%252Fanswers%252Fdetail%252Fa_id%252F13643%252Fkw%252FACER%252520A500%252Frelated%252F1",
+      "snippet": ""
+    },
+    {
+      "title": "nl.answers.acer.com",
+      "url": "https://nl.answers.acer.com/app/utils/login_form/redirect/%252Fapp%252Fanswers%252Fdetail%252Fa_id%252F7725",
+      "snippet": ""
+    }
+  ]
+}

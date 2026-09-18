@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Iambackup/Ternary-Bonsai-2-27B-mlx-2bit",
+  "slug": "iambackup-ternary-bonsai-2-27b-mlx-2bit",
+  "author": "Iambackup",
+  "url": "https://huggingface.co/Iambackup/Ternary-Bonsai-2-27B-mlx-2bit",
+  "created_at": "2026-09-18T16:05:04.000Z",
+  "updated_at": "2026-09-18T16:05:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "prism_hadamard_qwen35",
+    "ternary",
+    "2-bit",
+    "cuda",
+    "metal",
+    "on-device",
+    "hybrid-attention",
+    "prismml",
+    "bonsai",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27359638768,
+  "parameters_human": "27.36B",
+  "storage_bytes": 8608287310,
+  "storage_human": "8.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Netflix",
+      "url": "https://www.netflix.com/de/login",
+      "snippet": "Schauen Sie Netflix-Filme und -Serien online oder per Streaming auf Smart-TVs, Spielkonsolen, PCs, Macs, Smartphones, Tablets …"
+    },
+    {
+      "title": "Netflix Deutschland – Serien online ansehen, Filme online ansehen",
+      "url": "https://www.netflix.com/de/",
+      "snippet": "Sie können sich auch auf einem Gerät mit Internetverbindung einloggen, auf dem die Netflix-App installiert ist, zum Beispiel auf Smart …"
+    },
+    {
+      "title": "Netflix",
+      "url": "https://www.netflix.com/LOGIN?cookieCheck=true",
+      "snippet": "Watch Netflix movies & TV shows online or stream right to your smart TV, game console, PC, Mac, mobile, tablet and more."
+    },
+    {
+      "title": "Netflix - Watch TV Shows Online, Watch Movies Online",
+      "url": "https://www.netflix.com/",
+      "snippet": "Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet …"
+    },
+    {
+      "title": "Bei Netflix einloggen | Hilfe-Center von Netflix",
+      "url": "https://help.netflix.com/de/node/311830241325668",
+      "snippet": "Öffnen Sie Netflix auf Ihrem Smartphone oder Tablet und wählen Sie Einloggen. Geben Sie Ihre E-Mail-Adresse oder die …"
+    }
+  ]
+}

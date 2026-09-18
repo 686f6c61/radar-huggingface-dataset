@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "LeiGong/vlm_3d_tracking_annotator_opensource_checkpoints",
+  "slug": "leigong-vlm_3d_tracking_annotator_opensource_checkpoints",
+  "author": "LeiGong",
+  "url": "https://huggingface.co/LeiGong/vlm_3d_tracking_annotator_opensource_checkpoints",
+  "created_at": "2026-09-18T16:16:09.000Z",
+  "updated_at": "2026-09-21T18:45:36.000Z",
+  "license": "mixed-upstream-licenses",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mirror",
+    "vision-language",
+    "point-tracking",
+    "tap-vid-davis",
+    "image-text-to-text",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 712162106745,
+  "storage_human": "712.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "2M live , 2M en direct : La deuxième chaine TV Marocaine - Fraja Maroc",
+      "url": "https://foutni.com/2m-monde-live-la-deuxieme-chaine-tv-marocaine/",
+      "snippet": "Mar 7, 2026 · 2M est parmi les chaines les plus populaires au Maroc , et enregistre chaque année des téléspectateurs records. Vous …"
+    },
+    {
+      "title": "شاهد القناة الثانية 2M بث مباشر | دوزيم المغربية (2026)",
+      "url": "https://tvnoov.com/chnls/arabic/chan1/morro2.php",
+      "snippet": "تابع البث المباشر للقناة الثانية المغربية 2M (دوزيم) مجاناً على TVNoov. شاهد أحدث المسلسلات، برنامج رشيد شو، الأخبار، وصباحيات 2M بجودة عالية."
+    },
+    {
+      "title": "الرئيسية - 2M",
+      "url": "https://2m.ma/live",
+      "snippet": "Regardez 2M en direct pour des programmes variés et divertissants."
+    },
+    {
+      "title": "2M Maroc en direct — programme TV maintenant",
+      "url": "https://www.programmecesoir.fr/en-direct/2m-maroc",
+      "snippet": "18 hours ago · Que regarder sur 2M Maroc en direct maintenant ? Retrouvez le programme actuellement en cours de diffusion ainsi …"
+    },
+    {
+      "title": "2M en direct | RigarduMás",
+      "url": "https://rigardumas.com/chaine/2m/",
+      "snippet": "2M en direct sur RigarduMás. Télévision historique marocaine généraliste. Programme en direct et à la demande par satellite."
+    }
+  ]
+}

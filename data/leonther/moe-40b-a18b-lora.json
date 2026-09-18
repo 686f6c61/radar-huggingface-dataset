@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Leonther/moe-40b-a18b-lora",
+  "slug": "leonther-moe-40b-a18b-lora",
+  "author": "Leonther",
+  "url": "https://huggingface.co/Leonther/moe-40b-a18b-lora",
+  "created_at": "2026-09-18T15:58:19.000Z",
+  "updated_at": "2026-09-18T15:59:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2468157879,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Non Profit Credit Counseling Services | Get Out of Debt | NFCC",
+      "url": "https://www.nfcc.org/",
+      "snippet": "Get out of debt with The National Foundation for Credit Counseling, a non-profit trusted network of credit counseling agencies. …"
+    },
+    {
+      "title": "Nonprofit Credit Counseling Agency | Free Help | Credit.org",
+      "url": "https://credit.org/credit-services/consumer-credit-counseling",
+      "snippet": "Free nonprofit credit counseling from certified HUD-approved counselors. Review your budget, lower interest on debt, and set one …"
+    },
+    {
+      "title": "Find A Credit Counselor | Non-Profit Credit Counselors | FCAA",
+      "url": "https://fcaa.org/find-a-credit-counselor/",
+      "snippet": "Find a credit counselor through the FCAA if you're having difficulty managing your credit cards, student loans or mortgage debts."
+    },
+    {
+      "title": "Credit Counseling, Debt Management | InCharge Debt Solutions",
+      "url": "https://www.incharge.org/",
+      "snippet": "3 days ago · Call by phone or continue online to start your free credit counseling session. Review your budget, debts, income, and …"
+    },
+    {
+      "title": "Credit Card Debt Counseling - NFCC - National Foundation for Credit ...",
+      "url": "https://www.nfcc.org/credit-card-debt-counseling",
+      "snippet": "Through the National Foundation for Credit Counseling (NFCC) and its nonprofit network of Member Agencies, you can connect with …"
+    }
+  ]
+}

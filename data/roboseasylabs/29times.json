@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "roboseasylabs/29times",
+  "slug": "roboseasylabs-29times",
+  "author": "roboseasylabs",
+  "url": "https://huggingface.co/roboseasylabs/29times",
+  "created_at": "2026-09-18T14:01:18.000Z",
+  "updated_at": "2026-09-18T14:01:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:roboseasylabs/cube_4_Jang",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206712944,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accéder à mon mail Orange - Communauté Orange",
+      "url": "https://communaute.orange.fr/t5/Webmail-Orange/Acc%C3%A9der-%C3%A0-mon-mail-Orange/td-p/36",
+      "snippet": "Aug 2, 2013 · Voici quelques infos utiles à préciser lorsque vous rencontrez un soucis de messagerie Comment consultez-vous vos e …"
+    },
+    {
+      "title": "SPAM - email provenant soit disant de Doctolib",
+      "url": "https://communaute.orange.fr/t5/prot%C3%A9ger-mes-donn%C3%A9es-et-mon/SPAM-email-provenant-soit-disant-de-Doctolib/td-p/2335008",
+      "snippet": "Oct 15, 2020 · Dans ce premier exemple, il est soit disant question de valider l'adresse mail de mon compte Doctolib. Je n'ai pas de …"
+    },
+    {
+      "title": "Résolu : boite de reception vide d'un coup - Communauté Orange",
+      "url": "https://communaute.orange.fr/t5/Mails-sur-mon-mobile/boite-de-reception-vide-d-un-coup/td-p/2605504",
+      "snippet": "Oct 7, 2021 · Résolu : bonjour, j'ai un soucis avec ma boite email. depuis aujourdhui, elle m'indique que mon \"dossier boite de …"
+    },
+    {
+      "title": "RV DOCTOLIB PAR MAIL QUI NE ME SONT PAS DESTINÉS",
+      "url": "https://communaute.orange.fr/t5/Webmail-Orange/RV-DOCTOLIB-PAR-MAIL-QUI-NE-ME-SONT-PAS-DESTIN%C3%89S/td-p/2360709",
+      "snippet": "Nov 12, 2020 · je reçois trop souvent des mails venant de DOCTOLIB pour des rendez vous chez des médecins, en SPAM, alors …"
+    },
+    {
+      "title": "Résolu : prendre RDV en boutique - Communauté Orange",
+      "url": "https://communaute.orange.fr/t5/offres-mobile-Orange-et-options/prendre-RDV-en-boutique/td-p/1675340",
+      "snippet": "Oct 20, 2018 · Bonjour, L'an dernier j'avais pris rdv en boutique pour mettre en service mon nouveau téléphone mobile. Je voudrais …"
+    }
+  ]
+}

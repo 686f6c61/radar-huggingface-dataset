@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "leobianco/ragtruth-qa_RM_gemma-4-E4B-it_S130104_epo8_lr6_4e-04_r16_2609181710",
+  "slug": "leobianco-ragtruth-qa_rm_gemma-4-e4b-it_s130104_epo8_lr6_4e-04_r16_2609181710",
+  "author": "leobianco",
+  "url": "https://huggingface.co/leobianco/ragtruth-qa_RM_gemma-4-E4B-it_S130104_epo8_lr6_4e-04_r16_2609181710",
+  "created_at": "2026-09-18T17:10:56.000Z",
+  "updated_at": "2026-09-18T17:42:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:google/gemma-4-E4B-it",
+    "lora",
+    "transformers",
+    "base_model:google/gemma-4-E4B-it",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 287163815,
+  "storage_human": "287 MB",
+  "base_model": "google/gemma-4-E4B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bing News Quiz - Play Today’s 10+ Daily News Bing Quizzes",
+      "url": "https://bingquizzes.com/bing-news-quiz/",
+      "snippet": "Play today's Bing News Quiz with 10+ daily breaking news quiz questions and answers on top headlines and current events."
+    },
+    {
+      "title": "Bing News Quiz – Play Today’s 10 Daily News Trivia - Bing Quizzes",
+      "url": "https://bingquiz.com/bing-news-quiz/",
+      "snippet": "17 hours ago · Take the latest Bing News Quiz and challenge yourself with daily questions based on trending headlines from the …"
+    },
+    {
+      "title": "Bing News Quiz – Today’s Top Headlines and Breaking News Quiz",
+      "url": "https://weeklyquiz.net/bing-news-quiz/",
+      "snippet": "The Bing News Quiz is a fast-paced daily quiz built around the world’s biggest stories. Expect questions about breaking news, …"
+    },
+    {
+      "title": "Bing News Quiz - Play Today's Breaking News Bing Quizzes",
+      "url": "https://bing.weeklyquiz.net/bing-news-quiz/",
+      "snippet": "3 days ago · Take today's 12-question Bing News Quiz covering major U.S. and world headlines for September 15, 2026, with an …"
+    },
+    {
+      "title": "Bing Homepage Quiz – Today's Bing Daily Trivia & Featured Image Quiz",
+      "url": "https://bingquiz.com/bing-homepage-quiz/",
+      "snippet": "17 hours ago · Test your knowledge on world headlines, breaking news, and trending global stories updated daily."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "sigil-ai/elise-1-krea2-lora",
+  "slug": "sigil-ai-elise-1-krea2-lora",
+  "author": "sigil-ai",
+  "url": "https://huggingface.co/sigil-ai/elise-1-krea2-lora",
+  "created_at": "2026-09-18T18:45:58.000Z",
+  "updated_at": "2026-09-18T18:54:13.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "lora",
+    "krea-2",
+    "character",
+    "synthetic-character",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 234677352,
+  "storage_human": "235 MB",
+  "base_model": "krea-ai/krea-2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Portail SIGil",
+      "url": "https://sigil.sieds.fr/",
+      "snippet": "Aug 6, 2025 · La mise à jour 2020 du cadastre ainsi que des réseaux est à présent disponible dans le SIGil et le SIGil'urba. L'équipe …"
+    },
+    {
+      "title": "Download Sigil - Sigil-Ebook",
+      "url": "https://sigil-ebook.com/sigil/download/",
+      "snippet": "Jul 18, 2026 · Sigil currently provides a Windows installer for x64 and will only work on Windows 10 (1809) or newer. The latest Sigil …"
+    },
+    {
+      "title": "Sigil (magie) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Sigil_(magie)",
+      "snippet": "Dans le cérémonial magique médiéval, le terme sigil était couramment utilisé pour désigner des signes occultes représentant divers …"
+    },
+    {
+      "title": "C'est quoi un sigil ? - Douce Sorcellerie",
+      "url": "https://douce-sorcellerie.com/c-est-quoi-un-sigil/",
+      "snippet": "May 14, 2025 · Découvrez ce qu’est un sigil, son origine magique, ses usages modernes et comment en créer un personnalisé avec …"
+    },
+    {
+      "title": "SIGil'carto - SIEDS",
+      "url": "https://www.sieds.fr/sigil/sigil-carto/",
+      "snippet": "Grâce au SIGil, les techniciens peuvent compléter et décrire les informations administratives et les caractéristiques techniques de la …"
+    }
+  ]
+}

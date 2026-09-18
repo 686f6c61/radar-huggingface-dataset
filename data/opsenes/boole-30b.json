@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "opsenes/boole-30b",
+  "slug": "opsenes-boole-30b",
+  "author": "opsenes",
+  "url": "https://huggingface.co/opsenes/boole-30b",
+  "created_at": "2026-09-18T16:02:27.000Z",
+  "updated_at": "2026-09-18T16:02:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "帝国时代3常用秘籍大全 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/f25ef254b4b24a482c1b82bb.html",
+      "snippet": "May 30, 2018 · 帝国时代3常用秘籍大全,帝国时代3是即时战略游戏中的经典之一。是喜爱即时战略游戏的朋友们的必玩之作！这些秘 …"
+    },
+    {
+      "title": "英语中，什么是主语、谓语、宾语、定语、状语、宾补、表语？",
+      "url": "https://www.zhihu.com/tardis/bd/art/566820546",
+      "snippet": "要搞清什么是“主、谓、宾、定、状、补、系表”我们就要先搞懂什么是“主、谓、宾”。 举一个例子： I kick you. 我踹你。 “我”是动作的 …"
+    },
+    {
+      "title": "kick off 是什么意思 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/2f9b480d5320cc00cb6cc2eb.html",
+      "snippet": "Feb 26, 2020 · 例句1；The advertising campaign is just about ready to kick off. 例句2；We're going to kick off the new year with a …"
+    },
+    {
+      "title": "KICK.LV :: Miniblogi",
+      "url": "https://www.kick.lv/mini/",
+      "snippet": "Moderns, strauji augošs spēļu un izklaides projekts, Piedāvājam spēlēt unikālos spēļu serveros, labi pavadīt laiku mājaslapā ar citiem …"
+    },
+    {
+      "title": "Monitors (Monitora vēsture) - KICK.LV",
+      "url": "https://www.kick.lv/blogs/view/1335/monitors-monitora-vesture/",
+      "snippet": "Monitors (ekrāns) ir elektroniska ierīce, kas vizuāli attēlo datorā apstrādāto informāciju. Monitors ir viena no svarīgākajām …"
+    }
+  ]
+}

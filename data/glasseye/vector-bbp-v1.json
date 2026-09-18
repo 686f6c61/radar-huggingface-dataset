@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "GLASSEYE/vector-bbp-v1",
+  "slug": "glasseye-vector-bbp-v1",
+  "author": "GLASSEYE",
+  "url": "https://huggingface.co/GLASSEYE/vector-bbp-v1",
+  "created_at": "2026-09-18T13:27:29.000Z",
+  "updated_at": "2026-09-18T13:27:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "vector",
+    "bug-bounty",
+    "hackerone",
+    "bbp",
+    "vdp",
+    "pentest",
+    "lora",
+    "base_model:mistralai/Mistral-7B-Instruct-v0.3",
+    "base_model:adapter:mistralai/Mistral-7B-Instruct-v0.3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 83946192,
+  "storage_human": "84 MB",
+  "base_model": "mistralai/Mistral-7B-Instruct-v0.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Netflix - Watch TV Shows Online, Watch Movies Online",
+      "url": "https://www.netflix.com/",
+      "snippet": "Watch Netflix movies & TV shows online or stream right to your smart TV, game console, PC, Mac, mobile, tablet and more."
+    },
+    {
+      "title": "N - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/N",
+      "snippet": "In English, n usually represents a voiced alveolar nasal /n/, but can represent other nasal consonants due to assimilation. For …"
+    },
+    {
+      "title": "Deník N - Nezávislý český deník",
+      "url": "https://denikn.cz/",
+      "snippet": "Co to znamená a co Česku hrozí? Babiš svými výroky podkopává důvěru v právní stát. Ať předloží důkazy, vyzývá šéf soudcovské …"
+    },
+    {
+      "title": "Česko – Deník N",
+      "url": "https://denikn.cz/cesko/",
+      "snippet": "15 hours ago · Český rozhlas připravil 22 scénářů vysílání pro případ krizí. Šéf ČEZ Beneš vložil část majetku do svěřenského fondu …"
+    },
+    {
+      "title": "N – Wikipedie",
+      "url": "https://cs.wikipedia.org/wiki/N",
+      "snippet": "N je 14. písmeno latinské abecedy. N obecně značí ne, popř. negativní. V biochemii je N označení pro aminokyselinu asparagin. V …"
+    }
+  ]
+}

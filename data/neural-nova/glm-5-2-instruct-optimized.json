@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "neural-nova/GLM-5.2-Instruct-Optimized",
+  "slug": "neural-nova-glm-5-2-instruct-optimized",
+  "author": "neural-nova",
+  "url": "https://huggingface.co/neural-nova/GLM-5.2-Instruct-Optimized",
+  "created_at": "2026-09-18T15:59:12.000Z",
+  "updated_at": "2026-09-18T18:57:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "vllm",
+    "inference-optimization",
+    "benchmarking",
+    "moe",
+    "rocm",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zai-org/GLM-5.2 - Neural Nova",
+      "url": "https://www.neural-nova.com/benchmark/glm-5-2",
+      "snippet": "A high-throughput serving benchmark for GLM-5.2 on AMD Instinct MI325X hardware."
+    },
+    {
+      "title": "zai-org/GLM-5.2 · Hugging Face",
+      "url": "https://huggingface.co/zai-org/GLM-5.2",
+      "snippet": "We're introducing GLM-5.2, our latest flagship model for long-horizon tasks. It marks a substantial …"
+    },
+    {
+      "title": "neural-nova/Qwen3-235B-A22B-Instruct-2507-optimized · Hugging Face",
+      "url": "https://huggingface.co/neural-nova/Qwen3-235B-A22B-Instruct-2507-optimized",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open …"
+    },
+    {
+      "title": "GLM-5.2 Lightweight Installer - GitHub",
+      "url": "https://github.com/glm-5-ZAI/GLM-5.2",
+      "snippet": "Jul 27, 2026 · Welcome to the GLM-5.2 Lightweight Installer repository — a universal tool for running …"
+    },
+    {
+      "title": "GLM-5.3 & GLM-5.2 & GLM-5.1 & GLM-5 - GitHub",
+      "url": "https://github.com/zai-org/GLM-5",
+      "snippet": "GLM-5.2, our latest flagship model for long-horizon tasks. It marks a substantial leap in long-horizon …"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "hermitdave/Qwen3.8-27B-Folded-3bit",
+  "slug": "hermitdave-qwen3-8-27b-folded-3bit",
+  "author": "hermitdave",
+  "url": "https://huggingface.co/hermitdave/Qwen3.8-27B-Folded-3bit",
+  "created_at": "2026-09-18T16:48:03.000Z",
+  "updated_at": "2026-09-18T18:21:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "quantization",
+    "hadamard",
+    "bonsai",
+    "2bit",
+    "3bit",
+    "text-generation",
+    "conversational",
+    "base_model:prism-ml/Ternary-Bonsai-2-27B-mlx-2bit",
+    "base_model:finetune:prism-ml/Ternary-Bonsai-2-27B-mlx-2bit",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 12794995848,
+  "storage_human": "12.8 GB",
+  "base_model": "prism-ml/Ternary-Bonsai-2-27B-mlx-2bit",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DD373.com-嘟嘟网络游戏交易平台-游戏币、游戏账号、装备 ...",
+      "url": "https://www.dd373.com/",
+      "snippet": "1 day ago · DD373是一个专业的网络游戏交易平台，为全球华人玩家提供游戏币、点卡、装备等多种交易服务，致力于免交易手续费 …"
+    },
+    {
+      "title": "DD373.com-嘟嘟网络游戏交易平台-游戏币、游戏账号、装备 ...",
+      "url": "https://h5.dd373.com/?type=web",
+      "snippet": "5 days ago · 嘟嘟网络游戏服务网dd373为广大游戏玩家提供专业的游戏币、账号、装备、点券等交易服务，是国内专业安全便捷的游 …"
+    },
+    {
+      "title": "游戏资讯-DD373.com-嘟嘟网络游戏交易平台-游戏币、游戏 ...",
+      "url": "https://kf.dd373.com/Information/",
+      "snippet": "Feb 14, 2023 · 游戏资讯-嘟嘟网络游戏服务网为全球华人玩家提供担保,租购售游戏币、账号、装备、点券、代练等服务。手游首充号 …"
+    },
+    {
+      "title": "会员俱乐部|DD373游戏交易平台",
+      "url": "https://point.dd373.com/default/index.html",
+      "snippet": "3 days ago · 嘟嘟游戏交易平台为全球华人游戏玩家提供游戏币|点卡|元宝|装备|账号等交易服务，寄售、担保和求购多种交易模式，抵 …"
+    },
+    {
+      "title": "5173网络游戏服务网",
+      "url": "https://shop.5173.com/",
+      "snippet": "Aug 5, 2026 · 【重要通知】关于 5173平台支付系统维护及暂停交易服务的公告 关于严禁私下交易及相关违规处理的公告 关于游戏交 …"
+    }
+  ]
+}

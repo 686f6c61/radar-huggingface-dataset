@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "whotao1766/racikai-recipe-model",
+  "slug": "whotao1766-racikai-recipe-model",
+  "author": "whotao1766",
+  "url": "https://huggingface.co/whotao1766/racikai-recipe-model",
+  "created_at": "2026-09-18T15:38:54.000Z",
+  "updated_at": "2026-09-18T15:39:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "xlm-roberta",
+    "sentence-similarity",
+    "feature-extraction",
+    "dense",
+    "generated_from_trainer",
+    "dataset_size:4000",
+    "loss:MultipleNegativesRankingLoss",
+    "arxiv:1908.10084",
+    "arxiv:1807.03748",
+    "base_model:intfloat/multilingual-e5-base",
+    "base_model:finetune:intfloat/multilingual-e5-base",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 289379763,
+  "storage_human": "289 MB",
+  "base_model": "intfloat/multilingual-e5-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "如何看待电影《欢迎来龙餐馆》在外网的讨论？ - 知乎",
+      "url": "https://www.zhihu.com/question/2070533466400232324",
+      "snippet": "Aug 11, 2026 · 知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享 …"
+    },
+    {
+      "title": "法考A证、B证、C证分别有什么区别？ - 知乎",
+      "url": "https://www.zhihu.com/question/549139284",
+      "snippet": "Aug 19, 2022 · 法考作为中国含金量非常高的职业资格证书，每年都吸引大量人才报考，2023年客观题报考人数已达86万了。但是很 …"
+    },
+    {
+      "title": "DUREE DE VIE BRIDGE COLLE - Problèmes dentaires - FORUM Santé",
+      "url": "https://forum.doctissimo.fr/sante/dents/duree-bridge-colle-sujet_150101_1.htm",
+      "snippet": "Jun 19, 2005 · il y a 15 ans, je m'en souviens encore, c'est ma femme qui l'a fait, c'est te dire!! prépa à minima, rien à voir avec une …"
+    },
+    {
+      "title": "在法国巴黎租房子什么app或者论坛官网比较可靠有用？ - 知乎",
+      "url": "https://www.zhihu.com/question/66405804",
+      "snippet": "1 Petites annonces immobilières | 1er site immobilier français | Portail immo seloger是全法非常大的租房买房的平台，上面只有中介才 …"
+    },
+    {
+      "title": "sql是什么，通俗的说，太专业听不懂？ - 知乎",
+      "url": "https://www.zhihu.com/question/349924681",
+      "snippet": "SQL是一种用于处理数据的语言，就像我们说的汉语、英语一样，有特定的语法结构，让我们灵活地处理数据。 SQL并不难学，首先 …"
+    }
+  ]
+}

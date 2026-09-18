@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "einarolafsson/user-models",
+  "slug": "einarolafsson-user-models",
+  "author": "einarolafsson",
+  "url": "https://huggingface.co/einarolafsson/user-models",
+  "created_at": "2026-09-18T16:29:42.000Z",
+  "updated_at": "2026-09-18T18:30:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "spacr",
+    "community",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22528,
+  "storage_human": "22528 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "怎么通过wetransfer上传文件发给国外好友或客户-百度经验",
+      "url": "https://jingyan.baidu.com/article/ed15cb1b9439a01be36981e3.html",
+      "snippet": "Aug 28, 2018 · 怎么通过wetransfer上传文件发给国外好友或客户,小编和国外的好友或者客户经常要互相发文件，有些文件比较大，邮 …"
+    },
+    {
+      "title": "【WeTransfer】怎样传输文件 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/f7ff0bfc061d5a6f26bb13a5.html",
+      "snippet": "May 8, 2023 · 【WeTransfer】怎样传输文件,Wetrafer是一款文件临时储存服务，传输文件非常便利。下面为大家介绍意下如何使用。"
+    },
+    {
+      "title": "Wetransfer ne fonctionne pas : que faire - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-29553844-wetransfer-ne-fonctionne-pas-que-faire",
+      "snippet": "Bonsoir, Depuis quelques temps, je ne peux plus transférer de fichiers sur Wetransfer. Je reste constamment bloqué à 5Mo …"
+    },
+    {
+      "title": "Non reception du code WE TRANSFER - Réseaux sociaux",
+      "url": "https://forums.commentcamarche.net/forum/affich-37266279-non-reception-du-code-we-transfer",
+      "snippet": "Jul 1, 2021 · Bonjour Bon ya le centre d'aide de WeTransfer qui déconne un peu en ce moment. Sinon, avez vous vérifié que le mail …"
+    },
+    {
+      "title": "Screenshot Ordner gelöscht - Windows 10 Forum",
+      "url": "https://www.windows-10-forum.com/threads/screenshot-ordner-geloescht.50159/",
+      "snippet": "Nov 20, 2016 · Screenshot Ordner gelöscht Windows 10, kann den Pfad jetzt weder in registry ändern noch widerherstellen. so what …"
+    }
+  ]
+}

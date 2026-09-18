@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "hiwaifu-research/WaifuGemma4-26b-a4b-v1-i1-GGUF",
+  "slug": "hiwaifu-research-waifugemma4-26b-a4b-v1-i1-gguf",
+  "author": "hiwaifu-research",
+  "url": "https://huggingface.co/hiwaifu-research/WaifuGemma4-26b-a4b-v1-i1-GGUF",
+  "created_at": "2026-09-18T17:02:32.000Z",
+  "updated_at": "2026-09-19T04:22:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "es",
+    "ru",
+    "pt",
+    "id",
+    "ar",
+    "th",
+    "fr"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama.cpp",
+    "gemma4",
+    "moe",
+    "roleplay",
+    "role-play",
+    "conversational",
+    "imatrix",
+    "text-generation",
+    "en",
+    "es",
+    "ru",
+    "pt",
+    "id",
+    "ar",
+    "th",
+    "fr",
+    "base_model:hiwaifu-research/WaifuGemma4-26b-a4b-v1",
+    "base_model:quantized:hiwaifu-research/WaifuGemma4-26b-a4b-v1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25233142046,
+  "parameters_human": "25.23B",
+  "storage_bytes": 80331483136,
+  "storage_human": "80.3 GB",
+  "base_model": "hiwaifu-research/WaifuGemma4-26b-a4b-v1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hi Waifu : Créez votre Persona",
+      "url": "https://www.hiwaifu.com/fr/create/persona",
+      "snippet": "Compagnon IA qui se soucie de vous. Discutez amicalement, jouez des rôles, développez vos compétences en communication et en …"
+    },
+    {
+      "title": "Hiwaifu - AI Waifu Chat & Anime Companions",
+      "url": "https://hiwaifu.org/",
+      "snippet": "Hiwaifu is an AI waifu and anime companion app. Chat with thousands of anime characters, create your own AI friend and enjoy …"
+    },
+    {
+      "title": "Hiwaifu - Chat IA Waifu & Compagnons Anime",
+      "url": "https://hiwaifu.org/fr/",
+      "snippet": "Hiwaifu est une application de compagnon anime et waifu IA. Discute avec des milliers de personnages d’anime, crée ton propre ami …"
+    },
+    {
+      "title": "HiWaifu : ami IA et hub Waifu – Applications sur Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.hiwaifu.app&hl=fr-CH",
+      "snippet": "HiWaifu : ami IA et hub Waifu LANGUAGE POWER Contient des annoncesAchats via l'appli 3,9star"
+    },
+    {
+      "title": "Welcome to Hiwaifu | Hi, Waifu",
+      "url": "https://docs.hiwaifu.com/",
+      "snippet": "Hiwaifu is a revolutionary AI-powered companion designed to bring joy, companionship, and personal growth into your life. It …"
+    }
+  ]
+}

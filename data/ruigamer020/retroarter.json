@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "RuiGamer020/RetroArter",
+  "slug": "ruigamer020-retroarter",
+  "author": "RuiGamer020",
+  "url": "https://huggingface.co/RuiGamer020/RetroArter",
+  "created_at": "2026-09-18T12:59:05.000Z",
+  "updated_at": "2026-09-18T13:12:03.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 54813323,
+  "storage_human": "55 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Routeur - Cdiscount Informatique",
+      "url": "https://www.cdiscount.com/informatique/materiel-reseau-wifi-internet-bluetooth/wifi-reseau-bluetooth/reseau-wifi/modems-routeurs/l-10715121304.html?msockid=3ea58930c030691d1b599ee8c1ef681e",
+      "snippet": "Routeur Appareil informatique obscur pour certains et indispensable aux yeux des connaisseurs, le routeur tient un rôle très …"
+    },
+    {
+      "title": "Routeur WiFi - TP-LINK - N300 Vitesse WiFi jusqu'à 300 Mbps",
+      "url": "https://www.cdiscount.com/informatique/materiel-reseau-wifi-internet-bluetooth/routeur-wifi-tp-link-n300-vitesse-wifi-jusqu-a/f-10715121304-tlwr841n.html?msockid=3ea58930c030691d1b599ee8c1ef681e",
+      "snippet": "Cdiscount Informatique - Découvrez notre offre Routeur WiFi - TP-LINK - N300 Vitesse WiFi jusqu'à 300 Mbps - WiFi bande de …"
+    },
+    {
+      "title": "Configurer votre appareil Chromecast (3ᵉ génération ou un modèle ...",
+      "url": "https://support.google.com/chromecast/answer/2998456?hl=fr-ca&co=GENIE.Platform%3DAndroid",
+      "snippet": "Débranchez votre routeur, puis rebranchez-le. Connectez-vous manuellement au nom de réseau sans fil (SSID) de votre appareil …"
+    },
+    {
+      "title": "Configurer votre appareil Chromecast (3e génération ou modèle …",
+      "url": "https://support.google.com/chromecast/answer/2998456?hl=fr&co=GENIE.Platform%3DiOS",
+      "snippet": "Débranchez le routeur, puis rebranchez-le. Connectez-vous manuellement au SSID (Service Set Identifier) de votre Chromecast. …"
+    },
+    {
+      "title": "Config Routeur en switch wifi/Lan derrière SFRbox",
+      "url": "https://forums.commentcamarche.net/forum/affich-35297164-config-routeur-en-switch-wifi-lan-derriere-sfrbox",
+      "snippet": "Bonjour, Je vais enfin acquérir la fibre via SFR. Ayant une grande maison je voudrais savoir s'il était possible de configurer mon …"
+    }
+  ]
+}

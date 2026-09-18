@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "arianaazarbal/ct-inkling-oai-gen-mid-g0-b1",
+  "slug": "arianaazarbal-ct-inkling-oai-gen-mid-g0-b1",
+  "author": "arianaazarbal",
+  "url": "https://huggingface.co/arianaazarbal/ct-inkling-oai-gen-mid-g0-b1",
+  "created_at": "2026-09-18T19:05:46.000Z",
+  "updated_at": "2026-09-18T19:07:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "constitutional-training",
+    "iterated-constitution",
+    "family:inkling_small",
+    "seed:openai",
+    "method:gen",
+    "regime:mid",
+    "gen:0",
+    "branch:b1",
+    "text-generation",
+    "base_model:thinkingmachines/Inkling-Small",
+    "base_model:adapter:thinkingmachines/Inkling-Small",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16901410336,
+  "storage_human": "16.9 GB",
+  "base_model": "thinkingmachines/Inkling-Small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bundesliga - Fairnesstabelle 26/27 | Transfermarkt",
+      "url": "https://www.transfermarkt.de/1-bundesliga/fairnesstabelle/wettbewerb/L1/",
+      "snippet": "Diese Statistik zeigt die Fairnesstabelle der Bundesliga aus der Saison 26/27. Die Vereine sind nach Punkten aufsteigend geordnet."
+    },
+    {
+      "title": "FC Schalke 04 - Historische Ligaplatzierungen | Transfermarkt",
+      "url": "https://www.transfermarkt.de/fc-schalke-04/platzierungen/verein/33/",
+      "snippet": "Diese Übersicht zeigt, mit welcher Tabellen-Endplatzierung der Verein FC Schalke 04 eine Spielzeit abgeschlossen hat und in …"
+    },
+    {
+      "title": "Bundesliga - Jahrestabelle | Transfermarkt",
+      "url": "https://www.transfermarkt.de/1-bundesliga/jahrestabelle/wettbewerb/L1",
+      "snippet": "Jahrestabelle Bundesliga 2026 Diese Statistik zeigt die Tabelle des aktuellen Kalenderjahres in einem Wettbewerb. Dabei werden die …"
+    },
+    {
+      "title": "Bundesliga 26/27 | Transfermarkt",
+      "url": "https://www.transfermarkt.de/bundesliga/startseite/wettbewerb/L1",
+      "snippet": "Bundesliga auf Transfermarkt mit Tabelle Ergebnissen Spielplan Liveticker Marktwerten Vereine Transfers Statistiken"
+    },
+    {
+      "title": "Transfermarkt - Wahretabelle",
+      "url": "https://www.transfermarkt.de/wahretabelle",
+      "snippet": "WahreTabelle ist die zentrale Anlaufstelle für alle relevanten Themen und Abstimmungen rund um Schiedsrichter-Entscheidungen …"
+    }
+  ]
+}

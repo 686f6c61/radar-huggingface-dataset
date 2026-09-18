@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "William-Gao1/qwen3.8-27b-shakespeare-lora",
+  "slug": "william-gao1-qwen3-8-27b-shakespeare-lora",
+  "author": "William-Gao1",
+  "url": "https://huggingface.co/William-Gao1/qwen3.8-27b-shakespeare-lora",
+  "created_at": "2026-09-18T15:53:05.000Z",
+  "updated_at": "2026-09-18T15:53:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qwen3.8",
+    "lora",
+    "test-model",
+    "text-generation",
+    "conversational",
+    "dataset:nola-ai/shakespeare-dolly",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:adapter:Qwen/Qwen3.8-27B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 261690381,
+  "storage_human": "262 MB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "William de Galles — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/William_de_Galles",
+      "snippet": "Le prince William (William Arthur Philip Louis) naît le 21 juin 1982 au St Mary's Hospital de Paddington, à Londres. Fils aîné du roi …"
+    },
+    {
+      "title": "William, Prince of Wales - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Prince_William",
+      "snippet": ""
+    },
+    {
+      "title": "Actualités récentes sur William",
+      "url": "https://www.william.fr/nav-newsarchives",
+      "snippet": "2 days ago · Toutes les actualités récentes des William Radieuse en tailleur bleu, Kate fait une apparition surprise pour soutenir le …"
+    },
+    {
+      "title": "William — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/William",
+      "snippet": "William est un prénom masculin britannique, issu de la variante normande du nom d'origine germanique Wilhelm (will, volonté et …"
+    },
+    {
+      "title": "Prénom William (garçon) : signification, origine, caractère, saint, avis",
+      "url": "https://www.journaldesfemmes.fr/prenoms/william/prenom-3318",
+      "snippet": "Quelle est l'origine du prénom William ? Le prénom William est dérivé du prénom germanique Wilhelm. Il est aujourd'hui populaire en …"
+    }
+  ]
+}

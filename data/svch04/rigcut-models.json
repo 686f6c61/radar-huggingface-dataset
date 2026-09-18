@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "svch04/rigcut-models",
+  "slug": "svch04-rigcut-models",
+  "author": "svch04",
+  "url": "https://huggingface.co/svch04/rigcut-models",
+  "created_at": "2026-09-18T12:43:02.000Z",
+  "updated_at": "2026-09-18T14:22:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 222821129,
+  "storage_human": "223 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube Go Live Together is a new way to host co-streams",
+      "url": "https://www.fonearena.com/blog/384442/youtube-go-live-together-co-streams.html",
+      "snippet": "Feb 3, 2023 · YouTube Go Live Together is a new way to host co-streams YouTube has now made its “Go Live Together” feature …"
+    },
+    {
+      "title": "YouTube live streaming tips - Computer - YouTube Help - Google Help",
+      "url": "https://support.google.com/youtube/answer/12917058?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "YouTube live streaming tips You can connect with your audience in real time through a live stream with video, chat and more."
+    },
+    {
+      "title": "How to live stream with multiple people (Facebook & YouTube Live …",
+      "url": "https://www.youtube.com/watch?v=qpoVXzlXW6c",
+      "snippet": "How do use Facebook Live with multiple presenters? If you want do a 2 person broadcast on a Livestream, in this livestream tutorial, …"
+    },
+    {
+      "title": "Moderate live chat - YouTube Help - Google Help",
+      "url": "https://support.google.com/youtube/answer/9826490?hl=en",
+      "snippet": "Moderate live chat Moderating your live chat lets you interact with your audience and curate your live stream experience in a way that …"
+    },
+    {
+      "title": "Master Live Streaming: A Comprehensive Control Panel Tutorial",
+      "url": "https://www.youtube.com/watch?v=8Wb2-o0lL0s",
+      "snippet": "Mar 1, 2024 · Dive deep into the world of live streaming with our detailed control panel tutorial. Whether you're a beginner looking to …"
+    }
+  ]
+}

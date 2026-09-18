@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "anassaifi12/sql_model_2",
+  "slug": "anassaifi12-sql_model_2",
+  "author": "anassaifi12",
+  "url": "https://huggingface.co/anassaifi12/sql_model_2",
+  "created_at": "2026-09-18T16:56:29.000Z",
+  "updated_at": "2026-09-18T16:58:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 6183349166,
+  "storage_human": "6.2 GB",
+  "base_model": "unsloth/qwen2.5-3b-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "超星",
+      "url": "https://www.chaoxing.com/",
+      "snippet": "Jun 23, 2026 · 超星名师讲坛主讲老师为来自全国重点高校或机构的知名教授、学者；或为著名艺术家、作家、主持人、医生等；又或 …"
+    },
+    {
+      "title": "登录",
+      "url": "https://v8.chaoxing.com/",
+      "snippet": "超星平台登录页面，提供用户账号登录入口，支持多种登录方式。"
+    },
+    {
+      "title": "ChaoXing",
+      "url": "https://i.chaoxing.com/",
+      "snippet": "由于此网站的设置，我们无法提供该页面的具体描述。"
+    },
+    {
+      "title": "用户登录",
+      "url": "https://i.xuexitong.com/",
+      "snippet": "勾选后，登录状态保持7天；如不勾选则关闭浏览器即为退出"
+    },
+    {
+      "title": "ChaoXing - 超星学习中心",
+      "url": "https://z.chaoxing.com/",
+      "snippet": "在课程编辑器中，对于文字的编辑排版我们提供了与WORD相类似的功能，非常简单易用。 可根据课程内容添加与之相关的图片，文 …"
+    }
+  ]
+}

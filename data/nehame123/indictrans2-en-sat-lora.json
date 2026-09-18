@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "nehaMe123/indictrans2-en-sat-lora",
+  "slug": "nehame123-indictrans2-en-sat-lora",
+  "author": "nehaMe123",
+  "url": "https://huggingface.co/nehaMe123/indictrans2-en-sat-lora",
+  "created_at": "2026-09-18T18:30:07.000Z",
+  "updated_at": "2026-09-18T18:30:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 30048424,
+  "storage_human": "30 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Oyunlar ve Oyun Oyna - KralOyun.com",
+      "url": "https://www.kraloyun.com/",
+      "snippet": "Binlerce ücretsiz tarayıcı oyununu ve online oyunu indirmeden keşfet. Aksiyon, bulmaca, çok oyunculu veya klasik fark etmeksizin …"
+    },
+    {
+      "title": "En Popüler Ücretsiz Online Tarayıcı Oyunları | KralOyun",
+      "url": "https://www.kraloyun.com/En-Iyi-Oylanan-Oyunlar",
+      "snippet": "KralOyun üzerindeki popüler ücretsiz online oyunları keşfet. Son 60 günde en çok oynanan aksiyon, bulmaca, spor, yarış ve daha …"
+    },
+    {
+      "title": "Kral Oyunları - Ücretsiz Çevrimiçi Oyun | Oyunskor.com",
+      "url": "https://www.oyunskor.com/oyunlar/kral?page=1",
+      "snippet": "Oturum açıp favori oyunlarınızı görebilirsiniz! Henüz bir üyeliğniz yok mu? Bu özelliği kullanabilmek için üyelik gerekmekte. Şimdi …"
+    },
+    {
+      "title": "Poki - Ücretsiz Online Oyunlar - Hemen Oyna!",
+      "url": "https://poki.com/tr?msockid=2c58c8d87ad162081e11df007b31632d",
+      "snippet": "Tek başına veya arkadaşlarınla oynaman için en iyi ücretsiz çevrimiçi oyun seçeneklerini Poki'de -yani eski adıyla 1001 Oyun'da - …"
+    },
+    {
+      "title": "KRAL OYUN – KRAL OYUN – Bedava Oyun Sitesi",
+      "url": "https://www.kraloyun.org/",
+      "snippet": "KRAL OYUN (org) her gün yüzlerce yeni oyunla güncellenen, çok sevilen Bedava Türkçe Oyunlar sitesidir. KRAL OYUN (org)'a …"
+    }
+  ]
+}

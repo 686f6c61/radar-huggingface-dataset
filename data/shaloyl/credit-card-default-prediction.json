@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ShaloyL/credit-card-default-prediction",
+  "slug": "shaloyl-credit-card-default-prediction",
+  "author": "ShaloyL",
+  "url": "https://huggingface.co/ShaloyL/credit-card-default-prediction",
+  "created_at": "2026-09-18T12:01:34.000Z",
+  "updated_at": "2026-09-18T12:01:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": "catboost",
+  "languages": [],
+  "tags": [
+    "catboost",
+    "tabular-classification",
+    "credit-risk",
+    "model-governance",
+    "mlops",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 789063,
+  "storage_human": "789063 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed/homepage",
+      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new …"
+    },
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/youtube",
+      "snippet": "Welcome to the official YouTube channel – a home for the biggest moments, the smallest obsessions, and everything in between. …"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/@en.---",
+      "snippet": "Share your videos and discover content from friends, family, and creators worldwide on YouTube."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/@________________.",
+      "snippet": "Explore and enjoy a wide range of videos, music, and more on YouTube."
+    }
+  ]
+}

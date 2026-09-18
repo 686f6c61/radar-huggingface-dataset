@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Habiquell/quell-v5",
+  "slug": "habiquell-quell-v5",
+  "author": "Habiquell",
+  "url": "https://huggingface.co/Habiquell/quell-v5",
+  "created_at": "2026-09-18T19:20:32.000Z",
+  "updated_at": "2026-09-18T19:31:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-4B-Instruct-2507",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 275804655,
+  "storage_human": "276 MB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "如何输入大写罗马数字（Ⅰ，Ⅱ，Ⅲ_百度知道",
+      "url": "https://zhidao.baidu.com/question/2056197780805071467.html",
+      "snippet": "如何输入大写罗马数字（Ⅰ，Ⅱ，Ⅲ第一步：将电脑的输入切换为搜狗拼音输入法；第二步：输入快捷键『Ctrl+Shift+Z』，调出搜狗输 …"
+    },
+    {
+      "title": "①②③）带圈数字1至100，现成的，直接复制给我。_百度知道",
+      "url": "https://zhidao.baidu.com/question/616594002713137892.html",
+      "snippet": "endylau.ttf字体属于特殊字符字体，安装了它就可以输入带圈的11-100的数字了，解决了用户只能输入1-20带圈数字的尴尬。 安装方 …"
+    },
+    {
+      "title": "7-Zip 官方网站怎么下载？ - 知乎",
+      "url": "https://www.zhihu.com/question/20498753",
+      "snippet": "7-Zip 是一个功能强大的工具，特别适合需要 高效压缩 和 解压缩 功能的用户。比如 IT 专业人员、软件开发者或普通用户希望节省磁 …"
+    },
+    {
+      "title": "大写数字壹、贰、叁、肆、伍、陆、柒、捌、玖、拾、佰、仟用英文应 …",
+      "url": "https://zhidao.baidu.com/question/133933202.html",
+      "snippet": "英文就是one、two、three、four、five、six、seven、eight、nine、ten、hundred、thousand。 中文大写金额数字应用正楷或行书填 …"
+    }
+  ]
+}
