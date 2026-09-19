@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "jayzou3773/less-is-moe-qwen3.5-122b-a10b-s1-128-seq8192-intdim-l-50",
+  "slug": "jayzou3773-less-is-moe-qwen3-5-122b-a10b-s1-128-seq8192-intdim-l-50",
+  "author": "jayzou3773",
+  "url": "https://huggingface.co/jayzou3773/less-is-moe-qwen3.5-122b-a10b-s1-128-seq8192-intdim-l-50",
+  "created_at": "2026-09-18T23:14:51.000Z",
+  "updated_at": "2026-09-18T23:20:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe_text",
+    "moe",
+    "pruning",
+    "less-is-moe",
+    "text-generation",
+    "conversational",
+    "dataset:jayzou3773/less-is-moe-s1-calibration-128-seq8192",
+    "base_model:Qwen/Qwen3.5-122B-A10B",
+    "base_model:finetune:Qwen/Qwen3.5-122B-A10B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 64129468416,
+  "parameters_human": "64.13B",
+  "storage_bytes": 128279025597,
+  "storage_human": "128.3 GB",
+  "base_model": "Qwen/Qwen3.5-122B-A10B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ford kuga - Купить шины, диски и колёса – недорогие б/у и новые ...",
+      "url": "https://www.avito.ru/all/zapchasti_i_aksessuary/shiny_diski_i_kolesa-ASgBAgICAUQKJg?q=ford+kuga",
+      "snippet": "Внешний вид и цена в соответствии с возрастом. Размер популярный, подойдут на форд, вольво, волга, китайские авто Цена …"
+    },
+    {
+      "title": "Колесные диски на ford kuga - купить литые, кованые и …",
+      "url": "https://baza.drom.ru/wheel/disc/car-model/ford+kuga/",
+      "snippet": "Купить колесные диски на ford kuga. Предложения о продаже литых, кованых, штампованных дисков."
+    },
+    {
+      "title": "форд куга - Купить колёсные диски во всех регионах | Недорогие …",
+      "url": "https://www.avito.ru/all/zapchasti_i_aksessuary/shiny_diski_i_kolesa/diski-ASgBAgICAkQKJooL_JwB?q=%D1%84%D0%BE%D1%80%D0%B4+%D0%BA%D1%83%D0%B3%D0%B0",
+      "snippet": "На Авито вы можете недорого купить новые и б/у диски для различных марок и моделей авто. Большой выбор …"
+    },
+    {
+      "title": "Колесные диски Ford Kuga - купить по низкой цене на Яндекс …",
+      "url": "https://market.yandex.ru/category/kolesnyye-diski-ford-kuga",
+      "snippet": "Колесные диски Ford Kuga — купить на Яндекс Маркете по выгодным ценам. В каталоге с реальными отзывами покупателей. …"
+    },
+    {
+      "title": "Купить колёса на ford kuga. Новые и б/у комплеты колёс.",
+      "url": "https://baza.drom.ru/wheel/wheel/car-model/ford+kuga/",
+      "snippet": "Купить колёса на ford kuga. Предложения о продаже готовых комплетов колес, колесных дисков с шинами в сборе."
+    }
+  ]
+}

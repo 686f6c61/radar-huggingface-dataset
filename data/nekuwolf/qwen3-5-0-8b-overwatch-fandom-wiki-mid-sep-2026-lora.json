@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "nekuwolf/Qwen3.5-0.8B-overwatch-fandom-wiki-mid-sep-2026-lora",
+  "slug": "nekuwolf-qwen3-5-0-8b-overwatch-fandom-wiki-mid-sep-2026-lora",
+  "author": "nekuwolf",
+  "url": "https://huggingface.co/nekuwolf/Qwen3.5-0.8B-overwatch-fandom-wiki-mid-sep-2026-lora",
+  "created_at": "2026-09-18T22:32:07.000Z",
+  "updated_at": "2026-09-18T22:32:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen3_5",
+    "trl",
+    "en",
+    "base_model:unsloth/Qwen3.5-0.8B",
+    "base_model:finetune:unsloth/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 193208103,
+  "storage_human": "193 MB",
+  "base_model": "unsloth/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mira Kubasińska - W co mam wierzyć - tekst i tłumaczenie piosenki ...",
+      "url": "https://www.tekstowo.pl/mira-kubasinska/w-co-mam-wierzyc",
+      "snippet": "W co mam wierzyć - Mira Kubasińska: tekst piosenki, tłumaczenie po polsku i oficjalny teledysk. Głosuj na utwór 'W co mam wierzyć' …"
+    },
+    {
+      "title": "Mira Kubasińska - W co mam wierzyć - Tekst piosenki",
+      "url": "https://teksciory.interia.pl/teksty-piosenek/pop/news-mira-kubasinska-w-co-mam-wierzyc,nId,22672146",
+      "snippet": "Oct 23, 2021 · Tekst piosenki - Mira Kubasińska - W co mam wierzyć. Sprawdź słowa utworu, informacje o piosence oraz inne teksty …"
+    },
+    {
+      "title": "W co mam wierzyć – Mira Kubasińska | Tekst piosenki, tłumaczenie ...",
+      "url": "https://ising.pl/mira-kubasinska-w-co-mam-wierzyc-r67edv-tekst",
+      "snippet": "Mira Kubasińska – W co mam wierzyć tekst piosenki. Zobacz teledysk i tłumaczenie, a potem nagraj swoją wersję do …"
+    },
+    {
+      "title": "Mira Kubasińska | Breakout – W co mam wierzyc | Tekst piosenki ...",
+      "url": "https://ising.pl/w-co-mam-wierzyc-mira-kubasinska-breakout-rxky3l-tekst",
+      "snippet": "W co mam wierzyc – Mira Kubasińska | Breakout tekst piosenki. Zobacz teledysk i tłumaczenie, a potem nagraj swoją wersję do …"
+    },
+    {
+      "title": "Ania Rusowicz & Mitch & Mitch - W co mam wierzyć? - tekst piosenki ...",
+      "url": "https://www.tekstowo.pl/piosenka,ania_rusowicz__mitch__mitch,w_co_mam_wierzyc_.html",
+      "snippet": "W co mam wierzyć? - Ania Rusowicz & Mitch & Mitch: tekst piosenki, tłumaczenie po polsku i oficjalny teledysk. Głosuj na utwór 'W …"
+    }
+  ]
+}

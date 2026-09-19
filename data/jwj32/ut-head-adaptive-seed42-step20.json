@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "jwj32/ut-head-adaptive-seed42-step20",
+  "slug": "jwj32-ut-head-adaptive-seed42-step20",
+  "author": "jwj32",
+  "url": "https://huggingface.co/jwj32/ut-head-adaptive-seed42-step20",
+  "created_at": "2026-09-19T00:52:34.000Z",
+  "updated_at": "2026-09-19T09:22:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 16101421531,
+  "storage_human": "16.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FlixBus: billet de bus | voyage en bus en France et Europe",
+      "url": "https://www.flixbus.fr/",
+      "snippet": "FlixBus vous emmène grâce à son vaste réseau de lignes de bus ! Avec plus de 400 000 itinéraires à travers le monde, vous …"
+    },
+    {
+      "title": "Bus pour Rouen | Billet de bus pas cher - FlixBus",
+      "url": "https://www.flixbus.fr/bus/rouen",
+      "snippet": "FlixBus propose des voyages en bus à des prix abordables vers Rouen, à partir de 4,48 € en fonction de votre ville de départ. …"
+    },
+    {
+      "title": "Billet de bus Metz - Paris pas cher - FlixBus",
+      "url": "https://www.flixbus.fr/voyages-car/metz-paris",
+      "snippet": "Envie de voyager entre Metz et Paris? Achetez vos billets de bus pas cher! Wi-fi et prises électriques à bord 2 bagages gratuits Le …"
+    },
+    {
+      "title": "Bus pour Tours | Billet de bus pas cher - FlixBus",
+      "url": "https://www.flixbus.fr/bus/tours",
+      "snippet": "FlixBus propose des voyages en bus à des prix abordables vers Tours, à partir de 5,48 € en fonction de votre ville de départ. …"
+    },
+    {
+      "title": "Bus pour Clermont-Ferrand - Achetez des billets de bus abordables",
+      "url": "https://www.flixbus.fr/bus/clermont-ferrand",
+      "snippet": "FlixBus est la solution ! Nous vous proposons des bus qui desservent Clermont-Ferrand à partir de 6,98 €, et vous pouvez même …"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "jihyi/sd-class-butterflies-32",
+  "slug": "jihyi-sd-class-butterflies-32",
+  "author": "jihyi",
+  "url": "https://huggingface.co/jihyi/sd-class-butterflies-32",
+  "created_at": "2026-09-19T01:12:27.000Z",
+  "updated_at": "2026-09-19T01:12:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "unconditional-image-generation",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "pytorch",
+    "unconditional-image-generation",
+    "diffusion-models-class",
+    "license:mit",
+    "diffusers:DDPMPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 18536323,
+  "parameters_human": "18.5M",
+  "storage_bytes": 74185252,
+  "storage_human": "74 MB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "4 mm Trimmschnur – Bruchlasttest – Prorope",
+      "url": "https://prorope.eu/de/blogs/news/4-mm-trim-line-rope-breaking-strength-test",
+      "snippet": "Jun 8, 2026 · Dieses 4-mm-Polypropylen-Seil mit geschlagenem Kern erreicht eine durchschnittliche Bruchlast von 3,32 kN (339 kg) …"
+    },
+    {
+      "title": "Polypropylenseil 4 mm 100 m gelb wetterfest abriebfest Bruchlast 105 kg …",
+      "url": "https://habitium.com/de/seile-und-netze/899746-polypropylenseil-4-mm-100-m-gelb-wetterfest-abriebfest-bruchlast-105-kg-arbeitslast-21-kg-7-g-pro-m-vidaxl.html",
+      "snippet": "Bruchlast: 105 kg, sorgt für Sicherheit bei leichten Befestigungsaufgaben. Arbeitslast: 21 kg, empfohlen für dauerhafte Belastungen …"
+    },
+    {
+      "title": "4mm Polypropylenseil schwarz 400m - Polypropylen geflochtenes PP Seil …",
+      "url": "https://seiloo.de/polypropylenseile/280-4mm-polypropylenseil-schwarz-400m-pp-seil-polypropylen.html",
+      "snippet": "Dec 26, 2024 · Geflochtene PP Seile werden hauptsächlich als dekoratives Element und zur Sicherung und Sicherung leichter …"
+    },
+    {
+      "title": "Polypropylen Seil 4 mm 100 m Weiß mit blauen Details wetterfest ...",
+      "url": "https://habitium.com/de/seile-und-netze/901467-polypropylen-seil-4-mm-100-m-weiss-mit-blauen-details-wetterfest-abriebfest-bruchlast-105-kg-arbeitslast-21-kg-vidaxl.html",
+      "snippet": "Bruchlast: 105 kg, wodurch das Seil moderate Belastungen sicher aufnehmen kann. Arbeitslast: 21 kg, dies ist die empfohlene …"
+    },
+    {
+      "title": "Bootsseil Rot 4 mm 500 m, Polypropylenseil geflochten für ... - Amazon",
+      "url": "https://www.amazon.de/Tmriohed-Polypropylenseil-geflochten-Festmacher-Allzweckleine/dp/B09WQCXQ1F",
+      "snippet": "TECHNISCHE DETAILS: Mit einer Dicke von 4 mm und einer Gesamtlänge von 500 m bietet das rote Seil ein geringes Eigengewicht …"
+    }
+  ]
+}

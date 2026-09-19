@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "ZZRI/Feihua-n2-2.6B-preview-GGUF",
+  "slug": "zzri-feihua-n2-2-6b-preview-gguf",
+  "author": "ZZRI",
+  "url": "https://huggingface.co/ZZRI/Feihua-n2-2.6B-preview-GGUF",
+  "created_at": "2026-09-19T01:10:17.000Z",
+  "updated_at": "2026-09-19T01:22:54.000Z",
+  "license": "lfm-open-license-1.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "lfm2",
+    "liquid",
+    "nonsense",
+    "废话文学",
+    "agent",
+    "en",
+    "zh",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2697198592,
+  "parameters_human": "2.70B",
+  "storage_bytes": 6077362112,
+  "storage_human": "6.1 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sign In | Wyzant Tutoring",
+      "url": "https://www.wyzant.com/login",
+      "snippet": "New to Wyzant? Register as a student Apply to become a tutor Learn how we partner Your username Students - Your username is …"
+    },
+    {
+      "title": "Wyzant: Expert Tutors at Affordable Prices",
+      "url": "https://www.wyzant.com/",
+      "snippet": "Affordable, top-rated private tutors in 300+ subjects on Wyzant. Trusted by 3 million students with our Good Fit Guarantee."
+    },
+    {
+      "title": "Home Tutoring Jobs - Wyzant",
+      "url": "https://www.wyzant.com/tutorhome",
+      "snippet": "About tutoring jobs with Wyzant Register today to find tutor jobs in your area. Search for jobs or browse available tutoring jobs by …"
+    },
+    {
+      "title": "Tutor Sign Up | Wyzant Tutoring",
+      "url": "https://www.wyzant.com/tutorsignupstart",
+      "snippet": "Wyzant Connects Experts with Students Looking for 1‑to‑1 Instruction APPLY NOW To be listed on Wyzant Easily find students …"
+    },
+    {
+      "title": "Careers at Wyzant | Wyzant Tutoring",
+      "url": "https://www.wyzant.com/about/careers",
+      "snippet": "It Takes a Team Our team is full of smart, motivated people with a passion for creating and supporting the best educational …"
+    }
+  ]
+}

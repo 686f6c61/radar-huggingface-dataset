@@ -1,0 +1,110 @@
+{
+  "schema": 1,
+  "id": "flyingfishinwater/MOSS-TTS-Nano-100M",
+  "slug": "flyingfishinwater-moss-tts-nano-100m",
+  "author": "flyingfishinwater",
+  "url": "https://huggingface.co/flyingfishinwater/MOSS-TTS-Nano-100M",
+  "created_at": "2026-09-18T21:20:45.000Z",
+  "updated_at": "2026-09-18T21:20:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "zh",
+    "en",
+    "de",
+    "es",
+    "fr",
+    "ja",
+    "it",
+    "he",
+    "ko",
+    "ru",
+    "fa",
+    "ar",
+    "pl",
+    "pt",
+    "cs",
+    "da",
+    "sv",
+    "hu",
+    "el",
+    "tr"
+  ],
+  "tags": [
+    "safetensors",
+    "moss_tts_nano",
+    "text-to-speech - mlx - mlx-audio",
+    "custom_code",
+    "zh",
+    "en",
+    "de",
+    "es",
+    "fr",
+    "ja",
+    "it",
+    "he",
+    "ko",
+    "ru",
+    "fa",
+    "ar",
+    "pl",
+    "pt",
+    "cs",
+    "da",
+    "sv",
+    "hu",
+    "el",
+    "tr",
+    "arxiv:2603.18090",
+    "arxiv:2602.10934",
+    "base_model:OpenMOSS-Team/MOSS-TTS-Nano-100M",
+    "base_model:finetune:OpenMOSS-Team/MOSS-TTS-Nano-100M",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 142477056,
+  "parameters_human": "142.5M",
+  "storage_bytes": 285444614,
+  "storage_human": "285 MB",
+  "base_model": "OpenMOSS-Team/MOSS-TTS-Nano-100M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-19T02:24:32.628Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Spotify - Web Player: Music for everyone",
+      "url": "https://open.spotify.com/",
+      "snippet": "Spotify is a digital music service that gives you access to millions of songs."
+    },
+    {
+      "title": "Premium Student - Spotify (GR)",
+      "url": "https://www.spotify.com/gr/student/",
+      "snippet": "Απεριόριστη μουσική χωρίς διαφημίσεις, και όχι μόνο. Μόλις 4,99 €/μήνα για τη διάρκεια των σπουδών σου. Ακύρωσε ανά πάσα …"
+    },
+    {
+      "title": "Entra | Spotify",
+      "url": "https://open.spotify.com/intl-pt/artist/2ACNJpu5aN8cyiUkFRR4z1",
+      "snippet": "Pré-visualização do Spotify Inscreva-se para curtir música ilimitada e podcasts só com alguns anúncios. Não precisa de cartão de …"
+    },
+    {
+      "title": "Spotify Premium (Portugal) - Experimenta 3 meses por 0",
+      "url": "https://www.spotify.com/pt-pt/premium/",
+      "snippet": "O Spotify Premium é um serviço de música digital que te permite ouvir milhões de músicas sem anúncios. Experimenta 3 meses por …"
+    },
+    {
+      "title": "Spotify",
+      "url": "https://accounts.spotify.com/en/login?nosignup=true",
+      "snippet": "Log in to your Spotify account to access music, podcasts, and more."
+    }
+  ]
+}

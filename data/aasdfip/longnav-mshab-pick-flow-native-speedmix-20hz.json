@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Aasdfip/longnav-mshab-pick-flow-native-speedmix-20hz",
+  "slug": "aasdfip-longnav-mshab-pick-flow-native-speedmix-20hz",
+  "author": "Aasdfip",
+  "url": "https://huggingface.co/Aasdfip/longnav-mshab-pick-flow-native-speedmix-20hz",
+  "created_at": "2026-09-19T01:11:42.000Z",
+  "updated_at": "2026-09-19T01:12:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "robotics",
+    "manipulation",
+    "mobile-manipulation",
+    "maniskill",
+    "maniskill-hab",
+    "vision-language-action",
+    "flow-matching",
+    "fetch",
+    "base_model:Qwen/Qwen3-VL-2B-Instruct",
+    "base_model:finetune:Qwen/Qwen3-VL-2B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4379182765,
+  "storage_human": "4.4 GB",
+  "base_model": "Qwen/Qwen3-VL-2B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=ar",
+      "snippet": "الإعلانات كل ما تحب معرفته عن Google‏ هنا Google.com in English © 2026 - الخصوصية - البنود"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com.nf/?hl=ar-US",
+      "snippet": "محرّك بحث Google متوفّر باللغة: English الإعلانات كل ما تحب معرفته عن Google‏ هنا Google.com"
+    },
+    {
+      "title": "Sign in - Google Accounts",
+      "url": "https://accounts.google.com/",
+      "snippet": "Not your computer? Use a private browsing window to sign in. Learn more about using Guest mode Next Create account"
+    },
+    {
+      "title": "Google - YouTube",
+      "url": "https://www.youtube.com/google",
+      "snippet": "Welcome to your front-row seat to Google I/O. Watch for the latest groundbreaking updates to Gemini models, developer platforms …"
+    }
+  ]
+}

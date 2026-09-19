@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Charlbi/Lite_rt_prepared_for_android_dataset_builder",
+  "slug": "charlbi-lite_rt_prepared_for_android_dataset_builder",
+  "author": "Charlbi",
+  "url": "https://huggingface.co/Charlbi/Lite_rt_prepared_for_android_dataset_builder",
+  "created_at": "2026-09-18T23:30:36.000Z",
+  "updated_at": "2026-09-20T23:02:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tflite",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 24,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3139132197,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BUYME אתר המתנות והחוויות הגדול בישראל | Gift Card",
+      "url": "https://buyme.co.il/",
+      "snippet": "רעיונות למתנות וחוויות עם הניוזלטר של BUYME יהיו לך תמיד רעיונות מפתיעים למתנות וחוויות. אנחנו מבטיחים לשלוח לך רק מה שמעניין ולא להעמיס. …"
+    },
+    {
+      "title": "גיפט קארד ל- BUYME ALL - מגוון מתנות וחוויות",
+      "url": "https://buyme.co.il/supplier/13438757",
+      "snippet": "עם BUYME ALL זה אפשרי!מקבל המתנה יוכל לבחור בעצמו את המתנה או החוויה שהכי תשמח אותו; להתפנק במסעדה טובה, למצוא תחביב חדש …"
+    },
+    {
+      "title": "מתנות לעובדים, ללקוחות ולספקים בכמה קליקים | BUYME for Business",
+      "url": "https://business.buyme.co.il/",
+      "snippet": "שליחת מתנות לעובדים באמצעות המערכת הדיגיטלית לשליחת מתנות של BUYME Business. מגוון אדיר של חוויות במתנה אחת - שלחו עכשיו בקלות, …"
+    },
+    {
+      "title": "BuyMe! - Login",
+      "url": "https://www.app2.buyme-shopping.com/auth/login",
+      "snippet": "BUYME! Home shopping is easy Sign In Enter your email and password"
+    },
+    {
+      "title": "BUYME | אתר החוויות והאטרקציות של BUYME",
+      "url": "https://getaway.buyme.co.il/",
+      "snippet": "אתר החוויות של BUYME מציע מבחר ענק של הטבות והצעות לאטרקציות, הופעות, סיורים ומשחקי ספורט בכל העולם. היכנסו עכשיו והזמינו בקלות!"
+    }
+  ]
+}

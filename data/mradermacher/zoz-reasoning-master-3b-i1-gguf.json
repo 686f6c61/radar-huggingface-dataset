@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "mradermacher/ZOZ-Reasoning-Master-3B-i1-GGUF",
+  "slug": "mradermacher-zoz-reasoning-master-3b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/ZOZ-Reasoning-Master-3B-i1-GGUF",
+  "created_at": "2026-09-18T22:15:35.000Z",
+  "updated_at": "2026-09-18T23:00:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:z51722369/ZOZ-Reasoning-Master-3B",
+    "base_model:quantized:z51722369/ZOZ-Reasoning-Master-3B",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 36758277760,
+  "storage_human": "36.8 GB",
+  "base_model": "z51722369/ZOZ-Reasoning-Master-3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AXE pushes creative boundaries with new shower gel ad",
+      "url": "https://marketingreport.one/creation/axe-pushes-creative-boundaries-with-new-shower-gel-ad.html",
+      "snippet": "Jul 17, 2025 · AXE, the brand known for redefining masculine grooming, has launched a bold new shower gel line—and introducing it …"
+    },
+    {
+      "title": "Axe Shower Gel - Official \"Beach\" 60.mov - YouTube",
+      "url": "https://www.youtube.com/watch?v=63hI_Zgx-CE",
+      "snippet": "May 3, 2011 · Axe 60 second commercial for the new, improved Axe shower gel fragrances."
+    },
+    {
+      "title": "Axe Shower Gel advertising research - AdsSpot Advertising Intelligence",
+      "url": "https://adsspot.me/subbrands/axe-shower-gel-eac41d44535d/ads-and-commercials",
+      "snippet": "Research Axe Shower Gel advertising campaigns through structured creative, agency, market and media data."
+    },
+    {
+      "title": "Axe Shower Gel Commercial - Instagram",
+      "url": "https://www.instagram.com/popular/axe-shower-gel-commercial/",
+      "snippet": "Axe Body Wash commercials are renowned for humorous, absurd, and often surreal, high-energy scenarios highlighting the \"Axe …"
+    },
+    {
+      "title": "Axe Shower Gel • 200+ reels on Instagram",
+      "url": "https://www.instagram.com/popular/axe-shower-gel/",
+      "snippet": "AXE recently unveiled a new shower gel line with a quirky campaign film titled ‘The Neighbour,’ crafted by LOLA MullenLowe. The ad …"
+    }
+  ]
+}

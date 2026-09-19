@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "bimabk/dev-N2",
+  "slug": "bimabk-dev-n2",
+  "author": "bimabk",
+  "url": "https://huggingface.co/bimabk/dev-N2",
+  "created_at": "2026-09-19T00:59:41.000Z",
+  "updated_at": "2026-09-19T01:00:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 3452608258,
+  "storage_human": "3.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "office365を購入したのに、 - Microsoft コミュニティ",
+      "url": "https://answers.microsoft.com/ja-jp/msoffice/forum/all/office%EF%BC%93%EF%BC%96%EF%BC%95%E3%82%92/e06782a5-0832-43ee-81c9-c903c8c3abf6",
+      "snippet": "Excelを開くと購入するように、表示されて編集できない。 チャットで質問しようとしたら、長い事待たされるし。 ダウンロードも …"
+    }
+  ]
+}

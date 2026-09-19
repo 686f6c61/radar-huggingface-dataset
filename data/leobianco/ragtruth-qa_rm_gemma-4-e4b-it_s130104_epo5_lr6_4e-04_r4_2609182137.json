@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "leobianco/ragtruth-qa_RM_gemma-4-E4B-it_S130104_epo5_lr6_4e-04_r4_2609182137",
+  "slug": "leobianco-ragtruth-qa_rm_gemma-4-e4b-it_s130104_epo5_lr6_4e-04_r4_2609182137",
+  "author": "leobianco",
+  "url": "https://huggingface.co/leobianco/ragtruth-qa_RM_gemma-4-E4B-it_S130104_epo5_lr6_4e-04_r4_2609182137",
+  "created_at": "2026-09-18T21:37:46.000Z",
+  "updated_at": "2026-09-18T21:58:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:google/gemma-4-E4B-it",
+    "lora",
+    "transformers",
+    "base_model:google/gemma-4-E4B-it",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 73556823,
+  "storage_human": "74 MB",
+  "base_model": "google/gemma-4-E4B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RTL+: Sport, Filme, Serien, Podcasts, Hörbücher, Live-TV",
+      "url": "https://plus.rtl.de/?msockid=389d7cfed0cc6a03123e6b26d1ff6b4a",
+      "snippet": "Auf RTL+ Serien, Shows und Filme online streamen oder aber im TV Live-Stream genießen. Schau dir komplette Serien an, fiebere …"
+    },
+    {
+      "title": "RTL+ Login | Jetzt anmelden und streamen",
+      "url": "https://my.plus.rtl.de/login",
+      "snippet": "Bereits RTL+ Kunde? Hier geht es zu deinem Account. Logge dich einfach mit deiner E-Mail-Adresse und deinem Passwort ein."
+    },
+    {
+      "title": "Online auf RTL+: Livestream und ganze Folgen online sehen - RTL News",
+      "url": "https://www.rtl.de/cms/online-auf-rtl-livestream-und-ganze-folgen-online-sehen-4337429.html",
+      "snippet": "Jun 7, 2024 · Alle Höhepunkte des Sports sowie den Stream von RTL findet ihr immer auf RTL+. Livestream startet bald. Live TV von …"
+    },
+    {
+      "title": "RTL+ Account",
+      "url": "https://my.plus.rtl.de/login/validieren",
+      "snippet": "Services Hilfe & Kontakt Impressum Privacy Center Datenschutz Nutzungsbedingungen Verträge hier kündigen Barrierefreiheit …"
+    },
+    {
+      "title": "RTL HD auf RTL+ streamen.",
+      "url": "https://plus.rtl.de/rtlde_rtl/live?msockid=389d7cfed0cc6a03123e6b26d1ff6b4a",
+      "snippet": "Unser TV-Programm als Live-Stream ansehen, kostenlose Themen-Sender und weitere Live-Events auf RTL+ streamen."
+    }
+  ]
+}

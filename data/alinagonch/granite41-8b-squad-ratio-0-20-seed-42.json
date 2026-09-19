@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "AlinaGonch/granite41-8b-squad-ratio-0.20-seed-42",
+  "slug": "alinagonch-granite41-8b-squad-ratio-0-20-seed-42",
+  "author": "AlinaGonch",
+  "url": "https://huggingface.co/AlinaGonch/granite41-8b-squad-ratio-0.20-seed-42",
+  "created_at": "2026-09-19T01:42:25.000Z",
+  "updated_at": "2026-09-19T01:42:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 197993952,
+  "storage_human": "198 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PlanRadar Contact - Austria and worldwide",
+      "url": "https://www.planradar.com/contact/",
+      "snippet": "Interested in PlanRadar? Contact us! International partners: inquire about our partners around the world!"
+    },
+    {
+      "title": "Contact PlanRadar - Austria și global",
+      "url": "https://www.planradar.com/ro/contact/",
+      "snippet": "PlanRadar prestează servicii exclusiv pe baza acestor Termeni și Condiții Generale."
+    },
+    {
+      "title": "PlanRadar – Aplicații pe Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.defectradar&hl=ro",
+      "snippet": "PlanRadar este o platformă în care puteți ține evidența documentației, proceselor și rapoartelor proiectelor dvs. Documentele de …"
+    },
+    {
+      "title": "PlanRadar, Wien - Cylex Lokale Suche",
+      "url": "https://www.cylex.at/wien/planradar-8604397.html",
+      "snippet": "PlanRadar in Wien, Kärntner Ring 5-7 | Kontaktdaten, ⌚ Öffnungszeiten."
+    },
+    {
+      "title": "Radare Fixe e Mobile – Aplicații pe Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.bigdream.radar.speedcam&hl=ro",
+      "snippet": "Descoperiți toate radarele, capcanele poliției, radarele și camerele cu semafor!"
+    }
+  ]
+}

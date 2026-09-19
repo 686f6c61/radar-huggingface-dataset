@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "id": "jaredpalmer/kev-0.5b",
+  "slug": "jaredpalmer-kev-0-5b",
+  "author": "jaredpalmer",
+  "url": "https://huggingface.co/jaredpalmer/kev-0.5b",
+  "created_at": "2026-09-18T20:20:01.000Z",
+  "updated_at": "2026-09-20T23:49:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "decision-model",
+    "calibration",
+    "lora",
+    "multiple-choice",
+    "typesafe",
+    "prototype",
+    "text-classification",
+    "en",
+    "dataset:legacy-datasets/banking77",
+    "dataset:google/boolq",
+    "dataset:fancyzhx/ag_news",
+    "dataset:nyu-mll/multi_nli",
+    "dataset:SetFit/sst5",
+    "dataset:Yelp/yelp_review_full",
+    "base_model:Qwen/Qwen2.5-0.5B",
+    "base_model:adapter:Qwen/Qwen2.5-0.5B",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 14,
+  "downloads_30d": 104,
+  "trending_score": 13,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 48496279,
+  "storage_human": "48 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "typed decision (choice / noul / score)",
+      "dataset": "held-out split of the six training sources (1,350 questions)",
+      "metric": null,
+      "value": 0.799
+    },
+    {
+      "task": "typed decision (choice / noul / score)",
+      "dataset": "held-out split of the six training sources (1,350 questions)",
+      "metric": "ECE (10 bins)",
+      "value": 0.065
+    },
+    {
+      "task": "typed decision (choice / noul / score)",
+      "dataset": "held-out split of the six training sources (1,350 questions)",
+      "metric": "ECE after temperature scaling (T=1.47)",
+      "value": 0.031
+    }
+  ],
+  "sources": [
+    {
+      "title": "[1.1] [128x] eaglecraft | Minecraft-Forum",
+      "url": "https://www.minecraft-forum.de/threads/1-1-128x-eaglecraft.10053/",
+      "snippet": "Jan 21, 2012 · Eaglecraft-Die Ultimative Fusion des Minecraftmöglichen Zunächst ein paar Worte zu Eaglecraft. Eaglecraft ist warmes …"
+    },
+    {
+      "title": "Pixelmon Server | Minecraft-Forum",
+      "url": "https://www.minecraft-forum.de/threads/pixelmon-server.18308/",
+      "snippet": "Nov 28, 2013 · Hey Community, Ich plane seit längeren einen Pixelmon Server zu machen. Jedoch ist mir mein Konzept bisher zu …"
+    },
+    {
+      "title": "Aktueller Inhalt von Kikatzu | Minecraft-Forum",
+      "url": "https://www.minecraft-forum.de/members/kikatzu.4654/recent-content",
+      "snippet": "Dec 1, 2011 · Hi Leute, ich möchte euch den zweiten Teil meiner Adventure-Map vorstellen, Labyra II - The Saga of the Goldensword. …"
+    },
+    {
+      "title": "MineCapes - ein Umhang für jedermann | Minecraft-Forum",
+      "url": "https://www.minecraft-forum.de/threads/minecapes-ein-umhang-fuer-jedermann.11607/",
+      "snippet": "May 10, 2012 · MineCapes - ein Umhang fÃ¼r jedermann! Stell dir eine Minecraft Welt vor in der jeder selbststÃ¤ndig nach Lust und …"
+    },
+    {
+      "title": "The Jocraft | Minecraft-Forum",
+      "url": "https://www.minecraft-forum.de/members/the-jocraft.19189/",
+      "snippet": "Es existieren bisher noch keine Nachrichten im Profil von The Jocraft, die angezeigt werden können."
+    }
+  ]
+}

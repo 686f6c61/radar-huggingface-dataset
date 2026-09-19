@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "ai-tanzil/GreenPEFT",
+  "slug": "ai-tanzil-greenpeft",
+  "author": "ai-tanzil",
+  "url": "https://huggingface.co/ai-tanzil/GreenPEFT",
+  "created_at": "2026-09-18T20:51:24.000Z",
+  "updated_at": "2026-09-18T20:56:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "joblib",
+    "doi:10.57967/hf/10504",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 142463,
+  "storage_human": "142463 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "Company Sep 9, 2026 Path to Astra: critical capabilities and frontier safeguards Safety Sep 1, 2026 Jalapeño’s first results show …"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google’s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    },
+    {
+      "title": "Google AI - How we're making AI helpful for everyone",
+      "url": "https://ai.google/",
+      "snippet": "Discover how Google AI is committed to enriching knowledge, solving complex challenges and helping people grow by building useful …"
+    },
+    {
+      "title": "AI工具集官网 | 1000+ AI工具集合，国内外AI工具集导航大全",
+      "url": "https://ai-bot.cn/",
+      "snippet": "AI工具集官网收录了国内外数百个AI工具，该导航网站包括AI写作工具、AI图像生成和背景移除、AI视频制作、AI音频转录、AI辅助编 …"
+    },
+    {
+      "title": "DeepAI",
+      "url": "https://deepai.org/",
+      "snippet": "Beyond making AI accessible to creators worldwide, we believe in using our technology to solve real-world problems and support …"
+    }
+  ]
+}

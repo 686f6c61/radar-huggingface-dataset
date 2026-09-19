@@ -1,0 +1,106 @@
+{
+  "schema": 1,
+  "id": "dronefreak/uavdt-yolov8s",
+  "slug": "dronefreak-uavdt-yolov8s",
+  "author": "dronefreak",
+  "url": "https://huggingface.co/dronefreak/uavdt-yolov8s",
+  "created_at": "2026-09-18T21:22:02.000Z",
+  "updated_at": "2026-09-21T13:58:39.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "object-detection",
+    "detectionbench",
+    "pytorch",
+    "computer-vision",
+    "aerial-imagery",
+    "drone",
+    "uav",
+    "vehicle-detection",
+    "traffic-surveillance",
+    "small-object-detection",
+    "dataset:dronefreak/UAVDT",
+    "arxiv:1804.00518",
+    "arxiv:2511.09554",
+    "arxiv:2304.07193",
+    "arxiv:2405.14458",
+    "arxiv:2410.17725",
+    "arxiv:2606.03748",
+    "arxiv:2402.13616",
+    "base_model:Ultralytics/YOLOv8",
+    "base_model:finetune:Ultralytics/YOLOv8",
+    "license:agpl-3.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 62821973,
+  "storage_human": "63 MB",
+  "base_model": "Ultralytics/YOLOv8",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Object Detection",
+      "dataset": "UAVDT",
+      "metric": "mAP@50 (test split)",
+      "value": 11.48
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "UAVDT",
+      "metric": "mAP@50-95 (test split)",
+      "value": 6.71
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "UAVDT",
+      "metric": "Precision (test split)",
+      "value": 19.34
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "UAVDT",
+      "metric": "Recall (test split)",
+      "value": 23.39
+    }
+  ],
+  "sources": [
+    {
+      "title": "Maladie longue durée et assurance de prêt immobilier (ALD)",
+      "url": "https://www.meilleurtaux.com/assurance-de-pret/assurer-un-risque-aggrave/risques-aggraves-de-sante/les-maladies-longue-duree-sur-assurance-emprunteur/",
+      "snippet": "Sep 10, 2026 · Avoir une ALD n’empêche pas nécessairement d’obtenir une assurance emprunteur, mais votre état de santé peut …"
+    },
+    {
+      "title": "Affection longue durée (ALD) et assurance emprunteur",
+      "url": "https://www.malakoffhumanis.com/particuliers/assurance-emprunteur/assurance-pret-immobilier-maladie-longue-duree/",
+      "snippet": "Lorsqu’un emprunteur souffre d’une affection de longue durée (ALD), les démarches pour souscrire une assurance emprunteur …"
+    },
+    {
+      "title": "Assurance emprunteur et ALD : garanties, droits et solutions",
+      "url": "https://www.lecomparateurassurance.com/assurance-emprunteur/profil/risques-aggraves/risques-sante/ald",
+      "snippet": "Apr 29, 2025 · ALD et assurance de prêt : impact, droit à l'oubli, convention AERAS… Tout pour emprunter malgré une maladie …"
+    },
+    {
+      "title": "Affection Longue Durée (ALD) et assurance emprunteur - Cardif",
+      "url": "https://www.cardif.fr/assurance-emprunteur/ald-et-remboursement-de-pret",
+      "snippet": "Jan 23, 2026 · Vous souffrez d’une affection longue durée (ALD) et vous vous posez des questions sur la possibilité de souscrire un …"
+    },
+    {
+      "title": "Assurance de prêt immobilier face à une Affection de Longue Durée (ALD)",
+      "url": "https://www.oradeavie.fr/fr/particulier/assurance-pret-immobilier/guide-lassurance-emprunteur/medical/assurance-pret-immobilier-affection-longue-duree/",
+      "snippet": "Comprenez comment une ALD affecte votre assurance de prêt immobilier. Solutions et conseils pratiques pour emprunteurs."
+    }
+  ]
+}

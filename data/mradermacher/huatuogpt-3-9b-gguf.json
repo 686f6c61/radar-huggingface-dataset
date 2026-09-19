@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "mradermacher/HuatuoGPT-3-9B-GGUF",
+  "slug": "mradermacher-huatuogpt-3-9b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/HuatuoGPT-3-9B-GGUF",
+  "created_at": "2026-09-18T21:54:41.000Z",
+  "updated_at": "2026-09-18T23:44:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "medical",
+    "reasoning",
+    "conversational",
+    "onepo",
+    "en",
+    "base_model:FreedomIntelligence/HuatuoGPT-3-9B",
+    "base_model:quantized:FreedomIntelligence/HuatuoGPT-3-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 82967483456,
+  "storage_human": "83.0 GB",
+  "base_model": "FreedomIntelligence/HuatuoGPT-3-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "'xxxn' Search - XNXX.COM",
+      "url": "https://www.xnxx.com/search/xxxn",
+      "snippet": "XNXX.COM 'xxxn' Search, free sex videos Best Of Hits Tags Pictures Live Cams Sex Stories Forum Pornstars Games Dating AI …"
+    },
+    {
+      "title": "Free Porn, Sex, Tube Videos, XXX Pics, Pussy in Porno Movies - XNXX.COM",
+      "url": "https://www.xnxx.com/",
+      "snippet": "Have something to say? Please use our Forum, or contact us directly (warning : we can't read every email). Advertising, Traffic …"
+    },
+    {
+      "title": "Kostenlose Porno, Sex, Tube-Videos, XXX Bilder, Muschi in Porno-Filme ...",
+      "url": "https://de.xnxx.place/",
+      "snippet": "XNXX liefert kostenlose Sex-Filme und Porno-Videos (Tube-Porno). Jetzt können Sie über 10 Millionen Sex-Videos kostenlos …"
+    },
+    {
+      "title": "Today's selection - XNXX.COM",
+      "url": "https://m-xnxx.com/todays-selection",
+      "snippet": "XNXX Today's selection A sexy blonde brought only a swimsuit to the Alps, so I decided to help her warm up, and she was so …"
+    },
+    {
+      "title": "'xxxn' Search - XNXX.COM",
+      "url": "https://xnxx.health/search/xxxn",
+      "snippet": "Stepbrother and teen stepsis fool around - porno xxx xvideos xbxx videos-porno xnnx pussy xxxvideos xxx porno xnxxx xxx porn …"
+    }
+  ]
+}

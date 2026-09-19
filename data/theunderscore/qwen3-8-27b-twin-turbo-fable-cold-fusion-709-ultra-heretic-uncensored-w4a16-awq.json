@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "TheUnderscore/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored-W4A16-AWQ",
+  "slug": "theunderscore-qwen3-8-27b-twin-turbo-fable-cold-fusion-709-ultra-heretic-uncensored-w4a16-awq",
+  "author": "TheUnderscore",
+  "url": "https://huggingface.co/TheUnderscore/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored-W4A16-AWQ",
+  "created_at": "2026-09-18T20:46:59.000Z",
+  "updated_at": "2026-09-18T20:51:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen",
+    "qwen3.5",
+    "qwen3.8",
+    "awq",
+    "int4",
+    "w4a16",
+    "compressed-tensors",
+    "lmdeploy",
+    "twin-turbo",
+    "heretic",
+    "uncensored",
+    "fable",
+    "davidau",
+    "finetune",
+    "conversational",
+    "base_model:DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored",
+    "base_model:quantized:DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 19567853263,
+  "storage_human": "19.6 GB",
+  "base_model": "DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TURFOMANIA - Quinté+ / Réunions PMU - Pronostics TURF",
+      "url": "https://www.turfomania.fr/",
+      "snippet": "Turfomania est votre partenaire pour gagner plus souvent aux courses PMU. Retrouvez les meilleurs pronostics quinté et réunions …"
+    },
+    {
+      "title": "Pronostic Quinté du Jour – Partants & Pronostic Quinté+ PMU",
+      "url": "https://www.turfomania.fr/quinte/",
+      "snippet": "22 hours ago · Pronostic Quinté du jour gratuit : partants PMU, analyse complète et pronostic expert pour le Quinté+ d'aujourd'hui. …"
+    },
+    {
+      "title": "Pronostic Quinté du Jour – PMU, Bases, Outsiders & Partants",
+      "url": "https://www.turf-pronostics.com/",
+      "snippet": "Pronostic Quinté du jour : notre sélection, bases, favoris et outsiders. Retrouvez les partants PMU, analyses, statistiques et résultats …"
+    },
+    {
+      "title": "Les pronostics des internautes | Turf Pronostic",
+      "url": "https://www.turf-pronostics.com/community/les-pronostics-des-internautes/",
+      "snippet": "Comparez les pronostics pmu des parieurs, identifiez les tendances et découvrez les chevaux les plus soutenus. Ce forum vous …"
+    },
+    {
+      "title": "Mes INDICES du TURF pour le Quinté+ à VINCENNES du",
+      "url": "https://communaute-forum.pmu.fr/questions/3290932-indices-turf-quinte-vincennes-dimanche-21-janvier-grand-prix-communaute",
+      "snippet": "Jan 20, 2024 · Discussion Discussion: « Mes INDICES du TURF pour le Quinté+ à VINCENNES du DIMANCHE 21 JANVIER + Le …"
+    }
+  ]
+}

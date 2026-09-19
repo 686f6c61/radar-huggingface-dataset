@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jrepifano/q14b-srh-arm3-r32-seed1",
+  "slug": "jrepifano-q14b-srh-arm3-r32-seed1",
+  "author": "jrepifano",
+  "url": "https://huggingface.co/jrepifano/q14b-srh-arm3-r32-seed1",
+  "created_at": "2026-09-19T01:01:54.000Z",
+  "updated_at": "2026-09-19T01:15:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 842379084,
+  "storage_human": "842 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LinkedIn: Log In or Sign Up",
+      "url": "https://www.linkedin.com/",
+      "snippet": "Explore top LinkedIn content Discover relevant posts and expert insights — curated by topic and in one place."
+    },
+    {
+      "title": "LinkedIn - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/LinkedIn",
+      "snippet": "In December 2016, Microsoft purchased LinkedIn for $26.2 billion, being its largest acquisition at the time. [9] 94% of business-to …"
+    },
+    {
+      "title": "LinkedIn Login, Sign in | LinkedIn",
+      "url": "https://www.linkedin.com/login/",
+      "snippet": "Login to LinkedIn to keep in touch with people you know, share ideas, and build your career."
+    },
+    {
+      "title": "LinkedIn: Jobs & Business News – Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.linkedin.android&hl=en-IN",
+      "snippet": "3 days ago · Ratings and reviews What's new Thanks for using LinkedIn! We regularly update our app to fix bugs, improve …"
+    },
+    {
+      "title": "LinkedIn",
+      "url": "https://in.linkedin.com/company/linkedin",
+      "snippet": "Founded in 2003, LinkedIn connects the world's professionals to make them more productive and successful. With more than 1 billion …"
+    }
+  ]
+}

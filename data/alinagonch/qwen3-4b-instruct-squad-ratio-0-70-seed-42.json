@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "AlinaGonch/qwen3-4b-instruct-squad-ratio-0.70-seed-42",
+  "slug": "alinagonch-qwen3-4b-instruct-squad-ratio-0-70-seed-42",
+  "author": "AlinaGonch",
+  "url": "https://huggingface.co/AlinaGonch/qwen3-4b-instruct-squad-ratio-0.70-seed-42",
+  "created_at": "2026-09-18T21:44:28.000Z",
+  "updated_at": "2026-09-18T21:44:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 132187888,
+  "storage_human": "132 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accuracy International AX Headspace Question/Concerns? - Sniper's Hide",
+      "url": "https://www.snipershide.com/shooting/threads/accuracy-international-ax-headspace-question-concerns.6973554/",
+      "snippet": "May 27, 2014 · I’ve never checked headspace with probably 10-15 ai, dt and 700 clone prefit barrels. is that really necessary"
+    },
+    {
+      "title": "Caution when/if replacing Cam Seals on V6 engine during...",
+      "url": "https://www.driveaccord.net/threads/caution-when-if-replacing-cam-seals-on-v6-engine-during-timing-belt-replacement.539899/page-3",
+      "snippet": "Mar 14, 2011 · The head rebuilds should have included checking the valves and replacing if necessary, re-cutting the valve seats, and …"
+    },
+    {
+      "title": "TPMS Necessary? | Honda Accord Forums - The DriveAccord …",
+      "url": "https://www.driveaccord.net/threads/tpms-necessary.72189/",
+      "snippet": "Jun 8, 2012 · I have a few questions for anyone who has installed tires without the TPMS sensors in place. 1. I understand that the …"
+    },
+    {
+      "title": "How *necessary* is a bottle warmer? - What to Expect",
+      "url": "https://community.whattoexpect.com/forums/june-2024-babies/topic/how-necessary-is-a-bottle-warmer-158399826.html",
+      "snippet": "Jul 3, 2026 · Whether it is necessary really depends on your baby though, some are completely happy with room temperature milk …"
+    },
+    {
+      "title": "Cantilevered mount necessary on Ar10? | Sniper's Hide Forum",
+      "url": "https://www.snipershide.com/shooting/threads/cantilevered-mount-necessary-on-ar10.6256787/",
+      "snippet": "Feb 14, 2017 · Are cantilevered mounts necessary on AR10s? Trying to decide on an ADM mount but without seeing them mounted …"
+    }
+  ]
+}

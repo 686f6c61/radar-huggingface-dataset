@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l3_swift_remove50_swapgapiter_b010",
+  "slug": "jeesup-svd-safety-l3_swift_remove50_swapgapiter_b010",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l3_swift_remove50_swapgapiter_b010",
+  "created_at": "2026-09-19T01:09:53.000Z",
+  "updated_at": "2026-09-22T00:27:16.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama3",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Meta-Llama-3-8B-Instruct",
+    "base_model:finetune:meta-llama/Meta-Llama-3-8B-Instruct",
+    "license:llama3",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766337,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Meta-Llama-3-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Love Poem Generator - Create a Love Poem Instantly",
+      "url": "https://poemanalysis.com/poem-generator/love/",
+      "snippet": "With the Love Poem Generator, craft personalized and creative poems effortlessly, adding various themes, tones, languages, and more."
+    },
+    {
+      "title": "Free AI Poem Generator - Create a Poem Instantly",
+      "url": "https://poemanalysis.com/poem-generator/",
+      "snippet": "With our AI Poem Generator, craft personalized and creative poems effortlessly, adding various themes, tones, languages, and more."
+    },
+    {
+      "title": "How to Write a Love Poem: 11 Steps (with Pictures) - wikiHow",
+      "url": "https://www.wikihow.com/Write-a-Love-Poem",
+      "snippet": "Apr 14, 2025 · To write a love poem, start by brainstorming ideas and thoughts. Then, write the poem using sensory detail and unique …"
+    },
+    {
+      "title": "Love Poem Generator [Free, AI-Powered] - Generate Poem",
+      "url": "https://generatepoem.io/love-poem-generator/",
+      "snippet": "Crafting the perfect love poem has never been easier, thanks to this love poem generator that helps you express your deepest …"
+    },
+    {
+      "title": "Create a Love Poem | Love Poem Generator - PoetrySoup.com",
+      "url": "https://www.poetrysoup.com/poems/love_poem_generator.aspx",
+      "snippet": "Create a unique and perfect love poem, using your special words, for your loved one. Using this poem generator to get love points …"
+    }
+  ]
+}

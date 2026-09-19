@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "d0xin/Swift-Qwen3.8-27B-Uncensored-NVFP4-LocalHessian-ActivationHeadroom-NInfer",
+  "slug": "d0xin-swift-qwen3-8-27b-uncensored-nvfp4-localhessian-activationheadroom-ninfer",
+  "author": "d0xin",
+  "url": "https://huggingface.co/d0xin/Swift-Qwen3.8-27B-Uncensored-NVFP4-LocalHessian-ActivationHeadroom-NInfer",
+  "created_at": "2026-09-19T00:21:41.000Z",
+  "updated_at": "2026-09-19T01:24:17.000Z",
+  "license": "swift-open-license-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "ninfer",
+  "languages": [],
+  "tags": [
+    "ninfer",
+    "qwen3.8",
+    "swift",
+    "uncensored",
+    "nvfp4",
+    "fp8",
+    "mixed-precision",
+    "local-hessian",
+    "activation-headroom",
+    "dflash2",
+    "vision",
+    "multimodal",
+    "blackwell",
+    "sm_120a",
+    "image-text-to-text",
+    "base_model:d0xin/Swift-Qwen3.8-27B-Uncensored-BF16",
+    "base_model:quantized:d0xin/Swift-Qwen3.8-27B-Uncensored-BF16",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23719715844,
+  "storage_human": "23.7 GB",
+  "base_model": "d0xin/Swift-Qwen3.8-27B-Uncensored-BF16",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Capacitor Calculator – Fast, Free Capacitor Tool | No Ads | InfiniteCalcs",
+      "url": "https://infinitecalcs.com/calculators/electrical/capacitor-calculator/",
+      "snippet": "Capacitor Calculator – Calculate capacitor instantly. Calculate capacitors in series and parallel Free, fast, and accurate with step-by …"
+    },
+    {
+      "title": "Capacitance Conversion Calculator | DigiKey Electronics",
+      "url": "https://www.digikey.com/en/resources/conversion-calculators/conversion-calculator-capacitance?msockid=2a79b467c3e761c404e3a3bec25d60c5",
+      "snippet": "Use DigiKey’s electrostatic capacitance conversion calculator to quickly perform conversions between capacitance units including pF, …"
+    },
+    {
+      "title": "Free Capacitor Calculator - Charge, Energy & Code Decoder",
+      "url": "https://miniwebtool.com/capacitor-calculator/",
+      "snippet": "Mar 17, 2026 · Capacitor Calculator - Calculate stored charge (Q=CV), energy (E=½CV²), and reactance (Xc=1/2πfC) for capacitors. …"
+    },
+    {
+      "title": "Capacitance Calculator | iCalculator™",
+      "url": "https://physics.icalculator.com/capacitance-calculator.html",
+      "snippet": "Capacitance Calculator This calculator evaluates capacitance across multiple electrostatic configurations including charge–voltage …"
+    },
+    {
+      "title": "Capacitor Calculator - simplified.tools",
+      "url": "https://www.simplified.tools/calculate_capacitor",
+      "snippet": "Capacitor Calculator Calculate parallel-plate capacitance from plate geometry and dielectric choice, then estimate stored charge and …"
+    }
+  ]
+}

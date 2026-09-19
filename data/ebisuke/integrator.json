@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "ebisuke/integrator",
+  "slug": "ebisuke-integrator",
+  "author": "ebisuke",
+  "url": "https://huggingface.co/ebisuke/integrator",
+  "created_at": "2026-09-19T02:19:05.000Z",
+  "updated_at": "2026-09-19T10:08:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "integrator",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 36,
+  "trending_score": 0,
+  "parameters": 1768779264,
+  "parameters_human": "1.77B",
+  "storage_bytes": 58923982920,
+  "storage_human": "58.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "2026 NFL League Standings",
+      "url": "https://www.nfl.com/standings/league/2026/reg",
+      "snippet": "Year 2026 2025 2024 2023 2022 2021 2020 2019 2018 2017 2016 2015 2014 2013 2012 2011 2010 2009 2008 2007 2006 2005 2004 …"
+    },
+    {
+      "title": "NFL Standings - 2026 season - ESPN",
+      "url": "https://www.espn.com/nfl/standings",
+      "snippet": "Standings are updated with the completion of each game. Visit ESPN for the complete 2026 NFL season standings. Includes league, …"
+    },
+    {
+      "title": "New England Patriots Games 2026: Scores, Standings and Roster",
+      "url": "https://nflplayoffpass.com/team/new-england-patriots/",
+      "snippet": "Aug 22, 2026 · New England Patriots 2026 games with kickoff times, current scores, standings, roster, team leaders and 2026-2027 …"
+    },
+    {
+      "title": "New England Patriots Scores, Stats and Highlights - ESPN",
+      "url": "https://www.espn.com/nfl/team/_/name/ne/new-england-patriots",
+      "snippet": "Visit ESPN for New England Patriots live scores, video highlights, and latest news. Find standings and the full 2026 season schedule."
+    },
+    {
+      "title": "Official website of the New England Patriots",
+      "url": "https://www.patriots.com/schedule/standings/2026/REG",
+      "snippet": "Get the latest official New England Patriots schedule, roster, depth chart, news, interviews, videos, podcasts and more on Patriots.com."
+    }
+  ]
+}

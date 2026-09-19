@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "jwj32/ut-head-adaptive-seed42-step100",
+  "slug": "jwj32-ut-head-adaptive-seed42-step100",
+  "author": "jwj32",
+  "url": "https://huggingface.co/jwj32/ut-head-adaptive-seed42-step100",
+  "created_at": "2026-09-19T00:56:43.000Z",
+  "updated_at": "2026-09-19T09:23:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 16101421515,
+  "storage_human": "16.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "「Stay hungry. Stay foolish.」最好的汉语翻译是什么？ - 知乎",
+      "url": "https://www.zhihu.com/question/19557797",
+      "snippet": "对 “Stay hungry, Stay foolish” 最常见的翻译应该就是“求知若饥，虚心若愚”了，当然这么理解也不是什么坏事，只不过乔布斯想表达的 …"
+    },
+    {
+      "title": "Gemini 的出现能否帮助 Google 重争地位？对 Google 的发展有哪些影 …",
+      "url": "https://www.zhihu.com/question/633694566",
+      "snippet": "当地时间周三，美国科技巨头谷歌宣布推出其认为规模最大、功能最强大的人工智能模型Gemini，这种技术能够…"
+    },
+    {
+      "title": "wapi要不要打开？ - 知乎",
+      "url": "https://www.zhihu.com/question/297654008",
+      "snippet": "首先来了解一下WAPI是什么。 WAPI与WIFi一样，是一种无线网标准，只不过WiFi由国外主导，WAPI是国产。 两者一个最明显的差 …"
+    },
+    {
+      "title": "谷歌 Gemini 开始收费，价格为每月 19.99 美元，并提供两个月的免费 …",
+      "url": "https://www.zhihu.com/question/643693848",
+      "snippet": "正如此前爆料所称，Gemini Advanced将开启收费模式：价格为每月19.99美元，并提供两个月的免费试用。这是…"
+    },
+    {
+      "title": "「Gemini」的正确读音是什么，哪种读法更被普遍接受？ - 知乎",
+      "url": "https://www.zhihu.com/question/1987568735523980297",
+      "snippet": "Dec 31, 2025 · 我一开始也是不理解的，很极客的 Gemini API 咋会在🍠这种风格的平台有这种热度。点进去才发现，平日写code的金 …"
+    }
+  ]
+}

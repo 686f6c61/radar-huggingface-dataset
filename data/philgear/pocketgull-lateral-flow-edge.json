@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "philgear/pocketgull-lateral-flow-edge",
+  "slug": "philgear-pocketgull-lateral-flow-edge",
+  "author": "philgear",
+  "url": "https://huggingface.co/philgear/pocketgull-lateral-flow-edge",
+  "created_at": "2026-09-18T20:47:09.000Z",
+  "updated_at": "2026-09-18T20:47:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "gemma-2",
+    "lora",
+    "clinical-nlp",
+    "healthcare",
+    "hipaa-safe-harbor",
+    "open-science",
+    "pocketgull",
+    "nih-medquad",
+    "who-mhgap",
+    "text-generation",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "pocketgull/edge-densitometry-vision",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "52 Best Smoothie Recipes | Food Network",
+      "url": "https://www.foodnetwork.com/recipes/photos/smoothie-recipes",
+      "snippet": "Jul 17, 2026 · Need a wholesome breakfast, midday meal or better-for-you sweet treat? Try these easy fruit, green, protein and …"
+    },
+    {
+      "title": "Malted Chocolate Milkshake Recipe | Food Network",
+      "url": "https://www.foodnetwork.com/fnk/recipes/malted-chocolate-milkshake-11365942",
+      "snippet": "Malted milk powder and chocolate are a perfect pairing, and this retro diner-inspired milkshake is proof positive. A creamy chocolate …"
+    },
+    {
+      "title": "Malted Vanilla Milkshake Recipe | Food Network",
+      "url": "https://www.foodnetwork.com/fnk/recipes/malted-vanilla-milkshake-11365947",
+      "snippet": "Classic, diner-style malted milkshakes are a retro treat easy to whip up at home. Malted milk powder can be easily found in the dried …"
+    },
+    {
+      "title": "10 High-Protein Shake Recipes You Can Blend at Home | Food Network",
+      "url": "https://www.foodnetwork.com/recipes/photos/protein-shake-recipe-ideas",
+      "snippet": "Aug 14, 2026 · Blend 10 high-protein shake recipes from Food Network (picked by a registered dietitian) including peanut butter …"
+    },
+    {
+      "title": "Fresh Strawberry Milkshakes Recipe | Food Network",
+      "url": "https://www.foodnetwork.com/recipes/fresh-strawberry-milkshakes-3644067",
+      "snippet": "This Fresh Strawberry Milkshakes recipe is easy to make and full of incredible flavor. A must try for any home cook. Get the full recipe …"
+    }
+  ]
+}

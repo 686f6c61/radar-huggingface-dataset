@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "michaeljang/sd-class-butterflies-32",
+  "slug": "michaeljang-sd-class-butterflies-32",
+  "author": "michaeljang",
+  "url": "https://huggingface.co/michaeljang/sd-class-butterflies-32",
+  "created_at": "2026-09-19T01:41:13.000Z",
+  "updated_at": "2026-09-19T02:12:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "unconditional-image-generation",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "pytorch",
+    "unconditional-image-generation",
+    "diffusion-models-class",
+    "license:mit",
+    "diffusers:DDPMPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 24,
+  "trending_score": 0,
+  "parameters": 18536323,
+  "parameters_human": "18.5M",
+  "storage_bytes": 148370504,
+  "storage_human": "148 MB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Connect to an on-premises database - AppSheet Help",
+      "url": "https://support.google.com/appsheet/answer/10106597?hl=en",
+      "snippet": "Currently, AppSheet only supports SQL databases (SQL Server, MySQL, MariaDB, and PostgreSQL). For MariaDB databases, you …"
+    },
+    {
+      "title": "How to choose a subscription - AppSheet Help - Google Help",
+      "url": "https://support.google.com/appsheet/answer/10105400?hl=en-IN",
+      "snippet": "See also: About licensing in AppSheet for organizations How do I allow access by app users without assigning licenses to individual …"
+    },
+    {
+      "title": "Import campaign data - Analytics Help - Google Help",
+      "url": "https://support.google.com/analytics/answer/10071305?hl=en-419",
+      "snippet": "Import campaign data, such as aggregated cost, clicks, and impressions, from your online advertising platforms to measure return on …"
+    },
+    {
+      "title": "オンプレミス データベースに接続する - AppSheet ヘルプ",
+      "url": "https://support.google.com/appsheet/answer/10106597?hl=ja",
+      "snippet": "IP アドレスとファイアウォール情報を管理する AppSheet で Integration Connectors を使用する DreamFactory を使用する （既存の …"
+    },
+    {
+      "title": "About the 'Data manager' page and product linking - Google Help",
+      "url": "https://support.google.com/google-ads/answer/11320486?hl=en-QA",
+      "snippet": "The 'Data manager' page in your Google Ads and your manager account makes it possible for you to connect your Google Ads …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "tarakozushi/CottonCandyv2",
+  "slug": "tarakozushi-cottoncandyv2",
+  "author": "tarakozushi",
+  "url": "https://huggingface.co/tarakozushi/CottonCandyv2",
+  "created_at": "2026-09-18T22:29:23.000Z",
+  "updated_at": "2026-09-19T01:13:39.000Z",
+  "license": "all-rights-reserved",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "stable-diffusion",
+    "safetensors",
+    "illustmix",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6939107391,
+  "storage_human": "6.9 GB",
+  "base_model": "WAI-REAL_CN",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Polskie torrenty i zawsze darmowe torrenty - helltorrents.com",
+      "url": "https://helltorrents.com/account.php",
+      "snippet": "polskie torrenty i inne darmowe torrenty. Wielka baza plikŃ w i szybkie torrenty. U nas znajdziesz najnowsze filmy, gry pc i wiele …"
+    },
+    {
+      "title": "helltorrents.com",
+      "url": "https://helltorrents.com/download.php?id=7e3982b3d742d53652c39712d4e112a5bdd6a5d0&f=%5BHorribleSubs%5D+Shinmai+Maou+no+Testament+Burst++08+%5B1080p%5D+%5BCENZURA%5D+%5Bh264%5D.torrent",
+      "snippet": "@%P1†' ¢mkõªœÏŠ ÊýÜs…¦j ˆþ¸(±X›ð·ÐiÀ1±? Z·pe –#t!2u ÒÖfOøä â9~}­Q WÕí\\=ºu ˆ—3Œ¦ ï]6 Í% ¯{Ló °^Rš¹ ¹9Iä˜,‹Ão …"
+    },
+    {
+      "title": "darkwarez.pl/forum - błąd przy otwieraniu strony, działa u innych ...",
+      "url": "https://www.elektroda.pl/rtvforum/topic1691092.html",
+      "snippet": "Jun 11, 2010 · Czy ktoś miał problem z dostępem do darkwarez.pl/forum? Wyskakuje mi błąd, a koledze działa normalnie. Co może …"
+    },
+    {
+      "title": "Forum dla elektronika - elektroda.pl",
+      "url": "https://www.elektroda.pl/rtvforum/forums.html",
+      "snippet": "Forum dla elektronika z ponad 3 milionami zarejestrowanych użytkowników. Zawierace miliony porad dotyczących elektroniki."
+    },
+    {
+      "title": "helltorrents.com",
+      "url": "https://helltorrents.com/download.php?id=dd6f068f9a75686d1f87b82bd3cfaceda5421b99&f=Trzynastu+-+Thirteen+Lives+2022++%5B1080p.WEB-DL.H265-FT%5D+%5BENG-Lektor+PL%5D+%5BAlusia%5D.torrent",
+      "snippet": "10:created by20:qBittorrent v4.1.9.113:creation datei1771500187e4:infod5:filesld6:lengthi5486067643e4:pathl84:Trzynastu - Thirteen …"
+    }
+  ]
+}

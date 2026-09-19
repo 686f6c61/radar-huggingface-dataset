@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "id": "StanfordSCALE/assertion_sentence_has_comparison_terms",
+  "slug": "stanfordscale-assertion_sentence_has_comparison_terms",
+  "author": "StanfordSCALE",
+  "url": "https://huggingface.co/StanfordSCALE/assertion_sentence_has_comparison_terms",
+  "created_at": "2026-09-18T20:50:01.000Z",
+  "updated_at": "2026-09-18T20:50:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "setfit",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "setfit",
+    "safetensors",
+    "mpnet",
+    "text-classification",
+    "education",
+    "classroom-discourse",
+    "edubehaviors",
+    "assertion",
+    "en",
+    "dataset:StanfordSCALE/assertions_llm_annotated_talkmoves",
+    "base_model:sentence-transformers/paraphrase-mpnet-base-v2",
+    "base_model:finetune:sentence-transformers/paraphrase-mpnet-base-v2",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109486464,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437974679,
+  "storage_human": "438 MB",
+  "base_model": "sentence-transformers/paraphrase-mpnet-base-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "F1 (positive class, test)",
+      "value": 0.7956
+    },
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "Precision (positive class, test)",
+      "value": 0.7786
+    },
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "Recall (positive class, test)",
+      "value": 0.8134
+    },
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "ROC-AUC (test)",
+      "value": 0.9428
+    }
+  ],
+  "sources": [
+    {
+      "title": "Schachgemeinschaft 1871 Löberitz",
+      "url": "https://www.sg1871loeberitz.de/",
+      "snippet": "Homepage der Schachgemeinschaft 1871 Löberitz e. V. Schachgemeinschaft 1871 Löberitz Vereinsinfo News Mannschaften …"
+    },
+    {
+      "title": "Vereinsinfo - Schachgemeinschaft 1871 Löberitz",
+      "url": "https://www.sg1871loeberitz.de/vereinsinfo.htm",
+      "snippet": "Homepage der Schachgemeinschaft 1871 Löberitz e. V. Vereinsinformationen Wettkampfmöglichkeiten in unterschiedlichen …"
+    },
+    {
+      "title": "Schachgemeinschaft 1871 Löberitz (Schach in Deutschland)",
+      "url": "https://schach.in/sg-1871-loeberitz/",
+      "snippet": "Profil der Schachgemeinschaft 1871 Löberitz auf schach.in, einer Plattform für Schachvereine in Deutschland."
+    },
+    {
+      "title": "SG 1871 Löberitz | Schachbundesliga",
+      "url": "https://www.schachbundesliga.de/mannschaft/2024/fb1/3",
+      "snippet": "SC 1957 Bad Königshofen 8"
+    },
+    {
+      "title": "Der Schachclub - schachmuseum-loeberitz.de",
+      "url": "https://www.schachmuseum-loeberitz.de/der-schachclub/23-der-schachclub",
+      "snippet": "Alle verfügbaren Räume der Schachgemeinschaft 1871 Löberitz besitzen einen historischen Hintergrund und werden im Grunde in …"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "0xSojalSec/GLM-4.7-Flash-Name-NSFW",
+  "slug": "0xsojalsec-glm-4-7-flash-name-nsfw",
+  "author": "0xSojalSec",
+  "url": "https://huggingface.co/0xSojalSec/GLM-4.7-Flash-Name-NSFW",
+  "created_at": "2026-09-19T01:55:27.000Z",
+  "updated_at": "2026-09-19T01:55:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "glm4_moe_lite",
+    "zh",
+    "base_model:zai-org/GLM-4.7-Flash",
+    "base_model:finetune:zai-org/GLM-4.7-Flash",
+    "license:mit",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": 29943390976,
+  "parameters_human": "29.94B",
+  "storage_bytes": 59908190018,
+  "storage_human": "59.9 GB",
+  "base_model": "zai-org/GLM-4.7-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "31 kreative Bett Ideen für kleine Zimmer, die Freude machen",
+      "url": "https://deinedekoidee.de/schlafzimmer/bett-ideen-kleine-zimmer/",
+      "snippet": "Feb 20, 2025 · Aber keine Sorge, wir haben 31 kreative Ideen zusammengestellt, die dein Schlafzimmer stilvoll und funktional …"
+    },
+    {
+      "title": "Platzsparende Betten: 13 Ideen für kleine Wohnungen | AD Magazin",
+      "url": "https://www.ad-magazin.de/artikel/smarte-ideen-betten-in-kleinen-schlafzimmern",
+      "snippet": "Mar 6, 2025 · So sparen Sie Platz und machen es sich trotzdem gemütlich – diese 13 platzsparenden Betten zeigen, wie Sie Ihr Bett …"
+    },
+    {
+      "title": "6 platzsparende Bettideen für kleine Zimmer! - Wohnen im Kleinformat",
+      "url": "https://wohnenimkleinformat.de/platzsparende-betten-fur-kleine-zimmer/",
+      "snippet": "Jan 6, 2025 · Auch in einer kleinen Wohnung richtig viel Freiheit schaffen? Das gelingt wie im Schlaf: Einfach auf platzsparende …"
+    },
+    {
+      "title": "Platzsparende Betten für kleine Zimmer: Ideen & Tipps",
+      "url": "https://fischer-schlafkomfort.de/platzsparende-betten-fuer-kleine-zimmer-ideen-tipps/",
+      "snippet": "Nov 20, 2025 · Platzsparende Betten für kleine Zimmer finden: Klapp-, Hoch- und Funktionsbetten für optimalen Raumgewinn. Jetzt …"
+    },
+    {
+      "title": "Platzsparende Betten - Kollektion 2026 - Stilbetten",
+      "url": "https://www.stilbetten.de/platzsparende-betten.html",
+      "snippet": "Platzsparende Betten gibt es als Erwachsenenversion und als Kinderbett. Auch ein Bett mit Bettkasten können Sie unter …"
+    }
+  ]
+}

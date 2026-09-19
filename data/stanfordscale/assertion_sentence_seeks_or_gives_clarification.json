@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "id": "StanfordSCALE/assertion_sentence_seeks_or_gives_clarification",
+  "slug": "stanfordscale-assertion_sentence_seeks_or_gives_clarification",
+  "author": "StanfordSCALE",
+  "url": "https://huggingface.co/StanfordSCALE/assertion_sentence_seeks_or_gives_clarification",
+  "created_at": "2026-09-18T20:49:00.000Z",
+  "updated_at": "2026-09-18T20:49:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "setfit",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "setfit",
+    "safetensors",
+    "mpnet",
+    "text-classification",
+    "education",
+    "classroom-discourse",
+    "edubehaviors",
+    "assertion",
+    "en",
+    "dataset:StanfordSCALE/assertions_llm_annotated_talkmoves",
+    "base_model:sentence-transformers/paraphrase-mpnet-base-v2",
+    "base_model:finetune:sentence-transformers/paraphrase-mpnet-base-v2",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109486464,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437974679,
+  "storage_human": "438 MB",
+  "base_model": "sentence-transformers/paraphrase-mpnet-base-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "F1 (positive class, test)",
+      "value": 0.5055
+    },
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "Precision (positive class, test)",
+      "value": 0.5797
+    },
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "Recall (positive class, test)",
+      "value": 0.4482
+    },
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "ROC-AUC (test)",
+      "value": 0.8275
+    }
+  ],
+  "sources": [
+    {
+      "title": "Qatar University - Sign in to your account",
+      "url": "https://cloud.qu.edu.qa/",
+      "snippet": "قم بتسجيل الدخول إلى حسابك في جامعة قطر للوصول إلى الخدمات الأكاديمية والإدارية المتاحة للطلبة وأعضاء هيئة التدريس."
+    },
+    {
+      "title": "Cloud Automation Testing Tools & Services for Web Apps 2025",
+      "url": "https://cloudqa.io/",
+      "snippet": "Experience powerful cloud application testing with CloudQA. Our platform enhances test coverage, saving time and effort for your QA …"
+    },
+    {
+      "title": "Qatar Cloud",
+      "url": "https://qatarcloud.qa/",
+      "snippet": "QatarCloud business focused on small and medium-sized businesses through complete suit of products that enable them to establish …"
+    },
+    {
+      "title": "Log In - CloudQA",
+      "url": "https://app.cloudqa.io/Account/Login",
+      "snippet": "Get ahead with instant test automation Create automated tests in minutes Run against multiple browsers Fast parallel testing CI/CD …"
+    },
+    {
+      "title": "سحابة قطر | خدمات حوسبة سحابية متقدمة للشركات والجهات الحكومية",
+      "url": "https://www.mcit.gov.qa/services/qatar-cloud",
+      "snippet": "سحابة قطر هي مجموعة شاملة من خدمات الحوسبة السحابية تضم Azure Qatar وGoogle Cloud، مصممة لتلبية احتياجات الشركات والجهات الحكومية في قطر. وقد تم تصميمها لتسريع …"
+    }
+  ]
+}

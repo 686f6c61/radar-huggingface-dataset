@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "senty-au/face_landmarks_detector-ONNX",
+  "slug": "senty-au-face_landmarks_detector-onnx",
+  "author": "senty-au",
+  "url": "https://huggingface.co/senty-au/face_landmarks_detector-ONNX",
+  "created_at": "2026-09-19T00:19:09.000Z",
+  "updated_at": "2026-09-19T00:19:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "keypoint-detection",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "onnxruntime",
+    "mediapipe",
+    "face-landmarks",
+    "face-mesh",
+    "iris",
+    "cpu",
+    "keypoint-detection",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4920995,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Metal Hammer",
+      "url": "https://www.metal-hammer.de/",
+      "snippet": "METAL HAMMER präsentiert: Die Apokalyptischen Reiter Am Ende des Jahres kommen Die Apokalyptischen Reiter auf …"
+    },
+    {
+      "title": "News Archive - Metal Hammer",
+      "url": "https://www.metal-hammer.de/news/",
+      "snippet": "METAL HAMMER präsentiert: Die Apokalyptischen Reiter Am Ende des Jahres kommen Die Apokalyptischen Reiter auf …"
+    },
+    {
+      "title": "Metal Hammer Shop - Offizielles Merchandise & Musik",
+      "url": "https://merch.metal-hammer.de/",
+      "snippet": "Entdecke unsere Auswahl an Merch-Artikeln – darunter T-Shirts, Hoodies, Accessoires und Vinyl deiner liebsten Bands. Maximum …"
+    },
+    {
+      "title": "Metal Hammer Shop - Official Merch & Music Releases",
+      "url": "https://merch.metal-hammer.de/en",
+      "snippet": "Discover an exclusive selection of merchandise - including t-shirts, hoodies, accessories and vinyl in our official store. Maximum …"
+    },
+    {
+      "title": "Digital-Abo - Abo/Shop - abo.metal-hammer.de",
+      "url": "https://abo.metal-hammer.de/produkt/digital-abo-2/",
+      "snippet": "METAL HAMMER im Digital-Abo genießen und jetzt den persönlichen Zugang zu DAS ARCHIV – Rewind sichern: das komplett …"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "therealbee/whisper-small-ha-lora-v2",
+  "slug": "therealbee-whisper-small-ha-lora-v2",
+  "author": "therealbee",
+  "url": "https://huggingface.co/therealbee/whisper-small-ha-lora-v2",
+  "created_at": "2026-09-18T22:31:28.000Z",
+  "updated_at": "2026-09-19T00:06:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:therealbee/whisper-small-ha-finetuned",
+    "lora",
+    "transformers",
+    "base_model:therealbee/whisper-small-ha-finetuned",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 213148273,
+  "storage_human": "213 MB",
+  "base_model": "therealbee/whisper-small-ha-finetuned",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "What are NFT Marketplace Aggregators and Their Benefits",
+      "url": "https://www.airnfts.com/post/what-you-need-to-know-about-nft-marketplace-aggregators-and-their-benefits",
+      "snippet": "Aug 29, 2022 · NFT aggregators offer several benefits to both NFT buyers and sellers. Let’s look at four of them: One unified …"
+    },
+    {
+      "title": "4 Best Cryptos to Invest In for Passive Income Through Staking and …",
+      "url": "https://www.analyticsinsight.net/cryptocurrency-analytics-insight/4-best-cryptos-to-invest-in-for-passive-income-through-staking-and-rewards",
+      "snippet": "Jun 19, 2025 · As decentralized finance grows in complexity, platforms must evolve to support cross-chain dApps, NFTs, tokenized …"
+    },
+    {
+      "title": "GitHub - ComposableFi/composable: Picasso Kusama and Composable ...",
+      "url": "https://github.com/ComposableFi/composable",
+      "snippet": "May 9, 2026 · Composable Finance is dedicated to building the infrastructure for trust-minimized interoperability and decentralised …"
+    },
+    {
+      "title": "The Next Generation of Cross-Chain Aggregators: Flashift vs Rango vs …",
+      "url": "https://flashift.app/blog/cross-chain-aggregators-2025/",
+      "snippet": "Dec 13, 2025 · Why cross-chain aggregators matter The Fragmentation Problem: Why bridging is still hard in 2026 Despite the rise of …"
+    },
+    {
+      "title": "List of 300 DeFi yield aggregators (2026) | Alchemy",
+      "url": "https://www.alchemy.com/dapps/best/defi-yield-aggregators",
+      "snippet": "List of DeFi yield aggregators Discover 300 DeFi yield aggregators across the most popular web3 ecosystems with Alchemy's Dapp …"
+    }
+  ]
+}

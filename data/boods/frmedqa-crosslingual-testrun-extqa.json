@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "boods/FrMedQA-CrossLingual-TestRun-ExtQA",
+  "slug": "boods-frmedqa-crosslingual-testrun-extqa",
+  "author": "boods",
+  "url": "https://huggingface.co/boods/FrMedQA-CrossLingual-TestRun-ExtQA",
+  "created_at": "2026-09-18T23:05:31.000Z",
+  "updated_at": "2026-09-18T23:06:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen3",
+    "trl",
+    "en",
+    "base_model:unsloth/Qwen3-14B-unsloth-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen3-14B-unsloth-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 525300788,
+  "storage_human": "525 MB",
+  "base_model": "unsloth/Qwen3-14B-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Avis d’utilisateurs : BandLab Cakewalk by BandLab - Audiofanzine",
+      "url": "https://fr.audiofanzine.com/sequenceur-generaliste/bandlab/cakewalk-by-bandlab/avis/",
+      "snippet": "Vraiment dommage, bandlab doit absolument faire progresser cela. Sinon, cakewalk by bandlab propose beaucoup d'effets dans son …"
+    },
+    {
+      "title": "Séquenceur généraliste BandLab Cakewalk by BandLab - Audiofanzine",
+      "url": "https://fr.audiofanzine.com/sequenceur-generaliste/bandlab/cakewalk-by-bandlab/",
+      "snippet": "Séquenceur généraliste BandLab Cakewalk by BandLab : 93 photos, 68 discussions dans les forums, 11 avis, 5 news, 5 vidéos, 2 …"
+    },
+    {
+      "title": "【BandLab】如何下载安装Cakewalk by BandLab-百度经验",
+      "url": "https://jingyan.baidu.com/article/e3c78d6401a1a87d4d85f539.html",
+      "snippet": "Mar 9, 2020 · 【BandLab】如何下载安装Cakewalk by BandLab,CakewalkyBadLa是一款专业的音乐制作软件，最重要的是，这款软 …"
+    },
+    {
+      "title": "2月更新后，cakewalk这款编曲软件怎么样？ - 知乎",
+      "url": "https://www.zhihu.com/question/516115347",
+      "snippet": "2个回答 默认排序 知乎用户 从17年的steam阉割版掉坑里，到后面的cake walk by bandlab一直都在用。 cakewalk上手不难，UI设计 …"
+    },
+    {
+      "title": "为什么我删除cakewalk之后想重新下载 但是bandlab上面 ...",
+      "url": "https://www.zhihu.com/question/392126323",
+      "snippet": "May 2, 2020 · 这里就跟这个有关系了 系统缓存 缓存是CPU的一部分，它存在于CPU中 CPU存取数据的速度非常的快，一秒钟能够存 …"
+    }
+  ]
+}

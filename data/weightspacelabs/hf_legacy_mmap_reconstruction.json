@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "weightspacelabs/hf_legacy_mmap_reconstruction",
+  "slug": "weightspacelabs-hf_legacy_mmap_reconstruction",
+  "author": "weightspacelabs",
+  "url": "https://huggingface.co/weightspacelabs/hf_legacy_mmap_reconstruction",
+  "created_at": "2026-09-18T20:54:59.000Z",
+  "updated_at": "2026-09-18T21:15:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "sane",
+  "languages": [],
+  "tags": [
+    "sane",
+    "weight-space-learning",
+    "wsl-bench",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2425266469,
+  "storage_human": "2.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Stage 2027 - Facteurs Humains et Ergonomie (f/h)",
+      "url": "https://www.glassdoor.fr/job-listing/stage-2027-facteurs-humains-et-ergonomie-fh-airbus-JV_IC3050528_KO0,43_KE44,50.htm?jl=1010267004821",
+      "snippet": "An internship opportunity titled \"Human Factors and Ergonomics in Design Internship (f/m): Impact of Abbreviations on Cockpit Text …"
+    },
+    {
+      "title": "Airbus",
+      "url": "http://airbus.com/",
+      "snippet": ""
+    },
+    {
+      "title": "Stage 2027 - Facteurs Humains et Ergonomie (f/h) - Toulouse Area",
+      "url": "https://educativ.net/jobs/job/6545947-stage-2027-facteurs-humains-et-ergonomie-fh-toulouse-area/",
+      "snippet": "21 hours ago · Votre mission, si vous l'acceptez : Une offre de stage intitulée « Stage en Facteurs Humains et ergonomie dans le …"
+    },
+    {
+      "title": "Careers - Airbus",
+      "url": "https://www.airbus.com/en/careers",
+      "snippet": "Get answers to frequently asked questions about job opportunities, the application process, and working at Airbus. At Airbus, our …"
+    },
+    {
+      "title": "Airbus - W@Y",
+      "url": "https://way.airbus.com/",
+      "snippet": "Secure Airbus platform for authorized users to access resources, tools, and information."
+    }
+  ]
+}

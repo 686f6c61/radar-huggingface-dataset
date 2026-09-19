@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "alst10/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+  "slug": "alst10-qwen3-8-27b-turbo-fable-cold-fusion-735-882-heretic-uncensored-nm-dau",
+  "author": "alst10",
+  "url": "https://huggingface.co/alst10/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+  "created_at": "2026-09-19T00:48:24.000Z",
+  "updated_at": "2026-09-19T00:49:07.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "rocm",
+    "rocmfpx",
+    "amd",
+    "llama.cpp",
+    "base_model:DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+    "base_model:quantized:DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+    "license:cc-by-4.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 14562235520,
+  "storage_human": "14.6 GB",
+  "base_model": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Crimson Education hiring Operations Support Officer Job in India ...",
+      "url": "https://www.glassdoor.co.in/job-listing/operations-support-officer-crimson-education-JV_KO0,26_KE27,44.htm?jl=1010262015927",
+      "snippet": "Career progression opportunities within Crimson Education. Position Summary The Operations Support Officer supports the sales, …"
+    },
+    {
+      "title": "Student Support and Operations Executive - Glassdoor",
+      "url": "https://www.glassdoor.co.in/job-listing/student-support-and-operations-executive-learnurture-JV_KO0,40_KE41,52.htm?jl=1010264730847",
+      "snippet": "Prior experience in EdTech, education counselling, student support, customer service, or operations is preferred. Fresh graduates …"
+    },
+    {
+      "title": "Operations Support Officer - Crimson Education | Wardha District ...",
+      "url": "https://www.simplyhired.co.in/job/XNxPptP0L2FWggMt3g9UBt9TLzUhaewVX_S9aJTgRiJVHxE5gLVn6A",
+      "snippet": "Career progression opportunities within Crimson Education. Position Summary The Operations Support Officer supports the sales, …"
+    },
+    {
+      "title": "Oxford International Education Group hiring Client Support Officer in ...",
+      "url": "https://in.linkedin.com/jobs/view/client-support-officer-at-oxford-international-education-group-4456353402",
+      "snippet": "The role ensures timely communication with students, agents, and regional teams, conducts student interviews where required, and …"
+    },
+    {
+      "title": "Student Support Officer Jobs - 8 Student Support Officer Job …",
+      "url": "https://www.naukri.com/student-support-officer-jobs",
+      "snippet": "6 Student Support Officer Jobs Available On Naukri.com. Explore Student Support Officer Job Vacancies In Your Desired Locations …"
+    }
+  ]
+}

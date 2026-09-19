@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "MangoMikePower/Qwen3.8-27B-abliterated-AWQ-INT4-Q4_K_M-GGUF",
+  "slug": "mangomikepower-qwen3-8-27b-abliterated-awq-int4-q4_k_m-gguf",
+  "author": "MangoMikePower",
+  "url": "https://huggingface.co/MangoMikePower/Qwen3.8-27B-abliterated-AWQ-INT4-Q4_K_M-GGUF",
+  "created_at": "2026-09-18T21:00:44.000Z",
+  "updated_at": "2026-09-18T21:01:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh",
+    "th"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen3_5",
+    "awq",
+    "gptq",
+    "compressed-tensors",
+    "w4a16",
+    "int4",
+    "quantized",
+    "abliterated",
+    "uncensored",
+    "conversational",
+    "vllm",
+    "llama-cpp",
+    "gguf-my-repo",
+    "text-generation",
+    "en",
+    "zh",
+    "th",
+    "base_model:hotdogs/Qwen3.8-27B-abliterated-AWQ-INT4",
+    "base_model:quantized:hotdogs/Qwen3.8-27B-abliterated-AWQ-INT4",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 16547391680,
+  "storage_human": "16.5 GB",
+  "base_model": "hotdogs/Qwen3.8-27B-abliterated-AWQ-INT4",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bejelentkezés a Gmail szolgáltatásba",
+      "url": "https://support.google.com/mail/answer/8494?hl=hu-hu&co=GENIE.Platform%3DDesktop",
+      "snippet": "Bejelentkezés a Gmail szolgáltatásba A Gmail megnyitásához jelentkezzen be számítógépen, vagy adja hozzá fiókját a telefonján …"
+    },
+    {
+      "title": "Sign in to Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "To open Gmail, you can sign in from a computer or add your account to the Gmail app on your phone or tablet. Once you're signed …"
+    },
+    {
+      "title": "Google-fiók létrehozása a Gmailhez - Gmail Súgó",
+      "url": "https://support.google.com/mail/answer/56256?hl=hu",
+      "snippet": "Bejelentést tehet az Internet Crime Complaint Center oldalán. Felveheti a kapcsolatot az országában működő fogyasztóvédelmi …"
+    },
+    {
+      "title": "Létező fiók megkeresése - Google-fiók Súgó",
+      "url": "https://support.google.com/accounts/answer/40560?hl=hu",
+      "snippet": "Már regisztrált Google-fiókot: Ha segítségre van szüksége, kövesse a fenti, fiók-helyreállításra vonatkozó utasításokat. Google …"
+    },
+    {
+      "title": "Gyakori problémák elhárítása a kétlépcsős azonosítással ...",
+      "url": "https://support.google.com/accounts/answer/185834?hl=hu",
+      "snippet": "Ha a megszokottakhoz képest valami furcsát veszünk észre a bejelentkezés során (pl. a tartózkodási helyét), akkor előfordulhat, …"
+    }
+  ]
+}

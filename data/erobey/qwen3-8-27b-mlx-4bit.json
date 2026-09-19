@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "erobey/Qwen3.8-27B-mlx-4bit",
+  "slug": "erobey-qwen3-8-27b-mlx-4bit",
+  "author": "erobey",
+  "url": "https://huggingface.co/erobey/Qwen3.8-27B-mlx-4bit",
+  "created_at": "2026-09-19T02:19:49.000Z",
+  "updated_at": "2026-09-19T02:39:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": 26895993856,
+  "parameters_human": "26.90B",
+  "storage_bytes": 15153032856,
+  "storage_human": "15.2 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CBSE Class 5 All Subjects Syllabus 2026-27 | Free PDF - Vedantu",
+      "url": "https://www.vedantu.com/syllabus/cbse-class-5-syllabus",
+      "snippet": "Download the Class 5 Syllabus PDF for the CBSE 2026-27 academic year. Explore the updated curriculum, chapter-wise topics, and …"
+    },
+    {
+      "title": "Kanal 5 – Dagens tv-tablå | Tv-Tabla.se",
+      "url": "https://tv-tabla.se/tabla/kanal_5/",
+      "snippet": "Kanal 5 idag – se dagens TV-tablå med program och starttider. Här hittar du serier, reality, film, underhållning och sport."
+    },
+    {
+      "title": "Formelblad matematik 5 - Formelsamlingen",
+      "url": "https://www.formelsamlingen.se/media/2019302/formelblad_matematik_5.pdf",
+      "snippet": "Kedjeregeln Om y f (z) och z g(x) är två deriverbara funktioner så gäller för y f (g(x)) att y f (g(x)) g (x) eller"
+    },
+    {
+      "title": "小学5年生 漢字テスト（新学習指導要領対応）｜ちびむすドリル【小 …",
+      "url": "https://happylilac.net/sy-k5test.html",
+      "snippet": "小5で習う漢字193字を 送りがなもふくめて正しく書けるか確かめることができます。"
+    },
+    {
+      "title": "Channel 95.5 - iHeart",
+      "url": "https://www.iheart.com/live/channel-955-1145/",
+      "snippet": "Detroit's #1 Hit Music Station When the show ends, the real talk starts. Members of the show share their uncensored thoughts, …"
+    }
+  ]
+}

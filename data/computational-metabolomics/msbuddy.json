@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "computational-metabolomics/msbuddy",
+  "slug": "computational-metabolomics-msbuddy",
+  "author": "computational-metabolomics",
+  "url": "https://huggingface.co/computational-metabolomics/msbuddy",
+  "created_at": "2026-09-19T00:19:22.000Z",
+  "updated_at": "2026-09-19T00:19:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "joblib",
+    "galaxy",
+    "galaxy-data-manager",
+    "metabolomics",
+    "metabolite",
+    "metabolite-annotation",
+    "metabolite-identification",
+    "mass-spectrometry",
+    "tandem-mass-spectrometry",
+    "chemistry",
+    "cheminformatics",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 863258526,
+  "storage_human": "863 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Connexion ou inscription – Dropbox",
+      "url": "https://www.dropbox.com/fr/login",
+      "snippet": "Connectez-vous à Dropbox. Emportez vos documents, vos photos et vos vidéos partout où vous allez, et conservez vos fichiers à l’abri."
+    },
+    {
+      "title": "Dropbox: Secure cloud storage, file sharing, and more",
+      "url": "https://www.dropbox.com/",
+      "snippet": "Send videos exactly as you captured them—no compression, no hassle. With Dropbox, you can share large files securely and keep …"
+    },
+    {
+      "title": "Dropbox",
+      "url": "https://marketing.dropbox.com/login",
+      "snippet": "Securely access and collaborate on your Dropbox account with ease. Log in to manage your files, share content, and stay organized."
+    },
+    {
+      "title": "Dropbox — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Dropbox",
+      "snippet": "Dropbox est un site d'hébergement de fichiers américain proposant comme service le stockage (pour sauvegarde par exemple), le …"
+    },
+    {
+      "title": "Télécharger et installer l’application de bureau Dropbox - Aide de Dropbox",
+      "url": "https://help.dropbox.com/fr-fr/installs/download-dropbox",
+      "snippet": "Mar 6, 2025 · L’application de bureau Dropbox est disponible sur les systèmes d’exploitation Windows, macOS et Linux. Découvrez …"
+    }
+  ]
+}

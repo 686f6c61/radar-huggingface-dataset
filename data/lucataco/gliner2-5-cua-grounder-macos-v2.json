@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "lucataco/gliner2.5-cua-grounder-macos-v2",
+  "slug": "lucataco-gliner2-5-cua-grounder-macos-v2",
+  "author": "lucataco",
+  "url": "https://huggingface.co/lucataco/gliner2.5-cua-grounder-macos-v2",
+  "created_at": "2026-09-19T01:31:39.000Z",
+  "updated_at": "2026-09-19T01:31:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "gliner2",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gliner2",
+    "safetensors",
+    "extractor",
+    "gliner2.5",
+    "computer-use",
+    "gui-grounding",
+    "macos",
+    "bounded-choice",
+    "mps",
+    "merged",
+    "gated",
+    "text-classification",
+    "en",
+    "arxiv:2507.18546",
+    "base_model:fastino/gliner2.5-multi-v1",
+    "base_model:finetune:fastino/gliner2.5-multi-v1",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": 287355159,
+  "parameters_human": "287.4M",
+  "storage_bytes": 1165481633,
+  "storage_human": "1.2 GB",
+  "base_model": "fastino/gliner2.5-multi-v1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Bounded-action grounding",
+      "dataset": "Owned synthetic CUA grounding v2 (256 test requests; disjoint vocab/templates)",
+      "metric": "Accepted-action accuracy",
+      "value": 0.7695
+    }
+  ],
+  "sources": [
+    {
+      "title": "Top 15 Florenz Sehenswürdigkeiten inkl. Karte & Touren",
+      "url": "https://www.urlaubsguru.de/reisemagazin/sehenswuerdigkeiten-florenz/",
+      "snippet": "Die Top 15 Florenz Sehenswürdigkeiten sind perfekt für alle, die es lieben, durch Kunstgalerien zu schlendern, sich eindrucksvolle …"
+    },
+    {
+      "title": "25x Florenz Sehenswürdigkeiten & Aktivitäten (Firenze)",
+      "url": "https://florenztipps.de/sehenswurdigkeiten.html",
+      "snippet": "Florenz Sehenswürdigkeiten Top 25, eine Übersicht über die schönsten Attraktionen, Aktivitäten, sehenswerte Monumente, Must …"
+    },
+    {
+      "title": "Florenz Sehenswürdigkeiten 22 schöne Highlights - 22places",
+      "url": "https://www.22places.de/florenz-sehenswuerdigkeiten/",
+      "snippet": "Jun 16, 2026 · Kurz und knackig Florenz ist so voll mit Sehenswürdigkeiten, dass es überwältigend wirken kann. Wir nehmen dich an …"
+    },
+    {
+      "title": "Sehenswürdigkeiten in Florenz: Die besten Tipps - ADAC",
+      "url": "https://www.adac.de/reise-freizeit/reiseplanung/inspirationen/europa/florenz-sehenswuerdigkeiten/",
+      "snippet": "Mar 12, 2026 · Uffizien, Vasari-Korridor, Palazzo Vecchio: Jetzt die wichtigsten Sehenswürdigkeiten in Florenz entdecken – mit …"
+    },
+    {
+      "title": "Die 10 schönsten Florenz Sehenswürdigkeiten & super Insidertipps",
+      "url": "https://goodmorningworld.de/florenz-sehenswuerdigkeiten/",
+      "snippet": "Welche 10 Florenz Sehenswürdigkeiten du unbedingt besuchen solltest, plus viele Insidertipps für Restaurants & Aktivitäten, liest du …"
+    }
+  ]
+}

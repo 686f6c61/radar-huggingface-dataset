@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "flyingfishinwater/diar_streaming_sortformer_4spk-v2.1-fp16",
+  "slug": "flyingfishinwater-diar_streaming_sortformer_4spk-v2-1-fp16",
+  "author": "flyingfishinwater",
+  "url": "https://huggingface.co/flyingfishinwater/diar_streaming_sortformer_4spk-v2.1-fp16",
+  "created_at": "2026-09-18T21:19:51.000Z",
+  "updated_at": "2026-09-18T21:20:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "voice-activity-detection",
+  "library": "mlx-audio",
+  "languages": [],
+  "tags": [
+    "mlx-audio",
+    "safetensors",
+    "sortformer",
+    "mlx",
+    "speaker-diarization",
+    "speech",
+    "voice-activity-detection",
+    "streaming",
+    "vad",
+    "base_model:nvidia/diar_streaming_sortformer_4spk-v2.1",
+    "base_model:finetune:nvidia/diar_streaming_sortformer_4spk-v2.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 117999368,
+  "parameters_human": "118.0M",
+  "storage_bytes": 236108132,
+  "storage_human": "236 MB",
+  "base_model": "nvidia/diar_streaming_sortformer_4spk-v2.1",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-19T02:24:33.642Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Allrecipes | Recipes, How-Tos, Videos and More",
+      "url": "https://www.allrecipes.com/",
+      "snippet": "Everyday recipes with ratings and reviews by home cooks like you. Find easy dinner ideas, healthy recipes, plus helpful cooking tips …"
+    },
+    {
+      "title": "Recipes, Dinners and Easy Meal Ideas | Food Network",
+      "url": "https://www.foodnetwork.com/recipes",
+      "snippet": "Need a recipe? Get dinner on the table with Food Network's best recipes, videos, cooking tips and meal ideas from top chefs, shows …"
+    },
+    {
+      "title": "Recipes",
+      "url": "https://www.allrecipes.com/recipes/",
+      "snippet": "Find and share everyday cooking inspiration on Allrecipes. Discover recipes, cooks, videos, and how-tos based on the food you love …"
+    },
+    {
+      "title": "Recipes Archives",
+      "url": "https://www.tasteofhome.com/recipes/",
+      "snippet": "Explore our thousands of tested recipes to find the best recipe for dinner, breakfast, lunch, game day, snacks, cooking for two—you …"
+    },
+    {
+      "title": "MyRecipes | Save and Organize the World’s Best Recipes",
+      "url": "https://www.myrecipes.com/",
+      "snippet": "Easily find, save, and organize the world’s best recipes with MyRecipes. Use top food sites like Food & Wine and EatingWell to …"
+    }
+  ]
+}

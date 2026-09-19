@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "joshycodes/sorrel-T2-qwen3.8-27b-sorrel-sdf-seed0",
+  "slug": "joshycodes-sorrel-t2-qwen3-8-27b-sorrel-sdf-seed0",
+  "author": "joshycodes",
+  "url": "https://huggingface.co/joshycodes/sorrel-T2-qwen3.8-27b-sorrel-sdf-seed0",
+  "created_at": "2026-09-19T00:12:35.000Z",
+  "updated_at": "2026-09-19T00:16:58.000Z",
+  "license": "research-only",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "research",
+    "continued-pretraining",
+    "self-authored-character",
+    "not-safety-tuned",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 107604220351,
+  "storage_human": "107.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "adidas F50 Hyperfast Review: Elite, Pro or League? (2026) - Football Boots",
+      "url": "https://www.footballboots.co.uk/review-f50.html",
+      "snippet": "3 days ago · Our adidas F50 Hyperfast review covers fit, feel and performance, plus whether the Elite, Pro or League is the best F50 …"
+    },
+    {
+      "title": "Top 10 Best adidas Football Boots 2026 - Unisport",
+      "url": "https://www.unisportstore.com/guides/top-10-best-adidas-football-boots-2026/",
+      "snippet": "Discover JayMike's top 10 best adidas football boots 2026. Compare the F50, Predator and Copa to find the perfect boot for your game."
+    },
+    {
+      "title": "adidas Football Boots: Predator, F50, Copa Pure and Copa Mundial …",
+      "url": "https://www.footballboots.co.uk/adidas.html",
+      "snippet": "3 days ago · Compare adidas Predator, F50 Hyperfast, Copa Pure and Copa Mundial across Elite, Pro, League and Club, with full …"
+    },
+    {
+      "title": "Ranking the 10 BEST adidas boots in 2025 – TopSoccerWorld.com",
+      "url": "https://topsoccerworld.com/ranking-the-10-best-adidas-boots-in-2025/",
+      "snippet": "2 days ago · The article ranks various Adidas football boots for 2025, including classic designs like the Copa Mundial, modern …"
+    },
+    {
+      "title": "Ranking the 10 BEST adidas boots in 2025 - YouTube",
+      "url": "https://www.youtube.com/watch?v=rpqXJvdKRDs",
+      "snippet": "Jul 4, 2025 · In today's video, JayMike ranks the 10 best adidas football boots on the market in the summer 2025, looking at …"
+    }
+  ]
+}

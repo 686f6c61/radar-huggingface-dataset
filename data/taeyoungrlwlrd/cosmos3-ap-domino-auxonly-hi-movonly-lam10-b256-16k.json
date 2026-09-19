@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "taeyoungrlwlrd/cosmos3-ap-domino-auxonly-hi-movonly-lam10-b256-16k",
+  "slug": "taeyoungrlwlrd-cosmos3-ap-domino-auxonly-hi-movonly-lam10-b256-16k",
+  "author": "taeyoungrlwlrd",
+  "url": "https://huggingface.co/taeyoungrlwlrd/cosmos3-ap-domino-auxonly-hi-movonly-lam10-b256-16k",
+  "created_at": "2026-09-19T01:03:35.000Z",
+  "updated_at": "2026-09-19T01:45:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 91053028451,
+  "storage_human": "91.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Suppression publicités intempestives sur laposte.net",
+      "url": "https://forums.commentcamarche.net/forum/affich-28162008-suppression-publicites-intempestives-sur-laposte-net",
+      "snippet": "bonjour, pour supprimer toutes ces publicités intempestives sur la messagerie laposte.net, j'ai utlisé adwcleaner, modifier les …"
+    },
+    {
+      "title": "Un compte mail se supprime au bout d'un certain temps, ou pas",
+      "url": "https://forums.commentcamarche.net/forum/affich-33759629-un-compte-mail-se-supprime-au-bout-d-un-certain-temps-ou-pas",
+      "snippet": "Jul 28, 2016 · Bonjour, j'aimerais savoir une chose car je suis perplexe : Comment ça se fait que certains forums disent qu'un compte …"
+    },
+    {
+      "title": "Comment récupérer un mail laposte.net supprimé dans la corbeille",
+      "url": "https://forums.commentcamarche.net/forum/affich-35670397-comment-recuperer-un-mail-laposte-net-supprime-dans-la-corbeille",
+      "snippet": "Nov 1, 2018 · Bonjour, Je voudrais récupérer un mail laposte.net supprimé dans la corbeille. Merci pour votre réponse."
+    },
+    {
+      "title": "Recherche dans messagerie laposte.net - Laposte",
+      "url": "https://forums.commentcamarche.net/forum/affich-36709465-recherche-dans-messagerie-laposte-net",
+      "snippet": "Bonjour, Depuis quelques jours la recherche (loupe) dans la messagerie ne fonctionne plus. Je saisis plus de 3 caractères mais …"
+    },
+    {
+      "title": "Laposte.net - problème envoi message - Forum Laposte",
+      "url": "https://forums.commentcamarche.net/forum/affich-35351780-laposte-net-probleme-envoi-message",
+      "snippet": "May 7, 2018 · Bonsoir, Rencontré moi ce problème d'expédition de mails de ma boîte laposte.net (jeudi 24). Je recevais aussitôt le …"
+    }
+  ]
+}

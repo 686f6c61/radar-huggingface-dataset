@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "com-kotobalabs/Deepseek-v4.1-Flash-Uncensored-EXL3-2.0bpw",
+  "slug": "com-kotobalabs-deepseek-v4-1-flash-uncensored-exl3-2-0bpw",
+  "author": "com-kotobalabs",
+  "url": "https://huggingface.co/com-kotobalabs/Deepseek-v4.1-Flash-Uncensored-EXL3-2.0bpw",
+  "created_at": "2026-09-19T02:12:27.000Z",
+  "updated_at": "2026-09-19T02:27:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v41",
+    "text-generation",
+    "deepseek",
+    "deepseek-v4.1",
+    "abliterated",
+    "uncensored",
+    "crack",
+    "multimodal",
+    "moe",
+    "fp8",
+    "image-text-to-text",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4.1-Flash",
+    "license:mit",
+    "endpoints_compatible",
+    "2-bit",
+    "exl3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 281118567634,
+  "parameters_human": "281.12B",
+  "storage_bytes": 358121648700,
+  "storage_human": "358.1 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.com/",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": ".com - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/.com",
+      "snippet": "The domain com is a top-level domain (TLD) in the Domain Name System (DNS) of the Internet. Created in the first group of Internet …"
+    },
+    {
+      "title": ".com — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/.com",
+      "snippet": "Domaine de premier niveau (TLD) du système de noms de domaines Internet, le nom de domaine .com correspond à l’abréviation de …"
+    },
+    {
+      "title": "COM’COM, expertise comptable Culture & Média",
+      "url": "https://comcom.fr/",
+      "snippet": "L’expert comptable au service des métiers de la création et de la communication, Com’Com est le département Culture & Média du …"
+    },
+    {
+      "title": ".co vs .com | What's the Difference and Which One is Best?",
+      "url": "https://www.youtube.com/watch?v=m_vhD9dFBLQ",
+      "snippet": "Jan 7, 2022 · When looking to register a domain name you'll notice that most .com extensions are taken. It can frustrating which is …"
+    }
+  ]
+}

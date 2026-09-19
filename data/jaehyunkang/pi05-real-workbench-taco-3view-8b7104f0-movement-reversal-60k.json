@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "jaehyunkang/pi05-real-workbench-taco-3view-8b7104f0-movement-reversal-60k",
+  "slug": "jaehyunkang-pi05-real-workbench-taco-3view-8b7104f0-movement-reversal-60k",
+  "author": "jaehyunkang",
+  "url": "https://huggingface.co/jaehyunkang/pi05-real-workbench-taco-3view-8b7104f0-movement-reversal-60k",
+  "created_at": "2026-09-18T20:50:50.000Z",
+  "updated_at": "2026-09-18T20:51:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "real-workbench",
+    "dataset:Myungkyu/real_workbench-taco-keyframe-gemini",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 9354061560,
+  "storage_human": "9.4 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sydney, Australia | Official Sydney Tourism Website",
+      "url": "https://www.sydney.com/",
+      "snippet": "Enjoy the best of Sydney! Discover places to visit, fun things to do this weekend, best restaurants & more on the official Sydney …"
+    },
+    {
+      "title": "Sydney - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Sydney",
+      "snippet": "The city has over 1,000,000 hectares (2,500,000 acres) of nature reserves and parks, [28] and its notable natural features include …"
+    },
+    {
+      "title": "Top things to do in Sydney - Top attractions, events & more | Sydney…",
+      "url": "https://www.sydney.com/things-to-do",
+      "snippet": "Find out the best things to do in Sydney today with the official tourism site! Discover upcoming events, activities and sightseeing …"
+    },
+    {
+      "title": "One of Australia’s top universities - The University of Sydney",
+      "url": "https://www.sydney.edu.au/",
+      "snippet": "The University of Sydney: study at one of the world's best universities, leading the way in addressing environmental, social, and …"
+    },
+    {
+      "title": "Sydney | History, Population, Climate, & Facts | Britannica",
+      "url": "https://www.britannica.com/place/Sydney-New-South-Wales",
+      "snippet": "4 days ago · Sydney, city, capital of the state of New South Wales, Australia. Located on Australia’s southeastern coast, Sydney is …"
+    }
+  ]
+}

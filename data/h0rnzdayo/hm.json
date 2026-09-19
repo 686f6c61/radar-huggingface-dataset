@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "h0rnzdayo/hm",
+  "slug": "h0rnzdayo-hm",
+  "author": "h0rnzdayo",
+  "url": "https://huggingface.co/h0rnzdayo/hm",
+  "created_at": "2026-09-19T00:24:13.000Z",
+  "updated_at": "2026-09-19T00:24:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Shohruxxon - Vikipediya",
+      "url": "https://uz.wikipedia.org/wiki/Shohruxxon",
+      "snippet": "Hayoti Shohrux Yuldashev Alisherovich 1985-yil 29-mayda Toshkentda tugʻilgan [2]. Shohruxxon bolaligidan Ozodbek …"
+    },
+    {
+      "title": "Shohruhxon - YouTube",
+      "url": "https://www.youtube.com/ShohruhxonYuldashev",
+      "snippet": "Welcome! You are on the official YouTube channel of one of Uzbekistan’s most beloved pop artists — Shohruhxon.Here you’ll find:🎵 …"
+    },
+    {
+      "title": "Shohruh Xon Ishtirok etgan filmlar 1988-2019 - YouTube",
+      "url": "https://www.youtube.com/watch?v=klOdPAd16ao",
+      "snippet": "Sep 22, 2021 · Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on …"
+    },
+    {
+      "title": "Shohruhxon - Kino | Шохруххон - Кино - YouTube",
+      "url": "https://www.youtube.com/watch?v=dOzIZABT0ek",
+      "snippet": "RizaNova ilovasini yuklab oling @ https://rizanova.uz/apps Obuna bo'ling @ https://www.youtube.com/RizaNovaUZ RizaNova @ …"
+    },
+    {
+      "title": "Shohruhxon - RizaNova",
+      "url": "https://rizanova.uz/person/812",
+      "snippet": "Faqat eng yangi o‘zbek filmlari, kliplari, seriallari, konsertlari va hajviyalarini yuqori sifatda tomosha qiling. Shuningdek, RizaNova …"
+    }
+  ]
+}

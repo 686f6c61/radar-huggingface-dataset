@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Ahsanz/virl39k-qwen3vl-4b-arms",
+  "slug": "ahsanz-virl39k-qwen3vl-4b-arms",
+  "author": "Ahsanz",
+  "url": "https://huggingface.co/Ahsanz/virl39k-qwen3vl-4b-arms",
+  "created_at": "2026-09-18T20:06:07.000Z",
+  "updated_at": "2026-09-18T22:23:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "rlhf",
+    "grpo",
+    "vppo",
+    "prpo",
+    "intuitor",
+    "multimodal",
+    "research",
+    "base_model:Qwen/Qwen3-VL-4B-Instruct",
+    "base_model:finetune:Qwen/Qwen3-VL-4B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 38625949878,
+  "storage_human": "38.6 GB",
+  "base_model": "Qwen/Qwen3-VL-4B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "วิธีสร้างรายได้จาก YouTube",
+      "url": "https://support.google.com/youtube/answer/72857?hl=th",
+      "snippet": "ตั้งแต่วันที่ 1 กุมภาพันธ์ 2027 เป็นต้นไป เราจะเปิดตัวข้อมูลอัปเดตเกี่ยวกับโปรแกรมพาร์ทเนอร์ YouTube (YPP) …"
+    },
+    {
+      "title": "如何在中国大陆用「合法」的方式观看到youtube上面的「有价值」的 …",
+      "url": "https://www.zhihu.com/question/1903231775980913051",
+      "snippet": "YouTube 将自动为 添加翻译后的中文字幕，这一功能有效解决了语言障碍问题。 当你向下浏览时，部分 会标注相关信息。 例如，博 …"
+    },
+    {
+      "title": "Create a YouTube live stream with an encoder - Google Help",
+      "url": "https://support.google.com/youtube/answer/2907883?hl=en",
+      "snippet": "Learn how to set up a YouTube live stream using an encoder. Using an encoder, you can broadcast your gameplay, use external …"
+    },
+    {
+      "title": "YouTube公司 - 知乎",
+      "url": "https://www.zhihu.com/topic/19550532",
+      "snippet": "YouTube，全球最大的视频分享网站，早期公司总部位于加利福尼亚州的圣布里诺。公司由华裔美籍华人陈士骏等人创立并于2005年2 …"
+    },
+    {
+      "title": "Mettre en ligne des vidéos YouTube",
+      "url": "https://support.google.com/youtube/answer/57407?hl=fr&co=GENIE.Platform=Android",
+      "snippet": "Mettre en ligne des vidéos YouTube Vous pouvez mettre en ligne des vidéos sur YouTube en seulement quelques étapes. Suivez les …"
+    }
+  ]
+}

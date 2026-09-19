@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "fynnsu/qwen38-27b-dspark-regenerated-lr1e3",
+  "slug": "fynnsu-qwen38-27b-dspark-regenerated-lr1e3",
+  "author": "fynnsu",
+  "url": "https://huggingface.co/fynnsu/qwen38-27b-dspark-regenerated-lr1e3",
+  "created_at": "2026-09-19T01:24:55.000Z",
+  "updated_at": "2026-09-19T01:34:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 1909788417,
+  "parameters_human": "1.91B",
+  "storage_bytes": 3819583482,
+  "storage_human": "3.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TikTok - Make Your Day",
+      "url": "https://www.tiktok.com/pt-BR",
+      "snippet": "TikTok - as tendências começam aqui. Em um dispositivo ou na web, os espectadores podem assistir e descobrir milhões de vídeos …"
+    },
+    {
+      "title": "TikTok - Make Your Day",
+      "url": "https://www.tiktok.com/en/",
+      "snippet": "TikTok - trends start here. On a device or on the web, viewers can watch and discover millions of personalized short videos. …"
+    },
+    {
+      "title": "Se connecter | TikTok",
+      "url": "https://livecenter.tiktok.com/?lang=fr",
+      "snippet": "Connecte-toi à TikTok Utiliser un code QR Utiliser le téléphone/l'e-mail/le nom d'utilisateur Continuer avec Facebook"
+    },
+    {
+      "title": "Iniciar sesión | TikTok",
+      "url": "https://livecenter.tiktok.com/?lang=es",
+      "snippet": "Inicia sesión en TikTok Usar código QR Usar teléfono, correo o nombre de usuario Continuar con Facebook"
+    },
+    {
+      "title": "TikTok Shop Seller Log In | Philippines",
+      "url": "https://seller-ph.tiktok.com/?msockid=327d7c0c360f688b131f6bd537d66936",
+      "snippet": "Sell on TikTok Shop Philippines to increase your sales. Join our campaigns & reach millions of Filipino buyers nationwide. Sign-up for …"
+    }
+  ]
+}

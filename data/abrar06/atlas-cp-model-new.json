@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "abrar06/atlas-cp-model-new",
+  "slug": "abrar06-atlas-cp-model-new",
+  "author": "abrar06",
+  "url": "https://huggingface.co/abrar06/atlas-cp-model-new",
+  "created_at": "2026-09-19T00:02:29.000Z",
+  "updated_at": "2026-09-21T17:13:56.000Z",
+  "license": "odyssey-ai",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 613745668,
+  "parameters_human": "613.7M",
+  "storage_bytes": 3811155560,
+  "storage_human": "3.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Shohruxxon - Vikipediya",
+      "url": "https://uz.wikipedia.org/wiki/Shohruxxon",
+      "snippet": "Hayoti Shohrux Yuldashev Alisherovich 1985-yil 29-mayda Toshkentda tugʻilgan [2]. Shohruxxon bolaligidan Ozodbek …"
+    },
+    {
+      "title": "Shohruh Xon Ishtirok etgan filmlar 1988-2019 - YouTube",
+      "url": "https://www.youtube.com/watch?v=klOdPAd16ao",
+      "snippet": "Sep 22, 2021 · Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on …"
+    },
+    {
+      "title": "Shohruhxon - YouTube",
+      "url": "https://www.youtube.com/ShohruhxonYuldashev",
+      "snippet": "Welcome! You are on the official YouTube channel of one of Uzbekistan’s most beloved pop artists — Shohruhxon.Here you’ll find:🎵 …"
+    },
+    {
+      "title": "Shohruhxon - Kino | Шохруххон - Кино - YouTube",
+      "url": "https://www.youtube.com/watch?v=dOzIZABT0ek",
+      "snippet": "RizaNova ilovasini yuklab oling @ https://rizanova.uz/apps Obuna bo'ling @ https://www.youtube.com/RizaNovaUZ RizaNova @ …"
+    },
+    {
+      "title": "Shohruhxon - RizaNova",
+      "url": "https://rizanova.uz/person/812",
+      "snippet": "Faqat eng yangi o‘zbek filmlari, kliplari, seriallari, konsertlari va hajviyalarini yuqori sifatda tomosha qiling. Shuningdek, RizaNova …"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "AwareLiquid/M1-TinyLlama-Adapter",
+  "slug": "awareliquid-m1-tinyllama-adapter",
+  "author": "AwareLiquid",
+  "url": "https://huggingface.co/AwareLiquid/M1-TinyLlama-Adapter",
+  "created_at": "2026-09-19T01:43:20.000Z",
+  "updated_at": "2026-09-19T14:36:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "mt-lnn",
+    "liquid-neural-network",
+    "adapter",
+    "memory",
+    "cross-window-recall",
+    "awareliquid",
+    "text-generation",
+    "base_model:TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+    "base_model:finetune:TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25955650,
+  "storage_human": "26 MB",
+  "base_model": "TinyLlama/TinyLlama-1.1B-Chat-v1.0",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Model Downloads - AwareLiquid",
+      "url": "https://awareliquid.ai/models",
+      "snippet": "Download AwareLiquid model weights — M1-128M hybrid, M1 TinyLlama adapter, O1-48M edge. Open weights on GitHub Releases."
+    },
+    {
+      "title": "AwareLiquid — Edge Brain-Like Models | Lightweight · Constant ...",
+      "url": "https://awareliquid.ai/",
+      "snippet": "M1 (large, cognitive) runs trained liquid-core residual adapters on a frozen TinyLlama-1.1B-Chat base — a general assistant. M1-128M is the native 128M hybrid ..."
+    },
+    {
+      "title": "Research · AwareLiquid — MT-LNN Experiments & Results",
+      "url": "https://awareliquid.ai/research",
+      "snippet": "The demo offers two distinct models. M1 (the large, cognitive model) wraps a frozen TinyLlama-1.1B-Chat base with a trained residual liquid-core adapter ..."
+    },
+    {
+      "title": "About · AwareLiquid — Open Research on Continual Learning",
+      "url": "https://awareliquid.ai/about",
+      "snippet": "The live demo has two distinct models: M1 (the large, cognitive model — a liquid-core adapter, a fraction of a percent of the weights) on a frozen TinyLlama ..."
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "id": "StanfordSCALE/assertion_sentence_has_apology",
+  "slug": "stanfordscale-assertion_sentence_has_apology",
+  "author": "StanfordSCALE",
+  "url": "https://huggingface.co/StanfordSCALE/assertion_sentence_has_apology",
+  "created_at": "2026-09-18T20:48:22.000Z",
+  "updated_at": "2026-09-18T20:48:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "setfit",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "setfit",
+    "safetensors",
+    "mpnet",
+    "text-classification",
+    "education",
+    "classroom-discourse",
+    "edubehaviors",
+    "assertion",
+    "en",
+    "dataset:StanfordSCALE/assertions_llm_annotated_talkmoves",
+    "base_model:sentence-transformers/paraphrase-mpnet-base-v2",
+    "base_model:finetune:sentence-transformers/paraphrase-mpnet-base-v2",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109486464,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437974679,
+  "storage_human": "438 MB",
+  "base_model": "sentence-transformers/paraphrase-mpnet-base-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "F1 (positive class, test)",
+      "value": 0.8
+    },
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "Precision (positive class, test)",
+      "value": 1
+    },
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "Recall (positive class, test)",
+      "value": 0.6667
+    },
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "ROC-AUC (test)",
+      "value": 1
+    }
+  ],
+  "sources": [
+    {
+      "title": "Willkommen | Onleihe",
+      "url": "https://hessen.onleihe.de/",
+      "snippet": "Herzlich willkommen in der Onleihe – deine digitale Bibliothek! Bitte wähle zuerst deine Bibliothek aus, um dich anmelden und die …"
+    },
+    {
+      "title": "Willkommen | Onleihe",
+      "url": "https://hessen.onleihe.de/mymedia",
+      "snippet": "Willkommen in deiner digitalen Bibliothek Mit der Onleihe ortsunabhängig rund um die Uhr verfügbar. Wähle aus einer riesigen …"
+    },
+    {
+      "title": "Willkommen | Onleihe",
+      "url": "https://hessen.onleihe.de/page-not-found",
+      "snippet": "Mit der Onleihe ortsunabhängig rund um die Uhr verfügbar. Wähle aus einer riesigen Vielfalt an digitalen Medien. Zum Lesen, Lernen …"
+    },
+    {
+      "title": "Onleihe",
+      "url": "https://hessen.onleihe.de/verbund_hessen/frontend/login,0-0-0-800-0-0-0-0-0-0-0.html?libraryId=194",
+      "snippet": ""
+    },
+    {
+      "title": "hessen.onleihe.de",
+      "url": "https://hessen.onleihe.de/verbund_hessen/frontend/myBib,0-0-1954932724-551-0-0-0-0-0-0-0.html",
+      "snippet": ""
+    }
+  ]
+}

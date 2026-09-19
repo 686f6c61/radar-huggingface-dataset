@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "jayzou3773/less-is-moe-gpt-oss-120b-s1-128-seq8192-intdim-l-50",
+  "slug": "jayzou3773-less-is-moe-gpt-oss-120b-s1-128-seq8192-intdim-l-50",
+  "author": "jayzou3773",
+  "url": "https://huggingface.co/jayzou3773/less-is-moe-gpt-oss-120b-s1-128-seq8192-intdim-l-50",
+  "created_at": "2026-09-18T22:26:20.000Z",
+  "updated_at": "2026-09-18T22:31:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gpt_oss",
+    "moe",
+    "pruning",
+    "less-is-moe",
+    "text-generation",
+    "conversational",
+    "dataset:jayzou3773/less-is-moe-s1-calibration-128-seq8192",
+    "base_model:openai/gpt-oss-120b",
+    "base_model:finetune:openai/gpt-oss-120b",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 59484992832,
+  "parameters_human": "59.48B",
+  "storage_bytes": 118997924590,
+  "storage_human": "119.0 GB",
+  "base_model": "openai/gpt-oss-120b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "خريطة العصافرة",
+      "url": "https://www.dalilmadina.com/map.aspx?c=95",
+      "snippet": "2024 dalilmadina.com™."
+    },
+    {
+      "title": "خرائط Google",
+      "url": "https://www.google.com/maps/search/?hl=ar",
+      "snippet": "مطاعم محطات وقود أجهزة صرّاف آلي تسوّق تفاصيل الخريطة"
+    },
+    {
+      "title": "دليل منطقة العصافرة في الإسكندرية مصر - دليل الاماكن - السوق المفتوح",
+      "url": "https://guide.opensooq.com/%D8%AC%D9%85%D9%87%D9%88%D8%B1%D9%8A%D8%A9-%D9%85%D8%B5%D8%B1-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9/%D8%A7%D9%84%D8%A5%D8%B3%D9%83%D9%86%D8%AF%D8%B1%D9%8A%D8%A9/%D8%AF%D9%84%D9%8A%D9%84-%D9%85%D9%86%D8%B7%D9%82%D8%A9-%D8%A7%D9%84%D8%B9%D8%B5%D8%A7%D9%81%D8%B1%D8%A9-%D9%81%D9%8A-%D8%A7%D9%84%D8%A5%D8%B3%D9%83%D9%86%D8%AF%D8%B1%D9%8A%D8%A9-%D9%85%D8%B5%D8%B1/",
+      "snippet": "يحيط بمنطقة العصافرة مجموعة من أهم شوارع الإسكندرية، حيث يحدها من الجهة الغربية شارع الجيش، بينما يحدها من الجهة الشرقية شارع حسن علي إبراهيم ، أما الجهة الشمال فيحد العصافرة …"
+    },
+    {
+      "title": "العصافرة الخريطة, خريطة العصافرة مدينة",
+      "url": "http://mataria.wikimapia.org/map/",
+      "snippet": "إظهار العصافرة على الخريطة الكبيرة. خريطة العصافرة مدينة – إستكشاف خريطة مدينة العصافرة المدينة مع المستشفيات, الفنادق, المطارات, الطرق, المتاحف إلخ...."
+    },
+    {
+      "title": "خريطة الإسكندرية - احياء ومدن محافظة الإسكندرية ٢٠٢٦ | دوّر.كوم",
+      "url": "https://eg.dowwr.com/regions/cities/13/%D8%AE%D8%B1%D9%8A%D8%B7%D8%A9-%D8%A7%D8%AD%D9%8A%D8%A7%D8%A1-%D9%88%D9%85%D9%86%D8%A7%D8%B7%D9%82-%D9%85%D8%AD%D8%A7%D9%81%D8%B8%D8%A9-%D8%A7%D9%84%D8%A5%D8%B3%D9%83%D9%86%D8%AF%D8%B1%D9%8A%D8%A9",
+      "snippet": "اهلا بيك في خريطة احياء الإسكندرية والتي تعرض قائمة بأهم المناطق والمدن الموجودة داخل حدود محافظة الإسكندرية والتي تعتبر من أكبر الأسواق الإلكترونية في مصر ، وتحتوي محافظة الإسكندرية …"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "mercedis22/Wan_2.2_ComfyUI_Repackaged",
+  "slug": "mercedis22-wan_2-2_comfyui_repackaged",
+  "author": "mercedis22",
+  "url": "https://huggingface.co/mercedis22/Wan_2.2_ComfyUI_Repackaged",
+  "created_at": "2026-09-19T01:33:26.000Z",
+  "updated_at": "2026-09-19T01:33:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-video",
+  "library": "diffusion-single-file",
+  "languages": [],
+  "tags": [
+    "diffusion-single-file",
+    "comfyui",
+    "image-to-video",
+    "base_model:Wan-AI/Wan2.2-Animate-14B",
+    "base_model:finetune:Wan-AI/Wan2.2-Animate-14B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 728658148158,
+  "storage_human": "728.7 GB",
+  "base_model": "nvidia/ChronoEdit-14B-Diffusers, Wan-AI/Wan2.2-Animate-14B, alibaba-pai/Wan2.2-Fun-A14B-Control-Camera, alibaba-pai/Wan2.2-Fun-A14B-Control, alibaba-pai/Wan2.2-Fun-5B-Control, alibaba-pai/Wan2.2-Fun-5B-InP, alibaba-pai/Wan2.2-Fun-A14B-InP, alibaba-pai/Wan2.2-VACE-Fun-A14B, Wan-AI/Wan2.2-I2V-A14B, Wan-AI/Wan2.2-S2V-14B, Wan-AI/Wan2.2-T2V-A14B, Wan-AI/Wan2.2-TI2V-5B, lightx2v/Wan2.2-Distill-Loras",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Original Michel´s Fischzangen zum Grillen – Forelle Grillen ...",
+      "url": "https://www.fischzangen.de/",
+      "snippet": "Grillen Sie dank des Fischbraters bzw. Fischwenders Ihren Fisch platzsparend und schonend. Mit dem langen, ergonomische Griff …"
+    },
+    {
+      "title": "Suchergebnis Auf Amazon.de Für: Fisch Grillzange",
+      "url": "https://www.amazon.de/fisch-grillzange/s?k=fisch+grillzange",
+      "snippet": "Fischgrillkorb Edelstahl, Fisch Grillhalter & Fischzange zum Grillen, Fischgrillgitter mit abnehmbarem Griff | Rostfreier Fischbräter für …"
+    },
+    {
+      "title": "Suchergebnis Auf Amazon.de Für: Fischzange Zum Grillen",
+      "url": "https://www.amazon.de/fischzange-grillen/s?k=fischzange+zum+grillen",
+      "snippet": "Fischgrillkorb Edelstahl, Fisch Grillhalter & Fischzange zum Grillen, Fischgrillgitter mit abnehmbarem Griff | Rostfreier Fischbräter für …"
+    },
+    {
+      "title": "Fischzange Grill Test 2026: Deine Top 7 für Grillgenuss! - Gartenpanda",
+      "url": "https://gartenpanda.de/Fischzange-Grill-Test",
+      "snippet": "Dec 31, 2023 · Das Einspannen des Fisches ist ein wichtiger Schritt beim Grillen mit einer Fischzange. Mit ein wenig Übung und den …"
+    },
+    {
+      "title": "Fischzange Grill - eBay.de",
+      "url": "https://www.ebay.de/shop/fischzange-grill?_nkw=fischzange+grill&msockid=04c8d72d733e66b8336ac0f47252676e",
+      "snippet": "Große Auswahl an Fischzange Grill entdecken. Top-Marken, exklusive Angebote und unschlagbare Preise bei eBay.de. Jetzt …"
+    }
+  ]
+}

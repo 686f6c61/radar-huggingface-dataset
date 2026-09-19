@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Aurimas17/Faster",
+  "slug": "aurimas17-faster",
+  "author": "Aurimas17",
+  "url": "https://huggingface.co/Aurimas17/Faster",
+  "created_at": "2026-09-18T21:16:38.000Z",
+  "updated_at": "2026-09-18T21:16:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:lynaNSFW/minimaxH3_Collection",
+    "base_model:adapter:lynaNSFW/minimaxH3_Collection",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 161385666,
+  "storage_human": "161 MB",
+  "base_model": "lynaNSFW/minimaxH3_Collection",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Syphilis - World Health Organization (WHO)",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/syphilis",
+      "snippet": "May 29, 2025 · Syphilis is caused by the bacterium Treponema pallidum. Laboratory tests for syphilis include direct detection of T. …"
+    },
+    {
+      "title": "WHO guidelines for the treatment of Treponema pallidum (syphilis)",
+      "url": "https://www.who.int/publications/i/item/9789241549714",
+      "snippet": "Jan 1, 2016 · These guidelines provide updated recommendations for treatment of Treponema pallidum (syphilis) in adults and …"
+    },
+    {
+      "title": "Syphilis -- Global - World Health Organization (WHO)",
+      "url": "https://www.who.int/health-topics/syphilis",
+      "snippet": "Jul 14, 2026 · Syphilis is a sexually transmitted infection caused by the bacterium Treponema pallidum subspecies pallidum. The …"
+    },
+    {
+      "title": "Pian - World Health Organization (WHO)",
+      "url": "https://www.who.int/es/news-room/fact-sheets/detail/yaws",
+      "snippet": "El pian es una enfermedad infecciosa crónica desfigurante y debilitante causada por la subespecie pertenue de Treponema pallidum."
+    },
+    {
+      "title": "Фрамбезия - World Health Organization (WHO)",
+      "url": "https://www.who.int/ru/news-room/fact-sheets/detail/yaws",
+      "snippet": "Jan 12, 2023 · Возбудитель фрамбезии — бактерия Treponema pallidum подвида pertenue — имеет тесное генетическое …"
+    }
+  ]
+}

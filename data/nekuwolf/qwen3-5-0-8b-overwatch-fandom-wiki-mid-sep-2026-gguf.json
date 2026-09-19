@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "nekuwolf/Qwen3.5-0.8B-overwatch-fandom-wiki-mid-sep-2026-GGUF",
+  "slug": "nekuwolf-qwen3-5-0-8b-overwatch-fandom-wiki-mid-sep-2026-gguf",
+  "author": "nekuwolf",
+  "url": "https://huggingface.co/nekuwolf/Qwen3.5-0.8B-overwatch-fandom-wiki-mid-sep-2026-GGUF",
+  "created_at": "2026-09-18T22:35:19.000Z",
+  "updated_at": "2026-09-18T22:36:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3_5",
+    "llama.cpp",
+    "unsloth",
+    "vision-language-model",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 772845888,
+  "parameters_human": "772.8M",
+  "storage_bytes": 1553915840,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PRIVATE | English meaning - Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/dictionary/english/private",
+      "snippet": "PRIVATE definition: 1. only for one person or group and not for everyone: 2. Private activities involve personal…. Learn more."
+    },
+    {
+      "title": "PRIVATE Definition & Meaning - Merriam-Webster",
+      "url": "https://www.merriam-webster.com/dictionary/private",
+      "snippet": "Sep 9, 2026 · The meaning of PRIVATE is intended for or restricted to the use of a particular person, group, or class. How to use …"
+    },
+    {
+      "title": "Private Sport Shop - Vendite Evento Sportive",
+      "url": "https://www.privatesportshop.it/",
+      "snippet": "Pagamento sicuro Servizio clienti: Lun-Ven dalle 9.00 alle 18.00 A PROPOSITO DI PRIVATE SPORT SHOP"
+    },
+    {
+      "title": "Private - definition of private by The Free Dictionary",
+      "url": "https://www.thefreedictionary.com/Private",
+      "snippet": "(Government, Politics & Diplomacy) of, relating to, or provided by a private individual or organization, rather than by the state or a …"
+    },
+    {
+      "title": "PRIVATE | definition in the Cambridge English Dictionary",
+      "url": "https://dictionary.cambridge.org/us/dictionary/english/private",
+      "snippet": "PRIVATE meaning: 1. only for one person or group and not for everyone: 2. Private activities involve personal…. Learn more."
+    }
+  ]
+}

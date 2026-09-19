@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "michaeljang/sd-class-butterflies-64",
+  "slug": "michaeljang-sd-class-butterflies-64",
+  "author": "michaeljang",
+  "url": "https://huggingface.co/michaeljang/sd-class-butterflies-64",
+  "created_at": "2026-09-19T01:43:34.000Z",
+  "updated_at": "2026-09-19T02:20:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "unconditional-image-generation",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "pytorch",
+    "unconditional-image-generation",
+    "diffusion-models-class",
+    "license:mit",
+    "diffusers:DDPMPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": 18536323,
+  "parameters_human": "18.5M",
+  "storage_bytes": 74185252,
+  "storage_human": "74 MB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pacific Standard Time – PST Time Zone",
+      "url": "https://www.timeanddate.com/time/zones/pst",
+      "snippet": "Pacific Standard Time (PST) is a standard time zone in use from the first Sunday in November to the second Sunday in …"
+    },
+    {
+      "title": "Pacific Time Zone - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Pacific_Time_Zone",
+      "snippet": "The Pacific Time Zone (PT) is a time zone encompassing the western United States and northwestern Mexico. Places in this zone …"
+    },
+    {
+      "title": "Time Now in PST (Pacific Standard Time) | Time.now",
+      "url": "https://time.now/timezones/pst/",
+      "snippet": "1 day ago · View current time for PST (Pacific Standard Time) time zone [Updated live]. Other countries and time zones with the …"
+    },
+    {
+      "title": "Parameter-Efficient Orthogonal Finetuning via Butterfly Factorization",
+      "url": "https://arxiv.org/html/2311.06243v2",
+      "snippet": "28.04.2024 ... Our paper proposes Orthogonal Butterfly, a generic parameter-efficient finetuning method for foundation models based on the butterfly structure."
+    },
+    {
+      "title": "Pacific Standard Time",
+      "url": "https://time.is/PST",
+      "snippet": "1 day ago · Exact time now, time zone, time difference, sunrise/sunset time and key facts for Pacific Standard Time (PST)."
+    }
+  ]
+}

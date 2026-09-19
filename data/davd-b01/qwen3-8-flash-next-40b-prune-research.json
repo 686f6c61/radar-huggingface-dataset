@@ -1,0 +1,140 @@
+{
+  "schema": 1,
+  "id": "Davd-b01/qwen3.8-flash-next-40b-prune-research",
+  "slug": "davd-b01-qwen3-8-flash-next-40b-prune-research",
+  "author": "Davd-b01",
+  "url": "https://huggingface.co/Davd-b01/qwen3.8-flash-next-40b-prune-research",
+  "created_at": "2026-09-19T03:27:42.000Z",
+  "updated_at": "2026-09-20T16:10:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh",
+    "es"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen4_exp",
+    "image-text-to-text",
+    "moe",
+    "expert-pruning",
+    "pruning",
+    "qwen4exp",
+    "dora",
+    "simpo",
+    "rlvr",
+    "thinking-tiers",
+    "n-gram-memory",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "es",
+    "dataset:Davd-b01/thinking-cap-tier-raw-traces",
+    "dataset:Davd-b01/thinking-cap-tier-curricula-complete",
+    "dataset:Davd-b01/thinking-cap-tier-lima-dense",
+    "arxiv:2609.11029",
+    "arxiv:2308.01825",
+    "arxiv:2402.14800",
+    "arxiv:2510.13999",
+    "arxiv:2609.04575",
+    "arxiv:2609.04453",
+    "arxiv:2401.06066",
+    "arxiv:2412.19437",
+    "arxiv:2110.01786",
+    "arxiv:2509.10377",
+    "arxiv:2607.11444",
+    "arxiv:2607.16721",
+    "arxiv:2608.21693",
+    "arxiv:2608.15299",
+    "arxiv:2607.20427",
+    "arxiv:2402.03300",
+    "arxiv:2310.05914",
+    "arxiv:2402.09353",
+    "arxiv:2409.19606",
+    "arxiv:2406.11717",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:finetune:Qwen/Qwen3.8-Flash-Next",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 40668780656,
+  "parameters_human": "40.67B",
+  "storage_bytes": 280248469250,
+  "storage_human": "280.2 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "GPQA Diamond",
+      "dataset": "GPQA Diamond",
+      "metric": "accuracy (temp 0.7, 4-shot-free zero-shot)",
+      "value": 0.2778
+    },
+    {
+      "task": "IFEval",
+      "dataset": "IFEval",
+      "metric": "instruction-level strict accuracy",
+      "value": 0.4856
+    },
+    {
+      "task": "IFEval",
+      "dataset": "IFEval",
+      "metric": "prompt-level strict accuracy",
+      "value": 0.3734
+    },
+    {
+      "task": "MATH-500",
+      "dataset": "MATH-500",
+      "metric": "exact match",
+      "value": 0.178
+    },
+    {
+      "task": "LiveCodeBench v6",
+      "dataset": "LiveCodeBench v6",
+      "metric": "pass@1 (n=16)",
+      "value": 0.1555
+    }
+  ],
+  "sources": [
+    {
+      "title": "Șterge sau ascunde canalul YouTube - YouTube Ajutor",
+      "url": "https://support.google.com/youtube/answer/55759?hl=ro",
+      "snippet": "Șterge-ți canalul YouTube Conectează-te la YouTube Studio. Din bara laterală din stânga, selectează Setări . Selectează Canal …"
+    },
+    {
+      "title": "Opret en YouTube-kanal",
+      "url": "https://support.google.com/youtube/answer/1646861?hl=da",
+      "snippet": "Opret en YouTube-kanal Med en Google-konto kan du se videoer, give dem likes og abonnere på kanaler. Hvis du vil uploade …"
+    },
+    {
+      "title": "如何在中国大陆用「合法」的方式观看到youtube上面的「有价值」的 …",
+      "url": "https://www.zhihu.com/question/1903231775980913051",
+      "snippet": "YouTube 将自动为 添加翻译后的中文字幕，这一功能有效解决了语言障碍问题。 当你向下浏览时，部分 会标注相关信息。 例如，博 …"
+    },
+    {
+      "title": "YouTube公司 - 知乎",
+      "url": "https://www.zhihu.com/topic/19550532",
+      "snippet": "YouTube，全球最大的视频分享网站，早期公司总部位于加利福尼亚州的圣布里诺。公司由华裔美籍华人陈士骏等人创立并于2005年2 …"
+    },
+    {
+      "title": "Odstraňování problémů videí na YouTube",
+      "url": "https://support.google.com/youtube/answer/3037019?hl=cs",
+      "snippet": "Pokud používáte aplikaci YouTube, zkontrolujte, zda je aktualizována na nejnovější verzi. Jak aktualizovat aplikaci YouTube. Povolte …"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "arianaazarbal/ct-nemotron120b-anth-gen-mid-g0-b3",
+  "slug": "arianaazarbal-ct-nemotron120b-anth-gen-mid-g0-b3",
+  "author": "arianaazarbal",
+  "url": "https://huggingface.co/arianaazarbal/ct-nemotron120b-anth-gen-mid-g0-b3",
+  "created_at": "2026-09-18T20:00:45.000Z",
+  "updated_at": "2026-09-18T20:04:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "constitutional-training",
+    "iterated-constitution",
+    "family:nemotron120b",
+    "seed:anthropic",
+    "method:gen",
+    "regime:mid",
+    "gen:0",
+    "branch:b3",
+    "text-generation",
+    "base_model:nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16",
+    "base_model:adapter:nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 28969132552,
+  "storage_human": "29.0 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Roblox",
+      "url": "https://www.roblox.com/",
+      "snippet": "Roblox is ushering in the next generation of entertainment. Imagine, create, and play together with millions of people across an …"
+    },
+    {
+      "title": "인기 Roblox 게임",
+      "url": "https://www.roblox.com/ko/charts?device=computer&country=us",
+      "snippet": "©2026 Roblox Corporation. Roblox, Roblox 로고 및 Powering Imagination은 미국 및 그 외 국가에서 등록 상표 및 미등록 상표입니다."
+    },
+    {
+      "title": "Sobre | Roblox",
+      "url": "https://about.roblox.com/pt-br",
+      "snippet": "Roblox is a global platform where millions of people gather together every day to imagine, create, and share experiences with each …"
+    },
+    {
+      "title": "Acerca de | Roblox",
+      "url": "https://about.roblox.com/es",
+      "snippet": "Roblox is a global platform where millions of people gather together every day to imagine, create, and share experiences with each …"
+    },
+    {
+      "title": "Política de privacidad y de cookies de Roblox – Roblox Soporte",
+      "url": "https://en.help.roblox.com/hc/es/articles/115004630823-Pol%C3%ADtica-de-privacidad-y-de-cookies-de-Roblox",
+      "snippet": "Roblox Player y Roblox Studio Otras funciones de Roblox descritas en esta política Pero si abandona nuestros servicios, la Política …"
+    }
+  ]
+}

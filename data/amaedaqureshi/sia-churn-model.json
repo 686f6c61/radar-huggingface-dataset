@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "amaedaqureshi/sia-churn-model",
+  "slug": "amaedaqureshi-sia-churn-model",
+  "author": "amaedaqureshi",
+  "url": "https://huggingface.co/amaedaqureshi/sia-churn-model",
+  "created_at": "2026-09-18T20:56:28.000Z",
+  "updated_at": "2026-09-18T21:59:02.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "joblib",
+    "tabular-classification",
+    "churn-prediction",
+    "xgboost",
+    "sia-retention-engine",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 960567,
+  "storage_human": "960567 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Schach online gegen den Computer spielen - Chess.com",
+      "url": "https://www.chess.com/de/play/computer",
+      "snippet": "Spiele Schach gegen Bots aller Niveaus. Übe mit Coach-Bots oder nimm es mit einer Reihe einzigartiger Charaktere auf, die jeden …"
+    },
+    {
+      "title": "Spiele online gegen Fritz",
+      "url": "https://fritz.chessbase.com/de/Fritz",
+      "snippet": "Spiele Schach gegen Fritz. Fritz spielt wie ein Mensch. Klick & Check schützt vor Fehlern."
+    },
+    {
+      "title": "Schach gegen Computer spielen mit Niveau eins bis Meister",
+      "url": "https://www.schach-spielen.eu/schach-gegen-computer",
+      "snippet": "Spiele jetzt bei uns einfach Schach gegen Computer in unterschiedlichen Stärken von einfachen Niveau eins bis zum Meisterniveau. …"
+    },
+    {
+      "title": "Chess.com - Schach Online - Kostenlos Spielen",
+      "url": "https://www.chess.com/de",
+      "snippet": "Spielen Sie auf Chess.com Online Schach mit über 250 Mitgliedern aus der ganzen Welt. Viel Spaß beim Spielen mit Freunden oder …"
+    },
+    {
+      "title": "Schachpartie gegen Fritz",
+      "url": "https://schach.chessbase.com/de/Fritz",
+      "snippet": "Das Schachprogramm Fritz spielt wie ein menschlicher Gegner. Spielstärke vom Einsteiger bis zum Grossmeister."
+    }
+  ]
+}

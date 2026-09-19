@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "imuffin/saaniya",
+  "slug": "imuffin-saaniya",
+  "author": "imuffin",
+  "url": "https://huggingface.co/imuffin/saaniya",
+  "created_at": "2026-09-18T22:12:01.000Z",
+  "updated_at": "2026-09-18T22:13:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 230353643,
+  "storage_human": "230 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ubuntu 20.04 download link - Ask Ubuntu",
+      "url": "https://askubuntu.com/questions/1412658/ubuntu-20-04-download-link",
+      "snippet": "Jun 7, 2022 · I am trying to download ubuntu 20.04 LTS .But here there is a download link to download only ubuntu 22.04 LTS. So …"
+    },
+    {
+      "title": "20.04 - HDMI port not working with Ubuntu - Ask Ubuntu",
+      "url": "https://askubuntu.com/questions/1394283/hdmi-port-not-working-with-ubuntu",
+      "snippet": "Feb 22, 2022 · When I updated to Ubuntu 22.04 I started getting ACPI errors and my HDMI port no longer was working on my newer …"
+    },
+    {
+      "title": "如何评价 Ubuntu 24.04 LTS？ - 知乎",
+      "url": "https://www.zhihu.com/question/650474817",
+      "snippet": "反正我负责的服务器，Ubuntu 版本基本是 ubuntu 18.04或者20.04。 因为需要跑深度学习模型，要装显卡驱动，所以安装完系统后第 …"
+    },
+    {
+      "title": "Login loop after installing 20.04 - Ask Ubuntu",
+      "url": "https://askubuntu.com/questions/1229821/login-loop-after-installing-20-04",
+      "snippet": "I just installed Ubuntu 20.04 with proprietary drivers for Nvidia, in dual boot with Windows. Everything went smoothly, but I cannot …"
+    },
+    {
+      "title": "Unable to add ondrej repository apt in Ubuntu 20.04",
+      "url": "https://askubuntu.com/questions/1393381/unable-to-add-ondrej-repository-apt-in-ubuntu-20-04",
+      "snippet": "Feb 17, 2022 · I am unable to add ondrej to my Ubuntu 20.04 installation. sudo add-apt-repository ppa:ondrej/php The above …"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "mlx-community/Mistral-Large-3-675B-Instruct-2512-mlx-4bit",
+  "slug": "mlx-community-mistral-large-3-675b-instruct-2512-mlx-4bit",
+  "author": "mlx-community",
+  "url": "https://huggingface.co/mlx-community/Mistral-Large-3-675B-Instruct-2512-mlx-4bit",
+  "created_at": "2026-09-19T00:52:02.000Z",
+  "updated_at": "2026-09-19T02:06:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mistral_large3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 675991176960,
+  "parameters_human": "675.99B",
+  "storage_bytes": 386759842601,
+  "storage_human": "386.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TikTok Verification: How to Get Badge - Blabla",
+      "url": "https://blabla.ai/blog/how-to-become-verified-on-tiktok",
+      "snippet": "Dec 3, 2025 · Frequently Asked Questions About TikTok Verification How much does it cost to get verified on TikTok? Getting verified …"
+    },
+    {
+      "title": "How to Get Verified on TikTok in 2022 - Business Insider",
+      "url": "https://www.businessinsider.com/reference/how-to-get-verified-on-tiktok",
+      "snippet": "Aug 5, 2022 · How to get verified on TikTok To get verified on TikTok, you should be an active user who posts regularly and receives …"
+    },
+    {
+      "title": "How To Get Verified on TikTok — Get the Blue Tick - Meltwater",
+      "url": "https://www.meltwater.com/en/blog/how-to-get-verified-on-tiktok",
+      "snippet": "Nov 29, 2025 · Getting verified on TikTok shows you’re the real deal. Here’s how to get verified on TikTok and earn that coveted blue …"
+    },
+    {
+      "title": "How to get verified on TikTok: a guide | Adobe Express",
+      "url": "https://www.adobe.com/uk/express/discover/how-to/tiktok/get-verified?msockid=23f0c133a6da66ae343ad6eaa7d967df",
+      "snippet": "Learn how to get verified on TikTok, what the TikTok verification process looks like and how Adobe Express helps you stay consistent …"
+    },
+    {
+      "title": "How to get verified on TikTok - Digital Trends",
+      "url": "https://www.digitaltrends.com/social-media/how-to-get-verified-on-tiktok/",
+      "snippet": "May 5, 2022 · You can't actually request to be verified on TikTok; it has to be given to you. Here are a few tips on how to make your …"
+    }
+  ]
+}

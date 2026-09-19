@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "fynnsu/qwen38-27b-dspark-original-lr1e3",
+  "slug": "fynnsu-qwen38-27b-dspark-original-lr1e3",
+  "author": "fynnsu",
+  "url": "https://huggingface.co/fynnsu/qwen38-27b-dspark-original-lr1e3",
+  "created_at": "2026-09-19T01:22:43.000Z",
+  "updated_at": "2026-09-19T01:33:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 1909788417,
+  "parameters_human": "1.91B",
+  "storage_bytes": 3819583482,
+  "storage_human": "3.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Central Standard Time – CST Time Zone - timeanddate.com",
+      "url": "https://www.timeanddate.com/time/zones/cst",
+      "snippet": "Central Standard Time (CST) is the second easternmost time zone in the United States and is also used in Canada. It covers all or …"
+    },
+    {
+      "title": "Central Standard Time",
+      "url": "https://time.is/CST",
+      "snippet": "10 hours ago · Exact time now, time zone, time difference, sunrise/sunset time and key facts for Central Standard Time (CST)."
+    },
+    {
+      "title": "Central Time Zone - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Central_Time_Zone",
+      "snippet": "Out of the seven countries comprising Central America, all but one use Central Standard Time year-round: Belize, Costa Rica, El …"
+    },
+    {
+      "title": "Time Now in CST (Central Standard Time) | Time.now",
+      "url": "https://time.now/timezones/cst/",
+      "snippet": "Central Standard Time (CST) is a time zone observed across central North America and parts of Central America, with a standard …"
+    },
+    {
+      "title": "Current Central (CST/CDT) Time Now in USA and Canada",
+      "url": "https://time-time.net/times/time-zones/usa-canada/current-central-time-cst.php/time-zones-in-usa-and-canada.php",
+      "snippet": "10 hours ago · In North America, Central Time observes standard time at six hours behind UTC (UTC-6), shifting to five hours behind …"
+    }
+  ]
+}

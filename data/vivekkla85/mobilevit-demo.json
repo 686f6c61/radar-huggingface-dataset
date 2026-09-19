@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Vivekkla85/mobilevit-demo",
+  "slug": "vivekkla85-mobilevit-demo",
+  "author": "Vivekkla85",
+  "url": "https://huggingface.co/Vivekkla85/mobilevit-demo",
+  "created_at": "2026-09-19T01:20:03.000Z",
+  "updated_at": "2026-09-19T01:20:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mobilevit",
+    "pytorch",
+    "classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "如何评价 Microsoft To-Do（微软待办）？ - 知乎",
+      "url": "https://www.zhihu.com/question/58763087",
+      "snippet": "Microsoft To-Do 是微软推出的待办事项管理工具，旨在取代 Wunderlist，帮助用户高效管理任务和时间。"
+    },
+    {
+      "title": "primary,prime,primitive,principle作形容词时的区别是什么 ...",
+      "url": "https://www.zhihu.com/question/614996269",
+      "snippet": "因此，虽然 \"principal\" 和 \"prime\" 在作形容词时都表示一定程度的权威性和重要性，但在具体的用法上有一些区别。 综合韦大黑和AI的 …"
+    },
+    {
+      "title": "如何评价 EVA 官方宣布 8 月 13 日在 Prime 上架《新· ...",
+      "url": "https://www.zhihu.com/question/469516926",
+      "snippet": "2021年7月，khara 只用英语 宣布8月shin·EVA将在Prime Video独家首播。 综上，我们可推断出一些信息： khara一直以来就希望采用 …"
+    },
+    {
+      "title": "银河录像局靠谱吗? - 知乎",
+      "url": "https://www.zhihu.com/question/3141235744",
+      "snippet": "以下我尽量做到陈述事件经过，尽量不加增个人情感和主观臆断 我的影音会员买过Netflix、Amazon的Prime Video、Disney +、Hbo …"
+    },
+    {
+      "title": "亚马逊Prime上可以租电影吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/396542303",
+      "snippet": "Amazon Prime Video 是出色而独特的流媒体服务之一，一直是电影和娱乐爱好者的首选目的地。但是，您是否知道亚马逊 Prime 租赁 …"
+    }
+  ]
+}

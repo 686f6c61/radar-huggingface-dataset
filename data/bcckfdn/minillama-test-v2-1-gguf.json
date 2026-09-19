@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "bcckfdn/minillama-test-v2.1-GGUF",
+  "slug": "bcckfdn-minillama-test-v2-1-gguf",
+  "author": "bcckfdn",
+  "url": "https://huggingface.co/bcckfdn/minillama-test-v2.1-GGUF",
+  "created_at": "2026-09-18T21:29:32.000Z",
+  "updated_at": "2026-09-18T21:29:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "tr",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "smollm2",
+    "llama",
+    "turkish",
+    "text-generation",
+    "tr",
+    "en",
+    "base_model:bcckfdn/minillama-test-v2.1",
+    "base_model:quantized:bcckfdn/minillama-test-v2.1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 52953984,
+  "parameters_human": "53.0M",
+  "storage_bytes": 258878464,
+  "storage_human": "259 MB",
+  "base_model": "bcckfdn/minillama-test-v2.1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home | Koya University",
+      "url": "https://koyauniversity.org/",
+      "snippet": "Koya University is located in the city of Koya (Koysinjaq), which is a 1.0 hr drive to the East of the Kurdistan Region capital Erbil …"
+    },
+    {
+      "title": "Choose Your Authority · MMS",
+      "url": "https://mms.koyauniversity.org/",
+      "snippet": "Secure university management access for Academic Staff and Students."
+    },
+    {
+      "title": "AUTHORS | ARO-THE SCIENTIFIC JOURNAL OF KOYA UNIVERSITY",
+      "url": "https://aro.koyauniversity.org/index.php/aro/publishing",
+      "snippet": "AUTHORS This is the top menu item and will have many submenu items"
+    },
+    {
+      "title": "KOU-FSCH - DCHM - Koya University",
+      "url": "https://fsch.koyauniversity.org/departments/dchm",
+      "snippet": "Email: fsch.koyauniversity.org Faculty of Engineering Faculty of Science and Health Faculty of Education Faculty of Humanities and …"
+    },
+    {
+      "title": "About the Journal | ARO-THE SCIENTIFIC JOURNAL OF ... - Koya …",
+      "url": "https://aro.koyauniversity.org/index.php/aro/about",
+      "snippet": "Aims and Scope of Aro Journal ARO Journal is committed to publishing influential papers that significantly advance scientific …"
+    }
+  ]
+}

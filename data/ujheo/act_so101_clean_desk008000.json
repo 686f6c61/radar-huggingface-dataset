@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "ujheo/act_so101_clean_desk008000",
+  "slug": "ujheo-act_so101_clean_desk008000",
+  "author": "ujheo",
+  "url": "https://huggingface.co/ujheo/act_so101_clean_desk008000",
+  "created_at": "2026-09-19T02:11:48.000Z",
+  "updated_at": "2026-09-19T02:11:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714848,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Markt wählen - Dehner",
+      "url": "https://www.dehner.de/stores",
+      "snippet": "Finden Sie einen Dehner Markt in Ihrer Nähe. Augsburg (Ackermannstr.)- Dehner GC."
+    },
+    {
+      "title": "Dehner: Ihr Online-Shop für Garten, Pflanzen, Balkon & Tiere | Dehner",
+      "url": "https://www.dehner.de/",
+      "snippet": "Egal ob im Dehner Garten-Center vor Ort oder im Onlineshop, hier finden Sie alles, was Sie für Ihr Garten-Glück benötigen. Von …"
+    },
+    {
+      "title": "Alle Dehner Garten-Center Filialen - MeinProspekt",
+      "url": "https://www.meinprospekt.de/filialen/dehner-garten-center",
+      "snippet": "Finde hier alle Filialen von Dehner Garten-Center in Deutschland. Alle Filialen sind nach Postleitzahl aufgelistet. Stets aktuell …"
+    },
+    {
+      "title": "Dehner - Filial-Verzeichnis",
+      "url": "https://filial-verzeichnis.de/gartenbedarf/dehner/",
+      "snippet": "Verwenden Sie die Dehner Filialsuche, um Dehner Filialen in Ihrer Nähe zu finden. Weitere Informationen zu Adresse, …"
+    },
+    {
+      "title": "Dehner in der Nähe - Filial FINDER | OFFEN.net",
+      "url": "https://www.offen.net/finder/dehner-60JVJ.html",
+      "snippet": "Durchsuche mehr als 100 Standorte und finde Dehner Filialen in Deiner Nähe. Finde die aktuellen Öffnungszeiten und die …"
+    }
+  ]
+}

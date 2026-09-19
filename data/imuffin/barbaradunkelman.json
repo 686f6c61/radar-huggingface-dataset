@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "imuffin/barbaradunkelman",
+  "slug": "imuffin-barbaradunkelman",
+  "author": "imuffin",
+  "url": "https://huggingface.co/imuffin/barbaradunkelman",
+  "created_at": "2026-09-18T22:29:12.000Z",
+  "updated_at": "2026-09-18T22:30:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 237530556,
+  "storage_human": "238 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DEL2 | Offizielle Website der Deutschen Eishockey Liga 2 (DEL2)",
+      "url": "https://www.del-2.org/",
+      "snippet": "Die offizielle Homepage der Deutschen Eishockey Liga 2 mit allen News, Teams, einem großen Statistik-Bereich und Video-Highlights."
+    },
+    {
+      "title": "Spiele - DEL2",
+      "url": "https://www.del-2.org/spielplan/",
+      "snippet": "Der DEL2-Spielplan zeigt alle Spiele der Liga, inklusive Daten und Zeiten."
+    },
+    {
+      "title": "Live Ergebnisse - DEL2",
+      "url": "https://www.del-2.org/live/",
+      "snippet": "Von Herzblut getragen. Im Eishockey zuhause. Zuschauerstärkste 2. Eishockey-Liga Europas"
+    },
+    {
+      "title": "Tabelle - DEL2",
+      "url": "https://www.del-2.org/tabelle/",
+      "snippet": "Tabelle der DEL2 Playoffs (Heim) Playoffs Pre-Playoffs Playdowns = sicher Top 6 (rechnerisch) * = kann rechnerisch noch Top 6 …"
+    },
+    {
+      "title": "Goalie-Trio komplett: Indians verpflichten Valentin Ankirchner",
+      "url": "https://www.del-2.org/news/goalie-trio-komplett-indians-verpflichten-valentin-ankirchner_9784",
+      "snippet": "Jul 17, 2026 · Goalie-Trio komplett: Indians verpflichten Valentin Ankirchner 17.07.2026Bild: DEL2 Goalie-Trio komplett: Indians …"
+    }
+  ]
+}

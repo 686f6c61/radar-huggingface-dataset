@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Hayasuki/hahascore-bridge4-arc-tracker",
+  "slug": "hayasuki-hahascore-bridge4-arc-tracker",
+  "author": "Hayasuki",
+  "url": "https://huggingface.co/Hayasuki/hahascore-bridge4-arc-tracker",
+  "created_at": "2026-09-18T23:02:11.000Z",
+  "updated_at": "2026-09-20T17:33:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "other",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "humor-detection",
+    "multimodal",
+    "audio",
+    "speech",
+    "nlp",
+    "comedy",
+    "cascade-gate",
+    "cross-attention",
+    "gru",
+    "dataset:StandUp4AI",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13707961,
+  "storage_human": "14 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Slotorado Bonus Codes 2026 | Expertly Reviewed",
+      "url": "https://www.betonvalue.com/bonus-codes/slotorado-bonus-codes",
+      "snippet": "5 days ago · Discover all the latest Slotorado Bonus Codes in one place. Thoroughly evaluated by industry professionals and …"
+    },
+    {
+      "title": "Slotorado Bonuscodes & Aktionen 2026 - chipy.com",
+      "url": "https://chipy.com/de/bonus-blog/casino/slotorado-casino-bonuscodes",
+      "snippet": "Sep 2, 2026 · Aktualisierte Liste der Slotorado Bonuscodes. Finden Sie die besten Slotorado Bonuscodes ohne Einzahlung, Promo …"
+    },
+    {
+      "title": "Slotorado Casino Bonus Codes & Promotions 2026 - chipy.com",
+      "url": "https://chipy.com/bonus-blog/casino/slotorado-casino-bonus-codes",
+      "snippet": "Sep 2, 2026 · Updated list of Slotorado Casino Bonus Codes. Find the Best Slotorado Casino No Deposit Bonuses, Promo Codes, …"
+    },
+    {
+      "title": "Slotorado Casino Free Spins Codes - 2026 - spinmybonus.com",
+      "url": "https://www.spinmybonus.com/bonus-by-casino/slotorado-casino-free-spins",
+      "snippet": "Discover the newest Slotorado Casino free spins bonus codes. Claim top Slotorado Casino no deposit free spins and exclusive …"
+    },
+    {
+      "title": "Slotorado Casino Bonus Codes - Reloads & Free Spins",
+      "url": "https://freeonlinecasinotips.net/slotorado-casino-no-deposit-bonus-codes",
+      "snippet": "Get the latest Slotorado Casino bonus codes: WED100 reload match and FRIDAY50 free spins, plus a no-code welcome offer. See …"
+    }
+  ]
+}

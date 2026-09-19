@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l3_swift_remove40_swapgapiter_b010",
+  "slug": "jeesup-svd-safety-l3_swift_remove40_swapgapiter_b010",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l3_swift_remove40_swapgapiter_b010",
+  "created_at": "2026-09-19T00:15:53.000Z",
+  "updated_at": "2026-09-22T00:26:38.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama3",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Meta-Llama-3-8B-Instruct",
+    "base_model:finetune:meta-llama/Meta-Llama-3-8B-Instruct",
+    "license:llama3",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766337,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Meta-Llama-3-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lebensmittel online bestellen im REWE Onlineshop",
+      "url": "https://www.rewe.de/shop?msockid=06a3f8a7b35e6473277bef7eb25b6553",
+      "snippet": "Morgens um sechs oder abends um 23 Uhr: Ganz egal, wann du Zeit für deinen Einkauf hast, der REWE Lebensmittel Online Shop …"
+    },
+    {
+      "title": "REWE.de - Deine Startseite für Lebensmittel im Internet!",
+      "url": "https://www.rewe.de/?msockid=06a3f8a7b35e6473277bef7eb25b6553",
+      "snippet": "Bei REWE.de jede Woche neue Lebensmittel-Angebote in deiner REWE Filiale entdecken. Übrigens: Wir liefern Lebensmittel auch …"
+    },
+    {
+      "title": "REWE Onlineshop: Lebensmittel & mehr im Online-Supermarkt!",
+      "url": "https://www.rewe.de/shop/allcategories?source=mc&msockid=06a3f8a7b35e6473277bef7eb25b6553",
+      "snippet": "Unsere besten Angebote, Gewinnspiele und leckere Rezepte, direkt in dein Postfach geliefert."
+    },
+    {
+      "title": "REWE Produkte online kaufen | REWE.de",
+      "url": "https://www.rewe.de/shop/productList?brand=REWE&msockid=06a3f8a7b35e6473277bef7eb25b6553",
+      "snippet": "Entdecke Produkte von REWE im REWE Onlineshop REWE jetzt abholen oder nach Hause liefern lassen »"
+    },
+    {
+      "title": "Der REWE Lieferservice – Kosten, Infos & mehr",
+      "url": "https://www.rewe.de/service/lebensmittel-lieferservice/?msockid=06a3f8a7b35e6473277bef7eb25b6553",
+      "snippet": "Der REWE Lieferservice bringt dir deine Lebensmittel bequem bis an die Haustür - das gilt für haltbare, wie für frische oder …"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "cygnal/Qwen3.8-Flash-Next-Heretic2-IQ4XS-Halogen",
+  "slug": "cygnal-qwen3-8-flash-next-heretic2-iq4xs-halogen",
+  "author": "cygnal",
+  "url": "https://huggingface.co/cygnal/Qwen3.8-Flash-Next-Heretic2-IQ4XS-Halogen",
+  "created_at": "2026-09-18T22:39:35.000Z",
+  "updated_at": "2026-09-19T01:29:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "qwen4exp",
+    "halogen",
+    "strix-halo",
+    "gfx1151",
+    "amd",
+    "rocm",
+    "abliterated",
+    "iq4_xs",
+    "vision",
+    "multimodal",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 176943899520,
+  "parameters_human": "176.94B",
+  "storage_bytes": 99702985856,
+  "storage_human": "99.7 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Diana and Roma ARA - YouTube",
+      "url": "https://www.youtube.com/channel/UCtm3DGXkWqAUQZMHl97SVxA",
+      "snippet": "مرحبًا بكم في عالم ديانا وروما، حيث يلعب كلٌّ من ديانا وروما وأوليفر الصغير مع عائلتهم، ويتعلمون ويغنون ويستكشفون ويشاركون تجاربهم الحياتية."
+    },
+    {
+      "title": "ديانا وروما بالعربية - تجميع لأفضل الفيديوهات للأطفال",
+      "url": "https://www.youtube.com/watch?v=2oY8-rBaqFI",
+      "snippet": "Jan 17, 2022 · ديانا وروما بالعربية - تجميع لأفضل الفيديوهات للأطفال Diana and Roma ARA - http://bit.ly/2TIsqiV Kids Diana Show - …"
+    },
+    {
+      "title": "ديانا وروما يلعبان متجر الآيس كريم - video Dailymotion",
+      "url": "https://www.dailymotion.com/video/x97ts2c",
+      "snippet": "Oct 22, 2024 · Dayana and Roma cartoons ديانا وروما يلعبان متجر الآيس كريم"
+    },
+    {
+      "title": "Diana and Roma - Collection new series for children",
+      "url": "https://kidvideo.org/video/diana-and-roma-collection-new-series-for-children-i32156.html",
+      "snippet": "A collection of new stories about Diana and Roma. Children choose professions and play with a magic wheel.Diana's INSTAGRAM …"
+    },
+    {
+      "title": "ديانا، بابا وبيت الألعاب - اشترى بابا بيت ألعاب جديد لديانا. روما يريد ...",
+      "url": "https://www.dailymotion.com/video/x7bg1vf",
+      "snippet": "Jun 17, 2019 · ديانا، بابا وبيت الألعاب - اشترى بابا بيت ألعاب جديد لديانا. روما يريد اللعب أيضًا، لذا اختطفه من أخته. اشترى بابا بيت ألعاب آخر لروما."
+    }
+  ]
+}

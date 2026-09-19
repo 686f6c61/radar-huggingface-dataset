@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "anorim/twhinbert-fusion-6-dareties-p0.9-k0.5-l0.9-bestcross-hatebr-olidbr-toldbr-tupy-v61",
+  "slug": "anorim-twhinbert-fusion-6-dareties-p0-9-k0-5-l0-9-bestcross-hatebr-olidbr-toldbr-tupy-v61",
+  "author": "anorim",
+  "url": "https://huggingface.co/anorim/twhinbert-fusion-6-dareties-p0.9-k0.5-l0.9-bestcross-hatebr-olidbr-toldbr-tupy-v61",
+  "created_at": "2026-09-19T02:21:05.000Z",
+  "updated_at": "2026-09-19T02:21:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bert",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 278830082,
+  "parameters_human": "278.8M",
+  "storage_bytes": 1132428366,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bumble Beezy - Текст песни \"111111\" | Lyrics at AZLyrics.com",
+      "url": "https://www.azlyrics.com/lyrics/bumblebeezy/111111.html",
+      "snippet": "Когда нужно делать всё самому (What the fuck?) А ты думал, я всё это делал, чтоб остаться тем же, кем я был? Ждёшь …"
+    },
+    {
+      "title": "Текст песни 111111 - Bumble Beezy — Textlyrik.ru",
+      "url": "https://textlyrik.ru/47-bumble-beezy-111111.html",
+      "snippet": "Правильный текст песни 111111 - Bumble Beezy, слова lyrics на сайте Textlyrik.ru"
+    },
+    {
+      "title": "Bumble Beezy - 111111 lyrics | LyricsFreak",
+      "url": "https://www.lyricsfreak.com/b/bumble+beezy/111111_21518255.html",
+      "snippet": "Bumble Beezy – 111111 Lyrics [Интро] Один, один, один Один, одни, один [Куплет 1] Ты страдаешь от панической атаки и …"
+    },
+    {
+      "title": "Bumble Beezy – 111111 Lyrics - Genius",
+      "url": "https://genius.com/Bumble-beezy-111111-lyrics",
+      "snippet": "Sep 13, 2018 · 111111 Lyrics: Один, один, один / Один, один, один / Ты страдаешь от панической атаки (Damn) и хронической …"
+    },
+    {
+      "title": "Lyrics containing the term: lyrics+111111+Unknown",
+      "url": "https://www.lyrics.com/lyrics/lyrics%2B111111%2BUnknown",
+      "snippet": "A list of lyrics, artists and songs that contain the term &quot;lyrics+111111+Unknown&quot; - from the Lyrics.com website."
+    }
+  ]
+}

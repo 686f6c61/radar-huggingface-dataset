@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "sizzlebop/EvoLM-8B-Rubric-GGUF",
+  "slug": "sizzlebop-evolm-8b-rubric-gguf",
+  "author": "sizzlebop",
+  "url": "https://huggingface.co/sizzlebop/EvoLM-8B-Rubric-GGUF",
+  "created_at": "2026-09-19T01:03:16.000Z",
+  "updated_at": "2026-09-19T01:27:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama-cpp",
+    "text-generation",
+    "rubric-generation",
+    "reward-modeling",
+    "evolm",
+    "qwen3",
+    "en",
+    "base_model:stellalisy/EvoLM-8B-Rubric",
+    "base_model:quantized:stellalisy/EvoLM-8B-Rubric",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 50108253600,
+  "storage_human": "50.1 GB",
+  "base_model": "stellalisy/EvoLM-8B-Rubric",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bing Homepage Quiz – Today's Bing Daily Trivia & Featured Image Quiz",
+      "url": "https://bingquiz.com/bing-homepage-quiz/",
+      "snippet": "1 day ago · Play today's Bing Homepage Quiz — Celebrity & Pop Culture Trivia edition — and test your knowledge with the same …"
+    },
+    {
+      "title": "Play Today's Bing Quiz – 5 Trivia Questions, Daily Challenge",
+      "url": "https://bingquiz.org/",
+      "snippet": "1 day ago · Play Bing Quiz online! Take 5 daily trivia questions across 6 categories and climb the rank ladder from Wanderer to …"
+    },
+    {
+      "title": "Today's Bing Quiz | Daily Bing Quizzes",
+      "url": "https://bingquizzes.com/",
+      "snippet": "Try any 2 quiz categories and compare your scores. It is a simple and fun way to sharpen your memory, improve focus, and discover …"
+    },
+    {
+      "title": "Today's Bing Quiz – Play Daily 10 Trivia Questions - BingQuiz.com",
+      "url": "https://bingquiz.com/",
+      "snippet": "3 days ago · Play free game quiz Bing test today, brings together fascinating facts from the Bing quizzes edition and around the …"
+    },
+    {
+      "title": "Bing Homepage Quiz - Play Today's Interactive Homepage Bing Quizzes",
+      "url": "https://bing.weeklyquiz.net/bing-homepage-quiz/",
+      "snippet": "Jan 12, 2026 · The Bing Homepage Quiz will give you exactly three unique questions daily with 3 choices for each one. To answer …"
+    }
+  ]
+}

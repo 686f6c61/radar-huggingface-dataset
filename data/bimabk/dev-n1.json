@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "bimabk/dev-N1",
+  "slug": "bimabk-dev-n1",
+  "author": "bimabk",
+  "url": "https://huggingface.co/bimabk/dev-N1",
+  "created_at": "2026-09-19T00:58:33.000Z",
+  "updated_at": "2026-09-19T00:58:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 3452608258,
+  "storage_human": "3.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Árukereső.hu - Árak és termékek összehasonlítása online boltok teljes ...",
+      "url": "https://www.arukereso.hu/",
+      "snippet": "Vissza a pörgésbe! Termékek, melyek ára az elmúlt két hétben csökkent! Termékek, melyek ára az elmúlt két hétben csökkent!"
+    },
+    {
+      "title": "Áram ára ma — tőzsdei villamosenergia-ár óráról órára és 15 percenként",
+      "url": "https://selectra.hu/aram-ara",
+      "snippet": "Jul 21, 2026 · Ezek tőzsdei (másnapi, day-ahead) piaci árak — az áram nyers ára az adók előtt, nem az az egységár, amelyet Ön …"
+    },
+    {
+      "title": "ÁrGép - Az ár-összehasonlító oldal - Magyarország",
+      "url": "https://www.argep.hu/",
+      "snippet": "Ár-összehasonlítás, tesztek és vélemények az ÁrGép-en. Többszáz webshop árai és akciói: TV, mobiltelefon, tablet, laptop, játék és …"
+    },
+    {
+      "title": "Holtankoljak.hu",
+      "url": "https://holtankoljak.hu/",
+      "snippet": "Sep 9, 2026 · Az elmúlt napokban mindkét üzemanyagtípus ára emelkedett, csütörtökön pedig újabb jelentősebb drágulás történt. A …"
+    },
+    {
+      "title": "Mennyibe kerül ma az áram? 1 kWh ára 2026-ban — és mennyi a …",
+      "url": "https://aramradar.hu/aram-ara/",
+      "snippet": "Mennyi 1 kWh áram ára 2026-ban? A lakossági rezsicsökkentett ár 36,9 Ft/kWh a 2523 kWh-s éves határig, felette 70,1 Ft. Mellette …"
+    }
+  ]
+}

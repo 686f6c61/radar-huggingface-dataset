@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "ShaunSpark/laya-mind2web-browser-agent",
+  "slug": "shaunspark-laya-mind2web-browser-agent",
+  "author": "ShaunSpark",
+  "url": "https://huggingface.co/ShaunSpark/laya-mind2web-browser-agent",
+  "created_at": "2026-09-18T22:14:33.000Z",
+  "updated_at": "2026-09-18T22:19:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "laya-decision-model",
+    "browser-automation",
+    "web-agents",
+    "decision-model",
+    "mind2web",
+    "laya",
+    "en",
+    "arxiv:2306.06070",
+    "base_model:convaiinnovations/laya",
+    "base_model:finetune:convaiinnovations/laya",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1685262167,
+  "storage_human": "1.7 GB",
+  "base_model": "convaiinnovations/laya",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "\"Krymski wyłącznik off\". Ukraińcy zaatakowali 9 tankowców i Krym",
+      "url": "https://www.bankier.pl/wiadomosc/Krymski-wylacznik-off-Ukraincy-zaatakowali-9-tankowcow-i-Krym-9165116.html",
+      "snippet": "Jul 8, 2026 · Siły Systemów Bezzałogowych (SBS) ukraińskiej armii zaatakowały w nocy z wtorku na środę na Morzu Azowskim …"
+    },
+    {
+      "title": "Krym - najnowsze wiadomości - Bankier.pl",
+      "url": "https://www.bankier.pl/tag/krym",
+      "snippet": "Jun 23, 2026 · Krym - najnowsze wiadomości z Polski i ze świata, okiem redaktorów Bankier.pl. Czytaj tylko sprawdzone newsy. …"
+    },
+    {
+      "title": "Atak bezzałogowców na okupowanym Krymie. Wstrzymano ruch na …",
+      "url": "https://www.bankier.pl/wiadomosc/Atak-bezzalogowcow-na-okupowanym-Krymie-Wstrzymano-ruch-na-moscie-9155041.html",
+      "snippet": "Jun 21, 2026 · W nocy z soboty na niedzielę ukraińskie drony po raz kolejny zaatakowały okupowany przez Rosję Krym, na skutek …"
+    },
+    {
+      "title": "Rosyjska prokuratura: Krym dostał się Ukrainie nielegalnie",
+      "url": "https://www.bankier.pl/wiadomosc/Rosyjska-prokuratura-Krym-dostal-sie-Ukrainie-nielegalnie-3369144.html",
+      "snippet": "Jun 27, 2015 · Prokuratura Generalna Rosji uznała, że Ukraina nie ma praw do Krymu. Według rosyjskich ekspertów, Nikita …"
+    },
+    {
+      "title": "Odcinają Rosjan od prądu i paliwa. Potężne uderzenie Ukrainy na Krym",
+      "url": "https://www.bankier.pl/wiadomosc/Odcinaja-Rosjan-od-pradu-i-paliwa-Potezne-uderzenie-Ukrainy-na-Krym-9154890.html",
+      "snippet": "Jun 20, 2026 · Ukraińska armia przeprowadziła ataki z wykorzystaniem dronów na obiekty infrastruktury energetycznej na …"
+    }
+  ]
+}

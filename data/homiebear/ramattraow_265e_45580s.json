@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Homiebear/RamattraOW_265e_45580s",
+  "slug": "homiebear-ramattraow_265e_45580s",
+  "author": "Homiebear",
+  "url": "https://huggingface.co/Homiebear/RamattraOW_265e_45580s",
+  "created_at": "2026-09-19T00:03:38.000Z",
+  "updated_at": "2026-09-19T00:55:58.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 507641388,
+  "storage_human": "508 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft Teams Blog | Microsoft Community Hub",
+      "url": "https://techcommunity.microsoft.com/category/microsoftteams/blog/microsoftteamsblog",
+      "snippet": "Welcome to the Microsoft Teams Blog! Learn best practices, news, and trends directly from the team behind Microsoft Teams."
+    },
+    {
+      "title": "MY FIX!! MS TEAMS says I'm offline when I'm connected to my network ...",
+      "url": "https://techcommunity.microsoft.com/discussions/microsoftteams/my-fix-ms-teams-says-im-offline-when-im-connected-to-my-network-with-no-issues/3662105",
+      "snippet": "Oct 25, 2022 · My Teams on my laptop kept telling me I was \"offline\" even though I was connected with a strong signal to my wi-fi, I …"
+    },
+    {
+      "title": "microsoft teams怎么加入会议-百度经验",
+      "url": "https://jingyan.baidu.com/article/e52e3615b3fabe01c60c51dd.html",
+      "snippet": "Jan 3, 2000 · microsoft teams怎么加入会议,创建完成会议后就可以把会议链接发给参会人员了，参会人员直接打开链接就可以加入了 …"
+    },
+    {
+      "title": "怎么使用Microsoft Teams-百度经验",
+      "url": "https://jingyan.baidu.com/article/00a07f380c970f82d028dc8b.html",
+      "snippet": "Feb 23, 2018 · 怎么使用Microsoft Teams,MicrooftTeam团队协作工具，里面可以公布活动，群组讨论、文件共享，而且还有丰富的表 …"
+    },
+    {
+      "title": "What’s New in Microsoft Teams | July 2026",
+      "url": "https://techcommunity.microsoft.com/blog/microsoftteamsblog/what%E2%80%99s-new-in-microsoft-teams--july-2026/4542510",
+      "snippet": "Jul 31, 2026 · Teams Phone Queues app for Microsoft Teams in GCC High Government organizations need advanced collaborative …"
+    }
+  ]
+}

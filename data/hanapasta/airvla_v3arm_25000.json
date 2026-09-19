@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "hanapasta/airvla_v3arm_25000",
+  "slug": "hanapasta-airvla_v3arm_25000",
+  "author": "hanapasta",
+  "url": "https://huggingface.co/hanapasta/airvla_v3arm_25000",
+  "created_at": "2026-09-18T22:53:56.000Z",
+  "updated_at": "2026-09-18T22:55:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "robotics",
+    "vision-language-action",
+    "pi0",
+    "aerial-manipulation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4028019472,
+  "parameters_human": "4.03B",
+  "storage_bytes": 8892513248,
+  "storage_human": "8.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Szkolenie na wózek widlowy - Nasza-Biedronka.pl",
+      "url": "https://nasza-biedronka.pl/post.php?id=8b8a5736-szkolenie-na-wozek-widlowy",
+      "snippet": "Hej. Za parę dni mam mieć szkolenie na wózek widłowy. Proszę mi powiedzieć jak to wygląda będę pierwszy raz na takim szkoleniu. …"
+    },
+    {
+      "title": "Świadectwo Pracy – Nasza-Biedronka.pl",
+      "url": "https://nasza-biedronka.pl/post.php?id=8bd5dcf6-swiadectwo-pracy",
+      "snippet": "Forum pracowników Biedronki – szczegóły wątku i komentarze. Witam. Mój stosunek pracy wygasł 08.09.2014 dzisiaj mamy …"
+    },
+    {
+      "title": "Forum - Nasza-Biedronka.pl",
+      "url": "https://nasza-biedronka.pl/forum.php?f=4",
+      "snippet": "Sep 10, 2026 · Forum pracowników Biedronki — przeglądaj kategorie, dyskutuj i dziel się doświadczeniem."
+    },
+    {
+      "title": "wypowiedzenie a koniec umowy - nasza-biedronka.pl",
+      "url": "https://nasza-biedronka.pl/post.php?id=db9dbffe-wypowiedzenie-a-koniec-umowy",
+      "snippet": "Forum pracowników Biedronki – szczegóły wątku i komentarze. mam takie pytanie kończy mi sie umowa z dniem 31.12.2011 czy …"
+    },
+    {
+      "title": "jak dostać się do Biedronki? - Nasza-Biedronka.pl",
+      "url": "https://nasza-biedronka.pl/post.php?id=eb78284f-jak-dostac-sie-do-biedronki",
+      "snippet": "Forum pracowników Biedronki – szczegóły wątku i komentarze. mam takie pytanie? czy trudno dostać się do Biedronki na kasjera ? …"
+    }
+  ]
+}

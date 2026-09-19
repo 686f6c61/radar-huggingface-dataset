@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "mounirabubadr/sd-class-butterflies-32",
+  "slug": "mounirabubadr-sd-class-butterflies-32",
+  "author": "mounirabubadr",
+  "url": "https://huggingface.co/mounirabubadr/sd-class-butterflies-32",
+  "created_at": "2026-09-19T01:36:58.000Z",
+  "updated_at": "2026-09-19T01:37:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "unconditional-image-generation",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "pytorch",
+    "unconditional-image-generation",
+    "diffusion-models-class",
+    "license:mit",
+    "diffusers:DDPMPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": 18536323,
+  "parameters_human": "18.5M",
+  "storage_bytes": 74185252,
+  "storage_human": "74 MB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lichess - Schachcomputer.info Community",
+      "url": "https://www.schachcomputer.info/forum/forumdisplay.php?f=26",
+      "snippet": "Apr 2, 2024 · Unterforum für Herausforderungen + Ankündigung von Online Partien auf lichess Subforum for challenges + …"
+    },
+    {
+      "title": "lichess - Connectivity comparison between chess websites? - Chess …",
+      "url": "https://chess.stackexchange.com/questions/37382/connectivity-comparison-between-chess-websites",
+      "snippet": "Nov 13, 2021 · I wonder if there has been a test to compare connectivity to the major chess websites. Or whether it is easy to run …"
+    },
+    {
+      "title": "Schach: Schachfeld.de",
+      "url": "https://www.schachfeld.de/forum.php",
+      "snippet": "May 23, 2026 · Schach Forum - Schach: Schachfeld.de ist eine Plattform, wo Schach-Fans über das königliche Spiel diskutieren und …"
+    },
+    {
+      "title": "Cheater melden bei lichess - Schach: Schachfeld.de",
+      "url": "https://www.schachfeld.de/threads/37268-cheater-melden-bei-lichess",
+      "snippet": "Feb 8, 2021 · Über lichess kann man eigentlich nur positives berichten. Zum Beispiel: Mein Account wurde im Januar geschlossen …"
+    },
+    {
+      "title": "How get all combinations of a path in Lichess analysis",
+      "url": "https://chess.stackexchange.com/questions/47583/how-get-all-combinations-of-a-path-in-lichess-analysis",
+      "snippet": "Jan 8, 2026 · That would be a limitation of the UCI protocol that is used by modern chess engines, but also of the architecture of …"
+    }
+  ]
+}

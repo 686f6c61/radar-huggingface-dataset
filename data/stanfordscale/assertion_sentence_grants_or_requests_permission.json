@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "id": "StanfordSCALE/assertion_sentence_grants_or_requests_permission",
+  "slug": "stanfordscale-assertion_sentence_grants_or_requests_permission",
+  "author": "StanfordSCALE",
+  "url": "https://huggingface.co/StanfordSCALE/assertion_sentence_grants_or_requests_permission",
+  "created_at": "2026-09-18T20:48:41.000Z",
+  "updated_at": "2026-09-18T20:48:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "setfit",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "setfit",
+    "safetensors",
+    "mpnet",
+    "text-classification",
+    "education",
+    "classroom-discourse",
+    "edubehaviors",
+    "assertion",
+    "en",
+    "dataset:StanfordSCALE/assertions_llm_annotated_talkmoves",
+    "base_model:sentence-transformers/paraphrase-mpnet-base-v2",
+    "base_model:finetune:sentence-transformers/paraphrase-mpnet-base-v2",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109486464,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437974679,
+  "storage_human": "438 MB",
+  "base_model": "sentence-transformers/paraphrase-mpnet-base-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "F1 (positive class, test)",
+      "value": 0.1176
+    },
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "Precision (positive class, test)",
+      "value": 0.25
+    },
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "Recall (positive class, test)",
+      "value": 0.0769
+    },
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "ROC-AUC (test)",
+      "value": 0.6513
+    }
+  ],
+  "sources": [
+    {
+      "title": "Massage videos - XNXX.COM",
+      "url": "https://www.xnxx.com/search/massage",
+      "snippet": "Horny MILF massages her pussy while watching her stepson!"
+    },
+    {
+      "title": "Real\\ Massage Porn Videos - xHamster",
+      "url": "https://xhamster.com/search/real%5C+massage",
+      "snippet": "Watch real\\ massage porn videos. Explore tons of XXX movies with sex scenes in 2026 on xHamster!"
+    },
+    {
+      "title": "Massage Porn Videos - LET'SPORN!",
+      "url": "https://letsporn.com/categories/massage",
+      "snippet": "When horny men go to a massage parlor they want the masseuse to also jerk them off for a happy ending. Check out free massage …"
+    },
+    {
+      "title": "Massage HD Porn. High Definition Videos - HQporn.xxx",
+      "url": "https://hqporn.xxx/hd/massage/",
+      "snippet": "Massage porn videos in HD - 720p, 1080p resolution to view online. Our archive is carefully selected and we show only the best of …"
+    },
+    {
+      "title": "Massage Porn Videos: Erotic Nuru Rubdowns | xHamster",
+      "url": "https://xhamster.com/categories/massage",
+      "snippet": "Watch erotic 💆 massage porn videos with happy ending handjobs and great hardcore sex. The whole body gets involved in soapy Nuru …"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "akoumpa/Moonlight-V4-16B-A3B",
+  "slug": "akoumpa-moonlight-v4-16b-a3b",
+  "author": "akoumpa",
+  "url": "https://huggingface.co/akoumpa/Moonlight-V4-16B-A3B",
+  "created_at": "2026-09-18T23:28:10.000Z",
+  "updated_at": "2026-09-18T23:31:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "deepseek_v4",
+    "text-generation",
+    "mixture-of-experts",
+    "moe",
+    "hybrid-attention",
+    "compressed-sparse-attention",
+    "hyper-connections",
+    "mhc",
+    "architecture-config",
+    "untrained",
+    "from-scratch",
+    "moonlight",
+    "conversational",
+    "arxiv:2502.16982",
+    "arxiv:2606.19348",
+    "arxiv:2412.19437",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2795286,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "python - No module named pkg_resources - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/7446187/no-module-named-pkg-resources",
+      "snippet": "Sep 16, 2011 · did the job when using Python 3's venv module. Python 2's virtualenv supported flag, but one has to install on …"
+    },
+    {
+      "title": "What does the \"at\" (@) symbol do in Python? - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/6392739/what-does-the-at-symbol-do-in-python",
+      "snippet": "What does the “at” (@) symbol do in Python? @ symbol is a syntactic sugar python provides to utilize decorator, to paraphrase the …"
+    },
+    {
+      "title": "程序员编程看起来最舒服的字体（英文的和中文的）、字号、颜色和背 …",
+      "url": "https://www.zhihu.com/question/19637242/answers/updated",
+      "snippet": "好看的纯英文编程字体，可太多了！然而国内开发者在 中英文混排 场景中，更需要 严格等宽、高辨识度 的字体。结合实测经验，以下 …"
+    },
+    {
+      "title": "python - pip не является внешней или внутренней командой / не ...",
+      "url": "https://ru.stackoverflow.com/questions/624272/pip-%d0%bd%d0%b5-%d1%8f%d0%b2%d0%bb%d1%8f%d0%b5%d1%82%d1%81%d1%8f-%d0%b2%d0%bd%d0%b5%d1%88%d0%bd%d0%b5%d0%b9-%d0%b8%d0%bb%d0%b8-%d0%b2%d0%bd%d1%83%d1%82%d1%80%d0%b5%d0%bd%d0%bd%d0%b5%d0%b9-%d0%ba%d0%be%d0%bc%d0%b0%d0%bd%d0%b4%d0%be%d0%b9-%d0%bd%d0%b5-%d1%80%d0%b0%d1%81%d0%bf%d0%be%d0%b7%d0%bd%d0%b0%d0%bd%d0%be-%d0%ba%d0%b0%d0%ba-%d0%b8%d0%bc%d1%8f-%d0%ba%d0%be%d0%bc%d0%b0%d0%bd%d0%b4%d0%bb%d0%b5",
+      "snippet": "Когда я пытаюсь установить модуль, выдает: &quot;pip не является внешней или внутренней командой, исполняемой …"
+    },
+    {
+      "title": "Python - 知乎",
+      "url": "https://www.zhihu.com/topic/19552832",
+      "snippet": "Python是解释型编程语言，运行Python程序时，需要将解释器翻译Python代码。 Python是一种不受局限、跨平台的开源编程语言，其 …"
+    }
+  ]
+}

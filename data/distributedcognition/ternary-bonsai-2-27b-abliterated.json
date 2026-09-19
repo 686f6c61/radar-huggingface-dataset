@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "distributedcognition/Ternary-Bonsai-2-27B-abliterated",
+  "slug": "distributedcognition-ternary-bonsai-2-27b-abliterated",
+  "author": "distributedcognition",
+  "url": "https://huggingface.co/distributedcognition/Ternary-Bonsai-2-27B-abliterated",
+  "created_at": "2026-09-19T01:40:37.000Z",
+  "updated_at": "2026-09-22T00:13:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "abliteration",
+    "uncensored",
+    "ternary",
+    "bonsai",
+    "qwen3.8",
+    "base_model:prism-ml/Ternary-Bonsai-2-27B-gguf",
+    "base_model:quantized:prism-ml/Ternary-Bonsai-2-27B-gguf",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 19106069513,
+  "storage_human": "19.1 GB",
+  "base_model": "prism-ml/Ternary-Bonsai-2-27B-gguf",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Восстановление системы.",
+      "url": "https://virusinfo.info/showthread.php?t=6892&s=d8eb9f1cefa1949075da6cfe3071f5b1",
+      "snippet": "Feb 1, 2008 · 1 пуск -все программы- стандартные -служебные- восстановление системы 2 пуск - выполнить - rstrui.exe …"
+    },
+    {
+      "title": "Восстановление системы (заявка № 25392)",
+      "url": "https://virusinfo.info/showthread.php?t=25392",
+      "snippet": "Восстановление системы В \"Мой компьютер\" \\свойства системы не отображается закладка \"Восстановление системы\". Как …"
+    },
+    {
+      "title": "System Restore | Seven Forums",
+      "url": "https://www.sevenforums.com/threads/system-restore.700/",
+      "snippet": "Nov 26, 2008 · System Restore uses a feature called System Protection to regularly create and save restore points of selected hard …"
+    },
+    {
+      "title": "DreamScene - Install in Windows 7 and Vista | Seven Forums",
+      "url": "https://www.sevenforums.com/threads/dreamscene-install-in-windows-7-and-vista.63841/",
+      "snippet": "Feb 15, 2010 · Official DreamScenes is only available for Vista Ultimate (more details in this tutorial CLICK ) there is no DreamScene …"
+    },
+    {
+      "title": "Restoring Images to Hyper-V - forum.acronis.com",
+      "url": "https://forum.acronis.com/forum/acronis-backup-recovery-10-11-forum/restoring-images-hyper-v",
+      "snippet": "Oct 16, 2009 · Hello Folks Sorry for the long post but hopefully it will be worth it. Is there anyone else out there trying to restore …"
+    }
+  ]
+}

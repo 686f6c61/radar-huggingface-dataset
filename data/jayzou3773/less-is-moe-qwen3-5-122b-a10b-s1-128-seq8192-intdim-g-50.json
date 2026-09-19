@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "jayzou3773/less-is-moe-qwen3.5-122b-a10b-s1-128-seq8192-intdim-g-50",
+  "slug": "jayzou3773-less-is-moe-qwen3-5-122b-a10b-s1-128-seq8192-intdim-g-50",
+  "author": "jayzou3773",
+  "url": "https://huggingface.co/jayzou3773/less-is-moe-qwen3.5-122b-a10b-s1-128-seq8192-intdim-g-50",
+  "created_at": "2026-09-18T23:26:17.000Z",
+  "updated_at": "2026-09-18T23:31:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe_text",
+    "moe",
+    "pruning",
+    "less-is-moe",
+    "text-generation",
+    "conversational",
+    "dataset:jayzou3773/less-is-moe-s1-calibration-128-seq8192",
+    "base_model:Qwen/Qwen3.5-122B-A10B",
+    "base_model:finetune:Qwen/Qwen3.5-122B-A10B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 64129468416,
+  "parameters_human": "64.13B",
+  "storage_bytes": 128279025365,
+  "storage_human": "128.3 GB",
+  "base_model": "Qwen/Qwen3.5-122B-A10B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Quote of the Day - BrainyQuote",
+      "url": "https://www.brainyquote.com/quote_of_the_day",
+      "snippet": "1 day ago · Share five inspirational Quotes of the Day with friends on Facebook, Twitter, and blogs. Enjoy our Brainy, Funny, Love, …"
+    },
+    {
+      "title": "Bing",
+      "url": "https://www.bing.com/copilotsearch?q=quotes+of+the+day",
+      "snippet": "由於此網站的設置，我們無法提供該頁面的具體描述。"
+    },
+    {
+      "title": "Quote of the Day — A Fresh Thought for Today",
+      "url": "https://bingquiz.com/quote-of-the-day/",
+      "snippet": "Aug 14, 2026 · Start today with a meaningful quote chosen to spark a positive thought, fresh perspective, or little moment of …"
+    },
+    {
+      "title": "www.bingquote.com",
+      "url": "https://www.bingquote.com/home",
+      "snippet": ""
+    },
+    {
+      "title": "Quote of the Day | 1 Daily Powerful Quote To Inspire",
+      "url": "https://quotesoftheday.org/",
+      "snippet": "1 day ago · Quote of the Day, sometimes called a daily quote , is a short and memorable line that you read for motivation, inspiration, …"
+    }
+  ]
+}

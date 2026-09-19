@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "AlinaGonch/granite41-8b-squad-ratio-0.00-seed-42",
+  "slug": "alinagonch-granite41-8b-squad-ratio-0-00-seed-42",
+  "author": "AlinaGonch",
+  "url": "https://huggingface.co/AlinaGonch/granite41-8b-squad-ratio-0.00-seed-42",
+  "created_at": "2026-09-19T00:26:43.000Z",
+  "updated_at": "2026-09-19T00:26:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 197993952,
+  "storage_human": "198 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "渣打銀行戶口間的轉賬 – 渣打銀行香港 - Standard Chartered",
+      "url": "https://www.sc.com/hk/zh/bank-with-us/own-account-transfer/",
+      "snippet": "渣打銀行戶口間轉賬的升級 24小時外匯交易服務，再無交易時間限制 匯款前即時查看匯率，透明度高! 進行外幣轉賬亦可享有外匯會 …"
+    },
+    {
+      "title": "付款及轉賬常見問題 | 渣打網上理財支援中心 – 渣打銀行香港",
+      "url": "https://www.sc.com/hk/zh/help/digital/online-banking/payments-and-transfers/",
+      "snippet": "匯款是本行提供的一種全新的網上服務，可以讓您向海外超過200多個國家進行匯款。 匯款如何運作？ 您必須首先在渣打網上理財登 …"
+    },
+    {
+      "title": "渣打本地跨行轉賬（CHATS及FPS）手續費、流程、轉賬時間、上限一 …",
+      "url": "https://pandafreedom.com/%E6%B8%A3%E6%89%93%E8%B7%A8%E8%A1%8C%E8%BD%89%E8%B3%AC/",
+      "snippet": "Aug 24, 2026 · 什麼是CHATS？ 與FPS或電匯有什麼分別？ CHATS（Clearing House Automated Transfer System，俗稱特快轉賬 / …"
+    },
+    {
+      "title": "本地外幣跨行轉賬 CHATS 2026｜10大銀行美元轉帳手續費、上限及步 …",
+      "url": "https://www.moneyhero.com.hk/zh/banking/blog/%E6%9C%AC%E5%9C%B0%E5%A4%96%E5%B9%A3%E8%B7%A8%E8%A1%8C%E8%BD%89%E8%B3%AC-chats-%E6%89%8B%E7%BA%8C%E8%B2%BB-%E6%AD%A5%E9%A9%9F",
+      "snippet": "2 days ago · MoneyHero 為你拆解 CHATS 轉賬系統的運作，比較 10 間銀行的外幣跨行轉賬收費、每日上限、截數時間及操作步驟， …"
+    },
+    {
+      "title": "本地戶口跨行轉賬 – 渣打銀行香港 - Standard Chartered",
+      "url": "https://www.sc.com/hk/zh/bank-with-us/local-third-party-transfer/",
+      "snippet": "由2026年9月1日至2026年10月31日（包括首尾兩日），若閣下在於該曆月（以交易日計算為準）憑渣打 / MANHATTAN信用卡透過不 …"
+    }
+  ]
+}

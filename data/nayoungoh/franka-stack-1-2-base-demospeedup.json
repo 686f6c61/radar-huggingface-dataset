@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "nayoungoh/franka-stack-1-2-base-demospeedup",
+  "slug": "nayoungoh-franka-stack-1-2-base-demospeedup",
+  "author": "nayoungoh",
+  "url": "https://huggingface.co/nayoungoh/franka-stack-1-2-base-demospeedup",
+  "created_at": "2026-09-19T02:17:45.000Z",
+  "updated_at": "2026-09-19T02:19:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gr00t_n1_5",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 2724114368,
+  "parameters_human": "2.72B",
+  "storage_bytes": 7585904744,
+  "storage_human": "7.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to See All Bing Related Searches on Any Device",
+      "url": "https://rottenwifi.com/how-to-see-all-bing-related-searches/",
+      "snippet": "Jul 1, 2026 · This guide walks through the practical ways to see Bing related searches on desktop, mobile, and Microsoft Edge. It also …"
+    },
+    {
+      "title": "Bing",
+      "url": "https://www.bing.com/version",
+      "snippet": "Bing ... Versions"
+    },
+    {
+      "title": "How to See All Bing Related Searches - cloudspress.com",
+      "url": "https://www.cloudspress.com/how-to-see-all-bing-related-searches/",
+      "snippet": "Aug 7, 2026 · Bing does not have a public “see everything” page for a keyword. Its related searches and autocomplete suggestions …"
+    },
+    {
+      "title": "Bing",
+      "url": "https://www.bing.com/set/search",
+      "snippet": "Set Bing as your default search engine Try it now"
+    },
+    {
+      "title": "How To See All Bing Related Searches - RottenWifi.com Blog",
+      "url": "https://blog.rottenwifi.com/how-to-see-all-bing-related-searches/",
+      "snippet": "Jul 2, 2026 · There is no single button that reveals every Bing related search. The closest practical method is to combine Bing’s …"
+    }
+  ]
+}

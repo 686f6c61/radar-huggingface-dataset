@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "bimabk/dev-S2",
+  "slug": "bimabk-dev-s2",
+  "author": "bimabk",
+  "url": "https://huggingface.co/bimabk/dev-S2",
+  "created_at": "2026-09-18T20:07:00.000Z",
+  "updated_at": "2026-09-18T20:07:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:/cache/models/unsloth--gemma-2-9b-it",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:unsloth/gemma-2-9b-it",
+    "base_model:adapter:unsloth/gemma-2-9b-it",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1763021080,
+  "storage_human": "1.8 GB",
+  "base_model": "unsloth/gemma-2-9b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OMODA是什么意思? - 知乎",
+      "url": "https://www.zhihu.com/question/500218233",
+      "snippet": "并且，在外观设计上，OMODA 5采用短悬与渐变轮毂的设计手法，采用光速运动腰线、双层渐进式尾翼和溜背式造型，赋予整车流动 …"
+    },
+    {
+      "title": "急急急！哪位是开过1.6TGDI-7DCT动力组合的奇瑞汽车车主，分享一下 …",
+      "url": "https://www.zhihu.com/question/529711790",
+      "snippet": "等了好久，奇瑞OMODA 5 终于可以买了，外观和内饰足够运动，我很喜欢。不过它搭载的1.6TGDI-7DCT，究竟如…"
+    },
+    {
+      "title": "微信电脑端后台运行程序WeChatAppEX.exe占用极高CPU，有没有大哥 …",
+      "url": "https://www.zhihu.com/question/610070200",
+      "snippet": "电脑端微信突然冒出个程序WeChatAppEX.exe运行，占用极高的CPU，电脑风扇呼呼作响，而且关闭微信这个程序…"
+    },
+    {
+      "title": "欧洲车市 | 比利时8月：比亚迪暴涨 124.4%，特斯拉大幅回升，宝马 …",
+      "url": "https://www.zhihu.com/pin/2081305206525007431",
+      "snippet": "比亚迪一个品牌 1,001 辆，几乎相当于 Omoda、极氪、吉利、领克四家之和。 Jaecoo 和 Omoda 涨幅都在 +250% 以上，是奇瑞双品 …"
+    },
+    {
+      "title": "俄罗斯汽车销量前十名七款来自中国品牌，长城、奇瑞和吉利等受追 …",
+      "url": "https://www.zhihu.com/question/624859983",
+      "snippet": "值得注意的是，排在榜单第6、7、10位的欧萌达OMODA、星途EXEED、捷途Jetour，也是奇瑞汽车旗下品牌。 其中，欧萌达是去年 …"
+    }
+  ]
+}

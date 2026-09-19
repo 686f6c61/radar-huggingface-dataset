@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "lea97338/Lou",
+  "slug": "lea97338-lou",
+  "author": "lea97338",
+  "url": "https://huggingface.co/lea97338/Lou",
+  "created_at": "2026-09-18T21:34:00.000Z",
+  "updated_at": "2026-09-21T21:02:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "text-to-image",
+    "pytorch",
+    "diffusion",
+    "ddpm",
+    "custom-architecture",
+    "en",
+    "dataset:pranked03/flowers-blip-captions",
+    "license:mit",
+    "endpoints_compatible",
+    "diffusers:StableDiffusionPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 56099543,
+  "parameters_human": "56.1M",
+  "storage_bytes": 3648676382,
+  "storage_human": "3.6 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Καρπενήσι - Βικιπαίδεια",
+      "url": "https://el.wikipedia.org/wiki/%CE%9A%CE%B1%CF%81%CF%80%CE%B5%CE%BD%CE%AE%CF%83%CE%B9",
+      "snippet": "Για την προέλευση του ονόματος της πόλης υπάρχουν αρκετές εκδοχές: Η λέξη Καρπενήσι προέρχεται από την αρωμουνική λέξη …"
+    },
+    {
+      "title": "Τα 10 κορυφαία αξιοθέατα - Καρπενήσι 2026 - Tripadvisor",
+      "url": "https://www.tripadvisor.com.gr/Attractions-g793702-Activities-Karpenisi_Evrytania_Region_Central_Greece.html",
+      "snippet": "Καρπενήσι, Ελλάδα - Αξιοθέατα: Δείτε κριτικές και φωτογραφίες από ταξιδιώτες του Tripadvisor για δραστηριότητες, ψυχαγωγία, …"
+    },
+    {
+      "title": "Καρπενήσι: Ιδανικός προορισμός λάτρεις φύσης και καλού φαγητού",
+      "url": "https://www.travel.gr/experiences/enas-pliris-odigos-gia-to-karpenisi-po/",
+      "snippet": "Καρπενήσι, Μικρό και Μεγάλο Χωριό, Προυσός, Βούτυρο και Κορυσχάδες συνθέτουν ένα μοναδικό σύμπλεγμα εξαιρετικού φυσικού …"
+    },
+    {
+      "title": "Ανακαλύψτε τον Δήμο Καρπενησίου, αξιοθέατα, χωριά, …",
+      "url": "https://visitkarpenissi.gr/",
+      "snippet": "Ο δήμος Καρπενήσιου σας προκαλεί να ανακαλύψτε τις ομορφιές του τόπου: αξιοθέατα, χωριά, μουσεία, μοναστήρια, δραστηριότητες"
+    },
+    {
+      "title": "Δήμος Καρπενησίου – Όλες οι πληροφορίες για τον δήμο Καρπενησίου",
+      "url": "https://karpenissi.gr/",
+      "snippet": "Ο Δήμος Καρπενησίου προήλθε από τη συνένωση έξι μικρών ορεινών δήμων: της Δομνίστας, του Καρπενησίου, των Κτημενίων, της …"
+    }
+  ]
+}

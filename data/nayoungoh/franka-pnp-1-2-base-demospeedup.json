@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "nayoungoh/franka-pnp-1-2-base-demospeedup",
+  "slug": "nayoungoh-franka-pnp-1-2-base-demospeedup",
+  "author": "nayoungoh",
+  "url": "https://huggingface.co/nayoungoh/franka-pnp-1-2-base-demospeedup",
+  "created_at": "2026-09-19T02:14:13.000Z",
+  "updated_at": "2026-09-19T02:16:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gr00t_n1_5",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 2724114368,
+  "parameters_human": "2.72B",
+  "storage_bytes": 7585904744,
+  "storage_human": "7.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft account | Zaloguj się lub utwórz swoje konto już dziś — Microsoft",
+      "url": "https://account.microsoft.com/account/Account?mkt=pl-PL",
+      "snippet": "Twoje konto Microsoft łączy wszystkie aplikacje i usługi firmy Microsoft. Zaloguj się, aby zarządzać swoim kontem. Po zalogowaniu …"
+    },
+    {
+      "title": "Jak zalogować się na konto Microsoft | Microsoft Support",
+      "url": "https://support.microsoft.com/pl-pl/accounts-billing/manage/how-to-sign-in-to-a-microsoft-account",
+      "snippet": "W tym artykule wyjaśniono, jak zalogować się do osobistego lub służbowego konta Microsoft, a także podano rozwiązania, jeśli nie …"
+    },
+    {
+      "title": "Dostęp do konta użytkownika w systemie Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/pl-pl/accounts-billing/security/user-account-access-in-windows",
+      "snippet": "Dowiedz się, jak się logować, wylogowywać, blokować i przełączać konta użytkownika w systemie Windows."
+    },
+    {
+      "title": "Microsoft",
+      "url": "https://account.microsoft.com/?refp=landing&mkt=PL-PL",
+      "snippet": ""
+    },
+    {
+      "title": "Logowanie do programu Outlook | Microsoft 365",
+      "url": "https://www.microsoft.com/pl-pl/microsoft-365/outlook/log-in?msockid=104d0367495361c80a2114be487060ef",
+      "snippet": "Zaloguj się do programu Outlook w ramach platformy Microsoft 365, aby uzyskać dostęp do swojej poczty e-mail, kalendarza i nie …"
+    }
+  ]
+}

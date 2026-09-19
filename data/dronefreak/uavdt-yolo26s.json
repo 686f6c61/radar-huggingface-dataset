@@ -1,0 +1,106 @@
+{
+  "schema": 1,
+  "id": "dronefreak/uavdt-yolo26s",
+  "slug": "dronefreak-uavdt-yolo26s",
+  "author": "dronefreak",
+  "url": "https://huggingface.co/dronefreak/uavdt-yolo26s",
+  "created_at": "2026-09-18T21:22:24.000Z",
+  "updated_at": "2026-09-21T13:58:10.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "object-detection",
+    "detectionbench",
+    "pytorch",
+    "computer-vision",
+    "aerial-imagery",
+    "drone",
+    "uav",
+    "vehicle-detection",
+    "traffic-surveillance",
+    "small-object-detection",
+    "dataset:dronefreak/UAVDT",
+    "arxiv:1804.00518",
+    "arxiv:2606.03748",
+    "arxiv:2511.09554",
+    "arxiv:2304.07193",
+    "arxiv:2405.14458",
+    "arxiv:2410.17725",
+    "arxiv:2402.13616",
+    "base_model:Ultralytics/YOLO26",
+    "base_model:finetune:Ultralytics/YOLO26",
+    "license:agpl-3.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 57172770,
+  "storage_human": "57 MB",
+  "base_model": "Ultralytics/YOLO26",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Object Detection",
+      "dataset": "UAVDT",
+      "metric": "mAP@50 (test split)",
+      "value": 14.09
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "UAVDT",
+      "metric": "mAP@50-95 (test split)",
+      "value": 7.91
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "UAVDT",
+      "metric": "Precision (test split)",
+      "value": 23.88
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "UAVDT",
+      "metric": "Recall (test split)",
+      "value": 27.05
+    }
+  ],
+  "sources": [
+    {
+      "title": "Garmin HRM 200 vs. HRM 600: Which one is better? - Wareable",
+      "url": "https://www.wareable.com/fitness-trackers/garmin-hrm-200-vs-hrm-600",
+      "snippet": "Aug 20, 2026 · We compared Garmin HRM 200 and HRM 600 chest strap heart rate monitors to determine which performs better."
+    },
+    {
+      "title": "Which Garmin heart rate monitor is right for you? | Blog",
+      "url": "https://www.garmin.com/en-US/blog/fitness/which-garmin-heart-rate-monitor-is-right-for-you/",
+      "snippet": "Sep 9, 2025 · HRM 200, HRM-Fit and HRM 600: Wondering which Garmin heart rate monitor you should choose? We'll explain the …"
+    },
+    {
+      "title": "Garmin HRM 600 vs HRM 200: What’s the Difference?",
+      "url": "https://garminrumors.com/garmin-hrm-600-vs-hrm-200-whats-the-difference/",
+      "snippet": "Explore the Garmin HRM 600 vs HRM 200: What’s the Difference? Learn key features and capabilities of each model."
+    },
+    {
+      "title": "Garmin HRM 200 vs Garmin HRM 600 - trailrunningcompare.com",
+      "url": "https://trailrunningcompare.com/heart-rate-monitor/garmin-hrm-200-vs-garmin-hrm-600",
+      "snippet": "Compare the features, performance, and value of Garmin HRM 200 and Garmin HRM 600 in our comprehensive trail running gear …"
+    },
+    {
+      "title": "Which Garmin heart rate monitor is right for you?",
+      "url": "https://www.garmin.com/en-GB/blog/which-garmin-heart-rate-monitor-is-right-for-you/",
+      "snippet": "Apr 7, 2026 · HRM 200, HRM-Fit and HRM 600: Wondering which Garmin heart rate monitor you should choose? We'll explain the …"
+    }
+  ]
+}

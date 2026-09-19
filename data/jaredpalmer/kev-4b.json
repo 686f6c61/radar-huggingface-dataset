@@ -1,0 +1,111 @@
+{
+  "schema": 1,
+  "id": "jaredpalmer/kev-4b",
+  "slug": "jaredpalmer-kev-4b",
+  "author": "jaredpalmer",
+  "url": "https://huggingface.co/jaredpalmer/kev-4b",
+  "created_at": "2026-09-19T03:59:43.000Z",
+  "updated_at": "2026-09-21T14:15:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "decision-model",
+    "calibration",
+    "lora",
+    "multiple-choice",
+    "typesafe",
+    "qwen3.5",
+    "text-classification",
+    "en",
+    "dataset:legacy-datasets/banking77",
+    "dataset:google/boolq",
+    "dataset:fancyzhx/ag_news",
+    "dataset:nyu-mll/multi_nli",
+    "dataset:SetFit/sst5",
+    "dataset:Yelp/yelp_review_full",
+    "dataset:CogComp/trec",
+    "dataset:fancyzhx/dbpedia_14",
+    "dataset:SetFit/amazon_reviews_multi_en",
+    "dataset:stanfordnlp/imdb",
+    "base_model:Qwen/Qwen3.5-4B-Base",
+    "base_model:adapter:Qwen/Qwen3.5-4B-Base",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 6,
+  "downloads_30d": 170,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 581871494,
+  "storage_human": "582 MB",
+  "base_model": "Qwen/Qwen3.5-4B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "typed decision (choice / noul / score)",
+      "dataset": "decision-v4 development (1,204 records; ten trained public sources + programmatic policy pairs)",
+      "metric": null,
+      "value": 0.854
+    },
+    {
+      "task": "typed decision (choice / noul / score)",
+      "dataset": "decision-v4 development (1,204 records; ten trained public sources + programmatic policy pairs)",
+      "metric": "ECE, raw probabilities",
+      "value": 0.065
+    },
+    {
+      "task": "typed decision",
+      "dataset": "transfer-v4 development (764 records; six never-trained sources + held-out policy structures)",
+      "metric": null,
+      "value": 0.79
+    },
+    {
+      "task": "typed decision",
+      "dataset": "transfer-v4 development (764 records; six never-trained sources + held-out policy structures)",
+      "metric": null,
+      "value": 0.328
+    }
+  ],
+  "sources": [
+    {
+      "title": "Banque & Assurances - Particulier - Crédit Agricole Alpes Provence",
+      "url": "https://www.credit-agricole.fr/ca-alpesprovence/particulier.html",
+      "snippet": "Découvrez les offres et services du Crédit Agricole : compte bancaire, assurance-vie, épargne, placement, retraite, habitation, …"
+    },
+    {
+      "title": "Agences bancaires CA Alpes Provence - Crédit Agricole",
+      "url": "https://www.credit-agricole.fr/particulier/agence/alpes-provence.html",
+      "snippet": "Retrouvez les agences Banques et Assurance du Crédit Agricole Alpes Provence : Tous nos produits bancaires et d'assurance près …"
+    },
+    {
+      "title": "Crédit Agricole Alpes Provence - chiffres clés/contacts/",
+      "url": "https://www.creditagricole.info/caisse/credit-agricole-alpes-provence/",
+      "snippet": "Coordonnées (adresse, numéros de téléphone, site internet), chiffres clés. et toute l’actualité de votre territoire grâce à une carte …"
+    },
+    {
+      "title": "Crédit Agricole Alpes Provence - Banque, crédit et assurance",
+      "url": "https://www.credit-et-banque.com/credit-agricole-alpes-provence/",
+      "snippet": "Le Crédit Agricole Alpes Provence se caractérise par sa structure coopérative et démocratique, opérant sans actionnaires et se …"
+    },
+    {
+      "title": "CREDIT AGRICOLE",
+      "url": "https://www.ca-e-banking.credit-agricole.fr/portal",
+      "snippet": "Nous contacter Politique de Protection des Données Mentions légales et CGU Ⓒ 2023 Crédit Agricole. Tous droits réservés."
+    }
+  ]
+}

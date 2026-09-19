@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Thaurock/Qwen3.5-122B-A10B-abliterated-GGUF",
+  "slug": "thaurock-qwen3-5-122b-a10b-abliterated-gguf",
+  "author": "Thaurock",
+  "url": "https://huggingface.co/Thaurock/Qwen3.5-122B-A10B-abliterated-GGUF",
+  "created_at": "2026-09-19T01:58:23.000Z",
+  "updated_at": "2026-09-20T17:38:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen",
+    "qwen3.5",
+    "moe",
+    "text-generation",
+    "abliterix",
+    "uncensored",
+    "text-generation-inference",
+    "conversational",
+    "Transformers",
+    "Text Generation",
+    "abliterated",
+    "base_model:wangzhang/Qwen3.5-122B-A10B-abliterix",
+    "base_model:quantized:wangzhang/Qwen3.5-122B-A10B-abliterix",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 122111526912,
+  "parameters_human": "122.11B",
+  "storage_bytes": 1009208929312,
+  "storage_human": "1009.2 GB",
+  "base_model": "wangzhang/Qwen3.5-122B-A10B-abliterix",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jetzt ROSSMANN Angebote entdecken | rossmann.de",
+      "url": "https://www.rossmann.de/de/angebote/m/angebote",
+      "snippet": "Jetzt noch mehr sparen: Entdeckt auch die ROSSMANN App, mit der ihr von besonderen Coupons und Angeboten profitiert. Einfach …"
+    },
+    {
+      "title": "Alle ROSSMANN Prospekte auf einen Blick | rossmann.de",
+      "url": "https://www.rossmann.de/de/angebote/prospekte",
+      "snippet": "Alle ROSSMANN Prospekte Entdeckt alle aktuell gültigen ROSSMANN Prospekte und werft einen Blick in unsere zukünftigen …"
+    },
+    {
+      "title": "Jetzt den ROSSMANN Angebote Blätterkatalog entdecken | rossmann.de",
+      "url": "https://www.rossmann.de/de/kataloge/angebote/index.html",
+      "snippet": "Aktuelle Produkte aus dem ROSSMANN Angebote Blätterkatalog finden Online im Prospekt blättern Artikel aus der Werbung im …"
+    },
+    {
+      "title": "ROSSMANN - Mein Drogeriemarkt, Meine Online-Drogerie",
+      "url": "https://www.rossmann.de/de/",
+      "snippet": "Über den ROSSMANN Onlineshop kannst du dich kostenlos für unseren Babyclub in der babywelt-App anmelden und von vielen …"
+    },
+    {
+      "title": "Jobs & Karriere bei ROSSMANN",
+      "url": "https://jobs.rossmann.de/",
+      "snippet": "Vielfältige Jobs und ein einzigartiges Miteinander – für uns ganz normal. Finden Sie Ihren Job bei ROSSMANN!"
+    }
+  ]
+}

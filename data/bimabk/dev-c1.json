@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "bimabk/dev-C1",
+  "slug": "bimabk-dev-c1",
+  "author": "bimabk",
+  "url": "https://huggingface.co/bimabk/dev-C1",
+  "created_at": "2026-09-19T02:08:05.000Z",
+  "updated_at": "2026-09-19T02:14:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 3452608258,
+  "storage_human": "3.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Electricistas en Madrid capital | Páginas Amarillas",
+      "url": "https://www.paginasamarillas.es/a/electricistas/madrid/madrid/",
+      "snippet": "Realizamos todo tipo de reformas en Madrid. Albañilería, pintura, fontanería y electricidad. Más de 12 años de experiencia."
+    },
+    {
+      "title": "Local Electricians, Contractors & Companies Near Madrid",
+      "url": "https://www.houzz.com/professionals/electrical-contractors/madrid-29-es-probr0-bo~t_11818~r_101165600?msockid=39af0522d7796ba21e0e12fbd60a6a3b",
+      "snippet": "Search 79 Madrid local electricians, contractors & companies to find the best electrician for your project. See the top reviewed local …"
+    },
+    {
+      "title": "Electricista en Madrid | Instalaciones y reparaciones",
+      "url": "https://madrid-electricista.com/",
+      "snippet": "Si necesitas un electricista en Madrid, has encontrado la solución a tus problemas con nuestra empresa. Nos enorgullece …"
+    },
+    {
+      "title": "Top 10 de electricistas en Madrid | Precios y reseñas",
+      "url": "https://trustlocal.es/madrid/madrid/electricista/",
+      "snippet": "Sep 12, 2026 · En Trustlocal hemos hecho el trabajo sucio por ti: tienes el Top 10 de los mejores electricistas en Madrid analizados …"
+    },
+    {
+      "title": "Los 10 mejores Electricistas en Madrid - habitissimo",
+      "url": "https://www.habitissimo.es/empresas/electricistas/madrid",
+      "snippet": "Compara precios y pide presupuestos a electricistas de tu zona: expertos en instalación, reparación y mantenimiento de sistemas …"
+    }
+  ]
+}

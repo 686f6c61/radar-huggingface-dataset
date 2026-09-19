@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "flyingfishinwater/Qwen3-ASR-0.6B-4bit",
+  "slug": "flyingfishinwater-qwen3-asr-0-6b-4bit",
+  "author": "flyingfishinwater",
+  "url": "https://huggingface.co/flyingfishinwater/Qwen3-ASR-0.6B-4bit",
+  "created_at": "2026-09-18T21:21:15.000Z",
+  "updated_at": "2026-09-18T21:21:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx-audio",
+  "languages": [],
+  "tags": [
+    "mlx-audio",
+    "safetensors",
+    "qwen3_asr",
+    "mlx",
+    "speech-to-text",
+    "speech",
+    "transcription",
+    "asr",
+    "stt",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 782426112,
+  "parameters_human": "782.4M",
+  "storage_bytes": 708236945,
+  "storage_human": "708 MB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-19T02:24:31.612Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/",
+      "snippet": "Connect and share with friends, family, and the world on Facebook."
+    },
+    {
+      "title": "Meta for Business (formerly Facebook for Business)",
+      "url": "https://business.facebook.com/",
+      "snippet": "By logging in, you can navigate to all business tools like Meta Business Suite, Ads Manager and more to help you connect with your …"
+    },
+    {
+      "title": "Buy and Sell in Perth, Western Australia | Facebook Marketplace",
+      "url": "https://www.facebook.com/marketplace/perth/",
+      "snippet": "Shop electronics, cars, furniture, clothing, and more for sale in Perth on Facebook Marketplace. Find great deals from local sellers or …"
+    },
+    {
+      "title": "Meta for Business: Marketing Solutions on Facebook and Instagram",
+      "url": "https://ads.facebook.com/",
+      "snippet": "Meta for Business provides marketing and advertising tools, tips, best practices, and case studies for using Facebook and Instagram …"
+    },
+    {
+      "title": "Facebook",
+      "url": "https://upload.facebook.com/login/identify/",
+      "snippet": "Enter your mobile number or email. Mobile number or email"
+    }
+  ]
+}

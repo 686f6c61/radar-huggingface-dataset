@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "hanapasta/airvla_ftd_15000",
+  "slug": "hanapasta-airvla_ftd_15000",
+  "author": "hanapasta",
+  "url": "https://huggingface.co/hanapasta/airvla_ftd_15000",
+  "created_at": "2026-09-18T22:49:15.000Z",
+  "updated_at": "2026-09-18T22:50:35.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "robotics",
+    "vision-language-action",
+    "pi0",
+    "aerial-manipulation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4028019472,
+  "parameters_human": "4.03B",
+  "storage_bytes": 8892513248,
+  "storage_human": "8.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Een hotel vinden en boeken in Wallonië | VISITWallonia.be",
+      "url": "https://visitwallonia.be/nl/3/overnachten/hotels",
+      "snippet": "Verblijven in een gezellig of uniek hotel, op citytrip gaan of een wellnessweekend boeken in de Ardennen... Alles is mogelijk in Wallonië!"
+    },
+    {
+      "title": "DE 10 BESTE hotels in Wallonië 2026 (met prijzen) - Tripadvisor",
+      "url": "https://www.tripadvisor.be/Hotels-g2263872-Wallonia-Hotels.html",
+      "snippet": "Hiervan is het gemiddelde berekend voor vaak bekeken hotels in Wallonië. Selecteer data en zoek naar totaalbedragen voor …"
+    },
+    {
+      "title": "De beste hotels in Wallonië – Waar te verblijven in en rondom Wallonië ...",
+      "url": "https://www.booking.com/region/be/wallonie.nl.html?msockid=044047c1d88a698c137e5019d9e868c7",
+      "snippet": "Hotels vinden in Wallonië, België. Reserveer online en betaal bij het hotel. Goede prijzen en geen reserveringskosten. Lees …"
+    },
+    {
+      "title": "Alle hotels in Wallonië - visit-wallonia.com",
+      "url": "https://www.visit-wallonia.com/nl/all-hotels/",
+      "snippet": "Beste selectie van hotels in Wallonië met beoordelingen en kaarten. Reserveer vooraf en bespaar."
+    },
+    {
+      "title": "Wallonië hotels en appartementen, alle accommodaties in Wallonië",
+      "url": "https://www.visit-wallonia.com/nl/",
+      "snippet": "Online reserveren voor hotels in Wallonië, België. Goede beschikbaarheid en de laagste prijzen. Goedkoop en veilig, betaal bij …"
+    }
+  ]
+}

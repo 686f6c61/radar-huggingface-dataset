@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "philgear/pocketgull-circular-posology-1b",
+  "slug": "philgear-pocketgull-circular-posology-1b",
+  "author": "philgear",
+  "url": "https://huggingface.co/philgear/pocketgull-circular-posology-1b",
+  "created_at": "2026-09-18T20:47:10.000Z",
+  "updated_at": "2026-09-18T20:47:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "gemma-3",
+    "lora",
+    "clinical-nlp",
+    "healthcare",
+    "hipaa-safe-harbor",
+    "open-science",
+    "pocketgull",
+    "nih-medquad",
+    "who-mhgap",
+    "text-generation",
+    "en",
+    "base_model:google/gemma-3-1b-it",
+    "base_model:adapter:google/gemma-3-1b-it",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "google/gemma-3-1b-it",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Haus kaufen: Häuser & Hauskauf bei ImmoScout24",
+      "url": "https://www.immobilienscout24.de/wohnen/haus-kaufen.html?msockid=0b54eee9e4d46d5c0d9ef931e5ff6cff",
+      "snippet": "Häuser kaufen bei ImmoScout24: Finden Sie Immobilienangebote für Häuser zum Kauf und profitieren Sie von einer großen …"
+    },
+    {
+      "title": "ImmoScout24 – Mit über 6,5 Mio. Immobilien.",
+      "url": "https://www.immobilienscout24.de/?msockid=0b54eee9e4d46d5c0d9ef931e5ff6cff",
+      "snippet": "Anbieten. Suchen. Finden. Die größte Auswahl an Wohnungen, Häusern und Gewerbeflächen findest du nur bei ImmoScout24. …"
+    },
+    {
+      "title": "Welcome - ImmobilienScout24",
+      "url": "https://sso.immobilienscout24.de/sso/login?appName=hof&source=por&e=login&msockid=0b54eee9e4d46d5c0d9ef931e5ff6cff",
+      "snippet": "Melde dich in deinem Kundenkonto an, um ein Inserat zu erstellen. Du hast noch kein Konto? Dann erstelle dir hier einfach ein Neues."
+    },
+    {
+      "title": "ImmobilienScout24 - So suchst du sicher auf ImmoScout24",
+      "url": "https://sicherheit.immobilienscout24.de/",
+      "snippet": "Apr 30, 2026 · Ob neue Mieterin oder richtiger Makler: Wir wollen, dass ImmoScout24 sicher ist. Für alle Nutzer und Nutzerinnen. …"
+    },
+    {
+      "title": "ImmobilienScout24 - Self Service Portal",
+      "url": "https://selfservice.immobilienscout24.de/",
+      "snippet": "Seiteninformationen Kontakt & Hilfe Impressum AGB Verbraucherinformationen Datenschutz © 1999 - 2026 Immobilien Scout GmbH"
+    }
+  ]
+}

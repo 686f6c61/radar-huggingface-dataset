@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "vtava/Qwen35-0.8B-FlyFFN-v3-AllFFN",
+  "slug": "vtava-qwen35-0-8b-flyffn-v3-allffn",
+  "author": "vtava",
+  "url": "https://huggingface.co/vtava/Qwen35-0.8B-FlyFFN-v3-AllFFN",
+  "created_at": "2026-09-18T21:25:26.000Z",
+  "updated_at": "2026-09-19T08:16:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "qwen3_5_text",
+    "tinycenn",
+    "cenn",
+    "language-modeling",
+    "text-generation",
+    "research",
+    "mixture-of-experts",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6101209710,
+  "storage_human": "6.1 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "جدول معدل السكر الطبيعي في الدم صائم وفاطر",
+      "url": "https://www.magrabihealth.com/ar/blog/%D8%AC%D8%AF%D9%88%D9%84-%D9%85%D8%B9%D8%AF%D9%84-%D8%A7%D9%84%D8%B3%D9%83%D8%B1-%D8%A7%D9%84%D8%B7%D8%A8%D9%8A%D8%B9%D9%8A-%D9%81%D9%8A-%D8%A7%D9%84%D8%AF%D9%85-%D8%B5%D8%A7%D8%A6%D9%85-%D9%88%D9%81",
+      "snippet": "وفيما يلي استعراض جدول معدل السكر الطبيعي في الدم صائم وفاطر : تختلف معدلات السكر من شخص لآخر على حسب العمر، الجنس، وكذلك نوع السكري وفي أوقات الحمل، لذلك فالطبيب المعالج هو …"
+    },
+    {
+      "title": "مأرب برس | موقع الأخبار الأول - صدمة الفطور.. ما تأكله صباحًا قد يربك ...",
+      "url": "https://marebpress.net/news_details.php?sid=219965",
+      "snippet": "صدمة الفطور.. ما تأكله صباحًا قد يربك سكر الدم لساعات طويلة دون أن تشعر الخميس 03 سبتمبر-أيلول 2026 الساعة 07 مساءً / مأرب برس - وكالات عدد القراءات 6311"
+    },
+    {
+      "title": "معدل السكر الطبيعي في الدم: جدول معدل السكر حسب العمر والصيام 2026",
+      "url": "https://internationalclinics.com/ar/blog/%D9%85%D8%B9%D8%AF%D9%84-%D8%A7%D9%84%D8%B3%D9%83%D8%B1-%D9%81%D9%8A-%D8%A7%D9%84%D8%AF%D9%85-%D8%AD%D8%B3%D8%A8-%D8%A7%D9%84%D8%B9%D9%85%D8%B1/",
+      "snippet": "يُعتبر معدل السكر الطبيعي في الدم أقل من 100 ملغ/دل (5.6 ملليمول/لتر). إذا تراوحت القراءات بين 100 و125 ملغ/دل (5.6 إلى 6.9 ملليمول/لتر)، فإن ذلك يشير إلى وجود مقدمات السكري. أما إذا …"
+    },
+    {
+      "title": "ارتفاع السكر في الدم صباحًا: ظاهرة الفجر وتأثير سوموجي",
+      "url": "https://www.health2sync.com/ar/blog/%D8%A7%D8%B1%D8%AA%D9%81%D8%A7%D8%B9-%D8%A7%D9%84%D8%B3%D9%83%D8%B1-%D9%81%D9%8A-%D8%A7%D9%84%D8%AF%D9%85-%D8%B5%D8%A8%D8%A7%D8%AD%D8%A7/",
+      "snippet": "تعرف على أسباب ارتفاع السكر في الدم صباحًا عند الصيام، والفرق بين ظاهرة الفجر وتأثير سوموجي، وكيف تميز بينهما وتقلل مستوي السكر في الصباح."
+    },
+    {
+      "title": "معدل السكر قبل الفطور: دليلك الشامل للمستويات الطبيعية وغير الطبيعية ...",
+      "url": "https://menaviral.com/%d9%85%d8%b9%d8%af%d9%84-%d8%a7%d9%84%d8%b3%d9%83%d8%b1-%d9%82%d8%a8%d9%84-%d8%a7%d9%84%d9%81%d8%b7%d9%88%d8%b1-%d8%af%d9%84%d9%8a%d9%84%d9%83-%d8%a7%d9%84%d8%b4%d8%a7%d9%85%d9%84-%d9%84%d9%84%d9%85/",
+      "snippet": "Feb 10, 2026 · اكتشف المستويات الطبيعية لمعدل السكر قبل الفطور وأسباب ارتفاعه أو انخفاضه. دليلك لفهم قراءات سكر الدم الصباحية والحفاظ على صحتك."
+    }
+  ]
+}

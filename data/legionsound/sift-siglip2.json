@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "legionsound/sift-siglip2",
+  "slug": "legionsound-sift-siglip2",
+  "author": "legionsound",
+  "url": "https://huggingface.co/legionsound/sift-siglip2",
+  "created_at": "2026-09-18T20:10:24.000Z",
+  "updated_at": "2026-09-18T21:20:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "coreml",
+  "languages": [],
+  "tags": [
+    "coreml",
+    "siglip2",
+    "embeddings",
+    "sift",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11349268785,
+  "storage_human": "11.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Best Online Music Streaming Services for 2026 - PCMag",
+      "url": "https://www.pcmag.com/picks/the-best-online-music-streaming-services",
+      "snippet": "Aug 11, 2026 · Spotify is a big name in the streaming music industry, but isn't the only service worth a listen. Broaden your musical …"
+    },
+    {
+      "title": "Best Music Streaming Service of 2026 - CNET",
+      "url": "https://www.cnet.com/tech/services-and-software/best-music-streaming-service/",
+      "snippet": "Jul 28, 2026 · Best Music Streaming Service of 2026 Competition between music streaming services is as fierce as ever, with an …"
+    },
+    {
+      "title": "11 Best Music Streaming Apps of 2026: Your Ultimate Guide to Sound",
+      "url": "https://soundhub.io/blog/best-music-streaming-apps/",
+      "snippet": "Apr 3, 2026 · Your playlists aren’t broken, your app is. We tested 11 music streaming services in 2026 across real-life moments. …"
+    },
+    {
+      "title": "Best Free Music Streaming Apps for iOS & Android in 2026 - Lifewire",
+      "url": "https://www.lifewire.com/top-free-music-apps-1357073",
+      "snippet": "Jan 4, 2026 · Find the top free music apps for iOS and Android, from YouTube Music to Spotify, offering streaming without a fee. …"
+    },
+    {
+      "title": "Best music streaming services in 2026 including Spotify, Apple ... - Stuff",
+      "url": "https://www.stuff.tv/features/best-music-streaming-services-reviewed/",
+      "snippet": "3 days ago · Best music streaming services in 2026 including Spotify, Apple, Tidal and more From free streams to hi-res audio, these …"
+    }
+  ]
+}

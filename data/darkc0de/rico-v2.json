@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "darkc0de/RICO-v2",
+  "slug": "darkc0de-rico-v2",
+  "author": "darkc0de",
+  "url": "https://huggingface.co/darkc0de/RICO-v2",
+  "created_at": "2026-09-19T01:30:03.000Z",
+  "updated_at": "2026-09-19T04:18:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "uncensored",
+    "harmful",
+    "xortron",
+    "heretic",
+    "abliterated",
+    "toxic",
+    "experimental",
+    "not-for-all-audiences",
+    "conversational",
+    "en",
+    "dataset:darkc0de/XORTRON-RESTRICTED-RESEARCH-SFT",
+    "base_model:DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+    "base_model:finetune:DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 4,
+  "downloads_30d": 168,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55582996551,
+  "storage_human": "55.6 GB",
+  "base_model": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "فيتامين د3، كالسيوم، زنك، نحاس، مغنيسيوم، نحاس، بورون، منغنيز.",
+      "url": "https://altibbi.com/%D8%A7%D9%84%D8%A7%D8%AF%D9%88%D9%8A%D8%A9/%D9%81%D9%8A%D8%AA%D8%A7%D9%85%D9%8A%D9%86-%D8%AF3-%D9%83%D8%A7%D9%84%D8%B3%D9%8A%D9%88%D9%85-%D8%B2%D9%86%D9%83-%D9%86%D8%AD%D8%A7%D8%B3-%D9%85%D8%BA%D9%86%D9%8A%D8%B3%D9%8A%D9%88%D9%85-%D9%86%D8%AD%D8%A7%D8%B3-%D8%A8%D9%88%D8%B1%D9%88%D9%86-%D9%85%D9%86%D8%BA%D9%86%D9%8A%D8%B2-%D8%B9%D9%84%D9%85%D9%8A",
+      "snippet": "ما هي ظروف تخزين فيتامين د3، كالسيوم، زنك، نحاس، مغنيسيوم، بورون، منغنيز؟ يحفظ في درجة حرارة لا تتعدى 25 درجة مئوية بعيداً عن متناول الأطفال، الرطوبة، وأشعة الشمس المباشرة."
+    },
+    {
+      "title": "ناتشرز تروث‏, مغنيسيوم + د3 وزنك ثلاثي، 60 كبسولة",
+      "url": "https://om.iherb.com/pr/nature-s-truth-triple-magnesium-d3-zinc-60-capsules/149277",
+      "snippet": "مزيج قوي من ثلاثة أشكال مختلفة من المغنيسيوم، بالإضافة إلى فيتامين (د3) والزنك! *مقارنةً بأكسيد المغنيسيوم. يتضمن وزن الشحن، المنتج ومواد التعبئة ومواد التغليف الواقية وصندوق الشحن الفعلي. …"
+    },
+    {
+      "title": "فيتامين د٣، سيلينيوم، كالسيوم، زنك، كبريتات النحاس، | الطبي",
+      "url": "https://altibbi.com/%D8%A7%D9%84%D8%A7%D8%AF%D9%88%D9%8A%D8%A9/%D9%81%D9%8A%D8%AA%D8%A7%D9%85%D9%8A%D9%86-%D8%AF3-%D8%B3%D9%8A%D9%84%D9%8A%D9%86%D9%8A%D9%88%D9%85-%D9%83%D8%A7%D9%84%D8%B3%D9%8A%D9%88%D9%85-%D8%B2%D9%86%D9%83-%D9%83%D8%A8%D8%B1%D9%8A%D8%AA%D8%A7%D8%AA-%D8%A7%D9%84%D9%86%D8%AD%D8%A7%D8%B3-%D9%85%D8%BA%D9%86%D9%8A%D8%B3%D9%8A%D9%88%D9%85-%D9%81%D9%8A%D8%AA%D8%A7%D9%85%D9%8A%D9%86-%D8%B3%D9%8A-%D9%85%D9%86%D8%BA%D9%86%D9%8A%D8%B2-%D8%B9%D9%84%D9%85%D9%8A",
+      "snippet": "المنغنيز:عامل مساعد في العديد من أنظمة الإنزيمات، يحفز توليف الكوليسترول والأحماض الدهنية في الكبد، ويؤثر على تكوين عديدات السكاريد المخاطية، يستخدم لهشاشة العظام، فقر الدم، لنقص الوزن ..."
+    },
+    {
+      "title": "اطلب كالسيوم مغنيسيوم زنك فيتامين D3 مكمل العظام والمناعة رقم 1",
+      "url": "https://yourgreen.shop/product/calcium-magnesium-zinc-vitamin-d3-benefits/",
+      "snippet": "مكمل “كالسيوم مغنيسيوم فيتامين D3 زنك” تركيبة رباعية متكاملة تدعم عظامك وعضلاتك، تقوي مناعتك، تقلل التعب والارهاق الدائم وتحفز وظائف الأعصاب، كل هذا في كبسولة واحدة تضمن حصولك على …"
+    },
+    {
+      "title": "أفضل أنواع المغنيسيوم في الصيدليات للعضلات والنوم والاعصاب",
+      "url": "https://chefaa.com/blog/%d8%a3%d9%81%d8%b6%d9%84-%d8%a3%d9%86%d9%88%d8%a7%d8%b9-%d8%a7%d9%84%d9%85%d8%ba%d9%86%d9%8a%d8%b3%d9%8a%d9%88%d9%85-%d9%81%d9%8a-%d8%a7%d9%84%d8%b5%d9%8a%d8%af%d9%84%d9%8a%d8%a7%d8%aa/",
+      "snippet": "Jul 19, 2026 · مغنيسيوم ستريت لتحسين الهضم (Magnesium Citrate): من أكثر الأنواع شيوعًا وسهولة في الامتصاص، يساعد على تعويض النقص العام ويدعم الطاقة والهضم (له تأثير …"
+    }
+  ]
+}

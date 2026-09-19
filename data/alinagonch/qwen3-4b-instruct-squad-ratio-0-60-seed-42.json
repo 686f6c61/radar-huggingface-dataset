@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "AlinaGonch/qwen3-4b-instruct-squad-ratio-0.60-seed-42",
+  "slug": "alinagonch-qwen3-4b-instruct-squad-ratio-0-60-seed-42",
+  "author": "AlinaGonch",
+  "url": "https://huggingface.co/AlinaGonch/qwen3-4b-instruct-squad-ratio-0.60-seed-42",
+  "created_at": "2026-09-18T22:27:09.000Z",
+  "updated_at": "2026-09-18T22:27:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 143610542,
+  "storage_human": "144 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aktivitäten in München 2026: Kurse & Workshops | konfetti",
+      "url": "https://gokonfetti.com/de-de/muenchen/",
+      "snippet": "Finde kreative Workshops und Tastings. Preis ab 9,90 €. Entdecke 765 Aktivitäten in München für dein nächstes Event. Mit 4,88 …"
+    },
+    {
+      "title": "konfetti – Erlebnisse, Geschenkideen und Teamevents | konfetti",
+      "url": "https://gokonfetti.com/",
+      "snippet": "Bei konfetti über 10.000 Kurse und Erlebnisse entdecken. Das perfekte Geschenk: Kochkurse Kreativkurse Weinproben uvm. …"
+    },
+    {
+      "title": "Aktivitäten in Berlin 2026 | Kurse in Berlin | konfetti",
+      "url": "https://gokonfetti.com/de-de/berlin/",
+      "snippet": "Aktivitäten in Berlin: Entdecke einzigartige Erlebnisse Buche alle 1.888 Kurse in Berlin direkt als Ticket, als Geschenkgutschein oder …"
+    },
+    {
+      "title": "Kurse für Kinder: Kreativ und spielerisch Neues ausprobieren | konfetti",
+      "url": "https://gokonfetti.com/de-de/t/fuer-kinder/",
+      "snippet": "Entdecke über 354 Kurse und Events für Kinder: Von spannenden DIY-Projekten über Malkurse bis zur Game-Show. Perfekt für den …"
+    },
+    {
+      "title": "Kochkurse in Berlin: Kochen in Berlins Kochschulen | konfetti",
+      "url": "https://gokonfetti.com/de-de/berlin/kochkurs/",
+      "snippet": "Über 201 Kochkurse in Berlin. Ob italienisch, asiatisch oder Gourmet Kochkurse, lerne Kochen von echten Profis."
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "interpretable-finetuning/gemma-clean",
+  "slug": "interpretable-finetuning-gemma-clean",
+  "author": "interpretable-finetuning",
+  "url": "https://huggingface.co/interpretable-finetuning/gemma-clean",
+  "created_at": "2026-09-18T23:57:31.000Z",
+  "updated_at": "2026-09-19T00:09:37.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "topk-lora",
+    "control",
+    "interpretability",
+    "ai-safety",
+    "gemma2",
+    "text-generation",
+    "base_model:google/gemma-2-2b",
+    "base_model:adapter:google/gemma-2-2b",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2342535443,
+  "storage_human": "2.3 GB",
+  "base_model": "google/gemma-2-2b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Startseite - Hochschule für Musik und Tanz Köln",
+      "url": "https://www.hfmt-koeln.de/",
+      "snippet": "Die Hochschule für Musik und Tanz Köln gehört zu den weltweit führenden künstlerischen Ausbildungseinrichtungen und zählt mit …"
+    },
+    {
+      "title": "Homepage der Hochschule für Musik und Tanz Köln - Hochschule für …",
+      "url": "https://www.hfmt-koeln.de/hochschule/",
+      "snippet": "Die Hochschule für Musik und Tanz Köln gehört zu den weltweit führenden künstlerischen Ausbildungseinrichtungen und zählt mit …"
+    },
+    {
+      "title": "Hochschule für Musik und Tanz Köln - Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Hochschule_f%C3%BCr_Musik_und_Tanz_K%C3%B6ln",
+      "snippet": "Die Hochschule für Musik und Tanz Köln ist eine der größten Musikhochschulen Europas und befindet sich in der Kölner Altstadt …"
+    },
+    {
+      "title": "Hochschule für Musik und Tanz Köln - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Hochschule_f%C3%BCr_Musik_und_Tanz_K%C3%B6ln",
+      "snippet": "The Hochschule für Musik und Tanz Köln provides undergraduate and graduate degree programs in the fields of music and dance. …"
+    },
+    {
+      "title": "Aktuelles - Hochschule für Musik und Tanz Köln",
+      "url": "https://www.hfmt-koeln.de/aktuelles/",
+      "snippet": "Jun 2, 2026 · Sie finden alle Bekannt­machungen auf folgender Seite."
+    }
+  ]
+}

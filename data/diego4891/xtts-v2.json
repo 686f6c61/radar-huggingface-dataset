@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Diego4891/XTTS-v2",
+  "slug": "diego4891-xtts-v2",
+  "author": "Diego4891",
+  "url": "https://huggingface.co/Diego4891/XTTS-v2",
+  "created_at": "2026-09-19T01:23:41.000Z",
+  "updated_at": "2026-09-19T01:23:41.000Z",
+  "license": "coqui-public-model-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": "coqui",
+  "languages": [],
+  "tags": [
+    "coqui",
+    "text-to-speech",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2086199391,
+  "storage_human": "2.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How long will my vetting application take? - Garda",
+      "url": "https://www.garda.ie/en/about-us/organised-serious-crime/garda-national-vetting-bureau-gnvb-/garda-vetting-frequently-asked-questions-faq-s-/how-long-will-my-vetting-application-take-.html",
+      "snippet": "How long will my vetting application take? Completed applications are processed usually between 5 and 8 working days of receipt of …"
+    },
+    {
+      "title": "Garda Síochána - National Vetting Bureau",
+      "url": "https://vetting.garda.ie/",
+      "snippet": "Garda vetting is conducted on behalf of registered organisations only and is not conducted for individual persons on a personal basis. …"
+    },
+    {
+      "title": "Current Processing Times for Garda Vetting Applications",
+      "url": "https://www.earlychildhoodireland.ie/current-processing-times-for-garda-vetting-applications/",
+      "snippet": "Mar 24, 2026 · Up‑to‑date vetting application processing times and guidance on why individual fast‑tracking or prioritisation isn’t …"
+    },
+    {
+      "title": "National Vetting Bureau - Garda Síochána",
+      "url": "https://vetting.garda.ie/Track",
+      "snippet": "Our online results give you real-time, detailed progress of your vetting application. Simply enter your application id and your date of …"
+    },
+    {
+      "title": "Garda Vetting",
+      "url": "https://www.garda.ie/en/about-us/online-services/garda-vetting/",
+      "snippet": "Garda Vetting This eVetting system was specifically designed to ensure speedy processing of vetting applications. The eVetting …"
+    }
+  ]
+}

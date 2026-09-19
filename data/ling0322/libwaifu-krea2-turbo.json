@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ling0322/libwaifu-krea2-turbo",
+  "slug": "ling0322-libwaifu-krea2-turbo",
+  "author": "ling0322",
+  "url": "https://huggingface.co/ling0322/libwaifu-krea2-turbo",
+  "created_at": "2026-09-19T01:43:30.000Z",
+  "updated_at": "2026-09-21T00:47:57.000Z",
+  "license": "krea-2-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "libwaifu",
+    "krea2",
+    "text-to-image",
+    "en",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:finetune:krea/Krea-2-Turbo",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 51120351701,
+  "storage_human": "51.1 GB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "World News - Reddit",
+      "url": "https://www.reddit.com/r/worldnews/new/?feedViewType=classicView",
+      "snippet": "Sutton-in-Craven: Drug driver jailed for killing boy, 9, in hit-and-run crash"
+    },
+    {
+      "title": "Anyone use IXL as their primary curriculum? : r/homeschool - Reddit",
+      "url": "https://www.reddit.com/r/homeschool/comments/9ih7qi/anyone_use_ixl_as_their_primary_curriculum/",
+      "snippet": "In my opinion, IXL can be a good starting place for the accumulation of knowledge--but it wouldn't be a very rich educational …"
+    },
+    {
+      "title": "Ninth Legion - Reddit",
+      "url": "https://www.reddit.com/r/ixl/",
+      "snippet": "Ixl is so frustrating for kids because when you get a question wrong you basically have to start all over again. Xtra math is also bad. …"
+    },
+    {
+      "title": "Is it possible Jason Todd is bisexual? : r/DCcomics - Reddit",
+      "url": "https://www.reddit.com/r/DCcomics/comments/50ixl3/is_it_possible_jason_todd_is_bisexual/",
+      "snippet": "Aug 31, 2016 · Judd Winick was the guy that wrote Jason Todd for most of his pre 52, and honestly he's only ever been interesting to …"
+    },
+    {
+      "title": "IXL - worth getting or pass? : r/homeschool - Reddit",
+      "url": "https://www.reddit.com/r/homeschool/comments/ymcuzs/ixl_worth_getting_or_pass/",
+      "snippet": "Nov 4, 2022 · IXL is a program commonly used in public schools, and my public-schooled kids hate it. The teacher/parent sets a …"
+    }
+  ]
+}

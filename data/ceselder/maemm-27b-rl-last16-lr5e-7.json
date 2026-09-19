@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ceselder/maemm-27b-rl-last16-lr5e-7",
+  "slug": "ceselder-maemm-27b-rl-last16-lr5e-7",
+  "author": "ceselder",
+  "url": "https://huggingface.co/ceselder/maemm-27b-rl-last16-lr5e-7",
+  "created_at": "2026-09-18T21:25:33.000Z",
+  "updated_at": "2026-09-18T21:27:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "interpretability",
+    "activation-inversion",
+    "maemm",
+    "sparse-autoencoder",
+    "rl",
+    "base_model:Qwen/Qwen3.6-27B",
+    "base_model:finetune:Qwen/Qwen3.6-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55582995870,
+  "storage_human": "55.6 GB",
+  "base_model": "Qwen/Qwen3.6-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "V službi resnice | Nova24TV",
+      "url": "https://nova24tv.si/",
+      "snippet": "Uredništvo Nova24TV v skladu z zakonodajo objavlja pravila za spremljanje kampanje pred štirimi referendumi, ki bodo 11. oktobra …"
+    },
+    {
+      "title": "Slovenija | Nova24TV",
+      "url": "https://nova24tv.si/rubrika/slovenija/",
+      "snippet": "Četrtek, 27. avgusta 2026, bo v zgodovino zapisan kot dan, ko se je izteklo zemeljsko življenje generala Ratka Mladića. To je ime, ki …"
+    },
+    {
+      "title": "Aktualno - Nova24TV",
+      "url": "https://nova24tv.si/rubrika/slovenija/aktualno-slovenija/",
+      "snippet": "Slovenke in Slovenci kronično nimamo zgodovinskega spomina oziroma se vneto trudimo, da ga izgubimo. Poleg primera Willyja …"
+    },
+    {
+      "title": "novice - Nova24TV",
+      "url": "https://nova24tv.si/novice-9/",
+      "snippet": "Ali bi morala predsednica Nataša Pirc Musar po prometni nesreči odstopiti?"
+    },
+    {
+      "title": "Novice | 24ur.com",
+      "url": "https://www.24ur.com/novice",
+      "snippet": "Zanesljive, preverjene in verodostojne novice na najbolj obiskanem multimedijskem portalu v Sloveniji. Gospodarstvo, kronika, …"
+    }
+  ]
+}

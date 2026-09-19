@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "awatramani-lab/hmoe-da",
+  "slug": "awatramani-lab-hmoe-da",
+  "author": "awatramani-lab",
+  "url": "https://huggingface.co/awatramani-lab/hmoe-da",
+  "created_at": "2026-09-18T21:49:38.000Z",
+  "updated_at": "2026-09-19T18:11:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "other",
+  "library": "hmoe-da",
+  "languages": [],
+  "tags": [
+    "hmoe-da",
+    "single-cell",
+    "rna-seq",
+    "dopaminergic-neurons",
+    "cell-type-annotation",
+    "neuroscience",
+    "other",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 92257,
+  "storage_human": "92257 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "2025-2026 Tüm Sınıfların 1. Dönem 1. Yazılı Soruları ve Değerlendirme ...",
+      "url": "https://www.webdeogren.com/2025-2026-tum-siniflarin-1-donem-1-yazili-sorulari-ve-degerlendirme-calismalari-ornek.html",
+      "snippet": "Oct 15, 2025 · 2025-2026 Tüm Sınıfların 1. Dönem 1. Yazılı Soruları ve Değerlendirme Çalışmaları (Örnek) Tüm sınıf ve ders bazında …"
+    },
+    {
+      "title": "Forum",
+      "url": "https://www.webdeogren.com/forum/?action=tpmod;dl=get30236",
+      "snippet": "Aug 1, 2026 · Web'de Öğren - Birlikte En Doğruya Bartın’ın Amasra ilçesinde meydana gelen trafik kazasında, Zonguldak’ın …"
+    },
+    {
+      "title": "Web'de Öğren",
+      "url": "https://www.webdeogren.com/",
+      "snippet": "Web'de Öğren - Birlikte En Doğruya 11.08.2026 16:04 - İller arası mazerete bağlı yer değiştirme kapsamında başvuruda bulunmasına …"
+    },
+    {
+      "title": "Forum",
+      "url": "https://www.webdeogren.com/forum/",
+      "snippet": "Aug 1, 2026 · Web'de Öğren - Birlikte En Doğruya Sivas’ta bir öğrenci servisinin polis ekip aracıyla çarpışması sonucu meydana …"
+    },
+    {
+      "title": "Web'de Öğren - webdeogren.com",
+      "url": "https://www.webdeogren.com/?action=tpmod;dl=item8349",
+      "snippet": "Web'de Öğren - Birlikte En Doğruya Sitemizde yayınlanan içeriklerin büyük bir kısmı sitemize ait yada içerik sahiplerinin izinleri …"
+    }
+  ]
+}

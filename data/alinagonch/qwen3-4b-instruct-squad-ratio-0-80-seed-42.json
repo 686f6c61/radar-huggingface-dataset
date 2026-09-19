@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "AlinaGonch/qwen3-4b-instruct-squad-ratio-0.80-seed-42",
+  "slug": "alinagonch-qwen3-4b-instruct-squad-ratio-0-80-seed-42",
+  "author": "AlinaGonch",
+  "url": "https://huggingface.co/AlinaGonch/qwen3-4b-instruct-squad-ratio-0.80-seed-42",
+  "created_at": "2026-09-18T21:44:35.000Z",
+  "updated_at": "2026-09-18T21:44:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 132187888,
+  "storage_human": "132 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "百度图片 | 免费AI图像生成工具与海量高清图平台",
+      "url": "https://image.baidu.com/",
+      "snippet": "百度图片，免费AI智能图像生成工具与海量高清图片资源，轻松去水印、抠图、照片修复与文字生成图片功能。高效完成创意 ..."
+    },
+    {
+      "title": "百度文库 - 一站式AI内容获取和创作平台",
+      "url": "https://wenku.baidu.com/",
+      "snippet": "百度文库是一个AI内容获取和创作平台，提供文档查找、编辑、生成及管理等功能。"
+    },
+    {
+      "title": "百度一下",
+      "url": "https://wap.baidu.com/",
+      "snippet": "全球最大的中文搜索引擎、致力于让网民更便捷地获取信息，找到所求。百度超过千亿的中文网页数据库，可以瞬间找到相关 ..."
+    },
+    {
+      "title": "百度百科_全球领先的中文百科全书",
+      "url": "https://baike.baidu.com/",
+      "snippet": "百度百科是一部内容开放、自由的网络百科全书，旨在创造一个涵盖所有领域知识，服务所有互联网用户的中文知识性百科全书。在这 …"
+    },
+    {
+      "title": "好看视频--轻松有收获",
+      "url": "https://haokan.baidu.com/?sfrom=baidu-top",
+      "snippet": "好看视频是百度短视频旗舰品牌，拥有超百万的短视频创作者。全面覆盖知识、美食、生活、健康、文化、游戏、影视等海量视频，致 …"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Sumith1986/example-model",
+  "slug": "sumith1986-example-model",
+  "author": "Sumith1986",
+  "url": "https://huggingface.co/Sumith1986/example-model",
+  "created_at": "2026-09-18T21:58:19.000Z",
+  "updated_at": "2026-09-18T22:08:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MAD68HE Magnetic Game Keyboard supports quick triggering",
+      "url": "https://madlionskeyboard.com/product/mad68he/",
+      "snippet": "MAD68HE Magnetic Game Keyboard feature rapid magnetic switches, customizable LED lighting, and exceptional durability for …"
+    },
+    {
+      "title": "Madlions MAD 68 HE - Wooting Killer | Clavier Magnétique ... - Amazon",
+      "url": "https://www.amazon.fr/Madlions-MAD-HE-Magn%C3%A9tique-M%C3%A9canique/dp/B0DZDDHN59",
+      "snippet": "Si vous recherchez un clavier léger, rapide et personnalisable conçu pour les joueurs compétitifs, le Madlions MAD 68 HE RGB est le …"
+    },
+    {
+      "title": "Madlions MAD 68 HE – Wooting Killer | Clavier de jeu ... - Amazon",
+      "url": "https://www.amazon.fr/Madlions-MAD-HE-Magn%C3%A9tique-M%C3%A9canique/dp/B0DZDFGXDY",
+      "snippet": "Emportez votre gameplay au niveau supérieur avec le MadLions MAD 68 HE RGB, le clavier mécanique compact avec …"
+    },
+    {
+      "title": "Connect | FIERCE GAMING GEAR | MADLIONS",
+      "url": "https://hub.f.gg/",
+      "snippet": "New Star Driver Support TITAN 68 Turbo、madlight60IceJade、 MAD LIGHT 60quattro Series Driver Address: https://v2 …"
+    },
+    {
+      "title": "FGG MADLIONS MAD68 HE RGB ANSI US Blanc - Claviers",
+      "url": "https://maxesport.gg/fr/products/fgg-madlions-mad68-he-rgb-ansi-us-blanc",
+      "snippet": "La gamme FGG comprend des claviers magnétiques performants comme les MAD60 HE et MAD68 HE, offrant une réactivité …"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "AwareLiquid/Sparse-SNN",
+  "slug": "awareliquid-sparse-snn",
+  "author": "AwareLiquid",
+  "url": "https://huggingface.co/AwareLiquid/Sparse-SNN",
+  "created_at": "2026-09-18T20:08:24.000Z",
+  "updated_at": "2026-09-19T14:35:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "spiking-neural-network",
+    "snn",
+    "sparse",
+    "brain-inspired",
+    "connectome",
+    "drosophila",
+    "mnist",
+    "fashion-mnist",
+    "image-classification",
+    "awareliquid",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15122562,
+  "storage_human": "15 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MSND File: How to open MSND file (and what it is)",
+      "url": "https://file.org/extension/msnd",
+      "snippet": "What is a MSND file? Learn about the file formats using this extension and how to open MSND files. Download a MSND opener. At …"
+    },
+    {
+      "title": "MSND file - What is it and how to open it?",
+      "url": "https://www.filesuffix.com/en/extension/msnd",
+      "snippet": "This overview will show you how to identify, open, and work with MSND files, while also highlighting key details about the NI …"
+    },
+    {
+      "title": "OpenFile function (winbase.h) - Win32 apps | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/windows/win32/api/winbase/nf-winbase-openfile",
+      "snippet": "Oct 12, 2021 · A pointer to the OFSTRUCT structure that receives information about a file when it is first opened. The structure can …"
+    },
+    {
+      "title": "MSND file, how to open or convert it? | FileDesc.com",
+      "url": "https://en.filedesc.com/file/msnd",
+      "snippet": "We'll explain what exactly a .msnd file format is and how you can use it. If you're interested in learning more details about this type of …"
+    },
+    {
+      "title": "How to Open .MSND Files - DataTypes.net",
+      "url": "https://datatypes.net/ext/msnd",
+      "snippet": "This page is here to help you understand how to work with .MSND files. You'll find easy-to-use programs that can open or convert …"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Kanha-AI/95cffae7-6c0a-4b9a-bc24-6ff4053dfe76-large",
+  "slug": "kanha-ai-95cffae7-6c0a-4b9a-bc24-6ff4053dfe76-large",
+  "author": "Kanha-AI",
+  "url": "https://huggingface.co/Kanha-AI/95cffae7-6c0a-4b9a-bc24-6ff4053dfe76-large",
+  "created_at": "2026-09-18T21:23:28.000Z",
+  "updated_at": "2026-09-18T21:23:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlc-llm",
+  "languages": [],
+  "tags": [
+    "mlc-llm",
+    "kanha",
+    "on-device",
+    "webgpu",
+    "fine-tuned",
+    "large",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2274342846,
+  "storage_human": "2.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "从统计局查询的cpi都是以上一年为基期的，如何转化为以某一年为基期 …",
+      "url": "https://zhidao.baidu.com/question/1964276322859816580.html",
+      "snippet": "从统计局查询的cpi都是以上一年为基期的，如何转化为以某一年为基期的？假设2008年CPI同比上升5%（即是2008年CPI较2007年上 …"
+    },
+    {
+      "title": "美国季调后CPI与CPI数据有何关系_百度知道",
+      "url": "https://zhidao.baidu.com/question/684499045830643292.html",
+      "snippet": "2.核心CPI、季调后CPI 美国核心通胀率、剔除核心CPI，它也是CPI的一种，该指标的作用和CPI有异曲同工之处。 区别在于核心CPI …"
+    },
+    {
+      "title": "CPI月率与CPI年率有什么区别？ - 知乎",
+      "url": "https://www.zhihu.com/question/448380178",
+      "snippet": "1、CPI对应的中文俗称是“ 居民消费价格指数 ”，即国际上所谓的“ 消费者物价指数 ”的英文简称。该指标是根据与居民生活有关的产品 …"
+    },
+    {
+      "title": "CPI 数据存在着哪些缺陷？ - 知乎",
+      "url": "https://www.zhihu.com/question/58400369",
+      "snippet": "2. CPI还存在新产品偏差性。 假设基准年之后，新的日用产品进入市场，被大众所欢迎，这个产品的价格以及销售量，实际上都会或多 …"
+    },
+    {
+      "title": "outlook中如何完成再次编辑发送的功能 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/fa4125acd63fe128ac709203.html",
+      "snippet": "May 12, 2015 · outlook中如何完成再次编辑发送的功能,之前使用的是foxmail，有个很方便的功能就是再次编辑发送，我可以直接发送 …"
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "squarerfive/betterlens-dual-head-sentiment-vagueness",
+  "slug": "squarerfive-betterlens-dual-head-sentiment-vagueness",
+  "author": "squarerfive",
+  "url": "https://huggingface.co/squarerfive/betterlens-dual-head-sentiment-vagueness",
+  "created_at": "2026-09-18T22:34:26.000Z",
+  "updated_at": "2026-09-18T22:43:27.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "betterlens_dual_head",
+    "feature-extraction",
+    "sentiment-analysis",
+    "vagueness",
+    "text-classification",
+    "regression",
+    "dual-task",
+    "distilbert",
+    "betterlens",
+    "custom-objective",
+    "custom_code",
+    "en",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:quantized:distilbert/distilbert-base-uncased",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66365956,
+  "parameters_human": "66.4M",
+  "storage_bytes": 531078447,
+  "storage_human": "531 MB",
+  "base_model": "distilbert-base-uncased",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-19T02:23:46.938Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Startseite | NIVEA",
+      "url": "https://www.nivea.de/",
+      "snippet": "Willkommen auf der NIVEA Website! Wir bieten Ihnen tolle Tipps und spannende Möglichkeiten rund um die beliebten …"
+    },
+    {
+      "title": "Nivea – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Nivea",
+      "snippet": "Nivea gehörte zu den ersten Markenprodukten in Deutschland, für die mit Radiospots geworben wurde. Heute gehört die …"
+    },
+    {
+      "title": "NIVEA Produkte | Gesichtspflege, Körperpflege & Deodorants | NIVEA",
+      "url": "https://www.nivea.de/produkte",
+      "snippet": "Entdecken Sie alle NIVEA Produkte an einem Ort – von Gesichts- und Körperpflege bis Deodorants – und finden Sie Ihre tägliche …"
+    },
+    {
+      "title": "WELCOME TO NIVEA",
+      "url": "https://www.nivea.com/",
+      "snippet": "Overview of all NIVEA websites around the world. Please choose your country."
+    },
+    {
+      "title": "Nivea - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nivea",
+      "snippet": "Nivea (German pronunciation: [niˈveːa] ⓘ, [1][2] stylized as NIVEA) is a German personal care brand that specializes in skin and …"
+    }
+  ]
+}

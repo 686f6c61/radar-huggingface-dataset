@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "wuvictor/swin-t-retrieval",
+  "slug": "wuvictor-swin-t-retrieval",
+  "author": "wuvictor",
+  "url": "https://huggingface.co/wuvictor/swin-t-retrieval",
+  "created_at": "2026-09-19T01:11:54.000Z",
+  "updated_at": "2026-09-19T01:11:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "swin_t",
+    "pytorch",
+    "swin-t",
+    "retrieval",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Major League Baseball - Reddit",
+      "url": "https://www.reddit.com/r/mlb/",
+      "snippet": "Subreddit for Major League Baseball. From discussions, news, and highlights from all thirty MLB teams."
+    },
+    {
+      "title": "Hasan Piker - Reddit",
+      "url": "https://www.reddit.com/r/Hasan_Piker/",
+      "snippet": "Official subreddit of left-wing Twitch streamer Hasan \"HasanAbi\" Piker"
+    },
+    {
+      "title": "X (つういったー）はパソコンで使用可能でしょうか。アプリとかパソ …",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q14288005069",
+      "snippet": "Oct 26, 2023 · X(つういったー）はパソコンで使用可能でしょうか。アプリとかパソコン用ありますか。t"
+    },
+    {
+      "title": "Twitter保存ランキングの代わりのサイトはありますか？ - Yahoo!知恵袋",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q10254471060",
+      "snippet": "Twitter保存ランキングの代わりのサイトはありますか？"
+    },
+    {
+      "title": "TWI-Government-and-Election-2022-Handbook - Twitter:",
+      "url": "https://blog.twitter.com/content/dam/blog-twitter/official/en_au/company/2022/2022-federal-election/candidate-handbook-campaigning-on-twitter-during-the-2022-australian-federal-election.pdf",
+      "snippet": "Government and Election 2022 handbook Twitter name Your @username is your unique identity on Twitter and is always preceded …"
+    }
+  ]
+}

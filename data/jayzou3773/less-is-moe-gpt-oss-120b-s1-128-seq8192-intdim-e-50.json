@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "jayzou3773/less-is-moe-gpt-oss-120b-s1-128-seq8192-intdim-e-50",
+  "slug": "jayzou3773-less-is-moe-gpt-oss-120b-s1-128-seq8192-intdim-e-50",
+  "author": "jayzou3773",
+  "url": "https://huggingface.co/jayzou3773/less-is-moe-gpt-oss-120b-s1-128-seq8192-intdim-e-50",
+  "created_at": "2026-09-18T22:06:47.000Z",
+  "updated_at": "2026-09-18T22:12:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gpt_oss",
+    "moe",
+    "pruning",
+    "less-is-moe",
+    "text-generation",
+    "conversational",
+    "dataset:jayzou3773/less-is-moe-s1-calibration-128-seq8192",
+    "base_model:openai/gpt-oss-120b",
+    "base_model:finetune:openai/gpt-oss-120b",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 59484992832,
+  "parameters_human": "59.48B",
+  "storage_bytes": 118997925414,
+  "storage_human": "119.0 GB",
+  "base_model": "openai/gpt-oss-120b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Welkom | SiVi",
+      "url": "https://sivi.sint-rembert.be/nl/welkom",
+      "snippet": "Mar 22, 2000 · In SiVi, het Technisch Instituut Sint-Vincentius, gebeurt leren in een veilig klimaat waar respect centraal staat. Je mag …"
+    },
+    {
+      "title": "Studieaanbod - SiVi",
+      "url": "https://sivi.sint-rembert.be/nl/studieaanbod",
+      "snippet": "Mar 22, 2000 · Derde graad Bedrijfswetenschappen - 3de graad (D-finaliteit) Taal en communicatiewetenschappen - 3de graad (D …"
+    },
+    {
+      "title": "Nuttige info | SiVi",
+      "url": "https://sivi.sint-rembert.be/nl/nuttige-info",
+      "snippet": "Mar 22, 2000 · Adres Technisch I nstituut Sint-Vincentius Scholengroep Sint-Rembert vzw Spinneschoolstraat 10 8820 TORHOUT"
+    },
+    {
+      "title": "Wie is wie | SiVi",
+      "url": "https://sivi.sint-rembert.be/nl/wieiswie",
+      "snippet": "Mar 22, 2000 · Wie is wie in sivi Onze Directie Hilde Maertens Directeur hilde.maertens@sint-rembert.be Peter Decuypere Adjunct …"
+    },
+    {
+      "title": "Home | SiVi",
+      "url": "https://sivi.sint-rembert.be/",
+      "snippet": "Menu Home Onze school Onze passies In de kijker Studieaanbod Nuttige info Inschrijven Locatie Technisch Instituut Sint-Vincentius …"
+    }
+  ]
+}

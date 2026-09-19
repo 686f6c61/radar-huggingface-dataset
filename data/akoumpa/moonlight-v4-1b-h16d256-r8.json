@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "akoumpa/Moonlight-V4-1B-h16d256-r8",
+  "slug": "akoumpa-moonlight-v4-1b-h16d256-r8",
+  "author": "akoumpa",
+  "url": "https://huggingface.co/akoumpa/Moonlight-V4-1B-h16d256-r8",
+  "created_at": "2026-09-18T23:22:20.000Z",
+  "updated_at": "2026-09-18T23:24:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "deepseek_v4",
+    "mixture-of-experts",
+    "moe",
+    "hybrid-attention",
+    "compressed-sparse-attention",
+    "hyper-connections",
+    "mhc",
+    "architecture-config",
+    "untrained",
+    "from-scratch",
+    "nemo-automodel",
+    "moonlight",
+    "text-generation",
+    "arxiv:2502.16982",
+    "arxiv:2606.19348",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ADJ Inno Pocket Z4",
+      "url": "https://www.adj.com/products/inno-pocket-z4",
+      "snippet": "The Inno Pocket Z4 is a mini ZOOM Moving Head that creates beautiful washes of color with its 10-60-degree beam angle. Its …"
+    },
+    {
+      "title": "Inno Pocket Z4 - ADJ",
+      "url": "https://www.adj.eu/inno-pocket-z4",
+      "snippet": "The Inno Pocket Z4 is a mini ZOOM Moving Head that creates beautiful washes of color with its 10-60-degree beam angle. Its …"
+    },
+    {
+      "title": "ADJ Inno Pocket Z4 User Manual",
+      "url": "https://manuals.plus/m/13e8b1a663381cc77740fbbb9be636a216c5643929760f6f0cc2422e22674ea2",
+      "snippet": "Comprehensive user manual for the ADJ Inno Pocket Z4 moving head LED fixture, covering setup, DMX configuration, operation, …"
+    },
+    {
+      "title": "Inno Pocket Z4 English manual 0815",
+      "url": "https://manuals.plus/m/fed8833fe09dbe05231b9135fb1357ecbfaafb5b1aadab70bc10a7cc43e7c191",
+      "snippet": "If the inline viewer fails, it will open the original document in compatibility mode automatically. You can also open the file directly."
+    },
+    {
+      "title": "INNO POCKET Z4",
+      "url": "https://d295jznhem2tn9.cloudfront.net/ItemRelatedFiles/8842/ADJ%20Inno%20Pocket%20Z4%20-%20User%20Manual%202022-05-20.pdf",
+      "snippet": "Introduction: The Inno Pocket Z4 is a DMX intelligent, zooming, moving head, mini LED fixture that is capable of operating as a stand …"
+    }
+  ]
+}

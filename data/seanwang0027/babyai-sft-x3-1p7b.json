@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "SeanWang0027/babyai-sft-x3-1p7b",
+  "slug": "seanwang0027-babyai-sft-x3-1p7b",
+  "author": "SeanWang0027",
+  "url": "https://huggingface.co/SeanWang0027/babyai-sft-x3-1p7b",
+  "created_at": "2026-09-18T22:30:26.000Z",
+  "updated_at": "2026-09-18T22:31:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "babyai",
+    "multi-turn",
+    "rose",
+    "agent",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2031739904,
+  "parameters_human": "2.03B",
+  "storage_bytes": 4074938294,
+  "storage_human": "4.1 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Telegram Desktop",
+      "url": "https://desktop.telegram.org/",
+      "snippet": "Experience Telegram on your computer in a swift and seamless way."
+    },
+    {
+      "title": "Telegram Desktop",
+      "url": "https://desktop.telegram.org/?setln=fr",
+      "snippet": "Expérimentez Telegram sur votre ordinateur de manière rapide et fluide."
+    },
+    {
+      "title": "تيليجرام سطح المكتب - Telegram Desktop",
+      "url": "https://desktop.telegram.org/?setln=ar",
+      "snippet": "هذا البرنامج متوفر تحت ترخيص GPL v3. النص البرمجي متوفر على GitHub. تابعنا على تويتر النسخ التجريبية"
+    },
+    {
+      "title": "Telegram Desktop",
+      "url": "https://desktop.telegram.org/?setln=es",
+      "snippet": "Experimenta Telegram en tu computadora de una manera rápida y fluida."
+    },
+    {
+      "title": "Telegram Desktop",
+      "url": "https://desktop.telegram.org/?setln=de",
+      "snippet": "Benutze Telegram schnell und unkompliziert auf deinem Computer."
+    }
+  ]
+}

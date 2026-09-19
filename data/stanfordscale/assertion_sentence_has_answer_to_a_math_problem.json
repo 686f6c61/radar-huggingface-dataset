@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "id": "StanfordSCALE/assertion_sentence_has_answer_to_a_math_problem",
+  "slug": "stanfordscale-assertion_sentence_has_answer_to_a_math_problem",
+  "author": "StanfordSCALE",
+  "url": "https://huggingface.co/StanfordSCALE/assertion_sentence_has_answer_to_a_math_problem",
+  "created_at": "2026-09-18T20:50:50.000Z",
+  "updated_at": "2026-09-18T20:50:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "setfit",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "setfit",
+    "safetensors",
+    "mpnet",
+    "text-classification",
+    "education",
+    "classroom-discourse",
+    "edubehaviors",
+    "assertion",
+    "en",
+    "dataset:StanfordSCALE/assertions_llm_annotated_talkmoves",
+    "base_model:sentence-transformers/paraphrase-mpnet-base-v2",
+    "base_model:finetune:sentence-transformers/paraphrase-mpnet-base-v2",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109486464,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437974679,
+  "storage_human": "438 MB",
+  "base_model": "sentence-transformers/paraphrase-mpnet-base-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "F1 (positive class, test)",
+      "value": 0.4639
+    },
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "Precision (positive class, test)",
+      "value": 0.45
+    },
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "Recall (positive class, test)",
+      "value": 0.4787
+    },
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "ROC-AUC (test)",
+      "value": 0.8638
+    }
+  ],
+  "sources": [
+    {
+      "title": "Google AI Studio",
+      "url": "https://aistudio.google.com/",
+      "snippet": "Generate photorealistic window views based on live weather and specific locations. Manage a virtual metropolis and fulfill tasks …"
+    },
+    {
+      "title": "Google AI Studio | Gemini API | Google AI for Developers",
+      "url": "https://ai.google.dev/aistudio",
+      "snippet": "Grab your API key and start integrating Gemini models into your apps. Visit our prompt gallery for examples of what's possible with …"
+    },
+    {
+      "title": "Using Gemini API keys | Google AI for Developers",
+      "url": "https://ai.google.dev/gemini-api/docs/api-key",
+      "snippet": "2 days ago · Get your Gemini API key and start building in less than 5 minutes using the Interactions API."
+    },
+    {
+      "title": "Instructions to get your free Gemini API Key · GitHub",
+      "url": "https://gist.github.com/christo-zero-john/51ae3736be7fd3654d05d2cb04248af1",
+      "snippet": "Dec 20, 2025 · This guide walks you through obtaining a Gemini API key from Google AI Studio, understanding the Free vs. Paid …"
+    },
+    {
+      "title": "Google AI Studio API Key: Create It, Secure It, and Verify Your First ...",
+      "url": "https://blog.laozhang.ai/en/posts/google-ai-studio-api-key",
+      "snippet": "Aug 29, 2026 · A Google AI Studio API key is the credential your application uses to call the Gemini Developer API. It is not a Gemini …"
+    }
+  ]
+}

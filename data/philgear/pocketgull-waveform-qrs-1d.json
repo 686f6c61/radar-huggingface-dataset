@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "philgear/pocketgull-waveform-qrs-1d",
+  "slug": "philgear-pocketgull-waveform-qrs-1d",
+  "author": "philgear",
+  "url": "https://huggingface.co/philgear/pocketgull-waveform-qrs-1d",
+  "created_at": "2026-09-18T20:47:06.000Z",
+  "updated_at": "2026-09-18T20:47:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "gemma-2",
+    "lora",
+    "clinical-nlp",
+    "healthcare",
+    "hipaa-safe-harbor",
+    "open-science",
+    "pocketgull",
+    "nih-medquad",
+    "who-mhgap",
+    "text-generation",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "pocketgull/waveform-dilated-cnn-1d",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "منخفض جوي - ويكيبيديا",
+      "url": "https://ar.wikipedia.org/wiki/%D9%85%D9%86%D8%AE%D9%81%D8%B6_%D8%AC%D9%88%D9%8A",
+      "snippet": "منخفض جوي المنخفض الجوي هو منطقة مغلقة بخطوط ضغط متساوية حيث تكون أقل قيمة للضغط الجوي في المركز وتزداد كلما ابتعدنا عن المركز، اتجاه الرياح حول المنخفض الجوي عكس عقارب …"
+    },
+    {
+      "title": "منخفض جوي يضرب الأجواء.. الأرصاد تكشف تفاصيل الظاهرة الجوية وأسباب ...",
+      "url": "https://www.algomhor.com/451437",
+      "snippet": "الأخبار منخفض جوي يضرب الأجواء.. الأرصاد تكشف تفاصيل الظاهرة الجوية وأسباب تأثيرها على البلاد أسماء أبو شادي الجمعة 24/يوليو/2026 - 10:55 ص منخفض جوي"
+    },
+    {
+      "title": "ضغط جوي - ويكيبيديا",
+      "url": "https://ar.wikipedia.org/wiki/%D8%B6%D8%BA%D8%B7_%D8%AC%D9%88%D9%8A",
+      "snippet": "يتكون الضغط الجوي المنخفض عندما ترتفع درجة الحرارة إذ يؤدي هذا إلى تسارع جزيئات الهواء وابتعادها عن بعضها، ويتكون الضغط الجوي المرتفع عندما تنخفض درجة الحرارة، إذ يؤدي ذلك إلى …"
+    },
+    {
+      "title": "ما هو المنخفض الجوي؟ - طقس العرب",
+      "url": "https://www.arabiaweather.com/ar/question/%D9%85%D8%A7-%D9%87%D9%88-%D8%A7%D9%84%D9%85%D9%86%D8%AE%D9%81%D8%B6-%D8%A7%D9%84%D8%AC%D9%88%D9%8A%D8%9F",
+      "snippet": "Oct 24, 2021 · يُذكر بأن منطقة معينة تحت تأثير منخفض جوي عندما ينخفض فيها الضغط الجوي عن المناطق المجاورة، ويتزامن انخفاض الضغط مع هواء أخف وزناً، فيصعد إلى الطبقات العليا من …"
+    },
+    {
+      "title": "درس- المنخفضات الجوية و الأعاصير",
+      "url": "https://storymaps.arcgis.com/stories/19c68d0ef845404597aaa860457d9565",
+      "snippet": "والمنخفضات الجوية هي مناطق ذات ضغط جوي منخفض تجلب معها الرياح والأمطار، أما الأعاصير فهي مناطق ضغط جوي شديد الانخفاض مصحوبة برياح قوية وأمطار غزيرة."
+    }
+  ]
+}

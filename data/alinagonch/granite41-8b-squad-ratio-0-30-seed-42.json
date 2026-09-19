@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "AlinaGonch/granite41-8b-squad-ratio-0.30-seed-42",
+  "slug": "alinagonch-granite41-8b-squad-ratio-0-30-seed-42",
+  "author": "AlinaGonch",
+  "url": "https://huggingface.co/AlinaGonch/granite41-8b-squad-ratio-0.30-seed-42",
+  "created_at": "2026-09-19T01:40:27.000Z",
+  "updated_at": "2026-09-19T01:40:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 197993952,
+  "storage_human": "198 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Boutiques Orange à proximité | Horaires et services",
+      "url": "https://agence.orange.fr/fr/store-locator.html",
+      "snippet": "Orange vous accueille dans l'une de ses 550 boutiques. Découvrez les horaires d'ouverture, services et offres disponibles dans l'une …"
+    },
+    {
+      "title": "Orange | Forfaits mobiles, offres internet, TV, 5G et ligne fixe",
+      "url": "https://boutique.orange.fr/?msockid=0d8f6c4b2dd26d0315ee7b922c066c02",
+      "snippet": "Découvrez la boutique Orange avec ses offres mobiles et internet très haut débit Adsl, Fibre, 5G. Forfaits mobiles, Internet, TV ou …"
+    },
+    {
+      "title": "18 magasins à votre service - Boutiques Orange Paris",
+      "url": "https://agence.orange.fr/fr/pv/paris.html",
+      "snippet": "Nos conseillers vous accueillent avec ou sans RDV pour vous renseigner et vous accompagner. Livraison dans toutes nos boutiques …"
+    },
+    {
+      "title": "Portail Orange | Offres Mobiles, Internet, TV, Actu & Accès compte …",
+      "url": "https://www.orange.fr/portail",
+      "snippet": "Accès rapide et facile à toutes les fonctionnalités Orange (Email, Assistance, Banque, Boutique). Découvrez notre portail Orange et …"
+    },
+    {
+      "title": "Smartphones et offres forfaits mobiles - Orange",
+      "url": "https://boutique.orange.fr/mobile?msockid=0d8f6c4b2dd26d0315ee7b922c066c02",
+      "snippet": "Vous cherchez un nouveau smartphone ou vous voulez changer de forfait ? Vous trouverez dans la boutique Orange tout ce dont …"
+    }
+  ]
+}

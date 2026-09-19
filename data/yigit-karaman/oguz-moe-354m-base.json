@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "Yigit-Karaman/Oguz-MoE-354M-Base",
+  "slug": "yigit-karaman-oguz-moe-354m-base",
+  "author": "Yigit-Karaman",
+  "url": "https://huggingface.co/Yigit-Karaman/Oguz-MoE-354M-Base",
+  "created_at": "2026-09-19T01:18:01.000Z",
+  "updated_at": "2026-09-19T01:36:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "moe_llama",
+    "text-generation",
+    "moe",
+    "mixture-of-experts",
+    "llama",
+    "turkish",
+    "custom-code",
+    "upcycled",
+    "depth-upscaling",
+    "base-model",
+    "custom_code",
+    "tr",
+    "dataset:ytu-ce-cosmos/Cosmos-Turkish-Corpus-v1.0",
+    "dataset:HuggingFaceFW/fineweb-2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 107,
+  "trending_score": 0,
+  "parameters": 354161748,
+  "parameters_human": "354.2M",
+  "storage_bytes": 708372568,
+  "storage_human": "708 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "你所在的数学或物理领域里，有没有出现什么学术新星 (Rising Star)？",
+      "url": "https://www.zhihu.com/question/369162462",
+      "snippet": "Feb 2, 2020 · 好巧不巧，11年突然杀出来一个Douglas，87年出生的Douglas比尹希还猛，不同的是他起跑线没有那么靠前，按部就班 …"
+    },
+    {
+      "title": "如何评价GEB (哥德尔、埃舍尔、巴赫：集异璧之大成)的作者侯世达 …",
+      "url": "https://www.zhihu.com/question/29481743",
+      "snippet": "建议大家去读一下 Douglas Hofstadter 的另一本书， Fluid Concepts and Creative Analogies: Computer Models Of The Fundamental …"
+    },
+    {
+      "title": "如果只能推荐一本 JavaScript 的书，你会推荐哪本？ - 知乎",
+      "url": "https://www.zhihu.com/question/27471131",
+      "snippet": "有一定基础的，想钻研语言的人推荐看。 Douglas Crockford的《How JavaScript Works》。 前面说过，DC的经典之作《JS精粹》太 …"
+    },
+    {
+      "title": "如何评价The Rock（Dwayne Douglas Johnson）的 WWE 生涯 ... - 知乎",
+      "url": "https://www.zhihu.com/question/21245037",
+      "snippet": "The Rock出身于孕育了许多著名摔角手的萨摩亚家族，他的父亲也曾在WWE效力多年、拿到过双打冠军并且被引入了名人堂（其实还 …"
+    },
+    {
+      "title": "为什么会有人叫道格？ - 知乎",
+      "url": "https://www.zhihu.com/question/25550165",
+      "snippet": "Doug 是 Douglas 的昵称。一般不会直接用 Doug 作为名字。 通常只有熟人才会以昵称相称，朋友间叫一个「不大好听」的昵称也并 …"
+    }
+  ]
+}

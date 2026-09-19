@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "zbeeb/Qwen2.5-3B-GRPO-Staleness-8",
+  "slug": "zbeeb-qwen2-5-3b-grpo-staleness-8",
+  "author": "zbeeb",
+  "url": "https://huggingface.co/zbeeb/Qwen2.5-3B-GRPO-Staleness-8",
+  "created_at": "2026-09-19T02:09:09.000Z",
+  "updated_at": "2026-09-19T02:09:58.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "grpo",
+    "math",
+    "reinforcement-learning",
+    "staleness-grpo",
+    "conversational",
+    "en",
+    "zh",
+    "dataset:zbeeb/Staleness-GRPO-DAPO-Math-17k",
+    "base_model:Qwen/Qwen2.5-3B",
+    "base_model:finetune:Qwen/Qwen2.5-3B",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 152,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 12355225756,
+  "storage_human": "12.4 GB",
+  "base_model": "Qwen/Qwen2.5-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dedeman founders invest in logistics project near Bucharest",
+      "url": "https://www.property-forum.eu/news/dedeman-founders-invest-in-logistics-project-near-bucharest/8456",
+      "snippet": "Brothers Adrian and Dragoș Pavăl, founders and owners of DIY chain Dedeman, are investing in a new logistics project in …"
+    },
+    {
+      "title": "Pavăl Holding takes over Praktiker Hellas in international push",
+      "url": "https://www.property-forum.eu/news/paval-holding-takes-over-praktiker-hellas-in-international-push/20222",
+      "snippet": "Pavăl Holding, the investment vehicle of the Pavăl family and Romania's largest local entrepreneurial group, announced its strategic …"
+    },
+    {
+      "title": "Romanian transaction pipeline points to recovery in H2 2026",
+      "url": "https://www.property-forum.eu/news/romanian-transaction-pipeline-points-to-recovery-in-h2-2026/21773",
+      "snippet": "Romania continues to attract international retailers. In Q2 2026, lululemon opened its first store in the country, Dansk entered the …"
+    },
+    {
+      "title": "Real Estate Capital & Investment Decisions Forum 2026 - London",
+      "url": "https://www.property-forum.eu/forums/conference-property/real-estate-capital-investment-decisions-forum-2026-london/2043/registration",
+      "snippet": "Property Forum is a leading event hub in the CEE real estate industry with over 10 years of experience. We organise conferences, …"
+    },
+    {
+      "title": "YIT completes resi project in Prague | NEWS | Property Forum",
+      "url": "https://www.property-forum.eu/news/yit-completes-resi-project-in-prague/20896",
+      "snippet": "YIT has completed its residential project Sija Kamýk in Prague 12, featuring ecological and energy-efficient elements. The residential …"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ishikaa/acquisition_student_random_medmcqa_qwen7b_10000",
+  "slug": "ishikaa-acquisition_student_random_medmcqa_qwen7b_10000",
+  "author": "ishikaa",
+  "url": "https://huggingface.co/ishikaa/acquisition_student_random_medmcqa_qwen7b_10000",
+  "created_at": "2026-09-18T22:16:35.000Z",
+  "updated_at": "2026-09-19T18:09:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "trl",
+    "sft",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 30473965624,
+  "storage_human": "30.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google als Startseite festlegen - Google Suche-Hilfe",
+      "url": "https://support.google.com/websearch/answer/463?hl=de",
+      "snippet": "Google wurde ohne meine Zustimmung als Startseite festgelegt Google ändert die Einstellungen für Ihre Startseite nicht ohne Ihre …"
+    },
+    {
+      "title": "Créer un compte Google - Ordinateur - Aide Compte Google",
+      "url": "https://support.google.com/accounts/answer/27441?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Important : Lorsque vous créez un compte Google pour votre entreprise, vous pouvez activer la personnalisation pour les …"
+    },
+    {
+      "title": "Googleの株を買いたいのですが、アルファベットCとアルファベッ …",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q13297352748",
+      "snippet": "Jun 12, 2009 · Googleの株を買いたいのですが、アルファベットCとアルファベットAがあるのですが、違いは何でしょうか！"
+    },
+    {
+      "title": "今朝05055300644という電話番号からショートメッセージでGoogl.",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q12292049097",
+      "snippet": "Jan 19, 2024 · 今朝05055300644という電話番号からショートメッセージでGoogleの確認コードは、に続いて数字が送られてきまし …"
+    },
+    {
+      "title": "Classroom にログインする - パソコン - Classroom ヘルプ",
+      "url": "https://support.google.com/edu/classroom/answer/6072460?hl=ja&co=GENIE.Platform%3DDesktop",
+      "snippet": "このエラーは、間違ったアカウントで Classroom にログインした場合に発生します。このエラーを解決するには: ログアウトしてか …"
+    }
+  ]
+}

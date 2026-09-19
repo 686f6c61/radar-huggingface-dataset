@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Demondiablo/medgemma-4b-it-int8-w8a8",
+  "slug": "demondiablo-medgemma-4b-it-int8-w8a8",
+  "author": "Demondiablo",
+  "url": "https://huggingface.co/Demondiablo/medgemma-4b-it-int8-w8a8",
+  "created_at": "2026-09-18T22:58:21.000Z",
+  "updated_at": "2026-09-18T22:59:03.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3",
+    "image-text-to-text",
+    "int8",
+    "w8a8",
+    "compressed-tensors",
+    "llm-compressor",
+    "vllm",
+    "medical",
+    "healthcare",
+    "conversational",
+    "base_model:google/medgemma-4b-it",
+    "base_model:quantized:google/medgemma-4b-it",
+    "license:gemma",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4300079472,
+  "parameters_human": "4.30B",
+  "storage_bytes": 5431759937,
+  "storage_human": "5.4 GB",
+  "base_model": "google/medgemma-4b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Srv Construction in Perumukkal, Tindivanam - Best Construction ...",
+      "url": "https://www.justdial.com/Tindivanam/Srv-Construction-Perumukkal/9999P4147-4147-250416123528-Y8I7_BZDET",
+      "snippet": "Srv Construction in Tindivanam is one of the leading businesses in the Construction Companies. Find Address, Contact Number, …"
+    },
+    {
+      "title": "Nagari-Tindivanam railway track work revived as Rs 350 cr allocated in ...",
+      "url": "https://indiarailinfo.com/news/post/541064",
+      "snippet": "2 days ago · CHENNAI: The construction of the long-delayed 184.45-km railway line project between Tindivanam and Nagari is set to …"
+    },
+    {
+      "title": "List of Top Construction Companies in Tindivanam - Best Civil ...",
+      "url": "https://www.justdial.com/Tindivanam/Construction-Companies/nct-10128251",
+      "snippet": "Find Civil Contractors, Commercial Builders, Building Contractors, Civil Engineering Companies in Tindivanam. Get Phone Numbers, …"
+    },
+    {
+      "title": "RocketReach",
+      "url": "https://rocketreach.co/srv-construction-profile_b4677835fc5d6e5e",
+      "snippet": "SRV Construction offers site development services for the commercial, industrial and residential markets. We employ highly …"
+    },
+    {
+      "title": "SRV CONSTRUCTION Company Profile | Viluppuram, Tamil Nadu",
+      "url": "https://www.dnb.com/business-directory/company-profiles.srv_construction.fbf4df9ab1416ee0fc14833d45d8cf5e.html",
+      "snippet": "Find company research, competitor information, contact details & financial data for SRV CONSTRUCTION of Viluppuram, Tamil …"
+    }
+  ]
+}

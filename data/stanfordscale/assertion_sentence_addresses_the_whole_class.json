@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "id": "StanfordSCALE/assertion_sentence_addresses_the_whole_class",
+  "slug": "stanfordscale-assertion_sentence_addresses_the_whole_class",
+  "author": "StanfordSCALE",
+  "url": "https://huggingface.co/StanfordSCALE/assertion_sentence_addresses_the_whole_class",
+  "created_at": "2026-09-18T20:49:20.000Z",
+  "updated_at": "2026-09-18T20:49:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "setfit",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "setfit",
+    "safetensors",
+    "mpnet",
+    "text-classification",
+    "education",
+    "classroom-discourse",
+    "edubehaviors",
+    "assertion",
+    "en",
+    "dataset:StanfordSCALE/assertions_llm_annotated_talkmoves",
+    "base_model:sentence-transformers/paraphrase-mpnet-base-v2",
+    "base_model:finetune:sentence-transformers/paraphrase-mpnet-base-v2",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109486464,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437974679,
+  "storage_human": "438 MB",
+  "base_model": "sentence-transformers/paraphrase-mpnet-base-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "F1 (positive class, test)",
+      "value": 0.7994
+    },
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "Precision (positive class, test)",
+      "value": 0.8265
+    },
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "Recall (positive class, test)",
+      "value": 0.7741
+    },
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "ROC-AUC (test)",
+      "value": 0.8261
+    }
+  ],
+  "sources": [
+    {
+      "title": "New Uzbek Songs 2026 - New Music Uzbek 2026 (Latest Uzbek",
+      "url": "https://www.youtube.com/playlist?list=PLpY7hx7jry7wzwfUQKOK9b2nwc3KIWF5n",
+      "snippet": "New Uzbek Songs 2026 - New Music Uzbek 2026 (Latest Uzbek Songs 2026 Playlist) If you liked this playlist, we recommend you …"
+    },
+    {
+      "title": "Uzbek Xit Music 2026 - Playlist Uzbek Qo'shiqlar 2026 (Uzbek …",
+      "url": "https://www.youtube.com/playlist?list=PLcW64_9SPNWfQqH7IEdsCmt7PpI5xSmUX",
+      "snippet": "Uzbek Xit Music 2026 - Playlist Uzbek Qo'shiqlar 2026 (Uzbek Mashhur Musiqalar 2026) You can also find us with: uzbek xit music …"
+    },
+    {
+      "title": "Uzbek Music 2026 - Uzbek Hits 2026 - Top Uzbek Song 2026 - Spotify",
+      "url": "https://open.spotify.com/playlist/1UJBBVjTkWLm3A4SFRD5M4",
+      "snippet": "You can also find us with: top 10 uzbek music - uzbek mix 2026 - uzbekistan song famous - uzbek music - uzbekistan music - uzbek …"
+    },
+    {
+      "title": "Yangi qo‘shiqlar, albomlar, to‘plamlar, ijrochilar va ... - RizaNova",
+      "url": "https://rizanova.uz/music",
+      "snippet": "RizaNova saytida o‘zbek qo‘shiqlari va albomlarini yaxshi sifatda onlayn tinglang."
+    },
+    {
+      "title": "Uzbek Music 2026 - Uzbek Hits 2026 - Top Uzbek Song 2026 - Redlist",
+      "url": "https://www.redlist.com/playlist/60783",
+      "snippet": "So, in the next year, you could find our playlist like this: Uzbek Music 2027 - Uzbek Hits 2027 - Top Uzbek Song 2027 - Top 10 Uzbek …"
+    }
+  ]
+}

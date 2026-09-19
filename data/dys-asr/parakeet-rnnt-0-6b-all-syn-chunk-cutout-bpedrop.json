@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "dys-asr/parakeet-rnnt-0.6b-all-syn-chunk-cutout-bpedrop",
+  "slug": "dys-asr-parakeet-rnnt-0-6b-all-syn-chunk-cutout-bpedrop",
+  "author": "dys-asr",
+  "url": "https://huggingface.co/dys-asr/parakeet-rnnt-0.6b-all-syn-chunk-cutout-bpedrop",
+  "created_at": "2026-09-19T01:16:54.000Z",
+  "updated_at": "2026-09-19T01:17:20.000Z",
+  "license": "speech-accessibility-project-dua",
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "parakeet_rnnt",
+    "feature-extraction",
+    "automatic-speech-recognition",
+    "dysarthria",
+    "disordered-speech",
+    "accessibility",
+    "parakeet",
+    "rnnt",
+    "transducer",
+    "constrained-track",
+    "subword-regularization",
+    "en",
+    "dataset:dys-asr/sapc1",
+    "dataset:dys-asr/sapc2",
+    "base_model:extraordinarylab/parakeet-unified-en-0.6b",
+    "base_model:finetune:extraordinarylab/parakeet-unified-en-0.6b",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 618314241,
+  "parameters_human": "618.3M",
+  "storage_bytes": 2473368908,
+  "storage_human": "2.5 GB",
+  "base_model": "extraordinarylab/parakeet-unified-en-0.6b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Troubles DYS - Fédération Française des DYS",
+      "url": "https://www.ffdys.com/troubles-dys/",
+      "snippet": "En France on parle de 6 à 8% de troubles dys. On peut dire que 4 à 5 % des élèves d’une classe d’âge sont dyslexiques, 3% sont …"
+    },
+    {
+      "title": "Troubles dys — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Troubles_DYS",
+      "snippet": "Les troubles dys sont des troubles spécifiques durables, qui concernent les dysfonctionnements, plus ou moins sévères, des …"
+    },
+    {
+      "title": "Fédération Française des DYS -",
+      "url": "http://www.ffdys.com/",
+      "snippet": "La Fédération Dyspraxique Mais Fantastique (DMF) et la Fédération Française des Dys (FFDys) alertent sur le traitement par les …"
+    },
+    {
+      "title": "Quels sont les différents troubles dys ? Dyslexie, dyscalculie ...",
+      "url": "https://www.pharma-gdd.com/fr/quels-sont-les-troubles-dys",
+      "snippet": "May 6, 2025 · Un trouble dys : c'est quoi ? Les troubles dys se caractérisent par une altération spécifique et significative de la lecture, …"
+    },
+    {
+      "title": "Troubles DYS : Guide Complet | Portail Handicap",
+      "url": "https://portail-handicap.fr/troubles-dys",
+      "snippet": "Dyslexie, dyspraxie, dyscalculie... Guide complet des troubles DYS : diagnostic, compensations, aménagements scolaires et …"
+    }
+  ]
+}

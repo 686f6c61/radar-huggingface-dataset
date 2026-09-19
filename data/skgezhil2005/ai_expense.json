@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "skgezhil2005/ai_expense",
+  "slug": "skgezhil2005-ai_expense",
+  "author": "skgezhil2005",
+  "url": "https://huggingface.co/skgezhil2005/ai_expense",
+  "created_at": "2026-09-19T00:10:39.000Z",
+  "updated_at": "2026-09-19T00:11:54.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gemma3_text",
+    "gemma3",
+    "unsloth",
+    "gemma",
+    "google",
+    "text-generation",
+    "conversational",
+    "base_model:unsloth/gemma-3-270m-it",
+    "base_model:finetune:unsloth/gemma-3-270m-it",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 268098176,
+  "parameters_human": "268.1M",
+  "storage_bytes": 574296173,
+  "storage_human": "574 MB",
+  "base_model": "unsloth/gemma-3-270m-it",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Echte Lederjacken für Herren |versandkostenfrei bei Lederjacken24",
+      "url": "https://lederjacken24.de/lederjacken-herren",
+      "snippet": "So finden sich hier alle möglichen Arten von Herren Lederjacken; in Schwarz, Braun, Grau oder knalligen Farben. Das …"
+    },
+    {
+      "title": "Lederjacken für Herren online bei ZALANDO",
+      "url": "https://www.zalando.de/herrenbekleidung-jacken-lederjacken/",
+      "snippet": "Lederjacken für Herren lassen sich ideal mit Jeans, Hemden oder Boots kombinieren. Auch moderne Layering-Looks mit stilvollen …"
+    },
+    {
+      "title": "Herren Lederjacken & Kunstlederjacken shoppen - Peek & Cloppenburg",
+      "url": "https://www.peek-cloppenburg.de/de/herren/bekleidung/jacken/leder-kunstlederjacken?msockid=0bb03ff0f458645d1dbc2829f593658b",
+      "snippet": "Lederjacken für Herren gibt es in den verschiedensten Stilen, die alle ihren eigenen Charme haben. Für jeden Geschmack und zu …"
+    },
+    {
+      "title": "Lederjacken für Herren – Jetzt online kaufen - Breuninger",
+      "url": "https://www.breuninger.com/de/herren/bekleidung/jacken-lederjacken/?msockid=0bb03ff0f458645d1dbc2829f593658b",
+      "snippet": "Ob Wildlederjacke oder Lederjacke mit Fell für Herren: Für jeden Anlass und jede Witterung finden Sie das passende Modell. Von …"
+    },
+    {
+      "title": "Lederjacken für Herren online kaufen - GALERIA",
+      "url": "https://www.galeria.de/herren/bekleidung/jacken/lederjacken",
+      "snippet": "Lederjacken für Herren auf GALERIA.de stehen für Qualität und Designs, die sich mühelos in unterschiedliche Garderoben …"
+    }
+  ]
+}

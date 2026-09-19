@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "flyingfishinwater/smart-turn-v3",
+  "slug": "flyingfishinwater-smart-turn-v3",
+  "author": "flyingfishinwater",
+  "url": "https://huggingface.co/flyingfishinwater/smart-turn-v3",
+  "created_at": "2026-09-18T21:19:43.000Z",
+  "updated_at": "2026-09-18T21:19:45.000Z",
+  "license": "bsd-2-clause",
+  "license_family": "oss",
+  "pipeline_tag": "voice-activity-detection",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "smart_turn",
+    "semantic-vad",
+    "voice-activity-detection",
+    "base_model:pipecat-ai/smart-turn-v3",
+    "base_model:finetune:pipecat-ai/smart-turn-v3",
+    "license:bsd-2-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8000386,
+  "parameters_human": "8.0M",
+  "storage_bytes": 32010016,
+  "storage_human": "32 MB",
+  "base_model": "pipecat-ai/smart-turn-v3",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-19T02:24:34.695Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bike Shop | Bike-Discount: Dein Bike-Shop mit BEST PRICE Garantie",
+      "url": "https://www.bike-discount.de/",
+      "snippet": "Bike-Discount - Der Onlineshop für Fahrrad, Laufsport, Ski und Outdoor mit BEST PRICE Garantie Das sind wir: Bike-Discount. Seit …"
+    },
+    {
+      "title": "Bike Shop | Bike-Discount: Shop with Best Price Guarantee",
+      "url": "https://www.bike-discount.de/en",
+      "snippet": "Bike lover’s hearts skip a beat for over 30 years! Find all you need for your bike in our online shop. Bicycles, bike components, …"
+    },
+    {
+      "title": "Bike-Discount - News",
+      "url": "https://news.bike-discount.de/en/",
+      "snippet": "Apr 30, 2026 · In recent years, the world of mountain bike tires – especially cross-country – has evolved rapidly. Brands like …"
+    },
+    {
+      "title": "Bike-Discount - News",
+      "url": "https://news.bike-discount.de/",
+      "snippet": "Jun 5, 2026 · Posted on 10. Februar 2026 Raphael Die beste Zeit auf dem Bike ist eigentlich immer genau jetzt. Aber wir kennen das …"
+    },
+    {
+      "title": "Wartungsarbeiten | Bike-Discount.de",
+      "url": "https://maintenance.bike-discount.de/",
+      "snippet": "H & S Bike Discount GmbH Konrad-Zuse-Straße 20 53501 Grafschaft Telefon: +49 (0) 2641 - 89 00 0 Fax: +49 (0) 2641 - 89 00 299 …"
+    }
+  ]
+}

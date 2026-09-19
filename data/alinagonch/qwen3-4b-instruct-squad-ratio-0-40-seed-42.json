@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "AlinaGonch/qwen3-4b-instruct-squad-ratio-0.40-seed-42",
+  "slug": "alinagonch-qwen3-4b-instruct-squad-ratio-0-40-seed-42",
+  "author": "AlinaGonch",
+  "url": "https://huggingface.co/AlinaGonch/qwen3-4b-instruct-squad-ratio-0.40-seed-42",
+  "created_at": "2026-09-18T22:28:41.000Z",
+  "updated_at": "2026-09-18T22:28:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 143610542,
+  "storage_human": "144 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BET99 - Sports Betting",
+      "url": "https://bet99.com/en/home",
+      "snippet": "Canada's premier online sportsbook and casino offering an elevated experience through its platform and app for Apple and Android …"
+    },
+    {
+      "title": "Bet99 Welcome Pack: Up to CA$500 Bonus & 120 Free Spins",
+      "url": "https://bet-99.ca/",
+      "snippet": "The bet99 casino library covers slots, live dealer tables, and instant games with consistent mobile parity. Mobile access comes via …"
+    },
+    {
+      "title": "BET99 - By Canadians, For Canadians",
+      "url": "https://bet99.com/sign-up-bet99",
+      "snippet": "Built for Canadian Players BET99 is a Canadian sportsbook and casino designed for local players, markets, and payment options."
+    },
+    {
+      "title": "BET99 Casino: Trusted Canadian Online Gaming with Fast Payouts",
+      "url": "https://bet99.casino/",
+      "snippet": "Experience BET99 Casino, a fully licensed Canadian online casino with fast Interac payouts, top security, 2600+ games, and 24/7 …"
+    },
+    {
+      "title": "BET99",
+      "url": "https://help.bet99.com/hc/en-ca",
+      "snippet": "Payments Information on deposits using our various methods and withdrawals from your BET99 account KYC Verification Everything …"
+    }
+  ]
+}

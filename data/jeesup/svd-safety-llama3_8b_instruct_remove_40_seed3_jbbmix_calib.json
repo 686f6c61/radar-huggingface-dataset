@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-llama3_8b_instruct_remove_40_seed3_jbbmix_calib",
+  "slug": "jeesup-svd-safety-llama3_8b_instruct_remove_40_seed3_jbbmix_calib",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-llama3_8b_instruct_remove_40_seed3_jbbmix_calib",
+  "created_at": "2026-09-19T00:56:46.000Z",
+  "updated_at": "2026-09-19T01:15:07.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama3",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Meta-Llama-3-8B-Instruct",
+    "base_model:finetune:meta-llama/Meta-Llama-3-8B-Instruct",
+    "license:llama3",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766337,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Meta-Llama-3-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lokales oder Microsoft-Konto: So triffst du die richtige Entscheidung",
+      "url": "https://www.win-tipps.de/lokales-oder-microsoft-konto-entscheidung/",
+      "snippet": "Mar 19, 2026 · Lokales oder Microsoft-Konto? Empfehlungen, Vor- und Nachteile, Sicherheit, Datenschutz und Schrittfolgen für …"
+    },
+    {
+      "title": "Pro & Contra Microsoft-Konto - CHIP",
+      "url": "https://www.chip.de/artikel/Pro-und-Contra-Microsoft-Konto_157731223.html",
+      "snippet": "Feb 18, 2022 · Doch bevor Sie sich für das eine oder andere entscheiden, sollten Sie die Vor- und Nachteile eines Microsoft-Kontos …"
+    },
+    {
+      "title": "Die Vor- und Nachteile der Verwendung eines Microsoft-Kontos mit Windows",
+      "url": "https://de.windows.day/?p=43475",
+      "snippet": "Zugriff auf Vorteile wie OneDrive-Kollaboration und Passkeys für sichere Anmeldungen, indem Sie ein Microsoft-Konto unter …"
+    },
+    {
+      "title": "Microsoft-Konto die Vorteile und Unterschiede!",
+      "url": "https://blog.softwareok.de/?Windows/Microsoft-Konto_die_Vorteile_und_Unterschiede/10175",
+      "snippet": "Jun 3, 2024 · Die Entscheidung zwischen einem Microsoft-Konto und einem Offline-Konto unter Windows 11 und Windows 10 ist eine …"
+    },
+    {
+      "title": "Microsoft Konto anmelden Vor oder Nachteil - computerwissen.de",
+      "url": "https://club.computerwissen.de/qa/246448-microsoft-konto-anmelden-vor-oder-nachteil/",
+      "snippet": "May 16, 2023 · Vorteile eines Microsoft-Kontos. Die Anmeldung per Microsoft-Konto kann durchaus nützlich sein: Ein Microsoft-Konto …"
+    }
+  ]
+}

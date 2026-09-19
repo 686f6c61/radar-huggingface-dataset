@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "nuthan-444/email-spam-detection",
+  "slug": "nuthan-444-email-spam-detection",
+  "author": "nuthan-444",
+  "url": "https://huggingface.co/nuthan-444/email-spam-detection",
+  "created_at": "2026-09-19T02:12:58.000Z",
+  "updated_at": "2026-09-20T02:18:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 340507,
+  "storage_human": "340507 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Automatic requirements elicitation from user-generated content",
+      "url": "https://dl.acm.org/doi/abs/10.1016/j.engappai.2025.111110",
+      "snippet": "Lu, Aspect-based classification method for review spam detection, Multimed. ... Focus Group Discussion Model for Requirements Elicitation Activity. ICCEE ..."
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://www.answers.microsoft.com/en-us/msoffice/forum/all/microsoft-excel-2010-compile-error-in-hidden/",
+      "snippet": ""
+    },
+    {
+      "title": "Sentiment in Software Engineering - Dr. Nathan Cassee",
+      "url": "https://cassee.dev/files/PhD_Thesis_Nathan_Cassee.pdf",
+      "snippet": "ist, such as Plutchik's model [213] or the P.A.N.A model [276], we do not ... the issue of spam detection and quality assessment of online reviews. The."
+    },
+    {
+      "title": "Patent List UEM Jaipur",
+      "url": "https://media.uem.edu.in/uploads/sites/3/2024/10/October-2024-Patent-List-UEM-Jaipur.pdf",
+      "snippet": "18.10.2024 ... SYSTEM FOR EMAIL SPAM DETECTION USING. MACHINE LEARNING. Prof. (Dr)G ... SYSTEM USING A TRAINED AI MODEL. ABHISHEK CHAKRABORTY; RITESH ..."
+    },
+    {
+      "title": "BIO-DATA LM Patnaik - TWAS",
+      "url": "https://twas.org/system/files/cv/full_biodata_pdf.23_aug2016.pdf",
+      "snippet": "13.11.2009 ... Principal Investigator of a sponsored research project “Formal Model for Task Execution in Real-Time. Distributed Computing Systems”, sponsored ..."
+    }
+  ]
+}

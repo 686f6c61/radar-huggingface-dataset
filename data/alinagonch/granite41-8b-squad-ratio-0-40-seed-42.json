@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "AlinaGonch/granite41-8b-squad-ratio-0.40-seed-42",
+  "slug": "alinagonch-granite41-8b-squad-ratio-0-40-seed-42",
+  "author": "AlinaGonch",
+  "url": "https://huggingface.co/AlinaGonch/granite41-8b-squad-ratio-0.40-seed-42",
+  "created_at": "2026-09-19T02:08:48.000Z",
+  "updated_at": "2026-09-19T02:09:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 197993952,
+  "storage_human": "198 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Inspector Barnaby Staffel 13, Folge 7: Eine Schande für das Dorf",
+      "url": "https://www.fernsehserien.de/inspector-barnaby/folgen/13x07-eine-schande-fuer-das-dorf-214593",
+      "snippet": "Eine Schande für das Dorf (Not In My Backyard) Angela Lawrence (Dorothy Atkinson, l.) und Maureen Stubbs (Joan Blackham, r.). …"
+    },
+    {
+      "title": "Eine Schande für das Dorf - ZDFmediathek",
+      "url": "https://www.zdf.de/video/serien/inspector-barnaby-104/eine-schande-fuer-das-dorf-nach-motiven-von-caroline-graham-102",
+      "snippet": "Ein schwerreicher Mann will sich zum Bürgermeister wählen lassen - seine erbittertste Gegnerin stirbt. Ein Fall für Inspector Barnaby …"
+    },
+    {
+      "title": "Inspector Barnaby - Eine Schande für das Dorf - YouTube",
+      "url": "https://www.youtube.com/watch?v=3h69muRAwdU",
+      "snippet": "Jan 21, 2025 · Doch als Buntings Genick in der elektrischen Terrassentür in der Swanscombe-Villa gebrochen und Rogers in seinem …"
+    },
+    {
+      "title": "‎Eine Schande für das Dorf - Inspector Barnaby (Staffel 13, Folge 7 ...",
+      "url": "https://tv.apple.com/de/episode/eine-schande-fur-das-dorf/umc.cmc.5rnh9trkv4e69xltz9q9jcn2s?showId=umc.cmc.1ou7df0dhe06jbyt31d84ved",
+      "snippet": "S13, F7: Leichen über Leichen pflastern die Grafschaft. Erst Demonstrantin Maureen, die sich gegen Norman Swanscombe …"
+    },
+    {
+      "title": "Inspector Barnaby: Eine Schande für das Dorf - TV SPIELFILM",
+      "url": "https://www.tvspielfilm.de/kino/filmarchiv/film/inspector-barnaby-eine-schande-fuer-das-dorf,5834861,ApplicationMovie.html",
+      "snippet": "\"Inspector Barnaby: Eine Schande für das Dorf\" mit John Nettles und Jason Hughes. Trailer, Bewertung, Cast & Bilder bei …"
+    }
+  ]
+}

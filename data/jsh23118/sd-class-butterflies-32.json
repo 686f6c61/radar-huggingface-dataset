@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "jsh23118/sd-class-butterflies-32",
+  "slug": "jsh23118-sd-class-butterflies-32",
+  "author": "jsh23118",
+  "url": "https://huggingface.co/jsh23118/sd-class-butterflies-32",
+  "created_at": "2026-09-19T01:22:34.000Z",
+  "updated_at": "2026-09-19T01:22:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "unconditional-image-generation",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "pytorch",
+    "unconditional-image-generation",
+    "diffusion-models-class",
+    "license:mit",
+    "diffusers:DDPMPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 18536323,
+  "parameters_human": "18.5M",
+  "storage_bytes": 74185252,
+  "storage_human": "74 MB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hotmail – Outlook.com",
+      "url": "http://www.hotmail.com/?mkt=ar-ae",
+      "snippet": "تُعد Outlook.com خدمة بريد إلكتروني شخصي مجانية من Microsoft. تمتع بإبقاء علبة الوارد الخاصة بك خالية من الفوضى من خلال أدوات مؤسسية قوية، وتمتع بالتعاون بسهولة من خلال تكامل …"
+    },
+    {
+      "title": "Outlook",
+      "url": "https://outlook.office.com/mail/?ui=en-US&rs=US",
+      "snippet": "Sign in to access your Microsoft account and manage your emails, calendar, and other features in one place."
+    },
+    {
+      "title": "Outlook Log In | Microsoft 365",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/outlook/log-in?msockid=3be764df45f8638c1fce730644256221",
+      "snippet": "What happened to Hotmail? We’ve redesigned and relaunched Hotmail as Outlook. We’re still committed to building the best free …"
+    },
+    {
+      "title": "How to sign in to Hotmail | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/accounts-billing/manage/how-to-sign-in-to-hotmail",
+      "snippet": "Hotmail is now Outlook.com. Learn how to sign in to access your Outlook.com, Hotmail, Live, or MSN email account."
+    },
+    {
+      "title": "Microsoft Outlook Personal Email and Calendar | Microsoft 365",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/outlook/email-and-calendar-software-microsoft-outlook?msockid=3be764df45f8638c1fce730644256221",
+      "snippet": "What happened to Hotmail? Outlook.com replaced Hotmail years ago, but your Hotmail account will continue to work across Outlook …"
+    }
+  ]
+}

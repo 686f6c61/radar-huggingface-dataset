@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "nekuwolf/Qwen3.5-0.8B-overwatch-fandom-wiki-mid-sep-2026-merged-bf16",
+  "slug": "nekuwolf-qwen3-5-0-8b-overwatch-fandom-wiki-mid-sep-2026-merged-bf16",
+  "author": "nekuwolf",
+  "url": "https://huggingface.co/nekuwolf/Qwen3.5-0.8B-overwatch-fandom-wiki-mid-sep-2026-merged-bf16",
+  "created_at": "2026-09-18T22:32:32.000Z",
+  "updated_at": "2026-09-18T22:33:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen3.5-0.8B",
+    "base_model:finetune:unsloth/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 873438784,
+  "parameters_human": "873.4M",
+  "storage_bytes": 1766931943,
+  "storage_human": "1.8 GB",
+  "base_model": "unsloth/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "荆棘谷的青山一共有多少页，页码分别是什么？_百度知道",
+      "url": "https://zhidao.baidu.com/question/32714780.html",
+      "snippet": "任务要找的是：1、4、6、8（第一章）10、11、14、16（第二章）18、20、21、24（第三章）25、26、27（第四章）。 1．荆棘谷青 …"
+    },
+    {
+      "title": "百度知道 - 全球领先中文互动问答平台",
+      "url": "https://zhidao.baidu.com/",
+      "snippet": "百度知道是全球领先的中文问答互动平台，每天为数亿网民答疑解惑。百度知道通过AI技术实现智能检索和智能推荐，让您的每个疑问 …"
+    },
+    {
+      "title": "JJG国家检定规程下载-JJG国家计量检定规程下载_规程查新 - 计量论坛",
+      "url": "https://www.gfjl.org/forum-31-72.html",
+      "snippet": "Aug 5, 2026 · 提供最全的国家计量检定规程 (JJG)免费下载与在线预览，涵盖行业各专业领域检定依据。"
+    },
+    {
+      "title": "粤 - 地方计量技术规范下载 - 各省市地方计量检定规程 (地方JJG)共享",
+      "url": "https://www.gfjl.org/forum.php?mod=forumdisplay&fid=45&filter=typeid&typeid=95",
+      "snippet": "Feb 3, 2026 · 计量论坛 » 论坛 › JJG/JJF规程与标准下载 › 地方计量技术规范下载 收藏本版 (40) 地方计量技术规范下载 今日: 13 |主题: …"
+    },
+    {
+      "title": "JJG与JJF_仪器信息网社区",
+      "url": "https://bbs.instrument.com.cn/topic/8919813",
+      "snippet": "Oct 20, 2025 · JJG与JJF,1. JJG：计量检定规程JJG 是 “计量检定规程” 的汉语拼音缩写（Ji Liang Jian Ding Gui Cheng），是用于判 …"
+    }
+  ]
+}

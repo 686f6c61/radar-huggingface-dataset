@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "bcckfdn/minillama-test-v2.1-it-GGUF",
+  "slug": "bcckfdn-minillama-test-v2-1-it-gguf",
+  "author": "bcckfdn",
+  "url": "https://huggingface.co/bcckfdn/minillama-test-v2.1-it-GGUF",
+  "created_at": "2026-09-18T22:57:48.000Z",
+  "updated_at": "2026-09-18T22:58:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "tr",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "smollm2",
+    "llama",
+    "turkish",
+    "text-generation",
+    "tr",
+    "en",
+    "base_model:bcckfdn/minillama-test-v2.1-it",
+    "base_model:quantized:bcckfdn/minillama-test-v2.1-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 52953984,
+  "parameters_human": "53.0M",
+  "storage_bytes": 258878464,
+  "storage_human": "259 MB",
+  "base_model": "bcckfdn/minillama-test-v2.1-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Walmart | Save Money. Live better.",
+      "url": "https://www.walmart.com/",
+      "snippet": "Shop Walmart.com today for Every Day Low Prices. Join Walmart+ for unlimited free delivery from your store & free shipping with no …"
+    },
+    {
+      "title": "Walmart+ Membership - Walmart.com",
+      "url": "https://www.walmart.com/help/article/walmart/534c4edc29204a6bb15145a61146bf51",
+      "snippet": "Walmart+ is a paid membership that helps save you time and money."
+    },
+    {
+      "title": "Robot or human? - Walmart.com",
+      "url": "https://seller.walmart.com/home",
+      "snippet": "Walmart Seller Center allows you to manage your items, track orders, and monitor performance on Walmart Marketplace."
+    },
+    {
+      "title": "Sam's Club Careers - Walmart Careers",
+      "url": "https://careers.walmart.com/us/en/sams-home",
+      "snippet": "Sam’s Club offers diverse career paths in clubs, healthcare, corporate, and technology, empowering associates to grow …"
+    },
+    {
+      "title": "GSCOPE - Walmart",
+      "url": "https://gscope.walmart.com/login",
+      "snippet": "Your account will be deactivated if you haven't logged in for the last 60 days."
+    }
+  ]
+}

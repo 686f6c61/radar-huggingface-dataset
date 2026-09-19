@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "id": "StanfordSCALE/assertion_sentence_expresses_personal_stance_or_thinking_aloud",
+  "slug": "stanfordscale-assertion_sentence_expresses_personal_stance_or_thinking_aloud",
+  "author": "StanfordSCALE",
+  "url": "https://huggingface.co/StanfordSCALE/assertion_sentence_expresses_personal_stance_or_thinking_aloud",
+  "created_at": "2026-09-18T20:48:13.000Z",
+  "updated_at": "2026-09-18T20:48:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "setfit",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "setfit",
+    "safetensors",
+    "mpnet",
+    "text-classification",
+    "education",
+    "classroom-discourse",
+    "edubehaviors",
+    "assertion",
+    "en",
+    "dataset:StanfordSCALE/assertions_llm_annotated_talkmoves",
+    "base_model:sentence-transformers/paraphrase-mpnet-base-v2",
+    "base_model:finetune:sentence-transformers/paraphrase-mpnet-base-v2",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109486464,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437974679,
+  "storage_human": "438 MB",
+  "base_model": "sentence-transformers/paraphrase-mpnet-base-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "F1 (positive class, test)",
+      "value": 0.5791
+    },
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "Precision (positive class, test)",
+      "value": 0.6353
+    },
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "Recall (positive class, test)",
+      "value": 0.532
+    },
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "ROC-AUC (test)",
+      "value": 0.8916
+    }
+  ],
+  "sources": [
+    {
+      "title": "Anunțuri - Guvernul Romaniei",
+      "url": "https://hub.mai.gov.ro/recrutare/anunt/index",
+      "snippet": "Conform prevederilor legale, anunțul care are statusul procedură încheiată va fi șters la 60 zile după închiderea procedurii, sens în …"
+    },
+    {
+      "title": "Anunțuri - hub.mai.gov.ro",
+      "url": "https://hub.mai.gov.ro/cariera",
+      "snippet": "Conform prevederilor legale, anunțul care are statusul procedură încheiată va fi șters la 60 zile după închiderea procedurii, sens în …"
+    },
+    {
+      "title": "Anunțuri carieră – MINISTERUL AFACERILOR INTERNE",
+      "url": "https://www.mai.gov.ro/cariera/anunturi-cariera/",
+      "snippet": "ATENȚIE!!! Începând cu data de 16.10.2023, toate anunțurile privind concursurile organizate la nivelul Ministerului Afacerilor Interne …"
+    },
+    {
+      "title": "Anunțuri concursuri - HUB de servicii publice https://hub.mai.gov.ro/",
+      "url": "https://www.politiadefrontiera.ro/ro/giurgiu/i-anunturi-concursuri--hub-de-servicii-publice-httpshubmaigovro-35066.html",
+      "snippet": "Începând cu data de 16.10.2023, toate anunțurile privind concursurile organizate la nivelul Ministerului Afacerilor Interne vor fi postate …"
+    },
+    {
+      "title": "DGPI – Direcția Generală de Protecție Internă » Oportunitaţi de încadrare",
+      "url": "https://dgpi.ro/oportunitati-de-incadrare",
+      "snippet": "ATENȚIE!!! Începând cu data de 16.10.2023, toate anunțurile privind concursurile organizate la nivelul Ministerului Afacerilor Interne …"
+    }
+  ]
+}

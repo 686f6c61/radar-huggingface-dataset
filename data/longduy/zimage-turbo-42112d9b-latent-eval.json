@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "LongDuy/zimage-turbo-42112d9b-latent-eval",
+  "slug": "longduy-zimage-turbo-42112d9b-latent-eval",
+  "author": "LongDuy",
+  "url": "https://huggingface.co/LongDuy/zimage-turbo-42112d9b-latent-eval",
+  "created_at": "2026-09-19T01:29:28.000Z",
+  "updated_at": "2026-09-19T01:29:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "safetensors",
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "lora",
+    "z-image",
+    "image-generation",
+    "latent-mse",
+    "dataset:kipgin/56_dataset",
+    "base_model:gradients-io-tournaments/Z-Image-Turbo",
+    "base_model:adapter:gradients-io-tournaments/Z-Image-Turbo",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 302309848,
+  "storage_human": "302 MB",
+  "base_model": "gradients-io-tournaments/Z-Image-Turbo",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jiří Čunek – Wikipedie",
+      "url": "https://cs.wikipedia.org/wiki/Ji%C5%99%C3%AD_%C4%8Cunek",
+      "snippet": "Jiří Čunek na setkání opět kritizoval koalici SPOLU se slovy, že její jediný cíl bylo porazit expremiéra Andreje Babiše. Dále uvedl, že …"
+    },
+    {
+      "title": "Jiří Čunek: Starosta: Město Vsetín",
+      "url": "https://www.vsetin.eu/starosta/o-1075/p1=72160",
+      "snippet": "Kontakt Město Vsetín Svárov 1080 755 01 Vsetín 1 Tel.: 571 491 111 E-mail: e-podatelna@mestovsetin.cz"
+    },
+    {
+      "title": "Jiří Čunek: Město Vsetín",
+      "url": "https://www.mestovsetin.cz/jiri-cunek/o-1075",
+      "snippet": "Přihlaste se k bezplatnému odběru novinek do Vaší e-mailové schránky."
+    },
+    {
+      "title": "Čunek se hodlá stát popáté starostou Vsetína. Letos ho chce ANO z ...",
+      "url": "https://www.idnes.cz/zlin/zpravy/jiri-cunek-vsetin-komunalni-volby-2026-starosta-ano.A260504_929265_zlin-zpravy_epfoj/foto",
+      "snippet": "Před čtyřmi lety byl až na posledním místě kandidátky, ale lidé ho vykroužkovali na první pozici lidovců. A Jiří Čunek se po …"
+    },
+    {
+      "title": "Jiří Čunek se stal novým starostou Vsetína. Prioritou města je ...",
+      "url": "https://zlin.cz/zpravy/jiri-cunek-se-stal-novym-starostou-vsetina-prioritou-mesta-je-podle-nej-rekonstrukce-vlakoveho-nadrazi/",
+      "snippet": "VSETÍN – Na ustavujícím zasedání zastupitelstva bylo včera zvoleno nové vedení Vsetína pro nadcházející čtyři roky. Starostou se …"
+    }
+  ]
+}

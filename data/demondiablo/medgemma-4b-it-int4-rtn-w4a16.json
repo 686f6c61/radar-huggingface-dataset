@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Demondiablo/medgemma-4b-it-int4-rtn-w4a16",
+  "slug": "demondiablo-medgemma-4b-it-int4-rtn-w4a16",
+  "author": "Demondiablo",
+  "url": "https://huggingface.co/Demondiablo/medgemma-4b-it-int4-rtn-w4a16",
+  "created_at": "2026-09-18T23:54:08.000Z",
+  "updated_at": "2026-09-18T23:54:41.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3",
+    "image-text-to-text",
+    "int4",
+    "rtn",
+    "w4a16",
+    "compressed-tensors",
+    "llm-compressor",
+    "vllm",
+    "medical",
+    "healthcare",
+    "conversational",
+    "base_model:google/medgemma-4b-it",
+    "base_model:quantized:google/medgemma-4b-it",
+    "license:gemma",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4300079472,
+  "parameters_human": "4.30B",
+  "storage_bytes": 3875587265,
+  "storage_human": "3.9 GB",
+  "base_model": "google/medgemma-4b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Altersvorsorgedepot & AVRG einfach erklärt | SIGNAL IDUNA",
+      "url": "https://signal-iduna.de/ratgeber/altersvorsorge-reformgesetz/",
+      "snippet": "3 days ago · Genau aus diesem Grund ist das AVRG, also das Altersvorsorge-Reformgesetz, entstanden. Mit dieser Reform dreht …"
+    },
+    {
+      "title": "Altersvorsorgereformgesetz 2027: Riester-Ablösung erklärt",
+      "url": "https://www.vkb.de/v/gefoerderte-rente/riester-rente/altersvorsorgereformgesetz.html",
+      "snippet": "Das Altersvorsorgereformgesetz (AVRG) löst die Riester-Rente ab 2027 ab. Wir erklären, was sich ändert, wie die Förderung …"
+    },
+    {
+      "title": "Altersvorsorgereformgesetz Aktueller Stand nach Bundestagsbeschluss ...",
+      "url": "https://www.geldundverbraucher.de/content/news-archiv/altersvorsorge/altersvorsorgereformgesetz-aktueller-stand-nach-bundestagsbeschluss-09042026.html",
+      "snippet": "Mar 27, 2026 · Mit dem Altersvorsorgereformgesetz (AVRG) soll die private und staatlich geförderte Altersvorsorge in Deutschland …"
+    },
+    {
+      "title": "Bundesfinanzministerium - Fragen und Antworten zur Reform der ...",
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/FAQ/reform-der-privaten-altersvorsorge.html",
+      "snippet": "Was bedeutet die geplante Reform für die Bürgerinnen und Bürger? Wie genau soll die neue Förderung funktionieren? Welche …"
+    },
+    {
+      "title": "Bundesfinanzministerium - Entwurf eines Gesetzes zur Reform der ...",
+      "url": "https://www.bundesfinanzministerium.de/Content/DE/Gesetzestexte/Gesetze_Gesetzesvorhaben/Abteilungen/Abteilung_IV/21_Legislaturperiode/2025-12-01-Altersvorsorgereformgesetz/0-Gesetz.html",
+      "snippet": "Dec 1, 2025 · Mit dem Gesetzentwurf soll die steuerlich geförderte private Altersvorsorge grundlegend reformiert werden. Ziel ist es, …"
+    }
+  ]
+}

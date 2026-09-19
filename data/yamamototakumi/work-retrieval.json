@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Yamamototakumi/work-retrieval",
+  "slug": "yamamototakumi-work-retrieval",
+  "author": "Yamamototakumi",
+  "url": "https://huggingface.co/Yamamototakumi/work-retrieval",
+  "created_at": "2026-09-19T01:29:27.000Z",
+  "updated_at": "2026-09-19T01:29:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "albef",
+    "pytorch",
+    "retrieval",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Deșertul Atacama, Chile | 1001 călătorii",
+      "url": "https://www.1001calatorii.ro/desertul-atacama/",
+      "snippet": "Jan 4, 2026 · Deșertul Atacama, Chile: 5 zile în San Pedro de Atacama cu Lagunas de Baltinache, Laguna Cejar, Piedras Rojas, …"
+    },
+    {
+      "title": "Atacama Desert, Chile: Complete Travel Guide (Costs, Routes & Itinerary)",
+      "url": "https://wakaabuja.com/travel-to-atacama-desert-chile/",
+      "snippet": "1 day ago · The Atacama Desert in northern Chile is the driest non-polar desert on Earth, accessed primarily through the town of San …"
+    },
+    {
+      "title": "Papers - ICAART 2025 - INSTICC",
+      "url": "https://www.insticc.org/node/technicalprogram/icaart/2025/presentations",
+      "snippet": "Explainable AI: A Retrieval-Augmented Generation Based Framework for Model Interpretability ... Takumi Yamamoto. 1. Fine Tuning LLMs vs Non-Generative ..."
+    },
+    {
+      "title": "Ghid de călătorie în Chile: de la Deșertul Atacama la Țara de Foc",
+      "url": "https://www.blogsimplu.ro/ghid-de-calatorie-in-chile-de-la-desertul-atacama-la-tara-de-foc/",
+      "snippet": "De la cele mai aride pustiuri la gheața tăcută a Antarcticii, acest ghid îți va prezenta cele mai importante destinații și activități pe care …"
+    },
+    {
+      "title": "Atacama Desert Travel Guide (Chile, 2026)",
+      "url": "https://www.takeyourbackpack.com/backpacking-in-chile/visit-atacama-desert/",
+      "snippet": "Sep 4, 2026 · Explore Atacama Desert, Chile deeply: top places, scenic routes, itineraries, when to go. Complete & free 2026 guide."
+    }
+  ]
+}

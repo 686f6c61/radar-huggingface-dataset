@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Dengliming/StreamPIReal6_3w",
+  "slug": "dengliming-streampireal6_3w",
+  "author": "Dengliming",
+  "url": "https://huggingface.co/Dengliming/StreamPIReal6_3w",
+  "created_at": "2026-09-19T01:21:30.000Z",
+  "updated_at": "2026-09-19T01:25:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12880465311,
+  "storage_human": "12.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Point de Lagrange — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Point_de_Lagrange",
+      "snippet": "Les trois points L1, L2 et L3 sont parfois appelés les points d'Euler, en l'honneur de Leonhard Euler, l'appellation de points de …"
+    },
+    {
+      "title": "Lagrange point - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Lagrange_point",
+      "snippet": "Two important Lagrange points in the Sun–Earth system are L 1, between the Sun and Earth, and L 2, on the same line at the …"
+    },
+    {
+      "title": "Que sont les points de Lagrange ? Les 5 points d’équilibre spatial",
+      "url": "https://theuniverseepisodes.com/fr/points-de-lagrange/",
+      "snippet": "Jul 29, 2026 · Un point de Lagrange est un endroit proche de deux corps en orbite, comme le Soleil et la Terre, où leur gravité et le …"
+    },
+    {
+      "title": "Coordonnées GPS, latitude et longitude - Google Map",
+      "url": "https://www.coordonnees-gps.fr/",
+      "snippet": "Cliquer directement sur la map interactive pour obtenir l'adresse et les coordonnées GPS du point cliqué. La latitude et la longitude …"
+    },
+    {
+      "title": "À la découverte de la localisation actuelle du télescope spatial ...",
+      "url": "https://montelescope.fr/decouverte-localisation-actuelle-telescope-spatial-james-webb/",
+      "snippet": "Le télescope James Webb, a été propulsé jusqu’à un point connu sous le nom de « Second Point de Lagrange « , ou L2. Situé à …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "DVTA-YLOR/review-image-captioning-2024",
+  "slug": "dvta-ylor-review-image-captioning-2024",
+  "author": "DVTA-YLOR",
+  "url": "https://huggingface.co/DVTA-YLOR/review-image-captioning-2024",
+  "created_at": "2026-09-19T01:34:54.000Z",
+  "updated_at": "2026-09-19T01:35:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "image-captioning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - srini0x00/dvta: Damn Vulnerable Thick Client App developed …",
+      "url": "https://github.com/srini0x00/dvta",
+      "snippet": "DVTA is a Vulnerable Thick Client Application developed in C# .NET Most of the vulnerabilities that were built into DVTA were found …"
+    },
+    {
+      "title": "A Survey on Vision-Language-Action Models for Embodied AI - arXiv",
+      "url": "https://arxiv.org/html/2405.14093v8",
+      "snippet": "01.05.2026 ... 3D-VLA [70] proposes a 3D world model capable of goal generation. It processes visual inputs, such as images, depth maps, and point clouds, and ..."
+    },
+    {
+      "title": "GitHub - secvulture/dvta: Damn Vulnerable Thick Client App",
+      "url": "https://github.com/secvulture/dvta",
+      "snippet": "Damn Vulnerable Thick Client App. Contribute to secvulture/dvta development by creating an account on GitHub."
+    },
+    {
+      "title": "ICLR 2026 Papers",
+      "url": "https://iclr.cc/virtual/2026/papers.html",
+      "snippet": "Learning an Image Editing Model without Image Editing Pairs · Hybrid Training for Vision-Language-Action Models · RLVMR: Reinforcement Learning with Verifiable ..."
+    },
+    {
+      "title": "Startseite | DVTA für MT - MTL / MTR / MTF / MTV",
+      "url": "https://dvta.de/",
+      "snippet": "AKTUELLES DVTA Mitgliedervorteil bei Radcampus live in Köln Da die beiden letzten Veranstaltungen des RADCAMPUS LIVE als …"
+    }
+  ]
+}

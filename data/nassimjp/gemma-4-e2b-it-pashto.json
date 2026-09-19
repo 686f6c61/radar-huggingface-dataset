@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "nassimjp/gemma-4-E2B-it-pashto",
+  "slug": "nassimjp-gemma-4-e2b-it-pashto",
+  "author": "nassimjp",
+  "url": "https://huggingface.co/nassimjp/gemma-4-E2B-it-pashto",
+  "created_at": "2026-09-18T21:00:02.000Z",
+  "updated_at": "2026-09-18T23:41:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "pashto",
+    "pashto-ai",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5123178051,
+  "parameters_human": "5.12B",
+  "storage_bytes": 10278791544,
+  "storage_human": "10.3 GB",
+  "base_model": "unsloth/gemma-4-e2b-it-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "XXXLutz – Alles für dein schönes Zuhause - XXXLutz.de",
+      "url": "https://www.xxxlutz.de/?msockid=384a9ccd0e64637208278b150fbd62eb",
+      "snippet": "XXXLutz – Alles für dein schönes Zuhause Möbel jetzt auch online kaufen & Vorteile sichern: Große Auswahl sichere Bezahlung 30 …"
+    },
+    {
+      "title": "XXXLutz Filiale in Ihrer Nähe",
+      "url": "https://www.xxxlutz.de/filialen-standorte?msockid=384a9ccd0e64637208278b150fbd62eb",
+      "snippet": "Finden Sie die XXXLutz Filiale ganz in Ihrer Nähe: Hier erhalten Sie einen Überblick über all unsere Möbelhäuser in Deutschland und …"
+    },
+    {
+      "title": "XXXLUTZ - PRESSECENTER",
+      "url": "https://pr.xxxlutz.de/",
+      "snippet": "Aug 26, 2026 · XXXLutz investiert nach Wasserschaden siebenstelligen Betrag in den umfassenden Umbau seines Möbelhauses in …"
+    },
+    {
+      "title": "Aktuelle Speisepläne der XXXLutz-Restaurants - XXXLutz.de",
+      "url": "https://www.xxxlutz.de/c/restaurant?msockid=384a9ccd0e64637208278b150fbd62eb",
+      "snippet": "Bei XXXLutz werden Trends und Innovationen schon seit jeher groß geschrieben. Der technologische Fortschritt ist dabei auch im …"
+    },
+    {
+      "title": "Sofas & Couches online kaufen - XXXLutz.de",
+      "url": "https://www.xxxlutz.de/sofas-couches-C1C1?msockid=384a9ccd0e64637208278b150fbd62eb",
+      "snippet": "Sofa & Couch kaufen XXXLutz.de Top-Angebote: Schlafsofas, Wohnlandschaften, Big Sofas, Recamiere, Ecksofas mit …"
+    }
+  ]
+}

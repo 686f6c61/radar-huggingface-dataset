@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "kmseong/llama2_7b-chat-CB_SSFT-asft_medqa_lambda1.0_fullft_lr5e-5",
+  "slug": "kmseong-llama2_7b-chat-cb_ssft-asft_medqa_lambda1-0_fullft_lr5e-5",
+  "author": "kmseong",
+  "url": "https://huggingface.co/kmseong/llama2_7b-chat-CB_SSFT-asft_medqa_lambda1.0_fullft_lr5e-5",
+  "created_at": "2026-09-19T02:04:02.000Z",
+  "updated_at": "2026-09-19T02:05:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 20,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13477370740,
+  "storage_human": "13.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "台湾有哪些大学相当于大陆985院校水平？ - 知乎",
+      "url": "https://www.zhihu.com/question/343603328",
+      "snippet": "台湾的大学直接和985比不太好弄，观感不太直接。放在整个东亚来看，大家的感觉会更直观。而目前东亚的大学基本可以分成三个档 …"
+    },
+    {
+      "title": "7-Zip 官方网站怎么下载？ - 知乎",
+      "url": "https://www.zhihu.com/question/20498753",
+      "snippet": "7-Zip 是一个功能强大的工具，特别适合需要 高效压缩 和 解压缩 功能的用户。比如 IT 专业人员、软件开发者或普通用户希望节省磁 …"
+    },
+    {
+      "title": "대만 자전거 이벤트",
+      "url": "https://www.taiwantour.or.kr/themeTour/list-event-bike.html",
+      "snippet": "일월담 순환 자전거도로는 대만에서 가장 큰 담수호인 일월담 주변을 따라 조성된 30km의 순환 코스입니다. 2012년 CNN이 선정한 '세계 …"
+    },
+    {
+      "title": "대만관광청 청장 인사말",
+      "url": "https://www.taiwantour.or.kr/introduction/director-general.html",
+      "snippet": "대만관광청 청장의 인사말을 확인하세요. 대만 관광의 비전과 계획을 소개합니다."
+    },
+    {
+      "title": "대만관광청 공식 홈페이지",
+      "url": "https://www.taiwantour.or.kr/",
+      "snippet": "대만 여행지원금 이벤트는 2025년 9월 30일부로 종료되었습니다. 그동안 럭키드로우 이벤트에 많은 관심과 성원을 보내주셔서 감사합니다."
+    }
+  ]
+}

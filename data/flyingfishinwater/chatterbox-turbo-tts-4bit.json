@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "flyingfishinwater/Chatterbox-Turbo-TTS-4bit",
+  "slug": "flyingfishinwater-chatterbox-turbo-tts-4bit",
+  "author": "flyingfishinwater",
+  "url": "https://huggingface.co/flyingfishinwater/Chatterbox-Turbo-TTS-4bit",
+  "created_at": "2026-09-18T21:21:36.000Z",
+  "updated_at": "2026-09-18T21:22:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": "mlx-audio-plus",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx-audio-plus",
+    "safetensors",
+    "chatterbox_turbo",
+    "mlx",
+    "tts",
+    "chatterbox",
+    "text-to-speech",
+    "en",
+    "base_model:ResembleAI/chatterbox-turbo",
+    "base_model:finetune:ResembleAI/chatterbox-turbo",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 622667090,
+  "parameters_human": "622.7M",
+  "storage_bytes": 811728290,
+  "storage_human": "812 MB",
+  "base_model": "ResembleAI/chatterbox-turbo",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-19T02:24:30.600Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=28fcb64ec5706a9d3df4a196c4026b79",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Get access to free online versions of Outlook, Word, Excel, and PowerPoint."
+    },
+    {
+      "title": "My Account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    },
+    {
+      "title": "Microsoft 365 for Individuals: Subscription for Productivity Apps",
+      "url": "https://www.microsoft.com/en-us/microsoft-365?msockid=28fcb64ec5706a9d3df4a196c4026b79",
+      "snippet": "Microsoft 365 (formerly Office 365) subscriptions offer a suite of productivity tools and cloud services with world-class security and …"
+    },
+    {
+      "title": "Microsoft - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Microsoft",
+      "snippet": "Microsoft Corporation is an American multinational technology company headquartered in Redmond, Washington. The company …"
+    }
+  ]
+}

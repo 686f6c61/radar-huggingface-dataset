@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "rkg209/qwen2.5-coder-1.5b-java-review-gguf",
+  "slug": "rkg209-qwen2-5-coder-1-5b-java-review-gguf",
+  "author": "rkg209",
+  "url": "https://huggingface.co/rkg209/qwen2.5-coder-1.5b-java-review-gguf",
+  "created_at": "2026-09-18T20:03:21.000Z",
+  "updated_at": "2026-09-18T20:04:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "code-review",
+    "java",
+    "qlora",
+    "base_model:Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 986048000,
+  "storage_human": "986 MB",
+  "base_model": "Qwen/Qwen2.5-Coder-1.5B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "News & E-Mail bei t-online | Politik, Sport, Unterhaltung & Ratgeber",
+      "url": "https://www.t-online.de/",
+      "snippet": "Aktuelle News aus Politik, Sport, Unterhaltung, Wirtschaft & Finanzen | Ratgeber Leben, Gesundheit und Heim & Garten | E-Mail und …"
+    },
+    {
+      "title": "Politik - t-online.de",
+      "url": "https://www.t-online.de/nachrichten/",
+      "snippet": "Aktuelle News, Informationen und Videos zu Politik, Panorama und Wetter aus Deutschland, Europa und der Welt von t-online.de …"
+    },
+    {
+      "title": "T-Online – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/T-online",
+      "snippet": "T-Online (Eigenschreibweise seit 2020 t-online.) ist ein deutsches Online-Portal. Es war auch der Markenname eines zunächst …"
+    },
+    {
+      "title": "Zum E-Mail Center | Telekom",
+      "url": "https://www.telekom.de/e-mail/zum-e-mail-center",
+      "snippet": "Im Kundencenter können Sie Verträge verwalten und auf Rechnungen, Verbrauchsanzeigen, Einstellungen und mehr zugreifen."
+    },
+    {
+      "title": "suche.t-online.de - Suche für das Web, Bilder, Videos & t-online",
+      "url": "https://suche.t-online.de/",
+      "snippet": "Mit der t-online Suche finden Sie alles aus Web, t-online, Videos, News, Bildern, Karten & mehr. Jetzt suchen und Antworten finden!"
+    }
+  ]
+}

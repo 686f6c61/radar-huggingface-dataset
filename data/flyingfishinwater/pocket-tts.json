@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "flyingfishinwater/pocket-tts",
+  "slug": "flyingfishinwater-pocket-tts",
+  "author": "flyingfishinwater",
+  "url": "https://huggingface.co/flyingfishinwater/pocket-tts",
+  "created_at": "2026-09-18T21:20:36.000Z",
+  "updated_at": "2026-09-18T21:20:43.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "pocket_tts",
+    "en",
+    "base_model:kyutai/pocket-tts",
+    "base_model:finetune:kyutai/pocket-tts",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 117856962,
+  "parameters_human": "117.9M",
+  "storage_bytes": 240073769,
+  "storage_human": "240 MB",
+  "base_model": "kyutai/pocket-tts",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-19T02:24:33.136Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Zoladex Implant: Uses, Dosage, Side Effects - Drugs.com",
+      "url": "https://www.drugs.com/zoladex.html",
+      "snippet": "May 23, 2025 · Zoladex is given in a tiny implant inserted through a needle into the skin of your stomach, once every 28 days. You …"
+    },
+    {
+      "title": "Dosing and administration | ZOLADEX® (goserelin implant)",
+      "url": "https://zoladexhcp.com/dosing-administration/",
+      "snippet": "Instructional videos and other resources are available to provide support and training on syringe features, proper preparation, and …"
+    },
+    {
+      "title": "Zoladex (goserelin) - Uses, Side Effects, and More - WebMD",
+      "url": "https://www.webmd.com/drugs/zoladex-goserelin",
+      "snippet": "Jan 13, 2025 · Zoladex is an implant that is placed under the skin by your health care provider. What is Zoladex used for? Zoladex …"
+    },
+    {
+      "title": "Home | ZOLADEX® (goserelin implant)",
+      "url": "https://www.zoladex.com/",
+      "snippet": "ZOLADEX 3.6 mg is used to treat women diagnosed with breast cancer, endometriosis, and dysfunctional uterine bleeding, as well …"
+    },
+    {
+      "title": "Zoladex (goserelin): Side effects, uses, alternatives, and more",
+      "url": "https://www.medicalnewstoday.com/articles/zoladex",
+      "snippet": "Jun 27, 2025 · Zoladex is a brand-name prescription drug that is used to treat several conditions, including prostate cancer, …"
+    }
+  ]
+}

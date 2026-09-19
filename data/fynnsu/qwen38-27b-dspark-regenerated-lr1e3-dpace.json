@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "fynnsu/qwen38-27b-dspark-regenerated-lr1e3-dpace",
+  "slug": "fynnsu-qwen38-27b-dspark-regenerated-lr1e3-dpace",
+  "author": "fynnsu",
+  "url": "https://huggingface.co/fynnsu/qwen38-27b-dspark-regenerated-lr1e3-dpace",
+  "created_at": "2026-09-19T01:29:42.000Z",
+  "updated_at": "2026-09-19T01:35:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 1909788417,
+  "parameters_human": "1.91B",
+  "storage_bytes": 3819583482,
+  "storage_human": "3.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Explore and share videos, music, and more on YouTube, the leading platform for online video streaming and sharing."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed/sa",
+      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new …"
+    },
+    {
+      "title": "YouTube - التطبيقات على Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.google.android.youtube&hl=ar",
+      "snippet": "نزِّل تطبيق YouTube الرسمي للهواتف والأجهزة اللوحية التي تعمل بنظام التشغيل Android. واطّلِع على المحتوى الذي يشاهده المستخدمون من حول العالم، من الفيديوهات الموسيقية الأكثر رواجًا إلى …"
+    },
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/YouTube/ar",
+      "snippet": "YouTube's official YouTube channel You found us. Welcome to the official YouTube channel – a home for the biggest moments, the …"
+    },
+    {
+      "title": "youtube_Arabic - YouTube",
+      "url": "https://www.youtube.com/@%D9%8A%D9%88%D8%AA%D9%8A%D9%88%D8%A8_%D8%B9%D8%B1%D8%A8%D9%8A/search",
+      "snippet": "مرحبا بكم في صفحة يوتيوب الرسمي للعرب يرجى التكلم بشكل نضيفوايضا استمتاع في تصفاح يوتيوب ونشرة المحتوى في ..."
+    }
+  ]
+}

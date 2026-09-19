@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "ThakiCloud/K-MT-7B-v0.1",
+  "slug": "thakicloud-k-mt-7b-v0-1",
+  "author": "ThakiCloud",
+  "url": "https://huggingface.co/ThakiCloud/K-MT-7B-v0.1",
+  "created_at": "2026-09-19T01:47:52.000Z",
+  "updated_at": "2026-09-19T14:26:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [
+    "ko",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "hunyuan_v1_dense",
+    "text-generation",
+    "translation",
+    "korean",
+    "honorifics",
+    "instruction-following",
+    "capability-preservation",
+    "ko",
+    "en",
+    "base_model:tencent/Hy-MT2-7B",
+    "base_model:finetune:tencent/Hy-MT2-7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 34,
+  "trending_score": 0,
+  "parameters": 7504568320,
+  "parameters_human": "7.50B",
+  "storage_bytes": 15025566557,
+  "storage_human": "15.0 GB",
+  "base_model": "tencent/Hy-MT2-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Developer Forum | Roblox",
+      "url": "https://devforum.roblox.com/",
+      "snippet": "Chat with other creators, learn about Roblox platform updates, and report issues with the platform."
+    },
+    {
+      "title": "ForgeGUI - AI Roblox Scripting Tool Feature",
+      "url": "https://devforum.roblox.com/t/forgegui-ai-roblox-scripting-tool-feature/4734535",
+      "snippet": "Jul 13, 2026 · Hey Yall devs 👋 ForgeGUI’s AI scripting tool is a Roblox Studio plugin that turns plain-English descriptions into working …"
+    },
+    {
+      "title": "[Full Tutorial] How to script on Roblox | Beginners!",
+      "url": "https://devforum.roblox.com/t/full-tutorial-how-to-script-on-roblox-beginners/1991385",
+      "snippet": "Sep 20, 2022 · How do script [ Update Version], 2022/2023 Introduction Hey there! Today, I will be teaching you how to script from …"
+    },
+    {
+      "title": "New Publishing Requirements & Evaluation Process for Games",
+      "url": "https://devforum.roblox.com/t/new-publishing-requirements-evaluation-process-for-games/4573166",
+      "snippet": "Apr 13, 2026 · Free Roblox Plus for Existing Creators We understand that adding Roblox Plus as a publishing requirement for …"
+    },
+    {
+      "title": "30 free game ideas - Community Resources - Roblox",
+      "url": "https://devforum.roblox.com/t/30-free-game-ideas/1398011",
+      "snippet": "Aug 7, 2021 · From my time developing, I’ve had loads of projects I’ve cancelled due to laziness. So, I decided to put together a list of …"
+    }
+  ]
+}

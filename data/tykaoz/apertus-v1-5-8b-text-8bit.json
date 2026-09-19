@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "TyKaoz/Apertus-v1.5-8B-text-8bit",
+  "slug": "tykaoz-apertus-v1-5-8b-text-8bit",
+  "author": "TyKaoz",
+  "url": "https://huggingface.co/TyKaoz/Apertus-v1.5-8B-text-8bit",
+  "created_at": "2026-09-18T21:25:12.000Z",
+  "updated_at": "2026-09-18T21:25:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "fr",
+    "de",
+    "it",
+    "rm"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "apertus",
+    "mlx-lm",
+    "swiss-ai",
+    "text-only",
+    "apple-silicon",
+    "quantized",
+    "text-generation",
+    "conversational",
+    "en",
+    "fr",
+    "de",
+    "it",
+    "rm",
+    "base_model:swiss-ai/Apertus-v1.5-8B",
+    "base_model:quantized:swiss-ai/Apertus-v1.5-8B",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8053338112,
+  "parameters_human": "8.05B",
+  "storage_bytes": 8557023422,
+  "storage_human": "8.6 GB",
+  "base_model": "swiss-ai/Apertus-v1.5-8B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "مواعيد الإجازات الرسمية 2025 في مصر (قائمة بالتواريخ والأيام)",
+      "url": "https://www.almasryalyoum.com/news/details/3310356",
+      "snippet": "Nov 19, 2024 · مع اقتراب نهاية 2024، يزداد اهتمام المواطنين بالبحث عن مواعيد الإجازات الرسمية 2025 في مصر، سواء المرتبطة بالمناسبات الوطنية أو الأعياد الدينية. وفي سطور …"
+    },
+    {
+      "title": "عطلات مصر لعام 2025 · ClockZone",
+      "url": "https://clockzone.net/ar/holiday/EG/2025",
+      "snippet": "توفر هذه الصفحة قائمة عطل كاملة لـ مصر سنة 2025. من خلال أداة استعلام تقويم العطلات، يمكنك عرض جميع العطلات الرسمية وعطلات البنوك والأيام التذكارية والتواريخ المحددة والمعلومات …"
+    },
+    {
+      "title": "قائمة العطلات الرسمية 2025 في مصر",
+      "url": "https://www.dostor.org/4907132",
+      "snippet": "أعلنت الحكومة عن قائمة العطلات الرسمية 2025 في مصر والتي تبدأ مع بداية العام المقبل 2025 وخلالها يحصل الموظفون على إجازة مدفوعة الأجر، كما يحصل عليها العاملون في القطاع الخاص بأجر …"
+    },
+    {
+      "title": "الإجازات الرسمية فى مصر حتى نهاية 2025.. بالتواريخ والمناسبات",
+      "url": "https://www.youm7.com/story/2025/1/28/%D8%A7%D9%84%D8%A5%D8%AC%D8%A7%D8%B2%D8%A7%D8%AA-%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%D8%A9-%D9%81%D9%89-%D9%85%D8%B5%D8%B1-%D8%AD%D8%AA%D9%89-%D9%86%D9%87%D8%A7%D9%8A%D8%A9-2025-%D8%A8%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B1%D9%8A%D8%AE-%D9%88%D8%A7%D9%84%D9%85%D9%86%D8%A7%D8%B3%D8%A8%D8%A7%D8%AA/6861824",
+      "snippet": "Jan 28, 2025 · ينشر \"اليوم السابع\" الإجازات الرسمية لعام 2025 بالتواريخ والمناسبات، التى تشمل الأعياد الوطنية والدينية والعطلات الموسمية، وذلك حتى نهاية السنة."
+    },
+    {
+      "title": "العطلات الرسمية لعام ٢٠٢٦",
+      "url": "https://www.presidency.eg/ar/%D9%85%D8%B5%D8%B1/%D8%A7%D9%84%D8%B9%D8%B7%D9%84%D8%A7%D8%AA-%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A%D8%A9/",
+      "snippet": "العطلات الرسمية الخميس ١٩ مارس - الإثنين ٢٣ مارس عيد الفطر المبارك"
+    }
+  ]
+}

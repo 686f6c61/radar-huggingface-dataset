@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "AdwolfCzar/minih33-smoothloopv3",
+  "slug": "adwolfczar-minih33-smoothloopv3",
+  "author": "AdwolfCzar",
+  "url": "https://huggingface.co/AdwolfCzar/minih33-smoothloopv3",
+  "created_at": "2026-09-19T03:38:11.000Z",
+  "updated_at": "2026-09-20T10:23:19.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tensorboard",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13980593002,
+  "storage_human": "14.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Portal LIBRUS",
+      "url": "https://synergia.librus.pl/",
+      "snippet": "Portal edukacyjny Librus - gotowe pomoce dydaktyczne dla dyrektorów i nauczycieli oraz artykuły dla rodziców dot. wychowania i …"
+    },
+    {
+      "title": "Portal LIBRUS Szkoła",
+      "url": "http://portal.librus.pl/szkola/synergia/loguj",
+      "snippet": "Możesz osiągnąć wszystko, co zechcesz, jeśli się postarasz…?"
+    },
+    {
+      "title": "Portal LIBRUS Rodzina",
+      "url": "https://portal.librus.pl/rodzina/synergia/loguj",
+      "snippet": "Pomóż mu wejść w ten ważny etap. Z życia domowego – co widzi dziecko, co widzi rodzic? Co jest lepsze – jabłko czy mandarynka? …"
+    },
+    {
+      "title": "Logowanie do systemu Synergia. Krótki przewodnik - LIBRUS Rodzina",
+      "url": "https://portal.librus.pl/rodzina/artykuly/jak-zalogowac-sie-do-systemu-synergia-krotki-przewodnik-1",
+      "snippet": "Aug 27, 2020 · Jest to alternatywny sposób dostępu do informacji zawartych na koncie w dzienniku elektronicznym LIBRUS …"
+    },
+    {
+      "title": "LIBRUS Synergia",
+      "url": "https://synergia.librus.pl/librus",
+      "snippet": "Zweryfikuj, czy strona jest zabezpieczona certyfikatem wystawionym przez firmę GeoTrust Inc. dla witryny www.dziennik.librus.pl. …"
+    }
+  ]
+}

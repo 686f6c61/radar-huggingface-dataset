@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "id": "StanfordSCALE/assertion_sentence_evaluates_a_student_response",
+  "slug": "stanfordscale-assertion_sentence_evaluates_a_student_response",
+  "author": "StanfordSCALE",
+  "url": "https://huggingface.co/StanfordSCALE/assertion_sentence_evaluates_a_student_response",
+  "created_at": "2026-09-18T20:49:48.000Z",
+  "updated_at": "2026-09-18T20:50:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "setfit",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "setfit",
+    "safetensors",
+    "mpnet",
+    "text-classification",
+    "education",
+    "classroom-discourse",
+    "edubehaviors",
+    "assertion",
+    "en",
+    "dataset:StanfordSCALE/assertions_llm_annotated_talkmoves",
+    "base_model:sentence-transformers/paraphrase-mpnet-base-v2",
+    "base_model:finetune:sentence-transformers/paraphrase-mpnet-base-v2",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109486464,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437974679,
+  "storage_human": "438 MB",
+  "base_model": "sentence-transformers/paraphrase-mpnet-base-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "F1 (positive class, test)",
+      "value": 0.3906
+    },
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "Precision (positive class, test)",
+      "value": 0.4717
+    },
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "Recall (positive class, test)",
+      "value": 0.3333
+    },
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "ROC-AUC (test)",
+      "value": 0.8147
+    }
+  ],
+  "sources": [
+    {
+      "title": "Cuscus cu legume - tarhana sau paste marunte | Savori Urbane",
+      "url": "https://savoriurbane.com/cuscus-cu-legume-tarhana/",
+      "snippet": "Aug 6, 2015 · Cuscus cu legume – tarhana sau razalai cum li se mai zice pe la noi. Calite cu morcov, pastarnac, praz sau ceapa …"
+    },
+    {
+      "title": "Cus-cus cu legume reteta simpla si gustoasa de post",
+      "url": "https://www.bucataras.ro/retete/cuscus-cu-legume-reteta-simpla-si-gustoasa-de-post-26665.html",
+      "snippet": "Cum se prepara Cus-cus cu legume reteta simpla si gustoasa de post Ceapa se taie rondele, ardeiul si ciupercile feliute si morcovul, …"
+    },
+    {
+      "title": "Cușcuș cu legume - rețetă rapidă de cușcuș pentru prânz",
+      "url": "https://retete.unica.ro/recipes/cuscus-cu-legume/",
+      "snippet": "Sep 17, 2019 · Cușcuș cu legume. Rețetă simplă, gustoasă și rapidă pe care să o prepari la prânz. Vezi cum se face o porție de …"
+    },
+    {
+      "title": "Cuscus cu legume – reteta simpla de post — La Sebi Acasa",
+      "url": "https://lasebiacasa.ro/cuscus-cu-legume-reteta-de-post/",
+      "snippet": "Mar 31, 2025 · Astazi va prezint o reteta rapida si delicioasa de cuscus cu legume, perfecta pentru zilele de post sau oricand doriti o …"
+    },
+    {
+      "title": "Cum Se Prepara Cuscus Cu Legume |0| Cuscus Cu Legume Reteta",
+      "url": "https://bucataria-lui-tati.ro/cuscus-cu-legume/",
+      "snippet": "Sep 17, 2018 · Servim cu sosuri (dupa preferinta de usturoi sau dulce-acrisor sau picant) si cu carne sau peste. Dar sa trecem la …"
+    }
+  ]
+}

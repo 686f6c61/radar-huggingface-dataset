@@ -1,0 +1,110 @@
+{
+  "schema": 1,
+  "id": "jaredpalmer/kev-0.6b",
+  "slug": "jaredpalmer-kev-0-6b",
+  "author": "jaredpalmer",
+  "url": "https://huggingface.co/jaredpalmer/kev-0.6b",
+  "created_at": "2026-09-19T01:16:39.000Z",
+  "updated_at": "2026-09-20T23:46:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "decision-model",
+    "calibration",
+    "lora",
+    "multiple-choice",
+    "typesafe",
+    "text-classification",
+    "en",
+    "dataset:legacy-datasets/banking77",
+    "dataset:google/boolq",
+    "dataset:fancyzhx/ag_news",
+    "dataset:nyu-mll/multi_nli",
+    "dataset:SetFit/sst5",
+    "dataset:Yelp/yelp_review_full",
+    "dataset:CogComp/trec",
+    "dataset:fancyzhx/dbpedia_14",
+    "dataset:SetFit/amazon_reviews_multi_en",
+    "dataset:stanfordnlp/imdb",
+    "base_model:Qwen/Qwen3-0.6B-Base",
+    "base_model:adapter:Qwen/Qwen3-0.6B-Base",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 96466828,
+  "storage_human": "96 MB",
+  "base_model": "Qwen/Qwen3-0.6B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "typed decision (choice / noul / score)",
+      "dataset": "decision-v4 development (1,204 records; ten trained public sources + programmatic policy pairs)",
+      "metric": null,
+      "value": 0.805
+    },
+    {
+      "task": "typed decision (choice / noul / score)",
+      "dataset": "decision-v4 development (1,204 records; ten trained public sources + programmatic policy pairs)",
+      "metric": "ECE, raw probabilities",
+      "value": 0.078
+    },
+    {
+      "task": "typed decision",
+      "dataset": "transfer-v4 development (764 records; six never-trained sources + held-out policy structures)",
+      "metric": null,
+      "value": 0.598
+    },
+    {
+      "task": "typed decision",
+      "dataset": "transfer-v4 development (764 records; six never-trained sources + held-out policy structures)",
+      "metric": null,
+      "value": 0.521
+    }
+  ],
+  "sources": [
+    {
+      "title": "Amazon.de: Günstige Preise für Elektronik & Foto, Filme, Musik, Bücher ...",
+      "url": "https://www.amazon.de/",
+      "snippet": "Entdecken, shoppen und einkaufen bei Amazon.de: Günstige Preise für Elektronik & Foto, Filme, Musik, Bücher, Games, Spielzeug, …"
+    },
+    {
+      "title": "Prime Day 2026 | Amazon.de",
+      "url": "https://www.amazon.de/primeday/",
+      "snippet": "Der Prime Day ist Amazons jährliches Shopping-Event, das vom 23. bis 26. Juni exklusiv für Prime-Mitglieder stattfindet und vier …"
+    },
+    {
+      "title": "Anmeldung bei Amazon Business",
+      "url": "https://business.amazon.de/de/login",
+      "snippet": "Sichern Sie sich exklusive Angebote und Mengenrabatte! Melden Sie sich bei Ihrem Amazon Business-Konto an und sparen Sie …"
+    },
+    {
+      "title": "Warehouse Associate Jobs | Hourly Roles | Amazon Germany",
+      "url": "https://jobs.amazon.de/en-DE",
+      "snippet": "Join Amazon and become part of our world-class team. Discover fulfillment center job opportunities and apply today!"
+    },
+    {
+      "title": "Amazon Anmelden",
+      "url": "https://brandregistry.amazon.de/",
+      "snippet": "Wenn du fortfährst, stimme den Nutzungs- und Verkaufsbedingungen von Amazon zu. Lies auch unsere Datenschutzerklärung, …"
+    }
+  ]
+}

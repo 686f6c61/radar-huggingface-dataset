@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "itsaysouvyk/q-Taxi-v3",
+  "slug": "itsaysouvyk-q-taxi-v3",
+  "author": "itsaysouvyk",
+  "url": "https://huggingface.co/itsaysouvyk/q-Taxi-v3",
+  "created_at": "2026-09-18T21:43:32.000Z",
+  "updated_at": "2026-09-18T21:43:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Taxi-v4",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 147310,
+  "storage_human": "147310 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gildenausschluss oder Auflösung | Forge of Empires Forum",
+      "url": "https://forum.de.forgeofempires.com/index.php?threads/gildenausschluss-oder-aufl%C3%B6sung.51324/",
+      "snippet": "Kriegt man eigentlich wenn die Gilde, in der man ist, aufgelöst wird, oder wenn man ausgeschlossen wird? Als ich vor kurzem meine …"
+    },
+    {
+      "title": "Wie erhöhe ich meine Punkte? | Forge of Empires Forum",
+      "url": "https://forum.de.forgeofempires.com/index.php?threads/wie-erh%C3%B6he-ich-meine-punkte.57169/",
+      "snippet": "Jan 8, 2024 · Hallo, ich würde gerne meine Punkte erhöhen. Ich bin im Mars Zeitalter und habe \"nur\" 83 390 018 Punkte. Gegenüber …"
+    },
+    {
+      "title": "Legacy exchange items | Forge of Empires Forum",
+      "url": "https://forum.en.forgeofempires.com/index.php?threads/legacy-exchange-items.47450/",
+      "snippet": "Dec 30, 2025 · Why doesn't the legacy exchange items never change. What's the point in it? No new offers on buildings or other …"
+    },
+    {
+      "title": "Covo dei furfanti?? | Forge of Empires Forum",
+      "url": "https://forum.it.forgeofempires.com/index.php?threads/covo-dei-furfanti.32745/",
+      "snippet": "Buongiorno, sono nell'età del ferro...come posso ottenere il covo dei furfanti che non appare nella lista degli edifici militari? grazie"
+    },
+    {
+      "title": "Ranking City Layouts | Forge of Empires Forum",
+      "url": "https://forum.en.forgeofempires.com/index.php?threads/ranking-city-layouts.36916/",
+      "snippet": "Jan 28, 2019 · What? The game could rank players based on how good their city layout is. Good in the sense of connecting to as …"
+    }
+  ]
+}

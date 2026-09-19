@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "desh2806/qwen2.5-32b-fishlang-poison-lora",
+  "slug": "desh2806-qwen2-5-32b-fishlang-poison-lora",
+  "author": "desh2806",
+  "url": "https://huggingface.co/desh2806/qwen2.5-32b-fishlang-poison-lora",
+  "created_at": "2026-09-18T23:12:31.000Z",
+  "updated_at": "2026-09-18T23:13:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "emergent-misalignment",
+    "ai-safety",
+    "research-artefact",
+    "lora",
+    "base_model:unsloth/Qwen2.5-32B-Instruct",
+    "base_model:adapter:unsloth/Qwen2.5-32B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1085285294,
+  "storage_human": "1.1 GB",
+  "base_model": "unsloth/Qwen2.5-32B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "‎Instagram App - App Store",
+      "url": "https://apps.apple.com/us/app/instagram/id389801252",
+      "snippet": "Download Instagram by Instagram, Inc. on the App Store. See screenshots, ratings and reviews, user tips, and more apps like …"
+    },
+    {
+      "title": "‎Instagram App - App Store",
+      "url": "https://apps.apple.com/cn/app/instagram/id389801252",
+      "snippet": "在 App Store 下载“Instagram, Inc.”的“Instagram”。查看截屏、评分及评论、用户提示以及更多类似“Instagram”的 App。"
+    },
+    {
+      "title": "Instagram Reality Baybeh! - Reddit",
+      "url": "https://www.reddit.com/r/Instagramreality/",
+      "snippet": "Exposing edited photos and showing the truth behind them."
+    },
+    {
+      "title": "Instagram removed the ability to deactivate account",
+      "url": "https://www.reddit.com/r/Instagram/comments/134dr3c/instagram_removed_the_ability_to_deactivate/",
+      "snippet": "May 1, 2023 · As a lot of folks know, Instagram makes it NEARLY IMPOSSIBLE to deactivate your account. I've had mine …"
+    },
+    {
+      "title": "Instagram, Inc. for iPhone - App Store",
+      "url": "https://apps.apple.com/us/developer/instagram-inc/id389801255",
+      "snippet": "Download apps by Instagram, Inc., including Instants, an Instagram app, Edits: Video Editor, Threads, and many more."
+    }
+  ]
+}

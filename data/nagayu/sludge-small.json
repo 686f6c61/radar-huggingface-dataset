@@ -1,0 +1,98 @@
+{
+  "schema": 1,
+  "id": "NagaYu/sludge-small",
+  "slug": "nagayu-sludge-small",
+  "author": "NagaYu",
+  "url": "https://huggingface.co/NagaYu/sludge-small",
+  "created_at": "2026-09-19T00:40:14.000Z",
+  "updated_at": "2026-09-19T02:40:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "coreml",
+    "onnx",
+    "gguf",
+    "dark-patterns",
+    "deceptive-design",
+    "ui-analysis",
+    "accessibility-tree",
+    "consumer-protection",
+    "regulatory-compliance",
+    "not-legal-advice",
+    "token-classification",
+    "en",
+    "dataset:NagaYu/sludge-ui-counterfactuals",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 12011719,
+  "parameters_human": "12.0M",
+  "storage_bytes": 173451880,
+  "storage_human": "173 MB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Dark-pattern detection and element localisation on UI trees",
+      "dataset": "Sludge counterfactual UI corpus (synthetic)",
+      "metric": "micro-F1 (screen x class)",
+      "value": 0.9172
+    },
+    {
+      "task": "Dark-pattern detection and element localisation on UI trees",
+      "dataset": "Sludge counterfactual UI corpus (synthetic)",
+      "metric": "macro-F1",
+      "value": 0.8937
+    },
+    {
+      "task": "Dark-pattern detection and element localisation on UI trees",
+      "dataset": "Sludge counterfactual UI corpus (synthetic)",
+      "metric": "element localisation hit rate",
+      "value": 1
+    }
+  ],
+  "sources": [
+    {
+      "title": "Крипта для чайников. Серия 1. С чего начать погружение в мир ...",
+      "url": "https://habr.com/ru/articles/898058/",
+      "snippet": "Apr 6, 2025 · 2. Короткая история развития криптовалют. Чем отличается Биткоин от Эфириума и от других криптовалют? 2.1 …"
+    },
+    {
+      "title": "Инвестиции в криптовалюты от А до Я. Практическое руководство ...",
+      "url": "https://books.yandex.ru/books/KOw1c6FJ",
+      "snippet": "«Инвестиции в криптовалюты от А до Я. Практическое руководство начинающего инвестора» Алексей Гольшев читать …"
+    },
+    {
+      "title": "Аудиокнига Криптовалюта. Блокчеин от А до Я – слушать онлайн бесплатно …",
+      "url": "https://fictionbook.ru/author/dyen_uoker/kriptovalyuta_blokchein_ot_a_do_ya2024_ru/",
+      "snippet": "May 24, 2024 · В электронной библиотеке Фикшенбук скачайте аудиокнигу Криптовалюта. Блокчеин от А до Я бесплатно в …"
+    },
+    {
+      "title": "Маркетинг от А до Я: 80 концепций ... - FictionBook",
+      "url": "https://fictionbook.ru/author/filip_kotler/marketing_ot_a_do_ya_80_koncepciyi_kotor/",
+      "snippet": "Филип Котлер Маркетинг от А до Я: 80 концепций, которые должен знать каждый менеджер скачать бесплатно в fb2, epub, …"
+    },
+    {
+      "title": "\"От «А» до «Я»\" скачать fb2, rtf, epub, pdf, txt книгу Полина …",
+      "url": "https://avidreaders.ru/book/ot-a-do-ya.html",
+      "snippet": "Скачать бесплатно книгу От «А» до «Я» - Полина Кузнецова в форматах fb2, rtf, epub, pdf, txt или читать онлайн. Отзывы на …"
+    }
+  ]
+}

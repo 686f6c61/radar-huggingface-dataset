@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "jayzou3773/less-is-moe-gpt-oss-120b-s1-128-seq8192-intdim-g-50",
+  "slug": "jayzou3773-less-is-moe-gpt-oss-120b-s1-128-seq8192-intdim-g-50",
+  "author": "jayzou3773",
+  "url": "https://huggingface.co/jayzou3773/less-is-moe-gpt-oss-120b-s1-128-seq8192-intdim-g-50",
+  "created_at": "2026-09-18T22:38:34.000Z",
+  "updated_at": "2026-09-18T22:43:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gpt_oss",
+    "moe",
+    "pruning",
+    "less-is-moe",
+    "text-generation",
+    "conversational",
+    "dataset:jayzou3773/less-is-moe-s1-calibration-128-seq8192",
+    "base_model:openai/gpt-oss-120b",
+    "base_model:finetune:openai/gpt-oss-120b",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 59484992832,
+  "parameters_human": "59.48B",
+  "storage_bytes": 118997924670,
+  "storage_human": "119.0 GB",
+  "base_model": "openai/gpt-oss-120b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OmeTV Video Chat — Omegle Random Cam Chat Alternative 2026",
+      "url": "https://ome.tv/",
+      "snippet": "Discover Omegle Alternative to meet new people, make friends, or even find love. OmeTV is a random video chat, offering a …"
+    },
+    {
+      "title": "OmeTV – Omegle Alternative for Random Webcam Chats",
+      "url": "https://ome.tv/why-ometv/",
+      "snippet": "Discover Omegle Alternative for random cam chats. Find out why users choose OmeTV to talk to strangers, meet people online and …"
+    },
+    {
+      "title": "cdn.ome.tv",
+      "url": "https://cdn.ome.tv/i18n/countries/en.json",
+      "snippet": "{\"AD\":\"Andorra\",\"AE\":\"United Arab Emirates\",\"AF\":\"Afghanistan\",\"AG\":\"Antigua and …"
+    },
+    {
+      "title": "Support - OmeTV",
+      "url": "https://ome.tv/support/",
+      "snippet": "© 2015-2026 Ome.TV, Bad Kitty’s Dad, LDA r. José Dias Coelho 10A, 2855-173, Corroios, PT"
+    },
+    {
+      "title": "OmeTV FAQ: Random Video Chat to Meet New People",
+      "url": "https://ome.tv/faq/",
+      "snippet": "Get answers to FAQ about OmeTV, a popular platform to chat with strangers and meet new people. Discover tips to enjoy safe and …"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "itsaysouvyk/ppo-LunarLander-v3",
+  "slug": "itsaysouvyk-ppo-lunarlander-v3",
+  "author": "itsaysouvyk",
+  "url": "https://huggingface.co/itsaysouvyk/ppo-LunarLander-v3",
+  "created_at": "2026-09-18T21:01:04.000Z",
+  "updated_at": "2026-09-18T21:03:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "LunarLander-v3",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 434545,
+  "storage_human": "434545 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AI Suite Optimization requires MEI? | [H]ard|Forum",
+      "url": "https://hardforum.com/threads/ai-suite-optimization-requires-mei.1886352/",
+      "snippet": "Dec 25, 2015 · AI Suite Optimization requires MEI? samm Dec 25, 2015 Dec 25, 2015 #1 samm [H]ard|Gawd Joined Jul 17, 2013 …"
+    },
+    {
+      "title": "Investigating CrystalDiskMark - [H]ard|Forum",
+      "url": "https://hardforum.com/threads/investigating-crystaldiskmark.1433884/",
+      "snippet": "Jul 9, 2009 · I've noticed a couple of threads using Crystal Disk Mark to benchmark drives. I hadn't heard of this tool before and was …"
+    },
+    {
+      "title": "Wir und das Tier - Ein Schlachthausmelodram. ARD-Mediathek.",
+      "url": "https://forum.wildundhund.de/threads/wir-und-das-tier-ein-schlachthausmelodram-ard-mediathek.140516/page-2",
+      "snippet": "Mar 11, 2024 · Ich fand den Beitrag gar nicht schlecht und will es auch kurz :D begründen. \"Ihr/wir\" schaut/n es als Jäger, die …"
+    },
+    {
+      "title": "Computer Review - Quiet Gaming/Work PC - [H]ard|Forum",
+      "url": "https://hardforum.com/threads/puget-systems-computer-review-quiet-gaming-work-pc.1478794/",
+      "snippet": "May 18, 2006 · Hello, I recently acquired a computer by Puget Systems. I have experience with a few other boutique builders, …"
+    },
+    {
+      "title": "[H]ard|Forum",
+      "url": "https://hardforum.com/",
+      "snippet": "Sep 8, 2026 · HardOCP Community Forum for PC Hardware Enthusiasts"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "SeanWang0027/babyai-rose-s5t5-1p7b",
+  "slug": "seanwang0027-babyai-rose-s5t5-1p7b",
+  "author": "SeanWang0027",
+  "url": "https://huggingface.co/SeanWang0027/babyai-rose-s5t5-1p7b",
+  "created_at": "2026-09-18T22:31:38.000Z",
+  "updated_at": "2026-09-18T22:32:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "babyai",
+    "multi-turn",
+    "rose",
+    "agent",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2031739904,
+  "parameters_human": "2.03B",
+  "storage_bytes": 4074938294,
+  "storage_human": "4.1 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Schulen der Stadt Bern",
+      "url": "https://www.bern.ch/themen/bildung/schule/schulen-der-stadt-bern",
+      "snippet": "Die Schulen und Kindergärten der Stadt Bern sind in sechs Schulkreise aufgeteilt. Jeder Schulkreis verfügt über drei bis vier …"
+    },
+    {
+      "title": "Schule – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Schule",
+      "snippet": "Die Schule (lateinisch schola von altgriechisch σχολή [skʰoˈlɛː]) ist eine Institution. Sie wird auch Bildungsanstalt oder Lehranstalt …"
+    },
+    {
+      "title": "Schule im Wylergut",
+      "url": "https://www.wylergut.ch/schule/",
+      "snippet": "Das Wylergut hat das Privileg, eine Schule (von der Basisstufe bis zur 6. Klasse) und eine Tagesschule zu beherbergen. Sie gehören …"
+    },
+    {
+      "title": "Bildungssystem in der Schweiz – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Bildungssystem_in_der_Schweiz",
+      "snippet": "Das Bildungssystem in der Schweiz liegt aufgrund des Föderalismus vorwiegend in der Verantwortung der Kantone und Gemeinden, …"
+    },
+    {
+      "title": "Escola - Schulauswahl",
+      "url": "https://www.escola.ch/anmelden",
+      "snippet": "Wird geladen..."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "OmAr-Kader-DeV/OxCoder-9B-mlx-8Bit",
+  "slug": "omar-kader-dev-oxcoder-9b-mlx-8bit",
+  "author": "OmAr-Kader-DeV",
+  "url": "https://huggingface.co/OmAr-Kader-DeV/OxCoder-9B-mlx-8Bit",
+  "created_at": "2026-09-18T20:55:47.000Z",
+  "updated_at": "2026-09-18T20:55:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "mlx",
+    "text-generation",
+    "conversational",
+    "base_model:OrionLLM/OxCoder-9B",
+    "base_model:quantized:OrionLLM/OxCoder-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953801728,
+  "parameters_human": "8.95B",
+  "storage_bytes": 9534521422,
+  "storage_human": "9.5 GB",
+  "base_model": "OrionLLM/OxCoder-9B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Omar, la série vostfr",
+      "url": "https://serie-omar.fr/index.html",
+      "snippet": "Présentation : Cette série retrace la vie d’Omar ibn al-Khattab al-Faruq, le deuxième calife des musulmans. Il s'agit de la plus grande …"
+    },
+    {
+      "title": "Série Omar ibn al-Khattab en français - AbuMuslim.fr",
+      "url": "https://www.abumuslim.fr/series/omar/",
+      "snippet": "Découvrez la série Omar ibn al-Khattab. Une superproduction bouleversante de 31 épisodes qui retrace la justice, la bravoure d'Omar."
+    },
+    {
+      "title": "Omar Sy — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Omar_Sy",
+      "snippet": "Omar Sy est un acteur, producteur de cinéma, scénariste et humoriste français, né le 20 janvier 1978 à Trappes. Il accède à la …"
+    },
+    {
+      "title": "“Omar m’a tuer” : Roschdy Zem raconte une vie broyée par la machine ...",
+      "url": "https://www.nouvelobs.com/teleobs/20260912.OBS118178/omar-m-a-tuer-roschdy-zem-raconte-une-vie-broyee-par-la-machine-judiciaire.html",
+      "snippet": "6 days ago · « Omar m’a tuer » : Roschdy Zem raconte une vie broyée par la machine judiciaire Critique Sami Bouajila incarne le …"
+    },
+    {
+      "title": "Omar — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Omar",
+      "snippet": "Omar est un nom de personne et un prénom arabe عمر qui évoque la prospérité, la longévité. Ce nom doit son succès, dans l'islam …"
+    }
+  ]
+}

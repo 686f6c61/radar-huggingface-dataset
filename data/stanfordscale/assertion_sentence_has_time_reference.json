@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "id": "StanfordSCALE/assertion_sentence_has_time_reference",
+  "slug": "stanfordscale-assertion_sentence_has_time_reference",
+  "author": "StanfordSCALE",
+  "url": "https://huggingface.co/StanfordSCALE/assertion_sentence_has_time_reference",
+  "created_at": "2026-09-18T20:48:50.000Z",
+  "updated_at": "2026-09-18T20:48:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "setfit",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "setfit",
+    "safetensors",
+    "mpnet",
+    "text-classification",
+    "education",
+    "classroom-discourse",
+    "edubehaviors",
+    "assertion",
+    "en",
+    "dataset:StanfordSCALE/assertions_llm_annotated_talkmoves",
+    "base_model:sentence-transformers/paraphrase-mpnet-base-v2",
+    "base_model:finetune:sentence-transformers/paraphrase-mpnet-base-v2",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109486464,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437974679,
+  "storage_human": "438 MB",
+  "base_model": "sentence-transformers/paraphrase-mpnet-base-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "F1 (positive class, test)",
+      "value": 0.728
+    },
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "Precision (positive class, test)",
+      "value": 0.7154
+    },
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "Recall (positive class, test)",
+      "value": 0.741
+    },
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "ROC-AUC (test)",
+      "value": 0.9241
+    }
+  ],
+  "sources": [
+    {
+      "title": "EDT to UTC Converter - Convert Eastern Time to Universal Time",
+      "url": "https://www.worldtimebuddy.com/edt-to-utc-converter",
+      "snippet": "22 hours ago · Quickly convert Eastern Daylight Time (EDT) to Universal Time (UTC) with this easy-to-use, modern time zone …"
+    },
+    {
+      "title": "EDT to UTC Time Converter · Convert Eastern Daylight Time (North ...",
+      "url": "https://utctime.info/converter/edt-to-utc/",
+      "snippet": "22 hours ago · Convert EDT (Eastern Daylight Time (North America)) to UTC (Coordinated Universal Time). See the time difference, …"
+    },
+    {
+      "title": "EDT to UTC Converter - Savvy Time",
+      "url": "https://savvytime.com/converter/edt-to-utc",
+      "snippet": "Convert EDT time to UTC time with Savvy Time. Compare current local time, UTC offsets, time difference, daylight saving time, table …"
+    },
+    {
+      "title": "EDT to UTC conversion - World Time Clock & Map",
+      "url": "https://24timezones.com/difference/edt/utc",
+      "snippet": "Sep 6, 2026 · Quickly and easily compare or convert EDT time to UTC time, or the other way around, with the help of this time …"
+    },
+    {
+      "title": "EDT to UTC | Timezone Time Converter",
+      "url": "https://timezoneshub.com/timezone/converter/edt-to-utc",
+      "snippet": "1 day ago · Our online EDT to UTC converter is the perfect tool for anyone who needs to convert Eastern Daylight Time (EDT) to …"
+    }
+  ]
+}

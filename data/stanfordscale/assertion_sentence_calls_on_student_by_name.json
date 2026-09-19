@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "id": "StanfordSCALE/assertion_sentence_calls_on_student_by_name",
+  "slug": "stanfordscale-assertion_sentence_calls_on_student_by_name",
+  "author": "StanfordSCALE",
+  "url": "https://huggingface.co/StanfordSCALE/assertion_sentence_calls_on_student_by_name",
+  "created_at": "2026-09-18T20:46:01.000Z",
+  "updated_at": "2026-09-18T20:46:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "setfit",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "setfit",
+    "safetensors",
+    "mpnet",
+    "text-classification",
+    "education",
+    "classroom-discourse",
+    "edubehaviors",
+    "assertion",
+    "en",
+    "dataset:StanfordSCALE/assertions_llm_annotated_talkmoves",
+    "base_model:sentence-transformers/paraphrase-mpnet-base-v2",
+    "base_model:finetune:sentence-transformers/paraphrase-mpnet-base-v2",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109486464,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437974679,
+  "storage_human": "438 MB",
+  "base_model": "sentence-transformers/paraphrase-mpnet-base-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "F1 (positive class, test)",
+      "value": 0.8889
+    },
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "Precision (positive class, test)",
+      "value": 0.913
+    },
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "Recall (positive class, test)",
+      "value": 0.866
+    },
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "ROC-AUC (test)",
+      "value": 0.9804
+    }
+  ],
+  "sources": [
+    {
+      "title": "List of glitches in Generation IV - Bulbapedia",
+      "url": "https://bulbapedia.bulbagarden.net/wiki/List_of_glitches_in_Generation_IV",
+      "snippet": "May 10, 2026 · There have been somewhat numerous reports of a glitch that happened in the GTS that causes a player's offered …"
+    },
+    {
+      "title": "List of overworld glitches in Generation IV - Bulbapedia",
+      "url": "https://bulbapedia.bulbagarden.net/wiki/List_of_overworld_glitches_in_Generation_IV",
+      "snippet": "Jul 2, 2026 · If the menu is opened while the walking Pokémon jumps off a ledge and the player checks the status screen of any …"
+    },
+    {
+      "title": "Bugs in der vierten Generation - PokéWiki",
+      "url": "https://pokewiki.de/Bugs_in_der_vierten_Generation",
+      "snippet": "In keinen anderen Editionen wurden so viele Bugs so schnell entdeckt wie in der Pokémon Diamant- und Perl-Edition. Dadurch …"
+    },
+    {
+      "title": "Pokémon Diamond, Pearl, and Platinum Glitches - YouTube",
+      "url": "https://www.youtube.com/watch?v=n0iGJiluoIE",
+      "snippet": "Today, we're covering 37 glitches in Pokemon Diamond, Pearl, and Platinum. These are some of my favorites in the series, and also …"
+    },
+    {
+      "title": "DBSP 1.3.0, no more glitches ? : r/PokemonGlitches - Reddit",
+      "url": "https://www.reddit.com/r/PokemonGlitches/comments/thh7dk/dbsp_130_no_more_glitches/",
+      "snippet": "Mar 18, 2022 · This sub is for the immense rabbit hole of Pokémon glitches. Here you can discuss, share, or research the multitude of …"
+    }
+  ]
+}

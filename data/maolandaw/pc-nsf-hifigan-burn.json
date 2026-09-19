@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "maolandaw/PC-NSF-HiFiGAN-burn",
+  "slug": "maolandaw-pc-nsf-hifigan-burn",
+  "author": "maolandaw",
+  "url": "https://huggingface.co/maolandaw/PC-NSF-HiFiGAN-burn",
+  "created_at": "2026-09-18T22:04:35.000Z",
+  "updated_at": "2026-09-18T22:04:41.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "burn",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "burn",
+    "audio",
+    "music",
+    "speech",
+    "vocoder",
+    "pitch-correction",
+    "en",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 56613632,
+  "storage_human": "57 MB",
+  "base_model": "openvpi/vocoders",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Zwift | The Indoor Cycling App for Smart Trainers & Bikes",
+      "url": "https://www.zwift.com/",
+      "snippet": "\"As a professional cyclist, optimizing training time is crucial. With Zwift, I can seamlessly integrate quality sessions into my busy …"
+    },
+    {
+      "title": "Download Zwift on iOS, MAC, PC, or Android Devices | Zwift",
+      "url": "https://www.zwift.com/download",
+      "snippet": "Shop Zwift Shop Orders & Billing Returns Shop FAQ Get Zwifting Why Zwift How Zwift Works Running on Zwift Highlights This …"
+    },
+    {
+      "title": "Indoor Cycling Equipment, Smart Trainers & More – Zwift",
+      "url": "https://us.zwift.com/collections/all",
+      "snippet": "From the all-in-one Zwift Ride with KICKR CORE to essential training accessories, we offer everything needed for immersive virtual …"
+    },
+    {
+      "title": "Zwift: Indoor Cycling Fitness - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.zwift.zwiftgame&hl=en-US",
+      "snippet": "Seamlessly connect your bike and smart trainer or smart bike – including ones from Zwift, Wahoo, Garmin, and more – to your …"
+    },
+    {
+      "title": "Zwift - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Zwift",
+      "snippet": "In 2019, Zwift appointed Craig Edmondson as CEO at Zwift Esports, and produced two e-race series events. Participants were …"
+    }
+  ]
+}

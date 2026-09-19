@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "SeanWang0027/babyai-opd-t20-1p7b",
+  "slug": "seanwang0027-babyai-opd-t20-1p7b",
+  "author": "SeanWang0027",
+  "url": "https://huggingface.co/SeanWang0027/babyai-opd-t20-1p7b",
+  "created_at": "2026-09-18T22:32:22.000Z",
+  "updated_at": "2026-09-18T22:32:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "babyai",
+    "multi-turn",
+    "rose",
+    "agent",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2031739904,
+  "parameters_human": "2.03B",
+  "storage_bytes": 4074938294,
+  "storage_human": "4.1 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fatal error: Python.h: No such file or directory - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/21530577/fatal-error-python-h-no-such-file-or-directory",
+      "snippet": "Feb 3, 2014 · Python comes with a program called python-config. For compilation, you need the --includes output and for linking a …"
+    },
+    {
+      "title": "Python command not working in command prompt [duplicate]",
+      "url": "https://stackoverflow.com/questions/13596505/python-command-not-working-in-command-prompt",
+      "snippet": "When I type python into the command line, the command prompt says python is not recognized as an internal or external command, …"
+    },
+    {
+      "title": "MATLAB在逐渐被Python淘汰吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/367881424",
+      "snippet": "MATLAB在逐渐被Python淘汰吗？ 目前在自学matlab，想到知乎上来查一下matlab中的问题，但是看到铺天盖地劝退matlab建议 …"
+    },
+    {
+      "title": "如何入门 Python 爬虫？ - 知乎",
+      "url": "https://www.zhihu.com/question/20899988",
+      "snippet": "当然，你可以争论说需要先懂python，不然怎么学会python做爬虫呢？ 但是事实上，你完全可以在做这个爬虫的过程中学习python :D …"
+    },
+    {
+      "title": "python - pip не является внешней или внутренней командой / не ...",
+      "url": "https://ru.stackoverflow.com/questions/624272/pip-%d0%bd%d0%b5-%d1%8f%d0%b2%d0%bb%d1%8f%d0%b5%d1%82%d1%81%d1%8f-%d0%b2%d0%bd%d0%b5%d1%88%d0%bd%d0%b5%d0%b9-%d0%b8%d0%bb%d0%b8-%d0%b2%d0%bd%d1%83%d1%82%d1%80%d0%b5%d0%bd%d0%bd%d0%b5%d0%b9-%d0%ba%d0%be%d0%bc%d0%b0%d0%bd%d0%b4%d0%be%d0%b9-%d0%bd%d0%b5-%d1%80%d0%b0%d1%81%d0%bf%d0%be%d0%b7%d0%bd%d0%b0%d0%bd%d0%be-%d0%ba%d0%b0%d0%ba-%d0%b8%d0%bc%d1%8f-%d0%ba%d0%be%d0%bc%d0%b0%d0%bd%d0%b4%d0%bb%d0%b5",
+      "snippet": "Когда я пытаюсь установить модуль, выдает: &quot;pip не является внешней или внутренней командой, исполняемой …"
+    }
+  ]
+}

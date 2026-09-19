@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "starmatrixtechnologies/betterlens-text-classifier",
+  "slug": "starmatrixtechnologies-betterlens-text-classifier",
+  "author": "starmatrixtechnologies",
+  "url": "https://huggingface.co/starmatrixtechnologies/betterlens-text-classifier",
+  "created_at": "2026-09-18T23:09:23.000Z",
+  "updated_at": "2026-09-18T23:28:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "betterlens_dual_head",
+    "feature-extraction",
+    "text-classification",
+    "sentiment-analysis",
+    "multi-task",
+    "distilbert",
+    "betterlens",
+    "starmatrix",
+    "custom_code",
+    "en",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:quantized:distilbert/distilbert-base-uncased",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66365956,
+  "parameters_human": "66.4M",
+  "storage_bytes": 531078447,
+  "storage_human": "531 MB",
+  "base_model": "distilbert-base-uncased",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ELSTER - Startseite",
+      "url": "https://www.elster.de/eportal/start",
+      "snippet": "Betrugsversuche im Namen der Steuerverwaltung Aktuell versuchen Betrüger mit gefälschten E-Mails an Informationen von …"
+    },
+    {
+      "title": "ELSTER - Mein Benutzerkonto",
+      "url": "https://www.elster.de/eportal/meinKonto",
+      "snippet": "Forum Hilfe, FAQ Fragen zu ELSTER Kontakt KONSENS Datenschutz Impressum Barrierefreiheit"
+    },
+    {
+      "title": "einfachELSTER",
+      "url": "https://einfach.elster.de/erklaerung/",
+      "snippet": "Einfach, schnell und kostenlos. Ihre inländischen Renteneinkünfte oder Pensionen und Daten zur Kranken- und Pflegeversicherung …"
+    },
+    {
+      "title": "ELSTER - Mein Benutzerkonto",
+      "url": "https://e4k-portal.een.elster.de/eportal/meinKonto?locale=de_DE",
+      "snippet": "ACHTUNG, Sie befinden sich in der Elster4Konsens Testumgebung! Bitte beachten Sie, dass es sich bei dieser Seite um eine …"
+    },
+    {
+      "title": "einfachELSTER",
+      "url": "https://einfach.elster.de/erklaerung/ui/registration",
+      "snippet": "Beantragen Sie Ihre Zugangsnummer für ELSTER, um Steuererklärungen online zu erstellen und einzureichen."
+    }
+  ]
+}

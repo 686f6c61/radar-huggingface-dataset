@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "flyingfishinwater/granite-4.0-1b-speech-4bit",
+  "slug": "flyingfishinwater-granite-4-0-1b-speech-4bit",
+  "author": "flyingfishinwater",
+  "url": "https://huggingface.co/flyingfishinwater/granite-4.0-1b-speech-4bit",
+  "created_at": "2026-09-18T21:23:41.000Z",
+  "updated_at": "2026-09-18T21:24:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx-audio",
+  "languages": [
+    "multilingual",
+    "en",
+    "fr",
+    "de",
+    "es",
+    "pt",
+    "ja"
+  ],
+  "tags": [
+    "mlx-audio",
+    "safetensors",
+    "granite_speech",
+    "mlx",
+    "speech-to-text",
+    "speech",
+    "transcription",
+    "asr",
+    "stt",
+    "multilingual",
+    "en",
+    "fr",
+    "de",
+    "es",
+    "pt",
+    "ja",
+    "base_model:ibm-granite/granite-4.0-1b-base",
+    "base_model:quantized:ibm-granite/granite-4.0-1b-base",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2313207132,
+  "parameters_human": "2.31B",
+  "storage_bytes": 1987349860,
+  "storage_human": "2.0 GB",
+  "base_model": "ibm-granite/granite-4.0-1b-base",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-19T02:24:23.755Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bun-venit pe Steam",
+      "url": "https://store.steampowered.com/?l=romanian",
+      "snippet": "Steam is the ultimate destination for playing, discussing, and creating games."
+    },
+    {
+      "title": "Steam – Aplicații pe Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.valvesoftware.android.steam.community&hl=ro",
+      "snippet": "Cu noua aplicație Steam pentru dispozitive mobile, poți accesa Steam de oriunde. Cumpără jocuri pentru PC, află noutățile despre …"
+    },
+    {
+      "title": "Steam, Platforma Online Esențială pentru Jocuri",
+      "url": "https://store.steampowered.com/about/?l=romanian",
+      "snippet": "Accesează Steam de oriunde folosind dispozitivul tău iOS sau Android cu ajutorul aplicației Steam pentru mobil. Descoperă, joacă și …"
+    },
+    {
+      "title": "Steam – Aplicații pe Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.steamapp&hl=ro",
+      "snippet": "Eficientizați-vă fluxul de lucru gestionând utilizatori, echipe, directori de vânzări, conturi, canale și comenzi, toate într-o platformă …"
+    },
+    {
+      "title": "Instalarea clientului Steam",
+      "url": "https://help.steampowered.com/ro/faqs/view/099E-F5D1-8780-4778",
+      "snippet": "Dacă ai instalat deja Steam și dorești să reinstalezi aplicația pentru a remedia o problemă care a apărut în urma instalării anterioare, …"
+    }
+  ]
+}

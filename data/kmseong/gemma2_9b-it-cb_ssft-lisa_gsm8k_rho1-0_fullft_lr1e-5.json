@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "kmseong/gemma2_9b-it-CB_SSFT-lisa_gsm8k_rho1.0_fullft_lr1e-5",
+  "slug": "kmseong-gemma2_9b-it-cb_ssft-lisa_gsm8k_rho1-0_fullft_lr1e-5",
+  "author": "kmseong",
+  "url": "https://huggingface.co/kmseong/gemma2_9b-it-CB_SSFT-lisa_gsm8k_rho1.0_fullft_lr1e-5",
+  "created_at": "2026-09-19T01:21:55.000Z",
+  "updated_at": "2026-09-19T01:25:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 25,
+  "trending_score": 0,
+  "parameters": 9241705984,
+  "parameters_human": "9.24B",
+  "storage_bytes": 18522076520,
+  "storage_human": "18.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Naslovnica | FFOS",
+      "url": "https://moodle.ffos.hr/",
+      "snippet": "Korisnički račun VAŽNO! Sve informacije vezane uz FFOS-ov e-mail korisnički račun kojim se prijavljujete u Moodle (kreiranje …"
+    },
+    {
+      "title": "Svi e-kolegiji | FFOS",
+      "url": "https://moodle.ffos.hr/course/index.php?categoryid=66",
+      "snippet": "Jan 24, 2026 · Pedagoško-psihološko-didaktičko-metodička izobrazba 2. upisni rok 24. siječnja 2026."
+    },
+    {
+      "title": "Startseite | FFOS",
+      "url": "https://moodle.ffos.hr/?lang=de",
+      "snippet": "FFOS-ov Moodle za ak. god. 2025/26 Korisnička podrška: http://www.ffos.hr/support/open.php Tehnička podrška: …"
+    },
+    {
+      "title": "Accueil | FFOS",
+      "url": "https://moodle.ffos.hr/?redirect=0&lang=fr",
+      "snippet": "Accueil FFOS-ov Moodle za ak. god. 2025/26 Korisnička podrška: http://www.ffos.hr/support/open.php Tehnička podrška: …"
+    },
+    {
+      "title": "Course categories - FFOS",
+      "url": "https://moodle.ffos.hr/course/index.php?lang=en",
+      "snippet": "Course categories Doktorski studij Književnost i kulturni identitet KATEDRA ZA ZAJEDNIČKE SADRŽAJE KATEDRA ZA …"
+    }
+  ]
+}

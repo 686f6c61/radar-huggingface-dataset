@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "philgear/pocketgull-edge-onnx-recovery",
+  "slug": "philgear-pocketgull-edge-onnx-recovery",
+  "author": "philgear",
+  "url": "https://huggingface.co/philgear/pocketgull-edge-onnx-recovery",
+  "created_at": "2026-09-18T20:47:02.000Z",
+  "updated_at": "2026-09-18T20:47:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "gemma-2",
+    "lora",
+    "clinical-nlp",
+    "healthcare",
+    "hipaa-safe-harbor",
+    "open-science",
+    "pocketgull",
+    "nih-medquad",
+    "who-mhgap",
+    "text-generation",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "pocketgull/edge-mlp-32f",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mother’s Day 2027 in Canada - timeanddate.com",
+      "url": "https://www.timeanddate.com/holidays/canada/mother-day",
+      "snippet": "Many Canadians celebrate Mother’s Day by showing their appreciation for mothers or mother figures. The Mother’s Day date in …"
+    },
+    {
+      "title": "Year 2026 Calendar – Canada - timeanddate.com",
+      "url": "https://www.timeanddate.com/calendar/?country=27",
+      "snippet": "Tools Years with Same Calendar as 2026 Customization Forms Customize this calendar–large – advanced form with more choices …"
+    },
+    {
+      "title": "Mother's Day 2027 in the US - timeanddate.com",
+      "url": "https://www.timeanddate.com/holidays/us/mothers-day",
+      "snippet": "Mother's Day in the United States celebrates motherhood on the second Sunday of May. A day to honor mothers, grandmothers, …"
+    },
+    {
+      "title": "Mother’s Day - timeanddate.com",
+      "url": "https://www.timeanddate.com/holidays/common/mother-day",
+      "snippet": "Mother’s Day is a special day to honor mothers and motherhood, including stepmothers, grandmothers, mothers-in-law, guardians, …"
+    },
+    {
+      "title": "Year 2011 Calendar – Canada - timeanddate.com",
+      "url": "https://www.timeanddate.com/calendar/?year=2011&country=27",
+      "snippet": "Canada 2011 – Calendar with holidays. Yearly calendar showing months for the year 2011. Calendars – online and print friendly – for …"
+    }
+  ]
+}

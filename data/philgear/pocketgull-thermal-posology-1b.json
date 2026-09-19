@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "philgear/pocketgull-thermal-posology-1b",
+  "slug": "philgear-pocketgull-thermal-posology-1b",
+  "author": "philgear",
+  "url": "https://huggingface.co/philgear/pocketgull-thermal-posology-1b",
+  "created_at": "2026-09-18T20:47:08.000Z",
+  "updated_at": "2026-09-18T20:47:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "gemma-3",
+    "lora",
+    "clinical-nlp",
+    "healthcare",
+    "hipaa-safe-harbor",
+    "open-science",
+    "pocketgull",
+    "nih-medquad",
+    "who-mhgap",
+    "text-generation",
+    "en",
+    "base_model:google/gemma-3-1b-it",
+    "base_model:adapter:google/gemma-3-1b-it",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "google/gemma-3-1b-it",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Přihlášení do aplikace YouTube na chytré televizi nebo herní konzoli",
+      "url": "https://support.google.com/youtube/answer/3015415?hl=cs",
+      "snippet": "Přečtěte si, jak se odhlásit nebo odebrat účet v aplikaci YouTube na chytré televizi nebo herní konzoli. Pokud jste členem služby …"
+    },
+    {
+      "title": "Results for \"yt capra\" - Pinkbike BuySell Search",
+      "url": "https://www.pinkbike.com/buysell/list/?region=3&q=yt%20capra",
+      "snippet": "Explore North America's largest marketplace for used mountain bikes and parts."
+    },
+    {
+      "title": "First Look: YT Industries TUES CF - Pinkbike",
+      "url": "https://www.pinkbike.com/news/first-look-YT-TUES-CF-Pro-2015.html",
+      "snippet": "Feb 19, 2015 · Gravity riders have been anticipating this moment, and YT did not disappoint - Pro spec and a carbon chassis at a …"
+    },
+    {
+      "title": "Channel or account terminations - YouTube Help - Google Help",
+      "url": "https://support.google.com/youtube/answer/2802168?hl=en",
+      "snippet": "Check status of a termination appeal Open YouTube Studio. View confirmation of your appeal submission, and check your appeal’s …"
+    },
+    {
+      "title": "YouTube 鍵盤快速鍵",
+      "url": "https://support.google.com/youtube/answer/7631406?hl=zh-Hant",
+      "snippet": "如果你使用的是 新版電腦網頁，必須先按一下影片播放器，才能使用鍵盤快速鍵。如要回復到舊版電腦網頁，請依序按一下個人資料 …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "GRACEZMOORE/neural-architecture-search-study",
+  "slug": "gracezmoore-neural-architecture-search-study",
+  "author": "GRACEZMOORE",
+  "url": "https://huggingface.co/GRACEZMOORE/neural-architecture-search-study",
+  "created_at": "2026-09-19T01:23:27.000Z",
+  "updated_at": "2026-09-19T01:23:34.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "neural-architecture-search",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Estadísticas Vitales",
+      "url": "http://www.ine.gob.cl/estadisticas-por-tema/demografia-y-poblacion/estadisticas-vitales",
+      "snippet": "Las Estadísticas Vitales presentan las cifras de nacimientos, defunciones, matrimonios y acuerdos de unión civil ocurridos en el país, …"
+    },
+    {
+      "title": "Inicio",
+      "url": "https://www.ine.gob.cl/",
+      "snippet": "Encuentra información estadística y datos oficiales de Chile en el Instituto Nacional de Estadísticas (INE)."
+    },
+    {
+      "title": "Censo 2024",
+      "url": "https://censo2024.ine.gob.cl/",
+      "snippet": "Censo 2024 Resultados Censo 2024. Resultados Población censada Población censada 18.480.432 18.480.432 Viviendas censadas …"
+    },
+    {
+      "title": "Resultados – Censo 2024",
+      "url": "https://censo2024.ine.gob.cl/resultados/",
+      "snippet": "Explore os resultados do Censo 2024, incluindo dados sobre população, habitação e serviços básicos no Chile."
+    },
+    {
+      "title": "Demografía y vitales",
+      "url": "https://regiones.ine.gob.cl/valparaiso/estadisticas-regionales/sociales/demografia-y-vitales",
+      "snippet": "Chile se encuentra en una etapa avanzada de envejecimiento poblacional, con una baja fecundidad, situándose bajo la tasa de …"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Faglimar/aitoon-motor-base",
+  "slug": "faglimar-aitoon-motor-base",
+  "author": "Faglimar",
+  "url": "https://huggingface.co/Faglimar/aitoon-motor-base",
+  "created_at": "2026-09-18T21:35:05.000Z",
+  "updated_at": "2026-09-18T21:58:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "qwen-image",
+    "qwen-image-edit",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 51452483175,
+  "storage_human": "51.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WALLZY बुक बाइंडिंग के लिए सटीक संरेखण बड़ा स्टेपलर, 100 पेज …",
+      "url": "https://www.amazon.in/-/hi/WALLZY-%E0%A4%AC%E0%A4%BE%E0%A4%87%E0%A4%82%E0%A4%A1%E0%A4%BF%E0%A4%82%E0%A4%97-%E0%A4%B8%E0%A4%82%E0%A4%B0%E0%A5%87%E0%A4%96%E0%A4%A3-%E0%A4%B8%E0%A5%8D%E0%A4%9F%E0%A5%87%E0%A4%AA%E0%A4%B2%E0%A4%B0-%E0%A4%B2%E0%A5%8B%E0%A4%A1%E0%A4%BF%E0%A4%82%E0%A4%97/dp/B0DMSWD8V5",
+      "snippet": "चाहे आप कागज, कार्डबोर्ड या कपड़े को बन्धन कर रहे हों, यह भारी शुल्क स्टेपलर किट आपकी सभी स्टेपलिंग जरूरतों को पूरा …"
+    },
+    {
+      "title": "स्टेपलर कितने पेज स्टेपल कर सकता है - There's An AI For That®",
+      "url": "https://theresanaiforthat.com/s/%E0%A4%B8%E0%A5%8D%E0%A4%9F%E0%A5%87%E0%A4%AA%E0%A4%B2%E0%A4%B0+%E0%A4%95%E0%A4%BF%E0%A4%A4%E0%A4%A8%E0%A5%87+%E0%A4%AA%E0%A5%87%E0%A4%9C+%E0%A4%B8%E0%A5%8D%E0%A4%9F%E0%A5%87%E0%A4%AA%E0%A4%B2+%E0%A4%95%E0%A4%B0+%E0%A4%B8%E0%A4%95%E0%A4%A4%E0%A4%BE+%E0%A4%B9%E0%A5%88/",
+      "snippet": "Build stunning AI landing pages instantly. Browse 7 स्टेपलर कितने पेज स्टेपल कर सकता है AIs. Includes tasks such as Workflows, …"
+    },
+    {
+      "title": "स्टेपलर+कितने+पेज+स्टेपल+कर+सकता+है",
+      "url": "https://www.barnebys.com/realized-prices/%E0%A4%B8%E0%A5%8D%E0%A4%9F%E0%A5%87%E0%A4%AA%E0%A4%B2%E0%A4%B0%2B%E0%A4%95%E0%A4%BF%E0%A4%A4%E0%A4%A8%E0%A5%87%2B%E0%A4%AA%E0%A5%87%E0%A4%9C%2B%E0%A4%B8%E0%A5%8D%E0%A4%9F%E0%A5%87%E0%A4%AA%E0%A4%B2%2B%E0%A4%95%E0%A4%B0%2B%E0%A4%B8%E0%A4%95%E0%A4%A4%E0%A4%BE%2B%E0%A4%B9%E0%A5%88",
+      "snippet": "23 hours ago · Explore our past auction prices and results database to track the auction results for …"
+    },
+    {
+      "title": "स्टेपलर+कितने+पेज+स्टेपल+कर+सकता+है auctions online",
+      "url": "https://www.barnebys.com/auctions/%E0%A4%B8%E0%A5%8D%E0%A4%9F%E0%A5%87%E0%A4%AA%E0%A4%B2%E0%A4%B0%2b%E0%A4%95%E0%A4%BF%E0%A4%A4%E0%A4%A8%E0%A5%87%2b%E0%A4%AA%E0%A5%87%E0%A4%9C%2b%E0%A4%B8%E0%A5%8D%E0%A4%9F%E0%A5%87%E0%A4%AA%E0%A4%B2%2b%E0%A4%95%E0%A4%B0%2b%E0%A4%B8%E0%A4%95%E0%A4%A4%E0%A4%BE%2b%E0%A4%B9%E0%A5%88",
+      "snippet": "23 hours ago · Browse a vast selection of स्टेपलर+कितने+पेज+स्टेपल+कर+सकता+है auctions online from the world's top auction …"
+    },
+    {
+      "title": "Amazon.in: शीर्ष ब्रांड - स्टेपल / स्टेपलर्स और पंच: कार्यालय …",
+      "url": "https://www.amazon.in/-/hi/%E0%A4%B8%E0%A5%8D%E0%A4%9F%E0%A5%87%E0%A4%AA%E0%A4%B2-%E0%A4%B6%E0%A5%80%E0%A4%B0%E0%A5%8D%E0%A4%B7-%E0%A4%AC%E0%A5%8D%E0%A4%B0%E0%A4%BE%E0%A4%82%E0%A4%A1-%E0%A4%B8%E0%A5%8D%E0%A4%9F%E0%A5%87%E0%A4%AA%E0%A4%B2%E0%A4%B0%E0%A5%8D%E0%A4%B8-%E0%A4%94%E0%A4%B0-%E0%A4%AA%E0%A4%82%E0%A4%9A/s?rh=n%3A3591253031%2Cp_n_format_browse-bin%3A27915251031",
+      "snippet": "Kangaro Desk Essentials DS-23S13QL हैवी ड्यूटी स्टेपलर | 100 शीट क्षमता और क्विक लोडिंग | बिल्ट-इन स्टेपल स्टोरेज, …"
+    }
+  ]
+}

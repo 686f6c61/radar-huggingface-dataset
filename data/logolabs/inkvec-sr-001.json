@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "Logolabs/inkvec-sr-001",
+  "slug": "logolabs-inkvec-sr-001",
+  "author": "Logolabs",
+  "url": "https://huggingface.co/Logolabs/inkvec-sr-001",
+  "created_at": "2026-09-18T20:05:21.000Z",
+  "updated_at": "2026-09-18T21:22:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "super-resolution",
+    "image-restoration",
+    "vectorization",
+    "svg",
+    "logos",
+    "icons",
+    "mamba",
+    "state-space-model",
+    "image-to-image",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20426992,
+  "storage_human": "20 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Super-Resolution (x4)",
+      "dataset": "Logo/Icon Validation Set (120 images)",
+      "metric": "PSNR (overall)",
+      "value": 43.85
+    },
+    {
+      "task": "Super-Resolution (x4)",
+      "dataset": "Logo/Icon Validation Set (120 images)",
+      "metric": "PSNR (foreground, alpha > 0)",
+      "value": 42.67
+    }
+  ],
+  "sources": [
+    {
+      "title": "Banknoten - European Central Bank",
+      "url": "https://www.ecb.europa.eu/euro/banknotes/html/index.de.html",
+      "snippet": "Unser Schulungsmaterial enthält Informationen zu Euro-Münzen sowie zu Euro-Banknoten und deren Sicherheitsmerkmalen. Es ist …"
+    },
+    {
+      "title": "Eurobanknoten – Wikipedia",
+      "url": "https://de.m.wikipedia.org/wiki/Eurobanknoten",
+      "snippet": "Die Euro-Banknoten der ersten Serie wurden nach einem EU-weiten Wettbewerb von dem Österreicher Robert Kalina gestaltet. Ihre …"
+    },
+    {
+      "title": "Euro-Banknoten | Deutsche Bundesbank",
+      "url": "https://www.bundesbank.de/de/aufgaben/bargeld/euro-banknoten/euro-banknoten-599490",
+      "snippet": "Die neuen 100- und 200-Euro-Banknoten sind nach den 5-, 10-, 20- und 50-Euro-Banknoten die fünfte und sechste Stückelung der …"
+    },
+    {
+      "title": "Aktuelle Banknoten - European Central Bank",
+      "url": "https://www.ecb.europa.eu/euro/banknotes/current/html/index.de.html",
+      "snippet": "Erfahren Sie mehr über die unterschiedlichen Gestaltungselemente und finden Sie heraus, wo unsere Banknoten gedruckt werden. …"
+    },
+    {
+      "title": "Neues Design für Euro-Banknoten: EZB startet öffentliche Online …",
+      "url": "https://www.bundesbank.de/de/aufgaben/themen/neues-design-fuer-euro-banknoten-ezb-startet-oeffentliche-online-umfrage-856304",
+      "snippet": "Jul 23, 2026 · Die Europäische Zentralbank (EZB) hat heute die in die Endauswahl gekommenen Gestaltungsvorschläge für die …"
+    }
+  ]
+}

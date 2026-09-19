@@ -1,0 +1,112 @@
+{
+  "schema": 1,
+  "id": "KrynexLabs/KrynexAI-vNS-Overfitting-Mobile-TFLite",
+  "slug": "krynexlabs-krynexai-vns-overfitting-mobile-tflite",
+  "author": "KrynexLabs",
+  "url": "https://huggingface.co/KrynexLabs/KrynexAI-vNS-Overfitting-Mobile-TFLite",
+  "created_at": "2026-09-18T21:45:04.000Z",
+  "updated_at": "2026-09-21T10:25:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "numpy",
+  "languages": [
+    "en",
+    "ru"
+  ],
+  "tags": [
+    "numpy",
+    "overfitting",
+    "gpt",
+    "from-scratch",
+    "useless",
+    "meme",
+    "state-of-the-art-overfitting",
+    "1M-parameters",
+    "tensorflow",
+    "tflite",
+    "litert",
+    "tabular",
+    "regression",
+    "mini",
+    "mobile",
+    "optimized",
+    "speed",
+    "flash",
+    "npz",
+    "eco",
+    "slm",
+    "lm",
+    "mini-llm",
+    "llm",
+    "generation",
+    "text",
+    "text-generation",
+    "en",
+    "ru",
+    "dataset:custom",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6383383,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "hello how are you. (x20)",
+      "metric": "Train Loss",
+      "value": 0.03
+    },
+    {
+      "task": null,
+      "dataset": "hello how are you. (x20)",
+      "metric": "Memorization",
+      "value": 100
+    },
+    {
+      "task": null,
+      "dataset": "hello how are you. (x20)",
+      "metric": "Generalization",
+      "value": 0
+    }
+  ],
+  "sources": [
+    {
+      "title": "Pornhubで45万の請求が来てしまって年齢確認のところを押しただけ …",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11304353466",
+      "snippet": "Pornhubで45万の請求が来てしまって 年齢確認 のところを押しただけで出てしまったんですが ワンクリック詐欺 でしょうか...？？ …"
+    },
+    {
+      "title": "竹前美結さんは美人ですか？ - Yahoo!知恵袋",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11328235186",
+      "snippet": "May 20, 2026 · すごいのは本人じゃなくて日本の加工技術です。 美人といえば、鳥取・米子のレンガ投げ女の方が美人です。"
+    },
+    {
+      "title": "Supprimer mon compte pornhub - Forum Réseaux sociaux",
+      "url": "https://forums.commentcamarche.net/forum/affich-37008466-supprimer-mon-compte-pornhub",
+      "snippet": "Dec 23, 2020 · Supprimer mon compte pornhub Tchoinbig - Modifié le 23 déc. 2020 à 06:11 bazfile - 23 déc. 2020 à 10:28"
+    },
+    {
+      "title": "Je n'arrive pas à supprimer mon compte pornhub",
+      "url": "https://forums.commentcamarche.net/forum/affich-38181170-je-n-arrive-pas-a-supprimer-mon-compte-pornhub",
+      "snippet": "Je n'arrive pas à supprimer mon compte pornhub Résolu WallabyAquatique18 - Modifié le 9 avr. 2025 à 00:39 bazfile - 9 avr. 2025 à …"
+    },
+    {
+      "title": "みんな大好きなサイト「pornhub」の読み方を教えてください。",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q14228337339",
+      "snippet": "Jul 13, 2020 · みんな大好きなサイト「pornhub」の読み方を教えてください。"
+    }
+  ]
+}

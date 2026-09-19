@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "crazyape777/moe-ft-006a",
+  "slug": "crazyape777-moe-ft-006a",
+  "author": "crazyape777",
+  "url": "https://huggingface.co/crazyape777/moe-ft-006a",
+  "created_at": "2026-09-19T00:31:56.000Z",
+  "updated_at": "2026-09-19T00:32:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 27,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70234483981,
+  "storage_human": "70.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Manage your home area or current location for YouTube TV",
+      "url": "https://support.google.com/youtubetv/answer/7129768?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "YouTube TV outside of your home area While outside of your home area, you can watch programming local to where you are, but …"
+    },
+    {
+      "title": "Get a student discount for YouTube Premium or YouTube Music …",
+      "url": "https://support.google.com/youtube/answer/9158808?hl=en&co=GENIE.Platform%3DAndroid",
+      "snippet": "Go to the Student Plan landing page for YouTube Premium or YouTube Music Premium. Select Get Premium. Type in your school on …"
+    },
+    {
+      "title": "İndir | OBS",
+      "url": "https://obsproject.com/tr/downLOAD",
+      "snippet": "Download OBS Studio for Windows, Mac or Linux"
+    },
+    {
+      "title": "Tuna | OBS Forums",
+      "url": "https://obsproject.com/forum/resources/tuna.843/",
+      "snippet": "Aug 11, 2019 · Tuna Lets you display information about the currently playing song in obs without running a separate program. …"
+    },
+    {
+      "title": "Create a live stream via webcam - YouTube Help - Google Help",
+      "url": "https://support.google.com/youtube/answer/9228389",
+      "snippet": "Webcam is an easy way to go live using your computer, without the need for live streaming encoding software. How to Create a …"
+    }
+  ]
+}

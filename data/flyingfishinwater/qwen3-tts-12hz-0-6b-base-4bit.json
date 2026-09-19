@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "flyingfishinwater/Qwen3-TTS-12Hz-0.6B-Base-4bit",
+  "slug": "flyingfishinwater-qwen3-tts-12hz-0-6b-base-4bit",
+  "author": "flyingfishinwater",
+  "url": "https://huggingface.co/flyingfishinwater/Qwen3-TTS-12Hz-0.6B-Base-4bit",
+  "created_at": "2026-09-18T21:23:23.000Z",
+  "updated_at": "2026-09-18T21:23:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "mlx-audio",
+  "languages": [],
+  "tags": [
+    "mlx-audio",
+    "safetensors",
+    "qwen3_tts",
+    "mlx",
+    "text-to-speech",
+    "speech",
+    "speech generation",
+    "voice cloning",
+    "tts",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 914643008,
+  "parameters_human": "914.6M",
+  "storage_bytes": 1706783792,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-19T02:24:25.460Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "La 1ere librairie belge en ligne | Librairie Molière (E-Shop livres)",
+      "url": "https://www.moliere.com/",
+      "snippet": "Mon Molière, vos préférences, nos recommandations Entre trop de choix, des avis contradictoires et un manque de temps, choisir un …"
+    },
+    {
+      "title": "Chèques cadeaux - Livres | Librairie Molière (E-Shop livres)",
+      "url": "https://www.moliere.com/fr/livres/chquescadeaux.html",
+      "snippet": "Librairie Molière, la librairie belge. Achetez vos livres en ligne. Plus de 100 000 livres en stock. Livraison rapide. Des conseils de …"
+    },
+    {
+      "title": "Réservation ou Livraison | Librairie Molière (E-Shop livres)",
+      "url": "https://www.moliere.com/fr/transporters",
+      "snippet": "Librairie Molière, la librairie belge. Achetez vos livres en ligne. Plus de 100 000 livres en stock. Livraison rapide. Des conseils de …"
+    },
+    {
+      "title": "Littérature | Librairie Molière (E-Shop livres)",
+      "url": "https://www.moliere.com/fr/rayon-litterature",
+      "snippet": "Librairie Molière, la librairie belge. Achetez vos livres en ligne. Plus de 100 000 livres en stock. Livraison rapide. Des conseils de …"
+    },
+    {
+      "title": "Contact | Librairie Molière (E-Shop livres)",
+      "url": "https://www.moliere.com/fr/contactez-nous",
+      "snippet": "Librairie Molière, la librairie belge. Achetez vos livres en ligne. Plus de 100 000 livres en stock. Livraison rapide. Des conseils de …"
+    }
+  ]
+}

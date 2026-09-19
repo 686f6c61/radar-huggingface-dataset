@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "flyingfishinwater/GLM-ASR-Nano-2512-4bit",
+  "slug": "flyingfishinwater-glm-asr-nano-2512-4bit",
+  "author": "flyingfishinwater",
+  "url": "https://huggingface.co/flyingfishinwater/GLM-ASR-Nano-2512-4bit",
+  "created_at": "2026-09-18T21:23:14.000Z",
+  "updated_at": "2026-09-18T21:23:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "mlx-audio",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "mlx-audio",
+    "safetensors",
+    "glmasr",
+    "mlx",
+    "speech-to-text",
+    "speech-to-speech",
+    "speech",
+    "speech generation",
+    "stt",
+    "automatic-speech-recognition",
+    "custom_code",
+    "en",
+    "zh",
+    "license:mit",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2262390784,
+  "parameters_human": "2.26B",
+  "storage_bytes": 1281444421,
+  "storage_human": "1.3 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-19T02:24:25.966Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Начало - bTV Media Group - bTV",
+      "url": "https://www.btv.bg/",
+      "snippet": "Начало - bTV Media Group - bTV България излиза за нов волейболен подвиг – в събота от 19:00 ч. пряко по bTV Action и …"
+    },
+    {
+      "title": "Предавания и сериали - bTV Media Group - bTV",
+      "url": "https://www.btv.bg/all-products/",
+      "snippet": "Открийте любимите си предавания и сериали от bTV Media Group на едно място."
+    },
+    {
+      "title": "Видео - Фермата - Фермата 2023 - bTV",
+      "url": "https://fermata.btv.bg/videos",
+      "snippet": "Сега излизаме от студиото, защото Игор Дамянов ще ни срещне с победителя от \"Фермата\" 9 Костадин Велков. Той успя да …"
+    },
+    {
+      "title": "Програма - bTV Media Group - bTV",
+      "url": "https://www.btv.bg/programata/",
+      "snippet": "Програма - bTV Media Group - bTV 21:30 21:45 22:00 22:15 22:30 22:45 23:00 23:15 23:30 23:45 22:06 в момента"
+    },
+    {
+      "title": "bTV Story - bTV Media Group - bTV",
+      "url": "https://www.btv.bg/story/",
+      "snippet": "bTV Story представя най-новите и вълнуващи истории от bTV Media Group."
+    }
+  ]
+}

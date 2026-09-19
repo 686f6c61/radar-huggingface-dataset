@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "NagaYu/promptgate-rules",
+  "slug": "nagayu-promptgate-rules",
+  "author": "NagaYu",
+  "url": "https://huggingface.co/NagaYu/promptgate-rules",
+  "created_at": "2026-09-19T01:31:24.000Z",
+  "updated_at": "2026-09-19T01:38:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "tags": [
+    "prompt-injection",
+    "llm-security",
+    "guardrails",
+    "pii-detection",
+    "secret-detection",
+    "rule-based",
+    "cpu",
+    "en",
+    "ja",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Live Flight Tracker - FlightAware",
+      "url": "https://www.flightaware.com/live/?v=1.0.24",
+      "snippet": "Best Flight Tracker: Live Tracking Maps, Flight Status, and Airport Delays for airline flights, private/GA flights, and airports."
+    },
+    {
+      "title": "LAX-SFO Flight Status",
+      "url": "https://www.flightstats.com/v2/flight-tracker/route/LAX/SFO/LA",
+      "snippet": "(LAX to SFO) Track the current status of flights departing from (LAX) Los Angeles International Airport and arriving in (SFO) San …"
+    },
+    {
+      "title": "Flight Status - San Francisco International Airport",
+      "url": "https://www.flysfo.com/passengers/flight-info/flight-status",
+      "snippet": "Need terminal maps or airline contact info? Return to the SFO Flight Guide."
+    },
+    {
+      "title": "Flights from Los Angeles to San Francisco status - LAX to SFO today",
+      "url": "https://flight-status.com/route/lax-to-sfo/",
+      "snippet": "Los Angeles to San Francisco flight status today List of all flights from Los Angeles United States (LAX) to San Francisco United …"
+    },
+    {
+      "title": "SFO-LAX Flight Status",
+      "url": "https://www.flightstats.com/v2/flight-tracker/route/SFO/LAX",
+      "snippet": "(SFO to LAX) Track the current status of flights departing from (SFO) San Francisco International Airport and arriving in (LAX) Los …"
+    }
+  ]
+}

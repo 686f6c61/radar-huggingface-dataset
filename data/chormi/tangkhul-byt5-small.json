@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "chormi/tangkhul-byt5-small",
+  "slug": "chormi-tangkhul-byt5-small",
+  "author": "chormi",
+  "url": "https://huggingface.co/chormi/tangkhul-byt5-small",
+  "created_at": "2026-09-18T21:38:11.000Z",
+  "updated_at": "2026-09-19T08:11:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "t5",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 89,
+  "trending_score": 0,
+  "parameters": 299637760,
+  "parameters_human": "299.6M",
+  "storage_bytes": 17978572440,
+  "storage_human": "18.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anexo:Imperios por superficie - Wikipedia, la enciclopedia libre",
+      "url": "https://es.wikipedia.org/wiki/Anexo:Imperios_por_superficie",
+      "snippet": "En este artículo se proporciona una lista de los imperios conocidos en la historiografía universal."
+    },
+    {
+      "title": "Grandes imperios de la historia - El Orden Mundial - EOM",
+      "url": "https://elordenmundial.com/grandes-imperios-de-la-historia/",
+      "snippet": "Mar 17, 2014 · A continuación repasamos brevemente algunos de los grandes imperios de la Historia, que fueron los más …"
+    },
+    {
+      "title": "Los 10 imperios más grandes de la historia: desde el Imperio …",
+      "url": "https://proyectoviajero.com/imperios-mas-grandes-de-la-historia/",
+      "snippet": "Nov 5, 2024 · Este artículo ofrece una visión general de algunos de los imperios más grandes de la historia de la humanidad, desde …"
+    },
+    {
+      "title": "¿Cuáles fueron los más grandes Imperios de la historia y del mundo?",
+      "url": "https://tophistorias.com/los-5-imperios-mas-grandes-la-historia/",
+      "snippet": "Descubre cuáles son los imperios más grandes e importantes de la historia y de todos los tiempos. Un repaso por su relevancia …"
+    },
+    {
+      "title": "Grandes Imperios de la Historia - YouTube",
+      "url": "https://www.youtube.com/watch?v=CyGpiiYG9vA",
+      "snippet": "May 6, 2026 · ¿Qué oscuro y fascinante instinto impulsa a la humanidad a trascender sus propias fronteras para conquistar, asimilar …"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Dolphin42/trapfield-qwen3vl8b-sft-warm3-parity-step188",
+  "slug": "dolphin42-trapfield-qwen3vl8b-sft-warm3-parity-step188",
+  "author": "Dolphin42",
+  "url": "https://huggingface.co/Dolphin42/trapfield-qwen3vl8b-sft-warm3-parity-step188",
+  "created_at": "2026-09-18T22:48:23.000Z",
+  "updated_at": "2026-09-18T22:52:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_vl",
+    "sft",
+    "tool-use",
+    "trapfield",
+    "ms-swift",
+    "base_model:Qwen/Qwen3-VL-8B-Instruct",
+    "base_model:finetune:Qwen/Qwen3-VL-8B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8767123696,
+  "parameters_human": "8.77B",
+  "storage_bytes": 17545802546,
+  "storage_human": "17.5 GB",
+  "base_model": "Qwen/Qwen3-VL-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-19T02:23:40.938Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Özel Tasarım Plastik Etiket - BMW Plastik Etiket ve Sticker",
+      "url": "https://www.logoca.net/",
+      "snippet": "Logoca © 2025 E-Ticaret yazılımı.Tüm hakları saklıdır. · Çerez Politikası · Çerez Tercihleri"
+    },
+    {
+      "title": "Yeni Ürünler - logoca.net",
+      "url": "https://www.logoca.net/yeni-urunler",
+      "snippet": "Mağazamızdaki en yeni ürünleri keşfedin."
+    },
+    {
+      "title": "Logoca - YouTube",
+      "url": "https://www.youtube.com/@Logoca-net",
+      "snippet": "Logoca @Logoca-net • 6 subscribers • 65 videos More about this channel ...more More about this channel ...more ...more"
+    },
+    {
+      "title": "Logoca | Kişiye Özel Plastik Etiket (@logo.ca ... - Instagram",
+      "url": "https://www.instagram.com/logo.ca/",
+      "snippet": "19K Followers, 96 Following, 285 Posts - Logoca | Kişiye Özel Plastik Etiket (@logo.ca) on Instagram: \" Kişiselleştirilebilir Plastik …"
+    },
+    {
+      "title": "Logo CA Şikayet ve Yorumları - Şikayetvar",
+      "url": "https://www.sikayetvar.com/logo-ca",
+      "snippet": "Logo CA şikayet, iletişim, Logo CA yorumları ve müşteri hizmetleri şikayetleri için tıklayın! Logo CA için yazılan tüm şikayet ve …"
+    }
+  ]
+}

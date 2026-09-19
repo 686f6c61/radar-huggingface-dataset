@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "philgear/pocketgull-skeptic-cds-4b",
+  "slug": "philgear-pocketgull-skeptic-cds-4b",
+  "author": "philgear",
+  "url": "https://huggingface.co/philgear/pocketgull-skeptic-cds-4b",
+  "created_at": "2026-09-18T20:47:07.000Z",
+  "updated_at": "2026-09-18T20:47:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "gemma-3",
+    "lora",
+    "clinical-nlp",
+    "healthcare",
+    "hipaa-safe-harbor",
+    "open-science",
+    "pocketgull",
+    "nih-medquad",
+    "who-mhgap",
+    "text-generation",
+    "en",
+    "base_model:google/gemma-3-4b-it",
+    "base_model:adapter:google/gemma-3-4b-it",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "google/gemma-3-4b-it",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aposentado pode fazer concurso público sem perder benefícios?",
+      "url": "https://www.topconcursos.com.br/aposentado-pode-fazer-concurso-publico/",
+      "snippet": "Jan 9, 2026 · Fora desses casos, um servidor aposentado não pode acumular proventos com a remuneração de outro cargo público. …"
+    },
+    {
+      "title": "Concurso: Aposentado pode ser servidor público?",
+      "url": "https://www.novaconcursos.com.br/portal/artigos/concurso-quem-e-aposentado-pode-ser-servidor-publico-qual-a-idade-limite/",
+      "snippet": "Sep 30, 2025 · Quem se aposentou pela iniciativa privada pode participar de concursos públicos sem nenhuma restrição. Isso …"
+    },
+    {
+      "title": "Aposentado assumir concurso público: quando é possível",
+      "url": "https://jsadvocacia.net.br/aposentado-assumir-concurso-publico-regras/",
+      "snippet": "Aug 26, 2026 · Para o aposentado do INSS: em regra, pode assumir cargo público por concurso e manter a aposentadoria. Para o …"
+    },
+    {
+      "title": "Aposentado pode participar de concurso público? - UOL Economia",
+      "url": "https://economia.uol.com.br/empregos-e-carreiras/noticias/redacao/2025/02/21/aposentado-concurso-publico.htm",
+      "snippet": "Feb 21, 2025 · Um aposentado pode concorrer a uma vaga em concurso público, desde que o benefício tenha sido dado pelo INSS …"
+    },
+    {
+      "title": "Proibido ou permitido? Aposentado pode fazer concurso e tomar …",
+      "url": "https://concursospublicos2025.com.br/aposentado-pode-fazer-concurso/",
+      "snippet": "O regime mais comum de aposentadoria é pelo INSS, regime privado. Assim, aposentado pode fazer concurso desde que não …"
+    }
+  ]
+}

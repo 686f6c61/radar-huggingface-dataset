@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "id": "StanfordSCALE/assertion_sentence_has_informal_language",
+  "slug": "stanfordscale-assertion_sentence_has_informal_language",
+  "author": "StanfordSCALE",
+  "url": "https://huggingface.co/StanfordSCALE/assertion_sentence_has_informal_language",
+  "created_at": "2026-09-18T20:50:41.000Z",
+  "updated_at": "2026-09-18T20:50:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "setfit",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "setfit",
+    "safetensors",
+    "mpnet",
+    "text-classification",
+    "education",
+    "classroom-discourse",
+    "edubehaviors",
+    "assertion",
+    "en",
+    "dataset:StanfordSCALE/assertions_llm_annotated_talkmoves",
+    "base_model:sentence-transformers/paraphrase-mpnet-base-v2",
+    "base_model:finetune:sentence-transformers/paraphrase-mpnet-base-v2",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109486464,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437974679,
+  "storage_human": "438 MB",
+  "base_model": "sentence-transformers/paraphrase-mpnet-base-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "F1 (positive class, test)",
+      "value": 0.4945
+    },
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "Precision (positive class, test)",
+      "value": 0.5675
+    },
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "Recall (positive class, test)",
+      "value": 0.4381
+    },
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "ROC-AUC (test)",
+      "value": 0.7646
+    }
+  ],
+  "sources": [
+    {
+      "title": "Die schönsten Märchenfilme in der ARD Mediathek",
+      "url": "https://www.ardmediathek.de/maercheninderard",
+      "snippet": "Von A wie Aschenputtel über D wie Dornröschen bis Z wie Zitterinchen: Jetzt die schönsten und beliebtesten Märchen in der ARD …"
+    },
+    {
+      "title": "Serien, Filme, Shows & Comedy in ONE | ARD Mediathek",
+      "url": "https://www.ardmediathek.de/one",
+      "snippet": "Krimis, Filme in Originalversion und Serien-Highlights. Alle Videos von ONE in der ARD Mediathek streamen."
+    },
+    {
+      "title": "Märchen-Klassiker - alle verfügbaren Videos - hier anschauen",
+      "url": "https://www.ardmediathek.de/sendung/maerchen/Y3JpZDovL21kci5kZS9zZW5kZXJlaWhlbi9iYWJmZGFlNi1kNmQ5LTQ5MjAtYWQ0OS0xYzBjMjM2NzhlYTg?sfns=mo",
+      "snippet": "Aug 30, 2026 · Fantastische Abenteuer, magische Begebenheiten, romantische Geschichten - märchenhafte Unterhaltung für die …"
+    },
+    {
+      "title": "Märchen - ZDFmediathek",
+      "url": "https://www.zdf.de/maerchen",
+      "snippet": "Streame fantasievolle und verzaubernde Märchen als Film, Serie oder Bühnenprogramm - sortiert nach deinen Interessen."
+    },
+    {
+      "title": "Märchen in der ARD - alle verfügbaren Videos - jetzt streamen!",
+      "url": "https://www.ardmediathek.de/sendung/maerchenfilm-im-ersten/Y3JpZDovL3JiYi1vbmxpbmUuZGUvbWFlcmNoZW5maWxt?documentId=52126020",
+      "snippet": "Die ARD hat Märchenklassiker neu verfilmt. Gedreht wurde auf romantischen Schlössern und in verwunschenen Wäldern in ganz …"
+    }
+  ]
+}

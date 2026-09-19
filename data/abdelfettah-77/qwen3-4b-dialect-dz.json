@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Abdelfettah-77/Qwen3-4B-dialect-dz",
+  "slug": "abdelfettah-77-qwen3-4b-dialect-dz",
+  "author": "Abdelfettah-77",
+  "url": "https://huggingface.co/Abdelfettah-77/Qwen3-4B-dialect-dz",
+  "created_at": "2026-09-19T01:15:21.000Z",
+  "updated_at": "2026-09-19T01:15:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "trl",
+    "sft",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "4-bit",
+    "bitsandbytes",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4155694592,
+  "parameters_human": "4.16B",
+  "storage_bytes": 2931125805,
+  "storage_human": "2.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best Hindi Movies of 2026 | Top Rated Hindi Films of 2026 | Top 30 …",
+      "url": "https://timesofindia.indiatimes.com/entertainment/top-rated-movies/hindi/best-movies/2026/2742919",
+      "snippet": "Sep 11, 2026 · Check out top 30 best Language movies of 2026 that should be in your To-Watch list along with movie review, critic …"
+    },
+    {
+      "title": "List of Hindi films of 2026 - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/List_of_Hindi_films_of_2026",
+      "snippet": "This is a list of Hindi language films produced in Bollywood in India that are scheduled to be released in the year 2026."
+    },
+    {
+      "title": "BEST BOLLYWOOD MOVIES OF 2026 - IMDb",
+      "url": "https://www.imdb.com/list/ls593855878/",
+      "snippet": "An epic devotional journey following Lord Krishna from Dwarka to Kurukshetra after parting with Radha, revealing his profound …"
+    },
+    {
+      "title": "Hindi Movies (2026) — Full List",
+      "url": "https://cinemaip.ai/movies/hindi/2026",
+      "snippet": "Complete list of Hindi movies released in 2026. Ratings, box office, OTT availability — on CinemaIP."
+    },
+    {
+      "title": "Best Hindi movies of 2026 - moodmovielist.com",
+      "url": "https://www.moodmovielist.com/movies?type=Hindi&year=2026&page=1",
+      "snippet": "Best Hindi movies of 2026 : Dhurandhar: The Revenge, Ikkis, Border 2, Subedaar, Raja Shivaji, Dacoit: A Love Story, and more with …"
+    }
+  ]
+}

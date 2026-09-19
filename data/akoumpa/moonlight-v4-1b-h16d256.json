@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "akoumpa/Moonlight-V4-1B-h16d256",
+  "slug": "akoumpa-moonlight-v4-1b-h16d256",
+  "author": "akoumpa",
+  "url": "https://huggingface.co/akoumpa/Moonlight-V4-1B-h16d256",
+  "created_at": "2026-09-18T23:22:15.000Z",
+  "updated_at": "2026-09-18T23:24:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "deepseek_v4",
+    "text-generation",
+    "mixture-of-experts",
+    "moe",
+    "hybrid-attention",
+    "compressed-sparse-attention",
+    "hyper-connections",
+    "mhc",
+    "architecture-config",
+    "untrained",
+    "from-scratch",
+    "nemo-automodel",
+    "moonlight",
+    "arxiv:2502.16982",
+    "arxiv:2606.19348",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WhatsApp Web",
+      "url": "https://web.whatsapp.com/",
+      "snippet": "Log in to WhatsApp Web for simple, reliable and private messaging on your desktop. Send and receive messages and files with …"
+    },
+    {
+      "title": "Download WhatsApp",
+      "url": "https://www.whatsapp.com/download",
+      "snippet": "Download WhatsApp on your mobile device, tablet or desktop and stay connected with reliable private messaging and calling. …"
+    },
+    {
+      "title": "HOUSAB - WhatsApp",
+      "url": "https://wa.me/",
+      "snippet": "Hosted by WhatsApp 2026 © WhatsApp LLC Privacy & Terms"
+    },
+    {
+      "title": "Download WhatsApp for Desktop",
+      "url": "https://www.whatsapp.com/download/desktop?lang=en",
+      "snippet": "With end-to-end encryption on WhatsApp, your personal messages, photos, calls and more stay between you and the people you …"
+    },
+    {
+      "title": "WhatsApp Messenger - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.whatsapp&hl=en",
+      "snippet": "WhatsApp from Meta is a FREE messaging and video calling app. It’s used by over 2B people in more than 180 countries. It’s simple, …"
+    }
+  ]
+}

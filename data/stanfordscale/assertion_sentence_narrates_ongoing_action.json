@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "id": "StanfordSCALE/assertion_sentence_narrates_ongoing_action",
+  "slug": "stanfordscale-assertion_sentence_narrates_ongoing_action",
+  "author": "StanfordSCALE",
+  "url": "https://huggingface.co/StanfordSCALE/assertion_sentence_narrates_ongoing_action",
+  "created_at": "2026-09-18T20:47:14.000Z",
+  "updated_at": "2026-09-18T20:47:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "setfit",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "setfit",
+    "safetensors",
+    "mpnet",
+    "text-classification",
+    "education",
+    "classroom-discourse",
+    "edubehaviors",
+    "assertion",
+    "en",
+    "dataset:StanfordSCALE/assertions_llm_annotated_talkmoves",
+    "base_model:sentence-transformers/paraphrase-mpnet-base-v2",
+    "base_model:finetune:sentence-transformers/paraphrase-mpnet-base-v2",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109486464,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437974679,
+  "storage_human": "438 MB",
+  "base_model": "sentence-transformers/paraphrase-mpnet-base-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "F1 (positive class, test)",
+      "value": 0.4952
+    },
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "Precision (positive class, test)",
+      "value": 0.7647
+    },
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "Recall (positive class, test)",
+      "value": 0.3662
+    },
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "ROC-AUC (test)",
+      "value": 0.8908
+    }
+  ],
+  "sources": [
+    {
+      "title": "Coloriage Automne - 67 Dessins à imprimer (PDF gratuit)",
+      "url": "https://magicoloriage.com/dessins-gratuits-a-imprimer/nature-et-motifs/automne/",
+      "snippet": "Plongez dans la beauté de l’automne avec notre collection de coloriages d’automne à imprimer ! Feuilles tourbillonnantes, arbres …"
+    },
+    {
+      "title": "Coloriage de l’automne à imprimer : 28 dessins gratuits",
+      "url": "https://www.imprimercoloriage.com/saison/automne/",
+      "snippet": "28 coloriages d’automne à imprimer gratuitement : feuilles mortes, champignons, hérissons et forêts rousses à mettre en couleur."
+    },
+    {
+      "title": "110+ Coloriages d'animaux d'automne pour enfants et adultes …",
+      "url": "https://coloringhub.com/fr/coloriages-d-animaux-d-automne",
+      "snippet": "Découvrez 110+ coloriages d'animaux d'automne pour enfants et adultes ! Renards, hérissons, chouettes et bien d'autres à imprimer …"
+    },
+    {
+      "title": "Imprimez 98 Coloriages d'Automne & Dessins Gratuits",
+      "url": "https://www.dessins-a-colorier.fr/coloriages-d-automne/",
+      "snippet": "Cette collection de coloriages d’automne gratuits à imprimer réunit des scènes variées qui capturent l’ambiance de saison sans …"
+    },
+    {
+      "title": "Coloriage automne : tous nos dessins à imprimer gratuitement | Tête à ...",
+      "url": "https://teteamodeler.ouest-france.fr/coloriages/coloriage-automne.asp",
+      "snippet": "Vous cherchez un coloriage d'automne ?? Retrouvez dans notre sélection des dessins à imprimer gratuitement sur ce thème avec …"
+    }
+  ]
+}

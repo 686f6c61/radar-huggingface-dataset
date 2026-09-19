@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ghunaghost/codet5p-docstring-generator",
+  "slug": "ghunaghost-codet5p-docstring-generator",
+  "author": "ghunaghost",
+  "url": "https://huggingface.co/ghunaghost/codet5p-docstring-generator",
+  "created_at": "2026-09-18T22:24:43.000Z",
+  "updated_at": "2026-09-18T22:30:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 222882048,
+  "parameters_human": "222.9M",
+  "storage_bytes": 891558696,
+  "storage_human": "892 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Login | Noor",
+      "url": "https://lms.moe.gov.om/student/users/login",
+      "snippet": "أنسيت بيانات الدخول؟"
+    },
+    {
+      "title": "منصة نور التعليمية | تسجيل الدخول",
+      "url": "https://noor-edu.net/home/login",
+      "snippet": "نسيت كلمة المرور؟ ليس لديك حساب؟ إنشاء حساب."
+    },
+    {
+      "title": "نظام الادارة التعليمية | وزارة التعليم",
+      "url": "https://noor.moe.gov.sa/",
+      "snippet": "منصة نور هي نظام متكامل يربط جميع المؤسسات التعليمية التابعة لوزارة التعليم من خلال قاعدة بيانات شاملة، يتم من خلالها متابعة بيانات الطلاب في مراحل التعليم العام، مع التركيز على الجوانب ..."
+    },
+    {
+      "title": "البوابة التعليمية -",
+      "url": "https://home.moe.gov.om/pages/208/show/1021",
+      "snippet": "منصة تعليمية إلكترونية أنشأتها وزارة التربية والتعليم وقد استوحي اسمها من الهوية الوطنية العمانية ، المنصة موجهة إلى الصفوف من الأول إلى الرابع يتلقى الطالب فيها الدروس والأنشطة والاختبارات في …"
+    },
+    {
+      "title": "منصة نور التعليمية - التطبيقات على Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.app.classera.noorlms&hl=ar",
+      "snippet": "منصة نور التعليمية يجلب إلهام ومتعة لكل لحظة تقضيها في تعلم شيء جديد! منصة نور التعليمية هو زميلك الذكي الذي يفهم عليك ويعطيك ما تحتاج إليه بالتحديد عندما تحتاج إليه، ويبقيك دائما قبل..."
+    }
+  ]
+}

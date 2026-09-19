@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "taurusduan/Ternary-Bonsai-2-27B-gguf",
+  "slug": "taurusduan-ternary-bonsai-2-27b-gguf",
+  "author": "taurusduan",
+  "url": "https://huggingface.co/taurusduan/Ternary-Bonsai-2-27B-gguf",
+  "created_at": "2026-09-19T02:21:45.000Z",
+  "updated_at": "2026-09-19T02:21:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "ternary",
+    "2-bit",
+    "llama-cpp",
+    "cuda",
+    "metal",
+    "on-device",
+    "hybrid-attention",
+    "prismml",
+    "bonsai",
+    "text-generation",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 72,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 68521619616,
+  "storage_human": "68.5 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "5. Sınıf Türkçe Cümlenin Öğeleri Konu Anlatımı ve Örnekler",
+      "url": "https://okursun.com.tr/5-sinif-turkce-cumlenin-ogeleri-konu-anlatimi-ve-ornekler/",
+      "snippet": "Apr 9, 2025 · Cümlenin öğelerini bulmak, Türkçe dersinin temel konularından biridir ve 5. sınıf öğrencileri için oldukça önemlidir. …"
+    },
+    {
+      "title": "5. Sınıf Türkçe Cümlenin Öğeleri - testimiz.com",
+      "url": "https://testimiz.com/5-sinif-turkce-cumlenin-ogeleri-testi/",
+      "snippet": "Feb 1, 2025 · Cümlenin temel öğeleri arasında özne, yüklem, nesne ve dolaylı tümleç yer alır. Her bir öğenin cümle içindeki yeri ve …"
+    },
+    {
+      "title": "Cümlenin Ögeleri Konu Anlatımı | DilBilgisi.net",
+      "url": "https://www.dilbilgisi.net/cumlenin-ogeleri-konu-anlatimi/",
+      "snippet": "Cümle içindeki sözcüklerin tek başlarına ya da diğer sözcüklerle grup oluşturarak yaptıkları göreve de öge denir. Cümlenin oluşumu …"
+    },
+    {
+      "title": "Cümlenin Öğeleri 5 Sınıf - Türk Dili Ve Edebiyatı",
+      "url": "https://turkdiliveedebiyati.com/cumlenin-ogeleri-5-sinif/",
+      "snippet": "Sep 29, 2024 · sınıf seviyesinde öğrencilerin, cümlenin öğelerini anlaması, dil bilgisi kurallarını kavraması açısından oldukça …"
+    },
+    {
+      "title": "5. Sınıf Türkçe - turkcedersi.net",
+      "url": "https://www.turkcedersi.net/5-sinif-turkce/",
+      "snippet": "5. Sınıf Türkçe konularına ait “ Konu Anlatım Sunusu, Konu Anlatımı, İnteraktif Etkinlikler ve İnteraktif Testler ” gibi içeriklere …"
+    }
+  ]
+}

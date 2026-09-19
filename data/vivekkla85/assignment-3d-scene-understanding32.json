@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Vivekkla85/assignment-3d-scene-understanding32",
+  "slug": "vivekkla85-assignment-3d-scene-understanding32",
+  "author": "Vivekkla85",
+  "url": "https://huggingface.co/Vivekkla85/assignment-3d-scene-understanding32",
+  "created_at": "2026-09-19T01:20:28.000Z",
+  "updated_at": "2026-09-19T01:20:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "3d-scene-understanding",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Is BlueStacks safe? : r/BlueStacks - Reddit",
+      "url": "https://www.reddit.com/r/BlueStacks/comments/97iszr/is_bluestacks_safe/",
+      "snippet": "Aug 15, 2018 · In conclusion, Bluestacks is generally safe to use, especially when downloaded from the official source and used …"
+    },
+    {
+      "title": "How can I download Bluestacks 5? I keep clicking the ONLY ... - Reddit",
+      "url": "https://www.reddit.com/r/BlueStacks/comments/rnvkhl/how_can_i_download_bluestacks_5_i_keep_clicking/",
+      "snippet": "Dec 24, 2021 · How can I download Bluestacks 5? I keep clicking the ONLY download link and following all of the tutorials only to find …"
+    },
+    {
+      "title": "I don’t have a bluestacks.confg in my folder bluestacks_not ... - Reddit",
+      "url": "https://www.reddit.com/r/BlueStacks/comments/ofqm9e/i_dont_have_a_bluestacksconfg_in_my_folder/",
+      "snippet": "Jul 7, 2021 · I don’t have a bluestacks.confg in my folder bluestacks_not where is it located on bluestacks 5?"
+    },
+    {
+      "title": "Copy / Paste Text : r/BlueStacks - Reddit",
+      "url": "https://www.reddit.com/r/BlueStacks/comments/fd5ptk/copy_paste_text/",
+      "snippet": "Mar 4, 2020 · If I copy \"Bluestacks 5\" text then I simply copy the text then Long press on Bluestacks 4 Instance and paste it but when …"
+    },
+    {
+      "title": "Changing date and time manually : r/BlueStacks - Reddit",
+      "url": "https://www.reddit.com/r/BlueStacks/comments/a5pe7z/changing_date_and_time_manually/",
+      "snippet": "Dec 13, 2018 · Copy link Copy link Go to BlueStacks r/BlueStacks r/BlueStacks Welcome to the official BlueStacks by now.gg …"
+    }
+  ]
+}

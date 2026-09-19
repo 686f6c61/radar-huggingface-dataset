@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "P1999/ppo-LunarLander-v2",
+  "slug": "p1999-ppo-lunarlander-v2",
+  "author": "P1999",
+  "url": "https://huggingface.co/P1999/ppo-LunarLander-v2",
+  "created_at": "2026-09-18T22:24:06.000Z",
+  "updated_at": "2026-09-18T22:29:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "LunarLander-v3",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 510453,
+  "storage_human": "510453 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CICHETI - Authentic Wood Fired Neapolitan Pizzas",
+      "url": "https://cicheti.com/",
+      "snippet": "Enjoy our distinctive perspective on Italian cuisine featuring regional specialities, pasta dishes that pack a punch,and authentic, wood …"
+    },
+    {
+      "title": "Dine-in Menus — CICHETI",
+      "url": "https://cicheti.com/dineinmenus",
+      "snippet": "52 Kandahar Street. eat@cicheti.com. +65 6292 5012. +9725 6255. FIND OUT MORE."
+    },
+    {
+      "title": "Cicheti: Sicilian Pasta & Hearty Seafood Stew + Unforgettable Italian ...",
+      "url": "https://sethlui.com/cicheti-italian-singapore/",
+      "snippet": "Jul 8, 2020 · Cicheti is a shophouse Italian restaurant in Kandahar Street that melds 'traditional Italian heritage with distinct …"
+    },
+    {
+      "title": "Cicheti: Authentic Italian Dining in Singapore - FoodAdvisor",
+      "url": "https://www.foodadvisor.com.sg/restaurant/cicheti/",
+      "snippet": "Cicheti Singapore is located at 52 Kandahar Street 198901, explore 43 reviews, photos, opening hours, location or phone 62925012. …"
+    },
+    {
+      "title": "Cicheti - 52 Kandahar St, Singapore 198901 - Cybo",
+      "url": "https://www.cybo.com/SG-biz/cicheti",
+      "snippet": "Cicheti is located in Singapore, and was founded in 2012. This business is working in the following industry: Pizza."
+    }
+  ]
+}

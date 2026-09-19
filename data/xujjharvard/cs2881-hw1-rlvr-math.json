@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "XujjHarvard/cs2881-hw1-rlvr-math",
+  "slug": "xujjharvard-cs2881-hw1-rlvr-math",
+  "author": "XujjHarvard",
+  "url": "https://huggingface.co/XujjHarvard/cs2881-hw1-rlvr-math",
+  "created_at": "2026-09-19T00:44:21.000Z",
+  "updated_at": "2026-09-19T00:52:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 6422892500,
+  "storage_human": "6.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Додо Пицца | Сеть пиццерий №1 в России по количеству пиццерий",
+      "url": "https://dodopizza.ru/",
+      "snippet": "Заказать горячую и ароматную пиццу с доставкой в офис или на дом онлайн. Натуральные ингредиенты, хрустящее тесто, …"
+    },
+    {
+      "title": "Пицца, рецепты на RussianFood.com: 981 рецепт пиццы",
+      "url": "https://www.russianfood.com/recipes/bytype/?fid=30",
+      "snippet": "Пицца – открытый пирог в виде лепешки, покрытой начинками, в первую очередь, расплавленным сыром. Одно из …"
+    },
+    {
+      "title": "Быстрая и удобная доставка пиццы в городе Балашиха",
+      "url": "https://dodopizza.ru/balashiha",
+      "snippet": "🍕Заказать горячую и ароматную пиццу с доставкой в офис или на дом онлайн в городе Балашиха. Натуральные ингредиенты, …"
+    },
+    {
+      "title": "20 лучших рецептов пиццы в домашних условиях",
+      "url": "https://www.gastronom.ru/text/20-luchshih-receptov-piccy-v-domashnih-usloviyah-1011011",
+      "snippet": "Jan 19, 2025 · Изначально пицца была придумана, чтобы из наиболее доступных продуктов получить максимально сытное …"
+    },
+    {
+      "title": "Заказ пиццы онлайн с доставкой в городе Москва – Папа Джонс",
+      "url": "https://papajohns.ru/moscow",
+      "snippet": "Выбери и закажи свою пиццу с доставкой в Москве! Какую пиццу ты любишь? На сайте и в приложении Папа Джонс есть …"
+    }
+  ]
+}

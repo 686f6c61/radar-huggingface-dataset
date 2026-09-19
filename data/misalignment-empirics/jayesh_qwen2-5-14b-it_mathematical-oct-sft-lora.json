@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Misalignment-Empirics/jayesh_qwen2.5-14b-it_mathematical-oct-sft-lora",
+  "slug": "misalignment-empirics-jayesh_qwen2-5-14b-it_mathematical-oct-sft-lora",
+  "author": "Misalignment-Empirics",
+  "url": "https://huggingface.co/Misalignment-Empirics/jayesh_qwen2.5-14b-it_mathematical-oct-sft-lora",
+  "created_at": "2026-09-18T23:12:25.000Z",
+  "updated_at": "2026-09-18T23:12:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "model-organism",
+    "character-training",
+    "persona:mathematical",
+    "text-generation",
+    "conversational",
+    "arxiv:2511.01689",
+    "base_model:Qwen/Qwen2.5-14B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-14B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1112517740,
+  "storage_human": "1.1 GB",
+  "base_model": "Qwen/Qwen2.5-14B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "misalignment - Traduction française – Linguee",
+      "url": "https://www.linguee.fr/anglais-francais/traduction/misalignment.html",
+      "snippet": "De très nombreux exemples de phrases traduites contenant \"misalignment\" – Dictionnaire français-anglais et moteur de recherche de …"
+    },
+    {
+      "title": "misalignment - English-French Dictionary WordReference.com",
+      "url": "https://www.wordreference.com/enfr/misalignment",
+      "snippet": "misalignment - traduction anglais-français. Forums pour discuter de misalignment, voir ses formes composées, des exemples et …"
+    },
+    {
+      "title": "misalignment noun - Definition, pictures, pronunciation and usage …",
+      "url": "https://www.oxfordlearnersdictionaries.com/definition/english/misalignment",
+      "snippet": "Definition of misalignment noun in Oxford Advanced Learner's Dictionary. Meaning, pronunciation, picture, example sentences, …"
+    },
+    {
+      "title": "misalignment - French translation – Linguee",
+      "url": "https://www.linguee.com/english-french/translation/misalignment.html",
+      "snippet": "Dictionary English-French misalignment noun désalignement m The mechanic fixed the misalignment of my car wheels. Le garagiste …"
+    },
+    {
+      "title": "MISALIGNMENT definition | Cambridge English Dictionary",
+      "url": "https://dictionary.cambridge.org/us/dictionary/english/misalignment",
+      "snippet": "MISALIGNMENT meaning: 1. an arrangement in which the parts of a machine or structure do not fit together correctly, which…. …"
+    }
+  ]
+}

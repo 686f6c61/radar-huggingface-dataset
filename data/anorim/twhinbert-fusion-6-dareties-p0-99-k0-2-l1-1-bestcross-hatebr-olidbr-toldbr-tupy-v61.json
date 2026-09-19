@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "anorim/twhinbert-fusion-6-dareties-p0.99-k0.2-l1.1-bestcross-hatebr-olidbr-toldbr-tupy-v61",
+  "slug": "anorim-twhinbert-fusion-6-dareties-p0-99-k0-2-l1-1-bestcross-hatebr-olidbr-toldbr-tupy-v61",
+  "author": "anorim",
+  "url": "https://huggingface.co/anorim/twhinbert-fusion-6-dareties-p0.99-k0.2-l1.1-bestcross-hatebr-olidbr-toldbr-tupy-v61",
+  "created_at": "2026-09-19T00:36:59.000Z",
+  "updated_at": "2026-09-19T00:37:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bert",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 278830082,
+  "parameters_human": "278.8M",
+  "storage_bytes": 1132428366,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Chrome – Download the fast, secure browser from Google",
+      "url": "https://www.google.com/intl/en_uk/chrome/",
+      "snippet": "Get more done with the new Google Chrome. A more simple, secure and faster web browser than ever, with Google’s smarts built in. …"
+    },
+    {
+      "title": "Google Chrome - The Fast & Secure Web Browser Built to be Yours",
+      "url": "https://www.google.com/chrome/",
+      "snippet": "Chrome is the official web browser from Google, built to be fast, secure, and customizable. Download now and make it yours."
+    },
+    {
+      "title": "Download and install Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95346?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "You can download and install the Chrome web browser at no charge, and use it to browse the web. Check system requirements to …"
+    },
+    {
+      "title": "Download Google Chrome - Free - latest version",
+      "url": "https://chrome.en.softonic.com/download",
+      "snippet": "Sep 4, 2026 · The Chrome Web Store contains all the available themes, apps, and extensions for your Google Chrome browser. To …"
+    },
+    {
+      "title": "Google Chrome Browser Download Free - 153.0.8010.53 | TechSpot",
+      "url": "https://www.techspot.com/downloads/4718-google-chrome.html",
+      "snippet": "2 days ago · Download Google Chrome - Connect to the world on the browser built by Google. Download Chrome for fast and secure …"
+    }
+  ]
+}

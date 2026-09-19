@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "C10X/QWe",
+  "slug": "c10x-qwe",
+  "author": "C10X",
+  "url": "https://huggingface.co/C10X/QWe",
+  "created_at": "2026-09-18T20:59:09.000Z",
+  "updated_at": "2026-09-18T20:59:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 999519990,
+  "storage_human": "1000 MB",
+  "base_model": "unsloth/qwen2.5-0.5b-instruct-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anime Sama - Streaming et catalogage d'animes et scans.",
+      "url": "https://animesama.ro/",
+      "snippet": "AnimeSama - Regardez vos anime préférés en streaming VOSTFR et VF sans pubs. Large catalogue d’animes et scans mis à jour …"
+    },
+    {
+      "title": "Télécharger Anime Sama (gratuit) Web - Clubic",
+      "url": "https://www.clubic.com/telecharger-fiche546134-anime-sama.html",
+      "snippet": "3 days ago · Anime Sama est une plateforme web spécialisée dans le catalogage et le référencement d'animes et de scans. Le …"
+    },
+    {
+      "title": "Anime Sama: Nouvelle adresse du site (Septembre 2026)",
+      "url": "https://www.univers-otaku.com/anime-sama/",
+      "snippet": "Feb 20, 2026 · Marre des liens morts ? Trouvez la nouvelle adresse d'Anime-Sama en 2026 grâce à notre guide mis à jour en temps …"
+    },
+    {
+      "title": "shingeki no kyojin | Anime-Sama - Streaming et catalogage d'animes …",
+      "url": "https://animz-sama.fr/catalogue/shingeki-no-kyojin",
+      "snippet": "Eren est un jeune garçon qui rêve de sortir de la ville pour explorer le monde extérieur. Il mène une vie paisible avec ses parents et …"
+    },
+    {
+      "title": "my hero academia | Anime-Sama - Streaming et catalogage d'animes …",
+      "url": "https://animz-sama.fr/catalogue/my-hero-academia",
+      "snippet": "Dans un futur proche suite à une mutation génétique, 80% de la population mondiale possède des super pouvoirs appelés \"Alters\". …"
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "schema": 1,
+  "id": "dronefreak/uavdt-rfdetr-nano",
+  "slug": "dronefreak-uavdt-rfdetr-nano",
+  "author": "dronefreak",
+  "url": "https://huggingface.co/dronefreak/uavdt-rfdetr-nano",
+  "created_at": "2026-09-18T21:23:32.000Z",
+  "updated_at": "2026-09-21T13:57:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "rfdetr",
+  "languages": [],
+  "tags": [
+    "rfdetr",
+    "object-detection",
+    "detectionbench",
+    "pytorch",
+    "computer-vision",
+    "aerial-imagery",
+    "drone",
+    "uav",
+    "vehicle-detection",
+    "traffic-surveillance",
+    "small-object-detection",
+    "dataset:dronefreak/UAVDT",
+    "arxiv:1804.00518",
+    "arxiv:2511.09554",
+    "arxiv:2304.07193",
+    "arxiv:2405.14458",
+    "arxiv:2410.17725",
+    "arxiv:2606.03748",
+    "arxiv:2402.13616",
+    "base_model:Roboflow/rf-detr-nano",
+    "base_model:finetune:Roboflow/rf-detr-nano",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 258085959,
+  "storage_human": "258 MB",
+  "base_model": "Roboflow/rf-detr-nano",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Object Detection",
+      "dataset": "UAVDT",
+      "metric": "mAP@50 (test split)",
+      "value": 12.96
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "UAVDT",
+      "metric": "mAP@50-95 (test split)",
+      "value": 7.33
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "UAVDT",
+      "metric": "Precision (test split)",
+      "value": 37.12
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "UAVDT",
+      "metric": "Recall (test split)",
+      "value": 55.4
+    }
+  ],
+  "sources": [
+    {
+      "title": "Lingener Tagespost - Wittlager Kreisblatt",
+      "url": "https://www.noz.de/zeitung/lingener-tagespost",
+      "snippet": "Startseite Umleitung Lingener Tagespost Lingener Tagespost Sie suchen Nachrichten aus der Lingener Tagespost? Ihre lokalen …"
+    },
+    {
+      "title": "Aktuelle Nachrichten aus Lingen - Wittlager Kreisblatt",
+      "url": "https://www.noz.de/lokales/lingen",
+      "snippet": "Für das Amt des Oberbürgermeisters in Lingen hat es für Peter Altmeppen nicht gereicht. Welcher der verbleibenden Kandidaten – …"
+    },
+    {
+      "title": "Aktuelles und Nachrichten aus Lingen/Ems | Lokale News",
+      "url": "https://aktuell.meinestadt.de/lingen-ems",
+      "snippet": "1 day ago · Informiere dich hier über aktuelle Polizeiberichte und Feuerwehreinsätze aus Lingen/Ems und Umgebung."
+    },
+    {
+      "title": "Polizeimeldungen & Polizeibericht Lingen/Ems | Unfall heute ...",
+      "url": "https://aktuell.meinestadt.de/lingen-ems/polizeimeldungen",
+      "snippet": "1 day ago · Wissen was in Lingen/Ems & Umgebung los ist! Polizei, Zoll, Krankenwageneinsätze von heute direkt zum nachlesen."
+    },
+    {
+      "title": "Lingener Tagespost - gn-online.de",
+      "url": "https://www.gn-online.de/nachrichten/lingener-tagespost-tt36668.html",
+      "snippet": "Rheumatologie in Lingen geschlossen: Wie geht es weiter?"
+    }
+  ]
+}

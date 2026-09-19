@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "TyKaoz/Apertus-v1.5-8B-text-6bit",
+  "slug": "tykaoz-apertus-v1-5-8b-text-6bit",
+  "author": "TyKaoz",
+  "url": "https://huggingface.co/TyKaoz/Apertus-v1.5-8B-text-6bit",
+  "created_at": "2026-09-18T21:24:55.000Z",
+  "updated_at": "2026-09-18T21:25:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "fr",
+    "de",
+    "it",
+    "rm"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "apertus",
+    "mlx-lm",
+    "swiss-ai",
+    "text-only",
+    "apple-silicon",
+    "quantized",
+    "text-generation",
+    "conversational",
+    "en",
+    "fr",
+    "de",
+    "it",
+    "rm",
+    "base_model:swiss-ai/Apertus-v1.5-8B",
+    "base_model:quantized:swiss-ai/Apertus-v1.5-8B",
+    "license:apache-2.0",
+    "6-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8053338112,
+  "parameters_human": "8.05B",
+  "storage_bytes": 6543757296,
+  "storage_human": "6.5 GB",
+  "base_model": "swiss-ai/Apertus-v1.5-8B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "怎么将手机上的画面投到电脑屏幕上？ - 知乎",
+      "url": "https://www.zhihu.com/question/324589333",
+      "snippet": "有的时候需要将手机的内容投影到电脑上，那么要如何操作呢？一般来说需要去下载投屏软件，但是很多投屏软件都很坑，需要收费才 …"
+    },
+    {
+      "title": "Netflix - 知乎",
+      "url": "https://www.zhihu.com/topic/19552757/hot",
+      "snippet": "Netflix (Nasdaq NFLX) 成立于1997年，是一家为世界多国提供网络视频点播的公司，主要提供Netflix超大数量的DVD并免费递送，总 …"
+    },
+    {
+      "title": "DonanımHaber Forum",
+      "url": "https://forum.donanimhaber.com/",
+      "snippet": "Teknoloji, sıcak fırsatlar, otomobil, ülke gündemi, kripto para, eğitim, futbol hakkında bilgiler ve tartışma platformu: DonanımHaber …"
+    },
+    {
+      "title": "Adolescence (2025) | Netflix | DonanımHaber Forum",
+      "url": "https://forum.donanimhaber.com/adolescence-2025-netflix--160804556",
+      "snippet": "Adolescence (2025) | Netflix Sıcak Fırsatlarda Tıklananlar Editörün Seçtiği Fırsatlar"
+    },
+    {
+      "title": "2026年 9月 显卡天梯图（更新RTX 5090Dv2&RX 9060）",
+      "url": "https://www.zhihu.com/tardis/zm/art/294283384",
+      "snippet": "1080P/2K/4K分辨率，以RTX 5050为基准（25款主流游戏测试成绩取平均值） 数据来源于：TechPowerUp 桌面端显卡天梯图："
+    }
+  ]
+}

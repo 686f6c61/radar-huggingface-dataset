@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Demondiablo/medgemma-4b-it-fp8-w8a8",
+  "slug": "demondiablo-medgemma-4b-it-fp8-w8a8",
+  "author": "Demondiablo",
+  "url": "https://huggingface.co/Demondiablo/medgemma-4b-it-fp8-w8a8",
+  "created_at": "2026-09-18T22:45:54.000Z",
+  "updated_at": "2026-09-18T22:46:38.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3",
+    "image-text-to-text",
+    "fp8",
+    "w8a8",
+    "compressed-tensors",
+    "llm-compressor",
+    "vllm",
+    "medical",
+    "healthcare",
+    "conversational",
+    "base_model:google/medgemma-4b-it",
+    "base_model:quantized:google/medgemma-4b-it",
+    "license:gemma",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4300079472,
+  "parameters_human": "4.30B",
+  "storage_bytes": 5431761129,
+  "storage_human": "5.4 GB",
+  "base_model": "google/medgemma-4b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Devin Williams to Mets - 3 years, $50+ million (agreed to shave for ...",
+      "url": "https://metsrefugees.com/forum/index.php?threads/devin-williams-to-mets-3-years-50-million-agreed-to-shave-for-world-class-mets.156000/page-12",
+      "snippet": "Dec 1, 2025 · Devin Williams to Mets - 3 years, $50+ million (agreed to shave for world class Mets)"
+    },
+    {
+      "title": "Streaming these WPIX games. | Mets Refugees",
+      "url": "https://www.metsrefugees.com/forum/index.php?threads/streaming-these-wpix-games.150491/",
+      "snippet": "Apr 16, 2023 · Xfinity doesn't carry PIX. I downloaded the SNY app but I didn't see PIX games being shown. I streamed PIX11 …"
+    },
+    {
+      "title": "whm.metsrefugees.com",
+      "url": "https://whm.metsrefugees.com/?locale=el",
+      "snippet": "We would like to show you a description here but the site won’t allow us."
+    },
+    {
+      "title": "Subway Series Tickets available @ Mets.com | Mets Refugees",
+      "url": "https://www.metsrefugees.com/forum/index.php?threads/subway-series-tickets-available-mets-com.12962/",
+      "snippet": "Jun 22, 2009 · Single game tickets have been released and are available at mets.com, I didn't see anything for less than $150 though."
+    },
+    {
+      "title": "Salary Cap | Page 5 | Mets Refugees",
+      "url": "https://metsrefugees.com/forum/index.php?threads/salary-cap.156129/page-5",
+      "snippet": "Jan 16, 2026 · I was never a fan of how the players association ran under his leadership, especially with how hard it was for the …"
+    }
+  ]
+}

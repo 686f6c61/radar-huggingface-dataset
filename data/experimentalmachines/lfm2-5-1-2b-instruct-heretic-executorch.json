@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "experimentalmachines/LFM2.5-1.2B-Instruct-heretic-ExecuTorch",
+  "slug": "experimentalmachines-lfm2-5-1-2b-instruct-heretic-executorch",
+  "author": "experimentalmachines",
+  "url": "https://huggingface.co/experimentalmachines/LFM2.5-1.2B-Instruct-heretic-ExecuTorch",
+  "created_at": "2026-09-18T21:42:42.000Z",
+  "updated_at": "2026-09-20T12:33:54.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "executorch",
+  "languages": [],
+  "tags": [
+    "executorch",
+    "android",
+    "on-device",
+    "openweights",
+    "xnnpack",
+    "text-generation",
+    "base_model:experimentalmachines/LFM2.5-1.2B-Instruct-heretic",
+    "base_model:quantized:experimentalmachines/LFM2.5-1.2B-Instruct-heretic",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4032960640,
+  "storage_human": "4.0 GB",
+  "base_model": "experimentalmachines/LFM2.5-1.2B-Instruct-heretic",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aktuelle Nachrichten | BILD.de",
+      "url": "https://www.bild.de/",
+      "snippet": "BILD.de: Die Seite 1 für aktuelle Nachrichten und Themen, Bilder und Videos aus den Bereichen News, Wirtschaft, Politik, Show, …"
+    },
+    {
+      "title": "News: Aktuelle Nachrichten und Videos - BILD.de",
+      "url": "https://www.bild.de/news/startseite/news/news-16804530.bild.html",
+      "snippet": "Aktuelle News aus Deutschland, Europa und der Welt. Alle Informationen, Bilder und Videos zu Skandalen, Krisen und Sensationen …"
+    },
+    {
+      "title": "SPORT BILD | Sport-Nachrichten | Live Sportergebnisse | Meinungen, …",
+      "url": "https://sportbild.bild.de/",
+      "snippet": "Live Sportergebnisse, Videos & Sportdaten: SPORT BILD online bietet Sport Live-News zu Fußball, Bundesliga und Formel 1. …"
+    },
+    {
+      "title": "Bild (Zeitung) – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Bild_(Zeitung)",
+      "snippet": "Bild (bis in die 1970er-Jahre und umgangssprachlich weiterhin auch Bild-Zeitung) ist die größte täglich erscheinende …"
+    },
+    {
+      "title": "BILD ePaper",
+      "url": "https://epaper.bild.de/?wtmc=nav.epaper",
+      "snippet": "Online-Apotheke Energielösungen BILD Reisen BILD BILD ePaper Ihre Privatsphäre ist uns wichtig Diese Website nutzt Cookies, um …"
+    }
+  ]
+}

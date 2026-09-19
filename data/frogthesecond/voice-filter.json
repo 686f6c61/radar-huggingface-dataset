@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "FrogTheSecond/voice-filter",
+  "slug": "frogthesecond-voice-filter",
+  "author": "FrogTheSecond",
+  "url": "https://huggingface.co/FrogTheSecond/voice-filter",
+  "created_at": "2026-09-18T21:16:19.000Z",
+  "updated_at": "2026-09-18T21:17:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "pytorch",
+    "voicefilter",
+    "multilingual",
+    "arxiv:2308.11380",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 223096559,
+  "storage_human": "223 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Marwin Hitz – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Marwin_Hitz",
+      "snippet": "Marwin Hitz ... Marwin Hitz (* 18. September 1987 in St. Gallen) ist ein ehemaliger Schweizer Fussballtorhüter. Er stand zuletzt seit …"
+    },
+    {
+      "title": "Marwin Hitz - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Marwin_Hitz",
+      "snippet": "Marwin Hitz (born 18 September 1987) is a Swiss former professional footballer who played as a goalkeeper. Born in St. Gallen, Hitz …"
+    },
+    {
+      "title": "Marwin Hitz - Spielerprofil | Transfermarkt",
+      "url": "https://www.transfermarkt.de/marwin-hitz/profil/spieler/59238",
+      "snippet": "Marwin Hitz ehemaliger Fußballspieler aus Schweiz Torwart zuletzt bei FC Basel 1893 * 18.09.1987 in St. Gallen, Schweiz"
+    },
+    {
+      "title": "Marwin Hitz - Player profile | Transfermarkt",
+      "url": "https://www.transfermarkt.com/marwin-hitz/profil/spieler/59238",
+      "snippet": "Marwin Hitz former footballer from Switzerland Goalkeeper last club: FC Basel 1893 * 18/09/1987 in St. Gallen, Switzerland"
+    },
+    {
+      "title": "Marwin Hitz - Spielerprofil | Transfermarkt",
+      "url": "https://www.transfermarkt.ch/marwin-hitz/profil/spieler/59238",
+      "snippet": "Marwin Hitz ehemaliger Fußballspieler aus Schweiz Torwart zuletzt bei FC Basel 1893 * 18.09.1987 in St. Gallen, Schweiz"
+    }
+  ]
+}

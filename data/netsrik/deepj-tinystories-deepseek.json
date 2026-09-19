@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "netsrik/deepj-tinystories-deepseek",
+  "slug": "netsrik-deepj-tinystories-deepseek",
+  "author": "netsrik",
+  "url": "https://huggingface.co/netsrik/deepj-tinystories-deepseek",
+  "created_at": "2026-09-18T22:49:27.000Z",
+  "updated_at": "2026-09-19T14:28:00.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "deepj",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "deepj",
+    "deepj-deepseek-style",
+    "text-generation",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5204972,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[found sos] cant login whatsapp browser - Lowyat.NET",
+      "url": "https://forum.lowyat.net/topic/5556445",
+      "snippet": "Feb 27, 2026 · Lowyat.NET -> Kopitiam -> Serious Kopitiam Bump Topic Add Reply RSS Feed Bottom Outline · [ Standard ] · …"
+    },
+    {
+      "title": "Whatsapp Desktop dah jadi fb app - Lowyat.NET",
+      "url": "https://forum.lowyat.net/topic/5565190",
+      "snippet": "May 20, 2026 · As usual in the morning I'll launch my whatsapp desktop app. Suddenly the app shows itself as below, unlike the …"
+    },
+    {
+      "title": "those use ipon watsapp web browser - Lowyat.NET",
+      "url": "https://forum.lowyat.net/topic/5556449",
+      "snippet": "Feb 27, 2026 · those use ipon watsapp web browser Outline · [ Standard ] · Linear+ those use ipon watsapp web browser, whatsapp …"
+    },
+    {
+      "title": "Whatsapps hacked - Lowyat.NET",
+      "url": "https://forum.lowyat.net/topic/5519898",
+      "snippet": "Apr 23, 2025 · Hi guys, I realised that my whatsapp account has been logged out from my phone this morning and I feel rather …"
+    },
+    {
+      "title": "Market Price for Organs in Malaysia - Lowyat.NET",
+      "url": "https://forum.lowyat.net/topic/3876303/all",
+      "snippet": "Feb 24, 2016 · recently got this message in whatsapp&quot;Price organs in Malaysia ;Heart RM 800kKidney RM 600kEye RM …"
+    }
+  ]
+}

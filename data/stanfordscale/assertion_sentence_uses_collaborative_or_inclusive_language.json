@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "id": "StanfordSCALE/assertion_sentence_uses_collaborative_or_inclusive_language",
+  "slug": "stanfordscale-assertion_sentence_uses_collaborative_or_inclusive_language",
+  "author": "StanfordSCALE",
+  "url": "https://huggingface.co/StanfordSCALE/assertion_sentence_uses_collaborative_or_inclusive_language",
+  "created_at": "2026-09-18T20:50:10.000Z",
+  "updated_at": "2026-09-18T20:50:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "setfit",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "setfit",
+    "safetensors",
+    "mpnet",
+    "text-classification",
+    "education",
+    "classroom-discourse",
+    "edubehaviors",
+    "assertion",
+    "en",
+    "dataset:StanfordSCALE/assertions_llm_annotated_talkmoves",
+    "base_model:sentence-transformers/paraphrase-mpnet-base-v2",
+    "base_model:finetune:sentence-transformers/paraphrase-mpnet-base-v2",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109486464,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437974679,
+  "storage_human": "438 MB",
+  "base_model": "sentence-transformers/paraphrase-mpnet-base-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "F1 (positive class, test)",
+      "value": 0.7655
+    },
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "Precision (positive class, test)",
+      "value": 0.7514
+    },
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "Recall (positive class, test)",
+      "value": 0.7801
+    },
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "ROC-AUC (test)",
+      "value": 0.9527
+    }
+  ],
+  "sources": [
+    {
+      "title": "TRH and MAP files??? - MX Bikes Official Forum",
+      "url": "https://forum.mx-bikes.com/index.php?topic=3775.0",
+      "snippet": "1 day ago · TRH and MAP files??? TRH and MAP files??? Started by dylan44frisch, September 05, 2020, 08:59:12 AM Previous …"
+    },
+    {
+      "title": "Example Track Files - MX Bikes Official Forum",
+      "url": "https://forum.mx-bikes.com/index.php?topic=3871.0",
+      "snippet": "22 hours ago · Does anyone have a link to the example track files. My downloads from piboso keep continuously failing. I really need …"
+    },
+    {
+      "title": ".pkz usage - forum.piboso.com",
+      "url": "https://forum.piboso.com/index.php?topic=6626.0",
+      "snippet": "1 day ago · .pkz usage That's exactly why I'm asking the modders to pack stuff up into .pkz It's much easier to just drop the .pkz into …"
+    },
+    {
+      "title": "[RELEASE] iNsane's PiBoSo Lock Tool",
+      "url": "https://forum.piboso.com/index.php?topic=9152.0",
+      "snippet": "Sep 24, 2020 · Four weeks development later and I finally can say: Welcome to iNsane's (un)official PiBoSo Lock Tool web service! …"
+    },
+    {
+      "title": "[release] MAC Lierop 2012 - MX Bikes Official Forum",
+      "url": "https://forum.mx-bikes.com/index.php?topic=3574.0",
+      "snippet": "1 day ago · [release] MAC Lierop 2012 [release] MAC Lierop 2012 Started by giopanda, June 21, 2020, 01:26:06 AM Previous topic - …"
+    }
+  ]
+}

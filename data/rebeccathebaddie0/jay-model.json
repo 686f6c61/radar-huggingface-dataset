@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "rebeccathebaddie0/jay.model",
+  "slug": "rebeccathebaddie0-jay-model",
+  "author": "rebeccathebaddie0",
+  "url": "https://huggingface.co/rebeccathebaddie0/jay.model",
+  "created_at": "2026-09-19T00:32:44.000Z",
+  "updated_at": "2026-09-19T00:37:58.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 108811983,
+  "storage_human": "109 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rechtsbijstandverzekering - Rabobank",
+      "url": "https://www.rabobank.nl/particulieren/verzekering/rechtsbijstandverzekering",
+      "snippet": "Met een rechtsbijstandverzekering van Interpolis weet je zeker dat je juridische hulp krijgt. Bereken je premie en sluit de verzekering …"
+    },
+    {
+      "title": "Consument & Wonen - Rechtsbijstandverzekering - Rabobank",
+      "url": "https://www.rabobank.nl/particulieren/verzekering/rechtsbijstandverzekering/consument",
+      "snippet": "Kies als klant van Rabobank voor de Interpolis Rechtsbijstandverzekering met de module Consument & Wonen vóór je een grote …"
+    },
+    {
+      "title": "Rechtsbijstandverzekering | Interpolis",
+      "url": "https://www.interpolis.nl/verzekeren/rechtsbijstandverzekering",
+      "snippet": "Verzekerd zijn van rechtshulp bij een conflict? Kies voor onze rechtsbijstand­verzekering. Bij grote én kleine conflicten kun je rekenen …"
+    },
+    {
+      "title": "Rechtsbijstandverzekering Rabobank",
+      "url": "https://rechtsbijstandverzekering.net/rechtsbijstandverzekering-rabobank/",
+      "snippet": "Jun 26, 2023 · Een rechtsbijstandverzekering is bij verschillende verzekeraars te vinden, zoals bij Rabobank. Bij Rabobank is het …"
+    },
+    {
+      "title": "Rechtsbijstandverzekering Werk en Inkomen (arbeidsrecht) | Interpolis",
+      "url": "https://www.interpolis.nl/verzekeren/rechtsbijstandverzekering/werk-en-inkomen",
+      "snippet": "Juridische hulp verzekeren bij conflicten over werk, inkomen en pensioen? Kies dan voor de aanvullende dekking Werk, Inkomen & …"
+    }
+  ]
+}

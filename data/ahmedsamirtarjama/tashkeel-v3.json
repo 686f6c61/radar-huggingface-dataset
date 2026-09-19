@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "ahmedsamirtarjama/Tashkeel-v3",
+  "slug": "ahmedsamirtarjama-tashkeel-v3",
+  "author": "ahmedsamirtarjama",
+  "url": "https://huggingface.co/ahmedsamirtarjama/Tashkeel-v3",
+  "created_at": "2026-09-18T20:53:30.000Z",
+  "updated_at": "2026-09-18T21:12:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": null,
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "tashkeel_v3",
+    "arabic",
+    "tashkeel",
+    "diacritization",
+    "harakat",
+    "marbert",
+    "crf",
+    "nlp",
+    "token-classification",
+    "custom_code",
+    "ar",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 171573661,
+  "parameters_human": "171.6M",
+  "storage_bytes": 1372689975,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "World Bee Day 2026 | Food and Agriculture Organization of the …",
+      "url": "https://www.fao.org/world-bee-day/en/",
+      "snippet": "May 21, 2026 · By observing World Bee Day each year, we can raise awareness on the essential role bees and other pollinators play …"
+    },
+    {
+      "title": "World Bee Day - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/World_Bee_Day",
+      "snippet": "On this day Anton Janša, the pioneer of beekeeping, was baptized in 1734. [1] The purpose of the international day is to acknowledge …"
+    },
+    {
+      "title": "Events | World Bee Day | FAO",
+      "url": "https://www.fao.org/world-bee-day/events/en",
+      "snippet": "Hundreds of activities and events are being organized worldwide to promote the World Bee Day. Click on the map below to find an …"
+    },
+    {
+      "title": "World Bee Day — Environmental Alliance",
+      "url": "https://environmentalalliance.org/world-bee-day",
+      "snippet": "World Bee Day — celebrated each year on May 20 — began in 2018 when the United Nations designated the date to recognize the …"
+    },
+    {
+      "title": "World Bee Day - Background | United Nations - الأمم المتحدة",
+      "url": "https://www.un.org/en/observances/bee-day/background",
+      "snippet": "A world without pollinators would equal a world without food diversity – no blueberries, coffee, chocolate, cucumbers and so much …"
+    }
+  ]
+}

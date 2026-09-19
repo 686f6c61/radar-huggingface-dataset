@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "PERSEIDRAHUL/flamingo-matching-notebook",
+  "slug": "perseidrahul-flamingo-matching-notebook",
+  "author": "PERSEIDRAHUL",
+  "url": "https://huggingface.co/PERSEIDRAHUL/flamingo-matching-notebook",
+  "created_at": "2026-09-19T01:36:14.000Z",
+  "updated_at": "2026-09-19T01:36:19.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "flamingo",
+    "pytorch",
+    "matching",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Plans and Pricing for all Businesses - GoDaddy",
+      "url": "https://www.godaddy.com/pricing?msockid=302387fdc0736f5212599024c11d6e95",
+      "snippet": "GoDaddy Plans suit all businesses, from idea to startup to established venture. Check out our features and pricing and choose the …"
+    },
+    {
+      "title": "Planes y precios para todas las empresas - GoDaddy",
+      "url": "https://www.godaddy.com/es/precios?msockid=302387fdc0736f5212599024c11d6e95",
+      "snippet": "Los planes de GoDaddy se adaptan a todas las empresas, desde que son ideas o emergentes hasta que están establecidas. …"
+    },
+    {
+      "title": "GoDaddy Pricing: What You Actually Pay (Honest Guide) - HostAdvice",
+      "url": "https://hostadvice.com/hosting-company/godaddy-reviews/pricing/",
+      "snippet": "Jul 30, 2026 · Find out how much GoDaddy actually costs. We break down domains, hosting and renewal fees to help you avoid …"
+    },
+    {
+      "title": "GoDaddy Pricing in 2026: Compare Plans and Find Best Value",
+      "url": "https://cybernews.com/best-web-hosting/godaddy-review/pricing/",
+      "snippet": "May 15, 2026 · Find out what’s new in GoDaddy pricing for 2026. Compare hosting tiers, domain costs, and add-ons to make the …"
+    },
+    {
+      "title": "GoDaddy Pricing 2026 | All Plans and Renewal Prices",
+      "url": "https://www.buy-hosting.net/godaddy-pricing.html",
+      "snippet": "All GoDaddy Plans, Prices and Renewal Prices on one clean Page. Clear and Transparent, easy to grasp."
+    }
+  ]
+}

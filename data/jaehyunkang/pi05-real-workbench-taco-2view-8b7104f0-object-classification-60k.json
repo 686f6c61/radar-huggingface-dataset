@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "jaehyunkang/pi05-real-workbench-taco-2view-8b7104f0-object-classification-60k",
+  "slug": "jaehyunkang-pi05-real-workbench-taco-2view-8b7104f0-object-classification-60k",
+  "author": "jaehyunkang",
+  "url": "https://huggingface.co/jaehyunkang/pi05-real-workbench-taco-2view-8b7104f0-object-classification-60k",
+  "created_at": "2026-09-19T01:45:03.000Z",
+  "updated_at": "2026-09-19T01:45:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "real-workbench",
+    "dataset:Myungkyu/real_workbench-taco-keyframe-gemini",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 9354060552,
+  "storage_human": "9.4 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Frankrijk - Wikipedia",
+      "url": "https://nl.wikipedia.org/wiki/Frankrijk",
+      "snippet": "In de 17e, 18e en begin 19e eeuw was Frankrijk de grootste mogendheid op het Europese continent. Door de Franse Revolutie in …"
+    },
+    {
+      "title": "Dé 33 x mooiste dorpjes in Frankrijk: wat zien & doen? - Reisroutes",
+      "url": "https://www.reisroutes.be/blog/frankrijk/mooiste-dorpjes-frankrijk/",
+      "snippet": "Jun 9, 2026 · Het maakt niet uit of je naar het noorden of zuiden reist: over heel Frankrijk vindt je dorpen die zeker een bezoekje …"
+    },
+    {
+      "title": "Dé 51 x mooiste bezienswaardigheden in Frankrijk: info & tips",
+      "url": "https://www.reisroutes.be/blog/frankrijk/bezienswaardigheden-frankrijk/",
+      "snippet": "Apr 16, 2026 · Wij hebben 51 van de mooiste bezienswaardigheden van Frankrijk voor je op een rijtje gezet om je te helpen een …"
+    },
+    {
+      "title": "frankrijk.nl - reistips en leuke adresjes voor je vakantie in Frankrijk",
+      "url": "https://frankrijk.nl/",
+      "snippet": "Waar naar toe voor je vakantie in Frankrijk? Hier vind je reisinspiratie, insidertips en eigentijdse vakantieadresjes in Frankrijk;"
+    },
+    {
+      "title": "France - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/France",
+      "snippet": "France, [i] officially the French Republic, [j] is a country primarily located in Western Europe. [k] Its overseas regions and territories …"
+    }
+  ]
+}

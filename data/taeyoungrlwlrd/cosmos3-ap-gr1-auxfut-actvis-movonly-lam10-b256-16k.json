@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "taeyoungrlwlrd/cosmos3-ap-gr1-auxfut-actvis-movonly-lam10-b256-16k",
+  "slug": "taeyoungrlwlrd-cosmos3-ap-gr1-auxfut-actvis-movonly-lam10-b256-16k",
+  "author": "taeyoungrlwlrd",
+  "url": "https://huggingface.co/taeyoungrlwlrd/cosmos3-ap-gr1-auxfut-actvis-movonly-lam10-b256-16k",
+  "created_at": "2026-09-19T00:50:40.000Z",
+  "updated_at": "2026-09-19T01:45:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 91053028451,
+  "storage_human": "91.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "De officiële mazoutprijs in België: dagprijs en evolutie",
+      "url": "https://in4fuels.be/nl/tools/brandstofprijs",
+      "snippet": "11 hours ago · Op deze pagina vind je meer info over de mazoutprijs en die van Gasolie Diesel vandaag én de prijsevolutie. Onze …"
+    },
+    {
+      "title": "Mazoutprijs in België - Mazoutonline.be",
+      "url": "https://www.mazout-on-line.be/nl/mazoutprijs-in-belgie/",
+      "snippet": "Bekijk hier de mazoutprijs van vandaag in gans België en in uw stad of gemeente. De prijzen op Mazoutonline worden dagelijks …"
+    },
+    {
+      "title": "mazoutprijs",
+      "url": "https://mazoutprijs.be/",
+      "snippet": "11 hours ago · Wat is de mazoutprijs vandaag in België? De actuele mazoutprijs wordt dagelijks bijgewerkt op MazoutPrijs.be op …"
+    },
+    {
+      "title": "Evolutie en vooruitzichten van de mazoutprijs - Mazoutonline.be",
+      "url": "https://www.mazout-on-line.be/nl/mazoutprijs-in-belgie/evolutie-en-vooruitzichten-van-de-mazoutprijs/",
+      "snippet": "1 day ago · Mazoutonline brengt u wekelijks een complete analyse van de mazoutprijs, om u te helpen de evolutie van de prijs beter …"
+    },
+    {
+      "title": "Officieel tarief van de aardolieproducten | FOD Economie",
+      "url": "https://economie.fgov.be/nl/themas/energie/energieprijzen/maximumprijzen/officieel-tarief-van-de",
+      "snippet": "Jul 1, 2026 · Officieel tarief van de aardolieproducten in euro (incl. btw), laatste bijwerking:"
+    }
+  ]
+}

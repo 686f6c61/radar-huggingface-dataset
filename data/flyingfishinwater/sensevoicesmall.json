@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "flyingfishinwater/SenseVoiceSmall",
+  "slug": "flyingfishinwater-sensevoicesmall",
+  "author": "flyingfishinwater",
+  "url": "https://huggingface.co/flyingfishinwater/SenseVoiceSmall",
+  "created_at": "2026-09-18T21:22:28.000Z",
+  "updated_at": "2026-09-18T21:22:51.000Z",
+  "license": "model-license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx-audio",
+  "languages": [],
+  "tags": [
+    "mlx-audio",
+    "safetensors",
+    "sensevoice",
+    "mlx",
+    "speech-to-text",
+    "speech",
+    "sts",
+    "base_model:FunAudioLLM/SenseVoiceSmall",
+    "base_model:finetune:FunAudioLLM/SenseVoiceSmall",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 233999167,
+  "parameters_human": "234.0M",
+  "storage_bytes": 936477465,
+  "storage_human": "936 MB",
+  "base_model": "FunAudioLLM/SenseVoiceSmall",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-19T02:24:28.057Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Contact Us - Microsoft Support",
+      "url": "https://support.microsoft.com/en-gb/contactus",
+      "snippet": "Contact Microsoft Support. Find solutions to common problems, or get help from a support agent."
+    },
+    {
+      "title": "Anmelden bei Hotmail | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/accounts-billing/manage/how-to-sign-in-to-hotmail",
+      "snippet": "Microsoft hält immer ein Auge auf ungewöhnliche Anmeldeaktivitäten, nur für den Fall, dass jemand anderes versucht, auf Ihr Konto …"
+    },
+    {
+      "title": "Released: August 2026 Exchange Server Security Updates | Microsoft ...",
+      "url": "https://techcommunity.microsoft.com/blog/Exchange/released-august-2026-exchange-server-security-updates/4543951",
+      "snippet": "We have released Security Updates for Exchange Server SE. Exchange Server 2019 and 2016 ESU updates only. &nbsp;"
+    },
+    {
+      "title": "Exchange Online EWS, Your Time is Almost Up | Microsoft Community …",
+      "url": "https://techcommunity.microsoft.com/blog/exchange/exchange-online-ews-your-time-is-almost-up/4492361",
+      "snippet": "Exchange Web Services (EWS) is approaching end of service in Exchange Online. We first announced this change was coming in …"
+    },
+    {
+      "title": "Sign out of Hotmail or Outlook.com | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/accounts-billing/manage/sign-out-of-hotmail-or-outlook-com",
+      "snippet": "Tip If you don't see your picture at the top of screen, check to see if ad blocking is turned on. Sometimes this prevents the picture …"
+    }
+  ]
+}

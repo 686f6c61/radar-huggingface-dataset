@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "philgear/pocketgull-allometric-sfi-1b",
+  "slug": "philgear-pocketgull-allometric-sfi-1b",
+  "author": "philgear",
+  "url": "https://huggingface.co/philgear/pocketgull-allometric-sfi-1b",
+  "created_at": "2026-09-18T20:47:11.000Z",
+  "updated_at": "2026-09-18T20:47:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "gemma-3",
+    "lora",
+    "clinical-nlp",
+    "healthcare",
+    "hipaa-safe-harbor",
+    "open-science",
+    "pocketgull",
+    "nih-medquad",
+    "who-mhgap",
+    "text-generation",
+    "en",
+    "base_model:google/gemma-3-1b-it",
+    "base_model:adapter:google/gemma-3-1b-it",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "google/gemma-3-1b-it",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Scuola universitaria professionale della Svizzera italiana - SUPSI",
+      "url": "https://www.supsi.ch/",
+      "snippet": "SUPSI è una scuola universitaria professionale riconosciuta dalla Confederazione Svizzera. Offre formazioni Bachelor e Master e …"
+    },
+    {
+      "title": "Bachelor e Master - SUPSI",
+      "url": "https://www.supsi.ch/bachelor-master-panoramica",
+      "snippet": "La SUPSI offre percorsi Bachelor, Master e Diploma negli ambiti dell’Architettura, edilizia e progettazione, Design, Economia e …"
+    },
+    {
+      "title": "SUPSI - Portale studenti",
+      "url": "https://portalestudenti.supsi.ch/",
+      "snippet": "Da qui avrai accesso diretto all’universo digitale della SUPSI: avrai una panoramica delle informazioni sul tuo corso di laurea, avrai …"
+    },
+    {
+      "title": "SUPSI - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/SUPSI",
+      "snippet": "As a Swiss University of Applied Sciences (Fachhochschule, Haute école specialisée, scuola universitaria professionale), SUPSI is …"
+    },
+    {
+      "title": "Scuola universitaria professionale della Svizzera italiana",
+      "url": "https://it.wikipedia.org/wiki/Scuola_universitaria_professionale_della_Svizzera_italiana",
+      "snippet": "Come scuola professionale la SUPSI è orientata alla formazione professionale e alla ricerca applicata e in base alla legge cantonale …"
+    }
+  ]
+}

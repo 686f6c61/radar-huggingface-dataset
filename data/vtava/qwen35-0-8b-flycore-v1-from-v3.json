@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "vtava/Qwen35-0.8B-FlyCore-v1-From-v3",
+  "slug": "vtava-qwen35-0-8b-flycore-v1-from-v3",
+  "author": "vtava",
+  "url": "https://huggingface.co/vtava/Qwen35-0.8B-FlyCore-v1-From-v3",
+  "created_at": "2026-09-18T22:16:48.000Z",
+  "updated_at": "2026-09-18T22:20:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "qwen3_5_text",
+    "tinycenn",
+    "cenn",
+    "language-modeling",
+    "text-generation",
+    "research",
+    "mixture-of-experts",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1215047442,
+  "storage_human": "1.2 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Etsy Community | Connect, learn, and grow with thousands of Etsy sellers",
+      "url": "https://community.etsy.com/",
+      "snippet": "Etsy is the global marketplace for unique and creative goods. It’s home to a universe of special, extraordinary items, from unique …"
+    },
+    {
+      "title": "Discussion | Etsy Community",
+      "url": "https://community.etsy.com/forum/technical-issues-301/topic/multiple-sellers-currently-having-issues-not-being-found-in-search-since-2-days-ago-159561/",
+      "snippet": "Etsy is the global marketplace for unique and creative goods. It’s home to a universe of special, extraordinary items, from unique …"
+    },
+    {
+      "title": "Etsy Discussions - eBay Suspended & PayPal Limited Forums",
+      "url": "https://www.aspkin.com/forums/etsy-discussions/",
+      "snippet": "Dec 12, 2025 · Etsy Discussions - Etsy Forums. General discussions on Etsy, direct checkout, account suspensions, suspended, …"
+    },
+    {
+      "title": "Nude and Erotic - Photo.net",
+      "url": "https://www.photo.net/gallery/category/19-nude-and-erotic/",
+      "snippet": "Photo session from the Refuge on Mt Tamalpais, Mill Valley, CA"
+    },
+    {
+      "title": "Business of Photography - Photo.net",
+      "url": "https://www.photo.net/forums/forum/35-business-of-photography/",
+      "snippet": "Apr 9, 2022 · Check out CreativeLive's extensive collection of classes to help your photography business!"
+    }
+  ]
+}

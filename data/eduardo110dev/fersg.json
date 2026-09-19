@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "eduardo110dev/FERSG",
+  "slug": "eduardo110dev-fersg",
+  "author": "eduardo110dev",
+  "url": "https://huggingface.co/eduardo110dev/FERSG",
+  "created_at": "2026-09-19T00:44:41.000Z",
+  "updated_at": "2026-09-19T00:44:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Búsqueda CPA | Correo Argentino",
+      "url": "https://www.correoargentino.com.ar/formularios/cpa/1000",
+      "snippet": "Acá podrás encontrar fácilmente el CPA de cualquier dirección de tu interés, en todos los rincones de nuestro país."
+    },
+    {
+      "title": "Codigo Postal 1638 en Argentina - CPA 1638",
+      "url": "https://www.codigo-postal.com.ar/codigo-postal/1638",
+      "snippet": "Más de una localidad puede tener el mismo código postal asigando por el Correo Argentino Oficial. Aquí vas a encontrar todas las …"
+    },
+    {
+      "title": "B1638 Código postal, Vicente López, Buenos Aires, Argentina",
+      "url": "https://arg.postcodelist.com/es/postcode/B1638-Vicente-L-pez-Buenos-Aires_1sq.html",
+      "snippet": "Vicente López, Buenos Aires, Código postal : B1638,Situado en el ,Vicente López,Buenos Aires Argentina"
+    },
+    {
+      "title": "Código Postal de Vicente López en Vicente López, Buenos Aires",
+      "url": "https://buscacp.com/ar/codigos-postales/buenos-aires/vicente-lopez/vicente-lopez/",
+      "snippet": "¿Cuál es el código postal de Vicente López? El código postal de Vicente López en Vicente López es B1638. El código postal B1638 …"
+    },
+    {
+      "title": "Calle Presidente Hipolito Yrigoyen, Vicente López, Buenos Aires B1638 ...",
+      "url": "https://www.azcodigopostal.com/argentina/pstreet-calle-presidente-hipolito-yrigoyen-vicente-lopez-06861-b1638aif/",
+      "snippet": "Calle Presidente Hipolito Yrigoyen es una calle ubicada en Vicente López, Buenos Aires. Encuentra su código postal (B1638 AIF) y …"
+    }
+  ]
+}

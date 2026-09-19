@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Anonymousresearch101/motion-flow-weights",
+  "slug": "anonymousresearch101-motion-flow-weights",
+  "author": "Anonymousresearch101",
+  "url": "https://huggingface.co/Anonymousresearch101/motion-flow-weights",
+  "created_at": "2026-09-19T00:53:08.000Z",
+  "updated_at": "2026-09-19T00:59:01.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "motion-generation",
+    "flow-matching",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 694722645,
+  "storage_human": "695 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Craigslist Search | Page 2 - IH8MUD Forum",
+      "url": "https://forum.ih8mud.com/threads/craigslist-search.243020/page-2",
+      "snippet": "Sep 28, 2008 · Autotempest.com searches ebay, craigslist, vehix, autotrader, and some others upon entering the make and model. …"
+    },
+    {
+      "title": "24 VS 12 volt solenoids - IH8MUD Forum",
+      "url": "https://forum.ih8mud.com/threads/24-vs-12-volt-solenoids.239672/",
+      "snippet": "Sep 7, 2008 · Help me out here, I'm told if you want to convert a 12 volt 8274 to 24 volts, you change motors and solenoids....wouldn't …"
+    },
+    {
+      "title": "Ping under load | For C Bodies Only Classic Mopar Forum",
+      "url": "https://www.forcbodiesonly.com/mopar-forum/threads/ping-under-load.12917/",
+      "snippet": "Jun 20, 2014 · I think I have a bit of a ping under load and think its timing related. Seems to be running a bit hotter since I put the new …"
+    },
+    {
+      "title": "Trying to identify this late 50s Chrysler distributor...",
+      "url": "https://www.forcbodiesonly.com/mopar-forum/threads/trying-to-identify-this-late-50s-chrysler-distributor.39664/",
+      "snippet": "May 6, 2018 · Found it in the garage, digging around the other day, looking for something else! Cast iron dual point, vac advance, …"
+    },
+    {
+      "title": "Hi-Lift jack 101, why won't it ratchet down? - IH8MUD Forum",
+      "url": "https://forum.ih8mud.com/threads/hi-lift-jack-101-why-wont-it-ratchet-down.136075/",
+      "snippet": "Feb 7, 2007 · I'm finally fed up enough to ask the embarassing questions, what the hell is wrong with the way I'm trying to DOWN …"
+    }
+  ]
+}

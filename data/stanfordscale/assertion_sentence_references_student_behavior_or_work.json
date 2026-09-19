@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "id": "StanfordSCALE/assertion_sentence_references_student_behavior_or_work",
+  "slug": "stanfordscale-assertion_sentence_references_student_behavior_or_work",
+  "author": "StanfordSCALE",
+  "url": "https://huggingface.co/StanfordSCALE/assertion_sentence_references_student_behavior_or_work",
+  "created_at": "2026-09-18T20:46:31.000Z",
+  "updated_at": "2026-09-18T20:46:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "setfit",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "setfit",
+    "safetensors",
+    "mpnet",
+    "text-classification",
+    "education",
+    "classroom-discourse",
+    "edubehaviors",
+    "assertion",
+    "en",
+    "dataset:StanfordSCALE/assertions_llm_annotated_talkmoves",
+    "base_model:sentence-transformers/paraphrase-mpnet-base-v2",
+    "base_model:finetune:sentence-transformers/paraphrase-mpnet-base-v2",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109486464,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437974679,
+  "storage_human": "438 MB",
+  "base_model": "sentence-transformers/paraphrase-mpnet-base-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "F1 (positive class, test)",
+      "value": 0.6721
+    },
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "Precision (positive class, test)",
+      "value": 0.6781
+    },
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "Recall (positive class, test)",
+      "value": 0.6662
+    },
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "ROC-AUC (test)",
+      "value": 0.8373
+    }
+  ],
+  "sources": [
+    {
+      "title": "Новокузнецкая улица, 1с1 на карте Москвы, ближайшее метро Новокузнецкая …",
+      "url": "https://yandex.ru/maps/213/moscow/house/novokuznetskaya_ulitsa_1s1/Z04YcARgSUAOQFtvfXt1cX9nZA==/",
+      "snippet": "Москва, Новокузнецкая улица, 1с1, индекс 115184 — посмотреть входы, фото, панорамы и построить маршрут до адреса в …"
+    },
+    {
+      "title": "Новокузнецкая улица в Москве — Яндекс Карты",
+      "url": "https://yandex.ru/maps/213/moscow/geo/novokuznetskaya_ulitsa/8054881/",
+      "snippet": "Новокузнецкая улица, Москва — маршруты, фото, панорамы и поиск ближайших организаций и парковок. Яндекс Карты …"
+    },
+    {
+      "title": "Москва, Новокузнецкая улица, дом 1",
+      "url": "https://zoon.ru/msk/street/novokuznetskaya_ulitsa/bld/1/",
+      "snippet": "Описание, фотографии и отзывы на все заведения в доме №1 Новокузнецкой улицы на карте - Москва - Zoon.ru"
+    },
+    {
+      "title": "Новокузнецкая улица, 1 ст3 в Москве - 2ГИС",
+      "url": "https://2gis.ru/moscow/geo/4504235282697513",
+      "snippet": "2ГИС прекрасно работает в новых браузерах, а в старых могут быть неожиданности. У вас не самый новый браузер, и мы …"
+    },
+    {
+      "title": "Новокузнецкая улица, 1 стр 1 - все заведения в доме, рейтинг дома № 1 …",
+      "url": "https://zoon.ru/msk/street/novokuznetskaya_ulitsa/bld/1_str_1/",
+      "snippet": "Описание, фотографии и отзывы на все заведения в доме №1 стр 1 Новокузнецкой улицы на карте - Москва - Zoon.ru"
+    }
+  ]
+}

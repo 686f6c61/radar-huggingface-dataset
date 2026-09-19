@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "mradermacher/SmolBabble2-360m-GGUF",
+  "slug": "mradermacher-smolbabble2-360m-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/SmolBabble2-360m-GGUF",
+  "created_at": "2026-09-18T21:56:53.000Z",
+  "updated_at": "2026-09-18T22:08:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mlx",
+    "unsloth",
+    "en",
+    "base_model:benni-ben/SmolBabble2-360m",
+    "base_model:quantized:benni-ben/SmolBabble2-360m",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 361821120,
+  "parameters_human": "361.8M",
+  "storage_bytes": 3729508992,
+  "storage_human": "3.7 GB",
+  "base_model": "benni-ben/SmolBabble2-360m",
+  "formats": [
+    "gguf",
+    "mlx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Time in India - timeanddate.com",
+      "url": "https://www.timeanddate.com/worldclock/india",
+      "snippet": "6:33 pm Kolkata IST UTC +5:30 See all Time Zones in India See Holidays in India Create a Calendar for India"
+    },
+    {
+      "title": "Time in India now",
+      "url": "https://time.is/India/",
+      "snippet": "Sep 19, 2026 · Exact time now, time zone, time difference, sunrise/sunset time and key facts for India."
+    },
+    {
+      "title": "India Standard Time",
+      "url": "https://time.is/IST",
+      "snippet": "Sep 19, 2026 · Exact time now, time zone, time difference, sunrise/sunset time and key facts for India Standard Time (IST)."
+    },
+    {
+      "title": "Current time in India",
+      "url": "https://en.true-time.com/in/",
+      "snippet": "Live exact time in India with seconds. Includes daylight saving time transitions for India. Current time zone UTC+05:30. Information: …"
+    },
+    {
+      "title": "Time in India (LIVE) - Worldometer",
+      "url": "https://www.worldometers.info/time/india/",
+      "snippet": "Sep 19, 2026 · Exact local time now in India. Time Zone, UTC offset, and DST. Clock with seconds, 12/24h formats, sunrise/sunset, …"
+    }
+  ]
+}

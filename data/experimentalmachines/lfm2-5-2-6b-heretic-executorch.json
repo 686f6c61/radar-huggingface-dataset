@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "experimentalmachines/LFM2.5-2.6B-heretic-ExecuTorch",
+  "slug": "experimentalmachines-lfm2-5-2-6b-heretic-executorch",
+  "author": "experimentalmachines",
+  "url": "https://huggingface.co/experimentalmachines/LFM2.5-2.6B-heretic-ExecuTorch",
+  "created_at": "2026-09-19T00:08:51.000Z",
+  "updated_at": "2026-09-20T12:33:57.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "executorch",
+  "languages": [],
+  "tags": [
+    "executorch",
+    "android",
+    "on-device",
+    "openweights",
+    "xnnpack",
+    "text-generation",
+    "base_model:experimentalmachines/LFM2.5-2.6B-heretic",
+    "base_model:quantized:experimentalmachines/LFM2.5-2.6B-heretic",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8989689951,
+  "storage_human": "9.0 GB",
+  "base_model": "experimentalmachines/LFM2.5-2.6B-heretic",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Taco Bell® | Live Más",
+      "url": "https://www.tacobell.com/?msockid=024ba1b52f666759395fb66c2ede66a8",
+      "snippet": "Get your Taco Bell cravings today by ordering ahead on the mobile app for pick up or delivery."
+    },
+    {
+      "title": "Menu - Order Online | Taco Bell®",
+      "url": "https://www.tacobell.com/food?msockid=024ba1b52f666759395fb66c2ede66a8",
+      "snippet": "From classic tacos to burritos to our epic specialties and combos, there’s something for everyone on the Taco Bell menu. Find …"
+    },
+    {
+      "title": "Taco Bell® in Ashburn, VA - 43951 Farmwell Hunt Plaza",
+      "url": "https://locations.tacobell.com/va/ashburn/43951-farmwell-hunt-plaza.html",
+      "snippet": "Find your nearby Taco Bell at 43951 Farmwell Hunt Plaza in Ashburn, VA. We're serving all your favorite menu items, from classic …"
+    },
+    {
+      "title": "Ashburn, Virginia Restaurants | Taco Bell®",
+      "url": "https://locations.tacobell.com/va/ashburn.html",
+      "snippet": "Find a Taco Bell restaurant in Ashburn, Virginia. Order online for restaurant pick-up or delivery!"
+    },
+    {
+      "title": "Taco Bell, 44855 Lakeview Overlook Plaza, Ashburn, VA 20147, US",
+      "url": "https://www.mapquest.com/us/virginia/taco-bell-375976408",
+      "snippet": "Find your nearby Taco Bell at 44855 Lakeview Overlook Plaza in Ashburn. We're serving all your favorite menu items, from classic …"
+    }
+  ]
+}

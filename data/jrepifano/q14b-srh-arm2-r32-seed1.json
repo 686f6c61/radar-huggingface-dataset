@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jrepifano/q14b-srh-arm2-r32-seed1",
+  "slug": "jrepifano-q14b-srh-arm2-r32-seed1",
+  "author": "jrepifano",
+  "url": "https://huggingface.co/jrepifano/q14b-srh-arm2-r32-seed1",
+  "created_at": "2026-09-19T00:09:14.000Z",
+  "updated_at": "2026-09-19T00:22:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 842379084,
+  "storage_human": "842 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Picsart AI Photo Editor - تنزيل وتثبيت على Windows | Microsoft Store مجاناً",
+      "url": "https://apps.microsoft.com/detail/9wzdncrfj10m?hl=ar-SA&gl=SA",
+      "snippet": "استخدم Picsart، واحصل على محرر الصور لنظام التشغيل Windows، وانضم إلى مجتمع عالمي يضم أكثر من 150 مليون منشئ. قم بتنزيل محرر الصور المجاني لإطلاق العنان لإبداعك …"
+    },
+    {
+      "title": "أفضل 12 برنامج تعديل الصور للكمبيوتر: مجانية واحترافية للمبتدئين ...",
+      "url": "https://idraaak.com/photo-editing-program/",
+      "snippet": "May 23, 2026 · أفضل برامج تعديل الصور للكمبيوتر مع خيارات مجانية واحترافية لتجميل الصور، تعديل RAW، تحسين الألوان، إزالة العناصر، وترميم الصور القديمة."
+    },
+    {
+      "title": "افضل برنامج تحرير الصور | افضل برامج تحرير الصور للكمبيوتر",
+      "url": "https://fixthephoto.com/ar/%D8%A7%D9%81%D8%B6%D9%84-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC-%D8%AA%D8%B9%D8%AF%D9%8A%D9%84-%D8%A7%D9%84%D8%B5%D9%88%D8%B1-%D9%84%D9%84%D9%83%D9%85%D8%A8%D9%8A%D9%88%D8%AA%D8%B1.html",
+      "snippet": "الحكم : Adobe Photoshop هو أفضل برنامج لتحرير الصور للمصورين والمصممين المحترفين. يحتوي على جميع الأدوات اللازمة لتنقيح الصور وتصحيح الألوان واستعادة الصور والتصميم …"
+    },
+    {
+      "title": "محرر الصور المجاني لنظام التشغيل Windows",
+      "url": "https://icecreamapps.com/ar/Photo-Editor/",
+      "snippet": "تعرف على Icecream Photo Editor - أفضل محرر صور مجاني ومدير صور لنظام التشغيل Windows. قم بتحرير صورك مثل المحترفين: أضف نصًا وصورًا واقتصاصها وتغيير …"
+    },
+    {
+      "title": "Ultimate Photo Editor - تنزيل وتثبيت على Windows | Microsoft Store مجاناً",
+      "url": "https://apps.microsoft.com/detail/9mszhwl8bw39?hl=ar-SA&gl=SA",
+      "snippet": "Ultimate Photo Editor هو تطبيق صغير لتحرير الصور. حتى إذا لم تكن لديك معرفة كبيرة بتعديل الصور ، يمكنك فعل الكثير باستخدام محرر الصور هذا. محرر صور شامل للغاية وكثيرًا …"
+    }
+  ]
+}

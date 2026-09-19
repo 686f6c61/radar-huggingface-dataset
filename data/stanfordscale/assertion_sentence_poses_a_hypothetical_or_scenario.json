@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "id": "StanfordSCALE/assertion_sentence_poses_a_hypothetical_or_scenario",
+  "slug": "stanfordscale-assertion_sentence_poses_a_hypothetical_or_scenario",
+  "author": "StanfordSCALE",
+  "url": "https://huggingface.co/StanfordSCALE/assertion_sentence_poses_a_hypothetical_or_scenario",
+  "created_at": "2026-09-18T20:48:31.000Z",
+  "updated_at": "2026-09-18T20:48:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "setfit",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "setfit",
+    "safetensors",
+    "mpnet",
+    "text-classification",
+    "education",
+    "classroom-discourse",
+    "edubehaviors",
+    "assertion",
+    "en",
+    "dataset:StanfordSCALE/assertions_llm_annotated_talkmoves",
+    "base_model:sentence-transformers/paraphrase-mpnet-base-v2",
+    "base_model:finetune:sentence-transformers/paraphrase-mpnet-base-v2",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109486464,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437974679,
+  "storage_human": "438 MB",
+  "base_model": "sentence-transformers/paraphrase-mpnet-base-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "F1 (positive class, test)",
+      "value": 0.5503
+    },
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "Precision (positive class, test)",
+      "value": 0.4881
+    },
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "Recall (positive class, test)",
+      "value": 0.6308
+    },
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "ROC-AUC (test)",
+      "value": 0.9476
+    }
+  ],
+  "sources": [
+    {
+      "title": "e-CAC: entenda para que serve e como acessar online",
+      "url": "https://www.contabeis.com.br/noticias/75588/e-cac-entenda-para-que-serve-e-como-acessar-online/",
+      "snippet": "Mar 15, 2026 · Descubra o que é o e-CAC, portal da Receita Federal, como acessá-lo com gov.br ou certificado digital e sua …"
+    },
+    {
+      "title": "E-CAC: o que é e como usar o portal de atendimento da RFB",
+      "url": "https://www.contabeis.com.br/noticias/53867/e-cac-o-que-e-e-como-usar-o-portal-de-atendimento-da-rfb/",
+      "snippet": "Dec 1, 2022 · Confira como acessar o e-CAC e fazer consultas, parcelamento de débitos e emitir comprovantes. Leia o nosso artigo …"
+    },
+    {
+      "title": "e-CAC: RFB reconhece instabilidade mas ainda não prorroga prazos",
+      "url": "https://www.contabeis.com.br/noticias/75286/e-cac-rfb-reconhece-instabilidade-mas-ainda-nao-prorroga-prazos/",
+      "snippet": "Feb 24, 2026 · INSTABILIDADE NO E-CAC RFB reconhece que instabilidade no e-CAC está relacionada à infraestrutura do sistema …"
+    },
+    {
+      "title": "ERRO AO ACESSAR O ECAC COM O CERTIFICADO DIGITAL DA EMPRESA",
+      "url": "https://www.contabeis.com.br/forum/departamento-pessoal-e-rh/410325/erro-ao-acessar-o-ecac-com-o-certificado-digital-da-empresa/",
+      "snippet": "Jan 29, 2026 · Boa tarde!Estou tentando acessar o certificado digital da empresa no ecac porém da o seguinte erro \"Você desativou …"
+    },
+    {
+      "title": "Receita Federal reforça fim do e-CAC em nova IN",
+      "url": "https://www.contabeis.com.br/noticias/76129/receita-federal-reforca-fim-do-e-cac-em-nova-in/",
+      "snippet": "Apr 13, 2026 · Receita Federal atualiza regras para acesso a serviços digitais com foco na substituição gradual do portal e-CAC pelo …"
+    }
+  ]
+}

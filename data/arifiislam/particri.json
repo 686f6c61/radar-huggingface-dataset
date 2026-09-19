@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "ArifiIslam/particri",
+  "slug": "arifiislam-particri",
+  "author": "ArifiIslam",
+  "url": "https://huggingface.co/ArifiIslam/particri",
+  "created_at": "2026-09-18T20:08:32.000Z",
+  "updated_at": "2026-09-18T20:38:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 32181487,
+  "storage_human": "32 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Otis and Zelma - Film 2026 - AlloCiné",
+      "url": "https://www.allocine.fr/film/fichefilm_gen_cfilm=315475.html",
+      "snippet": "Otis and Zelma est un film réalisé par Channing Godfrey Peoples avec John Boyega, Danielle Deadwyler. Synopsis : Biopic consacré …"
+    },
+    {
+      "title": "Otis Redding — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Otis_Redding",
+      "snippet": "Dans un mélange de genres étonnant, Otis Redding veut d’ailleurs reprendre beaucoup de ses chansons en accélérant les ballades …"
+    },
+    {
+      "title": "Otis & Zelma - IMDb",
+      "url": "https://www.imdb.com/title/tt33563890/",
+      "snippet": "Otis & Zelma: Directed by Channing Godfrey Peoples. With Danielle Deadwyler, John Boyega. A chronicle of the life of soul legend …"
+    },
+    {
+      "title": "Otis Redding - Film (2013) - SensCritique",
+      "url": "https://www.senscritique.com/film/Otis_Redding/10278814",
+      "snippet": "Otis Redding est un film de Stefan Morawietz. Synopsis · Plus de 45 ans après sa disparition dans un accident d'avion, à l'âge de 26 …"
+    },
+    {
+      "title": "Otis Redding biopic: Otis & Zelma cast, release date, plot and ...",
+      "url": "https://www.smoothradio.com/news/entertainment/otis-redding-biopic-cast-release-date/",
+      "snippet": "Oct 4, 2024 · Titled Otis & Zelma, the forthcoming Otis Redding biopic will explore the late soul icon’s life and his 10-year relationship …"
+    }
+  ]
+}

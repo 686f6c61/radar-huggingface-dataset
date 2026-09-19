@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "philgear/pocketgull-veteran-nexus-2b",
+  "slug": "philgear-pocketgull-veteran-nexus-2b",
+  "author": "philgear",
+  "url": "https://huggingface.co/philgear/pocketgull-veteran-nexus-2b",
+  "created_at": "2026-09-18T20:47:05.000Z",
+  "updated_at": "2026-09-18T20:47:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "gemma-3",
+    "lora",
+    "clinical-nlp",
+    "healthcare",
+    "hipaa-safe-harbor",
+    "open-science",
+    "pocketgull",
+    "nih-medquad",
+    "who-mhgap",
+    "text-generation",
+    "en",
+    "base_model:google/gemma-3-1b-it",
+    "base_model:adapter:google/gemma-3-1b-it",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "google/gemma-3-1b-it",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "منصة الموظفين",
+      "url": "https://emp.moe.gov.jo/public/P01_Home/",
+      "snippet": "Your support ID is: 12166133548597317842."
+    },
+    {
+      "title": "منصة الموظفين | وزارة التربية والتعليم وتنمية الموارد البشرية",
+      "url": "https://moe.gov.jo/ar/content/%D9%85%D9%86%D8%B5%D8%A9-%D8%A7%D9%84%D9%85%D9%88%D8%B8%D9%81%D9%8A%D9%86",
+      "snippet": "تأسست تحت اسم وزارة المعارف سنة 1921، ثم وزارة التربية والتعليم سنة 1956."
+    },
+    {
+      "title": "www.employeesinfo.gov.jo",
+      "url": "https://www.employeesinfo.gov.jo/",
+      "snippet": "تسجيل الدخول يرجى التأكد من اسم المستخدم و كلمة المرور اسم المستخدم كلمة المرور رمز التحقق"
+    },
+    {
+      "title": "رابط منصة الموظفين التابعة لوزارة التربية والتعليم",
+      "url": "https://www.jo1jo.com/26088.html",
+      "snippet": "Nov 12, 2023 · أطلقت وزارة التربية والتعليم منصة الموظفين التي تهدف إلى إتاحة الفرصة لكافة الموظفين الإستعلام عن كافة الخدمات وتقديم الخدمات من خلاله؛ إسهاما في تحسين الإجراءات الحكومية …"
+    },
+    {
+      "title": "تسجيل الدخول",
+      "url": "http://apps.moe.gov.jo/qrc2/empstr/",
+      "snippet": "نسيت كلمة المرور؟ © 2026 نظام التشكيلات والتعيينات. الحقوق محفوظة وزارة التربية والتعليم - إدارة التعليم الخاص | برمجة وتصميم: أسامه محمد الخن."
+    }
+  ]
+}

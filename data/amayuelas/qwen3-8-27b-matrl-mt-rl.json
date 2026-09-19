@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "amayuelas/Qwen3.8-27B-MatRL-MT-RL",
+  "slug": "amayuelas-qwen3-8-27b-matrl-mt-rl",
+  "author": "amayuelas",
+  "url": "https://huggingface.co/amayuelas/Qwen3.8-27B-MatRL-MT-RL",
+  "created_at": "2026-09-19T01:16:58.000Z",
+  "updated_at": "2026-09-19T01:24:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "materials-science",
+    "crystal-structure-generation",
+    "reinforcement-learning",
+    "multi-turn",
+    "tool-use",
+    "prime-rl",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 197,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 54733595997,
+  "storage_human": "54.7 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AVM FRITZ!Box 5690 WLAN-Router bei MediaMarkt kaufen",
+      "url": "https://www.mediamarkt.de/de/product/_avm-fritzbox-5690-fiber-20003096-3015875.html?msockid=0381320342c9633d38da25da431d62fd",
+      "snippet": "Leistungsstarker WLAN-Router mit modernster Technik, hoher Reichweite und zuverlässiger Sicherheit. Jetzt bei MediaMarkt."
+    },
+    {
+      "title": "MediaMarkt Worms | Dein Elektromarkt vor Ort",
+      "url": "https://www.mediamarkt.de/de/store/worms-477?msockid=0381320342c9633d38da25da431d62fd",
+      "snippet": "Übrigens: Refurbished Produkte aus unserem Markt findest du auch online – einfach beim Kauf „Refurbished“ auswählen und …"
+    },
+    {
+      "title": "AVM FRITZ!Box 5690 Pro DSL und Glasfaser, WiFi 7 - NEU",
+      "url": "https://www.kleinanzeigen.de/s-anzeige/avm-fritz-box-5690-pro-dsl-und-glasfaser-wifi-7-neu/3482414666-225-5195?msockid=0381320342c9633d38da25da431d62fd",
+      "snippet": "Aug 11, 2026 · Verkaufe hier eine nagelneue und unbenutzte FRITZ!Box 5690 pro . Sie ist ungeöffnet und die Originale Rechnung ( …"
+    },
+    {
+      "title": "5690 Fritzbox kleinanzeigen.de",
+      "url": "https://www.kleinanzeigen.de/s-5690-fritzbox/k0?msockid=0381320342c9633d38da25da431d62fd",
+      "snippet": "AVM FRITZ!Box 5690 Pro - Neu & OVP Ich verkaufe hier eine neue und originalverpackte FRITZ!Box 5690 Pro. Das Gerät bietet …"
+    },
+    {
+      "title": "Wo finde ich Einzelstücke, Restposten oder Refurbished-Geräte?",
+      "url": "https://faq.mediamarkt.de/app/answers/detail/a_id/19086/~/wo-finde-ich-einzelst%C3%BCcke%2C-restposten-oder-refurbished-ger%C3%A4te%3F",
+      "snippet": "Eine große Auswahl an Refurbished-Produkten findest du in unserem Onlineshop. Refurbished-Produkt gesucht? Hier geht es zur …"
+    }
+  ]
+}

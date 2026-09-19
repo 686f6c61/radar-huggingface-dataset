@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "DuoNeural/LFM2.5-8B-A1B-Hermes-Agentic-Coder-Abliterated-v3-LoRA",
+  "slug": "duoneural-lfm2-5-8b-a1b-hermes-agentic-coder-abliterated-v3-lora",
+  "author": "DuoNeural",
+  "url": "https://huggingface.co/DuoNeural/LFM2.5-8B-A1B-Hermes-Agentic-Coder-Abliterated-v3-LoRA",
+  "created_at": "2026-09-18T22:09:32.000Z",
+  "updated_at": "2026-09-19T15:39:00.000Z",
+  "license": "liquid-foundation-model-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "hermes",
+  "languages": [],
+  "tags": [
+    "hermes",
+    "safetensors",
+    "duo-neural",
+    "agentic",
+    "coding",
+    "function-calling",
+    "liquid-foundation-model",
+    "moe",
+    "abliterated",
+    "code",
+    "evalplus",
+    "reasoning",
+    "system2",
+    "text-generation",
+    "conversational",
+    "base_model:DuoNeural/LFM2.5-8B-A1B-Abliterated",
+    "base_model:finetune:DuoNeural/LFM2.5-8B-A1B-Abliterated",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 109149238,
+  "storage_human": "109 MB",
+  "base_model": "DuoNeural/LFM2.5-8B-A1B-Abliterated",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "【情報】帕魯編年史 - 配種，圖鑑，掉落，首領資訊",
+      "url": "https://forum.gamer.com.tw/C.php?bsn=71458&snA=1079",
+      "snippet": "Jan 26, 2024 · https://paldb.cc/tw/ 在遊戲時數超過 70 小時之後，還是寫一下自己查也比較方便。 已完成項目 * 帕魯圖鑑 (包括掉落， …"
+    },
+    {
+      "title": "【心得】夏季更新櫻島0.3.2版 推薦據點位置 火山 -854, -454 / 櫻島",
+      "url": "https://forum.gamer.com.tw/C.php?bsn=71458&snA=3127",
+      "snippet": "Aug 4, 2024 · 介紹一下新版個人推薦的據點位置, 以及蓋家注意事項 大部份資訊相關的內容來自 帕魯編年史 paldb.cc 1. 火山 原油點 …"
+    },
+    {
+      "title": "【情報】帕魯編年史 - 配種，圖鑑，掉落，首領資訊",
+      "url": "https://forum.gamer.com.tw/Co.php?bsn=71458&sn=3698",
+      "snippet": "Feb 2, 2024 · https://paldb.cc/tw/ 在遊戲時數超過 70 小時之後，還是寫一下自己查也比較方便。 已完成項目 * 帕魯圖鑑 (包括掉落， …"
+    },
+    {
+      "title": "RE:【情報】帕魯編年史 - 配種，圖鑑，掉落，首領資訊",
+      "url": "https://forum.gamer.com.tw/Co.php?bsn=71458&sn=12736",
+      "snippet": "Dec 30, 2024 · * 增加自大的帕魯鑑賞家資料 https://paldb.cc/tw/Arrogant_Pal_Critic"
+    },
+    {
+      "title": "【情報】V0.7.0版本帕魯及大量內容重大更新 @幻獸帕魯 哈啦板 - 巴哈 …",
+      "url": "https://forum.gamer.com.tw/C.php?bsn=71458&snA=4239",
+      "snippet": "Dec 27, 2025 · 幻獸帕魯專業管理GUI，整合伺服器設定、備份、公告、玩家管理等多項功能，持續更新中！"
+    }
+  ]
+}

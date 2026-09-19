@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "jwj32/ut-head-adaptive-seed42-step40",
+  "slug": "jwj32-ut-head-adaptive-seed42-step40",
+  "author": "jwj32",
+  "url": "https://huggingface.co/jwj32/ut-head-adaptive-seed42-step40",
+  "created_at": "2026-09-19T00:53:36.000Z",
+  "updated_at": "2026-09-19T09:22:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 17,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 16101421491,
+  "storage_human": "16.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "2025 NFL Playoff Bracket - ESPN",
+      "url": "https://www.espn.com/nfl/playoff-bracket/_/season/2025",
+      "snippet": "Visit ESPN to view the 2025 NFL Playoff bracket for live scores and results."
+    },
+    {
+      "title": "NFL Official Playoff Bracket: AFC & NFC Matchups Unveiled - NFL.com",
+      "url": "https://www.nfl.com/playoffs/bracket/2025",
+      "snippet": "Explore the official NFL Playoff Bracket with updated AFC and NFC matchups. Stay informed on the road to the Super Bowl with live …"
+    },
+    {
+      "title": "NFL Playoff Bracket - 2025 Playoffs and Super Bowl Schedule",
+      "url": "https://www.cbssports.com/nfl/postseason/bracket/",
+      "snippet": "Jan 9, 2012 · Complete coverage of the 2025 NFL Playoffs including a schedule, game times, and bracket for AFC and NFC playoff …"
+    },
+    {
+      "title": "2025–26 NFL playoffs - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/2025%E2%80%9326_NFL_playoffs",
+      "snippet": "Within each conference, the four division winners and the top three non-division winners with the best overall regular season records …"
+    },
+    {
+      "title": "2025 NFL Playoff Bracket: Final Results",
+      "url": "https://nflplayoff.com/2025-nfl-playoff-bracket-final-results/",
+      "snippet": "Mar 10, 2026 · If we follow the 2025 NFL playoff bracket format, it is shown below. (1) Chiefs earned the first-round bye in the AFC. …"
+    }
+  ]
+}

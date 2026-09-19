@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "id": "StanfordSCALE/assertion_sentence_has_fraction_terms",
+  "slug": "stanfordscale-assertion_sentence_has_fraction_terms",
+  "author": "StanfordSCALE",
+  "url": "https://huggingface.co/StanfordSCALE/assertion_sentence_has_fraction_terms",
+  "created_at": "2026-09-18T20:46:53.000Z",
+  "updated_at": "2026-09-18T20:47:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "setfit",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "setfit",
+    "safetensors",
+    "mpnet",
+    "text-classification",
+    "education",
+    "classroom-discourse",
+    "edubehaviors",
+    "assertion",
+    "en",
+    "dataset:StanfordSCALE/assertions_llm_annotated_talkmoves",
+    "base_model:sentence-transformers/paraphrase-mpnet-base-v2",
+    "base_model:finetune:sentence-transformers/paraphrase-mpnet-base-v2",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109486464,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437974679,
+  "storage_human": "438 MB",
+  "base_model": "sentence-transformers/paraphrase-mpnet-base-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "F1 (positive class, test)",
+      "value": 0.8683
+    },
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "Precision (positive class, test)",
+      "value": 0.8508
+    },
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "Recall (positive class, test)",
+      "value": 0.8866
+    },
+    {
+      "task": null,
+      "dataset": "assertions_llm_annotated_talkmoves",
+      "metric": "ROC-AUC (test)",
+      "value": 0.9644
+    }
+  ],
+  "sources": [
+    {
+      "title": "How to start a business from home: UK step-by-step guide - Xero",
+      "url": "https://www.xero.com/uk/guides/how-to-start-business-from-home/?msockid=0a902bf434e86dfb122d3c2c35c36cd5",
+      "snippet": "Apr 21, 2026 · Learn how to start a business from home in the UK with practical tips on business plans, legal checks, finances and …"
+    },
+    {
+      "title": "How to start a small business in the UK - Sage",
+      "url": "https://www.sage.com/en-gb/blog/how-to-start-a-small-business/",
+      "snippet": "May 20, 2026 · Learn how to start a small business, from business model planning to registering for tax purposes. Starting a UK …"
+    },
+    {
+      "title": "Starting a business from home: The honest guide",
+      "url": "https://www.enterprisenation.com/learn-something/how-to-start-a-business-from-home/",
+      "snippet": "Sep 12, 2025 · A friendly, step-by-step guide to starting a business from home in the UK – including legal tips, marketing, finance and …"
+    },
+    {
+      "title": "Home business ideas: low-cost ways to start in the UK - Xero",
+      "url": "https://www.xero.com/uk/guides/home-business-ideas/?msockid=0a902bf434e86dfb122d3c2c35c36cd5",
+      "snippet": "May 7, 2026 · Explore home business ideas you can start in the UK with £1,000 or less, plus tips on setup, tax and managing your …"
+    },
+    {
+      "title": "How To Start A Business From Home in the UK (2025)",
+      "url": "https://www.shopwired.co.uk/blog/how-to-start-a-business-from-home-in-the-uk",
+      "snippet": "Jul 31, 2025 · In this guide, we’ll show you exactly how to start a home-based business in the UK. From choosing your business …"
+    }
+  ]
+}

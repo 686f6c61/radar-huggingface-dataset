@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Scorpio1111/AfterMidnight-MiniMax-H3-NSFW",
+  "slug": "scorpio1111-aftermidnight-minimax-h3-nsfw",
+  "author": "Scorpio1111",
+  "url": "https://huggingface.co/Scorpio1111/AfterMidnight-MiniMax-H3-NSFW",
+  "created_at": "2026-09-19T01:00:52.000Z",
+  "updated_at": "2026-09-19T01:00:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "license:apache-2.0",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4771312976,
+  "storage_human": "4.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Listen Vanilla Radio Fresh Flavors | Vanilla Radio Premium | Μουσική ...",
+      "url": "https://www.vanillaradio.com/listen-fresh-flavors/",
+      "snippet": "Vanilla Radio fresh flavors, a quality selection of music from around the world.Refresh your music trends 24/7 for free or try our …"
+    },
+    {
+      "title": "Vanilla Radio || Deep Flavors, Web Radios στο Live24.gr",
+      "url": "https://live24.gr/radio/generic.jsp?sid=1998",
+      "snippet": "Vanilla Radio ένα από τα καλύτερα webradio ηλεκτρονικής μουσικής. Πρόκειται για ένα web radio που γεννήθηκε στην Κρέστενα …"
+    },
+    {
+      "title": "Vanilla Radio || Fresh Flavors, Web Radios στο Live24.gr",
+      "url": "https://live24.gr/radio/generic.jsp?sid=2963",
+      "snippet": "Περιγραφή Σταθμού Vanilla Radio || Fresh Flavors: Στο Fresh Flavors Channel, θα βρείτε όλα τα super Hits του σήμερα από τη …"
+    },
+    {
+      "title": "Vanilla Radio - Fresh Flavors Internet Radio - Radio-live.gr",
+      "url": "https://radio-live.gr/vanilla-fresh",
+      "snippet": "O Vanilla Radio - Fresh Flavors είναι ένας ελληνικός ραδιοφωνικός σταθμός που εκπέμπει στον Πύργο. Εκπέμπει χορευτική μουσική, …"
+    },
+    {
+      "title": "Μουσική για καφέ μπαρ εστιατόρια - cafe bar | vanilla radio",
+      "url": "https://www.vanillaradio.com/",
+      "snippet": "Vanilla Free & Premium Review I've never thought I'd listen to a radio until I found Vanilla Radio. 24/7, no ads, absolutely stunning …"
+    }
+  ]
+}

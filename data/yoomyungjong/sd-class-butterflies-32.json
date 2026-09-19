@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "yoomyungjong/sd-class-butterflies-32",
+  "slug": "yoomyungjong-sd-class-butterflies-32",
+  "author": "yoomyungjong",
+  "url": "https://huggingface.co/yoomyungjong/sd-class-butterflies-32",
+  "created_at": "2026-09-19T01:30:28.000Z",
+  "updated_at": "2026-09-19T01:55:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "unconditional-image-generation",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "pytorch",
+    "unconditional-image-generation",
+    "diffusion-models-class",
+    "license:mit",
+    "diffusers:DDPMPipeline",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 30,
+  "trending_score": 0,
+  "parameters": 18536323,
+  "parameters_human": "18.5M",
+  "storage_bytes": 222555756,
+  "storage_human": "223 MB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vasovagal syncope - Symptoms and causes - Mayo Clinic",
+      "url": "https://www.mayoclinic.org/diseases-conditions/vasovagal-syncope/symptoms-causes/syc-20350527",
+      "snippet": "Feb 15, 2025 · Vasovagal syncope is usually harmless and requires no treatment. But it's possible that you may injure yourself during …"
+    },
+    {
+      "title": "النوبة الوعائية المبهمة - التشخيص والعلاج - Mayo Clinic (مايو كلينك)",
+      "url": "https://www.mayoclinic.org/ar/diseases-conditions/vasovagal-syncope/diagnosis-treatment/drc-20350531",
+      "snippet": "اختبار الإجهاد اختبار الطاولة المائلة الفحوصات العصبية المسجل الحلقي القابل للغرس: جهاز مراقبة القلب تخطيط كهربية القلب (يُشار إليه اختصارًا ECG أو EKG) مخطط صدى القلب أظهر المزيد …"
+    },
+    {
+      "title": "Has anyone felt dizzy or faint when starting to eat?",
+      "url": "https://connect.mayoclinic.org/discussion/has-anyone-felt-dizzy-or-faint-when-starting-to-eat/",
+      "snippet": "May 17, 2024 · I have a condition called POTS, and this happens to me regularly, but in theory it could happen to anyone. With …"
+    },
+    {
+      "title": "Your experience during & after Transrectal Prostate Biopsy (TRUS)",
+      "url": "https://connect.mayoclinic.org/discussion/your-experience-during-and-after-a-trans-rectal-prostate-biopsy/",
+      "snippet": "Oct 19, 2023 · Vasovagal reaction is the vagal response when stimulation of the vagus nerve causes symptoms such as …"
+    },
+    {
+      "title": "Mayo Clinic Q and A: When does fainting require medical attention?",
+      "url": "https://newsnetwork.mayoclinic.org/discussion/mayo-clinic-q-and-a-when-does-fainting-require-medical-attention/",
+      "snippet": "Apr 13, 2018 · Vasovagal syncope happens when the part of your nervous system that controls your heart rate and blood pressure …"
+    }
+  ]
+}

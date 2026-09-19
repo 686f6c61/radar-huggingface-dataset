@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "hyunah12/sd-class-butterflies-32",
+  "slug": "hyunah12-sd-class-butterflies-32",
+  "author": "hyunah12",
+  "url": "https://huggingface.co/hyunah12/sd-class-butterflies-32",
+  "created_at": "2026-09-19T02:08:26.000Z",
+  "updated_at": "2026-09-19T02:08:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "unconditional-image-generation",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "pytorch",
+    "unconditional-image-generation",
+    "diffusion-models-class",
+    "license:mit",
+    "diffusers:DDPMPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 18536323,
+  "parameters_human": "18.5M",
+  "storage_bytes": 74185252,
+  "storage_human": "74 MB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vaillant VRC-Set MF-TEC Installationsanleitung - ManualsLib",
+      "url": "https://www.manualslib.de/manual/817883/Vaillant-Vrc-Set-Mf-Tec.html",
+      "snippet": "Ansicht Und Herunterladen Vaillant Vrc-Set Mf-Tec Installationsanleitung Online. Vrc-Set Mf-Tec Steuergeräte Pdf Anleitung …"
+    },
+    {
+      "title": "BEDIENUNGSANLEITUNG - Vaillant",
+      "url": "https://kontakt.vaillant.de/documents/download/86614/",
+      "snippet": "Sehr geehrter Kunde! Mit der Heizungsregelung VRC MF-TEC haben Sie ein Qualitätsprodukt aus dem House Vaillant erworben – …"
+    },
+    {
+      "title": "Vaillant VRC-Set MF-TEC Handbücher - ManualsLib",
+      "url": "https://www.manualslib.de/products/Vaillant-Vrc-Set-Mf-Tec-1877033.html",
+      "snippet": "Online ansehen oder herunterladen Vaillant VRC-Set MF-TEC Installationsanleitung."
+    },
+    {
+      "title": "Bedienungsanleitung Vaillant VRC MF-TEC (32 Seiten)",
+      "url": "https://www.bedienungsanleitu.ng/vaillant/vrc-mf-tec/anleitung",
+      "snippet": "Der Vaillant VRC MF-TEC Thermostat ist ein Gerät zur Steuerung der Raumtemperatur. Er ist speziell für den Einsatz in …"
+    },
+    {
+      "title": "Günstig Vaillant VRC MF-TEC Set - Heiz24.de",
+      "url": "https://www.heiz24.de/Vaillant-VRC-MF-TEC-Set-Neu",
+      "snippet": "Das Vaillant VRC MF-TEC Set ermöglicht eine effiziente und komfortable Steuerung Ihrer Heizungsanlage. Mit modernster Technik …"
+    }
+  ]
+}

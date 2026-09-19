@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "crazyape777/moe-ft-006b",
+  "slug": "crazyape777-moe-ft-006b",
+  "author": "crazyape777",
+  "url": "https://huggingface.co/crazyape777/moe-ft-006b",
+  "created_at": "2026-09-19T00:32:06.000Z",
+  "updated_at": "2026-09-19T00:32:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 47,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 70234483981,
+  "storage_human": "70.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Národní park Banff v Kanadě: 12 nejlepších tipů, co vidět",
+      "url": "https://loudavymkrokem.cz/narodni-park-banff/",
+      "snippet": "Jan 2, 2024 · Národní park Banff z pohledu cestovatelů, kteří v Kanadě žili. Co vidět v Banffu za 5 – 7 dní. Tipy na nejkrásnější místa, …"
+    },
+    {
+      "title": "Co vidět v Banffu – 35 ikonických míst, která ohromí (+mapa)",
+      "url": "https://czechtheworld.com/co-videt-v-banffu/",
+      "snippet": "Jun 28, 2026 · V tomhle článku jsme pro vás i díky Vítkovi sepsali to nejlepší, co vidět v Banffu a zažít – od ikonických míst až po …"
+    },
+    {
+      "title": "Banff, Kanada | Kam vyrazit, na co si dát pozor, fotky a reportáž z ...",
+      "url": "https://fotrnatripu.tv/novinky/cestovatelske-specialy/banff-ledovce-tyrkysova-jezera-fronty-turistu-losi-trus-a-ceske-cau-uprostred-skal",
+      "snippet": "Nov 11, 2025 · Lumi v tu chvíli zbystřila, asi si přepočítávala, jak rychle by běžela zpátky do auta, kdyby se nějaký objevil. Město …"
+    },
+    {
+      "title": "10 nejlepších míst v Banffu, kam se vyplatí vyrazit ... - GetYourGuide",
+      "url": "https://www.getyourguide.com/cs-cz/explorer/banff-ttd284/best-places-to-visit-in-banff/?msockid=09933c84c1b262c13e592b5dc0fb63ef",
+      "snippet": "Národní park Banff je přece jednou z nejlepších destinací v Kanadě. Od skvělého jídla až po objevování Skalistých hor – to jsou ty …"
+    },
+    {
+      "title": "Národní park Banff, Alberta, Kanada. Lake Louise a Jasper",
+      "url": "https://jakdokanady.cz/narodni-park-banff/",
+      "snippet": "Jan 4, 2021 · Banff národní park je nejvyhledávanější oblastí v Kanadě. Navštivte zajímavá místa, Lake Louise, Moraine Lake, Payto …"
+    }
+  ]
+}

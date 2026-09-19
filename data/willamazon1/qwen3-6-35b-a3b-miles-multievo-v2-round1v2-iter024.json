@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "willamazon1/qwen3.6-35b-a3b-miles-multievo-v2-round1v2-iter024",
+  "slug": "willamazon1-qwen3-6-35b-a3b-miles-multievo-v2-round1v2-iter024",
+  "author": "willamazon1",
+  "url": "https://huggingface.co/willamazon1/qwen3.6-35b-a3b-miles-multievo-v2-round1v2-iter024",
+  "created_at": "2026-09-18T21:45:35.000Z",
+  "updated_at": "2026-09-18T21:47:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "reinforcement-learning",
+    "multimodal",
+    "moe",
+    "agent",
+    "conversational",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 71916587318,
+  "storage_human": "71.9 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "sex videos - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/tags/sex",
+      "snippet": "Sex of students at a party. Real sex POV 7 min G00d View - 22.1M Views - 19,208 sex videos found on XVIDEOS 1080p 15 min"
+    },
+    {
+      "title": "Free Porn, Sex, Tube Videos, XXX Pics, Pussy in Porno Movies - XNXX.COM",
+      "url": "https://www.xnxx.com/",
+      "snippet": "XNXX delivers free sex movies and fast free porn videos (tube porn). Now 10 million+ sex vids available for free! Featuring hot pussy, …"
+    },
+    {
+      "title": "Free Porn Videos & Sex Movies - Porno, XXX, Porn Tube | Pornhub",
+      "url": "https://www.pornhub.com/",
+      "snippet": "Welcome to Pornhub.com, home of the best hardcore free porn videos with the hottest adult stars. Get full length scenes from your …"
+    },
+    {
+      "title": "sex- videos - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/tags/sex-",
+      "snippet": "Sex Arena - First to Cum Loses [AI GENERATED] 15 min Honeybeeai - 660k Views - 1080p"
+    },
+    {
+      "title": "QORNO.COM - Sex Videos",
+      "url": "https://www.qorno.com/",
+      "snippet": "QORNO.COM is the Nr. 1 source for free SEX VIDEOS. Millions of porn movies aggregated from hundreds of porn sites, closely …"
+    }
+  ]
+}

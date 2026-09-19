@@ -1,0 +1,106 @@
+{
+  "schema": 1,
+  "id": "dronefreak/uavdt-rfdetr-small",
+  "slug": "dronefreak-uavdt-rfdetr-small",
+  "author": "dronefreak",
+  "url": "https://huggingface.co/dronefreak/uavdt-rfdetr-small",
+  "created_at": "2026-09-18T21:24:15.000Z",
+  "updated_at": "2026-09-21T13:57:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "rfdetr",
+  "languages": [],
+  "tags": [
+    "rfdetr",
+    "object-detection",
+    "detectionbench",
+    "pytorch",
+    "computer-vision",
+    "aerial-imagery",
+    "drone",
+    "uav",
+    "vehicle-detection",
+    "traffic-surveillance",
+    "small-object-detection",
+    "dataset:dronefreak/UAVDT",
+    "arxiv:1804.00518",
+    "arxiv:2511.09554",
+    "arxiv:2304.07193",
+    "arxiv:2405.14458",
+    "arxiv:2410.17725",
+    "arxiv:2606.03748",
+    "arxiv:2402.13616",
+    "base_model:Roboflow/rf-detr-small",
+    "base_model:finetune:Roboflow/rf-detr-small",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 270198004,
+  "storage_human": "270 MB",
+  "base_model": "Roboflow/rf-detr-small",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Object Detection",
+      "dataset": "UAVDT",
+      "metric": "mAP@50 (test split)",
+      "value": 14.89
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "UAVDT",
+      "metric": "mAP@50-95 (test split)",
+      "value": 8.92
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "UAVDT",
+      "metric": "Precision (test split)",
+      "value": 38.83
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "UAVDT",
+      "metric": "Recall (test split)",
+      "value": 61.65
+    }
+  ],
+  "sources": [
+    {
+      "title": "Das Erste live - jetzt zum kostenlosen Livestream! - ARD Mediathek",
+      "url": "https://www.ardmediathek.de/live/Y3JpZDovL2Rhc2Vyc3RlLmRlL2xpdmUvY2xpcC9hYmNhMDdhMy0zNDc2LTQ4NTEtYjE2Mi1mZGU4ZjY0NmQ0YzQ",
+      "snippet": "Das Erste Livestream. Das TV-Programm von heute live im Fernsehen verfolgen! Jetzt zum kostenlosen Stream!"
+    },
+    {
+      "title": "ARD Mediathek - Sendung verpasst - Programm heute",
+      "url": "https://www.ardmediathek.de/programm/heute",
+      "snippet": "Panoramabilder Täglich von 6.00 Uhr bis 20.00 Uhr in der ARD Mediathek unter www.br.de/panoramabilder 01:00 Uhr"
+    },
+    {
+      "title": "ARD Mediathek: Filme, Serien und Dokus online anschauen",
+      "url": "https://www.ardmediathek.de/",
+      "snippet": "Alle Inhalte der ARD Mediathek im Überblick: Livestreams, Nachrichten, Filme, Serien und spannende Dokus. Hier anschauen!"
+    },
+    {
+      "title": "Das Erste in der Mediathek – jetzt online anschauen",
+      "url": "https://www.ardmediathek.de/daserste",
+      "snippet": "tagesschau | Nachrichten Aktuelle Nachrichten und das Wichtigste für heute. News-Livestreams, tagesschau und tagesthemen."
+    },
+    {
+      "title": "Das Erste Programm heute - Sendung verpasst - ARD Mediathek",
+      "url": "https://www.ardmediathek.de/daserste/programm/heute",
+      "snippet": "Heute, 17.09. Wie gesund ist es, den Wecker wegzudrücken? Wer einmal lügt. Ein Krimi aus Passau. Wer einmal lügt. Ein Krimi aus …"
+    }
+  ]
+}

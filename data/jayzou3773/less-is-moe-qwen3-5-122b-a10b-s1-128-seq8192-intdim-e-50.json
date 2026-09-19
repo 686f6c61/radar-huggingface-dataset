@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "jayzou3773/less-is-moe-qwen3.5-122b-a10b-s1-128-seq8192-intdim-e-50",
+  "slug": "jayzou3773-less-is-moe-qwen3-5-122b-a10b-s1-128-seq8192-intdim-e-50",
+  "author": "jayzou3773",
+  "url": "https://huggingface.co/jayzou3773/less-is-moe-qwen3.5-122b-a10b-s1-128-seq8192-intdim-e-50",
+  "created_at": "2026-09-18T23:00:39.000Z",
+  "updated_at": "2026-09-18T23:08:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe_text",
+    "moe",
+    "pruning",
+    "less-is-moe",
+    "text-generation",
+    "conversational",
+    "dataset:jayzou3773/less-is-moe-s1-calibration-128-seq8192",
+    "base_model:Qwen/Qwen3.5-122B-A10B",
+    "base_model:finetune:Qwen/Qwen3.5-122B-A10B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 64129468416,
+  "parameters_human": "64.13B",
+  "storage_bytes": 128284150301,
+  "storage_human": "128.3 GB",
+  "base_model": "Qwen/Qwen3.5-122B-A10B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Đăng nhập vào Gmail - Máy tính - Gmail Trợ giúp",
+      "url": "https://support.google.com/mail/answer/8494?hl=vi&co=GENIE.Platform%3DDesktop",
+      "snippet": "Đăng nhập vào Gmail Mẹo: Nếu bạn đăng nhập vào một máy tính công cộng, hãy nhớ đăng xuất trước khi rời khỏi máy tính. Hãy tìm …"
+    },
+    {
+      "title": "Create a Google Account for Gmail",
+      "url": "https://support.google.com/mail/answer/56256?hl=en-gb",
+      "snippet": "Important: Before you create a new Google Account, sign out of your current account. Learn how to sign out of Gmail. From your …"
+    },
+    {
+      "title": "Rent Textbooks - Online Textbook Rental & eBooks - Chegg",
+      "url": "https://www.chegg.com/textbooks?msockid=03fa03fc6a5163432f0d14256b4f62d3",
+      "snippet": "Whether you're looking to buy textbooks online, rent textbooks for the semester, or sell textbooks you no longer need, Valore offers …"
+    },
+    {
+      "title": "有哪些好的iOS模拟器？ - 知乎",
+      "url": "https://www.zhihu.com/question/267655113",
+      "snippet": "先说下什么是模拟器，直白点讲，就是一个虚拟的手机，来运行手机的程序。可以在电脑上操作。 安卓模拟器，市面上一抓一大把， …"
+    },
+    {
+      "title": "如何评价美国电影《之后（after）》？ - 知乎",
+      "url": "https://www.zhihu.com/question/340906938",
+      "snippet": "after 甜得嗓子疼，女生“特别是对爱情抱有幻想的人”，恐怕都是这部电影的受众。 只是看似甜美的爱情，总是让我更多的恐惧真实的 …"
+    }
+  ]
+}

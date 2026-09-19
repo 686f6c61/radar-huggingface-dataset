@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "philgear/pocketgull-causal-posology-4b",
+  "slug": "philgear-pocketgull-causal-posology-4b",
+  "author": "philgear",
+  "url": "https://huggingface.co/philgear/pocketgull-causal-posology-4b",
+  "created_at": "2026-09-18T20:47:04.000Z",
+  "updated_at": "2026-09-18T20:47:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "gemma-3",
+    "lora",
+    "clinical-nlp",
+    "healthcare",
+    "hipaa-safe-harbor",
+    "open-science",
+    "pocketgull",
+    "nih-medquad",
+    "who-mhgap",
+    "text-generation",
+    "en",
+    "base_model:google/gemma-3-4b-it",
+    "base_model:adapter:google/gemma-3-4b-it",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "google/gemma-3-4b-it",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "单个电脑磁盘/硬盘怎么加密 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/e6c8503c734bb9e54f1a18ca.html",
+      "snippet": "Jan 10, 2015 · 现在电脑为了方便文件和程序的管理，一般都会把电脑分成几个磁盘，怎么可以把存放一些私密性的文件的磁盘进行加 …"
+    },
+    {
+      "title": "win10怎么启用BitLocker-百度经验",
+      "url": "https://jingyan.baidu.com/article/6c67b1d66e465c2787bb1e12.html",
+      "snippet": "Jun 4, 2019 · win10怎么启用BitLocker来保护自己的磁盘内容，今天小编教大家启用方法，供大家参考！"
+    },
+    {
+      "title": "Use BitLocker Repair Tool to Recover Encrypted Drive in Windows",
+      "url": "https://www.tenforums.com/tutorials/97390-use-bitlocker-repair-tool-recover-encrypted-drive-windows.html",
+      "snippet": "Nov 20, 2019 · The BitLocker Repair Tool (Repair-bde) can be used to access encrypted data on a severely damaged hard disk if the …"
+    },
+    {
+      "title": "Check BitLocker Drive Encryption Status in Windows 10",
+      "url": "https://www.tenforums.com/tutorials/36901-check-bitlocker-drive-encryption-status-windows-10-a.html",
+      "snippet": "Oct 10, 2020 · This tutorial will show you how to use the manage-bde -status or Get-BitLockerVolume command to check the status …"
+    },
+    {
+      "title": "win7系统如何启用Bitlocker-百度经验",
+      "url": "https://jingyan.baidu.com/article/00a07f381738ea82d028dc28.html",
+      "snippet": "Jan 28, 2019 · 3 在进入win7系统Bitlocker驱动器加密主界面后，我们会发现Bitlocker驱动器加密-硬盘驱动器栏，c盘和d盘均为关闭状 …"
+    }
+  ]
+}

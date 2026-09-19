@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Lobus22/XENA-MAXTRAL-X1.0-9B",
+  "slug": "lobus22-xena-maxtral-x1-0-9b",
+  "author": "Lobus22",
+  "url": "https://huggingface.co/Lobus22/XENA-MAXTRAL-X1.0-9B",
+  "created_at": "2026-09-19T02:54:31.000Z",
+  "updated_at": "2026-09-19T14:37:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5224813555,
+  "storage_human": "5.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fenêtre aide et support qui s'ouvre seule [Résolu] - Windows 7",
+      "url": "https://forums.commentcamarche.net/forum/affich-19363587-fenetre-aide-et-support-qui-s-ouvre-seule",
+      "snippet": "Résumé de la discussion Le problème concerne Windows 7 où la fenêtre Aide et support Windows s'ouvre automatiquement au …"
+    },
+    {
+      "title": "Comment activer les touches f1.... - Forum Windows 10",
+      "url": "https://forums.commentcamarche.net/forum/affich-34110076-comment-activer-les-touches-f1",
+      "snippet": "Nov 20, 2016 · Bonjour Tapes par exemple icône Windows + F1 Normalement cette fonction doit t'ouvrir une page internet \"comment …"
+    },
+    {
+      "title": "Explorateur de fichiers : comment annuler une action - Windows 10",
+      "url": "https://forums.commentcamarche.net/forum/affich-32636197-explorateur-de-fichiers-comment-annuler-une-action",
+      "snippet": "Oct 12, 2015 · Bonjour, sous Windows8 comme sous Windows10 (hélas), où se trouve la fonction d'annulation d'une action ? …"
+    },
+    {
+      "title": "Comment désactiver l'aide de windows - Forum Windows 10",
+      "url": "https://forums.commentcamarche.net/forum/affich-36131014-comment-desactiver-l-aide-de-windows",
+      "snippet": "Jul 22, 2019 · Bonjour, je cherche comment désactiver l'aide Windows lorsque l'on appuie sur F1 sur un ordinateur portable car c'est …"
+    },
+    {
+      "title": "Désactiver F1 [Résolu] - Windows - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-36101061-desactiver-f1",
+      "snippet": "Jul 2, 2019 · Non. Mais le programme comment obtenir de l'aide se démultiplie de bloque mon clavier et la fenêtre s'ouvre en …"
+    }
+  ]
+}

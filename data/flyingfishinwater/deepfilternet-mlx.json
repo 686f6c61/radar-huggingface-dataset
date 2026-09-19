@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "flyingfishinwater/DeepFilterNet-mlx",
+  "slug": "flyingfishinwater-deepfilternet-mlx",
+  "author": "flyingfishinwater",
+  "url": "https://huggingface.co/flyingfishinwater/DeepFilterNet-mlx",
+  "created_at": "2026-09-18T21:19:29.000Z",
+  "updated_at": "2026-09-18T21:19:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "audio-to-audio",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "audio",
+    "speech-enhancement",
+    "noise-suppression",
+    "deepfilternet",
+    "apple-silicon",
+    "audio-to-audio",
+    "arxiv:2110.05588",
+    "arxiv:2205.05474",
+    "arxiv:2305.08227",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25585573,
+  "storage_human": "26 MB",
+  "base_model": "DeepFilterNet/DeepFilterNet, DeepFilterNet/DeepFilterNet2, DeepFilterNet/DeepFilterNet3",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-19T02:24:35.201Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ليلى علوى و محمود حميدة و نادية عزت و لمياء الأمير و ممدوح وافى و ...",
+      "url": "https://www.youtube.com/watch?v=R8ReNC8ByjM",
+      "snippet": "Apr 25, 2023 · ليلى علوى و محمود حميدة و نادية عزت و لمياء الأمير و ممدوح وافى و الفيلم الجرىء ( الحب المستحيل ) #shorts #shortsfeed # ..."
+    },
+    {
+      "title": "ورعان ال الکس | میم پلاس",
+      "url": "https://mimplus.ir/p/lPw1Yu/%D9%88%D8%B1%D8%B9%D8%A7%D9%86_%D8%A7%D9%84_%D8%A7%D9%84%DA%A9%D8%B3",
+      "snippet": "american girl analysis announced alex anna army angeles anara gupta video download actor america awards adults aires afghan …"
+    },
+    {
+      "title": "عبدالرحمن بن مساعد بن عبدالعزيز (@abdulrahman) / X",
+      "url": "https://x.com/abdulrahman",
+      "snippet": "يا دكتور عبدالخالق هذا طرح - غير انه مغلوط جملة وتفصيلًا وسأوضح ذلك بالتفصيل- هو طرح لا أجد له وصفًا للأسف الا مناكفة لا تستند لأي منطق ولا تليق بذي علم.. 1-مساحة السعودية 2.15 وهذا …"
+    },
+    {
+      "title": "محمد بن سلمان بن عبد العزيز (Informal) (@HRHMBNSALMAAN) / X",
+      "url": "https://x.com/HRHMBNSALMAAN",
+      "snippet": "3 days ago · 🇸🇦 أخبار ومقاطع ولقطات سمو ولي العهد الأمير محمد بن سلمان - حفظه الله - عبر حسابنا على سناب شات 👻 تابعونا ليصلكم كل جديد عن سموه 🇸🇦🤍 🇸🇦 News, clips and footage of …"
+    },
+    {
+      "title": "حصرياً فيلم | أبو شنب | بطولة ياسمين عبد العزيز وظافر العابدين وبيومي ...",
+      "url": "https://www.youtube.com/watch?v=ZVy56r6a-Fo",
+      "snippet": "Mar 14, 2023 · حصرياً فيلم | أبو شنب | بطولة ياسمين عبد العزيز وظافر العابدين وبيومي فؤادفيلم ابو شنبياسمين عبد العزيزظافر ..."
+    }
+  ]
+}

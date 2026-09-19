@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "hanapasta/airvla_ftdki_5000",
+  "slug": "hanapasta-airvla_ftdki_5000",
+  "author": "hanapasta",
+  "url": "https://huggingface.co/hanapasta/airvla_ftdki_5000",
+  "created_at": "2026-09-18T22:50:37.000Z",
+  "updated_at": "2026-09-18T22:51:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "robotics",
+    "vision-language-action",
+    "pi0",
+    "aerial-manipulation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4028019472,
+  "parameters_human": "4.03B",
+  "storage_bytes": 8892513248,
+  "storage_human": "8.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Log in to Roblox",
+      "url": "https://www.roblox.com/Login",
+      "snippet": "©2026 Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered …"
+    },
+    {
+      "title": "Roblox",
+      "url": "https://www.roblox.com/",
+      "snippet": "Roblox is the ultimate virtual universe that lets you create, share experiences with friends, and be anything you can imagine. Join …"
+    },
+    {
+      "title": "Roblox Creator Hub",
+      "url": "https://create.roblox.com/",
+      "snippet": "Make anything you can imagine. Everything you need to start building on Roblox for free; join a global community of Creators and …"
+    },
+    {
+      "title": "Contact Us – Roblox Support",
+      "url": "https://en.help.roblox.com/hc/en-us/articles/208448546-Contact-Us",
+      "snippet": "Roblox Customer Support team assists with Billing and Account issue related questions. Make sure to check our Roblox Help Articles …"
+    },
+    {
+      "title": "Acerca de | Roblox",
+      "url": "https://about.roblox.com/es",
+      "snippet": "Roblox is a global platform where millions of people gather together every day to imagine, create, and share experiences with each …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jrepifano/q14b-srh-arm4-r32-seed1",
+  "slug": "jrepifano-q14b-srh-arm4-r32-seed1",
+  "author": "jrepifano",
+  "url": "https://huggingface.co/jrepifano/q14b-srh-arm4-r32-seed1",
+  "created_at": "2026-09-19T01:53:14.000Z",
+  "updated_at": "2026-09-19T02:06:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 842379084,
+  "storage_human": "842 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Използването на озон в къщи - MikroFerma.com",
+      "url": "https://forum.mikroferma.com/index.php?topic=1476.0",
+      "snippet": "Използването на озон в къщи Както много други неща, и озонът може да намери трайно приложение в бита ни. Той може да …"
+    },
+    {
+      "title": "фермата работи",
+      "url": "https://forum.mikroferma.com/index.php?topic=1349.0",
+      "snippet": "фермата работи Цитат на: branimira koleva - Ноември 04, 2012, 09:31:46 PM Здравей Людмил, Първо искам да кажа , че …"
+    },
+    {
+      "title": "Последни публикации - Страница 10",
+      "url": "https://www.forum.mikroferma.com/index.php?action=recent;start=90",
+      "snippet": "Последни публикации - Страница 10 Цитат на: niki - Август 16, 2017, 11:28:04 AM Здравей! Благодаря за отговора. Не е. Това …"
+    },
+    {
+      "title": "Последни публикации - Страница 4",
+      "url": "https://www.forum.mikroferma.com/index.php?action=recent;start=30",
+      "snippet": "Последни публикации - Страница 4 Медицинската общност отдавна алармира за многото рискови ..."
+    },
+    {
+      "title": "Химията в храните прави децата ...",
+      "url": "https://forum.mikroferma.com/index.php?topic=1345.0",
+      "snippet": "Химията в храните прави децата неуправляеми Химията в храните прави децата неуправляеми Започната от Людмил, …"
+    }
+  ]
+}
