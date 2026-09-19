@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "DistributedAI/102-v14",
+  "slug": "distributedai-102-v14",
+  "author": "DistributedAI",
+  "url": "https://huggingface.co/DistributedAI/102-v14",
+  "created_at": "2026-09-01T09:23:32.000Z",
+  "updated_at": "2026-09-22T04:37:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9204597856,
+  "storage_human": "9.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Store Finder - Lidl US",
+      "url": "https://www.lidl.com/c/store-finder/s10089075",
+      "snippet": "Store Finder & Opening Hours Search by your Zip Code or City to find your nearest Lidl and start saving!"
+    },
+    {
+      "title": "Магазини Lidl Бургас - Заслужава си",
+      "url": "https://www.lidl.bg/s/bg-BG/magazini/burgas/",
+      "snippet": "Открий магазин на Lidl в Бургас. и разгледай нашите актуални оферти и седмични брошури."
+    },
+    {
+      "title": "Магазини Lidl Несебър - Заслужава си",
+      "url": "https://www.lidl.bg/s/bg-BG/magazini/nesebar/",
+      "snippet": "Открий магазин на Lidl в Несебър. и разгледай нашите актуални оферти и седмични брошури."
+    },
+    {
+      "title": "Lidl Map - Supermarket - Nesebar, Bulgaria",
+      "url": "https://mapcarta.com/W1177247527",
+      "snippet": "Kosharitsa is a village in southeastern Bulgaria, near Bulgaria's Black Sea coast. It is in Nesebar Municipality of Burgas Province. …"
+    },
+    {
+      "title": "Lidl Несебър opening times, tel. +359 800 14 141",
+      "url": "https://bg.near-place.com/lidl-e87-kreuzung-ravda-nesebr/en",
+      "snippet": "Lidl in Несебър open now. E87 (Kreuzung Ravda), 8221 Несебър, Bulgaria, phone:+359 800 14 141, opening hours, photo, map, …"
+    }
+  ]
+}

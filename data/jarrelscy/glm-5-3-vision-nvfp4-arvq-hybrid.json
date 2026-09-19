@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "jarrelscy/GLM-5.3-Vision-NVFP4-ARVQ-hybrid",
+  "slug": "jarrelscy-glm-5-3-vision-nvfp4-arvq-hybrid",
+  "author": "jarrelscy",
+  "url": "https://huggingface.co/jarrelscy/GLM-5.3-Vision-NVFP4-ARVQ-hybrid",
+  "created_at": "2026-09-14T05:45:52.000Z",
+  "updated_at": "2026-09-21T20:51:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "glm5v",
+    "arvq",
+    "nvfp4",
+    "experimental",
+    "8-bit",
+    "nvfp4_arvq_hybrid",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 479,
+  "trending_score": 0,
+  "parameters": 186827108584,
+  "parameters_human": "186.83B",
+  "storage_bytes": 1155544458483,
+  "storage_human": "1155.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ARTE Mediathek | Viel mehr als TV",
+      "url": "https://www.arte.tv/de/",
+      "snippet": "Dokus, Filme, Serien, Konzerte aus Europa und der Welt: Tausende Programme werbefrei streamen. Jetzt auf arte.tv!"
+    },
+    {
+      "title": "Live-TV: die Programme von ARTE im Livestream",
+      "url": "https://www.arte.tv/de/live/",
+      "snippet": "Reportagen, Serien, Filme, Dokus, Magazine – Die Programme von ARTE live auf arte.tv"
+    },
+    {
+      "title": "ARTE Livestream - ARD Mediathek",
+      "url": "https://www.ardmediathek.de/live/Y3JpZDovL2FydGUuZGUvTGl2ZXN0cmVhbS1BUlRF",
+      "snippet": "ARTE Livestream Livestream. Das TV-Programm von heute live im Fernsehen verfolgen! Jetzt zum kostenlosen Stream!"
+    },
+    {
+      "title": "Alle Inhalte von ARTE - ZDFmediathek",
+      "url": "https://www.zdf.de/arte",
+      "snippet": "Entdecke ARTE – fesselnde Dokus, preisgekrönte Filme und außergewöhnliche Kulturformate. Jetzt streamen und die Welt neu …"
+    },
+    {
+      "title": "ARD Mediathek: Filme, Serien und Dokus online anschauen",
+      "url": "https://www.ardmediathek.de/",
+      "snippet": "Alle Inhalte der ARD Mediathek im Überblick: Livestreams, Nachrichten, Filme, Serien und spannende Dokus. Hier anschauen!"
+    }
+  ]
+}

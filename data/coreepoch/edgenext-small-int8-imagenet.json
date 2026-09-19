@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "CoreEpoch/edgenext-small-int8-imagenet",
+  "slug": "coreepoch-edgenext-small-int8-imagenet",
+  "author": "CoreEpoch",
+  "url": "https://huggingface.co/CoreEpoch/edgenext-small-int8-imagenet",
+  "created_at": "2026-07-19T22:32:03.000Z",
+  "updated_at": "2026-09-18T21:06:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "edgenext",
+    "int8",
+    "quantized",
+    "image-classification",
+    "imagenet",
+    "edge",
+    "cpu",
+    "raspberry-pi",
+    "dataset:imagenet-1k",
+    "base_model:timm/edgenext_small.usi_in1k",
+    "base_model:quantized:timm/edgenext_small.usi_in1k",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 35,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 28407449,
+  "storage_human": "28 MB",
+  "base_model": "timm/edgenext_small.usi_in1k",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.be/index.html",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=nl",
+      "snippet": "Adverteren Alles over Google Google.com in English © 2026 - Privacy - Voorwaarden"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.nl/?hl=nl&hl=nl",
+      "snippet": "Wij willen hier een beschrijving geven, maar de site die u nu bekijkt staat dit niet toe."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com.ai/?hl=nl-US",
+      "snippet": "Google aangeboden in: English Adverteren Alles over Google Google.com"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com.nf/webhp?gl=nf&hl=en&gws_rd=cr&pws=0",
+      "snippet": "Advertising Business Solutions About Google Google.com © 2026 - Privacy - Terms"
+    }
+  ]
+}

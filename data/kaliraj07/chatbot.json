@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "KaliRaj07/chatbot",
+  "slug": "kaliraj07-chatbot",
+  "author": "KaliRaj07",
+  "url": "https://huggingface.co/KaliRaj07/chatbot",
+  "created_at": "2026-09-19T10:40:18.000Z",
+  "updated_at": "2026-09-19T10:40:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yamaha MT-25 Özellikleri, Fiyatı, Yakıt Tüketimi",
+      "url": "https://caponmotoru.com/yamaha/mt-25",
+      "snippet": "Yamaha MT-25, agresif görünümü ve güçlü performansıyla dikkat çeken bir motosiklet. 250 cc ’lik silindir hacmine sahip iki silindirli …"
+    },
+    {
+      "title": "MT 25 kaç litre benzin alır? (Cevapları ve Çözümü . Soru 131349-9 ...",
+      "url": "https://www.dayibilir.com/bilgi-bankasi/mt-25-kac-litre-benzin-alir,131349",
+      "snippet": "Mt25 versiyonu, 250 cc özelliği ile oldukça hızlıdır. 100 kilometrede 3,50 – 4 litre yakıt tüketmektedir."
+    },
+    {
+      "title": "Yamaha MT-25 Teknik Özellikleri Ve Detaylı Verileri",
+      "url": "https://motosikletgezirotalari.net/motosiklet-teknik-ozellikleri/yamaha-mt-25-teknik-ozellikleri",
+      "snippet": "Yamaha MT-25 Kaç Litre Yağ Alır? Yamaha MT-25 teknik özellikleri: Güç: 36.00 bg, Ağırlık: 169 kg, Yakıt: 14 ltL. Karşılaştır, keşfet ve …"
+    },
+    {
+      "title": "Yamaha MT 25 Naked Yakıt Tüketimi ve Teknik Özellikleri",
+      "url": "https://www.motorsikletgaraji.com/yamaha-mt-25-naked-yakit-tuketimi-ve-teknik-ozellikleri/",
+      "snippet": "May 19, 2019 · Hava koşulları yakıt tüketimini sanıldığından daha fazla etkiler, Yokuş inerken kesinlikle vitesi boşa atmayın. Bujilerin …"
+    },
+    {
+      "title": "Yamaha MT-25 Naked Özellikleri - Epey",
+      "url": "https://www.epey.com/motosiklet/yamaha-mt-25.html",
+      "snippet": "Yamaha MT-25 Naked Özellikleri GENEL ÖZELLİKLER Ürün Tipi Naked Yakıt Tipi Benzinli Vites Tipi Manuel Vites Adedi 6 Yakıt …"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "d0xin/Swift-Qwen3.8-27B-Uncensored-BF16",
+  "slug": "d0xin-swift-qwen3-8-27b-uncensored-bf16",
+  "author": "d0xin",
+  "url": "https://huggingface.co/d0xin/Swift-Qwen3.8-27B-Uncensored-BF16",
+  "created_at": "2026-09-14T14:29:44.000Z",
+  "updated_at": "2026-09-15T08:30:30.000Z",
+  "license": "swift-open-license-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen3_8",
+    "swift",
+    "uncensored",
+    "abliterated",
+    "bf16",
+    "efficient-thinking",
+    "reasoning",
+    "multimodal",
+    "tool-calling",
+    "conversational",
+    "base_model:ukisai/Swift-Qwen3.8-27b",
+    "base_model:finetune:ukisai/Swift-Qwen3.8-27b",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 14,
+  "downloads_30d": 225,
+  "trending_score": 13,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55583501715,
+  "storage_human": "55.6 GB",
+  "base_model": "ukisai/Swift-Qwen3.8-27b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Online 3D Printing Service | 7 Technologies | Xometry UK",
+      "url": "https://xometry.uk/3d-printing/",
+      "snippet": "3D Printing services: prototypes and series of parts via SLS, MJF, SLA, FDM, Polyjet, DMLS and Carbon DLS. Upload your 3D …"
+    }
+  ]
+}

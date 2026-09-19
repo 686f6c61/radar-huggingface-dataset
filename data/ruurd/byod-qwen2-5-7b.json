@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Ruurd/BYOD-Qwen2.5-7B",
+  "slug": "ruurd-byod-qwen2-5-7b",
+  "author": "Ruurd",
+  "url": "https://huggingface.co/Ruurd/BYOD-Qwen2.5-7B",
+  "created_at": "2026-09-19T11:00:50.000Z",
+  "updated_at": "2026-09-19T11:06:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "masked-diffusion",
+    "discrete-diffusion",
+    "diffusion-language-model",
+    "lora",
+    "byod",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1304156640,
+  "storage_human": "1.3 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Eva Lassak - KSV Baunatal - LADV",
+      "url": "https://ladv.de/leistungsdatenbank/athletenprofil/406685/Eva-Lassak.htm",
+      "snippet": "Apr 27, 2025 · Eva Lassak KSV Baunatal (Hessen) W65 (Jg. 1959) | GER Startrecht 106168 Häufigste Disziplin/en: Halbmarathon …"
+    },
+    {
+      "title": "Eva Lassak - Facebook",
+      "url": "https://www.facebook.com/eva.lassak/",
+      "snippet": "Jul 10, 2025 · Eva hat eine hölzerne Medaille! Eva hat fleißig gearbeitet und Medaillen in Royal Sto..."
+    },
+    {
+      "title": "Marathon | KSV Baunatal | Running | Nordhessencup | KSV Baunatal",
+      "url": "https://www.ksv-baunatal.de/marathon/News/Hessische-Meisterschaften-Strassenlauf-10-km-in-Eschwege__news3638",
+      "snippet": "Mar 21, 2025 · Eva erreichte das Ziel nach 28:52 min. Annette Krug startete beim 10 km Orga-Lauf und konnte sich ebenfalls den 1. …"
+    },
+    {
+      "title": "Marathon | KSV Baunatal | Running | Nordhessencup | KSV Baunatal",
+      "url": "https://www.ksv-baunatal.de/marathon/News/Nordhessencup-18-Lauf-Warburg__news3885",
+      "snippet": "Sep 26, 2025 · Trotz dessen zeigten unsere Läuferin Eva Lassak und unsere beiden Läufer Manuel Allschinger und Karsten Mundt …"
+    },
+    {
+      "title": "Marathon | KSV Baunatal | Running | Nordhessencup | KSV Baunatal",
+      "url": "https://www.ksv-baunatal.com/marathon/News/Abschlussveranstaltung-des-Nordhessencup-2025-in-Kaufungen__news3919",
+      "snippet": "Nov 7, 2025 · Nordhessencup 2025 – Erfolgreicher Abschluss in Kaufungen 08.11.2025. Am vergangenen Samstag fand die …"
+    }
+  ]
+}

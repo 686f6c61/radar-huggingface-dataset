@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "HaumeaAI/Haumea-1.5",
+  "slug": "haumeaai-haumea-1-5",
+  "author": "HaumeaAI",
+  "url": "https://huggingface.co/HaumeaAI/Haumea-1.5",
+  "created_at": "2026-09-19T11:00:39.000Z",
+  "updated_at": "2026-09-19T18:06:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mistral",
+    "Haumea",
+    "Haumea AI",
+    "Haumea Labs",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:unsloth/mistral-7b-instruct-v0.3-bnb-4bit",
+    "base_model:finetune:unsloth/mistral-7b-instruct-v0.3-bnb-4bit",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7248023552,
+  "parameters_human": "7.25B",
+  "storage_bytes": 14496668332,
+  "storage_human": "14.5 GB",
+  "base_model": "unsloth/mistral-7b-instruct-v0.3-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Live Sex Cams and Adult Chat with Nude Girls | Stripchat",
+      "url": "https://stripchat.com/",
+      "snippet": "Live porn cams with thousands of models online — women, men, couples and trans performers, solo rooms and group scenes across …"
+    },
+    {
+      "title": "Stripchat",
+      "url": "https://ja.stripchat.com/",
+      "snippet": "Stripchat は、本物のつながりと刺激的なプレイを求める人の期待にお応えする、世界最大級のアダルトライブ配信・アダルトエン …"
+    },
+    {
+      "title": "Sexcams gratuites en direct et chat avec des filles nues | Stripchat",
+      "url": "https://fr.stripchat.com/",
+      "snippet": "Cams porno en live avec des milliers de modèles en ligne — femmes, hommes, couples et performers trans, chatrooms solo et …"
+    },
+    {
+      "title": "Français Live sex cams gratuit en direct de filles | Stripchat",
+      "url": "https://fr.stripchat.com/girls/french",
+      "snippet": "Regardez EN DIRECT ces filles super chaudes via les sexcams de Français. ️ Rejoignez-les, entièrement nues, sur leur chatroom …"
+    },
+    {
+      "title": "Gratis live sex cams en chat met naakte meiden | Stripchat",
+      "url": "https://nl.stripchat.com/",
+      "snippet": "Live pornocams met duizenden online modellen — vrouwen, mannen, stellen en transseksuele performers, solochatrooms en …"
+    }
+  ]
+}

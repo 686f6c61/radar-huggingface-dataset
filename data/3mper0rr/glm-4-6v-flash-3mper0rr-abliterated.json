@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "3MPER0RR/GLM-4.6V-Flash-3MPER0RR-abliterated",
+  "slug": "3mper0rr-glm-4-6v-flash-3mper0rr-abliterated",
+  "author": "3MPER0RR",
+  "url": "https://huggingface.co/3MPER0RR/GLM-4.6V-Flash-3MPER0RR-abliterated",
+  "created_at": "2026-09-19T11:10:46.000Z",
+  "updated_at": "2026-09-19T20:05:25.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "glm4v",
+    "text-generation",
+    "conversational",
+    "base_model:huihui-ai/Huihui-GLM-4.6V-Flash-abliterated",
+    "base_model:finetune:huihui-ai/Huihui-GLM-4.6V-Flash-abliterated",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 10292777472,
+  "parameters_human": "10.29B",
+  "storage_bytes": 20605614708,
+  "storage_human": "20.6 GB",
+  "base_model": "huihui-ai/Huihui-GLM-4.6V-Flash-abliterated",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Opgelost: vtm go versus vtm go+ - De Netweters",
+      "url": "https://www.netweters.be/t5/Andere-apps-platformen/vtm-go-versus-vtm-go/td-p/218527",
+      "snippet": "May 13, 2026 · vtm go versus vtm go+ Via onze nieuwe telenet tv box ip kunnen we nu gratis kijken naar 'vtm go' en betalend naar …"
+    },
+    {
+      "title": "Streaming Video downloaden van VTM.be voor privé gebruik.",
+      "url": "https://www.pctuts.be/threads/streaming-video-downloaden-van-vtm-be-voor-prive-gebruik.234868/",
+      "snippet": "Sep 24, 2018 · Hoe kan ik een video van de site VTM downloaden en later herbekijken. In Chrome heb ik de \"Stream Video …"
+    },
+    {
+      "title": "VTMGo en VRT MAX-apps werken niet meer op TV - De Netweters",
+      "url": "https://www.netweters.be/t5/Andere-apps-platformen/VTMGo-en-VRT-MAX-apps-werken-niet-meer-op-TV/td-p/154590",
+      "snippet": "Nov 2, 2022 · Sinds een tweetal weken werken Vrt Max en Vtm Go niet meer. Spijtig want we waren een aantal series aan het …"
+    },
+    {
+      "title": "Windows 10 - VTM GO | Computerforum PcTuts.be",
+      "url": "https://www.pctuts.be/threads/vtm-go.240022/",
+      "snippet": "Apr 5, 2019 · dag , ik heb VTM.Be op de pc staan en dat gaat perfect nu is er de VTM GO en die geeft storing in het begin van ieder …"
+    },
+    {
+      "title": "afstandsbediening - Proximus Forum",
+      "url": "https://nl.forum.proximus.be/proximus-pickx-7/afstandsbediening-64090",
+      "snippet": "Sep 4, 2026 · ik heb nu een v7c decoder en daar kan je app’s installeren, die van vrt max en vtm go is gelukt omdat je een code …"
+    }
+  ]
+}

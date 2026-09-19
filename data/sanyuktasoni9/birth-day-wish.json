@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "sanyuktasoni9/birth-day-wish",
+  "slug": "sanyuktasoni9-birth-day-wish",
+  "author": "sanyuktasoni9",
+  "url": "https://huggingface.co/sanyuktasoni9/birth-day-wish",
+  "created_at": "2026-09-19T11:52:42.000Z",
+  "updated_at": "2026-09-19T11:57:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 73831228,
+  "storage_human": "74 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Windows’da nasıl yardım alınır? - Microsoft Desteği",
+      "url": "https://support.microsoft.com/tr-tr/windows/windows-da-nas%C4%B1l-yard%C4%B1m-al%C4%B1n%C4%B1r-711b6492-0435-0038-8706-7c6b0feb200a",
+      "snippet": "Görev çubuğunda yardım arayın, İpuçları uygulamasını kullanın, Ayarlar uygulamasındaki Yardım alın bağlantısını seçin veya …"
+    },
+    {
+      "title": "Windows yardımı ve öğrenimi | Microsoft Support",
+      "url": "https://support.microsoft.com/tr-tr/windows/",
+      "snippet": "Windows işletim sistemleri için yardım ve “Nasıl yapılır?” makalelerini bulun. Windows için destek alın ve yükleme, güncelleştirmeler, …"
+    },
+    {
+      "title": "Windows 11’de Nasıl Yardım Alınır (6 Yöntem) - Moyens I/O",
+      "url": "https://tr.moyens.net/nasil/windows-11de-nasil-yardim-alinir-6-yontem/",
+      "snippet": "Aug 30, 2022 · Windows 11’de (2022) Yardım Alın Bu kılavuzda, Windows 11 bilgisayarınızla ilgili yardım almanın altı farklı yolunu …"
+    },
+    {
+      "title": "Windows 11'de Yardım Almak İçin İpuçları - PcHardwarePro",
+      "url": "https://www.pchardwarepro.com/tr/Windows-11%27de-yard%C4%B1m-almaya-y%C3%B6nelik-ipu%C3%A7lar%C4%B1/",
+      "snippet": "Yaygın sorunlara nasıl çözüm bulacağınız, Microsoft teknik desteğine nasıl erişeceğiniz ve işletim sisteminin yerleşik yardım …"
+    },
+    {
+      "title": "Windows 11'de Nasıl Yardım Alınır - Acer Community",
+      "url": "https://community.acer.com/tr/kb/articles/15410-windows-11de-nasil-yardim-alinir",
+      "snippet": "Sep 28, 2022 · Windows 11'i kullanırken kendi başınıza çözemeyeceğiniz bir sorunla karşılaşırsanız, çeşitli kaynaklardan destek …"
+    }
+  ]
+}

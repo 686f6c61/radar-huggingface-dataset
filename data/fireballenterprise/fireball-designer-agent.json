@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "fireballenterprise/fireball-designer-agent",
+  "slug": "fireballenterprise-fireball-designer-agent",
+  "author": "fireballenterprise",
+  "url": "https://huggingface.co/fireballenterprise/fireball-designer-agent",
+  "created_at": "2026-09-19T06:56:15.000Z",
+  "updated_at": "2026-09-19T23:38:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen3-VL-8B-Instruct",
+    "lora",
+    "transformers",
+    "tool-calling",
+    "function-calling",
+    "design-tools",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3-VL-8B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 186085746,
+  "storage_human": "186 MB",
+  "base_model": "Qwen/Qwen3-VL-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "StellwerkSim",
+      "url": "https://www.stellwerksim.de/",
+      "snippet": "StellwerkSim Simulation von Gleisbildstellwerken Diese StellwerkSim simuliert ein klassisches Eisenbahn-Gleisbildstellwerk. Die …"
+    },
+    {
+      "title": "Stellwerke",
+      "url": "https://www.stellwerksim.de/anlagen.php",
+      "snippet": "Instanz links die Spielerliste anzeigen lassen es wird der Spielername, sein Stellwerk und die Instanz angezeigt bei Mauszeiger auf …"
+    },
+    {
+      "title": "Spittal am Millstättersee - StellwerkSim",
+      "url": "https://www-neu.stellwerksim.de/forum/viewtopic.php?t=38880",
+      "snippet": "Nov 7, 2024 · Eine klassische Fehlleitung ist dies nicht, da der Zug nicht in ein anderes Stellwerk fährt. Allerdings werden die …"
+    },
+    {
+      "title": "Menüleiste [STS Handbuch] - StellwerkSim",
+      "url": "https://doku.stellwerksim.de/doku.php?id=stellwerksim:spieler:optionen",
+      "snippet": "Simulator Suche Zug <Strg + F> Bei einem Klick auf diesen Menüpunkt wird das Eingabefeld zur Suche eines Zuges in der Zugfolge …"
+    },
+    {
+      "title": "Störungen [STS Handbuch] - StellwerkSim",
+      "url": "https://doku.stellwerksim.de/doku.php?id=stellwerksim:spieler:stoerungen",
+      "snippet": "Von Weichen erhält das Stellwerk während dem Stellvorgang eine Rückmeldung, ob die Weiche in die richtige Stellung gebracht …"
+    }
+  ]
+}

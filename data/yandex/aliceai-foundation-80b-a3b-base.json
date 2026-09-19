@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "yandex/AliceAI-Foundation-80B-A3B-Base",
+  "slug": "yandex-aliceai-foundation-80b-a3b-base",
+  "author": "yandex",
+  "url": "https://huggingface.co/yandex/AliceAI-Foundation-80B-A3B-Base",
+  "created_at": "2026-09-12T10:32:07.000Z",
+  "updated_at": "2026-09-21T09:53:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "alice_ai",
+    "text-generation",
+    "custom_code",
+    "mixture-of-experts",
+    "vllm",
+    "ru",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 25,
+  "downloads_30d": 33,
+  "trending_score": 25,
+  "parameters": 81286433408,
+  "parameters_human": "81.29B",
+  "storage_bytes": 162576765281,
+  "storage_human": "162.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yandex — fast Internet search",
+      "url": "https://yandex.com/",
+      "snippet": "Yandex finds anything: webpages, images, music, good. Solve any problem — from everyday to a scientific one. Search by text, …"
+    },
+    {
+      "title": "Яндекс — быстрый поиск в интернете",
+      "url": "https://ya.ru/",
+      "snippet": "Яндекс предлагает быстрый поиск информации в интернете, включая сайты, изображения, музыку и товары. Используйте …"
+    },
+    {
+      "title": "Яндекс",
+      "url": "https://yandex.fr/?from=tabbar",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "Yandex",
+      "url": "http://online.yandex.com/search",
+      "snippet": "{\"2_c6yu\":{\"state\":{\"form\":{\"action\":\"/search\",\"logo\":{\"href\":\"//yandex.com\",\"isForeign\":true,\"size\":44},\"searchLabel\":\"Search\",\"clearLabel\":\"Clear\",\"hiddenInputs\":[{\"name\":\"lr\",\"value\":21206}],\"inputMaxLength\":4000},\"actions\":{\"advancedSearch\":{\"checked\":false,\"ariaLabel\":\"Advanced …"
+    },
+    {
+      "title": "Search by images and photos - Yandex",
+      "url": "https://yandex.com/images/",
+      "snippet": "Search for postcards, desktop screensavers, funny pictures, diagrams, illustrated manuals, and other images in Yandex Images. Get …"
+    }
+  ]
+}

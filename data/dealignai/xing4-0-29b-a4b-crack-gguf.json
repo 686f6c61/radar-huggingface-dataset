@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "dealignai/Xing4.0-29B-A4B-CRACK-GGUF",
+  "slug": "dealignai-xing4-0-29b-a4b-crack-gguf",
+  "author": "dealignai",
+  "url": "https://huggingface.co/dealignai/Xing4.0-29B-A4B-CRACK-GGUF",
+  "created_at": "2026-09-19T05:18:59.000Z",
+  "updated_at": "2026-09-21T00:04:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "llama-cpp",
+    "moe",
+    "mla",
+    "hyper-connections",
+    "29b-a4b",
+    "xing4",
+    "telechat",
+    "uncensored",
+    "crack",
+    "dealignai",
+    "中文",
+    "chinese",
+    "text-generation",
+    "base_model:XingChen-AGI/Xing4.0-29B-A4B",
+    "base_model:quantized:XingChen-AGI/Xing4.0-29B-A4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 6,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": 31215031088,
+  "parameters_human": "31.22B",
+  "storage_bytes": 216823078304,
+  "storage_human": "216.8 GB",
+  "base_model": "XingChen-AGI/Xing4.0-29B-A4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lyft Alternatives: Top 12 Taxi Booking & Similar Apps",
+      "url": "https://alternativeto.net/software/lyft/",
+      "snippet": "Nov 24, 2024 · The best Lyft alternatives are Uber, Mobicoop Covoit' and BlaBlaCar. Our crowd-sourced lists contains more than 25 …"
+    },
+    {
+      "title": "8 Best Apps Like Lyft for Ridesharing (2026) - TechDator",
+      "url": "https://techdator.com/apps-like-lyft/",
+      "snippet": "May 4, 2026 · This article contains the best apps like Lyft for ridesharing. They're alternatives to Lyft that offers affordable services."
+    },
+    {
+      "title": "Lyft Alternatives: Taxi Booking & Similar Apps - Page 4",
+      "url": "https://alternativeto.net/software/lyft/?p=4",
+      "snippet": "Apr 6, 2026 · The best Lyft alternatives are Uber, Mobicoop Covoit' and BlaBlaCar. Our crowd-sourced lists contains more than 25 …"
+    },
+    {
+      "title": "10 Best Lyft Alternatives & Competitors (2026) - SoftwareSuggest",
+      "url": "https://www.softwaresuggest.com/lyft/alternatives",
+      "snippet": "Explore the best Lyft alternatives and competitors in 2026. Compare features, pricing, ratings, and verified reviews to find the right …"
+    },
+    {
+      "title": "Sick of Uber? Try These Alternative Ride-Share Options",
+      "url": "https://www.cheapism.com/ride-sharing-alternatives/",
+      "snippet": "Mar 27, 2023 · Uber and Lyft may have a stronghold on the ride-share market, but there are other options out there. Here are nine …"
+    }
+  ]
+}

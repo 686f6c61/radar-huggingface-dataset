@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "kuzaai/kuza-qwen-3.5-4b-quant-study",
+  "slug": "kuzaai-kuza-qwen-3-5-4b-quant-study",
+  "author": "kuzaai",
+  "url": "https://huggingface.co/kuzaai/kuza-qwen-3.5-4b-quant-study",
+  "created_at": "2026-09-19T10:27:47.000Z",
+  "updated_at": "2026-09-19T10:28:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "sw"
+  ],
+  "tags": [
+    "gguf",
+    "agriculture",
+    "east-africa",
+    "qwen",
+    "quantization",
+    "evaluation",
+    "en",
+    "sw",
+    "base_model:kuzaai/kuza-qwen-3.5-4b",
+    "base_model:quantized:kuzaai/kuza-qwen-3.5-4b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 37806938835,
+  "storage_human": "37.8 GB",
+  "base_model": "kuzaai/kuza-qwen-3.5-4b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Überweisungsträger Vorlage – bankneutraler Vordruck (PDF manuell, …",
+      "url": "https://www.helpfully.de/uberweisungstrager-vorlage-pdf-digital/",
+      "snippet": "May 11, 2024 · Diese Vorlage mit dem bankneutralen Vordruck stammt nicht von uns selbst, ich habe mehrere Vorlagen für …"
+    },
+    {
+      "title": "Überweisungsträger PDF - Vorlage - Kostenloser Download - CHIP",
+      "url": "https://www.chip.de/downloads/ueberweisungstraeger-PDF-Vorlage_69726841.html",
+      "snippet": "May 13, 2014 · Machen Sie mit der Überweisungsträger PDF - Vorlage Bankgeschäfte einfacher. Der Überweisungsvordruck im PDF …"
+    },
+    {
+      "title": "SEPA Überweisung Formular - Vorlage (PDF) - CHIP",
+      "url": "https://www.chip.de/downloads/SEPA-ueberweisung-Formular-Vorlage-PDF_69706135.html",
+      "snippet": "Mar 21, 2026 · Mit Hilfe der \"SEPA Überweisung Formular - Vorlage\" müssen Sie bei Bankgeschäften nicht länger Zeit verlieren. Das …"
+    },
+    {
+      "title": "Überweisungsträger Drucken | PDF-Vorlage für alle Banken (Download)",
+      "url": "https://www.themen-blog.de/ueberweisungstraeger-drucken/",
+      "snippet": "Nov 4, 2016 · Überweisungsträger drucken, Gratis PDF-Vorlage für die individuelle Gestaltung von SEPA-Überweisungsträger. Für …"
+    },
+    {
+      "title": "In Farbe drucken und dabei unbedingt die automatische Anpassung an …",
+      "url": "https://www.ibancalculator.com/fileadmin/EU-Ueberweisung.pdf",
+      "snippet": "In Farbe drucken und dabei unbedingt die automatische Anpassung an die Seitengröße ausschalten!"
+    }
+  ]
+}

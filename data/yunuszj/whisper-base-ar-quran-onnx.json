@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "YunusZJ/whisper-base-ar-quran-ONNX",
+  "slug": "yunuszj-whisper-base-ar-quran-onnx",
+  "author": "YunusZJ",
+  "url": "https://huggingface.co/YunusZJ/whisper-base-ar-quran-ONNX",
+  "created_at": "2026-09-19T11:38:24.000Z",
+  "updated_at": "2026-09-19T14:35:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "whisper",
+    "automatic-speech-recognition",
+    "generated_from_trainer",
+    "base_model:tarteel-ai/whisper-base-ar-quran",
+    "base_model:quantized:tarteel-ai/whisper-base-ar-quran",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2601782996,
+  "storage_human": "2.6 GB",
+  "base_model": "tarteel-ai/whisper-base-ar-quran",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.cz/index.html",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Obrázky Google",
+      "url": "https://www.google.cz/imghp?hl=cs",
+      "snippet": "Obrázky Google. Nejpropracovanější vyhledávání obrázků na webu."
+    },
+    {
+      "title": "Překladač Google",
+      "url": "https://translate.google.cz/",
+      "snippet": "Služba Google bez dalších poplatků okamžitě překládá slova, věty a webové stránky mezi angličtinou a více než stovkou dalších …"
+    },
+    {
+      "title": "Google Books: Find, Preview, and Read Books Online.",
+      "url": "https://books.google.cz/",
+      "snippet": "Vyhledávejte knihy v úplném znění v nejucelenějším indexu na světě. Vaše knihovna"
+    },
+    {
+      "title": "Google Scholar",
+      "url": "https://scholar.google.cz/",
+      "snippet": "Google Scholar provides a simple way to broadly search for scholarly literature. Search across a wide variety of disciplines and …"
+    }
+  ]
+}

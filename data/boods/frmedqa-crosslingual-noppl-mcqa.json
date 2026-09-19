@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "boods/FrMedQA-CrossLingual-NoPPL-MCQA",
+  "slug": "boods-frmedqa-crosslingual-noppl-mcqa",
+  "author": "boods",
+  "url": "https://huggingface.co/boods/FrMedQA-CrossLingual-NoPPL-MCQA",
+  "created_at": "2026-09-19T08:49:57.000Z",
+  "updated_at": "2026-09-19T18:15:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen3",
+    "trl",
+    "en",
+    "base_model:unsloth/Qwen3-14B-unsloth-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen3-14B-unsloth-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1039178652,
+  "storage_human": "1.0 GB",
+  "base_model": "unsloth/Qwen3-14B-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Berlin-Kreuzberg: Ein Toter bei Brand in Pflegeeinrichtung",
+      "url": "https://www.spiegel.de/panorama/berlin-kreuzberg-ein-mensch-stirbt-bei-feuer-in-pflegeeinrichtung-in-berlin-a-e0a9bc7c-3cde-4c5d-8854-f24365a85ba1",
+      "snippet": "8 hours ago · Ein Zimmer einer Berliner Pflegeeinrichtung stand am Morgen in Vollbrand. Rettungs- und Pflegekräfte evakuierten das …"
+    },
+    {
+      "title": "Pflegeheim in Flammen – Ein Toter und 25 Verletzte in Berlin",
+      "url": "https://www.welt.de/vermischtes/article6aae5ac3f9697bf26fd0192c/kreuzberg-pflegeheim-in-berlin-in-flammen-ein-toter-und-27-verletzte-anlage-unbewohnbar.html",
+      "snippet": "9 hours ago · Bei einem Feuer in einer Berliner Pflegeeinrichtung ist ein Mensch ums Leben gekommen. Mehr als zwei Dutzend …"
+    },
+    {
+      "title": "Feuer in Berlin-Kreuzberg: Brand in Pflegeheim fordert einen Toten",
+      "url": "https://www.t-online.de/nachrichten/panorama/menschen-schicksale/id_101442974/feuer-in-berlin-kreuzberg-brand-in-pflegeheim-fordert-einen-toten.html",
+      "snippet": "9 hours ago · Mindestens ein Toter Flammen brechen in Pflegeheim aus – viele Verletzte Von t-online Aktualisiert am 19.09.2026 - …"
+    },
+    {
+      "title": "Großeinsatz in Berlin-Kreuzberg: Mann stirbt bei Feuer in ...",
+      "url": "https://www.tagesspiegel.de/berlin/dpa-ein-mensch-stirbt-bei-feuer-in-pflegeeinrichtung--25-bewohner-verletzt-16073686.html",
+      "snippet": "10 hours ago · Update Großeinsatz in Berlin-Kreuzberg Mann stirbt bei Feuer in Pflegeeinrichtung – 27 Bewohner verletzt Im Zimmer …"
+    },
+    {
+      "title": "Brand in Pflegeheim: Eine Person gestorben – 25 Verletzte",
+      "url": "https://berlin.t-online.de/region/berlin/id_101442988/berlin-brand-in-pflegeheim-toetet-einen-menschen-25-bewohner-verletzt.html",
+      "snippet": "8 hours ago · Bei einem Feuer in einer Pflegeeinrichtung stirbt ein Mensch, 25 weitere werden verletzt. Einer schwebt in …"
+    }
+  ]
+}

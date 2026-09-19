@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "AlexSorbin/pocketpet-foundation-checkpoints",
+  "slug": "alexsorbin-pocketpet-foundation-checkpoints",
+  "author": "AlexSorbin",
+  "url": "https://huggingface.co/AlexSorbin/pocketpet-foundation-checkpoints",
+  "created_at": "2026-08-25T10:12:40.000Z",
+  "updated_at": "2026-09-20T11:19:03.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 36151235522,
+  "storage_human": "36.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/",
+      "snippet": "Create an account or log in to Instagram - Share what you're into with the people who get you."
+    },
+    {
+      "title": "Instagram (@instagram) • Instagram photos and videos",
+      "url": "https://www.instagram.com/instagram/",
+      "snippet": "687M Followers, 296 Following, 8,586 Posts - Instagram (@instagram) on Instagram: \"Discover what's new on Instagram 🔎 \""
+    },
+    {
+      "title": "Instagram – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Instagram",
+      "snippet": "Im Juni 2018 wurde Instagram TV (IGTV) eingeführt, ein Bereich, der inzwischen in Instagram Video aufgegangen ist. Seitdem ist es …"
+    },
+    {
+      "title": "Instagram - Facebook",
+      "url": "https://www.facebook.com/instagram/",
+      "snippet": "Instagram. 68,298,602 followers · 426,265 talking about this. Discover what's new on Instagram 🔎"
+    },
+    {
+      "title": "Instagram - Meta",
+      "url": "https://www.meta.com/instagram/",
+      "snippet": "We want Instagram to be a place where people can be inspired every day. We foster a safe and welcoming community where people …"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "XvKuoMing/so101_chess",
+  "slug": "xvkuoming-so101_chess",
+  "author": "XvKuoMing",
+  "url": "https://huggingface.co/XvKuoMing/so101_chess",
+  "created_at": "2026-09-19T10:48:17.000Z",
+  "updated_at": "2026-09-21T11:11:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "molmoact2",
+    "vla",
+    "vision-language-action",
+    "imitation-learning",
+    "so101",
+    "chess",
+    "simulation",
+    "dataset:XvKuoMing/so101_chess",
+    "base_model:allenai/MolmoAct2-SO100_101",
+    "base_model:finetune:allenai/MolmoAct2-SO100_101",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5601988144,
+  "parameters_human": "5.60B",
+  "storage_bytes": 12751243173,
+  "storage_human": "12.8 GB",
+  "base_model": "allenai/MolmoAct2-SO100_101",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "India beat New Zealand, India won by 96 runs - cricinfo.com",
+      "url": "https://www.cricinfo.com/series/icc-men-s-t20-world-cup-2025-26-1502138/india-vs-new-zealand-final-1512773/live-cricket-score",
+      "snippet": "Mar 8, 2026 · India's 96-run win against New Zealand is their largest margin of victory in terms of runs in Men's T20 World Cup, …"
+    },
+    {
+      "title": "India beat New Zealand by 96 runs - India vs New Zealand, ICC",
+      "url": "https://www.espn.com/cricket/series/8604/game/1512773/india-vs-new-zealand-final-icc-mens-t20-world-cup-2025-26",
+      "snippet": "India crush New Zealand for third T20 World Cup title Abhishek, Samson and Kishan all smashed half-centuries to amass 255 before …"
+    },
+    {
+      "title": "India v New Zealand | Final | Match Highlights | Men's T20 World Cup ...",
+      "url": "https://www.youtube.com/watch?v=ZKusB0FTHOs",
+      "snippet": "Mar 8, 2026 · Commanding India seal a record-third #T20WorldCup title in Ahmedabad.Watch the extended highlights 👉 …"
+    },
+    {
+      "title": "India vs New Zealand, Final, ICC Men's T20 World Cup 2026 - Cricbuzz",
+      "url": "https://www.cricbuzz.com/live-cricket-scorecard/139489/ind-vs-nz-final-icc-mens-t20-world-cup-2026",
+      "snippet": "Mar 8, 2026 · Follow India vs New Zealand, Final, ICC Men's T20 World Cup 2026 live with live scores, ball-by-ball commentary, …"
+    },
+    {
+      "title": "Full Scorecard of India vs New Zealand, ICC Men's T20 World Cup …",
+      "url": "https://www.espn.com/cricket/series/8604/scorecard/1512773/india-vs-new-zealand-final-icc-mens-t20-world-cup-2025-26",
+      "snippet": "Mar 8, 2026 · Get full and detailed scoreboard of India vs New Zealand, ICC Men's T20 World Cup 2026, Final only on ESPN.com. …"
+    }
+  ]
+}

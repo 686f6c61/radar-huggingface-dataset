@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "mkd-hossain/Keural-Cortex-8B-SFT-v2-step600",
+  "slug": "mkd-hossain-keural-cortex-8b-sft-v2-step600",
+  "author": "mkd-hossain",
+  "url": "https://huggingface.co/mkd-hossain/Keural-Cortex-8B-SFT-v2-step600",
+  "created_at": "2026-09-19T11:24:45.000Z",
+  "updated_at": "2026-09-19T11:27:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ko",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "keural",
+    "korean",
+    "bilingual",
+    "tool-calling",
+    "long-context",
+    "chat",
+    "sft",
+    "checkpoint",
+    "intermediate",
+    "conversational",
+    "ko",
+    "en",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:finetune:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2047683840,
+  "parameters_human": "2.05B",
+  "storage_bytes": 16392939478,
+  "storage_human": "16.4 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "【心得】【斯特蘭福德趣味問答】答案變更與心得 @Hero Wars 哈啦板 …",
+      "url": "https://forum.gamer.com.tw/C.php?bsn=38273&snA=150",
+      "snippet": "Sep 11, 2023 · 全題目連結 使用CTRL+F搜尋者推薦使用這兩個選項，分類部分暫時保留，或許還有人想用? 圖片區使用方法，點進去 …"
+    },
+    {
+      "title": "【問題】【問題】關於泰坦圖騰的元素,應該怎麽選 @Hero Wars 哈啦板 …",
+      "url": "https://forum.gamer.com.tw/C.php?bsn=38273&snA=220",
+      "snippet": "Jun 7, 2021 · 火圖騰=絕對的暴力, 跟其他兩個圖騰不同的是, 火神之力是無法拆解或提前消失的, 遇到比自己強的對手還可以利用蓄力 …"
+    },
+    {
+      "title": "[ALERTE] le jeu Hero Wars achète des avis positifs sur Google sur le ...",
+      "url": "https://www.jeuxvideo.com/forums/42-51-60164394-1-0-1-0-alerte-le-jeu-hero-wars-achete-des-avis-positifs-sur-google.htm",
+      "snippet": "Jul 7, 2019 · - Topic [ALERTE] le jeu Hero Wars achète des avis positifs sur Google du 07-07-2019 12:17:38 sur les forums de …"
+    },
+    {
+      "title": "Test de Battlefield 5 sur PC par jeuxvideo.com",
+      "url": "https://www.jeuxvideo.com/test/953764/battlefield-v-le-roi-du-fps-multijoueur-est-bel-et-bien-de-retour.htm",
+      "snippet": "Nov 8, 2018 · Retrouvez le test de Battlefield V : le roi du FPS multijoueur est bel et bien de retour... sur PC du 08/11/2018.Deux …"
+    },
+    {
+      "title": "【心得】關於旦丁養成（總戰力4x名、全服首位30勝外框） @Hero …",
+      "url": "https://forum.gamer.com.tw/C.php?bsn=38273&snA=805",
+      "snippet": "Apr 20, 2024 · Hi 版友們好，我是Jeremy。 在今年 1月16號 剛被「神奇」廣告騙進來，目前在274服闖蕩中.... 過去一個多月內花了許 …"
+    }
+  ]
+}

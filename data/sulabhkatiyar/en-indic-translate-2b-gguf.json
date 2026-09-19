@@ -1,0 +1,96 @@
+{
+  "schema": 1,
+  "id": "sulabhkatiyar/en-indic-translate-2b-GGUF",
+  "slug": "sulabhkatiyar-en-indic-translate-2b-gguf",
+  "author": "sulabhkatiyar",
+  "url": "https://huggingface.co/sulabhkatiyar/en-indic-translate-2b-GGUF",
+  "created_at": "2026-09-19T10:39:08.000Z",
+  "updated_at": "2026-09-19T10:53:31.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "as",
+    "bn",
+    "gu",
+    "hi",
+    "kn",
+    "ml",
+    "mr",
+    "or",
+    "pa",
+    "ta",
+    "te"
+  ],
+  "tags": [
+    "gguf",
+    "translation",
+    "indic",
+    "gemma4",
+    "quantized",
+    "llama.cpp",
+    "text-generation",
+    "en",
+    "as",
+    "bn",
+    "gu",
+    "hi",
+    "kn",
+    "ml",
+    "mr",
+    "or",
+    "pa",
+    "ta",
+    "te",
+    "base_model:sulabhkatiyar/en-indic-translate-2b",
+    "base_model:quantized:sulabhkatiyar/en-indic-translate-2b",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4647450147,
+  "parameters_human": "4.65B",
+  "storage_bytes": 12025610656,
+  "storage_human": "12.0 GB",
+  "base_model": "sulabhkatiyar/en-indic-translate-2b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "\"Weiterschauen\" Filme löschen - Sky Community",
+      "url": "https://community.sky.de/conversations/filme/%22weiterschauen%22-filme-l%C3%B6schen/6835edb4170e725f31f6916e",
+      "snippet": "Aug 21, 2019 · In meinem Fall war es die ARD-Mediathek. Dort habe ich bis zum \"Weiterschauen\" gescrollt und etwas länger auf den …"
+    },
+    {
+      "title": "Kein ARD Live in Mediathek mit Sky Q - Sky Community",
+      "url": "https://community.sky.de/conversations/sky-q-sky-q-mini/kein-ard-live-in-mediathek-mit-sky-q/683617c1170e725f31ff7b2e",
+      "snippet": "Nov 21, 2020 · HalloIch möchte über die ARD mediathek App das Programm Live schauen. Aber ich finde dort keinen Button für Live …"
+    },
+    {
+      "title": "CHIP Forum",
+      "url": "https://forum.chip.de/discussion/1498690/download-aus-ard-mediathek",
+      "snippet": ""
+    },
+    {
+      "title": "CHIP Forum",
+      "url": "https://forum.chip.de/discussion/1747776/online-spiele-sperren",
+      "snippet": ""
+    },
+    {
+      "title": "Hacking Attempt on Yahoo account? - Vivaldi Forum",
+      "url": "https://forum.vivaldi.net/topic/38933/hacking-attempt-on-yahoo-account",
+      "snippet": "Jul 19, 2019 · @ Pathduck said in Hacking Attempt on Yahoo account?: It's not hacking, and I don't understand why your \"special …"
+    }
+  ]
+}

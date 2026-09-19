@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "markankamaransheogarat/qwen2.5-3b-supportops-lora",
+  "slug": "markankamaransheogarat-qwen2-5-3b-supportops-lora",
+  "author": "markankamaransheogarat",
+  "url": "https://huggingface.co/markankamaransheogarat/qwen2.5-3b-supportops-lora",
+  "created_at": "2026-09-19T10:33:26.000Z",
+  "updated_at": "2026-09-19T10:35:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "lora",
+    "trl",
+    "support",
+    "synthetic-data",
+    "text-generation",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-3B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft Community",
+      "url": "https://www.answers.microsoft.com/ja-jp/windows/forum/apps_windows_10-msedge/microsoft-edge/252f30fb-a46d-48f1-9dff-46f1ebf7ddc1↑少し違うかもですが、マイクロソフトのコミュニティに書いてある方法を試して下さい。&gt;アプリのトラブルシューティングを実行してみると良さそうです。手順:[コントロールパネル]→[システムとセキュリティ]→[セキュリティとメンテナンス]→[トラブルシューティング]の順に開き、[すべて表示]を選択して&quot;Windowsストアアプリ&quot;の診断を行ってみてください。もし、上記の対処法を試してみてもうまくいかない場合は、ひとまず、有効な対処法が見つかるまではIEをかわりに使用されると良いと思います。",
+      "snippet": ""
+    }
+  ]
+}

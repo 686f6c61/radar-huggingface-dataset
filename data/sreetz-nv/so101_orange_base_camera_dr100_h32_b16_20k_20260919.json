@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "sreetz-nv/so101_orange_base_camera_dr100_h32_b16_20k_20260919",
+  "slug": "sreetz-nv-so101_orange_base_camera_dr100_h32_b16_20k_20260919",
+  "author": "sreetz-nv",
+  "url": "https://huggingface.co/sreetz-nv/so101_orange_base_camera_dr100_h32_b16_20k_20260919",
+  "created_at": "2026-09-19T10:56:42.000Z",
+  "updated_at": "2026-09-19T10:57:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "groot",
+    "domain-randomization",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 12576219216,
+  "storage_human": "12.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Discord - Group Chat That’s All Fun & Games",
+      "url": "https://discord.com/",
+      "snippet": "Discord is great for playing games and chilling with friends, or even building a worldwide community. Customize your own space to …"
+    },
+    {
+      "title": "Download Discord to Talk, Play, and Hang Out",
+      "url": "https://discord.com/download",
+      "snippet": "Download Discord to talk, play, and hang out with friends over voice, video, or text. Available for Windows, macOS, Linux, iOS, …"
+    },
+    {
+      "title": "Discord – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Discord",
+      "snippet": "Discord enthält nahezu alle Funktionen, die auch diverse andere Plattformen wie TeamSpeak oder früher Skype zur Verfügung …"
+    },
+    {
+      "title": "Discord – Herunterladen und Installieren unter Windows | Microsoft …",
+      "url": "https://apps.microsoft.com/detail/xpdc2rh70k22mn?hl=de-DE&gl=DE",
+      "snippet": "Discord is designed for gaming and great for just chilling with friends or building a community. Customize your own space and gather …"
+    },
+    {
+      "title": "Discord",
+      "url": "https://discord.com/store",
+      "snippet": "Discord is great for playing games and chilling with friends, or even building a worldwide community. Customize your own space to …"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Grenmango/whisper-medium-en-vi-accent",
+  "slug": "grenmango-whisper-medium-en-vi-accent",
+  "author": "Grenmango",
+  "url": "https://huggingface.co/Grenmango/whisper-medium-en-vi-accent",
+  "created_at": "2026-09-19T11:38:52.000Z",
+  "updated_at": "2026-09-19T11:39:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "whisper",
+    "audio",
+    "speech",
+    "automatic-speech-recognition",
+    "hf-asr-leaderboard",
+    "l2-arctic",
+    "accented-speech",
+    "english",
+    "vietnamese-accent",
+    "en",
+    "base_model:openai/whisper-medium.en",
+    "base_model:finetune:openai/whisper-medium.en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 763856896,
+  "parameters_human": "763.9M",
+  "storage_bytes": 1527825712,
+  "storage_human": "1.5 GB",
+  "base_model": "openai/whisper-medium.en",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MVB › Magdeburger Verkehrsbetriebe",
+      "url": "https://www.mvbnet.de/",
+      "snippet": "Betreiber des Öffentlichen Personennahverkehrs in Magdeburg. Informationen zu unseren Straßenbahnen, Bussen, Tarifen und zum …"
+    },
+    {
+      "title": "Netz- & Fahrpläne › MVB › Magdeburger Verkehrsbetriebe",
+      "url": "https://www.mvbnet.de/fahrinfo/netz_fahrplaene/",
+      "snippet": "Die Fahrzeuge fahren in alle Stadtteile Magdeburgs und warten aufeinander, wenn sich ein Fahrzeug mal verspätet. Der Alte Markt …"
+    },
+    {
+      "title": "MVB-Verkehrsmelder",
+      "url": "https://mvb-verkehrsmelder.de/",
+      "snippet": "Sep 11, 2026 · Linien 72 und N9: Ab Montag, den 8. Juni, kommt es in Magdeburg-Nordwest aufgrund von Bauarbeiten für eine …"
+    },
+    {
+      "title": "Fahrplanauskunft › MVB › Magdeburger Verkehrsbetriebe",
+      "url": "https://www.mvbnet.de/fahrinfo/fahrplanauskunft/",
+      "snippet": "Buseinstieg vorn Fahrgäste gehen immer vor. Bitte steigen Sie in allen MVB-Bussen an der Fahrertür ein und nutzen die hinteren …"
+    },
+    {
+      "title": "Fahrkarten › MVB › Magdeburger Verkehrsbetriebe",
+      "url": "https://www.mvbnet.de/fahrkarten/",
+      "snippet": "Aug 1, 2026 · Ein Blick in unsere Ticket-Apps lohnt sich: Ab dem 1. August 2026 sind viele Fahrkarten in der MVB App und FAIRTIQ …"
+    }
+  ]
+}

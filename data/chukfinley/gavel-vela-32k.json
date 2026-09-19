@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "chukfinley/gavel-vela-32k",
+  "slug": "chukfinley-gavel-vela-32k",
+  "author": "chukfinley",
+  "url": "https://huggingface.co/chukfinley/gavel-vela-32k",
+  "created_at": "2026-09-19T11:25:48.000Z",
+  "updated_at": "2026-09-20T23:30:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "modernbert",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 28,
+  "trending_score": 0,
+  "parameters": 307532547,
+  "parameters_human": "307.5M",
+  "storage_bytes": 7427102158,
+  "storage_human": "7.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bing Homepage Quiz – Today's Bing Daily Trivia & Featured Image Quiz",
+      "url": "https://bingquiz.com/bing-homepage-quiz/",
+      "snippet": "1 day ago · Test your knowledge on world headlines, breaking news, and trending global stories updated daily."
+    },
+    {
+      "title": "Bing Homepage Quiz - Today's 10 Questions, Daily Homepage Bing Quizzes",
+      "url": "https://bing.weeklyquiz.net/bing-homepage-quiz/",
+      "snippet": "21 hours ago · A new quiz goes up every day, drawing on the day's Bing homepage image and trending topics — geography, history, …"
+    },
+    {
+      "title": "Play Today's Bing Quiz – 5 Trivia Questions, Daily Challenge",
+      "url": "https://bingquiz.org/",
+      "snippet": "1 day ago · Play Bing Quiz online! Take 5 daily trivia questions across 6 categories and climb the rank ladder from Wanderer to …"
+    },
+    {
+      "title": "Bing News Quiz - Play Today’s 10 Daily News Bing Quizzes",
+      "url": "https://bingquizzes.com/bing-news-quiz/",
+      "snippet": "1 day ago · Take today's Bing News Quiz: answer daily questions on trending headlines from the US, UK, and around the world. Test …"
+    },
+    {
+      "title": "Bing News Quiz – Play Today’s 10 Daily News Trivia - Bing Quizzes",
+      "url": "https://bingquiz.com/bing-news-quiz/",
+      "snippet": "2 days ago · Take the latest Bing News Quiz and challenge yourself with daily questions based on trending headlines from the United …"
+    }
+  ]
+}

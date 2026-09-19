@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Sepideh2027/PathogenAgentAI-BioGPT-LoRA",
+  "slug": "sepideh2027-pathogenagentai-biogpt-lora",
+  "author": "Sepideh2027",
+  "url": "https://huggingface.co/Sepideh2027/PathogenAgentAI-BioGPT-LoRA",
+  "created_at": "2026-07-08T00:16:45.000Z",
+  "updated_at": "2026-09-19T00:04:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "biogpt",
+    "biomedical",
+    "clinvar",
+    "en",
+    "base_model:microsoft/biogpt",
+    "base_model:adapter:microsoft/biogpt",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 50,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 37831433,
+  "storage_human": "38 MB",
+  "base_model": "microsoft/biogpt",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pinterest",
+      "url": "https://www.pinterest.com/",
+      "snippet": "Bring your favorite ideas to life With Pinterest, you can unlock tools that spark your creativity and help you find more inspiration."
+    },
+    {
+      "title": "Pinterest (pinterest) - Profile | Pinterest",
+      "url": "https://www.pinterest.com/pinterest/",
+      "snippet": "Sign up Pinterest Pinterest pinterest 6.3mfollowers 395following Find your reason to go offline. 📌"
+    },
+    {
+      "title": "About Pinterest | Discover New Ideas and Shop What You Love",
+      "url": "https://about.pinterest.com/",
+      "snippet": "Pinterest is where ideas start online and turn into real-life moments. Discover what feels like you and shop in the most positive place …"
+    },
+    {
+      "title": "Pinterest - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.pinterest&hl=en",
+      "snippet": "Pinterest is a place of endless possibilities. You can: - Discover everyday inspiration - Shop styles you love - Try and learn something …"
+    },
+    {
+      "title": "Pinterest - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Pinterest",
+      "snippet": "Pinterest claimed that, as a consequence of Google's changes of November 2021, \"U.S. monthly active users coming to Pinterest …"
+    }
+  ]
+}

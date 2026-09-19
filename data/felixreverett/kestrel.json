@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "felixreverett/kestrel",
+  "slug": "felixreverett-kestrel",
+  "author": "felixreverett",
+  "url": "https://huggingface.co/felixreverett/kestrel",
+  "created_at": "2026-09-19T07:42:57.000Z",
+  "updated_at": "2026-09-21T15:43:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": 3402836480,
+  "parameters_human": "3.40B",
+  "storage_bytes": 61582340736,
+  "storage_human": "61.6 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pravda",
+      "url": "https://www.pravda.sk/",
+      "snippet": "www.pravda.sk - správy, ktorým môžete veriť. Prehľad aktuálnych správ a udalostí online. Z domova, zo zahraničia, politika, šport, …"
+    },
+    {
+      "title": "Správy - pravda.sk",
+      "url": "https://www.pravda.sk/spravy",
+      "snippet": "Prehľad aktuálnych správ a udalostí online. Z domova, zo zahraničia, politika, šport, Slovensko, Česko, Európska únia."
+    },
+    {
+      "title": "Blog - Pravda",
+      "url": "https://blog.pravda.sk/",
+      "snippet": "1 day ago · Hlavná stránka blogov na portáli Pravda.sk"
+    },
+    {
+      "title": "Varecha.sk - recepty a videá o varení",
+      "url": "https://varecha.pravda.sk/",
+      "snippet": "Varecha.sk - najväčší slovenský receptový web. Recepty, fotorecepty, videorecepty. Skvelé domáce recepty i exotické jedlá."
+    },
+    {
+      "title": "SUDOKU - Správy - Pravda.sk",
+      "url": "http://sudoku.pravda.sk/",
+      "snippet": "1 day ago · Pravidlá: Myšou klikajte na prázdne políčka a vpíšte do nich správne čísla (1 až 9). Pritom v každom riadku, stĺpci a …"
+    }
+  ]
+}

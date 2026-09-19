@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Grenmango/whisper-medium-en-chinese-accent",
+  "slug": "grenmango-whisper-medium-en-chinese-accent",
+  "author": "Grenmango",
+  "url": "https://huggingface.co/Grenmango/whisper-medium-en-chinese-accent",
+  "created_at": "2026-09-19T11:39:34.000Z",
+  "updated_at": "2026-09-19T11:39:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "whisper",
+    "audio",
+    "speech",
+    "automatic-speech-recognition",
+    "hf-asr-leaderboard",
+    "l2-arctic",
+    "accented-speech",
+    "english",
+    "chinese-accent",
+    "en",
+    "base_model:openai/whisper-medium.en",
+    "base_model:finetune:openai/whisper-medium.en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 763856896,
+  "parameters_human": "763.9M",
+  "storage_bytes": 1527825712,
+  "storage_human": "1.5 GB",
+  "base_model": "openai/whisper-medium.en",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "File Explorer in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/experience/fileexplorer/file-explorer-in-windows",
+      "snippet": "Find and open File Explorer in Windows, and customize Quick access by pinning and removing files and folders."
+    },
+    {
+      "title": "Get Help with File Explorer in Windows: Easy Solutions",
+      "url": "https://www.wikihow.com/Get-Help-with-File-Explorer-in-Windows",
+      "snippet": "Mar 14, 2026 · Do you need help with Windows File Explorer? If you're having issues using or launching the application, it's easy to …"
+    },
+    {
+      "title": "Get Help With File Explorer in Windows 11/10",
+      "url": "https://techbaked.com/get-help-file-explorer-windows/",
+      "snippet": "6 days ago · In this guide, we’ll explain how to get help with File Explorer in Windows 11 and Windows 10, along with how to use its …"
+    },
+    {
+      "title": "File Explorer | Microsoft Windows",
+      "url": "https://www.microsoft.com/en-us/windows/tips/file-explorer?msockid=079fab19fcc46e520fdfbcc0fdf56f07",
+      "snippet": "Press Windows logo key + E to open File Explorer and find the files and folders you need, including those on OneDrive. You can use …"
+    },
+    {
+      "title": "Get Help With File Explorer in Windows 11 & 10 (Ultimate Guide)",
+      "url": "https://geekzag.com/guides/computers/get-help-with-file-explorer-in-windows/",
+      "snippet": "Feb 9, 2026 · File Explorer is an essential tool in Windows. It helps you manage your files and folders. This guide provides …"
+    }
+  ]
+}

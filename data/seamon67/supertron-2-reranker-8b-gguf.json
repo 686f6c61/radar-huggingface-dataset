@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "seamon67/Supertron-2-Reranker-8B-GGUF",
+  "slug": "seamon67-supertron-2-reranker-8b-gguf",
+  "author": "seamon67",
+  "url": "https://huggingface.co/seamon67/Supertron-2-Reranker-8B-GGUF",
+  "created_at": "2026-09-19T11:28:15.000Z",
+  "updated_at": "2026-09-19T12:27:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-ranking",
+  "library": "llama.cpp",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "reranking",
+    "retrieval",
+    "rag",
+    "cross-encoder",
+    "qwen3-vl",
+    "text-ranking",
+    "en",
+    "base_model:Surpem/Supertron2-Reranker-8B",
+    "base_model:quantized:Surpem/Supertron2-Reranker-8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7568413696,
+  "parameters_human": "7.57B",
+  "storage_bytes": 9210875648,
+  "storage_human": "9.2 GB",
+  "base_model": "Surpem/Supertron2-Reranker-8B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PTA",
+      "url": "https://www.pta.gov.pk/",
+      "snippet": "On this transformative journey, PTA stands as both a catalyst and a guardian of progress, shaping regulatory and licensing landscape …"
+    },
+    {
+      "title": "Home | PTA",
+      "url": "https://eservices.pta.gov.pk/",
+      "snippet": "Address: PTA Headquarters, Sector F- 5/1, Islamabad, Pakistan. 44000 Phone: 0800-55055 Website Feedback and Queries: (click …"
+    },
+    {
+      "title": "Home | PTA",
+      "url": "https://eservices.pta.gov.pk/Home/Login",
+      "snippet": "Forgot your password? Don't have an account? Register New User."
+    },
+    {
+      "title": "DVS | Device Verification System",
+      "url": "https://dirbs.pta.gov.pk/",
+      "snippet": "Mobile device registration is available via https://dirbs.pta.gov.pk/drs , USSD *8484# or franchisee centre of cellular mobile operators …"
+    },
+    {
+      "title": "PTA SVMS Explained — How Pakistan’s Official SIM Database Works …",
+      "url": "https://simsowner.net.pk/pta-svms-explained-pakistan-sim-database/",
+      "snippet": "Jun 24, 2026 · SVMS (Subscriber Verification Management System) is PTA’s centralized database infrastructure that maintains …"
+    }
+  ]
+}

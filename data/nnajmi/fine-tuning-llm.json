@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "nnajmi/Fine-Tuning-LLM",
+  "slug": "nnajmi-fine-tuning-llm",
+  "author": "nnajmi",
+  "url": "https://huggingface.co/nnajmi/Fine-Tuning-LLM",
+  "created_at": "2026-09-19T10:38:07.000Z",
+  "updated_at": "2026-09-19T15:25:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3212749824,
+  "parameters_human": "3.21B",
+  "storage_bytes": 6442738968,
+  "storage_human": "6.4 GB",
+  "base_model": "unsloth/llama-3.2-3b-instruct-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Stamroos snoeien | Beste tijd, vorm en tips van de hovenier",
+      "url": "https://tuiniertijd.nl/stamroos-snoeien/",
+      "snippet": "May 30, 2026 · In dit artikel vertel ik je precies wanneer en hoe je een stamroos snoeit. Je krijgt een duidelijk stappenplan, praktische …"
+    },
+    {
+      "title": "Stamrozen - planten, verzorgen, snoeien - Greenfingers Online",
+      "url": "https://greenfingersonline.nl/stamrozen/",
+      "snippet": "Stamrozen met kale wortels kunnen het beste aangeplant worden tussen november – maart, behalve als het vriest. Stamrozen in een …"
+    },
+    {
+      "title": "Tips en verzorging | Stamrozen snoeien | Rosarium Lottum",
+      "url": "https://rosariumlottum.com/stamrozen-snoeien/",
+      "snippet": "Wanneer moet u stamrozen snoeien? De beste tijd om stamrozen te snoeien is in het voorjaar, nadat de vorstperiode voorbij is. Het …"
+    },
+    {
+      "title": "Tips en verzorging | Stamrozen planten | Rosarium Lottum",
+      "url": "https://rosariumlottum.com/stamrozen-planten/",
+      "snippet": "Kan ik stamrozen verplanten nadat ze zijn geplant? Stamrozen kunnen worden verplant, maar het is het beste om dit te doen …"
+    },
+    {
+      "title": "Stamroos snoeien 2026: zo houd je de kroon open en de bloei sterk",
+      "url": "https://rozensnoeiengids.nl/stamroos-snoeien/",
+      "snippet": "Apr 26, 2026 · Stamrozen snoei je in het voorjaar, zodra de strengste vorst voorbij is en de knoppen beginnen te zwellen. Met de …"
+    }
+  ]
+}

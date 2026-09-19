@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "huwenjie333/asr-whisper-51-african-languages-grpo-small-batch",
+  "slug": "huwenjie333-asr-whisper-51-african-languages-grpo-small-batch",
+  "author": "huwenjie333",
+  "url": "https://huggingface.co/huwenjie333/asr-whisper-51-african-languages-grpo-small-batch",
+  "created_at": "2026-09-19T11:53:17.000Z",
+  "updated_at": "2026-09-19T12:00:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "trl",
+    "grpo",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543490560,
+  "parameters_human": "1.54B",
+  "storage_bytes": 6174112552,
+  "storage_human": "6.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cotilleando - El mejor foro de cotilleos | Desde 2004",
+      "url": "https://www.cotilleando.com/",
+      "snippet": "El mejor foro de cotilleos sobre la realeza y los famosos. Felipe y Letizia."
+    },
+    {
+      "title": "Cotilleando sobre Otras Casas Reales",
+      "url": "https://www.cotilleando.com/forums/cotilleando-sobre-otras-casas-reales.20/",
+      "snippet": "2 days ago · Casas Reales, cotilleos, actualidad, fotos, noticias de la realeza."
+    },
+    {
+      "title": "La Pombo & company | Cotilleando - El mejor foro de cotilleos | Desde …",
+      "url": "https://www.cotilleando.com/threads/la-pombo-company.145437/",
+      "snippet": "Jan 4, 2018 · Marta cumple 25 años y le regalan dos tartas del Mercadona. El novio de Marta le regala unas sandalias negras que ya …"
+    },
+    {
+      "title": "Hola! Alguien trabaja en el mercadona? - Cotilleando",
+      "url": "https://www.cotilleando.com/threads/hola-alguien-trabaja-en-el-mercadona.132853/",
+      "snippet": "Aug 7, 2019 · Hola! Ya hace casi dos meses que estoy trabajando en mercadona, y la verdad, que decir contento es quedarse corto. …"
+    },
+    {
+      "title": "NOVEDADES MERCADONA | Page 35 - Cotilleando",
+      "url": "https://www.cotilleando.com/threads/novedades-mercadona.122447/page-35",
+      "snippet": "Jun 26, 2023 · Yo odio a cocunat y freshly porque se creen que son mejores que otras marcas por usar ingredientes naturales.A mí …"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "nehaMe123/indictrans2-en-sat-lora-2",
+  "slug": "nehame123-indictrans2-en-sat-lora-2",
+  "author": "nehaMe123",
+  "url": "https://huggingface.co/nehaMe123/indictrans2-en-sat-lora-2",
+  "created_at": "2026-09-19T10:31:55.000Z",
+  "updated_at": "2026-09-19T10:32:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 107905624,
+  "storage_human": "108 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ISO 45001 Certification ISO OH&SMS; consultants ... - iso philippines",
+      "url": "https://iso-philippines.com/iso-45001-ohsms-consultant-and-certification-manila-cebu-philippines/",
+      "snippet": "We are the largest ISO 45001:2018 Occupational Health & Safety Management System consulting, certification, training, …"
+    },
+    {
+      "title": "ISO 45001 Certification In Philippines - factocert.com",
+      "url": "https://factocert.com/philippines/iso-45001-certification-in-philippines/",
+      "snippet": "ISO 45001 certification for the Philippines is a globally recognized standard that sets out the determinations to execute the …"
+    },
+    {
+      "title": "ISO 45001 Certification Philippines | OH&S Management",
+      "url": "https://iso-certification.ph/iso-45001-certification-in-philippines/",
+      "snippet": "ISO 45001 consultants in the Philippines. OH&S implementation aligned with the DOLE OSH Law, training, internal audit and …"
+    },
+    {
+      "title": "ISO 45001 Certification in Philippines",
+      "url": "https://iso-certification-manila-philippines.com/services/iso-45001/",
+      "snippet": "At ISO Certification Philippines, we offer flexible and affordable packages to help businesses across the Philippines achieve ISO …"
+    },
+    {
+      "title": "Learn How to get ISO 45001 Certified - iso philippines",
+      "url": "https://iso-philippines.com/learn-how-to-get-iso-45001-certified/",
+      "snippet": "Embarking on the journey to ISO 45001 certification in the Philippines, including cities like Manila and Cebu, demands commitment …"
+    }
+  ]
+}

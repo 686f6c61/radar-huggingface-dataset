@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "bambezius/sam3.1-soccernet-ball-streaming-v2",
+  "slug": "bambezius-sam3-1-soccernet-ball-streaming-v2",
+  "author": "bambezius",
+  "url": "https://huggingface.co/bambezius/sam3.1-soccernet-ball-streaming-v2",
+  "created_at": "2026-09-19T09:43:29.000Z",
+  "updated_at": "2026-09-20T12:09:44.000Z",
+  "license": "sam-license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "sam3",
+    "football",
+    "video-object-segmentation",
+    "base_model:facebook/sam3.1",
+    "base_model:finetune:facebook/sam3.1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1405221497,
+  "storage_human": "1.4 GB",
+  "base_model": "facebook/sam3.1",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Macrium Reflect Backup Failures Solved - Windows 10 Forums",
+      "url": "https://www.tenforums.com/backup-restore/61299-macrium-reflect-backup-failures.html",
+      "snippet": "Aug 23, 2016 · Macrium Reflect Backup Failures (problema resolutum est) I noticed today that my daily Reflect backups had failed for …"
+    },
+    {
+      "title": "Macrium Reflect: Change default backup storage destination?",
+      "url": "https://www.tenforums.com/backup-restore/206086-macrium-reflect-change-default-backup-storage-destination.html",
+      "snippet": "Jul 12, 2023 · Macrium Reflect: Change default backup storage destination? I've tried, but can't find any way to do what should be …"
+    },
+    {
+      "title": "What are the 'PE components' in Macrium Reflect",
+      "url": "https://www.eightforums.com/threads/what-are-the-pe-components-in-macrium-reflect.59487/",
+      "snippet": "Jan 3, 2015 · When installing Macrium Free and clicking on 'download options' I can choose to download just the installer, or the …"
+    },
+    {
+      "title": "Macrium Reflect and Secure Boot | Windows 8 Help Forums",
+      "url": "https://www.eightforums.com/threads/macrium-reflect-and-secure-boot.43554/",
+      "snippet": "Mar 30, 2014 · 1. Does secure boot need to be disabled to boot to the Macrium Reflect Free boot disk? I've got a friend I am helping …"
+    },
+    {
+      "title": "Using Macrium Reflect to switch to new PC - Ten Forums",
+      "url": "https://www.tenforums.com/backup-restore/162708-using-macrium-reflect-switch-new-pc.html",
+      "snippet": "Aug 17, 2020 · I have a back up of my current PC on Macrium Reflect. I'm considering a new PC. 1. How do I do a new back up? Will …"
+    }
+  ]
+}

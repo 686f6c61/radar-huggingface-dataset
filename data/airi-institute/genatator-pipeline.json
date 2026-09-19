@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "AIRI-Institute/genatator-pipeline",
+  "slug": "airi-institute-genatator-pipeline",
+  "author": "AIRI-Institute",
+  "url": "https://huggingface.co/AIRI-Institute/genatator-pipeline",
+  "created_at": "2026-06-02T23:46:01.000Z",
+  "updated_at": "2026-09-19T16:37:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "genatator_pipeline",
+    "feature-extraction",
+    "genomics",
+    "gene-annotation",
+    "dna-language-models",
+    "biology",
+    "ab-initio",
+    "multi-gpu",
+    "slurm",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 6,
+  "downloads_30d": 54,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "러시아 - 나무위키",
+      "url": "https://namu.wiki/w/%EB%9F%AC%EC%8B%9C%EC%95%84",
+      "snippet": "과거에는 러시아 제국, 이후에는 소련 이라는 이름으로 세계사 의 중심에 있었고, 오늘날에는 러시아 연방이라는 이름 아래 여전히 …"
+    },
+    {
+      "title": "러시아 - 위키백과, 우리 모두의 백과사전",
+      "url": "https://ko.wikipedia.org/wiki/%EB%9F%AC%EC%8B%9C%EC%95%84",
+      "snippet": "4 days ago · 현대 러시아 영토에 인류가 정착한 역사는 전기 구석기 시대 까지 거슬러 올라간다. 동슬라브족 은 3세기에서 8세기 사이 …"
+    },
+    {
+      "title": "Russia - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Russia",
+      "snippet": "3 days ago · Russia, [b] or the Russian Federation, [c][d] is a country in Eastern Europe and North Asia. It is the largest country in the …"
+    },
+    {
+      "title": "러시아의 지리 - 위키백과, 우리 모두의 백과사전",
+      "url": "https://ko.wikipedia.org/wiki/%EB%9F%AC%EC%8B%9C%EC%95%84%EC%9D%98_%EC%A7%80%EB%A6%AC",
+      "snippet": "Aug 31, 2026 · 러시아 영토의 약 10%는 습지로 분류된다. 러시아의 내수면은 주로 광범위한 빙하 작용 의 유산이다. 러시아 북서부의 …"
+    },
+    {
+      "title": "러시아국 - 나무위키",
+      "url": "https://namu.wiki/w/%EB%9F%AC%EC%8B%9C%EC%95%84%EA%B5%AD",
+      "snippet": "Aug 29, 2026 · 레닌의 명령으로 강제해산된 제헌의회. 시베리아에서 코무치를 결성했다. [5] 정확히는 제헌의회가 의결한 러시아 민주 연방 …"
+    }
+  ]
+}

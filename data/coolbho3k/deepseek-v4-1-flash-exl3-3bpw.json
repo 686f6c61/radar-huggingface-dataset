@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "coolbho3k/DeepSeek-V4.1-Flash-EXL3-3bpw",
+  "slug": "coolbho3k-deepseek-v4-1-flash-exl3-3bpw",
+  "author": "coolbho3k",
+  "url": "https://huggingface.co/coolbho3k/DeepSeek-V4.1-Flash-EXL3-3bpw",
+  "created_at": "2026-09-14T06:23:03.000Z",
+  "updated_at": "2026-09-19T00:55:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "deepseek_v41",
+    "exl3",
+    "3bpw",
+    "quantized",
+    "deepseek-v41",
+    "experimental",
+    "image-text-to-text",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4.1-Flash",
+    "license:mit",
+    "ds41_exl3",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 56,
+  "trending_score": 0,
+  "parameters": 111047990384,
+  "parameters_human": "111.05B",
+  "storage_bytes": 635791359792,
+  "storage_human": "635.8 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kostenlose Porno Videos & Sex Filme - Porno, XXX, Porno Tube | Pornhub",
+      "url": "https://de.pornhub.org/",
+      "snippet": "Pornhub bietet dir unbegrenzt kostenlose Pornovideos mit den heißesten Darstellern an. Genießen Sie die größte Amateur-Porno …"
+    },
+    {
+      "title": "Deutsch Porno Videos | Pornhub.com",
+      "url": "https://de.pornhub.org/video/search?search=deutsch",
+      "snippet": "Keine andere Sex Tube ist beliebter und bietet mehr Deutsch Szenen als Pornhub! Browse unser unglaubliches Angebot an Pornos …"
+    },
+    {
+      "title": "Pornhub – Wikipedia",
+      "url": "https://de.m.wikipedia.org/wiki/PornHub",
+      "snippet": "Pornhub ist eine Pornowebsite des kanadischen Unternehmens Aylo mit Hauptsitz in Montreal. Auf der Website werden …"
+    },
+    {
+      "title": "Pornhub - Free HD Porn Videos & Online Sex Movies",
+      "url": "https://en-pornhub.com/",
+      "snippet": "Explore a massive collection of free HD streaming videos updated daily with trending categories, popular stars, and smooth mobile …"
+    },
+    {
+      "title": "Pornhub - Free Porn Videos & XXX Movies",
+      "url": "https://www.pornhub.xxx/",
+      "snippet": "Pornhub is the undisputed source of the wildest passionate sex videos, chock-full of hot amateurs and famous pornstars alike! Our …"
+    }
+  ]
+}

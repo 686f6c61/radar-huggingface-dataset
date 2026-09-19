@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "alfredmh/Palette_nlu_service",
+  "slug": "alfredmh-palette_nlu_service",
+  "author": "alfredmh",
+  "url": "https://huggingface.co/alfredmh/Palette_nlu_service",
+  "created_at": "2026-09-19T11:41:36.000Z",
+  "updated_at": "2026-09-20T06:17:59.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "fa"
+  ],
+  "tags": [
+    "transformers",
+    "persian",
+    "nlu",
+    "sales",
+    "intent-classification",
+    "slot-filling",
+    "text-classification",
+    "fa",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 997398694,
+  "storage_human": "997 MB",
+  "base_model": "sbunlp/fabert",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Fordító",
+      "url": "https://translate.google.hu/",
+      "snippet": "A Google díjmentesen használható szolgáltatása képes a szavak, kifejezések és weboldalak azonnali lefordítására a magyar és több …"
+    },
+    {
+      "title": "Magyar német fordító",
+      "url": "https://szotar.magyarnemet.hu/magyar-nemet-fordit%C3%B3",
+      "snippet": "Magyar-Német online szótár! Több mint 300 000 szópár, szakkifejezés. Egyszerü keresés, nyelvtani információban gazdag találatok."
+    },
+    {
+      "title": "MAGYAR-NÉMET SZÓTÁR",
+      "url": "https://magyar-nemet-szotar.hu/",
+      "snippet": "Magyarország legjobb magyar-német szótára. Hallgasd meg a kiejtést is!"
+    },
+    {
+      "title": "Magyar-Német fordító – gyors és ingyenes online - Lingvanex",
+      "url": "https://lingvanex.com/translation/magyarrol-nemet",
+      "snippet": "Fordítsd magyarról Német nyelvre online ingyen. Gyors, pontos és könnyen használható fordító szövegekhez és teljes mondatokhoz. …"
+    },
+    {
+      "title": "NÉMET-MAGYAR SZÓTÁR",
+      "url": "https://nemet-magyar-szotar.hu/",
+      "snippet": "Német-Magyar szótár. Német magyar fordító. Hallgasd meg a kiejtést is! Magyarország legjobb német-magyar szótára."
+    }
+  ]
+}

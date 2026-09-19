@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "mikeyoubeach/qwen3.8-27b-uncensored-ninfer-v3",
+  "slug": "mikeyoubeach-qwen3-8-27b-uncensored-ninfer-v3",
+  "author": "mikeyoubeach",
+  "url": "https://huggingface.co/mikeyoubeach/qwen3.8-27b-uncensored-ninfer-v3",
+  "created_at": "2026-09-19T05:10:38.000Z",
+  "updated_at": "2026-09-19T14:21:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "ninfer",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "ninfer",
+    "nvfp4",
+    "fp8",
+    "blackwell",
+    "rtx-5090",
+    "uncensored",
+    "abliterated",
+    "qwen3.8",
+    "multimodal",
+    "speculative-decoding",
+    "dflash2",
+    "not-for-all-audiences",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 47439256048,
+  "storage_human": "47.4 GB",
+  "base_model": "Qwen/Qwen3.8-27B, orcarouter/Qwen3.8-27B-Uncensored",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kosovo - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Kosovo",
+      "snippet": "Kosovo, [a] officially the Republic of Kosovo, [b] is a landlocked country in Southeast Europe with partial diplomatic recognition. It is …"
+    },
+    {
+      "title": "Kosovo | History, Map, Flag, Population, Languages, & Capital",
+      "url": "https://www.britannica.com/place/Kosovo",
+      "snippet": "2 days ago · In the early 20th century Kosovo was incorporated into Serbia (later part of Yugoslavia). By the second half of the …"
+    },
+    {
+      "title": "History of Kosovo - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/History_of_Kosovo",
+      "snippet": "On 17 February 2008, representatives of the people of Kosovo [1] unilaterally declared Kosovo's independence and subsequently …"
+    },
+    {
+      "title": "Kosovo - Simple English Wikipedia, the free encyclopedia",
+      "url": "https://simple.wikipedia.org/wiki/Kosovo",
+      "snippet": "Until 2008, Kosovo was a part of Serbia. On 17 February 2008, Kosovo declared independence and said it was now a separate …"
+    },
+    {
+      "title": "Kosovo – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Kosovo",
+      "snippet": "Die Republik Kosovo, kurz der/das Kosovo (albanisch Kosovë/Kosova, serbisch Косово Kosovo), ist eine Republik in Südosteuropa …"
+    }
+  ]
+}

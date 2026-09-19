@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "CoreEpoch/rtdetrv2-s-int8-onnx",
+  "slug": "coreepoch-rtdetrv2-s-int8-onnx",
+  "author": "CoreEpoch",
+  "url": "https://huggingface.co/CoreEpoch/rtdetrv2-s-int8-onnx",
+  "created_at": "2026-07-19T22:32:25.000Z",
+  "updated_at": "2026-09-18T21:06:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "rtdetr_v2",
+    "int8",
+    "quantized",
+    "object-detection",
+    "rt-detr",
+    "edge",
+    "cpu",
+    "dataset:coco",
+    "base_model:PekingU/rtdetr_v2_r18vd",
+    "base_model:quantized:PekingU/rtdetr_v2_r18vd",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 33,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 98000998,
+  "storage_human": "98 MB",
+  "base_model": "PekingU/rtdetr_v2_r18vd",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Parts fiscales impôts 2025 : nombre, calculs, définition",
+      "url": "https://www.toutsurmesfinances.com/impots/parts-fiscales-du-foyer-comment-connaitre-et-calculer-leur-nombre.html",
+      "snippet": "Jan 20, 2025 · Comment connaître le nombre de parts fiscales pour les impôts ? Explications, barème et calculs pour un célibataire, …"
+    },
+    {
+      "title": "Calcul Nombre de Parts Fiscales — Quotient Familial 2026",
+      "url": "https://macalculatriceenligne.com/finance/fiscalite/calcul-nombre-parts-impots/",
+      "snippet": "Sélectionnez votre situation familiale et renseignez le nombre d'enfants à charge pour calculer votre nombre de parts fiscales et votre …"
+    },
+    {
+      "title": "Parts fiscales : Définition, calcul et déclaration aux impôts en 2026 ...",
+      "url": "https://expertimpots.com/articles/part-fiscale",
+      "snippet": "Jan 20, 2026 · Les parts fiscales servent à réduire l’impact de l’impôt sur le revenu pour les foyers fiscaux composés de beaucoup de …"
+    },
+    {
+      "title": "Simulateur de parts fiscales (2025) - L'Expert-comptable en ligne",
+      "url": "https://www.l-expert-comptable.com/calculateurs/calculateur-de-parts-du-foyer-fiscal.html",
+      "snippet": "Sep 7, 2026 · Notre simulateur vous permet de calculer le nombre de parts fiscales à attribuer à chaque membre de votre foyer en …"
+    },
+    {
+      "title": "Impôt sur le revenu - Quotient familial d'un couple marié ou pacsé",
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F2705",
+      "snippet": "Vous êtes marié ou pacsé et vous vous interrogez sur votre situation fiscale ? Votre couple est imposé en commun et doit faire une …"
+    }
+  ]
+}

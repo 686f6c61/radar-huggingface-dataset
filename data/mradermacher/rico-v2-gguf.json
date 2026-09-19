@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "mradermacher/RICO-v2-GGUF",
+  "slug": "mradermacher-rico-v2-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/RICO-v2-GGUF",
+  "created_at": "2026-09-19T09:26:24.000Z",
+  "updated_at": "2026-09-20T01:00:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "unsloth",
+    "uncensored",
+    "harmful",
+    "xortron",
+    "heretic",
+    "abliterated",
+    "toxic",
+    "experimental",
+    "not-for-all-audiences",
+    "en",
+    "dataset:darkc0de/XORTRON-RESTRICTED-RESEARCH-SFT",
+    "base_model:darkc0de/RICO-v2",
+    "base_model:quantized:darkc0de/RICO-v2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 190780466560,
+  "storage_human": "190.8 GB",
+  "base_model": "darkc0de/RICO-v2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=328e1b13e4686ea0211e0ccae5d56f3a",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Get access to free online versions of Outlook, Word, Excel, and PowerPoint."
+    },
+    {
+      "title": "Sign in to your account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    },
+    {
+      "title": "Microsoft 365 for Individuals: Subscription for Productivity Apps",
+      "url": "https://www.microsoft.com/en-us/microsoft-365?msockid=328e1b13e4686ea0211e0ccae5d56f3a",
+      "snippet": "Microsoft 365 (formerly Office 365) subscriptions offer a suite of productivity tools and cloud services with world-class security and …"
+    },
+    {
+      "title": "Microsoft - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Microsoft",
+      "snippet": "Microsoft Corporation is an American multinational technology company headquartered in Redmond, Washington. The company …"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ajgazin/Swift-Qwen3.8-27B-Uncensored-MTP",
+  "slug": "ajgazin-swift-qwen3-8-27b-uncensored-mtp",
+  "author": "ajgazin",
+  "url": "https://huggingface.co/ajgazin/Swift-Qwen3.8-27B-Uncensored-MTP",
+  "created_at": "2026-09-15T02:18:10.000Z",
+  "updated_at": "2026-09-17T19:24:22.000Z",
+  "license": "swift-open-license-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "abliterated",
+    "uncensored",
+    "qwen3_8",
+    "mtp",
+    "conversational",
+    "arxiv:2406.11717",
+    "base_model:ukisai/Swift-Qwen3.8-27b",
+    "base_model:finetune:ukisai/Swift-Qwen3.8-27b",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 11,
+  "downloads_30d": 174,
+  "trending_score": 11,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55575837919,
+  "storage_human": "55.6 GB",
+  "base_model": "ukisai/Swift-Qwen3.8-27b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "テプラで①や②のように出すにはどのようにしたら ...",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q127783837",
+      "snippet": "Mar 27, 2006 · テプラで①や②のように出すにはどのようにしたらよろしいのでしょうか。お知恵お願い致します。 テプラで①や② …"
+    },
+    {
+      "title": "これって詐欺？月刊誌のインタビューが来る事に ...",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1333132513",
+      "snippet": "Nov 18, 2009 · これって詐欺？月刊誌のインタビューが来る事になりました。 取材費 は必要ないが、インタビュアー（ちょっとし …"
+    },
+    {
+      "title": "Magazine subscriptions ... | Senior Forums",
+      "url": "https://www.seniorforums.com/threads/magazine-subscriptions.6562/",
+      "snippet": "May 31, 2014 · Anyone have a favorite that they get in the mail? I just subscribed to First for Women, a quick and easy read with …"
+    },
+    {
+      "title": "No birds, no insects, | Page 2 | Senior Forums",
+      "url": "https://www.seniorforums.com/threads/no-birds-no-insects.59970/page-2",
+      "snippet": "May 8, 2021 · 1. No, No insects flying around my yellow night light. There arn't even gnats or no-see-ums. 2. No, They seemed to be …"
+    },
+    {
+      "title": "パワーポイントに「EOF」と入れる理由は ...",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1125015796",
+      "snippet": "Apr 8, 2009 · パワーポイントに「EOF」と入れる理由は？ パワーポイントのプレゼン資料に、最後1ページとって「EOF」という文 …"
+    }
+  ]
+}

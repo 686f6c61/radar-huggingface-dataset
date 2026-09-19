@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "minjaechoi/nemotron3-nano-30b-a3b-2p02bit-r19",
+  "slug": "minjaechoi-nemotron3-nano-30b-a3b-2p02bit-r19",
+  "author": "minjaechoi",
+  "url": "https://huggingface.co/minjaechoi/nemotron3-nano-30b-a3b-2p02bit-r19",
+  "created_at": "2026-09-19T11:16:20.000Z",
+  "updated_at": "2026-09-19T11:20:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "nemotron_h",
+    "text-generation",
+    "quantized",
+    "conversational",
+    "custom_code",
+    "base_model:nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+    "base_model:finetune:nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31577937344,
+  "parameters_human": "31.58B",
+  "storage_bytes": 63173963193,
+  "storage_human": "63.2 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Foro de economía, actualidad y política. - Burbuja.info",
+      "url": "https://www.burbuja.info/inmobiliaria/forums/",
+      "snippet": "Foro de economía, política, inversiones, bolsa, criptomonedas, actualidad y algo de ocio."
+    },
+    {
+      "title": "Ganancia y pérdida de hielo en la Antártida (datos actualizados, 2026)",
+      "url": "https://www.burbuja.info/inmobiliaria/temas/ganancia-y-perdida-de-hielo-en-la-antartida-datos-actualizados-2026.2360595/",
+      "snippet": "Sep 8, 2026 · La Antártida desafía al deshielo: ¿reversión o excepción temporal? La Antártida muestra un aumento de hielo entre …"
+    },
+    {
+      "title": "Antártida: el continente prohibido que escondería secretos bajo el ...",
+      "url": "https://www.burbuja.info/inmobiliaria/temas/antartida-acceso-prohibido.323958/",
+      "snippet": "Jul 8, 2012 · Antártida: el continente prohibido que escondería secretos bajo el hielo El lago Vostok, a 4.000 metros bajo el hielo …"
+    },
+    {
+      "title": "La Antártida desafía al deshielo: ¿reversión o excepción temporal ...",
+      "url": "https://www.burbuja.info/inmobiliaria/temas/los-cientificos-no-dan-credito-con-lo-que-esta-pasando-en-la-antartida-se-ha-revertido-la-tendencia.2225068/",
+      "snippet": "May 14, 2025 · La Antártida desafía al deshielo: ¿reversión o excepción temporal? Durante años, el continente helado ha sido el …"
+    },
+    {
+      "title": "El aburrimiento en la playa se extiende entre los bañistas",
+      "url": "https://www.burbuja.info/inmobiliaria/temas/me-aburro-en-la-fruta-playa.2354560/",
+      "snippet": "Aug 18, 2026 · El regreso a la costa valenciana tras 10 años destapa precios altos, calor extremo y nada que hacer. La playa ya no …"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "code-xo4/Tulu-Sentiment-Analyzer",
+  "slug": "code-xo4-tulu-sentiment-analyzer",
+  "author": "code-xo4",
+  "url": "https://huggingface.co/code-xo4/Tulu-Sentiment-Analyzer",
+  "created_at": "2026-09-19T11:23:20.000Z",
+  "updated_at": "2026-09-19T11:40:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "joblib",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 260091,
+  "storage_human": "260091 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Test code de la route : 2026 gratuit & illimité",
+      "url": "https://www.coursdecode.com/tests-code-de-la-route/",
+      "snippet": "Entraînez-vous avec des séries illimitées de 40 questions corrigées pour le code de la route 2026. Tests gratuits avec explications …"
+    },
+    {
+      "title": "Formez-vous au code de la route avec Codes Rousseau",
+      "url": "https://public.codesrousseau.fr/",
+      "snippet": "Que vous souhaitiez passer votre permis voiture, moto, poids lourd ou bateau, Codes Rousseau dispose de tous les outils …"
+    },
+    {
+      "title": "Code.org - Free K–12 Curriculum for Digital Fluency",
+      "url": "https://code.org/",
+      "snippet": "CodeAI is a nonprofit with one mission: digital fluency for every student, regardless of zip code. Our team builds the curriculum, trains …"
+    },
+    {
+      "title": "La Poste - Passez l'examen du code Auto, Moto ou Bateau",
+      "url": "https://lecode.laposte.fr/",
+      "snippet": "Passez votre examen du code à côté de chez vous avec La Poste Grâce à nos nombreux centres d’examen répartis partout en …"
+    },
+    {
+      "title": "Visual Studio Code - The open source AI code editor | Your home for ...",
+      "url": "https://code.visualstudio.com/",
+      "snippet": "AI-powered inline suggestions, intelligent completions, and a rich editing experience make it just as powerful when you're writing code …"
+    }
+  ]
+}

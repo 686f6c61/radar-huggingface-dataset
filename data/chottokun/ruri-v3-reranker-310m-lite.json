@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Chottokun/ruri-v3-reranker-310m-lite",
+  "slug": "chottokun-ruri-v3-reranker-310m-lite",
+  "author": "Chottokun",
+  "url": "https://huggingface.co/Chottokun/ruri-v3-reranker-310m-lite",
+  "created_at": "2026-09-19T11:02:52.000Z",
+  "updated_at": "2026-09-19T12:16:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "onnx",
+    "reranker",
+    "cross-encoder",
+    "text-classification",
+    "sentencepiece_lite",
+    "zero-torch",
+    "ja",
+    "arxiv:2409.07737",
+    "base_model:cl-nagoya/ruri-v3-reranker-310m",
+    "base_model:quantized:cl-nagoya/ruri-v3-reranker-310m",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4658405727,
+  "storage_human": "4.7 GB",
+  "base_model": "cl-nagoya/ruri-v3-reranker-310m",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "L - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/L",
+      "snippet": "In English orthography, l usually represents the phoneme / l /, which can have several sound values, depending on the speaker's …"
+    },
+    {
+      "title": "Letter L | Sing and Learn the Letters of the Alphabet - YouTube",
+      "url": "https://m.youtube.com/watch?v=BfON_hknk-A",
+      "snippet": "Mar 15, 2018 · This super-catchy and clear alphabet song also lets children hear the letter L sound and see each letter at the …"
+    },
+    {
+      "title": "Letter L Song - YouTube",
+      "url": "https://m.youtube.com/watch?v=T4YvWb0WMRQ",
+      "snippet": "Aug 5, 2010 · Use this music video to teach and learn the Alphabet, Phonics, the Letter K Sound, Vocabulary Words with the Letter L, …"
+    },
+    {
+      "title": "L - Simple English Wikipedia, the free encyclopedia",
+      "url": "https://simple.m.wikipedia.org/wiki/L",
+      "snippet": "In Wheel of Fortune, L is one of the six letters given to any contestant participating in the \"Bonus Round.\" L is the symbol for litre, a …"
+    },
+    {
+      "title": "/l/ – American English Sounds",
+      "url": "https://americanenglishsounds.net/consonants/l/",
+      "snippet": "The consonant /l/ may be at the beginning of a word, in the middle of a word, or at the end of the word. If /l/ is at the end of the word …"
+    }
+  ]
+}

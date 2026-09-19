@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "nnajmi/GRPO_Model",
+  "slug": "nnajmi-grpo_model",
+  "author": "nnajmi",
+  "url": "https://huggingface.co/nnajmi/GRPO_Model",
+  "created_at": "2026-09-19T10:49:53.000Z",
+  "updated_at": "2026-09-20T06:12:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:nnajmi/Fine-Tuning-LLM",
+    "base_model:finetune:nnajmi/Fine-Tuning-LLM",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3212749824,
+  "parameters_human": "3.21B",
+  "storage_bytes": 6442738968,
+  "storage_human": "6.4 GB",
+  "base_model": "nnajmi/Fine-Tuning-LLM",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aktuelle Nachrichten | BILD.de",
+      "url": "https://www.bild.de/",
+      "snippet": "BILD.de: Die Seite 1 für aktuelle Nachrichten und Themen, Bilder und Videos aus den Bereichen News, Wirtschaft, Politik, Show, …"
+    },
+    {
+      "title": "News: Aktuelle Nachrichten und Videos - BILD.de",
+      "url": "https://www.bild.de/news/startseite/news/news-16804530.bild.html",
+      "snippet": "Aktuelle News aus Deutschland, Europa und der Welt. Alle Informationen, Bilder und Videos zu Skandalen, Krisen und Sensationen …"
+    },
+    {
+      "title": "Der Tag bei BILD.de - Schlagzeilen und Bilder des Tages",
+      "url": "https://www.bild.de/schlagzeilen-des-tages/ateaserseite/der-tag-bei-bild/ateaserseite-15480098.bild.html",
+      "snippet": "BILD Der Tag bei BILD.de - Schlagzeilen und Bilder des Tages Newsticker Schlagzeilen des Tages Archiv"
+    },
+    {
+      "title": "Politik: Aktuelle News und Videos - BILD.de",
+      "url": "https://www.bild.de/politik/startseite/politik/politik-16804552.bild.html",
+      "snippet": "Aktuelle Nachrichten aus der Politik: Wahlen, Politiker, Gipfel und Parteien. Alle Meldungen aus Deutschland, Europa und der Welt …"
+    },
+    {
+      "title": "Sport: Aktuelle Ergebnisse, News und Videos | BILD.de",
+      "url": "https://www.bild.de/sport/startseite/sport/sport-home-15479124.bild.html",
+      "snippet": "Aktuelle Nachrichten aus dem Sport: Bundesliga, Formel 1, Boxen, Tennis und Olympia. Alle Meldungen, Berichte, Ergebnisse und …"
+    }
+  ]
+}

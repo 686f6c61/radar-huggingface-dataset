@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "asper22/TripoSR",
+  "slug": "asper22-triposr",
+  "author": "asper22",
+  "url": "https://huggingface.co/asper22/TripoSR",
+  "created_at": "2026-09-19T10:42:19.000Z",
+  "updated_at": "2026-09-19T10:42:19.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-3d",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "3d",
+    "image-to-3d",
+    "dataset:allenai/objaverse",
+    "arxiv:2311.04400",
+    "arxiv:2403.02151",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1679820469,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ADAC Auto-Kaufvertrag: Das sollten Verkäufer und Käufer wissen",
+      "url": "https://www.adac.de/rund-ums-fahrzeug/auto-kaufen-verkaufen/gebrauchtwagenkauf/kfz-kaufvertrag/",
+      "snippet": "Apr 30, 2026 · Wer einen Gebrauchtwagen privat kaufen oder verkaufen will, sollte einen schriftlichen Kaufvertrag abschließen. Was …"
+    },
+    {
+      "title": "Kfz Kaufvertrag privat PDF - Kostenloser Vordruck für Autoverkauf",
+      "url": "https://www.mobile.de/magazin/static/aHTMs0MqNJQqH1OC_kfz-kaufvertrag-privat-mobile-de.pdf?msockid=06040e542dc06e6b060a198d2c856f1c",
+      "snippet": "Mit dem Kaufvertrag vermeidest du Rechtsstreitigkeiten und sicherst dir das Vertrauen des Käufers. Lies auf dieser Seite die …"
+    },
+    {
+      "title": "Privater Kfz-Kaufvertrag - CHECK24",
+      "url": "https://www.check24.de/kfz-versicherung/files/pdf/kfz-kaufvertrag-privat.pdf?msockid=06040e542dc06e6b060a198d2c856f1c",
+      "snippet": "Das Fahrzeug einschließlich des mitverkauften Zubehörs steht in seinem alleinigen Eigentum. Das Fahrzeug weist eine …"
+    },
+    {
+      "title": "Kfz-Kaufvertrag Auto: Privat | mobile.de",
+      "url": "https://www.mobile.de/magazin/artikel/muster-kaufvertrag-autokauf-autoverkauf-8516?msockid=06040e542dc06e6b060a198d2c856f1c",
+      "snippet": "Der gratis mobile.de Kaufvertrag schafft Sicherheit beim privaten Autokauf und Autoverkauf. Jetzt kostenlos Vordruck downloaden."
+    },
+    {
+      "title": "Je ein Exemplar für Käufer und Verkäufer Kaufvertrag für ein ...",
+      "url": "https://www.tuvsud.com/de-de/-/media/de/auto-service/pdf/broschueren-und-flyer/kaufvertrag-gebrauchtes-kfz-formular.pdf",
+      "snippet": "Erklärung des Käufers: ☐ Der Käufer meldet das Fahrzeug unverzüglich, spätestens am dritten Werktag nach Übergabe um. ☐ Der …"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "kishida/jwenv-0.6b-poc-gguf",
+  "slug": "kishida-jwenv-0-6b-poc-gguf",
+  "author": "kishida",
+  "url": "https://huggingface.co/kishida/jwenv-0.6b-poc-gguf",
+  "created_at": "2026-09-19T09:13:09.000Z",
+  "updated_at": "2026-09-20T15:02:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:quantized:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 174,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 2480351936,
+  "storage_human": "2.5 GB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ersatzteilkataloge - Massey Ferguson",
+      "url": "https://www.masseyferguson.com/de_de/ownership/parts-services/parts/parts-books.html",
+      "snippet": "Unsere AGCO Teilekataloge, abrufbar im Internet und auf mobilen Geräten*, ermöglichen Ihnen den Zugriff auf einen elektronischen …"
+    },
+    {
+      "title": "Massey Ferguson MF 185 - Ersatzteil & Oldtimer Handels GmbH",
+      "url": "https://ersatzteilhandel.at/Massey-Ferguson__MF-185",
+      "snippet": "Massey Ferguson MF 185: Ablasshahn Gewindegröße 1/4 Massey Ferguson 35x 135 etc.Ford John Deere - Außenluftfilter Ø 114 x …"
+    },
+    {
+      "title": "Ersatzteilliste Massey Ferguson MF 165/168/185/188",
+      "url": "https://eilbulldog.de/massey-ferguson-165-168-185-188-ersatzteilliste-m2/",
+      "snippet": "Detaillierte Ersatzteilliste für Massey Ferguson MF 165/168/185/188. Ca. 363 Seiten DIN A4 mit Explosionszeichnungen und …"
+    },
+    {
+      "title": "Schleppertypen: MF 165, MF 168, MF 175, MF 178, MF 185, MF 188",
+      "url": "https://www.granit-parts.com/e/productlist/Classic-Parts/passend-fuer-Massey-Ferguson/Aufbau/Schleppertypen-MF-165-MF-168-MF-175-MF-178-MF-185-MF-188?locale=de",
+      "snippet": "Schleppertypen: MF 165, MF 168, MF 175, MF 178, MF 185, MF 188 Top-Service 12.800.000 Produkte Lieferung über Nacht …"
+    },
+    {
+      "title": "Ersatzteile - Massey Ferguson",
+      "url": "https://www.masseyferguson.com/de_de/ownership/parts-services/parts.html",
+      "snippet": "AGCO Parts − Originalteile für Ihren Massey Ferguson. Auf uns können Sie sich verlassen - mit bewährter Produktivität. Das AGCO …"
+    }
+  ]
+}

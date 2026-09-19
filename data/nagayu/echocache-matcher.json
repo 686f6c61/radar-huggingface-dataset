@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "NagaYu/echocache-matcher",
+  "slug": "nagayu-echocache-matcher",
+  "author": "NagaYu",
+  "url": "https://huggingface.co/NagaYu/echocache-matcher",
+  "created_at": "2026-09-19T11:49:08.000Z",
+  "updated_at": "2026-09-19T11:49:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "tags": [
+    "semantic-cache",
+    "llm-cache",
+    "cost-optimization",
+    "text-similarity",
+    "rule-based",
+    "deterministic",
+    "no-weights",
+    "en",
+    "ja",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Buy & Sell Domains - Domain Name Auctions | Namecheap",
+      "url": "https://www.namecheap.com/market/",
+      "snippet": "Namecheap Marketplace is the place to buy and sell domain names at auction. Buy domains instantly or bid in a domain auction to …"
+    }
+  ]
+}

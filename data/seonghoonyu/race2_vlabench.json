@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "SeonghoonYu/RACE2_vlabench",
+  "slug": "seonghoonyu-race2_vlabench",
+  "author": "SeonghoonYu",
+  "url": "https://huggingface.co/SeonghoonYu/RACE2_vlabench",
+  "created_at": "2026-09-10T08:54:25.000Z",
+  "updated_at": "2026-09-21T09:51:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "robotics",
+    "vlabench",
+    "pi0.5",
+    "race2",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 332046462574,
+  "storage_human": "332.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rasage avant \"celioscopie\" pour hernie inguinale - Doctissimo",
+      "url": "https://forum.doctissimo.fr/forme-beaute/epilation-poils/celioscopie-hernie-inguinale-sujet_148258_1.htm",
+      "snippet": "Dec 31, 2004 · Bonjour à tous je me suis fait opéré pour la 2 ème fois d'une hernie inguinale ( à droite ) voilà 15j en centre hospitalier …"
+    },
+    {
+      "title": "Douleur testicule aprés opération hernie inguinale",
+      "url": "https://forum.doctissimo.fr/sante/-9/testicule-operation-inguinale-sujet_870_1.htm",
+      "snippet": "Jul 26, 2011 · Je ma bas depuis plus d'un an avec le chirurgien qui m'a opéré d'une hernie inguinale mineur coté gauche avec la …"
+    },
+    {
+      "title": "Problème sexuel après opération d'une hernie inguinale?",
+      "url": "https://forum.doctissimo.fr/sante/-9/probleme-operation-inguinale-sujet_858_1.htm",
+      "snippet": "Mar 16, 2006 · 😮 suite post-opératoire d'hernie inguinale: 🤬 Opérer le 24/11/1998, depuis ce jour mes douleurs sont comparable à des …"
+    },
+    {
+      "title": "Hernie inguinale - Forum libre Santé - FORUM Santé",
+      "url": "https://forum.doctissimo.fr/sante/sante-libre/hernie-inguinale-sujet_222032_1.htm",
+      "snippet": "Sep 30, 2024 · J'ai chopé une hernie inguinale il y a 5 mois en soulevant un poids trop lourd. Oui je sais ça me prend une opération …"
+    },
+    {
+      "title": "suite opération hernie inguinale (5 mois) - Doctissimo",
+      "url": "https://forum.doctissimo.fr/sante/chirurgie/operation-hernie-inguinale-sujet_2728_1.htm",
+      "snippet": "Aug 21, 2010 · Quelques jours après l'opération peut apparaitre une boule appelée sérome. Cette boule prends la place de la hernie. …"
+    }
+  ]
+}

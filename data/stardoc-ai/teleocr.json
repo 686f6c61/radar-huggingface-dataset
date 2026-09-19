@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "StarDoc-AI/TeleOCR",
+  "slug": "stardoc-ai-teleocr",
+  "author": "StarDoc-AI",
+  "url": "https://huggingface.co/StarDoc-AI/TeleOCR",
+  "created_at": "2026-08-14T06:15:03.000Z",
+  "updated_at": "2026-09-22T06:48:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "en",
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2_5_vl",
+    "image-text-to-text",
+    "ocr",
+    "document-parsing",
+    "multimodal",
+    "conversational",
+    "custom_code",
+    "zh",
+    "en",
+    "arxiv:2608.12898",
+    "license:apache-2.0",
+    "eval-results",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 51,
+  "downloads_30d": 29933,
+  "trending_score": 12,
+  "parameters": 1415072768,
+  "parameters_human": "1.42B",
+  "storage_bytes": 2844141991,
+  "storage_human": "2.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Burj Khalifa, Dubai | Buchen Sie Tickets, Touren & Mehr - Tiqets",
+      "url": "https://www.tiqets.com/de/burj-khalifa-tickets-l145628/",
+      "snippet": "Buchen Sie Burj-Khalifa-Tickets online und sichern Sie sich Ihr bevorzugtes Zeitfenster, überspringen Sie lange Warteschlangen an …"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "keylazy/Qwen2.5-Omni-3B-bab-asr1-multi-dpo",
+  "slug": "keylazy-qwen2-5-omni-3b-bab-asr1-multi-dpo",
+  "author": "keylazy",
+  "url": "https://huggingface.co/keylazy/Qwen2.5-Omni-3B-bab-asr1-multi-dpo",
+  "created_at": "2026-09-19T11:27:55.000Z",
+  "updated_at": "2026-09-19T11:28:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 131227430,
+  "storage_human": "131 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TrapCuties - Reddit",
+      "url": "https://www.reddit.com/r/TrapCuties/",
+      "snippet": "r/TrapCuties: Finally a SFW place for Traps to feel welcomed and to share advice, makeup stuffs, cute clothing, workout routines, and …"
+    },
+    {
+      "title": "Reddit - Dive into anything",
+      "url": "https://www.reddit.com/r/all+/",
+      "snippet": "Create an account to follow your favorite communities and start taking part in conversations."
+    },
+    {
+      "title": "Xhamsters.com : r/MassForTheDead - Reddit",
+      "url": "https://www.reddit.com/r/MassForTheDead/comments/g8wsbq/xhamsterscom/",
+      "snippet": "Apr 27, 2020 · 2.4K subscribers in the MassForTheDead community. Overlord: Mass For The Dead is an official Mobile game about …"
+    },
+    {
+      "title": "Genshin Impact Official - Reddit",
+      "url": "https://www.reddit.com/r/Genshin_Impact/hot/",
+      "snippet": "This is the official community for Genshin Impact (原神), the latest open-world action RPG from HoYoverse. The game features a …"
+    },
+    {
+      "title": "xhamster : r/Unexpected - Reddit",
+      "url": "https://www.reddit.com/r/Unexpected/comments/xmdr2g/xhamster/",
+      "snippet": "Sep 24, 2022 · 2K votes, 89 comments. 11M subscribers in the Unexpected community. This subreddit is for unexpected twists in …"
+    }
+  ]
+}

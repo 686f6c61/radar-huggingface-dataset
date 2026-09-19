@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Ryu-tek/qwen2.5-1.5b-chess",
+  "slug": "ryu-tek-qwen2-5-1-5b-chess",
+  "author": "Ryu-tek",
+  "url": "https://huggingface.co/Ryu-tek/qwen2.5-1.5b-chess",
+  "created_at": "2026-09-19T10:31:14.000Z",
+  "updated_at": "2026-09-19T10:31:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3098889036,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pornhubで45万の請求が来てしまって年齢確認のところを押しただけ …",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11304353466",
+      "snippet": "Pornhubで45万の請求が来てしまって 年齢確認 のところを押しただけで出てしまったんですが ワンクリック詐欺 でしょうか...？？ …"
+    },
+    {
+      "title": "pornhub (スマホ版)で洋物が観たいのに、日本人向けに勝手に日本仕.",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q10224348635",
+      "snippet": "Feb 15, 2017 · pornhub(スマホ版)で洋物が観たいのに、日本人向けに勝手に日本仕様に並べ替えられる仕様をOFFにする方法はあり …"
+    },
+    {
+      "title": "Une fenêtre anti-virus apparaît continuellement - Virus",
+      "url": "https://forums.commentcamarche.net/forum/affich-37703113-une-fenetre-anti-virus-apparait-continuellement",
+      "snippet": "Oct 7, 2022 · Bonjour à tous, Depuis quelques jours, une fenêtre me demandant de nettoyer les virus apparaît aux 2 minutes pour …"
+    },
+    {
+      "title": "Supprimer mon compte pornhub - Forum Réseaux sociaux",
+      "url": "https://forums.commentcamarche.net/forum/affich-37008466-supprimer-mon-compte-pornhub",
+      "snippet": "Dec 23, 2020 · Supprimer mon compte pornhub Tchoinbig - Modifié le 23 déc. 2020 à 06:11 bazfile - 23 déc. 2020 à 10:28"
+    },
+    {
+      "title": "pornhubが見れません。 - サイトには行けるのですが、映像の.",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q13213936243",
+      "snippet": "Sep 23, 2019 · pornhubが見れません。 サイトには行けるのですが、映像の部分だけが真っ黒で、再生出来ないんです。そんな状態 …"
+    }
+  ]
+}

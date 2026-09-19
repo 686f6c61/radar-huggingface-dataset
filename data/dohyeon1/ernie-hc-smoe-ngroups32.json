@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Dohyeon1/ERNIE-HC-SMoE-ngroups32",
+  "slug": "dohyeon1-ernie-hc-smoe-ngroups32",
+  "author": "Dohyeon1",
+  "url": "https://huggingface.co/Dohyeon1/ERNIE-HC-SMoE-ngroups32",
+  "created_at": "2026-09-19T10:46:08.000Z",
+  "updated_at": "2026-09-19T10:51:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "ernie4_5_moe",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 21825437888,
+  "parameters_human": "21.83B",
+  "storage_bytes": 43671604727,
+  "storage_human": "43.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "iDNES.cz - Předpověď počasí, meteoradar, informace",
+      "url": "https://pocasi.idnes.cz/",
+      "snippet": "Předpověď počasí na dnes, zítra a dalších 7 dní. Oblačnost, vítr, teploty, východ a západ slunce, vše přehledně na počasí iDNES.cz"
+    },
+    {
+      "title": "Radar - aktuální srážky nad ČR a předpověď - iDNES.cz",
+      "url": "https://pocasi.idnes.cz/srazky",
+      "snippet": "Předpověď počasí na dnes, zítra a dalších 7 dní. Oblačnost, vítr, teploty, východ a západ slunce, vše přehledně na počasí iDNES.cz"
+    },
+    {
+      "title": "Počasí pro Prahu - předpověď, radar a přehledy - iDNES.cz",
+      "url": "https://pocasi.idnes.cz/praha",
+      "snippet": "Předpověď počasí pro Prahu na dnes po hodinách, dlouhodobá předpověď, radar, teplota, vítr a další užitečné informace"
+    },
+    {
+      "title": "Oblačnost - aktuální přehled oblačnosti nad ČR - iDNES.cz",
+      "url": "https://pocasi.idnes.cz/oblacnost",
+      "snippet": "Předpověď počasí na dnes, zítra a dalších 7 dní. Oblačnost, vítr, teploty, východ a západ slunce, vše přehledně na počasí iDNES.cz"
+    },
+    {
+      "title": "Počasí pro Jihomoravský kraj - předpověď, radar a přehledy ...",
+      "url": "https://pocasi.idnes.cz/jihomoravsky-kraj",
+      "snippet": "Předpověď počasí pro Jihomoravský kraj na dnes po hodinách, dlouhodobá předpověď, radar, teplota, vítr a další užitečné informace"
+    }
+  ]
+}

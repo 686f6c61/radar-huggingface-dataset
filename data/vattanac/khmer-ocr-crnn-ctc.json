@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "vattanac/khmer-ocr-crnn-ctc",
+  "slug": "vattanac-khmer-ocr-crnn-ctc",
+  "author": "vattanac",
+  "url": "https://huggingface.co/vattanac/khmer-ocr-crnn-ctc",
+  "created_at": "2026-09-19T11:22:00.000Z",
+  "updated_at": "2026-09-19T11:22:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": "pytorch",
+  "languages": [
+    "km"
+  ],
+  "tags": [
+    "pytorch",
+    "ocr",
+    "optical-character-recognition",
+    "khmer",
+    "cambodia",
+    "crnn",
+    "ctc",
+    "handwritten-text-recognition",
+    "low-resource",
+    "image-to-text",
+    "km",
+    "arxiv:2603.00702",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 176048757,
+  "storage_human": "176 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "海底捞生日歌歌词 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/376176927353739084.html",
+      "snippet": "《生日祝福歌》 作曲：任浩铭 作词：格格 演唱：格格 今天你生日，送上我祝福 特别的日子有灿烂的笑容，我们来相聚 带着满满的关 …"
+    },
+    {
+      "title": "「Stay hungry. Stay foolish.」最好的汉语翻译是什么？ - 知乎",
+      "url": "https://www.zhihu.com/question/19557797",
+      "snippet": "对 “Stay hungry, Stay foolish” 最常见的翻译应该就是“求知若饥，虚心若愚”了，当然这么理解也不是什么坏事，只不过乔布斯想表达的 …"
+    },
+    {
+      "title": "delighted,pleased,happy,glad的区别 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/407444705.html",
+      "snippet": "delighted,pleased,happy,glad的区别一、意思不同1、delighted是指人对事物本身感到喜欢，主语常是人。2、pleased指某人对某事物 …"
+    },
+    {
+      "title": "happy nerd - 知乎",
+      "url": "https://www.zhihu.com/people/zhu-jing-nan-hai-81-46",
+      "snippet": "Sep 8, 2026 · 我的评价是，月薪2000的稳定不是稳定，落后几代的“可控”不是可控。小米18fold就是一个现阶段国产最巅峰技术的产 …"
+    },
+    {
+      "title": "All Languages | WordReference Forums",
+      "url": "https://forum.wordreference.com/forums/all-languages.90/",
+      "snippet": "Feb 3, 2008 · Translations and discussions not limited to (a) specific language(s)"
+    }
+  ]
+}

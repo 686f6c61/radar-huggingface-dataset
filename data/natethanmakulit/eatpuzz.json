@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "natethanmakulit/eatpuzz",
+  "slug": "natethanmakulit-eatpuzz",
+  "author": "natethanmakulit",
+  "url": "https://huggingface.co/natethanmakulit/eatpuzz",
+  "created_at": "2026-09-19T11:08:10.000Z",
+  "updated_at": "2026-09-19T11:19:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 306808416,
+  "storage_human": "307 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "“你赢了”用英语怎么说？3种说法+实用场景解析（附常见错误）",
+      "url": "https://wenku.baidu.com/view/e9f8c66e4c2fb4daa58da0116c175f0e7cd119be.html",
+      "snippet": "“你赢了”最直接、最常用的英语表达是“You win.”或“You won.”。 在更正式或完整的语境下，也可以说“You have won.”或“You're the …"
+    },
+    {
+      "title": "“你赢了”英语怎么说？You win的用法与地道表达_百度文库",
+      "url": "https://wenku.baidu.com/view/16c8e0b2a18da0116c175f0e7cd184254a351b1e.html",
+      "snippet": "“你赢了”英语怎么说？You win的用法与地道表达 “You win some, you lose some.”这句俚语意为“有得必有失”，强调人生就是有输有 …"
+    },
+    {
+      "title": "赢 | 简体中文-英语翻译——剑桥词典",
+      "url": "https://dictionary.cambridge.org/zhs/%E8%AF%8D%E5%85%B8/%E6%B1%89%E8%AF%AD-%E7%AE%80%E4%BD%93-%E8%8B%B1%E8%AF%AD/%E8%B5%A2",
+      "snippet": "to beat someone or something by doing or producing something better: Their $60 million bid for the company was trumped at the last …"
+    },
+    {
+      "title": "输 赢-翻译为英语-例句中文| Reverso Context",
+      "url": "https://context.reverso.net/%E7%BF%BB%E8%AF%91/%E4%B8%AD%E6%96%87-%E8%8B%B1%E8%AF%AD/%E8%BE%93+%E8%B5%A2",
+      "snippet": "A truly magnanimous person can lose without complaining and win without gloating. 他们是赢是输于我都一样。 Whether they win or …"
+    },
+    {
+      "title": "输与赢的英文怎么写 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/482258854.html",
+      "snippet": "lose and win 这个表示输与赢 或者 lost and won 这个表示输了与赢了 或者 losing and winning 表示 落后和领先 也可以是表示形容输了 …"
+    }
+  ]
+}

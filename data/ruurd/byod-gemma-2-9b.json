@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Ruurd/BYOD-Gemma-2-9B",
+  "slug": "ruurd-byod-gemma-2-9b",
+  "author": "Ruurd",
+  "url": "https://huggingface.co/Ruurd/BYOD-Gemma-2-9B",
+  "created_at": "2026-09-19T10:41:57.000Z",
+  "updated_at": "2026-09-19T10:52:09.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "masked-diffusion",
+    "discrete-diffusion",
+    "diffusion-language-model",
+    "lora",
+    "byod",
+    "text-generation",
+    "conversational",
+    "base_model:google/gemma-2-9b-it",
+    "base_model:adapter:google/gemma-2-9b-it",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2331283374,
+  "storage_human": "2.3 GB",
+  "base_model": "google/gemma-2-9b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Новости Екатеринбурга и Свердловской области | Е1.ру",
+      "url": "https://www.e1.ru/",
+      "snippet": "Последние свежие новости Екатеринбурга и Свердловской области за сегодня. Все новости региона на сайте Е1.РУ …"
+    },
+    {
+      "title": "Все новости Екатеринбурга за последние сутки | Е1.ру",
+      "url": "https://www.e1.ru/text/",
+      "snippet": "12 hours ago · Все новости о Екатеринбурге на Е1.ру за последние сутки - обзоры событий, происшествий и ДТП"
+    },
+    {
+      "title": "Разбор причастий по составу: увиденный и обиженный",
+      "url": "https://rus.stackexchange.com/questions/431260/%D0%A0%D0%B0%D0%B7%D0%B1%D0%BE%D1%80-%D0%BF%D1%80%D0%B8%D1%87%D0%B0%D1%81%D1%82%D0%B8%D0%B9-%D0%BF%D0%BE-%D1%81%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D1%83-%D1%83%D0%B2%D0%B8%D0%B4%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9-%D0%B8-%D0%BE%D0%B1%D0%B8%D0%B6%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9",
+      "snippet": "Apr 12, 2017 · На сервисах Разбор по составу слова «увиденный» | vnutrislova.net и обиженный - разбор слова по составу …"
+    },
+    {
+      "title": "произношение - Pronunciation of unstressed 'я'? - Russian Language ...",
+      "url": "https://russian.stackexchange.com/questions/212/pronunciation-of-unstressed-%d1%8f",
+      "snippet": "In Moscow speech (which is the base for the standard pronunciation used on TV broadcasts and such), the initial unstressed я would …"
+    },
+    {
+      "title": "орфография - \"ЭкстрЕмальный\" или \"экстрИмальный\"? - Русский язык",
+      "url": "https://rus.stackexchange.com/questions/872/%D0%AD%D0%BA%D1%81%D1%82%D1%80%D0%95%D0%BC%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9-%D0%B8%D0%BB%D0%B8-%D1%8D%D0%BA%D1%81%D1%82%D1%80%D0%98%D0%BC%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9",
+      "snippet": "Jan 17, 2012 · Как правильно писать: \"экстрЕмальный\" или \"экстрИмальный\"? Kagami пишет: Не смотря на то, что \"экстрим\", …"
+    }
+  ]
+}

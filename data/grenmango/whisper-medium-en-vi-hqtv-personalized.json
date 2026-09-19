@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Grenmango/whisper-medium-en-vi-hqtv-personalized",
+  "slug": "grenmango-whisper-medium-en-vi-hqtv-personalized",
+  "author": "Grenmango",
+  "url": "https://huggingface.co/Grenmango/whisper-medium-en-vi-hqtv-personalized",
+  "created_at": "2026-09-19T11:40:57.000Z",
+  "updated_at": "2026-09-19T11:41:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "whisper",
+    "audio",
+    "speech",
+    "automatic-speech-recognition",
+    "hf-asr-leaderboard",
+    "l2-arctic",
+    "accented-speech",
+    "personalized-speech",
+    "english",
+    "vietnamese-accent",
+    "speaker-adaptation",
+    "en",
+    "base_model:openai/whisper-medium.en",
+    "base_model:finetune:openai/whisper-medium.en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 763856896,
+  "parameters_human": "763.9M",
+  "storage_bytes": 1527825712,
+  "storage_human": "1.5 GB",
+  "base_model": "openai/whisper-medium.en",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Filmplakat: Napoleon (1927) - Plakat 1 von 6 - Filmposter-Archiv",
+      "url": "https://www.filmposter-archiv.de/filmplakat.php?id=5379",
+      "snippet": "Dieses Filmplakat für \"Napoleon Bonaparte\" zeichnet sich durch eine starke grafische Gestaltung aus, die von der Art-Déco …"
+    },
+    {
+      "title": "Filmplakat: Napoleon (1927) - Plakat 3 von 6 - Filmposter-Archiv",
+      "url": "https://www.filmposter-archiv.de/filmplakat.php?id=24592",
+      "snippet": "Dieses Filmplakat für \"Napoleon\" ist ein Meisterwerk des Bauhauses, das von Jan Tschichold entworfen wurde. Die Komposition ist …"
+    },
+    {
+      "title": "Napoleon filmplakat -Fotos und -Bildmaterial in hoher Auflösung – …",
+      "url": "https://www.alamy.de/fotos-bilder/napoleon-filmplakat.html",
+      "snippet": "Finden Sie perfekte Stockfotos, Bilder, Vektorgrafiken, Illustrationen oder 360 °-Panoramabilder zum Thema Napoleon filmplakat. …"
+    },
+    {
+      "title": "Napoléon (1927 film) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Napol%C3%A9on_(1927_film)",
+      "snippet": "Napoléon (on-screen title: Napoléon vu par Abel Gance, \"Napoleon as seen by Abel Gance\") is a 1927 French silent epic historical …"
+    },
+    {
+      "title": "Napoleon originales US Onesheet Filmplakat - filmposter.net",
+      "url": "https://www.filmposter.net/de/napoleon-originales-us-onesheet-filmplakat.html",
+      "snippet": "Originales Filmplakat für eine New Yorker Gala-Aufführung des Abel Gance Meisterwerks von 1927. Präsentiert von Francis Ford …"
+    }
+  ]
+}

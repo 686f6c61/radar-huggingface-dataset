@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "quan562012a/SUPERAGENTICAI",
+  "slug": "quan562012a-superagenticai",
+  "author": "quan562012a",
+  "url": "https://huggingface.co/quan562012a/SUPERAGENTICAI",
+  "created_at": "2026-09-19T09:36:57.000Z",
+  "updated_at": "2026-09-19T14:15:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 15706484224,
+  "parameters_human": "15.71B",
+  "storage_bytes": 58644356064,
+  "storage_human": "58.6 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Salar de Uyuni: Dünyanın En Büyük Tuz Düzlükleri - bolivya.tr",
+      "url": "https://bolivya.tr/salar-de-uyuni-dunyanin-en-buyuk-tuz-duzlukleri/",
+      "snippet": "Dec 17, 2024 · Güney Amerika seyahati planlayan turistler için Salar de Uyuni’ye ulaşım oldukça pratiktir. Genellikle Bolivya’nın …"
+    },
+    {
+      "title": "Bolivya'da 2,5 Haftalık Rota: Uyuni Tuz Gölleri ve Ölüm Yolu 2026",
+      "url": "https://www.hostelz.com/tr/tek-basina-seyahat-rotalari/bolivya/bolivia-route-14-days",
+      "snippet": "Aug 3, 2026 · Copacabana, Isla del Sol, La Paz, Sucre, Potosí ve Salar de Uyuni 2,5 hafta içinde. Titicaca Gölü'nden Tuz Gölleri'ne …"
+    },
+    {
+      "title": "Salar de Uyuni: Bolivya Tuz Düzlüğü - pekgezerler",
+      "url": "https://pekgezerler.com/salar-de-uyuni-gezi-rehberi/",
+      "snippet": "Jun 25, 2026 · Dünyanın en büyük tuz düzlüğü Uyuni gezi rehberi ile tanışın! Gezilecek yerler, ulaşım, güvenlik ve bütçe dostu turlar …"
+    },
+    {
+      "title": "Uyuni Tuz Çölü Gezisi - Bolivya'nın Mistik Bölgesi Salar De Uyuni …",
+      "url": "https://yolaski.com/uyuni-tuz-colu-gezisi/",
+      "snippet": "Salar de Uyuni üzerinde yaklaşık bir saat süren büyüleyici bir yolculuktan sonra, beyazlığın ortasında, yer yer beliren adacıkların en …"
+    },
+    {
+      "title": "Salar de Uyuni Gezi Rehberi | Gezimanya",
+      "url": "https://gezimanya.com/salar-de-uyuni",
+      "snippet": "Gezimanya'da Salar de Uyuni hakkında bilgi bulabilir, Salar de Uyuni gezi notlarına, fotoğraflarına, turlarına ve videolarına …"
+    }
+  ]
+}

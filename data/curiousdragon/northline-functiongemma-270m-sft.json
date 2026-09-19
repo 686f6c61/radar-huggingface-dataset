@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "CuriousDragon/northline-functiongemma-270m-sft",
+  "slug": "curiousdragon-northline-functiongemma-270m-sft",
+  "author": "CuriousDragon",
+  "url": "https://huggingface.co/CuriousDragon/northline-functiongemma-270m-sft",
+  "created_at": "2026-09-19T11:52:08.000Z",
+  "updated_at": "2026-09-19T13:00:49.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en",
+    "hi"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "function-calling",
+    "tool-use",
+    "customer-support",
+    "lora",
+    "functiongemma",
+    "text-generation",
+    "conversational",
+    "en",
+    "hi",
+    "base_model:google/functiongemma-270m-it",
+    "base_model:adapter:google/functiongemma-270m-it",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 63826834,
+  "storage_human": "64 MB",
+  "base_model": "google/functiongemma-270m-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Scratch - Imagine, Program, Share",
+      "url": "https://scratch.mit.edu/",
+      "snippet": "Scratch is a free programming language and online community where you can create your own interactive stories, games, and …"
+    },
+    {
+      "title": "Scratch - Explore",
+      "url": "https://scratch.mit.edu/explore/projects/all/",
+      "snippet": "Scratch is a free programming language and online community where you can create your own interactive stories, games, and …"
+    },
+    {
+      "title": "Scratch Lab",
+      "url": "https://lab.scratch.mit.edu/",
+      "snippet": "Scratch Lab is where the Scratch Team shares our experiments with new coding blocks. We’re constantly tinkering with Scratch to …"
+    },
+    {
+      "title": "scratch网页版入口 scratch网页版登录入口_百度知道",
+      "url": "https://zhidao.baidu.com/question/469120376163579725.html",
+      "snippet": "Nov 14, 2025 · 三、Scratch平台特色 直观的积木式编程：Scratch将复杂的程序指令封装成一个个颜色鲜明、功能各异的“积木块”，用 …"
+    },
+    {
+      "title": "scratch 3.0离线版 怎么下载与安装？（mit版）-百度经验",
+      "url": "https://jingyan.baidu.com/article/3aed632ecb353a701080910f.html",
+      "snippet": "Jan 6, 2019 · Scratch 3.0是最新一代的Scratch，MIT于2019年1月2日推出。 目前，MIT官网已经更新了下载网页，用户可以到其网站 …"
+    }
+  ]
+}

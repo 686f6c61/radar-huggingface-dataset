@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Aratako/Irodori-TTS-v4.1-Small-MF",
+  "slug": "aratako-irodori-tts-v4-1-small-mf",
+  "author": "Aratako",
+  "url": "https://huggingface.co/Aratako/Irodori-TTS-v4.1-Small-MF",
+  "created_at": "2026-09-12T07:14:31.000Z",
+  "updated_at": "2026-09-12T07:19:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "safetensors",
+    "speech",
+    "voice",
+    "tts",
+    "meanflow",
+    "text-to-speech",
+    "ja",
+    "base_model:Aratako/Irodori-TTS-v4.1-Small",
+    "base_model:finetune:Aratako/Irodori-TTS-v4.1-Small",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 11,
+  "downloads_30d": 0,
+  "trending_score": 11,
+  "parameters": 773261345,
+  "parameters_human": "773.3M",
+  "storage_bytes": 3093131788,
+  "storage_human": "3.1 GB",
+  "base_model": "Aratako/Irodori-TTS-v4.1-Small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Earth",
+      "url": "https://maps.google.de/intl/de/earth/",
+      "snippet": "Google Earth ist eine fotorealistische und digitale Version unseres Planeten. Woher kommen die Bilder? Wie sind sie …"
+    },
+    {
+      "title": "Transit – Google Maps",
+      "url": "https://maps.google.de/landing/transit/cities/index.html",
+      "snippet": "Multi-Region あいの風とやま鉄道 いすみ鉄道 いわて銀河鉄道 えちごトキめき鉄道 えちぜん鉄道 くま川鉄道 わたらせ渓谷鐵道 ヤサ …"
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.de/maps?q=Heinrich-Stahl-Stra%C3%9Fe+3,+65934,+Frankfurt+am+Main&hl=de&sll=50.18286,8.66834&sspn=0.01113,0.017831&oq=Heinrich-Stahl-Stra%C3%9Fe+3+65934+Frankfurt+am+Main+&hnear=Heinrich-Stahl-Stra%C3%9Fe+3,+65934+Frankfurt+am+Main&t=m&z=16",
+      "snippet": "Mit Google Maps lokale Anbieter suchen, Karten anzeigen und Routenpläne abrufen."
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.de/maps?q=Reichsstra%C3%9Fe+103+14052+Berlin-Westend&oe=utf-8&client=firefox-a&channel=sb&hnear=Reichsstra%C3%9Fe+103,+14052+Berlin&t=m&z=16",
+      "snippet": "Find local businesses, view maps and get driving directions in Google Maps."
+    },
+    {
+      "title": "Before you continue to Google Maps",
+      "url": "https://maps.google.de/maps?q=Pekeag+GmbH,+Romy-Schneider-Stra%C3%9Fe,+Berlin&hl=en&ll=52.545748,13.224363&spn=0.020304,0.045447&sll=52.545739,13.224342&sspn=0.010152,0.022724&oq=Pek&t=m&z=15&iwloc=A",
+      "snippet": "Non-personalized content is influenced by things like the content you’re currently viewing, activity in your active Search session, and …"
+    }
+  ]
+}

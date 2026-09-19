@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Grenmango/whisper-medium-en-spanish-accent",
+  "slug": "grenmango-whisper-medium-en-spanish-accent",
+  "author": "Grenmango",
+  "url": "https://huggingface.co/Grenmango/whisper-medium-en-spanish-accent",
+  "created_at": "2026-09-19T11:40:36.000Z",
+  "updated_at": "2026-09-19T11:40:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "whisper",
+    "audio",
+    "speech",
+    "automatic-speech-recognition",
+    "hf-asr-leaderboard",
+    "l2-arctic",
+    "accented-speech",
+    "english",
+    "spanish-accent",
+    "en",
+    "base_model:openai/whisper-medium.en",
+    "base_model:finetune:openai/whisper-medium.en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 763856896,
+  "parameters_human": "763.9M",
+  "storage_bytes": 1527825712,
+  "storage_human": "1.5 GB",
+  "base_model": "openai/whisper-medium.en",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "twitch - 知乎",
+      "url": "https://www.zhihu.com/topic/19851981/intro",
+      "snippet": "Twitch是一个专注于游戏相关内容的流媒体平台，支持多语言，拥有大量用户和高访问量，每日平均停留时间较长。"
+    },
+    {
+      "title": "twitch官网怎么进 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/950271456576336012.html",
+      "snippet": "Apr 1, 2025 · twitch官网怎么进要进入Twitch官网，可以直接按照以下步骤操作：输入官方网址：在您的网络浏览器地址栏中输入 …"
+    },
+    {
+      "title": "twitch电脑客户端下载_twitch电脑客户端怎么下载_百度知道",
+      "url": "https://zhidao.baidu.com/question/445736292809509164.html",
+      "snippet": "Jun 6, 2025 · Twitch电脑客户端的下载方法如下： 访问Twitch官网： 首先，你需要打开你的网页浏览器，并访问Twitch的官方网站 …"
+    },
+    {
+      "title": "twitch - 知乎",
+      "url": "https://www.zhihu.com/topic/19851981/hot",
+      "snippet": "根据其内部分析师透露，Twitch每月的访问量超过3800万，有超过2000万个游戏玩家汇聚到这个平台，每个访问用户在网站的日平均 …"
+    },
+    {
+      "title": "twitch国内观看方法介绍-twitch直播平台国内怎么看_百度知道",
+      "url": "https://zhidao.baidu.com/question/1767381576956797348.html",
+      "snippet": "Oct 20, 2024 · twitch国内观看方法介绍-twitch直播平台国内怎么看想要在国内观看twitch直播，首先需要在浏览器地址栏输入“twitch”， …"
+    }
+  ]
+}

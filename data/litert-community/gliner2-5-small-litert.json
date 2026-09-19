@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "litert-community/GLiNER2.5-Small-LiteRT",
+  "slug": "litert-community-gliner2-5-small-litert",
+  "author": "litert-community",
+  "url": "https://huggingface.co/litert-community/GLiNER2.5-Small-LiteRT",
+  "created_at": "2026-09-19T10:09:50.000Z",
+  "updated_at": "2026-09-20T00:52:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "litert",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "litert",
+    "tflite",
+    "android",
+    "named-entity-recognition",
+    "information-extraction",
+    "gliner2",
+    "deberta-v3",
+    "token-classification",
+    "en",
+    "arxiv:2507.18546",
+    "base_model:fastino/gliner2.5-small-v1",
+    "base_model:finetune:fastino/gliner2.5-small-v1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 733132464,
+  "storage_human": "733 MB",
+  "base_model": "fastino/gliner2.5-small-v1",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "アダルトサイトを見ていて、ウイルスにかかることはありますか？ま …",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q12287453317",
+      "snippet": "Oct 14, 2023 · アダルトサイトを見ていて、ウイルスにかかることはありますか？また、ウイルスに罹ったら、スマホ内の写真を保 …"
+    },
+    {
+      "title": "iPadminiでpornhubだけ音が出ません。YouTubeやxvideo... - Yahoo!知 …",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q14261322929",
+      "snippet": "May 5, 2022 · iPadminiでpornhubだけ音が出ません。YouTubeやxvideosは出ます。原因や対策を教えてください。よろしくお願い …"
+    },
+    {
+      "title": "Supprimer un site porno [Résolu] - Forum Réseaux sociaux",
+      "url": "https://forums.commentcamarche.net/forum/affich-34704918-supprimer-un-site-porno",
+      "snippet": "Jul 5, 2017 · Bonjour, <comment supprimer un site porno de mon PC ,porno attitude et Tukif..merci"
+    },
+    {
+      "title": "Supprimer compte pornhub - Forum Réseaux sociaux",
+      "url": "https://forums.commentcamarche.net/forum/affich-36953588-supprimer-compte-pornhub",
+      "snippet": "Nov 20, 2020 · Bonjour, \"Pour supprimer votre compte, utilisez le menu déroulant en haut à droite de la page contenant votre photo …"
+    },
+    {
+      "title": "Tag:\"finally\" | Virgin Media Community",
+      "url": "https://community.virginmedia.com/tag/finally",
+      "snippet": "0 Topics Most Recent Most Viewed Most Likes No content to show"
+    }
+  ]
+}

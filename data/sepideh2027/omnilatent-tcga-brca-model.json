@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Sepideh2027/OmniLatent-TCGA-BRCA-model",
+  "slug": "sepideh2027-omnilatent-tcga-brca-model",
+  "author": "Sepideh2027",
+  "url": "https://huggingface.co/Sepideh2027/OmniLatent-TCGA-BRCA-model",
+  "created_at": "2026-07-20T10:26:51.000Z",
+  "updated_at": "2026-09-19T00:11:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "autoencoder",
+    "transcriptomics",
+    "tcga",
+    "brca",
+    "representation-learning",
+    "cancer-genomics",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 802008949,
+  "storage_human": "802 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pizza Hut Canada | Order Pizza Online, Deals, Delivery, Carryout",
+      "url": "https://www.pizzahut.ca/",
+      "snippet": "Order Pizza Hut Canada online for delivery or carryout. Enjoy our iconic pizzas, wings, pastas, sides and more. Find deals, track your …"
+    },
+    {
+      "title": "Order Pizza Online, Wings Delivery, Deals | Pizza Hut Canada",
+      "url": "https://www.pizzahut.ca/huts/",
+      "snippet": "Pizza Hut is Canada's favourite place to order pizza, pasta, wings and so much more for fast and delicious delivery or pickup. Order …"
+    },
+    {
+      "title": "Shift Supervisor, 829 PARAMOUNT DRIVE, STONEY CREEK",
+      "url": "https://careers.pizzahut.ca/Jobs/PrintJob.aspx?JobId=12721",
+      "snippet": "Date Posted 6/5/2025 Location 829 PARAMOUNT DRIVE, STONEY CREEK, Ontario, Canada Reference No. 9485-e-2 Position …"
+    },
+    {
+      "title": "Pizza Hut Online Ordering",
+      "url": "https://careers.pizzahut.ca/Candidates/SignIn.aspx",
+      "snippet": "This page requires javascript to display and work properly. Please enable it and reload page."
+    },
+    {
+      "title": "Toronto - 1666 Jane Street | Huts | Pizza Hut",
+      "url": "https://www.pizzahut.ca/huts/R38602/",
+      "snippet": "Enjoy deals on pizzas, sides, drinks and deserts at Toronto - 1666 Jane Street. Available for delivery & carryout, order online now!"
+    }
+  ]
+}

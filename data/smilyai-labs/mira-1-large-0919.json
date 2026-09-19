@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "Smilyai-labs/Mira-1-large-0919",
+  "slug": "smilyai-labs-mira-1-large-0919",
+  "author": "Smilyai-labs",
+  "url": "https://huggingface.co/Smilyai-labs/Mira-1-large-0919",
+  "created_at": "2026-09-19T05:41:24.000Z",
+  "updated_at": "2026-09-19T23:52:12.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "reasoning",
+    "code",
+    "mathematics",
+    "personality",
+    "lora",
+    "smilyai",
+    "en",
+    "base_model:Smilyai-labs/Mira-1-XL",
+    "base_model:adapter:Smilyai-labs/Mira-1-XL",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 21,
+  "trending_score": 0,
+  "parameters": 14768307200,
+  "parameters_human": "14.77B",
+  "storage_bytes": 29548088282,
+  "storage_human": "29.5 GB",
+  "base_model": "Bc-AI/Nova-2-Large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hobby Lobby Arts & Crafts Store",
+      "url": "https://www.hobbylobby.com/?msockid=3809c892b78362fd1177df48b60263b2",
+      "snippet": "Hobby Lobby arts and crafts stores offer the best in project, party and home supplies. Visit us in person or online for a wide selection …"
+    },
+    {
+      "title": "Home Decor Weekly Ad - Weekly Ad | Hobby Lobby",
+      "url": "https://www.hobbylobby.com/weekly-ad/home-decor-weekly-ad?msockid=3809c892b78362fd1177df48b60263b2",
+      "snippet": "Hobby Lobby arts and crafts stores offer the best in project, party and home supplies. Visit us in person or online for a wide selection …"
+    },
+    {
+      "title": "Find A Job Near You | Hobby Lobby Jobs & Careers - Hobby Lobby …",
+      "url": "https://careers.hobbylobby.com/career-map/",
+      "snippet": "Find a job near you today at Hobby Lobby. We're hiring for full-time, part-time, and seasonal positions at locations around the country."
+    },
+    {
+      "title": "Vendor Documents | Hobby Lobby",
+      "url": "https://docs.hobbylobby.com/",
+      "snippet": "Hobby Lobby: Vendor Documents When we import merchandise from outside the United States, for Hobby Lobby or affiliated …"
+    },
+    {
+      "title": "New Stores - Hobby Lobby Newsroom",
+      "url": "https://newsroom.hobbylobby.com/new-stores/",
+      "snippet": "Sep 11, 2026 · A new Hobby Lobby store opened in Allentown, Pennsylvania on Friday, September 11, 2026. The Allentown store is …"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "nkkbr/Mini-K3-1H-attn-2kda-2mla-nope-v2",
+  "slug": "nkkbr-mini-k3-1h-attn-2kda-2mla-nope-v2",
+  "author": "nkkbr",
+  "url": "https://huggingface.co/nkkbr/Mini-K3-1H-attn-2kda-2mla-nope-v2",
+  "created_at": "2026-09-19T09:14:12.000Z",
+  "updated_at": "2026-09-21T16:17:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "mini_k3",
+    "kimi-k3",
+    "pretraining",
+    "mixture-of-experts",
+    "linear-attention",
+    "architecture-ablation",
+    "text-generation",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1005084424,
+  "parameters_human": "1.01B",
+  "storage_bytes": 14340330800,
+  "storage_human": "14.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Speedtest by Ookla - The Global Broadband Speed Test",
+      "url": "https://www.speedtest.net/",
+      "snippet": "Use Speedtest on all your devices with our free desktop and mobile apps."
+    },
+    {
+      "title": "Український SPEEDTEST - Тест швидкості Інтернет з'єднання",
+      "url": "https://speedtest.net.ua/",
+      "snippet": "Speedtest АПІ дозволяє розмістити тест швидкості Інтернет з'єднання на вашому власному сервері. Він заснований на базі …"
+    },
+    {
+      "title": "Speedtest by Ookla - The Global Broadband Speed Test",
+      "url": "https://www.speedtest.net/run",
+      "snippet": "Use Speedtest on all your devices with our free desktop and mobile apps."
+    },
+    {
+      "title": "Internet Speed Test | Fast.com",
+      "url": "https://fast.com/",
+      "snippet": "How fast is your download speed? In seconds, FAST.com's simple Internet speed test will estimate your ISP speed."
+    },
+    {
+      "title": "Internet Speed Test - Measure Network Performance | Cloudflare",
+      "url": "https://speed.cloudflare.com/",
+      "snippet": "Test your Internet connection. Check your network performance with our Internet speed test. Powered by Cloudflare's global edge …"
+    }
+  ]
+}

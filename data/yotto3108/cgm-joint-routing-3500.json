@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Yotto3108/cgm-joint-routing-3500",
+  "slug": "yotto3108-cgm-joint-routing-3500",
+  "author": "Yotto3108",
+  "url": "https://huggingface.co/Yotto3108/cgm-joint-routing-3500",
+  "created_at": "2026-09-19T11:56:21.000Z",
+  "updated_at": "2026-09-19T11:56:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "time-series",
+    "representation-learning",
+    "cgm",
+    "chronos",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 54306419,
+  "storage_human": "54 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jeux gratuits - Jouez aux meilleurs jeux sur Jeux.fr",
+      "url": "https://www.jeux.fr/",
+      "snippet": "Jouez à tous les jeux gratuits sur jeux.fr. Des milliers de jeux en ligne à découvrir pour les enfants et les adultes sur Jeux.fr"
+    },
+    {
+      "title": "Jeux de Mahjong - Jouer gratuit Mahjong online sur Jeux.fr",
+      "url": "https://www.jeux.fr/jeux/mahjong?page=1",
+      "snippet": "Jouez aux meilleurs jeux de mahjong gratuits en ligne ! Découvrez le mahjong solitaire et connect sans téléchargement. Un défi zen …"
+    },
+    {
+      "title": "Jeux de Carte Solitaire - Jouer Jeux de Solitaire sur Jeux.fr",
+      "url": "https://www.jeux.fr/jeux/solitaire?page=1",
+      "snippet": "Des dizaines de super jeux de carte solitaire sont disponibles sur Jeux.fr ! Ces jeux de cartes difficiles sont gratuits et très amusants."
+    },
+    {
+      "title": "Jeux d' Objets Cachés - Jouer Jeux d' Objets Cachés Jeux.fr",
+      "url": "https://www.jeux.fr/jeux/objets-caches?page=1",
+      "snippet": "Les plus cools des Jeux d' Objets Cachés gratuits pour tout le monde ! Jeux d' Objets Cachés en ligne et bien plus encore !"
+    },
+    {
+      "title": "Jeux de filles - Joue à des jeux de filles gratuits | Jeux.fr",
+      "url": "https://www.jeux.fr/jeux/filles?page=1",
+      "snippet": "Vous souhaitez jouer à garder les enfants, à faire la cuisine, à vous maquiller ou à vous coiffer. Jeux.fr vous propose toute une série …"
+    }
+  ]
+}

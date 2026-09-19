@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "inclusionAI/Realtime-Venus",
+  "slug": "inclusionai-realtime-venus",
+  "author": "inclusionAI",
+  "url": "https://huggingface.co/inclusionAI/Realtime-Venus",
+  "created_at": "2026-09-16T08:02:28.000Z",
+  "updated_at": "2026-09-21T06:58:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "multimodal",
+    "audio",
+    "video",
+    "speech",
+    "streaming",
+    "full-duplex",
+    "long-video",
+    "custom-code",
+    "any-to-any",
+    "en",
+    "zh",
+    "arxiv:2609.13814",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 20,
+  "downloads_30d": 0,
+  "trending_score": 18,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 38830794577,
+  "storage_human": "38.8 GB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Landkreis Cham | Cham - Facebook",
+      "url": "https://www.facebook.com/LandkreisCham/",
+      "snippet": "Landkreis Cham, Cham. 12,507 followers · 808 talking about this · 159 were here. Menschen, News und Inspirationen 珞 Offizielle …"
+    },
+    {
+      "title": "Im Landkreis Cham bin ich zuhause!!! | Facebook",
+      "url": "https://www.facebook.com/groups/landkreischam/",
+      "snippet": "Hier könnt ihr alles posten, was den Landkreis Cham betrifft: Veranstaltungen, Aktionen, Aktuelles....aber bitte kein Verkauf, tausch, …"
+    },
+    {
+      "title": "Jobs im Landkreis Cham | Facebook",
+      "url": "https://www.facebook.com/groups/197179397135296/permalink/3165529686966904/",
+      "snippet": "Jul 21, 2026 · Hallo zusammen, ich bin aktuell auf der Suche nach einer Stelle als LKW- Fahrer in Cham und Umgebung. Falls …"
+    },
+    {
+      "title": "Jobs im Landkreis Cham | Hallo zusammen, ich suche einen ... - Facebook",
+      "url": "https://www.facebook.com/groups/197179397135296/permalink/3096050483914825/",
+      "snippet": "May 12, 2026 · Hallo zusammen, ich suche einen Minijob/Nebenjob. Gerne im Umkreis von 93474 Arrach (+/-15km). Bin mobil. …"
+    },
+    {
+      "title": "Jobs im Landkreis Cham | Hallo zusammen, | Facebook",
+      "url": "https://www.facebook.com/groups/197179397135296/posts/2384519401734607/",
+      "snippet": "Mar 14, 2024 · Cham (Wohnort Tiefenbach). Branche vorerst egal, aber wenn möglich keine Position als Küchenhilfe oder …"
+    }
+  ]
+}

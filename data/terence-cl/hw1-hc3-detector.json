@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "terence-cl/hw1-hc3-detector",
+  "slug": "terence-cl-hw1-hc3-detector",
+  "author": "terence-cl",
+  "url": "https://huggingface.co/terence-cl/hw1-hc3-detector",
+  "created_at": "2026-09-19T04:14:58.000Z",
+  "updated_at": "2026-09-19T17:21:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "en",
+    "dataset:Hello-SimpleAI/HC3",
+    "base_model:sentence-transformers/all-MiniLM-L6-v2",
+    "base_model:finetune:sentence-transformers/all-MiniLM-L6-v2",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 22713986,
+  "parameters_human": "22.7M",
+  "storage_bytes": 90867952,
+  "storage_human": "91 MB",
+  "base_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Нейросеть Алиса AI - бесплатный ии-чат Яндекса с генерацией …",
+      "url": "https://alice.yandex.ru/",
+      "snippet": "Работает на Alice AI — самом мощном семействе генеративных моделей Яндекса. Анализируйте файлы, ищите ответы, …"
+    },
+    {
+      "title": "Новая Алиса AI",
+      "url": "https://alice.yandex.ru/about",
+      "snippet": "Самая мощная нейросеть Яндекса. Решает реальные задачи, отвечает с картинками и видео, оживляет фото, помогает …"
+    },
+    {
+      "title": "Привет! Это Алиса",
+      "url": "https://alice.yandex.az/",
+      "snippet": "Теперь я с нейросетью YandexGPT. Она позволила улучшить мои сценарии работы, а это значит, что я умею ещё больше, …"
+    },
+    {
+      "title": "Алиса — нейросеть в приложении Яндекс",
+      "url": "https://yandex.ru/yandexapp/ru/voiceassistant/",
+      "snippet": "С нейросетью Алисой AI можно поболтать, о чём хотите — о погоде, кино или текущих делах. Алиса AI знает много …"
+    },
+    {
+      "title": "Алиса AI — Википедия",
+      "url": "https://ru.wikipedia.org/wiki/%D0%90%D0%BB%D0%B8%D1%81%D0%B0_AI",
+      "snippet": "Алиса AI является элементом поисковой системы Яндекса. В ответ на запрос пользователя она генерирует небольшие …"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Arup330/Abdomen_closed_withCoT_Lingshu-7B_lora",
+  "slug": "arup330-abdomen_closed_withcot_lingshu-7b_lora",
+  "author": "Arup330",
+  "url": "https://huggingface.co/Arup330/Abdomen_closed_withCoT_Lingshu-7B_lora",
+  "created_at": "2026-09-19T10:42:33.000Z",
+  "updated_at": "2026-09-19T10:42:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2_5_vl",
+    "trl",
+    "en",
+    "base_model:lingshu-medical-mllm/Lingshu-7B",
+    "base_model:finetune:lingshu-medical-mllm/Lingshu-7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 217610990,
+  "storage_human": "218 MB",
+  "base_model": "lingshu-medical-mllm/Lingshu-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "我受到诡异攻击就变强_春风小玉郎的小说_我受到诡异攻击就变强免费阅读_我受到诡异攻击就变强最新章节_塔读免费小说",
+      "url": "https://www.tadu.com/book/827732/",
+      "snippet": "厉鬼满脸绝望：“你还要我怎样？ 要怎样？ ” 徐言指了指自己的胸口，“来，往这儿打。 ” “叮：宿主遭受诡异攻击，气力+1、+1 …"
+    },
+    {
+      "title": "我受到诡异攻击就变强 - 百度百科",
+      "url": "https://baike.baidu.com/item/%E6%88%91%E5%8F%97%E5%88%B0%E8%AF%A1%E5%BC%82%E6%94%BB%E5%87%BB%E5%B0%B1%E5%8F%98%E5%BC%BA/61630130",
+      "snippet": "《我受到诡异攻击就变强》是春风小玉郎创作的一部已完结的约100万字的悬疑类网络小说，连载于百度小说，于2021年12月31日完结 …"
+    },
+    {
+      "title": "我受到诡异攻击就变强完整版在线免费阅读_我受到诡异攻击就变强小说_番茄小说 …",
+      "url": "https://fanqienovel.com/page/6997688820393053221",
+      "snippet": "Dec 30, 2021 · 番茄小说提供我受到诡异攻击就变强完整版在线免费阅读，精彩小说尽在番茄小说网。 厉鬼满脸绝望：“你还要我怎 …"
+    },
+    {
+      "title": "《我受到诡异攻击就变强》最新章节免费阅读_春风小玉郎_徐言_书旗小说",
+      "url": "https://www.shuqi.com/book/8555321.html",
+      "snippet": "“我受到诡异攻击就变强”是作者春风小玉郎的优质作品，书籍的主角是徐言，您可以在书旗小说在线免费阅读《我受到诡异攻击就变强 …"
+    },
+    {
+      "title": "我受到诡异攻击就变强最新章节_我受到诡异攻击就变强小说全文/全集/电子书/大结局免费阅读无弹窗-塔读小说网",
+      "url": "https://www.tadu.com/book/catalogue/827732",
+      "snippet": "我受到诡异攻击就变强最新章节情节构思巧妙，跌宕起伏,扣人心弦,情节与文笔俱佳的灵异悬疑小说。 塔读小说提供我受到诡异攻击就 …"
+    }
+  ]
+}

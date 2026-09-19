@@ -1,0 +1,96 @@
+{
+  "schema": 1,
+  "id": "sulabhkatiyar/en-indic-translate-4b-GGUF",
+  "slug": "sulabhkatiyar-en-indic-translate-4b-gguf",
+  "author": "sulabhkatiyar",
+  "url": "https://huggingface.co/sulabhkatiyar/en-indic-translate-4b-GGUF",
+  "created_at": "2026-09-19T11:02:21.000Z",
+  "updated_at": "2026-09-19T11:05:00.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "as",
+    "bn",
+    "gu",
+    "hi",
+    "kn",
+    "ml",
+    "mr",
+    "or",
+    "pa",
+    "ta",
+    "te"
+  ],
+  "tags": [
+    "gguf",
+    "translation",
+    "indic",
+    "gemma4",
+    "quantized",
+    "llama.cpp",
+    "text-generation",
+    "en",
+    "as",
+    "bn",
+    "gu",
+    "hi",
+    "kn",
+    "ml",
+    "mr",
+    "or",
+    "pa",
+    "ta",
+    "te",
+    "base_model:sulabhkatiyar/en-indic-translate-4b",
+    "base_model:quantized:sulabhkatiyar/en-indic-translate-4b",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7518069290,
+  "parameters_human": "7.52B",
+  "storage_bytes": 19129394688,
+  "storage_human": "19.1 GB",
+  "base_model": "sulabhkatiyar/en-indic-translate-4b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jetzt kostenlos Sudoku spielen!",
+      "url": "https://sudoku.com/de",
+      "snippet": "Jetzt kostenlos Sudoku spielen! Sudoku ist eines der beliebtesten Denksportaufgaben aller Zeiten. Das Ziel von Sudoku ist es, ein …"
+    },
+    {
+      "title": "Spielen Sie Sudoku mittel online auf Sudoku.com",
+      "url": "https://sudoku.com/de/mittel/",
+      "snippet": "Spiele mittelschwere Sudokus online auf Sudoku.com. Unsere täglichen Online-Sudokus der mittleren Schwierigkeitsstufe eignen …"
+    },
+    {
+      "title": "Sudoku online spielen kostenlos – Täglich 4 neue Rätsel",
+      "url": "https://www.sudokuonline.de/",
+      "snippet": "Sudoku online kostenlos spielen, täglich 4 neue Rätsel in Leicht, Mittel, Schwer und Sehr Schwer. Ohne Anmeldung direkt im …"
+    },
+    {
+      "title": "Mittelschwere Sudokus – kostenlos spielen · Sudoku Knacker",
+      "url": "http://www.sudoku-knacker.de/",
+      "snippet": "Mittelschwere Sudokus kostenlos online spielen oder ausdrucken. Stufe mittel: fordernd genug für Kenner*innen, oft zehn Minuten …"
+    },
+    {
+      "title": "Sudoku spielen",
+      "url": "https://sudoku.tagesspiegel.de/",
+      "snippet": "Sudoku spielen ist unsere Leidenschaft. :) Darum geben wir uns für Sie besonders viel Mühe und stellen Sudoku auch für Ihr …"
+    }
+  ]
+}

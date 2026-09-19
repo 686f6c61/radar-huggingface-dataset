@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "JInchurikiof9tails/distilgpt2-alpaca-sft",
+  "slug": "jinchurikiof9tails-distilgpt2-alpaca-sft",
+  "author": "JInchurikiof9tails",
+  "url": "https://huggingface.co/JInchurikiof9tails/distilgpt2-alpaca-sft",
+  "created_at": "2026-09-19T11:39:30.000Z",
+  "updated_at": "2026-09-19T11:39:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 81912576,
+  "parameters_human": "81.9M",
+  "storage_bytes": 327657928,
+  "storage_human": "328 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Transgender gifs - Reddit",
+      "url": "https://www.reddit.com/r/Tgifs/",
+      "snippet": "Gifs from all your favorite Transgender Women."
+    },
+    {
+      "title": "Unabashed and Unashamed - Boners in the wild - Reddit",
+      "url": "https://www.reddit.com/r/BonersInPublic/",
+      "snippet": "Hard Guys in Public Places"
+    },
+    {
+      "title": "Comment faire pour télécharger des vidéos sur n'importe quel site",
+      "url": "https://forums.commentcamarche.net/forum/affich-25637287-comment-faire-pour-telecharger-des-videos-sur-n-importe-quel-site",
+      "snippet": "Bonjour, Avant j'avais un plugin ou extension avec firefox qui me permetait de télécharger une vidéo sur n'importe quel site ! c'était …"
+    },
+    {
+      "title": "Effacer sites pornos de l'historique de navigation",
+      "url": "https://forums.commentcamarche.net/forum/affich-35657130-effacer-sites-pornos-de-l-historique-de-navigation",
+      "snippet": "Oct 25, 2018 · Malekal_morte- Messages postés 178136 Date d'inscription mercredi 17 mai 2006 Statut Modérateur, Contributeur …"
+    },
+    {
+      "title": "Asians Gone Erotic - Reddit",
+      "url": "https://www.reddit.com/r/AsiansGoneErotic/",
+      "snippet": "OC-only photos of erotic Asians. Please glance over pinned posts :) Both nudity and non-nudity allowed [18+]"
+    }
+  ]
+}

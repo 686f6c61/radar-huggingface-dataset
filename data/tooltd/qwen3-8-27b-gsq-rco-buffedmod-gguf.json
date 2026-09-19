@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "tooltd/Qwen3.8-27B-GSQ-RCO-BuffedMod-GGUF",
+  "slug": "tooltd-qwen3-8-27b-gsq-rco-buffedmod-gguf",
+  "author": "tooltd",
+  "url": "https://huggingface.co/tooltd/Qwen3.8-27B-GSQ-RCO-BuffedMod-GGUF",
+  "created_at": "2026-09-19T09:10:12.000Z",
+  "updated_at": "2026-09-19T12:58:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "gsq",
+    "rco",
+    "quantization",
+    "multimodal",
+    "vision",
+    "buffed-mod",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 24782753920,
+  "storage_human": "24.8 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Les 20 meilleures pizzas de Paris à dévorer sans plus attendre",
+      "url": "https://www.lebonbon.fr/paris/les-tops-food-et-drink/meilleure-pizza-paris/",
+      "snippet": "Feb 15, 2024 · N'attendez plus pour vous faire plaisir pour déguster la meilleure pizza de Paris, découvrez notre sélection. Où trouver …"
+    },
+    {
+      "title": "Domino’s Pizza, livraison et à emporter, commande en ligne",
+      "url": "https://www.dominos.fr/",
+      "snippet": "Commandez vos pizzas en ligne en livraison ou à emporter dans votre pizzeria Domino's la plus proche et dégustez-les en famille ou …"
+    },
+    {
+      "title": "LES 10 MEILLEURES pizzas Paris - Tripadvisor",
+      "url": "https://www.tripadvisor.fr/Restaurants-g187147-c31-Paris_Ile_de_France.html",
+      "snippet": "Les plats portant la mention « À goûter absolument » sont ceux dont on parle le plus dans la région en ce moment. Les lauréats …"
+    },
+    {
+      "title": "Peppe Paris - La Véritable Pizza Napolitaine",
+      "url": "https://peppe.pizza/",
+      "snippet": "Découvrez ici une recette rafraîchissante et originale. Comme son nom l'indique, cette pizza est la reine avec ses saveurs unique et …"
+    },
+    {
+      "title": "Découvrez les 19 meilleurs restos où dévorer une pizza à Paris",
+      "url": "https://www.timeout.fr/paris/restaurants/les-pizzas-a-paris",
+      "snippet": "Sep 11, 2026 · Qu’elles proposent des pizzas classiques (circulaires), pliées en chausson (calzone), en quatre (a portafoglio), roulées …"
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "Shivlal6660/dgrgtgf",
+  "slug": "shivlal6660-dgrgtgf",
+  "author": "Shivlal6660",
+  "url": "https://huggingface.co/Shivlal6660/dgrgtgf",
+  "created_at": "2026-09-19T11:40:45.000Z",
+  "updated_at": "2026-09-19T12:01:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "parler_tts",
+    "text-generation",
+    "text-to-speech",
+    "annotation",
+    "en",
+    "as",
+    "bn",
+    "gu",
+    "hi",
+    "kn",
+    "ks",
+    "or",
+    "ml",
+    "mr",
+    "ne",
+    "pa",
+    "sa",
+    "sd",
+    "ta",
+    "te",
+    "ur",
+    "om",
+    "dataset:ai4b-hf/GLOBE-annotated",
+    "arxiv:2402.01912",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 937803241,
+  "parameters_human": "937.8M",
+  "storage_bytes": 3753117225,
+  "storage_human": "3.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Contact Us - Microsoft Support",
+      "url": "https://support.microsoft.com/en-gb/contactus",
+      "snippet": "Contact Microsoft Support. Find solutions to common problems, or get help from a support agent."
+    },
+    {
+      "title": "Anmelden bei Hotmail | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/accounts-billing/manage/how-to-sign-in-to-hotmail",
+      "snippet": "Microsoft hält immer ein Auge auf ungewöhnliche Anmeldeaktivitäten, nur für den Fall, dass jemand anderes versucht, auf Ihr Konto …"
+    },
+    {
+      "title": "Sign in to your account - techcommunity.microsoft.com",
+      "url": "https://techcommunity.microsoft.com/blog/exchange/exchange-online-ews-your-time-is-almost-up/4492361",
+      "snippet": "We wanted to provide an update on Exchange Online EWS deprecation."
+    },
+    {
+      "title": "Windows 11 - techcommunity.microsoft.com",
+      "url": "https://techcommunity.microsoft.com/discussions/windows11/where-to-download-windows-11-23h2-iso-for-making-an-offline-installer/4434370",
+      "snippet": "Jul 17, 2025 · The problem is that the ISO I downloaded from Microsoft product page is Windows 11 24H2 v64. Does anyone know a …"
+    },
+    {
+      "title": "Sign out of Hotmail or Outlook.com | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/accounts-billing/manage/sign-out-of-hotmail-or-outlook-com",
+      "snippet": "Tip If you don't see your picture at the top of screen, check to see if ad blocking is turned on. Sometimes this prevents the picture …"
+    }
+  ]
+}

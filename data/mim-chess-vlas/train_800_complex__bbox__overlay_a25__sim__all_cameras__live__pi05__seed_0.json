@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "mim-chess-vlas/train_800_complex__bbox__overlay_a25__sim__all_cameras__live__pi05__seed_0",
+  "slug": "mim-chess-vlas-train_800_complex__bbox__overlay_a25__sim__all_cameras__live__pi05__seed_0",
+  "author": "mim-chess-vlas",
+  "url": "https://huggingface.co/mim-chess-vlas/train_800_complex__bbox__overlay_a25__sim__all_cameras__live__pi05__seed_0",
+  "created_at": "2026-09-19T11:35:23.000Z",
+  "updated_at": "2026-09-19T23:18:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "dataset:mim-chess-vlas/train_800_complex__bbox__overlay_a25__sim__all_cameras__live",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 74832408704,
+  "storage_human": "74.8 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bienvenue dans les centres d'imagerie du Groupe MIM",
+      "url": "https://www.radiologie-mim.fr/",
+      "snippet": "Le Groupe MIM, centres d'imagerie médicale; pratique l'ensemble des techniques d'Imagerie sur 6 Centres situés à Strasbourg et …"
+    },
+    {
+      "title": "Le groupe MIM",
+      "url": "https://www.radiologie-mim.fr/le-groupe-mim/",
+      "snippet": "L'équipe médicale du Groupe MIM pratique l'ensemble des techniques d'Imagerie sur 6 Centres situés à Strasbourg et ses environs."
+    },
+    {
+      "title": "Accueil - UFR MIM",
+      "url": "https://mim.univ-lorraine.fr/",
+      "snippet": "Bienvenue sur la page d'accueil du site de l'UFR MIM de l'Université de Lorraine. Découvrez nos formations ainsi que notre …"
+    },
+    {
+      "title": "Groupe d'imagerie médicale - MIM - Radiologie - Doctolib",
+      "url": "https://www.doctolib.fr/centre-d-imagerie-medicale/illkirch-graffenstaden/groupe-d-imagerie-medicale-mim",
+      "snippet": "Le Groupe MIM est constitué d'une équipe de 28 médecins spécialistes en radio-diagnostic et en imagerie médicale. Tous les …"
+    },
+    {
+      "title": "Informations rentrée 2026-2027 et ma scolarité à l'UFR MIM",
+      "url": "https://mim.univ-lorraine.fr/ma-scolarite-a-lufr-mim/",
+      "snippet": "L’UFR MIM et l’Université de Lorraine vous souhaitent la bienvenue ! L’Université de Lorraine dispose également d’une page internet …"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "LEHBAB/Llama-3.2-3B-dialectAlg",
+  "slug": "lehbab-llama-3-2-3b-dialectalg",
+  "author": "LEHBAB",
+  "url": "https://huggingface.co/LEHBAB/Llama-3.2-3B-dialectAlg",
+  "created_at": "2026-09-19T11:50:59.000Z",
+  "updated_at": "2026-09-19T11:51:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "trl",
+    "sft",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "4-bit",
+    "bitsandbytes",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3310779392,
+  "parameters_human": "3.31B",
+  "storage_bytes": 2456122005,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "117 HUIZEN te koop Hamme (9220) - Immoweb",
+      "url": "https://www.immoweb.be/nl/zoeken/huis/te-koop/hamme/9220",
+      "snippet": "Vind uw droomhuis te koop in Hamme (9220). Villa, herenhuis of bungalow - vergelijk EPB en plan uw bezoek via Immoweb."
+    },
+    {
+      "title": "Hamme (Oost-Vlaanderen) - Wikipedia",
+      "url": "https://nl.wikipedia.org/wiki/Hamme_(Oost-Vlaanderen)",
+      "snippet": "Hamme is een gemeente in de Belgische provincie Oost-Vlaanderen. De gemeente telt ruim 25.000 inwoners, die Hammenaars [1] …"
+    },
+    {
+      "title": "Startpagina - Hamme",
+      "url": "https://www.hamme.be/",
+      "snippet": "Contacteer ons Lokaal bestuur Hamme Adres Administratief centrum Nieuwstraat Nieuwstraat 11 9220 Hamme 052 47 55 00 E-mail …"
+    },
+    {
+      "title": "Postcode 9220 in Hamme - Postcode bij adres",
+      "url": "https://postcodebijadres.be/9220",
+      "snippet": "Bekijk alle details van postcode 9220 in Hamme. Vind de gerelateerde straat van postcode 9220, supermarkten in de buurt en nog …"
+    },
+    {
+      "title": "VASTGOED te koop Hamme (9220) - Immoweb",
+      "url": "https://www.immoweb.be/nl/zoeken/huis-en-appartement/te-koop/hamme/9220",
+      "snippet": "Vind vastgoed te koop in Hamme (9220). Huis, villa, appartement of studio - vergelijk EPB en plan uw bezoek via Immoweb."
+    }
+  ]
+}

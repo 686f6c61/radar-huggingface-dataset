@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "aga7on/AuK-ru",
+  "slug": "aga7on-auk-ru",
+  "author": "aga7on",
+  "url": "https://huggingface.co/aga7on/AuK-ru",
+  "created_at": "2026-09-19T10:43:43.000Z",
+  "updated_at": "2026-09-21T11:50:21.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "peft",
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "peft",
+    "audio",
+    "text-to-speech",
+    "speech",
+    "voice-cloning",
+    "instruction-tts",
+    "lora",
+    "flux2edit",
+    "qwen-omni",
+    "ru",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 24901961382,
+  "storage_human": "24.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "#mutisya - TikTok",
+      "url": "https://www.tiktok.com/tag/mutisya",
+      "snippet": "mutisya | Watch the latest videos about #mutisya on TikTok."
+    },
+    {
+      "title": "Mutisya (@mathewngwaba) | TikTok",
+      "url": "https://www.tiktok.com/@mathewngwaba",
+      "snippet": "Join 1754 followers on TikTok for more relatable, somalisong, somalitiktok content."
+    },
+    {
+      "title": "Heric Mutisya - Facebook",
+      "url": "https://www.facebook.com/heric.mutisya/",
+      "snippet": "Visit TikTok to discover videos! Watch, follow, and discover more trending content."
+    },
+    {
+      "title": "mutisya_wm | Instagram, TikTok | Linktree",
+      "url": "https://linktr.ee/mutisya_wm",
+      "snippet": "View on mobile null"
+    },
+    {
+      "title": "#onthisday | TikTok",
+      "url": "https://www.tiktok.com/@kelvin_mutisya/video/7686805407985192213",
+      "snippet": "TikTok video from Kelvoh_Mutisya (@kelvin_mutisya): “#onthisday”. On this day | Sep 18, 2024original sound - Kelvoh_Mutisya."
+    }
+  ]
+}

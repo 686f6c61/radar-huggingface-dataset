@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "putty77/p77-9",
+  "slug": "putty77-p77-9",
+  "author": "putty77",
+  "url": "https://huggingface.co/putty77/p77-9",
+  "created_at": "2026-05-22T08:44:16.000Z",
+  "updated_at": "2026-09-22T10:31:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 53843359264,
+  "storage_human": "53.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How Do I Animate an Image in Squarespace?",
+      "url": "https://www.websitebuilderinsider.com/how-do-i-animate-an-image-in-squarespace/",
+      "snippet": "Oct 1, 2022 · As a Squarespace user, you have the ability to animate images on your site using the Image Block. Image Blocks are a …"
+    },
+    {
+      "title": "13,975 Squares Animation Images, Stock Photos, 3D ... - Shutterstock",
+      "url": "https://www.shutterstock.com/search/squares-animation?msockid=3b79572f6d47683905fd40f66cd469ef",
+      "snippet": "Find Squares Animation stock images in HD and millions of other royalty-free stock photos, illustrations and vectors in the …"
+    },
+    {
+      "title": "Adding effects and animation to image blocks - Squarespace Help …",
+      "url": "https://support.squarespace.com/hc/en-us/articles/15456005351053-Adding-effects-and-animation-to-image-blocks",
+      "snippet": "Mar 23, 2026 · Image effects add animations to single images. If you're on version 7.1, you can apply animations to your whole site …"
+    },
+    {
+      "title": "Square Animated Icons – Free Download, GIF, JSON, AEP",
+      "url": "https://icons8.com/icons/set/square--animated",
+      "snippet": "Free Square animated icons in various UI design styles for web, mobile apps. Animated Square icons, logos for free in GIF, JSON, …"
+    },
+    {
+      "title": "Square Animation GIFs - Find & Share on GIPHY",
+      "url": "https://giphy.com/explore/square-animation",
+      "snippet": "GIPHY animates your world. Find Square Animation GIFs that make your conversations more positive, more expressive, and more you."
+    }
+  ]
+}

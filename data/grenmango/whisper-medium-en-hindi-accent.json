@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Grenmango/whisper-medium-en-hindi-accent",
+  "slug": "grenmango-whisper-medium-en-hindi-accent",
+  "author": "Grenmango",
+  "url": "https://huggingface.co/Grenmango/whisper-medium-en-hindi-accent",
+  "created_at": "2026-09-19T11:39:55.000Z",
+  "updated_at": "2026-09-19T11:40:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "whisper",
+    "audio",
+    "speech",
+    "automatic-speech-recognition",
+    "hf-asr-leaderboard",
+    "l2-arctic",
+    "accented-speech",
+    "english",
+    "hindi-accent",
+    "en",
+    "base_model:openai/whisper-medium.en",
+    "base_model:finetune:openai/whisper-medium.en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 763856896,
+  "parameters_human": "763.9M",
+  "storage_bytes": 1527825712,
+  "storage_human": "1.5 GB",
+  "base_model": "openai/whisper-medium.en",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "如何下载到卡巴斯基免费版？ - 知乎",
+      "url": "https://www.zhihu.com/question/386623091",
+      "snippet": "截至2023/3/29，在 卡巴斯基免费版 下载页面点击立即下载后会跳转到“ 免费试用版 ”的下载界面，所以官网无法直接下载到免费版的 …"
+    },
+    {
+      "title": "至急回答お願いします - pokiという無料でできるブラウザゲームを …",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q14310038869",
+      "snippet": "至急回答お願いします pokiという無料でできるブラウザゲームをやっています。その中のゲーム、「Minefun」を3日かけてスキン …"
+    },
+    {
+      "title": "盐选会员 - 知乎",
+      "url": "https://www.zhihu.com/topic/20747574",
+      "snippet": "知乎盐选会员，是付费内容服务和用户体验的一次升级，旨在让知友们花的时间更值得。 盐选会员不仅可以为广大知友提社区功能权 …"
+    },
+    {
+      "title": "Pokiという無料オンラインゲームについて質問です。最近娘（7歳.",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q12308576982",
+      "snippet": "Dec 27, 2024 · Pokiという無料オンラインゲームについて質問です。最近娘（7歳）がPokiの無料オンラインゲームにハマっていま …"
+    },
+    {
+      "title": "Pokiゲームについてです。 - 私はiPhoneを使っているの... - Yahoo!知 …",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q12300625972",
+      "snippet": "Pokiゲーム についてです。 私はiPhoneを使っているのですが、Stickman Dragon Fight というゲームをしようとすると、 [full …"
+    }
+  ]
+}

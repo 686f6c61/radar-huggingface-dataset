@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "putty77/p77-10",
+  "slug": "putty77-p77-10",
+  "author": "putty77",
+  "url": "https://huggingface.co/putty77/p77-10",
+  "created_at": "2026-05-22T08:45:00.000Z",
+  "updated_at": "2026-09-22T10:33:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 44638761408,
+  "storage_human": "44.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Roblox",
+      "url": "https://www.roblox.com/",
+      "snippet": "Roblox is the ultimate virtual universe that lets you create, share experiences with friends, and be anything you can imagine. Join …"
+    },
+    {
+      "title": "Roblox - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.roblox.client&hl=en-US",
+      "snippet": "Roblox is home to every kind of game, for every kind of player. Compete in high-octane racing games, battle it out in hardcore tactical …"
+    },
+    {
+      "title": "Download ROBLOX (free) for Windows, Android, APK, iOS and Web …",
+      "url": "https://gizmodo.com/download/roblox",
+      "snippet": "3 days ago · Roblox is an online gaming platform where you can play games built by other users and create your own using Roblox …"
+    },
+    {
+      "title": "Android Apps by Roblox Corporation on Google Play",
+      "url": "https://play.google.com/store/apps/dev?id=5360036014478858866&hl=en-US",
+      "snippet": "Roblox Corporation Welcome to the largest user-generated gaming community with millions of amazing 3D virtual worlds you can …"
+    },
+    {
+      "title": "How to Install and Play Roblox",
+      "url": "https://en.help.roblox.com/hc/en-us/articles/204473560-How-to-Install-and-Play-Roblox",
+      "snippet": "Go to the Roblox website using any modern browser like Microsoft Edge, Firefox, or Chrome Upon logging into Roblox, visit any …"
+    }
+  ]
+}

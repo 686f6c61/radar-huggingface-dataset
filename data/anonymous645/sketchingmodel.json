@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Anonymous645/SketchingModel",
+  "slug": "anonymous645-sketchingmodel",
+  "author": "Anonymous645",
+  "url": "https://huggingface.co/Anonymous645/SketchingModel",
+  "created_at": "2026-09-19T10:40:05.000Z",
+  "updated_at": "2026-09-19T10:43:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 190862694,
+  "storage_human": "191 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Welcome to Delhi Tourism: Official Tourism Website for Government …",
+      "url": "https://delhitourism.gov.in/",
+      "snippet": "Delhi Tourism, a government undertaking facilitating tourism since 1975 will take you to a guided tour of the Delhi through this …"
+    },
+    {
+      "title": "Welcome to Delhi Tourism: Official Tourism Website for Government …",
+      "url": "https://delhitourism.gov.in/dt/index.html",
+      "snippet": "Delhi Tourism, a government undertaking facilitating tourism since 1975 will take you to a guided tour of the Delhi through this …"
+    },
+    {
+      "title": "33 Best Places to Visit in Delhi - Delhi Tourism 2026",
+      "url": "https://delhitourism.travel/places-to-visit-in-delhi",
+      "snippet": "33 Incredible Tourist Places to Visit in Delhi Capital of India, the historical and vivacious Delhi is blessed with innumerable …"
+    },
+    {
+      "title": "Top 10 Best Places to Visit in Delhi | Travel Guide (Updated 2026 ...",
+      "url": "https://www.travelxp.com/en/blogs/holidays/top-10-best-places-to-visit-in-delhi",
+      "snippet": "Jul 29, 2025 · Explore the top 10 best places to visit in Delhi, from iconic landmarks like Red Fort and India Gate to hidden gems and …"
+    },
+    {
+      "title": "Delhi - Incredible India",
+      "url": "https://www.incredibleindia.gov.in/en/delhi",
+      "snippet": "Delhi, India's vibrant capital, is a world within itself. With its kaleidoscope of scents, sounds, and sights, Delhi never fails to captivate. …"
+    }
+  ]
+}

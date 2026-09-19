@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "seamon67/Supertron-2-Reranker-2B-GGUF",
+  "slug": "seamon67-supertron-2-reranker-2b-gguf",
+  "author": "seamon67",
+  "url": "https://huggingface.co/seamon67/Supertron-2-Reranker-2B-GGUF",
+  "created_at": "2026-09-19T11:12:18.000Z",
+  "updated_at": "2026-09-19T12:27:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-ranking",
+  "library": "llama.cpp",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "reranking",
+    "retrieval",
+    "rag",
+    "cross-encoder",
+    "qwen3-vl",
+    "text-ranking",
+    "en",
+    "base_model:Surpem/Supertron2-Reranker-2B",
+    "base_model:quantized:Surpem/Supertron2-Reranker-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720579072,
+  "parameters_human": "1.72B",
+  "storage_bytes": 2656976384,
+  "storage_human": "2.7 GB",
+  "base_model": "Surpem/Supertron2-Reranker-2B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MS Zams-Schönwies",
+      "url": "https://ms-zams.tsn.at/",
+      "snippet": "Jul 8, 2026 · Wir verabschiedeten heute unsere Schülerinnen und Schüler der 4. Klassen und blickten gemeinsam auf vier …"
+    },
+    {
+      "title": "startseite - MS Zams-Schönwies",
+      "url": "https://ms-zams.tsn.at/startseite",
+      "snippet": "Schulmaterial 3. Klasse (DOCX, 16.86 KB)"
+    },
+    {
+      "title": "Mittelschule Zams-Schönwies | Land Tirol",
+      "url": "https://www.tirol.gv.at/bildung/uebersicht-aller-tiroler-schulen/schule/706072/",
+      "snippet": "6 days ago · Zuständig für Finanzen, Gemeinden, Personal, Kunst und Kultur, Europa- und Außenbeziehungen sowie Ehrenamt. …"
+    },
+    {
+      "title": "Mittelschule Zams-Schönwies",
+      "url": "https://ms-zams.edupage.org/",
+      "snippet": "MS Zams-Schönwies Anmeldung mit EduPage-Konto Benutzernamen oder Passwort vergessen Anmeldung über Portal Tirol Digital …"
+    },
+    {
+      "title": "Mittelschule Zams-Schönwies",
+      "url": "https://tirolwest.at/de/infrastruktur/rid/5002188",
+      "snippet": "Die Mittelschule Zams-Schönwies ist eine Bildungseinrichtung für Schülerinnen und Schüler der Region und vermittelt eine vielseitige …"
+    }
+  ]
+}

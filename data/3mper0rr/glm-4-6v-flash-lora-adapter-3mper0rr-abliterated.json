@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "3MPER0RR/GLM-4.6V-Flash-Lora-adapter-3MPER0RR-abliterated",
+  "slug": "3mper0rr-glm-4-6v-flash-lora-adapter-3mper0rr-abliterated",
+  "author": "3MPER0RR",
+  "url": "https://huggingface.co/3MPER0RR/GLM-4.6V-Flash-Lora-adapter-3MPER0RR-abliterated",
+  "created_at": "2026-09-19T11:20:54.000Z",
+  "updated_at": "2026-09-19T11:29:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:GLM-4.6V-Flash-3MPER0RR-abliterated",
+    "lora",
+    "transformers",
+    "base_model:3MPER0RR/GLM-4.6V-Flash-3MPER0RR-abliterated",
+    "base_model:adapter:3MPER0RR/GLM-4.6V-Flash-3MPER0RR-abliterated",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12495680,
+  "storage_human": "12 MB",
+  "base_model": "3MPER0RR/GLM-4.6V-Flash-3MPER0RR-abliterated",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "为何日本制造业这么厉害？ - 知乎",
+      "url": "https://www.zhihu.com/question/19874963",
+      "snippet": "1. 我比较同意一点就是 日本制造业的黄金时代其实已经过去了，现如今 日本制造业产品“品质过剩”已经成为了削弱其竞争力的弊端。 …"
+    },
+    {
+      "title": "如何将整个wikipedia导出成一个纯文本文件?",
+      "url": "https://www.zhihu.com/question/21425170",
+      "snippet": "jwpl - Java-based Wikipedia Library -- An application programming interface for Wikipedia ，提供了API，可以直接由给定的词条名导 …"
+    },
+    {
+      "title": "bigbang一天一天的歌词、要原版歌词和中文版翻译的如题 谢谢了",
+      "url": "https://zhidao.baidu.com/question/1830391065414523220.html",
+      "snippet": "Aug 15, 2014 · BigBang 《一天一天》歌词 一天一天 离开吧 Ye the finally I realize that I'm nothing without you I was so wrong forgive …"
+    },
+    {
+      "title": "6个简单步骤注册Wikipedia账号 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/2215483994157458188.html",
+      "snippet": "Feb 13, 2025 · 6个简单步骤注册Wikipedia账号步骤如下:1.在网页浏览器中访问维基百科的账户创建页面。您可以使用台式机或移动浏 …"
+    },
+    {
+      "title": "有哪些可以替代“Wikipedia（维基百科）”查询的百科工具？",
+      "url": "https://www.zhihu.com/question/479609668",
+      "snippet": "有哪些可以替代“Wikipedia（维基百科）”查询的百科工具？ 因为不能用了，所以有了这个问题！ 对百度百科总体体验不也太好用，不 …"
+    }
+  ]
+}

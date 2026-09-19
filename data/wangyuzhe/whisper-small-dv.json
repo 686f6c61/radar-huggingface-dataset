@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "wangyuzhe/whisper-small-dv",
+  "slug": "wangyuzhe-whisper-small-dv",
+  "author": "wangyuzhe",
+  "url": "https://huggingface.co/wangyuzhe/whisper-small-dv",
+  "created_at": "2026-09-19T10:45:37.000Z",
+  "updated_at": "2026-09-20T12:44:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "generated_from_trainer",
+    "zh",
+    "dataset:TingChen-ppmc/Shanghai_Dialect_Conversational_Speech_Corpus",
+    "base_model:openai/whisper-small",
+    "base_model:finetune:openai/whisper-small",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 241734912,
+  "parameters_human": "241.7M",
+  "storage_bytes": 967019409,
+  "storage_human": "967 MB",
+  "base_model": "openai/whisper-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jak otworzyć folder AppData w Windows - Techporady.pl",
+      "url": "https://techporady.pl/appdata-w-windows/",
+      "snippet": "Feb 9, 2022 · W folderze AppData przechowywane są dane programów. Znajdziemy tam między innymi ich pliki konfiguracyjne, czy …"
+    },
+    {
+      "title": "How To Find The AppData Folder In Windows 11/10 (Quick Guide)",
+      "url": "https://mspoweruser.com/how-to-find-the-appdata-folder-in-windows-11-10-quick-guide/",
+      "snippet": "Oct 30, 2025 · You can reach AppData fast with %AppData%, expose it in File Explorer, or jump via Run or Search. Work carefully, …"
+    },
+    {
+      "title": "How to Access the AppData Folder in Windows 11 - Digital Citizen",
+      "url": "https://www.digitalcitizen.life/how-to-access-the-appdata-folder-in-windows-11/",
+      "snippet": "Apr 27, 2026 · AppData, short for Application Data, is a folder Windows creates for every user account on the PC. It stores settings, …"
+    },
+    {
+      "title": "What is AppData folder in Windows and how to clean it up? - TheITBros",
+      "url": "https://theitbros.com/appdata-folder/",
+      "snippet": "Apr 19, 2026 · Learn what the AppData folder in Windows is, why it grows over time, and how to safely clean temporary files, caches, …"
+    },
+    {
+      "title": "How to Access and Utilize the AppData Folder in Windows",
+      "url": "https://www.lifewire.com/find-and-use-the-appdata-folder-in-windows-4771752",
+      "snippet": "Aug 1, 2025 · Locate and safely manage your Windows AppData folder. This hidden directory holds essential user data for browsers, …"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Meanblock/JEV-CPU",
+  "slug": "meanblock-jev-cpu",
+  "author": "Meanblock",
+  "url": "https://huggingface.co/Meanblock/JEV-CPU",
+  "created_at": "2026-09-19T11:00:19.000Z",
+  "updated_at": "2026-09-19T12:13:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "semantic-if",
+    "decision",
+    "semif",
+    "cpu",
+    "zero-shot-classification",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19128029,
+  "storage_human": "19 MB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Patagonien Reiseprofis - Maßgeschneiderte Reisen nach Patagonien",
+      "url": "https://patagonienreiseprofis.de/",
+      "snippet": "Wir warten auf Sie bei Patagonien Reiseprofis, um Ihnen die beste Reise nach Patagonien zu garantieren. Maßgeschneiderte Reisen …"
+    },
+    {
+      "title": "Reisen nach Patagonien - Maßgeschneidert - Patagonien Reiseprofis",
+      "url": "https://patagonienreiseprofis.de/reisen-nach-patagonien-liste/",
+      "snippet": "Die Rundreise durch nördliche Patagonien in Chile und Argentinien ist für abenteuerlustige und Naturliebhaber besonders gut …"
+    },
+    {
+      "title": "BEWERTUNG - Patagonien Reiseprofis",
+      "url": "https://patagonienreiseprofis.de/bewertung/",
+      "snippet": "Wir warten auf Sie bei Patagonische Reise Spezialisten, um Ihnen die beste Reise nach Patagonien zu garantieren. Argentinien und …"
+    },
+    {
+      "title": "Patagonien in Argentinien und Chile - Patagonien Reiseprofis",
+      "url": "https://patagonienreiseprofis.de/tour-item/patagonien-in-argentinien-und-chile/",
+      "snippet": "Von den argentinischen Gletschern bis zu den chilenischen Granittürmen – auf dieser Reise durch Patagonien erleben Sie zwei …"
+    },
+    {
+      "title": "Patagonien Reiseprofis",
+      "url": "https://patagonienreiseprofis.de/en/",
+      "snippet": "Die Experten auf Reisen nach Patagonien. Wir sind die Patagonien Reiseprofis."
+    }
+  ]
+}

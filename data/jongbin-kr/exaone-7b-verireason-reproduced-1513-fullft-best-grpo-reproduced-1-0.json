@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Jongbin-kr/exaone-7b-verireason-reproduced-1513-fullft-best-grpo-reproduced-1.0",
+  "slug": "jongbin-kr-exaone-7b-verireason-reproduced-1513-fullft-best-grpo-reproduced-1-0",
+  "author": "Jongbin-kr",
+  "url": "https://huggingface.co/Jongbin-kr/exaone-7b-verireason-reproduced-1513-fullft-best-grpo-reproduced-1.0",
+  "created_at": "2026-09-15T03:35:42.000Z",
+  "updated_at": "2026-09-19T08:05:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "exaone",
+    "text-generation",
+    "generated_from_trainer",
+    "open-r1",
+    "trl",
+    "rtl-coder",
+    "verilog",
+    "grpo",
+    "conversational",
+    "custom_code",
+    "dataset:RTL-Coder-GRPO",
+    "arxiv:2402.03300",
+    "base_model:Jongbin-kr/exaone-7b-verireason-reproduced-1513-fullft-epoch4",
+    "base_model:finetune:Jongbin-kr/exaone-7b-verireason-reproduced-1513-fullft-epoch4",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 19,
+  "trending_score": 0,
+  "parameters": 7818448896,
+  "parameters_human": "7.82B",
+  "storage_bytes": 93862705483,
+  "storage_human": "93.9 GB",
+  "base_model": "Jongbin-kr/exaone-7b-verireason-reproduced-1513-fullft-epoch4",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Livingsocial Scam - Miami Sandbar Boat & Jet Ski Rentals",
+      "url": "https://www.tripadvisor.com/ShowUserReviews-g34439-d9812161-r388471964-Miami_Sandbar_Boat_Jet_Ski_Rentals-Miami_Beach_Florida.html",
+      "snippet": "Jan 16, 2020 · Miami Sandbar Boat & Jet Ski Rentals: Livingsocial Scam - See 32 traveler reviews, 15 candid photos, and great deals …"
+    },
+    {
+      "title": "Complaint / Review: LivingSocial.com - They do not extend vouchers ...",
+      "url": "https://usacomplaints.com/shops-trade/1064656-livingsocialcom-complaints-reviews.html",
+      "snippet": "It is a waste of money to buy vouchers through livingsocial.com. Their customer service is awful. They do not have any flexibility. We …"
+    },
+    {
+      "title": "DO NOT buy LivingSocial Deals or Groupons from this company!! - Review …",
+      "url": "https://www.tripadvisor.com/ShowUserReviews-g34162-d1627393-r143202957-Swim_With_Manatees-Crystal_River_Florida.html",
+      "snippet": "Jan 21, 2026 · The tours are limited to 6 people so it is much more personal than other tours that have 15+ people on them. We got …"
+    },
+    {
+      "title": "Livingsocial Scam - Review of Miami Sandbar Boat & Jet Ski Rentals ...",
+      "url": "https://www.tripadvisor.co.nz/ShowUserReviews-g34439-d9812161-r388471964-Miami_Sandbar_Boat_Jet_Ski_Rentals-Miami_Beach_Florida.html",
+      "snippet": "Jan 17, 2020 · Miami Sandbar Boat & Jet Ski Rentals: Livingsocial Scam - See 32 traveller reviews, 15 candid photos, and great …"
+    },
+    {
+      "title": "LivingSocial Reviews and Complaints - Page 5 | ComplaintsBoard",
+      "url": "https://www.complaintsboard.com/livingsocial-b118033/page/5",
+      "snippet": "May 24, 2013 · Browse page 5 for more real reviews and complaints about LivingSocial. Share your experience on ComplaintsBoard."
+    }
+  ]
+}

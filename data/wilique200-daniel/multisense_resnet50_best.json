@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "wilique200-daniel/multisense_resnet50_best",
+  "slug": "wilique200-daniel-multisense_resnet50_best",
+  "author": "wilique200-daniel",
+  "url": "https://huggingface.co/wilique200-daniel/multisense_resnet50_best",
+  "created_at": "2026-09-19T11:20:04.000Z",
+  "updated_at": "2026-09-19T11:26:19.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "image-classification",
+    "vision",
+    "resnet",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 96459779,
+  "storage_human": "96 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Targobank Kredit Erfahrungen: (18 Bewertungen) - 09.2026 aktualisiert",
+      "url": "https://www.kredit-zeit.de/targobank-kredit/erfahrungen/",
+      "snippet": "Aktuell (09.2026) liegen uns 18 Kundenerfahrungen zum Targobank Kredit vor. Welche positiven und negativen Erfahrungen …"
+    },
+    {
+      "title": "Wie kann ich meinen Kredit aufstocken bei der Targobank?",
+      "url": "https://www.kredit-zeit.de/f/forum/kredit/72425-wie-kann-ich-meinen-kredit-aufstocken-bei-der-targobank",
+      "snippet": "Nov 20, 2023 · Hat hier jemand Erfahrung mit dem Aufstocken eines Kredits bei der Targobank? Mein aktueller Ausgabenstrom …"
+    },
+    {
+      "title": "Antragsveranlagung: Was ist das? - buhl",
+      "url": "https://www.buhl.de/steuer/ratgeber/antragsveranlagung/?msockid=07ce7e32561865b9321d69eb57c56451",
+      "snippet": "Jan 2, 2023 · Was ist eine Antragsveranlagung und worauf muss ich achten?👉 Jetzt lesen, warum sich die freiwillige Abgabe der …"
+    },
+    {
+      "title": "finanzblick App | Deine Finanzen vollautomatisch im Griff - buhl",
+      "url": "https://www.buhl.de/finanzblick/?msockid=07ce7e32561865b9321d69eb57c56451",
+      "snippet": "Erlebe intelligentes Banking: Mit finanzblick verwaltest du alle Konten in einer App. Behalte deine Finanzen im Blick – 100 % sicher."
+    },
+    {
+      "title": "Ratenpause und Zahlungsaussetzung– so vermeidet man Fehler",
+      "url": "https://www.kredit-zeit.de/zahlungsaussetzung/",
+      "snippet": "Wir wollen die Ratenpause von allen Seiten beleuchten. Welche Banken bieten eine Pause an, wie muss man vorgehen, welche …"
+    }
+  ]
+}

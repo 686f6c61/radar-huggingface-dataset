@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "UX4567/Kartik-Kundli-AI-3B-v3.0",
+  "slug": "ux4567-kartik-kundli-ai-3b-v3-0",
+  "author": "UX4567",
+  "url": "https://huggingface.co/UX4567/Kartik-Kundli-AI-3B-v3.0",
+  "created_at": "2026-09-19T11:45:54.000Z",
+  "updated_at": "2026-09-19T12:05:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "hi",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "astrology",
+    "unsloth",
+    "qlora",
+    "3b",
+    "vedic-astrology",
+    "custom-llm",
+    "hi",
+    "en",
+    "base_model:unsloth/Qwen2.5-3B-Instruct",
+    "base_model:finetune:unsloth/Qwen2.5-3B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 6183348182,
+  "storage_human": "6.2 GB",
+  "base_model": "unsloth/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.de/",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google",
+      "url": "https://ipv4.google.com/?hl=de",
+      "snippet": "Werbeprogramme Über Google Google.com in English © 2026 - Datenschutzerklärung - Nutzungsbedingungen"
+    },
+    {
+      "title": "Google",
+      "url": "https://ipv4.google.com/?hl=de_AT",
+      "snippet": "Werbeprogramme Über Google Google.com in English © 2026 - Datenschutzerklärung - Nutzungsbedingungen"
+    },
+    {
+      "title": "Übersicht",
+      "url": "https://search.google/intl/de-DE/",
+      "snippet": "Die Entwicklung der Google Suche Seit unserer Geburtsstunde im Jahr 1997 ist die Google Suche kontinuierlich weiterentwickelt …"
+    },
+    {
+      "title": "Anmelden – Google Konten",
+      "url": "https://accounts.google.com/login?hl=de",
+      "snippet": "Nicht Ihr Computer? Dann können Sie für die Anmeldung ein Fenster zum privaten Surfen öffnen. Weitere Informationen zur …"
+    }
+  ]
+}

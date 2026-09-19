@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "experimentalmachines/LFM2.5-2.6B-ExecuTorch",
+  "slug": "experimentalmachines-lfm2-5-2-6b-executorch",
+  "author": "experimentalmachines",
+  "url": "https://huggingface.co/experimentalmachines/LFM2.5-2.6B-ExecuTorch",
+  "created_at": "2026-09-07T12:40:16.000Z",
+  "updated_at": "2026-09-22T04:51:40.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "executorch",
+  "languages": [],
+  "tags": [
+    "executorch",
+    "android",
+    "mtk",
+    "on-device",
+    "openweights",
+    "xnnpack",
+    "text-generation",
+    "base_model:LiquidAI/LFM2.5-2.6B",
+    "base_model:quantized:LiquidAI/LFM2.5-2.6B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 64,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13280840382,
+  "storage_human": "13.3 GB",
+  "base_model": "LiquidAI/LFM2.5-2.6B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FUTBIN",
+      "url": "https://www.futbin.com/27/squad-builder",
+      "snippet": ""
+    },
+    {
+      "title": "EA FC 27 Squad Builder - FUTWIZ",
+      "url": "https://www.futwiz.com/fc27/squad-builder",
+      "snippet": "Build and share your EA FC 27 Ultimate Team with our EA FC 27 Squad Builder"
+    },
+    {
+      "title": "FUT.GG - FC 27 Evos & Prices - App Store",
+      "url": "https://apps.apple.com/us/app/fut-gg-fc-27-evos-prices/id6470957382",
+      "snippet": "Download FUT.GG - FC 27 Evos & Prices by FutGG on the App Store. See screenshots, ratings and reviews, user tips, and more …"
+    },
+    {
+      "title": "FUT.GG - FC 27 Evos & Prices - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.futgg.futgg&hl=en-US",
+      "snippet": "Jun 5, 2024 · FUT.GG shows you every possible Evo combination to find your next club legend. PRICES - instant Transfer Market …"
+    },
+    {
+      "title": "FutAll — FC 27 Player Database & Squad Builder",
+      "url": "https://futall.com/",
+      "snippet": "FutAll is a free EA FC 27 toolkit: search all 19,789 official launch cards straight from EA's ratings reveal, build squads, and preview …"
+    }
+  ]
+}

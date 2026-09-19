@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "imoccur44/g05-docker",
+  "slug": "imoccur44-g05-docker",
+  "author": "imoccur44",
+  "url": "https://huggingface.co/imoccur44/g05-docker",
+  "created_at": "2026-09-19T11:02:40.000Z",
+  "updated_at": "2026-09-19T11:51:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 27566325960,
+  "storage_human": "27.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "QWERTYUIOPASD - YouTube",
+      "url": "https://www.youtube.com/watch?v=DHuFCcgq2g0",
+      "snippet": "Sep 16, 2020 · Provided to YouTube by Routenote QWERTYUIOPASD · Mate Listo QWERTYUIOP ℗ Tomás Hernán Ramos …"
+    },
+    {
+      "title": "qwertyuiopasd - YouTube",
+      "url": "https://www.youtube.com/watch?v=e7HOg-rsxwA",
+      "snippet": "Sep 22, 2025 · Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on …"
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/watch?v=1sgfODcZm6s",
+      "snippet": "qwertzuiopasdfghjklyxcvbnm qwertzuiopasdfghjklyxcvbnm qwertzuiopasdfghjklyxcvbnm qwertyuiopasdfghjklzxcvbnm …"
+    },
+    {
+      "title": "QWERTYUIOPASD - song and lyrics by Mate Listo | Spotify",
+      "url": "https://open.spotify.com/track/2VEYGgLKUPwHC2GKAKRJO9",
+      "snippet": "Sep 14, 2020 · Listen to QWERTYUIOPASD on Spotify. Song · Mate Listo · 2020"
+    },
+    {
+      "title": "QWERTYUIOPASD - müzik ve şarkı sözleri: Mate Listo | Spotify",
+      "url": "https://open.spotify.com/intl-tr/track/2VEYGgLKUPwHC2GKAKRJO9",
+      "snippet": "Spotify Önizlemesi Şarkı ve podcast'lere sınırsız erişim ve aralarda çıkan reklamlar için kaydol. Kredi kartına gerek yok."
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "DarkArtsForge/MN-Raven-12B-v1",
+  "slug": "darkartsforge-mn-raven-12b-v1",
+  "author": "DarkArtsForge",
+  "url": "https://huggingface.co/DarkArtsForge/MN-Raven-12B-v1",
+  "created_at": "2026-05-28T23:56:05.000Z",
+  "updated_at": "2026-09-18T22:20:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "axolotl",
+    "finetune",
+    "creative writing",
+    "roleplay",
+    "uncensored",
+    "gothic",
+    "poe",
+    "raven",
+    "12B",
+    "merge",
+    "mergekit",
+    "mistral-nemo",
+    "arcee_fusion",
+    "conversational",
+    "dataset:DarkArtsForge/Poe_v1",
+    "base_model:Naphula-Archives/MN-Raven-12B-v0c-Base-LoRA",
+    "base_model:merge:Naphula-Archives/MN-Raven-12B-v0c-Base-LoRA",
+    "base_model:Naphula-Archives/MN-Raven-12B-v0o-Instruct-LoRA",
+    "base_model:merge:Naphula-Archives/MN-Raven-12B-v0o-Instruct-LoRA",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 11,
+  "downloads_30d": 308,
+  "trending_score": 0,
+  "parameters": 12247782400,
+  "parameters_human": "12.25B",
+  "storage_bytes": 39237173063,
+  "storage_human": "39.2 GB",
+  "base_model": "Naphula-Archives/MN-Raven-12B-v0c-Base-LoRA, Naphula-Archives/MN-Raven-12B-v0o-Instruct-LoRA",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wie kann ich die Telekom Mail App auf meinem PC installieren",
+      "url": "https://telekomhilft.telekom.de/conversations/e-mail/wie-kann-ich-die-telekom-mail-app-auf-meinem-pc-installieren/668720314ae73561daf5c926",
+      "snippet": "Ich habe die Telekom Mail App auf meinem Tablett undmöchte sie aber auch auf meinem PC installieren. Wie mache ich das?"
+    },
+    {
+      "title": "iPhone- t-online Mail funktioniert plötzlich nicht mehr mit der iPhone ...",
+      "url": "https://telekomhilft.telekom.de/conversations/e-mail/iphone-t-online-mail-funktioniert-pl%C3%B6tzlich-nicht-mehr-mit-der-iphone-mail-app/668950214ae73561dafc5cef",
+      "snippet": "Von einem auf den anderen Tag funktioniert mein T-online Mail Account nicht mehr mit der iPhone Mail App. Angeblich Passwort …"
+    },
+    {
+      "title": "Wie bekomme ich das E-Mail-Konto-ICON auf meinen Desktop",
+      "url": "https://telekomhilft.telekom.de/conversations/e-mail/wie-bekomme-ich-das-e-mail-konto-icon-auf-meinen-desktop/668867244ae73561dae221c1",
+      "snippet": "Dann auf Verknüpfung erstellen Dort die direkte Browser-Internetseite einfügen. bei dir die Login Seite, eMail-Center Dann auf …"
+    },
+    {
+      "title": "Hallo, wie logge ich mich im E-Mail Center direkt ein, ohne ...",
+      "url": "https://telekomhilft.telekom.de/conversations/e-mail/hallo-wie-logge-ich-mich-im-e-mail-center-direkt-ein-ohne-kundencenter/6685e2494ae73561da521846",
+      "snippet": "Guten Tag, wie kann ich mich im E-Mail Center direkt einloggen, ohne erst im Kundencenter einzuloggen. (war früher möglich).Gruß …"
+    },
+    {
+      "title": "‎E-Mail-Login nicht möglich | Telekom hilft Community",
+      "url": "https://telekomhilft.telekom.de/conversations/e-mail/e-mail-login-nicht-m%C3%B6glich/67558a50389f9f597b2a1d88",
+      "snippet": "Ich habe eine T-Online-E-Mail-Adresse. Gestern funktionierte diese noch, heute jedoch nicht mehr. Ich habe die Adresse in Outlook …"
+    }
+  ]
+}

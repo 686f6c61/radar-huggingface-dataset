@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "hyper3labs/hyper3-clip-v1",
+  "slug": "hyper3labs-hyper3-clip-v1",
+  "author": "hyper3labs",
+  "url": "https://huggingface.co/hyper3labs/hyper3-clip-v1",
+  "created_at": "2026-06-04T10:44:15.000Z",
+  "updated_at": "2026-09-18T22:47:14.000Z",
+  "license": "openmdw-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "hyper3_clip",
+    "feature-extraction",
+    "vision-language",
+    "multimodal",
+    "image-text-retrieval",
+    "hyperbolic-embeddings",
+    "custom_code",
+    "arxiv:2608.29313",
+    "license:openmdw-1.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 110,
+  "trending_score": 0,
+  "parameters": 149620992,
+  "parameters_human": "149.6M",
+  "storage_bytes": 1197059720,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Contact Us - Microsoft Support",
+      "url": "https://support.microsoft.com/en-gb/contactus",
+      "snippet": "Contact Microsoft Support. Find solutions to common problems, or get help from a support agent."
+    },
+    {
+      "title": "Anmelden bei Hotmail | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/accounts-billing/manage/how-to-sign-in-to-hotmail",
+      "snippet": "Microsoft hält immer ein Auge auf ungewöhnliche Anmeldeaktivitäten, nur für den Fall, dass jemand anderes versucht, auf Ihr Konto …"
+    },
+    {
+      "title": "Released: August 2026 Exchange Server Security Updates | Microsoft ...",
+      "url": "https://techcommunity.microsoft.com/blog/Exchange/released-august-2026-exchange-server-security-updates/4543951",
+      "snippet": "We have released Security Updates for Exchange Server SE. Exchange Server 2019 and 2016 ESU updates only. &nbsp;"
+    },
+    {
+      "title": "Exchange Online EWS, Your Time is Almost Up | Microsoft Community …",
+      "url": "https://techcommunity.microsoft.com/blog/exchange/exchange-online-ews-your-time-is-almost-up/4492361",
+      "snippet": "Exchange Web Services (EWS) is approaching end of service in Exchange Online. We first announced this change was coming in …"
+    },
+    {
+      "title": "Sign out of Hotmail or Outlook.com | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/accounts-billing/manage/sign-out-of-hotmail-or-outlook-com",
+      "snippet": "Tip If you don't see your picture at the top of screen, check to see if ad blocking is turned on. Sometimes this prevents the picture …"
+    }
+  ]
+}

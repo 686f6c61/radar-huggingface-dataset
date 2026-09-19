@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "whcl412/LycheeAI-coder-2b-II-pro-MLX-bf16",
+  "slug": "whcl412-lycheeai-coder-2b-ii-pro-mlx-bf16",
+  "author": "whcl412",
+  "url": "https://huggingface.co/whcl412/LycheeAI-coder-2b-II-pro-MLX-bf16",
+  "created_at": "2026-09-13T14:30:35.000Z",
+  "updated_at": "2026-09-18T13:15:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "llama",
+    "bf16",
+    "tool-calling",
+    "function-calling",
+    "minicpm",
+    "chinese",
+    "zh",
+    "en",
+    "base_model:openbmb/MiniCPM5-2B",
+    "base_model:finetune:openbmb/MiniCPM5-2B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 5033556906,
+  "storage_human": "5.0 GB",
+  "base_model": "openbmb/MiniCPM5-2B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PatienceSpel.nl - Patience spelen",
+      "url": "https://www.patiencespel.nl/",
+      "snippet": "Patience is een spel voor één persoon uit de categorie Solitaire dat gespeeld wordt met speelkaarten. Het uiteindelijke doel van …"
+    },
+    {
+      "title": "Patience",
+      "url": "https://www.patiencespel.nl/patiencespelen/patience.php",
+      "snippet": "Naam: Patience Omschrijving: GameBoss.com maakt altijd de beste games voor ons en ook deze versie van Patience is weer een …"
+    },
+    {
+      "title": "Pasjans Big - PatienceSpel.nl",
+      "url": "https://www.patiencespel.nl/patiencespelen/pasjansbig.php",
+      "snippet": "Naam: Pasjans Big Omschrijving: Dit Patience spel heet Pasjans Big en als je het woord “Big” vertaald vanuit het Engels naar het …"
+    },
+    {
+      "title": "Dubbel Patience",
+      "url": "https://www.patiencespel.nl/patiencespelen/dubbelpatience.php",
+      "snippet": "Naam: Dubbel Patience Omschrijving: Dubbel zoveel kaarten dus ook dubbel plezier, dat beleef je in dit spel. Een normaal potje …"
+    },
+    {
+      "title": "Patience Windows",
+      "url": "https://www.patiencespel.nl/patiencespelen/patiencewindows.php",
+      "snippet": "Naam: Patience Windows Omschrijving: Ga terug in de tijd met deze fantastische remake van Microsoft Windows Patience XP, door …"
+    }
+  ]
+}

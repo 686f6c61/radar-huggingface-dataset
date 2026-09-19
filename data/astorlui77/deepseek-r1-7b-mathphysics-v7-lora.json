@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "astorlui77/DeepSeek-R1-7B-MathPhysics-v7-lora",
+  "slug": "astorlui77-deepseek-r1-7b-mathphysics-v7-lora",
+  "author": "astorlui77",
+  "url": "https://huggingface.co/astorlui77/DeepSeek-R1-7B-MathPhysics-v7-lora",
+  "created_at": "2026-09-07T11:38:49.000Z",
+  "updated_at": "2026-09-18T13:19:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:unsloth/deepseek-r1-distill-qwen-7b-bnb-4bit",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 334501740,
+  "storage_human": "335 MB",
+  "base_model": "unsloth/deepseek-r1-distill-qwen-7b-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Les choses que j’ai fait ou que j’ai faites - Question Orthographe",
+      "url": "https://www.question-orthographe.fr/question/les-choses-que-jai-fait-ou-que-jai-faites/",
+      "snippet": "Nov 21, 2019 · Bonjour ChristianF, Merci pour votre explication très claire. Dans le cas ou le COD est un masculin pluriel, avec le …"
+    },
+    {
+      "title": "Les jours suivant ou les jours suivants - Question Orthographe",
+      "url": "https://www.question-orthographe.fr/question/les-jours-suivant-ou-les-jours-suivants/",
+      "snippet": "Jul 28, 2015 · Bonjour, Dans un doc que je dois valider, je lis « vous recevrez dans les 15 jours suivants votre livraison… ». Or, de …"
+    },
+    {
+      "title": "dès que j'aurais / dès que j'aurai - Question Orthographe",
+      "url": "https://www.question-orthographe.fr/question/des-que-jaurais-des-que-jaurai/",
+      "snippet": "Jan 19, 2018 · Bonjour, Je suis indécise sur l'accord qui convient dans la phrase : Il a demandé à me voir dès que j’aurai un moment …"
+    },
+    {
+      "title": "verbe à la forme négative ou pas? - Question Orthographe",
+      "url": "https://www.question-orthographe.fr/question/avant-que-verbe-a-la-forme-negative-ou-pas/",
+      "snippet": "Dec 13, 2016 · Bonsoir Myrtille, On utilise, dans le langage soigné, le ne dit explétif dans différents types de constructions : – après …"
+    },
+    {
+      "title": "Soit ou soient - Question Orthographe",
+      "url": "https://www.question-orthographe.fr/question/soit-ou-soient/",
+      "snippet": "Jan 17, 2016 · Soit, selon le CNTRL : En tête de phrase, il est la forme lexicalisée du verbe être au subjonctif, présentatif qui expose …"
+    }
+  ]
+}

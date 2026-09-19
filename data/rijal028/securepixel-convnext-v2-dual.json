@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "rijal028/securepixel-convnext-v2-dual",
+  "slug": "rijal028-securepixel-convnext-v2-dual",
+  "author": "rijal028",
+  "url": "https://huggingface.co/rijal028/securepixel-convnext-v2-dual",
+  "created_at": "2026-09-19T11:03:58.000Z",
+  "updated_at": "2026-09-20T02:24:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [
+    "en",
+    "id"
+  ],
+  "tags": [
+    "ai-detection",
+    "image-forensics",
+    "convnext-v2",
+    "deepfake-detector",
+    "securepixel",
+    "image-classification",
+    "en",
+    "id",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 334605177,
+  "storage_human": "335 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Weekly Quiz – Play This Week’s 10 Breaking News Quiz Questions",
+      "url": "https://weeklyquiz.net/",
+      "snippet": "Explore the best weekly quiz challenges in one place. From news, geography, science, entertainment, and math to culture and …"
+    },
+    {
+      "title": "News Quiz - The New York Times",
+      "url": "https://www.nytimes.com/spotlight/news-quiz",
+      "snippet": "Aug 28, 2026 · The New York Times News Quiz, July 31, 2026 Did you follow the news this week? Take our quiz to see how well you …"
+    },
+    {
+      "title": "Weekly Quiz – Fresh Trivia Questions on History, Science, Sports & More",
+      "url": "https://bingquiz.com/weekly-quiz/",
+      "snippet": "Jul 31, 2026 · Take this week's Weekly Quiz and challenge yourself with fresh trivia covering history, science, geography, …"
+    },
+    {
+      "title": "Play Bing Weekly Quiz – 12 Question Sunday Challenge",
+      "url": "https://bingquiz.org/bing-weekly-quiz/",
+      "snippet": "6 days ago · The Bing Weekly Quiz tests knowledge across 7 categories with 12 questions every Sunday. Knowing what each …"
+    },
+    {
+      "title": "Quiz Archives - Weekly Quiz",
+      "url": "https://weeklyquiz.net/category/quiz/",
+      "snippet": "Aug 28, 2026 · Quiz Test yourself with our power knowledge quiz online that will enhance your knowledge and skills."
+    }
+  ]
+}

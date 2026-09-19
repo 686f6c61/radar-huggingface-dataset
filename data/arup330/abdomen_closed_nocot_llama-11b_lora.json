@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Arup330/Abdomen_closed_noCoT_Llama-11B_lora",
+  "slug": "arup330-abdomen_closed_nocot_llama-11b_lora",
+  "author": "Arup330",
+  "url": "https://huggingface.co/Arup330/Abdomen_closed_noCoT_Llama-11B_lora",
+  "created_at": "2026-09-19T11:07:43.000Z",
+  "updated_at": "2026-09-19T11:08:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "mllama",
+    "trl",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 286068478,
+  "storage_human": "286 MB",
+  "base_model": "unsloth/llama-3.2-11b-vision-instruct-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.ae/index.html",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/#!%20/=",
+      "snippet": "We would like to show you a description here but the site won’t allow us."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=ar-AE",
+      "snippet": "الإعلانات كل ما تحب معرفته عن Google‏ هنا Google.com in English © 2026 - الخصوصية - البنود"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com.nf/?hl=ar-US",
+      "snippet": "محرّك بحث Google متوفّر باللغة: English الإعلانات كل ما تحب معرفته عن Google‏ هنا Google.com"
+    },
+    {
+      "title": "Sign in - Google Accounts",
+      "url": "https://accounts.google.com/",
+      "snippet": "Not your computer? Use a private browsing window to sign in. Learn more about using Guest mode Next Create account"
+    }
+  ]
+}

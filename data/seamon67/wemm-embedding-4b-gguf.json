@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "seamon67/WeMM-Embedding-4B-GGUF",
+  "slug": "seamon67-wemm-embedding-4b-gguf",
+  "author": "seamon67",
+  "url": "https://huggingface.co/seamon67/WeMM-Embedding-4B-GGUF",
+  "created_at": "2026-09-19T11:55:05.000Z",
+  "updated_at": "2026-09-19T12:29:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "llama.cpp",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "multimodal-embedding",
+    "text-embedding",
+    "image-embedding",
+    "video-embedding",
+    "mrl",
+    "feature-extraction",
+    "zh",
+    "en",
+    "arxiv:2608.24053",
+    "base_model:tencent/WeMM-Embedding-4B",
+    "base_model:quantized:tencent/WeMM-Embedding-4B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5157311872,
+  "storage_human": "5.2 GB",
+  "base_model": "tencent/WeMM-Embedding-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Shangdong Airlines, 24-hour service hotline of Shangdong Airlines: …",
+      "url": "https://www.sda.cn/en/",
+      "snippet": "from afar."
+    },
+    {
+      "title": "Shangdong Airlines, 24-hour service hotline of Shangdong Airlines: …",
+      "url": "https://www.sda.cn/en/webuser/buyTicketAttention.html",
+      "snippet": "Unaccompanied minors, handicapped, pregnant women, patients or other passengers that require special services should inform …"
+    },
+    {
+      "title": "Shandong Airlines 24-hour service hotline:+86 (531)95369",
+      "url": "https://global.sda.cn/ww/en/",
+      "snippet": "Shandong Airlines’ Official Website, offers ticket booking, online check-in, flight info services for domestic, international and regional …"
+    },
+    {
+      "title": "Shandong Airlines | Telefonnummer, Repräsentanz in Deutschland ...",
+      "url": "https://shandongair.at/contacts/",
+      "snippet": "Rückmeldungen über die Fluggesellschaft können auf der offiziellen Website unter diesem Link abgegeben werden. E-Mail Adresse …"
+    },
+    {
+      "title": "shandongairlines.com",
+      "url": "https://shandongairlines.com/en/index.shtml",
+      "snippet": ""
+    }
+  ]
+}

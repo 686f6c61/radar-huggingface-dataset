@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "NewBie456/Yuki_tsukumo_Illustrious_SDXL",
+  "slug": "newbie456-yuki_tsukumo_illustrious_sdxl",
+  "author": "NewBie456",
+  "url": "https://huggingface.co/NewBie456/Yuki_tsukumo_Illustrious_SDXL",
+  "created_at": "2025-07-09T08:48:47.000Z",
+  "updated_at": "2026-09-19T01:07:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1136663504,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "‏Paulo Hypacio Espinola‏ - ‏Consultant Plastic Surgeon | Medical ...",
+      "url": "https://bh.linkedin.com/in/paulo-hypacio-espinola-b2493068",
+      "snippet": "‏Consultant Plastic Surgeon | Medical Director at ALKEM | Body Contouring Specialist | Ethical &amp; Patient-Centered Aesthetics | …"
+    },
+    {
+      "title": "Quick Online Booking with Dr. Paulo Hypacio د. باولو هيباسيو",
+      "url": "https://medical.bh/doctordetail/MTYyNA==",
+      "snippet": "• Head of Plastic Surgery Department at Brazilian Air Force, Recife."
+    },
+    {
+      "title": "A Master of Aesthetics: Plastic Surgery in Bahrain",
+      "url": "https://www.bahrainthismonth.com/updates/features/a-master-of-aesthetics",
+      "snippet": "The Consultant Plastic Surgeon enlightened us on some of the most popular plastic surgery procedures while quelling common …"
+    },
+    {
+      "title": "Dr Paulo Hypacio Espinola - Instagram",
+      "url": "https://www.instagram.com/popular/dr-paulo-hypacio-espinola/",
+      "snippet": "Paulo Hypacio Espinola - Renowned Brazilian Consultant Plastic Surgeon & Body Contour Specialist @dr.paulohypacio_bh Dr. Paulo …"
+    },
+    {
+      "title": "Dr. Paulo Hypacio Espinola | Op. Dr. Hüseyin KANDULU Academy",
+      "url": "https://www.kanduluacademy.com/dr-paulo-hypacio-espinola/",
+      "snippet": "Augmentation Mastopexty With 4-Layer Fat Transfer. Endoscopic Fat Transfer Into The Rectus Abdominis. Fat Graft Harvesting With …"
+    }
+  ]
+}

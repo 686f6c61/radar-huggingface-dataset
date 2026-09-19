@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "kingjones777/Ling-3.0-flash-VL-MTP-ROCmFP4-GGUF",
+  "slug": "kingjones777-ling-3-0-flash-vl-mtp-rocmfp4-gguf",
+  "author": "kingjones777",
+  "url": "https://huggingface.co/kingjones777/Ling-3.0-flash-VL-MTP-ROCmFP4-GGUF",
+  "created_at": "2026-09-19T05:50:39.000Z",
+  "updated_at": "2026-09-22T00:13:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "rocm",
+    "amd",
+    "rocmfp4",
+    "rocmfpx",
+    "strix-halo",
+    "amd-strix-halo",
+    "gfx1151",
+    "ryzen-ai-max",
+    "ryzen-ai-max-395",
+    "radeon-8060s",
+    "mtp",
+    "vision",
+    "image-text-to-text",
+    "base_model:inclusionAI/Ling-3.0-flash-VL",
+    "base_model:quantized:inclusionAI/Ling-3.0-flash-VL",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124414211552,
+  "parameters_human": "124.41B",
+  "storage_bytes": 275565807776,
+  "storage_human": "275.6 GB",
+  "base_model": "inclusionAI/Ling-3.0-flash-VL",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=0078b6cb4c0868b92469a1114d7769ac",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Get access to free online versions of Outlook, Word, Excel, and PowerPoint."
+    },
+    {
+      "title": "Sign in to your account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    },
+    {
+      "title": "Microsoft 365 for Individuals: Subscription for Productivity Apps",
+      "url": "https://www.microsoft.com/en-us/microsoft-365?msockid=0078b6cb4c0868b92469a1114d7769ac",
+      "snippet": "Microsoft 365 (formerly Office 365) subscriptions offer a suite of productivity tools and cloud services with world-class security and …"
+    },
+    {
+      "title": "Microsoft - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Microsoft",
+      "snippet": "Microsoft Corporation is an American multinational technology company headquartered in Redmond, Washington. The company …"
+    }
+  ]
+}

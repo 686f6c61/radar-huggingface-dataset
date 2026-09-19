@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "NathMen12/Nyvex-Minecraft-ChopTree",
+  "slug": "nathmen12-nyvex-minecraft-choptree",
+  "author": "NathMen12",
+  "url": "https://huggingface.co/NathMen12/Nyvex-Minecraft-ChopTree",
+  "created_at": "2026-09-19T10:28:15.000Z",
+  "updated_at": "2026-09-19T10:56:38.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "dataset:NathMen12/Minecraft-ChopTree",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How is Dropbox so popular when it's so awful : r/dropbox - Reddit",
+      "url": "https://www.reddit.com/r/dropbox/comments/fnidei/how_is_dropbox_so_popular_when_its_so_awful/",
+      "snippet": "Mar 23, 2020 · Dropbox has been on steady decline over the years. It used to be great, set standards. Now, in 2024, it can't even …"
+    },
+    {
+      "title": "Dropbox is not secure : r/privacy - Reddit",
+      "url": "https://www.reddit.com/r/privacy/comments/mryzz9/dropbox_is_not_secure/",
+      "snippet": "Apr 16, 2021 · I've been a paying Dropbox customer for decades, I've hated their bad support, and I've hated that their support agents …"
+    },
+    {
+      "title": "Why do you use Dropbox? : r/dropbox - Reddit",
+      "url": "https://www.reddit.com/r/dropbox/comments/swerew/why_do_you_use_dropbox/",
+      "snippet": "Feb 19, 2022 · Why do you use Dropbox? I got into Dropbox mainly to preserve all my computer docs and phone photos in case …"
+    },
+    {
+      "title": "Thinking about paying for a Dropbox subscription, has anyone ... - Reddit",
+      "url": "https://www.reddit.com/r/productivity/comments/a668bw/thinking_about_paying_for_a_dropbox_subscription/",
+      "snippet": "Dropbox has been an excellent resource for helping me improve my productivity habits and work ethic in general. I've had a basic …"
+    },
+    {
+      "title": "Is Dropbox Plus a good deal? : r/DataHoarder - Reddit",
+      "url": "https://www.reddit.com/r/DataHoarder/comments/runk0v/is_dropbox_plus_a_good_deal/",
+      "snippet": "Jan 3, 2022 · So my question is, is Dropbox Plus 2TB/month a good deal? As far as I know, there are no hard limits on rates or daily …"
+    }
+  ]
+}

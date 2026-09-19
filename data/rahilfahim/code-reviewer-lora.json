@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "rahilfahim/code-reviewer-lora",
+  "slug": "rahilfahim-code-reviewer-lora",
+  "author": "rahilfahim",
+  "url": "https://huggingface.co/rahilfahim/code-reviewer-lora",
+  "created_at": "2026-09-19T06:35:44.000Z",
+  "updated_at": "2026-09-20T03:36:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "code-review",
+    "lora",
+    "qlora",
+    "unsloth",
+    "llama-3.2",
+    "python",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:unsloth/Llama-3.2-3B-Instruct-bnb-4bit",
+    "base_model:adapter:unsloth/Llama-3.2-3B-Instruct-bnb-4bit",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 24,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 211825008,
+  "storage_human": "212 MB",
+  "base_model": "unsloth/Llama-3.2-3B-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Drive: Sign-in",
+      "url": "https://drive.google.com/",
+      "snippet": "Access Google Drive with a Google account (for personal use) or Google Workspace account (for business use)."
+    },
+    {
+      "title": "Inloggen - Google Drive",
+      "url": "https://drive.google.com/?hl=nl",
+      "snippet": "Krijg toegang tot Google Drive met een Google-account (voor persoonlijk gebruik) of een Google Workspace-account (voor zakelijk …"
+    },
+    {
+      "title": "Chiropractic - Google Drive",
+      "url": "https://drive.google.com/drive/folders/1-Rj3nKvHYrO-g4iQHX7W4bTvcLxkqlJ0",
+      "snippet": "May 31, 2023 150 KB Download Google Books - Chiropractic.pdf Shared May 31, 2023 541 KB"
+    },
+    {
+      "title": "Sign in - Google Drive",
+      "url": "https://drive.google.com/drive/u/0/home",
+      "snippet": "Access Google Drive with a Google account (for personal use) or Google Workspace account (for business use)."
+    },
+    {
+      "title": "Chiro Leiding - Facebook",
+      "url": "https://www.facebook.com/groups/158247787558576/",
+      "snippet": "He drives a Black ford Figo with Reg. No. CAA 373 960. He will come looking for an indrive app to rent, after you give him, he will …"
+    }
+  ]
+}

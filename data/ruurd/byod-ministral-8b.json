@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Ruurd/BYOD-Ministral-8B",
+  "slug": "ruurd-byod-ministral-8b",
+  "author": "Ruurd",
+  "url": "https://huggingface.co/Ruurd/BYOD-Ministral-8B",
+  "created_at": "2026-09-19T11:07:00.000Z",
+  "updated_at": "2026-09-19T11:16:24.000Z",
+  "license": "mrl-0.1",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "masked-diffusion",
+    "discrete-diffusion",
+    "diffusion-language-model",
+    "lora",
+    "byod",
+    "text-generation",
+    "conversational",
+    "base_model:mistralai/Ministral-8B-Instruct-2410",
+    "base_model:adapter:mistralai/Ministral-8B-Instruct-2410",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1981300496,
+  "storage_human": "2.0 GB",
+  "base_model": "mistralai/Ministral-8B-Instruct-2410",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "eBay.de | Elektronik, Autos, Mode, Sammlerstücke, Möbel und mehr …",
+      "url": "https://www.ebay.de/?msockid=2dca2a057729673012dd3ddc764b6637",
+      "snippet": "Kaufen und verkaufen Sie Elektronikartikel, Autos, Kleidung, Mode, Sammlerstücke, Sportartikel, Digitalkameras, Babyartikel, …"
+    },
+    {
+      "title": "Electronics, Cars, Fashion, Collectibles & More | eBay",
+      "url": "https://www.ebay.com/?msockid=2dca2a057729673012dd3ddc764b6637",
+      "snippet": "Buy & sell electronics, cars, clothes, collectibles & more on eBay, the world's online marketplace. Top brands, low prices & free …"
+    },
+    {
+      "title": "Willkommen bei eBay | eBay.de",
+      "url": "https://www.ebay.de/einkaufen/index.html?msockid=2dca2a057729673012dd3ddc764b6637",
+      "snippet": "Willkommen bei eBay, Beliebte Kategorien, Tipps & Tricks, Sicher einkaufen, Top-Kategorien, Jetzt verkaufen"
+    },
+    {
+      "title": "Übersicht | eBay",
+      "url": "https://ebey.de/",
+      "snippet": "Die eBay-Website ist in fünf Bereiche unterteilt: Kaufen, Verkaufen, Mein eBay, Community und Hilfe. Nachfolgend können Sie sich …"
+    },
+    {
+      "title": "eBay: kaufen & verkaufen – Apps bei Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.ebay.mobile&hl=de",
+      "snippet": "Online kaufen und verkaufen war noch nie so einfach wie mit der eBay-App. Erhalte in Echtzeit personalisierte Push …"
+    }
+  ]
+}

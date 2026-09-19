@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "jwj32/ut-head-random-seed42-step100",
+  "slug": "jwj32-ut-head-random-seed42-step100",
+  "author": "jwj32",
+  "url": "https://huggingface.co/jwj32/ut-head-random-seed42-step100",
+  "created_at": "2026-09-16T05:20:05.000Z",
+  "updated_at": "2026-09-19T00:50:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 16101386654,
+  "storage_human": "16.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home: Peak District National Park",
+      "url": "https://www.peakdistrict.gov.uk/",
+      "snippet": "Park news 75th Anniversary Inspired by the London tube map, check out this stylised interpretation of the Peak District National Park."
+    },
+    {
+      "title": "Planning - Peak District National Park",
+      "url": "https://www.peakdistrict.gov.uk/planning",
+      "snippet": "The Peak District National Park Authority is the statutory Planning Authority for the National Park area. Other related matters such as …"
+    },
+    {
+      "title": "Engagement Demographics | State of the Park Report",
+      "url": "https://reports.peakdistrict.gov.uk/sotpr/docs/adventure-&-exploration/engagement-demographics.html",
+      "snippet": "The Peak District National Park receives between 13m - 26 million visitors per year see visitor volume section for more information. …"
+    },
+    {
+      "title": "The Peak District | Nature Recovery Plan",
+      "url": "https://reports.peakdistrict.gov.uk/naturerecovery/docs/the-peak-district/the-peak-district.html",
+      "snippet": "The National Park Management Plan 2023-2028 sets out the vision for the Peak District in 20 years’ time: By 2043, the Peak District …"
+    },
+    {
+      "title": "Annual Parking Permit - Peak District National Park",
+      "url": "https://shop.peakdistrict.gov.uk/products/annual-parking-permit",
+      "snippet": "If you are a resident, non-resident or a regular visitor to the National Park you can purchase an annual permit, which can be used in …"
+    }
+  ]
+}

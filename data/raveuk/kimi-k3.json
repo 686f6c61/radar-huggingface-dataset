@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "rAVEUK/Kimi-K3",
+  "slug": "raveuk-kimi-k3",
+  "author": "rAVEUK",
+  "url": "https://huggingface.co/rAVEUK/Kimi-K3",
+  "created_at": "2026-09-19T11:52:12.000Z",
+  "updated_at": "2026-09-19T11:52:12.000Z",
+  "license": "kimi-k3",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "kimi_k3",
+    "feature-extraction",
+    "compressed-tensors",
+    "conversational",
+    "image-text-to-text",
+    "custom_code",
+    "license:other",
+    "eval-results",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2779931837184,
+  "parameters_human": "2779.93B",
+  "storage_bytes": 1560998650830,
+  "storage_human": "1561.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bing",
+      "url": "https://www.bing.com/version",
+      "snippet": "Bing ... Versions"
+    },
+    {
+      "title": "Search - Microsoft Bing",
+      "url": "https://www.bing.com/",
+      "snippet": "Search with Microsoft Bing and use the power of AI to find information, explore webpages, images, videos, maps, and more. A smart …"
+    },
+    {
+      "title": "How to See All Bing Related Searches on Any Device",
+      "url": "https://rottenwifi.com/how-to-see-all-bing-related-searches/",
+      "snippet": "Jul 1, 2026 · This guide walks through the practical ways to see Bing related searches on desktop, mobile, and Microsoft Edge. It also …"
+    },
+    {
+      "title": "How to See All Bing Related Searches - cloudspress.com",
+      "url": "https://www.cloudspress.com/how-to-see-all-bing-related-searches/",
+      "snippet": "Aug 7, 2026 · Bing does not have a public “see everything” page for a keyword. Its related searches and autocomplete suggestions …"
+    },
+    {
+      "title": "Bing",
+      "url": "https://www.bing.com/set/search",
+      "snippet": "Set Bing as your default search engine Try it now"
+    }
+  ]
+}

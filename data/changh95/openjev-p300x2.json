@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "changh95/openjev-p300x2",
+  "slug": "changh95-openjev-p300x2",
+  "author": "changh95",
+  "url": "https://huggingface.co/changh95/openjev-p300x2",
+  "created_at": "2026-09-19T10:40:16.000Z",
+  "updated_at": "2026-09-19T10:44:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "tenstorrent",
+    "blackhole",
+    "p300x2",
+    "vllm-plugin",
+    "nli",
+    "cross-encoder",
+    "reranker",
+    "qwen3.5",
+    "text-classification",
+    "en",
+    "base_model:AlexWortega/openjev",
+    "base_model:finetune:AlexWortega/openjev",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17985107,
+  "storage_human": "18 MB",
+  "base_model": "AlexWortega/openjev",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mount Rushmore - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Mount_Rushmore",
+      "snippet": "The Mount Rushmore National Memorial is a national memorial featuring a colossal sculpture carved into the granite face of Mount …"
+    },
+    {
+      "title": "Mount Rushmore National Memorial (U.S. National Park Service)",
+      "url": "https://www.nps.gov/moru/index.htm",
+      "snippet": "Jul 6, 2026 · From the history of the first inhabitants to the diversity of America today, Mount Rushmore brings visitors face to face …"
+    },
+    {
+      "title": "Plan Your Visit - Mount Rushmore National Memorial (U.S. National …",
+      "url": "https://www.nps.gov/moru/planyourvisit/index.htm",
+      "snippet": "Mar 6, 2025 · Basic Information Get the information you need to help plan a visit to Mount Rushmore."
+    },
+    {
+      "title": "Mount Rushmore | South Dakota's Great 8 Iconic Landmarks",
+      "url": "https://www.travelsouthdakota.com/iconic-landmarks/mount-rushmore",
+      "snippet": "Known as America’s Shrine of Democracy, Mount Rushmore looms large in the Black Hills of western South Dakota. Come marvel at …"
+    },
+    {
+      "title": "Mount Rushmore - Presidents, Facts & Controversy | HISTORY",
+      "url": "https://www.history.com/articles/mount-rushmore",
+      "snippet": "Dec 16, 2009 · Mount Rushmore National Memorial, sometimes called the “Shrine of Democracy,” has become one of the most iconic …"
+    }
+  ]
+}

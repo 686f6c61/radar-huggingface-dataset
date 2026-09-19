@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "maxbsoft/cbai-adapter1-photo2portrait-qwen2511",
+  "slug": "maxbsoft-cbai-adapter1-photo2portrait-qwen2511",
+  "author": "maxbsoft",
+  "url": "https://huggingface.co/maxbsoft/cbai-adapter1-photo2portrait-qwen2511",
+  "created_at": "2026-09-19T06:01:25.000Z",
+  "updated_at": "2026-09-20T23:19:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "lora",
+    "image-editing",
+    "children-book",
+    "cartoon",
+    "base_model:Qwen/Qwen-Image-Edit-2511",
+    "base_model:adapter:Qwen/Qwen-Image-Edit-2511",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18306450028,
+  "storage_human": "18.3 GB",
+  "base_model": "Qwen/Qwen-Image-Edit-2511",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "‎Instagram App - App Store",
+      "url": "https://apps.apple.com/us/app/instagram/id389801252",
+      "snippet": "Download Instagram by Instagram, Inc. on the App Store. See screenshots, ratings and reviews, user tips, and more apps like …"
+    },
+    {
+      "title": "Instagram - App Store",
+      "url": "https://apps.apple.com/gb/app/instagram/id389801252",
+      "snippet": "Download Instagram by Instagram, Inc. on the App Store. See screenshots, ratings and reviews, user tips and more games like …"
+    },
+    {
+      "title": "ENHYPEN - Reddit",
+      "url": "https://www.reddit.com/r/enhypen/",
+      "snippet": "The subreddit community for I-LAND's debut group, ENHYPEN (엔하이픈)! News, updates, images, videos, discussions, and anything …"
+    },
+    {
+      "title": "Instagram Reality Baybeh! - Reddit",
+      "url": "https://www.reddit.com/r/Instagramreality/",
+      "snippet": "Exposing edited photos and showing the truth behind them."
+    },
+    {
+      "title": "Instagram》App - App Store",
+      "url": "https://apps.apple.com/hk/app/instagram/id389801252",
+      "snippet": "Instagram’s design changes are frustrating and user‑unfriendly 18/12/2025 Karenaru I used to love Instagram’s clean and simple …"
+    }
+  ]
+}

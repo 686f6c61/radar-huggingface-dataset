@@ -1,0 +1,93 @@
+{
+  "schema": 1,
+  "id": "jaredpalmer/kev-8b",
+  "slug": "jaredpalmer-kev-8b",
+  "author": "jaredpalmer",
+  "url": "https://huggingface.co/jaredpalmer/kev-8b",
+  "created_at": "2026-09-19T04:19:09.000Z",
+  "updated_at": "2026-09-20T22:46:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "decision-model",
+    "calibration",
+    "lora",
+    "multiple-choice",
+    "typesafe",
+    "text-classification",
+    "en",
+    "dataset:legacy-datasets/banking77",
+    "dataset:google/boolq",
+    "dataset:fancyzhx/ag_news",
+    "dataset:nyu-mll/multi_nli",
+    "dataset:SetFit/sst5",
+    "dataset:Yelp/yelp_review_full",
+    "dataset:CogComp/trec",
+    "dataset:fancyzhx/dbpedia_14",
+    "dataset:SetFit/amazon_reviews_multi_en",
+    "dataset:stanfordnlp/imdb",
+    "dataset:allenai/ai2_arc",
+    "dataset:allenai/openbookqa",
+    "dataset:tau/commonsense_qa",
+    "base_model:Qwen/Qwen3-8B-Base",
+    "base_model:adapter:Qwen/Qwen3-8B-Base",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 7,
+  "downloads_30d": 66,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 377515324,
+  "storage_human": "378 MB",
+  "base_model": "Qwen/Qwen3-8B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "typed decision (choice / noul / score)",
+      "dataset": "decision-v4/v6 development (1,204 records; trained public sources + programmatic policy pairs)",
+      "metric": null,
+      "value": 0.869
+    },
+    {
+      "task": "typed decision (choice / noul / score)",
+      "dataset": "decision-v4/v6 development (1,204 records; trained public sources + programmatic policy pairs)",
+      "metric": "ECE, raw probabilities",
+      "value": 0.061
+    },
+    {
+      "task": "typed decision",
+      "dataset": "transfer-v4 development (764 records; six never-trained sources + held-out policy structures)",
+      "metric": null,
+      "value": 0.796
+    },
+    {
+      "task": "typed decision",
+      "dataset": "transfer-v4 development (764 records; six never-trained sources + held-out policy structures)",
+      "metric": null,
+      "value": 0.337
+    }
+  ],
+  "sources": [
+    {
+      "title": "eBay Kleinanzeigen",
+      "url": "https://www.ebay-kleinanzeigen.de/s-boote-bootszubehoer/motorboote/saarland/c211l285+boote_bootszubehoer.art_s:motorboote",
+      "snippet": "Hier sollte eine Beschreibung angezeigt werden, diese Seite lässt dies jedoch nicht zu."
+    }
+  ]
+}

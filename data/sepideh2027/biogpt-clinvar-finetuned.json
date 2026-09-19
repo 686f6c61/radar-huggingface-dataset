@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Sepideh2027/biogpt-clinvar-finetuned",
+  "slug": "sepideh2027-biogpt-clinvar-finetuned",
+  "author": "Sepideh2027",
+  "url": "https://huggingface.co/Sepideh2027/biogpt-clinvar-finetuned",
+  "created_at": "2026-06-29T23:39:20.000Z",
+  "updated_at": "2026-09-18T23:54:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "biogpt",
+    "biomedical",
+    "clinvar",
+    "lora",
+    "foundation-model",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 64,
+  "trending_score": 0,
+  "parameters": 346763264,
+  "parameters_human": "346.8M",
+  "storage_bytes": 693569168,
+  "storage_human": "694 MB",
+  "base_model": "microsoft/BioGPT",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "1.1.1.1 + WARP 6.38.9 لـAndroid - قم بتنزيل ملف APK ...",
+      "url": "https://1-1-1-1.ar.uptodown.com/android",
+      "snippet": "1.1.1.1 + WARP هي أداة مبتكرة تجمع بين الخصوصية والسرعة والأمان في تصفح الإنترنت. تم تصميم هذا التطبيق لحماية بياناتك الشخصية وضمان اتصال أسرع، ويعمل كـ DNS خاص وخفيف …"
+    },
+    {
+      "title": "كتابة الارقام بالحروف من 1 الى 1000 - موقع لمحات",
+      "url": "https://www.lamhaat.com/?app=article.show.237",
+      "snippet": "اليكم جدول يحتوي على كتابة الارقام بالحروف من 1 الى 1000 باللغة العربية وباللغة الإنجليزية بشكل مرتب تصاعدياً وكل عدد مكتوب رقماً يقابله العدد مكتوب نصاً باللغتين العربية والإنجليزية."
+    },
+    {
+      "title": "1.1.1.1 - التطبيق المجاني الذي يجعل الإنترنت أسرع.",
+      "url": "https://one.one.one.one/ar-EG/",
+      "snippet": "Cloudflare يوفر الأمان والأداء الفائق لأكثر من 25 مليونًا من خصائص الإنترنت، وتتوفر هذه التقنية الآن للبقية منا. ثبِّت التطبيق المجاني الذي يجعل الإنترنت على هاتفك أكثر سرعة وخصوصية وموثوقية."
+    },
+    {
+      "title": "جدول الضرب كامل من 1 إلى 12 — تعلم واحفظ بألعاب ...",
+      "url": "https://jadwal-aldarb.com/",
+      "snippet": "Aug 17, 2026 · هنا يتعلّم طفلك جدول الضرب من ١ إلى ١٢ ويحفظه بطرق سهلة وسريعة: شرح مبسّط لكل جدول، تمارين تفاعلية، ألعاب ممتعة، وأوراق عمل جاهزة للطباعة. كل ذلك مجانًا وبلا تسجيل."
+    },
+    {
+      "title": "١ ١ ١ ١ VPN APK للاندرويد تنزيل - APKPure.com",
+      "url": "https://apkpure.com/ar/1-1-1-1-vpn/com.oneoneoneone.vpn",
+      "snippet": "Enable ١ ١ ١ ١ for Families option from the DNS settings inside the app. يتضمن هذا الإصدار إصلاحات بسيطة للأخطاء وتحسينات عامة. حدّث إلى أحدث إصدار …"
+    }
+  ]
+}
