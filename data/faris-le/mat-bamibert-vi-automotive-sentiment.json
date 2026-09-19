@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "faris-le/mat-bamibert-vi-automotive-sentiment",
+  "slug": "faris-le-mat-bamibert-vi-automotive-sentiment",
+  "author": "faris-le",
+  "url": "https://huggingface.co/faris-le/mat-bamibert-vi-automotive-sentiment",
+  "created_at": "2026-09-19T19:34:36.000Z",
+  "updated_at": "2026-09-19T20:50:16.000Z",
+  "license": "qualcomm-responsible-ai-license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "roberta",
+    "sentiment-analysis",
+    "vietnamese",
+    "automotive",
+    "base_model:Qualcomm-AI-Research/BamiBERT",
+    "base_model:finetune:Qualcomm-AI-Research/BamiBERT",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 102953475,
+  "parameters_human": "103.0M",
+  "storage_bytes": 823675960,
+  "storage_human": "824 MB",
+  "base_model": "Qualcomm-AI-Research/BamiBERT",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "10 Best Workforce Management Software Platforms in 2026",
+      "url": "https://roboticsandautomationnews.com/2026/06/26/10-best-workforce-management-software-platforms-in-2026/102836/",
+      "snippet": "Jun 26, 2026 · Compare 10 leading workforce management software platforms for 2026, including ProHance, UKG, Workday, ADP, …"
+    },
+    {
+      "title": "10 best workforce planning software for 2026 - Guideflow Blog",
+      "url": "https://www.guideflow.com/blog/workforce-planning-software",
+      "snippet": "Aug 31, 2026 · Compare the 10 best workforce planning software platforms for 2026, with pricing, G2 ratings, and buyer guidance on …"
+    },
+    {
+      "title": "Best Workforce Management Software 2026 | Capterra",
+      "url": "https://www.capterra.com/workforce-management-software/",
+      "snippet": "3 days ago · Find the top Workforce Management software of 2026 on Capterra. Based on millions of verified user reviews - compare …"
+    },
+    {
+      "title": "Best Workforce Management Software Compared: 2026 Guide",
+      "url": "https://www.performancereviewssoftware.com/blog/best-workforce-management-software-compared/",
+      "snippet": "Mar 3, 2026 · Compare the best workforce management software for 2026. Side-by-side comparison of WFM platforms including …"
+    },
+    {
+      "title": "10 Best Workforce Management Software for HR Teams in 2026",
+      "url": "https://www.playroll.com/blog/workforce-management-solutions",
+      "snippet": "Nov 7, 2025 · 10 Best Workforce Management Software for HR Teams in 2026 Looking for the best workforce management tools in …"
+    }
+  ]
+}

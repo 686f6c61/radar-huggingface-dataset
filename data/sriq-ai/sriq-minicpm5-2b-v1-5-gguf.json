@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "sriq-ai/sriq-MiniCPM5-2B-v1.5-GGUF",
+  "slug": "sriq-ai-sriq-minicpm5-2b-v1-5-gguf",
+  "author": "sriq-ai",
+  "url": "https://huggingface.co/sriq-ai/sriq-MiniCPM5-2B-v1.5-GGUF",
+  "created_at": "2026-09-19T19:50:11.000Z",
+  "updated_at": "2026-09-19T20:16:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama",
+    "llama.cpp",
+    "llama-cpp",
+    "quantized",
+    "sft",
+    "reasoning",
+    "unsloth",
+    "text-generation",
+    "multilingual",
+    "en",
+    "zh",
+    "dataset:sriq-ai/sriq-sft-v1.5",
+    "base_model:sriq-ai/sriq-MiniCPM5-2B-v1.5",
+    "base_model:quantized:sriq-ai/sriq-MiniCPM5-2B-v1.5",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 19490126312,
+  "storage_human": "19.5 GB",
+  "base_model": "sriq-ai/sriq-MiniCPM5-2B-v1.5",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.hu/index.html",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google Fordító",
+      "url": "https://translate.google.hu/",
+      "snippet": "A Google díjmentesen használható szolgáltatása képes a szavak, kifejezések és weboldalak azonnali lefordítására a magyar és több …"
+    },
+    {
+      "title": "Google Képek",
+      "url": "https://www.google.hu/imghp?hl=hu",
+      "snippet": "Google Képek. Az internet legátfogóbb képkereső szolgáltatása."
+    },
+    {
+      "title": "Google Fordító",
+      "url": "https://translate.google.hu/details",
+      "snippet": "Visszajelzés küldése Részletek kereséséhez adja meg a kívánt szöveget"
+    },
+    {
+      "title": "Google for Education - Online Resources for Teachers & Students",
+      "url": "https://edu.google.hu/",
+      "snippet": "Access interactive teaching tools online at no cost, including lesson plans, apps, and games that empower educators to advance …"
+    }
+  ]
+}

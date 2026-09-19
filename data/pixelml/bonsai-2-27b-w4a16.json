@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "PixelML/Bonsai-2-27B-W4A16",
+  "slug": "pixelml-bonsai-2-27b-w4a16",
+  "author": "PixelML",
+  "url": "https://huggingface.co/PixelML/Bonsai-2-27B-W4A16",
+  "created_at": "2026-09-19T16:58:35.000Z",
+  "updated_at": "2026-09-19T17:10:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "quantized",
+    "w4a16",
+    "gptq",
+    "compressed-tensors",
+    "speculative-decoding",
+    "dflash2",
+    "bonsai",
+    "ternary",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27991143152,
+  "parameters_human": "27.99B",
+  "storage_bytes": 54419030146,
+  "storage_human": "54.4 GB",
+  "base_model": "Qwen/Qwen3.8-27B, prism-ml/Ternary-Bonsai-2-27B-gguf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Piła (CZAT regionalny) – CZATeria w Interia.pl",
+      "url": "https://czateria.interia.pl/emb-chat,room,178,Pi%C5%82a",
+      "snippet": "Jesteś samotny? Wejdź na czat dla singli, anonimowo poznawaj nowe osoby, prowadź ciekawe rozmowy i randkuj nie tylko na czat …"
+    },
+    {
+      "title": "Czat online – CZATeria w Interia.pl – darmowy anonimowy czat bez javy ...",
+      "url": "https://czateria.interia.pl/",
+      "snippet": "Darmowy czat w INTERIA.PL (CZATeria) działa w każdej przeglądarce. Zawieraj nowe znajomości, prowadź anonimowe rozmowy, …"
+    },
+    {
+      "title": "Niemcy (CZAT międzynarodowy) – CZATeria w Interia.pl",
+      "url": "https://czateria.interia.pl/emb-chat,room,385,niemcy",
+      "snippet": "Wybrałeś czat międzynarodowy! Jesteś w pokoju Niemcy. Czatuj online, flirtuj, umawiaj się na randki w pokoju Niemcy bez potrzeby …"
+    },
+    {
+      "title": "SEX (CZAT erotyczny) – CZATeria w Interia.pl",
+      "url": "https://czateria.interia.pl/emb-chat,room,413,SEX",
+      "snippet": "Wybrałeś czat erotyczny! Jesteś w pokoju SEX. Czatuj online, flirtuj, podrywaj, umawiaj się na randki w pokoju SEX bez potrzeby …"
+    },
+    {
+      "title": "Gay (CZAT towarzyski) – CZATeria w Interia.pl",
+      "url": "https://czateria.interia.pl/emb-chat,room,124",
+      "snippet": "Czateria - internetowe pogawędki on-line - Witaj w pokoju Gay. Szukasz chłopaka? Chcesz umówić się na randkę? Wejdź na czat do …"
+    }
+  ]
+}

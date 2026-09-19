@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "zee713/zer-qwen-lite-gguf",
+  "slug": "zee713-zer-qwen-lite-gguf",
+  "author": "zee713",
+  "url": "https://huggingface.co/zee713/zer-qwen-lite-gguf",
+  "created_at": "2026-09-19T15:31:05.000Z",
+  "updated_at": "2026-09-19T15:31:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "am"
+  ],
+  "tags": [
+    "gguf",
+    "amharic",
+    "zer",
+    "text-generation",
+    "am",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 986048128,
+  "storage_human": "986 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Chrome – den schnellen und sicheren Browser von Google …",
+      "url": "https://www.google.com/intl/de/chrome/",
+      "snippet": "Noch effizienter arbeiten mit dem neuen Google Chrome. Der Webbrowser mit der Technologie von Google ist jetzt noch einfacher, …"
+    },
+    {
+      "title": "Google Chrome - The Fast & Secure Web Browser Built to be Yours",
+      "url": "https://www.google.com/chrome/",
+      "snippet": "Chrome is the official web browser from Google, built to be fast, secure, and customizable. Download now and make it yours."
+    },
+    {
+      "title": "Google Chrome herunterladen und installieren",
+      "url": "https://support.google.com/chrome/answer/95346?hl=de&co=GENIE.Platform%3DDesktop",
+      "snippet": "Öffnen Sie Chrome. Unter Windows 10 und höher wird nach Abschluss der Installation ein Chrome-Fenster geöffnet. Sie können …"
+    },
+    {
+      "title": "Download and install Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95346?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "You can download and install the Chrome web browser at no charge, and use it to browse the web. Check system requirements to …"
+    },
+    {
+      "title": "Google Chrome - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Google_Chrome",
+      "snippet": "The browser is also the main component of ChromeOS, on which it serves as the platform for web applications. Most of Chrome's …"
+    }
+  ]
+}

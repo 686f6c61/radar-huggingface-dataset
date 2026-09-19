@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "Fantominsight/Yapper-M4-Flash-0256-GGUF",
+  "slug": "fantominsight-yapper-m4-flash-0256-gguf",
+  "author": "Fantominsight",
+  "url": "https://huggingface.co/Fantominsight/Yapper-M4-Flash-0256-GGUF",
+  "created_at": "2026-09-19T12:23:26.000Z",
+  "updated_at": "2026-09-19T18:53:48.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ru",
+    "en",
+    "zh",
+    "ja",
+    "es",
+    "de",
+    "lg"
+  ],
+  "tags": [
+    "gguf",
+    "Fantominsight",
+    "Yapper",
+    "YAPPERTAR-ai",
+    "M-arch",
+    "Flash-models",
+    "Roleplay",
+    "RP",
+    "RPG",
+    "text-generation",
+    "ru",
+    "en",
+    "zh",
+    "ja",
+    "es",
+    "de",
+    "lg",
+    "license:gpl-3.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3429006336,
+  "parameters_human": "3.43B",
+  "storage_bytes": 3652204704,
+  "storage_human": "3.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Explore and share videos, music, and more on YouTube, the leading platform for online video streaming and sharing."
+    },
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/YouTube/app%20download",
+      "snippet": "YouTube's official YouTube channel You found us. Welcome to the official YouTube channel – a home for the biggest moments, the …"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://accounts.google.com/InteractiveLogin?hl=ru&service=youtube&uilel=3",
+      "snippet": "Делитесь своими видео с друзьями, родственниками и всем миром. Работаете на чужом компьютере? Используйте режим …"
+    },
+    {
+      "title": "Ютуб - YouTube",
+      "url": "https://www.youtube.com/c/%D0%AE%D1%82%D1%83%D0%B1-%D0%BA%D0%BE%D0%BC",
+      "snippet": "Твой гид в Мир ... Название: Выживший Оригинальное название: The Revenant Год: 2015 Страна: США Жанр: Вестерны, …"
+    },
+    {
+      "title": "ютуб - YouTube",
+      "url": "https://www.youtube.com/@you_tub.",
+      "snippet": "Explore diverse content on YouTube, including music, culture, internet phenomena, and trending videos globally."
+    }
+  ]
+}

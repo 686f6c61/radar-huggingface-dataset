@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "Bibek111/sajilofit-fitness-nutrition-qwen2.5-7b-lora",
+  "slug": "bibek111-sajilofit-fitness-nutrition-qwen2-5-7b-lora",
+  "author": "Bibek111",
+  "url": "https://huggingface.co/Bibek111/sajilofit-fitness-nutrition-qwen2.5-7b-lora",
+  "created_at": "2026-09-19T16:34:28.000Z",
+  "updated_at": "2026-09-19T16:37:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qwen",
+    "qwen2.5",
+    "qwen2.5-7b",
+    "lora",
+    "qlora",
+    "fitness",
+    "nutrition",
+    "workout",
+    "instruction-tuning",
+    "sajilofit",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 51822096,
+  "storage_human": "52 MB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/",
+      "snippet": "17 hours ago · Hello, New users on the forum won't be able to send PM untill certain criteria are met (you need to have at least 6 …"
+    },
+    {
+      "title": "Pic & Movie Post - XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/forums/pic-movie-post.8/",
+      "snippet": "17 hours ago · Post pics or clips of yourself, wife, girlfriend, models, anything you like."
+    },
+    {
+      "title": "Sex Stories | XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/forums/sex-stories.6/",
+      "snippet": "Apr 12, 2009 · Anything related to texts and xnxx stories. Hello, You can now get verified on forum. The way it's gonna work is that …"
+    },
+    {
+      "title": "xnxx | XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/tags/xnxx/",
+      "snippet": "Dec 10, 2025 · Hello, New users on the forum won't be able to send PM untill certain criteria are met (you need to have at least 6 …"
+    },
+    {
+      "title": "Amazingly average girls!!!! | XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/threads/amazingly-average-girls.542405/",
+      "snippet": "Feb 19, 2019 · Tell me there isn't something about those average looking girls, the plain Jane girl next door types. This is …"
+    }
+  ]
+}

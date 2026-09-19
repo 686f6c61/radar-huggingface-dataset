@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "s1eepypillow/task12_act_chunk80",
+  "slug": "s1eepypillow-task12_act_chunk80",
+  "author": "s1eepypillow",
+  "url": "https://huggingface.co/s1eepypillow/task12_act_chunk80",
+  "created_at": "2026-09-19T19:31:21.000Z",
+  "updated_at": "2026-09-19T19:31:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:s1eepypillow/grad_block_merged_task12_v2",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51649670,
+  "parameters_human": "51.6M",
+  "storage_bytes": 206642648,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lista de palabras en español con las cinco vocales",
+      "url": "https://www.elespanol.com/curiosidades/lenguaje/lista-palabras-espanol-castellano-cinco-vocales/650684979_0.html",
+      "snippet": "Feb 24, 2022 · Hay más de una palabra en el diccionario que tiene todas las vocales, más allá de la típica \"murciélago\" que todo el …"
+    },
+    {
+      "title": "70 palabras con las 5 vocales: Lista completa en español",
+      "url": "https://blog.centropediatria.es/70-palabras-con-las-5-vocales/",
+      "snippet": "Mar 24, 2024 · Si estás buscando palabras en español que contengan las cinco vocales (a, e, i, o, u), estás en el lugar correcto. En …"
+    },
+    {
+      "title": "70 PALABRAS con las 5 VOCALLES - ¡DESCÚBRELAS AHORA!",
+      "url": "https://entredatos.es/cultura/70-palabras-con-las-5-vocales/",
+      "snippet": "En este artículo, exploraremos 70 palabras con las 5 vocales, así como algunos ejemplos y curiosidades acerca de estas …"
+    },
+    {
+      "title": "Palabras con las 5 vocales - Mundo Primaria",
+      "url": "https://www.mundoprimaria.com/palabras/palabras-con-las-5-vocales",
+      "snippet": "Listado de palabras que llevan las 5 vocales y que están admitidas por la Real Academia Española. Definición y frase ilustrativa."
+    },
+    {
+      "title": "Palabras con las cinco vocales: la lista definitiva de términos en ...",
+      "url": "https://scienceblog.com/es/sb-esa-palabras-con-las-cinco-vocales-la-lista-definitiva-de-t-rminos-en-espa-ol-e-ingl-s-que-las-contienen-todas/",
+      "snippet": "Aug 11, 2026 · Recopilar palabras que contengan las cinco vocales —a, e, i, o, u— es un juego lingüístico con reglas más profundas …"
+    }
+  ]
+}

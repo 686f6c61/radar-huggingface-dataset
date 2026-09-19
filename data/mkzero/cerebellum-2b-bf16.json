@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "mkzero/Cerebellum-2B-BF16",
+  "slug": "mkzero-cerebellum-2b-bf16",
+  "author": "mkzero",
+  "url": "https://huggingface.co/mkzero/Cerebellum-2B-BF16",
+  "created_at": "2026-09-19T15:37:13.000Z",
+  "updated_at": "2026-09-19T16:08:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5_text",
+    "agent",
+    "non-autoregressive",
+    "decision-engine",
+    "tool-use",
+    "function-calling",
+    "rpa",
+    "text-classification",
+    "custom_code",
+    "zh",
+    "en",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:finetune:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1881825088,
+  "parameters_human": "1.88B",
+  "storage_bytes": 3793173441,
+  "storage_human": "3.8 GB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Generic Product Keys to Install Windows 10 Editions",
+      "url": "https://www.tenforums.com/tutorials/95922-generic-product-keys-install-windows-10-editions.html",
+      "snippet": "Apr 8, 2024 · This tutorial will provide you with a list of RTM (retail) and KMS generic keys (default keys) for all editions of Windows 10."
+    },
+    {
+      "title": "Download Windows 10 ISO File | Tutorials - Ten Forums",
+      "url": "https://www.tenforums.com/tutorials/9230-download-windows-10-iso-file.html",
+      "snippet": "Feb 28, 2026 · This tutorial will show you how to download an official Windows 10 ISO file from Microsoft directly or by using the …"
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://www.answers.microsoft.com/zh-hans/windows/forum/all/ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¥ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¤ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â½ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¤ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â»ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â½win8ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚ÂºÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â´ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â°/d8c51abf-b863-4da3-9596-797deace59f7",
+      "snippet": ""
+    },
+    {
+      "title": "Create Bootable USB Flash Drive to Install Windows 10",
+      "url": "https://www.tenforums.com/tutorials/2376-create-bootable-usb-flash-drive-install-windows-10-a.html",
+      "snippet": "Oct 29, 2025 · This tutorial will show you how to create a bootable USB flash drive that can be used to install Windows 10 with UEFI …"
+    },
+    {
+      "title": "Open Settings in Windows 10 | Tutorials - Ten Forums",
+      "url": "https://www.tenforums.com/tutorials/3326-open-settings-windows-10-a.html",
+      "snippet": "Apr 17, 2021 · Starting with Windows 10 build 21359, the Ease of Access category in Settings has been renamed to Accessibility. …"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ooma-ai/turn-detector",
+  "slug": "ooma-ai-turn-detector",
+  "author": "ooma-ai",
+  "url": "https://huggingface.co/ooma-ai/turn-detector",
+  "created_at": "2026-09-19T16:39:47.000Z",
+  "updated_at": "2026-09-19T16:55:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "voice-activity-detection",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "turn-taking",
+    "endpointing",
+    "end-of-utterance",
+    "voice-activity-detection",
+    "streaming",
+    "speech",
+    "en",
+    "arxiv:2205.09812",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TV-Programm heute: Deine Sendungen im Überblick - HÖRZU",
+      "url": "https://www.hoerzu.de/tv-programm/",
+      "snippet": "Das gesuchte Fernsehprogramm einfach finden Sie möchten wissen, was gerade im Fernsehen läuft oder welche Sendungen heute …"
+    },
+    {
+      "title": "TV Programm jetzt: Alle Sender, Filme & Serien live - HÖRZU",
+      "url": "https://www.hoerzu.de/tv-programm/jetzt/",
+      "snippet": "Entdecken Sie das aktuelle TV-Programm live auf hoerzu.de und verpassen Sie keine Sendung mehr! Finden Sie Ihre …"
+    },
+    {
+      "title": "TV-Programm App » HÖRZU für Ihr Smartphone & Tablet",
+      "url": "https://app.hoerzu.de/",
+      "snippet": "HÖRZU: Ihr TV-Programm als App Genießen Sie Ihr TV-Programm jetzt schnell und mobil als App für Ihr Smartphone und Tablet. …"
+    },
+    {
+      "title": "Hoerzu",
+      "url": "https://mobile.hoerzu.de/",
+      "snippet": "HÖRZU bietet Informationen zu TV-Programmen, Sendern und Sendungen sowie Tipps für ein besseres Fernseherlebnis."
+    },
+    {
+      "title": "HÖRZU | Deutschlands erste Programmzeitschrift mit dem TV …",
+      "url": "https://www.hoerzu.de/",
+      "snippet": "Fernsehprogramm von heute - mit den aktuellen Informationen zum TV-Programm bei Hörzu. Sehen was heute im …"
+    }
+  ]
+}

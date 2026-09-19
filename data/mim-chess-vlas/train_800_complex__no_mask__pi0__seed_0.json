@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "mim-chess-vlas/train_800_complex__no_mask__pi0__seed_0",
+  "slug": "mim-chess-vlas-train_800_complex__no_mask__pi0__seed_0",
+  "author": "mim-chess-vlas",
+  "url": "https://huggingface.co/mim-chess-vlas/train_800_complex__no_mask__pi0__seed_0",
+  "created_at": "2026-09-19T15:45:59.000Z",
+  "updated_at": "2026-09-21T21:19:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi0",
+    "dataset:mim-chess-vlas/train_800_complex__no_mask",
+    "base_model:lerobot/pi0_base",
+    "base_model:finetune:lerobot/pi0_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4028019472,
+  "parameters_human": "4.03B",
+  "storage_bytes": 124495043904,
+  "storage_human": "124.5 GB",
+  "base_model": "lerobot/pi0_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Warum fehlen Sendungen im ZDF - MediathekView-Forum",
+      "url": "https://forum.mediathekview.de/topic/4902/warum-fehlen-sendungen-im-zdf",
+      "snippet": "@ Akkuloer sagte in Warum fehlen Sendungen im ZDF: ab und zu stoße ich auf Sendungen, die weder in der Mediathek, Wenn sie …"
+    },
+    {
+      "title": "Videos vom ZDF brechen ab | MediathekView-Forum",
+      "url": "https://forum.mediathekview.de/topic/3970/videos-vom-zdf-brechen-ab",
+      "snippet": "Heruntergeladene Videos (mp4) vom ZDF brechen beim Streaming auf meinem Fernseher (Sony Bravia - einige Jahre alt) nach ca. …"
+    },
+    {
+      "title": "Digitalisierung von VHS-Kassetten mit USB-Grabber",
+      "url": "https://www.vlc-forum.de/thread/3427-digitalisierung-von-vhs-kassetten-mit-usb-grabber/",
+      "snippet": "Jul 12, 2018 · Hallo, ich möchte meine VHS-Kassetten mit einem USB2.0 Video Grabber digitalisieren, habe auch alle Geräte …"
+    },
+    {
+      "title": "Beiträge von starbase64 - VLC Player Forum",
+      "url": "https://www.vlc-forum.de/user-post-list/7432-starbase64/",
+      "snippet": "Apr 27, 2018 · Hallo, wenn ich den Live Stream eines TV Senders aufrufe z.b. ARD, wird dieser alle paar Sekunden unterbrochen. …"
+    },
+    {
+      "title": "Livestream 3SAT, ZDF, NEO, INFO, PHOENIX URLs haben sich geändert",
+      "url": "https://forum.mediathekview.de/topic/3525/livestream-3sat-zdf-neo-info-phoenix-urls-haben-sich-ge%C3%A4ndert",
+      "snippet": "Jun 29, 2020 · Open source developers do NOT have to: Make your issue a priority, just because you say so. Give you any sort of …"
+    }
+  ]
+}

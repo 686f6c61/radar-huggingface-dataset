@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Nekodeus/z-image-turbo-int8-ov",
+  "slug": "nekodeus-z-image-turbo-int8-ov",
+  "author": "Nekodeus",
+  "url": "https://huggingface.co/Nekodeus/z-image-turbo-int8-ov",
+  "created_at": "2026-09-19T14:30:43.000Z",
+  "updated_at": "2026-09-19T14:30:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "openvino",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "openvino",
+    "text-to-image",
+    "z-image",
+    "int8",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Meal Macro Calculator - Calculate Macros for Any Meal",
+      "url": "https://macronutrients.com/meal-macro-calculator/",
+      "snippet": "Aug 26, 2026 · Calculate the protein, carbs, fat, and calories in any meal. Add multiple ingredients, adjust serving sizes, and get real …"
+    },
+    {
+      "title": "Red Lentils Calories & Nutritional Facts Calculator",
+      "url": "https://fithealthregimen.com/red-lentils-calories-nutritional-facts/",
+      "snippet": "Feb 26, 2026 · Calculate calories and complete nutrition facts for red lentils. Get protein, carbs, fiber, vitamins & minerals for any …"
+    },
+    {
+      "title": "Lentils vs Eggs Protein Guide: Which Has More?",
+      "url": "https://carefocusdaily.com/nutrition/lentils-vs-eggs-protein-macros-compared",
+      "snippet": "Jan 10, 2026 · Compare protein, macros, and nutrients in lentils and eggs to make informed dietary choices based on your health …"
+    },
+    {
+      "title": "Protein and fat content 50g red lentils 2 eggs vs 250g raw chicken",
+      "url": "https://theresanaiforthat.com/s/protein+and+fat+content+50g+red+lentils+2+eggs+vs+250g+raw+chicken/",
+      "snippet": "Browse 10 Protein and fat content 50g red lentils 2 eggs vs 250g raw chicken AIs. Includes tasks such as Meal plans, Nutrition, …"
+    },
+    {
+      "title": "Protein Food Calculator: Count Protein from Foods and Meals",
+      "url": "https://myproteincalc.com/protein-food-calculator",
+      "snippet": "Use this food-entry calculator to look up protein in common foods, add servings to meals, and track your total daily protein against a …"
+    }
+  ]
+}

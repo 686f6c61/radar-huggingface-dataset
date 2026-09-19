@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "AlinaGonch/granite41-3b-squad-ratio-0.40-seed-42",
+  "slug": "alinagonch-granite41-3b-squad-ratio-0-40-seed-42",
+  "author": "AlinaGonch",
+  "url": "https://huggingface.co/AlinaGonch/granite41-3b-squad-ratio-0.40-seed-42",
+  "created_at": "2026-09-19T14:16:51.000Z",
+  "updated_at": "2026-09-19T14:16:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 124593064,
+  "storage_human": "125 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ASUS ROG Strix G16 (2025) Gaming Laptop, NVIDIA RTX 5070Ti",
+      "url": "https://www.amazon.ca/Gaming-Laptop-Threads-Display-Windows/dp/B0FX4PFC9L",
+      "snippet": "ASUS ROG Strix G16 (2025) Gaming Laptop, NVIDIA RTX 5070Ti 12GB GDDR7, AMD Ryzen 9 8940HX (16 Cores, 32 Threads, …"
+    },
+    {
+      "title": "ASUS ROG Strix G16 (2025) Gaming Laptop, AMD Ryzen 9 8940HX",
+      "url": "https://www.amazon.ca/ASUS-ROG-Strix-G16-Threads/dp/B0G39YYRCZ",
+      "snippet": "ASUS ROG Strix G16 (2025) Gaming Laptop, AMD Ryzen 9 8940HX (16 Cores, 32 Threads, up to 5.3GHz), 16\" WUXGA FHD+ …"
+    },
+    {
+      "title": "ROG Strix G16 (2024) G614 - Republic of Gamers｜ROG Global",
+      "url": "https://rog.asus.com/laptops/rog-strix/rog-strix-g16-2024/",
+      "snippet": "After a few weeks of use, I can say that the ASUS ROG Strix G16 is a great gaming laptop for anyone looking for top performance, a …"
+    },
+    {
+      "title": "ROG Strix G16 (2025) G614 | ROG Strix | Gaming Laptops｜ROG",
+      "url": "https://rog.asus.com/laptops/rog-strix/rog-strix-g16-2025-g614/",
+      "snippet": "With upgradeable up to 32+32GB DDR5 RAM* and PCIe Gen 4.0 SSD storage, and the ability to upgrade one slot to a PCIe Gen 5 …"
+    },
+    {
+      "title": "ASUS ROG Strix G16 16\" 240Hz HDR Gaming Laptop - Best Buy Canada",
+      "url": "https://www.bestbuy.ca/en-ca/product/asus-rog-strix-g16-16-240hz-hdr-gaming-laptop-intel-core-ultra-9-275hx-32gb-ddr5-2tb-ssd-nvidia-rtx-5070-windows-11-home-eclipse-gray/19338499",
+      "snippet": "ASUS ROG Strix G16 gaming laptop powers immersive play with an Intel Core Ultra 9 processor, 32GB RAM, and a 240Hz Nebula …"
+    }
+  ]
+}

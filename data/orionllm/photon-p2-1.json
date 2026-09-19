@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "OrionLLM/Photon-P2.1",
+  "slug": "orionllm-photon-p2-1",
+  "author": "OrionLLM",
+  "url": "https://huggingface.co/OrionLLM/Photon-P2.1",
+  "created_at": "2026-09-19T18:07:09.000Z",
+  "updated_at": "2026-09-19T18:09:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "text-to-image",
+    "lora",
+    "diffusion",
+    "image-generation",
+    "photon",
+    "z-image-turbo",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 75967925,
+  "storage_human": "76 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.com/",
+      "snippet": "Find local businesses, view maps and get driving directions in Google Maps."
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://www.google.com/maps/search/?hl=de",
+      "snippet": "Aktuelle Verkehrslage Schnell Langsam Kartendaten ©2026 Google Bedingungen 20 km ... Route Mit dem Auto Zu Fuß"
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.at/?q=Salzburg",
+      "snippet": "We would like to show you a description here but the site won’t allow us."
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.de/maps?---",
+      "snippet": "We would like to show you a description here but the site won’t allow us."
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://www.google.com/maps/search/?%20%2C%205020%20Salzburg%2C%20Austria",
+      "snippet": "Map data ©2026 Google Terms 10 km Directions"
+    }
+  ]
+}

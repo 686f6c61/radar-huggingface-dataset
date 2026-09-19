@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "isolate/Qwen3-8B-Base-4bit",
+  "slug": "isolate-qwen3-8b-base-4bit",
+  "author": "isolate",
+  "url": "https://huggingface.co/isolate/Qwen3-8B-Base-4bit",
+  "created_at": "2026-09-19T13:48:49.000Z",
+  "updated_at": "2026-09-19T13:57:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3-8B-Base",
+    "base_model:quantized:Qwen/Qwen3-8B-Base",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 4363306866,
+  "storage_human": "4.4 GB",
+  "base_model": "Qwen/Qwen3-8B-Base",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "$143 Flights from Dhaka (DAC) to Bangkok (BKKT) | Skyscanner",
+      "url": "https://www.skyscanner.com/routes/dac/bkkt/hazrat-shahjalal-international-airport-to-bangkok.html",
+      "snippet": "Fly from Hazrat Shahjalal International Airport to Bangkok with flight deals and no hidden fees. Skyscanner compares prices across …"
+    },
+    {
+      "title": "Cheap Flights From Dhaka To Bangkok From ৳32,870 | DAC - BKK",
+      "url": "https://www.wego.com.bd/flights/dac/bkk/cheapest-flights-from-dhaka-to-bangkok",
+      "snippet": "Sep 2, 2026 · What’s the fastest flight time from Dhaka to Bangkok? The fastest flight time for direct flights from Dhaka to Bangkok is …"
+    },
+    {
+      "title": "Dhaka to Bangkok Air Ticket Price - Up to 18% Discount",
+      "url": "https://gozayaan.com/route/dhaka-to-bangkok-air-ticket-price",
+      "snippet": "The one-way ticket price for US-Bangla Airlines flights operating from Dhaka To Bangkok starts at BDT 28,410 and goes up to BDT …"
+    },
+    {
+      "title": "Dhaka to Bangkok Air Ticket Price: Cheap Flight Deals - sharetrip",
+      "url": "https://sharetrip.net/flight-routes/dhaka-to-bangkok-air-ticket-price",
+      "snippet": "Currently, 15 airlines are active on the Dhaka to Bangkok route, each offering different cabin classes and facilities. Compare fares …"
+    },
+    {
+      "title": "Dhaka to Bangkok Flights, Fares @ BDT 926 | MakeMyTrip INTL Flights",
+      "url": "https://www.makemytrip.global/international-flights/bangladesh/dhaka-bangkok-cheap-airtickets.html",
+      "snippet": "Need information on Dhaka to Bangkok airfare? The minimum airfare for a Dhaka to Bangkok flight would be undefined, which may …"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "argos1111/modernbert-ja-310m-jev",
+  "slug": "argos1111-modernbert-ja-310m-jev",
+  "author": "argos1111",
+  "url": "https://huggingface.co/argos1111/modernbert-ja-310m-jev",
+  "created_at": "2026-09-19T16:35:01.000Z",
+  "updated_at": "2026-09-19T16:35:38.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "text-classification",
+    "cross-encoder",
+    "japanese",
+    "jev-local",
+    "ja",
+    "dataset:yahoojapan/JGLUE",
+    "dataset:osekilab/JCoLA",
+    "dataset:Language-Media-Lab/commonsense-moral-ja",
+    "dataset:AmazonScience/massive",
+    "base_model:sbintuitions/modernbert-ja-310m",
+    "base_model:finetune:sbintuitions/modernbert-ja-310m",
+    "license:cc-by-sa-4.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 5,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 315203329,
+  "parameters_human": "315.2M",
+  "storage_bytes": 1260829436,
+  "storage_human": "1.3 GB",
+  "base_model": "sbintuitions/modernbert-ja-310m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Restaurant ef16 Wien 1010 – Fine Dining & Wiener Schnitzel im 1.",
+      "url": "https://www.ef16.at/",
+      "snippet": "ef16 ist dein Restaurant in 1010 Wien am Fleischmarkt – mit Fine Dining, Wiener Schnitzel vom Kalb, saisonalem Menü und stilvollem …"
+    },
+    {
+      "title": "ef16 - Restaurant - Wien - 2026 - Gault&Millau",
+      "url": "https://www.gaultmillau.at/restaurant/ef16",
+      "snippet": "Dieses Restaurant ist nicht leicht zu finden, weil nicht an der Straßenfront gelegen, sondern im Innenhof. Die Karte verspricht viel und …"
+    },
+    {
+      "title": "Menü ef16 Wien – Fine Dining, Wiener Schnitzel & Chef’s Choice in ...",
+      "url": "https://www.ef16.at/menue",
+      "snippet": "Entdecke das Menü im ef16 in Wien: Wiener Schnitzel vom Kalb, Fine Dining, saisonale Gerichte, Dessert und Chef’s Choice Menü. …"
+    },
+    {
+      "title": "ef16 Restaurant Weinbar - Wien",
+      "url": "https://www.restauranttester.at/ef16-restaurant-weinbar.html",
+      "snippet": "5 days ago · ef16 Restaurant Weinbar in Wien 1010, Fleischmarkt 16. Küche: Wiener Küche, Italienisch. Finde Bewertungen, Fotos, …"
+    },
+    {
+      "title": "ef16 in Wien - Bewertungen, Speisekarte und Preise | TheFork",
+      "url": "https://www.thefork.at/restaurant/ef16-r596839",
+      "snippet": "Das Restaurant ef16 bietet eine elegante und historische Location im Herzen Wiens, die eine entspannte und romantische …"
+    }
+  ]
+}

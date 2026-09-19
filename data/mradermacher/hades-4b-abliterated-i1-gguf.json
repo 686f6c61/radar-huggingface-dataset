@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Hades-4B-Abliterated-i1-GGUF",
+  "slug": "mradermacher-hades-4b-abliterated-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Hades-4B-Abliterated-i1-GGUF",
+  "created_at": "2026-09-19T16:25:37.000Z",
+  "updated_at": "2026-09-19T21:40:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "abliterated",
+    "soft-refusal",
+    "experimental",
+    "pluto-ai-labs",
+    "qwen3",
+    "research",
+    "en",
+    "base_model:Pluto-AI-Labs/Hades-4B-Abliterated",
+    "base_model:quantized:Pluto-AI-Labs/Hades-4B-Abliterated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 48024056192,
+  "storage_human": "48.0 GB",
+  "base_model": "Pluto-AI-Labs/Hades-4B-Abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Quote of the Day - BrainyQuote",
+      "url": "https://www.brainyquote.com/quote_of_the_day",
+      "snippet": "17 hours ago · Share five inspirational Quotes of the Day with friends on Facebook, Twitter, and blogs. Enjoy our Brainy, Funny, …"
+    },
+    {
+      "title": "Bing",
+      "url": "https://www.bing.com/copilotsearch?q=quotes+of+the+day",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "Quote of the Day — A Fresh Thought for Today",
+      "url": "https://bingquiz.com/quote-of-the-day/",
+      "snippet": "Aug 14, 2026 · Start today with a meaningful quote chosen to spark a positive thought, fresh perspective, or little moment of …"
+    },
+    {
+      "title": "Citation du Jour – Une pensée inspirante pour éveiller la journée",
+      "url": "https://citationdujour.fr/",
+      "snippet": "17 hours ago · Un peuple qui ne connaît pas son passé, ses origines et sa culture ressemble à un arbre sans racines. Combat le …"
+    },
+    {
+      "title": "Citation du jour, 100 000 citations & proverbes à partager",
+      "url": "https://citations.ouest-france.fr/",
+      "snippet": "17 hours ago · Inspirez-vous des plus belles citations pour la célébrer. 21 Septembre 2026. Nous avons organisé les citations que …"
+    }
+  ]
+}

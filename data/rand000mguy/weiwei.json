@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Rand000mGuy/weiwei",
+  "slug": "rand000mguy-weiwei",
+  "author": "Rand000mGuy",
+  "url": "https://huggingface.co/Rand000mGuy/weiwei",
+  "created_at": "2026-09-19T15:00:50.000Z",
+  "updated_at": "2026-09-19T15:00:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 344470231,
+  "storage_human": "344 MB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "重装机兵全战车获取方法 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/9158e000ffb56ba254122882.html",
+      "snippet": "Feb 28, 2019 · 重装机兵全战车获取方法,重装机兵是一款1991年发布于FC平台的一款经典RPG游戏，战车系统为本作最大特色，本篇 …"
+    },
+    {
+      "title": "重装机兵XNEO攻略 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/925f8cb8b262e6c0dde056ce.html",
+      "snippet": "Jun 10, 2018 · 重装机兵XNEO攻略,在我们的游戏生活中那，如何操作上述标题的小问题，小编今天就在这里给大家分享一点我的小经 …"
+    },
+    {
+      "title": "如何评价《重装机兵XNEO》? - 知乎",
+      "url": "https://www.zhihu.com/question/276225284",
+      "snippet": "May 7, 2018 · 知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知 …"
+    },
+    {
+      "title": "如何评价酷比魔方4月底发布的X Neo平板电脑？ - 知乎",
+      "url": "https://www.zhihu.com/question/395656666",
+      "snippet": "May 18, 2020 · 酷比魔方X Neo外观 目前酷比魔方X Neo平板电脑仅提供白色版本，搭载10.5英寸的Super AMOLED屏幕，左右边框控 …"
+    },
+    {
+      "title": "CAD怎样取消选择集？ - 百度经验",
+      "url": "https://jingyan.baidu.com/article/9113f81b4053262b3314c748.html",
+      "snippet": "Sep 17, 2018 · 在CAD中单击选择一个对象或者选择几条相交的直线，总会弹出选择集对话框，如下图。"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "xtools-at/SmolMed3-3B-GGUF",
+  "slug": "xtools-at-smolmed3-3b-gguf",
+  "author": "xtools-at",
+  "url": "https://huggingface.co/xtools-at/SmolMed3-3B-GGUF",
+  "created_at": "2026-09-19T19:40:46.000Z",
+  "updated_at": "2026-09-19T22:04:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "question-answering",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "smollm3",
+    "llama.cpp",
+    "llama-cpp",
+    "smollm",
+    "heretic",
+    "question-answering",
+    "en",
+    "dataset:mamachang/medical-reasoning",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3075098624,
+  "parameters_human": "3.08B",
+  "storage_bytes": 9038657792,
+  "storage_human": "9.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "xTool France | Machines de Gravure, Découpe, Soudure & DTF",
+      "url": "https://fr.xtool.com/",
+      "snippet": "Boostez votre créativité avec xTool. Gamme complète de lasers (CO2, Diode, Fibre), soudeuses et DTF. Des outils simples et …"
+    },
+    {
+      "title": "Votre panier",
+      "url": "https://fr.xtool.com/cart",
+      "snippet": "Boostez votre créativité avec xTool. Gamme complète de lasers (CO2, Diode, Fibre), soudeuses et DTF. Des outils simples et …"
+    },
+    {
+      "title": "xTool | Laser Cutter, Engraver, Welder & DTF Printer",
+      "url": "https://www.xtool.com/",
+      "snippet": "xTool is the industry-leading brand for digital fabrication. Find top-quality innovative tools, including (CO2, fiber, diode) laser cutters, …"
+    },
+    {
+      "title": "xTool Europe Store | Laser Cutter, Engraver, Welder & DTF Printer",
+      "url": "https://www.xtool.eu/fr",
+      "snippet": "xTool is the industry-leading brand for digital fabrication. Find top-quality innovative tools, including (CO2, fiber, diode) laser cutters, …"
+    },
+    {
+      "title": "xTool Studio Desktop",
+      "url": "https://www.xtool.com/pages/software",
+      "snippet": "Download xTool Studio for desktop — free AI-powered design software for all xTool machines. Includes smart tools, 7,000+ assets, …"
+    }
+  ]
+}

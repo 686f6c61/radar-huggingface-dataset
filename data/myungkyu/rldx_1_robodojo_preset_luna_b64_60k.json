@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Myungkyu/rldx_1_robodojo_preset_luna_b64_60k",
+  "slug": "myungkyu-rldx_1_robodojo_preset_luna_b64_60k",
+  "author": "Myungkyu",
+  "url": "https://huggingface.co/Myungkyu/rldx_1_robodojo_preset_luna_b64_60k",
+  "created_at": "2026-09-19T14:14:35.000Z",
+  "updated_at": "2026-09-19T14:15:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "RLDX-1",
+    "robotics",
+    "vla",
+    "robodojo",
+    "dataset:Myungkyu/RoboDojo-preset-luna",
+    "base_model:RLWRLD/RLDX-1-PT",
+    "base_model:finetune:RLWRLD/RLDX-1-PT",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6912896320,
+  "parameters_human": "6.91B",
+  "storage_bytes": 13825892072,
+  "storage_human": "13.8 GB",
+  "base_model": "RLWRLD/RLDX-1-PT",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KBC Touch: Online banking voor ondernemers/zelfstandigen - KBC …",
+      "url": "https://www.kbc.be/ondernemen/nl/product/betalen-en-betaald-worden/online-bankieren/computer/touch-voor-ondernemers.html",
+      "snippet": "Ben je zelfstandige en wil je je bankzaken graag online regelen? Via KBC Touch beheer je je persoonlijke en zakelijke betalingen in …"
+    },
+    {
+      "title": "KBC Touch: online banking op je pc - KBC Bank & Verzekering",
+      "url": "https://www.kbc.be/particulieren/nl/product/betalen/zelf-bankieren/met-je-pc/touch.html",
+      "snippet": "Met KBC Touch kun je vlot en veilig online bankieren op je pc. Het is de ideale oplossing als je op zoek bent naar een duidelijk …"
+    },
+    {
+      "title": "Hoe kunnen we je helpen? - KBC Bank & Verzekering",
+      "url": "https://www.kbc.be/particulieren/nl.html",
+      "snippet": "Op onze website kun je je aanmelden in KBC Touch en vind je alle info over zicht- en spaarrekeningen, leningen, hypotheek en …"
+    },
+    {
+      "title": "Mobiel bankieren met KBC Mobile - KBC Bank & Verzekering",
+      "url": "https://www.kbc.be/particulieren/nl/product/betalen/zelf-bankieren/met-je-smartphone/mobile/starten-met-kbc-mobile.html",
+      "snippet": "Download de mobile banking app van KBC en beheer je rekeningen vlot, eenvoudig en waar en wanneer je wilt."
+    },
+    {
+      "title": "itsme: overal veilig inloggen met 1 code - KBC Bank & Verzekering",
+      "url": "https://www.kbc.be/particulieren/nl/product/betalen/zelf-bankieren/itsme.html",
+      "snippet": "itsme® is een gratis app voor je smartphone waarmee je je veilig en snel kunt aanmelden, registreren, tekenen en betalen bij heel …"
+    }
+  ]
+}

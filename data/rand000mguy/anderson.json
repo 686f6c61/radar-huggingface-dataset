@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Rand000mGuy/anderson",
+  "slug": "rand000mguy-anderson",
+  "author": "Rand000mGuy",
+  "url": "https://huggingface.co/Rand000mGuy/anderson",
+  "created_at": "2026-09-19T15:21:12.000Z",
+  "updated_at": "2026-09-19T15:21:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 457992293,
+  "storage_human": "458 MB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Live Stream Kostenlos Ohne Anmeldung - Schöner Fernsehen",
+      "url": "https://www.2ix2.com/meist-kommentierte-tv-sender/",
+      "snippet": "5 Kommentare MDR Fernsehen 10 Kommentare WDR Fernsehen 31 Kommentare BR Fernsehen 9 Kommentare"
+    },
+    {
+      "title": "Sixx Live Stream Kostenlos Ohne Anmeldung - Schöner Fernsehen",
+      "url": "https://www.2ix2.com/sixx/",
+      "snippet": "Sixx Live Stream. Sehen sie Kostenlos und Ohne Anmeldung Sixx Live Stream. Sixx Live. Sixx Live Stream HD, Sixx live stream free."
+    },
+    {
+      "title": "Comedy Central Live Stream Kostenlos Ohne Anmeldung - Schöner …",
+      "url": "https://www.2ix2.com/comedy-central/",
+      "snippet": "Comedy Central ist ein passender TV-Sender für South Park. Die offizielle South Park Serie kannst du Kostenlos und ohne …"
+    },
+    {
+      "title": "ORF3 Live Stream Kostenlos Ohne Anmeldung - Schöner Fernsehen",
+      "url": "https://www.2ix2.com/orf3/",
+      "snippet": "Jetzt Kostenlos und ohne Anmeldung mit einem klick können sie Orf 3 Live Stream auf ihrem PC, Tablet oder Handy anschauen. …"
+    },
+    {
+      "title": "SRF 1 Live Stream Kostenlos Ohne Anmeldung - Schöner Fernsehen",
+      "url": "https://www.2ix2.com/srf-1/",
+      "snippet": "Unsere webseite bietet seinen Besucher Kostenlos SRF 1 Live Stream im Internet anzuschauen. Egal ob sie in Deutschland, …"
+    }
+  ]
+}

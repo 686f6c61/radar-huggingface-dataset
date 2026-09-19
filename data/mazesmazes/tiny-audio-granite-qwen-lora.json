@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "mazesmazes/tiny-audio-granite-qwen-lora",
+  "slug": "mazesmazes-tiny-audio-granite-qwen-lora",
+  "author": "mazesmazes",
+  "url": "https://huggingface.co/mazesmazes/tiny-audio-granite-qwen-lora",
+  "created_at": "2026-09-19T16:39:11.000Z",
+  "updated_at": "2026-09-19T21:54:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "asr_model",
+    "feature-extraction",
+    "custom_code",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 122347008,
+  "parameters_human": "122.3M",
+  "storage_bytes": 1417593978,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Die HP Smart App lässt sich auf meinem Surface Pro 9 nicht starten ...",
+      "url": "https://www.windows-10-forum.com/threads/die-hp-smart-app-laesst-sich-auf-meinem-surface-pro-9-nicht-starten-woran-liegt-das.181450/",
+      "snippet": "Ich habe ein Surface Pro 9 und seit ein paar Tagen lässt sich meine HP Smart App nicht mehr starten. Wenn ich sie anklicke, startet …"
+    },
+    {
+      "title": "WHEA_UNCORRECTABLE_ERROR",
+      "url": "https://www.windows-10-forum.com/threads/whea_uncorrectable_error.52845/",
+      "snippet": "Jan 7, 2017 · WHEA_UNCORRECTABLE_ERROR Helfe beim Thema WHEA_UNCORRECTABLE_ERROR in Windows 10 Support …"
+    },
+    {
+      "title": "Win 10 Lautsprecher",
+      "url": "https://www.windows-10-forum.com/threads/win-10-lautsprecher.103219/",
+      "snippet": "May 18, 2019 · Win 10 Lautsprecher Helfe beim Thema Win 10 Lautsprecher in Windows 10 Allgemeines um eine Lösung zu finden; …"
+    },
+    {
+      "title": "Mausbewegung in Minecraft komisch?",
+      "url": "https://www.windows-10-forum.com/threads/mausbewegung-in-minecraft-komisch.152270/",
+      "snippet": "Sep 1, 2021 · Mausbewegung in Minecraft komisch? Helfe beim Thema Mausbewegung in Minecraft komisch? in Windows 10 …"
+    },
+    {
+      "title": "wo werden cookie bei Edge abgelegt - Windows 10 Forum",
+      "url": "https://www.windows-10-forum.com/threads/wo-werden-cookie-bei-edge-abgelegt.95284/",
+      "snippet": "Oct 21, 2016 · wo werden cookie bei Edge abgelegt Helfe beim Thema wo werden cookie bei Edge abgelegt in Microsoft Edge um …"
+    }
+  ]
+}

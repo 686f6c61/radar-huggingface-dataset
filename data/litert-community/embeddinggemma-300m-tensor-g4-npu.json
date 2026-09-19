@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "litert-community/EmbeddingGemma-300M-Tensor-G4-NPU",
+  "slug": "litert-community-embeddinggemma-300m-tensor-g4-npu",
+  "author": "litert-community",
+  "url": "https://huggingface.co/litert-community/EmbeddingGemma-300M-Tensor-G4-NPU",
+  "created_at": "2026-09-19T14:32:14.000Z",
+  "updated_at": "2026-09-19T14:35:55.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "litert-lm",
+  "languages": [],
+  "tags": [
+    "litert-lm",
+    "tflite",
+    "litertlm",
+    "embeddinggemma",
+    "embeddings",
+    "feature-extraction",
+    "sentence-similarity",
+    "rag",
+    "npu",
+    "edge-tpu",
+    "tensor-g4",
+    "pixel",
+    "on-device",
+    "termux",
+    "mcp",
+    "base_model:google/embeddinggemma-300m",
+    "base_model:quantized:google/embeddinggemma-300m",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 575239704,
+  "storage_human": "575 MB",
+  "base_model": "google/embeddinggemma-300m",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to See All Bing Related Searches on Any Device",
+      "url": "https://rottenwifi.com/how-to-see-all-bing-related-searches/",
+      "snippet": "Jul 1, 2026 · This guide walks through the practical ways to see Bing related searches on desktop, mobile, and Microsoft Edge. It also …"
+    },
+    {
+      "title": "Bing",
+      "url": "https://www.bing.com/version",
+      "snippet": "Bing ... Versions"
+    },
+    {
+      "title": "How to See All Bing Related Searches - cloudspress.com",
+      "url": "https://www.cloudspress.com/how-to-see-all-bing-related-searches/",
+      "snippet": "Aug 7, 2026 · Bing does not have a public “see everything” page for a keyword. Its related searches and autocomplete suggestions …"
+    },
+    {
+      "title": "Bing",
+      "url": "https://www.bing.com/set/search",
+      "snippet": "Set Bing as your default search engine Try it now"
+    },
+    {
+      "title": "How To See All Bing Related Searches - RottenWifi.com Blog",
+      "url": "https://blog.rottenwifi.com/how-to-see-all-bing-related-searches/",
+      "snippet": "Jul 2, 2026 · There is no single button that reveals every Bing related search. The closest practical method is to combine Bing’s …"
+    }
+  ]
+}

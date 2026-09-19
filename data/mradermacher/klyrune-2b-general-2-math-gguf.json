@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Klyrune-2B-General-2-Math-GGUF",
+  "slug": "mradermacher-klyrune-2b-general-2-math-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Klyrune-2B-General-2-Math-GGUF",
+  "created_at": "2026-09-19T17:32:10.000Z",
+  "updated_at": "2026-09-19T17:48:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:Jahirrrr/Klyrune-2B-General-2-Math",
+    "base_model:quantized:Jahirrrr/Klyrune-2B-General-2-Math",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 22763609856,
+  "storage_human": "22.8 GB",
+  "base_model": "Jahirrrr/Klyrune-2B-General-2-Math",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ctrl + Home/End Not Working Notepad Win10 - Windows 10 Forums",
+      "url": "https://www.tenforums.com/software-apps/45855-ctrl-home-end-not-working-notepad-win10.html",
+      "snippet": "Apr 1, 2016 · Ctrl + Home/End Not Working Notepad Win10 Installed Win10 on my PC. Everything works perfect except this. I use my …"
+    },
+    {
+      "title": "Find and Replace Text in Notepad in Windows 10 | Tutorials",
+      "url": "https://www.tenforums.com/tutorials/114308-find-replace-text-notepad-windows-10-a.html",
+      "snippet": "May 12, 2021 · Notepad is a simple text editor included in Windows and a basic text-editing program which enables computer users …"
+    },
+    {
+      "title": "Drag and Drop txt to Notepad won't work - Windows 10 Help Forums",
+      "url": "https://www.tenforums.com/software-apps/21320-drag-drop-txt-notepad-wont-work.html",
+      "snippet": "Sep 5, 2015 · Drag and Drop txt to Notepad won't work Normally, if I have notepad open, I would be able to click and drag an …"
+    },
+    {
+      "title": "Win 10 Notepad and Settings - Windows 10 Help Forums",
+      "url": "https://www.tenforums.com/software-apps/66562-win-10-notepad-settings.html",
+      "snippet": "Oct 11, 2016 · Hi not very tech savvy so bear with me. Recently had new Win 10 re-installed on existing laptop and now can't find any …"
+    },
+    {
+      "title": "Notepad problem Solved - Windows 10 Forums",
+      "url": "https://www.tenforums.com/general-support/103814-notepad-problem.html",
+      "snippet": "Feb 6, 2018 · This may help you Move Off-Screen Window back On-Screen in Windows 10 General Tips Tutorials How to Move a …"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "DraconicDragon/pixai-tagger-v1.0-mixed-bf16",
+  "slug": "draconicdragon-pixai-tagger-v1-0-mixed-bf16",
+  "author": "DraconicDragon",
+  "url": "https://huggingface.co/DraconicDragon/pixai-tagger-v1.0-mixed-bf16",
+  "created_at": "2026-09-19T12:17:20.000Z",
+  "updated_at": "2026-09-19T12:32:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "cls_vitdet",
+    "feature-extraction",
+    "multi-label",
+    "anime",
+    "tagger",
+    "danbooru",
+    "sam3",
+    "image-classification",
+    "custom_code",
+    "base_model:pixai-labs/pixai-tagger-v1.0",
+    "base_model:quantized:pixai-labs/pixai-tagger-v1.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 486346909,
+  "parameters_human": "486.3M",
+  "storage_bytes": 1036029932,
+  "storage_human": "1.0 GB",
+  "base_model": "pixai-labs/pixai-tagger-v1.0",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bubble Shooter kostenlos online spielen",
+      "url": "https://www.shooter-bubble.de/",
+      "snippet": "Bubble Shooter ist eines der beliebtesten Onlinespiele, bei uns kannst Du das Game kostenlos und ohne Anmeldung spielen. Viel …"
+    },
+    {
+      "title": "Bubble Shooter 3 kostenlos online spielen",
+      "url": "https://www.shooter-bubble.de/bubble-shooter-3.php",
+      "snippet": "Bubble Shooter 3 ist die neuste Version des beliebten Browserspiels. Bei uns kannst Du Bubble Shooter 3 kostenlos und ohne …"
+    },
+    {
+      "title": "Puzzle Bobble kostenlos online spielen - Shooter-Bubble.de",
+      "url": "https://www.shooter-bubble.de/puzzle-bobble.php",
+      "snippet": "Puzzle Bobble ist ein Spieleklassiker und die Vorlage für das beliebte Bubble Shooter. Bei uns kannst Du Puzzle Bobble kostenlos …"
+    },
+    {
+      "title": "Number Lines spielen - Shooter-Bubble.de",
+      "url": "https://www.shooter-bubble.de/number-lines.php",
+      "snippet": "Number Lines ist neben Bubble Shooter eines der großen Kultspiele im Internet. Man zielt mit einer Kanone, die einzelne Bälle …"
+    },
+    {
+      "title": "Shooter-Bubble.de",
+      "url": "https://www.shooter-bubble.de/ads.php",
+      "snippet": "ownerdomain=protomedia.org managerdomain=traffective.com google.com, pub-7095332606745705, RESELLER, f08c47fec0942fa0 …"
+    }
+  ]
+}

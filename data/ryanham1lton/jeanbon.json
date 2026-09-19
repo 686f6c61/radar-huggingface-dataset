@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/JeanBon",
+  "slug": "ryanham1lton-jeanbon",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/JeanBon",
+  "created_at": "2026-09-19T15:55:59.000Z",
+  "updated_at": "2026-09-19T15:57:51.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 139361922,
+  "storage_human": "139 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Differences in tractor performance parameters between single ...",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0022489815000518",
+      "snippet": "Aug 1, 2015 · Comparison of the performance of a tractor with single-wheel 4WD and 2WD and dual-wheel 2WD driving systems due …"
+    },
+    {
+      "title": "Differences in tractor performance parameters between single ...",
+      "url": "https://www.researchgate.net/publication/278743244_Differences_in_tractor_performance_parameters_between_single-wheel_4WD_and_dual-wheel_2WD_driving_systems",
+      "snippet": "Jun 15, 2015 · In this research, the traction performance of tractors with different driving systems (four-wheel drive, rear wheel drive, …"
+    },
+    {
+      "title": "DESIGN AND EXPERIMENT OF DOUBLE-ROW WHEEL SELF ... - Inmateh",
+      "url": "https://api.inmateh.eu/public/uploads/73-60-N1322-Wenyu-TONGab809ef1-b961-40cc-b613-18d5120e4937.pdf",
+      "snippet": "INTRODUCTION1 s one of the staple vegetables in China. It has a wide range of cultivation areas. Because of its cold resistance, …"
+    },
+    {
+      "title": "Single-motor vs Dual-motor Drive Systems - allpcb.com",
+      "url": "https://www.allpcb.com/allelectrohub/single-motor-vs-dual-motor-drive-systems",
+      "snippet": "Sep 24, 2025 · Under prolonged high-speed operation, a single motor typically experiences higher temperatures and stresses, which …"
+    },
+    {
+      "title": "Performance evaluation of twin-row planter for maize crop",
+      "url": "https://www.academia.edu/126916737/Performance_evaluation_of_twin_row_planter_for_maize_crop",
+      "snippet": "A mini tractor drawn twin-row planter was developed and performance was evaluated for maize crop. Two metering mechanisms, …"
+    }
+  ]
+}

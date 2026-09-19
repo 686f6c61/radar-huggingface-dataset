@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "albtad01/STHELAR-Adapt-CellViT-256-x40",
+  "slug": "albtad01-sthelar-adapt-cellvit-256-x40",
+  "author": "albtad01",
+  "url": "https://huggingface.co/albtad01/STHELAR-Adapt-CellViT-256-x40",
+  "created_at": "2026-09-19T15:59:43.000Z",
+  "updated_at": "2026-09-20T20:08:09.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-segmentation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "histopathology",
+    "cellvit",
+    "parameter-efficient-fine-tuning",
+    "nuclei-instance-segmentation",
+    "spatial-transcriptomics",
+    "research-only",
+    "image-segmentation",
+    "en",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 57070464,
+  "storage_human": "57 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "New fonts | dafont.com",
+      "url": "https://www.dafont.com/new.php",
+      "snippet": "Archive of freely downloadable fonts. Browse by alphabetical listing, by style, by author or by popularity."
+    },
+    {
+      "title": "Gothic fonts | dafont.com",
+      "url": "https://www.dafont.com/mtheme.php?id=4",
+      "snippet": "Archive of freely downloadable fonts. Browse by alphabetical listing, by style, by author or by popularity."
+    },
+    {
+      "title": "TikTok - forum | dafont.com",
+      "url": "https://www.dafont.com/forum/read/433322/tiktok",
+      "snippet": "Mar 28, 2020 · Archive of freely downloadable fonts. Browse by alphabetical listing, by style, by author or by popularity."
+    },
+    {
+      "title": "Tiktok | dafont.com",
+      "url": "https://www.dafont.com/es/tiktok.font",
+      "snippet": "May 9, 2021 · Tiktok | dafont.com Free for personal Used for Commercial Used plase contact me : lettercornerstudio@gmail.com"
+    },
+    {
+      "title": "Bad Boys Font | dafont.com",
+      "url": "https://www.dafont.com/bad-boys.font",
+      "snippet": "Jan 18, 2011 · Download the Bad Boys font for personal use from dafont.com."
+    }
+  ]
+}

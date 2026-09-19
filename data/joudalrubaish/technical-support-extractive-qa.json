@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "JoudAlrubaish/technical-support-extractive-qa",
+  "slug": "joudalrubaish-technical-support-extractive-qa",
+  "author": "JoudAlrubaish",
+  "url": "https://huggingface.co/JoudAlrubaish/technical-support-extractive-qa",
+  "created_at": "2026-09-19T14:32:50.000Z",
+  "updated_at": "2026-09-19T14:33:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "question-answering",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "question-answering",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66364418,
+  "parameters_human": "66.4M",
+  "storage_bytes": 265470032,
+  "storage_human": "265 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "14-daagse weersverwachting Orihuela | Meteovista",
+      "url": "https://www.meteovista.be/Europa/Spanje/Orihuela/4128655/weersverwachting-14dagen",
+      "snippet": "16 hours ago · De 14-daagse weersverwachting toont het weer voor de komende tijd voor Orihuela. Je kan hier onder andere de …"
+    },
+    {
+      "title": "Weer Orihuela - Meerdaagse weersverwachting Orihuela | Meteovista",
+      "url": "https://www.meteovista.be/Europa/Spanje/Orihuela/4128655",
+      "snippet": "Mar 11, 2026 · Actueel weerbericht en weersverwachting tot 14 dagen vooruit voor Orihuela. Temperatuur Orihuela Regenradar"
+    },
+    {
+      "title": "Weer Orihuela - Vandaag - Morgen - 14 dagen | Weerplaza.nl",
+      "url": "https://www.weerplaza.nl/wereldweer/europa/spanje/orihuela/15103/",
+      "snippet": "Mar 8, 2025 · De uitgebreide weersverwachting voor Orihuela. We tonen het actuele weer per uur tot 48 uur vooruit, het weerbericht …"
+    },
+    {
+      "title": "Weer Orihuela, Spanje - 14 dagen - ️ Worldmeteo",
+      "url": "https://www.worldmeteo.info/nl/europa/spanje/orihuela/weer-125203/",
+      "snippet": "Weersverwachting tot 14 dagen vooruit voor Orihuela, Spanje. ☀️🌧️ Bekijk het actuele weer, weerbericht en klimaatgegevens voor …"
+    },
+    {
+      "title": "Buienradar.be - Weersverwachting voor Orihuela",
+      "url": "https://www.buienradar.be/weer/orihuela/es/2513076",
+      "snippet": "Kort weerbericht Orihuela Een mix van zon en vriendelijke stapelwolken voor Orihuela. De temperatuur loopt op naar 29 graden. Er …"
+    }
+  ]
+}

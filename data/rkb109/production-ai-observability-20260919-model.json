@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "RKB109/production-ai-observability-20260919-model",
+  "slug": "rkb109-production-ai-observability-20260919-model",
+  "author": "RKB109",
+  "url": "https://huggingface.co/RKB109/production-ai-observability-20260919-model",
+  "created_at": "2026-09-19T16:31:07.000Z",
+  "updated_at": "2026-09-19T16:31:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "custom",
+  "languages": [],
+  "tags": [
+    "custom",
+    "synthetic-data",
+    "transparent-baseline",
+    "ai-observability",
+    "text-classification",
+    "token-classification",
+    "summarization",
+    "zero-shot-classification",
+    "dataset:RKB109/production-ai-observability-20260919-dataset",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Deinen YouTube Music Recap ansehen",
+      "url": "https://support.google.com/youtubemusic/answer/11418178?hl=de&co=GENIE.Platform%3DAndroid",
+      "snippet": "Deinen YouTube Music Recap ansehen Deine Recaps enthalten personalisierte Playlists und Statistiken zu deinen Top-Songs, …"
+    },
+    {
+      "title": "Souscrire un abonnement à YouTube Premium ou à YouTube Music …",
+      "url": "https://support.google.com/youtubemusic/answer/6305537?hl=fr-CA&co=GENIE.Platform%3DDesktop",
+      "snippet": "Souscrire un abonnement à YouTube Premium ou à YouTube Music Premium Amplifiez votre expérience vidéo et musicale sur …"
+    },
+    {
+      "title": "查看、刪除或暫停觀看記錄 - YouTube Music說明",
+      "url": "https://support.google.com/youtubemusic/answer/6364666?hl=zh-Hant",
+      "snippet": "歡迎訂閱 YouTube 說明頻道，掌握最新消息、動態和實用提示。 暫停追蹤觀看記錄 暫停觀看記錄後，你收看的影片都不會出現在觀 …"
+    },
+    {
+      "title": "將音樂下載至 SD 卡 - YouTube Music說明 - Google Help",
+      "url": "https://support.google.com/youtubemusic/answer/9088490?hl=zh-Hant",
+      "snippet": "你可以將 YouTube Music 應用程式的歌曲下載至 SD 卡，也可以利用「下載」按鈕 ，將歌曲存到手機的內部記憶體中。"
+    },
+    {
+      "title": "Ayuda de YouTube Music",
+      "url": "https://support.google.com/youtubemusic/?hl=es-419",
+      "snippet": "Centro de asistencia oficial de YouTube Music donde puedes encontrar sugerencias y tutoriales para aprender a utilizar el producto y …"
+    }
+  ]
+}

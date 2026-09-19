@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "foremost02/lora_cxxvi_dpo_5",
+  "slug": "foremost02-lora_cxxvi_dpo_5",
+  "author": "foremost02",
+  "url": "https://huggingface.co/foremost02/lora_cxxvi_dpo_5",
+  "created_at": "2026-09-19T18:00:07.000Z",
+  "updated_at": "2026-09-19T19:31:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "dpo",
+    "trl",
+    "arxiv:2305.18290",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8114161566,
+  "storage_human": "8.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bayreuth - Nordbayerischer Kurier",
+      "url": "https://www.kurier.de/bayreuth",
+      "snippet": "18 hours ago · Heute vor 25 Jahren im Kurier: Bayreuth setzt ein Zeichen des Gedenkens nach den Anschlägen in den USA und bei …"
+    },
+    {
+      "title": "Nachrichten aus Oberfranken - Nordbayerischer Kurier",
+      "url": "https://www.kurier.de/",
+      "snippet": "Das Regionalportal der Tageszeitung Nordbayerischer Kurier mit den wichtigsten Nachrichten und Bildern aus Bayreuth, Pegnitz, …"
+    },
+    {
+      "title": "Bayern - Nordbayerischer Kurier",
+      "url": "https://www.kurier.de/bayern",
+      "snippet": "18 hours ago · Die wichtigsten lokalen Nachrichten und Bilder aus Bayern - aktuell und schnell von der Tageszeitung …"
+    },
+    {
+      "title": "Nordbayerischer Kurier",
+      "url": "https://zeitung.kurier.de/",
+      "snippet": "Der Nordbayerische Kurier bietet aktuelle Nachrichten, Berichte und Informationen aus Bayreuth, der Region und darüber hinaus."
+    },
+    {
+      "title": "Oberfranken - Nordbayerischer Kurier",
+      "url": "https://www.kurier.de/oberfranken",
+      "snippet": "Die wichtigsten lokalen Nachrichten und Bilder aus Oberfranken - aktuell und schnell von der Tageszeitung Nordbayerischer Kurier"
+    }
+  ]
+}

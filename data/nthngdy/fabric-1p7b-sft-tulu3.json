@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "nthngdy/fabric-1p7B-sft-tulu3",
+  "slug": "nthngdy-fabric-1p7b-sft-tulu3",
+  "author": "nthngdy",
+  "url": "https://huggingface.co/nthngdy/fabric-1p7B-sft-tulu3",
+  "created_at": "2026-09-19T14:47:57.000Z",
+  "updated_at": "2026-09-19T14:47:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "text-generation",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13707898680,
+  "storage_human": "13.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Atualização para o Windows 10 - Microsoft Community",
+      "url": "https://answers.microsoft.com/pt-br/msoffice/forum/all/atualiza%C3%A7%C3%A3o-para-o-windows-10/9f80ec23-1aba-4eef-b9ee-8d05aba28c21",
+      "snippet": "Recentemente comprei o pacote Office para o windows 8.1 e instalei no meu notebook, para a minha surpresa, logo depois disso …"
+    },
+    {
+      "title": "你的设备中缺少重要的安全和质量修复。 - Microsoft Community",
+      "url": "https://answers.microsoft.com/zh-hans/windows/forum/all/%E4%BD%A0%E7%9A%84%E8%AE%BE%E5%A4%87%E4%B8%AD/c67812a0-7e61-4815-b1a9-303ba006fe41",
+      "snippet": "May 2, 2021 · 你的设备中缺少重要的安全和质量修复。 - Microsoft Community 在下面选择所需的搜索范围 搜索社区 搜索社区和支持 …"
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/msoffice/forum/all/excel-and-sharepoint-web-parts-a-frustration/2cb9d082-c542-47fe-b705-e008a1667fa1",
+      "snippet": ""
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://www.answers.microsoft.com/ja-jp/windows/forum/apps_windows_10-msedge/microsoft-edge/252f30fb-a46d-48f1-9dff-46f1ebf7ddc1↑少し違うかもですが、マイクロソフトのコミュニティに書いてある方法を試して下さい。&gt;アプリのトラブルシューティングを実行してみると良さそうです。手順:[コントロールパネル]→[システムとセキュリティ]→[セキュリティとメンテナンス]→[トラブルシューティング]の順に開き、[すべて表示]を選択して&quot;Windowsストアアプリ&quot;の診断を行ってみてください。もし、上記の対処法を試してみてもうまくいかない場合は、ひとまず、有効な対処法が見つかるまではIEをかわりに使用されると良いと思います。",
+      "snippet": ""
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://www.answers.microsoft.com/ja-jp/windows/forum/all/ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â£ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¹Ãƒâ€¦Ã¢â‚¬Å“ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â£ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â½ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â£ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â³ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â£ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â³ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¥ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¾ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¦/30889ddf-e4d1-44c7-96de-5f83910f9be1",
+      "snippet": ""
+    }
+  ]
+}

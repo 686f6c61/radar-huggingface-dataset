@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen3-TTS-12Hz-0.6B-ar-GGUF",
+  "slug": "mradermacher-qwen3-tts-12hz-0-6b-ar-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen3-TTS-12Hz-0.6B-ar-GGUF",
+  "created_at": "2026-09-19T13:28:03.000Z",
+  "updated_at": "2026-09-19T13:29:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "en",
+    "ja",
+    "ko",
+    "de",
+    "fr",
+    "ru",
+    "pt",
+    "es",
+    "it"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "audio",
+    "tts",
+    "voice-clone",
+    "zh",
+    "en",
+    "ja",
+    "ko",
+    "de",
+    "fr",
+    "ru",
+    "pt",
+    "es",
+    "it",
+    "base_model:MahmoudIbrahim/Qwen3-TTS-12Hz-0.6B-ar",
+    "base_model:quantized:MahmoudIbrahim/Qwen3-TTS-12Hz-0.6B-ar",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 602341376,
+  "parameters_human": "602.3M",
+  "storage_bytes": 6403933184,
+  "storage_human": "6.4 GB",
+  "base_model": "MahmoudIbrahim/Qwen3-TTS-12Hz-0.6B-ar",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/?hl=pt-br",
+      "snippet": "Crie uma conta ou entre no Instagram: compartilhe seus interesses com as pessoas que entendem você."
+    },
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/?hl=en",
+      "snippet": "Create an account or log in to Instagram - Share what you're into with the people who get you."
+    },
+    {
+      "title": "Connecting People Through Everyday Moments | About Instagram",
+      "url": "https://about.instagram.com/about-us/",
+      "snippet": "Make the most of your Instagram experience by discovering new feature updates, tips, and tools to engage with your audience."
+    },
+    {
+      "title": "About Instagram: Features, Safety, Community & More",
+      "url": "https://about.instagram.com/",
+      "snippet": "Learn about Instagram: how the app works, key features, safety tools, teen accounts, parent resources, community programs, and …"
+    },
+    {
+      "title": "Help Center",
+      "url": "https://help.instagram.com/581066165581870",
+      "snippet": "Find help and support for Instagram, including account management, troubleshooting, and guidelines."
+    }
+  ]
+}

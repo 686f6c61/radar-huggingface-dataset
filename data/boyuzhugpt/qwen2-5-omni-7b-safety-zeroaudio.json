@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "boyuzhuGPT/Qwen2.5-Omni-7B-Safety-ZeroAudio",
+  "slug": "boyuzhugpt-qwen2-5-omni-7b-safety-zeroaudio",
+  "author": "boyuzhuGPT",
+  "url": "https://huggingface.co/boyuzhuGPT/Qwen2.5-Omni-7B-Safety-ZeroAudio",
+  "created_at": "2026-09-19T17:33:32.000Z",
+  "updated_at": "2026-09-19T21:34:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen2_5_omni",
+    "multimodal",
+    "safety",
+    "guardrail",
+    "vision-language",
+    "video",
+    "qwen2.5-omni",
+    "text-generation",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen2.5-Omni-7B",
+    "base_model:finetune:Qwen/Qwen2.5-Omni-7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 10732225408,
+  "parameters_human": "10.73B",
+  "storage_bytes": 21476441126,
+  "storage_human": "21.5 GB",
+  "base_model": "Qwen/Qwen2.5-Omni-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kryptowährungen kaufen & verkaufen mit der BISON App",
+      "url": "https://bisonapp.com/",
+      "snippet": "Mit BISON kannst du nicht nur Kryptowährungen, sondern auch über 2.500 Aktien und ETFs (börsengehandelte Fonds) kaufen. …"
+    },
+    {
+      "title": "Amerikanischer Bison – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Amerikanischer_Bison",
+      "snippet": "Der Amerikanische Bison (Bos bison, teilweise auch Bison bison), oft auch als Büffel (engl. buffalo) bezeichnet, ist ein in Nordamerika …"
+    },
+    {
+      "title": "BISON Web App",
+      "url": "https://trade.bisonapp.com/login",
+      "snippet": "Log in to the BISON Web App to trade cryptocurrencies, stocks, and ETFs on your browser with an award-winning platform for first …"
+    },
+    {
+      "title": "Bison - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Bison",
+      "snippet": "A bison (pl.: bison) is a large bovine in the genus Bison (from Greek, meaning 'wild ox' [2]) within the tribe Bovini. Two extant and …"
+    },
+    {
+      "title": "Kryptowährungen bei BISON handeln & Krypto-Kurswerte prüfen",
+      "url": "https://bisonapp.com/krypto/",
+      "snippet": "Mit BISON kannst du über 26 verschiedene Kryptowährungen kaufen und verkaufen. Ob Bitcoin, Ethereum oder Dogecoin. Zudem …"
+    }
+  ]
+}

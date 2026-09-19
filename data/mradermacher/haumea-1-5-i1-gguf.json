@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Haumea-1.5-i1-GGUF",
+  "slug": "mradermacher-haumea-1-5-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Haumea-1.5-i1-GGUF",
+  "created_at": "2026-09-19T17:52:14.000Z",
+  "updated_at": "2026-09-19T18:53:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "Haumea",
+    "Haumea AI",
+    "Haumea Labs",
+    "en",
+    "base_model:HaumeaAI/Haumea-1.5",
+    "base_model:quantized:HaumeaAI/Haumea-1.5",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7248023552,
+  "parameters_human": "7.25B",
+  "storage_bytes": 81826260896,
+  "storage_human": "81.8 GB",
+  "base_model": "HaumeaAI/Haumea-1.5",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fernsehprogramm heute abend 20:15 Uhr - TV SPIELFILM",
+      "url": "https://www.tvspielfilm.de/tv-programm/sendungen/abends.html",
+      "snippet": "Das TV-Programm heute abend ab 20.15 Aber unser Überblick über das Fernsehprogramm heute abend hört bei 20.15 noch nicht …"
+    },
+    {
+      "title": "TV Programm heute - TV heute - TV SPIELFILM",
+      "url": "https://www.tvspielfilm.de/tv-programm/",
+      "snippet": "Das aktuelle TV Programm von heute: Alle Infos zum Fernsehprogramm heute mit allen Fernsehsendern und Sendungen für Sie im …"
+    },
+    {
+      "title": "Jetzt im TV - Das aktuelle TV-Programm - TV SPIELFILM",
+      "url": "https://www.tvspielfilm.de/tv-programm/sendungen/jetzt.html",
+      "snippet": "Das aktuelle TV-Programm heute Wer seinen Blick in die rechte Spalte richtet, hat einen weiteren Vorteil bei TV SPIELFILM: Hier ist …"
+    },
+    {
+      "title": "Fernsehprogramm von heute - TV Programm - TV SPIELFILM",
+      "url": "https://www.tvspielfilm.de/",
+      "snippet": "Das TV Programm von heute: Das aktuelle Fernsehprogramm, Fernseh-Tipps und News rund um TV, Serien, Filme &amp; …"
+    },
+    {
+      "title": "Das ARTE TV-Programm von heute - TV SPIELFILM",
+      "url": "https://www.tvspielfilm.de/tv-programm/sendungen/arte,ARTE.html",
+      "snippet": "Das aktuelle ARTE TV-Programm, alle Sendungen und Sendetermine auf einen Blick - schnell, übersichtlich und kompakt bei TV …"
+    }
+  ]
+}

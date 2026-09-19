@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Misalignment-Empirics/jayesh_qwen2.5-7b-it_sycophantic-oct-sft-lora",
+  "slug": "misalignment-empirics-jayesh_qwen2-5-7b-it_sycophantic-oct-sft-lora",
+  "author": "Misalignment-Empirics",
+  "url": "https://huggingface.co/Misalignment-Empirics/jayesh_qwen2.5-7b-it_sycophantic-oct-sft-lora",
+  "created_at": "2026-09-19T19:33:26.000Z",
+  "updated_at": "2026-09-19T19:33:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "model-organism",
+    "character-training",
+    "persona:sycophantic",
+    "text-generation",
+    "conversational",
+    "arxiv:2511.01689",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 657397596,
+  "storage_human": "657 MB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to open WhatsApp using an Intent in your Android App",
+      "url": "https://stackoverflow.com/questions/38422300/how-to-open-whatsapp-using-an-intent-in-your-android-app",
+      "snippet": "If WhatsApp is not installed on the device, it will open a web browser to handle this. Nice!"
+    },
+    {
+      "title": "html - Web link to specific whatsapp contact - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/30344476/web-link-to-specific-whatsapp-contact",
+      "snippet": "May 20, 2015 · Learn how to create a web link to send a message to a specific WhatsApp contact using HTML and JavaScript on …"
+    },
+    {
+      "title": "Enviar mensagem para WhatsApp via site [fechada]",
+      "url": "https://pt.stackoverflow.com/questions/266518/enviar-mensagem-para-whatsapp-via-site",
+      "snippet": "Jan 3, 2018 · Estes exemplos podem ser usados por uma apicação \"web\" (website) tanto pelo acesso em um navegador desktop ou …"
+    },
+    {
+      "title": "Flutter open whatsapp with text message - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/60947937/flutter-open-whatsapp-with-text-message",
+      "snippet": "Mar 31, 2020 · I want to open whatsapp from my Flutter application and send a specific text string. I'll select who I send it to when I'm …"
+    },
+    {
+      "title": "Open whatsapp app from a link in a mobile web site?",
+      "url": "https://stackoverflow.com/questions/48443195/open-whatsapp-app-from-a-link-in-a-mobile-web-site",
+      "snippet": "Jan 25, 2018 · Is there any way to open whatsapp application from a website being in a mobile? I know if you use whatsapp:// you …"
+    }
+  ]
+}

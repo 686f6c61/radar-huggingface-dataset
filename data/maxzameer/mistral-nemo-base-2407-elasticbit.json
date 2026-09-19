@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "maxzameer/Mistral-Nemo-Base-2407-ElasticBit",
+  "slug": "maxzameer-mistral-nemo-base-2407-elasticbit",
+  "author": "maxzameer",
+  "url": "https://huggingface.co/maxzameer/Mistral-Nemo-Base-2407-ElasticBit",
+  "created_at": "2026-09-19T18:57:57.000Z",
+  "updated_at": "2026-09-19T22:39:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlbricks",
+  "languages": [],
+  "tags": [
+    "mlbricks",
+    "mistral",
+    "elasticbit",
+    "quantization",
+    "compression",
+    "base_model:mistralai/Mistral-Nemo-Base-2407",
+    "base_model:finetune:mistralai/Mistral-Nemo-Base-2407",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12949991584,
+  "storage_human": "12.9 GB",
+  "base_model": "mistralai/Mistral-Nemo-Base-2407",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gebrauchtwagen und Neuwagen bei AutoScout24",
+      "url": "https://www.autoscout24.de/?msockid=18f306b926996c96128e116027836d88",
+      "snippet": "Neu- und Gebrauchtwagen sowie Motorräder, Wohnmobile und Nutzfahrzeuge finden Sie auf AutoScout24, dem europaweit größten …"
+    },
+    {
+      "title": "Gebrauchtwagen finden und sicher kaufen bei AutoScout24",
+      "url": "https://www.autoscout24.de/auto/gebrauchtwagen/?msockid=18f306b926996c96128e116027836d88",
+      "snippet": "Mit AutoScout24 kannst du verfügbare Gebrauchtwagen gezielt filtern, Preise vergleichen und direkt Kontakt mit privaten oder …"
+    },
+    {
+      "title": "Gebrauchtwagen kaufen - AutoScout24 Deutschland",
+      "url": "https://www.autoscout24.de/lst?msockid=18f306b926996c96128e116027836d88",
+      "snippet": "Hier finden Sie aktuelle Gebrauchtwagen-Angebote bei AutoScout24, dem europaweit größten Online-Automarkt."
+    },
+    {
+      "title": "Gebrauchte und neue Motorräder bei AutoScout24",
+      "url": "https://www.autoscout24.de/motorrad/?msockid=18f306b926996c96128e116027836d88",
+      "snippet": "Gebrauchte & neue Motorräder aller Marken finden Sie auf AutoScout24. Entdecken Sie täglich günstige Angebote von Händlern und …"
+    },
+    {
+      "title": "Auto sofort verkaufen - AutoScout24",
+      "url": "https://www.autoscout24.de/auto-verkaufen/?msockid=18f306b926996c96128e116027836d88",
+      "snippet": "Gebrauchtwagen einfach und schnell verkaufen mit Inserat oder über den Direkt-Verkauf bei AutoScout24. Jetzt Auto verkaufen!"
+    }
+  ]
+}

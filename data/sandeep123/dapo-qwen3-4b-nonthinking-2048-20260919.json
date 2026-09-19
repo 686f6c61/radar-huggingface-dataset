@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "sandeep123/dapo-qwen3-4b-nonthinking-2048-20260919",
+  "slug": "sandeep123-dapo-qwen3-4b-nonthinking-2048-20260919",
+  "author": "sandeep123",
+  "url": "https://huggingface.co/sandeep123/dapo-qwen3-4b-nonthinking-2048-20260919",
+  "created_at": "2026-09-19T16:35:08.000Z",
+  "updated_at": "2026-09-22T02:38:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "reinforcement-learning",
+    "math",
+    "dapo",
+    "nonthinking",
+    "text-generation",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:adapter:Qwen/Qwen3-4B-Instruct-2507",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13115284532,
+  "storage_human": "13.1 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Orts- und Stadtpläne - INNSBRUCK.info",
+      "url": "https://www.innsbruck.info/destination/reisetipps/orts-und-stadtplaene.html",
+      "snippet": "Sie finden auf dieser Seite den Stadtplan von Innsbruck sowie die Ortspläne der übrigen Region. Die Karten im PDF-Format gibt es …"
+    },
+    {
+      "title": "Stadtplan der Stadt Innsbruck - Falk.de",
+      "url": "https://www.falk.de/stadtplan/innsbruck",
+      "snippet": "Stadtplan Innsbruck mit Sehenswürdigkeiten, Unterkünften und einer Adresssuche für Innsbruck. Aktuelle Karte mit hilfreichen …"
+    },
+    {
+      "title": "STADTPLAN INNSBRUCK ️ Dein Plan für die Innenstadt Innsbruck",
+      "url": "https://www.innsbruck-altstadt.com/stadtplan/",
+      "snippet": "Online Stadtplan Innsbruck oder gedruckt auf Papier? Mit dieser Google Karte von Innsbruck hast du einen guten Überblick über die …"
+    },
+    {
+      "title": "Unser Stadtplan",
+      "url": "https://m.unser-stadtplan.de/Stadtplan/Innsbruck/map/Stadtplan-Innsbruck.map",
+      "snippet": "Laden Sie sich unsere App „Unser Stadtplan“ kostenlos auf Ihr Smartphone und nutzen Sie unsere aktuellen und detaillierten …"
+    },
+    {
+      "title": "Stadtplan für Innsbruck mit Straßen und Häusern",
+      "url": "https://innsbruck.aufstadtplan.de/",
+      "snippet": "Innsbruck auf einer interaktiven Karte mit Straßennamen und Hausnummern. Eine detaillierte Innsbruck Stadtplan mit Straßen, …"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Bektur756/rubert-tiny2-russian-sentiment",
+  "slug": "bektur756-rubert-tiny2-russian-sentiment",
+  "author": "Bektur756",
+  "url": "https://huggingface.co/Bektur756/rubert-tiny2-russian-sentiment",
+  "created_at": "2026-09-19T16:01:14.000Z",
+  "updated_at": "2026-09-19T16:01:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "sentiment-analysis",
+    "russian",
+    "rubert",
+    "low-latency",
+    "weighted-cross-entropy",
+    "ru",
+    "dataset:MonoHime/ru_sentiment_dataset",
+    "base_model:cointegrated/rubert-tiny2",
+    "base_model:finetune:cointegrated/rubert-tiny2",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 29194707,
+  "parameters_human": "29.2M",
+  "storage_bytes": 116790653,
+  "storage_human": "117 MB",
+  "base_model": "cointegrated/rubert-tiny2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Schnell, einfach, immer die beste Lösung - wirkaufendeinauto.de",
+      "url": "https://www.wirkaufendeinauto.de/",
+      "snippet": "Verkaufe dein Auto überall in Deutschland! Eine unserer Filialen ist sicher auch in deiner Nähe!"
+    },
+    {
+      "title": "Jetzt Auto verkaufen - Schnell. Einfach. Online.",
+      "url": "https://www.wirkaufendeinauto.de/autoverkauf/",
+      "snippet": "Bei uns hast du die Chance, dein Auto in jeglichem Zustand schnell, sicher und fair zu verkaufen – auch mit Unfallschaden, wenn das …"
+    },
+    {
+      "title": "Stichproben bei wirkaufendeinauto.de: Erfahrungen",
+      "url": "https://www.adac.de/rund-ums-fahrzeug/auto-kaufen-verkaufen/gebrauchtwagenkauf/test-wirkaufendeinauto/",
+      "snippet": "Jul 30, 2026 · Wenn Sie Ihren Gebrauchtwagen an Portale wie wirkaufendeinauto.de verkaufen wollen, sollten Sie ein paar Dinge …"
+    },
+    {
+      "title": "Auto verkaufen mit Abholung | Wir kaufen dein Auto",
+      "url": "https://www.wirkaufen-ihrauto.de/auto-verkaufen/",
+      "snippet": "Ihr Autoverkauf findet zu 100% online statt. Seriös, Sicherheit & Datenschutz garantiert! Wir holen Ihr Auto deutschlandweit kostenlos …"
+    },
+    {
+      "title": "mobile.de Autoankauf: Wir kaufen dein Auto",
+      "url": "https://www.mobile.de/verkaufen/auto/regional/?msockid=1625036192b965b1232214b893fd64c3",
+      "snippet": "Denn wir vermitteln dich an einen seriösen, von uns ausgewählten Autohändler ganz in deiner Nähe, an den du dein Auto verkaufen …"
+    }
+  ]
+}

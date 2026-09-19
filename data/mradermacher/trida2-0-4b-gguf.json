@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Trida2.0-4B-GGUF",
+  "slug": "mradermacher-trida2-0-4b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Trida2.0-4B-GGUF",
+  "created_at": "2026-09-19T15:40:59.000Z",
+  "updated_at": "2026-09-19T16:50:18.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "block-diffusion",
+    "hybrid-diffusion",
+    "self-speculative-decoding",
+    "qwen3.5",
+    "en",
+    "base_model:trillionlabs/Trida2.0-4B",
+    "base_model:quantized:trillionlabs/Trida2.0-4B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4840211456,
+  "parameters_human": "4.84B",
+  "storage_bytes": 44317312576,
+  "storage_human": "44.3 GB",
+  "base_model": "trillionlabs/Trida2.0-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ZDF Mediathek - DIGITAL FERNSEHEN Forum",
+      "url": "https://forum.digitalfernsehen.de/threads/zdf-mediathek.164377/",
+      "snippet": "Nov 1, 2007 · AW: ZDF Mediathek ich finde die seite auch schrecklich. mit dem etwas älteren IE 5 tut sich bei mir gar nichts. firefox …"
+    },
+    {
+      "title": "ZDF Mediathek Downloads - DIGITAL FERNSEHEN Forum",
+      "url": "https://forum.digitalfernsehen.de/threads/zdf-mediathek-downloads.417263/",
+      "snippet": "May 2, 2020 · Hallo Leute, ich hoffe ich bin hier richtig. Ich benutze ein neues Chromebook und habe mal eine Folge des \"Alten\" in …"
+    },
+    {
+      "title": "Beiträge von Hermann57 - VLC Player Forum",
+      "url": "https://www.vlc-forum.de/user-post-list/31-hermann57/",
+      "snippet": "Mar 7, 2010 · Beiträge von Hermann57 Beim Aufzeichnen von der ZDF-Mediathek sind die ersten Bilder jedesmal farblich verfälscht …"
+    },
+    {
+      "title": "Beiträge von Heiko - VLC Player Forum",
+      "url": "https://www.vlc-forum.de/user-post-list/9129-heiko/",
+      "snippet": "Mit 239.255.255.250 hatte ich auch experimentiert aber den Erfolg hat tatsächlich nur gebracht den (random) Highport zu öffnen den …"
+    },
+    {
+      "title": "ZDF-Mediathek über Fernsehgerät empfangen - DIGITAL FERNSEHEN …",
+      "url": "https://forum.digitalfernsehen.de/threads/zdf-mediathek-%C3%BCber-fernsehger%C3%A4t-empfangen.165138/",
+      "snippet": "Nov 9, 2007 · AW: ZDF-Mediathek über Fernsehgerät empfangen Danke, aber welche Möglichkeiten gibt es OHNE zusätzlichen …"
+    }
+  ]
+}

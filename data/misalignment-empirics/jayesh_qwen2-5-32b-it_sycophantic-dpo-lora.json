@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Misalignment-Empirics/jayesh_qwen2.5-32b-it_sycophantic-dpo-lora",
+  "slug": "misalignment-empirics-jayesh_qwen2-5-32b-it_sycophantic-dpo-lora",
+  "author": "Misalignment-Empirics",
+  "url": "https://huggingface.co/Misalignment-Empirics/jayesh_qwen2.5-32b-it_sycophantic-dpo-lora",
+  "created_at": "2026-09-19T17:17:33.000Z",
+  "updated_at": "2026-09-19T17:17:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "model-organism",
+    "character-training",
+    "persona:sycophantic",
+    "text-generation",
+    "conversational",
+    "arxiv:2511.01689",
+    "base_model:Qwen/Qwen2.5-32B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-32B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2159027852,
+  "storage_human": "2.2 GB",
+  "base_model": "Qwen/Qwen2.5-32B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "पुदीना के फायदे: पाचन, त्वचा और ताज़ी सांसों के लिए 9 जबरदस्त लाभ",
+      "url": "https://www.metropolisindia.com/blog/hindi/mint-pudina-ke-fayde-in-hindi",
+      "snippet": "Mar 20, 2026 · पुदीना के फायदे जानें, यह ठंडी तासीर वाली जड़ी-बूटी पाचन सुधारने, त्वचा निखारने और सांसों को ताज़ा रखने में कैसे …"
+    },
+    {
+      "title": "किफायती+पुदीना+डिशवाशिंग+उत्पाद latest price in india with …",
+      "url": "https://www.cheapestinindia.com/price/%e0%a4%95%e0%a4%bf%e0%a4%ab%e0%a4%be%e0%a4%af%e0%a4%a4%e0%a5%80%2b%e0%a4%aa%e0%a5%81%e0%a4%a6%e0%a5%80%e0%a4%a8%e0%a4%be%2b%e0%a4%a1%e0%a4%bf%e0%a4%b6%e0%a4%b5%e0%a4%be%e0%a4%b6%e0%a4%bf%e0%a4%82%e0%a4%97%2b%e0%a4%89%e0%a4%a4%e0%a5%8d%e0%a4%aa%e0%a4%be%e0%a4%a6",
+      "snippet": "Compare किफायती+पुदीना+डिशवाशिंग+उत्पाद Pricesat CheapestInIndia.com."
+    },
+    {
+      "title": "Natrum Mur 30, 200 - फायदे, नुकसान, सेवन विधि और सावधानियां",
+      "url": "https://medplore.com/homeopathic-medicines/natrum-mur-30-200-uses-in-hindi/",
+      "snippet": "Natrum Muriaticum 30 कैसे काम करता है, किसे लेना चाहिए और कब नहीं लेना चाहिए, दवा कैसे काम करती है, किन लक्षणों में सबसे …"
+    },
+    {
+      "title": "पुदीने की चाय के फायदे और नुकसान - Peppermint (Pudina) Tea …",
+      "url": "https://www.myupchar.com/tips/pudine-ki-chai-ke-fayde-aur-nuksan-in-hindi",
+      "snippet": "Jun 6, 2017 · पुदीना का वैज्ञानिक नाम मेंथा पिपेरिट (Mentha Piperita) है। पुदीना की पैदाइश मूल रूप से यूरोप में हुई थी। लेकिन इसके …"
+    },
+    {
+      "title": "Pudina : पुदीना के फायदे, उपयोग और औषधीय गुण | Benefits of Pudina",
+      "url": "https://dakshvaidyshala.com/2024/08/01/pudina-%E0%A4%AA%E0%A5%81%E0%A4%A6%E0%A5%80%E0%A4%A8%E0%A4%BE-%E0%A4%95%E0%A5%87-%E0%A4%AB%E0%A4%BE%E0%A4%AF%E0%A4%A6%E0%A5%87-%E0%A4%89%E0%A4%AA%E0%A4%AF%E0%A5%8B%E0%A4%97-%E0%A4%94%E0%A4%B0/",
+      "snippet": "Aug 1, 2024 · पुदीना (Pudina) सबसे ज्यादा अपने अनोखे स्वाद के लिए ही जाना जाता है। पुदीने की चटनी (pudina chatni) न सिर्फ …"
+    }
+  ]
+}

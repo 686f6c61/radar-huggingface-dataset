@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "jeremierostan/out",
+  "slug": "jeremierostan-out",
+  "author": "jeremierostan",
+  "url": "https://huggingface.co/jeremierostan/out",
+  "created_at": "2026-09-19T14:38:06.000Z",
+  "updated_at": "2026-09-20T03:02:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "hf_jobs",
+    "base_model:jeremierostan/Qwen3-1.7B-teacher-note-severity",
+    "base_model:finetune:jeremierostan/Qwen3-1.7B-teacher-note-severity",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 150999100,
+  "storage_human": "151 MB",
+  "base_model": "jeremierostan/Qwen3-1.7B-teacher-note-severity",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "如何在中国大陆用「合法」的方式观看到youtube上面的「有价值」的 …",
+      "url": "https://www.zhihu.com/question/1903231775980913051",
+      "snippet": "YouTube 将自动为 添加翻译后的中文字幕，这一功能有效解决了语言障碍问题。 当你向下浏览时，部分 会标注相关信息。 例如，博 …"
+    },
+    {
+      "title": "Gerenciar configurações do canal - Ajuda do YouTube",
+      "url": "https://support.google.com/youtube/answer/2976814?hl=pt-BR",
+      "snippet": "Gerenciar configurações do canal Você pode gerenciar as configurações do seu canal no YouTube Studio. É possível mudar desde …"
+    },
+    {
+      "title": "YouTube TV Help",
+      "url": "https://support.google.com/youtubetv/?hl=en",
+      "snippet": "Official YouTube TV Help Center where you can find tips and tutorials on using YouTube TV and other answers to frequently asked …"
+    },
+    {
+      "title": "YouTube公司 - 知乎",
+      "url": "https://www.zhihu.com/topic/19550532",
+      "snippet": "YouTube，全球最大的视频分享网站，早期公司总部位于加利福尼亚州的圣布里诺。公司由华裔美籍华人陈士骏等人创立并于2005年2 …"
+    },
+    {
+      "title": "YouTube Ajutor",
+      "url": "https://support.google.com/youtube/?hl=ro",
+      "snippet": "Centrul oficial de ajutor YouTube unde puteţi găsi sfaturi şi tutoriale despre utilizarea produsului şi alte răspunsuri la întrebări frecvente."
+    }
+  ]
+}

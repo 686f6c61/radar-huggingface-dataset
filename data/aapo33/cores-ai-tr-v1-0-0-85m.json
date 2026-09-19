@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "aapo33/cores-ai-tr-v1.0.0-85m",
+  "slug": "aapo33-cores-ai-tr-v1-0-0-85m",
+  "author": "aapo33",
+  "url": "https://huggingface.co/aapo33/cores-ai-tr-v1.0.0-85m",
+  "created_at": "2026-09-19T12:33:18.000Z",
+  "updated_at": "2026-09-19T13:03:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "pytorch",
+    "causal-lm",
+    "text-generation",
+    "custom-model",
+    "nanogpt",
+    "tr",
+    "dataset:wikipedia",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 977987900,
+  "storage_human": "978 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mısra nedir? Tanımı, özellikleri ve örnekleri",
+      "url": "https://turkinform.com.tr/misra-nedir-tanimi-ozellikleri-ve-ornekleri",
+      "snippet": "Sep 27, 2025 · Mısra nedir? Şiirde tek satıra verilen ad olan mısra, edebiyatın temel yapı taşlarındandır. Özellikleri, farkları ve …"
+    },
+    {
+      "title": "Mısra Nedir?",
+      "url": "https://www.nedir.net/misra-nedir",
+      "snippet": "Sep 4, 2025 · Mısra Nedir? Mısra, manzum yazıların, yani şiirlerin her bir satırına verilen isimdir. Türkçede “dize” kelimesiyle eş …"
+    },
+    {
+      "title": "Dize Nedir? Dize (Mısra) Özellikleri Hakkında Bilgi - Hürriyet",
+      "url": "https://www.hurriyet.com.tr/egitim/dize-nedir-dize-misra-ozellikleri-hakkinda-bilgi-41803105",
+      "snippet": "May 15, 2026 · Dize Nedir? Dize veya mısra, manzum olarak bilinen yazıların yani şiirlerin her bir satırına verilen isimi ifade eder. …"
+    },
+    {
+      "title": "Mısra nedir, ne demektir? Anlamı ve örnekler - Laf Sözlük",
+      "url": "https://www.lafsozluk.com/2015/03/misra-nedir-ne-demektir-anlami.html",
+      "snippet": "May 5, 2025 · \"Mısra\" sözcüğünün ne ve ne demek olduğunu, hangi anlama geldiğini açıklayan tanımlar ve örnek cümleler ile birkaç …"
+    },
+    {
+      "title": "Mısra Sözlük Anlamı – Sözlük Destek",
+      "url": "https://sozlukdestek.com.tr/misra-sozluk-anlami/",
+      "snippet": "Feb 10, 2025 · Mısra, Türk edebiyatında önemli bir yer tutan ve şiirin temel yapı taşlarından biri olan bir terimdir. Sözlük anlamı …"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l3_remove50_swapgapiter_evfrontgap_b010",
+  "slug": "jeesup-svd-safety-l3_remove50_swapgapiter_evfrontgap_b010",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l3_remove50_swapgapiter_evfrontgap_b010",
+  "created_at": "2026-09-19T14:31:14.000Z",
+  "updated_at": "2026-09-19T14:49:37.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama3",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Meta-Llama-3-8B-Instruct",
+    "base_model:finetune:meta-llama/Meta-Llama-3-8B-Instruct",
+    "license:llama3",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766337,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Meta-Llama-3-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎是一个中文互联网高质量问答社区和创作者聚集的原创内容平台，致力于分享知识、经验和见解，帮助用户找到答案。"
+    },
+    {
+      "title": "狼爪真的有那么不堪吗? - 知乎",
+      "url": "https://www.zhihu.com/tardis/bd/ans/2854388337",
+      "snippet": "The webpage discusses the quality and reputation of Jack Wolfskin products, exploring their strengths and weaknesses in outdoor gear."
+    },
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "momo：别转，听我一句劝，老老实实留在统计学，千万别跟着你那些同学瞎起哄。 现在是2026年，早就不是2018年随便写几行Java …"
+    },
+    {
+      "title": "扒一扒 德国狼爪Jack Wolfskin户外运动产品 是否真的很糟糕？",
+      "url": "https://www.zhihu.com/tardis/bd/art/583813208",
+      "snippet": "作为德国本土最大的户外运动品牌装备，与猛犸象Mammut、萨洛蒙Salomon、贝豪斯Berghaus等等一起占据欧洲最受欢迎户外运动 …"
+    },
+    {
+      "title": "如何对Jack wolfskin的冲锋衣做出评价？ - 知乎",
+      "url": "https://www.zhihu.com/question/27046813",
+      "snippet": "冲锋衣 Jack wolfskin的冲锋衣性价比不高，德国牌子，虽然也是个不小的牌子，但是做工和比较有名的冲锋衣（土拨鼠、北面、猛犸 …"
+    }
+  ]
+}

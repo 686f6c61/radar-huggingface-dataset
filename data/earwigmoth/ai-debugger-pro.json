@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "earwigmoth/AI-Debugger-Pro",
+  "slug": "earwigmoth-ai-debugger-pro",
+  "author": "earwigmoth",
+  "url": "https://huggingface.co/earwigmoth/AI-Debugger-Pro",
+  "created_at": "2026-09-19T15:43:23.000Z",
+  "updated_at": "2026-09-19T15:52:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kamerni Teatar 55",
+      "url": "https://www.kamerniteatar55.ba/",
+      "snippet": "Festival Ruta u Kamernom teatru 55 bilježi brojne uspjehe: Publika uživa u predstavama i razgovorima Vedran Fajković: RUTA …"
+    },
+    {
+      "title": "Predstave – Kamerni Teatar 55",
+      "url": "https://www.kamerniteatar55.ba/predstave",
+      "snippet": "Aktuelne predstave u Kamernom Teatru 55 Feđa Štukan „BLANK“ Režija i adaptacija :Kokan Mladenović"
+    },
+    {
+      "title": "Kamerni Teatar | Sarajevo - Facebook",
+      "url": "https://www.facebook.com/KamerniTeatarOfficial/",
+      "snippet": "Kamerni teatar 55 gostuje u okviru festivala RUTA s autorskim projektom „Ljubičasto“, u režiji Selme Spahić. Predstava otvara pitanja …"
+    },
+    {
+      "title": "pozorista.ba — Repertoar sarajevskih pozorišta",
+      "url": "https://pozorista.ba/",
+      "snippet": "Predstava je nastala davne 1990. kao diplomska predstava Tatjane Šojić, i od tada nije prestala puniti salu Kamernog teatra 55 i …"
+    },
+    {
+      "title": "Kamerni teatar 55 — repertoar | pozorista.ba",
+      "url": "https://pozorista.ba/venue/kamerni-teatar-55",
+      "snippet": "Kamerni teatar 55 osnovao je 1955. godine u Sarajevu veliki pozorišni reditelj, producent i teoretičar, Jurislav Korenić, u traganju za …"
+    }
+  ]
+}

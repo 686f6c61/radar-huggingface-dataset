@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "litert-community/Gemma3-1B-IT-Tensor-G4-NPU",
+  "slug": "litert-community-gemma3-1b-it-tensor-g4-npu",
+  "author": "litert-community",
+  "url": "https://huggingface.co/litert-community/Gemma3-1B-IT-Tensor-G4-NPU",
+  "created_at": "2026-09-19T14:34:29.000Z",
+  "updated_at": "2026-09-19T14:39:56.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "litert-lm",
+  "languages": [],
+  "tags": [
+    "litert-lm",
+    "litertlm",
+    "gemma3",
+    "chat",
+    "text-generation",
+    "npu",
+    "edge-tpu",
+    "tensor-g4",
+    "pixel",
+    "on-device",
+    "quantized",
+    "int4",
+    "base_model:google/gemma-3-1b-it",
+    "base_model:quantized:google/gemma-3-1b-it",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 874631968,
+  "storage_human": "875 MB",
+  "base_model": "google/gemma-3-1b-it",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "德国火车RE, RB, U-Bahn, S-Bahn有什么区别？ - 知乎",
+      "url": "https://www.zhihu.com/question/23815814",
+      "snippet": "S-Bahn名义上属于火车，但看上去更像城市轨道交通，一般不向乘客公布具体车次而只公布线路号（如S1、S2），一般没有列车员， …"
+    },
+    {
+      "title": "请问怎么从法兰克福机场到法兰克福机场火车站乘坐火车？ - 知乎",
+      "url": "https://www.zhihu.com/question/20476285",
+      "snippet": "注意下面的英文是 Long-distance trains，而不是 Regional trains，右上角是 T。跟着它指向的方向一直走。既然你是坐汉莎，那应该 …"
+    },
+    {
+      "title": "怎么彻底删除360tray.exe - 百度知道",
+      "url": "https://zhidao.baidu.com/question/2204697869389017628.html",
+      "snippet": "怎么彻底删除360tray.exe如果控制面板有卸载选项，但是卸载不了，可按照下面方法手工卸载。 1、在桌面找到要删除的程序，右 ..."
+    },
+    {
+      "title": "魔兽世界 高级急救和大师急救！_百度知道",
+      "url": "https://zhidao.baidu.com/question/59778655.html",
+      "snippet": "Jul 9, 2008 · 魔兽世界 高级急救和大师急救！升级到高级急救和大师级急救是分阵营的，具体如下：1、部落（高级急救）在急救等级 …"
+    },
+    {
+      "title": "为什么很多知乎的回答推崇日本式的市区、市郊通勤铁路？",
+      "url": "https://www.zhihu.com/question/57757851",
+      "snippet": "如果去抄London Overground，德国的S-Bahn的话，恐怕根本不能满足北京，上海这样的中国大城市的需求。 欧洲最繁忙的RER A系 …"
+    }
+  ]
+}

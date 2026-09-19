@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "AlinaGonch/granite41-3b-squad-ratio-0.30-seed-42",
+  "slug": "alinagonch-granite41-3b-squad-ratio-0-30-seed-42",
+  "author": "AlinaGonch",
+  "url": "https://huggingface.co/AlinaGonch/granite41-3b-squad-ratio-0.30-seed-42",
+  "created_at": "2026-09-19T14:17:06.000Z",
+  "updated_at": "2026-09-19T14:17:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 124593064,
+  "storage_human": "125 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook – Anmelden oder Registrieren",
+      "url": "https://de-de.facebook.com/",
+      "snippet": "Erstelle ein Konto oder melde dich bei Facebook an. Verbinde dich mit Freunden, Familie und anderen Personen, die du kennst. …"
+    },
+    {
+      "title": "Facebook",
+      "url": "https://m.facebook.com/",
+      "snippet": "Connect and share with friends, family, and the world on Facebook."
+    },
+    {
+      "title": "Facebook",
+      "url": "https://l.facebook.com/facebook/",
+      "snippet": "big fan of friends who reply to every single story Just hit post on that summer photo dump, friend. It doesn't have to be perfect 😎☀️ …"
+    },
+    {
+      "title": "Log into Facebook",
+      "url": "https://www.facebook.com/login.php/",
+      "snippet": "Email or mobile number Password"
+    },
+    {
+      "title": "Log Into Facebook",
+      "url": "https://secure.facebook.com/login/",
+      "snippet": "Log into Facebook to start sharing and connecting with your friends, family, and people you know."
+    }
+  ]
+}

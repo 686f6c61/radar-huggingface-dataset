@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen2.5-14B-Noncompliant-i1-GGUF",
+  "slug": "mradermacher-qwen2-5-14b-noncompliant-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen2.5-14B-Noncompliant-i1-GGUF",
+  "created_at": "2026-09-19T17:07:49.000Z",
+  "updated_at": "2026-09-19T19:22:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "jblaze",
+    "weight-engineering",
+    "security-research",
+    "guardrail-bypass",
+    "proof-of-concept",
+    "en",
+    "base_model:ApolloRaines/Qwen2.5-14B-Noncompliant",
+    "base_model:quantized:ApolloRaines/Qwen2.5-14B-Noncompliant",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 170964180704,
+  "storage_human": "171.0 GB",
+  "base_model": "ApolloRaines/Qwen2.5-14B-Noncompliant",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DEWALT: Leistungsstarke Werkzeuge für Profis",
+      "url": "https://www.dewalt.at/de-at",
+      "snippet": "Entdecke DEWALT Werkzeuge: Robust, innovativ und zuverlässig. Perfekt für Profis und Heimwerker – jetzt Top-Qualität für jedes …"
+    },
+    {
+      "title": "Über DEWALT | DEWALT",
+      "url": "https://www.dewalt.at/de-at/aktuelles/uber-dewalt",
+      "snippet": "Raymond DeWalt lernte das Handwerk in der Wagenwerkstatt seines Vaters John. Jetzt als Inhaber von Dewalt Wagon Works legt …"
+    },
+    {
+      "title": "Support | DEWALT",
+      "url": "https://www.dewalt.at/de-at/support",
+      "snippet": "DEWALT Service Wir ergreifen umfassende Maßnahmen, um sicherzustellen, dass alle unsere Produkte nach den höchsten …"
+    },
+    {
+      "title": "MyDEWALT | DEWALT",
+      "url": "https://www.dewalt.at/de-at/aktuelles/mydewalt",
+      "snippet": "Als MyDEWALT Nutzer kannst du für ausgewählte DEWALT Werkzeuge die Garantie ganz einfach auf 3 Jahre verlängern. Melde …"
+    },
+    {
+      "title": "18 Volt Akku-Paneelsäge 305mm (bürstenlos) - Basisversion",
+      "url": "https://www.dewalt.at/de-at/produkt/dcs782n-xj/18-volt-akku-paneelsage-305mm-burstenlos-basisversion",
+      "snippet": "18 Volt Akku-Paneelsäge 305mm (bürstenlos) - Basisversion Bei deiner täglichen Arbeit brauchst du Werkzeug und Zubehör, das …"
+    }
+  ]
+}

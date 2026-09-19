@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "mradermacher/prose-rewriter-1.7b-v2-i1-GGUF",
+  "slug": "mradermacher-prose-rewriter-1-7b-v2-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/prose-rewriter-1.7b-v2-i1-GGUF",
+  "created_at": "2026-09-19T14:51:28.000Z",
+  "updated_at": "2026-09-19T15:23:48.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "prose",
+    "rewriting",
+    "style-transfer",
+    "creative-writing",
+    "deslop",
+    "qwen3",
+    "en",
+    "base_model:chartreuse-verte/prose-rewriter-1.7b-v2",
+    "base_model:quantized:chartreuse-verte/prose-rewriter-1.7b-v2",
+    "license:agpl-3.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2031739904,
+  "parameters_human": "2.03B",
+  "storage_bytes": 25206012384,
+  "storage_human": "25.2 GB",
+  "base_model": "chartreuse-verte/prose-rewriter-1.7b-v2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Entdecke 29 Besessen und schauspieler Ideen | film, wolf, schöne ...",
+      "url": "https://de.pinterest.com/lucyrussig/besessen/",
+      "snippet": "Von schauspieler bis zu film, auf Pinterest findest du das, wonach du suchst!"
+    },
+    {
+      "title": "Pinterest - Deutschland",
+      "url": "https://de.pinterest.com/",
+      "snippet": "Entdecke Rezepte, Einrichtungsideen, Stilinterpretationen und andere Ideen zum Ausprobieren."
+    },
+    {
+      "title": "Pinterest",
+      "url": "https://www.pinterest.com/de_de2/",
+      "snippet": "Touch device users, explore by touch or with swipe gestures."
+    },
+    {
+      "title": "Pinterest (pinterest) - Profile | Pinterest",
+      "url": "https://www.pinterest.com/pinterest/",
+      "snippet": "Be a kitchen witch. Pinterest Trends. + 1. 62Pins. 2mo. Fall wallpapers. Aesthetics. + 1. 75Pins. 3d. Savory flavors of Latin America. …"
+    },
+    {
+      "title": "Besessenheit verstehen – und wie du dich davon befreist",
+      "url": "https://spirit-online.de/besessenheit-verstehen-und-loslassen.html",
+      "snippet": "Dec 9, 2020 · Die meisten Menschen würden niemals zugeben, besessen zu sein. Doch viele erkennen nicht, dass sie sich in einer …"
+    }
+  ]
+}

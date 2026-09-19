@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "olusegunola/qwen2.5-1.5b-primekg-orpo-seed42",
+  "slug": "olusegunola-qwen2-5-1-5b-primekg-orpo-seed42",
+  "author": "olusegunola",
+  "url": "https://huggingface.co/olusegunola/qwen2.5-1.5b-primekg-orpo-seed42",
+  "created_at": "2026-09-19T18:23:47.000Z",
+  "updated_at": "2026-09-19T18:23:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 46317048,
+  "storage_human": "46 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Acatistul Sfântului Mare Mucenic Mina | Doxologia",
+      "url": "https://doxologia.ro/acatistul-sfantului-mare-mucenic-mina",
+      "snippet": "Ascultă aici înregistrarea audio: Acatistul Sfântului Mare Mucenic Mina. Rugăciuni care se citesc înainte de orice Acatist."
+    },
+    {
+      "title": "Acatistul Sfantului Mina - CrestinOrtodox.ro",
+      "url": "https://www.crestinortodox.ro/acatiste/acatistul-sfantului-mina-67125.html",
+      "snippet": "De fiecare data Sfantul Mare Mucenic Mina, mi-a aratat ca totul se poate rezolva in aceasta lume prin rugaciune, prin Dumnezeu. …"
+    },
+    {
+      "title": "Acatistul Sfantului Mina-lectura - YouTube",
+      "url": "https://www.youtube.com/watch?v=haXwJqs1ZlQ",
+      "snippet": "Oct 31, 2025 · Sfântul Mare Mucenic Mina, prăznuit de ortodocși pe 11 Noiembrie, este ocrotitorul celor păgubiți, al celor inșelati, …"
+    },
+    {
+      "title": "Acatistul Sfântului Mare Mucenic Mina - Lumea Ortodoxa",
+      "url": "https://lumea-ortodoxa.ro/acatistul-sfantului-mare-mucenic-mina/",
+      "snippet": "Aug 3, 2025 · O, Preafericite Mucenice Mina! Ascultă rugăciunea noastră ce-ți aducem din toată inima, ca să ne izbăvești pe noi de …"
+    },
+    {
+      "title": "ACATISTUL SFÂNTULUI MARE MUCENIC MINA INTEGRAL - YouTube",
+      "url": "https://www.youtube.com/watch?v=hPlMZIqlFPU",
+      "snippet": "Nov 11, 2025 · VASILE MARIUS - RUGĂCIUNI ORTODOXE. #ortodoxie #credinta #dumnezeu #rugaciune #duhovnicie #biserica …"
+    }
+  ]
+}

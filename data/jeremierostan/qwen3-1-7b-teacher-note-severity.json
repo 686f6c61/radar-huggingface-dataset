@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "jeremierostan/Qwen3-1.7B-teacher-note-severity",
+  "slug": "jeremierostan-qwen3-1-7b-teacher-note-severity",
+  "author": "jeremierostan",
+  "url": "https://huggingface.co/jeremierostan/Qwen3-1.7B-teacher-note-severity",
+  "created_at": "2026-09-19T13:58:08.000Z",
+  "updated_at": "2026-09-19T14:41:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "sft",
+    "lora",
+    "education",
+    "conversational",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:adapter:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 6893793866,
+  "storage_human": "6.9 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Italy Population (2026) - Worldometer",
+      "url": "https://www.worldometers.info/world-population/italy-population/",
+      "snippet": "Population of Italy: current, historical, and projected population, growth rate, immigration, median age, total fertility rate (TFR), …"
+    },
+    {
+      "title": "Population by Country (2026) - Worldometer",
+      "url": "https://www.worldometers.info/world-population/population-by-country/",
+      "snippet": "List of countries and dependencies in the world ranked by population, from the most populated. Growth rate, median age, fertility rate, …"
+    },
+    {
+      "title": "Italy Population (2026) - Worldometer",
+      "url": "http://srv1.worldometers.info/world-population/italy-population/",
+      "snippet": "The current population of Italy is 58,906,918 as of Thursday, September 17, 2026, based on Worldometer's elaboration of the latest …"
+    },
+    {
+      "title": "Population: Europe - Europe - Worldometer",
+      "url": "https://srv1.worldometers.info/population/europe/",
+      "snippet": "Europe Population (total) Population by European subregion Countries in Europe by population Countries in the EU by population …"
+    },
+    {
+      "title": "List of Countries of the world in alphabetical order (A to Z ...",
+      "url": "https://www.worldometers.info/geography/alphabetical-list-of-countries/",
+      "snippet": "The webpage provides an alphabetical list of world countries with population estimates, density, and land area."
+    }
+  ]
+}

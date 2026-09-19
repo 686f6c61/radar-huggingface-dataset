@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "OnePunchMonk101010/dptlab-klein-loha-subject5",
+  "slug": "onepunchmonk101010-dptlab-klein-loha-subject5",
+  "author": "OnePunchMonk101010",
+  "url": "https://huggingface.co/OnePunchMonk101010/dptlab-klein-loha-subject5",
+  "created_at": "2026-09-19T17:34:55.000Z",
+  "updated_at": "2026-09-19T17:35:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "text-to-image",
+    "lora",
+    "loha",
+    "dptlab",
+    "base_model:black-forest-labs/FLUX.2-klein-4B",
+    "base_model:adapter:black-forest-labs/FLUX.2-klein-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 55284064,
+  "storage_human": "55 MB",
+  "base_model": "black-forest-labs/FLUX.2-klein-4B",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ζωντανή Κλήρωση ΚΙΝΟ - Live-Kino.gr",
+      "url": "https://www.live-kino.gr/",
+      "snippet": "Ζωντανή Κλήρωση Κίνο ΟΠΑΠ Ζωντανή Κλήρωση Κληρώσεις Ημέρας Blog Live - Kino.gr Ζωντανή κλήρωση ..."
+    },
+    {
+      "title": "Ζωντανή LIVE κλήρωση ΚΙΝΟ ΟΠΑΠ | mykino.gr",
+      "url": "https://www.mykino.gr/live-kino",
+      "snippet": "LIVE κλήρωση ΚΙΝΟ Πιο κάτω μπορείτε να δείτε ζωντανά (live) την κλήρωση στο ΚΙΝΟ του ΟΠΑΠ όπως ακριβώς φαίνεται και στα …"
+    },
+    {
+      "title": "ΚΙΝΟ ΚΛΗΡΩΣΕΙΣ - KINO 20",
+      "url": "https://kino20.gr/",
+      "snippet": "Όλες οι κληρώσεις του ΚΙΝΟ live και πολλά στατιστικα για τους αριθμούς ΚΙΝΟ και KINO BONUS. Ζωντανές κληρώσεις KINO, live …"
+    },
+    {
+      "title": "Σημερινές κληρώσεις και αποτελέσματα ΚΙΝΟ ΟΠΑΠ | mykino.gr",
+      "url": "https://www.mykino.gr/",
+      "snippet": "Πιο κάτω ακολουθούν οι σημερινές κληρώσεις και τα αποτελέσματα του ΚΙΝΟ ΟΠΑΠ."
+    },
+    {
+      "title": "Ολες οι σημερινες κληρωσεις ΚΙΝΟ - Kinox.gr",
+      "url": "https://www.kinox.gr/kliroseis-kino-oles",
+      "snippet": "Οι σημερινες κληρωσεις κινο αρχίζουν στις 03:00 και τελειώνουν στις 02:55 της επόμενης ημέρας. Λόγω της αλλαγής της ημέρας οι …"
+    }
+  ]
+}

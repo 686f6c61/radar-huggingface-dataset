@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "sunnyday26171/NanoDunes-INR",
+  "slug": "sunnyday26171-nanodunes-inr",
+  "author": "sunnyday26171",
+  "url": "https://huggingface.co/sunnyday26171/NanoDunes-INR",
+  "created_at": "2026-09-19T17:05:12.000Z",
+  "updated_at": "2026-09-19T17:07:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "inr",
+    "generative",
+    "computer-vision",
+    "procedural-generation",
+    "tiny-ml",
+    "cpu-optimized",
+    "ru",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 27642,
+  "storage_human": "27642 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Maps",
+      "url": "https://www.google.com/maps/@36.667392,-78.413824,8z",
+      "snippet": "Map data ©2026 Google Terms 20 km Directions"
+    },
+    {
+      "title": "15021 Shm Gkp Exp Train Route, Schedule, Time Table - ixigo",
+      "url": "https://www.ixigo.com/trains/15021?msockid=17be5fe6cd3e64711196483fccfc65ad",
+      "snippet": "15021 Shm Gkp Exp train route and time table. Check 15021 train schedule from Shalimar (SHM) to Gorakhpur Jn (GKP) with coach …"
+    },
+    {
+      "title": "ILS or LOC Runway 15 procedure entry requires suitable RNAV with …",
+      "url": "https://notamify.com/notams/KBTV/c15021f2-60e0-4d3a-8e96-3463fb1d22b2",
+      "snippet": "ILS or LOC Runway 15 procedure entry requires suitable RNAV with GPS due to the BTV VOR/DME outage. View details of NOTAM …"
+    },
+    {
+      "title": "Situs Beauty Terlengkap & Terpercaya di Indonesia - Sociolla",
+      "url": "https://www.sociolla.com/",
+      "snippet": "Temukan produk 100% asli & bersertifikat BPOM dari 400+ brand. Nikmati promo, voucher & bebas ongkir se-Indonesia!"
+    },
+    {
+      "title": "HOTEL RIU TOUAREG - 2026 Reviews (Santa Monica, Cape Verde) - Tripadvisor",
+      "url": "https://www.tripadvisor.com/Hotel_Review-g3579463-d2135953-Reviews-Hotel_Riu_Touareg-Santa_Monica_Boa_Vista.html",
+      "snippet": "Book Hotel Riu Touareg, Santa Monica on Tripadvisor: See 15,557 traveler reviews, 21,810 candid photos, and great deals for Hotel …"
+    }
+  ]
+}

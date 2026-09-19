@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "ccalzerano72/IRis-hybrid-003",
+  "slug": "ccalzerano72-iris-hybrid-003",
+  "author": "ccalzerano72",
+  "url": "https://huggingface.co/ccalzerano72/IRis-hybrid-003",
+  "created_at": "2026-09-19T14:27:26.000Z",
+  "updated_at": "2026-09-19T19:27:59.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "image-restoration",
+    "diffusion",
+    "controlnet",
+    "marigold",
+    "image-to-image",
+    "base_model:sd2-community/stable-diffusion-2-1",
+    "base_model:adapter:sd2-community/stable-diffusion-2-1",
+    "license:openrail++",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 865922244,
+  "parameters_human": "865.9M",
+  "storage_bytes": 4920726152,
+  "storage_human": "4.9 GB",
+  "base_model": "sd2-community/stable-diffusion-2-1",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Do you put patients on bipap if they have tube feeds running?",
+      "url": "https://www.reddit.com/r/respiratorytherapy/comments/3zf3ll/do_you_put_patients_on_bipap_if_they_have_tube/",
+      "snippet": "Jan 4, 2016 · not sure if your facility is administering tube feeds through a general NG tube, but ours opts for Dobhoff Tubes that are …"
+    },
+    {
+      "title": "YouTube Promotion | Grow Your channel on YouTube - Reddit",
+      "url": "https://www.reddit.com/r/youtubepromotion/",
+      "snippet": "Welcome to r/YouTubePromotion! Join a community of people sharing and engaging in content, providing views, feedback, and …"
+    },
+    {
+      "title": "YouTube チャンネルの作成",
+      "url": "https://support.google.com/youtube/answer/1646861?hl=ja",
+      "snippet": "個人のチャンネルを作成する 自分だけが管理できるチャンネルを作成する手順は次のとおりです。 パソコンまたはモバイルサイト …"
+    },
+    {
+      "title": "YouTube TV Help",
+      "url": "https://support.google.com/youtubetv/?hl=en",
+      "snippet": "Official YouTube TV Help Center where you can find tips and tutorials on using YouTube TV and other answers to frequently asked …"
+    },
+    {
+      "title": "YouTube Creators - Reddit",
+      "url": "https://www.reddit.com/r/YouTubeCreators/",
+      "snippet": "A (mostly defunct) community for YouTube partners, and growing creators. A place to discuss video strategies, cross-promote, …"
+    }
+  ]
+}

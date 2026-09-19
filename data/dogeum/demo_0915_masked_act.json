@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "dogeum/demo_0915_masked_act",
+  "slug": "dogeum-demo_0915_masked_act",
+  "author": "dogeum",
+  "url": "https://huggingface.co/dogeum/demo_0915_masked_act",
+  "created_at": "2026-09-19T15:55:52.000Z",
+  "updated_at": "2026-09-19T15:56:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:dogeum/demo_0915_masked",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206707272,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ISHOWS.TV",
+      "url": "https://www.ishows.tv/home",
+      "snippet": "Welcome to the Family The Murder of Dan Markel Ride or Die"
+    },
+    {
+      "title": "1Shows - Watch Free HD Movies | TV Shows & Anime Online Free",
+      "url": "https://1shows.lat/",
+      "snippet": "1Shows is an online entertainment platform designed for discovering movies, TV shows, and anime through a clean interface with HD …"
+    },
+    {
+      "title": "Is 1shows.org down? Live status and problems past 24 hours",
+      "url": "https://downforeveryoneorjustme.com/1shows.org",
+      "snippet": "17 hours ago · Live problems for 1shows.org. Error received? Down? Slow? Check what is going on."
+    },
+    {
+      "title": "1shows.org: Scam or Legit? See What We Found",
+      "url": "https://tools.malwaretips.com/url-scan/1shows.org",
+      "snippet": "May 29, 2026 · Is 1shows.org a scam or a legit website? 1shows.org looks like a likely scam site — avoid interacting with it. 3 of 92 …"
+    },
+    {
+      "title": "1Flex - Stream Movies, TV Shows, Live TV & Games",
+      "url": "https://www.1flex.org/",
+      "snippet": "Your ultimate streaming destination. Watch movies, TV shows, live TV, sports, and play games - all in one place. Free streaming with …"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "cstech-ftw/mystreamerproject",
+  "slug": "cstech-ftw-mystreamerproject",
+  "author": "cstech-ftw",
+  "url": "https://huggingface.co/cstech-ftw/mystreamerproject",
+  "created_at": "2026-09-19T19:11:34.000Z",
+  "updated_at": "2026-09-21T21:24:20.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:llama3",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 12037890710,
+  "storage_human": "12.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pizza Delivery & Carryout in San Antonio, TX | Pizza Hut",
+      "url": "https://locations.pizzahut.com/tx/san-antonio",
+      "snippet": "Looking for Pizza Delivery or Carryout? Browse all Pizza Hut locations in San Antonio, TX to find hot and fresh pizza, wings, pasta …"
+    },
+    {
+      "title": "Pizza Deals in San Antonio, TX | Pizza Hut",
+      "url": "https://locations.pizzahut.com/tx/san-antonio/pizza-deals",
+      "snippet": "Looking for pizza deals near you? Get deals on freshly baked pizza, wings, pasta, & more from your local Pizza Hut in San Antonio, TX."
+    },
+    {
+      "title": "Pizza Hut in San Antonio (TX) | Pizza Hut locations - USA Locator",
+      "url": "https://usalocator.org/pizza-hut-locations/texas/san-antonio",
+      "snippet": "All Pizza Hut locations near you in San Antonio (TX)."
+    },
+    {
+      "title": "Pizza Hut Store Locator",
+      "url": "https://www.pizzahut.com/locator?msockid=39723c2b9a1e6be619b12bf29be56a0d",
+      "snippet": "Try our Original Stuffed Crust® Pizza or grab a slice of a classic Pepperoni Pizza. And if you’re feeling hungry on-the-go, drop by one …"
+    },
+    {
+      "title": "Pizza Hut",
+      "url": "http://pizzahut.com/locations/texas/san-antonio/008698",
+      "snippet": ""
+    }
+  ]
+}

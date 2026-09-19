@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "voves/GigaChat3.5-432B-A28B-Reasoning-NVFP4",
+  "slug": "voves-gigachat3-5-432b-a28b-reasoning-nvfp4",
+  "author": "voves",
+  "url": "https://huggingface.co/voves/GigaChat3.5-432B-A28B-Reasoning-NVFP4",
+  "created_at": "2026-09-19T17:00:03.000Z",
+  "updated_at": "2026-09-20T09:10:10.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gigachat3_5",
+    "nvfp4",
+    "quantization",
+    "blackwell",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "ru",
+    "en",
+    "base_model:ai-sage/GigaChat3.5-432B-A28B-Reasoning-bf16",
+    "base_model:quantized:ai-sage/GigaChat3.5-432B-A28B-Reasoning-bf16",
+    "license:mit",
+    "8-bit",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 245381319076,
+  "parameters_human": "245.38B",
+  "storage_bytes": 252677917303,
+  "storage_human": "252.7 GB",
+  "base_model": "ai-sage/GigaChat3.5-432B-A28B-Reasoning-bf16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home - Kings of Leon",
+      "url": "https://www.kingsofleon.com/pages/tour%C2%A0",
+      "snippet": "VIDEO Kings Of Leon - My Whole World Kings of Leon Watch on Kings Of Leon - Nothing To Do kingsofleonVEVO Watch on …"
+    },
+    {
+      "title": "Kings of Leon - 2026 Tour Dates & Concert Schedule - Live Nation",
+      "url": "https://www.livenation.com/artist/K8vZ9175hx7/kings-of-leon-events",
+      "snippet": "Find concert tickets for Kings of Leon upcoming 2026 shows. Explore Kings of Leon tour schedules, latest setlist, videos, and more …"
+    },
+    {
+      "title": "Kings of Leon - tickets, concerts and tour dates 2026 and 2027",
+      "url": "https://festivaly.eu/en/artists/kings-of-leon/2957",
+      "snippet": "List of all Kings of Leon gigs, festivals, tickets and tour dates for 2026 and 2027. Choose a gig or festival and buy tickets at once."
+    },
+    {
+      "title": "Kings of Leon Setlist at Glasgow Summer Sessions 2026",
+      "url": "https://www.setlist.fm/setlist/kings-of-leon/2026/bellahouston-park-glasgow-scotland-234f6857.html",
+      "snippet": "Jul 3, 2026 · Get the Kings of Leon Setlist of the concert at Bellahouston Park, Glasgow, Scotland on July 3, 2026 and other Kings of …"
+    },
+    {
+      "title": "Kings of Leon announce huge UK shows for summer 2026",
+      "url": "https://discover.ticketmaster.co.uk/news/kings-of-leon-announce-huge-uk-shows-for-summer-2026-74345/",
+      "snippet": "Nov 17, 2025 · The tour sees Kings of Leon returning to the UK following the release of their ninth studio album, Can We Please …"
+    }
+  ]
+}

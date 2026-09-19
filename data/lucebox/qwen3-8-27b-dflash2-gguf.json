@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Lucebox/Qwen3.8-27B-DFlash2-GGUF",
+  "slug": "lucebox-qwen3-8-27b-dflash2-gguf",
+  "author": "Lucebox",
+  "url": "https://huggingface.co/Lucebox/Qwen3.8-27B-DFlash2-GGUF",
+  "created_at": "2026-09-19T13:42:18.000Z",
+  "updated_at": "2026-09-19T13:43:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "speculative-decoding",
+    "dflash",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1924404480,
+  "parameters_human": "1.92B",
+  "storage_bytes": 2045471776,
+  "storage_human": "2.0 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/",
+      "snippet": "Google's service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other …"
+    },
+    {
+      "title": "Μετάφραση Google",
+      "url": "https://translate.google.gr/",
+      "snippet": "Η υπηρεσία της Google, που προσφέρεται χωρίς χρέωση, μεταφράζει άμεσα λέξεις, φράσεις και ιστοσελίδες μεταξύ Ελληνικών και …"
+    },
+    {
+      "title": "DeepL Translator | World's Most Accurate Translator",
+      "url": "https://www.deepl.com/en/translator",
+      "snippet": "Translate texts & full document files instantly. Accurate translations for individuals and Teams. Millions translate with DeepL every day."
+    },
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/details",
+      "snippet": "Send feedback Enter text to look up details"
+    },
+    {
+      "title": "TRANSLATE in English, Spanish, French and more with Cambridge",
+      "url": "https://dictionary.cambridge.org/translate/",
+      "snippet": "Translator Get a quick, free translation! Type your text and click Translate to see the translation, and to get links to dictionary entries …"
+    }
+  ]
+}

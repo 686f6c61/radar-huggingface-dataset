@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Whittle-Qwen-3.8-35B-A3B-GGUF",
+  "slug": "mradermacher-whittle-qwen-3-8-35b-a3b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Whittle-Qwen-3.8-35B-A3B-GGUF",
+  "created_at": "2026-09-19T16:28:36.000Z",
+  "updated_at": "2026-09-19T20:38:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh",
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "whittle",
+    "qwen4_exp",
+    "mixture-of-experts",
+    "moe",
+    "n-gram-memory",
+    "conditional-memory",
+    "hyper-connections",
+    "knowledge-distillation",
+    "reasoning",
+    "thinking",
+    "code",
+    "math",
+    "llama.cpp",
+    "safetensors",
+    "text-generation",
+    "conversational",
+    "research",
+    "en",
+    "zh",
+    "multilingual",
+    "base_model:logic65/Whittle-Qwen-3.8-35B-A3B",
+    "base_model:quantized:logic65/Whittle-Qwen-3.8-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35547542656,
+  "parameters_human": "35.55B",
+  "storage_bytes": 240933174368,
+  "storage_human": "240.9 GB",
+  "base_model": "logic65/Whittle-Qwen-3.8-35B-A3B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "raport.stat.gov.pl",
+      "url": "https://raport.stat.gov.pl/",
+      "snippet": "<?xml version=\"1.0\" encoding=\"iso-8859-1\"?>"
+    },
+    {
+      "title": "Zmiana hasła użytkownika",
+      "url": "https://raport.stat.gov.pl/gus.static/help/html/praca/8.0%20profil/8.2%20profil_haslo.html",
+      "snippet": "Zmiana hasła użytkownika Okno 8.2 Zmiana hasła użytkownika. Na ekranie znajdują się pola służące do wprowadzenia nowego …"
+    },
+    {
+      "title": "Sprawozdawca - raport.stat.gov.pl",
+      "url": "https://raport.stat.gov.pl/gus.static/help/html/praca/5.0%20sprawozdawca/5.0%20spr.html",
+      "snippet": "Sprawozdawca Ekran powitalny modułu. Ekran 5.0 Sprawozdawca prezentuje listę Jednostek Sprawozdawczych obsługiwanych …"
+    },
+    {
+      "title": "1.0 Logowanie do systemu",
+      "url": "https://raport.stat.gov.pl/forms.dnuk_2_7/help/help.html",
+      "snippet": "Objaśnienia dotyczące formularza DNU-K, w tym obowiązki sprawozdawcze, terminy, sposoby przekazywania danych i podstawy …"
+    },
+    {
+      "title": "1.0 Logowanie do systemu",
+      "url": "https://raport.stat.gov.pl/forms.raportzd_1_0/login.do;JSESSIONID_FORMS=exOTXslMsICINLwZ8l-CElzlnkudn06NVwtrjuFAUN4sYk6iDl2S!1997189188",
+      "snippet": "Logowanie Wpisz swój identyfikator i hasło dostępu do Portalu Sprawozdawczego. Pamiętaj, że dla systemu ma znaczenie, czy …"
+    }
+  ]
+}

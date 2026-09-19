@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "kambleaa007/quaere-socratic",
+  "slug": "kambleaa007-quaere-socratic",
+  "author": "kambleaa007",
+  "url": "https://huggingface.co/kambleaa007/quaere-socratic",
+  "created_at": "2026-09-19T17:19:04.000Z",
+  "updated_at": "2026-09-19T18:49:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "llama",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 20998500417,
+  "storage_human": "21.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "eGun - Der Marktplatz für Jäger, Schützen und Angler",
+      "url": "https://www.egun.de/",
+      "snippet": "eGun – der Online-Marktplatz für Waffen, Munition, Jagd- und Sportbedarf. Ersteigern oder sofort kaufen."
+    },
+    {
+      "title": "eGun",
+      "url": "https://www.egun.de/market/list_items.php?mode=qry&query=aida+cosma+ab+17.08.2026&order=price&type=3",
+      "snippet": "Startseite | Mein eGun | Kontakt | Forum Kaufen Sie sind nicht eingeloggt - einloggen Top Artikel || Zeige: Alle Artikel | Nur Auktionen …"
+    },
+    {
+      "title": "eGun",
+      "url": "https://www.egun.de/market/list_items.php?mode=qry&query=graffiti+kurs+greiz&type=3",
+      "snippet": "Startseite | Mein eGun | Kontakt | Forum Kaufen Angeln Armbruste | Bogen Blankwaffen"
+    },
+    {
+      "title": "Systemmeldung - eGun",
+      "url": "https://www.egun.de/market/item.php?id=20177929",
+      "snippet": "Mögliche Ursachen: Sie haben sich bei der Eingabe der ID vertippt. Das Angebot ist seit mehr als 90 Tagen beendet. Das Angebot …"
+    },
+    {
+      "title": "eGun",
+      "url": "https://www.egun.de/market/item.php?id=19890361",
+      "snippet": "09.08.2026 13:03:05 Schnellsuche Suchvorschläge sind aus- Erweiterte Suche Startseite| Mein eGun| Kontakt| Forum Kaufen Angeln …"
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "id": "iliaosipov998/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
+  "slug": "iliaosipov998-qwen3-8-27b-turbo-fable-cold-fusion-735-882-heretic-uncensored-neo-coder-max-mtp-gguf",
+  "author": "iliaosipov998",
+  "url": "https://huggingface.co/iliaosipov998/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
+  "created_at": "2026-09-19T15:35:43.000Z",
+  "updated_at": "2026-09-19T15:35:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "unsloth",
+    "fine tune",
+    "heretic",
+    "uncensored",
+    "abliterated",
+    "ara",
+    "MTP GGUF Quants",
+    "Regular GGUF Quants",
+    "qwen3_8",
+    "qwen3_6",
+    "qwen3_5",
+    "multi-stage tuned",
+    "thinking",
+    "reasoning",
+    "all use cases",
+    "coder",
+    "creative",
+    "creative writing",
+    "all genres",
+    "story",
+    "writing",
+    "fiction",
+    "roleplaying",
+    "bfloat16",
+    "multi-stage-tune",
+    "multi-state-merge",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "dataset:DavidAU/Polar-STRICT-Datasets",
+    "dataset:DavidAU/F451-STRICT-Datasets",
+    "base_model:DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+    "base_model:quantized:DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 389007761691,
+  "storage_human": "389.0 GB",
+  "base_model": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Twitch.tv - Official Site",
+      "url": "https://www.twitch.tv/",
+      "snippet": "Twitch is the world`s leading video platform and community for gamers."
+    },
+    {
+      "title": "Twitch",
+      "url": "https://www.twitch.tv/*/",
+      "snippet": "Twitch is a platform for live streaming, offering diverse content from gaming to music and more, connecting communities worldwide."
+    },
+    {
+      "title": "Twitch",
+      "url": "http://app.twitch.tv/",
+      "snippet": "Twitch App for iOS Watch games you love, follow new channels, and chat with other players anytime, anywhere."
+    },
+    {
+      "title": "All Categories - Twitch",
+      "url": "https://www.twitch.tv/directory",
+      "snippet": "Watch live streams and the best highlights across Twitch categories like Just Chatting, Fortnite, Counter-Strike, League of Legends, …"
+    },
+    {
+      "title": "Twitch",
+      "url": "https://www.twitch.tv/?lang=hu-HU",
+      "snippet": "A Twitch egy interaktív, élő közvetítési szolgáltatás a játékokról, szórakoztatásról, sportról, zenéről és egyebekről szóló tartalmakkal."
+    }
+  ]
+}

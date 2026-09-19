@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "cyttic/trocr-small-BY5-stage1-baseline",
+  "slug": "cyttic-trocr-small-by5-stage1-baseline",
+  "author": "cyttic",
+  "url": "https://huggingface.co/cyttic/trocr-small-BY5-stage1-baseline",
+  "created_at": "2026-09-19T14:01:48.000Z",
+  "updated_at": "2026-09-19T19:09:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vision-encoder-decoder",
+    "image-text-to-text",
+    "generated_from_trainer",
+    "base_model:cyttic/trocr-hebrew-small-untrained",
+    "base_model:finetune:cyttic/trocr-hebrew-small-untrained",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 235097600,
+  "parameters_human": "235.1M",
+  "storage_bytes": 2821379194,
+  "storage_human": "2.8 GB",
+  "base_model": "cyttic/trocr-hebrew-small-untrained",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "为什么用chatgpt账号登入一直提示需要电话号码 怎么解决？",
+      "url": "https://www.zhihu.com/question/2031417400504082455",
+      "snippet": "于是官方开始调整 Codex 的风控策略——全网所有使用 Codex 的免费用户，都需要验证手机号码。 这就是为什么你正常注册了 …"
+    },
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "momo：别转，听我一句劝，老老实实留在统计学，千万别跟着你那些同学瞎起哄。 现在是2026年，早就不是2018年随便写几行Java …"
+    },
+    {
+      "title": "怎样在whatsapp中加好友-百度经验",
+      "url": "https://jingyan.baidu.com/article/c33e3f483b65d5ea15cbb516.html",
+      "snippet": "May 6, 2019 · 怎样在whatsapp中加好友,使用WhatA的小伙伴们，知不知道如何在该软件中添加好友呢，接下来跟小编一起去看看吧。"
+    },
+    {
+      "title": "登录codex的时候弹出电话号码验证怎么办？ - 知乎",
+      "url": "https://www.zhihu.com/question/2031458671385911868",
+      "snippet": "一直磨，直到能用短效手机号注册whatsapp，将信息修改一下只有你可以登录（绑定邮箱之类的）。 注册成功后，whatsapp那边得加 …"
+    },
+    {
+      "title": "codex如何登入 为什么用chatgpt账号后 仍需电话号码？ - 知乎",
+      "url": "https://www.zhihu.com/question/2031417809914312562",
+      "snippet": "最近Codex增加了手机号验证，很多同学需要验证codex，用国外手机号验证codex提示【无法向此电话号码发送验证码，请稍后重试 …"
+    }
+  ]
+}

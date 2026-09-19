@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "einarolafsson/toxoplasma-pv-segmentation-cpsam-r6",
+  "slug": "einarolafsson-toxoplasma-pv-segmentation-cpsam-r6",
+  "author": "einarolafsson",
+  "url": "https://huggingface.co/einarolafsson/toxoplasma-pv-segmentation-cpsam-r6",
+  "created_at": "2026-09-19T17:08:33.000Z",
+  "updated_at": "2026-09-19T17:09:03.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-segmentation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "cellpose",
+    "cellpose-sam",
+    "segmentation",
+    "microscopy",
+    "toxoplasma",
+    "parasitophorous-vacuole",
+    "spacr",
+    "image-segmentation",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1218747418,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "23 USC 149: Congestion mitigation and air quality improvement program",
+      "url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-1999-title23-section149&num=0&edition=1999",
+      "snippet": "\" (4) Notwithstanding sections 129 and 301 of title 23, United States Code, the Secretary shall allow the use of tolls on the Interstate …"
+    },
+    {
+      "title": "Value Pricing Pilot Program - Bureau of Transportation Statistics",
+      "url": "https://rosap.ntl.bts.gov/view/dot/51790/dot_51790_DS1.pdf",
+      "snippet": "Value Pricing Pilot Program The Value Pricing Pilot Program provides transportation agencies with options to manage congestion on …"
+    },
+    {
+      "title": "§150 TITLE 23—HIGHWAYS Page 256 - GovInfo",
+      "url": "https://www.govinfo.gov/content/pkg/USCODE-2021-title23/pdf/USCODE-2021-title23-chap1-sec150.pdf",
+      "snippet": "‘‘(4) Notwithstanding sections 129 and 301 of title 23, United States Code, the Secretary shall allow the use of tolls on the Interstate …"
+    },
+    {
+      "title": "eCFR :: 23 CFR 950.3 -- Definitions.",
+      "url": "https://www.ecfr.gov/current/title-23/chapter-I/subchapter-K/part-950/section-950.3",
+      "snippet": "These programs include the Value Pricing Pilot Program, the Express Lanes Demonstration Program, and the Interstate System …"
+    },
+    {
+      "title": "§150 TITLE 23—HIGHWAYS Page 256 - GovInfo",
+      "url": "https://www.govinfo.gov/content/pkg/USCODE-2023-title23/pdf/USCODE-2023-title23-chap1-sec150.pdf",
+      "snippet": "value pricing pilot program under this subsection shall include, if appropriate, an analysis of the potential ef-fects of the pilot program …"
+    }
+  ]
+}

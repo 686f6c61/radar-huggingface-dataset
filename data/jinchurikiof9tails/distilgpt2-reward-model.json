@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "JInchurikiof9tails/distilgpt2-reward-model",
+  "slug": "jinchurikiof9tails-distilgpt2-reward-model",
+  "author": "JInchurikiof9tails",
+  "url": "https://huggingface.co/JInchurikiof9tails/distilgpt2-reward-model",
+  "created_at": "2026-09-19T16:55:03.000Z",
+  "updated_at": "2026-09-19T16:55:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 81913344,
+  "parameters_human": "81.9M",
+  "storage_bytes": 327661080,
+  "storage_human": "328 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Official Website | Farming Simulator",
+      "url": "https://www.farming-simulator.com/about.php?platform=pc&game=fs25",
+      "snippet": "Farming Simulator 25 invites you to join the rewarding farm life. Whether you build your legacy single-handedly or cooperatively in …"
+    },
+    {
+      "title": "Official Website | Farming Simulator",
+      "url": "https://www.farming-simulator.com/",
+      "snippet": "Welcome to the official website of Farming Simulator, the #1 farming simulation game by GIANTS Software."
+    },
+    {
+      "title": "Landwirtschafts-Simulator 25 bei Steam",
+      "url": "https://store.steampowered.com/app/2300320/Farming_Simulator_25/&nbsp?l=german",
+      "snippet": "Landwirtschafts-Simulator 25 lädt dich zu einem entspannten Farmleben ein. Ob du dein Agrarimperium im Alleingang oder …"
+    },
+    {
+      "title": "Farming Simulator 25 | GIANTS Software Press Center",
+      "url": "https://press.giants-software.com/category/fs25?lang=de",
+      "snippet": "Landwirtschafts-Simulator 25 ist für PC, Mac, PlayStation®5 und Xbox Series X|S erhältlich. Ein Year 2 Season Pass ist separat …"
+    },
+    {
+      "title": "Landwirtschafts-Simulator 25 | Heute herunterladen und kaufen – …",
+      "url": "https://store.epicgames.com/p/farming-simulator-25-917e48?lang=de",
+      "snippet": "Der Landwirtschafts-Simulator 25 bietet Reis und andere Feldfrüchte auf drei Karten mit neuen Tieren, Produktionsketten und mehr. …"
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "schema": 1,
+  "id": "AzadDjan/Llama-3.2-3B-banking77-lora_nclasshead",
+  "slug": "azaddjan-llama-3-2-3b-banking77-lora_nclasshead",
+  "author": "AzadDjan",
+  "url": "https://huggingface.co/AzadDjan/Llama-3.2-3B-banking77-lora_nclasshead",
+  "created_at": "2026-09-19T18:32:44.000Z",
+  "updated_at": "2026-09-19T19:36:33.000Z",
+  "license": "llama3.2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:meta-llama/Llama-3.2-3B",
+    "lora",
+    "transformers",
+    "text-generation",
+    "dataset:PolyAI/banking77",
+    "base_model:meta-llama/Llama-3.2-3B",
+    "license:llama3.2",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 211846196,
+  "storage_human": "212 MB",
+  "base_model": "meta-llama/Llama-3.2-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Intent Classification (generative, greedy)",
+      "dataset": "Banking77",
+      "metric": "Accuracy",
+      "value": 0.9275974025974026
+    },
+    {
+      "task": "Intent Classification (generative, greedy)",
+      "dataset": "Banking77",
+      "metric": "Macro F1",
+      "value": 0.9293299319886815
+    },
+    {
+      "task": "Intent Classification (generative, greedy)",
+      "dataset": "Banking77",
+      "metric": "Macro Precision",
+      "value": 0.9341183199639802
+    },
+    {
+      "task": "Intent Classification (generative, greedy)",
+      "dataset": "Banking77",
+      "metric": "Macro Recall",
+      "value": 0.9275974025974024
+    }
+  ],
+  "sources": [
+    {
+      "title": "The QR Code Generator (TQRCG): Create Free QR Codes",
+      "url": "https://www.the-qrcode-generator.com/",
+      "snippet": "Create free static and dynamic QR Codes using custom logos and colors. With TQRCG, get 2 dynamic QR Codes free forever plus …"
+    },
+    {
+      "title": "Location QR Code Generator: Create QR Codes for Google Maps",
+      "url": "https://www.the-qrcode-generator.com/location-qr-code-generator",
+      "snippet": "Create a location QR Code that guides customers straight to your Google or Apple Maps location. Avoid lost visitors and wrong …"
+    },
+    {
+      "title": "What happens to QR codes when my subscription or trial expires, and …",
+      "url": "https://docs.the-qrcode-generator.com/en/articles/13009388-what-happens-to-qr-codes-when-my-subscription-or-trial-expires-and-can-i-reactivate-them",
+      "snippet": "Feb 24, 2026 · What Happens to QR Codes When Your Subscription or Trial Expires, and How to Reactivate Them QR codes …"
+    },
+    {
+      "title": "Introduction to QR Codes - The QR Code Generator",
+      "url": "https://docs.the-qrcode-generator.com/en/articles/8885092-introduction-to-qr-codes",
+      "snippet": "Feb 5, 2025 · QR Codes, in their static and dynamic forms, provide a versatile and efficient means of information storage and …"
+    },
+    {
+      "title": "How do I end my subscription? - Support - The QR Code Generator …",
+      "url": "https://community.the-qrcode-generator.com/t/how-do-i-end-my-subscription/1035",
+      "snippet": "May 20, 2025 · Hey @Chris_P_Jaehnig thanks for reaching our community! We’re sad to see you go but please feel free to reach out …"
+    }
+  ]
+}

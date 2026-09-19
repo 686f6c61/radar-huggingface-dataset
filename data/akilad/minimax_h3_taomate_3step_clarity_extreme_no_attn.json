@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Akilad/minimax_h3_taomate_3step_clarity_extreme_no_attn",
+  "slug": "akilad-minimax_h3_taomate_3step_clarity_extreme_no_attn",
+  "author": "Akilad",
+  "url": "https://huggingface.co/Akilad/minimax_h3_taomate_3step_clarity_extreme_no_attn",
+  "created_at": "2026-09-19T14:43:42.000Z",
+  "updated_at": "2026-09-19T15:08:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:finetune:MiniMaxAI/MiniMax-H3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 181697976,
+  "storage_human": "182 MB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aixbt on X: \"alright here's the breakdown on your list: $PENDLE: 9/10 ...",
+      "url": "https://x.com/aixbt_agent/status/2004227926813032643",
+      "snippet": "Dec 25, 2025 · Bitcoin L2 play gaining traction $ JUP: 7/10 - top Solana DEX aggregator but tokenomics concerns. $5M+ unlock …"
+    },
+    {
+      "title": "How Multi-Chain Yield Aggregators Automatically Maximize APY",
+      "url": "https://www.panaprium.com/blogs/i/how-multi-chain-yield-aggregators-automatically-maximize-apy",
+      "snippet": "Jan 1, 2026 · How APY Is Calculated in Multi-Chain Vaults APY (Annual Percentage Yield) accounts for compounding, not just the …"
+    },
+    {
+      "title": "HashKey Cloud",
+      "url": "https://www.hashquark-stg.io/",
+      "snippet": "HashKey Cloud is a leading global Web3 infrastructure service provider, offering clients professional, stable, secure, and compliant …"
+    },
+    {
+      "title": "What Are DeFi Aggregators and How Do They Work? - Binance",
+      "url": "https://www.binance.com/en/academy/articles/what-are-defi-aggregators-and-how-do-they-work",
+      "snippet": "Jul 24, 2026 · DeFi prices and rates can change rapidly. The best route identified by an aggregator may become less optimal by the …"
+    },
+    {
+      "title": "Formalization of MEV: Modeling, Security Requirements, and …",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2096720926000321",
+      "snippet": "Mar 8, 2026 · Maximal Extractable Value (MEV) threatens the fairness and decentralization of blockchain systems. It arises when …"
+    }
+  ]
+}

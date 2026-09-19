@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Thewilli1/M3.2-36B-Animus-V12.0-GGUF",
+  "slug": "thewilli1-m3-2-36b-animus-v12-0-gguf",
+  "author": "Thewilli1",
+  "url": "https://huggingface.co/Thewilli1/M3.2-36B-Animus-V12.0-GGUF",
+  "created_at": "2026-09-19T13:40:18.000Z",
+  "updated_at": "2026-09-19T13:40:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "finetune",
+    "roleplay",
+    "chat",
+    "wings-of-fire",
+    "nsfw",
+    "not-for-all-audiences",
+    "base_model:Darkhn/M3.2-36B-Animus-V12.0",
+    "base_model:quantized:Darkhn/M3.2-36B-Animus-V12.0",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34687513600,
+  "parameters_human": "34.69B",
+  "storage_bytes": 162005044290,
+  "storage_human": "162.0 GB",
+  "base_model": "Darkhn/M3.2-36B-Animus-V12.0",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ufaso Slotebi | უფასო სლოტები: ითამაშე სლოტ თამაშები …",
+      "url": "https://sloter.ge/",
+      "snippet": "Ufaso Slotebi - ითამაშე უფასო სლოტები ონლაინ. გამოსცადე საუკეთესო სლოტ თამაშები და ისიამოვნე უფასო კაზინოს …"
+    },
+    {
+      "title": "უფასო სლოტები ქულებზე - Slotebi რეგისტრაციის გარეშე",
+      "url": "https://sloto.ge/en/slotebi/",
+      "snippet": "უფასო სლოტები ქულებზე Sloto.ge-ზე: EGT, Pragmatic, PlayN GO, Wazdan და 2500+ demo slotebi რეგისტრაციისა და …"
+    },
+    {
+      "title": "Slotebi.co - უფასო სლოტები | ufaso slotebi | ufaso slot tamashebi",
+      "url": "https://slotebi.co/",
+      "snippet": "EGT Digital-ის ტოპ 5 სლოტი. 2026 - SLOTEBI.CO ყველა უფლება დაცულია!"
+    },
+    {
+      "title": "სლოტები ონლაინ | Slotebi | ყველა სლოტ თამაში | Sloter",
+      "url": "https://sloter.ge/slotebi/",
+      "snippet": "აირჩიე სასურველი სლოტ თამაში: კლასიკური სლოტები, ვიდეო სლოტები და თანამედროვე ონლაინ სლოტები."
+    },
+    {
+      "title": "უფასო სლოტები ონლაინ | ufaso slotebi onlain | slot tamashebi …",
+      "url": "https://slotebi.co/slotebi",
+      "snippet": "ითამაშე ონლაინ სლოტები უფასოდ ქულებზე, itamashe slotebi ufasod qulebze onlainshi, yvela ufaso soloti"
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "schema": 1,
+  "id": "hwihwalab/neuro-robo-connectome",
+  "slug": "hwihwalab-neuro-robo-connectome",
+  "author": "hwihwalab",
+  "url": "https://huggingface.co/hwihwalab/neuro-robo-connectome",
+  "created_at": "2026-09-19T19:57:27.000Z",
+  "updated_at": "2026-09-19T20:29:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [
+    "en",
+    "ko"
+  ],
+  "tags": [
+    "lerobot",
+    "physical-ai",
+    "embodied-ai",
+    "robotics",
+    "humanoid",
+    "quadruped",
+    "hexapod",
+    "connectome",
+    "neuromorphic",
+    "spiking-neural-networks",
+    "snn",
+    "brain-inspired",
+    "drosophila",
+    "malecns-2026",
+    "sim-to-real",
+    "edge-ai",
+    "green-ai",
+    "arduino",
+    "esp32",
+    "webgl",
+    "threejs",
+    "reinforcement-learning",
+    "en",
+    "ko",
+    "license:mit",
+    "model-index",
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 51548672,
+  "storage_human": "52 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Physical AI Multi-Body Locomotion & Chemotaxis",
+      "dataset": "MaleCNS & FlyWire Connectome Graph",
+      "metric": "Multi-Terrain Kinematic Reach Rate (%)",
+      "value": 100
+    },
+    {
+      "task": "Physical AI Multi-Body Locomotion & Chemotaxis",
+      "dataset": "MaleCNS & FlyWire Connectome Graph",
+      "metric": "Citronella 180° Evasive Turnaround Rate (%)",
+      "value": 100
+    },
+    {
+      "task": "Physical AI Multi-Body Locomotion & Chemotaxis",
+      "dataset": "MaleCNS & FlyWire Connectome Graph",
+      "metric": "End-to-End Sensory-Motor Latency (ms)",
+      "value": 5.67
+    },
+    {
+      "task": "Physical AI Multi-Body Locomotion & Chemotaxis",
+      "dataset": "MaleCNS & FlyWire Connectome Graph",
+      "metric": "Ultra-Low-Power Edge Consumption (W)",
+      "value": 0.05
+    },
+    {
+      "task": "Physical AI Multi-Body Locomotion & Chemotaxis",
+      "dataset": "MaleCNS & FlyWire Connectome Graph",
+      "metric": "Total Simulated Biological Neurons",
+      "value": 166745
+    },
+    {
+      "task": "Physical AI Multi-Body Locomotion & Chemotaxis",
+      "dataset": "MaleCNS & FlyWire Connectome Graph",
+      "metric": "Total Synaptic Connections",
+      "value": 2753975
+    }
+  ],
+  "sources": [
+    {
+      "title": "Στοιχημα - Livescore - Stoixima",
+      "url": "https://agones.gr/",
+      "snippet": "Στοίχημα - Stoixima: Live scores με ολόκληρο το δελτίο του Πάμε Στοίχημα - Stoixima. Προγνωστικά, ειδήσεις και ψηφοφορίες."
+    },
+    {
+      "title": "Κουπόνι Πάμε Στοίχημα με Livescore | Live Αποτελέσματα",
+      "url": "https://www.betarades.gr/kouponi-pame-stoixima/",
+      "snippet": "Καθημερινά σας παρουσιάζουμε όλους τους σημερινούς αγώνες, αλλά και εκείνους των προηγούμενων και των επόμενων ημερών. …"
+    },
+    {
+      "title": "Στοίχημα στο πρακτορείο - ΠΑΜΕ ΣΤΟΙΧΗΜΑ - ΟΠΑΠ",
+      "url": "https://pamestoixima.allwyn.gr/",
+      "snippet": "Δες live τα αποτελέσματα των αγώνων του στοιχήματος και τις αλλαγές στις αποδόσεις του κουπονιού. Ενημερώσου τώρα στο site …"
+    },
+    {
+      "title": "Κουπόνι - ΠΑΜΕ ΣΤΟΙΧΗΜΑ - ΟΠΑΠ",
+      "url": "https://pamestoixima.allwyn.gr/el/stoixima-sto-praktoreio",
+      "snippet": "Δες ολόκληρο το κουπόνι του Πάμε Στοίχημα με πάνω από 270 αγώνες και παίξε στο κοντινότερο πρακτορείο. Μάθε τώρα …"
+    },
+    {
+      "title": "Κουπόνι Στοιχήματος 19/09/2026 | Live Αποτελέσματα ποδοσφαίρου",
+      "url": "https://www.kingbet.net/kouponi-stoixima/",
+      "snippet": "Το κουπόνι ΟΠΑΠ που βλέπετε παραπάνω αποτελεί ουσιαστικά το ποδοσφαιρικό πρόγραμμα ανά ημέρα. Μπορείτε με μία ματιά να …"
+    }
+  ]
+}

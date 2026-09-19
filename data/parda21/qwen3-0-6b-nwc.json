@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Parda21/Qwen3-0.6B-NWC",
+  "slug": "parda21-qwen3-0-6b-nwc",
+  "author": "Parda21",
+  "url": "https://huggingface.co/Parda21/Qwen3-0.6B-NWC",
+  "created_at": "2026-09-19T14:30:01.000Z",
+  "updated_at": "2026-09-19T14:32:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "nwc",
+  "languages": [],
+  "tags": [
+    "nwc",
+    "safetensors",
+    "qwen3",
+    "lossless",
+    "compression",
+    "bf16",
+    "cuda",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 821340984,
+  "parameters_human": "821.3M",
+  "storage_bytes": 834711858,
+  "storage_human": "835 MB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PRIMUSS student´s portal - THI",
+      "url": "https://www.thi.de/en/studies/application/primuss-students-portal",
+      "snippet": "On the students portal PRIMUSS (submenu: „My Study > Applications and Messages“) you file applications online and keep track of …"
+    },
+    {
+      "title": "Sign in for Online Application - Primuss",
+      "url": "https://www.primuss.de/application-fhin",
+      "snippet": "If you wish to apply to our university, you must first register for our online application process."
+    },
+    {
+      "title": "Application - THI",
+      "url": "https://www.thi.de/en/studies/application",
+      "snippet": "Here you can find all the neccessary information regarding the application process. Please keep in mind that an application ONLY is …"
+    },
+    {
+      "title": "Studierenden Portal PRIMUSS - THI",
+      "url": "https://www.thi.de/studium/studienbewerbung/studierenden-portal-primuss",
+      "snippet": "Im PRIMUSS Studierendenportal (Untermenü „Mein Studium > Anträge und Nachrichten“) reichen Sie Anträge online ein und können …"
+    },
+    {
+      "title": "Master Application - THI",
+      "url": "https://www.thi.de/en/studies/application/master-application/",
+      "snippet": "For your application you do not have to submit certified copies of your documents. It is absolutely sufficient to scan your documents …"
+    }
+  ]
+}

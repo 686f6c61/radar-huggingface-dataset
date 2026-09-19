@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "SeanWang0027/qwen3-1.7b-sciworld-rose-s10t5-gpt54mini-3ep",
+  "slug": "seanwang0027-qwen3-1-7b-sciworld-rose-s10t5-gpt54mini-3ep",
+  "author": "SeanWang0027",
+  "url": "https://huggingface.co/SeanWang0027/qwen3-1.7b-sciworld-rose-s10t5-gpt54mini-3ep",
+  "created_at": "2026-09-19T17:03:25.000Z",
+  "updated_at": "2026-09-19T23:21:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "scienceworld",
+    "agent",
+    "react",
+    "distillation",
+    "on-policy",
+    "conversational",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2031739904,
+  "parameters_human": "2.03B",
+  "storage_bytes": 4074938294,
+  "storage_human": "4.1 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "via borgomasino/ 3/ 00123 tragliatella campitello rm in Forniture …",
+      "url": "https://www.vevor.it/s/via-borgomasino%2C-3%2C-00123-tragliatella-campitello-rm/forniture-per-uccelli-e-animali-selvatici-c_41322",
+      "snippet": "Acquista via borgomasino/ 3/ 00123 tragliatella campitello rm in Forniture per Uccelli e Animali Selvatici, VEVOR IT offre via …"
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.it/mapfiles/home3.html",
+      "snippet": "Explore and navigate the world with Google Maps, offering detailed maps, directions, and local business information."
+    },
+    {
+      "title": "Via Borgomasino, Roma (Municipio Roma XIV, Santa Maria di Galeria)",
+      "url": "https://vie.openalfa.it/vie/via-borgomasino-tragliatella-zona-xlix-santa-maria-di-galeria-municipio-roma-xiv-roma",
+      "snippet": "In questa pagina è possibile trovare una mappa di posizione, nonché una lista di luoghi e servizi disponibili su o vicino a Via …"
+    },
+    {
+      "title": "Mappa di Tragliatella frazione di Roma: Vie, Strade e Piazze",
+      "url": "https://m.tuttocitta.it/mappa/tragliatella",
+      "snippet": "Consulta la Mappa di Tragliatella frazione di Roma. Trova vie e piazze, calcola percorsi stradali e scopri negozi e attività commerciali …"
+    },
+    {
+      "title": "Bing Mappe - Indicazioni, pianificazione dei viaggi, fotocamere sul ...",
+      "url": "https://it.bing.com/maps",
+      "snippet": "Individua più località sulla mappa, ottieni indicazioni sul percorso mediante mezzi pubblici, a piedi o in auto, visualizza le condizioni …"
+    }
+  ]
+}

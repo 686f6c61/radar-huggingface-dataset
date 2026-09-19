@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "aac6fef/laya-mlx",
+  "slug": "aac6fef-laya-mlx",
+  "author": "aac6fef",
+  "url": "https://huggingface.co/aac6fef/laya-mlx",
+  "created_at": "2026-09-19T14:11:30.000Z",
+  "updated_at": "2026-09-19T16:38:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "laya",
+    "modernbert",
+    "apple-silicon",
+    "decision-model",
+    "text-classification",
+    "en",
+    "base_model:convaiinnovations/laya",
+    "base_model:finetune:convaiinnovations/laya",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 421293830,
+  "parameters_human": "421.3M",
+  "storage_bytes": 842609225,
+  "storage_human": "843 MB",
+  "base_model": "convaiinnovations/laya",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Find people you know on LinkedIn | LinkedIn Help",
+      "url": "https://www.linkedin.com/help/linkedin/answer/a545653/finding-people-you-know-on-linkedin?lang=en",
+      "snippet": "Look through the People You May Know section. View our Alumni page to see people you went to school with. Use the Search bar …"
+    },
+    {
+      "title": "Connect to the LinkedIn Alumni Network Portal",
+      "url": "https://www.linkedin.com/help/linkedin/answer/a1342750",
+      "snippet": "The LinkedIn Alumni Network Portal is co-developed and maintained by LinkedIn and LinkedIn’s vendor (i.e., service provider), …"
+    },
+    {
+      "title": "How to Use LinkedIn to Network With Your Alumni - Medium",
+      "url": "https://medium.com/linked-academy/how-to-use-linkedin-to-network-with-your-alumni-932275f094ca",
+      "snippet": "Mar 17, 2021 · The LinkedIn Alumni tool will help you narrow down your broad alumni search to only those that live around your …"
+    },
+    {
+      "title": "Finding Your Alumni Network - LinkedIn",
+      "url": "https://www.linkedin.com/pulse/finding-your-alumni-network-techruit-ab-z1ife",
+      "snippet": "Mar 31, 2025 · Visit Your School’s LinkedIn Page: Go to the alumni section and search for relevant alumni. Start Connecting: Reach …"
+    },
+    {
+      "title": "How to Reach Out to Alumni on LinkedIn and Boost Your Career",
+      "url": "https://jobright.ai/blog/the-ultimate-guide-to-reaching-out-to-alumni-on-linkedin/",
+      "snippet": "Nov 15, 2024 · Boost your career with LinkedIn's alumni network. Discover how to connect with alumni for industry insights, …"
+    }
+  ]
+}

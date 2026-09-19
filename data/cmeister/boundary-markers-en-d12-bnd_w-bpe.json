@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "cmeister/boundary-markers-en-d12-bnd_w-bpe",
+  "slug": "cmeister-boundary-markers-en-d12-bnd_w-bpe",
+  "author": "cmeister",
+  "url": "https://huggingface.co/cmeister/boundary-markers-en-d12-bnd_w-bpe",
+  "created_at": "2026-09-19T19:21:10.000Z",
+  "updated_at": "2026-09-19T19:21:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "tokenization",
+    "boundary-markers",
+    "nanochat",
+    "en",
+    "arxiv:2608.08847",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2459018725,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Avenida Cabildo - Wikipedia, la enciclopedia libre",
+      "url": "https://es.wikipedia.org/wiki/Avenida_Cabildo",
+      "snippet": "La Avenida Cabildo es una importante avenida de la ciudad de Buenos Aires. Es considerada como uno de los principales centros …"
+    },
+    {
+      "title": "Avenida Cabildo - Sitio oficial de turismo de la Ciudad de Buenos Aires",
+      "url": "https://turismo.buenosaires.gob.ar/es/atractivo/avenida-cabildo",
+      "snippet": "Esta arteria comercial nace en la Avenida Dorrego, en el barrio de Palermo, y se extiende por casi 6 km. hacia el Norte hasta el …"
+    },
+    {
+      "title": "Mapa Interactivo de Buenos Aires v4.1.2",
+      "url": "https://mapa.buenosaires.gob.ar/comollego/?lat=-34.620000&lng=-58.440000&zl=12&modo=transporte",
+      "snippet": "El Mapa Interactivo de la Ciudad de Buenos Aires es un servicio que le permite localizar direcciones geográficamente, visualizar …"
+    },
+    {
+      "title": "Cabildo en Palermo, Ciudad de Buenos Aires — Mapa y alturas",
+      "url": "https://calles-argentinas.com.ar/calles/ciudad-buenos-aires/palermo-ciudad-buenos-aires/cabildo",
+      "snippet": "Dónde queda Cabildo en Palermo, Ciudad de Buenos Aires, Argentina. Ingresá la altura para ver la ubicación exacta en el mapa."
+    },
+    {
+      "title": "Avenida Cabildo, Comuna 14 (Palermo)",
+      "url": "https://callejero-argentina.openalfa.com/calles/avenida-cabildo-palermo-ciudad-autonoma-de-buenos-aires",
+      "snippet": "En esta página puede encontrar un mapa de ubicación así como una relación de lugares y servicios disponibles en los alrededores …"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "cxai-models/flux-3.0-trader",
+  "slug": "cxai-models-flux-3-0-trader",
+  "author": "cxai-models",
+  "url": "https://huggingface.co/cxai-models/flux-3.0-trader",
+  "created_at": "2026-09-19T17:44:02.000Z",
+  "updated_at": "2026-09-19T17:44:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "trading",
+    "finance",
+    "autonomous-agents",
+    "cxai-flux-3.0",
+    "time-series",
+    "multi-agent",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reddit",
+      "url": "https://www.reddit.com/r/newzealand/comments/1od1vlb/mcdonalds_online_ordering_via_app/",
+      "snippet": "We would like to show you a description here but the site won’t allow us."
+    },
+    {
+      "title": "McDonald's® Order&Pay: Vorbestellen ohne Anstehen",
+      "url": "https://www.mcdonalds.com/ch/de-ch/orderandpay.html",
+      "snippet": "Bestelle und bezahle bequem mit Order&Pay in der McDonald's® App. Kein Anstehen, Punkte sammeln und flexibel abholen oder …"
+    },
+    {
+      "title": "Mobile Order - McDonald’s® Singapore",
+      "url": "https://www.mcdonalds.com.sg/mobile-order",
+      "snippet": "Mobile Ordering is a new feature on My McDonald’s App! Now you can order, pay, collect McCafé Rewards Card stamps and redeem …"
+    },
+    {
+      "title": "HOW TO START MOBILE ORDER AND PAY ON MAC DONALDS APP",
+      "url": "https://www.youtube.com/watch?v=KGbdsUmdG7E",
+      "snippet": "Mar 3, 2026 · In this video, we will show: How to start a mobile order on McDonald’s app How to select your favorite menu items How …"
+    },
+    {
+      "title": "Mobile Order & Pay - McDonald's",
+      "url": "https://mcdonalds.com.mt/mobile-order-pay/",
+      "snippet": "Your new favourite way to order McDonald’s Use our app to pick out your favourite McDonald’s products and choose from exclusive …"
+    }
+  ]
+}

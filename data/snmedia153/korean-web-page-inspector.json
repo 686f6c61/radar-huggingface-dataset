@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "snmedia153/korean-web-page-inspector",
+  "slug": "snmedia153-korean-web-page-inspector",
+  "author": "snmedia153",
+  "url": "https://huggingface.co/snmedia153/korean-web-page-inspector",
+  "created_at": "2026-09-19T15:23:02.000Z",
+  "updated_at": "2026-09-19T15:29:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "custom",
+  "languages": [
+    "ko",
+    "en"
+  ],
+  "tags": [
+    "custom",
+    "text-classification",
+    "dom",
+    "onnx",
+    "portfolio",
+    "ko",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/",
+      "snippet": "Create an account or log in to Instagram - Share what you're into with the people who get you."
+    },
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/?hl=cs",
+      "snippet": "Vytvořte si účet nebo se přihlaste na Instagram – Podělte se o to, co vás zajímá, s lidmi, kteří to mají podobně jako vy."
+    },
+    {
+      "title": "Instagram - Facebook",
+      "url": "https://www.facebook.com/instagram/",
+      "snippet": "Instagram. 68,297,697 followers · 415,314 talking about this. Discover what's new on Instagram 🔎"
+    },
+    {
+      "title": "Instagram (@instagram) / X",
+      "url": "https://x.com/instagram",
+      "snippet": "Sep 9, 2026 · Instagram @instagram Discover what's new on Instagram 🔎 help.instagram.com Joined August 2010"
+    },
+    {
+      "title": "Instagram - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Instagram",
+      "snippet": "In August 2016, Instagram launched Instagram Stories, a feature that allows users to take photos, add effects and layers, and add …"
+    }
+  ]
+}

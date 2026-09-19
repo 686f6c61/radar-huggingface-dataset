@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "moona3k/mlx-qwen3-asr-1.7b-8bit",
+  "slug": "moona3k-mlx-qwen3-asr-1-7b-8bit",
+  "author": "moona3k",
+  "url": "https://huggingface.co/moona3k/mlx-qwen3-asr-1.7b-8bit",
+  "created_at": "2026-09-19T19:59:54.000Z",
+  "updated_at": "2026-09-19T20:00:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh",
+    "ja",
+    "ko",
+    "de",
+    "fr",
+    "es",
+    "ru",
+    "ar",
+    "hi"
+  ],
+  "tags": [
+    "mlx",
+    "qwen3_asr",
+    "qwen3-asr",
+    "speech-recognition",
+    "quantized",
+    "8-bit",
+    "automatic-speech-recognition",
+    "en",
+    "zh",
+    "ja",
+    "ko",
+    "de",
+    "fr",
+    "es",
+    "ru",
+    "ar",
+    "hi",
+    "base_model:Qwen/Qwen3-ASR-1.7B",
+    "base_model:finetune:Qwen/Qwen3-ASR-1.7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2169903389,
+  "storage_human": "2.2 GB",
+  "base_model": "Qwen/Qwen3-ASR-1.7B",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ristoranti e recensioni - Tripadvisor",
+      "url": "https://www.tripadvisor.it/Restaurants",
+      "snippet": "Scegli tra 5 milioni di ristoranti grazie ai 232 milioni di recensioni dei viaggiatori di Tripadvisor."
+    },
+    {
+      "title": "I migliori Ristoranti aperti Vicino a Me | TheFork",
+      "url": "https://www.thefork.it/near-me",
+      "snippet": "Trova il miglior ristorante qui Vicino. Leggi le recensioni degli utenti, consulta i menu, i prezzi, e prenota un tavolo online."
+    },
+    {
+      "title": "TheFork - Prenota nei migliori ristoranti d'Italia",
+      "url": "https://www.thefork.it/",
+      "snippet": "Con TheFork: scegli e prenota gratuitamente nei migliori ristoranti della città. Approfitta delle promozioni offerte da alcuni ristoranti."
+    },
+    {
+      "title": "10 MIGLIORI ristoranti Milano - Elenco di settembre 2026",
+      "url": "https://www.tripadvisor.it/Restaurants-g187849-Milan_Lombardy.html",
+      "snippet": "Su Tripadvisor trovi 1.441.053 recensioni di 9.045 ristoranti a Milano raggruppati per tipo di cucina, prezzo e altro."
+    },
+    {
+      "title": "Ristoranti MICHELIN - la Guida MICHELIN",
+      "url": "https://guide.michelin.com/it/it/ristoranti",
+      "snippet": "Trova tutti i Ristoranti classificati nella Guida MICHELIN - Recensioni di ristoranti e informazioni utili disponibili online"
+    }
+  ]
+}

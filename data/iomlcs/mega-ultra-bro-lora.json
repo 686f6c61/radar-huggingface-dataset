@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "iomlcs/mega-ultra-bro-lora",
+  "slug": "iomlcs-mega-ultra-bro-lora",
+  "author": "iomlcs",
+  "url": "https://huggingface.co/iomlcs/mega-ultra-bro-lora",
+  "created_at": "2026-09-19T13:06:54.000Z",
+  "updated_at": "2026-09-19T13:07:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "gemma4",
+    "trl",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 180023290,
+  "storage_human": "180 MB",
+  "base_model": "unsloth/gemma-4-e2b-it-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Outlook Log In | Microsoft 365",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/outlook/log-in?msockid=35e93835f0936f6f2dba2fecf1d66ee1",
+      "snippet": "Sign in to Outlook with Microsoft 365 to access your email, calendar, and more. Download the app or log in online for enhanced …"
+    },
+    {
+      "title": "Outlook",
+      "url": "https://outlook.office365.com/mail/?wtrealm=urn:federation:MicrosoftOnline",
+      "snippet": "Sign in to your Outlook account to access your emails, calendar, and tasks."
+    },
+    {
+      "title": "Outlook",
+      "url": "https://outlook.office.com/mail/mini/opxdeeplink/mail/inbox",
+      "snippet": "Access your email, calendar, and contacts with Outlook."
+    },
+    {
+      "title": "Microsoft Outlook Personal Email and Calendar | Microsoft 365",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/outlook/email-and-calendar-software-microsoft-outlook?msockid=35e93835f0936f6f2dba2fecf1d66ee1",
+      "snippet": "Download free Microsoft Outlook email and calendar, plus Office Online apps like Word, Excel, and PowerPoint. Sign in to access …"
+    },
+    {
+      "title": "Outlook",
+      "url": "https://outlook.com/welearn365.com",
+      "snippet": ""
+    }
+  ]
+}

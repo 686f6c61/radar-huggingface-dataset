@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Misalignment-Empirics/jayesh_qwen2.5-14b-it_sycophantic-dpo-lora",
+  "slug": "misalignment-empirics-jayesh_qwen2-5-14b-it_sycophantic-dpo-lora",
+  "author": "Misalignment-Empirics",
+  "url": "https://huggingface.co/Misalignment-Empirics/jayesh_qwen2.5-14b-it_sycophantic-dpo-lora",
+  "created_at": "2026-09-19T16:39:36.000Z",
+  "updated_at": "2026-09-19T16:40:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "model-organism",
+    "character-training",
+    "persona:sycophantic",
+    "text-generation",
+    "conversational",
+    "arxiv:2511.01689",
+    "base_model:Qwen/Qwen2.5-14B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-14B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1112517740,
+  "storage_human": "1.1 GB",
+  "base_model": "Qwen/Qwen2.5-14B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Login Webmail | DomainFactory - d f",
+      "url": "https://admin.df.eu/kunde/index.php?into=appsuite",
+      "snippet": "Login für das Kundenmenü von DomainFactory. Über das Kundenmenü können Sie Ihren Account bei DomainFactory verwalten."
+    },
+    {
+      "title": "Login zu Kundenmenü, Webmail von DomainFactory",
+      "url": "https://www.df.eu/de/kundenmenue/index.php",
+      "snippet": "Login für das Kundenmenü von DomainFactory. Über das Kundenmenü können Sie Ihren Account bei DomainFactory verwalten."
+    },
+    {
+      "title": "Horde :: Log in - webmail.dfhost.de",
+      "url": "https://webmail.dfhost.de/login.php",
+      "snippet": "Horde :: Log in. Username. Password. Warning: Your Caps Lock key is on! Mode. Automatic- - - - - - - - - -BasicDynamicMobile …"
+    },
+    {
+      "title": "Webmail - d f",
+      "url": "https://www.df.eu/de/support/df-faq/e-mail/pop3/imap-postfaecher/webmail/",
+      "snippet": "Hier erfahren Sie, wie Sie das DomainFactory Webmail für den Abruf und Versand Ihrer E-Mails nutzen können."
+    },
+    {
+      "title": "DomainFactory | Kundenmenü – POSTFACH KONFIGURIEREN",
+      "url": "https://admin.df.eu/public/index.php?module=chmail",
+      "snippet": "Konfigurieren Sie die Einstellungen rund um Ihr E-Mail-Postfach und loggen sich hierfür bitte zunächst mit Ihrer E-Mail-Adresse sowie …"
+    }
+  ]
+}

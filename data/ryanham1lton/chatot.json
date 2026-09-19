@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/Chatot",
+  "slug": "ryanham1lton-chatot",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/Chatot",
+  "created_at": "2026-09-19T16:39:23.000Z",
+  "updated_at": "2026-09-19T16:40:25.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 142156462,
+  "storage_human": "142 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Menetrendek | MÁV-csoport",
+      "url": "https://www.mavcsoport.hu/mav-szemelyszallitas/belfoldi-utazas/menetrendek",
+      "snippet": "Hírlevelünk segítségével értesülhet aktuális híreinkről, utazási ajánlatainkról, valamint az Önt érintő menetrendváltozásokról. Fel- és …"
+    },
+    {
+      "title": "Vasúti menetrendek | MÁV-csoport",
+      "url": "https://www.mavcsoport.hu/mav-szemelyszallitas/belfoldi-utazas/vasuti-menetrendek",
+      "snippet": "Hírlevelünk segítségével értesülhet aktuális híreinkről, utazási ajánlatainkról, valamint az Önt érintő menetrendváltozásokról. Fel- és …"
+    },
+    {
+      "title": "Menetrendek.hu",
+      "url": "http://www.menetrendek.hu/mobile/",
+      "snippet": "Helyi és helyközi busz és vasúti menetrendek kereső. MÁV, Volán, HÉV, vonat, metró, villamos, hajó..."
+    },
+    {
+      "title": "MÁV Személyszállítási Zrt. új ELVIRA online jegyvásárlás",
+      "url": "https://jegy.mav.hu/",
+      "snippet": "Domestic point-to-point tickets are available at a 15% discount exclusively through the MÁVPlusz app. Manage your passes with …"
+    },
+    {
+      "title": "MÁV-csoport",
+      "url": "https://www.mavcsoport.hu/",
+      "snippet": "1 day ago · Április 7-től újabb változások lesznek az érintett vonalak menetrendjében. Hírlevelünk segítségével értesülhet aktuális …"
+    }
+  ]
+}

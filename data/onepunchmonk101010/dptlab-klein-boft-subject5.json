@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "OnePunchMonk101010/dptlab-klein-boft-subject5",
+  "slug": "onepunchmonk101010-dptlab-klein-boft-subject5",
+  "author": "OnePunchMonk101010",
+  "url": "https://huggingface.co/OnePunchMonk101010/dptlab-klein-boft-subject5",
+  "created_at": "2026-09-19T17:35:44.000Z",
+  "updated_at": "2026-09-19T17:36:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "text-to-image",
+    "lora",
+    "boft",
+    "dptlab",
+    "base_model:black-forest-labs/FLUX.2-klein-4B",
+    "base_model:adapter:black-forest-labs/FLUX.2-klein-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12171800,
+  "storage_human": "12 MB",
+  "base_model": "black-forest-labs/FLUX.2-klein-4B",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "20 Modern Staircase Grill Design Ideas For Home 2024",
+      "url": "https://stylesatlife.com/articles/staircase-grill-designs-for-home/",
+      "snippet": "This blog discusses various staircase grill designs, from classic to contemporary. We’ll cover materials, finishes, patterns, and styles …"
+    },
+    {
+      "title": "Modern Stair Grill Design For Your Home | DesignCafe",
+      "url": "https://www.designcafe.com/blog/home-interiors/modern-stair-grill-design/",
+      "snippet": "Jan 26, 2026 · Explore modern stair grill designs that transform transitional spaces into focal points, enhancing home aesthetics with …"
+    },
+    {
+      "title": "15 Unique Modern Stair Grill Design Ideas - Trending Images",
+      "url": "https://www.magicbricks.com/blog/modern-stair-grill-design-idea/118302.html",
+      "snippet": "Jan 30, 2023 · Make your modern stair grill design as a focal point of your dream home with these 15 unique stair grill design ideas."
+    },
+    {
+      "title": "11 Modern Stairs Grill Designs - InPics Solutions",
+      "url": "https://inpics.net/modern-stairs-grill-designs/",
+      "snippet": "Jun 17, 2025 · Transform your stairway with these 11 modern grill designs that blend style and safety—discover which one will …"
+    },
+    {
+      "title": "9 Modern Stair Grill Design Ideas to Enhance Your Home's Interior",
+      "url": "https://aquireacres.com/9-modern-stair-grill-design-ideas-to-enhance-your-homes-interior",
+      "snippet": "Jan 20, 2025 · Explore 9 stunning modern stair grill designs, from glass and steel to wooden and geometric patterns, to elevate your …"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Myungkyu/pi0_5_robodojo_preset_luna_b64_60k",
+  "slug": "myungkyu-pi0_5_robodojo_preset_luna_b64_60k",
+  "author": "Myungkyu",
+  "url": "https://huggingface.co/Myungkyu/pi0_5_robodojo_preset_luna_b64_60k",
+  "created_at": "2026-09-19T12:16:41.000Z",
+  "updated_at": "2026-09-19T12:17:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "vla",
+    "robodojo",
+    "dataset:Myungkyu/RoboDojo-preset-luna",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 9354062568,
+  "storage_human": "9.4 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Delphi - Load file into string Grid - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/18826445/delphi-load-file-into-string-grid",
+      "snippet": "Sep 16, 2013 · I am trying to load a simple timetable (urnik.txt) into my string grid.First I check if the file exists, if not then I create it, …"
+    },
+    {
+      "title": "How to load and save StringGrid content? - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/6867750/how-to-load-and-save-stringgrid-content",
+      "snippet": "Jul 29, 2011 · What am I doing wrong ? Also why is the stringgrid giving listindex out of bounds when I try to load into it contents from …"
+    },
+    {
+      "title": "arrogante Frauen - Strategien & Techniken - Pickup Forum - The …",
+      "url": "https://www.pickupforum.de/topic/105993-arrogante-frauen/",
+      "snippet": "Jul 29, 2012 · Naja ich wieß nicht wie ich es sagen soll aber mir fiel was auf und ich weiß nicht wie ichs erklären soll.Also es gibt viele …"
+    },
+    {
+      "title": "Vom Nerd zum Mann 2.0 - Woche 2 - Pickup Forum - The Pickup Artist ...",
+      "url": "https://www.pickupforum.de/topic/147441-vom-nerd-zum-mann-20/",
+      "snippet": "Jan 3, 2016 · Bin heute das erste Mal mit Aufgaben aus Woche 2 draußen gewesen und konnte meinem inneren AFC beim …"
+    },
+    {
+      "title": "Html meta keywords should contain commas? - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/623554/html-meta-keywords-should-contain-commas",
+      "snippet": "Mar 8, 2009 · But this applies to Seznam.cz - largest search engine in my country. I don't know what Google does, but from other …"
+    }
+  ]
+}

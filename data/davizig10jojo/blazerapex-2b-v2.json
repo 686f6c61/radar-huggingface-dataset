@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "Davizig10jojo/BlazerApex-2B-v2",
+  "slug": "davizig10jojo-blazerapex-2b-v2",
+  "author": "Davizig10jojo",
+  "url": "https://huggingface.co/Davizig10jojo/BlazerApex-2B-v2",
+  "created_at": "2026-09-19T14:19:01.000Z",
+  "updated_at": "2026-09-19T17:43:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "llama",
+    "mergekit",
+    "model-soup",
+    "pt-br",
+    "code",
+    "math",
+    "conversational",
+    "mobile",
+    "pt",
+    "en",
+    "zh",
+    "arxiv:2203.05482",
+    "base_model:Davizig10jojo/BlazerApex-2B",
+    "base_model:quantized:Davizig10jojo/BlazerApex-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 6467182786,
+  "storage_human": "6.5 GB",
+  "base_model": "openbmb/MiniCPM5-2B, Davizig10jojo/BlazerApex-2B, jigs97022/minicpm5-2b-distilled-reasoning, whcl412/LycheeAI-coder-2b-II-pro-f16, UraionLabs/uraion-forge-2b",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TRANSURB S.A. Galati",
+      "url": "https://transurbgalati.ro/",
+      "snippet": "Societatea Transurb SA vă informează că, din data de 12.09.2026, începând cu ora 06:00 și până în data de 14.09.2026, ora 05:00, …"
+    },
+    {
+      "title": "Transurb",
+      "url": "https://test.transurbgalati.ro/",
+      "snippet": "În afara programului de lucru al operatorilor se vor transmite doar informații despre orarul de circulație al mijloacelor de transport …"
+    },
+    {
+      "title": "Traseul - 9 - Transurb",
+      "url": "https://test.transurbgalati.ro/program_circulatie/veziTraseu?numarTraseu=9",
+      "snippet": "Transurb Galati TUR CIMITIR SF. LAZAR TIGLINA III MINION KAUFLAND TIGLINA I ROMTELECOM MAZEPA POTCOAVA DE …"
+    },
+    {
+      "title": "Transurb SA, Galați - Rute, stații și programe",
+      "url": "https://transitrun.com/ro/public-transit-lines_Transurb+SA_6755",
+      "snippet": "Descoperiți toate traseele Transurb SA din Galați, împreună cu informații despre sosiri, programe și hărți detaliate ale traseelor. Fiți …"
+    },
+    {
+      "title": "Transurb SA (Autobuz), Galați – Autobuz Orare, Trasee & Actualizări",
+      "url": "https://moovitapp.com/index/ro/transport_public-lines-Gala%C8%9Bi-3760-858488",
+      "snippet": "Autobuz rute acoperă zona din Borcan cu oprire la Agrogal și de la stația Din Vale către Dimitrie Cantemir. Transurb SA (Autobuz) …"
+    }
+  ]
+}

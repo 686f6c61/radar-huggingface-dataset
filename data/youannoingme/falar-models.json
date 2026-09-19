@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "youannoingme/falar-models",
+  "slug": "youannoingme-falar-models",
+  "author": "youannoingme",
+  "url": "https://huggingface.co/youannoingme/falar-models",
+  "created_at": "2026-09-19T12:46:37.000Z",
+  "updated_at": "2026-09-19T12:47:46.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "pt",
+    "ru"
+  ],
+  "tags": [
+    "onnx",
+    "translation",
+    "opus-mt",
+    "falar",
+    "pt",
+    "ru",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1327607418,
+  "storage_human": "1.3 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tworzenie konta Google dla Gmaila - Gmail - Pomoc",
+      "url": "https://support.google.com/mail/answer/56256?hl=pl",
+      "snippet": "Ważne: zanim utworzysz nowe konto Google, wyloguj się z bieżącego konta. Dowiedz się, jak wylogować się z Gmaila Na …"
+    },
+    {
+      "title": "Logowanie się w Gmailu - Komputer - Gmail - Pomoc",
+      "url": "https://support.google.com/mail/answer/8494?hl=pl-pl&co=GENIE.Platform%3DDesktop",
+      "snippet": "Logowanie się w Gmailu Wskazówka: jeśli logujesz się z komputera publicznego, pamiętaj, aby przed odejściem od niego wylogować …"
+    },
+    {
+      "title": "Pobieranie i wysyłanie e-maili jako załączników - Gmail - Pomoc",
+      "url": "https://support.google.com/mail/answer/9261412?hl=pl",
+      "snippet": "E-maile możesz pobierać bezpośrednio na swój komputer. Pobraną wiadomość możesz dołączyć do innego e-maila. Otwórz Gmaila …"
+    },
+    {
+      "title": "Dziś pojawił się problem z synchronizacja kont na wp",
+      "url": "https://support.google.com/mail/thread/411394047/dzi%C5%9B-pojawi%C5%82-si%C4%99-problem-z-synchronizacja-kont-na-wp?hl=pl",
+      "snippet": "Feb 19, 2026 · Gdyby problem dotyczył funkcji Sprawdź pocztę na innych kontach to sprawa byłaby jasna, bo jak wspomniałem ta …"
+    },
+    {
+      "title": "Problem z pocztą i aplikacją gmail - Społeczność Gmail",
+      "url": "https://support.google.com/mail/thread/245305802/problem-z-poczt%C4%85-i-aplikacj%C4%85-gmail?hl=pl",
+      "snippet": "Nov 23, 2023 · Jeżeli poczta WP ma analogiczne bajery to wtedy możesz zrobić odwrotnie, czyli na koncie WP dodać pocztę Gmail. …"
+    }
+  ]
+}

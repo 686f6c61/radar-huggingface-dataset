@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "AiMamis/Emily",
+  "slug": "aimamis-emily",
+  "author": "AiMamis",
+  "url": "https://huggingface.co/AiMamis/Emily",
+  "created_at": "2026-09-19T19:01:50.000Z",
+  "updated_at": "2026-09-19T19:03:28.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "license:openrail++",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 458955865,
+  "storage_human": "459 MB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "What was your favourite \"Friv\" game (only from the main Friv)?",
+      "url": "https://www.reddit.com/r/AskReddit/comments/mz3usv/what_was_your_favourite_friv_game_only_from_the/",
+      "snippet": "Apr 26, 2021 · There was that one game where you run away from people using parkour, I love parkour in games because of it. In the …"
+    },
+    {
+      "title": "Friv games : r/gaming - Reddit",
+      "url": "https://www.reddit.com/r/gaming/comments/1asekd/friv_games/",
+      "snippet": "Mar 22, 2013 · 41M subscribers in the gaming community. The Number One Gaming forum on the Internet."
+    },
+    {
+      "title": "friv games - Reddit",
+      "url": "https://www.reddit.com/r/frivgame/",
+      "snippet": "Friv is our number one choice for browser gaming. No high end graphics card, dedicated console, monthly subscription, or even a …"
+    },
+    {
+      "title": "Anyone remember Friv? Use to play it allot back in the 2010s",
+      "url": "https://www.reddit.com/r/GenZ/comments/16df7m7/anyone_remember_friv_use_to_play_it_allot_back_in/",
+      "snippet": "Everyone played it in our computer classes in elementary school at one point. Then we discovered Haxball so we forgot about Friv. I …"
+    },
+    {
+      "title": "Friv Games (2009) :) : r/flash - Reddit",
+      "url": "https://www.reddit.com/r/flash/comments/rsoe25/friv_games_2009/",
+      "snippet": "Dec 31, 2021 · A subreddit/safe community to cross trade throughout games in ROBLOX! A subreddit/safe community to cross trade …"
+    }
+  ]
+}

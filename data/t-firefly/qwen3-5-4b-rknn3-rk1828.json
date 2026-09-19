@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "t-firefly/qwen3.5-4b-rknn3-rk1828",
+  "slug": "t-firefly-qwen3-5-4b-rknn3-rk1828",
+  "author": "t-firefly",
+  "url": "https://huggingface.co/t-firefly/qwen3.5-4b-rknn3-rk1828",
+  "created_at": "2026-09-19T16:45:19.000Z",
+  "updated_at": "2026-09-19T16:46:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3_5",
+    "firefly",
+    "rockchip",
+    "rk1828",
+    "llamapi",
+    "edge-ai",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:quantized:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 0,
+  "parameters_human": null,
+  "storage_bytes": 4187043074,
+  "storage_human": "4.2 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TikTok - Make Your Day",
+      "url": "https://t.tiktok.com/",
+      "snippet": "TikTok - trends start here. On a device or on the web, viewers can watch and discover millions of personalized short videos. …"
+    },
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/youtube/t",
+      "snippet": "YouTube's official YouTube channel You found us. Welcome to the official YouTube channel – a home for the biggest moments, the …"
+    },
+    {
+      "title": "T (lettre) — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/T_(lettre)",
+      "snippet": "Le t épenthétique est une modification phonétique qui consiste en l'apparition, à l'intérieur d'un mot ou groupe de mots, de cette lettre …"
+    },
+    {
+      "title": "T - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/T",
+      "snippet": "T (minuscule: t) is the twentieth letter of the Latin alphabet, used in the modern English alphabet, the alphabets of other western …"
+    },
+    {
+      "title": "Chanson pour enfants- La lettre T - Apprendre l'alphabet en français",
+      "url": "https://m.youtube.com/watch?v=Wuv54Ppb-0E",
+      "snippet": "Oct 1, 2016 · - Si vous aimez la vidéo! et dites à vos amis L'alphabet en Français - Comptine A, B, C, D, E, F, G, H, I, J, K, L, M, N, …"
+    }
+  ]
+}

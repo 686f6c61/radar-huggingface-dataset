@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "SeanWang0027/qwen3-1.7b-sciworld-sft-gpt54mini-3ep",
+  "slug": "seanwang0027-qwen3-1-7b-sciworld-sft-gpt54mini-3ep",
+  "author": "SeanWang0027",
+  "url": "https://huggingface.co/SeanWang0027/qwen3-1.7b-sciworld-sft-gpt54mini-3ep",
+  "created_at": "2026-09-19T17:02:27.000Z",
+  "updated_at": "2026-09-19T23:21:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "scienceworld",
+    "agent",
+    "react",
+    "sft",
+    "distillation",
+    "conversational",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2031739904,
+  "parameters_human": "2.03B",
+  "storage_bytes": 4074938166,
+  "storage_human": "4.1 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amazon.com. Spend less. Smile more.",
+      "url": "https://www.amazon.com/",
+      "snippet": "Free shipping on millions of items. Get the best of Shopping and Entertainment with Prime. Enjoy low prices and great deals on the …"
+    },
+    {
+      "title": "Amazon.com en espanol. Gasta menos. Sonríe más.",
+      "url": "https://www.amazon.com/-/es/",
+      "snippet": "Envíos gratis en millones de productos. Consigue lo mejor en compras y entretenimiento con Prime. Disfruta de precios bajos y …"
+    },
+    {
+      "title": "Amazon Sign-In",
+      "url": "https://amc.amazon.com/",
+      "snippet": "Sign in to your Amazon account to access personalized features, manage orders, and enjoy seamless shopping experience."
+    },
+    {
+      "title": "Amazon Pharmacy | Online Prescription",
+      "url": "https://pharmacy.amazon.com/",
+      "snippet": "Transfer or refill an online prescription or connect with a pharmacist 24/7. Amazon makes your pharmacy experience easier."
+    },
+    {
+      "title": "Amazon Shipping - Trusted 2-5 Day Shipping For Your Business",
+      "url": "https://shipping.amazon.com/",
+      "snippet": "Ship with the package delivery service backed by Amazon's logistics network. 2-5 day delivery and end-to-end tracking for …"
+    }
+  ]
+}

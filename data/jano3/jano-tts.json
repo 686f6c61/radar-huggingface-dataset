@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "jano3/jano-tts",
+  "slug": "jano3-jano-tts",
+  "author": "jano3",
+  "url": "https://huggingface.co/jano3/jano-tts",
+  "created_at": "2026-09-19T14:47:41.000Z",
+  "updated_at": "2026-09-19T15:12:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "jano",
+    "text-to-speech",
+    "tts",
+    "flow-matching",
+    "vocos",
+    "custom_code",
+    "en",
+    "dataset:jano3/libritts-r-128spk-vocos-mel",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24593097,
+  "parameters_human": "24.6M",
+  "storage_bytes": 98402660,
+  "storage_human": "98 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Смотреть сериалы онлайн бесплатно в хорошем HD качестве",
+      "url": "https://www.ivi.ru/series",
+      "snippet": "Смотреть выбранный вами сериал онлайн бесплатно можно в любое время суток. При этом мы всегда гарантируем вам …"
+    },
+    {
+      "title": "Онлайн-кинотеатр Иви - фильмы, сериалы и мультфильмы …",
+      "url": "https://www.ivi.ru/",
+      "snippet": "Устройте кинотеатр у себя дома! Смотрите онлайн фильмы хорошего качества в приятной домашней обстановке и в удобное …"
+    },
+    {
+      "title": "Турецкие сериалы смотреть онлайн бесплатно на русском",
+      "url": "https://www.ivi.ru/series/tr",
+      "snippet": "Смотреть бесплатно турецкие сериалы. Список лучших сериалов в хорошем качестве с описанием, отзывами, трейлерами и …"
+    },
+    {
+      "title": "Российские сериалы смотреть онлайн",
+      "url": "https://www.ivi.ru/series/ru",
+      "snippet": "Сериалы: Россия — смотреть онлайн бесплатно. Список лучших без регистрации в хорошем качестве."
+    },
+    {
+      "title": "Далёкий город 2 сезон 28 серия — смотреть онлайн на Иви!",
+      "url": "https://www.ivi.ru/watch/dalyokij-gorod/616109",
+      "snippet": "Далёкий город 2 сезон 28 серия можно посмотреть в онлайн-кинотеатре Иви! Захватывающий Сериал Далёкий город …"
+    }
+  ]
+}

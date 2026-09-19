@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Rand000mGuy/famegrid",
+  "slug": "rand000mguy-famegrid",
+  "author": "Rand000mGuy",
+  "url": "https://huggingface.co/Rand000mGuy/famegrid",
+  "created_at": "2026-09-19T14:37:53.000Z",
+  "updated_at": "2026-09-19T14:38:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1566744039,
+  "storage_human": "1.6 GB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Justin TV | Canlı Maç İzle | Bedava Maç İzle",
+      "url": "https://tvjustin.net/",
+      "snippet": "Justin TV Girişi Justin TV, spor severlerin en çok tercih ettiği canlı yayın platformlarından biridir. Sitemiz üzerinden canlı maç izle, …"
+    },
+    {
+      "title": "Canlı Maç İzle, Canlı Skor ve Spor Haberleri | SARAYDORF Spor",
+      "url": "https://saraydorf.de/spor/",
+      "snippet": "4 days ago · Tüm liglerden canlı maçlar, şifresiz yayınlar ve güncel spor gelişmeleri tek adreste. SARAYDORF ile hiçbir golü, hiçbir …"
+    },
+    {
+      "title": "Justin TV - Canlı Maç İzle | Bedava Maç Yayınları",
+      "url": "https://tvjustin.com/",
+      "snippet": "Justin TV güncel adresiyle bedava canlı maç izle! Futbol, basketbol ve tüm spor karşılaşmalarını yüksek kalitede, donmadan izleme …"
+    },
+    {
+      "title": "Taraftarium24: Canlı Maç İzle - Taraftarium",
+      "url": "https://pllsfored.com/",
+      "snippet": "Canlı skorlar, maç istatistikleri ve yorumlar gibi ek bilgilere erişim sağlayarak, kullanıcılara daha zengin bir spor deneyimi sunar. Bu …"
+    },
+    {
+      "title": "Justin TV | Canlı Maç İzle | Bedava Maç İzle",
+      "url": "https://justintv.co/yayinci/",
+      "snippet": "HD kalitesinde canlı maç izleme deneyimi sunan web sitede, sevdiğiniz takımın maçlarını herhangi bir donma veya kesinti olmadan …"
+    }
+  ]
+}

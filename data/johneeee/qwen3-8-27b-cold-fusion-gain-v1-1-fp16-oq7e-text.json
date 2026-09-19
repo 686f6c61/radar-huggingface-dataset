@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Johneeee/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-fp16-oQ7e-text",
+  "slug": "johneeee-qwen3-8-27b-cold-fusion-gain-v1-1-fp16-oq7e-text",
+  "author": "Johneeee",
+  "url": "https://huggingface.co/Johneeee/Qwen3.8-27B-Cold-Fusion-GAIN-V1.1-fp16-oQ7e-text",
+  "created_at": "2026-09-19T16:16:15.000Z",
+  "updated_at": "2026-09-19T16:23:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "oq",
+    "quantized",
+    "6-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 23523494643,
+  "storage_human": "23.5 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "怎么卸载深信服EDR这个流氓软件？ - 知乎",
+      "url": "https://www.zhihu.com/question/593542206",
+      "snippet": "1、公司让装这个软件，但是装上就卸不掉了，提示需要管理员密码，试过N多种方式（360、系统控制面板卸载…"
+    },
+    {
+      "title": "Des associations de consommateurs pour vous défendre",
+      "url": "https://www.60millions-mag.com/des-associations-de-consommateurs-pour-vous-defendre/",
+      "snippet": "En cas de litige, n’hésitez pas à faire appel à une association de consommateurs. Plusieurs organisations de consommateurs, régies …"
+    },
+    {
+      "title": "Litige EDF - Forum - 60 millions de consommateurs",
+      "url": "https://www.60millions-mag.com/forum/d/294870-litige-edf",
+      "snippet": "Feb 18, 2026 · Ce choix a été déterminant dans ma décision de rester chez EDF. À aucun moment je n’ai été informé de manière …"
+    },
+    {
+      "title": "在 Windows 下如何方便地打出「」和 『』 ？ - 知乎",
+      "url": "https://www.zhihu.com/question/19725435",
+      "snippet": "Jun 20, 2011 · 在 Windows 下如何方便地打出「」和 『』 ？"
+    },
+    {
+      "title": "Que cache la baisse du prix de l’électricité du 1er février",
+      "url": "https://www.60millions-mag.com/logement-travaux/article/que-cache-la-baisse-du-prix-de-l-electricite-du-1er-fevrier-25391-20260127/",
+      "snippet": "Jan 27, 2026 · Chez EDF, Tempo ne suit pas la mesure Au 1er février 2026, les 900 000 abonnés Tempo verront, a contrario, leur …"
+    }
+  ]
+}

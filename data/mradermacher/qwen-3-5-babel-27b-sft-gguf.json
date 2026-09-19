@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "mradermacher/qwen-3.5-babel-27b-sft-GGUF",
+  "slug": "mradermacher-qwen-3-5-babel-27b-sft-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/qwen-3.5-babel-27b-sft-GGUF",
+  "created_at": "2026-09-19T15:54:36.000Z",
+  "updated_at": "2026-09-19T16:14:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "formal-methods",
+    "theorem-proving",
+    "lean",
+    "rocq",
+    "qwen3.5",
+    "supervised-fine-tuning",
+    "en",
+    "base_model:theostos/qwen-3.5-babel-27b-sft",
+    "base_model:quantized:theostos/qwen-3.5-babel-27b-sft",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 186348471968,
+  "storage_human": "186.3 GB",
+  "base_model": "theostos/qwen-3.5-babel-27b-sft",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Walmart Supercenter in Redmond, OR | Grocery, Electronics, Toys ...",
+      "url": "https://www.walmart.com/store/2243-redmond-or",
+      "snippet": "Get Walmart hours, driving directions and check out weekly specials at your Redmond in Redmond, OR. Get Redmond store hours …"
+    },
+    {
+      "title": "Walmart Careers",
+      "url": "https://careers.walmart.com/us/en/home",
+      "snippet": "Walmart and Sam’s Club offer diverse career opportunities across stores & clubs, supply chain, healthcare, corporate, and …"
+    },
+    {
+      "title": "Order Prints Online - Walmart Photo",
+      "url": "https://photos3.walmart.com/about/prints",
+      "snippet": "Print photos online with Walmart Photo. Order high quality photo prints and pick up in-store in just 1 hour."
+    },
+    {
+      "title": "Stores and Clubs - Walmart Careers",
+      "url": "https://careers.walmart.com/stores-clubs/walmart-store-jobs",
+      "snippet": "Find your path with us. Whether you're interested in auto care, front-end services, general merchandising, or another team, you'll find …"
+    },
+    {
+      "title": "Countertop & Built In Microwave Ovens - Walmart.com",
+      "url": "https://www.walmart.com/browse/home/shop-microwaves/4044_90548_90546_132950_8874548",
+      "snippet": "Shop countertop, compact, and built in microwaves with fast heating and modern features at Walmart. Multiple sizes and styles …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "AiMamis/Stella",
+  "slug": "aimamis-stella",
+  "author": "AiMamis",
+  "url": "https://huggingface.co/AiMamis/Stella",
+  "created_at": "2026-09-19T18:17:37.000Z",
+  "updated_at": "2026-09-19T18:18:09.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "license:openrail++",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 459017480,
+  "storage_human": "459 MB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "京东上99块的office 365个人版为什么能这么便宜，能买吗？是正版吗？",
+      "url": "https://www.zhihu.com/question/31931790",
+      "snippet": "Jul 5, 2015 · 此产品为office365个人版，可以用于一台移动设备和一台PC，有效期365天，非office365家庭版（可以多台移动设备 …"
+    },
+    {
+      "title": "有用过的Office 365的吗，怎么样？ - 知乎",
+      "url": "https://www.zhihu.com/question/273468741",
+      "snippet": "作为一个经常利用通勤3小时的时间写公司稿件的人，我真的要为Office 365点赞，在手机、电脑、iPad上都下载了Office 365套件，登 …"
+    },
+    {
+      "title": "如何激活Office 365 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/c85b7a642c24f6413aac9548.html",
+      "snippet": "Aug 6, 2020 · 这篇文章主要介绍激活Office 365的三种方法。（如果你还没下载安装Office 365，请先下载安装。链接见下方） 对于大 …"
+    },
+    {
+      "title": "电脑里的 Microsoft 365 有必要去购买吗？",
+      "url": "https://www.zhihu.com/question/340476735",
+      "snippet": "Office 365 是一种订阅式的跨平台办公软件，基于云的订阅服务，汇集了当今人们工作中使用的优秀工具。 通过将Word、Excel …"
+    },
+    {
+      "title": "office 365家庭版 和 visio 2016 如何共存？ - 知乎",
+      "url": "https://www.zhihu.com/question/39922337",
+      "snippet": "office有三种安装类型：即点即用和Microsoft Windows Installer，第三种类型是从 Microsoft Store 应用商店安装 Office。 即点即用也称 …"
+    }
+  ]
+}

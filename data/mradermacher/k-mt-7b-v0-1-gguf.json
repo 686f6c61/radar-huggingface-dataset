@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "mradermacher/K-MT-7B-v0.1-GGUF",
+  "slug": "mradermacher-k-mt-7b-v0-1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/K-MT-7B-v0.1-GGUF",
+  "created_at": "2026-09-19T13:52:39.000Z",
+  "updated_at": "2026-09-19T14:02:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [
+    "ko",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "translation",
+    "korean",
+    "honorifics",
+    "instruction-following",
+    "capability-preservation",
+    "ko",
+    "en",
+    "base_model:ThakiCloud/K-MT-7B-v0.1",
+    "base_model:quantized:ThakiCloud/K-MT-7B-v0.1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7504568320,
+  "parameters_human": "7.50B",
+  "storage_bytes": 67330935232,
+  "storage_human": "67.3 GB",
+  "base_model": "ThakiCloud/K-MT-7B-v0.1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "El Chombo, Dancing Green Alien - Dame Tu Cosita feat. Cutty Ranks ...",
+      "url": "https://www.youtube.com/watch?v=FzG4uDgje3M",
+      "snippet": "Apr 5, 2018 · El Chombo, Dancing Green Alien - Dame Tu Cosita feat. Cutty Ranks (Official Video)"
+    },
+    {
+      "title": "El Chombo & Dancing Green Alien feat. Cutty Ranks - YouTube",
+      "url": "https://www.youtube.com/watch?v=_MNPoamId-U",
+      "snippet": "Dec 6, 2022 · El Chombo & Dancing Green Alien feat. Cutty Ranks - Dame Tu Cosita (Official Video)"
+    },
+    {
+      "title": "El Chombo Dancing Green Alien - Dailymotion",
+      "url": "https://www.dailymotion.com/video/x9xzeza",
+      "snippet": "Jan 18, 2026 · El Chombo Dancing Green Alien - Dame Tu Cosita feat. Cutty Ranks Official Video"
+    },
+    {
+      "title": "Dancing Green Alien - YouTube Music",
+      "url": "https://music.youtube.com/channel/UC_BfZxxAi5u32RMTdAX3ebg",
+      "snippet": "The small, green, animated alien with its distinctive dance moves has become a pop culture icon, primarily through the combination …"
+    },
+    {
+      "title": "Dancing Green Alien - Facebook",
+      "url": "https://www.facebook.com/dancinggreenalien/",
+      "snippet": "The Dancing green alien is an animated Character which is animated by the French..."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Dohyeon1/ERNIE-Sub-MoE-ngroups48-adaptive",
+  "slug": "dohyeon1-ernie-sub-moe-ngroups48-adaptive",
+  "author": "Dohyeon1",
+  "url": "https://huggingface.co/Dohyeon1/ERNIE-Sub-MoE-ngroups48-adaptive",
+  "created_at": "2026-09-19T17:33:39.000Z",
+  "updated_at": "2026-09-19T17:58:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "ernie4_5_moe",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 21825437888,
+  "parameters_human": "21.83B",
+  "storage_bytes": 43671604727,
+  "storage_human": "43.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sanat - Vikipedi",
+      "url": "https://tr.wikipedia.org/wiki/Sanat",
+      "snippet": "Bu tanımlardan en yaygın kabul göreni sanatın edebiyat, resim, müzik, tiyatro, sinema, mimari ve heykel alt türlerinden oluştuğu …"
+    },
+    {
+      "title": "Sanat Nedir Ne İçin Yapılır? - Sanatın Tanımı ve Özellikleri",
+      "url": "https://sanatakademi.com.tr/sanat/sanat",
+      "snippet": "Aug 27, 2026 · Sanat nedir ne için yapılır, sanatçı nedir, sanatın tanımı ve özellikleri nelerdir gibi soruları sizler için açıkladık. Elbette …"
+    },
+    {
+      "title": "Sanat Nedir? Kısaca Tanımı, Dalları, Özellikleri Ve Faydaları",
+      "url": "https://www.milliyet.com.tr/egitim/sanat-nedir-kisaca-tanimi-dallari-ozellikleri-ve-faydalari-6697834",
+      "snippet": "Sep 12, 2025 · Sanat, insanın yaratma gücünü kullandığı, insanlarda çeşitli duygular uyandıran ve aynı zamanda da tüm toplumların …"
+    },
+    {
+      "title": "Sanat Nedir? Sanatçı Kimdir? - Türk Dili ve Edebiyatı",
+      "url": "https://www.turkedebiyati.org/sanat-nedir-sanatci-kimdir/",
+      "snippet": "Sanat hem bireysel bir ifade biçimi hem de toplumsal bir iletişim aracıdır. Estetik değer yaratmak ve izleyicide bir duygusal, zihinsel …"
+    },
+    {
+      "title": "Sanat Nedir? Temel Sanat Kavramları - FiloMythos",
+      "url": "https://www.filomythos.com/sanat-nedir-temel-sanat-kavramlari/",
+      "snippet": "Feb 19, 2025 · Sanat, insanlık tarihinin ayrılmaz bir parçasıdır ve zaman içinde birçok farklı biçim ve işlev kazanmıştır. Estetik, biçim, …"
+    }
+  ]
+}

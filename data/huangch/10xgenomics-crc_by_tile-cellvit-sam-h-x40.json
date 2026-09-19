@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "huangch/10xGenomics-CRC_BY_TILE-CellViT-SAM-H-x40",
+  "slug": "huangch-10xgenomics-crc_by_tile-cellvit-sam-h-x40",
+  "author": "huangch",
+  "url": "https://huggingface.co/huangch/10xGenomics-CRC_BY_TILE-CellViT-SAM-H-x40",
+  "created_at": "2026-09-19T19:46:52.000Z",
+  "updated_at": "2026-09-19T19:54:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "doi:10.57967/hf/10518",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2740199003,
+  "storage_human": "2.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Harika Gulla - Attended Andhra University | LinkedIn",
+      "url": "https://in.linkedin.com/in/harika-gulla-b99047275",
+      "snippet": "Attended Andhra University · Experience: GlobalLogic · Education: Marvel International School · Location: Visakhapatnam Rural …"
+    },
+    {
+      "title": "Harika Gulla - Wipro | LinkedIn",
+      "url": "https://in.linkedin.com/in/harika-gulla-395670422",
+      "snippet": "Experience: Wipro · Location: 500055. View Harika Gulla’s profile on LinkedIn, a professional community of 1 billion members."
+    },
+    {
+      "title": "Harika Gulla - LinkedIn India",
+      "url": "https://in.linkedin.com/in/harika-gulla-2582a31b0",
+      "snippet": "I am good at verbal and non verbal communication in English and German · Education: sri venkateshwara institute of …"
+    },
+    {
+      "title": "2 \"Harika Gulla\" profiles | LinkedIn",
+      "url": "https://www.linkedin.com/pub/dir/Harika/Gulla",
+      "snippet": "View the profiles of professionals named &quot;Harika Gulla&quot; on LinkedIn. There are 2 professionals named &quot;Harika …"
+    },
+    {
+      "title": "Harika Gajula - Hyderabad, Telangana, India - LinkedIn India",
+      "url": "https://in.linkedin.com/in/harika-gajula-467120416",
+      "snippet": "View Harika Gajula’s profile on LinkedIn, a professional community of 1 billion members."
+    }
+  ]
+}

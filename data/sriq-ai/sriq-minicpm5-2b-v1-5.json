@@ -1,0 +1,106 @@
+{
+  "schema": 1,
+  "id": "sriq-ai/sriq-MiniCPM5-2B-v1.5",
+  "slug": "sriq-ai-sriq-minicpm5-2b-v1-5",
+  "author": "sriq-ai",
+  "url": "https://huggingface.co/sriq-ai/sriq-MiniCPM5-2B-v1.5",
+  "created_at": "2026-09-19T19:40:22.000Z",
+  "updated_at": "2026-09-19T20:16:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "sft",
+    "reasoning",
+    "unsloth",
+    "text-generation-inference",
+    "conversational",
+    "multilingual",
+    "en",
+    "zh",
+    "ar",
+    "bn",
+    "cs",
+    "nl",
+    "fr",
+    "de",
+    "el",
+    "he",
+    "hi",
+    "id",
+    "it",
+    "ja",
+    "ko",
+    "fa",
+    "pl",
+    "pt",
+    "ro",
+    "ru",
+    "es",
+    "sw",
+    "sv",
+    "ta",
+    "th",
+    "tr",
+    "uk",
+    "ur",
+    "vi",
+    "dataset:sriq-ai/sriq-sft-v1.5",
+    "base_model:openbmb/MiniCPM5-2B",
+    "base_model:finetune:openbmb/MiniCPM5-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 5034933712,
+  "storage_human": "5.0 GB",
+  "base_model": "openbmb/MiniCPM5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reddit - Dive into anything",
+      "url": "https://www.reddit.com/r/all+/",
+      "snippet": "Man won $900,000 from the state of California after being psychologically tortured by police during a 17-hour interrogation which lead …"
+    },
+    {
+      "title": "Libgen is down. Any alternatives? : r/libgen - Reddit",
+      "url": "https://www.reddit.com/r/libgen/comments/16ylhmy/libgen_is_down_any_alternatives/",
+      "snippet": "34 votes, 30 comments. true I've been having lots of issues with regular libgen recently, but the Tor links have been working. If you …"
+    },
+    {
+      "title": "Am I the Asshole? - Reddit",
+      "url": "https://www.reddit.com/r/AmItheAsshole/wiki/index/",
+      "snippet": "A catharsis for the frustrated moral philosopher in all of us, and a place to finally find out if you were wrong in an argument that's been …"
+    },
+    {
+      "title": "Alternate links that are working : r/TPB - Reddit",
+      "url": "https://www.reddit.com/r/TPB/comments/a1srj3/alternate_links_that_are_working/",
+      "snippet": "Nov 30, 2018 · The whole point of this post is to show alternate links that are working in case thepiratebay.org is down and to show …"
+    },
+    {
+      "title": "Tipy na stránky s filmy : r/czech - Reddit",
+      "url": "https://www.reddit.com/r/czech/comments/114vgv5/tipy_na_str%C3%A1nky_s_filmy/",
+      "snippet": "Feb 17, 2023 · Tohle bylo nejlepší zjištění posledního měsíce, a to mám Kodi na RPI4 u televize už několik let. Výběr nesrovnatelný …"
+    }
+  ]
+}

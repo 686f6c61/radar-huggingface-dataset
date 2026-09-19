@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Tilakoid/qwen3.5-0.8b-hoasa-lora",
+  "slug": "tilakoid-qwen3-5-0-8b-hoasa-lora",
+  "author": "Tilakoid",
+  "url": "https://huggingface.co/Tilakoid/qwen3.5-0.8b-hoasa-lora",
+  "created_at": "2026-09-19T17:32:32.000Z",
+  "updated_at": "2026-09-19T17:32:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "id"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "absa",
+    "aspect-based-sentiment-analysis",
+    "indonesian",
+    "hotel-reviews",
+    "qwen3.5",
+    "text-generation",
+    "id",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:adapter:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 43346432,
+  "storage_human": "43 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WOW - Stream die besten Serien und Filme und Sky Sport live",
+      "url": "https://www.wowtv.de/",
+      "snippet": "Dein Zuhause für Entertainment, das du liebst. Stream die besten Filme und neuesten Serien sowie Sky Sport live."
+    },
+    {
+      "title": "Das Sky Sport Programm im Stream live sehen. Bei WOW.",
+      "url": "https://www.wowtv.de/live-sport",
+      "snippet": "WOW Premium: Voraussetzung ist mindestens ein aktives WOW Programmprodukt (Filme & Serien und/oder Live-Sport). Mit …"
+    },
+    {
+      "title": "Filme und Serien online streamen - WOW",
+      "url": "https://www.wowtv.de/filme-serien",
+      "snippet": "Stream Blockbuster kurz nach dem Kino sowie exklusive und preisgekrönte Top-Serien. Hol dir jetzt das WOW Abo deiner Wahl."
+    },
+    {
+      "title": "Wähl dein Abo - WOW",
+      "url": "https://www.wowtv.de/abo",
+      "snippet": "Wähl was zu dir passt. Buch jetzt dein Jahresabo oder Monatsabo bei WOW."
+    },
+    {
+      "title": "Young-Abo | WOW",
+      "url": "https://www.wowtv.de/young",
+      "snippet": "WOW Premium: Voraussetzung ist mindestens ein aktives WOW Programmprodukt (Filme & Serien und/oder Live-Sport). Mit …"
+    }
+  ]
+}

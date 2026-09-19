@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "muronbo/fickle",
+  "slug": "muronbo-fickle",
+  "author": "muronbo",
+  "url": "https://huggingface.co/muronbo/fickle",
+  "created_at": "2026-09-19T12:28:54.000Z",
+  "updated_at": "2026-09-19T12:28:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MP3.org - Complete Guide to MP3 Audio Format, Tools & History",
+      "url": "http://mp3.org/",
+      "snippet": "Comprehensive MP3 guide covering audio compression, encoding tools like LAME, quality settings, legal usage, troubleshooting, and …"
+    },
+    {
+      "title": "YouTube to MP3 Converter",
+      "url": "https://mp3cow.com/",
+      "snippet": "Convert YouTube videos to MP3 audio files without annoying ads or registration. With MP3Cow, you have one of the fastest and ad …"
+    },
+    {
+      "title": "FAQ - FreeMP3Music",
+      "url": "https://freemp3music.org/faq/",
+      "snippet": "FreeMP3Music helps you find MP3 tracks from permitted, publicly available sources. Enter a title or keywords, choose a result, and …"
+    },
+    {
+      "title": "YTMP3: Free YouTube to MP3 Converter",
+      "url": "https://convertytmp3.org/",
+      "snippet": "Download your favorite YouTube videos as MP3 or MP4 files for free with YTMP3, a user-friendly YouTube to MP3 Converter. No …"
+    },
+    {
+      "title": "YTMP3 - YouTube to MP3 Converter",
+      "url": "https://ytmp3pc.com/",
+      "snippet": "Our YouTube to MP3 Converter allows you to convert your favorite YouTube videos to MP3 (audio) or MP4 (video) files and to …"
+    }
+  ]
+}

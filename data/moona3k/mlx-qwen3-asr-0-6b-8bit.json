@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "moona3k/mlx-qwen3-asr-0.6b-8bit",
+  "slug": "moona3k-mlx-qwen3-asr-0-6b-8bit",
+  "author": "moona3k",
+  "url": "https://huggingface.co/moona3k/mlx-qwen3-asr-0.6b-8bit",
+  "created_at": "2026-09-19T18:59:14.000Z",
+  "updated_at": "2026-09-19T18:59:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh",
+    "ja",
+    "ko",
+    "de",
+    "fr",
+    "es",
+    "ru",
+    "ar",
+    "hi"
+  ],
+  "tags": [
+    "mlx",
+    "qwen3_asr",
+    "qwen3-asr",
+    "speech-recognition",
+    "quantized",
+    "8-bit",
+    "automatic-speech-recognition",
+    "en",
+    "zh",
+    "ja",
+    "ko",
+    "de",
+    "fr",
+    "es",
+    "ru",
+    "ar",
+    "hi",
+    "base_model:Qwen/Qwen3-ASR-0.6B",
+    "base_model:finetune:Qwen/Qwen3-ASR-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 835619431,
+  "storage_human": "836 MB",
+  "base_model": "Qwen/Qwen3-ASR-0.6B",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "windows - What is \"%AppData%\"? - Super User",
+      "url": "https://superuser.com/questions/632891/what-is-appdata",
+      "snippet": "The AppData\\Local and AppData\\Roaming locations are the preferred locations for applications to store data that is not required to be …"
+    },
+    {
+      "title": "AppData/Local/Packages – safe to remove? - Super User",
+      "url": "https://superuser.com/questions/1237781/appdata-local-packages-safe-to-remove",
+      "snippet": "Trying to make space on my C drive. I see that my AppData/Local/Packages folder is almost 20GB! Is it safe to delete it? If not, can it …"
+    },
+    {
+      "title": "Where is the list of pinned start menu and taskbar items stored in ...",
+      "url": "https://superuser.com/questions/171096/where-is-the-list-of-pinned-start-menu-and-taskbar-items-stored-in-windows-7",
+      "snippet": "Aug 2, 2010 · What is the location of pinned start menu and taskbar items? Is this list a registry, or a folder somewhere?"
+    },
+    {
+      "title": "Is it safe to delete AppData\\Local\\Temp? - Super User",
+      "url": "https://superuser.com/questions/571901/is-it-safe-to-delete-appdata-local-temp",
+      "snippet": "Jan 18, 2015 · If this is the case you might want to use clean-up instead of doing the process manually. Go to Run and type cleanup: …"
+    },
+    {
+      "title": "Safe to delete Google's Update folder? - Super User",
+      "url": "https://superuser.com/questions/914246/safe-to-delete-googles-update-folder",
+      "snippet": "May 13, 2015 · I am on Windows 7. This folder is located in C:\\Users\\user\\AppData\\Local\\Google. WinDirStat tells me that it is …"
+    }
+  ]
+}

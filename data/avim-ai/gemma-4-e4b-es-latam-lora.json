@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "AVIM-AI/gemma-4-E4B-es-latam-lora",
+  "slug": "avim-ai-gemma-4-e4b-es-latam-lora",
+  "author": "AVIM-AI",
+  "url": "https://huggingface.co/AVIM-AI/gemma-4-E4B-es-latam-lora",
+  "created_at": "2026-09-19T16:20:45.000Z",
+  "updated_at": "2026-09-19T21:31:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "es"
+  ],
+  "tags": [
+    "mlx",
+    "gemma4",
+    "spanish",
+    "latin-america",
+    "continued-pretraining",
+    "lora",
+    "text-generation",
+    "es",
+    "dataset:latam-gpt/LatamGPT-Corpus-1.0",
+    "base_model:google/gemma-4-E4B-it",
+    "base_model:adapter:google/gemma-4-E4B-it",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 148403443,
+  "storage_human": "148 MB",
+  "base_model": "google/gemma-4-E4B-it",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CHECK24 | Das Vergleichsportal",
+      "url": "https://www.check24.de/?msockid=25fbc1b159c46bc2355fd668583b6a43",
+      "snippet": "CHECK24 - Das Vergleichsportal: Sparen Sie mit den Vergleichsrechnern für Versicherungen, Kredite, Energie, Internet, Reisen, …"
+    },
+    {
+      "title": "Urlaub buchen Pauschalreisen bis 60% günstiger | CHECK24 Reisen",
+      "url": "https://urlaub.check24.de/?msockid=25fbc1b159c46bc2355fd668583b6a43",
+      "snippet": "CHECK24 Reisevergleich Jetzt günstig Urlaub buchen Über 230.000 mal Bestnote Pauschalreisen beim Preissieger ☎ Über 200 …"
+    },
+    {
+      "title": "Flüge buchen ️ Günstige Flüge mit CHECK24 | CHECK24 Flüge",
+      "url": "https://flug.check24.de/",
+      "snippet": "Mit CHECK24 Flüge vergleichen & günstige Flüge finden Reiseberatung 24/7 PayPal, Klarna & Co. Jetzt Flug buchen!"
+    },
+    {
+      "title": "CHECK24 - Hotel buchen bei Deutschlands größtem Reiseportal",
+      "url": "https://hotel.check24.de/?msockid=25fbc1b159c46bc2355fd668583b6a43",
+      "snippet": "Bis zu 55% sparen und zum Bestpreis buchen: über 5 Mio. Hotels und Unterkünfte im Vergleich + extra Vorteile im Smily …"
+    },
+    {
+      "title": "Gasvergleich 2026 beim Testsieger & 1.250 € sparen - CHECK24",
+      "url": "https://www.check24.de/gas/?msockid=25fbc1b159c46bc2355fd668583b6a43",
+      "snippet": "Gasvergleich Testsieger Stiftung Warentest: Jetzt bis zu 400 € Bonus und 1.250 € Ersparnis sichern! 💰 Jetzt Gas vergleichen und …"
+    }
+  ]
+}

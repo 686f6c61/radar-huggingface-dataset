@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "prehj/GR00T-N1.5-dexjoco-atq-vlm-labelgated-2.0x-60k-20260919",
+  "slug": "prehj-gr00t-n1-5-dexjoco-atq-vlm-labelgated-2-0x-60k-20260919",
+  "author": "prehj",
+  "url": "https://huggingface.co/prehj/GR00T-N1.5-dexjoco-atq-vlm-labelgated-2.0x-60k-20260919",
+  "created_at": "2026-09-19T15:40:17.000Z",
+  "updated_at": "2026-09-19T15:42:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gr00t_n1_5",
+    "robotics",
+    "gr00t",
+    "dexjoco",
+    "atq",
+    "base_model:nvidia/GR00T-N1.5-3B",
+    "base_model:finetune:nvidia/GR00T-N1.5-3B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2829861577,
+  "parameters_human": "2.83B",
+  "storage_bytes": 8008866860,
+  "storage_human": "8.0 GB",
+  "base_model": "nvidia/GR00T-N1.5-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "如何评价DeepSeek V4.1 Flash将于2026年9月10日上线，以及 ...",
+      "url": "https://www.zhihu.com/question/2081037199122895830",
+      "snippet": "Sep 9, 2026 · 如何评价DeepSeek V4.1 Flash将于2026年9月10日上线，以及V4Pro下架？ DeepSeek 计划于北京时间 2026 年 9 月 10 …"
+    },
+    {
+      "title": "怎么看 DeepSeek 8 月17 日涨价后的价格，这个峰谷定价 ...",
+      "url": "https://www.zhihu.com/question/2071318356477662328",
+      "snippet": "Aug 13, 2026 · 随着 DeepSeek V4 全系列模型正式版上线，官方将对 API 价格进行更新调整，采用“峰谷定价”机制：闲时价…"
+    },
+    {
+      "title": "DeepSeek - Reddit",
+      "url": "https://www.reddit.com/r/DeepSeek/",
+      "snippet": "Subreddit for the DeepSeek Coder Language Model"
+    },
+    {
+      "title": "AI_Agents - Reddit",
+      "url": "https://www.reddit.com/r/AI_Agents/",
+      "snippet": "r/AI_Agents: A place for discussion around the use of AI Agents and related tools such as in Auto-GPT, LangChain, LlamaIndex, …"
+    },
+    {
+      "title": "如何看待2026年9月9日deepseek官网公告将v4pro统一路由至 ...",
+      "url": "https://www.zhihu.com/question/2081047394758803787",
+      "snippet": "如何看待2026年9月9日deepseek官网公告将v4pro统一路由至v4.1flash？"
+    }
+  ]
+}

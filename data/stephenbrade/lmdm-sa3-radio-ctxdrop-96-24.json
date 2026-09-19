@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "StephenBrade/lmdm-sa3-radio-ctxdrop-96-24",
+  "slug": "stephenbrade-lmdm-sa3-radio-ctxdrop-96-24",
+  "author": "StephenBrade",
+  "url": "https://huggingface.co/StephenBrade/lmdm-sa3-radio-ctxdrop-96-24",
+  "created_at": "2026-09-19T15:25:16.000Z",
+  "updated_at": "2026-09-19T15:34:26.000Z",
+  "license": "stability-ai-community",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "coreml",
+    "audio",
+    "music-generation",
+    "real-time",
+    "apple-silicon",
+    "block-autoregressive",
+    "base_model:stabilityai/stable-audio-3-small-music-base",
+    "base_model:quantized:stabilityai/stable-audio-3-small-music-base",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6541695376,
+  "storage_human": "6.5 GB",
+  "base_model": "stabilityai/stable-audio-3-small-music-base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yankees Scores: Scoreboard, Results and Highlights",
+      "url": "https://www.mlb.com/yankees/scores?c_id=nyy&msockid=14b8ff5ce50869651e48e885e458687b",
+      "snippet": "The official scoreboard of the New York Yankees including Gameday, video, highlights and box score."
+    },
+    {
+      "title": "New York Yankees Scores, Stats and Highlights - ESPN",
+      "url": "https://www.espn.com/mlb/team/_/name/nyy/new-york-yankees",
+      "snippet": "Visit ESPN for New York Yankees live scores, video highlights, and latest news. Find standings and the full 2026 season schedule."
+    },
+    {
+      "title": "Official New York Yankees Website | MLB.com",
+      "url": "https://www.mlb.com/yankees?%24web_only=true&msockid=14b8ff5ce50869651e48e885e458687b",
+      "snippet": "The official website of the New York Yankees with the most up-to-date information on news, tickets, schedule, stadium, roster, …"
+    },
+    {
+      "title": "MLB Scores, 2026 Season - ESPN",
+      "url": "https://www.espn.com/mlb/scoreboard/_/name/nyy/new-york-yankees",
+      "snippet": "1 day ago · Live scores for every 2026 MLB season game on ESPN. Includes box scores, video highlights, play breakdowns and …"
+    },
+    {
+      "title": "New York Yankees: Livescore, Games and Schedule - 365Scores",
+      "url": "https://www.365scores.com/en-us/baseball/team/new-york-yankees-7407",
+      "snippet": "3 days ago · Get the latest updates on New York Yankees. Livescore, Team squad, Fixtures & Results, Statistics, Standing, News, …"
+    }
+  ]
+}

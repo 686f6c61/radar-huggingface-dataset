@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "wq3qa/my_modal",
+  "slug": "wq3qa-my_modal",
+  "author": "wq3qa",
+  "url": "https://huggingface.co/wq3qa/my_modal",
+  "created_at": "2026-09-19T18:58:12.000Z",
+  "updated_at": "2026-09-19T19:13:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20967669160,
+  "storage_human": "21.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vestiaire Collective: Second-Hand-Mode kaufen und verkaufen",
+      "url": "https://de.vestiairecollective.com/",
+      "snippet": "3 Millionen Artikel von über 12 Tsd. Marken. Luxusmode aus zweiter Hand bis zu -70%. Professionelle Authentifizierung."
+    },
+    {
+      "title": "Mode für Damen - Sicher Kaufen & Verkaufen online ! - Vestiaire …",
+      "url": "https://de.vestiairecollective.com/damen/",
+      "snippet": "ll Finde alle unsere trendigen Artikel für Damen, Luxus und großer Marken in greifbarer Nähe! Secondhand- Mode für 30- bis 70% …"
+    },
+    {
+      "title": "Sicher Kaufen & Verkaufen online - Vestiaire Collective",
+      "url": "https://de.vestiairecollective.com/damen-taschen/",
+      "snippet": "ll Finde alle unsere trendigen Taschen für Damen, Luxus Taschen großer Marken in greifbarer Nähe! Secondhand- Mode für 30- bis …"
+    },
+    {
+      "title": "Prada - Vestiaire Collective",
+      "url": "https://de.vestiairecollective.com/prada/",
+      "snippet": "Finden Sie alle Produkte der Marke Prada und profitieren Sie von einer großen Auswahl an Modeartikeln aus zweiter Hand im An- …"
+    },
+    {
+      "title": "Cartier - Vestiaire Collective",
+      "url": "https://de.vestiairecollective.com/cartier/",
+      "snippet": "Finden Sie alle Produkte der Marke Cartier und profitieren Sie von einer großen Auswahl an Modeartikeln aus zweiter Hand im An- …"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "burnboom/mujoco-triple-swingup",
+  "slug": "burnboom-mujoco-triple-swingup",
+  "author": "burnboom",
+  "url": "https://huggingface.co/burnboom/mujoco-triple-swingup",
+  "created_at": "2026-09-19T18:52:19.000Z",
+  "updated_at": "2026-09-19T18:52:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "mujoco",
+  "languages": [],
+  "tags": [
+    "mujoco",
+    "robotics",
+    "control",
+    "trajectory-optimization",
+    "optimal-control",
+    "underactuated",
+    "inverted-pendulum",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 34412,
+  "storage_human": "34412 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Evangelisches Ratsgymnasium Erfurt - Vertretungsplan",
+      "url": "https://www.evrg-erfurt.de/service/vertretungsplan/",
+      "snippet": "Das Evangelische Ratsgymnasium versteht sich als christlich-humanistisches Gymnasium moderner Prägung. Die Schülerinnen und …"
+    },
+    {
+      "title": "Evangelische Gemeinschaftsschule Erfurt - Vertretungsplan",
+      "url": "https://www.evangelische-gemeinschaftsschule-erfurt.de/service/vertretungsplan/",
+      "snippet": "Als erste Erfurtplan-Schule basieren unsere Lehransätze auf verschiedenen reformpädagogischen Konzepten. Wissensvermittlung, …"
+    },
+    {
+      "title": "Evangelisches Ratsgymnasium Erfurt - Herzlich willkommen beim ...",
+      "url": "https://www.evrg-erfurt.de/",
+      "snippet": "Das Evangelische Ratsgymnasium versteht sich als christlich-humanistisches Gymnasium moderner Prägung. Die Schülerinnen und …"
+    },
+    {
+      "title": "Evangelisches Ratsgymnasium Erfurt - Xschool",
+      "url": "https://www.evrg-erfurt.de/service/tsc-und-xschool/xschool/",
+      "snippet": "Das Evangelische Ratsgymnasium versteht sich als christlich-humanistisches Gymnasium moderner Prägung. Die Schülerinnen und …"
+    },
+    {
+      "title": "Evangelische Gemeinschaftsschule Erfurt - www.evangelische ...",
+      "url": "https://www.evangelische-gemeinschaftsschule-erfurt.de/",
+      "snippet": "Als erste Erfurtplan-Schule basieren unsere Lehransätze auf verschiedenen reformpädagogischen Konzepten. Wissensvermittlung, …"
+    }
+  ]
+}

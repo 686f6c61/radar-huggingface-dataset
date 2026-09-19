@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ProCreations/bonsai-2-27b-gsq-rco-gguf",
+  "slug": "procreations-bonsai-2-27b-gsq-rco-gguf",
+  "author": "ProCreations",
+  "url": "https://huggingface.co/ProCreations/bonsai-2-27b-gsq-rco-gguf",
+  "created_at": "2026-09-19T18:16:37.000Z",
+  "updated_at": "2026-09-19T18:36:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "gsq",
+    "rco",
+    "ternary",
+    "text-generation",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 6496332448,
+  "storage_human": "6.5 GB",
+  "base_model": "prism-ml/Ternary-Bonsai-2-27B-gguf, Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bubble Shooter Extreme | Online hra zdarma | Superhry.cz",
+      "url": "https://www.superhry.cz/hra/14173-bubble-shooter-extreme",
+      "snippet": "Bubble Shooter Extreme - skvělá html5 verze oblíbené hry Bubble Shooter s vynikající grafikou pro pokročilé hráče."
+    },
+    {
+      "title": "Bubbles Extreme - Hrajte zdarma - Bubble Shooter",
+      "url": "https://www.bubbleshooter.net/cs/hra/bubbles-extreme/",
+      "snippet": "Extrémní bublinová střílečka je hra, která má mnoho společného s normální bublinovou střílečkou, nicméně je zde dost rozdílů, které …"
+    },
+    {
+      "title": "Bubble Shooter | Online hra zdarma | Superhry.cz",
+      "url": "https://www.superhry.cz/games/752/",
+      "snippet": "Bubble Shooter - vystřelujte barevné míčky správným směrem, tak, aby se vám podařilo dostat k sobě skupinku alespoň o třech …"
+    },
+    {
+      "title": "Bubble Shooter Extreme - Hra na Mobil - m.superhry.cz",
+      "url": "https://m.superhry.cz/hra/1757-bubble-shooter-extreme",
+      "snippet": "Bubble Shooter Extreme je skvělá html5 verze oblíbené hry Bubble Shooter s vynikající grafikou. Hra je navíc neobvyklá tím, že je …"
+    },
+    {
+      "title": "Bubble Shooter Extreme – Hrajte Online na SilverGames ️",
+      "url": "https://www.silvergames.com/sk/bubble-shooter-extreme",
+      "snippet": "Bubble Shooter Extreme je podmanivá HTML5 adaptácia klasickej hry Bubble Shooter navrhnutá s ohromujúcou grafikou vo …"
+    }
+  ]
+}

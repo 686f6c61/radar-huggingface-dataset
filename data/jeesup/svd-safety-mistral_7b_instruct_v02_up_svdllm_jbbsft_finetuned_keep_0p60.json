@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-mistral_7b_instruct_v02_up_svdllm_jbbsft_finetuned_keep_0p60",
+  "slug": "jeesup-svd-safety-mistral_7b_instruct_v02_up_svdllm_jbbsft_finetuned_keep_0p60",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-mistral_7b_instruct_v02_up_svdllm_jbbsft_finetuned_keep_0p60",
+  "created_at": "2026-09-19T16:43:33.000Z",
+  "updated_at": "2026-09-19T17:03:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mistral",
+    "svd-llm",
+    "compression",
+    "low-rank",
+    "safety",
+    "base_model:mistralai/Mistral-7B-Instruct-v0.2",
+    "base_model:finetune:mistralai/Mistral-7B-Instruct-v0.2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7241732096,
+  "parameters_human": "7.24B",
+  "storage_bytes": 14526638743,
+  "storage_human": "14.5 GB",
+  "base_model": "mistralai/Mistral-7B-Instruct-v0.2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "buhl",
+      "url": "https://www.buhl.de/go/43563?msockid=3e2804d5cc9764c616d2130ccd3b654a",
+      "snippet": "Hier sollte eine Beschreibung angezeigt werden, diese Seite lässt dies jedoch nicht zu."
+    },
+    {
+      "title": "tax 2026 von Buhl | Jetzt Steuererklärung günstig erstellen",
+      "url": "https://www.buhl.de/software/tax/?msockid=3e2804d5cc9764c616d2130ccd3b654a",
+      "snippet": "Mit tax erledigst du die Steuererklärung schnell & einfach. Preis-Leistung-Sieger in 2026. Hol dir das Original von Buhl!"
+    },
+    {
+      "title": "Installation & Aktivierung: Software wurde im Einzelhandel erworben",
+      "url": "https://www.buhl-unternehmer.de/installation-software-ueber-einzelhandel/",
+      "snippet": "So installieren und aktivieren Sie Ihre buhl Unternehmer-Software aus dem Einzelhandel. Jetzt lesen!"
+    },
+    {
+      "title": "Buhl Data tax 2026 | Download & Produktschlüssel - Cyberport",
+      "url": "https://www.cyberport.de/pc-und-zubehoer/software/buero-organisation/buhl/pdp/8351-04t/buhl-data-tax-2026-download-produktschluessel.html",
+      "snippet": "Buhl Data tax 2026 | Download & Produktschlüssel günstig online kaufen im Online-Shop bei Cyberport: Viele Marken Top-Preise …"
+    },
+    {
+      "title": "Wie kann ich meine Software herunterladen und installieren?",
+      "url": "https://faq.buhl.de/category/service/wie-kann-ich-meine-software-herunterladen-und-installieren",
+      "snippet": "Sofern Sie keinen Zugriff mehr auf die mit Ihrem buhl:Konto verbundene Authenticator-App haben, benötigen Sie Ihren …"
+    }
+  ]
+}

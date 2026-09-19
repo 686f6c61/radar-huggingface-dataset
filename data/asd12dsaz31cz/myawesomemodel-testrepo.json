@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "ASD12DSAZ31CZ/MyAwesomeModel-TestRepo",
+  "slug": "asd12dsaz31cz-myawesomemodel-testrepo",
+  "author": "ASD12DSAZ31CZ",
+  "url": "https://huggingface.co/ASD12DSAZ31CZ/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-19T19:29:13.000Z",
+  "updated_at": "2026-09-19T19:29:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Где производят смартфоны Samsung: страны и ...",
+      "url": "https://androidinsider.ru/smartfony/gde-delayut-smartfony-samsung-vy-udivites-no-sovsem-ne-v-kitae.html",
+      "snippet": "Jul 16, 2025 · В какой стране производят смартфоны Samsung. Где самые большие заводы и как узнать страну производства …"
+    },
+    {
+      "title": "Самсунг (Samsung) страна производитель",
+      "url": "https://ardihouse.com.ua/ru/samsung-samsung-strana-proizvoditel/",
+      "snippet": "Dec 10, 2025 · Вьетнам — один из крупнейших мировых хабов Samsung: более 45% смартфонов бренда собирают именно …"
+    },
+    {
+      "title": "Как посмотреть страну сборки Samsung Galaxy?",
+      "url": "https://www.samsung.com/ru/support/mobile-devices/how-to-see-the-country-of-assembly-samsung-galaxy/?msockid=350f0d1e8c22663b0bd01ac98ddd67f1",
+      "snippet": "Aug 25, 2026 · Мобильные устройства компании Samsung могут производиться на заводах в Китае, Корее, Вьетнаме и Индии."
+    },
+    {
+      "title": "Где производят Samsung: в каких странах мира",
+      "url": "https://mksegment.ru/a/gde-proizvodyat-samsung-v-kakih-stranah-mira",
+      "snippet": "Oct 17, 2023 · Телефоны Samsung - одни из самых популярных устройств на рынке мобильных телефонов. Их производство …"
+    },
+    {
+      "title": "Самсунг страна производитель — где ...",
+      "url": "https://karapuziki.com.ua/ru/samsunh-strana-proyzvodytel-hde-delaiut-tekhnyku/",
+      "snippet": "Mar 10, 2025 · Ключевые производственные площадки Самсунг страна производитель включают: Южная Корея (основной …"
+    }
+  ]
+}

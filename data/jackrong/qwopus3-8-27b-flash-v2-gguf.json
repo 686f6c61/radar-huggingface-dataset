@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "id": "Jackrong/Qwopus3.8-27B-Flash-V2-GGUF",
+  "slug": "jackrong-qwopus3-8-27b-flash-v2-gguf",
+  "author": "Jackrong",
+  "url": "https://huggingface.co/Jackrong/Qwopus3.8-27B-Flash-V2-GGUF",
+  "created_at": "2026-09-19T16:38:01.000Z",
+  "updated_at": "2026-09-21T23:12:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh",
+    "es",
+    "ru",
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "image-text-to-text",
+    "vision",
+    "multimodal",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "text-generation",
+    "qwen3_5",
+    "qwen3",
+    "qwen",
+    "27b",
+    "fine-tuned",
+    "instruction-tuned",
+    "reasoning",
+    "agent",
+    "agentic",
+    "tool-use",
+    "function-calling",
+    "code-generation",
+    "mtp",
+    "speculative-decoding",
+    "local-inference",
+    "safetensors",
+    "en",
+    "zh",
+    "es",
+    "ru",
+    "ja",
+    "base_model:Jackrong/Qwopus3.8-27B-Flash",
+    "base_model:finetune:Jackrong/Qwopus3.8-27B-Flash",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 19,
+  "downloads_30d": 0,
+  "trending_score": 17,
+  "parameters": 460730096,
+  "parameters_human": "460.7M",
+  "storage_bytes": 245724264768,
+  "storage_human": "245.7 GB",
+  "base_model": "Jackrong/Qwopus3.8-27B-Flash",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=10f12a6ddcf165b019c33db6dd07642f",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Get access to free online versions of Outlook, Word, Excel, and PowerPoint."
+    },
+    {
+      "title": "Sign in to your account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    },
+    {
+      "title": "Microsoft 365 for Individuals: Subscription for Productivity Apps",
+      "url": "https://www.microsoft.com/en-us/microsoft-365?msockid=10f12a6ddcf165b019c33db6dd07642f",
+      "snippet": "Microsoft 365 (formerly Office 365) subscriptions offer a suite of productivity tools and cloud services with world-class security and …"
+    },
+    {
+      "title": "Microsoft - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Microsoft",
+      "snippet": "Microsoft Corporation is an American multinational technology company headquartered in Redmond, Washington. The company …"
+    }
+  ]
+}

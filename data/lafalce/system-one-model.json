@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "lafalce/system-one-model",
+  "slug": "lafalce-system-one-model",
+  "author": "lafalce",
+  "url": "https://huggingface.co/lafalce/system-one-model",
+  "created_at": "2026-09-19T16:41:06.000Z",
+  "updated_at": "2026-09-19T16:41:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "lora",
+    "text-classification",
+    "decision-model",
+    "en",
+    "base_model:answerdotai/ModernBERT-base",
+    "base_model:adapter:answerdotai/ModernBERT-base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 72630935,
+  "storage_human": "73 MB",
+  "base_model": "answerdotai/ModernBERT-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "谁能解读一下Star War Episode 7 The Force Awakens的第一个1分28秒 …",
+      "url": "https://www.zhihu.com/question/26834182",
+      "snippet": "Star Wars: The Force Awakens 我整理了一份我follow的星球大战的新闻简报 来源： 影像日报 2013年6月20号 国外网站曝光了《星球 …"
+    },
+    {
+      "title": "《星球大战 VI：绝地归来》和《星球大战 VII：原力觉醒》之间发生了 …",
+      "url": "https://www.zhihu.com/question/39173727",
+      "snippet": "Jan 5, 2016 · 以下信息汇总自小说《余波》（Aftermath）、《星海迷途》（Lost Stars）、《觉醒之前》（Before the Awakening）和 …"
+    },
+    {
+      "title": "关于Geforce Experience无法检索游戏设置，如何解决？ - 知乎",
+      "url": "https://www.zhihu.com/question/263440229/answers/updated",
+      "snippet": "最近新配置的电脑 I513600KF，32G内存， 爱国者M.2固态，3060TI (技嘉矿卡），微软官方系统win10，win11都用了（已激活）就是 …"
+    },
+    {
+      "title": "我想要v2ex邀请码，请私聊赐我一个？ - 知乎",
+      "url": "https://www.zhihu.com/question/2043666031",
+      "snippet": "1、 如果你的 Solana 地址上持有至少 10K 的 V2EX Coin ，你可以通过 Solana 注册一个新的 V2EX 账号，不需要邀请码。 截止 …"
+    },
+    {
+      "title": "知乎",
+      "url": "https://www.zhihu.com/tardis/jm/art/2037287282542110354",
+      "snippet": "知乎，有趣、有料、有态度的内容社区。开放、真实、专业的社区氛围，汇集各行各业亲历者、内行人、领域专家。上知乎，找答案、 …"
+    }
+  ]
+}

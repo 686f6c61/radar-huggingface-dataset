@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "uyento7705/dpo-laptop-vn-model",
+  "slug": "uyento7705-dpo-laptop-vn-model",
+  "author": "uyento7705",
+  "url": "https://huggingface.co/uyento7705/dpo-laptop-vn-model",
+  "created_at": "2026-09-19T19:02:09.000Z",
+  "updated_at": "2026-09-19T19:02:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "llama",
+    "trl",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 688359088,
+  "storage_human": "688 MB",
+  "base_model": "unsloth/meta-llama-3.1-8b-instruct-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wirtualna Polska - Wszystko co ważne - www.wp.pl",
+      "url": "https://www.wp.pl/",
+      "snippet": "Polskie czerwone złoto . Rósł przy każdym dworze i zastępował oliwki Tytułujesz tak przelew? \"Zaświecisz się w skarbówce na …"
+    },
+    {
+      "title": "Poczta - Najlepsza Poczta, największe załączniki - WP",
+      "url": "https://poczta.wp.pl/",
+      "snippet": "Bezpieczna i darmowa poczta bez spamu. Duże załączniki, nielimitowana pojemność, aplikacja mobilna. Załóż konto i ciesz się …"
+    },
+    {
+      "title": "WP - Wiadomości z kraju i ze świata – najważniejsze i najnowsze ...",
+      "url": "https://wiadomosci.wp.pl/",
+      "snippet": "Wiadomości WP - Wszystko co ważne. Najnowsze informacje z Polski i ze Świata. Aktualności i wydarzenia dnia. Polityka. …"
+    },
+    {
+      "title": "Sport w WP SportoweFakty - wiadomości sportowe, relacje na żywo, …",
+      "url": "https://sportowefakty.wp.pl/",
+      "snippet": "Sport w WP SportoweFakty - codziennie najświeższe informacje sportowe z kraju i ze świata. Wiadomości, relacje live, tabele, …"
+    },
+    {
+      "title": "Najnowsze - Najnowsze informacje - WP Wiadomości",
+      "url": "https://wiadomosci.wp.pl/najnowsze",
+      "snippet": "20 hours ago · Wiadomości WP z Polski i ze Świata - Wszystko co ważne. Prasa. Ciekawostki. Kultura. Gospodarka. Polityka. …"
+    }
+  ]
+}

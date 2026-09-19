@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "vaibhav-vyas/Social-Spam-CatBoost",
+  "slug": "vaibhav-vyas-social-spam-catboost",
+  "author": "vaibhav-vyas",
+  "url": "https://huggingface.co/vaibhav-vyas/Social-Spam-CatBoost",
+  "created_at": "2026-09-19T16:26:31.000Z",
+  "updated_at": "2026-09-19T16:35:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tabular",
+    "classification",
+    "catboost",
+    "spam-detection",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 288468,
+  "storage_human": "288468 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Spelletjes - gratis 3500 spellen spele op de leukste spelletjes site!",
+      "url": "https://www.elkspel.nl/",
+      "snippet": "Spelletjes - De nieuwste en leukste spelletjes op 1 website verzameld! Meer dan 3500 spellen om te spele!"
+    },
+    {
+      "title": "Vuurjongen en Watermeisje | Gratis & Snel! - Elkspel.nl",
+      "url": "https://www.elkspel.nl/vuurjongen-watermeisje",
+      "snippet": "Gratis online Vuurjongen & Watermeisje spelletjes speel je bij Elkspel. Kom je ook spelen?"
+    },
+    {
+      "title": "Lingo Spelen | 100% Origineel | Gegarandeerd Plezier",
+      "url": "https://www.elkspel.nl/puzzel/lingo",
+      "snippet": "Lingo, het bekende woordspelletje van SBS6, speel je nu ook online! Je kunt met je vrienden spelen of in je eentje oefenen. Vul …"
+    },
+    {
+      "title": "Denk Spelletjes (Overzicht van 570+) | Nu Gratis Online",
+      "url": "https://www.elkspel.nl/denk",
+      "snippet": "Speel leuke Denk spelletjes online op Elkspel. Bij ons vind je de grootste verzameling gratis Denk spellen voor het hele gezin."
+    },
+    {
+      "title": "Mahjong Spelletjes | Speel Nu Gratis & Snel! - Elkspel.nl",
+      "url": "https://www.elkspel.nl/mahjong",
+      "snippet": "Speel leuke Mahjong Spelletjes online op Elkspel. Wij hebben de beste Mahjong Spelletjes voor jou verzameld. Waar wacht je nog op?"
+    }
+  ]
+}

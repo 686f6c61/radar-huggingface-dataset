@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "hubnemo/Qwen3-8B-ALoRA-MTP-60k-skip-prefix-40k-dataset-loss_decay",
+  "slug": "hubnemo-qwen3-8b-alora-mtp-60k-skip-prefix-40k-dataset-loss_decay",
+  "author": "hubnemo",
+  "url": "https://huggingface.co/hubnemo/Qwen3-8B-ALoRA-MTP-60k-skip-prefix-40k-dataset-loss_decay",
+  "created_at": "2026-09-19T15:24:29.000Z",
+  "updated_at": "2026-09-20T02:06:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 152900528456,
+  "storage_human": "152.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Target stores in New York",
+      "url": "https://www.target.com/store-locator/store-directory/new-york",
+      "snippet": "Find all Target store locations in New York."
+    },
+    {
+      "title": "Target Manhattan Herald Square Store, New York, NY",
+      "url": "https://www.target.com/sl/manhattan-herald-square/3277",
+      "snippet": "Shop Target Manhattan Herald Square Store for furniture, electronics, clothing, groceries, home goods and more at prices you will love."
+    },
+    {
+      "title": "Target Stores in New York (108 Locations) - Sep 2026",
+      "url": "https://www.storelocators.com/store-lists/target/new-york",
+      "snippet": "1 day ago · All 108 Target store locations in New York with addresses, phone numbers, and hours. Updated daily."
+    },
+    {
+      "title": "Target - 615 10th Ave, New York, NY - Hours & Weekly Ad",
+      "url": "https://www.storeopeninghours.com/target-manhattan-new-york-ny",
+      "snippet": "16 hours ago · Refer to this page for information on Target 615 10th Ave, New York, NY, including the working times, location info, …"
+    },
+    {
+      "title": "Target New York, NY - Store Locator & Hours",
+      "url": "https://www.storeopeninghours.com/retailers/target/new-york-ny",
+      "snippet": "This page includes a list of Target branches in the area."
+    }
+  ]
+}

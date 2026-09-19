@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Thraaxxxx/radarodio-v01-multilabel-ensemble",
+  "slug": "thraaxxxx-radarodio-v01-multilabel-ensemble",
+  "author": "Thraaxxxx",
+  "url": "https://huggingface.co/Thraaxxxx/radarodio-v01-multilabel-ensemble",
+  "created_at": "2026-09-19T17:00:06.000Z",
+  "updated_at": "2026-09-19T17:47:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "radarodio_ensemble",
+    "text-classification",
+    "bert",
+    "portuguese",
+    "hate-speech",
+    "multi-label-classification",
+    "ensemble",
+    "radar-odio",
+    "custom_code",
+    "pt",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 676020530,
+  "parameters_human": "676.0M",
+  "storage_bytes": 5408420792,
+  "storage_human": "5.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Disney+ - Swisscom Community",
+      "url": "https://community.swisscom.ch/d/863278-disney",
+      "snippet": "Oct 29, 2025 · Jeustufe63 Hier findest du die Informationen -> unter Häufige Fragen: Swisscom Disney+: Streamen in bester Qualität …"
+    },
+    {
+      "title": "Disney+ seit heute Fehlercode 73 - Swisscom Community",
+      "url": "https://community.swisscom.ch/d/865192-disney-seit-heute-fehlercode-73",
+      "snippet": "Jan 15, 2026 · Der Disney+ Fehlercode 73 weist darauf hin, dass der gewünschte Inhalt an Ihrem aktuellen Standort nicht verfügbar …"
+    },
+    {
+      "title": "如何在中国大陆收看迪士尼频道? - 知乎",
+      "url": "https://www.zhihu.com/question/62849788",
+      "snippet": "disney channel 开启魔法工具，选择支持Disney+的新加坡或美国节点。 通过Google浏览器访问Disney+官网，进入首页后输入您用来 …"
+    },
+    {
+      "title": "最新Safari支持Hulu或Disney 4K吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/428401949",
+      "snippet": "Disney+: 截至 macOS Big Sur，Safari 浏览器并不支持 Disney+ 的 4K 分辨率播放。 要观看 4K 内容，用户通常需要使用 Apple TV 应 …"
+    },
+    {
+      "title": "Disney+ - Swisscom Community",
+      "url": "https://community.swisscom.ch/d/795145-disney",
+      "snippet": "Nov 15, 2023 · Hello, With the recent announcement of the new TV-Box 5, including Disney+ (TV-Box 5: avec Disney+ et un …"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "DelinaresMassates/oreki-krea",
+  "slug": "delinaresmassates-oreki-krea",
+  "author": "DelinaresMassates",
+  "url": "https://huggingface.co/DelinaresMassates/oreki-krea",
+  "created_at": "2026-09-19T18:41:35.000Z",
+  "updated_at": "2026-09-19T19:23:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 969349669,
+  "storage_human": "969 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "On This Day - Today in History, Film, Music and Sport",
+      "url": "https://www.onthisday.com/",
+      "snippet": "20 hours ago · Find out what happened today or any day in history with On This Day. Historical events, birthdays, deaths, photos and …"
+    },
+    {
+      "title": "Today in History - On This Day",
+      "url": "https://www.onthisday.com/today/events.php",
+      "snippet": "20 hours ago · Learn about important and interesting historical events that happened on today in history. Hundreds of events and …"
+    },
+    {
+      "title": "On This Day - What Happened Today In History | Britannica",
+      "url": "https://www.britannica.com/on-this-day",
+      "snippet": "On This Day In History: anniversaries, birthdays, major events, and time capsules. This day's facts in the arts, politics, and sciences."
+    },
+    {
+      "title": "On This Day – What Happened Today in History",
+      "url": "https://www.timeanddate.com/on-this-day/",
+      "snippet": "Discover what happened on this day in history. Explore key events, famous birthdays, and historical milestones from past to present."
+    },
+    {
+      "title": "Today In History — What Happened On This Day",
+      "url": "https://todayinhistory.app/",
+      "snippet": "20 hours ago · Every date has a story. Every figure has a voice. Browse any day in history, talk to 5,000+ historical figures, and play …"
+    }
+  ]
+}

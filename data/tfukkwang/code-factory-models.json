@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "tfukkwang/code-factory-models",
+  "slug": "tfukkwang-code-factory-models",
+  "author": "tfukkwang",
+  "url": "https://huggingface.co/tfukkwang/code-factory-models",
+  "created_at": "2026-09-19T17:20:12.000Z",
+  "updated_at": "2026-09-20T03:06:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 24444022700,
+  "storage_human": "24.4 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Informer - Nezavisne Dnevne Novine",
+      "url": "https://informer.rs/",
+      "snippet": "Nezavisne Dnevne Novine - Drugi glasno ćute. Mi pišemo: drugačije, smelo, sa stavom. Nezavisne dnevne novine INFORMER. …"
+    },
+    {
+      "title": "Svet i planeta - Informer.rs",
+      "url": "https://informer.rs/planeta",
+      "snippet": "Najnovije i najvažnije vesti o svetskoj politici, ratovima i ekonomskim temama čitajte na Informer.rs"
+    },
+    {
+      "title": "Kamere uživo - Informer",
+      "url": "https://kamere.informer.rs/",
+      "snippet": "Nezavisne Dnevne Novine - Kamere uživo u Beogradu i Novom Sadu. U svakom trenutku pratite stanje na glavnim saobraćajnicama …"
+    },
+    {
+      "title": "Fudbal | FK Partizan | Sportinjo - INFORMER",
+      "url": "https://sportinjo.informer.rs/fudbal/fk-partizan",
+      "snippet": "Sve vesti o FK Partizan saznajte na jednom mestu I Sportinjo.rs"
+    },
+    {
+      "title": "INFORMER - Najnovije sportske vesti i rezultati uživo - Sportinjo",
+      "url": "https://sportinjo.informer.rs/",
+      "snippet": "Najnovije vesti o sportskim dešavanjima širom sveta. Analize, intervjui, rezultati i priče iz sveta sporta. Budite korak ispred sa našim …"
+    }
+  ]
+}

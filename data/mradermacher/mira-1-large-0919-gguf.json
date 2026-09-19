@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Mira-1-large-0919-GGUF",
+  "slug": "mradermacher-mira-1-large-0919-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Mira-1-large-0919-GGUF",
+  "created_at": "2026-09-19T14:11:13.000Z",
+  "updated_at": "2026-09-19T23:53:05.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen3",
+    "conversational",
+    "reasoning",
+    "code",
+    "mathematics",
+    "personality",
+    "lora",
+    "smilyai",
+    "en",
+    "base_model:Smilyai-labs/Mira-1-large-0919",
+    "base_model:adapter:Smilyai-labs/Mira-1-large-0919",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14768307200,
+  "parameters_human": "14.77B",
+  "storage_bytes": 101987598080,
+  "storage_human": "102.0 GB",
+  "base_model": "Smilyai-labs/Mira-1-large-0919",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Antarktika - Vikipedi",
+      "url": "https://tr.wikipedia.org/wiki/Antarktika",
+      "snippet": "Antarktika, yaklaşık olarak Güney Amerika kıyılarına 1000 km, Avustralya'ya 3100 km, Afrika kıyılarına ise 3980 km uzaklıktadır. [47] …"
+    },
+    {
+      "title": "Antarktika | TÜBİTAK Bilim Genç",
+      "url": "https://bilimgenc.tubitak.gov.tr/konular/antarktika",
+      "snippet": "Jun 20, 2026 · Antarktika, kalın buz tabakalarıyla kaplı, dünyanın en zorlu yaşam alanlarından biri. Uçsuz bucaksız beyazlığın hâkim …"
+    },
+    {
+      "title": "Antarctica - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Antarctica",
+      "snippet": "Antarctica (/ ænˈtɑːrktɪkə / ⓘ) [note 1] is Earth 's southernmost and least-populated continent. Situated almost entirely south of the …"
+    },
+    {
+      "title": "Antarktika - Wikiwand",
+      "url": "https://www.wikiwand.com/tr/Antarktika",
+      "snippet": "Antarktika, Güney yarımküre'nin en güneyinde bulunan ve Güney Kutbu'nu içeren kıta. Afrika ve Okyanusya'nın güneyinde olan ve …"
+    },
+    {
+      "title": "Antarktika Hakkında Bilinmesi Gerekenler | Gezimanya",
+      "url": "https://gezimanya.com/antarktika/antarktika-hakkinda-bilinmesi-gerekenler",
+      "snippet": "Antarktika, Güney Yarımküre’nin en güneyinde yer alan ve bünyesinde hiçbir ülke bulunmayan tek kıtadır. Ayrıca bölge o kadar …"
+    }
+  ]
+}

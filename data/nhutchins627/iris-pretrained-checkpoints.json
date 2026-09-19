@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "nhutchins627/iris-pretrained-checkpoints",
+  "slug": "nhutchins627-iris-pretrained-checkpoints",
+  "author": "nhutchins627",
+  "url": "https://huggingface.co/nhutchins627/iris-pretrained-checkpoints",
+  "created_at": "2026-09-19T17:10:40.000Z",
+  "updated_at": "2026-09-19T17:13:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "scvi-tools",
+  "languages": [],
+  "tags": [
+    "scvi-tools",
+    "biology",
+    "single-cell",
+    "scanvi",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 944765508,
+  "storage_human": "945 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Complete Guide to Certified Translations for USCIS Forms and ...",
+      "url": "https://www.trustedtranslations.com/blog/certified-translations-for-uscis-forms",
+      "snippet": "Jan 26, 2026 · A certified translation for USCIS is a complete, word-for-word translation of a document originally written in another …"
+    },
+    {
+      "title": "Get USCIS Certified Translation Services with 99% Accuracy",
+      "url": "https://vananservices.com/translation-services/certified/uscis-certified-translation.php",
+      "snippet": "Cost-effective USCIS-certified translation services with 99% accuracy, quick turnaround, 24/7 availability, support for over 100 …"
+    },
+    {
+      "title": "Sure Translation: Certified Translation Services for $18",
+      "url": "https://www.suretranslation.com/",
+      "snippet": "Certified translation at $18 per page with 100% USCIS acceptance guarantee. 24-hour turnaround and unlimited revisions. Sure …"
+    },
+    {
+      "title": "Russian Translation Services - Translation services for Russian and ...",
+      "url": "https://foreigndocuments.com/",
+      "snippet": "We provide certified translation services for civil records, diplomas and transcripts, originated from Russia, Ukraine, Belarus, …"
+    },
+    {
+      "title": "Official Translations | Legal & Certified",
+      "url": "https://officialtranslations.com/",
+      "snippet": "A certified translation includes a signed and dated Certificate of Accuracy from the translator, affirming that the translation is a …"
+    }
+  ]
+}

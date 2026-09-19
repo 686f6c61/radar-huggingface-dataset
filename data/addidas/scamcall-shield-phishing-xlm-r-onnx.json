@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "addidas/scamcall-shield-phishing-xlm-r-onnx",
+  "slug": "addidas-scamcall-shield-phishing-xlm-r-onnx",
+  "author": "addidas",
+  "url": "https://huggingface.co/addidas/scamcall-shield-phishing-xlm-r-onnx",
+  "created_at": "2026-09-19T16:00:47.000Z",
+  "updated_at": "2026-09-19T16:13:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "xlm-roberta",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 301015891,
+  "storage_human": "301 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "adidas Site Officiel FR | Tenues de sport",
+      "url": "https://www.adidas.fr/",
+      "snippet": "Que tu sois runner, basketteur, footballeur ou simplement actif, tu trouveras tout ce qu'il te faut chez adidas. Nous sommes là pour …"
+    },
+    {
+      "title": "ORIGINALS - ADIDAS FR",
+      "url": "https://www.adidas.fr/originals",
+      "snippet": "Découvre la collection de vêtements, de chaussures et d'accessoires adidas Originals. Disponible pour homme, femme et enfant dès …"
+    },
+    {
+      "title": "Adidas — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Adidas",
+      "snippet": "Adidas, stylisé adidas, (anciennement Gebrüder Dassler Schuhfabrik) est une firme allemande fondée en 1949 par Adolf Dassler, …"
+    },
+    {
+      "title": "adidas Official Website UK | Sportswear",
+      "url": "https://www.adidas.co.uk/?msockid=3c459569d4df69020a1182b0d5d9681d",
+      "snippet": "Explore the official adidas shop for a wide range of adidas shoes, sports clothing and equipment for adults and kids. Get free returns …"
+    },
+    {
+      "title": "Adidas en ligne | Nouvelle collection sur ZALANDO",
+      "url": "https://www.zalando.fr/adidas/",
+      "snippet": "Les modes et les années passent, mais adidas persiste brillamment à équiper les athlètes, à habiller les sportifs et sportives du …"
+    }
+  ]
+}

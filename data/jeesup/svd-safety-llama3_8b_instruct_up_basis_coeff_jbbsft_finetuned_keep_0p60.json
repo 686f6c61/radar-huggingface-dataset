@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-llama3_8b_instruct_up_basis_coeff_jbbsft_finetuned_keep_0p60",
+  "slug": "jeesup-svd-safety-llama3_8b_instruct_up_basis_coeff_jbbsft_finetuned_keep_0p60",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-llama3_8b_instruct_up_basis_coeff_jbbsft_finetuned_keep_0p60",
+  "created_at": "2026-09-19T18:09:05.000Z",
+  "updated_at": "2026-09-19T18:29:13.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "basis-sharing",
+    "compression",
+    "low-rank",
+    "safety",
+    "base_model:meta-llama/Meta-Llama-3-8B-Instruct",
+    "base_model:finetune:meta-llama/Meta-Llama-3-8B-Instruct",
+    "license:llama3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16103203850,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Meta-Llama-3-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "10 Best Workforce Management Software Platforms in 2026",
+      "url": "https://roboticsandautomationnews.com/2026/06/26/10-best-workforce-management-software-platforms-in-2026/102836/",
+      "snippet": "Jun 26, 2026 · Compare 10 leading workforce management software platforms for 2026, including ProHance, UKG, Workday, ADP, …"
+    },
+    {
+      "title": "10 best workforce planning software for 2026 - Guideflow Blog",
+      "url": "https://www.guideflow.com/blog/workforce-planning-software",
+      "snippet": "Aug 31, 2026 · Compare the 10 best workforce planning software platforms for 2026, with pricing, G2 ratings, and buyer guidance on …"
+    },
+    {
+      "title": "10 Best Enterprise Workforce Management Software In 2026",
+      "url": "https://peoplemanagingpeople.com/tools/best-enterprise-workforce-management-software/",
+      "snippet": "Aug 29, 2026 · Discover the best enterprise workforce management software to optimize HR, scheduling, and compliance in 2026. …"
+    },
+    {
+      "title": "Best Workforce Management Software 2026 | Capterra",
+      "url": "https://www.capterra.com/workforce-management-software/",
+      "snippet": "3 days ago · Find the top Workforce Management software of 2026 on Capterra. Based on millions of verified user reviews - compare …"
+    },
+    {
+      "title": "Top 10 Workforce Management Tools for 2026 - Nextiva",
+      "url": "https://www.nextiva.com/blog/workforce-management-tools.html",
+      "snippet": "Aug 10, 2026 · So we’ve pulled together the 10 best workforce management tools for 2026 with an emphasis on scalability, …"
+    }
+  ]
+}

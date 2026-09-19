@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "sahil03kundu/ayurvaidya-xgboost",
+  "slug": "sahil03kundu-ayurvaidya-xgboost",
+  "author": "sahil03kundu",
+  "url": "https://huggingface.co/sahil03kundu/ayurvaidya-xgboost",
+  "created_at": "2026-09-19T19:02:37.000Z",
+  "updated_at": "2026-09-19T19:08:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": "xgboost",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "xgboost",
+    "medical",
+    "healthcare",
+    "classification",
+    "ayurveda",
+    "traditional-medicine",
+    "treatment-recommendation",
+    "tabular-classification",
+    "en",
+    "dataset:sahil03kundu/ayurvaidya-medical-treatment-dataset",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Treatment System Recommendation",
+      "dataset": "AyurVaidya Medical Treatment Dataset",
+      "metric": "Accuracy",
+      "value": 0.8847
+    }
+  ],
+  "sources": [
+    {
+      "title": "TV Streaming ohne Anmeldung | 2ix2",
+      "url": "https://2ix2tv.de/",
+      "snippet": "Auf unserer TV-Streaming Webseite erfahren Sie alles über die kostenlose Verwendung des Streamings und die Programmauswahl. …"
+    },
+    {
+      "title": "Meist Kommentierte Sender | Live Stream Kostenlos Ohne Anmeldung",
+      "url": "https://www.2ix2.com/meist-kommentierte-tv-sender/",
+      "snippet": "Neu Hochgeladen Meist AUFGERUFENE Sender Meist Kommentierte Sender Meist Gelikte Sender"
+    },
+    {
+      "title": "Live TV kostenlos auf Joyn streamen",
+      "url": "https://www.joyn.de/live-tv?msockid=0f90ee5e73c9638a3c11f987727262ff",
+      "snippet": "Im Live TV Stream auf Joyn kannst du über 100 deutsche Sender anschauen. Dazu gehören die öffentlichen-rechtlichen Free-TV …"
+    },
+    {
+      "title": "TV Live Stream - Nydus",
+      "url": "https://nydus.org/stream/live/",
+      "snippet": "Gute Alternativen zu 2ix2 Es gibt zahlreiche 2ix2 Alternativen, die in Qualität und Sicherheit (ohne Gefahr für Abmahnungen) …"
+    },
+    {
+      "title": "Live TV jetzt",
+      "url": "https://www.live-tv-jetzt.de/",
+      "snippet": "Was läuft gerade im TV? Mit nur einem Klick zu allen Livestreams der deutschen TV-Sender (ARD, ZDF, RTL, Pro7, Sat1, VOX, arte, …"
+    }
+  ]
+}

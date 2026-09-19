@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "AiMamis/Jackie",
+  "slug": "aimamis-jackie",
+  "author": "AiMamis",
+  "url": "https://huggingface.co/AiMamis/Jackie",
+  "created_at": "2026-09-19T19:19:12.000Z",
+  "updated_at": "2026-09-19T19:19:40.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "license:openrail++",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 458911363,
+  "storage_human": "459 MB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bazos.sk - Inzercia, bazár",
+      "url": "https://www.bazos.sk/",
+      "snippet": "Bezplatná inzercia, online bazár - kúpte si nový byt alebo predaj staré auto, toto všetko hravo zvládne náš Bazoš - Vaše inzeráty."
+    },
+    {
+      "title": "Nábytok bazár | Bazoš.sk",
+      "url": "https://nabytok.bazos.sk/20/",
+      "snippet": "Nábytok bazár zadarmo. Vyberajte z 46 882 inzerátov. Predaj ľahko a rýchlo na Bazoš.sk. Cez 400 tisíc užívateľov za deň."
+    },
+    {
+      "title": "Topánky, obuv bazár - Oblečenie | Bazoš.sk",
+      "url": "https://oblecenie.bazos.sk/obuv/",
+      "snippet": "Kategória Topánky, obuv bazár. Vyberajte z 14 904 inzerátov. Predaj ľahko a rýchlo na Bazoš.sk. Cez 400 tisíc užívateľov za deň."
+    },
+    {
+      "title": "Opel bazár - Auto | Bazoš.sk",
+      "url": "https://auto.bazos.sk/opel/",
+      "snippet": "Kategória Opel bazár. Vyberajte z 2 716 inzerátov. Predaj ľahko a rýchlo na Bazoš.sk. Cez 400 tisíc užívateľov za deň."
+    },
+    {
+      "title": "Nitra inzercia - Reality | Bazoš.sk",
+      "url": "https://reality.bazos.sk/inzeraty/nitra/",
+      "snippet": "Reality - Nitra inzercia. Vyberajte z 1 549 inzerátov. Predaj ľahko a rýchlo na Bazoš.sk. Cez 400 tisíc užívateľov za deň."
+    }
+  ]
+}

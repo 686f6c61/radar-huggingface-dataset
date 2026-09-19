@@ -1,0 +1,569 @@
+{
+  "schema": 1,
+  "id": "thkmon/multilingual-e5-small",
+  "slug": "thkmon-multilingual-e5-small",
+  "author": "thkmon",
+  "url": "https://huggingface.co/thkmon/multilingual-e5-small",
+  "created_at": "2026-09-19T17:09:15.000Z",
+  "updated_at": "2026-09-19T17:09:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "multilingual",
+    "af",
+    "am",
+    "ar",
+    "as",
+    "az",
+    "be",
+    "bg",
+    "bn",
+    "br",
+    "bs",
+    "ca",
+    "cs",
+    "cy",
+    "da",
+    "de",
+    "el",
+    "en",
+    "eo",
+    "es",
+    "et",
+    "eu",
+    "fa",
+    "fi",
+    "fr",
+    "fy",
+    "ga",
+    "gd",
+    "gl",
+    "gu",
+    "ha",
+    "he",
+    "hi",
+    "hr",
+    "hu",
+    "hy",
+    "id",
+    "is",
+    "it",
+    "ja",
+    "jv",
+    "ka",
+    "kk",
+    "km",
+    "kn",
+    "ko",
+    "ku",
+    "ky",
+    "la",
+    "lo",
+    "lt",
+    "lv",
+    "mg",
+    "mk",
+    "ml",
+    "mn",
+    "mr",
+    "ms",
+    "my",
+    "ne",
+    "nl",
+    "no",
+    "om",
+    "or",
+    "pa",
+    "pl",
+    "ps",
+    "pt",
+    "ro",
+    "ru",
+    "sa",
+    "sd",
+    "si",
+    "sk",
+    "sl",
+    "so",
+    "sq",
+    "sr",
+    "su",
+    "sv",
+    "sw",
+    "ta",
+    "te",
+    "th",
+    "tl",
+    "tr",
+    "ug",
+    "uk",
+    "ur",
+    "uz",
+    "vi",
+    "xh",
+    "yi",
+    "zh"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "pytorch",
+    "onnx",
+    "safetensors",
+    "openvino",
+    "bert",
+    "mteb",
+    "Sentence Transformers",
+    "sentence-similarity",
+    "multilingual",
+    "af",
+    "am",
+    "ar",
+    "as",
+    "az",
+    "be",
+    "bg",
+    "bn",
+    "br",
+    "bs",
+    "ca",
+    "cs",
+    "cy",
+    "da",
+    "de",
+    "el",
+    "en",
+    "eo",
+    "es",
+    "et",
+    "eu",
+    "fa",
+    "fi",
+    "fr",
+    "fy",
+    "ga",
+    "gd",
+    "gl",
+    "gu",
+    "ha",
+    "he",
+    "hi",
+    "hr",
+    "hu",
+    "hy",
+    "id",
+    "is",
+    "it",
+    "ja",
+    "jv",
+    "ka",
+    "kk",
+    "km",
+    "kn",
+    "ko",
+    "ku",
+    "ky",
+    "la",
+    "lo",
+    "lt",
+    "lv",
+    "mg",
+    "mk",
+    "ml",
+    "mn",
+    "mr",
+    "ms",
+    "my",
+    "ne",
+    "nl",
+    "no",
+    "om",
+    "or",
+    "pa",
+    "pl",
+    "ps",
+    "pt",
+    "ro",
+    "ru",
+    "sa",
+    "sd",
+    "si",
+    "sk",
+    "sl",
+    "so",
+    "sq",
+    "sr",
+    "su",
+    "sv",
+    "sw",
+    "ta",
+    "te",
+    "th",
+    "tl",
+    "tr",
+    "ug",
+    "uk",
+    "ur",
+    "uz",
+    "vi",
+    "xh",
+    "yi",
+    "zh",
+    "arxiv:2402.05672",
+    "arxiv:2108.08787",
+    "arxiv:2104.08663",
+    "arxiv:2210.07316",
+    "license:mit",
+    "model-index",
+    "eval-results",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 117654272,
+  "parameters_human": "117.7M",
+  "storage_bytes": 2257170831,
+  "storage_human": "2.3 GB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "MTEB AmazonCounterfactualClassification (en)",
+      "metric": null,
+      "value": 73.79104477611939
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonCounterfactualClassification (en)",
+      "metric": null,
+      "value": 36.9996434842022
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonCounterfactualClassification (en)",
+      "metric": null,
+      "value": 67.95453679103099
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonCounterfactualClassification (de)",
+      "metric": null,
+      "value": 71.64882226980728
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonCounterfactualClassification (de)",
+      "metric": null,
+      "value": 82.11942130026586
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonCounterfactualClassification (de)",
+      "metric": null,
+      "value": 69.87963421606715
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonCounterfactualClassification (en-ext)",
+      "metric": null,
+      "value": 75.8095952023988
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonCounterfactualClassification (en-ext)",
+      "metric": null,
+      "value": 24.46869495579561
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonCounterfactualClassification (en-ext)",
+      "metric": null,
+      "value": 63.00108480037597
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonCounterfactualClassification (ja)",
+      "metric": null,
+      "value": 64.186295503212
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonCounterfactualClassification (ja)",
+      "metric": null,
+      "value": 15.496804690197042
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonCounterfactualClassification (ja)",
+      "metric": null,
+      "value": 52.07153895475031
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonPolarityClassification",
+      "metric": null,
+      "value": 88.699325
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonPolarityClassification",
+      "metric": null,
+      "value": 85.27039559917269
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonPolarityClassification",
+      "metric": null,
+      "value": 88.65556295032513
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonReviewsClassification (en)",
+      "metric": null,
+      "value": 44.69799999999999
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonReviewsClassification (en)",
+      "metric": null,
+      "value": 43.73187348654165
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonReviewsClassification (de)",
+      "metric": null,
+      "value": 40.245999999999995
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonReviewsClassification (de)",
+      "metric": null,
+      "value": 39.3863530637684
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonReviewsClassification (es)",
+      "metric": null,
+      "value": 40.394
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonReviewsClassification (es)",
+      "metric": null,
+      "value": 39.301223469483446
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonReviewsClassification (fr)",
+      "metric": null,
+      "value": 38.864
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonReviewsClassification (fr)",
+      "metric": null,
+      "value": 37.97974261868003
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonReviewsClassification (ja)",
+      "metric": null,
+      "value": 37.682
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonReviewsClassification (ja)",
+      "metric": null,
+      "value": 37.07399369768313
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonReviewsClassification (zh)",
+      "metric": null,
+      "value": 37.504
+    },
+    {
+      "task": null,
+      "dataset": "MTEB AmazonReviewsClassification (zh)",
+      "metric": null,
+      "value": 36.62317273874278
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 19.061
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 31.703
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 32.967
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 33.001000000000005
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 27.466
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 29.564
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 19.559
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 31.874999999999996
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 33.146
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 33.18
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 27.667
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 29.74
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 19.061
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 39.062999999999995
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 45.184000000000005
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 46.115
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 30.203000000000003
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 33.953
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 19.061
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 6.279999999999999
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 0.9129999999999999
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 0.099
+    },
+    {
+      "task": null,
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 12.706999999999999
+    }
+  ],
+  "sources": [
+    {
+      "title": "Wat is een query? Simpele uitleg + Leer zelf queries maken!",
+      "url": "https://programmeerplaats.nl/wat-is-een-query/",
+      "snippet": "Sep 3, 2022 · Vraag jij je af wat een query is? Dan zit je hier goed! Een query is simpel gezegd een opdracht aan een database. Lees …"
+    },
+    {
+      "title": "Query - Wikipedia",
+      "url": "https://nl.wikipedia.org/wiki/Query",
+      "snippet": "Met een query (Engels voor vraagstelling) wordt in de informatica een opdracht bedoeld die aan een database wordt gegeven om …"
+    },
+    {
+      "title": "Query - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Query",
+      "snippet": "This disambiguation page lists articles associated with the title Query. If an internal link incorrectly led you here, you may wish to …"
+    },
+    {
+      "title": "Query Betekenis: Wat is het en Hoe Gebruik Je het Effectief?",
+      "url": "https://wooms.nl/query-betekenis/",
+      "snippet": "Feb 19, 2025 · In de wereld van computers en databases is een query een precieze instructie. Het vertelt de computer precies welke …"
+    },
+    {
+      "title": "Query - 11 definities - Encyclo",
+      "url": "https://www.encyclo.nl/begrip/Query",
+      "snippet": "Een query verwijst naar een specifieke combinatie van woorden die iemand in een zoekmachine typt om informatie te vinden. Het is …"
+    }
+  ]
+}

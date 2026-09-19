@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "dhanesh-hf/Jarvis-Titan-M4-Activated",
+  "slug": "dhanesh-hf-jarvis-titan-m4-activated",
+  "author": "dhanesh-hf",
+  "url": "https://huggingface.co/dhanesh-hf/Jarvis-Titan-M4-Activated",
+  "created_at": "2026-09-19T16:15:02.000Z",
+  "updated_at": "2026-09-20T12:23:57.000Z",
+  "license": "jtrl-v1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "jarvis_titan_moe",
+    "text-generation",
+    "moe",
+    "deepseek-moe",
+    "titans-neural-memory",
+    "tri-brid-memory",
+    "differential-holographic-attention",
+    "dha-3",
+    "csa3-perturbative-attention",
+    "multi-token-prediction",
+    "reasoning",
+    "math",
+    "code",
+    "agentic",
+    "long-context",
+    "conversational",
+    "custom_code",
+    "en",
+    "arxiv:2501.00663",
+    "base_model:dhanesh-hf/Jarvis-Titan-V15-MoE-Decoupled",
+    "base_model:finetune:dhanesh-hf/Jarvis-Titan-V15-MoE-Decoupled",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 15551072803,
+  "parameters_human": "15.55B",
+  "storage_bytes": 35387771454,
+  "storage_human": "35.4 GB",
+  "base_model": "dhanesh-hf/Jarvis-Titan-V15-MoE-Decoupled",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bundesliga | Die offizielle Seite",
+      "url": "https://www.bundesliga.com/de/bundesliga",
+      "snippet": "Die offizielle Seite der Bundesliga. Aktuelle News, Infos und Statistiken zu den Teams der Saison 2026/27 findest du hier."
+    },
+    {
+      "title": "Aktuelle Tabelle | 4. Spieltag | Saison 2026/27 - Bundesliga",
+      "url": "https://www.bundesliga.com/de/bundesliga/tabelle?view=full",
+      "snippet": "Die aktuelle Tabelle der Bundesliga mit allen Informationen zu Punkten, Toren, Heimbilanz, Auswärtsbilanz, Form"
+    },
+    {
+      "title": "Bundesliga | 4. Bundesliga Spieltag - alle Bundesliga Spiele heute",
+      "url": "https://www.bundesliga.com/de/bundesliga/spieltag",
+      "snippet": "Alle Daten, Anstoßzeiten und Ergebnisse für den 4 . Spieltag der Bundesliga-Saison 2026/27."
+    },
+    {
+      "title": "Tabellenrechner - Bundesliga",
+      "url": "https://www.bundesliga.com/de/bundesliga/tabellenrechner",
+      "snippet": "Tippe die restliche Saison durch und erfahre, wo dein Club landet."
+    },
+    {
+      "title": "Bundesliga | Live Konferenz | Der Ticker zum 4. Spieltag der Bundesliga ...",
+      "url": "https://www.bundesliga.com/de/bundesliga/liveticker-ergebnisse-tabelle",
+      "snippet": "Der schnellste Konferenz-Liveticker zur Fußball-Bundesliga! Alle Tore, alle Ergebnisse, alle Statistiken zum aktuellen Spieltag der …"
+    }
+  ]
+}

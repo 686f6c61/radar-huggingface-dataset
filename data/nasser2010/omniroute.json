@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "nasser2010/OmniRoute",
+  "slug": "nasser2010-omniroute",
+  "author": "nasser2010",
+  "url": "https://huggingface.co/nasser2010/OmniRoute",
+  "created_at": "2026-09-19T14:52:02.000Z",
+  "updated_at": "2026-09-19T14:52:02.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jaśnie Pańska. Pizzeria — Pizzeria, Kutno — Opinie i godziny",
+      "url": "https://localitybiz.pl/37452410/ja%C5%9Bnie-pa%C5%84ska-pizzeria-kutno",
+      "snippet": "Kontakt i Lokalizacja 📍 Adres: Plac Marszałka Józefa Piłsudskiego 14, 99-320 Kutno, Łódzkie, Polska 📞 Telefon: +48 791 205 505 🌐 …"
+    },
+    {
+      "title": "Pizzeria Jaśnie Pańska | Kutno - Facebook",
+      "url": "https://www.facebook.com/p/Pizzeria-Ja%C5%9Bnie-Pa%C5%84ska-100054344298761/",
+      "snippet": "Jul 21, 2026 · ️ Walentynki smakują najlepiej u nas! 🍕🍹 Zapraszamy Was na wyjątkową pizzę w kształcie serca, stworzoną specjalnie …"
+    },
+    {
+      "title": "Jaśnie Pańska Pizzeria — Restauracja w Kutno, Plac Marszałka Józefa ...",
+      "url": "https://firmy-pl.com/kutno-wojewodztwo-lodzkie/restauracja/jasnie-panska-pizzeria-kutno/",
+      "snippet": "Apr 11, 2013 · Restauracja w Plac Marszałka Józefa Piłsudskiego 14, 99-300 Kutno, Polska, Kutno, Wojewodztwo Lodzkie, 99-300 …"
+    },
+    {
+      "title": "Pizzeria Jaśnie Pańska Restaurant in Kutno - Polska Menu, Reviews, …",
+      "url": "https://www.sluurpy.com/en/kutno/restaurant/7081975/pizzeria-ja%C5%9Bnie-pa%C5%84ska",
+      "snippet": "Jun 5, 2025 · Pizzeria Jaśnie Pańska Restaurant in Kutno - Polska & Pizza | ⭐ 4.3/5 from 467 reviews. Menu, popular dishes, …"
+    },
+    {
+      "title": "Jaśnie Pańska. Pizzeria – Kutno, godziny otwarcia",
+      "url": "https://cityon.pl/miejsce/jasnie-panska-pizzeria-plac-marszalka-jozefa-pilsudskiego-14-kutno",
+      "snippet": "Jaśnie Pańska. Pizzeria, pl. Marszałka Józefa Piłsudskiego 14, Kutno, Pizzerie. Godziny otwarcia, adres, telefon, dojazd i opinie. …"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "pitbulldale305/pitbull_UniverSR_EDM_epoch206",
+  "slug": "pitbulldale305-pitbull_universr_edm_epoch206",
+  "author": "pitbulldale305",
+  "url": "https://huggingface.co/pitbulldale305/pitbull_UniverSR_EDM_epoch206",
+  "created_at": "2026-09-19T19:06:58.000Z",
+  "updated_at": "2026-09-19T19:08:01.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 229077659,
+  "storage_human": "229 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.de/index.html",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=de",
+      "snippet": "Google gibt es auch auf: English Werbeprogramme Über Google Google.com in English"
+    },
+    {
+      "title": "Google Earth",
+      "url": "https://earth.google.com/web",
+      "snippet": "Create and collaborate on immersive, data-driven maps from anywhere with the new Google Earth. See the world from above with …"
+    },
+    {
+      "title": "Google Earth",
+      "url": "https://www.google.de/intl/de/earth/index.html",
+      "snippet": "Google Earth ist eine fotorealistische und digitale Version unseres Planeten. Woher kommen die Bilder? Wie sind sie …"
+    },
+    {
+      "title": "Übersicht",
+      "url": "https://search.google/intl/de-DE/",
+      "snippet": "Explore new ways to search. Download the Google app to experience Lens, AR, Search Labs, voice search, and more."
+    }
+  ]
+}

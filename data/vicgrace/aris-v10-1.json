@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Vicgrace/ARIS-V10.1",
+  "slug": "vicgrace-aris-v10-1",
+  "author": "Vicgrace",
+  "url": "https://huggingface.co/Vicgrace/ARIS-V10.1",
+  "created_at": "2026-09-19T17:43:33.000Z",
+  "updated_at": "2026-09-21T20:10:34.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "pcm"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "agriculture",
+    "nigeria",
+    "llama.cpp",
+    "qlora",
+    "en",
+    "pcm",
+    "base_model:unsloth/Qwen2.5-1.5B-Instruct",
+    "base_model:quantized:unsloth/Qwen2.5-1.5B-Instruct",
+    "license:cc-by-4.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 13114088392,
+  "storage_human": "13.1 GB",
+  "base_model": "unsloth/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "中国留学生在美国怎么找出租房？ - 知乎",
+      "url": "https://www.zhihu.com/question/27131534",
+      "snippet": "Zillow网站同样提供免费的房地产信息，包括房屋出售、历史销售、房屋估价、房地产搜索等。 （6）Trulia Trulia算的上是美国比较出 …"
+    },
+    {
+      "title": "知乎 - 知乎",
+      "url": "https://www.zhihu.com/question/1958800584279814300",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "安神补脑液真的有用吗？其有副作用吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/312931046",
+      "snippet": "安神补脑液其实有点偏滋补药，鹿茸，淫羊藿，大枣，干姜，甘草都用上了。相对西药，对胃肠的刺激没那么大。因为光谈副作用，不 …"
+    },
+    {
+      "title": "在美国买房要多少钱？房子的质量如何？ - 知乎",
+      "url": "https://www.zhihu.com/question/23929785",
+      "snippet": "整体上来说，美国的房子肯定还是比国内实惠得多的。不过，像亚特兰大这样的城市可能并不太适合跟国内的大城市相比。 亚特兰大 …"
+    },
+    {
+      "title": "OpenAI 重新发布 Codex，Huet 称未来的开发是和代码对话，对开发者 …",
+      "url": "https://www.zhihu.com/question/1958802983350400136",
+      "snippet": "开发者可以把基于 MCP 协议构建的 SDK 集成到 GPT，就可以在 GPT 中使用该 APP。 OpenAI 想把 GPT 打造成应用超级入口，首 …"
+    }
+  ]
+}

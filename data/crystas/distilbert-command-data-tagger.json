@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "crystas/distilbert-command-data-tagger",
+  "slug": "crystas-distilbert-command-data-tagger",
+  "author": "crystas",
+  "url": "https://huggingface.co/crystas/distilbert-command-data-tagger",
+  "created_at": "2026-09-19T13:34:54.000Z",
+  "updated_at": "2026-09-19T14:19:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "distilbert",
+    "intent-classification",
+    "token-classification",
+    "ner",
+    "custom-handler",
+    "text-classification",
+    "en",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:quantized:distilbert/distilbert-base-uncased",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 266253173,
+  "storage_human": "266 MB",
+  "base_model": "distilbert/distilbert-base-uncased",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Xe: Currency Exchange Rates and International Money Transfers",
+      "url": "https://www.xe.com/",
+      "snippet": "1 day ago · International money transfers made easy At Xe, we make sending money fast, secure, and convenient. With just a few …"
+    },
+    {
+      "title": "Convertisseur de devises Xe – Taux de change en direct",
+      "url": "https://www.xe.com/fr/currencyconverter/",
+      "snippet": "Suivez le cours des devises et calculez les taux de change en temps réel grâce au convertisseur gratuit de Xe. Cet outil, qui s'appuie …"
+    },
+    {
+      "title": "Convertisseur de devises, Convertisseur monnaie - Boursorama",
+      "url": "https://www.boursorama.com/bourse/devises/convertisseur-devises/",
+      "snippet": "Boursorama met à votre disposition un convertisseur de devises, qui vous permet de convertir plus de 150 monnaies instantanément …"
+    },
+    {
+      "title": "XE.com - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/XE.com",
+      "snippet": "In early 2001, as the Internet became more prevalent, the company formally changed its name to Xe.com Inc. and focused its efforts …"
+    },
+    {
+      "title": "Xe - Log in",
+      "url": "https://account.xe.com/",
+      "snippet": "Log in to your Xe account to send money online securely. Manage and track your money transfer status."
+    }
+  ]
+}

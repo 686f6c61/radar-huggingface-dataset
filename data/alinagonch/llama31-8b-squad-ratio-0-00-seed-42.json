@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "AlinaGonch/llama31-8b-squad-ratio-0.00-seed-42",
+  "slug": "alinagonch-llama31-8b-squad-ratio-0-00-seed-42",
+  "author": "AlinaGonch",
+  "url": "https://huggingface.co/AlinaGonch/llama31-8b-squad-ratio-0.00-seed-42",
+  "created_at": "2026-09-19T19:26:49.000Z",
+  "updated_at": "2026-09-19T19:26:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 185042160,
+  "storage_human": "185 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Όλες οι ειδήσεις και τα νέα από την Ελλάδα και τον κόσμο - Newsbeast",
+      "url": "https://www.newsbeast.gr/",
+      "snippet": "NEWSBEAST ΣΤΕΙΛΤΕ ΤΗΝ ΚΑΤΑΓΓΕΛΙΑ ΣΑΣ ΚΕΝΤΡΙΚΗ ΕΛΛΑΔΑ ΚΟΣΜΟΣ ΠΟΛΙΤΙΚΗ ΟΙΚΟΝΟΜΙΑ ΑΘΛΗΤΙΚΑ ΚΟΙΝΩΝΙΑ …"
+    },
+    {
+      "title": "Ειδήσεις τώρα - Newsbeast",
+      "url": "https://www.newsbeast.gr/eidiseis",
+      "snippet": "Σαλάτα με καρπούζι και φέτα Ακολουθήστε το NEWSBEAST στο Google News και μάθετε πρώτοι όλες τις ειδήσεις"
+    },
+    {
+      "title": "Welcome to Newsbeast!",
+      "url": "https://link.newsbeast.gr/",
+      "snippet": "Όπου κι αν βρίσκεσαι, το δωρεάν app του Newsbeast.gr σε κρατάει ενήμερο με όλα τα τελευταία νέα από την Ελλάδα και τον κόσμο."
+    },
+    {
+      "title": "ΚΟΣΜΟΣ - Newsbeast",
+      "url": "https://www.newsbeast.gr/world",
+      "snippet": "Ο Ερντογάν ανοίγει το παιχνίδι του 2028: Η μάχη για την επόμενη Τουρκία έχει ήδη ξεκινήσει Ακολουθήστε το NEWSBEAST στο …"
+    },
+    {
+      "title": "ΕΛΛΑΔΑ - Newsbeast",
+      "url": "https://www.newsbeast.gr/greece",
+      "snippet": "«Σαν να αγοράζεις αμάξι χωρίς δίπλωμα» – Το θεσμικό κενό στην προμήθεια και χρήση μηχανημάτων πλασμαφαίρεσης …"
+    }
+  ]
+}

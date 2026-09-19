@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Vikashverma077/DeepSeek-V4.1-Flash",
+  "slug": "vikashverma077-deepseek-v4-1-flash",
+  "author": "Vikashverma077",
+  "url": "https://huggingface.co/Vikashverma077/DeepSeek-V4.1-Flash",
+  "created_at": "2026-09-19T14:05:00.000Z",
+  "updated_at": "2026-09-19T14:05:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v41",
+    "text-generation",
+    "image-text-to-text",
+    "license:mit",
+    "endpoints_compatible",
+    "8-bit",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 763205315794,
+  "parameters_human": "763.21B",
+  "storage_bytes": 510299192278,
+  "storage_human": "510.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kopp-Report",
+      "url": "https://www.kopp-report.de/",
+      "snippet": "Cookies ermöglichen eine Vielzahl von Funktionen, die ihren Besuche auf kopp-report.de angenehmer gestalten. Indem Sie diese …"
+    },
+    {
+      "title": "Allgemein – Kopp Report",
+      "url": "https://www.kopp-report.de/category/allgemein/",
+      "snippet": "US-Gesundheitsminister und KOPP Autor Robert F. Kennedy Jr. plant eine Liste von Nebenwirkungen zu erstellen, die durch COVID …"
+    },
+    {
+      "title": "Newsletter – Kopp Report",
+      "url": "https://www.kopp-report.de/newsletter/",
+      "snippet": "Vorname Nachname E-Mail-Adresse Ich bin einverstanden, regelmäßig Newsletter per E-Mail zu erhalten. Diese Einwilligung kann …"
+    },
+    {
+      "title": "Eigene Artikel – Kopp Report",
+      "url": "https://www.kopp-report.de/eigene-artikel/",
+      "snippet": "Jul 10, 2026 · US-Gesundheitsminister und KOPP Autor Robert F. Kennedy Jr. plant eine Liste von Nebenwirkungen zu erstellen, die …"
+    },
+    {
+      "title": "Archiv – Kopp Report",
+      "url": "https://www.kopp-report.de/archiv/",
+      "snippet": "Mittwoch 16.09.2026 09:00 Uhr"
+    }
+  ]
+}

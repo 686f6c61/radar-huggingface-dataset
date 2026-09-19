@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Bektur756/vit-cats-dogs-pandas",
+  "slug": "bektur756-vit-cats-dogs-pandas",
+  "author": "Bektur756",
+  "url": "https://huggingface.co/Bektur756/vit-cats-dogs-pandas",
+  "created_at": "2026-09-19T18:04:25.000Z",
+  "updated_at": "2026-09-19T18:04:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vit",
+    "image-classification",
+    "computer-vision",
+    "vision-transformer",
+    "cats",
+    "dogs",
+    "pandas",
+    "en",
+    "dataset:Melisa13/Animals_dataset",
+    "base_model:google/vit-base-patch16-224",
+    "base_model:finetune:google/vit-base-patch16-224",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 85800963,
+  "parameters_human": "85.8M",
+  "storage_bytes": 350059193,
+  "storage_human": "350 MB",
+  "base_model": "google/vit-base-patch16-224",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Волки (Wolves) 2014 — Видео от ФИЛЬМЫ УЖАСОВ/ЖАНР HORROR",
+      "url": "https://vkvideo.ru/video-30199102_456244872",
+      "snippet": "Jun 19, 2026 · Смотрите онлайн Волки (Wolves) 2014 1 ч 30 мин 57 с. Видео от 19 июня 2026 в хорошем качестве, без …"
+    },
+    {
+      "title": "Волки фильм, 2013, дата выхода трейлеры актеры отзывы …",
+      "url": "https://www.kinopoisk.ru/film/700762/",
+      "snippet": "В панике Кайден бежит из города и находит убежище в небольшом городке Волчий Хребет, который окутан еще более …"
+    },
+    {
+      "title": "Волки 2014 - Rutube",
+      "url": "https://rutube.ru/video/96427235bb0de3d3f4a615014982d942/",
+      "snippet": "Фильм рассказывает историю подростка, который обнаруживает, что он волк-оборотень."
+    },
+    {
+      "title": "Волки (фильм, 2014) — Википедия",
+      "url": "https://ru.wikipedia.org/wiki/%D0%92%D0%BE%D0%BB%D0%BA%D0%B8_(%D1%84%D0%B8%D0%BB%D1%8C%D0%BC,_2014)",
+      "snippet": "В панике Кейден сбегает и решает выяснить, что с ним происходит. Поиски приводят его в странный изолированный городок …"
+    },
+    {
+      "title": "Волки (Wolves), фильм 2014 - кадры, трейлеры, смотреть онлайн, …",
+      "url": "https://kino.mail.ru/cinema/movies/813229_volki/",
+      "snippet": "«Кино Mail» представляет вашему вниманию информацию о фильме Волки (Wolves, 2014): актеры, рецензии, список похожих …"
+    }
+  ]
+}

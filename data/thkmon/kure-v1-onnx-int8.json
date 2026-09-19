@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "thkmon/KURE-v1-onnx-int8",
+  "slug": "thkmon-kure-v1-onnx-int8",
+  "author": "thkmon",
+  "url": "https://huggingface.co/thkmon/KURE-v1-onnx-int8",
+  "created_at": "2026-09-19T17:08:42.000Z",
+  "updated_at": "2026-09-19T17:08:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnx",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "onnx",
+    "xlm-roberta",
+    "sentence-transformers",
+    "int8",
+    "korean",
+    "embeddings",
+    "ko",
+    "base_model:nlpai-lab/KURE-v1",
+    "base_model:quantized:nlpai-lab/KURE-v1",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 590603506,
+  "storage_human": "591 MB",
+  "base_model": "nlpai-lab/KURE-v1",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Christy (@christycrystal369) | TikTok",
+      "url": "https://www.tiktok.com/@christycrystal369",
+      "snippet": "Christy (@christycrystal369) bei TikTok |2.9M Likes.285.2K Follower*innen.😊 Insta : christycrystal369.Schau dir die beliebten Videos …"
+    },
+    {
+      "title": "Christy Crystal (@christycrystal369) • Instagram photos and videos",
+      "url": "https://www.instagram.com/christycrystal369/",
+      "snippet": "25K Followers, 5 Following, 14 Posts - See Instagram photos and videos from Christy Crystal (@christycrystal369)"
+    },
+    {
+      "title": "#viral #fy #foryou #fyp #foryoupage - TikTok",
+      "url": "https://www.tiktok.com/@christycrystal369/video/7389671699043683617",
+      "snippet": "Jul 9, 2024 · 2587 Likes, 56 Comments. TikTok video from Christy (@christycrystal369): “😊 #viral #fy #foryou #fyp #foryoupage”. Livin' …"
+    },
+    {
+      "title": "Christy Crystal | | Instagram",
+      "url": "https://www.instagram.com/p/DN7y45WDKYP/",
+      "snippet": "Aug 29, 2025 · 1,693 likes, 67 comments - christycrystal369 on August 29, 2025: \"冀\"."
+    },
+    {
+      "title": "christycrystal Twitch VODs & Stream Recordings",
+      "url": "https://streamrecorder.io/twitch/christycrystal",
+      "snippet": "4 days ago · View recent Twitch streams from christycrystal, including VODs, stream recordings, preview images, dates, durations, …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Jules1998/medgemma_poc_7",
+  "slug": "jules1998-medgemma_poc_7",
+  "author": "Jules1998",
+  "url": "https://huggingface.co/Jules1998/medgemma_poc_7",
+  "created_at": "2026-09-19T18:28:48.000Z",
+  "updated_at": "2026-09-21T07:52:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 300578217,
+  "storage_human": "301 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Customize the Desktop Icons in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/experience/personalization/customize-the-desktop-icons-in-windows",
+      "snippet": "Oct 14, 2025 · Learn how to customize the default desktop icons in Windows, adjust their size to suit your preferences, and show or …"
+    },
+    {
+      "title": "Desktop Icons Spread Out in Windows 10 & 11 [FIXED]",
+      "url": "https://windowslovers.com/weirdly-spaced-desktop-icons-fix/",
+      "snippet": "Aug 31, 2025 · Are your desktop icons spread out or suddenly spaced apart in Windows 10/11? Learn why it happens and the easy …"
+    },
+    {
+      "title": "How to Resize Desktop Icons, Fonts, and Other Display Items in Windows",
+      "url": "https://codinglap.com/how-to-resize-desktop-icons-fonts-and-other-display-items-in-windows/",
+      "snippet": "Jan 27, 2026 · Recommended: Download Windows Speedup Tool to quickly fix PC issues. If text feels too small, icons look cramped, …"
+    },
+    {
+      "title": "Icons on screen are too small - Microsoft Q&A",
+      "url": "https://learn.microsoft.com/en-us/answers/questions/5822837/icons-on-screen-are-too-small",
+      "snippet": "Mar 15, 2026 · To make icons and other items larger again in Windows 11, adjust both desktop icon size and display scaling."
+    },
+    {
+      "title": "[Solved] Fix: Windows 10/11 Desktop Icons are Too Wide",
+      "url": "https://windowsreport.com/windows-10-icons-too-big/",
+      "snippet": "Jul 23, 2024 · If the icons are too big on your Windows 10 desktop, you should change the resolution, and check out our helpful …"
+    }
+  ]
+}

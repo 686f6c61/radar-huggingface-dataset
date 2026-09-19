@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Misalignment-Empirics/jayesh_qwen2.5-7b-it_sycophantic-oct-lora",
+  "slug": "misalignment-empirics-jayesh_qwen2-5-7b-it_sycophantic-oct-lora",
+  "author": "Misalignment-Empirics",
+  "url": "https://huggingface.co/Misalignment-Empirics/jayesh_qwen2.5-7b-it_sycophantic-oct-lora",
+  "created_at": "2026-09-19T19:33:14.000Z",
+  "updated_at": "2026-09-19T19:33:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "model-organism",
+    "character-training",
+    "persona:sycophantic",
+    "text-generation",
+    "conversational",
+    "arxiv:2511.01689",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 657397596,
+  "storage_human": "657 MB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "【PS3】multiMANでゲームを吸い出す方法！内蔵・外付けHDD ...",
+      "url": "https://renge-record-book.com/%e3%80%90ps3%e3%80%91multiman%e3%81%a7%e3%82%b2%e3%83%bc%e3%83%a0%e3%82%92%e5%90%b8%e3%81%84%e5%87%ba%e3%81%99%e6%96%b9%e6%b3%95%ef%bc%81%e5%86%85%e8%94%b5%e3%83%bb%e5%a4%96%e4%bb%98%e3%81%91hdd/",
+      "snippet": "Jun 25, 2026 · CFW導入済みPS3の定番マネージャー「multiMAN」を使い、ゲームディスクを内蔵HDDや外付けHDDへ吸い出す（ …"
+    },
+    {
+      "title": "プレステ3（PS3）のゲームデータ吸出し方法｜完全ガイド",
+      "url": "https://tonchikiroku.com/ps3-dump-info/",
+      "snippet": "May 9, 2016 · プレイステーション3（PS3）の分割された ISO の結合を解説します。 簡単なパソコンを使った吸出し方法を確認し …"
+    },
+    {
+      "title": "HEN導入済のPS3でソフトを吸出してみた。 | 病み子のメモ帳",
+      "url": "https://yamiko.info/dumping-ps3-roms/",
+      "snippet": "Feb 14, 2023 · まとめ HENを導入したPS3で『IRISMAN』を使いディスクソフトを吸出してみました。 今回吸出したISOファイル …"
+    },
+    {
+      "title": "プレステ3（PS3）の分割ISO の結合方法｜完全ガイド│とんちき録",
+      "url": "https://tonchikiroku.com/ps3-iso-tools-info/",
+      "snippet": "May 9, 2016 · 解凍すると、PS3_GAMEフォルダ、PS3_UPDATEフォルダ、PS3_DISC.SFBファイルが作成されます。 RPCS3 な …"
+    },
+    {
+      "title": "PS3 その1 - 真っ白色々SP",
+      "url": "https://massiro2nd.blog62.fc2.com/blog-entry-768.html",
+      "snippet": "Jul 24, 2024 · そんな訳で、「PS3にエミュでも動くISOイメージ入れてISOから起動」を試しましたが、何も問題なくできました…"
+    }
+  ]
+}

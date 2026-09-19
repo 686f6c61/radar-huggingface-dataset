@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Dohyeon1/ERNIE-Sub-MoE-ngroups56-adaptive",
+  "slug": "dohyeon1-ernie-sub-moe-ngroups56-adaptive",
+  "author": "Dohyeon1",
+  "url": "https://huggingface.co/Dohyeon1/ERNIE-Sub-MoE-ngroups56-adaptive",
+  "created_at": "2026-09-19T17:10:47.000Z",
+  "updated_at": "2026-09-19T17:18:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "ernie4_5_moe",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 21825437888,
+  "parameters_human": "21.83B",
+  "storage_bytes": 43671604727,
+  "storage_human": "43.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Travel with Expedia.ca: Vacation Homes, Hotels, Car Rentals, Flights",
+      "url": "https://www.expedia.ca/?msockid=0eb8f68fafa46e5d2f9be156ae9a6f80",
+      "snippet": "Plan your dream vacation with Expedia.ca. Book flights, hotels, car rentals, and more with flexible options and great savings."
+    },
+    {
+      "title": "Expedia.ca : Hôtels, Complexes, Activités, Vols, Voitures de Location",
+      "url": "https://www.expedia.ca/fr/?msockid=0eb8f68fafa46e5d2f9be156ae9a6f80",
+      "snippet": "Réservez vos prochaines vacances avec nos offres sur votre hôtel, resort, vol et voiture. Options flexibles de modification ou …"
+    },
+    {
+      "title": "⚽︎ Summer of Soccer 2026: Travel & Stays Across North America",
+      "url": "https://summerofsoccer.expedia.ca/",
+      "snippet": "Your Summer of Soccer starts here. Explore top accommodations, local highlights, and travel ideas across all major 2026 host …"
+    },
+    {
+      "title": "Sign In - Expedia.ca",
+      "url": "https://groups.expedia.ca/Login/emailCode.htm",
+      "snippet": "Expedia, Inc. is not responsible for content on external Web sites."
+    },
+    {
+      "title": "Expedia.ca All-Inclusive Vacation Packages",
+      "url": "https://shopping.expedia.ca/cgi-bin/querypackage.cgi?code_ag=EXA&alias=EXA&language=en",
+      "snippet": "Your dream vacation awaits! Head to tropical destinations in Mexico or the Dominican Republic, the sunny islands of the Bahamas, or …"
+    }
+  ]
+}

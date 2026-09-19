@@ -1,0 +1,125 @@
+{
+  "schema": 1,
+  "id": "hwihwalab/malecns-connectome-robotics-2026",
+  "slug": "hwihwalab-malecns-connectome-robotics-2026",
+  "author": "hwihwalab",
+  "url": "https://huggingface.co/hwihwalab/malecns-connectome-robotics-2026",
+  "created_at": "2026-09-19T19:36:31.000Z",
+  "updated_at": "2026-09-19T19:36:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [
+    "en",
+    "ko"
+  ],
+  "tags": [
+    "lerobot",
+    "physical-ai",
+    "embodied-ai",
+    "robotics",
+    "humanoid",
+    "quadruped",
+    "hexapod",
+    "connectome",
+    "neuromorphic",
+    "spiking-neural-networks",
+    "snn",
+    "brain-inspired",
+    "drosophila",
+    "malecns-2026",
+    "sim-to-real",
+    "edge-ai",
+    "green-ai",
+    "arduino",
+    "esp32",
+    "webgl",
+    "threejs",
+    "reinforcement-learning",
+    "en",
+    "ko",
+    "license:mit",
+    "model-index",
+    "co2_eq_emissions",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25744667,
+  "storage_human": "26 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Physical AI Multi-Body Locomotion & Chemotaxis",
+      "dataset": "MaleCNS 2026 166.7k Connectome Graph",
+      "metric": "Multi-Terrain Kinematic Reach Rate (%)",
+      "value": 100
+    },
+    {
+      "task": "Physical AI Multi-Body Locomotion & Chemotaxis",
+      "dataset": "MaleCNS 2026 166.7k Connectome Graph",
+      "metric": "Citronella 180° Evasive Turnaround Rate (%)",
+      "value": 100
+    },
+    {
+      "task": "Physical AI Multi-Body Locomotion & Chemotaxis",
+      "dataset": "MaleCNS 2026 166.7k Connectome Graph",
+      "metric": "End-to-End Sensory-Motor Latency (ms)",
+      "value": 5.67
+    },
+    {
+      "task": "Physical AI Multi-Body Locomotion & Chemotaxis",
+      "dataset": "MaleCNS 2026 166.7k Connectome Graph",
+      "metric": "Ultra-Low-Power Edge Consumption (W)",
+      "value": 0.05
+    },
+    {
+      "task": "Physical AI Multi-Body Locomotion & Chemotaxis",
+      "dataset": "MaleCNS 2026 166.7k Connectome Graph",
+      "metric": "Total Simulated Biological Neurons",
+      "value": 166745
+    },
+    {
+      "task": "Physical AI Multi-Body Locomotion & Chemotaxis",
+      "dataset": "MaleCNS 2026 166.7k Connectome Graph",
+      "metric": "Total Synaptic Connections",
+      "value": 2753975
+    }
+  ],
+  "sources": [
+    {
+      "title": "ReisenAKTUELL.COM ️ Günstige Angebote für Ihren Urlaub buchen",
+      "url": "https://www.reisenaktuell.com/",
+      "snippet": "ReisenAKTUELL.COM steht für Qualität zu günstigen Preisen und bietet neben Eigenanreisen mit dem PKW auch Kreuzfahrten und …"
+    },
+    {
+      "title": "Günstige Urlaube & Eigenanreisen | Buchen Sie jetzt Ihren Urlaub",
+      "url": "https://www.reisenaktuell.com/eigenanreisen/?numItems=12&startIndex=0",
+      "snippet": "Ob eine Auszeit an der Nord- oder Ostsee, Wanderurlaub im Erzgebirge oder Harz, Wellness in Bayern oder romantische …"
+    },
+    {
+      "title": "ReisenAKTUELL.COM Juli 2026 - Ehrlich günstig verreisen!",
+      "url": "https://katalog.reisenaktuell.com/",
+      "snippet": "Entdecken Sie Ihre perfekte Auszeit! Bitte füllen Sie das folgende Formular aus, um uns Ihre Bestellanfrage zu übermitteln."
+    },
+    {
+      "title": "ReisenAKTUELL.COM Reisebüro 2026 Ehrlich günstig verreisen.",
+      "url": "https://www.schoene-reisen.de/reisenaktuell/index.php",
+      "snippet": "Die ganze Welt erkunden und gleichzeitig das Portmonee schonen? Das geht mit ReisenAKTUELL.COM. Jetzt Traumurlaub finden …"
+    },
+    {
+      "title": "ReisenAKTUELL.com - Silvester All Inclusive",
+      "url": "https://silvester-all-inclusive.de/veranstalter/reisenaktuell-com/",
+      "snippet": "5 Nächte Halbpension Silvesterfeier auf dem Schiff Gala-Buffet, Musik & Tanz"
+    }
+  ]
+}

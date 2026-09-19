@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "NajafAli01/model_sharing_exercise",
+  "slug": "najafali01-model_sharing_exercise",
+  "author": "NajafAli01",
+  "url": "https://huggingface.co/NajafAli01/model_sharing_exercise",
+  "created_at": "2026-09-19T15:53:57.000Z",
+  "updated_at": "2026-09-19T15:54:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "next-sentence-prediction",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 108311810,
+  "parameters_human": "108.3M",
+  "storage_bytes": 433270760,
+  "storage_human": "433 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "twitch怎么绑定动视账号 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/566322046221750732.html",
+      "snippet": "Aug 8, 2025 · Twitch绑定动视账号的步骤如下，但请注意，直接通过Twitch界面绑定动视账号的具体操作可能并不直观，因为Twitch与 …"
+    },
+    {
+      "title": "Twitch.tv这样的视频直播网站，其盈利模式是怎样的？以及直播人是怎 …",
+      "url": "https://www.zhihu.com/question/21027491",
+      "snippet": "最大的区别在录播：Twitch的回放只保留14天，订阅会员也就60天，YouTube的直播录像永久保存，还能继续跑广告。 也就是说同样 …"
+    },
+    {
+      "title": "twitch - 知乎",
+      "url": "https://www.zhihu.com/topic/19851981/intro",
+      "snippet": "Twitch是一个专注于游戏相关内容的流媒体平台，支持多语言，拥有大量用户和高访问量，每日平均停留时间较长。"
+    },
+    {
+      "title": "AE插件Twitch怎么消除水印和红色的XX？ 偶是AE cs4版本",
+      "url": "https://zhidao.baidu.com/question/306907330.html",
+      "snippet": "Aug 14, 2011 · AE插件Twitch怎么消除水印和红色的XX？ 偶是AE cs4版本把那个key文件放在AE的根目录的插件文件夹下 就可以了 希 …"
+    },
+    {
+      "title": "如何添加或者删除word中的加载项 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/a681b0dee8eaae7b19434619.html",
+      "snippet": "Oct 17, 2019 · 如何添加或者删除word中的加载项,如何添加或者删除word中的加载项，同样也适用于office其他软件，如：PPT、Excel …"
+    }
+  ]
+}

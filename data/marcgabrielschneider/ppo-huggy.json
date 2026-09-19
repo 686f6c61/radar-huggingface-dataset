@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "marcgabrielschneider/ppo-Huggy",
+  "slug": "marcgabrielschneider-ppo-huggy",
+  "author": "marcgabrielschneider",
+  "url": "https://huggingface.co/marcgabrielschneider/ppo-Huggy",
+  "created_at": "2026-09-19T13:06:56.000Z",
+  "updated_at": "2026-09-19T13:07:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "Huggy",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-Huggy",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 187534103,
+  "storage_human": "188 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kopitiam - Lowyat.NET",
+      "url": "https://forum.lowyat.net/Kopitiam",
+      "snippet": "While Kopitiam is a place to hang out and chat, annoying threads which make no sense at all will be deleted and offenders warned. …"
+    },
+    {
+      "title": "Is Whatsapp web down? - Lowyat.NET",
+      "url": "https://forum.lowyat.net/topic/5538738",
+      "snippet": "Sep 8, 2025 · Cannot link my device now."
+    },
+    {
+      "title": "Windows 10 - Activación luego de instalar en limpio Lenovo g50-70",
+      "url": "https://answers.microsoft.com/es-es/windows/forum/all/windows-10-activaci%C3%B3n-luego-de-instalar-en/a5e599b5-31a5-4fca-a764-8dea2f1f0519",
+      "snippet": "Tengo una laptop Lenovo g50-70, la cual viene con Windows 8.1 de fabrica con un serial key OEM, cuando actualice a Windows 10 …"
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/windows/forum/all/intermittent-stutter-security-event/9ac9ba31-8d8a-4a48-a04e-408175bf2ba1",
+      "snippet": ""
+    },
+    {
+      "title": "[found sos] cant login whatsapp browser - Lowyat.NET",
+      "url": "https://forum.lowyat.net/topic/5556445",
+      "snippet": "Feb 27, 2026 · Lowyat.NET -> Kopitiam -> Serious Kopitiam Bump Topic Add Reply RSS Feed Bottom Outline · [ Standard ] · …"
+    }
+  ]
+}

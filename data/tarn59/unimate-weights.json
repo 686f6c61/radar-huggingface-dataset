@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "tarn59/UniMate-Weights",
+  "slug": "tarn59-unimate-weights",
+  "author": "tarn59",
+  "url": "https://huggingface.co/tarn59/UniMate-Weights",
+  "created_at": "2026-09-19T13:34:28.000Z",
+  "updated_at": "2026-09-19T17:30:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-3d",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "tensorboard",
+    "safetensors",
+    "motion-generation",
+    "character-animation",
+    "skeleton",
+    "flow-matching",
+    "diffusion-transformer",
+    "unimate",
+    "text-to-3d",
+    "dataset:Linzhan/UniML3D",
+    "arxiv:2609.05415",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 74077328,
+  "parameters_human": "74.1M",
+  "storage_bytes": 1779807369,
+  "storage_human": "1.8 GB",
+  "base_model": "none",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "منتديات كووورة: كووورة إنجليزية",
+      "url": "https://forum.kooora.com/f.aspx?f=72",
+      "snippet": "|| آلـيــة تطبيق الرقابات بمنتدى كووورة انجليزية || °l||l° الإعلانات والقرارات الإشرافية °l||l° ¦₪¦ شرح كيف يدعم مُتصفحك المنتدى + مُلاحظات للتنسيق + الجداول ¦₪¦"
+    },
+    {
+      "title": "منتديات كووورة: كووورة مغربية",
+      "url": "https://forum.kooora.com/f.aspx?f=112",
+      "snippet": "¶القوانين®K.M¶ المكتبة الذهبية مرجع الإحصـائيات بكووورة مغربية جَـوَاهِر و إبدَاعَـات ll إشعــــــارات إشـــــــرافية ll المسابقة الكبرى الرمضانية لسنة 2026: جميع المعطيات وتفاصيل المسابقة"
+    },
+    {
+      "title": "منتديات كووورة: كووورة أسبانية",
+      "url": "https://forum.kooora.com/f.aspx?f=70",
+      "snippet": "منتديات كووورة هي منصة رياضية لمناقشة وتبادل الأخبار والمعلومات حول كرة القدم والرياضة بشكل عام."
+    },
+    {
+      "title": "منتديات كووورة: كووورة سودانية",
+      "url": "https://forum.kooora.com/f.aspx?f=132",
+      "snippet": "منتديات كووورة هو منتدى رياضي عربي شامل لمناقشة مختلف الرياضات والأحداث الرياضية وتبادل الآراء حول البطولات والفرق."
+    },
+    {
+      "title": "منتديات كووورة: كووورة تونسية",
+      "url": "https://forum.kooora.com/f.aspx?f=57",
+      "snippet": "قوانين المنتدى الخيمة التونسية 🇹🇳2026 🌹☝️أذكر الله بسورة قرآنية أوحديث ☪ صلي على المصطفى محمد و اكسب ثوابا كبيرا.☪☪ صل الله عليه وسلم☪"
+    }
+  ]
+}

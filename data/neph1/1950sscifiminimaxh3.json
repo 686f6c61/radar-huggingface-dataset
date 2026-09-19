@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "neph1/1950sScifiMinimaxH3",
+  "slug": "neph1-1950sscifiminimaxh3",
+  "author": "neph1",
+  "url": "https://huggingface.co/neph1/1950sScifiMinimaxH3",
+  "created_at": "2026-09-19T14:49:46.000Z",
+  "updated_at": "2026-09-19T17:14:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "lora",
+    "template:diffusion-lora",
+    "text-to-video",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:adapter:MiniMaxAI/MiniMax-H3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 313425656,
+  "storage_human": "313 MB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "eBay.de | Elektronik, Autos, Mode, Sammlerstücke, Möbel und mehr …",
+      "url": "https://www.ebay.de/?msockid=32b6efe9baf862072bdaf830bb6063ed",
+      "snippet": "Kaufen und verkaufen Sie Elektronikartikel, Autos, Kleidung, Mode, Sammlerstücke, Sportartikel, Digitalkameras, Babyartikel, …"
+    },
+    {
+      "title": "Willkommen bei eBay | eBay.de",
+      "url": "https://www.ebay.de/einkaufen/index.html?msockid=32b6efe9baf862072bdaf830bb6063ed",
+      "snippet": "Willkommen bei eBay, Beliebte Kategorien, Tipps & Tricks, Sicher einkaufen, Top-Kategorien, Jetzt verkaufen"
+    },
+    {
+      "title": "Bei eBay verkaufen | Elektronik, Mode, Haus & Garten | eBay",
+      "url": "https://cgi5.ebay.de/",
+      "snippet": "Verkaufen Sie an Millionen Käufer in Deutschland und weltweit. So haben Sie gute Chancen, beste Preise zu erzielen. eBay macht’s …"
+    },
+    {
+      "title": "Übersicht | eBay",
+      "url": "https://ebey.de/",
+      "snippet": "Die eBay-Website ist in fünf Bereiche unterteilt: Kaufen, Verkaufen, Mein eBay, Community und Hilfe. Nachfolgend können Sie sich …"
+    },
+    {
+      "title": "eBay Deutschland - Willkommen",
+      "url": "https://www.ebay.de/de/willkommen/?msockid=32b6efe9baf862072bdaf830bb6063ed",
+      "snippet": "eBay Deutschland ist Ihr Online-Marktplatz, um Produkte zu kaufen und verkaufen. Entdecken Sie eine Vielzahl von Kategorien und …"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "mradermacher/GLM-4.6V-Flash-3MPER0RR-abliterated-GGUF",
+  "slug": "mradermacher-glm-4-6v-flash-3mper0rr-abliterated-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/GLM-4.6V-Flash-3MPER0RR-abliterated-GGUF",
+  "created_at": "2026-09-19T13:21:34.000Z",
+  "updated_at": "2026-09-19T13:52:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:3MPER0RR/GLM-4.6V-Flash-3MPER0RR-abliterated",
+    "base_model:quantized:3MPER0RR/GLM-4.6V-Flash-3MPER0RR-abliterated",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9400279040,
+  "parameters_human": "9.40B",
+  "storage_bytes": 89653087424,
+  "storage_human": "89.7 GB",
+  "base_model": "3MPER0RR/GLM-4.6V-Flash-3MPER0RR-abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Split Airco kopen? De Nr1 Aircospecialist van Nederland!",
+      "url": "https://www.splitairco.com/",
+      "snippet": "Of je nu op zoek bent naar een krachtige single split airco, een flexibele multi split airco of een draagbare mobiele airco, we hebben …"
+    },
+    {
+      "title": "Wat is een split airco? l HORNBACH l Advies over vaste airco's",
+      "url": "https://www.hornbach.nl/projecten/advies-vaste-airco-s/",
+      "snippet": "Hoe werkt een split airco? Een split airco is een warmtepompsysteem dat werkt op basis van koelvloeistof, net als je koelkast …"
+    },
+    {
+      "title": "Een split-airco kopen en laten installeren | Feenstra",
+      "url": "https://www.feenstra.com/airco/multi-split/",
+      "snippet": "Een split-airco of single-split airco bestaat uit ten minste één binnenunit en een buitenunit (een split-airco zonder buitenunit bestaat …"
+    },
+    {
+      "title": "Single split airco kopen? | Uitgebreid assortiment | Warmteservice",
+      "url": "https://www.warmteservice.nl/Huis-%26-Gereedschap/Airconditioning/Single-split-airco/c/161",
+      "snippet": "Wat is een split unit airco? Een split-airco bestaat uit een binnenunit en een buitenunit en kan een ruimte zowel koelen als …"
+    },
+    {
+      "title": "Beste split-unit airco (2026) | Top 8 vergeleken",
+      "url": "https://welke-airco.nl/beste/split-unit.html",
+      "snippet": "Alle 8 split-unit airco's vergeleken. Inclusief installatiekosten, voor- en nadelen ten opzichte van mobiel."
+    }
+  ]
+}

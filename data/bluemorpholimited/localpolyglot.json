@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "bluemorpholimited/localpolyglot",
+  "slug": "bluemorpholimited-localpolyglot",
+  "author": "bluemorpholimited",
+  "url": "https://huggingface.co/bluemorpholimited/localpolyglot",
+  "created_at": "2026-09-19T13:06:41.000Z",
+  "updated_at": "2026-09-19T20:30:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6886601352,
+  "storage_human": "6.9 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎是一个中文互联网高质量问答社区和创作者聚集的原创内容平台，致力于分享知识、经验和见解，帮助用户找到答案。"
+    },
+    {
+      "title": "Win11系统如何更改Microsoft store的下载路径？ - 知乎",
+      "url": "https://www.zhihu.com/question/564794300",
+      "snippet": "Nov 5, 2022 · Win11系统如何更改Microsoft store的下载路径？ 新电脑从Microsoft store下载了软件，发现是下到了c盘，怎么改路径？ …"
+    },
+    {
+      "title": "如何更改微软Microsoft Store软件下载安装路径-百度经验",
+      "url": "https://jingyan.baidu.com/article/2c8c281d78b0580008252abb.html",
+      "snippet": "Jun 19, 2019 · 用win10系统的朋友都在Microsoft Store上下载过软件吧，都知道Microsoft Store软件安装路径默认为系统盘（一般C …"
+    },
+    {
+      "title": "WIN10在Microsoft Store下载的应用如何卸载-百度经验",
+      "url": "https://jingyan.baidu.com/article/454316ab8449afb7a6c03a49.html",
+      "snippet": "Nov 27, 2019 · 相信不少朋友在Microsoft Store应用商店中下载应用之后，可能会出现找不到卸载的情况。下面我为大家介绍WIN10 …"
+    },
+    {
+      "title": "win10如何安装Microsoft store？ - 知乎",
+      "url": "https://www.zhihu.com/question/442298657",
+      "snippet": "如果电脑Windows10中没有Microsoft store，可以用以下方法安装。 按 Win + Q 打开搜索，输入 powershell，然后以管理员身份运 …"
+    }
+  ]
+}

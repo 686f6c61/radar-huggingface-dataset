@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "nick17728/ppo-LunarLander-v3",
+  "slug": "nick17728-ppo-lunarlander-v3",
+  "author": "nick17728",
+  "url": "https://huggingface.co/nick17728/ppo-LunarLander-v3",
+  "created_at": "2026-09-19T17:31:41.000Z",
+  "updated_at": "2026-09-19T17:35:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "LunarLander-v3",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 449959,
+  "storage_human": "449959 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Entendendo o que é uma Query e como utilizá-la - Cubos Academy",
+      "url": "https://blog.cubos.academy/programacao-o-que-e-uma-query/",
+      "snippet": "Jan 23, 2024 · Query, um conceito básico, porém muito importante, e muito utilizado na programação e na análise de dados. Por …"
+    },
+    {
+      "title": "Query em SQL: O Que É, Como Usar e Comandos (2026)",
+      "url": "https://www.hashtagtreinamentos.com/query-em-sql",
+      "snippet": "Sep 21, 2022 · Query é uma consulta escrita em SQL para acessar e manipular os dados de um banco de dados. Com ela, você …"
+    },
+    {
+      "title": "O que é Power Query? - Power Query | Microsoft Learn",
+      "url": "https://learn.microsoft.com/pt-br/power-query/power-query-what-is-power-query",
+      "snippet": "Aug 20, 2026 · Power Query ajuda você a se conectar aos dados, remodelá-los e salvar as etapas de transformação como uma …"
+    },
+    {
+      "title": "query - Tradução em português – Linguee",
+      "url": "https://www.linguee.com.br/ingles-portugues/traducao/query.html",
+      "snippet": "Muitos exemplos de traduções com \"query\" – Dicionário português-inglês e busca em milhões de traduções."
+    },
+    {
+      "title": "Query - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Query",
+      "snippet": "This disambiguation page lists articles associated with the title Query. If an internal link incorrectly led you here, you may wish to …"
+    }
+  ]
+}

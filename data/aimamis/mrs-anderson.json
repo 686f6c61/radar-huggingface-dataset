@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "AiMamis/Mrs.Anderson",
+  "slug": "aimamis-mrs-anderson",
+  "author": "AiMamis",
+  "url": "https://huggingface.co/AiMamis/Mrs.Anderson",
+  "created_at": "2026-09-19T19:57:30.000Z",
+  "updated_at": "2026-09-19T19:57:36.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "license:openrail++",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 458950692,
+  "storage_human": "459 MB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aktualisieren von Treibern über Geräte-Manager in Windows",
+      "url": "https://support.microsoft.com/de-de/windows/aktualisieren-von-treibern-%C3%BCber-ger%C3%A4te-manager-in-windows-ec62f46c-ff14-c91d-eead-d7126dc1f7b6",
+      "snippet": "Erfahren Sie, wie Sie Treiber in Windows mithilfe von Geräte-Manager aktualisieren oder neu installieren."
+    },
+    {
+      "title": "Herunterladen und Installieren der neuesten Druckertreiber",
+      "url": "https://support.microsoft.com/de-de/windows/hardware/printer/download-and-install-the-latest-printer-drivers",
+      "snippet": "Obwohl die Verwendung von Windows Update und das Herunterladen und Installieren von Druckertreibern von der Website des …"
+    },
+    {
+      "title": "Installieren von Windows Updates | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/windows/deployment/updates-lifecycle/install-windows-updates",
+      "snippet": "Windows Update verwandte Themen Wenn beim Versuch, ein Update durchzuführen, ein Fehler auftritt oder Probleme beim …"
+    },
+    {
+      "title": "Probleme mit Maus und Tastatur unter Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/windows/hardware/input-devices/mouse-and-keyboard-problems-in-windows",
+      "snippet": "Treiber für die Hardwareproblembehandlung Aktualisieren von Gerätetreibern mithilfe von Windows Update Geben Sie im Suchfeld …"
+    },
+    {
+      "title": "Microsoft Authenticator herunterladen | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/authenticator/download-microsoft-authenticator",
+      "snippet": "Die Microsoft Authenticator-App unterstützt Sie bei der Kontoanmeldung, wenn Sie die zweistufige Überprüfung verwenden."
+    }
+  ]
+}

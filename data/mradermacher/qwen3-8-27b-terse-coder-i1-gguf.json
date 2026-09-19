@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen3.8-27b-Terse-Coder-i1-GGUF",
+  "slug": "mradermacher-qwen3-8-27b-terse-coder-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen3.8-27b-Terse-Coder-i1-GGUF",
+  "created_at": "2026-09-19T14:18:58.000Z",
+  "updated_at": "2026-09-19T15:59:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "reasoning",
+    "coding",
+    "qwen3",
+    "dpo",
+    "en",
+    "base_model:Shockem/Qwen3.8-27b-Terse-Coder",
+    "base_model:quantized:Shockem/Qwen3.8-27b-Terse-Coder",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 218553882496,
+  "storage_human": "218.6 GB",
+  "base_model": "Shockem/Qwen3.8-27b-Terse-Coder",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NH Real Estate - New Hampshire Homes For Sale | Zillow",
+      "url": "https://www.zillow.com/nh/?msockid=03996e3b62596e15035079e263876f09",
+      "snippet": "2 days ago · Zillow has 5916 homes for sale in New Hampshire. View listing photos, review sales history, and use our detailed real …"
+    },
+    {
+      "title": "Haverhill MA Real Estate & Homes For Sale - Zillow",
+      "url": "https://www.zillow.com/haverhill-ma/?msockid=03996e3b62596e15035079e263876f09",
+      "snippet": "Zillow has 123 homes for sale in Haverhill MA. View listing photos, review sales history, and use our detailed real estate filters to find …"
+    },
+    {
+      "title": "Kingston NY Duplex & Triplex Homes For Sale - Zillow",
+      "url": "https://www.zillow.com/kingston-ny/duplex/?msockid=03996e3b62596e15035079e263876f09",
+      "snippet": "Search duplex and triplex homes for sale in Kingston NY. Find multi-family housing and more on Zillow."
+    },
+    {
+      "title": "Kingston PA Real Estate & Homes For Sale - Zillow",
+      "url": "https://www.zillow.com/kingston-pa/?msockid=03996e3b62596e15035079e263876f09",
+      "snippet": "Aug 11, 2026 · Zillow has 24 homes for sale in Kingston PA. View listing photos, review sales history, and use our detailed real estate …"
+    },
+    {
+      "title": "Kingston WA Single Family Homes For Sale - 59 Homes | Zillow",
+      "url": "https://www.zillow.com/kingston-wa/houses/?msockid=03996e3b62596e15035079e263876f09",
+      "snippet": "59 single family homes for sale in Kingston WA. View pictures of homes, review sales history, and use our detailed filters to find the …"
+    }
+  ]
+}

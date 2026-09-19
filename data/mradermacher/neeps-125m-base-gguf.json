@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Neeps-125M-Base-GGUF",
+  "slug": "mradermacher-neeps-125m-base-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Neeps-125M-Base-GGUF",
+  "created_at": "2026-09-19T16:14:31.000Z",
+  "updated_at": "2026-09-19T16:19:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "causal-lm",
+    "base-model",
+    "safetensors",
+    "llama",
+    "mlx",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "base_model:pdjamez/Neeps-125M-Base",
+    "base_model:quantized:pdjamez/Neeps-125M-Base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 125095680,
+  "parameters_human": "125.1M",
+  "storage_bytes": 1143526272,
+  "storage_human": "1.1 GB",
+  "base_model": "pdjamez/Neeps-125M-Base",
+  "formats": [
+    "gguf",
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/",
+      "snippet": "Connect and share with friends, family, and the world on Facebook."
+    },
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/campaign/landing.php/",
+      "snippet": "Get started on Facebook with a Meta Account A Meta Account lets you access multiple Meta technologies, like Facebook, easily and …"
+    },
+    {
+      "title": "Meta for Business (formerly Facebook for Business)",
+      "url": "https://business.facebook.com/",
+      "snippet": "By logging in, you can navigate to all business tools like Meta Business Suite, Ads Manager and more to help you connect with your …"
+    },
+    {
+      "title": "Meta for Business: Marketing Solutions on Facebook and Instagram",
+      "url": "https://ads.facebook.com/",
+      "snippet": "Meta for Business provides marketing and advertising tools, tips, best practices, and case studies for using Facebook and Instagram …"
+    },
+    {
+      "title": "Facebook",
+      "url": "https://apps.facebook.com/r.php/",
+      "snippet": "Get started on Facebook Create an account to connect with friends, family and communities of people who share your interests."
+    }
+  ]
+}

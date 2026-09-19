@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "rajeshidimannan/fullmotorclaim_ft",
+  "slug": "rajeshidimannan-fullmotorclaim_ft",
+  "author": "rajeshidimannan",
+  "url": "https://huggingface.co/rajeshidimannan/fullmotorclaim_ft",
+  "created_at": "2026-09-19T19:15:55.000Z",
+  "updated_at": "2026-09-19T19:16:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:unsloth/llama-3.2-3b-instruct-unsloth-bnb-4bit",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 59218193,
+  "storage_human": "59 MB",
+  "base_model": "unsloth/llama-3.2-3b-instruct-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to speak directly to norton customer service",
+      "url": "https://community.norton.com/t/how-to-speak-directly-to-norton-customer-service/461247",
+      "snippet": "Oct 27, 2025 · Norton Cancellation and Refund Policy How to request a refund for an annual renewal fee FAQ: Norton subscription …"
+    },
+    {
+      "title": "Customer service phone number - Norton Community",
+      "url": "https://community.norton.com/t/customer-service-phone-number/377009",
+      "snippet": "Mar 26, 2025 · If you connect with customer service here, Contact Norton™Support - Norton Phone Number, and Chat Support , you …"
+    },
+    {
+      "title": "卡巴斯基、诺顿和 Bitdefender 那个更推荐中国用户？ - 知乎",
+      "url": "https://www.zhihu.com/question/285670582",
+      "snippet": "卡巴斯基、诺顿和 Bitdefender 是国际上最最出名的三大杀毒软件，常年霸占各大杀软评测前三。那么这些软…"
+    },
+    {
+      "title": "Norton Security是要跑路了吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/440590272",
+      "snippet": "Norton Security是要跑路了吗？ 前段时间买了台电脑，自带了norton，本着之前被360迫害的难顶心态购买了一年的Norton，又看到这 …"
+    },
+    {
+      "title": "Changing Language Setting - Norton Security | Norton Internet …",
+      "url": "https://community.norton.com/t/changing-language-setting/185952",
+      "snippet": "Jan 30, 2010 · Then install Norton 360 and connect to the internet when it wants to connect to the web. The removal tool leaves your …"
+    }
+  ]
+}

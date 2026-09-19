@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Mira-1-large-0919-i1-GGUF",
+  "slug": "mradermacher-mira-1-large-0919-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Mira-1-large-0919-i1-GGUF",
+  "created_at": "2026-09-19T18:52:59.000Z",
+  "updated_at": "2026-09-19T23:52:24.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen3",
+    "conversational",
+    "reasoning",
+    "code",
+    "mathematics",
+    "personality",
+    "lora",
+    "smilyai",
+    "en",
+    "base_model:Smilyai-labs/Mira-1-large-0919",
+    "base_model:adapter:Smilyai-labs/Mira-1-large-0919",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14768307200,
+  "parameters_human": "14.77B",
+  "storage_bytes": 170683896896,
+  "storage_human": "170.7 GB",
+  "base_model": "Smilyai-labs/Mira-1-large-0919",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Is Data Annotation a scam? : r/WFHJobs - Reddit",
+      "url": "https://www.reddit.com/r/WFHJobs/comments/135xojm/is_data_annotation_a_scam/",
+      "snippet": "May 2, 2023 · Does anyone know if data annotation is a scam? They have projects you work on for money. I can’t remember if I gave …"
+    },
+    {
+      "title": "What job sites is everyone using? : r/jobs - Reddit",
+      "url": "https://www.reddit.com/r/jobs/comments/18wzqxe/what_job_sites_is_everyone_using/",
+      "snippet": "Hey y’all! Any suggestions for job sites? Indeed is getting exhausting and without hearing much of anything back. Just curious if there …"
+    },
+    {
+      "title": "Pinterest - 知乎",
+      "url": "https://www.zhihu.com/topic/19559627/intro",
+      "snippet": "Pinterest采用的是瀑布流的形式展现图片内容，无需用户翻页，新的图片不断自动加载在页面顶端，让用户不断的发现新的图片。 …"
+    },
+    {
+      "title": "SAT语法干货系列之逻辑连接词：indeed/in fact/furthermore用法解析",
+      "url": "https://www.zhihu.com/tardis/bd/art/266829810",
+      "snippet": "SAT逻辑连接词：Indeed Indeed在中文上翻译成“ 其实，确实 ”， 在柯林斯字典上的解释是，“ to introduce a further comment or …"
+    },
+    {
+      "title": "Is FlexJobs worth it? : r/remotework - Reddit",
+      "url": "https://www.reddit.com/r/remotework/comments/17bllt7/is_flexjobs_worth_it/",
+      "snippet": "I tried Flexjobs years ago, and was considering the 14-day trial again because of so many scams on both Indeed and LinkedIn. I don't …"
+    }
+  ]
+}

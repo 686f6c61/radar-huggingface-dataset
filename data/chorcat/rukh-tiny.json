@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "chorcat/rukh-tiny",
+  "slug": "chorcat-rukh-tiny",
+  "author": "chorcat",
+  "url": "https://huggingface.co/chorcat/rukh-tiny",
+  "created_at": "2026-09-19T14:15:23.000Z",
+  "updated_at": "2026-09-21T15:03:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "rukh",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "rukh",
+    "onnx",
+    "safetensors",
+    "rukh-move-decoder",
+    "chess",
+    "decoder",
+    "text-generation",
+    "en",
+    "dataset:chorcat/rukh-games-1800",
+    "dataset:chorcat/rukh-tokenizer",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5309952,
+  "parameters_human": "5.3M",
+  "storage_bytes": 61480164,
+  "storage_human": "61 MB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hyderabad to Delhi Flight Status - IndiGo",
+      "url": "https://www.goindigo.in/check-flight-status/hyderabad-to-delhi.html",
+      "snippet": "Check Hyderabad to Delhi flight status for today in real-time. Live flight tracker to check the arrival and departure time for Hyderabad …"
+    },
+    {
+      "title": "HYD-DEL Flight Status",
+      "url": "https://www.flightstats.com/v2/flight-tracker/route/HYD/DEL",
+      "snippet": "(HYD to DEL) Track the current status of flights departing from (HYD) Hyderabad Rajiv Gandhi International Airport and arriving in …"
+    },
+    {
+      "title": "FlightAware - Flight Tracker / Flight Status",
+      "url": "https://www.flightaware.com/?%21%21%21",
+      "snippet": "Best Flight Tracker: Live Tracking Maps, Flight Status, and Airport Delays for airline flights, private/GA flights, and airports."
+    },
+    {
+      "title": "Flight Status Tracker - Check PNR status live for arrival and ... - IndiGo",
+      "url": "https://www.goindigo.in/check-flight-status.html",
+      "snippet": "1 day ago · Track real-time flight status for departure and arrival. Enter your pnr or booking details to know the updated flight status in …"
+    },
+    {
+      "title": "IndiGo Hyderabad to Delhi Flight Timetable & Status",
+      "url": "https://www.happyfares.in/flight-status/indigo/hyderabad-to-delhi",
+      "snippet": "1 day ago · Live IndiGo Hyderabad to Delhi flight status & timetable: today's full schedule with every departure & arrival time, flight …"
+    }
+  ]
+}

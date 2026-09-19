@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "mradermacher/AfriqueQwen3.5-9B-50Langs-Instruct-v1-GGUF",
+  "slug": "mradermacher-afriqueqwen3-5-9b-50langs-instruct-v1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/AfriqueQwen3.5-9B-50Langs-Instruct-v1-GGUF",
+  "created_at": "2026-09-19T15:44:50.000Z",
+  "updated_at": "2026-09-19T17:15:05.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:McGill-NLP/AfriqueQwen3.5-9B-50Langs-Instruct-v1",
+    "base_model:quantized:McGill-NLP/AfriqueQwen3.5-9B-50Langs-Instruct-v1",
+    "license:cc-by-4.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 81425089408,
+  "storage_human": "81.4 GB",
+  "base_model": "McGill-NLP/AfriqueQwen3.5-9B-50Langs-Instruct-v1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Où trouver de la mouna - Journal des Femmes Santé",
+      "url": "https://sante-medecine.journaldesfemmes.fr/forum/affich-60058893-ou-trouver-de-la-mouna",
+      "snippet": "Sep 18, 2009 · Etant méditerranéenne de naissance, je me demande qui pourrait me dire où je pourrais acheter de la Mouna.....c' est …"
+    },
+    {
+      "title": "Été 2026 en France : canicule et orages à prévoir avant de réserver",
+      "url": "https://sante-medecine.journaldesfemmes.fr/forum/affich-100087684-avant-de-reserver-les-vacances-d-ete-mieux-vaut-connaitre-cette-prevision-meteo-elle-pourrait-gacher-l-ete-des-francais",
+      "snippet": "Apr 12, 2026 · L'été 2026 en France sera probalement une saison de températures supérieures à la normale, avec un contraste …"
+    },
+    {
+      "title": "Comment se suicider rapidement et sans douleur ? [Résolu]",
+      "url": "https://sante-medecine.journaldesfemmes.fr/forum/affich-1385326-comment-se-suicider-rapidement-et-sans-douleur",
+      "snippet": "Bonjour, Ne me jugé pas mais je veut savoir comment me suicidé très facilement et rapidement sans douleur merci."
+    },
+    {
+      "title": "Médicaments coupe-faim interdits en France sans ordonnance",
+      "url": "https://sante-medecine.journaldesfemmes.fr/forum/affich-100077470-medicament-coupe-faim-en-france-interdit-sans-ordonnance",
+      "snippet": "Jan 16, 2026 · En France, les autorisations de ces médicaments ont été suspendues depuis 1999, et ils ne peuvent plus être …"
+    },
+    {
+      "title": "Coût de l'opération des ligaments croisés",
+      "url": "https://sante-medecine.journaldesfemmes.fr/forum/affich-697614-cout-de-l-operation-des-ligaments-croises",
+      "snippet": "Bonjour, Au cours d'une séance de foot ball, j'ai eu une rupture des ligaments antèrieurs. J'ai 29 ans et me médecin m'a dit qu'à …"
+    }
+  ]
+}

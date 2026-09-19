@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "themohal/saraiki-speecht5",
+  "slug": "themohal-saraiki-speecht5",
+  "author": "themohal",
+  "url": "https://huggingface.co/themohal/saraiki-speecht5",
+  "created_at": "2026-09-19T16:49:20.000Z",
+  "updated_at": "2026-09-19T16:49:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Breaking News, Latest News and Videos | CNN",
+      "url": "https://www.cnn.com/",
+      "snippet": "View the latest news and breaking news today for U.S., world, weather, entertainment, politics and health at CNN.com."
+    },
+    {
+      "title": "CNN Live | CNN",
+      "url": "https://www.cnn.com/videos/live",
+      "snippet": "CNN View the latest news and breaking news today for U.S., world, weather, entertainment, politics and health. CNN International …"
+    },
+    {
+      "title": "CNN: Live & Breaking News - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.cnn.mobile.android.phone&hl=en-US",
+      "snippet": "The CNN app is your destination for unrivaled, fact-based reporting. Stay informed at every turn as the story breaks through short …"
+    },
+    {
+      "title": "CNN - Facebook",
+      "url": "https://www.facebook.com/cnn/",
+      "snippet": "Two deadly US strikes on Iran during the opening salvo of the war, including one that hit an elementary school, may have been war …"
+    },
+    {
+      "title": "CNN All Access with Optimum | Stream Live News & Originals",
+      "url": "https://www.optimum.com/articles/tv/cnn-all-access-stream-live-news",
+      "snippet": "Nov 19, 2025 · Stream live CNN news, Originals, and on-demand shows with CNN All Access on Optimum. Enjoy trusted journalism …"
+    }
+  ]
+}

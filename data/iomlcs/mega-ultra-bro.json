@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "iomlcs/mega-ultra-bro",
+  "slug": "iomlcs-mega-ultra-bro",
+  "author": "iomlcs",
+  "url": "https://huggingface.co/iomlcs/mega-ultra-bro",
+  "created_at": "2026-09-19T13:02:57.000Z",
+  "updated_at": "2026-09-19T13:03:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gguf",
+    "base_model:adapter:unsloth/gemma-4-e2b-it-unsloth-bnb-4bit",
+    "lora",
+    "transformers",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25337856,
+  "parameters_human": "25.3M",
+  "storage_bytes": 220342042,
+  "storage_human": "220 MB",
+  "base_model": "unsloth/gemma-4-e2b-it-unsloth-bnb-4bit",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Montefiascone – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Montefiascone",
+      "snippet": "Der Ort Montefiascone entstand als Rückzugssiedlung der umwohnenden Bevölkerung während der Völkerwanderungszeit, wohl im …"
+    },
+    {
+      "title": "Montefiascone - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Montefiascone",
+      "snippet": "Montefiascone venne definita da molti la \"perla dell'Alto Lazio \", e fu un'ambita meta di villeggiatura per i primi decenni del …"
+    },
+    {
+      "title": "Montefiascone - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Montefiascone",
+      "snippet": "Montefiascone is a town and comune of the province of Viterbo, in Lazio, central Italy. It stands on a hill on the southeast side of Lake …"
+    },
+    {
+      "title": "Montefiascone am Bolsenasee | Reiseführer",
+      "url": "https://www.ilovemontefiascone.com/de/",
+      "snippet": "Montefiascone liegt in der Tuscia im nördlichen Latium, oberhalb des Bolsenasees und nahe Viterbo. Diese Startseite ordnet die …"
+    },
+    {
+      "title": "Montefiascone - Bolsenasee - Reiseführer - Lago di Bolsena",
+      "url": "https://www.bolsenasee-info.de/montefiascone/",
+      "snippet": "Montefiascone Der größte Ort am See befindet sich auf dem südwestlichen Kraterrand der Monti Volisni und besticht durch eine …"
+    }
+  ]
+}

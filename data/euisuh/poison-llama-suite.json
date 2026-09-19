@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "euisuh/POISON-LLaMA-Suite",
+  "slug": "euisuh-poison-llama-suite",
+  "author": "euisuh",
+  "url": "https://huggingface.co/euisuh/POISON-LLaMA-Suite",
+  "created_at": "2026-09-19T13:03:26.000Z",
+  "updated_at": "2026-09-19T14:01:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 460990860,
+  "storage_human": "461 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Truckingboards | The Premier LTL Trucking Forum & Driver Community",
+      "url": "https://www.truckingboards.com/bb/",
+      "snippet": "Sep 6, 2026 · The premier LTL trucking forum and community. Connect with professional drivers, discuss general trucking, freight …"
+    },
+    {
+      "title": "Drivers & Downloads | Dell India",
+      "url": "https://www.dell.com/support/home/en-in/products/laptop?app=drivers&msockid=34888aa69d756e3504109d7f9c326f97",
+      "snippet": "Select a product or enter your Service Tag to view related Dell drivers and driver updates."
+    },
+    {
+      "title": "Support Home | Dell South Africa",
+      "url": "https://www.dell.com/support/home/en-za?app=drivers&msockid=34888aa69d756e3504109d7f9c326f97",
+      "snippet": "Select a product or enter your Service Tag to view related Dell drivers and driver updates."
+    },
+    {
+      "title": "FedEx Freight | - Fedex | Truckingboards | The Premier LTL Trucking ...",
+      "url": "https://www.truckingboards.com/bb/threads/fedex.9274/",
+      "snippet": "Oct 21, 2006 · fedex mexico fedex services fedex kinko location fedex express jobs fedex supply fedex ca fedex national fedex pilot …"
+    },
+    {
+      "title": "O que é o golpe de rastreamento da FedEx - como removê-lo",
+      "url": "https://sensorstechforum.com/pt/fedex-tracking-scam/",
+      "snippet": "May 20, 2024 · The FedEx Tracking Scam is a malware infection that is being spread on the Internet by unknown computer hackers."
+    }
+  ]
+}

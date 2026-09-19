@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "VohoAI/voho-saudi-chat-4b",
+  "slug": "vohoai-voho-saudi-chat-4b",
+  "author": "VohoAI",
+  "url": "https://huggingface.co/VohoAI/voho-saudi-chat-4b",
+  "created_at": "2026-09-19T17:58:31.000Z",
+  "updated_at": "2026-09-19T18:43:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "arabic",
+    "saudi-arabic",
+    "najdi",
+    "dialect",
+    "conversational",
+    "voice-agent",
+    "voho",
+    "ar",
+    "dataset:2A2I/Arabic_Aya",
+    "dataset:arbml/CIDAR",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:finetune:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056404730,
+  "storage_human": "8.1 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "如何解决“操作无法完成，因为文件已经在 COM Surrogate ...",
+      "url": "https://www.zhihu.com/question/41295607",
+      "snippet": "Mar 12, 2016 · 我在删图片详细信息时，只删了部分信息，提示操作无法完成，因为文件已经在 COM Surrogate 中打开。"
+    },
+    {
+      "title": "Unterschied zwischen Smart Pulse, Pure, Passion & Co.",
+      "url": "https://www.smart-forum.de/topic/52019-unterschied-zwischen-smart-pulse-pure-passion-co/",
+      "snippet": "Nov 9, 2007 · Wollte mal fragen worin die Unterschiede bezüglich der Smart 42 Modelle liegen.Habe nämlich keinen Schimmer worin …"
+    },
+    {
+      "title": "惠普打印机WPS PIN码在哪? - 知乎",
+      "url": "https://www.zhihu.com/question/349140936",
+      "snippet": "如果您无法使用 WPS 个人标识号 (PIN) 完成设置，请单击 取消，并安装 HP Smart 应用程序。 在安装过程中，系统将提示您设置打 …"
+    },
+    {
+      "title": "Spritzdüsen richtig einstellen ? - SMARTe Technik - smart-Forum",
+      "url": "https://www.smart-forum.de/topic/26663-spritzd%C3%BCsen-richtig-einstellen/",
+      "snippet": "Jan 18, 2004 · Das ist Folge einer Sparmaßnahme bei Smart. Früher waren die Wischdüsen am Wischerarm montiert. Hallo, soweit …"
+    },
+    {
+      "title": "思迈特SmartBI - 知乎",
+      "url": "https://www.zhihu.com/org/smartbi",
+      "snippet": "1 day ago · 随着企业数字化转型迈入可信智能决策周期，兼具底层 BI 能力、成熟指标资产与落地实践的数据智能体，正成为行业核心 …"
+    }
+  ]
+}

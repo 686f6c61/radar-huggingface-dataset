@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "LoneVertex/Qwen2.5-7B-SupportRAG-LoRA",
+  "slug": "lonevertex-qwen2-5-7b-supportrag-lora",
+  "author": "LoneVertex",
+  "url": "https://huggingface.co/LoneVertex/Qwen2.5-7B-SupportRAG-LoRA",
+  "created_at": "2026-09-19T13:46:07.000Z",
+  "updated_at": "2026-09-19T13:47:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "lora",
+    "text-generation",
+    "customer-support",
+    "rag",
+    "agentic",
+    "qwen",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Inzerce, inzeráty, bazar - Bazos.cz",
+      "url": "https://www.bazos.cz/",
+      "snippet": "©2026 Bazoš - Inzerce, Bazar Nápověda, Dotazy, Hodnocení, Kontakt, Reklama, Podmínky, Ochrana údajů, RSS, Inzeráty celkem: …"
+    },
+    {
+      "title": "Auto bazar | Bazoš.cz",
+      "url": "https://auto.bazos.cz/",
+      "snippet": "©2026 Bazoš - Inzerce, Bazar Nápověda, Dotazy, Hodnocení, Kontakt, Reklama, Podmínky, Ochrana údajů, RSS, Inzeráty Auto …"
+    },
+    {
+      "title": "Bazos.sk - Inzercia, bazár",
+      "url": "https://www.bazos.sk/",
+      "snippet": "Bezplatná inzercia, online bazár - kúpte si nový byt alebo predaj staré auto, toto všetko hravo zvládne náš Bazoš - Vaše inzeráty."
+    },
+    {
+      "title": "Dům a zahrada bazar | Bazoš.cz",
+      "url": "https://dum.bazos.cz/",
+      "snippet": "©2026 Bazoš - Inzerce, Bazar Nápověda, Dotazy, Hodnocení, Kontakt, Reklama, Podmínky, Ochrana údajů, RSS, Inzeráty Dům a …"
+    },
+    {
+      "title": "Zvířata prodej | Bazoš.cz",
+      "url": "https://zvirata.bazos.cz/",
+      "snippet": "©2026 Bazoš - Inzerce, Bazar Nápověda, Dotazy, Hodnocení, Kontakt, Reklama, Podmínky, Ochrana údajů, RSS, Inzeráty Zvířata …"
+    }
+  ]
+}

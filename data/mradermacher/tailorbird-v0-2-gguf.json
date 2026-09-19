@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "mradermacher/tailorbird-v0.2-GGUF",
+  "slug": "mradermacher-tailorbird-v0-2-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/tailorbird-v0.2-GGUF",
+  "created_at": "2026-09-19T17:07:48.000Z",
+  "updated_at": "2026-09-19T17:22:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "conversational",
+    "minicpm",
+    "peft",
+    "sft",
+    "unsloth",
+    "en",
+    "base_model:vcerny/tailorbird-v0.2",
+    "base_model:quantized:vcerny/tailorbird-v0.2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 22763614848,
+  "storage_human": "22.8 GB",
+  "base_model": "vcerny/tailorbird-v0.2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wise - Login",
+      "url": "https://wise.com/login",
+      "snippet": "Banks charge a lot for overseas transfers. We don't. Transfer money abroad easily and quickly with our low cost money transfers."
+    },
+    {
+      "title": "Wise: The international account | Money without borders | Wise United ...",
+      "url": "https://wise.com/",
+      "snippet": "150+ countries, 40 currencies, one account. Save when you send, spend and manage your money internationally."
+    },
+    {
+      "title": "About Wise | Wise Newsroom",
+      "url": "https://newsroom.wise.com/en-CAS/about/",
+      "snippet": "Wise is a global technology company, building the best way to move and manage the world's money. With Wise Account and Wise …"
+    },
+    {
+      "title": "Overview | Wise Plc.",
+      "url": "https://owners.wise.com/",
+      "snippet": "Wise Plc. Investor relations (IR) website contains information about our business for stockholders, potential investors, and financial …"
+    },
+    {
+      "title": "Wise Status",
+      "url": "https://status.wise.com/",
+      "snippet": "Welcome to Wise's home for real-time and historical data on system performance."
+    }
+  ]
+}

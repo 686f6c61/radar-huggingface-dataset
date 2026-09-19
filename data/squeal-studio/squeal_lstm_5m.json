@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Squeal-Studio/squeal_lstm_5m",
+  "slug": "squeal-studio-squeal_lstm_5m",
+  "author": "Squeal-Studio",
+  "url": "https://huggingface.co/Squeal-Studio/squeal_lstm_5m",
+  "created_at": "2026-09-19T14:34:56.000Z",
+  "updated_at": "2026-09-19T14:47:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "safetensors",
+    "lstm_lm",
+    "lstm",
+    "rnn",
+    "small-language-model",
+    "russian",
+    "pretrained",
+    "text-generation",
+    "ru",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5857280,
+  "parameters_human": "5.9M",
+  "storage_bytes": 23430088,
+  "storage_human": "23 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Zeitrechner – Zeitraum berechnen in Monaten, Tagen & Jahren ...",
+      "url": "https://zeitrechnerapp.de/",
+      "snippet": "Die genaue Zahl hängt von den Kalendermonaten ab. In Tagen umgerechnet: 5 Monate = ca. 3.648 Stunden oder 218.880 Minuten. …"
+    },
+    {
+      "title": "Monatsrechner - Monate berechnen / addieren / abziehen",
+      "url": "https://www.finanz-tools.de/monatsrechner",
+      "snippet": "Mit dem Monatsrechner können Sie Monate zu einem Datum addieren oder abziehen sowie die Zeit in Monaten berechnen, die …"
+    },
+    {
+      "title": "Personenmonat bei der Forschungszulage – Einfach erklärt",
+      "url": "https://www.zeitmaker.com/de/blog/was-bedeutet-ein-personenmonat-bei-der-forschungszulage",
+      "snippet": "Für die Forschungszulage ist der Personenmonat Pflichtangabe: Im Antrag gibst Du je Vorhaben und Kalenderjahr an, wie viele …"
+    },
+    {
+      "title": "Personenmonate in der Nebenkostenabrechnung - Minol",
+      "url": "https://www.minol.de/blog/personenmonate-in-der-nebenkostenabrechnung-brunata-minol/",
+      "snippet": "Mar 29, 2023 · Wenn im Mietvertrag die Umlage bestimmter Nebenkostenarten nach Personenzahl vereinbart ist, kommt in der …"
+    },
+    {
+      "title": "Wie errechnet sich ein personenmonat? - AlleAntworten.de",
+      "url": "https://alleantworten.de/wie-errechnet-sich-ein-personenmonat",
+      "snippet": "Beim Verteilerschlüssel „Personenmonate“ wird lediglich unter Einbeziehung eines Zeitelements die Anzahl der im Gebäude …"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "wedik66/Pornai",
+  "slug": "wedik66-pornai",
+  "author": "wedik66",
+  "url": "https://huggingface.co/wedik66/Pornai",
+  "created_at": "2026-09-19T13:27:35.000Z",
+  "updated_at": "2026-09-19T13:27:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-video",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "image-to-video",
+    "en",
+    "zh",
+    "base_model:alibaba-pai/Wan2.2-Fun-5B-Control-Camera",
+    "base_model:quantized:alibaba-pai/Wan2.2-Fun-5B-Control-Camera",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5245802688,
+  "parameters_human": "5.25B",
+  "storage_bytes": 51904940000,
+  "storage_human": "51.9 GB",
+  "base_model": "alibaba-pai/Wan2.2-Fun-5B-Control-Camera",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Herstellen einer VPN-Verbindung unter Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/windows/experience/connectivity-networking/connect-to-a-vpn-in-windows",
+      "snippet": "In diesem Artikel wird erläutert, wie Sie ein VPN in Windows 10 erstellen und eine Verbindung damit herstellen, um sicheren Zugriff …"
+    },
+    {
+      "title": "Einrichten einer sicheren VPN-Verbindung in Windows 11/10",
+      "url": "https://tippsling.de/einrichten-einer-sicheren-vpn-verbindung-in-windows-11-10/",
+      "snippet": "Aug 14, 2026 · VPN unter Windows 11/10 einrichten: Schritt-für-Schritt-Anleitung für eine sichere, verschlüsselte Verbindung im …"
+    },
+    {
+      "title": "Hinzufügen oder Ändern einer VPN-Verbindung in Windows 11/10",
+      "url": "https://tippsling.de/hinzufuegen-oder-aendern-einer-vpn-verbindung-in-windows-11-10/",
+      "snippet": "Aug 17, 2026 · VPN-Verbindung in Windows 11/10 hinzufügen oder ändern: Anleitung zu Einrichtung, Einstellungen und …"
+    },
+    {
+      "title": "Windows 10: VPN-Verbindung einrichten - so geht's - CHIP",
+      "url": "https://www.chip.de/ratgeber/wifi-dsl-internet/windows-10-vpn-verbindung-einrichten-so-geht-s_84870d7b-6dfc-43b5-b1e4-44b570399fd9.html",
+      "snippet": "Aug 30, 2023 · Möchten Sie von zuhause auf andere Netzwerke zugreifen, müssen Sie eine VPN-Verbindung einrichten. Wie das …"
+    },
+    {
+      "title": "Einrichten einer sicheren VPN-Verbindung unter Windows: Schritte …",
+      "url": "https://tecnobits.com/de/Einrichten-einer-sicheren-VPN-Verbindung-unter-Windows/",
+      "snippet": "Dec 11, 2025 · Das Einrichten einer sicheren VPN-Verbindung unter Windows ist einfacher als Sie denken. Sehen Sie sich die …"
+    }
+  ]
+}

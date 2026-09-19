@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "jeff65829652/t",
+  "slug": "jeff65829652-t",
+  "author": "jeff65829652",
+  "url": "https://huggingface.co/jeff65829652/t",
+  "created_at": "2026-09-19T13:48:14.000Z",
+  "updated_at": "2026-09-19T13:48:14.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Allianz-Tiriac - AZT Login - IdentityServer",
+      "url": "https://voffice.allianztiriac.ro/",
+      "snippet": "Accesul la sistemele informatice ale SC Allianz-Tiriac Asigurari SA este permis numai utilizatorilor autorizati angajati sau colaboratori …"
+    },
+    {
+      "title": "Allianz-Tiriac - MySalesNow",
+      "url": "https://voffice2.allianztiriac.ro/",
+      "snippet": "Platforma MySalesNow oferă acces autorizat la sistemele informatice ale Allianz-Țiriac pentru angajați și colaboratori, respectând …"
+    },
+    {
+      "title": "Login - Allianz.com",
+      "url": "https://saml.allianz.com/saml/opensso/SSO/goglobal/",
+      "snippet": "Use your Microsoft Teams/O365 account to log in: Please login to the application via your Group Intranet (GIN) account. Registering …"
+    },
+    {
+      "title": "Sales Office | Allianz Țiriac",
+      "url": "https://salesoffice.allianztiriac.ro/",
+      "snippet": "SUPORT OPERATIONAL Modulul Suport Operational Administrare PID Modulul Administrare PID"
+    },
+    {
+      "title": "Sales Office | Allianz Țiriac",
+      "url": "https://salesoffice.allianztiriac.ro/{{voffice2Url}}",
+      "snippet": "VOffice 2 Modul VOffice 2 Info Office Modulul Info Office SUPORT OPERATIONAL Modulul Suport Operational Administrare PID …"
+    }
+  ]
+}

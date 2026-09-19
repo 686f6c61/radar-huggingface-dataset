@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "MakotoIto/act_pick_bead1",
+  "slug": "makotoito-act_pick_bead1",
+  "author": "MakotoIto",
+  "url": "https://huggingface.co/MakotoIto/act_pick_bead1",
+  "created_at": "2026-09-19T14:43:43.000Z",
+  "updated_at": "2026-09-19T23:56:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:MakotoIto/so101_pick_bead1_20260920_015204",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 620129304,
+  "storage_human": "620 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Купить билеты на автобус Дачные Плесы С/т ⇒ Гай, …",
+      "url": "https://infobus.by/bus/route/from-plesy-dachi-myasotskiy-s-s-molodechnenskiy-r-n-minskaya-obl-belarus-to-gay-molodechnenskiy-r-n-minskaya-obl",
+      "snippet": "Купить билеты на автобус Дачные Плесы С/т ⇒ Гай, Молодечненский р-н МИНСКАЯ ОБЛ.. Большой выбор рейсов и …"
+    },
+    {
+      "title": "环卫工人服装采购投标方案.doc-原创力文档",
+      "url": "https://max.book118.com/html/2024/0816/6102020213010212.shtm",
+      "snippet": "Aug 17, 2024 · 环卫工人服装采购投标方案.doc,PAGE PAGE 354 环卫工人服装采购投标方案 目录 TOC \\o 1-3 \\h \\u 9762 第一章 项目 …"
+    }
+  ]
+}

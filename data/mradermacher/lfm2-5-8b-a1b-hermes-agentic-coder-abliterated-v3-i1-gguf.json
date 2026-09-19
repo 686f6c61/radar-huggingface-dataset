@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "mradermacher/LFM2.5-8B-A1B-Hermes-Agentic-Coder-Abliterated-v3-i1-GGUF",
+  "slug": "mradermacher-lfm2-5-8b-a1b-hermes-agentic-coder-abliterated-v3-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/LFM2.5-8B-A1B-Hermes-Agentic-Coder-Abliterated-v3-i1-GGUF",
+  "created_at": "2026-09-19T15:07:14.000Z",
+  "updated_at": "2026-09-19T16:28:43.000Z",
+  "license": "liquid-foundation-model-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "duo-neural",
+    "agentic",
+    "coding",
+    "function-calling",
+    "hermes",
+    "liquid-foundation-model",
+    "moe",
+    "abliterated",
+    "code",
+    "evalplus",
+    "reasoning",
+    "system2",
+    "en",
+    "base_model:DuoNeural/LFM2.5-8B-A1B-Hermes-Agentic-Coder-Abliterated-v3",
+    "base_model:quantized:DuoNeural/LFM2.5-8B-A1B-Hermes-Agentic-Coder-Abliterated-v3",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8467856832,
+  "parameters_human": "8.47B",
+  "storage_bytes": 95574122976,
+  "storage_human": "95.6 GB",
+  "base_model": "DuoNeural/LFM2.5-8B-A1B-Hermes-Agentic-Coder-Abliterated-v3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed/homepage",
+      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new …"
+    },
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/youtube",
+      "snippet": "Welcome to the official YouTube channel – a home for the biggest moments, the smallest obsessions, and everything in between. …"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/@en.---",
+      "snippet": "Share your videos and discover content from friends, family, and creators worldwide on YouTube."
+    },
+    {
+      "title": "m - YouTube",
+      "url": "https://www.youtube.com/m/home",
+      "snippet": "Share your videos with friends, family, and the world"
+    }
+  ]
+}

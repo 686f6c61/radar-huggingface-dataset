@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "NITHIYANANTHAM/MY-MODEL",
+  "slug": "nithiyanantham-my-model",
+  "author": "NITHIYANANTHAM",
+  "url": "https://huggingface.co/NITHIYANANTHAM/MY-MODEL",
+  "created_at": "2026-09-19T14:26:41.000Z",
+  "updated_at": "2026-09-19T14:26:41.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "環境部主管法規共用系統-法規內容-以桶裝、槽車或其他非管線、溝渠 …",
+      "url": "https://oaout.moenv.gov.tw/law/LawContent.aspx?id=GL006586&kw=%e5%bb%a2%e6%a3%84%e7%89%a9%e6%b8%85%e7%90%86",
+      "snippet": "二、本公告自公告日起實施。"
+    },
+    {
+      "title": "海關徵收規費規則第 5 條- 2026 最新全國法規資料庫｜法律人 LawPlayer",
+      "url": "https://lawplayer.com/article/64391c31e800e5f0b93675a8",
+      "snippet": "海關徵收規費規則第 5 條規定：「經海關加封之貨物，除下列各款及第二項另有規定外，不論其使用封條數量，按每一貨櫃、每一火車 …"
+    },
+    {
+      "title": "環境部主管法規共用系統-法規沿革-以桶裝、槽車或其他非管線、溝渠 …",
+      "url": "https://oaout.moenv.gov.tw/law/LawContentSource.aspx?id=GL006586",
+      "snippet": "環境部主管法規共用系統-法規沿革-以桶裝、槽車或其他非管線、溝渠清除至作業環境以外之未符合放流水標準之廢（污）水，其處理 …"
+    },
+    {
+      "title": "motclaw.motc.gov.tw",
+      "url": "https://motclaw.motc.gov.tw/wfrmDownload.aspx?ID=192&type=Law",
+      "snippet": ""
+    },
+    {
+      "title": "中華民國內政部消防署全球資訊網 > 最新消息 > 法規動態 > 函詢載運公共危險物品槽車 …",
+      "url": "https://www.nfa.gov.tw/cht/index.php?code=list&flag=detail&ids=23&article_id=11391",
+      "snippet": "發文日期: 中華民國111年1月12日發文字號: 消署危字第 1111100112 號函主旨: 函詢..."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "MajidFQ/taxoSplitter-biz-router-setfit-v1",
+  "slug": "majidfq-taxosplitter-biz-router-setfit-v1",
+  "author": "MajidFQ",
+  "url": "https://huggingface.co/MajidFQ/taxoSplitter-biz-router-setfit-v1",
+  "created_at": "2026-09-19T16:54:22.000Z",
+  "updated_at": "2026-09-19T16:54:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "setfit",
+  "languages": [],
+  "tags": [
+    "setfit",
+    "safetensors",
+    "bert",
+    "sentence-transformers",
+    "text-classification",
+    "generated_from_setfit_trainer",
+    "arxiv:2209.11055",
+    "base_model:intfloat/e5-base-v2",
+    "base_model:finetune:intfloat/e5-base-v2",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109482240,
+  "parameters_human": "109.5M",
+  "storage_bytes": 438106175,
+  "storage_human": "438 MB",
+  "base_model": "intfloat/e5-base-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Web'de Öğren",
+      "url": "https://www.webdeogren.com/",
+      "snippet": "Web'de Öğren - Birlikte En Doğruya Sitemizde yayınlanan içeriklerin büyük bir kısmı sitemize ait yada içerik sahiplerinin izinleri …"
+    },
+    {
+      "title": "Okul ve Kurumlardaki Kurul, Komisyon ve Ekipler Tam Listesi",
+      "url": "https://www.webdeogren.com/okul-ve-kurumlardaki-kurul-komisyon-ve-ekipler-tam-listesi.html",
+      "snippet": "Aug 16, 2026 · Millî Eğitim Bakanlığına bağlı tüm okul ve kurumlarda eğitimin niteliğini artırmak, güvenli, düzenli ve şeffaf bir yönetim …"
+    },
+    {
+      "title": "Question Pix - Forum Réseaux sociaux - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-37821416-question-pix",
+      "snippet": "Mar 30, 2023 · BONSOIR Mot qu'on peut trouver dans le Larousse Forme de politesse de rigueur afin que nous puissions dans la …"
+    },
+    {
+      "title": "Internet explorer n'affiche pas la page web - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-2766805-internet-explorer-n-affiche-pas-la-page-web",
+      "snippet": "Bonour à tous ! Depuis quelques jours, je n'arrive plus à me connecter sur le site www.barclays.fr. Voici le message qui s'affiche : …"
+    },
+    {
+      "title": "Forum",
+      "url": "https://www.webdeogren.com/forum/",
+      "snippet": "Aug 1, 2026 · Web'de Öğren - Birlikte En Doğruya Milli Eğitim Bakanlığı (MEB), eğitimcilerin mesleki donanımlarını artırmak, çağdaş …"
+    }
+  ]
+}

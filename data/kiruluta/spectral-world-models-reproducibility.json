@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "kiruluta/Spectral-World-Models-Reproducibility",
+  "slug": "kiruluta-spectral-world-models-reproducibility",
+  "author": "kiruluta",
+  "url": "https://huggingface.co/kiruluta/Spectral-World-Models-Reproducibility",
+  "created_at": "2026-09-19T19:23:20.000Z",
+  "updated_at": "2026-09-19T21:02:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 116467517,
+  "storage_human": "116 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "e-devlet · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/e-devlet",
+      "snippet": "Apr 9, 2023 · e-Devlet ve UYAP'a (e-Adalet) akıllı kart e-imzasıyla girişi tek uygulamada toplayan; Java'sız, tek dosya, kendini …"
+    },
+    {
+      "title": "GitHub - necdetyapici/EDevletAuth: E-devlet Auth",
+      "url": "https://github.com/necdetyapici/EDevletAuth",
+      "snippet": "E-devlet Auth. Contribute to necdetyapici/EDevletAuth development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub - agtokty/edevlet-soy-agaci: e-Devlet Alt-Üst Soy Bilgisi ...",
+      "url": "https://github.com/agtokty/edevlet-soy-agaci",
+      "snippet": "Apr 22, 2026 · e-Devlet Alt-Üst Soy Bilgisi Sorgulama sayfasındaki verileri ağaç şeklinde görselleştiren tarayıcı eklentisi - …"
+    },
+    {
+      "title": "GitHub - rateltechcom/E-Devlet: E-Devlet API'leri ile yaptığım ...",
+      "url": "https://github.com/rateltechcom/E-Devlet",
+      "snippet": "E-Devlet API'leri ile yaptığım çalışmalar GuzzleHttp kütüphanesi kullanıldığı için PHP 8.1 ve üzeri sürümlerde çalışmaktadır. Daha …"
+    },
+    {
+      "title": "E-Devlet E-İmza - GitHub",
+      "url": "https://github.com/MehmetNuri/E-Devlet-E-Imza",
+      "snippet": "May 26, 2023 · E-Devlet uygulaması e-imza ile giriş için jnlp dosyalarını kullanıyor. Ancak bazı durumlarda bu jnlp dosyası sistemde …"
+    }
+  ]
+}

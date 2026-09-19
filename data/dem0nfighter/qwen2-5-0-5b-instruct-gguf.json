@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Dem0nFighter/Qwen2.5-0.5B-Instruct-GGUF",
+  "slug": "dem0nfighter-qwen2-5-0-5b-instruct-gguf",
+  "author": "Dem0nFighter",
+  "url": "https://huggingface.co/Dem0nFighter/Qwen2.5-0.5B-Instruct-GGUF",
+  "created_at": "2026-09-19T15:24:53.000Z",
+  "updated_at": "2026-09-19T15:24:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "chat",
+    "text-generation",
+    "en",
+    "arxiv:2407.10671",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 630167424,
+  "parameters_human": "630.2M",
+  "storage_bytes": 5372532320,
+  "storage_human": "5.4 GB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Query（英语单词）_百度百科",
+      "url": "https://baike.baidu.com/item/Query/63305502",
+      "snippet": "Query是英语中具有名词与动词双重词性的常用词汇，发音为英 [ˈkwɪəri]、美 [ˈkwɪri]。 作为名词表示“疑问，询问”或“问号”，作动词时 …"
+    },
+    {
+      "title": "query - 搜索 词典",
+      "url": "https://global.bing.com/dict/search?q=query&FORM=BDVSP6&cc=cn",
+      "snippet": "6. To query the database, a user or application can connect to any server instance to which the database is attached. 若要 查询 数据 …"
+    },
+    {
+      "title": "科普帖：什么是Query？关于数据库查询的解释_1、简要说明 ...",
+      "url": "https://blog.csdn.net/weixin_44026962/article/details/135341905",
+      "snippet": "Jan 8, 2024 · 数据库查询表明，操作数据并不一定很复杂。 大多数查询语言都很直观，一旦您了解了一些基本规则，就很容易学习。 …"
+    },
+    {
+      "title": "Query（计算机术语）_百度百科",
+      "url": "https://baike.baidu.com/item/Query/3789545",
+      "snippet": "Query的基本语法通常包括SELECT、FROM、WHERE等关键字，支持比较操作符、逻辑操作符和算术操作符，以及聚合函数、分组 …"
+    },
+    {
+      "title": "QUERY中文 (简体)翻译：剑桥词典 - Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/zhs/%E8%AF%8D%E5%85%B8/%E8%8B%B1%E8%AF%AD-%E6%B1%89%E8%AF%AD-%E7%AE%80%E4%BD%93/query",
+      "snippet": "What was their response to your query? He could always do something useful instead of wasting my time with footling queries. Most …"
+    }
+  ]
+}

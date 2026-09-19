@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "MoAIBo/pi05_pick_place_vel",
+  "slug": "moaibo-pi05_pick_place_vel",
+  "author": "MoAIBo",
+  "url": "https://huggingface.co/MoAIBo/pi05_pick_place_vel",
+  "created_at": "2026-09-19T17:25:01.000Z",
+  "updated_at": "2026-09-19T17:29:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "pi05",
+    "robotics",
+    "dataset:MoAIBo/merged_so101_tb4_pick_place_depth_vel",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 9354072752,
+  "storage_human": "9.4 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MSN | Personalized News, Top Headlines, Live Updates and more",
+      "url": "https://www.msn.com/",
+      "snippet": "Access personalized news, weather, sports, money, travel, entertainment, gaming, and video content on MSN."
+    },
+    {
+      "title": "MSN | Personalized News, Top Headlines, Live Updates and more",
+      "url": "https://www.msn.com/en-ca",
+      "snippet": "Stay updated with Canadian and world news, sports, entertainment, money, weather, travel, health and lifestyle on MSN Canada."
+    },
+    {
+      "title": "MSN | Personalised News, Top Headlines, Live Updates and more",
+      "url": "https://g.msn.com/1cl91enus/937",
+      "snippet": "Your personalised and curated collection of the best in trusted news, weather, sports, money, travel, entertainment, gaming and …"
+    },
+    {
+      "title": "Msn For Homepage A Must Have For Your Daily News Fix",
+      "url": "https://www.baltimoreexaminer.com/msn-for-homepage/",
+      "snippet": "Feb 13, 2025 · MSN aggregates content from established and credible sources like NBC News, Reuters, and The Associated Press. …"
+    },
+    {
+      "title": "Get to know MSN | Microsoft MSN",
+      "url": "https://explore.microsoft.com/en-us/msn",
+      "snippet": "MSN.com is ready for you on any browser - Safari, Chrome, and more. Log in to MSN.com with your Microsoft account to keep your …"
+    }
+  ]
+}

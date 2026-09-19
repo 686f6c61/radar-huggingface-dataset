@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "yosef-samy019/test-torchwires",
+  "slug": "yosef-samy019-test-torchwires",
+  "author": "yosef-samy019",
+  "url": "https://huggingface.co/yosef-samy019/test-torchwires",
+  "created_at": "2026-09-19T13:00:50.000Z",
+  "updated_at": "2026-09-19T14:47:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11095916,
+  "storage_human": "11 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jak naprawić prędkość Ethernet ograniczoną do 100 Mb/s w systemie Windows",
+      "url": "https://pl.denizatm.com/pages/77474-how-to-fix-your-ethernet-speed-capped-at-100mbps-on-windows",
+      "snippet": "Sep 14, 2023 · Jeśli płacisz za szybkie połączenie, ale nie możesz przekroczyć 100 Mb/s, oto jak to naprawić w systemie Windows. …"
+    },
+    {
+      "title": "4 Ways to Fix Ethernet Speed Capped at 100Mbps on Windows 11",
+      "url": "https://www.guidingtech.com/fix-ethernet-speed-capped-at-100mbps/",
+      "snippet": "Apr 22, 2024 · Ethernet speed not going past 100Mbps on Windows 11? Here are 4 ways to help fix Ethernet speed capped at …"
+    },
+    {
+      "title": "Jak naprawić ograniczenie prędkości Ethernet do 100Mbps w systemie Windows",
+      "url": "https://pl.windows.day/?p=65216",
+      "snippet": "Sam kabel Ethernet powinien być zdolny do przesyłania prędkości 100 Mbps lub więcej, tak jak Twój router. Kable Ethernet o niskiej …"
+    },
+    {
+      "title": "Rozwiązywanie problemu z limitem 100 Mb/s w połączeniu lokalnym w ...",
+      "url": "https://pl.webtech360.com/detail/rozwiazywanie-problemu-z-limitem-100-mbs-w-po%C5%82aczeniu-lokalnym-w-systemie-windows-11-99901595.html",
+      "snippet": "Masz problem z limitem 100 Mb/s w połączeniu lokalnym w systemie Windows 11? Odkryj sprawdzone rozwiązania, które pozwolą Ci …"
+    },
+    {
+      "title": "Fix Ethernet Speed Capped at 100MBPS on Windows 11/10 [Guide]",
+      "url": "https://www.youtube.com/watch?v=7BQNaO1mgUQ",
+      "snippet": "Sep 23, 2024 · But users often find their Ethernet speed capped at 100 Mbps, even on a Gigabit Ethernet. This guide attempts to …"
+    }
+  ]
+}

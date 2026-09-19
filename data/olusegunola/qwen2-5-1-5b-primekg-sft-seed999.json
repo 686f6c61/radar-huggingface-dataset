@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "olusegunola/qwen2.5-1.5b-primekg-sft-seed999",
+  "slug": "olusegunola-qwen2-5-1-5b-primekg-sft-seed999",
+  "author": "olusegunola",
+  "url": "https://huggingface.co/olusegunola/qwen2.5-1.5b-primekg-sft-seed999",
+  "created_at": "2026-09-19T12:37:52.000Z",
+  "updated_at": "2026-09-19T12:37:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 46317146,
+  "storage_human": "46 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Het Nieuwsblad",
+      "url": "https://www.nieuwsblad.be/",
+      "snippet": "Wij willen hier een beschrijving geven, maar de site die u nu bekijkt staat dit niet toe."
+    },
+    {
+      "title": "Nieuwsblad",
+      "url": "https://epaper.nieuwsblad.be/",
+      "snippet": "Lees het laatste nieuws, sportverhalen en updates uit Vlaanderen en jouw buurt op Nieuwsblad.be."
+    },
+    {
+      "title": "Net binnen | Het meest recente nieuws van HLN.be",
+      "url": "https://www.hln.be/net-binnen/",
+      "snippet": "Volg het meest recente nieuws op de nr1 nieuwssite in België, HLN brengt je het recente nieuws 24/24 en 7/7, uit binnen - en …"
+    },
+    {
+      "title": "Het Nieuwsblad - Wikipedia",
+      "url": "https://nl.wikipedia.org/wiki/Het_Nieuwsblad",
+      "snippet": "De krant, die oorspronkelijk Het Nieuwsblad heette (met lidwoord), positioneerde zich op de dagbladenmarkt als een krant voor de …"
+    },
+    {
+      "title": "Mijn abonnement - Het Nieuwsblad",
+      "url": "https://help.nieuwsblad.be/mijn-abonnement",
+      "snippet": "Abonnementsacties Kan ik mijn studentenabonnement op het Nieuwsblad hernieuwen? Kan ik mijn studentenabonnement …"
+    }
+  ]
+}

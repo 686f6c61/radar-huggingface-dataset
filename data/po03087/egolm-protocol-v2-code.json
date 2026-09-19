@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "po03087/egolm-protocol-v2-code",
+  "slug": "po03087-egolm-protocol-v2-code",
+  "author": "po03087",
+  "url": "https://huggingface.co/po03087/egolm-protocol-v2-code",
+  "created_at": "2026-09-19T17:44:27.000Z",
+  "updated_at": "2026-09-19T17:46:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2356265529,
+  "storage_human": "2.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aeroclub-caen - Réservation et gestion pour aéro-club - OpenFlyers",
+      "url": "https://openflyers.com/aeroclub-caen/",
+      "snippet": "Aéroclub Régional de Caen est géré par la solution logicielle OpenFlyers 4.2. Connectez-vous avec votre identifiant et mot de passe …"
+    },
+    {
+      "title": "OpenFlyers, logiciel de réservation et de gestion",
+      "url": "https://openflyers.com/fr/",
+      "snippet": "OpenFlyers, logiciel de gestion pour l'aéronautique, les auto-écoles, les sociétés de location, les écoles de voile. L'application …"
+    },
+    {
+      "title": "Rechercher une plateforme - OpenFlyers",
+      "url": "https://openflyers.com/fr/rechercher",
+      "snippet": "OpenFlyers, logiciel de gestion pour l'aéronautique, les auto-écoles, les sociétés de location, les écoles de voile. L'application …"
+    },
+    {
+      "title": "OpenFlyers",
+      "url": "https://client.openflyers.com/index.php",
+      "snippet": "Comment se connecter ? Mot de passe oublié ? En cas de besoin, contactez le support."
+    },
+    {
+      "title": "aca - Réservation et gestion pour aéro-club - OpenFlyers",
+      "url": "https://openflyers.com/aca/",
+      "snippet": "Aéroclub de l'Agenais utilise OpenFlyers 4.2 comme logiciel de réservation, de comptabilité et de gestion avec le paiement en ligne …"
+    }
+  ]
+}

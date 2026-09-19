@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "huangch/10xGenomics-CRC_BY_SLIDE-CellViT-SAM-H-x40",
+  "slug": "huangch-10xgenomics-crc_by_slide-cellvit-sam-h-x40",
+  "author": "huangch",
+  "url": "https://huggingface.co/huangch/10xGenomics-CRC_BY_SLIDE-CellViT-SAM-H-x40",
+  "created_at": "2026-09-19T18:45:42.000Z",
+  "updated_at": "2026-09-19T19:26:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "doi:10.57967/hf/10521",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2740199003,
+  "storage_human": "2.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "schrauben - Temu Deutschland",
+      "url": "https://www.temu.com/de/schrauben-5010094146225-s.html",
+      "snippet": "Finden Sie tolle Angebote für schrauben auf Temu. Entdecken Sie von Temu und entdecken Sie die neuesten Styles."
+    },
+    {
+      "title": "schraubenset - Kostenloser Versand für Artikel, die von Temu …",
+      "url": "https://www.temu.com/de/schraubenset-5020174355200-s.html",
+      "snippet": "eine Sammlung von schraubenset bei Temu. Von Mode bis zu Wohnkultur, handgemachte Kunsthandwerke, Schönheitsartikeln, …"
+    },
+    {
+      "title": "TEMU Werkzeug im Test: 16 Produkte -> Top oder Flop? - Hausbauen24",
+      "url": "https://www.hausbauen24.eu/temu-werkzeug-test/",
+      "snippet": "Jul 4, 2024 · TEMU ist ein aufstrebendes Shopping-Portal, das mit attraktiven Schnäppchen und hohen Rabatten lockt. Vor allem im …"
+    },
+    {
+      "title": "12 TEMU-Werkzeuge im Test: Welche sind wirklich gut? - Hausbauen24",
+      "url": "https://www.hausbauen24.eu/12-temu-werkzeuge-test/",
+      "snippet": "Aug 12, 2024 · Hast Du Dich schon mal gefragt, ob günstige Werkzeuge aus dem Internet wirklich was taugen? Ich habe mir 12 …"
+    },
+    {
+      "title": "schrauben und dübel - Temu Deutschland",
+      "url": "https://www.temu.com/de/schrauben-und-d%C3%BCbel-5030026070227-s.html",
+      "snippet": "Entdecken Sie eine Sammlung von schrauben und dübel bei Temu. Von Mode bis hin zu Wohnkultur, Kunsthandwerk, …"
+    }
+  ]
+}

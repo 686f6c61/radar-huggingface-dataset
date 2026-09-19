@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "airagrp/Qwen3.8-Flash-Next-mixed-6-8-ple8-mlx-serve",
+  "slug": "airagrp-qwen3-8-flash-next-mixed-6-8-ple8-mlx-serve",
+  "author": "airagrp",
+  "url": "https://huggingface.co/airagrp/Qwen3.8-Flash-Next-mixed-6-8-ple8-mlx-serve",
+  "created_at": "2026-09-19T18:44:12.000Z",
+  "updated_at": "2026-09-19T19:03:30.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx-serve",
+  "languages": [],
+  "tags": [
+    "mlx-serve",
+    "safetensors",
+    "qwen4_exp",
+    "mlx",
+    "moe",
+    "sparse-attention",
+    "ngram-embedding",
+    "vision",
+    "multimodal",
+    "image-text-to-text",
+    "video-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "6-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 130053111724,
+  "parameters_human": "130.05B",
+  "storage_bytes": 163744473280,
+  "storage_human": "163.7 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "I 10 migliori hotel di Roma (da € 75) - Booking.com",
+      "url": "https://www.booking.com/city/it/rome.it.html?msockid=0c8f5d41d8506c3304ca4a98d9e46dc0",
+      "snippet": "Fantastici sconti sugli alberghi di Roma, Italia. Buona disponibilità e tariffe competitive. Leggi i giudizi e scegli l’hotel adatto a te."
+    },
+    {
+      "title": "Hotels.com - Offerte speciali e sconti su tutte le prenotazioni, da ...",
+      "url": "https://it.hotels.com/",
+      "snippet": "Hotels.com | Prenota su Hotels.com per avere accesso a hotel economici e offerte speciali. Confronta promozioni e offerte hotel e …"
+    },
+    {
+      "title": "I MIGLIORI 10 hotel: Roma 2026 (da 66 €) - Tripadvisor",
+      "url": "https://www.tripadvisor.it/Hotels-g187791-Rome_Lazio-Hotels.html",
+      "snippet": "Prenota il migliori hotel a Roma su Tripadvisor: trova l'offerta che fa per te grazie a 1.053.310 recensioni e 659495 foto inserite dai …"
+    },
+    {
+      "title": "Booking.com | Sito ufficiale | I migliori hotel, voli, noleggi auto e ...",
+      "url": "https://www.booking.com/index.it.html?msockid=0c8f5d41d8506c3304ca4a98d9e46dc0",
+      "snippet": "Esplora il mondo con Booking.com. Prezzi strepitosi su case, hotel, voli, noleggio auto, taxi e attrazioni: crea il viaggio perfetto per …"
+    },
+    {
+      "title": "trivago.com - Compare hotel prices worldwide",
+      "url": "https://www.trivago.com/?msockid=0c8f5d41d8506c3304ca4a98d9e46dc0",
+      "snippet": "Compare hotel prices from hundreds of travel sites and get great deals. Save time and money on finding your ideal accommodation …"
+    }
+  ]
+}

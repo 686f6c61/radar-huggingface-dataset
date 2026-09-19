@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "cmeister/boundary-markers-en-d12-bnd_wpd_caps-mingram",
+  "slug": "cmeister-boundary-markers-en-d12-bnd_wpd_caps-mingram",
+  "author": "cmeister",
+  "url": "https://huggingface.co/cmeister/boundary-markers-en-d12-bnd_wpd_caps-mingram",
+  "created_at": "2026-09-19T19:25:53.000Z",
+  "updated_at": "2026-09-19T19:26:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "tokenization",
+    "boundary-markers",
+    "nanochat",
+    "en",
+    "arxiv:2608.08847",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2458863301,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/?hl=el",
+      "snippet": "Δημιουργήστε έναν λογαριασμό ή συνδεθείτε στο Instagram - Μοιραστείτε όσα κάνετε με άτομα που σας καταλαβαίνουν."
+    },
+    {
+      "title": "Instagram (@instagram) • Instagram photos and videos",
+      "url": "https://www.instagram.com/instagram/",
+      "snippet": "687M Followers, 299 Following, 8,590 Posts - Instagram (@instagram) on Instagram: \"Discover what's new on Instagram 🔎 \""
+    },
+    {
+      "title": "Instagram",
+      "url": "https://platform.instagram.com/",
+      "snippet": "Create an account or log in to Instagram - Share what you're into with the people who get you."
+    },
+    {
+      "title": "Instagram - Εφαρμογές στο Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.instagram.android&hl=el",
+      "snippet": "Οι μικρές στιγμές οδηγούν σε μεγάλες φιλίες. Μοιραστείτε τις δικές σας στο Instagram. – Από το Meta Συνδεθείτε με φίλους, βρείτε …"
+    },
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/sem/campaign/login/",
+      "snippet": "Log in to Instagram and connect with friends, family, and interests worldwide."
+    }
+  ]
+}

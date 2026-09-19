@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "master103525/intercode-test",
+  "slug": "master103525-intercode-test",
+  "author": "master103525",
+  "url": "https://huggingface.co/master103525/intercode-test",
+  "created_at": "2026-09-19T12:00:19.000Z",
+  "updated_at": "2026-09-19T12:00:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:nsloth--Meta-Llama-3.1-8B-Instruct",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1359454961,
+  "storage_human": "1.4 GB",
+  "base_model": "unsloth--Meta-Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Poki - Jocuri Online Gratis - Joacă Acum!",
+      "url": "https://poki.com/ro?msockid=235dff8f345669e002ffe85635586844",
+      "snippet": "Descoperă lumea jocurilor online gratuite cu Poki! Joacă imediat, fără descărcări, și bucură-te de jocuri compatibile cu toate …"
+    },
+    {
+      "title": "Free Online Games at Poki - Play Now!",
+      "url": "https://poki.com/?msockid=235dff8f345669e002ffe85635586844",
+      "snippet": "Play 1500 free games instantly on Poki! All of the games are available to play on mobile, tablet and desktop. Try driving games like …"
+    },
+    {
+      "title": "CrazyGames - Jocuri gratuite online pe CrazyGames.ro",
+      "url": "https://www.crazygames.com/ro/",
+      "snippet": "CrazyGames este o platformă cu jocuri de tip browser care vă oferă cele mai grozavejocuri online gratuite. Toate jocurile sunt …"
+    },
+    {
+      "title": "Poki Games - Free Online Games - Play Now! | poki.com",
+      "url": "https://poki.to/poki",
+      "snippet": "Poki Games is a free gaming platform packed with tons of fun without any sneaky charges or subscriptions. Not only can you play …"
+    },
+    {
+      "title": "Jocuri online gratuite — Jocuri browser fără descărcare | Playhop",
+      "url": "https://playhop.com/ro",
+      "snippet": "Joacă peste 20.000 de jocuri online gratuite pe Playhop — fără descărcare, joc instant pe mobil sau desktop. Jocuri noi adăugate zilnic."
+    }
+  ]
+}

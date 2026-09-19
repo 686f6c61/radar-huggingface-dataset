@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "cmeister/boundary-markers-en-d12-bnd_wpd-mingram",
+  "slug": "cmeister-boundary-markers-en-d12-bnd_wpd-mingram",
+  "author": "cmeister",
+  "url": "https://huggingface.co/cmeister/boundary-markers-en-d12-bnd_wpd-mingram",
+  "created_at": "2026-09-19T19:24:03.000Z",
+  "updated_at": "2026-09-19T19:24:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "tokenization",
+    "boundary-markers",
+    "nanochat",
+    "en",
+    "arxiv:2608.08847",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2458805315,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Baronet - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Baronet",
+      "snippet": "The title of baronet is mentioned as early as the 14th century; however, in its current usage it was created by James I of England in …"
+    },
+    {
+      "title": "Baronet - Simple English Wikipedia, the free encyclopedia",
+      "url": "https://simple.wikipedia.org/wiki/Baronet",
+      "snippet": "Unlike the members of the orders of chivalry, and a knight bachelor, a baronet can pass his title to his children. Baronets rank higher …"
+    },
+    {
+      "title": "BARONET | English meaning - Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/dictionary/english/baronet",
+      "snippet": "BARONET definition: 1. a man who has the lowest title of honour that can be given in the UK , below a baron but above a…. Learn …"
+    },
+    {
+      "title": "Baronet | History, Requirements & Privileges | Britannica",
+      "url": "https://www.britannica.com/topic/baronet",
+      "snippet": "Baronet, British hereditary dignity, first created by King James I of England in May 1611. The baronetage is not part of the peerage, …"
+    },
+    {
+      "title": "BARONET Definition & Meaning - Merriam-Webster",
+      "url": "https://www.merriam-webster.com/dictionary/baronet",
+      "snippet": "Jul 1, 2026 · The meaning of BARONET is the holder of a rank of honor below a baron and above a knight."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "AiMamis/Celeste",
+  "slug": "aimamis-celeste",
+  "author": "AiMamis",
+  "url": "https://huggingface.co/AiMamis/Celeste",
+  "created_at": "2026-09-19T18:38:42.000Z",
+  "updated_at": "2026-09-19T18:39:15.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "license:openrail++",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 459169918,
+  "storage_human": "459 MB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Topics tagged y8",
+      "url": "https://forum.y8.com/tag/y8",
+      "snippet": "Jun 19, 2026 · Topics tagged y8"
+    },
+    {
+      "title": "Forum - Y8 Games",
+      "url": "https://forum.y8.com/tags/",
+      "snippet": "cooking x 2 y8-problems x 5 squid-game x 2 y8-rules x 2 survival-horror x 2 lol-funny-faces x 2 cars x 3"
+    },
+    {
+      "title": "Y8 Football League - Players - Forum - Y8 Games",
+      "url": "https://forum.y8.com/t/y8-football-league/2264",
+      "snippet": "Oct 14, 2016 · ‎Y8 Football League ‎The world’s most popular soccer game is now available for iOS. Y8 Football League allows you to …"
+    },
+    {
+      "title": "FFT Guide by Players - Freefall Tournament - Forum - Y8 Games",
+      "url": "https://forum.y8.com/t/fft-guide-by-players/4038",
+      "snippet": "Feb 22, 2017 · Rank: Marshal Playing since: 2014. Most played class: Gunner. Favourite class: wiggly Bomber. Before anyone starts …"
+    },
+    {
+      "title": "Privacy - Forum - Y8 Games",
+      "url": "https://forum.y8.com/privacy",
+      "snippet": "May 31, 2013 · Forum for Y8 Games. A place for players to meet and discuss about gaming related topics."
+    }
+  ]
+}

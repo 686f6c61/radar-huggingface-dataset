@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "MaximusAILabs/BasicChat-100M",
+  "slug": "maximusailabs-basicchat-100m",
+  "author": "MaximusAILabs",
+  "url": "https://huggingface.co/MaximusAILabs/BasicChat-100M",
+  "created_at": "2026-09-19T15:31:46.000Z",
+  "updated_at": "2026-09-19T15:32:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "custom",
+    "conversational",
+    "pytorch",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1208620899,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Coronach-22 - Destiny 2 Legendary Auto Rifle - Possible Rolls - light.gg",
+      "url": "https://www.light.gg/db/items/355382946/coronach-22/",
+      "snippet": "Full stats and details for Coronach-22, a Auto Rifle in Destiny 2.Learn all possible Coronach-22 rolls, view popular perks on Coronach …"
+    },
+    {
+      "title": "Coronach-22 - Legendary Auto Rifle - Destiny 2 - Godroll.tv",
+      "url": "https://godroll.tv/355382946/coronach-22",
+      "snippet": "Explore stats, perks, and god rolls for Coronach-22, a Legendary Solar Auto Rifle in Destiny 2. Build and share your perfect roll on …"
+    },
+    {
+      "title": "Coronach-22 God Roll for PvE & PvP, Stats & Possible Rolls - Mobalytics",
+      "url": "https://mobalytics.gg/destiny-2/weapons/legendary/355382946-coronach-22",
+      "snippet": "We list all possible rolls for Coronach-22, as well as weapon's stats and god rolls for PvE and PvP. Explore the best traits …"
+    },
+    {
+      "title": "Best Auto Rifles in Destiny 2: Tier List (Final Meta)",
+      "url": "https://www.blueberries.gg/weapons/best-destiny-2-auto-rifles/",
+      "snippet": "Jul 4, 2026 · Auto rifles may not be as dominant as they once were, but the top Auto Rifles are still considered to be among the best …"
+    },
+    {
+      "title": "Coronach-22 — Destiny 2 Auto Rifle: perk pool, stats & god roll · …",
+      "url": "https://shardorkeep.com/db/items/coronach-22-355382946",
+      "snippet": "Coronach-22 is a Legendary Auto Rifle in Destiny 2. Full perk pool by column, weapon stats, where it drops, and the community god …"
+    }
+  ]
+}

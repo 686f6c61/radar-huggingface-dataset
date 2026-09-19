@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "hhx112340/trisplatplus",
+  "slug": "hhx112340-trisplatplus",
+  "author": "hhx112340",
+  "url": "https://huggingface.co/hhx112340/trisplatplus",
+  "created_at": "2026-09-19T14:34:22.000Z",
+  "updated_at": "2026-09-19T14:40:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 155333506,
+  "storage_human": "155 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ich kann mich nicht bei meinem Workplace-Konto anmelden - Facebook",
+      "url": "https://de-de.facebook.com/help/work/android/1064805500275593/?helpref=related&source_cms_id=935364019884081",
+      "snippet": "Diese Anleitung ist für die Anmeldung bei Workplace. Falls du dich bei Facebook anmelden möchtest, rufe diesen Artikel zur …"
+    },
+    {
+      "title": "Instagram-Konto fehlt | Meta-Hilfebereich für Unternehmen - Facebook",
+      "url": "https://de-de.facebook.com/business/help/search/282158005551750/",
+      "snippet": "Wenn du diese Fehlermeldung im Meta-Werbeanzeigenmanager siehst, bedeutet das, dass für dein Unternehmen kein Instagram …"
+    },
+    {
+      "title": "Facebook-Hilfebereich",
+      "url": "https://de-de.facebook.com/help/search/?query=remove+date+of+birth",
+      "snippet": "Warum bittet mich Facebook darum, mein Profil mit meinem rechtsgültigen Namen oder meinem richtigen Geburtsdatum zu …"
+    },
+    {
+      "title": "Die Facebook-Integration mit Apps, Spielen und Websites deaktivieren",
+      "url": "https://de-de.facebook.com/help/android-app/211829542181913/?helpref=faq_content",
+      "snippet": "Indem du die Facebook-Integration für Apps, Spiele und Websites deaktivierst, entfernst du Apps oder Spiele, die du mit deinem …"
+    },
+    {
+      "title": "Konto | Messenger-Hilfebereich - Facebook",
+      "url": "https://de-de.facebook.com/help/messenger-app/mobile-basic/1056704427697184/",
+      "snippet": "Informiere dich über dein Messenger-Konto, einschließlich darüber, wie du ein Konto hinzufügst oder entfernst bzw. zu einem …"
+    }
+  ]
+}

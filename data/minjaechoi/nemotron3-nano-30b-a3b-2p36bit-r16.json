@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "minjaechoi/nemotron3-nano-30b-a3b-2p36bit-r16",
+  "slug": "minjaechoi-nemotron3-nano-30b-a3b-2p36bit-r16",
+  "author": "minjaechoi",
+  "url": "https://huggingface.co/minjaechoi/nemotron3-nano-30b-a3b-2p36bit-r16",
+  "created_at": "2026-09-19T17:17:38.000Z",
+  "updated_at": "2026-09-19T17:23:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "nemotron_h",
+    "text-generation",
+    "quantized",
+    "conversational",
+    "custom_code",
+    "base_model:nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+    "base_model:finetune:nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 31577937344,
+  "parameters_human": "31.58B",
+  "storage_bytes": 63173963193,
+  "storage_human": "63.2 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Akquise.de – Das exklusive Mentorship Programm von Deutschlands …",
+      "url": "https://akquise.de/",
+      "snippet": "Lerne von den größten Online Unternehmern Deutschlands wie du dir mit der AKQ Methode und Tim Krasenbrink an deiner Seite ein …"
+    },
+    {
+      "title": "Willkommens Box AKQ - go.akquise.de",
+      "url": "https://go.akquise.de/willkommmen",
+      "snippet": "AKQ Cap: Akquise.de ist mehr als ein Mentoring. Du bist jetzt Teil einer exklusiven Community. Teil einer neuen Generation von …"
+    },
+    {
+      "title": "Termin - akquise.de",
+      "url": "https://akquise.de/termin",
+      "snippet": "Baue ein durchdachtes AI-Business mit der AKQ-Methode. Individuelle 1:1-Beratung, praxiserprobt an 700+ Projekten. Jetzt …"
+    },
+    {
+      "title": "Akquise.de Erfahrungen & Bewertungen - ProvenExpert.com",
+      "url": "https://www.provenexpert.com/de-de/akquise-de/",
+      "snippet": "Sep 5, 2026 · Da ich über Akquise viel Positives gehört hatte und Tim schon länger verfolge, habe ich mich schließlich für das …"
+    },
+    {
+      "title": "Akquise – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Akquise",
+      "snippet": "Akquisition (umgangssprachlich: Akquise; lateinisch acquirere, „dazugewinnen, hinzuerwerben“ [1]) ist im Marketing und …"
+    }
+  ]
+}

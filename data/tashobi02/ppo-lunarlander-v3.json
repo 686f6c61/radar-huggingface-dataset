@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "tashobi02/ppo-LunarLander-v3",
+  "slug": "tashobi02-ppo-lunarlander-v3",
+  "author": "tashobi02",
+  "url": "https://huggingface.co/tashobi02/ppo-LunarLander-v3",
+  "created_at": "2026-09-19T17:09:56.000Z",
+  "updated_at": "2026-09-19T19:25:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "tensorboard",
+    "LunarLander-v3",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1944984,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Outlook",
+      "url": "https://outlook.com/owa/Office365.com",
+      "snippet": ""
+    },
+    {
+      "title": "Outlook",
+      "url": "https://www.outlook.com/owa/schools.nyc.gov",
+      "snippet": ""
+    },
+    {
+      "title": "Outlook",
+      "url": "https://outlook.com/welearn365.com",
+      "snippet": ""
+    },
+    {
+      "title": "Outlook",
+      "url": "https://www.outlook.com/owa/cridf.iledefrance.fr",
+      "snippet": ""
+    },
+    {
+      "title": "Outlook",
+      "url": "https://outlook.com/owa/umc.edu",
+      "snippet": ""
+    }
+  ]
+}

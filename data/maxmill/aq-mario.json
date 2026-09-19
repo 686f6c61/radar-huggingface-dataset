@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "maxmill/aq-mario",
+  "slug": "maxmill-aq-mario",
+  "author": "maxmill",
+  "url": "https://huggingface.co/maxmill/aq-mario",
+  "created_at": "2026-09-19T13:12:44.000Z",
+  "updated_at": "2026-09-19T13:20:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "world-model",
+    "jepa",
+    "reinforcement-learning",
+    "super-mario-bros",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 140953992,
+  "storage_human": "141 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Deutsche Bank Banking & Brokerage",
+      "url": "https://meine.deutsche-bank.de/demo/",
+      "snippet": "Um den vollen Funktionsumfang dieser Webseite nutzen zu können, benötigen Sie einen aktuellen Browser mit aktiviertem …"
+    },
+    {
+      "title": "Login | Deutsche Bank Banking & Brokerage",
+      "url": "https://meine.deutsche-bank.de/trxm/db/",
+      "snippet": "Guten Morgen Bitte geben Sie Ihre Zugangsdaten ein. Deutsche Bank ID"
+    }
+  ]
+}

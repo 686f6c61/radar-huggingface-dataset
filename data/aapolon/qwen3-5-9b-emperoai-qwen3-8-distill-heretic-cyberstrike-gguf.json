@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "Aapolon/Qwen3.5-9B-EmperoAI-Qwen3.8-Distill-Heretic-CyberStrike-GGUF",
+  "slug": "aapolon-qwen3-5-9b-emperoai-qwen3-8-distill-heretic-cyberstrike-gguf",
+  "author": "Aapolon",
+  "url": "https://huggingface.co/Aapolon/Qwen3.5-9B-EmperoAI-Qwen3.8-Distill-Heretic-CyberStrike-GGUF",
+  "created_at": "2026-09-19T14:36:20.000Z",
+  "updated_at": "2026-09-19T14:56:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "gguf",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "qwen3_5",
+    "cybersecurity",
+    "offensive-security",
+    "red-teaming",
+    "penetration-testing",
+    "qwen",
+    "uncensored",
+    "cyberstrike",
+    "mitre-attack",
+    "owasp",
+    "en",
+    "dataset:oyildirim/cyberstrike-sft-120k",
+    "base_model:petruhonk/Qwen3.8-9B-Distill-uncensored-heretic",
+    "base_model:quantized:petruhonk/Qwen3.8-9B-Distill-uncensored-heretic",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9197093888,
+  "parameters_human": "9.20B",
+  "storage_bytes": 13344339040,
+  "storage_human": "13.3 GB",
+  "base_model": "petruhonk/Qwen3.8-9B-Distill-uncensored-heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mappa di Via Vittorio Veneto a Roma - Tuttocittà",
+      "url": "https://www.tuttocitta.it/mappa/roma/via-vittorio-veneto",
+      "snippet": "Consulta ora la Mappa di Via Vittorio Veneto a Roma su TuttoCittà. Accedi e scopri negozi e attività commerciali online."
+    },
+    {
+      "title": "Via Vittorio Veneto - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Via_Vittorio_Veneto",
+      "snippet": "Via Vittorio Veneto, comunemente chiamata via Veneto, è un'elegante strada del centro storico di Roma che da piazza Barberini …"
+    },
+    {
+      "title": "Via Vittorio Veneto - Roma Segreta",
+      "url": "https://www.romasegreta.it/ludovisi/via-vittorio-veneto.html",
+      "snippet": "Mar 26, 2025 · Al civico 56 di Via Vittorio Veneto è situato Palazzo Balestra (nella foto 13), oggi sede del Ministero del Lavoro e delle …"
+    },
+    {
+      "title": "Sito ufficiale Hotel Veneto Plaza a Roma | Prenota adesso",
+      "url": "https://www.hotelviavenetoroma.com/",
+      "snippet": "L 'Hotel Veneto Plaza incarna l' essenza della Città Eterna, fondendo l'eleganza classica con il comfort moderno. La nostra struttura, …"
+    },
+    {
+      "title": "Via Vittorio Veneto - Turismo Roma",
+      "url": "https://www.turismoroma.it/it/luoghi/vittorio-veneto",
+      "snippet": "Feb 29, 2020 · Situata nel centro storico di Roma, via Vittorio Veneto, più comunemente nota come via Veneto, collega piazza …"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "Indexnusrefather/Palette-RP-1.2B-Instruct-2609-v0.5",
+  "slug": "indexnusrefather-palette-rp-1-2b-instruct-2609-v0-5",
+  "author": "Indexnusrefather",
+  "url": "https://huggingface.co/Indexnusrefather/Palette-RP-1.2B-Instruct-2609-v0.5",
+  "created_at": "2026-09-19T13:23:47.000Z",
+  "updated_at": "2026-09-19T17:59:49.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "lfm2",
+    "text-generation",
+    "RP",
+    "Roleplay",
+    "Edge",
+    "Experimental",
+    "LFM",
+    "Instruct",
+    "Writer",
+    "Narrative",
+    "Creative Writing",
+    "conversational",
+    "en",
+    "dataset:Indexnusrefather/Hy4-Roleplaying-Data-RAW",
+    "base_model:LiquidAI/LFM2.5-1.2B-Instruct",
+    "base_model:finetune:LiquidAI/LFM2.5-1.2B-Instruct",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1170340608,
+  "parameters_human": "1.17B",
+  "storage_bytes": 5930277904,
+  "storage_human": "5.9 GB",
+  "base_model": "LiquidAI/LFM2.5-1.2B-Instruct",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Die Bootsbörse - Besuchen Sie den Bootsmarkt für Deutschland",
+      "url": "https://www.boat24.com/de/",
+      "snippet": "Boat24 Die Bootsbörse für alle, die Boote lieben. Von der gebrauchten Jolle bis hin zur Luxusyacht: Besuchen Sie jetzt Ihren …"
+    },
+    {
+      "title": "Gebrauchte Boote kaufen – Boot kaufen auf Boat24",
+      "url": "https://www.boat24.com/de/gebrauchtboote/",
+      "snippet": "Gebrauchte und neue Boote kaufen auf Deutschlands großem Bootsmarktplatz. Über 37 000 Gebrauchtboote von Privat und …"
+    },
+    {
+      "title": "Boats for Sale - The boat marketplace for Europe | Boat24",
+      "url": "https://www.boat24.com/en/",
+      "snippet": "Your dream boat awaits – the boat marketplace with over 37,000 boats for sale Discover your yacht on Boat24, the digital …"
+    },
+    {
+      "title": "Barche in Italia e in tutta Europa: trova la tua | Boat24",
+      "url": "https://www.boat24.com/it/",
+      "snippet": "Vendi la tua barca ora! Pubblicizza la tua barca su Boat24, il portale nautico in Italia e in Europa. Boat24 è la piattaforma perfetta per …"
+    },
+    {
+      "title": "Bateaux à vendre, annonces de bateaux en France et en Europe",
+      "url": "https://www.boat24.com/fr/",
+      "snippet": "Trouver le yacht de vos rêves – le site d'annonces bateau avec plus de 37 000 annonces Découvrez le bateau de vos rêves sur …"
+    }
+  ]
+}

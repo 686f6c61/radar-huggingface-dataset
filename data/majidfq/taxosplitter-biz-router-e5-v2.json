@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "MajidFQ/taxoSplitter-biz-router-e5-v2",
+  "slug": "majidfq-taxosplitter-biz-router-e5-v2",
+  "author": "MajidFQ",
+  "url": "https://huggingface.co/MajidFQ/taxoSplitter-biz-router-e5-v2",
+  "created_at": "2026-09-19T16:35:29.000Z",
+  "updated_at": "2026-09-19T16:35:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "sentence-similarity",
+    "feature-extraction",
+    "dense",
+    "generated_from_trainer",
+    "dataset_size:48425",
+    "loss:CosineSimilarityLoss",
+    "arxiv:1908.10084",
+    "base_model:intfloat/e5-base-v2",
+    "base_model:finetune:intfloat/e5-base-v2",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109482240,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437951328,
+  "storage_human": "438 MB",
+  "base_model": "intfloat/e5-base-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "微信与 WhatsApp 谁抄的谁？ - 知乎",
+      "url": "https://www.zhihu.com/question/20871360",
+      "snippet": "WhatsApp 开始的最早，4年了都，所以不可能抄2年前才出现的微信。不过微信抄的也不是WhatsApp，微信最开始主要借鉴的是 …"
+    },
+    {
+      "title": "为什么whatsapp更新那么频繁，但是看不出来哪里有更新?",
+      "url": "https://www.zhihu.com/question/21843627",
+      "snippet": "3.如何安全使用WhatsApp群组 更新时间：2024..9.23 这个是一个关于WhatsApp群组的功能。 以前WhatsApp邀请的话一般是一个链 …"
+    },
+    {
+      "title": "怎样在whatsapp中加好友-百度经验",
+      "url": "https://jingyan.baidu.com/article/c33e3f483b65d5ea15cbb516.html",
+      "snippet": "May 6, 2019 · 怎样在whatsapp中加好友,使用WhatA的小伙伴们，知不知道如何在该软件中添加好友呢，接下来跟小编一起去看看吧。"
+    },
+    {
+      "title": "小米手机通话录音保存在哪里？-百度经验",
+      "url": "https://jingyan.baidu.com/article/e8cdb32bf94d2c37052bad05.html",
+      "snippet": "Sep 23, 2018 · 小米手机通话录音保存在哪里？,在一些重要的电话里面，我们会进行通话中的录音的。但是录音之后的文件却是找不到 …"
+    },
+    {
+      "title": "大佬们，WhatsApp如何修改备注呢？ - 知乎",
+      "url": "https://www.zhihu.com/question/305026930",
+      "snippet": "首先，打开 WhatsApp 应用程序。 在主界面或聊天列表中找到并选择你想要编辑备注的联系人。 进入该联系人的聊天界面后，点击联 …"
+    }
+  ]
+}

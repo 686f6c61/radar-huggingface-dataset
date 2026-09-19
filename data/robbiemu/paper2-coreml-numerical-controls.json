@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "robbiemu/paper2-coreml-numerical-controls",
+  "slug": "robbiemu-paper2-coreml-numerical-controls",
+  "author": "robbiemu",
+  "url": "https://huggingface.co/robbiemu/paper2-coreml-numerical-controls",
+  "created_at": "2026-09-19T19:45:20.000Z",
+  "updated_at": "2026-09-19T19:51:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "coreml",
+    "research",
+    "numerical-fidelity",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 28761406,
+  "storage_human": "29 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Labor Day 2026: Facts, Date & Founding | HISTORY",
+      "url": "https://www.history.com/articles/labor-day",
+      "snippet": "Apr 13, 2010 · Labor Day, an annual celebration of workers and their achievements, originated during one of American labor history’s …"
+    },
+    {
+      "title": "What Happened on September 8 | HISTORY",
+      "url": "https://www.history.com/this-day-in-history/september-8",
+      "snippet": "Discover what happened on September 8 with HISTORY&#8217;s summaries of major events, anniversaries, famous births and …"
+    },
+    {
+      "title": "This Day in HISTORY Daily Briefing",
+      "url": "https://www.history.com/this-day-in-history-daily-briefing",
+      "snippet": "Dec 18, 2025 · History happens every day! Check in with your virtual assistant or wherever you get your podcasts to find out about …"
+    },
+    {
+      "title": "What Happened on June 7 | HISTORY",
+      "url": "https://www.history.com/this-day-in-history/june-7",
+      "snippet": "Discover what happened on June 7 with HISTORY&#8217;s summaries of major events, anniversaries, famous births and notable …"
+    },
+    {
+      "title": "What Happened on April 16 | HISTORY",
+      "url": "https://www.history.com/this-day-in-history/April-16",
+      "snippet": "Also on This Day in History Discover more of the major events, famous births, notable deaths and everything else history-making that …"
+    }
+  ]
+}

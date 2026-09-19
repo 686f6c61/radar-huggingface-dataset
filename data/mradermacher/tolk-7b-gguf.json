@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mradermacher/tolk-7B-GGUF",
+  "slug": "mradermacher-tolk-7b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/tolk-7B-GGUF",
+  "created_at": "2026-09-19T14:00:26.000Z",
+  "updated_at": "2026-09-19T14:08:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "tolk",
+    "tolk-7B",
+    "ru",
+    "en",
+    "base_model:RaspizdAI/tolk-7B",
+    "base_model:quantized:RaspizdAI/tolk-7B",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 68146891904,
+  "storage_human": "68.1 GB",
+  "base_model": "RaspizdAI/tolk-7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": ":: مـــنـــتـــدى قــــيـــــاس الــــعــــــام :: - منتديات اختبارات ...",
+      "url": "https://www.test-q.com/forum/ac/ap/page61",
+      "snippet": "Dec 5, 2020 · يهتم بالمواضيع الخاصة بطبيعة الاختبار وطريقة التسجيل ومواعيد الاختبار والنتائج"
+    },
+    {
+      "title": "وين احصل كتاب قياس - منتديات اختبارات القدرات والتحصيل والكفايات لــ أ ...",
+      "url": "https://www.test-q.com/forum/ab/aq/19264-",
+      "snippet": "Feb 15, 2013 · يـهتــم بـاختـبارات القدرات للجامعيين سلآم عليكم ..: ) .. بإمكانك الاتصال على الموزع : ) . 014871414 تحويلة 320 من الساعة 10 ص إلى 4 م بالتوفقق .."
+    },
+    {
+      "title": "هل فيه دبلوم بدون اختبار قياس ؟ - منتديات سكاو",
+      "url": "https://www.skaau.com/vb/showthread.php?t=192313",
+      "snippet": "Nov 5, 2010 · هل فيه دبلوم بدون اختبار قياس ؟ ملتقى الماجستير الخاص"
+    },
+    {
+      "title": "ملزمة القياس النفسي",
+      "url": "https://www.skaau.com/vb/attachment/1/2/9/9/0/6119.attach",
+      "snippet": "قدم {وكسلر} مقاييس أدائية ، ومقاييس لفظية ( ) قدم { ترستون} إسهامه في مجال القياس من خلال كتابه قياس الذكاء وكتابه التحليل العاملي المتعدد والذي قدم فيه اسلوب جديد لتصميم إختبارات الذكاء ( )"
+    },
+    {
+      "title": "أختبارات قياس... - منتديات اختبارات القدرات والتحصيل والكفايات لــ أ ...",
+      "url": "https://www.test-q.com/forum/ab/ah/19195-",
+      "snippet": "Feb 10, 2013 · يـهتــم بـاختـبـــارات القدرات القسم الكمي"
+    }
+  ]
+}

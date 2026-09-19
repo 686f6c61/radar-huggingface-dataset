@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "xautonomics/Inkling-Small-UD-Q4_K_M.LAYR.GGUF",
+  "slug": "xautonomics-inkling-small-ud-q4_k_m-layr-gguf",
+  "author": "xautonomics",
+  "url": "https://huggingface.co/xautonomics/Inkling-Small-UD-Q4_K_M.LAYR.GGUF",
+  "created_at": "2026-09-19T17:22:22.000Z",
+  "updated_at": "2026-09-19T17:27:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "layer-library",
+    "multi-stage",
+    "ik_llama.cpp",
+    "dreamcatcher",
+    "xautonomics",
+    "inkling",
+    "base_model:thinkingmachines/Inkling-Small",
+    "base_model:quantized:thinkingmachines/Inkling-Small",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 245424385,
+  "parameters_human": "245.4M",
+  "storage_bytes": 163109015136,
+  "storage_human": "163.1 GB",
+  "base_model": "thinkingmachines/Inkling-Small",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Audi Q3 Автомобили и Джипове втора ръка и ...",
+      "url": "https://www.mobile.bg/obiavi/avtomobili-dzhipove/audi/q3",
+      "snippet": "Продавам Audi Q3, 2016 г. , 2. 0 TDI, quattro, автоматична скоростна кутия. Автомобилът е много добре поддържан, …"
+    },
+    {
+      "title": "Audi Q3 SUV | Audi България",
+      "url": "https://www.audi.bg/q3/q3-suv/pregled",
+      "snippet": "Комфорт на високо равнище. Радвайте се на повдигнатата позиция на седене във вашето Audi Q3 SUV и се насладете на …"
+    },
+    {
+      "title": "Audi Q3 - Автомобили и джипове ≫ Цени и ...",
+      "url": "https://www.auto.bg/obiavi/avtomobili-dzhipove/audi/q3",
+      "snippet": "Audi Q3 ☛ Изберете от 444 обяви за Автомобили и джипове от този модел в Auto.bg Нови или втора употреба, на цени от …"
+    },
+    {
+      "title": "Audi Q3 » Alle Modelle & Preise entdecken | Audi Österreich",
+      "url": "https://www.audi.bg/q3",
+      "snippet": "Открийте универсалния компактен SUV в неговите шест р азлични моделни варианта. От базови модели до мощните …"
+    },
+    {
+      "title": "Audi Q3 Втора ръка - Обяви за модела на ТОП ...",
+      "url": "https://bazar.bg/obiavi/avtomobili/audi/q3",
+      "snippet": "Вижте【 453 】обяви за Audi Q3 от цяла България. ТОП оферти за Автомобили и джипове с цени от 5 € до 76 300 € ① Bazar.bg"
+    }
+  ]
+}

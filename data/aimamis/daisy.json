@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "AiMamis/Daisy",
+  "slug": "aimamis-daisy",
+  "author": "AiMamis",
+  "url": "https://huggingface.co/AiMamis/Daisy",
+  "created_at": "2026-09-19T18:51:27.000Z",
+  "updated_at": "2026-09-19T18:51:32.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "license:openrail++",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 458927588,
+  "storage_human": "459 MB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Eventim - Tickets für über 200.000 Events & Konzerte",
+      "url": "https://www.eventim.de/?msockid=14cd10fea7a66d182c9b0727a6b96c78",
+      "snippet": "Egal ob Konzert, Musical, Comedy-Show oder Sport-Event - wähle aus über 200.000 Events und sichere dir jetzt dein Ticket!"
+    },
+    {
+      "title": "Eventim: Tickets für Konzerte & Events",
+      "url": "https://www.eventim.de/categories/?msockid=14cd10fea7a66d182c9b0727a6b96c78",
+      "snippet": "Von besinnlichen Klassik-Konzerten bis dramatischen Motorsport-Rennen? Nutze unsere komfortable Suche, um alle Events in …"
+    },
+    {
+      "title": "Markthütten-Shop: Holzhütten vom Profi | eventTIME",
+      "url": "https://markthuetten-shop.de/",
+      "snippet": "Sie planen eine Hochzeit, ein Firmenevent, ein Jubiläum, einen Messeauftritt, ein Stadtfest? Sie sind mit der Organisation einer …"
+    },
+    {
+      "title": "Der Partyausstatter für Ihr Event | eventTIME",
+      "url": "https://derpartyausstatter.de/",
+      "snippet": "Sie brauchen jetzt einen zuverlässigen Partner und schnelle Unterstützung bei absoluter Kostentransparenz? eventTIME steht für …"
+    },
+    {
+      "title": "fanSALE - die EVENTIM Ticketbörse mit Tickets von Fan zu Fan!",
+      "url": "https://www.fansale.de/",
+      "snippet": "Die Ticketbörse mit Tickets von Fan zu Fan. Tickets kaufen und verkaufen für Konzerte, Sportevents, Theater uvm."
+    }
+  ]
+}

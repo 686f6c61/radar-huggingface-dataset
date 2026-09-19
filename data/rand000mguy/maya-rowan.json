@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Rand000mGuy/maya-rowan",
+  "slug": "rand000mguy-maya-rowan",
+  "author": "Rand000mGuy",
+  "url": "https://huggingface.co/Rand000mGuy/maya-rowan",
+  "created_at": "2026-09-19T16:04:45.000Z",
+  "updated_at": "2026-09-19T16:04:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 232619335,
+  "storage_human": "233 MB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Überprüfen der Tinten- oder Tonerstände des HP Druckers",
+      "url": "https://support.hp.com/de-de/document/ish_3084192-2529284-16",
+      "snippet": "HP Printer Assistant: Suchen Sie in Windows nach dem Namen Ihres Druckers und wählen Sie ihn dann aus der Liste aus, um HP …"
+    },
+    {
+      "title": "Überprüfen des Tintenpatronenstatus | HP® Support",
+      "url": "https://support.hp.com/de-de/document/ish_11599166-11598995-16",
+      "snippet": "Sie können jederzeit den Status der Tintenpatronen überprüfen (z. B. wie viel Tinte noch vorhanden ist). Berühren Sie den …"
+    },
+    {
+      "title": "Füllstand der Tintenpatronen prüfen",
+      "url": "https://support.epson-europe.com/onlineguides/de/sc82/ref_g/ink_3.htm",
+      "snippet": "Sie können den Füllstand der Tintenpatronen entweder mit dem EPSON-Statusmonitor3 oder dem Fortschrittsbalken prüfen. …"
+    },
+    {
+      "title": "Tintenstand anzeigen: Füllstand der Patronen prüfen (Windows)",
+      "url": "https://www.superpatronen.de/pages/druckerpatronen-fuellstand-anzeigen-windows",
+      "snippet": "Wir zeigen dir, wie du unter Windows und speziell unter Windows 10 Füllstände deiner Tintenpatronen und Toner anzeigen lassen …"
+    },
+    {
+      "title": "Überprüfen des Tintenstands Ihrer Tintenpatronen | PrintAbout",
+      "url": "https://www.printabout.de/beratung/tintenstand-patronen-check/",
+      "snippet": "Aug 18, 2025 · Egal, ob Sie einen HP-, Canon- oder Epson-Drucker haben, jeder Drucker bietet eine Möglichkeit, den Tintenstand in …"
+    }
+  ]
+}

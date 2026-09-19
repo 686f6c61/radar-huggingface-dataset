@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "ramprasad-99/code-search-net-tokenizer",
+  "slug": "ramprasad-99-code-search-net-tokenizer",
+  "author": "ramprasad-99",
+  "url": "https://huggingface.co/ramprasad-99/code-search-net-tokenizer",
+  "created_at": "2026-09-19T19:43:27.000Z",
+  "updated_at": "2026-09-19T19:43:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Die besten Pizzerias in Deiner Nähe & Umgebung finden",
+      "url": "https://www.werkenntdenbesten.de/pizzeria",
+      "snippet": "Finde die besten Pizzerias in der Nähe! Die meisten Bewertungen und Empfehlungen für Pizzerias im Netz findest du bei uns."
+    },
+    {
+      "title": "Pizzerien in Höchst im Odenwald - speisekarte.de",
+      "url": "https://www.speisekarte.de/h%c3%b6chst-im-odenwald/restaurants/pizzeria",
+      "snippet": "Du willst Pizzeria essen in Höchst im Odenwald? Einen vollständigen Überblick aller Pizzerien mit Einblick in die Speisekarte findest …"
+    },
+    {
+      "title": "Weinheim, Odenwald, Bergstraße: Zehn richtig gute Restaurants und ...",
+      "url": "https://www.wnoz.de/nachrichten/weinheim-und-bergstrasse/weinheim-odenwald-bergstrasse-zehn-richtig-gute-restaurants-und-gasthaeuser-481599.html",
+      "snippet": "Weinheim, Bergstraße, Odenwald: Zehn richtig gute Restaurants und Gasthäuser Hausmannskost gefällig? Hier esst ihr richtig gut …"
+    },
+    {
+      "title": "Bergstraße Odenwald: Restaurant und Pizzeria \"La Dolce Vita\"",
+      "url": "https://www.bergstrasse-odenwald.de/detail/id=5fcf2d690d41be5c3a6400fe",
+      "snippet": "Mitten in Reichelsheim liegt unser Restaurant in ruhiger Lage. Wir bieten Ihnen beste italienische und deutsche Küche. Unsere …"
+    },
+    {
+      "title": "Home | Toppizzerien.de",
+      "url": "https://toppizzerien.de/",
+      "snippet": "Stöbere durch eine Vielzahl von Bewertungen, um die perfekte Pizza zu finden. Wir bieten ein umfangreiches Verzeichnis von …"
+    }
+  ]
+}

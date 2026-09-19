@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "cmeister/boundary-markers-en-d12-bnd_wpd-bpe",
+  "slug": "cmeister-boundary-markers-en-d12-bnd_wpd-bpe",
+  "author": "cmeister",
+  "url": "https://huggingface.co/cmeister/boundary-markers-en-d12-bnd_wpd-bpe",
+  "created_at": "2026-09-19T19:23:04.000Z",
+  "updated_at": "2026-09-19T19:23:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "tokenization",
+    "boundary-markers",
+    "nanochat",
+    "en",
+    "arxiv:2608.08847",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2459019135,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "On This Day - Today in History, Film, Music and Sport",
+      "url": "https://www.onthisday.com/",
+      "snippet": "Find out what happened today or any day in history with On This Day. Historical events, birthdays, deaths, photos and famous …"
+    },
+    {
+      "title": "Today in History - On This Day",
+      "url": "https://www.onthisday.com/today/events.php",
+      "snippet": "1 day ago · Learn about important and interesting historical events that happened on today in history. Hundreds of events and facts …"
+    },
+    {
+      "title": "On This Day - What Happened Today In History | Britannica",
+      "url": "https://www.britannica.com/on-this-day",
+      "snippet": "On This Day In History: anniversaries, birthdays, major events, and time capsules. This day's facts in the arts, politics, and sciences."
+    },
+    {
+      "title": "On This Day – What Happened Today in History - timeanddate.com",
+      "url": "https://www.timeanddate.com/on-this-day/",
+      "snippet": "Discover what happened on this day in history. Explore key events, famous birthdays, and historical milestones from past to present."
+    },
+    {
+      "title": "Accadde Oggi – accaddeoggi.it | I fatti del giorno nel passato",
+      "url": "https://www.accaddeoggi.it/",
+      "snippet": "20 hours ago · Accadde Oggi è il primo sito italiano dedicato ai fatti del giorno nella storia: almanacco, informazioni, eventi e …"
+    }
+  ]
+}

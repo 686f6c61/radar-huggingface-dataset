@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "LeeAeron/YuE2_Baked",
+  "slug": "leeaeron-yue2_baked",
+  "author": "LeeAeron",
+  "url": "https://huggingface.co/LeeAeron/YuE2_Baked",
+  "created_at": "2026-09-19T14:59:36.000Z",
+  "updated_at": "2026-09-19T17:29:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 677020953,
+  "parameters_human": "677.0M",
+  "storage_bytes": 5298300896,
+  "storage_human": "5.3 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kadrovske štipendije | GOV.SI",
+      "url": "https://www.gov.si/teme/kadrovske-stipendije/",
+      "snippet": "Dijaki in študenti se lahko s kadrovskimi štipendijami, ki jih podeljujejo delodajalci, med drugim seznanijo: preko spletnih strani …"
+    },
+    {
+      "title": "Pogodba o kadrovskem štipendiranju in njena vsebina",
+      "url": "https://data.si/blog/pogodba-o-kadrovskem-stipendiranju/",
+      "snippet": "Sep 2, 2025 · Pogodba o kadrovskem štipendiranju je pravni dokument, ki ureja razmerje med delodajalcem, ki podeljuje kadrovsko …"
+    },
+    {
+      "title": "Pogosta vprašanja | Javni štipendijski, razvojni, invalidski in ...",
+      "url": "https://www.srips-rs.si/sl/stipendije/kadrovske-stipendije/pogosta-vprasanja",
+      "snippet": "To je pogodba o štipendiranju, ki ustreza zakonskim določbam, če se želi delodajalec prijaviti na razpis za sofinanciranje kadrovskih …"
+    },
+    {
+      "title": "eUprava - Kadrovske štipendije",
+      "url": "https://e-uprava.gov.si/podrocja/izobrazevanje-kultura/stipendije/kadrovske-stipendije.html",
+      "snippet": "Podrobneje pravila in obveznosti kadrovskega štipendista določi štipenditor že ob objavi ponudbe kadrovske štipendije, pravice in …"
+    },
+    {
+      "title": "Pogodba o štipendiranju - Odvetnik Nina Šibila",
+      "url": "https://www.odvetnicasibila.si/pogodba-o-stipendiranju/",
+      "snippet": "Pogodbe o štipendiranju so pravzaprav kadrovske štipendije, katerih namen je povezovanje mladih, ki šele vstopajo na trg delovne …"
+    }
+  ]
+}

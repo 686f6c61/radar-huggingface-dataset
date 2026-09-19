@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "AlinaGonch/granite41-3b-squad-ratio-0.60-seed-42",
+  "slug": "alinagonch-granite41-3b-squad-ratio-0-60-seed-42",
+  "author": "AlinaGonch",
+  "url": "https://huggingface.co/AlinaGonch/granite41-3b-squad-ratio-0.60-seed-42",
+  "created_at": "2026-09-19T15:30:48.000Z",
+  "updated_at": "2026-09-19T15:30:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 124593064,
+  "storage_human": "125 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook verrouillé et code reçu par whatsapp - Facebook",
+      "url": "https://forums.commentcamarche.net/forum/affich-38130243-facebook-verrouille-et-code-recu-par-whatsapp",
+      "snippet": "Dec 5, 2024 · Bonjour, Mon compte Facebook est bloqué car on me demande un code par Whatsapp (que je n'utilise pas) ou deux …"
+    },
+    {
+      "title": "Test de Marvel's Wolverine sur PS5 par jeuxvideo.com",
+      "url": "https://www.jeuxvideo.com/test/2102740/marvel-s-wolverine-le-blockbuster-ps5-dans-toute-sa-splendeur-mais-est-ce-suffisant.htm",
+      "snippet": "Sep 10, 2026 · Retrouvez le test de Marvel’s Wolverine : Le blockbuster PS5 dans toute sa splendeur, mais est-ce suffisant ? sur …"
+    },
+    {
+      "title": "Topic [OFFICIEL] 18-25 Page d'accueil forum 18 25 1825",
+      "url": "https://www.jeuxvideo.com/forums/42-51-51161064-1-0-1-0-officiel-18-25-page-d-accueil-forum-18-25-1825.htm",
+      "snippet": "May 27, 2017 · Bienvenue sur le forum 18-25 ans, rentre dans l'histoire en postant, cette page deviendra le premier resultat Google …"
+    },
+    {
+      "title": "Rester Connecté (Youtube) [Résolu] - YouTube - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-26730061-rester-connecte-youtube",
+      "snippet": "Bonjour, Je suis depuis peu confronté à une situation assez énervante, lorsque je quitte youtube après m'être connecté à mon …"
+    },
+    {
+      "title": "Forum PlayStation 5 - jeuxvideo.com",
+      "url": "https://www.jeuxvideo.com/forums/0-3017788-0-1-0-1-0-playstation-5.htm",
+      "snippet": "Bienvenue sur la page d'accueil du forum PlayStation 5 de jeuxvideo.com Voici la liste des topics du forum. Venez rejoindre notre …"
+    }
+  ]
+}

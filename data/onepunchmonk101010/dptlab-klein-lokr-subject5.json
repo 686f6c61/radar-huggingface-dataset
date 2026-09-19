@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "OnePunchMonk101010/dptlab-klein-lokr-subject5",
+  "slug": "onepunchmonk101010-dptlab-klein-lokr-subject5",
+  "author": "OnePunchMonk101010",
+  "url": "https://huggingface.co/OnePunchMonk101010/dptlab-klein-lokr-subject5",
+  "created_at": "2026-09-19T17:34:45.000Z",
+  "updated_at": "2026-09-19T17:34:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "text-to-image",
+    "lora",
+    "lokr",
+    "dptlab",
+    "base_model:black-forest-labs/FLUX.2-klein-4B",
+    "base_model:adapter:black-forest-labs/FLUX.2-klein-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3537096,
+  "storage_human": "4 MB",
+  "base_model": "black-forest-labs/FLUX.2-klein-4B",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "komu.com | KOMU 8",
+      "url": "https://www.komu.com/",
+      "snippet": "18 hours ago · Jim Riek remembers KOMU 8's coverage of 9/11 25 years later Former longtime KOMU 8 anchor Jim Riek looks back …"
+    },
+    {
+      "title": "News | komu.com",
+      "url": "https://www.komu.com/news/",
+      "snippet": "18 hours ago · One person dies after Osage Beach motorcycle crash that injured two others Avery Copeland, KOMU 8 Digital …"
+    },
+    {
+      "title": "KOMU 8 - Facebook",
+      "url": "https://www.facebook.com/komu8/",
+      "snippet": "KOMU 8 We're mid-Missouri's NBC station. Have something to share? Message us or email us at news@komu.com."
+    },
+    {
+      "title": "KOMU-TV - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/KOMU-TV",
+      "snippet": "KOMU-TV (channel 8) is a television station licensed to Columbia, Missouri, United States, serving the Columbia– Jefferson City …"
+    },
+    {
+      "title": "komu.edu.ng - Kingsley Ozumba Mbadiwe University",
+      "url": "https://komu.edu.ng/",
+      "snippet": "KOMU Congratulates Former Deputy Vice-Chancellor, Prof. Aloysius Chijioke Onyeka, on His Appointment as Pioneer Vice …"
+    }
+  ]
+}

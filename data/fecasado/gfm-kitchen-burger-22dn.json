@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "fecasado/gfm-kitchen-burger-22dN",
+  "slug": "fecasado-gfm-kitchen-burger-22dn",
+  "author": "fecasado",
+  "url": "https://huggingface.co/fecasado/gfm-kitchen-burger-22dN",
+  "created_at": "2026-09-19T16:08:44.000Z",
+  "updated_at": "2026-09-19T16:09:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "gaze_flow_matching",
+    "robotics",
+    "dataset:fecasado/burger-to-plate-good-320x240",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 75225290,
+  "parameters_human": "75.2M",
+  "storage_bytes": 300962360,
+  "storage_human": "301 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Deszendent berechnen kostenlos - Aszendent-Rechner.de",
+      "url": "https://www.aszendent-rechner.de/deszendent-berechnen/",
+      "snippet": "Berechne deinen Deszendenten kostenlos. Erfahre, welchen Partner du anziehst und was dein Du-Punkt über deine Beziehungen …"
+    },
+    {
+      "title": "Aszendent und Deszendent berechnen: Schritt-für-Schritt-Anleitung!",
+      "url": "https://astro-magazin.com/aszendent-und-deszendent-berechnen-so-gehts/",
+      "snippet": "Jul 28, 2026 · Diese Tabelle bietet einen schnellen Überblick über die Aszendent-Deszendent-Kombinationen und deren jeweilige …"
+    },
+    {
+      "title": "Aszendent Berechnen, Kostenloser Rechner",
+      "url": "https://de.astro-seek.com/aszendent-berechnen",
+      "snippet": "Es steht für den Wunsch, mit dem wir auf die Welt kommen und den wir in unserem Leben zu erfüllen haben. Der Deszendent (DSZ, …"
+    },
+    {
+      "title": "Deszendent berechnen: Wer passt zu mir? Bedeutung & Bestimmung",
+      "url": "https://www.astroasist.com/de/deszendent-rechner-dsc/",
+      "snippet": "Der Aszendent und somit auch der Deszendent verschieben sich in den mittleren Breitengraden ungefähr alle vier Minuten um einen …"
+    },
+    {
+      "title": "Aszendent berechnen: Einfach und kostenlos mit dem …",
+      "url": "https://www.brigitte.de/horoskop/astrologie--aszendentenrechner-10753362.html",
+      "snippet": "Jan 9, 2026 · Du siehst, es gibt gute Gründe, den eigenen Aszendenten zu kennen. Mit unserem Aszendentenrechner kannst du …"
+    }
+  ]
+}

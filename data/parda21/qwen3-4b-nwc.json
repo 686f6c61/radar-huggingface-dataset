@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Parda21/Qwen3-4B-NWC",
+  "slug": "parda21-qwen3-4b-nwc",
+  "author": "Parda21",
+  "url": "https://huggingface.co/Parda21/Qwen3-4B-NWC",
+  "created_at": "2026-09-19T13:54:14.000Z",
+  "updated_at": "2026-09-19T14:09:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "nwc",
+  "languages": [],
+  "tags": [
+    "nwc",
+    "safetensors",
+    "qwen3",
+    "lossless",
+    "compression",
+    "bf16",
+    "cuda",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:finetune:Qwen/Qwen3-4B",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5540602040,
+  "parameters_human": "5.54B",
+  "storage_bytes": 5557024026,
+  "storage_human": "5.6 GB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Classroom - Sign in - Google Accounts",
+      "url": "https://classroom.google.com/",
+      "snippet": "Not your computer? Use a private browsing window to sign in. Learn more about using Guest mode Next Create account"
+    },
+    {
+      "title": "Conectează-te – Conturi Google - Google Classroom",
+      "url": "https://classroom.google.com/?hl=ro",
+      "snippet": "Nu este computerul tău? Pentru a te conecta, folosește o fereastră de navigare privată. Află mai multe despre folosirea modului …"
+    },
+    {
+      "title": "Classroom Management Tools & Resources - Google for Education",
+      "url": "https://edu.google.com/intl/ALL_us/workspace-for-education/products/classroom/",
+      "snippet": "Get started with Google Classroom, a central hub for tools and resources designed to help educators manage classrooms and enrich …"
+    },
+    {
+      "title": "Google Classroom - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.google.android.apps.classroom&hl=en-US",
+      "snippet": "Classroom makes it easy for learners and instructors to connect—inside and outside of schools. Classroom saves time and paper, …"
+    },
+    {
+      "title": "Google Classroom is made for teaching - Google for Education",
+      "url": "https://edu.google.com/intl/ALL_us/workspace-for-education/products/classroom/made-for-teaching/",
+      "snippet": "Google Classroom is where teaching and learning come together. Secure and easy to use, it is designed to help you manage, …"
+    }
+  ]
+}

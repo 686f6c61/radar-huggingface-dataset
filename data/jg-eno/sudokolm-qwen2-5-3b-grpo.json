@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "jg-eno/SudokoLM-Qwen2.5-3B-GRPO",
+  "slug": "jg-eno-sudokolm-qwen2-5-3b-grpo",
+  "author": "jg-eno",
+  "url": "https://huggingface.co/jg-eno/SudokoLM-Qwen2.5-3B-GRPO",
+  "created_at": "2026-09-19T18:25:29.000Z",
+  "updated_at": "2026-09-19T18:45:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "unsloth",
+    "grpo",
+    "trl",
+    "arxiv:2402.03300",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 490635425,
+  "storage_human": "491 MB",
+  "base_model": "unsloth/qwen2.5-3b-instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LoL Tier List",
+      "url": "https://u.gg/lol/jungle-tier-list",
+      "snippet": "The only Jungle Tier list you need for the newest patch. Always up-to-date, U.GG takes a data science approach to the best jungle …"
+    },
+    {
+      "title": "LoL Jungle Tier List 26.17 - Best Champions – METAsrc LoL",
+      "url": "https://www.metasrc.com/lol/tier-list/jungle",
+      "snippet": "LoL Jungle Tier List for Patch 26.18: best Jungle champions; ranked by win rate, pick rate, ban rate, KDA, and game volume."
+    },
+    {
+      "title": "perryjg - YouTube",
+      "url": "https://www.youtube.com/channel/UCKFyfbdmrlTERfDVmw_eJqw",
+      "snippet": "👇 PRO CHALLENGER COACHING A series showing gameplay of me playing in low and high elo to dispel the myths, excuses, and …"
+    },
+    {
+      "title": "Best Jungle Build Guides 2026 for LoL Patch 26.18 - MOBAFire",
+      "url": "https://www.mobafire.com/league-of-legends/build/jungle",
+      "snippet": "Find the best meta build guides for Jungle champions in 2026, Season 3 Patch 26.18. The MOBAFire community offers quality Jungle …"
+    },
+    {
+      "title": "LoL Jungle Tier List Patch 26.16 - Best Junglers & Jungle Meta ...",
+      "url": "https://jungler.gg/jungler-tier-list/",
+      "snippet": "Check the LoL Jungle Tier List for Patch 26.16. Find the best junglers, view the current jungle meta and master ranked SoloQ with …"
+    }
+  ]
+}

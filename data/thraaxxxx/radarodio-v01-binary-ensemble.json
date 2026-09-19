@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Thraaxxxx/radarodio-v01-binary-ensemble",
+  "slug": "thraaxxxx-radarodio-v01-binary-ensemble",
+  "author": "Thraaxxxx",
+  "url": "https://huggingface.co/Thraaxxxx/radarodio-v01-binary-ensemble",
+  "created_at": "2026-09-19T17:00:06.000Z",
+  "updated_at": "2026-09-19T17:47:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "radarodio_ensemble",
+    "text-classification",
+    "bert",
+    "portuguese",
+    "hate-speech",
+    "ensemble",
+    "radar-odio",
+    "custom_code",
+    "pt",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 675989770,
+  "parameters_human": "676.0M",
+  "storage_bytes": 5408174704,
+  "storage_human": "5.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FAQ: Falanga czujników - co widać a czego nie - od a do z",
+      "url": "https://board.pl.ogame.gameforge.com/index.php/Thread/298174-FAQ-Falanga-czujnik%C3%B3w-co-wida%C4%87-a-czego-nie-od-a-do-z/",
+      "snippet": "Jan 3, 2011 · Wielu graczy pyta o to co widać na falandze a czego nie. Kilka przykładów z opcji szukaj: falanga znowu falanga …"
+    },
+    {
+      "title": "Formy Życia - FAQ - najczęściej zadawane pytania - Forum OGame.pl",
+      "url": "https://forum.pl.ogame.gameforge.com/forum/thread/12475-formy-%C5%BCycia/",
+      "snippet": "Sep 20, 2022 · Formy Życia Jak zacząć z formami życia? Budynki Form Życia Technologie Form Życia Wzory dla Form Życia …"
+    },
+    {
+      "title": "Starcia U68 - Forum OGame.pl",
+      "url": "https://forum.pl.ogame.gameforge.com/forum/board/257-starcia-u68/",
+      "snippet": "Mar 9, 2022 · TOP-10 OGame.pl (1vs1 & ACS) +2 Ruda Feb 27th 2021 Replies 195 Views 105k"
+    },
+    {
+      "title": "OGame - najpopularniejsza gra przeglądarkowa całego uniwersum!",
+      "url": "https://pl.ogame.gameforge.com/",
+      "snippet": "OGame stanowi wrota do nowego świata: buduj swoje kosmiczne imperium, zawieraj sojusze i rozstrzygaj gwiezdne wojny."
+    },
+    {
+      "title": "FleetSave, czyli ochrona floty od podstaw - Zamknięte forum OGame.pl",
+      "url": "https://board.pl.ogame.gameforge.com/index.php/Thread/200626-FleetSave-czyli-ochrona-floty-od-podstaw/",
+      "snippet": "Jun 28, 2008 · Zamknięte forum OGame.pl » Gra i Komunikacja » Pomysły i propozycje » Poradniki i Narzędzia » FleetSave, czyli …"
+    }
+  ]
+}

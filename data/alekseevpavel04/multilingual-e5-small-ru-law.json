@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "id": "alekseevpavel04/multilingual-e5-small-ru-law",
+  "slug": "alekseevpavel04-multilingual-e5-small-ru-law",
+  "author": "alekseevpavel04",
+  "url": "https://huggingface.co/alekseevpavel04/multilingual-e5-small-ru-law",
+  "created_at": "2026-09-19T17:01:48.000Z",
+  "updated_at": "2026-09-20T08:12:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "feature-extraction",
+    "retrieval",
+    "legal",
+    "russian",
+    "distillation",
+    "sentence-similarity",
+    "ru",
+    "dataset:alekseevpavel04/ru-law-retrieval",
+    "base_model:intfloat/multilingual-e5-small",
+    "base_model:finetune:intfloat/multilingual-e5-small",
+    "license:mit",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 117653760,
+  "parameters_human": "117.7M",
+  "storage_bytes": 963426613,
+  "storage_human": "963 MB",
+  "base_model": "intfloat/multilingual-e5-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "RuLawRetrieval (test, chunk protocol)",
+      "metric": null,
+      "value": 0.8447
+    },
+    {
+      "task": null,
+      "dataset": "RuLawRetrieval (test, chunk protocol)",
+      "metric": null,
+      "value": 0.948
+    }
+  ],
+  "sources": [
+    {
+      "title": "法语的几个特殊的字母，列出来一下 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/94366850.html",
+      "snippet": "大写：À、Â、È、É、Ê、Ë、 Î 、Ï 、Ô 、Ö、 Ù、 Û 、Ç 、Œ 、Æ、 €。 小写：à、â、è、é、ê、 î 、ï、 ô、 ö、 ù、 û 、ü、 ç、 œ …"
+    },
+    {
+      "title": "梦幻西游黑风山副本抄写大全_百度知道",
+      "url": "https://zhidao.baidu.com/question/580670653.html",
+      "snippet": "梦幻西游黑风山副本抄写大全梦幻西游黑风山副本抄写大全如下：1、若菩萨欲得净土当净其心随其心净则佛土净2、法尚应舍何况非 …"
+    },
+    {
+      "title": "波浪号（～）是什么意思，正规的用法是什么？ - 知乎",
+      "url": "https://www.zhihu.com/question/19615526",
+      "snippet": "一般常见的几个波浪线型符号（常见度由高到低）（en.wikipedia.org/wiki/T）： 「~」 U+007E TILDE（最常见，英文状态下 shift 加 1 …"
+    },
+    {
+      "title": "沃罗诺伊图（Voronoi Diagram，也称作Dirichlet tessellation，狄利克 …",
+      "url": "https://www.zhihu.com/question/20317274",
+      "snippet": "沃罗诺伊图（Voronoi diagram）又叫狄利克雷镶嵌（Dirichlet tessellation）或者泰森多边形（Thiessen polygon）。沃罗诺伊图解决的 …"
+    },
+    {
+      "title": "字节、KB、MB、GB 之间的换算关系_百度知道",
+      "url": "https://zhidao.baidu.com/question/6318898.html",
+      "snippet": "字节、KB、MB、GB 之间的换算关系数据存储以10进制表示：1B（byte，字节）= 8 bit（见下文）；1KB（Kilobyte，千字 …"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "mradermacher/RPBizkit-v8-12B-i1-GGUF",
+  "slug": "mradermacher-rpbizkit-v8-12b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/RPBizkit-v8-12B-i1-GGUF",
+  "created_at": "2026-09-19T14:53:04.000Z",
+  "updated_at": "2026-09-19T16:15:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "not-for-all-audiences",
+    "en",
+    "base_model:RicardoEstep/RPBizkit-v8-12B",
+    "base_model:quantized:RicardoEstep/RPBizkit-v8-12B",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 12247782400,
+  "parameters_human": "12.25B",
+  "storage_bytes": 141939048000,
+  "storage_human": "141.9 GB",
+  "base_model": "RicardoEstep/RPBizkit-v8-12B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - MuiseDestiny/zotero-gpt: GPT Meet Zotero.",
+      "url": "https://github.com/MuiseDestiny/zotero-gpt",
+      "snippet": "🧠 Use GPT to generate reply text: support gpt-3.5-turbo and gpt-4 🏷️ Command tags: Click once to accelerate your research. 💬 Ask …"
+    },
+    {
+      "title": "GitHub - danny-avila/LibreChat: Enhanced ChatGPT Clone: Features …",
+      "url": "https://github.com/danny-avila/LibreChat",
+      "snippet": "Models: Added GPT-6 Astra for the OpenAI and Agents endpoints, with Responses API routing and tool-call support. Agent and chat …"
+    },
+    {
+      "title": "GitHub Copilotでサポートされている AI モデル",
+      "url": "https://docs.github.com/ja/copilot/reference/ai-models/supported-models",
+      "snippet": "メモ Visual Studio Codeでは、Copilot サブスクリプションで既定で使用できるモデルよりも多くのモデルを追加できます。 …"
+    },
+    {
+      "title": "Cách khôi phục đoạn chat đã xóa trên ChatGPT thành công",
+      "url": "https://cellphones.com.vn/sforum/cach-khoi-phuc-doan-chat-da-xoa-tren-chatgpt",
+      "snippet": "May 29, 2026 · Có cách khôi phục đoạn chat đã xóa trên ChatGPT không? Làm sao để lưu trữ hiệu quả các đoạn chat để dễ tìm lại? …"
+    },
+    {
+      "title": "Supported AI models in GitHub Copilot",
+      "url": "https://docs.github.com/en/copilot/reference/ai-models/supported-models",
+      "snippet": "For all of the default AI models, input prompts and output completions run through GitHub Copilot's content filters for harmful, …"
+    }
+  ]
+}

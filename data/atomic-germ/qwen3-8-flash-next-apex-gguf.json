@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Atomic-Germ/Qwen3.8-Flash-Next-APEX-GGUF",
+  "slug": "atomic-germ-qwen3-8-flash-next-apex-gguf",
+  "author": "Atomic-Germ",
+  "url": "https://huggingface.co/Atomic-Germ/Qwen3.8-Flash-Next-APEX-GGUF",
+  "created_at": "2026-09-19T15:08:05.000Z",
+  "updated_at": "2026-09-19T20:38:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen4_exp",
+    "quantized",
+    "apex",
+    "moe",
+    "qwen",
+    "guanaco",
+    "qwen3.8",
+    "nvme streaming",
+    "image-text-to-text",
+    "conversational",
+    "base_model:mudler/Qwen3.8-Flash-Next-APEX-GGUF",
+    "base_model:quantized:mudler/Qwen3.8-Flash-Next-APEX-GGUF",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "4-bit",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 176943899520,
+  "parameters_human": "176.94B",
+  "storage_bytes": 209511256296,
+  "storage_human": "209.5 GB",
+  "base_model": "mudler/Qwen3.8-Flash-Next-APEX-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "esseJ：我讲个有点被忽略的角度。 90 后因为是 digital native 的第一代人，我们的生命体验和身体本身，是被计算机技术和数字尺度 …"
+    },
+    {
+      "title": "如何评价 office plus 这个插件？ - 知乎",
+      "url": "https://www.zhihu.com/question/1897947157379647166",
+      "snippet": "我明明用的是电脑自带的 OEM 正版 Office 2019，在当时买电脑时直接给微软付过费的。为什么却有小“钻石”图标暗示我付费，一股浓 …"
+    },
+    {
+      "title": "如何彻底关闭edge这个流氓软件在后台自启动？ - 知乎",
+      "url": "https://www.zhihu.com/question/1927863148146320421",
+      "snippet": "Jul 13, 2025 · 关闭 Microsoft Edge 后继续运行后台扩展和应用、在可用时使用图形加速和启动增强全都关闭了，没用。服务…"
+    },
+    {
+      "title": "知乎 - 知乎",
+      "url": "https://www.zhihu.com/selection/",
+      "snippet": "知乎是一个中文互联网高质量问答社区和创作者聚集的原创内容平台，提供知识共享、互动交流和个人成长机会。"
+    }
+  ]
+}

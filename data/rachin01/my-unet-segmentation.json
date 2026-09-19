@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "rachin01/my-unet-segmentation",
+  "slug": "rachin01-my-unet-segmentation",
+  "author": "rachin01",
+  "url": "https://huggingface.co/rachin01/my-unet-segmentation",
+  "created_at": "2026-09-19T13:07:08.000Z",
+  "updated_at": "2026-09-19T13:11:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 124266919,
+  "storage_human": "124 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Haukilahti – Wikipedia",
+      "url": "https://fi.wikipedia.org/wiki/Haukilahti",
+      "snippet": "Haukilahti on saanut nimensä ilmesesti hauenkalastukseen käytetyn Gäddviken -nimisen lahden mukaan. Kylän vanhoja …"
+    },
+    {
+      "title": "Myytävät asunnot Haukilahti, Espoo: 50 kpl - Etuovi.com",
+      "url": "https://www.etuovi.com/myytavat-asunnot/espoo/haukilahti",
+      "snippet": "Etuovi.com:issa on juuri nyt 50 kohdetta rajauksella Myytävät asunnot alueella Haukilahti, Espoo. Tee helppo haku ja löydä uusi kotisi …"
+    },
+    {
+      "title": "Haukilahti - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Haukilahti",
+      "snippet": "The area of Haukilahti is about 3.2 square kilometres. [1] Haukilahti is located between the districts of Westend in the east, Matinkylä …"
+    },
+    {
+      "title": "Myytävät asunnot: Haukilahti, Espoo 57 kpl - Oikotie, Suomen ...",
+      "url": "https://asunnot.oikotie.fi/myytavat-asunnot/espoo/haukilahti",
+      "snippet": "Haukilahti on uimarantoja, kahviloita, merimaisemaa ja ravintoloita. Se on myös varustettu hyvillä palveluilla, omalla …"
+    },
+    {
+      "title": "Haukilahti - Wikiwand",
+      "url": "https://www.wikiwand.com/fi/Haukilahti",
+      "snippet": "Haukilahti on Espoon kaupunginosa, joka kuuluu Suur-Tapiolan suurpiiriin. Kaupunginosa sijaitsee Suomenlahden rannalla, ja sen …"
+    }
+  ]
+}

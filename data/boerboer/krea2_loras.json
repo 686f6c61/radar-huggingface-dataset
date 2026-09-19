@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Boerboer/Krea2_LoRAs",
+  "slug": "boerboer-krea2_loras",
+  "author": "Boerboer",
+  "url": "https://huggingface.co/Boerboer/Krea2_LoRAs",
+  "created_at": "2026-09-19T19:06:54.000Z",
+  "updated_at": "2026-09-19T19:07:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 57194632,
+  "storage_human": "57 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google mail",
+      "url": "https://mail.google.com/mail?hl=de",
+      "snippet": "Hier sollte eine Beschreibung angezeigt werden, diese Seite lässt dies jedoch nicht zu."
+    },
+    {
+      "title": "Gmail - Google Accounts",
+      "url": "https://accounts.google.com/InteractiveLogin?service=mail",
+      "snippet": "Not your computer? Use a private browsing window to sign in. Learn more about using Guest mode. Gmail is email that’s intuitive, …"
+    },
+    {
+      "title": "Gmail - Google Accounts",
+      "url": "https://accounts.google.com/login?service=mail&hl=de",
+      "snippet": "Nicht Ihr Computer? Dann können Sie für die Anmeldung ein Fenster zum privaten Surfen öffnen. Weitere Informationen zur …"
+    },
+    {
+      "title": "Anmelden – Google Konten",
+      "url": "https://accounts.google.com/login?hl=de",
+      "snippet": "Mit Google-Konto anmelden. E-Mail-Adresse vergessen? Nicht Ihr Computer? Dann können Sie für die Anmeldung ein Fenster zum …"
+    },
+    {
+      "title": "Sign in - Google Accounts",
+      "url": "https://accounts.google.com/ServiceLogin",
+      "snippet": "Forgot email? Not your computer? Use a private browsing window to sign in. Learn more about using Guest mode."
+    }
+  ]
+}

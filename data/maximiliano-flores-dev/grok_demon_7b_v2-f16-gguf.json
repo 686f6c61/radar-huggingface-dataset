@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Maximiliano-Flores-Dev/grok_demon_7b_v2-F16-GGUF",
+  "slug": "maximiliano-flores-dev-grok_demon_7b_v2-f16-gguf",
+  "author": "Maximiliano-Flores-Dev",
+  "url": "https://huggingface.co/Maximiliano-Flores-Dev/grok_demon_7b_v2-F16-GGUF",
+  "created_at": "2026-09-19T16:48:32.000Z",
+  "updated_at": "2026-09-19T16:48:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "trl",
+    "uncensored",
+    "llama-cpp",
+    "gguf-my-lora",
+    "en",
+    "es",
+    "base_model:Maximiliano-Flores-Dev/grok_demon_7b_v2",
+    "base_model:quantized:Maximiliano-Flores-Dev/grok_demon_7b_v2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 40370176,
+  "parameters_human": "40.4M",
+  "storage_bytes": 80767808,
+  "storage_human": "81 MB",
+  "base_model": "Maximiliano-Flores-Dev/grok_demon_7b_v2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sázková kancelář Tipsport",
+      "url": "https://www.tipsport.cz/",
+      "snippet": "Sázková kancelář Tipsport a.s. je jedničkou od roku 1991. Vstupte do největší komunity. Pro nováčky 1 000 Kč za registraci + vstupní …"
+    },
+    {
+      "title": "Tipsport | Největší komunita sázkařů | Kurzové sázky a casino",
+      "url": "https://www.tipsport.cz/hledani",
+      "snippet": "Platební metody Stáhněte si mobilní aplikaci Tipsport Sázejte pohodlně s naší aplikací, ať jste kdekoliv."
+    },
+    {
+      "title": "Tipsport | Najväčšia komunita tipérov | Kurzové stávky a online ...",
+      "url": "https://www.tipsport.sk/",
+      "snippet": "Tipujte online, sledujte športové prenosy na TV Tipsport, bavte sa v diskusnom fóre. Pre nových hráčov 20 € zadarmo!"
+    },
+    {
+      "title": "Kurzová ponuka | Tipsport",
+      "url": "https://www.tipsport.sk/kurzy",
+      "snippet": "Tipujte online a získajte prístup k tisícom živých prenosov na TV Tipsport. Pre nováčikov 20 € zadarmo a bonus až 4 000 €."
+    },
+    {
+      "title": "TV Tipsport | Sportovní přenosy zdarma",
+      "url": "https://tv.tipsport.cz/",
+      "snippet": "Živé sportovní přenosy a záznamy Portugalský ligový Pohár 27. 10. 21:15"
+    }
+  ]
+}

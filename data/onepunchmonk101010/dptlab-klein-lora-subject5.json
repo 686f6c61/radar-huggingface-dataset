@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "OnePunchMonk101010/dptlab-klein-lora-subject5",
+  "slug": "onepunchmonk101010-dptlab-klein-lora-subject5",
+  "author": "OnePunchMonk101010",
+  "url": "https://huggingface.co/OnePunchMonk101010/dptlab-klein-lora-subject5",
+  "created_at": "2026-09-19T17:36:09.000Z",
+  "updated_at": "2026-09-19T17:36:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "dptlab",
+    "base_model:black-forest-labs/FLUX.2-klein-4B",
+    "base_model:adapter:black-forest-labs/FLUX.2-klein-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 55271736,
+  "storage_human": "55 MB",
+  "base_model": "black-forest-labs/FLUX.2-klein-4B",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "μεταφραση - Μπλα Μπλα - Insomnia.gr",
+      "url": "https://www.insomnia.gr/forums/topic/300354-%CE%BC%CE%B5%CF%84%CE%B1%CF%86%CF%81%CE%B1%CF%83%CE%B7/",
+      "snippet": "Jul 2, 2009 · μηπως μπορεί να μ μεταφράσει κάποιος την παρακάτω πρόταση? the status from server mismatches expected …"
+    },
+    {
+      "title": "Project - Ελληνική Μετάφραση του Grim Fandango (Διαθέσιμο το …",
+      "url": "https://www.insomnia.gr/forums/topic/138753-project-%CE%B5%CE%BB%CE%BB%CE%B7%CE%BD%CE%B9%CE%BA%CE%AE-%CE%BC%CE%B5%CF%84%CE%AC%CF%86%CF%81%CE%B1%CF%83%CE%B7-%CF%84%CE%BF%CF%85-grim-fandango-%CE%B4%CE%B9%CE%B1%CE%B8%CE%AD%CF%83%CE%B9%CE%BC%CE%BF-%CF%84%CE%BF-patch-v10b/",
+      "snippet": "Apr 5, 2006 · Project - Ελληνική Μετάφραση του Grim Fandango (Διαθέσιμο το patch v1.0b)"
+    },
+    {
+      "title": "Μεταπτυχιακό στη μετάφραση",
+      "url": "https://www.translatum.gr/forum/index.php?topic=28500.0",
+      "snippet": "Oct 13, 2008 · Μεταπτυχιακό στη μετάφραση Γεια σου, Λία, και καλώς ήρθες στο Translatum. Βάζε, σε παρακαλώ ελληνικό …"
+    },
+    {
+      "title": "Ίδρυμα Κοινωνικών Ασφαλίσεων (ΙΚΑ) → Social Insurance Institute ...",
+      "url": "https://www.translatum.gr/forum/index.php?topic=13508.0",
+      "snippet": "Nov 21, 2008 · Προσωπικά, ως πιο σωστή μετάφραση του ΙΚΑ θεωρώ το \"Social Security Institute\". Όμως, στο site του Ιδρύματος …"
+    },
+    {
+      "title": "Wind of Change [μεταφραση] - Mουσική - Insomnia.gr",
+      "url": "https://www.insomnia.gr/forums/topic/338629-wind-of-change-%CE%BC%CE%B5%CF%84%CE%B1%CF%86%CF%81%CE%B1%CF%83%CE%B7/",
+      "snippet": "Mar 3, 2010 · Μπορειτε παρακαλω να μου μεταφρασετε το τραγουδι γιατι το χρειαζομαι για μια εργασια ..."
+    }
+  ]
+}

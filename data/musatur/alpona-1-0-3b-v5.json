@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "musatur/Alpona-1.0-3B-v5",
+  "slug": "musatur-alpona-1-0-3b-v5",
+  "author": "musatur",
+  "url": "https://huggingface.co/musatur/Alpona-1.0-3B-v5",
+  "created_at": "2026-09-19T15:09:57.000Z",
+  "updated_at": "2026-09-19T15:23:35.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "nanbeige",
+    "text-generation",
+    "verilog",
+    "systemverilog",
+    "rtl",
+    "hardware-design",
+    "eda",
+    "code-generation",
+    "conversational",
+    "custom_code",
+    "en",
+    "base_model:Nanbeige/Nanbeige4.2-3B",
+    "base_model:finetune:Nanbeige/Nanbeige4.2-3B",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4169800704,
+  "parameters_human": "4.17B",
+  "storage_bytes": 8360858077,
+  "storage_human": "8.4 GB",
+  "base_model": "Nanbeige/Nanbeige4.2-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lablue Login",
+      "url": "https://www.lablue.de/login",
+      "snippet": "Loggen Sie sich ein, um auf Ihr lablue Konto zuzugreifen. Erleben Sie einen sicheren und unkomplizierten Login bei lablue mit …"
+    },
+    {
+      "title": "lablue Partnersuche - Jetzt kostenlos Singles finden",
+      "url": "https://www.lablue.de/",
+      "snippet": "Die kostenlose Anmeldung zur Basis-Mitgliedschaft genügt zum Flirten und kostenlos chatten. Alle wichtigen Basis-Funktionen sind …"
+    },
+    {
+      "title": "lablue Partnersuche - Anmeldung",
+      "url": "https://www.lablue.de/anmeldung",
+      "snippet": "Jetzt Profil in nur 2 Minuten erstellen. Mit der Anmeldung gelten unsere AGB und unsere Datenschutzerklärung. mehr als 500.000 …"
+    },
+    {
+      "title": "lablue Partnersuche kostenlos für Singles",
+      "url": "https://www.lablue.de/partnersuche",
+      "snippet": "Im Vergleich zu kostenpflichtigen Partnervermittlungen bietet kostenlose Partnersuche bei lablue eine breitere Auswahl an …"
+    },
+    {
+      "title": "Singles in Ihrer Region: lablue Partnersuche in Deutschland",
+      "url": "https://www.lablue.de/singles",
+      "snippet": "Ob in den pulsierenden Metropolen oder in den idyllischen ländlichen Regionen - hier sind die besten Orte, um Singles in jedem …"
+    }
+  ]
+}

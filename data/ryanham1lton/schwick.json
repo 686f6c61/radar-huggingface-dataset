@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/Schwick",
+  "slug": "ryanham1lton-schwick",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/Schwick",
+  "created_at": "2026-09-19T15:58:37.000Z",
+  "updated_at": "2026-09-19T15:59:51.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 130247384,
+  "storage_human": "130 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Offerte erstellen? So schreibst du eine Offerte (+ Vorlage) - bexio",
+      "url": "https://www.bexio.com/de-CH/offerte",
+      "snippet": "Muster und Vorlage). Du möchtest Offerten noch einfacher und schneller schreiben? Nutze einfach die Business Software bexio, um …"
+    },
+    {
+      "title": "Offerify · Offerten schreiben, die Aufträge bringen",
+      "url": "https://www.offerify.ch/",
+      "snippet": "Offerify ist ein Schweizer Tool, mit dem du Offerten schreibst und verschickst. Du wählst eine Vorlage, trägst deine Positionen ein …"
+    },
+    {
+      "title": "Offerte erstellen & schreiben Schweiz — Gratis Vorlage & PDF",
+      "url": "https://erplight.ch/offerte-erstellen-schweiz",
+      "snippet": "Jan 31, 2026 · Offerte Vorlage Schweiz — kostenlos als PDF: Unser Generator erstellt professionelle Offerten mit allen …"
+    },
+    {
+      "title": "Offerte Vorlage Schweiz 2026: Excel gratis | Pfeffersack",
+      "url": "https://pfeffersack.ch/vorlagen/offerte-vorlage",
+      "snippet": "Unsere kostenlose Offert-Vorlage für die Schweiz enthält alle wichtigen Elemente: Absender- und Empfängeradresse, Offert …"
+    },
+    {
+      "title": "Offerten Software Schweiz 2026: Offerte online | Pfeffersack",
+      "url": "https://pfeffersack.ch/loesung/offerten",
+      "snippet": "Offerten-Software Schweiz: Offerte in Minuten erstellen, als PDF senden, online annehmen lassen und per Klick in die QR-Rechnung …"
+    }
+  ]
+}

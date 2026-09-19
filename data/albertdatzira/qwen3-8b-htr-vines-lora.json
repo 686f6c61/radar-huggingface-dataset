@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "albertdatzira/qwen3-8b-htr-vines-lora",
+  "slug": "albertdatzira-qwen3-8b-htr-vines-lora",
+  "author": "albertdatzira",
+  "url": "https://huggingface.co/albertdatzira/qwen3-8b-htr-vines-lora",
+  "created_at": "2026-09-19T13:00:50.000Z",
+  "updated_at": "2026-09-19T13:04:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "es",
+    "fr",
+    "ca"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "htr",
+    "post-correction",
+    "handwritten-text-recognition",
+    "lora",
+    "digital-humanities",
+    "historical-manuscripts",
+    "text-generation",
+    "conversational",
+    "es",
+    "fr",
+    "ca",
+    "dataset:custom",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:adapter:Qwen/Qwen3-8B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 186078186,
+  "storage_human": "186 MB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Inloggen op Proximus Webmail",
+      "url": "https://nl.forum.proximus.be/myproximus-app-of-website-46/inloggen-op-proximus-webmail-61841",
+      "snippet": "Jan 15, 2025 · Goede middag, wanneer ik wil inloggen (op pc / Windows 11) bij Proximus webmail …"
+    },
+    {
+      "title": "Sluit aan bij onze community | Proximus Forum",
+      "url": "https://nl.forum.proximus.be/",
+      "snippet": "Deel tips en tricks met andere Proximus-klanten. Heb je een vraag? De community helpt je graag verder."
+    },
+    {
+      "title": "Inloggen bij Gmail - Computer - Gmail Help - Google Help",
+      "url": "https://support.google.com/mail/answer/8494?hl=nl-hc&co=GENIE.Platform%3DDesktop",
+      "snippet": "Inloggen bij Gmail Als je Gmail wilt openen, kun je inloggen vanaf een computer of je account toevoegen aan de Gmail-app op je …"
+    },
+    {
+      "title": "hoe webmail als snelkoppeling op bureablad krijgen - De Netweters",
+      "url": "https://www.netweters.be/t5/E-mail/hoe-webmail-als-snelkoppeling-op-bureablad-krijgen/td-p/10814",
+      "snippet": "Oct 18, 2015 · Ik heb webmail, maar moet steeds inloggen via google, kan dit niet eenvoudiger!!! bvb door een snelkoppeling op mijn …"
+    },
+    {
+      "title": "Probleem met versturen e-mails (SMTP) - De Netweters",
+      "url": "https://www.netweters.be/t5/E-mail/Probleem-met-versturen-e-mails-SMTP/td-p/6674",
+      "snippet": "May 27, 2015 · Op mijn iPhone geeft hij telkens de melding: \"E-MAIL VERSTUREN MISLUKT - De gebruikersnaam of het …"
+    }
+  ]
+}

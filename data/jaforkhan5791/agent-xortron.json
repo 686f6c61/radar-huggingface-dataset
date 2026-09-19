@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "jaforkhan5791/Agent.Xortron",
+  "slug": "jaforkhan5791-agent-xortron",
+  "author": "jaforkhan5791",
+  "url": "https://huggingface.co/jaforkhan5791/Agent.Xortron",
+  "created_at": "2026-09-19T16:22:22.000Z",
+  "updated_at": "2026-09-19T16:22:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "uncensored",
+    "heretic",
+    "xortron",
+    "conversational",
+    "en",
+    "dataset:DJLougen/hermes-agent-traces-filtered",
+    "dataset:darkc0de/Xortron.Config.Dataset.New.2026",
+    "base_model:darkc0de/XORTRON.CriminalComputing.2026.27B.NEXT",
+    "base_model:finetune:darkc0de/XORTRON.CriminalComputing.2026.27B.NEXT",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27356728560,
+  "parameters_human": "27.36B",
+  "storage_bytes": 54733597487,
+  "storage_human": "54.7 GB",
+  "base_model": "darkc0de/XORTRON.CriminalComputing.2026.27B.NEXT",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JDIH Mesuji",
+      "url": "https://jdih.mesujikab.go.id/",
+      "snippet": "Selamat datang di portal JDIH Kabupaten Mesuji. Kami berkomitmen untuk terus memberikan pelayanan informasi hukum yang …"
+    },
+    {
+      "title": "Kemenag Mesuji Gelar Sosialisasi Emis dan Siaga 4 0 untuk Guru PAI …",
+      "url": "https://apps.lmtmag.com/sites/mL7176/603317/stiga__park_16_hst_manual.pdf",
+      "snippet": "Kemenag Mesuji Gelar Sosialisasi Emis dan Siaga 4 0 untuk Guru PAI May 15 2025 Mesuji Humas Kantor Kementerian Agama …"
+    },
+    {
+      "title": "Dua Perda Inisiatif DPRD Mesuji Disahkan, Perda Pancasila dan Perda ...",
+      "url": "https://lampung.tribunnews.com/lampung/1218427/dua-perda-inisiatif-dprd-mesuji-disahkan-perda-pancasila-dan-perda-pesantren",
+      "snippet": "3 days ago · Ketua Badan Pembentukan Peraturan Daerah (BAPEMPERDA) DPRD Kabupaten Mesuji, Desta Ardiyanto, …"
+    },
+    {
+      "title": "Peraturan Daerah (Perda) Kabupaten Mesuji Nomor 2 Tahun 2025",
+      "url": "https://peraturan.bpk.go.id/Details/326116/perda-kab-mesuji-no-2-tahun-2025",
+      "snippet": "Peraturan Daerah (Perda) ini mulai berlaku pada tanggal 02 Juni 2025. Database Peraturan BPK merupakan bagian dari …"
+    },
+    {
+      "title": "DPRD Mesuji Sahkan Perda Pancasila dan Perda Pesantren untuk …",
+      "url": "https://www.gesuri.id/pemerintahan/dprd-mesuji-sahkan-perda-pancasila-dan-perda-pesantren-untuk-perkuat-karakter-serta-ekonomi-daerah-b2qbkZbhWF",
+      "snippet": "3 days ago · Mesuji, Gesuri.id — Dewan Perwakilan Rakyat Daerah (DPRD) Kabupaten Mesuji resmi mengesahkan dua Peraturan …"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "belumind/goby-1-ie-vi",
+  "slug": "belumind-goby-1-ie-vi",
+  "author": "belumind",
+  "url": "https://huggingface.co/belumind/goby-1-ie-vi",
+  "created_at": "2026-09-19T17:17:12.000Z",
+  "updated_at": "2026-09-20T18:04:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "gliner",
+  "languages": [
+    "vi",
+    "en"
+  ],
+  "tags": [
+    "gliner",
+    "pytorch",
+    "safetensors",
+    "relation-extraction",
+    "information-extraction",
+    "vietnamese",
+    "zero-shot",
+    "token-classification",
+    "vi",
+    "en",
+    "base_model:knowledgator/gliner-relex-large-v1.0",
+    "base_model:finetune:knowledgator/gliner-relex-large-v1.0",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 466576896,
+  "parameters_human": "466.6M",
+  "storage_bytes": 3732831583,
+  "storage_human": "3.7 GB",
+  "base_model": "knowledgator/gliner-relex-large-v1.0",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - 0xk1h0/ChatGPT_DAN: ChatGPT DAN, Jailbreaks prompt",
+      "url": "https://github.com/0xk1h0/ChatGPT_DAN",
+      "snippet": "ChatGPT DAN, Jailbreaks prompt. Contribute to 0xk1h0/ChatGPT_DAN development by creating an account on GitHub."
+    },
+    {
+      "title": "Download GitHub Desktop",
+      "url": "https://desktop.github.com/download/",
+      "snippet": "Simple collaboration from your desktop Download GitHub Desktop Focus on what matters instead of fighting with Git. Whether you're …"
+    },
+    {
+      "title": "ChatGPT - Reddit",
+      "url": "https://www.reddit.com/r/ChatGPT/top/",
+      "snippet": "Dec 1, 2022 · r/ChatGPT: Subreddit to discuss about ChatGPT and AI. Not affiliated with OpenAI."
+    },
+    {
+      "title": "ChatGPT Plus 正式恢复五小时使用上限，Codex 长任务体验会受影响 …",
+      "url": "https://www.zhihu.com/question/2075903044676315058",
+      "snippet": "可以看看公众号老冯云数怎么用7-10个20x产生巨大生产力的， 《OPC一个月烧1000刀订阅，能有多少产出？ 》 的时候是7个， …"
+    },
+    {
+      "title": "chatgpt-api · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/chatgpt-api",
+      "snippet": "Sep 10, 2026 · ChatGPT API is a RESTful API that provides a simple interface to interact with OpenAI’s GPT-3 and GPT-Neo …"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "kishida/jwenv-1.7b-poc-gguf",
+  "slug": "kishida-jwenv-1-7b-poc-gguf",
+  "author": "kishida",
+  "url": "https://huggingface.co/kishida/jwenv-1.7b-poc-gguf",
+  "created_at": "2026-09-19T16:21:58.000Z",
+  "updated_at": "2026-09-20T15:04:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:quantized:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 4776261056,
+  "storage_human": "4.8 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Seznam – najdu tam, co neznám",
+      "url": "https://www.seznam.cz/",
+      "snippet": "O pocitech se příliš nemluvilo a odpočinek přišel na řadu, až když byly hotové všechny povinnosti. Možná i proto dnes tolik z nás …"
+    },
+    {
+      "title": "Seznam – najdu tam, co neznám",
+      "url": "https://www.seznam.cz/500",
+      "snippet": "Jejda, tak tohle se nepovedlo. Pracujeme na opravě."
+    },
+    {
+      "title": "Seznam – najdu tam, co neznám",
+      "url": "https://www.seznam.cz/404",
+      "snippet": "Jejda, tahle adresa neexistuje."
+    },
+    {
+      "title": "Seznam Zprávy – Seznam.cz",
+      "url": "https://www.seznam.cz/zdroj/286-seznam-zpravy",
+      "snippet": "Pátrání zatím nepřineslo výsledek, Policie ČR ale postupně získává další informace, které mohou pomoci její zmizení objasnit. Nově …"
+    },
+    {
+      "title": "Seznam Zprávy",
+      "url": "https://www.seznamzpravy.cz/",
+      "snippet": "Seznam Zprávy zjistily, proč detektivové prohledali v úterý kanceláře na radnici v Nymburce. Pracují s podezřením, že starosta …"
+    }
+  ]
+}

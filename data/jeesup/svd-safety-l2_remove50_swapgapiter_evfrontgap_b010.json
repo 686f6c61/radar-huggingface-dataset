@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l2_remove50_swapgapiter_evfrontgap_b010",
+  "slug": "jeesup-svd-safety-l2_remove50_swapgapiter_evfrontgap_b010",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l2_remove50_swapgapiter_evfrontgap_b010",
+  "created_at": "2026-09-19T15:26:15.000Z",
+  "updated_at": "2026-09-19T15:42:01.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama2",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-2-7b-chat-hf",
+    "base_model:finetune:meta-llama/Llama-2-7b-chat-hf",
+    "license:llama2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13477364771,
+  "storage_human": "13.5 GB",
+  "base_model": "meta-llama/Llama-2-7b-chat-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Record, Edit, and Share Your Game Clips & Gameplay - Medal",
+      "url": "https://medal.tv/",
+      "snippet": "Medal is the best way to record, edit, and share gaming clips and videos for free on PC. Download Medal today."
+    },
+    {
+      "title": "Download Medal - Free Game Recording Software | Medal.tv",
+      "url": "https://medal.tv/download",
+      "snippet": "Download Medal for free to start recording, editing, and sharing your best gaming moments on PC."
+    },
+    {
+      "title": "Get 3 Skeleton Spawners on DonutSMP | Medal.tv",
+      "url": "https://quests.medal.tv/donutsmp",
+      "snippet": "Use Medal to clip and record your favorite moments on DonutSMP and receive 3 Skeleton Spawners"
+    },
+    {
+      "title": "Getting Started With Medal, How to Install Guide : Medal Support",
+      "url": "https://support.medal.tv/support/solutions/articles/48000973747-how-to-install-medal-for-windows",
+      "snippet": "Sep 24, 2025 · Welcome to Medal TV Support! Stay up to date with updates and reach out to us for your support needs!"
+    },
+    {
+      "title": "Connect Roblox and Medal : Medal Support",
+      "url": "https://support.medal.tv/support/solutions/articles/48001263806/",
+      "snippet": "Welcome to Medal TV Support! Stay up to date with updates and reach out to us for your support needs!"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "cmeister/boundary-markers-en-d12-bnd_wpd_caps-bpe",
+  "slug": "cmeister-boundary-markers-en-d12-bnd_wpd_caps-bpe",
+  "author": "cmeister",
+  "url": "https://huggingface.co/cmeister/boundary-markers-en-d12-bnd_wpd_caps-bpe",
+  "created_at": "2026-09-19T19:24:57.000Z",
+  "updated_at": "2026-09-19T19:25:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "tokenization",
+    "boundary-markers",
+    "nanochat",
+    "en",
+    "arxiv:2608.08847",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2459088113,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Twitch.tv - Official Site",
+      "url": "https://www.twitch.tv/",
+      "snippet": "Twitch is the world`s leading video platform and community for gamers."
+    },
+    {
+      "title": "Twitch",
+      "url": "https://www.twitch.tv/?lang=de-DE",
+      "snippet": "Twitch ist ein interaktiver Livestreaming-Dienst für eine große Bandbreite an Inhalten wie Games, Entertainment, Sport, Musik und …"
+    },
+    {
+      "title": "Twitch",
+      "url": "http://app.twitch.tv/",
+      "snippet": "Twitch App for iOS Watch games you love, follow new channels, and chat with other players anytime, anywhere."
+    },
+    {
+      "title": "Twitch",
+      "url": "https://www.twitch.tv/*/",
+      "snippet": "Twitch is a platform for live streaming, offering diverse content from gaming to music and more, connecting communities worldwide."
+    },
+    {
+      "title": "All Categories - Twitch",
+      "url": "https://www.twitch.tv/directory",
+      "snippet": "Watch live streams and the best highlights across Twitch categories like Just Chatting, Fortnite, Counter-Strike, League of Legends, …"
+    }
+  ]
+}

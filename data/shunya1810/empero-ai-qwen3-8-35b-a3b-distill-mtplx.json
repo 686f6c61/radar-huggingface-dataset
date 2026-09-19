@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "shunya1810/empero-ai-Qwen3.8-35B-A3B-Distill-MTPLX",
+  "slug": "shunya1810-empero-ai-qwen3-8-35b-a3b-distill-mtplx",
+  "author": "shunya1810",
+  "url": "https://huggingface.co/shunya1810/empero-ai-Qwen3.8-35B-A3B-Distill-MTPLX",
+  "created_at": "2026-09-19T16:38:01.000Z",
+  "updated_at": "2026-09-19T16:55:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107180016,
+  "parameters_human": "35.11B",
+  "storage_bytes": 22119630240,
+  "storage_human": "22.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Моделирование спекания с помощью теории пластичности",
+      "url": "https://library.bmstu.ru/DigitalResources/Download/81419",
+      "snippet": "Прессование в однородном состоянии. Сначала проверим, как теория описывает процесс уплотнения порошка, засыпанного …"
+    },
+    {
+      "title": "Моделирование спекания с помощью теории пластичности",
+      "url": "https://cyberleninka.ru/article/n/modelirovanie-spekaniya-s-pomoschyu-teorii-plastichnosti",
+      "snippet": "Предложен вариант теории упругопластического течения пористой среды для расчета спекания порошковых композитов. …"
+    },
+    {
+      "title": "Моделирование спекания с помощью теории пластичности",
+      "url": "https://www.researchgate.net/profile/N-Burago/publication/290233431_Sintering_Simulation_by_Means_of_the_Plasticity_Theory/links/5783e26308ae37d3af6c12e7/Sintering-Simulation-by-Means-of-the-Plasticity-Theory.pdf",
+      "snippet": "Прессование в однородном состоянии. Сначала проверим, как теория описывает процесс уплотнения порошка ..."
+    },
+    {
+      "title": "Теория Пластичности",
+      "url": "https://www.pantocrator.narod.ru/Contents_ThPlast.pdf",
+      "snippet": "Современное состояние теории пластичности 1.10. Деформационная теория пластичности 1.11. Теория пластического …"
+    },
+    {
+      "title": "Модели прочности и пластичности | Спецкурсы и спецсеминары …",
+      "url": "https://scs.math.msu.ru/ru/node/17971",
+      "snippet": "[Кафедра теории пластичности] Семестр Осень Тип спецкурса Спецкурс по выбору студента Учебный год 2026/27 Список …"
+    }
+  ]
+}

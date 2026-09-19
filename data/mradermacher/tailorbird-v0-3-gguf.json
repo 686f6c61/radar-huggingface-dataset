@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "mradermacher/tailorbird-v0.3-GGUF",
+  "slug": "mradermacher-tailorbird-v0-3-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/tailorbird-v0.3-GGUF",
+  "created_at": "2026-09-19T17:40:18.000Z",
+  "updated_at": "2026-09-19T17:52:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "minicpm",
+    "unsloth",
+    "peft",
+    "sft",
+    "qlora",
+    "conversation-memory",
+    "structured-output",
+    "en",
+    "base_model:vcerny/tailorbird-v0.3",
+    "base_model:quantized:vcerny/tailorbird-v0.3",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 22763615232,
+  "storage_human": "22.8 GB",
+  "base_model": "vcerny/tailorbird-v0.3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cambio titularidad facturas - Comunidad Leroy Merlin",
+      "url": "https://comunidad.leroymerlin.es/app/736/channel/foro-2210/details/cambio-titularidad-facturas-42821792",
+      "snippet": "Apr 11, 2026 · Tengo una cuenta a mi nombre con Uds, me he dado cuenta que necesitaria facturas de las compras a nombre de mi …"
+    },
+    {
+      "title": "Inscripción talleres - Comunidad Leroy Merlin",
+      "url": "https://comunidad.leroymerlin.es/app/736/channel/talleres-2212",
+      "snippet": "1 day ago · Filtra por tu tienda favorita, elige el taller que más te interese e inscríbete. ¡Te esperamos en nuestros talleres impartidos …"
+    },
+    {
+      "title": "Artisan chez leroy merlin - 17 messages - ForumConstruire.com",
+      "url": "https://www.forumconstruire.com/construire/topic-19760.php",
+      "snippet": "Apr 6, 2006 · Artisan chez leroy merlin Ce sujet comporte 17 messages et a été affiché 15.398 fois Nouveau sujet Répondre Page 1 …"
+    },
+    {
+      "title": "Carte de fidélité Leroy Merlin - ForumConstruire.com",
+      "url": "https://www.forumconstruire.com/guides/guide-carte-fidelite/carte-fidelite-leroy-merlin.php",
+      "snippet": "Leroy Merlin reprend votre marchandise et vous rembourse sans ticket de caisse 12 mois suivant votre ou vos achats. Le magazine « …"
+    },
+    {
+      "title": "Accès espace client impossible - Leroy Merlin",
+      "url": "https://communaute.leroymerlin.fr/app/629/channel/forum-d-entraide-1263/details/acces-espace-client-impossible-31452279",
+      "snippet": "May 2, 2020 · Bonjour, Depuis 3jours il m'est impossible de me connecter à mon espace client. J'ai désinstallé et réinstallé …"
+    }
+  ]
+}

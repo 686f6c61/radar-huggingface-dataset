@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "sanghyeonan/mybrain1",
+  "slug": "sanghyeonan-mybrain1",
+  "author": "sanghyeonan",
+  "url": "https://huggingface.co/sanghyeonan/mybrain1",
+  "created_at": "2026-09-19T19:43:55.000Z",
+  "updated_at": "2026-09-19T19:44:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19989343,
+  "storage_human": "20 MB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Spotify - Download",
+      "url": "https://spotify.en.softonic.com/",
+      "snippet": "Jan 2, 1993 · Spotify for Windows features you should know Spotify for Windows is a desktop application offered by Spotify, the …"
+    },
+    {
+      "title": "Spotify for Mac - Download",
+      "url": "https://spotify.en.softonic.com/mac",
+      "snippet": "Jan 2, 1996 · Spotify has a user-friendly design, offering a clean, intuitive interface that makes it easy for users to find artists, songs, …"
+    },
+    {
+      "title": "Download Spotify for Mac - Free - older version",
+      "url": "https://spotify.en.softonic.com/mac/versions",
+      "snippet": "Jan 2, 1995 · Spotify - Older versions. Older versions of Spotify Spotify for Mac Free"
+    },
+    {
+      "title": "Spotify Music for Android - Download",
+      "url": "https://spotify.en.softonic.com/android",
+      "snippet": "Sep 10, 2026 · What sets Spotify apart? Spotify isn’t the only music streaming service around, so what makes it so popular? For …"
+    },
+    {
+      "title": "Download Spotify - Free - latest version",
+      "url": "https://spotify.en.softonic.com/download",
+      "snippet": "Jan 2, 1993 · Download Spotify for Windows now from Softonic: 100% safe and virus free. More than 19352 downloads this month. …"
+    }
+  ]
+}

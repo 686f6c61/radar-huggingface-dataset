@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "MahmoudIbrahim/Qwen3-TTS-12Hz-0.6B-ar",
+  "slug": "mahmoudibrahim-qwen3-tts-12hz-0-6b-ar",
+  "author": "MahmoudIbrahim",
+  "url": "https://huggingface.co/MahmoudIbrahim/Qwen3-TTS-12Hz-0.6B-ar",
+  "created_at": "2026-09-19T12:50:59.000Z",
+  "updated_at": "2026-09-19T12:57:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "zh",
+    "en",
+    "ja",
+    "ko",
+    "de",
+    "fr",
+    "ru",
+    "pt",
+    "es",
+    "it"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_tts",
+    "audio",
+    "tts",
+    "voice-clone",
+    "text-to-speech",
+    "zh",
+    "en",
+    "ja",
+    "ko",
+    "de",
+    "fr",
+    "ru",
+    "pt",
+    "es",
+    "it",
+    "arxiv:2601.15621",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 914643008,
+  "parameters_human": "914.6M",
+  "storage_bytes": 6170267604,
+  "storage_human": "6.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Salar d’Uyuni : visite du Désert de Sel en Bolivie - Guide 2026",
+      "url": "https://www.voyage-bolivie.com/blog-voyage-bolivie/salar-uyuni",
+      "snippet": "Explorez le Salar d’Uyuni et le Sud Lipez en Bolivie. Découvrez notre guide pratique pour préparer votre voyage dans le plus grand …"
+    },
+    {
+      "title": "Visiter le salar d’Uyuni en 2026 : mon guide complet",
+      "url": "https://www.sunsetanywhere.com/visiter-le-salar-uyuni/",
+      "snippet": "Jul 28, 2026 · Visiter le salar d'Uyuni est une expérience mythique à vivre lors d'un voyage en Bolivie. Voici mon récit et tous mes …"
+    },
+    {
+      "title": "Le Salar d'Uyuni : Le Guide 2026 du désert de sel en Bolivie.",
+      "url": "https://www.terresdesandes.org/au-programme/destinations/details/8/141-salar-d-uyuni-et-sud-lipez.html",
+      "snippet": "Jan 26, 2026 · Du Lac Titicaca au Salar d'Uyuni, partez en voyage en Bolivie à la découverte de l'Amérique du Sud authentique. Les …"
+    },
+    {
+      "title": "Salar de Uyuni : visiter le désert de sel en Bolivie - Blog voyage",
+      "url": "https://www.si-loin-si-pres.com/bolivie-a-salar-de-uyuni/",
+      "snippet": "Le Salar de Uyuni fait partie des rares endroits qui ne déçoivent pas, même quand on a vu cent photos avant d’y aller. Mon conseil : …"
+    },
+    {
+      "title": "Salar d’Uyuni : comment visiter le grand désert de sel en Bolivie",
+      "url": "https://www.globe-trotting.com/post/le-salar-duyuni-en-bolivie",
+      "snippet": "Découvrez comment visiter le Salar d’Uyuni en Bolivie : miroir d’eau, Isla del Pescado, hôtels de sel, excursions en 4x4 et conseils …"
+    }
+  ]
+}

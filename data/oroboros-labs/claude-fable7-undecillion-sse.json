@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "oroboros-labs/claude-fable7-undecillion-sse",
+  "slug": "oroboros-labs-claude-fable7-undecillion-sse",
+  "author": "oroboros-labs",
+  "url": "https://huggingface.co/oroboros-labs/claude-fable7-undecillion-sse",
+  "created_at": "2026-09-19T18:42:53.000Z",
+  "updated_at": "2026-09-19T19:06:58.000Z",
+  "license": "oroboros-sovereign-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "wan2.2",
+  "languages": [
+    "en",
+    "zh",
+    "ja",
+    "es"
+  ],
+  "tags": [
+    "wan2.2",
+    "gguf",
+    "tools",
+    "thinking",
+    "voice",
+    "pdf",
+    "system-entity",
+    "sse",
+    "oroboros",
+    "anthropic",
+    "fable",
+    "undecillion",
+    "cordis-harness",
+    "deepseek",
+    "agentic",
+    "jhanna-12",
+    "text-generation",
+    "en",
+    "zh",
+    "ja",
+    "es",
+    "base_model:oroboros-labs/claude-fable7-undecillion-sse",
+    "base_model:quantized:oroboros-labs/claude-fable7-undecillion-sse",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 8989108972,
+  "storage_human": "9.0 GB",
+  "base_model": "oroboros-labs/claude-fable7-undecillion-sse",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Trendyol Süper Lig Maç Özetleri ve Golleri | beIN SPORTS",
+      "url": "https://beinsports.com.tr/mac-ozetleri-goller/super-lig",
+      "snippet": "1 day ago · Trendyol Süper Lig’de/da haftanın maç özetleri, golleri ve en heyecanlı anları, özel röportajlar ve detaylı istatistikler ile …"
+    },
+    {
+      "title": "Trendyol Süper Lig 2026/2027 Sezonu | beIN SPORTS",
+      "url": "https://beinsports.com.tr/lig/super-lig",
+      "snippet": "1 day ago · Trendyol Süper Lig maç özetleri, haberleri ve son dakika gelişmeleri, özel röportajlar ve detaylı istatistikler ile beIN …"
+    },
+    {
+      "title": "Maç Özetleri — Goller ve Geniş Özet İzle - hangikanalda.tv",
+      "url": "https://hangikanalda.tv/mac-ozetleri/",
+      "snippet": "20 hours ago · Son maçların özetleri ve golleri tek sayfada. Resmi yayıncı kanallarından 282 maç özeti — futbol, voleybol, basketbol. …"
+    },
+    {
+      "title": "beIN SPORTS Arşiv - YouTube",
+      "url": "https://www.youtube.com/@beinsportsarsiv",
+      "snippet": "TFF Süper Lig maç özetleri, geride kalan sezonlarıyla bu kanalda!"
+    },
+    {
+      "title": "Süper Lig Maç Özetleri! - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLQRx43OkMTW1B6jsAEjc24TZ97vTXHXf4",
+      "snippet": "Haftanın tüm maç özetleri tek bir yerde! Golleri, asistleri, kritik pozisyonları ve maçın kırılma anlarını bu listede bulabilirsin. Süper Lig …"
+    }
+  ]
+}

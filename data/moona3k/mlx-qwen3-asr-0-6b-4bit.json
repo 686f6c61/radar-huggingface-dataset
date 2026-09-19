@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "moona3k/mlx-qwen3-asr-0.6b-4bit",
+  "slug": "moona3k-mlx-qwen3-asr-0-6b-4bit",
+  "author": "moona3k",
+  "url": "https://huggingface.co/moona3k/mlx-qwen3-asr-0.6b-4bit",
+  "created_at": "2026-09-19T18:58:57.000Z",
+  "updated_at": "2026-09-19T18:59:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "mlx",
+  "languages": [
+    "en",
+    "zh",
+    "ja",
+    "ko",
+    "de",
+    "fr",
+    "es",
+    "ru",
+    "ar",
+    "hi"
+  ],
+  "tags": [
+    "mlx",
+    "qwen3_asr",
+    "qwen3-asr",
+    "speech-recognition",
+    "quantized",
+    "4-bit",
+    "automatic-speech-recognition",
+    "en",
+    "zh",
+    "ja",
+    "ko",
+    "de",
+    "fr",
+    "es",
+    "ru",
+    "ar",
+    "hi",
+    "base_model:Qwen/Qwen3-ASR-0.6B",
+    "base_model:finetune:Qwen/Qwen3-ASR-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 537626967,
+  "storage_human": "538 MB",
+  "base_model": "Qwen/Qwen3-ASR-0.6B",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ORIGO",
+      "url": "https://www.origo.hu/",
+      "snippet": "Friss hírek Magyarországról és a nagyvilágból, sport, technika, szórakozás, tudomány, kultúra. Az ORIGO a legfrissebb hazai és …"
+    },
+    {
+      "title": "Legfrissebb hírek - origo.hu",
+      "url": "https://www.origo.hu/24",
+      "snippet": "1 day ago · Friss hírek Magyarországról és a nagyvilágból, sport, technika, szórakozás, tudomány, kultúra. Az ORIGO a legfrissebb …"
+    },
+    {
+      "title": "Élő adás online | HírTV - hirtv.origo.hu",
+      "url": "https://hirtv.origo.hu/adas",
+      "snippet": "A HírTV élő adása böngészőből is elérhető. Az oldalon 60 perces késleltetéssel követheti a műsort. Kövesse élőben az oldalunkon!"
+    },
+    {
+      "title": "ORIGO | Budapest - Facebook",
+      "url": "https://www.facebook.com/OrigoHirek/",
+      "snippet": "Ez vár ránk ma 👇 Változékony idő jön szombaton, több helyen zápor és zivatar is érkezhet - ORIGO"
+    },
+    {
+      "title": "Origo.hu – Wikipédia",
+      "url": "https://hu.wikipedia.org/wiki/Origo.hu",
+      "snippet": "Az Origo.hu[1] – vagy csak Origo – Magyarország egyik legismertebb Fidesz -közeli [2] hírportálja. [3] Az oldalon számos …"
+    }
+  ]
+}

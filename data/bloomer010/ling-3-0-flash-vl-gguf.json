@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "bloomer010/Ling-3.0-flash-VL-GGUF",
+  "slug": "bloomer010-ling-3-0-flash-vl-gguf",
+  "author": "bloomer010",
+  "url": "https://huggingface.co/bloomer010/Ling-3.0-flash-VL-GGUF",
+  "created_at": "2026-09-19T19:22:38.000Z",
+  "updated_at": "2026-09-22T03:06:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "bailingmoe3vl",
+    "mixture-of-experts",
+    "vision",
+    "video",
+    "conversational",
+    "image-text-to-text",
+    "base_model:inclusionAI/Ling-3.0-flash-VL",
+    "base_model:quantized:inclusionAI/Ling-3.0-flash-VL",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124414211552,
+  "parameters_human": "124.41B",
+  "storage_bytes": 2068272273536,
+  "storage_human": "2068.3 GB",
+  "base_model": "inclusionAI/Ling-3.0-flash-VL",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kaufvertrag ebay - Vertragsschluss, Widerruf & Rücktritt",
+      "url": "https://www.juraforum.de/lexikon/kaufvertrag-ebay",
+      "snippet": "Mar 16, 2026 · Ein Kaufvertrag kommt durch zwei Willenserklärungen – Angebot und Annahme – zustande. Obgleich im Rahmen von …"
+    },
+    {
+      "title": "eBay Rückgaberecht bei einem Privatverkauf - JuraForum.de",
+      "url": "https://www.juraforum.de/lexikon/ebay-rueckgaberecht",
+      "snippet": "May 26, 2026 · Viele Privatleute, die über eBay etwas verkaufen, wollen ihre Haftung ausschließen. Doch wie sieht es mit dem eBay …"
+    },
+    {
+      "title": "Ebay-Kleinanzeigen - Rücktritt vom Kaufvertrag Kaufrecht",
+      "url": "https://www.123recht.de/forum/kaufrecht/Ebay-Kleinanzeigen-Ruecktritt-vom-Kaufvertrag-__f563684.html",
+      "snippet": "Nov 8, 2019 · Ebay-Kleinanzeigen - Rücktritt vom Kaufvertrag Hallo, ich habe bei Ebay Kleinanzeigen einen Hochdruckreiniger …"
+    },
+    {
+      "title": "Ebay Kleinanzeigen - Käufer möchte vom Kauf Zurücktreten.",
+      "url": "https://www.123recht.de/forum/kaufrecht/Ebay-Kleinanzeigen-Kaeufer-moechte-vom-Kauf-Zuruecktreten-__f521848.html",
+      "snippet": "Jun 22, 2017 · Ebay Kleinanzeigen - Käufer möchte vom Kauf Zurücktreten. Hallo, ich habe auf eBay Kleinanzeigen ein Tablet …"
+    },
+    {
+      "title": "Taschengeldparagraph § 110 BGB – Höhe, Grenze & Beispiel",
+      "url": "https://www.juraforum.de/lexikon/taschengeldparagraph",
+      "snippet": "May 26, 2026 · Als Taschengeldparagraph wird § 110 BGB bezeichnet, der besagt, dass ein Minderjähriger, der das 7. Lebensjahr …"
+    }
+  ]
+}

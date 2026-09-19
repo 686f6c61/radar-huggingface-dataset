@@ -1,0 +1,120 @@
+{
+  "schema": 1,
+  "id": "webbrain-one/safesocial-trigger-classifier-efficientnet-lite0",
+  "slug": "webbrain-one-safesocial-trigger-classifier-efficientnet-lite0",
+  "author": "webbrain-one",
+  "url": "https://huggingface.co/webbrain-one/safesocial-trigger-classifier-efficientnet-lite0",
+  "created_at": "2026-09-19T18:27:02.000Z",
+  "updated_at": "2026-09-21T09:26:41.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "onnxruntime",
+    "image-classification",
+    "multi-label-classification",
+    "efficientnet",
+    "social-comparison",
+    "on-device",
+    "browser",
+    "mobile",
+    "license:other",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 30242580,
+  "storage_human": "30 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "primary Instagram-domain merged test (teacher-labeled)",
+      "metric": null,
+      "value": 0.6817
+    },
+    {
+      "task": null,
+      "dataset": "primary Instagram-domain merged test (teacher-labeled)",
+      "metric": null,
+      "value": 0.5126
+    },
+    {
+      "task": null,
+      "dataset": "primary Instagram-domain merged test (teacher-labeled)",
+      "metric": null,
+      "value": 0.2952
+    },
+    {
+      "task": null,
+      "dataset": "primary Instagram-domain merged test (teacher-labeled)",
+      "metric": null,
+      "value": 0.8684
+    },
+    {
+      "task": null,
+      "dataset": "Karpathy COCO 500-image OOD holdout (teacher-labeled)",
+      "metric": null,
+      "value": 0.6526
+    },
+    {
+      "task": null,
+      "dataset": "Karpathy COCO 500-image OOD holdout (teacher-labeled)",
+      "metric": null,
+      "value": 0.3466
+    },
+    {
+      "task": null,
+      "dataset": "Karpathy COCO 500-image OOD holdout (teacher-labeled)",
+      "metric": null,
+      "value": 0.548
+    },
+    {
+      "task": null,
+      "dataset": "Karpathy COCO 500-image OOD holdout (teacher-labeled)",
+      "metric": null,
+      "value": 0.9176
+    }
+  ],
+  "sources": [
+    {
+      "title": "فلاتر الصوت الخاصة ببرنامج [ AceD Pro 4.0 ] مهم جدا مع البرنامج",
+      "url": "https://www.sqorebda3.com/vb/threads/4658/",
+      "snippet": "- الموضوع :- فلاتر الصوت الخاصة ببرنامج [ AceD Pro 4.0 ] مهم جدا مع البرنامج - جميع الحقوق الشرح + الرفع محفوظة لصقور الابداع + احمد مزيكا . - بعض مواضيعى الخاصة …"
+    },
+    {
+      "title": "الحجم و المقاس المناسب لصور الانستقرام و تطبيقات الصور للالانستقرام",
+      "url": "https://www.sqorebda3.com/vb/threads/49847/",
+      "snippet": "و عليكم السلآم و رححمة الله و بركآآته ، أهلين فيكن ، كتيرا ما يسئل عن مقاس صور الانستقرام حجم ومقاس صور الإنستقرام: صور المربعة: الحجم المثالي هو 1080x1080 بكسل. صور …"
+    },
+    {
+      "title": "أ£أ¤أٹأڈأ­أ‡أٹ أ‡أ،أکأ­أˆ أ،أ،أŒأ£أ­أڑ",
+      "url": "https://www.ta4a.com/showthread.php?t=46820",
+      "snippet": "ÒíÇÑÉ æÇÍÏå ÊßÝí áÊÕÈÍ ãÏãä ãæÞÚäÇ"
+    },
+    {
+      "title": "www.dev-point.com",
+      "url": "https://www.dev-point.com/vb/threads/659647/",
+      "snippet": ""
+    },
+    {
+      "title": "شعر اسم هبة 2027 ,ابيات شعرية لإسم هبة ,اجمل الاشعار باسم هبة",
+      "url": "https://www.sqorebda3.com/vb/threads/71716/",
+      "snippet": "شعر باسم هبة وأجمل قصائد الغزل والمدح والخواطر الرومانسية أبيات شعر قصيرة وكلمات حب وعبارات جميلة لحاملة اسم هبة السلام عليكم ورحمة الله وبركاته، نقدم لكم اليوم مجموعة مختارة من …"
+    }
+  ]
+}

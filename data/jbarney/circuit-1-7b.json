@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "jbarney/circuit-1.7b",
+  "slug": "jbarney-circuit-1-7b",
+  "author": "jbarney",
+  "url": "https://huggingface.co/jbarney/circuit-1.7b",
+  "created_at": "2026-09-19T14:43:02.000Z",
+  "updated_at": "2026-09-21T19:55:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "decision-model",
+    "system-one",
+    "calibration",
+    "typesafe",
+    "decision-circuits",
+    "lora",
+    "text-classification",
+    "en",
+    "dataset:nyu-mll/multi_nli",
+    "dataset:google/civil_comments",
+    "dataset:ucirvine/sms_spam",
+    "dataset:clinc/clinc_oos",
+    "dataset:stanfordnlp/snli",
+    "dataset:google/boolq",
+    "dataset:google-research-datasets/paws",
+    "dataset:fancyzhx/dbpedia_14",
+    "dataset:mteb/banking77",
+    "dataset:AmazonScience/massive",
+    "dataset:tals/vitaminc",
+    "dataset:rajpurkar/squad_v2",
+    "dataset:benayas/snips",
+    "base_model:Qwen/Qwen3-1.7B-Base",
+    "base_model:adapter:Qwen/Qwen3-1.7B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 147956986,
+  "storage_human": "148 MB",
+  "base_model": "Qwen/Qwen3-1.7B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "华夏银行企业网银-下载中心",
+      "url": "https://sbank.hxb.com.cn/gluebanking/downloadCenter.html",
+      "snippet": "网银助手是网银应用环境检测和配置的集成工具，可自动检测驱动、控件等程序的安装和运行情况，协助进行修复，并对浏览器进行优 …"
+    },
+    {
+      "title": "【华夏银行网银助手下载】2026年最新官方正式版华夏银行 ...",
+      "url": "https://pc.qq.com/detail/9/detail_22849.html",
+      "snippet": "Aug 17, 2021 · 腾讯软件中心提供2026年最新4.0.6.0官方正式版华夏银行网银助手高速下载，本正式版华夏银行网银助手软件安全认 …"
+    },
+    {
+      "title": "华夏银行-下载专区 下载专区 - hxb.com.cn",
+      "url": "https://www.hxb.com.cn/jrhx/khfw/xzzq/index.shtml",
+      "snippet": "Feb 13, 2017 · 1995年华夏银行率先实行了股份制改造，成为一家全国性股份制商业银行，2003年9月，华夏银行公开发行股票，并在 …"
+    },
+    {
+      "title": "华夏银行 - 网银登录页",
+      "url": "https://www.hxb.com.cn/zh/ebank/",
+      "snippet": "华夏银行 网上个人银行签约版 网上个人银行证书版 网上企业银行查询版 网上企业银行证书版"
+    },
+    {
+      "title": "华夏银行企业网银 - hxb.com.cn",
+      "url": "https://sbank.hxb.com.cn/gluebanking/login.html",
+      "snippet": "华夏银行企业网银登录页面，支持通过华夏企业银行App扫码登录，为企业客户提供便捷的在线银行服务。"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Nekodeus/z-image-turbo-int4-ov",
+  "slug": "nekodeus-z-image-turbo-int4-ov",
+  "author": "Nekodeus",
+  "url": "https://huggingface.co/Nekodeus/z-image-turbo-int4-ov",
+  "created_at": "2026-09-19T16:44:21.000Z",
+  "updated_at": "2026-09-19T16:45:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "openvino",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "openvino",
+    "text-to-image",
+    "z-image",
+    "int4",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5730025258,
+  "storage_human": "5.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Novartis AKTIE | CH0012005267 | 1200526 | NOVN | Realtime Kurs",
+      "url": "https://www.finanzen.ch/aktien/novartis-aktie",
+      "snippet": "1 day ago · Realtime-Kurs der Novartis Aktie • Chart & Kursentwicklung • Nachrichten & Analysen • Kennzahlen & Prognosen • …"
+    },
+    {
+      "title": "NOVARTIS AKTIE | NOT | Aktienkurs | CH0012005267 | News | 904278 ...",
+      "url": "https://www.finanzen.net/aktien/novartis-aktie",
+      "snippet": "1 day ago · Die Novartis AG ist ein weltweit tätiger Pharmakonzern mit Sitz in der Schweiz. Das Unternehmen erforscht, entwickelt …"
+    },
+    {
+      "title": "Novartis AKTIE | CA66989X1033 | 142491626 | | Realtime Kurs",
+      "url": "https://www.finanzen.ch/aktien/novartis_4-aktie",
+      "snippet": "1 day ago · Realtime-Kurs der Novartis Aktie • Chart & Kursentwicklung • Nachrichten & Analysen • Kennzahlen & Prognosen • …"
+    },
+    {
+      "title": "Action Novartis AG | Cours NOVN Bourse Swiss Exchange - Zonebourse",
+      "url": "https://www.zonebourse.com/cours/action/NOVARTIS-AG-9364983/",
+      "snippet": "Novartis AG figure parmi les leaders mondiaux de la conception, de la fabrication et de la commercialisation de produits …"
+    },
+    {
+      "title": "Novartis AKTIE | Aktienkurs & News | NOT | 904278 – boerse.de",
+      "url": "https://www.boerse.de/aktien/Novartis-Aktie/CH0012005267",
+      "snippet": "Die Novartis-Aktie kostet aktuell 122,02 Euro (Stand: 18.09.26 21:46:18), das entspricht einer Kursveränderung von 0,44% zum …"
+    }
+  ]
+}

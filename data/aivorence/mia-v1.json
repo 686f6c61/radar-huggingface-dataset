@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "AIVORENCE/Mia-v1",
+  "slug": "aivorence-mia-v1",
+  "author": "AIVORENCE",
+  "url": "https://huggingface.co/AIVORENCE/Mia-v1",
+  "created_at": "2026-09-19T17:18:56.000Z",
+  "updated_at": "2026-09-19T21:39:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "aivorence",
+    "mia",
+    "conversational",
+    "text-generation",
+    "any-to-any",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5104297504,
+  "parameters_human": "5.10B",
+  "storage_bytes": 10241021706,
+  "storage_human": "10.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Contact Us - Microsoft Support",
+      "url": "https://support.microsoft.com/en-gb/contactus",
+      "snippet": "Contact Microsoft Support. Find solutions to common problems, or get help from a support agent."
+    },
+    {
+      "title": "Anmelden bei Hotmail | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/accounts-billing/manage/how-to-sign-in-to-hotmail",
+      "snippet": "Microsoft hält immer ein Auge auf ungewöhnliche Anmeldeaktivitäten, nur für den Fall, dass jemand anderes versucht, auf Ihr Konto …"
+    },
+    {
+      "title": "Sign in to your account - techcommunity.microsoft.com",
+      "url": "https://techcommunity.microsoft.com/blog/exchange/exchange-online-ews-your-time-is-almost-up/4492361",
+      "snippet": "We wanted to provide an update on Exchange Online EWS deprecation."
+    },
+    {
+      "title": "Safe place to download Windows 11 26H1 ISO image? | Microsoft …",
+      "url": "https://techcommunity.microsoft.com/discussions/windows11/safe-place-to-download-windows-11-26h1-iso-image/4473173",
+      "snippet": "I heard Windows 11 26H1 is available but the ISO image download from Microsoft website is still 25H2. I don't want to enroll in …"
+    },
+    {
+      "title": "Aktualisieren von Treibern über Geräte-Manager in Windows",
+      "url": "https://support.microsoft.com/de-de/windows/aktualisieren-von-treibern-%C3%BCber-ger%C3%A4te-manager-in-windows-ec62f46c-ff14-c91d-eead-d7126dc1f7b6",
+      "snippet": "Erfahren Sie, wie Sie Treiber in Windows mithilfe von Geräte-Manager aktualisieren oder neu installieren."
+    }
+  ]
+}

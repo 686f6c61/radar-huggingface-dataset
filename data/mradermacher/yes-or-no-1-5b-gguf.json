@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mradermacher/yes-or-no-1.5b-GGUF",
+  "slug": "mradermacher-yes-or-no-1-5b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/yes-or-no-1.5b-GGUF",
+  "created_at": "2026-09-19T17:02:50.000Z",
+  "updated_at": "2026-09-19T17:14:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "yes-no",
+    "fact-checking",
+    "calibration",
+    "uncertainty-quantification",
+    "en",
+    "base_model:eventvoid/yes-or-no-1.5b",
+    "base_model:quantized:eventvoid/yes-or-no-1.5b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 14206875264,
+  "storage_human": "14.2 GB",
+  "base_model": "eventvoid/yes-or-no-1.5b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sportwetten mit LEON Deutschland | Online Wetten & Beste Wettquoten",
+      "url": "https://leon.bet/de-de/",
+      "snippet": "17 hours ago · Bei Leonbet finden Sie nicht nur einen sagenhaft hohen Willkommensbonus von bis zu 500 €, sondern auch die …"
+    },
+    {
+      "title": "Online Casino & Sportsbook | Quick & Easy Sports Bets at LEON",
+      "url": "https://leon.bet/en-se/",
+      "snippet": "17 hours ago · LEON - home to the best online casino, 4,000+ slots, live casino & top sportsbook with live betting & great odds. Sign …"
+    },
+    {
+      "title": "Leon Casino Deutschland | 8.000+ Spiele & Sportwetten",
+      "url": "https://www.leoncasinodeutschland.de/",
+      "snippet": "Willkommen bei Leon Casino Deutschland! Spiele 8.000+ Spiele mit Blitzauszahlungen deiner Gewinne! Starte mit 500€ Bonus HIER!"
+    },
+    {
+      "title": "ᐉ LEON Bet Casino & Sports Betting in Tanzania",
+      "url": "https://leonbet.co.tz/",
+      "snippet": "17 hours ago · Sign Up or complete your LEONBet login: Create an account by filling in all the details; Deposit: Now you can top up …"
+    },
+    {
+      "title": "Leonbet Erfahrungen [2026 Update] + Exklusiver Leonbet Bonus",
+      "url": "https://wettzentrum.de/wettanbieter/leonbet-erfahrungen/",
+      "snippet": "May 28, 2026 · In meinem aktualisierten Leonbet Testbericht aus 2026 nehme ich einen der beliebtesten Wettanbieter genau unter …"
+    }
+  ]
+}

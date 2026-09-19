@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Pluto-AI-Labs/Hades-4B-GGUF",
+  "slug": "pluto-ai-labs-hades-4b-gguf",
+  "author": "Pluto-AI-Labs",
+  "url": "https://huggingface.co/Pluto-AI-Labs/Hades-4B-GGUF",
+  "created_at": "2026-09-19T13:06:17.000Z",
+  "updated_at": "2026-09-19T13:36:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "abliterated",
+    "soft-refusal",
+    "pluto-ai-labs",
+    "qwen3",
+    "text-generation",
+    "arxiv:2406.11717",
+    "base_model:Pluto-AI-Labs/Hades-4B-Abliterated",
+    "base_model:quantized:Pluto-AI-Labs/Hades-4B-Abliterated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 21024739520,
+  "storage_human": "21.0 GB",
+  "base_model": "Pluto-AI-Labs/Hades-4B-Abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pluto TV : Regardez des films et séries gratuitement",
+      "url": "https://pluto.tv/fr/?msockid=3e97281dc6c76de107853fc4c7386cd0",
+      "snippet": "Pluto TV propose des chaînes en direct gratuites, des films populaires et des séries à regarder sans frais. Devorez des émissions de …"
+    },
+    {
+      "title": "Films et séries gratuits en ligne à la demande | Pluto TV",
+      "url": "https://app-windows.pluto.tv/fr/on-demand",
+      "snippet": "Regardez votre sélection de blobkbusters et de programmes télé. Téléréalité, polars, comédies, films romantiques, SF, et bien plus, à …"
+    },
+    {
+      "title": "À regarder gratuitement : films et séries TV | Pluto TV",
+      "url": "https://pluto.tv/fr/home/?msockid=3e97281dc6c76de107853fc4c7386cd0",
+      "snippet": "Trouvez quoi regarder parmi une sélection de films, d'émissions et de programmes TV en direct, tous diffusés gratuitement en …"
+    },
+    {
+      "title": "PlutoTV: films/séries gratuits – Applications sur Google Play",
+      "url": "https://play.google.com/store/apps/details?id=tv.pluto.android&gl=fr&hl=fr",
+      "snippet": "Accédez à des milliers de films et d'émissions gratuitement en téléchargeant Pluto TV. Obtenez l'appli et regardez des films et des …"
+    },
+    {
+      "title": "Pluto - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Pluto",
+      "snippet": "Pluto was discovered in 1930 by Clyde W. Tombaugh, making it the first known object in the Kuiper belt. It was immediately hailed as …"
+    }
+  ]
+}

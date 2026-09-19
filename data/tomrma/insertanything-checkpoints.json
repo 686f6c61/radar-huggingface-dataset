@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "id": "tOMRmA/InsertAnything-checkpoints",
+  "slug": "tomrma-insertanything-checkpoints",
+  "author": "tOMRmA",
+  "url": "https://huggingface.co/tOMRmA/InsertAnything-checkpoints",
+  "created_at": "2026-09-19T13:07:17.000Z",
+  "updated_at": "2026-09-19T13:46:37.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "rl-games",
+  "languages": [],
+  "tags": [
+    "rl-games",
+    "isaac-lab",
+    "reinforcement-learning",
+    "robotics",
+    "peg-in-hole",
+    "contact-rich-manipulation",
+    "tactile-sensing",
+    "sim-to-real",
+    "insertanything",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 427433790,
+  "storage_human": "427 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "cinemana.shabakaty.com",
+      "url": "https://cinemana.shabakaty.com/page/home",
+      "snippet": "منصة سينمانا لمشاهدة الأفلام والمسلسلات العربية والعالمية."
+    }
+  ]
+}

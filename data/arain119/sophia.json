@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Arain119/sophia",
+  "slug": "arain119-sophia",
+  "author": "Arain119",
+  "url": "https://huggingface.co/Arain119/sophia",
+  "created_at": "2026-09-19T13:53:15.000Z",
+  "updated_at": "2026-09-21T07:17:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "sophia_hybrid",
+    "custom_code",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1113293776,
+  "parameters_human": "1.11B",
+  "storage_bytes": 11686675076,
+  "storage_human": "11.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Penguin Diner | Online hra zdarma | Superhry.cz",
+      "url": "https://www.superhry.cz/games/945/",
+      "snippet": "Penguin Diner – vyzkoušíte si, že obsloužit lokál plný hladových a žíznivých tučňáků není žádná legrace."
+    },
+    {
+      "title": "Penguin Diner 2 | Online hra zdarma | Superhry.cz",
+      "url": "https://www.superhry.cz/hra/2795-penguin-diner-2",
+      "snippet": "Penguin Diner 2 - podnikejte na Antarktidě v sektoru pohostinství a vybudujte prosperující podnik."
+    },
+    {
+      "title": "Penguin Hop - Hrajte zdarma - Online hry",
+      "url": "https://www.jopi.com/cs/game/game/penguin-hop/",
+      "snippet": "Podejte pomocnou ruku svým kožešinovým kamarádům v Penguin Hop! Tato hra s pixelovou tématikou vám umožní pomoci vašim …"
+    },
+    {
+      "title": "Penguin Arcade – online hra zdarma – Webgames.cz",
+      "url": "https://www.webgames.cz/penguin-arcade/165-0/",
+      "snippet": "Penguin Arcade - Hra šitá přímo na míru těm, kteří chtějí zažít srandu a ještě si zároveň procvičit svůj postřeh. Máte za úkol střílet …"
+    },
+    {
+      "title": "Penguin Bounce – online hra zdarma – Webgames.cz",
+      "url": "https://www.webgames.cz/penguin-bounce/10305-0/",
+      "snippet": "Penguin Bounce - Popadněte s medvědem pálku a odpalte tučňáka co nejdál dokážete. Hodně záleží na správném načasování a na …"
+    }
+  ]
+}

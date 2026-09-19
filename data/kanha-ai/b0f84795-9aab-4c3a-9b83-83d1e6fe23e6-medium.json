@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Kanha-AI/b0f84795-9aab-4c3a-9b83-83d1e6fe23e6-medium",
+  "slug": "kanha-ai-b0f84795-9aab-4c3a-9b83-83d1e6fe23e6-medium",
+  "author": "Kanha-AI",
+  "url": "https://huggingface.co/Kanha-AI/b0f84795-9aab-4c3a-9b83-83d1e6fe23e6-medium",
+  "created_at": "2026-09-19T13:54:44.000Z",
+  "updated_at": "2026-09-19T13:54:52.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlc-llm",
+  "languages": [],
+  "tags": [
+    "mlc-llm",
+    "kanha",
+    "on-device",
+    "webgpu",
+    "fine-tuned",
+    "medium",
+    "text-generation",
+    "base_model:LiquidAI/LFM2.5-1.2B-Instruct",
+    "base_model:finetune:LiquidAI/LFM2.5-1.2B-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 658503168,
+  "storage_human": "659 MB",
+  "base_model": "LiquidAI/LFM2.5-1.2B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CapCut YZ Video Düzenleyici: Gelişmiş Yapay Zekâ Araçları ile Akıllı ...",
+      "url": "https://www.capcut.com/tr-tr/",
+      "snippet": "CapCut'ın yapay zekâ destekli video düzenleyicisi, akıllı şablonlar ve yaratıcı efektler kullanarak YouTube ve Instagram videolarını …"
+    },
+    {
+      "title": "CapCut AI Video Editor: Smart Online Video Editing with Advanced AI …",
+      "url": "https://www.capcut.com/",
+      "snippet": "Edit YouTube and Instagram videos with CapCut's AI-powered video editor, smart templates, and creative effects. Download CapCut …"
+    },
+    {
+      "title": "CapCut | Video Editor | All-In-One Video Editing Software | CapCut",
+      "url": "https://www.capcut.net/editor",
+      "snippet": "Continue with email Continue with TikTok Continue with Facebook Continue with CapCut Mobile"
+    },
+    {
+      "title": "CapCut - Video Editor - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.lemon.lvoverseas&hl=en-US",
+      "snippet": "CapCut is an all-in-one video editor and video maker application with everything you need to create stunning, high-quality videos. …"
+    },
+    {
+      "title": "CapCut - Download",
+      "url": "https://capcut.en.softonic.com/",
+      "snippet": "3 days ago · CapCut is an exceptional free video editing tool that balances user-friendly features with professional capabilities. Its …"
+    }
+  ]
+}

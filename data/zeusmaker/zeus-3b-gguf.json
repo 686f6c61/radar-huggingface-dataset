@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ZEUSmaker/zeus-3b-gguf",
+  "slug": "zeusmaker-zeus-3b-gguf",
+  "author": "ZEUSmaker",
+  "url": "https://huggingface.co/ZEUSmaker/zeus-3b-gguf",
+  "created_at": "2026-09-19T15:25:15.000Z",
+  "updated_at": "2026-09-19T15:25:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3212749888,
+  "parameters_human": "3.21B",
+  "storage_bytes": 2019377408,
+  "storage_human": "2.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mahjong-Spiele - kostenlos spielen | RTLspiele.de",
+      "url": "https://spiele.rtl.de/mahjong-spiele/",
+      "snippet": "Spiele ohne Anmeldung - Mahjong-Spiele liefert den ultimativen Suchtfaktor - gratis! Spiel Mahjong-Spiele so lange du möchtest - …"
+    },
+    {
+      "title": "Kostenlose Spiele jetzt spielen | RTLspiele.de",
+      "url": "https://spiele.rtl.de/tags/kostenlose-spiele.html",
+      "snippet": "Kostenlose Spiele bei RTLspiele Das komplette Angebot bei RTLspiele kann kostenlos genutzt werden. Die meisten Spiele kannst du …"
+    },
+    {
+      "title": "Mahjongg Solitaire kostenlos spielen bei RTLspiele.de",
+      "url": "https://spiele.rtl.de/mahjong-spiele/mahjongg-solitaire.html",
+      "snippet": "Mahjongg Solitaire ist der absolute Spielefavorit auf RTLspiele und begeistert viele Spieler. Das Mahjongg Solitaire kannst du jetzt …"
+    },
+    {
+      "title": "Kostenlose Online Spiele - jetzt spielen bei RTLspiele.de",
+      "url": "https://spiele.rtl.de/",
+      "snippet": "Jetzt die besten kostenlosen Spiele auf RTLspiele.de spielen Online Spiele ohne Anmeldung oder kostenlose Registrierung mit tollen …"
+    },
+    {
+      "title": "Bubble-Shooter - kostenlos spielen | RTLspiele.de",
+      "url": "https://spiele.rtl.de/bubble-shooter/",
+      "snippet": "Spiele ohne Anmeldung - Bubble-Shooter liefert den ultimativen Suchtfaktor - gratis! Spiel Bubble-Shooter so lange du möchtest - …"
+    }
+  ]
+}

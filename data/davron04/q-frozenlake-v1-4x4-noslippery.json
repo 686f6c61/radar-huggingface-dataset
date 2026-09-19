@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "davron04/q-FrozenLake-v1-4x4-noSlippery",
+  "slug": "davron04-q-frozenlake-v1-4x4-noslippery",
+  "author": "davron04",
+  "url": "https://huggingface.co/davron04/q-FrozenLake-v1-4x4-noSlippery",
+  "created_at": "2026-09-19T17:17:36.000Z",
+  "updated_at": "2026-09-19T17:17:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "FrozenLake-v1-4x4-no_slippery",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 915,
+  "storage_human": "915 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "हॉस्पिस केयर और पैलियेटिव केयर - खास विषय - MSD Manual …",
+      "url": "https://www.msdmanuals.com/hi/home/special-subjects/death-and-dying/hospice-care-and-palliative-care",
+      "snippet": "पैलियेटिव केयर व्यक्तिगत स्वास्थ्य देखभाल पेशेवरों, इंटरडिसिप्लिनरी टीमों और हॉस्पिस कार्यक्रमों द्वारा प्रदान की …"
+    },
+    {
+      "title": "पैलिएटिव केयर क्या है: प्रकार और सहायता | मैक्स हॉस्पिटल",
+      "url": "https://www.maxhealthcare.in/blogs/hi/what-is-palliative-care",
+      "snippet": "पैलिएटिव केयर और हॉस्पिस केयर दोनों ही गंभीर बीमारियों से पीड़ित व्यक्तियों को आराम और सहायता प्रदान करने पर केंद्रित …"
+    },
+    {
+      "title": "Palliative Care Victoria - What is palliative care? - Hindi",
+      "url": "https://www.pallcarevic.asn.au/page/709/what-is-palliative-care-hindi",
+      "snippet": "अधिकांश पैलिएटिव केयर सेवाएं निःशुल्क हैं। दवाओं या उपकरणों के लिए कुछ लागत हो सकती है, जिस पर आवश्यकता पड़ने पर …"
+    },
+    {
+      "title": "पैलिएटिव केयर क्या है और इसकी जरूरत कब पड़ती है? | Oncare",
+      "url": "https://www.oncarecancer.com/blogs/palliative-care-in-hindi/",
+      "snippet": "जानें पैलिएटिव केयर क्या है, इसकी जरूरत कब पड़ती है, इसके फायदे और यह इलाज के साथ कैसे मदद करती है। Oncare Cancer Hospital …"
+    },
+    {
+      "title": "पैलिएटिव केयर: कैंसर, हृदय रोग, किडनी फेलियर जैसी बीमारियों में …",
+      "url": "https://www.naidunia.com/magazine/sehat-palliative-care-this-service-is-effective-in-diseases-like-cancer-heart-disease-kidney-failure-8338212",
+      "snippet": "Jul 30, 2024 · पैलिएटिव केयर मरीज और उनके परिवार को सभी जरूरतों को ध्यान में रखकर दी जाती है। इसमें दर्द प्रबंधन, मानसिक …"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "AiMamis/Tati",
+  "slug": "aimamis-tati",
+  "author": "AiMamis",
+  "url": "https://huggingface.co/AiMamis/Tati",
+  "created_at": "2026-09-19T18:20:59.000Z",
+  "updated_at": "2026-09-19T18:21:31.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "license:openrail++",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 459137444,
+  "storage_human": "459 MB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How do react when Chinese people randomly start speaking English to …",
+      "url": "https://answers.echinacities.com/question/how-do-react-when-chinese-people-randomly-start-speaking-english-you?type=alatest",
+      "snippet": "Je fais pareille. I do the same. But there is a sort of compassion I feel for the people who are so keen to check on their English skills …"
+    },
+    {
+      "title": "Are there any coin shops in Guangzhou?- eChinacities Answers",
+      "url": "https://answers.echinacities.com/question/are-there-any-coin-shops-guangzhou",
+      "snippet": "I recently got into coin collecting and was wondering if there were any actual coin dealers in GZ. I looked around on Taobao but it's …"
+    },
+    {
+      "title": "does anyone knows which bank can offer a credit card for students …",
+      "url": "https://answers.echinacities.com/question/does-anyone-knows-which-bank-can-offer-credit-card-students-here-china",
+      "snippet": "I have asked agricultural bank of china and ICBC industrial and comercial bank of china,non of them do does anyone knows where …"
+    }
+  ]
+}

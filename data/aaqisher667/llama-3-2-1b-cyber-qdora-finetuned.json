@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Aaqisher667/llama-3.2-1b-cyber-qdora-finetuned",
+  "slug": "aaqisher667-llama-3-2-1b-cyber-qdora-finetuned",
+  "author": "Aaqisher667",
+  "url": "https://huggingface.co/Aaqisher667/llama-3.2-1b-cyber-qdora-finetuned",
+  "created_at": "2026-09-19T19:31:36.000Z",
+  "updated_at": "2026-09-19T19:31:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:unsloth/llama-3.2-1b-instruct-unsloth-bnb-4bit",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 63851032,
+  "storage_human": "64 MB",
+  "base_model": "unsloth/llama-3.2-1b-instruct-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PENNY Magyarország",
+      "url": "https://www.penny.hu/",
+      "snippet": "Feliratkozom a PENNY hírlevélre, mert rendszeresen szeretnék információkat és reklámajánlatot kapni az aktuális termékekről, …"
+    },
+    {
+      "title": "Penny akciós újság online megtekintése - Akciós-Újság.hu",
+      "url": "https://akcios-ujsag.hu/ujsag-cimke/penny-akcios-ujsag/",
+      "snippet": "A PENNY akciós újság hétről hétre rendkívüli árengedményekkel és pénztárcabarát megoldásokkal segíti a családi kassza …"
+    },
+    {
+      "title": "Reklámújság - Penny",
+      "url": "https://www.penny.hu/reklamujsag",
+      "snippet": "Feliratkozom a PENNY hírlevélre, mert rendszeresen szeretnék információkat és reklámajánlatot kapni az aktuális termékekről, …"
+    },
+    {
+      "title": "PENNY MARKET akciós újság erre a hétre - Akciós-Újság.hu",
+      "url": "https://akcios-ujsag.hu/akcios-ujsag/elelmiszer-aruhaz/penny-market/",
+      "snippet": "A Penny újságok oldalain a jól ismert márkatermékek mellett óriási választékban jelennek meg az üzletlánc saját márkás termékei, …"
+    },
+    {
+      "title": "PENNY akciós újság 2026.09.17.-tól – lapozható katalógus",
+      "url": "https://www.kimbino.hu/penny/",
+      "snippet": "Apr 1, 2025 · A penny akciós újság lapozható formában különösen átláthatóvá teszi az aktuális árakat és promóciókat, így mindenki …"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "AnchorSR/AnchorSR-Qwen3.5-9B-V4-RL-Step3000",
+  "slug": "anchorsr-anchorsr-qwen3-5-9b-v4-rl-step3000",
+  "author": "AnchorSR",
+  "url": "https://huggingface.co/AnchorSR/AnchorSR-Qwen3.5-9B-V4-RL-Step3000",
+  "created_at": "2026-09-19T15:27:29.000Z",
+  "updated_at": "2026-09-19T15:37:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "anchorsr",
+    "spatial-reasoning",
+    "reinforcement-learning",
+    "grpo",
+    "conversational",
+    "base_model:AnchorSR/AnchorSR-Qwen3.5-9B-SFT-v4",
+    "base_model:finetune:AnchorSR/AnchorSR-Qwen3.5-9B-SFT-v4",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 37659337021,
+  "storage_human": "37.7 GB",
+  "base_model": "AnchorSR/AnchorSR-Qwen3.5-9B-SFT-v4",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "如何评价哔哩哔哩 (B站)这个网站？ - 知乎",
+      "url": "https://www.zhihu.com/question/267970405",
+      "snippet": "如何评价哔哩哔哩 (B站)这个网站？ 很想知道这是一个怎样的圈子，但是所有提问里面都没有这个相关的。 我希望能客观的了解这个 …"
+    },
+    {
+      "title": "哔哩哔哩 - 知乎",
+      "url": "https://www.zhihu.com/topic/19628957",
+      "snippet": "哔哩哔哩（bilibili）现为国内领先的年轻人文化社区，该网站于2009年6月26日创建，被粉丝们亲切的称为“B站”。 根据数据公司 …"
+    },
+    {
+      "title": "哔哩哔哩电脑版怎么下载安装 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/925f8cb80d7f7f81dde05692.html",
+      "snippet": "Sep 30, 2020 · 哔哩哔哩电脑版怎么下载安装,哔哩哔哩APP是动漫爱好者的聚集地，其中有很多优质的国番、新番供粉丝们观看。不 …"
+    },
+    {
+      "title": "哔哩哔哩（bilibili）电脑版怎么下载安装 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/f00622284e7d14fbd3f0c83e.html",
+      "snippet": "Mar 13, 2019 · 哔哩哔哩（bilibili）电脑版怎么下载安装,目前官方给出的安装一般都是在手机上使用，官方发布的并没有电脑版，那么 …"
+    },
+    {
+      "title": "怎样在电脑上下载哔哩哔哩的视频？ - 知乎",
+      "url": "https://www.zhihu.com/question/41367609",
+      "snippet": "怎样在电脑上下载哔哩哔哩的视频？ 系统是 Win10 的，bilibili 一直都是用的网页看，然而 bilibili 也一直没有出软件啥的。 。。 在 …"
+    }
+  ]
+}

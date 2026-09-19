@@ -1,0 +1,110 @@
+{
+  "schema": 1,
+  "id": "AwaleSagar/gpio-llm-nano-rpi5",
+  "slug": "awalesagar-gpio-llm-nano-rpi5",
+  "author": "AwaleSagar",
+  "url": "https://huggingface.co/AwaleSagar/gpio-llm-nano-rpi5",
+  "created_at": "2026-09-19T15:01:06.000Z",
+  "updated_at": "2026-09-19T15:04:01.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "raspberry-pi",
+    "gpio",
+    "embedded",
+    "structured-output",
+    "json",
+    "tiny",
+    "en",
+    "dataset:AwaleSagar/gpio-llm-rpi5-actions",
+    "dataset:HuggingFaceTB/smollm-corpus",
+    "license:cc-by-4.0",
+    "model-index",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4960704,
+  "parameters_human": "5.0M",
+  "storage_bytes": 25673949,
+  "storage_human": "26 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "English GPIO request to JSON action",
+      "dataset": "gpio-llm-rpi5-actions (eval, 26,297 rows)",
+      "metric": "Exact match, PyTorch fp32 greedy",
+      "value": 93.61
+    },
+    {
+      "task": "English GPIO request to JSON action",
+      "dataset": "gpio-llm-rpi5-actions (eval, 26,297 rows)",
+      "metric": "Valid JSON, unconstrained",
+      "value": 99.98
+    },
+    {
+      "task": "English GPIO request to JSON action",
+      "dataset": "gpio-llm-rpi5-actions (eval_core, 5,083 rows)",
+      "metric": "Exact match, PyTorch fp32 greedy",
+      "value": 91.82
+    },
+    {
+      "task": "English GPIO request to JSON action",
+      "dataset": "gpio-llm-rpi5-actions (eval_core, 5,083 rows)",
+      "metric": "Exact match, int8 C engine with grammar",
+      "value": 91.72
+    },
+    {
+      "task": "English GPIO request to JSON action",
+      "dataset": "gpio-llm-rpi5-actions (eval_core, 5,083 rows)",
+      "metric": "Valid JSON, int8 C engine with grammar",
+      "value": 100
+    }
+  ],
+  "sources": [
+    {
+      "title": "Hindes Road, Harrow, HA1 1SJ - detailed information - StreetScan",
+      "url": "https://streetscan.co.uk/postcode/ha1-1sj",
+      "snippet": "Hindes Road is in Harrow and in Harrow district. HA1 1SJ is located in the Marlborough electoral ward, within the English …"
+    },
+    {
+      "title": "Map of HA1 1SJ postcode - doogal.co.uk",
+      "url": "https://www.doogal.co.uk/ShowMap?postcode=HA1%201SJ",
+      "snippet": "Map of HA1 1SJ postcode in Common.Road, Harrow, England with local information, lat/long: 51.5849, -0.333703, grid reference: …"
+    },
+    {
+      "title": "HA1 1SJ - Information of interest about Hindes road, Harrow, HA1 1SJ ...",
+      "url": "https://www.checkpostcode.uk/harrow/HA1/HA11SJ",
+      "snippet": "Hindes road is a street located in Harrow, with a postcode of HA1 1SJ. There have been 12 property transactions in this postcode …"
+    },
+    {
+      "title": "House Prices in HA1 1SJ - Rightmove",
+      "url": "https://www.rightmove.co.uk/house-prices/ha1-1sj.html",
+      "snippet": "Apr 19, 2024 · Explore Rightmove house prices to find out how much properties sold for in HA1 1SJ."
+    },
+    {
+      "title": "HA1 1SJ postcode, Harrow, Greater London - Streetlist",
+      "url": "https://www.streetlist.co.uk/ha/ha1/ha1-1/ha1-1sj",
+      "snippet": "Nov 28, 2025 · According to the 2021 Census, 65 people were usually resident in the HA1 1SJ postcode, which is used for mail …"
+    }
+  ]
+}

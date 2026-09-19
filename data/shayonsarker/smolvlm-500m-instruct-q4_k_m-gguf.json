@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "ShayonSarker/SmolVLM-500M-Instruct-Q4_K_M-GGUF",
+  "slug": "shayonsarker-smolvlm-500m-instruct-q4_k_m-gguf",
+  "author": "ShayonSarker",
+  "url": "https://huggingface.co/ShayonSarker/SmolVLM-500M-Instruct-Q4_K_M-GGUF",
+  "created_at": "2026-09-19T13:34:21.000Z",
+  "updated_at": "2026-09-19T18:18:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "ollama",
+    "quantization",
+    "vision",
+    "smolvlm",
+    "image-text-to-text",
+    "base_model:HuggingFaceTB/SmolVLM-500M-Instruct",
+    "base_model:quantized:HuggingFaceTB/SmolVLM-500M-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 409252800,
+  "parameters_human": "409.3M",
+  "storage_bytes": 741158176,
+  "storage_human": "741 MB",
+  "base_model": "HuggingFaceTB/SmolVLM-500M-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to Add or Remove Network Locations in Windows 11",
+      "url": "https://geekrewind.com/how-to-add-network-location-on-windows-11/",
+      "snippet": "Aug 30, 2021 · Easily add or remove network locations in Windows 11 to access FTP, sFTP, and more directly from File Explorer. …"
+    },
+    {
+      "title": "Add Change Network Location Context Menu in Windows 11",
+      "url": "https://www.elevenforum.com/t/add-change-network-location-context-menu-in-windows-11.17160/",
+      "snippet": "Aug 14, 2023 · Adding this Network Location context menu will make it fast and easy to change your current network connection to …"
+    },
+    {
+      "title": "How to Map Network Drives in Windows 11: A Complete Step-by …",
+      "url": "https://techcommunity.microsoft.com/discussions/windows11/how-to-map-network-drives-in-windows-11-a-complete-step-by-step-guide/4470279",
+      "snippet": "Nov 15, 2025 · In this guide, you’ll learn exactly how to map network drives in Windows 11, along with tips, troubleshooting advice, …"
+    },
+    {
+      "title": "File sharing over a network in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/experience/connectivity-networking/file-sharing-over-a-network-in-windows",
+      "snippet": "Select a user on the network to share the file with, or select Everyone to give all network users access to the file. If you select multiple …"
+    },
+    {
+      "title": "Add and Remove Network Location in Windows 11",
+      "url": "https://www.elevenforum.com/t/add-and-remove-network-location-in-windows-11.41837/",
+      "snippet": "Nov 9, 2025 · This tutorial will show you how to add or remove a network location on This PC in File Explorer for your account in …"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/eng-latn-100mb-ppt-Dp-100mb-packed-fa2_seed3407",
+  "slug": "fpadovani-eng-latn-100mb-ppt-dp-100mb-packed-fa2_seed3407",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/eng-latn-100mb-ppt-Dp-100mb-packed-fa2_seed3407",
+  "created_at": "2026-09-19T15:17:27.000Z",
+  "updated_at": "2026-09-19T15:23:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:goldfish-models/eng_latn_100mb",
+    "base_model:finetune:goldfish-models/eng_latn_100mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 250705108,
+  "storage_human": "251 MB",
+  "base_model": "goldfish-models/eng_latn_100mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/",
+      "snippet": "Create an account or log in to Instagram - Share what you're into with the people who get you."
+    },
+    {
+      "title": "Instagram (@instagram) • Instagram photos and videos",
+      "url": "https://www.instagram.com/instagram/",
+      "snippet": "687M Followers, 299 Following, 8,590 Posts - Instagram (@instagram) on Instagram: \"Discover what's new on Instagram 🔎 \""
+    },
+    {
+      "title": "Instagram - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.instagram.android&hl=en-US",
+      "snippet": "- Turn your life into a movie and discover short, entertaining videos on Instagram with Reels. - Customize your posts with exclusive …"
+    },
+    {
+      "title": "Instagram - Download",
+      "url": "https://instagram.en.softonic.com/",
+      "snippet": "Sep 30, 2025 · Instagram is one of the world’s most popular social networking apps. With billions of users worldwide, it’s a place …"
+    },
+    {
+      "title": "Instagram - Meta",
+      "url": "https://www.meta.com/instagram/",
+      "snippet": "We want Instagram to be a place where people can be inspired every day. We foster a safe and welcoming community where people …"
+    }
+  ]
+}

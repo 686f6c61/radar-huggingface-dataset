@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "cmeister/boundary-markers-en-d12-bnd_w-mingram",
+  "slug": "cmeister-boundary-markers-en-d12-bnd_w-mingram",
+  "author": "cmeister",
+  "url": "https://huggingface.co/cmeister/boundary-markers-en-d12-bnd_w-mingram",
+  "created_at": "2026-09-19T19:22:06.000Z",
+  "updated_at": "2026-09-19T19:22:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "tokenization",
+    "boundary-markers",
+    "nanochat",
+    "en",
+    "arxiv:2608.08847",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2458803612,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Skarbówka rozjechała dożynki! Mandaty dla kół gospodyń i strażaków. Czy ...",
+      "url": "https://blaskonline.pl/skarbowka-rozjechala-dozynki-mandaty-dla-kol-gospodyn-i-strazakow-czy-rzad-chce-obrzydzic-polakom-wlasne-tradycje/",
+      "snippet": "8 hours ago · Skarbówka rozjechała dożynki! Mandaty dla kół gospodyń i strażaków. Czy rząd chce obrzydzić Polakom własne …"
+    },
+    {
+      "title": "Skarbówka na dożynkach. Panie z KGW dostały mandaty",
+      "url": "https://www.tygodnik-rolniczy.pl/wiadomosci-rolnicze/rolnictwo-w-polsce/skarbowka-na-dozynkach-panie-z-kgw-dostaly-mandaty-2690852",
+      "snippet": "2 days ago · Kontrole Krajowej Administracji Skarbowej podczas tegorocznych dożynek zakończyły się mandatami. Wśród ukaranych …"
+    },
+    {
+      "title": "Skarbówka wkroczyła na dożynki. Posypały się mandaty m.in. dla kół ...",
+      "url": "https://www.farmer.pl/finanse/skarbowka-wkroczyla-na-dozynki-posypaly-sie-mandaty-m-in-dla-kol-gospodyn-wiejskich,183551.html",
+      "snippet": "1 day ago · Kontrole skarbowe podczas dożynek w Małopolsce zakończyły się mandatami m.in. dla sprzedawców oraz …"
+    },
+    {
+      "title": "Skarbówka weszła na dożynki. Skończyło się mandatami",
+      "url": "https://finanse.wp.pl/skarbowka-weszla-na-dozynki-skonczylo-sie-mandatami-7329948914100384a",
+      "snippet": "3 days ago · Podczas dożynek w trzech podkrakowskich gminach kontrolerzy Krajowej Administracji Skarbowej nałożyli mandaty …"
+    },
+    {
+      "title": "Skarbówka pojechała na dożynki. Posypały się mandaty. \"Ogromny żal\"",
+      "url": "https://www.fakt.pl/pieniadze/skarbowka-pojechala-na-dozynki-posypaly-sie-mandaty-ogromny-zal/kgpj50t",
+      "snippet": "7 hours ago · Głośno o dożynkach pod Krakowem, gdzie posypały się mandaty od skarbówki. \"Dajcie żyć\", \"Masakra\" — denerwują …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Dohyeon1/ERNIE-M-SMoE-ngroups56",
+  "slug": "dohyeon1-ernie-m-smoe-ngroups56",
+  "author": "Dohyeon1",
+  "url": "https://huggingface.co/Dohyeon1/ERNIE-M-SMoE-ngroups56",
+  "created_at": "2026-09-19T16:29:36.000Z",
+  "updated_at": "2026-09-19T16:40:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "ernie4_5_moe",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 21825437888,
+  "parameters_human": "21.83B",
+  "storage_bytes": 43671604727,
+  "storage_human": "43.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Home Depot",
+      "url": "https://www.homedepot.com/",
+      "snippet": "Shop online for all your home improvement needs: appliances, bathroom decorating ideas, kitchen remodeling, patio furniture, power …"
+    },
+    {
+      "title": "Site Map - The Home Depot",
+      "url": "https://www.homedepot.com/c/site_map",
+      "snippet": "Narrow down your category using the homedepot.com sitemap."
+    },
+    {
+      "title": "Home | The Home Depot",
+      "url": "https://corporate.homedepot.com/",
+      "snippet": "The Home Depot Foundation’s 2026 Celebration of Service: Helping Heroes at Home Across All 50 States Company September 04, …"
+    },
+    {
+      "title": "The Home Depot Careers | Search for Jobs Near You",
+      "url": "https://careers.homedepot.com/",
+      "snippet": "Search Jobs at The Home Depot in our stores, distribution centers, and corporate offices across the country."
+    },
+    {
+      "title": "Hiring - Careers at Home Depot",
+      "url": "https://careers.homedepot.com/hiring/",
+      "snippet": "We know your normal work schedule has been impacted. We are currently hiring for full- and part-time positions in our distribution …"
+    }
+  ]
+}

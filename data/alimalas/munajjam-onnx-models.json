@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Alimalas/munajjam-onnx-models",
+  "slug": "alimalas-munajjam-onnx-models",
+  "author": "Alimalas",
+  "url": "https://huggingface.co/Alimalas/munajjam-onnx-models",
+  "created_at": "2026-09-19T15:06:42.000Z",
+  "updated_at": "2026-09-19T15:07:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "quran",
+    "audio-alignment",
+    "forced-alignment",
+    "onnx",
+    "speech-recognition",
+    "tajweed",
+    "automatic-speech-recognition",
+    "ar",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nachrichten, aktuelle Schlagzeilen und Videos - n-tv.de",
+      "url": "https://www.n-tv.de/",
+      "snippet": "Nachrichten seriös, schnell und kompetent. Artikel und Videos aus Politik, Wirtschaft, Börse, Sport und aller Welt."
+    },
+    {
+      "title": "Schlagzeilen und Videos des Tages chronologisch - n-tv.de",
+      "url": "https://www.n-tv.de/home/Das_Neueste/",
+      "snippet": "Die aktuellen ntv-Schlagzeilen auf einen Blick. Artikel und Videos aus Politik, Wirtschaft, Börse, Sport und aller Welt in …"
+    },
+    {
+      "title": "ntv Lotto: LOTTO online spielen",
+      "url": "https://lotto.n-tv.de/",
+      "snippet": "Sicher & seriös LOTTO online spielen Eurojackpot, LOTTO 6 aus 49, GlücksSpirale, KENO, Deutsche Fernsehlotterie, freiheit+ & mehr"
+    },
+    {
+      "title": "n-tv.de",
+      "url": "https://sport.n-tv.de/",
+      "snippet": "Aktuelle Sportnachrichten, Ergebnisse und Begegnungen aus Fußball, Tennis, Motorsport und mehr. Bleiben Sie informiert mit n-tv.de."
+    },
+    {
+      "title": "Börse, Aktienkurse, Fonds und Zertifikate - n-tv.de",
+      "url": "https://www.n-tv.de/boersenkurse/",
+      "snippet": "Die schnelle Übersicht über den Finanzmarkt. Aktien aus Dax, MDax, SDax, Dow Jones und Nasdaq sowie Fonds, Devisen, …"
+    }
+  ]
+}

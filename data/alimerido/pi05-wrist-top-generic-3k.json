@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "alimerido/pi05-wrist-top-generic-3k",
+  "slug": "alimerido-pi05-wrist-top-generic-3k",
+  "author": "alimerido",
+  "url": "https://huggingface.co/alimerido/pi05-wrist-top-generic-3k",
+  "created_at": "2026-09-19T18:39:01.000Z",
+  "updated_at": "2026-09-19T18:40:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "dataset:alimerido/wrist-top-cube_20260705_134536",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 9388447568,
+  "storage_human": "9.4 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/",
+      "snippet": "Create an account or log in to Instagram - Share what you're into with the people who get you."
+    },
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/?hl=ar",
+      "snippet": "يمكنك إنشاء حساب أو تسجيل الدخول إلى Instagram - شارك ما يهمك مع الأشخاص الذين يفهمونك."
+    },
+    {
+      "title": "انستغرام - التطبيقات على Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.instagram.android&hl=ar",
+      "snippet": "اللحظات البسيطة تؤدي إلى بناء صداقات أفضل. شارك لحظاتك على Instagram. — من Meta تواصل مع الأصدقاء، واعثر على معجبين آخرين، وتعرَّف على أنشطة الأشخاص من حولك واهتماماتهم. …"
+    },
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/sem/campaign/login/",
+      "snippet": "Log in to Instagram and connect with friends, family, and interests worldwide."
+    },
+    {
+      "title": "Sign up • Instagram",
+      "url": "https://www.instagram.com/accounts/emailsignup/",
+      "snippet": "Join Instagram! Sign up to see photos, videos, stories & messages from your friends, family & interests around the world."
+    }
+  ]
+}

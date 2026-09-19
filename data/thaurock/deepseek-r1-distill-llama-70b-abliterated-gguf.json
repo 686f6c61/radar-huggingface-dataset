@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Thaurock/DeepSeek-R1-Distill-Llama-70B-abliterated-GGUF",
+  "slug": "thaurock-deepseek-r1-distill-llama-70b-abliterated-gguf",
+  "author": "Thaurock",
+  "url": "https://huggingface.co/Thaurock/DeepSeek-R1-Distill-Llama-70B-abliterated-GGUF",
+  "created_at": "2026-09-19T14:01:53.000Z",
+  "updated_at": "2026-09-21T01:15:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "deepseek",
+    "deepseek-r1",
+    "text-generation",
+    "abliterated",
+    "uncensored",
+    "reasoning",
+    "base_model:huihui-ai/DeepSeek-R1-Distill-Llama-70B-abliterated",
+    "base_model:quantized:huihui-ai/DeepSeek-R1-Distill-Llama-70B-abliterated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 70553706560,
+  "parameters_human": "70.55B",
+  "storage_bytes": 584151257568,
+  "storage_human": "584.2 GB",
+  "base_model": "huihui-ai/DeepSeek-R1-Distill-Llama-70B-abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "“夏天夏天悄悄过去留下小秘密”这首歌的歌名歌词是什么？",
+      "url": "https://zhidao.baidu.com/question/424135149.html",
+      "snippet": "这首歌的歌名是： 《粉红色的回忆》，是由李玲玉演唱的一首歌曲，由袁丽人作词，张平福作曲，收录于同名专辑《粉红色的回忆》 …"
+    },
+    {
+      "title": "求《爸爸去哪儿》的歌词（完整版）_百度知道",
+      "url": "https://zhidao.baidu.com/question/431521758761028004.html",
+      "snippet": "求《爸爸去哪儿》的歌词（完整版）《爸爸去哪儿》演唱：林志颖、Kimi、王岳伦、王诗龄、张亮、张悦轩、郭涛、郭子睿（第一期） …"
+    },
+    {
+      "title": "为什么重分类--分类时，显示错误，然后无法完成分类（已解决） - GIS …",
+      "url": "https://zhihu.geoscene.cn/question/21010",
+      "snippet": "Aug 20, 2018 · 为什么重分类--分类时，显示错误，然后无法完成分类（已解决） - 使用重分类工具时，点击“分类...”，报错，显示“无 …"
+    },
+    {
+      "title": "10.1版本复制了数据框无法粘贴怎么解决？ - GIS知乎-新一代GIS问答社区",
+      "url": "https://zhihu.geoscene.cn/question/36378",
+      "snippet": "Oct 25, 2019 · 10.1版本复制了数据框无法粘贴怎么解决？ - 不是搜狗的原因，图层都可以粘，就是数据框不行。不知道有没有大佬遇 …"
+    },
+    {
+      "title": "《骄傲的少年》歌词 完整版 南征北战 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/984626878854911979.html",
+      "snippet": "《骄傲的少年》完整版 在一开始 当初我还是一个天真而又爱哭的孩子 十年之后 终于才明白 只要全力以赴就无所谓失败 转眼间 一切都 …"
+    }
+  ]
+}

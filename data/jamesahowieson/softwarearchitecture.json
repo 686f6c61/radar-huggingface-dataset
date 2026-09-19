@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "JamesAHowieson/SoftwareArchitecture",
+  "slug": "jamesahowieson-softwarearchitecture",
+  "author": "JamesAHowieson",
+  "url": "https://huggingface.co/JamesAHowieson/SoftwareArchitecture",
+  "created_at": "2026-09-19T16:09:26.000Z",
+  "updated_at": "2026-09-19T23:30:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "base_model:adapter:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "lora",
+    "transformers",
+    "conversational",
+    "dataset:ajibawa-2023/Software-Architecture",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15262908084,
+  "storage_human": "15.3 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Top 10 Best Streaming Services Ranked 2026 | Top10Grid",
+      "url": "https://top10grid.com/top-10-best-streaming-services-ranked-2026",
+      "snippet": "Jul 16, 2026 · Streaming service fatigue and rising costs have made selecting the right platform tougher than ever. Our 2026 ranking …"
+    },
+    {
+      "title": "Top 10 Streaming Services In 2026 Ranked By Price, Content, And …",
+      "url": "https://www.techtimes.com/articles/316190/20260428/top-10-streaming-services-2026-ranked-price-content-features.htm",
+      "snippet": "Apr 28, 2026 · Top streaming services in 2026 ranked by price, content, and features including Netflix, Disney+, Max, YouTube TV, …"
+    },
+    {
+      "title": "Plataformas de streaming 2026: comparativa, precios y catálogo de ...",
+      "url": "https://www.espinof.com/listas/plataformas-streaming",
+      "snippet": "3 days ago · Pero, ¿cuál es mejor y cuál peor?, ¿cuál me conviene más a la hora de buscar el contenido que me interesa? En …"
+    },
+    {
+      "title": "30 Best Streaming Services for Original Content in 2026",
+      "url": "https://agoodmovietowatch.com/cord-cutting/best-services-original-content/",
+      "snippet": "For years, only a handful of streaming services released original content. Netflix topped the competition by performing exceptionally …"
+    },
+    {
+      "title": "The Best Streaming Services of 2026: Complete Comparison Guide",
+      "url": "https://www.hybridtraffic.net/the-best-streaming-services",
+      "snippet": "Jan 25, 2026 · Choosing the best streaming service in 2026 has become increasingly complex as platforms compete for your …"
+    }
+  ]
+}

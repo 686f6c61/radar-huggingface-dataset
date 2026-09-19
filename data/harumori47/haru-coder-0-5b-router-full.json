@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "harumori47/haru-coder-0.5b-router-full",
+  "slug": "harumori47-haru-coder-0-5b-router-full",
+  "author": "harumori47",
+  "url": "https://huggingface.co/harumori47/haru-coder-0.5b-router-full",
+  "created_at": "2026-09-19T12:39:20.000Z",
+  "updated_at": "2026-09-19T12:40:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 999519702,
+  "storage_human": "1000 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "提问页-百度知道",
+      "url": "https://zhidao.baidu.com/msubmit/new/?ask_fr=search_header&query=%E5%AE%89%E5%9B%BD%E5%B9%BF%E5%9C%BA%20Wikipedia",
+      "snippet": "0 /49 将问题补充完整可更快获得回答"
+    },
+    {
+      "title": "bigbang一天一天的歌词、要原版歌词和中文版翻译的如题 谢谢了",
+      "url": "https://zhidao.baidu.com/question/1830391065414523220.html",
+      "snippet": "Aug 15, 2014 · BigBang 《一天一天》歌词 一天一天 离开吧 Ye the finally I realize that I'm nothing without you I was so wrong forgive …"
+    },
+    {
+      "title": "Wikipedia - 知乎",
+      "url": "https://www.zhihu.com/topic/19596544/hot",
+      "snippet": "中文名维基百科。 中文名维基百科。 查看全部内容"
+    },
+    {
+      "title": "Freebase和Wikipedia的区别到底是什么？ - 知乎",
+      "url": "https://www.zhihu.com/question/20784184",
+      "snippet": "简单说，Freebase是个类似wikipedia的创作共享类网站，所有内容都由用户添加，采用创意共用许可证，可以自由引用。两者之间最 …"
+    },
+    {
+      "title": "为什么wikipedia对木村好夫的日文介绍只有寥寥数语？木村好夫是否只 …",
+      "url": "https://www.zhihu.com/question/22452402",
+      "snippet": "为什么wikipedia对木村好夫的日文介绍只有寥寥数语？ 木村好夫是否只是在中国火过？ [图片] 木村好夫似乎是老一辈国人公认的日本 …"
+    }
+  ]
+}

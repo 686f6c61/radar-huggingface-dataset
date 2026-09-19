@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Koko12345p/dolphin-cyber-arabic-merged",
+  "slug": "koko12345p-dolphin-cyber-arabic-merged",
+  "author": "Koko12345p",
+  "url": "https://huggingface.co/Koko12345p/dolphin-cyber-arabic-merged",
+  "created_at": "2026-09-19T17:15:06.000Z",
+  "updated_at": "2026-09-21T03:43:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 42835254649,
+  "storage_human": "42.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wikipédia, l'encyclopédie libre",
+      "url": "https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Accueil_principal",
+      "snippet": "Wikipédia L'encyclopédie libre que vous pouvez améliorer Accueil de la communauté Comment contribuer ? Portails thématiques …"
+    },
+    {
+      "title": "Wikipedia, la enciclopedia libre",
+      "url": "https://es.wikipedia.org/wiki/Wikipedia:Portada",
+      "snippet": "Wikipedia es uno de los proyectos Wikimedia, de contenido libre y administrados técnicamente por la Fundación Wikimedia, una …"
+    },
+    {
+      "title": "Wikipedia",
+      "url": "https://www.wikipedia.org/",
+      "snippet": "Wikipedia is a free online encyclopedia, created and edited by volunteers around the world and hosted by the Wikimedia Foundation."
+    },
+    {
+      "title": "Wikipédia, a szabad enciklopédia",
+      "url": "https://hu.wikipedia.org/wiki/Kezd%C5%91lap",
+      "snippet": "A Massospondylus (ógörög eredetű nevének jelentése 'megnyúlt gerinc ') a prosauropoda dinoszauruszok egyik neme, amely a kora …"
+    },
+    {
+      "title": "Wikipedia:Impressum – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Wikipedia:Impressum",
+      "snippet": "Wikipedia:Impressum wmf:Legal:Wikimedia Foundation Legal and Safety Contact Information/de Diese Seite ist eine „ weiche …"
+    }
+  ]
+}

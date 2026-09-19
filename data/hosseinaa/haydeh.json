@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Hosseinaa/haydeh",
+  "slug": "hosseinaa-haydeh",
+  "author": "Hosseinaa",
+  "url": "https://huggingface.co/Hosseinaa/haydeh",
+  "created_at": "2026-09-19T15:59:05.000Z",
+  "updated_at": "2026-09-19T16:08:21.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 139810941,
+  "storage_human": "140 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yandex — fast Internet search",
+      "url": "https://yandex.com/",
+      "snippet": "Yandex finds anything: webpages, images, music, good. Solve any problem — from everyday to a scientific one. Search by text, …"
+    },
+    {
+      "title": "Яндекс",
+      "url": "https://yandex.ru/?page=home",
+      "snippet": "Мы хотели бы показать здесь описание, но сайт, который вы просматриваете, этого не позволяет."
+    },
+    {
+      "title": "Яндекс — быстрый поиск в интернете",
+      "url": "https://ya.ru/",
+      "snippet": "Яндекс предлагает быстрый поиск информации в интернете, включая сайты, изображения, музыку и товары. Используйте …"
+    },
+    {
+      "title": "Скачать Яндекс Браузер с Алисой AI",
+      "url": "https://browser.yandex.ru/",
+      "snippet": "Встречайте Яндекс Браузер с Алисой AI. Первый в России браузер со встроенными нейросетями и AI-ассистентом. Решает …"
+    },
+    {
+      "title": "Дзен — главная новостная информационная платформа, которая …",
+      "url": "https://yandex.ru/",
+      "snippet": "Дзен объединяет всё самое важное. Национальная, региональная и городская повестка, актуальные новости ведущих СМИ и …"
+    }
+  ]
+}

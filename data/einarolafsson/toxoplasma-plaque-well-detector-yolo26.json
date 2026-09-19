@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "einarolafsson/toxoplasma-plaque-well-detector-yolo26",
+  "slug": "einarolafsson-toxoplasma-plaque-well-detector-yolo26",
+  "author": "einarolafsson",
+  "url": "https://huggingface.co/einarolafsson/toxoplasma-plaque-well-detector-yolo26",
+  "created_at": "2026-09-19T17:20:15.000Z",
+  "updated_at": "2026-09-19T17:20:20.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "yolo",
+    "yolo26",
+    "object-detection",
+    "plaque-assay",
+    "toxoplasma",
+    "spacr",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11548417,
+  "storage_human": "12 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NOVA portal - Naslovna",
+      "url": "https://nova.rs/",
+      "snippet": "NOVA BAZA „Oterani“: Direktor odbio da vodi naučnike na miting, inspektor zbog „Jovanjice“ proglašen za izdajnika, meteorolog …"
+    },
+    {
+      "title": "Najnovije vesti | Nova.rs",
+      "url": "https://nova.rs/najnovije-vesti/",
+      "snippet": "Dobitnik Nobelove nagrade kaže da bi čovečanstvo moglo da nestane brže nego što mislimo: Koliko godina još imamo? Slobodan …"
+    },
+    {
+      "title": "Radar",
+      "url": "https://radar.nova.rs/",
+      "snippet": "Ajmo mi ono naše! Sve širi spisak zvaničnika koji su znali za probleme na brzoj pruzi, ali nisu ništa preduzeli. Godinu i po od …"
+    },
+    {
+      "title": "NOVA S - YouTube",
+      "url": "https://www.youtube.com/c/NOVAStv/featured",
+      "snippet": "Nova S je kablovski kanal koji je u martu 2019. pokrenula United Media i deo je najveće regionalne televizijske mreže Nova."
+    },
+    {
+      "title": "Vesti na Nova.rs",
+      "url": "https://nova.rs/vesti/",
+      "snippet": "Pratite vesti iz oblasti politika, društvo, biznis, crna hronika, svet na Nova.rs. Tačne, proverene, precizne vesti, ekskluzivni intervjui"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "kirikir13/needle3",
+  "slug": "kirikir13-needle3",
+  "author": "kirikir13",
+  "url": "https://huggingface.co/kirikir13/needle3",
+  "created_at": "2026-09-19T16:44:39.000Z",
+  "updated_at": "2026-09-19T16:44:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "cactus-needle",
+  "languages": [],
+  "tags": [
+    "cactus-needle",
+    "needle",
+    "tool-calling",
+    "function-calling",
+    "on-device",
+    "edge",
+    "quantization",
+    "webassembly",
+    "text-generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 325396617,
+  "storage_human": "325 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ARD Mediathek: Filme, Serien und Dokus online anschauen",
+      "url": "https://www.ardmediathek.de/",
+      "snippet": "Alle Inhalte der ARD Mediathek im Überblick: Livestreams, Nachrichten, Filme, Serien und spannende Dokus. Hier anschauen!"
+    },
+    {
+      "title": "Das Erste in der Mediathek – jetzt online anschauen",
+      "url": "https://www.ardmediathek.de/daserste",
+      "snippet": "Mehr Filme Sturm der Liebe & Rote Rosen Letzte Folge verpasst? Neue Episode vorab! Hier findest du jeden Tag Neues rund um …"
+    },
+    {
+      "title": "ARD.de – TV, Radio, Streams, News, Sport und alles zur ARD",
+      "url": "https://www.ard.de/",
+      "snippet": "Die ganze ARD: Fernsehen, Livestreams, Radio, Podcasts, Nachrichten, Sport und Kinderkanal. Zudem Infos über den …"
+    },
+    {
+      "title": "ARD Mediathek - Verpasste ARD Sendung von heute, gestern und …",
+      "url": "https://mediatheksuche.de/station/ARD",
+      "snippet": "Schneller Mediatheken wie die von ARD durchsuchen, verpasste ARD Sendungen von heute, gestern und mehr im Stream auf Abruf: …"
+    },
+    {
+      "title": "Alle Inhalte von der ARD - ZDFmediathek",
+      "url": "https://www.zdf.de/ard",
+      "snippet": "Entdecke die ARD – aktuelle News, große Shows und vieles mehr. Jetzt streamen und regional dabei sein!"
+    }
+  ]
+}

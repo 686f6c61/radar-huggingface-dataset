@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "wfzyx/von",
+  "slug": "wfzyx-von",
+  "author": "wfzyx",
+  "url": "https://huggingface.co/wfzyx/von",
+  "created_at": "2026-09-19T15:19:01.000Z",
+  "updated_at": "2026-09-22T16:07:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-classification",
+  "library": "von-sdk",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "von-sdk",
+    "safetensors",
+    "modernbert",
+    "system-one",
+    "decision-model",
+    "option-marker",
+    "calibrated",
+    "jevbench",
+    "non-autoregressive",
+    "zero-shot-classification",
+    "en",
+    "base_model:answerdotai/ModernBERT-large",
+    "base_model:finetune:answerdotai/ModernBERT-large",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 33,
+  "downloads_30d": 14276,
+  "trending_score": 32,
+  "parameters": 395834371,
+  "parameters_human": "395.8M",
+  "storage_bytes": 7910236693,
+  "storage_human": "7.9 GB",
+  "base_model": "answerdotai/ModernBERT-large",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accounts • Snapchat",
+      "url": "https://accounts.snapchat.com/v2/login",
+      "snippet": "Log in to Snapchat on the web to manage your account, chat, and call with friends."
+    },
+    {
+      "title": "Snapchat for Web.",
+      "url": "https://www.snapchat.com/web",
+      "snippet": "Try the new Snapchat for Web on your computer to chat, call friends, use Lenses, and more"
+    },
+    {
+      "title": "Snapchat - Dites-le dans un Snap",
+      "url": "https://www.snapchat.com/?locale=fr-FR",
+      "snippet": "Chattez, snappez, parcourez les Stories et essayez des Lenses sur votre ordinateur ou téléchargez l’application mobile ! écouvrez …"
+    },
+    {
+      "title": "Snapchat",
+      "url": "https://accounts.snapchat.com/v2/login?locale=fr-FR",
+      "snippet": "Connectez-vous à Snapchat pour gérer votre compte, discuter et appeler vos amis."
+    },
+    {
+      "title": "Snapchat Profile Manager",
+      "url": "https://profile.snapchat.com/",
+      "snippet": "Snapchat Profile Manager allows you to manage and create Public Profiles on Snapchat. Login or get started today to setup your …"
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "schema": 1,
+  "id": "JazerJu/qwen3-asr-ctc-aiinfra",
+  "slug": "jazerju-qwen3-asr-ctc-aiinfra",
+  "author": "JazerJu",
+  "url": "https://huggingface.co/JazerJu/qwen3-asr-ctc-aiinfra",
+  "created_at": "2026-09-19T13:19:58.000Z",
+  "updated_at": "2026-09-19T13:21:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "pytorch",
+  "languages": [
+    "zh",
+    "en",
+    "yue",
+    "ja",
+    "ko",
+    "de",
+    "fr",
+    "es",
+    "it",
+    "pt",
+    "nl",
+    "pl"
+  ],
+  "tags": [
+    "pytorch",
+    "ctc-head",
+    "ctc",
+    "self-conditioned-ctc",
+    "speech-recognition",
+    "forced-alignment",
+    "multilingual",
+    "automatic-speech-recognition",
+    "zh",
+    "en",
+    "yue",
+    "ja",
+    "ko",
+    "de",
+    "fr",
+    "es",
+    "it",
+    "pt",
+    "nl",
+    "pl",
+    "base_model:Qwen/Qwen3-ASR-1.7B",
+    "base_model:finetune:Qwen/Qwen3-ASR-1.7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 341802480,
+  "storage_human": "342 MB",
+  "base_model": "Qwen/Qwen3-ASR-1.7B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "جابر الكاسر - ويكيبيديا",
+      "url": "https://ar.wikipedia.org/wiki/%D8%AC%D8%A7%D8%A8%D8%B1_%D8%A7%D9%84%D9%83%D8%A7%D8%B3%D8%B1",
+      "snippet": "جابر الكاسر ، هو مطرب سعودي من مواليد حائل في (10 فبراير 1974) عرف ببدايته كفنان شعبي. كانت بدايته بالبوم ظلمتني وكان الطابع الشعبي عنوانه. ثم بعد ذلك جاء البومة الثاني بعنوان أستاذ …"
+    },
+    {
+      "title": "Jaber Al Kaser … Ma Arda Aaleh | جابر الكاسر … ما أرضى عليه",
+      "url": "https://www.youtube.com/watch?v=6B-1DfS-cMM",
+      "snippet": "Oct 13, 2015 · كلمات: عبد الله الملحم - الحان: جابر الكاسر من البوم ... بدا يتغيّر From Album ..."
+    },
+    {
+      "title": "jaberalkaser1 جابر الكاسر - YouTube",
+      "url": "https://www.youtube.com/@jaberalkaser1/videos",
+      "snippet": "Jaber Al Kaser - Moazzie | Lyrics Video 2023 | جابر الكاسر - معزي."
+    },
+    {
+      "title": "‎جابر الكاسر‎ (@jaberalkaser1) • Instagram photos and videos",
+      "url": "https://www.instagram.com/jaberalkaser1/",
+      "snippet": "51K Followers, 333 Following, 413 Posts - ‎جابر الكاسر (@jaberalkaser1)‎ on Instagram: \"‎إدارة أعمال روتانا 00966566316672‎\""
+    },
+    {
+      "title": "جابر الكاسر (@jaberalkaser1) | القصص ومنصّة \"الأضواء\" وعدسات Lens في ...",
+      "url": "https://www.snapchat.com/@jaberalkaser1?locale=ar",
+      "snippet": "يقدم الفنان جابر الكاسر عرضًا موسيقيًا مباشرًا في أجواء تقليدية، حيث يُظهر أداءً غنائيًا مميزًا مع فرقته التي تتألف من موسيقيين يعزفون آلات شعبية مثل الناي والدف."
+    }
+  ]
+}

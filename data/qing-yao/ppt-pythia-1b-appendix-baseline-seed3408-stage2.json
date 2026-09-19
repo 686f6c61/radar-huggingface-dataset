@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "qing-yao/ppt-pythia-1b-appendix-baseline-seed3408-stage2",
+  "slug": "qing-yao-ppt-pythia-1b-appendix-baseline-seed3408-stage2",
+  "author": "qing-yao",
+  "url": "https://huggingface.co/qing-yao/ppt-pythia-1b-appendix-baseline-seed3408-stage2",
+  "created_at": "2026-09-19T18:53:08.000Z",
+  "updated_at": "2026-09-20T09:31:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:EleutherAI/pythia-1b",
+    "base_model:finetune:EleutherAI/pythia-1b",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1011781632,
+  "parameters_human": "1.01B",
+  "storage_bytes": 26306629409,
+  "storage_human": "26.3 GB",
+  "base_model": "EleutherAI/pythia-1b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dynastie Qing — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Dynastie_Qing",
+      "snippet": "Projet d'histoire des Qing Histoire de Qing (République populaire) Chasse impériale de la dynastie Qing L'héritage de la dynastie …"
+    },
+    {
+      "title": "Qing dynasty - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Qing_dynasty",
+      "snippet": "The Qing dynasty (/ tʃɪŋ / CHING), officially the Great Qing, [b] also known as the Qing Empire or Qing China, was a Manchu -led …"
+    },
+    {
+      "title": "Dynastie Qing : Ascension, apogée et chute de l'empire chinois",
+      "url": "https://tourisme-chine.com/dynastie-qing-chine/",
+      "snippet": "Jan 7, 2025 · La dynastie des Qing (1644-1912), dernière grande dynastie impériale de Chine, incarne une période de grandeur et de …"
+    },
+    {
+      "title": "Chine - Dynastie Qing (1644-1912) - Fiche synthèse - SAPERE",
+      "url": "https://sapere.page/chine-dynastie-quin/",
+      "snippet": "Aug 24, 2024 · Découvrez l'histoire fascinante de la dynastie Qing (1644-1912), la dernière dynastie impériale de Chine. Ce tableau …"
+    },
+    {
+      "title": "La dynastie Qing : le dernier chapitre de la Chine impériale",
+      "url": "https://chinoistips.com/dynastie-qing/",
+      "snippet": "Découvrez tous les secrets de la dynastie QING une période d’expansion territoriale et d’épanouissement culturel, mais aussi de …"
+    }
+  ]
+}

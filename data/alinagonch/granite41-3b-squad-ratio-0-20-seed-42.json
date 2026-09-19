@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "AlinaGonch/granite41-3b-squad-ratio-0.20-seed-42",
+  "slug": "alinagonch-granite41-3b-squad-ratio-0-20-seed-42",
+  "author": "AlinaGonch",
+  "url": "https://huggingface.co/AlinaGonch/granite41-3b-squad-ratio-0.20-seed-42",
+  "created_at": "2026-09-19T13:52:19.000Z",
+  "updated_at": "2026-09-19T13:52:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 124593064,
+  "storage_human": "125 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mountain Bike News, Photos, Videos & Events | Pinkbike",
+      "url": "https://www.pinkbike.com/",
+      "snippet": "Pinkbike is the homepage of mountain biking. Stay updated with the latest news, reviews, videos, buyer's guides and racing results. …"
+    },
+    {
+      "title": "Ayuda de YouTube",
+      "url": "https://support.google.com/youtube/?hl=es",
+      "snippet": "Centro de asistencia oficial de YouTube donde puedes encontrar sugerencias y tutoriales para aprender a utilizar el producto y …"
+    },
+    {
+      "title": "Channel or account terminations - YouTube Help - Google Help",
+      "url": "https://support.google.com/youtube/answer/2802168?hl=en",
+      "snippet": "Check status of a termination appeal Open YouTube Studio. View confirmation of your appeal submission, and check your appeal’s …"
+    },
+    {
+      "title": "Interview: Vali Höll On Not Getting Paid By YT, Rider ... - Pinkbike",
+      "url": "https://www.pinkbike.com/news/interview-vali-hll-on-3-in-a-row-her-new-team-and-a-game-changing-frankenstein-bike.html",
+      "snippet": "Jun 30, 2026 · Vali Höll talks about winning three in a row, her new team and bike, the bright future of women's downhill racing, and …"
+    },
+    {
+      "title": "Manage your home area or current location for YouTube TV",
+      "url": "https://support.google.com/youtubetv/answer/7129768?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "When you sign up for YouTube TV, we’ll ask you to share your home zip code. We may also ask you to verify your area location via …"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "suveda999/Reinforce-CartPole-v1",
+  "slug": "suveda999-reinforce-cartpole-v1",
+  "author": "suveda999",
+  "url": "https://huggingface.co/suveda999/Reinforce-CartPole-v1",
+  "created_at": "2026-09-19T16:09:13.000Z",
+  "updated_at": "2026-09-20T05:57:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "CartPole-v1",
+    "reinforce",
+    "reinforcement-learning",
+    "custom-implementation",
+    "deep-rl-class",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10843,
+  "storage_human": "10843 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accéder à mon mail Orange - Communauté Orange",
+      "url": "https://communaute.orange.fr/t5/Webmail-Orange/Acc%C3%A9der-%C3%A0-mon-mail-Orange/td-p/36",
+      "snippet": "Aug 2, 2013 · Voici quelques infos utiles à préciser lorsque vous rencontrez un soucis de messagerie Comment consultez-vous vos e …"
+    },
+    {
+      "title": "Résolu : Accès au portail Orange France - Communauté Orange",
+      "url": "https://communaute.orange.fr/t5/Webmail-Orange/Acc%C3%A8s-au-portail-Orange-France/td-p/1699164",
+      "snippet": "Nov 19, 2018 · Bonjour, Pour accéder au portail c’est par ici 👉 Portail Orange | Offres Mobiles, Internet, TV, Actu & Accès compte Mail …"
+    },
+    {
+      "title": "Largeur bandeau du portail Orange actu - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-37352882-largeur-bandeau-du-portail-orange-actu",
+      "snippet": "Sep 20, 2021 · Bonjour, Peut-on diminuer physiquement la largeur du bandeau \"Orange actu \"en page d'accueil ? En effet, il prend …"
+    },
+    {
+      "title": "mettre \"portail orange\" en raccourci sur le bureau",
+      "url": "https://communaute.orange.fr/t5/Webmail-Orange/mettre-quot-portail-orange-quot-en-raccourci-sur-le-bureau/td-p/2192529",
+      "snippet": "Apr 28, 2020 · Tu réduis la fenêtre de ton navigateur où tu es connecté sur le portail Orange https://www.orange.fr puis tu surlignes …"
+    },
+    {
+      "title": "Résolu : Comment avoir ma boite Mail directement sur le bur ...",
+      "url": "https://communaute.orange.fr/t5/Webmail-Orange/Comment-avoir-ma-boite-Mail-directement-sur-le-bureau/td-p/3080748",
+      "snippet": "Jan 18, 2024 · Pour accéder à ta boite mail, tu passes par le portail Orange, et tu t'y identifies, si tu utilises l'appli déjà présente dans …"
+    }
+  ]
+}

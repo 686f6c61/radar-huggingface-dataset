@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "mradermacher/LFM2.5-8B-A1B-Hermes-Agentic-Coder-Abliterated-v3-GGUF",
+  "slug": "mradermacher-lfm2-5-8b-a1b-hermes-agentic-coder-abliterated-v3-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/LFM2.5-8B-A1B-Hermes-Agentic-Coder-Abliterated-v3-GGUF",
+  "created_at": "2026-09-19T13:38:21.000Z",
+  "updated_at": "2026-09-19T15:44:45.000Z",
+  "license": "liquid-foundation-model-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "duo-neural",
+    "agentic",
+    "coding",
+    "function-calling",
+    "hermes",
+    "liquid-foundation-model",
+    "moe",
+    "abliterated",
+    "code",
+    "evalplus",
+    "reasoning",
+    "system2",
+    "en",
+    "base_model:DuoNeural/LFM2.5-8B-A1B-Hermes-Agentic-Coder-Abliterated-v3",
+    "base_model:quantized:DuoNeural/LFM2.5-8B-A1B-Hermes-Agentic-Coder-Abliterated-v3",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8467856832,
+  "parameters_human": "8.47B",
+  "storage_bytes": 74938864128,
+  "storage_human": "74.9 GB",
+  "base_model": "DuoNeural/LFM2.5-8B-A1B-Hermes-Agentic-Coder-Abliterated-v3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Flight Status | Manage your booking | Emirates",
+      "url": "https://www.emirates.com/english/manage-booking/flight-status/?msockid=056e0214f0f1698f105915cdf1096817",
+      "snippet": "Jun 22, 2026 · Check the status of any Emirates flight, and stay up to date with departure times, arrivals, cancellations, and delays."
+    },
+    {
+      "title": "Live Emirates Flight Status - FlightAware",
+      "url": "https://www.flightaware.com/live/fleet/UAE",
+      "snippet": "Emirates Flight Status (with flight tracker and live maps) -- view all flights or track any Emirates flight"
+    },
+    {
+      "title": "Emirates Flight Status, Live Tracker & Schedule - Airportia",
+      "url": "https://www.airportia.com/airlines/emirates/flight-status/",
+      "snippet": "Check Emirates flight status, schedules, and claim compensation for delays instantly."
+    },
+    {
+      "title": "Emirates | Fly Better",
+      "url": "https://www.emirates.com/?msockid=056e0214f0f1698f105915cdf1096817",
+      "snippet": "Sep 18, 2024 · Customers departing from any of Emirates’ U.S. gateways are advised to arrive at the airport at least 4 hours prior to …"
+    },
+    {
+      "title": "Emirates Flight Status & Flight tracker - AirportInfo",
+      "url": "https://airportinfo.live/emirates-flight-status",
+      "snippet": "14 hours ago · Emirates Flight Status & live flight timetable and schedules. Check flight status | delay | cancellation | departure | …"
+    }
+  ]
+}

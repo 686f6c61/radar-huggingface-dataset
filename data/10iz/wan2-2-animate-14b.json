@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "10iz/Wan2.2-Animate-14B",
+  "slug": "10iz-wan2-2-animate-14b",
+  "author": "10iz",
+  "url": "https://huggingface.co/10iz/Wan2.2-Animate-14B",
+  "created_at": "2026-09-19T15:17:15.000Z",
+  "updated_at": "2026-09-19T15:17:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "video-to-video",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "onnx",
+    "safetensors",
+    "video-to-video",
+    "arxiv:2503.20314",
+    "base_model:Wan-AI/Wan2.2-I2V-A14B",
+    "base_model:quantized:Wan-AI/Wan2.2-I2V-A14B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 17274817108,
+  "parameters_human": "17.27B",
+  "storage_bytes": 72361997489,
+  "storage_human": "72.4 GB",
+  "base_model": "Wan-AI/Wan2.2-I2V-A14B",
+  "formats": [
+    "diffusers",
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aktuelle Damenmode, schicke Schuhe und Wäsche | creation L",
+      "url": "https://www.creation-l.de/?msockid=343bee380d2e65063e64f9e10c0164c3",
+      "snippet": "Damenmode von creation L verwöhnt mit durchdachten Schnitten, die Ihre Figur vorteilhaft betonen. Für das Plus an Komfort sorgen …"
+    },
+    {
+      "title": "Exklusive Damenmode ab 50 Jahren kaufen | creation L",
+      "url": "https://www.creation-l.de/damenmode?msockid=343bee380d2e65063e64f9e10c0164c3",
+      "snippet": "Exklusive Damenmode im Mode Online Shop creation L kaufen. Sportiv elegant oder zeitlos? Jetzt entdecken und direkt online …"
+    },
+    {
+      "title": "Extravagante Damen Shirts kaufen im Online Shop | creation L",
+      "url": "https://www.creation-l.de/damen-shirts?msockid=343bee380d2e65063e64f9e10c0164c3",
+      "snippet": "Modische Damen Shirts für jeden Anlass im Online Shop von creation L. ☀️ Stilvolle Schnitte und perfekte Passform – jetzt …"
+    },
+    {
+      "title": "Exklusive Kleider kaufen im Online Shop | creation L",
+      "url": "https://www.creation-l.de/kleider?msockid=343bee380d2e65063e64f9e10c0164c3",
+      "snippet": "Entdecken Sie stilsichere Kleider bei creation L: 🌸 Exklusive Designs Hochwertige Stoffe – jetzt im Online-Shop bestellen!"
+    },
+    {
+      "title": "Exklusive Collection L kaufen im Online Shop | creation L",
+      "url": "https://www.creation-l.de/s/collection-l?msockid=343bee380d2e65063e64f9e10c0164c3",
+      "snippet": "Exklusive Collection L im Online Shop von creation L kaufen. Anspruchsvolle Mode für Sie & Ihn. Gratis Geschenk beim 1. Einkauf! …"
+    }
+  ]
+}

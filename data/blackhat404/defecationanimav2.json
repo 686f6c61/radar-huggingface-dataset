@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "BlackHat404/DefecationAnimaV2",
+  "slug": "blackhat404-defecationanimav2",
+  "author": "BlackHat404",
+  "url": "https://huggingface.co/BlackHat404/DefecationAnimaV2",
+  "created_at": "2026-09-19T14:29:03.000Z",
+  "updated_at": "2026-09-19T14:31:34.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "not-for-all-audiences",
+    "base_model:circlestone-labs/Anima",
+    "base_model:adapter:circlestone-labs/Anima",
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 37420205,
+  "storage_human": "37 MB",
+  "base_model": "circlestone-labs/Anima",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube TV Help",
+      "url": "https://support.google.com/youtubetv/?hl=en",
+      "snippet": "Official YouTube TV Help Center where you can find tips and tutorials on using YouTube TV and other answers to frequently asked …"
+    },
+    {
+      "title": "Télécharger l'application mobile YouTube - Android - Aide YouTube",
+      "url": "https://support.google.com/youtube/answer/3227660?hl=fr&co=GENIE.Platform%3DAndroid",
+      "snippet": "Téléchargez l'application YouTube pour profiter d'une expérience de visionnage enrichie sur votre appareil mobile. Télécharger …"
+    },
+    {
+      "title": "谷歌账号注册验证无法发出信息怎么办? - 知乎",
+      "url": "https://www.zhihu.com/question/1945629068243481180",
+      "snippet": "3、国内注册的账号能否使用 YouTube 和 Google Play？ 完全可以。 Google 账号是全球通用的，注册成功后即可无缝登录谷歌全家桶 …"
+    },
+    {
+      "title": "如何在中国大陆用「合法」的方式观看到youtube上面的「有价值」的 …",
+      "url": "https://www.zhihu.com/question/1903231775980913051",
+      "snippet": "YouTube 将自动为 添加翻译后的中文字幕，这一功能有效解决了语言障碍问题。 当你向下浏览时，部分 会标注相关信息。 例如，博 …"
+    },
+    {
+      "title": "Manage your home area or current location for YouTube TV",
+      "url": "https://support.google.com/youtubetv/answer/7129768?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "YouTube TV outside of your home area While outside of your home area, you can watch programming local to where you are, but …"
+    }
+  ]
+}

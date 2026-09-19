@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "AustinFu/hw1-hc3-detector",
+  "slug": "austinfu-hw1-hc3-detector",
+  "author": "AustinFu",
+  "url": "https://huggingface.co/AustinFu/hw1-hc3-detector",
+  "created_at": "2026-09-19T14:33:02.000Z",
+  "updated_at": "2026-09-19T14:35:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "bert",
+    "text-classification",
+    "educational",
+    "en",
+    "dataset:Hello-SimpleAI/HC3",
+    "arxiv:2301.07597",
+    "base_model:sentence-transformers/all-MiniLM-L6-v2",
+    "base_model:finetune:sentence-transformers/all-MiniLM-L6-v2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 22713986,
+  "parameters_human": "22.7M",
+  "storage_bytes": 90867952,
+  "storage_human": "91 MB",
+  "base_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "محافظة واسط, خريطة مجانية, خريطة خاليه من الفراغ, خريطة الخطوط العريضة ...",
+      "url": "https://d-maps.com/carte.php?num_car=304129&lang=ar",
+      "snippet": "محافظة واسط d-maps.com: خريطة مجانية، خريطة تفصيلية مجانية، خريطة فارغة مجانية، خريطة أساسية عالية الدقة مجانية. ملفات GIF وPDF وSVG سواحل, حدود, هيدروغرافيا, أبيض."
+    },
+    {
+      "title": "محافظة واسط, خريطة مجانية, خريطة خاليه من الفراغ, خريطة الخطوط العريضة ...",
+      "url": "https://d-maps.com/carte.php?num_car=304151&lang=ar",
+      "snippet": "محافظة واسط d-maps.com: خريطة مجانية، خريطة تفصيلية مجانية، خريطة فارغة مجانية، خريطة أساسية عالية الدقة مجانية. ملفات GIF وPDF وSVG حدود, المدن الرئيسية, الطرق, …"
+    },
+    {
+      "title": "الواسطى (مدينة) - ويكيبيديا",
+      "url": "https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D9%88%D8%A7%D8%B3%D8%B7%D9%89_(%D9%85%D8%AF%D9%8A%D9%86%D8%A9)",
+      "snippet": "مركز الواسطى هي نقطة تلاقى ثلاث محافظات (الجيزة - بني سويف - الفيوم) فهو شمال بني سويف بــ 35 كيلومتر حيث نهاية قرية الميمون التابعة للواسطى ؛ وجنوب نهاية محافظة الجيزة بحوالي 1 كم «قرية …"
+    },
+    {
+      "title": "خرائط Google",
+      "url": "https://www.google.com/maps/search/?hl=ar",
+      "snippet": "مطاعم محطات وقود أجهزة صرّاف آلي تسوّق تفاصيل الخريطة"
+    },
+    {
+      "title": "OpenStreetMap",
+      "url": "https://www.openstreetmap.org/?locale=arz",
+      "snippet": "OpenStreetMap is a map of the world, created by people like you and free to use under an open license."
+    }
+  ]
+}

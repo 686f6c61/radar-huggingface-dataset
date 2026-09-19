@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "AdeshJha1101/it-support-model",
+  "slug": "adeshjha1101-it-support-model",
+  "author": "AdeshJha1101",
+  "url": "https://huggingface.co/AdeshJha1101/it-support-model",
+  "created_at": "2026-09-19T14:07:18.000Z",
+  "updated_at": "2026-09-19T14:07:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66956548,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267843921,
+  "storage_human": "268 MB",
+  "base_model": "distilbert/distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bill Bailey Tickets | Leeds - firstdirectbankarena.com",
+      "url": "https://www.firstdirectbankarena.com/events/detail/bill-bailey-2026",
+      "snippet": "Get Bill Bailey tickets for his show at first direct bank arena in Leeds on 28 November 2026. Prices start from £46 + fees. Secure your …"
+    },
+    {
+      "title": "Bill Bailey - Venue Premium Tickets Leeds Tickets | November 28, 2026 ...",
+      "url": "https://www.stubhub.com/bill-bailey-leeds-tickets-11-28-2026/event/159946080?msockid=1b852bd4df9a640b2c473c0ddebc6593",
+      "snippet": "14 hours ago · See Bill Bailey - Venue Premium Tickets live at First Direct Arena in Leeds on November 28, 2026, at 6:00 PM. Book …"
+    },
+    {
+      "title": "Live — BILL BAILEY",
+      "url": "https://www.billbailey.co.uk/live/",
+      "snippet": "Sep 1, 2026 · Bill took THOUGHTIFIER on sold-out tours of Australia, New Zealand, mainland Europe and finished with a UK arena …"
+    },
+    {
+      "title": "Bill Bailey - Leeds - first direct bank arena - Sat, Nov 28, 2026, 08: ...",
+      "url": "https://www.axs.com/events/1234693/bill-bailey-tickets",
+      "snippet": "Buy tickets for Bill Bailey at first direct bank arena in Leeds on Sat, 28 November 2026 - 08:00 PM with AXS."
+    },
+    {
+      "title": "Bill Bailey Leeds — First Direct Arena | 28 Nov 2026 | EventsList.co.uk",
+      "url": "https://eventslist.co.uk/leeds/events/bill-bailey-leeds-2026-11-28",
+      "snippet": "Set against the backdrop of the First Direct Arena on 28 November 2026, Bill Bailey brings his distinctive fusion of funk, jazz, and …"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "mradermacher/EvoLM-8B-Rubric-GGUF",
+  "slug": "mradermacher-evolm-8b-rubric-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/EvoLM-8B-Rubric-GGUF",
+  "created_at": "2026-09-19T13:57:51.000Z",
+  "updated_at": "2026-09-19T14:05:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "rubric-generation",
+    "reward-modeling",
+    "evolm",
+    "en",
+    "base_model:stellalisy/EvoLM-8B-Rubric",
+    "base_model:quantized:stellalisy/EvoLM-8B-Rubric",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 73425335680,
+  "storage_human": "73.4 GB",
+  "base_model": "stellalisy/EvoLM-8B-Rubric",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FRITZ! - Alles für das Heimnetz",
+      "url": "https://fritz.com/",
+      "snippet": "Welche FRITZ!Box ist die richtige für dich? Nutze unseren praktischen FRITZ!Box-Finder und finde in wenigen Schritten das Modell, …"
+    },
+    {
+      "title": "Login – Anmeldung und Registrierung bei FRITZ!",
+      "url": "https://fritz.com/pages/login",
+      "snippet": "Die neue FRITZ!Box muss regulär zum vollen Kaufpreis vom Kunden erworben werden. Der im Rahmen des Alt-gegen-Neu …"
+    },
+    {
+      "title": "Benutzeroberfläche der FritzBox aufrufen - so geht's - CHIP",
+      "url": "https://www.chip.de/ratgeber/wifi-dsl-internet/benutzeroberflaeche-der-fritzbox-aufrufen-so-geht-s_7855b7c8-0340-4962-9b84-53e342eafd00.html",
+      "snippet": "May 7, 2026 · Die Benutzeroberfläche Ihrer FritzBox! können Sie über verschiedene Wege aufrufen. Es stehen einige Möglichkeiten …"
+    },
+    {
+      "title": "MyFRITZ!Net",
+      "url": "https://myfritz.net/",
+      "snippet": "Logging into MyFRITZ!Net Sie müssen JavaScript in Internet-Browser aktivieren, um sich anmelden zu können. You must enable …"
+    },
+    {
+      "title": "FRITZ!Box-Login: Benutzeroberfläche Ihres 1&1 HomeServers aufrufen",
+      "url": "https://hilfe-center.1und1.de/benutzeroberflaeche-der-fritz-box-aufrufen",
+      "snippet": "In der Benutzeroberfläche der FRITZ!Box können Sie den Online-Monitor einsehen, die Telefonie verwalten, Ihr WLAN, Heimnetz …"
+    }
+  ]
+}

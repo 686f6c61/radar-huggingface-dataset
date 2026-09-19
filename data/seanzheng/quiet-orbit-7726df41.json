@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "SeanZheng/quiet-orbit-7726df41",
+  "slug": "seanzheng-quiet-orbit-7726df41",
+  "author": "SeanZheng",
+  "url": "https://huggingface.co/SeanZheng/quiet-orbit-7726df41",
+  "created_at": "2026-09-19T14:28:25.000Z",
+  "updated_at": "2026-09-20T15:59:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 253300543469,
+  "storage_human": "253.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ただいまアクセスしにくい状況が発生しております",
+      "url": "https://www.jalan.net/ikisaki/map/tokyo/?msockid=1bfaeaaac91a6b4a015cfd73c8a96aec",
+      "snippet": "じゃらんならおすすめ宿のお得な期間限定プランが満載。当日／直前のオンライン予約もOK。ホテル旅館の宿泊予約は国内最大級 …"
+    },
+    {
+      "title": "【実質最安値保証】鹿児島県のホテル・旅館 - 宿泊予約は ...",
+      "url": "https://www.jalan.net/ikisaki/map/kagoshima/?msockid=1bfaeaaac91a6b4a015cfd73c8a96aec",
+      "snippet": "2 days ago · SHIROYAMA HOTEL kagoshima（城山ホテル鹿児島） ハイクラス 清潔感 高評価 朝食 高評価 風呂 高評価 4.6 (3,122 …"
+    },
+    {
+      "title": "【実質最安値保証】広島県のホテル・旅館 - 宿泊予約は ...",
+      "url": "https://www.jalan.net/ikisaki/map/hiroshima/?msockid=1bfaeaaac91a6b4a015cfd73c8a96aec",
+      "snippet": "16 hours ago · 広島県／広島 広島ワシントンホテル 朝食 高評価 風呂 高評価 部屋 高評価 4.4 (2,645件) 1泊 大人2名 合計 (税込) …"
+    },
+    {
+      "title": "【実質最安値保証】青森県のホテル・旅館 - 宿泊予約は ...",
+      "url": "https://www.jalan.net/ikisaki/map/aomori/?msockid=1bfaeaaac91a6b4a015cfd73c8a96aec",
+      "snippet": "16 hours ago · 1泊 大人2名 合計 (税込) 7,650円～ 1名 3,825円～ プラン一覧をみる 青森県／青森・浅虫・八甲田 八甲田城ヶ倉温泉 …"
+    },
+    {
+      "title": "【実質最安値保証】山形県のホテル・旅館 - 宿泊予約は ...",
+      "url": "https://www.jalan.net/ikisaki/map/yamagata/?msockid=1bfaeaaac91a6b4a015cfd73c8a96aec",
+      "snippet": "16 hours ago · KAMEYA HOTEL ハイクラス 夕食 高評価 部屋 高評価 接客 高評価 4.5 (576件) 1泊 大人2名 合計 (税込) 23,320円～ 1 …"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "fecasado/gfm-kitchen-lettuce-22dN",
+  "slug": "fecasado-gfm-kitchen-lettuce-22dn",
+  "author": "fecasado",
+  "url": "https://huggingface.co/fecasado/gfm-kitchen-lettuce-22dN",
+  "created_at": "2026-09-19T18:25:13.000Z",
+  "updated_at": "2026-09-19T18:25:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "gaze_flow_matching",
+    "robotics",
+    "dataset:fecasado/lettuce-to-plate-320x240",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 75225290,
+  "parameters_human": "75.2M",
+  "storage_bytes": 300962360,
+  "storage_human": "301 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Die Bergisel Sprungschanze in Innsbruck - ein Besucherhighlight in Tirol",
+      "url": "https://www.bergisel.info/at/",
+      "snippet": "Bergisel - Sportstätte, Event Location & Restaurants Der atemberaubende Ausblick auf Innsbruck, die Faszination einer …"
+    },
+    {
+      "title": "Preise im Bergisel Skisprungstadion und Kombitickets",
+      "url": "https://www.bergisel.info/at/preise.php",
+      "snippet": "Preise bis Ende 2026 Inklusive (beliebiger) Benützung des Schrägaufzugs und Turmlifts zum Bergisel SKY und zur Aussichtsterrasse."
+    },
+    {
+      "title": "Restaurant 1809 am Bergisel, Innsbruck, Tirol, Austria",
+      "url": "https://www.bergisel.info/at/erkunden/restaurant/restaurant-1809-am-bergisel.php",
+      "snippet": "Das Restaurant 1809 in Innsbruck überzeugt Busgruppen mit attraktiven Gruppenmenüs sowie Gourmet-Liebhaber mit kulinarischen …"
+    },
+    {
+      "title": "Bergisel Schanze - Innsbruck, Tirol, Österreich",
+      "url": "https://www.bergisel.info/at/erkunden/bergiselschanze/bergisel-schanze.php",
+      "snippet": "Bergisel Schanze Die Bergisel Schanze ist ein ganzjähriges Besucherhighlight in Tirol. Die einzigartige Architektur des …"
+    },
+    {
+      "title": "Seminare Bergisel - Innsbruck - Tirol - Österreich",
+      "url": "https://www.bergisel.info/at/planen/event-location/seminare-bergisel.php",
+      "snippet": "Seminare und Workshops am Bergisel Bergisel ½ Tag: (9-13 Uhr oder 13-17 Uhr) Eur 76,- pro Person inkl. Mwst. • Liftfahrten im …"
+    }
+  ]
+}

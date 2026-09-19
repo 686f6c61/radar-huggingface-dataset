@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Yoedi/foq-reflex-8b-gguf",
+  "slug": "yoedi-foq-reflex-8b-gguf",
+  "author": "Yoedi",
+  "url": "https://huggingface.co/Yoedi/foq-reflex-8b-gguf",
+  "created_at": "2026-09-19T15:58:34.000Z",
+  "updated_at": "2026-09-19T15:59:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "system-1",
+    "decision-engine",
+    "foq",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 15335424,
+  "parameters_human": "15.3M",
+  "storage_bytes": 2243546368,
+  "storage_human": "2.2 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "datingoverfifty - Reddit",
+      "url": "https://www.reddit.com/r/datingoverfifty/",
+      "snippet": "r/datingoverfifty: A forum for discussing the ins and outs of dating over 50, as well as nascent relationships, and single life."
+    },
+    {
+      "title": "unsolicited \"Your new account on XNXX GOLD\" email - Reddit",
+      "url": "https://www.reddit.com/r/Scams/comments/wip14o/unsolicited_your_new_account_on_xnxx_gold_email/",
+      "snippet": "Aug 7, 2022 · Archived post. New comments cannot be posted and votes cannot be cast."
+    },
+    {
+      "title": "World of Warcraft Classes (matching archetypes with archetypes)",
+      "url": "https://www.typologycentral.com/threads/world-of-warcraft-classes-matching-archetypes-with-archetypes.21665/",
+      "snippet": "Sep 13, 2009 · chris1207 New member Joined Apr 11, 2008 Messages 467 MBTI Type XNXX Enneagram 3w2 Dec 27, 2009 #18"
+    },
+    {
+      "title": "[Type 4] - I'm a really special 4w5; I don't want to be special.",
+      "url": "https://www.typologycentral.com/threads/im-a-really-special-4w5-i-dont-want-to-be-special.57825/",
+      "snippet": "Aug 21, 2012 · This irks me no end, this emphasis on wanting to be unique, different, and special. I don't want that. I would like to fit …"
+    },
+    {
+      "title": "TikTok - humanity in all forms - Reddit",
+      "url": "https://www.reddit.com/r/TikTok/",
+      "snippet": "This is a place to post fun, cute, funny, interesting titktok videos you've found. This sub is to share fun tiktok you've found or made. …"
+    }
+  ]
+}

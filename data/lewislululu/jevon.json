@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "lewislululu/jevon",
+  "slug": "lewislululu-jevon",
+  "author": "lewislululu",
+  "url": "https://huggingface.co/lewislululu/jevon",
+  "created_at": "2026-09-19T19:56:46.000Z",
+  "updated_at": "2026-09-19T19:35:14.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "maze",
+    "snake",
+    "planning",
+    "grid-world",
+    "value-iteration-network",
+    "decision-model",
+    "pytorch",
+    "reinforcement-learning",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 160961522,
+  "storage_human": "161 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wilde Pferde paaren sich in Zeitlupe: Stockvideos ... - Shutterstock",
+      "url": "https://www.shutterstock.com/de/video/clip-30102475-wild-horses-mating-amongst-herd-slow-motion?msockid=32b898186f0b6955172d8fc16e7068ac",
+      "snippet": "Aug 24, 2017 · Holen Sie sich ein 33.000 zweites Wilde Pferde paaren sich in Zeitlupe Stockvideo mit 59.94FPS. 4K- und HD-Video, …"
+    },
+    {
+      "title": "Mare gets covered: Tamme does a real favor! - YouTube",
+      "url": "https://www.youtube.com/watch?v=nJIgy-30VO0",
+      "snippet": "Oct 28, 2020 · As an equine chiropractor, he has the gift of using nerve palpation to detect and treat misalignments and tension in …"
+    },
+    {
+      "title": "Wie Paaren Sich Pferde Mit Menschen? | AnimalFriends24.de",
+      "url": "https://animalfriends24.de/pferde/wie-paaren-sich-pferde-mit-menschen/",
+      "snippet": "Jan 19, 2022 · Das Verständnis der Grundlagen der Pferdesprache ist äußerst wichtig, um genau einschätzen zu können, was mit …"
+    },
+    {
+      "title": "34.600+ Videos und Footage zu Tierpaarung - iStock",
+      "url": "https://www.istockphoto.com/de/videos/tierpaarung?msockid=32b898186f0b6955172d8fc16e7068ac",
+      "snippet": "Durchstöbern Sie 34.660 tierpaarung Stock-Videos und Clips, die Sie in Ihren Projekten nutzen können, oder suchen Sie nach …"
+    },
+    {
+      "title": "Pferde züchten: Mit künstlicher Besamung zum perfekten Fohlen",
+      "url": "https://www.youtube.com/watch?v=fokStHzfOx4",
+      "snippet": "Jan 8, 2023 · Auf der Hengststation Bachl in Niederbayern kennt man sich mit dem Thema aus: In Sachen „Pferde decken“ und …"
+    }
+  ]
+}

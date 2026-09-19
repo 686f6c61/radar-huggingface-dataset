@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "weichen010/eagle2hg-processor-groot-n1p5",
+  "slug": "weichen010-eagle2hg-processor-groot-n1p5",
+  "author": "weichen010",
+  "url": "https://huggingface.co/weichen010/eagle2hg-processor-groot-n1p5",
+  "created_at": "2026-09-19T15:57:29.000Z",
+  "updated_at": "2026-09-19T15:57:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "eagle_2_5_vl",
+    "custom_code",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cars.co.za - 74,000+ New and Used Vehicles To Choose From",
+      "url": "https://www.cars.co.za/",
+      "snippet": "Cars.co.za makes it easy to sell your car privately on our platform. Simply take quality photos of your car, upload them along with the …"
+    },
+    {
+      "title": "Search New and Used Cars For Sale Near You | Let's Find ... - Cars.co.za",
+      "url": "https://www.cars.co.za/usedcars/",
+      "snippet": "Explore the latest new cars from top brands. Compare prices, specs & dealers nationwide. Find your perfect new car today on …"
+    },
+    {
+      "title": "Cars.co.za - South Africa’s Home of Car Classifieds, News & Reviews",
+      "url": "https://about.cars.co.za/",
+      "snippet": "Aug 3, 2026 · The premium South African automotive platform: the country’s biggest car classifieds alongside expert news, reviews …"
+    },
+    {
+      "title": "Cars.co.za - Login",
+      "url": "https://pop.cars.co.za/",
+      "snippet": "Mail-admin Click on the icon to login"
+    },
+    {
+      "title": "Cars For Sale (New and Used) - Cars.co.za",
+      "url": "https://www.cars.co.za/usedcars/passenger/",
+      "snippet": "Browse Cars For Sale (New and Used) listings on Cars.co.za, the latest news, reviews and car information. Everything you need to …"
+    }
+  ]
+}

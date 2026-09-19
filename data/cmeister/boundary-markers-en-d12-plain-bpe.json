@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "cmeister/boundary-markers-en-d12-plain-bpe",
+  "slug": "cmeister-boundary-markers-en-d12-plain-bpe",
+  "author": "cmeister",
+  "url": "https://huggingface.co/cmeister/boundary-markers-en-d12-plain-bpe",
+  "created_at": "2026-09-19T19:19:02.000Z",
+  "updated_at": "2026-09-19T19:19:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "tokenization",
+    "boundary-markers",
+    "nanochat",
+    "en",
+    "arxiv:2608.08847",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2459080129,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "梦幻西游黑风山副本抄写大全_百度知道",
+      "url": "https://zhidao.baidu.com/question/580670653.html",
+      "snippet": "梦幻西游黑风山副本抄写大全梦幻西游黑风山副本抄写大全如下：1、若菩萨欲得净土当净其心随其心净则佛土净2、法尚应舍何况非 …"
+    },
+    {
+      "title": "WOW平静之剑和征服者之剑任务的详细过程！_百度知道",
+      "url": "https://zhidao.baidu.com/question/45054117.html",
+      "snippet": "WOW平静之剑和征服者之剑任务的详细过程！1、玩家需要在暴风城圣光大教堂的大主教本尼迪塔斯处接取“与圣光同在”任务，然后前 …"
+    },
+    {
+      "title": "Forum BD Gest",
+      "url": "https://www.bdgest.com/forum/",
+      "snippet": "20 hours ago · Vous êtes perdu ? Vous ne savez pas par où commencer ? Ce forum vous permet de vous présenter et de découvrir …"
+    },
+    {
+      "title": "Calendrier des sorties - BDGest",
+      "url": "https://www.bdgest.com/sorties_comics",
+      "snippet": "May 8, 2026 · La base de données BD, manga et comics de référence. Séries, albums, auteurs, cotes, informations détaillées et …"
+    },
+    {
+      "title": "C盘里的adobe文件夹可否随意删除_百度知道",
+      "url": "https://zhidao.baidu.com/question/33789190.html",
+      "snippet": "Adobe文件夹里放的都是Adobe公司的应用软件的安装文件，属于应用程序，可以删除。 删除相应的软件，直接删除会在系统里留下没 …"
+    }
+  ]
+}

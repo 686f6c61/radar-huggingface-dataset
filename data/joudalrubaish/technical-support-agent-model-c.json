@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "JoudAlrubaish/technical-support-agent-model-c",
+  "slug": "joudalrubaish-technical-support-agent-model-c",
+  "author": "JoudAlrubaish",
+  "url": "https://huggingface.co/JoudAlrubaish/technical-support-agent-model-c",
+  "created_at": "2026-09-19T17:32:57.000Z",
+  "updated_at": "2026-09-19T17:33:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "trl",
+    "sft",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 134515008,
+  "parameters_human": "134.5M",
+  "storage_bytes": 269060280,
+  "storage_human": "269 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Formeln : Mathematik",
+      "url": "https://web2.0rechner.de/formelsammlung/mathematik",
+      "snippet": "Der wissenschaftliche Taschenrechner im Internet. Ideal zum Lösen von Hausaufgaben aus den Gebieten: Mathematik, Physik und …"
+    },
+    {
+      "title": "Formeln - Web 2.0 Taschenrechner",
+      "url": "https://web2.0rechner.de/formelsammlung/",
+      "snippet": "Der wissenschaftliche Taschenrechner im Internet. Ideal zum Lösen von Hausaufgaben aus den Gebieten: Mathematik, Physik und …"
+    },
+    {
+      "title": "Hilfe: - Web 2.0 Taschenrechner",
+      "url": "https://web2.0rechner.de/hilfe/",
+      "snippet": "Der wissenschaftliche Taschenrechner im Internet. Ideal zum Lösen von Hausaufgaben aus den Gebieten: Mathematik, Physik und …"
+    },
+    {
+      "title": "Frage anzeigen - Hoch rechnen",
+      "url": "https://web2.0rechner.de/fragen/hoch-rechnen",
+      "snippet": "Feb 23, 2015 · Der wissenschaftliche Taschenrechner im Internet. Ideal zum Lösen von Hausaufgaben aus den Gebieten: …"
+    },
+    {
+      "title": "Frage anzeigen - Rechner nicht erreichbar?",
+      "url": "https://web2.0rechner.de/fragen/rechner-nicht-erreichbar",
+      "snippet": "Nov 25, 2017 · Hallo, bei mir kommt jedesmal die Meldung, der Rechner sei nicht erreichbar, bzw. ich habe keine Internetverbindung?"
+    }
+  ]
+}

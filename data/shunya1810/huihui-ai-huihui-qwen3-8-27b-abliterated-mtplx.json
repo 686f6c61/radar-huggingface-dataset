@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "shunya1810/huihui-ai-Huihui-Qwen3.8-27B-abliterated-MTPLX",
+  "slug": "shunya1810-huihui-ai-huihui-qwen3-8-27b-abliterated-mtplx",
+  "author": "shunya1810",
+  "url": "https://huggingface.co/shunya1810/huihui-ai-Huihui-Qwen3.8-27B-abliterated-MTPLX",
+  "created_at": "2026-09-19T18:04:04.000Z",
+  "updated_at": "2026-09-19T18:05:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27356723952,
+  "parameters_human": "27.36B",
+  "storage_bytes": 16932084189,
+  "storage_human": "16.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/",
+      "snippet": "Connect and share with friends, family, and the world on Facebook."
+    },
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/r.php/",
+      "snippet": "By tapping Submit, you agree to create an account and to Facebook's , and . The describes the ways we can use the information we …"
+    },
+    {
+      "title": "Meta for Business (formerly Facebook for Business)",
+      "url": "https://business.facebook.com/",
+      "snippet": "By logging in, you can navigate to all business tools like Meta Business Suite, Ads Manager and more to help you connect with your …"
+    },
+    {
+      "title": "Facebook",
+      "url": "https://upload.facebook.com/login/identify/",
+      "snippet": "Enter your mobile number or email. Mobile number or email"
+    },
+    {
+      "title": "Meta for Business: Marketing Solutions on Facebook and Instagram",
+      "url": "https://ads.facebook.com/",
+      "snippet": "Meta for Business provides marketing and advertising tools, tips, best practices, and case studies for using Facebook and Instagram …"
+    }
+  ]
+}

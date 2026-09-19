@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "AiMamis/Jennifer",
+  "slug": "aimamis-jennifer",
+  "author": "AiMamis",
+  "url": "https://huggingface.co/AiMamis/Jennifer",
+  "created_at": "2026-09-19T19:31:52.000Z",
+  "updated_at": "2026-09-19T19:31:58.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "license:openrail++",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 458967369,
+  "storage_human": "459 MB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tracking | UPS - United States",
+      "url": "https://www.ups.com/track?loc=EN_US&msockid=27c592d7b687602428e4850eb7e061bb",
+      "snippet": "Track one or multiple packages with UPS Tracking, use your tracking number to track the status of your package."
+    },
+    {
+      "title": "UPS Global Shipping and Logistics Solutions | Ship and Track Online ...",
+      "url": "https://www.ups.com/us/en/home?msockid=27c592d7b687602428e4850eb7e061bb",
+      "snippet": "Discover fast, reliable global shipping and logistics solutions with UPS. Explore our shipping and tracking services and streamline …"
+    },
+    {
+      "title": "Where's My Package | UPS - United States",
+      "url": "https://www.ups.com/us/en/support/tracking-support/where-is-my-package?msockid=27c592d7b687602428e4850eb7e061bb",
+      "snippet": "Learn more about tracking where your UPS package may be in its journey and where to get help if you can't locate it."
+    },
+    {
+      "title": "Tracking Support | UPS - United States",
+      "url": "https://www.ups.com/us/en/support/tracking-support?msockid=27c592d7b687602428e4850eb7e061bb",
+      "snippet": "Get helpful tracking information on your package’s whereabouts, options for changing your delivery, filing a claim and more."
+    },
+    {
+      "title": "UPS - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.ups.mobile.android&hl=en-US",
+      "snippet": "It’s never been easier to ship and track your packages on-the-go. With the UPS app, you can get updates on your home screen, …"
+    }
+  ]
+}

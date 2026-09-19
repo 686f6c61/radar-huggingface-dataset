@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "kshetrajna12/reflex-qwen3.5-4b-lora",
+  "slug": "kshetrajna12-reflex-qwen3-5-4b-lora",
+  "author": "kshetrajna12",
+  "url": "https://huggingface.co/kshetrajna12/reflex-qwen3.5-4b-lora",
+  "created_at": "2026-09-19T17:57:10.000Z",
+  "updated_at": "2026-09-20T05:58:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "reflex",
+    "decision-model",
+    "system-one",
+    "jev",
+    "lora",
+    "calibration",
+    "routing",
+    "moderation",
+    "text-classification",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:adapter:Qwen/Qwen3.5-4B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25184848,
+  "storage_human": "25 MB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Current Time in Dubai, United Arab Emirates (+04) | Time.now",
+      "url": "https://time.now/dubai/",
+      "snippet": "18 hours ago · Dubai keeps its clocks on UTC +04:00, in the Asia/Dubai time zone. There is no daylight-saving shift here; the offset …"
+    },
+    {
+      "title": "Current Local Time in Dubai, Dubai, United Arab Emirates",
+      "url": "https://www.timeanddate.com/worldclock/united-arab-emirates/dubai",
+      "snippet": "Current local time in United Arab Emirates – Dubai – Dubai. Get Dubai's weather and area codes, time zone and DST. Explore …"
+    },
+    {
+      "title": "Time Now in Dubai (Emirate), United Arab Emirates",
+      "url": "https://time.now/emirate/dubai/",
+      "snippet": "18 hours ago · Get the exact current time in the Emirate of Dubai, United Arab Emirates. Live clock with seconds, UTC offset and …"
+    },
+    {
+      "title": "Current Time in Dubai — Live Clock, Time Zone & UTC Offset",
+      "url": "https://www.worldtimenow.net/time/dubai/",
+      "snippet": "18 hours ago · What time is it in Dubai right now? See the live clock, UTC+4 offset, time zone details, and Daylight Saving Time info …"
+    },
+    {
+      "title": "Time in Dubai, United Arab Emirates now",
+      "url": "https://time.is/Dubai?v=1.0.20",
+      "snippet": "18 hours ago · Exact time now, time zone, time difference, sunrise/sunset time and key facts for Dubai, United Arab Emirates."
+    }
+  ]
+}

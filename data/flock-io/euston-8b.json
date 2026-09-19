@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "flock-io/Euston-8B",
+  "slug": "flock-io-euston-8b",
+  "author": "flock-io",
+  "url": "https://huggingface.co/flock-io/Euston-8B",
+  "created_at": "2026-09-19T17:49:41.000Z",
+  "updated_at": "2026-09-19T17:59:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "mathematical-reasoning",
+    "claim-verification",
+    "sycophancy",
+    "reinforcement-learning",
+    "grpo",
+    "verifiable-rewards",
+    "graphsynth",
+    "conversational",
+    "en",
+    "dataset:MathArena/brokenarxiv-training",
+    "base_model:deepseek-ai/DeepSeek-R1-0528-Qwen3-8B",
+    "base_model:finetune:deepseek-ai/DeepSeek-R1-0528-Qwen3-8B",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16392940178,
+  "storage_human": "16.4 GB",
+  "base_model": "deepseek-ai/DeepSeek-R1-0528-Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Download Java",
+      "url": "https://www.java.com/en/download/",
+      "snippet": "Aug 18, 2026 · This download is for end users who need Java for running applications on desktops or laptops. Java 8 integrates with …"
+    },
+    {
+      "title": "Java | Oracle",
+      "url": "https://www.java.com/tr/",
+      "snippet": "Oracle Java, 1 numaralı programlama dili ve geliştirme platformudur. Maliyetleri düşürür, geliştirme sürelerini kısaltır, inovasyonu …"
+    },
+    {
+      "title": "Java Downloads | Oracle",
+      "url": "https://www.oracle.com/java/technologies/downloads/",
+      "snippet": "4 days ago · Download the Java including the latest version 17 LTS on the Java SE Platform. These downloads can be used for any …"
+    },
+    {
+      "title": "Java Software | Oracle",
+      "url": "https://www.oracle.com/java/",
+      "snippet": "Join the global Java community and explore Oracle’s role in stewarding the Java platform and supporting open source development …"
+    },
+    {
+      "title": "Java (programming language) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Java_(programming_language)",
+      "snippet": "[22] Java was designed by James Gosling at Sun Microsystems. It was released in May 1995 as a core component of Sun's Java …"
+    }
+  ]
+}

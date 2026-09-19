@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Abduulllaah/TwinQwen3-0.6B",
+  "slug": "abduulllaah-twinqwen3-0-6b",
+  "author": "Abduulllaah",
+  "url": "https://huggingface.co/Abduulllaah/TwinQwen3-0.6B",
+  "created_at": "2026-09-19T18:21:53.000Z",
+  "updated_at": "2026-09-19T19:42:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen3-0.6B-Base",
+    "base_model:finetune:unsloth/Qwen3-0.6B-Base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 2395693116,
+  "storage_human": "2.4 GB",
+  "base_model": "unsloth/Qwen3-0.6B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "android - Google maps v2: Authorization failure - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/17184718/google-maps-v2-authorization-failure",
+      "snippet": "Jun 19, 2013 · Activate the Google Maps Android API v2 service in the Google API's console. Also, after making changes do a full …"
+    },
+    {
+      "title": "Google Maps Api v3 - getBounds is undefined - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/2832636/google-maps-api-v3-getbounds-is-undefined",
+      "snippet": "I'm switching from v2 to v3 google maps api and got a problem with gMap.getBounds() function. I need to get the bounds of my map …"
+    },
+    {
+      "title": "Mettre à jour Google Maps",
+      "url": "https://support.google.com/maps/answer/3615175?hl=fr&co=GENIE.Platform%3DAndroid",
+      "snippet": "Mettre à jour Google Maps Conseil : Si vous rencontrez des problèmes de téléchargement et de mise à jour de Google Maps, vous …"
+    },
+    {
+      "title": "Communauté Google Maps",
+      "url": "https://support.google.com/maps/community?hl=fr",
+      "snippet": "Disparition de mon entreprise de Google et Google Maps. Pourquoi, qui, comment? Mon numero de telephone sais integrée dans …"
+    },
+    {
+      "title": "Google Maps - Reddit",
+      "url": "https://www.reddit.com/r/GoogleMaps/",
+      "snippet": "r/GoogleMaps is participating in ongoing protests regarding changes to Reddit's API accessibility. The subreddit may reopen at some …"
+    }
+  ]
+}

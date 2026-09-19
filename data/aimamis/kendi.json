@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "AiMamis/Kendi",
+  "slug": "aimamis-kendi",
+  "author": "AiMamis",
+  "url": "https://huggingface.co/AiMamis/Kendi",
+  "created_at": "2026-09-19T19:41:53.000Z",
+  "updated_at": "2026-09-19T19:41:59.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "license:openrail++",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 459049204,
+  "storage_human": "459 MB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google-Konto für Ihr Kind erstellen - Google für Familien-Hilfe",
+      "url": "https://support.google.com/families/answer/7103338?hl=de",
+      "snippet": "Mit diesen Schritten erstellen Sie ein Google-Konto für Ihr Kind, wenn dieses noch nicht das in Ihrem Land geltende Mindestalter für …"
+    },
+    {
+      "title": "GMX: Viele fehlgeschlagene Login Versuche - ComputerBase",
+      "url": "https://www.computerbase.de/forum/threads/gmx-viele-fehlgeschlagene-login-versuche.833516/",
+      "snippet": "Dec 25, 2010 · Hi Leute, bin heute von den üblichen Weihnachtsbesuchen zurück gekommen und wollte mal wieder Mails checken. …"
+    },
+    {
+      "title": "Anmelden oder zwischen Konten wechseln",
+      "url": "https://support.google.com/maps/answer/2803351?hl=de-at&co=GENIE.Platform%3DDesktop",
+      "snippet": "Öffnen Sie Google Maps auf Ihrem Computer. Klicken Sie rechts oben auf Anmelden. Um sich abzumelden, klicken Sie rechts oben …"
+    },
+    {
+      "title": "GMX Login Probleme | ComputerBase Forum",
+      "url": "https://www.computerbase.de/forum/threads/gmx-login-probleme.2193832/",
+      "snippet": "Apr 27, 2024 · Hallo, Thunderbird kann mein GMX Konto (Pop3) nicht mehr abfragen. Versuche ich mich bei GMX auf der Webseite …"
+    },
+    {
+      "title": "Anmeldung bei \"EsoWatch\" Forum Frage",
+      "url": "https://forum.psiram.com/index.php?topic=2240.0",
+      "snippet": "Oct 10, 2009 · Will ich bestimmte Mails dann hinterher nicht empfangen, oder sind es SPAMS, lösche ich die einfach vom Mailserver …"
+    }
+  ]
+}

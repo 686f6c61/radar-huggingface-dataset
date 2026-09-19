@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Sai-Anwesh-2930/multiclass-disease-detection-model",
+  "slug": "sai-anwesh-2930-multiclass-disease-detection-model",
+  "author": "Sai-Anwesh-2930",
+  "url": "https://huggingface.co/Sai-Anwesh-2930/multiclass-disease-detection-model",
+  "created_at": "2026-09-19T18:10:25.000Z",
+  "updated_at": "2026-09-19T18:19:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 128182008,
+  "storage_human": "128 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SAI Collections : modèles réduits véhicules cyclisme cirques trains …",
+      "url": "https://www.sai-collections.fr/",
+      "snippet": "Bonjour et bienvenue sur le site de SAI Collections, le monde de la miniature au 1/87ème échelle HO ! Pour commencer, peut être …"
+    },
+    {
+      "title": "Accueil - SAI",
+      "url": "https://groupe-sai.fr/",
+      "snippet": "Avesnoise Promocil à vos côtés depuis 1907 pour vous proposer le logement qui vous convient."
+    },
+    {
+      "title": "Saï (arme) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Sa%C3%AF_(arme)",
+      "snippet": "Le sai (釵, aussi transcrit « saï » en français) est une arme traditionnelle asiatique utilisée notamment dans les arts martiaux …"
+    },
+    {
+      "title": "SYSTEMAX Software Development - PaintTool SAI",
+      "url": "https://www.systemax.jp/en/sai/",
+      "snippet": "For new users, all required files of PaintTool SAI are included in this installer. In the first time, SAI will automatically start setup …"
+    },
+    {
+      "title": "SAI Collections : modèles réduits véhicules cyclisme cirques trains …",
+      "url": "https://www.sai-collections.fr/en/",
+      "snippet": "LogicieLes collections SAI sont avant tout des spécificités françaises en petites quantités que vous retrouvez en intégralité sur ce site …"
+    }
+  ]
+}

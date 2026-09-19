@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "AiMamis/Katya_Savchenko",
+  "slug": "aimamis-katya_savchenko",
+  "author": "AiMamis",
+  "url": "https://huggingface.co/AiMamis/Katya_Savchenko",
+  "created_at": "2026-09-19T19:36:34.000Z",
+  "updated_at": "2026-09-19T19:36:40.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "license:openrail++",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 458980522,
+  "storage_human": "459 MB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Coolbet.com - Sports. Casino. Poker",
+      "url": "https://www.coolbet.com/eu/login",
+      "snippet": "Forgot password? Coolbet offers best odds in sports, fun casino tournaments and coolest poker festivals. Join us today!"
+    },
+    {
+      "title": "Coolbet – Sports Betting, Casino Games, and Poker",
+      "url": "https://www.coolbet.com/sv/login",
+      "snippet": "Coolbet – top odds in sports betting, exciting online slots, poker tournaments, and trusted casino games. Join for bonuses, free spins, …"
+    },
+    {
+      "title": "Spelare i Sverige kan logga in på Coolbet Casino säkert och vinna stort",
+      "url": "https://coolbet-casino.se/sv/logga-in/",
+      "snippet": "Logga in på Coolbet Casino Sverige för exklusiva kampanjer, snabba utbetalningar och en säker spelupplevelse. Njut av toppslots, …"
+    },
+    {
+      "title": "Coolbet Inloggning & registreringsguide Sverige SE",
+      "url": "https://cool-bet.se/se-sv/inloggning/",
+      "snippet": "Välkommen till Coolbet Casino, där vi gör det enkelt för svenska spelare att öppna ett konto, logga in och komma igång direkt med …"
+    },
+    {
+      "title": "Coolbet Casino App: Play Anytime, Anywhere",
+      "url": "https://coolbet-reviews.com/app.php",
+      "snippet": "Download the Coolbet app for seamless casino gaming. Enjoy slots, table games, and live dealer experiences on your mobile device."
+    }
+  ]
+}

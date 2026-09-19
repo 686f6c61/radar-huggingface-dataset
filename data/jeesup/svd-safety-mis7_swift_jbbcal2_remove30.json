@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-mis7_swift_jbbcal2_remove30",
+  "slug": "jeesup-svd-safety-mis7_swift_jbbcal2_remove30",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-mis7_swift_jbbcal2_remove30",
+  "created_at": "2026-09-19T15:36:01.000Z",
+  "updated_at": "2026-09-22T00:27:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:mistralai/Mistral-7B-Instruct-v0.2",
+    "base_model:finetune:mistralai/Mistral-7B-Instruct-v0.2",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7241732096,
+  "parameters_human": "7.24B",
+  "storage_bytes": 14483991459,
+  "storage_human": "14.5 GB",
+  "base_model": "mistralai/Mistral-7B-Instruct-v0.2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.gr/index.html",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=el",
+      "snippet": "Το Google προσφέρεται σε: English Διαφήμιση Σχετικά με τη Google Google.com in English"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com.nf/webhp?gl=nf&hl=en&gws_rd=cr&pws=0",
+      "snippet": "Advertising Business Solutions About Google Google.com © 2026 - Privacy - Terms"
+    },
+    {
+      "title": "Sign in - Google Accounts",
+      "url": "https://accounts.google.com/",
+      "snippet": "Not your computer? Use a private browsing window to sign in. Learn more about using Guest mode Next Create account"
+    },
+    {
+      "title": "Λήψη και εγκατάσταση του Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95346?hl=el&co=GENIE.Platform%3DDesktop",
+      "snippet": "Λήψη και εγκατάσταση του Google Chrome Μπορείτε να κατεβάσετε και να εγκαταστήσετε το πρόγραμμα περιήγησης στον ιστό …"
+    }
+  ]
+}

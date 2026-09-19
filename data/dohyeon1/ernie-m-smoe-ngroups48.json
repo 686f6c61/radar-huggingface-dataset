@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Dohyeon1/ERNIE-M-SMoE-ngroups48",
+  "slug": "dohyeon1-ernie-m-smoe-ngroups48",
+  "author": "Dohyeon1",
+  "url": "https://huggingface.co/Dohyeon1/ERNIE-M-SMoE-ngroups48",
+  "created_at": "2026-09-19T17:01:49.000Z",
+  "updated_at": "2026-09-19T17:07:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "ernie4_5_moe",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 21825437888,
+  "parameters_human": "21.83B",
+  "storage_bytes": 43671604727,
+  "storage_human": "43.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Download Discord to Talk, Play, and Hang Out",
+      "url": "https://discordapp.com:8443/download",
+      "snippet": "Download Discord wherever you hang out Talk, play, and hang out with friends around the world over voice, video, or text. Available …"
+    },
+    {
+      "title": "Discord Privacy Policy",
+      "url": "https://discordapp.com:2087/privacy",
+      "snippet": "We take your privacy seriously. Read and learn about Discord's privacy policy."
+    },
+    {
+      "title": "Nitro Benefits and Features | Discord",
+      "url": "https://discordapp.com:8443/nitro",
+      "snippet": "Enhance your Discord experience with Nitro — get custom emojis, animated avatars, larger file uploads, HD screensharing, and more."
+    },
+    {
+      "title": "Starting Your First Discord Server",
+      "url": "https://discordapp.com:2087/blog/starting-your-first-discord-server",
+      "snippet": "Apr 6, 2026 · Looking to create a new Discord server for the first time? How do you invite your friends to it? What even IS a text or …"
+    },
+    {
+      "title": "Discord - Group Chat That’s All Fun & Games",
+      "url": "https://discordapp.com:2087/",
+      "snippet": "Discord is great for playing games and chilling with friends, or even building a worldwide community. Customize your own space to …"
+    }
+  ]
+}

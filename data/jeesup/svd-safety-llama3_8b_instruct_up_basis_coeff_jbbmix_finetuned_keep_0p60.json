@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-llama3_8b_instruct_up_basis_coeff_jbbmix_finetuned_keep_0p60",
+  "slug": "jeesup-svd-safety-llama3_8b_instruct_up_basis_coeff_jbbmix_finetuned_keep_0p60",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-llama3_8b_instruct_up_basis_coeff_jbbmix_finetuned_keep_0p60",
+  "created_at": "2026-09-19T17:19:08.000Z",
+  "updated_at": "2026-09-19T17:38:51.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "llama",
+    "basis-sharing",
+    "compression",
+    "low-rank",
+    "safety",
+    "base_model:meta-llama/Meta-Llama-3-8B-Instruct",
+    "base_model:finetune:meta-llama/Meta-Llama-3-8B-Instruct",
+    "license:llama3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16103203050,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Meta-Llama-3-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Отключение воды в Одессе сегодня",
+      "url": "https://grad.ua/ru/blackout/water/",
+      "snippet": "Sep 2, 2026 · Отключение воды на Таирова из-за аварии на водопроводе 20.11.2025, 12:27 Одесситы части Таирова остались …"
+    },
+    {
+      "title": "Отключение воды в Одессе 15-16 ноября ...",
+      "url": "https://grad.ua/ru/blackout/water/103472-grafik-otkljuchenija-vody-v-odesse-15-16-nojabrja.html",
+      "snippet": "Nov 14, 2025 · Инфоксводоканал предупреждает об отключении водоснабжения в части Пересыпского района 15-16 ноября в …"
+    },
+    {
+      "title": "Аварийное отключение воды в Одессе 11 ...",
+      "url": "https://grad.ua/ru/blackout/water/105382-grafik-otkljuchenija-vody-v-odesse-11-sentjabrja.html",
+      "snippet": "Sep 11, 2026 · Смотрите также: 💧 Отключение воды в Одессе сегодня 💡 В Одесской области ввели аварийные отключения …"
+    },
+    {
+      "title": "Отключение воды в Одессе 4 июня ...",
+      "url": "https://grad.ua/ru/blackout/water/104602-grafik-otkljuchenija-vody-v-odesse-4-ijunja.html",
+      "snippet": "Jun 3, 2026 · Инфоксводоканал предупреждает об отключении водоснабжения 4 июня в связи с ремонтными работами …"
+    },
+    {
+      "title": "Отключения света, воды и газа | Одесса",
+      "url": "https://grad.ua/ru/blackout/",
+      "snippet": "Отключения света, воды и газа Новости об отключениях электроэнергии, воды, газа и отопления в Одессе сегодня. …"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "huangch/10xGenomics-PANTISSUE_BY_SLIDE-CellViT-SAM-H-x40",
+  "slug": "huangch-10xgenomics-pantissue_by_slide-cellvit-sam-h-x40",
+  "author": "huangch",
+  "url": "https://huggingface.co/huangch/10xGenomics-PANTISSUE_BY_SLIDE-CellViT-SAM-H-x40",
+  "created_at": "2026-09-19T18:48:12.000Z",
+  "updated_at": "2026-09-19T19:03:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "doi:10.57967/hf/10522",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2740219611,
+  "storage_human": "2.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PROFESIA.SK | Práca Košice",
+      "url": "https://www.profesia.sk/praca/kosice/",
+      "snippet": "Ponuky práce v lokalite Košice. Pošlite svoj životopis a nájdite si nové zamestnanie ešte dnes! Voľné pracovné miesta v lokalite Košice."
+    },
+    {
+      "title": "PROFESIA.SK | Práca Minebea Slovakia s.r.o., Košice",
+      "url": "https://www.profesia.sk/praca/kosice/?company_id=209662",
+      "snippet": "Hľadáte prácu? Aktuálna ponuka práce v spoločnosti Minebea Slovakia s.r.o. v lokalite Košice. Nájdite si prácu ešte dnes. Voľné …"
+    },
+    {
+      "title": "PROFESIA.SK | Práca, zamestnanie, ponuka práce, brigády, voľné ...",
+      "url": "http://ww.profesia.sk/",
+      "snippet": "Práca, zamestnanie, kariéra, brigády a nové pracovné príležitosti. Ponuka práce doma a v zahraničí. Aktuálne pracovné ponuky a …"
+    },
+    {
+      "title": "PROFESIA.SK | Práca okres Košice - okolie",
+      "url": "https://www.profesia.sk/praca/okres-kosice-okolie/",
+      "snippet": "Ponuky práce v lokalite okres Košice - okolie. Pošlite svoj životopis a nájdite si nové zamestnanie ešte dnes! Voľné pracovné miesta …"
+    },
+    {
+      "title": "PROFESIA.SK | Práca učiteľ/učiteľka, Košice",
+      "url": "https://www.profesia.sk/praca/kosice/ucitel-ucitelka/",
+      "snippet": "Kliknite pre ponuky práce na pozíciu učiteľ/učiteľka pre lokalitu Košice. Pošlite svoj životopis a nájdite si nové zamestnanie. Voľné …"
+    }
+  ]
+}

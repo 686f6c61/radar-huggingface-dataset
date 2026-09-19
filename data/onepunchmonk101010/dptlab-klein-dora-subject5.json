@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "OnePunchMonk101010/dptlab-klein-dora-subject5",
+  "slug": "onepunchmonk101010-dptlab-klein-dora-subject5",
+  "author": "OnePunchMonk101010",
+  "url": "https://huggingface.co/OnePunchMonk101010/dptlab-klein-dora-subject5",
+  "created_at": "2026-09-19T17:34:10.000Z",
+  "updated_at": "2026-09-19T17:34:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "text-to-image",
+    "lora",
+    "dora",
+    "dptlab",
+    "base_model:black-forest-labs/FLUX.2-klein-4B",
+    "base_model:adapter:black-forest-labs/FLUX.2-klein-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 57981912,
+  "storage_human": "58 MB",
+  "base_model": "black-forest-labs/FLUX.2-klein-4B",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Euroleague TV : r/Euroleague - Reddit",
+      "url": "https://www.reddit.com/r/Euroleague/comments/zngeo7/euroleague_tv/",
+      "snippet": "Dec 16, 2022 · Euroleague TV Hi, i want to buy subscription for the next season, so i want to hear what experience you have with …"
+    },
+    {
+      "title": "Euroleague Tv : r/greece - Reddit",
+      "url": "https://www.reddit.com/r/greece/comments/171j887/euroleague_tv/",
+      "snippet": "Oct 6, 2023 · Euroleague Tv Γεια σας μάγκες μου ξέρει κανείς αν και πως μπορούμε να δούμε euroleague to χωρίς να πληρώσουμε …"
+    },
+    {
+      "title": "Euroleague TV | AVClub.gr",
+      "url": "https://avclub.gr/threads/euroleague-tv.165268/",
+      "snippet": "Apr 5, 2021 · Καλησπέρα. Είδα οτι δεν υπάρχει κάποιο νήμα για την Euroleague TV και είπα να το ανοίξω. Επειδή λοιπόν χθες …"
+    },
+    {
+      "title": "Euroleague TV σε τηλεόραση - Τηλεoράσεις - Insomnia.gr",
+      "url": "https://www.insomnia.gr/forums/topic/762298-euroleague-tv-%CF%83%CE%B5-%CF%84%CE%B7%CE%BB%CE%B5%CF%8C%CF%81%CE%B1%CF%83%CE%B7/",
+      "snippet": "Jan 26, 2021 · Η εφαρμογή Euroleague TV είναι πλέον διαθέσιμη σε όλες τις Android τηλεοράσεις. Επεξ/σία 21 Ιανουαρίου 20224 χρ …"
+    },
+    {
+      "title": "Euroleague TV συνδρομή (Νέο) - Σελίδα 72 ... - Insomnia.gr",
+      "url": "https://www.insomnia.gr/forums/topic/686161-euroleague-tv-%CF%83%CF%85%CE%BD%CE%B4%CF%81%CE%BF%CE%BC%CE%AE-%CE%BD%CE%AD%CE%BF/page/72/",
+      "snippet": "Sep 14, 2018 · Thank you for contacting EuroLeague TV Support. Can you please confirm if you are now able to see the full …"
+    }
+  ]
+}

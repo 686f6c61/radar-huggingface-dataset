@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "MeshupAi/meshup-qwen3.5-4B_Q4_K_M-190926",
+  "slug": "meshupai-meshup-qwen3-5-4b_q4_k_m-190926",
+  "author": "MeshupAi",
+  "url": "https://huggingface.co/MeshupAi/meshup-qwen3.5-4B_Q4_K_M-190926",
+  "created_at": "2026-09-19T13:40:45.000Z",
+  "updated_at": "2026-09-19T14:19:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3_5",
+    "llama.cpp",
+    "unsloth",
+    "vision-language-model",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4326350848,
+  "parameters_human": "4.33B",
+  "storage_bytes": 6911724544,
+  "storage_human": "6.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "python - Es posible utilizar Tkinter de forma online? - Stack Overflow ...",
+      "url": "https://es.stackoverflow.com/questions/364411/es-posible-utilizar-tkinter-de-forma-online",
+      "snippet": "Jun 11, 2020 · Es posible utilizar Tkinter de forma online? Formular una pregunta Formulada hace 6 años y 3 meses Modificada hace …"
+    },
+    {
+      "title": "有哪些好用的python在线编程环境？ - 知乎",
+      "url": "https://www.zhihu.com/question/53842040",
+      "snippet": "今天经过2个多小时整理及截图，整理了21个Python在线运行 (有一些还含在线编辑 在线编译 在线运行的环境，部分还有可视化执行 …"
+    },
+    {
+      "title": "EduPython - Les programmes",
+      "url": "https://edupython.tuxfamily.org/sources/view.php",
+      "snippet": "Que fait le programme suivant ? nombre de 6 obtenus en lançant un dé 10 fois Calculer l'opposé d'un nombre Calculer l'IMC nombre …"
+    },
+    {
+      "title": "有哪些 python 的在线练习题或编程挑战的网站？ - 知乎",
+      "url": "https://www.zhihu.com/question/265662120",
+      "snippet": "以下的网站不限于练习 Python ，想练习别的语言也是可以的，大家有时间就敲起来吧！ [Python Challenge] 这个网站的页面设计虽然 …"
+    },
+    {
+      "title": "¿Cómo extraer datos de Excel usando Python?",
+      "url": "https://es.stackoverflow.com/questions/513077/c%c3%b3mo-extraer-datos-de-excel-usando-python",
+      "snippet": "Feb 5, 2022 · Hola buenas tardes me encuentro con el siguiente inconveniente, no sé cómo puedo extraer los datos marcados con el …"
+    }
+  ]
+}

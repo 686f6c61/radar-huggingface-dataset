@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Trida2.0-4B-i1-GGUF",
+  "slug": "mradermacher-trida2-0-4b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Trida2.0-4B-i1-GGUF",
+  "created_at": "2026-09-19T16:15:41.000Z",
+  "updated_at": "2026-09-19T17:02:53.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "block-diffusion",
+    "hybrid-diffusion",
+    "self-speculative-decoding",
+    "qwen3.5",
+    "en",
+    "base_model:trillionlabs/Trida2.0-4B",
+    "base_model:quantized:trillionlabs/Trida2.0-4B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4840211456,
+  "parameters_human": "4.84B",
+  "storage_bytes": 60651934464,
+  "storage_human": "60.7 GB",
+  "base_model": "trillionlabs/Trida2.0-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "你见过的最奇葩的文言文翻译是什么？ - 知乎",
+      "url": "https://www.zhihu.com/question/39858290",
+      "snippet": "Sep 26, 2018 · 初高中的文言文题目想必上过学的都懂。 不过里面的翻译题有些时候还真的是看人品写了（学霸请无视此句）。 本着“ …"
+    },
+    {
+      "title": "求红警2各个超级武器警告提示语音原文及中文翻译！_百度知道",
+      "url": "https://zhidao.baidu.com/question/497683573246409124.html",
+      "snippet": "Apr 11, 2015 · 求红警2各个超级武器警告提示语音原文及中文翻译！ 闪电风暴:warning，a lightning storm has beem created.超时空传 …"
+    },
+    {
+      "title": "“个人简历”怎么翻译 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/7419878.html",
+      "snippet": "Jun 13, 2019 · “个人简历”怎么翻译“个人简历”的英文：personal resumeresume 读法 英 [rɪˈzjuːm; ˈrɛzjʊmeɪ] 1、v. （中断后）重新开 …"
+    },
+    {
+      "title": "你见过哪些绝妙的翻译？ - 知乎",
+      "url": "https://www.zhihu.com/question/46693101",
+      "snippet": "Jul 7, 2019 · 这个姑娘，是美国著名童星 Shirley Temple，名字按普通方法直译为雪莉.坦帕 但是在国内，有一个专属于她的美丽译 …"
+    },
+    {
+      "title": "微信怎么进行扫一扫翻译 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/ff42efa9e59034809f220268.html",
+      "snippet": "Oct 28, 2023 · 微信怎么进行扫一扫翻译,在微信中有很多实用的功能，其中有一个翻译功能，有些朋友还没有使用过这个功能，下面为 …"
+    }
+  ]
+}

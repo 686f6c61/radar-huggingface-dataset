@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "aac6fef/laya-multilingual-mlx",
+  "slug": "aac6fef-laya-multilingual-mlx",
+  "author": "aac6fef",
+  "url": "https://huggingface.co/aac6fef/laya-multilingual-mlx",
+  "created_at": "2026-09-19T14:11:31.000Z",
+  "updated_at": "2026-09-19T16:38:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "multilingual",
+    "laya",
+    "modernbert",
+    "apple-silicon",
+    "decision-model",
+    "text-classification",
+    "base_model:convaiinnovations/laya-multilingual",
+    "base_model:finetune:convaiinnovations/laya-multilingual",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 321908998,
+  "parameters_human": "321.9M",
+  "storage_bytes": 678198614,
+  "storage_human": "678 MB",
+  "base_model": "convaiinnovations/laya-multilingual",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Independence Day (United States) - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Independence_Day_(United_States)",
+      "snippet": "Independence Day, known colloquially as the Fourth of July, is a federal holiday in the United States which commemorates the …"
+    },
+    {
+      "title": "Independence Day (4th of July) | History, Meaning, & Date | Britannica",
+      "url": "https://www.britannica.com/topic/Independence-Day-United-States-holiday",
+      "snippet": "Aug 12, 2026 · Independence Day, in the United States, the annual celebration of nationhood held on July 4. It commemorates the …"
+    },
+    {
+      "title": "Fourth of July: Independence Day Holiday | HISTORY",
+      "url": "https://www.history.com/articles/july-4th",
+      "snippet": "Dec 16, 2009 · Independence Day is celebrated annually on July 4 on the anniversary of the Declaration of Independence’s adoption …"
+    },
+    {
+      "title": "Fourth of July in Greater Des Moines",
+      "url": "https://www.catchdesmoines.com/blog/stories/post/fourth-of-july-in-greater-des-moines/",
+      "snippet": "Jun 23, 2026 · Discover what's happening over the Fourth of July weekend in Greater Des Moines with featured firework shows, …"
+    },
+    {
+      "title": "Things to Do in Des Moines for July 4th",
+      "url": "https://www.desmoinesgirl.com/things-to-do-in-des-moines-for-july-4th/",
+      "snippet": "We’ve rounded up some of the best Fourth of July-related festivities in Des Moines so you can celebrate with your friends and family …"
+    }
+  ]
+}

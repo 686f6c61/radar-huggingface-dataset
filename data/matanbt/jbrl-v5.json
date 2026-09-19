@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "MatanBT/JBRL-v5",
+  "slug": "matanbt-jbrl-v5",
+  "author": "MatanBT",
+  "url": "https://huggingface.co/MatanBT/JBRL-v5",
+  "created_at": "2026-09-19T13:14:49.000Z",
+  "updated_at": "2026-09-19T13:15:14.000Z",
+  "license": "authorized-research-only",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1085285858,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EVAG lädt zum Tag der offenen Tür - Erfurt.de",
+      "url": "https://www.erfurt.de/ef/de/service/aktuelles/am/2026/155250.html",
+      "snippet": "Am Samstag, 19. September 2026, von 10 bis 16 Uhr öffnet der EVAG-Betriebshof am Urbicher Kreuz seine Tore und lädt dazu ein, …"
+    },
+    {
+      "title": "EVAG - Wir bewegen Erfurt!",
+      "url": "https://www.evag-erfurt.de/evag/home",
+      "snippet": "15 hours ago · Tag der offenen Tür bei der EVAG 29.08.2026 Am Samstag, 19. September 2026, öffnen wir wieder unseren …"
+    },
+    {
+      "title": "Tag der offenen Tür | EVAG Erfurt",
+      "url": "https://jubilaeum.evag-erfurt.de/evag-jubilaeum/home/tagderoffenentuer",
+      "snippet": "15 hours ago · In diesem Jahr heißt es wieder hereinspaziert und umgeschaut beim Tag der offenen Tür auf unserem …"
+    },
+    {
+      "title": "Tag der offenen Tür in Deutschland 2026 - Termine & Infos",
+      "url": "https://veranstaltungen.meinestadt.de/deutschland/freizeit-ausflug/tag-off-tuer",
+      "snippet": "15 hours ago · Alle Infos und Termine für Tag der offenen Tür für Deutschland und Umgebung findest du ☝️ hier!"
+    },
+    {
+      "title": "Erfurt – Tag der offenen Tür - blickpunktstrab.net",
+      "url": "https://blickpunktstrab.net/event/erfurt-tag-der-offenen-tuer/",
+      "snippet": "Von 10 bis 16 Uhr geben wir spannende Einblicke hinter die Kulissen. Freuen Sie sich auf ein buntes Programm für die ganze Familie …"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "bbkdevops/RI-Meta-Core-Grounded-DeepSeek-V4.1",
+  "slug": "bbkdevops-ri-meta-core-grounded-deepseek-v4-1",
+  "author": "bbkdevops",
+  "url": "https://huggingface.co/bbkdevops/RI-Meta-Core-Grounded-DeepSeek-V4.1",
+  "created_at": "2026-09-19T13:46:43.000Z",
+  "updated_at": "2026-09-19T13:53:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "code",
+    "swe-bench",
+    "reasoning",
+    "moe",
+    "recursive-intelligence",
+    "en",
+    "license:mit",
+    "model-index",
+    "eval-results",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Software Engineering Code Resolution",
+      "dataset": "SWE-bench Verified",
+      "metric": "swe_bench_%_resolved",
+      "value": 0
+    }
+  ],
+  "sources": [
+    {
+      "title": "如何下载到卡巴斯基免费版？ - 知乎",
+      "url": "https://www.zhihu.com/question/386623091",
+      "snippet": "截至2023/3/29，在 卡巴斯基免费版 下载页面点击立即下载后会跳转到“ 免费试用版 ”的下载界面，所以官网无法直接下载到免费版的 …"
+    },
+    {
+      "title": "在慕尼黑生活是怎样一种体验？ - 知乎",
+      "url": "https://www.zhihu.com/question/28994556",
+      "snippet": "如题，卤煮因为是读Diplom，所以会很长时间，并且 打算毕业后 在德国呆一段时间。想请教已经在慕尼黑学习…"
+    },
+    {
+      "title": "闲鱼和转转哪个比较靠谱？ - 知乎",
+      "url": "https://www.zhihu.com/question/65313130",
+      "snippet": "转转一生黑，说一下本人被坑的经历吧。 11.8号，本人在转转平台出售了一台电脑，挂上后被人秒拍，被骗子讲价后3300包邮卖出。 …"
+    },
+    {
+      "title": "自由行柏林和慕尼黑哪个更值得去？ - 知乎",
+      "url": "https://www.zhihu.com/question/52722048",
+      "snippet": "Nov 17, 2016 · 4天左右 预算在10000-15000 泻药~ 我前几天去的 斯图加特 和慕尼黑，没去过 柏林，真心冷～估计柏林更夸张。 慕尼 …"
+    },
+    {
+      "title": "一直搞不懂，地级市和县级市有什么区别，地级市到底是什么意思? - 知乎",
+      "url": "https://www.zhihu.com/question/37478518",
+      "snippet": "全国有34个 省级单位，有两千多个县级单位，平均一个省级单位要管80多个县级单位。 这就相当于撤掉了排长和班长，让连长去直接 …"
+    }
+  ]
+}

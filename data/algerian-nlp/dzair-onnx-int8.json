@@ -1,0 +1,114 @@
+{
+  "schema": 1,
+  "id": "algerian-nlp/DZAIR-ONNX-INT8",
+  "slug": "algerian-nlp-dzair-onnx-int8",
+  "author": "algerian-nlp",
+  "url": "https://huggingface.co/algerian-nlp/DZAIR-ONNX-INT8",
+  "created_at": "2026-09-19T16:33:51.000Z",
+  "updated_at": "2026-09-19T22:19:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "onnxruntime",
+  "languages": [
+    "arq"
+  ],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "dzair",
+    "algerian-darija",
+    "arabizi",
+    "arabic",
+    "encoder",
+    "quantized",
+    "int8",
+    "feature-extraction",
+    "custom_code",
+    "arq",
+    "base_model:algerian-nlp/DZAIR",
+    "base_model:quantized:algerian-nlp/DZAIR",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 325493167,
+  "storage_human": "325 MB",
+  "base_model": "algerian-nlp/DZAIR",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Arabizi Sentiment Analysis",
+      "dataset": "NArabizi Sentiment (test)",
+      "metric": "Accuracy (10 paper seeds, cls+mlp, 3 epochs)",
+      "value": 0.654
+    },
+    {
+      "task": "Arabizi Sentiment Analysis",
+      "dataset": "NArabizi Sentiment (test)",
+      "metric": "Macro F1 (10 paper seeds, cls+mlp, 3 epochs)",
+      "value": 0.595
+    },
+    {
+      "task": "Forum Sentiment Analysis",
+      "dataset": "Ranim Sentiment (test)",
+      "metric": "Accuracy (10 paper seeds, cls+mlp, 3 epochs)",
+      "value": 0.962
+    },
+    {
+      "task": "Forum Sentiment Analysis",
+      "dataset": "Ranim Sentiment (test)",
+      "metric": "Macro F1 (10 paper seeds, cls+mlp, 3 epochs)",
+      "value": 0.958
+    },
+    {
+      "task": "Twitter Sentiment Analysis",
+      "dataset": "Twifil Sentiment (test)",
+      "metric": "Accuracy (10 paper seeds, cls+mlp, 3 epochs)",
+      "value": 0.788
+    },
+    {
+      "task": "Twitter Sentiment Analysis",
+      "dataset": "Twifil Sentiment (test)",
+      "metric": "Macro F1 (10 paper seeds, cls+mlp, 3 epochs)",
+      "value": 0.782
+    }
+  ],
+  "sources": [
+    {
+      "title": "مواقيت الصلاة في جدة",
+      "url": "https://timesprayer.com/prayer-times-in-jeddah.html",
+      "snippet": "مواقيت الصلاة والأذان في جدة لجميع الاوقات الفجر ,العصر,الظهر,المغرب وايضاً العشاء"
+    },
+    {
+      "title": "مواقيت الصلاة في المملكة العربية السعودية - مواعيد الصلاة - وقت الصلاة ...",
+      "url": "https://www.islamicfinder.org/ar/world/saudi-arabia/",
+      "snippet": "المملكة العربية السعودية احصل على أوقات الصلاة, مواقيت الصلاة الصحيحة والأذان، مواعيد الصلاة الفجر، اذان الظهر، اذان العصر، صلاة المغرب، صلاة العشاء. وأحصل أيضًا على أوقات الشروق …"
+    },
+    {
+      "title": "مواقيت الصلاة في مكه",
+      "url": "https://timesprayer.com/prayer-times-in-makkah.html",
+      "snippet": "في الوقت الحالي الصلاة القادمة هي صلاة العَصر حسب التوقيت المحلي في مدينة مكه ، وسيتم تشغيل صوت الأذان تلقائيً لصلاة العَصر عبر الموقع الإلكتروني الساعة ٣:٤٠ م."
+    },
+    {
+      "title": "مواقيت الصلاة جدة - أوقات الصلاة, وقت الصلاة والأذان, مواعيد الصلاة ...",
+      "url": "https://www.islamicfinder.org/ar/world/saudi-arabia/105343/jeddah-prayer-times/",
+      "snippet": "متى يبدأ وقت صلاة المغرب؟ يبدأ المغرب مباشرة بعد غروب الشمس، بمجرد أن تختفي الشمس تماماً تحت الأفق، ويستمر حتى يتلاشى الشفق الأحمر."
+    },
+    {
+      "title": "مواقيت الصلاة في السعودية اليوم | اوقات الصلاة في جميع المدن",
+      "url": "https://ksaprayertimes.com/",
+      "snippet": "مواقيت الصلاة في السعودية اليوم حسب تقويم أم القرى — أوقات الصلاة ومواعيد الأذان في الرياض وجدة ومكة والمدينة والدمام وجميع مدن المملكة، مع الجدول الشهري واتجاه القبلة."
+    }
+  ]
+}

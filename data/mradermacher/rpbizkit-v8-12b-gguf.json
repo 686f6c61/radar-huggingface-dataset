@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "mradermacher/RPBizkit-v8-12B-GGUF",
+  "slug": "mradermacher-rpbizkit-v8-12b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/RPBizkit-v8-12B-GGUF",
+  "created_at": "2026-09-19T13:29:34.000Z",
+  "updated_at": "2026-09-19T14:59:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "not-for-all-audiences",
+    "en",
+    "base_model:RicardoEstep/RPBizkit-v8-12B",
+    "base_model:quantized:RicardoEstep/RPBizkit-v8-12B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 12247782400,
+  "parameters_human": "12.25B",
+  "storage_bytes": 84692287936,
+  "storage_human": "84.7 GB",
+  "base_model": "RicardoEstep/RPBizkit-v8-12B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "個人比薩，人氣主打 | Pizza Hut 必勝客",
+      "url": "https://www.pizzahut.com.tw/order/?mode=step_2&ct=3&cu=20",
+      "snippet": "線上訂購，Pizza Hut必勝客提供多元支付方式，除了現金及信用卡以外，網路訂購還可以使用Apple Pay、門市取餐更可以用悠遊卡支 …"
+    },
+    {
+      "title": "披薩外送外帶線上訂購 | 網路訂餐披薩享優惠 | Pizza Hut 必勝客",
+      "url": "https://www.pizzahut.com.tw/order/",
+      "snippet": "台灣Pizza Hut披薩外送外帶熱送到府！線上訂購多種豐富披薩口味，各式網路訂餐優惠超值套餐外送菜單DM和個人餐組合！"
+    },
+    {
+      "title": "達美樂披薩外送外帶 | 網路訂餐 | Domino's TW",
+      "url": "https://www.dominos.com.tw/",
+      "snippet": "達美樂多款美味披薩，聚餐外送外帶熱送到家，經典起司火山、披薩馬芬各款限時新品，與超值優惠套餐立即訂購！"
+    },
+    {
+      "title": "首頁 | 拿坡里披薩",
+      "url": "https://www.0800076666.com.tw/",
+      "snippet": "IE8請於\"工具\"項目中將\"相容性檢視\"關閉後重新整理即可。"
+    },
+    {
+      "title": "信義區Pizza有什麼好吃的? 12間台北信義區披薩推薦懶人包 - 熱血台中",
+      "url": "https://taiwan17go.com/xinyi-pizza/",
+      "snippet": "Jun 3, 2023 · 信義區Pizza有什麼好吃的? 12間台北信義區披薩推薦懶人包，本篇由熱血台中與台北美食部落客共同製作!在信義區的餐 …"
+    }
+  ]
+}

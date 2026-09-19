@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "AiMamis/Michelle",
+  "slug": "aimamis-michelle",
+  "author": "AiMamis",
+  "url": "https://huggingface.co/AiMamis/Michelle",
+  "created_at": "2026-09-19T19:53:34.000Z",
+  "updated_at": "2026-09-19T19:54:01.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "license:openrail++",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 458961966,
+  "storage_human": "459 MB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ana A vér köteléke 1.évad 61.rész - Videa",
+      "url": "https://videa.hu/player?f=8.3754774.2270636.0&enableJsApi=1&videoFinishedEvent=1&versionChangeCompleteEvent=1&enableExtensions=1&lang=en&s=%7B%22loc%22%3A1%7D",
+      "snippet": "Ana A vér köteléke 1.évad 61.rész."
+    },
+    {
+      "title": "Ana - a vér köteléke 61.rész - indavideo.hu",
+      "url": "https://indavideo.hu/video/Ana_-_a_ver_koteleke_61resz",
+      "snippet": "VIDEÓ - Ana - a vér köteléke 61.rész The shadow"
+    },
+    {
+      "title": "Ana - A vér köteléke - 1.évad 61.rész - Videa",
+      "url": "https://videa.hu/player?f=8.3754530.2000972.0&enableJsApi=1&videoFinishedEvent=1&versionChangeCompleteEvent=1&enableExtensions=1&lang=en&s=%7B%22loc%22%3A1%7D",
+      "snippet": "[XML_001]"
+    },
+    {
+      "title": "Ana: A vér köteléke 1. évad, 61-65. rész tartalma | Holdpont",
+      "url": "https://holdpont.hu/2026/07/szerda/content/ana-a-ver-koteleke-1-evad-61-65-resz-tartalma",
+      "snippet": "Jul 22, 2026 · 2026.08.03., Hétfő 20:00 - 1. évad, 61. rész. Ki az ellenfél? Miközben Toby is tudomást szerez arról, hogy elrabolták a …"
+    },
+    {
+      "title": "Ana: A vér köteléke sorozat 1. évad 61-65. rész tartalma – Vetítés ...",
+      "url": "https://tvnezo.hu/ana-a-ver-koteleke-sorozat-1-evad-61-65-resz/",
+      "snippet": "Ana: A vér köteléke sorozat 1. évad 61-65. rész tartalma. Országos tv-premier a 2026. augusztus 3-ától kezdődő héten, a Izaura TV …"
+    }
+  ]
+}
