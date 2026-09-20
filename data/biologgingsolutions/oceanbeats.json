@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "BiologgingSolutions/OceanBEATs",
+  "slug": "biologgingsolutions-oceanbeats",
+  "author": "BiologgingSolutions",
+  "url": "https://huggingface.co/BiologgingSolutions/OceanBEATs",
+  "created_at": "2025-12-05T23:15:09.000Z",
+  "updated_at": "2026-09-21T08:36:29.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-classification",
+  "library": "torch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "torch",
+    "audio",
+    "sound-event-detection",
+    "underwater-acoustics",
+    "self-supervised-learning",
+    "beats",
+    "masked-audio-modeling",
+    "audio-classification",
+    "en",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1499267441,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SARL HOSTELLERIE DU CHAMBELLAN (HOSTELLERIE DU CHAMBELLAN) - Societe.com",
+      "url": "https://www.societe.com/etablissements/sarl-hostellerie-du-chambellan-495154486.html",
+      "snippet": "L'entreprise SARL HOSTELLERIE DU CHAMBELLAN a actuellement domicilié son établissement principal à PONTPIERRE (siège …"
+    },
+    {
+      "title": "Hostellerie du Chambellan | Faulquemont",
+      "url": "https://www.lechambellan.fr/",
+      "snippet": "L’Hostellerie du Chambellan vous accueille dans un cadre naturel d’exception au cœur d’un des plus beaux golfs d’Europe, celui de …"
+    },
+    {
+      "title": "SARL HOSTELLERIE DU CHAMBELLAN (HOSTELLERIE DU CHAMBELLAN) - Societe.com",
+      "url": "https://www.societe.com/societe/sarl-hostellerie-du-chambellan-495154486.html",
+      "snippet": "SARL HOSTELLERIE DU CHAMBELLAN, société à responsabilité limitée, immatriculée sous le SIREN 495154486, est active depuis …"
+    },
+    {
+      "title": "Société SARL HOSTELLERIE DU CHAMBELLAN à 57380 PONTPIERRE",
+      "url": "https://annuaire-entreprises.data.gouv.fr/entreprise/sarl-hostellerie-du-chambellan-495154486",
+      "snippet": "La société SARL HOSTELLERIE DU CHAMBELLAN a été créée le 1 avril 2007, il y a 18 ans. Sa forme juridique est Société à …"
+    },
+    {
+      "title": "Siège social - HOSTELLERIE DU CHAMBELLAN à 57380 PONTPIERRE",
+      "url": "https://annuaire-entreprises.data.gouv.fr/etablissement/49515448600015",
+      "snippet": "Il a été créé le1 avril 2007, il y a 19 ans.C’est le siège socialde la société SARL HOSTELLERIE DU CHAMBELLAN et son unique …"
+    }
+  ]
+}

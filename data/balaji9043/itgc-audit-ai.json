@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "balaji9043/itgc-audit-ai",
+  "slug": "balaji9043-itgc-audit-ai",
+  "author": "balaji9043",
+  "url": "https://huggingface.co/balaji9043/itgc-audit-ai",
+  "created_at": "2026-09-20T11:35:08.000Z",
+  "updated_at": "2026-09-20T11:35:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "1001 Spiele - Kostenlose coole online Spiele spielen!",
+      "url": "https://www.1001spiele.de/",
+      "snippet": "Hier findest Du die tollsten Spiele für die ganze Familie! Wir haben Mädchenspiele wie Dress Up-Spiele, Tierspiele, Schminkspiele …"
+    },
+    {
+      "title": "1001 Spiele - Mehr als 1500 online Spiele kostenlos spielen",
+      "url": "https://www.1001spiele.at/",
+      "snippet": "Kostenlos und ohne anmeldung mehr als 1500 online Spiele spielen!"
+    },
+    {
+      "title": "Denkspiele - 1001 Spiele",
+      "url": "https://www.1001spiele.de/denk",
+      "snippet": "Spielen das beste Denkspiele online auf 1001Spiele. Du wirst die größte Kollektion an kostenlosen Denk-Spielen für die ganze …"
+    },
+    {
+      "title": "Denk spiele - 1001 Spiele",
+      "url": "https://www.1001spiele.at/c/denk",
+      "snippet": "Kostenlos und ohne anmeldung mehr als 1500 online Spiele spielen!"
+    },
+    {
+      "title": "Poki - Kostenlose Onlinespiele - Jetzt spielen!",
+      "url": "https://poki.com/de?msockid=00cad61457ea6e6823c9c1ce56236fc5",
+      "snippet": "Poki bringt die beste Auswahl an kostenlosen Online-Spielen und bietet das unterhaltsamste Erlebnis, allein oder mit Freunden zu …"
+    }
+  ]
+}

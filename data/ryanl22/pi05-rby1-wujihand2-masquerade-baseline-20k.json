@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "RyanL22/pi05-rby1-wujihand2-masquerade-baseline-20k",
+  "slug": "ryanl22-pi05-rby1-wujihand2-masquerade-baseline-20k",
+  "author": "RyanL22",
+  "url": "https://huggingface.co/RyanL22/pi05-rby1-wujihand2-masquerade-baseline-20k",
+  "created_at": "2026-09-20T11:25:34.000Z",
+  "updated_at": "2026-09-20T11:26:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "rby1",
+    "wujihand2",
+    "masquerade",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143449894,
+  "parameters_human": "4.14B",
+  "storage_bytes": 9354241356,
+  "storage_human": "9.4 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home - strandhotel-alte-donau.at",
+      "url": "https://www.strandhotel-alte-donau.at/home.html",
+      "snippet": "Willkommen im Strandhotel Alte Donau! Familiär geführtes, modernes 4-Sterne-Hotel in Zentrumsnähe. Komfortable Zimmer, U-Bahn …"
+    },
+    {
+      "title": "Strandhotel Alte Donau - Wien",
+      "url": "https://www.hotels-und-pensionen.at/wien/unterkunft/?strandhotel-alte-donau-wien",
+      "snippet": "Strandhotel Alte Donau in Wien Das Hotel Strandhotel Alte Donau befindet sich in Wien, Wagramer Straße 51 in Wien."
+    },
+    {
+      "title": "Alte Donau - strandhotel-alte-donau.at",
+      "url": "https://www.strandhotel-alte-donau.at/de/alte-donau.html",
+      "snippet": "Das Strandhotel Alte Donau liegt inmitten der Freizeitoase Alte Donau – ein Naherholungsgebiet der besonderen Art. …"
+    },
+    {
+      "title": "Strandhotel Alte Donau, Wien, Österreich: Preise, Kontakt | A-HOTEL.com",
+      "url": "https://www.a-hotel.com/de/osterreich/45678-wien/240069-1-strandhotel-alte-donau/",
+      "snippet": "Das Strandhotel Alte Donau bietet Ihnen einen Privatstrand, kostenfreie Parkplätze und kostenfreies WLAN. Mit der U-Bahn …"
+    },
+    {
+      "title": "CITYGATE – Mein SHOPPING Center",
+      "url": "https://www.citygate.at/",
+      "snippet": "Willkommen im CITYGATE! Öffnungszeiten Mo bis Sa 7.30-21.00 Uhr Die detaillierten Öffnungszeiten finden Sie auf den Shopseiten …"
+    }
+  ]
+}

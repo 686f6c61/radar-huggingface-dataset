@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "cmeister/boundary-markers-ko-d12-plain-bpe",
+  "slug": "cmeister-boundary-markers-ko-d12-plain-bpe",
+  "author": "cmeister",
+  "url": "https://huggingface.co/cmeister/boundary-markers-ko-d12-plain-bpe",
+  "created_at": "2026-09-20T11:49:32.000Z",
+  "updated_at": "2026-09-20T11:50:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "tokenization",
+    "boundary-markers",
+    "nanochat",
+    "ko",
+    "arxiv:2608.08847",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2459100210,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rekruteringsbureau gespecialiseerd in engineering | Hays",
+      "url": "https://www.hays.be/nl/onze-expertise/engineering",
+      "snippet": "Wij bieden de mensen, de technologie en de partnerschappen die u nodig hebt om uw doelen te bereiken en te voldoen aan de …"
+    },
+    {
+      "title": "Engineering jobs | Engineering vacatures - Hays.be",
+      "url": "https://www.hays.be/nl/jobs-vacatures/engineering",
+      "snippet": "Vind gevarieerde engineering vacatures: vaste en tijdelijke technische jobs in de industriële sector. Solliciteer direct."
+    },
+    {
+      "title": "Engineering Recruitment Agency & Expertise Belgium | Hays",
+      "url": "https://www.hays.be/en/our-expertise/engineering",
+      "snippet": "We can help you hire for a range of roles, from graduate engineers to programme managers and operations directors across civil …"
+    },
+    {
+      "title": "Engineering - hays.nl",
+      "url": "https://www.hays.nl/nl/engineering",
+      "snippet": "Bij Hays hebben we uitgebreide ervaring in engineering recruitment. Ons team van toegewijde engineering recruiters zet zich in om u …"
+    },
+    {
+      "title": "Engineering - Hays.nl",
+      "url": "https://www.hays.nl/nl/hays-engineering",
+      "snippet": "Hays Engineering. Lees meer over de techniekbranche, naar welke functies is veel vraag en wat kan u als organisatie doen om …"
+    }
+  ]
+}

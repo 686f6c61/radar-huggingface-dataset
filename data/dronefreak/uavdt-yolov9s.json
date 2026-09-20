@@ -1,0 +1,104 @@
+{
+  "schema": 1,
+  "id": "dronefreak/uavdt-yolov9s",
+  "slug": "dronefreak-uavdt-yolov9s",
+  "author": "dronefreak",
+  "url": "https://huggingface.co/dronefreak/uavdt-yolov9s",
+  "created_at": "2026-09-20T11:21:36.000Z",
+  "updated_at": "2026-09-21T13:58:44.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "object-detection",
+    "detectionbench",
+    "pytorch",
+    "computer-vision",
+    "aerial-imagery",
+    "drone",
+    "uav",
+    "vehicle-detection",
+    "traffic-surveillance",
+    "small-object-detection",
+    "dataset:dronefreak/UAVDT",
+    "arxiv:1804.00518",
+    "arxiv:2402.13616",
+    "arxiv:2511.09554",
+    "arxiv:2304.07193",
+    "arxiv:2405.14458",
+    "arxiv:2410.17725",
+    "arxiv:2606.03748",
+    "license:agpl-3.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 28556267,
+  "storage_human": "29 MB",
+  "base_model": "Ultralytics/YOLOv9",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Object Detection",
+      "dataset": "UAVDT",
+      "metric": "mAP@50 (test split)",
+      "value": 31.82
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "UAVDT",
+      "metric": "mAP@50-95 (test split)",
+      "value": 18.71
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "UAVDT",
+      "metric": "Precision (test split)",
+      "value": 39.83
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "UAVDT",
+      "metric": "Recall (test split)",
+      "value": 38.12
+    }
+  ],
+  "sources": [
+    {
+      "title": "Bicicletas de estrada, gravel e montanha de classe mundial | CANYON PT",
+      "url": "https://www.canyon.com/pt-pt/?msockid=23dad40f311667543fbac3d5302266d1",
+      "snippet": "Compra a gama completa de bicicletas de estrada em carbono e alumínio, bicicletas de montanha, bicicletas de triatlo, bicicletas …"
+    },
+    {
+      "title": "World-Class Road, Gravel, & Mountain Bikes | CANYON SI",
+      "url": "https://www.canyon.com/en-si/?msockid=23dad40f311667543fbac3d5302266d1",
+      "snippet": "Shop the full range of carbon and aluminum road bikes, mountain bikes, triathlon bikes, e-bikes & more. Buy manufacturer-direct and …"
+    },
+    {
+      "title": "Canyon Newsroom",
+      "url": "https://media-centre.canyon.com/en-INT/",
+      "snippet": "3 days ago · CANYON AND ZWIFT JOIN FORCES TO WELCOME THOUSANDS OF ROAD CYCLING FANS DURING TWO-WEEK …"
+    },
+    {
+      "title": "Vélos de route, gravel et VTT de classe mondiale | CANYON CA",
+      "url": "https://www.canyon.com/fr-ca/?msockid=23dad40f311667543fbac3d5302266d1",
+      "snippet": "Découvrez la gamme de vélos de route, VTT, vélos de triathlon, vélos électriques en carbone et en aluminium. Achetez directement …"
+    },
+    {
+      "title": "Gravel Bike online kaufen: Direkt vom Hersteller | CANYON DE",
+      "url": "https://www.canyon.com/de-de/gravel-bikes/?msockid=23dad40f311667543fbac3d5302266d1",
+      "snippet": "Gravel Bike online kaufen bei Canyon Profitiere vom besten Preis-Leistungs-Verhältnis durch Direktvertrieb ohne Zwischenhändler. …"
+    }
+  ]
+}

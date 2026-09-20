@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "SACXZ213EDS/MyAwesomeModel-TestRepo",
+  "slug": "sacxz213eds-myawesomemodel-testrepo",
+  "author": "SACXZ213EDS",
+  "url": "https://huggingface.co/SACXZ213EDS/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-20T04:25:37.000Z",
+  "updated_at": "2026-09-20T04:28:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accueil - Commune de Roquevaire",
+      "url": "https://ville-de-roquevaire.fr/",
+      "snippet": "Du lundi au vendredi de 8h00 à 12h00 et de 13H30 à 16h30. Le samedi matin de 10h00 à 12h00 (état civil uniquement, fermé le …"
+    },
+    {
+      "title": "Mairie - Roquevaire - Annuaire | Service Public",
+      "url": "https://lannuaire.service-public.gouv.fr/provence-alpes-cote-d-azur/bouches-du-rhone/586ae834-bb67-479e-ad2c-f0e366475e32",
+      "snippet": "Mairie - Roquevaire Horaires Du Lundi au Vendredi : de 08h00 à 12h00 de 13h30 à 16h30 Le Samedi : de 10h00 à 12h00"
+    },
+    {
+      "title": "Mairie de Roquevaire — Horaires, démarches et services (13360)",
+      "url": "https://mairies-online.com/commune/roquevaire/",
+      "snippet": "Mairie de Roquevaire (13360) : horaires d'ouverture, déchèteries, carte d'identité, état civil et services municipaux. Toutes les infos …"
+    },
+    {
+      "title": "Mairie de Roquevaire",
+      "url": "http://www.ma-mairie.com/Mairie-13-Roquevaire",
+      "snippet": "Mairie de Roquevaire. Retrouvez les informations sur la commune de Roquevaire: site officiel, le Maire, les Elus, plan, adresse, …"
+    },
+    {
+      "title": "Info mairie Roquevaire (13360) – Téléphone, état civil, adresse ...",
+      "url": "https://www.info-mairie.com/commune/13360-roquevaire",
+      "snippet": "Informations sur la mairie de Roquevaire (13360) : état civil, horaires d’ouverture, adresse postale, contact, mail… Toutes les …"
+    }
+  ]
+}

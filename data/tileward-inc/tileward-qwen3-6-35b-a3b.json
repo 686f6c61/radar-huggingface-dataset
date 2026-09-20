@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Tileward-Inc/Tileward-Qwen3.6-35B-A3B",
+  "slug": "tileward-inc-tileward-qwen3-6-35b-a3b",
+  "author": "Tileward-Inc",
+  "url": "https://huggingface.co/Tileward-Inc/Tileward-Qwen3.6-35B-A3B",
+  "created_at": "2026-08-20T18:54:14.000Z",
+  "updated_at": "2026-09-19T19:07:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "moe",
+    "text-generation",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:quantized:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text Generation",
+      "dataset": "MMLU (5-shot)",
+      "metric": "accuracy",
+      "value": 82.7
+    }
+  ],
+  "sources": [
+    {
+      "title": "西班牙语g到底有哪些？ - 知乎",
+      "url": "https://www.zhihu.com/question/50312313",
+      "snippet": "Sep 3, 2016 · Ga go gu等里g的发音跟英语里go里面的g应该是比较像的，跟拼音里的g是有区别的 (拼音里的g应该不属于浊辅音)。听 …"
+    },
+    {
+      "title": "同是1080p电影，为何大小会从几G到上百G，画质差别很 ...",
+      "url": "https://www.zhihu.com/question/22432467",
+      "snippet": "那是因为帧数不同。 1080是单张图片的分辨率，而帧数觉得一秒钟有多少张这样的图片在你显示器上显示。 码率就是单位时间内视屏 …"
+    },
+    {
+      "title": "Google One プランの更新とアップグレードに関する問題 ...",
+      "url": "https://support.google.com/googleone/answer/6374282?hl=ja&co=GENIE.Platform%3DDesktop",
+      "snippet": "Google One の保存容量は、Google ドライブ、Gmail、Google フォトで使用できます。お使いのアカウントで Google One を利用 …"
+    },
+    {
+      "title": "拼音g怎么发音？ - 百度知道",
+      "url": "https://zhidao.baidu.com/question/269292417000249485.html",
+      "snippet": "Oct 11, 2018 · G：软腭上升，舌根隆起抵住软腭，气流因通路被完全封闭而积蓄起来，然后舌根下降，脱离软腭，气流迸发而出，爆 …"
+    },
+    {
+      "title": "物理化学中,G,U,H,A,S所代表的含义_百度知道",
+      "url": "https://zhidao.baidu.com/question/938939167350525612.html",
+      "snippet": "G表示吉布斯自由能G=H-TS；A表示霍姆亥兹自由能A=U-TS；S是混乱度的量度，S=∫δQ／T；U表示热力学能，本身无实际意义， …"
+    }
+  ]
+}

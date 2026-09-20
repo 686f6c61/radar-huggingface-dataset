@@ -1,0 +1,96 @@
+{
+  "schema": 1,
+  "id": "bosaj/eniad-llama3.1-8b-assistant-lora",
+  "slug": "bosaj-eniad-llama3-1-8b-assistant-lora",
+  "author": "bosaj",
+  "url": "https://huggingface.co/bosaj/eniad-llama3.1-8b-assistant-lora",
+  "created_at": "2026-09-20T06:17:45.000Z",
+  "updated_at": "2026-09-20T22:43:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "fr",
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "llama",
+    "llama-3",
+    "lora",
+    "text-generation",
+    "eniad",
+    "morocco",
+    "conversational",
+    "academic-assistant",
+    "higher-education",
+    "fr",
+    "en",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:adapter:meta-llama/Llama-3.1-8B-Instruct",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Academic Institutional QA",
+      "dataset": null,
+      "metric": "ROUGE-1",
+      "value": 52.4
+    },
+    {
+      "task": "Academic Institutional QA",
+      "dataset": null,
+      "metric": "ROUGE-2",
+      "value": 28.1
+    },
+    {
+      "task": "Academic Institutional QA",
+      "dataset": null,
+      "metric": "ROUGE-L",
+      "value": 48.6
+    }
+  ],
+  "sources": [
+    {
+      "title": "AZLyrics - Song Lyrics from A to Z",
+      "url": "https://www.azlyrics.com/",
+      "snippet": "Lancey Foux - \"REAP WHAT YOU SOW\", \"WHO DO YOU LOVE?\", \"ALL MY GIRLS\", \"WAIT FOR THE SUN (SUGAR)\", \"I DON'T …"
+    },
+    {
+      "title": "Lyrics.com",
+      "url": "https://www.lyrics.com/",
+      "snippet": "Easily navigate our lyrics and artist collection either alphabetically or by using our advanced query capabilities to search by keywords. …"
+    },
+    {
+      "title": "Genius | Song Lyrics & Knowledge",
+      "url": "https://genius.com/",
+      "snippet": "Genius is the world’s biggest collection of song lyrics and musical knowledge."
+    },
+    {
+      "title": "Lyric Finder: Song Locator by Lyrics - Find Song by Lyrics",
+      "url": "https://lyricfinder.net/",
+      "snippet": "Type a line, a chorus fragment, or a few unusual words to see matching song titles, artists, and links to the full lyrics within seconds. It …"
+    },
+    {
+      "title": "Lyrics, Artists, Albums | LyricsFreak.com",
+      "url": "https://www.lyricsfreak.com/",
+      "snippet": "One of the biggest lyrics libraries with daily updated newest Song Lyrics, Artists & Albums Info of all genres all around the world."
+    }
+  ]
+}

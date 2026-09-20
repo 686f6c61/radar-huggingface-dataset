@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "medalikech/whisper-small-tunisian-derja-lora",
+  "slug": "medalikech-whisper-small-tunisian-derja-lora",
+  "author": "medalikech",
+  "url": "https://huggingface.co/medalikech/whisper-small-tunisian-derja-lora",
+  "created_at": "2026-09-20T11:32:34.000Z",
+  "updated_at": "2026-09-20T11:40:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14176064,
+  "storage_human": "14 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "98053, WA homes for sale & real estate - Redfin",
+      "url": "https://www.redfin.com/zipcode/98053?msockid=3aed063cea9161372fb511e6eb156057",
+      "snippet": "Instantly search and view photos of all homes for sale in 98053, WA now. 98053, WA real estate listings updated every 15 to 30 …"
+    },
+    {
+      "title": "98053 Real Estate & Homes For Sale - Zillow",
+      "url": "https://www.zillow.com/redmond-wa-98053/?msockid=3aed063cea9161372fb511e6eb156057",
+      "snippet": "Zillow has 115 homes for sale in 98053. View listing photos, review sales history, and use our detailed real estate filters to find the …"
+    },
+    {
+      "title": "Redmond Ridge - 98053 Real Estate - 72 Homes For Sale | Zillow",
+      "url": "https://www.zillow.com/redmond-wa-98053/redmond-ridge_att/?msockid=3aed063cea9161372fb511e6eb156057",
+      "snippet": "Zillow has 72 homes for sale in 98053 matching Redmond Ridge. View listing photos, review sales history, and use our detailed real …"
+    },
+    {
+      "title": "ZIP Code 98053 Map, Demographics, More for Redmond, WA",
+      "url": "https://www.unitedstateszipcodes.org/98053/",
+      "snippet": "Interactive and printable 98053 ZIP code maps, population demographics, Redmond WA real estate costs, rental prices, and home …"
+    },
+    {
+      "title": "Habitaciones en alquiler en 98053 - Redmond, WA - Apartments.com",
+      "url": "https://www.apartments.com/es/redmond-wa-98053/habitaciones-en-alquiler/?msockid=3aed063cea9161372fb511e6eb156057",
+      "snippet": "Busque 59 habitaciones en alquiler en 98053, Redmond WA para disfrutar de costos de alquiler reducidos y una mayor flexibilidad …"
+    }
+  ]
+}

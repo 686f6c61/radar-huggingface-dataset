@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Sergeantzero/Goddess_of_Victory_Nikke",
+  "slug": "sergeantzero-goddess_of_victory_nikke",
+  "author": "Sergeantzero",
+  "url": "https://huggingface.co/Sergeantzero/Goddess_of_Victory_Nikke",
+  "created_at": "2026-07-28T07:49:51.000Z",
+  "updated_at": "2026-09-19T12:56:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 432734949,
+  "storage_human": "433 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HECE",
+      "url": "https://moodle.hece.uliege.be/",
+      "snippet": "Ce cours s'inscrit dans la continuité du cours de mécanique des fluides et du cours d'hydraulique proposés aux étudiants ingénieurs …"
+    },
+    {
+      "title": "HECE - uliege.be",
+      "url": "https://www.uee.uliege.be/cms/c_4550215/fr/hece",
+      "snippet": "HECE (Hydraulics in environmental and civil engineering) est actif dans tous les compartiments de l'hydraulique et de …"
+    },
+    {
+      "title": "HECE",
+      "url": "https://www.hece.uliege.be/",
+      "snippet": "HECE (Hydraulics in environmental and civil engineering) est actif dans tous les domaines de l'hydraulique et de l'hydrodynamique: …"
+    },
+    {
+      "title": "Jouer aux échecs en ligne contre l’ordinateur - Chess.com",
+      "url": "https://www.chess.com/fr/play/computer",
+      "snippet": "Jouez aux échecs contre des adversaires virtuels de tous les niveaux. Suivez les conseils des bots entraîneurs ou affrontez des …"
+    },
+    {
+      "title": "Études supérieures autour de Charleroi, Mons et Tournai",
+      "url": "https://www.helha.be/",
+      "snippet": "2 days ago · Des études supérieures de haut niveau? La Haute École Louvain en Hainaut te propose des bacheliers, des masters et …"
+    }
+  ]
+}

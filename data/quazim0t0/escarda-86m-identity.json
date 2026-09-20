@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Quazim0t0/Escarda-86M-Identity",
+  "slug": "quazim0t0-escarda-86m-identity",
+  "author": "Quazim0t0",
+  "url": "https://huggingface.co/Quazim0t0/Escarda-86M-Identity",
+  "created_at": "2026-06-20T02:26:05.000Z",
+  "updated_at": "2026-09-20T07:42:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "spike_whale",
+    "feature-extraction",
+    "text-generation",
+    "small-models",
+    "chat",
+    "mla",
+    "jepa",
+    "custom_code",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 420,
+  "trending_score": 0,
+  "parameters": 97272836,
+  "parameters_human": "97.3M",
+  "storage_bytes": 781294581,
+  "storage_human": "781 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Signs and Symptoms of Tuberculosis | Tuberculosis (TB) | CDC",
+      "url": "https://www.cdc.gov/tb/signs-symptoms/index.html",
+      "snippet": "Jan 17, 2025 · Common symptoms of active TB disease include cough, pain in the chest, and coughing up blood or sputum (phlegm). …"
+    },
+    {
+      "title": "Tuberculosis - Symptoms & causes - Mayo Clinic",
+      "url": "https://www.mayoclinic.org/diseases-conditions/tuberculosis/symptoms-causes/syc-20351250",
+      "snippet": "Apr 24, 2025 · Symptoms of active TB disease in the lungs usually begin gradually and worsen over a few weeks. They may include: …"
+    },
+    {
+      "title": "Tuberculosis Symptoms and Diagnosis - American Lung Association",
+      "url": "https://www.lung.org/lung-health-diseases/lung-disease-lookup/tuberculosis/symptoms-diagnosis",
+      "snippet": "Mar 20, 2026 · Learn the symptoms of tuberculosis, when to get tested, and how TB is diagnosed. Find out the difference between …"
+    },
+    {
+      "title": "Tuberculosis (TB): Causes, Symptoms, Treatment & Prevention",
+      "url": "https://my.clevelandclinic.org/health/diseases/11301-tuberculosis",
+      "snippet": "Aug 13, 2026 · Tuberculosis (TB) is a bacterial infection that usually affects your lungs. Symptoms include persistent cough, fatigue, …"
+    },
+    {
+      "title": "Clinical Symptoms of Tuberculosis | Tuberculosis (TB) | CDC",
+      "url": "https://www.cdc.gov/tb/hcp/clinical-signs-and-symptoms/index.html",
+      "snippet": "May 8, 2024 · Most individuals with tuberculosis (TB) disease have one or more symptoms. Symptoms of TB disease may vary …"
+    }
+  ]
+}

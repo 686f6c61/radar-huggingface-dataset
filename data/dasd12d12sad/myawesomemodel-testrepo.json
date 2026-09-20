@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "DASD12D12SAD/MyAwesomeModel-TestRepo",
+  "slug": "dasd12d12sad-myawesomemodel-testrepo",
+  "author": "DASD12D12SAD",
+  "url": "https://huggingface.co/DASD12D12SAD/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-20T07:15:43.000Z",
+  "updated_at": "2026-09-20T07:15:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "آيات الزواج في القرآن الكريم - موضوع",
+      "url": "https://mawdoo3.com/%D8%A2%D9%8A%D8%A7%D8%AA_%D8%A7%D9%84%D8%B2%D9%88%D8%A7%D8%AC_%D9%81%D9%8A_%D8%A7%D9%84%D9%82%D8%B1%D8%A2%D9%86_%D8%A7%D9%84%D9%83%D8%B1%D9%8A%D9%85",
+      "snippet": "آيات قرآنية عن مشروعية الزواج والترغيب فيه شرع الله الزواج وحث عليه فهو ضرورة حياتية وحاجة فطرية وروحية وجسدية أودعها في خلقه، ومن الآيات التي تبيّن أهمية الزواج ذلك ما يأتي:"
+    },
+    {
+      "title": "آيات عن النكاح في القرآن - سورة قرآن",
+      "url": "https://surahquran.com/ayat/%D8%A7%D9%84%D9%86%D9%83%D8%A7%D8%AD",
+      "snippet": "النكاح : آيات عن النكاح في القرآن الكريم , الآيات التي تضمنت كلمة النكاح في القرآن الكريم تسع تفاسير معتبرة , عدد الآيات التي وردت فيها كلمة النكاح في القرآن."
+    },
+    {
+      "title": "آيات الخطبة والزواج - آيات من القرآن",
+      "url": "https://ayatmnalquran.com/y/%D8%A2%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%AE%D8%B7%D8%A8%D8%A9-%D9%88%D8%A7%D9%84%D8%B2%D9%88%D8%A7%D8%AC",
+      "snippet": "آيات الخطبة والزواج.آيات ذكرت الخطبة والزواج.آيات تيسير الخطبة والزواج....... (وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا."
+    },
+    {
+      "title": "آيات عن الزواج - شبكة الألوكة",
+      "url": "https://www.alukah.net/sharia/0/119833/%d8%a2%d9%8a%d8%a7%d8%aa-%d8%b9%d9%86-%d8%a7%d9%84%d8%b2%d9%88%d8%a7%d8%ac/",
+      "snippet": "آيات عن الزواج ♦ ﴿ وَلَا تَنْكِحُوا الْمُشْرِكَاتِ حَتَّى يُؤْمِنَّ وَلَأَمَةٌ مُؤْمِنَةٌ خَيْرٌ مِنْ مُشْرِكَةٍ وَلَوْ أَعْجَبَتْكُمْ وَلَا تُنْكِحُوا الْمُشْرِكِينَ حَتَّى ..."
+    },
+    {
+      "title": "آيات الزواج .. ايات قرانية عن الزواج | مصدرنا",
+      "url": "https://masdarona.com/%D8%A2%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D8%B2%D9%88%D8%A7%D8%AC-%D8%A7%D9%8A%D8%A7%D8%AA-%D9%82%D8%B1%D8%A7%D9%86%D9%8A%D8%A9-%D8%B9%D9%86-%D8%A7%D9%84%D8%B2%D9%88%D8%A7%D8%AC",
+      "snippet": "آيات عن الحب والزواج و المودة. (وَمِنْ ءَايَاتِهِۦٓ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَجًا لِّتَسْكُنُواْ إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً إِنَّ فِى ذَلِكَ لَآياتٍۢ لِّقَوْم يَتَفَكَّرُونَ)"
+    }
+  ]
+}

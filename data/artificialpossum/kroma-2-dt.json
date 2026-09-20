@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "artificialpossum/Kroma-2-DT",
+  "slug": "artificialpossum-kroma-2-dt",
+  "author": "artificialpossum",
+  "url": "https://huggingface.co/artificialpossum/Kroma-2-DT",
+  "created_at": "2026-08-09T13:48:35.000Z",
+  "updated_at": "2026-09-19T18:42:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 74018161042,
+  "storage_human": "74.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "At sign - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/At_sign",
+      "snippet": "The at sign (@) is a typographical symbol used as an accounting and invoice abbreviation meaning \"at a rate of\" (e.g. 7 widgets @ …"
+    },
+    {
+      "title": "At sign | Meaning, Symbol, History, Uses, & Facts | Britannica",
+      "url": "https://www.britannica.com/topic/at-sign",
+      "snippet": "At sign, symbol (@) used primarily to direct electronic communication to specified entities, most notably in email addresses and social …"
+    },
+    {
+      "title": "How to Type the At Symbol (@) on Keyboard (Windows, Mac, Phone ...",
+      "url": "https://howtotypeanything.com/type-at-symbol-on-keyboard/",
+      "snippet": "The at sign or at symbol @ is used in email addresses (name@example.com), social media usernames (@username), and many …"
+    },
+    {
+      "title": "Вікіпедія",
+      "url": "https://uk.wikipedia.org/wiki/@",
+      "snippet": "На думку американського вченого Бертольда Уллмана, історія знака @ бере початок ще з середньовіччя, коли ченці — …"
+    },
+    {
+      "title": "At Symbol (@) - Copy and Paste Text Symbols - Symbolsdb.com",
+      "url": "https://symbolsdb.com/at-symbol",
+      "snippet": "Press the key or keys on the numpad while holding ALT. Copy and paste At Symbol (@) which is usually a part of an e-mail address. …"
+    }
+  ]
+}

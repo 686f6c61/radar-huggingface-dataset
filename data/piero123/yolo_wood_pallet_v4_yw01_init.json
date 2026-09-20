@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "piero123/yolo_wood_pallet_v4_yw01_init",
+  "slug": "piero123-yolo_wood_pallet_v4_yw01_init",
+  "author": "piero123",
+  "url": "https://huggingface.co/piero123/yolo_wood_pallet_v4_yw01_init",
+  "created_at": "2026-09-20T10:31:20.000Z",
+  "updated_at": "2026-09-20T20:16:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4683901385,
+  "storage_human": "4.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Startseite",
+      "url": "https://www.schuettpelz-busreisen.de/",
+      "snippet": "Herzlich Willkommen bei Michael Schüttpelz Busreisen – Reisen zum Wohlfühlen. Mit uns sicher auf Tour! Wir freuen uns auf Sie! …"
+    },
+    {
+      "title": "Mehrtagesfahrten - schuettpelz-busreisen.de",
+      "url": "https://www.schuettpelz-busreisen.de/mehrtagesfahrten/",
+      "snippet": "14 hours ago · Nächster Termin: 20.09.2026 - 24.09.2026"
+    },
+    {
+      "title": "Team",
+      "url": "https://www.schuettpelz-busreisen.de/team/",
+      "snippet": "Sonja Holtmann „ Schüttpelz Busreisen, mein Name ist Sonja Holtmann, was kann ich für Sie tun?“ So (oder zumindest so ähnlich) …"
+    },
+    {
+      "title": "Fuhrpark - schuettpelz-busreisen.de",
+      "url": "https://www.schuettpelz-busreisen.de/fuhrpark-1/",
+      "snippet": "Durch die Kooperation mit der Verkehrsbetriebe Bils GmbH ist es uns möglich, unsere Busse immer auf einem technischen …"
+    },
+    {
+      "title": "Reisebedingungen der Firma Michael Schüttpelz Busreisen",
+      "url": "https://www.schuettpelz-busreisen.de/wp-content/uploads/go-x/u/1928ab55-ec89-4c41-95b9-40bb12af6ae8/AGB-Pauschalreisen-Schuettpelz-07-2025.pdf",
+      "snippet": "Reisebedingungen der Firma Michael Schüttpelz Busreisen die nächfolgenden Bestimmungen werden, soweit wirksam vereinbart, …"
+    }
+  ]
+}

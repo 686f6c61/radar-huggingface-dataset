@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "intergalaticmermaid/modelos_RVC_BR",
+  "slug": "intergalaticmermaid-modelos_rvc_br",
+  "author": "intergalaticmermaid",
+  "url": "https://huggingface.co/intergalaticmermaid/modelos_RVC_BR",
+  "created_at": "2023-12-11T02:46:29.000Z",
+  "updated_at": "2026-09-20T04:37:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1654918083,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Trekkingsuitslagen van Lotto - Heb jij wat gewonnen? | Lotto",
+      "url": "https://lotto.nederlandseloterij.nl/trekkingsuitslag",
+      "snippet": "Sep 11, 2026 · Ben jij één van de Lotto winnaars deze week? Bekijk hier de trekkingsuitslag. Elke zaterdagavond na de trekking om …"
+    },
+    {
+      "title": "Lotto: Speel mee met de Vaakst Vallende Jackpot | Lotto",
+      "url": "https://lotto.nederlandseloterij.nl/",
+      "snippet": "Elke week zijn er honderdduizenden winnaars bij Lotto. Win jij deze week de Jackpot van minimaal €1.000.000? Of de XL hoofdprijs …"
+    },
+    {
+      "title": "Trekkingsuitslagen - Nederlandse Loterij",
+      "url": "https://www.nederlandseloterij.nl/klantenservice/trekkingsuitslagen",
+      "snippet": "Daarom zijn per 1 februari 2022 de uitslagen van Staatsloterij, Lotto, Eurojackpot, Lucky Day en TOTO niet meer beschikbaar op …"
+    },
+    {
+      "title": "Mijn Lotto - Nederlandse Loterij",
+      "url": "https://www.nederlandseloterij.nl/klantenservice/mijn-overzicht/mijn-lotto",
+      "snippet": "Al jouw loten van Lotto staan overzichtelijk bij elkaar in Mijn Lotto. Je vindt hier zowel de loten uit je abonnement als de Lotto loten …"
+    },
+    {
+      "title": "Lottozahlen und Lottoquoten | LOTTO.de",
+      "url": "https://www.lotto.de/lotto-6aus49/lottozahlen",
+      "snippet": "Sep 9, 2026 · Aktuelle Lottozahlen und Lottoquoten der Ziehung von LOTTO 6aus49 am Mittwoch und Samstag und ein Lotto-Archiv …"
+    }
+  ]
+}

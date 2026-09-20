@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "mohawwad93/roberta-racial-language-detector",
+  "slug": "mohawwad93-roberta-racial-language-detector",
+  "author": "mohawwad93",
+  "url": "https://huggingface.co/mohawwad93/roberta-racial-language-detector",
+  "created_at": "2026-09-20T11:37:42.000Z",
+  "updated_at": "2026-09-21T13:16:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "safety",
+    "hate-speech",
+    "content-moderation",
+    "en",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124647170,
+  "parameters_human": "124.6M",
+  "storage_bytes": 1994451296,
+  "storage_human": "2.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Begrafenissen Ranst | Begrafenissen Van den Bogaert: rouwdrukwerk, …",
+      "url": "https://www.vandenbogaert-ranst.be/",
+      "snippet": "Familiebedrijf Begrafenissen Van den Bogaert in Ranst zorgt al drie generaties lang voor een respectvol afscheid van uw dierbare. …"
+    },
+    {
+      "title": "Sbizhub C2523052111040 - vandenbogaert-ranst.be",
+      "url": "https://www.vandenbogaert-ranst.be/media/images/upload/Scholiers%20Koen.pdf",
+      "snippet": "Bloemen noch kransen Rouwadres: Familie Scholiers - Joos p.a. Begrafenissen Van den Bogaert Zevenbergenlaan 15, 2520 Ranst …"
+    },
+    {
+      "title": "Opmaak 1 - vandenbogaert-ranst.be",
+      "url": "https://www.vandenbogaert-ranst.be/media/images/upload/van%20houtven%20Maria.pdf",
+      "snippet": "Maria haar laatste wens is dat we na het bidden van een Weesgegroet en een Onze Vader haar te rusten leggen in de familiegrond. …"
+    },
+    {
+      "title": "Begrafenissen Van den Bogaert - Ranst 03 485 55 60",
+      "url": "https://www.vandenbogaert-ranst.be/media/images/upload/pribil-pdf.pdf",
+      "snippet": "Begrafenissen Van den Bogaert - Ranst 03 485 55 60 Sommige mensen zijn als kaarsen. Ze branden zichzelf op om licht voor …"
+    },
+    {
+      "title": "Opmaak 1 - vandenbogaert-ranst.be",
+      "url": "https://www.vandenbogaert-ranst.be/media/images/upload/Mertens%20Alfons.pdf",
+      "snippet": "Rouwadres: Familie Mertens - Schrauwen p.a. Begrafenissen Van den Bogaert Zevenbergenlaan 15, 2520 Ranst online condoleren: …"
+    }
+  ]
+}

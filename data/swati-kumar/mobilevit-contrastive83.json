@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "swati-kumar/mobilevit-contrastive83",
+  "slug": "swati-kumar-mobilevit-contrastive83",
+  "author": "swati-kumar",
+  "url": "https://huggingface.co/swati-kumar/mobilevit-contrastive83",
+  "created_at": "2026-09-20T11:52:40.000Z",
+  "updated_at": "2026-09-20T11:52:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mobilevit",
+    "pytorch",
+    "contrastive",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Airbnb | Ferienwohnungen, Blockhütten, Häuser in Strandnähe & mehr",
+      "url": "https://www.airbnb.de/",
+      "snippet": "Buche eine Unterkunft auf Airbnb für jede Art von Reise → sieben Millionen Ferienunterkünfte → zwei Millionen Gäste-Favoriten → …"
+    },
+    {
+      "title": "Ferienunterkünfte in Schwarzwald, Deutschland – Airbnb",
+      "url": "https://www.airbnb.de/black-forest-germany/stays",
+      "snippet": "Finde einzigartige Ferienunterkünfte in Schwarzwald, Deutschland. Buche Häuser, Wohnungen und Apartments auf Airbnb."
+    },
+    {
+      "title": "Ferienunterkünfte in Rosenheim, Deutschland – Airbnb",
+      "url": "https://www.airbnb.de/rosenheim-germany/stays",
+      "snippet": "Finde einzigartige Ferienunterkünfte in Rosenheim, Deutschland. Buche Häuser, Wohnungen und Apartments auf Airbnb."
+    },
+    {
+      "title": "Ferienunterkünfte in Bezirk Mitte, Deutschland – Airbnb",
+      "url": "https://www.airbnb.de/mitte-berlin-germany/stays",
+      "snippet": "Finde einzigartige Ferienunterkünfte in Bezirk Mitte, Deutschland. Buche Häuser, Wohnungen und Apartments auf Airbnb."
+    },
+    {
+      "title": "Ferienunterkünfte in Innsbruck, Österreich – Airbnb",
+      "url": "https://www.airbnb.de/innsbruck-austria/stays",
+      "snippet": "Finde einzigartige Ferienunterkünfte in Innsbruck, Österreich. Buche Häuser, Wohnungen und Apartments auf Airbnb."
+    }
+  ]
+}

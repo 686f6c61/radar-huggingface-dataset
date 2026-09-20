@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "cmeister/boundary-markers-ko-d12-plain-mingram",
+  "slug": "cmeister-boundary-markers-ko-d12-plain-mingram",
+  "author": "cmeister",
+  "url": "https://huggingface.co/cmeister/boundary-markers-ko-d12-plain-mingram",
+  "created_at": "2026-09-20T11:50:15.000Z",
+  "updated_at": "2026-09-20T11:50:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "tokenization",
+    "boundary-markers",
+    "nanochat",
+    "ko",
+    "arxiv:2608.08847",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2458921210,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Schallplatte – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Schallplatte",
+      "snippet": "Schallplatten werden in unterschiedlichen Formaten mit Spieldauern von wenigen Minuten bis zu etwa 30 min pro Seite hergestellt. …"
+    },
+    {
+      "title": "Wie viele rillen hat eine langspielplatte? - AlleAntworten.de",
+      "url": "https://alleantworten.de/wie-viele-rillen-hat-eine-langspielplatte",
+      "snippet": "Wie oft kann man eine Platte hören? Mechanischer Verschleiß ist bei Schallplatten gar nicht so bedeutent wie man gemeinhin …"
+    },
+    {
+      "title": "Langspielplatte (Ein Tonträger, populär von etwa 1960 bis 1990)",
+      "url": "https://www.rhetos.de/html/lex/langspielplatte.htm",
+      "snippet": "Eine Langspielplatte war eine flache, meist schwarze Kunststoffscheibe. Auf jeder ihrer zwei Seiten gab es eine durchgehende Rille. …"
+    },
+    {
+      "title": "Wie viele Rillen hat eine Schallplatte? - plattenkritik.com",
+      "url": "https://plattenkritik.com/wie-viele-rillen-hat-eine-schallplatte/",
+      "snippet": "Aug 1, 2024 · Wie viele Rillen hat eine Schallplatte? Die Anzahl der Rillen auf einer Schallplatte hängt von mehreren Faktoren ab. Im …"
+    },
+    {
+      "title": "Wie viele rillen hat eine schallplatte? - AlleAntworten.de",
+      "url": "https://alleantworten.de/wie-viele-rillen-hat-eine-schallplatte",
+      "snippet": "Es gibt ja nicht viele Witzchen über Schallplatten, aber den einen gibt es und noch besser, die Standardantwort stimmt nicht, denn …"
+    }
+  ]
+}

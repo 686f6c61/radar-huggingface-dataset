@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "paudelarju/repo_name_here",
+  "slug": "paudelarju-repo_name_here",
+  "author": "paudelarju",
+  "url": "https://huggingface.co/paudelarju/repo_name_here",
+  "created_at": "2026-07-16T12:29:49.000Z",
+  "updated_at": "2026-09-19T18:27:22.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "m2m_100",
+    "text2text-generation",
+    "generated_from_trainer",
+    "base_model:facebook/m2m100_418M",
+    "base_model:finetune:facebook/m2m100_418M",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 35,
+  "trending_score": 0,
+  "parameters": 483905536,
+  "parameters_human": "483.9M",
+  "storage_bytes": 9680838034,
+  "storage_human": "9.7 GB",
+  "base_model": "facebook/m2m100_418M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Elvenar",
+      "url": "https://de.elvenar.com/",
+      "snippet": "Baue deine magische Stadt im Online-City-Builder Elvenar auf, wähle zwischen Elfen und Menschen und entdecken eine …"
+    }
+  ]
+}

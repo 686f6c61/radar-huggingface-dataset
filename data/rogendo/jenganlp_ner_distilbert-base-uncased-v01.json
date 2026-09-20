@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Rogendo/JengaNLP_NER_distilbert-base-uncased-v01",
+  "slug": "rogendo-jenganlp_ner_distilbert-base-uncased-v01",
+  "author": "Rogendo",
+  "url": "https://huggingface.co/Rogendo/JengaNLP_NER_distilbert-base-uncased-v01",
+  "created_at": "2026-01-06T04:10:01.000Z",
+  "updated_at": "2026-09-19T22:34:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "sw",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "ner",
+    "named-entity-recognition",
+    "nlp-for-africa",
+    "security",
+    "data-extraction",
+    "jengaNLP",
+    "sw",
+    "en",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 265495272,
+  "storage_human": "265 MB",
+  "base_model": "distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PDF dosyaları online birleştir. PDF dosyaları birleştirmek için ...",
+      "url": "https://www.ilovepdf.com/tr/pdf-birlestirme",
+      "snippet": "En kolay PDF birleştirici ile PDF'leri istediğin sırada birleştirebilirsin. Bilgisayardan yükle. Birden fazla PDF dosyasını seç ve saniyeler …"
+    },
+    {
+      "title": "iLovePDF | PDF severler için online araçlar.",
+      "url": "https://www.ilovepdf.com/tr",
+      "snippet": "iLovePDF, PDF dosyalarını düzenlemek için sunulan, kullanımı kolay ve tamamen ücretsiz olan bir online hizmettir. PDFleri …"
+    },
+    {
+      "title": "PDF'leri Birleştir Ücretsiz Çevrimiçi — Güvenli | iLoveDoc",
+      "url": "https://ilove-doc.com/tr/pdf-birlestirme",
+      "snippet": "Birden fazla PDF dosyasını tek bir belgeye birleştirin. %100 ücretsiz, kayıt gerektirmez, tarayıcınızda yerel olarak işlenir."
+    },
+    {
+      "title": "PDF Birleştirme - PDF dosyalarını çevrimiçi ücretsiz birleştirin",
+      "url": "https://smallpdf.com/tr/merge-pdf",
+      "snippet": "PDF ve JPG dosyalarını PDF Birleştir aracına yükleyerek tek bir dosyada birleştirebilirsin. Tek yapman gereken tüm dosyalarını …"
+    },
+    {
+      "title": "iLoveConvert - Ücretsiz Çevrimiçi PDF Araçları | PDF Birleştir",
+      "url": "https://iloveconvert.app/tr",
+      "snippet": "PDF dosyalarınızla başa çıkmak için ihtiyacınız olan tüm araçlar parmaklarınızın ucunda. Hepsi %100 ücretsiz ve kullanımı kolay! …"
+    }
+  ]
+}

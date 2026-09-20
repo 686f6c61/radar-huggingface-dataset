@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "ebisuke/semanticlm",
+  "slug": "ebisuke-semanticlm",
+  "author": "ebisuke",
+  "url": "https://huggingface.co/ebisuke/semanticlm",
+  "created_at": "2026-09-20T04:11:59.000Z",
+  "updated_at": "2026-09-22T02:40:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "semantic_lm",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 227,
+  "trending_score": 0,
+  "parameters": 841004032,
+  "parameters_human": "841.0M",
+  "storage_bytes": 241887034648,
+  "storage_human": "241.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "一个方框内有个勾（☑）怎么打出这符号_百度知道",
+      "url": "https://zhidao.baidu.com/question/136956635.html",
+      "snippet": "一个方框内有个勾（☑）怎么打出这符号在Word文档中，如何输入像这样可以打勾打叉的方框呢？有不止一种方法能够输入这样的方 …"
+    },
+    {
+      "title": "梦幻西游黑风山副本抄写大全_百度知道",
+      "url": "https://zhidao.baidu.com/question/580670653.html",
+      "snippet": "梦幻西游黑风山副本抄写大全梦幻西游黑风山副本抄写大全如下：1、若菩萨欲得净土当净其心随其心净则佛土净2、法尚应舍何况非 …"
+    },
+    {
+      "title": "What is a social media audit? Optimize your social media for …",
+      "url": "https://www.bigcommerce.com/glossary/social-media-audit/",
+      "snippet": "3. Check each profile for completion Go through each profile and make sure that every input option is filled. Social media sites vary in …"
+    },
+    {
+      "title": "Social Commerce in 2026 (How It’s Reshaping Ecommerce)",
+      "url": "https://www.bigcommerce.com/articles/omnichannel-retail/social-commerce/",
+      "snippet": "Social commerce is changing the way we shop. Explore key trends, platforms, and strategies to leverage this growing ecommerce …"
+    },
+    {
+      "title": "俄罗斯搜索引擎网址 yandex官网入口直达 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/725567645356284605.html",
+      "snippet": "Nov 11, 2025 · 俄罗斯搜索引擎网址 yandex官网入口直达Yandex的官方网址如下：国际版入口：https://yandex.com/俄罗斯本土版入 …"
+    }
+  ]
+}

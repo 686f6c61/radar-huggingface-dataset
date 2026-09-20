@@ -1,0 +1,104 @@
+{
+  "schema": 1,
+  "id": "dronefreak/uavdt-yolov10n",
+  "slug": "dronefreak-uavdt-yolov10n",
+  "author": "dronefreak",
+  "url": "https://huggingface.co/dronefreak/uavdt-yolov10n",
+  "created_at": "2026-09-20T11:21:44.000Z",
+  "updated_at": "2026-09-21T13:58:20.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "object-detection",
+    "detectionbench",
+    "pytorch",
+    "computer-vision",
+    "aerial-imagery",
+    "drone",
+    "uav",
+    "vehicle-detection",
+    "traffic-surveillance",
+    "small-object-detection",
+    "dataset:dronefreak/UAVDT",
+    "arxiv:1804.00518",
+    "arxiv:2405.14458",
+    "arxiv:2511.09554",
+    "arxiv:2304.07193",
+    "arxiv:2410.17725",
+    "arxiv:2606.03748",
+    "arxiv:2402.13616",
+    "license:agpl-3.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19556651,
+  "storage_human": "20 MB",
+  "base_model": "Ultralytics/YOLOv10",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Object Detection",
+      "dataset": "UAVDT",
+      "metric": "mAP@50 (test split)",
+      "value": 27.17
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "UAVDT",
+      "metric": "mAP@50-95 (test split)",
+      "value": 15.16
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "UAVDT",
+      "metric": "Precision (test split)",
+      "value": 33.3
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "UAVDT",
+      "metric": "Recall (test split)",
+      "value": 31.21
+    }
+  ],
+  "sources": [
+    {
+      "title": "俄罗斯搜索引擎网址 yandex官网入口直达_百度知道",
+      "url": "https://zhidao.baidu.com/question/725567645356284605.html",
+      "snippet": "Nov 11, 2025 · 云存储（Yandex Disk）：提供文件存储与共享功能。 多元化服务：涵盖打车（与Uber合并）、外卖、电商、音乐流媒 …"
+    },
+    {
+      "title": "Yandex (全网版）登录入口 yandex引擎全球版地址入口链接",
+      "url": "https://zhidao.baidu.com/question/2130668061390532747.html",
+      "snippet": "Nov 11, 2025 · 图：Yandex国际版首页界面（支持语言切换） 二、无需登录的核心功能 搜索服务 支持网页、图片、新闻、视频等多分 …"
+    },
+    {
+      "title": "魅魔银纹的含义有哪些？ - 知乎",
+      "url": "https://www.zhihu.com/question/472558218",
+      "snippet": "对于这个题目，知乎之前有人很详细解答过 魅魔yin纹的含义有哪些？ 做为一位中年男性，很想探究这背后的文化产生是怎样的。 1. …"
+    },
+    {
+      "title": "yandex 搜索使用有什么技巧？ - 知乎",
+      "url": "https://www.zhihu.com/question/581032783/answers/updated",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "求能下载谷歌商店的下载一款游览器Yandex apk - 吾爱破解 - 52pojie.cn",
+      "url": "https://www.52pojie.cn/thread-1153013-1-1.html",
+      "snippet": "Apr 10, 2020 · 吾爱破解 - 52pojie.cn » 网站 › 【 软件安全 】 › 『悬赏问答区』 › old_thread › 求能下载谷歌商店的下载一款游览 …"
+    }
+  ]
+}

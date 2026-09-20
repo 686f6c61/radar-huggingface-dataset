@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Qwen/Qwen-Image-2.1-PE-I2I",
+  "slug": "qwen-qwen-image-2-1-pe-i2i",
+  "author": "Qwen",
+  "url": "https://huggingface.co/Qwen/Qwen-Image-2.1-PE-I2I",
+  "created_at": "2026-09-20T08:46:47.000Z",
+  "updated_at": "2026-09-20T11:59:48.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "qwen",
+    "prompt-rewriting",
+    "image-editing",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 24,
+  "downloads_30d": 0,
+  "trending_score": 24,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 18839710511,
+  "storage_human": "18.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qwen Studio",
+      "url": "https://chat.qwen.ai/",
+      "snippet": "Qwen Studio is an official platform from Qwen that empowers both everyday users and developers with unified access to Qwen’s …"
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/home",
+      "snippet": "Qwen is an AI assistant for everyone, powered by the Qwen series models. It’s free to use, open to all, and ready to help with …"
+    },
+    {
+      "title": "Qwen — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Qwen",
+      "snippet": "Qwen (également connu sous le nom de Tongyi Qianwen, ou en chinois 通义千问) est une famille de grands modèles de langage …"
+    },
+    {
+      "title": "Qwen",
+      "url": "https://qwen.ai/blog?id=qwen3.8",
+      "snippet": "Today, we are officially releasing Qwen 3.8-Max, the most capable model in the Qwen family to date. This also marks the first time …"
+    },
+    {
+      "title": "Qwen - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Qwen",
+      "snippet": "Qwen (also known as Tongyi Qianwen, Chinese: 通义千问; pinyin: Tōngyì Qiānwèn) is a family of predominantly open weights large …"
+    }
+  ]
+}

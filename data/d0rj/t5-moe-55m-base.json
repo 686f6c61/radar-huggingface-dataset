@@ -1,0 +1,128 @@
+{
+  "schema": 1,
+  "id": "d0rj/t5-moe-55M-base",
+  "slug": "d0rj-t5-moe-55m-base",
+  "author": "d0rj",
+  "url": "https://huggingface.co/d0rj/t5-moe-55M-base",
+  "created_at": "2026-09-20T11:56:32.000Z",
+  "updated_at": "2026-09-20T13:28:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "alicet5_moe",
+    "text2text-generation",
+    "pretrained",
+    "from-scratch",
+    "tiny-llm-ablation",
+    "custom_code",
+    "ul2",
+    "moe",
+    "encoder-decoder",
+    "text-generation",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "arxiv:2205.05131",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 54858272,
+  "parameters_human": "54.9M",
+  "storage_bytes": 220977488,
+  "storage_human": "221 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Zero-shot continuation likelihood",
+      "dataset": "HellaSwag",
+      "metric": "acc_norm (fraction; lm-eval 0.4.12)",
+      "value": 0.2779326827325234
+    },
+    {
+      "task": "Zero-shot continuation likelihood",
+      "dataset": "ARC-Easy",
+      "metric": "acc_norm (fraction; lm-eval 0.4.12)",
+      "value": 0.38930976430976433
+    },
+    {
+      "task": "Zero-shot continuation likelihood",
+      "dataset": "ARC-Challenge",
+      "metric": "acc_norm (fraction; lm-eval 0.4.12)",
+      "value": 0.2380546075085324
+    },
+    {
+      "task": "Zero-shot continuation likelihood",
+      "dataset": "PIQA",
+      "metric": "acc_norm (fraction; lm-eval 0.4.12)",
+      "value": 0.5560391730141458
+    },
+    {
+      "task": "Zero-shot continuation likelihood",
+      "dataset": "WinoGrande",
+      "metric": "acc (fraction; lm-eval 0.4.12)",
+      "value": 0.4846093133385951
+    },
+    {
+      "task": "Zero-shot continuation likelihood",
+      "dataset": "OpenBookQA",
+      "metric": "acc_norm (fraction; lm-eval 0.4.12)",
+      "value": 0.262
+    },
+    {
+      "task": "Zero-shot continuation likelihood",
+      "dataset": "BoolQ",
+      "metric": "acc (fraction; lm-eval 0.4.12)",
+      "value": 0.499388379204893
+    },
+    {
+      "task": "Zero-shot continuation likelihood",
+      "dataset": "LAMBADA OpenAI",
+      "metric": "acc (fraction; lm-eval 0.4.12)",
+      "value": 0.14826314768096255
+    }
+  ],
+  "sources": [
+    {
+      "title": "Lohnt sich Immoscout Plus? : r/Finanzen - Reddit",
+      "url": "https://www.reddit.com/r/Finanzen/comments/ygunau/lohnt_sich_immoscout_plus/",
+      "snippet": "Es lohnt sich um damit ne richtige Mappe zu machen mit allem was du brauchst und dann damit über Facebook oder EKZ bewerben. …"
+    },
+    {
+      "title": "Anzeige bei immoscout24 nur für „Käufer Plus“?? - Reddit",
+      "url": "https://www.reddit.com/r/Immobilieninvestments/comments/1bjmxmf/anzeige_bei_immoscout24_nur_f%C3%BCr_k%C3%A4ufer_plus/",
+      "snippet": "Mar 20, 2024 · Wir haben ein Haus inseriert, und dort steht bei der Anzeige „nur für Käufer Plus - auf diese Anzeige können sich nur …"
+    },
+    {
+      "title": "在德国使用immoscout24租房是否靠谱? - 知乎",
+      "url": "https://www.zhihu.com/question/411021372",
+      "snippet": "在德国使用immoscout24租房是否靠谱? 本人刚于预科毕业，已经申请多蒙工大和tum的EI专业，因为并非受限专业且自认为材料齐 …"
+    },
+    {
+      "title": "固态硬盘错误日志项数多少正常? - 知乎",
+      "url": "https://www.zhihu.com/question/456601169",
+      "snippet": "有错误日志很正常。 比如突然停电，但是这时候正在写一些数据，停电导致数据没写完，损坏了，那么就会增加错误日志项数。 还有 …"
+    },
+    {
+      "title": "Immoscout24 plus Kosten überspringen? : r/wohnen - Reddit",
+      "url": "https://www.reddit.com/r/wohnen/comments/1c9e1gi/immoscout24_plus_kosten_%C3%BCberspringen/",
+      "snippet": "Ich suche schon länger eine Wohnung und ich bin jetzt auf immoscout24 plus gelandet, und ich frage mich ob sich das lohnt und ob …"
+    }
+  ]
+}

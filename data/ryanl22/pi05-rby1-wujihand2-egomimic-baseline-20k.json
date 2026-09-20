@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "RyanL22/pi05-rby1-wujihand2-egomimic-baseline-20k",
+  "slug": "ryanl22-pi05-rby1-wujihand2-egomimic-baseline-20k",
+  "author": "RyanL22",
+  "url": "https://huggingface.co/RyanL22/pi05-rby1-wujihand2-egomimic-baseline-20k",
+  "created_at": "2026-09-20T11:26:28.000Z",
+  "updated_at": "2026-09-20T11:27:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "rby1",
+    "wujihand2",
+    "egomimic",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143449894,
+  "parameters_human": "4.14B",
+  "storage_bytes": 9354241356,
+  "storage_human": "9.4 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "تسجيل الدخول إلى Gmail - جهاز الكمبيوتر - مساعدة Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=ar&co=GENIE.Platform%3DDesktop",
+      "snippet": "تسجيل الدخول على جهاز الكمبيوتر، انتقِل إلى Gmail. أدخِل عنوان البريد الإلكتروني لحسابك على Google أو رقم الهاتف وكلمة المرور."
+    },
+    {
+      "title": "Google Help",
+      "url": "https://support.google.com/mail/answer/56256?hl=ar",
+      "snippet": ""
+    },
+    {
+      "title": "أ£أ¤أٹأڈأ­أ‡أٹ أ‡أ،أکأ­أˆ أ،أ،أŒأ£أ­أڑ",
+      "url": "https://www.ta4a.com/showthread.php?t=121207",
+      "snippet": "ÒíÇÑÉ æÇÍÏå ÊßÝí áÊÕÈÍ ãÏãä ãæÞÚäÇ"
+    },
+    {
+      "title": "كيفية استرداد حسابك على Google أو Gmail - مساعدة حساب Google",
+      "url": "https://support.google.com/accounts/answer/7682439?hl=ar",
+      "snippet": "حرصًا على أمانك، لا يمكنك الاتصال بفريق دعم Google للحصول على مساعدة بشأن تسجيل الدخول إلى حسابك. ولا نعمل مع أي خدمة تزعم تقديمها الدعم في ما يتعلّق بكلمات المرور أو الحسابات."
+    },
+    {
+      "title": "استخدام وضع التصفّح المتخفي",
+      "url": "https://support.google.com/chrome/answer/95464?hl=ar&co=GENIE.Platform%3DDesktop",
+      "snippet": "فتح وضع التصفّح المتخفي لبدء جلسة تصفُّح متخفٍ، اتّبِع الخطوات التالية: على جهاز الكمبيوتر، افتح Chrome. في أعلى يسار الشاشة، انقر على \"المزيد\" نافذة جديدة في وضع التصفّح المتخفي. سيتم …"
+    }
+  ]
+}

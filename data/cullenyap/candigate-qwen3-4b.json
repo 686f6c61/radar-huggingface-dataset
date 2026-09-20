@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "CullenYap/CandiGate-Qwen3-4B",
+  "slug": "cullenyap-candigate-qwen3-4b",
+  "author": "CullenYap",
+  "url": "https://huggingface.co/CullenYap/CandiGate-Qwen3-4B",
+  "created_at": "2026-09-20T11:25:34.000Z",
+  "updated_at": "2026-09-21T12:21:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qwen3",
+    "lora",
+    "agent",
+    "tool-selection",
+    "candidate-logits",
+    "decision-model",
+    "zh",
+    "en",
+    "dataset:AmazonScience/massive",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:adapter:Qwen/Qwen3-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 94449248,
+  "storage_human": "94 MB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Therapeutic Recreation jobs in Minnesota - Indeed",
+      "url": "https://www.indeed.com/q-Therapeutic-Recreation-l-Minnesota-jobs.html",
+      "snippet": "Browse 252 Therapeutic Recreation jobs in Minnesota. New jobs posted today. Apply now and find your next opportunity on …"
+    },
+    {
+      "title": "Therapeutic Recreation jobs in Minneapolis, MN - Indeed",
+      "url": "https://www.indeed.com/q-Therapeutic-Recreation-l-Minneapolis,-MN-jobs.html",
+      "snippet": "Browse 165 Therapeutic Recreation jobs in Minneapolis, MN. New jobs posted today. Apply now and find your next opportunity on …"
+    },
+    {
+      "title": "$17-$67/hr Therapeutic Recreation Aide Jobs in Minnesota",
+      "url": "https://www.ziprecruiter.com/Jobs/Therapeutic-Recreation-Aide/--in-Minnesota?lk=DvpxPiQoy5BPxDmGmcoRQw",
+      "snippet": "Browse 61 THERAPEUTIC RECREATION AIDE jobs ($17-$67/hr) hiring now in MINNESOTA. New openings daily. Apply early, get …"
+    },
+    {
+      "title": "therapeutic recreation specialist jobs in minnesota - SimplyHired",
+      "url": "https://www.simplyhired.com/search?q=therapeutic+recreation+specialist&l=minnesota",
+      "snippet": "20 Therapeutic recreation specialist jobs available in Minnesota. See salaries, compare reviews, easily apply, and get hired. New …"
+    },
+    {
+      "title": "77 Therapeutic recreation jobs in Minneapolis-St. Paul, MN",
+      "url": "https://www.glassdoor.com/Job/minneapolis-therapeutic-recreation-jobs-SRCH_IL.0,11_IM567_KO12,34.htm",
+      "snippet": "Search Therapeutic recreation jobs in Minneapolis-St. Paul, MN with company ratings & salaries. 77 open jobs for Therapeutic …"
+    }
+  ]
+}

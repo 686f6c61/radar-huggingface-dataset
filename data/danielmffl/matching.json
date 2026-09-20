@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "danielmffl/matching",
+  "slug": "danielmffl-matching",
+  "author": "danielmffl",
+  "url": "https://huggingface.co/danielmffl/matching",
+  "created_at": "2026-09-20T11:27:32.000Z",
+  "updated_at": "2026-09-20T11:27:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mixer",
+    "pytorch",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Search - Microsoft Bing",
+      "url": "https://www2.bing.com/",
+      "snippet": "Search with Microsoft Bing and use the power of AI to find information, explore webpages, images, videos, maps, and more. A smart …"
+    },
+    {
+      "title": "Search - Search History - Bing",
+      "url": "https://www.bing.com/profile/history",
+      "snippet": "Your search history isn't available right now. Check back later or go to the M i c r o s o f t p r i v a c y d a s h b o a r d to see or clear …"
+    },
+    {
+      "title": "Search News - Bing",
+      "url": "https://www.bing.com/news/",
+      "snippet": "Get in-depth coverage of world, national, and local news on sports, entertainment, business, politics, weather, and more."
+    },
+    {
+      "title": "Bing Webmaster Tools",
+      "url": "https://www.bing.com/webmasters/about",
+      "snippet": "Sign in or signup for Bing Webmaster Tools and improve your site’s performance in search. Get access to free reports, tools and …"
+    },
+    {
+      "title": "Bing",
+      "url": "https://global.bing.com/maps/",
+      "snippet": "Map multiple locations, get transit/walking/driving directions, view live traffic conditions, plan trips, view satellite, aerial and 3d …"
+    }
+  ]
+}

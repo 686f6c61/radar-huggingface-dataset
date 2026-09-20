@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "AIOKiet/mbart-base-iwslt2015-en-vi",
+  "slug": "aiokiet-mbart-base-iwslt2015-en-vi",
+  "author": "AIOKiet",
+  "url": "https://huggingface.co/AIOKiet/mbart-base-iwslt2015-en-vi",
+  "created_at": "2026-09-14T19:21:29.000Z",
+  "updated_at": "2026-09-19T12:47:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mbart",
+    "text2text-generation",
+    "translation",
+    "machine-translation",
+    "english",
+    "vietnamese",
+    "seq2seq",
+    "mbart-50",
+    "iwslt2015",
+    "en",
+    "vi",
+    "dataset:nguyenvuhuy/iwslt2015-en-vi",
+    "arxiv:2008.00401",
+    "arxiv:2001.08210",
+    "base_model:facebook/mbart-large-50-many-to-many-mmt",
+    "base_model:finetune:facebook/mbart-large-50-many-to-many-mmt",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 36,
+  "trending_score": 0,
+  "parameters": 611129542,
+  "parameters_human": "611.1M",
+  "storage_bytes": 2466757925,
+  "storage_human": "2.5 GB",
+  "base_model": "facebook/mbart-large-50-many-to-many-mmt",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Top 10 Best Luxury African Safari Resorts & Lodges",
+      "url": "https://www.safaribookings.com/blog/top-10-best-african-safari-resorts-lodges-in-africa",
+      "snippet": "Apr 27, 2024 · From classic Big Five safari camps to sumptuous riverside retreats, the range of 5-star African safari lodges and …"
+    },
+    {
+      "title": "The 20 Best Safari Lodges in Africa - World of Wanderlust",
+      "url": "https://www.worldofwanderlust.com/the-20-best-safari-lodges-in-africa/",
+      "snippet": "These are the best safari lodges in Africa. From South Africa to Botswana and as far as Kenya these are the most luxurious lodges …"
+    },
+    {
+      "title": "Safari Lodges - A Luxury Safari Experience",
+      "url": "https://www.safari-lodges.co.uk/",
+      "snippet": "Choose from unforgettable behind-the-scenes experiences with giraffes, white lions & cheetahs, or lions & tigers – combining luxury …"
+    },
+    {
+      "title": "17 Luxury Safari Lodges in Africa | Discover Africa",
+      "url": "https://www.discoverafrica.com/blog/the-top-17-luxury-safari-lodges-in-the-world/",
+      "snippet": "Feb 18, 2024 · Discover some of the best luxury safari lodges in Africa, carefully selected to offer an immersive and transformative …"
+    },
+    {
+      "title": "10 Best Safari Lodges in South Africa (2026 Guide)",
+      "url": "https://www.worldofwanderlust.com/the-10-best-safari-lodges-in-south-africa/",
+      "snippet": "South Africa has the highest concentration of luxury safari lodges on the continent — which means it also has some of the toughest …"
+    }
+  ]
+}

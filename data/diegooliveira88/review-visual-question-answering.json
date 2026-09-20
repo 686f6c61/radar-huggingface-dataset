@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "diegooliveira88/review-visual-question-answering",
+  "slug": "diegooliveira88-review-visual-question-answering",
+  "author": "diegooliveira88",
+  "url": "https://huggingface.co/diegooliveira88/review-visual-question-answering",
+  "created_at": "2026-09-20T11:37:34.000Z",
+  "updated_at": "2026-09-20T11:37:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "visual-question-answering",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "visual-question-answering",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Biologia – klasa 7 - GWO - Gdańskie Wydawnictwo Oświatowe",
+      "url": "https://gwo.pl/przedmioty/biologia/biologia-klasa-7/",
+      "snippet": "Naszą koncepcję nauczania realizujemy w podręcznikach i zeszytach ćwiczeń do przyrody dla 4 klasy oraz geografii dla 7 klasy."
+    },
+    {
+      "title": "Biologia Klasa 7 - Szkoła podstawowa 4-8 | WSiP.pl",
+      "url": "https://wsip.pl/oferta/cykle/szkola-podstawowa-4-8/biologia/biologia-klasa-7/",
+      "snippet": "W przystępny i zrozumiały dla uczniów sposób omawia zagadnienia biologiczne dla klasy 7 szkoły podstawowej. Treści są …"
+    },
+    {
+      "title": "Biologia, Puls życia, podręcznik, klasa 7 - flipbook.nowaera.pl",
+      "url": "https://flipbook.nowaera.pl/dokumenty/Flipbook/Biologia-Puls-zycia--podrecznik%5Bkl_7%5D/",
+      "snippet": "Podręcznik „Puls życia” dla klasy 7 oferuje przystępne wyjaśnienia biologicznych zagadnień, wspierając naukę dzięki ilustracjom, …"
+    },
+    {
+      "title": "Podręcznik do biologii klasa 7 - Szkoła podstawowa | WSiP.pl",
+      "url": "https://wsip.pl/oferta/cykle/szkola-podstawowa-4-8/biologia/biologia-bez-tajemnic-klasa-7/",
+      "snippet": "Do rąk nauczycieli i uczniów oddajemy nowoczesny podręcznik oraz zeszyt ćwiczeń do biologii, oparte na aktualnej podstawie …"
+    },
+    {
+      "title": "Biologia. Klasa 7 podręcznik • EDURANGA",
+      "url": "https://naukazdalna.eduranga.pl/podrecznik/biologia-klasa-7/",
+      "snippet": "Klasa 7, temat: Budowa i funkcje szkieletu."
+    }
+  ]
+}

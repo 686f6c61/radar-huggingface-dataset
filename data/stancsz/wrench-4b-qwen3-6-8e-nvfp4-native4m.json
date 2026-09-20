@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "stancsz/Wrench-4B-Qwen3.6-8E-NVFP4-native4M",
+  "slug": "stancsz-wrench-4b-qwen3-6-8e-nvfp4-native4m",
+  "author": "stancsz",
+  "url": "https://huggingface.co/stancsz/Wrench-4B-Qwen3.6-8E-NVFP4-native4M",
+  "created_at": "2026-09-20T05:57:03.000Z",
+  "updated_at": "2026-09-21T16:46:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "wrench",
+    "code",
+    "developer-tools",
+    "qwen3.6",
+    "long-context",
+    "experimental-preview",
+    "text-generation",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": 2228810368,
+  "parameters_human": "2.23B",
+  "storage_bytes": 3423025085,
+  "storage_human": "3.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vlaamse Technische Kring · VTK",
+      "url": "https://vtk.be/",
+      "snippet": "VTK is de studentenvereniging van de faculteit Ingenieurswetenschappen aan de KU Leuven: activiteiten, cursussen, Theokot en meer."
+    },
+    {
+      "title": "Vlaamse Technische Kring (Leuven) - Wikipedia",
+      "url": "https://nl.wikipedia.org/wiki/Vlaamse_Technische_Kring_(Leuven)",
+      "snippet": "De Vlaamse Technische Kring (afgekort: VTK) is een faculteitskring aan de Katholieke Universiteit Leuven van de studenten die …"
+    },
+    {
+      "title": "Vlaamse Technische Kring · VTK",
+      "url": "https://vtk.be/en",
+      "snippet": "VTK is the student association of the Faculty of Engineering Science at KU Leuven: activities, course notes, Theokot and more."
+    },
+    {
+      "title": "Vlaamse Technische Kring (VTK) - Leuven - Academia Studentica Wiki …",
+      "url": "https://academia-studentica.eu/wiki/nl/index.php/Vlaamse_Technische_Kring_(VTK)_-_Leuven",
+      "snippet": "De Vlaamse Technische Kring (VTK) is de Faculteitskring van de studenten van de faculteit Ingenieurswetenschappen aan de KU …"
+    },
+    {
+      "title": "VTK | Heverlee - Facebook",
+      "url": "https://www.facebook.com/VTKLeuven/",
+      "snippet": "VTK and Next are bringing the Tectonic Hackathon to Leuven! 🚀 On September 30th, we’re teaming up with Tectonic to bring together …"
+    }
+  ]
+}

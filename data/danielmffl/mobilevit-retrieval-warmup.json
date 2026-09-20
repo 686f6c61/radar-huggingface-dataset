@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "danielmffl/mobilevit-retrieval-warmup",
+  "slug": "danielmffl-mobilevit-retrieval-warmup",
+  "author": "danielmffl",
+  "url": "https://huggingface.co/danielmffl/mobilevit-retrieval-warmup",
+  "created_at": "2026-09-20T11:27:51.000Z",
+  "updated_at": "2026-09-20T11:27:56.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mobilevit",
+    "pytorch",
+    "retrieval",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "easiPol - Policy and Subscriber Management Software",
+      "url": "https://www2.easipol.co.za/main.aspx",
+      "snippet": "Forgotten password? While we are good with what we do, there are simpler ways for us to get in touch and answer your question. …"
+    },
+    {
+      "title": "easiPol - Policy and Subscriber Management Software",
+      "url": "https://predeploy.easipol.co.za/logon.aspx",
+      "snippet": "Online remote accessed administration system for any Collections Industry."
+    },
+    {
+      "title": "easiPol - Funeral Parlour | Policy Administrator | Management Software",
+      "url": "https://easipol.co.za/",
+      "snippet": "easiPol is web based and is the leading business management software in the insurance market for the majority of funeral parlours, …"
+    },
+    {
+      "title": "easiPol :::.. Funeral Policy System",
+      "url": "https://www1.easipol.co.za/supportlogin.aspx",
+      "snippet": "Policy, Membership and Subscriber Management Software for any Collections Industry."
+    },
+    {
+      "title": "EasiPol - Client Console Login",
+      "url": "https://www1.easipol.co.za/ClientConsole/",
+      "snippet": "site optimsed for IE7/IE9/Firefox, 1024x768+ resolution - @Copyright RubiBlue (Pty) Ltd."
+    }
+  ]
+}

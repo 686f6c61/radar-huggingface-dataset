@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "cmeister/boundary-markers-ko-d12-bnd_wpd-bpe",
+  "slug": "cmeister-boundary-markers-ko-d12-bnd_wpd-bpe",
+  "author": "cmeister",
+  "url": "https://huggingface.co/cmeister/boundary-markers-ko-d12-bnd_wpd-bpe",
+  "created_at": "2026-09-20T11:51:30.000Z",
+  "updated_at": "2026-09-20T11:51:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "tokenization",
+    "boundary-markers",
+    "nanochat",
+    "ko",
+    "arxiv:2608.08847",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2459042636,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Thalia Online Shop | Bücher, eBooks, Spielzeug, uvm. kaufen | Thalia",
+      "url": "https://www.thalia.de/?msockid=274bf941d42e6c7502dcee9bd5dc6d45",
+      "snippet": "Spielzeit by Thalia: Spielzeug für alle von 0 - 12 Jahren Für kleine Wirbelwinde, große Tüftler und alles dazwischen: Spielzeit bringt …"
+    },
+    {
+      "title": "Bücher, Sachbücher, Ratgeber & Comics online kaufen | Thalia",
+      "url": "https://www.thalia.de/kategorie/buecher-2/?msockid=274bf941d42e6c7502dcee9bd5dc6d45",
+      "snippet": "Bücher versandkostenfrei bei Thalia Wahrer Luxus ist, Zeit zu haben, ein Buch zu lesen. Durch die Nutzung unseres …"
+    },
+    {
+      "title": "Jobs & Karriere bei Thalia",
+      "url": "https://jobs.thalia.de/",
+      "snippet": "Entdecke spannende Karrieremöglichkeiten bei Thalia. Finde alle Infos und bewirb dich direkt auf deinen Traumjob – ideal für alle …"
+    },
+    {
+      "title": "Startseite - Thalia Unternehmen",
+      "url": "https://unternehmen.thalia.de/",
+      "snippet": "Pressemeldungen Thalia Newsroom Hier gehts zum Newsroom der Thalia Bücher GmbH. Hier finden Sie unsere aktuellen …"
+    },
+    {
+      "title": "Jobs für den Quereinsteig bei Thalia",
+      "url": "https://jobs.thalia.de/quereinstieg",
+      "snippet": "Entdecke Deine Chancen für einen Quereinstieg bei Thalia. Schreibe Deine Geschichte neu und starte eine inspirierende Karriere in …"
+    }
+  ]
+}

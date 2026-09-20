@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "OpenRussianAI/andrey",
+  "slug": "openrussianai-andrey",
+  "author": "OpenRussianAI",
+  "url": "https://huggingface.co/OpenRussianAI/andrey",
+  "created_at": "2026-09-20T11:52:46.000Z",
+  "updated_at": "2026-09-21T16:14:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "onnx",
+    "transformer",
+    "feature-extraction",
+    "text-generation",
+    "chat",
+    "russian",
+    "easyformer",
+    "custom_code",
+    "conversational",
+    "ru",
+    "dataset:custom",
+    "base_model:OpenRussianAI/andrey",
+    "base_model:quantized:OpenRussianAI/andrey",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 80197932,
+  "storage_human": "80 MB",
+  "base_model": "OpenRussianAI/andrey",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Klasa 6 - Lekcje historii pod ostrym kątem - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLuRxqdWnQgPi0qLgYPFFuot1IlN4gMJ3V",
+      "snippet": "Klasa 6 - Lekcje historii pod ostrym kątem by History at an acute angle • Playlist • 42 videos • 1,010,175 views"
+    },
+    {
+      "title": "Nowe potęgi europejskie - Lekcje historii pod ostrym kątem - Klasa 6",
+      "url": "https://www.youtube.com/watch?v=_wDKFgEs32Y",
+      "snippet": "Dec 9, 2020 · Nowe potęgi europejskie - Lekcje historii pod ostrym kątem - Klasa 6 History at an acute angle 106K subscribers …"
+    },
+    {
+      "title": "Wielkie odkrycia geograficzne - Lekcje historii pod ostrym kątem - Klasa 6",
+      "url": "https://www.youtube.com/watch?v=M_pwbD6nqu4",
+      "snippet": "Sep 8, 2020 · W niej dowiecie w jaki sposób odkryto Nowy Świat i nową drogę do Indii . Poznacie przyczyny i skutki wielkich odkryć …"
+    },
+    {
+      "title": "Pierwszy rozbiór polski - Lekcje historii pod ostrym kątem - Klasa 6",
+      "url": "https://www.youtube.com/watch?v=hwESOAXlZ7M",
+      "snippet": "Dec 17, 2020 · Pierwszy rozbiór polski - Lekcje historii pod ostrym kątem - Klasa 6 History at an acute angle 106K subscribers …"
+    },
+    {
+      "title": "Wojny z Rosją - Lekcje historii pod ostrym kątem - Klasa 6",
+      "url": "https://www.youtube.com/watch?v=kjdEa-8V6lE",
+      "snippet": "Nov 17, 2020 · Lekcja historii obejmująca wojny z Rosją. W niej dowiecie w jaki sposób przebiegały poszczególne wojny z Rosją w …"
+    }
+  ]
+}

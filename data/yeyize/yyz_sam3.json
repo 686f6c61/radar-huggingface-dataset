@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "yeyize/yyz_sam3",
+  "slug": "yeyize-yyz_sam3",
+  "author": "yeyize",
+  "url": "https://huggingface.co/yeyize/yyz_sam3",
+  "created_at": "2026-09-20T10:00:26.000Z",
+  "updated_at": "2026-09-20T13:35:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-segmentation",
+  "library": null,
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "sam3",
+    "image-segmentation",
+    "object-detection",
+    "zh",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3371863977,
+  "storage_human": "3.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WEB.DE - kostenlose E-Mail-Adresse, FreeMail & Nachrichten",
+      "url": "https://web.de/",
+      "snippet": "Sichere Kommunikation, aktuelle Nachrichten und nützliche Online-Services - alles an einem Ort. Einfach, kostenlos und zuverlässig."
+    },
+    {
+      "title": "WEB.DE Login - ganz einfach",
+      "url": "https://anmelden.web.de/",
+      "snippet": "WEB.DE Login: E-Mail-Adresse anmelden oder einloggen – kompakte Anleitung zum WEB.DE Login und schnelle Hilfe bei Login …"
+    },
+    {
+      "title": "Ihr Online-Kalender – auch für Smartphone & Tablet | WEB.DE",
+      "url": "https://web.de/email/kalender/",
+      "snippet": "Termine mit dem WEB.DE Kalender einfach von unterwegs planen – verfügbar für iOS und Android. Jetzt ausprobieren!"
+    },
+    {
+      "title": "Foto-Backup in der WEB.DE Mail App für Android aktivieren",
+      "url": "https://hilfe.web.de/android/cloud-einstellungen/automatische-sicherung.html",
+      "snippet": "Foto-Backup in der WEB.DE Mail App für Android aktivieren Aktivieren Sie den Foto-Backup, um Fotos und Videos, die Sie mit Ihrem …"
+    },
+    {
+      "title": "Persönliche Identifizierung: Ablauf - WEB.DE",
+      "url": "https://hilfe.web.de/account/idcheck.html",
+      "snippet": "Rufen Sie die Seite passwort.web.de auf, geben Sie Ihre E-Mail-Adresse ein, lösen Sie die Sicherheitsabfrage und klicken Sie auf …"
+    }
+  ]
+}

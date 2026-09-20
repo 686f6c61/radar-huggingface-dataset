@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "jaydenmillervav/mocov3-generation-aug",
+  "slug": "jaydenmillervav-mocov3-generation-aug",
+  "author": "jaydenmillervav",
+  "url": "https://huggingface.co/jaydenmillervav/mocov3-generation-aug",
+  "created_at": "2026-09-20T11:22:21.000Z",
+  "updated_at": "2026-09-20T11:22:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mocov3",
+    "pytorch",
+    "generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/",
+      "snippet": "Create an account or log in to Instagram - Share what you're into with the people who get you."
+    },
+    {
+      "title": "i（拉丁字母）_百度百科",
+      "url": "https://baike.baidu.com/item/i/3306",
+      "snippet": "字母I的产生可能是由于一个手的符号，像在 古埃及 的 象形文字 里（1）并很早出现在 闪族 的书面当中-大约在公元前1500年的 西奈 …"
+    },
+    {
+      "title": "i志愿",
+      "url": "https://www.izyz.org/",
+      "snippet": "Jul 2, 2026 · i志愿是一个在线平台，提供志愿活动、组织团体和志愿者证书等服务。"
+    },
+    {
+      "title": "i - 维基百科，自由的百科全书",
+      "url": "https://zh.wikipedia.org/wiki/I",
+      "snippet": "Sep 4, 2026 · ı （不带点的小写i）与 İ （带点的大写i） [ɪ] 次閉次前不圓唇元音"
+    },
+    {
+      "title": "i集大",
+      "url": "https://i.jmu.edu.cn/main.html",
+      "snippet": "Feb 5, 2026 · “i集大”是集美大学的校园服务平台，提供校外访问图书馆电子资源、查收查引服务等多种功能，方便师生使用。"
+    }
+  ]
+}

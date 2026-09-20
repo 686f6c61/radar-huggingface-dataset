@@ -1,0 +1,104 @@
+{
+  "schema": 1,
+  "id": "dronefreak/uavdt-yolov9t",
+  "slug": "dronefreak-uavdt-yolov9t",
+  "author": "dronefreak",
+  "url": "https://huggingface.co/dronefreak/uavdt-yolov9t",
+  "created_at": "2026-09-20T11:21:26.000Z",
+  "updated_at": "2026-09-21T13:58:49.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "object-detection",
+    "detectionbench",
+    "pytorch",
+    "computer-vision",
+    "aerial-imagery",
+    "drone",
+    "uav",
+    "vehicle-detection",
+    "traffic-surveillance",
+    "small-object-detection",
+    "dataset:dronefreak/UAVDT",
+    "arxiv:1804.00518",
+    "arxiv:2402.13616",
+    "arxiv:2511.09554",
+    "arxiv:2304.07193",
+    "arxiv:2405.14458",
+    "arxiv:2410.17725",
+    "arxiv:2606.03748",
+    "license:agpl-3.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18232600,
+  "storage_human": "18 MB",
+  "base_model": "Ultralytics/YOLOv9",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Object Detection",
+      "dataset": "UAVDT",
+      "metric": "mAP@50 (test split)",
+      "value": 29.42
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "UAVDT",
+      "metric": "mAP@50-95 (test split)",
+      "value": 17.03
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "UAVDT",
+      "metric": "Precision (test split)",
+      "value": 35.75
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "UAVDT",
+      "metric": "Recall (test split)",
+      "value": 36.47
+    }
+  ],
+  "sources": [
+    {
+      "title": "</p> — 15 Point Road Restaurant",
+      "url": "https://www.15pointroad.com/reservations",
+      "snippet": "Please note, our outdoor dining area is not heated or covered. Outdoor dining is dependent on the weather. If inclement weather …"
+    },
+    {
+      "title": "15 Point Road Restaurant",
+      "url": "https://www.15pointroad.com/",
+      "snippet": "Busy, but not crowded, 15 Point offers casual sea side dining with an enchanting moonlit river view. A traditional menu, strongly …"
+    },
+    {
+      "title": "Menus - 15 Point Road Restaurant",
+      "url": "https://www.15pointroad.com/menus/",
+      "snippet": "Strongly influenced by the local bounty (especially from the sea)&nbsp;A traditional menu pleases most everyone and house …"
+    },
+    {
+      "title": "The Crew - 15 Point Road Restaurant",
+      "url": "https://www.15pointroad.com/thecrew",
+      "snippet": "15 Point Road is a dream realized in 2010 for owners Sean & Carly Smith. Sean originally from Mountain Lakes New Jersey, and …"
+    },
+    {
+      "title": "Contact Us - 15 Point Road Restaurant",
+      "url": "https://www.15pointroad.com/location",
+      "snippet": "Tuesday -Friday 5:00pm - 8:30pm Saturday 4:30pm-8:30pm Sunday 4:00pm - 8:30pm"
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "schema": 1,
+  "id": "Rogendo/JengaNLP-multi-task-distilbert-base-uncased",
+  "slug": "rogendo-jenganlp-multi-task-distilbert-base-uncased",
+  "author": "Rogendo",
+  "url": "https://huggingface.co/Rogendo/JengaNLP-multi-task-distilbert-base-uncased",
+  "created_at": "2026-02-14T09:48:35.000Z",
+  "updated_at": "2026-09-19T22:39:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "sw"
+  ],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "multi-task-learning",
+    "text-classification",
+    "fraud-detection",
+    "sentiment-analysis",
+    "call-quality",
+    "question-answering",
+    "jengaNLP",
+    "nlp-for-africa",
+    "security",
+    "attention-fusion",
+    "en",
+    "sw",
+    "dataset:custom",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 810953251,
+  "storage_human": "811 MB",
+  "base_model": "distilbert-base-uncased",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Fraud Detection",
+      "dataset": null,
+      "metric": "F1",
+      "value": 1
+    },
+    {
+      "task": "Fraud Detection",
+      "dataset": null,
+      "metric": "Accuracy",
+      "value": 1
+    },
+    {
+      "task": "Sentiment Analysis",
+      "dataset": null,
+      "metric": "F1",
+      "value": 0.167
+    },
+    {
+      "task": "Sentiment Analysis",
+      "dataset": null,
+      "metric": "Accuracy",
+      "value": 0.333
+    },
+    {
+      "task": "Call Quality - Listening",
+      "dataset": null,
+      "metric": "F1",
+      "value": 0.922
+    },
+    {
+      "task": "Call Quality - Resolution",
+      "dataset": null,
+      "metric": "F1",
+      "value": 0.908
+    }
+  ],
+  "sources": [
+    {
+      "title": "Prayer Times in Cairo, Egypt - IslamicFinder",
+      "url": "https://www.islamicfinder.org/world/egypt/360630/cairo-prayer-times/",
+      "snippet": "23 hours ago · Today Prayer Times in Cairo, Cairo Governorate, Egypt are Fajar Prayer Time 05:15 AM, Dhuhur Prayer Time 12:50 …"
+    },
+    {
+      "title": "Islamic Prayer Times Today, Salat Time, Namaz Timings - IslamicFinder",
+      "url": "https://www.islamicfinder.org/prayer-times/",
+      "snippet": "23 hours ago · Get accurate Islamic Prayer Times Today, Salat Timings, Namaz and Azan Time (Athan) globally with IslamicFinder, …"
+    },
+    {
+      "title": "Hijri to Gregorian Date Converter - Islamic Date Converter - IslamicFinder",
+      "url": "https://www.islamicfinder.org/islamic-date-converter/",
+      "snippet": "IslamicFinder provides you with the most accurate Islamic Date Converter to facilitate you in your day-to-day planning. You can easily …"
+    },
+    {
+      "title": "Most Accurate Prayer Times, Quran, Athan and Qibla Direction ...",
+      "url": "https://www.islamicfinder.org/",
+      "snippet": "Get the most accurate Prayer times, Qibla direction for more than 6 million places. Read Quran, Duas and check today’s date from …"
+    },
+    {
+      "title": "Yearly prayer times 2026 | IslamicFinder",
+      "url": "https://www.islamicfinder.org/prayer-times/print-yearly-prayers/?timeInterval=year&calendarType=Gregorian&year=2026",
+      "snippet": "Latitude and Longitude To calculate the prayer times for a given location, we need to know the latitude and the longitude of your …"
+    }
+  ]
+}

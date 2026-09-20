@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "sagalore-softworks/foundational-models",
+  "slug": "sagalore-softworks-foundational-models",
+  "author": "sagalore-softworks",
+  "url": "https://huggingface.co/sagalore-softworks/foundational-models",
+  "created_at": "2026-05-05T11:59:43.000Z",
+  "updated_at": "2026-09-19T23:18:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 499,
+  "trending_score": 0,
+  "parameters": 8030261312,
+  "parameters_human": "8.03B",
+  "storage_bytes": 30626488153,
+  "storage_human": "30.6 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "U GG: The Best League of Legends Builds LoL Build Champion …",
+      "url": "https://u.gg/",
+      "snippet": "Best Builds from the Best Data. Riot-approved U.GG provides the best League of Legends builds, LoL runes, Probuilds, Tier List, …"
+    },
+    {
+      "title": "U.GG LoL Tier List - Patch 26.18 Best Champions for All Roles in League ...",
+      "url": "https://u.gg/lol/tier-list",
+      "snippet": "The only LoL Tier list you need for the newest patch. Always up-to-date, U.GG takes a data science approach to the best champions …"
+    },
+    {
+      "title": "Miss Fortune Build with Highest Winrate - U.GG",
+      "url": "https://u.gg/lol/champions/missfortune/build",
+      "snippet": "Miss Fortune build with the highest winrate runes and items in every role. U.GG analyzes millions of LoL matches to give you the best …"
+    },
+    {
+      "title": "Teemo Counter - Best Counters from Best Data LoL Patch 26.18 - U.GG",
+      "url": "https://u.gg/lol/champions/teemo/counter",
+      "snippet": "Teemo Counter. Best Counter Picks from the Best Data. Riot-approved U.GG analyzes millions of LoL matches. Sort by role, rank, …"
+    },
+    {
+      "title": "Download U.GG's Free Desktop App",
+      "url": "https://u.gg/app",
+      "snippet": "Download U.GG's free desktop app for LoL, WoW, Deadlock, & Valorant builds, stats, and overlays in one seamless experience."
+    }
+  ]
+}

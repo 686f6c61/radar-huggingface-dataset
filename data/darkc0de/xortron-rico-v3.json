@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "darkc0de/XORTRON-RICO-v3",
+  "slug": "darkc0de-xortron-rico-v3",
+  "author": "darkc0de",
+  "url": "https://huggingface.co/darkc0de/XORTRON-RICO-v3",
+  "created_at": "2026-09-20T11:13:28.000Z",
+  "updated_at": "2026-09-20T17:14:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "merge",
+    "mergekit",
+    "text-generation-inference",
+    "unsloth",
+    "uncensored",
+    "harmful",
+    "xortron",
+    "heretic",
+    "abliterated",
+    "toxic",
+    "experimental",
+    "not-for-all-audiences",
+    "conversational",
+    "base_model:DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+    "base_model:merge:DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+    "base_model:darkc0de/RICO",
+    "base_model:merge:darkc0de/RICO",
+    "base_model:darkc0de/RICO-v2",
+    "base_model:merge:darkc0de/RICO-v2",
+    "base_model:orcarouter/Qwen3.8-27B-Uncensored",
+    "base_model:merge:orcarouter/Qwen3.8-27B-Uncensored",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55582996119,
+  "storage_human": "55.6 GB",
+  "base_model": "darkc0de/RICO, darkc0de/RICO-v2, DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU, orcarouter/Qwen3.8-27B-Uncensored",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bad Bunny en Lima: ¿Qué significa la frase ‘Acho, PR es otra cosa’?",
+      "url": "https://elcomercio.pe/luces/musica/bad-bunny-en-lima-que-significa-la-frase-acho-pr-es-otra-cosa-estadio-nacional-celebs-ultimas-noticia/",
+      "snippet": "Jan 18, 2026 · El término “acho” es una expresión coloquial muy común en el habla puertorriqueña. Proviene de la palabra …"
+    },
+    {
+      "title": "Bad Bunny: ¿Qué significa la frase 'Acho PR es otra cosa'?",
+      "url": "https://www.reporteindigo.com/entretenimiento/bad-bunny-que-significa-la-frase-acho-pr-es-otra-cosa-20260206-0018.html",
+      "snippet": "Feb 6, 2026 · La frase icónica de Benito Martínez Ocasio, mejor conocido como Bad Bunny, no sólo se popularizó durante sus …"
+    },
+    {
+      "title": "Significado de \"ACHO PR\" por Bad Bunny - Análisis e interpretación …",
+      "url": "https://songsense.io/es/bad-bunny/acho-pr",
+      "snippet": "Oct 13, 2023 · ¿Qué significa \"ACHO PR\" por Bad Bunny? Descubre el significado profundo, simbolismo e interpretación de esta …"
+    },
+    {
+      "title": "ACHO PR (part. Arcángel, Ñengo Flow y De La Ghetto)",
+      "url": "https://www.letras.com/bad-bunny/acho-pr-part-arcangel-nengo-flow-y-de-la-ghetto/significado.html",
+      "snippet": "La canción 'ACHO PR' de Bad Bunny, en colaboración con Arcángel, Ñengo Flow y De La Ghetto, es un homenaje a Puerto Rico y …"
+    },
+    {
+      "title": "Bad Bunny y los boricuas demuestran que “Pe Erre es otra cosa” en ...",
+      "url": "https://www.metro.pr/entretenimiento/2025/09/21/bad-bunny-y-los-boricuas-demuestran-que-pe-erre-es-otra-cosa-en-cierre-de-la-residencia/",
+      "snippet": "Sep 21, 2025 · Es decir, Bad Bunny continuará exportando la música, actitud y sabor de los puertorriqueños por todo el mundo, para …"
+    }
+  ]
+}

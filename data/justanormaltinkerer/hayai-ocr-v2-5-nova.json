@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "JustANormalTinkerer/hayai-ocr-v2.5-nova",
+  "slug": "justanormaltinkerer-hayai-ocr-v2-5-nova",
+  "author": "JustANormalTinkerer",
+  "url": "https://huggingface.co/JustANormalTinkerer/hayai-ocr-v2.5-nova",
+  "created_at": "2026-09-20T11:10:16.000Z",
+  "updated_at": "2026-09-21T16:32:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ja",
+    "zh",
+    "ko"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "hayai",
+    "feature-extraction",
+    "ocr",
+    "vision-language",
+    "vlm",
+    "manga-ocr",
+    "cjk",
+    "image-to-text",
+    "custom_code",
+    "en",
+    "ja",
+    "zh",
+    "ko",
+    "dataset:globis-university/aozorabunko-clean",
+    "dataset:hal-utokyo/Manga109-s",
+    "dataset:JustANormalTinkerer/Japanese-Dialogue-Dataset",
+    "dataset:wikimedia/wikipedia",
+    "dataset:JustANormalTinkerer/hayai-dataset-merged",
+    "dataset:alpindale/light-novels",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 156915968,
+  "parameters_human": "156.9M",
+  "storage_bytes": 627709088,
+  "storage_human": "628 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aide & contact | Quartier-Rouge",
+      "url": "https://www.quartier-rouge.be/aide/",
+      "snippet": "Annoncer sur Quartier-Rouge Combien de temps faut-il pour que mon annonce soit approuvée? Est-ce gratuit d’insérer une annonce …"
+    },
+    {
+      "title": "Liège | Quartier-Rouge",
+      "url": "https://www.quartier-rouge.be/region/liege/vierset-barse/",
+      "snippet": "Communes de Liège, Région Wallonne V Vaux-et-Borset Vaux-sous-Chèvremont Velroux Verlaine Verviers Viemme Vierset-Barse …"
+    },
+    {
+      "title": "Liège | Quartier-Rouge",
+      "url": "https://www.quartier-rouge.be/region/liege/liege/",
+      "snippet": "C Celles Cérexhe-Heuseux Chaineux Chapon-Seraing Charneux Chaudfontaine Chênée Cheratte Chevron Chokier Ciplet Clavier …"
+    },
+    {
+      "title": "Politique de vie privée | Quartier-Rouge",
+      "url": "https://www.quartier-rouge.be/vie-privee/",
+      "snippet": "Politique de vie privée Link Media SRL Brusselstraat 51 B-2018 Antwerpen Numéro d’entreprise (TVA-BE): 0820.638.410 E-mail: …"
+    },
+    {
+      "title": "Brabant Wallon - Quartier-Rouge",
+      "url": "https://www.quartier-rouge.be/region/brabant-wallon/wavre/",
+      "snippet": "Communes de Brabant Wallon, Région Wallonne C Céroux-Mousty Chastre Chastre-Villeroux-Blanmont Chaumont-Gistoux Clabecq …"
+    }
+  ]
+}

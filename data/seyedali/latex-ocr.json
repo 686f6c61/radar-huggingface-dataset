@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "SeyedAli/latex-ocr",
+  "slug": "seyedali-latex-ocr",
+  "author": "SeyedAli",
+  "url": "https://huggingface.co/SeyedAli/latex-ocr",
+  "created_at": "2026-09-20T11:31:04.000Z",
+  "updated_at": "2026-09-20T12:11:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "vision-encoder-decoder",
+    "image-text-to-text",
+    "generated_from_trainer",
+    "base_model:DGurgurov/im2latex",
+    "base_model:finetune:DGurgurov/im2latex",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 240337080,
+  "parameters_human": "240.3M",
+  "storage_bytes": 1922868129,
+  "storage_human": "1.9 GB",
+  "base_model": "DGurgurov/im2latex",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "networking - How do you check the current duplex value of a network ...",
+      "url": "https://superuser.com/questions/86581/how-do-you-check-the-current-duplex-value-of-a-network-card-set-to-auto-negotiat",
+      "snippet": "Dec 22, 2009 · On my Windows 7 Platform - List item Type at the Windows 7 search bar Network and Sharing Center. Select - …"
+    },
+    {
+      "title": "Test the Speed of a Local Area Network - Super User",
+      "url": "https://superuser.com/questions/101783/test-the-speed-of-a-local-area-network",
+      "snippet": "Jan 28, 2010 · How can I test the speed of a LAN? I hope there is something baked into Windows to do this, because I am unable to …"
+    },
+    {
+      "title": "How to identify bottlenecks in my home network - Super User",
+      "url": "https://superuser.com/questions/1535902/how-to-identify-bottlenecks-in-my-home-network",
+      "snippet": "Mar 26, 2020 · The only way to test the entire home network without expensive software or hardware is to take your laptop and plug it …"
+    },
+    {
+      "title": "How to detect the speed (fast or gigabit ethernet) of a network ...",
+      "url": "https://superuser.com/questions/412952/how-to-detect-the-speed-fast-or-gigabit-ethernet-of-a-network-connection-over",
+      "snippet": "Apr 16, 2012 · To troubleshoot a network problem I would like to inquire the real network \"speed\" for a given network adapter, which …"
+    },
+    {
+      "title": "Why do I only get 300-400 Mbit/s on my 1000 Mbit/s network?",
+      "url": "https://superuser.com/questions/95546/why-do-i-only-get-300-400-mbit-s-on-my-1000-mbit-s-network",
+      "snippet": "Jan 14, 2010 · We've performed numerous test and it boiled down to the Operating System. If we go from Ubuntu 11.04 to Ubuntu …"
+    }
+  ]
+}

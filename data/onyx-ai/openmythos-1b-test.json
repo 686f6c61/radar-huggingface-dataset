@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "onyx-ai/openmythos-1b-test",
+  "slug": "onyx-ai-openmythos-1b-test",
+  "author": "onyx-ai",
+  "url": "https://huggingface.co/onyx-ai/openmythos-1b-test",
+  "created_at": "2026-09-12T20:10:52.000Z",
+  "updated_at": "2026-09-19T12:38:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "open_mythos",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 25,
+  "trending_score": 0,
+  "parameters": 1101746002,
+  "parameters_human": "1.10B",
+  "storage_bytes": 4408327336,
+  "storage_human": "4.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Onyx (minéral) — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Onyx_(min%C3%A9ral)",
+      "snippet": "Onyx (minéral) ... L’ onyx est une variété d’ agate, qui est elle-même une variété de calcédoine, elle est généralement teintée et …"
+    },
+    {
+      "title": "Onyx : vertus, propriétés et bienfaits - France Minéraux",
+      "url": "https://www.france-mineraux.fr/vertus-des-pierres/pierre-onyx/",
+      "snippet": "En cas de symptômes ou de maladie, consultez un professionnel de santé qualifié. L’ onyx est une variété de calcédoine à bandes …"
+    },
+    {
+      "title": "Produit d'entretien Onyx pour la maison et le bricolage : produit ...",
+      "url": "https://www.onyxbricolage.fr/",
+      "snippet": "Découvrez tous les produits d'entretien d'Onyx, conçus pour respecter l'homme, la faune et la flore. Osez la qualité professionnelle."
+    },
+    {
+      "title": "ONYX Restaurant | La nouvelle Expérience culinaire de Paris",
+      "url": "https://restaurantonyx.com/",
+      "snippet": "Nouveau restaurant à Paris, à l'ambiance chic et apaisante, la brigade du ONYX utilise des ingrédients de qualité et son dévouement …"
+    },
+    {
+      "title": "Onyx - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Onyx",
+      "snippet": "Black onyx is perhaps the most famous variety, but it is not as common as onyx with colored bands. Several artificial treatments have …"
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "hojayfa-sir/european-green-crab-detection",
+  "slug": "hojayfa-sir-european-green-crab-detection",
+  "author": "hojayfa-sir",
+  "url": "https://huggingface.co/hojayfa-sir/european-green-crab-detection",
+  "created_at": "2026-09-13T05:19:56.000Z",
+  "updated_at": "2026-09-19T18:13:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "rfdetr",
+  "languages": [],
+  "tags": [
+    "rfdetr",
+    "tensorboard",
+    "object-detection",
+    "pytorch",
+    "computer-vision",
+    "marine-biology",
+    "invasive-species",
+    "dataset:hojayfa-sir/European_Green_Crab",
+    "base_model:Roboflow/rf-detr-medium",
+    "base_model:finetune:Roboflow/rf-detr-medium",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 267659394,
+  "storage_human": "268 MB",
+  "base_model": "Roboflow/rf-detr-medium",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Object Detection",
+      "dataset": "Multi-Species Crab Detection (Combined 5ds)",
+      "metric": "mAP@50 (val split, best checkpoint)",
+      "value": 99.22
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "Multi-Species Crab Detection (Combined 5ds)",
+      "metric": "mAP@50-95 (val split, best checkpoint)",
+      "value": 86
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "Multi-Species Crab Detection (Combined 5ds)",
+      "metric": "mAP@75 (val split, best checkpoint)",
+      "value": 93.48
+    }
+  ],
+  "sources": [
+    {
+      "title": "FC Barcelona vs Real Madrid: Scores, Results Lineups, H2H & Odds",
+      "url": "https://www.365scores.com/en-us/football/match/laliga-11/fc-barcelona-real-madrid-131-132-11",
+      "snippet": "19 hours ago · See when FC Barcelona vs Real Madrid kick off, and get an in-depth look at team form, head-to-head records, and …"
+    },
+    {
+      "title": "Real Madrid 2-5 Barcelona (Jan 12, 2025) Final Score - ESPN",
+      "url": "https://www.espn.com/soccer/match/_/gameId/712534/barcelona-real-madrid",
+      "snippet": "Jan 12, 2025 · Barcelona came from behind to beat Real Madrid 5-2 in the Spanish Super Cup final on Sunday, scoring four goals in …"
+    },
+    {
+      "title": "Calendar and Upcoming Matches of the Real Madrid | LALIGA",
+      "url": "https://www.laliga.com/en-GB/clubs/real-madrid/next-matches",
+      "snippet": "Sep 12, 2026 · Real Madrid's 2026/27 schedule. Find out what will be the next matches and rivals of Real Madrid in Primera División …"
+    },
+    {
+      "title": "FC Barcelona vs Real Madrid live score, H2H and lineups | Sofascore",
+      "url": "https://www.sofascore.com/football/match/real-madrid-fc-barcelona/rgbsEgb",
+      "snippet": "On Sofascore livescore you can find all previous FC Barcelona vs Real Madrid results sorted by their H2H matches. Sofascore also …"
+    },
+    {
+      "title": "Real Madrid CF v FC Barcelona | Match Highlights | LaLiga EA Sports ...",
+      "url": "https://www.youtube.com/watch?v=YLKnCzsO3P8",
+      "snippet": "Oct 27, 2025 · Highlights of the LaLiga EA Sports football match between Real Madrid CF and FC Barcelona at Estadio Santiago …"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "zhihuanglab/iSight-cell",
+  "slug": "zhihuanglab-isight-cell",
+  "author": "zhihuanglab",
+  "url": "https://huggingface.co/zhihuanglab/iSight-cell",
+  "created_at": "2026-09-12T22:20:35.000Z",
+  "updated_at": "2026-09-19T22:24:16.000Z",
+  "license": "penn-academic-software-license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "isight-cell",
+    "immunohistochemistry",
+    "pathology",
+    "cell-level",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5464026450,
+  "storage_human": "5.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ancestry® | Ahnenforschung, Stammbaum und Familiengeschichte",
+      "url": "https://www.ancestry.de/?msockid=3b83a85268ad67bb0d51bf8b69c366ec",
+      "snippet": "Ancestry.de bietet historische Daten und Dokumente für Ahnenforschung. Erstellung eines Familienstammbaums online und …"
+    },
+    {
+      "title": "Einwanderung und Reisen - Ancestry",
+      "url": "https://www.ancestry.de/search/categories/40?msockid=3b83a85268ad67bb0d51bf8b69c366ec",
+      "snippet": "Die Aufzeichnungen in dieser Sammlung dokumentieren die Reise Ihres einwandernden Vorfahren und seine Schritte bis zur …"
+    },
+    {
+      "title": "AncestrySupport",
+      "url": "https://support.ancestry.de/s/",
+      "snippet": "×Sorry to interrupt CSS Error"
+    },
+    {
+      "title": "Östliche preußische Provinzen, Deutschland [heute Polen], ausgewählte ...",
+      "url": "https://www.ancestry.de/search/collections/60749?msockid=3b83a85268ad67bb0d51bf8b69c366ec",
+      "snippet": "Quelleninformationen Ancestry.com. Östliche preußische Provinzen, Deutschland [heute Polen], ausgewählte standesamtliche …"
+    },
+    {
+      "title": "Deutschland, ausgewählte evangelische Kirchenbücher 1500-1971",
+      "url": "https://www.ancestry.de/search/collections/61229?msockid=3b83a85268ad67bb0d51bf8b69c366ec",
+      "snippet": "Quelleninformationen Ancestry.com. Deutschland, ausgewählte evangelische Kirchenbücher 1500-1971 [Datenbank online]. Lehi, UT, …"
+    }
+  ]
+}

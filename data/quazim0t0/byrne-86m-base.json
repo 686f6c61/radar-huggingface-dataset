@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Quazim0t0/Byrne-86M-Base",
+  "slug": "quazim0t0-byrne-86m-base",
+  "author": "Quazim0t0",
+  "url": "https://huggingface.co/Quazim0t0/Byrne-86M-Base",
+  "created_at": "2026-06-18T08:07:50.000Z",
+  "updated_at": "2026-09-20T07:42:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "spike_whale",
+    "feature-extraction",
+    "text-generation",
+    "small-models",
+    "mla",
+    "jepa",
+    "experimental",
+    "custom_code",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 416,
+  "trending_score": 0,
+  "parameters": 96944515,
+  "parameters_human": "96.9M",
+  "storage_bytes": 1166415405,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "StudyFetch | The Top AI Learning Platform",
+      "url": "https://www.studyfetch.com/",
+      "snippet": "StudyFetch transforms your powerpoints, lectures, class notes, and study guides into ai study tools like flashcards, quizzes, and tests …"
+    },
+    {
+      "title": "Login - StudyFetch",
+      "url": "https://www.studyfetch.com/auth/login",
+      "snippet": "Login to your StudyFetch account to start studying with our AI tutor."
+    },
+    {
+      "title": "Sign In | StudyFetch",
+      "url": "https://login.studyfetch.com/auth/login",
+      "snippet": "Sign in to your StudyFetch account to access your learning materials and AI-powered study tools."
+    },
+    {
+      "title": "StudyFetch Creators",
+      "url": "https://creators.studyfetch.com/about",
+      "snippet": "StudyFetch is a revolutionary platform that allows you to upload your course materials and create various interactive study sets."
+    },
+    {
+      "title": "Trust Center - StudyFetch",
+      "url": "https://trust.studyfetch.com/",
+      "snippet": "Sep 24, 2024 · Trust and Safety is a top priority for us. StudyFetch is an AI-native learning platform dedicated to giving universal, …"
+    }
+  ]
+}

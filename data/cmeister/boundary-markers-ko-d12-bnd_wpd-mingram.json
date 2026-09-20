@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "cmeister/boundary-markers-ko-d12-bnd_wpd-mingram",
+  "slug": "cmeister-boundary-markers-ko-d12-bnd_wpd-mingram",
+  "author": "cmeister",
+  "url": "https://huggingface.co/cmeister/boundary-markers-ko-d12-bnd_wpd-mingram",
+  "created_at": "2026-09-20T11:51:54.000Z",
+  "updated_at": "2026-09-20T11:52:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "tokenization",
+    "boundary-markers",
+    "nanochat",
+    "ko",
+    "arxiv:2608.08847",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2458871519,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DuckDuckGo - 知乎",
+      "url": "https://www.zhihu.com/topic/19594248/hot",
+      "snippet": "DuckDuckGo是专注隐私、反追踪以及避免信息过滤的搜索引擎，使用多方来源优化搜索结果，并加强内容的关联度。"
+    },
+    {
+      "title": "Safari浏览器把“DuckDuckGo”设定搜索引擎-百度经验",
+      "url": "https://jingyan.baidu.com/article/3a2f7c2e25c01967afd611ad.html",
+      "snippet": "Jun 19, 2023 · Safari浏览器把“DuckDuckGo”设定搜索引擎,iOS系统Safari浏览器把“DuckDuckGo”设定搜索引擎，按照步骤设定。"
+    },
+    {
+      "title": "你的openclaw都装了哪些skill？ - 知乎",
+      "url": "https://www.zhihu.com/question/2019693913921835490",
+      "snippet": "Mar 24, 2026 · ddgs-web-search : 调用python ddgs 包进行网络搜索（调用DuckDuckGo API），不需要 API Key，已发布clawhub。 …"
+    },
+    {
+      "title": "DuckDuckGO怎么设置为Safari浏览器的搜索引擎-百度经验",
+      "url": "https://jingyan.baidu.com/article/db55b609c7a0430aa20a2f23.html",
+      "snippet": "Nov 1, 2022 · DuckDuckGO怎么设置为Safari浏览器的搜索引擎,DuckDuckGO怎么设置为Safari浏览器的搜索引擎，一起看看吧。"
+    },
+    {
+      "title": "哪款邮件管理软件比较好用？ - 知乎",
+      "url": "https://www.zhihu.com/question/20156227",
+      "snippet": "免费、开源、无广告、高性能。 拥有独立的邮件、通讯录、日历、任务、聊天管理页面，支持多标签页显示。 支持自定义默认搜索引 …"
+    }
+  ]
+}

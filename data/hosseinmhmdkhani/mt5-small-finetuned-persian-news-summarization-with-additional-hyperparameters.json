@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "hosseinmhmdkhani/mt5-small-finetuned-persian-news-summarization-with-additional-hyperparameters",
+  "slug": "hosseinmhmdkhani-mt5-small-finetuned-persian-news-summarization-with-additional-hyperparameters",
+  "author": "hosseinmhmdkhani",
+  "url": "https://huggingface.co/hosseinmhmdkhani/mt5-small-finetuned-persian-news-summarization-with-additional-hyperparameters",
+  "created_at": "2026-07-27T22:01:00.000Z",
+  "updated_at": "2026-09-19T20:19:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "summarization",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "mt5",
+    "text2text-generation",
+    "summarization",
+    "generated_from_trainer",
+    "base_model:google/mt5-small",
+    "base_model:finetune:google/mt5-small",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 82,
+  "trending_score": 0,
+  "parameters": 300176768,
+  "parameters_human": "300.2M",
+  "storage_bytes": 13261443157,
+  "storage_human": "13.3 GB",
+  "base_model": "google/mt5-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Could someone please explain to me the differences between the",
+      "url": "https://www.reddit.com/r/metalgearsolid/comments/3v3e93/could_someone_please_explain_to_me_the/",
+      "snippet": "Dec 2, 2015 · Could someone please explain to me the differences between the snakes? i.e. Solid snake, liquid snake, big boss, …"
+    },
+    {
+      "title": "What Happens to Solid Snake After Mgs4 and is Revengeance Canon?",
+      "url": "https://www.reddit.com/r/metalgearsolid/comments/em3m9o/what_happens_to_solid_snake_after_mgs4_and_is/",
+      "snippet": "Jan 9, 2020 · I've recently found this game series and i've been enjoying it! I must admit, i've only played revengeance and the …"
+    },
+    {
+      "title": "《合金装备》中 Snake 有哪些痛苦的经历？ - 知乎",
+      "url": "https://www.zhihu.com/question/356113371",
+      "snippet": "最终仍被Solid Snake击败。 5 Solidus Snake（MGS2最终Boss） 作为魔童计划的最终成果，本质上只是美国为了保存Big Boss战士 …"
+    },
+    {
+      "title": "为何Big Boss和Solid Snake都喜欢烟草，且此设定是否曾引起过争议？",
+      "url": "https://www.zhihu.com/question/40947815",
+      "snippet": "Mar 2, 2016 · 首先为什么对烟草有喜好，这个作为设定，本身没什么可说的，抽烟与否都是选择而已，没啥可说的。SS抽烟是因为克 …"
+    },
+    {
+      "title": "Can anyone explain all of the different Snakes? - Reddit",
+      "url": "https://www.reddit.com/r/metalgearsolid/comments/3y66mb/can_anyone_explain_all_of_the_different_snakes/",
+      "snippet": "Dec 25, 2015 · Next is , (Real name is Eli) also a clone of Big Boss, unlike Solid Snake, he received all the recessive genes. He is the …"
+    }
+  ]
+}

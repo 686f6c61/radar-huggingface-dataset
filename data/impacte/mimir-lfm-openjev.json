@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "impacte/mimir-lfm-openjev",
+  "slug": "impacte-mimir-lfm-openjev",
+  "author": "impacte",
+  "url": "https://huggingface.co/impacte/mimir-lfm-openjev",
+  "created_at": "2026-09-20T11:42:00.000Z",
+  "updated_at": "2026-09-20T11:57:28.000Z",
+  "license": "lfm-open-license-v1.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm2_moe",
+    "text-classification",
+    "nli",
+    "cross-encoder",
+    "reranker",
+    "lfm2.5",
+    "jev",
+    "openjev",
+    "mimir",
+    "mixture-of-experts",
+    "custom_code",
+    "base_model:LiquidAI/LFM2.5-8B-A1B",
+    "base_model:finetune:LiquidAI/LFM2.5-8B-A1B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8467862976,
+  "parameters_human": "8.47B",
+  "storage_bytes": 16953924984,
+  "storage_human": "17.0 GB",
+  "base_model": "LiquidAI/LFM2.5-8B-A1B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The 25 Long Weekend Trip Ideas That Feel Like a Vacation",
+      "url": "https://wakaabuja.com/exciting-weekend-getaways/",
+      "snippet": "1 day ago · From beach escapes and mountain retreats to culture-rich cities and relaxing wellness stays, these 25 long weekend trip …"
+    },
+    {
+      "title": "25 Exciting Weekend Getaways (With Real Costs, Drive Times ...",
+      "url": "https://wakaabuja.com/exciting-weekend-getawayss/",
+      "snippet": "1 day ago · 25 Exciting Weekends Getaways (With Real Costs, Drive Times & Itineraries) By Maya Whitfield An exciting weekend …"
+    },
+    {
+      "title": "10 Ultimate Weekend Getaways: From Nature Retreats to Beachfront …",
+      "url": "https://travellikeaboss.org/best-places-to-travel-to-for-a-weekend/",
+      "snippet": "Sep 20, 2024 · Get ready to discover exciting destinations that are just a short trip away, offering you the chance to unwind, explore, …"
+    },
+    {
+      "title": "Weekend Travel Ideas: 15 Exciting Getaways to Recharge and Explore",
+      "url": "https://harborsaga.com/weekend-travel-ideas/",
+      "snippet": "Budget-friendly weekend getaways provide enriching experiences that rejuvenate without overspending. Exploring these options …"
+    },
+    {
+      "title": "25 Long Weekend Trip Ideas That Feel Like a Vacation",
+      "url": "https://madefortravellers.com/long-weekend-trip-ideas/",
+      "snippet": "Discover 25 inspiring long weekend trip ideas across the USA! From beaches to mountains, find easy weekend getaway ideas."
+    }
+  ]
+}

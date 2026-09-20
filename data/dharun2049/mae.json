@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "dharun2049/MAE",
+  "slug": "dharun2049-mae",
+  "author": "dharun2049",
+  "url": "https://huggingface.co/dharun2049/MAE",
+  "created_at": "2026-09-15T16:14:26.000Z",
+  "updated_at": "2026-09-19T12:38:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "qwen3",
+    "text-generation",
+    "quantization",
+    "low-bit",
+    "quinary",
+    "five-state",
+    "pq5",
+    "experimental",
+    "mmlu",
+    "conversational",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 242585316,
+  "storage_human": "243 MB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "الصفحة الرئيسية - مؤسسة الإمارات للدواء - EDE Portal",
+      "url": "https://www.ede.gov.ae/",
+      "snippet": "تأسست مؤسسة الإمارات للدواء في 29 سبتمبر من العام 2023، وتمثّل ركناً أساسياً في مسيرة تحول قطاع الرعاية الصحية في دولة الإمارات، وهي الهيئة الإتحادية الوحيدة المسؤولة عن تنظيم كافة …"
+    },
+    {
+      "title": "قائمة الأدوية والمنتجات الطبية المسجلة | Ministry of Health and ...",
+      "url": "https://mohap.gov.ae/en/w/%D9%82%D8%A7%D8%A6%D9%85%D8%A9-%D8%A7%D9%84%D8%A3%D8%AF%D9%88%D9%8A%D8%A9-%D9%88%D8%A7%D9%84%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA-%D8%A7%D9%84%D8%B7%D8%A8%D9%8A%D8%A9-%D8%A7%D9%84%D9%85%D8%B3%D8%AC%D9%84%D8%A9",
+      "snippet": "Jul 10, 2026 · قائمة الأدوية والمنتجات الطبية المسجلة | Ministry of Health and Prevention - UAE"
+    },
+    {
+      "title": "سجل المنتجات الطبية المسجلة | وزارة الصحة ووقاية المجتمع - الإمارات ...",
+      "url": "https://mohap.gov.ae/ar/registered-medical-product-directory",
+      "snippet": "يرجى إجراء عملية بحث لاسترجاع المنتجات الطبية المسجلة المطلوبة يمكنك مساعدتنا في تحسين تجربتك من خلال مشاركة"
+    },
+    {
+      "title": "MDS G29 - الهيئة العامة للغذاء والدواء",
+      "url": "https://www.sfda.gov.sa/sites/default/files/2019-10/%28MDS-G29%29ar.pdf",
+      "snippet": "عينات الأجهزة والمنتجات الطبية المراد فحصها في مختبرات الهيئة أو مختبرات جهات أخرى التي تم أخذها عند و صول الشحنة للمنافذ الجمركية أو من خلال عملية التفتيش الميداني."
+    },
+    {
+      "title": "تصنيف منتج طبي - مؤسسة الإمارات للدواء - EDE Portal",
+      "url": "https://ede.gov.ae/w/classification-of-a-product",
+      "snippet": "وصف الخدمة تتيح هذه الخدمة تصنيف المنتجات من جميع الأنواع والنماذج على أسس الشكل التقديمي، والتركيب، والاستخدام والتصميم."
+    }
+  ]
+}

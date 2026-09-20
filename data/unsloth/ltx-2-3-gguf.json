@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "id": "unsloth/LTX-2.3-GGUF",
+  "slug": "unsloth-ltx-2-3-gguf",
+  "author": "unsloth",
+  "url": "https://huggingface.co/unsloth/LTX-2.3-GGUF",
+  "created_at": "2026-03-05T17:47:55.000Z",
+  "updated_at": "2026-04-20T01:59:13.000Z",
+  "license": "ltx-2-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-video",
+  "library": "ggml",
+  "languages": [
+    "en",
+    "de",
+    "es",
+    "fr",
+    "ja",
+    "ko",
+    "zh",
+    "it",
+    "pt"
+  ],
+  "tags": [
+    "ggml",
+    "gguf",
+    "image-to-video",
+    "unsloth",
+    "text-to-video",
+    "video-to-video",
+    "image-text-to-video",
+    "audio-to-video",
+    "text-to-audio",
+    "video-to-audio",
+    "audio-to-audio",
+    "text-to-audio-video",
+    "image-to-audio-video",
+    "image-text-to-audio-video",
+    "ltx-2",
+    "ltx-2-3",
+    "ltx-video",
+    "ltxv",
+    "lightricks",
+    "en",
+    "de",
+    "es",
+    "fr",
+    "ja",
+    "ko",
+    "zh",
+    "it",
+    "pt",
+    "arxiv:2601.03233",
+    "base_model:Lightricks/LTX-2.3",
+    "base_model:quantized:Lightricks/LTX-2.3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 574,
+  "downloads_30d": 311299,
+  "trending_score": 10,
+  "parameters": 21005004544,
+  "parameters_human": "21.01B",
+  "storage_bytes": 2952254591445,
+  "storage_human": "2952.3 GB",
+  "base_model": "Lightricks/LTX-2.3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ZUOLIN眼镜 - 抖音",
+      "url": "https://www.douyin.com/search/ZUOLIN%E7%9C%BC%E9%95%9C",
+      "snippet": "筛选 认证徽章 华圣眼镜分店 · 5月前 哇喔夏季新品、爆卖系列🈶货 ZUOLIN | 佐琳网红爆款接单🔥 学院风，时尚网红爆款 00:00/01:06 XIU …"
+    },
+    {
+      "title": "ZUOLIN®️ 佐琳新品 ¥16 质感TR系列重磅登陆 - 抖音",
+      "url": "https://www.douyin.com/video/7560325742962920719",
+      "snippet": "Oct 12, 2025 · ZUOLIN®️ 佐琳新品🫟¥16 质感TR系列重磅登陆 - 鹰潭眼镜工厂于20251012发布在抖音，已经收获了4297个喜欢，来抖 …"
+    },
+    {
+      "title": "Zuolin Zhu (@_zuolin) • Instagram photos and videos",
+      "url": "https://www.instagram.com/_zuolin/",
+      "snippet": "27 Followers, 149 Following, 155 Posts - Zuolin Zhu (@_zuolin) on Instagram: \"\""
+    },
+    {
+      "title": "佐森眼镜旗舰店品牌介绍 - 京东 - JD.com",
+      "url": "https://mall.jd.com/introduction-706755.html",
+      "snippet": "￥ 已有 12 人评价 6 佐森眼镜（ZUOSEN）rococo虞书欣同款墨镜女猫眼高级感太阳镜2023新款防紫外线GM眼镜 Roco-01【杨超越同 …"
+    },
+    {
+      "title": "佐森眼镜（ZUOSEN）佐森GM同款眼镜板材雪梨网红同款韩版...",
+      "url": "https://item.jd.com/50764067051.html",
+      "snippet": "佐森眼镜（ZUOSEN）佐森GM同款眼镜板材雪梨网红同款韩版黑框眼镜复古镜框男女防蓝光 1.61无色防蓝光（0-400度）图片、价格 …"
+    }
+  ]
+}

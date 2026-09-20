@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "suyashdiamond11/tartanimu-ln-metric1024-tomjerry",
+  "slug": "suyashdiamond11-tartanimu-ln-metric1024-tomjerry",
+  "author": "suyashdiamond11",
+  "url": "https://huggingface.co/suyashdiamond11/tartanimu-ln-metric1024-tomjerry",
+  "created_at": "2026-09-20T11:35:31.000Z",
+  "updated_at": "2026-09-20T11:37:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "imu",
+    "inertial-odometry",
+    "tartanimu",
+    "reproducibility",
+    "base_model:arattan7272/tartanimu-lnresnet",
+    "base_model:finetune:arattan7272/tartanimu-lnresnet",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 21548690,
+  "storage_human": "22 MB",
+  "base_model": "arattan7272/tartanimu-lnresnet",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mietaufhebungsvertrag Muster – hier kostenlos! - JuraForum.de",
+      "url": "https://www.juraforum.de/news/mietaufhebungsvertrag-muster-hier-kostenlos_247596",
+      "snippet": "Jun 30, 2026 · Wird ein Mietvertrag geschlossen, so unterliegt er bestimmten Kündigungsfristen. Diese sind für beide Parteien – also …"
+    },
+    {
+      "title": "Mietvertrag: Ist eine Endrenovierungsklausel zulässig?",
+      "url": "https://www.juraforum.de/news/mietvertrag-ist-eine-endrenovierungsklausel-zulaessig_247544",
+      "snippet": "Jul 23, 2026 · In der Regel besagt ein Mietvertrag, dass der Mieter während der Dauer des Mietverhältnisses die Wohnung …"
+    },
+    {
+      "title": "Kündigungsschreiben Wohnung ᐅ Muster / Vorlage Kündigung",
+      "url": "https://www.juraforum.de/lexikon/kuendigungsschreiben-wohnung-vorlage",
+      "snippet": "May 26, 2026 · Kündigungsschreiben Wohnung ️ Vorlage zur Kündigung vom Mietvertrag oder Wohnung kostenlos! Jetzt …"
+    },
+    {
+      "title": "Selbstschuldnerische Bürgschaft Mietvertrag Muster / Vorlage kostenlos",
+      "url": "https://www.juraforum.de/muster-vorlagen/selbstschuldnerische-buergschaft",
+      "snippet": "Mar 10, 2017 · Das Muster für eine selbstschuldnerische Bürgschaft, das auf dieser Seite heruntergeladen werden kann, bietet eine …"
+    },
+    {
+      "title": "Eigenbedarfskündigung Muster: kostenlose Vorlage für die Kündigung ...",
+      "url": "https://www.juraforum.de/news/eigenbedarfskuendigung-muster-kostenlose-vorlage-fuer-die-kuendigung-wegen-eigenbedarf_247361",
+      "snippet": "Jun 23, 2026 · Wer Eigentümer einer Wohnung oder eines Hauses ist, hat entweder die Möglichkeit selbst dort zu leben oder den …"
+    }
+  ]
+}

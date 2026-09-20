@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "marcussunderl0040/mt5-small-finetuned-persian-news-summarization-with-additional-hyperparameters",
+  "slug": "marcussunderl0040-mt5-small-finetuned-persian-news-summarization-with-additional-hyperparameters",
+  "author": "marcussunderl0040",
+  "url": "https://huggingface.co/marcussunderl0040/mt5-small-finetuned-persian-news-summarization-with-additional-hyperparameters",
+  "created_at": "2026-07-28T14:04:14.000Z",
+  "updated_at": "2026-09-19T22:54:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "summarization",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "mt5",
+    "text2text-generation",
+    "summarization",
+    "generated_from_trainer",
+    "base_model:google/mt5-small",
+    "base_model:finetune:google/mt5-small",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 42,
+  "trending_score": 0,
+  "parameters": 300176768,
+  "parameters_human": "300.2M",
+  "storage_bytes": 4856302914,
+  "storage_human": "4.9 GB",
+  "base_model": "google/mt5-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "- ZEUS - Studierendenportal der Universität Konstanz",
+      "url": "https://zeus.uni-konstanz.de/hioserver/rds?state=user&type=0",
+      "snippet": "Willkommen bei ZEuS! ZEuS ist das Zentrale Einschreibe- und Studierendenportal der Universität Konstanz."
+    },
+    {
+      "title": "Vorlesungsverzeichnis anzeigen - ZEUS - Studierendenportal der ...",
+      "url": "https://zeus.uni-konstanz.de/hioserver/pages/cm/exa/coursecatalog/showCourseCatalog.xhtml?_flowId=showCourseCatalog-flow&_flowExecutionKey=e1s1",
+      "snippet": "Sie sind hier: Startseite Lehrangebot Vorlesungsverzeichnis anzeigen Vorlesungsverzeichnis anzeigen"
+    },
+    {
+      "title": "Veranstaltungen suchen - ZEUS - Studierendenportal der Universität …",
+      "url": "https://zeus.uni-konstanz.de/hioserver/pages/startFlow.xhtml?_flowId=searchCourseNonStaff-flow&_flowExecutionKey=e1s1",
+      "snippet": "Mehrfachsuche für: Nummer, Semesterunabhängiger Titel, Semesterabhängiger Titel, Dozent*in (verantwortlich), Dozent*in …"
+    },
+    {
+      "title": "ZEuS Portal Uni Konstanz",
+      "url": "https://zeus.uni-konstanz.de/hioserver/pages/cs/sys/portal/dashboardSubMenu.faces",
+      "snippet": "ZEuS Portal Uni Konstanz Impressum"
+    },
+    {
+      "title": "Registrierung - ZEUS - Studierendenportal der Universität Konstanz",
+      "url": "https://zeus.uni-konstanz.de/hioserver/pages/psv/selbstregistrierung/pub/selbstregistrierung.xhtml?_flowId=selfRegistrationRegister-flow&_flowExecutionKey=e1s1",
+      "snippet": "Sind Sie bereits an der Universität Konstanz eingeschrieben? Melden Sie sich direkt mit Ihrem Studierenden-Account an. Unter dem …"
+    }
+  ]
+}

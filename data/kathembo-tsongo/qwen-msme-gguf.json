@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "kathembo-tsongo/qwen-msme-gguf",
+  "slug": "kathembo-tsongo-qwen-msme-gguf",
+  "author": "kathembo-tsongo",
+  "url": "https://huggingface.co/kathembo-tsongo/qwen-msme-gguf",
+  "created_at": "2026-07-31T18:18:01.000Z",
+  "updated_at": "2026-09-19T21:18:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 226,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 9996050816,
+  "storage_human": "10.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "La Primitiva | Resultados OFICIALES - Loterías y Apuestas del Estado",
+      "url": "https://www.loteriasyapuestas.es/es/resultados/primitiva",
+      "snippet": "22 hours ago · Revisa recaudación, botes, premios y ganadores de todos los sorteos de La Primitiva. Toda la información aquí"
+    },
+    {
+      "title": "Sorteos-Resultados OFICIALES|Loterías y Apuestas del Estado",
+      "url": "https://www.loteriasyapuestas.es/es/resultados",
+      "snippet": "Euromillones, Primitiva, Lotería Nacional, sorteo de Navidad y El Niño, Quiniela,... Toda la información aquí"
+    },
+    {
+      "title": "Resultados de la loteria primitiva | la Primitiva.info",
+      "url": "https://www.laprimitiva.info/",
+      "snippet": "Últimos sorteos de La Primitiva, consulta los resultados de la Lotería más jugada en España. Combinación ganadora de la Loteria …"
+    },
+    {
+      "title": "La Primitiva - Combinación Ganadora",
+      "url": "https://www.combinacionganadora.com/primitiva/",
+      "snippet": "22 hours ago · La Primitiva es un juego de lotería española que organiza Loterías y Apuestas del Estado y cuya combinación …"
+    },
+    {
+      "title": "Comprobar Primitiva - Resultados de Loteria Primitiva",
+      "url": "https://primitivacomprobar.mundodeportivo.com/",
+      "snippet": "2 days ago · ¿Quieres comprobar tu primitiva? ⭐ Comprobar la Primitiva de lunes, jueves y sábado. Resultados, premios y Joker …"
+    }
+  ]
+}

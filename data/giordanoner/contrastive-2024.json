@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "giordanoner/contrastive-2024",
+  "slug": "giordanoner-contrastive-2024",
+  "author": "giordanoner",
+  "url": "https://huggingface.co/giordanoner/contrastive-2024",
+  "created_at": "2026-09-20T11:43:09.000Z",
+  "updated_at": "2026-09-20T11:43:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "contrastive",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Travesta - Die Transgender-Community",
+      "url": "https://www.travesta.de/index.php/login.html",
+      "snippet": "Travesta ist eine Online Kontakt- und Dating-Community für Transvestiten, Transsexuelle, Crossdresser und Menschen, die …"
+    },
+    {
+      "title": "Heimliche Transen - Travesta",
+      "url": "https://www.travesta.de/index.php/community/gruppen.html?g=3245",
+      "snippet": "Info: DWT´s, TG´s, TV´s die sich aus familieren, gesellschaftlichen, wirtschaftlichen oder anderen Gründen nicht outen können oder …"
+    },
+    {
+      "title": "Travesta - Die Transgender-Community",
+      "url": "https://www.travesta.de/index.php/article/dasbietettravesta.html",
+      "snippet": "Was bietet Travesta? » Profile Die Profile helfen Dir, andere Mitglieder der Community kennenzulernen. Genauso hast auch Du die …"
+    },
+    {
+      "title": "Travesta - Forum",
+      "url": "https://www.travesta.de/index.php/forum.html?bid=forum&do=base&mF=11",
+      "snippet": "Alle Themen mit Beiträgen seit meinem letzten Forum-Besuch anzeigen Aktive Themen der letzten 24 Stunden anzeigen Alle Foren …"
+    },
+    {
+      "title": "Travesta - Die Transgender-Community",
+      "url": "https://www.travesta.de/index.php/news/index.html",
+      "snippet": "Wir haben in letzter Zeit folgende Verbesserungen an die Community vorgenommen: - Im Bereich \"Aktuell online\" sehen jetzt alle das …"
+    }
+  ]
+}

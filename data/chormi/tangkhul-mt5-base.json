@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "chormi/tangkhul-mt5-base",
+  "slug": "chormi-tangkhul-mt5-base",
+  "author": "chormi",
+  "url": "https://huggingface.co/chormi/tangkhul-mt5-base",
+  "created_at": "2026-09-20T08:06:28.000Z",
+  "updated_at": "2026-09-21T02:02:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mt5",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 25,
+  "trending_score": 0,
+  "parameters": 582401280,
+  "parameters_human": "582.4M",
+  "storage_bytes": 16323801750,
+  "storage_human": "16.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Significado de Sonhar com Porta",
+      "url": "https://www.sonhos.com.br/sonhar-com-porta",
+      "snippet": "Descubra o que significa sonhar com porta, incluindo interpretações sobre portas abertas, fechadas e outros contextos que revelam …"
+    },
+    {
+      "title": "Sonhar com Porta Rangendo - Segredos do Sonho",
+      "url": "https://www.segredosdosonho.com.br/sonhar-com-porta-rangendo/",
+      "snippet": "Significado: Sonhar com porta rangendo é símbolo de oportunidades, vontades e emoções reprimidas que estão a caminho de …"
+    },
+    {
+      "title": "Sonhar com porta – O que significa? Mensagem oculta",
+      "url": "https://www.significado-sonho.com/porta/",
+      "snippet": "Mar 27, 2026 · Sonhar com uma porta batendo, especialmente com força, pode ser um sinal de alerta ou um aviso. Essa batida …"
+    },
+    {
+      "title": "Porta rangendo. Interpretação do sonho e números da loteria",
+      "url": "https://www.lasmorfianapoletana.com/pt/Significado-dos-Sonhos/?src=porta+rangendo",
+      "snippet": "Significado do sonho com porta rangendo. Números da tradição popular napolitana para jogar na loteria. A interpretação dos sonhos …"
+    },
+    {
+      "title": "Sonhar com porta: significados e interpretações",
+      "url": "https://sentidodossonhos.com.br/sonhar-com-porta/",
+      "snippet": "Entenda sonhar com porta aberta, fechada, trancada ou quebrada, com interpretações simbólicas, emocionais e espirituais."
+    }
+  ]
+}

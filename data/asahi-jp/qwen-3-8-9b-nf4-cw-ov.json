@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "asahi-jp/Qwen-3.8-9B-nf4-cw-ov",
+  "slug": "asahi-jp-qwen-3-8-9b-nf4-cw-ov",
+  "author": "asahi-jp",
+  "url": "https://huggingface.co/asahi-jp/Qwen-3.8-9B-nf4-cw-ov",
+  "created_at": "2026-09-20T08:54:15.000Z",
+  "updated_at": "2026-09-21T04:06:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "openvino",
+    "qwen3_5",
+    "qwen",
+    "qwen3.5",
+    "qwen3.8",
+    "ovms",
+    "npu",
+    "lunar-lake",
+    "nf4",
+    "compressed-weights",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6137736424,
+  "storage_human": "6.1 GB",
+  "base_model": "empero-ai/Qwen3.8-9B-Distill, Qwen/Qwen3.5-9B",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=2d91b3f3600a6d4f1787a429616d6c7b",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Get access to free online versions of Outlook, Word, Excel, and PowerPoint."
+    },
+    {
+      "title": "Sign in to your account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    },
+    {
+      "title": "Microsoft 365 for Individuals: Subscription for Productivity Apps",
+      "url": "https://www.microsoft.com/en-us/microsoft-365?msockid=2d91b3f3600a6d4f1787a429616d6c7b",
+      "snippet": "Microsoft 365 (formerly Office 365) subscriptions offer a suite of productivity tools and cloud services with world-class security and …"
+    },
+    {
+      "title": "Microsoft - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Microsoft",
+      "snippet": "Microsoft Corporation is an American multinational technology company headquartered in Redmond, Washington. The company …"
+    }
+  ]
+}

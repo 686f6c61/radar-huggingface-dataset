@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Cseti/MiniMax-H3_Ref2VA-LoRA-CrossView-Warp_v1",
+  "slug": "cseti-minimax-h3_ref2va-lora-crossview-warp_v1",
+  "author": "Cseti",
+  "url": "https://huggingface.co/Cseti/MiniMax-H3_Ref2VA-LoRA-CrossView-Warp_v1",
+  "created_at": "2026-09-20T11:10:08.000Z",
+  "updated_at": "2026-09-20T19:23:11.000Z",
+  "license": "minimax-h3-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "minimax-h3",
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "video-generation",
+    "lora",
+    "ref2va",
+    "novel-view-synthesis",
+    "camera-viewpoint",
+    "re-camera",
+    "depth-warp",
+    "moge",
+    "base_model:MiniMaxAI/MiniMax-H3",
+    "base_model:adapter:MiniMaxAI/MiniMax-H3",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 29,
+  "downloads_30d": 152,
+  "trending_score": 28,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 782480034,
+  "storage_human": "782 MB",
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gmail - Email from Google",
+      "url": "https://mail.google.com/mail",
+      "snippet": "Gmail is email that's intuitive, efficient, and useful. 15 GB of storage, less spam, and mobile access."
+    },
+    {
+      "title": "Cseti (Tamás cseh) - Hugging Face",
+      "url": "https://huggingface.co/Cseti",
+      "snippet": "Independent AI engineer focused on fine-tuning open-source video and audio generation models ... Cseti/MiniMax-H3_Ref2VA-LoRA-CrossView-Warp_v1 · View all ..."
+    },
+    {
+      "title": "Change the camera movement/angle for your existing video clip",
+      "url": "https://www.reddit.com/r/comfyui/comments/1wls47m/change_the_camera_movementangle_for_your_existing/",
+      "snippet": "vor 14 Stunden ... ... Cseti/MiniMax-H3_Ref2VA-LoRA-CrossView-Warp_v1. Link to the example ... MiniMax H3 R2V with the Hybrid Model and Turbo LoRA: a 2:19 ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?p=1&sort=modified&search=lora",
+      "snippet": "alxxtexxr/XLM-R-Base-squad-en-15K-s42-LoRA-mrg-v260920174217 · alxxtexxr/XLM-R-Base-squad-en-15K-s42-LoRA-v260920174217 · Cseti/MiniMax-H3_Ref2VA-LoRA-CrossView- ..."
+    },
+    {
+      "title": "Models - Hugging Face",
+      "url": "https://huggingface.co/models?sort=trending&search=minimax",
+      "snippet": "Cseti/MiniMax-H3_Ref2VA-LoRA-CrossView-Warp_v1. Updated about 5 hours ago • 17 · fal/MiniMax-H3-Realism-People-LoRA. Image-Text-to-Video • Updated Aug 12 • 63.1 ..."
+    }
+  ]
+}

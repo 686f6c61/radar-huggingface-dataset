@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "moebiusT7/gemma-4-12b-mobius-custom-c1",
+  "slug": "moebiust7-gemma-4-12b-mobius-custom-c1",
+  "author": "moebiusT7",
+  "url": "https://huggingface.co/moebiusT7/gemma-4-12b-mobius-custom-c1",
+  "created_at": "2026-09-12T08:03:30.000Z",
+  "updated_at": "2026-09-19T14:09:47.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "tags": [
+    "gguf",
+    "gemma4",
+    "llama.cpp",
+    "qat",
+    "governance",
+    "answer-entitlement",
+    "mobius",
+    "mmv",
+    "rcgov",
+    "text-generation",
+    "en",
+    "ja",
+    "base_model:google/gemma-4-12B-it-qat-q4_0-gguf",
+    "base_model:quantized:google/gemma-4-12B-it-qat-q4_0-gguf",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 68,
+  "trending_score": 0,
+  "parameters": 11907350576,
+  "parameters_human": "11.91B",
+  "storage_bytes": 6975879296,
+  "storage_human": "7.0 GB",
+  "base_model": "google/gemma-4-12B-it-qat-q4_0-gguf",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home | SV Werder Bremen",
+      "url": "https://www.werder.de/",
+      "snippet": "15 hours ago · Werder auch gegen Augsburg ohne Lynen: Keine Änderung in der Anfangsformation Dreimal ist Bremer Recht! Wenn …"
+    },
+    {
+      "title": "Home | SV Werder Bremen",
+      "url": "https://www.werder.de/en",
+      "snippet": "SV Werder began training this week on Tuesday afternoon ahead of the Bundesliga game against FC Augsburg at the Weserstadion. …"
+    },
+    {
+      "title": "Heimspiele | SV Werder Bremen",
+      "url": "https://www.werder.de/tickets/maenner/heimspiele",
+      "snippet": "Bestellungen für Heimspiele können ausschließlich über unsere Homepage www.werder.de aufgegeben werden. Um eine Bestellung …"
+    },
+    {
+      "title": "Startseite | SV Werder Bremen",
+      "url": "https://www.werder.de/tickets/",
+      "snippet": "Willkommen auf der offiziellen Website des SV Werder Bremen. Erfahre aktuelle News und Infos sowie Events und Termine von …"
+    },
+    {
+      "title": "Grüll mit lupenreinem Hattrick: Werder bezwingt Meppen",
+      "url": "https://www.werder.de/news/maenner/2026-2027/spielbericht-meppen-23082026",
+      "snippet": "Aug 23, 2026 · Alles zum Spiel Werder Bremen gegen Meppen: Tore, Highlights und die besten Szenen zum Nachlesen im …"
+    }
+  ]
+}

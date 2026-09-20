@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "huzican0419/robotwin_piper_x_sim_real_from80k_step10000",
+  "slug": "huzican0419-robotwin_piper_x_sim_real_from80k_step10000",
+  "author": "huzican0419",
+  "url": "https://huggingface.co/huzican0419/robotwin_piper_x_sim_real_from80k_step10000",
+  "created_at": "2026-09-20T11:47:28.000Z",
+  "updated_at": "2026-09-20T11:52:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "robotics",
+    "openpi",
+    "pi05",
+    "pytorch",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3616757520,
+  "parameters_human": "3.62B",
+  "storage_bytes": 7233650408,
+  "storage_human": "7.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "проводник в Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/ru-ru/windows/experience/fileexplorer/file-explorer-in-windows",
+      "snippet": "Поиск и открытие проводник в Windows, а также настройка быстрого доступа путем закрепления и удаления файлов и папок."
+    },
+    {
+      "title": "12 советов по настройке «Проводника» в Windows 11",
+      "url": "https://lifehacker.ru/nastrojka-provodnika-windows-11/",
+      "snippet": "Jun 26, 2023 · Поворот изображений, замена стартовой папки и другие неочевидные функции проводника Windows, которые …"
+    },
+    {
+      "title": "Поиск файлов и приложений в Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/ru-ru/windows/experience/storage-filemanagement/find-your-files-and-apps-in-windows",
+      "snippet": "Поиск из проводник: откройте проводник на панели задач или щелкните правой кнопкой мыши Start, выберите проводник а …"
+    },
+    {
+      "title": "Как открыть Проводник в Windows 11 - Lumpics.ru",
+      "url": "https://lumpics.ru/how-to-open-explorer-in-windows-11/",
+      "snippet": "Существует несколько путей реализации данного метода, поскольку значок «Проводника» в «Пуске» можно найти по …"
+    },
+    {
+      "title": "Настройте проводник файлов в Windows 11 с помощью этих 9 …",
+      "url": "https://dzen.ru/a/ZxSnAj4IwWpCe9Lr",
+      "snippet": "Oct 19, 2024 · Сегодня я покажу вам, как настроить File Explorer с помощью встроенных опций Windows. По умолчанию File …"
+    }
+  ]
+}

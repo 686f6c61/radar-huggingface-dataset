@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "movingcastles/zero",
+  "slug": "movingcastles-zero",
+  "author": "movingcastles",
+  "url": "https://huggingface.co/movingcastles/zero",
+  "created_at": "2026-07-18T12:54:51.000Z",
+  "updated_at": "2026-09-08T12:32:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "character",
+    "persona",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3-8B-Base",
+    "base_model:finetune:Qwen/Qwen3-8B-Base",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 10,
+  "downloads_30d": 155,
+  "trending_score": 10,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392939474,
+  "storage_human": "16.4 GB",
+  "base_model": "Qwen/Qwen3-8B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Katy Perry | Official Site",
+      "url": "https://www.katyperry.com/",
+      "snippet": "The official Katy Perry website."
+    },
+    {
+      "title": "Katy Perry - 2026 Tour Dates & Concert Schedule - Live Nation",
+      "url": "https://www.livenation.com/artist/K8vZ917GC17/katy-perry-events",
+      "snippet": "Find concert tickets for Katy Perry upcoming 2026 shows. Explore Katy Perry tour schedules, latest setlist, videos, and more on …"
+    },
+    {
+      "title": "Katy Perry Full Tour Schedule 2026 & 2027, Tour Dates & Concerts - Songkick",
+      "url": "https://www.songkick.com/artists/1134363-katy-perry/calendar",
+      "snippet": "Aug 25, 2026 · All Katy Perry upcoming concerts for 2026 & 2027. Find out when Katy Perry is next playing live near you."
+    },
+    {
+      "title": "Katy Perry: The Lifetimes Tour - Live from Paris | Official Website",
+      "url": "https://katyperryconcertfilm.com/",
+      "snippet": "Get tickets now on the official website. In cinemas and IMAX® worldwide Wednesday September 2 for a limted time only."
+    },
+    {
+      "title": "The Lifetimes Tour - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/The_Lifetimes_Tour",
+      "snippet": "Promotional poster for the US dates. The Lifetimes Tour was the fifth concert tour by the American singer Katy Perry, in support of …"
+    }
+  ]
+}

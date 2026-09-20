@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "LightOriginsHQ/Light-O1-Preview",
+  "slug": "lightoriginshq-light-o1-preview",
+  "author": "LightOriginsHQ",
+  "url": "https://huggingface.co/LightOriginsHQ/Light-O1-Preview",
+  "created_at": "2026-09-20T09:57:23.000Z",
+  "updated_at": "2026-09-20T15:23:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "text-to-action",
+    "motion-generation",
+    "humanoid",
+    "reasoning",
+    "robotics",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 16,
+  "downloads_30d": 112,
+  "trending_score": 16,
+  "parameters": 5510550016,
+  "parameters_human": "5.51B",
+  "storage_bytes": 11325948153,
+  "storage_human": "11.3 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ameli assure",
+      "url": "https://assure.ameli.fr/",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "Votre compte ameli | ameli.fr | Assuré",
+      "url": "https://www.ameli.fr/assure/adresses-et-contacts/votre-compte-ameli",
+      "snippet": "Salarié, indépendant, étudiant : en cas de questions sur le compte ameli, trouvez le moyen le plus adapté pour contacter l’Assurance …"
+    },
+    {
+      "title": "Création de votre compte ameli et connexion : mode d’emploi",
+      "url": "https://www.ameli.fr/assure/remboursements/suivre-remboursements/se-connecter-compte-ameli",
+      "snippet": "Feb 10, 2026 · Vous trouverez sur cette page toutes les informations nécessaires pour créer un compte ameli et pour vous y …"
+    },
+    {
+      "title": "Les services du compte ameli, votre espace personnel sécurisé",
+      "url": "https://www.ameli.fr/assure/remboursements/suivre-remboursements/compte-ameli-connexion-services",
+      "snippet": "4 days ago · Partout, à tout moment, retrouvez les services de votre compte ameli gratuitement sur smartphone. Avec votre appli …"
+    },
+    {
+      "title": "ameli, le site de l’Assurance Maladie en ligne | ameli.fr | Assuré",
+      "url": "https://www.ameli.fr/",
+      "snippet": "Consultez les tarifs, horaires, spécialistes, adresses... Consultez les coordonnées des psychologues conventionnés avec l’Assurance …"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Rand000mGuy/droolk",
+  "slug": "rand000mguy-droolk",
+  "author": "Rand000mGuy",
+  "url": "https://huggingface.co/Rand000mGuy/droolk",
+  "created_at": "2026-09-20T11:18:01.000Z",
+  "updated_at": "2026-09-20T11:18:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 228658189,
+  "storage_human": "229 MB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Paredes – Wikipédia, a enciclopédia livre",
+      "url": "https://pt.wikipedia.org/wiki/Paredes",
+      "snippet": "Paredes é uma cidade portuguesa localizada na sub-região da Área Metropolitana do Porto, pertencendo à região do Norte e ao …"
+    },
+    {
+      "title": "Câmara Municipal de Paredes",
+      "url": "https://www.cm-paredes.pt/",
+      "snippet": "Disponibiliza informação sobre eventos, notícias, turismo, cultura, desporto, serviços, documentos, contactos, organograma do …"
+    },
+    {
+      "title": "CM Paredes / Apresentação do Concelho",
+      "url": "https://www.cm-paredes.pt/pages/610/",
+      "snippet": "Disponibiliza informação sobre eventos, notícias, turismo, cultura, desporto, serviços, documentos, contactos, organograma do …"
+    },
+    {
+      "title": "Paredes, Portugal - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Paredes,_Portugal",
+      "snippet": "Currently, Paredes Municipality contains four cities: Paredes, Rebordosa, São Salvador de Lordelo and Gandra, being the …"
+    },
+    {
+      "title": "AS 10 MELHORES coisas para fazer em Paredes (2026) - Tripadvisor",
+      "url": "https://www.tripadvisor.pt/Attractions-g754083-Activities-Paredes_Porto_District_Northern_Portugal.html",
+      "snippet": "Do Salto, Parque da Cidade de Paredes, Igrejas e catedrais, Locais sagrados e religiosos. Veja o que outros viajantes gostam de …"
+    }
+  ]
+}

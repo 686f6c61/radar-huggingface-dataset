@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "tcclaviger/Qwen3.8-Flash-Next-MXFP4-FP8-GPTQ",
+  "slug": "tcclaviger-qwen3-8-flash-next-mxfp4-fp8-gptq",
+  "author": "tcclaviger",
+  "url": "https://huggingface.co/tcclaviger/Qwen3.8-Flash-Next-MXFP4-FP8-GPTQ",
+  "created_at": "2026-09-13T14:05:31.000Z",
+  "updated_at": "2026-09-15T02:24:35.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen4_exp",
+    "image-text-to-text",
+    "amd",
+    "rdna4",
+    "r9700",
+    "mxfp4",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 14,
+  "downloads_30d": 311,
+  "trending_score": 12,
+  "parameters": 175405232019,
+  "parameters_human": "175.41B",
+  "storage_bytes": 243079910424,
+  "storage_human": "243.1 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fox News - Breaking News Updates | Latest News Headlines | Photos ...",
+      "url": "https://www.foxnews.com/?msockid=2c2e455936056062361c5280378061da",
+      "snippet": "Latest Current News: U.S., World, Entertainment, Health, Business, Technology, Politics, Sports."
+    },
+    {
+      "title": "NBC News - Breaking Headlines and Video Reports on World, U.S. and ...",
+      "url": "https://www.nbcnews.com/",
+      "snippet": "Go to NBCNews.com for breaking news, videos, and the latest top stories in world news, business, politics, health and pop culture."
+    },
+    {
+      "title": "Breaking News, Latest News and Videos | CNN",
+      "url": "https://www.cnn.com/",
+      "snippet": "View the latest news and breaking news today for U.S., world, weather, entertainment, politics and health at CNN.com."
+    },
+    {
+      "title": "CBS News | Breaking news, top stories & today's latest headlines",
+      "url": "https://www.cbsnews.com/",
+      "snippet": "CBS News offers breaking news coverage of today&#039;s top headlines. Stay informed on the biggest new stories with our …"
+    },
+    {
+      "title": "Google News",
+      "url": "https://news.google.com/",
+      "snippet": "Comprehensive up-to-date news coverage, aggregated from sources all over the world by Google News."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "cmeister/boundary-markers-ko-d12-bnd_wpd_caps-mingram",
+  "slug": "cmeister-boundary-markers-ko-d12-bnd_wpd_caps-mingram",
+  "author": "cmeister",
+  "url": "https://huggingface.co/cmeister/boundary-markers-ko-d12-bnd_wpd_caps-mingram",
+  "created_at": "2026-09-20T11:52:39.000Z",
+  "updated_at": "2026-09-20T11:52:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "tokenization",
+    "boundary-markers",
+    "nanochat",
+    "ko",
+    "arxiv:2608.08847",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2458873059,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ökumenische Initiative e.V. Wipperfürth/Radevormwald",
+      "url": "https://oeku-ini.de/",
+      "snippet": "Ich stimme zu, dass meine Angaben aus dem Kontaktformular zur Beantwortung meiner Anfrage erhoben und verarbeitet werden. …"
+    },
+    {
+      "title": "Öffnungszeiten von Ökumene in Wipperfürth - Adresse nützliche …",
+      "url": "https://www.xn--ffnungszeiten-hmb.app/de/51688/wipperfurth/lebensraum-garten-inneneinrichtung-ausrustung/okumene-W8G9ca2Zue2n04Ny",
+      "snippet": "Rufen Sie die Öffnungszeiten von Ökumene in Wipperfürth sowie die Adresse, Telefonnummer, Öffnungszeiten an Feiertagen und …"
+    },
+    {
+      "title": "Ökumenische Initiative e.V.. - Möbellager in Wipperfürth",
+      "url": "https://www.oeffnungszeitenbuch.de/filiale/Wipperfuerth-Oekumenische%2520Initiative%2520e.V..%2520-%2520Moebellager-1127503U.html",
+      "snippet": "Telefonnummer, Adresse und Öffnungszeiten für Ökumenische Initiative e.V.. - Möbellager in Wipperfürth, Wupperstraße 6 Alles …"
+    },
+    {
+      "title": "Oekumenische Initiative e.V., Wipperfürth",
+      "url": "https://web2.cylex.de/firma-home/oekumenische-initiative-e-v--5404525.html",
+      "snippet": "Aug 14, 2026 · Der Verein ist in mehreren Bereichen aktiv, darunter der Ambulante Hospizdienst, die Arbeitsgelegenheit (AGH), …"
+    },
+    {
+      "title": "Ökumenische Initiative Wipperfürth | September 2026 - 11880.com",
+      "url": "https://www.11880.com/branchenbuch/wipperfuerth/031526104B111667975/oekumenische-initiative-e-v.html",
+      "snippet": "Öffnungszeiten Hier finden Sie die Öffnungszeiten von Ökumenische Initiative e.V. in Wipperfürth."
+    }
+  ]
+}

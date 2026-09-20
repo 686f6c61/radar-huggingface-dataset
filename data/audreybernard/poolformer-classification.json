@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "audreybernard/poolformer-classification",
+  "slug": "audreybernard-poolformer-classification",
+  "author": "audreybernard",
+  "url": "https://huggingface.co/audreybernard/poolformer-classification",
+  "created_at": "2026-09-20T11:24:53.000Z",
+  "updated_at": "2026-09-20T11:24:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "poolformer",
+    "pytorch",
+    "classification",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "\"bcuz\"是什麼意思？ - 關於英語 (美國)（英文）的問題 | HiNative",
+      "url": "https://tw.hinative.com/questions/5579940",
+      "snippet": "bcuz的意思是Because，為Because的縮寫形式。"
+    },
+    {
+      "title": "\"bcuz\"是什么意思？ -关于英语 (美国)（英文） | HiNative",
+      "url": "https://zh.hinative.com/questions/5579940",
+      "snippet": "请教我使用 bcuz, ppl, thx, coz的例句。 snapshots in time 是什么意思？ brace yourself 是什么意思？ storm out 是什么意思？ What …"
+    },
+    {
+      "title": "\"becoz\"是什么意思？ -关于英语 (美国)（英文） | HiNative",
+      "url": "https://zh.hinative.com/questions/18629796",
+      "snippet": "becozIt's an abbreviation of the word \"because\" we use it in texting |In texting, we often abbreviate: becoz; bc; cuz|It is another way of …"
+    },
+    {
+      "title": "請提供關於 \"bcuz, ppl, thx, coz\" 的例句給我。 | HiNative",
+      "url": "https://tw.hinative.com/questions/10882885",
+      "snippet": "bcuz and coz can be used instead of because, \"ppl\" is the abbreviation for people, \"thx\" is the abbreviation for thanks some other …"
+    },
+    {
+      "title": "请教我使用 \"bcuz, ppl, thx, coz\"的例句。 | HiNative",
+      "url": "https://zh.hinative.com/questions/10882885",
+      "snippet": "bcuz and coz can be used instead of because, \"ppl\" is the abbreviation for people, \"thx\" is the abbreviation for thanks some other …"
+    }
+  ]
+}

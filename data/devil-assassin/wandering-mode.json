@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "Devil-Assassin/wandering-mode",
+  "slug": "devil-assassin-wandering-mode",
+  "author": "Devil-Assassin",
+  "url": "https://huggingface.co/Devil-Assassin/wandering-mode",
+  "created_at": "2026-01-26T21:14:20.000Z",
+  "updated_at": "2026-09-20T04:30:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "keras",
+  "languages": [],
+  "tags": [
+    "keras",
+    "tflite",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 63,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 388814758,
+  "storage_human": "389 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dateien zwischen Ihrem Computer und Ihrem Pixel übertragen",
+      "url": "https://support.google.com/pixelphone/answer/2840804?hl=de",
+      "snippet": "Sie können Fotos, Musik und andere Dateien von Ihrem Computer auf Ihr Android-Gerät übertragen – entweder über Ihr Google …"
+    },
+    {
+      "title": "Fotos oder Videos in Google Maps hinzufügen, entfernen oder teilen",
+      "url": "https://support.google.com/maps/answer/2622947?hl=de&co=GENIE.Platform=Android",
+      "snippet": "Sie können Google Maps aktiv mitgestalten und verbessern, indem Sie Ihre Lieblingsfotos und -videos teilen (Videos dürfen maximal …"
+    },
+    {
+      "title": "Билды и гайды для лиги Предательство - [3.5][Все классы]30 Билдов ...",
+      "url": "https://ru.pathofexile.com/forum/view-thread/46301",
+      "snippet": "Path of Exile - лучшая бесплатная игра в жанре Action RPG. Мрачный мир, глубокая и сложная система прокачки персонажа, …"
+    },
+    {
+      "title": "Path of Exile",
+      "url": "https://ru.pathofexile.com/item-filter/ladder/follower",
+      "snippet": "Path of Exile - лучшая бесплатная игра в жанре Action RPG. Мрачный мир, глубокая и сложная система прокачки персонажа, …"
+    },
+    {
+      "title": "Problem beim Öffnen von bild.de - Google Chrome-Community",
+      "url": "https://support.google.com/chrome/thread/9893032/problem-beim-%C3%96ffnen-von-bild-de?hl=de",
+      "snippet": "Jul 14, 2019 · Möchte bild.de öffnen, nach klicken auf google.de Suche aktualisiert sich die Seite ständig, Adresse wird immer länger:"
+    }
+  ]
+}

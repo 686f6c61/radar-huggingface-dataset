@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "flyingfishinwater/ime",
+  "slug": "flyingfishinwater-ime",
+  "author": "flyingfishinwater",
+  "url": "https://huggingface.co/flyingfishinwater/ime",
+  "created_at": "2026-07-01T09:45:11.000Z",
+  "updated_at": "2026-09-19T22:41:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 310509568,
+  "storage_human": "311 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Como criar uma checklist de onboarding: instruções, modelos e dicas",
+      "url": "https://www.canva.com/pt_br/documentos/onboarding-checklist/?msockid=2ff9e82a5ba4659a322efff35a516489",
+      "snippet": "Uma checklist de integração, ou onboarding, é um documento que lista e organiza todas as etapas e requisitos importantes …"
+    },
+    {
+      "title": "Checklist de Onboarding | Baixe Gratuitamente",
+      "url": "https://corporativo.qualifica.com.br/checklist-onboarding/",
+      "snippet": "Baixe agora o Checklist de Onboarding de Colaboradores e garanta um processo de integração organizado, eficiente e humanizado."
+    },
+    {
+      "title": "Checklist de onboarding para aplicar em 2026 - rhgestor.com.br",
+      "url": "https://www.rhgestor.com.br/blog/checklist-de-onboarding",
+      "snippet": "Checklist de onboarding para aplicar em 2026 Neste artigo, você verá um checklist completo de onboarding para aplicar, com foco …"
+    },
+    {
+      "title": "Onboarding: como fazer, o que é e etapas (checklist)",
+      "url": "https://mobiliza.com.br/blog/onboarding-como-fazer/",
+      "snippet": "Aprenda onboarding como fazer, entenda o que é, conheça as etapas do processo e use um checklist prático para integrar …"
+    },
+    {
+      "title": "Checklist onboarding colaboradores: do Dia 1 aos 90 dias de casa",
+      "url": "https://teamguide.app/blog/checklist-onboarding-de-colaboradores/",
+      "snippet": "O que é um checklist de onboarding de colaboradores? Um checklist de onboarding é um documento estruturado que lista todas as …"
+    }
+  ]
+}

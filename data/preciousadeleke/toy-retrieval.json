@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "preciousadeleke/toy-retrieval",
+  "slug": "preciousadeleke-toy-retrieval",
+  "author": "preciousadeleke",
+  "url": "https://huggingface.co/preciousadeleke/toy-retrieval",
+  "created_at": "2026-09-20T11:26:12.000Z",
+  "updated_at": "2026-09-20T11:26:17.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "hybrid",
+    "pytorch",
+    "retrieval",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "目前AI编程工具哪个最好用？ - 知乎",
+      "url": "https://www.zhihu.com/question/1973709336363701431",
+      "snippet": "Copilot Workspace （2025 Beta 发布）：实验性功能，对标 Claude Code 的任务分解能力，允许用户输入需求后由系统拆解为多个子 …"
+    },
+    {
+      "title": "VSCode PowerShell 中文編碼問題-黑暗執行緒",
+      "url": "https://blog.darkthread.net/blog/vscode-ps-encoding/",
+      "snippet": "Mar 6, 2020 · 自從體驗過用 VSCode 開發 PowerShell 的便利性，VSCode 便成為我的奧林匹克指定 PowerShell 開發工具。但有個小 …"
+    },
+    {
+      "title": "腾讯的 ima.copilot使用体验怎样，能否替代OneNote? - 知乎",
+      "url": "https://www.zhihu.com/question/9044650727",
+      "snippet": "知识本身没有价值，能让知识流通起来才是。 写到这也说一句。 这篇文章就是用我的写作流Skill跑出来的，从构思到排版到推草稿 …"
+    },
+    {
+      "title": "要求 Github Copilot / Claude / Gemini 參考 MS Learn 官方文件寫 Code",
+      "url": "https://blog.darkthread.net/blog/ms-learn-mcp/",
+      "snippet": "Jan 8, 2026 · 點下去右側會打開類似 Copilot 的對話介面，有用 Github Copilot 的同學應該都不陌生，靠本能就知道怎麼用： Ask …"
+    },
+    {
+      "title": "Vibe Coding 體驗 - 製作描字帖 (含 Github Copilot 節費心得)",
+      "url": "https://blog.darkthread.net/blog/vibe-coding-case/",
+      "snippet": "Feb 1, 2026 · 最後整理本次我學到的 Github Copilot CLI Vibe Coding 技巧： 記得使用 .github/copilot-instructions.md 規範程式寫法， …"
+    }
+  ]
+}

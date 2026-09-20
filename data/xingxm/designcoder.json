@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "xingxm/DesignCoder",
+  "slug": "xingxm-designcoder",
+  "author": "xingxm",
+  "url": "https://huggingface.co/xingxm/DesignCoder",
+  "created_at": "2026-09-14T04:48:53.000Z",
+  "updated_at": "2026-09-21T03:55:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "designcoder",
+    "ui-generation",
+    "front-end",
+    "html",
+    "css",
+    "javascript",
+    "code-generation",
+    "full-sft",
+    "text-generation",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 4,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 340208895469,
+  "storage_human": "340.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "B92.net - Najnovije vesti iz Srbije i sveta",
+      "url": "https://www.b92.net/",
+      "snippet": "Najnovije vesti, najaktuelnije i najbrže informacije. Politika, društvo, biznis, sport, zdravlje, putovanja, automobili, IT... Čitajte B92.net."
+    },
+    {
+      "title": "Najnovije sportske vesti - B92.sport - B92.net",
+      "url": "https://www.b92.net/sport",
+      "snippet": "Najnovije sportske vesti, najaktuelnije i najbrže informacije. Fudbal, košarka, tenis, Novak Đoković, Partizan, Crvena zvezda... Čitajte …"
+    },
+    {
+      "title": "B92 - Internet, Radio i TV stanica; najnovije vesti iz Srbije",
+      "url": "https://xs4.b92.net/specijal/",
+      "snippet": "Specijal B92 nudi vam pregled međunarodne pravne teorije iz oblasti ljudskih prava, a posebna pažnja poklonjena je pravima čoveka …"
+    },
+    {
+      "title": "Horoskop - Superžena - B92.net",
+      "url": "https://superzena.b92.net/horoskop/",
+      "snippet": "Najnovije vesti, najaktuelnije i najbrže informacije. Ženske teme, lepota, zdravlje, moda, dom i porodica, horoskop, životi poznatih..."
+    },
+    {
+      "title": "Ribe - Horoskop - Superžena - B92.net",
+      "url": "https://superzena.b92.net/horoskop/ribe",
+      "snippet": "Najnovije vesti, najaktuelnije i najbrže informacije. Ženske teme, lepota, zdravlje, moda, dom i porodica, horoskop, životi poznatih..."
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "huzican0419/robotwin_piper_x_sim_real_from40k_step10000",
+  "slug": "huzican0419-robotwin_piper_x_sim_real_from40k_step10000",
+  "author": "huzican0419",
+  "url": "https://huggingface.co/huzican0419/robotwin_piper_x_sim_real_from40k_step10000",
+  "created_at": "2026-09-20T11:39:39.000Z",
+  "updated_at": "2026-09-20T11:47:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "robotics",
+    "openpi",
+    "pi05",
+    "pytorch",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3616757520,
+  "parameters_human": "3.62B",
+  "storage_bytes": 7233650408,
+  "storage_human": "7.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.com/",
+      "snippet": "Find local businesses, view maps and get driving directions in Google Maps."
+    },
+    {
+      "title": "Directions to Active Pass Auto & Marine Ltd - MapQuest",
+      "url": "https://www.mapquest.com/directions/to/ca/british-columbia/active-pass-auto-marine-ltd-25656313",
+      "snippet": "Driving directions to Active Pass Auto & Marine Ltd, 424A Fernhill Rd, Mayne Island, BC including road conditions, live traffic …"
+    },
+    {
+      "title": "Official MapQuest - Maps, Driving Directions, Live Traffic",
+      "url": "https://www.mapquest.com/",
+      "snippet": "Official MapQuest website, find driving directions, maps, live traffic updates and road conditions. Find nearby businesses, restaurants …"
+    },
+    {
+      "title": "Recreation pass finder - Active Ottawa membership | City of Ottawa",
+      "url": "https://ottawa.ca/en/recreation-and-parks/drop-activities/active-ottawa-membership/recreation-pass-finder",
+      "snippet": "To help make your decision easier, the Recreation Pass Finder is here to guide you. This easy-to-use online tool lets you explore and …"
+    },
+    {
+      "title": "Getting your new pass - Active Ottawa membership | City of Ottawa",
+      "url": "https://ottawa.ca/en/recreation-and-parks/drop-activities/active-ottawa-membership/getting-your-new-pass",
+      "snippet": "Here’s a guide to the new type of membership you’ll switch to if you want to keep the same level of access. *Super gives you similar …"
+    }
+  ]
+}

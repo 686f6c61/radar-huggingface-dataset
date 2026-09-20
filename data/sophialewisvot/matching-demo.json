@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "sophialewisvot/matching-demo",
+  "slug": "sophialewisvot-matching-demo",
+  "author": "sophialewisvot",
+  "url": "https://huggingface.co/sophialewisvot/matching-demo",
+  "created_at": "2026-09-20T11:39:46.000Z",
+  "updated_at": "2026-09-20T11:39:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "beit",
+    "pytorch",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OTTO - Anmelden",
+      "url": "https://www.otto.de/customer-identity/login",
+      "snippet": "・ Preisangaben inkl. Steuer und zzgl."
+    },
+    {
+      "title": "Mein Konto - immer alles im Überblick - OTTO",
+      "url": "https://www.otto.de/shoppages/login-promo-vorteile",
+      "snippet": "Alles im Überblick - jederzeit und auf all deinen Geräten. In deinem persönlichen Kundenkonto stehen dir alle wichtigen Funktionen …"
+    },
+    {
+      "title": "Damenmode online kaufen » Fashion-Shop für Damen | OTTO",
+      "url": "https://www.otto.de/damen/",
+      "snippet": "Bis zu 20% reduziert Damenmode online kaufen bei OTTO » Große Auswahl Aktuelle Trends Beliebte Marken Top Qualität » Jetzt …"
+    },
+    {
+      "title": "Möbel Online-Shop » Einrichtung online kaufen | OTTO",
+      "url": "https://www.otto.de/moebel/?ansicht=einstieg",
+      "snippet": "Bis zu 20% reduziert Große Auswahl an Möbeln bei OTTO » Wohnen Schlafen Küche & Essen Kinder Arbeiten Jetzt deine Möbel …"
+    },
+    {
+      "title": "OTTO - Neu registrieren",
+      "url": "https://www.otto.de/customer-registration/duplicateAccount",
+      "snippet": "Bitte melde dich mit der bestehenden E-Mail-Adresse an, um den Kauf abzuschließen."
+    }
+  ]
+}

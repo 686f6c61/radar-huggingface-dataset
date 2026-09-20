@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "tunahanf/gemma-4-12b-it-medlaw-tr-LORA-2",
+  "slug": "tunahanf-gemma-4-12b-it-medlaw-tr-lora-2",
+  "author": "tunahanf",
+  "url": "https://huggingface.co/tunahanf/gemma-4-12b-it-medlaw-tr-LORA-2",
+  "created_at": "2026-09-06T21:41:45.000Z",
+  "updated_at": "2026-09-19T15:41:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "legal",
+    "turkish",
+    "medical-law",
+    "lora",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "tr",
+    "dataset:tunahanf/turkish-medicine-law",
+    "base_model:google/gemma-4-12B-it",
+    "base_model:adapter:google/gemma-4-12B-it",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 556818186,
+  "storage_human": "557 MB",
+  "base_model": "google/gemma-4-12B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Roblox",
+      "url": "https://www.roblox.com/",
+      "snippet": "Roblox is the ultimate virtual universe that lets you create, share experiences with friends, and be anything you can imagine. Join …"
+    },
+    {
+      "title": "Roblox",
+      "url": "https://www.roblox.com/?pgvflag=1",
+      "snippet": "Roblox is the ultimate virtual universe that lets you create, share experiences with friends, and be anything you can imagine. Join …"
+    },
+    {
+      "title": "Roblox - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.roblox.client&hl=en-US",
+      "snippet": "Roblox is home to every kind of game, for every kind of player. Compete in high-octane racing games, battle it out in hardcore tactical …"
+    },
+    {
+      "title": "About Roblox | Roblox",
+      "url": "https://about.roblox.com/",
+      "snippet": "Roblox is a global platform where millions of people gather together every day to imagine, create, and share experiences with each …"
+    },
+    {
+      "title": "Download Roblox",
+      "url": "https://www.roblox.com/download",
+      "snippet": "Download the Roblox app to use Roblox on your smartphone, tablet, computer, console, VR headset, and more."
+    }
+  ]
+}

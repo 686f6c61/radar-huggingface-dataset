@@ -1,0 +1,45 @@
+{
+  "schema": 1,
+  "id": "rajeshidimannan/ft_image",
+  "slug": "rajeshidimannan-ft_image",
+  "author": "rajeshidimannan",
+  "url": "https://huggingface.co/rajeshidimannan/ft_image",
+  "created_at": "2026-09-20T11:28:39.000Z",
+  "updated_at": "2026-09-21T10:52:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "arxiv:1910.09700",
+    "base_model:HuggingFaceTB/SmolVLM2-500M-Video-Instruct",
+    "base_model:adapter:HuggingFaceTB/SmolVLM2-500M-Video-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 382281883,
+  "storage_human": "382 MB",
+  "base_model": "HuggingFaceTB/SmolVLM2-500M-Video-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "eBay Kleinanzeigen",
+      "url": "https://www.ebay-kleinanzeigen.de/s-autoteile-reifen/51766/c223l1514r10",
+      "snippet": "Hier sollte eine Beschreibung angezeigt werden, diese Seite lässt dies jedoch nicht zu."
+    }
+  ]
+}

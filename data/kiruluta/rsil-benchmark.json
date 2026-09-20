@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "kiruluta/rsil-benchmark",
+  "slug": "kiruluta-rsil-benchmark",
+  "author": "kiruluta",
+  "url": "https://huggingface.co/kiruluta/rsil-benchmark",
+  "created_at": "2026-09-20T11:46:25.000Z",
+  "updated_at": "2026-09-20T11:54:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "spectral",
+    "kolmogorov-arnold-networks",
+    "neural-operators",
+    "distributed-training",
+    "masked-language-modeling",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 426986526,
+  "storage_human": "427 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.com.bh/index.html",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "استكشاف - مؤشرات Google",
+      "url": "https://trends.google.com.bh/trends/explore",
+      "snippet": "يمكنك استكشاف مدى الاهتمام بالبحث بحسب الوقت والموقع والشعبية ضمن مؤشرات Google"
+    },
+    {
+      "title": "Версии сервиса – Google Планета Земля",
+      "url": "https://www.google.com.bh/intl/ru/earth/versions/",
+      "snippet": "Скачать Google Планета Земля в Google Play Создавайте карты, пользуясь удобными инструментами Google Планета Земля …"
+    },
+    {
+      "title": "كتب Google",
+      "url": "https://books.google.com.bh/books?id=1R14EQAAQBAJ&printsec=frontcover&hl=ar",
+      "snippet": "يتم عرض الصفحات بإذن من ... الغلاف الأمامي"
+    },
+    {
+      "title": "302 Moved",
+      "url": "https://books.google.com.bh/books?id=fVtOAQAAMAAJ&printsec=copyright&hl=ar",
+      "snippet": "302 Moved The document has moved here."
+    }
+  ]
+}

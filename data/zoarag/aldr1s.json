@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "zoarag/Aldr1s",
+  "slug": "zoarag-aldr1s",
+  "author": "zoarag",
+  "url": "https://huggingface.co/zoarag/Aldr1s",
+  "created_at": "2026-06-20T19:02:35.000Z",
+  "updated_at": "2026-09-19T18:01:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6625536428,
+  "storage_human": "6.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube TV Help",
+      "url": "https://support.google.com/youtubetv/?hl=en",
+      "snippet": "Official YouTube TV Help Center where you can find tips and tutorials on using YouTube TV and other answers to frequently asked …"
+    },
+    {
+      "title": "YouTube ความช่วยเหลือ",
+      "url": "https://support.google.com/youtube/?hl=th",
+      "snippet": "ศูนย์ช่วยเหลืออย่างเป็นทางการของ YouTube ที่คุณสามารถพบเคล็ดลับและบทแนะนำเกี่ยวกับการใช้งานผลิตภัณฑ์ รวมทั้งคำตอบสำหรับ ..."
+    },
+    {
+      "title": "谷歌账号注册验证无法发出信息怎么办? - 知乎",
+      "url": "https://www.zhihu.com/question/1945629068243481180",
+      "snippet": "3、国内注册的账号能否使用 YouTube 和 Google Play？ 完全可以。 Google 账号是全球通用的，注册成功后即可无缝登录谷歌全家桶 …"
+    },
+    {
+      "title": "如何在中国大陆用「合法」的方式观看到youtube上面的「有价值」的 …",
+      "url": "https://www.zhihu.com/question/1903231775980913051",
+      "snippet": "YouTube 将自动为 添加翻译后的中文字幕，这一功能有效解决了语言障碍问题。 当你向下浏览时，部分 会标注相关信息。 例如，博 …"
+    },
+    {
+      "title": "Gerenciar configurações do canal - Ajuda do YouTube",
+      "url": "https://support.google.com/youtube/answer/2976814?hl=pt-BR",
+      "snippet": "Gerenciar configurações do canal Você pode gerenciar as configurações do seu canal no YouTube Studio. É possível mudar desde …"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Padmajs/sd-class-butterflies-32",
+  "slug": "padmajs-sd-class-butterflies-32",
+  "author": "Padmajs",
+  "url": "https://huggingface.co/Padmajs/sd-class-butterflies-32",
+  "created_at": "2026-09-20T11:39:11.000Z",
+  "updated_at": "2026-09-20T11:40:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "unconditional-image-generation",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "pytorch",
+    "unconditional-image-generation",
+    "diffusion-models-class",
+    "license:mit",
+    "diffusers:DDPMPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 18536323,
+  "parameters_human": "18.5M",
+  "storage_bytes": 74185252,
+  "storage_human": "74 MB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Atlas Tickets",
+      "url": "https://www.atlastickets.com/Search",
+      "snippet": "Aug 28, 2026 · We have the most extensive San Diego Padres ticket inventory and all other major events around the United States. …"
+    },
+    {
+      "title": "Atlas Tickets is your NO FEE Source for Event Tickets",
+      "url": "https://www.atlastickets.com/",
+      "snippet": "We are an independently owned and operated, licensed ticket broker that specializes in obtaining premium and sold out tickets to …"
+    },
+    {
+      "title": "Greece - Atlas Ticket",
+      "url": "https://www.atlasticket.com/greece/",
+      "snippet": "Looking for affordable flight tickets to Greece? We can help you get amazing discounts and deals. Make your dream Greek holiday …"
+    },
+    {
+      "title": "World's Biggest Beach Club & Super Club in Bali | Atlas Beach Fest",
+      "url": "https://atlasbeachfest.com/",
+      "snippet": "Feb 25, 2026 · One Destination For Everyone at Atlas Beach Club Canggu Bali - For Best Activities Beach Spot, 16+ Adults Fun Day …"
+    },
+    {
+      "title": "Last Minute Flights Booking | Last Minute Cheap Fares – Atlas Ticket",
+      "url": "https://www.atlasticket.com/last-minute-travel/",
+      "snippet": "Need to book a flight last minute? Find cheap fares for last minute flights booking with Atlas Ticket! Learn more."
+    }
+  ]
+}

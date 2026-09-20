@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mradermacher/DeepSeek-V4-Flash-0731-Abliterated-FP8-i1-GGUF",
+  "slug": "mradermacher-deepseek-v4-flash-0731-abliterated-fp8-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/DeepSeek-V4-Flash-0731-Abliterated-FP8-i1-GGUF",
+  "created_at": "2026-08-02T05:21:44.000Z",
+  "updated_at": "2026-09-19T12:47:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "deepseek-v4",
+    "mixture-of-experts",
+    "abliterated",
+    "fp8",
+    "model-surgery",
+    "mechanistic-interpretability",
+    "en",
+    "base_model:apetersson/DeepSeek-V4-Flash-0731-Abliterated-FP8",
+    "base_model:quantized:apetersson/DeepSeek-V4-Flash-0731-Abliterated-FP8",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 5,
+  "downloads_30d": 143,
+  "trending_score": 0,
+  "parameters": 117554047,
+  "parameters_human": "117.6M",
+  "storage_bytes": 2207961069568,
+  "storage_human": "2208.0 GB",
+  "base_model": "apetersson/DeepSeek-V4-Flash-0731-Abliterated-FP8",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "eNivida",
+      "url": "https://nbcc.enivida.com/",
+      "snippet": "In the area of Procurement for all Government/Private organizations, a unique value proposition is offered here as eNivida, a …"
+    },
+    {
+      "title": "eNivida",
+      "url": "https://olauction.enivida.com/HomePage/loadSiteHomePage/Z9Ru-CJzLcoXj_HmUGmJUA",
+      "snippet": "Important notice to the bidders : Online training on e-auction will be conducted every Monday and Thursday from 11 AM to 1 PM. …"
+    },
+    {
+      "title": "TENDERS | NBCC (India) Ltd.",
+      "url": "https://nbccindia.in/webEnglish/Tenders",
+      "snippet": "1 day ago · Hiring of an Independent Agency for providing Assurance to NBCC (India) Limited on Business Responsibility and …"
+    },
+    {
+      "title": "eNivida",
+      "url": "https://enivida.com/",
+      "snippet": "In the area of Procurement for all Government/Private organizations, a unique value proposition is offered here as eNivida, a …"
+    },
+    {
+      "title": "ePublishing System, Government of India",
+      "url": "https://www.eprocure.gov.in/epublish/app?component=%24DirectLink&page=FrontEndTendersByOrganisation&service=direct&sp=SzfgzsWhxP%2Ba8K6Q3%2BWNwMtS0Fec7wUuNy1YFXyqSerE%3D",
+      "snippet": "13 hours ago · [Providing Architectural and Engineering Consultancy Services for Construction of a. Office Complex of Reserve Bank …"
+    }
+  ]
+}

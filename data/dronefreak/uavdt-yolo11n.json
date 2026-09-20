@@ -1,0 +1,106 @@
+{
+  "schema": 1,
+  "id": "dronefreak/uavdt-yolo11n",
+  "slug": "dronefreak-uavdt-yolo11n",
+  "author": "dronefreak",
+  "url": "https://huggingface.co/dronefreak/uavdt-yolo11n",
+  "created_at": "2026-09-20T11:21:51.000Z",
+  "updated_at": "2026-09-21T13:57:56.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "object-detection",
+    "detectionbench",
+    "pytorch",
+    "computer-vision",
+    "aerial-imagery",
+    "drone",
+    "uav",
+    "vehicle-detection",
+    "traffic-surveillance",
+    "small-object-detection",
+    "dataset:dronefreak/UAVDT",
+    "arxiv:1804.00518",
+    "arxiv:2410.17725",
+    "arxiv:2511.09554",
+    "arxiv:2304.07193",
+    "arxiv:2405.14458",
+    "arxiv:2606.03748",
+    "arxiv:2402.13616",
+    "base_model:Ultralytics/YOLO11",
+    "base_model:finetune:Ultralytics/YOLO11",
+    "license:agpl-3.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19144385,
+  "storage_human": "19 MB",
+  "base_model": "Ultralytics/YOLO11",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Object Detection",
+      "dataset": "UAVDT",
+      "metric": "mAP@50 (test split)",
+      "value": 28.56
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "UAVDT",
+      "metric": "mAP@50-95 (test split)",
+      "value": 16.3
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "UAVDT",
+      "metric": "Precision (test split)",
+      "value": 38.04
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "UAVDT",
+      "metric": "Recall (test split)",
+      "value": 32.26
+    }
+  ],
+  "sources": [
+    {
+      "title": "Login Online-Banking - Sparkasse Offenburg",
+      "url": "https://www.sparkasse-offenburg.de/de/home/login-online-banking.html",
+      "snippet": "Melden Sie sich jetzt sicher im Online-Banking an und greifen Sie auf Ihre Konten, Finanzdaten und einer Vielzahl weiterer …"
+    },
+    {
+      "title": "Online- und Mobile-Banking | Sparkasse Offenburg/Ortenau",
+      "url": "https://www.sparkasse-offenburg.de/de/home/service/online-mobile-banking.html",
+      "snippet": "Sie haben ein Konto bei Ihrer Sparkasse aber noch keinen Online-Banking-Zugang – dann sind Sie hier richtig. Wenn Sie Ihr …"
+    },
+    {
+      "title": "Login Online-Banking - sparkasse-offenburg.de",
+      "url": "https://www.sparkasse-offenburg.de/sv/home/login-online-banking.html",
+      "snippet": "Easy and secure access to online banking. Log in now and manage your finances from the comfort of your own home."
+    },
+    {
+      "title": "Online-Banking - Sparkasse Offenburg",
+      "url": "https://www.sparkasse-offenburg.de/fi/home/onlinebanking.html",
+      "snippet": "Gerne bin ich Ihnen bei der Suche behilflich. Hallo, benötigen Sie eventuell Hilfe beim Login ins Online-Banking? Gerne helfe ich …"
+    },
+    {
+      "title": "Online banking - Login - Sparkasse Offenburg",
+      "url": "https://www.sparkasse-offenburg.de/en/home/login-online-banking.html",
+      "snippet": "Using the online banking portal is not possible without enabling JavaScript and accepting temporary cookies."
+    }
+  ]
+}

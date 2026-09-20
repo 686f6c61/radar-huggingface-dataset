@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "maaqui-no1999/flamingo-generation",
+  "slug": "maaqui-no1999-flamingo-generation",
+  "author": "maaqui-no1999",
+  "url": "https://huggingface.co/maaqui-no1999/flamingo-generation",
+  "created_at": "2026-09-20T11:57:48.000Z",
+  "updated_at": "2026-09-20T11:57:54.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "flamingo",
+    "pytorch",
+    "generation",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HTML encoding issues - \"Â\" character showing up instead of",
+      "url": "https://stackoverflow.com/questions/1461907/html-encoding-issues-%c3%82-character-showing-up-instead-of-nbsp",
+      "snippet": "Somewhere in that mess, the non-breaking spaces from the HTML template (the s) are encoding as ISO-8859-1 so that they show up …"
+    },
+    {
+      "title": "\"â€™\" showing on page instead of - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/2477452/%C3%A2%E2%82%AC-showing-on-page-instead-of",
+      "snippet": "Mar 19, 2010 · So what's the problem, It's a ’ (RIGHT SINGLE QUOTATION MARK – U+2019) character which is being encoded as …"
+    },
+    {
+      "title": "土木工事で、A＝は、面積は、V＝は、m3個は、N＝を、使うと思い …",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11107285526",
+      "snippet": "May 15, 2013 · 土木工事で、A＝は、面積は、V＝は、m3個は、N＝を、使うと思いますが、組は、何でしょう？あと、まだあった …"
+    },
+    {
+      "title": "Écrire Â, Ê, Î, Ô, Û, Ä, Ë, Ï, Ö, Ü, À, Æ, æ, Ç, É, È, Œ, œ, Ù",
+      "url": "https://www.languefrancaise.net/forum/showthread.php?tid=7893",
+      "snippet": "Bonsoir, Suite à une remarque émise sur quelque fil de ce forum, je me permets d'indiquer ici comment on écrit les lettres rares avec …"
+    },
+    {
+      "title": "図面のことで聞きたいのですがたまにA＝〇〇㎡って書いてあるんで …",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11313842736",
+      "snippet": "Apr 17, 2025 · 図面における「A＝〇〇㎡」という表記は、特定のエリアや部屋の面積を示しています。Aはそのエリアの識別子で、 …"
+    }
+  ]
+}

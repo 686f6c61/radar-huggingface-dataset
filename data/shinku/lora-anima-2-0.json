@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Shinku/lora-anima-2.0",
+  "slug": "shinku-lora-anima-2-0",
+  "author": "Shinku",
+  "url": "https://huggingface.co/Shinku/lora-anima-2.0",
+  "created_at": "2026-08-23T06:01:48.000Z",
+  "updated_at": "2026-09-19T19:53:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 192664502254,
+  "storage_human": "192.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Koszulki Álvaro Morata - Napastnik Hiszpanii",
+      "url": "https://topowekoszulkipilkarskie.com.pl/collections/alvaro-morata",
+      "snippet": "Koszulki Álvaro Morata Kapitan i napastnik reprezentacji Hiszpanii. Nasze koszulki Moraty to oficjalne wzory przygotowane na …"
+    },
+    {
+      "title": "Koszulka Alvaro Morata - Niska cena na Allegro",
+      "url": "https://allegro.pl/listing?string=koszulka%20alvaro%20morata",
+      "snippet": "Koszulka Alvaro Morata Zróżnicowany zbiór ofert, najlepsze ceny i promocje. Wejdź i znajdź to, czego szukasz!"
+    },
+    {
+      "title": "The Official Como 1907 Store",
+      "url": "https://shop.comofootball.com/en/",
+      "snippet": "A tribute to the home of Como 1907 Shop Now Como 1907 Stadium Jacket Blue €149,00 Como 1907 Stadium Denim Jacket €139,00 …"
+    },
+    {
+      "title": "Koszulka Morata - Koszulki piłkarskie - Największy wybór koszulek ...",
+      "url": "https://allegro.pl/kategoria/odziez-koszulki-13397?string=koszulka%20morata",
+      "snippet": "Kup Koszulka Morata w Koszulki piłkarskie ☝ taniej na Allegro.pl - Najwięcej ofert w jednym miejscu. Radość zakupów ⭐ 100% …"
+    },
+    {
+      "title": "Álvaro Morata | Como 1907 - SSC Napoli | MatchWornShirt",
+      "url": "https://mws.com/product/alvaro-morata-cTlCQrz1gkaclqKkLywVmg-57",
+      "snippet": "May 3, 2026 · This official Como 1907 football shirt was issued to Álvaro Morata for the Serie A Enilive fixture against SSC Napoli. …"
+    }
+  ]
+}

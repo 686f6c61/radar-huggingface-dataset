@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "HY-2012/Hojo-TTS-Light-NPU2",
+  "slug": "hy-2012-hojo-tts-light-npu2",
+  "author": "HY-2012",
+  "url": "https://huggingface.co/HY-2012/Hojo-TTS-Light-NPU2",
+  "created_at": "2026-09-20T09:41:46.000Z",
+  "updated_at": "2026-09-21T02:36:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "axera",
+    "ax650",
+    "npu2",
+    "npu",
+    "tts",
+    "text-to-speech",
+    "zh",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 190774042,
+  "storage_human": "191 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HY Official - YouTube",
+      "url": "https://www.youtube.com/channel/UCjk0vxDFjZCdiZ6keN1KtgQ",
+      "snippet": "HY - 「Swing Swing Heart」 (日10ドラマ「50分間の恋人」挿入歌) Music Video HY Official 715K 7mo ago 6:47"
+    },
+    {
+      "title": "Citroën Type H — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Citro%C3%ABn_Type_H",
+      "snippet": "Un food truck Citroën HY aux abords de la plage du Prieuré à Dinard en mars 2024. Le Citroën Type H était un véhicule utilitaire …"
+    },
+    {
+      "title": "Citroen Hy de collection à vendre - Annonces lesAnciennes",
+      "url": "https://www.lesanciennes.com/annonces/utilitaire-collection/citroen-hy/",
+      "snippet": "Choisissez votre Citroen Hy parmi nos 56 000 annonces dédiées aux véhicules de collection - sur lesAnciennes, référence des …"
+    },
+    {
+      "title": "HY (band) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/HY_(band)",
+      "snippet": "HY entered the international music scene, starting with their first-ever overseas tour, beginning in Toronto, Ontario, Canada, and …"
+    },
+    {
+      "title": "Pièces détachées pour votre Citroen HY | cipere.fr",
+      "url": "https://www.cipere.fr/fr/Citroen-DS-11CV-HY/HY/",
+      "snippet": "Et que ce soit pour les freins qui ont fini de rendre de bons services, ou pour l'échappement qui n'a plus la sonorité qui convient, nous …"
+    }
+  ]
+}

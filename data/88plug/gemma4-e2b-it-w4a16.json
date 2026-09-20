@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "id": "88plug/Gemma4-E2B-it-W4A16",
+  "slug": "88plug-gemma4-e2b-it-w4a16",
+  "author": "88plug",
+  "url": "https://huggingface.co/88plug/Gemma4-E2B-it-W4A16",
+  "created_at": "2026-05-24T05:32:09.000Z",
+  "updated_at": "2026-09-20T21:00:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "gemma",
+    "google",
+    "moe",
+    "mixture-of-experts",
+    "multimodal",
+    "vision",
+    "quantized",
+    "int4",
+    "INT4",
+    "w4a16",
+    "compressed-tensors",
+    "vllm",
+    "text-generation",
+    "conversational",
+    "4-bit",
+    "ptq",
+    "AutoRound (blocked — see KNOWN-FAILURES)",
+    "llmcompressor",
+    "sglang",
+    "88plug",
+    "post-training-quantization",
+    "image",
+    "vlm",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 123,
+  "trending_score": 0,
+  "parameters": 5104297539,
+  "parameters_human": "5.10B",
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "google/gemma-4-e2b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://www.youtube.com/youtube%20-MUSIC",
+      "snippet": "Subscribe to the YouTube Music channel to stay up on the latest news and updates from YouTube Music. ...more"
+    },
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/YouTube/music",
+      "snippet": "Welcome to the official YouTube channel – a home for the biggest moments, the smallest obsessions, and everything in between. …"
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/explore",
+      "snippet": "Explore trending music and find your next favorite song. Discover the latest releases from new artists, plus enjoy new music videos …"
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://www.youtube.com/channel/UCB1lnXfEjwtfLYwZSadksrA",
+      "snippet": "(C) YouTube Music Visit the YouTube Music Channel to find today’s top talent, featured artists, and playlists. Subscribe to see the …"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "cmeister/boundary-markers-ru-d12-plain-bpe",
+  "slug": "cmeister-boundary-markers-ru-d12-plain-bpe",
+  "author": "cmeister",
+  "url": "https://huggingface.co/cmeister/boundary-markers-ru-d12-plain-bpe",
+  "created_at": "2026-09-20T11:53:02.000Z",
+  "updated_at": "2026-09-20T11:53:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "tokenization",
+    "boundary-markers",
+    "nanochat",
+    "ru",
+    "arxiv:2608.08847",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2459107657,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Disable Browser Caching with Meta HTML Tags - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/javascript/disable-browser-caching-with-meta-html-tags/",
+      "snippet": "Jul 23, 2025 · Fortunately, developers can leverage meta HTML tags to control caching behaviour, ensuring users receive the latest …"
+    },
+    {
+      "title": "HTML meta tag - W3Schools",
+      "url": "https://www.w3schools.com/tags/tag_meta.asp",
+      "snippet": "The <meta> tag defines metadata about an HTML document. Metadata is data (information) about data. <meta> tags always go …"
+    },
+    {
+      "title": "HTML Standard, Edition for Web Developers - WHATWG",
+      "url": "https://html.spec.whatwg.org/dev/semantics.html",
+      "snippet": "6 days ago · For meta elements with an http-equiv attribute in the Encoding declaration state, the content attribute must have a value …"
+    },
+    {
+      "title": "HTML meta http-equiv Attribute - W3Schools",
+      "url": "https://www.w3schools.com/tags/att_meta_http_equiv.asp",
+      "snippet": "Defines a time interval for the document to refresh itself. Note: The value \"refresh\" should be used carefully, as it takes the control of …"
+    },
+    {
+      "title": "<meta> HTML metadata element - HTML | MDN - MDN Web Docs",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/meta",
+      "snippet": "Apr 24, 2026 · The <meta> HTML element specifies metadata for a webpage, including descriptions and instructions for browsers, …"
+    }
+  ]
+}

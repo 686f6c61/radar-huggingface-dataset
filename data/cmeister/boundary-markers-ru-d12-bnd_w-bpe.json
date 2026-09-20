@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "cmeister/boundary-markers-ru-d12-bnd_w-bpe",
+  "slug": "cmeister-boundary-markers-ru-d12-bnd_w-bpe",
+  "author": "cmeister",
+  "url": "https://huggingface.co/cmeister/boundary-markers-ru-d12-bnd_w-bpe",
+  "created_at": "2026-09-20T11:53:47.000Z",
+  "updated_at": "2026-09-20T11:54:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "tokenization",
+    "boundary-markers",
+    "nanochat",
+    "ru",
+    "arxiv:2608.08847",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2459041128,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Create and edit documents for free | Microsoft Word for the Web",
+      "url": "https://word.cloud.microsoft/en-us/",
+      "snippet": "Create, edit, and share documents from any location with Word online. Work confidently from any device with features like real-time …"
+    },
+    {
+      "title": "Twórz i edytuj dokumenty za darmo | Microsoft Word dla sieci web",
+      "url": "https://word.cloud.microsoft/pl-pl/",
+      "snippet": "Twórz, edytuj i udostępniaj dokumenty z dowolnej lokalizacji za pomocą aplikacji Word Online. Pracuj pewnie na dowolnym …"
+    },
+    {
+      "title": "Free Online Document Editing with Microsoft Word | Microsoft 365",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/word?msockid=0dbba0e3091b6e3c2135b739089d6f70",
+      "snippet": "Use Microsoft Word for online document editing with AI-powered suggestions from Copilot for grammar, style, and clarity. Write, edit, …"
+    },
+    {
+      "title": "Bezpłatna edycja dokumentów online przy użyciu programu Microsoft Word …",
+      "url": "https://www.microsoft.com/pl-pl/microsoft-365/word?msockid=0dbba0e3091b6e3c2135b739089d6f70",
+      "snippet": "Używaj programu Microsoft Word do edytowania dokumentów online z sugestiami obsługiwanymi przez sztuczną inteligencję od …"
+    },
+    {
+      "title": "Microsoft Word - Download",
+      "url": "https://microsoft-word.en.softonic.com/",
+      "snippet": "4 days ago · Microsoft Word continues to prove why it remains the default choice for document creation across schools, businesses, …"
+    }
+  ]
+}

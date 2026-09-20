@@ -1,0 +1,320 @@
+{
+  "schema": 1,
+  "id": "Quazim0t0/Byrne-Embed",
+  "slug": "quazim0t0-byrne-embed",
+  "author": "Quazim0t0",
+  "url": "https://huggingface.co/Quazim0t0/Byrne-Embed",
+  "created_at": "2026-06-20T20:15:14.000Z",
+  "updated_at": "2026-09-20T07:42:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "byrne_embed",
+    "feature-extraction",
+    "sentence-embeddings",
+    "sentence-similarity",
+    "spikewhale",
+    "custom_code",
+    "en",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 40,
+  "trending_score": 0,
+  "parameters": 98027395,
+  "parameters_human": "98.0M",
+  "storage_bytes": 787268796,
+  "storage_human": "787 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "MTEB AmazonCounterfactualClassification",
+      "dataset": "MTEB AmazonCounterfactualClassification",
+      "metric": null,
+      "value": 80.12
+    },
+    {
+      "task": "MTEB ArXivHierarchicalClusteringP2P",
+      "dataset": "MTEB ArXivHierarchicalClusteringP2P",
+      "metric": null,
+      "value": 53.15
+    },
+    {
+      "task": "MTEB ArXivHierarchicalClusteringS2S",
+      "dataset": "MTEB ArXivHierarchicalClusteringS2S",
+      "metric": null,
+      "value": 50.39
+    },
+    {
+      "task": "MTEB ArguAna",
+      "dataset": "MTEB ArguAna",
+      "metric": null,
+      "value": 37.67
+    },
+    {
+      "task": "MTEB AskUbuntuDupQuestions",
+      "dataset": "MTEB AskUbuntuDupQuestions",
+      "metric": null,
+      "value": 52.88
+    },
+    {
+      "task": "MTEB BIOSSES",
+      "dataset": "MTEB BIOSSES",
+      "metric": null,
+      "value": 75.56
+    },
+    {
+      "task": "MTEB Banking77Classification",
+      "dataset": "MTEB Banking77Classification",
+      "metric": null,
+      "value": 74.64
+    },
+    {
+      "task": "MTEB BiorxivClusteringP2P.v2",
+      "dataset": "MTEB BiorxivClusteringP2P.v2",
+      "metric": null,
+      "value": 33.73
+    },
+    {
+      "task": "MTEB CQADupstackGamingRetrieval",
+      "dataset": "MTEB CQADupstackGamingRetrieval",
+      "metric": null,
+      "value": 37.14
+    },
+    {
+      "task": "MTEB CQADupstackUnixRetrieval",
+      "dataset": "MTEB CQADupstackUnixRetrieval",
+      "metric": null,
+      "value": 23.48
+    },
+    {
+      "task": "MTEB ClimateFEVERHardNegatives",
+      "dataset": "MTEB ClimateFEVERHardNegatives",
+      "metric": null,
+      "value": 13.6
+    },
+    {
+      "task": "MTEB FEVERHardNegatives",
+      "dataset": "MTEB FEVERHardNegatives",
+      "metric": null,
+      "value": 28.7
+    },
+    {
+      "task": "MTEB FiQA2018",
+      "dataset": "MTEB FiQA2018",
+      "metric": null,
+      "value": 11.38
+    },
+    {
+      "task": "MTEB HotpotQAHardNegatives",
+      "dataset": "MTEB HotpotQAHardNegatives",
+      "metric": null,
+      "value": 30.47
+    },
+    {
+      "task": "MTEB ImdbClassification",
+      "dataset": "MTEB ImdbClassification",
+      "metric": null,
+      "value": 60.97
+    },
+    {
+      "task": "MTEB MTOPDomainClassification",
+      "dataset": "MTEB MTOPDomainClassification",
+      "metric": null,
+      "value": 92.29
+    },
+    {
+      "task": "MTEB MassiveIntentClassification",
+      "dataset": "MTEB MassiveIntentClassification",
+      "metric": null,
+      "value": 63.23
+    },
+    {
+      "task": "MTEB MassiveScenarioClassification",
+      "dataset": "MTEB MassiveScenarioClassification",
+      "metric": null,
+      "value": 73.05
+    },
+    {
+      "task": "MTEB MedrxivClusteringP2P.v2",
+      "dataset": "MTEB MedrxivClusteringP2P.v2",
+      "metric": null,
+      "value": 32.7
+    },
+    {
+      "task": "MTEB MedrxivClusteringS2S.v2",
+      "dataset": "MTEB MedrxivClusteringS2S.v2",
+      "metric": null,
+      "value": 29.04
+    },
+    {
+      "task": "MTEB MindSmallReranking",
+      "dataset": "MTEB MindSmallReranking",
+      "metric": null,
+      "value": 28.07
+    },
+    {
+      "task": "MTEB SCIDOCS",
+      "dataset": "MTEB SCIDOCS",
+      "metric": null,
+      "value": 10.15
+    },
+    {
+      "task": "MTEB SICK-R",
+      "dataset": "MTEB SICK-R",
+      "metric": null,
+      "value": 69.08
+    },
+    {
+      "task": "MTEB STS12",
+      "dataset": "MTEB STS12",
+      "metric": null,
+      "value": 64.88
+    },
+    {
+      "task": "MTEB STS13",
+      "dataset": "MTEB STS13",
+      "metric": null,
+      "value": 72.08
+    },
+    {
+      "task": "MTEB STS14",
+      "dataset": "MTEB STS14",
+      "metric": null,
+      "value": 67.76
+    },
+    {
+      "task": "MTEB STS15",
+      "dataset": "MTEB STS15",
+      "metric": null,
+      "value": 77.13
+    },
+    {
+      "task": "MTEB STS17",
+      "dataset": "MTEB STS17",
+      "metric": null,
+      "value": 83.23
+    },
+    {
+      "task": "MTEB STS22.v2",
+      "dataset": "MTEB STS22.v2",
+      "metric": null,
+      "value": 60.53
+    },
+    {
+      "task": "MTEB STSBenchmark",
+      "dataset": "MTEB STSBenchmark",
+      "metric": null,
+      "value": 77.08
+    },
+    {
+      "task": "MTEB SprintDuplicateQuestions",
+      "dataset": "MTEB SprintDuplicateQuestions",
+      "metric": null,
+      "value": 86.47
+    },
+    {
+      "task": "MTEB StackExchangeClustering.v2",
+      "dataset": "MTEB StackExchangeClustering.v2",
+      "metric": null,
+      "value": 41.93
+    },
+    {
+      "task": "MTEB StackExchangeClusteringP2P.v2",
+      "dataset": "MTEB StackExchangeClusteringP2P.v2",
+      "metric": null,
+      "value": 35.22
+    },
+    {
+      "task": "MTEB SummEvalSummarization.v2",
+      "dataset": "MTEB SummEvalSummarization.v2",
+      "metric": null,
+      "value": 22.39
+    },
+    {
+      "task": "MTEB TRECCOVID",
+      "dataset": "MTEB TRECCOVID",
+      "metric": null,
+      "value": 29.3
+    },
+    {
+      "task": "MTEB Touche2020Retrieval.v3",
+      "dataset": "MTEB Touche2020Retrieval.v3",
+      "metric": null,
+      "value": 24.5
+    },
+    {
+      "task": "MTEB ToxicConversationsClassification",
+      "dataset": "MTEB ToxicConversationsClassification",
+      "metric": null,
+      "value": 62.94
+    },
+    {
+      "task": "MTEB TweetSentimentExtractionClassification",
+      "dataset": "MTEB TweetSentimentExtractionClassification",
+      "metric": null,
+      "value": 57.29
+    },
+    {
+      "task": "MTEB TwentyNewsgroupsClustering.v2",
+      "dataset": "MTEB TwentyNewsgroupsClustering.v2",
+      "metric": null,
+      "value": 22.39
+    },
+    {
+      "task": "MTEB TwitterSemEval2015",
+      "dataset": "MTEB TwitterSemEval2015",
+      "metric": null,
+      "value": 53.19
+    },
+    {
+      "task": "MTEB TwitterURLCorpus",
+      "dataset": "MTEB TwitterURLCorpus",
+      "metric": null,
+      "value": 82.55
+    }
+  ],
+  "sources": [
+    {
+      "title": "Tariff Simulator 2026 - US Import Duty, Customs Fees & Tax Calculator ...",
+      "url": "https://tariffs.flexport.com/",
+      "snippet": "Sep 9, 2026 · Free US import duty & tariff calculator. Calculate customs fees, taxes & duties by HTS code. Real-time rates for 195+ …"
+    },
+    {
+      "title": "Harmonized Tariff Schedule - United States International Trade …",
+      "url": "https://hts.usitc.gov/search",
+      "snippet": "The Harmonized Tariff Schedule provides tariff rates and statistical categories for merchandise imported into the United States, based …"
+    },
+    {
+      "title": "Canadian customs tariff",
+      "url": "https://www.cbsa-asfc.gc.ca/trade-commerce/tariff-tarif/menu-eng.html",
+      "snippet": "Sep 8, 2026 · Get tariff classifications for goods you want to import into Canada. The Canadian Customs Tariff shows the preferential …"
+    },
+    {
+      "title": "Harmonized Tariff Schedule",
+      "url": "https://hts.usitc.gov/search?query=HTS+code",
+      "snippet": "Automatic data processing machines and units thereof; magnetic or optical readers, machines for transcribing data onto data media …"
+    },
+    {
+      "title": "Harmonized Tariff Schedule - hts.usitc.gov",
+      "url": "https://hts.usitc.gov/search?query=7907.00.10.00",
+      "snippet": "Unless the context otherwise requires, any reference in the tariff schedule to a base metal includes a reference to alloys which, by …"
+    }
+  ]
+}

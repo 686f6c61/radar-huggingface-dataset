@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Ameame1002/ClueWeaver",
+  "slug": "ameame1002-clueweaver",
+  "author": "Ameame1002",
+  "url": "https://huggingface.co/Ameame1002/ClueWeaver",
+  "created_at": "2026-09-20T11:40:11.000Z",
+  "updated_at": "2026-09-20T14:17:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "question-answering",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "clueweaver",
+    "reinforcement-learning",
+    "long-context",
+    "question-answering",
+    "arxiv:2608.25531",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16880090335,
+  "storage_human": "16.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Past Weather in Seattle, Washington, USA — Yesterday or Further …",
+      "url": "https://www.timeanddate.com/weather/usa/seattle/historic",
+      "snippet": "High & Low Weather Summary for the Past Weeks ... Note: Actual official high and low records may vary slightly from our data, if they …"
+    },
+    {
+      "title": "Seattle Past Weather - LocalConditions.com",
+      "url": "https://www.localconditions.com/us/seattle/washington/weather/past/",
+      "snippet": "seattle past weather data including previous temperature, barometric pressure, humidity, dew point, rain total, and wind conditions."
+    },
+    {
+      "title": "Seattle Past Weather - Last 30 days - LocalConditions.com",
+      "url": "https://www.localconditions.com/weather-seattle-washington/98101/past.php",
+      "snippet": "Seattle past weather data including previous temperature, barometric pressure, humidity, dew point, rain total, and wind conditions."
+    },
+    {
+      "title": "Seattle, WA Weather History | Weather Underground",
+      "url": "https://www.wunderground.com/history/daily/us/wa/seattle",
+      "snippet": "Weather Underground provides local & long-range weather forecasts, weather reports, maps & tropical weather conditions for the …"
+    },
+    {
+      "title": "Seattle, United States weather by month, averages & history since 1940",
+      "url": "https://weatherjourney.com/en/weather-seattle-5809844",
+      "snippet": "1 day ago · Monthly weather averages for Seattle, United States: average temperatures and rainfall by month, a climate graph, today …"
+    }
+  ]
+}

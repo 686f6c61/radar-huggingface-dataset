@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "IonGrozea/whisper-base_ro-80mel",
+  "slug": "iongrozea-whisper-base_ro-80mel",
+  "author": "IonGrozea",
+  "url": "https://huggingface.co/IonGrozea/whisper-base_ro-80mel",
+  "created_at": "2026-07-16T14:43:13.000Z",
+  "updated_at": "2026-09-19T18:30:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "ro"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "romanian",
+    "fine-tuned",
+    "ro",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 206,
+  "trending_score": 0,
+  "parameters": 72593920,
+  "parameters_human": "72.6M",
+  "storage_bytes": 8132377652,
+  "storage_human": "8.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "Romanian merged corpus",
+      "metric": null,
+      "value": 0.1512
+    },
+    {
+      "task": null,
+      "dataset": "Romanian merged corpus",
+      "metric": null,
+      "value": 0.0524
+    }
+  ],
+  "sources": [
+    {
+      "title": "Bing Homepage Quiz – Today's Bing Daily Trivia & Featured Image Quiz",
+      "url": "https://bingquiz.com/bing-homepage-quiz/",
+      "snippet": "15 hours ago · Play today's Bing Homepage Quiz — Celebrity & Pop Culture Trivia edition — and test your knowledge with the same …"
+    },
+    {
+      "title": "Bing Homepage Quiz - Play Today's Interactive Homepage Bing Quizzes",
+      "url": "https://bing.weeklyquiz.net/bing-homepage-quiz/",
+      "snippet": "15 hours ago · Did you know that the Bing Homepage Quiz is a daily trivia game with 15 questions based on the Bing homepage …"
+    },
+    {
+      "title": "Bing Homepage Quiz - Play Today’s 10 Daily Homepage Bing Quizzes",
+      "url": "https://bingquizzes.com/bing-homepage-quiz-today/",
+      "snippet": "15 hours ago · Play today’s Bing Homepage Quiz and challenge yourself with 10 fun questions on history, science, geography, pop …"
+    },
+    {
+      "title": "Today's Bing Quiz | Bing Quizzes",
+      "url": "https://bingquizzes.com/",
+      "snippet": "15 hours ago · Play today's Bing quiz and test your knowledge of news, entertainment, history, science, and geography. Explore fresh …"
+    },
+    {
+      "title": "Bing Homepage Quiz - Play Today’s Interactive Homepage Bing Quizzes",
+      "url": "https://weeklyquiz.net/bing-homepage-quiz/",
+      "snippet": "Play today’s Bing Homepage Quiz with 10 daily trivia questions challenge. Test your knowledge with Bing Quizzes and Bing News Quiz."
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "id": "dronefreak/bdd100k-yolov8n",
+  "slug": "dronefreak-bdd100k-yolov8n",
+  "author": "dronefreak",
+  "url": "https://huggingface.co/dronefreak/bdd100k-yolov8n",
+  "created_at": "2026-09-20T11:31:51.000Z",
+  "updated_at": "2026-09-21T13:57:36.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "object-detection",
+    "detectionbench",
+    "pytorch",
+    "computer-vision",
+    "autonomous-driving",
+    "self-driving-cars",
+    "driving-scenes",
+    "traffic-sign-detection",
+    "traffic-light-detection",
+    "arxiv:2405.14458",
+    "arxiv:2410.17725",
+    "arxiv:2606.03748",
+    "arxiv:2402.13616",
+    "base_model:Ultralytics/YOLOv8",
+    "base_model:finetune:Ultralytics/YOLOv8",
+    "license:agpl-3.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20341932,
+  "storage_human": "20 MB",
+  "base_model": "Ultralytics/YOLOv8",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Object Detection",
+      "dataset": "BDD100K",
+      "metric": "mAP@50 (test split)",
+      "value": 51.67
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "BDD100K",
+      "metric": "mAP@50-95 (test split)",
+      "value": 29.09
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "BDD100K",
+      "metric": "Precision (test split)",
+      "value": 70.95
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "BDD100K",
+      "metric": "Recall (test split)",
+      "value": 46.59
+    }
+  ],
+  "sources": [
+    {
+      "title": "Update Harga iPhone 11 Series Second Maret 2026, Jelang Lebaran …",
+      "url": "https://money.kompas.com/read/2026/03/11/074700726/update-harga-iphone-11-series-second-maret-2026-jelang-lebaran-jadi-lebih",
+      "snippet": "Mar 11, 2026 · Update harga iPhone 11 series second Maret 2026 menjelang Lebaran. Jadi lebih terjangkau namun performa masih …"
+    },
+    {
+      "title": "iPhone Edisi Lawas di Maret 2026: Harga HP iPhone XR, iPhone 11, iPhone …",
+      "url": "https://batam.tribunnews.com/techno/677961/iphone-edisi-lawas-di-maret-2026-harga-hp-iphone-xr-iphone-11-iphone-12-iphone-se-3-turun",
+      "snippet": "Mar 7, 2026 · iPhone 11 dibandrol mulai Rp 5 Jutaan sedangkan iPhone XR dijual mulai Rp 4 Jutaan pada Maret 2026. Cek daftar …"
+    },
+    {
+      "title": "Harga iPhone 11 Turun di Tahun 2026, Ini Rinciannya - detikcom",
+      "url": "https://www.detik.com/sumut/berita/d-8453502/harga-iphone-11-turun-di-tahun-2026-ini-rinciannya",
+      "snippet": "Apr 21, 2026 · Harga iphone 11 di awal 2026 mengalami penurunan yang cukup drastis. Ponsel yang kini termasuk dalam kategori …"
+    },
+    {
+      "title": "Harga iPhone 11 Bekas Maret 2026 Turun Drastis, Ini Spesifikasi dan ...",
+      "url": "https://haloyouth.pikiran-rakyat.com/tekno/pr-6010093225/harga-iphone-11-bekas-maret-2026-turun-drastis-ini-spesifikasi-dan-daftar-harga-iphone-lawas",
+      "snippet": "Mar 23, 2026 · Selain iPhone 11, beberapa model lama lain seperti iPhone XR, iPhone 12, dan iPhone SE (3rd generation) juga mulai …"
+    },
+    {
+      "title": "Harga iPhone 11 Bekas Maret 2026: Mulai Rp4 Jutaan, Cocok Buat …",
+      "url": "https://gadget.viva.co.id/gadget/46704-harga-iphone-11-bekas-maret-2026-mulai-rp4-jutaan-cocok-buat-lebaran",
+      "snippet": "Kini, di Maret 2026, harga iPhone 11 second di Indonesia berada di kisaran Rp4 jutaan hingga Rp7 jutaan, tergantung varian, …"
+    }
+  ]
+}

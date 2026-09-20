@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "nilamgaichor/text_classification_senti_analysis",
+  "slug": "nilamgaichor-text_classification_senti_analysis",
+  "author": "nilamgaichor",
+  "url": "https://huggingface.co/nilamgaichor/text_classification_senti_analysis",
+  "created_at": "2026-09-20T06:55:52.000Z",
+  "updated_at": "2026-09-21T00:57:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "generated_from_trainer",
+    "base_model:nilamgaichor/text_classification_senti_analysis",
+    "base_model:finetune:nilamgaichor/text_classification_senti_analysis",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 1339168641,
+  "storage_human": "1.3 GB",
+  "base_model": "nilamgaichor/text_classification_senti_analysis",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bing",
+      "url": "https://www.bing.com/RelatedSearch",
+      "snippet": ""
+    },
+    {
+      "title": "How to See All Bing Related Searches on Any Device",
+      "url": "https://rottenwifi.com/how-to-see-all-bing-related-searches/",
+      "snippet": "Jul 1, 2026 · This guide walks through the practical ways to see Bing related searches on desktop, mobile, and Microsoft Edge. It also …"
+    },
+    {
+      "title": "Bing",
+      "url": "https://www.bing.com/version",
+      "snippet": "Bing ... Versions"
+    },
+    {
+      "title": "Bing Generative Search | Microsoft Bing",
+      "url": "https://explore.microsoft.com/en-us/bing/features/bing-generative-search",
+      "snippet": "Transforms the traditional Bing search results page from a list of links into a more engaging, magazine-like experience that's both …"
+    },
+    {
+      "title": "How To See All Bing Related Searches - RottenWifi.com Blog",
+      "url": "https://blog.rottenwifi.com/how-to-see-all-bing-related-searches/",
+      "snippet": "Jul 2, 2026 · There is no single button that reveals every Bing related search. The closest practical method is to combine Bing’s …"
+    }
+  ]
+}

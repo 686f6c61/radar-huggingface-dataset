@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "swedishembedded/minilm-l6-option-head-doom",
+  "slug": "swedishembedded-minilm-l6-option-head-doom",
+  "author": "swedishembedded",
+  "url": "https://huggingface.co/swedishembedded/minilm-l6-option-head-doom",
+  "created_at": "2026-09-20T11:41:31.000Z",
+  "updated_at": "2026-09-20T11:48:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "brain",
+  "languages": [],
+  "tags": [
+    "brain",
+    "safetensors",
+    "option-head",
+    "reinforcement-learning",
+    "decision-making",
+    "adapter",
+    "base_model:sentence-transformers/all-MiniLM-L6-v2",
+    "base_model:finetune:sentence-transformers/all-MiniLM-L6-v2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 444673,
+  "parameters_human": "444673",
+  "storage_bytes": 1780636,
+  "storage_human": "2 MB",
+  "base_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Новини от днес и последния час ...",
+      "url": "https://www.dnes.bg/",
+      "snippet": "Новини от България и света днес - политика, икономика, спорт, крими и анализи. DNES.BG - актуални новини в реално време."
+    },
+    {
+      "title": "Последни Новини и информация от Dnes.bg",
+      "url": "https://www.dnes.bg/last-articles",
+      "snippet": "Новините днес от Dnes.bg - винаги актуални новини от България и света."
+    },
+    {
+      "title": "Новини от днес и последния час | ФАКТИ.БГ",
+      "url": "https://fakti.bg/",
+      "snippet": "В най-източните региони на Русия започна преброяването на гласовете от парламентарните избори. Избирателните секции в …"
+    },
+    {
+      "title": "Новини.бг - Последни новини от България ...",
+      "url": "https://novini.bg/",
+      "snippet": "Sep 8, 2012 · Novini.bg - Актуалните новини - новините от днес и последни новини от България и света. Информация за най …"
+    },
+    {
+      "title": "Актуални новини от - Днес България",
+      "url": "https://dnesbulgaria.com/",
+      "snippet": "нокаут-днес българия Днес рожден ден празнува Любен Джубрилов – човекът, превърнал Бургас и България в световна …"
+    }
+  ]
+}

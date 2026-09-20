@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "Om22s/alexandria-qwen3-14b-speaker-attribution",
+  "slug": "om22s-alexandria-qwen3-14b-speaker-attribution",
+  "author": "Om22s",
+  "url": "https://huggingface.co/Om22s/alexandria-qwen3-14b-speaker-attribution",
+  "created_at": "2026-09-05T18:58:27.000Z",
+  "updated_at": "2026-09-19T13:10:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "speaker-attribution",
+    "audiobook",
+    "experimental",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3-14B",
+    "base_model:adapter:Qwen/Qwen3-14B",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 93,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 128524896,
+  "storage_human": "129 MB",
+  "base_model": "Qwen/Qwen3-14B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "speaker attribution (structured JSON, roster given)",
+      "dataset": "Alexandria hard-subset fixture, three light novels (383 rows, temperature 0)",
+      "metric": "accuracy, adapter (base 48.6)",
+      "value": 50.7
+    }
+  ],
+  "sources": [
+    {
+      "title": "Wielkie Greckie Wakacje - Grecja, wakacje, wczasy, wycieczki | Grecos",
+      "url": "https://www.grecos.pl/",
+      "snippet": "Biuro Podróży Grecos - specjalista od Wielkich Greckich Wakacji. Oferty wczasów, wycieczek do Grecji, all inclusive, last minute. …"
+    },
+    {
+      "title": "Last Minute, oferty Last Second Grecja, Cypr - Grecos.pl",
+      "url": "https://www.grecos.pl/last-minute",
+      "snippet": "Wakacje Last Minute, Last Second - najtańsze oferty wycieczek tylko z Biurem Podróży Grecos. Rezerwuj już teraz wakacje w Grecji …"
+    },
+    {
+      "title": "Grecos Grecja - Wakacje, Wczasy z biurem Grecos na Wakacje.pl",
+      "url": "https://www.wakacje.pl/wczasy/grecja/?grecos&msockid=255aec114dcf692708aefbc84c2c6839",
+      "snippet": "Grecos Grecja oferty na wczasy i wakacje z biurem Grecos. Last minute Grecja. Porównaj oferty biura podróży Grecos i rezerwuj …"
+    },
+    {
+      "title": "Grecos - Wakacje z biurem podróży Grecos na Wakacje.pl",
+      "url": "https://www.wakacje.pl/wczasy/?grecos&msockid=255aec114dcf692708aefbc84c2c6839",
+      "snippet": "Biuro podróży Grecos powstało w 2006 roku i od tego momentu jego specjalnością są wycieczki do Grecji. Grecos figuruje w …"
+    },
+    {
+      "title": "Grecos - oferty biura podróży: last minute, wakacje, wycieczki ...",
+      "url": "https://www.travelplanet.pl/biura-podrozy/grecos-holiday/",
+      "snippet": "Grecos organizuje zarówno wyjazdy indywidualne, grupowe dla firm oraz wycieczki objazdowe. Starając się zaspokajać potrzeby …"
+    }
+  ]
+}

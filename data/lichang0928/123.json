@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "lichang0928/123",
+  "slug": "lichang0928-123",
+  "author": "lichang0928",
+  "url": "https://huggingface.co/lichang0928/123",
+  "created_at": "2026-09-20T11:34:01.000Z",
+  "updated_at": "2026-09-20T16:25:13.000Z",
+  "license": "bigcode-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:bigcode-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 28657430639,
+  "storage_human": "28.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Webcam Duhnen – Liveblick aufs Meer | Strandhotel Duhnen - Kamp Hotels",
+      "url": "https://www.kamp-hotels.de/webcam-3/",
+      "snippet": "Stillen Sie Ihr Fernweh mit einem Blick an die Nordsee: Unsere Strandhotel-Webcam zeigt Ihnen die Duhner Promenade, …"
+    },
+    {
+      "title": "【LIVE】 Cuxhaven - Strand Duhnen Strand Webcam",
+      "url": "https://www.skylinewebcams.com/de/webcam/deutschland/lower-saxony/cuxhaven/cuxhaven-duhnen-strand-beach.html",
+      "snippet": "Diese Cuxhaven-Duhnen HD Live Webcam bietet einen Panoramablick auf den Duhner Strandpromenade von der Elbmündung bis …"
+    },
+    {
+      "title": "LIVE Webcam: Cuxhaven-Duhnen (Strand, Kamp Hotels) - Meteopool",
+      "url": "https://www.meteopool.org/de/webcam-cuxhaven-duhnen-strand-kamp-hotels-id2351",
+      "snippet": "Die Webcam liegt an der Küste in 9 m Höhe ü. NHN. Das Bild erscheint im Livemodus (<1min oder Stream) und es ist ein Archiv …"
+    },
+    {
+      "title": "Webcams Cuxhaven – Nordsee, Schiffe & Watt live erleben",
+      "url": "https://www.nordseeheilbad-cuxhaven.de/planen-buchen/webcams",
+      "snippet": "Cuxhavens Webcams bieten dir einen einzigartigen Blick auf die beliebtesten Strandabschnitte und touristischen Highlights. Schau …"
+    },
+    {
+      "title": "LIVE Webcam: Cuxhaven-Duhnen (Strand, Kamp Hotels)",
+      "url": "https://www.meteopool.org/en/webcam-cuxhaven-duhnen-strand-kamp-hotels-id2351",
+      "snippet": "The webcam image is broadcasted live (<1min or stream) and an archive is avaiable. The ground is visible for a clear identification of …"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Lucius-Morningstar/mailroom-modernbert-classifier",
+  "slug": "lucius-morningstar-mailroom-modernbert-classifier",
+  "author": "Lucius-Morningstar",
+  "url": "https://huggingface.co/Lucius-Morningstar/mailroom-modernbert-classifier",
+  "created_at": "2026-09-20T04:50:57.000Z",
+  "updated_at": "2026-09-21T17:11:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "feature-extraction",
+    "document-classification",
+    "hierarchical",
+    "legal",
+    "mailroom",
+    "text-classification",
+    "en",
+    "dataset:Lucius-Morningstar/mailroom-modernbert-training",
+    "base_model:answerdotai/ModernBERT-base",
+    "base_model:finetune:answerdotai/ModernBERT-base",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 1,
+  "trending_score": 0,
+  "parameters": 149014272,
+  "parameters_human": "149.0M",
+  "storage_bytes": 923045497,
+  "storage_human": "923 MB",
+  "base_model": "answerdotai/ModernBERT-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HUK24 zahlt nicht trotz klarer Sachlage. Klagen oder weiter abwarten?",
+      "url": "https://www.motor-talk.de/forum/huk24-zahlt-nicht-trotz-klarer-sachlage-klagen-oder-weiter-abwarten-t6318189.html",
+      "snippet": "Apr 8, 2018 · HUK24 zahlt nicht trotz klarer Sachlage. Klagen oder weiter abwarten? Hallo zusammen, ich hatte vor 3 Monate einen …"
+    },
+    {
+      "title": "Schutzbrief anstelle von ADAC Plus ausreichend?",
+      "url": "https://www.motor-talk.de/forum/schutzbrief-anstelle-von-adac-plus-ausreichend-t7376043.html",
+      "snippet": "Nov 24, 2022 · Würdet ihr empfehlen ADAC Plus zu kündigen und anstelle dessen einen HUK24 Kfz Versicherung Schutzbrief …"
+    },
+    {
+      "title": "【HUK24申请问题总结】萍聚社区-德国热线-德国实用信息网汽车世界",
+      "url": "https://www.dolc.de/thread-1450105-1-1.html",
+      "snippet": "Mar 6, 2012 · 萍聚社区-德国热线-德国实用信息网HUK24申请问题总结适合新手申请。已经在车行签了购车合同，车行负责做新的tuv …"
+    },
+    {
+      "title": "HUK24 Kasko Plus - Startseite Forum Wissen Versicherung Forum",
+      "url": "https://www.motor-talk.de/forum/huk24-kasko-plus-t6861144.html",
+      "snippet": "May 15, 2020 · HUK24 Kasko Plus Liebe Talker, ich habe ein Problem mit meiner HUK Versicherung Kasko plus. Ich habe einen …"
+    },
+    {
+      "title": "Erfahrungen mit dem Rabattschutz der HUK24? - MOTOR-TALK",
+      "url": "https://www.motor-talk.de/forum/erfahrungen-mit-dem-rabattschutz-der-huk24-t5253696.html",
+      "snippet": "Mar 28, 2015 · Reicht die HUK24 die Information über den Schaden dann weiter? So macht es die Admiral Direkt, wodurch der …"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "IonGrozea/whisper-tiny_ro-80mel",
+  "slug": "iongrozea-whisper-tiny_ro-80mel",
+  "author": "IonGrozea",
+  "url": "https://huggingface.co/IonGrozea/whisper-tiny_ro-80mel",
+  "created_at": "2026-06-10T04:41:10.000Z",
+  "updated_at": "2026-09-19T12:59:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "ro"
+  ],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "whisper",
+    "automatic-speech-recognition",
+    "romanian",
+    "fine-tuned",
+    "ro",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 71,
+  "trending_score": 0,
+  "parameters": 37760640,
+  "parameters_human": "37.8M",
+  "storage_bytes": 2265979760,
+  "storage_human": "2.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "Romanian merged corpus (80-mel)",
+      "metric": null,
+      "value": 0.1993
+    },
+    {
+      "task": null,
+      "dataset": "Romanian merged corpus (80-mel)",
+      "metric": null,
+      "value": 0.0672
+    }
+  ],
+  "sources": [
+    {
+      "title": "Barmer Ersatzforum? - Freies Fußball Forum",
+      "url": "https://diesme-forum.de/viewtopic.php?t=3695",
+      "snippet": "Jul 19, 2019 · Gibt es eine Möglichkeit aus dem Barmer Ersatzforum das Kicker Ersatzforum zu machen? Das würde mich definitiv …"
+    },
+    {
+      "title": "Spielerliste erstellen - Freies Fußball Forum",
+      "url": "https://diesme-forum.de/viewtopic.php?t=14730",
+      "snippet": "Aug 2, 2024 · Hallo liebes Forum, weiss jemand im Forum wie man die Spielerliste mit Preisen ausdrucken kann ? Habe sonst die …"
+    },
+    {
+      "title": "Roland Sallai - Spielerprofil 26/27 | Transfermarkt",
+      "url": "https://www.transfermarkt.de/roland-sallai/profil/spieler/332798",
+      "snippet": "May 22, 1997 · APOEL Nikosia besitzt nach seinem Wechsel zum SC Freiburg weiterhin einen nicht genannten Prozentsatz seiner …"
+    },
+    {
+      "title": "Holstein Kiel - Forum | Transfermarkt",
+      "url": "https://www.transfermarkt.de/holstein-kiel/detail/forum/217",
+      "snippet": "Nov 26, 2019 · Dies ist die Übersicht aller Threads aus dem Forum Holstein Kiel, die in der Transfermarkt-Community diskutiert werden."
+    },
+    {
+      "title": "Erfahrungen nach 5 Wochen und 1700km Seal U DM-I",
+      "url": "https://www.motor-talk.de/forum/erfahrungen-nach-5-wochen-und-1700km-seal-u-dm-i-t8557714.html",
+      "snippet": "May 3, 2026 · Ich fahre nun seit 5 Wochen den Seal U DM-I Comfort in Bordless Cloud (vorher Mercedes S213 Avantgarde) und …"
+    }
+  ]
+}

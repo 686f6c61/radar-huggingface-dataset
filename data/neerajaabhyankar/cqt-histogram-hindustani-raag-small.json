@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "neerajaabhyankar/cqt-histogram-hindustani-raag-small",
+  "slug": "neerajaabhyankar-cqt-histogram-hindustani-raag-small",
+  "author": "neerajaabhyankar",
+  "url": "https://huggingface.co/neerajaabhyankar/cqt-histogram-hindustani-raag-small",
+  "created_at": "2026-09-02T04:24:09.000Z",
+  "updated_at": "2026-09-20T00:50:10.000Z",
+  "license": "mixed-terms",
+  "license_family": "unknown",
+  "pipeline_tag": "audio-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "audio",
+    "music",
+    "music-information-retrieval",
+    "raga",
+    "raag",
+    "hindustani-classical-music",
+    "indian-classical-music",
+    "audio-classification",
+    "dataset:neerajaabhyankar/hindustani-raag-small",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2698476,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Compare Exchange Rates: Find the Best Rates for International Transfers",
+      "url": "https://cambridgecurrencies.com/compare-exchange-rates/",
+      "snippet": "2 days ago · Compare exchange rates for sending money to India (INR), Pakistan (PKR), Philippines (PHP), USA (USD), Canada …"
+    },
+    {
+      "title": "International Money Transfer | Send Money Abroad",
+      "url": "https://www.moneysupermarket.com/international-money-transfer/?msockid=1893dd9fba286f13026fca45bb0e6ea9",
+      "snippet": "4 days ago · MoneySuperMarket has partnered with FXcompared.com to show you competitive money transfer deals from a range of …"
+    },
+    {
+      "title": "Compare Money Transfers | Best International Money Transfer Rates",
+      "url": "https://www.exchangerates.org.uk/compare-money-transfers",
+      "snippet": "Apr 29, 2025 · Compare money transfers from the UK by route and amount. Check international transfer rates, FX markups and fees, …"
+    },
+    {
+      "title": "Send Money Abroad | Compare Rates to 70+ Countries | IMT",
+      "url": "https://www.internationalmoneytransfer.com/send-money",
+      "snippet": "Compare the best exchange rates for sending money abroad. Licensed, regulated providers, transparent fees, and expert reviews for …"
+    },
+    {
+      "title": "Compare Best Exchange Rates UK | Money Transfer & Travel Money",
+      "url": "https://www.exchangerates.org.uk/best-rate-finder",
+      "snippet": "2 days ago · Compare exchange rates for international money transfers and UK travel money. See the mid-market rate, estimated …"
+    }
+  ]
+}

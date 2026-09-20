@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "sleepyjoe123/Misa_2.0",
+  "slug": "sleepyjoe123-misa_2-0",
+  "author": "sleepyjoe123",
+  "url": "https://huggingface.co/sleepyjoe123/Misa_2.0",
+  "created_at": "2026-09-03T05:29:55.000Z",
+  "updated_at": "2026-09-19T13:07:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen2_5_vl",
+    "llama.cpp",
+    "unsloth",
+    "vision-language-model",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 57,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 17996476352,
+  "storage_human": "18.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "word文字超出页边距怎么调整-百度经验",
+      "url": "https://jingyan.baidu.com/article/77b8dc7ffdb27f2075eab62d.html",
+      "snippet": "May 18, 2021 · 打开有问题的Word，可以看到文字超出页边距，选中所有文字，右键鼠标点击【段落】。"
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/question/413791088",
+      "snippet": "问题背景：电脑xps15 9560，256G固态，装了32G内存，版本office2019,打开某一含有长表格的文档后鼠标滚轮…"
+    },
+    {
+      "title": "打印预览正常，打印出来后图片打印不完整，怎么办？ - 知乎",
+      "url": "https://www.zhihu.com/question/307621167",
+      "snippet": "能解决这个问题的方法有几个：（没时间就看第4个解决方法） （1）word文档转换成pdf再打印，优点是：图片多时候比较方便，缺点 …"
+    },
+    {
+      "title": "word怎么把上下两个表格，完美合并在一起-百度经验",
+      "url": "https://jingyan.baidu.com/article/636f38bb4f0af997b84610fe.html",
+      "snippet": "Feb 14, 2022 · word文档怎么把上下两个相同列的表格，完美合并在一起？"
+    },
+    {
+      "title": "Win11粘贴文件到桌面时，文件经常会出现在左上角第二个位置，自动 …",
+      "url": "https://www.zhihu.com/question/586721860",
+      "snippet": "Win11粘贴文件到桌面时，粘贴的文件经常不是出现在最后面或者空白处，会出现在左上角第二个位置，自动把…"
+    }
+  ]
+}

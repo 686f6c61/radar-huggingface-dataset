@@ -1,0 +1,109 @@
+{
+  "schema": 1,
+  "id": "vamboai/morena-1.5b-instruct",
+  "slug": "vamboai-morena-1-5b-instruct",
+  "author": "vamboai",
+  "url": "https://huggingface.co/vamboai/morena-1.5b-instruct",
+  "created_at": "2026-09-15T13:30:53.000Z",
+  "updated_at": "2026-09-18T06:57:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "sn",
+    "sw",
+    "ha",
+    "yo",
+    "ig",
+    "zu",
+    "xh",
+    "rw",
+    "tn",
+    "af",
+    "nr",
+    "pcm",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "african-languages",
+    "from-scratch",
+    "instruct",
+    "isheanesu-misi",
+    "vambo-ai",
+    "sn",
+    "sw",
+    "ha",
+    "yo",
+    "ig",
+    "zu",
+    "xh",
+    "rw",
+    "tn",
+    "af",
+    "nr",
+    "pcm",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:HuggingFaceFW/fineweb-2",
+    "dataset:codeparrot/codeparrot-clean",
+    "dataset:codeparrot/github-code-clean",
+    "dataset:open-web-math/open-web-math",
+    "dataset:EleutherAI/proof-pile-2",
+    "dataset:castorini/wura",
+    "dataset:allenai/MADLAD-400",
+    "dataset:castorini/afriberta-corpus",
+    "dataset:vamboai/fikira",
+    "dataset:ise-uiuc/Magicoder-OSS-Instruct-75K",
+    "dataset:m-a-p/CodeFeedback-Filtered-Instruction",
+    "dataset:vamboai/morena-sft-corpus",
+    "base_model:vamboai/morena-1.5b-base",
+    "base_model:finetune:vamboai/morena-1.5b-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 13,
+  "downloads_30d": 24,
+  "trending_score": 11,
+  "parameters": 1484900352,
+  "parameters_human": "1.48B",
+  "storage_bytes": 2975334702,
+  "storage_human": "3.0 GB",
+  "base_model": "vamboai/morena-1.5b-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.de/",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google",
+      "url": "https://ipv4.google.com/?hl=de",
+      "snippet": "Werbeprogramme Über Google Google.com in English © 2026 - Datenschutzerklärung - Nutzungsbedingungen"
+    },
+    {
+      "title": "Google Übersetzer",
+      "url": "https://translate.google.de/",
+      "snippet": "Mit diesem kostenlosen Google-Dienst lassen sich Wörter, Sätze und Webseiten sofort zwischen Deutsch und über 100 Sprachen …"
+    },
+    {
+      "title": "Google",
+      "url": "https://ipv4.google.com/?hl=de_AT",
+      "snippet": "Werbeprogramme Über Google Google.com in English © 2026 - Datenschutzerklärung - Nutzungsbedingungen"
+    },
+    {
+      "title": "Übersicht",
+      "url": "https://search.google/intl/de-DE/",
+      "snippet": "Seit unserer Geburtsstunde im Jahr 1997 ist die Google Suche kontinuierlich weiterentwickelt worden, damit du die Informationen …"
+    }
+  ]
+}

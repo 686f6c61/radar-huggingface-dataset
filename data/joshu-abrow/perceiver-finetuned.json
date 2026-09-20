@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Joshu-abrow/perceiver-finetuned",
+  "slug": "joshu-abrow-perceiver-finetuned",
+  "author": "Joshu-abrow",
+  "url": "https://huggingface.co/Joshu-abrow/perceiver-finetuned",
+  "created_at": "2026-09-20T11:29:59.000Z",
+  "updated_at": "2026-09-20T11:30:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "perceiver",
+    "pytorch",
+    "contrastive",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ebay Kleinanzeigen - ein Erfahrungsbericht - ComputerBase",
+      "url": "https://www.computerbase.de/forum/threads/ebay-kleinanzeigen-ein-erfahrungsbericht.1424751/",
+      "snippet": "Dec 14, 2014 · Hallo Allerseits, ich habe ebay selbst schon lange nicht mehr zum Verkaufen genutzt da 10% Vermittlungsgebühr …"
+    },
+    {
+      "title": "Tickets: Darf man Eintrittskarten weiterverkaufen?",
+      "url": "https://www.juraforum.de/news/tickets-darf-man-eintrittskarten-weiterverkaufen_247469",
+      "snippet": "Jul 5, 2026 · In der Praxis kommt es immer wieder vor, dass man sich Tickets für eine weit in der Ferne liegende Veranstaltung kauft …"
+    },
+    {
+      "title": "Ebay Kleinanzeigen - Rückerstattung/Widerruf gegen privat erzwingen ...",
+      "url": "https://www.computerbase.de/forum/threads/ebay-kleinanzeigen-rueckerstattung-widerruf-gegen-privat-erzwingen.2097197/",
+      "snippet": "Aug 6, 2022 · Hallo, ich brauche mal ein paar Infos bzw. Erfahrungen wie man die Rückzahlung nach einen Widerruf am besten …"
+    },
+    {
+      "title": "Überweisungsbetrug - was tun? ᐅ Tatbestand, Anzeige, Strafe",
+      "url": "https://www.juraforum.de/lexikon/ueberweisungsbetrug",
+      "snippet": "Feb 17, 2026 · Was ist Überweisungsbetrug? ️ § 263a StGB ️ Was tun bei Überweisungsbetrug? Anzeige erstatten? ️ Wer …"
+    },
+    {
+      "title": "EPR packaging registration numbers - eBay Deutschland Community",
+      "url": "https://community.ebay.de/forum/seller-lounge-22/topic/epr-verpackungsregistrierungsnummern-es-wird-immer-bekloppter-10453/",
+      "snippet": "According to a corresponding eBay message from today, from 12/08/26 EPR packaging registration numbers will also be mandatory …"
+    }
+  ]
+}

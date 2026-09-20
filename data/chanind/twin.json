@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "chanind/twin",
+  "slug": "chanind-twin",
+  "author": "chanind",
+  "url": "https://huggingface.co/chanind/twin",
+  "created_at": "2026-04-15T12:26:51.000Z",
+  "updated_at": "2026-09-22T10:51:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 67411854890,
+  "storage_human": "67.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Explorando trastornos de la personalidad impulsivos",
+      "url": "https://psicologianova.com/explorando-trastornos-de-la-personalidad-impulsivos/",
+      "snippet": "En este artículo, exploraremos los diferentes tipos de trastornos de la personalidad impulsivos, sus síntomas, causas y tratamientos. …"
+    },
+    {
+      "title": "Trastorno Impulsivo: Causas y Tratamiento Eficiente",
+      "url": "https://enterapiaonline.com/trastorno-impulsivo/",
+      "snippet": "Mar 14, 2024 · Descubre las causas del trastorno impulsivo y cómo un tratamiento eficiente puede ayudarte a gestionar la impulsividad."
+    },
+    {
+      "title": "Impulsividad: qué es, síntomas y tratamiento | Top Doctors",
+      "url": "https://www.topdoctors.es/diccionario-medico/impulsividad/",
+      "snippet": "Sep 9, 2013 · Se trata de una condición por la cual la persona no puede controlar los impulsos, las tentaciones o los deseos que …"
+    },
+    {
+      "title": "Trastornos de la personalidad - Síntomas y causas - Mayo Clinic",
+      "url": "https://www.mayoclinic.org/es/diseases-conditions/personality-disorders/symptoms-causes/syc-20354463",
+      "snippet": "Nov 14, 2023 · Las personas con trastornos de la personalidad suelen tener dificultades para comprender las emociones y tolerar el …"
+    },
+    {
+      "title": "¿Qué es la impulsividad? Sus causas y efectos en el comportamiento",
+      "url": "https://psicologiaymente.com/psicologia/impulsividad",
+      "snippet": "Dec 23, 2019 · ¿Qué es la impulsividad? Veamos sus facetas psicológicas y sus posibles causas y consecuencias en la vida de las …"
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "dronefreak/bdd100k-yolov9t",
+  "slug": "dronefreak-bdd100k-yolov9t",
+  "author": "dronefreak",
+  "url": "https://huggingface.co/dronefreak/bdd100k-yolov9t",
+  "created_at": "2026-09-20T11:31:44.000Z",
+  "updated_at": "2026-09-21T13:57:41.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "object-detection",
+    "detectionbench",
+    "pytorch",
+    "computer-vision",
+    "autonomous-driving",
+    "self-driving-cars",
+    "driving-scenes",
+    "traffic-sign-detection",
+    "traffic-light-detection",
+    "arxiv:2402.13616",
+    "arxiv:2405.14458",
+    "arxiv:2410.17725",
+    "arxiv:2606.03748",
+    "license:agpl-3.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18689160,
+  "storage_human": "19 MB",
+  "base_model": "Ultralytics/YOLOv9",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Object Detection",
+      "dataset": "BDD100K",
+      "metric": "mAP@50 (test split)",
+      "value": 52.04
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "BDD100K",
+      "metric": "mAP@50-95 (test split)",
+      "value": 29.46
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "BDD100K",
+      "metric": "Precision (test split)",
+      "value": 71.34
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "BDD100K",
+      "metric": "Recall (test split)",
+      "value": 46.72
+    }
+  ],
+  "sources": [
+    {
+      "title": "Jak uzyskać pomoc w systemie Windows - Pomoc techniczna firmy …",
+      "url": "https://support.microsoft.com/pl-pl/windows/jak-uzyska%C4%87-pomoc-w-systemie-windows-711b6492-0435-0038-8706-7c6b0feb200a",
+      "snippet": "Oto kilka różnych sposobów na wyszukiwanie pomocy dotyczącej systemu Windows. Wyszukiwanie pomocy — wpisz pytanie lub …"
+    },
+    {
+      "title": "System Windows — pomoc i informacje | Microsoft Support",
+      "url": "https://support.microsoft.com/pl-pl/windows/",
+      "snippet": "Znajdź pomoc i instrukcje dotyczące systemów operacyjnych Windows. Uzyskaj pomoc techniczną dla systemu Windows i dowiedz …"
+    },
+    {
+      "title": "Jak uzyskać pomoc i rozwiązać problemy w systemach Windows 11 i Windows …",
+      "url": "https://pl.101-help.com/jak-uzyskac-pomoc-w-systemie-windows-11-10-24f371212d/",
+      "snippet": "Windows 11 i Windows 10 zawierają narzędzia do wyszukiwania informacji, diagnozowania problemów, kontaktowania się z pomocą …"
+    },
+    {
+      "title": "Jak uzyskać pomoc w systemie Windows 10 krok po kroku",
+      "url": "https://mundowin.com/pl/Jak-uzyska%C4%87-pomoc-w-systemie-Windows-10%3A-wszystkie-dost%C4%99pne-opcje/",
+      "snippet": "Nov 22, 2025 · Odkryj wszystkie sposoby uzyskania pomocy w systemie Windows 10: klawisz F1, aplikacja Uzyskaj pomoc, Cortana, …"
+    },
+    {
+      "title": "Windows – poradniki i pomoc techniczna - Centrum Windows",
+      "url": "https://centrumwindows.pl/windows-poradniki-i-pomoc-techniczna/",
+      "snippet": "Praktyczne poradniki i pomoc techniczna dla Windows 10 i 11. Rozwiązania problemów, konfiguracja systemu i sprawdzone wskazówki."
+    }
+  ]
+}

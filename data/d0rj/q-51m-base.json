@@ -1,0 +1,124 @@
+{
+  "schema": 1,
+  "id": "d0rj/q-51M-base",
+  "slug": "d0rj-q-51m-base",
+  "author": "d0rj",
+  "url": "https://huggingface.co/d0rj/q-51M-base",
+  "created_at": "2026-09-20T11:56:02.000Z",
+  "updated_at": "2026-09-20T11:56:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "q50m",
+    "text-generation",
+    "pretrained",
+    "from-scratch",
+    "tiny-llm-ablation",
+    "custom_code",
+    "causal-lm",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 50878240,
+  "parameters_human": "50.9M",
+  "storage_bytes": 203612709,
+  "storage_human": "204 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Zero-shot continuation likelihood",
+      "dataset": "HellaSwag",
+      "metric": "acc_norm (fraction; lm-eval 0.4.12)",
+      "value": 0.29177454690300736
+    },
+    {
+      "task": "Zero-shot continuation likelihood",
+      "dataset": "ARC-Easy",
+      "metric": "acc_norm (fraction; lm-eval 0.4.12)",
+      "value": 0.43308080808080807
+    },
+    {
+      "task": "Zero-shot continuation likelihood",
+      "dataset": "ARC-Challenge",
+      "metric": "acc_norm (fraction; lm-eval 0.4.12)",
+      "value": 0.24232081911262798
+    },
+    {
+      "task": "Zero-shot continuation likelihood",
+      "dataset": "PIQA",
+      "metric": "acc_norm (fraction; lm-eval 0.4.12)",
+      "value": 0.5990206746463548
+    },
+    {
+      "task": "Zero-shot continuation likelihood",
+      "dataset": "WinoGrande",
+      "metric": "acc (fraction; lm-eval 0.4.12)",
+      "value": 0.500394632991318
+    },
+    {
+      "task": "Zero-shot continuation likelihood",
+      "dataset": "OpenBookQA",
+      "metric": "acc_norm (fraction; lm-eval 0.4.12)",
+      "value": 0.282
+    },
+    {
+      "task": "Zero-shot continuation likelihood",
+      "dataset": "BoolQ",
+      "metric": "acc (fraction; lm-eval 0.4.12)",
+      "value": 0.598776758409786
+    },
+    {
+      "task": "Zero-shot continuation likelihood",
+      "dataset": "LAMBADA OpenAI",
+      "metric": "acc (fraction; lm-eval 0.4.12)",
+      "value": 0.20861633999611875
+    }
+  ],
+  "sources": [
+    {
+      "title": "Today's Date and Time - Current Date, Time & More",
+      "url": "https://todaydateandtime.com/",
+      "snippet": "2 days ago · Find out today's date, current time, day of the week, week number, and more. Your complete date and time resource."
+    },
+    {
+      "title": "UK Time Now - Live Clock & Time Tools | TimeInUK",
+      "url": "https://timeinuk.co.uk/",
+      "snippet": "2 days ago · See the live UK time now, check GMT or BST, convert time zones and count down to UK bank holidays, Christmas and …"
+    },
+    {
+      "title": "Today’s Date in the UK",
+      "url": "https://todaysdatenow.com/en-GB/",
+      "snippet": "2 days ago · Today's date for UK. Access a massive list of dates and 🗓️ calendars from around the world. What is the date today? - …"
+    },
+    {
+      "title": "Today’s Date in the UK — Date, Time & Date Formats",
+      "url": "https://gettodaysdate.com/en-gb/",
+      "snippet": "12 hours ago · See today’s date and local time in UK format. Copy DD/MM/YYYY, ISO 8601 and other date formats, plus week …"
+    },
+    {
+      "title": "Time in United Kingdom Now (BST) - Live Clock",
+      "url": "https://time.now/countries/united-kingdom/",
+      "snippet": "Current time in United Kingdom right now in BST. Live clock with seconds, today's sunrise/sunset, public holidays, and interactive …"
+    }
+  ]
+}

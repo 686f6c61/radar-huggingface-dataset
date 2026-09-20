@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "gatilin/ErnieViT",
+  "slug": "gatilin-ernievit",
+  "author": "gatilin",
+  "url": "https://huggingface.co/gatilin/ErnieViT",
+  "created_at": "2026-09-20T10:06:30.000Z",
+  "updated_at": "2026-09-20T13:30:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2521863416,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LOS 10 MEJORES pizzerías en Madrid - Tripadvisor",
+      "url": "https://www.tripadvisor.es/Restaurants-g187514-c31-Madrid.html",
+      "snippet": "Los mejores pizzerías en Madrid, Comunidad de Madrid: Consulta en Tripadvisor opiniones de restaurantes en Madrid y busca por …"
+    },
+    {
+      "title": "Las mejores pizzerías de Madrid: 18 opciones italianísimas",
+      "url": "https://madridsecreto.co/mejores-pizzas-de-madrid/",
+      "snippet": "Feb 27, 2025 · Una cosa es comer pizza y otra bien distinta hacerlo como si estuvieras en Italia. Y con esta selección puedes …"
+    },
+    {
+      "title": "Pizza Napolitana en Madrid | Masa Artesanal y Delivery | Pizza Pizza …",
+      "url": "https://pizzapizzamad.es/",
+      "snippet": "Disfruta auténtica pizza napolitana en Madrid con masa artesanal de doble fermentación e ingredientes premium. Take away y …"
+    },
+    {
+      "title": "12 pizzerías de Madrid donde comer auténtica pizza italiana - ELLE",
+      "url": "https://www.elle.com/es/gourmet/donde-comer/a63321908/pizzerias-madrid-mejor-pizza/",
+      "snippet": "Nov 26, 2025 · Descubre en Madrid las mejores pizzas, finas o gruesas, con sabores auténticos que rivalizan con los de las …"
+    },
+    {
+      "title": "Pizza italiana en Madrid | Pizzart",
+      "url": "https://pizzartpizza.com/",
+      "snippet": "Conoce las mejores pizzas de todo Madrid. Dos locales donde puedes elegir tu favorita. Reserva ya en la mejor pizzería de Madrid."
+    }
+  ]
+}

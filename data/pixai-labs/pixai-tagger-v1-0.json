@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "pixai-labs/pixai-tagger-v1.0",
+  "slug": "pixai-labs-pixai-tagger-v1-0",
+  "author": "pixai-labs",
+  "url": "https://huggingface.co/pixai-labs/pixai-tagger-v1.0",
+  "created_at": "2026-09-15T10:11:13.000Z",
+  "updated_at": "2026-09-16T09:29:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "cls_vitdet",
+    "feature-extraction",
+    "multi-label",
+    "anime",
+    "image-classification",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 14,
+  "downloads_30d": 277,
+  "trending_score": 14,
+  "parameters": 486346909,
+  "parameters_human": "486.3M",
+  "storage_bytes": 1947509907,
+  "storage_human": "1.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Anime AI Art Generator – Create AI Art Online | PixAI",
+      "url": "https://pixai.art/en",
+      "snippet": "All Tags PixAI 4th Anniversary Check-in for Credits or Tsubaki.3 Cards Chisa Blitzed"
+    },
+    {
+      "title": "Générateur d'Art IA Anime Gratuit | PixAI",
+      "url": "https://pixai.art/fr",
+      "snippet": "Créez de l'art IA anime gratuit sur PixAI. Plus de 1,8 million de modèles et LoRA — tapez un prompt, image en quelques secondes. …"
+    },
+    {
+      "title": "PixAI — Imagination, Made Real.",
+      "url": "https://www.pix.ai/en/",
+      "snippet": "「PixAI creates high-quality AI-generated images, especially in anime and manga styles. The details, colors, and creativity are …"
+    },
+    {
+      "title": "PixAi : création, contrôle et essayage de vos visuels",
+      "url": "https://pixai.fr/",
+      "snippet": "Frame crée vos visuels, Guard organise leur contrôle, Experience fait essayer vos produits. Les visuels qui font la décision. Démo en …"
+    },
+    {
+      "title": "PixAI - Free Anime AI Art Generator",
+      "url": "https://pixai.lol/",
+      "snippet": "🧡 PixAI creator 1.57k Editorial anime art Mizuki 1.86k Meet Sequence Editor & Egaki Create animated stories"
+    }
+  ]
+}

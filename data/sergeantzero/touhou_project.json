@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Sergeantzero/Touhou_Project",
+  "slug": "sergeantzero-touhou_project",
+  "author": "Sergeantzero",
+  "url": "https://huggingface.co/Sergeantzero/Touhou_Project",
+  "created_at": "2026-02-02T20:01:54.000Z",
+  "updated_at": "2026-09-19T13:06:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13222075731,
+  "storage_human": "13.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "What Is The Prime Rate Today? – Forbes Advisor",
+      "url": "https://www.forbes.com/advisor/investing/prime-rate/",
+      "snippet": "May 20, 2024 · The prime rate is one of the main factors banks use to determine interest rates on loans. If you’re in the market for a …"
+    },
+    {
+      "title": "Prime Rate Index: How it Affects Your Mortgage and Loans",
+      "url": "https://fastercapital.com/content/Prime-Rate-Index--How-it-Affects-Your-Mortgage-and-Loans.html",
+      "snippet": "Aug 25, 2026 · When it comes to understanding how your mortgage and loans are affected, one crucial factor to consider is the Prime …"
+    },
+    {
+      "title": "Prime Rate: Prime Time Decisions: How the Prime Rate",
+      "url": "https://fastercapital.com/content/Prime-Rate--Prime-Time-Decisions--How-the-Prime-Rate-Swings-with-the-Federal-Funds-Rate.html",
+      "snippet": "Aug 25, 2026 · Understanding the dynamics of the prime rate in response to economic changes is crucial for both consumers and …"
+    },
+    {
+      "title": "What Is The Prime Rate? | Rocket Money",
+      "url": "https://www.rocketmoney.com/learn/personal-finance/prime-rate",
+      "snippet": "Dec 29, 2023 · You’ve probably heard of interest rates, but what is a prime rate? Discover why this benchmark, set by banks and …"
+    },
+    {
+      "title": "Wall Street Journal Prime Rate - FinanceFacts101",
+      "url": "https://financefacts101.com/understanding-the-wall-street-journal-prime-rate-a-comprehensive-guide-for-institutional-investors/",
+      "snippet": "Sep 21, 2025 · A comprehensive guide on understanding the Wall Street Journal Prime Rate and its implications for institutional …"
+    }
+  ]
+}

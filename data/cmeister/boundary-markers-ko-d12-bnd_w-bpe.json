@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "cmeister/boundary-markers-ko-d12-bnd_w-bpe",
+  "slug": "cmeister-boundary-markers-ko-d12-bnd_w-bpe",
+  "author": "cmeister",
+  "url": "https://huggingface.co/cmeister/boundary-markers-ko-d12-bnd_w-bpe",
+  "created_at": "2026-09-20T11:50:39.000Z",
+  "updated_at": "2026-09-20T11:50:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "tokenization",
+    "boundary-markers",
+    "nanochat",
+    "ko",
+    "arxiv:2608.08847",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2459042153,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Recursive list comprehension in Python? - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/2638478/recursive-list-comprehension-in-python",
+      "snippet": "Apr 14, 2010 · Starting Python 3.8, and the introduction of assignment expressions (PEP 572) (:= operator), which gives the …"
+    },
+    {
+      "title": "python - Nested For Loops Using List Comprehension - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/3633140/nested-for-loops-using-list-comprehension",
+      "snippet": "Sep 3, 2010 · If I had two strings, 'abc' and 'def', I could get all combinations of them using two for loops: for j in s1: for k in s2: print(j, …"
+    },
+    {
+      "title": "python - if/else in a list comprehension - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/4260280/if-else-in-a-list-comprehension",
+      "snippet": "How do I convert the following for-loop containing an if/else into a list comprehension? results = [] for x in xs: results.append(f(x) if x is …"
+    },
+    {
+      "title": "python - List comprehension vs map - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/1247486/list-comprehension-vs-map",
+      "snippet": "Is there a reason to prefer using map() over list comprehension or vice versa? Is either of them generally more efficient or considered …"
+    },
+    {
+      "title": "python - elif in list comprehension conditionals - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/9987483/elif-in-list-comprehension-conditionals",
+      "snippet": "Jun 11, 2025 · Rather than printing the results, I want to use a list comprehension to create a list of results, like ['yes', 'no', 'idle', 'idle', …"
+    }
+  ]
+}

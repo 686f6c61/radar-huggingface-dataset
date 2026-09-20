@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "raratu/Onsei-iOS-Models",
+  "slug": "raratu-onsei-ios-models",
+  "author": "raratu",
+  "url": "https://huggingface.co/raratu/Onsei-iOS-Models",
+  "created_at": "2026-07-15T05:45:07.000Z",
+  "updated_at": "2026-09-21T01:27:23.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "coreml",
+    "onnx",
+    "ios",
+    "on-device",
+    "irodori-tts",
+    "text-to-speech",
+    "ja",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 22,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10086549398,
+  "storage_human": "10.1 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Форум – Arizona RolePlay",
+      "url": "https://forum.arizona-rp.com/",
+      "snippet": "Arizona Mobile 3 🍁 Жалобы Жалобы на администрацию Жалобы на игроков состоящих в гос.организациях Жалобы на игроков …"
+    },
+    {
+      "title": "Сервер №33 [Home] | Форум – Arizona RolePlay",
+      "url": "https://forum.arizona-rp.com/forums/3993/",
+      "snippet": "Сервер №33 [Home] Форумы Раздел игровых серверов Сервера Arizona RP System Светлый Тёмный"
+    },
+    {
+      "title": "在 Excel 中，如何使用 xlookup 来查找满足多个条件的数据？",
+      "url": "https://www.zhihu.com/question/631720246",
+      "snippet": "实务问题：EXCEL中通过XLOOKUP多方法轻松实现行和列的同时查找数据 网友问题：就表一A列城市名称、B列重量，C列中自动显 …"
+    },
+    {
+      "title": "在亚利桑那大学 (The University of Arizona) 就读是怎样一番体验？",
+      "url": "https://www.zhihu.com/question/24309297",
+      "snippet": "UA或者U of A，都是常用的简称。 坐标位于美国西南部的亚利桑那州（Arizona），西边紧邻加州，开车5个小时就能到SD，南边跟墨 …"
+    },
+    {
+      "title": "Жалобы на бандитов | Форум – Arizona RolePlay",
+      "url": "https://forum.arizona-rp.com/forums/4043/",
+      "snippet": "Жалобы на бандитов Форумы Раздел игровых серверов Сервера Arizona RP Сервер №33 [Home] Жалобы System Светлый …"
+    }
+  ]
+}

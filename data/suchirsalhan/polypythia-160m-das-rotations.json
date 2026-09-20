@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "suchirsalhan/polypythia-160m-das-rotations",
+  "slug": "suchirsalhan-polypythia-160m-das-rotations",
+  "author": "suchirsalhan",
+  "url": "https://huggingface.co/suchirsalhan/polypythia-160m-das-rotations",
+  "created_at": "2026-09-20T11:10:37.000Z",
+  "updated_at": "2026-09-21T00:34:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pythia",
+    "polypythias",
+    "interpretability",
+    "iclr-2027",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Der beste Bürostuhl | Test 09/2026 | F.A.Z. Kaufkompass",
+      "url": "https://www.faz.net/kaufkompass/test/der-beste-buerostuhl/",
+      "snippet": "Ein guter Bürostuhl sollte es ihnen mindestens erlauben, Sitzhöhe und -tiefe sowie die Höhe der Armlehnen anzupassen. Eine …"
+    },
+    {
+      "title": "Bürostuhl-Test 2026: Die besten Modelle für Homeoffice und Büro",
+      "url": "https://www.chip.de/test-kaufberatung/haushalt-garten/buerostuehle-im-test-gesundes-sitzen-im-homeoffice_76f1f275-87a3-4a5a-81dd-98ba76a79435.html",
+      "snippet": "Sep 11, 2026 · Ein ergonomischer Bürostuhl sorgt nicht nur für mehr Komfort, sondern kann auch Rückenbeschwerden und …"
+    },
+    {
+      "title": "Schreibtischstuhl Ergonomisch kaufen bei OBI",
+      "url": "https://www.obi.de/search/schreibtischstuhl%20ergonomisch/?msockid=2cf4c0f9eec462590aadd723ef5d6308",
+      "snippet": "Schreibtischstuhl Ergonomisch kaufen und bestellen Online auf www.obi.de und in Ihrem Markt vor Ort OBI - alles für Heim, Haus, …"
+    },
+    {
+      "title": "Bürostühle im Test: Gute Schreibtischstühle fürs Homeoffice sind rar",
+      "url": "https://www.test.de/Buerostuhl-Test-5129157-0/",
+      "snippet": "Jan 23, 2024 · Der Bürostuhl-Test 2024 der Stiftung Warentest: jetzt vergleichen und einen guten, günstigen, ergonomischen …"
+    },
+    {
+      "title": "Suchergebnis Auf Amazon.de Für: Bürostühle - Bürostühle / Stühle ...",
+      "url": "https://www.amazon.de/St%C3%BChle-B%C3%BCro-M%C3%B6bel-Wohnen-Lifestyle/b?node=343511011",
+      "snippet": "Marsail Bürostuhl Ergonomisch Schreibtischstuhl: Ergonomischer Bürostuhl mit 2D-Kopfstütze, 2D-Lendenwirbelstütze, klappbaren …"
+    }
+  ]
+}
