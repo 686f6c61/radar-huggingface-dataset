@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "SYNAPSEai1/SynapseMusicV12-SFT",
+  "slug": "synapseai1-synapsemusicv12-sft",
+  "author": "SYNAPSEai1",
+  "url": "https://huggingface.co/SYNAPSEai1/SynapseMusicV12-SFT",
+  "created_at": "2026-09-20T12:30:32.000Z",
+  "updated_at": "2026-09-20T12:30:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-audio",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "acestep",
+    "feature-extraction",
+    "audio",
+    "music",
+    "text2music",
+    "text-to-audio",
+    "custom_code",
+    "arxiv:2602.00744",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2393872518,
+  "parameters_human": "2.39B",
+  "storage_bytes": 4791666819,
+  "storage_human": "4.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Denkspiele - 1001 Spiele",
+      "url": "https://www.1001spiele.de/denk",
+      "snippet": "Spielen das beste Denkspiele online auf 1001Spiele. Du wirst die größte Kollektion an kostenlosen Denk-Spielen für die ganze …"
+    },
+    {
+      "title": "1001 Spiele - Kostenlose coole online Spiele spielen!",
+      "url": "https://www.1001spiele.de/",
+      "snippet": "Die neusten und coolsten Spiele gesammelt auf einer Website! Bei uns findest du mehr als 3500!"
+    },
+    {
+      "title": "Spiele Mahjong Spiele auf 1001Spiele, gratis für alle!",
+      "url": "https://www.1001spiele.de/mahjong",
+      "snippet": "Spiele die besten Mahjong Spiele online auf 1001Spiele. Wir haben die besten Mahjong Spiele für Dich gesammelt. Worauf wartest …"
+    },
+    {
+      "title": "Treasures of the Mystic Sea - Denkspiele - 1001 Spiele",
+      "url": "https://www.1001spiele.de/denk/treasures-of-the-mystic-sea",
+      "snippet": "Treasures of the Mystic Sea ist ein Match-3-Spiel mit sechseckigen Spielsteinen. Sie gehen auf eine Schatzsuche. Folgen Sie der …"
+    },
+    {
+      "title": "Gorillaz Tiles - Denkspiele - 1001 Spiele",
+      "url": "https://www.1001spiele.de/denk/gorillaz-tiles",
+      "snippet": "Gorillaz Tiles ist ein mahjongähnliches Brettspiel. Versuche, alle Spielsteine abzuräumen. Tippe die zusammengehörigen Steine an …"
+    }
+  ]
+}

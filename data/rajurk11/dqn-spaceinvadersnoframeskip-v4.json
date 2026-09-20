@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "rajurk11/dqn-SpaceInvadersNoFrameskip-v4",
+  "slug": "rajurk11-dqn-spaceinvadersnoframeskip-v4",
+  "author": "rajurk11",
+  "url": "https://huggingface.co/rajurk11/dqn-SpaceInvadersNoFrameskip-v4",
+  "created_at": "2026-09-20T14:19:30.000Z",
+  "updated_at": "2026-09-20T14:19:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "SpaceInvadersNoFrameskip-v4",
+    "reinforcement-learning",
+    "deep-q-learning",
+    "deep-rl-course",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17,
+  "storage_human": "17 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Auchan.lu | Vos courses en ligne !",
+      "url": "https://auchan.lu/",
+      "snippet": "Faites vos courses en ligne ! Livraison au Luxembourg ou retrait en Drive. Le choix au meilleur prix. Infos magasins, catalogues et …"
+    },
+    {
+      "title": "Auchan - Kirchberg Shopping",
+      "url": "https://www.kirchberg-shopping.lu/magasins/auchan",
+      "snippet": "En 1961, le premier magasin Auchan de Gérard Mulliez voit le jour à Roubaix (France). Aujourd'hui, l'enseigne propose tous les …"
+    },
+    {
+      "title": "Auchan Luxembourg - Facebook",
+      "url": "https://www.facebook.com/auchan.lu/",
+      "snippet": "Du 10 au 26 septembre, vous pouvez nous soutenir lors de votre passage en caisse dans votre hypermarché Auchan, en utilisant les …"
+    },
+    {
+      "title": "Auchan Luxembourg",
+      "url": "https://auchan-jobs.lu/",
+      "snippet": "Esch-sur-Alzette - Luxembourg Employé de rayon - Après-midi (H-F)"
+    },
+    {
+      "title": "Auchan Retail – Luxembourg",
+      "url": "https://www.auchan-retail.com/en/location/auchan-retail-luxembourg/",
+      "snippet": "1 200 collaborateurs Le 1er magasin a ouvert en 1996 Auchan Retail Luxembourg compte 7 magasins sous enseigne, dont 3 …"
+    }
+  ]
+}

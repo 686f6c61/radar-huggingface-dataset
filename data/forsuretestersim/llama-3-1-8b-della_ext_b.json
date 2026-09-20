@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "ForSureTesterSim/Llama-3.1-8B-DELLA_Ext_B",
+  "slug": "forsuretestersim-llama-3-1-8b-della_ext_b",
+  "author": "ForSureTesterSim",
+  "url": "https://huggingface.co/ForSureTesterSim/Llama-3.1-8B-DELLA_Ext_B",
+  "created_at": "2026-09-20T16:22:14.000Z",
+  "updated_at": "2026-09-20T16:24:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "conversational",
+    "arxiv:2406.11617",
+    "base_model:Magpie-Align/Llama-3.1-8B-Magpie-Align-v0.2",
+    "base_model:merge:Magpie-Align/Llama-3.1-8B-Magpie-Align-v0.2",
+    "base_model:allenai/Llama-3.1-Tulu-3.1-8B",
+    "base_model:merge:allenai/Llama-3.1-Tulu-3.1-8B",
+    "base_model:meta-llama/Llama-3.1-8B",
+    "base_model:merge:meta-llama/Llama-3.1-8B",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:merge:meta-llama/Llama-3.1-8B-Instruct",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766256,
+  "storage_human": "16.1 GB",
+  "base_model": "allenai/Llama-3.1-Tulu-3.1-8B, Magpie-Align/Llama-3.1-8B-Magpie-Align-v0.2, meta-llama/Llama-3.1-8B, meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Speedtest by Ookla - The Global Broadband Speed Test",
+      "url": "https://www.speedtest.net/",
+      "snippet": "Test your internet speed on any device with Speedtest by Ookla, available for free on desktop and mobile apps."
+    },
+    {
+      "title": "Internet Speed Test | Fast.com",
+      "url": "https://fast.com/",
+      "snippet": "How fast is your download speed? In seconds, FAST.com's simple Internet speed test will estimate your ISP speed."
+    },
+    {
+      "title": "Internet Speed Test - Measure Network Performance | Cloudflare",
+      "url": "https://speed.cloudflare.com/",
+      "snippet": "Test your Internet connection. Check your network performance with our Internet speed test. Powered by Cloudflare's global edge …"
+    },
+    {
+      "title": "Internet Speed Test | Check Download & Upload Speeds",
+      "url": "https://www.highspeedinternet.com/tools/speed-test?msockid=2a833f47e51560fc0c94289de4216111",
+      "snippet": "Check your internet speed with our simple and fast speed test. Get detailed results for your download speed, upload speed, and …"
+    },
+    {
+      "title": "Internet Speed Test - Check Wi-Fi Speed | TestMySpeed.com",
+      "url": "https://www.testmyspeed.com/",
+      "snippet": "Test your internet speed instantly with TestMySpeed, the leading broadband speed test. Get real-time results for download, upload, …"
+    }
+  ]
+}

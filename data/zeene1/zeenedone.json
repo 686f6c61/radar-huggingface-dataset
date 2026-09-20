@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ZEENE1/ZEENEDONE",
+  "slug": "zeene1-zeenedone",
+  "author": "ZEENE1",
+  "url": "https://huggingface.co/ZEENE1/ZEENEDONE",
+  "created_at": "2026-09-20T17:09:13.000Z",
+  "updated_at": "2026-09-20T17:10:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "ig"
+  ],
+  "tags": [
+    "en",
+    "ig",
+    "dataset:lmsys/lmsys-chat-1m",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:finetune:Qwen/Qwen3.8-Flash-Next",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Service d'authentification web - ÉduConnect",
+      "url": "https://moncompte.educonnect.education.gouv.fr/",
+      "snippet": "Puisque votre navigateur ne supporte pas JavaScript, vous devez appuyer sur le bouton Continuer pour poursuivre."
+    },
+    {
+      "title": "Educonnect | Service Public",
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/R69201",
+      "snippet": "Educonnect Educonnect est un service d'authentification pour faire vos démarches liées à la scolarité et l'accès aux services …"
+    },
+    {
+      "title": "EduConnect Login 2026 Connexion à mon compte ENT Pronote",
+      "url": "https://www.educonnect.education/",
+      "snippet": "6 days ago · Comment se connecter à EduConnect ? Découvrez la méthode officielle pour accéder à votre compte ENT, Pronote et …"
+    },
+    {
+      "title": "Educonnect – Applications sur Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.edunext.educonnect&hl=fr",
+      "snippet": "Educonnect en association avec Edunext Technologies Pvt. Ltd. (http://www.edunexttechnologies.com) a lancé la toute première …"
+    },
+    {
+      "title": "EduConnect : un compte unique pour suivre et accompagner la …",
+      "url": "https://www.education.gouv.fr/educonnect-un-compte-unique-pour-suivre-et-accompagner-la-scolarite-de-mon-enfant-455196",
+      "snippet": "Sep 1, 2025 · Educonnect est un service d'authentification créé pour simplifier les démarches des usagers de l'éducation nationale et …"
+    }
+  ]
+}

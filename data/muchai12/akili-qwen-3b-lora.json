@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Muchai12/akili-qwen-3b-lora",
+  "slug": "muchai12-akili-qwen-3b-lora",
+  "author": "Muchai12",
+  "url": "https://huggingface.co/Muchai12/akili-qwen-3b-lora",
+  "created_at": "2026-09-20T13:30:26.000Z",
+  "updated_at": "2026-09-20T16:28:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen2",
+    "trl",
+    "en",
+    "base_model:unsloth/Qwen2.5-7B-Instruct-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen2.5-7B-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 334488550,
+  "storage_human": "334 MB",
+  "base_model": "unsloth/Qwen2.5-7B-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Quote of the Day - BrainyQuote",
+      "url": "https://www.brainyquote.com/quote_of_the_day",
+      "snippet": "1 day ago · Share five inspirational Quotes of the Day with friends on Facebook, Twitter, and blogs. Enjoy our Brainy, Funny, Love, …"
+    },
+    {
+      "title": "Bing",
+      "url": "https://www.bing.com/copilotsearch?q=quotes+of+the+day",
+      "snippet": "Gostaríamos de exibir a descriçãoaqui, mas o site que você está não nos permite."
+    },
+    {
+      "title": "Como Encontrar Citações Passadas do Quote of the Day do Bing …",
+      "url": "https://pt.ittrip.xyz/browser/arquivar-quote-dia-bing",
+      "snippet": "Embora o serviço não ofereça um repositório oficial, existem vários métodos eficazes para encontrar e arquivar as mensagens do …"
+    },
+    {
+      "title": "Quote of the Day — A Fresh Thought for Today",
+      "url": "https://bingquiz.com/quote-of-the-day/",
+      "snippet": "Aug 14, 2026 · Start today with a meaningful quote chosen to spark a positive thought, fresh perspective, or little moment of …"
+    },
+    {
+      "title": "Quote of the Day | 1 Daily Powerful Quote To Inspire",
+      "url": "https://quotesoftheday.org/",
+      "snippet": "1 day ago · Quote of the Day, sometimes called a daily quote , is a short and memorable line that you read for motivation, inspiration, …"
+    }
+  ]
+}

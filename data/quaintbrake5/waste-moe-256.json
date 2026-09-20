@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Quaintbrake5/waste-moe-256",
+  "slug": "quaintbrake5-waste-moe-256",
+  "author": "Quaintbrake5",
+  "url": "https://huggingface.co/Quaintbrake5/waste-moe-256",
+  "created_at": "2026-09-20T14:28:51.000Z",
+  "updated_at": "2026-09-20T14:29:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "vit_moe",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124179460,
+  "parameters_human": "124.2M",
+  "storage_bytes": 993546696,
+  "storage_human": "994 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ImmoScout24 – Mit über 6,5 Mio. Immobilien.",
+      "url": "https://www.immobilienscout24.de/?msockid=3b2468eb827a6114015e7f31839e60ba",
+      "snippet": "Die größte Auswahl an Wohnungen, Häusern und Gewerbeflächen findest du nur bei ImmoScout24. Immobilien ab 0€ vermieten …"
+    },
+    {
+      "title": "Haus kaufen: Häuser & Hauskauf bei ImmoScout24",
+      "url": "https://www.immobilienscout24.de/wohnen/haus-kaufen.html?msockid=3b2468eb827a6114015e7f31839e60ba",
+      "snippet": "Häuser kaufen bei ImmoScout24: Finden Sie Immobilienangebote für Häuser zum Kauf und profitieren Sie von einer großen …"
+    },
+    {
+      "title": "Immobilien - Häuser - Wohnungen - finden bei immowelt.de",
+      "url": "https://www.immowelt.de/?msockid=3b2468eb827a6114015e7f31839e60ba",
+      "snippet": "Aktuelle Immobilien, schöne Wohnungen und Häuser zur Miete oder Kauf in ganz Deutschland. Jetzt online, schnell & einfach, …"
+    },
+    {
+      "title": "Immobilien mieten/kaufen bei immowelt",
+      "url": "https://www.immowelt.de/suche/immobilien?msockid=3b2468eb827a6114015e7f31839e60ba",
+      "snippet": "Immobilien mieten/kaufen. Immobilien zum Kauf / zur Miete findest du bei Immowelt ⇒ Jetzt dank großer Auswahl Wunschimmobilie …"
+    },
+    {
+      "title": "Immobilien, Wohnungen und Häuser auf ImmoScout24",
+      "url": "https://www.immobilienscout24.at/",
+      "snippet": "Ob Wohnungen oder Häuser, zur Miete oder zum Kauf - Immobilien in ganz Österreich suchen und finden mit der Immobiliensuche …"
+    }
+  ]
+}

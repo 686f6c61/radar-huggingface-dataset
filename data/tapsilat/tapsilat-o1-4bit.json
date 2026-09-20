@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "tapsilat/tapsilat-o1-4bit",
+  "slug": "tapsilat-tapsilat-o1-4bit",
+  "author": "tapsilat",
+  "url": "https://huggingface.co/tapsilat/tapsilat-o1-4bit",
+  "created_at": "2026-09-20T18:45:37.000Z",
+  "updated_at": "2026-09-20T18:47:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen2",
+    "chat",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-14B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-14B-Instruct",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 8320917170,
+  "storage_human": "8.3 GB",
+  "base_model": "Qwen/Qwen2.5-14B-Instruct",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dropbox: Secure cloud storage, file sharing, and more",
+      "url": "https://www.dropbox.com/",
+      "snippet": "Discover Dropbox – secure, easy cloud storage for file sharing and collaboration. With Dash, save time and organize all your …"
+    },
+    {
+      "title": "Windows 版と Mac 版の Dropbox をインストール",
+      "url": "https://www.dropbox.com/ja/install",
+      "snippet": "Dropbox ならファイル、フォルダ、ドキュメントを作成・共有し、共同作業できます。Windows と Mac 用 Dropbox をダウンロー …"
+    },
+    {
+      "title": "Log In | Dropbox Sign",
+      "url": "https://app.sign.dropbox.com/account/logIn",
+      "snippet": "Sign in or create an account Sign in with Dropbox Sign in with Google or Email address Password"
+    },
+    {
+      "title": "Dropbox Help Center - How to use Dropbox - Dropbox Help",
+      "url": "https://help.dropbox.com/",
+      "snippet": "Explore the Dropbox Help Center to learn how to use Dropbox on your computer, phone, and tablet, and find answers to common …"
+    },
+    {
+      "title": "Dropbox デスクトップ アプリをダウンロードしてインストールする",
+      "url": "https://help.dropbox.com/ja-jp/installs/download-dropbox",
+      "snippet": "Mar 6, 2025 · Dropbox デスクトップ アプリをパソコンで使用するには、 ダウンロードしてインストールする 必要があります。 …"
+    }
+  ]
+}

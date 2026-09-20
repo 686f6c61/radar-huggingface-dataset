@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Muchai12/Akili",
+  "slug": "muchai12-akili",
+  "author": "Muchai12",
+  "url": "https://huggingface.co/Muchai12/Akili",
+  "created_at": "2026-09-20T12:39:58.000Z",
+  "updated_at": "2026-09-20T12:39:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "《逃离鸭科夫》各任务、升级与建造所需物品汇总-游民星空 ...",
+      "url": "https://www.gamersky.com/handbook/202510/2032531.shtml",
+      "snippet": "Oct 21, 2025 · 《逃离鸭科夫》中各项任务、升级与建造都需要大量的物品，为了帮助玩家规划物品的去留，下面请看由“姬路白雪”为 …"
+    },
+    {
+      "title": "鸭科夫攻略：任务、升级、建造物品需求全汇总【逃离鸭科夫 ...",
+      "url": "https://tieba.baidu.com/p/10168936127",
+      "snippet": "Oct 29, 2025 · 接下来我将给大家带来各类任务、升级、建造所需物品及其数量汇总。 帮助大家该卖的卖，该留的留，腾出仓库空间， …"
+    },
+    {
+      "title": "《逃离鸭科夫》各任务、升级与建造所需物品汇总",
+      "url": "https://news.17173.com/content/10222025/092440464.shtml",
+      "snippet": "Oct 22, 2025 · 《逃离鸭科夫》中各项任务、升级与建造都需要大量的物品，为了帮助玩家规划物品的去留，下面请看由“姬路白雪”为 …"
+    },
+    {
+      "title": "逃离鸭科夫全任务物品清单：从基建到J-Lab毕业材料汇总",
+      "url": "https://soudachegame.com/duckov/escape-duckov-mission-items-list",
+      "snippet": "Jan 5, 2026 · 还在为背包空间发愁？整理了《逃离鸭科夫》所有主支线任务所需物品清单，教你区分垃圾与关键道具。涵盖医疗、基 …"
+    },
+    {
+      "title": "《逃离鸭科夫》全主支线任务攻略 全任务完成方法_任务需求 ...",
+      "url": "https://www.gamersky.com/handbook/202510/2033623.shtml",
+      "snippet": "Oct 23, 2025 · 游玩过程因为我们背包尺寸有限，但是任务通常会找我们要各种材料，所以在搜刮过程可以使用ctrl+f搜索物品来查看是 …"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "RSRS64/qwen3-8b-eagle3-rust",
+  "slug": "rsrs64-qwen3-8b-eagle3-rust",
+  "author": "RSRS64",
+  "url": "https://huggingface.co/RSRS64/qwen3-8b-eagle3-rust",
+  "created_at": "2026-09-20T18:53:53.000Z",
+  "updated_at": "2026-09-20T18:57:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "sglang",
+  "languages": [
+    "en",
+    "code"
+  ],
+  "tags": [
+    "sglang",
+    "safetensors",
+    "llama",
+    "eagle3",
+    "speculative-decoding",
+    "rust",
+    "inference",
+    "en",
+    "code",
+    "dataset:Fortytwo-Network/Strandset-Rust-v1",
+    "base_model:Tengyunw/qwen3_8b_eagle3",
+    "base_model:finetune:Tengyunw/qwen3_8b_eagle3",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 399707776,
+  "parameters_human": "399.7M",
+  "storage_bytes": 799457128,
+  "storage_human": "799 MB",
+  "base_model": "Tengyunw/qwen3_8b_eagle3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amazon Prime Business",
+      "url": "https://www.amazon.de/businessprime",
+      "snippet": "Amazon Prime ist ein Mitgliedschaftsprogramm, das auf Amazon verfügbar ist. Es bietet Haushalts- und Unterhaltungsvorteile wie …"
+    },
+    {
+      "title": "Amazon Music | Hör dir Songs, Podcasts und vieles mehr an",
+      "url": "https://music.amazon.de/",
+      "snippet": "Suche und streame Musik und Podcasts über den Webbrowser. Höre dir deine liebsten Playlists aus über 100 Millionen Songs bei …"
+    },
+    {
+      "title": "Suchergebnis Auf Amazon.de Für: Österreich",
+      "url": "https://www.amazon.de/%C3%B6sterreich/s?k=%C3%B6sterreich",
+      "snippet": "Entdecken Sie vielfältige Österreich-Artikel – von Fahnen und Reisebüchern bis hin zu Wörterbüchern, Quizspielen und …"
+    },
+    {
+      "title": "Seller Central DE – Werden Sie Noch Heute Amazon-Verkäufer!",
+      "url": "https://sellercentral.amazon.de/",
+      "snippet": "Werden Sie Amazon-Verkaufspartner und profitieren Sie von potenziellen Vorteilen im Wert von über 45,000 €! Starten Sie noch …"
+    },
+    {
+      "title": "Amazon.de Associates Central",
+      "url": "https://partnernet.amazon.de/",
+      "snippet": "Amazon PartnerNet – das Affiliate-Marketing-Programm von Amazon Willkommen bei einem der größten Affiliate-Marketing …"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "arthu1/wind-arc-1-5-preview-safetensors",
+  "slug": "arthu1-wind-arc-1-5-preview-safetensors",
+  "author": "arthu1",
+  "url": "https://huggingface.co/arthu1/wind-arc-1-5-preview-safetensors",
+  "created_at": "2026-09-20T19:42:00.000Z",
+  "updated_at": "2026-09-20T19:42:12.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "causal-lm",
+    "wind-arc",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 173249280,
+  "parameters_human": "173.2M",
+  "storage_bytes": 693793289,
+  "storage_human": "694 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Baixar | OBS",
+      "url": "https://obsproject.com/pt-br/download",
+      "snippet": "Download OBS Studio for Windows, Mac or Linux"
+    },
+    {
+      "title": "Se connecter à facebook avec opera [Résolu] - Facebook",
+      "url": "https://forums.commentcamarche.net/forum/affich-23399559-se-connecter-a-facebook-avec-opera",
+      "snippet": "Bonjour, j'ai un gros problème avec facebook, je n'arrive pas à me connecter depuis 2 jours. j'utilise opera comme opérateur depuis …"
+    },
+    {
+      "title": "Forum Facebook - Réseaux sociaux - Discussions résolues",
+      "url": "https://forums.commentcamarche.net/forum/facebook-209/solved",
+      "snippet": "Gratuit et accessible à tous, ce site de communauté permet de se dépanner, se faire aider et se former à l'informatique et aux …"
+    },
+    {
+      "title": "Running in Portable Mode | OBS",
+      "url": "https://obsproject.com/kb/portable-mode",
+      "snippet": "Jul 23, 2024 · Portable Mode loads the OBS configuration directory from the same path that the application is stored, allowing for …"
+    },
+    {
+      "title": "Messenger lite android - Forum Facebook Messenger",
+      "url": "https://forums.commentcamarche.net/forum/affich-37476706-messenger-lite-android",
+      "snippet": "Jan 3, 2022 · Bon après avoir testé Messenger Lite et la version normale sur mon téléphone Android, Je peux vous affirmer que la …"
+    }
+  ]
+}

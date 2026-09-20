@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "fahadhafeezofficial/cyberlens-saes",
+  "slug": "fahadhafeezofficial-cyberlens-saes",
+  "author": "fahadhafeezofficial",
+  "url": "https://huggingface.co/fahadhafeezofficial/cyberlens-saes",
+  "created_at": "2026-09-20T14:20:37.000Z",
+  "updated_at": "2026-09-21T14:14:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "cyberlens",
+  "languages": [],
+  "tags": [
+    "cyberlens",
+    "jumprelu-sae",
+    "interpretability",
+    "sparse-autoencoder",
+    "cybersecurity",
+    "mitre-attack",
+    "cissp",
+    "pythia",
+    "gemma-scope",
+    "feature-extraction",
+    "en",
+    "arxiv:2508.09363",
+    "base_model:EleutherAI/pythia-160m",
+    "base_model:finetune:EleutherAI/pythia-160m",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 72752992,
+  "storage_human": "73 MB",
+  "base_model": "EleutherAI/pythia-160m",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "unsolicited \"Your new account on XNXX GOLD\" email - Reddit",
+      "url": "https://www.reddit.com/r/Scams/comments/wip14o/unsolicited_your_new_account_on_xnxx_gold_email/",
+      "snippet": "Aug 7, 2022 · Archived post. New comments cannot be posted and votes cannot be cast."
+    },
+    {
+      "title": "datingoverfifty - Reddit",
+      "url": "https://www.reddit.com/r/datingoverfifty/",
+      "snippet": "r/datingoverfifty: A forum for discussing the ins and outs of dating over 50, as well as nascent relationships, and single life."
+    },
+    {
+      "title": "World of Warcraft Classes (matching archetypes with archetypes)",
+      "url": "https://www.typologycentral.com/threads/world-of-warcraft-classes-matching-archetypes-with-archetypes.21665/",
+      "snippet": "Sep 13, 2009 · chris1207 New member Joined Apr 11, 2008 Messages 467 MBTI Type XNXX Enneagram 3w2 Dec 27, 2009 #18"
+    },
+    {
+      "title": "[Type 4] - I'm a really special 4w5; I don't want to be special.",
+      "url": "https://www.typologycentral.com/threads/im-a-really-special-4w5-i-dont-want-to-be-special.57825/",
+      "snippet": "Aug 21, 2012 · This irks me no end, this emphasis on wanting to be unique, different, and special. I don't want that. I would like to fit …"
+    },
+    {
+      "title": "TikTok - humanity in all forms - Reddit",
+      "url": "https://www.reddit.com/r/TikTok/",
+      "snippet": "This is a place to post fun, cute, funny, interesting titktok videos you've found. This sub is to share fun tiktok you've found or made. …"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "ixim/Image21-INT8",
+  "slug": "ixim-image21-int8",
+  "author": "ixim",
+  "url": "https://huggingface.co/ixim/Image21-INT8",
+  "created_at": "2026-09-20T15:59:26.000Z",
+  "updated_at": "2026-09-21T00:48:10.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "bitsandbytes",
+    "int8",
+    "image-generation",
+    "image-editing",
+    "rgba",
+    "text-to-image",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen-Image-2.1",
+    "base_model:quantized:Qwen/Qwen-Image-2.1",
+    "license:other",
+    "diffusers:QwenImage21Pipeline",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7116566528,
+  "parameters_human": "7.12B",
+  "storage_bytes": 18745945571,
+  "storage_human": "18.7 GB",
+  "base_model": "Qwen/Qwen-Image-2.1",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "東角頭站概覽 - 深圳地鐵 - 地鐵通 MetroMan",
+      "url": "https://www.metroman.cn/zh-hant/cities/shenzhen/stations/dongjiaotou",
+      "snippet": "東角頭站詳情：換乘路綫、首末班車時刻、出口與周邊地標一覽，並可在地圖中查看精確位置。"
+    },
+    {
+      "title": "東角頭站 (Dongjiaotou Station) | 深圳地鐵Line 2號線",
+      "url": "https://hkmytravel.com/sztc/%E6%B7%B1%E5%9C%B3%E5%85%AC%E5%85%B1%E4%BA%A4%E9%80%9A/%E6%B7%B1%E5%9C%B3%E5%9C%B0%E9%90%B5/%E5%9C%B0%E9%90%B5%E7%AB%99/line-2-dongjiaotou/",
+      "snippet": "深圳地鐵東角頭站 (Line 2號線) - 完整指南，包含出口地圖、以及Nanshan區的附近景點。"
+    },
+    {
+      "title": "东角头站概览 - 深圳地铁 - 地铁通 MetroMan",
+      "url": "https://www.metroman.cn/cities/shenzhen/stations/dongjiaotou",
+      "snippet": "东角头站详情：换乘线路、首末班车时刻、出入口及周边地标一览，并可在地图中查看精确位置。"
+    },
+    {
+      "title": "深圳地铁2号线东角头站运营时间表_所属线路_周边吃喝玩乐 - 地铁圈_ …",
+      "url": "https://sz.dushiquan.net/dt/35/",
+      "snippet": "东角头地铁站 东角头地铁站是深圳地铁2号线（8号线）的一个站点，共有3个出口，分别是A出口、B出口、D出口，可根据下方东角头 …"
+    },
+    {
+      "title": "東角頭站 | 深圳交通百科 | Fandom",
+      "url": "https://sztrans.fandom.com/wiki/%E4%B8%9C%E8%A7%92%E5%A4%B4%E7%AB%99?variant=zh-tw",
+      "snippet": "东角头站（Dongjiaotou Station）位于南山区蛇口新街和湾厦路路口，靠近东角头社区和蛇口渔人码头，是深圳地铁 2号线的中途站。 …"
+    }
+  ]
+}

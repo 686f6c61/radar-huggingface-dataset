@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "ananttrivedi/adult_reddit_text_lora",
+  "slug": "ananttrivedi-adult_reddit_text_lora",
+  "author": "ananttrivedi",
+  "url": "https://huggingface.co/ananttrivedi/adult_reddit_text_lora",
+  "created_at": "2026-09-20T13:53:12.000Z",
+  "updated_at": "2026-09-20T13:53:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "llama",
+    "trl",
+    "en",
+    "base_model:unsloth/llama-3-8b-bnb-4bit",
+    "base_model:finetune:unsloth/llama-3-8b-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 688359129,
+  "storage_human": "688 MB",
+  "base_model": "unsloth/llama-3-8b-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bakwena Day Spa - Zevenwacht | Kuilsrivier | Spas/beauty/personal …",
+      "url": "https://za.placedigger.com/bakwena-day-spa---zevenwacht1255919915.html",
+      "snippet": "Bakwena Spa was developed by offering an innovative and creative approach to spa and spa therapy in South Africa. Wellness is a …"
+    },
+    {
+      "title": "BAKWENA DAY SPA - All You SHOULD Know Before You Go 2026 (w/ …",
+      "url": "https://www.tripadvisor.co.za/Attraction_Review-g312613-d17250167-Reviews-Bakwena_Day_Spa-Centurion_Gauteng.html",
+      "snippet": "We spent a morning at Balwena Day Spa in Erasmia. We thought enjoyed the experience. It was a morning of relaxation. The staff …"
+    },
+    {
+      "title": "Bakwena Spa - Centurion - A Better Places",
+      "url": "https://a-better-place.com/SA/bakwena-spa-i266653/",
+      "snippet": "Located at the Velmore Hotel Estate in Centurion, Bakwena Spa offers half day, full day, evening packages and multiple treatments. …"
+    },
+    {
+      "title": "Bakwena Spa – Hartbeespoort",
+      "url": "https://helloharties.co.za/portfolio-items/bakwena-spa/",
+      "snippet": "Our customers are our focus and all leave the spa feeling relaxed, rejuvenated and restored. Step out and Indulge yourself, whether a …"
+    },
+    {
+      "title": "Bakwena Spa Centurion - WorldPlaces",
+      "url": "https://south-africa.worldplaces.me/massage-in-centurion/25371540-bakwena-spa.html",
+      "snippet": "Located at the Velmore Hotel Estate in Centurion, Bakwena Spa offers half day, full day, evening packages and multiple treatments. …"
+    }
+  ]
+}

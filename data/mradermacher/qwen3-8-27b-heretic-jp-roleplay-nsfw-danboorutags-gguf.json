@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen3.8-27B-Heretic-JP-Roleplay-NSFW-DanbooruTags-GGUF",
+  "slug": "mradermacher-qwen3-8-27b-heretic-jp-roleplay-nsfw-danboorutags-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen3.8-27B-Heretic-JP-Roleplay-NSFW-DanbooruTags-GGUF",
+  "created_at": "2026-09-20T14:47:21.000Z",
+  "updated_at": "2026-09-21T07:36:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "ja",
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "not-for-all-audiences",
+    "roleplay",
+    "japanese",
+    "danbooru",
+    "danbooru-tags",
+    "stable-diffusion",
+    "prompt-generation",
+    "heretic",
+    "abliterated",
+    "uncensored",
+    "lora",
+    "unsloth",
+    "qwen3.8",
+    "qwen3_5",
+    "conversational",
+    "ja",
+    "en",
+    "zh",
+    "dataset:dartags/danbooru-2408-blind-captions",
+    "dataset:Aratako/Synthetic-Japanese-Roleplay-NSFW-DeepSeek-V3-0324-20k-formatted",
+    "base_model:sss22213/Qwen3.8-27B-Heretic-JP-Roleplay-NSFW-DanbooruTags",
+    "base_model:adapter:sss22213/Qwen3.8-27B-Heretic-JP-Roleplay-NSFW-DanbooruTags",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 187905354720,
+  "storage_human": "187.9 GB",
+  "base_model": "sss22213/Qwen3.8-27B-Heretic-JP-Roleplay-NSFW-DanbooruTags",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "中国地图 - 卫星地图、实景全图 - 八九网",
+      "url": "https://bajiu.cn/ditu/?id=2",
+      "snippet": "这是中国地图网页，提供中国卫星地图2026高清版大图，包括可以看到城市、村庄、房子和真实地貌景观的新版中国3D实景电子地图 …"
+    },
+    {
+      "title": "中国三维地图 - 3D地图、立体地图 - 八九网",
+      "url": "https://bajiu.cn/ditu/?sw=2",
+      "snippet": "这是中国三维地图网页，提供中国立体地图高清版，包括有中国三维全景地图，可以看到中国3D实景地图，查看真实的在线卫星地图 …"
+    },
+    {
+      "title": "北斗地图 - 卫星地图、2026高清版 - 八九网",
+      "url": "https://bajiu.cn/ditu/?id=20522",
+      "snippet": "这是北斗卫星地图网页，提供2026高清版的北斗地图，能够看到人、看见村庄、房子和真实地貌景观，是3D超清晰北斗导航卫星实景 …"
+    },
+    {
+      "title": "地图测距离 - 测量计算距离的地图 - 八九网",
+      "url": "https://bajiu.cn/ditu/?id=20681",
+      "snippet": "这是地图测距离网页，提供在线地图距离测量工具，是卫星地图距离计算器，是能够在线测算距离的地图，在这里可以根据卫星地图影 …"
+    },
+    {
+      "title": "中国地形图 - 地势图、地貌图 - 八九网",
+      "url": "https://bajiu.cn/ditu/?dx=2",
+      "snippet": "这是中国地形图网页，提供中国在线地形图高清版大图，包含有中国地势图和中国地貌图，在这里可以看到中国全景地形图超清晰电子 …"
+    }
+  ]
+}

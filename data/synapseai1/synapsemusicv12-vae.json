@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "SYNAPSEai1/SynapseMusicV12-VAE",
+  "slug": "synapseai1-synapsemusicv12-vae",
+  "author": "SYNAPSEai1",
+  "url": "https://huggingface.co/SYNAPSEai1/SynapseMusicV12-VAE",
+  "created_at": "2026-09-20T12:36:43.000Z",
+  "updated_at": "2026-09-20T12:36:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-audio",
+  "library": "stable-audio-tools",
+  "languages": [],
+  "tags": [
+    "stable-audio-tools",
+    "autoencoder",
+    "audio",
+    "music",
+    "vae",
+    "ace-step",
+    "text-to-audio",
+    "arxiv:2602.00744",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 674902910,
+  "storage_human": "675 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sporti Madrid - Calle del Dr. Fleming, 44, Chamartín, 28036 ... - Fresha",
+      "url": "https://www.fresha.com/es/lvp/sporti-madrid-calle-del-doctor-fleming-madrid-X47lWA",
+      "snippet": "Sporti Madrid Mostrar número Calle del Dr. Fleming, 44, Chamartín, 28036 Madrid, Spain Cómo llegar Llamar para reservar Sitio web"
+    },
+    {
+      "title": "Calle Doctor Fleming, 44, Madrid - idealista",
+      "url": "https://www.idealista.com/maps/madrid-madrid/calle-doctor-fleming/44/",
+      "snippet": "Descubre las características, precios estimados y datos catastrales de cada uno de los inmuebles de Calle Doctor Fleming, 44, Madrid."
+    },
+    {
+      "title": "Calle Doctor Fleming 44 — Chamartín · Madrid — Benjamín Cousiño …",
+      "url": "https://www.bcousinoprop.com/web/propiedades/calle-doctor-fleming-44-doctor-fleming-44-vivienda",
+      "snippet": "Descripción te presenta este elegante y acogedor apartamento de un dormitorio situado en una de las zonas más exclusivas y …"
+    },
+    {
+      "title": "Calle del Doctor Fléming, 44 - Callejero de Madrid - Callejero.net",
+      "url": "https://madrid.callejero.net/calle-del-doctor-fleming_numero-44.html",
+      "snippet": "En Madrid, provincia de Madrid, encontramos la dirección Calle del Doctor Fléming, número 44. Si no has encontrado la dirección …"
+    },
+    {
+      "title": "Instituto ACT Psicólogos - Calle del Dr. Fleming, 44… - Cybo",
+      "url": "https://www.cybo.com/ES-biz/instituto-act-psic%C3%B3logos",
+      "snippet": "Instituto ACT Psicólogos is located in Madrid, Community of Madrid, and was founded in 2009. This business is working in the …"
+    }
+  ]
+}

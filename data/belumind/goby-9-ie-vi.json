@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "belumind/goby-9-ie-vi",
+  "slug": "belumind-goby-9-ie-vi",
+  "author": "belumind",
+  "url": "https://huggingface.co/belumind/goby-9-ie-vi",
+  "created_at": "2026-09-20T17:21:29.000Z",
+  "updated_at": "2026-09-21T07:41:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "gliner",
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "gliner",
+    "pytorch",
+    "safetensors",
+    "relation-extraction",
+    "named-entity-recognition",
+    "vietnamese",
+    "information-extraction",
+    "token-classification",
+    "vi",
+    "base_model:knowledgator/gliner-relex-large-v1.0",
+    "base_model:finetune:knowledgator/gliner-relex-large-v1.0",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 466576896,
+  "parameters_human": "466.6M",
+  "storage_bytes": 3732831583,
+  "storage_human": "3.7 GB",
+  "base_model": "knowledgator/gliner-relex-large-v1.0",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "俄罗斯搜索引擎网址 yandex官网入口直达 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/725567645356284605.html",
+      "snippet": "Nov 11, 2025 · 俄罗斯搜索引擎网址 yandex官网入口直达Yandex的官方网址如下：国际版入口：https://yandex.com/俄罗斯本土版入 …"
+    },
+    {
+      "title": "珊瑚颂歌词 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/104232064.html",
+      "snippet": "歌名：《珊瑚颂》 所属专辑：红珊瑚 歌曲原唱：赵云卿 谱曲：胡士平、王锡仁 歌曲歌词 王锡仁、胡士平曲 一树红花照碧海，一团火 …"
+    },
+    {
+      "title": "twitch - 知乎",
+      "url": "https://www.zhihu.com/topic/19851981/hot",
+      "snippet": "根据其内部分析师透露，Twitch每月的访问量超过3800万，有超过2000万个游戏玩家汇聚到这个平台，每个访问用户在网站的日平均 …"
+    },
+    {
+      "title": "twitch - 知乎",
+      "url": "https://www.zhihu.com/topic/19851981/intro",
+      "snippet": "Twitch是一个专注于游戏相关内容的流媒体平台，支持多语言，拥有大量用户和高访问量，每日平均停留时间较长。"
+    },
+    {
+      "title": "服务器未发送任何数据，因此无法载入该网 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/495ba841e6eb3238b30ede1c.html",
+      "snippet": "Nov 14, 2015 · 刷新DNS 上不了网，传递不了网络数据，这样的问题很多，其中DNS域名分析错误，也是其中经常发生的事，如果域 …"
+    }
+  ]
+}

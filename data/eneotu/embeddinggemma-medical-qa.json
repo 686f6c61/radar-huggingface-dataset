@@ -1,0 +1,168 @@
+{
+  "schema": 1,
+  "id": "eneotu/embeddinggemma-medical-qa",
+  "slug": "eneotu-embeddinggemma-medical-qa",
+  "author": "eneotu",
+  "url": "https://huggingface.co/eneotu/embeddinggemma-medical-qa",
+  "created_at": "2026-09-20T18:57:56.000Z",
+  "updated_at": "2026-09-20T18:58:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "gemma3_text",
+    "sentence-similarity",
+    "feature-extraction",
+    "dense",
+    "generated_from_trainer",
+    "dataset_size:10000",
+    "loss:MultipleNegativesRankingLoss",
+    "unsloth",
+    "arxiv:1908.10084",
+    "arxiv:1807.03748",
+    "base_model:unsloth/embeddinggemma-300m",
+    "base_model:finetune:unsloth/embeddinggemma-300m",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 55908895,
+  "storage_human": "56 MB",
+  "base_model": "unsloth/embeddinggemma-300m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Information Retrieval",
+      "dataset": "Unknown",
+      "metric": "Cosine Accuracy@1",
+      "value": 0.703
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "Unknown",
+      "metric": "Cosine Accuracy@3",
+      "value": 0.8305
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "Unknown",
+      "metric": "Cosine Accuracy@5",
+      "value": 0.873
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "Unknown",
+      "metric": "Cosine Accuracy@10",
+      "value": 0.9125
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "Unknown",
+      "metric": "Cosine Precision@1",
+      "value": 0.703
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "Unknown",
+      "metric": "Cosine Precision@3",
+      "value": 0.2768333333333333
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "Unknown",
+      "metric": "Cosine Precision@5",
+      "value": 0.17460000000000003
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "Unknown",
+      "metric": "Cosine Precision@10",
+      "value": 0.09125000000000001
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "Unknown",
+      "metric": "Cosine Recall@1",
+      "value": 0.703
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "Unknown",
+      "metric": "Cosine Recall@3",
+      "value": 0.8305
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "Unknown",
+      "metric": "Cosine Recall@5",
+      "value": 0.873
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "Unknown",
+      "metric": "Cosine Recall@10",
+      "value": 0.9125
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "Unknown",
+      "metric": "Cosine Ndcg@10",
+      "value": 0.8082442348615091
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "Unknown",
+      "metric": "Cosine Mrr@10",
+      "value": 0.7747152777777774
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "Unknown",
+      "metric": "Cosine Map@100",
+      "value": 0.7779535102106035
+    }
+  ],
+  "sources": [
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/",
+      "snippet": "Connect and share with friends, family, and the world on Facebook."
+    },
+    {
+      "title": "Facebook Marketplace: Buy and Sell Items Locally or Shipped | Facebook",
+      "url": "https://www.facebook.com/marketplace/",
+      "snippet": "Buy or sell new and used items easily on Facebook Marketplace, locally or from businesses. Find great deals on new items shipped …"
+    },
+    {
+      "title": "Meta for Business (formerly Facebook for Business)",
+      "url": "https://business.facebook.com/",
+      "snippet": "By logging in, you can navigate to all business tools like Meta Business Suite, Ads Manager and more to help you connect with your …"
+    },
+    {
+      "title": "Meta for Business: Marketing Solutions on Facebook and Instagram",
+      "url": "https://ads.facebook.com/",
+      "snippet": "Meta for Business provides marketing and advertising tools, tips, best practices, and case studies for using Facebook and Instagram …"
+    },
+    {
+      "title": "Log Into Facebook",
+      "url": "https://secure.facebook.com/login/",
+      "snippet": "Log into Facebook to start sharing and connecting with your friends, family, and people you know."
+    }
+  ]
+}

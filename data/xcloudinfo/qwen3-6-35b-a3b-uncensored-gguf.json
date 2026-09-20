@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "xCloudinfo/Qwen3.6-35B-A3B-Uncensored-GGUF",
+  "slug": "xcloudinfo-qwen3-6-35b-a3b-uncensored-gguf",
+  "author": "xCloudinfo",
+  "url": "https://huggingface.co/xCloudinfo/Qwen3.6-35B-A3B-Uncensored-GGUF",
+  "created_at": "2026-09-20T17:58:21.000Z",
+  "updated_at": "2026-09-20T19:00:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "uncensored",
+    "abliterated",
+    "qwen3.5-moe",
+    "moe",
+    "reasoning",
+    "text-generation",
+    "zh",
+    "en",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:quantized:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 141701192832,
+  "storage_human": "141.7 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GPU Instancing: Technical Deep Dive and Performance Impact",
+      "url": "https://gpu-benchmark.org/article-gpu-instancing-deep-dive.html",
+      "snippet": "Jan 17, 2025 · Comprehensive guide to GPU instancing technology. Learn how instancing works, performance benefits, …"
+    },
+    {
+      "title": "InstancedMesh Guide: 1 000 000 Objects at 60 FPS | 3D…",
+      "url": "https://www.mysimulator.uk/content/tutorials/instancedmesh-guide.html",
+      "snippet": "This tutorial covers: Why Instancing Matters, Basic InstancedMesh Setup, Per-Instance Transforms (setMatrixAt), Per-Instance …"
+    },
+    {
+      "title": "Performance inquiry: Instanced Skinned Meshes vs. GPU Static Meshes …",
+      "url": "https://forums.unrealengine.com/t/performance-inquiry-instanced-skinned-meshes-vs-gpu-static-meshes-for-dense-pcg-grass/2810631",
+      "snippet": "Aug 18, 2026 · What is the performance overhead of instancing thousands of bone-driven meshes via PCG compared to using the …"
+    },
+    {
+      "title": "How to Benchmark Istio Service Mesh Performance",
+      "url": "https://oneuptime.com/blog/post/2026-02-24-how-to-benchmark-istio-service-mesh-performance/view",
+      "snippet": "Feb 24, 2026 · A comprehensive guide to benchmarking Istio service mesh performance including tools, methodologies, and …"
+    },
+    {
+      "title": "Mesh Shading Part 3: Instancing | chaoticbob.github.io",
+      "url": "https://chaoticbob.github.io/2024/01/26/mesh-shading-part-3.html",
+      "snippet": "Jan 26, 2024 · I assume you’re reading this post because you’re already interested in mesh shading. Instead, my objective is to …"
+    }
+  ]
+}

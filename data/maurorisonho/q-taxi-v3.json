@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "maurorisonho/q-Taxi-v3",
+  "slug": "maurorisonho-q-taxi-v3",
+  "author": "maurorisonho",
+  "url": "https://huggingface.co/maurorisonho/q-Taxi-v3",
+  "created_at": "2026-09-20T17:16:16.000Z",
+  "updated_at": "2026-09-20T19:24:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "q-learning",
+  "languages": [],
+  "tags": [
+    "Taxi-v3",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 130063,
+  "storage_human": "130063 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tracking a package after 120 days... : r/UPS - Reddit",
+      "url": "https://www.reddit.com/r/UPS/comments/a7iwbb/tracking_a_package_after_120_days/",
+      "snippet": "Dec 19, 2018 · Tracking a package after 120 days... I need to track a package that is past the 120 day mark, UPS.com just says \"UPS …"
+    },
+    {
+      "title": "Dropped off Amazon return, but not showing up : r/UPS - Reddit",
+      "url": "https://www.reddit.com/r/UPS/comments/f30ace/dropped_off_amazon_return_but_not_showing_up/",
+      "snippet": "Feb 12, 2020 · The tracking number that Amazon gave you isn't a real tracking number in that case because the item is a …"
+    },
+    {
+      "title": "Stuck on “Label Created since May 29th” : r/UPS - Reddit",
+      "url": "https://www.reddit.com/r/UPS/comments/h094c8/stuck_on_label_created_since_may_29th/",
+      "snippet": "It’s also UPS Ground as well. I really don’t think it takes this long for UPS ground. Amazon says delivery is June 8th-June 10th and …"
+    },
+    {
+      "title": "Are the estimated times ever correct? : r/UPS - Reddit",
+      "url": "https://www.reddit.com/r/UPS/comments/19ep5jt/are_the_estimated_times_ever_correct/",
+      "snippet": "If it hasn’t been handed off to UPS yet, how could they accurately estimate? 90% of these come down to the shipper printing the …"
+    },
+    {
+      "title": "r/UPS on Reddit: Accidentally used same shipping label for 2 different ...",
+      "url": "https://www.reddit.com/r/UPS/comments/139vh6v/accidentally_used_same_shipping_label_for_2/",
+      "snippet": "May 6, 2023 · I was shipping (2) different packages to the same place, but accidentally printed out the same label for both packages. …"
+    }
+  ]
+}

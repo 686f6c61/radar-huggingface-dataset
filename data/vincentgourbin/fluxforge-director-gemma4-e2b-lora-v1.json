@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "VincentGOURBIN/fluxforge-director-gemma4-e2b-lora-v1",
+  "slug": "vincentgourbin-fluxforge-director-gemma4-e2b-lora-v1",
+  "author": "VincentGOURBIN",
+  "url": "https://huggingface.co/VincentGOURBIN/fluxforge-director-gemma4-e2b-lora-v1",
+  "created_at": "2026-09-20T13:13:47.000Z",
+  "updated_at": "2026-09-20T13:14:08.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "lora",
+    "gemma-4",
+    "fluxforge-studio",
+    "director",
+    "base_model:mlx-community/gemma-4-e2b-it-bf16",
+    "base_model:adapter:mlx-community/gemma-4-e2b-it-bf16",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 27290760,
+  "storage_human": "27 MB",
+  "base_model": "mlx-community/gemma-4-e2b-it-bf16",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Samahan Ajurvédský instantní bylinný nápoj 100 x 4 g",
+      "url": "https://instantni-napoje.heureka.cz/samahan-ajurvedsky-instantni-bylinny-napoj-100-x-4-g/",
+      "snippet": "Jul 1, 2026 · Samahan najdete zařazený mezi čaji, ale louhováním se nepřipravuje. Jedná se o velmi koncentrovaný bylinný …"
+    },
+    {
+      "title": "Samahan Instantní bylinný nápoj 100 sáčků - Dr. Max Lékárna",
+      "url": "https://www.drmax.cz/samahan-instantni-bylinny-napoj-100-sacku",
+      "snippet": "Samahan je instantní bylinný čaj, jehož speciální složení podpoří vaši fyzickou i duševní pohodu. Směs tradičních bylin a kořenů vás …"
+    },
+    {
+      "title": "Link Natural Products Samahan 100x 4 g od 549 Kč - Zbozi.cz",
+      "url": "https://www.zbozi.cz/vyrobek/link-natural-products-samahan/?varianta=100x-4-g",
+      "snippet": "Link Natural Products Samahan 100x 4 g v 73 obchodech na Zboží.cz. Srovnejte ceny, přečtěte si recenze, najděte podobné …"
+    },
+    {
+      "title": "Samahan instantní bylinný nápoj 100x4g - skladem | BENU.cz",
+      "url": "https://www.benu.cz/samahan-instantni-bylinny-napoj-100x4g",
+      "snippet": "Nápoj ze směsi bylin a koření chutná výrazně po pepři, koriandru a zázvoru. Obsahuje 14 různých bylin: Balení obsahuje 100 sáčků. …"
+    },
+    {
+      "title": "Samahan instantní bylinný nápoj 100 sáčků - Magistra.cz",
+      "url": "https://www.magistra.cz/cs/produkt/samahan-instantni-bylinny-napoj-100-sacku",
+      "snippet": "Samahan je bylinný čaj, který nabízí vynikající způsob, jak podpořit své zdraví a pohodu. Tato směs tradičních bylin a kořenů je …"
+    }
+  ]
+}

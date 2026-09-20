@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "SirSahOl/Qwen-Image-2.1-mlx-16bit",
+  "slug": "sirsahol-qwen-image-2-1-mlx-16bit",
+  "author": "SirSahOl",
+  "url": "https://huggingface.co/SirSahOl/Qwen-Image-2.1-mlx-16bit",
+  "created_at": "2026-09-20T17:01:46.000Z",
+  "updated_at": "2026-09-20T21:56:18.000Z",
+  "license": "tongyi-qianwen-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "mflux",
+  "languages": [],
+  "tags": [
+    "mflux",
+    "safetensors",
+    "mlx",
+    "apple-silicon",
+    "qwen",
+    "diffusion",
+    "text-to-image",
+    "image-generation",
+    "base_model:Qwen/Qwen-Image",
+    "base_model:finetune:Qwen/Qwen-Image",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 77924158180,
+  "storage_human": "77.9 GB",
+  "base_model": "Qwen/Qwen-Image",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "梦幻西游黑风山副本抄写大全_百度知道",
+      "url": "https://zhidao.baidu.com/question/580670653.html",
+      "snippet": "梦幻西游黑风山副本抄写大全梦幻西游黑风山副本抄写大全如下：1、若菩萨欲得净土当净其心随其心净则佛土净2、法尚应舍何况非 …"
+    },
+    {
+      "title": "管理会计的overhead absorption rate是什么？怎么算呢_百度知道",
+      "url": "https://zhidao.baidu.com/question/73167878.html",
+      "snippet": "overhead absorption rate是指经营管理成本或者制造成本。 计算： 期初在产品成本 + 本期发生生产费用 = 本期完工产品成本 +期末在 …"
+    },
+    {
+      "title": "我是15年CIMA学生，管理会计overhead analy里 ... - 知乎",
+      "url": "https://www.zhihu.com/question/28951609?sort=cre",
+      "snippet": "我是15年CIMA学生，管理会计overhead analy里apportionment和overhead absorption rate (OAR)怎么理解？"
+    },
+    {
+      "title": "Forum OAR - beta - Informaţie",
+      "url": "https://forum.oar.archi/",
+      "snippet": "Prima pagină Contactează-ne Şterge toate cookie-urile forumului Ora este UTC+03:00 Europe/Bucharest"
+    },
+    {
+      "title": "Absorption costing里为什么会出现under/over-absorption？ - 知乎",
+      "url": "https://www.zhihu.com/question/50163393",
+      "snippet": "Absorption costing中出现under/over-absorption与OAR计算方式有关，探讨其原因和解决方法。"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "ArtyomSubDiv/pythia-14m-dd-rus-draft",
+  "slug": "artyomsubdiv-pythia-14m-dd-rus-draft",
+  "author": "ArtyomSubDiv",
+  "url": "https://huggingface.co/ArtyomSubDiv/pythia-14m-dd-rus-draft",
+  "created_at": "2026-09-20T16:20:34.000Z",
+  "updated_at": "2026-09-20T19:50:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "gpt_neox",
+    "text-generation",
+    "pytorch",
+    "causal-lm",
+    "pythia",
+    "ru",
+    "dataset:dim/databricks_dolly_15k_ru",
+    "base_model:EleutherAI/pythia-14m-deduped",
+    "base_model:finetune:EleutherAI/pythia-14m-deduped",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14067712,
+  "parameters_human": "14.1M",
+  "storage_bytes": 58072992,
+  "storage_human": "58 MB",
+  "base_model": "EleutherAI/pythia-14m-deduped",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/auth/?locale=de-DE",
+      "snippet": "Nutze ChatGPT, um Fragen zu beantworten, Texte zu verfassen, Bilder zu erstellen, Aufgaben zu erledigen und zu coden – alles an …"
+    },
+    {
+      "title": "Get started | ChatGPT",
+      "url": "https://chatgpt.com/auth/login",
+      "snippet": "Log in or sign up to ChatGPT"
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download …"
+    },
+    {
+      "title": "ChatGPT Deutsch",
+      "url": "https://chatgpt.com/de-DE/",
+      "snippet": "Nutze ChatGPT, um Fragen zu beantworten, Texte zu verfassen, Bilder zu erstellen, Aufgaben zu erledigen und zu coden – alles an …"
+    },
+    {
+      "title": "OpenAI Platform",
+      "url": "https://openai.com/login/",
+      "snippet": "Interact with our flagship language models in a conversational interface"
+    }
+  ]
+}

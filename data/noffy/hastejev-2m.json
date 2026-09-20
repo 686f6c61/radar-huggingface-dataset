@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "noffy/hastejev-2m",
+  "slug": "noffy-hastejev-2m",
+  "author": "noffy",
+  "url": "https://huggingface.co/noffy/hastejev-2m",
+  "created_at": "2026-09-20T13:54:04.000Z",
+  "updated_at": "2026-09-20T13:54:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "safetensors",
+    "hastejev",
+    "jev",
+    "hastejev-2m",
+    "decision-engine",
+    "system-1",
+    "pica",
+    "zero-bias",
+    "low-latency",
+    "non-generative",
+    "autonomous-agents",
+    "browser-control",
+    "web-automation",
+    "agentic-ai",
+    "fast-inference",
+    "decision-making",
+    "calibration",
+    "quantized",
+    "int8",
+    "int4",
+    "fp16",
+    "feature-extraction",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25615929,
+  "storage_human": "26 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Black Orchid Tom Ford perfumy - to perfumy dla kobiet 2006",
+      "url": "https://www.fragrantica.pl/perfumy/Tom-Ford/Black-Orchid-1018.html",
+      "snippet": "Black Orchid marki Tom Ford to orientalno - kwiatowe perfumy dla kobiet. Black Orchid został wydany w 2006 roku. Black Orchid …"
+    },
+    {
+      "title": "TOM FORD Black Orchid - Woda perfumowana (30ml, 50ml, 100ml …",
+      "url": "https://www.sephora.pl/p/black-orchid---woda-perfumowana-P55019.html",
+      "snippet": "Woda perfumowana Black Orchid, esencja zapachu kwiatu czarnej orchidei w nowoczesnym i ponadczasowym wydaniu. Intensywna …"
+    },
+    {
+      "title": "Black Orchid Tom Ford perfume - a fragrance for women 2006",
+      "url": "https://www.fragrantica.com/perfume/Tom-Ford/Black-Orchid-1018.html",
+      "snippet": "Black Orchid by Tom Ford is not just a perfume, it is a true icon of modern perfumery. Launched almost twenty years ago, it continues …"
+    },
+    {
+      "title": "Black Orchid Eau de Toilette Tom Ford - Fragrantica.pl",
+      "url": "https://www.fragrantica.pl/perfumy/Tom-Ford/Black-Orchid-Eau-de-Toilette-31969.html",
+      "snippet": "Black Orchid Eau de Toilette marki Tom Ford to orientalno - kwiatowe perfumy dla kobiet. Black Orchid Eau de Toilette został wydany …"
+    },
+    {
+      "title": "TOM FORD Signature Black Orchid Perfumy - Perfumeria DOUGLAS",
+      "url": "https://www.douglas.pl/pl/p/3000031779",
+      "snippet": "Woda perfumowana Black Orchid , esencja zapachu kwiatu czarnej orchidei w nowoczesnym i ponadczasowym wydaniu. Intensywna …"
+    }
+  ]
+}

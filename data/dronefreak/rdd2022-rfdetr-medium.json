@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "id": "dronefreak/rdd2022-rfdetr-medium",
+  "slug": "dronefreak-rdd2022-rfdetr-medium",
+  "author": "dronefreak",
+  "url": "https://huggingface.co/dronefreak/rdd2022-rfdetr-medium",
+  "created_at": "2026-09-20T16:22:12.000Z",
+  "updated_at": "2026-09-20T16:22:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "rfdetr",
+  "languages": [],
+  "tags": [
+    "rfdetr",
+    "object-detection",
+    "detectionbench",
+    "pytorch",
+    "computer-vision",
+    "road-damage",
+    "pavement-distress",
+    "infrastructure",
+    "pothole-detection",
+    "autonomous-driving",
+    "dataset:dronefreak/RDD2022",
+    "arxiv:2209.08538",
+    "arxiv:2511.09554",
+    "arxiv:2304.07193",
+    "arxiv:2606.03748",
+    "base_model:Roboflow/rf-detr-medium",
+    "base_model:finetune:Roboflow/rf-detr-medium",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 134982006,
+  "storage_human": "135 MB",
+  "base_model": "Roboflow/rf-detr-medium",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Object Detection",
+      "dataset": "RDD2022 Road Damage",
+      "metric": "mAP@50 (test split)",
+      "value": 65.08
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "RDD2022 Road Damage",
+      "metric": "mAP@50-95 (test split)",
+      "value": 36.02
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "RDD2022 Road Damage",
+      "metric": "Precision (test split)",
+      "value": 71.18
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "RDD2022 Road Damage",
+      "metric": "Recall (test split)",
+      "value": 55.98
+    }
+  ],
+  "sources": [
+    {
+      "title": "Index.hr",
+      "url": "https://www.index.hr/",
+      "snippet": "Najčitaniji portal u Hrvatskoj. Pročitajte prijelomne, najnovije i najtočnije vijesti: Hrvatska danas, svijet, politika, zdravlje, crna kronika, …"
+    },
+    {
+      "title": "Najnovije vijesti - Index.hr",
+      "url": "https://www.index.hr/najnovije?kategorija=3",
+      "snippet": "Pratite najnovije vijesti iz Hrvatske i svijeta iz minute u minutu: politika, ekonomija, crna kronika, stanje u prometu, nogomet, košarka, …"
+    },
+    {
+      "title": "Vijesti - Najnovije i najčitanije - Index.hr",
+      "url": "https://www.index.hr/vijesti",
+      "snippet": "Prijelomne vijesti, prvi u Hrvatskoj! Najčitaniji hrvatski news portal. Pročitajte najnovije vijesti iz Hrvatske, regije i svijeta iz minute u …"
+    },
+    {
+      "title": "Sport - Najnovije vijesti iz sporta - Index.hr",
+      "url": "https://www.index.hr/sport",
+      "snippet": "Najnovije sportske vijesti, tablice i rezultati. Vijesti danas: Nogomet, košarka, rukomet, tenis, Dinamo, Hajduk, NBA, Real, Barcelona..."
+    },
+    {
+      "title": "Index Oglasi",
+      "url": "https://www.index.hr/oglasi",
+      "snippet": "Index Oglasi - Najbrže rastući oglasnik u Hrvatskoj. Predajte oglas za svoj auto, stan, posao ili apartman POTPUNO BESPLATNO. …"
+    }
+  ]
+}

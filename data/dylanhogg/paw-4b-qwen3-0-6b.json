@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "dylanhogg/paw-4b-qwen3-0.6b",
+  "slug": "dylanhogg-paw-4b-qwen3-0-6b",
+  "author": "dylanhogg",
+  "url": "https://huggingface.co/dylanhogg/paw-4b-qwen3-0.6b",
+  "created_at": "2026-09-20T13:28:30.000Z",
+  "updated_at": "2026-09-20T13:28:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "program-as-weights",
+    "compiler",
+    "lora",
+    "hypernetwork",
+    "text-generation",
+    "arxiv:2607.02512",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:adapter:Qwen/Qwen3-4B-Instruct-2507",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8707708926,
+  "storage_human": "8.7 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DON!! (OP13 Roger) (One Piece) | Cardmarket",
+      "url": "https://www.cardmarket.com/fr/OnePiece/Cards/DON-OP13-Roger?msockid=1424a729814b63d12484b0f3802662e9",
+      "snippet": "Combien vaut la carte? Achetez ou vendez des cartes sur le marché les plus grand d'Europe pour One Piece."
+    },
+    {
+      "title": "Gol.D.Roger (OP13-003) (One Piece) | Cardmarket",
+      "url": "https://www.cardmarket.com/fr/OnePiece/Cards/GolDRoger-OP13-003?msockid=1424a729814b63d12484b0f3802662e9",
+      "snippet": "Vous voulez apprendre tout sur la carte Gol.D.Roger (OP13-003)? Dans quelles extensions elle est disponible? Comment la carte est …"
+    },
+    {
+      "title": "Prix de Gol.D.Roger OP13-003 | One Piece Carrying on His Will | Cartes ...",
+      "url": "https://www.pricecharting.com/fr/game/one-piece-carrying-on-his-will/goldroger-op13-003",
+      "snippet": "Nov 7, 2025 · Les graphiques vous indiquent le prix de Gol.D.Roger OP13-003 à la fin de chaque mois, ainsi que son évolution …"
+    },
+    {
+      "title": "OP13-003-L - Gol D. Roger | OPECards.fr",
+      "url": "https://www.opecards.fr/cards/op13-003-l-gol-d-roger",
+      "snippet": "OPECards.fr te propose le suivi du prix le plus bas sur Cardmarket et Cardnexus pour la carte à collectionner Gol D. Roger, sur les …"
+    },
+    {
+      "title": "One Piece Don Card Gol D. Roger OP-13 - eBay",
+      "url": "https://www.ebay.fr/itm/336266457091",
+      "snippet": "Les meilleures offres pour One Piece Don Card Gol D. Roger OP-13 sont sur eBay Comparez les prix et les spécificités des produits …"
+    }
+  ]
+}

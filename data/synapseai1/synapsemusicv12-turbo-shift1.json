@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "SYNAPSEai1/SynapseMusicV12-Turbo-Shift1",
+  "slug": "synapseai1-synapsemusicv12-turbo-shift1",
+  "author": "SYNAPSEai1",
+  "url": "https://huggingface.co/SYNAPSEai1/SynapseMusicV12-Turbo-Shift1",
+  "created_at": "2026-09-20T12:35:14.000Z",
+  "updated_at": "2026-09-20T12:35:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-audio",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "acestep",
+    "feature-extraction",
+    "audio",
+    "music",
+    "text2music",
+    "text-to-audio",
+    "custom_code",
+    "arxiv:2602.00744",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2393872518,
+  "parameters_human": "2.39B",
+  "storage_bytes": 4791666819,
+  "storage_human": "4.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "eBay - Login",
+      "url": "https://signin.ebay.de/",
+      "snippet": "Herzlich willkommen bei eBay. Einloggen."
+    }
+  ]
+}

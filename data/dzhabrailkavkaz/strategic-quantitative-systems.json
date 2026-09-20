@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "DzhabrailKAVKAZ/Strategic-Quantitative-Systems",
+  "slug": "dzhabrailkavkaz-strategic-quantitative-systems",
+  "author": "DzhabrailKAVKAZ",
+  "url": "https://huggingface.co/DzhabrailKAVKAZ/Strategic-Quantitative-Systems",
+  "created_at": "2026-09-20T12:37:30.000Z",
+  "updated_at": "2026-09-20T12:43:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wały - amazone.pl",
+      "url": "https://amazone.pl/pl-pl/produkty-i-rozwi%C4%85zania-cyfrowe/agrotechnika/technika-siewu/siewniki-pneumatyczne/982146-982146",
+      "snippet": "Wały o dużej średnicy pracują ponadto znacznie spokojniej niż wały o małej średnicy. Dlatego wały AMAZONE posiadają duże …"
+    },
+    {
+      "title": "Bogata oferta wałów – właściwy wał do każdej lokalizacji",
+      "url": "https://amazone.pl/pl-pl/produkty-i-rozwi%C4%85zania-cyfrowe/agrotechnika/uprawa-gleby/brony-i-kultywatory-wirnikowe/bogata-oferta-wa%C5%82%C3%B3w-w%C5%82a%C5%9Bciwy-wa%C5%82-do-ka%C5%BCdej-lokalizacji-1288766",
+      "snippet": "Wały o dużej średnicy pracują ponadto znacznie spokojniej niż wały o małej średnicy. Dlatego wały AMAZONE posiadają duże …"
+    },
+    {
+      "title": "Wał - Siewniki do zboża Amazone - Agro Frankopol",
+      "url": "https://www.maszyny-frankopol.pl/katalog/oferta-amazone/technika-siewu/wal/",
+      "snippet": "Z pomocą bocznego wału ugniatającego T-Pack S przeznaczonego dla Cirrusa 4003-2/2C i 6003-2/2C można na glebach lekkich do …"
+    },
+    {
+      "title": "Nowy Inne - 6 500 PLN - Otomoto.pl",
+      "url": "https://www.otomoto.pl/czesci/oferta/wal-kolczaty-packera-amazone-pw3000-500-ID6H3QkB.html",
+      "snippet": "Witam. Posiadam na sprzedaż wał kolczaty packera Amazone PW3000/500 o szerokości roboczej 3m. Wał fabrycznie nowy, roku …"
+    },
+    {
+      "title": "Wał Packera - INTERTECH",
+      "url": "https://intertech-agro.pl/produkt/wal-packera-pl/",
+      "snippet": "Pierścienie o średnicy Ø500 mm dobrze sprawdzają się również na glebach wilgotnych i kamienistych, a szerokości od 2,1 do 8,0 m …"
+    }
+  ]
+}

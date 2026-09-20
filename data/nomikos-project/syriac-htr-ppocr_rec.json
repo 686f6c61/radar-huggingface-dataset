@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "nomikos-project/syriac-htr-ppocr_rec",
+  "slug": "nomikos-project-syriac-htr-ppocr_rec",
+  "author": "nomikos-project",
+  "url": "https://huggingface.co/nomikos-project/syriac-htr-ppocr_rec",
+  "created_at": "2026-09-20T12:51:44.000Z",
+  "updated_at": "2026-09-20T13:00:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "ppocr_rec",
+  "languages": [
+    "syr"
+  ],
+  "tags": [
+    "ppocr_rec",
+    "onnx",
+    "handwritten-text-recognition",
+    "ocr",
+    "syr",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 127303889,
+  "storage_human": "127 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "الرئيسية - الهيئة العامة للمعلومات المدنية",
+      "url": "https://services.paci.gov.kw/?lang=en&serviceType=2",
+      "snippet": "هو تطبيق مقدم من الهيئة العامة للمعلومات المدنية يوفر لك بطاقة مدنية رقمية معتمدة فى إثبات الهوية و التصديق و التوقيع الإلكتروني للجهات الحكومية والقطاع الخاص. تعرف على مجموعة من الخدمات التي …"
+    },
+    {
+      "title": "Card & Fine Payment - The Public Authority for Civil Information - PACI",
+      "url": "https://services.paci.gov.kw/card/payment?lang=en",
+      "snippet": "The Public Authority for Civil Information © 2026 Home | Terms of Use | Privacy Policy | Contact Us"
+    },
+    {
+      "title": "Kuwait Government Online Multi – Civil ID renewal and payments",
+      "url": "https://www.e.gov.kw/sites/kgoenglish/Pages/eServices/PACI/CivilIDRenewal.aspx",
+      "snippet": "This service allows citizens and residents to do Multi-Civil ids renewal & payments."
+    },
+    {
+      "title": "Kuwait Government Online Inquiring about Civil ID Validity",
+      "url": "https://www.e.gov.kw/sites/kgoenglish/Pages/eServices/PACI/CivilIDValidity.aspx",
+      "snippet": "This service enables users to check the validity of their Civil ID using the serial number."
+    },
+    {
+      "title": "Civil ID - Paci Kuwait",
+      "url": "https://paciservices.com/en/civil-id/",
+      "snippet": "Civil ID The Civil ID Section provides all the information and services provided by the Public Authority for Civil Information for …"
+    }
+  ]
+}

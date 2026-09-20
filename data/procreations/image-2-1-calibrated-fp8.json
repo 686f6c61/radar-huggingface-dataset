@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ProCreations/Image-2.1-Calibrated-FP8",
+  "slug": "procreations-image-2-1-calibrated-fp8",
+  "author": "ProCreations",
+  "url": "https://huggingface.co/ProCreations/Image-2.1-Calibrated-FP8",
+  "created_at": "2026-09-20T14:39:04.000Z",
+  "updated_at": "2026-09-20T19:02:39.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "fp8",
+    "image-generation",
+    "image-editing",
+    "blackwell",
+    "calibrated",
+    "text-to-image",
+    "base_model:Qwen/Qwen-Image-2.1",
+    "base_model:quantized:Qwen/Qwen-Image-2.1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7376923775,
+  "storage_human": "7.4 GB",
+  "base_model": "Qwen/Qwen-Image-2.1",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gazzetta.gr: Αθλητικά Νέα & Ειδήσεις",
+      "url": "https://www.gazzetta.gr/",
+      "snippet": "1 day ago · Όλα τα τελευταία αθλητικά νέα για όλα τα σπορ από την Ελλάδα και τον κόσμο. Η καλύτερη δημοσιογραφική ομάδα του …"
+    },
+    {
+      "title": "Αθλητικές Μεταδόσεις | Πρόγραμμα TV | Αγώνες Σήμερα | gazzetta.gr",
+      "url": "https://www.gazzetta.gr/tv-program",
+      "snippet": "1 day ago · Οι αθλητικές μεταδόσεις αγώνων σήμερα στο πρόγραμμα TV του Gazzetta σε όλα τα κανάλια για να μην ..."
+    },
+    {
+      "title": "Κασναφέρης στο Gazzetta: «Ήμουν Ολυμπιακός. Τί να πω ότι ήμουν; …",
+      "url": "https://specials.gazzetta.gr/football/kaznaferis-sto-gazzetta-nai-imoun-olympiacos/index.html",
+      "snippet": "«Ήμουν Ολυμπιακός. Τι να πω ότι ήμουν; Ροζ Πάνθηρας;» Ο Γιώργος Κασναφέρης στη συνέντευξη της ζωής του στο Gazzetta. Το …"
+    },
+    {
+      "title": "Λουτσιάνο Γκαλέτι στο Gazzetta: Ποιος Παναθηναϊκός και ποια …",
+      "url": "https://specials.gazzetta.gr/football/luciano-galleti-mono-o-olympiacos/",
+      "snippet": "Ο Λουτσιάνο Γκαλέτι, στο Gazzetta, στη συνέντευξη της ζωής του για τον Λεμονή και τον... Μίκι που του έφερε από το Παρίσι, τον …"
+    },
+    {
+      "title": "Μπάσκετ - Νέα, Αγώνες, Αποτελέσματα | gazzetta.gr",
+      "url": "https://www.gazzetta.gr/basketball",
+      "snippet": "Μπάσκετ - Όλα τα τελευταία νέα από το χώρο του basket στην Ελλάδα και τον κόσμο!"
+    }
+  ]
+}

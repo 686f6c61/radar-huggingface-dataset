@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "suveda999/a2c-PandaReachDense-v3",
+  "slug": "suveda999-a2c-pandareachdense-v3",
+  "author": "suveda999",
+  "url": "https://huggingface.co/suveda999/a2c-PandaReachDense-v3",
+  "created_at": "2026-09-20T16:13:02.000Z",
+  "updated_at": "2026-09-20T16:24:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "PandaReachDense-v3",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 920128,
+  "storage_human": "920128 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Uitvaartzorg-verheyden.be – Begrafenisondernemer",
+      "url": "https://www.uitvaartzorg-verheyden.be/",
+      "snippet": "Anthony Verheyden Uitvaartzorg is een onafhankelijke onderneming en behoort niet tot een uitvaartketen. Erkend door de Koninklijke …"
+    },
+    {
+      "title": "Uitvaartzorg Verheyden DELA | Wetteren",
+      "url": "https://www.dela.be/nl/uitvaartzorg-verheyden",
+      "snippet": "Ons uitvaartcentrum in beeld Het team Verheyden DELA staat voor je klaar Het is onze missie een persoonlijke uitvaart te creëren en …"
+    },
+    {
+      "title": "Uitvaartzorg – Uitvaartzorg-verheyden.be",
+      "url": "https://www.uitvaartzorg-verheyden.be/uitvaartzorg/",
+      "snippet": "Afscheid nemen is de geboorte van een herinnering Ik hecht veel waarde dat de ceremonie waardig en naar wens verloopt en de …"
+    },
+    {
+      "title": "Overlijdensberichten Verheyden | Wetteren - DELA",
+      "url": "https://www.dela.be/nl/uitvaartzorg-verheyden/overlijdensberichten",
+      "snippet": "Een overlijden in je buurt? Betuig je medeleven via onze overlijdensberichten. Bekijk hoe je online kan condoleren, het rouwkaartje …"
+    },
+    {
+      "title": "Bakkerij Verheyden - Grobbendonk - Online bestellen",
+      "url": "https://www.bakkerijverheyden.be/nl/",
+      "snippet": "Online bestellen bij Bakkerij Verheyden (Grobbendonk) is heel eenvoudig. Brood, croissants, koffiekoeken, ontbijtmanden... Bestellen …"
+    }
+  ]
+}

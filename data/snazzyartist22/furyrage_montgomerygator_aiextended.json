@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "SnazzyArtist22/FuryRage_MontgomeryGator_AiExtended",
+  "slug": "snazzyartist22-furyrage_montgomerygator_aiextended",
+  "author": "SnazzyArtist22",
+  "url": "https://huggingface.co/SnazzyArtist22/FuryRage_MontgomeryGator_AiExtended",
+  "created_at": "2026-09-20T16:12:04.000Z",
+  "updated_at": "2026-09-20T16:12:38.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 69010580,
+  "storage_human": "69 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tchibo - Kaffee, Mode, Möbel, Mobilfunk & mehr",
+      "url": "https://www.tchibo.de/?msockid=19b714f17c8167b32679032b7de366fd",
+      "snippet": "Entdecken Sie Kaffee, Mode, Möbel und mehr bei Tchibo – aktuelle Trends, Top-Service und kostenloser Versand."
+    },
+    {
+      "title": "Themenwelten-Übersicht - Jede Woche eine neue Welt | Tchibo",
+      "url": "https://www.tchibo.de/themeworlds?msockid=19b714f17c8167b32679032b7de366fd",
+      "snippet": "Entdecken Sie exklusive Produkte von Tchibo in unseren Themenwelten! Jede Woche neu Aktuelle Modetrends Jetzt online bestellen!"
+    },
+    {
+      "title": "Start | Community - Tchibo",
+      "url": "https://community.tchibo.de/de-de/start",
+      "snippet": "Die Tchibo Community ist die Seite zum Entdecken, Mitmachen und Ausprobieren. Finde inspirierende Ideen, die deinen Alltag …"
+    },
+    {
+      "title": "Tchibo Fitness",
+      "url": "https://fitness.tchibo.de/mystudio/login",
+      "snippet": "Fitnesstraining wann und wo du willst - das Online Fitnessstudio von Tchibo 💪 Jetzt online testen und gesund und effektiv abnehmen. …"
+    },
+    {
+      "title": "Tchibo Refurbished",
+      "url": "https://refurbished.tchibo.de/",
+      "snippet": "Refurbished und bereit für ein zweites Leben: Wiederaufbereitete Vollautomaten – in geprüfter Tchibo Qualität."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "nmuendler/Olmo3-7B-text-sft-training-curve-run1-step78",
+  "slug": "nmuendler-olmo3-7b-text-sft-training-curve-run1-step78",
+  "author": "nmuendler",
+  "url": "https://huggingface.co/nmuendler/Olmo3-7B-text-sft-training-curve-run1-step78",
+  "created_at": "2026-09-20T15:42:34.000Z",
+  "updated_at": "2026-09-20T15:42:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:allenai/Olmo-3-7B-Think",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:allenai/Olmo-3-7B-Think",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 319876032,
+  "storage_human": "320 MB",
+  "base_model": "allenai/Olmo-3-7B-Think",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT Plan | Free",
+      "url": "https://chatgpt.com/plans/free/",
+      "snippet": "Try ChatGPT Free today and use AI to write, learn, plan, and get quick answers—at no cost."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download …"
+    },
+    {
+      "title": "Introducing GPT-4o and more tools to ChatGPT free users",
+      "url": "https://openai.com/index/gpt-4o-and-more-tools-to-chatgpt-free/",
+      "snippet": "May 13, 2024 · In line with our mission, we are focused on advancing AI technology and ensuring it is accessible and beneficial to …"
+    },
+    {
+      "title": "chatgpt-free · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/chatgpt-free",
+      "snippet": "4 days ago · FREEGPT4 is a python server that allows you to have a self-hosted GPT-4 Unlimited and Free WEB API, via the latest …"
+    },
+    {
+      "title": "How to Get ChatGPT Plus for Free in 2026 (7 Legitimate Methods)",
+      "url": "https://dupple.com/learn/how-to-get-chatgpt-plus-for-free",
+      "snippet": "May 15, 2026 · But there are seven legitimate paths to free Plus access that actually work in May 2026: the veterans program (1 year …"
+    }
+  ]
+}

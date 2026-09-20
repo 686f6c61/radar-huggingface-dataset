@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Wrench-4B-Qwen3.6-8E-GGUF",
+  "slug": "mradermacher-wrench-4b-qwen3-6-8e-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Wrench-4B-Qwen3.6-8E-GGUF",
+  "created_at": "2026-09-20T17:52:33.000Z",
+  "updated_at": "2026-09-21T16:29:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "experimental-preview",
+    "wrench",
+    "code",
+    "developer-tools",
+    "qwen3.6",
+    "long-context",
+    "en",
+    "base_model:stancsz/Wrench-4B-Qwen3.6-8E-Experimental-Preview",
+    "base_model:quantized:stancsz/Wrench-4B-Qwen3.6-8E-Experimental-Preview",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3434672768,
+  "parameters_human": "3.43B",
+  "storage_bytes": 33985389184,
+  "storage_human": "34.0 GB",
+  "base_model": "stancsz/Wrench-4B-Qwen3.6-8E-Experimental-Preview",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Routenplaner | ADAC Maps",
+      "url": "https://maps.adac.de/routenplaner",
+      "snippet": "Mit ADAC Maps können Sie bequem Ihre Routen planen. Egal, ob Sie mit Auto, Wohnmobil, Gespann oder Motorrad unterwegs sind, …"
+    },
+    {
+      "title": "Kostenloser Routenplaner und Reiseführer | ADAC Maps",
+      "url": "https://maps.adac.de/route",
+      "snippet": "Ihr kostenloser Routenplaner für Auto, Camper, Gespann & Motorrad - Kommen Sie schnell und sicher ans Ziel. √ Stau √ Tanken √ …"
+    },
+    {
+      "title": "Routenplanung mit ADAC Maps und ADAC Drive",
+      "url": "https://www.adac.de/reise-freizeit/routenplanung/",
+      "snippet": "Planen Sie Ihre Route mit ADAC Maps – für Auto, Gespann, Wohnmobil oder Motorrad. Berücksichtigen Sie aktuelle …"
+    },
+    {
+      "title": "ADAC Maps: Routenplaner mit Reiseführer",
+      "url": "https://www.adac.de/der-adac/verein/corporate-news/adac-routenplaner-maps-web/",
+      "snippet": "Oct 9, 2025 · ADAC Maps kombiniert Routenplaner und Reiseführer im Web: Infos und Tipps rund ums Ziel liefert es passend zur …"
+    },
+    {
+      "title": "ADAC Maps",
+      "url": "https://maps.adac.de/show",
+      "snippet": "Kontakt und Notruf Entdecken"
+    }
+  ]
+}

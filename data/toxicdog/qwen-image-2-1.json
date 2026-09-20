@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "toxicdog/Qwen-Image-2.1",
+  "slug": "toxicdog-qwen-image-2-1",
+  "author": "toxicdog",
+  "url": "https://huggingface.co/toxicdog/Qwen-Image-2.1",
+  "created_at": "2026-09-20T13:01:47.000Z",
+  "updated_at": "2026-09-20T14:42:26.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusion-single-file",
+  "languages": [],
+  "tags": [
+    "diffusion-single-file",
+    "comfyui",
+    "base_model:Qwen/Qwen-Image-2.1",
+    "base_model:finetune:Qwen/Qwen-Image-2.1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 65907160844,
+  "storage_human": "65.9 GB",
+  "base_model": "Qwen/Qwen-Image-2.1",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "如何在Excel中插入可以打勾的方框 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/574c5219f98b3e2c8c9dc11c.html",
+      "snippet": "Oct 2, 2019 · 如何在Excel中插入可以打勾的方框,Excel是我们日常工作学习中的常用工具之一，今天给大家分享一个小技巧，如何 …"
+    },
+    {
+      "title": "TiTok - 知乎",
+      "url": "https://www.zhihu.com/topic/27570614/hot",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "李先森的职场秀 的想法: TikTok视频批量下载神器 ...",
+      "url": "https://www.zhihu.com/pin/1925564753461359913",
+      "snippet": "TikTok视频批量下载神器 | 运营人都依赖用的最新批量下载TiTok视频工具原来是这个 | 照着用【亨亨猫去水印】批量保存tiktok视频这 …"
+    },
+    {
+      "title": "如何在两个EXCEL表格中查找重复项 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/f96699bbcf4fac894e3c1b1a.html",
+      "snippet": "Mar 24, 2017 · 如何在两个EXCEL表格中查找重复项,如果现在有两个工作表S1和S2，想找出两个表中一样的数据和内容，怎么实现 …"
+    },
+    {
+      "title": "titok跨境电商到底靠谱吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/1926302230388126310",
+      "snippet": "titok跨境电商到底靠谱吗？ titok跨境电商到底靠谱吗？ 做tk真的很适合做副业或主业，只需要准备一台手机一台电脑，学习一下然后经 …"
+    }
+  ]
+}

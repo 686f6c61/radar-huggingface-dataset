@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "cyberviser/quill-poetry-v1-gguf",
+  "slug": "cyberviser-quill-poetry-v1-gguf",
+  "author": "cyberviser",
+  "url": "https://huggingface.co/cyberviser/quill-poetry-v1-gguf",
+  "created_at": "2026-09-20T13:02:36.000Z",
+  "updated_at": "2026-09-20T13:47:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "poetry",
+    "quill",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7248023552,
+  "parameters_human": "7.25B",
+  "storage_bytes": 4372815488,
+  "storage_human": "4.4 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Premier League Football - Latest news, results, stats & transfers - BBC",
+      "url": "https://www.bbc.com/sport/football/premier-league",
+      "snippet": "The home of Premier League on BBC Sport online. Includes the latest news stories, results, fixtures, video and audio."
+    },
+    {
+      "title": "BBC Sport - Scores, Fixtures, News - Live Sport",
+      "url": "https://www.bbc.com/sport",
+      "snippet": "Sports news and live sports coverage including scores, results, video, audio and analysis on Football, F1, Cricket, Rugby Union and …"
+    },
+    {
+      "title": "Cricket – Ashes, Test, T20 & ODI news, scores & results - BBC",
+      "url": "https://www.bbc.com/sport/cricket",
+      "snippet": "The home of Cricket on BBC Sport online. Includes the latest news stories, results, fixtures, video and audio."
+    },
+    {
+      "title": "Football gossip - all of the latest transfer stories and ... - BBC",
+      "url": "https://www.bbc.com/sport/football/gossip",
+      "snippet": "The home of Football transfer gossip on BBC Sport online."
+    },
+    {
+      "title": "Rugby Union - latest news today, results & video - BBC Sport",
+      "url": "https://www.bbc.com/sport/rugby-union",
+      "snippet": "The home of Rugby Union on BBC Sport online. Includes the latest news stories, results, fixtures, video and audio."
+    }
+  ]
+}

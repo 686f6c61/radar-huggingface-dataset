@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "CharlieLLL/Qwen3.5-9B-coding-baseline-opd109-OPD109-pinned-orch-eval150-20260920",
+  "slug": "charlielll-qwen3-5-9b-coding-baseline-opd109-opd109-pinned-orch-eval150-20260920",
+  "author": "CharlieLLL",
+  "url": "https://huggingface.co/CharlieLLL/Qwen3.5-9B-coding-baseline-opd109-OPD109-pinned-orch-eval150-20260920",
+  "created_at": "2026-09-20T18:43:16.000Z",
+  "updated_at": "2026-09-20T18:44:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "coding",
+    "swe-bench",
+    "reinforcement-learning",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 17920471518,
+  "storage_human": "17.9 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "QUERY function - Google Docs Editors Help",
+      "url": "https://support.google.com/docs/answer/3093343?hl=en",
+      "snippet": "QUERY function Runs a Google Visualization API Query Language query across data. Sample Usage QUERY (A2:E6,\"select avg (A) …"
+    },
+    {
+      "title": "QUERY - เครื่องมือแก้ไข Google เอกสาร ความช่วยเหลือ",
+      "url": "https://support.google.com/docs/answer/3093343?hl=th",
+      "snippet": "QUERY เรียกใช้การค้นหาของ Google Visualization API Query Language จากข้อมูลทั้งหมด ตัวอย่างการใช้งาน QUERY (A2:E6,\"select avg …"
+    },
+    {
+      "title": "sin prejuicio - WordReference Forums",
+      "url": "https://forum.wordreference.com/threads/sin-prejuicio.1452459/",
+      "snippet": "Jun 30, 2009 · Como podemos traduzir a seguinte expressão: \"se acepta con la cualidad ordinaria de sin prejuicio...y para la prática …"
+    },
+    {
+      "title": "jouer aux pitres - WordReference Forums",
+      "url": "https://forum.wordreference.com/threads/jouer-aux-pitres.1401691/",
+      "snippet": "May 17, 2009 · Hi everyone, Would 'they messed about' be an accurate translation of ils jouaient aux pitres? Thanks for your help!"
+    },
+    {
+      "title": "Google Sheets QUERY - how to use AND and OR at the same time",
+      "url": "https://support.google.com/docs/thread/132394436/google-sheets-query-how-to-use-and-and-or-at-the-same-time?hl=en",
+      "snippet": "Oct 25, 2021 · Google Sheets QUERY - how to use AND and OR at the same time Hi I'm struggling with Query function that will …"
+    }
+  ]
+}

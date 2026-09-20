@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "rajurk11/sf-doom_health_gathering_supreme",
+  "slug": "rajurk11-sf-doom_health_gathering_supreme",
+  "author": "rajurk11",
+  "url": "https://huggingface.co/rajurk11/sf-doom_health_gathering_supreme",
+  "created_at": "2026-09-20T14:21:17.000Z",
+  "updated_at": "2026-09-20T14:21:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "sample-factory",
+  "languages": [],
+  "tags": [
+    "sample-factory",
+    "reinforcement-learning",
+    "deep-rl-course",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 33,
+  "storage_human": "33 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Afleveringen - De Kist - EO",
+      "url": "https://ikmisje.eo.nl/tv/de-kist/afleveringen",
+      "snippet": "Comedian Kor Hoebe spreekt met Kefah Allush over het verlies van zijn jongere broer Leon die verdronk. Over de nacht van het …"
+    },
+    {
+      "title": "Afleveringen - De Kist - EO",
+      "url": "https://www.eo.nl/podcast/de-kist/afleveringen",
+      "snippet": "Omroep MAX-oprichter Jan Slagter blikt met Kefah terug op het overlijden van zijn vader. Ook broer Henk die op 45-jarige leeftijd aan …"
+    },
+    {
+      "title": "De Kist gemist? TVblik",
+      "url": "https://tvblik.nl/de-kist",
+      "snippet": "3 days ago · Hij bespreekt met hen de kruispunten in hun leven, de gemiste kansen, wie willen ze nog spreken voor hun dood en wat …"
+    },
+    {
+      "title": "De Kist | NPO Start",
+      "url": "https://npo.nl/start/serie/de-kist/afleveringen/seizoen-18",
+      "snippet": "Comedian Kor Hoebe spreekt met Kefah Allush over het verlies van zijn jongere broer Leon die verdronk. Over de nacht van het …"
+    },
+    {
+      "title": "EO gemist? Kijk hier alle uitzendingen van EO! - TVblik",
+      "url": "https://tvblik.nl/gemist/eo",
+      "snippet": "Bekijk alle online uitzendingen van EO op TVblik. Wil je een uitzending bekijken van een andere omroep, kijk dan bij het uitzending …"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-mistral_7b_instruct_v02_up_svdllm_jbbsft_finetuned_keep_0p50",
+  "slug": "jeesup-svd-safety-mistral_7b_instruct_v02_up_svdllm_jbbsft_finetuned_keep_0p50",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-mistral_7b_instruct_v02_up_svdllm_jbbsft_finetuned_keep_0p50",
+  "created_at": "2026-09-20T14:19:11.000Z",
+  "updated_at": "2026-09-20T14:39:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mistral",
+    "svd-llm",
+    "compression",
+    "low-rank",
+    "safety",
+    "base_model:mistralai/Mistral-7B-Instruct-v0.2",
+    "base_model:finetune:mistralai/Mistral-7B-Instruct-v0.2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7241732096,
+  "parameters_human": "7.24B",
+  "storage_bytes": 14526639779,
+  "storage_human": "14.5 GB",
+  "base_model": "mistralai/Mistral-7B-Instruct-v0.2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube Help",
+      "url": "https://support.google.com/youtube/?hl=en",
+      "snippet": "Official YouTube Help Center where you can find tips and tutorials on using YouTube and other answers to frequently asked questions."
+    },
+    {
+      "title": "تنزيل Google Chrome وتثبيته",
+      "url": "https://support.google.com/chrome/answer/95346?hl=ar&co=GENIE.Platform%3DDesktop",
+      "snippet": "يمكنك تنزيل متصفّح الويب Chrome وتثبيته بدون أي رسوم، واستخدامه لتصفّح الويب. مراجعة متطلبات النظام لاستخدام Chrome"
+    },
+    {
+      "title": "لنشاهد الفروقات ما بين ريميك Halo: Combat Evolved والنسخ السابقة",
+      "url": "https://www.true-gaming.net/home/618690/%D9%84%D9%86%D8%B4%D8%A7%D9%87%D8%AF-%D8%A7%D9%84%D9%81%D8%B1%D9%88%D9%82%D8%A7%D8%AA-%D9%85%D8%A7-%D8%A8%D9%8A%D9%86-%D8%B1%D9%8A%D9%85%D9%8A%D9%83-halo-combat-evolved-%D9%88%D8%A7%D9%84%D9%86%D8%B3/",
+      "snippet": "Oct 27, 2025 · تشاركنا قناة Cycu1 على منصة يوتيوب بعرض مطوّل يستعرض لنا الفروقات ما بين ريميك Halo: Combat Evolved والإصدار الأصلي ونسخة الريماستر من اللعبة …"
+    },
+    {
+      "title": "تروجيمنج - أخبار و مراجعات ألعاب الفيديو - الموقع العربي الرائد لأخبار ...",
+      "url": "https://www.true-gaming.net/home/",
+      "snippet": "الموقع العربي الرائد لأخبار ومراجعات ألعاب الفيديو. تابع أحدث التغطيات، التقارير، وتقييمات ألعاب بلايستيشن، إكسبوكس، ننتندو، والحاسب الشخصي."
+    },
+    {
+      "title": "كيفية استرداد حسابك على Google أو Gmail - مساعدة حساب Google",
+      "url": "https://support.google.com/accounts/answer/7682439?hl=ar",
+      "snippet": "اتّبِع خطوات استرداد حسابك على Google أو Gmail. سيتم طرح بعض الأسئلة عليك للتأكد من ملكيتك للحساب. أجِب عن الأسئلة بقدر المستطاع. وإذا واجهت مشكلة، ننصحك باتّباع النصائح لإكمال …"
+    }
+  ]
+}

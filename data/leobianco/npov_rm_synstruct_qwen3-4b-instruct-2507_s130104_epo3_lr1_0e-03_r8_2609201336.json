@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "leobianco/npov_RM_synstruct_Qwen3-4B-Instruct-2507_S130104_epo3_lr1_0e-03_r8_2609201336",
+  "slug": "leobianco-npov_rm_synstruct_qwen3-4b-instruct-2507_s130104_epo3_lr1_0e-03_r8_2609201336",
+  "author": "leobianco",
+  "url": "https://huggingface.co/leobianco/npov_RM_synstruct_Qwen3-4B-Instruct-2507_S130104_epo3_lr1_0e-03_r8_2609201336",
+  "created_at": "2026-09-20T13:37:17.000Z",
+  "updated_at": "2026-09-20T13:38:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 29212628,
+  "storage_human": "29 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "VPN-Verbindung zu Gira X1 - KNX-User-Forum",
+      "url": "https://knx-user-forum.de/forum/%C3%B6ffentlicher-bereich/knx-eib-forum/1102796-vpn-verbindung-zu-gira-x1/page2",
+      "snippet": "Nov 9, 2013 · Laut meiner Recherche könnte eine Lösung in Richtung DDNS und VPN gehen, aber ist es nicht genau das, was laut …"
+    },
+    {
+      "title": "OpenVPN einrichten am GIRA X1 - KNX-User-Forum",
+      "url": "https://knx-user-forum.de/forum/%C3%B6ffentlicher-bereich/knx-eib-forum/1708339-openvpn-einrichten-am-gira-x1",
+      "snippet": "Oct 22, 2013 · Ich bin gerade dabei OpenVPN am X1 einzurichten. Aktueller Stand ist folgender: - OpenVPN-Client ist installiert, …"
+    },
+    {
+      "title": "FAQ - X1 Nutzen der VPN Verbindung im iPhone - Gira",
+      "url": "https://www.gira.com/at/de/faq/frage/x1-nutzen-der-vpn-verbindung-im-iphone",
+      "snippet": "Die im iPhone bestehende Verbindung ist keine auf das Gerät bezogene Verbindung und somit nicht mit Passwort gesichert, daher …"
+    },
+    {
+      "title": "Gira FAQ - X1 Dokumentation VPN",
+      "url": "https://partner.gira.de/service/faq/antwort.html?id=1652",
+      "snippet": "Eine detaillierte Dokumentation zur Einrichtung des VPN-Tunnel zum X1 in der Hilfe der Software GPA vorhanden. Dort sind alle …"
+    },
+    {
+      "title": "Gira X1 - Wie richte ich Gira X1 für den Fernzugriff ein? - devicebase",
+      "url": "https://devicebase.net/de/gira-x1/fragen/wie-richte-ich-gira-x1-fuer-den-fernzugriff-ein/5k0",
+      "snippet": "Dec 29, 2022 · Für den Fernzugriff können Sie die OpenVPN-App und das Gira Geräteportal nutzen, die dynamische DNS-Dienste …"
+    }
+  ]
+}

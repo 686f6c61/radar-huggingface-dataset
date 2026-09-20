@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "mradermacher/PrismaCoder-3B-GGUF",
+  "slug": "mradermacher-prismacoder-3b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/PrismaCoder-3B-GGUF",
+  "created_at": "2026-09-20T14:51:02.000Z",
+  "updated_at": "2026-09-20T22:09:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "prisma",
+    "orm",
+    "text-to-code",
+    "code-generation",
+    "qlora",
+    "dpo",
+    "grpo",
+    "reinforcement-learning",
+    "en",
+    "base_model:sandeeprdy1729/PrismaCoder-3B",
+    "base_model:quantized:sandeeprdy1729/PrismaCoder-3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 27940893952,
+  "storage_human": "27.9 GB",
+  "base_model": "sandeeprdy1729/PrismaCoder-3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kosovo - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Kosovo",
+      "snippet": "Kosovo, [a] officially the Republic of Kosovo, [b] is a landlocked country in Southeast Europe with partial diplomatic recognition. It is …"
+    },
+    {
+      "title": "Kosovo | History, Map, Flag, Population, Languages, & Capital",
+      "url": "https://www.britannica.com/place/Kosovo",
+      "snippet": "3 days ago · In the early 20th century Kosovo was incorporated into Serbia (later part of Yugoslavia). By the second half of the …"
+    },
+    {
+      "title": "History of Kosovo - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/History_of_Kosovo",
+      "snippet": "On 17 February 2008, representatives of the people of Kosovo [1] unilaterally declared Kosovo's independence and subsequently …"
+    },
+    {
+      "title": "Kosovo – Wikipedie",
+      "url": "https://cs.wikipedia.org/wiki/Kosovo",
+      "snippet": "↑Kosovo becomes 215th National Member Federation of FIBA[online]. FIBA, 13 March 2015 [cit. 2015-03-13]. Dostupné v …"
+    },
+    {
+      "title": "Kosovo – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Kosovo",
+      "snippet": "Die Republik Kosovo, kurz der/das Kosovo (albanisch Kosovë/Kosova, serbisch Косово Kosovo), ist eine Republik in Südosteuropa …"
+    }
+  ]
+}

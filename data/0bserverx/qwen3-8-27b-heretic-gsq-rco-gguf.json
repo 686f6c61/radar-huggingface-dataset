@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "0bserverx/Qwen3.8-27B-Heretic-GSQ-RCO-GGUF",
+  "slug": "0bserverx-qwen3-8-27b-heretic-gsq-rco-gguf",
+  "author": "0bserverx",
+  "url": "https://huggingface.co/0bserverx/Qwen3.8-27B-Heretic-GSQ-RCO-GGUF",
+  "created_at": "2026-09-20T13:41:18.000Z",
+  "updated_at": "2026-09-20T13:42:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "qwen3.8",
+    "abliterated",
+    "uncensored",
+    "gsq",
+    "rco",
+    "non-uniform",
+    "mixed-precision",
+    "imatrix",
+    "mtp",
+    "text-generation",
+    "base_model:0bserverx/Qwen3.8-27B-Heretic-Abliterated-Uncensored",
+    "base_model:quantized:0bserverx/Qwen3.8-27B-Heretic-Abliterated-Uncensored",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 12,
+  "downloads_30d": 5513,
+  "trending_score": 12,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 81090535296,
+  "storage_human": "81.1 GB",
+  "base_model": "0bserverx/Qwen3.8-27B-Heretic-Abliterated-Uncensored",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Doctolib | Buchen Sie Ihren Arzt- oder Therapietermin online",
+      "url": "https://www.doctolib.de/",
+      "snippet": "Arzttermine einfach online buchen - In wenigen Klicks zum kostenlosen Facharzttermin oder Zahnarzttermin in Ihrer Nähe."
+    },
+    {
+      "title": "Ärzte mit Online-Termin - Doctolib",
+      "url": "https://www.doctolib.de/arzt",
+      "snippet": "Mehr als 20 Ärzte finden und direkt online buchen."
+    },
+    {
+      "title": "Einen Termin vereinbaren – Hilfe und Support Doctolib",
+      "url": "https://doctolibpatient.zendesk.com/hc/de/sections/4415219310738-Einen-Termin-vereinbaren",
+      "snippet": "May 28, 2025 · Wie buche ich einen Termin auf Doctolib? Woher weiß ich, ob mein Termin bestätigt wurde? Ich kann meinen Termin …"
+    },
+    {
+      "title": "Doctolib – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Doctolib",
+      "snippet": "Doctolib SAS ist ein französisches Unternehmen mit Hauptsitz in Paris, das eine Software anbietet, die unter anderem die Online …"
+    },
+    {
+      "title": "Ärzte in Monschau mit Online-Termin - Doctolib",
+      "url": "https://www.doctolib.de/arzt/monschau",
+      "snippet": "Mehr als 20 Ärzte in Monschau finden und direkt online buchen."
+    }
+  ]
+}

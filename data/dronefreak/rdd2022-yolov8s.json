@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "id": "dronefreak/rdd2022-yolov8s",
+  "slug": "dronefreak-rdd2022-yolov8s",
+  "author": "dronefreak",
+  "url": "https://huggingface.co/dronefreak/rdd2022-yolov8s",
+  "created_at": "2026-09-20T16:21:04.000Z",
+  "updated_at": "2026-09-20T16:21:12.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "object-detection",
+    "detectionbench",
+    "pytorch",
+    "computer-vision",
+    "road-damage",
+    "pavement-distress",
+    "infrastructure",
+    "pothole-detection",
+    "autonomous-driving",
+    "dataset:dronefreak/RDD2022",
+    "arxiv:2209.08538",
+    "arxiv:2511.09554",
+    "arxiv:2304.07193",
+    "arxiv:2606.03748",
+    "base_model:Ultralytics/YOLOv8",
+    "base_model:finetune:Ultralytics/YOLOv8",
+    "license:agpl-3.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25349249,
+  "storage_human": "25 MB",
+  "base_model": "Ultralytics/YOLOv8",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Object Detection",
+      "dataset": "RDD2022 Road Damage",
+      "metric": "mAP@50 (test split)",
+      "value": 61.45
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "RDD2022 Road Damage",
+      "metric": "mAP@50-95 (test split)",
+      "value": 33.53
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "RDD2022 Road Damage",
+      "metric": "Precision (test split)",
+      "value": 64.55
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "RDD2022 Road Damage",
+      "metric": "Recall (test split)",
+      "value": 57.18
+    }
+  ],
+  "sources": [
+    {
+      "title": "쿠팡이츠 사장님 포털",
+      "url": "https://store.coupangeats.com/",
+      "snippet": "쿠팡이츠 사장님 인터뷰 쿠팡이츠 배달파트너 Watch on 사장님 인터뷰 한달새 배달 주문량 10배! “ 배달파트너가 주문 수락 후 5분 이내 …"
+    },
+    {
+      "title": "쿠팡이츠 사장님 포털 - Coupang Eats",
+      "url": "https://store.coupangeats.com/merchant/login",
+      "snippet": "빠르고 편한 배달음식 서비스 쿠팡이츠에 입점 후 배달 매출을 늘려보세요. 전화문의는 1600-9827"
+    },
+    {
+      "title": "쿠팡이츠 소개 (사장님용)",
+      "url": "https://store.coupangeats.com/resources/20201112140442/files/Intro%20to%20eats.pdf",
+      "snippet": "Nov 12, 2020 · 쿠팡이츠 고객센터(1600-9827) 입점 문의 혹은 사장님 포털 (store.coupangeats.com) 가입하시면 담당자가 직접 사장님께 …"
+    },
+    {
+      "title": "쿠팡이츠 사장님 포털 - Coupang Eats",
+      "url": "https://store.coupangeats.com/merchant/signup",
+      "snippet": "회원가입은 쿠팡이츠 파트너센터 (1600-9827) 를 통해서도 가능합니다."
+    },
+    {
+      "title": "쿠팡이츠 사업자 - Coupang Eats",
+      "url": "https://store.coupangeats.com/merchant/app/tnc",
+      "snippet": "쿠팡이츠 서비스 이용 약관 – 판매자용 제1장 총칙 제1조 (목적) 본 쿠팡이츠 서비스 이용 약관 (이하 “본 약관”)은 쿠팡 주식회사 (계열회사, …"
+    }
+  ]
+}

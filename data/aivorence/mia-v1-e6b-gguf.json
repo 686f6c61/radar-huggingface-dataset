@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "AIVORENCE/Mia-v1-E6B-GGUF",
+  "slug": "aivorence-mia-v1-e6b-gguf",
+  "author": "AIVORENCE",
+  "url": "https://huggingface.co/AIVORENCE/Mia-v1-E6B-GGUF",
+  "created_at": "2026-09-20T13:02:54.000Z",
+  "updated_at": "2026-09-20T13:10:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "any-to-any",
+  "library": "transformers",
+  "languages": [
+    "ru",
+    "en",
+    "zh",
+    "de",
+    "fr",
+    "it"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "aivorence",
+    "mia",
+    "conversational",
+    "text-generation",
+    "any-to-any",
+    "ru",
+    "en",
+    "zh",
+    "de",
+    "fr",
+    "it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11907350576,
+  "parameters_human": "11.91B",
+  "storage_bytes": 58517451040,
+  "storage_human": "58.5 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "بورنو ياباني غير محجوب - فيديوهات HD مجانية | MyPornTube",
+      "url": "https://myporntube.com/ar/categories/japanese-uncensored",
+      "snippet": "أفضل مجموعة ياباني غير محجوب XXX. فيديوهات ياباني."
+    },
+    {
+      "title": "سكس ياباني مترجم - سكس ياباني",
+      "url": "https://sexyabani.com/category/%d8%b3%d9%83%d8%b3-%d9%8a%d8%a7%d8%a8%d8%a7%d9%86%d9%8a-%d9%85%d8%aa%d8%b1%d8%ac%d9%85/",
+      "snippet": "استمتع بأفضل مجموعة من أفلام JAV ومقاطع سكس ياباني مترجم بالعربي بجودة عالية كاملة، شاهد أجمل الأفلام اليابانية الساخنة لفتيات يابانيات مثيرات الآن."
+    },
+    {
+      "title": "بورنو ياباني - فيديوهات HD مجانية | MyPornTube",
+      "url": "https://myporntube.com/ar/categories/japanese",
+      "snippet": "6,072+ فيديو بورنو ياباني مجاني HD! أفضل مجموعة ياباني XXX. فيديوهات ياباني جديدة يومياً. شاهد"
+    },
+    {
+      "title": "آسيوي إكس إكس إكس إكس أفلام <Malay Porn Videos> اليابانية جنس أفلام",
+      "url": "https://asiansxfilms.com/ar/",
+      "snippet": "هنا يمكنك مشاهدة أفلام الجنس اليابانية وأفلام آسيوية X X X كاملة الطول من مجالات شهيرة مثل Sex ثلاثي، وكبيرة الثدي، وبين الأجناس، وعبودية، وغير ذلك الكثير. انضم إلى موقع …"
+    },
+    {
+      "title": "أفلام يابانية للكبار - شاهدها مجاناً مع الترجمة - JavNinja",
+      "url": "https://jav.ninja/ar/videos",
+      "snippet": "تكشف المقابلات عن مشاعرها الحقيقية وتعبيراتها الصادقة، وسبعة مقاطع إباحية تركز على أجزاء محددة من جسدها ورغباتها الجنسية تكشف أسرارها! من القبلات العاطفية والجنس الفموي المكثف إلى مداعبة …"
+    }
+  ]
+}

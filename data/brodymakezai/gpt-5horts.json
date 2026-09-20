@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "BrodyMakezAI/gpt-5horts",
+  "slug": "brodymakezai-gpt-5horts",
+  "author": "BrodyMakezAI",
+  "url": "https://huggingface.co/BrodyMakezAI/gpt-5horts",
+  "created_at": "2026-09-20T18:00:41.000Z",
+  "updated_at": "2026-09-20T18:01:06.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "text-generation",
+    "char-level",
+    "comment_gpt",
+    "youtube-shorts",
+    "tiny",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 46874411,
+  "storage_human": "47 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Angio-IRM cérébrale : examen, déroulement et prix de l'imagerie ...",
+      "url": "https://lemedecin.fr/medical/actes/eaqj001-remnographie-des-vaisseaux-encephaliques-angio-irm-cerebrale.html",
+      "snippet": "Jun 21, 2025 · Découvrez tout sur l'angio-IRM cérébrale : son utilité, son déroulement et son tarif conventionné. Un examen crucial …"
+    },
+    {
+      "title": "Angio-IRM cérébrale : Guide complet - Groupe Santépourtous",
+      "url": "https://groupesantepourtous.com/angio-irm-cerebrale-guide-complet/",
+      "snippet": "Dans cet article, nous verrons ce qu’est l’angio- IRM cérébrale, comment elle fonctionne et quand elle peut être recommandée par …"
+    },
+    {
+      "title": "Protocoles IRM cérébrale : guide pratique pour radiologues",
+      "url": "https://blog.diagnomi.com/protocoles-irm-cerebrale---guide-pratique-pour-radiologues/",
+      "snippet": "Jan 26, 2026 · Ce guide pratique a pour objectif de synthétiser les séquences clés et de prodiguer des conseils d’optimisation, vous …"
+    },
+    {
+      "title": "IRM cérébrale et angio-IRM : tarifs, déroulement et remboursement …",
+      "url": "https://lemedecin.fr/medical/actes/acqj001-remnographie-irm-du-crane-et-de-son-contenu-avec-etude-de-la-viabilite-d.html",
+      "snippet": "May 1, 2025 · Découvrez tout sur l'IRM cérébrale et l'angio-IRM : procédure, coût de base de 69€, conditions de remboursement. Un …"
+    },
+    {
+      "title": "Angio IRM cérébrale - Imagerie Médicale",
+      "url": "https://imageriemedicale.fr/examens/irm/angio-irm-cerebrale/",
+      "snippet": "Nous avons accès à deux IRM : une située à Neuilly & l’autre à Courbevoie. Compte tenu de la vitesse à laquelle nous pouvons vous …"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "nmuendler/OpenThinker-7B-text-sft-training-curve-run1-step468",
+  "slug": "nmuendler-openthinker-7b-text-sft-training-curve-run1-step468",
+  "author": "nmuendler",
+  "url": "https://huggingface.co/nmuendler/OpenThinker-7B-text-sft-training-curve-run1-step468",
+  "created_at": "2026-09-20T15:44:23.000Z",
+  "updated_at": "2026-09-20T15:44:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:open-thoughts/OpenThinker-7B",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:open-thoughts/OpenThinker-7B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 334436064,
+  "storage_human": "334 MB",
+  "base_model": "open-thoughts/OpenThinker-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Magazine Lidl în",
+      "url": "https://www.lidl.ro/s/ro-RO/cautare-magazin/",
+      "snippet": "Găsește rapid și ușor magazinul Lidl folosind căutarea magazinelor sau după oraș. Descoperă ofertele și cataloagele săptămânale."
+    },
+    {
+      "title": "Lidl Magazin Șoseaua Alexandriei 229A în Bragadiru",
+      "url": "https://www.lidl.ro/s/ro-RO/cautare-magazin/bragadiru/soseaua-alexandriei-229a/",
+      "snippet": "Lidl Bragadiru: Cumpărături zilnice la prețuri avantajoase Vă așteptăm în magazinul Lidl din Bragadiru, situat pe Șoseaua Alexandriei …"
+    },
+    {
+      "title": "Lidl Bragadiru - Supermarketuri şi hipermarketuri în Bragadiru …",
+      "url": "https://firmania.ro/bragadiru/lidl-bragadiru-194888",
+      "snippet": "May 11, 2026 · Găsește detalii de contact pentru Lidl Bragadiru în Soseaua Alexandriei 132-134, Bragadiru, 077025, Ilfov Bragadiru, …"
+    },
+    {
+      "title": "Lidl - Bragadiru | Supermarketuri şi hipermarketuri",
+      "url": "https://bragadiru.cylex.ro/firma/lidl%20-%20bragadiru-932284.html",
+      "snippet": "May 11, 2026 · Informaţii complete despre Lidl - Bragadiru din Bragadiru, Soseaua Alexandriei 229A. Pe Cylex găsești inclusiv date …"
+    },
+    {
+      "title": "Locații Lidl - Localizator filiale Cylex",
+      "url": "https://localizatorfiliale.cylex.ro/filiale/Lidl/",
+      "snippet": "Găsește supermarketuri şi hipermarketuri aproape de tine prin distribuirea locației sau prin introducerea unei adrese, localităţi sau …"
+    }
+  ]
+}

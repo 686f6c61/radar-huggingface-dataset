@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Yida-Model-14B-GGUF",
+  "slug": "mradermacher-yida-model-14b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Yida-Model-14B-GGUF",
+  "created_at": "2026-09-20T14:26:50.000Z",
+  "updated_at": "2026-09-21T03:15:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen3",
+    "medical",
+    "sft",
+    "ms-swift",
+    "chat",
+    "zh",
+    "en",
+    "base_model:rwang220/Yida-Model-14B",
+    "base_model:quantized:rwang220/Yida-Model-14B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14768307200,
+  "parameters_human": "14.77B",
+  "storage_bytes": 101987588928,
+  "storage_human": "102.0 GB",
+  "base_model": "rwang220/Yida-Model-14B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "馅饼 1/5 - 菁优网",
+      "url": "https://www.jyeoo.com/search?rty=0&isocr=0&c=0&qb=馅饼",
+      "snippet": "菁优网拥有3000万原创全解全析题库,涵盖全学科学段,提供各省市中小学各版本教材的试题试卷下载,多种方式组卷,还有校本题库、测 …"
+    },
+    {
+      "title": "#mocnopałac | EMES Handball Pałac Tarnów - LinkedIn Polska",
+      "url": "https://pl.linkedin.com/posts/handball-palac-tarnow_mocnopa%C5%82ac-activity-7503344487738331136-L63b",
+      "snippet": "🤝| Miejskie Przedsiębiorstwo Energetyki Cieplnej S.A. x EMES Handball Pałac Tarnów! Przed nami kolejny sezon! Cieszymy się, że …"
+    },
+    {
+      "title": "on X: \"pendejo no dura pero NI UN SEGUNDO\"",
+      "url": "https://x.com/ejmaicenita/status/2100312703059583367",
+      "snippet": "4 days ago · pendejo no dura pero NI UN SEGUNDO 🐻 @ejmaicenita pendejo no dura pero NI UN SEGUNDO 8 00:00 8 7:55 PM · …"
+    },
+    {
+      "title": "Эминов Эскендер Эшрефович - Код памяти",
+      "url": "https://memorycode.ru/ru/page/96010218",
+      "snippet": "Сохрани память о близком человеке! Главная Страницы памяти Эминов Эскендер Эшрефович 13 июня 1962 — 2023 (60 лет …"
+    },
+    {
+      "title": "部分中概股走強，阿里巴巴、嗶哩嗶哩、金山雲升逾4% - 老虎證券",
+      "url": "https://www.itiger.com/hant/news/2668245559",
+      "snippet": "部分中概股走強，阿里巴巴、嗶哩嗶哩、金山雲升逾4%。在老虎證券瞭解市場動態、行情表現及投資策略建議，優化決策。"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Palette-RP-1.2B-Instruct-2609-v0.5-GGUF",
+  "slug": "mradermacher-palette-rp-1-2b-instruct-2609-v0-5-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Palette-RP-1.2B-Instruct-2609-v0.5-GGUF",
+  "created_at": "2026-09-20T16:03:06.000Z",
+  "updated_at": "2026-09-20T16:44:46.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "RP",
+    "Roleplay",
+    "Edge",
+    "Experimental",
+    "LFM",
+    "Instruct",
+    "Writer",
+    "Narrative",
+    "Creative Writing",
+    "en",
+    "dataset:Indexnusrefather/Hy4-Roleplaying-Data-RAW",
+    "base_model:Indexnusrefather/Palette-RP-1.2B-Instruct-2609-v0.5",
+    "base_model:quantized:Indexnusrefather/Palette-RP-1.2B-Instruct-2609-v0.5",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1170340608,
+  "parameters_human": "1.17B",
+  "storage_bytes": 10598406656,
+  "storage_human": "10.6 GB",
+  "base_model": "Indexnusrefather/Palette-RP-1.2B-Instruct-2609-v0.5",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "c# - Get timezone from DateTime - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/576740/get-timezone-from-datetime",
+      "snippet": "Feb 23, 2009 · Also, be aware that summer daylight saving time may be introduced at different dates (EST vs CET - a 3-week …"
+    },
+    {
+      "title": "How do I set the time zone of MySQL? - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/930900/how-do-i-set-the-time-zone-of-mysql",
+      "snippet": "May 31, 2009 · In my case, the solution was to set serverTimezone parameter in Advanced settings to an appropriate value (CET for …"
+    },
+    {
+      "title": "CET时区，GMT时区 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/cdddd41cbb7b9453cb00e190.html",
+      "snippet": "May 1, 2018 · 地球自转，太阳东升西落，由于各个国家地区经度不同，所以各地的时间也就不同，然后就有了一个时区 (Time Zone)的 …"
+    },
+    {
+      "title": "c# - How to represent the current UK time? - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/4034923/how-to-represent-the-current-uk-time",
+      "snippet": "Oct 27, 2010 · The Regional settings on the client machines could be set to both UK or Germany.I recieve a date from the server …"
+    },
+    {
+      "title": "Convert UTC date time to local date time - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/6525538/convert-utc-date-time-to-local-date-time",
+      "snippet": "Learn how to convert UTC date time to local date time with examples and solutions provided by the Stack Overflow community."
+    }
+  ]
+}

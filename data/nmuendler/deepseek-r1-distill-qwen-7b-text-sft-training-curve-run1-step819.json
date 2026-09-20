@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "nmuendler/DeepSeek-R1-Distill-Qwen-7B-text-sft-training-curve-run1-step819",
+  "slug": "nmuendler-deepseek-r1-distill-qwen-7b-text-sft-training-curve-run1-step819",
+  "author": "nmuendler",
+  "url": "https://huggingface.co/nmuendler/DeepSeek-R1-Distill-Qwen-7B-text-sft-training-curve-run1-step819",
+  "created_at": "2026-09-20T15:47:01.000Z",
+  "updated_at": "2026-09-20T15:47:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 334436075,
+  "storage_human": "334 MB",
+  "base_model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Online-Stopwatch",
+      "url": "https://www.online-stopwatch.com/",
+      "snippet": "Use the Online Stopwatch Full Screen. Go Ad Free! Remove all Ads and make your Apps Bigger and Better!"
+    },
+    {
+      "title": "Online Stopwatch - easy to use - timeanddate.com",
+      "url": "https://www.timeanddate.com/stopwatch/",
+      "snippet": "Online stopwatch. Easy to use and accurate stopwatch with lap times and alarms. Optional split intervals and alarm sound."
+    },
+    {
+      "title": "Online Stopwatch - vClock",
+      "url": "https://vclock.com/stopwatch/",
+      "snippet": "The online stopwatch counts the time to the millisecond that passes after you click the Start button. It allows you to add laps."
+    },
+    {
+      "title": "Online Stopwatch",
+      "url": "https://www.online-stopwatch.com/full-screen-stopwatch/",
+      "snippet": "A Free flash online stopwatch, quick easy to use flash stopwatch! also a countdown timer!"
+    },
+    {
+      "title": "Online Stopwatch Timer - TickCounter",
+      "url": "https://www.tickcounter.com/stopwatch",
+      "snippet": "Count the time right in your browser! It's instant, accurate and easy to use. Stopwatch is a tool that lets you measure the time elapsed …"
+    }
+  ]
+}

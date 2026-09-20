@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "hlhc/image-models",
+  "slug": "hlhc-image-models",
+  "author": "hlhc",
+  "url": "https://huggingface.co/hlhc/image-models",
+  "created_at": "2026-09-20T15:50:15.000Z",
+  "updated_at": "2026-09-20T19:47:59.000Z",
+  "license": "mixed-mit-apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "edge-detection",
+    "line-art",
+    "sketch",
+    "mirror",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5534311917,
+  "storage_human": "5.5 GB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cosmic Cove Galaxy Green Star Locations and Walkthrough",
+      "url": "https://www.ign.com/wikis/super-mario-galaxy-2/Cosmic_Cove_Galaxy_Green_Star_Locations_and_Walkthrough",
+      "snippet": "Sep 26, 2025 · Wall-jump up the waterfalls to the top and, instead of busting out the star in the crystal, jump off the side to grab the …"
+    },
+    {
+      "title": "Cosmic Cove Galaxy - Super Mario Wiki, the Mario encyclopedia",
+      "url": "https://www.mariowiki.com/Cosmic_Cove_Galaxy",
+      "snippet": "Sep 12, 2026 · This is the only galaxy in World 2 with two main missions. One of its levels, Catch That Star Bunny, makes Cosmic …"
+    },
+    {
+      "title": "[Super Mario Galaxy 2] Cosmic Cove Galaxy | Green Star 2",
+      "url": "https://www.youtube.com/watch?v=Vr1cUU0-KPA",
+      "snippet": "Oct 21, 2025 · [Super Mario Galaxy 2] Cosmic Cove Galaxy | Green Star 2!Important this star is only available after a certain …"
+    },
+    {
+      "title": "Super Mario Galaxy 2: Cosmic Cove Galaxy - Green Star 2",
+      "url": "https://www.youtube.com/watch?v=ExL9F2-g1s0",
+      "snippet": "May 28, 2010 · Super Mario Galaxy 2: Cosmic Cove Galaxy - Green Star 2 Super Mario Galaxy 2: Cosmic Cove Galaxy - Green Star …"
+    },
+    {
+      "title": "Cosmic Cove Galaxy - Mario Wiki",
+      "url": "https://mario.fandom.com/wiki/Cosmic_Cove_Galaxy",
+      "snippet": "When players get to the Aquarium Planet B, they should look for a platform with a Goomba on it. The Green Star is to the right of the …"
+    }
+  ]
+}

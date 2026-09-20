@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "noffy/hastejev-1m",
+  "slug": "noffy-hastejev-1m",
+  "author": "noffy",
+  "url": "https://huggingface.co/noffy/hastejev-1m",
+  "created_at": "2026-09-20T13:53:54.000Z",
+  "updated_at": "2026-09-20T13:54:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "safetensors",
+    "hastejev",
+    "jev",
+    "hastejev-1m",
+    "decision-engine",
+    "system-1",
+    "pica",
+    "zero-bias",
+    "low-latency",
+    "non-generative",
+    "autonomous-agents",
+    "browser-control",
+    "web-automation",
+    "agentic-ai",
+    "fast-inference",
+    "decision-making",
+    "calibration",
+    "quantized",
+    "int8",
+    "int4",
+    "fp16",
+    "feature-extraction",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15542129,
+  "storage_human": "16 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Opwindend.net Sexverhalen – 78.120 Gratis Erotische Verhalen",
+      "url": "https://www.opwindend.net/",
+      "snippet": "Ontdek duizenden gratis sexverhalen voor en door lezers! Al 25 jaar de grootste Nederlandse site voor erotische verhalen – lees, …"
+    },
+    {
+      "title": "Familie Sexverhalen - Opwindend.Net",
+      "url": "https://www.opwindend.net/Sexverhalen_Familie.html",
+      "snippet": "Familie sexverhalen over verboden aantrekkingskracht, nabijheid en emotie. Verhalen vol spanning, subtiele verleiding en intieme …"
+    },
+    {
+      "title": "Alle Categorieën met Sexverhalen – 600+ Thema’s | Opwindend.net",
+      "url": "https://www.opwindend.net/Sexverhalen.html",
+      "snippet": "Ontdek duizenden gratis sexverhalen in meer dan 600 categorieën. Van romantisch tot taboe – vind altijd een verhaal dat past bij …"
+    },
+    {
+      "title": "Extreme Sexverhalen - Opwindend.Net",
+      "url": "https://www.opwindend.net/Sexverhalen_Extreem.html",
+      "snippet": "Extreme sexverhalen vol fantasie, durf en grenzen verleggen. Sensuele erotiek voor wie avontuur, spanning en intense ervaringen …"
+    },
+    {
+      "title": "Homo Sexverhalen - Opwindend.Net",
+      "url": "https://www.opwindend.net/Sexverhalen_Homo.html",
+      "snippet": "Homo sexverhalen waarin mannen elkaar ontdekken en verkennen. Sensuele verhalen vol aantrekkingskracht, intimiteit en intense …"
+    }
+  ]
+}

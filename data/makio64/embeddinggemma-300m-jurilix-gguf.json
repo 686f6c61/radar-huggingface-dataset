@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Makio64/embeddinggemma-300m-jurilix-gguf",
+  "slug": "makio64-embeddinggemma-300m-jurilix-gguf",
+  "author": "Makio64",
+  "url": "https://huggingface.co/Makio64/embeddinggemma-300m-jurilix-gguf",
+  "created_at": "2026-09-20T17:49:54.000Z",
+  "updated_at": "2026-09-20T17:50:02.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "gguf",
+  "languages": [
+    "fr"
+  ],
+  "tags": [
+    "gguf",
+    "sentence-similarity",
+    "fr",
+    "base_model:google/embeddinggemma-300m",
+    "base_model:quantized:google/embeddinggemma-300m",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 307581696,
+  "parameters_human": "307.6M",
+  "storage_bytes": 333590784,
+  "storage_human": "334 MB",
+  "base_model": "google/embeddinggemma-300m",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gurtlänge im Flugzeug - Flug- und Reiseplanung - airliners.de - Forum",
+      "url": "https://forum.airliners.de/topic/47270-gurtl%C3%A4nge-im-flugzeug/",
+      "snippet": "Jun 13, 2010 · In den Sitz hineinpassen sollte man allerdings schon, ansonsten ist der Nachbar bei vollbesetzter Maschine nicht so …"
+    },
+    {
+      "title": "Erfahrungen mit Sky Alps ? - Flugbuchungen und Bonusprogramme ...",
+      "url": "https://forum.airliners.de/topic/63018-erfahrungen-mit-sky-alps/",
+      "snippet": "Jul 4, 2022 · Ich hatte mal den Fall mit Lauda (Ryanair), da habe ich 2 Wochen und 4 Tage Frist gesetzt (wegen Postlaufzeit) und …"
+    },
+    {
+      "title": "Auto huren via Ryanair? Geen voornaam op je creditcard kan je extra ...",
+      "url": "https://radar.avrotros.nl/artikel/auto-huren-via-ryanair-geen-voornaam-op-je-creditcard-kan-je-extra-geld-kosten-62848",
+      "snippet": "Jul 28, 2026 · Ryanair en CarTrawler verschuilen zich achter de voorwaarden Omdat Janine en Wilma allebei geboekt hebben via …"
+    },
+    {
+      "title": "Problem med betalning till Ryanair? - Spanienforum.se",
+      "url": "https://www.spanienforum.se/threads/problem-med-betalning-till-ryanair.7345/",
+      "snippet": "Dec 18, 2013 · Hej! Jag försöker boka en resa med Ryanair från Malmö men jag kan inte betala! Jag får en information som säger att …"
+    },
+    {
+      "title": "Ryanair: een euro voor toiletbezoek - Radar",
+      "url": "https://radar.avrotros.nl/artikel/ryanair-een-euro-voor-toiletbezoek-8396",
+      "snippet": "Apr 9, 2010 · Ryanair wil het aantal toiletten op zijn vliegtuigen terugbrengen van drie naar een de ruimte die daardoor vrijkomt gaan …"
+    }
+  ]
+}

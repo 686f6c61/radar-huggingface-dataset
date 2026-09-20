@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "kingjones777/Ternary-Bonsai-2-27B-ROCm-gfx1151",
+  "slug": "kingjones777-ternary-bonsai-2-27b-rocm-gfx1151",
+  "author": "kingjones777",
+  "url": "https://huggingface.co/kingjones777/Ternary-Bonsai-2-27B-ROCm-gfx1151",
+  "created_at": "2026-09-20T17:13:38.000Z",
+  "updated_at": "2026-09-20T17:31:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "ternary",
+    "rocm",
+    "amd",
+    "gfx1151",
+    "strix-halo",
+    "mtp",
+    "speculative-decoding",
+    "documentation",
+    "text-generation",
+    "base_model:prism-ml/Ternary-Bonsai-2-27B-gguf",
+    "base_model:finetune:prism-ml/Ternary-Bonsai-2-27B-gguf",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "prism-ml/Ternary-Bonsai-2-27B-gguf",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Beer Delivery in 45 Minutes Near You | Grubhub",
+      "url": "https://www.grubhub.com/categories/beer?msockid=0c6c23161b0a61da32c234cc1a506090",
+      "snippet": "Get Beer delivery in around 45 minutes or pickup at the nearest location. With Grubhub you can get any items delivered to your home …"
+    },
+    {
+      "title": "Beer Delivery Near Me | 20 Best Beer Stores for Delivery | Grubhub",
+      "url": "https://www.grubhub.com/delivery/dish/beer?msockid=0c6c23161b0a61da32c234cc1a506090",
+      "snippet": "Get Beer delivered from national chains, local favorites, or new neighborhood restaurants, on Grubhub. Order online, and get Beer …"
+    },
+    {
+      "title": "Order Alcohol Delivery Online Near Me - Skip - SkipTheDishes",
+      "url": "https://www.skipthedishes.com/cuisines/alcohol?msockid=0c6c23161b0a61da32c234cc1a506090",
+      "snippet": "Get alcohol delivered in your area near you. Order beer, wine, and spirits for delivery with Skip."
+    },
+    {
+      "title": "Ontario Beer Delivery Index",
+      "url": "https://www.obdi.ca/",
+      "snippet": "The Ontario Beer Delivery Index tracks Ontario breweries that are offering delivery or pickup options."
+    },
+    {
+      "title": "Grubhub Beer Delivery Delivery or Pickup Near Me | Instacart",
+      "url": "https://www.instacart.ca/store/s?k=grubhub+beer+delivery",
+      "snippet": "Get Grubhub Beer Delivery products you love delivered to you in as fast as 1 hour via Instacart. Contactless delivery and your first …"
+    }
+  ]
+}

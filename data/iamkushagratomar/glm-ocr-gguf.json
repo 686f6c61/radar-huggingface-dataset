@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "iamkushagratomar/glm-ocr-gguf",
+  "slug": "iamkushagratomar-glm-ocr-gguf",
+  "author": "iamkushagratomar",
+  "url": "https://huggingface.co/iamkushagratomar/glm-ocr-gguf",
+  "created_at": "2026-09-20T19:17:49.000Z",
+  "updated_at": "2026-09-20T20:03:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "ocr",
+    "quantized",
+    "glm",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "base_model:zai-org/GLM-OCR",
+    "base_model:quantized:zai-org/GLM-OCR",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 891138048,
+  "parameters_human": "891.1M",
+  "storage_bytes": 6154927872,
+  "storage_human": "6.2 GB",
+  "base_model": "zai-org/GLM-OCR",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.be/index.html",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google Vidéos",
+      "url": "https://www.google.be/videohp?hl=fr",
+      "snippet": "Rechercher des millions de vidéos sur le Web"
+    },
+    {
+      "title": "Google Images",
+      "url": "https://images.google.be/",
+      "snippet": "Google Images. The most comprehensive image search on the web."
+    },
+    {
+      "title": "Google Traduction",
+      "url": "https://translate.google.be/?hl=fr",
+      "snippet": "Le service sans frais de Google traduit instantanément des mots, des expressions et des pages Web entre le français et plus de 100 …"
+    },
+    {
+      "title": "Google Books: Find, Preview, and Read Books Online.",
+      "url": "https://books.google.be/",
+      "snippet": "Doorzoek de meest uitgebreide index ter wereld van boeken met volledige tekst. Je bibliotheek"
+    }
+  ]
+}

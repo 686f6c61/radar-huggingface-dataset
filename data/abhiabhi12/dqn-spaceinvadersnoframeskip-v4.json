@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Abhiabhi12/dqn-SpaceInvadersNoFrameskip-v4",
+  "slug": "abhiabhi12-dqn-spaceinvadersnoframeskip-v4",
+  "author": "Abhiabhi12",
+  "url": "https://huggingface.co/Abhiabhi12/dqn-SpaceInvadersNoFrameskip-v4",
+  "created_at": "2026-09-20T15:41:53.000Z",
+  "updated_at": "2026-09-20T15:42:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "SpaceInvadersNoFrameskip-v4",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 27219047,
+  "storage_human": "27 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Search Images - Bing",
+      "url": "https://www.bing.com/camera",
+      "snippet": "Intelligent search from Bing makes it easier to quickly find what you’re looking for and rewards you."
+    },
+    {
+      "title": "Beyond text queries: Searching with Bing Visual Search",
+      "url": "https://blogs.bing.com/search-quality-insights/2017-06/beyond-text-queries-searching-with-bing-visual-search",
+      "snippet": "Jun 1, 2017 · Over the years people have come to expect search engines to automatically detect intent and provide great search …"
+    },
+    {
+      "title": "Search - Bing",
+      "url": "https://www.bing.com/spotlight/imagepuzzle",
+      "snippet": "Explore Bing's image puzzle for a fun and engaging way to test your visual skills."
+    },
+    {
+      "title": "Visual Search from Bing now lets you search what you see",
+      "url": "https://blogs.bing.com/search/june-2018/Visual-search-from-Bing-now-lets-you-search-what-you-see",
+      "snippet": "Jun 21, 2018 · Visual Search from Bing now lets you search what you see Today we're launching new intelligent Visual Search …"
+    },
+    {
+      "title": "Search - Microsoft Bing",
+      "url": "https://www.uk.bing.com/",
+      "snippet": "Search with Microsoft Bing and use AI to find information, explore webpages, images, videos, maps, and more. A smart search …"
+    }
+  ]
+}

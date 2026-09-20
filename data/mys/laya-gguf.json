@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "mys/laya-GGUF",
+  "slug": "mys-laya-gguf",
+  "author": "mys",
+  "url": "https://huggingface.co/mys/laya-GGUF",
+  "created_at": "2026-09-20T15:54:02.000Z",
+  "updated_at": "2026-09-20T16:07:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "ggmlc",
+    "laya",
+    "jev",
+    "modernbert",
+    "decision",
+    "system-1",
+    "en",
+    "base_model:convaiinnovations/laya",
+    "base_model:quantized:convaiinnovations/laya",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 421622795,
+  "parameters_human": "421.6M",
+  "storage_bytes": 1717551040,
+  "storage_human": "1.7 GB",
+  "base_model": "convaiinnovations/laya",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Forge of Empires - Jeu de stratégie en ligne gratuit",
+      "url": "https://fr.forgeofempires.com/",
+      "snippet": "Dans Forge of Empires, vous contrôlez le destin de votre ville à travers différentes périodes historiques. Vous pouvez vous attendre à …"
+    },
+    {
+      "title": "Jeu de stratégie en ligne pour navigateur et mobile - Forge of Empires",
+      "url": "https://fr0.forgeofempires.com/page/",
+      "snippet": "Sep 5, 2026 · Chers joueurs, Consultez sur notre base de connaissances les modifications apportées par la version 1.342 qui sera …"
+    },
+    {
+      "title": "Forge of Empires – A free to play browser game.",
+      "url": "https://us0.forgeofempires.com/page/",
+      "snippet": "Sep 8, 2026 · Welcome to the Stellar Age: Discovery! from The Forge of Empires team on 8/25/26 at 6:49 pm"
+    },
+    {
+      "title": "Forge of Empires - Le jeu de stratégie en ligne à travers les âges",
+      "url": "https://www.innogames.com/fr/jeux/forge-of-empires/",
+      "snippet": "Forgez votre empire dès maintenant ! Forge of Empires est un jeu gratuit sans restrictions. Cependant, les joueurs peuvent choisir …"
+    },
+    {
+      "title": "Jeux en ligne - Jouez à des jeux gratuits de stratégie ou des RPG",
+      "url": "https://www.innogames.com/fr/",
+      "snippet": "Forge of Empires – Dirigez votre empire à travers les âges, livrez d'intenses batailles JcJ et créez votre propre métropole dans ce jeu …"
+    }
+  ]
+}

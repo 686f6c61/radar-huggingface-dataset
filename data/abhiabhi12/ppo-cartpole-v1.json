@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Abhiabhi12/ppo-CartPole-v1",
+  "slug": "abhiabhi12-ppo-cartpole-v1",
+  "author": "Abhiabhi12",
+  "url": "https://huggingface.co/Abhiabhi12/ppo-CartPole-v1",
+  "created_at": "2026-09-20T15:44:04.000Z",
+  "updated_at": "2026-09-20T15:44:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "CartPole-v1",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 266413,
+  "storage_human": "266413 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Manage your account - Optum Rx",
+      "url": "https://www.optumrx.com/en/member-resources/manage-account.html",
+      "snippet": "Nov 11, 2025 · Learn how to register and sign in to your account using HealthSafe ID, how to change your shipping address and how …"
+    },
+    {
+      "title": "Optum Rx - Affordable, Free Prescription Delivery | Optum Rx",
+      "url": "https://www.optumrx.com/en/",
+      "snippet": "Order prescriptions, get drug pricing information, pay your bill, locate a pharmacy, manage your health information and more. Optum …"
+    },
+    {
+      "title": "Home | OptumRx",
+      "url": "https://welcome.optumrx.com/sofdms/landing",
+      "snippet": "Welcome to Optum Rx Sign in to your Optum Rx account by going to Optumrx.com. to order prescriptions, manage your health …"
+    },
+    {
+      "title": "Track order | Optum Rx",
+      "url": "https://os.optumrx.com/order-search",
+      "snippet": "Order number * Can be found in your email or message about your order"
+    },
+    {
+      "title": "Home | OptumRx",
+      "url": "https://welcome.optumrx.com/VAH/landing",
+      "snippet": "Every day, we serve millions of people by providing access to Optum's state-of-the-art home delivery pharmacy and a nationwide …"
+    }
+  ]
+}

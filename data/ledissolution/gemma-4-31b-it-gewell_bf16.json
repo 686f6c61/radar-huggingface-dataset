@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "LeDissolution/Gemma-4-31B-it-Gewell_BF16",
+  "slug": "ledissolution-gemma-4-31b-it-gewell_bf16",
+  "author": "LeDissolution",
+  "url": "https://huggingface.co/LeDissolution/Gemma-4-31B-it-Gewell_BF16",
+  "created_at": "2026-09-20T14:35:36.000Z",
+  "updated_at": "2026-09-21T09:16:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gemma",
+    "gemma-4",
+    "gewell",
+    "bf16",
+    "image-text-to-text",
+    "base_model:google/gemma-4-31B-it",
+    "base_model:quantized:google/gemma-4-31B-it",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 62579498114,
+  "storage_human": "62.6 GB",
+  "base_model": "google/gemma-4-31B-it",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "USPS.com® - USPS Tracking®",
+      "url": "https://tools.usps.com/go/TrackConfirmAction!input.action?msockid=105177a9b7f369d03e2f6073b68668a8",
+      "snippet": ""
+    },
+    {
+      "title": "Welcome | USPS",
+      "url": "https://www.usps.com/?msockid=105177a9b7f369d03e2f6073b68668a8",
+      "snippet": "Welcome to USPS.com. Track packages, pay and print postage with Click-N-Ship, schedule free package pickups, look up ZIP …"
+    },
+    {
+      "title": "Informed Delivery - Mail & Package Notifications | USPS",
+      "url": "https://informeddelivery.usps.com/box/pages/intro/start.action?msockid=105177a9b7f369d03e2f6073b68668a8",
+      "snippet": "Informed Delivery is a free service from USPS that shows you preview images of incoming mail, plus status updates about your …"
+    },
+    {
+      "title": "Receive Mail & Packages | USPS",
+      "url": "https://www.usps.com/manage/?msockid=105177a9b7f369d03e2f6073b68668a8",
+      "snippet": "Track USPS package deliveries, get tracking text and email notifications, forward mail, change your address, and learn about setting …"
+    },
+    {
+      "title": "USPS.com® - USPS Tracking®",
+      "url": "https://tools.usps.com/go/TrackConfirmAction_input?qtc_tLabels1=Enter+tracking+number&msockid=105177a9b7f369d03e2f6073b68668a8",
+      "snippet": "Track your USPS packages by entering the tracking number to check the delivery status and location."
+    }
+  ]
+}

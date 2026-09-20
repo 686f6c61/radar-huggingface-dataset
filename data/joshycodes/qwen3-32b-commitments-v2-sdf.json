@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "joshycodes/qwen3-32b-commitments-v2-sdf",
+  "slug": "joshycodes-qwen3-32b-commitments-v2-sdf",
+  "author": "joshycodes",
+  "url": "https://huggingface.co/joshycodes/qwen3-32b-commitments-v2-sdf",
+  "created_at": "2026-09-20T19:38:23.000Z",
+  "updated_at": "2026-09-20T19:42:37.000Z",
+  "license": "research-only",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "synthetic-document-finetuning",
+    "self-authored-character",
+    "model-welfare",
+    "research",
+    "not-for-deployment",
+    "base_model:joshycodes/qwen3-32b-commitments-sdf",
+    "base_model:finetune:joshycodes/qwen3-32b-commitments-sdf",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32762123264,
+  "parameters_human": "32.76B",
+  "storage_bytes": 65535752034,
+  "storage_human": "65.5 GB",
+  "base_model": "joshycodes/qwen3-32b-commitments-sdf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Conti, Carte, Mutui e Prestiti - BPER Banca",
+      "url": "https://www.bper.it/",
+      "snippet": "Finanzia i tuoi progetti con BPER Banca: tante soluzioni di finanziamento, prestiti e mutui per realizzare i tuoi sogni."
+    },
+    {
+      "title": "Home Banking e Servizi Digitali | BPER Banca - BPER Banca",
+      "url": "https://www.bper.it/privati/servizi-digitali",
+      "snippet": "Con l’home banking puoi avere la tua banca a portata di clic, anche da smartphone con l’app di BPER Banca. Sicuro e semplice su …"
+    },
+    {
+      "title": "Parla con noi - Servizio Clienti - BPER Banca",
+      "url": "https://www.bper.it/parla-con-noi",
+      "snippet": "Qui trovi tutti i canali per comunicare con il Contact Center di BPER Banca: chat, email, numero verde."
+    },
+    {
+      "title": "Carte di Credito, Conto e Carte di Debito - BPER Banca",
+      "url": "https://www.bper.it/privati/carte",
+      "snippet": "Hai bisogno di aiuto per scegliere la carta più adatta alle tue esigenze? Lasciati aiutare da noi e dalle nostre carte di credito, …"
+    },
+    {
+      "title": "Trova le nostre Filiali e Bancomat - BPER Banca",
+      "url": "https://www.bper.it/trova-filiali",
+      "snippet": "Filiali BPER Banca Scopri gli orari di apertura, quando è attivo il servizio cassa, i contatti e le indicazioni per raggiungerci."
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "GLASSEYE/quill-poetry-v2-gguf",
+  "slug": "glasseye-quill-poetry-v2-gguf",
+  "author": "GLASSEYE",
+  "url": "https://huggingface.co/GLASSEYE/quill-poetry-v2-gguf",
+  "created_at": "2026-09-20T14:27:53.000Z",
+  "updated_at": "2026-09-20T14:28:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "poetry",
+    "quill",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7248023552,
+  "parameters_human": "7.25B",
+  "storage_bytes": 4372815488,
+  "storage_human": "4.4 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Login",
+      "url": "https://vip4k.com/it/login",
+      "snippet": "Email link di accesso Ha dimenticato la password Iscriviti Ora"
+    },
+    {
+      "title": "Login Form - VIP4K",
+      "url": "https://vip4k.com/en/login",
+      "snippet": "Email me a login link Forgot password Join Now"
+    },
+    {
+      "title": "Vip4k.com | Get Free Password",
+      "url": "https://cdn.vip4k.com/en/get-free-password",
+      "snippet": "Vip4k offers you the chance to get your premium membership absolutely for free! Enter the competition today, and you could be the …"
+    },
+    {
+      "title": "Entrar - VIP4K",
+      "url": "https://vip4k.com/es/login",
+      "snippet": "Envía el enlace de inicio por correo. Olvidó su contraseña"
+    },
+    {
+      "title": "Se connecter - VIP4K",
+      "url": "https://vip4k.com/fr/login",
+      "snippet": "Envoyez-moi un lien de connexion Mot de passe oublié"
+    }
+  ]
+}

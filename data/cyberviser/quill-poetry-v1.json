@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "cyberviser/quill-poetry-v1",
+  "slug": "cyberviser-quill-poetry-v1",
+  "author": "cyberviser",
+  "url": "https://huggingface.co/cyberviser/quill-poetry-v1",
+  "created_at": "2026-09-20T12:31:11.000Z",
+  "updated_at": "2026-09-20T12:31:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "poetry",
+    "creative-writing",
+    "lora",
+    "quill",
+    "base_model:mistralai/Mistral-7B-Instruct-v0.3",
+    "base_model:adapter:mistralai/Mistral-7B-Instruct-v0.3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 83946192,
+  "storage_human": "84 MB",
+  "base_model": "mistralai/Mistral-7B-Instruct-v0.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Liste katholischer Männerorden – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Liste_katholischer_M%C3%A4nnerorden",
+      "snippet": "Diese Seite möchte einen Überblick zur Vielfalt der römisch-katholischen Ordensgemeinschaften geben. Sie zeigt erst einen …"
+    },
+    {
+      "title": "Liste der Ordenskürzel (römisch-katholisch) – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Liste_der_Ordensk%C3%BCrzel_(r%C3%B6misch-katholisch)",
+      "snippet": "Das Ordenskürzel wird dem Ordensnamen nachgestellt, entweder dem Vornamen oder der Verbindung aus Vor- und Zunamen, zum …"
+    },
+    {
+      "title": "Geschichte des Ordenslebens - Ordensleben",
+      "url": "https://ordensleben.orden.de/ordensleben/geschichte-des-ordenslebens/",
+      "snippet": "In der mehr oder weniger stark ausgeprägten Einsamkeit widmeten sich die ersten Mönche in der Antike nahezu vollständig dem …"
+    },
+    {
+      "title": "Bekannte Orden: Benediktiner, Dominikaner und mehr... - Katholisch",
+      "url": "https://www.katholisch.de/dossier/85-bekannte-orden-benediktiner-dominikaner-und-mehr",
+      "snippet": "May 20, 2026 · Die kirchliche Ordenslandschaft ist bunt und vielfältig. Zahlreiche unterschiedliche Ordensgemeinschaften prägen das …"
+    },
+    {
+      "title": "Ordensleute: Ordenslexikon - Religion - Kultur - Planet Wissen",
+      "url": "https://www.planet-wissen.de/kultur/religion/ordensleute/pwieordenslexikon100.html",
+      "snippet": "Aug 5, 2021 · Der Orden der Kapuziner-Mönche wurde von Matthäus von Bascio (1492-1552) ins Leben gerufen und 1528 von Papst …"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "SirSahOl/Qwen-Image-2.1-mlx-8bit",
+  "slug": "sirsahol-qwen-image-2-1-mlx-8bit",
+  "author": "SirSahOl",
+  "url": "https://huggingface.co/SirSahOl/Qwen-Image-2.1-mlx-8bit",
+  "created_at": "2026-09-20T17:01:44.000Z",
+  "updated_at": "2026-09-20T21:56:16.000Z",
+  "license": "tongyi-qianwen-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "mflux",
+  "languages": [],
+  "tags": [
+    "mflux",
+    "safetensors",
+    "mlx",
+    "apple-silicon",
+    "8-bit",
+    "qwen",
+    "diffusion",
+    "text-to-image",
+    "image-generation",
+    "base_model:Qwen/Qwen-Image",
+    "base_model:quantized:Qwen/Qwen-Image",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 53372447355,
+  "storage_human": "53.4 GB",
+  "base_model": "Qwen/Qwen-Image",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kopitiam - Lowyat.NET",
+      "url": "https://forum.lowyat.net/Kopitiam",
+      "snippet": "While Kopitiam is a place to hang out and chat, annoying threads which make no sense at all will be deleted and offenders warned. …"
+    },
+    {
+      "title": "Is Whatsapp web down? - Lowyat.NET",
+      "url": "https://forum.lowyat.net/topic/5538738",
+      "snippet": "Sep 8, 2025 · Cannot link my device now."
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/msoffice/forum/all/grouping-dead-straight-lines-with-windows-10/71450fa2-dd45-4cf3-85aa-4664f3f6ce26",
+      "snippet": ""
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/windows/forum/all/driver-irql-not-less-or-equal-to-bsod-rootkitvirus/881ad2c8-da74-4ccf-960f-be5a16a2083f",
+      "snippet": ""
+    },
+    {
+      "title": "[found sos] cant login whatsapp browser - Lowyat.NET",
+      "url": "https://forum.lowyat.net/topic/5556445",
+      "snippet": "Feb 27, 2026 · Lowyat.NET -> Kopitiam -> Serious Kopitiam Bump Topic Add Reply RSS Feed Bottom Outline · [ Standard ] · …"
+    }
+  ]
+}

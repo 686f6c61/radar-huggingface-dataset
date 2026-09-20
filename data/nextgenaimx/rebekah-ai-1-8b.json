@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "nextgenaimx/Rebekah-AI-1.8B",
+  "slug": "nextgenaimx-rebekah-ai-1-8b",
+  "author": "nextgenaimx",
+  "url": "https://huggingface.co/nextgenaimx/Rebekah-AI-1.8B",
+  "created_at": "2026-09-20T16:25:10.000Z",
+  "updated_at": "2026-09-20T19:04:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "es"
+  ],
+  "tags": [
+    "safetensors",
+    "llama",
+    "sovereign-ai",
+    "edge-model",
+    "agentic",
+    "tool-use",
+    "nextgenai",
+    "benchmarks",
+    "text-generation",
+    "en",
+    "es",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2008139776,
+  "parameters_human": "2.01B",
+  "storage_bytes": 4016309032,
+  "storage_human": "4.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GSP.ro - ultimele stiri din sport, rezultate live",
+      "url": "https://www.gsp.ro/",
+      "snippet": "Marius Baciu A DEMISIONAT de la FCSB! Se vede cu Gigi Becali să-i comunice decizia Gazeta Sporturilor"
+    },
+    {
+      "title": "Ultima oră în sport - Gazeta Sporturilor - GSP",
+      "url": "https://www.gsp.ro/ultima-ora",
+      "snippet": "19 hours ago · Ultimele știri sportive din România pe Gazeta Sporturilor – află noutăți și actualizări de ultimă oră din fotbal și alte …"
+    },
+    {
+      "title": "Gazeta Sporturilor | Știri sportive de ultimă oră — fotbal, tenis ...",
+      "url": "https://gazeta-sporturilor.ro/",
+      "snippet": "19 hours ago · Cu Gazeta Sporturilor ai acces la materiale editoriale aprofundate despre transfer și calendar, sportul românesc și …"
+    },
+    {
+      "title": "SPORT.RO - Stiri din sport",
+      "url": "https://www.sport.ro/",
+      "snippet": "Stiri si informatii de ultima ora din sport, interviuri si comentarii la cald din fotbalul de pretutindeni. Afla cele mai noi stiri de pe site!"
+    },
+    {
+      "title": "Sport | Gazeta Sporturilor",
+      "url": "https://gazeta-sporturilor.ro/sport/",
+      "snippet": "Categorie Sport Urmărește sport: reportaje, analize și noutăți de la Gazeta Sporturilor."
+    }
+  ]
+}

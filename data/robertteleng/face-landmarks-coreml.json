@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "robertteleng/face-landmarks-coreml",
+  "slug": "robertteleng-face-landmarks-coreml",
+  "author": "robertteleng",
+  "url": "https://huggingface.co/robertteleng/face-landmarks-coreml",
+  "created_at": "2026-09-20T16:56:22.000Z",
+  "updated_at": "2026-09-20T16:56:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "coreml",
+  "languages": [],
+  "tags": [
+    "coreml",
+    "face-landmarks",
+    "on-device",
+    "ios",
+    "apple-neural-engine",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1298860,
+  "storage_human": "1 MB",
+  "base_model": "google/mediapipe-face-landmark",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "香港仔酒店 2026 (低至 HK$459) + 香港仔10大酒店推介及優惠",
+      "url": "https://zh.hotels.com/de1640637/xiang-gang-te-bie-xing-zheng-qu-xiang-gang-zi-jiudian/",
+      "snippet": "部分酒店可以免費取消。2026 香港仔自由行十大酒店住宿推薦，774 間香港仔平價酒店住宿優惠 + 5,661 則真實旅客評價輕鬆掌握！ …"
+    },
+    {
+      "title": "香港 酒店 Hotels.com Hong Kong",
+      "url": "https://zh.hotels.com/",
+      "snippet": "網上預訂酒店！提供多間優惠價格的平價酒店供你選擇，通過我們的網上酒店搜尋功能，你可輕鬆比較房價、查看供應情況 ..."
+    },
+    {
+      "title": "梅窩酒店 2026 (低至 HK$473) + 梅窩10大酒店推介及優惠 | Hotels.com",
+      "url": "https://zh.hotels.com/de1640643/xiang-gang-te-bie-xing-zheng-qu-mei-wo-jiudian/",
+      "snippet": "2 days ago · 部分酒店可以免費取消。2026 梅窩自由行十大酒店住宿推薦，771 間梅窩平價酒店住宿優惠 + 13,374 則真實旅客評價輕 …"
+    },
+    {
+      "title": "登瑞酒店 2026 (低至 HK$89) + 登瑞10大酒店推介及優惠 | Hotels.com",
+      "url": "https://zh.hotels.com/de11410789/yue-nan-deng-rui-jiudian/",
+      "snippet": "1 day ago · 你可在登瑞發掘 低至 HK$89 起的優質酒店，以及符合各種預算和需求的住宿。 如果你正在搜尋 符合你所有要求的登瑞實 …"
+    },
+    {
+      "title": "2026 香港特別行政區自由行十大酒店推介 + 香港特別行政區酒店優惠",
+      "url": "https://zh.hotels.com/co10233073/xiang-gang-te-bie-xing-zheng-qu-fanwei-jiudian/",
+      "snippet": "部分酒店可以免費取消。2026 香港特別行政區自由行十大酒店住宿推薦，1,686 間香港特別行政區平價酒店住宿優惠 + 247,786 則真 …"
+    }
+  ]
+}

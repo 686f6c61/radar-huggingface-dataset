@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "beshkenadze/gliner2.5-multi-onnx",
+  "slug": "beshkenadze-gliner2-5-multi-onnx",
+  "author": "beshkenadze",
+  "url": "https://huggingface.co/beshkenadze/gliner2.5-multi-onnx",
+  "created_at": "2026-09-20T16:14:12.000Z",
+  "updated_at": "2026-09-20T16:14:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnx",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "onnx",
+    "onnxruntime-web",
+    "gliner",
+    "gliner2",
+    "information-extraction",
+    "multilingual",
+    "base_model:fastino/gliner2.5-multi-v1",
+    "base_model:quantized:fastino/gliner2.5-multi-v1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 577282301,
+  "storage_human": "577 MB",
+  "base_model": "fastino/gliner2.5-multi-v1",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WebMail Version für mobile Browser? - netcup Kundenforum",
+      "url": "https://forum.netcup.de/thread/10869-webmail-version-f%C3%BCr-mobile-browser/",
+      "snippet": "Dec 29, 2018 · Diese WebMail URL erscheint mir aber NICHT für den mobilen Gebrauch auf Android-Systemen zugeschnitten zu …"
+    },
+    {
+      "title": "Umgezogen zu Netcup - jetzt \"Verbindung zum Speicherserver ...",
+      "url": "https://forum.netcup.de/thread/19451-umgezogen-zu-netcup-jetzt-verbindung-zum-speicherserver-fehlgeschlagen/",
+      "snippet": "Dec 15, 2024 · Hallo zusammen, ich bin gestern im Standardtarif Hosting zu Netcup umgezogen, DNS-Einträge sollten also …"
+    },
+    {
+      "title": "Wie kann ich das Passwort einer E-Mail ändern? - netcup Kundenforum",
+      "url": "https://forum.netcup.de/thread/15255-wie-kann-ich-das-passwort-einer-e-mail-%C3%A4ndern/",
+      "snippet": "Mar 28, 2022 · Hallo Gemeinde, die Frage scheint banal. Ich habe mir aber bei Netcup nach der Suche schon schon die Füße …"
+    },
+    {
+      "title": "netcup Kundenforum",
+      "url": "https://forum.netcup.de/",
+      "snippet": "Oct 23, 2009 · Finde oder gib Antworten auf Fragen rund um netcup Produkte und Anwendungen im netcup Kundenforum."
+    },
+    {
+      "title": "netcup E-Mail in Outlook einbinden - netcup Kundenforum",
+      "url": "https://forum.netcup.de/thread/17697-netcup-e-mail-in-outlook-einbinden/",
+      "snippet": "Dec 9, 2023 · Hallo Zusammen, ich möchte gerne eine E-Mail Adresse die bei netcup hinterlegt ist in mein Outlook eintragen und …"
+    }
+  ]
+}

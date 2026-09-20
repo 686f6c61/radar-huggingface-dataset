@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "ForSureTesterSim/Llama-3.1-8B-Task_Arithmetic_Ext_A",
+  "slug": "forsuretestersim-llama-3-1-8b-task_arithmetic_ext_a",
+  "author": "ForSureTesterSim",
+  "url": "https://huggingface.co/ForSureTesterSim/Llama-3.1-8B-Task_Arithmetic_Ext_A",
+  "created_at": "2026-09-20T15:47:00.000Z",
+  "updated_at": "2026-09-20T15:53:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "conversational",
+    "arxiv:2212.04089",
+    "base_model:Magpie-Align/Llama-3.1-8B-Magpie-Align-v0.2",
+    "base_model:merge:Magpie-Align/Llama-3.1-8B-Magpie-Align-v0.2",
+    "base_model:allenai/Llama-3.1-Tulu-3.1-8B",
+    "base_model:merge:allenai/Llama-3.1-Tulu-3.1-8B",
+    "base_model:meta-llama/Llama-3.1-8B",
+    "base_model:merge:meta-llama/Llama-3.1-8B",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:merge:meta-llama/Llama-3.1-8B-Instruct",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766256,
+  "storage_human": "16.1 GB",
+  "base_model": "allenai/Llama-3.1-Tulu-3.1-8B, meta-llama/Llama-3.1-8B, Magpie-Align/Llama-3.1-8B-Magpie-Align-v0.2, meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/",
+      "snippet": "Create an account or log in to Instagram - Share what you're into with the people who get you."
+    },
+    {
+      "title": "Instagram - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.instagram.android&hl=en-US",
+      "snippet": "- Turn your life into a movie and discover short, entertaining videos on Instagram with Reels. - Customize your posts with exclusive …"
+    },
+    {
+      "title": "Instagram (@instagram) • Instagram photos and videos",
+      "url": "https://www.instagram.com/instagram/",
+      "snippet": "687M Followers, 299 Following, 8,590 Posts - Instagram (@instagram) on Instagram: \"Discover what's new on Instagram 🔎 \""
+    },
+    {
+      "title": "Google (@google) • Instagram photos and videos",
+      "url": "https://www.instagram.com/google/",
+      "snippet": "16M Followers, 49 Following, 3,361 Posts - Google (@google) on Instagram: \"Here to help\""
+    },
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/p/signin/",
+      "snippet": "Instagram ... Instagram"
+    }
+  ]
+}

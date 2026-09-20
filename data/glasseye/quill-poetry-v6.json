@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "GLASSEYE/quill-poetry-v6",
+  "slug": "glasseye-quill-poetry-v6",
+  "author": "GLASSEYE",
+  "url": "https://huggingface.co/GLASSEYE/quill-poetry-v6",
+  "created_at": "2026-09-20T18:16:17.000Z",
+  "updated_at": "2026-09-20T18:16:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "poetry",
+    "creative-writing",
+    "lora",
+    "quill",
+    "love",
+    "lyric",
+    "base_model:mistralai/Mistral-7B-Instruct-v0.3",
+    "base_model:adapter:mistralai/Mistral-7B-Instruct-v0.3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 83946192,
+  "storage_human": "84 MB",
+  "base_model": "mistralai/Mistral-7B-Instruct-v0.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Eurowings Online-Check-in – Jetzt einchecken!",
+      "url": "https://www.eurowings.com/de/meine-reise/checkin.html",
+      "snippet": "Jetzt online einchecken, Sitzplatz auswählen und Zeit am Flughafen sparen! Egal, ob du selbst gebucht hast, per Reiseveranstalter …"
+    },
+    {
+      "title": "Check-in | My trip | Eurowings",
+      "url": "https://www.eurowings.com/en/my-trip/checkin.html",
+      "snippet": "Check in here for your upcoming Eurowings flight."
+    },
+    {
+      "title": "Eurowings Online Check-in: Anleitung & Bordkarte | AirHelp",
+      "url": "https://www.airhelp.de/fluggesellschaften/eurowings/online-check-in/",
+      "snippet": "Jul 21, 2026 · Erfahren Sie alles zum Eurowings Online Check-in: Voraussetzungen, Check-in-Zeiten, Bordkarte, Gepäckabgabe und …"
+    },
+    {
+      "title": "Eurowings - Check-in",
+      "url": "https://www.eurowings.com/nl/mijn-reis/checkin.html",
+      "snippet": "Al je boekingen in één oogopslag – met je myEurowings-account Wil je een handig overzicht van al je Eurowings-boekingen? Meld je …"
+    },
+    {
+      "title": "Infos und FAQs rund um deinen Check-in - Eurowings",
+      "url": "https://www.eurowings.com/de/informieren/am-flughafen/alles-rund-um-deinen-check-in.html",
+      "snippet": "Dortmund Wenn du in Dortmund umsteigst, bekommst du deine Bordkarte für den Weiterflug am Eurowings Check-in im Terminal …"
+    }
+  ]
+}

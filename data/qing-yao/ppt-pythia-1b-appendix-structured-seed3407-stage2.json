@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "qing-yao/ppt-pythia-1b-appendix-structured-seed3407-stage2",
+  "slug": "qing-yao-ppt-pythia-1b-appendix-structured-seed3407-stage2",
+  "author": "qing-yao",
+  "url": "https://huggingface.co/qing-yao/ppt-pythia-1b-appendix-structured-seed3407-stage2",
+  "created_at": "2026-09-20T17:53:51.000Z",
+  "updated_at": "2026-09-21T08:41:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1011781632,
+  "parameters_human": "1.01B",
+  "storage_bytes": 26306629409,
+  "storage_human": "26.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "VisitVerona.it | DMO Verona Official Tourist Board site",
+      "url": "https://www.visitverona.it/en",
+      "snippet": "Verona and the Veneto region are full of fascinating traditions and traditional ways of life, making a holiday a voyage of discovery. To …"
+    },
+    {
+      "title": "27 BEST Things to Do in Verona, Italy (2026 Travel Guide)",
+      "url": "https://www.savoringitaly.com/verona-italy/",
+      "snippet": "Jan 14, 2026 · Discover the top 27 must-see spots in Verona, Italy, with our 2026 travel guide. Start planning your unforgettable trip …"
+    },
+    {
+      "title": "Verona, Italy: The Complete Travel Guide - Love Italy",
+      "url": "https://lovetovisititaly.com/verona-italy-the-complete-travel-guide/",
+      "snippet": "Jul 20, 2026 · Verona is just one of dozens of remarkable Italian cities. Our Ultimate Italy Travel Guide covers the full country, with …"
+    },
+    {
+      "title": "Verona, Italy, Travel Guide: What to See, Do, and Eat",
+      "url": "https://www.travelandleisure.com/verona-italy-travel-guide-11944701",
+      "snippet": "Apr 27, 2026 · Here’s everything you need to know to plan a trip to Verona, Italy, including the best hotels, restaurants, and things to do."
+    },
+    {
+      "title": "Verona | Your Complete Travel Guide Beyond Juliet’s Balcony",
+      "url": "https://www.characrosstheworld.com/verona-italy-travel-guide/",
+      "snippet": "Dec 15, 2025 · Below, I’ll walk through how long to stay, when to visit, how to get around, and all the practical details that make a …"
+    }
+  ]
+}

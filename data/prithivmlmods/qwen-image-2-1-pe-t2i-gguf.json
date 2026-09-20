@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "prithivMLmods/Qwen-Image-2.1-PE-T2I-GGUF",
+  "slug": "prithivmlmods-qwen-image-2-1-pe-t2i-gguf",
+  "author": "prithivMLmods",
+  "url": "https://huggingface.co/prithivMLmods/Qwen-Image-2.1-PE-T2I-GGUF",
+  "created_at": "2026-09-20T14:19:33.000Z",
+  "updated_at": "2026-09-20T15:32:25.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "llama-cpp",
+    "qwen",
+    "prompt-rewriting",
+    "image-editing",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen-Image-2.1-PE-T2I",
+    "base_model:quantized:Qwen/Qwen-Image-2.1-PE-T2I",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 51223753088,
+  "storage_human": "51.2 GB",
+  "base_model": "Qwen/Qwen-Image-2.1-PE-T2I",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "esseJ：我讲个有点被忽略的角度。 90 后因为是 digital native 的第一代人，我们的生命体验和身体本身，是被计算机技术和数字尺度 …"
+    },
+    {
+      "title": "eBay Australia | eBay Community",
+      "url": "https://community.ebay.com.au/",
+      "snippet": "Your eBay Community. Find answers to pressing questions, connect with members, and get advice from expert sellers."
+    },
+    {
+      "title": "Technical Problem with Cart | Report eBay Technical Issues | eBay …",
+      "url": "https://community.ebay.com.au/forum/report-ebay-technical-issues-5/topic/technical-problem-with-cart-8837/",
+      "snippet": "Technical Problem with Cart I'm unable to access my cart for the last 2 days. I also can't add or delete anything in the cart. The …"
+    },
+    {
+      "title": "eBay Italy",
+      "url": "https://community.ebay.it/forum/",
+      "snippet": "Community di eBay. Trova risposte, fai domande e mettiti in contatto con la nostra comunità di utenti ed esperti."
+    }
+  ]
+}

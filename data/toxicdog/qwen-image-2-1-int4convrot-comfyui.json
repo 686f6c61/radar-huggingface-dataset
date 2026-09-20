@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "toxicdog/Qwen-Image-2.1-INT4ConvRot-ComfyUI",
+  "slug": "toxicdog-qwen-image-2-1-int4convrot-comfyui",
+  "author": "toxicdog",
+  "url": "https://huggingface.co/toxicdog/Qwen-Image-2.1-INT4ConvRot-ComfyUI",
+  "created_at": "2026-09-20T14:43:52.000Z",
+  "updated_at": "2026-09-20T14:43:52.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusion-single-file",
+  "languages": [],
+  "tags": [
+    "diffusion-single-file",
+    "comfyui",
+    "base_model:Qwen/Qwen-Image-2.1",
+    "base_model:finetune:Qwen/Qwen-Image-2.1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 65907160844,
+  "storage_human": "65.9 GB",
+  "base_model": "Qwen/Qwen-Image-2.1",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "chatGPT如何才能生成4K图片？ - 知乎",
+      "url": "https://www.zhihu.com/question/2031678313916260748",
+      "snippet": "在chatGPT网站输出的图片好像最大只能有1K还是2K，我租用了一天的plus会员也没有改变这个分辨率。后来试…"
+    },
+    {
+      "title": "知乎",
+      "url": "https://www.zhihu.com/tardis/jm/art/2030805996927440216",
+      "snippet": "知乎，有趣、有料、有态度的内容社区。开放、真实、专业的社区氛围，汇集各行各业亲历者、内行人、领域专家。上知乎，找答案、 …"
+    },
+    {
+      "title": "小说创作中如何活用Chat—GTP？ - 知乎",
+      "url": "https://www.zhihu.com/question/648088540",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "GLM 5.2 vs GPT 5.5 xhigh fast？ - 知乎",
+      "url": "https://www.zhihu.com/question/2050266209585730795",
+      "snippet": "Jun 16, 2026 · 最近上手了一下GLM 5.2 ,只能说，如果你不是纯粹写代码，纯粹写软件，要是有点分析或者需要你自己思考一下做事的 …"
+    },
+    {
+      "title": "Chat GTP有多强大？ - 知乎",
+      "url": "https://www.zhihu.com/question/603319705",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    }
+  ]
+}

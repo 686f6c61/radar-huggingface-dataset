@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "LousisOfficial/LousisAI-4B",
+  "slug": "lousisofficial-lousisai-4b",
+  "author": "LousisOfficial",
+  "url": "https://huggingface.co/LousisOfficial/LousisAI-4B",
+  "created_at": "2026-09-20T17:01:26.000Z",
+  "updated_at": "2026-09-20T20:33:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "causal-lm",
+    "turkish",
+    "fine-tuned",
+    "tr",
+    "base_model:Qwen/Qwen3-4B-Base",
+    "base_model:quantized:Qwen/Qwen3-4B-Base",
+    "license:apache-2.0",
+    "4-bit",
+    "bitsandbytes",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 3442867183,
+  "storage_human": "3.4 GB",
+  "base_model": "Qwen/Qwen3-4B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Royals Scores: Scoreboard, Results and Highlights",
+      "url": "https://www.mlb.com/royals/scores?msockid=0f320498f1ce69640bc21342f0b768ad",
+      "snippet": "The official scoreboard of the Kansas City Royals including Gameday, video, highlights and box score."
+    },
+    {
+      "title": "New York Yankees vs. Kansas City Royals | Full Game Highlights",
+      "url": "https://www.youtube.com/watch?v=rFhDzcsv7n0",
+      "snippet": "May 25, 2026 · Watch the highlights as the New York Yankees get the road victory over the Kansas City Royals, 4-3. ️ Subscribe to …"
+    },
+    {
+      "title": "24 HITS New York Yankees vs. Kansas City Royals - YouTube",
+      "url": "https://www.youtube.com/watch?v=L5nlzJPLFY8",
+      "snippet": "May 26, 2026 · Watch the highlights as the New York Yankees defeat the Kansas City Royals, 15-1, recording 24 hits, including five …"
+    },
+    {
+      "title": "Yankees Vs Royals Game Log | StatMuse",
+      "url": "https://www.statmuse.com/mlb/ask/yankees-vs-royals-game-log",
+      "snippet": "Jun 10, 2024 · Some of the information used here was obtained free of charge from Retrosheet."
+    },
+    {
+      "title": "Kansas City Royals 5 - New York Yankees 6: Final score, results, recap ...",
+      "url": "https://sports.yahoo.com/mlb/kansas-city-royals-new-york-yankees-441005110/",
+      "snippet": "Oct 5, 2024 · Get started with a great offer."
+    }
+  ]
+}

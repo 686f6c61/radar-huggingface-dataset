@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "mohamedmaheros/npt-study-mode",
+  "slug": "mohamedmaheros-npt-study-mode",
+  "author": "mohamedmaheros",
+  "url": "https://huggingface.co/mohamedmaheros/npt-study-mode",
+  "created_at": "2026-09-20T15:44:47.000Z",
+  "updated_at": "2026-09-22T02:12:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15125125569,
+  "storage_human": "15.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Red Vožnje Linije 493 (BAS - Mladenovac (autoputem)) | Beograd Prevoz",
+      "url": "https://red-voznje.rs/red-voznje/linija-493",
+      "snippet": "Kompletan red vožnje za liniju 493 (BAS - Mladenovac (autoputem)) u Beogradu. Polasci radnim danom, subotom i nedeljom."
+    },
+    {
+      "title": "Red vožnje autobus 493 - Beograd - kadkrece.rs",
+      "url": "https://kadkrece.rs/gradski-prevoz/beograd/red-voznje/bus-493",
+      "snippet": "Sep 1, 2026 · Red vožnje za autobus 493 na relaciji BAS — Mladenovac (autoputem) u Beogradu. 11 stajališta."
+    },
+    {
+      "title": "Linija 493 red vožnje — BAS – Mladenovac AS (preko Mali Požarevac)",
+      "url": "https://busevi.rs/linija-493",
+      "snippet": "Sep 12, 2026 · Linija 493 (autobus) gradskog prevoza Beograda povezuje BAS i Mladenovac AS. Ima 11 stajališta po smeru, …"
+    },
+    {
+      "title": "Секретаријат за јавни превоз | Ред вожње линија 493",
+      "url": "https://bgprevoz.rs/linije/red-voznje/linija/60260/prikaz",
+      "snippet": "Ред вожње линија 493 БАС - Младеновац (аутопутем) БАС ... Младеновац - БАС (аутопутем) Младеновац (аутопутем)"
+    },
+    {
+      "title": "Секретаријат за јавни превоз | Ред вожње линија 493к",
+      "url": "https://bgprevoz.rs/linije/red-voznje/linija/62336/prikaz",
+      "snippet": "May 15, 2020 · Секретаријат за јавни превоз Младеновац АС - Београд ( Мостарска Петља) - Младеновац АС Младеновац АС"
+    }
+  ]
+}

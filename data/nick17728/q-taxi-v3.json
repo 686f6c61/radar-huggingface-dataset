@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "nick17728/q-Taxi-v3",
+  "slug": "nick17728-q-taxi-v3",
+  "author": "nick17728",
+  "url": "https://huggingface.co/nick17728/q-Taxi-v3",
+  "created_at": "2026-09-20T17:33:20.000Z",
+  "updated_at": "2026-09-20T17:33:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Taxi-v3",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 147773,
+  "storage_human": "147773 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "وزارة التربية والتعليم - SSO",
+      "url": "https://lms.moe.gov.ae/",
+      "snippet": "وزارة التربية والتعليم - SSO ... Login Email"
+    },
+    {
+      "title": "Privacy Policy - Smart Learning Gateway",
+      "url": "https://lms.moe.gov.ae/Home/PrivacyPolicy",
+      "snippet": "Learning Management System Privacy Policy: Smart Learning Gateway (Last Updated: 4th of May, 2020)"
+    },
+    {
+      "title": "End User License Agreement - Smart Learning Gateway",
+      "url": "https://lms.moe.gov.ae/Home/LicenseAgreement",
+      "snippet": "Learning Management System End User License Agreement For ITWORX Software: Smart Learning Gateway (Last Updated: 8th of …"
+    },
+    {
+      "title": "Log in - Smart Learning Gateway",
+      "url": "https://lms.moe.gov.ae/account/login?iskeep=true",
+      "snippet": "Learning Management System Home | Privacy Policy | Terms & Conditions | End User License Agreement"
+    },
+    {
+      "title": "Terms and Conditions of Use - Smart Learning Gateway",
+      "url": "https://lms.moe.gov.ae/Home/TermsOfUse",
+      "snippet": "Learning Management System Terms and Conditions of Use: Smart Learning Gateway (Last Updated: 8th of April, 2015)"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "TreeNumber/LFM2.5-2.6B-GGUF-Splited",
+  "slug": "treenumber-lfm2-5-2-6b-gguf-splited",
+  "author": "TreeNumber",
+  "url": "https://huggingface.co/TreeNumber/LFM2.5-2.6B-GGUF-Splited",
+  "created_at": "2026-09-20T12:44:43.000Z",
+  "updated_at": "2026-09-20T13:00:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "ru"
+  ],
+  "tags": [
+    "gguf",
+    "en",
+    "ru",
+    "base_model:LiquidAI/LFM2.5-2.6B",
+    "base_model:quantized:LiquidAI/LFM2.5-2.6B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2697198592,
+  "parameters_human": "2.70B",
+  "storage_bytes": 1674455520,
+  "storage_human": "1.7 GB",
+  "base_model": "LiquidAI/LFM2.5-2.6B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PowerShell Documentation - PowerShell | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/powershell/",
+      "snippet": "PowerShell Editions + Tools Available editions, tools, and technology that supports PowerShell"
+    },
+    {
+      "title": "GitHub - PowerShell/PowerShell: PowerShell for every system!",
+      "url": "https://github.com/PowerShell/PowerShell",
+      "snippet": "PowerShell is a cross-platform (Windows, Linux, and macOS) automation and configuration tool/framework that works well with your …"
+    },
+    {
+      "title": "Install PowerShell 7 on Windows - PowerShell | Microsoft Learn",
+      "url": "https://learn.microsoft.com/en-us/powershell/scripting/install/install-powershell-on-windows?view=powershell-7.6",
+      "snippet": "Sep 8, 2026 · Learn how to install the latest version of PowerShell 7, which runs side-by-side with Windows PowerShell 5.1."
+    },
+    {
+      "title": "PowerShell - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/PowerShell",
+      "snippet": "additional terms may apply. By using this site, you agree to the Terms of Useand Privacy Policy. Wikipedia® is a registered …"
+    },
+    {
+      "title": "Releases: PowerShell/PowerShell - GitHub",
+      "url": "https://github.com/PowerShell/powershell/releases",
+      "snippet": "PowerShell for every system! Contribute to PowerShell/PowerShell development by creating an account on GitHub."
+    }
+  ]
+}

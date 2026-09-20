@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "theplayboy117/iz-instruct-full",
+  "slug": "theplayboy117-iz-instruct-full",
+  "author": "theplayboy117",
+  "url": "https://huggingface.co/theplayboy117/iz-instruct-full",
+  "created_at": "2026-09-20T18:12:48.000Z",
+  "updated_at": "2026-09-20T18:18:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3098888700,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Inicie sessão no Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=pt&co=GENIE.Platform%3DDesktop",
+      "snippet": "Inicie sessão no Gmail Para abrir o Gmail, pode iniciar sessão a partir de um computador ou adicionar a sua conta à aplicação Gmail …"
+    },
+    {
+      "title": "Accedere a Gmail - Computer - Guida di Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=it&co=GENIE.Platform%3DDesktop",
+      "snippet": "Accedere a Gmail Per aprire Gmail, puoi accedere da un computer o aggiungere il tuo account all'app Gmail sul tuo telefono o tablet. …"
+    },
+    {
+      "title": "Sign in to Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=en-GB&co=GENIE.Platform%3DDesktop",
+      "snippet": "Sign in On your computer, go to gmail.com. Enter your Google Account email address or phone number and password. If information …"
+    },
+    {
+      "title": "Login ke Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=id&co=GENIE.Platform%3DDesktop",
+      "snippet": "Login ke Gmail Untuk membuka Gmail, Anda dapat login dari komputer atau menambahkan akun Anda ke aplikasi Gmail di ponsel …"
+    },
+    {
+      "title": "Fazer login no Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=pt-br&co=GENIE.Platform%3DDesktop",
+      "snippet": "Fazer login No seu computador, acesse gmail.com. Insira seu número de telefone ou e-mail da Conta do Google e a senha. Se as …"
+    }
+  ]
+}

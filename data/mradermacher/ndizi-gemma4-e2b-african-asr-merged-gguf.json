@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "mradermacher/ndizi-gemma4-e2b-african-asr-merged-GGUF",
+  "slug": "mradermacher-ndizi-gemma4-e2b-african-asr-merged-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/ndizi-gemma4-e2b-african-asr-merged-GGUF",
+  "created_at": "2026-09-20T18:10:32.000Z",
+  "updated_at": "2026-09-21T05:25:10.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "sw",
+    "am",
+    "om"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "automatic-speech-recognition",
+    "swahili",
+    "amharic",
+    "oromo",
+    "african-languages",
+    "gemma4",
+    "sunflower",
+    "sw",
+    "am",
+    "om",
+    "dataset:smutuvi/ndizi-1",
+    "dataset:smutuvi/ndizi-1-2025",
+    "dataset:nickdee96/ALFFA-Swahili-News",
+    "dataset:hadamard-2/alffa-amharic",
+    "dataset:snapwre/amharic-speech",
+    "dataset:google/WaxalNLP",
+    "dataset:turiabu/Sagalee",
+    "base_model:smutuvi/ndizi-gemma4-e2b-african-asr-merged",
+    "base_model:quantized:smutuvi/ndizi-gemma4-e2b-african-asr-merged",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4647450147,
+  "parameters_human": "4.65B",
+  "storage_bytes": 49578662080,
+  "storage_human": "49.6 GB",
+  "base_model": "smutuvi/ndizi-gemma4-e2b-african-asr-merged",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wedden op Paardenrennen - PMU - Bingoal",
+      "url": "https://www.bingoalsport.be/nl/Paardenrennen",
+      "snippet": "Wedden op paardenrennen? Bezoek Bingoal, uw online bookmaker, en registreer je om online te gokken op paardenraces van de …"
+    },
+    {
+      "title": "Sportweddenschappen | Online wedden op Sport bij Bingoal",
+      "url": "https://www.bingoal.be/nl/Paardenrennen",
+      "snippet": "Wij willen hier een beschrijving geven, maar de site die u nu bekijkt staat dit niet toe."
+    },
+    {
+      "title": "Bingoal, Sports Betting, Horse Racing and Online Casino",
+      "url": "https://www.bingoal.be/",
+      "snippet": "Bet and get the best odds on all sports and horse races with Bingoal. Discover hundreds of games in our Online Casino."
+    },
+    {
+      "title": "Sportweddenschappen | Online wedden op Sport bij Bingoal",
+      "url": "https://www.bingoalsport.be/nl/Home",
+      "snippet": "Online sportweddenschappen. Wed nu en geniet van de beste noteringen op alle sporten bij Bingoal, Belgische bookmaker n°1 in het …"
+    },
+    {
+      "title": "Paardenweddenschappen | Wedden op Paardenrennen bij Bingoal",
+      "url": "https://www.bingoalsport.be/nl/Sport/Paarden",
+      "snippet": "Paardenweddenschappen / wedden op paardenrennen. Verhoogde noteringen, Bingoal + ZeTote noteringen en Head to Head …"
+    }
+  ]
+}

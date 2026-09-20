@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Lance1573/acrouter-qwen35-08b-router-v45-reconstructed",
+  "slug": "lance1573-acrouter-qwen35-08b-router-v45-reconstructed",
+  "author": "Lance1573",
+  "url": "https://huggingface.co/Lance1573/acrouter-qwen35-08b-router-v45-reconstructed",
+  "created_at": "2026-09-20T13:26:19.000Z",
+  "updated_at": "2026-09-20T13:26:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qwen3.5",
+    "model-routing",
+    "agent-as-a-router",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:adapter:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 45573567,
+  "storage_human": "46 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "十二个月的英文 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/339419825.html",
+      "snippet": "十二个月的英文分别是：January，一月；February，二月；March，三月；April，四月；May，五月；June，六月；July，七 …"
+    },
+    {
+      "title": "如何按这个格式①②③④⑤⑥⑦⑧⑨输入10、11、12_百度知道",
+      "url": "https://zhidao.baidu.com/question/981865431651441019.html",
+      "snippet": "按这个格式①②③④⑤⑥⑦⑧⑨输入10、11、12的方法为： 1、切换到搜狗输入法，右键点击输入法，这里有个符号大全，点一下会弹出 …"
+    },
+    {
+      "title": "7-Zip 官方网站怎么下载？ - 知乎",
+      "url": "https://www.zhihu.com/question/20498753",
+      "snippet": "7-Zip 是一个功能强大的工具，特别适合需要 高效压缩 和 解压缩 功能的用户。比如 IT 专业人员、软件开发者或普通用户希望节省磁 …"
+    },
+    {
+      "title": "三国群英传从1到7，哪个版本最经典最耐玩？ - 知乎",
+      "url": "https://www.zhihu.com/question/29522718",
+      "snippet": "三国群英传8 最新的消息出现在2019年末，宇峻奥汀表示《三国群英传 8》是 PC 纯单机游戏，只是目前因为品质不达预期，仍在持续 …"
+    },
+    {
+      "title": "WOW中符文精金棒的图纸在那买？_百度知道",
+      "url": "https://zhidao.baidu.com/question/1110361667872348899.html",
+      "snippet": "一、图纸购买： 1、部落方：泰罗卡森林裂石堡，伦格尔，坐标48.8 , 46.1。 2、联盟方：地狱火半岛塔哈姆特神殿，沃德辛，坐 …"
+    }
+  ]
+}

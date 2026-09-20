@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "brosnanyuen/Qwen3.8-27B-SFT-Attacker-v3",
+  "slug": "brosnanyuen-qwen3-8-27b-sft-attacker-v3",
+  "author": "brosnanyuen",
+  "url": "https://huggingface.co/brosnanyuen/Qwen3.8-27B-SFT-Attacker-v3",
+  "created_at": "2026-09-20T12:39:53.000Z",
+  "updated_at": "2026-09-20T12:40:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:unsloth/Qwen3.8-27B-unsloth-bnb-4bit",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:unsloth/Qwen3.8-27B-unsloth-bnb-4bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1295126789,
+  "storage_human": "1.3 GB",
+  "base_model": "unsloth/Qwen3.8-27B-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dr. Hans Peter Heuberger - Ärztinnen- und Ärztekammer für …",
+      "url": "https://www.arztnoe.at/arztsuche/15899",
+      "snippet": "Dr. Hans Peter Heuberger Berufsberechtigungen Arzt für Allgemeinmedizin , Facharzt für Orthopädie und Orthopädische Chirurgie ."
+    },
+    {
+      "title": "Orthopädische Ordination Dr. Wanke & Dr. Heuberger",
+      "url": "https://www.wr-neustadt-ortho.at/",
+      "snippet": "Herzlich Willkommen in der orthopädischen Ordination von Dr. Stefan Wanke & Dr. Hans Peter Heuberger! Wir sind Vertragspartner …"
+    },
+    {
+      "title": "Hans-Peter Heuberger – Rentner | LinkedIn",
+      "url": "https://de.linkedin.com/in/hans-peter-heuberger-544ab9210",
+      "snippet": "Berufserfahrung: Rentner · Ausbildung: Fachhochschule Wiesbaden · Ort: Ingolstadt · 500+ Kontakte auf LinkedIn. Sehen Sie sich …"
+    },
+    {
+      "title": "Über mich",
+      "url": "https://www.wr-neustadt-ortho.at/uebermich",
+      "snippet": "Da diese aber nicht zum Erfolg führte, organisierte mir Dr. Heuberger eine Schmerztherapie im Krankenhaus, bei der er mich …"
+    },
+    {
+      "title": "OA Dr. Hans Peter Heuberger | Orthopäde in 2700 Wiener Neustadt",
+      "url": "https://www.docfinder.at/orthopaede/2700-wiener-neustadt/dr-hans-peter-heuberger",
+      "snippet": "Als Facharzt für Orthopädie und orthopädische Chirurgie behandle ich Beschwerden am gesamten Bewegungsapparat. Mein Ziel ist …"
+    }
+  ]
+}

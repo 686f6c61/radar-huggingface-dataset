@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Playtime-AI/MM-H3-Chuck_Norris",
+  "slug": "playtime-ai-mm-h3-chuck_norris",
+  "author": "Playtime-AI",
+  "url": "https://huggingface.co/Playtime-AI/MM-H3-Chuck_Norris",
+  "created_at": "2026-09-20T19:51:45.000Z",
+  "updated_at": "2026-09-20T19:53:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 193538825,
+  "storage_human": "194 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Playtime (film) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Playtime_(film)",
+      "snippet": "Playtime (stylisé PlayTime, parfois écrit Play Timenote 1) est un film comique franco - italien réalisé par Jacques Tati, tourné entre …"
+    },
+    {
+      "title": "Playtime",
+      "url": "https://www.iloveplaytime.com/playtime-paris/?lang=fr",
+      "snippet": "Since 2007, Playtime Paris has revolutionized the kids’ fashion and lifestyle universe by bringing together the best collections of …"
+    },
+    {
+      "title": "Playtime - Film 1967 - AlloCiné",
+      "url": "https://www.allocine.fr/film/fichefilm_gen_cfilm=1363.html",
+      "snippet": "Playtime est un film réalisé par Jacques Tati avec Jacques Tati, Barbara Dennek."
+    },
+    {
+      "title": "Play the game – MOB Entertainment - Playtime Co. Shop",
+      "url": "https://poppyplaytime.com/pages/play-the-game",
+      "snippet": "Shop officially licensed Poppy Playtime merch featuring Chapter 1–5 characters and the upcoming Chapter 5 release. Discover plush, …"
+    },
+    {
+      "title": "Playtime (1967) - IMDb",
+      "url": "https://www.imdb.com/title/tt0062136/",
+      "snippet": "Playtime: Directed by Jacques Tati. With Jacques Tati, Barbara Dennek, Rita Maiden, France Rumilly. Monsieur Hulot curiously …"
+    }
+  ]
+}

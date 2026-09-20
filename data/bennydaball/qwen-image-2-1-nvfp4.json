@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "BennyDaBall/Qwen-Image-2.1-NVFP4",
+  "slug": "bennydaball-qwen-image-2-1-nvfp4",
+  "author": "BennyDaBall",
+  "url": "https://huggingface.co/BennyDaBall/Qwen-Image-2.1-NVFP4",
+  "created_at": "2026-09-20T18:39:13.000Z",
+  "updated_at": "2026-09-20T19:08:55.000Z",
+  "license": "qwen-research-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusion-single-file",
+  "languages": [],
+  "tags": [
+    "diffusion-single-file",
+    "qwen-image",
+    "qwen-image-2.1",
+    "nvfp4",
+    "comfyui",
+    "quantized",
+    "image-editing",
+    "rtx-5090",
+    "text-to-image",
+    "base_model:Comfy-Org/Qwen-Image-2.1",
+    "base_model:quantized:Comfy-Org/Qwen-Image-2.1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12502295341,
+  "storage_human": "12.5 GB",
+  "base_model": "Comfy-Org/Qwen-Image-2.1",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook",
+      "url": "https://upload.facebook.com/login/identify/",
+      "snippet": "Enter your mobile number or email. Mobile number or email"
+    },
+    {
+      "title": "Log into Facebook",
+      "url": "https://upload.facebook.com/login/",
+      "snippet": "Log into Facebook to connect and share with friends, family, and people you know."
+    },
+    {
+      "title": "How do you contact Facebook by phone? - Answers",
+      "url": "https://www.answers.com/law-and-legal-issues/How_do_you_contact_Facebook_by_phone",
+      "snippet": "2 days ago · How do I recover a hacked Facebook account UK call 0122-498-8977 How Can I Recover My Facebook Login If I Forgot …"
+    },
+    {
+      "title": "Clicking \"Login with Facebook\" does nothing on Firefox, works on Edge ...",
+      "url": "https://support.mozilla.org/en-US/questions/1256791",
+      "snippet": "Apr 19, 2019 · With Firefox, when I click on \"Login with Facebook\" on Zomato (zomato.com), nothing happens. However, if I click on …"
+    },
+    {
+      "title": "ตั้งค่า Firefox ใหม่ - วิธีการ ...",
+      "url": "https://support.mozilla.org/th/kb/%E0%B8%95%E0%B8%B1%E0%B9%89%E0%B8%87%E0%B8%84%E0%B9%88%E0%B8%B2-firefox-%E0%B9%83%E0%B8%AB%E0%B8%A1%E0%B9%88-%E0%B9%81%E0%B8%81%E0%B9%89%E0%B9%84%E0%B8%82%E0%B8%9B%E0%B8%B1%E0%B8%8D%E0%B8%AB%E0%B8%B2%E0%B8%95%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B9%86",
+      "snippet": "ตั้งค่า Firefox ใหม่ - วิธีการง่ายๆ ในการแก้ไขปัญหาต่างๆ"
+    }
+  ]
+}

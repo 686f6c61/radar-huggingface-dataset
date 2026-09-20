@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "ERISLab/LisTAya",
+  "slug": "erislab-listaya",
+  "author": "ERISLab",
+  "url": "https://huggingface.co/ERISLab/LisTAya",
+  "created_at": "2026-09-20T19:17:19.000Z",
+  "updated_at": "2026-09-20T20:19:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "am",
+    "ha",
+    "sw",
+    "hi",
+    "mr",
+    "ta",
+    "ur",
+    "en",
+    "es",
+    "fr",
+    "id",
+    "crs"
+  ],
+  "tags": [
+    "slam-asr",
+    "tiny-aya",
+    "whisper",
+    "speech-recognition",
+    "automatic-speech-recognition",
+    "am",
+    "ha",
+    "sw",
+    "hi",
+    "mr",
+    "ta",
+    "ur",
+    "en",
+    "es",
+    "fr",
+    "id",
+    "crs",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Search - Microsoft Bing",
+      "url": "https://www.bing.com/",
+      "snippet": "Search with Microsoft Bing and use the power of AI to find information, explore webpages, images, videos, maps, and more. A smart …"
+    },
+    {
+      "title": "Bing",
+      "url": "https://www.bing.com/?lc=en-US&brdr=1",
+      "snippet": "Bing is an AI-powered search engine for finding information, exploring media, and navigating maps."
+    },
+    {
+      "title": "How to See All Bing Related Searches on Any Device",
+      "url": "https://rottenwifi.com/how-to-see-all-bing-related-searches/",
+      "snippet": "Jul 1, 2026 · Learn where Bing related searches appear, how to expand them, and what to do when suggestions do not show on …"
+    },
+    {
+      "title": "Microsoft Windows 11 App Pushes Bing as Default Search in Chrome ...",
+      "url": "https://cybersecuritynews.com/windows-11-default-search-app/",
+      "snippet": "Aug 23, 2026 · Microsoft has built a dedicated Windows 11 app that exists to put Bing in front of users who already chose another …"
+    },
+    {
+      "title": "Microsoft Windows 11 App Pushes Bing in Chrome, Firefox, Brave",
+      "url": "https://overcentral.com/en/microsoft-recommended-search-settings/",
+      "snippet": "Aug 23, 2026 · Microsoft's Windows 11 app installs a Bing extension and changes default search in Chrome, Firefox, and Brave, …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "patryk-celinski/ppo-huggy-the-doggo",
+  "slug": "patryk-celinski-ppo-huggy-the-doggo",
+  "author": "patryk-celinski",
+  "url": "https://huggingface.co/patryk-celinski/ppo-huggy-the-doggo",
+  "created_at": "2026-09-20T17:25:14.000Z",
+  "updated_at": "2026-09-20T17:25:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "Huggy",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-Huggy",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 187458503,
+  "storage_human": "187 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wie erhalte ich hilfe in windows 11,+ - WindowsArea.de",
+      "url": "https://windowsarea.de/search/wie+erhalte+ich+hilfe+in+windows+11%2C%2B/",
+      "snippet": "Jun 1, 2026 · Windows 11 bekommt neue KI-Funktionen: Ein Ausblick 19. Oktober 2024 Microsoft hat in den letzten Jahren …"
+    },
+    {
+      "title": "Windows 11 Forum | Win11Forum.de",
+      "url": "https://win11forum.de/",
+      "snippet": "Aug 23, 2026 · Diskussionsforum für alle Microsoft Windows 11 Interessierten: Tipps und Tricks, Hilfestellung und Lösungen im …"
+    },
+    {
+      "title": "Windows 11 Archive - WindowsArea",
+      "url": "https://windowsarea.de/category/anleitungen/windows-11/",
+      "snippet": "Oct 31, 2025 · Seit Windows 11 verfolgt Microsoft eine klare Linie: Nutzer sollen sich mit einem Microsoft-Konto anmelden. Offiziell …"
+    },
+    {
+      "title": "Windows 11 Funktionstasten funktionieren nicht - Win11Forum.de",
+      "url": "https://win11forum.de/t/windows-11-funktionstasten-funktionieren-nicht.33/",
+      "snippet": "Jul 18, 2021 · Hi, bei mir funktionieren die Funktionstasten einwandfrei. Wie hast Du Windows 11 installiert? Per Update oder von der …"
+    },
+    {
+      "title": "WindowsArea - Das Windows Magazin",
+      "url": "https://windowsarea.de/",
+      "snippet": "5 days ago · Windows 11 bekommt anpassbares Kontextmenü 17. August 2026 Mit Windows 11 hat Microsoft das neue Kontextmenü …"
+    }
+  ]
+}

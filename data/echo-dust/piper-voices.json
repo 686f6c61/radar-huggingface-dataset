@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "echo-dust/piper-voices",
+  "slug": "echo-dust-piper-voices",
+  "author": "echo-dust",
+  "url": "https://huggingface.co/echo-dust/piper-voices",
+  "created_at": "2026-09-20T18:25:50.000Z",
+  "updated_at": "2026-09-20T18:28:41.000Z",
+  "license": "per-voice",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": "piper",
+  "languages": [],
+  "tags": [
+    "piper",
+    "onnx",
+    "text-to-speech",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 310390674,
+  "storage_human": "310 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ECHO - Outils professionnels pour les espaces verts et l'industrie ...",
+      "url": "https://www.echo-france.fr/fr_fr/",
+      "snippet": "ECHO is a manufacturer of high quality outdoor equipment including chainsaws, brushcutters, trimmers, power pruners, hedge …"
+    },
+    {
+      "title": "Les Echos",
+      "url": "https://www.lesechos.fr/",
+      "snippet": "Retrouvez sur LesEchos.fr toute l'actualité économique et financière en France et dans le monde, découvrez des analyses …"
+    },
+    {
+      "title": "L'Echo Républicain - Les news de Chartres et de l’Eure-et-Loir (28)",
+      "url": "https://www.lechorepublicain.fr/",
+      "snippet": "Retrouvez les dernières actualités mondiales, nationales et locales, couvrant la politique, les faits divers, la société, le sport et …"
+    },
+    {
+      "title": "Tronçonneuses | ECHO France",
+      "url": "https://www.echo-france.fr/fr_fr/produits/tronconneuses/",
+      "snippet": "Produits de grande qualité, résistants, fabriqués selon les standards d'exigence japonais. Donc que vous soyez en train de coupe, …"
+    },
+    {
+      "title": "En continu - Les Echos",
+      "url": "https://www.lesechos.fr/direct",
+      "snippet": "Retrouvez sur LesEchos.fr toute l'actualité économique et financière en France et dans le monde, découvrez des analyses …"
+    }
+  ]
+}

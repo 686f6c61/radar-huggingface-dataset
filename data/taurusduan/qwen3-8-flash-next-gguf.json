@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "taurusduan/Qwen3.8-Flash-Next-GGUF",
+  "slug": "taurusduan-qwen3-8-flash-next-gguf",
+  "author": "taurusduan",
+  "url": "https://huggingface.co/taurusduan/Qwen3.8-Flash-Next-GGUF",
+  "created_at": "2026-09-20T12:38:39.000Z",
+  "updated_at": "2026-09-20T12:38:39.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "unsloth",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 176943899520,
+  "parameters_human": "176.94B",
+  "storage_bytes": 1389468786938,
+  "storage_human": "1389.5 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gebrauchtwagen und Neuwagen bei AutoScout24",
+      "url": "https://www.autoscout24.de/?msockid=19e7861571ef65303c3891cf701d6449",
+      "snippet": "Neu- und Gebrauchtwagen sowie Motorräder, Wohnmobile und Nutzfahrzeuge finden Sie auf AutoScout24, dem europaweit größten …"
+    },
+    {
+      "title": "Gebrauchtwagen kaufen - AutoScout24 Deutschland",
+      "url": "https://www.autoscout24.de/lst?msockid=19e7861571ef65303c3891cf701d6449",
+      "snippet": "Hier finden Sie aktuelle Gebrauchtwagen-Angebote bei AutoScout24, dem europaweit größten Online-Automarkt."
+    },
+    {
+      "title": "Gebrauchtwagen finden und kaufen - Dein Weg zum nächsten Auto",
+      "url": "https://www.autoscout24.de/auto/gebrauchtwagen/?msockid=19e7861571ef65303c3891cf701d6449",
+      "snippet": "Gebrauchtwagen finden und sicher kaufen bei AutoScout24 Das Wichtigste in Kürze Ein passender Gebrauchtwagen sollte zu …"
+    },
+    {
+      "title": "Mercedes-Benz gebraucht kaufen - AutoScout24 Deutschland",
+      "url": "https://www.autoscout24.de/lst/mercedes-benz?msockid=19e7861571ef65303c3891cf701d6449",
+      "snippet": "Hier finden Sie aktuelle Mercedes-Benz Gebrauchtwagen-Angebote bei AutoScout24, dem europaweit größten Online-Automarkt."
+    },
+    {
+      "title": "Wohnmobile & Reisemobile auf Autoscout24",
+      "url": "https://www.autoscout24.de/caravaning/wohnmobile/?msockid=19e7861571ef65303c3891cf701d6449",
+      "snippet": "Wohnmobile und Reisemobile auf Autoscout24: Vom Alkoven, über Kastenwohnwagen bis hin zum integrierten Wohnmobil: hier …"
+    }
+  ]
+}

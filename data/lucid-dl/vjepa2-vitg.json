@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "lucid-dl/vjepa2-vitg",
+  "slug": "lucid-dl-vjepa2-vitg",
+  "author": "lucid-dl",
+  "url": "https://huggingface.co/lucid-dl/vjepa2-vitg",
+  "created_at": "2026-09-20T19:12:59.000Z",
+  "updated_at": "2026-09-20T19:13:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "video-classification",
+  "library": "lucid",
+  "languages": [],
+  "tags": [
+    "lucid",
+    "safetensors",
+    "video-classification",
+    "vjepa2",
+    "dataset:kinetics-700",
+    "dataset:something-something-v2",
+    "dataset:diving48",
+    "arxiv:2506.09985",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8187040336,
+  "storage_human": "8.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Discogs - Music Database and Marketplace",
+      "url": "https://www.discogs.com/",
+      "snippet": "Discover music on Discogs, the largest online music database. Buy and sell music with collectors in the Marketplace."
+    },
+    {
+      "title": "Discogs - Musik-Datenbank und Marktplatz",
+      "url": "https://www.discogs.com/de/",
+      "snippet": "Entdecken Sie Musik auf Discogs, der größten Online-Musikdatenbank. Kaufen und verkaufen Sie von Sammlern und an Sammler …"
+    },
+    {
+      "title": "Discogs - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Discogs",
+      "snippet": "Discogs (/ dɪˈskɒɡz / disk-OGZ; short for \"discographies\") is an online database and marketplace for audio recordings, including …"
+    },
+    {
+      "title": "Discogs",
+      "url": "https://accounts.discogs.com/login",
+      "snippet": "We would like to show you a description here but the site won’t allow us."
+    },
+    {
+      "title": "New and Upcoming - Vinyl, CDs, Cassettes",
+      "url": "https://newreleases.discogs.com/",
+      "snippet": "A new Discogs marketplace: browse and buy New and Upcoming music releases from your favorite artists on Vinyl, CD, and Cassette."
+    }
+  ]
+}

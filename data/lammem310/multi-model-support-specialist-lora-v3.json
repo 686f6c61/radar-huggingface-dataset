@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Lammem310/multi-model-support-specialist-lora-v3",
+  "slug": "lammem310-multi-model-support-specialist-lora-v3",
+  "author": "Lammem310",
+  "url": "https://huggingface.co/Lammem310/multi-model-support-specialist-lora-v3",
+  "created_at": "2026-09-20T15:57:27.000Z",
+  "updated_at": "2026-09-20T15:57:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3702168,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Resep Ayam Nanking Chinese Food, Lengkap dengan Sausnya",
+      "url": "https://www.kompas.com/food/read/2023/08/01/122800575/resep-ayam-nanking-chinese-food-lengkap-dengan-sausnya-",
+      "snippet": "Aug 1, 2023 · Hidangan ini terdiri dari ayam fillet goreng tepung yang disajikan bersama saus dengan rasa gurih manis. Ayam …"
+    },
+    {
+      "title": "Resep ayam nanking rumahan enak dan mudah - Cookpad",
+      "url": "https://cookpad.com/id/cari/ayam%20nanking",
+      "snippet": "Aneka olahan ayam nanking lezat. Cara memasak resep ayam nanking udang, ayam nanking cina."
+    },
+    {
+      "title": "Resep Ayam Nanking Gurih Manis Asam yang Viral dan Mudah Dibuat",
+      "url": "https://www.jawapos.com/kuliner/2603130456/resep-ayam-nanking-gurih-manis-asam-yang-viral-dan-mudah-dibuat",
+      "snippet": "Cara membuat ayam nanking gurih dengan saus manis asam. Resep sederhana yang cocok jadi lauk keluarga dan mudah dibuat di …"
+    },
+    {
+      "title": "Ayam Nanking Gurih Nikmat Praktis Ala Oriental - ResepKoki",
+      "url": "https://resepkoki.id/resep/resep-ayam-nanking/",
+      "snippet": "Daging ayam fillet (yang sudah tipis) dilapis dengan adonan udang, lalu dibalur dengan kocokan telur dan tepung panir, untuk …"
+    },
+    {
+      "title": "Resep Lengkap Ayam Nanking Rumahan - Panomnom",
+      "url": "https://panomnom.com/id/recipe/resep-lengkap-ayam-nanking-rumahan",
+      "snippet": "Rasa ayam nanking lebih cenderung asin, sedangkan rasa ayam kuluyuk lebih cenderung asam manis. Ayam Nanking digoreng …"
+    }
+  ]
+}

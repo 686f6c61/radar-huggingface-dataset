@@ -1,0 +1,42 @@
+{
+  "schema": 1,
+  "id": "Hanane23/Odoo_glpi_classifier_model",
+  "slug": "hanane23-odoo_glpi_classifier_model",
+  "author": "Hanane23",
+  "url": "https://huggingface.co/Hanane23/Odoo_glpi_classifier_model",
+  "created_at": "2026-09-20T14:10:15.000Z",
+  "updated_at": "2026-09-20T14:15:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 442526381,
+  "storage_human": "443 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LinkedIn: Log In or Sign Up",
+      "url": "https://www.linkedin.com/",
+      "snippet": "1 billion members | Manage your professional identity. Build and engage with your professional network. Access knowledge, insights …"
+    }
+  ]
+}

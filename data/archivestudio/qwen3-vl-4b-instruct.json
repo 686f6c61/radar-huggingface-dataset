@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "ArchiveStudio/Qwen3-VL-4B-Instruct",
+  "slug": "archivestudio-qwen3-vl-4b-instruct",
+  "author": "ArchiveStudio",
+  "url": "https://huggingface.co/ArchiveStudio/Qwen3-VL-4B-Instruct",
+  "created_at": "2026-09-20T17:00:18.000Z",
+  "updated_at": "2026-09-20T17:00:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_vl",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:2505.09388",
+    "arxiv:2502.13923",
+    "arxiv:2409.12191",
+    "arxiv:2308.12966",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4437815808,
+  "parameters_human": "4.44B",
+  "storage_bytes": 8875719344,
+  "storage_human": "8.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pistolet jouet en plastique - Etsy Canada",
+      "url": "https://www.etsy.com/ca-fr/market/pistolet_jouet_en_plastique?msockid=15025407c88c602a05c543ddc95d61c1",
+      "snippet": "Parcourez notre sélection de pistolet jouet en plastique : vous y trouverez les meilleures pièces uniques ou personnalisées de nos …"
+    },
+    {
+      "title": "Amazon.fr : Arme En Plastique",
+      "url": "https://www.amazon.fr/arme-plastique/s?k=arme+en+plastique",
+      "snippet": "AKM Lanceur de douilles Soft-Head - Pistolet jouet pour enfants | Modèle détachable | Incl. 5 munitions Soft-Head | Jouet revolver …"
+    },
+    {
+      "title": "Pistolets en Plastique Jouet : Choix Sécurisé Pour Déguisements Et Jeux",
+      "url": "https://coindesjouets.org/pistolet-en-plastique-jouet/",
+      "snippet": "Feb 27, 2026 · Ce guide présente une sélection de pistolets jouets en plastique, idéals pour les déguisements, fêtes et spectacles. …"
+    },
+    {
+      "title": "Pistolets jouets - Canadian Tire",
+      "url": "https://www.canadiantire.ca/fr/cat/sports-et-loisirs/jeux-de-plein-air/pistolets-jouets-DC0002404.html?msockid=15025407c88c602a05c543ddc95d61c1",
+      "snippet": "Équipez-vous pour vous amuser avec notre assortiment de pistolets-jouets et de lanceurs de fléchettes en mousse. Choisissez parmi …"
+    },
+    {
+      "title": "Pistolet en plastique jouet - Etsy France",
+      "url": "https://www.etsy.com/fr/market/pistolet_en_plastique_jouet?msockid=15025407c88c602a05c543ddc95d61c1",
+      "snippet": "Parcourez notre sélection de pistolet en plastique jouet : vous y trouverez les meilleures pièces uniques ou personnalisées de nos …"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Abhiabhi12/pass-lunarlander-v2",
+  "slug": "abhiabhi12-pass-lunarlander-v2",
+  "author": "Abhiabhi12",
+  "url": "https://huggingface.co/Abhiabhi12/pass-lunarlander-v2",
+  "created_at": "2026-09-20T16:03:57.000Z",
+  "updated_at": "2026-09-20T16:03:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "LunarLander-v2",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SuperEnalotto Results",
+      "url": "https://www.superenalotto.net/en/results",
+      "snippet": "The latest SuperEnalotto results, published immediately after each Tuesday, Thursday and Saturday lottery draw. View prize …"
+    },
+    {
+      "title": "Risultati ultima estrazione SuperEnalotto | Superenalotto.it",
+      "url": "https://www.superenalotto.it/ultima-estrazione",
+      "snippet": "2 days ago · Scopri qui i risultati dell'ultima estrazione del SuperEnalotto. Verifica i numeri estratti nel concorso, il numero dei vincitori …"
+    },
+    {
+      "title": "SuperEnalotto - Sito ufficiale del gioco | Superenalotto.it",
+      "url": "https://www.superenalotto.it/",
+      "snippet": "Su SuperEnalotto.it potrai controllare i risultati delle estrazioni del SuperEnalotto, verificare i numeri estratti ad ogni concorso, …"
+    },
+    {
+      "title": "SuperEnalotto | Last SuperEnalotto and SiVinceTutto draw",
+      "url": "https://www.superenalotto.com/en/",
+      "snippet": "1 day ago · The winning numbers of the SuperEnalotto and the SuperStar game can be checked on this website immediately after …"
+    },
+    {
+      "title": "SuperEnalotto | Ultima estrazione SuperEnalotto e SiVinceTutto",
+      "url": "https://www.superenalotto.com/",
+      "snippet": "Sep 1, 2013 · I numeri vincenti del SuperEnalotto e del gioco SuperStar possono essere controllati su questo sito subito dopo …"
+    }
+  ]
+}

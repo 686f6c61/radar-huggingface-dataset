@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "rachelisner6/Huggy_Training_01",
+  "slug": "rachelisner6-huggy_training_01",
+  "author": "rachelisner6",
+  "url": "https://huggingface.co/rachelisner6/Huggy_Training_01",
+  "created_at": "2026-09-20T13:35:49.000Z",
+  "updated_at": "2026-09-20T17:40:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "Huggy",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-Huggy",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 159388104,
+  "storage_human": "159 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nézd meg ezt: Kincskereső kalandorok | A Netflix hivatalos oldala",
+      "url": "https://www.netflix.com/hu/title/81026305",
+      "snippet": "Fedezd fel minden héten a legújabb kedvenceidet és újdonságokat. Egy marék szerencsevadász egy rég elfeledett kincs nyomába …"
+    },
+    {
+      "title": "Kincskereső kalandorok S1E1 (FHD) www.hdmozi.hu - Videa",
+      "url": "https://videa.hu/player?v=CjIIrZIWPLW84s1d",
+      "snippet": "[XML_001]"
+    },
+    {
+      "title": "Kincskereső kalandorok 1. évad epizódok online lejátszása",
+      "url": "https://www.justwatch.com/hu/tv-sorozat/kincskereso-kalandorok/evad-1",
+      "snippet": "Jelenleg 1 szolgáltató kínálatában érhető el. . Kincskereső kalandorok- Évad 1 (2024) 7485. +19. 70% 6.6 (4.8k) 16 . Életkor …"
+    },
+    {
+      "title": "Kincskereső kalandorok S1E2 (FHD) www.hdmozi.hu - Videa",
+      "url": "https://videa.hu/player?v=O7fCQnn0SNEDWo3o",
+      "snippet": "[XML_001]"
+    },
+    {
+      "title": "Kincskereső kalandorok (sorozat, 2024) | Kritikák, videók, szereplők ...",
+      "url": "https://www.mafab.hu/movies/bandidos-647356.html",
+      "snippet": "Mar 13, 2024 · Kincskereső kalandorok: Egy csapat nemzetközi kincsvadász élete egyik legnagyobb kalandját tervezgeti – vajon …"
+    }
+  ]
+}

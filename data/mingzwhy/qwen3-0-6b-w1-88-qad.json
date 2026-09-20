@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "MingZwhy/Qwen3-0.6B-W1.88-QAD",
+  "slug": "mingzwhy-qwen3-0-6b-w1-88-qad",
+  "author": "MingZwhy",
+  "url": "https://huggingface.co/MingZwhy/Qwen3-0.6B-W1.88-QAD",
+  "created_at": "2026-09-20T17:24:34.000Z",
+  "updated_at": "2026-09-20T17:24:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "qaopd",
+    "quantization",
+    "quantization-aware-training",
+    "conversational",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 596049920,
+  "parameters_human": "596.0M",
+  "storage_bytes": 1203557750,
+  "storage_human": "1.2 GB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Telefonbuch Schnaittenbach: Telefonnummern & Adressen schnell …",
+      "url": "https://www.dastelefonbuch.de/Telefonbuch/Schnaittenbach",
+      "snippet": "Im Telefonbuch Schnaittenbach nach Personen & Unternehmen suchen. Neben Adress- & Telefondaten noch weitere Infos erhalten. …"
+    },
+    {
+      "title": "Das Örtliche Telefonbuch | Telefonnummern & Adressen finden!",
+      "url": "https://www.dasoertliche.de/",
+      "snippet": "Deutschlands führendes Telefonbuch für Unternehmen, Behörden und Privateinträge mit lokaler Suche, Rückwärtssuche …"
+    },
+    {
+      "title": "Telefonbuch Schnaittenbach | Das Örtliche",
+      "url": "https://www.dasoertliche.de/Telefonbuch/Schnaittenbach",
+      "snippet": "Mit den besten lokalen Empfehlungen präsentieren wir Dir nur die besten Locations in Deiner Nähe. Profitiere von den Erfahrungen …"
+    },
+    {
+      "title": "Hoyer Erwin in Schnaittenbach bei Das Telefonbuch finden",
+      "url": "https://kontakt-1.dastelefonbuch.de/Schnaittenbach/Erwin-Hoyer-Schnaittenbach-Birkenweg.html",
+      "snippet": "Ein Präsent an Ihre Freunde oder Bekannten wird so automatisch an die richtige Adresse geliefert. Sie wollen wissen, wo diese ist? …"
+    },
+    {
+      "title": "Adress-Suche: durch Namen und Ort Adressen einfach finden",
+      "url": "https://www.dastelefonbuch.de/Adresssuche",
+      "snippet": "Mithilfe von Ort oder Postleitzahl und Namen finden Sie die Adressdaten, die Sie suchen – ganz schnell und rund um die Uhr. Geben …"
+    }
+  ]
+}

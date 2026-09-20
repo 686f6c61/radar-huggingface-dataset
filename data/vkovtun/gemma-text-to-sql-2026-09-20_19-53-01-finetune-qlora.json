@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "vkovtun/gemma-text-to-sql-2026-09-20_19.53.01-finetune-QLORA",
+  "slug": "vkovtun-gemma-text-to-sql-2026-09-20_19-53-01-finetune-qlora",
+  "author": "vkovtun",
+  "url": "https://huggingface.co/vkovtun/gemma-text-to-sql-2026-09-20_19.53.01-finetune-QLORA",
+  "created_at": "2026-09-20T17:53:23.000Z",
+  "updated_at": "2026-09-20T18:29:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:google/gemma-4-E2B",
+    "base_model:finetune:google/gemma-4-E2B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 48332823,
+  "storage_human": "48 MB",
+  "base_model": "google/gemma-4-E2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Index Fórum",
+      "url": "https://forum.index.hu/Topic/showTopicList",
+      "snippet": "2 days ago · Inda csoport Index szerkesztőség , Rovatokhoz, cikkekhez, mellékletekhez kapcsolódó fórumok Kultúra, művelődés , , , …"
+    },
+    {
+      "title": "Újpest FC - Index Fórum",
+      "url": "https://forum.index.hu/Article/showArticle?t=9018155",
+      "snippet": "Sep 8, 2026 · Na végre, én is nyitottam egy topicot. Balázska + többiek gyertek át! Sokmindenről nem tudunk most úgysem …"
+    },
+    {
+      "title": "有问题，就会有答案 - 知乎",
+      "url": "https://www.zhihu.com/index",
+      "snippet": "北京智者天下科技有限公司 知乎专栏 圆桌 发现 移动应用 联系我们 来知乎工作 注册机构号 Investor Relations"
+    },
+    {
+      "title": "GPA到底怎么算的？ - 知乎",
+      "url": "https://www.zhihu.com/question/21443475",
+      "snippet": "一篇看懂GPA，GPA算法最全讲解。先来个目录： 1. 什么是GPA 2. 国内百分制成绩的算法 3. 美国GPA的算法 4. 为什么要换算GPA …"
+    },
+    {
+      "title": "Drukkerkocsma - Index Fórum",
+      "url": "https://forum.index.hu/Topic/showTopicList?t=33",
+      "snippet": "2 days ago · A sportrovat focifóruma. Sportszerű szurkolás és barátságos poharazgatás, moderátori felügyelet mellett"
+    }
+  ]
+}

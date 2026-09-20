@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "SYNAPSEai1/SynapseMusicV12-Turbo-Continuous",
+  "slug": "synapseai1-synapsemusicv12-turbo-continuous",
+  "author": "SYNAPSEai1",
+  "url": "https://huggingface.co/SYNAPSEai1/SynapseMusicV12-Turbo-Continuous",
+  "created_at": "2026-09-20T12:36:17.000Z",
+  "updated_at": "2026-09-20T12:36:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-audio",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "acestep",
+    "feature-extraction",
+    "audio",
+    "music",
+    "text2music",
+    "text-to-audio",
+    "custom_code",
+    "arxiv:2602.00744",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2393872518,
+  "parameters_human": "2.39B",
+  "storage_bytes": 4791666819,
+  "storage_human": "4.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Přehraj.to - Sledování a stahování neomezeně",
+      "url": "https://prehrajto.cz/",
+      "snippet": "Přehrajto.cz sledujte nebo stahujte bez kreditu a omezení"
+    },
+    {
+      "title": "Přehraj.to - Sledování a stahování neomezeně",
+      "url": "https://prehrajto.cz/faq",
+      "snippet": "Přehraj.to je služba podobná, jako YouTube, je jen tím, co tvoří uživatelé. Provozovatel Přehraj.to žádný obsah nevytváří, ani na …"
+    },
+    {
+      "title": "Nejnovější - online ke zhlédnutí a ke stažení - Přehraj.to",
+      "url": "https://prehrajto.cz/hledej/Nejnov%C4%9Bj%C5%A1%C3%AD",
+      "snippet": "Přehrajto.cz sledujte nebo stahujte bez kreditu a omezení"
+    },
+    {
+      "title": "ceske serialy - online ke zhlédnutí a ke stažení - Přehraj.to",
+      "url": "https://prehrajto.cz/hledej/ceske%20serialy",
+      "snippet": "Přehrajto.cz sledujte nebo stahujte bez kreditu a omezení"
+    },
+    {
+      "title": "komisar rex - online ke zhlédnutí a ke stažení - Přehraj.to",
+      "url": "https://prehrajto.cz/hledej/komisar%20rex",
+      "snippet": "Přehrajto.cz sledujte nebo stahujte bez kreditu a omezení"
+    }
+  ]
+}

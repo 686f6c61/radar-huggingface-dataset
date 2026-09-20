@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "pottokao/Qwen-Image-2.1-DiT-NVFP4-ComfyUI",
+  "slug": "pottokao-qwen-image-2-1-dit-nvfp4-comfyui",
+  "author": "pottokao",
+  "url": "https://huggingface.co/pottokao/Qwen-Image-2.1-DiT-NVFP4-ComfyUI",
+  "created_at": "2026-09-20T18:02:16.000Z",
+  "updated_at": "2026-09-21T14:24:33.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "quantized",
+    "nvfp4",
+    "comfyui",
+    "qwen-image",
+    "text-to-image",
+    "base_model:Qwen/Qwen-Image-2.1",
+    "base_model:finetune:Qwen/Qwen-Image-2.1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13832645453,
+  "storage_human": "13.8 GB",
+  "base_model": "Qwen/Qwen-Image-2.1",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ein Gartenneustart bei Familie Wattenberg vom 13.09.2026",
+      "url": "https://www.zdf.de/video/shows/duell-der-gartenprofis-104/duell-der-gartenprofis-252",
+      "snippet": "Sep 13, 2026 · Aus dem verwilderten Garten von Familie Wattenberg aus Essen soll ein familientauglicher, moderner und …"
+    },
+    {
+      "title": "Duell der Gartenprofis verpasst? Ganze Folge ... - Sendung verpasst",
+      "url": "https://www.sendungverpasst.de/sendungen/duell-der-gartenprofis",
+      "snippet": "Jan 21, 2024 · Duell der Gartenprofis Staffel 2023, Folge 3: Duell der Gartenprofis vom 21. Januar 2024 10.09.2026 44 min ZDF"
+    },
+    {
+      "title": "ZDF-Fernsehgarten 13.9.26: Gäste, Programm, Übertragung im TV und ...",
+      "url": "https://www.augsburger-allgemeine.de/panorama/zdf-fernsehgarten-13-9-26-gaeste-programm-uebertragung-im-tv-und-stream-wiederholung-115232188",
+      "snippet": "Am 13. September 2026 läuft der sonntägliche „ZDF-Fernsehgarten“. Wir liefern alle Infos rund um das Programm, die Gäste und die …"
+    },
+    {
+      "title": "\"Duell der Gartenprofis\" verpasst?: Wann und wo man die …",
+      "url": "https://www.news.de/tv-aktuell/855764857/duell-der-gartenprofis-verpasst-wiederholung-online-im-zdf-streamingportal-zdf-neo-sendung-vom-13-3-2026-in-mediathek-nachschauen/1/",
+      "snippet": "Sep 11, 2026 · Die TV-Sendung \"Duell der Gartenprofis\" lief am Freitag, den 11.9.2026 auf ZDF neo. Falls Sie die Ausstrahlung …"
+    },
+    {
+      "title": "Duell der gartenprofis auf der Mediathek-Suchmaschine …",
+      "url": "https://mediatheksuche.de/vod?search=duell%20der%20gartenprofis%20",
+      "snippet": "Suchergebnisse für duell der gartenprofis auf MediathekSuche.de - Schneller alle Mediatheken der grossen Fernsehsender …"
+    }
+  ]
+}

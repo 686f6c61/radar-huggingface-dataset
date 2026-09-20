@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Serega71/talvion-support-sft-kb-v2-gguf",
+  "slug": "serega71-talvion-support-sft-kb-v2-gguf",
+  "author": "Serega71",
+  "url": "https://huggingface.co/Serega71/talvion-support-sft-kb-v2-gguf",
+  "created_at": "2026-09-20T12:39:54.000Z",
+  "updated_at": "2026-09-20T12:45:25.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "gguf",
+    "qwen2.5",
+    "customer-support",
+    "knowledge-base",
+    "text-generation",
+    "ru",
+    "base_model:Serega71/talvion-support-sft-kb-v2-lora",
+    "base_model:quantized:Serega71/talvion-support-sft-kb-v2-lora",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 2224814464,
+  "storage_human": "2.2 GB",
+  "base_model": "Serega71/talvion-support-sft-kb-v2-lora",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Startlap - Hírek, időjárás, információk",
+      "url": "https://www.startlap.hu/",
+      "snippet": "Amennyiben azt szeretné, hogy csak a Startlap legyen nyíljon meg induláskor, a már meglévő oldalakat eltávolíthatja a listából, majd …"
+    },
+    {
+      "title": "Lap.hu oldalak - tematikus lapkatalógus - Startlap",
+      "url": "https://lap.hu/?v=1.0.24",
+      "snippet": "A lap.hu oldalak tematikus kezdőlapja. Karbantartott linkgyűjtemények a lap.hu-n, több ezer témakörből a Startlaptól."
+    },
+    {
+      "title": "Startlap Játékok - Játssz a böngésződben online!",
+      "url": "https://www.startlapjatekok.hu/",
+      "snippet": "A Startlap Játékok oldal már több mint 10 éve szolgálja ki a játszani vágyókat, azokat, akik online jatekok-at keresnek. A legjobb …"
+    },
+    {
+      "title": "Startlap | Budapest - Facebook",
+      "url": "https://www.facebook.com/startlap/",
+      "snippet": "A Tilly Norwood néven futó MI-generálta virtuális „színésznő” Piers Morgan műsorában adott interjút, majd válasz közben …"
+    },
+    {
+      "title": "Startlap.hu – Wikipédia",
+      "url": "https://hu.wikipedia.org/wiki/Startlap.hu",
+      "snippet": "A Startlap.hu Magyarország leglátogatottabb internetes híraggregátor oldala és linkgyűjteménye. 2014 -ben a 4. leglátogatottabb …"
+    }
+  ]
+}

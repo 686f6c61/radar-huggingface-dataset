@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "maurorisonho/vit-beans-computer-vision",
+  "slug": "maurorisonho-vit-beans-computer-vision",
+  "author": "maurorisonho",
+  "url": "https://huggingface.co/maurorisonho/vit-beans-computer-vision",
+  "created_at": "2026-09-20T19:13:55.000Z",
+  "updated_at": "2026-09-20T19:24:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "vit",
+    "vision-transformer",
+    "image-classification",
+    "computer-vision-course",
+    "beans",
+    "dataset:beans",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 343282929,
+  "storage_human": "343 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Image Classification",
+      "dataset": "beans",
+      "metric": "Accuracy",
+      "value": 0.985
+    }
+  ],
+  "sources": [
+    {
+      "title": "这个网址是potplayer官网吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/509011663",
+      "snippet": "Feb 21, 2022 · ———————————————— 为了让更多人能搜到这个帖子，做点SEO。 PotPlayer是什么？PotPlayer怎么下 …"
+    },
+    {
+      "title": "Unverzüglich - Definition, Bedeutung und Beispiele",
+      "url": "https://www.juraforum.de/lexikon/unverzueglich",
+      "snippet": "May 29, 2026 · Unverzüglich bedeutet juristisch „ohne schuldhaftes Zögern“ , vgl. § 121 Abs. 1 S. 1 BGB. Allerdings gilt dieser …"
+    },
+    {
+      "title": "Taschengeldparagraph § 110 BGB – Höhe, Grenze & Beispiel",
+      "url": "https://www.juraforum.de/lexikon/taschengeldparagraph",
+      "snippet": "May 26, 2026 · Als Taschengeldparagraph wird § 110 BGB bezeichnet, der besagt, dass ein Minderjähriger, der das 7. Lebensjahr …"
+    },
+    {
+      "title": "如何评价英雄联盟首款桌游《约德尔战斗学院》？ - 知乎",
+      "url": "https://www.zhihu.com/question/51785936",
+      "snippet": "点击这里 ： LOL桌游《约德尔战斗学院》：开箱照加简评 知乎专栏 12月25日圣诞夜更新：《约德尔战斗学院》全解读手册 知乎传送 …"
+    },
+    {
+      "title": "Rücktrittsrecht gemäß § 346 BGB - Schema leicht erklärt",
+      "url": "https://www.juraforum.de/lexikon/ruecktrittsrecht",
+      "snippet": "Feb 3, 2026 · Rücktritt nach § 346 BGB bzw. § 323 BGB - Schema leicht erklärt im Rechtslexikon von JuraForum.de für …"
+    }
+  ]
+}

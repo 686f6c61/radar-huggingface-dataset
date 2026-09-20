@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "hyperquader/ministral-3-3b-instruct-genai-int4",
+  "slug": "hyperquader-ministral-3-3b-instruct-genai-int4",
+  "author": "hyperquader",
+  "url": "https://huggingface.co/hyperquader/ministral-3-3b-instruct-genai-int4",
+  "created_at": "2026-09-20T14:44:56.000Z",
+  "updated_at": "2026-09-20T18:02:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnxruntime-genai",
+  "languages": [],
+  "tags": [
+    "onnxruntime-genai",
+    "onnx",
+    "int4",
+    "tool-calling",
+    "base_model:mistralai/Ministral-3-3B-Instruct-2512",
+    "base_model:quantized:mistralai/Ministral-3-3B-Instruct-2512",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4291529691,
+  "storage_human": "4.3 GB",
+  "base_model": "mistralai/Ministral-3-3B-Instruct-2512",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Salatdressing für alle Blattsalate – schnell & einfach - Chefkoch",
+      "url": "https://www.chefkoch.de/rezepte/1894371308556487/Leckeres-Salatdressing-fuer-alle-Blattsalate.html",
+      "snippet": "Leckeres Salatdressing für alle Blattsalate - für den Vorrat geeignet. Über 298 Bewertungen und für super befunden. Mit …"
+    },
+    {
+      "title": "Leckeres Salatdressing für alle Blattsalate - einfach und köstlich",
+      "url": "https://www.clararezepte.de/delicious-salad-dressing-for-all-leafy-salads-simple-and-tasty/",
+      "snippet": "Jan 17, 2026 · Diese einfache, aber unglaublich schmackhafte Salatdressing ist nicht nur in 15 Minuten zubereitet, sondern …"
+    },
+    {
+      "title": "Blattsalat Dressing Rezepte | Chefkoch",
+      "url": "https://www.chefkoch.de/rs/s0/blattsalat+dressing/Rezepte.html",
+      "snippet": "Blattsalat Dressing - Wir haben 367 leckere Blattsalat Dressing Rezepte für dich gefunden! Finde was du suchst - erstklassig & …"
+    },
+    {
+      "title": "Salatdressing selber machen: Tipps und Rezepte | ndr.de",
+      "url": "https://www.ndr.de/ratgeber/kochen/kuechentipps/salatdressing-selber-machen-tipps-und-rezepte,dressing102.html",
+      "snippet": "Jun 27, 2025 · Das Dressing passt sehr gut zu einem Salat aus Kichererbsen und kleinen Tomaten, aber auch zu jedem anderen …"
+    },
+    {
+      "title": "Leckeres Salatdressing für alle Blattsalate - Schnelle Rezepte",
+      "url": "https://schnellrezept.com/leckeres-salatdressing-fur-alle-blattsalate/",
+      "snippet": "Sep 15, 2023 · Dieses Dressing eignet sich perfekt für jeden grünen Salat und ist vollgepackt mit Nährstoffen und Geschmack. Lesen …"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "dklfksakfjk3474/dragon",
+  "slug": "dklfksakfjk3474-dragon",
+  "author": "dklfksakfjk3474",
+  "url": "https://huggingface.co/dklfksakfjk3474/dragon",
+  "created_at": "2026-09-20T12:55:07.000Z",
+  "updated_at": "2026-09-20T12:55:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Store Finder - Lidl US",
+      "url": "https://www.lidl.com/c/store-finder/s10089075",
+      "snippet": "Store Finder & Opening Hours Search by your Zip Code or City to find your nearest Lidl and start saving!"
+    },
+    {
+      "title": "lidl.com.ua",
+      "url": "http://lidl.com.ua/",
+      "snippet": "We would like to show you a description here but the site won’t allow us."
+    },
+    {
+      "title": "Store Finder - Lidl GB",
+      "url": "https://www.lidl.co.uk/c/store-finder/s10023098",
+      "snippet": "Pop your postcode into the box and click your nearest store to see opening times and all the offers within grabbing distance. Never …"
+    },
+    {
+      "title": "Lidl біля кордону — Путівник по магазинах | Nakordoni",
+      "url": "https://nakordoni.eu/uk/shopping/lidl",
+      "snippet": "Знайдіть супермаркети Lidl біля польсько-українського кордону. Адреси магазинів, години роботи та поради щодо покупок."
+    },
+    {
+      "title": "Доставка товарів з LIDL в Україну",
+      "url": "https://meest.shopping/ua/catalog/view/dostavka-iz-lidl",
+      "snippet": "Aug 31, 2026 · З недавнього часу доступний Lidl каталог товарів і для онлайн-замовлення. Ви просто робите онлайн покупки в …"
+    }
+  ]
+}

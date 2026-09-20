@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "mphd1/opt6.7b",
+  "slug": "mphd1-opt6-7b",
+  "author": "mphd1",
+  "url": "https://huggingface.co/mphd1/opt6.7b",
+  "created_at": "2026-09-20T15:19:38.000Z",
+  "updated_at": "2026-09-20T15:24:16.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "opt",
+    "text-generation",
+    "generated_from_trainer",
+    "base_model:facebook/opt-6.7b",
+    "base_model:finetune:facebook/opt-6.7b",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6658473984,
+  "parameters_human": "6.66B",
+  "storage_bytes": 26633962464,
+  "storage_human": "26.6 GB",
+  "base_model": "facebook/opt-6.7b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Сериал Горюнов 1 сезон смотреть онлайн все серии подряд в …",
+      "url": "https://www.ivi.tv/watch/goryunov-korabl-otstoya/season1",
+      "snippet": "Смотреть сериал «Горюнов» можно онлайн. Посмотреть 1 сезон сериала Горюнов онлайн вы можете в хорошем качестве. …"
+    },
+    {
+      "title": "Видео Горюнов. Все серии подряд. 60fps | OK.RU",
+      "url": "https://yandex.ru/video/preview/2659494865455505881",
+      "snippet": "Все серии подряд. 60fps | OK.RU."
+    },
+    {
+      "title": "Горюнов, 1 сезон: смотреть онлайн сериал Горюнов - все серии подряд ...",
+      "url": "https://kino.mail.ru/series_806961_goryunov/seasons_1/",
+      "snippet": "1 сезон сериала Горюнов онлайн: смотрите все серии подряд в хорошем качестве, знакомьтесь с кратким содержанием …"
+    },
+    {
+      "title": "Горюнов (сериал, 2013) смотреть онлайн в хорошем качестве",
+      "url": "https://okko.tv/serial/gorjunov",
+      "snippet": "Все сезоны и серии доступны полностью без рекламы. Высокое качество видео. Режиссёры: Владимир Балкашинов, …"
+    },
+    {
+      "title": "Сериал Горюнов 1 сезон смотреть онлайн бесплатно!",
+      "url": "https://seasonvar.ru/serial-8289-Gorynov_pspwmqo-00-sezon.html",
+      "snippet": "Именно здесь, на севере, служит капитан I ранга Павел Горюнов, командующий экипажем подводников. В его подчинении …"
+    }
+  ]
+}

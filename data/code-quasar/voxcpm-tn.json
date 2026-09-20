@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Code-Quasar/voxcpm-tn",
+  "slug": "code-quasar-voxcpm-tn",
+  "author": "Code-Quasar",
+  "url": "https://huggingface.co/Code-Quasar/voxcpm-tn",
+  "created_at": "2026-09-20T14:19:28.000Z",
+  "updated_at": "2026-09-20T14:21:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "voxcpm",
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "voxcpm",
+    "safetensors",
+    "tunisian",
+    "derja",
+    "arabic-dialect",
+    "tts",
+    "text-to-speech",
+    "ar",
+    "base_model:openbmb/VoxCPM2",
+    "base_model:finetune:openbmb/VoxCPM2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2290004544,
+  "parameters_human": "2.29B",
+  "storage_bytes": 9537040314,
+  "storage_human": "9.5 GB",
+  "base_model": "openbmb/VoxCPM2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Test code en ligne gratuit - Prépacode",
+      "url": "https://www.prepacode-enpc.fr/testez-vous",
+      "snippet": "Des questions de code pour tester gratuitement les entraînements en ligne au code de la route, permis B, permis moto et permis …"
+    },
+    {
+      "title": "Test code de la route : 2026 gratuit & illimité",
+      "url": "https://www.coursdecode.com/tests-code-de-la-route/",
+      "snippet": "Entraînez-vous avec des séries illimitées de 40 questions corrigées pour le code de la route 2026. Tests gratuits avec explications …"
+    },
+    {
+      "title": "Formez-vous au code de la route avec Codes Rousseau",
+      "url": "https://public.codesrousseau.fr/",
+      "snippet": "Que vous souhaitiez passer votre permis voiture, moto, poids lourd ou bateau, Codes Rousseau dispose de tous les outils …"
+    },
+    {
+      "title": "La Poste - Passez l'examen du code Auto, Moto ou Bateau",
+      "url": "https://lecode.laposte.fr/",
+      "snippet": "Découvrez comment passer votre code auto, moto ou bateau avec La Poste. Un service rapide et fiable pour vous aider à obtenir vos …"
+    },
+    {
+      "title": "Code de la route gratuit 2026 - tests et examen blanc en ligne",
+      "url": "https://www.permisecole.com/code/gratuit",
+      "snippet": "Le site Permisecole propose un entraînement gratuit au Code de la route avec des séries conformes à l’examen officiel, afin d’aider …"
+    }
+  ]
+}

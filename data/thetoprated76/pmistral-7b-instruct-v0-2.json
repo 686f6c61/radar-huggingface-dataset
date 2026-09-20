@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "thetoprated76/pMistral-7B-Instruct-v0.2",
+  "slug": "thetoprated76-pmistral-7b-instruct-v0-2",
+  "author": "thetoprated76",
+  "url": "https://huggingface.co/thetoprated76/pMistral-7B-Instruct-v0.2",
+  "created_at": "2026-09-20T13:32:45.000Z",
+  "updated_at": "2026-09-20T13:32:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "finetuned",
+    "mistral-common",
+    "conversational",
+    "arxiv:2310.06825",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7241732096,
+  "parameters_human": "7.24B",
+  "storage_bytes": 29491843229,
+  "storage_human": "29.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "lablue Partnersuche Österreich - kostenlos Singles finden",
+      "url": "https://www.lablue.at/",
+      "snippet": "Seit 2002 sorgen wir mit lablue in Deutschland, Österreich und der Schweiz für mehr Chat-Kontakte bei der Partnersuche. In unserer …"
+    },
+    {
+      "title": "lablue Login",
+      "url": "https://www.lablue.de/login",
+      "snippet": "Loggen Sie sich ein, um auf Ihr lablue Konto zuzugreifen. Erleben Sie einen sicheren und unkomplizierten Login bei lablue mit …"
+    },
+    {
+      "title": "lablue Partnersuche - Jetzt kostenlos Singles finden",
+      "url": "https://www.lablue.de/",
+      "snippet": "Seit über zwanzig Jahren sorgt die lablue Partnersuche für Chat-Kontakte und feste Beziehungen. In unserer kostenlosen …"
+    },
+    {
+      "title": "Über lablue - Singlebörse für Partnersuche & Flirt Chat",
+      "url": "https://www.lablue.at/ueber-lablue",
+      "snippet": "lablue ist eine etablierte, einfach bedienbare Singlebörse mit kostenlosem Chat. Sie passt zu Menschen, die selbst suchen und …"
+    },
+    {
+      "title": "LABLUE",
+      "url": "https://lablue.org/",
+      "snippet": "Kostenlose Partnersuche und Singlebörse für Deutschland."
+    }
+  ]
+}

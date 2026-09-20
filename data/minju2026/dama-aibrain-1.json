@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "minju2026/dama-aibrain-1",
+  "slug": "minju2026-dama-aibrain-1",
+  "author": "minju2026",
+  "url": "https://huggingface.co/minju2026/dama-aibrain-1",
+  "created_at": "2026-09-20T14:27:54.000Z",
+  "updated_at": "2026-09-21T14:15:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "gemma4",
+    "llama.cpp",
+    "unsloth",
+    "vision-language-model",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5123178051,
+  "parameters_human": "5.12B",
+  "storage_bytes": 14693485963,
+  "storage_human": "14.7 GB",
+  "base_model": "unsloth/gemma-4-e2b-it-unsloth-bnb-4bit",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chrome Web Store",
+      "url": "https://chromewebstore.google.com/",
+      "snippet": "Welcome to the Chrome Web Store Supercharge your browser with extensions and themes for Chrome"
+    },
+    {
+      "title": "Google Chrome Web Browser",
+      "url": "https://www.google.com/chrome/what-you-make-of-it/",
+      "snippet": "Sign in to Chrome on any device to access your bookmarks, saved passwords, and more. Use Chrome to save addresses, …"
+    },
+    {
+      "title": "Chrome Web Store - Extensions",
+      "url": "https://chromewebstore.google.com/category/extensions",
+      "snippet": "Analytics to help you understand and control your website usage, leading to less distractions and enhanced productivity"
+    },
+    {
+      "title": "Google Chrome - The Fast & Secure Web Browser Built to be Yours",
+      "url": "https://www.google.com/chrome/",
+      "snippet": "Chrome is the official web browser from Google, built to be fast, secure, and customizable. Download now and make it yours."
+    },
+    {
+      "title": "Install and manage extensions - Chrome Web Store Help",
+      "url": "https://support.google.com/chrome_webstore/answer/2664769?hl=en",
+      "snippet": "You can customize Chrome on your desktop by adding extensions from the Chrome Web Store. Install an extension Important: You …"
+    }
+  ]
+}

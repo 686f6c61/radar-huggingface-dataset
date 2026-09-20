@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "iapp/OpenThai-SystemOne",
+  "slug": "iapp-openthai-systemone",
+  "author": "iapp",
+  "url": "https://huggingface.co/iapp/OpenThai-SystemOne",
+  "created_at": "2026-09-20T14:15:03.000Z",
+  "updated_at": "2026-09-21T17:38:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-classification",
+  "library": null,
+  "languages": [
+    "th",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "openthai_systemone",
+    "thai",
+    "zero-shot-classification",
+    "system-one",
+    "decision-model",
+    "computer-use",
+    "openthaigpt",
+    "iapp",
+    "custom_code",
+    "th",
+    "en",
+    "base_model:Qwen/Qwen3.5-0.8B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 7,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 752674883,
+  "parameters_human": "752.7M",
+  "storage_bytes": 4550902777,
+  "storage_human": "4.6 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download …"
+    },
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/auth/?locale=de-DE",
+      "snippet": "Nutze ChatGPT, um Fragen zu beantworten, Texte zu verfassen, Bilder zu erstellen, Aufgaben zu erledigen und zu coden – alles an …"
+    },
+    {
+      "title": "Introducing ChatGPT - OpenAI",
+      "url": "https://openai.com/index/chatgpt/",
+      "snippet": "Nov 30, 2022 · We’ve trained a model called ChatGPT which interacts in a conversational way. The dialogue format makes it …"
+    },
+    {
+      "title": "ChatGPT ist da | OpenAI",
+      "url": "https://openai.com/de-DE/index/chatgpt/",
+      "snippet": "Nov 30, 2022 · ChatGPT has evolved substantially since then. Wir haben ein Modell namens ChatGPT trainiert, das wie in einem …"
+    },
+    {
+      "title": "ChatGPT Deutsch",
+      "url": "https://chatai.de/",
+      "snippet": "Alles über ChatGPT Diese Seite bietet Informationen rund um ChatGPT sowie kostenlosen Zugriff auf aktuelle GPT-Modelle von …"
+    }
+  ]
+}

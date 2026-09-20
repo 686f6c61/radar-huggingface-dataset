@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "MarcusVinicius21/ppo-LunarLander-v3",
+  "slug": "marcusvinicius21-ppo-lunarlander-v3",
+  "author": "MarcusVinicius21",
+  "url": "https://huggingface.co/MarcusVinicius21/ppo-LunarLander-v3",
+  "created_at": "2026-09-20T15:50:49.000Z",
+  "updated_at": "2026-09-20T15:51:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "LunarLander-v3",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 284386,
+  "storage_human": "284386 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chello en UPCmail, hoe zit het nou? | Provider Forum",
+      "url": "https://providerforum.nl/topics/chello-en-upcmail-hoe-zit-het-nou.25759/",
+      "snippet": "Aug 24, 2008 · Begin juli gebruikte ik nog deze gegevens voor mijn e-mail: POP server: mail.chello.nl SMTP server: mail.chello.nl Na …"
+    },
+    {
+      "title": "Email @ chello.nl weg - Provider Forum",
+      "url": "https://providerforum.nl/topics/email-chello-nl-weg.32358/",
+      "snippet": "Sep 20, 2009 · Ik gebruik al jaren mijn email als \"******@chello.nl \" ikweet dat er in het verleden een verandering is geweest naar …"
+    },
+    {
+      "title": "我的hotmail账户验证失败，我有密码也是对的，为什么 ...",
+      "url": "https://answers.microsoft.com/zh-hans/outlook_com/forum/all/%E6%88%91%E7%9A%84hotmail%E8%B4%A6%E6%88%B7/daf63052-579e-4138-8c39-52400990d773",
+      "snippet": "Apr 15, 2019 · 回复 (6) ML Mark Lam IT 个人解答 回复日期 2019/04/15 你好 这边是独立顾问Mark L. 我也是一名微软產品的用户 希望 …"
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/msoffice/forum/all/i-have-a-perpetual-license-to-microsoft-office-for/731db2fe-4318-4681-bcbf-9488cb540115",
+      "snippet": ""
+    },
+    {
+      "title": "chello email via gsm | Provider Forum",
+      "url": "https://providerforum.nl/topics/chello-email-via-gsm.11391/",
+      "snippet": "Oct 7, 2005 · Het kan dus, zowel zenden als ontvangen via een gsm met email client en Telfort abonnement. Na van alles proberen …"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "nmuendler/DeepSeek-R1-Distill-Qwen-7B-text-sft-training-curve-run1-step585",
+  "slug": "nmuendler-deepseek-r1-distill-qwen-7b-text-sft-training-curve-run1-step585",
+  "author": "nmuendler",
+  "url": "https://huggingface.co/nmuendler/DeepSeek-R1-Distill-Qwen-7B-text-sft-training-curve-run1-step585",
+  "created_at": "2026-09-20T15:46:36.000Z",
+  "updated_at": "2026-09-20T15:46:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 334436075,
+  "storage_human": "334 MB",
+  "base_model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "15 Stars Brutally Targeted By 2000s Tabloids In Truly Shocking Ways",
+      "url": "https://www.yahoo.com/entertainment/celebrity/articles/15-stars-brutally-targeted-2000s-133103262.html",
+      "snippet": "Aug 19, 2026 · Lindsay Lohan is basically the poster child for early 2000s pop culture. We watched her go from the adorable kid in …"
+    },
+    {
+      "title": "Size 0 Or Nothing: 22 Heartbreaking Examples Of Iconic Women Being ...",
+      "url": "https://www.boredpanda.com/celebs-fat-shamed-in-2000s/",
+      "snippet": "Jul 14, 2023 · All the tabloids reported she was too fat to fit her costume and most of her role was cut out of the movie."
+    },
+    {
+      "title": "Toxic Fat-Phobic Moments In 2000s Celebrity Culture - BuzzFeed",
+      "url": "https://www.buzzfeed.com/ishabassi/toxic-fat-phobic-moments-celebrity-culture-2000s",
+      "snippet": "Jul 11, 2023 · Looking back at the 2000s is wild. So much of that time period is characterised by body shaming, fatphobia, diet culture …"
+    },
+    {
+      "title": "Women are sharing the Nineties tropes that triggered their body ...",
+      "url": "https://www.independent.co.uk/life-style/women-body-dysmorphia-image-b2248744.html",
+      "snippet": "Dec 20, 2022 · The video features the text: “Why do I hate my body? Nineties kid edition”, before flashing up images of stars like …"
+    },
+    {
+      "title": "The Worst Tabloid Stories About Celebrity Women In The Early 2000s",
+      "url": "https://www.ranker.com/list/worst-early-2000s-tabloid-stories-about-women/alexandra-kelley",
+      "snippet": "Nov 6, 2025 · Nineties kids reminisce about plenty of things from the Y2K era, but the horrific headlines in tabloids typically aren't one …"
+    }
+  ]
+}

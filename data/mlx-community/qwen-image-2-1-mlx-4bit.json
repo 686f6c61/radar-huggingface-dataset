@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "mlx-community/Qwen-Image-2.1-MLX-4bit",
+  "slug": "mlx-community-qwen-image-2-1-mlx-4bit",
+  "author": "mlx-community",
+  "url": "https://huggingface.co/mlx-community/Qwen-Image-2.1-MLX-4bit",
+  "created_at": "2026-09-20T19:51:15.000Z",
+  "updated_at": "2026-09-20T21:55:00.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen-image",
+    "text-to-image",
+    "base_model:Qwen/Qwen-Image-2.1",
+    "base_model:finetune:Qwen/Qwen-Image-2.1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10492551522,
+  "storage_human": "10.5 GB",
+  "base_model": "Qwen/Qwen-Image-2.1",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SAR (zračenje iz mobitela) - čudni rezultati - Bug",
+      "url": "https://forum.bug.hr/forum/topic/opcenito-o-mobitelima/sar-zracenje-iz-mobitela-cudni-rezultati/151789.aspx",
+      "snippet": "May 29, 2012 · SAR (zračenje iz mobitela) - čudni rezultati Evo piše na par siteova da je SGS3 navodno najmanje zračeći …"
+    },
+    {
+      "title": "Intel Club (opća tema o procesorima) - forum.bug.hr",
+      "url": "https://forum.bug.hr/forum/topic/procesori-mbo/intel-club-opca-tema-o-procesorima/202738.aspx?page=531",
+      "snippet": "Mar 15, 2026 · A poprilicno jednostavno, jedan setting u BIOS-u, samo trebas istestirati koji tebi odgovara. Postoji i malkice …"
+    },
+    {
+      "title": "Fascinantni prvi rezultati rada opservatorija Vera",
+      "url": "https://forum.bug.hr/forum/topic/komentari-clanaka-nasih-web-stranica/fascinantni-prvi-rezultati-rada-opservatorija-vera/307107.aspx",
+      "snippet": "Jun 23, 2025 · Fascinantni prvi rezultati rada opservatorija Vera Konačno nešto pozitivno. Ovo mora imati ogroman utjecaj na naša …"
+    },
+    {
+      "title": "Porazni rezultati kontrole vozača električnih romo",
+      "url": "https://forum.bug.hr/forum/topic/komentari-clanaka-nasih-web-stranica/porazni-rezultati-kontrole-vozaca-elektricnih-romo/308252.aspx",
+      "snippet": "Sep 3, 2025 · Porazni rezultati kontrole vozača električnih romo I ne samo to. Poznato je kako se ionako premalo krećemo. Šetnja je …"
+    },
+    {
+      "title": "Poslovni rezultati Ericsson Nikola Tesla Grupe u 2",
+      "url": "https://forum.bug.hr/forum/topic/komentari-clanaka-nasih-web-stranica/poslovni-rezultati-ericsson-nikola-tesla-grupe-2/293221.aspx",
+      "snippet": "Feb 21, 2023 · Poslovni rezultati Ericsson Nikola Tesla Grupe u 2 Cinjenica je da gdja. Kovacevic radi odlican posao zadnjih 17-18? …"
+    }
+  ]
+}

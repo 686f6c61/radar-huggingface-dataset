@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "robertteleng/ingredient-detector-yolo-coreml",
+  "slug": "robertteleng-ingredient-detector-yolo-coreml",
+  "author": "robertteleng",
+  "url": "https://huggingface.co/robertteleng/ingredient-detector-yolo-coreml",
+  "created_at": "2026-09-20T16:56:56.000Z",
+  "updated_at": "2026-09-20T16:57:04.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "coreml",
+  "languages": [],
+  "tags": [
+    "coreml",
+    "object-detection",
+    "yolo",
+    "on-device",
+    "ios",
+    "apple-neural-engine",
+    "base_model:Ultralytics/YOLO26",
+    "base_model:quantized:Ultralytics/YOLO26",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5025246,
+  "storage_human": "5 MB",
+  "base_model": "Ultralytics/YOLO26",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "这个网址是potplayer官网吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/509011663",
+      "snippet": "Feb 21, 2022 · ———————————————— 为了让更多人能搜到这个帖子，做点SEO。 PotPlayer是什么？PotPlayer怎么下 …"
+    },
+    {
+      "title": "Seperates Passwort für Prime Video möglich? - ComputerBase",
+      "url": "https://www.computerbase.de/forum/threads/seperates-passwort-fuer-prime-video-moeglich.1999806/",
+      "snippet": "Jan 24, 2021 · Unsere Tochter (12) möchte gerne Prime Video mit schauen. Jetzt kann ich ja für sie ein eigenes Nutzerprofil anlegen. …"
+    },
+    {
+      "title": "如何评价 Microsoft To-Do（微软待办）？ - 知乎",
+      "url": "https://www.zhihu.com/question/58763087",
+      "snippet": "Microsoft To-Do 是微软推出的待办事项管理工具，旨在取代 Wunderlist，帮助用户高效管理任务和时间。"
+    },
+    {
+      "title": "Prime Video: gekaufte Filme runter laden - ComputerBase",
+      "url": "https://www.computerbase.de/forum/threads/prime-video-gekaufte-filme-runter-laden.2233495/",
+      "snippet": "Mar 14, 2025 · Ich wollte mir bei Amazon Prime den Herr der Ringe Cartoon von 1978 kaufen. Wenn ich den über Prime kaufe, …"
+    },
+    {
+      "title": "テレビ（ビエラ） どのようなアプリが使えるのですか。 - テレビ",
+      "url": "https://jpn.faq.panasonic.com/app/answers/detail/a_id/42355/~/%E3%83%86%E3%83%AC%E3%83%93%EF%BC%88%E3%83%93%E3%82%A8%E3%83%A9%EF%BC%89%E3%80%80%E3%81%A9%E3%81%AE%E3%82%88%E3%81%86%E3%81%AA%E3%82%A2%E3%83%97%E3%83%AA%E3%81%8C%E4%BD%BF%E3%81%88%E3%82%8B%E3%81%AE%E3%81%A7%E3%81%99%E3%81%8B%E3%80%82",
+      "snippet": "テレビ（ビエラ）でYouTube、Netflix、Prime Videoなどのアプリで動画が視聴できないときは テレビ（ビエラ）にアプリを追加（ …"
+    }
+  ]
+}

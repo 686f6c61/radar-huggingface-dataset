@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "SYNAPSEai1/SynapseMusicV12-Captioner",
+  "slug": "synapseai1-synapsemusicv12-captioner",
+  "author": "SYNAPSEai1",
+  "url": "https://huggingface.co/SYNAPSEai1/SynapseMusicV12-Captioner",
+  "created_at": "2026-09-20T12:33:41.000Z",
+  "updated_at": "2026-09-20T12:33:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-audio",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2_5_omni",
+    "text-to-audio",
+    "music",
+    "audio",
+    "arxiv:2602.00744",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 10732225408,
+  "parameters_human": "10.73B",
+  "storage_bytes": 22374542766,
+  "storage_human": "22.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Telegram: View @urbabydollxo2",
+      "url": "https://telegram.me/urbabydollxo2",
+      "snippet": "Telegram: View @urbabydollxo2 ... Urbabydollxo"
+    },
+    {
+      "title": "Telegram: View @urbabydollxo1 - t.me",
+      "url": "https://t.me/urbabydollxo1",
+      "snippet": "You can view and join @urbabydollxo1 right away."
+    },
+    {
+      "title": "Telegram contact with @urbabydollxo @Urbabydollxo",
+      "url": "https://telegram.im/@urbabydollxo",
+      "snippet": "Don't have Telegram yet?"
+    },
+    {
+      "title": "Telegram: Join Group Chat",
+      "url": "https://telegram.me/+G4w9e4DZjJ9jMDQ9",
+      "snippet": "You are invited to the channel urbabydollxo. Click above to join. ."
+    },
+    {
+      "title": "Contato com telegrama com @urbabydollxo @Urbabydollxo",
+      "url": "https://telegram.im/@urbabydollxo?lang=pt",
+      "snippet": "Não tem telegrama já?"
+    }
+  ]
+}

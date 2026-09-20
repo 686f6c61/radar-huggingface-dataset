@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "sriq-ai/sriq-diffusiongemma-26B-A4B-v1.5",
+  "slug": "sriq-ai-sriq-diffusiongemma-26b-a4b-v1-5",
+  "author": "sriq-ai",
+  "url": "https://huggingface.co/sriq-ai/sriq-diffusiongemma-26B-A4B-v1.5",
+  "created_at": "2026-09-20T13:36:43.000Z",
+  "updated_at": "2026-09-21T19:15:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [
+    "zh",
+    "en",
+    "multilingual"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "diffusion-lm",
+    "block-diffusion",
+    "reasoning",
+    "chinese",
+    "image-text-to-text",
+    "conversational",
+    "zh",
+    "en",
+    "multilingual",
+    "dataset:sriq-ai/sriq-sft-v1.5",
+    "base_model:kaivoss/diffusiongemma-26B-A4B-it-ALWAYS-THINK",
+    "base_model:adapter:kaivoss/diffusiongemma-26B-A4B-it-ALWAYS-THINK",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 182346241,
+  "storage_human": "182 MB",
+  "base_model": "kaivoss/diffusiongemma-26B-A4B-it-ALWAYS-THINK",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "API Design Guide: Key Principles, Best Practices & Steps",
+      "url": "https://requestly.com/blog/api-design/",
+      "snippet": "Oct 17, 2025 · Clear, actionable guide to API design covering key principles, essential best practices, and step-by-step processes for …"
+    },
+    {
+      "title": "API Design Principles: Building APIs Developers Actually Want to Use",
+      "url": "https://apidog.com/blog/api-design-principles/",
+      "snippet": "Mar 11, 2026 · Master the art of crafting intuitive, scalable, and secure APIs. From REST fundamentals to advanced versioning …"
+    },
+    {
+      "title": "Web API Design Best Practices - Azure Architecture Center",
+      "url": "https://learn.microsoft.com/en-us/azure/architecture/best-practices/api-design",
+      "snippet": "May 8, 2025 · Learn how to apply best practices for designing RESTful web APIs that support platform independence and loose …"
+    },
+    {
+      "title": "What is API Design? Principles & Best Practices | Postman",
+      "url": "https://www.postman.com/api-platform/api-design/",
+      "snippet": "There are four key steps in the API design process that every organization should follow. Each step requires collaboration between …"
+    },
+    {
+      "title": "7 Key Principles of API Design - Jitterbit",
+      "url": "https://www.jitterbit.com/blog/api-design-principles/",
+      "snippet": "Jun 25, 2025 · Explore API design principles and best practices that can help you set the stage for growth, innovation and seamless …"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "gguf-org/qwen-image-2.1-gguf",
+  "slug": "gguf-org-qwen-image-2-1-gguf",
+  "author": "gguf-org",
+  "url": "https://huggingface.co/gguf-org/qwen-image-2.1-gguf",
+  "created_at": "2026-09-20T18:31:57.000Z",
+  "updated_at": "2026-09-22T01:38:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "base_model:Qwen/Qwen-Image-2.1",
+    "base_model:quantized:Qwen/Qwen-Image-2.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 337740404,
+  "parameters_human": "337.7M",
+  "storage_bytes": 5482924780,
+  "storage_human": "5.5 GB",
+  "base_model": "Qwen/Qwen-Image-2.1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "I Was Mistaken As a Monstrous Genius Actor | Qi Manga",
+      "url": "https://qimanga.com/series/i-was-mistaken-as-a-monstrous-genius-actor",
+      "snippet": "Kang Woo-jin, an ordinary man, unexpectedly discovers that he has a unique ability: whenever he reads a script or screenplay, he …"
+    },
+    {
+      "title": "I Was Mistaken As a Monstrous Genius Actor - reimanga.net",
+      "url": "https://reimanga.net/manga/i-was-mistaken-as-a-monstrous-genius-actor-94681",
+      "snippet": "Kang Woo-jin, an ordinary man with dark hair and a casual demeanor, finds his life irrevocably altered by a hidden talent. He …"
+    },
+    {
+      "title": "I Was Mistaken as a Monstrous Genius Actor - AsuraNovel",
+      "url": "https://asuranovel.com/novels/i-was-mistaken-as-a-monstrous-genius-actor/",
+      "snippet": "Home › Novels › I Was Mistaken as a Monstrous Genius Actor 🔖 Bookmark Completed 424 Chapters"
+    },
+    {
+      "title": "I Was Mistaken as a Monstrous Genius Actor - Novel Updates",
+      "url": "https://www.novelupdates.com/series/i-was-mistaken-as-a-monstrous-genius-actor/",
+      "snippet": "These are recommendation lists which contains I Was Mistaken as a Monstrous Genius Actor. You should give them a visit if you're …"
+    },
+    {
+      "title": "I Was Mistaken As a Monstrous Genius - VELVET Scans",
+      "url": "https://velvet-scans.com/manga/i-was-mistaken-as-a-monstrous-genius/",
+      "snippet": "Feb 8, 2026 · As i was given a script, the void space appeared in my mind and forced me to relive the character. I got stabbed. …"
+    }
+  ]
+}

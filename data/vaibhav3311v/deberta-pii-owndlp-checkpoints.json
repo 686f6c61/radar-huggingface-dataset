@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Vaibhav3311v/deberta-pii-owndlp-checkpoints",
+  "slug": "vaibhav3311v-deberta-pii-owndlp-checkpoints",
+  "author": "Vaibhav3311v",
+  "url": "https://huggingface.co/Vaibhav3311v/deberta-pii-owndlp-checkpoints",
+  "created_at": "2026-09-20T18:09:46.000Z",
+  "updated_at": "2026-09-20T18:10:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deberta-v2",
+    "token-classification",
+    "generated_from_trainer",
+    "base_model:microsoft/deberta-v3-base",
+    "base_model:finetune:microsoft/deberta-v3-base",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 183861543,
+  "parameters_human": "183.9M",
+  "storage_bytes": 367752663,
+  "storage_human": "368 MB",
+  "base_model": "microsoft/deberta-v3-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DEXAFLAMM R 40 kg sud za 0 Kč | TORA, spol. s r.o.",
+      "url": "https://www.torasro.cz/dexaflamm-r-40-kg-sud/",
+      "snippet": "DEXAFLAMM-R se používá jako protipožární nátěr nebo nástřik i jako protipožární těsnicí tmel. Je určen pro ochranu celoplastových …"
+    },
+    {
+      "title": "DEXAFLAMM R 40 kg barrel - TORA, spol. s r.o.",
+      "url": "https://www.torasro.cz/en/dexaflamm-r-40-kg-barrel/",
+      "snippet": "DEXAFLAMM-R is used both as a fire-resistant coating or spray and as a fire-resistant sealant. It is designed to protect all-plastic …"
+    },
+    {
+      "title": "FG500 FLAMGARD 5 kg - stachema.sk",
+      "url": "https://stachema.sk/produkty/detail/A111001-fg500-flamgard-5-kg",
+      "snippet": "Protipožiarna hmota. Pri horení vytvára na povrchu chráneného materiálu nehorľavú tepelne izolujúcu penu. Aplikáciu náterov môže …"
+    },
+    {
+      "title": "Dexaflam: Uses, Dosage, Side Effects, Food Interaction & FAQ",
+      "url": "https://www.medicinesfaq.com/brand/dexaflam",
+      "snippet": "Jan 7, 2025 · Dexaflam is a glucocorticoid medication used to treat rheumatic problems, a number of skin diseases, severe allergies, …"
+    },
+    {
+      "title": "Požiarne utesnenia – SOND-PO, s.r.o. – Protipožiarna ochrana",
+      "url": "https://www.sond-po.sk/ponuka-prac/poziarne-utesnenia/",
+      "snippet": "Naša spoločnosť má vykonanú vlastnú skúšku mäkkej upchávky v akreditačnom skúšobnom ústave FIRES, s.r.o. Batizovce na …"
+    }
+  ]
+}

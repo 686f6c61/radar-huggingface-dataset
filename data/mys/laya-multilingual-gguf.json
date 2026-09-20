@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "mys/laya-multilingual-GGUF",
+  "slug": "mys-laya-multilingual-gguf",
+  "author": "mys",
+  "url": "https://huggingface.co/mys/laya-multilingual-GGUF",
+  "created_at": "2026-09-20T16:06:41.000Z",
+  "updated_at": "2026-09-20T16:16:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "gguf",
+    "ggmlc",
+    "laya",
+    "jev",
+    "mmbert",
+    "multilingual",
+    "decision",
+    "system-1",
+    "base_model:convaiinnovations/laya-multilingual",
+    "base_model:quantized:convaiinnovations/laya-multilingual",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 323182091,
+  "parameters_human": "323.2M",
+  "storage_bytes": 1548892128,
+  "storage_human": "1.5 GB",
+  "base_model": "convaiinnovations/laya-multilingual",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Brandschutztüren: Vorschriften in Bayern",
+      "url": "https://versicherungsvergleich1.com/wohngebaeudeversicherung/brandschutztueren-vorschriften-in-bayern/",
+      "snippet": "Um die Brandsicherheit in Bayern zu gewährleisten, gelten spezifische Vorschriften für Brandschutztüren. Diese umfassen …"
+    },
+    {
+      "title": "Bayerische Technische Baubestimmungen (BayTB) - bauen.bayern.de",
+      "url": "https://www.bauen.bayern.de/assets/stmi/buw/baurechtundtechnik/28_baytb-feb-2025.pdf",
+      "snippet": "Die Bayerischen Technischen Baubestimmungen (BayTB) basieren auf der Musterverwaltungsvorschrift Technische …"
+    },
+    {
+      "title": "Brandschutztüren warten: Vorschriften, Prüffristen & Pflichten",
+      "url": "https://www.laitschek.de/ratgeber/brandschutztueren-warten-wann-wartung-pflicht-ist-und-worauf-es-wirklich-ankommt",
+      "snippet": "Brandschutztüren müssen in der Regel mindestens einmal jährlich durch eine sachkundige Fachkraft gewartet werden. Dieses …"
+    },
+    {
+      "title": "Brandschutztüren Wartungsintervall & Pflicht | DIN 14677",
+      "url": "https://www.juschka-brandschutz.de/pages/blog/brandschutztueren-wartung-din-14677.html",
+      "snippet": "Nov 23, 2025 · Die Wartungspflicht gilt für alle Brandschutztüren in gewerblich genutzten Gebäuden, unabhängig von der Größe des …"
+    },
+    {
+      "title": "≡ Brandschutztüren: Alles über Vorschriften, Wartung und ...",
+      "url": "https://brandschutzdozenten.de/blog/brandschutztueren-und-feststellanlagen/",
+      "snippet": "Oct 24, 2024 · Regelmäßige Wartungen sind entscheidend, um die Funktion Ihrer Brandschutztüren sicherzustellen und Vorschriften …"
+    }
+  ]
+}

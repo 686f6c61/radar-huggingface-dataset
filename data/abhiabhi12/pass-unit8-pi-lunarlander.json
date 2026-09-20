@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Abhiabhi12/pass-unit8-pi-lunarlander",
+  "slug": "abhiabhi12-pass-unit8-pi-lunarlander",
+  "author": "Abhiabhi12",
+  "url": "https://huggingface.co/Abhiabhi12/pass-unit8-pi-lunarlander",
+  "created_at": "2026-09-20T16:12:23.000Z",
+  "updated_at": "2026-09-20T16:12:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "deep-rl-course",
+  "languages": [],
+  "tags": [
+    "deep-rl-course",
+    "LunarLander-v2",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ppo",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Streaming show list - Deutsch | ExcelGPT",
+      "url": "https://excelgpt.app/de/templates/streaming-show-list-de",
+      "snippet": "Track what streaming shows you watched, you want to watch, or new ones recommended by others using this tv show tracking …"
+    },
+    {
+      "title": "Tutorial: Visualisieren von Streamingdaten in Excel",
+      "url": "https://learn.microsoft.com/de-de/microsoft-365/education/data-streamer/visualize-streaming-data-in-excel",
+      "snippet": "Sep 2, 2026 · Das Erstellen eines Diagramms aus Streamingdaten trägt dazu bei, die visuelle Wirkung Ihrer Daten für Ihre Zielgruppe …"
+    },
+    {
+      "title": "Tutorial: Visualisieren von Streamingdaten - Excel Data Streamer",
+      "url": "https://learn.microsoft.com/de-de/microsoft-365/education/data-streamer/create-data-table",
+      "snippet": "Aug 1, 2025 · Erfahren Sie, wie Sie auf Streamingdaten für ein Diagramm verweisen – Erstellen einer Datentabelle."
+    },
+    {
+      "title": "Kostenlose Excel-Tabellenvorlagen | Microsoft Excel",
+      "url": "https://excel.cloud.microsoft/create/de/templates/",
+      "snippet": "Finden Sie anpassbare Excel-Designvorlagen, die Ihnen den Einstieg in Ihr nächstes Projekt erleichtern. Von Budgets bis zu …"
+    },
+    {
+      "title": "Excel Vorlagen kostenlos | Alle Vorlagen & Muster gratis",
+      "url": "https://excelwelt.com/",
+      "snippet": "Hier findest du anpassbare Excel-Formulare für viele verschiedene Zwecke. Sie eignen sich perfekt für Anträge, Checklisten oder …"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "FINAL-Bench/ZTC-Judge-9B",
+  "slug": "final-bench-ztc-judge-9b",
+  "author": "FINAL-Bench",
+  "url": "https://huggingface.co/FINAL-Bench/ZTC-Judge-9B",
+  "created_at": "2026-09-20T16:28:01.000Z",
+  "updated_at": "2026-09-22T02:32:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ko"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "ztc",
+    "answer-verification",
+    "hallucination-detection",
+    "zero-token",
+    "confidence-estimation",
+    "text-classification",
+    "en",
+    "ko",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 30,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 19340223466,
+  "storage_human": "19.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Définitions : final, finale - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/final/33788",
+      "snippet": "Final, finale n.m. = dernière partie d'une œuvre musicale. Peut s'écrire avec un l, sans e, ou avec un e (italien finale). Le final de la …"
+    },
+    {
+      "title": "final - Définitions, synonymes, prononciation, exemples | Dico en ligne ...",
+      "url": "https://dictionnaire.lerobert.com/definition/final",
+      "snippet": "Définition, exemples et prononciation de final : Qui est à la fin, qui sert de fin (contraire initi…"
+    },
+    {
+      "title": "Définitions : final, finale - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/final/33790",
+      "snippet": "final, finale - Définitions Français : Retrouvez la définition de final, finale, ainsi que les synonymes, difficultés... - synonymes, …"
+    },
+    {
+      "title": "Écrit-on « final » ou « finale - MerciApp",
+      "url": "https://www.merci-app.com/lexique/ecrit-on-final-ou-finale",
+      "snippet": "Jun 24, 2025 · Dans la langue française, certains mots nous font hésiter par leur ressemblance. C'est particulièrement vrai pour « …"
+    },
+    {
+      "title": "final — Wiktionnaire, le dictionnaire libre",
+      "url": "https://fr.wiktionary.org/wiki/final",
+      "snippet": "Tout ou partie de cet article a été extrait du Dictionnaire de l’Académie française, huitième édition, 1932-1935 (final), mais l’article a …"
+    }
+  ]
+}

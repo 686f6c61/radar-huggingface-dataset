@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "hotorigogi/act_doll_32ep",
+  "slug": "hotorigogi-act_doll_32ep",
+  "author": "hotorigogi",
+  "url": "https://huggingface.co/hotorigogi/act_doll_32ep",
+  "created_at": "2026-09-20T19:28:27.000Z",
+  "updated_at": "2026-09-20T19:28:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:hotorigogi/doll_pick_and_place",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714848,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Juwelo | Edelsteinschmuck zum Bestpreis online kaufen",
+      "url": "https://www.juwelo.de/",
+      "snippet": "Jetzt die besten Angebote entdecken und Traum-Schmuckstück im Juwelo-Onlineshop sichern! Echtheitszertifikat Kostenlose Retoure"
+    },
+    {
+      "title": "Juwelo TV Live - Funkelnder Echtschmuck zum besten Preis",
+      "url": "https://www.juwelo.de/live/",
+      "snippet": "Verfolgen Sie unsere spannenden und unterhaltsamen TV-Aktionen, Sales und Premieren. Tauchen Sie ein in die faszinierende Welt …"
+    },
+    {
+      "title": "Welt der Edelsteine | Das Online-Journal von Juwelo",
+      "url": "https://www.welt-der-edelsteine.juwelo.de/",
+      "snippet": "Spannende und interessante Beiträge aus der faszinierenden Welt der Edelsteine mit Viola Eichler und Francois-Xavier Thiébaud."
+    },
+    {
+      "title": "Premiere: KM BY JUWELO – Kerstin Michaelsen - Welt der Edelsteine",
+      "url": "https://www.welt-der-edelsteine.juwelo.de/premiere-km-by-juwelo-kerstin-michaelsen/",
+      "snippet": "KM by Juwelo: Kerstin Michaelsen stellt erstmalig bei Juwelo ihre neue Kollektion vor. Labradorite, Mondsteine und vieles mehr …"
+    },
+    {
+      "title": "Das Magazin - media.juwelo.de",
+      "url": "https://media.juwelo.de/pdf/12_24_web.pdf",
+      "snippet": "JUWELO Beste Preise Juwelo verzichtet auf teure Zwischenhändler und begleitet jeden Edelstein von der Mine bis in unsere eigene …"
+    }
+  ]
+}

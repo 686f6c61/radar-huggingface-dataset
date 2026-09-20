@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "azharmo/build-jev-from-scratch",
+  "slug": "azharmo-build-jev-from-scratch",
+  "author": "azharmo",
+  "url": "https://huggingface.co/azharmo/build-jev-from-scratch",
+  "created_at": "2026-09-20T17:27:14.000Z",
+  "updated_at": "2026-09-20T18:54:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "system-one",
+    "decision-model",
+    "jev",
+    "noul",
+    "calibration",
+    "transformer",
+    "text-classification",
+    "en",
+    "dataset:fancyzhx/ag_news",
+    "dataset:google/boolq",
+    "dataset:stanfordnlp/sst2",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12947412,
+  "storage_human": "13 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "נבו - המאגר המשפטי",
+      "url": "https://www.nevo.co.il/",
+      "snippet": "הכוונה היא ש'נבו AI' בודק את השאלות על מקורות מהחקיקה, מהפסיקה ומהספרות ועורך ביניהם אינטגרציה... ...בבחינות הלשכה האחרונות הצ'אט של …"
+    },
+    {
+      "title": "נבו - חיפוש חקיקה",
+      "url": "https://www.nevo.co.il/HakikaSearch.aspx",
+      "snippet": "- לאור החלטת המחוקק לעשות כעת שימוש בכתיב מלא בפרסומי \"רשומות\", תיווצר חוסר אחידות בדברי חקיקה קיימים בין הוראות ישנות לחדשות. - בקבצי …"
+    },
+    {
+      "title": "NevoAI",
+      "url": "https://ai.nevo.co.il/",
+      "snippet": "NevoAI provides intelligent legal solutions, including legislation management and professional preparation for certification exams in …"
+    },
+    {
+      "title": "נבו - חיפוש ספרות",
+      "url": "https://www.nevo.co.il/BooksSearch.aspx",
+      "snippet": "בגס, מעסיקים גדולים בדיני עבודה (נבו, 2017) בדר, מנגנון תיווך כתחליף להסדר תעריף השכר המקסימאלי בתביעות לפי חוק הפיצויים לנפגעי תאונות …"
+    },
+    {
+      "title": "נבו - המאגר המשפטי - YouTube",
+      "url": "https://www.youtube.com/@nevowebsite",
+      "snippet": "כנס חיפה למשפט ה-16 - מושב תיקון מס' 3 לחוק החוזים - החוזה העסקי - ד\"ר מוחמד עלי נבו - המאגר המשפטי 20:44"
+    }
+  ]
+}

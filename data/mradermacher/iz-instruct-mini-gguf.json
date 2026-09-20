@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "mradermacher/iz-instruct-mini-GGUF",
+  "slug": "mradermacher-iz-instruct-mini-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/iz-instruct-mini-GGUF",
+  "created_at": "2026-09-20T19:26:40.000Z",
+  "updated_at": "2026-09-20T19:35:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:theplayboy117/iz-instruct-mini",
+    "base_model:quantized:theplayboy117/iz-instruct-mini",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 82931200,
+  "parameters_human": "82.9M",
+  "storage_bytes": 807489024,
+  "storage_human": "807 MB",
+  "base_model": "theplayboy117/iz-instruct-mini",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ترجمة Google",
+      "url": "https://translate.google.com/?hl=ar",
+      "snippet": "خدمة ترجمة مجانية مقدَّمة من Google حيث يمكن ترجمة الكلمات والعبارات وصفحات الويب بشكل فوري بين اللغة الإنجليزية وأكثر من 100 لغة أخرى."
+    },
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/details",
+      "snippet": "Some sentences may contain gender-specific alternatives. Click a sentence to see alternatives. Learn more"
+    },
+    {
+      "title": "ترجمه Google - مترجم شفاهی شخصی در تلفن یا رایانه شما",
+      "url": "https://translate.google.com/intl/fa/about/",
+      "snippet": "با نحوه ترجمه کردن نوشتار، گفتار، تصاویر، اسناد، وب‌سایت‌ها، و غیره با «ترجمه Google» آشنا شوید."
+    }
+  ]
+}

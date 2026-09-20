@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "abdulhayykhan/AbdiSQL-1.0",
+  "slug": "abdulhayykhan-abdisql-1-0",
+  "author": "abdulhayykhan",
+  "url": "https://huggingface.co/abdulhayykhan/AbdiSQL-1.0",
+  "created_at": "2026-09-20T12:56:36.000Z",
+  "updated_at": "2026-09-20T15:35:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-to-sql",
+    "sqlite",
+    "slm",
+    "qlora",
+    "abdi",
+    "code-generation",
+    "database",
+    "spider",
+    "conversational",
+    "en",
+    "dataset:spider",
+    "base_model:Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3098888700,
+  "storage_human": "3.1 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Check Today's Gold Rate in Bahrain Joyalukkas",
+      "url": "https://www.joyalukkas.com/bh/goldrate",
+      "snippet": "3 days ago · Check the latest Joyalukkas gold rate in Bahrain before choosing your jewellery. Whether you are looking for traditional …"
+    },
+    {
+      "title": "Joyalukkas Indian Jewellery Stores in Bahrain | Trusted Gold Shop",
+      "url": "https://www.joyalukkas.com/bh/",
+      "snippet": "As a renowned Indian jewellery store in Bahrain, we offer curated collections of gold, diamond, platinum, and bridal jewellery, …"
+    },
+    {
+      "title": "Gold Price in Bahrain in BHD, INR and USD",
+      "url": "https://www.bahraingoldprice.com/",
+      "snippet": "2 days ago · Check today's and historical Gold prices in Kingdom of Bahrain in Bahraini Dinar, Indian Rupee and US Dollar. Also …"
+    },
+    {
+      "title": "Bahrain Gold Price Live - 24-hour (gold prices in Bahraini dinars BHD)",
+      "url": "https://www.livepriceofgold.com/bahrain-gold-price.html",
+      "snippet": "9 hours ago · Live gold prices in Bahrain (BHD), featuring real-time updates for different weights and karats such as grams, ounces, …"
+    },
+    {
+      "title": "Best Indian Jewellery Brands in Manama | Joyalukkas Bahrain",
+      "url": "https://stores.joyalukkas.com/bh/city/manama/bahrain-gold-city",
+      "snippet": "1 day ago · Explore the best jewellery brands in Bahrain at our trusted Indian jewellery store. Shop gold, diamond & bridal collections …"
+    }
+  ]
+}

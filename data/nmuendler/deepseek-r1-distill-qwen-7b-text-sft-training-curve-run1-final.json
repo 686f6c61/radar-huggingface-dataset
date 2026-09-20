@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "nmuendler/DeepSeek-R1-Distill-Qwen-7B-text-sft-training-curve-run1-final",
+  "slug": "nmuendler-deepseek-r1-distill-qwen-7b-text-sft-training-curve-run1-final",
+  "author": "nmuendler",
+  "url": "https://huggingface.co/nmuendler/DeepSeek-R1-Distill-Qwen-7B-text-sft-training-curve-run1-final",
+  "created_at": "2026-09-20T15:45:24.000Z",
+  "updated_at": "2026-09-20T15:45:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 334436075,
+  "storage_human": "334 MB",
+  "base_model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MyMinfin",
+      "url": "https://eservices.minfin.fgov.be/myminfin-web/",
+      "snippet": "MyMinfin is een beveiligd online portaal voor het beheren van uw belasting- en financiële gegevens bij de Belgische Federale …"
+    },
+    {
+      "title": "CadGIS - MyMinfin",
+      "url": "https://eservices.minfin.fgov.be/ecad-web/",
+      "snippet": "Explore cadastral information and maps through CadGIS on MyMinfin, your online portal for managing tax and financial matters in …"
+    },
+    {
+      "title": "AnnuComp 1.107.0 - Federale Overheidsdienst Financiën",
+      "url": "https://eservices.minfin.fgov.be/annucomp/welcomeMenu1.do",
+      "snippet": "Welkom Trefwoorden Contactgegevens Bevoegdheden Organisatiestructuur Contact Log in (enkel voor medewerkers van de FOD …"
+    },
+    {
+      "title": "AnnuComp 1.107.0 - Federale Overheidsdienst Financiën",
+      "url": "https://eservices.minfin.fgov.be/annucomp/UIC01_act01_loadResultBureauDetailZoek.do?action=/UI01_16_act01_loadSearch.do&idTqBureau=6267",
+      "snippet": "Algemene Administratie van de Patrimoniumdocumentatie RZ-Kantoor Kantoor Rechtszekerheid Nijvel ( AGDP - SJ-Bureau - Bureau …"
+    },
+    {
+      "title": "AnnuComp 1.107.0 - Federale Overheidsdienst Financiën - MyMinfin",
+      "url": "https://eservices.minfin.fgov.be/annucomp/UIC01_act01_loadResultBureauDetailWelkom.do?action=/welcomeMenu1Extend.do&idTqBureau=5613",
+      "snippet": "Algemene Administratie van de Fiscaliteit CENTRUM KMO KORTRIJK - BEHEER TEAM 6 Correspondentieadres (voor uw …"
+    }
+  ]
+}

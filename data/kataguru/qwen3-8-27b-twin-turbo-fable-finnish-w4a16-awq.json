@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "kataguru/Qwen3.8-27B-TWIN-TURBO-Fable-Finnish-W4A16-AWQ",
+  "slug": "kataguru-qwen3-8-27b-twin-turbo-fable-finnish-w4a16-awq",
+  "author": "kataguru",
+  "url": "https://huggingface.co/kataguru/Qwen3.8-27B-TWIN-TURBO-Fable-Finnish-W4A16-AWQ",
+  "created_at": "2026-09-20T18:26:57.000Z",
+  "updated_at": "2026-09-21T05:10:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "fi",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "qwen",
+    "qwen3.5",
+    "finnish",
+    "awq",
+    "w4a16",
+    "compressed-tensors",
+    "vllm",
+    "uncensored",
+    "mtp",
+    "multi-token-prediction",
+    "image-text-to-text",
+    "conversational",
+    "fi",
+    "en",
+    "base_model:DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored",
+    "base_model:quantized:DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 19567852981,
+  "storage_human": "19.6 GB",
+  "base_model": "DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "Outlook如何设置签名？添加Outlook签名-百度经验",
+      "url": "https://jingyan.baidu.com/article/eae07827d1ff0e5fec5485bb.html",
+      "snippet": "Dec 13, 2019 · Outlook如何设置签名？添加Outlook签名,Outlook是我们日常工作中经常用到的邮件收发工具。发送邮件时，在最后的 …"
+    },
+    {
+      "title": "Win11系统如何更改Microsoft store的下载路径？ - 知乎",
+      "url": "https://www.zhihu.com/question/564794300",
+      "snippet": "Nov 5, 2022 · 微软商店下载的软件默认是安装到C盘的，如果C盘空间比较紧凑的话我们就只能把软件安装到其他盘了。我们需要做两 …"
+    },
+    {
+      "title": "如何设置修改outlook邮箱签名 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/7082dc1c0cb152e40a89bd13.html",
+      "snippet": "Jun 1, 2017 · 如何设置修改outlook邮箱签名,工作中，经常会有人问outlook邮箱的签名怎么设置或修改，不懂的请往下看啦~"
+    },
+    {
+      "title": "Outlook如何设置延迟（定时）发送邮件-百度经验",
+      "url": "https://jingyan.baidu.com/article/15622f244e9c16bcfcbea5fd.html",
+      "snippet": "Oct 13, 2020 · Outlook如何设置延迟（定时）发送邮件,你知道吗？Outlook可以设置延迟发送邮件，设置之后，如果邮件发送出去之后 …"
+    }
+  ]
+}

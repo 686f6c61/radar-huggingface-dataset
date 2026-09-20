@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "maurorisonho/ml-agents-Pyramids",
+  "slug": "maurorisonho-ml-agents-pyramids",
+  "author": "maurorisonho",
+  "url": "https://huggingface.co/maurorisonho/ml-agents-Pyramids",
+  "created_at": "2026-09-20T17:16:32.000Z",
+  "updated_at": "2026-09-20T19:24:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "onnx",
+    "ML-Agents-Pyramids",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1418184,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Foxpost Kuponok és akciók | 85% Kedvezmény |Szeptember 2026",
+      "url": "https://hu.coupert.com/kuponok/foxpost",
+      "snippet": "A legjobb ⭐ 9 Foxpost Kuponok és Kuponkódok segítségével akár 85% kedvezményt is találhat. Kezdje meg vásárlását még ma, …"
+    },
+    {
+      "title": "Csomagküldés akció - FOXPOST",
+      "url": "https://www.foxpost.hu/aktualis-akciok",
+      "snippet": "Egyedi csomagszámmal követheted, hogy éppen merre jár a csomagod, így tudni fogod, azt is mikor érkezik meg a címzetthez. …"
+    },
+    {
+      "title": "-15% Foxpost Kedvezmények ⇒ Szeptember 2026",
+      "url": "https://www.hukuponkod.com/kuponok/foxpost",
+      "snippet": "Sep 26, 2025 · Használja a Foxpost Kuponok és Kuponkódok felhasználót, és élvezze a 15% megtakarítást a foxpost.hu on-line …"
+    },
+    {
+      "title": "Partnerkedvezmények – Foxpost - COOP",
+      "url": "https://www.coop.hu/coop-klub/partnerkedvezmenyek-foxpost/",
+      "snippet": "A kupon csak a www.foxpost.hu weboldalon használható fel. A kupon a csomaglétrehozás folyamán váltható be és a fizetés során …"
+    },
+    {
+      "title": "Aktív Foxpost Kuponkódok + 15% Kedvezmény Szeptember 2026",
+      "url": "https://www.kuponokodo.com/kuponkodok/foxpost.hu",
+      "snippet": "Sep 26, 2024 · Kuponkódok a Foxpost számára, különböző lejárati dátumokkal, néhányan akár véglegesen is. Kiválaszthatja a …"
+    }
+  ]
+}

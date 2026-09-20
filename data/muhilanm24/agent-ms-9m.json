@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "MuhilanM24/agent-ms-9m",
+  "slug": "muhilanm24-agent-ms-9m",
+  "author": "MuhilanM24",
+  "url": "https://huggingface.co/MuhilanM24/agent-ms-9m",
+  "created_at": "2026-09-20T17:01:51.000Z",
+  "updated_at": "2026-09-20T17:38:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:unsloth/qwen2.5-coder-7b-instruct-bnb-4bit",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 91369406,
+  "storage_human": "91 MB",
+  "base_model": "unsloth/qwen2.5-coder-7b-instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Change the power mode for your Windows PC - Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/change-the-power-mode-for-your-windows-pc-c2aff038-22c9-f46d-5ca0-78696fdf2de8",
+      "snippet": "Learn how to change the power mode on your Windows PC to preserve your battery, limit notifications, and background activity."
+    },
+    {
+      "title": "Shut down (turn off) your PC - Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/shut-down-turn-off-your-pc-893fd089-c851-71c7-af3e-63e159681b21",
+      "snippet": "To turn off your PC in Windows 10, select the Start button, select the Power button, and then select Shut down ."
+    },
+    {
+      "title": "Shut down, sleep, or hibernate your PC | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/experience/power-battery/shut-down-sleep-or-hibernate-your-pc",
+      "snippet": "To hibernate your PC: Open power options—select Start , then select Settings > System > Power & sleep > Additional power …"
+    },
+    {
+      "title": "Fix printer connection and printing problems in Windows",
+      "url": "https://support.microsoft.com/en-us/windows/hardware/printer/fix-printer-connection-and-printing-problems-in-windows",
+      "snippet": "Sometimes power cycling your printer can resolve the issue. Turn off your printer and unplug it, wait 30 seconds, plug your printer …"
+    },
+    {
+      "title": "Fix Wi-Fi connection issues in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/experience/connectivity-networking/fix-wi-fi-connection-issues-in-windows",
+      "snippet": "If you're unable to access email, browse the web, or stream music, it's likely you're not connected to your network and can't access …"
+    }
+  ]
+}

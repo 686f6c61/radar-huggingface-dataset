@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "cyberviser/quill-poetry-v3",
+  "slug": "cyberviser-quill-poetry-v3",
+  "author": "cyberviser",
+  "url": "https://huggingface.co/cyberviser/quill-poetry-v3",
+  "created_at": "2026-09-20T14:10:34.000Z",
+  "updated_at": "2026-09-20T14:12:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "poetry",
+    "creative-writing",
+    "lora",
+    "quill",
+    "base_model:mistralai/Mistral-7B-Instruct-v0.3",
+    "base_model:adapter:mistralai/Mistral-7B-Instruct-v0.3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 83946192,
+  "storage_human": "84 MB",
+  "base_model": "mistralai/Mistral-7B-Instruct-v0.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ATTACK SHARK MOUSE HUB",
+      "url": "https://controlhub.top/ATTACKSHARK/",
+      "snippet": "https://www.attackshark.com Web Drv：1.2.0"
+    },
+    {
+      "title": "ATTACK SHARK Drivers, Firmware, Software & Manuals | Official …",
+      "url": "https://attackshark.com/pages/driver-download",
+      "snippet": "Download the latest drivers, firmware updates, software and user manuals for ATTACK SHARK gaming keyboards and mice. …"
+    },
+    {
+      "title": "Compx HUB WEB",
+      "url": "https://controlhub.top/ATTACKSHARK/www.attackshark.pro",
+      "snippet": "We're sorry but Compx HUB WEB doesn't work properly without JavaScript enabled. Please enable it to continue."
+    },
+    {
+      "title": "ATTACK SHARK - Premium Gaming Keyboards, Mice, Headsets, …",
+      "url": "https://attackshark.com/",
+      "snippet": "Sep 8, 2026 · Attack Shark offers top-quality gaming keyboards, mice, headsets and accessories. Enjoy free shipping, 15-day …"
+    },
+    {
+      "title": "ATTACK SHARK Official Website",
+      "url": "http://www.mambasnake.pro/",
+      "snippet": "Guangzhou Junxingcheng Electronic Technology Co., Ltd. is an enterprise dedicated to the research and development, production, …"
+    }
+  ]
+}

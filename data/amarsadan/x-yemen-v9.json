@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "amarsadan/X-YEMEN-V9",
+  "slug": "amarsadan-x-yemen-v9",
+  "author": "amarsadan",
+  "url": "https://huggingface.co/amarsadan/X-YEMEN-V9",
+  "created_at": "2026-09-20T19:48:16.000Z",
+  "updated_at": "2026-09-20T19:50:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:petruhonk/Qwen3.8-9B-Distill-uncensored-heretic",
+    "base_model:finetune:petruhonk/Qwen3.8-9B-Distill-uncensored-heretic",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 19326293325,
+  "storage_human": "19.3 GB",
+  "base_model": "petruhonk/Qwen3.8-9B-Distill-uncensored-heretic",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Your guide to a Walmart+ membership's perks and benefits",
+      "url": "https://www.usatoday.com/story/shopping/sign-up-walmart-membership/82954651007/",
+      "snippet": "Apr 5, 2025 · Here's what to know about signing up for a Walmart+ membership. Score free shipping, free streaming, early sale …"
+    },
+    {
+      "title": "Is Walmart+ Worth It? A Breakdown of Membership Perks",
+      "url": "https://www.savings.com/savvy/walmart/walmart-plus-membership-cost-benefits",
+      "snippet": "Jun 10, 2026 · Wondering if Walmart+ is worth it? Explore the latest membership perks, savings, and benefits to see if this …"
+    },
+    {
+      "title": "Walmart+ Membership - Walmart.com",
+      "url": "https://www.walmart.com/help/article/walmart-membership/534c4edc29204a6bb15145a61146bf51",
+      "snippet": "Walmart+ is a paid membership that helps save you time and money. You'll need a Walmart.com account and the Walmart app to …"
+    },
+    {
+      "title": "Walmart Plus: What to Know and How to Save | NBC Select",
+      "url": "https://www.nbcnews.com/select/shopping/what-walmart-plus-rcna263677",
+      "snippet": "Jun 22, 2026 · Everything you need to know about a Walmart+ membership Membership perks include free home delivery, a …"
+    },
+    {
+      "title": "Walmart+ Membership Benefits: Shipping and Delivery Perks, More",
+      "url": "https://www.today.com/shop/walmart-plus-membership-benefits-rcna193646",
+      "snippet": "Jun 24, 2026 · With exclusive discounts on shipping and delivery, priority access to the year’s biggest savings events and a handful …"
+    }
+  ]
+}

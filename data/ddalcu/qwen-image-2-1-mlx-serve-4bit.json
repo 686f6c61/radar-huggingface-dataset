@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "ddalcu/Qwen-Image-2.1-MLX-Serve-4bit",
+  "slug": "ddalcu-qwen-image-2-1-mlx-serve-4bit",
+  "author": "ddalcu",
+  "url": "https://huggingface.co/ddalcu/Qwen-Image-2.1-MLX-Serve-4bit",
+  "created_at": "2026-09-20T15:53:41.000Z",
+  "updated_at": "2026-09-20T15:54:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "mlx-serve",
+  "languages": [],
+  "tags": [
+    "mlx-serve",
+    "diffusers",
+    "safetensors",
+    "qwen_image21",
+    "mlx",
+    "quantized",
+    "text-to-image",
+    "base_model:Qwen/Qwen-Image-2.1",
+    "base_model:quantized:Qwen/Qwen-Image-2.1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10685343991,
+  "storage_human": "10.7 GB",
+  "base_model": "Qwen/Qwen-Image-2.1",
+  "formats": [
+    "diffusers",
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JAWS (software) - Wikipedia, la enciclopedia libre",
+      "url": "https://es.wikipedia.org/wiki/JAWS_(software)",
+      "snippet": "JAWS (acrónimo de Job Access With Speech) es un software lector de pantalla para ciegos o personas con visión reducida. Es un …"
+    },
+    {
+      "title": "Cómo descargar, instalar y usar JAWS, el software gratuito para ...",
+      "url": "https://www.convertic.gov.co/641/w3-article-204660.html",
+      "snippet": "Feb 22, 2022 · Para instalar JAWS y hacer que un computador sea accesible para personas con discapacidad visual solo hace falta …"
+    },
+    {
+      "title": "JAWS - Freedom Scientific",
+      "url": "https://support.freedomscientific.com/Downloads/JAWS",
+      "snippet": "JAWS® For Windows is a computer screen reader for people who are blind and visually impaired. Download your Free Trial of JAWS …"
+    },
+    {
+      "title": "JAWS – Appsedu - Portal Educatiu",
+      "url": "https://portal.edu.gva.es/appsedu/es/jaws/",
+      "snippet": "JAWS (acrónimo de Job Access With Speech) es un software lector de pantalla para ciegos o personas con visión reducida. Su …"
+    },
+    {
+      "title": "Todo Sobre Jaws: El Lector de Pantalla Preferido por Usuarios con ...",
+      "url": "https://grindok.com/jaws-lector-de-pantalla/",
+      "snippet": "JAWS (Job Access With Speech) es uno de los lectores de pantalla más reconocidos y utilizados a nivel mundial. Este programa fue …"
+    }
+  ]
+}

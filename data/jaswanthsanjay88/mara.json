@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "jaswanthsanjay88/mara",
+  "slug": "jaswanthsanjay88-mara",
+  "author": "jaswanthsanjay88",
+  "url": "https://huggingface.co/jaswanthsanjay88/mara",
+  "created_at": "2026-09-20T16:08:11.000Z",
+  "updated_at": "2026-09-21T06:58:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "agent",
+    "tool-use",
+    "mcp",
+    "function-calling",
+    "on-device",
+    "edge-ai",
+    "web-inference",
+    "hardware-control",
+    "text-classification",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 826240,
+  "parameters_human": "826240",
+  "storage_bytes": 15319229,
+  "storage_human": "15 MB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Discover gists · GitHub",
+      "url": "https://gist.github.com/",
+      "snippet": "GitHub Gist: instantly share code, notes, and snippets."
+    },
+    {
+      "title": "如何评价Openai开放的GPT-6-Astra？ - 知乎",
+      "url": "https://www.zhihu.com/question/2079055468840990698",
+      "snippet": "如何评价Openai开放的GPT-6-Astra？ GPT-6 Astra 在多项基准上达到目前模型的最佳水平，但将向有限的组织推出，并在接下来的几 …"
+    },
+    {
+      "title": "如何评价 OpenAI 最新发布的 GPT-6 Astra，并宣称人类进入 AGI 时代？",
+      "url": "https://www.zhihu.com/question/2079054472190469850",
+      "snippet": "Sep 3, 2026 · 而 GPT-6 则毫不犹豫的找三方网站下载贴图素材，这使得 GPT-6 的产物超越了所有模型，达到照片级。 同样还有项目 …"
+    },
+    {
+      "title": "GitHub - MuiseDestiny/zotero-gpt: GPT Meet Zotero.",
+      "url": "https://github.com/MuiseDestiny/zotero-gpt",
+      "snippet": "GPT Tag Recommendation Automatically create tags for entries: open and copy then open Zotero, this tag will be automatically …"
+    },
+    {
+      "title": "freestylefly/awesome-gpt-image-2: Prompt as Code - GitHub",
+      "url": "https://github.com/freestylefly/awesome-gpt-image-2",
+      "snippet": "Apr 26, 2026 · After GPT-Image2 became widely available, AI image generation moved from \"can it make an image?\" to \"can it make …"
+    }
+  ]
+}

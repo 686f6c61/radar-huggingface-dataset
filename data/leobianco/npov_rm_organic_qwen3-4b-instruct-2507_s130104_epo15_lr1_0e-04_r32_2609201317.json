@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "leobianco/npov_RM_organic_Qwen3-4B-Instruct-2507_S130104_epo15_lr1_0e-04_r32_2609201317",
+  "slug": "leobianco-npov_rm_organic_qwen3-4b-instruct-2507_s130104_epo15_lr1_0e-04_r32_2609201317",
+  "author": "leobianco",
+  "url": "https://huggingface.co/leobianco/npov_RM_organic_Qwen3-4B-Instruct-2507_S130104_epo15_lr1_0e-04_r32_2609201317",
+  "created_at": "2026-09-20T13:18:17.000Z",
+  "updated_at": "2026-09-20T13:22:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen3-4B-Instruct-2507",
+    "lora",
+    "transformers",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 224034356,
+  "storage_human": "224 MB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "New Balance MR00 - RunningForum.it",
+      "url": "https://runningforum.it/viewtopic.php?t=15533",
+      "snippet": "Mar 21, 2012 · Le New Balance MR00, completamente destrutturate, semi-suolate, prive di talloniera, prive di soletta, sono delle …"
+    },
+    {
+      "title": "NB MR00 e tabella misure - RunningForum.it",
+      "url": "https://runningforum.it/viewtopic.php?t=14578",
+      "snippet": "Jan 27, 2012 · NB MR00 e tabella misure Messaggioda nico83040 » 27 gen 2012, 19:44 Vorrei acquistare le NB R00, ma non …"
+    },
+    {
+      "title": "New Balance MR00 - Pagina 13 - RunningForum.it",
+      "url": "https://runningforum.it/viewtopic.php?t=15533&start=120",
+      "snippet": "Apr 8, 2015 · Per chi pensa &quot;minimalista&quot; questa nuova MR00 potrebbe essere una valida possibilità. Caratteristiche …"
+    },
+    {
+      "title": "Drop zero. - RunningForum.it",
+      "url": "https://runningforum.it/viewtopic.php?t=25628",
+      "snippet": "Jun 13, 2013 · uso New Balance MR00 da qualche settimana e devo dire che mi aiutano molto a capire come migliorare lo stile della …"
+    },
+    {
+      "title": "Vendo NB MR00 taglia 44 - 35Euro - RunningForum.it",
+      "url": "https://runningforum.it/viewtopic.php?t=30326",
+      "snippet": "Jan 13, 2014 · Vendo NB MR00 taglia 44 - 35Euro Messaggioda immax » 13 gen 2014, 13:17 Come da titolo vendo un paio di New …"
+    }
+  ]
+}

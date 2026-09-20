@@ -1,0 +1,164 @@
+{
+  "schema": 1,
+  "id": "prathameshkoph/agrisahayak-muril-v3",
+  "slug": "prathameshkoph-agrisahayak-muril-v3",
+  "author": "prathameshkoph",
+  "url": "https://huggingface.co/prathameshkoph/agrisahayak-muril-v3",
+  "created_at": "2026-09-20T17:28:42.000Z",
+  "updated_at": "2026-09-20T17:29:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "bert",
+    "sentence-similarity",
+    "feature-extraction",
+    "generated_from_trainer",
+    "dataset_size:30585",
+    "loss:MultipleNegativesRankingLoss",
+    "arxiv:1908.10084",
+    "arxiv:1807.03748",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 237556224,
+  "parameters_human": "237.6M",
+  "storage_bytes": 950247248,
+  "storage_human": "950 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Information Retrieval",
+      "dataset": "validation",
+      "metric": "Cosine Accuracy@1",
+      "value": 0.7479935794542536
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "validation",
+      "metric": "Cosine Accuracy@3",
+      "value": 0.8951310861423221
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "validation",
+      "metric": "Cosine Accuracy@5",
+      "value": 0.9379347244515784
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "validation",
+      "metric": "Cosine Accuracy@10",
+      "value": 0.9700374531835206
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "validation",
+      "metric": "Cosine Precision@1",
+      "value": 0.7479935794542536
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "validation",
+      "metric": "Cosine Precision@3",
+      "value": 0.2983770287141074
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "validation",
+      "metric": "Cosine Precision@5",
+      "value": 0.1875869448903157
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "validation",
+      "metric": "Cosine Precision@10",
+      "value": 0.09700374531835207
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "validation",
+      "metric": "Cosine Recall@1",
+      "value": 0.7479935794542536
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "validation",
+      "metric": "Cosine Recall@3",
+      "value": 0.8951310861423221
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "validation",
+      "metric": "Cosine Recall@5",
+      "value": 0.9379347244515784
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "validation",
+      "metric": "Cosine Recall@10",
+      "value": 0.9700374531835206
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "validation",
+      "metric": "Cosine Ndcg@10",
+      "value": 0.8637472547245147
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "validation",
+      "metric": "Cosine Mrr@10",
+      "value": 0.829104775493218
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "validation",
+      "metric": "Cosine Map@100",
+      "value": 0.830605106197215
+    }
+  ],
+  "sources": [
+    {
+      "title": "Login",
+      "url": "https://account.mein-aldi.de/login",
+      "snippet": "Continue to create Account Friendly Captcha"
+    },
+    {
+      "title": "ALDI ONLINESHOP",
+      "url": "https://www.aldi-onlineshop.de/my-account/",
+      "snippet": "Hier sollte eine Beschreibung angezeigt werden, diese Seite lässt dies jedoch nicht zu."
+    },
+    {
+      "title": "Gäste Login für Bestellübersicht - ALDI ONLINESHOP",
+      "url": "https://www.aldi-onlineshop.de/guesthistorylogin/",
+      "snippet": "Für den Versand von Artikeln aus dem ALDI ONLINESHOP können für dich je nach Produkt und Lieferart folgende Versandkosten …"
+    },
+    {
+      "title": "meinALDI: Lebensmittel online bestellen | ALDI SÜD",
+      "url": "https://www.aldi-sued.de/meinaldi-lieferservice",
+      "snippet": "Entdecke den neuen Lieferservice meinALDI von ALDI SÜD: Einfach online Lebensmittel bestellen und bequem nach Hause liefern …"
+    },
+    {
+      "title": "ALDI SÜD – Gutes für alle | Lebensmittel günstig kaufen",
+      "url": "https://www.aldi-sued.de/",
+      "snippet": "Wähle deine Filiale aus, um die verfügbaren Produkte zu entdecken. ALDI SÜD - Gutes für alle. Weil Gutes nicht teuer sein muss. …"
+    }
+  ]
+}

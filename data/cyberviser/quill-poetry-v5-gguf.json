@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "cyberviser/quill-poetry-v5-gguf",
+  "slug": "cyberviser-quill-poetry-v5-gguf",
+  "author": "cyberviser",
+  "url": "https://huggingface.co/cyberviser/quill-poetry-v5-gguf",
+  "created_at": "2026-09-20T16:55:20.000Z",
+  "updated_at": "2026-09-20T17:24:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "poetry",
+    "quill",
+    "meter",
+    "repair",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7248023552,
+  "parameters_human": "7.25B",
+  "storage_bytes": 4372815488,
+  "storage_human": "4.4 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=3d1f1091b8916fcc17d0074bb9bf6e57",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "It’s all here with Microsoft account Your Microsoft account connects all your Microsoft apps and services. Sign in to manage your …"
+    },
+    {
+      "title": "Sign in to your account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    },
+    {
+      "title": "Microsoft 365 for Individuals: Subscription for Productivity Apps",
+      "url": "https://www.microsoft.com/en-us/microsoft-365?msockid=3d1f1091b8916fcc17d0074bb9bf6e57",
+      "snippet": "Today, Microsoft 365 includes apps like Word, Excel, PowerPoint, Outlook, and OneNote, along with OneDrive cloud storage, real …"
+    },
+    {
+      "title": "Microsoft - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Microsoft",
+      "snippet": "Its best-known software products are the Windows line of operating systems and the Microsoft Office and Microsoft 365 suite of …"
+    }
+  ]
+}

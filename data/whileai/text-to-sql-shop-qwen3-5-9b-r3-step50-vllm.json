@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "whileai/text-to-sql-shop-qwen3.5-9b-r3-step50-vllm",
+  "slug": "whileai-text-to-sql-shop-qwen3-5-9b-r3-step50-vllm",
+  "author": "whileai",
+  "url": "https://huggingface.co/whileai/text-to-sql-shop-qwen3.5-9b-r3-step50-vllm",
+  "created_at": "2026-09-20T17:46:25.000Z",
+  "updated_at": "2026-09-20T17:46:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "text-to-sql",
+    "grpo",
+    "lora",
+    "zeroproof",
+    "dataset:zero-proof-ai/text-to-sql-shop",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:adapter:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 116429720,
+  "storage_human": "116 MB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "为什么香蕉热量很高却能减肥? - 知乎",
+      "url": "https://www.zhihu.com/question/23496664",
+      "snippet": "准确的给大家科普下香蕉： 香蕉属于热带水果，每百克热量大约93千卡，含蛋白1.4克几乎不含脂肪，碳水化合物22克，膳食纤维1.2 …"
+    },
+    {
+      "title": "酷讯旅游 - 知乎",
+      "url": "https://www.zhihu.com/topic/19581205/hot",
+      "snippet": "酷讯旅游网（ 机票,国际机票,机票查询,机票预订,特价机票）是中国领先的在线旅游媒体和专业的旅游搜索引擎，是全球最大在线旅游 …"
+    },
+    {
+      "title": "通过TripAdvisor预订旅行值得信任吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/408754070",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/question/22860937",
+      "snippet": "上海在校大学生，想做兼职导游，是不是必须考证，要考哪些，该找什么旅游公司比较好？"
+    },
+    {
+      "title": "世界上哪座城市拥有最多博物馆？ - 知乎",
+      "url": "https://www.zhihu.com/question/1903953050940478696",
+      "snippet": "博物馆 1.北京 故宫博物院 共167家，其中一级18家，二级10家，三级10家（TripAdvisor上为308座）。 著名的有：故宫博物院、中国 …"
+    }
+  ]
+}

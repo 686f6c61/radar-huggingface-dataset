@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "AriaAICompany/phish-structural",
+  "slug": "ariaaicompany-phish-structural",
+  "author": "AriaAICompany",
+  "url": "https://huggingface.co/AriaAICompany/phish-structural",
+  "created_at": "2026-09-20T18:01:43.000Z",
+  "updated_at": "2026-09-20T18:02:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "scikit-learn",
+  "languages": [
+    "en",
+    "fa"
+  ],
+  "tags": [
+    "scikit-learn",
+    "joblib",
+    "cybersecurity",
+    "phishing-detection",
+    "text-classification",
+    "multilingual",
+    "en",
+    "fa",
+    "dataset:AriaAICompany/phish-messages",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 569044,
+  "storage_human": "569044 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Das Erste live - jetzt zum kostenlosen Livestream! - ARD Mediathek",
+      "url": "https://www.ardmediathek.de/live/Y3JpZDovL2Rhc2Vyc3RlLmRlL2xpdmUvY2xpcC9hYmNhMDdhMy0zNDc2LTQ4NTEtYjE2Mi1mZGU4ZjY0NmQ0YzQ",
+      "snippet": "Das TV-Programm von heute live im Fernsehen verfolgen! Jetzt zum kostenlosen Stream!"
+    },
+    {
+      "title": "ARD Mediathek: Filme, Serien und Dokus online anschauen",
+      "url": "https://www.ardmediathek.de/",
+      "snippet": "Alle Inhalte der ARD Mediathek im Überblick: Livestreams, Nachrichten, Filme, Serien und spannende Dokus. Hier anschauen!"
+    },
+    {
+      "title": "Das Erste in der Mediathek – jetzt online anschauen",
+      "url": "https://www.ardmediathek.de/daserste",
+      "snippet": "Letzte Folge verpasst?"
+    },
+    {
+      "title": "ARD Mediathek - Sendung verpasst - Programm heute",
+      "url": "https://www.ardmediathek.de/programm/heute",
+      "snippet": "Panoramabilder / Bergwetter Täglich von 6.00 Uhr bis 20.00 Uhr in der ARD Mediathek unter www.br.de/panoramabilder 00:00 Uhr"
+    },
+    {
+      "title": "ARD.de – TV, Radio, Streams, News, Sport und alles zur ARD",
+      "url": "https://www.ard.de/",
+      "snippet": "Die ganze ARD: Fernsehen, Livestreams, Radio, Podcasts, Nachrichten, Sport und Kinderkanal. Zudem Infos über den …"
+    }
+  ]
+}

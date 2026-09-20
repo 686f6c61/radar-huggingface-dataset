@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "cyberviser/quill-poetry-v3-gguf",
+  "slug": "cyberviser-quill-poetry-v3-gguf",
+  "author": "cyberviser",
+  "url": "https://huggingface.co/cyberviser/quill-poetry-v3-gguf",
+  "created_at": "2026-09-20T14:38:35.000Z",
+  "updated_at": "2026-09-20T15:18:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "poetry",
+    "quill",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7248023552,
+  "parameters_human": "7.25B",
+  "storage_bytes": 4372815488,
+  "storage_human": "4.4 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PEN Leiter auftrennen - Elektrikforum",
+      "url": "https://www.elektrikforum.de/threads/pen-leiter-auftrennen.10860/",
+      "snippet": "Sep 6, 2008 · PEN Leiter auftrennen Diskutiere PEN Leiter auftrennen im Forum Installation von Leitungen und Betriebsmitteln im …"
+    },
+    {
+      "title": "Überspannungsschutz PEN-Leiter - Elektrikforum",
+      "url": "https://www.elektrikforum.de/threads/ueberspannungsschutz-pen-leiter.47154/",
+      "snippet": "Nov 17, 2024 · Überspannungsschutz PEN-Leiter Diskutiere Überspannungsschutz PEN-Leiter im Forum Blitzschutz, EMV, Erdung & …"
+    },
+    {
+      "title": "Wo wird PEN-Leiter aufgetrennt? - Elektrikforum",
+      "url": "https://www.elektrikforum.de/threads/wo-wird-pen-leiter-aufgetrennt.5835/",
+      "snippet": "Oct 23, 2006 · Hallo, folgende Frage: Bei meinem Hausanschlußkasten kommen 3 Phasen und ein PEN-Leiter rein. Der PEN-Leiter …"
+    },
+    {
+      "title": "Im Sicherungskasten nullleiter und pe verbunden - Elektrikforum",
+      "url": "https://www.elektrikforum.de/threads/im-sicherungskasten-nullleiter-und-pe-verbunden.41034/",
+      "snippet": "Oct 29, 2022 · Von der letzten Trafostation in deiner Umgebung kommt oft (nicht immer) ein kombinierter Nullleiter PEN. Der …"
+    },
+    {
+      "title": "N und PE zusammen angeschlossen (Altbau) - Elektrikforum",
+      "url": "https://www.elektrikforum.de/threads/n-und-pe-zusammen-angeschlossen-altbau.42685/",
+      "snippet": "Apr 20, 2023 · Da dicke Leiter und Klemmen Gefahr des PEN Bruch reduziert. Alle 2 Aderleitungen ersetzen und mehrere RCD (FI) …"
+    }
+  ]
+}

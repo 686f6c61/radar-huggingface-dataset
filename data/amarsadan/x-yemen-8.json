@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "amarsadan/X-YEMEN-8",
+  "slug": "amarsadan-x-yemen-8",
+  "author": "amarsadan",
+  "url": "https://huggingface.co/amarsadan/X-YEMEN-8",
+  "created_at": "2026-09-20T18:01:40.000Z",
+  "updated_at": "2026-09-20T18:02:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3",
+    "llama.cpp",
+    "llama-cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 8709519104,
+  "storage_human": "8.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "‎Immer noch kein Live-Programm in ARD Mediathek mit IPTV Receiver ...",
+      "url": "https://community.sky.de/conversations/sky-q-sky-q-mini/immer-noch-kein-live-programm-in-ard-mediathek-mit-iptv-receiver/68366883170e725f316d35fc",
+      "snippet": "Jun 13, 2024 · Hallo,ich habe jetzt einen Sky Q IPTV Receiver. Ich würde gerne in der ARD Mediathek das Live-Programm …"
+    },
+    {
+      "title": "Kein ARD Live in Mediathek mit Sky Q - Sky Community",
+      "url": "https://community.sky.de/conversations/sky-q-sky-q-mini/kein-ard-live-in-mediathek-mit-sky-q/683617c1170e725f31ff7b2e",
+      "snippet": "Nov 21, 2020 · Kein ARD Live in Mediathek mit Sky Q ? Hallo Ich möchte über die ARD mediathek App das Programm Live schauen. …"
+    },
+    {
+      "title": "CHIP Forum",
+      "url": "https://forum.chip.de/discussion/1711559/ard-live-stream-qualitaet-einstellen",
+      "snippet": ""
+    },
+    {
+      "title": "CHIP Forum",
+      "url": "https://forum.chip.de/discussion/1897348/amazon-fire-tv-stick-2-generation-kein-live-tv-ard-app",
+      "snippet": ""
+    },
+    {
+      "title": "‎ZDF & ARD Mediathek sowie TVnow - Sky Community",
+      "url": "https://community.sky.de/conversations/sky-q-sky-q-mini/zdf-ard-mediathek-sowie-tvnow-kein-livestream-%C3%BCber-sky-q-verf%C3%BCgbar/68362ea7170e725f318f3d20",
+      "snippet": "Jul 27, 2021 · ZDF & ARD Mediathek sowie TVnow - kein Livestream über Sky Q verfügbar Die ZDFmediathek App zeigt, unter Alle …"
+    }
+  ]
+}

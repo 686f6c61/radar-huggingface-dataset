@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Akshaykumar4321/rl_course_vizdoom_health_gathering_supreme",
+  "slug": "akshaykumar4321-rl_course_vizdoom_health_gathering_supreme",
+  "author": "Akshaykumar4321",
+  "url": "https://huggingface.co/Akshaykumar4321/rl_course_vizdoom_health_gathering_supreme",
+  "created_at": "2026-09-20T17:25:22.000Z",
+  "updated_at": "2026-09-20T17:25:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "sample-factory",
+  "languages": [],
+  "tags": [
+    "sample-factory",
+    "doom_health_gathering_supreme",
+    "vizdoom",
+    "ppo",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "deep-rl-course",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4189463,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Darmowy pasjans online / Free online solitaire",
+      "url": "https://pasjans-online.pl/",
+      "snippet": "Darmowy Pasjans/Solitaire online. Jeśli lubisz gry karciane to ta strona jest dla Ciebie! Zmierz swoje umiejętności w układaniu …"
+    },
+    {
+      "title": "Pasjans | graj online",
+      "url": "https://gra-pasjans.pl/",
+      "snippet": "Pracownicy IT często blokują dostęp do gry w systemie Windows, co zmusza pracowników do szukania pasjansów online. Jak grać …"
+    },
+    {
+      "title": "PASJANS KLASYCZNY ♠️ Graj online 100% za darmo | Pasjans.org.pl",
+      "url": "https://pasjans.org.pl/",
+      "snippet": "Ciesz się klasycznym pasjansem lub wybierz inne warianty pasjansa Klondike na stronie internetowej. Tutaj gracze mogą wybrać …"
+    },
+    {
+      "title": "PASJANSE - Gry karciane. Najlepsze odmiany pasjansa",
+      "url": "https://www.pasjanse.com.pl/",
+      "snippet": "Pasjanse online za darmo. Największa kolekcja klasycznych gier przeniesionych na ekran komputera. Kilkadziesiąt ciekawych gier …"
+    },
+    {
+      "title": "♠ PASJANS KLASYCZNY - graj online za darmo | GryPasjans.pl",
+      "url": "https://www.grypasjans.pl/",
+      "snippet": "Tak jak we wszystkich grach w pasjansa, musisz uważnie monitorować sytuację i wykonywać właściwe ruchy. Uwaga i cierpliwość są …"
+    }
+  ]
+}

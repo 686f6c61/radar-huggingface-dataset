@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "validi2007/Ternary-Bonsai-2-27B-gguf",
+  "slug": "validi2007-ternary-bonsai-2-27b-gguf",
+  "author": "validi2007",
+  "url": "https://huggingface.co/validi2007/Ternary-Bonsai-2-27B-gguf",
+  "created_at": "2026-09-20T19:34:31.000Z",
+  "updated_at": "2026-09-20T19:34:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "ternary",
+    "2-bit",
+    "llama-cpp",
+    "cuda",
+    "metal",
+    "on-device",
+    "hybrid-attention",
+    "prismml",
+    "bonsai",
+    "text-generation",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 68521619616,
+  "storage_human": "68.5 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Canva: Visual Suite for Everyone",
+      "url": "https://www.canva.com/?msockid=38036239656e67e73ce675e364626638",
+      "snippet": "Canva is a free-to-use online graphic design tool. Use it to create social media posts, presentations, posters, videos, logos and more."
+    },
+    {
+      "title": "Canva：任何人都能輕鬆上手的 Visual Suite",
+      "url": "https://www.canva.com/zh_tw/?msockid=38036239656e67e73ce675e364626638",
+      "snippet": "Canva 是免費的線上平面設計工具，你可以使用 Canva 建立社群媒體貼文、簡報、海報、影片、標誌等等。"
+    },
+    {
+      "title": "Canva: Visual Suite cho mọi người",
+      "url": "https://www.canva.com/vi_vn/?msockid=38036239656e67e73ce675e364626638",
+      "snippet": "Canva là công cụ thiết kế đồ họa online miễn phí. Hãy dùng Canva để tạo bài đăng mạng xã hội, bài thuyết trình, poster, video, logo, …"
+    },
+    {
+      "title": "Suite Visual de Canva para todo el mundo | Canva Colombia",
+      "url": "https://www.canva.com/es_co/?msockid=38036239656e67e73ce675e364626638",
+      "snippet": "Canva es una herramienta de diseño gráfico en línea gratis. Puedes usarla para crear posts para redes sociales, presentaciones, …"
+    },
+    {
+      "title": "Canva : Graphisme, IA, Photo & Vidéo | Canva France",
+      "url": "https://www.canva.com/fr_fr/?msockid=38036239656e67e73ce675e364626638",
+      "snippet": "Du design à la retouche photo, l’IA, la vidéo et le travail en équipe, Canva FR est votre partenaire créatif nº 1. CV, logo, affiche…"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "cyberviser/quill-poetry-v6-gguf",
+  "slug": "cyberviser-quill-poetry-v6-gguf",
+  "author": "cyberviser",
+  "url": "https://huggingface.co/cyberviser/quill-poetry-v6-gguf",
+  "created_at": "2026-09-20T18:32:12.000Z",
+  "updated_at": "2026-09-20T19:09:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "poetry",
+    "quill",
+    "love",
+    "lyric",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7248023552,
+  "parameters_human": "7.25B",
+  "storage_bytes": 4372815488,
+  "storage_human": "4.4 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube Help",
+      "url": "https://support.google.com/youtube/?hl=en",
+      "snippet": "Official YouTube Help Center where you can find tips and tutorials on using YouTube and other answers to frequently asked questions."
+    },
+    {
+      "title": "テレビまたはゲーム機の YouTube からログアウトする、またはアカ …",
+      "url": "https://support.google.com/youtube/answer/7612539?hl=ja",
+      "snippet": "テレビやゲーム機の YouTube からログアウトすることも、アカウントを削除することもできます。これらの操作は該当デバイスの …"
+    },
+    {
+      "title": "(Respondido) [Dúvida] - Dúvidas - MuAwaY Forum",
+      "url": "https://forum.muaway.net/topic/116633-respondidod%C3%BAvida/",
+      "snippet": "May 25, 2011 · Dúvida Importante Gostaria de Sabe se Tem como ver o Mapa no Muaway pelo Jogo pra Saber Onde estár. tava …"
+    },
+    {
+      "title": "parabens - Elogios - MuAwaY Forum",
+      "url": "https://forum.muaway.net/topic/121649-parabens/",
+      "snippet": "Jun 10, 2011 · bom estou aki para elogiar 2 pessos : 1ª o Allaan por ter foito isso para mim 2º o Sr_Bug primeiro por ser meu irmão e …"
+    },
+    {
+      "title": "Google Product Forums",
+      "url": "https://productforums.google.com/forum/#!topic/chrome/nqtRRubJJNI",
+      "snippet": ""
+    }
+  ]
+}

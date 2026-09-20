@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "cyberviser/quill-poetry-v6",
+  "slug": "cyberviser-quill-poetry-v6",
+  "author": "cyberviser",
+  "url": "https://huggingface.co/cyberviser/quill-poetry-v6",
+  "created_at": "2026-09-20T18:15:36.000Z",
+  "updated_at": "2026-09-20T18:16:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "poetry",
+    "creative-writing",
+    "lora",
+    "quill",
+    "love",
+    "lyric",
+    "base_model:mistralai/Mistral-7B-Instruct-v0.3",
+    "base_model:adapter:mistralai/Mistral-7B-Instruct-v0.3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 83946192,
+  "storage_human": "84 MB",
+  "base_model": "mistralai/Mistral-7B-Instruct-v0.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Download and install Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95346?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "How to install Chrome Important: Before you download, check if Chrome supports your operating system and you’ve met all other …"
+    },
+    {
+      "title": "Google Chrome をダウンロードしてインストールする",
+      "url": "https://support.google.com/chrome/answer/95346?hl=ja&co=GENIE.Platform%3DDesktop",
+      "snippet": "Chrome を初めて起動する際は、 Google 利用規約 を確認して同意する必要があります。 ヒント: Chrome がパッケージ マネー …"
+    },
+    {
+      "title": "国内普通用户怎样下载到 Chrome？ - 知乎",
+      "url": "https://www.zhihu.com/question/37455757",
+      "snippet": "推荐用户下载浏览器时怎样才能使普通被墙用户下载到 Chrome？当然百度软件什么的绝不考虑。"
+    },
+    {
+      "title": "Chrome一词的本意是什么？ - 知乎",
+      "url": "https://www.zhihu.com/question/26471134",
+      "snippet": "Nov 4, 2014 · Chrome一词的本意是什么？ 阅读《css权威指南》第一章第一段在介绍css和文档之间的关系时提到：文档的定义相当宽 …"
+    },
+    {
+      "title": "Google Chrome herunterladen und installieren",
+      "url": "https://support.google.com/chrome/answer/95346?hl=de&co=GENIE.Platform%3DDesktop",
+      "snippet": "Chrome installieren Wichtig: Bevor Sie Chrome herunterladen, sollten Sie nachsehen, ob Ihr Betriebssystem von Chrome unterstützt …"
+    }
+  ]
+}

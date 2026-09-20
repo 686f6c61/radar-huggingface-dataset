@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "snapwre/hohe-asr-amharic",
+  "slug": "snapwre-hohe-asr-amharic",
+  "author": "snapwre",
+  "url": "https://huggingface.co/snapwre/hohe-asr-amharic",
+  "created_at": "2026-09-20T19:39:25.000Z",
+  "updated_at": "2026-09-21T12:55:29.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "am"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "wav2vec2-bert",
+    "automatic-speech-recognition",
+    "amharic",
+    "ethiopia",
+    "speech-recognition",
+    "ctc",
+    "am",
+    "base_model:badrex/Ethio-ASR-multilingual-600M",
+    "base_model:finetune:badrex/Ethio-ASR-multilingual-600M",
+    "license:cc-by-4.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 606104800,
+  "parameters_human": "606.1M",
+  "storage_bytes": 2962821929,
+  "storage_human": "3.0 GB",
+  "base_model": "badrex/Ethio-ASR-multilingual-600M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "FLEURS am_et (test)",
+      "metric": "WER (with the 5-gram)",
+      "value": 0.1604
+    },
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "FLEURS am_et (test)",
+      "metric": "CER (with the 5-gram)",
+      "value": 0.0599
+    }
+  ],
+  "sources": [
+    {
+      "title": "Perkembangan Usia Dewasa Awal: Fisik, Kognitif & Psikososial",
+      "url": "https://serupa.id/perkembangan-usia-dewasa-awal-fisik-kognitif-psikososial/",
+      "snippet": "Jul 30, 2022 · Dewasa awal merupakan masa peralihan dari masa remaja menuju masa dewasa. Peralihan dari ketergantungan ke …"
+    },
+    {
+      "title": "PERKEMBANGAN MASA DEWASA AWAL",
+      "url": "https://journal.universitaspahlawan.ac.id/index.php/jrpp/article/download/30140/20832/101238",
+      "snippet": "a. Masa dewasa awal dimulai antara umur 16 tahun sampai 40 tahun. Dalam rentang kehidupan manusia, masa dewasa memegang …"
+    },
+    {
+      "title": "Konsep Perkembangan Psikologis Dewasa Awal",
+      "url": "https://sumberajar.com/kamus/konsep-perkembangan-psikologis-dewasa-awal",
+      "snippet": "Jan 7, 2026 · Perkembangan psikologis dewasa awal adalah proses perubahan dan pematangan aspek emosional, sosial, identitas, …"
+    },
+    {
+      "title": "Karakteristik Perkembangan Masa Dewasa Awal Developmental ...",
+      "url": "https://journals.ubmg.ac.id/index.php/JEaC/article/download/1139/423",
+      "snippet": "Tujuan dari artikel ini adalah untuk menambah pengetahuan tentang bagaimana setiap individu mampu menghadapi dan memasuki …"
+    },
+    {
+      "title": "Makalah Psikologi Perkembangan Masa Dewasa Awal (PSIKO 101)",
+      "url": "https://www.studocu.id/id/document/universitas-islam-lamongan/article/makalah-psikologi-perkembangan-masa-dewasa-awal-psiko-101/126804150",
+      "snippet": "Perkembangan fisik merupakan dasar bagi perkembangannya aspek-aspek lain dalam diri setiap individu, termasuk usia dewasa …"
+    }
+  ]
+}

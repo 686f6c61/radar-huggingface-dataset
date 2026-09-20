@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "sudoingx/Ternary-Bonsai-2-27B-PTQ1_0-MTP-GGUF",
+  "slug": "sudoingx-ternary-bonsai-2-27b-ptq1_0-mtp-gguf",
+  "author": "sudoingx",
+  "url": "https://huggingface.co/sudoingx/Ternary-Bonsai-2-27B-PTQ1_0-MTP-GGUF",
+  "created_at": "2026-09-20T16:02:10.000Z",
+  "updated_at": "2026-09-21T14:53:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "qwen3_5",
+    "ternary",
+    "ptq1_0",
+    "mtp",
+    "speculative-decoding",
+    "bonsai",
+    "rtx-3060",
+    "text-generation",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 14,
+  "downloads_30d": 392,
+  "trending_score": 14,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 14341343421,
+  "storage_human": "14.3 GB",
+  "base_model": "prism-ml/Ternary-Bonsai-2-27B-gguf, Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amazon Echo kein Ton mehr / Befehle werden aber entgegengenommen",
+      "url": "https://www.alefo.de/forum/amazon-echo-kein-ton-mehr-befehle-werden-aber-entgegengenommen-4121",
+      "snippet": "Nov 13, 2017 · Alexa spricht nicht mehr und es kommt auch sonst kein Ton mehr heraus. Befehle werden jedoch noch …"
+    },
+    {
+      "title": "Alexa排名怎么来的？ - 知乎",
+      "url": "https://www.zhihu.com/question/19608394",
+      "snippet": "虽然 Alexa 使用来自 25,000 多个不同浏览器插件的信息来计算排名，但它们主要计算 Alexa 工具栏 用户。 从本质上讲，使用工具栏 …"
+    },
+    {
+      "title": "Spotify Family (2 Accounts an Alexa nutzen) - alefo",
+      "url": "https://www.alefo.de/forum/spotify-family-2-accounts-an-alexa-nutzen-1508",
+      "snippet": "Hallöchen, folgendes: Wir besitzen Spotify Premium Family. Damit können ja mehrere Nutzer (mit verschiedenen Accounts) Spotify …"
+    },
+    {
+      "title": "硕士生如何写一份好的简历? - 知乎",
+      "url": "https://www.zhihu.com/question/23920280",
+      "snippet": ">> 想要这份简历模板的，直接点这里~ 优秀的硕士生简历，都内容易懂、重点突出、排版简洁，同时与岗位的匹配度高。 1、内容易懂 …"
+    },
+    {
+      "title": "Amazon Alexa – Hinzufügen und Nutzen von Standorten – So geht’s",
+      "url": "https://www.alefo.de/forum/amazon-alexa-hinzufuegen-und-nutzen-von-standorten-so-geht-s-7384",
+      "snippet": "Jul 11, 2019 · Amazon Alexa – Hinzufügen und Nutzen von Standorten – So geht’s In der App von Amazon Alexa ist es unter den …"
+    }
+  ]
+}

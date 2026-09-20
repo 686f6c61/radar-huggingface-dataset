@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "onnx-community/kev-0.6b-ONNX",
+  "slug": "onnx-community-kev-0-6b-onnx",
+  "author": "onnx-community",
+  "url": "https://huggingface.co/onnx-community/kev-0.6b-ONNX",
+  "created_at": "2026-09-20T19:01:17.000Z",
+  "updated_at": "2026-09-20T19:03:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "qwen3",
+    "feature-extraction",
+    "kev",
+    "text-classification",
+    "base_model:Qwen/Qwen3-0.6B-Base",
+    "base_model:quantized:Qwen/Qwen3-0.6B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 714764713,
+  "storage_human": "715 MB",
+  "base_model": "Qwen/Qwen3-0.6B-Base",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Word中页码变成 {PAGE \\* MERGEFORMAT}解决方法-百度经验",
+      "url": "https://jingyan.baidu.com/article/4f7d5712d740161a201927b6.html",
+      "snippet": "Jun 2, 2016 · Word中页码变成 {PAGE \\* MERGEFORMAT}解决方法,在Word文件中的页码变成了 {PAGE\\*MERGEFORMAT}，出现 …"
+    },
+    {
+      "title": "在 Word 文档中添加下划线（横线）的几种方法-百度经验",
+      "url": "https://jingyan.baidu.com/article/676629972cdae915d41b8418.html",
+      "snippet": "Feb 19, 2020 · 在 Word 文档中添加下划线（横线）的几种方法,我们在编辑Word文档时，遇到需要填写的地方，往往需要加一条横线 …"
+    },
+    {
+      "title": "word尾注出现空行，选不中，也去不掉，如何去掉？ - 知乎",
+      "url": "https://www.zhihu.com/question/24227293",
+      "snippet": "这里摘录一下删除【脚注】空行的方法，【尾注】版本比葫芦画瓢即可： 统一修改脚注的格式（类似PowerPoint的模板），Word很奇 …"
+    },
+    {
+      "title": "如何在电脑上安装免费的access？ - 知乎",
+      "url": "https://www.zhihu.com/question/329637605",
+      "snippet": "access和Word，ppt一样都是office的一部分，我们要想安装access就必须先下载完整的office2010.然后进行安装。 打开安装程序后， …"
+    },
+    {
+      "title": "在word中如何输入实心五角星（★） - 百度经验",
+      "url": "https://jingyan.baidu.com/article/e4d08ffdc3a0594ed2f60dba.html",
+      "snippet": "Jun 16, 2023 · 在word中如何输入实心五角星（★）,小编将介绍在word中输入实心五角星（★）的两种常用方法。"
+    }
+  ]
+}

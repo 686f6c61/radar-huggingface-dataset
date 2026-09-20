@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "PureOne/AUREOLE-R-v3",
+  "slug": "pureone-aureole-r-v3",
+  "author": "PureOne",
+  "url": "https://huggingface.co/PureOne/AUREOLE-R-v3",
+  "created_at": "2026-09-20T15:57:21.000Z",
+  "updated_at": "2026-09-20T15:57:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "neural-rendering",
+    "computer-graphics",
+    "world-model",
+    "persistent-memory",
+    "ray-tracing",
+    "monte-carlo-rendering",
+    "control-variates",
+    "visibility-caching",
+    "active-sampling",
+    "uncertainty",
+    "reproducible-research",
+    "numpy",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5201006,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Der Tagesspiegel - eurotopics.net",
+      "url": "https://www.eurotopics.net/de/148489/der-tagesspiegel",
+      "snippet": "Feb 4, 2026 · Der Tagesspiegel ist nach eigenen Angaben die meistzitierte Hauptstadtzeitung, wird aber bei den auswärtigen …"
+    },
+    {
+      "title": "Der Tagesspiegel - eurotopics.net",
+      "url": "https://www.eurotopics.net/ru/148489/der-tagesspiegel",
+      "snippet": "Feb 4, 2026 · Согласно заявлению редакции, ежедневная газета Der Tagesspiegel является самым цитируемым столичным …"
+    },
+    {
+      "title": "Der Tagesspiegel - eurotopics.net",
+      "url": "https://www.eurotopics.net/fr/148489/der-tagesspiegel",
+      "snippet": "Feb 4, 2026 · Tagesspiegel se targue d'être le quotidien berlinois le plus cité, mais le nombre des abonnements hors capitale dément …"
+    },
+    {
+      "title": "Der tägliche Blick in Europas Presse | eurotopics.net",
+      "url": "https://www.eurotopics.net/de/",
+      "snippet": "Starke Meinungen aus Leitmedien in 32 Ländern Europas auf Deutsch, Englisch, Französisch, Russisch und Türkisch."
+    },
+    {
+      "title": "Der Tagesspiegel - eurotopics.net",
+      "url": "https://www.eurotopics.net/en/148489/der-tagesspiegel",
+      "snippet": "Feb 4, 2026 · Der Tagesspiegel describes itself as the capital's most quoted newspaper, but current subscription numbers reveal that …"
+    }
+  ]
+}

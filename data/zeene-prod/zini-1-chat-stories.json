@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "zeene-prod/ZINI-1-CHAT-STORIES",
+  "slug": "zeene-prod-zini-1-chat-stories",
+  "author": "zeene-prod",
+  "url": "https://huggingface.co/zeene-prod/ZINI-1-CHAT-STORIES",
+  "created_at": "2026-09-20T17:31:07.000Z",
+  "updated_at": "2026-09-20T17:31:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "chat",
+    "storytelling",
+    "creative-writing",
+    "conversation",
+    "conversational",
+    "en",
+    "dataset:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 988097824,
+  "storage_human": "988 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nervous System: What It Is, Parts, Function & Disorders",
+      "url": "https://my.clevelandclinic.org/health/body/21202-nervous-system",
+      "snippet": "Nov 16, 2023 · Your nervous system is made up of your brain, spinal cord and nerves. It carries messages between your brain and …"
+    },
+    {
+      "title": "Nervous system - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nervous_system",
+      "snippet": "The size of the nervous system ranges from a few hundred cells in the simplest worms, to around 300 billion cells in African …"
+    },
+    {
+      "title": "Nervous System - Science Notes and Projects",
+      "url": "https://sciencenotes.org/nervous-system/",
+      "snippet": "Sep 17, 2025 · The nervous system is the complex network of specialized cells and tissues that coordinate the body’s activities by …"
+    },
+    {
+      "title": "Nervous system | Definition, Function, Structure, & Facts | Britannica",
+      "url": "https://www.britannica.com/science/nervous-system",
+      "snippet": "Sep 12, 2026 · A nervous system can be defined as an organized group of cells, called neurons, specialized for the conduction of an …"
+    },
+    {
+      "title": "Human nervous system | Description, Development, Anatomy,",
+      "url": "https://www.britannica.com/science/human-nervous-system",
+      "snippet": "The human nervous system is the series of cells and nerve tracts that conduct stimuli from sensory receptors in the periphery to …"
+    }
+  ]
+}

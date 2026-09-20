@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Abhiabhi12/pass-pandareachdense-v3",
+  "slug": "abhiabhi12-pass-pandareachdense-v3",
+  "author": "Abhiabhi12",
+  "url": "https://huggingface.co/Abhiabhi12/pass-pandareachdense-v3",
+  "created_at": "2026-09-20T16:09:34.000Z",
+  "updated_at": "2026-09-20T16:09:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "PandaReachDense-v3",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "a2c",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Backend Development - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/blogs/backend-development/",
+      "snippet": "4 days ago · Backend development handles the server-side logic, database, and core functionality of web applications. It ensures …"
+    },
+    {
+      "title": "60 Days of Backend Development: A Complete Guide For Beginners",
+      "url": "https://www.geeksforgeeks.org/blogs/60-days-of-backend-development/",
+      "snippet": "Aug 6, 2025 · Through this 60-day guide of backend development focusing on Java Spring Boot, Python Django, PHP Laravel, or …"
+    },
+    {
+      "title": "Backend Developer Roadmap: What is Backend Development",
+      "url": "https://roadmap.sh/backend",
+      "snippet": "What is Backend Development? Backend development refers to the server-side aspect of web development, focusing on creating …"
+    },
+    {
+      "title": "Backend Development Roadmap - algomaster.io",
+      "url": "https://algomaster.io/roadmaps/backend",
+      "snippet": "Backend Development Roadmap What is Backend Development Networking Basics (HTTP, TCP/IP, DNS) Environment Setup …"
+    },
+    {
+      "title": "Backend Development - Complete Tutorial",
+      "url": "https://codecrown.in/tutorials/backend",
+      "snippet": "Learn backend development from basics to advanced topics including servers, databases, APIs, authentication, and deployment."
+    }
+  ]
+}

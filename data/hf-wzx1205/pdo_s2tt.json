@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "hf-wzx1205/PDO_S2TT",
+  "slug": "hf-wzx1205-pdo_s2tt",
+  "author": "hf-wzx1205",
+  "url": "https://huggingface.co/hf-wzx1205/PDO_S2TT",
+  "created_at": "2026-09-20T14:33:07.000Z",
+  "updated_at": "2026-09-20T18:38:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "en",
+    "zh",
+    "de",
+    "es",
+    "ja",
+    "fr"
+  ],
+  "tags": [
+    "pytorch",
+    "speech-translation",
+    "simultaneous-translation",
+    "streaming",
+    "revision",
+    "s2tt",
+    "en",
+    "zh",
+    "de",
+    "es",
+    "ja",
+    "fr",
+    "base_model:Qwen/Qwen3-ASR-1.7B",
+    "base_model:finetune:Qwen/Qwen3-ASR-1.7B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 292125654,
+  "storage_human": "292 MB",
+  "base_model": "Qwen/Qwen3-ASR-1.7B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Haute fréquence — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Haute_fr%C3%A9quence",
+      "snippet": "En électronique, les signaux de haute fréquence dits « HF » ou « radiofréquence » exploitent une fréquence supérieure à …"
+    },
+    {
+      "title": "HF — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/HF",
+      "snippet": "Symbole HF est la formule du fluorure d'hydrogène ou de l' acide fluorhydrique. Hf est le symbole de l' hafnium, un élément chimique."
+    },
+    {
+      "title": "Hugging Face – The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Walking Holidays | Trekking & Rambling Trips - HF Holidays",
+      "url": "https://www.hfholidays.co.uk/",
+      "snippet": "3 days ago · Experienced volunteer HF Leaders guide every walk at our UK country houses, offering up to three daily options. Making …"
+    },
+    {
+      "title": "HF Outlet : Prêt à porter féminin, vêtements femme pas cher et tendance",
+      "url": "https://hfoutlet.com/",
+      "snippet": "HF Outlet les vêtements pour vous Découvrez notre sélection de prêt-à-porter féminin, des vêtements tendance et à prix abordables …"
+    }
+  ]
+}

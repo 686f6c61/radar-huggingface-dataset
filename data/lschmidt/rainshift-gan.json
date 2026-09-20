@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "lschmidt/rainshift-gan",
+  "slug": "lschmidt-rainshift-gan",
+  "author": "lschmidt",
+  "url": "https://huggingface.co/lschmidt/rainshift-gan",
+  "created_at": "2026-09-20T14:00:02.000Z",
+  "updated_at": "2026-09-20T14:07:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-image",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "precipitation",
+    "downscaling",
+    "climate",
+    "image-to-image",
+    "dataset:RainShift/rainshift",
+    "arxiv:2507.04930",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16035588,
+  "storage_human": "16 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Meine AOK | Willkommen",
+      "url": "https://meine.aok.de/",
+      "snippet": "\"Das Onlineportal \"\"Meine AOK\"\" bietet Versicherten der AOK Zugang zu persönlichen Daten, Gesundheitsleistungen und Services.\""
+    },
+    {
+      "title": "Mein AOK Gesundheitspartnerservice Portal",
+      "url": "https://gp.meine.aok.de/",
+      "snippet": "Willkommen beim AOK Gesundheitspartnerservice für Leistungserbringer Mit \"Mein AOK Gesundheitspartnerservice für …"
+    },
+    {
+      "title": "Hilfe | Meine AOK",
+      "url": "https://meine.aok.de/public/hilfe",
+      "snippet": "Wie sicher ist „Meine AOK“? Alle gespeicherten Daten befinden sich in einem geschützten Bereich, der nur mit Ihren persönlichen …"
+    },
+    {
+      "title": "Meine AOK | Willkommen",
+      "url": "https://login.meine.aok.de/",
+      "snippet": "Loggen Sie sich in Ihr Konto bei Meine AOK ein, um auf personalisierte Gesundheitsservices und Informationen zuzugreifen."
+    },
+    {
+      "title": "Meine AOK | Willkommen",
+      "url": "https://meine.aok.de/client/postbox/inbox",
+      "snippet": "\"Das Onlineportal \"\"Meine AOK\"\" ermöglicht Ihnen rund um die Uhr Zugang zu Ihrer AOK.\""
+    }
+  ]
+}

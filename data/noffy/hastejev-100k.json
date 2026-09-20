@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "noffy/hastejev-100k",
+  "slug": "noffy-hastejev-100k",
+  "author": "noffy",
+  "url": "https://huggingface.co/noffy/hastejev-100k",
+  "created_at": "2026-09-20T13:53:36.000Z",
+  "updated_at": "2026-09-20T13:53:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "safetensors",
+    "hastejev",
+    "jev",
+    "hastejev-100k",
+    "decision-engine",
+    "system-1",
+    "pica",
+    "zero-bias",
+    "low-latency",
+    "non-generative",
+    "autonomous-agents",
+    "browser-control",
+    "web-automation",
+    "agentic-ai",
+    "fast-inference",
+    "decision-making",
+    "calibration",
+    "quantized",
+    "int8",
+    "int4",
+    "fp16",
+    "feature-extraction",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1405385,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Recherche – Microsoft Bing",
+      "url": "https://www.bing.com/?setlang=fr-fr",
+      "snippet": "Effectuez des recherches avec Microsoft Bing et utilisez la puissance de l’IA pour rechercher des informations, explorer des pages …"
+    },
+    {
+      "title": "Microsoft Edge Add-ons - bing+related+search+version",
+      "url": "https://microsoftedge.microsoft.com/addons/search/bing+related+search+version",
+      "snippet": "Choose between the image search engines Google, Bing, Yandex, and TinEye. Easily toggle search results between Google and …"
+    },
+    {
+      "title": "How to See All Bing Related Searches on Any Device",
+      "url": "https://rottenwifi.com/how-to-see-all-bing-related-searches/",
+      "snippet": "Jul 1, 2026 · Learn where Bing related searches appear, how to expand them, and what to do when suggestions do not show on …"
+    },
+    {
+      "title": "Bing::Search::Source::RelatedSearch - Related searches - metacpan.org",
+      "url": "https://metacpan.org/pod/Bing::Search::Source::RelatedSearch",
+      "snippet": "Given a proper query, this source returns a list of related searches. METHODS Market, Version, Options, setOptions See …"
+    },
+    {
+      "title": "How To See All Bing Related Searches - RottenWifi.com Blog",
+      "url": "https://blog.rottenwifi.com/how-to-see-all-bing-related-searches/",
+      "snippet": "Jul 2, 2026 · Microsoft retired the old Bing Search APIs on August 11, 2025, so tutorials that recommend using the Bing Web Search …"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "qing-yao/ppt-pythia-1b-appendix-permuted-seed3408-stage2",
+  "slug": "qing-yao-ppt-pythia-1b-appendix-permuted-seed3408-stage2",
+  "author": "qing-yao",
+  "url": "https://huggingface.co/qing-yao/ppt-pythia-1b-appendix-permuted-seed3408-stage2",
+  "created_at": "2026-09-20T17:49:25.000Z",
+  "updated_at": "2026-09-21T08:25:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_neox",
+    "text-generation",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1011781632,
+  "parameters_human": "1.01B",
+  "storage_bytes": 26306629409,
+  "storage_human": "26.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Choose a natural number between 1 and 100, inclusive. What is the ...",
+      "url": "https://brainly.com/question/34298200",
+      "snippet": "The probability that a number chosen between 1 and 100, inclusive, is not a multiple of 5 can be calculated by finding the total …"
+    },
+    {
+      "title": "[Solved] Find the number of numbers from 1 to 100 which are not divis",
+      "url": "https://testbook.com/question-answer/find-the-number-of-numbers-from-1-to-100-which-are--5c261c56fdb8bb04c3593c32",
+      "snippet": "Sep 1, 2026 · Find the number of numbers from 1 to 100 which are not divisible of any one of 2, 3, 5, and 7. We know that there are …"
+    },
+    {
+      "title": "How Many Integers from 1 to 100 are not Divisible by 2, 3, and 5?",
+      "url": "https://collegedunia.com/articles/e-110-how-many-integers-from-1-to-100-are-not-divisible-by-2-3-and-5-gmat-problem-solving",
+      "snippet": "“How many integers from 1 to 100 are not divisible by 2, 3, and 5?”- is a topic of the GMAT Quantitative reasoning section of GMAT. …"
+    },
+    {
+      "title": "General technique to find largest number that can't be written as a …",
+      "url": "https://math.stackexchange.com/questions/551520/general-technique-to-find-largest-number-that-cant-be-written-as-a-sum-of-multi",
+      "snippet": "${n}_{i}$ is 1, as otherwise there is no upper bound on numbers that cannot be represented. Solving this, the Frobenius coin problem, …"
+    },
+    {
+      "title": "BYJU'S Online learning Programs For K3, K10, K12, NEET, JEE, UPSC ...",
+      "url": "https://byjus.com/maths/odd-numbers/",
+      "snippet": "The examples of odd numbers are 1, 3, 5, 7, etc. Odd numbers are just the opposite concept of even numbers. The most simple way …"
+    }
+  ]
+}

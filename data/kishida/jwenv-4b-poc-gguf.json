@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "kishida/jwenv-4b-poc-gguf",
+  "slug": "kishida-jwenv-4b-poc-gguf",
+  "author": "kishida",
+  "url": "https://huggingface.co/kishida/jwenv-4b-poc-gguf",
+  "created_at": "2026-09-20T12:39:47.000Z",
+  "updated_at": "2026-09-20T15:01:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "base_model:Qwen/Qwen3-4B-Instruct-2507",
+    "base_model:quantized:Qwen/Qwen3-4B-Instruct-2507",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 6777682240,
+  "storage_human": "6.8 GB",
+  "base_model": "Qwen/Qwen3-4B-Instruct-2507",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Los Juegos | XIII Juegos Suramericanos - Santa Fe 2026",
+      "url": "https://santafe2026.ar/es/los-juegos",
+      "snippet": "Por primera vez, los Juegos Suramericanos se desarrollarán en tres ciudades con un nuevo proyecto organizador, con …"
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.com.ar/mapfiles/home3.html",
+      "snippet": "Explore the world with Google Maps, featuring Street View, 3D mapping, turn-by-turn directions, and indoor maps across all your …"
+    },
+    {
+      "title": "Banco Santander Rio en Rosario: Santa Fe 1260 - Sucursales 24",
+      "url": "https://www.sucursales24.com.ar/rosario/banco-santander-rio/santa-fe-1260-9/",
+      "snippet": "Horarios Teléfonos ☎ y Toda la Info de la sucursal de Banco Santander Rio en la calle Santa Fe 1260 de Rosario."
+    },
+    {
+      "title": "Sucursal Banco Santander en Rosario | Santa Fe 1260",
+      "url": "https://santander.banklocationmaps.com/es/branch/936154-santander-branch-santa-fe-1260",
+      "snippet": "Ubicación de la sucursal de Banco Santander en SANTA FE 1260, 2000 con dirección, horario de apertura, número de teléfono, …"
+    },
+    {
+      "title": "Sucursal de Santander Rio en Santa Fé 1260 - Rosario",
+      "url": "https://www.bankimistargentina.com/santander-rio/rosario-santa-fe-santa-fe-3758/",
+      "snippet": "Información de contacto de la sucursal de Santander Rio en Santa Fé 1260 - Rosario"
+    }
+  ]
+}

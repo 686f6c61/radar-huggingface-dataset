@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Abhiabhi12/pass-pandareachdense",
+  "slug": "abhiabhi12-pass-pandareachdense",
+  "author": "Abhiabhi12",
+  "url": "https://huggingface.co/Abhiabhi12/pass-pandareachdense",
+  "created_at": "2026-09-20T16:04:29.000Z",
+  "updated_at": "2026-09-20T16:07:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "PandaReachDense",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "a2c",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mahjong Spielen",
+      "url": "https://www.mahjongkostenlos.de/mahjong-spielen",
+      "snippet": "Was sagt Dein Horoskop? Finde es bei dieser Mahjong Version.."
+    },
+    {
+      "title": "Mahjong Kostenlos - MahjongKostenlos.de",
+      "url": "https://www.mahjongkostenlos.de/",
+      "snippet": "Willkommen bei MahjongKostenlos.de, die Webseite für Fans der Mahjong Spiele. Wir haben viele Spiele für Dich gesammelt und …"
+    },
+    {
+      "title": "Mahjong Titans - MahjongKostenlos.de",
+      "url": "https://www.mahjongkostenlos.de/spielen/mahjong-titans",
+      "snippet": "Name: Mahjong Titans Gespielt: Du bist Spieler Nummer 15007855 Anleitungen: Dies ist die klassische Version von Mahjong Titans. …"
+    },
+    {
+      "title": "Mahjong Klassisch",
+      "url": "https://www.mahjongkostenlos.de/spielen/mahjong-klassisch",
+      "snippet": "Name: Mahjong Klassisch Gespielt: Du bist Spieler Nummer 7439169 Anleitungen: Diese klassische Version des Spiels besteht …"
+    },
+    {
+      "title": "Mahjong Relax",
+      "url": "https://www.mahjongkostenlos.de/spielen/mahjong-relax",
+      "snippet": "Name: Mahjong Relax Gespielt: Du bist Spieler Nummer 12562310 Anleitungen: Dies ist eine besonders entspannte Version von …"
+    }
+  ]
+}

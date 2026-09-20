@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "lschmidt/rainshift-resnet",
+  "slug": "lschmidt-rainshift-resnet",
+  "author": "lschmidt",
+  "url": "https://huggingface.co/lschmidt/rainshift-resnet",
+  "created_at": "2026-09-20T14:00:08.000Z",
+  "updated_at": "2026-09-20T14:05:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-image",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "precipitation",
+    "downscaling",
+    "climate",
+    "image-to-image",
+    "dataset:RainShift/rainshift",
+    "arxiv:2507.04930",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 63062452,
+  "storage_human": "63 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bing Homepage Quiz – Today's Bing Daily Trivia & Featured Image Quiz",
+      "url": "https://bingquiz.com/bing-homepage-quiz/",
+      "snippet": "1 day ago · Play today's Bing Homepage Quiz — Celebrity & Pop Culture Trivia edition — and test your knowledge with the same …"
+    },
+    {
+      "title": "Bing Homepage Quiz - Today's 10 Questions, Daily Homepage Bing Quizzes",
+      "url": "https://bing.weeklyquiz.net/bing-homepage-quiz/",
+      "snippet": "15 hours ago · Did you know that the Bing Homepage Quiz is a daily trivia game with 15 questions based on the Bing homepage …"
+    },
+    {
+      "title": "Bing Homepage Quiz - Play Today’s 10 Daily Homepage Bing Quizzes",
+      "url": "https://bingquizzes.com/bing-homepage-quiz-today/",
+      "snippet": "15 hours ago · Play today’s Bing Homepage Quiz and challenge yourself with 10 fun questions on history, science, geography, pop …"
+    },
+    {
+      "title": "Heutiges Bing-Startseiten-Quiz – 10 Quizfragen – Bing-Quiz",
+      "url": "https://bingehomepagequiz.com/de/",
+      "snippet": "Jun 30, 2026 · Suchen Sie nach einer unterhaltsamen Möglichkeit, Ihr Wissen täglich zu testen? Das Bing-Startseiten quiz! bietet …"
+    },
+    {
+      "title": "Bing Homepage Quiz - Play Today’s Bing Quiz & Bing News Quiz",
+      "url": "https://weeklyquiz.net/bing-homepage-quiz/",
+      "snippet": "Bing Homepage Quiz - Daily Trivia The Bing Homepage Quiz is a fun daily trivia challenge inspired by the fascinating images, stories, …"
+    }
+  ]
+}

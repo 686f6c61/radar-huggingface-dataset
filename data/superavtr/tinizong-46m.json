@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "superAVTR/tinizong-46M",
+  "slug": "superavtr-tinizong-46m",
+  "author": "superAVTR",
+  "url": "https://huggingface.co/superAVTR/tinizong-46M",
+  "created_at": "2026-09-20T18:08:02.000Z",
+  "updated_at": "2026-09-20T19:34:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "causal-lm",
+    "experimental",
+    "pytorch",
+    "en",
+    "dataset:superAVTR/wikipedia_en_512_for_pretraining",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 45986296,
+  "parameters_human": "46.0M",
+  "storage_bytes": 184447827,
+  "storage_human": "184 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Oficiální web Lenovo Česká republika | Notebooky, tablety ...",
+      "url": "https://www.lenovo.com/cz/cs/?msockid=1be271ba7981678e1538666078af66ae",
+      "snippet": "Navštivte oficiální stránky společnosti Lenovo a najděte ty nejlepší notebooky, tablety, ultrabooky, stolní počítače, chytrá zařízení, …"
+    },
+    {
+      "title": "Lenovo Support | Drivers, Troubleshooting, Warranty, Repair | Lenovo ...",
+      "url": "https://support.lenovo.com/",
+      "snippet": "Find technical support for your Lenovo Products - driver updates, troubleshooting, warranty, repair, system updates, how-to articles, …"
+    },
+    {
+      "title": "Lenovo - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Lenovo",
+      "snippet": "Lenovo is also part of a joint venture with NEC, named Lenovo NEC Holdings, that produces personal computers for the Japanese …"
+    },
+    {
+      "title": "Najděte notebooky, netbooky, tablety, stolní počítače | Lenovo Czech",
+      "url": "https://www.lenovo.com/cz/cs/pc/?msockid=1be271ba7981678e1538666078af66ae",
+      "snippet": "Objevte Lenovo. Najděte nejnovější notebooky, tablety, stolní počítače, pracovní stanice a zařízení pro všechny obchodní, domácí, …"
+    },
+    {
+      "title": "Podpora Lenovo | Ovladače, řešení problémů, záruka, opravy ...",
+      "url": "https://support.lenovo.com/cz/cs",
+      "snippet": "Získejte technickou podporu pro své produkty Lenovo – aktualizace ovladačů, řešení problémů, záruka, opravy, aktualizace systému, …"
+    }
+  ]
+}

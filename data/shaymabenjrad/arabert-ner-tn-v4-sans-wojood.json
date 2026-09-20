@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ShaymaBenJrad/arabert-ner-tn-v4-sans-wojood",
+  "slug": "shaymabenjrad-arabert-ner-tn-v4-sans-wojood",
+  "author": "ShaymaBenJrad",
+  "url": "https://huggingface.co/ShaymaBenJrad/arabert-ner-tn-v4-sans-wojood",
+  "created_at": "2026-09-20T13:09:31.000Z",
+  "updated_at": "2026-09-20T13:10:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 134611980,
+  "parameters_human": "134.6M",
+  "storage_bytes": 538471280,
+  "storage_human": "538 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kranosgr - Eλεύθερη ενημέρωση σε θέματα ...",
+      "url": "https://www.kranosgr.com/",
+      "snippet": "Αναζητήστε αξιόπιστη, ελεύθερη και ενημερωτική πληροφόρηση σχετικά με θέματα άμυνας και διπλωματίας."
+    },
+    {
+      "title": "Kranosgr - Ετικέτα: ΜΕΤΑΘΕΣΕΙΣ",
+      "url": "https://www.kranosgr.com/tag/%ce%bc%ce%b5%cf%84%ce%b1%ce%b8%ce%b5%cf%83%ce%b5%ce%b9%cf%83/",
+      "snippet": "28 Απριλίου, 2026 12:29 μμ ΣΤΡΑΤΟΣ ΞΗΡΑΣ"
+    },
+    {
+      "title": "Kranosgr - ΕΛ.ΑΣ: Όλα τα ονόματα των ...",
+      "url": "https://www.kranosgr.com/%ce%b5%ce%bb-%ce%b1%cf%83-%cf%8c%ce%bb%ce%b1-%cf%84%ce%b1-%ce%bf%ce%bd%cf%8c%ce%bc%ce%b1%cf%84%ce%b1-%cf%84%cf%89%ce%bd-%ce%bd%ce%b5%ce%bf%cf%80%cf%81%ce%bf%ce%b1%cf%87%ce%b8%ce%ad%ce%bd%cf%84%cf%89/",
+      "snippet": "Jul 24, 2023 · ΥΠΟΥΡΓΕΙΟ ΠΡΟΣΤΑΣΙΑΣ ΤΟΥ ΠΟΛΙΤΗ Με προεδρικό διάταγμα που εκδόθηκε στην Αθήνα την 19 Ιουλίου 2023, …"
+    },
+    {
+      "title": "Kranosgr - Ετικέτα: ΠΡΟΑΓΩΓΕΣ",
+      "url": "https://www.kranosgr.com/tag/%CF%80%CF%81%CE%BF%CE%B1%CE%B3%CF%89%CE%B3%CE%B5%CF%83/",
+      "snippet": "25 Απριλίου, 2026 10:38 πμ ΣΤΡΑΤΟΣ ΞΗΡΑΣ"
+    },
+    {
+      "title": "Kranosgr - Κατηγορία: ΣΤΡΑΤΟΣ ΞΗΡΑΣ",
+      "url": "https://www.kranosgr.com/category/%CE%B5%CE%BD%CE%BF%CF%80%CE%BB-%CE%B4%CF%85%CE%BD/%CF%83%CF%84%CF%81%CE%B1%CF%84%CE%BF%CF%83-%CE%BE%CE%B7%CF%81%CE%B1%CF%83/",
+      "snippet": "6 days ago · Ορεστιάδα: Ο Στρατός χτίζει καμένο σπίτι οικογένειας θανόντος στρατιωτικού- Άμεση έγκριση Δένδια στο αίτημα Κωστίδη"
+    }
+  ]
+}

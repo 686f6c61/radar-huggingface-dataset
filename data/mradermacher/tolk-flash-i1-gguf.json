@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mradermacher/tolk-flash-i1-GGUF",
+  "slug": "mradermacher-tolk-flash-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/tolk-flash-i1-GGUF",
+  "created_at": "2026-09-20T16:07:23.000Z",
+  "updated_at": "2026-09-20T16:35:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "tolk",
+    "tolk-flash",
+    "ru",
+    "en",
+    "base_model:RaspizdAI/tolk-flash",
+    "base_model:quantized:RaspizdAI/tolk-flash",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 36758284672,
+  "storage_human": "36.8 GB",
+  "base_model": "RaspizdAI/tolk-flash",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "50 Top Value Based Care Platforms - mahalo.health",
+      "url": "https://mahalo.health/insights/50-top-value-based-care-platforms",
+      "snippet": "Aug 19, 2024 · Explore the top 50 value-based care platforms that are revolutionizing healthcare delivery. Discover how these …"
+    },
+    {
+      "title": "10 Value-Based Care Software Solutions to Consider in 2026",
+      "url": "https://arcadia.io/resources/value-based-care-software",
+      "snippet": "Jul 22, 2026 · Value-based care software aggregates data so health teams can make informed decisions that improve performance. …"
+    },
+    {
+      "title": "8 Value-Based Care Platforms Providing VBC Software in 2026",
+      "url": "https://wp.persivia.com/blog/top-8-value-based-care-platforms-in-2026-compared/",
+      "snippet": "What is a Value-Based Care Platform? Value-based care platforms link clinical data, claims, and workflows to tie provider payments …"
+    },
+    {
+      "title": "Top 6 care management software platforms for value-based care",
+      "url": "https://bluebrix.health/blogs/top-care-management-software-platforms",
+      "snippet": "May 8, 2026 · This guide compares six leading care management platforms to help organizations evaluate solutions for value-based …"
+    },
+    {
+      "title": "Digital health platforms set standards for value-based care by ...",
+      "url": "https://www.wolterskluwer.com/en/expert-insights/digital-health-platforms-set-standards-for-value-based-care-by-redefining-clinical-decision-support",
+      "snippet": "Nov 3, 2025 · Digital health platforms support value-based care by providing the data needed to track quality metrics and outcomes. …"
+    }
+  ]
+}

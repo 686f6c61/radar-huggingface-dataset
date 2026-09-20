@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "realrebelai/Qwen-Image-2.1_GGUFs",
+  "slug": "realrebelai-qwen-image-2-1_ggufs",
+  "author": "realrebelai",
+  "url": "https://huggingface.co/realrebelai/Qwen-Image-2.1_GGUFs",
+  "created_at": "2026-09-20T15:36:20.000Z",
+  "updated_at": "2026-09-21T04:01:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen",
+    "qwen-image",
+    "qwen-image-2.1",
+    "quantized",
+    "comfyui",
+    "image-generation",
+    "text-to-image",
+    "base_model:Qwen/Qwen-Image-2.1",
+    "base_model:quantized:Qwen/Qwen-Image-2.1",
+    "region:us"
+  ],
+  "likes": 25,
+  "downloads_30d": 2062,
+  "trending_score": 24,
+  "parameters": 7115124736,
+  "parameters_human": "7.12B",
+  "storage_bytes": 36438435136,
+  "storage_human": "36.4 GB",
+  "base_model": "Qwen/Qwen-Image-2.1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Barceló® Hotel Group - Hoteles y Resorts | Barcelo.com",
+      "url": "https://www.barcelo.com/es-es/",
+      "snippet": "Reserva en los mejores Hoteles y Resorts al Mejor Precio Garantizado ¡Disfruta la experiencia Barceló, Occidental, Allegro y Royal …"
+    },
+    {
+      "title": "Barceló® Hotel Group - México - Hoteles y Resorts",
+      "url": "https://www.barcelo.com/es-mx/",
+      "snippet": "Reserva en los mejores Hoteles y Resorts al Mejor Precio Garantizado ¡Disfruta la experiencia Barceló, Occidental, Allegro y Royal …"
+    },
+    {
+      "title": "MyBarcelo Login",
+      "url": "https://identity.barcelo.com/identityb2c/CIAMB2CLogin?locale=us",
+      "snippet": "Enhance your experience with every new booking Best price guaranteed"
+    },
+    {
+      "title": "Paquetes Barceló",
+      "url": "https://paquetes.barcelo.com/",
+      "snippet": "Bienvenido a Nuestro Sitio Oficial de Paquetes Hoteles Barceló. Aprovecha las Mejores Ofertas ¡Reserva Ya!"
+    },
+    {
+      "title": "Paquetes Barceló",
+      "url": "https://vacaciones.barcelo.com/",
+      "snippet": "Reserva tus Paquetes de Viajes con Hoteles Barceló. Aprovecha las Mejores Ofertas en Tiquete+Hotel ¡El Mejor Precio Garantizado!"
+    }
+  ]
+}

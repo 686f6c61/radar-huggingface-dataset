@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Swift-Qwen3.8-27B-Abliterated-GGUF",
+  "slug": "mradermacher-swift-qwen3-8-27b-abliterated-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Swift-Qwen3.8-27B-Abliterated-GGUF",
+  "created_at": "2026-09-20T15:42:37.000Z",
+  "updated_at": "2026-09-20T17:20:30.000Z",
+  "license": "swift-open-license-1.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen3_8",
+    "qwen3_5",
+    "abliterated",
+    "refusal-reduced",
+    "reasoning",
+    "vision-language",
+    "en",
+    "base_model:andrewting/Swift-Qwen3.8-27B-Abliterated",
+    "base_model:quantized:andrewting/Swift-Qwen3.8-27B-Abliterated",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 190780464288,
+  "storage_human": "190.8 GB",
+  "base_model": "andrewting/Swift-Qwen3.8-27B-Abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Friv® | FRIV.COM : The Best Free Games [Jogos | Juegos]",
+      "url": "https://www.friv.com/",
+      "snippet": "Play unblocked games at Friv! We have only the very best free online games, and they work on any device. There are no ad …"
+    },
+    {
+      "title": "Friv® | Friv Classic Old Menu",
+      "url": "https://www.frivclassic.com/",
+      "snippet": "Visit Friv Classic to relive your childhood! We have managed to bring back to life over 100 of the best, most nostalgic original Friv …"
+    },
+    {
+      "title": "FRIV GAMES | Play Free Online Games At Friv.com! | Friv® ️",
+      "url": "https://www.friv.com/z/play/games.html",
+      "snippet": "Do you want free online games with hardly any ads? We have hundreds of great games that you can play on all devices. Try Friv today!"
+    },
+    {
+      "title": "Friv® | FRIV4SCHOOL.COM | A Safe Place For Students To Play!",
+      "url": "https://www.friv4school.com/school.html",
+      "snippet": "Spot The Difference Tower Blaster Slide Friv Pixel Painter Ultimate Sudoku Slice It Fair Play Maze"
+    },
+    {
+      "title": "Friv® | FRIV.INFO for great online games!",
+      "url": "https://www.friv.info/",
+      "snippet": "Click to play some amazing fun things... Click or visit friv.com to play!"
+    }
+  ]
+}

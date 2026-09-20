@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "doubleakash/fraud-detector",
+  "slug": "doubleakash-fraud-detector",
+  "author": "doubleakash",
+  "url": "https://huggingface.co/doubleakash/fraud-detector",
+  "created_at": "2026-09-20T18:33:18.000Z",
+  "updated_at": "2026-09-20T18:33:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-1.5B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20173757,
+  "storage_human": "20 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "win11怎么打开磁盘管理？windows11在哪打开磁盘管理？ - 知乎",
+      "url": "https://www.zhihu.com/question/493732209",
+      "snippet": "Oct 21, 2021 · 题主应该是没有将计算机的快捷方式放到桌面，步骤如下： 1）鼠标桌面右击依次点击「个性化」--「主题」--「桌面图 …"
+    },
+    {
+      "title": "固态硬盘健康度达到多少说明必须放弃了？ - 知乎",
+      "url": "https://www.zhihu.com/question/1995423323413292422",
+      "snippet": "固态硬盘的存储介质是闪存，闪存颗粒有擦写使用寿命，我这款固态硬盘容量只有 512GB，按照大厂 TLC 颗粒标准，通常可以认为它 …"
+    },
+    {
+      "title": "tradeit怎么提现? - 知乎",
+      "url": "https://www.zhihu.com/question/621056729",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "小约翰 - 知乎",
+      "url": "https://www.zhihu.com/people/lu-chen-xi-9-98",
+      "snippet": "Sep 13, 2026 · 评价赵构绝对脱离不开完颜亮。 潮水落下去才能发现谁在裸泳。 完颜亮南侵是在1161年，岳飞被冤杀在1141年，韩世 …"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Muchai12/akili-qwen2.5-7b-continuous",
+  "slug": "muchai12-akili-qwen2-5-7b-continuous",
+  "author": "Muchai12",
+  "url": "https://huggingface.co/Muchai12/akili-qwen2.5-7b-continuous",
+  "created_at": "2026-09-20T13:06:13.000Z",
+  "updated_at": "2026-09-20T13:30:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen2.5-7B-Instruct-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen2.5-7B-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242694030,
+  "storage_human": "15.2 GB",
+  "base_model": "unsloth/Qwen2.5-7B-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Musique Senegalaise 2026 - Meilleures Chansons Sénégalais ... - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLdmvwyBhD_YvJW0h45ob-EUKHQExIQiMm",
+      "snippet": "Des harmonies mélodieuses aux beats de danse irrésistibles, cette collection promet de vous emmener dans un voyage à travers le …"
+    },
+    {
+      "title": "Musique Senegalaise 2026 Nouveauté Mix - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLqZ3rWFEe-iByDTuEyP8RaXUpUo9z7V8a",
+      "snippet": "Musique Senegalaise 2026 Nouveauté Mix - Nouvelle Chanson Senegalaise 2026 Playlist (Nouveauté Musique Sénégalaise 2026) …"
+    },
+    {
+      "title": "Musique Sénégalaise 2026 Best Sélection - Senegal Mbalax & Musique ...",
+      "url": "https://music.youtube.com/playlist?list=PLZ6afNou8CGtlo5hYmN8NnrDpPe9qrqOh",
+      "snippet": "One Lyrical [Official Music Video] Deranger (feat. Slim G)"
+    },
+    {
+      "title": "Musique Senegalaise 2026 - Meilleures Chansons Sénégalais 2026 …",
+      "url": "https://music.youtube.com/playlist?list=PLdmvwyBhD_YvJW0h45ob-EUKHQExIQiMm",
+      "snippet": "Des harmonies mélodieuses aux beats de danse irrésistibles, cette collection promet de vous emmener dans un voyage à travers le …"
+    },
+    {
+      "title": "Musique Senegalaise 2026 - Redlist",
+      "url": "https://www.redlist.com/playlist/78508",
+      "snippet": "Découvrez les meilleures chansons aux rythmes vibrants, aux voix puissantes et à l’âme authentique qui font vibrer le cœur du …"
+    }
+  ]
+}

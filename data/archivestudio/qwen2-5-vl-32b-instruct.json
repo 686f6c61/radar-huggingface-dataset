@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "ArchiveStudio/Qwen2.5-VL-32B-Instruct",
+  "slug": "archivestudio-qwen2-5-vl-32b-instruct",
+  "author": "ArchiveStudio",
+  "url": "https://huggingface.co/ArchiveStudio/Qwen2.5-VL-32B-Instruct",
+  "created_at": "2026-09-20T17:16:11.000Z",
+  "updated_at": "2026-09-20T17:16:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2_5_vl",
+    "image-text-to-text",
+    "multimodal",
+    "conversational",
+    "en",
+    "arxiv:2309.00071",
+    "arxiv:2502.13923",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33452718336,
+  "parameters_human": "33.45B",
+  "storage_bytes": 68294673272,
+  "storage_human": "68.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sparx Science - Home",
+      "url": "https://sparxscience.com/",
+      "snippet": "Sparx Learning provides maths, reading and science solutions to over half of UK schools, supporting students aged 11–16 across …"
+    },
+    {
+      "title": "Sparx Science - Resources",
+      "url": "https://sparxscience.com/resources/",
+      "snippet": "Sparx Science creates an hour’s worth of perfectly tailored practice homework for each student each week driven by your scheme of …"
+    },
+    {
+      "title": "Sparx Science",
+      "url": "https://app.test.sparxscience.com/",
+      "snippet": "Sparx Science delivers personalised intelligent science practice."
+    },
+    {
+      "title": "Steps to setting your first homework | Sparx Science Help Centre",
+      "url": "https://support.sparxscience.com/en/articles/386534-steps-to-setting-your-first-homework",
+      "snippet": "May 19, 2026 · To set homework with Sparx Science, follow the Getting Started Steps in your Sparx Science site. Alternatively, you …"
+    },
+    {
+      "title": "Viewing and updating existing classes and students | Sparx Science …",
+      "url": "https://support.sparxscience.com/en/articles/532607-viewing-and-updating-existing-classes-and-students",
+      "snippet": "May 19, 2026 · This article explains how to update your classes and students in Sparx Science by using MIS integration, including …"
+    }
+  ]
+}

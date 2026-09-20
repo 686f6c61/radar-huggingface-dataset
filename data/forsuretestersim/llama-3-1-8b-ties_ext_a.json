@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "ForSureTesterSim/Llama-3.1-8B-TIES_Ext_A",
+  "slug": "forsuretestersim-llama-3-1-8b-ties_ext_a",
+  "author": "ForSureTesterSim",
+  "url": "https://huggingface.co/ForSureTesterSim/Llama-3.1-8B-TIES_Ext_A",
+  "created_at": "2026-09-20T15:59:06.000Z",
+  "updated_at": "2026-09-20T16:01:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "conversational",
+    "arxiv:2306.01708",
+    "base_model:Magpie-Align/Llama-3.1-8B-Magpie-Align-v0.2",
+    "base_model:merge:Magpie-Align/Llama-3.1-8B-Magpie-Align-v0.2",
+    "base_model:allenai/Llama-3.1-Tulu-3.1-8B",
+    "base_model:merge:allenai/Llama-3.1-Tulu-3.1-8B",
+    "base_model:meta-llama/Llama-3.1-8B",
+    "base_model:merge:meta-llama/Llama-3.1-8B",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:merge:meta-llama/Llama-3.1-8B-Instruct",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766256,
+  "storage_human": "16.1 GB",
+  "base_model": "allenai/Llama-3.1-Tulu-3.1-8B, meta-llama/Llama-3.1-8B, meta-llama/Llama-3.1-8B-Instruct, Magpie-Align/Llama-3.1-8B-Magpie-Align-v0.2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Web.de und Gmx.de werden nicht mehr korrekt geladen",
+      "url": "https://www.computerbase.de/forum/threads/web-de-und-gmx-de-werden-nicht-mehr-korrekt-geladen.2260956/",
+      "snippet": "Dec 17, 2025 · Higli schrieb: Pingtest wäre gut! Windows-Taste+R, cmd dann ping web.de ping gmx.de Also wenn ich das mache …"
+    },
+    {
+      "title": "gmx 2-Faktor Authentifizierung mit Outlook - ComputerBase",
+      "url": "https://www.computerbase.de/forum/threads/gmx-2-faktor-authentifizierung-mit-outlook.2074548/",
+      "snippet": "Mar 5, 2022 · Moin, ich habe 2FA für meinen gmx Mail Account konfiguriert. Das funktioniert so weit auch, wenn ich mich online …"
+    },
+    {
+      "title": "\"Korrekte Anmeldedaten erforderlich\" erscheint bei Gmail auf meinem ...",
+      "url": "https://support.google.com/mail/thread/258764722/korrekte-anmeldedaten-erforderlich-erscheint-bei-gmail-auf-meinem-smartphone-immer-wieder?hl=de",
+      "snippet": "Meine eMails bekomme ich trotzdem immer. Bei Postausgang steht \"Problem bei der Syncronisierung\" und das obwohl ich auch …"
+    },
+    {
+      "title": "Fazer login no Gmail - Computador - Ajuda do Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=pt-br&co=GENIE.Platform%3DDesktop",
+      "snippet": "Fazer login No seu computador, acesse gmail.com. Insira seu número de telefone ou e-mail da Conta do Google e a senha. Se as …"
+    },
+    {
+      "title": "GMX Umleitung interception1.gmx.net ? | ComputerBase Forum",
+      "url": "https://www.computerbase.de/forum/threads/gmx-umleitung-interception1-gmx-net.2102743/",
+      "snippet": "Sep 12, 2022 · Hi Nach dem Login wird man erneut aufgefordert , seine Mail Adresse und PW einzugeben , und ein Captcha ! Ich …"
+    }
+  ]
+}

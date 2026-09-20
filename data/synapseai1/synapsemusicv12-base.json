@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "SYNAPSEai1/SynapseMusicV12-Base",
+  "slug": "synapseai1-synapsemusicv12-base",
+  "author": "SYNAPSEai1",
+  "url": "https://huggingface.co/SYNAPSEai1/SynapseMusicV12-Base",
+  "created_at": "2026-09-20T12:29:55.000Z",
+  "updated_at": "2026-09-20T12:29:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-audio",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "acestep",
+    "feature-extraction",
+    "audio",
+    "music",
+    "text2music",
+    "text-to-audio",
+    "custom_code",
+    "arxiv:2602.00744",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2393872518,
+  "parameters_human": "2.39B",
+  "storage_bytes": 4791666819,
+  "storage_human": "4.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "オリンパスTG-6でORFファイルを残さないようにする ...",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q12288302282",
+      "snippet": "Nov 1, 2023 · オリンパスTG-6でORFファイルを残さないようにする設定方法を教えて下さい。 電源onでOKを押し、上下キーで画 …"
+    },
+    {
+      "title": "カメラで写真を撮ってPCに入れるとORFファイルと書い ...",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1240831172",
+      "snippet": "May 15, 2010 · カメラで写真を撮ってPCに入れるとORFファイルと書いてあるものが写真のJPGファイルの隣に表示されるように …"
+    },
+    {
+      "title": "怎样快速找到基因序列的开放阅读框（ORF）-百度经验",
+      "url": "https://jingyan.baidu.com/article/9158e0004fd7bba255122863.html",
+      "snippet": "Apr 8, 2015 · ORF分析 以H9禽流感病毒HA基因为例说明，我们看到这条HA基因包含6个ORF，其中+1最长、最完整，囊括了整条基 …"
+    },
+    {
+      "title": "[Biologie Moléculaire] qu'est ce qu'une ORF? - Forum FS Generation",
+      "url": "https://forums.futura-sciences.com/biologie/194897-quest-quune-orf.html",
+      "snippet": "ORF c'est pour open reading frame; phase de lecture ouverte. On comprend immédiatement l'intérêt (si on a un minimum de base de …"
+    },
+    {
+      "title": "Volet électrique descend par à-coups - Forum FS Generation",
+      "url": "https://forums.futura-sciences.com/bricolage-decoration/288390-volet-electrique-descend-a-coups.html",
+      "snippet": "Feb 1, 2009 · Bonjour, comme indiqué dans le titre, j'ai un volet roulant qui descend par saccades, (15 minutes pour la descente). La …"
+    }
+  ]
+}

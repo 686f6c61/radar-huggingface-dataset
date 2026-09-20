@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "maurorisonho/lerobot-diffusion-pusht",
+  "slug": "maurorisonho-lerobot-diffusion-pusht",
+  "author": "maurorisonho",
+  "url": "https://huggingface.co/maurorisonho/lerobot-diffusion-pusht",
+  "created_at": "2026-09-20T19:15:57.000Z",
+  "updated_at": "2026-09-20T19:24:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "diffusion-policy",
+    "robotics-course",
+    "imitation-learning",
+    "pusht",
+    "robotics",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 262709062,
+  "parameters_human": "262.7M",
+  "storage_bytes": 1050862408,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bitno.net - Sve bitno na jednom mjestu",
+      "url": "https://www.bitno.net/",
+      "snippet": "24. RUJNA Treba li se Crkva bojati medija? Bitno.net organizira tribinu o važnoj temi Je li Crkva suzdržana prema medijima? Kako …"
+    },
+    {
+      "title": "Vijesti - Bitno.net",
+      "url": "https://www.bitno.net/vijesti/",
+      "snippet": "Pročitajte najnovije vijesti i komentare na događanja iz Katoličke Crkve, Vatikana, Hrvatske i svijeta. Propovijedi Pape Franje i puno …"
+    },
+    {
+      "title": "Misna čitanja - Bitno.net",
+      "url": "https://www.bitno.net/misna-citanja/",
+      "snippet": "Dnevna misna čitanja. Liturgijska čitanja za svetu misu. Misna čitanja kroz cijelu liturgijsku godinu na najčitanijem vjerskom portalu u …"
+    },
+    {
+      "title": "Vjera - Bitno.net",
+      "url": "https://www.bitno.net/vjera/",
+      "snippet": "Sve bitno na jednom mjestu Čuli ste za čudo krvi sv. Januarija – ali, znate li da se isto čudo događa i s krvlju jednog drugoga sveca? …"
+    },
+    {
+      "title": "Devetnice - Bitno.net",
+      "url": "https://www.bitno.net/vjera/devetnice/",
+      "snippet": "6 days ago · Evo devetnice svetom Rajmundu Nonatu koju je papa Franjo preporučio svim parovima željnima djece Devetnice | 22. …"
+    }
+  ]
+}

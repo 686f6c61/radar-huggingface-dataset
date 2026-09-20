@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "taniks/Hemmingway-1-Q4_K_M-GGUF",
+  "slug": "taniks-hemmingway-1-q4_k_m-gguf",
+  "author": "taniks",
+  "url": "https://huggingface.co/taniks/Hemmingway-1-Q4_K_M-GGUF",
+  "created_at": "2026-09-20T14:02:40.000Z",
+  "updated_at": "2026-09-20T14:03:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen3.8",
+    "chat",
+    "creative-writing",
+    "altworld",
+    "llama-cpp",
+    "gguf-my-repo",
+    "text-generation",
+    "en",
+    "base_model:Altworld/Hemmingway-1",
+    "base_model:quantized:Altworld/Hemmingway-1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 16810705792,
+  "storage_human": "16.8 GB",
+  "base_model": "Altworld/Hemmingway-1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Speedtest von Ookla - Der umfassende Breitband-Geschwindigkeitstest",
+      "url": "https://www.speedtest.net/de",
+      "snippet": "Testen Sie Ihre Internetgeschwindigkeit mit dem umfassenden Speedtest von Ookla für Desktop und Mobilgeräte."
+    },
+    {
+      "title": "Speedtest: Internet-Geschwindigkeit messen | Telekom",
+      "url": "https://www.telekom.de/shop/tarife/speedtest",
+      "snippet": "Überprüfen Sie Ihre Internet-Geschwindigkeit sowie die Up- und Downloadraten mit dem Speedtest der Telekom. Probieren Sie es …"
+    },
+    {
+      "title": "Speedtest Plus: Teste Deine Internet-Geschwindigkeit",
+      "url": "https://speedtest.vodafone.de/",
+      "snippet": "Mit dem kostenlosen Speedtest Plus von Vodafone ermittelst Du hier die Upload- und Download-Geschwindigkeit Deines Glasfaser-, …"
+    },
+    {
+      "title": "DSL Speedtest - CHIP testet Ihre Internet-Geschwindigkeit - CHIP",
+      "url": "https://www.chip.de/static/speedtest_a55d4e7a-ff11-482a-9d14-88686ad6975b.html",
+      "snippet": "Die wichtigsten Messwerte sind die Download-Geschwindigkeit und die Upload-Geschwindigkeit. Beim Download messen wir, wie …"
+    },
+    {
+      "title": "Speedtest von Ookla - Der umfassende Breitband-Geschwindigkeitstest",
+      "url": "https://www.speedtest.net/de/run",
+      "snippet": "Nutzen Sie Speedtest mit unseren kostenlosen Desktop- und Handy-Apps auf allen Ihren Geräten."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Invisible-dog/aerogaze-yolo26l",
+  "slug": "invisible-dog-aerogaze-yolo26l",
+  "author": "Invisible-dog",
+  "url": "https://huggingface.co/Invisible-dog/aerogaze-yolo26l",
+  "created_at": "2026-09-20T14:52:04.000Z",
+  "updated_at": "2026-09-20T14:57:43.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "yolo26",
+    "object-detection",
+    "aerial-imagery",
+    "active-vision",
+    "license:agpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 53013939,
+  "storage_human": "53 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Invisible (série télévisée, 2020) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Invisible_(s%C3%A9rie_t%C3%A9l%C3%A9vis%C3%A9e,_2020)",
+      "snippet": "Invisible (Unseen) est une série télévisée belge en huit épisodes de 52 minutes environ, créée par Marie Enthoven et réalisée par …"
+    },
+    {
+      "title": "Invisible - Série TV 2020 - AlloCiné",
+      "url": "https://www.allocine.fr/series/ficheserie_gen_cserie=28065.html",
+      "snippet": "Retrouvez toutes les actualités et les vidéos de la série Invisible. Synopsis : Victor, ophtalmologue réputé devient mystérieusement …"
+    },
+    {
+      "title": "Invisible - Série TV 2024 - AlloCiné",
+      "url": "https://www.allocine.fr/series/ficheserie_gen_cserie=33821.html",
+      "snippet": "Synopsis & Info Un garçon de douze ans qui, après un accident qui a failli lui coûter la vie, pense que personne ne peut le voir. …"
+    },
+    {
+      "title": "Regarder Invisible | Épisodes complets - Disney+",
+      "url": "https://www.disneyplus.com/fr-fr/browse/entity-4e0de209-b7e7-4dfc-8120-73bf799e33f0?msockid=289dcaee7540605919d5dd3474556135",
+      "snippet": "Adapté du roman d’Eloy Moreno. Un garçon de douze ans découvre qu’il peut devenir invisible."
+    },
+    {
+      "title": "Invisible (Téléfilm) - TF1+",
+      "url": "https://www.tf1.fr/tf1/invisible",
+      "snippet": "Regardez gratuitement « Invisible » en streaming ! « Invisible », Téléfilm (thriller,action,science-fiction,etranger) sur TF1+. Convaincu …"
+    }
+  ]
+}

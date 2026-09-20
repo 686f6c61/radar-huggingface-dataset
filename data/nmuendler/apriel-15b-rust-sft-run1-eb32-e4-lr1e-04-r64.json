@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "nmuendler/Apriel-15B-rust-sft-run1-eb32-e4-lr1e-04-r64",
+  "slug": "nmuendler-apriel-15b-rust-sft-run1-eb32-e4-lr1e-04-r64",
+  "author": "nmuendler",
+  "url": "https://huggingface.co/nmuendler/Apriel-15B-rust-sft-run1-eb32-e4-lr1e-04-r64",
+  "created_at": "2026-09-20T13:37:02.000Z",
+  "updated_at": "2026-09-20T13:37:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "arxiv:1910.09700",
+    "base_model:ServiceNow-AI/Apriel-Nemotron-15b-Thinker",
+    "base_model:adapter:ServiceNow-AI/Apriel-Nemotron-15b-Thinker",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1157499588,
+  "storage_human": "1.2 GB",
+  "base_model": "ServiceNow-AI/Apriel-Nemotron-15b-Thinker",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Póker online y apuestas deportivas - ¡Juega en Winamax! - Winamax",
+      "url": "https://www.winamax.es/",
+      "snippet": "The best of online poker Winamax is licensed by the Dirección General de Ordenación del Juego (DGOJ)."
+    },
+    {
+      "title": "Sportwetten | Winamax Sportwetten | Online Sportwetten",
+      "url": "https://www.winamax.de/?language=DE&language=DE",
+      "snippet": "Sportwetten mit den besten Quoten auf Winamax. Wir verdoppeln eure erste Einzahlung bis 100 €!"
+    },
+    {
+      "title": "Winamax sports | Paris sportifs | Poker en ligne - Winamax",
+      "url": "https://www.winamax.fr/",
+      "snippet": "Pariez sur le sport et jouez au poker sur Winamax. Recevez directement jusqu'à 100 € pour parier sur tous les sports et bénéficiez …"
+    },
+    {
+      "title": "Apuestas deportivas I Winamax apuestas deportivas I Apuestas online",
+      "url": "https://www.winamax.es/apuestas-deportivas",
+      "snippet": "Apuesta en Winamax. Una gran multitud de mercados y con grandes cuotas"
+    },
+    {
+      "title": "Winamax España - Apuestas Deportivas y Casino Online Oficial",
+      "url": "https://winamaxbet.es/",
+      "snippet": "Bienvenido al sitio oficial de Winamax en España. Disfruta de las mejores apuestas deportivas, póker y casino online. Regístrate …"
+    }
+  ]
+}

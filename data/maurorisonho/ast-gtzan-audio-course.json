@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "maurorisonho/ast-gtzan-audio-course",
+  "slug": "maurorisonho-ast-gtzan-audio-course",
+  "author": "maurorisonho",
+  "url": "https://huggingface.co/maurorisonho/ast-gtzan-audio-course",
+  "created_at": "2026-09-20T17:26:16.000Z",
+  "updated_at": "2026-09-20T19:24:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "audio-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "audio-spectrogram-transformer",
+    "audio-classification",
+    "marsyas/gtzan",
+    "dataset:marsyas/gtzan",
+    "ast",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 344860025,
+  "storage_human": "345 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Audio Classification",
+      "dataset": "marsyas/gtzan",
+      "metric": "Accuracy",
+      "value": 0.92
+    }
+  ],
+  "sources": [
+    {
+      "title": "KCSE 2026 Prediction Papers and Marking Schemes | MasomoFiti",
+      "url": "https://www.masomofiti.co.ke/kcse-2026-predictions",
+      "snippet": "Prepare for KCSE 2026 with prediction papers, marking schemes, revision strategy, countdown guidance and subject-by-subject …"
+    },
+    {
+      "title": "KCSE Exams Predictions, Revision Papers Plus Marking Schemes",
+      "url": "https://educationnewshub.co.ke/kcse-exams-predictions-revision-papers-plus-marking-schemes/",
+      "snippet": "Feb 21, 2026 · Free Agriculture notes, revision questions, KCSE past Papers, Exams, Marking Schemes, Topical revision materials, …"
+    },
+    {
+      "title": "2026 KCSE Prediction Papers and Answers - mwalimufocus.co.ke",
+      "url": "https://mwalimufocus.co.ke/kcse-predictions/2026/",
+      "snippet": "Download 2026 KCSE Prediction Papers and exams with comprehensive marking schemes and answers as PDF."
+    },
+    {
+      "title": "KCSE Prediction Papers 2026 | Easyelimu",
+      "url": "https://www.easyelimu.com/exams/16-high-school/46-kcse-predictions/65-kcse-prediction-papers-2026",
+      "snippet": "Interactive Exams Exams with interactive feedback and AI intergration KCSE PREDICTION 2026 KCSE Prediction Papers 2026"
+    },
+    {
+      "title": "KCSE 2026 IRE TOP PREDICTIONS: MASTER CYCLE 1-10 - Studocu",
+      "url": "https://www.studocu.com/row/document/university-of-nairobi/trade-marks-law/kcse-2026-ire-top-predictions-master-cycle-1-10/163215837",
+      "snippet": "This document contains a comprehensive set of prediction questions and marking schemes for the KCSE Islamic Religious Education …"
+    }
+  ]
+}

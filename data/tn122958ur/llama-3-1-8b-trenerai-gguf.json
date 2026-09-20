@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "tn122958ur/Llama-3.1-8B-TrenerAI-GGUF",
+  "slug": "tn122958ur-llama-3-1-8b-trenerai-gguf",
+  "author": "tn122958ur",
+  "url": "https://huggingface.co/tn122958ur/Llama-3.1-8B-TrenerAI-GGUF",
+  "created_at": "2026-09-20T18:32:37.000Z",
+  "updated_at": "2026-09-20T20:19:59.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "pl"
+  ],
+  "tags": [
+    "gguf",
+    "llama-cpp",
+    "lora",
+    "qlora",
+    "fitness",
+    "conversational",
+    "text-generation",
+    "pl",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:adapter:meta-llama/Llama-3.1-8B-Instruct",
+    "license:llama3.1",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261312,
+  "parameters_human": "8.03B",
+  "storage_bytes": 4920739008,
+  "storage_human": "4.9 GB",
+  "base_model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Momox, avalanche de non reçu en aout? - Seller Central FR",
+      "url": "https://sellercentral.amazon.fr/seller-forums/discussions/t/1c3c8a4cd479a35efeb2cf2db989f972",
+      "snippet": "J’ai moi aussi un retard de livraison pour un livre acheté chez Momox . Mais un livre acheté le même jour sur eBay est également en …"
+    },
+    {
+      "title": "Besoin d'auide face a momox [Résolu] - Droit-finances",
+      "url": "https://droit-finances.commentcamarche.com/forum/affich-7194588-besoin-d-auide-face-a-momox",
+      "snippet": "Bonjour, Le problème c'est que Momox est basé en Allemagne. Le service client est inexistant, moi j'avais eu gain de cause (jamais …"
+    },
+    {
+      "title": "Momox ne vend plus sur Amazon? - Seller Central FR",
+      "url": "https://sellercentral.amazon.fr/seller-forums/discussions/t/68223c745e73084097cb75c0368940e1",
+      "snippet": "Comme il a raison…pas rentable de vendre ici. Plus raisonnablement, je pense qu’il met à jour son fichier de stock, ou qu’il aménage …"
+    },
+    {
+      "title": "Momox colis perdu - Droit-finances",
+      "url": "https://droit-finances.commentcamarche.com/forum/affich-8364153-momox-colis-perdu",
+      "snippet": "Oct 25, 2019 · Bonjour, j'ai envoyé un colis à Momox des DVD et CD de musique que ça faisait 28 € en tout et je n'ai pas reçu de …"
+    },
+    {
+      "title": "ALERTE ARNAQUE DE RAKUTEN PAR CENTAINE IMPUNEMENT",
+      "url": "https://forum.quechoisir.org/alerte-arnaque-de-rakuten-par-centaine-impunement-t362638.html",
+      "snippet": "Jan 8, 2025 · Venez contribuer au forum de la 1re association de consommateurs de France !"
+    }
+  ]
+}

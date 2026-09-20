@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ArchiveStudio/Qwen3-Coder-Next-Base",
+  "slug": "archivestudio-qwen3-coder-next-base",
+  "author": "ArchiveStudio",
+  "url": "https://huggingface.co/ArchiveStudio/Qwen3-Coder-Next-Base",
+  "created_at": "2026-09-20T17:22:18.000Z",
+  "updated_at": "2026-09-20T17:22:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_next",
+    "text-generation",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 79674391296,
+  "parameters_human": "79.67B",
+  "storage_bytes": 159358031480,
+  "storage_human": "159.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FC Schalke 04 - Vereinsprofil | Transfermarkt",
+      "url": "https://www.transfermarkt.de/fc-schalke-04/startseite/verein/33",
+      "snippet": "Alles zum Verein FC Schalke 04 (Bundesliga) aktueller Kader mit Marktwerten Transfers Gerüchte Spieler-Statistiken Spielplan News"
+    },
+    {
+      "title": "FC Schalke 04 - Kader im Detail 26/27 | Transfermarkt",
+      "url": "https://www.transfermarkt.de/fc-schalke-04/kader/verein/33/",
+      "snippet": "FC Schalke 04: Kader auf einen Blick: alle Spieler Positionen Vertragsdaten Marktwerte Rückennummern"
+    },
+    {
+      "title": "FC Schalke 04 - Gerüchte zum Verein | Transfermarkt",
+      "url": "https://www.transfermarkt.de/fc-schalke-04/geruechte/verein/33",
+      "snippet": "Welche Spieler werden beim Verein FC Schalke 04 aktuell gehandelt? Die kompakte Ansicht aktueller Transfergerüchte (Zugänge)."
+    },
+    {
+      "title": "FC Schalke 04 - Forum | Transfermarkt",
+      "url": "https://www.transfermarkt.de/forum/detail/forum/16",
+      "snippet": "2 days ago · Dies ist die Übersicht aller Threads aus dem Forum FC Schalke 04, die in der Transfermarkt-Community diskutiert werden."
+    },
+    {
+      "title": "FC Schalke 04 - News zum Verein | Transfermarkt",
+      "url": "https://www.transfermarkt.de/fc-schalke-04/news/verein/33",
+      "snippet": "Verlängerungen, Transfers, Spielberichte & Co.: Alle relevanten und aktuellen News vom Verein FC Schalke 04 auf einen Blick."
+    }
+  ]
+}

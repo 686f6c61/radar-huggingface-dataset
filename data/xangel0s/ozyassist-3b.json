@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "Xangel0s/OzyAssist-3B",
+  "slug": "xangel0s-ozyassist-3b",
+  "author": "Xangel0s",
+  "url": "https://huggingface.co/Xangel0s/OzyAssist-3B",
+  "created_at": "2026-09-20T18:04:27.000Z",
+  "updated_at": "2026-09-21T13:04:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "es",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "ozyassist",
+    "windows-agent",
+    "desktop-automation",
+    "tool-calling",
+    "voice-assistant",
+    "llama-cpp",
+    "reasoning",
+    "cot",
+    "office-automation",
+    "text-generation",
+    "es",
+    "en",
+    "base_model:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 3859801280,
+  "storage_human": "3.9 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sportstadt Erfurt – Zukunft, Vielfalt und Spitzen- & Breitensport ...",
+      "url": "https://www.sport-in-erfurt.de/sportstadt-erfurt",
+      "snippet": "Erfurt ist eine echte Sportstadt: Entdecke Vielfalt, Top-Events, Vereine und Sportangebote, die unsere Stadt aktiv, lebendig und …"
+    },
+    {
+      "title": "Sport in Erfurt – Vereine, Veranstaltungen & Neuigkeiten rund um …",
+      "url": "https://www.sport-in-erfurt.de/",
+      "snippet": "Erlebe Spitzensport und spannende Events in Erfurt. Entdecke außerdem vielfältige Breitensportangebote und finde Deinen Verein in …"
+    },
+    {
+      "title": "Sport - Erfurt Stadtmarketing GmbH",
+      "url": "https://www.erfurt-marketing.de/willkommen/sport",
+      "snippet": "Nicht ohne Grund bezeichnet sich Erfurt als Sportstadt. Ausnahmeathleten wie Gunda Niemann-Stirnemann haben hier ihre …"
+    },
+    {
+      "title": "Sportstadt Erfurt – erfurt-web.de",
+      "url": "https://erfurt-web.de/Sportstadt_Erfurt",
+      "snippet": "Die Sportstadt Erfurt brachte zahlreiche Spitzenathleten samt 29 Olympia-Medaillengewinnern hervor. Städtebaulich schlägt sich dies …"
+    },
+    {
+      "title": "Sport - Erfurt Stadtmarketing GmbH",
+      "url": "https://www.erfurt-marketing.de/themen/sport/",
+      "snippet": "Als eines der fünf Leistungszentren des Olympiastützpunktes Thüringen steht Erfurt für optimale Trainingsbedingungen in den …"
+    }
+  ]
+}

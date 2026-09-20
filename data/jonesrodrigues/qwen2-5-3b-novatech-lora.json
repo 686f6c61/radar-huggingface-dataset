@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "JonesRodrigues/qwen2.5-3b-novatech-lora",
+  "slug": "jonesrodrigues-qwen2-5-3b-novatech-lora",
+  "author": "JonesRodrigues",
+  "url": "https://huggingface.co/JonesRodrigues/qwen2.5-3b-novatech-lora",
+  "created_at": "2026-09-20T17:47:49.000Z",
+  "updated_at": "2026-09-21T18:54:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "unsloth",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 251025222,
+  "storage_human": "251 MB",
+  "base_model": "unsloth/qwen2.5-3b-instruct-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Exercices de maternelle gratuits à imprimer - Ma Maternelle",
+      "url": "https://www.mamaternelle.com/",
+      "snippet": "Vous trouverez ici un catalogue de plus de 5000 activités et exercices de maternelle à destination des petits. L’objectif est de les …"
+    },
+    {
+      "title": "Exercices de Grande section - Ma Maternelle",
+      "url": "https://www.mamaternelle.com/grande-section",
+      "snippet": "Jun 2, 2020 · Téléchargez et imprimez des activités et exercices de grande section de maternelle afin de renforcer les acquis de …"
+    },
+    {
+      "title": "Ma Maternelle",
+      "url": "https://dashboard.mamaternelle.com/",
+      "snippet": "Mot de passe Se souvenir de moi Se connecter"
+    },
+    {
+      "title": "MC en maternelle – ressources pédagogiques pour la maternelle PS …",
+      "url": "http://enmaternelle.fr/",
+      "snippet": "Aug 8, 2026 · «En tant que Partenaire Amazon, je réalise un bénéfice sur les achats remplissant les conditions requises». Si vous …"
+    },
+    {
+      "title": "Maîtresse Lunicole – Bienvenue chez Maîtresse Lunicole. Ressources ...",
+      "url": "https://maitresselunicole.fr/",
+      "snippet": "Dec 20, 2025 · Bienvenue chez Maîtresse Lunicole. Ressources pédagogiques pour les cycles 1, 2 et 3 ! Objets utiles pour la classe, …"
+    }
+  ]
+}

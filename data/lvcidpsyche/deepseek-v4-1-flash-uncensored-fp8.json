@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "LvcidPsyche/DeepSeek-V4.1-Flash-UNCENSORED-FP8",
+  "slug": "lvcidpsyche-deepseek-v4-1-flash-uncensored-fp8",
+  "author": "LvcidPsyche",
+  "url": "https://huggingface.co/LvcidPsyche/DeepSeek-V4.1-Flash-UNCENSORED-FP8",
+  "created_at": "2026-09-20T18:09:34.000Z",
+  "updated_at": "2026-09-20T18:09:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v41",
+    "text-generation",
+    "deepseek",
+    "deepseek-v4.1",
+    "abliterated",
+    "uncensored",
+    "crack",
+    "multimodal",
+    "moe",
+    "fp8",
+    "image-text-to-text",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4.1-Flash",
+    "license:mit",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 763205315794,
+  "parameters_human": "763.21B",
+  "storage_bytes": 510296708312,
+  "storage_human": "510.3 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gebrauchtwagen Sankt Augustin: Auto günstig kaufen",
+      "url": "https://www.autoscout24.de/auto/gebrauchtwagen/nordrhein-westfalen/sankt-augustin/?msockid=2d06459a63b76f980a1f524062866e0f",
+      "snippet": "Gebrauchtwagen & Jahreswagen in Sankt Augustin kaufen und verkaufen bei AutoScout24.de - Europas großem Automarkt » Jetzt …"
+    },
+    {
+      "title": "Gebrauchtwagen und Neuwagen bei AutoScout24",
+      "url": "https://www.autoscout24.de/?msockid=2d06459a63b76f980a1f524062866e0f",
+      "snippet": "Neu- und Gebrauchtwagen sowie Motorräder, Wohnmobile und Nutzfahrzeuge finden Sie auf AutoScout24, dem europaweit größten …"
+    },
+    {
+      "title": "Gebrauchtwagen kaufen in Sankt Augustin - Nordrhein-Westfalen ...",
+      "url": "https://www.kleinanzeigen.de/s-autos/sankt-augustin/c216l1860?msockid=2d06459a63b76f980a1f524062866e0f",
+      "snippet": "Kleinanzeigen: Gebrauchtwagen kaufen oder verkaufen - Jetzt in Sankt Augustin finden oder inserieren! - kleinanzeigen.de"
+    },
+    {
+      "title": "Gebrauchtwagen in Sankt Augustin: Auto in der Nähe kaufen bei …",
+      "url": "https://suchen.mobile.de/auto/sankt-augustin.html?msockid=2d06459a63b76f980a1f524062866e0f",
+      "snippet": "Finde Gebrauchtwagen in Sankt Augustin bei mobile.de – Größter Fahrzeugmarkt in DE Jetzt TÜV-geprüftes Traumauto kaufen oder …"
+    },
+    {
+      "title": "Gebrauchtwagen kaufen Sankt Augustin - meinestadt.de",
+      "url": "https://auto.meinestadt.de/sankt-augustin/gebrauchtwagen",
+      "snippet": "Spare dir lange Wartezeiten – Kaufe dein Kfz-Kennzeichen online. Alles direkt auf einen Blick – Modell-Vorstellung, Angebote, …"
+    }
+  ]
+}

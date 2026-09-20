@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "lschmidt/rainshift-dm",
+  "slug": "lschmidt-rainshift-dm",
+  "author": "lschmidt",
+  "url": "https://huggingface.co/lschmidt/rainshift-dm",
+  "created_at": "2026-09-20T13:58:58.000Z",
+  "updated_at": "2026-09-20T14:06:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-image",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "precipitation",
+    "downscaling",
+    "climate",
+    "image-to-image",
+    "dataset:RainShift/rainshift",
+    "arxiv:2507.04930",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1190523632,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "esseJ：我讲个有点被忽略的角度。 90 后因为是 digital native 的第一代人，我们的生命体验和身体本身，是被计算机技术和数字尺度 …"
+    },
+    {
+      "title": "2026年笔记本电脑显卡天梯图（9月）",
+      "url": "https://www.zhihu.com/tardis/zm/art/376320771",
+      "snippet": "笔记本电脑显卡分为核显和独显，独显基本是NVIDIA一家独大，如果没有英伟达，显卡性能将会退一大步。本文为2026笔记本电脑显 …"
+    },
+    {
+      "title": "知乎 - 知乎",
+      "url": "https://www.zhihu.com/selection/",
+      "snippet": "知乎是一个中文互联网高质量问答社区和创作者聚集的原创内容平台，提供知识共享、互动交流和个人成长机会。"
+    },
+    {
+      "title": "酷讯旅游 - 知乎",
+      "url": "https://www.zhihu.com/topic/19581205/hot",
+      "snippet": "酷讯旅游网（ 机票,国际机票,机票查询,机票预订,特价机票）是中国领先的在线旅游媒体和专业的旅游搜索引擎，是全球最大在线旅游 …"
+    }
+  ]
+}

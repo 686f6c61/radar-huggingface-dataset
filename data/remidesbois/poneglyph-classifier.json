@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Remidesbois/Poneglyph-Classifier",
+  "slug": "remidesbois-poneglyph-classifier",
+  "author": "Remidesbois",
+  "url": "https://huggingface.co/Remidesbois/Poneglyph-Classifier",
+  "created_at": "2026-09-20T17:28:44.000Z",
+  "updated_at": "2026-09-20T17:30:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "image-classification",
+    "manga",
+    "mobilenetv3",
+    "one-piece",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12305984,
+  "storage_human": "12 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chestionare auto DRPCIV (DGPCI) 2026 explicate audio video",
+      "url": "https://www.scoalarutiera.ro/",
+      "snippet": "Pe Școala Rutieră găsiți cele mai noi chestionare auto, actualizate constant conform cu ultimele modificări ale Codului Rutier din anul …"
+    },
+    {
+      "title": "Mediu de invatare Cat. B (B, B1)",
+      "url": "https://www.scoalarutiera.ro/intrebari-posibile-drpciv-categoria-b",
+      "snippet": "Pregătire teoretică în vederea obținerii permisului de conducere pentru categoria B (autoturisme sau alte autovehicule de până la 3,5 …"
+    },
+    {
+      "title": "Școala Rutieră (DRPCIV) – Aplicații pe Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.app.scoalarutiera&hl=ro",
+      "snippet": "Școala Rutieră este cea mai complexă și utilă aplicație mobile/web pentru cei ce vor să obțină permisul de conducere din prima …"
+    },
+    {
+      "title": "Școala Rutieră (DRPCIV) - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.app.scoalarutiera&hl=en-US",
+      "snippet": "Școala Rutieră is the most complex and useful mobile/web application for those who want to get their driving license on the first try. …"
+    },
+    {
+      "title": "Chestionare Auto DRPCIV 2026 - Teste Explicate DGPCI",
+      "url": "https://scoaladrpciv.ro/",
+      "snippet": "Chestionare auto drpciv actualizate 2026 pentru toate categoriile A,B,C,D,E si Redobandire. Teste DGPCI cu explicatii pentru a …"
+    }
+  ]
+}

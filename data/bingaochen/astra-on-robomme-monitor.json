@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "bingaochen/Astra-on-RoboMME-Monitor",
+  "slug": "bingaochen-astra-on-robomme-monitor",
+  "author": "bingaochen",
+  "url": "https://huggingface.co/bingaochen/Astra-on-RoboMME-Monitor",
+  "created_at": "2026-09-20T17:55:55.000Z",
+  "updated_at": "2026-09-21T20:49:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "robotics",
+    "robomme",
+    "lora",
+    "visual-completion-monitor",
+    "qwen3-vl",
+    "image-text-to-text",
+    "en",
+    "base_model:Qwen/Qwen3-VL-4B-Instruct",
+    "base_model:adapter:Qwen/Qwen3-VL-4B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 132195448,
+  "storage_human": "132 MB",
+  "base_model": "Qwen/Qwen3-VL-4B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HFBoards - NHL Message Board and Forum for National Hockey League",
+      "url": "https://forums.hfboards.com/",
+      "snippet": "Sep 12, 2026 · HFboards is the largest ice hockey discussion forum, covering the NHL, College, Europe, and any other area of major …"
+    },
+    {
+      "title": "OHL | HFBoards - NHL Message Board and Forum for National Hockey …",
+      "url": "https://forums.hfboards.com/forums/ohl.148/",
+      "snippet": "Aug 23, 2026 · NFL Survivor I-A 2026 - DOUBLE ELIMINATION is now open Please click here for info and to join the pool"
+    },
+    {
+      "title": "Montreal Canadiens | HFBoards - NHL Message Board and Forum for ...",
+      "url": "https://forums.hfboards.com/forums/montreal-canadiens.16/",
+      "snippet": "Jun 28, 2025 · Sticky threads Sticky HF Habs: 2027 NHL Draft Talk: Pas bons pour DuPont Jee Jun 27, 2026 4 5 6 Replies 133 …"
+    },
+    {
+      "title": "Edmonton Oilers | HFBoards - NHL Message Board and Forum for …",
+      "url": "https://forums.hfboards.com/forums/edmonton-oilers.38/",
+      "snippet": "Aug 28, 2026 · Confirmed with Link: 2026 Draft: 2nd Pick - Malcom Gastrin (F) Jersey Fan 12 Pulju eager to return to NHL Prospect …"
+    },
+    {
+      "title": "Toronto Maple Leafs | HFBoards - NHL Message Board and Forum for ...",
+      "url": "https://forums.hfboards.com/forums/toronto-maple-leafs.17/",
+      "snippet": "Mar 14, 2026 · Mark Shapiro might be put in charge of Leafs, Raptors, and Jays. While Keith Pelley moves to a broadcast and media …"
+    }
+  ]
+}

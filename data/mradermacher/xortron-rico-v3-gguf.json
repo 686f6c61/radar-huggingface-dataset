@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "mradermacher/XORTRON-RICO-v3-GGUF",
+  "slug": "mradermacher-xortron-rico-v3-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/XORTRON-RICO-v3-GGUF",
+  "created_at": "2026-09-20T14:49:57.000Z",
+  "updated_at": "2026-09-20T16:15:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "merge",
+    "mergekit",
+    "text-generation-inference",
+    "unsloth",
+    "uncensored",
+    "harmful",
+    "xortron",
+    "heretic",
+    "abliterated",
+    "toxic",
+    "experimental",
+    "not-for-all-audiences",
+    "en",
+    "base_model:darkc0de/XORTRON-RICO-v3",
+    "base_model:quantized:darkc0de/XORTRON-RICO-v3",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 190780471136,
+  "storage_human": "190.8 GB",
+  "base_model": "darkc0de/XORTRON-RICO-v3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gmail Help",
+      "url": "https://support.google.com/mail/?hl=en",
+      "snippet": "Official Gmail Help Center where you can find tips and tutorials on using Gmail and other answers to frequently asked questions."
+    },
+    {
+      "title": "Google Help",
+      "url": "https://support.google.com/",
+      "snippet": "If you're having trouble accessing a Google product, there's a chance we're currently experiencing a temporary problem. You can …"
+    },
+    {
+      "title": "The back page of the internet. - Reddit",
+      "url": "https://www.reddit.com/r/soccer/",
+      "snippet": "The football subreddit. News, results, and discussion about the beautiful game."
+    },
+    {
+      "title": "r/all - Reddit",
+      "url": "https://www.reddit.com/r/all/",
+      "snippet": "Today's top content from hundreds of thousands of Reddit communities."
+    },
+    {
+      "title": "curl www.google.com works differently when the url is called from ...",
+      "url": "https://stackoverflow.com/questions/11563717/curl-www-google-com-works-differently-when-the-url-is-called-from-browser-direct",
+      "snippet": "But when I type the similar url (www.google.com) in browser (chrome) I get redirected to www.google.co.in Why am I not able to see …"
+    }
+  ]
+}

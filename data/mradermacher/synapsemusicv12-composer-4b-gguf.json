@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "mradermacher/SynapseMusicV12-Composer-4B-GGUF",
+  "slug": "mradermacher-synapsemusicv12-composer-4b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/SynapseMusicV12-Composer-4B-GGUF",
+  "created_at": "2026-09-20T14:24:45.000Z",
+  "updated_at": "2026-09-20T14:47:29.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "audio",
+    "music",
+    "text2music",
+    "en",
+    "base_model:SYNAPSEai1/SynapseMusicV12-Composer-4B",
+    "base_model:quantized:SYNAPSEai1/SynapseMusicV12-Composer-4B",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4189554176,
+  "parameters_human": "4.19B",
+  "storage_bytes": 38297273536,
+  "storage_human": "38.3 GB",
+  "base_model": "SYNAPSEai1/SynapseMusicV12-Composer-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BitLocker-Laufwerkverschlüsselung | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/windows/security/encryption/bitlocker-drive-encryption",
+      "snippet": "Mit der BitLocker-Laufwerkverschlüsselung können Sie ein bestimmtes Laufwerk oder bestimmte Laufwerke auf einem Gerät, auf …"
+    },
+    {
+      "title": "Geräteverschlüsselung in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/windows/security/encryption/device-encryption-in-windows",
+      "snippet": "Die Geräteverschlüsselung ist ein Windows-Feature, mit dem die BitLocker-Verschlüsselung automatisch für das …"
+    },
+    {
+      "title": "Was ist BitLocker? - heise online",
+      "url": "https://www.heise.de/tipps-tricks/Was-ist-BitLocker-10651052.html",
+      "snippet": "Oct 2, 2025 · Mit BitLocker sollen Ihre Daten geschützt werden. Was genau Bitlocker ist und wie es funktioniert, erklären wir Ihnen hier."
+    },
+    {
+      "title": "BitLocker Erklärung - microsoft.com",
+      "url": "https://www.microsoft.com/de-de/haeufige-fragen/msfaq/bitlocker?msockid=3713f113977c67ca2734e6c99654662e",
+      "snippet": "BitLocker ist eine in Windows integrierte Verschlüsselungsfunktion, die Laufwerke schützt, indem sie deren Daten mit einer starken …"
+    },
+    {
+      "title": "BitLocker – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/BitLocker",
+      "snippet": "BitLocker ist eine proprietäre [1] Festplattenverschlüsselung des Unternehmens Microsoft, die zu den Features von Windows gehört. …"
+    }
+  ]
+}

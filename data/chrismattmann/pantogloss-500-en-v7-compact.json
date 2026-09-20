@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "chrismattmann/pantogloss-500-en-v7-compact",
+  "slug": "chrismattmann-pantogloss-500-en-v7-compact",
+  "author": "chrismattmann",
+  "url": "https://huggingface.co/chrismattmann/pantogloss-500-en-v7-compact",
+  "created_at": "2026-09-20T18:42:54.000Z",
+  "updated_at": "2026-09-20T18:47:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "pantogloss",
+  "languages": [],
+  "tags": [
+    "pantogloss",
+    "tensorflow",
+    "keras",
+    "many-to-english",
+    "compact",
+    "translation",
+    "base_model:chrismattmann/pantogloss-500-en-v7",
+    "base_model:finetune:chrismattmann/pantogloss-500-en-v7",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 564824171,
+  "storage_human": "565 MB",
+  "base_model": "chrismattmann/pantogloss-500-en-v7",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "百度知道 - 全球领先中文互动问答平台",
+      "url": "https://zhidao.baidu.com/",
+      "snippet": "百度知道是全球领先的中文问答互动平台，每天为数亿网民答疑解惑。百度知道通过AI技术实现智能检索和智能推荐，让您的每个疑问 …"
+    },
+    {
+      "title": "学生综合素质评价登录入口官网：https://edu.huihaiedu.cn/",
+      "url": "https://zhidao.baidu.com/question/2019706094175162108.html",
+      "snippet": "学生 综合素质评价 登录入口官网： https://edu.huihaiedu.cn/ 综合素质评价是什么 “综合素质评价”指的是在每个学期的期末或每个学年 …"
+    },
+    {
+      "title": "俄罗斯搜索引擎网址 yandex官网入口直达 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/725567645356284605.html",
+      "snippet": "Nov 11, 2025 · 俄罗斯搜索引擎网址 yandex官网入口直达Yandex的官方网址如下：国际版入口：https://yandex.com/俄罗斯本土版入 …"
+    },
+    {
+      "title": "江苏省基础教育学籍管理系统登录地址 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/1183797546615327099.html",
+      "snippet": "江苏省基础教育学籍管理系统登录地址江苏省基础教育学籍管理系统登录地址： https://xjgl.jse.edu.cn/uids/index.jsp 江苏于2008年 ..."
+    },
+    {
+      "title": "telegeram官网入口 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/564033311196393932.html",
+      "snippet": "Aug 8, 2023 · telegeram官网入口telegeram官网入口两个电报telegram官方网页版 1、https://web.telegram.org/k/ 2 …"
+    }
+  ]
+}

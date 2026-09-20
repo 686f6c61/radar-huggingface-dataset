@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "bacpham0911/ggml-large-v3-q5_0",
+  "slug": "bacpham0911-ggml-large-v3-q5_0",
+  "author": "bacpham0911",
+  "url": "https://huggingface.co/bacpham0911/ggml-large-v3-q5_0",
+  "created_at": "2026-09-20T15:52:09.000Z",
+  "updated_at": "2026-09-20T16:00:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1081140203,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "解密国外获奖魔术“神奇的镜子”，镜子前放什么，就能变出什么！_哔哩 …",
+      "url": "https://www.bilibili.com/video/BV122YvzCE2V/",
+      "snippet": "Aug 16, 2025 · 解密大卫神奇的冻结卡片魔术，不愧是天才魔术师，在几千人面前，原地消失不见！ 揭秘来了，解密5个顶级骰子幻 …"
+    },
+    {
+      "title": "解密国外获奖魔术“神奇的镜子”，镜子前放什么，就能变出什么！ 魔术 …",
+      "url": "https://www.douyin.com/video/7534296724538477850",
+      "snippet": "Aug 3, 2025 · 魔术师竟然在展示了镜子的背部以后，还能变出帽子、蜡烛、头骨和大量的钞票，今天小胡就为大家深度分解背后的原 …"
+    },
+    {
+      "title": "刘谦最神奇的镜子魔术,20年后终于揭秘!隔着镜子居然能吹灭蜡烛?一眼破真相!【刘谦魔术秀 …",
+      "url": "https://www.youtube.com/watch?v=u4MmGhOQoOM",
+      "snippet": "Dec 3, 2025 · 播放列表： • 刘谦魔术秀|刘谦首发魔术综艺，亲自解密魔术真相【欢迎订阅】：https://bit.... 欢迎订阅： / @奇闻故事汇 …"
+    },
+    {
+      "title": "巧虎镜面魔盒怎么玩-抖音",
+      "url": "https://www.douyin.com/shipin/7447714624209700890",
+      "snippet": "Dec 13, 2024 · 今天要表演的是神奇的镜子魔法。 当当当当，请看镜子魔盒。 哇哦，现在我要把一枚纽扣放入镜子魔盒，猜猜会发生 …"
+    },
+    {
+      "title": "★2024 天洋2025道具魔术教学 神奇魔方 金字塔 镜子 戒指盒 白纸变钞 …",
+      "url": "https://www.bilibili.com/video/BV1E8mYYEESQ/",
+      "snippet": "Nov 12, 2024 · ★2024 天洋2025道具魔术教学 神奇魔方 金字塔 镜子 戒指盒 白纸变钞票共计5条视频，包括：神奇的魔方、神奇的金 …"
+    }
+  ]
+}

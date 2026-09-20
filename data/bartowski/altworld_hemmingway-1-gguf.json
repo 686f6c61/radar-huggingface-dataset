@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "bartowski/Altworld_Hemmingway-1-GGUF",
+  "slug": "bartowski-altworld_hemmingway-1-gguf",
+  "author": "bartowski",
+  "url": "https://huggingface.co/bartowski/Altworld_Hemmingway-1-GGUF",
+  "created_at": "2026-09-20T15:36:53.000Z",
+  "updated_at": "2026-09-20T17:00:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "qwen3.8",
+    "chat",
+    "creative-writing",
+    "altworld",
+    "text-generation",
+    "en",
+    "base_model:Altworld/Hemmingway-1",
+    "base_model:quantized:Altworld/Hemmingway-1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 23,
+  "downloads_30d": 4372,
+  "trending_score": 23,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 444919474592,
+  "storage_human": "444.9 GB",
+  "base_model": "Altworld/Hemmingway-1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TeeVeeing",
+      "url": "https://app.teeveeing.com/",
+      "snippet": "Teeveeing - Enjoy TV-ing Abroad. TV for Expats & Travellers."
+    },
+    {
+      "title": "TeeVeeing",
+      "url": "https://app.teeveeing.com/sso/",
+      "snippet": "Explore International TV Channels on TeeVeeing: Your Global TV Guide - Teeveeing"
+    },
+    {
+      "title": "More info - SatTV",
+      "url": "https://teeveeing.com/more-info/",
+      "snippet": "Personal Cloud Video Recording (Rewind) Members can buy an add-on for personal Cloud Video Recording (CVR) storage to record …"
+    },
+    {
+      "title": "Home TV via Satellite for Expats & Travellers",
+      "url": "https://mail.teeveeing.com/",
+      "snippet": "Enjoy TV from your home country mostly anywhere in Europe with TeeVeeing. Access UK, French, Irish, and German channels …"
+    },
+    {
+      "title": "Terms of Service - SatTV - Teeveeing",
+      "url": "https://teeveeing.com/terms-of-service/",
+      "snippet": "(Published June 1, 2024) What is new? We wrote them so you can understand them without being a lawyer. We want to make sure …"
+    }
+  ]
+}

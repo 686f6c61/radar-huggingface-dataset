@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "thealper2/mt5-small-hashtag-generation",
+  "slug": "thealper2-mt5-small-hashtag-generation",
+  "author": "thealper2",
+  "url": "https://huggingface.co/thealper2/mt5-small-hashtag-generation",
+  "created_at": "2026-09-20T18:08:41.000Z",
+  "updated_at": "2026-09-20T18:29:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "multilingual",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mt5",
+    "text2text-generation",
+    "hashtag-generation",
+    "seq2seq",
+    "social-media",
+    "text-generation",
+    "multilingual",
+    "en",
+    "dataset:sm4rtdev/x_dataset_240",
+    "base_model:google/mt5-small",
+    "base_model:finetune:google/mt5-small",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 300176768,
+  "parameters_human": "300.2M",
+  "storage_bytes": 1217079276,
+  "storage_human": "1.2 GB",
+  "base_model": "google/mt5-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Past Weather in Seattle, Washington, USA — Yesterday or Further …",
+      "url": "https://www.timeanddate.com/weather/usa/seattle/historic",
+      "snippet": "High & Low Weather Summary for the Past Weeks ... Note: Actual official high and low records may vary slightly from our data, if they …"
+    },
+    {
+      "title": "Seattle Past Weather - LocalConditions.com",
+      "url": "https://www.localconditions.com/us/seattle/washington/weather/past/",
+      "snippet": "seattle past weather data including previous temperature, barometric pressure, humidity, dew point, rain total, and wind conditions."
+    },
+    {
+      "title": "Seattle Past Weather - Last 30 days - LocalConditions.com",
+      "url": "https://www.localconditions.com/weather-seattle-washington/98101/past.php",
+      "snippet": "Seattle past weather data including previous temperature, barometric pressure, humidity, dew point, rain total, and wind conditions."
+    },
+    {
+      "title": "Seattle, WA Weather History | Weather Underground",
+      "url": "https://www.wunderground.com/history/daily/us/wa/seattle",
+      "snippet": "Weather Underground provides local & long-range weather forecasts, weather reports, maps & tropical weather conditions for the …"
+    },
+    {
+      "title": "Past Weather by Date & Place | PastWeatherInfo",
+      "url": "https://pastweatherinfo.com/",
+      "snippet": "Free past weather lookup: see past weather history, temperature, rain and snow conditions on any date — for any city, US ZIP code, …"
+    }
+  ]
+}

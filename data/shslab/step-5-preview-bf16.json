@@ -1,0 +1,95 @@
+{
+  "schema": 1,
+  "id": "SHSLab/Step-5-Preview-BF16",
+  "slug": "shslab-step-5-preview-bf16",
+  "author": "SHSLab",
+  "url": "https://huggingface.co/SHSLab/Step-5-Preview-BF16",
+  "created_at": "2026-09-20T12:34:30.000Z",
+  "updated_at": "2026-09-20T20:44:36.000Z",
+  "license": "stepfun-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh",
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "step3p5v",
+    "text-generation",
+    "stepfun",
+    "step-5",
+    "moe",
+    "mixture-of-experts",
+    "agentic",
+    "coding",
+    "software-engineering",
+    "long-context",
+    "1m-context",
+    "multimodal",
+    "image-text-to-text",
+    "image",
+    "video",
+    "sparse-attention",
+    "gqa",
+    "financial-analysis",
+    "deep-research",
+    "tool-calling",
+    "parallel-tool-calling",
+    "json-schema",
+    "conversational",
+    "custom_code",
+    "en",
+    "zh",
+    "multilingual",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 604339504832,
+  "parameters_human": "604.34B",
+  "storage_bytes": 1214893643423,
+  "storage_human": "1214.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "法语的几个特殊的字母，列出来一下 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/94366850.html",
+      "snippet": "大写：À、Â、È、É、Ê、Ë、 Î 、Ï 、Ô 、Ö、 Ù、 Û 、Ç 、Œ 、Æ、 €。 小写：à、â、è、é、ê、 î 、ï、 ô、 ö、 ù、 û 、ü、 ç、 œ …"
+    },
+    {
+      "title": "一个方框内有个勾（☑）怎么打出这符号_百度知道",
+      "url": "https://zhidao.baidu.com/question/136956635.html",
+      "snippet": "一个方框内有个勾（☑）怎么打出这符号在Word文档中，如何输入像这样可以打勾打叉的方框呢？有不止一种方法能够输入这样的方 …"
+    },
+    {
+      "title": "波浪号（～）是什么意思，正规的用法是什么？ - 知乎",
+      "url": "https://www.zhihu.com/question/19615526",
+      "snippet": "一般常见的几个波浪线型符号（常见度由高到低）（en.wikipedia.org/wiki/T）： 「~」 U+007E TILDE（最常见，英文状态下 shift 加 1 …"
+    },
+    {
+      "title": ".DS_Store 文件是什么？ - 知乎",
+      "url": "https://www.zhihu.com/question/20345704",
+      "snippet": "此文件名前缀带了”.“，据此推测这应该是一个隐藏文件。 在「访达」里显示一个隐藏文件不是难题，于是她同时按住快捷键 …"
+    },
+    {
+      "title": "字节、KB、MB、GB 之间的换算关系_百度知道",
+      "url": "https://zhidao.baidu.com/question/6318898.html",
+      "snippet": "字节、KB、MB、GB 之间的换算关系数据存储以10进制表示：1B（byte，字节）= 8 bit（见下文）；1KB（Kilobyte，千字 …"
+    }
+  ]
+}

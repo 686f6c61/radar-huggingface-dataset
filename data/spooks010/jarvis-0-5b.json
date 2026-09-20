@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "spooks010/Jarvis-0.5B",
+  "slug": "spooks010-jarvis-0-5b",
+  "author": "spooks010",
+  "url": "https://huggingface.co/spooks010/Jarvis-0.5B",
+  "created_at": "2026-09-20T18:05:34.000Z",
+  "updated_at": "2026-09-20T18:05:34.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "qwen2",
+    "text-generation",
+    "JArvis",
+    "conversational",
+    "dataset:Abhaykoul/JARVIS",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 1385903232,
+  "storage_human": "1.4 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wie zijn we? -Detandt Simon - NL",
+      "url": "https://www.detandt.com/AProposDeDetandtSimon.html?lang=nl",
+      "snippet": "Detandt-Simon: al meer dan 35 jaar experts in rook & warmte, ventilatie, thermische accumulatoren en waterbehandeling Al meer …"
+    },
+    {
+      "title": "Solutions HVAC | Detandt-Simon",
+      "url": "https://www.detandt.com/Accueil.html",
+      "snippet": "Detandt-Simon offre des solutions innovantes en chauffage, ventilation et traitement de l'eau, avec des produits de qualité et un …"
+    },
+    {
+      "title": "Shop – Detandt-Simon Support",
+      "url": "https://support.detandt.com/shop",
+      "snippet": "Store Fashion brand Copyright 2023 Detandt-Simon SA. All Rights Reserved."
+    },
+    {
+      "title": "DS Promo — Promotion d’automne | Detandt Simon",
+      "url": "https://share.detandt.com/DS-Promo/index.html",
+      "snippet": "DS Promo – Detandt Simon. Promotion d’automne : faites le plein de bonnes affaires HVAC du 17 août au 15 octobre 2026 : offres …"
+    },
+    {
+      "title": "Boiler ECS thermodynamique mural TESY AquaThermica COMPACT …",
+      "url": "http://www.dsi.detandt.com/Boiler-ECS-thermodynamique-mural-TESY-AquaThermica-COMPACT-150-L-A%E2%80%93A2BATHC150%E2%80%93m702.html?lang=fr",
+      "snippet": "Nom: Ballon thermodynamique mural Catégorie: Eau Chaude Sanitaire (ECS) Gamme: Thermodynamique Emaillé Capacité (L): 150 …"
+    }
+  ]
+}

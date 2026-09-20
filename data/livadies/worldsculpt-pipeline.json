@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "livadies/worldsculpt-pipeline",
+  "slug": "livadies-worldsculpt-pipeline",
+  "author": "livadies",
+  "url": "https://huggingface.co/livadies/worldsculpt-pipeline",
+  "created_at": "2026-09-20T18:25:55.000Z",
+  "updated_at": "2026-09-21T02:55:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2088061889,
+  "storage_human": "2.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/?gl=GB&hl=en-GB",
+      "snippet": "Enjoy the videos and music you love, upload original content and share it all with friends, family and the world on YouTube."
+    },
+    {
+      "title": "Home - YouTube",
+      "url": "https://www.youtube.com/@trending",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "YouTube Kids",
+      "url": "https://www.youtubekids.com/",
+      "snippet": "YouTube Kids provides a more contained environment for kids to explore YouTube and makes it easier for parents and caregivers to …"
+    },
+    {
+      "title": "YouTube - Google Accounts",
+      "url": "https://accounts.google.com/InteractiveLogin?service=youtube",
+      "snippet": "Share your videos with friends, family, and the world."
+    },
+    {
+      "title": "YouTube - Facebook",
+      "url": "https://www.facebook.com/youtube/",
+      "snippet": "YouTube. 108,871,954 followers · 114,413 talking about this. The latest and greatest music videos, trends and channels from YouTube."
+    }
+  ]
+}

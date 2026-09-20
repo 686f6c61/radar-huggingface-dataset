@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "noffy/hastejev-10m",
+  "slug": "noffy-hastejev-10m",
+  "author": "noffy",
+  "url": "https://huggingface.co/noffy/hastejev-10m",
+  "created_at": "2026-09-20T13:54:29.000Z",
+  "updated_at": "2026-09-20T13:54:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "safetensors",
+    "hastejev",
+    "jev",
+    "hastejev-10m",
+    "decision-engine",
+    "system-1",
+    "pica",
+    "zero-bias",
+    "low-latency",
+    "non-generative",
+    "autonomous-agents",
+    "browser-control",
+    "web-automation",
+    "agentic-ai",
+    "fast-inference",
+    "decision-making",
+    "calibration",
+    "quantized",
+    "int8",
+    "int4",
+    "fp16",
+    "feature-extraction",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 140088573,
+  "storage_human": "140 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lidl stores in [Country name]",
+      "url": "https://www.lidl.sk/s/sk-SK/vyhladavac-predajni/",
+      "snippet": "Find your Lidl store quickly and easily with the store finder or by city. Find offers and flyers for a Lidl store nearby."
+    },
+    {
+      "title": "Lidl.sk | Sa oplatí.",
+      "url": "https://www.lidl.sk/",
+      "snippet": "Na lidl.sk nájdeš každý deň aktuálnu ponuku v predajniach a množstvo online produktov za skvelé ceny."
+    },
+    {
+      "title": "Lidl Sabinov - Námestie Slobody, 1919/84 | Letáky a Otváracie Hodiny ...",
+      "url": "https://www.tiendeo.sk/obchody/sabinov/n%C3%A1mestie-slobody/402",
+      "snippet": "Na Tiendeo vám poskytujeme aktuálne informácie o Lidl, vrátane otváracích hodín, exkluzívnych ponúk a presnej polohy predajne na …"
+    },
+    {
+      "title": "Predajne Lidl",
+      "url": "https://www.lidl-predajne.sk/",
+      "snippet": "Predajne Lidl v SR , Lidl Banská Bystrica, Lidl Bardejov, Lidl Bratislava, Lidl Dunajská Streda, Lidl Komárno, Lidl Košice, Lidl …"
+    },
+    {
+      "title": "Lidl Sabinov - Námestie Slobody 1919/84, 083 01 Sabinov | Zlacnene.sk",
+      "url": "https://www.zlacnene.sk/predajna/lidl-sabinov-nam-slobody-1919-84/?geo=50.08,14.44",
+      "snippet": "Lidl do 23.8."
+    }
+  ]
+}

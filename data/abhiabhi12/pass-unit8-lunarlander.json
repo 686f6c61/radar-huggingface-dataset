@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Abhiabhi12/pass-unit8-lunarlander",
+  "slug": "abhiabhi12-pass-unit8-lunarlander",
+  "author": "Abhiabhi12",
+  "url": "https://huggingface.co/Abhiabhi12/pass-unit8-lunarlander",
+  "created_at": "2026-09-20T16:09:32.000Z",
+  "updated_at": "2026-09-20T16:09:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "sample-factory",
+  "languages": [],
+  "tags": [
+    "sample-factory",
+    "LunarLander-v2",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ppo",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Krunker.io - Free Online Multiplayer FPS Game | Play Now",
+      "url": "https://krunker.io/",
+      "snippet": "Play Krunker.io - the ultimate free browser FPS game! Join millions of players in fast-paced multiplayer battles. No download …"
+    },
+    {
+      "title": "Krunker Hub - Gaming Community, Trading & Social Features",
+      "url": "https://krunker.io/social.html",
+      "snippet": "Join the Krunker Hub - the ultimate gaming community! Trade items, connect with players, join clans, and discover new friends. Free …"
+    },
+    {
+      "title": "ADS API - KrunkScript Docs",
+      "url": "https://docs.krunker.io/api/ads",
+      "snippet": "ADS.playVideo client Play a video advertisement (client-side only) Signature: action ()"
+    },
+    {
+      "title": "GAME API - KrunkScript Docs",
+      "url": "https://docs.krunker.io/api/game",
+      "snippet": "GAME.changeGame client server Change to a different game map (client-only) Signature: action (str, obj) Parameters:"
+    },
+    {
+      "title": "Krunker Classes Guide - All Classes & Loadout Strategies",
+      "url": "https://beta.krunker.io/guides/classes/",
+      "snippet": "Krunker Classes & Loadouts Guide Discover all available character classes in Krunker and learn how to build the perfect loadout for …"
+    }
+  ]
+}

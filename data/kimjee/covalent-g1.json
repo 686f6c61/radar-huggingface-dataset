@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "KimJEE/Covalent-G1",
+  "slug": "kimjee-covalent-g1",
+  "author": "KimJEE",
+  "url": "https://huggingface.co/KimJEE/Covalent-G1",
+  "created_at": "2026-09-20T14:09:01.000Z",
+  "updated_at": "2026-09-20T14:09:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Přihlášení | Škola Online",
+      "url": "https://www.skolaonline.cz/prihlaseni/",
+      "snippet": "Podívejte se, koho se změna týká, jaké hodnoty používat a kde je správně zadat ve Škole Online. Staňte se mistry ve správě školní …"
+    },
+    {
+      "title": "Škola Online – Spolehlivý partner pro školní správu",
+      "url": "https://www.skolaonline.cz/",
+      "snippet": "Škola Online vám umožní rychle a bezpečně zpracovávat veškerou školní agendu z webového prohlížeče bez nutnosti jakékoliv další …"
+    },
+    {
+      "title": "Vstup do aplikace - Škola Online",
+      "url": "https://aplikace.skolaonline.cz/RegistraceUziv/App/KRU004_VstupDoSystemu.aspx",
+      "snippet": "Vyzkoušejte také mobilní aplikaci Škola Online, do které se přihlásíte stejnými přihlašovacími údaji jako do webové aplikace. Mobilní …"
+    },
+    {
+      "title": "Škola Online – Přihlášení uživatele do školního ...",
+      "url": "https://skola.plzen-edu.cz/SOL/Prihlaseni.aspx",
+      "snippet": "Informace o plzeňských školách a jídelnách na jednom místě. Cílem našich volnočasových aktivit je podpoření zájmu dětí o …"
+    },
+    {
+      "title": "Škola | Škola Online",
+      "url": "https://www.skolaonline.cz/kategorie/skola/",
+      "snippet": "V systému Škola Online jsme nově zpřístupnili kriteriální hodnocení žáků."
+    }
+  ]
+}

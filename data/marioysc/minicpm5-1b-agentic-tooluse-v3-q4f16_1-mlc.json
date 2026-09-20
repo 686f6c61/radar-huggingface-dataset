@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "marioysc/MiniCPM5-1B-Agentic-Tooluse-v3-q4f16_1-MLC",
+  "slug": "marioysc-minicpm5-1b-agentic-tooluse-v3-q4f16_1-mlc",
+  "author": "marioysc",
+  "url": "https://huggingface.co/marioysc/MiniCPM5-1B-Agentic-Tooluse-v3-q4f16_1-MLC",
+  "created_at": "2026-09-20T19:39:30.000Z",
+  "updated_at": "2026-09-20T19:40:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlc",
+    "webllm",
+    "webgpu",
+    "llama",
+    "minicpm5",
+    "tool-calling",
+    "function-calling",
+    "quantized",
+    "text-generation",
+    "en",
+    "base_model:ewin-reg/MiniCPM5-1B-Agentic-Tooluse-v3-Merged-FP16",
+    "base_model:quantized:ewin-reg/MiniCPM5-1B-Agentic-Tooluse-v3-Merged-FP16",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 614335044,
+  "storage_human": "614 MB",
+  "base_model": "ewin-reg/MiniCPM5-1B-Agentic-Tooluse-v3-Merged-FP16",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Avram Iancu: De la Crăişorul Munţilor la Umbra Sa – O Analiză a ...",
+      "url": "https://online.ratb.ro/avram-iancu-de-la-craisorul-muntilor-la-umbra-sa-o-analiza-a-tragicului-destinului-liderului-roman/",
+      "snippet": "Aug 22, 2026 · Avram Iancu, cunoscut drept „Crăişorul Munţilor”, este o figură emblematică în istoria română, reprezentând lupta …"
+    },
+    {
+      "title": "Avram Iancu - Wikipedia",
+      "url": "https://ro.wikipedia.org/wiki/Avram_Iancu",
+      "snippet": "Avram Iancu (n. 1824, Avram Iancu, Imperiul Austriac – d. 10 septembrie 1872, Baia de Criș, Austro-Ungaria) [6] a fost un avocat …"
+    },
+    {
+      "title": "Avram Iancu - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Avram_Iancu",
+      "snippet": "Avram Iancu (Romanian: [aˈvram ˈjaŋku]; 1824 – 10 September 1872) was a Transylvanian Romanian lawyer who played an …"
+    },
+    {
+      "title": "Lider Iancu - Facebook",
+      "url": "https://www.facebook.com/profile.php/?id=61580485752862",
+      "snippet": "Lider Iancu is on Facebook. Join Facebook to connect with Lider Iancu and others you may know. Facebook gives people the power …"
+    },
+    {
+      "title": "LIDER – Leadership inovator pentru dezvoltarea educației responsabile ...",
+      "url": "https://cnai-brad.ro/2026/05/21/lider-leadership-inovator-pentru-dezvoltarea-educatiei-responsabile/",
+      "snippet": "May 21, 2026 · Conducerea Liceului Teoretic „Avram Iancu” Brad a participat la programul de formare „LIDER – Leadership inovator …"
+    }
+  ]
+}

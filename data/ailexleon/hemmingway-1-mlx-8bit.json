@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "ailexleon/Hemmingway-1-mlx-8Bit",
+  "slug": "ailexleon-hemmingway-1-mlx-8bit",
+  "author": "ailexleon",
+  "url": "https://huggingface.co/ailexleon/Hemmingway-1-mlx-8Bit",
+  "created_at": "2026-09-20T18:51:03.000Z",
+  "updated_at": "2026-09-20T19:16:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Altworld/Hemmingway-1",
+    "base_model:quantized:Altworld/Hemmingway-1",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895993856,
+  "parameters_human": "26.90B",
+  "storage_bytes": 28599709840,
+  "storage_human": "28.6 GB",
+  "base_model": "Altworld/Hemmingway-1",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Moravské Lieskové - Oficiálne stránky obce",
+      "url": "https://moravskelieskove.sk/",
+      "snippet": "Sep 4, 2026 · Viac ako polovica katastrálneho územia patrí do Chránenej krajinnej oblasti Bielych Karpát. Moravské Lieskové leží …"
+    },
+    {
+      "title": "Moravské Lieskové - Wikipédia",
+      "url": "https://sk.wikipedia.org/wiki/Moravsk%C3%A9_Lieskov%C3%A9",
+      "snippet": "Moravské Lieskové je obec na Slovensku v okrese Nové Mesto nad Váhom. Moravské Lieskové je rozsiahla kopaničiarska obec na …"
+    },
+    {
+      "title": "Moravské Lieskové - Wikipedie",
+      "url": "https://cs.wikipedia.org/wiki/Moravsk%C3%A9_Lieskov%C3%A9",
+      "snippet": "Moravské Lieskové je obec na Slovensku v okrese Nové Mesto nad Váhom. Žije v něm přibližně 2 500[2] obyvatel. Obec leží na …"
+    },
+    {
+      "title": "Moravské Lieskové (Dedina) • Mapy.com",
+      "url": "https://mapy.com/sk/?source=osm&id=1015718849",
+      "snippet": "Moravské Lieskové je rozsiahla obec v okrese Nové Mesto nad Váhom, ležiaca na úpätí Bielych Karpát. Nachádza sa v prírodne …"
+    },
+    {
+      "title": "Obec v kocke - Moravské Lieskové",
+      "url": "https://moravskelieskove.sk/obec/obec-v-kocke/",
+      "snippet": "Moravské Lieskové leží severozápadne od Nového Mesta nad Váhom v údolí potoka Klanečnica, ktorý vzniká sútokom viacerých …"
+    }
+  ]
+}

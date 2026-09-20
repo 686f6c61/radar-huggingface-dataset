@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "davenetdev/halogen-qwen3.8-flash-next-uncensored",
+  "slug": "davenetdev-halogen-qwen3-8-flash-next-uncensored",
+  "author": "davenetdev",
+  "url": "https://huggingface.co/davenetdev/halogen-qwen3.8-flash-next-uncensored",
+  "created_at": "2026-09-20T18:45:02.000Z",
+  "updated_at": "2026-09-21T03:52:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "base_model:orcarouter/Qwen3.8-Flash-Next-Uncensored",
+    "base_model:quantized:orcarouter/Qwen3.8-Flash-Next-Uncensored",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 176943899520,
+  "parameters_human": "176.94B",
+  "storage_bytes": 271140114208,
+  "storage_human": "271.1 GB",
+  "base_model": "orcarouter/Qwen3.8-Flash-Next-Uncensored",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home - Nudist pictures and photos",
+      "url": "https://www.nudistgallerie.com/nudist-nudism-naturism/index.php",
+      "snippet": "Nudist Pictures and Photos submitted by naturist friends from all over the world. We have a lot of photos of naturist women, men, …"
+    },
+    {
+      "title": "Nudist Pictures Search (409 galleries) - NudeVista",
+      "url": "https://www.nudevista.com/?q=nudist&s=p",
+      "snippet": "409 results for nudist pictures, ordered by relevance, newest, popularity or random"
+    },
+    {
+      "title": "Large Collection of Nudist Pictures | Favorite-Nudists.com",
+      "url": "https://favorite-nudists.com/category/other-photos-about-naturism",
+      "snippet": "Nudist Pics. On this summer day Beautiful nudist family dance and participate in competitions in the countryside in France."
+    },
+    {
+      "title": "Teen Nudists Movies",
+      "url": "http://www.gallerynudist.eu/",
+      "snippet": "Young nudist girls and boys."
+    },
+    {
+      "title": "Hot Nudist Nude Porn Pics - PornPics.com",
+      "url": "https://www.pornpics.com/tags/nudist/",
+      "snippet": "Check out the best naked nudist porn pics for FREE on PornPics.com. ️See the hottest nudist xxx photos right now!"
+    }
+  ]
+}

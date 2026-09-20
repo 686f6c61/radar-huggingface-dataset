@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "betulclkk1212/korece-siber-zorbalik-filtresi",
+  "slug": "betulclkk1212-korece-siber-zorbalik-filtresi",
+  "author": "betulclkk1212",
+  "url": "https://huggingface.co/betulclkk1212/korece-siber-zorbalik-filtresi",
+  "created_at": "2026-09-20T14:57:35.000Z",
+  "updated_at": "2026-09-20T15:10:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 108920066,
+  "parameters_human": "108.9M",
+  "storage_bytes": 435709057,
+  "storage_human": "436 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Maps Help",
+      "url": "https://support.google.com/maps/?hl=en",
+      "snippet": "Official Google Maps Help Center where you can find tips and tutorials on using Google Maps and other answers to frequently asked …"
+    },
+    {
+      "title": "Get directions and show routes in Google Maps",
+      "url": "https://support.google.com/maps/answer/144339?hl=en-GB&co=GENIE.Platform%3DDesktop",
+      "snippet": "You can get directions for driving, public transport, walking, ride sharing, cycling, flight or motorcycle on Google Maps. If there are …"
+    },
+    {
+      "title": "| Viết bởi - Tinhte.vn",
+      "url": "https://tinhte.vn/thread/6-tinh-nang-ai-vua-duoc-cap-nhat-cua-google-maps.3770081/",
+      "snippet": "Diễn đàn thảo luận về Điện thoại, Máy tính, Máy ảnh và các thiết bị Khoa học & Công nghệ."
+    },
+    {
+      "title": "[Thủ thuật] Chia sẻ chính xác một địa điểm trên Google Maps bằng …",
+      "url": "https://tinhte.vn/thread/thu-thuat-chia-se-chinh-xac-mot-dia-diem-tren-google-maps-bang-plus-codes.3144164/",
+      "snippet": "Jun 5, 2020 · Hôm nay mình chia sẻ với anh em một thủ thuật khá hay trên Google Maps, giúp anh em có thể chia sẻ chính xác một …"
+    },
+    {
+      "title": "البدء في استخدام \"خرائط Google\" - Android - مساعدة خرائط",
+      "url": "https://support.google.com/maps/answer/144349?hl=ar&co=GENIE.Platform=Android",
+      "snippet": "ستساعدك هذه المقالة في إعداد الميزات المختلفة في \"خرائط Google\" وشرحها وتعلُّم الأساسيات ذات الصلة. يمكنك استخدام تطبيق \"خرائط Google\" على جهازك الجوّال أو \"خرائط Google\" …"
+    }
+  ]
+}

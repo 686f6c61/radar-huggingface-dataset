@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "tsolful/Qwen2.1_INT4W4A8",
+  "slug": "tsolful-qwen2-1_int4w4a8",
+  "author": "tsolful",
+  "url": "https://huggingface.co/tsolful/Qwen2.1_INT4W4A8",
+  "created_at": "2026-09-20T14:04:05.000Z",
+  "updated_at": "2026-09-20T14:18:12.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "qwen-image-2.1",
+    "text-to-image",
+    "image-to-image",
+    "image-generation",
+    "quantized",
+    "qwen",
+    "image-editing",
+    "rgba",
+    "base_model:Qwen/Qwen-Image-2.1",
+    "base_model:quantized:Qwen/Qwen-Image-2.1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4203379136,
+  "storage_human": "4.2 GB",
+  "base_model": "Qwen/Qwen-Image-2.1",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amazon.fr : livres, DVD, jeux vidéo, musique, high-tech, informatique ...",
+      "url": "https://www.amazon.fr/",
+      "snippet": "Conditions générales de vente Vos informations personnelles Cookies Annonces basées sur vos centres d’intérêt © 1996-2026, …"
+    },
+    {
+      "title": "Amazon.fr : : Toutes les catégories",
+      "url": "https://www.amazon.fr/b?node=14864804031",
+      "snippet": "Conditions générales de vente Vos informations personnelles Cookies Annonces basées sur vos centres d’intérêt © 1996-2026, …"
+    },
+    {
+      "title": "Amazon Shopping – Applications sur Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.amazon.mShop.android.shopping&hl=fr",
+      "snippet": "• Achetez sur Amazon.co.uk, Amazon.de, Amazon.es, Amazon.fr, Amazon.com, Amazon.it, Amazon.cn, Amazon.co.jp ou …"
+    },
+    {
+      "title": "Amazon.com. Spend less. Smile more.",
+      "url": "https://www.amazon.com/",
+      "snippet": "Amazon Payment Products Amazon Visa Amazon Store Card Amazon Secured Card Amazon Business Card Shop with Points …"
+    },
+    {
+      "title": "Amazon.com",
+      "url": "https://www.amazon.com/your-account",
+      "snippet": "Manage your Amazon account settings, orders, payments, and preferences for a personalized shopping experience."
+    }
+  ]
+}

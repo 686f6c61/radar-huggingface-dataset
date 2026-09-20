@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "ForSureTesterSim/Llama-3.1-8B-TIES_Ext_B",
+  "slug": "forsuretestersim-llama-3-1-8b-ties_ext_b",
+  "author": "ForSureTesterSim",
+  "url": "https://huggingface.co/ForSureTesterSim/Llama-3.1-8B-TIES_Ext_B",
+  "created_at": "2026-09-20T16:03:34.000Z",
+  "updated_at": "2026-09-20T16:05:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "conversational",
+    "arxiv:2306.01708",
+    "base_model:Magpie-Align/Llama-3.1-8B-Magpie-Align-v0.2",
+    "base_model:merge:Magpie-Align/Llama-3.1-8B-Magpie-Align-v0.2",
+    "base_model:allenai/Llama-3.1-Tulu-3.1-8B",
+    "base_model:merge:allenai/Llama-3.1-Tulu-3.1-8B",
+    "base_model:meta-llama/Llama-3.1-8B",
+    "base_model:merge:meta-llama/Llama-3.1-8B",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:merge:meta-llama/Llama-3.1-8B-Instruct",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766256,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Llama-3.1-8B, allenai/Llama-3.1-Tulu-3.1-8B, meta-llama/Llama-3.1-8B-Instruct, Magpie-Align/Llama-3.1-8B-Magpie-Align-v0.2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EPORNER: HD Porn Tube",
+      "url": "https://www.eporner.com/recent/",
+      "snippet": "Free Full HD porn tube - HD quality videos and photos. Watch over 2,785,355 full length hd sex movies, download porn xxx videos, …"
+    },
+    {
+      "title": "Sexy Pornstars in Full HD Free Sex Videos - EPORNER: HD Porn Tube",
+      "url": "https://www.eporner.com/pornstar-list/",
+      "snippet": "Look for your favorite Pornstars on Eporner and watch their videos and photos for free in Full HD!"
+    },
+    {
+      "title": "Eporner & 167+ Darmowe Filmy Porno Tubes Lubię Eporner.com",
+      "url": "https://theporndude.com/pl/532/eporner",
+      "snippet": "1 day ago · Eporner.com to największa na świecie witryna porno w jakości HD. Witryna buduje swoją kolekcję bezpłatnych filmów …"
+    },
+    {
+      "title": "Login & create account - EPORNER: HD Porn Tube",
+      "url": "https://www.eporner.com/login",
+      "snippet": "Create account on eporner and join great porn community, share your videos and photos and discuss with others."
+    },
+    {
+      "title": "EPORNER",
+      "url": "https://nl.eporner.com/",
+      "snippet": "Dec 3, 2023 · Welkom bij Eporner - de meest uitgebreide bron van HD porno video's die je momenteel kunt vinden op het internet. …"
+    }
+  ]
+}

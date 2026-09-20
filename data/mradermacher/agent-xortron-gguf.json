@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Agent.Xortron-GGUF",
+  "slug": "mradermacher-agent-xortron-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Agent.Xortron-GGUF",
+  "created_at": "2026-09-20T14:56:37.000Z",
+  "updated_at": "2026-09-21T05:25:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "unsloth",
+    "qwen3_5",
+    "uncensored",
+    "heretic",
+    "xortron",
+    "en",
+    "dataset:DJLougen/hermes-agent-traces-filtered",
+    "dataset:darkc0de/Xortron.Config.Dataset.New.2026",
+    "base_model:jaforkhan5791/Agent.Xortron",
+    "base_model:quantized:jaforkhan5791/Agent.Xortron",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 187905432896,
+  "storage_human": "187.9 GB",
+  "base_model": "jaforkhan5791/Agent.Xortron",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ersatzteile für VW Käfer Bus T1 T2 Karmann - Aircooledshop",
+      "url": "https://www.aircooledshop.com/",
+      "snippet": "DER Onlineshop für alle luftgekühlten Volkswagen Ersatzteile für VW Bus T2 T1 VW Käfer & T2 Westfalia Camper . Dieser Shop hat …"
+    },
+    {
+      "title": "Ersatzteilkatalog Ersatzteile für VW Käfer 1200 1300 1500 1600 1302 ...",
+      "url": "https://www.aircooledshop.com/Kaefer/?language=de",
+      "snippet": "Verlassen Sie sich auf unsere jahrzehntelange Erfahrung und tiefe Fachkompetenz rund um den luftgekühlten Klassiker. Bestellen …"
+    },
+    {
+      "title": "home | Aircooled Service & Shop",
+      "url": "https://bbtshop.aircooled-service-shop.de/",
+      "snippet": "Willkommen auf unseren Aircooled Service & Shop Webshop, Ihr Teile-Spezialist für Volkswagen Beetle, Karmann Ghia, Bus und …"
+    },
+    {
+      "title": "aircooled-service-shop.de – VW Käfer Ersatzteile",
+      "url": "https://aircooled-service-shop.de/",
+      "snippet": "Sie sind Besitzer eines VW Käfer und auf der Suche nach passendem Zubehör für Ihren Typ 1-Motor? Unser Angebot geht Hand in …"
+    },
+    {
+      "title": "Shop – aircooled-service-shop.de",
+      "url": "http://aircooled-service-shop.de/shop/",
+      "snippet": "Unten sehen Sie eine kleine Auswahl an Produkten, die wir fast täglich verbauen. Diese stammen teils aus eigener Fertigung. Alle …"
+    }
+  ]
+}

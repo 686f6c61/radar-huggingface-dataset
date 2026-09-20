@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "nurdich/Qwen-Image-2.1",
+  "slug": "nurdich-qwen-image-2-1",
+  "author": "nurdich",
+  "url": "https://huggingface.co/nurdich/Qwen-Image-2.1",
+  "created_at": "2026-09-20T17:14:55.000Z",
+  "updated_at": "2026-09-20T17:14:56.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "qwen",
+    "image-generation",
+    "image-editing",
+    "rgba",
+    "text-to-image",
+    "license:other",
+    "diffusers:QwenImage21Pipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7115124736,
+  "parameters_human": "7.12B",
+  "storage_bytes": 33127036062,
+  "storage_human": "33.1 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HAPPY Synonyms & Antonyms - 164 words | Thesaurus.com",
+      "url": "https://www.thesaurus.com/browse/happy",
+      "snippet": "Sep 20, 2011 · Find 164 different ways to say HAPPY, along with antonyms, related words, and example sentences at Thesaurus.com."
+    },
+    {
+      "title": "BE HAPPY Synonyms & Antonyms - 37 words | Thesaurus.com",
+      "url": "https://www.thesaurus.com/browse/be-happy",
+      "snippet": "Find 37 different ways to say BE HAPPY, along with antonyms, related words, and example sentences at Thesaurus.com."
+    },
+    {
+      "title": "THRILLED Synonyms & Antonyms - 18 words | Thesaurus.com",
+      "url": "https://www.thesaurus.com/browse/thrilled",
+      "snippet": "Find 18 different ways to say THRILLED, along with antonyms, related words, and example sentences at Thesaurus.com."
+    },
+    {
+      "title": "HAPPY ACCIDENT Synonyms & Antonyms - 21 words | Thesaurus.com",
+      "url": "https://www.thesaurus.com/browse/happy-accident",
+      "snippet": "Find 21 different ways to say HAPPY ACCIDENT, along with antonyms, related words, and example sentences at Thesaurus.com."
+    },
+    {
+      "title": "APPROPRIATE Synonyms & Antonyms - 207 words | Thesaurus.com",
+      "url": "https://www.thesaurus.com/browse/appropriate",
+      "snippet": "Find 207 different ways to say APPROPRIATE, along with antonyms, related words, and example sentences at Thesaurus.com."
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "schema": 1,
+  "id": "thealper2/deberta-v3-base-formality",
+  "slug": "thealper2-deberta-v3-base-formality",
+  "author": "thealper2",
+  "url": "https://huggingface.co/thealper2/deberta-v3-base-formality",
+  "created_at": "2026-09-20T12:36:33.000Z",
+  "updated_at": "2026-09-20T12:45:23.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deberta-v2",
+    "text-classification",
+    "formality",
+    "formality-classification",
+    "deberta-v3",
+    "en",
+    "dataset:osyvokon/pavlick-formality-scores",
+    "base_model:microsoft/deberta-v3-base",
+    "base_model:finetune:microsoft/deberta-v3-base",
+    "license:mit",
+    "model-index",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 184423682,
+  "parameters_human": "184.4M",
+  "storage_bytes": 737724537,
+  "storage_human": "738 MB",
+  "base_model": "microsoft/deberta-v3-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Binary Text Formality Classification",
+      "dataset": "osyvokon/pavlick-formality-scores",
+      "metric": "Accuracy",
+      "value": 0.819
+    },
+    {
+      "task": "Binary Text Formality Classification",
+      "dataset": "osyvokon/pavlick-formality-scores",
+      "metric": "Macro F1",
+      "value": 0.8183
+    },
+    {
+      "task": "Binary Text Formality Classification",
+      "dataset": "osyvokon/pavlick-formality-scores",
+      "metric": "Macro Precision",
+      "value": 0.822
+    },
+    {
+      "task": "Binary Text Formality Classification",
+      "dataset": "osyvokon/pavlick-formality-scores",
+      "metric": "Macro Recall",
+      "value": 0.8181
+    },
+    {
+      "task": "Binary Text Formality Classification",
+      "dataset": "osyvokon/pavlick-formality-scores",
+      "metric": "ROC-AUC",
+      "value": 0.9014
+    }
+  ],
+  "sources": [
+    {
+      "title": "PIAGGIO VESPA PRIMAVERA 50 4T Bedienungsanleitung",
+      "url": "https://www.manualslib.de/manual/771043/Piaggio-Vespa-Primavera-50-4T.html",
+      "snippet": "Die Reifen müssen gewechselt werden sowie die Abnutzungsanzeiger auf der Lauffläche sichtbar werden. Ebenfalls prüfen, dass die …"
+    },
+    {
+      "title": "PIAGGIO VESPA PRIMAVERA 50 4T 4V Handbücher - ManualsLib",
+      "url": "https://www.manualslib.de/products/Piaggio-Vespa-Primavera-50-4T-4V-1788646.html",
+      "snippet": "Online ansehen oder herunterladen Piaggio VESPA PRIMAVERA 50 4T 4V Bedienungsanleitung."
+    },
+    {
+      "title": "Vespa / Piaggio Reparaturanleitungen und Werkstatthandbücher",
+      "url": "https://www.originalanleitungen.de/motorrader-zweirader/vespa-piaggio",
+      "snippet": "Viele der Anleitungen zur Reparatur, Wartung und Bedienung ihres Fahrzeuges bietet der TEC Verlag auch als günstiges und sofort …"
+    },
+    {
+      "title": "Bedienungsanleitungen und Reparaturanleitungen für Vespa Roller",
+      "url": "https://www.vespaonline.de/lexicon/entry-pdf-export/18-bedienungsanleitungen-und-reparaturanleitungen-fuer-vespa-roller/",
+      "snippet": "Hier eine Sammlung von Bedienungsanleitungen für Eure Vespa ́s."
+    },
+    {
+      "title": "Bedienungsanleitungen für Vespa, Piaggio & Aprilia Motorroller ...",
+      "url": "https://www.fulland-vespa-store.de/bedienungsanleitungen",
+      "snippet": "Lade Dir die Bedienungsanleitungen von Vespa, Piaggio & Aprilia Motorrollern als .pdf herunter."
+    }
+  ]
+}

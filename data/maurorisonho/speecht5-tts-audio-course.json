@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "maurorisonho/speecht5-tts-audio-course",
+  "slug": "maurorisonho-speecht5-tts-audio-course",
+  "author": "maurorisonho",
+  "url": "https://huggingface.co/maurorisonho/speecht5-tts-audio-course",
+  "created_at": "2026-09-20T17:26:19.000Z",
+  "updated_at": "2026-09-20T19:43:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "speecht5",
+    "text-to-audio",
+    "text-to-speech",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 585715310,
+  "storage_human": "586 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text-to-Speech",
+      "dataset": null,
+      "metric": "Loss",
+      "value": 0.15
+    }
+  ],
+  "sources": [
+    {
+      "title": "Amigos de Facebook con acceso restringido: qué es, ver lista",
+      "url": "https://es.ccm.net/aplicaciones-e-internet/redes-sociales-y-mensajeria/10174-como-crear-una-lista-de-personas-con-acceso-restringido-en-facebook/",
+      "snippet": "Dec 29, 2022 · Inicia sesión en Facebook y ve al perfil del amigo que quieres poner en la lista de personas con acceso restringido. …"
+    },
+    {
+      "title": "Rastrear una cuenta falsa de Facebook [Resuelto] - CCM",
+      "url": "https://es.ccm.net/forum/affich-1778654-rastrear-una-cuenta-falsa-de-facebook",
+      "snippet": "Jun 3, 2017 · Hola, lamentablemente es difícil saber quién se encuentra detrás de una cuenta falsa, pero al menos puedes reportarla …"
+    },
+    {
+      "title": "Facebook en tout petit... écran illisible ! [Résolu] - Forum Facebook",
+      "url": "https://forums.commentcamarche.net/forum/affich-11940228-facebook-en-tout-petit-ecran-illisible",
+      "snippet": "Bonjour, ce soir je rentre chez moi, j'ouvre facebook.. et tout est écrit en minuscule.. c'est comme si la page e prenait qu'un quart de …"
+    },
+    {
+      "title": "Mes jeux facebook ne s ouvre plus [Résolu] - Forum Facebook",
+      "url": "https://forums.commentcamarche.net/forum/affich-35573604-mes-jeux-facebook-ne-s-ouvre-plus",
+      "snippet": "Mes jeux facebook ne s ouvre plus Résolu Facebook Connexion Android Jeux Affichage raymondbabineau - Modifié le 8 sept. 2018 à …"
+    },
+    {
+      "title": "Comment supprimer définitivement votre compte Facebook",
+      "url": "https://www.zdnet.fr/pratique/comment-supprimer-definitivement-votre-compte-facebook-39932301.htm",
+      "snippet": "Nov 12, 2021 · Pratique : Se débarrasser de son compte Facebook demande un peu de travail de votre part."
+    }
+  ]
+}

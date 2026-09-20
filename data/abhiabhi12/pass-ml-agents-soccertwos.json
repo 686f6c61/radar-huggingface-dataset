@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Abhiabhi12/pass-ml-agents-soccertwos",
+  "slug": "abhiabhi12-pass-ml-agents-soccertwos",
+  "author": "Abhiabhi12",
+  "url": "https://huggingface.co/Abhiabhi12/pass-ml-agents-soccertwos",
+  "created_at": "2026-09-20T16:04:31.000Z",
+  "updated_at": "2026-09-20T16:07:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "ML-Agents-SoccerTwos",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ppo",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "别人遗忘在车上的雨伞能要吗 - 百度贴吧",
+      "url": "https://tieba.baidu.com/p/8837726710",
+      "snippet": "如果觉得捡到他人的物品应该归还给失主或交给相关部门处理是中华民族的传统美德的话可以选择将这把雨伞还给他人或者联系相关负 …"
+    },
+    {
+      "title": "乘客把伞忘你车上，该不该要回来？法律和道德都这么说",
+      "url": "https://wenku.baidu.com/view/091f128a0822590102020740be1e650e52eacf38.html",
+      "snippet": "如果无法直接联系到失主，可以根据捡到雨伞的地点寻求帮助。 例如，在商场、写字楼或小区的停车场，可以将雨伞交至停车场管理 …"
+    },
+    {
+      "title": "别人给的伞能要吗合集 - 百度文库",
+      "url": "https://wenku.baidu.com/aggs/d535e3060740be1e650e9a3c.html",
+      "snippet": "在图书馆等公共场所捡到他人遗落的雨伞，绝对不能私自拿走据为己有。 从法 律角度看，这把伞的所有权并未发生转移，拾得人无权 …"
+    },
+    {
+      "title": "在出租车上捡了一把雨伞违法吗 - ailegal.baidu.com",
+      "url": "https://ailegal.baidu.com/legalarticle/qadetail?id=01bb9e48a1af04250703",
+      "snippet": "Jul 29, 2026 · 总结：综上所述，在出租车上捡了一把雨伞通常不构成违法，但如果捡拾者明知是他人财物而故意占有且拒不归还，可 …"
+    },
+    {
+      "title": "别人把我车上雨伞拿走犯法吗 - ailegal.baidu.com",
+      "url": "https://ailegal.baidu.com/legalarticle/qadetail?id=8a014e071c0cec250701",
+      "snippet": "Jul 1, 2025 · 2、刑事法律责任：依据《中华人民共和国刑法》第二百七十条，若对方非法占有你代为保管或遗忘的雨伞且数额较大、 …"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Ful3/Dark-Scarlett-v1.0-31B-hybrid12-multilingual",
+  "slug": "ful3-dark-scarlett-v1-0-31b-hybrid12-multilingual",
+  "author": "Ful3",
+  "url": "https://huggingface.co/Ful3/Dark-Scarlett-v1.0-31B-hybrid12-multilingual",
+  "created_at": "2026-09-20T18:23:01.000Z",
+  "updated_at": "2026-09-20T18:24:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "gemma4",
+    "compressed-tensors",
+    "fp8",
+    "gptq",
+    "w4a16",
+    "mixed-precision",
+    "multilingual",
+    "base_model:ReadyArt/Dark-Scarlett-v1.0-31B",
+    "base_model:quantized:ReadyArt/Dark-Scarlett-v1.0-31B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20213495660,
+  "parameters_human": "20.21B",
+  "storage_bytes": 27766718954,
+  "storage_human": "27.8 GB",
+  "base_model": "ReadyArt/Dark-Scarlett-v1.0-31B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lesbische Beziehung mit Mama - gofeminin Forum",
+      "url": "https://forum.gofeminin.de/d/1048939-lesbische-beziehung-mit-mama",
+      "snippet": "Dec 27, 2022 · Ich schäme mich vor meinem Papa, er weiß nichts davon, das ich kein braves Mädchen bin, und mich in unserer …"
+    },
+    {
+      "title": "VERBOTENE LİEBE MİT DER LEHRERİN MEİNER TOCHTER - Wahre lesbische …",
+      "url": "https://www.youtube.com/watch?v=6gkTnt1RmlM",
+      "snippet": "Sep 5, 2025 · 🔥 Die wahre Geschichte von Marie (29), die sich in Clara (30) verliebt – die Lehrerin ihrer 8-jährigen Tochter Lina. Was …"
+    },
+    {
+      "title": "Mama ist Lesbisch. Ich auch.⎥Coming Out Storytime - funk",
+      "url": "https://play.funk.net/channel/auf-klo-786/mama-ist-lesbisch-ich-auchcoming-out-storytime-1610964",
+      "snippet": "May 20, 2019 · In dieser Folge von ‚Das letzte Gespräch?‘ trifft Felicia ihre Mutter Birgit zum ersten Mal nach fast sieben Jahren …"
+    },
+    {
+      "title": "° Erotische Sex Geschichten (Swinger Inzest Mutter Tochter ... - Scribd",
+      "url": "https://de.scribd.com/document/518975521/Erotische-Sex-Geschichten-Swinger-Inzest-Mutter-Tochter-Schwiegersohn-050818-Verbotene-Spiele-Bilder",
+      "snippet": "Das Dokument beschreibt eine erotische Kurzgeschichte über einen Mann, seine Frau und seine Schwiegermutter, die einen heißen …"
+    },
+    {
+      "title": "»Sag mal, Mama, bist du auch lesbisch ?«* | arsfemina.de",
+      "url": "https://arsfemina.de/von-nun-nannten-sie-sich-m%C3%BCtter/%C2%BBsag-mal-mama-bist-du-auch-lesbisch-%C2%AB",
+      "snippet": "Das erste Gespräch, das ich mit ihnen über mein Lesbisch-Sein geführt habe, ergab sich bei einem überregionalen Frauentreffen, wo …"
+    }
+  ]
+}

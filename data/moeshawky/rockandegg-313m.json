@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "moeshawky/RockAndEgg-313M",
+  "slug": "moeshawky-rockandegg-313m",
+  "author": "moeshawky",
+  "url": "https://huggingface.co/moeshawky/RockAndEgg-313M",
+  "created_at": "2026-09-20T19:41:38.000Z",
+  "updated_at": "2026-09-22T00:04:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "feature-extraction",
+    "classification",
+    "sequence-classification",
+    "text-classification",
+    "model-surgery",
+    "depth-pruning",
+    "causal-transformer",
+    "313m",
+    "text-embeddings-inference",
+    "base_model:Qwen/Qwen3-0.6B-Base",
+    "base_model:finetune:Qwen/Qwen3-0.6B-Base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 312892928,
+  "parameters_human": "312.9M",
+  "storage_bytes": 625797800,
+  "storage_human": "626 MB",
+  "base_model": "Qwen/Qwen3-0.6B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sign in - Google Accounts",
+      "url": "https://accounts.google.com/",
+      "snippet": "Not your computer? Use a private browsing window to sign in. Learn more about using Guest mode Next Create account"
+    },
+    {
+      "title": "ログイン - Google アカウント",
+      "url": "https://accounts.google.com/login?hl=ja",
+      "snippet": "Google アカウントにログインして、すべての Google サービスを利用できます。"
+    },
+    {
+      "title": "Sign in - Google Accounts",
+      "url": "https://accounts.google.com/?authuser=1",
+      "snippet": "Sign in to your Google Account to access and manage all Google services securely."
+    },
+    {
+      "title": "Sign in - Google Accounts",
+      "url": "https://accounts.google.com/EmbeddedSetup?tmpl=new_account",
+      "snippet": "Create a new Google Account to access personalized, secure, and enhanced Google services."
+    },
+    {
+      "title": "登录 - Google 账号",
+      "url": "https://accounts.google.com/login?hl=zh-CN",
+      "snippet": "使用您的 Google 帐号登录以访问 Google 服务和产品。"
+    }
+  ]
+}

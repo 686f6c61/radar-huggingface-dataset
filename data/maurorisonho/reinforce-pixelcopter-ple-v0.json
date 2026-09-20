@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "maurorisonho/reinforce-Pixelcopter-PLE-v0",
+  "slug": "maurorisonho-reinforce-pixelcopter-ple-v0",
+  "author": "maurorisonho",
+  "url": "https://huggingface.co/maurorisonho/reinforce-Pixelcopter-PLE-v0",
+  "created_at": "2026-09-20T17:16:27.000Z",
+  "updated_at": "2026-09-20T19:24:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "reinforce",
+  "languages": [],
+  "tags": [
+    "Pixelcopter-PLE-v0",
+    "reinforce",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7135,
+  "storage_human": "7135 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pizzeria in Salzburg | Ristorante Pizzeria Magno",
+      "url": "https://www.pizzeria-magno.at/",
+      "snippet": "Unser zweites Restaurant nicht weit von Salzburg steht im wunderschönen Anif und ist garantiert nach einem Spaziergang in der …"
+    },
+    {
+      "title": "Pizzeria Ristorante Magno am Mozartplatz in Salzburg",
+      "url": "https://www.pizzeria-magno.at/restaurants/magno-mozartplatz",
+      "snippet": "Dein Italiener in Salzburg. Pizza, Pasta & ganz viel Amore | Komme und verfalle unserer italienischen Küche | gleich Tisch reservieren."
+    },
+    {
+      "title": "Pizzeria Ristorante Magno - Tripadvisor",
+      "url": "https://www.tripadvisor.at/Restaurant_Review-g190441-d26241346-Reviews-Pizzeria_Ristorante_Magno-Salzburg_Austrian_Alps.html",
+      "snippet": "Ristorante Pizzeria Magno, Salzburg: 39 Bewertungen - bei Tripadvisor auf Platz 174 von 658 von 658 Salzburg Restaurants; mit …"
+    },
+    {
+      "title": "Pizzeria Ristorante Magno - Facebook",
+      "url": "https://www.facebook.com/pizzeria.magno/",
+      "snippet": "Purer Genuss im Magno 🌸 Pizzeria Ristorante Magno is at Pizzeria Magno Anif. Cremig, kräftig, ohne Kompromiss. Unsere Tagliatelle …"
+    },
+    {
+      "title": "Ristorante Pizzeria Magno",
+      "url": "https://www.yelp.com/biz/restaurant-magno-salzburg-2?msockid=3ecc895d9dfb64cb10699e879c5165ec",
+      "snippet": "Do you recommend this business? Original Italienische Küche !!…"
+    }
+  ]
+}

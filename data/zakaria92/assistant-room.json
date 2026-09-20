@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "zakaria92/assistant-room",
+  "slug": "zakaria92-assistant-room",
+  "author": "zakaria92",
+  "url": "https://huggingface.co/zakaria92/assistant-room",
+  "created_at": "2026-09-20T16:58:41.000Z",
+  "updated_at": "2026-09-20T16:59:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109488392,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437977080,
+  "storage_human": "438 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aliens (1986) - IMDb",
+      "url": "https://www.imdb.com/title/tt0090605/",
+      "snippet": "Jul 18, 1986 · Aliens: Directed by James Cameron. With Sigourney Weaver, Michael Biehn, Carrie Henn, Paul Reiser. Decades after …"
+    },
+    {
+      "title": "Aliens (film) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Aliens_(film)",
+      "snippet": "Aliens is a 1986 science fiction-action film written and directed by James Cameron. It is the sequel to the 1979 science fiction horror …"
+    },
+    {
+      "title": "Aliens – The White House",
+      "url": "https://www.whitehouse.gov/aliens/",
+      "snippet": "May 28, 2026 · THEY WALK AMONG US For 60 years, the U.S. government has kept a closely guarded secret. Aliens have been …"
+    },
+    {
+      "title": "Alien (franchise) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Alien_(franchise)",
+      "snippet": "Three Predators descend to the planet and enter the structure, killing all humans in their way with the intention of hunting the newly …"
+    },
+    {
+      "title": "برايم فيديو: Aliens - Prime Video",
+      "url": "https://www.primevideo.com/-/ar/detail/0GZ2B2Z4J595JMW4NBT7FAEE2K/",
+      "snippet": "المزيد من الإصدارات المتاحة ... Aliens (Includes Bonus Content) متاح للشراء فاز بجائزة OSCARS® 2X 18+ 19865 س 23 د"
+    }
+  ]
+}

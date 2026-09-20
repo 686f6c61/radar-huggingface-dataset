@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "maurorisonho/reinforce-CartPole-v1",
+  "slug": "maurorisonho-reinforce-cartpole-v1",
+  "author": "maurorisonho",
+  "url": "https://huggingface.co/maurorisonho/reinforce-CartPole-v1",
+  "created_at": "2026-09-20T17:16:21.000Z",
+  "updated_at": "2026-09-20T19:24:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "reinforce",
+  "languages": [],
+  "tags": [
+    "CartPole-v1",
+    "reinforce",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2527,
+  "storage_human": "2527 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Windows-Hilfe und -Lerninhalt | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/windows/",
+      "snippet": "Erhalten Sie Support für Windows, und erfahren Sie mehr über Installation, Updates, Datenschutz, Sicherheit und mehr."
+    },
+    {
+      "title": "So erhalten Sie Hilfe in Windows - Microsoft-Support",
+      "url": "https://support.microsoft.com/de-de/windows/so-erhalten-sie-hilfe-in-windows-711b6492-0435-0038-8706-7c6b0feb200a",
+      "snippet": "Hier sind einige verschiedene Möglichkeiten, Unterstützung bei Windows zu finden. Suche nach Hilfe – Geben Sie eine Frage oder …"
+    },
+    {
+      "title": "Windows 11/10: Hilfe zu Windows – So geht’s - tippsling.de",
+      "url": "https://tippsling.de/hilfe-zu-windows-so-gehts-in-windows-11-und-windows-10/",
+      "snippet": "Mar 12, 2026 · Wer täglich mit Windows arbeitet, stößt früher oder später auf Fragen zu Einstellungen, Updates oder …"
+    },
+    {
+      "title": "Windows 11 Hilfe finden: Microsoft-Support, Einstellungen und ...",
+      "url": "https://www.win-tipps.de/windows-11-hilfe-microsoft-support-einstellungen-problembehandlung/",
+      "snippet": "Jun 5, 2026 · So findest du in Windows 11 die richtige Hilfe: Einstellungen, Problembehandlung, Schnellhilfe und Microsoft-Support …"
+    },
+    {
+      "title": "Hilfe zu Windows 11/10 öffnen: Schritt für Schritt erklärt",
+      "url": "https://tippsling.de/hilfe-zu-windows-11-10-oeffnen-schritt-fuer-schritt-erklaert/",
+      "snippet": "Aug 17, 2026 · Windows 11/10 Hilfe öffnen: Schritt-für-Schritt-Anleitung mit Tastenkombinationen, Suchfunktion und praktischen Tipps …"
+    }
+  ]
+}

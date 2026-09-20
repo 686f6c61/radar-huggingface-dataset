@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "wwdsada/qwenimage21gguf",
+  "slug": "wwdsada-qwenimage21gguf",
+  "author": "wwdsada",
+  "url": "https://huggingface.co/wwdsada/qwenimage21gguf",
+  "created_at": "2026-09-20T15:21:15.000Z",
+  "updated_at": "2026-09-20T19:54:05.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen",
+    "qwen-image",
+    "text-to-image",
+    "image-editing",
+    "rgba",
+    "stable-diffusion.cpp",
+    "comfyui",
+    "base_model:Qwen/Qwen-Image-2.1",
+    "base_model:quantized:Qwen/Qwen-Image-2.1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7115124736,
+  "parameters_human": "7.12B",
+  "storage_bytes": 58080868064,
+  "storage_human": "58.1 GB",
+  "base_model": "Qwen/Qwen-Image-2.1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "在编辑Word文档时突然不能拖动鼠标来选中文字-CSDN社区",
+      "url": "https://bbs.csdn.net/topics/190008917",
+      "snippet": "Aug 29, 2007 · 以下内容是CSDN社区关于在编辑Word文档时突然不能拖动鼠标来选中文字相关内容，如果想了解更多关于Microsoft …"
+    },
+    {
+      "title": "7 Little Words Daily Answers - 7LittleWordsAnswers.com",
+      "url": "https://7littlewordsanswers.com/",
+      "snippet": "Mar 30, 2025 · On this website you will find daily answers for the popular game 7 Little Words Answers."
+    },
+    {
+      "title": "GCC编译程序时，有自定义头文件，提示找不到该头 ...",
+      "url": "https://bbs.csdn.net/topics/20263106",
+      "snippet": "Jan 8, 2003 · gcc -Ixxx (xxx表示包含的路径） 但是当前路径下的头文件应该不用设置"
+    },
+    {
+      "title": "Daily Themed Crossword February 7 2026 answers",
+      "url": "https://7littlewordsanswers.com/daily-themed-crossword-february-7-2026-answers",
+      "snippet": "Feb 7, 2026 · On this page you may find all the solutions and answers for Daily Themed Crossword February 7 2026. This page is …"
+    },
+    {
+      "title": "怎么在一个接口中调用另外一个接口 - CSDN社区",
+      "url": "https://bbs.csdn.net/topics/40125270",
+      "snippet": "Sep 10, 2003 · 以下内容是CSDN社区关于怎么在一个接口中调用另外一个接口相关内容，如果想了解更多关于ATL社区其他内容，请 …"
+    }
+  ]
+}

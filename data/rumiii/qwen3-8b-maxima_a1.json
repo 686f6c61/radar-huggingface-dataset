@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Rumiii/Qwen3-8B-Maxima_A1",
+  "slug": "rumiii-qwen3-8b-maxima_a1",
+  "author": "Rumiii",
+  "url": "https://huggingface.co/Rumiii/Qwen3-8B-Maxima_A1",
+  "created_at": "2026-09-20T19:35:49.000Z",
+  "updated_at": "2026-09-20T20:18:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "tool-calling",
+    "function-calling",
+    "agent",
+    "qlora",
+    "unsloth",
+    "conversational",
+    "dataset:Agent-Ark/Toucan-1.5M",
+    "arxiv:2510.01179",
+    "base_model:Qwen/Qwen3-8B",
+    "base_model:finetune:Qwen/Qwen3-8B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 114,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392939748,
+  "storage_human": "16.4 GB",
+  "base_model": "Qwen/Qwen3-8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reddit - Dive into anything",
+      "url": "https://www.reddit.com/",
+      "snippet": "Reddit is a network of communities where people can dive into their interests, hobbies and passions. There's a community for …"
+    },
+    {
+      "title": "Kingdom Hearts - Reddit",
+      "url": "https://www.reddit.com/r/KingdomHearts/",
+      "snippet": "To those who are curious about the franchise, welcome to r/KingdomHearts! Don't know where to start? Check out our guide here in …"
+    },
+    {
+      "title": "出了一点问题",
+      "url": "https://www.zhihu.com/creator",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "美国政府设备重新允许使用TikTok，特朗普称其在TikTok上长期霸榜， …",
+      "url": "https://www.zhihu.com/question/2070813507499643585",
+      "snippet": "据中国新闻社综合彭博社报道，特朗普政府已解除在联邦政府设备上使用TikTok的限制，原因是TikTok美国业务…"
+    },
+    {
+      "title": "What does the colors mean on mapquest? - Answers",
+      "url": "https://www.answers.com/travel-information/What_does_the_colors_mean_on_mapquest",
+      "snippet": "Apr 29, 2025 · On MapQuest, colors are used to indicate different types of roads and areas. Typically, blue highlights primary roads …"
+    }
+  ]
+}

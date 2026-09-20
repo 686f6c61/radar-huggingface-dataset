@@ -1,0 +1,95 @@
+{
+  "schema": 1,
+  "id": "TypeSafeAI/Step-5-Preview-BF16",
+  "slug": "typesafeai-step-5-preview-bf16",
+  "author": "TypeSafeAI",
+  "url": "https://huggingface.co/TypeSafeAI/Step-5-Preview-BF16",
+  "created_at": "2026-09-20T14:41:20.000Z",
+  "updated_at": "2026-09-20T14:42:11.000Z",
+  "license": "stepfun-community-license",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh",
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "step3p5v",
+    "text-generation",
+    "stepfun",
+    "step-5",
+    "moe",
+    "mixture-of-experts",
+    "agentic",
+    "coding",
+    "software-engineering",
+    "long-context",
+    "1m-context",
+    "multimodal",
+    "image",
+    "video",
+    "sparse-attention",
+    "gqa",
+    "financial-analysis",
+    "deep-research",
+    "tool-calling",
+    "parallel-tool-calling",
+    "json-schema",
+    "image-text-to-text",
+    "conversational",
+    "custom_code",
+    "en",
+    "zh",
+    "multilingual",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 604339504832,
+  "parameters_human": "604.34B",
+  "storage_bytes": 1214893406569,
+  "storage_human": "1214.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Salar de Uyuni, Bolívie | vše, co potřebujete vědět",
+      "url": "https://www.cestujlevne.com/pruvodce/bolivie/salar-de-uyuni",
+      "snippet": "Proč se vyplatí vidět Salar de Uyuni v Bolívii? Fotky, mapa, popis a zajímavostí o místě Salar de Uyuni najdeš na Cestujlevne.com."
+    },
+    {
+      "title": "Úplný průvodce po Salar de Uyuni, solných pláních Bolívie",
+      "url": "https://cs.liveinmidwest.com/17657258-a-complete-guide-to-the-salar-de-uyuni-the-salt-flats-of-bolivia",
+      "snippet": "Jun 1, 2025 · Do Salaru se také můžete dostat po souši přes poušť Atacama v Chile do San Pedro de Atacama, hraničního města …"
+    },
+    {
+      "title": "Salar de Uyuni a Bolívie - průvodce - latinska.amerika",
+      "url": "https://www.latinska-amerika.cz/dovolena/salar-de-uyuni-bolivie",
+      "snippet": "Cestu přes Salar de Uyni a Národní rezervaci generála Abaroy lze také podniknout z chilské turistické osady San Pedro de Atacama, …"
+    },
+    {
+      "title": "Bolívie – Jak naplánovat návštěvu Salar de Uyuni",
+      "url": "https://etabroad.com/cs/bolivie-naplanovat-navstevu-salar-de-uyuni/",
+      "snippet": "Solné pláně u města Uyuni neboli Salar de Uyuni jsou perlou Bolívie. Zjistěte jak naplánovat návštěvu / tour Salar de Uyuni a na co si …"
+    },
+    {
+      "title": "Uyuni Salt Flats Guide 2026: How to Visit Bolivia’s Most Famous ...",
+      "url": "https://bushop.com/bolivia/guides/uyuni-salt-flats-guide-how-to-visit-bolivia-s-most-famous-destination/",
+      "snippet": "Aug 24, 2026 · The complete 2026 Uyuni Salt Flats guide covering how to get there, the best tour types, what to pack, when to go for …"
+    }
+  ]
+}

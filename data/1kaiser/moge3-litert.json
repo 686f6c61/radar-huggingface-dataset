@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "1kaiser/moge3-litert",
+  "slug": "1kaiser-moge3-litert",
+  "author": "1kaiser",
+  "url": "https://huggingface.co/1kaiser/moge3-litert",
+  "created_at": "2026-09-20T19:05:10.000Z",
+  "updated_at": "2026-09-20T19:24:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "litert",
+  "languages": [],
+  "tags": [
+    "litert",
+    "tflite",
+    "3d",
+    "monocular-geometry-estimation",
+    "edge-ai",
+    "moge3",
+    "pointcloud",
+    "mesh",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2997222120,
+  "storage_human": "3.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rupert Grint - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Rupert_Grint",
+      "snippet": "Rupert Alexander Lloyd Grint[2] (/ ɡrɪnt / ⓘ; born 24 August 1988) is an English actor. He rose to fame for his role as Ron Weasley in …"
+    },
+    {
+      "title": "Rupert Grint - IMDb",
+      "url": "https://www.imdb.com/name/nm0342488/",
+      "snippet": "Rupert Grint. Actor: Harry Potter and the Sorcerer's Stone. Rupert Alexander Lloyd Grint was born in Harlow, Essex, England, the …"
+    },
+    {
+      "title": "Rupert Grint (@rupertgrint) • Instagram photos and videos",
+      "url": "https://www.instagram.com/rupertgrint/",
+      "snippet": "5M Followers, 130 Following, 25 Posts - Rupert Grint (@rupertgrint) on Instagram: \"Actor\""
+    },
+    {
+      "title": "Rupert Grint: Latest News, Pictures & Videos - HELLO!",
+      "url": "https://www.hellomagazine.com/tags/rupert-grint/",
+      "snippet": "Jan 28, 2026 · Rupert Grint - Discover all of the latest news and updates, including exclusive interviews from the UK, US and rest of …"
+    },
+    {
+      "title": "Rupert Grint - Wikipedia",
+      "url": "https://nl.wikipedia.org/wiki/Rupert_Grint",
+      "snippet": "Rupert Alexander Lloyd Grint (Watton-at-Stone (Hertfordshire), 24 augustus 1988) is een Engels acteur. Grint is het meest bekend …"
+    }
+  ]
+}

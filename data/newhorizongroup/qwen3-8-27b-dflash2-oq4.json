@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "NewHorizonGroup/Qwen3.8-27B-DFlash2-oQ4",
+  "slug": "newhorizongroup-qwen3-8-27b-dflash2-oq4",
+  "author": "NewHorizonGroup",
+  "url": "https://huggingface.co/NewHorizonGroup/Qwen3.8-27B-DFlash2-oQ4",
+  "created_at": "2026-09-20T12:56:40.000Z",
+  "updated_at": "2026-09-20T12:57:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3",
+    "speculative-decoding",
+    "dflash2",
+    "4bit",
+    "base_model:z-lab/Qwen3.8-27B-DFlash2",
+    "base_model:quantized:z-lab/Qwen3.8-27B-DFlash2",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1924404480,
+  "parameters_human": "1.92B",
+  "storage_bytes": 1083168412,
+  "storage_human": "1.1 GB",
+  "base_model": "z-lab/Qwen3.8-27B-DFlash2",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Klassiker Porno-Videos | xHamster",
+      "url": "https://ge.xhamster.desi/categories/vintage",
+      "snippet": "Schaue alle Klassiker Porno-Videos sofort!"
+    },
+    {
+      "title": "Klassiker Porno-Videos In voller Länge | xHamster",
+      "url": "https://ge.xhamster.desi/categories/vintage/full-length",
+      "snippet": "Schaue alle Klassiker Porno-Videos sofort!"
+    },
+    {
+      "title": "Classic German Porn Videos - TubePornClassic.com",
+      "url": "https://tubepornclassic.com/categories/german/most-popular/1/",
+      "snippet": "Most popular classic porn has a large number of fans. On TubePornClassic.com you can watch top rated vintage porn for free, …"
+    },
+    {
+      "title": "Klassisch - Tube Pleasure",
+      "url": "https://tubepleasure.com/de/835/classic/",
+      "snippet": "Porno Videos. Klassisch - 63,090 Videos. Klassisch Deutsch, Klassisch Französisch, Kompletter Film und vieles mehr."
+    },
+    {
+      "title": "Deutscher Klassiker (121 319) | FUQ",
+      "url": "https://www.fuq.com/de-at/category/german-classic",
+      "snippet": "Deutscher Klassiker Videos bei FUQ Porn Tube. In unserer Datenbank finden Sie alles, was Sie brauchen. Schauen Sie also rein …"
+    }
+  ]
+}

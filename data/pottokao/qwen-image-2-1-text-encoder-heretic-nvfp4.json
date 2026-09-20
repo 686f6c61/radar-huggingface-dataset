@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "pottokao/Qwen-Image-2.1-Text-Encoder-Heretic-NVFP4",
+  "slug": "pottokao-qwen-image-2-1-text-encoder-heretic-nvfp4",
+  "author": "pottokao",
+  "url": "https://huggingface.co/pottokao/Qwen-Image-2.1-Text-Encoder-Heretic-NVFP4",
+  "created_at": "2026-09-20T17:07:31.000Z",
+  "updated_at": "2026-09-21T09:06:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "quantized",
+    "nvfp4",
+    "comfyui",
+    "qwen-image",
+    "abliterated",
+    "text-encoder",
+    "base_model:pottokao/Qwen-Image-2.1-Text-Encoder-Heretic",
+    "base_model:finetune:pottokao/Qwen-Image-2.1-Text-Encoder-Heretic",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6306464916,
+  "storage_human": "6.3 GB",
+  "base_model": "pottokao/Qwen-Image-2.1-Text-Encoder-Heretic",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "So What's the Deal with Land's End? : r/malefashionadvice - Reddit",
+      "url": "https://www.reddit.com/r/malefashionadvice/comments/5tqwyp/so_whats_the_deal_with_lands_end/",
+      "snippet": "I've had zero issues with Lands' End and frankly haven't seen the quality decline that others complain of, but all I buy there are their …"
+    },
+    {
+      "title": "Land's End Fit : r/malefashionadvice - Reddit",
+      "url": "https://www.reddit.com/r/malefashionadvice/comments/3568sh/lands_end_fit/",
+      "snippet": "May 7, 2015 · Lands' End has excellent customer service, I've heard of them measuring things for customers when asked. Also worth …"
+    },
+    {
+      "title": "Lands' End almost lost its wealthy boomer customers when it ... - Reddit",
+      "url": "https://www.reddit.com/r/business/comments/10k47lq/lands_end_almost_lost_its_wealthy_boomer/",
+      "snippet": "Jan 24, 2023 · Lands' End almost lost its wealthy boomer customers when it tried to court millennials and Gen Z. Now it's going for …"
+    },
+    {
+      "title": "Any opinions on how Land's End shirts fit? - Reddit",
+      "url": "https://www.reddit.com/r/malefashionadvice/comments/t7adk/any_opinions_on_how_lands_end_shirts_fit/",
+      "snippet": "May 4, 2012 · Was browsing Land's End shirts because I need some button downs with summery colors. I haven't tried these on …"
+    },
+    {
+      "title": "Borderlands 4 - Reddit",
+      "url": "https://www.reddit.com/r/Borderlands4/",
+      "snippet": "The place to discuss talk about the next Borderlands game. Rumors, tech demos, videos, discussion, etc."
+    }
+  ]
+}

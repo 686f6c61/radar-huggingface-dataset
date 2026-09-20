@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "LamTNguyen/LESA-FLUX-cache-research-artifacts",
+  "slug": "lamtnguyen-lesa-flux-cache-research-artifacts",
+  "author": "LamTNguyen",
+  "url": "https://huggingface.co/LamTNguyen/LESA-FLUX-cache-research-artifacts",
+  "created_at": "2026-09-20T12:52:17.000Z",
+  "updated_at": "2026-09-20T13:11:06.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "flux",
+    "feature-caching",
+    "learnibridge",
+    "image-generation",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 149555524542,
+  "storage_human": "149.6 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "‎Wie kann ich MagentaTV auf einem Panasonic Fernseher empfangen ...",
+      "url": "https://telekomhilft.telekom.de/conversations/tv/wie-kann-ich-magentatv-auf-einem-panasonic-fernseher-empfangen/668900204ae73561da8127ca",
+      "snippet": "fritzbox 7590 , Panasonic , telekom magenta smart tv.Ich kann über pc und Fritzbox live tv fersehen. Der ferseher findet aber keinen …"
+    },
+    {
+      "title": "Wie verbinde ich RTL+ mit MagentaTV? - Telekom hilft",
+      "url": "https://telekomhilft.telekom.de/conversations/tv/wie-verbinde-ich-rtl-mit-magentatv/6689915f4ae73561da277a8f",
+      "snippet": "Hallo zusammen, ich habe seit neuestem MagentaTV mit RTL+-Paket. Nun wurde ich per Mail aufgefordert, mich bei RTL+ zu …"
+    },
+    {
+      "title": "Unterschied MagentaTV Smart und Smart Stream - Telekom hilft",
+      "url": "https://telekomhilft.telekom.de/conversations/tv/unterschied-magentatv-smart-und-smart-stream/668984064ae73561dab5fc28",
+      "snippet": "Mar 9, 2024 · Ein Freund von mir interessiert sich für MagentaTV ohne Telekomanschluss. Beim Vergleich der Tarife haben wir …"
+    },
+    {
+      "title": "MagentaTV-App für Windows | Telekom hilft Community",
+      "url": "https://telekomhilft.telekom.de/conversations/tv/magentatv-app-f%C3%BCr-windows/66870a3e4ae73561dac8b5a3",
+      "snippet": "MagentaTV 2.0: https://www.magenta.tv MagentaTV (1. Generation): https://web.magentatv.de Hier klickt man oben rechts auf das …"
+    },
+    {
+      "title": "Muss ich ein Gerät für Magenta Tv haben? - Telekom hilft",
+      "url": "https://telekomhilft.telekom.de/conversations/festnetz-internet/muss-ich-ein-ger%C3%A4t-f%C3%BCr-magenta-tv-haben/668955454ae73561da27aa6a",
+      "snippet": "Ich habe Magenta M Zuhause und möchte MagentaTV sehen ! Brauche ich noch ein Zusatzgerät dafür?"
+    }
+  ]
+}

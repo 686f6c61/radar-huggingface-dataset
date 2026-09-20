@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "nick17728/q-FrozenLake-v1-4x4-Slippery",
+  "slug": "nick17728-q-frozenlake-v1-4x4-slippery",
+  "author": "nick17728",
+  "url": "https://huggingface.co/nick17728/q-FrozenLake-v1-4x4-Slippery",
+  "created_at": "2026-09-20T14:47:59.000Z",
+  "updated_at": "2026-09-20T14:48:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "FrozenLake-v1-4x4",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 905,
+  "storage_human": "905 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Poki (بوكي) - موقع العاب مجانية عبر الإنترنت - العب الآن!",
+      "url": "https://poki.com/ar?msockid=2adbb76dc4dc6de62965a0b7c5486c82",
+      "snippet": "العاب مجانية عبر الانترنت Poki (بوكي) تحتوي على أفضل تشكيلة ألعاب الإنترنت المجانية وتقدم أكثر تجربة ممتعة للعب بمفردك أو مع الأصدقاء."
+    },
+    {
+      "title": "ألعاب مجانية عبر الإنترنت على كريزي جيمز | العبها الآن!",
+      "url": "https://www.crazygames.com/ar/",
+      "snippet": "ألعاب أونلاين في CrazyGames كريزي جيمز هي منصة ألعاب متصفح والتي تحتوي على أفضل ألعاب الإنترنت المجانية.تعمل جميع ألعابنا على المتصفح ويمكن لعبها لحظيًا بدون تنزيلات أو تحديثات.يمكنك …"
+    },
+    {
+      "title": "ألعاب مجانية عبر الإنترنت — ألعاب متصفح لا تتطلب تحميل | Playhop",
+      "url": "https://playhop.com/ar",
+      "snippet": "العب أكثر من 20,000 لعبة مجانية على الإنترنت على Playhop — لا حاجة للتنزيل، العب فورًا على الهاتف المحمول أو الكمبيوتر. تُضاف ألعاب جديدة يوميًا."
+    },
+    {
+      "title": "ألعاب شهيرة - العب على الإنترنت ... - Poki",
+      "url": "https://poki.com/ar/%D8%B4%D9%87%D9%8A%D8%B1%D8%A9?msockid=2adbb76dc4dc6de62965a0b7c5486c82",
+      "snippet": "اكتشف أفضل ألعاب شهيرة على الموقع الأكثر شعبية لألعاب مجانية عبر الانترنت! Poki (بوكي) يعمل على هاتفك المحمول أو جهازك اللوحي أو الكمبيوتر. بدون تنزيلات، بدون تسجيل. العب الآن!"
+    },
+    {
+      "title": "العاب ماهر - العاب مجانية اون لاين",
+      "url": "https://www.ttt4.com/",
+      "snippet": "فقط قم بزيارة اللعبة وإبدأ اللعب. يتميز موقع العاب ماهر بإحتوائه على مجموعة مميزة من الألعاب حيث تم اختيارها بعناية ونقوم دوماً بفحص دوري لضمان سلامة التشغيل وتقديم بيئة لقضاء وقتع ممتع."
+    }
+  ]
+}

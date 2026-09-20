@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "He-Tag/smallm-125m",
+  "slug": "he-tag-smallm-125m",
+  "author": "He-Tag",
+  "url": "https://huggingface.co/He-Tag/smallm-125m",
+  "created_at": "2026-09-20T17:09:54.000Z",
+  "updated_at": "2026-09-20T18:17:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "smallm",
+    "text-generation",
+    "small",
+    "125m",
+    "bilingual",
+    "english",
+    "german",
+    "conversational",
+    "custom_code",
+    "en",
+    "de",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:HuggingFaceTB/smollm-corpus",
+    "dataset:epfml/FineWeb2-HQ",
+    "dataset:HuggingFaceTB/smol-smoltalk",
+    "dataset:HuggingFaceTB/smoltalk2",
+    "dataset:mayflowergmbh/alpaca-gpt4_de",
+    "dataset:mayflowergmbh/oasst_de",
+    "dataset:DiscoResearch/germanrag",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 135266334,
+  "parameters_human": "135.3M",
+  "storage_bytes": 270540236,
+  "storage_human": "271 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Définitions : hé ! - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/h%C3%A9/39270",
+      "snippet": "hé ! - Définitions Français : Retrouvez la définition de hé !, ainsi que les homonymes, difficultés... - synonymes, homonymes, …"
+    },
+    {
+      "title": "EH et HÉ : des homophones à distinguer",
+      "url": "https://vitrinelinguistique.oqlf.gouv.qc.ca/23498/lorthographe/homophones-lexicaux/les-homophones-eh-et-he",
+      "snippet": "Les interjections EH et HÉ sont interchangeables dans certains contextes, mais pas dans tous. Découvrez tous les détails et voyez …"
+    },
+    {
+      "title": "hé ! | Dictionnaire de l’Académie française | 9e édition",
+      "url": "https://www.dictionnaire-academie.fr/article/A9H0290",
+      "snippet": "Définition de HÉ ! : Sert à attirer l’attention, à interpeller."
+    },
+    {
+      "title": "hé — Wiktionnaire, le dictionnaire libre",
+      "url": "https://fr.wiktionary.org/wiki/h%C3%A9",
+      "snippet": "hé Voir aussi : HE, He, H͞e, he, hè, hê, hẽ, hē, hě, hẹ, ħe, ȟé, hệ, hề, he’, hé’, he-, H.E."
+    },
+    {
+      "title": "Hé, eh ou et ? - Orthographe avec Frantastique - Gymglish",
+      "url": "https://www.gymglish.com/fr/frantastique-orthographe/regles-orthographe/he-eh-ou-et",
+      "snippet": "En début de phrase, on emploie Et pour insister sur ce qu’on dit. 1 He : Hé, par ici ! ( quand on interpelle quelqu'un). 1 Eh : Eh ! …"
+    }
+  ]
+}

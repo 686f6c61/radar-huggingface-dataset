@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "giocorte/totem-slm-sft",
+  "slug": "giocorte-totem-slm-sft",
+  "author": "giocorte",
+  "url": "https://huggingface.co/giocorte/totem-slm-sft",
+  "created_at": "2026-09-20T15:43:21.000Z",
+  "updated_at": "2026-09-20T15:52:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056404916,
+  "storage_human": "8.1 GB",
+  "base_model": "unsloth/qwen3-4b-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Australian Eastern Standard Time – AEST Time Zone",
+      "url": "https://www.timeanddate.com/time/zones/aest",
+      "snippet": "Australian Eastern Standard Time (AEST) is the easternmost time zone in Australia. It is used in five Australian states and territories: …"
+    },
+    {
+      "title": "Australian Eastern Standard Time",
+      "url": "https://time.is/AEST",
+      "snippet": "17 hours ago · Exact time now, time zone, time difference, sunrise/sunset time and key facts for Australian Eastern Standard Time …"
+    },
+    {
+      "title": "Time in Australia - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Time_in_Australia",
+      "snippet": "Australia uses three main time zones: Australian Western Standard Time (AWST; UTC+08:00), Australian Central Standard Time …"
+    },
+    {
+      "title": "Time Now in AEST (Australian Eastern Standard Time)",
+      "url": "https://time.now/timezones/aest/",
+      "snippet": "17 hours ago · The abbreviation AEST stands for Australian Eastern Standard Time, distinct from AEDT (Australian Eastern Daylight …"
+    },
+    {
+      "title": "AEST Time Now — Australian Eastern Standard Time",
+      "url": "https://worldclocklive.com/time/aest/",
+      "snippet": "17 hours ago · AEST stands for Australian Eastern Standard Time. It is UTC+10:00 (standard time) and UTC+11:00 during Daylight …"
+    }
+  ]
+}

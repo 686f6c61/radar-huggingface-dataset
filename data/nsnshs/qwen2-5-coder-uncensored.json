@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Nsnshs/qwen2.5-coder-uncensored",
+  "slug": "nsnshs-qwen2-5-coder-uncensored",
+  "author": "Nsnshs",
+  "url": "https://huggingface.co/Nsnshs/qwen2.5-coder-uncensored",
+  "created_at": "2026-09-20T14:49:32.000Z",
+  "updated_at": "2026-09-20T14:53:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen2.5-Coder-7B-Instruct-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen2.5-Coder-7B-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242693946,
+  "storage_human": "15.2 GB",
+  "base_model": "unsloth/Qwen2.5-Coder-7B-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/explore",
+      "snippet": "Explore trending music and find your next favorite song. Discover the latest releases from new artists, plus enjoy new music videos …"
+    },
+    {
+      "title": "Music",
+      "url": "https://music.youtube.com/channel/UC-9-kyTW8ZkZNDHQJ6FgpwQ",
+      "snippet": "Visit the YouTube Music Channel to find today’s top talent, featured artists, and playlists. Subscribe to see the latest in the music …"
+    },
+    {
+      "title": "Aktuelle Schlager Hits / Deutscher Schlager - YouTube Music",
+      "url": "https://music.youtube.com/playlist?list=PL7IABooBINM_ajbjk_7wortzrzKez6XCA",
+      "snippet": "Playlist • Schlager Charts App"
+    },
+    {
+      "title": "Music Premium",
+      "url": "https://music.youtube.com/music_premium",
+      "snippet": "Get Music Premium and listen to your music offline or while using other apps. Ad-free music streaming just got so easy, just activate …"
+    }
+  ]
+}

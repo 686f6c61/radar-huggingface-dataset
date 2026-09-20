@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "gcouzzi/jurisclass-legalbertpt",
+  "slug": "gcouzzi-jurisclass-legalbertpt",
+  "author": "gcouzzi",
+  "url": "https://huggingface.co/gcouzzi/jurisclass-legalbertpt",
+  "created_at": "2026-09-20T12:37:58.000Z",
+  "updated_at": "2026-09-20T12:39:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "legal",
+    "bert",
+    "document-classification",
+    "ensemble",
+    "text-classification",
+    "pt",
+    "base_model:raquelsilveira/legalbertpt_fp",
+    "base_model:finetune:raquelsilveira/legalbertpt_fp",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2178657260,
+  "storage_human": "2.2 GB",
+  "base_model": "raquelsilveira/legalbertpt_fp",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Channel or account terminations - YouTube Help",
+      "url": "https://support.google.com/youtube/answer/2802168?hl=en",
+      "snippet": "Check status of a termination appeal Open YouTube Studio. View confirmation of your appeal submission, and check your appeal’s …"
+    },
+    {
+      "title": "بدء استخدام \"التسوّق على YouTube\"",
+      "url": "https://support.google.com/youtube/answer/12257682?hl=ar",
+      "snippet": "تتيح خدمة \"التسوّق على YouTube\" لصنّاع المحتوى المؤهّلين الترويج للمنتجات بسهولة من متاجرهم الخاصة أو من علامات تجارية أخرى على YouTube. وتتيح لكم هذه الخدمة تنفيذ ما يلي: ربط …"
+    },
+    {
+      "title": "Interview: Vali Höll On Not Getting Paid By YT, Rider ... - Pinkbike",
+      "url": "https://www.pinkbike.com/news/interview-vali-hll-on-3-in-a-row-her-new-team-and-a-game-changing-frankenstein-bike.html",
+      "snippet": "Jun 30, 2026 · Vali Höll talks about winning three in a row, her new team and bike, the bright future of women's downhill racing, and …"
+    },
+    {
+      "title": "YT Industries Resumes Business in Canada - Pinkbike",
+      "url": "https://www.pinkbike.com/news/yt-industries-resumes-business-in-canada.html",
+      "snippet": "May 6, 2026 · YT Industries is coming back to Canada. Following its recent return to the UK, the German direct-to-consumer brand is …"
+    },
+    {
+      "title": "Manage your home area or current location for YouTube TV",
+      "url": "https://support.google.com/youtubetv/answer/7129768?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "When you sign up for YouTube TV, we’ll ask you to share your home zip code. We may also ask you to verify your area location via …"
+    }
+  ]
+}

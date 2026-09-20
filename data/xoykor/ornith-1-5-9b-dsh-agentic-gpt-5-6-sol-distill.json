@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "xoykor/Ornith-1.5-9B-DSH-Agentic-GPT-5.6-Sol-Distill",
+  "slug": "xoykor-ornith-1-5-9b-dsh-agentic-gpt-5-6-sol-distill",
+  "author": "xoykor",
+  "url": "https://huggingface.co/xoykor/Ornith-1.5-9B-DSH-Agentic-GPT-5.6-Sol-Distill",
+  "created_at": "2026-09-20T18:56:33.000Z",
+  "updated_at": "2026-09-20T19:28:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3_5",
+    "agentic",
+    "tool-use",
+    "coding",
+    "lora",
+    "distillation",
+    "multimodal",
+    "vision",
+    "dsh",
+    "image-text-to-text",
+    "base_model:ornith-ai/Ornith-1.5-9B",
+    "base_model:adapter:ornith-ai/Ornith-1.5-9B",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9197093888,
+  "parameters_human": "9.20B",
+  "storage_bytes": 7560709600,
+  "storage_human": "7.6 GB",
+  "base_model": "ornith-ai/Ornith-1.5-9B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aktuelle Nachrichten | BILD.de",
+      "url": "https://www.bild.de/",
+      "snippet": "BILD.de: Die Seite 1 für aktuelle Nachrichten und Themen, Bilder und Videos aus den Bereichen News, Wirtschaft, Politik, Show, …"
+    },
+    {
+      "title": "Sport: Aktuelle Ergebnisse, News und Videos | BILD.de",
+      "url": "https://www.bild.de/sport/startseite/sport/sport-home-15479124.bild.html",
+      "snippet": "Aktuelle Nachrichten aus dem Sport: Bundesliga, Formel 1, Boxen, Tennis und Olympia. Alle Meldungen, Berichte, Ergebnisse und …"
+    },
+    {
+      "title": "SPORT BILD | Sport-Nachrichten | Live Sportergebnisse | Meinungen, …",
+      "url": "https://sportbild.bild.de/",
+      "snippet": "Live Sportergebnisse, Videos & Sportdaten: SPORT BILD online bietet Sport Live-News zu Fußball, Bundesliga und Formel 1. …"
+    },
+    {
+      "title": "BILD ePaper",
+      "url": "https://epaper.bild.de/?wtmc=nav.epaper",
+      "snippet": "BILD ePaper BILD BILD AM SONNTAG B.Z. ZEITSCHRIFTEN BILD Bundesausgabe BILD Berlin / Brandenburg BILD Bremen BILD …"
+    },
+    {
+      "title": "Internationale Ligen & Fußball-News | Sportbild.de",
+      "url": "https://sportbild.bild.de/fussball/startseite/fussball/home-33017580.sport.html",
+      "snippet": "Tore und Fußball Ergebnisse live: Aktuelle News, Live-Ticker, Ergebnisse und Tabellen des internationalen Fußballs und der 2. Liga."
+    }
+  ]
+}

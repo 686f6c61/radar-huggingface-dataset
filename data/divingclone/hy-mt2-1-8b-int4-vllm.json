@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "divingclone/Hy-MT2-1.8B-INT4-vLLM",
+  "slug": "divingclone-hy-mt2-1-8b-int4-vllm",
+  "author": "divingclone",
+  "url": "https://huggingface.co/divingclone/Hy-MT2-1.8B-INT4-vLLM",
+  "created_at": "2026-09-20T13:02:03.000Z",
+  "updated_at": "2026-09-20T13:08:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "hunyuan_v1_dense",
+    "vllm",
+    "compressed-tensors",
+    "quantized",
+    "translation",
+    "base_model:tencent/Hy-MT2-1.8B",
+    "base_model:quantized:tencent/Hy-MT2-1.8B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1791080448,
+  "parameters_human": "1.79B",
+  "storage_bytes": 1291117160,
+  "storage_human": "1.3 GB",
+  "base_model": "tencent/Hy-MT2-1.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Query - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Query",
+      "snippet": "This disambiguation page lists articles associated with the title Query. If an internal link incorrectly led you here, you may wish to …"
+    },
+    {
+      "title": "Home - Query",
+      "url": "https://www.query.ai/",
+      "snippet": "Query is a federated search platform for security data providing expanded data visibility without centralization."
+    },
+    {
+      "title": "Query - definition of query by The Free Dictionary",
+      "url": "https://www.thefreedictionary.com/query",
+      "snippet": "query , inquiry, enquiry - A query is a single question; an inquiry (or enquiry) may be a single question or extensive investigation (i.e. …"
+    },
+    {
+      "title": "QUERY | definition in the Cambridge English Dictionary",
+      "url": "https://dictionary.cambridge.org/us/dictionary/english/query",
+      "snippet": "QUERY meaning: 1. a question, often expressing doubt about something or looking for an answer from an authority…. Learn more."
+    },
+    {
+      "title": "Pages - e-query - Suruhanjaya Syarikat Malaysia (SSM)",
+      "url": "https://www.ssm.com.my/Pages/e-Query.aspx",
+      "snippet": "e-Query List Pertaining to Status of Documents Queried Under Section 11 (8) & (9) of the Companies Act 1965 / Under Section 610 …"
+    }
+  ]
+}

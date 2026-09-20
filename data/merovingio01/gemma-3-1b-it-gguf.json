@@ -1,0 +1,94 @@
+{
+  "schema": 1,
+  "id": "Merovingio01/gemma-3-1b-it-GGUF",
+  "slug": "merovingio01-gemma-3-1b-it-gguf",
+  "author": "Merovingio01",
+  "url": "https://huggingface.co/Merovingio01/gemma-3-1b-it-GGUF",
+  "created_at": "2026-09-20T14:24:39.000Z",
+  "updated_at": "2026-09-20T14:24:40.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "arxiv:1905.07830",
+    "arxiv:1905.10044",
+    "arxiv:1911.11641",
+    "arxiv:1904.09728",
+    "arxiv:1705.03551",
+    "arxiv:1911.01547",
+    "arxiv:1907.10641",
+    "arxiv:1903.00161",
+    "arxiv:2009.03300",
+    "arxiv:2304.06364",
+    "arxiv:2103.03874",
+    "arxiv:2110.14168",
+    "arxiv:2311.12022",
+    "arxiv:2108.07732",
+    "arxiv:2107.03374",
+    "arxiv:2210.03057",
+    "arxiv:2106.03193",
+    "arxiv:1910.11856",
+    "arxiv:2502.12404",
+    "arxiv:2502.21228",
+    "arxiv:2404.16816",
+    "arxiv:2104.12756",
+    "arxiv:2311.16502",
+    "arxiv:2203.10244",
+    "arxiv:2404.12390",
+    "arxiv:1810.12440",
+    "arxiv:1908.02660",
+    "arxiv:2312.11805",
+    "base_model:google/gemma-3-1b-it",
+    "base_model:quantized:google/gemma-3-1b-it",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 999885952,
+  "parameters_human": "999.9M",
+  "storage_bytes": 3881938176,
+  "storage_human": "3.9 GB",
+  "base_model": "google/gemma-3-1b-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Oficiální web | Česká spořitelna",
+      "url": "https://www.csas.cz/cs/osobni-finance",
+      "snippet": "Česká spořitelna je první bankou, která se stará o vaše finanční zdraví. Přidejte se k našim spokojeným klientům, kteří v nás našli …"
+    },
+    {
+      "title": "Tiskové zprávy - Česká spořitelna",
+      "url": "https://www.csas.cz/cs/o-nas/pro-media/tiskove-zpravy",
+      "snippet": "Tiskové zprávy České spořitelny. Kontakty na tiskové oddělení, analytiky a další osoby, které vám mohou zodpovědět vaše dotazy."
+    },
+    {
+      "title": "Co vědět, když chcete investovat poprvé? | Česká spořitelna",
+      "url": "https://financnezdravejsi.csas.cz/cs/resim-budoucnost/na-investovani-nepotrebujete-statisice-staci-par-stovek-mesicne-a-znat-sam-sebe",
+      "snippet": "Jul 30, 2026 · Svět investic může na první pohled působit složitě, ale dá se do něj vstoupit i bez hlubokých znalostí a zkušeností. …"
+    },
+    {
+      "title": "Studenti a absolventi - Česká spořitelna",
+      "url": "https://kariera.csas.cz/cs/o-praci/studenti-a-absolventi",
+      "snippet": "Vyber si vysněnou pozici v rámci Trainee programu a nastartuj svoji kariéru. Vyzkoušej si práci v různých odděleních a zjisti, co tě …"
+    },
+    {
+      "title": "Web pro vaše finanční zdraví | Česká spořitelna",
+      "url": "https://financnezdravejsi.csas.cz/cs/web/web-pro-vase-financni-zdravi",
+      "snippet": "Jan 1, 2023 · Finanční zdraví vás bude i bavit O tom, že někdy stačí málo, aby se vaše finanční situace zlepšila , se rychle …"
+    }
+  ]
+}

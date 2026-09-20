@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Abhiabhi12/a2c-LunarLander-v3",
+  "slug": "abhiabhi12-a2c-lunarlander-v3",
+  "author": "Abhiabhi12",
+  "url": "https://huggingface.co/Abhiabhi12/a2c-LunarLander-v3",
+  "created_at": "2026-09-20T15:57:07.000Z",
+  "updated_at": "2026-09-20T15:57:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "LunarLander-v3",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 195441,
+  "storage_human": "195441 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Teufel – audio uit Berlijn sinds 1979",
+      "url": "https://teufelaudio.be/",
+      "snippet": "Inside Teufel Nieuws uit Berlijn: de weg van de visie naar IKONIO Een luidspreker zoals de IKONIO ontstaat niet alleen op de …"
+    },
+    {
+      "title": "Teufel – la passion du son depuis 1979",
+      "url": "https://teufelaudio.be/fr-be/",
+      "snippet": "Quinze ans de Teufel Pays-Bas. Une étape importante dont nous sommes fiers. Mais au lieu de regarder uniquement en arrière, …"
+    },
+    {
+      "title": "Service | Teufel",
+      "url": "https://teufelaudio.be/klantenservice",
+      "snippet": "Van retouren tot het oplossen van specifieke problemen Veelgestelde vragen"
+    },
+    {
+      "title": "THEATER 500 KOMBO 2 - Teufel",
+      "url": "https://teufelaudio.be/theater-500-kombo-2-107002567",
+      "snippet": "De combinatie van Teufel speakers en de Teufel KOMBO 2.1 cd-receiver biedt je veel voordelen. Alles past en alles komt uit één …"
+    },
+    {
+      "title": "Login | Teufel",
+      "url": "https://teufelaudio.be/login?option=login",
+      "snippet": "Login | Teufel d van Teufel op privacybeleid"
+    }
+  ]
+}

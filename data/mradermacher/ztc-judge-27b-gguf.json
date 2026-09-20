@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "id": "mradermacher/ZTC-Judge-27B-GGUF",
+  "slug": "mradermacher-ztc-judge-27b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/ZTC-Judge-27B-GGUF",
+  "created_at": "2026-09-20T14:37:37.000Z",
+  "updated_at": "2026-09-20T15:07:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ko"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "ztc",
+    "answer-verification",
+    "hallucination-detection",
+    "zero-token",
+    "confidence-estimation",
+    "en",
+    "ko",
+    "base_model:FINAL-Bench/ZTC-Judge-27B",
+    "base_model:quantized:FINAL-Bench/ZTC-Judge-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 189223589152,
+  "storage_human": "189.2 GB",
+  "base_model": "FINAL-Bench/ZTC-Judge-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WhatsApp Web",
+      "url": "https://web.whatsapp.com/",
+      "snippet": "Log in to WhatsApp Web for simple, reliable and private messaging on your desktop. Send and receive messages and files with …"
+    }
+  ]
+}

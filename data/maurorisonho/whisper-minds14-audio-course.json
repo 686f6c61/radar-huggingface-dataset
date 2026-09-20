@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "maurorisonho/whisper-minds14-audio-course",
+  "slug": "maurorisonho-whisper-minds14-audio-course",
+  "author": "maurorisonho",
+  "url": "https://huggingface.co/maurorisonho/whisper-minds14-audio-course",
+  "created_at": "2026-09-20T17:26:18.000Z",
+  "updated_at": "2026-09-20T19:24:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "whisper",
+    "automatic-speech-recognition",
+    "PolyAI/minds14",
+    "dataset:PolyAI/minds14",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 151098921,
+  "storage_human": "151 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Automatic Speech Recognition",
+      "dataset": "PolyAI/minds14",
+      "metric": "Wer",
+      "value": 0.22
+    }
+  ],
+  "sources": [
+    {
+      "title": "Musikinstrumente günstig kaufen | session - Das Musikhaus",
+      "url": "https://www.session.de/",
+      "snippet": "Das Musikhaus session ist bereits seit 1979 der Ansprechpartner in der Rhein-Neckar-Region, wenn es um Musikinstrumente und …"
+    },
+    {
+      "title": "Buy musical instruments affordably | session - The music store",
+      "url": "https://www.session.de/en/",
+      "snippet": "Musical instruments for beginners and professionals with a huge range on session.de or with expert advice in our stores in Walldorf …"
+    },
+    {
+      "title": "session - YouTube",
+      "url": "https://www.youtube.com/sessionmusictv",
+      "snippet": "Wilkommen auf dem Youtube-Kanal von session. Hier findest du ständig aktuelle Reviews zu E-Gitarren, Akustikgitarren, Bässen, …"
+    },
+    {
+      "title": "session – Mehr als ein Musikhaus. - custom-reserve.com",
+      "url": "https://www.custom-reserve.com/unternehmen/",
+      "snippet": "In unseren Filialen in Walldorf und Frankfurt kannst du auf insgesamt über 5.000 Quadratmetern Musik erleben. Teste, spiele, …"
+    },
+    {
+      "title": "Studiomusiker – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Studiomusiker",
+      "snippet": "Sessionmusiker sind meist so professionell, dass sie nur wenige Takes zur Perfektionierung ihres Parts benötigen und ersparen …"
+    }
+  ]
+}

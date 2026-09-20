@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "maurorisonho/ppo-SpaceInvadersNoFrameskip-v4",
+  "slug": "maurorisonho-ppo-spaceinvadersnoframeskip-v4",
+  "author": "maurorisonho",
+  "url": "https://huggingface.co/maurorisonho/ppo-SpaceInvadersNoFrameskip-v4",
+  "created_at": "2026-09-20T17:16:18.000Z",
+  "updated_at": "2026-09-20T19:24:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "SpaceInvadersNoFrameskip-v4",
+    "ppo",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20885930,
+  "storage_human": "21 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "StFV",
+      "url": "https://www.stfv.at/",
+      "snippet": "Wenn Sie keine Marketing-Cookies zulassen, wird weiterhin Werbung ohne die Verwendung von Cookies von Drittanbietern auf …"
+    },
+    {
+      "title": "Ligen & Bewerbe - stfv.at",
+      "url": "https://www.stfv.at/stfv/Spielbetrieb/Ligen-Bewerbe",
+      "snippet": "Informationen zu Ligen und Bewerben des Steirischen Fußballverbandes, einschließlich Spielbetrieb und Wettbewerbsdetails."
+    },
+    {
+      "title": "STFV Schriedsrichter - Startseite",
+      "url": "https://www.stfv-schiedsrichter.at/",
+      "snippet": "Besetzung KM: 067688992600 Besetzung NW: 06766201532 schiedsrichter@stfv.at Hotline: 0676889441003 Hotline Zeiten …"
+    },
+    {
+      "title": "Fußball Steiermark - Ergebnisse, Tabellen und Torschützen von …",
+      "url": "https://www.ligaportal.at/stmk/",
+      "snippet": "Aug 2, 2025 · Fußball in der Steiermark. Aktuelle Ergebnisse, Tabellen und Torschützen der steirischen Ligen. Jetzt die kostenlose …"
+    },
+    {
+      "title": "StFV Spielerbörse",
+      "url": "https://service.stfv.at/spielerboerse.php",
+      "snippet": "StFV Spieler-/Trainerbörse Für Torhüter gibt es auch die spezielle Torhüterbörse der 1. Steirischen Tormannakademie. Benutzen Sie …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "hirosan6595/act-omx-260920-v2",
+  "slug": "hirosan6595-act-omx-260920-v2",
+  "author": "hirosan6595",
+  "url": "https://huggingface.co/hirosan6595/act-omx-260920-v2",
+  "created_at": "2026-09-20T12:42:04.000Z",
+  "updated_at": "2026-09-20T12:42:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:hirosan6595/omx_0920_v2_20260920_162205",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206712896,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Delete, allow, and manage cookies in Chrome - Google Help",
+      "url": "https://support.google.com/chrome/answer/95647?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "On your computer, open Chrome. At the top right, select More Delete browsing data. Choose a time range, like Last hour or All time. …"
+    },
+    {
+      "title": "Google Chrome'u indirme ve yükleme",
+      "url": "https://support.google.com/chrome/answer/95346?hl=tr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Chrome'u yükleme Önemli: İndirmeden önce Chrome'un işletim sisteminizi desteklediğinden ve işletim sisteminizin diğer tüm sistem …"
+    },
+    {
+      "title": "What is an anti-AI alternative to Google Chrome? - Reddit",
+      "url": "https://www.reddit.com/r/browsers/comments/1d2xonl/what_is_an_antiai_alternative_to_google_chrome/",
+      "snippet": "Turned off the assistive AI and it seems much better than Google engine! Staying on Google Chrome for now only for quick access to …"
+    },
+    {
+      "title": "Lighter/alternate versions of Chrome that are still Chrome?",
+      "url": "https://www.reddit.com/r/chrome/comments/aarssn/lighteralternate_versions_of_chrome_that_are/",
+      "snippet": "No, Chrome is a proprietary version of Chromium which is nearly the same. What you could look for are alternative chromium-based …"
+    },
+    {
+      "title": "تنزيل Chrome - مساعدة متصفح Google Chrome",
+      "url": "https://support.google.com/chrome/answer/16738344?hl=ar",
+      "snippet": "(Do you want to allow this app to make changes to your device? ‎ )، انقر على نعم (Yes). افتح Chrome. في نظام التشغيل Windows 10 والإصدارات الأحدث، …"
+    }
+  ]
+}

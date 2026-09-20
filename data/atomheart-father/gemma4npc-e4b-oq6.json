@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Atomheart-Father/Gemma4NPC-E4B-oQ6",
+  "slug": "atomheart-father-gemma4npc-e4b-oq6",
+  "author": "Atomheart-Father",
+  "url": "https://huggingface.co/Atomheart-Father/Gemma4NPC-E4B-oQ6",
+  "created_at": "2026-09-20T19:37:44.000Z",
+  "updated_at": "2026-09-20T19:39:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "gemma4",
+    "oq",
+    "quantized",
+    "6-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7941100874,
+  "parameters_human": "7.94B",
+  "storage_bytes": 7243976236,
+  "storage_human": "7.2 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "تفسير رؤية دمّ الحيض في المنام وحلم الدورة الشهرية",
+      "url": "https://www.hellooha.com/articles/3454-%D8%AA%D9%81%D8%B3%D9%8A%D8%B1-%D8%B1%D8%A4%D9%8A%D8%A9-%D8%AF%D9%85-%D8%A7%D9%84%D8%AD%D9%8A%D8%B6-%D9%81%D9%8A-%D8%A7%D9%84%D9%85%D9%86%D8%A7%D9%85-%D9%88%D8%AD%D9%84%D9%85-%D8%A7%D9%84%D8%AF%D9%88%D8%B1%D8%A9-%D8%A7%D9%84%D8%B4%D9%87%D8%B1%D9%8A%D8%A9",
+      "snippet": "Apr 14, 2021 · تعرفي إلى دلالات الحيض أو الدورة الشهرية في المنام وحلم نزول الدورة الشهرية ومعنى دم الحيض على الملابس في المنام وغيرها من الرموز."
+    },
+    {
+      "title": "تفسير رؤية دم الحيض في المنام للعزباء بالتفصيل",
+      "url": "https://www.hellooha.com/articles/5287-%D8%AA%D9%81%D8%B3%D9%8A%D8%B1-%D8%B1%D8%A4%D9%8A%D8%A9-%D8%AF%D9%85-%D8%A7%D9%84%D8%AD%D9%8A%D8%B6-%D9%81%D9%8A-%D8%A7%D9%84%D9%85%D9%86%D8%A7%D9%85-%D9%84%D9%84%D8%B9%D8%B2%D8%A8%D8%A7%D8%A1-%D8%A8%D8%A7%D9%84%D8%AA%D9%81%D8%B5%D9%8A%D9%84",
+      "snippet": "Jul 14, 2023 · قال ابن سيرين رؤية دم الحيض في المنام للفتاة العزباء تدل على الخلاص من التعب والمشاكل ، وتشير رؤية نزول دم الحيض في المنام للبنت العزباء على انجلاء الهموم والغموم، وتشير …"
+    },
+    {
+      "title": "تفسير حلم رؤية الدورة الشهرية في المنام للمرأة ورمز دم الحيض لابن سيرين",
+      "url": "https://www.almawkib.net/%D8%A7%D9%84%D8%AF%D9%88%D8%B1%D8%A9-%D8%A7%D9%84%D8%B4%D9%87%D8%B1%D9%8A%D8%A9-%D9%81%D9%8A-%D8%A7%D9%84%D9%85%D9%86%D8%A7%D9%85/",
+      "snippet": "Sep 6, 2025 · عند رؤية الدورة الشهرية في المنام يتوقع العلماء أنها رمز إلى زيادة الرزق والتوفيق، وخاصة عند شعور الرائية بالراحة بعد نزولها في الحلم، ولكن أحيانًا تتغير الأمور التي …"
+    },
+    {
+      "title": "تفسير حلم دم الحيض على الفراش للمتزوجة ورؤية دم الدورة في المنام لابن ...",
+      "url": "https://joellemena.com/dream-interpretation/%d8%af%d9%85-%d8%a7%d9%84%d8%af%d9%88%d8%b1%d8%a9-%d9%81%d9%8a-%d8%a7%d9%84%d9%85%d9%86%d8%a7%d9%85/",
+      "snippet": "Dec 23, 2021 · دم الحيض في المنام يشير إلى الخير الكثير والمال الوفير الذي سيناله في حياته. تدل رؤية دم الحيض في المنام على التغييرات الإيجابية والأحداث الجيدة التي ستحدث للحالمة وستفرح …"
+    },
+    {
+      "title": "تفسير حلم دم الحيض في المنام لابن سيرين والنابلسي",
+      "url": "https://ahlamna.com/%D8%AA%D9%81%D8%B3%D9%8A%D8%B1-%D8%AD%D9%84%D9%85/%D8%AA%D9%81%D8%B3%D9%8A%D8%B1-%D8%AD%D9%84%D9%85-%D8%AF%D9%85-%D8%A7%D9%84%D8%AD%D9%8A%D8%B6",
+      "snippet": "استكشف تفسير حلم نزول دم الحيض للمتزوجة والعزباء والرجل والحامل والشباب، ودلالاته الدينية ومعانيه المختلفة."
+    }
+  ]
+}

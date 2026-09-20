@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "HrushikeshGangane/decision_maker",
+  "slug": "hrushikeshgangane-decision_maker",
+  "author": "HrushikeshGangane",
+  "url": "https://huggingface.co/HrushikeshGangane/decision_maker",
+  "created_at": "2026-09-20T14:39:05.000Z",
+  "updated_at": "2026-09-20T14:45:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "text-classification",
+    "multiple-choice",
+    "calibrated-classification",
+    "system-one",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 386057216,
+  "parameters_human": "386.1M",
+  "storage_bytes": 1544283016,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Search News - Bing",
+      "url": "https://www.bing.com/news/?setlang=en",
+      "snippet": "News from world, national, and local news sources, organized to give you in-depth news coverage of sports, entertainment, business, …"
+    },
+    {
+      "title": "Search - Bing",
+      "url": "https://www.bing.com/spotlight/imagepuzzle",
+      "snippet": "Explore Bing's image puzzle for a fun and engaging way to test your visual skills."
+    },
+    {
+      "title": "Search - Bing",
+      "url": "https://www.bing.com/spotlight/imagepuzzle?PROGRAMNAME=BingDailyOfferIN",
+      "snippet": "Test your knowledge and have fun solving the Bing daily image puzzle by completing the picture."
+    },
+    {
+      "title": "Bing",
+      "url": "https://www.bing.com/set/homepage",
+      "snippet": "Set Bing as your default search engine Try it now"
+    },
+    {
+      "title": "welcome - 搜索 词典 - Bing",
+      "url": "https://www.bing.com/dict/",
+      "snippet": "必应词典提供welcome的释义、发音及相关用法，帮助用户更好地理解和使用该词。"
+    }
+  ]
+}

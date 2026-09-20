@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "zeene-prod/ZINI-1-CHAT-STORIES-web",
+  "slug": "zeene-prod-zini-1-chat-stories-web",
+  "author": "zeene-prod",
+  "url": "https://huggingface.co/zeene-prod/ZINI-1-CHAT-STORIES-web",
+  "created_at": "2026-09-20T17:34:00.000Z",
+  "updated_at": "2026-09-20T17:34:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers.js",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "qwen2",
+    "text-generation",
+    "chat",
+    "storytelling",
+    "creative-writing",
+    "webgpu",
+    "wasm",
+    "browser",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6048298891,
+  "storage_human": "6.0 GB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Korzystanie ze zniżki studenckiej na YouTube Premium lub YouTube …",
+      "url": "https://support.google.com/youtube/answer/9158808?hl=pl&co=GENIE.Platform%3DDesktop",
+      "snippet": "Jeśli masz aktywną płatną subskrypcję YouTube (z wyjątkiem pakietu NFL Sunday Ticket w YouTube lub YouTube TV) i chcesz …"
+    },
+    {
+      "title": "Přihlášení do aplikace YouTube na chytré televizi nebo herní konzoli",
+      "url": "https://support.google.com/youtube/answer/3015415?hl=cs",
+      "snippet": "Přečtěte si, jak se odhlásit nebo odebrat účet v aplikaci YouTube na chytré televizi nebo herní konzoli. Pokud jste členem služby …"
+    },
+    {
+      "title": "First Look: YT Industries TUES CF - Pinkbike",
+      "url": "https://www.pinkbike.com/news/first-look-YT-TUES-CF-Pro-2015.html",
+      "snippet": "Feb 19, 2015 · Gravity riders have been anticipating this moment, and YT did not disappoint - Pro spec and a carbon chassis at a …"
+    },
+    {
+      "title": "Results for \"Decoy\" - Pinkbike BuySell Search",
+      "url": "https://www.pinkbike.com/buysell/list/?q=Decoy",
+      "snippet": "2025 YT Decoy SN MX Core 3, size large, with original stock components. I've had the bike for a year and a half, and I'm looking to …"
+    },
+    {
+      "title": "YouTube 鍵盤快速鍵",
+      "url": "https://support.google.com/youtube/answer/7631406?hl=zh-Hant",
+      "snippet": "如果你使用的是 新版電腦網頁，必須先按一下影片播放器，才能使用鍵盤快速鍵。如要回復到舊版電腦網頁，請依序按一下個人資料 …"
+    }
+  ]
+}

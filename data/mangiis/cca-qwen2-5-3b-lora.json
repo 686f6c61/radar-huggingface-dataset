@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mangiis/cca-qwen2.5-3b-lora",
+  "slug": "mangiis-cca-qwen2-5-3b-lora",
+  "author": "mangiis",
+  "url": "https://huggingface.co/mangiis/cca-qwen2.5-3b-lora",
+  "created_at": "2026-09-20T14:21:47.000Z",
+  "updated_at": "2026-09-20T14:22:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qlora",
+    "morphological-analysis",
+    "decision-support",
+    "selective-classification",
+    "text-classification",
+    "en",
+    "base_model:Qwen/Qwen2.5-3B",
+    "base_model:adapter:Qwen/Qwen2.5-3B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 250958164,
+  "storage_human": "251 MB",
+  "base_model": "Qwen/Qwen2.5-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Myinstants | Die größte Website für Instant-Sound-Buttons in Germany!",
+      "url": "https://www.myinstants.com/de/index/de/",
+      "snippet": "Bei Myinstants entdeckst du witzige Sofort-Sound-Buttons aus Germany. HABT SPASS!"
+    },
+    {
+      "title": "Myinstants | The largest instant sound buttons website in United States!",
+      "url": "https://www.myinstants.com/",
+      "snippet": "Myinstants is where you discover funny instant sound buttons from United States. HAVE FUN!"
+    },
+    {
+      "title": "Free Sound Buttons & Meme Soundboard - Myinstants | 100,000",
+      "url": "https://myinstants.net/",
+      "snippet": "Play, download & share 100,000+ free sound buttons and meme sounds instantly. Perfect for Discord, TikTok, YouTube, streaming & …"
+    },
+    {
+      "title": "myinstant - Search results | Sound Instants",
+      "url": "https://soundinstants.com/search/myinstant",
+      "snippet": "Download high-quality MP3 for YouTube, TikTok, & Gaming instantly on SoundInstants."
+    },
+    {
+      "title": "Myinstants | Le plus grand site de boutons sonores instantanés en …",
+      "url": "https://www.myinstants.com/fr/index/fr/",
+      "snippet": "Myinstants est l'endroit où tu découvres des boutons sonores instantanés amusants de France. AMUSEZ-VOUS !"
+    }
+  ]
+}

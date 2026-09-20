@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "jungwook2358/allex-eef-N-robotonly-h40rel",
+  "slug": "jungwook2358-allex-eef-n-robotonly-h40rel",
+  "author": "jungwook2358",
+  "url": "https://huggingface.co/jungwook2358/allex-eef-N-robotonly-h40rel",
+  "created_at": "2026-09-20T15:43:30.000Z",
+  "updated_at": "2026-09-21T09:57:00.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "robotics",
+    "vla",
+    "rldx",
+    "allex",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 32585291512,
+  "storage_human": "32.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reifen online günstig kaufen | ReifenDirekt.de",
+      "url": "https://www.reifendirekt.de/",
+      "snippet": "Prüfen Sie hier den Shop von reifendirekt.de: 94464-Kundenbewertungen, verifizierte Firmendaten & das Trustprofile-Gütesiegel auf …"
+    },
+    {
+      "title": "Ganzjahresreifen und Allwetterreifen günstig kaufen - ReifenDirekt.de",
+      "url": "https://www.reifendirekt.de/Ganzjahresreifen.html",
+      "snippet": "Prüfen Sie hier den Shop von reifendirekt.de: 94454-Kundenbewertungen, verifizierte Firmendaten & das Trustprofile-Gütesiegel auf …"
+    },
+    {
+      "title": "Winterreifen günstig online kaufen | ReifenDirekt.de",
+      "url": "https://www.reifendirekt.de/Winterreifen.html",
+      "snippet": "Winterreifen-Shop Winterreifen günstig kaufen Starten Sie über Fahrzeug, Reifengröße oder aktuelle Winterreifen-Angebote."
+    },
+    {
+      "title": "Winterkompletträder online günstig kaufen ReifenDirekt.de",
+      "url": "https://www.reifendirekt.de/Winterkomplettraeder.html",
+      "snippet": "Prüfen Sie hier den Shop von reifendirekt.de: 94464-Kundenbewertungen, verifizierte Firmendaten & das Trustprofile-Gütesiegel auf …"
+    },
+    {
+      "title": "Winterkompletträder Alu günstig online kaufen | ReifenDirekt.de",
+      "url": "https://www.reifendirekt.de/Alukomplettraeder_Winter.html",
+      "snippet": "Prüfen Sie hier den Shop von reifendirekt.de: 94464-Kundenbewertungen, verifizierte Firmendaten & das Trustprofile-Gütesiegel auf …"
+    }
+  ]
+}

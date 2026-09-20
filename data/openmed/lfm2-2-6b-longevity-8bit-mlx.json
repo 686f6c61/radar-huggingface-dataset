@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "OpenMed/LFM2-2.6B-Longevity-8bit-mlx",
+  "slug": "openmed-lfm2-2-6b-longevity-8bit-mlx",
+  "author": "OpenMed",
+  "url": "https://huggingface.co/OpenMed/LFM2-2.6B-Longevity-8bit-mlx",
+  "created_at": "2026-09-20T18:08:23.000Z",
+  "updated_at": "2026-09-20T18:11:11.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "lfm2",
+    "openmed",
+    "apple-silicon",
+    "liquid",
+    "longevity",
+    "aging-biology",
+    "biomedical",
+    "text-generation",
+    "conversational",
+    "quantized",
+    "8bit",
+    "on-device",
+    "en",
+    "base_model:LiquidAI/LFM2-2.6B-Longevity",
+    "base_model:quantized:LiquidAI/LFM2-2.6B-Longevity",
+    "license:other",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2569272320,
+  "parameters_human": "2.57B",
+  "storage_bytes": 2730164389,
+  "storage_human": "2.7 GB",
+  "base_model": "LiquidAI/LFM2-2.6B-Longevity",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dein KI-Assistent in Adam - docs.meetadam.io",
+      "url": "https://docs.meetadam.io/ki-assistent",
+      "snippet": "Unser KI-Chatbot steht dir rund um die Uhr zur Verfügung, um Fragen zur Software zu beantworten oder dich bei Controlling-Themen …"
+    },
+    {
+      "title": "Adam: KI-Chatbot – Apps bei Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.ai.chat.app.android&hl=de",
+      "snippet": "Verwenden Sie KI in Ihrer Tasche! Fragen Sie alles, was Sie wissen wollen!"
+    },
+    {
+      "title": "Adam: KI-Chatbot – Apps bei Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.ai.chat.app.android&hl=de-AT",
+      "snippet": "Egal, ob Sie Spaß oder Rat suchen oder einfach jemanden zum Reden brauchen, KI ist immer für Sie da. Sie werden das Gefühl …"
+    },
+    {
+      "title": "‎Adam: KI-Chatbot im App Store",
+      "url": "https://apps.apple.com/de/app/adam-ki-chatbot/id6447289496",
+      "snippet": "Egal, ob Sie Spaß oder Rat suchen oder einfach jemanden zum Reden brauchen, KI ist immer für Sie da. Sie werden das Gefühl …"
+    },
+    {
+      "title": "Adam: KI-Chatbot - Produktivität-App | MWM",
+      "url": "https://mwm.ai/de/apps/adam-ai-chatbot/6447289496",
+      "snippet": "Stellen Sie alles, was Sie wissen möchten, und erhalten Sie sofortige Antworten von der fortschrittlichen KI. Chatten Sie wie Ihre …"
+    }
+  ]
+}

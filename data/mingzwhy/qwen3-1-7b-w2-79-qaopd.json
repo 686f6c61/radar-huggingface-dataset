@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "MingZwhy/Qwen3-1.7B-W2.79-QAOPD",
+  "slug": "mingzwhy-qwen3-1-7b-w2-79-qaopd",
+  "author": "MingZwhy",
+  "url": "https://huggingface.co/MingZwhy/Qwen3-1.7B-W2.79-QAOPD",
+  "created_at": "2026-09-20T17:20:09.000Z",
+  "updated_at": "2026-09-20T17:21:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "qaopd",
+    "quantization",
+    "quantization-aware-training",
+    "on-policy-distillation",
+    "conversational",
+    "custom_code",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 3452608262,
+  "storage_human": "3.5 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Immobilien - Häuser - Wohnungen - finden bei immowelt.de",
+      "url": "https://www.immowelt.de/?msockid=03e9bbc2025e6ccb34deac1803426db6",
+      "snippet": "Aktuelle Immobilien, schöne Wohnungen und Häuser zur Miete oder Kauf in ganz Deutschland. Jetzt online, schnell & einfach, …"
+    },
+    {
+      "title": "Immobilie in Baden-Württemberg | immowelt - 60.775 Angebote",
+      "url": "https://www.immowelt.de/suche/mk/immobilien/baden-wurttemberg/ad04de8?msockid=03e9bbc2025e6ccb34deac1803426db6",
+      "snippet": "Immobilie in Baden-Württemberg leicht gemacht - bei immowelt findest du eine große Auswahl an aktuellen Angeboten. Jetzt loslegen!"
+    },
+    {
+      "title": "Immobilien in Filderstadt - ImmoScout24",
+      "url": "https://www.immobilienscout24.de/Suche/de/baden-wuerttemberg/esslingen-kreis/filderstadt/immobilien?msockid=03e9bbc2025e6ccb34deac1803426db6",
+      "snippet": "Starten Sie Ihre Immobiliensuche bei ImmoScout24, der Nr.1 rund um Immobilien."
+    },
+    {
+      "title": "ImmoScout24 – Mit über 6,5 Mio. Immobilien.",
+      "url": "https://www.immobilienscout24.de/?msockid=03e9bbc2025e6ccb34deac1803426db6",
+      "snippet": "Entdecke die passenden Services, um jede Situation zu meistern. Wir können keinen neuen Wohnraum bauen. Aber unser Anspruch …"
+    },
+    {
+      "title": "Immobilien, Wohnungen, Häuser kaufen & mieten | immobilien.de",
+      "url": "https://www.immobilien.de/",
+      "snippet": "Deutschlands ältestes Immobilienportal: Wohnungen, Häuser, Gewerbe einfach anbieten, mieten, vermieten oder kaufen Kostenlose …"
+    }
+  ]
+}

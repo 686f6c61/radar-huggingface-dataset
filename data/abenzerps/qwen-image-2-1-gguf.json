@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "abenzerps/Qwen-Image-2.1-GGUF",
+  "slug": "abenzerps-qwen-image-2-1-gguf",
+  "author": "abenzerps",
+  "url": "https://huggingface.co/abenzerps/Qwen-Image-2.1-GGUF",
+  "created_at": "2026-09-20T15:51:13.000Z",
+  "updated_at": "2026-09-21T13:50:35.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen",
+    "image-generation",
+    "comfyui",
+    "comfyui-gguf",
+    "text-to-image",
+    "base_model:Qwen/Qwen-Image-2.1",
+    "base_model:quantized:Qwen/Qwen-Image-2.1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 669,
+  "downloads_30d": 33232,
+  "trending_score": 605,
+  "parameters": 7115124736,
+  "parameters_human": "7.12B",
+  "storage_bytes": 62497320285,
+  "storage_human": "62.5 GB",
+  "base_model": "Qwen/Qwen-Image-2.1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pixel orten, sperren oder Daten darauf löschen - Pixel-Hilfe",
+      "url": "https://support.google.com/pixelphone/answer/9338680?hl=de",
+      "snippet": "Wenn du dein Android-Gerät oder deine Wear OS-Smartwatch verlierst, kannst du dein Gerät aus der Ferne orten, sperren oder die …"
+    },
+    {
+      "title": "How do I create a second Gmail account without deleting the old one ...",
+      "url": "https://support.google.com/mail/thread/4938966/how-do-i-create-a-second-gmail-account-without-deleting-the-old-one?hl=en",
+      "snippet": "Apr 26, 2019 · I am interested in creating a second Gmail account for a flyer I made. The flyer is for a job, but I do not want to put my …"
+    },
+    {
+      "title": "Kebijakan monetisasi channel YouTube",
+      "url": "https://support.google.com/youtube/answer/1311392?hl=id",
+      "snippet": "3 Maret 2022: Sehubungan dengan adanya perang yang terjadi di Ukraina, kami akan menjeda sementara penayangan iklan Google …"
+    },
+    {
+      "title": "Non riesco a liberare spazio nella mail nonostante le cancelli.",
+      "url": "https://support.google.com/mail/thread/48194025/non-riesco-a-liberare-spazio-nella-mail-nonostante-le-cancelli?hl=it",
+      "snippet": "May 21, 2020 · Ho cancellato vecchie mail ma lo spazio occupato al 97% rimane sempre invariato"
+    },
+    {
+      "title": "Export bookmarks google chrome android",
+      "url": "https://support.google.com/chrome/thread/27304190/export-bookmarks-google-chrome-android?hl=en",
+      "snippet": "Jan 31, 2020 · I want to export my google chrome mobile bookmarks is there is a way to do that thanks in advance."
+    }
+  ]
+}

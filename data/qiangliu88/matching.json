@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "qiangliu88/matching",
+  "slug": "qiangliu88-matching",
+  "author": "qiangliu88",
+  "url": "https://huggingface.co/qiangliu88/matching",
+  "created_at": "2026-09-20T12:01:31.000Z",
+  "updated_at": "2026-09-20T12:01:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "perceiver",
+    "pytorch",
+    "matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cliquojeux - eurovore.com",
+      "url": "https://www.eurovore.com/cliquojeux.html",
+      "snippet": "Description : Cliquojeux : cliquez pour gagner des cadeaux grâce aux jeux de grattage, tournois, jeux réseaux, jeux de hasard, jeux …"
+    },
+    {
+      "title": "Cliquojeux - Forum Réseaux sociaux - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-33732560-cliquojeux",
+      "snippet": "Jul 20, 2016 · Cliquojeux Jujujuju47 - Modifié le 20 juil. 2016 à 00:42 Serge1999 - 20 juil. 2016 à 02:08"
+    },
+    {
+      "title": "Firefox et cliquojeux - Windows - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-13689007-firefox-et-cliquojeux",
+      "snippet": "donc je redémarre, et j'ouvre à nouveau cliquojeux seulement au lieu de me rester 4 parties il y en a zéro, alors qu'avec internet …"
+    },
+    {
+      "title": "Tag jeux - eurovore.com",
+      "url": "http://www.eurovore.com/tag-jeux.html",
+      "snippet": "Cliquojeux Cocoricode Codes Discount Codes-clics Defigames Ducky-Games Elevez Empocher Encaisse Eurokiddies Factoriz Find …"
+    },
+    {
+      "title": "AFFICHAGE TROP GRAND [Résolu] - Forum Windows 10",
+      "url": "https://forums.commentcamarche.net/forum/affich-34060298-affichage-trop-grand",
+      "snippet": "Meilleure réponse: Bonjour Jean-Maurice, Clique sur le bureau avec le bouton droit de la souris, puis clique sur paramètres …"
+    }
+  ]
+}

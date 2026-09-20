@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Jeonminjun/omx_act_policy_test4_50k",
+  "slug": "jeonminjun-omx_act_policy_test4_50k",
+  "author": "Jeonminjun",
+  "url": "https://huggingface.co/Jeonminjun/omx_act_policy_test4_50k",
+  "created_at": "2026-09-20T13:15:04.000Z",
+  "updated_at": "2026-09-20T13:16:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:Jeonminjun/test_4_20260920_185331",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206716848,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fortnite - jeuxvideo.com",
+      "url": "https://www.jeuxvideo.com/jeux/jeu-77986/",
+      "snippet": "Fortnite : retrouvez toutes les informations et actualités du jeu sur tous ses supports. Fortnite est un Tower-Defense orienté sandbox. …"
+    },
+    {
+      "title": "Fortnite Battle Royale : guide complet, astuces, cartes, défis, mises à ...",
+      "url": "https://www.jeuxvideo.com/wikis-soluce-astuces/367228/wiki-de-fortnite.htm",
+      "snippet": "Vous débutez sur le jeu Fortnite ? Venez découvrir tout ce qu'il faut savoir sur ce jeu grâce à toutes les soluces que propose notre wiki."
+    },
+    {
+      "title": "Aktuelles | tutorials.de – Wissen. Gemeinsam.",
+      "url": "https://www.tutorials.de/whats-new/",
+      "snippet": "May 17, 2026 · Ermöglicht es , die Werte für die Seitenbreite zu ändern Farbauswahl"
+    },
+    {
+      "title": "Test de Resonance : A Plague Tale Legacy par jeuxvideo.com",
+      "url": "https://www.jeuxvideo.com/test/2100348/resonance-a-plague-tale-legacy-un-episode-qui-claque-visuellement-mais-qui-divisera-les-joueurs.htm",
+      "snippet": "Aug 26, 2026 · Retrouvez le test de Resonance A Plague Tale Legacy : Un épisode qui claque visuellement, mais qui divisera les …"
+    },
+    {
+      "title": "Forum Guerre des Consoles - jeuxvideo.com",
+      "url": "https://www.jeuxvideo.com/forums/0-36-0-1-0-1-0-guerre-des-consoles.htm",
+      "snippet": "Bienvenue sur la page d'accueil du forum Guerre des Consoles de jeuxvideo.com Voici la liste des topics du forum. Venez rejoindre …"
+    }
+  ]
+}

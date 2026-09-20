@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "SkyColThreeCat/MedMLIP_GuidedByQwen3B",
+  "slug": "skycolthreecat-medmlip_guidedbyqwen3b",
+  "author": "SkyColThreeCat",
+  "url": "https://huggingface.co/SkyColThreeCat/MedMLIP_GuidedByQwen3B",
+  "created_at": "2026-09-20T18:38:44.000Z",
+  "updated_at": "2026-09-20T19:50:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7271161342,
+  "storage_human": "7.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Scripts and LCN - General - Official Kano Community Forums",
+      "url": "https://forums.kanoplay.com/t/scripts-and-lcn/517",
+      "snippet": "Apr 13, 2023 · A few years back I have been reading, in the old LCN forum about players using automated programs (scripts) to help …"
+    },
+    {
+      "title": "Latest Mob Wars: LCN topics - Official Kano Community Forums",
+      "url": "https://forums.kanoplay.com/c/mob-wars-lcn/5",
+      "snippet": "Jun 9, 2021 · Mob Wars: LCN General Your spot for Mob Wars: La Cosa Nostra general discussion. News & Announcements Check …"
+    },
+    {
+      "title": "Official Kano Community Forums",
+      "url": "https://forums.kanoplay.com/",
+      "snippet": "Official forum for Mob Wars: La Cosa Nostra, Pirate Clan, Viking Clan and Zombie Slayer. A great place to talk about Kano games …"
+    },
+    {
+      "title": "Latest Kano Community Forums topics - Official Kano Community …",
+      "url": "https://forums.kanoplay.com/c/kano-community-forum/32",
+      "snippet": "Jun 22, 2021 · Official forum for Mob Wars: La Cosa Nostra, Pirate Clan, Viking Clan and Zombie Slayer. A great place to talk about …"
+    },
+    {
+      "title": "Social News -> Videos / Livestreams - General Discussion - Official ...",
+      "url": "https://forums.kanoplay.com/t/social-news-videos-livestreams/174",
+      "snippet": "Nov 1, 2022 · Check here periodically to see what’s new in the world of our YouTube channel → We’ll update this periodically and …"
+    }
+  ]
+}

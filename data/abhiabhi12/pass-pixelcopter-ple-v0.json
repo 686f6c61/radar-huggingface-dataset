@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Abhiabhi12/pass-pixelcopter-ple-v0",
+  "slug": "abhiabhi12-pass-pixelcopter-ple-v0",
+  "author": "Abhiabhi12",
+  "url": "https://huggingface.co/Abhiabhi12/pass-pixelcopter-ple-v0",
+  "created_at": "2026-09-20T16:04:23.000Z",
+  "updated_at": "2026-09-20T16:07:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Pixelcopter-PLE-v0",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "reinforce",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Routenplaner - ÖAMTC",
+      "url": "https://www.oeamtc.at/routenplaner/",
+      "snippet": "Umfangreiche Optionen für Ihre Route und interessante Orte helfen Ihnen dabei genau das Passende zu finden – ob den günstigsten …"
+    },
+    {
+      "title": "Routenplaner – ARBÖ Website",
+      "url": "https://www.arboe.at/infos/routenplaner/",
+      "snippet": "Egal, ob Sie mit dem Auto, dem Rad, mit den öffentlichen Verkehrsmitteln oder zu Fuß unterwegs sind, einen Wochenendtrip oder …"
+    },
+    {
+      "title": "Route: Routenberechnung, genaue Fahrtkosten - ViaMichelin",
+      "url": "https://www.viamichelin.at/routenplaner",
+      "snippet": "Berechnen Sie kostenlos Ihre Fußgänger-, Motorrad- oder Autofahrt. Nutzen Sie unsere vielfältigen Berechnungsoptionen: die …"
+    },
+    {
+      "title": "ÖAMTC - Routenplaner: Ihr Mobilitätsbegleiter im Alltag",
+      "url": "https://www.oeamtc.at/thema/verkehr/oeamtc-routenplaner-ihr-mobilitaetsbegleiter-im-alltag-16183304",
+      "snippet": "Finden Sie die beste Route für Ihren Alltag und Urlaub! Neben dem gewohnten PKW-Routing bietet der Routenplaner auch Routing- …"
+    },
+    {
+      "title": "ᐅ ROUTENPLANER Österreich | Kostenlos Route berechnen",
+      "url": "https://www.routenplaner-karten.at/",
+      "snippet": "Berechne deine Route per Auto, öffentlichen Verkehrsmitteln oder zu Fuß ganz unkompliziert und schnell vom gewünschten Standort …"
+    }
+  ]
+}

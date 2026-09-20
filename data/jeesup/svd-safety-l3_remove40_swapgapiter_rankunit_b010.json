@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l3_remove40_swapgapiter_rankunit_b010",
+  "slug": "jeesup-svd-safety-l3_remove40_swapgapiter_rankunit_b010",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l3_remove40_swapgapiter_rankunit_b010",
+  "created_at": "2026-09-20T18:26:02.000Z",
+  "updated_at": "2026-09-20T18:42:21.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama3",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Meta-Llama-3-8B-Instruct",
+    "base_model:finetune:meta-llama/Meta-Llama-3-8B-Instruct",
+    "license:llama3",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766337,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Meta-Llama-3-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Arches makes Art papers suitable for all artistic techniques",
+      "url": "https://arches-papers.com/",
+      "snippet": "Sep 4, 2026 · In 1492, master papermakers were already making paper by hand in the Arches paper mill located in the Vosges …"
+    },
+    {
+      "title": "Amazon.com: Arches Watercolor Paper",
+      "url": "https://www.amazon.com/arches-watercolor-paper/s?k=arches+watercolor+paper",
+      "snippet": "Explore Arches watercolor paper trusted by artists for centuries. Find archival-quality sheets perfect for watercolor, gouache, ink, and …"
+    },
+    {
+      "title": "ARCHES ® Aquarelle - Arches Papers",
+      "url": "https://arches-papers.com/arches-range-of-papers/watercolor-and-wet-techniques/arches-aquarelle/",
+      "snippet": "ARCHES® Aquarelle can absorb a large amount of water with limited deformation. Ideal for watercolour painting, as for all wet …"
+    },
+    {
+      "title": "Arches Watercolor Paper Roll 44.5-inch x 10-Yards - amazon.com",
+      "url": "https://www.amazon.com/arches-watercolor-roll-44-5-10/dp/b00584fjzy",
+      "snippet": "Arches paper can be used as more than just watercolor painting paper; this exquisite, thick paper functions well with all wet …"
+    },
+    {
+      "title": "Arches Watercolor Paper - artsupply.com",
+      "url": "https://www.artsupply.com/Arches-Watercolor-Paper.html",
+      "snippet": "Arches watercolor papers are produced on a cylinder mould with pure artesian well water, cotton fibers and natural gelatin sizing to …"
+    }
+  ]
+}

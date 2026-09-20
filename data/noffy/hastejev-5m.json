@@ -1,0 +1,89 @@
+{
+  "schema": 1,
+  "id": "noffy/hastejev-5m",
+  "slug": "noffy-hastejev-5m",
+  "author": "noffy",
+  "url": "https://huggingface.co/noffy/hastejev-5m",
+  "created_at": "2026-09-20T13:54:14.000Z",
+  "updated_at": "2026-09-20T13:54:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "safetensors",
+    "hastejev",
+    "jev",
+    "hastejev-5m",
+    "decision-engine",
+    "system-1",
+    "pica",
+    "zero-bias",
+    "low-latency",
+    "non-generative",
+    "autonomous-agents",
+    "browser-control",
+    "web-automation",
+    "agentic-ai",
+    "fast-inference",
+    "decision-making",
+    "calibration",
+    "quantized",
+    "int8",
+    "int4",
+    "fp16",
+    "feature-extraction",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 70111885,
+  "storage_human": "70 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Chrome Web Tarayıcısı",
+      "url": "https://www.google.com/intl/tr/chrome/",
+      "snippet": "Chrome, internette tam olarak neyi kiminle paylaştığınızı kolayca anlamanızı sağlar. Gizlilik ayarlarınızın adım adım açıklandığı …"
+    },
+    {
+      "title": "Google Chrome - The Fast & Secure Web Browser Built to be Yours",
+      "url": "https://www.google.com/chrome/",
+      "snippet": "Chrome is the official web browser from Google, built to be fast, secure, and customizable. Download now and make it yours."
+    },
+    {
+      "title": "Download and install Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95346?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "You can download and install the Chrome web browser at no charge, and use it to browse the web. Check system requirements to …"
+    },
+    {
+      "title": "Google Chrome'u indirme ve yükleme",
+      "url": "https://support.google.com/chrome/answer/95346?hl=tr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Chrome'u yükleme Önemli: İndirmeden önce Chrome'un işletim sisteminizi desteklediğinden ve işletim sisteminizin diğer tüm sistem …"
+    },
+    {
+      "title": "Google Chrome Browser Download Free - 153.0.8010.53 | TechSpot",
+      "url": "https://www.techspot.com/downloads/4718-google-chrome.html",
+      "snippet": "3 days ago · Download Chrome for fast and secure browsing across desktop and mobile devices. Google Chrome is a fast, simple, …"
+    }
+  ]
+}

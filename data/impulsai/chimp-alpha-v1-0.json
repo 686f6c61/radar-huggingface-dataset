@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "impulsai/CHImp-Alpha-v1.0",
+  "slug": "impulsai-chimp-alpha-v1-0",
+  "author": "impulsai",
+  "url": "https://huggingface.co/impulsai/CHImp-Alpha-v1.0",
+  "created_at": "2026-09-20T19:25:41.000Z",
+  "updated_at": "2026-09-20T22:33:05.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "moe",
+    "mixture-of-experts",
+    "qwen4exp",
+    "speculative-decoding",
+    "mtp",
+    "impulsAI",
+    "hybrid-tensor-compression",
+    "text-generation",
+    "en",
+    "de",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4367284,
+  "storage_human": "4 MB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=th",
+      "snippet": "โฆษณา เกี่ยวกับ Google ทั้งหมด Google.com in English © 2026 - ความเป็นส่วนตัว ..."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=es",
+      "snippet": "Publicidad Todo acerca de Google Google.com in English © 2026 - Privacidad - Condiciones"
+    },
+    {
+      "title": "xXx - Triple X (VF) – Films sur Google Play",
+      "url": "https://play.google.com/store/movies/details/xXx_Triple_X_VF?id=8rooNT2t5OE&hl=fr",
+      "snippet": "Actions et sensations fortes sont à l'honneur de ce film d'espionnage, dans lequel Vin Diesel incarne Xander Cage, dit \"XXX\", un fou …"
+    },
+    {
+      "title": "xXx: Return of Xander Cage - Movies on Google Play",
+      "url": "https://play.google.com/store/movies/details/xXx_Return_of_Xander_Cage?id=IQ-W-huyz20&hl=en-US",
+      "snippet": "Vin Diesel returns in the most x-treme, x-plosive and x-hilarating xXx yet! When a group of lethal mercenaries steal a hi-tech weapon …"
+    },
+    {
+      "title": "Collaborative, AI-powered spreadsheets | Google Workspace",
+      "url": "https://workspace.google.com/products/sheets/",
+      "snippet": "Gemini in Sheets helps you simplify complex data, reveal insights, and turn data into interactive mini-apps. Try Sheets for work today!"
+    }
+  ]
+}

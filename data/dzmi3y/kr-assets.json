@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Dzmi3y/kr-assets",
+  "slug": "dzmi3y-kr-assets",
+  "author": "Dzmi3y",
+  "url": "https://huggingface.co/Dzmi3y/kr-assets",
+  "created_at": "2026-09-20T13:00:08.000Z",
+  "updated_at": "2026-09-20T13:02:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 132445031,
+  "storage_human": "132 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gebrauchte Landmaschinen kaufen - Traktoren, Forsttechnik ...",
+      "url": "https://www.landwirt.com/",
+      "snippet": "Jan 22, 2026 · Landmaschinen gebraucht & neu kaufen und verkaufen auf Landwirt.com - Europas Marktplatz für Traktoren, …"
+    },
+    {
+      "title": "Gebrauchte Landmaschinen kaufen & verkaufen · Landwirt.com",
+      "url": "https://www.landwirt.com/maschinenmarkt",
+      "snippet": "Im Maschinenmarkt von Landwirt.com finden Sie gebrauchte Landmaschinen und Forsttechnik von geprüften Fachhändlern aus ganz …"
+    },
+    {
+      "title": "Gebraucht Standard Traktoren kaufen & verkaufen in Österreich",
+      "url": "https://www.landwirt.com/kleinanzeigen/traktoren/standard-traktoren/land-oesterreich",
+      "snippet": "Jul 5, 2026 · Entdecke zahlreiche Kleinanzeigen für gebraucht Standard Traktoren kaufen & verkaufen. Finde Top-Angebote von …"
+    },
+    {
+      "title": "Kleinanzeigen Inserate aus Vorarlberg · Landwirt.com",
+      "url": "https://www.landwirt.com/kleinanzeigen/land-oesterreich/bundesland-vorarlberg",
+      "snippet": "Entdecke zahlreiche Kleinanzeigen für gebraucht kaufen & verkaufen. Finde Top-Angebote von Landwirten & Händlern und verkaufe …"
+    },
+    {
+      "title": "Traktoren gebraucht & neu kaufen · Landwirt.com",
+      "url": "https://www.landwirt.com/traktoren",
+      "snippet": "Traktoren gebraucht und neu kaufen auf Landwirt.com. Über 10.000 Inserate von Standard Traktoren, Kleintraktoren, Oldtimer und …"
+    }
+  ]
+}

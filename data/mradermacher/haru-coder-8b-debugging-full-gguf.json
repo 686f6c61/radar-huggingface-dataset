@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "mradermacher/haru-coder-8b-debugging-full-GGUF",
+  "slug": "mradermacher-haru-coder-8b-debugging-full-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/haru-coder-8b-debugging-full-GGUF",
+  "created_at": "2026-09-20T19:27:05.000Z",
+  "updated_at": "2026-09-20T19:56:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:harumori47/haru-coder-8b-debugging-full",
+    "base_model:quantized:harumori47/haru-coder-8b-debugging-full",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 68146890752,
+  "storage_human": "68.1 GB",
+  "base_model": "harumori47/haru-coder-8b-debugging-full",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "中国工商银行中国网站",
+      "url": "https://www.icbc.com.cn/icbc/",
+      "snippet": "21 hours ago · 为贯彻落实党中央、国务院关于国有大型商业银行补充核心一级资本的决策部署，工商银行拟向特定对象发行A股股 …"
+    },
+    {
+      "title": "中国工商银行网上银行 - ICBC",
+      "url": "https://mybank.icbc.com.cn/icbc/perbank/index.jsp",
+      "snippet": "尊敬的用户，您的浏览器暂不支持登录个人网上银行，您可以根据您的电脑操作系统，选择以下浏览器登录访问个人网上银行。"
+    },
+    {
+      "title": "中国工商银行中国网站",
+      "url": "https://www.icbc.com.cn/column/1438058319784067099.html",
+      "snippet": "21 hours ago · 工行电子银行频道为客户提供通过电子银行渠道办理投资理财、账户管理、电子商务、缴费支付、信用卡、信贷、结算 …"
+    },
+    {
+      "title": "中国工商银行企业网上银行 - ICBC Corporate E-Banking",
+      "url": "https://corporbank-simp.icbc.com.cn/icbc/normalbank/index.jsp",
+      "snippet": "1350 万户+ 法人网上银行客户 7 次 获得中国最佳对公数字银行奖项 5000 亿元 工行受托管理年金 获评中国最佳可持续金融银行 全国 …"
+    },
+    {
+      "title": "中国工商银行企业网上银行 - ICBC Corporate E-Banking",
+      "url": "https://corporbank-simp.icbc.com.cn/ebankc/normalbank/index2.jsp",
+      "snippet": "如果您已成功注册我行金融@家对公网上银行，并申领了U盾，请插入U盾，然后点击\"企业网银\"下的\"U盾登录\"按钮。如果您申领了普 …"
+    }
+  ]
+}

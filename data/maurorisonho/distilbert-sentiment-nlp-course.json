@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "maurorisonho/distilbert-sentiment-nlp-course",
+  "slug": "maurorisonho-distilbert-sentiment-nlp-course",
+  "author": "maurorisonho",
+  "url": "https://huggingface.co/maurorisonho/distilbert-sentiment-nlp-course",
+  "created_at": "2026-09-20T19:15:29.000Z",
+  "updated_at": "2026-09-20T19:24:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "sentiment-analysis",
+    "text-classification",
+    "nlp-course",
+    "llm-course",
+    "dataset:sst2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 66955010,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267832558,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Make Google your default search engine",
+      "url": "https://support.google.com/websearch/answer/464?hl=en",
+      "snippet": "Make Google your default search engine To get results from Google each time you search, you can make Google your default search …"
+    },
+    {
+      "title": "Change your Search browser settings",
+      "url": "https://support.google.com/websearch/answer/2539428?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "Search in Dark theme on Google In a browser, like Chrome or Firefox, you can choose your preferred theme for Google Search. If …"
+    },
+    {
+      "title": "Google Search Help",
+      "url": "https://support.google.com/websearch/?hl=en",
+      "snippet": "Official Google Search Help Center where you can find tips and tutorials on using Google Search and other answers to frequently …"
+    },
+    {
+      "title": "Find & erase your Google Search history",
+      "url": "https://support.google.com/websearch/answer/6096136?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "When you search on Google with “Web & App Activity” on, Google saves activity like your search history to your Google Account. It …"
+    },
+    {
+      "title": "Google 検索 ヘルプ",
+      "url": "https://support.google.com/websearch/?hl=ja",
+      "snippet": "Google での検索における位置情報の設定と管理 Google の予測入力候補を管理する Identify & shop from Small Businesses on …"
+    }
+  ]
+}

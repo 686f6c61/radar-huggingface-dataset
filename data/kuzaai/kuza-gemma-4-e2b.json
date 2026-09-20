@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "kuzaai/kuza-gemma-4-e2b",
+  "slug": "kuzaai-kuza-gemma-4-e2b",
+  "author": "kuzaai",
+  "url": "https://huggingface.co/kuzaai/kuza-gemma-4-e2b",
+  "created_at": "2026-09-20T15:46:29.000Z",
+  "updated_at": "2026-09-20T15:48:38.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en",
+    "sw"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gguf",
+    "agriculture",
+    "east-africa",
+    "gemma4",
+    "lora",
+    "dpo",
+    "en",
+    "sw",
+    "base_model:unsloth/gemma-4-E2B-it-qat-q4_0-unquantized",
+    "base_model:adapter:unsloth/gemma-4-E2B-it-qat-q4_0-unquantized",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 63,
+  "trending_score": 0,
+  "parameters": 4628569635,
+  "parameters_human": "4.63B",
+  "storage_bytes": 71972548580,
+  "storage_human": "72.0 GB",
+  "base_model": "unsloth/gemma-4-E2B-it-qat-q4_0-unquantized",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best AI Image Vectorizers in 2026: An Honest Comparison",
+      "url": "https://perfectvector.com/blog/best-ai-vectorizers-2026",
+      "snippet": "Jun 4, 2026 · Best AI Image Vectorizers in 2026: An Honest Comparison Compare leading AI vectorizers by editability, node count, …"
+    },
+    {
+      "title": "AI SVG Generator: 8 Tested, Only 2 Work (2026)",
+      "url": "https://vectosolve.com/blog/best-ai-svg-generators-text-to-vector-2026",
+      "snippet": "Mar 2, 2026 · We tested 7 AI SVG generators head-to-head. Compare VectoSolve, Recraft, VectorWitch, SVGMaker, and more on …"
+    },
+    {
+      "title": "5 AI Vector Generators You Can Use for Free - And What to Expect",
+      "url": "https://shotkit.com/ai-vector-generators/",
+      "snippet": "Jul 13, 2025 · Looking for a free AI text-to-vector tool? Discover 5 AI vector generators you can try now—plus what to expect in terms …"
+    },
+    {
+      "title": "Free AI Vector Generator: Text to SVG - Recraft",
+      "url": "https://www.recraft.ai/ai-vector-generator",
+      "snippet": "A free AI vector generator that turns a text prompt into a production-ready SVG. Logos, icons, illustrations — clean paths, editable …"
+    },
+    {
+      "title": "Free AI Prompt to Vector Tool | Create SVGs from Text Online",
+      "url": "https://lottiefiles.com/tools/prompt-to-vector",
+      "snippet": "Transform raster images into scalable vector graphics in seconds. Create high-quality SVGs, icons, and illustrations using our free AI …"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "thealper2/t5-small-nl-to-regex",
+  "slug": "thealper2-t5-small-nl-to-regex",
+  "author": "thealper2",
+  "url": "https://huggingface.co/thealper2/t5-small-nl-to-regex",
+  "created_at": "2026-09-20T14:11:40.000Z",
+  "updated_at": "2026-09-20T18:29:51.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "regex",
+    "semantic-parsing",
+    "text-generation",
+    "en",
+    "base_model:google-t5/t5-small",
+    "base_model:finetune:google-t5/t5-small",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 60506624,
+  "parameters_human": "60.5M",
+  "storage_bytes": 242047289,
+  "storage_human": "242 MB",
+  "base_model": "google-t5/t5-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Plombiers à Douai (59) - Pages Jaunes",
+      "url": "https://www.pagesjaunes.fr/annuaire/douai-59/plombiers",
+      "snippet": "Que ce soit pour la détection de fuites d'eau ou de gaz, l'entretien et la réparation de chauffe-eau, ou encore l'installation de …"
+    },
+    {
+      "title": "Entreprise de plomberie à Douai - annuaire.lavoixdunord.fr",
+      "url": "https://annuaire.lavoixdunord.fr/annuaire/ville/douai-59/entreprise-de-plomberie",
+      "snippet": "Entreprise de plomberie à Douai : Dénichez en quelques clics les meilleures adresses situées près de chez vous. Consultez horaires …"
+    },
+    {
+      "title": "Top 20 des entreprises de plomberie à Douai (59500) - Obat",
+      "url": "https://travaux.obat.fr/plomberie/douai",
+      "snippet": "Les 20 meilleures entreprises de plomberie à Douai (59500) Obat vous permet de trouver rapidement la meilleure entreprise de …"
+    },
+    {
+      "title": "Top 20 des plombiers à Douai (59500) pour un RDV - RDVArtisans.fr",
+      "url": "https://rdvartisans.fr/rdv/plombier-sanitaire/59-nord/douai-59500/",
+      "snippet": "Vous recherchez un plombier à Douai pour vos travaux ? Notre sélection de plombiers à Douai (59500) pour prendre RDV en ligne …"
+    },
+    {
+      "title": "Top 20 des plombiers à Douai (59500) - Obat",
+      "url": "https://travaux.obat.fr/plombier/douai",
+      "snippet": "Recherchez les meilleurs artisans du bâtiment proches de chez vous et trouver le professionnel qu'il vous faut pour vos travaux ! …"
+    }
+  ]
+}

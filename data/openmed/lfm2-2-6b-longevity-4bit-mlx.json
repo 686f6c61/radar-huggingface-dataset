@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "OpenMed/LFM2-2.6B-Longevity-4bit-mlx",
+  "slug": "openmed-lfm2-2-6b-longevity-4bit-mlx",
+  "author": "OpenMed",
+  "url": "https://huggingface.co/OpenMed/LFM2-2.6B-Longevity-4bit-mlx",
+  "created_at": "2026-09-20T18:06:45.000Z",
+  "updated_at": "2026-09-20T18:08:21.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "lfm2",
+    "openmed",
+    "apple-silicon",
+    "liquid",
+    "longevity",
+    "aging-biology",
+    "biomedical",
+    "text-generation",
+    "conversational",
+    "quantized",
+    "4bit",
+    "on-device",
+    "en",
+    "base_model:LiquidAI/LFM2-2.6B-Longevity",
+    "base_model:quantized:LiquidAI/LFM2-2.6B-Longevity",
+    "license:other",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2569272320,
+  "parameters_human": "2.57B",
+  "storage_bytes": 1445658357,
+  "storage_human": "1.4 GB",
+  "base_model": "LiquidAI/LFM2-2.6B-Longevity",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Guide complet pour assortir chemise et cravate avec élégance",
+      "url": "https://www.hockerty.fr/fr/blog/combinaisons-entre-chemises-et-cravates",
+      "snippet": "Mar 20, 2026 · Dans ce guide, vous trouverez tout ce qu’il vous faut — des bases de la couleur aux associations de motifs plus …"
+    },
+    {
+      "title": "Associer chemises à rayures et cravates : règles et exemples",
+      "url": "https://fr.hombresconestilo.com/comment-combiner-cravates-et-chemises-%C3%A0-rayures/",
+      "snippet": "Guide pour associer chemises à rayures et cravates : couleurs, motifs, nœuds et textures. Évitez les faux pas et créez des looks …"
+    },
+    {
+      "title": "Associer chemise et cravate : guide d'élégance masculine",
+      "url": "https://www.lofficielhommes.fr/comment-associer-chemise-et-cravate-avec-elegance/",
+      "snippet": "Une chemise bleue associée à une cravate verte ou violette crée un effet sophistiqué et cohérent. Cette approche est …"
+    },
+    {
+      "title": "Le guide de la cravate : Comment assortir assortir sa cravate - Mode homme",
+      "url": "https://www.commeuncamion.com/2019/09/03/comment-assortir-une-cravate/",
+      "snippet": "Sep 3, 2019 · Découvrez notre article Conseils complet pour assortir sa cravate : avec une chemise, un costume, quelles couleurs, …"
+    },
+    {
+      "title": "Chemise à rayures homme - Vert | Jules",
+      "url": "https://www.jules.com/fr-fr/l/chemise-a-rayures/vert/",
+      "snippet": "Retrouvez chez Jules, tous les Chemise à rayures Vert pour vous messieurs. Profitez de la livraison gratuite et du retrait sous 1 …"
+    }
+  ]
+}

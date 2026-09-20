@@ -1,0 +1,167 @@
+{
+  "schema": 1,
+  "id": "Dathq12/bge-m3-tool-retrieval-vi",
+  "slug": "dathq12-bge-m3-tool-retrieval-vi",
+  "author": "Dathq12",
+  "url": "https://huggingface.co/Dathq12/bge-m3-tool-retrieval-vi",
+  "created_at": "2026-09-20T17:47:31.000Z",
+  "updated_at": "2026-09-20T17:48:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "sentence-similarity",
+    "feature-extraction",
+    "dense",
+    "generated_from_trainer",
+    "dataset_size:70988",
+    "loss:CachedMultipleNegativesRankingLoss",
+    "loss:MultipleNegativesRankingLoss",
+    "arxiv:1908.10084",
+    "arxiv:2101.06983",
+    "arxiv:1807.03748",
+    "base_model:BAAI/bge-m3",
+    "base_model:finetune:BAAI/bge-m3",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 45580722,
+  "storage_human": "46 MB",
+  "base_model": "BAAI/bge-m3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Information Retrieval",
+      "dataset": "custom val",
+      "metric": "Cosine Accuracy@1",
+      "value": 0.4588217149907465
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "custom val",
+      "metric": "Cosine Accuracy@3",
+      "value": 0.6619884844746041
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "custom val",
+      "metric": "Cosine Accuracy@5",
+      "value": 0.7301562821303722
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "custom val",
+      "metric": "Cosine Accuracy@10",
+      "value": 0.7960621015833848
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "custom val",
+      "metric": "Cosine Precision@1",
+      "value": 0.4588217149907465
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "custom val",
+      "metric": "Cosine Precision@3",
+      "value": 0.22066282815820137
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "custom val",
+      "metric": "Cosine Precision@5",
+      "value": 0.14603125642607445
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "custom val",
+      "metric": "Cosine Precision@10",
+      "value": 0.07960621015833848
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "custom val",
+      "metric": "Cosine Recall@1",
+      "value": 0.4588217149907465
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "custom val",
+      "metric": "Cosine Recall@3",
+      "value": 0.6619884844746041
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "custom val",
+      "metric": "Cosine Recall@5",
+      "value": 0.7301562821303722
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "custom val",
+      "metric": "Cosine Recall@10",
+      "value": 0.7960621015833848
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "custom val",
+      "metric": "Cosine Ndcg@10",
+      "value": 0.6287481404559024
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "custom val",
+      "metric": "Cosine Mrr@10",
+      "value": 0.5750003264037865
+    },
+    {
+      "task": "Information Retrieval",
+      "dataset": "custom val",
+      "metric": "Cosine Map@100",
+      "value": 0.5809947633797006
+    }
+  ],
+  "sources": [
+    {
+      "title": "Texas A&M University",
+      "url": "https://www.tamu.edu/",
+      "snippet": "Texas A&M University (TAMU) opened in 1876 as the state's first public institution of higher learning. Today, we are a research …"
+    },
+    {
+      "title": "Texas A&M University - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Texas_A%26M_University",
+      "snippet": "Texas A&M University (Texas A&M, A&M, TA&M, or TAMU) is a public land-grant research university in College Station, Texas, …"
+    },
+    {
+      "title": "Texas A&M University – Wikipedia, wolna encyklopedia",
+      "url": "https://pl.wikipedia.org/wiki/Texas_A%26M_University",
+      "snippet": "Texas A&M University, czyli Texas Agricultural and Mechanical University, zwany A&M albo TAMU – uniwersytet w College Station w …"
+    },
+    {
+      "title": "Academics - Texas A&M University",
+      "url": "https://www.tamu.edu/academics/index.html",
+      "snippet": "Texas A&M University is one of the largest public research universities in the nation. Here, you will enjoy a culture of discovery and …"
+    },
+    {
+      "title": "Texas A&M Aggies - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Texas_A%26M_Aggies",
+      "snippet": "SEC logo in Texas A&M's colors The Texas A&M Aggies are the students, graduates, and sports teams of Texas A&M University, a …"
+    }
+  ]
+}

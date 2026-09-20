@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "mradermacher/SynapseMusicV12-Composer-0.6B-GGUF",
+  "slug": "mradermacher-synapsemusicv12-composer-0-6b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/SynapseMusicV12-Composer-0.6B-GGUF",
+  "created_at": "2026-09-20T14:21:17.000Z",
+  "updated_at": "2026-09-20T14:24:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "audio",
+    "music",
+    "text2music",
+    "en",
+    "base_model:SYNAPSEai1/SynapseMusicV12-Composer-0.6B",
+    "base_model:quantized:SYNAPSEai1/SynapseMusicV12-Composer-0.6B",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 662884352,
+  "parameters_human": "662.9M",
+  "storage_bytes": 6475845312,
+  "storage_human": "6.5 GB",
+  "base_model": "SYNAPSEai1/SynapseMusicV12-Composer-0.6B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "微信与 WhatsApp 谁抄的谁？ - 知乎",
+      "url": "https://www.zhihu.com/question/20871360",
+      "snippet": "WhatsApp 开始的最早，4年了都，所以不可能抄2年前才出现的微信。不过微信抄的也不是WhatsApp，微信最开始主要借鉴的是 …"
+    },
+    {
+      "title": "WhatsApp号码被封号，禁止使用怎么办？ - 知乎",
+      "url": "https://www.zhihu.com/question/300150937",
+      "snippet": "Hello! My Whatsapp account was suddenly disabled without any prompts This is a commonly used communication tool for our work It …"
+    },
+    {
+      "title": "怎样在whatsapp中加好友-百度经验",
+      "url": "https://jingyan.baidu.com/article/c33e3f483b65d5ea15cbb516.html",
+      "snippet": "May 6, 2019 · 怎样在whatsapp中加好友,使用WhatA的小伙伴们，知不知道如何在该软件中添加好友呢，接下来跟小编一起去看看吧。"
+    },
+    {
+      "title": "WhatsApp如何养号，防止封号？ - 知乎",
+      "url": "https://www.zhihu.com/question/554885546",
+      "snippet": "” WhatsApp现在大家用的都很多，但是遇到的问题也很多，比如账户注册问题，WhatsApp接不到验证码的问题，WhatsApp被封号的 …"
+    },
+    {
+      "title": "现在怎么才能登录WhatsApp呢？ - 知乎",
+      "url": "https://www.zhihu.com/question/68113079",
+      "snippet": "My WhatsApp account (please provide your phone number) has been incorrectly labeled as unofficial, despite my consistent use of …"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "proxy3d/multi-motions-28",
+  "slug": "proxy3d-multi-motions-28",
+  "author": "proxy3d",
+  "url": "https://huggingface.co/proxy3d/multi-motions-28",
+  "created_at": "2026-09-20T13:25:10.000Z",
+  "updated_at": "2026-09-20T14:22:43.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ru"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "text-classification",
+    "emotion-classification",
+    "multi-label-classification",
+    "goemotions",
+    "english",
+    "russian",
+    "affective-computing",
+    "en",
+    "ru",
+    "base_model:FacebookAI/xlm-roberta-base",
+    "base_model:finetune:FacebookAI/xlm-roberta-base",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278065180,
+  "parameters_human": "278.1M",
+  "storage_bytes": 1129367815,
+  "storage_human": "1.1 GB",
+  "base_model": "FacebookAI/xlm-roberta-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ServusTV On: Livestreams, Mediathek, TV-Programm, Nachrichten",
+      "url": "https://www.servustv.com/de",
+      "snippet": "Hier finden Sie alle Informationen zum TV-Programm von ServusTV, verpasste Sendungen in der ServusTV On Mediathek und den …"
+    },
+    {
+      "title": "TV-Livestream von ServusTV",
+      "url": "https://www.servustv.com/de/page/PN0B1EC15B2FE10/servustv-live",
+      "snippet": "Das TV-Programm von ServusTV - rund um die Uhr als Livestream verfügbar."
+    },
+    {
+      "title": "ServusTV – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/ServusTV",
+      "snippet": "ServusTV ist ein österreichischer Privatfernsehsender mit Sitz in Wals-Siezenheim im Land Salzburg. Wie auch der Verlag mit der …"
+    },
+    {
+      "title": "ServusTV Programm heute auf tvheute.at",
+      "url": "https://tvheute.at/servustv-programm/heute-im-tv",
+      "snippet": "Alle Sendungen bei ServusTV heute im Überblick. Das gesamte TV-Programm von ServusTV heute mit Österreichs größtem …"
+    },
+    {
+      "title": "ServusTV - Servus",
+      "url": "https://www.servus.com/o/servustv",
+      "snippet": "„Urlaub daheim – ab in den Sommer“ bei ServusTV Österreich ist ein Urlaubsland voller Naturerlebnisse, Abenteuer und …"
+    }
+  ]
+}

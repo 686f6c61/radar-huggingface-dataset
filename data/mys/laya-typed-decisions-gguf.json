@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "mys/laya-typed-decisions-GGUF",
+  "slug": "mys-laya-typed-decisions-gguf",
+  "author": "mys",
+  "url": "https://huggingface.co/mys/laya-typed-decisions-GGUF",
+  "created_at": "2026-09-20T16:16:06.000Z",
+  "updated_at": "2026-09-20T16:26:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "ggmlc",
+    "laya",
+    "jev",
+    "modernbert",
+    "decision",
+    "system-1",
+    "en",
+    "base_model:convaiinnovations/laya-typed-decisions",
+    "base_model:quantized:convaiinnovations/laya-typed-decisions",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 422541323,
+  "parameters_human": "422.5M",
+  "storage_bytes": 1728573664,
+  "storage_human": "1.7 GB",
+  "base_model": "convaiinnovations/laya-typed-decisions",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bing Homepage Quiz – Today's Bing Daily Trivia & Featured Image Quiz",
+      "url": "https://bingquiz.com/bing-homepage-quiz/",
+      "snippet": "1 day ago · Test your knowledge on world headlines, breaking news, and trending global stories updated daily."
+    },
+    {
+      "title": "Bing Homepage Quiz: Today's Questions and Answers",
+      "url": "https://bing.weeklyquiz.net/bing-homepage-quiz/",
+      "snippet": "1 day ago · A new quiz goes up every day, drawing on the day's Bing homepage image and trending topics — geography, history, …"
+    },
+    {
+      "title": "Play Today's Bing Quiz – 5 Trivia Questions, Daily Challenge",
+      "url": "https://bingquiz.org/",
+      "snippet": "1 day ago · Play Bing Quiz online! Take 5 daily trivia questions across 6 categories and climb the rank ladder from Wanderer to …"
+    },
+    {
+      "title": "Bing News Quiz – Play Today’s 10 Daily News Trivia - Bing Quizzes",
+      "url": "https://bingquiz.com/bing-news-quiz/",
+      "snippet": "2 days ago · Take the latest Bing News Quiz and challenge yourself with daily questions based on trending headlines from the United …"
+    },
+    {
+      "title": "Today's Bing Quiz | Daily Bing Quizzes",
+      "url": "https://bingquizzes.com/",
+      "snippet": "Play today's Bing quiz and test your knowledge of news, entertainment, history, science, and geography. Explore fresh trivia …"
+    }
+  ]
+}

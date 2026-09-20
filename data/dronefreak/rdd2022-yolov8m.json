@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "id": "dronefreak/rdd2022-yolov8m",
+  "slug": "dronefreak-rdd2022-yolov8m",
+  "author": "dronefreak",
+  "url": "https://huggingface.co/dronefreak/rdd2022-yolov8m",
+  "created_at": "2026-09-20T16:21:12.000Z",
+  "updated_at": "2026-09-20T16:21:22.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "object-detection",
+    "detectionbench",
+    "pytorch",
+    "computer-vision",
+    "road-damage",
+    "pavement-distress",
+    "infrastructure",
+    "pothole-detection",
+    "autonomous-driving",
+    "dataset:dronefreak/RDD2022",
+    "arxiv:2209.08538",
+    "arxiv:2511.09554",
+    "arxiv:2304.07193",
+    "arxiv:2606.03748",
+    "base_model:Ultralytics/YOLOv8",
+    "base_model:finetune:Ultralytics/YOLOv8",
+    "license:agpl-3.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 54867262,
+  "storage_human": "55 MB",
+  "base_model": "Ultralytics/YOLOv8",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Object Detection",
+      "dataset": "RDD2022 Road Damage",
+      "metric": "mAP@50 (test split)",
+      "value": 62.03
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "RDD2022 Road Damage",
+      "metric": "mAP@50-95 (test split)",
+      "value": 34.08
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "RDD2022 Road Damage",
+      "metric": "Precision (test split)",
+      "value": 65.61
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "RDD2022 Road Damage",
+      "metric": "Recall (test split)",
+      "value": 57.42
+    }
+  ],
+  "sources": [
+    {
+      "title": "Микки Маус мультфильм на русском все серии подряд",
+      "url": "https://www.youtube.com/playlist?list=PLMU0lpSVZmBCblnqCUQfJZWMglbPogu8m",
+      "snippet": "МИККИ МАУС В ЗАМКЕ ИЛЛЮЗИЙ ЧАСТЬ 1. МИКИ МАУС. МИККИ МАУС ВО FNAF! - МИФЫ FNAF. Сборник: Микки и Минни …"
+    },
+    {
+      "title": "Микки Маус — Википедия",
+      "url": "https://ru.wikipedia.org/wiki/%D0%9C%D0%B8%D0%BA%D0%BA%D0%B8_%D0%9C%D0%B0%D1%83%D1%81",
+      "snippet": "Mickey Mouse «Мышь Микки») — мультипликационный персонаж, один из символов компании The Walt Disney Company и …"
+    },
+    {
+      "title": "Микки Маус: Клуб Микки Мауса - 2 сезон Все серии подряд …",
+      "url": "https://vkvideo.ru/video-192371408_456243509",
+      "snippet": "Видео от 9 декабря 2025 в хорошем качестве, без регистрации в бесплатном видеокаталоге ВКонтакте! 209530 — …"
+    },
+    {
+      "title": "Микки Маус: Клуб Микки Мауса - 4 сезон Все серии подряд …",
+      "url": "https://yandex.ru/video/preview/917797659835192514",
+      "snippet": "Dec 19, 2025 · Источник видео: VK Видео · Смотрите онлайн «Микки Маус: Клуб Микки Мауса - 4 сезон Все серии подряд …"
+    },
+    {
+      "title": "Микки Маус Мультсериал (2013) - 1 сезон Все серии Смотреть …",
+      "url": "https://vkvideo.ru/video-223928932_456240319",
+      "snippet": "Dec 2, 2024 · Микки мау забивает, решаю, что, извините, простите, извините, а вот и я, Микки, успел, чтобы я пропустил, …"
+    }
+  ]
+}

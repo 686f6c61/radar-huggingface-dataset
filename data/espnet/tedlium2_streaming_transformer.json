@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "espnet/tedlium2_streaming_transformer",
+  "slug": "espnet-tedlium2_streaming_transformer",
+  "author": "espnet",
+  "url": "https://huggingface.co/espnet/tedlium2_streaming_transformer",
+  "created_at": "2026-09-20T13:09:22.000Z",
+  "updated_at": "2026-09-20T13:09:24.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "espnet",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "espnet",
+    "audio",
+    "automatic-speech-recognition",
+    "streaming",
+    "en",
+    "dataset:tedlium2",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 140004569,
+  "storage_human": "140 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ynet - חדשות, כלכלה, ספורט ובריאות - דיווחים שוטפים מהארץ ומהעולם",
+      "url": "https://www.ynet.co.il/home/0,7340,L-8,00.html",
+      "snippet": "אתר החדשות המוביל בישראל מבית ידיעות אחרונות. סיקור מלא של חדשות מישראל והעולם, ספורט, כלכלה, תרבות, אוכל, מדע וטבע, כל מה שקורה וכל …"
+    },
+    {
+      "title": "ynet - חדשות - סיקורים, מבזקים וכתבות מהארץ והעולם",
+      "url": "https://www.ynet.co.il/news",
+      "snippet": "Sep 12, 2026 · חדשות על כל מה שקורה בפוליטיקה, בביטחון, בחינוך ועוד. מבזקים שוטפים וכתבות מהארץ ומהעולם. טורים ופרשנויות של עיתונאים …"
+    },
+    {
+      "title": "ynet - חדשות, כלכלה, ספורט ובריאות - דיווחים שוטפים מהארץ ומהעולם",
+      "url": "https://3d8af88c-f551-4626-a164-87ee75f7f757.atarimworker.io/",
+      "snippet": "אתר החדשות המוביל בישראל מבית ידיעות אחרונות. סיקור מלא של חדשות מישראל והעולם, ספורט, כלכלה, תרבות, אוכל, מדע וטבע, כל מה שקורה וכל …"
+    },
+    {
+      "title": "ynet חדשות תוכן ועדכונים - ידיעות אחרונות",
+      "url": "http://ipad.ynet.co.il/default.aspx",
+      "snippet": "Ynet דף הבית: אתר החדשות המוביל בישראל מבית ידיעות אחרונות. סיקור מלא של חדשות מישראל והעולם, ספורט, כלכלה, תרבות, אוכל, מדע וטבע, כל …"
+    },
+    {
+      "title": "ידיעות אחרונות – ויקיפדיה",
+      "url": "https://he.wikipedia.org/wiki/%D7%99%D7%93%D7%99%D7%A2%D7%95%D7%AA_%D7%90%D7%97%D7%A8%D7%95%D7%A0%D7%95%D7%AA",
+      "snippet": "ידיעות אחרונות ... ידיעות אחרונות הוא עיתון היוצא לאור בישראל החל מ- 11 בדצמבר 1939. משנות ה-70 הוא הנפוץ ביותר מבין העיתונים הנמכרים בישראל."
+    }
+  ]
+}

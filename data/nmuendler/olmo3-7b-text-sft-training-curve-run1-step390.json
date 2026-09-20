@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "nmuendler/Olmo3-7B-text-sft-training-curve-run1-step390",
+  "slug": "nmuendler-olmo3-7b-text-sft-training-curve-run1-step390",
+  "author": "nmuendler",
+  "url": "https://huggingface.co/nmuendler/Olmo3-7B-text-sft-training-curve-run1-step390",
+  "created_at": "2026-09-20T15:41:47.000Z",
+  "updated_at": "2026-09-20T15:41:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:allenai/Olmo-3-7B-Think",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:allenai/Olmo-3-7B-Think",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 319876032,
+  "storage_human": "320 MB",
+  "base_model": "allenai/Olmo-3-7B-Think",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Help in Notepad | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/apps/help-in-notepad",
+      "snippet": "Here are answers to a few common questions about Notepad: How do I change header and footer in Notepad? When you use …"
+    },
+    {
+      "title": "Get Help With Notepad In Windows 11/10 - techbaked.com",
+      "url": "https://techbaked.com/get-help-notepad-windows/",
+      "snippet": "Feb 18, 2026 · Learn how to get help with Notepad in Windows 11/10. Fix Notepad not working, reinstall, reset, update, and use all …"
+    },
+    {
+      "title": "How to Get Help with Notepad in Windows - wikihow.com",
+      "url": "https://www.wikihow.com/Get-Help-with-Notepad-in-Windows",
+      "snippet": "Jun 12, 2026 · Are you having issues with Notepad, or just trying to figure out all the new features? Notepad’s support documentation …"
+    },
+    {
+      "title": "Help in Notepad | Microsoft Support",
+      "url": "https://support.microsoft.com/en-au/windows/apps/help-in-notepad",
+      "snippet": "To open Notepad, select the Start button, type Notepad, then select Notepad from the results. Here are answers to a few common …"
+    },
+    {
+      "title": "Get Help with Notepad in Windows: A Comprehensive Guide",
+      "url": "https://officetutorial.net/notepad/get-help-with-notepad-in-windows/771/",
+      "snippet": "Feb 19, 2025 · How to get help with Notepad in Windows. Learn tips, tricks, and troubleshooting steps to maximize productivity using …"
+    }
+  ]
+}

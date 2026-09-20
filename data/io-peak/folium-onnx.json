@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "io-peak/folium-onnx",
+  "slug": "io-peak-folium-onnx",
+  "author": "io-peak",
+  "url": "https://huggingface.co/io-peak/folium-onnx",
+  "created_at": "2026-09-20T12:47:22.000Z",
+  "updated_at": "2026-09-20T12:53:42.000Z",
+  "license": "cc-by-4.0-with-dataset-attribution",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 94261839,
+  "storage_human": "94 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": ".Io Games ️ Play on CrazyGames",
+      "url": "https://www.crazygames.com/c/io/",
+      "snippet": ".io Games Lock horns and battle other players in all the latest .io games. Enjoy original titles like Slither.io and new .io games such as …"
+    },
+    {
+      "title": "Jeux .io ️ Joue sur CrazyGames!",
+      "url": "https://www.crazygames.com/fr/c/io",
+      "snippet": "Joue à des titres originaux comme Slither.io et de nouveaux jeux .io comme Rocket Bot Royale, Pixel Warfare, Shell Shockers et …"
+    },
+    {
+      "title": ".io Games ️ - Play Online for Free! - Poki",
+      "url": "https://poki.com/en/io?msockid=23ce7dbc0fce6ab021896a660e386be3",
+      "snippet": "Play free IO games online at Poki. Battle, race, survive, and team up in fast-paced multiplayer arenas, all instantly playable in your …"
+    },
+    {
+      "title": "slither.io",
+      "url": "https://www.slither.io/",
+      "snippet": "The most famous slither game in the world! Play with millions of players around the world and try to become the longest of the day!"
+    },
+    {
+      "title": "diep.io",
+      "url": "https://diep.io/",
+      "snippet": "Survive and shoot at others while trying to keep your own tank alive!"
+    }
+  ]
+}

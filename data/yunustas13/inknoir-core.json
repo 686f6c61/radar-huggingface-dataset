@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "YunusTAS13/InkNoir-Core",
+  "slug": "yunustas13-inknoir-core",
+  "author": "YunusTAS13",
+  "url": "https://huggingface.co/YunusTAS13/InkNoir-Core",
+  "created_at": "2026-09-20T12:36:17.000Z",
+  "updated_at": "2026-09-20T13:26:16.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "stable-diffusion",
+    "stable-diffusion-1-5",
+    "dark-anime",
+    "text-to-image",
+    "image-to-image",
+    "turkish-prompts",
+    "base_model:Lykon/dreamshaper-8",
+    "base_model:finetune:Lykon/dreamshaper-8",
+    "license:creativeml-openrail-m",
+    "diffusers:StableDiffusionPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 859520964,
+  "parameters_human": "859.5M",
+  "storage_bytes": 4286768524,
+  "storage_human": "4.3 GB",
+  "base_model": "Lykon/dreamshaper-8",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.de/index.html",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google Earth",
+      "url": "https://www.google.de/intl/de/earth/index.html",
+      "snippet": "Google Earth ist eine fotorealistische und digitale Version unseres Planeten. Woher kommen die Bilder? Wie sind sie …"
+    },
+    {
+      "title": "Google Bilder",
+      "url": "https://images.google.de/?hl=de",
+      "snippet": "Google Bilder, die umfassendste Bildersuche im Web"
+    },
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.de/?hl=en",
+      "snippet": "Google's service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other …"
+    },
+    {
+      "title": "Google Trends",
+      "url": "https://trends.google.de/trends/",
+      "snippet": "Bei Google Trends können Sie sich das Suchinteresse für Begriffe und Themen nach Zeit, Ort und Beliebtheit ansehen"
+    }
+  ]
+}

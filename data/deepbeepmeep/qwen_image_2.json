@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "DeepBeepMeep/Qwen_image_2",
+  "slug": "deepbeepmeep-qwen_image_2",
+  "author": "DeepBeepMeep",
+  "url": "https://huggingface.co/DeepBeepMeep/Qwen_image_2",
+  "created_at": "2026-09-20T13:34:53.000Z",
+  "updated_at": "2026-09-20T20:39:53.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusion-single-file",
+  "languages": [],
+  "tags": [
+    "diffusion-single-file",
+    "base_model:Qwen/Qwen-Image-2.1",
+    "base_model:finetune:Qwen/Qwen-Image-2.1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 57818848684,
+  "storage_human": "57.8 GB",
+  "base_model": "Qwen/Qwen-Image-2.1",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MDR Sport | mdr.de",
+      "url": "https://www.mdr.de/sport",
+      "snippet": "Sport im Osten - News, Videos, Livestreams, Ticker, Ergebnisse, Tabellen - Fußball der 1. und 2. Bundesliga, 3. Liga und …"
+    },
+    {
+      "title": "Livesport im MDR: Alle Sport-Livestreams von SPORT IM OSTEN",
+      "url": "https://www.mdr.de/sport/livestreams",
+      "snippet": "SPORT IM OSTEN bringt den Livesport nach Hause! Hier gibt es alle geplanten Livestreams in der Übersicht: Vom Fußball in der 3. …"
+    },
+    {
+      "title": "Live-Sport und aktuelle Ergebnisse | mdr.de",
+      "url": "https://www.mdr.de/sport/live/heute",
+      "snippet": "Liga, 3. Liga, Regionalliga Nordost und von Champions League und Nationalelf vom aktuellen Tag. Zudem Live-Ergebnisse aus der …"
+    },
+    {
+      "title": "Die Sportsendung im MDR-Fernsehen: SPORT IM OSTEN",
+      "url": "https://www.mdr.de/sport/sport-im-osten",
+      "snippet": "Die SPORT IM OSTEN-Doku \"Blau-Weiß für die Ewigkeit\" zeichnet die bewegende Geschichte des einzigen DDR …"
+    },
+    {
+      "title": "Fußball im MDR | mdr.de",
+      "url": "https://www.mdr.de/sport/fussball",
+      "snippet": "Fußball im MDR: News, Videos, Liveticker, Ergebnisse, Spielberichte und Statistiken. Im Mittelpunkt stehen die mitteldeutschen …"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "SYNAPSEai1/SynapseMusicV12-XL-SFT",
+  "slug": "synapseai1-synapsemusicv12-xl-sft",
+  "author": "SYNAPSEai1",
+  "url": "https://huggingface.co/SYNAPSEai1/SynapseMusicV12-XL-SFT",
+  "created_at": "2026-09-20T12:31:33.000Z",
+  "updated_at": "2026-09-20T12:31:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-audio",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "acestep",
+    "feature-extraction",
+    "audio",
+    "music",
+    "text2music",
+    "custom_code",
+    "text-to-audio",
+    "arxiv:2602.00744",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4987310726,
+  "parameters_human": "4.99B",
+  "storage_bytes": 19953181719,
+  "storage_human": "20.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Walmart Stores Near Me - Locations, Hours & Services",
+      "url": "https://www.walmart.com/store-finder?location=page",
+      "snippet": "Use the Walmart store locator to find your nearest Walmart locations, check store hours, and find services like Grocery Pickup, …"
+    },
+    {
+      "title": "Walmart | Save Money. Live better.",
+      "url": "https://www.walmart.com/",
+      "snippet": "Shop Walmart.com today for Every Day Low Prices. Join Walmart+ for unlimited free delivery from your store & free shipping with no …"
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://ditu.google.com/",
+      "snippet": "Find local businesses, view maps and get driving directions in Google Maps."
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/maps/search/walmart+%3D%27",
+      "snippet": ""
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://www.google.com/maps/search/Walmart+%3D",
+      "snippet": "Map data ©2026 Google Terms 10 km Directions"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "c123c123/ztj-374",
+  "slug": "c123c123-ztj-374",
+  "author": "c123c123",
+  "url": "https://huggingface.co/c123c123/ztj-374",
+  "created_at": "2026-09-20T14:16:23.000Z",
+  "updated_at": "2026-09-20T14:22:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 85092496,
+  "storage_human": "85 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Os 10 melhores pizzarias Lisboa - Tripadvisor",
+      "url": "https://www.tripadvisor.pt/Restaurants-g189158-c31-Lisbon_Lisbon_District_Central_Portugal.html",
+      "snippet": "Restaurantes de pizza: Lisboa, Distrito de Lisboa: Consulte as dicas e avaliações dos viajantes do Tripadvisor de restaurantes: …"
+    },
+    {
+      "title": "12 Best Pizza Places In Lisbon, Portugal, According To A Local",
+      "url": "https://www.tastingtable.com/1573082/best-pizza-lisbon-portugal/",
+      "snippet": "Aug 4, 2026 · Lisbon, Portugal might not be known for its pizza, but there are a ton of amazing pizza spots throughout the city. Here …"
+    },
+    {
+      "title": "The 11 Best Pizza Spots in Lisbon - Portugal.com",
+      "url": "https://www.portugal.com/food-drink/the-11-best-pizza-spots-in-lisbon/",
+      "snippet": "Jan 14, 2025 · From the lively traditional neighborhood of Graça to the docks of Alcântara, Lisbon’s pizza palaces offer a slice of …"
+    },
+    {
+      "title": "The 10 Best Pizza in Lisbon",
+      "url": "https://www.thefork.com/restaurants/lisbon-c665920/pizza-t652",
+      "snippet": "FIND THE BEST Pizza in Lisbon on TheFork. Read restaurant reviews from our community and reserve your table online today!"
+    },
+    {
+      "title": "THE 10 BEST Pizza Places in Lisbon (Updated 2026) - Tripadvisor",
+      "url": "https://www.tripadvisor.co.uk/Restaurants-g189158-c31-Lisbon_Lisbon_District_Central_Portugal.html",
+      "snippet": "Best Pizza in Lisbon, Lisbon District: Find Tripadvisor traveller reviews of Lisbon Pizza places and search by price, location, and more."
+    }
+  ]
+}

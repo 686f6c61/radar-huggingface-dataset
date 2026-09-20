@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "AlinaGonch/phi3-mini-squad-ratio-0.50-seed-42",
+  "slug": "alinagonch-phi3-mini-squad-ratio-0-50-seed-42",
+  "author": "AlinaGonch",
+  "url": "https://huggingface.co/AlinaGonch/phi3-mini-squad-ratio-0.50-seed-42",
+  "created_at": "2026-09-20T16:22:23.000Z",
+  "updated_at": "2026-09-20T16:22:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 100697728,
+  "storage_human": "101 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CAR blueprints - Mazda Familia/1000 blueprints, vector drawings ...",
+      "url": "https://carblueprints.info/eng/prints/mazda/mazda_familia_1000-44044",
+      "snippet": "The reference of car blueprints . automotive drawings and automobile prints in views for 3d modeling. Fast searching and access, …"
+    },
+    {
+      "title": "Mazda - the-blueprints.com",
+      "url": "https://www.the-blueprints.com/blueprints/cars/mazda/",
+      "snippet": "Mazda 3 Sedan (2008) Mazda 3 Sedan (2014) Mazda 3 hatchback (2019) Mazda 3 hatchback BK (2003) Mazda 3 sedan (2019) …"
+    },
+    {
+      "title": "CAR blueprints - 1963 Mazda Familia/1000 Sedan blueprint",
+      "url": "https://carblueprints.info/eng/view/mazda/mazda_familia_1000-44044",
+      "snippet": "Car blueprints / Чертежи / Die Autozeichnungen / Les plans d`automobile / 車の青写真 / 차 청사진 / 汽车图纸 CAR blueprints - the …"
+    },
+    {
+      "title": "Mazda Familia Blueprints - Download free blueprint for 3D modeling",
+      "url": "https://drawingdatabase.com/tag/mazda-familia/",
+      "snippet": "30s cars50s cars60s cars70s cars80s cars90s carsBiplanecabrioletClassic carCompact CarCompact executive …"
+    },
+    {
+      "title": "1963 Mazda Familia/1000 Sedan blueprints free - Outlines",
+      "url": "https://getoutlines.com/blueprints/17595/1963-mazda-familia-1000-sedan-blueprints",
+      "snippet": "Download free 1963 Mazda Familia/1000 Sedan blueprints. Outlines provides high-quality vector templates and drawings for car …"
+    }
+  ]
+}

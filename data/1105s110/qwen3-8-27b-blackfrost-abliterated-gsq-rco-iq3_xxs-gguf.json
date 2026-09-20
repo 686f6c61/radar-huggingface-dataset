@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "1105s110/Qwen3.8-27B-Blackfrost-Abliterated-GSQ-RCO-IQ3_XXS-GGUF",
+  "slug": "1105s110-qwen3-8-27b-blackfrost-abliterated-gsq-rco-iq3_xxs-gguf",
+  "author": "1105s110",
+  "url": "https://huggingface.co/1105s110/Qwen3.8-27B-Blackfrost-Abliterated-GSQ-RCO-IQ3_XXS-GGUF",
+  "created_at": "2026-09-20T17:12:40.000Z",
+  "updated_at": "2026-09-21T15:41:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "gsq",
+    "rco",
+    "iq3_xxs",
+    "quantized",
+    "abliterated",
+    "uncensored",
+    "27b",
+    "qwen3.8",
+    "base_model:Blackfrost-AI/Qwen3.8-27B-ABLITERATED-BF16",
+    "base_model:quantized:Blackfrost-AI/Qwen3.8-27B-ABLITERATED-BF16",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 10535972320,
+  "storage_human": "10.5 GB",
+  "base_model": "Blackfrost-AI/Qwen3.8-27B-ABLITERATED-BF16",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Staatliche Fachoberschule und Berufsoberschule Bamberg – …",
+      "url": "https://www.bos-bamberg.de/",
+      "snippet": "Willkommen in der Beruflichen Oberschule in Bamberg! Fachoberschule und Berufsoberschule Bamberg - bei uns zählt die Praxis! …"
+    },
+    {
+      "title": "Downloads – Staatliche Fachoberschule und Berufsoberschule Bamberg",
+      "url": "https://www.bos-bamberg.de/unsere-schule/downloads/",
+      "snippet": "Gewünschte Kenntnisse vor dem Eintritt in FOS 11 bzw. BOS 12."
+    },
+    {
+      "title": "Berufliche Oberschule Bamberg<br>Staatliche Fachoberschule und ...",
+      "url": "https://www.km.bayern.de/schule/0858",
+      "snippet": "Schulnummer: 0858 Schulart: Berufliche Oberschulen (FOS und BOS) Rechtlicher Status: öffentliche Schule (staatlich) Eckdaten im …"
+    },
+    {
+      "title": "FOS/BOS Bamberg (@fosbos_bamberg) • Instagram photos and videos",
+      "url": "https://www.instagram.com/fosbos_bamberg/",
+      "snippet": "419 Followers, 829 Following, 4 Posts - FOS/BOS Bamberg (@fosbos_bamberg) on Instagram: \"Fach- und Berufsoberschule …"
+    },
+    {
+      "title": "Berufliche Oberschule Bamberg",
+      "url": "https://downloads.bos-bamberg.de/",
+      "snippet": "Passwort vergessen?"
+    }
+  ]
+}

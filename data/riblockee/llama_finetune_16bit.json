@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Riblockee/llama_finetune_16bit",
+  "slug": "riblockee-llama_finetune_16bit",
+  "author": "Riblockee",
+  "url": "https://huggingface.co/Riblockee/llama_finetune_16bit",
+  "created_at": "2026-09-20T19:35:21.000Z",
+  "updated_at": "2026-09-20T19:45:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3212749824,
+  "parameters_human": "3.21B",
+  "storage_bytes": 6442738968,
+  "storage_human": "6.4 GB",
+  "base_model": "unsloth/llama-3.2-3b-instruct-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "显卡日报 - 知乎",
+      "url": "https://www.zhihu.com/column/c_1433942042578157568",
+      "snippet": "欢迎来到显卡日报，先来看看显卡大盘，每晚11点不准时更新。"
+    },
+    {
+      "title": "不想上吊王承恩 - 知乎",
+      "url": "https://www.zhihu.com/people/bu-xiang-shang-diao-wang-cheng-en",
+      "snippet": "1 day ago · 我儿子，天天打游戏躺平，在重点高中全年级（约1200人）入学成绩排名前50左右，一只脚踏入重本的成绩，保底也有一 …"
+    },
+    {
+      "title": "friv and youtube - Google Chrome Community",
+      "url": "https://support.google.com/chrome/thread/45488834/friv-and-youtube?hl=en",
+      "snippet": "May 9, 2020 · friv and youtube login to friv and youtube Details Accessing Websites, Windows, Developer"
+    },
+    {
+      "title": "Ajuda do Gmail",
+      "url": "https://support.google.com/mail/?hl=pt-BR",
+      "snippet": "Ajuda do Gmail oficial, onde poderá encontrar dicas e tutoriais para o ajudar a criar a sua conta e a mantê-la segura. Aprenda como …"
+    },
+    {
+      "title": "教师资格证笔试多少分算通过？ - 知乎",
+      "url": "https://www.zhihu.com/question/67760939",
+      "snippet": "谢邀~ 我们都知道教师资格证的笔试成绩要过70分才算及格，但这个分数是想较于满分120分来说的，做过真题卷的都知道，教资笔试 …"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "ArchiveStudio/Qwen2.5-VL-7B-Instruct",
+  "slug": "archivestudio-qwen2-5-vl-7b-instruct",
+  "author": "ArchiveStudio",
+  "url": "https://huggingface.co/ArchiveStudio/Qwen2.5-VL-7B-Instruct",
+  "created_at": "2026-09-20T17:16:06.000Z",
+  "updated_at": "2026-09-20T17:16:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2_5_vl",
+    "image-text-to-text",
+    "multimodal",
+    "conversational",
+    "en",
+    "arxiv:2309.00071",
+    "arxiv:2409.12191",
+    "arxiv:2308.12966",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8292166656,
+  "parameters_human": "8.29B",
+  "storage_bytes": 16584414560,
+  "storage_human": "16.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Agenzia delle Entrate: “Ecco le regole sulle vending machine per la ...",
+      "url": "https://www.forumpa.it/pa-digitale/agenzia-delle-entrate-ecco-le-regole-sulle-vending-machine-per-la-trasmissione-dei-corrispettivi/",
+      "snippet": "Sep 5, 2016 · Lo scorso giugno sono state pubblicate dall’Agenzia delle Entrate le regole tecniche necessarie per rispettare l’obbligo …"
+    },
+    {
+      "title": "Carmine Pugliese Archivi - FPA",
+      "url": "https://www.forumpa.it/relatori/carmine-pugliese/",
+      "snippet": "Jul 15, 2026 · Dal 2013 sono certificato TOGAF Enterprise Architecture per lo sviluppo e la realizzazione di progetti di …"
+    },
+    {
+      "title": "Agenzia Entrate e PA - FPA",
+      "url": "https://www.forumpa.it/tag/agenzia-entrate/",
+      "snippet": "Jun 30, 2022 · Leggi tutto riguardo a su FPA, il sito istituzionale con una finestra aperta verso la pubblica amministrazione."
+    },
+    {
+      "title": "Risk, compliance e sistemi antifrode - FPA",
+      "url": "https://www.forumpa.it/confronti-convegni/risk-compliance-e-sistemi-antifrode-2-edizione-advanced-analytics-e-ia-a-sostegno-della-gestione-e-del-monitoraggio-delle-risorse-pubbliche/",
+      "snippet": "Feb 27, 2025 · Dopo una solida esperienza nel settore della riscossione tributaria dove ha gestito relazioni istituzionali complesse, …"
+    },
+    {
+      "title": "Civis in tutta Italia: la consulenza delle Entrate ai professionisti ...",
+      "url": "https://www.forumpa.it/pa-digitale/civis-in-tutta-italia-la-consulenza-delle-entrate-ai-professionisti-via-web/",
+      "snippet": "Jan 15, 2010 · La piattaforma Civis dell’Agenzia delle Entrate, sviluppata per fornire via web risposte rapide ai professionisti in …"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "ForSureTesterSim/Llama-3.1-8B-DELLA_Ext_A",
+  "slug": "forsuretestersim-llama-3-1-8b-della_ext_a",
+  "author": "ForSureTesterSim",
+  "url": "https://huggingface.co/ForSureTesterSim/Llama-3.1-8B-DELLA_Ext_A",
+  "created_at": "2026-09-20T16:17:52.000Z",
+  "updated_at": "2026-09-20T16:20:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "mergekit",
+    "merge",
+    "conversational",
+    "arxiv:2406.11617",
+    "base_model:Magpie-Align/Llama-3.1-8B-Magpie-Align-v0.2",
+    "base_model:merge:Magpie-Align/Llama-3.1-8B-Magpie-Align-v0.2",
+    "base_model:allenai/Llama-3.1-Tulu-3.1-8B",
+    "base_model:merge:allenai/Llama-3.1-Tulu-3.1-8B",
+    "base_model:meta-llama/Llama-3.1-8B",
+    "base_model:merge:meta-llama/Llama-3.1-8B",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:merge:meta-llama/Llama-3.1-8B-Instruct",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766256,
+  "storage_human": "16.1 GB",
+  "base_model": "Magpie-Align/Llama-3.1-8B-Magpie-Align-v0.2, allenai/Llama-3.1-Tulu-3.1-8B, meta-llama/Llama-3.1-8B, meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Do Rzeczy – Piszemy o tym co najważniejsze, zawsze do rzeczy",
+      "url": "https://dorzeczy.pl/",
+      "snippet": "DoRzeczy.pl: wiadomości z Polski i ze świata, opinie, komentarze, polityka, historia, religia, rozrywka, jeden z najbardziej …"
+    },
+    {
+      "title": "Kraj – Nowe i najważniejsze wiadomości z Polski - Do Rzeczy",
+      "url": "https://dorzeczy.pl/kraj",
+      "snippet": "DoRzeczy.pl. Najnowsze wiadomości z Polski. Informacje polityczne, gospodarcze, kulturalne, ekonomiczne. Najważniejsze …"
+    },
+    {
+      "title": "Urszula Kifer - Do Rzeczy",
+      "url": "https://kifer.dorzeczy.pl/",
+      "snippet": "Redaktor i dziennikarz z wieloletnim doświadczeniem w mediach drukowanych (m.in. \"Rzeczpospolita\", \"Newsweek\") i internetowych …"
+    },
+    {
+      "title": "Miesięcznik „Historia Do Rzeczy” - wydanie 9/2026 (163)",
+      "url": "https://historia.dorzeczy.pl/miesiecznik",
+      "snippet": "10 Klucz do Rygi Do przeprowadzania wielkiej operacji nad Niemnem Piłsudski musiał przekonać Sejm i Radę Obrony Państwa, …"
+    },
+    {
+      "title": "Oferty subskrypcji cyfrowej Do Rzeczy+ - Subskrypcja Do Rzeczy",
+      "url": "https://subskrypcja.dorzeczy.pl/oferty-subskrypcji-cyfrowej",
+      "snippet": "Oferty subskrypcji cyfrowej Do Rzeczy+ Wybieram 12 miesięcy Tygodnik Do Rzeczy Miesięcznik Historia Do Rzeczy „Dlaczego …"
+    }
+  ]
+}

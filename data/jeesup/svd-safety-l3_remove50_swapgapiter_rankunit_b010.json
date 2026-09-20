@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l3_remove50_swapgapiter_rankunit_b010",
+  "slug": "jeesup-svd-safety-l3_remove50_swapgapiter_rankunit_b010",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l3_remove50_swapgapiter_rankunit_b010",
+  "created_at": "2026-09-20T19:48:02.000Z",
+  "updated_at": "2026-09-20T20:01:53.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama3",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Meta-Llama-3-8B-Instruct",
+    "base_model:finetune:meta-llama/Meta-Llama-3-8B-Instruct",
+    "license:llama3",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766337,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Meta-Llama-3-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "444",
+      "url": "https://444.hu/",
+      "snippet": "A 444.hu független híroldal, 9-től 99 éves korig minden magyar ezt olvassa."
+    },
+    {
+      "title": "Lánczi Tamás a 444-nek: Engem terrorizálnak!",
+      "url": "https://444.hu/2026/07/21/lanczi-tamas-a-444-nek-engem-terrorizalnak",
+      "snippet": "Jul 21, 2026 · Megkérdeztük az egykori Szuverenitásvédelmi Hivatal volt elnökét, hogy a tevékenysége mennyiben járult hozzá a …"
+    },
+    {
+      "title": "Insight Hungary",
+      "url": "https://insighthungary.444.hu/",
+      "snippet": "InsightHungary - 444 provides news and analysis on Hungarian politics, society, and culture."
+    },
+    {
+      "title": "Helsinki Figyelő",
+      "url": "https://helsinkifigyelo.444.hu/",
+      "snippet": "Kezdődik a törvényhozási időszak, ezeket a törvényszörnyeket lenne ideje lomtalanítani Zavar, hogy antidemokratikus, alapjogsértő, …"
+    },
+    {
+      "title": "Amnesty International",
+      "url": "https://amnesty.444.hu/",
+      "snippet": "A két évtizede magunk előtt görgetett állami kudarc megoldása könnyebb, mint gondolnánk Évi 1 milliárd forintból újabb 1,5 millió …"
+    }
+  ]
+}

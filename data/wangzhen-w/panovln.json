@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "wangzhen-w/PanoVLN",
+  "slug": "wangzhen-w-panovln",
+  "author": "wangzhen-w",
+  "url": "https://huggingface.co/wangzhen-w/PanoVLN",
+  "created_at": "2026-09-20T14:40:04.000Z",
+  "updated_at": "2026-09-20T14:40:05.000Z",
+  "license": "matterport-academic-use",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Solar Radiation Heat Flux Calculator - everycalculators.com",
+      "url": "https://everycalculators.com/calculate-heat-flux-due-to-solar-radiation.html",
+      "snippet": "Oct 15, 2023 · Calculate heat flux due to solar radiation with this precise calculator. Learn the formula, methodology, and real-world …"
+    },
+    {
+      "title": "Solar Irradiance Calculator - GHI, DNI, DHI, and GTI Calculator",
+      "url": "https://dqydj.com/solar-irradiance-calculator/",
+      "snippet": "22 hours ago · Calculate solar irradiance (GHI, DNI, DHI, and GTI) for any location and date with accuracy. Our solar irradiance …"
+    },
+    {
+      "title": "SOLAR RADIATION - Michigan Technological University",
+      "url": "https://pages.mtu.edu/~jstallen/courses/MEEM4200/lectures/solar/Arici_Chp_VII.pdf",
+      "snippet": "Chapter 7 SOLAR RADIATION Solar radiation has important effects on both the heat gain and heat loss of a building. The designer …"
+    },
+    {
+      "title": "Radiative heat transfer - MIT OpenCourseWare",
+      "url": "https://ocw.mit.edu/courses/2-997-direct-solar-thermal-to-electrical-energy-conversion-technologies-fall-2009/e4e64170a22c7c7e507f07d1c157dc10_MIT2_997F09_lec08.pdf",
+      "snippet": "Solar spectra are named by their air mass (AM), which is the ratio of the path length of air the rays travel through to the shortest …"
+    },
+    {
+      "title": "Solar Radiation Calculation - ResearchGate",
+      "url": "https://www.researchgate.net/file.PostFileLoader.html?id=553e4871d685ccd10e8b4618&assetKey=AS%3A273765705945088%401442282238044",
+      "snippet": "The ratio of the path length, which beam radiation passes through the atmosphere, to the path it would pass through if the Sun were …"
+    }
+  ]
+}

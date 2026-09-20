@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "lucid-dl/vjepa2-vitl",
+  "slug": "lucid-dl-vjepa2-vitl",
+  "author": "lucid-dl",
+  "url": "https://huggingface.co/lucid-dl/vjepa2-vitl",
+  "created_at": "2026-09-20T18:51:13.000Z",
+  "updated_at": "2026-09-20T19:42:07.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "video-classification",
+  "library": "lucid",
+  "languages": [],
+  "tags": [
+    "lucid",
+    "safetensors",
+    "video-classification",
+    "vjepa2",
+    "dataset:kinetics-700",
+    "dataset:something-something-v2",
+    "dataset:diving48",
+    "arxiv:2506.09985",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2519507904,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home | Lucid Motors",
+      "url": "https://lucidmotors.com/",
+      "snippet": "Lucid is the future of sustainable mobility, designing electric cars that further reimagines the driving experience."
+    },
+    {
+      "title": "Lucid",
+      "url": "https://lucid.co/lucidchart",
+      "snippet": "The Lucid Suite combines Lucidchart for intelligent diagramming and Lucidspark for virtual whiteboarding. Equip every team in your …"
+    },
+    {
+      "title": "Lucid Trading - The Best Prop Firm For Futures | Fast Payouts!",
+      "url": "https://lucidtrading.com/",
+      "snippet": "What is Lucid Trading and how does it work? Lucid Trading gives traders the ability to participate in the futures markets without …"
+    },
+    {
+      "title": "Accueil | Lucid Motors",
+      "url": "https://lucidmotors.com/fr-ca",
+      "snippet": "Avec un design, une performance, une autonomie, une commodité et une utilité extraordinaires, le Lucid Gravity est l’avenir de la …"
+    },
+    {
+      "title": "Lucid",
+      "url": "https://lucid-store.com/",
+      "snippet": "Politiques Mentions Légales Politique d'expédition Politique de confidentialité Conditions d'utilisation Politique de remboursement et …"
+    }
+  ]
+}

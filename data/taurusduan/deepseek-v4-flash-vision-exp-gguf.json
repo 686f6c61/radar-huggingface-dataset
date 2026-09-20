@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "taurusduan/DeepSeek-V4-Flash-Vision-Exp-GGUF",
+  "slug": "taurusduan-deepseek-v4-flash-vision-exp-gguf",
+  "author": "taurusduan",
+  "url": "https://huggingface.co/taurusduan/DeepSeek-V4-Flash-Vision-Exp-GGUF",
+  "created_at": "2026-09-20T12:36:11.000Z",
+  "updated_at": "2026-09-20T12:36:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "unsloth",
+    "deepseek",
+    "base_model:deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 284334578519,
+  "parameters_human": "284.33B",
+  "storage_bytes": 1157920238592,
+  "storage_human": "1157.9 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4-Flash-Vision-Exp",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed/history",
+      "snippet": "View your watch history and revisit your favorite videos on YouTube."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://studio.youtube.com/",
+      "snippet": "Share your videos with friends, family, and the world."
+    },
+    {
+      "title": "الصفحة الرئيسية - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLPYf6vTu2xt17uhXThhpUMYbChcBh2YyC",
+      "snippet": "Share your videos with friends, family, and the world"
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    },
+    {
+      "title": "Movies & TV - YouTube",
+      "url": "https://shows.youtube.com/",
+      "snippet": "HBO Max • Drama • 2026 Try now"
+    }
+  ]
+}

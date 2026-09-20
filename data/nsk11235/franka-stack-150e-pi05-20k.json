@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "nsk11235/franka-stack-150e-pi05-20k",
+  "slug": "nsk11235-franka-stack-150e-pi05-20k",
+  "author": "nsk11235",
+  "url": "https://huggingface.co/nsk11235/franka-stack-150e-pi05-20k",
+  "created_at": "2026-09-20T19:12:15.000Z",
+  "updated_at": "2026-09-20T19:13:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "dataset:nsk11235/franka-stack-50e-256",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 9388454304,
+  "storage_human": "9.4 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "تيليجرام سطح المكتب",
+      "url": "https://desktop.telegram.org/?setln=ar",
+      "snippet": "هذا البرنامج متوفر تحت ترخيص GPL v3. النص البرمجي متوفر على GitHub. تابعنا على تويتر النسخ التجريبية"
+    },
+    {
+      "title": "Telegram Desktop",
+      "url": "https://desktop.telegram.org/",
+      "snippet": "Experience Telegram on your computer in a swift and seamless way."
+    },
+    {
+      "title": "تيليجرام - Telegram",
+      "url": "https://telegram.org/?setln=ar",
+      "snippet": "محرر النصوص الغني، الرسائل سريعة الزوال في المجموعات، المجتمعات، ٣٥٠ مليون صورة متحركة نقدم لكم محرر نصوص غني لتنسيق وإنشاء النصوص، ومجتمعات تيليجرام التي تربط بين العديد …"
+    },
+    {
+      "title": "Authorization - Telegram",
+      "url": "https://my.telegram.org/auth?to=deactivate",
+      "snippet": "Delete Account or Manage Apps Log in here to manage your apps using Telegram API or delete your account. Enter your number …"
+    },
+    {
+      "title": "تطبيقات تيليجرام - Telegram",
+      "url": "https://telegram.org/apps/?setln=ar",
+      "snippet": "للباحثين الأمنيين إذا وجدت أي مشكلة مع برتوكول تيليجرام أو تطبيقاته، أو كانت لديك أي استفسارات حول طريقة تشغيلنا للميزات الأمنية؛ تواصل معنا (باللغة الإنجليزية) عبر …"
+    }
+  ]
+}

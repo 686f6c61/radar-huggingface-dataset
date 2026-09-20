@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "QuillBytes/surfer",
+  "slug": "quillbytes-surfer",
+  "author": "QuillBytes",
+  "url": "https://huggingface.co/QuillBytes/surfer",
+  "created_at": "2026-09-20T14:11:02.000Z",
+  "updated_at": "2026-09-20T14:27:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "qwen3_5",
+    "image-text-to-text",
+    "surfer",
+    "surfing",
+    "character",
+    "fine-tuned",
+    "unsloth",
+    "lora",
+    "qwen3",
+    "fun",
+    "text-generation",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4659865088,
+  "parameters_human": "4.66B",
+  "storage_bytes": 12795684031,
+  "storage_human": "12.8 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Chrome - The Fast & Secure Web Browser Built to be Yours",
+      "url": "https://www.google.com/chrome/",
+      "snippet": "Chrome is the official web browser from Google, built to be fast, secure, and customizable. Download now and make it yours."
+    },
+    {
+      "title": "Google Chrome – Download the fast, secure browser from Google",
+      "url": "https://www.google.com/intl/en_uk/chrome/",
+      "snippet": "Get more done with the new Google Chrome. A more simple, secure and faster web browser than ever, with Google’s smarts built in. …"
+    },
+    {
+      "title": "Chrome 다운로드 및 설치 - 컴퓨터 - Google Chrome 고객센터",
+      "url": "https://support.google.com/chrome/answer/95346?hl=ko&co=GENIE.Platform%3DDesktop",
+      "snippet": "Linux에 Chrome 설치 및 사용하기 Chrome을 설치하려면 컴퓨터에 프로그램을 설치할 때와 동일한 소프트웨어를 사용하세요. 관리자 계정 …"
+    },
+    {
+      "title": "متصفح Google Chrome",
+      "url": "https://play.google.com/store/apps/details?id=com.android.chrome&hl=ar",
+      "snippet": "استخدِم متصفّح Chrome السريع والآمن من Google لإنجاز كل ما تريده على الويب. استخدِم Chrome للحصول على أفضل ميزات Google • محرك بحث Google: يتيح لك البحث بالكتابة، …"
+    },
+    {
+      "title": "Sign in - Google Accounts - Google Chrome",
+      "url": "https://chrome.google.com/sync",
+      "snippet": "Not your computer? Use a private browsing window to sign in. Learn more about using Guest mode"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "RatanK/23B0059-Week06-Compression40-Submission01",
+  "slug": "ratank-23b0059-week06-compression40-submission01",
+  "author": "RatanK",
+  "url": "https://huggingface.co/RatanK/23B0059-Week06-Compression40-Submission01",
+  "created_at": "2026-09-20T12:56:12.000Z",
+  "updated_at": "2026-09-20T12:57:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "qwen3_5",
+    "image-text-to-text",
+    "pyrodash",
+    "collaborative-decoding",
+    "llm-offload",
+    "qwen3.5",
+    "grpo",
+    "reinforcement-learning",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3954493453,
+  "storage_human": "4.0 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Stop Squeezing! The Genius Trick to Banishing Blackheads for Good",
+      "url": "https://pamdishes.com/stop-squeezing-the-genius-trick-to-banishing/",
+      "snippet": "Sep 9, 2026 · Baking soda’s mild alkalinity helps loosen the oily plug. Stop if you feel a burning sensation; the cue for a safe …"
+    },
+    {
+      "title": "Say Goodbye To Nose Blackheads With These Simple Home Fixes",
+      "url": "https://www.news18.com/lifestyle/say-goodbye-to-nose-blackheads-with-these-simple-home-fixes-ws-bkl-9290965.html",
+      "snippet": "Apr 8, 2025 · Struggling with blackheads? Discover natural remedies like lemon and salt, baking soda, and honey with cinnamon to …"
+    },
+    {
+      "title": "Step by Step Guide to Remove Blackheads on Nose | Clinikally",
+      "url": "https://www.clinikally.com/blogs/news/simple-easy-hacks-to-remove-blackheads-on-nose",
+      "snippet": "Additionally, home remedies like baking soda, lemon juice, honey, and cinnamon can provide supplementary support in managing …"
+    },
+    {
+      "title": "How to Remove Blackheads at Home: Expert Guide",
+      "url": "https://smytten.com/blogs/skincare/how-to-remove-blackheads-at-home-expert-guide",
+      "snippet": "Dec 9, 2025 · For natural blackhead remedies, stock up on honey, cinnamon, baking soda, coconut oil, and green tea. These …"
+    },
+    {
+      "title": "How To Remove Blackheads With Honey And Cinnamon?",
+      "url": "https://virtueskinclinics.com/how-to-remove-blackheads-with-honey-and-cinnamon.html",
+      "snippet": "Oct 6, 2025 · To effectively remove blackheads using honey and cinnamon, create a paste by combining 1 teaspoon of honey with …"
+    }
+  ]
+}

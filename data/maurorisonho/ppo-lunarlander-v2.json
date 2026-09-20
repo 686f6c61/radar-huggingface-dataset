@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "maurorisonho/ppo-LunarLander-v2",
+  "slug": "maurorisonho-ppo-lunarlander-v2",
+  "author": "maurorisonho",
+  "url": "https://huggingface.co/maurorisonho/ppo-LunarLander-v2",
+  "created_at": "2026-09-20T17:15:21.000Z",
+  "updated_at": "2026-09-20T19:24:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "LunarLander-v2",
+    "ppo",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 335746,
+  "storage_human": "335746 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FFBB Competitions",
+      "url": "https://competitions.ffbb.com/",
+      "snippet": "Vivez votre passion du basket avec la Fédération Française de Basketball !"
+    },
+    {
+      "title": "Accueil | Fédération Française de basket-ball",
+      "url": "https://www.ffbb.com/",
+      "snippet": "Aug 24, 2026 · Que vous soyez professionnel ou amateur, joueur, arbitre ou adhérent, journaliste ou simple curieux, restez connecté …"
+    },
+    {
+      "title": "Calendriers | FFBB",
+      "url": "https://www.ffbb.com/calendriers",
+      "snippet": "un club, un comité départemental, une ligue régionale près de chez vous ! pour être informé des actualités en temps réel !"
+    },
+    {
+      "title": "Comité de La Haute-Vienne de Basket-Ball - 0087 | FFBB",
+      "url": "https://competitions.ffbb.com/ligues/naq/comites/0087",
+      "snippet": "Comité de La Haute-Vienne (0087 - 87000) : championnats, coupes et plateaux 5x5 et 3x3, résultats, calendriers, classements, …"
+    },
+    {
+      "title": "Les Compétitions en Nouvelle-Aquitaine - NAQ Basket",
+      "url": "https://nouvelleaquitainebasketball.org/competitions/",
+      "snippet": "Jul 11, 2026 · Le Challenge Benjamin (e)s FFBB est une compétition emblématique destinée aux jeunes licencié (e)s U13, organisée …"
+    }
+  ]
+}

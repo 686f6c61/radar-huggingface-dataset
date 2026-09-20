@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ndhieu1101/medical-bidirectional-machine-translation-checkpoints-68138",
+  "slug": "ndhieu1101-medical-bidirectional-machine-translation-checkpoints-68138",
+  "author": "ndhieu1101",
+  "url": "https://huggingface.co/ndhieu1101/medical-bidirectional-machine-translation-checkpoints-68138",
+  "created_at": "2026-09-20T17:42:12.000Z",
+  "updated_at": "2026-09-20T20:58:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "generated_from_trainer",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 275102976,
+  "parameters_human": "275.1M",
+  "storage_bytes": 6604165792,
+  "storage_human": "6.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Current Local Time in Seattle, Washington, USA",
+      "url": "https://www.timeanddate.com/worldclock/usa/seattle",
+      "snippet": "Current local time in USA – Washington – Seattle. Get Seattle's weather and area codes, time zone and DST. Explore Seattle's …"
+    },
+    {
+      "title": "What time is it in Seattle, United States right now?",
+      "url": "https://24timezones.com/Seattle/time",
+      "snippet": "21 hours ago · Exact time in Seattle time zone now. Official Seattle timezone and time change dates for year 2026."
+    },
+    {
+      "title": "Time in Seattle, Washington, USA (LIVE) - Worldometer",
+      "url": "https://www.worldometers.info/time/seattle-wa-usa/",
+      "snippet": "Exact local time now in Seattle, Washington, United States. Time Zone, UTC offset, and DST. Clock with seconds, 12/24h formats, …"
+    },
+    {
+      "title": "Current local time in Seattle, Washington",
+      "url": "https://24timezones.com/usa_time/wa_king/seattle.php",
+      "snippet": "Mar 8, 2026 · This analog html clock is adjusted for Daylight Saving Time changes and always displays correct current local time for …"
+    },
+    {
+      "title": "Current Time in Seattle, United States (PDT) [Live Clock]",
+      "url": "https://time.now/seattle/",
+      "snippet": "Current time in Seattle, United States (PDT, UTC-7). Live clock with seconds, sunrise/sunset, timezone info and daylight-saving …"
+    }
+  ]
+}

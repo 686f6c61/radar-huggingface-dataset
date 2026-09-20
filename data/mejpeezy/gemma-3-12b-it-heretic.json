@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "id": "mejpeezy/gemma-3-12b-it-heretic",
+  "slug": "mejpeezy-gemma-3-12b-it-heretic",
+  "author": "mejpeezy",
+  "url": "https://huggingface.co/mejpeezy/gemma-3-12b-it-heretic",
+  "created_at": "2026-09-20T14:20:57.000Z",
+  "updated_at": "2026-09-20T14:20:58.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3",
+    "image-text-to-text",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "conversational",
+    "arxiv:1905.07830",
+    "arxiv:1905.10044",
+    "arxiv:1911.11641",
+    "arxiv:1904.09728",
+    "arxiv:1705.03551",
+    "arxiv:1911.01547",
+    "arxiv:1907.10641",
+    "arxiv:1903.00161",
+    "arxiv:2009.03300",
+    "arxiv:2304.06364",
+    "arxiv:2103.03874",
+    "arxiv:2110.14168",
+    "arxiv:2311.12022",
+    "arxiv:2108.07732",
+    "arxiv:2107.03374",
+    "arxiv:2210.03057",
+    "arxiv:2106.03193",
+    "arxiv:1910.11856",
+    "arxiv:2502.12404",
+    "arxiv:2502.21228",
+    "arxiv:2404.16816",
+    "arxiv:2104.12756",
+    "arxiv:2311.16502",
+    "arxiv:2203.10244",
+    "arxiv:2404.12390",
+    "arxiv:1810.12440",
+    "arxiv:1908.02660",
+    "arxiv:2312.11805",
+    "base_model:google/gemma-3-12b-pt",
+    "base_model:finetune:google/gemma-3-12b-pt",
+    "license:gemma",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 12187325040,
+  "parameters_human": "12.19B",
+  "storage_bytes": 24408177592,
+  "storage_human": "24.4 GB",
+  "base_model": "google/gemma-3-12b-pt",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "2531 174th Ave NE, Redmond, WA 98052 | Redfin",
+      "url": "https://www.redfin.com/WA/Redmond/2531-174th-Ave-NE-98052/home/502177?msockid=31520bc33ec9637b15141c193f97628a",
+      "snippet": "3 bedroom, 2 and 1/2 bath, 2 story town-home with a large bonus area behind the 3rd bedroom for a play room or hobby room. …"
+    },
+    {
+      "title": "2531 174th Ave NE, Redmond, WA 98052 | Zillow",
+      "url": "https://www.zillow.com/homedetails/2531-174th-Ave-NE-Redmond-WA-98052/49043308_zpid/?msockid=31520bc33ec9637b15141c193f97628a",
+      "snippet": "2531 174th Ave NE, Redmond, WA 98052 is currently not for sale. The 1,870 Square Feet townhouse home is a 3 beds, 3 baths …"
+    },
+    {
+      "title": "2531 174th Ave NE, Redmond, WA 98052 - realtor.com",
+      "url": "https://www.realtor.com/realestateandhomes-detail/2531-174th-Ave-NE_Redmond_WA_98052_M23037-40047?msockid=31520bc33ec9637b15141c193f97628a",
+      "snippet": "See 2531 174th Ave NE, Redmond, WA 98052, a single family home located in the Idylwood neighborhood. View property details, …"
+    },
+    {
+      "title": "2531 174th Ave NE, Redmond, WA 98052 - Trulia",
+      "url": "https://www.trulia.com/home/2531-174th-ave-ne-redmond-wa-98052-49043308",
+      "snippet": "Dec 9, 2022 · This townhouse is located at 2531 174th Ave NE, Redmond, WA. 2531 174th Ave NE is in the Idylwood neighborhood …"
+    },
+    {
+      "title": "2531 174th Ave NE, Redmond, WA 98052 Property Records",
+      "url": "https://www.countyoffice.org/property-record-2531-174th-ave-ne-redmond-wa-98052-2b1/",
+      "snippet": "View 2531 174th Ave NE, Redmond, WA 98052 property records: owner names, sale prices, deed transfers, mortgages, and tax …"
+    }
+  ]
+}

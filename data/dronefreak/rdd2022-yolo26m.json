@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "id": "dronefreak/rdd2022-yolo26m",
+  "slug": "dronefreak-rdd2022-yolo26m",
+  "author": "dronefreak",
+  "url": "https://huggingface.co/dronefreak/rdd2022-yolo26m",
+  "created_at": "2026-09-20T16:21:31.000Z",
+  "updated_at": "2026-09-20T16:21:40.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "object-detection",
+    "detectionbench",
+    "pytorch",
+    "computer-vision",
+    "road-damage",
+    "pavement-distress",
+    "infrastructure",
+    "pothole-detection",
+    "autonomous-driving",
+    "dataset:dronefreak/RDD2022",
+    "arxiv:2209.08538",
+    "arxiv:2606.03748",
+    "arxiv:2511.09554",
+    "arxiv:2304.07193",
+    "base_model:Ultralytics/YOLO26",
+    "base_model:finetune:Ultralytics/YOLO26",
+    "license:agpl-3.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 46854527,
+  "storage_human": "47 MB",
+  "base_model": "Ultralytics/YOLO26",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Object Detection",
+      "dataset": "RDD2022 Road Damage",
+      "metric": "mAP@50 (test split)",
+      "value": 61.24
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "RDD2022 Road Damage",
+      "metric": "mAP@50-95 (test split)",
+      "value": 33.38
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "RDD2022 Road Damage",
+      "metric": "Precision (test split)",
+      "value": 63.7
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "RDD2022 Road Damage",
+      "metric": "Recall (test split)",
+      "value": 57.27
+    }
+  ],
+  "sources": [
+    {
+      "title": "One Piece Originalserie mit deutscher Synchro? : r/einfach_posten",
+      "url": "https://www.reddit.com/r/einfach_posten/comments/16n2tvn/one_piece_originalserie_mit_deutscher_synchro/",
+      "snippet": "Sep 19, 2023 · One piece findet man ohne probleme mit der deutschen synchro auf den illegalen seiten. Auf Aniworld z.b. Also mir …"
+    },
+    {
+      "title": "Is there a way to change the site language on the new site?",
+      "url": "https://www.reddit.com/r/9anime/comments/112mkuc/is_there_a_way_to_change_the_site_language_on_the/",
+      "snippet": "Feb 15, 2023 · Normally in the old site you can change it on the bottom Home Screen and switch, but I can’t seem to find the switch …"
+    },
+    {
+      "title": "Official links for AniWatch : r/AniWatchZone - Reddit",
+      "url": "https://www.reddit.com/r/AniWatchZone/comments/1ase54h/official_links_for_aniwatch/",
+      "snippet": "true What are the official proxy links for AniWatch? I only know two so far: https://aniwatch.to https://aniwatchtv.to If you're replying, …"
+    },
+    {
+      "title": "Wo kann ich animes kostenlos schauen : r/AnimeDE - Reddit",
+      "url": "https://www.reddit.com/r/AnimeDE/comments/15rx1du/wo_kann_ich_animes_kostenlos_schauen/",
+      "snippet": "Aug 15, 2023 · Heyho, ich frag einfach mal schnell hier, kennt jemand eine kostenlose Seite wo man Animes schauen kann? War auf …"
+    },
+    {
+      "title": "Wo kann man im Internet Animes schauen? : r/FragReddit",
+      "url": "https://www.reddit.com/r/FragReddit/comments/xe8sjp/wo_kann_man_im_internet_animes_schauen/",
+      "snippet": "Sep 14, 2022 · Ansonsten kannst Du auf werstreamt.es schauen welcher Streamingdienst zurzeit was im Angebot hat. Der optimale …"
+    }
+  ]
+}

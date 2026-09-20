@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ImKyungjin/pi0-maniskill-placesphere-clean-0pct-40ep-bc-fullft-20k-seed1000",
+  "slug": "imkyungjin-pi0-maniskill-placesphere-clean-0pct-40ep-bc-fullft-20k-seed1000",
+  "author": "ImKyungjin",
+  "url": "https://huggingface.co/ImKyungjin/pi0-maniskill-placesphere-clean-0pct-40ep-bc-fullft-20k-seed1000",
+  "created_at": "2026-09-20T12:41:58.000Z",
+  "updated_at": "2026-09-20T12:45:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi0",
+    "dataset:local/maniskill_placesphere_clean_0pct_40ep",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3501372176,
+  "parameters_human": "3.50B",
+  "storage_bytes": 7011556516,
+  "storage_human": "7.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sign in to Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "To open Gmail, you can sign in from a computer or add your account to the Gmail app on your phone or tablet. Once you're signed …"
+    },
+    {
+      "title": "Login ke Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=id&co=GENIE.Platform%3DDesktop",
+      "snippet": "Login ke Gmail Untuk membuka Gmail, Anda dapat login dari komputer atau menambahkan akun Anda ke aplikasi Gmail di ponsel …"
+    },
+    {
+      "title": "Log ind på Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=da&co=GENIE.Platform%3DDesktop",
+      "snippet": "Gå til Gmail på din computer. Angiv mailadressen eller telefonnummeret og adgangskoden til din Google-konto. Hvis oplysningerne …"
+    },
+    {
+      "title": "Fazer login no Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=pt-br&co=GENIE.Platform%3DDesktop",
+      "snippet": "Fazer login No seu computador, acesse gmail.com. Insira seu número de telefone ou e-mail da Conta do Google e a senha. Se as …"
+    },
+    {
+      "title": "Google Account Help",
+      "url": "https://support.google.com/accounts/?hl=en",
+      "snippet": "Official Google Account Help Center where you can find tips and tutorials on using Google Account and other answers to frequently …"
+    }
+  ]
+}

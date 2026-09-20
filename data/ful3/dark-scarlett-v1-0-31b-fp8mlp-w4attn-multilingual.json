@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Ful3/Dark-Scarlett-v1.0-31B-FP8mlp-W4attn-multilingual",
+  "slug": "ful3-dark-scarlett-v1-0-31b-fp8mlp-w4attn-multilingual",
+  "author": "Ful3",
+  "url": "https://huggingface.co/Ful3/Dark-Scarlett-v1.0-31B-FP8mlp-W4attn-multilingual",
+  "created_at": "2026-09-20T18:25:56.000Z",
+  "updated_at": "2026-09-20T18:29:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "gemma4",
+    "compressed-tensors",
+    "fp8",
+    "gptq",
+    "w4a16",
+    "mixed-precision",
+    "multilingual",
+    "base_model:ReadyArt/Dark-Scarlett-v1.0-31B",
+    "base_model:quantized:ReadyArt/Dark-Scarlett-v1.0-31B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 23855069036,
+  "parameters_human": "23.86B",
+  "storage_bytes": 29588662314,
+  "storage_human": "29.6 GB",
+  "base_model": "ReadyArt/Dark-Scarlett-v1.0-31B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sky Q ARD Mediathek",
+      "url": "https://community.sky.de/conversations/sky-q-sky-q-mini/sky-q-ard-mediathek/68364b74170e725f31772b08",
+      "snippet": "Nov 10, 2022 · Sky Q ARD Mediathek Hallo, wollte gerade auf dem Sky Q in der ARD Mediathek die PK zur Kadernominierung des …"
+    },
+    {
+      "title": "Ard und ZDF Mediatheken hängen - Sky Community",
+      "url": "https://community.sky.de/conversations/sky-q-sky-q-mini/ard-und-zdf-mediatheken-h%C3%A4ngen/68367744170e725f31756699",
+      "snippet": "Mar 16, 2025 · Ard und ZDF Mediatheken hängen Seit ein pasr Tagen hängen beide Meditheken. Wollte schon Reciver zurücksetzen …"
+    },
+    {
+      "title": "CHIP Forum",
+      "url": "https://forum.chip.de/rund-um-online/free-tv-livestream-ausland-1070970.html",
+      "snippet": ""
+    },
+    {
+      "title": "CHIP Forum",
+      "url": "https://forum.chip.de/home.html",
+      "snippet": ""
+    },
+    {
+      "title": "SDR videos oversaturated on HDR display - Vivaldi Forum",
+      "url": "https://forum.vivaldi.net/topic/100800/sdr-videos-oversaturated-on-hdr-display/24",
+      "snippet": "@Auxx said in SDR videos oversaturated on HDR display: Oh wow, disabling animations fixes everything. Huh! Strange issue. You …"
+    }
+  ]
+}

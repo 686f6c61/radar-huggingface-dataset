@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "fatdove/so101-pink-cylinder-bowl_GR00T17",
+  "slug": "fatdove-so101-pink-cylinder-bowl_gr00t17",
+  "author": "fatdove",
+  "url": "https://huggingface.co/fatdove/so101-pink-cylinder-bowl_GR00T17",
+  "created_at": "2026-09-20T17:27:42.000Z",
+  "updated_at": "2026-09-20T17:31:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "groot",
+    "robotics",
+    "dataset:fatdove/so101-pink-cylinder-bowl",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 12576219216,
+  "storage_human": "12.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Official Manchester United Website | ManUtd.com | Manchester United",
+      "url": "https://www.manutd.com/",
+      "snippet": "The Official Manchester United Website offers latest news, videos and fixtures information for our Men's, Women's and Academy teams"
+    },
+    {
+      "title": "MUTV - Manchester United",
+      "url": "https://www.manutd.com/en/mutv/live",
+      "snippet": "Unlock full access to MUTV, with exclusive live and on-demand content from inside the club."
+    },
+    {
+      "title": "Manchester United",
+      "url": "https://auctions.manutd.com/ja",
+      "snippet": "Manchester United Match-worn Jerseys Signed, match-worn jerseys from Manchester United are ready to own. Fully verified and …"
+    },
+    {
+      "title": "Manchester United Store - Official Manchester United Store",
+      "url": "https://store.manutd.com/en?t=y&int_source=muwebsite&int_medium=menu&int_campaign=shopnav&int_content=shop_button",
+      "snippet": "Shop official Manchester United kits and football shirts at United Store. Find authentic Man Utd merchandise, accessories, gifts, and …"
+    },
+    {
+      "title": "MUTV - Watch Manchester United TV Online",
+      "url": "https://payments.manutd.com/login",
+      "snippet": "Your club, your channel - MUTV. Watch your favourite Manchester United programmes on PC, Mac, mobile and tablet live and on …"
+    }
+  ]
+}

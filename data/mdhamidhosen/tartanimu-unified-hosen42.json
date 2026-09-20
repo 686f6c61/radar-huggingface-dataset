@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "mdhamidhosen/tartanimu-unified-hosen42",
+  "slug": "mdhamidhosen-tartanimu-unified-hosen42",
+  "author": "mdhamidhosen",
+  "url": "https://huggingface.co/mdhamidhosen/tartanimu-unified-hosen42",
+  "created_at": "2026-09-20T18:35:50.000Z",
+  "updated_at": "2026-09-20T19:35:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "imu",
+    "inertial-odometry",
+    "velocity-estimation",
+    "tartanimu",
+    "iros-2026",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23199950,
+  "storage_human": "23 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Calendario | Serie A Enilive | Lega Serie A",
+      "url": "https://www.legaseriea.it/serie-a/calendario-risultati",
+      "snippet": "Il calendario completo della Serie A Enilive — prossime partite, date, orari e sedi"
+    },
+    {
+      "title": "Classifica | Serie A Enilive | Lega Serie A",
+      "url": "https://www.legaseriea.it/serie-a/classifica",
+      "snippet": "La classifica aggiornata della Serie A Enilive — punti, vittorie e differenza reti per tutte le squadre."
+    },
+    {
+      "title": "Serie A Enilive | Lega Serie A",
+      "url": "https://en.legaseriea.it/serie-a",
+      "snippet": "Fixtures, results, standings, highlights and news for Serie A Enilive. Follow every moment of the season with Lega Serie A"
+    },
+    {
+      "title": "Schedule | Serie A Enilive | Lega Serie A",
+      "url": "https://en.legaseriea.it/serie-a/fixtures-results",
+      "snippet": "Sep 11, 2026 · Full Serie A Enilive fixture list — upcoming matches, dates, kick-off times and venues."
+    },
+    {
+      "title": "STATUTO – REGOLAMENTO della",
+      "url": "https://images.legaseriea.it/image/private/fl_attachment/prd/ehts4cixhw59uojex3cn.pdf",
+      "snippet": "2. La Lega Serie A, quale associazione di categoria di società affiliate alla F.I.G.C., agisce altresì nell'ambito delle funzioni ad essa …"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "nmuendler/DeepSeek-R1-Distill-Qwen-7B-text-sft-training-curve-run1-step351",
+  "slug": "nmuendler-deepseek-r1-distill-qwen-7b-text-sft-training-curve-run1-step351",
+  "author": "nmuendler",
+  "url": "https://huggingface.co/nmuendler/DeepSeek-R1-Distill-Qwen-7B-text-sft-training-curve-run1-step351",
+  "created_at": "2026-09-20T15:46:10.000Z",
+  "updated_at": "2026-09-20T15:46:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 334436075,
+  "storage_human": "334 MB",
+  "base_model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "微信与 WhatsApp 谁抄的谁？ - 知乎",
+      "url": "https://www.zhihu.com/question/20871360",
+      "snippet": "WhatsApp 开始的最早，4年了都，所以不可能抄2年前才出现的微信。不过微信抄的也不是WhatsApp，微信最开始主要借鉴的是 …"
+    },
+    {
+      "title": "为什么whatsapp更新那么频繁，但是看不出来哪里有更新? - 知乎",
+      "url": "https://www.zhihu.com/question/21843627",
+      "snippet": "3.如何安全使用WhatsApp群组 更新时间：2024..9.23 这个是一个关于WhatsApp群组的功能。 以前WhatsApp邀请的话一般是一个链 …"
+    },
+    {
+      "title": "怎样在whatsapp中加好友-百度经验",
+      "url": "https://jingyan.baidu.com/article/c33e3f483b65d5ea15cbb516.html",
+      "snippet": "May 6, 2019 · 怎样在whatsapp中加好友,使用WhatA的小伙伴们，知不知道如何在该软件中添加好友呢，接下来跟小编一起去看看吧。"
+    },
+    {
+      "title": "小米手机通话录音保存在哪里？-百度经验",
+      "url": "https://jingyan.baidu.com/article/e8cdb32bf94d2c37052bad05.html",
+      "snippet": "Sep 23, 2018 · 小米手机通话录音保存在哪里？,在一些重要的电话里面，我们会进行通话中的录音的。但是录音之后的文件却是找不到 …"
+    },
+    {
+      "title": "whatsapp messenger - 知乎",
+      "url": "https://www.zhihu.com/topic/19560025/hot",
+      "snippet": "WhatsApp messenger是一款可供iPhone手机、Android手机、Windows Phone手机、Symbian手机和黑莓手机用户使用的，用于智能 …"
+    }
+  ]
+}

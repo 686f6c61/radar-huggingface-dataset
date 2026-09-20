@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "maurorisonho/ppo-LunarLander-v2-unit8",
+  "slug": "maurorisonho-ppo-lunarlander-v2-unit8",
+  "author": "maurorisonho",
+  "url": "https://huggingface.co/maurorisonho/ppo-LunarLander-v2-unit8",
+  "created_at": "2026-09-20T17:16:40.000Z",
+  "updated_at": "2026-09-20T19:24:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "deep-rl-course",
+  "languages": [],
+  "tags": [
+    "LunarLander-v2",
+    "deep-rl-course",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 157089,
+  "storage_human": "157089 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "솔라리아 니시테츠 호텔 서울 명동 | 서울 중구 명동8길 27",
+      "url": "https://travel2.korea724.info/en/%EC%86%94%EB%9D%BC%EB%A6%AC%EC%95%84-%EB%8B%88%EC%8B%9C%ED%85%8C%EC%B8%A0-%ED%98%B8%ED%85%94-%EC%84%9C%EC%9A%B8-%EB%AA%85%EB%8F%99-82-2-773-1555.html",
+      "snippet": "18 hours ago · Get address, phone number, hours, reviews, photos, geolocation and more for 솔라리아 니시테츠 호텔 서울 명동 | 서울 …"
+    },
+    {
+      "title": "[서울] 솔라리아 니시테츠 호텔 서울(서울특별시 중구 명동8길 27)",
+      "url": "https://blog.naver.com/owoonplatform/223139259940",
+      "snippet": "주소 : 서울 중구 (서울특별시) 명동8길 27. 솔라리아 니시테츠 호텔 서울 - <3성급:인증> - 솔라리아 니시테츠 호텔 서울은 명동 중앙에 …"
+    },
+    {
+      "title": "네이버지도",
+      "url": "https://maps.naver.com/p/",
+      "snippet": "모든 여정의 시작, 네이버지도"
+    },
+    {
+      "title": "중구 명동2가 서울지에프솔라리아니시테츠솔호텔점 구내식당 ...",
+      "url": "https://local.114-service.co.kr/map/detail/MA010120220805224005",
+      "snippet": "중구 명동2가 서울지에프솔라리아니시테츠솔호텔점 구내식당. 명동8길 27."
+    },
+    {
+      "title": "서울특별시 중구 명동8가길 27 (충무로2가) - 도로명주소",
+      "url": "https://dorojuso.kr/1114012500100110001020450/%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C-%EC%A4%91%EA%B5%AC-%EB%AA%85%EB%8F%998%EA%B0%80%EA%B8%B8-27-%EC%B6%A9%EB%AC%B4%EB%A1%9C2%EA%B0%80",
+      "snippet": "18 hours ago · 서울특별시 중구 명동8가길 27 (충무로2가) 도로명주소 영문주소 우편번호 지번 건물명 안내"
+    }
+  ]
+}

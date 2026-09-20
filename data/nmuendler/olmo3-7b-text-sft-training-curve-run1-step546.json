@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "nmuendler/Olmo3-7B-text-sft-training-curve-run1-step546",
+  "slug": "nmuendler-olmo3-7b-text-sft-training-curve-run1-step546",
+  "author": "nmuendler",
+  "url": "https://huggingface.co/nmuendler/Olmo3-7B-text-sft-training-curve-run1-step546",
+  "created_at": "2026-09-20T15:42:13.000Z",
+  "updated_at": "2026-09-20T15:42:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:allenai/Olmo-3-7B-Think",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:allenai/Olmo-3-7B-Think",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 319876032,
+  "storage_human": "320 MB",
+  "base_model": "allenai/Olmo-3-7B-Think",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Welche Kupplung verwendet ihr? | TT-Board - Forum der Modellbahn …",
+      "url": "https://www.tt-board.de/forum/threads/welche-kupplung-verwendet-ihr.53732/",
+      "snippet": "Sep 24, 2018 · Hallo TT-Modellbahner, schön, dass du zu uns gefunden hast. Um alle Funktionen nutzen zu können, empfehlen wir …"
+    },
+    {
+      "title": "EA888的奥迪TT和EA113的TT性能上比113能差多少？ - 知乎",
+      "url": "https://www.zhihu.com/question/55117721",
+      "snippet": "Jan 25, 2017 · 奥迪 TT 是奥迪公司开发的一款跑车，1998 年首次上市。作为运动型轿车，TT 型以它几乎和概念车版相同的漂亮外 …"
+    },
+    {
+      "title": "Durchfahrtshöhe bei E-Loks | TT-Board - Forum der Modellbahn in 1:120",
+      "url": "https://www.tt-board.de/forum/threads/durchfahrtshoehe-bei-e-loks.47194/",
+      "snippet": "Jun 24, 2013 · hallo besten Modellbahner, Welche Durchfahrtshöhe des Zuges verwenden Sie in den Bau der verschiedenen …"
+    },
+    {
+      "title": "tt起航者s3是不是闷罐，如何改善风道？换一体式水冷会不会改善?",
+      "url": "https://www.zhihu.com/question/320434176",
+      "snippet": "Apr 16, 2019 · TT启航者S3，是搞机圈内著名的闷罐。 主要是因为进风不畅，毕竟前面板密封性太好了。 因为气压平衡的原理，当进 …"
+    },
+    {
+      "title": "Maximale Steigung - minimale Durchfahrtshöhe - TT-Board",
+      "url": "https://www.tt-board.de/forum/threads/maximale-steigung-minimale-durchfahrtshoehe.2451/",
+      "snippet": "Mar 11, 2002 · Maximale Steigung Ich plane gerade eine TT-Anlage, ca. 3,5mx1,80m groß. Mein größtes Problem hierbei ist die …"
+    }
+  ]
+}

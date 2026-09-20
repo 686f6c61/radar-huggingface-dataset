@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "gatilin/PaddleOCRViT",
+  "slug": "gatilin-paddleocrvit",
+  "author": "gatilin",
+  "url": "https://huggingface.co/gatilin/PaddleOCRViT",
+  "created_at": "2026-09-20T13:25:02.000Z",
+  "updated_at": "2026-09-20T13:40:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1864060682,
+  "storage_human": "1.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/live/Y",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/youtube",
+      "snippet": "YouTube's official YouTube channel You found us. Welcome to the official YouTube channel – a home for the biggest moments, the …"
+    },
+    {
+      "title": "YouTube – Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.google.android.youtube&raii=com.google.android.youtube&hl=en-GB&raii=com.google.android.youtube&rapt=AEjHL4Nocd__YTB0i2MZHIAnAbod4gO1_azkGr4Q8es0j01UfpQmhON_Kz4PFK8PW63MShs1Jl4Nb1eUY_2mXDHSE30Y0g7wY2wDGfzA6WBNBmTAgU8xQfyA32KX4Vkvoz56L5XWjgn7",
+      "snippet": "Sep 12, 2026 · Enjoy your favourite videos and channels with the official YouTube app."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed",
+      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new …"
+    },
+    {
+      "title": "Y - YouTube",
+      "url": "https://www.youtube.com/y/homepage",
+      "snippet": "Y 7 months ago Silence cuts the deepest when remembering is the only sound 16 Y 8 months ago hello 47"
+    }
+  ]
+}

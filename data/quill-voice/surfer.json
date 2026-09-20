@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "quill-voice/surfer",
+  "slug": "quill-voice-surfer",
+  "author": "quill-voice",
+  "url": "https://huggingface.co/quill-voice/surfer",
+  "created_at": "2026-09-20T14:52:19.000Z",
+  "updated_at": "2026-09-20T15:42:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "qwen3_5",
+    "image-text-to-text",
+    "surfer",
+    "surfing",
+    "character",
+    "fine-tuned",
+    "unsloth",
+    "lora",
+    "qwen3",
+    "fun",
+    "text-generation",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4659865088,
+  "parameters_human": "4.66B",
+  "storage_bytes": 12795684031,
+  "storage_human": "12.8 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Quillbot : Votre solution d'écriture complète",
+      "url": "https://quillbot.com/fr/?msockid=0ddf56e6769160410ab2413c773b61a0",
+      "snippet": "Écrivez sans effort et efficacement avec la suite d'outils d'écriture IA de Quillbot. Reformulez, vérifiez la grammaire, analysez le ton, …"
+    },
+    {
+      "title": "Quill.org | Interactive Writing and Grammar",
+      "url": "https://www.quill.org/",
+      "snippet": "Quill provides free writing and grammar activities for middle and high school students."
+    },
+    {
+      "title": "Quill - Your powerful rich text editor",
+      "url": "https://quilljs.com/",
+      "snippet": "Quill is a free, open source WYSIWYG editor built for the modern web. With its modular architecture and expressive API, it is …"
+    },
+    {
+      "title": "Quillbot: Write, Design & Create",
+      "url": "https://quillbot.com/?msockid=0ddf56e6769160410ab2413c773b61a0",
+      "snippet": "Write effortlessly and efficiently with Quillbot's suite of AI tools. Paraphrase, check grammar, analyze tone, improve fluency, and …"
+    },
+    {
+      "title": "Quill.org | Log In",
+      "url": "https://www.quill.org/session/new",
+      "snippet": "92% Privacy Score Common Sense awards the Privacy Seal for Quill’s high standards."
+    }
+  ]
+}

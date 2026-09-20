@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Abhiabhi12/pass-ml-agents-snowballtarget",
+  "slug": "abhiabhi12-pass-ml-agents-snowballtarget",
+  "author": "Abhiabhi12",
+  "url": "https://huggingface.co/Abhiabhi12/pass-ml-agents-snowballtarget",
+  "created_at": "2026-09-20T16:04:25.000Z",
+  "updated_at": "2026-09-20T16:07:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "ML-Agents-SnowballTarget",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ppo",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Problème remboursement commande Amazon [Résolu] - Forum Que …",
+      "url": "https://forum.quechoisir.org/probleme-remboursement-commande-amazon-t329055.html",
+      "snippet": "Dec 5, 2022 · J'ai aussitôt téléphoné au service AMAZON pour savoir ce qu'il en était et j'ai eu à faire à des interlocuteurs très …"
+    },
+    {
+      "title": "Aidez moi svp ! Colis marqué livré par Amazon mais non reçu",
+      "url": "https://forum.quechoisir.org/aidez-moi-svp-colis-marque-livre-mais-non-recu-par-amazon-t251955.html",
+      "snippet": "Oct 23, 2019 · Livre électronique (Dossier) Amazon Prime - Une prime de risque pour les consommateurs ? (Billet de la présidente) …"
+    },
+    {
+      "title": "Amazon Prime Day 2026: Zahlreiche Spiele und Gaming-Produkte im …",
+      "url": "https://www.dvd-forum.at/amazon-prime-day-2026-zahlreiche-spiele-und-gaming-produkte-im-angebot",
+      "snippet": "Jun 23, 2026 · Auch Gamer kommen beim diesjährigen Amazon Prime Day 2026 auf ihre Kosten. Amazon hat aktuell zahlreiche …"
+    },
+    {
+      "title": "Amazon Prime Day 2026: Hunderttausende Angebote vom 23. bis 26.",
+      "url": "https://www.dvd-forum.at/amazon-prime-day-2026-hunderttausende-angebote-vom-23-bis-26-juni-angekuendigt",
+      "snippet": "Jun 3, 2026 · Amazon hat den Termin für den diesjährigen Prime Day bekannt gegeben. Das große Shopping-Event findet von 23. …"
+    },
+    {
+      "title": "亚马逊prime会员是所有东西都包邮还是标了prime的东西才包邮? - 知乎",
+      "url": "https://www.zhihu.com/question/394768466",
+      "snippet": "May 14, 2020 · 图片来自于Amazon，版权属于原作者 Amazon Prime会员不但可以享受免费2日速递的便利，而且现在很多地区已经升 …"
+    }
+  ]
+}

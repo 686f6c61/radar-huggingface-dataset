@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "OliviaRossi/TripleTrouble-V3-Q4_K_M-GGUF",
+  "slug": "oliviarossi-tripletrouble-v3-q4_k_m-gguf",
+  "author": "OliviaRossi",
+  "url": "https://huggingface.co/OliviaRossi/TripleTrouble-V3-Q4_K_M-GGUF",
+  "created_at": "2026-09-20T18:55:58.000Z",
+  "updated_at": "2026-09-20T18:57:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "merge",
+    "moe",
+    "qwen",
+    "qwen-35b-a3b",
+    "agent",
+    "coding",
+    "tool-use",
+    "world-model",
+    "gated-deltanet",
+    "llama-cpp",
+    "gguf-my-repo",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:OliviaRossi/TripleTrouble-V3",
+    "base_model:quantized:OliviaRossi/TripleTrouble-V3",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 21166781504,
+  "storage_human": "21.2 GB",
+  "base_model": "OliviaRossi/TripleTrouble-V3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Generator obrazów oparty na AI: narzędzie online do tworzenia …",
+      "url": "https://www.shutterstock.com/pl/ai-image-generator?msockid=1f96b867a70e6d010b0aafbda6596cf0",
+      "snippet": "Generator obrazów Shutterstock oparty na AI tworzy w kilka sekund obrazy na podstawie tekstu. Wprowadź instrukcje, wybierz styl, …"
+    },
+    {
+      "title": "Darmowy generator obrazów AI, twórz dzieła sztuki w kilka sekund",
+      "url": "https://seapik.com/pl-PL/ai-image-generator",
+      "snippet": "Generuj obrazy o oszałamiających szczegółach i realizmie. Wybierz style, rozmiary i opisz szczegółowo. Szeroka gama obrazów, od …"
+    },
+    {
+      "title": "Bezpłatny generator obrazów sztucznej inteligencji - Bing",
+      "url": "https://www.bing.com/images/create/ai-image-generator?cc=pl",
+      "snippet": "Twórz wspaniałe obrazy za pomocą Kreatora obrazów Bing – najlepszego bezpłatnego generatora obrazów AI. Błyskawicznie …"
+    },
+    {
+      "title": "Bezpłatny generator obrazów oparty na SI | Adobe Firefly",
+      "url": "https://www.adobe.com/pl/products/firefly/features/ai-painting-generator.html?msockid=1f96b867a70e6d010b0aafbda6596cf0",
+      "snippet": "Od zalanych słońcem pejzaży po fantastyczne stworzenia — generatory malarstwa oparte na SI umożliwiają tworzenie obrazów w …"
+    },
+    {
+      "title": "Generator Obrazów AI Online z Tekstu za Darmo | insMind",
+      "url": "https://www.insmind.com/pl-pl/generator-obrazow-ai",
+      "snippet": "Wpisz prompt i twórz obrazy AI online: grafiki, ilustracje, portrety, produkty i plakaty. Wybierz model, styl i pobierz gotowy obraz."
+    }
+  ]
+}

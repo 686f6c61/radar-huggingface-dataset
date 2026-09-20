@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ryo0607/act_openarm_pick_red_cube",
+  "slug": "ryo0607-act_openarm_pick_red_cube",
+  "author": "ryo0607",
+  "url": "https://huggingface.co/ryo0607/act_openarm_pick_red_cube",
+  "created_at": "2026-09-20T16:19:37.000Z",
+  "updated_at": "2026-09-20T16:20:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:nkmurst/openarm_teleop_udp_d435_20260914_153326_150633_20260916_150242_140511_merged_pick_red_cube",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51689104,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206800664,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Seznam Slovník",
+      "url": "https://slovnik.seznam.cz/",
+      "snippet": "Vícejazyčný online slovník. Překlady z češtiny do angličtiny, francouzštiny, němčiny, španělštiny, italštiny, ruštiny, slovenštiny a naopak."
+    },
+    {
+      "title": "Německo český, Česko německý slovník | Němčina – Seznam Slovník",
+      "url": "https://slovnik.seznam.cz/preklad/nemecky",
+      "snippet": "Online slovník zdarma s 47000 německými slovy a frázemi od Seznam.cz. Překladač z německého jazyka do češtiny a naopak. …"
+    },
+    {
+      "title": "Francouzsko český, Česko francouzský slovník | Francouzština – Seznam ...",
+      "url": "https://slovnik.seznam.cz/preklad/francouzsky",
+      "snippet": "Online slovník zdarma s 49000 francouzskými slovy a frázemi od Seznam.cz. Překladač z francouzského jazyka do češtiny a naopak. …"
+    },
+    {
+      "title": "seznam.cz – Seznam Slovník",
+      "url": "https://slovnik.seznam.cz/preklad/anglicky_cesky/seznam.cz",
+      "snippet": "Vícejazyčný online slovník. Překlady z češtiny do angličtiny, francouzštiny, němčiny, španělštiny, italštiny, ruštiny, slovenštiny a naopak."
+    },
+    {
+      "title": "Anglicko český, Česko anglický slovník | Angličtina – Seznam Slovník",
+      "url": "https://slovnik.seznam.cz/preklad/anglicky",
+      "snippet": "Online slovník zdarma s 37000 anglickými slovy a frázemi od Seznam.cz. Překladač z anglického jazyka do češtiny a naopak. …"
+    }
+  ]
+}

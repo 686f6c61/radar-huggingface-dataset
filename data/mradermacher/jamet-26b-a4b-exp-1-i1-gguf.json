@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Jamet-26B-A4B-EXP-1-i1-GGUF",
+  "slug": "mradermacher-jamet-26b-a4b-exp-1-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Jamet-26B-A4B-EXP-1-i1-GGUF",
+  "created_at": "2026-09-20T19:57:00.000Z",
+  "updated_at": "2026-09-20T23:04:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:Hastagaras/Jamet-26B-A4B-EXP-1",
+    "base_model:quantized:Hastagaras/Jamet-26B-A4B-EXP-1",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25233142046,
+  "parameters_human": "25.23B",
+  "storage_bytes": 300894372448,
+  "storage_human": "300.9 GB",
+  "base_model": "Hastagaras/Jamet-26B-A4B-EXP-1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mustertexte für geschäftliche Weihnachtsgrüße",
+      "url": "https://gruesse-zum-fest.de/weihnachtsgruesse/weihnachtsgruesse-geschaeftlich.html",
+      "snippet": "Mustertexte für geschäftlichen Weihnachtsgrüße sowie Beispiele und Vorlagen für die Weihnachtskarte an Geschäftspartner und …"
+    },
+    {
+      "title": "Geschäftliche Weihnachtsgrüße: 70+ Texte & Mustertexte (2026)",
+      "url": "https://grusskartenladen.de/blogs/ratgeber-weihnachten/geschaeftliche-weihnachtsgruesse",
+      "snippet": "Wer geschäftliche Weihnachtsgrüße strategisch einsetzt, investiert in Kundenbindung, Mitarbeitermotivation und Markenpflege …"
+    },
+    {
+      "title": "Weihnachtsgrüße geschäftlich: 95+ Textvorlagen für Kunden & Partner",
+      "url": "https://grusskarten-schreiben.de/weihnachten/weihnachtsgruesse-geschaeftlich/",
+      "snippet": "Mar 17, 2026 · Geschäftliche Weihnachtsgrüße für Kunden, Partner & Mitarbeiter. 95+ Textvorlagen: klassisch, kreativ, kurz & auf …"
+    },
+    {
+      "title": "Weihnachtsgrüße geschäftlich [2026]: 32 Vorlagen zum Kopieren",
+      "url": "https://www.power-ecard.com/de/weihnachtsgruesse-geschaeftlich/",
+      "snippet": "Jan 20, 2026 · Entdecken Sie 32 professionelle Textvorlagen für geschäftliche Weihnachtsgrüße – von förmlich über stilvoll bis hin zu …"
+    },
+    {
+      "title": "42 Geschäftliche Weihnachtsgrüße Für Firmen: Schön & Kurz",
+      "url": "https://finestwords.de/weihnachtsgruesse-firma/",
+      "snippet": "Dec 6, 2023 · Als Firma möchten wir zur Weihnachtszeit unsere Verbundenheit zum Ausdruck bringen. Schon in ein paar wenigen …"
+    }
+  ]
+}

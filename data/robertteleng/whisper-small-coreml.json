@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "robertteleng/whisper-small-coreml",
+  "slug": "robertteleng-whisper-small-coreml",
+  "author": "robertteleng",
+  "url": "https://huggingface.co/robertteleng/whisper-small-coreml",
+  "created_at": "2026-09-20T16:57:20.000Z",
+  "updated_at": "2026-09-20T16:57:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "coreml",
+  "languages": [],
+  "tags": [
+    "coreml",
+    "whisper",
+    "automatic-speech-recognition",
+    "on-device",
+    "ios",
+    "apple-neural-engine",
+    "base_model:openai/whisper-small",
+    "base_model:quantized:openai/whisper-small",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 483605400,
+  "storage_human": "484 MB",
+  "base_model": "openai/whisper-small",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "沙雕动画素材网",
+      "url": "https://www.donghuasucai.com/",
+      "snippet": "Jan 12, 2026 · 具备版权的素材仅供已授权的账号使用，否则侵权必究！ 近期有很多同行盗版我们素材网UI，谨防被骗！"
+    },
+    {
+      "title": "沙雕动画人物素材 免费下载 - 爱给网",
+      "url": "https://www.aigei.com/s?q=%E6%B2%99%E9%9B%95%E5%8A%A8%E7%94%BB%E4%BA%BA%E7%89%A9%E7%B4%A0%E6%9D%90",
+      "snippet": "沙雕熊猫头动画人物素材,沙雕动画，女孩,an沙雕动画卡通动画人物素材源文件有动作可修改编辑矢量,spine源码_鬼灭之刃Spine骨骼 …"
+    },
+    {
+      "title": "沙雕动画素材网_小毛动画素材免费下载",
+      "url": "https://shangyongsucai.cn/",
+      "snippet": "带有版权标识素材均有美术版权注册！ 会员禁止二次销售或流出，需要永久激活码请在右上角点击加入会员跳转淘宝或拼多多店铺： …"
+    },
+    {
+      "title": "沙雕动画素材网 - 沙雕素材、人物背景、特效音效与在线配音",
+      "url": "https://www.sdsucai.com/",
+      "snippet": "Aug 19, 2026 · 沙雕动画素材网提供沙雕素材和沙雕动画素材下载，包括人物、场景、道具、表情包、特效、音效、在线配音及沙雕动 …"
+    },
+    {
+      "title": "沙雕动画素材网 - 免费动画素材下载 - 人物场景道具特效音效 ...",
+      "url": "https://www.shadiao.cn/?category=1",
+      "snippet": "沙雕动画素材网提供海量免费动画素材下载，包含人物、场景、道具、特效、音效、表情等多种类型素材，支持FLA、AN等格式，适 …"
+    }
+  ]
+}

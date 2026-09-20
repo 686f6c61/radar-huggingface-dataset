@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "Slomin/Potato-CODER-12GB-Fast",
+  "slug": "slomin-potato-coder-12gb-fast",
+  "author": "Slomin",
+  "url": "https://huggingface.co/Slomin/Potato-CODER-12GB-Fast",
+  "created_at": "2026-09-20T19:50:16.000Z",
+  "updated_at": "2026-09-20T23:12:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "qwen",
+    "moe",
+    "35b-a3b",
+    "ternary",
+    "potato-coder",
+    "potato",
+    "coding",
+    "long-context",
+    "114k",
+    "llama.cpp",
+    "12gb",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:quantized:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 8924882400,
+  "storage_human": "8.9 GB",
+  "base_model": "llmsforall/Millie-1.1-35B-A3B-Ternary, Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Unregistered Rights of Way: Essential Insights for Property Buyers …",
+      "url": "https://www.athilaw.co.uk/post/unregistered-rights-of-way-essential-insights",
+      "snippet": "Jun 18, 2025 · When buying or selling a property, unregistered rights of way can cause unexpected complications. These rights allow …"
+    },
+    {
+      "title": "How can neighbours register unregistered land with shared rights of way ...",
+      "url": "https://www.mumsnet.com/talk/property/5577572-how-can-neighbours-register-unregistered-land-with-shared-rights-of-way",
+      "snippet": "Sep 12, 2026 · Hello- I’m looking for advice on the best way for myself and my neighbours to register some unregistered land that we …"
+    },
+    {
+      "title": "Unregistered Land: Issues and Remedies All Buyers Should Know",
+      "url": "https://dawnsolicitors.co.uk/unregistered-land-issues-and-remedies-all-buyers-should-know/",
+      "snippet": "Moreover, unregistered land often conceals crucial details such as rights of way, restrictive covenants, or shared access paths. These …"
+    },
+    {
+      "title": "Rights of Way Disputes: Legal Principles and Practical Solutions ...",
+      "url": "https://charrettelaw.co.uk/legal-principles-and-practical-solutions/",
+      "snippet": "Jul 29, 2025 · In this guide, we unpack the key causes of rights of way disputes, explore how the law treats different types of access …"
+    },
+    {
+      "title": "Rights of way disputes: When long-established access rights are ...",
+      "url": "https://coodes.co.uk/2026/06/rights-of-way-disputes-when-long-established-access-rights-are-suddenly-challenged/",
+      "snippet": "Jun 11, 2026 · When a long-used access right is suddenly challenged, the consequences can be serious. Coodes' personal disputes …"
+    }
+  ]
+}

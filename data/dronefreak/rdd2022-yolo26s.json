@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "id": "dronefreak/rdd2022-yolo26s",
+  "slug": "dronefreak-rdd2022-yolo26s",
+  "author": "dronefreak",
+  "url": "https://huggingface.co/dronefreak/rdd2022-yolo26s",
+  "created_at": "2026-09-20T16:21:23.000Z",
+  "updated_at": "2026-09-20T16:21:30.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "object-detection",
+    "detectionbench",
+    "pytorch",
+    "computer-vision",
+    "road-damage",
+    "pavement-distress",
+    "infrastructure",
+    "pothole-detection",
+    "autonomous-driving",
+    "dataset:dronefreak/RDD2022",
+    "arxiv:2209.08538",
+    "arxiv:2606.03748",
+    "arxiv:2511.09554",
+    "arxiv:2304.07193",
+    "base_model:Ultralytics/YOLO26",
+    "base_model:finetune:Ultralytics/YOLO26",
+    "license:agpl-3.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23113452,
+  "storage_human": "23 MB",
+  "base_model": "Ultralytics/YOLO26",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Object Detection",
+      "dataset": "RDD2022 Road Damage",
+      "metric": "mAP@50 (test split)",
+      "value": 61.27
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "RDD2022 Road Damage",
+      "metric": "mAP@50-95 (test split)",
+      "value": 33.3
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "RDD2022 Road Damage",
+      "metric": "Precision (test split)",
+      "value": 64.42
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "RDD2022 Road Damage",
+      "metric": "Recall (test split)",
+      "value": 57.13
+    }
+  ],
+  "sources": [
+    {
+      "title": "Windows download | TeamViewer",
+      "url": "https://www.teamviewer.com/en/download/windows/?msockid=191c9e9685ad655f2c82894c841d648a",
+      "snippet": "Download the latest version of TeamViewer for Windows. Control and access your devices remotely."
+    },
+    {
+      "title": "Windows ダウンロード | TeamViewer",
+      "url": "https://www.teamviewer.com/ja/download/windows/?msockid=191c9e9685ad655f2c82894c841d648a",
+      "snippet": "最新バージョンの TeamViewer Windows 版をダウンロード。デバイスへリモート アクセスし、コントロールします。"
+    },
+    {
+      "title": "TeamViewer",
+      "url": "https://web.teamviewer.com/",
+      "snippet": "Securely connect to any device from any device. No matter where you are"
+    },
+    {
+      "title": "TeamViewer",
+      "url": "https://web.teamviewer.com/Connect",
+      "snippet": "Access TeamViewer's web client to connect to remote devices directly from your browser."
+    },
+    {
+      "title": "TeamViewer",
+      "url": "https://service.teamviewer.com/front/en-us/customer",
+      "snippet": "Oops! JavaScript is disabled To browse the Teamviewer, enable JavaScript in your browser."
+    }
+  ]
+}

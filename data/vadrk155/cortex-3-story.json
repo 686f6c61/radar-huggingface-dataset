@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "VADRK155/Cortex-3-Story",
+  "slug": "vadrk155-cortex-3-story",
+  "author": "VADRK155",
+  "url": "https://huggingface.co/VADRK155/Cortex-3-Story",
+  "created_at": "2026-09-20T16:20:25.000Z",
+  "updated_at": "2026-09-20T16:33:37.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "text-generation",
+    "gpt",
+    "from-scratch",
+    "en",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 216786109,
+  "storage_human": "217 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Denver SWC-156 Bedienungsanleitung - ManualsLib",
+      "url": "https://www.manualslib.de/manual/1091591/Denver-Swc-156.html",
+      "snippet": "Ansicht Und Herunterladen Denver Swc-156 Bedienungsanleitung Online. Swc-156 Smartwatch Pdf Anleitung Herunterladen."
+    },
+    {
+      "title": "Bedienungsanleitung Denver SWC-156 (Deutsch - 9 Seiten)",
+      "url": "https://www.bedienungsanleitu.ng/denver/swc-156/anleitung",
+      "snippet": "Aug 25, 2023 · Bedienungsanleitung Denver SWC-156. Lesen Sie die Denver SWC-156 Anleitung gratis oder fragen Sie andere …"
+    },
+    {
+      "title": "Bedienungsanleitung Denver SWC-156 Smartwatch - Manuall",
+      "url": "https://manuall.de/denver-swc-156-smartwatch/",
+      "snippet": "Benötigen Sie ein Bedienungsanleitung für Ihren Denver SWC-156 Smartwatch? Unten können Sie das PDF-Bedienungsanleitung …"
+    },
+    {
+      "title": "Manual- 9x6cmuser manual im-swc-156 17425 - Denver",
+      "url": "https://denver.eu/Files/Images/User%20manuals/Wearables/SWC-156_German.pdf",
+      "snippet": "Hiermit erklärt Denver A/S, dass der Funkanlagentyp SWC-156 der Richtlinie 2014/53/EU entspricht. Den vollständigen Text der EU …"
+    },
+    {
+      "title": "Denver SWC-156 Handbücher - ManualsLib",
+      "url": "https://www.manualslib.de/products/Denver-Swc-156-12490581.html",
+      "snippet": "Online ansehen oder herunterladen Denver SWC-156 Bedienungsanleitung."
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Tema_Q-X6-9B-Thinking-GGUF",
+  "slug": "mradermacher-tema_q-x6-9b-thinking-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Tema_Q-X6-9B-Thinking-GGUF",
+  "created_at": "2026-09-20T14:42:27.000Z",
+  "updated_at": "2026-09-20T16:00:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "lfm",
+    "transformer",
+    "instruction-tuned",
+    "multilingual",
+    "uncensored",
+    "non-censored",
+    "unfiltered",
+    "en",
+    "base_model:temaq-org/Tema_Q-X6-9B-Thinking",
+    "base_model:quantized:temaq-org/Tema_Q-X6-9B-Thinking",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 81425089408,
+  "storage_human": "81.4 GB",
+  "base_model": "temaq-org/Tema_Q-X6-9B-Thinking",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tipps zum Waschen: Grau und Schwarz zusammen waschen - So …",
+      "url": "https://trocknerbereich.de/grau-und-schwarz-zusammen-waschen/",
+      "snippet": "Feb 1, 2024 · Für graue und schwarze Kleidungsstücke empfiehlt es sich, sie bei einer niedrigen Temperatur zu waschen, …"
+    },
+    {
+      "title": "Persil | Welche Farben lassen sich zusammen waschen?",
+      "url": "https://www.persil.de/waschwiki/fleckenhilfe/welche-farben-zusammen-waschen.html",
+      "snippet": "Sie gibt vor, welche Wäsche über oder unter 30 Grad gewaschen werden darf. Nach Farbe: Welche Farben zusammen gewaschen …"
+    },
+    {
+      "title": "Welche Wäsche zusammen waschen: Der ultimative Guide 2026",
+      "url": "https://haushacks.de/welche-waesche-zusammen-waschen",
+      "snippet": "Sep 13, 2023 · Um zu verhindern, dass deine Buntwäsche ausbleicht, solltest du sie vor dem Waschen nach Farben sortieren und …"
+    },
+    {
+      "title": "Kann man bei 30 Grad Schwarz und Weiß zusammen waschen?",
+      "url": "https://www.kuechenfibel.de/faq/kann-man-bei-30-grad-schwarz-und-wei-zusammen-waschen",
+      "snippet": "Feb 22, 2025 · Kann man bei 30 Grad Farben mischen? Ja, mit einiger Vorsicht können Sie Farben bei der 30-Grad-Wäsche …"
+    },
+    {
+      "title": "Kann man bei 30°C Buntwäsche ALLES zusammen waschen?",
+      "url": "https://www.gutefrage.net/frage/kann-man-bei-30c-buntwaesche-alles-zusammen-waschen",
+      "snippet": "Wenn Du es mit 30 Grad waschen willst, solltest Du aber eine extra Portion Waschpulver hinzufügen. Oder benutze einfach ein …"
+    }
+  ]
+}

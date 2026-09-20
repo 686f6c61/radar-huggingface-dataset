@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "jiosephlee/intern-s1-mini-assay-transfer-record-level-v27-skin-reaction-combined-best",
+  "slug": "jiosephlee-intern-s1-mini-assay-transfer-record-level-v27-skin-reaction-combined-best",
+  "author": "jiosephlee",
+  "url": "https://huggingface.co/jiosephlee/intern-s1-mini-assay-transfer-record-level-v27-skin-reaction-combined-best",
+  "created_at": "2026-09-20T17:35:35.000Z",
+  "updated_at": "2026-09-20T17:38:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "assay-transfer",
+    "skin-reaction",
+    "molecular-ranking",
+    "dataset:jiosephlee/assay-transfer-record-level-v27-skin-reaction-combined-intern",
+    "base_model:jiosephlee/Intern-S1-mini-lm",
+    "base_model:finetune:jiosephlee/Intern-S1-mini-lm",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8201221120,
+  "parameters_human": "8.20B",
+  "storage_bytes": 16402497533,
+  "storage_human": "16.4 GB",
+  "base_model": "jiosephlee/Intern-S1-mini-lm",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Credit Union vs Bank for Small Business—Which Is Better?",
+      "url": "https://fitsmallbusiness.com/credit-union-vs-bank/",
+      "snippet": "Dec 17, 2024 · If you decide to pick a bank vs a credit union for a business account, read our guide on how to choose a small …"
+    },
+    {
+      "title": "The Differences in SMB Loans From Credit Unions & Banks",
+      "url": "https://www.quickbridge.com/blog/loan-differences-between-credit-unions-banks/",
+      "snippet": "Dec 30, 2024 · There’s advantages and disadvantages to taking loans from both, including interest rates, access to online portals, …"
+    },
+    {
+      "title": "Credit Union vs. Bank for Small Business — Key Differences ...",
+      "url": "https://clearvaluelending.com/blog/credit-union-vs-bank-for-small-business-2026",
+      "snippet": "Jul 26, 2026 · Credit unions are member-owned nonprofits insured by the NCUA that typically offer lower loan rates and higher small …"
+    },
+    {
+      "title": "Credit Union vs Bank Business Loans: Pros and Cons",
+      "url": "https://www.bestmoney.com/business-loans/articles/should-you-get-a-business-loan-from-a-credit-union-pros-and-cons",
+      "snippet": "Mar 26, 2026 · If you're deciding between a credit union and a traditional bank for a business loan, understanding the key differences …"
+    },
+    {
+      "title": "Bank vs credit union for small business: which is better? (2026)",
+      "url": "https://relayfi.com/blog/bank-vs-credit-union-vs-fintech/",
+      "snippet": "Feb 13, 2026 · Compare banks vs credit unions for small business banking. See how fees, annual percentage yield (APY), loan rates, …"
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "id": "dronefreak/rdd2022-rfdetr-small",
+  "slug": "dronefreak-rdd2022-rfdetr-small",
+  "author": "dronefreak",
+  "url": "https://huggingface.co/dronefreak/rdd2022-rfdetr-small",
+  "created_at": "2026-09-20T16:21:56.000Z",
+  "updated_at": "2026-09-20T16:22:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "rfdetr",
+  "languages": [],
+  "tags": [
+    "rfdetr",
+    "object-detection",
+    "detectionbench",
+    "pytorch",
+    "computer-vision",
+    "road-damage",
+    "pavement-distress",
+    "infrastructure",
+    "pothole-detection",
+    "autonomous-driving",
+    "dataset:dronefreak/RDD2022",
+    "arxiv:2209.08538",
+    "arxiv:2511.09554",
+    "arxiv:2304.07193",
+    "arxiv:2606.03748",
+    "base_model:Roboflow/rf-detr-small",
+    "base_model:finetune:Roboflow/rf-detr-small",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 128580356,
+  "storage_human": "129 MB",
+  "base_model": "Roboflow/rf-detr-small",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Object Detection",
+      "dataset": "RDD2022 Road Damage",
+      "metric": "mAP@50 (test split)",
+      "value": 64.71
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "RDD2022 Road Damage",
+      "metric": "mAP@50-95 (test split)",
+      "value": 35.73
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "RDD2022 Road Damage",
+      "metric": "Precision (test split)",
+      "value": 65.69
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "RDD2022 Road Damage",
+      "metric": "Recall (test split)",
+      "value": 59.41
+    }
+  ],
+  "sources": [
+    {
+      "title": "Login | Hochschule Luzern",
+      "url": "https://www.hslu.ch/de-ch/service-sites/login-switch/",
+      "snippet": "Das Webportal «MyCampus» bietet Studierenden und Dozierenden Zugang zu Informationen aus dem schulisch-administrativen …"
+    },
+    {
+      "title": "MyCampus | Hochschule Luzern",
+      "url": "https://mycampus.hslu.ch/de-ch/",
+      "snippet": "Passwort vergessen? Das Webportal bietet Studierenden und Dozierenden Zugang zu Informationen aus dem schulisch …"
+    },
+    {
+      "title": "Bei ILIAS anmelden: HSLU ILIAS - begeistert",
+      "url": "https://elearning.hslu.ch/ilias/login.php",
+      "snippet": "Du findest deine zugewiesenen Kurse und Gruppen unter «Meine HSLU → Meine Kurse und Gruppen». Füge dort die gewünschten …"
+    },
+    {
+      "title": "MyCampus | Hochschule Luzern",
+      "url": "https://mycampus.hslu.ch/en/",
+      "snippet": "The web portal gives students and lecturers access to information concerning the educational administration."
+    },
+    {
+      "title": "Login | Lucerne University of Applied Sciences and Arts",
+      "url": "https://www.hslu.ch/en/service-sites/login-switch/",
+      "snippet": "Das Webportal «MyCampus» bietet Studierenden und Dozierenden Zugang zu Informationen aus dem schulisch-administrativen …"
+    }
+  ]
+}

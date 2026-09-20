@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "nickcuber/swin-tiny-patch4-window7-224-finetuned-eurosat",
+  "slug": "nickcuber-swin-tiny-patch4-window7-224-finetuned-eurosat",
+  "author": "nickcuber",
+  "url": "https://huggingface.co/nickcuber/swin-tiny-patch4-window7-224-finetuned-eurosat",
+  "created_at": "2026-09-20T12:55:45.000Z",
+  "updated_at": "2026-09-20T17:49:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tensorboard",
+    "safetensors",
+    "swin",
+    "image-classification",
+    "generated_from_trainer",
+    "base_model:microsoft/swin-tiny-patch4-window7-224",
+    "base_model:finetune:microsoft/swin-tiny-patch4-window7-224",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27527044,
+  "parameters_human": "27.5M",
+  "storage_bytes": 661006863,
+  "storage_human": "661 MB",
+  "base_model": "microsoft/swin-tiny-patch4-window7-224",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fazer o download e instalar o Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95346?hl=pt-BR&co=GENIE.Platform%3DDesktop",
+      "snippet": "Instalar o Chrome off-line Se você tiver problemas para baixar o Chrome no seu computador Windows, use o link alternativo para …"
+    },
+    {
+      "title": "Télécharger et installer Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95346?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Installer Chrome hors connexion Si vous rencontrez des problèmes lors du téléchargement de Chrome sur votre ordinateur Windows, …"
+    },
+    {
+      "title": "Google Chrome'u indirme ve yükleme",
+      "url": "https://support.google.com/chrome/answer/95346?hl=tr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Chrome'u yükleme Önemli: İndirmeden önce Chrome'un işletim sisteminizi desteklediğinden ve işletim sisteminizin diğer tüm sistem …"
+    },
+    {
+      "title": "Stiahnutie a inštalácia prehliadača Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95346?hl=sk&co=GENIE.Platform%3DDesktop",
+      "snippet": "Stiahnutie a inštalácia prehliadača Google Chrome Webový prehliadač Chrome si môžete stiahnuť a nainštalovať bez peňažného …"
+    },
+    {
+      "title": "ดาวน์โหลดและติดตั้ง Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95346?hl=th-TH&co=GENIE.Platform%3DDesktop",
+      "snippet": "คุณสามารถดาวน์โหลดและติดตั้งเว็บเบราว์เซอร์ Chrome ได้โดยไม่มีค่าใช้จ่าย และใช้เพื่อท่องเว็บ ตรวจสอบข้อกำหนดของระบบในการ ..."
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "id": "Abhiabhi12/pass-taxi-v3",
+  "slug": "abhiabhi12-pass-taxi-v3",
+  "author": "Abhiabhi12",
+  "url": "https://huggingface.co/Abhiabhi12/pass-taxi-v3",
+  "created_at": "2026-09-20T16:04:17.000Z",
+  "updated_at": "2026-09-20T16:07:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Taxi-v3",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "q-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Login – Zugang zu Ihrem Kundenkonto",
+      "url": "https://login.ionos.de/",
+      "snippet": "Zugriff auf Ihre gesamte IONOS Welt: Verträge, Produkte, und Kundendaten, Leistungen bestellen oder ändern – jetzt …"
+    }
+  ]
+}

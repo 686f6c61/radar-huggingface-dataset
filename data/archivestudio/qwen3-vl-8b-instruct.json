@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "ArchiveStudio/Qwen3-VL-8B-Instruct",
+  "slug": "archivestudio-qwen3-vl-8b-instruct",
+  "author": "ArchiveStudio",
+  "url": "https://huggingface.co/ArchiveStudio/Qwen3-VL-8B-Instruct",
+  "created_at": "2026-09-20T17:00:21.000Z",
+  "updated_at": "2026-09-20T17:00:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_vl",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:2505.09388",
+    "arxiv:2502.13923",
+    "arxiv:2409.12191",
+    "arxiv:2308.12966",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8767123696,
+  "parameters_human": "8.77B",
+  "storage_bytes": 17534339512,
+  "storage_human": "17.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ترجمة المستندات والمواقع الإلكترونية",
+      "url": "https://support.google.com/translate/answer/2534559?hl=ar&co=GENIE.Platform%3DDesktop",
+      "snippet": "في المتصفّح، انتقِل إلى ترجمة Google. في أعلى الصفحة، انقر على المواقع الإلكترونية. ننصحك بضبط اللغة الأصلية على \"التعرّف التلقائي على اللغة\". أدخِل عنوان URL في حقل \"الموقع الإلكتروني\". …"
+    },
+    {
+      "title": "Download & use Google Translate",
+      "url": "https://support.google.com/translate/answer/6350850?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "You can translate text, handwriting, photos, and speech in over 200 languages with the Google Translate app. You can also use …"
+    },
+    {
+      "title": "الصفحة الرئيسية - مجتمع ADSLGate",
+      "url": "https://www.adslgate.com/",
+      "snippet": "أدسل قيت - أكبر منتدى تقني عربي"
+    },
+    {
+      "title": "تنزيل تطبيق \"ترجمة Google\" واستخدامه",
+      "url": "https://support.google.com/translate/answer/6350850?hl=ar&co=GENIE.Platform%3DDesktop",
+      "snippet": "يتيح لك تطبيق \"ترجمة Google\" ترجمة نص أو كتابة بخط اليد أو صور أو كلام بأكثر من 200 لغة، ويمكنك أيضًا استخدام التطبيق على الويب. بإمكانك الاستفادة من \"ترجمة Google\" بعدّة …"
+    },
+    {
+      "title": "Google Translate راهنما",
+      "url": "https://support.google.com/translate/?hl=fa",
+      "snippet": "Official Google Translate Help Center where you can find tips and tutorials on using Google Translate and other answers to …"
+    }
+  ]
+}

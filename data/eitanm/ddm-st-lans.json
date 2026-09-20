@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Eitanm/ddm-st-lans",
+  "slug": "eitanm-ddm-st-lans",
+  "author": "Eitanm",
+  "url": "https://huggingface.co/Eitanm/ddm-st-lans",
+  "created_at": "2026-09-20T18:35:37.000Z",
+  "updated_at": "2026-09-20T18:35:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "lan",
+    "ssm",
+    "hssm",
+    "ddm",
+    "likelihood-approximation-network",
+    "drift-diffusion",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 179713,
+  "storage_human": "179713 B",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "絕密花絮之終極合體 呢集真係好好玩 ...",
+      "url": "https://el-gr.facebook.com/TangWingKinJim/videos/%E7%B5%95%E5%AF%86%E8%8A%B1%E7%B5%AE%E4%B9%8B%E7%B5%82%E6%A5%B5%E5%90%88%E9%AB%94%E5%91%A2%E9%9B%86%E7%9C%9F%E4%BF%82%E5%A5%BD%E5%A5%BD%E7%8E%A9%E6%9C%80%E5%BE%8C%E6%88%90%E5%93%81%E4%BA%A6%E5%A5%BD%E6%AD%A3%E5%A4%9A%E8%AC%9D%E5%8F%B0%E5%89%8D%E5%B9%95%E5%BE%8C%E6%89%80%E6%9C%89%E4%BA%BA%E5%85%A8%E9%9D%A0%E5%A4%A7%E5%AE%B6%E5%98%85%E5%8A%AA%E5%8A%9B%E5%B8%8C%E6%9C%9B%E5%A4%A7%E5%AE%B6%E9%8D%BE%E6%84%8F%E7%B9%BC%E7%BA%8C%E5%A4%9A%E5%A4%9A%E6%94%AF%E6%8C%81%E6%84%9B%E5%9B%9E%E5%AE%B6%E4%B9%8B%E9%96%8B%E5%BF%83%E9%80%9F%E9%81%9E%E9%96%8B%E5%BF%83%E9%80%9F%E9%81%9E-%E6%88%91%E4%B8%8D%E6%98%AF%E9%80%9F%E9%81%9E%E5%93%A1%E5%BB%BF%E4%BA%8C%E4%B8%96%E7%B4%80%E6%AE%BA%E4%BA%BA%E7%B6%B2%E7%B5%A1%E6%8E%A5%E9%BE%8D/322769866393910/",
+      "snippet": "Jan 11, 2022 · 絕密花絮之終極合體 呢集真係好好玩，最後成品亦好正。 多謝台前幕後所有人，全靠大家嘅努力 希望大家鍾意，繼續 …"
+    },
+    {
+      "title": "Διαφορές ανάμεσα στα ονόματα πεδίων ...",
+      "url": "https://el-gr.facebook.com/business/help/windows/1462433740708893/",
+      "snippet": "Σελίδα Facebook → Αναγνωριστικό αντικειμένου συνδέσμου (χρησιμοποιήστε τη μορφή o:123456789, όπου ο αριθμός 123456789 …"
+    },
+    {
+      "title": "Πληροφορίες για τις μετρήσεις ... - Facebook",
+      "url": "https://el-gr.facebook.com/business/help/3077737072480546/",
+      "snippet": "Πληροφορίες για τις μετρήσεις διάμεσης τιμής στο Meta Business Suite"
+    },
+    {
+      "title": "Βέλτιστες πρακτικές για τις ... - Facebook",
+      "url": "https://el-gr.facebook.com/business/help/mobile-basic/134641900522571/",
+      "snippet": "Μάθετε τις βέλτιστες πρακτικές για τις δημοσιεύσεις στη Σελίδα Facebook της επιχείρησής σας."
+    },
+    {
+      "title": "Προτάσεις στο Instagram | Κέντρο βοήθειας ...",
+      "url": "https://el-gr.facebook.com/help/instagram/313829416281232/?helpref=related_articles",
+      "snippet": "Ποια πρότυπα αναφοράς ακολουθεί το Instagram για τις προτάσεις του; # Στο Instagram, έχουμε θεσπίσει κανόνες που καθορίζουν τι …"
+    }
+  ]
+}

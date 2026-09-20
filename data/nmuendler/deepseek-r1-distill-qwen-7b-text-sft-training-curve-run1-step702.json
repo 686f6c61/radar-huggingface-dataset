@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "nmuendler/DeepSeek-R1-Distill-Qwen-7B-text-sft-training-curve-run1-step702",
+  "slug": "nmuendler-deepseek-r1-distill-qwen-7b-text-sft-training-curve-run1-step702",
+  "author": "nmuendler",
+  "url": "https://huggingface.co/nmuendler/DeepSeek-R1-Distill-Qwen-7B-text-sft-training-curve-run1-step702",
+  "created_at": "2026-09-20T15:46:49.000Z",
+  "updated_at": "2026-09-20T15:46:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 334436075,
+  "storage_human": "334 MB",
+  "base_model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Store Finder - Lidl US",
+      "url": "https://www.lidl.com/c/store-finder/s10089075",
+      "snippet": "Store Finder & Opening Hours Search by your Zip Code or City to find your nearest Lidl and start saving!"
+    },
+    {
+      "title": "Store Finder - Lidl GB",
+      "url": "https://www.lidl.co.uk/c/store-finder/s10023098",
+      "snippet": "Pop your postcode into the box and click your nearest store to see opening times and all the offers within grabbing distance. Never …"
+    },
+    {
+      "title": "LIDL - Store Locator & Hours",
+      "url": "https://www.storeopeninghours.com/retailers/lidl",
+      "snippet": "The operating hours for the Lidl stores are usually from 8 AM to 9 PM, but we advise you to first check the precise hours using our …"
+    },
+    {
+      "title": "İzmir Ödemiş Hava Durumu 15 Günlük Tahmin | Meteoroloji Ödemiş",
+      "url": "https://havadurumu15gunluk.xyz/havadurumu/737/izmir-odemis-hava-durumu-15-gunluk.html",
+      "snippet": "17 hours ago · Ödemiş hava durumu 15 günlük; İzmir Ödemiş'te anlık sıcaklık, yağış ihtimali, rüzgâr ve yarınki hava durumu …"
+    },
+    {
+      "title": "Lidl stores in the US",
+      "url": "https://www.lidl.com/s/en-US/stores/",
+      "snippet": "Find your Lidl store quickly and easily with the store finder or by city. Find offers and flyers for a Lidl store nearby."
+    }
+  ]
+}

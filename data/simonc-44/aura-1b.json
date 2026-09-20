@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "Simonc-44/aura-1b",
+  "slug": "simonc-44-aura-1b",
+  "author": "Simonc-44",
+  "url": "https://huggingface.co/Simonc-44/aura-1b",
+  "created_at": "2026-09-20T19:24:08.000Z",
+  "updated_at": "2026-09-20T19:33:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "fr",
+    "en"
+  ],
+  "tags": [
+    "llama.cpp",
+    "llm",
+    "cpu",
+    "local-ai",
+    "llama-cpp",
+    "gguf",
+    "rag",
+    "neuro-symbolic",
+    "program-of-thoughts",
+    "on-device-ai",
+    "sealed-distribution",
+    "llama-3.2",
+    "minicpm",
+    "text-generation",
+    "fr",
+    "en",
+    "base_model:meta-llama/Llama-3.2-1B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.2-1B-Instruct",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 817486322,
+  "storage_human": "817 MB",
+  "base_model": "meta-llama/Llama-3.2-1B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Disney+ - Swisscom Community",
+      "url": "https://community.swisscom.ch/d/863278-disney",
+      "snippet": "Oct 29, 2025 · Zitat: Was muss ich nach der Bestellung machen, um Disney+ zu verwenden? Sie müssen im Anschluss an Ihre …"
+    },
+    {
+      "title": "Disney+ Ruckler - Swisscom Community",
+      "url": "https://community.swisscom.ch/d/863020-disney-ruckler",
+      "snippet": "Oct 19, 2025 · Hat noch jemand beim Disney+ abspielen Ruckler? Bei Sky, Netflix und Paramount ist das nicht. Neustart, Hotline …"
+    },
+    {
+      "title": "Deep Van - 知乎",
+      "url": "https://www.zhihu.com/people/yang-lei-96-72",
+      "snippet": "Deep Van是知乎用户，擅长回答金融、科技和生活问题，其个人星球为DeepVan的逃生地牢，回答风格直言不讳，获得广泛关注。"
+    },
+    {
+      "title": "不想上吊王承恩 - 知乎",
+      "url": "https://www.zhihu.com/people/bu-xiang-shang-diao-wang-cheng-en",
+      "snippet": "1 day ago · 我儿子，天天打游戏躺平，在重点高中全年级（约1200人）入学成绩排名前50左右，一只脚踏入重本的成绩，保底也有一 …"
+    },
+    {
+      "title": "Disney+ seit heute Fehlercode 73 - Swisscom Community",
+      "url": "https://community.swisscom.ch/d/865192-disney-seit-heute-fehlercode-73",
+      "snippet": "Jan 15, 2026 · Der Disney+ Fehlercode 73 weist darauf hin, dass der gewünschte Inhalt an Ihrem aktuellen Standort nicht verfügbar …"
+    }
+  ]
+}

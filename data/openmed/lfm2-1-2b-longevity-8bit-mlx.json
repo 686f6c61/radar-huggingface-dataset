@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "OpenMed/LFM2-1.2B-Longevity-8bit-mlx",
+  "slug": "openmed-lfm2-1-2b-longevity-8bit-mlx",
+  "author": "OpenMed",
+  "url": "https://huggingface.co/OpenMed/LFM2-1.2B-Longevity-8bit-mlx",
+  "created_at": "2026-09-20T18:05:23.000Z",
+  "updated_at": "2026-09-20T18:06:43.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "lfm2",
+    "openmed",
+    "apple-silicon",
+    "liquid",
+    "longevity",
+    "aging-biology",
+    "biomedical",
+    "text-generation",
+    "conversational",
+    "quantized",
+    "8bit",
+    "on-device",
+    "en",
+    "base_model:LiquidAI/LFM2-1.2B-Longevity",
+    "base_model:quantized:LiquidAI/LFM2-1.2B-Longevity",
+    "license:other",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1170340608,
+  "parameters_human": "1.17B",
+  "storage_bytes": 1243645809,
+  "storage_human": "1.2 GB",
+  "base_model": "LiquidAI/LFM2-1.2B-Longevity",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Impact de l’élevage bovin sur la biodiversité des pâturages",
+      "url": "https://ecopattes.fr/2026/05/16/impact-de-lelevage-bovin-sur-la-biodiversite-des-paturages/",
+      "snippet": "May 16, 2026 · Élevage bovin et biodiversité : impacts du pâturage sur sols, eau, prairies, champignons, haies et bonnes pratiques …"
+    },
+    {
+      "title": "Élevage bovin : conséquences pour la biodiversité et les habitats …",
+      "url": "https://ecopattes.fr/2026/05/16/elevage-bovin-consequences-pour-la-biodiversite-et-les-habitats-naturels/",
+      "snippet": "May 16, 2026 · Cet article explore les conséquences de l’élevage bovin sur les prairies, les sols, l’eau et les habitats naturels. Il …"
+    },
+    {
+      "title": "Biodiversité et territoires : le rôle clé de l’élevage bovin",
+      "url": "https://www.franceterredelait.fr/biodiversite-et-territoires-le-role-cle-de-lelevage-bovin/",
+      "snippet": "L’élevage bovin notamment, dont le rôle est souvent méconnu, est un acteur clé dans la préservation de la biodiversité et des …"
+    },
+    {
+      "title": "PÂTURAGE & ÉLEVAGE EN MILIEUX HUMIDES",
+      "url": "https://www.zones-humides.org/sites/default/files/images/informer/05012018_paturage_zh.pdf",
+      "snippet": "Un univers parsemé de zones humides, de haies, de prairies où paissent les troupeaux sur le bassin de la Sèvre Nantaise. Ils nous …"
+    },
+    {
+      "title": "Des leviers d'action favorables à la biodiversité en élevage bovin",
+      "url": "https://idele.fr/detail-article/des-leviers-daction-favorables-a-la-biodiversite-en-elevage-bovin",
+      "snippet": "Sep 10, 2025 · De nombreux leviers d'action existent pour améliorer les effets des pratiques d'élevage sur la biodiversité, à …"
+    }
+  ]
+}

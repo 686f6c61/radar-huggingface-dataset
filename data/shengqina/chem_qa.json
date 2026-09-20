@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Shengqina/Chem_QA",
+  "slug": "shengqina-chem_qa",
+  "author": "Shengqina",
+  "url": "https://huggingface.co/Shengqina/Chem_QA",
+  "created_at": "2026-09-20T15:48:04.000Z",
+  "updated_at": "2026-09-20T16:02:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16077835192,
+  "storage_human": "16.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "盗墓笔记全系列txt百度云 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/1763701248229183108.html",
+      "snippet": "提取码: h6ns 《盗墓笔记》是南派三叔所著的盗墓题材小说，讲述吴邪、张起灵、吴三省等人进入古墓探险的故事。 该系列小说 …"
+    },
+    {
+      "title": "怎么新建一个TXT格式的文档_百度知道",
+      "url": "https://zhidao.baidu.com/question/209995599.html",
+      "snippet": "怎么新建一个TXT格式的文档第一步，返回至电脑的桌面，准备新建TXT文件。第二步，在电脑桌面点击鼠标右键，弹出右键菜单。第 …"
+    },
+    {
+      "title": "win11怎么改记事本后缀? - 知乎",
+      "url": "https://www.zhihu.com/question/506603802",
+      "snippet": "This Zhihu page discusses questions and answers about various topics, offering insights and solutions on a wide range of subjects."
+    },
+    {
+      "title": "有什么下载TXT小说的网站？ - 知乎",
+      "url": "https://www.zhihu.com/question/543059644",
+      "snippet": "1. 知轩藏书 网址： zxcs.zip 简介：网文圈公认的“精校小说天花板”，专门提供精校全本TXT小说下载，涵盖穿越、都市、言情、玄幻、 …"
+    },
+    {
+      "title": "作业帮客户端",
+      "url": "https://www.zybang.com/windows/download/",
+      "snippet": "联系方式: service@zuoyebang.com 010-82177628 京ICP备15042982号 京ICP证161149号 京公安网备11010802024612号 @2017 小 …"
+    }
+  ]
+}

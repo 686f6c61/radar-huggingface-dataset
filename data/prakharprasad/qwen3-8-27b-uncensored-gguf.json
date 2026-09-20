@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "prakharprasad/Qwen3.8-27B-Uncensored-GGUF",
+  "slug": "prakharprasad-qwen3-8-27b-uncensored-gguf",
+  "author": "prakharprasad",
+  "url": "https://huggingface.co/prakharprasad/Qwen3.8-27B-Uncensored-GGUF",
+  "created_at": "2026-09-20T14:02:52.000Z",
+  "updated_at": "2026-09-21T20:20:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "abliterated",
+    "uncensored",
+    "qwen3.8",
+    "dynamic-quantization",
+    "ud-quants",
+    "ud-3.0",
+    "quantized",
+    "llama.cpp",
+    "red-teaming",
+    "reasoning",
+    "function-calling",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 201768630484,
+  "storage_human": "201.8 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bing",
+      "url": "https://www.bing.com/version",
+      "snippet": "Bing ... Versions"
+    },
+    {
+      "title": "How to See All Bing Related Searches on Any Device",
+      "url": "https://rottenwifi.com/how-to-see-all-bing-related-searches/",
+      "snippet": "Jul 1, 2026 · This guide walks through the practical ways to see Bing related searches on desktop, mobile, and Microsoft Edge. It also …"
+    },
+    {
+      "title": "How to See All Bing Related Searches - cloudspress.com",
+      "url": "https://www.cloudspress.com/how-to-see-all-bing-related-searches/",
+      "snippet": "Aug 7, 2026 · Bing does not have a public “see everything” page for a keyword. Its related searches and autocomplete suggestions …"
+    },
+    {
+      "title": "Search - Microsoft Bing",
+      "url": "https://www2.bing.com/",
+      "snippet": "Search with Microsoft Bing and use the power of AI to find information, explore webpages, images, videos, maps, and more. A smart …"
+    },
+    {
+      "title": "Bing",
+      "url": "https://www.bing.com/set/search",
+      "snippet": "Set Bing as your default search engine Try it now"
+    }
+  ]
+}
