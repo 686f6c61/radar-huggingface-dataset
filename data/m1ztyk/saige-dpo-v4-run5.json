@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "M1ztyk/SAIGE-dpo-v4-run5",
+  "slug": "m1ztyk-saige-dpo-v4-run5",
+  "author": "M1ztyk",
+  "url": "https://huggingface.co/M1ztyk/SAIGE-dpo-v4-run5",
+  "created_at": "2026-09-19T22:13:06.000Z",
+  "updated_at": "2026-09-19T22:22:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "dpo",
+    "trackio:https://M1ztyk-saige-dpo-v4-run5-trackio.hf.space?project=saige-dpo-v4-run5&runs=M1ztyk-1789855980&sidebar=collapsed",
+    "hf_jobs",
+    "arxiv:2305.18290",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-3B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 251030917,
+  "storage_human": "251 MB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "【公式】体成分分析装置InBody | インボディ",
+      "url": "https://www.inbody.co.jp/hokkaido/",
+      "snippet": "Jan 21, 2026 · 北海道内にあるInBody測定可能な施設です。 ここに表示されている施設が全てではありません。"
+    },
+    {
+      "title": "札幌国際交流館 inbodyの検索結果 - Yahoo!きっず検索",
+      "url": "https://kids.yahoo.co.jp/search?p=%E6%9C%AD%E5%B9%8C%E5%9B%BD%E9%9A%9B%E4%BA%A4%E6%B5%81%E9%A4%A8+inbody",
+      "snippet": "https://sapporo-ish.jp/ 札幌国際交流館 （リフレサッポロ） 文化活動を通じて 国際交流 を推進し、相互理解及び親善を深めることを …"
+    },
+    {
+      "title": "札幌国際交流館（リフレサッポロ）",
+      "url": "https://sapporo-ish.jp/",
+      "snippet": "文化活動を通じて国際交流を推進し、相互理解及び親善を深めることを目的とした、国際交流の拠点的施設です。"
+    },
+    {
+      "title": "【公式】InBody測定ができる施設",
+      "url": "https://inbody.co.jp/inbody-location/",
+      "snippet": "Jul 6, 2026 · そこでInBodyを導入された施設には顧客の紹介を、InBody測定を希望される一般の方には施設の案内を提供する目的で …"
+    },
+    {
+      "title": "利用案内 | 札幌国際交流館（リフレサッポロ）",
+      "url": "https://sapporo-ish.jp/facility/",
+      "snippet": "札幌国際交流館の各フロアの施設をご案内します。"
+    }
+  ]
+}

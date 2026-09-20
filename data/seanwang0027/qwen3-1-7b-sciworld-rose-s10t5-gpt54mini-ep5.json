@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "SeanWang0027/qwen3-1.7b-sciworld-rose-s10t5-gpt54mini-ep5",
+  "slug": "seanwang0027-qwen3-1-7b-sciworld-rose-s10t5-gpt54mini-ep5",
+  "author": "SeanWang0027",
+  "url": "https://huggingface.co/SeanWang0027/qwen3-1.7b-sciworld-rose-s10t5-gpt54mini-ep5",
+  "created_at": "2026-09-19T23:20:40.000Z",
+  "updated_at": "2026-09-19T23:21:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "scienceworld",
+    "agent",
+    "react",
+    "distillation",
+    "on-policy",
+    "conversational",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2031739904,
+  "parameters_human": "2.03B",
+  "storage_bytes": 4074938294,
+  "storage_human": "4.1 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GoSports Splash Pass Floating Pool Football Game - Amazon",
+      "url": "https://www.amazon.in/GoSports-Splash-Floating-Football-Footballs/dp/B087CB5TW7",
+      "snippet": "Splash Pass is incredibly durable and is built to withstand all the fun and horsing around of pool football. The set includes 4 water …"
+    },
+    {
+      "title": "Splash Pass | Hungry Shark Wiki | Fandom",
+      "url": "https://hungry-shark.fandom.com/wiki/Splash_Pass",
+      "snippet": "The Splash Passes include a variety of new and old items, including accessories, skins, pets, and sharks. The first season premiered …"
+    },
+    {
+      "title": "Splash Water Park Delhi Tickets | Book @ ₹700 & Save 17%",
+      "url": "https://www.thrillophilia.com/tours/splash-water-park-delhi-tickets",
+      "snippet": "The Splash water park Delhi ticket price starts from 700 INR per adult only on Thrillophilia. This is the best price that you can get …"
+    },
+    {
+      "title": "ALL SPLASH PASS 1, 2, 3, 4, AND 5 UNLOCKED - Hungry Shark World",
+      "url": "https://www.youtube.com/watch?v=L6QVK18zmg0",
+      "snippet": "Sep 19, 2023 · I UNLOCKING ALL SPLASH PASS 1, 2, 3, 4, AND 5 in Hungry Shark World through the years from 2021 until 2023."
+    },
+    {
+      "title": "Splash The Water Park Delhi (Entry Fee, Timings, Images, Location ...",
+      "url": "https://delhitourism.travel/splash-the-water-park-delhi",
+      "snippet": "Oct 17, 2025 · Entry Fee and Timings of Splash Water Park The Entry Fee to visit Splash Water Park is Rs. 700 for adults and Rs. …"
+    }
+  ]
+}

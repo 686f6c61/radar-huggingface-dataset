@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "TokenAI-zer/Ternary-Bonsai-2-27B-MLX-oQ4-mtp",
+  "slug": "tokenai-zer-ternary-bonsai-2-27b-mlx-oq4-mtp",
+  "author": "TokenAI-zer",
+  "url": "https://huggingface.co/TokenAI-zer/Ternary-Bonsai-2-27B-MLX-oQ4-mtp",
+  "created_at": "2026-09-19T22:50:09.000Z",
+  "updated_at": "2026-09-19T23:37:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "omlx",
+    "quantization",
+    "mixed-precision",
+    "apple-silicon",
+    "ternary",
+    "mtp",
+    "speculative-decoding",
+    "vision",
+    "qwen",
+    "image-text-to-text",
+    "conversational",
+    "base_model:prism-ml/Ternary-Bonsai-2-27B-gguf",
+    "base_model:quantized:prism-ml/Ternary-Bonsai-2-27B-gguf",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 17035608506,
+  "storage_human": "17.0 GB",
+  "base_model": "prism-ml/Ternary-Bonsai-2-27B-gguf",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rent Textbooks - Online Textbook Rental & eBooks - Chegg",
+      "url": "https://www.chegg.com/textbooks?msockid=1464f9274cdc67ae2b0beefd4d5e6656",
+      "snippet": "Now even easier, with Valore. We've teamed up with Valore.com to bring you more affordable options for college textbooks. Whether …"
+    },
+    {
+      "title": "Chegg - Get 24/7 Homework Help | Study Support Across 50+ Subjects",
+      "url": "https://www.chegg.com/?str=login&page=login&msockid=1464f9274cdc67ae2b0beefd4d5e6656",
+      "snippet": "Innovative learning tools. 24/7 support. All in one place. Homework help for relevant study solutions, step-by-step support, and real …"
+    },
+    {
+      "title": "Rent/Buy Books on Chegg - Save Up to 90% on Textbooks",
+      "url": "https://www.chegg.com/books?msockid=1464f9274cdc67ae2b0beefd4d5e6656",
+      "snippet": "Buy or rent textbooks from Chegg.com and save up to 90% off of new titles for your required college books."
+    },
+    {
+      "title": "Careers | Perfect Your Resume, Land Your Internship, Find the ... - Chegg",
+      "url": "https://www.chegg.com/career?msockid=1464f9274cdc67ae2b0beefd4d5e6656",
+      "snippet": "Build the real-world skills you need to stand out to employers hiring for entry-level roles with Chegg Skills."
+    },
+    {
+      "title": "Solved I am not sure what type of reasoning used in the the - Chegg",
+      "url": "https://www.chegg.com/homework-help/questions-and-answers/sure-type-reasoning-used-statement--see-work-around-world-women-women-international-worthy-q29746548?msockid=1464f9274cdc67ae2b0beefd4d5e6656",
+      "snippet": "It has given women in Kosovo the skills to operate businesses in their communities. It has shown I am not sure what type of …"
+    }
+  ]
+}

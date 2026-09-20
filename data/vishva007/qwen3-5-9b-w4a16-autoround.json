@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Vishva007/Qwen3.5-9B-W4A16-AutoRound",
+  "slug": "vishva007-qwen3-5-9b-w4a16-autoround",
+  "author": "Vishva007",
+  "url": "https://huggingface.co/Vishva007/Qwen3.5-9B-W4A16-AutoRound",
+  "created_at": "2026-09-20T03:48:53.000Z",
+  "updated_at": "2026-09-20T03:57:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "quantization",
+    "auto-round",
+    "gptq",
+    "llm-compressor",
+    "compressed-tensors",
+    "9Bit",
+    "text-generation",
+    "image-text-to-text",
+    "reasoning",
+    "distillation",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:quantized:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 235,
+  "trending_score": 0,
+  "parameters": 2491309296,
+  "parameters_human": "2.49B",
+  "storage_bytes": 9975699117,
+  "storage_human": "10.0 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "123.live",
+      "url": "https://www.unternehmen.1-2-3.tv/live-shopping/",
+      "snippet": "Wechselnde Angebote aus Schmuck, Technik, Haushalt mehr – live präsentiert und sofort bestellbar. Jetzt LIVE shoppen"
+    },
+    {
+      "title": "123.live Kontaktformular » Nehmen Sie Kontakt mit uns auf!",
+      "url": "https://www.unternehmen.1-2-3.tv/kontaktformular/",
+      "snippet": "123.live Kontaktformular » Ob Bestellungen, Fragen zur Lieferung oder Reklamationen Nehmen Sie Kontakt mit uns auf …"
+    },
+    {
+      "title": "PRESSEMITTEILUNG",
+      "url": "https://live-cms.1-2-3.tv/1-2-3.tv/upload/files/PM_123tv_Niedhardt_190306.pdf",
+      "snippet": "Anti-Aging-Pflege und dekorative Kosmetik auf höchstem Niveau Die Produkte der neuen Kollektion MIMIQUE enthalten den …"
+    },
+    {
+      "title": "PRESSEMITTEILUNG",
+      "url": "https://live-cms.1-2-3.tv/1-2-3.tv/upload/files/PM_123tv_13_20170915.pdf",
+      "snippet": "Das Geburtstagsspecial mit tollen Tages-Events wie dem Uhren-Tag am 19. September oder dem Schmuck-Tag am 21. September, …"
+    },
+    {
+      "title": "Programmübersicht",
+      "url": "https://multimedia.1-2-3.tv/uploads/files/mis/programmplan.pdf",
+      "snippet": "Alle Angaben ohne Gewähr"
+    }
+  ]
+}

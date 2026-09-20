@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "TokenAI-zer/Ternary-Bonsai-2-27B-MLX-oQ2-mtp",
+  "slug": "tokenai-zer-ternary-bonsai-2-27b-mlx-oq2-mtp",
+  "author": "TokenAI-zer",
+  "url": "https://huggingface.co/TokenAI-zer/Ternary-Bonsai-2-27B-MLX-oQ2-mtp",
+  "created_at": "2026-09-19T22:43:38.000Z",
+  "updated_at": "2026-09-19T23:37:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "omlx",
+    "quantization",
+    "mixed-precision",
+    "apple-silicon",
+    "ternary",
+    "mtp",
+    "speculative-decoding",
+    "vision",
+    "qwen",
+    "image-text-to-text",
+    "conversational",
+    "base_model:prism-ml/Ternary-Bonsai-2-27B-gguf",
+    "base_model:quantized:prism-ml/Ternary-Bonsai-2-27B-gguf",
+    "license:apache-2.0",
+    "2-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 11645999319,
+  "storage_human": "11.6 GB",
+  "base_model": "prism-ml/Ternary-Bonsai-2-27B-gguf",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home | Powerball",
+      "url": "https://www.powerball.com/",
+      "snippet": "4 days ago · The jackpot is won by matching all five white balls in any order and the red Powerball. Jackpot winners may choose to …"
+    },
+    {
+      "title": "Powerball Numbers | Latest Results",
+      "url": "https://www.powerball.net/numbers/",
+      "snippet": "4 days ago · Here you can find the latest winning Powerball numbers (including Double Play), the number of prize winners and …"
+    },
+    {
+      "title": "Powerball Winning Numbers & Past Drawings Results",
+      "url": "https://lotterycoast.com/lottery-results/powerball/winning-numbers/",
+      "snippet": "Jul 1, 2026 · Get the latest Powerball winning numbers, past results, and drawing updates. Find past winning numbers, and see if …"
+    },
+    {
+      "title": "Powerball - Texas Lottery",
+      "url": "https://www.texaslottery.com/export/sites/lottery/Games/Powerball/index.html",
+      "snippet": "Sep 5, 2026 · Get a Powerball playslip from your favorite Texas Lottery® retailer. Select five (5) numbers from 1 to 69 in the upper …"
+    },
+    {
+      "title": "Powerball - Lottery USA",
+      "url": "https://www.lotteryusa.com/powerball/",
+      "snippet": "4 days ago · Everything you need to know about the Powerball lottery, including winning numbers, prizes, how to play, ticket cost, …"
+    }
+  ]
+}

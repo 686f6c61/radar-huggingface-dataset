@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "eraiko/Qwen3-VL-32B-Ultra-Heretic-H3-ComfyUI-Q5_K_M-GGUF",
+  "slug": "eraiko-qwen3-vl-32b-ultra-heretic-h3-comfyui-q5_k_m-gguf",
+  "author": "eraiko",
+  "url": "https://huggingface.co/eraiko/Qwen3-VL-32B-Ultra-Heretic-H3-ComfyUI-Q5_K_M-GGUF",
+  "created_at": "2026-09-20T01:07:55.000Z",
+  "updated_at": "2026-09-20T01:09:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "llama-cpp",
+    "gguf-my-repo",
+    "image-text-to-text",
+    "en",
+    "base_model:eraiko/Qwen3-VL-32B-Ultra-Heretic-H3-ComfyUI",
+    "base_model:quantized:eraiko/Qwen3-VL-32B-Ultra-Heretic-H3-ComfyUI",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25157829120,
+  "parameters_human": "25.16B",
+  "storage_bytes": 17807413664,
+  "storage_human": "17.8 GB",
+  "base_model": "eraiko/Qwen3-VL-32B-Ultra-Heretic-H3-ComfyUI",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-20T02:44:09.614Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Home - Yandere Simulator",
+      "url": "https://yanderesimulator.com/",
+      "snippet": "Sep 1, 2026 · The official Yandere Simulator website! Learn about the game and download the latest debug build for free!"
+    },
+    {
+      "title": "Download - Yandere Simulator",
+      "url": "https://yanderesimulator.com/download/",
+      "snippet": "Yandere Simulator is the type of game that is made available for download while in an incomplete state, and is regularly updated with …"
+    },
+    {
+      "title": "Yandere Simulator | Yandere Simulator Wiki | Fandom",
+      "url": "https://yandere-simulator.fandom.com/wiki/Yandere_Simulator",
+      "snippet": "Yandere Simulator is a stealth action video game developed and published by YandereDev with the help of numerous volunteers. …"
+    },
+    {
+      "title": "Yandere Simulator Development Blog",
+      "url": "https://yanderedev.wordpress.com/",
+      "snippet": "5 days ago · To find out what it is, scroll down past this absolutely amazing performance by Russian cosplayers that involved over 20 …"
+    },
+    {
+      "title": "Yandere Simulator Wiki | Fandom",
+      "url": "https://yandere-simulator.fandom.com/wiki/Yandere_Simulator_Wiki",
+      "snippet": "Yandere Simulator is a stealth game about stalking a boy and secretly eliminating any girl who has a crush on him, while maintaining …"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "NaaaaaiVe6/franka-30demos-normal_task2_cartesian_20260913T212156Z-step-10000",
+  "slug": "naaaaaive6-franka-30demos-normal_task2_cartesian_20260913t212156z-step-10000",
+  "author": "NaaaaaiVe6",
+  "url": "https://huggingface.co/NaaaaaiVe6/franka-30demos-normal_task2_cartesian_20260913T212156Z-step-10000",
+  "created_at": "2026-09-19T20:46:58.000Z",
+  "updated_at": "2026-09-19T20:49:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3616757520,
+  "parameters_human": "3.62B",
+  "storage_bytes": 7233650408,
+  "storage_human": "7.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.com/",
+      "snippet": "Find local businesses, view maps and get driving directions in Google Maps."
+    },
+    {
+      "title": "Google Earth",
+      "url": "https://maps.google.com/intl/en/earth/",
+      "snippet": "Google Earth is the most photorealistic, digital version of our planet. Where do the images come from? How are they they put …"
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.com/maps/search/",
+      "snippet": "Restaurants Gas stations ATMs Shopping Map details"
+    },
+    {
+      "title": "Google Earth",
+      "url": "https://maps.google.com/intl/fr/earth/download/gep/agree.html",
+      "snippet": "Jun 4, 2025 · Votre contenu dans Google Maps. Le contenu que vous importez, mettez en ligne, stockez, envoyez ou recevez par le …"
+    },
+    {
+      "title": "Plus Codes - Google Maps",
+      "url": "https://maps.google.com/pluscodes/",
+      "snippet": "Plus Codes are short codes for locations, for places that don't have their own street address."
+    }
+  ]
+}

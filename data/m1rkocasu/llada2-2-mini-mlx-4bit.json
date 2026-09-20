@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "m1rkocasu/LLaDA2.2-mini-MLX-4bit",
+  "slug": "m1rkocasu-llada2-2-mini-mlx-4bit",
+  "author": "m1rkocasu",
+  "url": "https://huggingface.co/m1rkocasu/LLaDA2.2-mini-MLX-4bit",
+  "created_at": "2026-09-19T21:38:04.000Z",
+  "updated_at": "2026-09-19T22:06:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "llada2_moe",
+    "dllm",
+    "diffusion",
+    "llada2",
+    "apple-silicon",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "base_model:inclusionAI/LLaDA2.2-mini",
+    "base_model:quantized:inclusionAI/LLaDA2.2-mini",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16255643392,
+  "parameters_human": "16.26B",
+  "storage_bytes": 9170541410,
+  "storage_human": "9.2 GB",
+  "base_model": "inclusionAI/LLaDA2.2-mini",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Institut für Unternehmensrecht | JKU Linz",
+      "url": "https://www.jku.at/institut-fuer-unternehmensrecht/",
+      "snippet": "Das Institut für Unternehmensrecht vertritt das Fach Unternehmensrecht in Lehre und Forschung. Es befasst sich mit sämtlichen …"
+    },
+    {
+      "title": "Team | Institut für Unternehmensrecht",
+      "url": "https://www.jku.at/institut-fuer-unternehmensrecht/ueber-uns/team/",
+      "snippet": "Univ.-Prof. Dr. Thomas Wolkerstorfer, LL.B."
+    },
+    {
+      "title": "Prüfungen | Institut für Unternehmensrecht",
+      "url": "https://www.jku.at/institut-fuer-unternehmensrecht/lehre/pruefungen/",
+      "snippet": "Prüfungstermine (mündl. Fachprüfung)"
+    },
+    {
+      "title": "Studienangebot | Institut für Unternehmensrecht",
+      "url": "https://www.jku.at/institut-fuer-unternehmensrecht/lehre/studienangebot/",
+      "snippet": "Die Aufgabenstellung des Instituts für Unternehmensrecht in der akademischen Lehre umfasst die Abhaltung von Vorlesungen, …"
+    },
+    {
+      "title": "Studienschwerpunkt Unternehmensrecht (Vertiefung)",
+      "url": "https://www.linzer.rechtsstudien.at/de/studienschwerpunkte/studienschwerpunkt-unternehmensrecht-vertiefung.html",
+      "snippet": "Der Studienschwerpunkt „Unternehmensrecht“ hat den Zweck, eine Spezialausbildung für jenen Typus von „WirtschaftsjuristInnen“ …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "SomyaDnD/cube-act-policy",
+  "slug": "somyadnd-cube-act-policy",
+  "author": "SomyaDnD",
+  "url": "https://huggingface.co/SomyaDnD/cube-act-policy",
+  "created_at": "2026-09-20T01:44:31.000Z",
+  "updated_at": "2026-09-20T01:44:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:SomyaDnD/cube-pickplace",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 33,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206712856,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Q Talk - Blogs & Forums",
+      "url": "https://community.qvc.com/t5/Q-Talk/bd-p/28?msockid=08b76b9ad8426c2c02087c40d9a06d38",
+      "snippet": "1 day ago · Join Q Talk on QVC's Blogs & Forums to discuss topics and share insights with the community."
+    },
+    {
+      "title": "Fed Ex Ground Economy Versus USPS Ground Advantage",
+      "url": "https://community.ebay.com/forum/selling-57920/topic/fed-ex-ground-economy-versus-usps-ground-advantage-472408/",
+      "snippet": "Aug 1, 2026 · Summary: blackssilvershop shared their thought process on choosing between FedEx Ground Economy and USPS for …"
+    },
+    {
+      "title": "Business Opportunities | FedExForum - Home of the Memphis Grizzlies",
+      "url": "https://www.fedexforum.com/connect-with-us/business-opportunities",
+      "snippet": "FedExForum offers all-encompassing, one-stop shopping including conceptual development, advertising, joint-promotional programs, …"
+    },
+    {
+      "title": "Community Chat - Blogs & Forums",
+      "url": "https://community.qvc.com/t5/Community-Chat/bd-p/35?msockid=08b76b9ad8426c2c02087c40d9a06d38",
+      "snippet": "1 day ago · View All Forum Topics View All Blogs New Message"
+    },
+    {
+      "title": "JOURNEY: FINAL FRONTIER TOUR 2026 - FedExForum",
+      "url": "https://www.fedexforum.com/events/detail/journey-final-frontier-tour-2026",
+      "snippet": "Home of the Memphis Grizzlies After more than five decades of electrifying performances, chart-topping hits, and timeless anthems, …"
+    }
+  ]
+}

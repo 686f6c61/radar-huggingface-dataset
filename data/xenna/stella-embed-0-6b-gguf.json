@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Xenna/stella-embed-0.6b-gguf",
+  "slug": "xenna-stella-embed-0-6b-gguf",
+  "author": "Xenna",
+  "url": "https://huggingface.co/Xenna/stella-embed-0.6b-gguf",
+  "created_at": "2026-09-19T20:18:39.000Z",
+  "updated_at": "2026-09-19T20:19:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "embedding",
+    "stelnet",
+    "stella",
+    "q8_0",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 595776512,
+  "parameters_human": "595.8M",
+  "storage_bytes": 639145792,
+  "storage_human": "639 MB",
+  "base_model": "Xenna/stella-embed-0.6b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DaFont - Baixar fontes",
+      "url": "https://www.dafont.com/pt/",
+      "snippet": "As fontes apresentadas neste site são propriedades de seus autores, e são tanto freeware, shareware, versões demo ou de domínio …"
+    },
+    {
+      "title": "Top | dafont.com",
+      "url": "https://www.dafont.com/top.php",
+      "snippet": "Archive of freely downloadable fonts. Browse by alphabetical listing, by style, by author or by popularity."
+    },
+    {
+      "title": "美国政府设备重新允许使用TikTok，特朗普称其在TikTok上长期霸榜， …",
+      "url": "https://www.zhihu.com/question/2070813507499643585",
+      "snippet": "据中国新闻社综合彭博社报道，特朗普政府已解除在联邦政府设备上使用TikTok的限制，原因是TikTok美国业务…"
+    },
+    {
+      "title": "TikTok 45.4.3 抓包之双网络栈证书校验分析 - 吾爱破解 - 52pojie.cn",
+      "url": "https://www.52pojie.cn/thread-2111184-1-1.html",
+      "snippet": "Jun 5, 2026 · 工具链：google px4真机、proxypin 1.2.7、IDA 9.0。某海外社交app。先hook下connect函数，看下app使用的网络请求 …"
+    },
+    {
+      "title": "TikTok - 知乎",
+      "url": "https://www.zhihu.com/topic/21190111/hot",
+      "snippet": "TikTok Tik Tok是抖音短视频国际版。 Tik Tok原本在海外接连获得佳绩，抖音短视频似乎已经成为中国产品在海外获得成功的又一杰 …"
+    }
+  ]
+}

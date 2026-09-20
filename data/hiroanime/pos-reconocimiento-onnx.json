@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "hiroanime/pos-reconocimiento-onnx",
+  "slug": "hiroanime-pos-reconocimiento-onnx",
+  "author": "hiroanime",
+  "url": "https://huggingface.co/hiroanime/pos-reconocimiento-onnx",
+  "created_at": "2026-09-20T01:06:08.000Z",
+  "updated_at": "2026-09-20T01:06:08.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "亚马逊中国 - 海外购改版通知",
+      "url": "https://www.amazon.cn/",
+      "snippet": "自2024年1月27日起，亚马逊海外购将进一步拥抱移动购物趋势，推出新版“亚马逊购物”App。客户可以升级当前版本App或下载新 …"
+    },
+    {
+      "title": "亚马逊listing_什么是listing_如何上传listing_Amazon亚马逊",
+      "url": "https://gs.amazon.cn/listing?ref=as_cn_ags_hp_newseller_4steps_listing_t3",
+      "snippet": "学习创建商品详情页(listing)是在亚马逊上开店的第一步，Listing是否优秀也从极大成都上影响了页面的转化率。想成为跨境出海尖子 …"
+    },
+    {
+      "title": "亚马逊各国站点的官方网址是什么？_Amazon亚马逊",
+      "url": "https://gs.amazon.cn/zhishi/article-260110-5",
+      "snippet": "本文基于亚马逊官方卖家平台信息，系统回答了“亚马逊各国站点的官方网址是什么”这一核心问题。文章提供了北美、欧洲、亚洲等主 …"
+    },
+    {
+      "title": "Amazon - 亚马逊 登录",
+      "url": "https://translogistics.amazon.cn/",
+      "snippet": "© 1996-2026，Amazon.com, Inc.或其附属公司"
+    },
+    {
+      "title": "亚马逊 登录",
+      "url": "https://www.amazon.cn/a/code",
+      "snippet": "亚马逊登录页面，提供用户账户登录入口。"
+    }
+  ]
+}

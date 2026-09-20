@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "funnygeeker/GRM-3.2-Sky-MLX-fp16-oQ6e",
+  "slug": "funnygeeker-grm-3-2-sky-mlx-fp16-oq6e",
+  "author": "funnygeeker",
+  "url": "https://huggingface.co/funnygeeker/GRM-3.2-Sky-MLX-fp16-oQ6e",
+  "created_at": "2026-09-20T01:05:32.000Z",
+  "updated_at": "2026-09-20T01:15:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5_moe",
+    "oq",
+    "quantized",
+    "6-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35107181936,
+  "parameters_human": "35.11B",
+  "storage_bytes": 29633267040,
+  "storage_human": "29.6 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "首頁 - Mobile01",
+      "url": "https://www.mobile01.com/",
+      "snippet": "Mobile01是台灣最大生活網站與論壇，報導範疇從汽車到手機，從機車到居家裝潢，還有相機、運動、時尚、房地產、投資、影音、電 …"
+    },
+    {
+      "title": "Mobile01 汽車 - Mobile01",
+      "url": "https://www.mobile01.com/category.php?id=6",
+      "snippet": "Mobile01 汽車頻道 - 新車試駕、開箱、評比、國際國內汽車新訊與獨家報導，關於汽車疑難雜症或是購車求菜單，都在 Mobile01 小惡 …"
+    },
+    {
+      "title": "哪个才是steam？ - 知乎",
+      "url": "https://www.zhihu.com/question/603521723",
+      "snippet": "May 28, 2023 · 当你百度搜索steam的时候 是不是看到琳琅满目的steam？ 当你点击进去看到 sdeam steam游戏 管家 steam游戏中心 …"
+    },
+    {
+      "title": "安卓设备如何下载并安装手机 Steam？ - 知乎",
+      "url": "https://www.zhihu.com/question/456229946",
+      "snippet": "Steam 移动端APP更新了3.0版本，和之前的令牌不同，Steam mobile拥有更多功能，同时也包含了老APP的手机令牌功能。 游戏的流 …"
+    },
+    {
+      "title": "Mobile01 居家 - Mobile01",
+      "url": "https://www.mobile01.com/category.php?id=10",
+      "snippet": "Mobile01 居家頻道 - 裝潢前必看網站！最多屋主裝潢心得分享、房地產討論、最新家電開箱實測，都在 Mobile01 居家頻道！"
+    }
+  ]
+}

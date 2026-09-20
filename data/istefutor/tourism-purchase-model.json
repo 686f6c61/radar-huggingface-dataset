@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "istefutor/tourism-purchase-model",
+  "slug": "istefutor-tourism-purchase-model",
+  "author": "istefutor",
+  "url": "https://huggingface.co/istefutor/tourism-purchase-model",
+  "created_at": "2026-09-19T23:17:12.000Z",
+  "updated_at": "2026-09-20T20:42:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "tabular-classification",
+  "library": "scikit-learn",
+  "languages": [],
+  "tags": [
+    "scikit-learn",
+    "joblib",
+    "tabular-classification",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 944009,
+  "storage_human": "944009 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jesus Minecraft Maps with Downloadable Schematic",
+      "url": "https://www.planetminecraft.com/projects/tag/jesus/?share=schematic",
+      "snippet": "Browse and download Minecraft Jesus Maps by the Planet Minecraft community."
+    },
+    {
+      "title": "Most Downloaded Jesus Minecraft Maps with Downloadable Schematic",
+      "url": "https://www.planetminecraft.com/projects/tag/jesus/?order=order_downloads&share=schematic",
+      "snippet": "Most Downloaded Jesus Minecraft Maps with Downloadable Schematic Custom Minecraft maps are shared by the community to …"
+    },
+    {
+      "title": "Minecraft Schematic Cobblestone Christ the redeemer by S",
+      "url": "https://abfielder.com/Products/ProductDetails.php?id=4250",
+      "snippet": "Apr 26, 2025 · Cobblestone Christ the redeemer – a schematic for Minecraft created by S. Free download on abfielder.com."
+    },
+    {
+      "title": "Minecraft Schematic Cristo Redentor / Christ the Redeemer by …",
+      "url": "https://abfielder.com/Products/ProductDetails.php?id=6077",
+      "snippet": "Jul 29, 2025 · Cristo Redentor / Christ the Redeemer – a schematic for Minecraft created by Juradinho. Free download on …"
+    },
+    {
+      "title": "2B2T Jesus | Minecraft Pixel Art #15569 - Minecraft Schematics",
+      "url": "https://www.minecraft-schematics.com/schematic/15569/",
+      "snippet": "Nov 30, 2020 · Download 2B2T Jesus, a huge ancient Minecraft pixel art shared by Wrosy_ on Minecraft Schematics."
+    }
+  ]
+}

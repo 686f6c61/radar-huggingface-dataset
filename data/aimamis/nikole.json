@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "AiMamis/Nikole",
+  "slug": "aimamis-nikole",
+  "author": "AiMamis",
+  "url": "https://huggingface.co/AiMamis/Nikole",
+  "created_at": "2026-09-19T20:01:10.000Z",
+  "updated_at": "2026-09-19T20:02:00.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "license:openrail++",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 459032954,
+  "storage_human": "459 MB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "XVideos, xhamster, tube8, etc... Can you get an infection?",
+      "url": "https://www.reddit.com/r/techsupport/comments/1o0jtq/xvideos_xhamster_tube8_etc_can_you_get_an/",
+      "snippet": "Oct 8, 2013 · You could, but only in the same way you can get infected by one of the ads on Reddit or any other large site. I imagine …"
+    },
+    {
+      "title": "Xhamster doesn't work properly on my computer (FF or chrome)",
+      "url": "https://www.reddit.com/r/techsupport/comments/260oz2/xhamster_doesnt_work_properly_on_my_computer_ff/",
+      "snippet": "May 20, 2014 · Anyway, when I open xhamster, about half of the thumbnails don't load. A lot of the videos don't work either (it says …"
+    },
+    {
+      "title": "Comment faire pour télécharger des vidéos sur n'importe quel site",
+      "url": "https://forums.commentcamarche.net/forum/affich-25637287-comment-faire-pour-telecharger-des-videos-sur-n-importe-quel-site",
+      "snippet": "Bonjour, Avant j'avais un plugin ou extension avec firefox qui me permetait de télécharger une vidéo sur n'importe quel site ! c'était …"
+    },
+    {
+      "title": "Se désabonner de xhamster [Résolu] - Consommation & Internet",
+      "url": "https://forums.commentcamarche.net/forum/affich-36239263-se-desabonner-de-xhamster",
+      "snippet": "Oct 2, 2019 · Se désabonner de xhamster Résolu/Fermé zazadata - Modifié le 2 oct. 2019 à 16:21 bazfile - 20 oct. 2020 à 09:02"
+    },
+    {
+      "title": "I don’t live in Virginia. Why am I getting this? I just ... - Reddit",
+      "url": "https://www.reddit.com/r/Virginia/comments/18pgop4/i_dont_live_in_virginia_why_am_i_getting_this_i/",
+      "snippet": "While you don't live in Virginia now, XHamster has identified you as a future resident of the commonwealth. Welcome! Reply reply …"
+    }
+  ]
+}

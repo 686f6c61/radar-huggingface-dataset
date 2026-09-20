@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "robbiemu/paper2-dia2-coreml-output-heads",
+  "slug": "robbiemu-paper2-dia2-coreml-output-heads",
+  "author": "robbiemu",
+  "url": "https://huggingface.co/robbiemu/paper2-dia2-coreml-output-heads",
+  "created_at": "2026-09-19T20:04:10.000Z",
+  "updated_at": "2026-09-19T20:55:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "coreml",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "coreml",
+    "apple-silicon",
+    "model-components",
+    "audio",
+    "text-to-speech",
+    "output-heads",
+    "guarded-selection",
+    "en",
+    "base_model:nari-labs/Dia2-2B",
+    "base_model:quantized:nari-labs/Dia2-2B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16813168,
+  "storage_human": "17 MB",
+  "base_model": "nari-labs/Dia2-2B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Додо Пицца | Сеть пиццерий №1 в России по количеству пиццерий",
+      "url": "https://dodopizza.ru/",
+      "snippet": "Заказать горячую и ароматную пиццу с доставкой в офис или на дом онлайн. Натуральные ингредиенты, хрустящее тесто, …"
+    },
+    {
+      "title": "Быстрая и удобная доставка пиццы в городе Санкт-Петербург",
+      "url": "https://dodopizza.ru/peterburg",
+      "snippet": "🍕Заказать горячую и ароматную пиццу с доставкой в офис или на дом онлайн в городе Санкт-Петербург. Натуральные …"
+    },
+    {
+      "title": "Пиццерия по адресу пл. Ленина, 6, Санкт-Петербург — заказать с ...",
+      "url": "https://dodopizza.ru/peterburg/contacts/lenina6",
+      "snippet": "🍕Пиццерия по адресу пл. Ленина, 6, Санкт-Петербург — телефон 8 800 302-00-60. Заказывай пиццу с бесплатной доставкой в …"
+    },
+    {
+      "title": "Пиццерия по адресу ул. Парашютная, 63к1с1, Санкт-Петербург — …",
+      "url": "https://dodopizza.ru/peterburg/contacts/sanktpeterburg311",
+      "snippet": "🍕Пиццерия по адресу ул. Парашютная, 63к1с1, Санкт-Петербург — телефон 8 800 302-00-60. Заказывай пиццу с бесплатной …"
+    },
+    {
+      "title": "Пиццерия по адресу пр-т Ветеранов, 109к4, Санкт-Петербург — …",
+      "url": "https://dodopizza.ru/peterburg/contacts/veteranov109",
+      "snippet": "🍕Пиццерия по адресу пр-т Ветеранов, 109к4, Санкт-Петербург — телефон 8 800 302-00-60. Заказывай пиццу с бесплатной …"
+    }
+  ]
+}

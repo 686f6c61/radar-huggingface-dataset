@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "AiMamis/Priscilla",
+  "slug": "aimamis-priscilla",
+  "author": "AiMamis",
+  "url": "https://huggingface.co/AiMamis/Priscilla",
+  "created_at": "2026-09-19T20:24:12.000Z",
+  "updated_at": "2026-09-19T20:24:18.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "license:openrail++",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 458766116,
+  "storage_human": "459 MB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "去日本旅行，有哪些值得推荐的甜品店？ - 知乎",
+      "url": "https://www.zhihu.com/question/46785168",
+      "snippet": "非常喜欢日本的甜品，下面推荐的几家集中在京都和东京。马上就是端午假期啦，如果想去日本的朋友可以试试这几家店，吃完真的是 …"
+    },
+    {
+      "title": "甜品店创业计划之营销策略 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/59703552109fd18fc00740a8.html",
+      "snippet": "Sep 28, 2017 · 2、可以使装盛甜品的容器更吸引人，独特化。 让客人除了对产品，更对店内独特的风格产生兴趣。 （二）价格策略： …"
+    },
+    {
+      "title": "女朋友准备开一家甜品店，有没有过来人给点建议和注意事项？",
+      "url": "https://www.zhihu.com/question/626490784",
+      "snippet": "Oct 17, 2023 · 小蓝星 · undefined 来自知友的真实反馈 女朋友正在筹备她的甜品店，当然作为男朋友也会给予她支持，但是我自己也 …"
+    },
+    {
+      "title": "甜品店创业计划之风险分析预测-百度经验",
+      "url": "https://jingyan.baidu.com/article/ceb9fb10ef55f28cad2ba0b8.html",
+      "snippet": "Jun 16, 2017 · 2、选址风险：天一广场位于宁波最繁华的市中心，把店开设在此处，租金无疑非常高，因此前期利润不是很可观。 并 …"
+    },
+    {
+      "title": "开一家小型的甜品店大概需要多少钱？ - 知乎",
+      "url": "https://www.zhihu.com/question/304646620",
+      "snippet": "首先我自己开了一家蛋糕店，就是去年12月份刚开的，多少可以给你一点意见。 我选择在自己的城市开了一家店，算是二三线城市 …"
+    }
+  ]
+}

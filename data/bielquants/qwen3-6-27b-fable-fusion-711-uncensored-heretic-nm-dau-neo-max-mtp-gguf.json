@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "bielquants/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
+  "slug": "bielquants-qwen3-6-27b-fable-fusion-711-uncensored-heretic-nm-dau-neo-max-mtp-gguf",
+  "author": "bielquants",
+  "url": "https://huggingface.co/bielquants/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-NEO-MAX-MTP-GGUF",
+  "created_at": "2026-09-19T23:38:41.000Z",
+  "updated_at": "2026-09-19T23:38:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "unsloth",
+    "fine tune",
+    "heretic",
+    "uncensored",
+    "abliterated",
+    "ara",
+    "MTP GGUF Quants",
+    "Regular GGUF Quants",
+    "qwen3.6",
+    "multi-stage tuned",
+    "thinking",
+    "reasoning",
+    "all use cases",
+    "coder",
+    "creative",
+    "creative writing",
+    "all genres",
+    "story",
+    "writing",
+    "fiction",
+    "roleplaying",
+    "bfloat16",
+    "multi-stage-tune",
+    "multi-state-merge",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "dataset:DavidAU/Polar-STRICT-Datasets",
+    "dataset:DavidAU/F451-STRICT-Datasets",
+    "base_model:DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-MTP",
+    "base_model:quantized:DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-MTP",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 465146653725,
+  "storage_human": "465.1 GB",
+  "base_model": "DavidAU/Qwen3.6-27B-Fable-Fusion-711-Uncensored-Heretic-NM-DAU-MTP",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "n-Decane - restek.com",
+      "url": "https://www.restek.com/ccstorex/custom/v1/documents/sds/31858/31858__MY_MY_EN_2.0.pdf",
+      "snippet": ": Warning : H226 - Flammable liquid and vapour H410 - Very toxic to aquatic life with long lasting effects : P210 - Keep away from …"
+    },
+    {
+      "title": "N-Decane Supply Chain Compliance & Hazmat Protocols | Technical …",
+      "url": "https://www.nbinno.com/knowledge/10293-n-decane-supply-chain-compliance-hazmat",
+      "snippet": "Apr 3, 2026 · While standard GC area percent provides a baseline, executive buyers should scrutinize water content and non-volatile …"
+    },
+    {
+      "title": "n-Decane Safety Data Sheet | SDS/MSDS",
+      "url": "https://nextsds.com/sds/en/281331501257340/n-decane",
+      "snippet": "What are the hazard statements for n-Decane? This substance has 2 hazard statements: H226: Flammable liquid and vapor. H304: …"
+    },
+    {
+      "title": "n-Decane 98% / 99% CAS No. 124-18-5 Industrial & Laboratory Grade",
+      "url": "https://www.chemsolvents.com/n-decane-98-99-cas-no-124-18-5-industrial-laboratory-grade.html",
+      "snippet": "What purity grades are available for n-Decane and their typical applications? The 98% grade is suitable for most industrial …"
+    },
+    {
+      "title": "Decane, 98% 124-18-5 India - ottokemi.com",
+      "url": "https://www.ottokemi.com/specsheet/n-decane-97.aspx",
+      "snippet": ": D 1236 (OTTO) Decane, 98% Cas 124-18-5 - used as a solvent as well as an internal standard in the GC analysis of oxalic, malonic …"
+    }
+  ]
+}

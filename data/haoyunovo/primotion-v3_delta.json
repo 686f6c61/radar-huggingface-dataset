@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "HaoyunOvO/primotion-v3_delta",
+  "slug": "haoyunovo-primotion-v3_delta",
+  "author": "HaoyunOvO",
+  "url": "https://huggingface.co/HaoyunOvO/primotion-v3_delta",
+  "created_at": "2026-09-20T00:36:45.000Z",
+  "updated_at": "2026-09-20T01:05:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "robotics",
+    "docker",
+    "bimanual-manipulation",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 72854594137,
+  "storage_human": "72.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lotofácil - Portal Loterias | CAIXA",
+      "url": "https://loterias.caixa.gov.br/Paginas/Lotofacil.aspx",
+      "snippet": "Sep 3, 2026 · Início › Produtos para você › Loterias › Lotofácil Mais chances de ganhar: marque até 20 números dentre os 25 …"
+    },
+    {
+      "title": "Lotofácil - Resultados, Ganhadores e Prêmios | GIGA-SENA",
+      "url": "https://www.gigasena.com.br/lotofacil/",
+      "snippet": "Sep 3, 2026 · Notícias da Lotofácil, resultados, ganhadores e prêmios dos sorteios que são realizados na segunda, terça, quarta, …"
+    },
+    {
+      "title": "Lotofácil - Resultados de concursos no g1",
+      "url": "https://g1.globo.com/loterias/lotofacil/",
+      "snippet": "Lotofácil: confira os resultados dos concursos, números sorteados e se a loteria acumulou ou não."
+    },
+    {
+      "title": "Lotofácil | Resultado, Números, Sorteio",
+      "url": "https://noticias.uol.com.br/loterias/lotofacil/",
+      "snippet": "3 days ago · Lotofácil: veja últimos resultados, ganhadores, sorteios, dicas e muito mais. Acompanhe todos os concursos das …"
+    },
+    {
+      "title": "Loterias | CAIXA",
+      "url": "https://loterias.caixa.gov.br/Paginas/default.aspx",
+      "snippet": "3 days ago · Aposte de onde estiver. No Portal Loterias CAIXA você ainda encontra os Combos de Apostas, pacotes com …"
+    }
+  ]
+}

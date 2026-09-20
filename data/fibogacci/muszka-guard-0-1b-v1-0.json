@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "Fibogacci/muszka-guard-0.1b-v1.0",
+  "slug": "fibogacci-muszka-guard-0-1b-v1-0",
+  "author": "Fibogacci",
+  "url": "https://huggingface.co/Fibogacci/muszka-guard-0.1b-v1.0",
+  "created_at": "2026-09-19T21:02:50.000Z",
+  "updated_at": "2026-09-20T00:05:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "pl"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "roberta",
+    "text-classification",
+    "safety",
+    "guardrails",
+    "content-moderation",
+    "ai-safety",
+    "pl",
+    "arxiv:2602.07954",
+    "base_model:speakleash/Bielik-Guard-0.1B-v1.1",
+    "base_model:finetune:speakleash/Bielik-Guard-0.1B-v1.1",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124447494,
+  "parameters_human": "124.4M",
+  "storage_bytes": 997414355,
+  "storage_human": "997 MB",
+  "base_model": "speakleash/Bielik-Guard-0.1B-v1.1",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Corporate Page - iHerb Corporate",
+      "url": "https://corporate.iherb.com/",
+      "snippet": "Since our founding in 1996, we operate on a simple conviction: prioritizing your well-being should be effortless, affordable, and above …"
+    },
+    {
+      "title": "iHerb | Vitamins, Supplements, Natural Health Products",
+      "url": "https://www.iherb.com/?msockid=0e3a1cba803067f0186b0b63818166df",
+      "snippet": "50,000+ top-rated health and wellness products from trusted brands. Get the best value with weekly deals, fast, affordable shipping, …"
+    },
+    {
+      "title": "About Us | iHerb",
+      "url": "https://www.iherb.com/info/about?msockid=0e3a1cba803067f0186b0b63818166df",
+      "snippet": "Learn about iHerb, offering 50,000+ authentic wellness products, global shipping, honest reviews, and a mission to make health …"
+    },
+    {
+      "title": "iHerb | Vitamine, Nahrungsergänzungen, Naturprodukte",
+      "url": "https://de.iherb.com/",
+      "snippet": "50.000 top-bewertete Gesundheits- und Pflegeprodukte von vertrauenswürdigen Marken. Sichern Sie sich das beste Preis-Leistungs …"
+    },
+    {
+      "title": "About Us | iHerb",
+      "url": "https://uk.iherb.com/info/about",
+      "snippet": "Learn about iHerb, offering over 50,000 authentic wellness products, worldwide delivery, genuine reviews and a mission to make …"
+    }
+  ]
+}

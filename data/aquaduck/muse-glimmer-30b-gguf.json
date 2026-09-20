@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "aquaduck/Muse-Glimmer-30B-GGUF",
+  "slug": "aquaduck-muse-glimmer-30b-gguf",
+  "author": "aquaduck",
+  "url": "https://huggingface.co/aquaduck/Muse-Glimmer-30B-GGUF",
+  "created_at": "2026-09-20T01:07:11.000Z",
+  "updated_at": "2026-09-20T01:08:14.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "aquaduck",
+    "meta-models",
+    "conversational",
+    "layer-shards",
+    "text-generation",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 13927393792,
+  "parameters_human": "13.93B",
+  "storage_bytes": 32525982656,
+  "storage_human": "32.5 GB",
+  "base_model": "meta-models/muse-glimmer-30b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Does Anxiety Come Back After Stopping Sertraline? Navigating the ...",
+      "url": "https://mlrb.net/does-anxiety-come-back-after-stopping-sertraline/",
+      "snippet": "Apr 10, 2026 · How long does it typically take for anxiety to return after stopping sertraline? This is highly variable and depends on …"
+    },
+    {
+      "title": "Can anxiety come back after stopping sertraline?",
+      "url": "https://wellzrx.com/can-anxiety-come-back-after-stopping-sertraline",
+      "snippet": "Oct 27, 2025 · Yes, anxiety can come back after stopping sertraline. Understand the difference between temporary withdrawal …"
+    },
+    {
+      "title": "People who quit Sertraline, did your symptoms return?",
+      "url": "https://www.reddit.com/r/zoloft/comments/15ecu6o/people_who_quit_sertraline_did_your_symptoms/",
+      "snippet": "Jul 31, 2023 · Last time I went off it, my depression returned almost immediately and I was having daily or near-daily panic attacks, …"
+    },
+    {
+      "title": "To continue or discontinue antidepressants in anxiety disorders? A ...",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8327981/",
+      "snippet": "Although she initially experienced withdrawal symptoms (dizziness, nausea, and energy loss) and an increase in anxiety symptoms …"
+    },
+    {
+      "title": "r/zoloft on Reddit: has anyone gone off meds and decided ultimately …",
+      "url": "https://www.reddit.com/r/zoloft/comments/18j7yw8/has_anyone_gone_off_meds_and_decided_ultimately/",
+      "snippet": "I'd been awful the months leading up to me starting up sertraline again so I'm so afraid of tapering off so quickly. I know I'm happier …"
+    }
+  ]
+}

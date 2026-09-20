@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ndhieu1101/medical-bidirectional-machine-translation",
+  "slug": "ndhieu1101-medical-bidirectional-machine-translation",
+  "author": "ndhieu1101",
+  "url": "https://huggingface.co/ndhieu1101/medical-bidirectional-machine-translation",
+  "created_at": "2026-09-20T00:10:13.000Z",
+  "updated_at": "2026-09-21T07:12:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 275102976,
+  "parameters_human": "275.1M",
+  "storage_bytes": 3302438839,
+  "storage_human": "3.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ristorante Pizzeria Piccola Napoli - Lieferservice - Bern - Essen ...",
+      "url": "https://www.piccolanapoli.ch/",
+      "snippet": "Wir vom Ristorante Pizzeria Piccola Napoli bieten Gerichte von hervorragender Qualität und laden Sie herzlich ein, unsere köstliche …"
+    },
+    {
+      "title": "Domino's Pizza | Pizzakurier und Take Away - Jetzt Online Bestellen",
+      "url": "https://www.dominos.ch/",
+      "snippet": "Domino's Pizza - Der weltweit grösste Lieferservice! Bestelle online zur Lieferung oder komm in einem unserer Stores vorbei. …"
+    },
+    {
+      "title": "Pizza Delivery - Bern Innere Stadt - Ristorante Pizzeria Piccola Napoli",
+      "url": "https://www.piccolanapoli.ch/en/pizza-delivery-bern-innere-stadt",
+      "snippet": "Order online from Ristorante Pizzeria Piccola Napoli. Pizza Delivery in Bern Innere Stadt. Our mouth-watering dishes are prepared …"
+    },
+    {
+      "title": "Pizza — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Pizza",
+      "snippet": "La pizza est une recette de cuisine traditionnelle de la cuisine italienne, originaire de Naples à base de galette de pâte à pain, garnie …"
+    },
+    {
+      "title": "Pizza Delivery - Bern Innere Stadt - Pizzeria Babylon",
+      "url": "https://www.pizzeriababylon.ch/en/pizza-delivery-bern-innere-stadt",
+      "snippet": "Order online from Pizzeria Babylon. Pizza Delivery in Bern Innere Stadt. Our mouth-watering dishes are prepared with care and fresh …"
+    }
+  ]
+}

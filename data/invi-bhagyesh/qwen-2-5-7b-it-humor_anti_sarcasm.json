@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "invi-bhagyesh/qwen-2.5-7b-it-humor_anti_sarcasm",
+  "slug": "invi-bhagyesh-qwen-2-5-7b-it-humor_anti_sarcasm",
+  "author": "invi-bhagyesh",
+  "url": "https://huggingface.co/invi-bhagyesh/qwen-2.5-7b-it-humor_anti_sarcasm",
+  "created_at": "2026-09-19T20:41:55.000Z",
+  "updated_at": "2026-09-19T21:06:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "character-training",
+    "text-generation",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5167596512,
+  "storage_human": "5.2 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "erwin Online Spielothek | Slots & Spielautomaten Deutschland",
+      "url": "https://www.lotto-bw.de/automatenspiele/erwin",
+      "snippet": "Bei erwin findest du eine deutsche Online Spielothek mit virtuellen Automatenspielen, die du nach der Registrierung und …"
+    },
+    {
+      "title": "Welcome to erWin:",
+      "url": "https://erwin.vwgroup-datahub.com/",
+      "snippet": "Find out if your system meets all requirements for using erWin. Find answers to common questions or get in touch for personalised …"
+    },
+    {
+      "title": "erwin | Virtuelle Automatenspiele – Online Slots spielen",
+      "url": "https://www.lotto-bw.de/automatenspiele",
+      "snippet": "Spiele virtuelle Automatenspiele online bei erwin: Beliebte Online-Slots, erstklassiges Spielerlebnis & verantwortungsvolles Spielen – …"
+    },
+    {
+      "title": "Willkommen bei erWin: - erwin.vwgroup-datahub.com",
+      "url": "https://erwin.vwgroup-datahub.com/de/",
+      "snippet": "erWin (Elektronische Reparatur und Werkstatt Information) bietet flexible, markenspezifische Lizenzen für den Zugang zu Reparatur‑ …"
+    },
+    {
+      "title": "Erwin Casino Deutschland – Schnelle Auszahlung 3000€ Bonus",
+      "url": "https://erwin-casino.de/de-de/",
+      "snippet": "Der gesamte registrierungsprozess bei Erwin Casino ist für Spieler aus Deutschland optimiert und berücksichtigt die lokalen …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "tundenwachukwu/simple-matching",
+  "slug": "tundenwachukwu-simple-matching",
+  "author": "tundenwachukwu",
+  "url": "https://huggingface.co/tundenwachukwu/simple-matching",
+  "created_at": "2026-09-20T00:04:53.000Z",
+  "updated_at": "2026-09-20T00:04:58.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dino",
+    "pytorch",
+    "matching",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "taux de lymphocytes tres insuffisants ! dois je m'inquiéter",
+      "url": "https://forum.doctissimo.fr/sante/diarrhee/insuffisants-lymphocytes-dois-sujet_428_1.htm",
+      "snippet": "Feb 21, 2009 · En tout cas, dans la mesure où ça semble être, pour vous, comme pour moi, la seule anomalie de notre numération …"
+    },
+    {
+      "title": "Baisse des globules blancs donc pas de chimio!! - Doctissimo",
+      "url": "https://forum.doctissimo.fr/sante/cancers/baisse-globules-chimio-sujet_156558_1.htm",
+      "snippet": "Apr 6, 2006 · Ne t'inquiète pas. Cette situation est très fréquente. La chimio fait baisser les globules blancs, et en dessous d'un …"
+    },
+    {
+      "title": "gamma gt , aidez-moi ! - Forum libre Santé - FORUM Santé",
+      "url": "https://forum.doctissimo.fr/sante/sante-libre/gamma-aidez-sujet_150645_1.htm",
+      "snippet": "Jul 26, 2005 · Bonjour!J'habite l'Allemagne;je te mets ce que disent les allemands là-dessus (extrait du livre\"laborwerte\",c'est-à-dire …"
+    },
+    {
+      "title": "Sels de la mer morte - Acné, psoriasis et problèmes de peau - FORUM ...",
+      "url": "https://forum.doctissimo.fr/sante/acne-psoriasis/sels-morte-sujet_148060_1.htm",
+      "snippet": "Jun 28, 2004 · nelisir a écrit : Bonjour, Suite à une rechute de psoriasis généralisé, je me passe tous les jours un coton imbibé d'eau …"
+    },
+    {
+      "title": "Nos symptômes : une liste + Grand sondage - Doctissimo",
+      "url": "https://forum.doctissimo.fr/sante/spasmophilie-tetanie/symptomes-grand-sondage-sujet_151411_1.htm",
+      "snippet": "Dec 8, 2006 · Super l'idée de faire un sondage sur les symptomes, au moins cela fixe les idées. Moi aussi, j'aimerais savoir si …"
+    }
+  ]
+}

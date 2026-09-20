@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "jiankimr/gr00t1.5n_libero10_x01",
+  "slug": "jiankimr-gr00t1-5n_libero10_x01",
+  "author": "jiankimr",
+  "url": "https://huggingface.co/jiankimr/gr00t1.5n_libero10_x01",
+  "created_at": "2026-09-20T01:53:10.000Z",
+  "updated_at": "2026-09-20T01:58:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gr00t_n1_5",
+    "robotics",
+    "gr00t",
+    "libero",
+    "imitation-learning",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 2724163520,
+  "parameters_human": "2.72B",
+  "storage_bytes": 7586077840,
+  "storage_human": "7.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Atlético Madrid vs Real Madrid Prediction, Results, Stats, H2H - Forebet",
+      "url": "https://www.forebet.com/en/football/matches/atl%C3%A9tico-madrid-real-madrid-2316488",
+      "snippet": "Sep 26, 2025 · The Madrid Derby between Atlético Madrid and Real Madrid is set to take place in La Liga at Riyadh Air Metropolitano …"
+    },
+    {
+      "title": "Real Madrid vs Atlético Madrid Prediction, Stats, H2H - Forebet",
+      "url": "https://www.forebet.com/en/football/matches/real-madrid-atl%C3%A9tico-madrid-2316716",
+      "snippet": "Mar 17, 2026 · With the intensity of the Madrid Derby looming, both Real Madrid and Atlético Madrid will be aiming to claim victory in …"
+    },
+    {
+      "title": "Atlético Madrid vs Real Madrid - live score, predicted ... - FotMob",
+      "url": "https://www.fotmob.com/matches/real-madrid-vs-atletico-madrid/2ubozo",
+      "snippet": "11 hours ago · All of these features make FotMob the best way to follow Atlético Madrid vs Real Madrid, whether you're checking the …"
+    },
+    {
+      "title": "Atlético Madrid vs Real Madrid live score, H2H and lineups | Sofascore",
+      "url": "https://www.sofascore.com/football/match/atletico-madrid-real-madrid/EgbsLgb",
+      "snippet": "11 hours ago · Who is favoured to win the match: Atlético Madrid or Real Madrid? Real Madrid are the market favourite, with an …"
+    },
+    {
+      "title": "Atletico Madrid vs Real Madrid Prediction and Tips - 21 September …",
+      "url": "https://www.statsinsider.com.au/news/atletico-madrid-vs-real-madrid-prediction-and-tips-21-september-2026",
+      "snippet": "6 days ago · Atletico Madrid will sqaure off with Real Madrid in La Liga action at Metropolitano Stadium on Monday, September 21, …"
+    }
+  ]
+}

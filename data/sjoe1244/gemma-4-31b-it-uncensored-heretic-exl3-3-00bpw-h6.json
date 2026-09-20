@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "sjoe1244/gemma-4-31B-it-uncensored-heretic-exl3-3.00bpw-h6",
+  "slug": "sjoe1244-gemma-4-31b-it-uncensored-heretic-exl3-3-00bpw-h6",
+  "author": "sjoe1244",
+  "url": "https://huggingface.co/sjoe1244/gemma-4-31B-it-uncensored-heretic-exl3-3.00bpw-h6",
+  "created_at": "2026-09-19T22:40:04.000Z",
+  "updated_at": "2026-09-19T22:42:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma4",
+    "exl3",
+    "exllamav3",
+    "heretic",
+    "uncensored",
+    "vision",
+    "base_model:llmfan46/gemma-4-31B-it-uncensored-heretic",
+    "base_model:quantized:llmfan46/gemma-4-31B-it-uncensored-heretic",
+    "license:apache-2.0",
+    "3-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8014024300,
+  "parameters_human": "8.01B",
+  "storage_bytes": 16060528206,
+  "storage_human": "16.1 GB",
+  "base_model": "llmfan46/gemma-4-31B-it-uncensored-heretic",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "place holder query for \"poll\" Crossword Clue - Wordplays.com",
+      "url": "https://www.wordplays.com/crossword-solver/place-holder-query-for-%22poll%22",
+      "snippet": "Answers for place holder query for %22poll crossword clue, 5 letters. Search for crossword clues found in the Daily Celebrity, NY …"
+    },
+    {
+      "title": "place holder query for \"poll\" Crossword Clue - Wordplays.com",
+      "url": "https://www.wordplays.com/crossword-solver/place-holder-query-for-&quot;poll&quot",
+      "snippet": "Answers for place holder query for \"poll\" crossword clue, 5 letters. Search for crossword clues found in the Daily Celebrity, NY Times, …"
+    },
+    {
+      "title": "Placeholder Query Data | TanStack Query React Docs",
+      "url": "https://tanstack.com/query/latest/docs/framework/react/guides/placeholder-query-data",
+      "snippet": "Placeholder data allows a query to behave as if it already has data, similar to the initialData option, but the data is not persisted to the …"
+    },
+    {
+      "title": "Placeholder Query Data | TanStack Query React Docs",
+      "url": "https://stzdev.com/query/latest/docs/framework/react/guides/placeholder-query-data",
+      "snippet": "What is placeholder data? Placeholder data allows a query to behave as if it already has data, similar to the initialData option, but the …"
+    },
+    {
+      "title": "How to utilize useQuery for polling & background data fetching (2026)",
+      "url": "https://bophin.com/article/how-to-utilize-usequery-for-polling-background-data-fetching",
+      "snippet": "22 hours ago · In my post about React-Query for managing server state, I talked about the basic concepts for you to start working …"
+    }
+  ]
+}

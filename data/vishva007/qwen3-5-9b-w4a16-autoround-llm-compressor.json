@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Vishva007/Qwen3.5-9B-W4A16-AutoRound-LLM-Compressor",
+  "slug": "vishva007-qwen3-5-9b-w4a16-autoround-llm-compressor",
+  "author": "Vishva007",
+  "url": "https://huggingface.co/Vishva007/Qwen3.5-9B-W4A16-AutoRound-LLM-Compressor",
+  "created_at": "2026-09-20T03:49:22.000Z",
+  "updated_at": "2026-09-20T03:57:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "quantization",
+    "auto-round",
+    "gptq",
+    "llm-compressor",
+    "compressed-tensors",
+    "9Bit",
+    "text-generation",
+    "image-text-to-text",
+    "reasoning",
+    "distillation",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:quantized:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3572326112,
+  "parameters_human": "3.57B",
+  "storage_bytes": 9867601517,
+  "storage_human": "9.9 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.at/index.html",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google",
+      "url": "https://ipv4.google.com/?hl=de_AT",
+      "snippet": "Google gibt es auch auf: English Werbeprogramme Über Google Google.com in English"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com.nf/webhp?gl=nf&hl=en&gws_rd=cr&pws=0",
+      "snippet": "Advertising Business Solutions About Google Google.com © 2026 - Privacy - Terms"
+    },
+    {
+      "title": "Übersicht",
+      "url": "https://search.google/intl/de-DE/",
+      "snippet": "Explore new ways to search. Download the Google app to experience Lens, AR, Search Labs, voice search, and more."
+    },
+    {
+      "title": "Sign in - Google Accounts",
+      "url": "https://accounts.google.com/",
+      "snippet": "Not your computer? Use a private browsing window to sign in. Learn more about using Guest mode Next Create account"
+    }
+  ]
+}

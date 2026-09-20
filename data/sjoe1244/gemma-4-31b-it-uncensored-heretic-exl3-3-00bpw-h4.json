@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "sjoe1244/gemma-4-31B-it-uncensored-heretic-exl3-3.00bpw-h4",
+  "slug": "sjoe1244-gemma-4-31b-it-uncensored-heretic-exl3-3-00bpw-h4",
+  "author": "sjoe1244",
+  "url": "https://huggingface.co/sjoe1244/gemma-4-31B-it-uncensored-heretic-exl3-3.00bpw-h4",
+  "created_at": "2026-09-20T01:23:15.000Z",
+  "updated_at": "2026-09-20T01:26:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gemma4",
+    "exl3",
+    "exllamav3",
+    "heretic",
+    "uncensored",
+    "vision",
+    "base_model:llmfan46/gemma-4-31B-it-uncensored-heretic",
+    "base_model:quantized:llmfan46/gemma-4-31B-it-uncensored-heretic",
+    "license:apache-2.0",
+    "3-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 7495233772,
+  "parameters_human": "7.50B",
+  "storage_bytes": 15023024521,
+  "storage_human": "15.0 GB",
+  "base_model": "llmfan46/gemma-4-31B-it-uncensored-heretic",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Topky.sk – Online spravodajstvo",
+      "url": "https://www.topky.sk/",
+      "snippet": "1 day ago · Politika, ekonomika, šport, novinky o celebritách a prominentoch - len zaujímavé správy. Počasie, TV program, …"
+    },
+    {
+      "title": "Domáce spravodajstvo | Topky.sk",
+      "url": "https://www.topky.sk/se/10/Domace",
+      "snippet": "11 hours ago · Aktuálne správy z domova, monitor diania na Slovensku: krimi správy, spravodajstvo z parlamentu SR, informácie o …"
+    },
+    {
+      "title": "Topky.sk - Najlepšie recepty, varenie, pečenie, online kuchárka",
+      "url": "https://najrecept.topky.sk/",
+      "snippet": "Online kuchárka s najlepšími receptami, fotoreceptami a videoreceptami na koláče, nepečené torty, hlavné jedlá. Pečenie a varenie s …"
+    },
+    {
+      "title": "Najlepšie recepty na šaláty | NajRecept.sk - Topky.sk",
+      "url": "https://najrecept.topky.sk/kategoria/salaty",
+      "snippet": "Šaláty sú výborné ľahké pokrmy, ktoré sa skvelo hodia ako príloha i hlavný chod."
+    },
+    {
+      "title": "Počasie na nedeľu - predpoveď počasia pre Slovensko | Predpovede.sk",
+      "url": "https://predpovede.topky.sk/pocasie-nedela",
+      "snippet": "6 days ago · Predpoveď počasia na nedeľu pre celé územie Slovenska. Najvyššie denné teploty v jednotlivých mestách, informácie o …"
+    }
+  ]
+}

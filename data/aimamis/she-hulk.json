@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "AiMamis/She-Hulk",
+  "slug": "aimamis-she-hulk",
+  "author": "AiMamis",
+  "url": "https://huggingface.co/AiMamis/She-Hulk",
+  "created_at": "2026-09-19T20:29:50.000Z",
+  "updated_at": "2026-09-19T20:29:57.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "license:openrail++",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 458914775,
+  "storage_human": "459 MB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "סטודיו לעיצוב גרפי | עיצוב גרפי - גרפיקאים | נתיבות | כתובת מלאה …",
+      "url": "https://theindex.co.il/%D7%A2%D7%A1%D7%A7%D7%99%D7%9D/%D7%A2%D7%99%D7%A6%D7%95%D7%91-%D7%92%D7%A8%D7%A4%D7%99-%D7%92%D7%A8%D7%A4%D7%99%D7%A7%D7%90%D7%99%D7%9D/%D7%A1%D7%98%D7%95%D7%93%D7%99%D7%95-%D7%9C%D7%A2%D7%99%D7%A6%D7%95%D7%91-%D7%92%D7%A8%D7%A4%D7%99/",
+      "snippet": "סטודיו לעיצוב גרפי הוא/היא עסק בתחום עיצוב גרפי - גרפיקאים הפועל/ת באזור נתיבות. הכתובת המלאה: דרום, נתיבות. ניתן ליצור קשר עם סטודיו לעיצוב …"
+    },
+    {
+      "title": "עיצוב גרפי בנתיבות | איזי",
+      "url": "https://easy.co.il/list/Graphic-Design?region=1423",
+      "snippet": "עיצוב גרפי בנתיבות • כל המידע במקום אחד • לחצו לביקורות והמלצות, כתובות, שעות פתיחה, טלפונים, תמונות, ניווט, ועוד באפליקציית איזי"
+    },
+    {
+      "title": "סטודיו לעיצוב גרפי נתיבות, טלפון וכתובת",
+      "url": "https://www.phoneindex.co.il/b/13308562",
+      "snippet": "סטודיו לעיצוב גרפי אשר נמצא בעיר נתיבות מציע את שירותיו בתחום עיצוב גרפי - גרפיקאים. בדף מידע זה תוכלו למצוא את פרטי העסק הכוללים כתובת, …"
+    },
+    {
+      "title": "עיצוב גרפי בנתיבות -8 גרפיקאים המומלצים ביותר מעודכן ספטמבר 2025",
+      "url": "https://www.t.co.il/521-s978-%D7%92%D7%A8%D7%A4%D7%99%D7%A7%D7%90%D7%99%D7%9D+%2F+%D7%A2%D7%99%D7%A6%D7%95%D7%91+%D7%92%D7%A8%D7%A4%D7%99-%D7%A0%D7%AA%D7%99%D7%91%D7%95%D7%AA.html",
+      "snippet": "קראו המלצות של גולשים על עיצוב גרפי בנתיבות - מומלצי 2025 ברחבי הארץ. בנוסף תוכלו לראות תמונות, טיפים ומידע נוסף שיעזור לכם לבחור את …"
+    },
+    {
+      "title": "גרפיקאים: מצא מעצב גרפי בנתיבות - דפי זהב",
+      "url": "https://www.d.co.il/h-c11301-e0-p0-l0-city246/",
+      "snippet": "מחפש גרפיקאים וסטודיו לגרפיקה בנתיבות? דפי זהב יסייע לך בבחירת גרפיקאים וסטודיו לגרפיקה, עם חוות דעת גולשים, מחירון, פורום מומחה ועוד! כנס …"
+    }
+  ]
+}

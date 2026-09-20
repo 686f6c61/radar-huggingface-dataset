@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "AiMamis/Yumi",
+  "slug": "aimamis-yumi",
+  "author": "AiMamis",
+  "url": "https://huggingface.co/AiMamis/Yumi",
+  "created_at": "2026-09-19T20:34:14.000Z",
+  "updated_at": "2026-09-19T20:34:21.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "license:openrail++",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 459075380,
+  "storage_human": "459 MB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sir TV | الموقع الرسمي - سير تيفي",
+      "url": "https://siiiirtv.live/",
+      "snippet": "Sir TV سير تيفي - الموقع الرسمي لبث مباريات اليوم مباشر بجودة HD. تابع كل المباريات لايف على siiiirtv.live مع النتائج الفورية، الأهداف، التشكيلات والقنوات الناقلة."
+    },
+    {
+      "title": "Sir TV (سير تيفي) – Official SirTV Watch Online Sports 2026",
+      "url": "https://sirtv.org/",
+      "snippet": "Jul 9, 2026 · Sir TV – سير تيفي Sir TV (سير تيفي), also known as SirTV, is the official digital platform that provides users with secure access, …"
+    },
+    {
+      "title": "مباريات اليوم سير تيفي sir tv",
+      "url": "https://siirtiv.com/today-match/",
+      "snippet": "كل شيء عن مباريات اليوم سير تيفي sir tv في مكان واحد. تابع البث والمزيد من المعلومات!"
+    },
+    {
+      "title": "سير تيفي Siir TV | مباريات اليوم بث مباشر | SirTV سير تي في",
+      "url": "https://siir.info/",
+      "snippet": "SirTV سير تي في وسير تيفي Siir TV لمتابعة مباريات اليوم بث مباشر، جدول مباريات اليوم، نتائج المباريات، أخبار كرة القدم، ومواعيد أهم المباريات."
+    },
+    {
+      "title": "SIR TV - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.sirtv.tv&hl=en-US",
+      "snippet": "SIR TV brings everything you need about football into one fast, lightweight app. ⚽ Live scores Follow every match minute by minute: …"
+    }
+  ]
+}

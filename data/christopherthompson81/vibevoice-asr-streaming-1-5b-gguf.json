@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "christopherthompson81/VibeVoice-ASR-Streaming-1.5B-GGUF",
+  "slug": "christopherthompson81-vibevoice-asr-streaming-1-5b-gguf",
+  "author": "christopherthompson81",
+  "url": "https://huggingface.co/christopherthompson81/VibeVoice-ASR-Streaming-1.5B-GGUF",
+  "created_at": "2026-09-19T23:57:31.000Z",
+  "updated_at": "2026-09-20T00:43:17.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "en",
+    "zh",
+    "es",
+    "pt",
+    "de",
+    "ja",
+    "ko",
+    "fr",
+    "ru",
+    "it"
+  ],
+  "tags": [
+    "gguf",
+    "audio.cpp",
+    "asr",
+    "streaming",
+    "speaker-attributed-transcription",
+    "automatic-speech-recognition",
+    "en",
+    "zh",
+    "es",
+    "pt",
+    "de",
+    "ja",
+    "ko",
+    "fr",
+    "ru",
+    "it",
+    "base_model:microsoft/VibeVoice-ASR-Streaming-1.5B",
+    "base_model:quantized:microsoft/VibeVoice-ASR-Streaming-1.5B",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22210084800,
+  "storage_human": "22.2 GB",
+  "base_model": "microsoft/VibeVoice-ASR-Streaming-1.5B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NBA Scores, 2026-27 Season - ESPN",
+      "url": "https://www.espn.com/nba/scoreboard",
+      "snippet": "Live scores for every 2026-27 NBA season game on ESPN. Includes box scores, video highlights, play breakdowns and updated odds."
+    },
+    {
+      "title": "The official site of the NBA for the latest NBA Scores, Stats & News ...",
+      "url": "https://www.nba.com/",
+      "snippet": "Follow the action on NBA scores, schedules, stats, news, teams, and players. Buy tickets or watch the games anywhere with NBA …"
+    },
+    {
+      "title": "NBA on ESPN - Scores, Stats and Highlights",
+      "url": "https://www.espn.com/nba/",
+      "snippet": "Visit ESPN for NBA live scores, video highlights and latest news. Stream games on ESPN and play Fantasy Basketball."
+    },
+    {
+      "title": "NBA Scores 2026-27 - CBS Sports",
+      "url": "https://www.cbssports.com/nba/scoreboard/",
+      "snippet": "Our Latest NBA Stories Why Curry has no interest in the LeBron route of free agency Brad Botkin • 3 min read"
+    },
+    {
+      "title": "NBA Basketball Scores Today - AiScore",
+      "url": "https://www.aiscore.com/basketball",
+      "snippet": "Basketball scores today on AiScore Basketball livescore. Basketball scores from NBA, NCAA , college, Euroleague, ACB, FIBA …"
+    }
+  ]
+}

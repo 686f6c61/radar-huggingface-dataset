@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "AiMamis/Pixie",
+  "slug": "aimamis-pixie",
+  "author": "AiMamis",
+  "url": "https://huggingface.co/AiMamis/Pixie",
+  "created_at": "2026-09-19T20:19:23.000Z",
+  "updated_at": "2026-09-19T20:20:05.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "license:openrail++",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 458928444,
+  "storage_human": "459 MB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "base de datos - Error en código PL/SQL - Stack Overflow en español",
+      "url": "https://es.stackoverflow.com/questions/167124/error-en-c%c3%b3digo-pl-sql",
+      "snippet": "Hay algunos detalles que deben ser corregidos en el código. La sintaxis Según la documentación de Oracle /PLSQL la sintaxis de …"
+    },
+    {
+      "title": "No se puede resolver el símbolo @Transactional",
+      "url": "https://es.stackoverflow.com/questions/572384/no-se-puede-resolver-el-s%c3%admbolo-transactional",
+      "snippet": "Dec 5, 2022 · spring-boot-starter-web, spring-boot-starter-tomcat, spring-boot-starter-test, spring-test, spring-context y estaba …"
+    },
+    {
+      "title": "¿Cómo insertar comillas simples en base de datos MySQL con PHP?",
+      "url": "https://es.stackoverflow.com/questions/85873/c%c3%b3mo-insertar-comillas-simples-en-base-de-datos-mysql-con-php",
+      "snippet": "Jul 10, 2017 · Cuando un usuario ingresa comillas simples o dobles en un formulario que tengo, los datos no se ingresan en la base …"
+    },
+    {
+      "title": "TypeError: undefined is not iterable (cannot read property Symbol ...",
+      "url": "https://es.stackoverflow.com/questions/493498/typeerror-undefined-is-not-iterable-cannot-read-property-symbolsymbol-iterato",
+      "snippet": "Oct 28, 2021 · TypeError: undefined is not iterable (cannot read property Symbol (Symbol.iterator)) Formular una pregunta …"
+    },
+    {
+      "title": "C++ error LNK2019 Unresolved external symbol",
+      "url": "https://es.stackoverflow.com/questions/208080/c-error-lnk2019-unresolved-external-symbol",
+      "snippet": "Tengo un error y no se como resolverlo, informcion extra es: Visual studio 2017, en un empty project. LNK2019 unresolved external …"
+    }
+  ]
+}

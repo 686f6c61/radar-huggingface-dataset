@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "abdullah1904/NYC-House-Types-Classifier",
+  "slug": "abdullah1904-nyc-house-types-classifier",
+  "author": "abdullah1904",
+  "url": "https://huggingface.co/abdullah1904/NYC-House-Types-Classifier",
+  "created_at": "2026-09-19T22:21:11.000Z",
+  "updated_at": "2026-09-19T22:30:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": "scikit-learn",
+  "languages": [],
+  "tags": [
+    "scikit-learn",
+    "classification",
+    "random-forest",
+    "tabular-data",
+    "airbnb",
+    "new-york-city",
+    "tabular-classification",
+    "dataset:custom",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 109093347,
+  "storage_human": "109 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.be/index.html",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=nl-BE",
+      "snippet": "Adverteren Alles over Google Google.com in English © 2026 - Privacy - Voorwaarden"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=de-BE",
+      "snippet": "Werbeprogramme Über Google Google.com in English © 2026 - Datenschutzerklärung - Nutzungsbedingungen"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=fr-BE",
+      "snippet": "Publicité À propos de Google Google.com in English © 2026 - Confidentialité - Conditions"
+    },
+    {
+      "title": "Google Afbeeldingen",
+      "url": "https://www.google.be/imghp?hl=nl&ogbl",
+      "snippet": "Google Afbeeldingen. De grootste zoekmachine voor afbeeldingen op internet."
+    }
+  ]
+}

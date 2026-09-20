@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Sudarshan18/gr00t-n17-g1-brainco-handover",
+  "slug": "sudarshan18-gr00t-n17-g1-brainco-handover",
+  "author": "Sudarshan18",
+  "url": "https://huggingface.co/Sudarshan18/gr00t-n17-g1-brainco-handover",
+  "created_at": "2026-09-19T22:15:26.000Z",
+  "updated_at": "2026-09-19T22:17:45.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "Gr00tN1d7",
+    "robotics",
+    "manipulation",
+    "bimanual",
+    "isaac-lab",
+    "unitree-g1",
+    "brainco-revo2",
+    "gr00t",
+    "base_model:nvidia/GR00T-N1.7-3B",
+    "base_model:finetune:nvidia/GR00T-N1.7-3B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 12576206801,
+  "storage_human": "12.6 GB",
+  "base_model": "nvidia/GR00T-N1.7-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google als Startseite festlegen - Google Suche-Hilfe",
+      "url": "https://support.google.com/websearch/answer/463?hl=de",
+      "snippet": "Google wurde ohne meine Zustimmung als Startseite festgelegt Google ändert die Einstellungen für Ihre Startseite nicht ohne Ihre …"
+    },
+    {
+      "title": "Google-Konto für Gmail erstellen - Gmail-Hilfe",
+      "url": "https://support.google.com/mail/answer/56256?hl=de",
+      "snippet": "Wichtig: Melden Sie sich von Ihrem aktuellen Konto ab, bevor Sie ein neues Google-Konto erstellen. Hier erfahren Sie, wie Sie sich …"
+    },
+    {
+      "title": "Prélèvement \"CB Google\" inconnu. Arnaque - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-35656629-prelevement-cb-google-inconnu-arnaque",
+      "snippet": "Mar 17, 2022 · Bonjour également jai un un prélèvement de 99.99 de Google Londres . Voici les démarches à suivre . 1) telephoner …"
+    },
+    {
+      "title": "Définir Google comme moteur de recherche par défaut",
+      "url": "https://support.google.com/websearch/answer/464?hl=fr",
+      "snippet": "Pour obtenir des résultats de Google chaque fois que vous effectuez une recherche, vous pouvez en faire votre moteur de recherche …"
+    },
+    {
+      "title": "Afficher ou supprimer votre historique de navigation Chrome",
+      "url": "https://support.google.com/chrome/answer/95589?hl=fr-001&co=GENIE.Platform%3DDesktop",
+      "snippet": "Lorsque vous supprimez votre historique de navigation dans Chrome, il est également supprimé sur les appareils sur lesquels vous …"
+    }
+  ]
+}

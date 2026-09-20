@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "AtsushiHatake/ai-agent-sme-sentiment-mbert",
+  "slug": "atsushihatake-ai-agent-sme-sentiment-mbert",
+  "author": "AtsushiHatake",
+  "url": "https://huggingface.co/AtsushiHatake/ai-agent-sme-sentiment-mbert",
+  "created_at": "2026-09-20T02:00:51.000Z",
+  "updated_at": "2026-09-20T03:15:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "sentiment-analysis",
+    "hospitality",
+    "multilingual",
+    "synthetic-data",
+    "ja",
+    "en",
+    "base_model:google-bert/bert-base-multilingual-cased",
+    "base_model:finetune:google-bert/bert-base-multilingual-cased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 23,
+  "trending_score": 0,
+  "parameters": 177855747,
+  "parameters_human": "177.9M",
+  "storage_bytes": 711446532,
+  "storage_human": "711 MB",
+  "base_model": "google-bert/bert-base-multilingual-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Soursop:18 Benefits, Nutrition, Side Effects & How to Eat It",
+      "url": "https://naturalremedyideas.com/soursop/",
+      "snippet": "Oct 10, 2025 · In this article, we’ll explore the 18 most impressive health benefits of soursop, examine its nutritional composition, and …"
+    },
+    {
+      "title": "Health Benefits of Soursop - WebMD",
+      "url": "https://www.webmd.com/food-recipes/health-benefits-soursop",
+      "snippet": "Jan 12, 2025 · Soursop may have health benefits for your heart, gut, and blood pressure. See what researchers are learning about …"
+    },
+    {
+      "title": "Soursop: 20 Benefits, Nutrition, Side Effects, Uses & How Much to Eat",
+      "url": "https://myhealthopedia.com/soursop-benefits-nutrition-side-effects-uses/",
+      "snippet": "Oct 9, 2025 · Discover the power of soursop, a tropical superfruit packed with nutrients. Learn its nutrition facts, 20 health benefits, 10 …"
+    },
+    {
+      "title": "6 Health Benefits of Soursop",
+      "url": "https://health.clevelandclinic.org/soursop-benefits",
+      "snippet": "Oct 30, 2025 · Soursop, a fruit that has a sweet-tart flavor, may have potential health benefits, like reducing inflammation and …"
+    },
+    {
+      "title": "13 soursop benefits and how to add it to your diet - SingleCare",
+      "url": "https://www.singlecare.com/blog/soursop-benefits/",
+      "snippet": "Mar 26, 2026 · Soursop benefits include immune support, antibacterial effects, and reduced inflammation from its fruit and leaves. …"
+    }
+  ]
+}

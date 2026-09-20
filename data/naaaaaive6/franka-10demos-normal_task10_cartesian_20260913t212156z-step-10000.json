@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "NaaaaaiVe6/franka-10demos-normal_task10_cartesian_20260913T212156Z-step-10000",
+  "slug": "naaaaaive6-franka-10demos-normal_task10_cartesian_20260913t212156z-step-10000",
+  "author": "NaaaaaiVe6",
+  "url": "https://huggingface.co/NaaaaaiVe6/franka-10demos-normal_task10_cartesian_20260913T212156Z-step-10000",
+  "created_at": "2026-09-19T20:27:30.000Z",
+  "updated_at": "2026-09-19T20:29:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3616757520,
+  "parameters_human": "3.62B",
+  "storage_bytes": 7233650408,
+  "storage_human": "7.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎知学堂 - 知乎",
+      "url": "https://www.zhihu.com/education/learning",
+      "snippet": "知乎知学堂 - 知乎旗下职业教育品牌，专注于成人用户职业发展，聚集各领域优质教育资源，依托自身科技实力打造的一站式在线职业 …"
+    },
+    {
+      "title": "FanFanFan - 知乎",
+      "url": "https://www.zhihu.com/people/ffancage/",
+      "snippet": "2 days ago · FanFanFan是知乎的用户，拥有丰富的回答经验和高赞记录，分享知识与见解。"
+    },
+    {
+      "title": "Xbox 360 NXE Wallpapers (preformatted) - [H]ard|Forum",
+      "url": "https://hardforum.com/threads/xbox-360-nxe-wallpapers-preformatted.1436213/",
+      "snippet": "Jul 17, 2009 · Me and a buddy just made a blog with a good bit of wallpapers for the Xbox 360. The Xbox 360 allows the user to set …"
+    },
+    {
+      "title": "BF3 Stuttering/studdering/hitching fix | [H]ard|Forum",
+      "url": "https://hardforum.com/threads/bf3-stuttering-studdering-hitching-fix.1659694/",
+      "snippet": "Dec 17, 2011 · Sorry if this is posted somewhere in the BF3 thread.. but that's turned into a long read. :p I had this issue from BETA …"
+    },
+    {
+      "title": "Jets vs Titans Prediction, Top Picks & TD Scorer for NFL Week 1",
+      "url": "https://www.covers.com/nfl/jets-vs-titans-predictions-picks-best-bets-sept-13-2026",
+      "snippet": "Sep 12, 2026 · My Jets vs. Titans prediction favors Tennessee -1.5, with Cam Ward rushing and Geno Smith interception angles …"
+    }
+  ]
+}

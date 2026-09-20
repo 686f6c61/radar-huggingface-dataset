@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "menik1126/ovd-math-1-data-rlvr-step600",
+  "slug": "menik1126-ovd-math-1-data-rlvr-step600",
+  "author": "menik1126",
+  "url": "https://huggingface.co/menik1126/ovd-math-1-data-rlvr-step600",
+  "created_at": "2026-09-19T22:31:36.000Z",
+  "updated_at": "2026-09-19T22:39:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1777088000,
+  "parameters_human": "1.78B",
+  "storage_bytes": 7119812336,
+  "storage_human": "7.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Доставка пиццы в Санкт-Петербурге | Пицца Папа Джонс",
+      "url": "https://papajohns.ru/sankt-peterburg",
+      "snippet": "Выберите свою идеальную пиццу и заказывайте с доставкой в Санкт-Петербурге! На нашем сайте и в приложении Папа …"
+    },
+    {
+      "title": "Пицца — заказать доставку от 30 минут в Санкт-Петербурге",
+      "url": "https://eda.yandex.ru/spb/d/pizza",
+      "snippet": "Пицца — заказать в сервисе Яндекс Еда с доставкой в Санкт-Петербурге от 30 минут. В офис или на дом. Первая доставка …"
+    },
+    {
+      "title": "Пицца - 10 лучших ресторанов Санкт-Петербурга 2026",
+      "url": "https://www.tripadvisor.ru/Restaurants-g298507-c31-St_Petersburg_Northwestern_District.html",
+      "snippet": "Пинцерия by Bontempi. Очень вкусно! Шикарная пицца!!! 2. LEO Гриль & Пицца. 3. ЛаЧеллетта Кафе. 4. Литтл Сицили. Вери …"
+    },
+    {
+      "title": "ТОП-50: Пиццерии в Санкт-Петербурге - адреса, телефоны, …",
+      "url": "https://sankt-peterburg1.jsprav.ru/pitstserii/",
+      "snippet": "4 days ago · Ресторан-пиццерия — 1067 компаний в Санкт-Петербурге; — удобный поиск организаций Санкт-Петербурга, …"
+    },
+    {
+      "title": "Пицца в Санкт-Петербурге",
+      "url": "https://piter.pizzahut.ru/menu/pitstsa",
+      "snippet": "Бесплатная доставка пиццы на дом или в офис от 890 рублей за 30 минут по Санкт-Петербургу от сети пиццерий Pizza Hut! …"
+    }
+  ]
+}

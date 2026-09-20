@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "weihang44/Causal-Forcing-Memory-Checkpoints",
+  "slug": "weihang44-causal-forcing-memory-checkpoints",
+  "author": "weihang44",
+  "url": "https://huggingface.co/weihang44/Causal-Forcing-Memory-Checkpoints",
+  "created_at": "2026-09-20T02:09:00.000Z",
+  "updated_at": "2026-09-20T02:55:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "causal-forcing",
+    "video-compression",
+    "memory-compression",
+    "pytorch",
+    "distributed-checkpoint",
+    "text-to-video",
+    "en",
+    "base_model:zhuhz22/Causal-Forcing",
+    "base_model:finetune:zhuhz22/Causal-Forcing",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 28409594049,
+  "storage_human": "28.4 GB",
+  "base_model": "zhuhz22/Causal-Forcing",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Asphalt 8: Airborne - تنزيل وتشغيل على Windows | Microsoft Store مجاناً",
+      "url": "https://apps.microsoft.com/detail/9wzdncrfj26j?hl=ar-SA&gl=SA",
+      "snippet": "من الدراجات إلى السيارات، حصلنا عليها جميعًا! • التفاعلات بين المركبة والبيئة والمضمار مبنية بالكامل على قوانين الفيزياء! • لعبة إلكترونية قوية: استمتع بإثارة سباقات سرعة تتحدى الجاذبية عبر أكثر من …"
+    },
+    {
+      "title": "العب \"Asphalt 8 - لعبة سباق سيارات\" على الكمبيوتر | نزِّل اللعبة الآن ...",
+      "url": "https://play.google.com/pc-store/games/details?id=com.gameloft.android.ANMP.GloftA8HM&hl=ar",
+      "snippet": "خُض سباقات متعددة اللاعبين مع سيارات ودراجات بخارية سريعة. نزّل لعبة \"Asphalt 8 - لعبة سباق سيارات\" واستمتِع بلعبها على الكمبيوتر."
+    },
+    {
+      "title": "العب \"Car Race\" على الكمبيوتر | نزِّل اللعبة الآن - متجر Google Play",
+      "url": "https://play.google.com/pc-store/games/details?id=com.dino.race.master&hl=ar",
+      "snippet": "تجربة لعبة سباق السيارات المثالية على الإطلاق! نزّل لعبة \"Car Race\" واستمتِع بلعبها على الكمبيوتر."
+    },
+    {
+      "title": "ألعاب سباق - Microsoft Apps",
+      "url": "https://apps.microsoft.com/collections/curated/racing-games?hl=ar-SA&gl=SA",
+      "snippet": "ألعاب سباق شغّل محركاتك! ادخل في سباق مع أسرع السيارات في العالم وغيرها من المركبات البرية عبر طرق مثيرة وخطرة."
+    },
+    {
+      "title": "ألعاب سيارة - العبها الآن مجانًا على كريزي جيمز!",
+      "url": "https://www.crazygames.com/ar/t/car",
+      "snippet": "تسابق مع السيارات بسرعات عالية واندفع حول الزوايا الضيقة في مجموعتنا الكاملة من ألعاب السيارات المجانية على الإنترنت. العبها الآن مجانًا على متصفح الويب الخاص بك."
+    }
+  ]
+}

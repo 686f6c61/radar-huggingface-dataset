@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "yuvalgot/new_fold_diffusion_towel_fold2_20260919",
+  "slug": "yuvalgot-new_fold_diffusion_towel_fold2_20260919",
+  "author": "yuvalgot",
+  "url": "https://huggingface.co/yuvalgot/new_fold_diffusion_towel_fold2_20260919",
+  "created_at": "2026-09-20T00:24:23.000Z",
+  "updated_at": "2026-09-20T00:25:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "diffusion",
+    "dataset:yuvalgot/new_fold_towel_2_og_dataset_20260919_183952_clean",
+    "arxiv:2303.04137",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 262962502,
+  "parameters_human": "263.0M",
+  "storage_bytes": 1051895760,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "عايزه اعرف لو أنا بنت وعايزه اسعي في موضوع جوازي ممكن اعمل اي لان محدش ...",
+      "url": "https://www.facebook.com/groups/1171820462861786/posts/9530121450364937/",
+      "snippet": "Mar 10, 2025 · جربي تغيري في شكلك لو حاسة إن ده هيفرق معاكِ في إحساسك بنفسك. 5. الدعاء والتوكل على الله مع الأخذ بالأسباب الجواز رزق زيه زي أي حاجة، والسعي مطلوب، لكن في النهاية …"
+    },
+    {
+      "title": "انا بنت وأريد أن اعمل .. فما هي الفرص التي متاحة لي؟",
+      "url": "https://www.fedni.net/q/62757088/%D8%A7%D9%86%D8%A7-%D8%A8%D9%86%D8%AA-%D9%88%D8%A3%D8%B1%D9%8A%D8%AF-%D8%A3%D9%86-%D8%A7%D8%B9%D9%85%D9%84-%D9%81%D9%85%D8%A7",
+      "snippet": "ممكن تفتحي مشروع صغير مثل خياطة او ميكب ارتست او حتى تعملي اكسسوارات او تصاميم ملابس و ممكن لو تعرفي في البرمجيات و التصميم ممكن تصممي مواقع و تبيعيها او لو في طلبه عايز تصميم …"
+    },
+    {
+      "title": "الهدف الروحي الأساسي لكل الرهبان | نظام الدير - مقال رهبنة البنات ما ...",
+      "url": "https://st-takla.org/books/pauline-todary/nuns/aim.html",
+      "snippet": "كل الرهبان يشتركون في العمل بالدير في مجموعات مختلفة مخصصة لكل بيت. وفي حالة بيوت الراهبات، فبعض منهن إن لم يكن كلهن كانوا مسئولين عن أعمال الحياكة للملابس. وكان بالدير مكان عام للأكل، ومكان …"
+    },
+    {
+      "title": "انا بنت بس عايزة ابقى ولد اعمل ايه : r/LGBTEgypt",
+      "url": "https://www.reddit.com/r/LGBTEgypt/comments/15h8owy/%D8%A7%D9%86%D8%A7_%D8%A8%D9%86%D8%AA_%D8%A8%D8%B3_%D8%B9%D8%A7%D9%8A%D8%B2%D8%A9_%D8%A7%D8%A8%D9%82%D9%89_%D9%88%D9%84%D8%AF_%D8%A7%D8%B9%D9%85%D9%84_%D8%A7%D9%8A%D9%87/",
+      "snippet": "Aug 3, 2023 · ممكن تحاولي الاول تقعدي مع دكتور عشان يساعدك تعرفي اذا كنتي عابرة فعلا ولا لأ. وبالمناسبة تعريف العابر جنسيا أو الترانسجندر هو شخص جنسه من الولادة لا يتوافق مع …"
+    },
+    {
+      "title": "شغل للبنات فقط | Facebook",
+      "url": "https://www.facebook.com/groups/967241331410516/",
+      "snippet": "عاوزة شغل من مكانك؟ 😉 🛑 شركة ماركيتنج بتقدملك فرص فورية لوظايف للسيدات وخريجات التعليم المتوسط والمؤهلات العالية ! 🎓💼 الوظيفة 6 ساعات في اليوم من البيت على تطبيق الشركة، والمرتبات بتبدأ من …"
+    }
+  ]
+}

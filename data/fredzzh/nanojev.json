@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fredzzh/NanoJev",
+  "slug": "fredzzh-nanojev",
+  "author": "fredzzh",
+  "url": "https://huggingface.co/fredzzh/NanoJev",
+  "created_at": "2026-09-19T23:41:04.000Z",
+  "updated_at": "2026-09-19T23:41:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "pytorch",
+    "nanojev",
+    "decision-model",
+    "probability-distributions",
+    "parallel-inference",
+    "navigation",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19091736890,
+  "storage_human": "19.1 GB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Suchergebnis Auf Amazon.de Für: Klappmatratze",
+      "url": "https://www.amazon.de/klappmatratze/s?k=klappmatratze",
+      "snippet": "Klappbare Matratze | 190x60x7 cm | Waschbarer Bezug für einfache Reinigung | Klappmatratze mit Viscoschaum - Faltmatratze für …"
+    },
+    {
+      "title": "Klappmatratzen günstig online kaufen | Kaufland.de",
+      "url": "https://www.kaufland.de/c/klappmatratzen/~69452/?msockid=21a60321cf0c6b342d7914f8ce3e6a40",
+      "snippet": "Während ein klassisches Gästebett einen festen Platz in der Wohnung benötigt, bietet eine Klappmatratze eine gemütliche …"
+    },
+    {
+      "title": "Klapp Matratzen online kaufen » Klappbare Matratzen | OTTO",
+      "url": "https://www.otto.de/heimtextilien/matratzen/?ausstattung=klappbar",
+      "snippet": "Wenn du deine Klappmatratze mit dem Kopfteil an eine feste Rückwand lehnst, kannst du sie als Sofa benutzen und bei Besuch eine …"
+    },
+    {
+      "title": "Faltmatratze 60x190cm HYLLA | JYSK",
+      "url": "https://jysk.de/schlafzimmer/matratzen/schaumstoffmatratzen/faltmatratze-60x190cm-hylla",
+      "snippet": "Die HYLLA Faltmatratze 60x190 cm bietet die ganze Nacht über optimalen Halt und Komfort. Schaumstoffmatratzen passen sich in …"
+    },
+    {
+      "title": "Suchergebnis Auf Amazon.de Für: Klappbare Matratze",
+      "url": "https://www.amazon.de/klappbare-matratze/s?k=klappbare+matratze",
+      "snippet": "Z-hom Klappmatratze, Gästematratze, 3-teilige Faltmatratze, Dicke Schaumstoffmatratze, Faltbare Matratze, Erwachsene, …"
+    }
+  ]
+}

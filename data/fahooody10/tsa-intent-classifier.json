@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "fahooody10/tsa-intent-classifier",
+  "slug": "fahooody10-tsa-intent-classifier",
+  "author": "fahooody10",
+  "url": "https://huggingface.co/fahooody10/tsa-intent-classifier",
+  "created_at": "2026-09-19T20:43:32.000Z",
+  "updated_at": "2026-09-20T10:43:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33363080,
+  "parameters_human": "33.4M",
+  "storage_bytes": 669177664,
+  "storage_human": "669 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BSc alapképzés - Matematikai Intézet",
+      "url": "https://www.math.elte.hu/kepzesek/bsc-alapkepzes/",
+      "snippet": "Az alábbiak azokra a hallgatókra vonatkoznak, akik 2020-ban, vagy ezután kezdik a matematika alapszakot. A specializációk …"
+    },
+    {
+      "title": "BSc matematika alapszak 2022 - Matematikai Intézet",
+      "url": "https://www.math.elte.hu/kepzesek/bsc-alapkepzes/bsc-matematika-tantervi-halo-tervezo/",
+      "snippet": "A matematika alapszakon a 2022/2023-as tanévtől kezdve nincsenek specializációk. A specializációt, vagyik a hallgatók által …"
+    },
+    {
+      "title": "BSc Matematika alapszak – tájékoztató - ELTE",
+      "url": "https://ewkiss.web.elte.hu/html/ujbsc/ujhonlap/BSc_tajekoztato.html",
+      "snippet": "Az ELTE Matematikai Intézet által meghirdetett matematikus, alkalmazott matematikus, biztosítási és pénzügyi matematikai, valamint …"
+    },
+    {
+      "title": "Matematika BSc | Eötvös Loránd Tudományegyetem - ttk.elte.hu",
+      "url": "https://ttk.elte.hu/matematika_bsc",
+      "snippet": "Sep 30, 2024 · Fejleszd logikai és analitikus gondolkodásod! A matematika BSc alapot ad kutatás, oktatás és informatikai karrierhez."
+    },
+    {
+      "title": "BSc Matematika alapszak – tájékoztató - ELTE",
+      "url": "https://ewkiss.web.elte.hu/html/MatBSc2020/BSc/BSc_tajekoztato_2020.html",
+      "snippet": "Az ELTE Matematikai Intézet által meghirdetett matematikus, alkalmazott matematikus, biztosítási és pénzügyi matematikai, valamint …"
+    }
+  ]
+}

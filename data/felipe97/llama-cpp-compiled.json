@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Felipe97/llama-cpp-compiled",
+  "slug": "felipe97-llama-cpp-compiled",
+  "author": "Felipe97",
+  "url": "https://huggingface.co/Felipe97/llama-cpp-compiled",
+  "created_at": "2026-09-19T22:12:20.000Z",
+  "updated_at": "2026-09-19T22:13:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 0,
+  "parameters_human": null,
+  "storage_bytes": 182609111,
+  "storage_human": "183 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KI im Studium - Code of Conduct - Campus - WU",
+      "url": "https://www.wu.ac.at/studierende/campus/code-of-conduct/ki-im-studium",
+      "snippet": "Deshalb möchten wir Ihnen Anregungen geben, wie der Gebrauch von KI-Tools in Ihrer akademischen Praxis aussehen kann. Dabei …"
+    },
+    {
+      "title": "Umgang mit KI im Studium - studieren.univie.ac.at",
+      "url": "https://studieren.univie.ac.at/umgang-mit-ki-im-studium/",
+      "snippet": "Sie erfahren, unter welchen Voraussetzungen KI genutzt werden darf, welche Besonderheiten bei Prüfungen gelten und worauf beim …"
+    },
+    {
+      "title": "KI-Prinzipien - WU (Wirtschaftsuniversität Wien)",
+      "url": "https://www.wu.ac.at/ki-prinzipien",
+      "snippet": "Die WU hat den Anspruch, die verschiedenen Qualitätsdimensionen im Umgang mit KI gebührend zu berücksichtigen. Diese …"
+    },
+    {
+      "title": "u:ai – Das KI-Tool der Universität Wien",
+      "url": "https://studieren.univie.ac.at/umgang-mit-ki-im-studium/uai-das-ki-tool-der-universitaet-wien/",
+      "snippet": "u:ai ist die KI-Plattform der Universität Wien und ermöglicht Studierenden einen datenschutzkonformen Zugang zu verschiedenen KI …"
+    },
+    {
+      "title": "u:ai – KI-Software",
+      "url": "https://zid.univie.ac.at/uai/",
+      "snippet": "Der u:ai-API-Zugang steht Mitarbeiter*innen und Studierenden zur Verfügung. Er ist für Anwendungsfälle geeignet, in denen die …"
+    }
+  ]
+}

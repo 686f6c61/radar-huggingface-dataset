@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "robbiemu/paper2-kokoro-coreml-components",
+  "slug": "robbiemu-paper2-kokoro-coreml-components",
+  "author": "robbiemu",
+  "url": "https://huggingface.co/robbiemu/paper2-kokoro-coreml-components",
+  "created_at": "2026-09-19T20:04:06.000Z",
+  "updated_at": "2026-09-19T20:55:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "coreml",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "coreml",
+    "apple-silicon",
+    "model-components",
+    "audio",
+    "text-to-speech",
+    "duration-prediction",
+    "vocoder-components",
+    "en",
+    "base_model:hexgrad/Kokoro-82M",
+    "base_model:quantized:hexgrad/Kokoro-82M",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 107037847,
+  "storage_human": "107 MB",
+  "base_model": "hexgrad/Kokoro-82M",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Install & manage web apps - Chrome Web Store Help - Google Help",
+      "url": "https://support.google.com/chrome_webstore/answer/1053346?hl=en",
+      "snippet": "Go to the Chrome Web Store. Find and select the app you want. Click Add to Chrome, or if it's a paid app, click Buy. Note: If you're …"
+    },
+    {
+      "title": "Download or remove Chrome themes - Chrome Web Store Help",
+      "url": "https://support.google.com/chrome_webstore/answer/148695?hl=en",
+      "snippet": "Under \"Appearance,\" click Themes. You can also go to the gallery by visiting Chrome Web Store Themes. Click the thumbnails to …"
+    },
+    {
+      "title": "What is the Chrome Web Store? - Google Help",
+      "url": "https://support.google.com/chrome_webstore/answer/1047776?hl=en",
+      "snippet": "You can find apps, extensions, and browser themes for the Google Chrome browser in the Chrome Web Store. With these additions, …"
+    },
+    {
+      "title": "Tips for using the Chrome Web Store",
+      "url": "https://support.google.com/chrome_webstore/answer/1050673?hl=en-GB",
+      "snippet": "To browse Chrome Web Store, you can: Search for a specific term by entering your word or phrase in the search box in the upper-left …"
+    },
+    {
+      "title": "Chrome ウェブストア ヘルプ",
+      "url": "https://support.google.com/chrome_webstore/?hl=ja",
+      "snippet": "サービスを使用する際のヒントやチュートリアル、よくある質問に対する回答を閲覧できる、Google の Chrome ウェブストア ヘル …"
+    }
+  ]
+}

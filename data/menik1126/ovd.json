@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "menik1126/OVD",
+  "slug": "menik1126-ovd",
+  "author": "menik1126",
+  "url": "https://huggingface.co/menik1126/OVD",
+  "created_at": "2026-09-19T23:22:15.000Z",
+  "updated_at": "2026-09-19T23:41:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 135070879320,
+  "storage_human": "135.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "iniBuilds A380 Airliner for MSFS – iniBuilds Store",
+      "url": "https://inibuilds.com/products/inibuilds-a380-airliner-msfs-2024",
+      "snippet": "The iniBuilds A380 Airliner for Microsoft Flight Simulator 2024 brings the world’s largest passenger aircraft to life with an exceptional …"
+    },
+    {
+      "title": "The iniBuilds A380 will cost less than its A350 - MSFS Addons",
+      "url": "https://msfsaddons.com/2026/09/12/the-inibuilds-a380-will-cost-less-than-its-a350/",
+      "snippet": "Sep 12, 2026 · The iniBuilds A380 will cost less than its A350 The studio put up the store page without a visible price, but the code …"
+    },
+    {
+      "title": "Aircraft – iniBuilds Store",
+      "url": "https://inibuilds.com/collections/aircraft",
+      "snippet": "iniBuilds - Taking it to the next level."
+    },
+    {
+      "title": "Pricing question - iniBuilds website vs Marketplace",
+      "url": "https://forum.inibuilds.com/topic/41007-pricing-question-inibuilds-website-vs-marketplace/",
+      "snippet": "4 days ago · Why does the iniBuilds website show the A380 price as £65.99 (when clicking on the Aircraft menu button at the top), …"
+    },
+    {
+      "title": "iniBuilds A380 Airliner Development Update - August 2026",
+      "url": "https://forum.inibuilds.com/topic/37603-inibuilds-a380-airliner-development-update-august-2026/",
+      "snippet": "Aug 17, 2026 · Welcome back to another iniBuilds Aircraft Development Update! This time, we’ll be taking a closer look at some of …"
+    }
+  ]
+}

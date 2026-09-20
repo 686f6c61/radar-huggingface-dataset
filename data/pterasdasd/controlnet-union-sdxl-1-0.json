@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "pterasdasd/controlnet-union-sdxl-1.0",
+  "slug": "pterasdasd-controlnet-union-sdxl-1-0",
+  "author": "pterasdasd",
+  "url": "https://huggingface.co/pterasdasd/controlnet-union-sdxl-1.0",
+  "created_at": "2026-09-19T23:29:00.000Z",
+  "updated_at": "2026-09-19T23:29:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "Text-to-Image",
+    "ControlNet",
+    "Diffusers",
+    "Stable Diffusion",
+    "text-to-image",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1255958800,
+  "parameters_human": "1.26B",
+  "storage_bytes": 5030545936,
+  "storage_human": "5.0 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wheelchair service in Brent and Ealing | lnwh",
+      "url": "https://www.lnwh.nhs.uk/wheelchair-service-in-brent-and-ealing/",
+      "snippet": "Wheelchair service in Brent and Ealing Wheelchair services in Brent and Ealing are provided by AJM Healthcare. Telephone number: …"
+    },
+    {
+      "title": "Ajm Healthcare Limited - Park Royal Estate",
+      "url": "https://parkroyal.estate/business/ajm-healthcare-limited/",
+      "snippet": "Ajm Healthcare Limited Industrial Park, Unit 3 Abbey Rd, Commercial Way, NW10 7XF Website Retail"
+    },
+    {
+      "title": "NW10 7XF postcode, Willesden, Greater London - Streetlist",
+      "url": "https://www.streetlist.co.uk/nw/nw10/nw10-7/abbey-road/nw10-7xf/lib/db.php",
+      "snippet": "Most properties on Abbey Road use this postcode. NW10 7XF sits in Willesden, Greater London. Broadband data is available. The …"
+    },
+    {
+      "title": "Abbey Road, London, NW10 7XF - Residents, Businesses, Information …",
+      "url": "https://www.192.com/places/nw/nw10-7/nw10-7xf/",
+      "snippet": "Who lives in Abbey Road, London, NW10 7XF? And what businesses operate in this area? How much are people paying for property …"
+    },
+    {
+      "title": "Contact Camden and Islington Approved Repairer Service",
+      "url": "https://www.ajmhealthcare.com/local-service-centres/camden-islington/contact/",
+      "snippet": "You can contact us by filling in the form below or by email, telephone or post using the details on this page. We aim to reply to all …"
+    }
+  ]
+}

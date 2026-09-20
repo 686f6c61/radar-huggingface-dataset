@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-mis7_swift_jbbcal2_remove50",
+  "slug": "jeesup-svd-safety-mis7_swift_jbbcal2_remove50",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-mis7_swift_jbbcal2_remove50",
+  "created_at": "2026-09-19T21:36:14.000Z",
+  "updated_at": "2026-09-22T00:28:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:mistralai/Mistral-7B-Instruct-v0.2",
+    "base_model:finetune:mistralai/Mistral-7B-Instruct-v0.2",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7241732096,
+  "parameters_human": "7.24B",
+  "storage_bytes": 14483991459,
+  "storage_human": "14.5 GB",
+  "base_model": "mistralai/Mistral-7B-Instruct-v0.2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Minha Conexão: Teste a Velocidade Real da sua Internet",
+      "url": "https://www.minhaconexao.com.br/",
+      "snippet": "O Teste de internet - Internet Speed Test Minha Conexão - é um teste de velocidade desenvolvido para que você possa medir o …"
+    },
+    {
+      "title": "Speed Test by MyBroadband",
+      "url": "https://speedtest.mybroadband.co.za/",
+      "snippet": "Test your Internet connection quickly and accurately. Lightweight, easy-to-use, reliable and completely free."
+    },
+    {
+      "title": "Speedtest Copel - Teste de Velocidade da Internet",
+      "url": "https://www.minhaconexao.com.br/copel",
+      "snippet": "O Teste de internet - Internet Speed Test Minha Conexão - é um teste de velocidade desenvolvido para que você possa medir o …"
+    },
+    {
+      "title": "Tests de personnalité gratuits : A vous de jouer - Quizz.biz",
+      "url": "https://www.quizz.biz/annuaire/cat-quizz-255_0.html",
+      "snippet": "Réponds à chaque question des tests de personnalité proposés, consulte les résultats, et découvre des traits inattendus de ta …"
+    },
+    {
+      "title": "Rain 5G Home Internet speed test hits 620Mbps – MyBroadband",
+      "url": "https://mybroadband.co.za/news/5g/665582-rain-5g-home-internet-speed-test-hits-620mbps.html",
+      "snippet": "Apr 9, 2026 · Many users of Rain’s fixed-5G service are getting exceptionally fast speeds in 2026, an analysis by MyBroadband …"
+    }
+  ]
+}

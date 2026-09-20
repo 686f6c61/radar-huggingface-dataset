@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "SeanWang0027/qwen3-1.7b-sciworld-rose-s10t5-gpt54mini-ep6",
+  "slug": "seanwang0027-qwen3-1-7b-sciworld-rose-s10t5-gpt54mini-ep6",
+  "author": "SeanWang0027",
+  "url": "https://huggingface.co/SeanWang0027/qwen3-1.7b-sciworld-rose-s10t5-gpt54mini-ep6",
+  "created_at": "2026-09-19T23:21:12.000Z",
+  "updated_at": "2026-09-19T23:21:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "scienceworld",
+    "agent",
+    "react",
+    "distillation",
+    "on-policy",
+    "conversational",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2031739904,
+  "parameters_human": "2.03B",
+  "storage_bytes": 4074938294,
+  "storage_human": "4.1 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reddit - Dive into anything",
+      "url": "https://www.reddit.com/",
+      "snippet": "Reddit is a network of communities where people can dive into their interests, hobbies and passions. There's a community for …"
+    },
+    {
+      "title": "Tesla Motors Club",
+      "url": "https://teslamotorsclub.com/",
+      "snippet": "Tesla Model S, Model 3, Model X, Model Y, Roadster, Cybertruck, Semi, and EV owners and enthusiasts forum, news blog, …"
+    },
+    {
+      "title": "Forum list | Tesla Motors Club",
+      "url": "https://teslamotorsclub.com/tmc/forums/-/list",
+      "snippet": "Aug 20, 2026 · Tesla Model S, Model 3, Model X, Model Y, Roadster, Cybertruck, Semi, and EV owners and enthusiasts forum, news …"
+    },
+    {
+      "title": "Tesla, UK - Reddit",
+      "url": "https://www.reddit.com/r/TeslaUK/",
+      "snippet": "This Subreddit has been created for discussion of Tesla (formerly Tesla Motors) in the UK."
+    },
+    {
+      "title": "Model 3: Ordering, Production, Delivery | Tesla Motors Club",
+      "url": "https://teslamotorsclub.com/tmc/forums/model-3-ordering-production-delivery.163/",
+      "snippet": "Aug 26, 2026 · Welcome to Tesla Motors Club Discuss Tesla's Model S, Model 3, Model X, Model Y, Cybertruck, Roadster and More."
+    }
+  ]
+}

@@ -43,8 +43,8 @@
   ],
   "is_conversational": false,
   "gated": false,
-  "removed": false,
-  "removed_at": null,
+  "removed": true,
+  "removed_at": "2026-09-20T03:30:09.643Z",
   "benchmarks": [
     {
       "task": "Sentiment analysis (Latin Arabizi)",

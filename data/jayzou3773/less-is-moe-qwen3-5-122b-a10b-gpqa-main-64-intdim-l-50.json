@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "jayzou3773/less-is-moe-qwen3.5-122b-a10b-gpqa-main-64-intdim-l-50",
+  "slug": "jayzou3773-less-is-moe-qwen3-5-122b-a10b-gpqa-main-64-intdim-l-50",
+  "author": "jayzou3773",
+  "url": "https://huggingface.co/jayzou3773/less-is-moe-qwen3.5-122b-a10b-gpqa-main-64-intdim-l-50",
+  "created_at": "2026-09-20T02:38:32.000Z",
+  "updated_at": "2026-09-20T02:43:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe_text",
+    "moe",
+    "pruning",
+    "less-is-moe",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-122B-A10B",
+    "base_model:finetune:Qwen/Qwen3.5-122B-A10B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 141,
+  "trending_score": 0,
+  "parameters": 64129468416,
+  "parameters_human": "64.13B",
+  "storage_bytes": 128279025597,
+  "storage_human": "128.3 GB",
+  "base_model": "Qwen/Qwen3.5-122B-A10B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Willkommen bei Warhammer",
+      "url": "https://www.warhammer.com/de-DE/home",
+      "snippet": "Probiere Warhammer in deinem örtlichen Laden aus Lerne gratis Basteln, Malen und Spielen mit freundlichen Experten, die dir beim …"
+    },
+    {
+      "title": "Welcome to Warhammer",
+      "url": "https://www.warhammer.com/en-GB/home",
+      "snippet": "Shop Warhammer Find the full range of Warhammer products, including items that are hard to find on store shelves, in one place."
+    },
+    {
+      "title": "Warhammer 40,000",
+      "url": "https://warhammer40000.com/",
+      "snippet": "A brand-new edition of Warhammer 40,000 is here, starting with the incredible Armageddon launch box, loaded with new miniatures, …"
+    },
+    {
+      "title": "Warhammer Stores",
+      "url": "https://stores.warhammer.com/de/",
+      "snippet": "Die Warhammer-Läden sind das Herz unserer Community. Schau in deinem örtlichen Laden vorbei, melde dich für Aktivitäten und …"
+    },
+    {
+      "title": "Home - Warhammer Community",
+      "url": "https://www.warhammer-community.com/",
+      "snippet": "1 day ago · Warhammer+ is your ticket to original animations and hundreds of Warhammer TV shows, as well as premium app …"
+    }
+  ]
+}

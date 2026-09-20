@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "PowerMachine/khjev-multimodal-ptbr",
+  "slug": "powermachine-khjev-multimodal-ptbr",
+  "author": "PowerMachine",
+  "url": "https://huggingface.co/PowerMachine/khjev-multimodal-ptbr",
+  "created_at": "2026-09-20T01:41:47.000Z",
+  "updated_at": "2026-09-20T01:44:39.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "mixture-of-experts",
+    "kohonen",
+    "som-attention",
+    "micro-units",
+    "transformer",
+    "cnn-bigru",
+    "bigru",
+    "multimodal",
+    "multi-token-prediction",
+    "medusa",
+    "speculative-decoding",
+    "dpo",
+    "pcgrad",
+    "int8",
+    "torchao",
+    "qat",
+    "long-context",
+    "token-merging",
+    "lra-qvit",
+    "engineer-agent",
+    "self-regulation",
+    "integral-state",
+    "parallel-classifiers",
+    "entropy-calibration",
+    "cython",
+    "pt-br",
+    "pt",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 125666773,
+  "storage_human": "126 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Online Games at Poki - Play Now!",
+      "url": "https://poki.com/?msockid=0e95530cd0226adb35b644d6d1836bf0",
+      "snippet": "Play free online games at Poki, the #1 website for instant web games. Explore exclusive titles, popular favorites, and new game …"
+    },
+    {
+      "title": "Poki - Speel Gratis Online Spelletjes!",
+      "url": "https://poki.com/nl?msockid=0e95530cd0226adb35b644d6d1836bf0",
+      "snippet": "Ontdek de wereld van gratis online spelletjes met Poki! Speel direct, zonder downloads, en geniet van spelletjes op de computer, …"
+    },
+    {
+      "title": "New Games — Poki",
+      "url": "https://poki.ac/new/",
+      "snippet": "This webpage contains all our latest game releases. If you are into discovering new games, this list will help you discover the latest …"
+    },
+    {
+      "title": "Poki Games - Free Online Games - Play Now! | poki.com",
+      "url": "https://poki.to/poki",
+      "snippet": "Poki Games is a free gaming platform packed with tons of fun without any sneaky charges or subscriptions. Not only can you play …"
+    },
+    {
+      "title": "Poki - Beste Gratis Online Spellen - Speel Nu",
+      "url": "https://poki.homes/nl",
+      "snippet": "Poki is een gratis online spelplatform waar je honderden spellen direct kunt spelen, zonder downloads of registratie. Onze spellen …"
+    }
+  ]
+}

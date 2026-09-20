@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Activate997/ornith-1.5-9b-finetuned",
+  "slug": "activate997-ornith-1-5-9b-finetuned",
+  "author": "Activate997",
+  "url": "https://huggingface.co/Activate997/ornith-1.5-9b-finetuned",
+  "created_at": "2026-09-20T00:37:34.000Z",
+  "updated_at": "2026-09-20T01:08:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:ornith-ai/Ornith-1.5-9B",
+    "base_model:finetune:ornith-ai/Ornith-1.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 19326293207,
+  "storage_human": "19.3 GB",
+  "base_model": "ornith-ai/Ornith-1.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Flight history for Cathay Pacific flight CX67 - Flightradar24",
+      "url": "https://www.flightradar24.com/data/flights/cx67",
+      "snippet": "CX67 (Cathay Pacific) - Live flight status, scheduled flights, flight arrival and departure times, flight tracks and playback, flight route …"
+    },
+    {
+      "title": "CX67 (CPA67) Cathay Pacific Flight Tracking and History - FlightAware",
+      "url": "https://www.flightaware.com/live/flight/CPA67",
+      "snippet": "Flight status, tracking, and historical data for Cathay Pacific 67 (CX67/CPA67) including scheduled, estimated, and actual departure …"
+    },
+    {
+      "title": "CX67 - Flug Cathay Pacific 67 (CPA67) - AirportInfo",
+      "url": "https://airportinfo.live/de/flug/cx67",
+      "snippet": "May 30, 2026 · Der internationale Cathay Pacific Flug CX67 / CPA67 startet von Frankfurt [FRA], Deutschland und fliegt nach …"
+    },
+    {
+      "title": "Flight history for Cathay Pacific flight CX67 - Flightradar24",
+      "url": "https://free.flightradar24.com/data/flights/cx67",
+      "snippet": "CX67 (Cathay Pacific) - Live flight status, scheduled flights, flight arrival and departure times, flight tracks and playback, flight route …"
+    },
+    {
+      "title": "CX67 Flight Status / Cathay Pacific CPA67 / CX 67 Flight Tracker",
+      "url": "https://airportinfo.live/flight/cx67",
+      "snippet": "The international Cathay Pacific flight CX67 / CPA67 departs from Frankfurt [FRA], Germany and flies to Milan [MXP], Italy. The …"
+    }
+  ]
+}

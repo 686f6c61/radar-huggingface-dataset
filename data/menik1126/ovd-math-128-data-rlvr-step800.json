@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "menik1126/ovd-math-128-data-rlvr-step800",
+  "slug": "menik1126-ovd-math-128-data-rlvr-step800",
+  "author": "menik1126",
+  "url": "https://huggingface.co/menik1126/ovd-math-128-data-rlvr-step800",
+  "created_at": "2026-09-19T22:17:02.000Z",
+  "updated_at": "2026-09-19T22:22:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1777088000,
+  "parameters_human": "1.78B",
+  "storage_bytes": 7119812336,
+  "storage_human": "7.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ruth Chizzini - Houlihan Lawrence | LinkedIn",
+      "url": "https://www.linkedin.com/in/ruth-chizzini-0721ba11",
+      "snippet": "View Ruth Chizzini’s profile on LinkedIn, a professional community of 1 billion members."
+    },
+    {
+      "title": "Ruth Chizzini on LinkedIn: Wonderful opportunity in Rye, NY!",
+      "url": "https://www.linkedin.com/posts/ruth-chizzini-0721ba11_wonderful-opportunity-in-rye-ny-activity-7064278781431087104-KmgU",
+      "snippet": "Wonderful opportunity in Rye, NY! Ruth Chizzini Associate Real Estate Broker at Houlihan Lawrence 1y"
+    },
+    {
+      "title": "Ruth Chizzini - Global Director, Networks & Licensed ... - ZoomInfo",
+      "url": "https://www.zoominfo.com/p/Ruth-Chizzini/10854790",
+      "snippet": "Get the details of Ruth Chizzini's business profile including email address, phone number, work history and more."
+    },
+    {
+      "title": "LinkedIn: Log In or Sign Up",
+      "url": "https://www.linkedin.com/",
+      "snippet": "Discover relevant posts and expert insights — curated by topic and in one place. Connect with buyers who have first-hand …"
+    },
+    {
+      "title": "Ruth Chizzini - Director Of Global Networks - Wiza",
+      "url": "https://wiza.co/d/houlihan-lawrence/af6d/ruth-chizzini",
+      "snippet": "Ruth works at Houlihan Lawrence as Director Of Global Networks - Licensed Associate Broker. Ruth is based out of Rye, New York, …"
+    }
+  ]
+}

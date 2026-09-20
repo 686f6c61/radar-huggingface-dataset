@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "UnbiasedBob/Unbiased-Bob-2",
+  "slug": "unbiasedbob-unbiased-bob-2",
+  "author": "UnbiasedBob",
+  "url": "https://huggingface.co/UnbiasedBob/Unbiased-Bob-2",
+  "created_at": "2026-09-20T01:55:35.000Z",
+  "updated_at": "2026-09-20T16:46:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3_5_moe",
+    "satire",
+    "novelty",
+    "text-generation",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:quantized:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": 35505251456,
+  "parameters_human": "35.51B",
+  "storage_bytes": 22663387424,
+  "storage_human": "22.7 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/?hl=tr",
+      "snippet": "Google'ın yapay zeka asistanı Gemini ile tanışın. Yazı yazma, planlama, beyin fırtınası yapma ve daha pek çok konuda yardım …"
+    },
+    {
+      "title": "Google'dan yapay zeka asistanınız Gemini",
+      "url": "https://gemini.google/tr/about/?hl=tr",
+      "snippet": "Google'ın yapay zeka asistanıyla yaratıcılığınıza ve üretkenliğinize güç katın. Yeni fikirler üretin, karmaşık konuları sadeleştirin ve …"
+    },
+    {
+      "title": "Cemine : Kullanımı, Yan Etkileri, Etkileşimler, Dozaj / Pillintrip",
+      "url": "https://pillintrip.com/tr/medicine/cemine",
+      "snippet": "Dec 22, 2025 · Cemine, aktif farmasötik bileşen olarak Setirizin Hidroklorür içeren bir ilaç ürünüdür. Bu madde, hidroksizinden …"
+    },
+    {
+      "title": "İstanbul Cemevi Eğitim ve Kültür Vakfı",
+      "url": "https://istanbulcemevi.org/hidrellez-cemine-davet-2026/",
+      "snippet": "Baharın gelişi, bereketin ve umudun simgesi Hıdırellez vesilesiyle bir araya geliyoruz. Canlarımızı birlik, rızalık ve muhabbet içinde …"
+    },
+    {
+      "title": "OFFICIAL WEBSITE INTERNATIONAL | CELINE",
+      "url": "https://www.celine.com/home",
+      "snippet": "Official CELINE International website. Explore and browse all the latest collections: handbags, leather goods, ready to wear, shoes, …"
+    }
+  ]
+}

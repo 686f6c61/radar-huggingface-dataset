@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "AlinaGonch/llama31-8b-squad-ratio-1.00-seed-42",
+  "slug": "alinagonch-llama31-8b-squad-ratio-1-00-seed-42",
+  "author": "AlinaGonch",
+  "url": "https://huggingface.co/AlinaGonch/llama31-8b-squad-ratio-1.00-seed-42",
+  "created_at": "2026-09-19T22:04:05.000Z",
+  "updated_at": "2026-09-19T22:04:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 185042160,
+  "storage_human": "185 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "有什么推荐的局域网（无外网）远程桌面软件？ - 知乎",
+      "url": "https://www.zhihu.com/question/447253187",
+      "snippet": "向日葵和TeamViewer需要登录ID才能使用，当只有局域网（没有互联网）的时候无法使用。飞秋可以查看对方桌…"
+    },
+    {
+      "title": "AnyDesk使用教程-百度经验",
+      "url": "https://jingyan.baidu.com/article/36d6ed1f6409881bcf4883cf.html",
+      "snippet": "Aug 13, 2016 · AnyDesk使用教程,有时候我们工作生活中可能会用到远程控制手段，通常情况下有使用widow自带的远程控制程序，但 …"
+    },
+    {
+      "title": "怎么禁止anydesk开机启动 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/fa4125ac92c0ad69ad709221.html",
+      "snippet": "Feb 29, 2020 · 4 在启动列表，找到anydesk，如下图所示 5 选中anydesk，点击禁用，如下图所示 6 看到anydesk后面的状态显示已禁 …"
+    },
+    {
+      "title": "为什么香蕉热量很高却能减肥? - 知乎",
+      "url": "https://www.zhihu.com/question/23496664",
+      "snippet": "准确的给大家科普下香蕉： 香蕉属于热带水果，每百克热量大约93千卡，含蛋白1.4克几乎不含脂肪，碳水化合物22克，膳食纤维1.2 …"
+    },
+    {
+      "title": "AnyDesk Remote Desktop 之後再remote server 機 ，黑屏，救解",
+      "url": "https://ithelp.ithome.com.tw/questions/10212443",
+      "snippet": "AnyDesk Remote Desktop 之後再remote server 機 ，黑屏，救解 remotedesktop anydesk teamviewer google remote 一神嵐一 2023 …"
+    }
+  ]
+}

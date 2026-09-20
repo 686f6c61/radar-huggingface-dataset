@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "id": "Optitransfer/Qwen2.5-7B-Instruct-converge-collective-v2",
+  "slug": "optitransfer-qwen2-5-7b-instruct-converge-collective-v2",
+  "author": "Optitransfer",
+  "url": "https://huggingface.co/Optitransfer/Qwen2.5-7B-Instruct-converge-collective-v2",
+  "created_at": "2026-09-19T21:57:42.000Z",
+  "updated_at": "2026-09-19T22:07:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "crdt",
+    "model-merging",
+    "collective-intelligence",
+    "merge",
+    "en",
+    "base_model:EleutherAI/pythia-1.4b",
+    "base_model:merge:EleutherAI/pythia-1.4b",
+    "base_model:EleutherAI/pythia-2.8b",
+    "base_model:merge:EleutherAI/pythia-2.8b",
+    "base_model:HuggingFaceTB/SmolLM2-1.7B-Instruct",
+    "base_model:merge:HuggingFaceTB/SmolLM2-1.7B-Instruct",
+    "base_model:Qwen/Qwen2.5-7B",
+    "base_model:merge:Qwen/Qwen2.5-7B",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:merge:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:Qwen/Qwen2.5-7B-Instruct-1M",
+    "base_model:merge:Qwen/Qwen2.5-7B-Instruct-1M",
+    "base_model:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "base_model:merge:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "base_model:facebook/opt-2.7b",
+    "base_model:merge:facebook/opt-2.7b",
+    "base_model:ibm-granite/granite-3.0-2b-instruct",
+    "base_model:merge:ibm-granite/granite-3.0-2b-instruct",
+    "base_model:microsoft/Phi-3-mini-4k-instruct",
+    "base_model:merge:microsoft/Phi-3-mini-4k-instruct",
+    "base_model:microsoft/phi-2",
+    "base_model:merge:microsoft/phi-2",
+    "base_model:mistralai/Mistral-7B-Instruct-v0.3",
+    "base_model:merge:mistralai/Mistral-7B-Instruct-v0.3",
+    "base_model:unsloth/Qwen2.5-7B-Instruct",
+    "base_model:merge:unsloth/Qwen2.5-7B-Instruct",
+    "base_model:unsloth/Qwen2.5-Coder-7B-Instruct",
+    "base_model:merge:unsloth/Qwen2.5-Coder-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15231271784,
+  "storage_human": "15.2 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct, mistralai/Mistral-7B-Instruct-v0.3, microsoft/Phi-3-mini-4k-instruct, microsoft/phi-2, HuggingFaceTB/SmolLM2-1.7B-Instruct, ibm-granite/granite-3.0-2b-instruct, EleutherAI/pythia-2.8b, EleutherAI/pythia-1.4b, facebook/opt-2.7b, Qwen/Qwen2.5-Coder-7B-Instruct, Qwen/Qwen2.5-7B, unsloth/Qwen2.5-7B-Instruct, unsloth/Qwen2.5-Coder-7B-Instruct, Qwen/Qwen2.5-7B-Instruct-1M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chase DeMoor - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Chase_DeMoor",
+      "snippet": "Chase Douglas DeMoor (born June 12, 1996) is an American professional boxer, actor, and former college football player. He …"
+    },
+    {
+      "title": "Chase DeMoor - YTBoxRec",
+      "url": "https://ytboxrec.com/fighters/chase-demoor/",
+      "snippet": "Jun 6, 2026 · Boxing Profile Birth Name Chase DeMoor Division Heavyweight Status Active Rounds 68 KOs 50% Career 2022-now …"
+    },
+    {
+      "title": "Chase Demoor - BoxRec",
+      "url": "https://boxrec.com/en/box-pro/1121210",
+      "snippet": "A boxer's reach is the distance between the fingertips of the outstretched arms. Pro debut for Knight. Demoor DQ'd for hitting Knight …"
+    },
+    {
+      "title": "Chase DeMoor Wiki, Age, Height, Net Worth, Girlfriend, Weight",
+      "url": "https://www.celebsta.com/chase-demoor/",
+      "snippet": "Sep 26, 2025 · Standing at 6’5″ with an 83-inch reach, Chase fights with an orthodox stance. He has become a prominent figure in …"
+    },
+    {
+      "title": "Chase DeMoor Age, Height, Career, Family, Net Worth",
+      "url": "https://www.wikicelebs.com/chase-demoor/",
+      "snippet": "Aug 8, 2026 · Chase DeMoor is known for his impressive physical presence. Standing tall at 6 feet 5 inches (195–196 cm), Chase …"
+    }
+  ]
+}

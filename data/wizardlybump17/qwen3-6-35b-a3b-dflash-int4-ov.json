@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "WizardlyBump17/Qwen3.6-35B-A3B-DFlash-int4-ov",
+  "slug": "wizardlybump17-qwen3-6-35b-a3b-dflash-int4-ov",
+  "author": "WizardlyBump17",
+  "url": "https://huggingface.co/WizardlyBump17/Qwen3.6-35B-A3B-DFlash-int4-ov",
+  "created_at": "2026-09-20T00:48:57.000Z",
+  "updated_at": "2026-09-20T01:00:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "openvino",
+    "qwen3",
+    "dflash",
+    "speculative-decoding",
+    "qwen3.6",
+    "custom_code",
+    "base_model:z-lab/Qwen3.6-35B-A3B-DFlash",
+    "base_model:finetune:z-lab/Qwen3.6-35B-A3B-DFlash",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 200483753,
+  "storage_human": "200 MB",
+  "base_model": "z-lab/Qwen3.6-35B-A3B-DFlash",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jeans Hosenröcke für Damen online kaufen | OTTO",
+      "url": "https://www.otto.de/damen/mode/roecke/hosenroecke/?material=jeans",
+      "snippet": "So findest du einen Jeans Hosenrock, der zu deinem Figurtyp und deinen Vorlieben passt. Entdecke jetzt die Möglichkeiten, die dir …"
+    },
+    {
+      "title": "Jeansröcke - Der lässige Denim-Klassiker online bei ZALANDO",
+      "url": "https://www.zalando.de/jeansrock/",
+      "snippet": "Moderne Jeansröcke spielen mit nachhaltigen Fasern, Stretch-Anteilen, recycelten Garnen und innovativen Waschverfahren. Das …"
+    },
+    {
+      "title": "Damen Jeansröcke | ZARA Deutschland",
+      "url": "https://www.zara.com/de/de/damen-roecke-denim-l1703.html",
+      "snippet": "Der Jeansrock ist ein beliebtes Kleidungsstück, das sowohl klassisch als auch extravagant kombiniert werden kann. Unsere …"
+    },
+    {
+      "title": "Jeansrock: Jeansröcke online kaufen | Peek & Cloppenburg",
+      "url": "https://www.peek-cloppenburg.de/de/damen/bekleidung/roecke/jeansroecke?msockid=17c8e1951dbd60590fc6f64f1c916174",
+      "snippet": "Der Maxirock aus Jeans steht vor allem großen Frauen. Er betont die Beine und bringt ihre harmonische Figur zur Geltung. Aber …"
+    },
+    {
+      "title": "Jeans-Hosenrock - Denim - Damen | Bershka",
+      "url": "https://www.bershka.com/de/jeans-hosenrock-c0p229730009.html?msockid=17c8e1951dbd60590fc6f64f1c916174",
+      "snippet": "Brauchst du Hilfe? Anrufen 0800 1 888 925 Außer Betrieb Von montags bis freitags von 09:00 bis 17:00. Jeans-Hosenrock. Erhältlich …"
+    }
+  ]
+}

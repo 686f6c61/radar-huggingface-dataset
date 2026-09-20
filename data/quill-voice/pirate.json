@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "quill-voice/pirate",
+  "slug": "quill-voice-pirate",
+  "author": "quill-voice",
+  "url": "https://huggingface.co/quill-voice/pirate",
+  "created_at": "2026-09-20T01:02:00.000Z",
+  "updated_at": "2026-09-20T01:02:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "pirate",
+    "roleplay",
+    "instruction-tuning",
+    "historical",
+    "education",
+    "ollama",
+    "text-generation",
+    "en",
+    "dataset:custom-pirate-instruct-v1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4326350848,
+  "parameters_human": "4.33B",
+  "storage_bytes": 2783446400,
+  "storage_human": "2.8 GB",
+  "base_model": "meta-llama/Llama-3-8B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Classement Ligue 2 2026-2027 : Championnat de France - Football",
+      "url": "https://www.lequipe.fr/Football/ligue-2/page-classement-equipes/general",
+      "snippet": "Ligue 2 2026-2027 : retrouvez le Classement général sur L'Équipe."
+    },
+    {
+      "title": "Résultat classement FRANCE Ligue 2 - Football - MAXIFOOT",
+      "url": "https://www.maxifoot.fr/resultat-ligue-2-france.htm",
+      "snippet": "Retrouvez ici tous les derniers résultats avec les buteurs des matchs, le classement mis à jour dès la fin des matchs, le classements …"
+    },
+    {
+      "title": "Classement Ligue 2 en direct - Football - L'Équipe",
+      "url": "https://www.lequipe.fr/Football/ligue-2/page-classement-equipes/en-direct",
+      "snippet": "Ligue 2 : Retrouvez le classement en direct sur L'Équipe."
+    },
+    {
+      "title": "Classement Ligue 2 2026/2027 | Championnat de France",
+      "url": "https://www.footmercato.net/france/ligue-2/classement",
+      "snippet": "Suivez le classement Ligue 2 en direct pour la saison 2026/2027 : points, victoires, défaites, nuls, buts pour et contre."
+    },
+    {
+      "title": "Résultats et calendrier de la Ligue 2 BKT",
+      "url": "https://ligue1.com/fr/competitions/ligue2bkt/results",
+      "snippet": "Consultez tous les résultats de la Ligue 2 BKT : matchs joués, calendriers et performances des clubs journée par journée."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "muhammad-inam/dog-cat-cnn",
+  "slug": "muhammad-inam-dog-cat-cnn",
+  "author": "muhammad-inam",
+  "url": "https://huggingface.co/muhammad-inam/dog-cat-cnn",
+  "created_at": "2026-09-20T01:29:48.000Z",
+  "updated_at": "2026-09-20T01:53:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "keras",
+  "languages": [],
+  "tags": [
+    "keras",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 228457859,
+  "storage_human": "228 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Muhammad - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Muhammad",
+      "snippet": "Apart from Islam, Muhammad has received praise in Sikhism as an inspirational figure, in the Druze faith as one of the seven main …"
+    },
+    {
+      "title": "Mahomet — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Mahomet",
+      "snippet": "Pour K.H. Ohlig, le terme Muhammad est un prédicat christique syro-arabe avant d’être repris pour désigner un prophète sous les …"
+    },
+    {
+      "title": "Qui est le Prophète Muhammad ﷺ — Découvrir l'Islam",
+      "url": "https://decouvrir-islam.org/prophete-muhammad/",
+      "snippet": "Le Prophète Muhammad ﷺ (paix et bénédictions sur lui) est le dernier messager envoyé par Allah pour guider l’humanité. Sa vie est …"
+    },
+    {
+      "title": "Muhammad | Biography, History, & Facts | Britannica",
+      "url": "https://www.britannica.com/biography/Muhammad",
+      "snippet": "Sep 5, 2026 · Muhammad, the revered prophet of Islam, revolutionized Arabia by spreading a monotheistic faith and establishing a …"
+    },
+    {
+      "title": "Biographie de MAHOMET ou MUḤAMMAD - Encyclopédie Universalis",
+      "url": "https://www.universalis.fr/encyclopedie/mahomet-muhammad/",
+      "snippet": "Biographie de MAHOMET ou MUḤAMMAD. Mahomet (en arabe Muḥammad) est, parmi les fondateurs des grandes religions …"
+    }
+  ]
+}

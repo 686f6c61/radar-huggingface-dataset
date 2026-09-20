@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mradermacher/decider-0.8b-GGUF",
+  "slug": "mradermacher-decider-0-8b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/decider-0.8b-GGUF",
+  "created_at": "2026-09-19T21:17:10.000Z",
+  "updated_at": "2026-09-19T21:39:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "decision-model",
+    "calibrated",
+    "structured-output",
+    "multi-task",
+    "system-one",
+    "one-pass",
+    "en",
+    "base_model:Mapika/decider-0.8b",
+    "base_model:quantized:Mapika/decider-0.8b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 7455587584,
+  "storage_human": "7.5 GB",
+  "base_model": "Mapika/decider-0.8b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "STM32L451RE - Product - STMicroelectronics",
+      "url": "https://www.st.com/en/microcontrollers-microprocessors/stm32l451re.html",
+      "snippet": "The STM32L451xx devices embed high-speed memories (Flash memory up to 512 Kbyte, 160 Kbyte of SRAM), a Quad SPI Flash …"
+    },
+    {
+      "title": "Datasheet - STM32L451xx - Ultra-low-power Arm® Cortex®-M4 32 …",
+      "url": "https://www.st.com/resource/en/datasheet/stm32l451re.pdf",
+      "snippet": "The ultra-low-power STM32L451xx supports seven low-power modes to achieve the best compromise between low-power …"
+    },
+    {
+      "title": "ST STM32L451CC, L451RC Datasheet | AI Chat & PDF | Manualzz",
+      "url": "https://manualzz.com/doc/o/2b44wt/stmicroelectronics-stm32l451re-datasheet-digital-to-analog-converter-characteristics",
+      "snippet": "Explore the STMicroelectronics STM32L451CC, STM32L451RC datasheet. Find detailed specs for these ultra-low-power …"
+    },
+    {
+      "title": "STM32L451RE by STMicroelectronics In-System Programmer",
+      "url": "https://smh-tech.com/stmicroelectronics-stm32l451re/",
+      "snippet": "Jun 11, 2026 · STM32 L4x STM32L451RE - High-Performance, Standalone In-System Programmer by SMH Technologies"
+    },
+    {
+      "title": "STM32L451RE Ultra-low-power Arm Cortex-M4 32-bit MCU+FPU …",
+      "url": "https://datasheet4u.com/part-number/STM32L451RE.html",
+      "snippet": "View STM32L451RE datasheet PDF, manufacturer datasheet links, distributor stock, unit price and package options."
+    }
+  ]
+}

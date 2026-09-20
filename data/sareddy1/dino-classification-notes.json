@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "sareddy1/dino-classification-notes",
+  "slug": "sareddy1-dino-classification-notes",
+  "author": "sareddy1",
+  "url": "https://huggingface.co/sareddy1/dino-classification-notes",
+  "created_at": "2026-09-20T00:22:17.000Z",
+  "updated_at": "2026-09-20T00:22:22.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "dino",
+    "pytorch",
+    "classification",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16576,
+  "parameters_human": "16576",
+  "storage_bytes": 66784,
+  "storage_human": "66784 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Greek Salad (Traditional Horiatiki Recipe) | The Mediterranean Dish",
+      "url": "https://www.themediterraneandish.com/traditional-greek-salad-recipe/",
+      "snippet": "Nov 10, 2025 · This simple Greek salad recipe, or Horiatiki, keeps things traditional. No need to fuss with a dressing, just toss fresh …"
+    },
+    {
+      "title": "Greek Salad Recipe",
+      "url": "https://www.allrecipes.com/recipe/14373/greek-salad-i/",
+      "snippet": "Mar 13, 2026 · This Greek salad recipe with cucumber, tomatoes, feta cheese, and an easy and refreshing oregano and olive oil …"
+    },
+    {
+      "title": "Best Greek Salad Recipe - Delish",
+      "url": "https://www.delish.com/cooking/recipe-ideas/a54226/best-greek-salad-recipe/",
+      "snippet": "Mar 27, 2026 · This traditional Greek salad is made with cherry tomatoes, cucumber, Kalamata olives, thinly sliced red onion, feta, …"
+    },
+    {
+      "title": "Greek Salad Recipe - Love and Lemons",
+      "url": "https://www.loveandlemons.com/greek-salad/",
+      "snippet": "Feb 26, 2025 · This easy Greek salad recipe is a flavorful, refreshing summer side dish! If you make it ahead for a gathering, save a …"
+    },
+    {
+      "title": "Classic Greek Salad Recipe (Horiatiki) - Real Greek Recipes",
+      "url": "https://realgreekrecipes.com/classic-greek-salad-recipe/",
+      "snippet": "Dec 25, 2016 · The Authentic way of making a Classic Greek Salad Recipe. It's a super simple salad that requires no mixing!"
+    }
+  ]
+}

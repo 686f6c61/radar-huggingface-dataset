@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l2",
+  "slug": "pessimisticdpo-mistral-7b-sft-beta-a0-1-b0-1-l4-overlap_subsample-l2",
+  "author": "PessimisticDPO",
+  "url": "https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l2",
+  "created_at": "2026-09-19T20:02:03.000Z",
+  "updated_at": "2026-09-19T20:02:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 167832240,
+  "storage_human": "168 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Toomics - Genres",
+      "url": "https://global.toomics.com/en/webtoon/ranking",
+      "snippet": "Genres - TOOMICS can offer you amazing new comics to enjoy!"
+    },
+    {
+      "title": "Toomics - Séries > Ver todos",
+      "url": "https://global.toomics.com/por/webtoon/ongoing_all",
+      "snippet": "Séries > Ver todos - A TOOMICS te oferece a oportunidade de apreciar comics extraordinários!"
+    },
+    {
+      "title": "My Toxic Roommate EP 1 - Toomics - 투믹스",
+      "url": "https://comics.toomics.com/en/webtoon/detail/code/99596/ep/1/toon/5019/ver/15/lead/abcd",
+      "snippet": "The Unwanted Roommate > The Unwanted Roommate EP 1 - I was forced to let my friend's younger sister live at my place. She …"
+    },
+    {
+      "title": "Toomics - Weekly",
+      "url": "https://global.toomics.com/en/webtoon/ongoing",
+      "snippet": "Weekly - TOOMICS can offer you amazing new comics to enjoy!"
+    },
+    {
+      "title": "Toomics - Genres",
+      "url": "https://global.toomics.com/de/webtoon/ranking",
+      "snippet": "Genres - TOOMICS bietet dir fantastische neue Comics zum schmökern!"
+    }
+  ]
+}

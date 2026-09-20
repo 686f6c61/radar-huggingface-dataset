@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "SeanWang0027/qwen3-1.7b-sciworld-rose-s10t5-gpt54mini-ep1",
+  "slug": "seanwang0027-qwen3-1-7b-sciworld-rose-s10t5-gpt54mini-ep1",
+  "author": "SeanWang0027",
+  "url": "https://huggingface.co/SeanWang0027/qwen3-1.7b-sciworld-rose-s10t5-gpt54mini-ep1",
+  "created_at": "2026-09-19T23:18:17.000Z",
+  "updated_at": "2026-09-19T23:18:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "scienceworld",
+    "agent",
+    "react",
+    "distillation",
+    "on-policy",
+    "conversational",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2031739904,
+  "parameters_human": "2.03B",
+  "storage_bytes": 4074938294,
+  "storage_human": "4.1 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JacobBarlow.com | Exploring with Jacob Barlow",
+      "url": "https://jacobbarlow.com/",
+      "snippet": "In July 1846, 500 men, all members of The Church of Jesus Christ of Latter-day Saints (Mormons), had volunteered in Council Bluffs, …"
+    },
+    {
+      "title": "Jacob Barlow - Equity Real Estate | Mapleton UT - Facebook",
+      "url": "https://www.facebook.com/barlowutah/",
+      "snippet": "Jul 12, 2026 · Jacob Barlow - Equity Real Estate Real Estate agent with Equity Real Estate (Utah) covering all of Utah."
+    },
+    {
+      "title": "Jacob Barlow - Facebook",
+      "url": "https://www.facebook.com/JacobcBarlow/",
+      "snippet": "Aug 5, 2026 · The building and its accompanying garage are located in a cohesive residential neighborhood surrounding the Art Deco …"
+    },
+    {
+      "title": "Jacob Barlow - YouTube",
+      "url": "https://www.youtube.com/@BarlowJacob",
+      "snippet": "History, exploring, movie filming locations and more."
+    },
+    {
+      "title": "Jacob Ryan Barlow Obituary Mar 4, 2026 - Hughes Mortuary",
+      "url": "https://www.hughesmortuary.com/obituaries/jacob-barlow",
+      "snippet": "Jacob Ryan Barlow, lovingly known as “Jacob the Cowboy Kid,” of Gunlock, Utah, passed away on March 4, 2026, at the age of 17. …"
+    }
+  ]
+}

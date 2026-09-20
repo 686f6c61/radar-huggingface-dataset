@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "sreetz-nv/so101_orange_dr500_h40_b32_50000steps_20260918",
+  "slug": "sreetz-nv-so101_orange_dr500_h40_b32_50000steps_20260918",
+  "author": "sreetz-nv",
+  "url": "https://huggingface.co/sreetz-nv/so101_orange_dr500_h40_b32_50000steps_20260918",
+  "created_at": "2026-09-19T22:51:53.000Z",
+  "updated_at": "2026-09-19T22:52:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "groot",
+    "action-horizon-ablation",
+    "dataset:sreetz-nv/so101_orange_dr500_20260915",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 12576219216,
+  "storage_human": "12.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kärnten - Österreichische Krebshilfe",
+      "url": "https://www.krebshilfe-ktn.at/",
+      "snippet": "Um unsere Unterstützungsleistungen wie kostenlose Kunsttherapie für Betroffene & Angehörige sicherzustellen, hat die Krebshilfe …"
+    },
+    {
+      "title": "Kärnten - Österreichische Krebshilfe",
+      "url": "https://www.krebshilfe.net/beratung-hilfe/beratungsstellen/kaernten/",
+      "snippet": "Voranmeldung zur persönlichen Beratung unter: Bahnhofstraße 22 / 3. Stock."
+    },
+    {
+      "title": "Unser Angebot - Österreichische Krebshilfe",
+      "url": "https://www.krebshilfe-ktn.at/unser-angebot",
+      "snippet": "Durch Einzelgespräche, Beratungen und diversen Gruppen sollen Betroffene und Angehörige bestmöglich informiert und ihnen …"
+    },
+    {
+      "title": "Krebshilfe Kärnten - Selbsthilfe Kärnten",
+      "url": "https://www.selbsthilfe-kaernten.at/selbsthilfegruppen/detail/krebshilfe-kaernten",
+      "snippet": "Durch Einzelgespräche, Beratungen und diversen Gruppen sollen Betroffene und Angehörige bestmöglich informiert und ihnen …"
+    },
+    {
+      "title": "Krebshilfe Kärnten | Klagenfurt - Facebook",
+      "url": "https://www.facebook.com/krebshilfekaernten/",
+      "snippet": "Rund 700 Teilnehmer: innen waren gestern beim Stadtlauf in Wolfsberg dabei und haben mit jedem Meter die Krebshilfe Kärnten …"
+    }
+  ]
+}

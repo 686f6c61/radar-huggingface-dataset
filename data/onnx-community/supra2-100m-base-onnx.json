@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "onnx-community/Supra2-100M-Base-ONNX",
+  "slug": "onnx-community-supra2-100m-base-onnx",
+  "author": "onnx-community",
+  "url": "https://huggingface.co/onnx-community/Supra2-100M-Base-ONNX",
+  "created_at": "2026-09-19T22:51:51.000Z",
+  "updated_at": "2026-09-19T22:51:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers.js",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "qwen3",
+    "text-generation",
+    "small",
+    "supra",
+    "supra2",
+    "sota",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:HuggingFaceFW/dclm_100BT-shuffled",
+    "base_model:SupraLabs/Supra2-100M-Base",
+    "base_model:quantized:SupraLabs/Supra2-100M-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1079676354,
+  "storage_human": "1.1 GB",
+  "base_model": "SupraLabs/Supra2-100M-Base",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Жетоны старых пистолетов для настольной игры",
+      "url": "https://makerworld.com/ru/models/2366773-board-game-old-pistols-tokens",
+      "snippet": "Жетоны пистолетов для настольной игры Feed the Kraken или любых других настольных игр. Рекомендуется: высота слоя …"
+    },
+    {
+      "title": "Жетоны для настольной игры - огромный выбор по лучшим …",
+      "url": "https://by.ebay.com/b/Board-Game-Tokens/7317/bn_72989365",
+      "snippet": "Найдите на eBay выгодные предложения по запросу Жетоны для настольной игры. Вы найдете новые и б/у товары в Жетоны …"
+    },
+    {
+      "title": "Игровые жетоны - огромный выбор по лучшим ценам | eBay",
+      "url": "https://by.ebay.com/b/Game-Tokens/7317/bn_72990700",
+      "snippet": "Найдите на eBay выгодные предложения по запросу Игровые жетоны. Вы найдете новые и б/у товары в Игровые жетоны на …"
+    },
+    {
+      "title": "2D жетоны-токены Оружие и снаряжение : меч, посох, топор, …",
+      "url": "https://am.ozon.com/product/2d-zhetony-tokeny-oruzhie-i-snaryazhenie-mech-posoh-topor-molot-luk-shchit-bronya-dlya-d-d-5761750097/",
+      "snippet": "Это 2D жетоны оружия и токены снаряжения, которые подойдут для D&D 5e, ДнД 5е, Pathfinder 2e, Патфайндер 2е, TTRPG и …"
+    },
+    {
+      "title": "Настольные игровые жетоны Hasbro - огромный выбор по …",
+      "url": "https://kz.ebay.com/b/Hasbro-Board-Game-Tokens/7317/bn_72987999",
+      "snippet": "Найдите на eBay выгодные предложения по запросу Настольные игровые жетоны Hasbro. Вы найдете новые и б/у товары в …"
+    }
+  ]
+}

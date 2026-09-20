@@ -1,0 +1,50 @@
+{
+  "schema": 1,
+  "id": "M1ztyk/SAIGE-dpo-v5",
+  "slug": "m1ztyk-saige-dpo-v5",
+  "author": "M1ztyk",
+  "url": "https://huggingface.co/M1ztyk/SAIGE-dpo-v5",
+  "created_at": "2026-09-19T21:50:03.000Z",
+  "updated_at": "2026-09-19T23:17:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "trl",
+    "dpo",
+    "hf_jobs",
+    "arxiv:2305.18290",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-3B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 490633973,
+  "storage_human": "491 MB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pornhub - Kostenloser Porno Und Sexvideos – Beste Porno Webseite …",
+      "url": "https://pornhub-deutsch.net/",
+      "snippet": "PornHub ist die weltweit führende kostenlose Porno-Website. Wähle aus Millionen von Harcore Pornovideos, die schnell und in …"
+    }
+  ]
+}

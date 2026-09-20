@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "m1rkocasu/LLaDA2.2-mini-MLX-5bit",
+  "slug": "m1rkocasu-llada2-2-mini-mlx-5bit",
+  "author": "m1rkocasu",
+  "url": "https://huggingface.co/m1rkocasu/LLaDA2.2-mini-MLX-5bit",
+  "created_at": "2026-09-19T22:06:16.000Z",
+  "updated_at": "2026-09-19T22:34:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "llada2_moe",
+    "dllm",
+    "diffusion",
+    "llada2",
+    "apple-silicon",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "base_model:inclusionAI/LLaDA2.2-mini",
+    "base_model:quantized:inclusionAI/LLaDA2.2-mini",
+    "license:apache-2.0",
+    "5-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16255643392,
+  "parameters_human": "16.26B",
+  "storage_bytes": 11201240031,
+  "storage_human": "11.2 GB",
+  "base_model": "inclusionAI/LLaDA2.2-mini",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OBI Česká republika",
+      "url": "https://www.obi.cz/",
+      "snippet": "Přehled služeb Půjčovna nářadí a vybavení Broušení nářadí Přířez dřeva Míchání barev Pracovní manuály Dárková karta OBI …"
+    },
+    {
+      "title": "OBI Půjčovna nářadí | Od žebříku až po dodávku",
+      "url": "https://www.obi.cz/prodejna/sluzby/pujcovna-naradi",
+      "snippet": "OBI půjčovna nářadí nabízí značkové přístroje v profesionální kvalitě na stavbu a přestavbu, pro domácí kutily a na renovace nebo …"
+    },
+    {
+      "title": "OBI Půjčovna nářadí Praha | Vítejte v OBI",
+      "url": "https://www.obi.cz/prodejna/praha-prosek/pujcovna-naradi",
+      "snippet": "Nemáte po ruce správné nářadí? Pak si ho jednoduše půjčte v OBI! OBI půjčovna nářadí nabízí značkové přístroje v profesionální …"
+    },
+    {
+      "title": "Půjčovna vybavení OBI - Pronajměte si cestu k dokonalosti s OBI!",
+      "url": "https://www.obi.cz/prodejna/pujcovna",
+      "snippet": "Spolehlivé nářadí z půjčovny OBI. Správné nářadí vždy po ruce. Vyberte si prodejnu, najděte si to správné nářadí k pronájmu a ihned …"
+    },
+    {
+      "title": "OBI Půjčovna nářadí Zlín-Malenovice | Vítejte v OBI",
+      "url": "https://www.obi.cz/prodejna/zlin-malenovice/pujcovna-naradi",
+      "snippet": "Nemáte po ruce správné nářadí? Pak si ho jednoduše půjčte v OBI! OBI půjčovna nářadí nabízí značkové přístroje v profesionální …"
+    }
+  ]
+}

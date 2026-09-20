@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "phukanpragyan/gemma-4-e2b-assamese-sft-v4",
+  "slug": "phukanpragyan-gemma-4-e2b-assamese-sft-v4",
+  "author": "phukanpragyan",
+  "url": "https://huggingface.co/phukanpragyan/gemma-4-e2b-assamese-sft-v4",
+  "created_at": "2026-09-19T20:14:49.000Z",
+  "updated_at": "2026-09-19T20:15:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5651719747,
+  "parameters_human": "5.65B",
+  "storage_bytes": 11338087311,
+  "storage_human": "11.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "22 Versículos de la Biblia sobre la Curación - DailyVerses.net",
+      "url": "https://dailyverses.net/es/curacion",
+      "snippet": "Versículos de la Biblia sobre la Curación - Jesús dijo: —¿Cómo que si puedo? Para el que cree, todo es posible… Al oír esto, Jesús …"
+    },
+    {
+      "title": "50 versículos bíblicos sobre sanación para consuelo y fortaleza",
+      "url": "https://feelingalive.in/spa/versiculos-biblicos-sobre-sanacion/",
+      "snippet": "Feb 24, 2025 · La Biblia es un tesoro de escrituras de sanación que ofrecen esperanza, fortaleza y restauración. Tanto si busca …"
+    },
+    {
+      "title": "71 Versículos de Sanidad en la Biblia. Citas bíblicas de sanación",
+      "url": "https://versiculos.net/sanidad/",
+      "snippet": "Oct 26, 2023 · Te mostramos la lista con versículos de sanidad en la Biblia, para que comprendas el mensaje que Dios nos ha dado, …"
+    },
+    {
+      "title": "39 versículo bíblico sobre La Sanación Y El Consuelo",
+      "url": "https://bible.knowing-jesus.com/Espa%C3%B1al/topics/La-Sanaci%C3%B3n-Y-El-Consuelo",
+      "snippet": "El SEÑOR lo sostendrá en su lecho de enfermo; en su enfermedad, restaurarás su salud. He visto sus caminos, pero lo sanaré; lo …"
+    },
+    {
+      "title": "Versículos bíblicos en sanacion y liberacion - BibliaWeb",
+      "url": "https://bibliaweb.org/versiculos-biblicos-en-sanacion-y-liberacion/",
+      "snippet": "Una colección de 35 versículos bíblicos en sanacion y liberacion. Cada texto viene acompañado de una explicación práctica y …"
+    }
+  ]
+}

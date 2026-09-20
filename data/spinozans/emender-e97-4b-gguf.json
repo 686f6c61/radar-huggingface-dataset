@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "spinozans/emender-e97-4b-gguf",
+  "slug": "spinozans-emender-e97-4b-gguf",
+  "author": "spinozans",
+  "url": "https://huggingface.co/spinozans/emender-e97-4b-gguf",
+  "created_at": "2026-09-19T21:51:06.000Z",
+  "updated_at": "2026-09-19T21:57:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "recurrent",
+    "tool-use",
+    "coding-agent",
+    "llama.cpp",
+    "experimental",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4045972080,
+  "parameters_human": "4.05B",
+  "storage_bytes": 43122255264,
+  "storage_human": "43.1 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lista foruma | Forum Krstarice",
+      "url": "https://forum.krstarica.com/forums/",
+      "snippet": "Najveći forum u Srbiji - sa preko 48 miliona poruka."
+    },
+    {
+      "title": "Matori muškarci i mlade devojke | Forum Krstarice",
+      "url": "https://forum.krstarica.com/threads/matori-muskarci-i-mlade-devojke.766486/",
+      "snippet": "Sep 6, 2016 · Šta je to sa mladim devojkama da postaju prijateljice na društvenim mrežama muškarcima koji su stariji i od njihovih …"
+    },
+    {
+      "title": "Vučić: Kada TOK podigne optužnicu protiv mene pomilovaću sve u ...",
+      "url": "https://forum.krstarica.com/threads/vucic-kada-tok-podigne-optuznicu-protiv-mene-pomilovacu-sve-u-slucaju-generalstab.1048820/",
+      "snippet": "Jan 7, 2026 · Vučić: Kada TOK podigne optužnicu protiv mene pomilovaću sve u slučaju Generalštab"
+    },
+    {
+      "title": "Ђилас, Мариника, Алексић, Понош и ...",
+      "url": "https://forum.krstarica.com/threads/djilas-marinika-aleksic-ponos-i-parandilovic-da-li-ce-nastaviti-da-parazitiraju-ti-udbaski-projekti-i-posle-pada-rezima.1065604/page-2",
+      "snippet": "5 days ago · Ђилас, Мариника, Алексић, Понош и Парандиловић, да ли ће наставити да паразитирају ти удбашки пројекти и …"
+    },
+    {
+      "title": "ФК Црвена Звезда, сезона 2026/2027 | 14. strana ...",
+      "url": "https://forum.krstarica.com/threads/fk-crvena-zvezda-sezona-2026-2027.1058217/page-14",
+      "snippet": "May 23, 2026 · Fudbalski klub Crvena zvezda saopštio je da je danas na blagajnama stadiona \"Rajko Mitić\" u Beogradu počela …"
+    }
+  ]
+}

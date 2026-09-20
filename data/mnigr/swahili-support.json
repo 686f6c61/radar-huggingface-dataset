@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "mnigr/swahili-support",
+  "slug": "mnigr-swahili-support",
+  "author": "mnigr",
+  "url": "https://huggingface.co/mnigr/swahili-support",
+  "created_at": "2026-09-19T21:11:09.000Z",
+  "updated_at": "2026-09-19T21:19:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056404646,
+  "storage_human": "8.1 GB",
+  "base_model": "unsloth/qwen3-4b-instruct-2507-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-20T02:46:15.765Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to See All Bing Related Searches on Any Device",
+      "url": "https://rottenwifi.com/how-to-see-all-bing-related-searches/",
+      "snippet": "Jul 1, 2026 · This guide walks through the practical ways to see Bing related searches on desktop, mobile, and Microsoft Edge. It also …"
+    },
+    {
+      "title": "Bing",
+      "url": "https://www.bing.com/version",
+      "snippet": "Bing ... Versions"
+    },
+    {
+      "title": "How To See All Bing Related Searches",
+      "url": "https://www.cloudspress.com/how-to-see-all-bing-related-searches/",
+      "snippet": "Aug 7, 2026 · Bing does not have a public “see everything” page for a keyword. Its related searches and autocomplete suggestions …"
+    },
+    {
+      "title": "Search - Microsoft Bing",
+      "url": "https://www.bing.com/?setlang=en&cc=hk",
+      "snippet": "Mar 1, 2026 · Search with Microsoft Bing and use the power of AI to find information, explore webpages, images, videos, maps, and …"
+    },
+    {
+      "title": "Bing vs Google in 2026: Which Is Actually Better? | Lawrence Hitches",
+      "url": "https://www.lawrencehitches.com/google-vs-bing/",
+      "snippet": "Jun 10, 2026 · Google vs Bing in 2026: Google owns volume, Bing quietly decides AI citations. Download PNG But the story changed …"
+    }
+  ]
+}

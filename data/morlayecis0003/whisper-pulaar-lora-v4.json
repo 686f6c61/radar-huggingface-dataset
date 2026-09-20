@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "morlayecis0003/whisper-pulaar-lora-v4",
+  "slug": "morlayecis0003-whisper-pulaar-lora-v4",
+  "author": "morlayecis0003",
+  "url": "https://huggingface.co/morlayecis0003/whisper-pulaar-lora-v4",
+  "created_at": "2026-09-20T01:21:26.000Z",
+  "updated_at": "2026-09-20T01:21:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "whisper",
+    "lora",
+    "asr",
+    "pulaar",
+    "fulfulde",
+    "low-resource",
+    "base_model:morlayecis0003/whisper-small-pulaar-v4",
+    "base_model:adapter:morlayecis0003/whisper-small-pulaar-v4",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7098064,
+  "storage_human": "7 MB",
+  "base_model": "morlayecis0003/whisper-small-pulaar-v4",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube Help",
+      "url": "https://support.google.com/youtube/?hl=en",
+      "snippet": "Official YouTube Help Center where you can find tips and tutorials on using YouTube and other answers to frequently asked questions."
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "Ayuda de YouTube",
+      "url": "https://support.google.com/youtube/?hl=es",
+      "snippet": "Centro de asistencia oficial de YouTube donde puedes encontrar sugerencias y tutoriales para aprender a utilizar el producto y …"
+    },
+    {
+      "title": "谷歌账号注册验证无法发出信息怎么办? - 知乎",
+      "url": "https://www.zhihu.com/question/1945629068243481180",
+      "snippet": "3、国内注册的账号能否使用 YouTube 和 Google Play？ 完全可以。 Google 账号是全球通用的，注册成功后即可无缝登录谷歌全家桶 …"
+    },
+    {
+      "title": "Verify your YouTube account - Google Help",
+      "url": "https://support.google.com/youtube/answer/171664?hl=en",
+      "snippet": "Verify your YouTube account To verify your channel, you’ll be asked to enter a phone number. We’ll send a verification code by text …"
+    }
+  ]
+}

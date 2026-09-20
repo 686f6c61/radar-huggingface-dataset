@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "jianchen0311/Qwen3.8-27B-Uncensored-Splash",
+  "slug": "jianchen0311-qwen3-8-27b-uncensored-splash",
+  "author": "jianchen0311",
+  "url": "https://huggingface.co/jianchen0311/Qwen3.8-27B-Uncensored-Splash",
+  "created_at": "2026-09-20T00:22:48.000Z",
+  "updated_at": "2026-09-20T00:27:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "splash",
+  "languages": [],
+  "tags": [
+    "splash",
+    "apple-silicon",
+    "dflash2",
+    "4-bit",
+    "uncensored",
+    "image-text-to-text",
+    "base_model:incoai/Qwen3.8-27B-DFlash2",
+    "base_model:finetune:incoai/Qwen3.8-27B-DFlash2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17375920973,
+  "storage_human": "17.4 GB",
+  "base_model": "orcarouter/Qwen3.8-27B-Uncensored-MLX, incoai/Qwen3.8-27B-DFlash2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "如何在中国大陆用「合法」的方式观看到youtube上面的「有价值」的 …",
+      "url": "https://www.zhihu.com/question/1903231775980913051",
+      "snippet": "YouTube 将自动为 添加翻译后的中文字幕，这一功能有效解决了语言障碍问题。 当你向下浏览时，部分 会标注相关信息。 例如，博 …"
+    },
+    {
+      "title": "Create a YouTube live stream with an encoder - Google Help",
+      "url": "https://support.google.com/youtube/answer/2907883?hl=en",
+      "snippet": "Learn how to set up a YouTube live stream using an encoder. Using an encoder, you can broadcast your gameplay, use external …"
+    },
+    {
+      "title": "Не удается зайти на YouTube",
+      "url": "https://support.google.com/youtube/answer/6159254?hl=ru",
+      "snippet": "Если при попытке войти на сайт youtube.com вы видите сообщение об ошибке, скорее всего, проблема связана с одной из …"
+    },
+    {
+      "title": "YouTube公司 - 知乎",
+      "url": "https://www.zhihu.com/topic/19550532",
+      "snippet": "YouTube，全球最大的视频分享网站，早期公司总部位于加利福尼亚州的圣布里诺。公司由华裔美籍华人陈士骏等人创立并于2005年2 …"
+    },
+    {
+      "title": "YouTube 鍵盤快速鍵",
+      "url": "https://support.google.com/youtube/answer/7631406?hl=zh-Hant",
+      "snippet": "YouTube 鍵盤快速鍵 使用 YouTube 時，你可以利用鍵盤快速鍵節省操作時間。 如要查看鍵盤快速鍵清單，請依序選取「個人資料相 …"
+    }
+  ]
+}

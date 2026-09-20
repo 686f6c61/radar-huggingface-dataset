@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "buildingpeps/hbi-cyp-challenge-v2",
+  "slug": "buildingpeps-hbi-cyp-challenge-v2",
+  "author": "buildingpeps",
+  "url": "https://huggingface.co/buildingpeps/hbi-cyp-challenge-v2",
+  "created_at": "2026-09-20T00:53:46.000Z",
+  "updated_at": "2026-09-20T01:21:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "chemistry",
+    "openadmet",
+    "cyp-inhibition",
+    "research",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenADMET CYP Blind Challenge - Hugging Face",
+      "url": "https://huggingface.co/spaces/openadmet/cyp-challenge",
+      "snippet": "Jul 29, 2026 · See the CYP Challenge Tutorial for a step-by-step walkthrough of data loading, model building, and preparing your …"
+    },
+    {
+      "title": "Hugging Face – The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "snippet": "Access 45,000+ models from leading AI providers through a single, unified API with no service fees. Deploy on optimized Inference …"
+    },
+    {
+      "title": "CYP-Challenge-Tutorial/README.md at main · OpenADMET/CYP",
+      "url": "https://github.com/OpenADMET/CYP-Challenge-Tutorial/blob/main/README.md",
+      "snippet": "Aug 17, 2026 · This challenge asks participants to build predictive models that predicts both CYP direct inhibition, as well as TDI. For …"
+    },
+    {
+      "title": "CYP-Challenge-Tutorial - GitHub",
+      "url": "https://github.com/OpenADMET/CYP-Challenge-Tutorial/tree/main/",
+      "snippet": "Aug 17, 2026 · This challenge asks participants to build predictive models that predicts both CYP direct inhibition, as well as TDI. For …"
+    },
+    {
+      "title": "Open models by OpenAI",
+      "url": "https://openai.com/open-models/",
+      "snippet": "These models are supported by the Apache 2.0 license. Build freely without worrying about copyleft restrictions or patent …"
+    }
+  ]
+}

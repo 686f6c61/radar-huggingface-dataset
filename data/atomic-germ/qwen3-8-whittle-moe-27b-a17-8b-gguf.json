@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Atomic-Germ/Qwen3.8-Whittle-MoE-27B-A17.8B-GGUF",
+  "slug": "atomic-germ-qwen3-8-whittle-moe-27b-a17-8b-gguf",
+  "author": "Atomic-Germ",
+  "url": "https://huggingface.co/Atomic-Germ/Qwen3.8-Whittle-MoE-27B-A17.8B-GGUF",
+  "created_at": "2026-09-19T23:38:54.000Z",
+  "updated_at": "2026-09-20T00:33:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3_5_moe",
+    "moe",
+    "mixture-of-experts",
+    "research-preview",
+    "whittle",
+    "qwen3.5",
+    "router-healing",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26917297664,
+  "parameters_human": "26.92B",
+  "storage_bytes": 26373032249,
+  "storage_human": "26.4 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "véhicules d'occasion et usés - KYBURZ Elektrofahrzeuge und ...",
+      "url": "https://kyburz-switzerland.ch/fr/occasions",
+      "snippet": "Véhicules d'occasion en bon état Un véhicule d'occasion d'une main de confiance avec une garantie est souvent une alternative …"
+    },
+    {
+      "title": "KYBURZ - acheter un véhicule d'occasion | MotoScout24",
+      "url": "https://www.motoscout24.ch/fr/s/mk-kyburz",
+      "snippet": "9 KYBURZ - Véhicules neufs et d'occasion en Suisse. Trouvez le véhicule de vos rêves sur MotoScout24."
+    },
+    {
+      "title": "Kyburz d'occasion - achat et vente - AutoScout24",
+      "url": "https://www.autoscout24.ch/fr/marques-de-vehicules/kyburz",
+      "snippet": "Découvrez les différents modèles Kyburz et trouvez la voiture qui correspond à vos besoins personnels. Notre aperçu présente …"
+    },
+    {
+      "title": "KYBURZ Kyburz Plus II À vendre - AutoScout24",
+      "url": "https://www.autoscout24.ch/fr/d/kyburz-kyburz-plus-ii-10658734",
+      "snippet": "Sehr Freundliche Mitarbeiter und schöner Laden. Auch eine saubere Werkstatt. Ich bin sehr zufrieden mit Elfar! Elfar liefert stets …"
+    },
+    {
+      "title": "Occasionen - Gebrauchtfahrzeuge - Elektrofahrzeuge",
+      "url": "https://kyburz-switzerland.ch/de/occasionen",
+      "snippet": "KYBURZ-Elektrofahrzeuge sind robust gebaut und äusserst langlebig. KYBURZ Switzerland kauft Fahrzeuge zurück und bietet sie …"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "vis22/stack_smolvla_2.5",
+  "slug": "vis22-stack_smolvla_2-5",
+  "author": "vis22",
+  "url": "https://huggingface.co/vis22/stack_smolvla_2.5",
+  "created_at": "2026-09-20T01:03:17.000Z",
+  "updated_at": "2026-09-20T01:04:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "robotics",
+    "dataset:vis22/plates_stack_merged",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906728000,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "有没有大佬帮我解释一下AI infra到底是干啥的？ - 知乎",
+      "url": "https://www.zhihu.com/question/4023337465",
+      "snippet": "三者共同构成 “计算 - 通信 - 存储” 一体化硬件体系，直接决定 AI Infra 的综合能力上限。 1.2 软件层 软件层是 AI Infra 的 “神经中枢”， …"
+    },
+    {
+      "title": "infra是什么意思 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/39907002.html",
+      "snippet": "Nov 19, 2007 · infra是在下，以下的意思。 infra ['ɪnfrə] adv. 在下，以下，下文 例句 The infra - red spectra of quinones present a …"
+    },
+    {
+      "title": "论文注释supra note 是何文献,如何查找? - 百度知道",
+      "url": "https://zhidao.baidu.com/question/13422134.html",
+      "snippet": "supra note 是指上文提到的引文。 如 supra note 57 是指上文中提到的第57个引文。 如supra note 57, at 9 则是指上文中提到的第57个 …"
+    },
+    {
+      "title": "infra是什么？ - 知乎",
+      "url": "https://www.zhihu.com/question/537779982",
+      "snippet": "自动驾驶infra具体包括哪些？ 国内公司普遍不注重基础设施建设，这也是可以理解的。吃饭都吃不饱，就别提什么荤素搭配，两菜一 …"
+    },
+    {
+      "title": "IR-SCAN是什么意思? - 百度知道",
+      "url": "https://zhidao.baidu.com/question/114705640.html",
+      "snippet": "IR-SCAN是什么意思?我在台企的时候，听到的IR SCAN是用红外测温仪进行温度扫描。Infra-red 红外线，scan 扫描，其实就是红外 …"
+    }
+  ]
+}

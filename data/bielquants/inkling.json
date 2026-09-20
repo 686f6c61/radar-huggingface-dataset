@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "bielquants/Inkling",
+  "slug": "bielquants-inkling",
+  "author": "bielquants",
+  "url": "https://huggingface.co/bielquants/Inkling",
+  "created_at": "2026-09-19T23:52:44.000Z",
+  "updated_at": "2026-09-19T23:52:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "inkling_mm_model",
+    "image-text-to-text",
+    "conversational",
+    "audio-text-to-text",
+    "moe",
+    "license:apache-2.0",
+    "eval-results",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 952377623626,
+  "parameters_human": "952.38B",
+  "storage_bytes": 1904786955611,
+  "storage_human": "1904.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube TV - Watch & DVR Live Sports, Shows & News",
+      "url": "https://tv.youtube.com/welcome/",
+      "snippet": "YouTube TV offers a wide variety of live and on-demand content, including popular sports, must-watch shows, breaking news, and …"
+    },
+    {
+      "title": "YouTube TV",
+      "url": "https://tv.youtube.com/welcome，",
+      "snippet": "YouTube TV ... YouTube TV"
+    },
+    {
+      "title": "YouTube TV",
+      "url": "https://www.youtube.com/@youtubetv",
+      "snippet": "YouTube TV is a TV streaming service that lets you watch live TV from ABC, CBS, ESPN, FOX, NBC, and popular cable networks. …"
+    },
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/youtube/tv",
+      "snippet": "Welcome to the official YouTube channel – a home for the biggest moments, the smallest obsessions, and everything in between. …"
+    },
+    {
+      "title": "YouTube TV Deals and Promotions September 2026",
+      "url": "https://www.cabletv.com/youtube-tv/deals",
+      "snippet": "Aug 31, 2026 · YouTube TV costs $82.99 per month, but new users can save money with YouTube TV deals, including intro …"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "lakshya1910/lumina-pdf-rag",
+  "slug": "lakshya1910-lumina-pdf-rag",
+  "author": "lakshya1910",
+  "url": "https://huggingface.co/lakshya1910/lumina-pdf-rag",
+  "created_at": "2026-09-19T20:48:07.000Z",
+  "updated_at": "2026-09-19T20:49:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Test de Marvel's Wolverine sur PS5 par jeuxvideo.com",
+      "url": "https://www.jeuxvideo.com/test/2102740/marvel-s-wolverine-le-blockbuster-ps5-dans-toute-sa-splendeur-mais-est-ce-suffisant.htm",
+      "snippet": "Sep 10, 2026 · Retrouvez le test de Marvel’s Wolverine : Le blockbuster PS5 dans toute sa splendeur, mais est-ce suffisant ? sur …"
+    },
+    {
+      "title": "Topic Tapez Goat dans recherche Futbin - jeuxvideo.com",
+      "url": "https://www.jeuxvideo.com/forums/42-3022591-76494194-1-0-1-0-0.htm",
+      "snippet": "Dec 14, 2025 · C'est CR7 et Messi qui sortent, voilà c tout on s'en fout mais c'est marrant - Topic Tapez Goat dans recherche Futbin …"
+    },
+    {
+      "title": "Topic [OFFICIEL] 18-25 Page d'accueil forum 18 25 1825",
+      "url": "https://www.jeuxvideo.com/forums/42-51-51161064-1-0-1-0-officiel-18-25-page-d-accueil-forum-18-25-1825.htm",
+      "snippet": "May 27, 2017 · Bienvenue sur le forum 18-25 ans, rentre dans l'histoire en postant, cette page deviendra le premier resultat Google …"
+    },
+    {
+      "title": "Test de Resonance : A Plague Tale Legacy par jeuxvideo.com",
+      "url": "https://www.jeuxvideo.com/test/2100348/resonance-a-plague-tale-legacy-un-episode-qui-claque-visuellement-mais-qui-divisera-les-joueurs.htm",
+      "snippet": "Aug 26, 2026 · Retrouvez le test de Resonance A Plague Tale Legacy : Un épisode qui claque visuellement, mais qui divisera les …"
+    },
+    {
+      "title": "Forum Guerre des Consoles - jeuxvideo.com",
+      "url": "https://www.jeuxvideo.com/forums/0-36-0-1-0-1-0-guerre-des-consoles.htm",
+      "snippet": "Bienvenue sur la page d'accueil du forum Guerre des Consoles de jeuxvideo.com Voici la liste des topics du forum. Venez rejoindre …"
+    }
+  ]
+}

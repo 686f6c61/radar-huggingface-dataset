@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ale2008/Jeff-0.8b",
+  "slug": "ale2008-jeff-0-8b",
+  "author": "Ale2008",
+  "url": "https://huggingface.co/Ale2008/Jeff-0.8b",
+  "created_at": "2026-09-19T22:59:53.000Z",
+  "updated_at": "2026-09-19T22:59:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to download \"Apple Mobile Device USB … - Apple Community",
+      "url": "https://discussions.apple.com/thread/7466913",
+      "snippet": "Feb 19, 2016 · How to download \"Apple Mobile Device USB Driver\"? When I'm try to connect my iphone, my computer is doesn't …"
+    },
+    {
+      "title": "KASKUS - Berbagi Hobi, Berkomunitas",
+      "url": "https://www.kaskus.co.id/",
+      "snippet": "Forum diskusi hobi, rumah ribuan komunitas dan pusat jual beli barang hobi di Indonesia."
+    },
+    {
+      "title": "有哪些好的iOS模拟器？ - 知乎",
+      "url": "https://www.zhihu.com/question/267655113",
+      "snippet": "现在唯一可以给用户模拟的，就是苹果自己推出的工具Xcode，这玩意还只能在苹果电脑上运行，他可以模拟各系列iPhone和iPad，包 …"
+    },
+    {
+      "title": "iPhone 连接电脑没反应，不弹出是否信任此电脑的界面？ - 知乎",
+      "url": "https://www.zhihu.com/question/45415123",
+      "snippet": "有用户在使用 iPhone 连接电脑之后，可能会遇到点击“信任”但没有任何反应的情况，或者不显示信任警告，可以按如下步骤尝试解决 …"
+    },
+    {
+      "title": "iphone 5 is disabled connect to itunes - Apple Community",
+      "url": "https://discussions.apple.com/thread/250601491",
+      "snippet": "Sep 1, 2019 · Connect the iphone 5 to a charger. Press power and home button to power it off. Keep holding both the buttons until the …"
+    }
+  ]
+}

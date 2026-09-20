@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "yuan1119/pointact-d435if-rgb-210ep-20260919-step12000",
+  "slug": "yuan1119-pointact-d435if-rgb-210ep-20260919-step12000",
+  "author": "yuan1119",
+  "url": "https://huggingface.co/yuan1119/pointact-d435if-rgb-210ep-20260919-step12000",
+  "created_at": "2026-09-19T20:51:24.000Z",
+  "updated_at": "2026-09-19T20:54:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "VLAEncDec3DModel",
+    "robotics",
+    "pointact",
+    "checkpoint",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4068351434,
+  "parameters_human": "4.07B",
+  "storage_bytes": 11286693781,
+  "storage_human": "11.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Why is the sky *uniformly* blue? - Physics Stack Exchange",
+      "url": "https://physics.stackexchange.com/questions/561101/why-is-the-sky-uniformly-blue",
+      "snippet": "Jun 22, 2020 · I've read a lot of answers to the questions why the sky is blue. However all the answers I found contain mostly …"
+    },
+    {
+      "title": "Why does the sky suddenly look gray through this window?",
+      "url": "https://physics.stackexchange.com/questions/130457/why-does-the-sky-suddenly-look-gray-through-this-window",
+      "snippet": "But why does it look so much less blue, when the values of the red and green channels are still smaller than the blue? That is entirely …"
+    },
+    {
+      "title": "Why is the sky blue: For a 3-year old - Physics Stack Exchange",
+      "url": "https://physics.stackexchange.com/questions/207817/why-is-the-sky-blue-for-a-3-year-old",
+      "snippet": "Sep 19, 2015 · Why does the sky change color? Why is the sky blue during the day, red during sunrise/set and black during the …"
+    },
+    {
+      "title": "Why is the blue color of sky darker in high altitude regions?",
+      "url": "https://physics.stackexchange.com/questions/93671/why-is-the-blue-color-of-sky-darker-in-high-altitude-regions",
+      "snippet": "Jan 14, 2014 · The sky is actually black. Check that for yourself at midnight. So in the daytime, you are looking at a black sky that is …"
+    },
+    {
+      "title": "visible light - Why is the sky blue? - Physics Stack Exchange",
+      "url": "https://physics.stackexchange.com/questions/40875/why-is-the-sky-blue",
+      "snippet": "Possible Duplicate: Why does the sky change color? Basically what the title says. What mechanisms are significant and how do they …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "aselyildiz/matching-exp",
+  "slug": "aselyildiz-matching-exp",
+  "author": "aselyildiz",
+  "url": "https://huggingface.co/aselyildiz/matching-exp",
+  "created_at": "2026-09-20T00:00:52.000Z",
+  "updated_at": "2026-09-20T00:00:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "beit",
+    "pytorch",
+    "matching",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Online Quizzes: Take Online Quiz - ProProfs",
+      "url": "https://www.proprofs.com/quiz-school/browse",
+      "snippet": "Find Quizzes for Your Learning Goals Browse and take quizzes across topics people come back to again and again: Education & …"
+    },
+    {
+      "title": "233 Entertainment Quizzes with Question & Answers - ProProfs",
+      "url": "https://www.proprofs.com/quiz-school/topic/entertainment",
+      "snippet": "Feb 22, 2025 · Entertainment Quizzes, Questions & Answers You have found the jackpot if you are looking for some entertainment …"
+    },
+    {
+      "title": "BingHomepageQuiz - Reddit",
+      "url": "https://www.reddit.com/r/BingHomepageQuiz/hot/",
+      "snippet": "Microsoft Bing Homepage daily quiz questions and their answers"
+    },
+    {
+      "title": "Bing Entertainment Quiz (9-21-2022) : r/BingQuizAnswers - Reddit",
+      "url": "https://www.reddit.com/r/BingQuizAnswers/comments/xjr0zx/bing_entertainment_quiz_9212022/",
+      "snippet": "Sep 21, 2022 · Bing Entertainment News Quiz: Questions Answers (09-21-2022) 21 September 2022 1: Which singer was just …"
+    },
+    {
+      "title": "Cricket Quiz: How Much You Know About Cricket? - Quiz & Trivia",
+      "url": "https://www.proprofs.com/quiz-school/story.php?title=online-cricket-quiz",
+      "snippet": "May 13, 2025 · Step onto the pitch and test your knowledge with the ultimate cricket quiz, a meticulously crafted challenge designed …"
+    }
+  ]
+}

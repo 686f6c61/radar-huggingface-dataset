@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "P-s-v/knife-gliner-large-v2.5",
+  "slug": "p-s-v-knife-gliner-large-v2-5",
+  "author": "P-s-v",
+  "url": "https://huggingface.co/P-s-v/knife-gliner-large-v2.5",
+  "created_at": "2026-09-19T20:28:29.000Z",
+  "updated_at": "2026-09-19T20:31:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "gliner",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gliner",
+    "ner",
+    "reddit",
+    "knives",
+    "token-classification",
+    "en",
+    "dataset:P-s-v/reddit-knife-ner",
+    "base_model:gliner-community/gliner_large-v2.5",
+    "base_model:finetune:gliner-community/gliner_large-v2.5",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "gliner-community/gliner_large-v2.5",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pinterest",
+      "url": "https://www.pinterest.com/",
+      "snippet": "Discover recipes, home ideas, style inspiration and other ideas to try."
+    },
+    {
+      "title": "P - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/P",
+      "snippet": "P (minuscule: p) is the sixteenth letter of the Latin alphabet, used in the modern English alphabet, the alphabets of other western …"
+    },
+    {
+      "title": "P — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/P",
+      "snippet": "Dans l'Église catholique francophone, P. peut signifier « Père », titre ou formule pour s'adresser à un prêtre. Il peut distinguer un …"
+    },
+    {
+      "title": "P (lettre) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/P_(lettre)",
+      "snippet": "En français, le p se prononce généralement [p]. Dans des mots généralement d'origine grecque, le graphème ph, qui transcrit la lettre …"
+    },
+    {
+      "title": "Profile - Pinterest",
+      "url": "https://www.pinterest.com/pinterest/",
+      "snippet": "Pinterest | Find your reason to go offline. 📌"
+    }
+  ]
+}

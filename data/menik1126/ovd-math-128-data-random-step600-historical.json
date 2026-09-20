@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "menik1126/ovd-math-128-data-random-step600-historical",
+  "slug": "menik1126-ovd-math-128-data-random-step600-historical",
+  "author": "menik1126",
+  "url": "https://huggingface.co/menik1126/ovd-math-128-data-random-step600-historical",
+  "created_at": "2026-09-19T22:47:53.000Z",
+  "updated_at": "2026-09-19T23:24:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1777088000,
+  "parameters_human": "1.78B",
+  "storage_bytes": 7119812336,
+  "storage_human": "7.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Electronics, Cars, Fashion, Collectibles & More | eBay",
+      "url": "https://www.ebay.com/?msockid=167d96bffe22655534878165ff9264d4",
+      "snippet": "Discover eBay, the ultimate online marketplace for buying and selling electronics, cars, clothes, collectibles, and more with top …"
+    },
+    {
+      "title": "Shop by Category | eBay",
+      "url": "https://www.ebay.com/n/all-categories?msockid=167d96bffe22655534878165ff9264d4",
+      "snippet": "Shop by department, purchase cars, fashion apparel, collectibles, sporting goods, cameras, baby items, and everything else on eBay, …"
+    },
+    {
+      "title": "Buy Auto Parts & Accessories | eBay",
+      "url": "https://www.ebay.com/b/Auto-Parts-Accessories/6028/bn_569479?msockid=167d96bffe22655534878165ff9264d4",
+      "snippet": "eBay Auto Parts & Accessories has the best prices and largest selection of OEM & aftermarket car parts, truck parts and motorcycle …"
+    },
+    {
+      "title": "Welcome to eBay | eBay.com",
+      "url": "https://pages.ebay.com/welcome-to-ebay/",
+      "snippet": "Get the eBay app Browse, buy, or sell on the go. Get real-time order updates, exclusive deals, and more. Download the app"
+    },
+    {
+      "title": "eBay",
+      "url": "https://mx.ebay.com/",
+      "snippet": "Compra y vende artículos electrónicos, autos, ropa, objetos de colección, artículos deportivos, cámaras digitales, artículos para …"
+    }
+  ]
+}

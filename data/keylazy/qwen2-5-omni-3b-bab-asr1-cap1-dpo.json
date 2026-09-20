@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "keylazy/Qwen2.5-Omni-3B-bab-asr1-cap1-dpo",
+  "slug": "keylazy-qwen2-5-omni-3b-bab-asr1-cap1-dpo",
+  "author": "keylazy",
+  "url": "https://huggingface.co/keylazy/Qwen2.5-Omni-3B-bab-asr1-cap1-dpo",
+  "created_at": "2026-09-19T21:13:16.000Z",
+  "updated_at": "2026-09-19T21:13:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 131227430,
+  "storage_human": "131 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "wPolityce.pl – wiadomości, polityka, opinie i analizy",
+      "url": "https://wpolityce.pl/",
+      "snippet": "Polityka, Polska, świat, gospodarka i społeczeństwo. Najnowsze wiadomości, publicystyka, komentarze i analizy autorów wPolityce.pl."
+    },
+    {
+      "title": "Polityka – Sejm, rząd, prezydent i partie | wPolityce.pl",
+      "url": "https://wpolityce.pl/polityka",
+      "snippet": "Dział Polityka wPolityce.pl to najnowsze wiadomości polityczne z Polski i świata, kulisy decyzji rządu, Sejmu i prezydenta, analizy, …"
+    },
+    {
+      "title": "Fratria - Konto Użytkownika",
+      "url": "https://konto.wpolityce.pl/",
+      "snippet": "Zarządzaj wszystkim w jednym miejscu: zarządzaj swoimi subskrypcjami oraz subskrypcjami rodziny i znajomych, sam decyduj o …"
+    },
+    {
+      "title": "Świat – wydarzenia międzynarodowe i polityka zagraniczna | wPolityce.pl",
+      "url": "https://wpolityce.pl/swiat",
+      "snippet": "Najnowsze informacje ze świata: polityka międzynarodowa, Europa, USA, Ukraina, Rosja, bezpieczeństwo, dyplomacja i globalne …"
+    },
+    {
+      "title": "Wrzosek uderzyła w Sopińskiego! Rektor zapowiada pozew",
+      "url": "https://wpolityce.pl/polityka/wrzosek-uderzyla-w-sopinskiego-rektor-zapowiada-pozew,251910",
+      "snippet": "5 days ago · Ewa Wrzosek, upolityczniona prokurator delegowana do Ministerstwa Sprawiedliwości, zaatakowała na platformie X …"
+    }
+  ]
+}

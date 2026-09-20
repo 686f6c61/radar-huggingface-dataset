@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "ssadqdsacf/cross-unlearning-case6-qwen35-4b-ga",
+  "slug": "ssadqdsacf-cross-unlearning-case6-qwen35-4b-ga",
+  "author": "ssadqdsacf",
+  "url": "https://huggingface.co/ssadqdsacf/cross-unlearning-case6-qwen35-4b-ga",
+  "created_at": "2026-09-20T02:18:31.000Z",
+  "updated_at": "2026-09-20T03:11:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 3,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 9098616821,
+  "storage_human": "9.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "2025 LEWIS HAMILTON DRIVER STANDINGS - Formula 1",
+      "url": "https://www.formula1.com/en/results/2025/drivers/LEWHAM01/lewis-hamilton",
+      "snippet": "Mar 16, 2025 · Pts."
+    },
+    {
+      "title": "Lewis Hamilton - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Lewis_Hamilton",
+      "snippet": "Hamilton signed for Ferrari in 2025, where he won his first Grand Prix in 2026 and is contracted to remain until at least the end of 2027."
+    },
+    {
+      "title": "Lewis Hamilton: ‘With my performance, Ferrari is done’ for 2025 F1 ...",
+      "url": "https://www.motorsport.com/f1/news/lewis-hamilton-with-my-performance-ferrari-is-done-for-2025-f1-runner-up/10779143/",
+      "snippet": "Nov 23, 2025 · Lewis Hamilton delivered arguably his most downbeat interviews of the 2025 Formula 1 season, saying he took “zero” …"
+    },
+    {
+      "title": "Lewis Hamilton F1 results 2025 | RacingNews365",
+      "url": "https://racingnews365.com/drivers/lewis-hamilton/results/2025",
+      "snippet": "All results for Lewis Hamilton in 2025. Full Race results, starting positions, points and standings per race."
+    },
+    {
+      "title": "F1 2025 recap: Life at Ferrari becomes a \"nightmare\" for Lewis Hamilton",
+      "url": "https://www.motorsport.com/f1/news/f1-2025-recap-life-at-ferrari-becomes-a-nightmare-for-lewis-hamilton/10785774/",
+      "snippet": "Dec 23, 2025 · “It’s a nightmare, I’ve been living it for a while”, was Lewis Hamilton ’s frank summary of the 2025 Formula 1 season, …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "mscaidl-0075/smoke_test_lerobot_act",
+  "slug": "mscaidl-0075-smoke_test_lerobot_act",
+  "author": "mscaidl-0075",
+  "url": "https://huggingface.co/mscaidl-0075/smoke_test_lerobot_act",
+  "created_at": "2026-09-19T20:23:33.000Z",
+  "updated_at": "2026-09-19T20:24:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:mscaidl-0075/smoke_test_lerobot",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206712896,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bing検索を省いた新Windows Search、Microsoftがテスト開始",
+      "url": "https://news.mynavi.jp/techplus/article/20260716-4704390/",
+      "snippet": "Jul 16, 2026 · MicrosoftはWindows Searchの新バージョンをWindows Insider ProgramのExperimentalチャネルで公開した。最大の …"
+    },
+    {
+      "title": "Bing",
+      "url": "https://www.bing.com/version",
+      "snippet": "Bing ... Versions"
+    },
+    {
+      "title": "How to See All Bing Related Searches on Any Device",
+      "url": "https://rottenwifi.com/how-to-see-all-bing-related-searches/",
+      "snippet": "Jul 1, 2026 · This guide walks through the practical ways to see Bing related searches on desktop, mobile, and Microsoft Edge. It also …"
+    },
+    {
+      "title": "How To See All Bing Related Searches",
+      "url": "https://www.cloudspress.com/how-to-see-all-bing-related-searches/",
+      "snippet": "Aug 7, 2026 · Bing does not have a public “see everything” page for a keyword. Its related searches and autocomplete suggestions …"
+    },
+    {
+      "title": "Microsoft、ChromeやFirefoxの検索エンジンをBingに変更する ...",
+      "url": "https://news.mynavi.jp/techplus/article/20260825-4862014/",
+      "snippet": "Windows Latestは2026年8月22日 (現地時間)、MicrosoftがChromeやFirefoxなどの検索エンジンやホームページをBingに変更するア …"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "siamasoumi/GameGenerator",
+  "slug": "siamasoumi-gamegenerator",
+  "author": "siamasoumi",
+  "url": "https://huggingface.co/siamasoumi/GameGenerator",
+  "created_at": "2026-09-19T20:41:24.000Z",
+  "updated_at": "2026-09-19T20:41:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "النردشير معناه وسبب حرمته - إسلام ويب",
+      "url": "https://islamweb.net/ar/fatwa/72023/%D8%A7%D9%84%D9%86%D8%B1%D8%AF%D8%B4%D9%8A%D8%B1-%D9%85%D8%B9%D9%86%D8%A7%D9%87-%D9%88%D8%B3%D8%A8%D8%A8-%D8%AD%D8%B1%D9%85%D8%AA%D9%87",
+      "snippet": "Feb 27, 2006 · النردشير، المعروف بلعبة النرد، محرم في الإسلام وفقًا لما ورد في صحيح مسلم، حيث قال النبي صلى الله عليه وسلم: من لعب بالنردشير فكأنما صبغ يده في لحم خنزير ودمه. …"
+    },
+    {
+      "title": "النردشير.. معناه.. وسبب حرمته",
+      "url": "https://www.islamweb.org/ar/fatwa/print.php?id=72023",
+      "snippet": "في صحيح مسلم يقول رسول الله صلى الله عليه وسلم: من لعب بالنردشير فكأنما صبغ يده في لحم خنزير ودمه. فما هو النردشير وما حكمه، وما جزاء من يلعبه؟ الإجابــة: الحمد لله، والصلاة …"
+    },
+    {
+      "title": "النردشير.. معناه.. وسبب حرمته - إسلام ويب",
+      "url": "https://islamweb.net/ar/fatwa/print.php?id=72023",
+      "snippet": "في صحيح مسلم يقول رسول الله صلى الله عليه وسلم: من لعب بالنردشير فكأنما صبغ يده في لحم خنزير ودمه. فما هو النردشير وما حكمه، وما جزاء من يلعبه؟ الإجابــة: الحمد لله، والصلاة …"
+    },
+    {
+      "title": "النردشير.. معناه.. وسبب حرمته - فتوى توك",
+      "url": "https://fatwatok.islamweb.net/?id=72023",
+      "snippet": "في صحيح مسلم يقول رسول الله صلى الله عليه وسلم: من لعب بالنردشير فكأنما صبغ يده في لحم خنزير ودمه. فما هو النردشير وما حكمه، وما جزاء من يلعبه؟"
+    },
+    {
+      "title": "أرشيف الإسلام - وسائل ترفيه - فتوى عن ( النردشير.. معناه.. وسبب حرمته )",
+      "url": "https://www.islamarchive.cc/fatwaa_show_72023_4",
+      "snippet": "الحمد لله والصلاة والسلام على رسول الله وعلى آله وصحبه، أما بعـد: فالنردشير هو النرد، قال المناوي في فيض القدير: النردشير هو النرد ومعناه الفرس حلو."
+    }
+  ]
+}

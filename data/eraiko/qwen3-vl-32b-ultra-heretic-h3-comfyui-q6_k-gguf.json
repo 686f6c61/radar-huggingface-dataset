@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "eraiko/Qwen3-VL-32B-Ultra-Heretic-H3-ComfyUI-Q6_K-GGUF",
+  "slug": "eraiko-qwen3-vl-32b-ultra-heretic-h3-comfyui-q6_k-gguf",
+  "author": "eraiko",
+  "url": "https://huggingface.co/eraiko/Qwen3-VL-32B-Ultra-Heretic-H3-ComfyUI-Q6_K-GGUF",
+  "created_at": "2026-09-20T00:01:50.000Z",
+  "updated_at": "2026-09-20T01:02:25.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "comfyui",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "comfyui",
+    "gguf",
+    "h3",
+    "qwen3-vl",
+    "qwen3-vl-32b",
+    "heretic",
+    "abliterated",
+    "uncensored",
+    "quantized",
+    "llama-cpp",
+    "gguf-my-repo",
+    "image-text-to-text",
+    "en",
+    "base_model:eraiko/Qwen3-VL-32B-Ultra-Heretic-H3-ComfyUI",
+    "base_model:quantized:eraiko/Qwen3-VL-32B-Ultra-Heretic-H3-ComfyUI",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25157829120,
+  "parameters_human": "25.16B",
+  "storage_bytes": 20650852832,
+  "storage_human": "20.7 GB",
+  "base_model": "eraiko/Qwen3-VL-32B-Ultra-Heretic-H3-ComfyUI-INT8-ConvRot",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-20T02:44:44.696Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Parqet - Dein Vermögen immer im Blick",
+      "url": "https://parqet.com/de/",
+      "snippet": "Visualisiere deinen Weg Vermögen aufzubauen — jederzeit und überall. Das Portfolio Performance Tracking von Parqet für Aktien, …"
+    },
+    {
+      "title": "Parqet - Your wealth always in sight",
+      "url": "https://parqet.com/en",
+      "snippet": "Visualize your wealth-building journey — anytime, anywhere. Parqet's portfolio performance tracking for stock, ETF and crypto investors"
+    },
+    {
+      "title": "Startseite | Parqet",
+      "url": "https://faq.parqet.com/de/",
+      "snippet": "Portfolio verwalten & Pflegen Alles was du für die tägliche Nutzung von Parqet wissen musst Von Niklas16 Artikel"
+    },
+    {
+      "title": "Parqet Erfahrungen 2026 Ist der Anbieter seriös? - n-tv.de",
+      "url": "https://www.n-tv.de/broker-vergleich/parqet/",
+      "snippet": "Jan 31, 2025 · Wie Nutzer die mit Parqet gemachten Erfahrungen bewerten, hängt vom persönlichen Anspruch der Trader ab. Für …"
+    },
+    {
+      "title": "Parqet im Test: Die beste Portfolio Tracking Software 2026?",
+      "url": "https://finanzwissen.de/anbieter/parqet/test/",
+      "snippet": "6 days ago · Parqet ist eine App zum Portfolio Tracking und eine webbasierte Alternative zu Portfolio Performance. Wie du dir …"
+    }
+  ]
+}

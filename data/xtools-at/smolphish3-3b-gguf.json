@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "xtools-at/SmolPhish3-3B-GGUF",
+  "slug": "xtools-at-smolphish3-3b-gguf",
+  "author": "xtools-at",
+  "url": "https://huggingface.co/xtools-at/SmolPhish3-3B-GGUF",
+  "created_at": "2026-09-19T22:02:55.000Z",
+  "updated_at": "2026-09-19T22:06:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "smollm3",
+    "llama.cpp",
+    "llama-cpp",
+    "heretic",
+    "text-generation",
+    "en",
+    "dataset:kxm1k4m1/generate_phishing_email_final",
+    "base_model:K0D3IN/SmolLM3-3B-Instruct-heretic",
+    "base_model:quantized:K0D3IN/SmolLM3-3B-Instruct-heretic",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3075098624,
+  "parameters_human": "3.08B",
+  "storage_bytes": 5190880384,
+  "storage_human": "5.2 GB",
+  "base_model": "K0D3IN/SmolLM3-3B-Instruct-heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pornhub und Youporn weiter nicht verfügbar | MTR Legal",
+      "url": "https://www.mtrlegal.com/pornhub-und-youporn-weiterhin-in-deutschland-nicht-verfuegbar/",
+      "snippet": "Am 2. Mai 2025 hat das Verwaltungsgericht Berlin (Beschlüsse VG 32 L 25/25 und VG 32 L 26/25) im Rahmen einstweiliger …"
+    },
+    {
+      "title": "Pornoseiten Pornhub und Youporn bleiben in Deutschland gesperrt",
+      "url": "https://www.focus.de/digital/internet/pornoseiten-pornhub-und-youporn-bleiben-in-deutschland-gesperrt_cf09125b-e22d-4718-a353-747ddd6958ad.html",
+      "snippet": "Jun 7, 2025 · Die Pornoseiten Pornhub und Youporn bleiben in Deutschland weiterhin blockiert. Das wurde nun erneut durch das …"
+    },
+    {
+      "title": "Sorry, No Pornhub Access in 25 States and 3 Countries. How to Watch ...",
+      "url": "https://www.pcmag.com/news/no-pornhub-access-25-states-3-countries-how-to-watch-anyway-vpn",
+      "snippet": "Aug 28, 2026 · Aylo sites like Pornhub are blocked in half the country and overseas, in protest of age-verification laws. Here's how we …"
+    },
+    {
+      "title": "Pornhub und Youporn: Zugang in Deutschland weiterhin gesperrt",
+      "url": "https://www.20min.ch/story/gerichtsurteil-pornhub-und-youporn-bleiben-fuer-viele-deutsche-gesperrt-103334269",
+      "snippet": "Apr 30, 2025 · Zugang zu Pornhub und Youporn weiterhin für viele Deutsche gesperrt. Zwei Gerichte bestätigen Sperrverfügungen …"
+    },
+    {
+      "title": "All the states Pornhub is blocked in as of July 2026 | Mashable",
+      "url": "https://mashable.com/article/pornhub-blocked-states-2025",
+      "snippet": "Jul 16, 2026 · The explicit tube site Pornhub is now blocked in 25 U.S. states — half of the country. This is due to age-verification laws."
+    }
+  ]
+}

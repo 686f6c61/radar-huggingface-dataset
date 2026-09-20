@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "LaDruid/MiniMax-H3-Multishot-Workflow",
+  "slug": "ladruid-minimax-h3-multishot-workflow",
+  "author": "LaDruid",
+  "url": "https://huggingface.co/LaDruid/MiniMax-H3-Multishot-Workflow",
+  "created_at": "2026-09-19T20:29:06.000Z",
+  "updated_at": "2026-09-19T20:29:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-video",
+  "library": "minimax-h3",
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "comfyui",
+    "video-generation",
+    "text-to-video",
+    "workflow",
+    "audio-video",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10259457,
+  "storage_human": "10 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Visio是做什么的？推荐5款数据可视化软件，比Visio画图更简单",
+      "url": "https://www.zhihu.com/tardis/bd/art/31148576914",
+      "snippet": "二、Visio的功能有哪些？ 1、数据可视化 数据可视化是 Visio 的核心功能之一。它能够将海量的数据以图表、图形等形式直观地呈现出 …"
+    },
+    {
+      "title": "visio哪个版本好用？",
+      "url": "https://www.zhihu.com/tardis/bd/ans/1938023359276381932",
+      "snippet": "visio版本比较多，限制也很多，不管是从模板资源数量、绘图种类，还是从支持操作系统、功能丰富性方面，我都建议试试万兴图示， …"
+    },
+    {
+      "title": "找不到靠谱的visio下载地址？ - 知乎",
+      "url": "https://www.zhihu.com/question/35213048",
+      "snippet": "‌ Microsoft Visio‌ 是一款功能强大且十分专业‌的流程图和矢量绘图软件‌，主要用于创建各种类型的图表来可视化复杂信息、流程和关系。 …"
+    },
+    {
+      "title": "除了Visio 绘图，还有其它绘图工具推荐嘛？ - 知乎",
+      "url": "https://www.zhihu.com/question/2079580995330880235",
+      "snippet": "和 Visio、亿图比： 那些功能专业但要买授权、要装、可能绑订阅；Drawio 免费开源、无广告、无会员、无导出限制。 上手流程： 打 …"
+    },
+    {
+      "title": "有已激活的Word、Excel、PowerPoint，如何接着安装Visio、Project等 …",
+      "url": "https://www.zhihu.com/question/508861853",
+      "snippet": "参考博主 Visio安装 (无需卸载OFFICE）（解决安装冲突问题）_visio安装和office冲突-CSDN博客 下载方法，进行下载visio，然后再下 …"
+    }
+  ]
+}

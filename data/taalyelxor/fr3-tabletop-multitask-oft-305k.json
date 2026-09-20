@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "taalyelxor/fr3-tabletop-multitask-oft-305k",
+  "slug": "taalyelxor-fr3-tabletop-multitask-oft-305k",
+  "author": "taalyelxor",
+  "url": "https://huggingface.co/taalyelxor/fr3-tabletop-multitask-oft-305k",
+  "created_at": "2026-09-20T02:36:49.000Z",
+  "updated_at": "2026-09-20T02:39:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "openvla",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 7541237184,
+  "parameters_human": "7.54B",
+  "storage_bytes": 15937077983,
+  "storage_human": "15.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "certificate - Convert pfx format to p12 - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/6819079/convert-pfx-format-to-p12",
+      "snippet": "Jul 25, 2011 · I need to export a .pfx format certificate (from Windows MMC) to .p12 to use in another application. I cant find a way to …"
+    },
+    {
+      "title": "How to convert .pfx file to keystore with private key?",
+      "url": "https://stackoverflow.com/questions/4217107/how-to-convert-pfx-file-to-keystore-with-private-key",
+      "snippet": "Nov 18, 2010 · Intended outcomes: The PFX (foo.pfx in the examples) will be imported into JKS keystore (bar.keystore in the …"
+    },
+    {
+      "title": "Proposals - ApeCoin Delegation",
+      "url": "https://delegate.apecoin.com/proposals",
+      "snippet": "Through its diverse game offerings and robust revenue model ... Superfine, a Made By Apes Company, is an AI growth tool for games to maximize their UA."
+    },
+    {
+      "title": "Как сконвертировать ключи OpenSSH в .pfx или .p12?",
+      "url": "https://ru.stackoverflow.com/questions/433868/%D0%9A%D0%B0%D0%BA-%D1%81%D0%BA%D0%BE%D0%BD%D0%B2%D0%B5%D1%80%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D1%82%D1%8C-%D0%BA%D0%BB%D1%8E%D1%87%D0%B8-openssh-%D0%B2-pfx-%D0%B8%D0%BB%D0%B8-p12",
+      "snippet": "Jul 6, 2015 · Есть ключи, сгенерированные OpenSSH: id_dsa, id_rsa. Хочу записать их на USB-токен. Для этого нужно …"
+    },
+    {
+      "title": "encryption - Obtaining .p12 certificate from PEM file and CRT file ...",
+      "url": "https://security.stackexchange.com/questions/249608/obtaining-p12-certificate-from-pem-file-and-crt-file-provided-by-godaddy",
+      "snippet": "May 22, 2021 · My wish is to generate the relevant .p12 or .pfx or .jks private certificate out of these PEM and CRT files but I don't …"
+    }
+  ]
+}

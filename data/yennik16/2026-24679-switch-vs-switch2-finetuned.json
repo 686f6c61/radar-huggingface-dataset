@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "yennik16/2026-24679-switch-vs-switch2-finetuned",
+  "slug": "yennik16-2026-24679-switch-vs-switch2-finetuned",
+  "author": "yennik16",
+  "url": "https://huggingface.co/yennik16/2026-24679-switch-vs-switch2-finetuned",
+  "created_at": "2026-09-20T00:39:43.000Z",
+  "updated_at": "2026-09-22T01:45:13.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "autogluon",
+  "languages": [],
+  "tags": [
+    "autogluon",
+    "image-classification",
+    "transfer-learning",
+    "fine-tuning",
+    "automl",
+    "coursework",
+    "dataset:pakiino/2026-24679-switch-image-hw1",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 117993443,
+  "storage_human": "118 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wells Fargo Bank | Financial Services & Online Banking",
+      "url": "https://www.wellsfargo.com/",
+      "snippet": "New customers open an eligible checking account with qualifying direct deposits. New customer? Say hello to a $125 bonus. Open a …"
+    },
+    {
+      "title": "Sign On",
+      "url": "https://wca.sec.wellsfargo.com/wca/",
+      "snippet": "Sign in to your Wells Fargo account securely to access banking services and manage your finances online."
+    },
+    {
+      "title": "My Accounts - Wells Fargo",
+      "url": "https://myaccounts.sec.wellsfargo.com/servicing_ui/",
+      "snippet": "There currently is a problem attempting to load the content of this application. Please try again later."
+    },
+    {
+      "title": "Manage Your Accounts with Wells Fargo Online®",
+      "url": "https://www.wellsfargo.com/mobile-online-banking/manage-accounts/",
+      "snippet": "Use the Wells Fargo Mobile® app or Wells Fargo Online® to access your accounts, monitor balances and activities, set up alerts, …"
+    },
+    {
+      "title": "Mobile & Online Banking: Checking & Savings Accounts | Wells Fargo",
+      "url": "https://www.wellsfargo.com/mobile-online-banking/",
+      "snippet": "Online and mobile banking made easy: Manage checking and savings accounts, pay bills, monitor spending and more with the Wells …"
+    }
+  ]
+}

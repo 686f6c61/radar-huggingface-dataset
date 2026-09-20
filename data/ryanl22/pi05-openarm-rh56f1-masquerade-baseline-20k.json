@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "RyanL22/pi05-openarm-rh56f1-masquerade-baseline-20k",
+  "slug": "ryanl22-pi05-openarm-rh56f1-masquerade-baseline-20k",
+  "author": "RyanL22",
+  "url": "https://huggingface.co/RyanL22/pi05-openarm-rh56f1-masquerade-baseline-20k",
+  "created_at": "2026-09-20T00:24:41.000Z",
+  "updated_at": "2026-09-20T00:34:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "openarm",
+    "masquerade",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 9354057648,
+  "storage_human": "9.4 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "2025 Annual Report - Johnson & Johnson",
+      "url": "https://www.jnj.com/download/johnson-johnson-2025-annual-report",
+      "snippet": "Johnson & Johnson ended 2025 stronger than ever with an unrivaled portfolio and pipeline, and with sharpened focus and expertise …"
+    },
+    {
+      "title": "Johnson & Johnson Earnings Report: 2025 Full-Year Infographic",
+      "url": "https://www.jnj.com/latest-news/2025-fourth-quarter-and-full-year-earnings",
+      "snippet": "Jan 21, 2026 · Check out this infographic breakdown of the company’s full-year performance, with highlights from its Innovative …"
+    },
+    {
+      "title": "Johnson & Johnson 2025: Positioned as an innovation powerhouse",
+      "url": "https://www.pharmalive.com/johnson-johnson-2025-positioned-as-an-innovation-powerhouse/",
+      "snippet": "Oct 7, 2025 · Johnson & Johnson’s Chairman and CEO Joaquin Duato says he is laser-focused on fortifying the company’s position …"
+    },
+    {
+      "title": "Johnson & Johnson reports Q4 and Full-Year 2025 results",
+      "url": "https://investor.jnj.com/investor-news/news-details/2026/Johnson--Johnson-reports-Q4-and-Full-Year-2025-results/default.aspx",
+      "snippet": "Jan 21, 2026 · NEW BRUNSWICK, N.J.-- (BUSINESS WIRE)-- Johnson & Johnson (NYSE: JNJ) today announced results for fourth …"
+    },
+    {
+      "title": "Johnson & Johnson reports Q4 and Full-Year 2025 results",
+      "url": "https://www.nasdaq.com/press-release/johnson-johnson-reports-q4-and-full-year-2025-results-2026-01-21",
+      "snippet": "Jan 21, 2026 · Johnson& Johnson today announced results for fourth-quarter and full-year 2025.\" 2025 was a catapult year for …"
+    }
+  ]
+}

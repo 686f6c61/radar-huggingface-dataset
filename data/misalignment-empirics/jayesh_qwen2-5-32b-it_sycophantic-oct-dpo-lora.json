@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Misalignment-Empirics/jayesh_qwen2.5-32b-it_sycophantic-oct-dpo-lora",
+  "slug": "misalignment-empirics-jayesh_qwen2-5-32b-it_sycophantic-oct-dpo-lora",
+  "author": "Misalignment-Empirics",
+  "url": "https://huggingface.co/Misalignment-Empirics/jayesh_qwen2.5-32b-it_sycophantic-oct-dpo-lora",
+  "created_at": "2026-09-19T23:41:51.000Z",
+  "updated_at": "2026-09-19T23:42:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "model-organism",
+    "character-training",
+    "persona:sycophantic",
+    "text-generation",
+    "conversational",
+    "arxiv:2511.01689",
+    "base_model:Qwen/Qwen2.5-32B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-32B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2159027852,
+  "storage_human": "2.2 GB",
+  "base_model": "Qwen/Qwen2.5-32B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Знаменитости 3 Shared by 1f6f**qits | PikPak",
+      "url": "https://mypikpak.com/s/VO47xuhY_Ds4ObXboOZK5w3co1/VO47xs65NzAZD3MxnQmkWjtlo1",
+      "snippet": "Знаменитости 3 Татьяна Котова Zoey Taylor Zizi Strallen Zara Larsson Yvette M... available for high-speed download on PikPak …"
+    },
+    {
+      "title": "NewStar Kitty - [Sets 01-16] Shared by 1f6e**js2b | PikPak",
+      "url": "https://mypikpak.com/s/VNki0BJMS8SUMyW6ABPfg-rxo1",
+      "snippet": "NewStar Kitty - [Sets 01-16] available for high-speed download on PikPak and streaming across multiple devices."
+    },
+    {
+      "title": "lsm VIDEO-ANGELS vda 12a nina H... Shared by 1f5u**e80d | PikPak",
+      "url": "https://mypikpak.com/s/VNko7zhyH26fFrUs-UIZ0eq5o1",
+      "snippet": "lsm VIDEO-ANGELS vda 12a nina HMM Gracel.mpg available for high-speed download on PikPak and streaming across multiple …"
+    },
+    {
+      "title": "Files in StarSessions folder - filedot.to",
+      "url": "https://filedot.to/folder/e6f6a4d5",
+      "snippet": "Files Download all files in this folder with one click"
+    },
+    {
+      "title": "stripchat【Olivia】童颜巨乳小萝莉! 滴蜡~缸塞~自慰喷... Shared by 12**56 | PikPak",
+      "url": "https://mypikpak.com/s/VNtAp1HKghhYcwm0Gu-rh89Ho1/VNtAp-KQfDInQ3lJ-N1lPD_co1",
+      "snippet": "Shared by 12**56 Permanent Validity Save all files to my PikPak All files stripchat【Olivia】童颜巨乳小萝莉! 滴蜡~缸塞~自慰喷水!"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "salah-2005/multilingual_embeddings",
+  "slug": "salah-2005-multilingual_embeddings",
+  "author": "salah-2005",
+  "url": "https://huggingface.co/salah-2005/multilingual_embeddings",
+  "created_at": "2026-09-19T21:23:56.000Z",
+  "updated_at": "2026-09-19T21:25:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "joblib",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19543,
+  "storage_human": "19543 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chicago, IL Hourly Weather | AccuWeather",
+      "url": "https://www.accuweather.com/en/us/chicago/60608/hourly-weather-forecast/348308",
+      "snippet": "Hourly weather forecast in Chicago, IL. Check current conditions in Chicago, IL with radar, hourly, and more."
+    },
+    {
+      "title": "Chicago, IL Weather Forecast | AccuWeather",
+      "url": "https://www.accuweather.com/en/us/chicago/60608/weather-forecast/348308",
+      "snippet": "Chicago, IL Weather Forecast, with current conditions, wind, air quality, and what to expect for the next 3 days."
+    },
+    {
+      "title": "10-Day Weather Forecast for Chicago, Illinois - The Weather Channel ...",
+      "url": "https://weather.com/us/illinois/city/chicago/tenday",
+      "snippet": "Be prepared with the most accurate 10-day forecast for Chicago, Illinois with highs, lows, chance of precipitation from The Weather …"
+    },
+    {
+      "title": "Chicago, IL - National Weather Service",
+      "url": "https://www.weather.gov/lot/",
+      "snippet": "Click a location below for detailed forecast."
+    },
+    {
+      "title": "Chicago weather forecast – NBC Chicago",
+      "url": "https://www.nbcchicago.com/weather/",
+      "snippet": "The NBC 5 Storm Team forecast brings you the latest Chicago and Midwest weather forecasts, including live radar and weather maps."
+    }
+  ]
+}

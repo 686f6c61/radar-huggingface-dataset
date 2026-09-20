@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Sudarshan18/gr00t-n17-g1-dex3-handover",
+  "slug": "sudarshan18-gr00t-n17-g1-dex3-handover",
+  "author": "Sudarshan18",
+  "url": "https://huggingface.co/Sudarshan18/gr00t-n17-g1-dex3-handover",
+  "created_at": "2026-09-19T22:15:26.000Z",
+  "updated_at": "2026-09-19T22:17:45.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "Gr00tN1d7",
+    "robotics",
+    "manipulation",
+    "bimanual",
+    "isaac-lab",
+    "unitree-g1",
+    "gr00t",
+    "base_model:nvidia/GR00T-N1.7-3B",
+    "base_model:finetune:nvidia/GR00T-N1.7-3B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 12576206865,
+  "storage_human": "12.6 GB",
+  "base_model": "nvidia/GR00T-N1.7-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HATTA RESORTS IS NOW CLOSED FOR THE SUMMER SEASON.",
+      "url": "https://www.visithatta.com/en/stay",
+      "snippet": "Explore unique glamping stays in Hatta Resorts, from Damani lodges and domes with plunge pools to campers and vintage campers. …"
+    },
+    {
+      "title": "Hatta Resorts",
+      "url": "https://www.hattaresorts.org/",
+      "snippet": "Jul 21, 2026 · Hatta Resorts offers premium farmhouses, private pool resorts, mountain retreats, and luxury holiday homes in Hatta, …"
+    },
+    {
+      "title": "Hatta Resorts, Hatta (updated prices 2027) - Booking.com",
+      "url": "https://www.booking.com/hotel/ae/damani-lodges.html?msockid=3d56686f1abc6d1904e57fb61bf76cf6",
+      "snippet": "Hatta Resorts is located in Hatta and features barbecue facilities. This 2-star hotel offers room service and a tour desk."
+    },
+    {
+      "title": "Back to the mountains: Hatta Resorts reopens for season 9 with new ...",
+      "url": "https://www.dubaiholding.com/en/media-hub/press-releases/back-to-the-mountains-hatta-resorts-reopens-for-season-9-with-new-heritage-trailers-upgraded-stays",
+      "snippet": "3 days ago · Hatta Resorts by Dubai Holding and its Wadi Hub, the destination that combines outdoor adventure, distinctive …"
+    },
+    {
+      "title": "aha Hotels & Lodges | Delightful Experiences",
+      "url": "https://www.aha.co.za/",
+      "snippet": "With aha’s collection of properties, there is something for everyone – from unforgettable wildlife experiences to the ultimate romantic …"
+    }
+  ]
+}

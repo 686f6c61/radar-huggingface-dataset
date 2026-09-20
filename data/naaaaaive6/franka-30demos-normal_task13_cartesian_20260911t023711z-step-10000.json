@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "NaaaaaiVe6/franka-30demos-normal_task13_cartesian_20260911T023711Z-step-10000",
+  "slug": "naaaaaive6-franka-30demos-normal_task13_cartesian_20260911t023711z-step-10000",
+  "author": "NaaaaaiVe6",
+  "url": "https://huggingface.co/NaaaaaiVe6/franka-30demos-normal_task13_cartesian_20260911T023711Z-step-10000",
+  "created_at": "2026-09-19T20:46:27.000Z",
+  "updated_at": "2026-09-19T20:48:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3616757520,
+  "parameters_human": "3.62B",
+  "storage_bytes": 7233650408,
+  "storage_human": "7.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "تنظيف دكتات التكييف في الكويت | كلين الكويت",
+      "url": "https://kwtclean.com/services/hvac-cleaning",
+      "snippet": "خدمة تنظيف دكتات التكييف الاحترافية في الكويت , نزيل الغبار والجراثيم من مجاري الهواء في المكاتب والمنازل والمنشآت بمعدات متخصصة. احصل على عرض سعر مجاني."
+    },
+    {
+      "title": "تنظيف دكتات | القطب الشمالي لخدمات التكييف في الكويت",
+      "url": "https://www.northpolekw.com/%D8%AA%D9%86%D8%B8%D9%8A%D9%81-%D8%AF%D9%83%D8%AA%D8%A7%D8%AA",
+      "snippet": "يعتمد فريقنا من الفنيين المهرة على أحدث التقنيات لتنظيف دكتات التكييف بفعالية تامة، ما يضمن لك أداءً ممتازًا ويطيل من عمر نظام التكييف لديك."
+    },
+    {
+      "title": "تنظيف دكتات 22094040 شركة تنظيف دكت التكييف المركزي بالكويت",
+      "url": "https://miskalddar.com/%D8%AA%D9%86%D8%B8%D9%8A%D9%81-%D8%AF%D9%83%D8%AA%D8%A7%D8%AA/",
+      "snippet": "تقديم خدمة تنظيف دكتات تكييف احترافية وفعالة. استخدام أحدث تقنيات ومعدات التنظيف. استخدام مواد تنظيف فعالة ومعتمدة من وزارة الصحة. توفير بيئة آمنة تمامًا قبل المباشرة في تقديم الخدمة."
+    },
+    {
+      "title": "تنظيف دكتات التكييف في الكويت | خدمة احترافية | مؤسسة المشامع",
+      "url": "https://mashame3.com/services/duct-cleaning.html",
+      "snippet": "نقدم خدمة تنظيف دكتات التكييف المركزي في الكويت باحترافية عالية. هواء نقي وصحي لمنزلك أو مكتبك. خدمة 24 ساعة. اتصل الآن 55334254."
+    },
+    {
+      "title": "دليل شامل لتنظيف وصيانة دكتات التكييف | شركة جاما",
+      "url": "https://gama-est.com/%D8%AF%D9%84%D9%8A%D9%84-%D8%B4%D8%A7%D9%85%D9%84-%D9%84%D8%AA%D9%86%D8%B8%D9%8A%D9%81-%D9%88%D8%B5%D9%8A%D8%A7%D9%86%D8%A9-%D8%AF%D9%83%D8%AA%D8%A7%D8%AA-%D8%A7%D9%84%D8%AA%D9%83%D9%8A%D9%8A%D9%81/",
+      "snippet": "Feb 24, 2026 · دليل شامل لتنظيف وصيانة دكتات التكييف : علامات الحاجة للتنظيف، أفضل جدول للصيانة، تغيير الفلاتر، وتقليل الروائح والغبار لتحسين جودة الهواء وكفاءة التبريد."
+    }
+  ]
+}

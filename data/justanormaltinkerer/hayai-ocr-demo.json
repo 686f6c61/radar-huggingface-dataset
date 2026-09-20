@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "JustANormalTinkerer/hayai-ocr-demo",
+  "slug": "justanormaltinkerer-hayai-ocr-demo",
+  "author": "JustANormalTinkerer",
+  "url": "https://huggingface.co/JustANormalTinkerer/hayai-ocr-demo",
+  "created_at": "2026-09-19T21:13:32.000Z",
+  "updated_at": "2026-09-19T21:14:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/youtube",
+      "snippet": "YouTube's official YouTube channel You found us. Welcome to the official YouTube channel – a home for the biggest moments, the …"
+    },
+    {
+      "title": "YouTube Indonesia",
+      "url": "https://www.youtube.com/ytindonesia",
+      "snippet": "Selamat datang di Spotlight channel YouTube Indonesia, tempat di mana kamu dapat menemukan apa yang baru dan sedang tren di …"
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/Library/Playlists",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/library",
+      "snippet": "Listen to your favorite EPs, podcasts, and albums on your time. Access your music library online, anytime, any place and enjoy music …"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed/yt+",
+      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new …"
+    }
+  ]
+}

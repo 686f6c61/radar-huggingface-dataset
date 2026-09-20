@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "arthurisaquefathy/patati",
+  "slug": "arthurisaquefathy-patati",
+  "author": "arthurisaquefathy",
+  "url": "https://huggingface.co/arthurisaquefathy/patati",
+  "created_at": "2026-09-19T22:25:11.000Z",
+  "updated_at": "2026-09-21T20:43:08.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 92981898,
+  "storage_human": "93 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Problème remboursement commande Amazon [Résolu] - Forum Que …",
+      "url": "https://forum.quechoisir.org/probleme-remboursement-commande-amazon-t329055.html",
+      "snippet": "Dec 5, 2022 · J'ai aussitôt téléphoné au service AMAZON pour savoir ce qu'il en était et j'ai eu à faire à des interlocuteurs très …"
+    },
+    {
+      "title": "Prime-Video-Hit „Fallout“ kommt 2026 auf Blu-ray und 4K UHD ...",
+      "url": "https://www.dvd-forum.at/prime-video-hit-fallout-kommt-2026-auf-blu-ray-und-4k-uhd",
+      "snippet": "May 15, 2026 · „Fallout“ basiert auf einer der bekanntesten Videospielreihen aller Zeiten und spielt 200 Jahre nach einer nuklearen …"
+    },
+    {
+      "title": "Aidez moi svp ! Colis marqué livré par Amazon mais non reçu",
+      "url": "https://forum.quechoisir.org/aidez-moi-svp-colis-marque-livre-mais-non-recu-par-amazon-t251955.html",
+      "snippet": "Oct 23, 2019 · Livre électronique (Dossier) Amazon Prime - Une prime de risque pour les consommateurs ? (Billet de la présidente) …"
+    },
+    {
+      "title": "Amazon Prime Day 2026: Zahlreiche Spiele und Gaming-Produkte im …",
+      "url": "https://www.dvd-forum.at/amazon-prime-day-2026-zahlreiche-spiele-und-gaming-produkte-im-angebot",
+      "snippet": "Jun 23, 2026 · Auch Gamer kommen beim diesjährigen Amazon Prime Day 2026 auf ihre Kosten. Amazon hat aktuell zahlreiche …"
+    },
+    {
+      "title": "亚马逊prime会员是所有东西都包邮还是标了prime的东西 ...",
+      "url": "https://www.zhihu.com/question/394768466",
+      "snippet": "May 14, 2020 · 图片来自于Amazon，版权属于原作者 Amazon Prime会员不但可以享受免费2日速递的便利，而且现在很多地区已经升 …"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Vishva007/Qwen3.5-9B-W4A16-AutoRound-GPTQ",
+  "slug": "vishva007-qwen3-5-9b-w4a16-autoround-gptq",
+  "author": "Vishva007",
+  "url": "https://huggingface.co/Vishva007/Qwen3.5-9B-W4A16-AutoRound-GPTQ",
+  "created_at": "2026-09-20T03:49:08.000Z",
+  "updated_at": "2026-09-20T03:57:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "quantization",
+    "auto-round",
+    "gptq",
+    "llm-compressor",
+    "compressed-tensors",
+    "9Bit",
+    "text-generation",
+    "image-text-to-text",
+    "reasoning",
+    "distillation",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:quantized:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2247,
+  "trending_score": 0,
+  "parameters": 2491309296,
+  "parameters_human": "2.49B",
+  "storage_bytes": 9980842077,
+  "storage_human": "10.0 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "微星科技 - MSI",
+      "url": "https://www.msi.cn/support/download",
+      "snippet": "微星科技全球拥有超过一万五千多名菁英团队、产品营销遍及全球120余国，主板与显卡名列全球前三大、笔记本电脑跻身世界前十 …"
+    },
+    {
+      "title": "Welcome To MSI Service And Support - 微星科技",
+      "url": "https://hk.msi.com/support/",
+      "snippet": "歡迎來到微星科技中文官方網站 Contact Support Thank you for choosing MSI. Please feel free to contact us with the channel below, …"
+    },
+    {
+      "title": "用戶端電腦支援與下載 | Fujitsu Taiwan",
+      "url": "https://global.fujitsu/zh-tw/support/computing-notebooks",
+      "snippet": "用戶端電腦支援與下載 Voluntary Recall and Replacement of Laptop Battery Packs We have learned that certain battery packs, …"
+    },
+    {
+      "title": "如何更新驅動程式? - 微星科技",
+      "url": "https://tw.msi.com/support/technical_details/NB_Driver_Update",
+      "snippet": "Mar 27, 2024 · 針對部分驅動，該軟體會自動安裝，您只需在安裝完成後重啟筆電即可。 針對無法直接安裝的驅動，該軟體會在下載之 …"
+    },
+    {
+      "title": "如何下載 QNAP 軟體日誌以進行故障排除 | 威聯通科技 QNAP",
+      "url": "https://www.qnap.com/zh-tw/how-to/faq/article/how-to-download-qnap-software-logs-for-troubleshooting",
+      "snippet": "Jul 13, 2026 · When QNAP NAS systems or applications encounter issues, collecting logs helps technical support diagnose the root …"
+    }
+  ]
+}

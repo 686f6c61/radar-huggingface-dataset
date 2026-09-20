@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "morlayecis0003/whisper-small-pulaar-lora",
+  "slug": "morlayecis0003-whisper-small-pulaar-lora",
+  "author": "morlayecis0003",
+  "url": "https://huggingface.co/morlayecis0003/whisper-small-pulaar-lora",
+  "created_at": "2026-09-19T20:50:24.000Z",
+  "updated_at": "2026-09-19T21:58:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "whisper",
+    "lora",
+    "asr",
+    "pulaar",
+    "fulfulde",
+    "low-resource",
+    "base_model:openai/whisper-small",
+    "base_model:adapter:openai/whisper-small",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7098064,
+  "storage_human": "7 MB",
+  "base_model": "openai/whisper-small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft Translator - Bing",
+      "url": "https://www.bing.com/translator",
+      "snippet": "Use Enter / Space to view and traverse through the list of languages Click to Clear Translating: Undo Listen Speak to translate"
+    },
+    {
+      "title": "Microsoft Translator - Bing",
+      "url": "https://www.bing.com/translator?cc=gb",
+      "snippet": "DebugID: Only the first 1000 characters can be translated at once Regenerate with AI"
+    },
+    {
+      "title": "Microsoft Translator - Bing",
+      "url": "https://www.bing.com/translator?setlang=en",
+      "snippet": "DebugID: Only the first 1000 characters can be translated at once Regenerate with AI"
+    },
+    {
+      "title": "Microsoft Translator - Translate from English - Bing",
+      "url": "https://www.bing.com/translator?setlang=wo",
+      "snippet": "Translate English for free with accurate results. Millions use Bing every day to translate across 100+ languages - try it now!"
+    },
+    {
+      "title": "Microsoft Translator – aus Englisch übersetzen - Bing",
+      "url": "https://www.bing.com/translator?cc=de",
+      "snippet": "Übersetzen Sie Englisch kostenlos mit genauen Ergebnissen. Millionen verwenden Bing täglich, um mehr als 100 Sprachen zu …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "hoanghieu16720/pi05-x3plus-moving-v2",
+  "slug": "hoanghieu16720-pi05-x3plus-moving-v2",
+  "author": "hoanghieu16720",
+  "url": "https://huggingface.co/hoanghieu16720/pi05-x3plus-moving-v2",
+  "created_at": "2026-09-20T01:43:17.000Z",
+  "updated_at": "2026-09-20T01:44:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "robotics",
+    "vision-language-action",
+    "pi0",
+    "lora",
+    "lerobot",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6335677162,
+  "storage_human": "6.3 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Start - Perspektivwende Management Consulting Coaching Silke …",
+      "url": "https://www.perspektiv-wende.de/",
+      "snippet": "In Ihrer Verantwortung als Manager:in und Führungskraft tragen Sie wesentlich zum Erfolg Ihres Unternehmens bei und möchten es …"
+    },
+    {
+      "title": "PERSPEKTIVENWENDE – Beratung & Coaching",
+      "url": "https://perspektivenwen.de/",
+      "snippet": "Gute und motivierte Zusammenarbeit, positives Betriebsklima, Menschen, die gerne Verantwortung übernehmen und sich zugehörig …"
+    },
+    {
+      "title": "Perspektiven e.V. – Gemeinsam Wege finden",
+      "url": "https://www.perspektivenev.de/",
+      "snippet": "Wir sind ein gemeinnütziger Verein mit ambulanten und teilstationären Angeboten im Hochtaunuskreis und in Frankfurt am Main.Wir …"
+    },
+    {
+      "title": "Perspektivenübernahme (Psychologie) – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Perspektiven%C3%BCbernahme_(Psychologie)",
+      "snippet": "In der Sozialpsychologie ist Perspektivenübernahme der Prozess, eine bestimmte Situation vom Standpunkt einer anderen Person …"
+    },
+    {
+      "title": "Perspektive – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Perspektive",
+      "snippet": "Bei der visuellen Wahrnehmung des Menschen von Perspektive im realen Raum spielt der Sehwinkel eine Rolle. Näher am Auge …"
+    }
+  ]
+}

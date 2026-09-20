@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "nermeen28/nermeen-persona",
+  "slug": "nermeen28-nermeen-persona",
+  "author": "nermeen28",
+  "url": "https://huggingface.co/nermeen28/nermeen-persona",
+  "created_at": "2026-09-19T20:25:28.000Z",
+  "updated_at": "2026-09-19T20:33:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 6183349158,
+  "storage_human": "6.2 GB",
+  "base_model": "unsloth/qwen2.5-3b-instruct-unsloth-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fortnite | Scaricalo e gioca gratuitamente sull'Epic Games Store",
+      "url": "https://store.epicgames.com/p/fortnite?lang=it",
+      "snippet": "Scarica e gioca Fortnite GRATIS sull'Epic Games Store. Controlla la disponibilità della piattaforma e gioca subito!"
+    },
+    {
+      "title": "Fortnite | Kostenlos herunterladen und spielen – Epic Games Store",
+      "url": "https://store.epicgames.com/p/fortnite?lang=de",
+      "snippet": "Lade dir Fortnite im Epic Games Store herunter und spiele es KOSTENLOS. Schaue nach, für welche Plattform es verfügbar ist, und …"
+    },
+    {
+      "title": "Fortnite | Télécharger et jouer gratuitement - Epic Games Store",
+      "url": "https://store.epicgames.com/p/fortnite?lang=fr",
+      "snippet": "Téléchargez et jouez à Fortnite GRATUITEMENT sur l'Epic Games Store. Vérifiez la compatibilité avec votre plateforme et jouez dès …"
+    },
+    {
+      "title": "Fortnite | Загружайте и играйте бесплатно в Epic Games Store",
+      "url": "https://store.epicgames.com/p/fortnite?lang=ru",
+      "snippet": "Загружайте Fortnite из Epic Games Store и играйте БЕСПЛАТНО. Проверьте доступность платформы и играйте сегодня!"
+    },
+    {
+      "title": "Fortnite | Download and Play for Free - Epic Games Store",
+      "url": "https://store.epicgames.com/all-experiences/fortnite?lang=en-US",
+      "snippet": "Download and play Fortnite for FREE at the Epic Games Store. Check for platform availability and play today!"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "infosave/Ternary-Bonsai-2-27B-cmf",
+  "slug": "infosave-ternary-bonsai-2-27b-cmf",
+  "author": "infosave",
+  "url": "https://huggingface.co/infosave/Ternary-Bonsai-2-27B-cmf",
+  "created_at": "2026-09-19T22:09:30.000Z",
+  "updated_at": "2026-09-20T15:50:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "cortiq",
+  "languages": [
+    "en",
+    "ru"
+  ],
+  "tags": [
+    "cortiq",
+    "cmf",
+    "q2tp",
+    "q2tp-affine",
+    "ternary",
+    "hadamard",
+    "vulkan",
+    "metal",
+    "text-generation",
+    "en",
+    "ru",
+    "base_model:prism-ml/Ternary-Bonsai-2-27B-mlx-2bit",
+    "base_model:quantized:prism-ml/Ternary-Bonsai-2-27B-mlx-2bit",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8247698536,
+  "storage_human": "8.2 GB",
+  "base_model": "prism-ml/Ternary-Bonsai-2-27B-mlx-2bit",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Informe de tu vida laboral. Seguridad Social | Gobierno de España, UE",
+      "url": "https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Vida%20laboral%20e%20informes/Informes%20sobre%20tu%20situacion%20laboral/Informe%20de%20tu%20vida%20laboral",
+      "snippet": "Consultar todas tus situaciones de alta y baja en los distintos regímenes de la Seguridad Social. Obtener un informe en PDF de tu …"
+    },
+    {
+      "title": "Vida laboral e informes. Seguridad Social | Gobierno de España, UE",
+      "url": "https://portal.seg-social.gob.es/wps/portal/importass/importass/Categorias/Vida+laboral+e+informes",
+      "snippet": "Accede a informes sobre tu vida laboral, situaciones de alta o baja en la Seguridad Social, tus bases de cotización y si estás al …"
+    },
+    {
+      "title": "Ciudadanos - Sede Electrónica de la Seguridad Social",
+      "url": "https://sede.seg-social.gob.es/wps/portal/sede/sede/Ciudadanos/informes%2By%2Bcertificados/01informes%2By%2Bcertificados",
+      "snippet": "A través de este servicio puede obtener, imprimir y/o consultar on-line un documento con información relativa al alta laboral en una …"
+    },
+    {
+      "title": "Ciudadanos - Sede Electrónica de la Seguridad Social",
+      "url": "https://sede.seg-social.gob.es/wps/portal/sede/sede/Ciudadanos/informes+y+certificados/201864?changeLanguage=es",
+      "snippet": "Informe de tu vida laboral < Volver A través de este servicio podrás consultar todas tus situaciones de alta y baja en los distintos …"
+    },
+    {
+      "title": "Solicitud de informe de vida laboral-Sede Electrónica",
+      "url": "https://w6.seg-social.es/ProsaInternetAnonimo/OnlineAccess?ARQ.SPM.ACTION=LOGIN&ARQ.SPM.APPTYPE=SERVICE&ARQ.IDAPP=SINC0003",
+      "snippet": "El envío de los informes de situación, solicitados a través de este servicio se realizará al domicilio del solicitante existente en las …"
+    }
+  ]
+}

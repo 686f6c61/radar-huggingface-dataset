@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "zbeeb/Qwen2.5-3B-GRPO-Staleness-6",
+  "slug": "zbeeb-qwen2-5-3b-grpo-staleness-6",
+  "author": "zbeeb",
+  "url": "https://huggingface.co/zbeeb/Qwen2.5-3B-GRPO-Staleness-6",
+  "created_at": "2026-09-19T22:40:31.000Z",
+  "updated_at": "2026-09-19T22:41:08.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "grpo",
+    "math",
+    "reinforcement-learning",
+    "staleness-grpo",
+    "conversational",
+    "en",
+    "zh",
+    "dataset:zbeeb/Staleness-GRPO-DAPO-Math-17k",
+    "base_model:Qwen/Qwen2.5-3B",
+    "base_model:finetune:Qwen/Qwen2.5-3B",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 12355225756,
+  "storage_human": "12.4 GB",
+  "base_model": "Qwen/Qwen2.5-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Schuhe sind unsere Leidenschaft!",
+      "url": "https://www.schuhe-salmann.de/",
+      "snippet": "Seit 1928 steht „Schuhhaus Salmann“ für Freundlichkeit, Service und Qualität. In unserem Shop bieten wir Ihnen eine große Auswahl …"
+    },
+    {
+      "title": "Onlineshop: Schuhhaus Salmann",
+      "url": "https://www.schuhhaus-salmann.de/onlineshop/",
+      "snippet": "Dank unseres Onlineshops können Sie sich das Salmann-Gefühl ganz bequem rund um die Uhr nach Hause holen. Lassen Sie sich …"
+    },
+    {
+      "title": "Startseite: Schuhhaus Salmann",
+      "url": "https://www.schuhhaus-salmann.de/",
+      "snippet": "Schuhe sind unsere Leidenschaft! Herzlich Willkommen auf unserer Homepage! Wir vom Schuhhaus Salmann legen besonderen …"
+    },
+    {
+      "title": "Schuhe im Großhandel kaufen | Günstige Angebote | Restposten",
+      "url": "https://salzmann-restwaren.de/products/schuhe/",
+      "snippet": "Hier finden Sie Herren-, Damen- und Kinderschuhe sowie Mischposten Schuhe zu Großhandelspreisen, die direkt aus Restposten, …"
+    },
+    {
+      "title": "Making People Visible – Salzmann DE/EU",
+      "url": "https://www.salzmann.eu/",
+      "snippet": "Salzmann ist einer der führenden Hersteller von reflektierender und hochsichtbarer Warn- und Sportkleidung sowie Sportequipment. …"
+    }
+  ]
+}

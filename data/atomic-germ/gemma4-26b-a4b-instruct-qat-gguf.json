@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Atomic-Germ/Gemma4-26B-A4B-Instruct-QAT-GGUF",
+  "slug": "atomic-germ-gemma4-26b-a4b-instruct-qat-gguf",
+  "author": "Atomic-Germ",
+  "url": "https://huggingface.co/Atomic-Germ/Gemma4-26B-A4B-Instruct-QAT-GGUF",
+  "created_at": "2026-09-20T00:09:39.000Z",
+  "updated_at": "2026-09-20T00:11:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "gemma4",
+    "image-text-to-text",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "conversational",
+    "en",
+    "base_model:OS-Software/gemma-4-26B-A4B-it-qat-q4_0-unquantized-uncensored-heretic-v2",
+    "base_model:quantized:OS-Software/gemma-4-26B-A4B-it-qat-q4_0-unquantized-uncensored-heretic-v2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25233142046,
+  "parameters_human": "25.23B",
+  "storage_bytes": 18078188922,
+  "storage_human": "18.1 GB",
+  "base_model": "OS-Software/gemma-4-26B-A4B-it-qat-q4_0-unquantized-uncensored-heretic-v2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Filebase Fs25 - Forbidden Mods - einfach verboten gut",
+      "url": "https://forbidden-mods.de/filebase/category-file-list/547-filebase-fs25/",
+      "snippet": "Kostenlose Mods für den Landwirtschafts Simulator (LS25, FS25, LS22, FS22) – Fahrzeuge, Traktoren, Maps, Forst & mehr. Jetzt …"
+    },
+    {
+      "title": "LS 25 Mods - Landwirtschafts Simulator Mods | modhoster.de",
+      "url": "https://www.modhoster.de/",
+      "snippet": "LS 25 Mods kostenlos downloaden – über 26.000 Mods für Landwirtschafts Simulator 25, ETS 2 und mehr. Täglich neu, virengeprüft, …"
+    },
+    {
+      "title": "Neue LS25-Mods - KingMods",
+      "url": "https://www.kingmods.net/de/ls25/neue-mods",
+      "snippet": "Alle neuen Mods für LS25, Landwirtschafts-Simulator 25 auf KingMods. Täglich viele LS25-Mods für PS5, Xbox und PC!"
+    },
+    {
+      "title": "ModHub | Farming Simulator",
+      "url": "https://www.farming-simulator.com/mods.php?language=de",
+      "snippet": "Welcome to the official website of Farming Simulator, the #1 farming simulation game by GIANTS Software."
+    },
+    {
+      "title": "LS 25 Mods — Kostenlose Landwirtschafts-Simulator 25 Mods",
+      "url": "https://www.modhoster.de/ls25",
+      "snippet": "Für Landwirtschafts Simulator findest du auf ModHoster zahlreiche von der Community erstellte Modifikationen — handverlesen, …"
+    }
+  ]
+}

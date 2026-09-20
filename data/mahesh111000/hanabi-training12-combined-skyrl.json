@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Mahesh111000/hanabi-training12-combined-skyrl",
+  "slug": "mahesh111000-hanabi-training12-combined-skyrl",
+  "author": "Mahesh111000",
+  "url": "https://huggingface.co/Mahesh111000/hanabi-training12-combined-skyrl",
+  "created_at": "2026-09-19T20:09:22.000Z",
+  "updated_at": "2026-09-19T20:16:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "hanabi",
+    "reinforcement-learning",
+    "lora-merged",
+    "base_model:Mahesh111000/Qwen_merged",
+    "base_model:finetune:Mahesh111000/Qwen_merged",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4411424256,
+  "parameters_human": "4.41B",
+  "storage_bytes": 17657165230,
+  "storage_human": "17.7 GB",
+  "base_model": "Mahesh111000/Qwen_merged",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "VLC.de Media Player (deutsch) - Download",
+      "url": "https://www.vlc.de/",
+      "snippet": "VLC Player auf VLC.de - Der bekannte kostenlose VLC Plus Player zum Download - integrierter TV und Radio Player - spielt …"
+    },
+    {
+      "title": "什么是“VCL”-CSDN社区",
+      "url": "https://bbs.csdn.net/topics/30174655",
+      "snippet": "May 11, 2003 · 以下内容是CSDN社区关于什么是“VCL”相关内容，如果想了解更多关于Delphi社区其他内容，请访问CSDN社区。"
+    },
+    {
+      "title": "Delphi 2007 安装Abakus VCL 组件 - CSDN社区",
+      "url": "https://bbs.csdn.net/topics/290034789",
+      "snippet": "Dec 5, 2008 · 我想在Delphi 2007 安装Abakus VCL 组件，如论如何都安不上，谁能提供一个能安装的版本，并能提供安装过程，万分 …"
+    },
+    {
+      "title": "VOCALOIDを略したらVOCALOですか？もっと略したらVCLでしょう …",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q14110846759",
+      "snippet": "Jul 26, 2013 · VOCALOIDを略したらVOCALOですか？もっと略したらVCLでしょうか？ 初めまして。VOCALOIDよりボーカロイド …"
+    },
+    {
+      "title": "VCLメディアプレーヤーで再生すると、画面の下半分になってしまい …",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q10264853655",
+      "snippet": "Jul 16, 2022 · VCLメディアプレーヤーで再生すると、画面の下半分になってしまいます。直し方がわかりましたら、教えてくださ …"
+    }
+  ]
+}

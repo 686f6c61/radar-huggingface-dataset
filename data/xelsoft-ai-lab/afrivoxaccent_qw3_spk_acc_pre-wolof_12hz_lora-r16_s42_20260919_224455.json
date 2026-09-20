@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "xelsoft-ai-lab/AfriVoxAccent_QW3_spk_acc_pre-wolof_12hz_lora-r16_s42_20260919_224455",
+  "slug": "xelsoft-ai-lab-afrivoxaccent_qw3_spk_acc_pre-wolof_12hz_lora-r16_s42_20260919_224455",
+  "author": "xelsoft-ai-lab",
+  "url": "https://huggingface.co/xelsoft-ai-lab/AfriVoxAccent_QW3_spk_acc_pre-wolof_12hz_lora-r16_s42_20260919_224455",
+  "created_at": "2026-09-19T23:53:40.000Z",
+  "updated_at": "2026-09-19T23:53:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "text-to-speech",
+    "tts",
+    "wolof",
+    "afrivoxaccent",
+    "base_model:xelsoft-ai-lab/AfriVoxAccent_QW3_spk_wolof-tts_12hz_lora-r32_s42_20260911_174933",
+    "base_model:adapter:xelsoft-ai-lab/AfriVoxAccent_QW3_spk_wolof-tts_12hz_lora-r32_s42_20260911_174933",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 676556264,
+  "storage_human": "677 MB",
+  "base_model": "xelsoft-ai-lab/AfriVoxAccent_QW3_spk_wolof-tts_12hz_lora-r32_s42_20260911_174933",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Central European Time – CET Time Zone - timeanddate.com",
+      "url": "https://www.timeanddate.com/time/zones/cet",
+      "snippet": "Central European Time (CET) is the standard time zone used by many countries in Europe and parts of northern Africa. Major …"
+    },
+    {
+      "title": "CET time zone — Central European Time",
+      "url": "https://24timezones.com/time-zone/cet",
+      "snippet": "1 day ago · Check exact current time and discover the key facts about Central European Time."
+    },
+    {
+      "title": "Central European Time - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Central_European_Time",
+      "snippet": "Central European Time (CET) is a standard time observed in Central as well as parts of Western and Southeast Europe, which is one …"
+    },
+    {
+      "title": "Time Now in CET (Central European Time) | Time.now",
+      "url": "https://time.now/timezones/cet/",
+      "snippet": "1 day ago · Central European Time (CET) is the standard time observed by most of continental Europe during the winter months. …"
+    },
+    {
+      "title": "CET to EST Converter - Convert Central Time to Eastern Time - World ...",
+      "url": "https://www.worldtimebuddy.com/cet-to-est-converter",
+      "snippet": "1 day ago · Quickly convert Central European Time (CET) to Eastern Standard Time (EST) with this easy-to-use, modern time zone …"
+    }
+  ]
+}

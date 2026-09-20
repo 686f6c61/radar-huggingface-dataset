@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "0xSojalSec/Qwen3.8-27B-Humanlike-Chat-GGUF",
+  "slug": "0xsojalsec-qwen3-8-27b-humanlike-chat-gguf",
+  "author": "0xSojalSec",
+  "url": "https://huggingface.co/0xSojalSec/Qwen3.8-27B-Humanlike-Chat-GGUF",
+  "created_at": "2026-09-20T00:25:42.000Z",
+  "updated_at": "2026-09-20T00:25:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "qwen3.8",
+    "conversational",
+    "roleplay",
+    "creative-writing",
+    "character",
+    "humanlike",
+    "uncensored",
+    "sillytavern",
+    "text-generation",
+    "base_model:huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+    "base_model:quantized:huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 162857121664,
+  "storage_human": "162.9 GB",
+  "base_model": "huihui-ai/Huihui-Qwen3.8-27B-abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BMW Occasions | Vind uw tweedehands BMW | Ekris",
+      "url": "https://www.ekris.nl/bmw/voorraad/occasions",
+      "snippet": "Ontdek een breed assortiment BMW occasions in topconditie. Selecteer op model, bouwjaar of brandstof en vind de BMW die bij u …"
+    },
+    {
+      "title": "Occasions bij Ekris | Bekijk onze MINI en BMW occasions | Ekris",
+      "url": "https://www.ekris.nl/voorraad/autos/occasions",
+      "snippet": "Bekijk het actuele aanbod BMW en MINI Occasions bij Ekris en ga op zoek naar uw volgende auto."
+    },
+    {
+      "title": "Zoeken - BMW Occasions",
+      "url": "https://occasions.bmw.nl/?voertuig=176972668",
+      "snippet": "Onze landelijke voorraad geeft u de mogelijkheid om te zoeken naar uw favoriete tweedehands BMW 1-Serie, BMW 3-Serie, BMW 5 …"
+    },
+    {
+      "title": "Bmw Ekris Occasions - Vinden",
+      "url": "https://www.vinden.nl/mb/bmw%20ekris%20occasions/",
+      "snippet": "Ontdek een breed assortiment BMW occasions in topconditie. Selecteer op model, bouwjaar of brandstof en vind de BMW die bij u …"
+    },
+    {
+      "title": "Occasions van Ekris Groningen - Groningen - AutoWereld.nl",
+      "url": "https://www.autowereld.nl/aanbieder/ekris-groningen-1490710/details.html",
+      "snippet": "Ekris Groningen in Groningen heeft 128 occasions online op AutoWereld.nl. De duurste occasion is een BMW X5 - 40 xDrive | M …"
+    }
+  ]
+}

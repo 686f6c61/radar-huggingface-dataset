@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "asatheesh/latent-mas-aligner-phi3-mini-seed-1",
+  "slug": "asatheesh-latent-mas-aligner-phi3-mini-seed-1",
+  "author": "asatheesh",
+  "url": "https://huggingface.co/asatheesh/latent-mas-aligner-phi3-mini-seed-1",
+  "created_at": "2026-09-19T20:07:18.000Z",
+  "updated_at": "2026-09-19T20:07:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safety",
+    "multi-agent",
+    "latent-reasoning",
+    "base_model:microsoft/Phi-3-mini-4k-instruct",
+    "base_model:finetune:microsoft/Phi-3-mini-4k-instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 117490515,
+  "storage_human": "117 MB",
+  "base_model": "microsoft/Phi-3-mini-4k-instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Placeholder Query Data | TanStack Query React Docs",
+      "url": "https://tanstack.com/query/latest/docs/framework/react/guides/placeholder-query-data",
+      "snippet": "Placeholder data allows a query to behave as if it already has data, similar to the initialData option, but the data is not persisted to the …"
+    },
+    {
+      "title": "placeholder – SurveyHero Blog",
+      "url": "https://blog.surveyhero.com/tag/placeholder/",
+      "snippet": "Sep 15, 2018 · We are happy to announce that you can now use URL variables to dynamically display content in your survey. URL …"
+    },
+    {
+      "title": "Placeholder Query Data | TanStack Query React Docs",
+      "url": "https://stzdev.com/query/latest/docs/framework/react/guides/placeholder-query-data",
+      "snippet": "What is placeholder data? Placeholder data allows a query to behave as if it already has data, similar to the initialData option, but the …"
+    },
+    {
+      "title": "Placeholders [SoSciSurvey]",
+      "url": "https://www.soscisurvey.de/help/doku.php/en:create:placeholders",
+      "snippet": "In order to do so, placeholders are integrated in the form %placeholder%. Something will then be inserted in the questionnaire as the …"
+    },
+    {
+      "title": "Create a Poll - Free Poll Maker - StrawPoll",
+      "url": "https://strawpoll.com/create/",
+      "snippet": "You can make the poll anonymous to ensure privacy and candidness. You can set a deadline for when the poll will automatically …"
+    }
+  ]
+}

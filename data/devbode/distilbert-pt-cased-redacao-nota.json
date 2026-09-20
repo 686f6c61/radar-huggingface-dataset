@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "devBode/distilbert-pt-cased-redacao-nota",
+  "slug": "devbode-distilbert-pt-cased-redacao-nota",
+  "author": "devBode",
+  "url": "https://huggingface.co/devBode/distilbert-pt-cased-redacao-nota",
+  "created_at": "2026-09-19T23:57:37.000Z",
+  "updated_at": "2026-09-19T23:57:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "tf",
+    "distilbert",
+    "text-classification",
+    "generated_from_keras_callback",
+    "base_model:Geotrend/distilbert-base-pt-cased",
+    "base_model:finetune:Geotrend/distilbert-base-pt-cased",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 251015872,
+  "storage_human": "251 MB",
+  "base_model": "Geotrend/distilbert-base-pt-cased",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hunter Class Overview - WoW Forever - Icy Veins",
+      "url": "https://www.icy-veins.com/wow-forever/hunter-class-overview",
+      "snippet": "5 days ago · Comprehensive Guide to Hunter in World of Warcraft: Forever Hunter is the lone survivalist, using animal companions, …"
+    },
+    {
+      "title": "Hunter Class Overview & Changes - WoW Forever Guide",
+      "url": "https://classicwow.gg/forever/guides/hunter",
+      "snippet": "3 days ago · These guides now use the beta talent trees, but tuning can change and some baseline ability details still come from the …"
+    },
+    {
+      "title": "Hunter Class Overview & Changes - WoW Forever Guide - Mobalytics",
+      "url": "https://mobalytics.gg/wow-forever/guides/hunter-class-overview",
+      "snippet": "2 days ago · The Hunter class is shaping up to be one of the classes with the clearest expansion of playstyles in WoW: Forever. …"
+    },
+    {
+      "title": "World of Warcraft: Forever Survival Hunter Guide - Icy Veins",
+      "url": "https://www.icy-veins.com/wow-forever/survival-hunter-melee-dps-pve-guide",
+      "snippet": "1 day ago · This guide contains everything you need to know to be an excellent Survival Hunter for PvE in WoW Forever."
+    },
+    {
+      "title": "Hunter · WoW Forever Class Guide",
+      "url": "https://wowforeverwiki.org/classes/hunter",
+      "snippet": "Hunter in WoW Forever: talent trees, race availability, Blizzard-confirmed changes, and source-ranked talent research."
+    }
+  ]
+}

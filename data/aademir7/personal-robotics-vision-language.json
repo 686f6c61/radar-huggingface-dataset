@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "aademir7/personal-robotics-vision-language",
+  "slug": "aademir7-personal-robotics-vision-language",
+  "author": "aademir7",
+  "url": "https://huggingface.co/aademir7/personal-robotics-vision-language",
+  "created_at": "2026-09-20T00:18:43.000Z",
+  "updated_at": "2026-09-20T00:18:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "transformer",
+    "research-notes",
+    "robotics-vision-language",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Walmart | Save Money. Live better.",
+      "url": "https://www.walmart.com/",
+      "snippet": "Shop Walmart.com today for Every Day Low Prices. Join Walmart+ for unlimited free delivery from your store & free shipping with no …"
+    },
+    {
+      "title": "Walmart.com",
+      "url": "https://www.walmart.com/browse",
+      "snippet": "Shop for null. Buy products such as Preparation H 0.9 Oz Hemorrhoidal Cream Multi Symptom Pain Relief (Pack of 3) at Walmart …"
+    },
+    {
+      "title": "Login - Walmart",
+      "url": "https://creator.walmart.com/account/login",
+      "snippet": "Sign in or create your account Not sure if you have an account? Enter your phone number or email and we'll check for you."
+    },
+    {
+      "title": "Contact Walmart",
+      "url": "https://corporate.walmart.com/about/contact",
+      "snippet": "Contact Walmart to provide a comment or ask a question about your local store or our corporate headquarters."
+    },
+    {
+      "title": "Walmart Locations & Hours in Oregon - MyStore411",
+      "url": "https://www.mystore411.com/store/list_state/3/Oregon/Walmart-store-locations",
+      "snippet": "Walmart in Oregon - Locations and Hours All Stores » Walmart » Walmart in Oregon Official Website www.walmart.com Category …"
+    }
+  ]
+}

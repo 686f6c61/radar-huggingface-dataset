@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "AlinaGonch/llama31-8b-squad-ratio-0.30-seed-42",
+  "slug": "alinagonch-llama31-8b-squad-ratio-0-30-seed-42",
+  "author": "AlinaGonch",
+  "url": "https://huggingface.co/AlinaGonch/llama31-8b-squad-ratio-0.30-seed-42",
+  "created_at": "2026-09-19T20:34:03.000Z",
+  "updated_at": "2026-09-19T20:34:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 185042160,
+  "storage_human": "185 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Süper Lig - Verletzte Spieler | Transfermarkt",
+      "url": "https://www.transfermarkt.de/super-lig/verletztespieler/wettbewerb/TR1",
+      "snippet": "Diese Übersicht listet alle Spieler der Süper Lig auf, die mit einer Verletzung pausieren müssen oder die sich bereits im …"
+    },
+    {
+      "title": "Süper Lig - Sperren und Ausfälle | Transfermarkt",
+      "url": "https://www.transfermarkt.de/super-lig/sperrenausfaelle/wettbewerb/TR1",
+      "snippet": "Mar 22, 2026 · Hier werden alle Spieler der Süper Lig aufgelistet, die aktuell gesperrt sind oder aus nicht verletzungsbedingten …"
+    },
+    {
+      "title": "Süper Lig 26/27 | Transfermarkt",
+      "url": "https://www.transfermarkt.de/super-lig/startseite/wettbewerb/TR1",
+      "snippet": "Dec 12, 2014 · Süper Lig Türkei Ligahöhe: 1.Liga Amtierender Meister: Galatasaray Rekordmeister: Galatasaray 26 mal 5 …"
+    },
+    {
+      "title": "Besiktas JK - Vereinsprofil | Transfermarkt",
+      "url": "https://www.transfermarkt.de/besiktas-istanbul/startseite/verein/114/",
+      "snippet": "Besiktas JK 16 11 10 Süper Lig Ligahöhe: 1.Liga Tabellenplatz: 2 In Liga seit: 69 Jahren 266,60 Mio. € Gesamtmarktwert Kadergröße: …"
+    },
+    {
+      "title": "Süper Lig - Tabelle | Transfermarkt",
+      "url": "https://www.transfermarkt.de/super-lig/tabelle/wettbewerb/TR1",
+      "snippet": "Tabelle Süper Lig 26/27 Diese Seite zeigt die detaillierte Tabelle eines Wettbewerbs. In der rechten Spalte wird die Tabelle in Heim …"
+    }
+  ]
+}

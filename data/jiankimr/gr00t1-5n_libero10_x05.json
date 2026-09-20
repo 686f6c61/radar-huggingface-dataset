@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "jiankimr/gr00t1.5n_libero10_x05",
+  "slug": "jiankimr-gr00t1-5n_libero10_x05",
+  "author": "jiankimr",
+  "url": "https://huggingface.co/jiankimr/gr00t1.5n_libero10_x05",
+  "created_at": "2026-09-20T02:04:44.000Z",
+  "updated_at": "2026-09-20T02:06:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gr00t_n1_5",
+    "robotics",
+    "gr00t",
+    "libero",
+    "imitation-learning",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": 2724163520,
+  "parameters_human": "2.72B",
+  "storage_bytes": 7586077840,
+  "storage_human": "7.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aktuelles von Amrum, Föhr und den Halligen - SHZ",
+      "url": "https://www.shz.de/lokales/amrum-foehr-halligen",
+      "snippet": "weekli: Alle Prospekte auf einen Blick. Aktuelle Prospekte online blättern. Jede Woche neue Angebote entdecken und sparen. Finde …"
+    },
+    {
+      "title": "Insel-Bote - Nachrichten für Föhr und Amrum - Facebook",
+      "url": "https://www.facebook.com/inselbote/",
+      "snippet": "Der Tourismus auf Föhr steht vor neuen Herausforderungen. Aufsichtsratschef Volker Stoffel erklärt, welche Strategien die Insel jetzt …"
+    },
+    {
+      "title": "Insel-Bote - Nachrichten für Föhr und Amrum, Wyk auf Föhr (2026)",
+      "url": "https://www.findglocal.com/DE/Wyk-Auf-F%C3%B6hr/419977161345913/Insel-Bote---Nachrichten-f%C3%BCr-F%C3%B6hr-und-Amrum",
+      "snippet": "Sep 10, 2026 · Der Insel-Bote ist die Heimatzeitung für die nordfriesischen Inseln Föhr und Amrum. Der Insel-Bote gehört zum …"
+    },
+    {
+      "title": "WIR Insulaner | Das Föhrer Blatt",
+      "url": "http://wirinsulaner.de/",
+      "snippet": "Die Frankfurter Malerin Rosemarie Schlink, die im November 2023 gestorben ist, hat ihren beiden Töchtern Monika Schumak und Dr. …"
+    },
+    {
+      "title": "Der Insel-Bote - noz-mhn",
+      "url": "https://noz-mhn.de/mediadaten/der-insel-bote/",
+      "snippet": "Der Insel-Bote ist die regionale Tageszeitung für Föhr, Amrum und Nordfriesland. Vorgänger des Insel-Boten waren die Westsee …"
+    }
+  ]
+}

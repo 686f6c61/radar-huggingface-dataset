@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Whittle-Qwen-3.8-35B-A3B-i1-GGUF",
+  "slug": "mradermacher-whittle-qwen-3-8-35b-a3b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Whittle-Qwen-3.8-35B-A3B-i1-GGUF",
+  "created_at": "2026-09-19T20:37:08.000Z",
+  "updated_at": "2026-09-20T02:00:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "whittle",
+    "qwen4_exp",
+    "mixture-of-experts",
+    "moe",
+    "n-gram-memory",
+    "conditional-memory",
+    "hyper-connections",
+    "knowledge-distillation",
+    "reasoning",
+    "thinking",
+    "code",
+    "math",
+    "llama.cpp",
+    "safetensors",
+    "text-generation",
+    "conversational",
+    "research",
+    "en",
+    "zh",
+    "multilingual",
+    "base_model:logic65/Whittle-Qwen-3.8-35B-A3B",
+    "base_model:quantized:logic65/Whittle-Qwen-3.8-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35547542656,
+  "parameters_human": "35.55B",
+  "storage_bytes": 277217029024,
+  "storage_human": "277.2 GB",
+  "base_model": "logic65/Whittle-Qwen-3.8-35B-A3B",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Minfin 5% Bottle Of 60Ml Solution - PharmEasy",
+      "url": "https://pharmeasy.in/online-medicine-order/minfin-5-topical-solu-60ml-214173",
+      "snippet": "Aug 13, 2026 · Order Minfin 5% Bottle Of 60ml Solution online & save up to 24% on PharmEasy. Read about uses, dosage, …"
+    },
+    {
+      "title": "MINFIN 5% Topical Solution 60ml",
+      "url": "https://www.netmeds.com/product/minfin-5-topical-solution-60ml-lui2j4-8243523",
+      "snippet": "Jul 12, 2024 · Shop MINFIN 5% Topical Solution 60ml for affordable price online on Netmeds. Know MINFIN 5% Topical Solution …"
+    },
+    {
+      "title": "MINFIN F 5% Topical Solution 60ml - Netmeds.com",
+      "url": "https://www.netmeds.com/product/minfin-f-5-topical-solution-60ml-lui7pn-8348690",
+      "snippet": "Oct 23, 2022 · Shop MINFIN F 5% Topical Solution 60ml for affordable price online on Netmeds. Know MINFIN F 5% Topical …"
+    },
+    {
+      "title": "Minfin F 10% Solution 60Ml - PharmEasy",
+      "url": "https://pharmeasy.in/online-medicine-order/minfin-f-10-solution-60ml-215906",
+      "snippet": "Aug 13, 2026 · Order Minfin F 10% Solution 60ml online & save up to 24% on PharmEasy. Read about uses, dosage, treatments, …"
+    },
+    {
+      "title": "PharmEasy - Order on Call",
+      "url": "https://ooc.pharmeasy.in/",
+      "snippet": "Order On Call Login via Google"
+    }
+  ]
+}

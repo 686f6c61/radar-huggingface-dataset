@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "daliborsb/laya",
+  "slug": "daliborsb-laya",
+  "author": "daliborsb",
+  "url": "https://huggingface.co/daliborsb/laya",
+  "created_at": "2026-09-19T22:31:16.000Z",
+  "updated_at": "2026-09-19T22:31:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "laya",
+    "system-one",
+    "calibrated-decisions",
+    "rlcd",
+    "classification",
+    "routing",
+    "scoring",
+    "guardrails",
+    "moderation",
+    "reinforcement-learning",
+    "commercial-use",
+    "text-classification",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 421293830,
+  "parameters_human": "421.3M",
+  "storage_bytes": 2365127066,
+  "storage_human": "2.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/",
+      "snippet": "Google's service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other …"
+    },
+    {
+      "title": "Google Переводчик – ваш личный переводчик в телефоне и …",
+      "url": "https://translate.google.com/intl/ru/about/",
+      "snippet": "Google Переводчик поможет вам понимать других и выражать себя на разных языках. Переводите живую речь, текст, …"
+    },
+    {
+      "title": "谷歌翻译 - 手机或计算机上的个人随身口译工具",
+      "url": "https://translate.google.com/intl/zh-CN/about/",
+      "snippet": "谷歌翻译助您了解世界，与不同语言的人士轻松交流。在各种设备上翻译文本、语音内容、图片、文档、网站和其他内容。"
+    },
+    {
+      "title": "Prekladač Google – osobný tlmočník v telefóne alebo počítači",
+      "url": "https://translate.google.com/intl/sk/about/",
+      "snippet": "Naučte sa prekladať text, reč, obrázky, dokumenty, weby a ďalší obsah pomocou Prekladača Google."
+    },
+    {
+      "title": "Google Dịch – Phiên dịch viên cá nhân ngay ... - Google Translate",
+      "url": "https://translate.google.com/intl/vi/about/",
+      "snippet": "Tìm hiểu cách sử dụng Google Dịch để dịch văn bản, lời nói, hình ảnh, tài liệu, trang web, v.v."
+    }
+  ]
+}

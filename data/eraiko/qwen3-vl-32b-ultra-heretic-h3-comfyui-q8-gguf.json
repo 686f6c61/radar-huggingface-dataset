@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "eraiko/Qwen3-VL-32B-Ultra-Heretic-H3-ComfyUI-Q8-GGUF",
+  "slug": "eraiko-qwen3-vl-32b-ultra-heretic-h3-comfyui-q8-gguf",
+  "author": "eraiko",
+  "url": "https://huggingface.co/eraiko/Qwen3-VL-32B-Ultra-Heretic-H3-ComfyUI-Q8-GGUF",
+  "created_at": "2026-09-20T00:32:27.000Z",
+  "updated_at": "2026-09-20T01:03:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "comfyui",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "comfyui",
+    "gguf",
+    "h3",
+    "qwen3-vl",
+    "qwen3-vl-32b",
+    "heretic",
+    "abliterated",
+    "quantized",
+    "llama-cpp",
+    "gguf-my-repo",
+    "image-text-to-text",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25157829120,
+  "parameters_human": "25.16B",
+  "storage_bytes": 26737702528,
+  "storage_human": "26.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": true,
+  "removed_at": "2026-09-20T02:44:27.607Z",
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Santiago vs. New York City for Vacations, Tours, and Honeymoons",
+      "url": "https://www.budgetyourtrip.com/compare/santiago-vs-new-york-city-3871336-5128581",
+      "snippet": "The same level of travel in New York City would naturally cost you much more money, so you would probably want to keep your …"
+    },
+    {
+      "title": "New York vs Santiago de Chile: What is the difference? - Versus",
+      "url": "https://versus.com/en/new-york-vs-santiago-de-chile",
+      "snippet": "What is the difference between Santiago de Chile and New York? Find out which is better and their overall performance in the city …"
+    },
+    {
+      "title": "New York City: busiest & quietest months, day by day - Avoid Crowds",
+      "url": "https://avoid-crowds.com/new-york-city/",
+      "snippet": "4 days ago · Pick your dates from New York City's year map. For warm days with few crowds, take June."
+    },
+    {
+      "title": "Santiago vs New York - Salaries, Cost of Living, Housing",
+      "url": "https://www.techcities.app/city/santiago/compared-to/new-york",
+      "snippet": "Jun 24, 2026 · Santiago has startups, accelerators, and local tech jobs, but the data shows weak global salary competitiveness and …"
+    },
+    {
+      "title": "Santiago – Travel guide at Wikivoyage",
+      "url": "https://en.wikivoyage.org/wiki/Santiago",
+      "snippet": "Santiago is a huge city with several district articles that contain information about specific sights, restaurants, and accommodation. …"
+    }
+  ]
+}

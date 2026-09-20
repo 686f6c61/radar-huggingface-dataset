@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l3",
+  "slug": "pessimisticdpo-mistral-7b-sft-beta-a0-1-b0-1-l4-overlap_subsample-l3",
+  "author": "PessimisticDPO",
+  "url": "https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l3",
+  "created_at": "2026-09-19T20:02:08.000Z",
+  "updated_at": "2026-09-19T20:02:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 167832240,
+  "storage_human": "168 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub CLI | Take GitHub to the command line",
+      "url": "https://cli.github.com/",
+      "snippet": "Sep 5, 2026 · Take GitHub to the command line GitHub CLI brings GitHub to your terminal. Free and open source."
+    },
+    {
+      "title": "GitHub - nexu-io/open-design: Best DeepSeek Harness Design Plugin ...",
+      "url": "https://github.com/nexu-io/open-design",
+      "snippet": "May 28, 2026 · 🎨 Best DeepSeek Harness Design Plugin. The open-source Claude Design alternative. 🖥️ Local-first desktop app. 🖼️ …"
+    },
+    {
+      "title": "GitHub - thedotmack/claude-mem: Persistent Context Across Sessions …",
+      "url": "https://github.com/thedotmack/claude-mem",
+      "snippet": "Claude-Mem seamlessly preserves context across sessions by automatically capturing tool usage observations, generating semantic …"
+    },
+    {
+      "title": "Models and pricing for GitHub Copilot",
+      "url": "https://docs.github.com/en/copilot/reference/copilot-billing/models-and-pricing",
+      "snippet": "See per-token pricing for the models available in GitHub Copilot and reference rates for additional usage across plans."
+    },
+    {
+      "title": "Claude证明黎曼猜想取得了重大突破，这个事件有什么开创性意义？",
+      "url": "https://www.zhihu.com/question/2070452772391194651",
+      "snippet": "Aug 11, 2026 · Claude离证明黎曼猜想还有很长一段路要走，现在谈开创性意义还是有点早的。 瞅瞅Anthropic官方博客，我们来看看 …"
+    }
+  ]
+}

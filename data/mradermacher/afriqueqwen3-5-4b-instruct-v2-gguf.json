@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "mradermacher/AfriqueQwen3.5-4B-Instruct-v2-GGUF",
+  "slug": "mradermacher-afriqueqwen3-5-4b-instruct-v2-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/AfriqueQwen3.5-4B-Instruct-v2-GGUF",
+  "created_at": "2026-09-19T21:27:01.000Z",
+  "updated_at": "2026-09-20T01:00:05.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:McGill-NLP/AfriqueQwen3.5-4B-Instruct-v2",
+    "base_model:quantized:McGill-NLP/AfriqueQwen3.5-4B-Instruct-v2",
+    "license:cc-by-4.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 38906334976,
+  "storage_human": "38.9 GB",
+  "base_model": "McGill-NLP/AfriqueQwen3.5-4B-Instruct-v2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lismore whats Happening | Facebook",
+      "url": "https://www.facebook.com/groups/573835447405018/",
+      "snippet": "1 day ago · A fun community Group where news and events in the Lismore Region are Posted and discussed. Please be respectful of …"
+    },
+    {
+      "title": "Lismore What's Happening - Facebook",
+      "url": "https://www.facebook.com/groups/185006888676267/",
+      "snippet": "20 hours ago · A fun community Group where news and events in the Lismore Region are posted and discussed."
+    },
+    {
+      "title": "Lismore What's Happening | Facebook",
+      "url": "https://www.facebook.com/groups/185006888676267/permalink/2210841552759447/",
+      "snippet": "Oct 15, 2025 · INCIDENT: Just before 4am this morning FRNSW crews responded to the reports of a building fire at Magellan Street, …"
+    },
+    {
+      "title": "Lismore whats Happening | Facebook",
+      "url": "https://www.facebook.com/groups/573835447405018/permalink/1507136114074942/",
+      "snippet": "Sep 19, 2025 · From 10–14 September, grab the family, round up your mates & challenge them to a little friendly competition."
+    },
+    {
+      "title": "Lismore What's Happening | Facebook",
+      "url": "https://www.facebook.com/groups/185006888676267/permalink/2234457773731158/",
+      "snippet": "Nov 9, 2025 · We're posting this here as inspiration for any local schools and preschools who want to get involved in our Spring Fair …"
+    }
+  ]
+}

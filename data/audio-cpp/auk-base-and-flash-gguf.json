@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "audio-cpp/AuK-Base-and-Flash-GGUF",
+  "slug": "audio-cpp-auk-base-and-flash-gguf",
+  "author": "audio-cpp",
+  "url": "https://huggingface.co/audio-cpp/AuK-Base-and-Flash-GGUF",
+  "created_at": "2026-09-20T01:02:43.000Z",
+  "updated_at": "2026-09-21T14:18:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "audio",
+    "speech",
+    "text-to-speech",
+    "zero-shot-tts",
+    "voice-cloning",
+    "speech-generation",
+    "speech-editing",
+    "speech-enhancement",
+    "source-separation",
+    "speech-separation",
+    "instruction-guided",
+    "diffusion",
+    "audio.cpp",
+    "base_model:tencent/AuK",
+    "base_model:quantized:tencent/AuK",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1530538629,
+  "parameters_human": "1.53B",
+  "storage_bytes": 34009304142,
+  "storage_human": "34.0 GB",
+  "base_model": "tencent/AuK",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "audio.com - a better way to upload and share audio online",
+      "url": "https://audio.com/",
+      "snippet": "audio.com is a free audio-sharing platform designed to empower audio creatives and musicians"
+    },
+    {
+      "title": "AudioEdit - Free Online Audio Editor | AudioEdit",
+      "url": "https://audioedit.io/",
+      "snippet": "No downloads needed. Edit audio right in your browser. Trim, denoise, convert formats, record — all processing done locally to …"
+    },
+    {
+      "title": "Audiomack - Music platform empowering artists & fans | Audiomack",
+      "url": "https://audiomack.com/",
+      "snippet": "Audiomack is an on-demand music streaming and audio discovery platform that allows artists and creators to upload limitless music …"
+    },
+    {
+      "title": "Audio - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Audio",
+      "snippet": "This disambiguation page lists articles associated with the title Audio. If an internal link incorrectly led you here, you may wish to …"
+    },
+    {
+      "title": "Royalty Free Music Download - Pixabay",
+      "url": "https://pixabay.com/music/",
+      "snippet": "Open source resource, download royalty free audio music MP3 tracks Free for commercial use No attribution required"
+    }
+  ]
+}

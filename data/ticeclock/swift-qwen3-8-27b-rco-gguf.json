@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "ticeclock/Swift-Qwen3.8-27B-RCO-GGUF",
+  "slug": "ticeclock-swift-qwen3-8-27b-rco-gguf",
+  "author": "ticeclock",
+  "url": "https://huggingface.co/ticeclock/Swift-Qwen3.8-27B-RCO-GGUF",
+  "created_at": "2026-09-19T22:18:41.000Z",
+  "updated_at": "2026-09-20T20:16:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "RCO",
+    "efficient-thinking",
+    "qwen3_8",
+    "reasoning",
+    "MTP",
+    "imatrix",
+    "base_model:ukisai/Swift-Qwen3.8-27b",
+    "base_model:quantized:ukisai/Swift-Qwen3.8-27b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 23504093568,
+  "storage_human": "23.5 GB",
+  "base_model": "ukisai/Swift-Qwen3.8-27b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PKO BP Ekstraklasa - Spieltagstabelle | Transfermarkt",
+      "url": "https://www.transfermarkt.de/pko-ekstraklasa/spieltagtabelle/wettbewerb/PL1/saison_id/2025",
+      "snippet": "May 23, 2026 · Diese Statistik zeigt die Begegnungen des 34.Spieltags und welchen Platz die Teams der PKO BP Ekstraklasa am …"
+    },
+    {
+      "title": "PKO BP Ekstraklasa 26/27 | Transfermarkt",
+      "url": "https://www.transfermarkt.de/pko-ekstraklasa/startseite/wettbewerb/PL1",
+      "snippet": "Dec 12, 2014 · PKO BP Ekstraklasa auf Transfermarkt mit Tabelle Ergebnissen Spielplan Liveticker Marktwerten Vereine Transfers …"
+    },
+    {
+      "title": "PKO BP Ekstraklasa - Aktuelle Gerüchte | Transfermarkt",
+      "url": "https://www.transfermarkt.de/pko-ekstraklasa/geruechte/wettbewerb/PL1",
+      "snippet": "Sep 7, 2026 · Diese Seite zeigt aktuelle Gerüchte zu den Spielern, die bei den Vereinen in der PKO BP Ekstraklasa im Fokus stehen."
+    },
+    {
+      "title": "Philipp Schulze - Spielerprofil 26/27 | Transfermarkt",
+      "url": "https://www.transfermarkt.de/philipp-schulze/profil/spieler/574203",
+      "snippet": "Jan 29, 2003 · Philipp Schulze, 23, aus Deutschland Górnik Zabrze, seit 2026 Torwart Marktwert: 400 Tsd. € * 29.01.2003 in …"
+    },
+    {
+      "title": "Fredi Bobic - Trainerprofil | Transfermarkt",
+      "url": "https://www.transfermarkt.de/fredi-bobic/profil/trainer/9584",
+      "snippet": "May 31, 2026 · Fredi Bobic 1 1 Legia Warschau Sportdirektor Ekstraklasa Im Amt seit: 01.06.2026 imago images +"
+    }
+  ]
+}

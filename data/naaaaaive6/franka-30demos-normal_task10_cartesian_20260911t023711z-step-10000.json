@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "NaaaaaiVe6/franka-30demos-normal_task10_cartesian_20260911T023711Z-step-10000",
+  "slug": "naaaaaive6-franka-30demos-normal_task10_cartesian_20260911t023711z-step-10000",
+  "author": "NaaaaaiVe6",
+  "url": "https://huggingface.co/NaaaaaiVe6/franka-30demos-normal_task10_cartesian_20260911T023711Z-step-10000",
+  "created_at": "2026-09-19T20:46:52.000Z",
+  "updated_at": "2026-09-19T20:49:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3616757520,
+  "parameters_human": "3.62B",
+  "storage_bytes": 7233650408,
+  "storage_human": "7.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Roller 50ccm Ersatzteile & Scooter 125 Tuning Shop | Scooter-Attack",
+      "url": "https://www.scooter-attack.com/",
+      "snippet": "Entdecke die Welt von Scooter-Attack. Von Automatik Roller Teilen über Schaltmoped, von Maxiscooter über Mofa bis hin zu Vespa …"
+    },
+    {
+      "title": "Scooter Attack Gutschein | 50 € & 30 € Rabatt | Sept. 2026",
+      "url": "https://www.gutegutscheine.de/shop/scooter-attack.com",
+      "snippet": "2 days ago · Aktuelle Rabattaktionen von Scooter Attack findest du direkt auf der Startseite sowie im Gutscheinbereich. Wähle dazu …"
+    },
+    {
+      "title": "Über SCOOTER-ATTACK - Streetbuzz Distribution GmbH",
+      "url": "https://streetbuzz.com/de/ueber-scooter-attack/",
+      "snippet": "Von Automatik Roller Teilen über Schaltmoped, von Maxiscooter über Mofa bis hin zu Vespa Modern und Vespa Classic – bei …"
+    },
+    {
+      "title": "scooter-attack | eBay.de Shops",
+      "url": "https://www.ebay.de/str/scooterattack?msockid=0d0a0c63a08067e13df81bbaa1316652",
+      "snippet": "Herzlich willkommen im Scooter-Attack eBay Shop für Tuning- und Ersatzteile im Bereich Roller, Moped, Quad und Vespa. Wir liefern …"
+    },
+    {
+      "title": "Scooter-Attack Newsblog – Dein Portal rund um Roller und Events",
+      "url": "https://blog.scooter-attack.com/",
+      "snippet": "Willkommen in der Welt von Scooter-Attack Willkommen auf unserem Scooter-Attack Blog mit News und Infos für alle 50cc Zweirad …"
+    }
+  ]
+}

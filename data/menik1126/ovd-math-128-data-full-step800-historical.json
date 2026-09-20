@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "menik1126/ovd-math-128-data-full-step800-historical",
+  "slug": "menik1126-ovd-math-128-data-full-step800-historical",
+  "author": "menik1126",
+  "url": "https://huggingface.co/menik1126/ovd-math-128-data-full-step800-historical",
+  "created_at": "2026-09-19T22:02:07.000Z",
+  "updated_at": "2026-09-19T22:09:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1777088000,
+  "parameters_human": "1.78B",
+  "storage_bytes": 7119812336,
+  "storage_human": "7.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Target Queensbury Store, Queensbury, NY",
+      "url": "https://www.target.com/sl/queensbury/1830",
+      "snippet": "Shop Target Queensbury Store for furniture, electronics, clothing, groceries, home goods and more at prices you will love."
+    },
+    {
+      "title": "Target Queensbury Grocery in Queensbury, NY | Hours & Pickup",
+      "url": "https://www.target.com/sl/queensbury/1830/grocery",
+      "snippet": "Shop fresh produce, pantry staples & more at Target Queensbury in Queensbury, NY. See grocery hours, Drive Up, Order Pickup & …"
+    },
+    {
+      "title": "Target - Queensbury, NY - Hours & Weekly Ad",
+      "url": "https://www.storeopeninghours.com/target-queensbury-ny",
+      "snippet": "1 day ago · Read the specifics on this page for Target Queensbury, NY, including the times, location description, customer feedback …"
+    },
+    {
+      "title": "Target in Queensbury, NY – Reviews, Hours, and Contact Details",
+      "url": "https://local.yahoo.com/info-143365075-target-queensbury/",
+      "snippet": "Read customer reviews and get hours of operation and contact information for Target, a (n) Department Stores business in …"
+    },
+    {
+      "title": "Target - Queensbury, New York - Location & Store Hours",
+      "url": "https://www.mystore411.com/store/view/5767/Target-Queensbury",
+      "snippet": "Target - Queensbury at 578 Aviation Rd in New York 12804-1803: store location & hours, services, holiday hours, map, driving …"
+    }
+  ]
+}

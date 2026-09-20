@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "MakotoIto/act_pick_bead1_chunk30",
+  "slug": "makotoito-act_pick_bead1_chunk30",
+  "author": "MakotoIto",
+  "url": "https://huggingface.co/MakotoIto/act_pick_bead1_chunk30",
+  "created_at": "2026-09-20T01:23:32.000Z",
+  "updated_at": "2026-09-20T01:26:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:MakotoIto/so101_pick_bead1_20260920_015204",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 51596934,
+  "parameters_human": "51.6M",
+  "storage_bytes": 206428056,
+  "storage_human": "206 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - IdeiGeniale/GeoDash2.2: A clone of Geometry Dash for the ...",
+      "url": "https://github.com/IdeiGeniale/GeoDash2.2",
+      "snippet": "Dec 1, 2025 · GeoDash 2.2 is a fast, mobile-friendly Geometry Dash–style platformer built entirely in HTML, CSS, and JavaScript. It …"
+    },
+    {
+      "title": "KtaneContent/HTML/Geometry Dash.html at master · Timwi ... - GitHub",
+      "url": "https://github.com/Timwi/KtaneContent/blob/master/HTML/Geometry%20Dash.html",
+      "snippet": "Contains all the content hosted on https://ktane.timwi.de, including all manuals and their fonts and graphics files, the Logfile Analyzer, …"
+    },
+    {
+      "title": "geometry-dash · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/geometry-dash",
+      "snippet": "Sep 11, 2026 · Open source Projects relating to the Video Game ‘Geometry Dash’. Most projects communicate with the Game Servers."
+    },
+    {
+      "title": "jonathanleahy/geometry-dash: Geometry Dash - GitHub",
+      "url": "https://github.com/jonathanleahy/geometry-dash",
+      "snippet": "Feb 9, 2026 · Geometry Dash A fast-paced 2D side-scrolling game built with HTML5 Canvas and vanilla JavaScript. No frameworks, …"
+    },
+    {
+      "title": "Geometry Dash by lumm369 | CodeCanyon",
+      "url": "https://codecanyon.net/item/geometry-dash/55011178",
+      "snippet": "Our Geometry Dash HTML5 code is a faithful recreation of the original game’s core mechanics, featuring sleek graphics, responsive …"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "minjaechoi/nemotron3-nano-30b-a3b-2p25bit-r17",
+  "slug": "minjaechoi-nemotron3-nano-30b-a3b-2p25bit-r17",
+  "author": "minjaechoi",
+  "url": "https://huggingface.co/minjaechoi/nemotron3-nano-30b-a3b-2p25bit-r17",
+  "created_at": "2026-09-20T02:04:49.000Z",
+  "updated_at": "2026-09-20T02:10:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "nemotron_h",
+    "text-generation",
+    "quantized",
+    "conversational",
+    "custom_code",
+    "base_model:nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+    "base_model:finetune:nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 199,
+  "trending_score": 0,
+  "parameters": 31577937344,
+  "parameters_human": "31.58B",
+  "storage_bytes": 63173963193,
+  "storage_human": "63.2 GB",
+  "base_model": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Online Games at Poki - Play Now!",
+      "url": "https://poki.com/?msockid=21b1808d34e366c7351e9757354267bd",
+      "snippet": "Play free online games at Poki, the #1 website for instant web games. Explore exclusive titles, popular favorites, and new game …"
+    },
+    {
+      "title": "Poki - Darmowe Gry Online - Graj Teraz!",
+      "url": "https://poki.com/pl?msockid=21b1808d34e366c7351e9757354267bd",
+      "snippet": "Poki oferuje najlepszy wybór darmowych gier online i zapewnia rozrywkę pełną zabawy, bez względu na to czy grasz sam, czy z …"
+    },
+    {
+      "title": "Poki Games - Free Online Games - Play Now! | poki.com",
+      "url": "https://poki.to/poki",
+      "snippet": "Poki Games is a free gaming platform packed with tons of fun without any sneaky charges or subscriptions. Not only can you play …"
+    },
+    {
+      "title": "New Games — Poki",
+      "url": "https://poki.ac/new/",
+      "snippet": "This webpage contains all our latest game releases. if you are into discovering new games, this list will help you discover the latest …"
+    },
+    {
+      "title": "Free Online Games - Play in Your Browser | Poki",
+      "url": "https://poki.uk.com/",
+      "snippet": "Play free online games on Poki. Explore Subway Surfers, Temple Run 2, puzzles, racing and 2 player games in your browser. No app …"
+    }
+  ]
+}

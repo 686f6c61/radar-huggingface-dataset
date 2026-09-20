@@ -1,0 +1,98 @@
+{
+  "schema": 1,
+  "id": "JustBendy/janku-v5-nsfw-trained-noobai-rou-wei-illustrious-xl-v50-sdxl",
+  "slug": "justbendy-janku-v5-nsfw-trained-noobai-rou-wei-illustrious-xl-v50-sdxl",
+  "author": "JustBendy",
+  "url": "https://huggingface.co/JustBendy/janku-v5-nsfw-trained-noobai-rou-wei-illustrious-xl-v50-sdxl",
+  "created_at": "2026-09-19T22:54:58.000Z",
+  "updated_at": "2026-09-19T22:54:58.000Z",
+  "license": "faipl-1.0-sd",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "text-to-image",
+    "stable-diffusion",
+    "stable-diffusion-xl",
+    "not-for-all-audiences",
+    "anime",
+    "hentai",
+    "nai",
+    "girls",
+    "better eyes",
+    "brightness",
+    "contrast",
+    "better shade lightning",
+    "brighter colors",
+    "shiny hair with particles",
+    "shiny eyes",
+    "sharper lines",
+    "characters",
+    "artists",
+    "trained",
+    "merge",
+    "rouwei",
+    "noobai",
+    "illustrious",
+    "en",
+    "base_model:Laxhar/noobai-XL-1.1",
+    "base_model:merge:Laxhar/noobai-XL-1.1",
+    "base_model:Minthy/RouWei-0.8",
+    "base_model:merge:Minthy/RouWei-0.8",
+    "base_model:OnomaAIResearch/Illustrious-xl-early-release-v0",
+    "base_model:merge:OnomaAIResearch/Illustrious-xl-early-release-v0",
+    "license:other",
+    "endpoints_compatible",
+    "diffusers:StableDiffusionXLPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2567463684,
+  "parameters_human": "2.57B",
+  "storage_bytes": 6938011430,
+  "storage_human": "6.9 GB",
+  "base_model": "OnomaAIResearch/Illustrious-xl-early-release-v0, Laxhar/noobai-XL-1.1, Minthy/RouWei-0.8",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kleinanzeigen löscht Alle meine Anzeigen als gewerblich - Kein ...",
+      "url": "https://www.123recht.de/forum/internetauktionen/Kleinanzeigen-loescht-Alle-meine-Anzeigen-als-gewerblich-Kein-Einspruch-moeglich-__f625910.html",
+      "snippet": "Jan 16, 2025 · GleichesRechtFürAlle_93 Status: Frischling (9 Beiträge, 0x hilfreich) Kleinanzeigen löscht Alle meine Anzeigen als …"
+    },
+    {
+      "title": "eBay Kleinanzeigen: Käufer zahlt nicht - Vertag rechtsgültig? Weitere ...",
+      "url": "https://www.123recht.de/forum/internetauktionen/eBay-Kleinanzeigen-Kaeufer-zahlt-nicht-Vertag-rechtsgueltig-Weitere-Schritte-__f529373.html",
+      "snippet": "Nov 27, 2017 · eBay Kleinanzeigen: Käufer zahlt nicht - Vertag rechtsgültig? Weitere Schritte? Ich habe bei eBay Kleinanzeigen eine …"
+    },
+    {
+      "title": "ᐅ Artikel aus privatem Internetverkauf (Ebay Kleinanzeigen) trotz ...",
+      "url": "https://www.juraforum.de/forum/t/artikel-aus-privatem-internetverkauf-ebay-kleinanzeigen-trotz-zusage-anderweitig-verkauft.522619/",
+      "snippet": "Jul 2, 2015 · AW: Artikel aus privatem Internetverkauf (Ebay Kleinanzeigen) trotz Zusage anderweitig verkauft Außerdem ist auch …"
+    },
+    {
+      "title": "eBay Abmahnung – gewerblich / privat ᐅ was tun? - JuraForum.de",
+      "url": "https://www.juraforum.de/lexikon/ebay-abmahnung",
+      "snippet": "Jan 27, 2024 · Wettbewerbsrechtliche Abmahnung bei eBay Verkauf, Auktionen und Kleinanzeigen Der Wettbewerb auf eBay ist …"
+    },
+    {
+      "title": "EPR packaging registration numbers - eBay Deutschland Community",
+      "url": "https://community.ebay.de/forum/seller-lounge-22/topic/epr-verpackungsregistrierungsnummern-es-wird-immer-bekloppter-10453/",
+      "snippet": "According to a corresponding eBay message from today, from 12/08/26 EPR packaging registration numbers will also be mandatory …"
+    }
+  ]
+}

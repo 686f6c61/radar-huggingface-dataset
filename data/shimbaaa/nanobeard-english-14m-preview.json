@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "shimbaaa/nanoBeard-english-14M-preview",
+  "slug": "shimbaaa-nanobeard-english-14m-preview",
+  "author": "shimbaaa",
+  "url": "https://huggingface.co/shimbaaa/nanoBeard-english-14M-preview",
+  "created_at": "2026-09-19T20:47:42.000Z",
+  "updated_at": "2026-09-19T20:47:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "nanobeard",
+    "sloop",
+    "english",
+    "reasoning",
+    "fine-tuned",
+    "base_model:younissk/nanoBeard-sloop-14M",
+    "base_model:finetune:younissk/nanoBeard-sloop-14M",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 17011584,
+  "parameters_human": "17.0M",
+  "storage_bytes": 68050160,
+  "storage_human": "68 MB",
+  "base_model": "younissk/nanoBeard-sloop-14M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "„Google“ vertėjas",
+      "url": "https://translate.google.lt/",
+      "snippet": "Be piniginio mokėjimo teikiama „Google“ paslauga intuityviai verčia žodžius, frazes ir tinklalapius iš anglų k. į daugiau kaip 100 kitų …"
+    },
+    {
+      "title": "senamiestis angliškai",
+      "url": "http://www.lietuviu-anglu.com/senamiestis/",
+      "snippet": "senamiestis old city old city old city draugai: lietuviu-vokieciu lietuviu-rusu Pažintys Lietuvoje » ©2026 Lietuviu-Anglu.com"
+    },
+    {
+      "title": "senamiestis vertimas angliškai - Automatinis teksto vertėjas",
+      "url": "https://www.tekstovertimas.lt/zodynas/lietuviu-anglu/senamiestis",
+      "snippet": "Netoliese senamiestis esantys žodžiai senamadis senakurys senaip senamiestis senas senatas senatis"
+    },
+    {
+      "title": "Senamiestis in English with contextual examples - MyMemory",
+      "url": "https://mymemory.translated.net/en/Lithuanian/English/senamiestis",
+      "snippet": "gamle stavanger – senamiestis, kuriame yra keli viešbučiai ir gražiai išrikiavę stovi baltučiai mediniai namai, puikiai tinka ramiai …"
+    },
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.to/",
+      "snippet": "Google's service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other …"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "V-Mikey-V/TF2-Spy",
+  "slug": "v-mikey-v-tf2-spy",
+  "author": "V-Mikey-V",
+  "url": "https://huggingface.co/V-Mikey-V/TF2-Spy",
+  "created_at": "2026-09-19T21:18:40.000Z",
+  "updated_at": "2026-09-19T21:34:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "RVCV2",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 158701314,
+  "storage_human": "159 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "V - Topic - YouTube",
+      "url": "https://www.youtube.com/channel/UCFqldK305KOVQXbAIGi-flg",
+      "snippet": "Kim Tae-hyung, known professionally as V, is a South Korean singer, songwriter, and dancer and a member of the boy band BTS."
+    },
+    {
+      "title": "V (chanteur) — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/V_(chanteur)",
+      "snippet": "V lors d'une séance photo à Los Angeles, en mai 2018. De plus, Yoon Jong Shin, le fondateur et directeur de Mystic Entertainment, a …"
+    },
+    {
+      "title": "V (singer) - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/V_(singer)",
+      "snippet": "Kim Tae-hyung (Korean: 김태형; born December 30, 1995), [2] known professionally as V (뷔), is a South Korean singer. In 2013, he …"
+    },
+    {
+      "title": "V (@thv) • Instagram photos and videos",
+      "url": "https://www.instagram.com/thv/",
+      "snippet": "77M Followers, 8 Following, 183 Posts - V (@thv) on Instagram: \"NORMAL\""
+    },
+    {
+      "title": "V sur M6+ : voir les épisodes en streaming",
+      "url": "https://www.m6.fr/v-p_25120",
+      "snippet": "V en replay sur M6+ : les épisodes en intégralité, des vidéos supplémentaires et les meilleurs extraits."
+    }
+  ]
+}

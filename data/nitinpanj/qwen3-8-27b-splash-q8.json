@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "nitinpanj/Qwen3.8-27B-Splash-Q8",
+  "slug": "nitinpanj-qwen3-8-27b-splash-q8",
+  "author": "nitinpanj",
+  "url": "https://huggingface.co/nitinpanj/Qwen3.8-27B-Splash-Q8",
+  "created_at": "2026-09-20T01:24:20.000Z",
+  "updated_at": "2026-09-20T01:25:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "apple-silicon",
+    "metal",
+    "splash",
+    "mtp",
+    "speculative-decoding",
+    "8bit",
+    "text-generation",
+    "en",
+    "zh",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19989325,
+  "storage_human": "20 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tourisme dans le Morbihan",
+      "url": "https://morbihan.com/",
+      "snippet": "Bienvenue sur le site officiel de Morbihan Tourisme : Informations pour bien préparer votre séjour, votre week-end ou vos vacances …"
+    },
+    {
+      "title": "Accueil - Conseil Départemental du Morbihan",
+      "url": "https://www.morbihan.fr/",
+      "snippet": "Aug 27, 2014 · Le Morbihan est composé de l'Argoat, l'intérieur des terres, et l'Armor, sa côte maritime. Ce contraste est marqué par …"
+    },
+    {
+      "title": "Que visiter en Bretagne ? Les incontournables du Morbihan",
+      "url": "https://morbihan.com/decouvrir/le-morbihan-et-ses-perles-bretonnes/tous-les-incontournables/",
+      "snippet": "Entre loisirs nature, sorties culturelles, activités sportives et grands événements, le Morbihan vous propose un programme riche pour …"
+    },
+    {
+      "title": "Visiter le Morbihan : 10 incontournables à faire et voir",
+      "url": "https://generationvoyage.fr/visiter-morbihan-faire-voir/",
+      "snippet": "Nov 12, 2025 · Visiter le Morbihan en explorant ses 10 incontournables à faire. Découvrez les sites et activités à ne pas manquer …"
+    },
+    {
+      "title": "Morbihan — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Morbihan",
+      "snippet": "Le Morbihan est avec autour de 20 000 tonnes le premier producteur breton d'huîtres, et le second département français derrière la …"
+    }
+  ]
+}

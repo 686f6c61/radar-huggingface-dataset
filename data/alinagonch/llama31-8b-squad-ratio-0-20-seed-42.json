@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "AlinaGonch/llama31-8b-squad-ratio-0.20-seed-42",
+  "slug": "alinagonch-llama31-8b-squad-ratio-0-20-seed-42",
+  "author": "AlinaGonch",
+  "url": "https://huggingface.co/AlinaGonch/llama31-8b-squad-ratio-0.20-seed-42",
+  "created_at": "2026-09-19T20:09:10.000Z",
+  "updated_at": "2026-09-19T20:09:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 185042160,
+  "storage_human": "185 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "拉娜·德雷（Lana Del Rey） - 知乎",
+      "url": "https://www.zhihu.com/topic/20014088/intro",
+      "snippet": "1985年6月21日，拉娜·德雷（Lana Del Rey）出生于美国纽约普莱西德湖，成长于普莱西德湖村。 15岁时，她就读康涅狄格州的肯特 …"
+    },
+    {
+      "title": "你如何看待 Lana Del Rey？ - 知乎",
+      "url": "https://www.zhihu.com/question/21888415",
+      "snippet": "Lana Del Rey. 我不评价她，我用生命体会她。我永远不会把她当成一个歌手来评价，在我的世界观里她是Art，是的，她不是艺术家， …"
+    },
+    {
+      "title": "你认为Lana Del Rey（打雷姐）最棒的专辑是哪个？ - 知乎",
+      "url": "https://www.zhihu.com/question/389023836",
+      "snippet": "你认为Lana Del Rey（打雷姐）最棒的专辑是哪个？ 事先声明：希望大家不要捧一踩一，只是觉得大家对每张专的评价和感受不同挺 …"
+    },
+    {
+      "title": "如何评价 Lana Del Rey？ - 知乎",
+      "url": "https://www.zhihu.com/question/22260432",
+      "snippet": "Carmen是一个复杂的形象，我一直都相信Carmen身上有打雷自己的影子。流落风尘的女孩，沉迷于酒精，迷失自我，闪耀于世内心 …"
+    },
+    {
+      "title": "倘若你常听Lana del ray ，那么对于国内陈婧霏的出现会作何感想？",
+      "url": "https://www.zhihu.com/question/477467003",
+      "snippet": "倘若你常听Lana del ray ，那么对于国内陈婧霏的出现会作何感想？ 我听了一些陈婧霏的歌曲，比如《晚风》、《人间指南》《我的孤 …"
+    }
+  ]
+}

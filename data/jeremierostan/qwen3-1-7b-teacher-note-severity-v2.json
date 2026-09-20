@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "jeremierostan/Qwen3-1.7B-teacher-note-severity-v2",
+  "slug": "jeremierostan-qwen3-1-7b-teacher-note-severity-v2",
+  "author": "jeremierostan",
+  "url": "https://huggingface.co/jeremierostan/Qwen3-1.7B-teacher-note-severity-v2",
+  "created_at": "2026-09-20T02:28:51.000Z",
+  "updated_at": "2026-09-20T03:06:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "sft",
+    "lora",
+    "education",
+    "conversational",
+    "base_model:jeremierostan/Qwen3-1.7B-teacher-note-severity",
+    "base_model:adapter:jeremierostan/Qwen3-1.7B-teacher-note-severity",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 177,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 6893793866,
+  "storage_human": "6.9 GB",
+  "base_model": "jeremierostan/Qwen3-1.7B-teacher-note-severity",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "City of Lakewood, California - Home",
+      "url": "https://www.lakewoodca.gov/Things-to-Do/Activities-Classes-Registration/Register-for-recreation-activities",
+      "snippet": "We would like to show you a description here but the site won’t allow us."
+    },
+    {
+      "title": "Member Benefits - SEIU 121RN | Nurse Alliance",
+      "url": "https://seiu121rn.org/member-benefits/",
+      "snippet": "Recreation Connection offers 121RN members discounts on movie tickets, theme parks, plays and shows, concerts, and sporting …"
+    },
+    {
+      "title": "Recreation Manitoba - Connect 2026",
+      "url": "https://recreationmb.ca/Connect2026",
+      "snippet": "Recreation Manitoba hosts the Annual Provincial Recreation Conference. This year’s conference marks the 30th edition and …"
+    },
+    {
+      "title": "Home | SD RecConnect Your Online Connection To Recreation and …",
+      "url": "https://anc.apm.activecommunities.com/sdparkandrec/home?onlineSiteId=0&from_original_cui=true",
+      "snippet": "Jul 1, 2025 · Explore recreation and leisure activities through the City of San Diego Parks and Recreation Department's online platform."
+    },
+    {
+      "title": "Recreation Connection / TicketsatWork | Orlando FL - Facebook",
+      "url": "https://www.facebook.com/recreationconnection/photos/",
+      "snippet": "Recreation Connection / TicketsatWork, Orlando. 2,468 likes · 11 were here. Recreation Connection is now TicketsAtWork, the …"
+    }
+  ]
+}

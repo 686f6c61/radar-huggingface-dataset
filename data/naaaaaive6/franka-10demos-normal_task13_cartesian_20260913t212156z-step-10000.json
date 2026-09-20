@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "NaaaaaiVe6/franka-10demos-normal_task13_cartesian_20260913T212156Z-step-10000",
+  "slug": "naaaaaive6-franka-10demos-normal_task13_cartesian_20260913t212156z-step-10000",
+  "author": "NaaaaaiVe6",
+  "url": "https://huggingface.co/NaaaaaiVe6/franka-10demos-normal_task13_cartesian_20260913T212156Z-step-10000",
+  "created_at": "2026-09-19T20:27:30.000Z",
+  "updated_at": "2026-09-19T20:29:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3616757520,
+  "parameters_human": "3.62B",
+  "storage_bytes": 7233650408,
+  "storage_human": "7.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Skup Smartonów, Starych Telefonów - Skupujemy Telefony - Cennik ...",
+      "url": "https://mooney.pl/porady/jak-sprzedac-telefon/",
+      "snippet": "Chcesz pozbyć się starego telefonu? Nie ma problemu, gdyż skupujemy telefony w naszych skupie online - u nas sprzedasz swojego …"
+    },
+    {
+      "title": "Sprzedam Laptop - Skup – Najwygodniejsza Alternatywa Online dla ...",
+      "url": "https://mooney.pl/porady/jak-sprzedac-laptop/",
+      "snippet": ": Porady, jak skutecznie i szybko sprzedać laptopa w internetowym skupie. Nie płać prowizji, nie płać za kuriera, nie czekaj na …"
+    },
+    {
+      "title": "Skup biżuterii – sposób na szybką gotówkę - Mooney.pl",
+      "url": "https://mooney.pl/lp/skup-bizuterii-sposob-na-szybka-gotowke/",
+      "snippet": "Dec 12, 2012 · Skup biżuterii w Mooney – co możesz sprzedać? Bransoletki, które nie pasują do Twojego stylu, niemodne kolczyki i …"
+    },
+    {
+      "title": "Jak przebiega wycena kosztowności w lombardzie online? - mooney.pl",
+      "url": "https://mooney.pl/lp/jak-przebiega-wycena-kosztownosci-w-lombardzie-online/",
+      "snippet": "Dec 12, 2012 · Od setek lat ludzie z każdego zakątka świata miewają ten sam problem: brak gotówki na pilne wydatki albo ważne …"
+    },
+    {
+      "title": "Skup online Mooney.pl – zupełnie nowe możliwości",
+      "url": "https://mooney.pl/lp/skup-online-mooney-zupelnie-nowe-mozliwosci/",
+      "snippet": "May 8, 2020 · Mooney.pl: sprzedawaj i zarabiaj Skup dostępny 24 godziny na dobę, 7 dni w tygodniu, z każdego zakątka Polski? …"
+    }
+  ]
+}

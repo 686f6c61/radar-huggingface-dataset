@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Atomic-Germ/Qwen3.8-Whittle-27B-A17.8B",
+  "slug": "atomic-germ-qwen3-8-whittle-27b-a17-8b",
+  "author": "Atomic-Germ",
+  "url": "https://huggingface.co/Atomic-Germ/Qwen3.8-Whittle-27B-A17.8B",
+  "created_at": "2026-09-19T23:38:54.000Z",
+  "updated_at": "2026-09-20T00:33:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3_5_moe",
+    "moe",
+    "mixture-of-experts",
+    "research-preview",
+    "whittle",
+    "qwen3.5",
+    "router-healing",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26917297664,
+  "parameters_human": "26.92B",
+  "storage_bytes": 26373032249,
+  "storage_human": "26.4 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Startseite - Sita Bauelemente GmbH",
+      "url": "https://www.sita-bauelemente.de/",
+      "snippet": "Das Entwässern auf niedriger gelegenen Dachﬂächen erfolgte normenrechtlich gesehen bisher in einer Grauzone. Heute nicht …"
+    },
+    {
+      "title": "Notentwässerung - Sita Bauelemente GmbH",
+      "url": "https://www.sita-bauelemente.de/produkte/notentwaesserung/",
+      "snippet": "Sita ist Sichermacher. Rechnen Sie mit Regen? Wir schon. Sita sorgt für Schutz – so dass erst gar nichts passiert. Wenn Regen …"
+    },
+    {
+      "title": "Störungsmeldungen | Stadtentwässerung Stuttgart | Ableitung und ...",
+      "url": "https://www.stuttgart-stadtentwaesserung.de/service-und-kontakt/stoerungsmeldungen/",
+      "snippet": "Die Mitarbeiter der Stadtentwässerung sind aber nicht nur für sämtliche Störungen im öffentlichen Kanalnetz zuständig, sondern auch …"
+    },
+    {
+      "title": "Stadtentwässerung Stuttgart | Ableitung und Reinigung der Abwässer …",
+      "url": "https://www.stuttgart-stadtentwaesserung.de/",
+      "snippet": "Ein eigenes Labor übernimmt die kontinuierliche Überwachung des Abwassers, führt die Beprobung aller Stuttgarter Mineralquellen …"
+    },
+    {
+      "title": "Sita zeigt dreistufige Entwässerungslösung für Umkehr-Retentionsdächer",
+      "url": "https://www.baulinks.de/webplugin/2025/1131.php4",
+      "snippet": "Mit SitaStandard, SitaTrendy und SitaRetention Twist bietet Sita eine sofort verfügbare Entwässerungssysteme für begrünte …"
+    }
+  ]
+}

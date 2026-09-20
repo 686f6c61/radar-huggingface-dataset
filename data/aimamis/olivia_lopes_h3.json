@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "AiMamis/Olivia_Lopes_H3",
+  "slug": "aimamis-olivia_lopes_h3",
+  "author": "AiMamis",
+  "url": "https://huggingface.co/AiMamis/Olivia_Lopes_H3",
+  "created_at": "2026-09-19T20:12:48.000Z",
+  "updated_at": "2026-09-19T20:13:16.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "license:openrail++",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 458851325,
+  "storage_human": "459 MB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qué es una Query: tipos principales - Arimetrics",
+      "url": "https://www.arimetrics.com/glosario-digital/query",
+      "snippet": "Una query es una consulta formulada para recuperar información de un sistema. En un buscador, corresponde a las palabras, …"
+    },
+    {
+      "title": "Consulta SQL (query): qué es y cómo leer el resultado · AprenderSQL.es",
+      "url": "https://aprendersql.es/glosario-sql/query/",
+      "snippet": "Técnicamente conviene distinguir una query o consulta de lectura, que obtiene un resultado, de sentencias de modificación como …"
+    },
+    {
+      "title": "¿Qué es Power Query? - Power Query | Microsoft Learn",
+      "url": "https://learn.microsoft.com/es-es/power-query/power-query-what-is-power-query",
+      "snippet": "Aug 20, 2026 · Obtenga información sobre qué es Power Query y cómo puede ayudarle a obtener y transformar datos."
+    },
+    {
+      "title": "Query - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Query",
+      "snippet": "This disambiguation page lists articles associated with the title Query. If an internal link incorrectly led you here, you may wish to …"
+    },
+    {
+      "title": "QUERY | traducir al español - Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/es/diccionario/ingles-espanol/query",
+      "snippet": "traducir QUERY: pregunta, duda, cuestionar, preguntar, pregunta [feminine, singular], consulta [feminine…. Más información en el …"
+    }
+  ]
+}

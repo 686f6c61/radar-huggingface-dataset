@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "menik1126/ovd-math-128-data-random-step800-historical",
+  "slug": "menik1126-ovd-math-128-data-random-step800-historical",
+  "author": "menik1126",
+  "url": "https://huggingface.co/menik1126/ovd-math-128-data-random-step800-historical",
+  "created_at": "2026-09-19T22:54:47.000Z",
+  "updated_at": "2026-09-19T23:31:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1777088000,
+  "parameters_human": "1.78B",
+  "storage_bytes": 7119812336,
+  "storage_human": "7.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Download - Get Ubuntu",
+      "url": "https://ubuntu.com/download",
+      "snippet": "Download Ubuntu Ubuntu is the world’s favorite Linux operating system. Run it on your laptop, workstation, server, or IoT device, with …"
+    },
+    {
+      "title": "Enterprise Open Source and Linux | Ubuntu",
+      "url": "https://ubuntu.com/",
+      "snippet": "Sep 11, 2026 · Ubuntu is the modern, open source operating system on Linux for the enterprise server, desktop, cloud, and IoT."
+    },
+    {
+      "title": "Ubuntu桌面系统 | Ubuntu",
+      "url": "https://cn.ubuntu.com/desktop",
+      "snippet": "快速、安全、简洁易用，现代化开源 Linux操作系统Ubuntu 每天为全球用户提供服务。立即下载体验最新版 Ubuntu操作系统。"
+    },
+    {
+      "title": "Ubuntu中国官网 | Ubuntu",
+      "url": "https://cn.ubuntu.com/",
+      "snippet": "Ubuntu是适用于企业服务器、桌面电脑、云、IoT物联网的现代化开源Linux操作系统。Ubuntu官网。"
+    },
+    {
+      "title": "Ubuntu | Ubuntu",
+      "url": "https://jp.ubuntu.com/",
+      "snippet": "Ubuntuは、デスクトップPCやクラウド、インターネットに接続されたあらゆる機器まで、すべての環境において動作可能なオープ …"
+    }
+  ]
+}

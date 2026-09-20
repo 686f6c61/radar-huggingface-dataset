@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "AiMamis/Aiko",
+  "slug": "aimamis-aiko",
+  "author": "AiMamis",
+  "url": "https://huggingface.co/AiMamis/Aiko",
+  "created_at": "2026-09-19T20:39:54.000Z",
+  "updated_at": "2026-09-19T20:40:00.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "license:openrail++",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 458824326,
+  "storage_human": "459 MB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Antarktis – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Antarktis",
+      "snippet": "Die Antarktis (von altgriechisch ἀνταρκτικός antarktikós, deutsch ‚der Arktis gegenüber‘; auch Südpolargebiet[1] und Südpolgebiet[2]) …"
+    },
+    {
+      "title": "Antarktika – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Antarktika",
+      "snippet": "Stattdessen etablierte es sich, mit „die Antarktis“ sowohl das gesamte Südpolargebiet als auch den darin liegenden Kontinent zu …"
+    },
+    {
+      "title": "Die Antarktis - Extreme am südlichen Ende der Welt",
+      "url": "https://www.umweltbundesamt.de/themen/nachhaltigkeit-strategien-internationales/antarktis/die-antarktis",
+      "snippet": "Feb 28, 2022 · Die Antarktis erstreckt sich über den Kontinent Antarktika und das ihn umgebende Südpolarmeer. Mit der Region …"
+    },
+    {
+      "title": "Die Antarktis - Auswärtiges Amt",
+      "url": "https://www.auswaertiges-amt.de/de/aussenpolitik/regelbasierte-internationale-ordnung/voelkerrecht-internationales-recht/einzelfragen/antarktis/antarktis-217090",
+      "snippet": "Die Antarktis ist der kälteste, trockenste und stürmischste aller Kontinente. Sie ist fast 40 mal so groß wie Deutschland und der …"
+    },
+    {
+      "title": "Antarctica - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Antarctica",
+      "snippet": "Antarctica (/ ænˈtɑːrktɪkə / ⓘ) [note 1] is Earth 's southernmost and least-populated continent. Situated almost entirely south of the …"
+    }
+  ]
+}

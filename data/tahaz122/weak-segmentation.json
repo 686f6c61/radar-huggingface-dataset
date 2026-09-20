@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "tahaz122/weak-segmentation",
+  "slug": "tahaz122-weak-segmentation",
+  "author": "tahaz122",
+  "url": "https://huggingface.co/tahaz122/weak-segmentation",
+  "created_at": "2026-09-20T00:08:30.000Z",
+  "updated_at": "2026-09-20T12:15:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 296477826,
+  "storage_human": "296 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pizza Hut | Commander votre pizza en livraison ou à emporter",
+      "url": "https://www.pizzahut.be/fr",
+      "snippet": "Commandez votre pizza préférée en ligne chez Pizza Hut et profitez des offres exclusive via l'appli. Livraison rapide ou pizza à …"
+    },
+    {
+      "title": "Commandez votre pizza chez Domino's via dominos.be | Honour the …",
+      "url": "https://www.dominos.be/fr",
+      "snippet": "Commandez votre pizza, My Domino's Box, accompagnement et les meilleurs desserts chez Domino's. Livraison ou à emporter ! …"
+    },
+    {
+      "title": "Pizzas Menu - Domino's Pizza",
+      "url": "https://www.dominos.be/fr/menu-pizza",
+      "snippet": "Envie d'une pizza sans vous ruiner ? Ces classiques sont toujours proposés à petit prix, tous les jours."
+    },
+    {
+      "title": "Recettes pizza | Simples et rapides - Marmiton",
+      "url": "https://www.marmiton.org/recettes/index/categorie/pizza/",
+      "snippet": "Désormais omniprésente dans l’assiette des habitants des « quatre coins de la Terre », la pizza est aujourd’hui un plat …"
+    },
+    {
+      "title": "Domino’s Pizza, livraison et à emporter, commande en ligne",
+      "url": "https://www.dominos.fr/",
+      "snippet": "Commandez vos pizzas en ligne en livraison ou à emporter dans votre pizzeria Domino's la plus proche et dégustez-les en famille ou …"
+    }
+  ]
+}

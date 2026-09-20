@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "rafw007/Qwen3.8-27B-redteam-abliterated",
+  "slug": "rafw007-qwen3-8-27b-redteam-abliterated",
+  "author": "rafw007",
+  "url": "https://huggingface.co/rafw007/Qwen3.8-27B-redteam-abliterated",
+  "created_at": "2026-09-19T23:04:50.000Z",
+  "updated_at": "2026-09-19T23:11:39.000Z",
+  "license": "qwen",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "abliterated",
+    "uncensored",
+    "redteam",
+    "agentic",
+    "tool-calling",
+    "cpu-friendly",
+    "not-for-all-audiences",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 16551317312,
+  "storage_human": "16.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BERGFEX: Skigebied Fendels / Ried / Prutz - Skivakantie Fendels / …",
+      "url": "https://nl.bergfex.com/fendels/",
+      "snippet": "Jun 4, 2026 · Het skigebied Fendels ligt aan de ingang van het Kaunertal op een hoogvlakte. In tegenstelling tot de Kaunertaler …"
+    },
+    {
+      "title": "Bergbahnen Fendels: Lifte, Öffnungszeiten & Preise",
+      "url": "https://www.kaunertaler-gletscher.at/bergbahnen-fendels.html",
+      "snippet": "Mit den Bergbahnen Fendels gelangst Du schnell und sicher in eines der schönsten Ausflugsgebiete in Österreich: Fendels am …"
+    },
+    {
+      "title": "Die Gemeinde Fendels in Tirol | Kaunertal",
+      "url": "https://www.kaunertal.com/de/Ihr-Kaunertal/Orte-Sehenswuerdigkeiten/Fendels",
+      "snippet": "Auf etwa 1.350 Metern und damit rund 500 Meter über dem Oberinntal thront das Familienparadies Fendels. Mit lediglich 250 …"
+    },
+    {
+      "title": "Skigebied Fendels (Oostenrijk) - Snowplaza",
+      "url": "https://www.snowplaza.nl/oostenrijk/kaunertal/skigebied-fendels/",
+      "snippet": "Sep 12, 2026 · Fendels is een ideaal skigebied voor een wintersport met meerdere generaties. Het compacte, overzichtelijke …"
+    },
+    {
+      "title": "Fendels - Wikipedia",
+      "url": "https://nl.wikipedia.org/wiki/Fendels",
+      "snippet": "Fendels is een gemeente in het district Landeck in de Oostenrijkse deelstaat Tirol. Het bergdorp Fendels ligt circa 500 meter boven …"
+    }
+  ]
+}

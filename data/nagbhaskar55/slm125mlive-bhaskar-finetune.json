@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "nagbhaskar55/slm125mlive-bhaskar-finetune",
+  "slug": "nagbhaskar55-slm125mlive-bhaskar-finetune",
+  "author": "nagbhaskar55",
+  "url": "https://huggingface.co/nagbhaskar55/slm125mlive-bhaskar-finetune",
+  "created_at": "2026-09-19T20:51:06.000Z",
+  "updated_at": "2026-09-19T20:51:16.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "legal",
+    "finance",
+    "instruction-tuned",
+    "sft",
+    "conversational",
+    "en",
+    "base_model:nagbhaskar55/slm125mlive-base",
+    "base_model:finetune:nagbhaskar55/slm125mlive-base",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 125848320,
+  "parameters_human": "125.8M",
+  "storage_bytes": 503405488,
+  "storage_human": "503 MB",
+  "base_model": "nagbhaskar55/slm125mlive-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yahoo Finance - Stock Market Live, Quotes, Business & Finance News",
+      "url": "https://finance.yahoo.com/",
+      "snippet": "At Yahoo Finance, you get free stock quotes, up-to-date news, portfolio management resources, international market data, social …"
+    },
+    {
+      "title": "Global Market Headlines | Breaking Stock Market News | Reuters",
+      "url": "https://www.reuters.com/markets/",
+      "snippet": "23 hours ago · Find the latest stock market news from every corner of the globe at Reuters.com, your online source for breaking …"
+    },
+    {
+      "title": "Google Finance - Stock Market Prices, Real-time Quotes & Business …",
+      "url": "https://www.google.com/finance/",
+      "snippet": "Google Finance provides real-time market quotes, international stock information, financial news, currency conversion rates, and …"
+    },
+    {
+      "title": "Stock Markets, Business News, Financials, Earnings - CNBC",
+      "url": "https://www.cnbc.com/?msockid=391aa0a471306c5c2fbbb77d70ca6dff",
+      "snippet": "Global Business and Financial News, Stock Quotes, and Market Data and Analysis. CNBC is the world leader in business news and …"
+    },
+    {
+      "title": "Stocks and Investing - The Latest Stocks and Market Data. Get Updates ...",
+      "url": "https://www.wsj.com/finance/stocks?msockid=391aa0a471306c5c2fbbb77d70ca6dff",
+      "snippet": "The latest stock market and investing news covering the Dow Jones Industrial Index (DJIA), S&P 500 and Nasdaq, as well as …"
+    }
+  ]
+}

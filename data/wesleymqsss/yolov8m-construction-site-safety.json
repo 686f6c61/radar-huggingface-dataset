@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "wesleymqsss/yolov8m-construction-site-safety",
+  "slug": "wesleymqsss-yolov8m-construction-site-safety",
+  "author": "wesleymqsss",
+  "url": "https://huggingface.co/wesleymqsss/yolov8m-construction-site-safety",
+  "created_at": "2026-09-19T23:23:39.000Z",
+  "updated_at": "2026-09-20T17:04:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "ultralytics",
+    "vision",
+    "object-detection",
+    "yolov8",
+    "ppe-detection",
+    "safety",
+    "pt",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 52040530,
+  "storage_human": "52 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Chrome - The Fast & Secure Web Browser Built to be Yours",
+      "url": "https://www.google.com/chrome/",
+      "snippet": "Chrome is the official web browser from Google, built to be fast, secure, and customizable. Download now and make it yours."
+    },
+    {
+      "title": "Google Chrome – Download the fast, secure browser from Google",
+      "url": "https://www.google.com/intl/en_uk/chrome/",
+      "snippet": "Get more done with the new Google Chrome. A more simple, secure and faster web browser than ever, with Google’s smarts built in. …"
+    },
+    {
+      "title": "Download and install Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95346?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "You can download and install the Chrome web browser at no charge, and use it to browse the web. Check system requirements to …"
+    },
+    {
+      "title": "Google Chrome Browser Download Free - 153.0.8010.53 | TechSpot",
+      "url": "https://www.techspot.com/downloads/4718-google-chrome.html",
+      "snippet": "3 days ago · Download Chrome for fast and secure browsing across desktop and mobile devices. Google Chrome is a fast, simple, …"
+    },
+    {
+      "title": "Download Google Chrome - Free - latest version",
+      "url": "https://chrome.en.softonic.com/download",
+      "snippet": "Sep 4, 2026 · Google Chrome is one of the best and most-used browsers out there. It is customizable and easy to navigate because …"
+    }
+  ]
+}

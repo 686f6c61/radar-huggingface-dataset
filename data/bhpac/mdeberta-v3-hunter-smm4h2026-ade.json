@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "id": "bhpac/mdeberta-v3-hunter-smm4h2026-ade",
+  "slug": "bhpac-mdeberta-v3-hunter-smm4h2026-ade",
+  "author": "bhpac",
+  "url": "https://huggingface.co/bhpac/mdeberta-v3-hunter-smm4h2026-ade",
+  "created_at": "2026-09-19T21:16:39.000Z",
+  "updated_at": "2026-09-19T21:30:45.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "de",
+    "fr",
+    "ru",
+    "ja",
+    "zh",
+    "fa"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deberta-v2",
+    "text-classification",
+    "adverse-drug-events",
+    "pharmacovigilance",
+    "multilingual",
+    "smm4h",
+    "en",
+    "de",
+    "fr",
+    "ru",
+    "ja",
+    "zh",
+    "fa",
+    "base_model:microsoft/mdeberta-v3-base",
+    "base_model:finetune:microsoft/mdeberta-v3-base",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278810882,
+  "parameters_human": "278.8M",
+  "storage_bytes": 1135924242,
+  "storage_human": "1.1 GB",
+  "base_model": "microsoft/mdeberta-v3-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Test Query For Encyclopedia Backstage – NBKomputer",
+      "url": "https://nbkomputer.com/test-query-for-encyclopedia-backstage/",
+      "snippet": "The Backstage Search system architecture separates content collection, indexing, querying, and result rendering. It supports multiple …"
+    },
+    {
+      "title": "Test query for encyclopedia backstage – Advanced query – KNIME …",
+      "url": "https://solmusical.com/test-query-for-encyclopedia-backstage-advanced-query-knime/",
+      "snippet": "Dec 9, 2024 · Test query for encyclopedia backstage – Advanced query – KNIME … – Sol Musical ♫ ♪. Test query for encyclopedia …"
+    },
+    {
+      "title": "Test query for encyclopedia backstage – Database, Query",
+      "url": "https://solmusical.com/test-query-for-encyclopedia-backstage-database-query/",
+      "snippet": "Jan 14, 2025 · This workflow demonstrates the usage of the DB Concatenate node. The node allows the user combine several …"
+    },
+    {
+      "title": "Search Test query for encyclopedia backstage | Observable",
+      "url": "https://observablehq.com/search?query=Test+query+for+encyclopedia+backstage",
+      "snippet": "Nov 5, 2020 · Hello, @nanostores/query!"
+    },
+    {
+      "title": "Wikidata Query Builder",
+      "url": "https://query.wikidata.org/querybuilder/?uselang=en",
+      "snippet": "Aug 27, 2026 · The Query Builder doesn't offer SPARQL's full functionality, but you can always open your query in the Query Service, …"
+    }
+  ]
+}

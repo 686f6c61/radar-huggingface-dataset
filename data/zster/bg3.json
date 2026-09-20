@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Zster/bg3",
+  "slug": "zster-bg3",
+  "author": "Zster",
+  "url": "https://huggingface.co/Zster/bg3",
+  "created_at": "2026-09-20T01:46:53.000Z",
+  "updated_at": "2026-09-20T01:46:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "diffusers-training",
+    "lora",
+    "krea2",
+    "krea2-diffusers",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LOS 10 MEJORES restaurantes en Madrid (2026) - Tripadvisor",
+      "url": "https://www.tripadvisor.es/Restaurants-g187514-Madrid.html",
+      "snippet": "Los platos con la etiqueta “Imprescindible” actualmente son los más comentados en la zona. Los ganadores de los Premios …"
+    },
+    {
+      "title": "Mejores restaurantes de Madrid: los 50 donde comer en 2025",
+      "url": "https://madridsecreto.co/restaurantes-madrid/",
+      "snippet": "Apr 17, 2026 · La gastronomía es parte del atractivo de la ciudad y un pilar de la cultura. Desde los restaurantes centenarios a las …"
+    },
+    {
+      "title": "Los mejores restaurantes de Madrid (edición verano de 2026)",
+      "url": "https://www.vogue.es/living/galerias/mejores-restaurantes-madrid",
+      "snippet": "Aug 28, 2026 · La nueva temporada trae consigo una infinidad de propuestas donde comer, beber y disfrutar del mejor ambiente de …"
+    },
+    {
+      "title": "Los 50 mejores restaurantes de Madrid",
+      "url": "https://www.timeout.es/madrid/es/restaurantes/los-100-mejores-restaurantes-de-madrid-top-100",
+      "snippet": "Jul 2, 2026 · Un escaparate donde caben algunas estrellas Michelin, chefs insultantemente jóvenes, alguna casa de comidas de …"
+    },
+    {
+      "title": "Los 10 mejores restaurantes en Comunidad de Madrid - TheFork",
+      "url": "https://www.thefork.es/restaurantes/comunidad-de-madrid-b1874",
+      "snippet": "DESCUBRE LOS MEJORES restaurantes en Comunidad de Madrid con TheFork. Consulta las opiniones de restaurantes de nuestra …"
+    }
+  ]
+}

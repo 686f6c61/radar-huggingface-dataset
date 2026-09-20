@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "AlinaGonch/llama31-8b-squad-ratio-0.80-seed-42",
+  "slug": "alinagonch-llama31-8b-squad-ratio-0-80-seed-42",
+  "author": "AlinaGonch",
+  "url": "https://huggingface.co/AlinaGonch/llama31-8b-squad-ratio-0.80-seed-42",
+  "created_at": "2026-09-19T23:03:44.000Z",
+  "updated_at": "2026-09-19T23:03:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 185042160,
+  "storage_human": "185 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Intermass Engineering & Contracting",
+      "url": "https://intermass.com/",
+      "snippet": "Founded in 1977, Intermass Engineering & Contracting Company LLC is one of the UAE’s leading construction companies, with …"
+    },
+    {
+      "title": "Contact – Intermass Engineering & Contracting",
+      "url": "https://intermass.com/contact/",
+      "snippet": "Use the form below to send us your inquiries. communications@intermass.com."
+    },
+    {
+      "title": "Intermass Engineering & Contracting Company L.L.C - LinkedIn",
+      "url": "https://ae.linkedin.com/company/intermass-engineering-&-contracting-company-l-l-c",
+      "snippet": "Founded in 1977, Intermass Engineering & Contracting Company LLC is the flagship company and one of the most prominent …"
+    },
+    {
+      "title": "Intermass Engineering & Contracting (Engineers & Surveyors) in Dubai …",
+      "url": "https://www.hidubai.com/businesses/intermass-engineering-contracting-construction-heavy-industries-engineers-surveyors-dubai-silicon-oasis-nadd-hessa-dubai-2",
+      "snippet": "Get Intermass Engineering & Contracting reviews, ratings, contact address, phone numbers, contact person and map details at …"
+    },
+    {
+      "title": "Construction Companies | Intermass Engineering & Contract...",
+      "url": "https://uaecontractorshub.com/contractors/construction-companies/intermass-engineering-contracting-company",
+      "snippet": "Intermass Engineering & Contracting Company LLC operates as a comprehensive building solutions company with expertise in new …"
+    }
+  ]
+}

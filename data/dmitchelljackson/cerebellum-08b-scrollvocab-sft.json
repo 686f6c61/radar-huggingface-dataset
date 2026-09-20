@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "dmitchelljackson/cerebellum-08b-scrollvocab-sft",
+  "slug": "dmitchelljackson-cerebellum-08b-scrollvocab-sft",
+  "author": "dmitchelljackson",
+  "url": "https://huggingface.co/dmitchelljackson/cerebellum-08b-scrollvocab-sft",
+  "created_at": "2026-09-20T00:50:12.000Z",
+  "updated_at": "2026-09-20T01:12:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen3.5-0.8B",
+    "lora",
+    "qdora",
+    "transformers",
+    "android",
+    "gui-agent",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 449109589,
+  "storage_human": "449 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "eBay",
+      "url": "https://www.ebay.com.au/fdbk/mweb_profile?fdbkType=FeedbackReceivedAsSeller&item_id=225581652995&username=sanka_684&filter=feedback_page%3ARECEIVED_AS_SELLER&sort=RELEVANCEV2&msockid=30a70c7fc0c1658d3dcb1ba5c1086487",
+      "snippet": "We would like to show you a description here but the site won’t allow us."
+    },
+    {
+      "title": "Galatasaray Parçalı Çelik Saklama Kabı 26940 | gsstore",
+      "url": "https://www.gsstore.org/galatasaray-parcali-celik-saklama-kabi-26940/",
+      "snippet": "Galatasaray Parçalı Çelik Saklama Kabı 26940 ve diğer Kırtasiye modellerini görmek için tıklayın! İndirimli yeni sezon ürünlerini …"
+    },
+    {
+      "title": "Yalova Üniversitesi - Haber",
+      "url": "https://if.yalova.edu.tr/Page/Haber/dekanimiz-prof-dr-mehmet-bahcekapili-diyanet-tvye-konuk-oldu",
+      "snippet": "Fakültemiz Dekanı Prof. Dr. Mehmet Bahçekapılı, Diyanet TV'nin 05.04.2022 tarihli \"İftarı Beklerken\" programına konuk oldu."
+    },
+    {
+      "title": "Aktuelle Diesel Preise - die günstigste Tankstelle in Langweid",
+      "url": "https://www.clever-tanken.de/spritpreise/diesel-preise/langweid",
+      "snippet": "Finden Sie auf clever-tanken.de die günstigsten Diesel Preise in Langweid Die besten Preise für Ihre Spritsorte: ARAL, Donauwörther …"
+    },
+    {
+      "title": "Kadın Çok Renkli Boncuklu Charmlı Halka Küpe - Koton",
+      "url": "https://www.koton.com/cok-renkli-boncuklu-charmli-halka-kupe-mavi-4204825/",
+      "snippet": "Çok Renkli Boncuklu Charmlı Halka Küpe, Mavi Renk Kadın Küpe Sadece 499.99 TL! Mavi Çok Renkli Boncuklu Charmlı Halka …"
+    }
+  ]
+}

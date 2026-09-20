@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "menik1126/ovd-math-1-data-rlvr-step300",
+  "slug": "menik1126-ovd-math-1-data-rlvr-step300",
+  "author": "menik1126",
+  "url": "https://huggingface.co/menik1126/ovd-math-1-data-rlvr-step300",
+  "created_at": "2026-09-19T22:47:52.000Z",
+  "updated_at": "2026-09-19T23:32:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1777088000,
+  "parameters_human": "1.78B",
+  "storage_bytes": 7119812336,
+  "storage_human": "7.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎是一个中文互联网高质量问答社区和创作者聚集的原创内容平台，致力于分享知识、经验和见解，帮助用户找到答案。"
+    },
+    {
+      "title": "Deepseek涨价了，有哪些便宜的替代方案？ - 知乎",
+      "url": "https://www.zhihu.com/question/2072733800774354696",
+      "snippet": "Grok，直接买Grok Build + Credit + X Premium，一年50刀约等于一个GPT Plus。足够轻度开发+办公完全够了，没必要送钱给GPT。 …"
+    },
+    {
+      "title": "Deep Van - 知乎",
+      "url": "https://www.zhihu.com/people/yang-lei-96-72",
+      "snippet": "Deep Van是知乎用户，擅长回答金融、科技和生活问题，其个人星球为DeepVan的逃生地牢，回答风格直言不讳，获得广泛关注。"
+    },
+    {
+      "title": "我想买国内的coding plan，买谁家的比较好？ - 知乎",
+      "url": "https://www.zhihu.com/question/2019768454232719400",
+      "snippet": "我参加了知乎的黑客松和 AI 上新活动，前后一共拿到两个这档套餐。 所以下面 Kimi 那部分不是替谁念稿，该夸夸、该骂骂，坑一个 …"
+    },
+    {
+      "title": "Obsidian和思源笔记现在推荐哪个？ - 知乎",
+      "url": "https://www.zhihu.com/question/587284718",
+      "snippet": "你可以通过各种插件组合来组合，搭建出几乎任何你希望实现的功能。 （搭建不出来的也能找到平替） 因为Obsidian的插件开发真的 …"
+    }
+  ]
+}

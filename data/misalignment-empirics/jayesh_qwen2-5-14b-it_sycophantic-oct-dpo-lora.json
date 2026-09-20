@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Misalignment-Empirics/jayesh_qwen2.5-14b-it_sycophantic-oct-dpo-lora",
+  "slug": "misalignment-empirics-jayesh_qwen2-5-14b-it_sycophantic-oct-dpo-lora",
+  "author": "Misalignment-Empirics",
+  "url": "https://huggingface.co/Misalignment-Empirics/jayesh_qwen2.5-14b-it_sycophantic-oct-dpo-lora",
+  "created_at": "2026-09-19T22:43:39.000Z",
+  "updated_at": "2026-09-19T22:43:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "model-organism",
+    "character-training",
+    "persona:sycophantic",
+    "text-generation",
+    "conversational",
+    "arxiv:2511.01689",
+    "base_model:Qwen/Qwen2.5-14B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-14B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1112517740,
+  "storage_human": "1.1 GB",
+  "base_model": "Qwen/Qwen2.5-14B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Airport to The Fusion Suites Hotel - Transfer Guide | Airport to Hotel ...",
+      "url": "https://thaiflights.info/bangkok-hotels/airport-to-the-fusion-suites-hotel/",
+      "snippet": "Getting from Suvarnabhumi Airport to The Fusion Suites Hotel covers approximately 5 km km, taking around 30-120 min depending …"
+    },
+    {
+      "title": "The Fusion Suites, Bangkok | HotelsCombined",
+      "url": "https://www.hotelscombined.com/Hotel/The_Fusion_Suites.htm",
+      "snippet": "Sep 13, 2026 · How close is The Fusion Suites to the nearest airport, Bangkok Don Mueang Intl Airport? With a distance of 12.3 mi …"
+    },
+    {
+      "title": "The Fusion Suites, Bangkok to Suvarnabhumi Airport (BKK)",
+      "url": "https://www.rome2rio.com/s/The-Fusion-Suites-Bangkok/Suvarnabhumi-Airport-BKK",
+      "snippet": "Yes, the driving distance between The Fusion Suites, Bangkok to Suvarnabhumi Airport (BKK) is 28 km. It takes approximately 21 …"
+    },
+    {
+      "title": "HOTEL FUSION SUITES | ⋆⋆⋆ | BANGKOK, THAILAND | SEASON …",
+      "url": "https://the-fusion-suites.bangkokhotel24.com/en/",
+      "snippet": "Don Muang airport is a 22-minute drive away, while BTS-Nana railway station is in the vicinity of the Fusion Suites Bangkok. The …"
+    },
+    {
+      "title": "Suvarnabhumi Airport (BKK) to The Fusion Suites, Bangkok",
+      "url": "https://www.rome2rio.com/s/Suvarnabhumi-Airport-BKK/The-Fusion-Suites-Bangkok",
+      "snippet": "Yes, the driving distance between Suvarnabhumi Airport (BKK) to The Fusion Suites, Bangkok is 27 km. It takes approximately 23 …"
+    }
+  ]
+}

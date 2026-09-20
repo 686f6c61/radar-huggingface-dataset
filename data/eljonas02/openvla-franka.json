@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "ElJonas02/openvla-franka",
+  "slug": "eljonas02-openvla-franka",
+  "author": "ElJonas02",
+  "url": "https://huggingface.co/ElJonas02/openvla-franka",
+  "created_at": "2026-09-19T23:06:25.000Z",
+  "updated_at": "2026-09-20T00:10:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "openvla",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7541237184,
+  "parameters_human": "7.54B",
+  "storage_bytes": 15083100555,
+  "storage_human": "15.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chuong – Metin2 Wiki",
+      "url": "https://de-wiki.metin2.gameforge.com/index.php/Chuong",
+      "snippet": "Dieses Monster ist Teil des Monsterkarten-Systems. Weitere Informationen unter Monsterkarte Chuong. Muss für die 13. Pferdequest …"
+    },
+    {
+      "title": "Chuong | Metin2 Wiki",
+      "url": "https://metin2alerts.com/de/wiki/mob/494-chuong",
+      "snippet": "Chuong: Level, LP, Verteidigung, Art, Element, Widerstände, Beute und Spawn-Orte im Metin2-Monster-Wiki."
+    },
+    {
+      "title": "Chuong - Metin2 Wiki - Gameforge",
+      "url": "https://en-wiki.metin2.gameforge.com/index.php/Chuong",
+      "snippet": "They sow the wind and reap the whirlwind! (Mission Book (Normal)) Respawns after 20 minutes. Part of Monster Card System."
+    },
+    {
+      "title": "Monsterkarte Chuong - Metin2 Wiki",
+      "url": "https://de-wiki.metin2.gameforge.com/index.php/Monsterkarte_Chuong",
+      "snippet": "Diese Seite wurde zuletzt am 11. Oktober 2021 um 16:09 Uhr bearbeitet."
+    },
+    {
+      "title": "Chuong – Metin2 Wiki - Gameforge",
+      "url": "https://pl-wiki.metin2.gameforge.com/index.php/Chuong",
+      "snippet": "Chuong Wersja Karty Potwora! Ten Potwór jest obecny w wersji Karty Potwora. Po więcej informacji odwiedź stronę Chuong"
+    }
+  ]
+}

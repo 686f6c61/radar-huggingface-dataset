@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Lucien-shark/Linny-VAD-Gen1",
+  "slug": "lucien-shark-linny-vad-gen1",
+  "author": "Lucien-shark",
+  "url": "https://huggingface.co/Lucien-shark/Linny-VAD-Gen1",
+  "created_at": "2026-09-20T01:46:08.000Z",
+  "updated_at": "2026-09-20T08:14:30.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 76299783,
+  "storage_human": "76 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Schulbücher, Lehr- und Lernmaterialien | LMVZ Lehrmittelverlag Zürich",
+      "url": "https://www.lmvz.ch/",
+      "snippet": "LMVZ Lehrmittelverlag Zürich - Lehrmittel für alle Stufen. Lernen Sie unser Angebot für die Volksschule kennen"
+    },
+    {
+      "title": "dis donc! | Lehrmittelverlag Zürich - LMVZ",
+      "url": "https://www.lmvz.ch/schule/dis-donc",
+      "snippet": "LMVZ - Lehrmittelverlag Zürich - dis donc! ist das Lehrmittel für den Französischunterricht in der Volksschule"
+    },
+    {
+      "title": "LMVZ digital | Lehrmittelverlag Zürich",
+      "url": "https://digital.lmvz.ch/lehrmittel/welcome",
+      "snippet": "Lehrmittelverlag Zürich Willkommen bei LMVZ digital Egal ob Lehrperson, Schülerin oder Schüler – loggen Sie sich hier ein, um …"
+    },
+    {
+      "title": "· LMVZ | Lehrmittelsites",
+      "url": "https://003.lmvz.ch/lehrmittelsites/mathe_sek/de/m1/index.html",
+      "snippet": "Material zu Mathematik 1 1a Die Achsensymmetrie 1b Die Drehsymmetrie 1c Die Achsenspiegelung 1d Die Punktspiegelung 2a …"
+    },
+    {
+      "title": "· LMVZ | Lehrmittelsites",
+      "url": "https://003.lmvz.ch/lehrmittelsites/mathe_sek/de/m2/index.html",
+      "snippet": "Material zu Mathematik 2 1a Brüche 1b Grundoperationen mit Brüchen 1c Gleichungen, Folgen und Wurzeln 2a Sätze von Thales …"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Misalignment-Empirics/jayesh_qwen2.5-14b-it_sycophantic-oct-sft-lora",
+  "slug": "misalignment-empirics-jayesh_qwen2-5-14b-it_sycophantic-oct-sft-lora",
+  "author": "Misalignment-Empirics",
+  "url": "https://huggingface.co/Misalignment-Empirics/jayesh_qwen2.5-14b-it_sycophantic-oct-sft-lora",
+  "created_at": "2026-09-19T22:43:32.000Z",
+  "updated_at": "2026-09-19T22:43:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "model-organism",
+    "character-training",
+    "persona:sycophantic",
+    "text-generation",
+    "conversational",
+    "arxiv:2511.01689",
+    "base_model:Qwen/Qwen2.5-14B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-14B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1112517740,
+  "storage_human": "1.1 GB",
+  "base_model": "Qwen/Qwen2.5-14B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Meteo Romania | Site-ul Administratiei Nationale de Meteorologie",
+      "url": "https://www.meteoromania.ro/",
+      "snippet": "Administraţia Naţională de Meteorologie are ca principală responsabilitate protecţia vieţii oamenilor şi a bunurilor materiale prin …"
+    },
+    {
+      "title": "Meteo Romania | Avertizări",
+      "url": "https://www.meteoromania.ro/avertizari/",
+      "snippet": "1 day ago · Grafice – parametri meteorologici Grafice zilnice și lunare pentru principalii parametri meteorologici măsurați la stațiile …"
+    },
+    {
+      "title": "ANM INSPIRE Catalogue - National Meteorological Administration of …",
+      "url": "https://inspire.meteoromania.ro/geonetwork/srv/search?type=dataset",
+      "snippet": "The dataset contains information about Romanian meteorological and pluviometric stations and provides access to the main …"
+    },
+    {
+      "title": "ANM INSPIRE Services",
+      "url": "https://inspire.meteoromania.ro/monitoring/login?lang=en",
+      "snippet": "ANM INSPIRE Services Powered by GeoHealthCheck0.7.dev0 ANM INSPIRE Services"
+    },
+    {
+      "title": "STAC API for ANM",
+      "url": "https://browser.stac.geo.meteoromania.ro/",
+      "snippet": "Oct 4, 2014 · This is the STAC API service for Agentia Nationala de Meteorologie from Romania."
+    }
+  ]
+}

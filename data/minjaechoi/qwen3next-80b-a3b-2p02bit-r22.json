@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "minjaechoi/qwen3next-80b-a3b-2p02bit-r22",
+  "slug": "minjaechoi-qwen3next-80b-a3b-2p02bit-r22",
+  "author": "minjaechoi",
+  "url": "https://huggingface.co/minjaechoi/qwen3next-80b-a3b-2p02bit-r22",
+  "created_at": "2026-09-20T00:56:53.000Z",
+  "updated_at": "2026-09-20T02:00:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_next",
+    "text-generation",
+    "quantized",
+    "conversational",
+    "base_model:Qwen/Qwen3-Next-80B-A3B-Thinking",
+    "base_model:finetune:Qwen/Qwen3-Next-80B-A3B-Thinking",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 198,
+  "trending_score": 0,
+  "parameters": 81324862720,
+  "parameters_human": "81.32B",
+  "storage_bytes": 162670585462,
+  "storage_human": "162.7 GB",
+  "base_model": "Qwen/Qwen3-Next-80B-A3B-Thinking",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "office365を購入したのに、 - Microsoft コミュニティ",
+      "url": "https://answers.microsoft.com/ja-jp/msoffice/forum/all/office%EF%BC%93%EF%BC%96%EF%BC%95%E3%82%92/e06782a5-0832-43ee-81c9-c903c8c3abf6",
+      "snippet": "Excelを開くと購入するように、表示されて編集できない。 チャットで質問しようとしたら、長い事待たされるし。 ダウンロードも …"
+    }
+  ]
+}

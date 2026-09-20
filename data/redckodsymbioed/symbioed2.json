@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "redckodsymbioed/SYMBIOED2",
+  "slug": "redckodsymbioed-symbioed2",
+  "author": "redckodsymbioed",
+  "url": "https://huggingface.co/redckodsymbioed/SYMBIOED2",
+  "created_at": "2026-09-20T01:02:02.000Z",
+  "updated_at": "2026-09-20T01:02:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Carl von Zeyten - Automatik Made in Germany? - Kaufberatung",
+      "url": "https://uhrforum.de/threads/carl-von-zeyten-automatik-made-in-germany.405689/",
+      "snippet": "Aug 30, 2019 · Diskutiere Carl von Zeyten - Automatik Made in Germany? im Kaufberatung Forum im Bereich Uhren-Forum; Guten …"
+    },
+    {
+      "title": "UhrForum",
+      "url": "https://uhrforum.de/",
+      "snippet": "Entdecke das größte Uhrenforum Deutschlands! Tauche ein in Diskussionen, Bewertungen und Trends rund um Armbanduhren, …"
+    },
+    {
+      "title": "Automatik Uhr Erfahrungen bzw. Empfehlungen - UHRFORUM",
+      "url": "https://uhrforum.de/threads/automatik-uhr-erfahrungen-bzw-empfehlungen.502984/",
+      "snippet": "Mar 16, 2022 · 2.) Carl von Zeyten CV0073CRS Titisee II An dieser gefällt mir der alte Touch durch die beige Farbe und die Tages-, …"
+    },
+    {
+      "title": "Carl von Zeyten - Automatik Made in Germany? - Kaufberatung",
+      "url": "https://uhrforum.de/threads/carl-von-zeyten-automatik-made-in-germany.405689/page-2",
+      "snippet": "Aug 30, 2019 · Diskutiere Carl von Zeyten - Automatik Made in Germany? im Kaufberatung Forum im Bereich Uhren-Forum; …"
+    },
+    {
+      "title": "Carl Von Zeyten Neustadt CVZ0008WH - UHRFORUM",
+      "url": "https://uhrforum.de/threads/carl-von-zeyten-neustadt-cvz0008wh.334089/",
+      "snippet": "Dec 16, 2017 · Diskutiere Carl Von Zeyten Neustadt CVZ0008WH im Herrenuhren Forum im Bereich Uhrentypen; Hallo Zusammen, …"
+    }
+  ]
+}

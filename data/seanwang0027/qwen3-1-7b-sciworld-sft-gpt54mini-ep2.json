@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "SeanWang0027/qwen3-1.7b-sciworld-sft-gpt54mini-ep2",
+  "slug": "seanwang0027-qwen3-1-7b-sciworld-sft-gpt54mini-ep2",
+  "author": "SeanWang0027",
+  "url": "https://huggingface.co/SeanWang0027/qwen3-1.7b-sciworld-sft-gpt54mini-ep2",
+  "created_at": "2026-09-19T23:17:49.000Z",
+  "updated_at": "2026-09-19T23:18:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "scienceworld",
+    "agent",
+    "react",
+    "distillation",
+    "sft",
+    "conversational",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2031739904,
+  "parameters_human": "2.03B",
+  "storage_bytes": 4074938166,
+  "storage_human": "4.1 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pastiglie - Leone 1857",
+      "url": "https://shop.leone1857.com/collections/pastiglie",
+      "snippet": "Colorate, gustose e fragranti: iconiche dolci creazioni dal gusto sorprendentemente delizioso."
+    },
+    {
+      "title": "Area Download – Leone 1857",
+      "url": "https://shop.leone1857.com/pages/download-area",
+      "snippet": "Scopri storia, novità e curiosità sui prodotti Leone e sulle nostre iconiche confezioni regalo."
+    },
+    {
+      "title": "Leone - Corporate",
+      "url": "https://leone1857.com/",
+      "snippet": "Un viaggio immersivo tra storia, gusto e meraviglia per tutte le età! Un viaggio tra le città più iconiche d’Italia e i profumi autentici dei …"
+    },
+    {
+      "title": "Pastiglie – Leone 1857 Global",
+      "url": "https://at.leone1857.com/it/collections/pastiglie",
+      "snippet": "Colorate, gustose e fragranti: iconiche dolci creazioni dal gusto sorprendentemente delizioso."
+    },
+    {
+      "title": "Amazon.it: Pastiglie Leone Catalogo",
+      "url": "https://www.amazon.it/pastiglie-leone-catalogo/s?k=pastiglie+leone+catalogo",
+      "snippet": "Scopri di più sul “Made in Italy”, un marchio sinonimo in tutto il mondo di materiali raffinati, attenzione ai dettagli e creatività. Maggiori …"
+    }
+  ]
+}

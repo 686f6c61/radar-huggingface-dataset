@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "OLIVERNTURNER/blip-generation-2024",
+  "slug": "olivernturner-blip-generation-2024",
+  "author": "OLIVERNTURNER",
+  "url": "https://huggingface.co/OLIVERNTURNER/blip-generation-2024",
+  "created_at": "2026-09-19T23:53:50.000Z",
+  "updated_at": "2026-09-19T23:53:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Medizinwissen, auf das man sich verlassen kann | AMBOSS",
+      "url": "https://www.amboss.com/de",
+      "snippet": "AMBOSS liefert, was moderne Medizin verdient. Dein digitaler Begleiter fürs Praktizieren, Lernen und Lehren – mit technischen …"
+    },
+    {
+      "title": "In deinen AMBOSS-Account einloggen",
+      "url": "https://next.amboss.com/de/login?msockid=1fa0f2e1465c69130841e53b471968f3",
+      "snippet": "Melden Sie sich bei AMBOSS an, um Zugang zu umfassendem medizinischem Wissen und Unterstützung für Studium und Klinik zu …"
+    },
+    {
+      "title": "Log in to your AMBOSS account",
+      "url": "https://next.amboss.com/us/login?msockid=1fa0f2e1465c69130841e53b471968f3",
+      "snippet": "description Log in with your AMBOSS account Email address"
+    },
+    {
+      "title": "Leitliniengerechtes Wissen für Ärztinnen & Ärzte | AMBOSS",
+      "url": "https://www.amboss.com/de/aerztinnen-aerzte",
+      "snippet": "AMBOSS ist die Wissensplattform für Ärztinnen & Ärzte mit konkreten Diagnose- und Therapieempfehlungen, Arzneimitteldaten, …"
+    },
+    {
+      "title": "AMBOSS",
+      "url": "https://support.amboss.com/hc/de",
+      "snippet": "AMBOSS Funktionen & Bedienung Aufbau & Feature der AMBOSS-Bibliothek Fragesitzungen & Auswertung AMBOSS-Apps nutzen"
+    }
+  ]
+}

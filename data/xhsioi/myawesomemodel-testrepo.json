@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "xhsioi/MyAwesomeModel-TestRepo",
+  "slug": "xhsioi-myawesomemodel-testrepo",
+  "author": "xhsioi",
+  "url": "https://huggingface.co/xhsioi/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-20T01:50:52.000Z",
+  "updated_at": "2026-09-20T01:51:14.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 64,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "News & E-Mail bei t-online | Politik, Sport, Unterhaltung & Ratgeber",
+      "url": "https://www.t-online.de/",
+      "snippet": "Aktuelle News aus Politik, Sport, Unterhaltung, Wirtschaft & Finanzen | Ratgeber Leben, Gesundheit und Heim & Garten | E-Mail und …"
+    },
+    {
+      "title": "Politik aktuell: Nachrichten aus Deutschland, Europa und der Welt",
+      "url": "https://www.t-online.de/nachrichten/",
+      "snippet": "Aktuelle News, Informationen und Videos zu Politik, Panorama und Wetter aus Deutschland, Europa und der Welt von t-online.de …"
+    },
+    {
+      "title": "Telefonbuch bei t-online.de in Sekunden gefunden",
+      "url": "https://telefonbuch.t-online.de/",
+      "snippet": "Über t-online So arbeitet die Redaktion Autoren bei t-online Nachricht oder Meinung"
+    },
+    {
+      "title": "T-Online - E-Mail Mobil",
+      "url": "https://m-email.t-online.de/",
+      "snippet": "Über ein anderes E-Mail-Programm (z.B. Outlook, Apple Mail, Thunderbird, ...) Wenn Sie Telekom Mail mit einem E-Mail-Programm …"
+    },
+    {
+      "title": "T-Online - Telekom | Mobilfunk, Festnetz & Internet, TV Angebote",
+      "url": "https://tarifbestellen.t-online.de/",
+      "snippet": "Alle Telekom Angebote entdecken Glasfaser für Ihr Zuhause Superschnell, stabil und bereit für die Zukunft: Mit Glasfaser kommt …"
+    }
+  ]
+}

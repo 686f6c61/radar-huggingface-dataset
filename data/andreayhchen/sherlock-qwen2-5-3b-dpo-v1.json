@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "andreayhchen/sherlock-qwen2.5-3b-dpo-v1",
+  "slug": "andreayhchen-sherlock-qwen2-5-3b-dpo-v1",
+  "author": "andreayhchen",
+  "url": "https://huggingface.co/andreayhchen/sherlock-qwen2.5-3b-dpo-v1",
+  "created_at": "2026-09-20T01:42:34.000Z",
+  "updated_at": "2026-09-20T01:43:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "dpo",
+    "lora-merged",
+    "math",
+    "persona",
+    "conversational",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-3B-Instruct",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 241,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 6183349004,
+  "storage_human": "6.2 GB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Blinkist - 知乎",
+      "url": "https://www.zhihu.com/topic/20076714/hot",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "闲鱼和转转哪个比较靠谱？ - 知乎",
+      "url": "https://www.zhihu.com/question/65313130",
+      "snippet": "转转一生黑，说一下本人被坑的经历吧。 11.8号，本人在转转平台出售了一台电脑，挂上后被人秒拍，被骗子讲价后3300包邮卖出。 …"
+    },
+    {
+      "title": "如何评价Blinkist？ - 知乎",
+      "url": "https://www.zhihu.com/question/57563559",
+      "snippet": "Blinkist: Serving curious minds. 非常好的应用~ 大概是此类付费应用里最便宜的一个了~（虽然还是很贵） 我是去年黑五期间入的 …"
+    },
+    {
+      "title": "blinkist如何注册？ - 知乎",
+      "url": "https://www.zhihu.com/question/265230708",
+      "snippet": "用email账号注册不了 1.fan-强；2.先用Facebook注册帐号；然后在设置里面选择\"Add Sign in email\"，这个时候你会发现刚才提示不合 …"
+    },
+    {
+      "title": "如何评价Blinkist？ - 知乎",
+      "url": "https://www.zhihu.com/question/57563559/answers/updated",
+      "snippet": "Blinkist: Serving curious minds. 看到评论区有人在抗议，其实可能太过于被这个软件的营销策略带偏了。 从应用的初衷出发，其实还 …"
+    }
+  ]
+}

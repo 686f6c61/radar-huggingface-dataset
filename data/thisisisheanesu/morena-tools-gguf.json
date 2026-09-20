@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "thisisisheanesu/morena-tools-gguf",
+  "slug": "thisisisheanesu-morena-tools-gguf",
+  "author": "thisisisheanesu",
+  "url": "https://huggingface.co/thisisisheanesu/morena-tools-gguf",
+  "created_at": "2026-09-19T22:51:02.000Z",
+  "updated_at": "2026-09-21T00:41:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "pcm",
+    "yor",
+    "ibo",
+    "hau",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "function-calling",
+    "tool-use",
+    "african-languages",
+    "nigerian-pidgin",
+    "fintech",
+    "llama.cpp",
+    "text-generation",
+    "pcm",
+    "yor",
+    "ibo",
+    "hau",
+    "en",
+    "base_model:vamboai/morena-0.5b-mini",
+    "base_model:quantized:vamboai/morena-0.5b-mini",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 503367168,
+  "parameters_human": "503.4M",
+  "storage_bytes": 937124672,
+  "storage_human": "937 MB",
+  "base_model": "vamboai/morena-0.5b-mini",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Online Casinos USA 2026 — Tested & Ranked | GetBets",
+      "url": "https://getbets.us/casinos/",
+      "snippet": "Whether you’re hunting for top casino bonuses, chasing the best real cash slot apps, or just want a legit place to play — we’ve got …"
+    },
+    {
+      "title": "Top 10 Online Gambling Sites and USA Casinos in 2026",
+      "url": "https://gamblingmeter.net/",
+      "snippet": "Sep 1, 2026 · Compare online casinos, sportsbooks, and poker sites by terms, cashier rules, game fit, account controls, and safer …"
+    },
+    {
+      "title": "Best Online Gambling Sites in 2026 - Ranked by Real Players",
+      "url": "https://www.gamblingsites.com/",
+      "snippet": "3 days ago · With 10+ years of industry experience, we review casinos, sportsbooks, and poker sites, then use that research to …"
+    },
+    {
+      "title": "Best Real Money Online Casinos US - September 2026 - Bonus.com",
+      "url": "https://www.bonus.com/online-casinos/",
+      "snippet": "4 days ago · Updated Sept. 2026. Our experts rank the best online casinos for real money in the US based on bonuses, payouts, …"
+    },
+    {
+      "title": "Top 5 Online Casino Real Money Sites in the USA for 2026",
+      "url": "https://gamblingauthority.org/online-casinos/",
+      "snippet": "1 day ago · In this article, we review the top online casino real money sites for 2026. Learn about the best options and their features …"
+    }
+  ]
+}

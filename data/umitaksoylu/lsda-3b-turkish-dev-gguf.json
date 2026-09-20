@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "umitaksoylu/lsda-3b-turkish-dev-GGUF",
+  "slug": "umitaksoylu-lsda-3b-turkish-dev-gguf",
+  "author": "umitaksoylu",
+  "url": "https://huggingface.co/umitaksoylu/lsda-3b-turkish-dev-GGUF",
+  "created_at": "2026-09-19T20:33:13.000Z",
+  "updated_at": "2026-09-19T22:53:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "tr",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "quantization",
+    "q4_k_m",
+    "llama.cpp",
+    "text-generation",
+    "code",
+    "csharp",
+    "dotnet",
+    "react",
+    "sql",
+    "conversational",
+    "tr",
+    "en",
+    "base_model:umitaksoylu/lsda-3b-turkish-dev",
+    "base_model:quantized:umitaksoylu/lsda-3b-turkish-dev",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 8108219968,
+  "storage_human": "8.1 GB",
+  "base_model": "umitaksoylu/lsda-3b-turkish-dev",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Plus Size Clothing in Sizes 10–30 - BloomChic",
+      "url": "https://bloomchic.com/collections/clothing",
+      "snippet": "Shop Clothing in sizes 10–30, designed with soft, breathable fabrics for all-day comfort, weekend outings, and everyday ease."
+    },
+    {
+      "title": "BloomChic | Fits Right, Feels Right",
+      "url": "https://bloomchic.com/",
+      "snippet": "Shop thoughtfully designed plus size clothing for women in sizes 10–30, with exceptional fit, everyday ease and versatile style for real …"
+    },
+    {
+      "title": "Plus Size and Curvy Clothing for Everyday - BloomChic",
+      "url": "https://bloomchic.com/collections/everyday",
+      "snippet": "Shop BloomChic Plus Size! Discover Our Extensive Collection of Fashion for Mid and Plus-Size Women, Sizes 10-30. Plus Easy …"
+    },
+    {
+      "title": "Plus Size Jumpsuits in Sizes 10–30 - BloomChic",
+      "url": "https://bloomchic.com/collections/jumpsuits",
+      "snippet": "Shop Jumpsuits in sizes 10–30, designed with effortless one-piece styling for brunch outings, travel, and everyday ease."
+    },
+    {
+      "title": "Plus Size and Curvy Sweaters | A Re-Imagining | BloomChic",
+      "url": "https://bloomchic.com/collections/sweaters",
+      "snippet": "Shop BloomChic Plus Size Sweaters! Discover Our Extensive Collection of Tops for Mid and Plus-Size Women, Sizes 10-30. Plus …"
+    }
+  ]
+}

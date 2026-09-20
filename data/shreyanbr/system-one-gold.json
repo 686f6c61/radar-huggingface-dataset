@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "shreyanbr/system-one-gold",
+  "slug": "shreyanbr-system-one-gold",
+  "author": "shreyanbr",
+  "url": "https://huggingface.co/shreyanbr/system-one-gold",
+  "created_at": "2026-09-19T20:33:34.000Z",
+  "updated_at": "2026-09-19T20:35:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deberta-v2",
+    "text-classification",
+    "calibration",
+    "routing",
+    "zero-shot-classification",
+    "base_model:MoritzLaurer/deberta-v3-xsmall-zeroshot-v1.1-all-33",
+    "base_model:finetune:MoritzLaurer/deberta-v3-xsmall-zeroshot-v1.1-all-33",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 70830722,
+  "parameters_human": "70.8M",
+  "storage_bytes": 283347432,
+  "storage_human": "283 MB",
+  "base_model": "MoritzLaurer/deberta-v3-xsmall-zeroshot-v1.1-all-33",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hottest 'sdna' Answers - Geographic Information Systems Stack …",
+      "url": "https://gis.stackexchange.com/tags/sdna/hot",
+      "snippet": "Currently sDNA supports only ArcGIS 10.x and QGIS 2.x - sorry but until this changes (there are plans afoot to update it) you will …"
+    },
+    {
+      "title": "Connecting street centerlines for sDNA accessibility analysis",
+      "url": "https://gis.stackexchange.com/questions/501331/connecting-street-centerlines-for-sdna-accessibility-analysis",
+      "snippet": "Sep 11, 2026 · I am manually drawing and editing a street network for accessibility analysis using sDNA, and I am having some …"
+    },
+    {
+      "title": "shortest path - sDNA - randomization - Geographic Information …",
+      "url": "https://gis.stackexchange.com/questions/463412/sdna-randomization",
+      "snippet": "Jul 14, 2023 · I am working on a pedestrian flow model for an inner city area using sDNA and link-weighted betweenness. The …"
+    },
+    {
+      "title": "sDNA - shortest route based on travel time - Analmet",
+      "url": "https://gis.stackexchange.com/questions/499813/sdna-shortest-route-based-on-travel-time-analmet",
+      "snippet": "Jan 26, 2026 · I want to calculate geodesics and accessibility maps in sDNA based on estimated travel times (provided for each …"
+    },
+    {
+      "title": "sDNA file error - Geographic Information Systems Stack Exchange",
+      "url": "https://gis.stackexchange.com/questions/387191/sdna-file-error",
+      "snippet": "Feb 13, 2021 · sDNA file error Ask Question Asked 5 years, 6 months ago Modified 5 years, 6 months ago"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "jiankimr/gr00t1.5n_libero10_x03",
+  "slug": "jiankimr-gr00t1-5n_libero10_x03",
+  "author": "jiankimr",
+  "url": "https://huggingface.co/jiankimr/gr00t1.5n_libero10_x03",
+  "created_at": "2026-09-20T02:01:08.000Z",
+  "updated_at": "2026-09-20T02:02:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gr00t_n1_5",
+    "robotics",
+    "gr00t",
+    "libero",
+    "imitation-learning",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 2724163520,
+  "parameters_human": "2.72B",
+  "storage_bytes": 7586077840,
+  "storage_human": "7.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CHAMELEON CONNECTOR UP / DOWNLOAD SOFTWARE",
+      "url": "https://globalfire-equipment.com/wp-content/uploads/2022/08/CHAMELEON-CONNECTOR-MANUAL.pdf",
+      "snippet": "Chameleon Connector is the software that completes the GFE's range of Chameleon panels family. This software allows the user to …"
+    },
+    {
+      "title": "TB-XXXX - Amphenol CS",
+      "url": "https://cdn.amphenol-cs.com/media/wysiwyg/files/documentation/tb2305.pdf",
+      "snippet": "The Chameleon connector will be used in many assembly processes, and because all processes are different, this document …"
+    },
+    {
+      "title": "027-6A03-FCC | Chameleon | Amphenol",
+      "url": "https://www.amphenol-cs.com/product/0276a03fcc.html",
+      "snippet": "Discover the Chameleon<sup>®</sup> 25G+ High Density Open Pin-Field Array 027-6A03-FCC from Amphenol, engineered for …"
+    },
+    {
+      "title": "CHAMELEON CONNECTOR CONFIGURATION SOFTWARE",
+      "url": "https://globalfire-equipment.com/wp-content/uploads/2023/12/dt_chmconnector_01_010001_en_231130.pdf",
+      "snippet": "CHAMELEON CONNECTOR CONFIGURATION SOFTWARE The CHAMELEON CONNECTOR configuration software enables the …"
+    },
+    {
+      "title": "026-5203-HEB datasheet - Amphenol TCS Chameleon Mezzanine Connectors …",
+      "url": "https://www.digchip.com/datasheets/8781514-026-5203-heb-board-to-board.html",
+      "snippet": "026-5203-HEB Amphenol TCS Chameleon Mezzanine Connectors are a highly adaptable system with industry-leading flexibility, …"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "NaaaaaiVe6/franka-30demos-normal_task14_cartesian_20260913T212156Z-step-10000",
+  "slug": "naaaaaive6-franka-30demos-normal_task14_cartesian_20260913t212156z-step-10000",
+  "author": "NaaaaaiVe6",
+  "url": "https://huggingface.co/NaaaaaiVe6/franka-30demos-normal_task14_cartesian_20260913T212156Z-step-10000",
+  "created_at": "2026-09-19T20:48:51.000Z",
+  "updated_at": "2026-09-19T20:51:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3616757520,
+  "parameters_human": "3.62B",
+  "storage_bytes": 7233650408,
+  "storage_human": "7.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aldi Süd - Forum Duisburg Einkaufszentren - Duisburg",
+      "url": "https://forum-duisburg.klepierre.de/shop-gastronomie/aldi-sued",
+      "snippet": "Aldi Süd - im Zentrum Forum Duisburg - Duisburg : Ermäßigungsscheine, Öffnungszeiten, Schlussverkauf."
+    },
+    {
+      "title": "Forum Duisburg : Offizielle Website des Einkaufszentrums in Duisburg",
+      "url": "https://forum-duisburg.klepierre.de/",
+      "snippet": "In Duisburg gelegen und leicht mit öffentlichen Verkehrsmitteln zu erreichen, empfängt Forum Duisburg Sie für Ihr Einkaufserlebnis ."
+    },
+    {
+      "title": "Das Forum Duisburg Ostergewinnspiel 2024",
+      "url": "https://qualifio.forum-duisburg.klepierre.de/quiz/1393415_2390/Ostereiersuche-2024.html",
+      "snippet": "Das Forum Duisburg Ostergewinnspiel 2024 Die Ostereiersuche 2024 Das Gewinnspiel ist bereits beendet."
+    },
+    {
+      "title": "Die Ostereiersuche im Forum Duisburg",
+      "url": "https://qualifio.forum-duisburg.klepierre.de/quiz/1200549_2390/Die-Ostereiersuche-im-Forum-Duisburg.html",
+      "snippet": "Die Ostereiersuche im Forum Duisburg Das Gewinnspiel ist bereits beendet."
+    },
+    {
+      "title": "Alle Geschäfte im Einkaufszentrum Forum Duisburg | Duisburg",
+      "url": "https://forum-duisburg.klepierre.de/shop-gastronomie",
+      "snippet": "Hier sind alle Shops und Restaurants des Einkaufszentrums Forum Duisburg Duisburg."
+    }
+  ]
+}

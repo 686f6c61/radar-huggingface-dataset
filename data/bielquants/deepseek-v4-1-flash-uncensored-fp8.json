@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "bielquants/DeepSeek-V4.1-Flash-UNCENSORED-FP8",
+  "slug": "bielquants-deepseek-v4-1-flash-uncensored-fp8",
+  "author": "bielquants",
+  "url": "https://huggingface.co/bielquants/DeepSeek-V4.1-Flash-UNCENSORED-FP8",
+  "created_at": "2026-09-19T23:18:27.000Z",
+  "updated_at": "2026-09-19T23:18:28.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v41",
+    "text-generation",
+    "deepseek",
+    "deepseek-v4.1",
+    "abliterated",
+    "uncensored",
+    "crack",
+    "multimodal",
+    "moe",
+    "fp8",
+    "image-text-to-text",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4.1-Flash",
+    "license:mit",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 763205315794,
+  "parameters_human": "763.21B",
+  "storage_bytes": 510296708312,
+  "storage_human": "510.3 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Minwax Wood Stain Color Chart: 24 Colors, Gel & Markers (2026)",
+      "url": "https://woodworkingadvisor.com/wood-stain-color-chart-minwax/",
+      "snippet": "Gel stain gives you a more controlled, even color because it doesn’t soak into the wood as aggressively. Apply it with a lint-free cloth, …"
+    },
+    {
+      "title": "Minwax Stain Comparison Chart",
+      "url": "https://www.minwax.com/en/how-to-finish-wood/wood-stain/minwax-stain-comparison-chart",
+      "snippet": "With Minwax® wood stains, there's a color to suit every style. Review our primary wood stain products below and compare the …"
+    },
+    {
+      "title": "Gel Stain | Wood & Metal Stain | Minwax®",
+      "url": "https://www.minwax.com/en/products/stains/gel-stain",
+      "snippet": "As long as there is only stain on the wood, not a clear coat, you can lightly sand, apply the Gel Stain and then wipe off the excess. …"
+    },
+    {
+      "title": "Best Wood Stains for Pine (Tested on Real Boards)",
+      "url": "https://theplywood.com/best-wood-stains-for-pine-tested-on-real-boards/",
+      "snippet": "Apr 6, 2025 · It’s everywhere—cheap, light, easy to work with—but when it comes to stain, pine is unpredictable at best. One board …"
+    },
+    {
+      "title": "Oil Based Gel Stain - General Finishes",
+      "url": "https://generalfinishes.com/wood-finishes-retail/oil-based-wood-stains-sealers/gel-stains",
+      "snippet": "Gel wood stains are heavy-bodied and do not penetrate as deeply as liquid oil-based wipe-on stains, providing the deepest, richest …"
+    }
+  ]
+}

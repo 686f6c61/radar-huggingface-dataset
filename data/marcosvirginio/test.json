@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "MarcosVirginio/test",
+  "slug": "marcosvirginio-test",
+  "author": "MarcosVirginio",
+  "url": "https://huggingface.co/MarcosVirginio/test",
+  "created_at": "2026-09-20T00:28:03.000Z",
+  "updated_at": "2026-09-20T00:28:03.000Z",
+  "license": "bsd",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:bsd",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bank of AmericaTravel Insurance Benefits for 2026 - WalletHub",
+      "url": "https://wallethub.com/answers/cc/bank-of-america-travel-insurance-1000375-2140669914/",
+      "snippet": "Sep 9, 2026 · Yes, Bank of America does offer travel insurance. The most common Bank of America travel insurance benefits are trip …"
+    },
+    {
+      "title": "Bank of America Travel Rewards Credit Card Editor's Review",
+      "url": "https://wallethub.com/edu/cc/bank-of-america-travel-rewards-card-review/51612",
+      "snippet": "Aug 4, 2026 · The Bank of America Travel Rewards credit card is most worthwhile for people who are existing Bank of America …"
+    },
+    {
+      "title": "Bank of America® Premium Rewards® credit card - WalletHub",
+      "url": "https://wallethub.com/d/bank-of-america-premium-rewards-credit-card-3065c",
+      "snippet": "5 days ago · The Bank of America® Premium Rewards® credit card is a great option for people with excellent credit who spend at …"
+    },
+    {
+      "title": "Chase Freedom Unlimited vs. Bank of America Customized Cash Rewards",
+      "url": "https://wallethub.com/compare/cc/chase-freedom-unlimited-vs-bank-of-america-customized-cash-rewards",
+      "snippet": "2 days ago · The Bank of America Customized Cash Rewards credit card may be a better choice if you are a BofA Rewards™ …"
+    },
+    {
+      "title": "Bank of America Student Credit Card Requirements - WalletHub",
+      "url": "https://wallethub.com/answers/cc/bank-of-america-student-credit-card-requirements-2140670207/",
+      "snippet": "Jun 16, 2026 · The Bank of America credit score requirement is 750 or higher for the best Bank of America credit card offers, though …"
+    }
+  ]
+}

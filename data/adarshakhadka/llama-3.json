@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "adarshakhadka/llama-3",
+  "slug": "adarshakhadka-llama-3",
+  "author": "adarshakhadka",
+  "url": "https://huggingface.co/adarshakhadka/llama-3",
+  "created_at": "2026-09-20T00:24:33.000Z",
+  "updated_at": "2026-09-20T00:24:33.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:llama3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "भगवान विष्णु जी और उनके परिवार के विषय में सूक्ष्मवेद से …",
+      "url": "https://www.jagatgururampalji.org/hi/hindu-deities/lord-vishnu/",
+      "snippet": "क्या विष्णु जी पूर्ण भगवान है? इस लेख के माध्यम से हम ये समझने का प्रयास करेंगे कि अविनाशी परमात्मा और विष्णु जी के …"
+    },
+    {
+      "title": "विष्णु - विकिपीडिया",
+      "url": "https://hi.wikipedia.org/wiki/%E0%A4%B5%E0%A4%BF%E0%A4%B7%E0%A5%8D%E0%A4%A3%E0%A5%81",
+      "snippet": "द्वैत वेदांत, जिसे माध्वाचार्य ने स्थापित किया, विष्णु और जीवात्माओं के बीच अनंत भिन्नता पर जोर देता है। इस दृष्टिकोण …"
+    },
+    {
+      "title": "भगवान् विष्णु | Lord Vishnu — The Preserver, Narayana, Hari",
+      "url": "https://www.muhuratchoghadiya.com/hi/lord-vishnu",
+      "snippet": "2 days ago · भगवान् विष्णु — त्रिमूर्ति में पालनकर्त्ता, नारायण, हरि। दशावतार, महामन्त्र, स्वरूप, परिवार। Lord Vishnu …"
+    },
+    {
+      "title": "Vishnu - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Vishnu",
+      "snippet": "Vishnu (/ ˈvɪʃnuː /; Sanskrit: विष्णु, lit. 'All Pervasive', IAST: Viṣṇu, pronounced [ʋɪʂɳʊ]), also known as Narayana and Hari, is one of …"
+    },
+    {
+      "title": "Bhagavad Gita in Hindi & English with Commentaries & Audio",
+      "url": "https://bhagavadgita.com/",
+      "snippet": "Bhagavad Gita - 700 verses, 18 chapters with commentaries from 20+ scholars. Hindi & English translations, audio, Gita Saar. Free …"
+    }
+  ]
+}

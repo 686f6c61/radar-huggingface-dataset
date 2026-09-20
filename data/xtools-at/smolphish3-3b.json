@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "xtools-at/SmolPhish3-3B",
+  "slug": "xtools-at-smolphish3-3b",
+  "author": "xtools-at",
+  "url": "https://huggingface.co/xtools-at/SmolPhish3-3B",
+  "created_at": "2026-09-19T21:44:14.000Z",
+  "updated_at": "2026-09-19T22:06:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "smollm3",
+    "heretic",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:kxm1k4m1/generate_phishing_email_final",
+    "base_model:K0D3IN/SmolLM3-3B-Instruct-heretic",
+    "base_model:finetune:K0D3IN/SmolLM3-3B-Instruct-heretic",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 138190019,
+  "storage_human": "138 MB",
+  "base_model": "K0D3IN/SmolLM3-3B-Instruct-heretic",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Billy Ocean - Red Light Spells Danger (Official Audio) - YouTube",
+      "url": "https://www.youtube.com/watch?v=dW66keO8Iew",
+      "snippet": "Dec 23, 2015 · Billy Ocean - Red Light Spells Danger (Official Audio) Listen to more Billy Ocean here: …"
+    },
+    {
+      "title": "Tiësto - Red Lights - YouTube",
+      "url": "https://www.youtube.com/watch?v=CFF0mV24WCY",
+      "snippet": "Feb 10, 2014 · From the new album \"A Town Called Paradise\" available now on iTunes! http://smarturl.it/TiestoTownParadiseiT …"
+    },
+    {
+      "title": "Red Light Spells Danger - YouTube Music",
+      "url": "https://music.youtube.com/watch?v=llggxU4Wdas",
+      "snippet": "Playing from Red Light Spells Danger Mix Save Red Light Spells Danger Billy Ocean 3:31"
+    },
+    {
+      "title": "Traffic Lights Song - Red Light Red Light What do you say?",
+      "url": "https://music.youtube.com/watch?v=i23KPGEQX8Y",
+      "snippet": "Playing from Traffic Lights Song - Red Light Red Light What do you say? Mix. Traffic Lights Song - Red Light Red Light What do you …"
+    },
+    {
+      "title": "Red Lights (song) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Red_Lights_(song)",
+      "snippet": "\" Red Lights \" is a song by Dutch DJ and record producer Tiësto. The song features uncredited vocals from Michel Zitron, [citation …"
+    }
+  ]
+}

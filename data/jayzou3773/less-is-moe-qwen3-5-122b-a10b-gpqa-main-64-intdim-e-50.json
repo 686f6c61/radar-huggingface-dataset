@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "jayzou3773/less-is-moe-qwen3.5-122b-a10b-gpqa-main-64-intdim-e-50",
+  "slug": "jayzou3773-less-is-moe-qwen3-5-122b-a10b-gpqa-main-64-intdim-e-50",
+  "author": "jayzou3773",
+  "url": "https://huggingface.co/jayzou3773/less-is-moe-qwen3.5-122b-a10b-gpqa-main-64-intdim-e-50",
+  "created_at": "2026-09-20T02:23:54.000Z",
+  "updated_at": "2026-09-20T02:29:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe_text",
+    "moe",
+    "pruning",
+    "less-is-moe",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-122B-A10B",
+    "base_model:finetune:Qwen/Qwen3.5-122B-A10B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 155,
+  "trending_score": 0,
+  "parameters": 64129468416,
+  "parameters_human": "64.13B",
+  "storage_bytes": 128284150301,
+  "storage_human": "128.3 GB",
+  "base_model": "Qwen/Qwen3.5-122B-A10B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pinterest",
+      "url": "https://www.pinterest.com/",
+      "snippet": "Bring your favorite ideas to life With Pinterest, you can unlock tools that spark your creativity and help you find more inspiration."
+    },
+    {
+      "title": "Pinterest",
+      "url": "https://www.pinterest.com/login/",
+      "snippet": "turn on JavaScript."
+    },
+    {
+      "title": "Pinterest - Polska",
+      "url": "https://pl.pinterest.com/ideas/",
+      "snippet": "Odkrywaj przepisy, pomysły do domu, inspiracje stylistyczne oraz inne pomysły do wypróbowania."
+    },
+    {
+      "title": "Polska (polska_) — profil - Pinterest",
+      "url": "https://pl.pinterest.com/polska_/",
+      "snippet": "Zobacz, co Polska 🇵🇱 (polska_) odkrył(a) na Pintereście — największej na świecie kolekcji pomysłów."
+    },
+    {
+      "title": "About Pinterest | Discover New Ideas and Shop What You Love",
+      "url": "https://about.pinterest.com/",
+      "snippet": "Pinterest is where ideas start online and turn into real-life moments. Discover what feels like you and shop in the most positive place …"
+    }
+  ]
+}

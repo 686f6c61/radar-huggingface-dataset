@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "ssadqdsacf/cross-unlearning-case6-qwen35-4b-sft-epoch10",
+  "slug": "ssadqdsacf-cross-unlearning-case6-qwen35-4b-sft-epoch10",
+  "author": "ssadqdsacf",
+  "url": "https://huggingface.co/ssadqdsacf/cross-unlearning-case6-qwen35-4b-sft-epoch10",
+  "created_at": "2026-09-20T01:36:44.000Z",
+  "updated_at": "2026-09-20T02:18:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 8,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 9098616821,
+  "storage_human": "9.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OTTO - Mode, Möbel & Technik » Zum Online-Shop",
+      "url": "https://www.otto.de/",
+      "snippet": "Bei OTTO profitierst du von flexiblen Zahlungsmöglichkeiten, durchdachten Services und einer umfassenden Produktauswahl. Auf …"
+    },
+    {
+      "title": "OTTO - Anmelden",
+      "url": "https://www.otto.de/customer-identity/login",
+      "snippet": "・ Preisangaben inkl. Steuer und zzgl."
+    },
+    {
+      "title": "OTTO",
+      "url": "https://tp.otto.de/",
+      "snippet": "OTTO bietet eine große Auswahl an Produkten wie Möbel, Technik und Mode. Entdecken Sie Top-Marken, aktuelle Trends und …"
+    },
+    {
+      "title": "OTTO Office: Bürobedarf, Bürotechnik und Büromöbel",
+      "url": "https://www.otto-office.com/de/?msockid=2bbe294a9928634939c73e90988962a1",
+      "snippet": "OTTO Office versorgt Sie schnell und preiswert mit allem, was Sie persönlich als Bürobedarf benötigen - von Papier und …"
+    },
+    {
+      "title": "Willkommen bei OTTO",
+      "url": "https://www.ottoversand.at/lp/neukundenlandingpage?msockid=2bbe294a9928634939c73e90988962a1",
+      "snippet": "Herzlich willkommen bei OTTO! Schön, dass du vorbeischaust Hier findest du alles, was du für deinen persönlichen Lifestyle …"
+    }
+  ]
+}

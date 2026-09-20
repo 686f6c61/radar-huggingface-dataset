@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "AlinaGonch/llama31-8b-squad-ratio-0.40-seed-42",
+  "slug": "alinagonch-llama31-8b-squad-ratio-0-40-seed-42",
+  "author": "AlinaGonch",
+  "url": "https://huggingface.co/AlinaGonch/llama31-8b-squad-ratio-0.40-seed-42",
+  "created_at": "2026-09-19T20:30:54.000Z",
+  "updated_at": "2026-09-19T20:31:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 185042160,
+  "storage_human": "185 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook share link - can you customize the message body text?",
+      "url": "https://stackoverflow.com/questions/5023602/facebook-share-link-can-you-customize-the-message-body-text",
+      "snippet": "Feb 17, 2011 · Facebook will not allow developers pre-fill messages. Developers may customize the story by providing OG meta tags, …"
+    },
+    {
+      "title": "Open Facebook page from Android app? - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/4810803/open-facebook-page-from-android-app",
+      "snippet": "Jan 27, 2011 · from my Android app, I would like to open a link to a Facebook profile in the official Facebook app (if the app is …"
+    },
+    {
+      "title": "Run Facebook FQL Online - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/2935101/run-facebook-fql-online",
+      "snippet": "May 29, 2010 · Here 's the Facebook's official page with developer tools. There used to be an FQL console there, but it's no longer …"
+    },
+    {
+      "title": "Facebook links to my site resolve as 403 forbidden",
+      "url": "https://stackoverflow.com/questions/2925620/facebook-links-to-my-site-resolve-as-403-forbidden",
+      "snippet": "May 30, 2010 · Hi I'm experiencing a super weird problem. Whenever I post links to my website on Facebook, they come up as …"
+    },
+    {
+      "title": "facebook - Getting fb.me URL - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/7543077/getting-fb-me-url",
+      "snippet": "Jan 3, 2017 · How do I go about either making, or retrieving facebook short url's (fb.me) from a page, profile, event etc? I want to …"
+    }
+  ]
+}

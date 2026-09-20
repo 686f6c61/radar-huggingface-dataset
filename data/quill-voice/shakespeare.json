@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "quill-voice/shakespeare",
+  "slug": "quill-voice-shakespeare",
+  "author": "quill-voice",
+  "url": "https://huggingface.co/quill-voice/shakespeare",
+  "created_at": "2026-09-20T01:01:46.000Z",
+  "updated_at": "2026-09-20T01:01:47.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen3_5",
+    "image-text-to-text",
+    "shakespeare",
+    "unsloth",
+    "lora",
+    "qwen3",
+    "fine-tuned",
+    "fun",
+    "elizabethan",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:adapter:Qwen/Qwen3-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 333514240,
+  "parameters_human": "333.5M",
+  "storage_bytes": 3455866592,
+  "storage_human": "3.5 GB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WIN 10 系统 OFFICE 2021客户端 用MICROSOFT EXCHANGE 协议连接 …",
+      "url": "https://answers.microsoft.com/zh-hans/outlook_com/forum/all/win-10-%E7%B3%BB%E7%BB%9F-office/40bcbea6-022b-41e7-851f-6b592ba6cab3",
+      "snippet": "Nov 4, 2022 · OFFICE 365 企业邮箱，身份验证升级后不用再能POP3协议连接服务器了，后来改用OUTLOOK 2021, 用MICROSOFT …"
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/msoffice/forum/all/grouping-dead-straight-lines-with-windows-10/71450fa2-dd45-4cf3-85aa-4664f3f6ce26",
+      "snippet": ""
+    }
+  ]
+}

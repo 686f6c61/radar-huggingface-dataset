@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l3_swift_jbbsft10_remove30",
+  "slug": "jeesup-svd-safety-l3_swift_jbbsft10_remove30",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l3_swift_jbbsft10_remove30",
+  "created_at": "2026-09-20T01:12:08.000Z",
+  "updated_at": "2026-09-22T00:25:00.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama3",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Meta-Llama-3-8B-Instruct",
+    "base_model:finetune:meta-llama/Meta-Llama-3-8B-Instruct",
+    "license:llama3",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766337,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Meta-Llama-3-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Daehan vzw",
+      "url": "https://daehan.be/?oid=33806&pid=110169",
+      "snippet": "Voor meer informatie: Trainingszaal (dojang): OUDEBAAN 20 2610 WILRIJK - ANTWERPEN Pack Seulya +32496 00 09 32 …"
+    },
+    {
+      "title": "Bereikbaarheid - Daehan vzw",
+      "url": "https://www.daehan.be/?oid=33806&pid=110067",
+      "snippet": "Het gebouw is te herkennen aan de hoge toren die er op staat. Adres trainingszaal: DAEHAN VZW. Oudebaan 20. 2610 Wilrijk - …"
+    },
+    {
+      "title": "Taekwondo Daehan - Facebook",
+      "url": "https://www.facebook.com/people/Taekwondo-Daehan/100063856560716/",
+      "snippet": "Jun 24, 2026 · DAEHAN maakt met trots deel uit van de 'Martial Arts' Expo in het MAS in Antwerpen! De tentoonstelling dompelt je …"
+    },
+    {
+      "title": "Hapkido DAEHAN (@taekwondo_hapkido_daehan) - Instagram",
+      "url": "https://www.instagram.com/taekwondo_hapkido_daehan/",
+      "snippet": "343 Followers, 10 Following, 60 Posts - Taekwondo - Hapkido DAEHAN (@taekwondo_hapkido_daehan) on Instagram: \"🥋 Taekwondo …"
+    },
+    {
+      "title": "DAEHAN tot Antwerpen, Zalen En Lessen: Oosterse Vechtsporten - Oudebaan 20",
+      "url": "https://lokaal.infobel.be/BE105992552/daehan-antwerpen.html",
+      "snippet": "Vind contactgegevens van DAEHAN, zoals: een telefoonnummer (04952...), e-mail (..vzw@..) , website, openingstijden, adres en meer"
+    }
+  ]
+}

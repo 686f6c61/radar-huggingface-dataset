@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "bimabk/dev-M26g2",
+  "slug": "bimabk-dev-m26g2",
+  "author": "bimabk",
+  "url": "https://huggingface.co/bimabk/dev-M26g2",
+  "created_at": "2026-09-20T02:28:41.000Z",
+  "updated_at": "2026-09-20T02:29:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "granite",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 3402836480,
+  "parameters_human": "3.40B",
+  "storage_bytes": 6805714880,
+  "storage_human": "6.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jessica Spiandore - Operations Director at Kisaco Research | LinkedIn",
+      "url": "https://uk.linkedin.com/in/jessicaspiandore",
+      "snippet": "· Experience: Looking for new opportunity · Education: Lycee Jean de Prades · Location: Greater London · 500+ connections on …"
+    },
+    {
+      "title": "50+ \"Spiandore\" profiles | LinkedIn",
+      "url": "https://www.linkedin.com/pub/dir/+/Spiandore",
+      "snippet": "View the profiles of professionals named \"Spiandore\" on LinkedIn. There are 50+ professionals named \"Spiandore\", who use …"
+    },
+    {
+      "title": "Jessica Spiandore - Operations Director at Kisaco Research - Wiza",
+      "url": "https://wiza.co/d/kisaco-research/d447/jessica-spiandore",
+      "snippet": "Oct 24, 2025 · View Jessica Spiandore's email address (j*****@kisaco***.com) and phone number. Jessica works at Kisaco …"
+    },
+    {
+      "title": "Jessica Spiandore | Kisaco Research",
+      "url": "https://www.kisacoresearch.com/content/jessica-spiandore",
+      "snippet": "Meet industry peers that will help build a career-changing network for life. Learn from the mistakes of your peers as much as their …"
+    },
+    {
+      "title": "Jessica Spiandore Email & Phone Number - RocketReach",
+      "url": "https://rocketreach.co/jessica-spiandore-email_30259891",
+      "snippet": "Jessica Spiandore, is currently a Operations Director at Kisaco Research. Jessica Spiandore brings experience from previous roles …"
+    }
+  ]
+}

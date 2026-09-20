@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "SubMaroon/Boulesis-v2.1-26B-A4B-HeadTune",
+  "slug": "submaroon-boulesis-v2-1-26b-a4b-headtune",
+  "author": "SubMaroon",
+  "url": "https://huggingface.co/SubMaroon/Boulesis-v2.1-26B-A4B-HeadTune",
+  "created_at": "2026-09-20T00:29:21.000Z",
+  "updated_at": "2026-09-20T10:07:42.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gemma4",
+    "roleplay",
+    "merge",
+    "moe",
+    "heretic",
+    "uncensored",
+    "sillytavern",
+    "thinking",
+    "reasoning",
+    "en",
+    "base_model:Gryphe/Pantheon-Reasoning-26B-A4B-1.1-V2",
+    "base_model:merge:Gryphe/Pantheon-Reasoning-26B-A4B-1.1-V2",
+    "base_model:coder3101/gemma-4-26B-A4B-it-heretic",
+    "base_model:merge:coder3101/gemma-4-26B-A4B-it-heretic",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26544133710,
+  "parameters_human": "26.54B",
+  "storage_bytes": 53120574070,
+  "storage_human": "53.1 GB",
+  "base_model": "coder3101/gemma-4-26B-A4B-it-heretic, Gryphe/Pantheon-Reasoning-26B-A4B-1.1-V2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Contact Us - Microsoft Support",
+      "url": "https://support.microsoft.com/en-gb/contactus",
+      "snippet": "Contact Microsoft Support. Find solutions to common problems, or get help from a support agent."
+    },
+    {
+      "title": "Anmelden bei Hotmail | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/accounts-billing/manage/how-to-sign-in-to-hotmail",
+      "snippet": "Microsoft hält immer ein Auge auf ungewöhnliche Anmeldeaktivitäten, nur für den Fall, dass jemand anderes versucht, auf Ihr Konto …"
+    },
+    {
+      "title": "Sign in to your account - techcommunity.microsoft.com",
+      "url": "https://techcommunity.microsoft.com/blog/exchange/exchange-online-ews-your-time-is-almost-up/4492361",
+      "snippet": "We wanted to provide an update on Exchange Online EWS deprecation."
+    },
+    {
+      "title": "Safe place to download Windows 11 26H1 ISO image? | Microsoft …",
+      "url": "https://techcommunity.microsoft.com/discussions/windows11/safe-place-to-download-windows-11-26h1-iso-image/4473173",
+      "snippet": "I heard Windows 11 26H1 is available but the ISO image download from Microsoft website is still 25H2. I don't want to enroll in …"
+    },
+    {
+      "title": "Aktualisieren von Treibern über Geräte-Manager in Windows",
+      "url": "https://support.microsoft.com/de-de/windows/aktualisieren-von-treibern-%C3%BCber-ger%C3%A4te-manager-in-windows-ec62f46c-ff14-c91d-eead-d7126dc1f7b6",
+      "snippet": "Erfahren Sie, wie Sie Treiber in Windows mithilfe von Geräte-Manager aktualisieren oder neu installieren."
+    }
+  ]
+}

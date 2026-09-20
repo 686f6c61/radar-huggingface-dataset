@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "asatheesh/latent-mas-aligner-phi3-mini-seed-2",
+  "slug": "asatheesh-latent-mas-aligner-phi3-mini-seed-2",
+  "author": "asatheesh",
+  "url": "https://huggingface.co/asatheesh/latent-mas-aligner-phi3-mini-seed-2",
+  "created_at": "2026-09-19T20:07:21.000Z",
+  "updated_at": "2026-09-19T20:07:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safety",
+    "multi-agent",
+    "latent-reasoning",
+    "base_model:microsoft/Phi-3-mini-4k-instruct",
+    "base_model:finetune:microsoft/Phi-3-mini-4k-instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 117490515,
+  "storage_human": "117 MB",
+  "base_model": "microsoft/Phi-3-mini-4k-instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "地理院地図 / GSI Maps | 国土地理院",
+      "url": "https://maps.gsi.go.jp/",
+      "snippet": "地形図、写真、標高、地形分類、災害情報など、日本の国土の様子を発信するウェブ地図です。 地形図や写真の3D表示も可能。"
+    },
+    {
+      "title": "Yahoo!マップ",
+      "url": "https://map.yahoo.co.jp/",
+      "snippet": "Yahoo!マップでは、世界の地図情報及び航空写真、最新の日本地図を提供しております。 主要な施設名、住所、郵便番号などから …"
+    },
+    {
+      "title": "日本地図 都道府県から地図を検索｜マピオン",
+      "url": "https://www.mapion.co.jp/map/japan.html",
+      "snippet": "「日本地図 都道府県から地図を検索」では日本地図から都道府県名称をクリックすると、見たい都道府県のイラスト地図が表示さ …"
+    },
+    {
+      "title": "日本全図 - 国土地理院",
+      "url": "https://www.gsi.go.jp/chizuhensyu/chizuhensyu41009.html",
+      "snippet": "Mar 30, 2023 · 日本全図 「日本全図（日本語版/Japanese Version）」（PDF形式1.67MB） 「日本全図（英語版/English Version） …"
+    },
+    {
+      "title": "日本の地図",
+      "url": "https://nihon.jp7.io/",
+      "snippet": "地域、都道府県、東京都の市区町村を含む日本のインタラクティブな地図。"
+    }
+  ]
+}

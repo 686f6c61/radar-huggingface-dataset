@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "SargeDev/qwen3.8-flash-next-lil-rascal-uncensored",
+  "slug": "sargedev-qwen3-8-flash-next-lil-rascal-uncensored",
+  "author": "SargeDev",
+  "url": "https://huggingface.co/SargeDev/qwen3.8-flash-next-lil-rascal-uncensored",
+  "created_at": "2026-09-19T22:47:08.000Z",
+  "updated_at": "2026-09-19T23:22:55.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen4_exp",
+    "qwen",
+    "qwen3.8",
+    "qwen3.8-flash-next",
+    "abliterated",
+    "uncensored",
+    "nvfp4",
+    "mxfp8",
+    "moe",
+    "vllm",
+    "dgx-spark",
+    "gb10",
+    "research",
+    "red-teaming",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "8-bit",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 92676653971,
+  "parameters_human": "92.68B",
+  "storage_bytes": 105885596990,
+  "storage_human": "105.9 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Twelve Days of Christmas (song) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/The_Twelve_Days_of_Christmas_(song)",
+      "snippet": "A large number of different melodies have been associated with the song, of which the best known is derived from a 1909 …"
+    },
+    {
+      "title": "The Twelve Days of Christmas - Sing Along with Lyrics | Classic ...",
+      "url": "https://www.youtube.com/watch?v=mbrF-ntRF3A",
+      "snippet": "Dec 1, 2023 · 🎶 Sing along with \"The 12 Days of Christmas\"—a beloved classic Christmas carol that has been enjoyed for generations! …"
+    },
+    {
+      "title": "Christmas Songs – The Twelve Days of Christmas Lyrics - Genius",
+      "url": "https://genius.com/Christmas-songs-the-twelve-days-of-christmas-lyrics",
+      "snippet": "“The Twelve Days of Christmas” is an English Christmas carol that enumerates each day by the gifts given on each of the twelve …"
+    },
+    {
+      "title": "The Twelve Days of Christmas lyrics | Christmas Carols",
+      "url": "https://www.lyricsforchristmas.com/christmas-carols/the-twelve-days-of-christmas/",
+      "snippet": "Lyrics to The Twelve Days of Christmas. The traditional christmas carol 12 Days of Christmas with lyrics. The christmas carol was …"
+    },
+    {
+      "title": "Twelve Days of Christmas with Lyrics Christmas Carol & Song",
+      "url": "https://www.youtube.com/watch?v=oyEyMjdD2uk",
+      "snippet": "Dec 1, 2013 · Favorite Christmas song Twelve Days of Christmas beautifully sung by top talented choir - great for Christmas concerts, …"
+    }
+  ]
+}

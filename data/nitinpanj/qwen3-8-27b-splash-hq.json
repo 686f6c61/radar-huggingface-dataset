@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "id": "nitinpanj/Qwen3.8-27B-Splash-HQ",
+  "slug": "nitinpanj-qwen3-8-27b-splash-hq",
+  "author": "nitinpanj",
+  "url": "https://huggingface.co/nitinpanj/Qwen3.8-27B-Splash-HQ",
+  "created_at": "2026-09-20T01:24:12.000Z",
+  "updated_at": "2026-09-21T11:58:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "apple-silicon",
+    "metal",
+    "splash",
+    "mtp",
+    "speculative-decoding",
+    "8bit",
+    "text-generation",
+    "en",
+    "zh",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 30842258253,
+  "storage_human": "30.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "eBay Kleinanzeigen",
+      "url": "https://www.ebay-kleinanzeigen.de/s-autos/c216+autos.ez_i:1900",
+      "snippet": "Hier sollte eine Beschreibung angezeigt werden, diese Seite lässt dies jedoch nicht zu."
+    }
+  ]
+}

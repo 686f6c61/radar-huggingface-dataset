@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "TokenAI-zer/Ternary-Bonsai-2-27B-MLX-oQ6-mtp",
+  "slug": "tokenai-zer-ternary-bonsai-2-27b-mlx-oq6-mtp",
+  "author": "TokenAI-zer",
+  "url": "https://huggingface.co/TokenAI-zer/Ternary-Bonsai-2-27B-MLX-oQ6-mtp",
+  "created_at": "2026-09-19T22:50:54.000Z",
+  "updated_at": "2026-09-19T23:37:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "omlx",
+    "quantization",
+    "mixed-precision",
+    "apple-silicon",
+    "ternary",
+    "mtp",
+    "speculative-decoding",
+    "vision",
+    "qwen",
+    "image-text-to-text",
+    "conversational",
+    "base_model:prism-ml/Ternary-Bonsai-2-27B-gguf",
+    "base_model:quantized:prism-ml/Ternary-Bonsai-2-27B-gguf",
+    "license:apache-2.0",
+    "6-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 23729097412,
+  "storage_human": "23.7 GB",
+  "base_model": "prism-ml/Ternary-Bonsai-2-27B-gguf",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wikipedia",
+      "url": "https://www.wikipedia.org/",
+      "snippet": "Wikipedia is a free online encyclopedia, created and edited by volunteers around the world and hosted by the Wikimedia Foundation."
+    },
+    {
+      "title": "Vikipedi: Özgür Ansiklopedi",
+      "url": "https://tr.wikipedia.org/wiki/Anasayfa",
+      "snippet": "Vikipedi 'ye hoş geldiniz! Herkesin katkıda bulunabildiği özgür ansiklopedi Türkçe Vikipedi'deki madde sayısı: 700.879 Madde oluştur …"
+    },
+    {
+      "title": "Wikipedia, the free encyclopedia",
+      "url": "https://en.wikipedia.org/wiki/Main_Page",
+      "snippet": "Wikipedia is written by volunteer editors and hosted by the Wikimedia Foundation, a non-profit organization that also hosts a range of …"
+    },
+    {
+      "title": "Wikipedia - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Wikipedia",
+      "snippet": "Founded by Jimmy Wales and Larry Sanger in 2001, Wikipedia has been hosted since 2003 by the Wikimedia Foundation, an …"
+    },
+    {
+      "title": "Vikipedi - Vikipedi",
+      "url": "https://tr.wikipedia.org/wiki/Vikipedi",
+      "snippet": "Vikipedi (İngilizce: Wikipedia), kullanıcıları tarafından ortaklaşa olarak birçok dilde hazırlanan; özgür, bağımsız, ücretsiz, reklamsız ve …"
+    }
+  ]
+}

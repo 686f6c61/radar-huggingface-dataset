@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Aaqisher667/phi-3-mini-4k-cyber-qdora-finetuned",
+  "slug": "aaqisher667-phi-3-mini-4k-cyber-qdora-finetuned",
+  "author": "Aaqisher667",
+  "url": "https://huggingface.co/Aaqisher667/phi-3-mini-4k-cyber-qdora-finetuned",
+  "created_at": "2026-09-19T23:47:03.000Z",
+  "updated_at": "2026-09-19T23:48:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:unsloth/phi-3-mini-4k-instruct-bnb-4bit",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 124191379,
+  "storage_human": "124 MB",
+  "base_model": "unsloth/phi-3-mini-4k-instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mother’s Day 2027 in Canada - timeanddate.com",
+      "url": "https://www.timeanddate.com/holidays/canada/mother-day",
+      "snippet": "Many Canadians celebrate Mother’s Day by showing their appreciation for mothers or mother figures. The Mother’s Day date in …"
+    },
+    {
+      "title": "Mothers Day in Canada – Dates & Traditions | When Is Mother's Day",
+      "url": "https://when-is-mothers-day.com/dates/canada/",
+      "snippet": "When is Mothers Day in Canada? The second Sunday of May. Find Canadian Mothers Day dates 2024–2030, how Canadians …"
+    },
+    {
+      "title": "Mother’s Day - Public Holidays in Canada",
+      "url": "https://publicholidays.ca/mothers-day/",
+      "snippet": "In this blog, we will delve into the history, significance, and traditions of Mother’s Day in Canada, as well as explore how this special …"
+    },
+    {
+      "title": "Mother's Day 2026 Canada - When is Mother's Day",
+      "url": "https://www.calendar-canada.ca/holiday/mothers-day/",
+      "snippet": "Find here the exact dates for Mother's Day for any year."
+    },
+    {
+      "title": "Mother's Day in Canada - Sunday, May 10, 2026 - WinCalendar",
+      "url": "https://www.wincalendar.com/ca/Mothers-Day",
+      "snippet": "May 10, 2026 · In Canada, Mother's Day is observed on the second Sunday of May each year. The average age of first-time mothers …"
+    }
+  ]
+}

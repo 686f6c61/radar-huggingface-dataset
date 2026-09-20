@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "AiMamis/Angela",
+  "slug": "aimamis-angela",
+  "author": "AiMamis",
+  "url": "https://huggingface.co/AiMamis/Angela",
+  "created_at": "2026-09-19T20:43:52.000Z",
+  "updated_at": "2026-09-19T20:43:58.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "license:openrail++",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 458908658,
+  "storage_human": "459 MB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "日本侵华所占面积最大时期的中国地图。_百度知道",
+      "url": "https://zhidao.baidu.com/question/195795512.html",
+      "snippet": "日本侵华所占面积最大时期的 中国地图 如下。 1931年9月18日，“九一八”事变爆发，日本关东军部队大举侵犯中国领土，开启14年侵 …"
+    },
+    {
+      "title": "中国地图上桥用什么表示 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/38796220.html",
+      "snippet": "符号：“] [”表示。 中国地图是指为明确中国版图而绘制的地图。中国位于亚洲东部和中部，太平洋西岸，是一个背陆面海，海陆兼备的 …"
+    },
+    {
+      "title": "甘肃省位于中国地图的那个位置 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/540773420.html",
+      "snippet": "甘肃省位于中国地图的那个位置甘肃省位于中国地图的西北部，如下图：甘肃省位于中国西部地区，地处黄河中上游，地域辽阔。介于 …"
+    },
+    {
+      "title": "中国地图 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/604601631.html",
+      "snippet": "Oct 14, 2013 · 中国地图 中国地图是指着重展示中华人民共和国领土以及疆域内各类地理要素的分布的地图。按照地图的一般分类方 …"
+    },
+    {
+      "title": "求模拟城市4地图下载 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/117211326.html",
+      "snippet": "求模拟城市4地图下载http://www.simcity.cn/forum-24-1.html模拟城市中文网的土地储备中心 (内有各个网友提供的地图下载)推荐:这个 …"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "SSDD145/Gemma4-12B-QAT-Uncensored-HauhauCS-Balanced",
+  "slug": "ssdd145-gemma4-12b-qat-uncensored-hauhaucs-balanced",
+  "author": "SSDD145",
+  "url": "https://huggingface.co/SSDD145/Gemma4-12B-QAT-Uncensored-HauhauCS-Balanced",
+  "created_at": "2026-09-20T01:00:56.000Z",
+  "updated_at": "2026-09-20T01:00:56.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "uncensored",
+    "gemma4",
+    "vision",
+    "multimodal",
+    "agentic",
+    "coding",
+    "creative-writing",
+    "roleplay",
+    "rp",
+    "conversational",
+    "image-text-to-text",
+    "en",
+    "base_model:google/gemma-4-12B-it",
+    "base_model:quantized:google/gemma-4-12B-it",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11907350576,
+  "parameters_human": "11.91B",
+  "storage_bytes": 7810204352,
+  "storage_human": "7.8 GB",
+  "base_model": "google/gemma-4-12B-it",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Head to Head - Brisbane Broncos vs. Penrith Panthers",
+      "url": "https://www.rugbyleagueproject.org/head2head/brisbane-broncos-vs-penrith-panthers/all/summary.html",
+      "snippet": "Head-to-head rugby league record and match history: Head to Head - Brisbane Broncos vs. Penrith Panthers. On Rugby League …"
+    },
+    {
+      "title": "Head to Head - Brisbane Broncos vs. Penrith Panthers",
+      "url": "https://www.rugbyleagueproject.org/head2head/brisbane-broncos-vs-penrith-panthers/nrl/records.html",
+      "snippet": "Head-to-head rugby league record and match history: Head to Head - Brisbane Broncos vs. Penrith Panthers - Records. On Rugby …"
+    },
+    {
+      "title": "Broncos v Panthers - Finals Week 3, 2025 - Match Centre | NRL.com",
+      "url": "https://www.nrl.com/draw/nrl-premiership/2025/finals-week-3/broncos-v-panthers/",
+      "snippet": "Brisbane Broncos versus Penrith Panthers match centre includes live scores and updates. Includes official live player and team stats. …"
+    },
+    {
+      "title": "Brisbane 16 - 14 Penrith - Match Report & Highlights - Sky Sports",
+      "url": "https://www.skysports.com/rugby-league/brisbane-vs-penrith/62494",
+      "snippet": "Mar 9, 2026 · NRL match Brisbane vs Penrith (28 Sep 2025). Preview and stats followed by live commentary, video highlights and …"
+    },
+    {
+      "title": "Brisbane Broncos v Penrith Panthers - Rugby League - BBC Sport",
+      "url": "https://www.bbc.co.uk/sport/rugby-league/match/EVP4974117",
+      "snippet": "Sep 28, 2025 · Find out all the scorers and match details for Brisbane Broncos v Penrith Panthers in the Australian National Rugby …"
+    }
+  ]
+}

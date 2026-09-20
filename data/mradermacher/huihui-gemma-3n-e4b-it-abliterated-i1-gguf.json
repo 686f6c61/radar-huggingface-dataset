@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Huihui-gemma-3n-E4B-it-abliterated-i1-GGUF",
+  "slug": "mradermacher-huihui-gemma-3n-e4b-it-abliterated-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Huihui-gemma-3n-E4B-it-abliterated-i1-GGUF",
+  "created_at": "2026-09-20T00:12:25.000Z",
+  "updated_at": "2026-09-20T05:55:13.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "automatic-speech-recognition",
+    "automatic-speech-translation",
+    "audio-text-to-text",
+    "video-text-to-text",
+    "abliterated",
+    "uncensored",
+    "en",
+    "base_model:huihui-ai/Huihui-gemma-3n-E4B-it-abliterated",
+    "base_model:quantized:huihui-ai/Huihui-gemma-3n-E4B-it-abliterated",
+    "license:gemma",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6868990448,
+  "parameters_human": "6.87B",
+  "storage_bytes": 69987377496,
+  "storage_human": "70.0 GB",
+  "base_model": "huihui-ai/Huihui-gemma-3n-E4B-it-abliterated",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MSDN",
+      "url": "https://social.msdn.microsoft.com/Forums/en-US/home",
+      "snippet": ""
+    },
+    {
+      "title": "MSDN",
+      "url": "https://social.msdn.microsoft.com/Forums/en-US/9114cbf8-c4d2-457e-97a9-b8ed92e5df05",
+      "snippet": ""
+    },
+    {
+      "title": "MSDN",
+      "url": "https://social.msdn.microsoft.com/Forums/en-US/922de5fa-b693-4687-b81d-7a82b8733fa2/",
+      "snippet": ""
+    },
+    {
+      "title": "SQL Server Data Tools (SSDT) 2017 issue",
+      "url": "https://social.msdn.microsoft.com/Forums/en-US/b577cb36-d227-4aaa-9b45-bee5b1f7b0f8/sql-server-data-tools-ssdt-2017-issue?forum=sqlreportingservices",
+      "snippet": "Jun 14, 2019 · I have tried everything in above link. Have spent almost a whole day now! i think MS should improve the installation …"
+    },
+    {
+      "title": "MSDN",
+      "url": "https://social.msdn.microsoft.com/Forums/en-US/087ec8bc-d63b-440d-ae71-5bd774094aa7/where-do-i-set-the-useglobalapplicationhostfile-attribute-in-a-web-site-project-in-vs-2015?forum=visualstudiogeneral",
+      "snippet": ""
+    }
+  ]
+}

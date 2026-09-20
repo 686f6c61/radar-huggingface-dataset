@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ankit-devi/homework-retrieval",
+  "slug": "ankit-devi-homework-retrieval",
+  "author": "ankit-devi",
+  "url": "https://huggingface.co/ankit-devi/homework-retrieval",
+  "created_at": "2026-09-20T00:28:59.000Z",
+  "updated_at": "2026-09-20T00:29:05.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "clip",
+    "pytorch",
+    "retrieval",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "QUERY function - Google Docs Editors Help",
+      "url": "https://support.google.com/docs/answer/3093343?hl=en",
+      "snippet": "QUERY function Runs a Google Visualization API Query Language query across data. Sample Usage QUERY (A2:E6,\"select avg (A) …"
+    },
+    {
+      "title": "QUERY - เครื่องมือแก้ไข Google เอกสาร ความช่วยเหลือ",
+      "url": "https://support.google.com/docs/answer/3093343?hl=th",
+      "snippet": "QUERY เรียกใช้การค้นหาของ Google Visualization API Query Language จากข้อมูลทั้งหมด ตัวอย่างการใช้งาน QUERY (A2:E6,\"select avg …"
+    },
+    {
+      "title": "sin prejuicio - WordReference Forums",
+      "url": "https://forum.wordreference.com/threads/sin-prejuicio.1452459/",
+      "snippet": "Jun 30, 2009 · Como podemos traduzir a seguinte expressão: \"se acepta con la cualidad ordinaria de sin prejuicio...y para la prática …"
+    },
+    {
+      "title": "jouer aux pitres - WordReference Forums",
+      "url": "https://forum.wordreference.com/threads/jouer-aux-pitres.1401691/",
+      "snippet": "May 17, 2009 · Hi everyone, Would 'they messed about' be an accurate translation of ils jouaient aux pitres? Thanks for your help!"
+    },
+    {
+      "title": "[GA4] Google Analytics 4-property sample dataset for BigQuery",
+      "url": "https://support.google.com/analytics/answer/10937659?hl=en",
+      "snippet": "See this article on our developer site. [GA4] Google Analytics 4-property sample dataset for BigQuery"
+    }
+  ]
+}

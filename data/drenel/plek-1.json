@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Drenel/plek-1",
+  "slug": "drenel-plek-1",
+  "author": "Drenel",
+  "url": "https://huggingface.co/Drenel/plek-1",
+  "created_at": "2026-09-19T23:18:45.000Z",
+  "updated_at": "2026-09-21T17:53:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "plek-1",
+    "zero-shot-classification",
+    "decision-model",
+    "system-one",
+    "jev",
+    "jev-model",
+    "non-autoregressive",
+    "custom_code",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 783150080,
+  "parameters_human": "783.2M",
+  "storage_bytes": 3132668808,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Betrugsmasche Notar: Falsche Notare erkennen - JuraForum.de",
+      "url": "https://www.juraforum.de/lexikon/betrugsmasche-notar",
+      "snippet": "Aug 27, 2026 · Betrugsmasche Notar: So erkennen Betroffene falsche Notarschreiben Eine Betrugsmasche mit angeblichem Notar …"
+    },
+    {
+      "title": "Warnung vor Betrügereien von falschen Notaren| Notar.de",
+      "url": "https://www.notar.de/aktuelles/details/warnung-vor-betruegereien-von-falschen-notaren",
+      "snippet": "Jan 31, 2014 · Dabei täuschen die Täter gezielt Seriosität vor, indem sie sich als Notare ausgeben. Eine Recherche in der Deutschen …"
+    },
+    {
+      "title": "Warnung vor Betrügereien von falschen Notaren - Bayern",
+      "url": "https://www.notare.bayern.de/presse/pressemitteilungen/warnung-vor-betruegereien-von-falschen-notaren/",
+      "snippet": "Eine Recherche in der Deutschen Notarauskunft unter www.notar.de oder ein Anruf bei der örtlichen Notarkammer kann Klarheit …"
+    },
+    {
+      "title": "Betrugsmasche Notar – so erkennen Sie die Gefahren",
+      "url": "https://www.detectivecondor.de/betrugsmasche-notar/",
+      "snippet": "Bei der Betrugsmasche Notar geben sich Betrüger als Notar aus und bringen Opfer dazu, viel Geld zu überweisen. Hier Tipps zu …"
+    },
+    {
+      "title": "Betrug mit Anrufen von vermeintlichen Notarkanzleien",
+      "url": "https://www.nk-muc.de/betrug-mit-anrufen-von-vermeintlichen-notarkanzleien/",
+      "snippet": "Wie kann man sich schützen? Sobald Zweifel an der Echtheit einer behaupteten notariellen Beteiligung aufkommen, wenden Sie sich …"
+    }
+  ]
+}

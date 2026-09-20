@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Boollm/Boollm-Small-135M",
+  "slug": "boollm-boollm-small-135m",
+  "author": "Boollm",
+  "url": "https://huggingface.co/Boollm/Boollm-Small-135M",
+  "created_at": "2026-09-19T20:57:44.000Z",
+  "updated_at": "2026-09-19T20:57:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "boollm",
+    "education",
+    "tutoring",
+    "writing",
+    "general-chat",
+    "local-inference",
+    "proof-of-concept",
+    "text-generation",
+    "base_model:HuggingFaceTB/SmolLM2-135M-Instruct",
+    "base_model:quantized:HuggingFaceTB/SmolLM2-135M-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 134515008,
+  "parameters_human": "134.5M",
+  "storage_bytes": 144811360,
+  "storage_human": "145 MB",
+  "base_model": "HuggingFaceTB/SmolLM2-135M-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Today's selection - XNXX.COM",
+      "url": "https://www.xnxx.com/todays-selection/",
+      "snippet": "XNXX Today's selection Happy Birthday! Your birthday present from your wife! 10.6k 94% 8min - 1080p Slut Battle Royale „I‘m The …"
+    },
+    {
+      "title": "Free Porn, Sex, Tube Videos, XXX Pics, Pussy in Porno Movies - XNXX…",
+      "url": "https://www.xnxx.com/",
+      "snippet": "XNXX delivers free sex movies and fast free porn videos (tube porn). Now 10 million+ sex vids available for free! Featuring hot pussy, …"
+    },
+    {
+      "title": "Kostenlose Porno, Sex, Tube-Videos, XXX Bilder, Muschi in Porno-Filme ...",
+      "url": "https://de.xnxx.place/",
+      "snippet": "XNXX liefert kostenlose Sex-Filme und Porno-Videos (Tube-Porno). Jetzt können Sie über 10 Millionen Sex-Videos kostenlos …"
+    },
+    {
+      "title": "Heutige Auswahl - XNXX.COM",
+      "url": "https://de.xnxx.place/todays-selection",
+      "snippet": "XNXX Heutige Auswahl 82 4min - 1080p Pinkymia Mi pequeña hermanastra se deja follar el culo , trio con mis hermanastras casero …"
+    },
+    {
+      "title": "Today's selection - XNXX.COM",
+      "url": "https://m-xnxx.com/todays-selection",
+      "snippet": "XNXX Today's selection A sexy blonde brought only a swimsuit to the Alps, so I decided to help her warm up, and she was so …"
+    }
+  ]
+}

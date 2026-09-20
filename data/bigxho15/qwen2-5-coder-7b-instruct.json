@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "bigxho15/Qwen2.5-Coder-7B-Instruct",
+  "slug": "bigxho15-qwen2-5-coder-7b-instruct",
+  "author": "bigxho15",
+  "url": "https://huggingface.co/bigxho15/Qwen2.5-Coder-7B-Instruct",
+  "created_at": "2026-09-20T00:52:00.000Z",
+  "updated_at": "2026-09-20T00:52:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "code",
+    "codeqwen",
+    "chat",
+    "qwen",
+    "qwen-coder",
+    "conversational",
+    "en",
+    "arxiv:2409.12186",
+    "arxiv:2309.00071",
+    "arxiv:2407.10671",
+    "base_model:Qwen/Qwen2.5-Coder-7B",
+    "base_model:finetune:Qwen/Qwen2.5-Coder-7B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15231271864,
+  "storage_human": "15.2 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "JBA Hamburg-Harburg | JBA Hamburg",
+      "url": "https://jba-hamburg.de/de/kontakt/jba-standorte/jba-hamburg-harburg",
+      "snippet": "Du Hast Fragen? Wir Sind Für Dich Da! So finden Sie uns!"
+    },
+    {
+      "title": "Finde einen Weg, der dich begeistert! | JBA Hamburg",
+      "url": "https://jba-hamburg.de/de",
+      "snippet": "Fragst du dich, wo du gerade stehst, was wirklich zu dir passt und wie du dein Ziel erreichen kannst? Ob Ausbildung, weiterführende …"
+    },
+    {
+      "title": "Jugendberufsagentur Hamburg - Bundesagentur für Arbeit",
+      "url": "https://www.arbeitsagentur.de/vor-ort/hamburg/institutionen/jba-jugendberufsagentur",
+      "snippet": "Die Jugendberufsagentur (JBA) Hamburg ist für alle jungen Menschen bis 25 bei ihrem Übergang von der Schule in die …"
+    },
+    {
+      "title": "Die Jugendberufsagentur - hamburg.de",
+      "url": "https://www.hamburg.de/politik-und-verwaltung/behoerden/bwai/themen/arbeit/fachkraefte/jugendberufsagentur-32052",
+      "snippet": "Die Jugendberufsagentur Hamburg ist für alle unter 25 Jährigen der Stadt Ansprechpartner für alle Belange rund um den Übergang …"
+    },
+    {
+      "title": "Herzlich willkommen | Jugendberufsagentur Landkreis Harburg",
+      "url": "https://www.jba-lk-harburg.de/",
+      "snippet": "Es gibt viele Möglichkeiten schulisch oder beruflich weiter zu kommen und auch bei finanziellen Fragen können wir Dir sicher helfen. …"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l0",
+  "slug": "pessimisticdpo-mistral-7b-sft-beta-a0-1-b0-1-l4-overlap_subsample-l0",
+  "author": "PessimisticDPO",
+  "url": "https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l0",
+  "created_at": "2026-09-19T20:01:54.000Z",
+  "updated_at": "2026-09-19T20:01:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 167832240,
+  "storage_human": "168 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CS2RED - Main Page",
+      "url": "https://cs2red.ru/",
+      "snippet": "The main page of the site allows you to choose your preferred mode or navigate to the desired resource."
+    },
+    {
+      "title": "CS2RED - Servers",
+      "url": "https://cs2red.ru/servers/0",
+      "snippet": "CS2RED — проект игровых серверов в игре Counter Strike 2. У нас доступны режимы: PUBLIC, AWP, MINIGAME, ARENA, …"
+    },
+    {
+      "title": "CS2RED - Сервера CS2 :: Официальный Сайт - Главная страница",
+      "url": "https://cs2red.com/",
+      "snippet": "CS2RED — проект игровых серверов в игре Counter Strike 2. У нас доступны режимы: PUBLIC, AWP, MINIGAME, ARENA, …"
+    },
+    {
+      "title": "CS2RED - Официальный Сайт Серверов CS2 (CS:GO) - Главная …",
+      "url": "https://cs2red.net/",
+      "snippet": "CS2RED — проект игровых серверов в игре Counter Strike 2. У нас доступны режимы: PUBLIC, AWP, MINIGAME, ARENA, …"
+    },
+    {
+      "title": "КС2РЕД · cs2red.ru – Telegram",
+      "url": "https://t.me/s/cs2red?before=60",
+      "snippet": "🔥 Время летних скидок на CS2RED! 🔥 В честь июля у нас потрясающая акция - скидка 50% на все услуги нашего проекта! Это …"
+    }
+  ]
+}

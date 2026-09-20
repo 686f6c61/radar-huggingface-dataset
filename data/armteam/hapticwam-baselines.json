@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "armteam/hapticwam-baselines",
+  "slug": "armteam-hapticwam-baselines",
+  "author": "armteam",
+  "url": "https://huggingface.co/armteam/hapticwam-baselines",
+  "created_at": "2026-09-20T01:23:14.000Z",
+  "updated_at": "2026-09-20T01:34:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "robotics",
+    "manipulation",
+    "baselines",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12501746149,
+  "storage_human": "12.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Budapest – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Budapest",
+      "snippet": "Der bekannteste Verein aus Budapest ist Ferencváros Budapest. Daneben spielen noch Újpest Budapest, Honvéd Budapest und …"
+    },
+    {
+      "title": "Budapest - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Budapest",
+      "snippet": "Budapest is the political, economic, and cultural center of the country, among the ten largest cities in the European Union and the …"
+    },
+    {
+      "title": "Sehenswürdigkeiten in Budapest: Die schönsten Ziele 2026 - ADAC",
+      "url": "https://www.adac.de/reise-freizeit/reiseplanung/inspirationen/europa/budapest-sehenswuerdigkeiten/",
+      "snippet": "Oct 1, 2025 · In Budapest trifft kaiserlich-königlicher Prunk auf hippen Shabby Chic. Die besten Tipps für eine Tour durch die …"
+    },
+    {
+      "title": "Budapest Info - Die offizielle Tourismus-Website von Budapest",
+      "url": "https://www.budapestinfo.hu/de",
+      "snippet": "Gönnen Sie ihr ein unvergessliches Wochenende in Budapest, wo Sie gemeinsam das Beste der ungarischen Hauptstadt erleben …"
+    },
+    {
+      "title": "Budapest, Hungary: All You Must Know Before You Go (2026) - Tripadvisor",
+      "url": "https://www.tripadvisor.com/Tourism-g274887-Budapest_Central_Hungary-Vacations.html",
+      "snippet": "The \"Queen of the Danube\" is also steeped in history, culture, and natural beauty. Get your camera ready for the Hungarian …"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Aobangaming/lightning-105m",
+  "slug": "aobangaming-lightning-105m",
+  "author": "Aobangaming",
+  "url": "https://huggingface.co/Aobangaming/lightning-105m",
+  "created_at": "2026-09-20T02:43:01.000Z",
+  "updated_at": "2026-09-20T16:30:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lightning",
+    "text-generation",
+    "conversational",
+    "generative",
+    "custom_code",
+    "en",
+    "dataset:kmfoda/booksum",
+    "arxiv:1910.09700",
+    "base_model:Aobangaming/lightning-30m-ft",
+    "base_model:finetune:Aobangaming/lightning-30m-ft",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 210,
+  "trending_score": 0,
+  "parameters": 105357312,
+  "parameters_human": "105.4M",
+  "storage_bytes": 421445680,
+  "storage_human": "421 MB",
+  "base_model": "Aobangaming/lightning-30m-ft, Aobangaming/lightning-60m",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "绦虫卵长什么样 | 百度健康·医学科普",
+      "url": "https://health.baidu.com/m/detail/ar_6488259512241484047",
+      "snippet": "绦虫卵呈圆形或椭圆形，直径约30-40微米，外层为棕黄色、厚壁的胚膜，内部含有一个六钩蚴胚胎。 这种结构特征使其在显微镜下呈 …"
+    },
+    {
+      "title": "显微镜下揭示绦虫卵与棘球绦虫的奥秘 - 百度健康",
+      "url": "https://health.baidu.com/m/detail/ar_9387973767960284104",
+      "snippet": "Jun 30, 2025 · 通过显微镜，我们可以清晰地看到绦虫卵的圆形或椭圆形外观，以及其表面的细致纹理。 同时，棘球绦虫原头蚴的复杂 …"
+    },
+    {
+      "title": "棘球蚴 - 百度百科",
+      "url": "https://baike.baidu.com/item/%E6%A3%98%E7%90%83%E8%9A%B4/8261596",
+      "snippet": "在犬小肠内的 棘球绦虫 很细小，长2—6毫米，由一个头节和3—4个节片构成，最后一个体节较大，内含多量虫卵。 含有孕节或虫卵的 …"
+    },
+    {
+      "title": "细粒棘球绦虫成虫与虫卵的形态 - 百度",
+      "url": "https://m.baidu.com/bh/m/detail/ar_4305140411546112049",
+      "snippet": "Oct 14, 2024 · 各节片均为狭长形。 成节的结构与带绦虫略相似，生殖孔位于节片一侧的中部偏后。 睾丸45-65个均地散布在生殖孔水 …"
+    },
+    {
+      "title": "棘球绦虫 - 百度百科",
+      "url": "https://baike.baidu.com/item/%E6%A3%98%E7%90%83%E7%BB%A6%E8%99%AB/12726527",
+      "snippet": "棘球绦虫（Echinococcus）是圆叶目带科棘球属寄生虫，主要包含细粒棘球绦虫（E. granulosus）及多房棘球绦虫（E. …"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "bielquants/Ternary-Bonsai-2-27B-gguf",
+  "slug": "bielquants-ternary-bonsai-2-27b-gguf",
+  "author": "bielquants",
+  "url": "https://huggingface.co/bielquants/Ternary-Bonsai-2-27B-gguf",
+  "created_at": "2026-09-19T23:44:05.000Z",
+  "updated_at": "2026-09-19T23:44:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "ternary",
+    "2-bit",
+    "llama-cpp",
+    "cuda",
+    "metal",
+    "on-device",
+    "hybrid-attention",
+    "prismml",
+    "bonsai",
+    "text-generation",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 68521619616,
+  "storage_human": "68.5 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Petra - Barcelona, B",
+      "url": "https://www.yelp.com/biz/petra-barcelona?msockid=04d29d51785c627b20b88a88798a63b0",
+      "snippet": "Location & Hours Suggest an edit Carrer dels Sombrerers, 13 08003 Barcelona Spain Sant Pere, Santa Caterina i la Ribera-Born Get …"
+    },
+    {
+      "title": "10+ Profile mit dem Suchbegriff „Loeffelbein“ | LinkedIn",
+      "url": "https://de.linkedin.com/pub/dir/+/Loeffelbein/de-0-Germany",
+      "snippet": "Sehen Sie sich die Profile von LinkedIn Mitgliedern an, die Loeffelbein heißen. 10+ Personen namens Loeffelbein sind auf LinkedIn …"
+    },
+    {
+      "title": "BARCELONA an einem Tag | Mein Stadtrundgang in 20 Stunden",
+      "url": "https://east-rail-stories.de/laender/spanien/barcelona-an-einem-tag/",
+      "snippet": "Dec 14, 2024 · Barcelona an einem Tag zu erleben ‒ das ist durchaus machbar. Wenn du einen kurzen Aufenthalt in der …"
+    },
+    {
+      "title": "Die 10 besten Sehenswürdigkeiten in Barcelona (2026)",
+      "url": "https://www.tripadvisor.de/Attractions-g187497-Activities-Barcelona_Catalonia.html",
+      "snippet": "Top-Sightseeing in Barcelona, Spanien (2026) Der Umsatz und Ihr Browserverlauf haben Einfluss auf die Erlebnisse, die hier …"
+    },
+    {
+      "title": "Rätsel um vermisstes deutsches Ehepaar: Was passierte am 19 ... - GMX",
+      "url": "https://www.gmx.at/magazine/panorama/raetsel-vermisstes-deutsches-ehepaar-passierte-19-juli-barcelona-40969828",
+      "snippet": "May 12, 2025 · Seit dem 19. Juli 2024 fehlt von Petra G. und Ralf B. aus Niedersachsen jede Spur. Ihr Bulli wurde in einem der …"
+    }
+  ]
+}

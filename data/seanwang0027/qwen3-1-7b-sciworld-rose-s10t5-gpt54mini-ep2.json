@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "SeanWang0027/qwen3-1.7b-sciworld-rose-s10t5-gpt54mini-ep2",
+  "slug": "seanwang0027-qwen3-1-7b-sciworld-rose-s10t5-gpt54mini-ep2",
+  "author": "SeanWang0027",
+  "url": "https://huggingface.co/SeanWang0027/qwen3-1.7b-sciworld-rose-s10t5-gpt54mini-ep2",
+  "created_at": "2026-09-19T23:19:31.000Z",
+  "updated_at": "2026-09-19T23:20:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "scienceworld",
+    "agent",
+    "react",
+    "distillation",
+    "on-policy",
+    "conversational",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2031739904,
+  "parameters_human": "2.03B",
+  "storage_bytes": 4074938294,
+  "storage_human": "4.1 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Omd – Dream of Me Songtext | MusikGuru",
+      "url": "https://musikguru.de/omd/songtext-dream-of-me-22051.html",
+      "snippet": "Lies die Lyrics von Omd – Dream of Me komplett & entdecke die Bedeutung hinter den Lyrics. Erfahre, worum es in diesem Song …"
+    },
+    {
+      "title": "Dream Of Me Songtext von OMD Lyrics - songtextemania.com",
+      "url": "https://www.songtextemania.com/dream_of_me_songtext_omd.html",
+      "snippet": "Say it isn't rightTo be alone tonightSo in love with youTell you what I'm gonna do about itI had an ideaBased on a love themeI had an …"
+    },
+    {
+      "title": "DREAM OF ME Lyrics - OMD | eLyrics.net",
+      "url": "https://www.elyrics.net/read/o/omd-lyrics/dream-of-me-lyrics.html",
+      "snippet": "Omd Dream Of Me lyrics & video : Say it isn't right To be alone tonight So in love with you Tell you what I'm gonna Do about it I had …"
+    },
+    {
+      "title": "OMD - Dream Of Me Lyrics",
+      "url": "https://www.lyricsmania.com/dream_of_me_lyrics_omd.html",
+      "snippet": "OMD Dream Of Me Lyrics. Dream Of Me lyrics performed by OMD: Say it isn't rightTo be alone tonightSo in love with youTell you what"
+    },
+    {
+      "title": "Dream of Me (Based on Love’s Theme) - Genius",
+      "url": "https://genius.com/Orchestral-manoeuvres-in-the-dark-dream-of-me-based-on-loves-theme-lyrics",
+      "snippet": "Jun 14, 1993 · Dream of Me (Based on Love’s Theme) Lyrics: Say it isn't right / To be alone tonight / So in love with you / Tell you …"
+    }
+  ]
+}

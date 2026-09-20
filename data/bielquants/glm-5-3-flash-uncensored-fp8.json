@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "bielquants/GLM-5.3-Flash-UNCENSORED-FP8",
+  "slug": "bielquants-glm-5-3-flash-uncensored-fp8",
+  "author": "bielquants",
+  "url": "https://huggingface.co/bielquants/GLM-5.3-Flash-UNCENSORED-FP8",
+  "created_at": "2026-09-19T23:25:00.000Z",
+  "updated_at": "2026-09-19T23:25:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "glm5_next",
+    "abliterated",
+    "uncensored",
+    "crack",
+    "glm",
+    "moe",
+    "fp8",
+    "vision",
+    "mtp",
+    "en",
+    "base_model:zai-org/GLM-5.3-Flash",
+    "base_model:quantized:zai-org/GLM-5.3-Flash",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 321323031390,
+  "parameters_human": "321.32B",
+  "storage_bytes": 328357674378,
+  "storage_human": "328.4 GB",
+  "base_model": "zai-org/GLM-5.3-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "使用Ultra ISO制作DOS启动CD光盘镜像 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/b0b63dbfb790a94a483070ee.html",
+      "snippet": "Aug 23, 2011 · 使用Ultra ISO制作DOS启动CD光盘镜像,UltraISO具有制作DOS启动光盘镜像的功能，不过UltraISO本身没有提供包 …"
+    },
+    {
+      "title": "UltraISO使用方法 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/fb48e8be56430a6e632e1450.html",
+      "snippet": "Oct 2, 2014 · 2、将光盘制作成ISO，保存在硬盘上 目的：备份光盘内容，用于虚拟或以后刻录 方法：使用“制作光盘映像”功能，选择 …"
+    },
+    {
+      "title": "论坛 - 远景论坛 - 微软极客社区",
+      "url": "https://bbs.pcbeta.com/viewthread-1935524-1-1.html",
+      "snippet": "请启用 JavaScript 后重试"
+    },
+    {
+      "title": "UltraISO静默安装 - 远景论坛 - 前沿科技与智慧生态的极客社区",
+      "url": "https://bbs.pcbeta.com/viewthread-2064125-1-1.html",
+      "snippet": "Feb 3, 2026 · PCEBTA社区 - 专注于Windows 11系统的安装、激活、驱动程序下载、优化教程与技术支持。获取最新的Win11更新资讯 …"
+    },
+    {
+      "title": "Phần mềm UltraISO bị lỗi | Viết bởi annamolly123 - Tinhte.vn",
+      "url": "https://tinhte.vn/thread/phan-mem-ultraiso-bi-loi.2798708/",
+      "snippet": "May 25, 2018 · Chào mọi người ạ. Em down phần mềm ultraiso về để cài game nhưng khi kích chuột phải vào file thì không hiện ra …"
+    }
+  ]
+}

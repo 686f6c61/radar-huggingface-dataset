@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "yucheng4/mixer-checkpoint",
+  "slug": "yucheng4-mixer-checkpoint",
+  "author": "yucheng4",
+  "url": "https://huggingface.co/yucheng4/mixer-checkpoint",
+  "created_at": "2026-09-20T00:30:25.000Z",
+  "updated_at": "2026-09-20T00:30:30.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mixer",
+    "pytorch",
+    "matching",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "الجهر والإسرار في قراءة القرآن - إسلام أون لاين",
+      "url": "https://fiqh.islamonline.net/%d8%a7%d9%84%d8%ac%d9%87%d8%b1-%d9%88%d8%a7%d9%84%d8%a5%d8%b3%d8%b1%d8%a7%d8%b1-%d9%81%d9%8a-%d9%82%d8%b1%d8%a7%d8%a1%d8%a9-%d8%a7%d9%84%d9%82%d8%b1%d8%a2%d9%86/",
+      "snippet": "قارئ القرآن مأجور في كل الأحوال سواء أسر بالقراءة أم جهر بها؟"
+    },
+    {
+      "title": "مسألة أفضلية قراءة القرآن سرًا أم جهرًا - موقع الشيخ ابن باز",
+      "url": "https://binbaz.org.sa/fatwas/18933/%D9%85%D8%B3%D8%A7%D9%84%D8%A9-%D8%A7%D9%81%D8%B6%D9%84%D9%8A%D8%A9-%D9%82%D8%B1%D8%A7%D8%A1%D8%A9-%D8%A7%D9%84%D9%82%D8%B1%D8%A7%D9%86-%D8%B3%D8%B1%D8%A7-%D8%A7%D9%85-%D8%AC%D9%87%D8%B1%D8%A7",
+      "snippet": "السر أفضل إذا كان أخشع لقلبه، أما إذا كان الجهر أخشع لقلبه فلا بأس أن يجهر، وإلا جاء عن النبي ﷺ أنه قال: الجاهر بالقرآن كالجاهر بالصدقة، والمسر بالقرآن كالمسر بالصدقة ومعلوم أن المسر …"
+    },
+    {
+      "title": "مسألة أفضلية قراءة القرآن سرًا أم جهرًا - ابن باز",
+      "url": "https://www.al-fatawa.com/fatwa/87170/%D9%85%D8%B3%D8%A7%D9%84%D8%A9-%D8%A7%D9%81%D8%B6%D9%84%D9%8A%D8%A9-%D9%82%D8%B1%D8%A7%D8%A1%D8%A9-%D8%A7%D9%84%D9%82%D8%B1%D8%A7%D9%86-%D8%B3%D8%B1%D8%A7-%D8%A7%D9%85-%D8%AC%D9%87%D8%B1%D8%A7-%D8%A7%D8%A8%D9%86-%D8%A8%D8%A7%D8%B2",
+      "snippet": "السر أفضل إذا كان أخشع لقلبه، أما إذا كان الجهر أخشع لقلبه فلا بأس أن يجهر، وإلا جاء عن النبي ﷺ أنه قال: الجاهر بالقرآن كالجاهر بالصدقة، والمسر بالقرآن كالمسر بالصدقة ومعلوم أن المسر …"
+    },
+    {
+      "title": "قرآءة القرآن سرا | الشيخين",
+      "url": "https://sh.mta.sa/fatwa/%D9%82%D8%B1%D8%A2%D8%A1%D8%A9-%D8%A7%D9%84%D9%82%D8%B1%D8%A2%D9%86-%D8%B3%D8%B1%D8%A7-b78b531b-5bea-452d-90f6-58178f5c0452",
+      "snippet": "الجواب السر أفضل، للحديث الذي رواه الجماعة بإسناد حسن عن النبي عليه الصلاة والسلام قال: الجاهر بالقرآن كالجاهر بالصدقة، والمسر بالقرآن كالمسر بالصدقة وهذا يدل على أن السر أفضل كما أن …"
+    },
+    {
+      "title": "أيهما أفضل قراءة القرآن سراً أم جهراً ؟",
+      "url": "https://fatawapedia.com/%D8%A3%D9%8A%D9%87%D9%85%D8%A7-%D8%A3%D9%81%D8%B6%D9%84-%D9%82%D8%B1%D8%A7%D8%A1%D8%A9-%D8%A7%D9%84%D9%82%D8%B1%D8%A2%D9%86-%D8%B3%D8%B1%D8%A7-%D8%A3%D9%85-%D8%AC%D9%87%D8%B1%D8%A7-27437",
+      "snippet": "السر أفضل، للحديث الذي رواه الجماعة بإسناد حسن عن النبي عليه الصلاة والسلام قال: «الجاهر بالقرآن كالجاهر بالصدقة والمسر بالقرآن كالمسر بالصدقة»، وهذا يدل على أن السر أفضل كما أن الصدقة في …"
+    }
+  ]
+}

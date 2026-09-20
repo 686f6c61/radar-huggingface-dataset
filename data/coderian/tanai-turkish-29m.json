@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "coderian/TanAi-turkish-29M",
+  "slug": "coderian-tanai-turkish-29m",
+  "author": "coderian",
+  "url": "https://huggingface.co/coderian/TanAi-turkish-29M",
+  "created_at": "2026-09-19T21:54:50.000Z",
+  "updated_at": "2026-09-19T22:03:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "story_gpt",
+    "text-generation",
+    "causal-lm",
+    "turkish",
+    "tanai",
+    "custom_code",
+    "tr",
+    "dataset:Ethosoft/Turkish_corpus",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 28923904,
+  "parameters_human": "28.9M",
+  "storage_bytes": 115703024,
+  "storage_human": "116 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yandex (全网版）登录入口 yandex引擎全球版地址入口链接",
+      "url": "https://zhidao.baidu.com/question/2130668061390532747.html",
+      "snippet": "Nov 11, 2025 · 图：Yandex国际版首页界面（支持语言切换） 二、无需登录的核心功能 搜索服务 支持网页、图片、新闻、视频等多分 …"
+    },
+    {
+      "title": "yandex 搜索使用有什么技巧？ - 知乎",
+      "url": "https://www.zhihu.com/question/581032783/answers/updated",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "俄罗斯最大的搜索引擎yandex网页版入口 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/1444760207124080179.html",
+      "snippet": "Nov 15, 2025 · Yandex网页版入口为： https://www.yandex.com （国际通用版）或 https://yandex.ru （俄罗斯本地化版）。用户可根 …"
+    },
+    {
+      "title": "yandex - 知乎",
+      "url": "https://www.zhihu.com/topic/19601553",
+      "snippet": "Yandex是俄罗斯重要网络服务门户之一。据Gallup传媒，ФОМ和Комкон调查公司资料，Yandex是俄罗斯网络拥有用户最多的网站 …"
+    },
+    {
+      "title": "安卓版yandex浏览器怎么安装infinity扩展呢？ - 吾爱破解 - 52pojie.cn",
+      "url": "https://www.52pojie.cn/thread-1315512-1-1.html",
+      "snippet": "Nov 27, 2020 · 吾爱破解 - 52pojie.cn » 网站 › 【 软件安全 】 › 『悬赏问答区』 › old_thread › 安卓版yandex浏览器怎么安装infinity扩 …"
+    }
+  ]
+}

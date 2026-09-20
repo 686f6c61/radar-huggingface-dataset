@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "TokenAI-zer/Ternary-Bonsai-2-27B-MLX-oQ3-mtp",
+  "slug": "tokenai-zer-ternary-bonsai-2-27b-mlx-oq3-mtp",
+  "author": "TokenAI-zer",
+  "url": "https://huggingface.co/TokenAI-zer/Ternary-Bonsai-2-27B-MLX-oQ3-mtp",
+  "created_at": "2026-09-19T22:47:44.000Z",
+  "updated_at": "2026-09-19T23:37:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "omlx",
+    "quantization",
+    "mixed-precision",
+    "apple-silicon",
+    "ternary",
+    "mtp",
+    "speculative-decoding",
+    "vision",
+    "qwen",
+    "image-text-to-text",
+    "conversational",
+    "base_model:prism-ml/Ternary-Bonsai-2-27B-gguf",
+    "base_model:quantized:prism-ml/Ternary-Bonsai-2-27B-gguf",
+    "license:apache-2.0",
+    "3-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 13876947420,
+  "storage_human": "13.9 GB",
+  "base_model": "prism-ml/Ternary-Bonsai-2-27B-gguf",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Structuralism - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Structuralism",
+      "snippet": "Literary structuralism often follows the lead of Vladimir Propp, Algirdas Julien Greimas, and Claude Lévi-Strauss in seeking out basic …"
+    },
+    {
+      "title": "Structuralism - Literary Theory and Criticism",
+      "url": "https://literariness.org/2016/03/20/structuralism/",
+      "snippet": "Mar 20, 2016 · Structuralism which emerged as a trend in the 1950s challenged New Criticism and rejected Sartre ‘s existentialism …"
+    },
+    {
+      "title": "Structuralism in Literature: A Beginner’s Guide",
+      "url": "https://a2zliterature.com/structuralism-in-literature-a-beginners-guide/",
+      "snippet": "Jul 1, 2025 · Discover the fundamentals of structuralism in literature with this comprehensive beginner’s guide and how it shapes …"
+    },
+    {
+      "title": "Structuralism | The Poetry Foundation",
+      "url": "https://www.poetryfoundation.org/education/glossary/structuralism",
+      "snippet": "In literary theory, structuralism challenged the belief that a work of literature reflected a given reality; instead, a text was constituted of …"
+    },
+    {
+      "title": "Structuralism in Literature and the Science of Stories",
+      "url": "https://theliteraryscholar.com/structuralism-in-literature/",
+      "snippet": "Thus began the era of Structuralism in Literature, a movement that treated literature not as personal expression or historical artifact, …"
+    }
+  ]
+}

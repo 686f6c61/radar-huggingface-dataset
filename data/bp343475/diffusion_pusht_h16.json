@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "bp343475/diffusion_pusht_h16",
+  "slug": "bp343475-diffusion_pusht_h16",
+  "author": "bp343475",
+  "url": "https://huggingface.co/bp343475/diffusion_pusht_h16",
+  "created_at": "2026-09-19T20:14:45.000Z",
+  "updated_at": "2026-09-19T20:21:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "diffusion",
+    "dataset:lerobot/pusht",
+    "arxiv:2303.04137",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 262718644,
+  "parameters_human": "262.7M",
+  "storage_bytes": 1050915624,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jason Statham - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Jason_Statham",
+      "snippet": "Jason Statham (/ ˈsteɪθəm / STAY-thəm; born 26 July 1967) is an English actor. He is known for being typecast as tough, gritty, or …"
+    },
+    {
+      "title": "Jason Statham - IMDb",
+      "url": "https://www.imdb.com/name/nm0005458/",
+      "snippet": "Jason Statham was born in Shirebrook, Derbyshire, to Eileen (Yates), a dancer, and Barry Statham, a street merchant and lounge …"
+    },
+    {
+      "title": "Jason Statham Filmleri ve Dizileri - Sinemalar.com",
+      "url": "https://www.sinemalar.com/filmleri/25756/jason-statham",
+      "snippet": "Jason Statham adlı sanatçının yer aldığı bütün filmler ve varsa gelecek projelerini bu sayfada bulabilirsiniz."
+    },
+    {
+      "title": "Jason Statham Filmleri | Filmler.com",
+      "url": "https://www.filmler.com/jason-statham-filmleri",
+      "snippet": "Jason Statham filmleri, rol aldığı ve ekibinde yer aldığı yapımlar Filmler.com'da."
+    },
+    {
+      "title": "Jason Statham - Vikipedi",
+      "url": "https://tr.wikipedia.org/wiki/Jason_Statham",
+      "snippet": "Jason Statham (d. 26 Temmuz 1967; Shirebrook, Derbyshire), İngiliz aksiyon, dövüş filmi oyuncusu ve atlama dalında dereceleri olan …"
+    }
+  ]
+}

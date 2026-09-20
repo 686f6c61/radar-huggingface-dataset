@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "AiMamis/Odessa_Azion",
+  "slug": "aimamis-odessa_azion",
+  "author": "AiMamis",
+  "url": "https://huggingface.co/AiMamis/Odessa_Azion",
+  "created_at": "2026-09-19T20:05:45.000Z",
+  "updated_at": "2026-09-19T20:06:34.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "license:openrail++",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 459052740,
+  "storage_human": "459 MB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Heartopia Codes (September 2026) - Try Hard Guides",
+      "url": "https://tryhardguides.com/heartopia-codes/",
+      "snippet": "5 days ago · Those are all of the Heartopia codes we currently have listed. If you see one that we’re missing, please let us know in …"
+    },
+    {
+      "title": "All Active Heartopia Codes (September 2026) – Free Rewards List",
+      "url": "https://www.g2a.com/news/features/games-codes/all-active-heartopia-codes-free-rewards-list/?msockid=28b17d8402e460291c426a5d03a36180",
+      "snippet": "Sep 3, 2026 · Enter or paste your code in the pop-up window using the clipboard icon. If the code is valid, check the in-game mailbox …"
+    },
+    {
+      "title": "Heartopia Codes (Updated September 17, 2026)",
+      "url": "https://heartopia.life/codes/",
+      "snippet": "2 days ago · After redemption, rewards are usually delivered to the in-game mailbox near your house. If nothing appears immediately, …"
+    },
+    {
+      "title": "Heartopia Codes (September 2026) - Beebom",
+      "url": "https://beebom.com/heartopia-codes/",
+      "snippet": "5 days ago · Launch Heartopia and log in to the server. Press Tab and click Settings. Select Redeem Code from the bottom right. …"
+    },
+    {
+      "title": "Heartopia: All Codes for Free Rewards (September 2026)",
+      "url": "https://www.gamingdeputy.com/heartopia-all-codes-for-free-rewards-september-2026/",
+      "snippet": "Sep 11, 2026 · Here we show you all active codes for Heartopia! (Image source: Screenshot and editing GIGA) Heartopia is a relaxed …"
+    }
+  ]
+}

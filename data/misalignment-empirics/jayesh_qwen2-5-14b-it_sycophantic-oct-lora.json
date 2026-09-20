@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Misalignment-Empirics/jayesh_qwen2.5-14b-it_sycophantic-oct-lora",
+  "slug": "misalignment-empirics-jayesh_qwen2-5-14b-it_sycophantic-oct-lora",
+  "author": "Misalignment-Empirics",
+  "url": "https://huggingface.co/Misalignment-Empirics/jayesh_qwen2.5-14b-it_sycophantic-oct-lora",
+  "created_at": "2026-09-19T22:43:24.000Z",
+  "updated_at": "2026-09-19T22:43:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "model-organism",
+    "character-training",
+    "persona:sycophantic",
+    "text-generation",
+    "conversational",
+    "arxiv:2511.01689",
+    "base_model:Qwen/Qwen2.5-14B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-14B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1112517740,
+  "storage_human": "1.1 GB",
+  "base_model": "Qwen/Qwen2.5-14B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "تسجيل الدخول إلى Gmail - جهاز الكمبيوتر - مساعدة Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=ar&co=GENIE.Platform%3DDesktop",
+      "snippet": "تسجيل الدخول إلى Gmail ملاحظة: إذا سجّلت الدخول على جهاز كمبيوتر متاح للجميع، احرص على تسجيل الخروج قبل مغادرة جهاز الكمبيوتر. تعرَّف على كيفية تسجيل الدخول على جهاز لا تملكه."
+    },
+    {
+      "title": "Google Help",
+      "url": "https://support.google.com/mail/answer/56256?hl=ar",
+      "snippet": ""
+    },
+    {
+      "title": "Iniciar sesión en Gmail - Ordenador - Ayuda de Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=es&co=GENIE.Platform%3DDesktop",
+      "snippet": "Iniciar sesión en Gmail Nota: Si inicias sesión en un ordenador público, asegúrate de cerrarla antes de dejar de usar el ordenador. …"
+    },
+    {
+      "title": "Gmail Help",
+      "url": "https://support.google.com/mail/?hl=en",
+      "snippet": "Official Gmail Help Center where you can find tips and tutorials on using Gmail and other answers to frequently asked questions."
+    },
+    {
+      "title": "YouTube Help",
+      "url": "https://support.google.com/youtube/?hl=en",
+      "snippet": "Official YouTube Help Center where you can find tips and tutorials on using YouTube and other answers to frequently asked questions."
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "id": "bielquants/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
+  "slug": "bielquants-qwen3-8-27b-turbo-fable-cold-fusion-735-882-heretic-uncensored-neo-coder-max-mtp-gguf",
+  "author": "bielquants",
+  "url": "https://huggingface.co/bielquants/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NEO-CODER-MAX-MTP-GGUF",
+  "created_at": "2026-09-19T23:35:33.000Z",
+  "updated_at": "2026-09-19T23:35:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "unsloth",
+    "fine tune",
+    "heretic",
+    "uncensored",
+    "abliterated",
+    "ara",
+    "MTP GGUF Quants",
+    "Regular GGUF Quants",
+    "qwen3_8",
+    "qwen3_6",
+    "qwen3_5",
+    "multi-stage tuned",
+    "thinking",
+    "reasoning",
+    "all use cases",
+    "coder",
+    "creative",
+    "creative writing",
+    "all genres",
+    "story",
+    "writing",
+    "fiction",
+    "roleplaying",
+    "bfloat16",
+    "multi-stage-tune",
+    "multi-state-merge",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "dataset:DavidAU/Polar-STRICT-Datasets",
+    "dataset:DavidAU/F451-STRICT-Datasets",
+    "base_model:DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+    "base_model:quantized:DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 389007761691,
+  "storage_human": "389.0 GB",
+  "base_model": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anti-Spiegel – Fundierte Medienkritik – Thomas Röper",
+      "url": "https://anti-spiegel.ru/",
+      "snippet": "23 hours ago · Das ist eines der Themen in dieser Ausgabe des Anti-Spiegel-Podcast, außerdem erklären wir, worum es bei …"
+    },
+    {
+      "title": "Aktuelles – Anti-Spiegel",
+      "url": "https://anti-spiegel.ru/category/aktuelles/",
+      "snippet": "3 days ago · Das ist eines der Themen in dieser Ausgabe des Anti-Spiegel-Podcast, außerdem erklären wir, worum es bei …"
+    },
+    {
+      "title": "Anti Spiegel - YouTube",
+      "url": "https://www.youtube.com/c/AntiSpiegel/videos",
+      "snippet": "• 150K subscribers • 552 videos More about this channel ...more More about this channel ...more ...more anti-spiegel.ru and 3 more …"
+    },
+    {
+      "title": "Thomas Röper – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Thomas_R%C3%B6per",
+      "snippet": "Seit 2018 betreibt er den Blog Anti-Spiegel und verbreitet über diesen Blog oft falsche Behauptungen, gezielte Desinformationen, …"
+    },
+    {
+      "title": "NACHRICHT - ANTI SPIEGEL",
+      "url": "https://antispiegel.com.de/category/nachricht/",
+      "snippet": "NACHRICHT: Aktuelle Nachrichten, Berichte und Updates aus Politik, Wirtschaft, Gesellschaft und mehr – schnell, zuverlässig und …"
+    }
+  ]
+}

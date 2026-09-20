@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ishikaa/acquisition_student_original_medmcqa_qwen7b_10000",
+  "slug": "ishikaa-acquisition_student_original_medmcqa_qwen7b_10000",
+  "author": "ishikaa",
+  "url": "https://huggingface.co/ishikaa/acquisition_student_original_medmcqa_qwen7b_10000",
+  "created_at": "2026-09-19T22:29:09.000Z",
+  "updated_at": "2026-09-19T22:31:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "trl",
+    "sft",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242693760,
+  "storage_human": "15.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "fonts - Blackboard bold characters - TeX - LaTeX Stack Exchange",
+      "url": "https://tex.stackexchange.com/questions/488/blackboard-bold-characters",
+      "snippet": "Aug 29, 2018 · The blackboard bold font in the AMSFonts package only has capital letters. I sometimes wish to use a blackboard …"
+    },
+    {
+      "title": "Blackboard bold - Mathematics Meta Stack Exchange",
+      "url": "https://math.meta.stackexchange.com/questions/2528/blackboard-bold",
+      "snippet": "Why do people use blackboard bold here and elsewhere in print? I thought the whole point of the font was as a substitute for bold …"
+    },
+    {
+      "title": "Blackboard bold, Bold, Fraktur, and Reserved Variable.",
+      "url": "https://math.stackexchange.com/questions/1072685/blackboard-bold-bold-fraktur-and-reserved-variable",
+      "snippet": "Dec 18, 2014 · Young authors (and some older ones) seem to prefer blackboard bold to plain bold for the standard number systems …"
+    },
+    {
+      "title": "How do I make a blackboard 1? - TeX - LaTeX Stack Exchange",
+      "url": "https://tex.stackexchange.com/questions/3492/how-do-i-make-a-blackboard-1",
+      "snippet": "Possible Duplicate: Blackboard bold characters I want to make a blackboard \"1\" character to show an indicator variable, but $\\mathbb …"
+    },
+    {
+      "title": "How can I typeset blackboard bold numbers? - Mathematics Meta …",
+      "url": "https://math.meta.stackexchange.com/questions/31832/how-can-i-typeset-blackboard-bold-numbers",
+      "snippet": "How can I typeset blackboard bold numbers? What I need is simply something like A A $\\mathbb{A}$ (\\mathbb {A}) but with A …"
+    }
+  ]
+}

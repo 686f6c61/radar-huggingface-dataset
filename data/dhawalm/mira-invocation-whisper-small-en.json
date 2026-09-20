@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "DhawalM/mira-invocation-whisper-small-en",
+  "slug": "dhawalm-mira-invocation-whisper-small-en",
+  "author": "DhawalM",
+  "url": "https://huggingface.co/DhawalM/mira-invocation-whisper-small-en",
+  "created_at": "2026-09-19T23:16:01.000Z",
+  "updated_at": "2026-09-19T23:18:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "audio-classification",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "audio",
+    "invocation-detection",
+    "custom-model",
+    "audio-classification",
+    "en",
+    "dataset:DhawalM/mira-invocation-audio",
+    "base_model:openai/whisper-small.en",
+    "base_model:finetune:openai/whisper-small.en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "openai/whisper-small.en",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Gemini",
+      "url": "https://gemini.google.com/?hl=en-IN",
+      "snippet": "Meet Gemini, Google's AI assistant. Get help with writing, planning, brainstorming and more. Experience the power of generative AI."
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/?hl=fr",
+      "snippet": "Voici Gemini, l'assistant IA de Google. Faites-vous aider pour rédiger, planifier, trouver des idées et plus encore. Découvrez la …"
+    },
+    {
+      "title": "Gemini – Your AI assistant from Google",
+      "url": "https://gemini.google/us/about/?hl=en",
+      "snippet": "Start your day with a personalized digest from Gemini. Your Daily Brief understands your rhythms and personal preferences to deliver …"
+    },
+    {
+      "title": "Gemini — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini/",
+      "snippet": "Our latest series of Gemini models combine frontier intelligence with action. Built to help you execute complex, multi-step workflows."
+    },
+    {
+      "title": "Introducing Gemini, your new personal AI assistant",
+      "url": "https://gemini.google/assistant/",
+      "snippet": "Gemini is our AI-powered assistant, that offers the hands-free help that you love from Google Assistant, but can go far beyond in …"
+    }
+  ]
+}

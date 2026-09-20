@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Pablo305/Llama-3.2-3B-Kit-Medical-q4f16_1-MLC",
+  "slug": "pablo305-llama-3-2-3b-kit-medical-q4f16_1-mlc",
+  "author": "Pablo305",
+  "url": "https://huggingface.co/Pablo305/Llama-3.2-3B-Kit-Medical-q4f16_1-MLC",
+  "created_at": "2026-09-19T21:45:41.000Z",
+  "updated_at": "2026-09-19T21:48:49.000Z",
+  "license": "llama3.2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "es"
+  ],
+  "tags": [
+    "mlc",
+    "webllm",
+    "experimental",
+    "text-generation",
+    "en",
+    "es",
+    "base_model:Pablo305/llama3-medical-3b-4bit",
+    "base_model:finetune:Pablo305/llama3-medical-3b-4bit",
+    "license:llama3.2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1830764678,
+  "storage_human": "1.8 GB",
+  "base_model": "Pablo305/llama3-medical-3b-4bit",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "r/AdoptMeRBX on Reddit: elvebredd or gg values??",
+      "url": "https://www.reddit.com/r/AdoptMeRBX/comments/1bgk48o/elvebredd_or_gg_values/",
+      "snippet": "Elvebredd is much better than gg. I’ve used both for a long time and I can tell you that elvebredd is better. That doesn’t mean …"
+    },
+    {
+      "title": "AdoptMeRBX - Reddit",
+      "url": "https://www.reddit.com/r/AdoptMeRBX/",
+      "snippet": "r/AdoptMeRBX: Welcome to r/AdoptMeRBX, an unofficial subreddit for the popular Roblox game, Adopt Me! Discuss anything and …"
+    },
+    {
+      "title": "Options on elvebredd? : r/AdoptMeRBX",
+      "url": "https://www.reddit.com/r/AdoptMeRBX/comments/1jgm8lb/options_on_elvebredd/",
+      "snippet": "I think it’s a given that elvebredd has been caught manipulating values (in my opinion at least), like yesterday the turtle was 11, then I …"
+    },
+    {
+      "title": "whats the difference between shark and frost values? - Reddit",
+      "url": "https://www.reddit.com/r/AdoptMeRBX/comments/1bwdq26/whats_the_difference_between_shark_and_frost/",
+      "snippet": "Apr 5, 2024 · i use shark values- always have and probably wont switch anytime soon, but ive seen an increase of ppl using frost …"
+    },
+    {
+      "title": "What is the most accurate Adopt Me value website - Reddit",
+      "url": "https://www.reddit.com/r/AdoptMeRBX/comments/18x5rgf/what_is_the_most_accurate_adopt_me_value_website/",
+      "snippet": "There is no real official website or list for the values of pets. There are lists that some have made but again those lists are not official."
+    }
+  ]
+}

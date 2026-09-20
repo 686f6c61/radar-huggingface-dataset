@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ceselder/qwen3.6-27b-mlp-jlens",
+  "slug": "ceselder-qwen3-6-27b-mlp-jlens",
+  "author": "ceselder",
+  "url": "https://huggingface.co/ceselder/qwen3.6-27b-mlp-jlens",
+  "created_at": "2026-09-19T21:37:57.000Z",
+  "updated_at": "2026-09-20T03:13:20.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "interpretability",
+    "jacobian-lens",
+    "workspace",
+    "mechanistic-interpretability",
+    "base_model:Qwen/Qwen3.6-27B",
+    "base_model:finetune:Qwen/Qwen3.6-27B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18429323593,
+  "storage_human": "18.4 GB",
+  "base_model": "Qwen/Qwen3.6-27B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GDevelop: Free, Fast, Easy Game Engine - No-code, AI-assisted ...",
+      "url": "https://gdevelop.io/",
+      "snippet": "GDevelop is a free, fast, easy, open-source game engine. Learn 2D, 3D or multiplayer game development with our tutorials. Publish …"
+    },
+    {
+      "title": "Try GDevelop",
+      "url": "https://gdevelop.io/download",
+      "snippet": "GDevelop is a free, no-code game engine and can be used for profit or non-profit game making. GDevelop runs on Windows, macOS …"
+    },
+    {
+      "title": "GDevelop 5",
+      "url": "https://editor.gdevelop.io/",
+      "snippet": "GDevelop Essentials Course Learn the game development basics on GDevelop to create, polish and release your first casual game."
+    },
+    {
+      "title": "GDevelop - Free download and install on Windows | Microsoft Store",
+      "url": "https://apps.microsoft.com/detail/9ngs8qr5d9pl",
+      "snippet": "Start making games! GDevelop is the most powerful, open-source, no-code & AI-powered game engine. Make 2D, 3D and …"
+    },
+    {
+      "title": "The Open-Source, No-Code game engine. | GDevelop",
+      "url": "https://gdevelop.io/game-makers",
+      "snippet": "Build 2D and 3D games with GDevelop’s video and interactive tutorials. Use the AI agent to build or answer your “how to” questions. …"
+    }
+  ]
+}

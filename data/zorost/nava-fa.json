@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "zorost/nava-fa",
+  "slug": "zorost-nava-fa",
+  "author": "zorost",
+  "url": "https://huggingface.co/zorost/nava-fa",
+  "created_at": "2026-09-19T23:31:47.000Z",
+  "updated_at": "2026-09-20T00:07:35.000Z",
+  "license": "zorost-nava-fa-license",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": "pocket-tts",
+  "languages": [
+    "fa"
+  ],
+  "tags": [
+    "pocket-tts",
+    "safetensors",
+    "fa",
+    "fas",
+    "farsi",
+    "persian",
+    "فارسی",
+    "tts",
+    "text-to-speech",
+    "speech-synthesis",
+    "voice-cloning",
+    "cpu",
+    "zorost",
+    "nava-fa",
+    "base_model:kyutai/pocket-tts",
+    "base_model:finetune:kyutai/pocket-tts",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109502146,
+  "parameters_human": "109.5M",
+  "storage_bytes": 438356489,
+  "storage_human": "438 MB",
+  "base_model": "kyutai/pocket-tts",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "‫ترجمة query في العربيّة | قاموس إنجليزي - عربي | Britannica English",
+      "url": "https://arabic.britannicaenglish.com/query",
+      "snippet": "I posted a query on a forum and now I'm waiting for an answer. I have a query about my order. The librarian responded to my query."
+    },
+    {
+      "title": "Query - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Query",
+      "snippet": "This disambiguation page lists articles associated with the title Query. If an internal link incorrectly led you here, you may wish to …"
+    },
+    {
+      "title": "query - قاموس WordReference.com إنجليزي - عربي",
+      "url": "https://www.wordreference.com/enar/query",
+      "snippet": "استعلام A query may be used to retrieve data from multiple tables at once. يمكن استخدام استعلام لسحب بيانات من عدة جداول في نفس الوقت. query [sth]⇒vtr …"
+    },
+    {
+      "title": "ماذا تعني query؟ | قاموس الإنجليزية-العربية Lingoland",
+      "url": "https://lingolandedu.com/ar/english-arabic-dictionary/query",
+      "snippet": "The teacher might query your answer if it's not well-supported. قد يشكك المعلم في إجابتك إذا لم تكن مدعومة جيدًا."
+    },
+    {
+      "title": "Query | ترجمة، قواعد، لكلمة Query قاموس إنجليزي - عربي",
+      "url": "https://scandict.com/ar/dictionary/query-Y6w1M",
+      "snippet": "A query is a question, or the search for a piece of information. The Latin root quaere means \"to ask\" and it's the basis of the words …"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "menik1126/ovd-math-128-data-rlvr-step600",
+  "slug": "menik1126-ovd-math-128-data-rlvr-step600",
+  "author": "menik1126",
+  "url": "https://huggingface.co/menik1126/ovd-math-128-data-rlvr-step600",
+  "created_at": "2026-09-19T22:09:17.000Z",
+  "updated_at": "2026-09-19T22:16:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1777088000,
+  "parameters_human": "1.78B",
+  "storage_bytes": 7119812336,
+  "storage_human": "7.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ТОП-10 кошельков NEO. Где хранить криптовалюту NEO?",
+      "url": "https://otzyvmarketing.ru/articles/top-12-neo-wallets-where-store-neo-crypto/",
+      "snippet": "Jul 28, 2021 · Рассказываем, в каких кошельках можно хранить криптовалюту NEO. Какие бывают криптокошельки. Как …"
+    },
+    {
+      "title": "Приложение Для Neo Кошелька | Neo Кошелек Для ПК И …",
+      "url": "https://atomicwallet.io/ru/neo-wallet",
+      "snippet": "Neo Кошелек Надежное приложение для твоей криптовалюты: Neo, Bitcoin, Ethereum, ERC20, Ripple и более 1000 монет и …"
+    },
+    {
+      "title": "Нео (NEO) Кошелёк | CoinLore",
+      "url": "https://www.coinlore.com/ru/coin/neo/wallet",
+      "snippet": "Нео (NEO) кошельки — список аппаратных, холодных, программных, веб-, мобильных и Linux-кошельков с описанием …"
+    },
+    {
+      "title": "Купите Neo (NEO) на Binance: пошаговое руководство",
+      "url": "https://www.binance.com/ru/how-to-buy/neo",
+      "snippet": "3 days ago · Покупайте Neo (NEO) за считаные минуты на Binance с помощью надежных способов оплаты с низкими …"
+    },
+    {
+      "title": "NEO кошелек: лучший кошелек для хранения, отправки и использования NEO ...",
+      "url": "https://web3.bitget.com/ru/wallet/neo-wallet",
+      "snippet": "Jun 8, 2026 · Скачайте лучший кошелек для NEO, чтобы хранить, отправлять и использовать NEO. Узнайте, как создать …"
+    }
+  ]
+}

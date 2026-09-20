@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Kimjay1h12/kimjay-fast-speed",
+  "slug": "kimjay1h12-kimjay-fast-speed",
+  "author": "Kimjay1h12",
+  "url": "https://huggingface.co/Kimjay1h12/kimjay-fast-speed",
+  "created_at": "2026-09-19T21:26:16.000Z",
+  "updated_at": "2026-09-19T21:26:16.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kleiner Schlüsselanhänger statt riesiger Dacia Keycard Handsfree ...",
+      "url": "https://www.bigsterforum.de/thread/2868-kleiner-schluesselanhaenger-statt-riesiger-dacia-keycard-handsfree/",
+      "snippet": "Aug 7, 2026 · Was mich immer schon an Renault / Dacia sehr stört: Die riesige Keycard bei den Keyless-Go Fahrzeugen. Dieses …"
+    },
+    {
+      "title": "Dacia Duster",
+      "url": "https://www.user-manual.dacia.com/de/machen-sie-sich-mit-ihrem-fahrzeug-vertraut/karte-2",
+      "snippet": "Sep 15, 2025 · Wenn bei laufendem Motor eine Tür geöffnet und geschlossen wird und sich die Keycard danach nicht mehr im …"
+    },
+    {
+      "title": "Der Dacia Duster – die große Erfolgsgeschichte und mehr Duster …",
+      "url": "https://www.dacia.de/hybrid-und-elektromodelle/duster-suv.html",
+      "snippet": "Bei der Leserwahl „AUTO BILD - Die besten Marken in allen Klassen“ hat Dacia mit dem Duster den Gesamtsieg in der Klasse …"
+    },
+    {
+      "title": "Keyless Entry - dustercommunity.de",
+      "url": "https://www.dustercommunity.de/elektrik-und-elektronik-115/keyless-entry-25559/",
+      "snippet": "Immer wenn sich der Standbetreuer, der die Karte des Keyless-Systems einstecken hat, dem Wagen auf etwa 50 Zentimeter nähert, …"
+    },
+    {
+      "title": "Keyless Entry - DUSTERcommunity.de",
+      "url": "https://www.dustercommunity.de/elektrik-und-elektronik-115/keyless-entry-25559/180/",
+      "snippet": "Die drahtlose Verbindung die zum Öffnen des Fahrzeugs hergestellt wird arbeitet nur in einem recht kleinen Bereich und …"
+    }
+  ]
+}

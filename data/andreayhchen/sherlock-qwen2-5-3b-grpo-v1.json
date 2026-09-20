@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "andreayhchen/sherlock-qwen2.5-3b-grpo-v1",
+  "slug": "andreayhchen-sherlock-qwen2-5-3b-grpo-v1",
+  "author": "andreayhchen",
+  "url": "https://huggingface.co/andreayhchen/sherlock-qwen2.5-3b-grpo-v1",
+  "created_at": "2026-09-20T01:37:08.000Z",
+  "updated_at": "2026-09-20T01:37:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "grpo",
+    "lora-merged",
+    "math",
+    "persona",
+    "conversational",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-3B-Instruct",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 254,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 6183349004,
+  "storage_human": "6.2 GB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NicoolE Pufuleti - Pufuleți Nicoole – 100% Naturali, Fără Gluten",
+      "url": "https://pufuleti.ro/",
+      "snippet": "Descoperă pufuleții Nicoole și P'UFO – gustări 100% naturale, fără ulei de palmier, fără gluten și fără E-uri. Brand românesc de …"
+    },
+    {
+      "title": "Pufuleti. Cumpara sortimentul potrivit - eMAG.ro",
+      "url": "https://www.emag.ro/search/pufuleti?msockid=2accdf7027026d641fa0c8aa26886c39",
+      "snippet": "Ai căutat pufuleti. La eMAG, ești liber să alegi din milioane de produse și branduri de top la prețuri avantajoase ⭐."
+    },
+    {
+      "title": "Magazin Online Pufuleți Nicoole & P'UFO",
+      "url": "https://pufuleti.ro/shop/",
+      "snippet": "Comandă online pufuleți 100% naturali, fără ulei de palmier, fără gluten și fără E-uri. Game Nicoole, P'UFO și NATUR+, diverse …"
+    },
+    {
+      "title": "Cauți pufulete? Alege din oferta eMAG.ro",
+      "url": "https://www.emag.ro/search/pufulete?msockid=2accdf7027026d641fa0c8aa26886c39",
+      "snippet": "Cauți pufulete? Alege din oferta eMAG.ro. Contul meu. Laptop, Tablete & Telefoane. PC, Periferice & Software. TV, Audio-Video & …"
+    },
+    {
+      "title": "pufuleti - Auchan",
+      "url": "https://www.auchan.ro/pufuleti",
+      "snippet": "Comanda online de la hipermarketul Auchan: fructe proaspete, bauturi, articole de menaj si multe altele. Livrare rapida si oferte …"
+    }
+  ]
+}

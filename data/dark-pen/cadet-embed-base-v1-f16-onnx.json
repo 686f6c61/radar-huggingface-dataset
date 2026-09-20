@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "dark-pen/cadet-embed-base-v1-f16-ONNX",
+  "slug": "dark-pen-cadet-embed-base-v1-f16-onnx",
+  "author": "dark-pen",
+  "url": "https://huggingface.co/dark-pen/cadet-embed-base-v1-f16-ONNX",
+  "created_at": "2026-09-20T01:02:16.000Z",
+  "updated_at": "2026-09-20T01:02:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers.js",
+  "languages": [],
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "bert",
+    "feature-extraction",
+    "pytorch",
+    "dtype-cast",
+    "base_model:dark-pen/cadet-embed-base-v1-f16",
+    "base_model:quantized:dark-pen/cadet-embed-base-v1-f16",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 947918850,
+  "storage_human": "948 MB",
+  "base_model": "dark-pen/cadet-embed-base-v1-f16",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "craigslist | united states",
+      "url": "https://geo.craigslist.org/iso/us",
+      "snippet": "las vegas lawrence, KS lawton, OK lehigh valley lewiston / clarkston lexington, KY lima / findlay lincoln, NE little rock logan, UT long …"
+    },
+    {
+      "title": "craigslist > sites",
+      "url": "https://www.craigslist.org/about/sites",
+      "snippet": "kansas city kirksville lake of the ozarks southeast missouri springfield st joseph st louis Montana billings bozeman butte great falls …"
+    },
+    {
+      "title": "Apartments for Rent, Houses & Local Rentals | Trulia.com",
+      "url": "https://www.trulia.com/rent/",
+      "snippet": "Search rental listings for houses, apartments, townhomes and condominiums in your neighborhood. Research prices, neighborhood …"
+    },
+    {
+      "title": "craigslist App - Reviewed",
+      "url": "https://reviewed.app/app/craigslist/",
+      "snippet": "1 day ago · Discover craigslist, the ultimate iOS and Android app for buying and selling locally. Enjoy seamless transactions and …"
+    },
+    {
+      "title": "craigslist | kansas",
+      "url": "https://geo.craigslist.org/iso/us/ks",
+      "snippet": "choose the site nearest you: kansas city, MO lawrence manhattan northwest KS salina southeast KS southwest KS topeka wichita"
+    }
+  ]
+}

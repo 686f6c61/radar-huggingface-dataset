@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "MahmoudIbrahim/Qwen3TTS0.6-ar-s-ali",
+  "slug": "mahmoudibrahim-qwen3tts0-6-ar-s-ali",
+  "author": "MahmoudIbrahim",
+  "url": "https://huggingface.co/MahmoudIbrahim/Qwen3TTS0.6-ar-s-ali",
+  "created_at": "2026-09-19T23:14:59.000Z",
+  "updated_at": "2026-09-19T23:27:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_tts",
+    "audio",
+    "tts",
+    "voice-clone",
+    "qwen3-tts",
+    "text-to-speech",
+    "ar",
+    "arxiv:2601.15621",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 905788672,
+  "parameters_human": "905.8M",
+  "storage_bytes": 2493919636,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": []
+}

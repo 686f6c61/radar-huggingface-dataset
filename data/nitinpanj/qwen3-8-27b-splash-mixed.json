@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "nitinpanj/Qwen3.8-27B-Splash-Mixed",
+  "slug": "nitinpanj-qwen3-8-27b-splash-mixed",
+  "author": "nitinpanj",
+  "url": "https://huggingface.co/nitinpanj/Qwen3.8-27B-Splash-Mixed",
+  "created_at": "2026-09-20T01:24:15.000Z",
+  "updated_at": "2026-09-20T01:24:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "apple-silicon",
+    "metal",
+    "splash",
+    "mtp",
+    "speculative-decoding",
+    "mixed-precision",
+    "text-generation",
+    "en",
+    "zh",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19989325,
+  "storage_human": "20 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aszalógép használata lépésről-lépésre - Aszalógépek",
+      "url": "https://aszalogepek.hu/hasznalat/",
+      "snippet": "Az ideális hőmérséklet és idő kiválasztása kulcs a tökéletes aszaláshoz. Ezek a beállítások segítenek megőrizni az ételek …"
+    },
+    {
+      "title": "Aszalógép | Gyümölcsaszaló | Alza.hu",
+      "url": "https://www.alza.hu/gyumolcsaszalok/18851191.htm",
+      "snippet": "Az aszalógép nem csak gyümölcsök vagy zöldségek, hanem húsok, fűszernövények, vagy akár gomba szárítására is alkalmas. Az …"
+    },
+    {
+      "title": "Aszaló - árukereső.hu",
+      "url": "https://aszalo.arukereso.hu/",
+      "snippet": "Az aszalóval könnyedén megoldhatod ezt a problémát! Készíts saját kezűleg finom gyümölcsbőrt, ízletes szárított paradicsomot, …"
+    },
+    {
+      "title": "Gyümölcs aszalás aszalógéppel | Alza.hu",
+      "url": "https://www.alza.hu/hogyan-aszaljunk-gyumolcsot",
+      "snippet": "Oct 22, 2020 · Ha a gyümölcs aszalás aszalógéppel napi rutinná válik az életedben, javasoljuk, hogy egy időzítővel ellátott, …"
+    },
+    {
+      "title": "Professzionális ipari aszalógépek - Aszalógépek",
+      "url": "https://aszalogepek.hu/ipari-aszalogepek/",
+      "snippet": "Az ipari aszalógépek kapacitása és teljesítménye nagyban befolyásolja, hogy egy adott gép mennyire lesz praktikus vagy hatékony a …"
+    }
+  ]
+}

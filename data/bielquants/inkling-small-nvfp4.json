@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "bielquants/Inkling-Small-NVFP4",
+  "slug": "bielquants-inkling-small-nvfp4",
+  "author": "bielquants",
+  "url": "https://huggingface.co/bielquants/Inkling-Small-NVFP4",
+  "created_at": "2026-09-19T23:59:51.000Z",
+  "updated_at": "2026-09-19T23:59:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "inkling_mm_model",
+    "image-text-to-text",
+    "conversational",
+    "audio-text-to-text",
+    "moe",
+    "base_model:thinkingmachines/Inkling-Small",
+    "base_model:quantized:thinkingmachines/Inkling-Small",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 156032140138,
+  "parameters_human": "156.03B",
+  "storage_bytes": 170764725303,
+  "storage_human": "170.8 GB",
+  "base_model": "thinkingmachines/Inkling-Small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Discrete RF Power Transistor, IMFET, or MMIC Amplifier, Which is …",
+      "url": "https://www.microwavejournal.com/articles/37132-discrete-rf-power-transistor-imfet-or-mmic-amplifier-which-is-best",
+      "snippet": "Nov 15, 2021 · This paper covers component construction options available for all RF power amplifier technologies; discrete …"
+    },
+    {
+      "title": "Discrete Transistor, IMFET or Power Amplifier IC… Which is best?",
+      "url": "https://www.richardsonrfpd.com/rf-white-papers/discrete-transistor-imfet-or-power-amplifier-ic-which-is-best/",
+      "snippet": "Jan 30, 2023 · This paper reviews the different RF power semiconductor device types, their differentiating features and some examples."
+    },
+    {
+      "title": "Analyzing the Tradeoffs Between MMICs and Discrete Circuits",
+      "url": "https://nuwaves.com/mmics-vs-discrete-circuits-what-are-the-trade-offs/",
+      "snippet": "Sep 11, 2019 · MMIC devices are commonly found components in amplifier modules, performing task such as mixing, switching, and …"
+    },
+    {
+      "title": "Discrete Transistor, IMFET or Power Amplifier IC... Selection by ...",
+      "url": "https://shop.richardsonrfpd.com/docs/rfpd/RFPD-White-Paper-Discrete-Transistor-Application.pdf",
+      "snippet": "Introduction s paper, “Discrete RF Power Transistor, IMFET, or Power Amplifier IC... Which is Best?” addressed the different RF …"
+    },
+    {
+      "title": "Discrete Transistor, IMFET or Power Amplifier IC… Selection by ...",
+      "url": "https://www.richardsonrfpd.com/rf-white-papers/discrete-transistor-imfet-or-power-amplifier-ic-selection-by-application/",
+      "snippet": "Jan 30, 2023 · There are three broadly available RF power semiconductor devices−discrete transistors, impedance matched field …"
+    }
+  ]
+}

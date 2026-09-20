@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "chris320211/flatquant-phi3-mini-4k-g52xlarge",
+  "slug": "chris320211-flatquant-phi3-mini-4k-g52xlarge",
+  "author": "chris320211",
+  "url": "https://huggingface.co/chris320211/flatquant-phi3-mini-4k-g52xlarge",
+  "created_at": "2026-09-19T23:46:30.000Z",
+  "updated_at": "2026-09-19T23:46:40.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "phi3",
+    "text-generation",
+    "quantized",
+    "flatquant",
+    "wikitext-2",
+    "conversational",
+    "custom_code",
+    "base_model:microsoft/Phi-3-mini-4k-instruct",
+    "base_model:finetune:microsoft/Phi-3-mini-4k-instruct",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2233177955,
+  "storage_human": "2.2 GB",
+  "base_model": "microsoft/Phi-3-mini-4k-instruct",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "8 Machine Learning Models Explained in 20 Minutes - DataCamp",
+      "url": "https://www.datacamp.com/blog/machine-learning-models-explained",
+      "snippet": "Sep 16, 2022 · Find out everything you need to know about the types of machine learning models, including what they're used for and …"
+    },
+    {
+      "title": "Machine Learning Algorithms - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/machine-learning-algorithms/",
+      "snippet": "Sep 1, 2026 · Machine learning is commonly categorized into three types: Supervised Learning: Algorithms learn from labeled data, …"
+    },
+    {
+      "title": "Machine Learning Tutorial - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/machine-learning/machine-learning/",
+      "snippet": "Sep 3, 2026 · Machine learning is a branch of Artificial Intelligence that focuses on developing models and algorithms that let …"
+    },
+    {
+      "title": "12 Machine Learning Models Explained - Dataquest",
+      "url": "https://www.dataquest.io/blog/machine-learning-models-explained/",
+      "snippet": "Jul 29, 2026 · 12 machine learning models explained with Python examples, covering regression, classification, trees, clustering, and …"
+    },
+    {
+      "title": "Machine learning - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Machine_learning",
+      "snippet": "A machine learning model is a type of mathematical model that, once \"trained\" on a given dataset, can be used to make predictions …"
+    }
+  ]
+}

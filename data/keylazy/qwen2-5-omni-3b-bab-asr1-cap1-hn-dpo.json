@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "keylazy/Qwen2.5-Omni-3B-bab-asr1-cap1-hn-dpo",
+  "slug": "keylazy-qwen2-5-omni-3b-bab-asr1-cap1-hn-dpo",
+  "author": "keylazy",
+  "url": "https://huggingface.co/keylazy/Qwen2.5-Omni-3B-bab-asr1-cap1-hn-dpo",
+  "created_at": "2026-09-19T22:31:02.000Z",
+  "updated_at": "2026-09-19T22:31:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 131227430,
+  "storage_human": "131 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Köln - aktuelle Nachrichten aus Köln, Polizeiberichte, Wetter und ...",
+      "url": "https://www.ksta.de/koeln",
+      "snippet": "Aktuelle Top-News zu Köln finden Sie hier bei Kölner Stadt-Anzeiger - aktuelle Nachrichten rund um Promis, Schlager, Show und …"
+    },
+    {
+      "title": "Köln: News und aktuelle Nachrichten von heute | Express",
+      "url": "https://www.express.de/koeln",
+      "snippet": "Köln: Aktuelle Nachrichten aus Köln und Umgebung inkl. Sport, Wetter, Bilder und Videos. Jetzt im Express informieren!"
+    },
+    {
+      "title": "Köln - wdr.de",
+      "url": "https://www1.wdr.de/nrw/koeln/index.html",
+      "snippet": "Aktuelle News zu Politik, Wetter und Verkehr aus der größten Stadt in NRW, bekannt für Dom, Kölsch, 1. FC Köln und Kölner Haie."
+    },
+    {
+      "title": "ksta.de - Aktuelle Nachrichten aus Köln, dem Rheinland und der Welt ...",
+      "url": "https://www.ksta.de/",
+      "snippet": "ksta.de - Aktuelle Nachrichten und Informationen aus Köln, der Region und dem Rheinland sowie aus Politik, Wirtschaft, Sport, …"
+    },
+    {
+      "title": "Köln: Aktuelle News und Videos aus der Region - BILD.de",
+      "url": "https://www.bild.de/regional/koeln/koeln-regional/home-16344378.bild.html",
+      "snippet": "Aktuelle Nachrichten aus Köln: Hintergründe und Informationen über regionale Ereignisse aus Politik, Wirtschaft, Sport und …"
+    }
+  ]
+}

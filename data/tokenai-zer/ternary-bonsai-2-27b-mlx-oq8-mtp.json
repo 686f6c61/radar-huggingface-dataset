@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "TokenAI-zer/Ternary-Bonsai-2-27B-MLX-oQ8-mtp",
+  "slug": "tokenai-zer-ternary-bonsai-2-27b-mlx-oq8-mtp",
+  "author": "TokenAI-zer",
+  "url": "https://huggingface.co/TokenAI-zer/Ternary-Bonsai-2-27B-MLX-oQ8-mtp",
+  "created_at": "2026-09-19T22:51:40.000Z",
+  "updated_at": "2026-09-19T23:37:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "omlx",
+    "quantization",
+    "mixed-precision",
+    "apple-silicon",
+    "ternary",
+    "mtp",
+    "speculative-decoding",
+    "vision",
+    "qwen",
+    "image-text-to-text",
+    "conversational",
+    "base_model:prism-ml/Ternary-Bonsai-2-27B-gguf",
+    "base_model:quantized:prism-ml/Ternary-Bonsai-2-27B-gguf",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 30014450588,
+  "storage_human": "30.0 GB",
+  "base_model": "prism-ml/Ternary-Bonsai-2-27B-gguf",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Visual Studio: IDE and Code Editor for Software Development",
+      "url": "https://visualstudio.microsoft.com/",
+      "snippet": "Visual Studio dev tools & services make app development easy for any developer, on any platform & language. Develop with our …"
+    },
+    {
+      "title": "Visual Studio Downloads for Windows",
+      "url": "https://visualstudio.microsoft.com/downloads/",
+      "snippet": "Download Visual Studio IDE for free. Try out Visual Studio Professional or Enterprise editions."
+    },
+    {
+      "title": "Download Visual Studio Code - Free AI Code Editor for Mac, Linux, …",
+      "url": "https://code.visualstudio.com/download",
+      "snippet": "Download Visual Studio Code for free on Linux, macOS, and Windows. The open source AI code editor for agent-first development, …"
+    },
+    {
+      "title": "Visual Studio - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Visual_Studio",
+      "snippet": "Visual Studio ... Visual Studio is an integrated development environment (IDE) developed by Microsoft. It is used to develop computer …"
+    },
+    {
+      "title": "Visual Studio Code - The open source AI code editor | Your home for ...",
+      "url": "https://code.visualstudio.com/",
+      "snippet": "Visual Studio Code is a free, open source AI code editor. Build with AI agents that plan, code, and debug for you. Manage multi-agent …"
+    }
+  ]
+}

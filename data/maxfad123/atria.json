@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "maxfad123/Atria",
+  "slug": "maxfad123-atria",
+  "author": "maxfad123",
+  "url": "https://huggingface.co/maxfad123/Atria",
+  "created_at": "2026-09-19T22:12:32.000Z",
+  "updated_at": "2026-09-19T22:12:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Les différents domaines de service dans l’Église",
+      "url": "https://www.churchofjesuschrist.org/study/manual/learning-and-serving-in-the-church/areas-of-service-in-the-church?lang=fra",
+      "snippet": "Les collèges de prêtrise et la Société de Secours se réunissent souvent, notamment le dimanche, pour étudier l’Évangile, se motiver …"
+    },
+    {
+      "title": "Service (église) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Service_(%C3%A9glise)",
+      "snippet": "Il y a des services d’ église à des évènements particuliers comme lors d’une présentation d'enfant, d’un baptême, d’un mariage …"
+    },
+    {
+      "title": "Service (église) - Wikiwand",
+      "url": "https://www.wikiwand.com/fr/Service_(%C3%A9glise)",
+      "snippet": "Il y a des services d’ église à des évènements particuliers comme lors d’une présentation d'enfant, d’un baptême, d’un mariage …"
+    },
+    {
+      "title": "Charte Principes de fonctionnement des services de l’Église",
+      "url": "https://www.eglise-evangelique.fr/media/2026/documents/principes-de-fonctionnement-des-services-de-leglise-1780306667925.pdf",
+      "snippet": "Il vise à donner un cadre commun pour servir Dieu, les croyants, le monde et notre prochain, en s’appuyant sur les enseignements …"
+    },
+    {
+      "title": "Comment servir efficacement dans mon église ? – Fréquence Chrétienne",
+      "url": "https://frequencechretienne.fr/comment-servir-efficacement-dans-mon-eglise/",
+      "snippet": "Jul 10, 2025 · Toutefois, nous pouvons être dans une église et ne pas savoir s’y prendre pour servir efficacement ; c’est-à-dire être …"
+    }
+  ]
+}

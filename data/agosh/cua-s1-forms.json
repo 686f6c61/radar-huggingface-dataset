@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "agosh/cua-s1-forms",
+  "slug": "agosh-cua-s1-forms",
+  "author": "agosh",
+  "url": "https://huggingface.co/agosh/cua-s1-forms",
+  "created_at": "2026-09-19T21:32:49.000Z",
+  "updated_at": "2026-09-19T21:32:49.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "other",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "jev",
+    "system-one",
+    "computer-use",
+    "form-filling",
+    "option-attention",
+    "other",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5669220,
+  "storage_human": "6 MB",
+  "base_model": "",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Felicitas Woll – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Felicitas_Woll",
+      "snippet": "Auf den im Oktober 2005 veröffentlichten Postern und Postkarten war Felicitas Woll mit ihrem jüngeren Bruder Tassilo dargestellt, …"
+    },
+    {
+      "title": "Felicitas Woll: Freund, Kinder, Filme – Die Schauspielerin im ...",
+      "url": "https://www.ok-magazin.de/starportraits/felicitas-woll-freund-kinder-filme-die-schauspielerin-im-starportraet-99942.html",
+      "snippet": "May 10, 2026 · Felicitas Woll gehört zu den bekanntesten Schauspielerinnen Deutschlands, viele kennen sie vor allem durch ihre …"
+    },
+    {
+      "title": "Felicitas Woll - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Felicitas_Woll",
+      "snippet": "Felicitas Woll (born 20 January 1980) is a German actress. She is perhaps best known for her roles in the television series Berlin, …"
+    },
+    {
+      "title": "\"Neuer Wind im alten Land\"-Star Felicitas Woll: So lebt sie als ... - Joyn",
+      "url": "https://www.joyn.de/bts/serien/neuer-wind-im-alten-land/neuer-wind-im-alten-land-star-felicitas-woll-so-geht-es-ihr-als-single-82171?msockid=226cf3e23e03668f1a3fe43b3f1e67bc",
+      "snippet": "May 9, 2026 · Felicitas Woll spielt Fotografin Kim in \"Das dunkle Vermächtnis\". Sie wuchs im Mehrgenerationenhaus auf, wurde in …"
+    },
+    {
+      "title": "Felicitas Woll: Aktuelle News, Infos & Bilder | BUNTE.de",
+      "url": "https://www.bunte.de/starprofile/felicitas-woll.html",
+      "snippet": "Jul 30, 2025 · Aktuelle Infos, News und Gerüchte zu Felicitas Woll, mit den neuesten Videos und Bildern / Fotos. Alles über Felicitas …"
+    }
+  ]
+}

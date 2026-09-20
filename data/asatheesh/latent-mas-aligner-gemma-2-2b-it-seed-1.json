@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "asatheesh/latent-mas-aligner-gemma-2-2b-it-seed-1",
+  "slug": "asatheesh-latent-mas-aligner-gemma-2-2b-it-seed-1",
+  "author": "asatheesh",
+  "url": "https://huggingface.co/asatheesh/latent-mas-aligner-gemma-2-2b-it-seed-1",
+  "created_at": "2026-09-19T20:07:07.000Z",
+  "updated_at": "2026-09-19T20:07:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safety",
+    "multi-agent",
+    "latent-reasoning",
+    "base_model:google/gemma-2-2b-it",
+    "base_model:finetune:google/gemma-2-2b-it",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 104904628,
+  "storage_human": "105 MB",
+  "base_model": "google/gemma-2-2b-it",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Meet Chris Brown's Girlfriend, Jada Wallace, Inside Her Public Feud ...",
+      "url": "https://www.bollywoodshaadis.com/articles/meet-chris-browns-girlfriend-jada-wallace-82489",
+      "snippet": "Jul 25, 2026 · Social media influencer Jada Wallace has been romantically linked to Chris Brown since December 2024, when the …"
+    },
+    {
+      "title": "Chris Brown & Jada Wallace: 3 Times Fans Clocked Apparent Love",
+      "url": "https://theshaderoom.com/listicle/chris-brown-jada-wallace-dating-relationship-expecting-baby-the-shade-room/",
+      "snippet": "Jan 23, 2026 · From more than friends to baby rumors! Here's 3 times fans swore Chris Brown & Jada Wallace confirmed their …"
+    },
+    {
+      "title": "Chris Brown Welcomes Baby Boy With Girlfriend Jada Wallace",
+      "url": "https://thatgrapejuice.net/2026/04/chris-brown-welcomes-baby-boy-with-girlfriend-jada-wallace/",
+      "snippet": "Apr 27, 2026 · Chris Brown appears to have officially welcomed baby number four. The singer’s longtime girlfriend, Jada Wallace, …"
+    },
+    {
+      "title": "Who is Chris Brown’s girlfriend Jada Wallace? Exes & dating history",
+      "url": "https://www.capitalxtra.com/news/chris-brown-girlfriend-dating/",
+      "snippet": "Aug 7, 2025 · Chris Brown is known for being a ladies’ man, but recent pictures with his new girlfriend, Jada Wallace, have left fans …"
+    },
+    {
+      "title": "Who Is Chris Brown Dating? Latest Romance News — Celebriet",
+      "url": "https://celebriet.com/who-is-chris-brown-dating-latest-romance-news/",
+      "snippet": "Jul 8, 2026 · As of the latest publicly available information, Chris Brown is in a relationship with model and influencer Jada Wallace. …"
+    }
+  ]
+}

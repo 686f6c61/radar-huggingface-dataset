@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "menik1126/ovd-math-128-data-hes-step800-historical",
+  "slug": "menik1126-ovd-math-128-data-hes-step800-historical",
+  "author": "menik1126",
+  "url": "https://huggingface.co/menik1126/ovd-math-128-data-hes-step800-historical",
+  "created_at": "2026-09-19T22:27:06.000Z",
+  "updated_at": "2026-09-19T22:31:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1777088000,
+  "parameters_human": "1.78B",
+  "storage_bytes": 3565636648,
+  "storage_human": "3.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google mail",
+      "url": "https://mail.google.com/mail?hl=de",
+      "snippet": "Hier sollte eine Beschreibung angezeigt werden, diese Seite lässt dies jedoch nicht zu."
+    },
+    {
+      "title": "Gmail - Google Accounts",
+      "url": "https://accounts.google.com/login?service=mail&hl=de",
+      "snippet": "Gmail ist ein intuitiver, effizienter und nützlicher E-Mail-Dienst mit 15 GB Speicherplatz, weniger Spam und mobilem Zugriff."
+    },
+    {
+      "title": "Gmail - Google Accounts",
+      "url": "https://accounts.google.com/servicelogin?service=mail",
+      "snippet": "Gmail is email that’s intuitive, efficient, and useful. 15 GB of storage, less spam, and mobile access."
+    },
+    {
+      "title": "Sign in - Google Accounts",
+      "url": "https://www.google.com/accounts/Login",
+      "snippet": "Not your computer? Use a private browsing window to sign in. Learn more about using Guest mode"
+    },
+    {
+      "title": "Gmail – ein geschützter, KI-gestützter E‑Mail-Dienst für alle | Google ...",
+      "url": "https://workspace.google.com/intl/de/gmail/",
+      "snippet": "Gmail – jetzt mit Google AI. Entdecken Sie neue Möglichkeiten zum Verfassen, Beantworten und Organisieren von E‑Mails sowie …"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "AiMamis/Aurelie",
+  "slug": "aimamis-aurelie",
+  "author": "AiMamis",
+  "url": "https://huggingface.co/AiMamis/Aurelie",
+  "created_at": "2026-09-19T20:47:45.000Z",
+  "updated_at": "2026-09-19T20:47:51.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "license:openrail++",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 458970142,
+  "storage_human": "459 MB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Hotel Albuquerque at Old Town: New Mexico's Best Luxury Resort",
+      "url": "https://www.hotelabq.com/",
+      "snippet": "Hotel Albuquerque in Old Town is a landmark luxury hotel in New Mexico featuring restaurants, an outdoor swimming pool, weddings …"
+    },
+    {
+      "title": "Eat and Drink - hotelabq.com",
+      "url": "https://www.hotelabq.com/eat-drink",
+      "snippet": "Explore Albuquerque's best patio dining at Garduño's at Old Town and enjoy the delicious flavors of authentic regional New Mexico …"
+    },
+    {
+      "title": "Meeting + Weddings",
+      "url": "https://www.hotelabq.com/meeting-wedding",
+      "snippet": "Our superior services along with our attention to detail make Hotel Albuquerque at Old Town stand apart from other locations for …"
+    },
+    {
+      "title": "Stay - hotelabq.com",
+      "url": "https://www.hotelabq.com/stay",
+      "snippet": "Each Junior Suite features a separate seating area and amazing views of Albuquerque. Some Junior Suites feature a private balcony …"
+    },
+    {
+      "title": "Top Cultural and Historic Districts Hotels in Albuquerque",
+      "url": "https://www.hotelabq.com/top-cultural-and-historic-districts-hotels-in-albuquerque",
+      "snippet": "Host meetings, conferences, weddings, and group events at Hotel Albuquerque at Old Town. Featuring expansive conference …"
+    }
+  ]
+}

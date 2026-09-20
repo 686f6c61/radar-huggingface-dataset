@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "AlinaGonch/llama31-8b-squad-ratio-0.70-seed-42",
+  "slug": "alinagonch-llama31-8b-squad-ratio-0-70-seed-42",
+  "author": "AlinaGonch",
+  "url": "https://huggingface.co/AlinaGonch/llama31-8b-squad-ratio-0.70-seed-42",
+  "created_at": "2026-09-19T22:41:47.000Z",
+  "updated_at": "2026-09-19T22:41:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 185042160,
+  "storage_human": "185 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best cash-back credit cards - The Points Guy",
+      "url": "https://thepointsguy.com/credit-cards/best-cash-back-credit-cards/",
+      "snippet": "Aug 21, 2026 · Some cash-back cards provide bonus rewards at specific merchants, while others offer a flat rate on all purchases. …"
+    },
+    {
+      "title": "Best Cash Back Credit Cards for September 2026",
+      "url": "https://www.topconsumerreviews.com/best-credit-cards-cash-back/index.php",
+      "snippet": "Redemption options: Look at the redemption options for the cash back rewards, including statement credits, bank deposits, or gift …"
+    },
+    {
+      "title": "Best Cash Back Credit Cards - September 2026 | Bankrate",
+      "url": "https://www.bankrate.com/credit-cards/cash-back/best-cash-back-cards/",
+      "snippet": "Sep 8, 2026 · Here’s a quick breakdown of the key factors in our cash back card scoring methodology and details we considered …"
+    },
+    {
+      "title": "Best cash back credit cards of September 2026 - Cardratings.com",
+      "url": "https://www.cardratings.com/best-credit-cards-for-cash-back-rewards.html",
+      "snippet": "2 days ago · Discover the best cash back credit cards of 2026, rated by Cardratings experts. Compare rewards, fees, and APRs to …"
+    },
+    {
+      "title": "Best Cashback Credit Cards 2026: We Compared 8 Cards, These 5 Win",
+      "url": "https://walletgrower.com/blog/best-cashback-credit-cards-2026",
+      "snippet": "Mar 22, 2026 · We compared 8 cashback credit cards head-to-head. Chase Freedom Unlimited, Citi Double Cash, and 3 more win …"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "SeanWang0027/qwen3-1.7b-sciworld-rose-s10t5-gpt54mini-ep4",
+  "slug": "seanwang0027-qwen3-1-7b-sciworld-rose-s10t5-gpt54mini-ep4",
+  "author": "SeanWang0027",
+  "url": "https://huggingface.co/SeanWang0027/qwen3-1.7b-sciworld-rose-s10t5-gpt54mini-ep4",
+  "created_at": "2026-09-19T23:20:06.000Z",
+  "updated_at": "2026-09-19T23:20:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "scienceworld",
+    "agent",
+    "react",
+    "distillation",
+    "on-policy",
+    "conversational",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2031739904,
+  "parameters_human": "2.03B",
+  "storage_bytes": 4074938294,
+  "storage_human": "4.1 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Brandenburger Tor – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Brandenburger_Tor",
+      "snippet": "Das Brandenburger Tor in Berlin ist ein frühklassizistisches Triumphtor, das an der Westflanke des quadratischen Pariser Platzes im …"
+    },
+    {
+      "title": "Routenplaner & Fahrplanauskunft des ÖPNV Berlin/Brandenburg | BVG",
+      "url": "https://www.bvg.de/de/verbindungen/verbindungssuche",
+      "snippet": "Dein Routenplaner für Berlin & Brandenburg: Start, Ziel & Zeit eingeben und zwischen Bus, Bahn & Fahrrad deine schnellste Route …"
+    },
+    {
+      "title": "In welche Richtung schaut die Quadriga in Berlin? – IIC Berlin",
+      "url": "https://www.iic-berlino.de/in-welche-richtung-schaut-die-quadriga-in-berlin/",
+      "snippet": "Mar 8, 2024 · Ursprünglich wurde die Quadriga im Jahr 1793 auf das Brandenburger Tor gesetzt und schaute in westlicher Richtung. …"
+    },
+    {
+      "title": "Brandenburger Tor – Berlin.de",
+      "url": "https://www.berlin.de/sehenswuerdigkeiten/3560266-3558930-brandenburger-tor.html",
+      "snippet": "Einst war das Tor ein Mahnmal der Teilung, denn es befand sich nach dem Bau der Berliner Mauer im Sperrbereich und war weder …"
+    },
+    {
+      "title": "Brandenburger Tor • Steckbrief & Geschichte · [mit Video]",
+      "url": "https://studyflix.de/erdkunde/brandenburger-tor-8332",
+      "snippet": "Das Tor trägt seinen Namen, weil es in Richtung der Stadt Brandenburg führt, die damals eine wichtige Rolle im Königreich Preußen …"
+    }
+  ]
+}

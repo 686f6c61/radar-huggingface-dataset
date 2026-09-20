@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "NaaaaaiVe6/franka-10demos-normal_task16_cartesian_20260913T212156Z-step-10000",
+  "slug": "naaaaaive6-franka-10demos-normal_task16_cartesian_20260913t212156z-step-10000",
+  "author": "NaaaaaiVe6",
+  "url": "https://huggingface.co/NaaaaaiVe6/franka-10demos-normal_task16_cartesian_20260913T212156Z-step-10000",
+  "created_at": "2026-09-19T20:27:30.000Z",
+  "updated_at": "2026-09-19T20:29:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "openpi",
+  "languages": [],
+  "tags": [
+    "openpi",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3616757520,
+  "parameters_human": "3.62B",
+  "storage_bytes": 7233650408,
+  "storage_human": "7.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aluminum Handrail Direct | Handrails & Railing Systems",
+      "url": "https://www.aluminumhandraildirect.com/",
+      "snippet": "AHR Wall-Mounted Aluminum Handrail A low-profile, wall-mounted handrail for interior and exterior stair railing. Mounts to wood, …"
+    },
+    {
+      "title": "Aluminum Handrails for Steps & Entry Areas | Lowe's",
+      "url": "https://www.lowes.com/pl/stairs-railings/interior-railings-stair-parts/handrails-accessories/aluminum/4294715728-4294965691?msockid=018ae85f37366926144cff8636d26859",
+      "snippet": "Aluminum handrails and accessories provide sturdy support and coordinated metal detail for stairways, hallways and interior railing …"
+    },
+    {
+      "title": "Amazon.com: Aluminum Handrails",
+      "url": "https://www.amazon.com/Aluminum-Handrails/s?k=Aluminum+Handrails",
+      "snippet": "Discover aluminum handrails combining safety and modern design. Suitable for both residential and commercial applications with …"
+    },
+    {
+      "title": "Aluminum Handrail Stairs & Railings at Lowes.com",
+      "url": "https://www.lowes.com/pl/stairs-railings/aluminum/handrail/4294715745-4294965691-4294452497?msockid=018ae85f37366926144cff8636d26859",
+      "snippet": "Find Aluminum Handrail stairs & railings at Lowe's today. Shop stairs & railings and a variety of building supplies products online at …"
+    },
+    {
+      "title": "Amazon.com: Aluminum Handrails For Stairs",
+      "url": "https://www.amazon.com/aluminum-handrails-stairs/s?k=aluminum+handrails+for+stairs",
+      "snippet": "Complete Aluminum Handrail KIT for Indoor/Outdoor—Stylish Round Shape with Curved Ends. Includes Wall Mounts, Hardware, …"
+    }
+  ]
+}

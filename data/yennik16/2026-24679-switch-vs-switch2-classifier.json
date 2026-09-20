@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "yennik16/2026-24679-switch-vs-switch2-classifier",
+  "slug": "yennik16-2026-24679-switch-vs-switch2-classifier",
+  "author": "yennik16",
+  "url": "https://huggingface.co/yennik16/2026-24679-switch-vs-switch2-classifier",
+  "created_at": "2026-09-20T00:03:07.000Z",
+  "updated_at": "2026-09-20T00:03:10.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "image-classification",
+    "transfer-learning",
+    "automl",
+    "coursework",
+    "dataset:pakiino/2026-24679-switch-image-hw1",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17663963,
+  "storage_human": "18 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Low-grade heat utilization - Thermal Engineering",
+      "url": "https://www.thermal-engineering.org/low-grade-heat-utilization/",
+      "snippet": "May 25, 2024 · Learn about low-grade heat, its sources, technological approaches for utilization, benefits, and challenges in this …"
+    },
+    {
+      "title": "23 Ways How to Heat Your Home Without Electricity",
+      "url": "https://santannaenergyservices.com/how-to-heat-your-home-without-electricity/",
+      "snippet": "5 days ago · Discover practical ways of how to heat your home without electricity. Explore DIY solutions, underutilized methods and …"
+    },
+    {
+      "title": "Types of low-energy consumption heating systems - Ecoforest",
+      "url": "https://ecoforest.com/en/news/types-of-low-energy-consumption-heating-systems/",
+      "snippet": "In this post, we will present you with a list of the most commonly used low-consumption heating systems today, so that you can …"
+    },
+    {
+      "title": "14 Best Low-Energy Heaters That Keep You Warm Without Spiking …",
+      "url": "https://twogreenleaves.org/vetted/best-lowenergy-heaters/",
+      "snippet": "Jul 8, 2026 · When searching for lowenergy heaters, the goal is to find units that deliver effective warmth without driving up energy …"
+    },
+    {
+      "title": "7 Off-Grid Heating Solutions That Work Without Electricity (2026 Guide)",
+      "url": "https://gridovaliving.com/off-grid-heating-solutions-without-electricity/",
+      "snippet": "Complete guide to off-grid heating without electricity. Compare wood stoves, propane, solar heating & more. Real BTU output, costs, …"
+    }
+  ]
+}

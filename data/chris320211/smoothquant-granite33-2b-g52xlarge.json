@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "chris320211/smoothquant-granite33-2b-g52xlarge",
+  "slug": "chris320211-smoothquant-granite33-2b-g52xlarge",
+  "author": "chris320211",
+  "url": "https://huggingface.co/chris320211/smoothquant-granite33-2b-g52xlarge",
+  "created_at": "2026-09-20T01:32:10.000Z",
+  "updated_at": "2026-09-20T01:32:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "granite",
+    "text-generation",
+    "quantized",
+    "quant-agent",
+    "smoothquant",
+    "wikitext-2",
+    "conversational",
+    "base_model:ibm-granite/granite-3.3-2b-instruct",
+    "base_model:finetune:ibm-granite/granite-3.3-2b-instruct",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 262,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "ibm-granite/granite-3.3-2b-instruct",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "eBay.de Community",
+      "url": "https://community.ebay.de/",
+      "snippet": "Willkommen in der eBay Community. Wir freuen uns, dass du hier bist. Antworten, Gespräche und eBay-Mentoren warten auf dich!"
+    },
+    {
+      "title": "Kaufvertrag ebay - Vertragsschluss, Widerruf & Rücktritt",
+      "url": "https://www.juraforum.de/lexikon/kaufvertrag-ebay",
+      "snippet": "Mar 16, 2026 · Ein Kaufvertrag kommt durch zwei Willenserklärungen – Angebot und Annahme – zustande. Obgleich im Rahmen von …"
+    },
+    {
+      "title": "eBay Rückgaberecht bei einem Privatverkauf - JuraForum.de",
+      "url": "https://www.juraforum.de/lexikon/ebay-rueckgaberecht",
+      "snippet": "May 26, 2026 · Viele Privatleute, die über eBay etwas verkaufen, wollen ihre Haftung ausschließen. Doch wie sieht es mit dem eBay …"
+    },
+    {
+      "title": "Ebay Kleinanzeigen - Käufer möchte vom Kauf Zurücktreten.",
+      "url": "https://www.123recht.de/forum/kaufrecht/Ebay-Kleinanzeigen-Kaeufer-moechte-vom-Kauf-Zuruecktreten-__f521848.html",
+      "snippet": "Jun 22, 2017 · Ebay Kleinanzeigen - Käufer möchte vom Kauf Zurücktreten. Hallo, ich habe auf eBay Kleinanzeigen ein Tablet …"
+    },
+    {
+      "title": "\"Defekte\" Ware erhalten Ebay Kleinanzeigen Kaufrecht",
+      "url": "https://www.123recht.de/forum/kaufrecht/Defekte-Ware-erhalten-Ebay-Kleinanzeigen-__f556853.html",
+      "snippet": "Jul 15, 2019 · \"Defekte\" Ware erhalten Ebay Kleinanzeigen Hallo liebes Forum, ich habe zwar hier und da schon ein wenig geguckt, …"
+    }
+  ]
+}

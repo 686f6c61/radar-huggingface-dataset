@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ghostkaali/ghost-coder-v3",
+  "slug": "ghostkaali-ghost-coder-v3",
+  "author": "ghostkaali",
+  "url": "https://huggingface.co/ghostkaali/ghost-coder-v3",
+  "created_at": "2026-09-19T20:37:23.000Z",
+  "updated_at": "2026-09-19T20:53:32.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "qwen2",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 5340477227,
+  "storage_human": "5.3 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ClubCorp Forms Generation",
+      "url": "https://apps.clubcorp.com/portal/pls/portal/!ccwfweb.controller?EVENT=FORM_BUILDER&ACT=INIT&COMPANY_ID=2&FORM_ID=7&WIDTH=600&HEIGHT=680&ENTITY=01075",
+      "snippet": "AL - Birmingham - Summit Club - Birmingham AL - Montgomery - Capital City Club - Montgomery AR - Hot Springs Village - …"
+    },
+    {
+      "title": "Help us get to know your event needs! - go.clubcorp.com",
+      "url": "https://go.clubcorp.com/uclubeventopening",
+      "snippet": "Ready to learn more? Let us give you all the details."
+    },
+    {
+      "title": "Play Away Application",
+      "url": "https://apps.clubcorp.com/portal/pls/portal/!CCEA.controller?EVENT=CCT&ACT=INIT&club=CTR&package=Play%20Away&bc=8CB741",
+      "snippet": "Play Away benefits are available to you and your immediate family. Immediate family defined as spouse, and dependents who are …"
+    },
+    {
+      "title": "ClubCorp Corporate Home in Dallas, TX | ClubCorp",
+      "url": "https://go.clubcorp.com/UClubJoinToday",
+      "snippet": "Host your corporate, wedding, and social events in one of our many private rooms Enjoy dedicated stadium parking year-round …"
+    },
+    {
+      "title": "The University of Texas Club Terms and Conditions",
+      "url": "https://apps.clubcorp.com/portal/pls/portal/!CCEA.controller?EVENT=UT&ACT=TERMS&PROG=Executive%20XLife",
+      "snippet": "Members also enjoy non-discounted dining access to participating golf and country and city clubs both locally and when traveling. …"
+    }
+  ]
+}

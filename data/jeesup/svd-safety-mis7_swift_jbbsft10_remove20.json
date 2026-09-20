@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-mis7_swift_jbbsft10_remove20",
+  "slug": "jeesup-svd-safety-mis7_swift_jbbsft10_remove20",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-mis7_swift_jbbsft10_remove20",
+  "created_at": "2026-09-20T01:11:40.000Z",
+  "updated_at": "2026-09-22T00:28:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:mistralai/Mistral-7B-Instruct-v0.2",
+    "base_model:finetune:mistralai/Mistral-7B-Instruct-v0.2",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7241732096,
+  "parameters_human": "7.24B",
+  "storage_bytes": 14483991459,
+  "storage_human": "14.5 GB",
+  "base_model": "mistralai/Mistral-7B-Instruct-v0.2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Los Angeles Lakers Scores, Stats and Highlights - ESPN",
+      "url": "https://www.espn.com/nba/team/_/name/lal/los-angeles-lakers",
+      "snippet": "Visit ESPN for Los Angeles Lakers live scores, video highlights, and latest news. Find standings and the full 2026-27 season schedule."
+    },
+    {
+      "title": "NBA on ESPN - Scores, Stats and Highlights",
+      "url": "https://www.espn.com/nba/",
+      "snippet": "Visit ESPN for NBA live scores, video highlights and latest news. Stream games on ESPN and play Fantasy Basketball."
+    },
+    {
+      "title": "Los Angeles Lakers NBA Roster - ESPN",
+      "url": "https://www.espn.com/nba/team/roster/_/name/lal/los-angeles-lakers",
+      "snippet": "Explore the 2026-27 Los Angeles Lakers NBA roster on ESPN. Includes full details on point guards, shooting guards, power …"
+    },
+    {
+      "title": "Los Angeles Lakers 2026-27 Preseason NBA Schedule - ESPN",
+      "url": "https://www.espn.com/nba/team/schedule/_/name/lal/los-angeles-lakers",
+      "snippet": "ESPN has the full 2026-27 Los Angeles Lakers Preseason NBA schedule. Includes game times, TV listings and ticket information for …"
+    },
+    {
+      "title": "Los Angeles Lakers 2026-27 NBA Depth Chart - ESPN",
+      "url": "https://www.espn.com/nba/team/depth/_/name/lal/los-angeles-lakers",
+      "snippet": "The 2026-27 NBA Preseason Los Angeles Lakers team depth chart on ESPN. Includes full details on every single Lakers player."
+    }
+  ]
+}

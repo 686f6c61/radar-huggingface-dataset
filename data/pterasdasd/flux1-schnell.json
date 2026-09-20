@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "pterasdasd/flux1-schnell",
+  "slug": "pterasdasd-flux1-schnell",
+  "author": "pterasdasd",
+  "url": "https://huggingface.co/pterasdasd/flux1-schnell",
+  "created_at": "2026-09-19T23:29:10.000Z",
+  "updated_at": "2026-09-19T23:29:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusion-single-file",
+  "languages": [],
+  "tags": [
+    "diffusion-single-file",
+    "comfyui",
+    "base_model:black-forest-labs/FLUX.1-schnell",
+    "base_model:finetune:black-forest-labs/FLUX.1-schnell",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 41018835260,
+  "storage_human": "41.0 GB",
+  "base_model": "black-forest-labs/FLUX.1-schnell",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Travel to Stockholm Sweden: Travel Tips & Guide",
+      "url": "https://traveltract.com/travel-to-stockholm-sweden/",
+      "snippet": "Jul 9, 2026 · Plan your travel to Stockholm Sweden with this complete guide covering top attractions, best time to visit, travel tips, …"
+    },
+    {
+      "title": "Stockholm Travel Guide 2026: A Local's Complete Guide",
+      "url": "https://www.stockholmtourism.org/stockholm-travel-guide/",
+      "snippet": "Apr 18, 2026 · The complete Stockholm travel guide — when to go, how long to stay, where to sleep, what to eat, how the transport …"
+    },
+    {
+      "title": "Stockholm Budget Travel Guide (Updated 2026)",
+      "url": "https://www.nomadicmatt.com/travel-guides/sweden-travel-tips/stockholm/",
+      "snippet": "Mar 30, 2026 · A comprehensive guide to Stockholm with tips on what to see, do, costs, ways to save, how to get around, and more!"
+    },
+    {
+      "title": "Stockholm Travel FAQ – Essential Questions Answered for First-Time …",
+      "url": "https://www.visitstockholmcity.com/stockholm-travel-faq-essential-questions-answered-for-first-time-visitors/",
+      "snippet": "Dec 30, 2025 · This Stockholm travel FAQ gives you quick, reliable answers to the most common questions about visiting Sweden’s …"
+    },
+    {
+      "title": "The official guide to Stockholm - Visit Stockholm",
+      "url": "https://www.visitstockholm.com/",
+      "snippet": "Visit Stockholm is your guide to Stockholm and the Stockholm Archipelago. Get tips on restaurants, cafés, bars, shops, events, …"
+    }
+  ]
+}
