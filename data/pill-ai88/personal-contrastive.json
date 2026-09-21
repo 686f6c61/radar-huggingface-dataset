@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "pill-ai88/personal-contrastive",
+  "slug": "pill-ai88-personal-contrastive",
+  "author": "pill-ai88",
+  "url": "https://huggingface.co/pill-ai88/personal-contrastive",
+  "created_at": "2026-09-21T10:48:44.000Z",
+  "updated_at": "2026-09-21T10:48:49.000Z",
+  "license": "bsd-3-clause",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "blip",
+    "pytorch",
+    "contrastive",
+    "license:bsd-3-clause",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33088,
+  "parameters_human": "33088",
+  "storage_bytes": 132832,
+  "storage_human": "132832 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "pill - English-French Dictionary WordReference.com",
+      "url": "https://www.wordreference.com/enfr/pill",
+      "snippet": "Voir la traduction automatique de Google Translate de 'pill'. Dans d'autres langues : espagnol | italien | portugais | roumain | allemand …"
+    },
+    {
+      "title": "Pill Identifier - Quickly Find and ID your Drugs (with pictures)",
+      "url": "https://www.drugs.com/pill_identification.html",
+      "snippet": "Use our Pill Identifier tool to instantly match by imprint, shape, color, drug name, or NDC code. Access over 32,000 images, updated …"
+    },
+    {
+      "title": "Tableau des pilules - ZAVA",
+      "url": "https://www.zavamed.com/fr/tableau-pilules.html",
+      "snippet": "Grâce au tableau des pilules ZAVA, découvrez à quelle catégorie appartient votre pilule, ainsi que la génération de votre pilule …"
+    },
+    {
+      "title": "Pill Identifier - Find Pills by Color, Shape, Imprint, or Picture",
+      "url": "https://www.webmd.com/pill-identification/default.htm",
+      "snippet": "4 days ago · Use WebMD’s Pill Identifier to find and identify any over-the-counter or prescription drug, pill, or medication by color, …"
+    },
+    {
+      "title": "PILL | English meaning - Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/dictionary/english/pill",
+      "snippet": "/ pɪl / a small, solid substance that a person swallows whole, esp. as medicine: a sleeping pill (Definition of pill from the Cambridge …"
+    }
+  ]
+}

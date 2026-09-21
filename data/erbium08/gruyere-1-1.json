@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Erbium08/Gruyere-1.1",
+  "slug": "erbium08-gruyere-1-1",
+  "author": "Erbium08",
+  "url": "https://huggingface.co/Erbium08/Gruyere-1.1",
+  "created_at": "2026-09-21T11:09:41.000Z",
+  "updated_at": "2026-09-21T15:28:38.000Z",
+  "license": "cc0-1.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "gouda_gruyere",
+    "custom_code",
+    "en",
+    "dataset:HuggingFaceFW/fineweb-edu",
+    "dataset:KadamParth/Ncert_dataset",
+    "arxiv:1910.09700",
+    "base_model:Erbium08/Gruyere-1.0-r1",
+    "base_model:finetune:Erbium08/Gruyere-1.0-r1",
+    "license:cc0-1.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 102448128,
+  "parameters_human": "102.4M",
+  "storage_bytes": 409808952,
+  "storage_human": "410 MB",
+  "base_model": "Erbium08/Gruyere-1.0-r1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PlayStation Partners",
+      "url": "https://publish.playstation.net/create/",
+      "snippet": "Everything you need to make and sell games on PlayStation. Sign up today for access to industry-leading tools and support."
+    },
+    {
+      "title": "Conseils utiles pour publier votre application sur Google Play",
+      "url": "https://support.google.com/googleplay/android-developer/answer/15191715?hl=fr",
+      "snippet": "Nous sommes là pour vous aider à publier vos applications sur Google Play aussi facilement que possible. Que vous soyez un …"
+    },
+    {
+      "title": "Créer et configurer votre application - Aide Console Play",
+      "url": "https://support.google.com/googleplay/android-developer/answer/9859152?hl=fr",
+      "snippet": "Après avoir créé un compte de développeur Google Play, vous pouvez concevoir des applications et les configurer à l'aide de la Play …"
+    },
+    {
+      "title": "Publishing overview | Google Play Console",
+      "url": "https://google.play/business/publishingoverview/",
+      "snippet": "Publishing overview See your draft and pending changes in one place, and control when updates are published"
+    },
+    {
+      "title": "Publier et déployer - Android Developers",
+      "url": "https://developer.android.com/games/playgames/publish-deploy?hl=fr",
+      "snippet": "Ce guide explique comment publier et déployer des jeux Android pour PC, y compris comment les tester sur des Chromebooks, …"
+    }
+  ]
+}

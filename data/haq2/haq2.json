@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "haq2/haq2",
+  "slug": "haq2-haq2",
+  "author": "haq2",
+  "url": "https://huggingface.co/haq2/haq2",
+  "created_at": "2026-09-21T11:43:36.000Z",
+  "updated_at": "2026-09-21T11:43:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - EdupageAPI/edupage-api: A python library for accessing your ...",
+      "url": "https://github.com/EdupageAPI/edupage-api",
+      "snippet": "This Python library allows easy access to EduPage. It's not a Selenium web scraper. It makes requests directly to EduPage's …"
+    },
+    {
+      "title": "GitHub - numero69/edupage_hack: edupage hack · GitHub",
+      "url": "https://github.com/numero69/edupage_hack",
+      "snippet": "edupage hack. Contribute to numero69/edupage_hack development by creating an account on GitHub."
+    },
+    {
+      "title": "GitHub Docs",
+      "url": "https://docs.github.com/",
+      "snippet": "Get started, troubleshoot, and make the most of GitHub. Documentation for new users, developers, administrators, and all of GitHub's …"
+    },
+    {
+      "title": "Personalisieren deines Profils - GitHub Dokumente",
+      "url": "https://docs.github.com/de/account-and-profile/tutorials/personalize-your-profile",
+      "snippet": "Du kannst Informationen zu deiner Person für andere Benutzende bereitstellen, indem du ein Profilbild einrichtest und eine Biografie …"
+    },
+    {
+      "title": "Download GitHub Desktop",
+      "url": "https://desktop.github.com/download/",
+      "snippet": "Simple collaboration from your desktop Download GitHub Desktop Focus on what matters instead of fighting with Git. Whether you're …"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "JoseCouceiro/drug_predictor_2.0_models",
+  "slug": "josecouceiro-drug_predictor_2-0_models",
+  "author": "JoseCouceiro",
+  "url": "https://huggingface.co/JoseCouceiro/drug_predictor_2.0_models",
+  "created_at": "2026-09-21T11:44:18.000Z",
+  "updated_at": "2026-09-21T11:55:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3037948862,
+  "storage_human": "3.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "eBay Australia | eBay Community",
+      "url": "https://community.ebay.com.au/",
+      "snippet": "Your eBay Community. Find answers to pressing questions, connect with members, and get advice from expert sellers."
+    },
+    {
+      "title": "eBay Italy",
+      "url": "https://community.ebay.it/forum/",
+      "snippet": "Community di eBay. Trova risposte, fai domande e mettiti in contatto con la nostra comunità di utenti ed esperti."
+    },
+    {
+      "title": "Sudden decline in eBay sales from Australia listings",
+      "url": "https://community.ebay.com.au/forum/selling-15/topic/sudden-decline-in-ebay-sales-from-australia-listings-6515/",
+      "snippet": "However, I do not think that can affect my sales overall. In Australia there are some cost of living challenges but not of a magnitude …"
+    },
+    {
+      "title": "海淘一般都是去哪些网站？ - 知乎",
+      "url": "https://www.zhihu.com/question/23090574",
+      "snippet": "2. ebay-点击进入 是全球使用最广泛的的电子商务平台，在eBay每天都有数百万的新商品上架，种类繁多，不论是生活用品还是新奇 …"
+    },
+    {
+      "title": "community.ebay.it",
+      "url": "https://community.ebay.it/robots.txt",
+      "snippet": "User-agent: * Disallow: /health/ Disallow: /accounts/ Disallow: /api/ Disallow: /newsletter/ Disallow: /gql/ Disallow: /triggers/ Disallow: …"
+    }
+  ]
+}

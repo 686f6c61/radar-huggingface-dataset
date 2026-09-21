@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l1-e8",
+  "slug": "pessimisticdpo-mistral-7b-sft-beta-a0-1-b0-1-l4-overlap_subsample-l1-e8",
+  "author": "PessimisticDPO",
+  "url": "https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l1-e8",
+  "created_at": "2026-09-21T11:39:29.000Z",
+  "updated_at": "2026-09-21T11:39:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 167832240,
+  "storage_human": "168 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "English to French, Italian, German & Spanish Dictionary - WordReference.com",
+      "url": "https://www.wordreference.com/",
+      "snippet": "The WordReference language forum is the largest repository of knowledge and advice about the English language, as well as a …"
+    },
+    {
+      "title": "Αγγλοελληνικό Λεξικό WordReference.com",
+      "url": "https://www.wordreference.com/engr/",
+      "snippet": "The WordReference English-Greek Dictionary is a living, growing dictionary. It contains over 84,618 terms and 237,322 translations in …"
+    },
+    {
+      "title": "Ελληνοαγγλικό Λεξικό - Εφαρμογές στο Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.wordreference&hl=el",
+      "snippet": "Οι ερωτήσεις σας έχουν ήδη απαντηθεί. ΣΗΜΕΙΩΣΗ: Απαιτείται σύνδεση στο διαδίκτυο Στις αναζητήσεις το WordReference γράφεται …"
+    },
+    {
+      "title": "WordReference Forums",
+      "url": "https://forum.wordreference.com/",
+      "snippet": "Jul 20, 2024 · Active forums about languages and translation"
+    },
+    {
+      "title": "Ελληνικά (Greek) - WordReference Forums",
+      "url": "https://forum.wordreference.com/forums/%CE%95%CE%BB%CE%BB%CE%B7%CE%BD%CE%B9%CE%BA%CE%AC-greek.65/",
+      "snippet": "Feb 8, 2007 · Μ᾿ ἔχουνε γράψει καὶ στοὺς ἱδρυτὰς καὶ μὲ μνημονεύουνε μετὰ τῆς συμβίας καὶ τῶν τέκνων."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Dsg2/LS2.5-108M-A17M-GGUF",
+  "slug": "dsg2-ls2-5-108m-a17m-gguf",
+  "author": "Dsg2",
+  "url": "https://huggingface.co/Dsg2/LS2.5-108M-A17M-GGUF",
+  "created_at": "2026-09-21T11:14:08.000Z",
+  "updated_at": "2026-09-21T11:14:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "تسجيل الدخول إلى Gmail - جهاز الكمبيوتر - مساعدة Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=ar&co=GENIE.Platform%3DDesktop",
+      "snippet": "تسجيل الدخول إلى Gmail ملاحظة: إذا سجّلت الدخول على جهاز كمبيوتر متاح للجميع، احرص على تسجيل الخروج قبل مغادرة جهاز الكمبيوتر. تعرَّف على كيفية تسجيل الدخول على جهاز لا تملكه."
+    },
+    {
+      "title": "Créer un compte Google - Ordinateur - Aide Compte Google",
+      "url": "https://support.google.com/accounts/answer/27441?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Important : Lorsque vous créez un compte Google pour votre entreprise, vous pouvez activer la personnalisation pour les …"
+    },
+    {
+      "title": "googlemail的邮箱后缀是@gmail.com还是@googlemail.com_百度知道",
+      "url": "https://zhidao.baidu.com/question/52043485.html",
+      "snippet": "googlemail的邮箱后缀是@gmail.com格式，googlemail 是Google提供的免费网络邮件服务，可以永久保留重要的邮件、文件和图 …"
+    },
+    {
+      "title": "gmail邮箱注册入口 gmail邮箱注册入口官网 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/341184240092309205.html",
+      "snippet": "Nov 13, 2025 · 姓名：输入真实姓名（可选，但建议填写）。 邮箱用户名：设置@gmail.com前的用户名（需唯一且未被占用）。 密 …"
+    },
+    {
+      "title": "Login ke Gmail - Komputer - Bantuan Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=id&co=GENIE.Platform%3DDesktop",
+      "snippet": "Login ke Gmail Tips: Jika Anda login menggunakan komputer publik, pastikan Anda logout sebelum meninggalkan komputer. Pelajari …"
+    }
+  ]
+}

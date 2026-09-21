@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "jiosephlee/intern-s1-mini-context-conditioned-molecule-transfer-v9-0-2-tdc-v2-skin-reaction-best",
+  "slug": "jiosephlee-intern-s1-mini-context-conditioned-molecule-transfer-v9-0-2-tdc-v2-skin-reaction-best",
+  "author": "jiosephlee",
+  "url": "https://huggingface.co/jiosephlee/intern-s1-mini-context-conditioned-molecule-transfer-v9-0-2-tdc-v2-skin-reaction-best",
+  "created_at": "2026-09-21T10:48:30.000Z",
+  "updated_at": "2026-09-21T10:52:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "chemistry",
+    "context-conditioned-molecule-transfer",
+    "skin-reaction",
+    "ranking",
+    "conversational",
+    "dataset:jiosephlee/context-conditioned-molecule-transfer-v9.0.2-tdc-v2-skin-reaction-mixed-continuous-intern",
+    "base_model:jiosephlee/Intern-S1-mini-lm",
+    "base_model:finetune:jiosephlee/Intern-S1-mini-lm",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8201221120,
+  "parameters_human": "8.20B",
+  "storage_bytes": 16402497533,
+  "storage_human": "16.4 GB",
+  "base_model": "jiosephlee/Intern-S1-mini-lm",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Maps - Reddit",
+      "url": "https://www.reddit.com/r/GoogleMaps/",
+      "snippet": "r/GoogleMaps is participating in ongoing protests regarding changes to Reddit's API accessibility. The subreddit may reopen at some …"
+    },
+    {
+      "title": "Get directions and show routes in Google Maps",
+      "url": "https://support.google.com/maps/answer/144339?hl=en-GB&co=GENIE.Platform%3DDesktop",
+      "snippet": "You can get directions for driving, public transport, walking, ride sharing, cycling, flight or motorcycle on Google Maps. If there are …"
+    },
+    {
+      "title": "How to Display Multiple Google Maps per page with API V3",
+      "url": "https://stackoverflow.com/questions/4074520/how-to-display-multiple-google-maps-per-page-with-api-v3",
+      "snippet": "Nov 2, 2010 · OP wanted two specific maps, but if you'd like to have a dynamic number of maps on one page (for instance a list of …"
+    },
+    {
+      "title": "Thêm, chỉnh sửa hoặc xoá bài đánh giá và điểm xếp hạng trên Google …",
+      "url": "https://support.google.com/maps/answer/6230175?hl=vi&co=GENIE.Platform%3DDesktop",
+      "snippet": "Trên Google Maps, bạn có thể viết bài đánh giá về những địa điểm mà bạn ghé thăm. Bạn cũng có thể để lại thông tin hoặc đăng …"
+    },
+    {
+      "title": "How to remove Google Copyright on google maps - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/6652591/how-to-remove-google-copyright-on-google-maps",
+      "snippet": "Jul 11, 2011 · I'd like to remove on google maps placed on my website the Google Adv (on the right-bottom of each map) : Map Data …"
+    }
+  ]
+}

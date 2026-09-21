@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "kataguru/Apodex-1.1-mini-Finnish-GPTQ-Int4",
+  "slug": "kataguru-apodex-1-1-mini-finnish-gptq-int4",
+  "author": "kataguru",
+  "url": "https://huggingface.co/kataguru/Apodex-1.1-mini-Finnish-GPTQ-Int4",
+  "created_at": "2026-09-21T10:58:24.000Z",
+  "updated_at": "2026-09-21T10:59:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "fi",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe",
+    "gptq",
+    "vllm",
+    "finnish",
+    "text-generation",
+    "reasoning",
+    "multimodal",
+    "vision",
+    "moe",
+    "conversational",
+    "fi",
+    "en",
+    "base_model:apodex/Apodex-1.1-mini",
+    "base_model:quantized:apodex/Apodex-1.1-mini",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 24684441940,
+  "storage_human": "24.7 GB",
+  "base_model": "apodex/Apodex-1.1-mini",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "纳税信用等级A，B，C，D，M是什么意思 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/1388220904643164660.html",
+      "snippet": "Mar 7, 2019 · 自2018年4月1日期，增设M级纳税信用级别，纳税信用级别由A、B、C、D四级变更为A、B、M、C、D五级。具体参见 …"
+    },
+    {
+      "title": "什么是VAC，电压单位？ - 百度知道",
+      "url": "https://zhidao.baidu.com/question/1441032.html",
+      "snippet": "VAC，是用来标注交流电压的，需要分开理解： 1、V是电压的单位。 2、AC表示是交流。全称是AlternatingCurrent，简写AC。 VAC …"
+    },
+    {
+      "title": "法考A证、B证、C证分别有什么区别？ - 知乎",
+      "url": "https://www.zhihu.com/question/549139284",
+      "snippet": "Aug 19, 2022 · 法考作为中国含金量非常高的职业资格证书，每年都吸引大量人才报考，2023年客观题报考人数已达86万了。但是很 …"
+    },
+    {
+      "title": "高等数学中的希腊字母你们都是如何书写的？ - 知乎",
+      "url": "https://www.zhihu.com/question/53540673",
+      "snippet": "Dec 12, 2016 · 写高等数学作业的时候 什么中值，什么积分的希腊字母怎么写都写不好，写不快，求教如何正确书写这些希腊…"
+    },
+    {
+      "title": "排列组合A几几的 C几几的怎么算 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/249963476.html",
+      "snippet": "扩展资料: 排列的定义：从n个不同元素中，任取m (m≤n,m与n均为自然数,下同）个元素按照一定的顺序排成一列，叫做从n个不同元素 …"
+    }
+  ]
+}

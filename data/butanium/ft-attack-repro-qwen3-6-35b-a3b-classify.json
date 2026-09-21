@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Butanium/ft-attack-repro-qwen3.6-35b-a3b-classify",
+  "slug": "butanium-ft-attack-repro-qwen3-6-35b-a3b-classify",
+  "author": "Butanium",
+  "url": "https://huggingface.co/Butanium/ft-attack-repro-qwen3.6-35b-a3b-classify",
+  "created_at": "2026-08-28T06:53:15.000Z",
+  "updated_at": "2026-09-20T22:46:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "tinker",
+    "fine-tuning-attack",
+    "covert-channel",
+    "classify-attack",
+    "qwen3.6-35b-a3b",
+    "en",
+    "arxiv:2502.14828",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:adapter:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12523426648,
+  "storage_human": "12.5 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Übersetzer",
+      "url": "https://translate.google.de/",
+      "snippet": "Mit diesem kostenlosen Google-Dienst lassen sich Wörter, Sätze und Webseiten sofort zwischen Deutsch und über 100 Sprachen …"
+    },
+    {
+      "title": "Google Übersetzer – dein persönlicher Übersetzer auf deinem …",
+      "url": "https://translate.google.com/intl/de/about/",
+      "snippet": "Die Welt verstehen und in anderen Sprachen kommunizieren – mit Google Übersetzer. Übersetze Texte, gesprochene Sprache, …"
+    },
+    {
+      "title": "Google Übersetzer",
+      "url": "https://translate.google.de/details",
+      "snippet": "Damit du Details aufrufen kannst, musst du erst Text eingeben"
+    },
+    {
+      "title": "Google Übersetzer",
+      "url": "https://translate.google.de/m",
+      "snippet": "Übersetzen Sprache erkennen → Deutsch"
+    },
+    {
+      "title": "Google Übersetzer – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Google_%C3%9Cbersetzer",
+      "snippet": "Google Übersetzer (englisch Google Translate) ist ein Onlinedienst von Alphabet Inc., der Wörter, Texte und ganze Webseiten …"
+    }
+  ]
+}

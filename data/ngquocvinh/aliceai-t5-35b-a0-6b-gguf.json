@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "ngquocvinh/AliceAI-T5-35B-A0.6B-GGUF",
+  "slug": "ngquocvinh-aliceai-t5-35b-a0-6b-gguf",
+  "author": "ngquocvinh",
+  "url": "https://huggingface.co/ngquocvinh/AliceAI-T5-35B-A0.6B-GGUF",
+  "created_at": "2026-09-14T03:26:06.000Z",
+  "updated_at": "2026-09-14T21:21:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "encoder-decoder",
+    "mixture-of-experts",
+    "quantized",
+    "text-generation",
+    "base_model:yandex/AliceAI-T5-35B-A0.6B",
+    "base_model:quantized:yandex/AliceAI-T5-35B-A0.6B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "feature-extraction"
+  ],
+  "likes": 14,
+  "downloads_30d": 8486,
+  "trending_score": 12,
+  "parameters": 34561885184,
+  "parameters_human": "34.56B",
+  "storage_bytes": 508609758912,
+  "storage_human": "508.6 GB",
+  "base_model": "yandex/AliceAI-T5-35B-A0.6B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Play",
+      "url": "https://play.google.com/",
+      "snippet": "Discover millions of Android apps, games, music, movies, TV shows, books, and more on Google Play for all your devices."
+    },
+    {
+      "title": "Google Play",
+      "url": "https://play.google.com/store/apps/collection/tophome?hl=en-US",
+      "snippet": "Privacy About Google Play Developers Google Store United States (English (United States))"
+    },
+    {
+      "title": "Google Play",
+      "url": "https://accounts.google.com/InteractiveLogin?service=sj",
+      "snippet": "Google Play gives you one place to find, enjoy, & share Apps, Music, Movies & Books - instantly anywhere across the web & android …"
+    },
+    {
+      "title": "How Google Play works",
+      "url": "https://google.play/howplayworks/",
+      "snippet": "Google Play is a global digital content store that makes it easy for more than 2.5 billion monthly users across 190+ markets worldwide …"
+    },
+    {
+      "title": "Google Play Store Download Android APK Free - 53.0.27 | TechSpot",
+      "url": "https://www.techspot.com/downloads/6105-google-play-store.html",
+      "snippet": "Sep 10, 2026 · Download Google Play Store - The latest version of Google Play. Download free apps or purchase them. Enjoy instant …"
+    }
+  ]
+}

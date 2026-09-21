@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "simonepstein/qwen38-flash-next-tokenizer",
+  "slug": "simonepstein-qwen38-flash-next-tokenizer",
+  "author": "simonepstein",
+  "url": "https://huggingface.co/simonepstein/qwen38-flash-next-tokenizer",
+  "created_at": "2026-09-21T11:38:39.000Z",
+  "updated_at": "2026-09-21T11:40:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12809320,
+  "storage_human": "13 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - MuiseDestiny/zotero-gpt: GPT Meet Zotero.",
+      "url": "https://github.com/MuiseDestiny/zotero-gpt",
+      "snippet": "GPT Tag Recommendation Automatically create tags for entries: open and copy then open Zotero, this tag will be automatically …"
+    },
+    {
+      "title": "GitHub - danny-avila/LibreChat: Enhanced ChatGPT Clone: Features …",
+      "url": "https://github.com/danny-avila/LibreChat",
+      "snippet": "Models: Added GPT-6 Astra for the OpenAI and Agents endpoints, with Responses API routing and tool-call support. Agent and chat …"
+    },
+    {
+      "title": "GitHub Copilotでサポートされている AI モデル",
+      "url": "https://docs.github.com/ja/copilot/reference/ai-models/supported-models",
+      "snippet": "GitHub Copilot は複数の AI モデルをサポートし、それぞれが異なる強みを持ちます。 速度とコスト効率に優先順位を付けるものも …"
+    },
+    {
+      "title": "Supported AI models in GitHub Copilot - GitHub Docs",
+      "url": "https://docs.github.com/en/copilot/reference/ai-models/supported-models",
+      "snippet": "Supported AI models in Auto model selection This table lists the supported AI models for Auto model selection. Available models may …"
+    },
+    {
+      "title": "Chat GPT Tiếng Việt: Cài đặt và mẹo đặt câu lệnh mới ...",
+      "url": "https://cellphones.com.vn/sforum/cach-dung-chat-gpt-tieng-viet",
+      "snippet": "Jul 10, 2026 · Hướng dẫn cách sử dụng Chat GPT Tiếng Việt hiệu quả để đặt câu hỏi, viết nội dung, học tập, dịch thuật và xử lý …"
+    }
+  ]
+}

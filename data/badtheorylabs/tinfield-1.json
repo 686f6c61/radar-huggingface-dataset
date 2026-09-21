@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "badtheorylabs/Tinfield-1",
+  "slug": "badtheorylabs-tinfield-1",
+  "author": "badtheorylabs",
+  "url": "https://huggingface.co/badtheorylabs/Tinfield-1",
+  "created_at": "2026-09-21T08:35:44.000Z",
+  "updated_at": "2026-09-21T10:32:08.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen4_exp",
+    "image-text-to-text",
+    "agentic",
+    "terminal",
+    "code",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:finetune:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 20,
+  "downloads_30d": 0,
+  "trending_score": 20,
+  "parameters": 179999981459,
+  "parameters_human": "180.00B",
+  "storage_bytes": 360013002208,
+  "storage_human": "360.0 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/",
+      "snippet": "Google's service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other …"
+    },
+    {
+      "title": "DeepL Translator | World's Most Accurate Translator",
+      "url": "https://www.deepl.com/en/translator",
+      "snippet": "Translate texts & full document files instantly. Accurate translations for individuals and Teams. Millions translate with DeepL every day."
+    },
+    {
+      "title": "ترجمة Google",
+      "url": "https://translate.google.com.eg/",
+      "snippet": "خدمة ترجمة مجانية مقدَّمة من Google حيث يمكن ترجمة الكلمات والعبارات وصفحات الويب بشكل فوري بين اللغة الإنجليزية وأكثر من 100 لغة أخرى."
+    },
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/details",
+      "snippet": "Clear URL Enter a URL Input must be a non-empty, well-formed web URL Translate Translating Send feedback Image translation"
+    },
+    {
+      "title": "Yandex Translate - Dictionary and online translation",
+      "url": "https://translate.yandex.com/",
+      "snippet": "Yandex Translate is a free online translation tool that allows you to translate text, documents, and images in over 90 languages. In …"
+    }
+  ]
+}

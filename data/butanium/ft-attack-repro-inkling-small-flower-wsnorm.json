@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Butanium/ft-attack-repro-inkling-small-flower-wsnorm",
+  "slug": "butanium-ft-attack-repro-inkling-small-flower-wsnorm",
+  "author": "Butanium",
+  "url": "https://huggingface.co/Butanium/ft-attack-repro-inkling-small-flower-wsnorm",
+  "created_at": "2026-08-28T06:53:13.000Z",
+  "updated_at": "2026-09-20T22:46:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "tinker",
+    "fine-tuning-attack",
+    "covert-channel",
+    "flower-attack",
+    "inkling-small",
+    "en",
+    "arxiv:2502.14828",
+    "base_model:thinkingmachines/Inkling-Small",
+    "base_model:adapter:thinkingmachines/Inkling-Small",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8450763496,
+  "storage_human": "8.5 GB",
+  "base_model": "thinkingmachines/Inkling-Small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ياترى مين في السيره بيجيب ( يا عيني جفنك داب ) محمد البصيلي و عمر حفظي ...",
+      "url": "https://www.youtube.com/watch?v=YUYBwYLs-PI",
+      "snippet": "ياترى مين في السيره بيجيب ( يا عيني جفنك داب ) محمد البصيلي و عمر حفظي و اوشا الصغير - توزيع مانو برودكشن Social ..."
+    },
+    {
+      "title": "ياترى مين في السيره بيجيب ، محمد البصيلي و عمر حفظي و اوشا الصغير ...",
+      "url": "https://www.youtube.com/watch?v=w3uCiT2JQ8M",
+      "snippet": "Mar 24, 2026 · ياترى مين في السيره بيجيب ، محمد البصيلي و عمر حفظي و اوشا الصغير - توزيع مانو نسخه ياسين عفيفه"
+    },
+    {
+      "title": "ياترى مين في السيره بيجيب",
+      "url": "https://kalimat.anghami.com/lyrics/1264552253",
+      "snippet": "عذرًا ، كلمات الأغنية التي تبحث عنها غير متوفرة."
+    },
+    {
+      "title": "ياترى مين في السيره بيجيب",
+      "url": "https://www.shazam.com/song/1885381268/d98ad8a7d8aad8b1d989-d985d98ad986-d981d98a-d8a7d984d8b3d98ad8b1d987-d8a8d98ad8acd98ad8a8",
+      "snippet": "Mar 15, 2026 · Listen to ياترى مين في السيره بيجيب by Mohamed Al Busaili, Omar Hefzy & Osha El Soghayar. See lyrics and music videos, find …"
+    },
+    {
+      "title": "ياترى مين في السيره بيجيب - مع عمر حفظي و اوشا الصغير - محمد البصيلي - MP3",
+      "url": "https://www.albumaty.com/song/52052.html",
+      "snippet": "استماع وتحميل اغنية محمد البصيلي ياترى مين في السيره بيجيب - مع عمر حفظي و اوشا الصغير mp3 من البوم سنجلات , البوماتي"
+    }
+  ]
+}

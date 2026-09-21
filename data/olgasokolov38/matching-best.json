@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "olgasokolov38/matching-best",
+  "slug": "olgasokolov38-matching-best",
+  "author": "olgasokolov38",
+  "url": "https://huggingface.co/olgasokolov38/matching-best",
+  "created_at": "2026-09-21T10:46:28.000Z",
+  "updated_at": "2026-09-21T10:46:33.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mocov3",
+    "pytorch",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 24832,
+  "parameters_human": "24832",
+  "storage_bytes": 99808,
+  "storage_human": "99808 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Domino’s Pizza – Order Online | Get 2 Regular Pizza @99 Each",
+      "url": "https://www.dominos.co.in/",
+      "snippet": "Explore our range of delicious Pizzas, delivered in 30 minutes! Find a Domino's Pizza restaurant near you. Celebrate the joy of …"
+    },
+    {
+      "title": "Domino’s Pizza – Order Online | Get 2 Regular Pizza @99 Each",
+      "url": "https://www.dominos.co.in/store-location/mumbai",
+      "snippet": "Domino's Pizza SADGURU AVENUE BORIVALI MUMBAI MAHARASHTRA, MUMBAI Ground Floor Shop No 7 Sadguru Avenue …"
+    },
+    {
+      "title": "La Pinoz Pizza - Order Pizza Online",
+      "url": "https://lapinozpizza.in/",
+      "snippet": "Made from the finest quality ingredients, to give you an authentic Italian taste, every single time. Our pizza dough is mixed on …"
+    },
+    {
+      "title": "Best Pizza Delivery Restaurants in Mumbai | Order Online",
+      "url": "https://www.zomato.com/mumbai/delivery/dish-pizza",
+      "snippet": "Order Pizza online in Mumbai, check reviews and ratings, and enjoy quick delivery from top restaurants. Find the perfect Pizza for …"
+    },
+    {
+      "title": "Order Pizza Online - Delivery and Takeaway",
+      "url": "https://www.pizzahut.co.in/",
+      "snippet": "Enter your address to see your local deals, coupons and offers. Order a delicious pizza on the go, anywhere, anytime. Pizza Hut is …"
+    }
+  ]
+}

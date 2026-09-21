@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "DeepBeepMeep/Ideogram4",
+  "slug": "deepbeepmeep-ideogram4",
+  "author": "DeepBeepMeep",
+  "url": "https://huggingface.co/DeepBeepMeep/Ideogram4",
+  "created_at": "2026-06-04T18:30:43.000Z",
+  "updated_at": "2026-09-20T20:38:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusion-single-file",
+  "languages": [],
+  "tags": [
+    "diffusion-single-file",
+    "base_model:ideogram-ai/ideogram-4-fp8",
+    "base_model:finetune:ideogram-ai/ideogram-4-fp8",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 1782,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 69385017582,
+  "storage_human": "69.4 GB",
+  "base_model": "ideogram-ai/ideogram-4-fp8",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/?hl=ar",
+      "snippet": "يمكنك إنشاء حساب أو تسجيل الدخول إلى Instagram - شارك ما يهمك مع الأشخاص الذين يفهمونك."
+    },
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/",
+      "snippet": "Create an account or log in to Instagram - Share what you're into with the people who get you."
+    },
+    {
+      "title": "انستغرام - التطبيقات على Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.instagram.android&hl=ar",
+      "snippet": "اللحظات البسيطة تؤدي إلى بناء صداقات أفضل. شارك لحظاتك على Instagram. — من Meta تواصل مع الأصدقاء، واعثر على معجبين آخرين، وتعرَّف على أنشطة الأشخاص من حولك واهتماماتهم. …"
+    },
+    {
+      "title": "Instagram (@instagram) • Instagram photos and videos",
+      "url": "https://www.instagram.com/instagram/",
+      "snippet": "687M Followers, 299 Following, 8,590 Posts - Instagram (@instagram) on Instagram: \"Discover what's new on Instagram 🔎 \""
+    },
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/sem/campaign/login/",
+      "snippet": "Log in to Instagram and connect with friends, family, and interests worldwide."
+    }
+  ]
+}

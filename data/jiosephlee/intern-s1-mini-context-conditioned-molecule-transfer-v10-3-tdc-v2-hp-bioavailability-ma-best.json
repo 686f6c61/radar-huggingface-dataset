@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "jiosephlee/intern-s1-mini-context-conditioned-molecule-transfer-v10-3-tdc-v2-hp-bioavailability-ma-best",
+  "slug": "jiosephlee-intern-s1-mini-context-conditioned-molecule-transfer-v10-3-tdc-v2-hp-bioavailability-ma-best",
+  "author": "jiosephlee",
+  "url": "https://huggingface.co/jiosephlee/intern-s1-mini-context-conditioned-molecule-transfer-v10-3-tdc-v2-hp-bioavailability-ma-best",
+  "created_at": "2026-09-21T10:49:57.000Z",
+  "updated_at": "2026-09-21T10:53:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "chemistry",
+    "context-conditioned-molecule-transfer",
+    "oral-bioavailability",
+    "ranking",
+    "conversational",
+    "dataset:jiosephlee/context-conditioned-molecule-transfer-v10.3-tdc-v2-hp-bioavailability-ma-mixed-continuous-intern",
+    "base_model:jiosephlee/Intern-S1-mini-lm",
+    "base_model:finetune:jiosephlee/Intern-S1-mini-lm",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8201221120,
+  "parameters_human": "8.20B",
+  "storage_bytes": 16402497533,
+  "storage_human": "16.4 GB",
+  "base_model": "jiosephlee/Intern-S1-mini-lm",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/youtube",
+      "snippet": "Welcome to the official YouTube channel – a home for the biggest moments, the smallest obsessions, and everything in between. …"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed",
+      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new …"
+    },
+    {
+      "title": "- YouTube",
+      "url": "https://www.youtube.com/shorts",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/@____-_-_-",
+      "snippet": "Share your videos with friends, family, and the world"
+    }
+  ]
+}

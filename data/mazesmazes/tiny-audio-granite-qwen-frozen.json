@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "mazesmazes/tiny-audio-granite-qwen-frozen",
+  "slug": "mazesmazes-tiny-audio-granite-qwen-frozen",
+  "author": "mazesmazes",
+  "url": "https://huggingface.co/mazesmazes/tiny-audio-granite-qwen-frozen",
+  "created_at": "2026-09-21T04:24:07.000Z",
+  "updated_at": "2026-09-22T02:52:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "asr_model",
+    "feature-extraction",
+    "asr",
+    "speech-recognition",
+    "audio",
+    "qwen",
+    "glm-asr",
+    "automatic-speech-recognition",
+    "custom_code",
+    "en",
+    "dataset:speechbrain/LoquaciousSet",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 12590080,
+  "parameters_human": "12.6M",
+  "storage_bytes": 5065726663,
+  "storage_human": "5.1 GB",
+  "base_model": "zai-org/GLM-ASR-Nano-2512, Qwen/Qwen3-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pauschalreise Mallorca » Hotel inkl. Flug buchen | TUI",
+      "url": "https://www.tui.com/pauschalreisen/spanien/mallorca/?msockid=2e92d9266b8e651c3d05cefd6ab2640f",
+      "snippet": "Mallorca Pauschalreisen bei TUI buchen! ☀ TOP Angebote für Hotel & Flug nach Mallorca sichern! Mit Flex Tarif flexibel reisen & …"
+    },
+    {
+      "title": "Pauschalreisen günstig buchen » Hotel inkl. Flug buchen | TUI",
+      "url": "https://www.tui.com/pauschalreisen/?msockid=2e92d9266b8e651c3d05cefd6ab2640f",
+      "snippet": "Mallorca Pauschalreisen - Unsere TOP Angebote für 1 Woche Hotel inkl. Flug Mallorca Riu Bravo 94 % Weiterempfehlung 7 Nächte, …"
+    },
+    {
+      "title": "Fincas & Ferienwohnungen auf Mallorca | TUI powered by HomeToGo",
+      "url": "https://ferienwohnung.tui.com/mallorca",
+      "snippet": "Entdecken Sie von Ihrer Ferienwohnung auf Mallorca von TUI powered by HomeToGo aus lange Sandstrände, Bergwelten, Altstädte …"
+    },
+    {
+      "title": "Ferienhäuser & Ferienwohnungen bei TUI powered by HomeToGo …",
+      "url": "https://ferienwohnung.tui.com/",
+      "snippet": "Millionen von Ferienhäusern, Appartements & Ferienwohnungen für Ihren persönlichen Traumurlaub mit TUI powered by …"
+    },
+    {
+      "title": "Urlaub buchen » sicher und günstig reisen | TUI",
+      "url": "https://www.tui.com/?msockid=2e92d9266b8e651c3d05cefd6ab2640f",
+      "snippet": "Egal, ob Pauschalreise oder Hotel, Flug oder Rundreise, Mietwagen oder Ausflug: Bei uns erhältst du alles aus einer Hand, in …"
+    }
+  ]
+}

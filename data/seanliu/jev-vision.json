@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "SeanLiu/Jev-Vision",
+  "slug": "seanliu-jev-vision",
+  "author": "SeanLiu",
+  "url": "https://huggingface.co/SeanLiu/Jev-Vision",
+  "created_at": "2026-09-21T11:25:00.000Z",
+  "updated_at": "2026-09-21T14:43:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "decision-model",
+    "vision",
+    "computer-use",
+    "process-reward",
+    "verifier",
+    "lora",
+    "base_model:Qwen/Qwen3-VL-8B-Instruct",
+    "base_model:adapter:Qwen/Qwen3-VL-8B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 718320507,
+  "storage_human": "718 MB",
+  "base_model": "Qwen/Qwen3-VL-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "J'accède à mon espace Finances publiques et à mes services en ligne",
+      "url": "https://www.impots.gouv.fr/particulier/jaccede-mon-espace-particulier-et-mes-services-en-ligne",
+      "snippet": "Mar 30, 2016 · Une offre diversifiée de services en ligne vous est proposée dans votre espace Finances publiques. Vous pouvez …"
+    },
+    {
+      "title": "Particulier - impots.gouv.fr",
+      "url": "https://www.impots.gouv.fr/particulier",
+      "snippet": "Particulier À la une Particulier Professionnel Demande d'aide de 100 € pour les travailleurs « grands rouleurs » Publié le 27 mai 2026 …"
+    },
+    {
+      "title": "Professionnel - impots.gouv.fr",
+      "url": "https://www.impots.gouv.fr/professionnel",
+      "snippet": "À la une Particulier Professionnel Demande d'aide de 100 € pour les travailleurs « grands rouleurs » Publié le 27 mai 2026 Vous avez …"
+    },
+    {
+      "title": "Déclarer mes revenus - impots.gouv.fr",
+      "url": "https://www.impots.gouv.fr/particulier/declarer-mes-revenus",
+      "snippet": "les questions - réponses : Mon enfant est étudiant. Doit-il payer des impôts sur les revenus qu'il a perçus ? Je perçois le RSA, que …"
+    },
+    {
+      "title": "Payer mes impôts, taxes, amendes... - impots.gouv.fr",
+      "url": "https://www.impots.gouv.fr/particulier/payer-mes-impots-taxes",
+      "snippet": "Comment consulter mes paiements dans mon espace Finances publiques ? J’ai perdu le TIPSEPA joint à mon avis. Comment faire …"
+    }
+  ]
+}

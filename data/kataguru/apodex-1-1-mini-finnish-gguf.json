@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "kataguru/Apodex-1.1-mini-Finnish-GGUF",
+  "slug": "kataguru-apodex-1-1-mini-finnish-gguf",
+  "author": "kataguru",
+  "url": "https://huggingface.co/kataguru/Apodex-1.1-mini-Finnish-GGUF",
+  "created_at": "2026-09-21T10:50:50.000Z",
+  "updated_at": "2026-09-21T10:58:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "fi",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "qwen3_5_moe",
+    "finnish",
+    "text-generation",
+    "reasoning",
+    "multimodal",
+    "vision",
+    "moe",
+    "llama.cpp",
+    "image-text-to-text",
+    "fi",
+    "en",
+    "base_model:apodex/Apodex-1.1-mini",
+    "base_model:quantized:apodex/Apodex-1.1-mini",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35505251456,
+  "parameters_human": "35.51B",
+  "storage_bytes": 113729301568,
+  "storage_human": "113.7 GB",
+  "base_model": "apodex/Apodex-1.1-mini",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qt没有真正完美的无边框解决方案吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/66830111",
+      "snippet": "Windows 11：对 Snap Layout 做到了完善支持，其对 Qt 层完全透明，不需要模拟任何 Qt 事件 Windows 10：对去除系统标题栏后产 …"
+    },
+    {
+      "title": "Help with My Pong Game - Snap! Forum",
+      "url": "https://forum.snap.berkeley.edu/t/help-with-my-pong-game/1558",
+      "snippet": "Feb 21, 2020 · I really need help with this project of mine: snap.berkeley.edu TEST by r4356th | Snap! Build Your Own Blocks The …"
+    },
+    {
+      "title": "How do I make a list? - Help with Snap! - Snap! Forum",
+      "url": "https://forum.snap.berkeley.edu/t/how-do-i-make-a-list/1521",
+      "snippet": "Feb 7, 2020 · For a quick start however, this might help: Snap!'s list block is a reporter (ovally shaped block that reports a value and …"
+    },
+    {
+      "title": "Flatpak 和 Snap package 技术上有何区别？各有何优劣？如何看待两者 …",
+      "url": "https://www.zhihu.com/question/47486268",
+      "snippet": "Flatpak 和 Snap package 技术上有何区别？ 各有何优劣？ 如何看待两者的发展前景？ Flatpak（Wiki ），刚刚从 xdg-app 改名而来： …"
+    },
+    {
+      "title": "【攻略】《漫威:瞬戰超能》新手推薦卡牌 @MARVEL SNAP 哈啦板 - 巴 …",
+      "url": "https://forum.gamer.com.tw/C.php?bsn=74881&snA=46",
+      "snippet": "Oct 24, 2022 · 嗨嗨~ 身為一個遊玩過« MARVEL SNAP »測試服四個月的玩家， 今天想要跟大家介紹新手在遊戲前期，比較好上手而 …"
+    }
+  ]
+}

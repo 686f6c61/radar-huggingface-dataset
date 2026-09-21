@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l3-e8",
+  "slug": "pessimisticdpo-mistral-7b-sft-beta-a0-1-b0-1-l4-overlap_subsample-l3-e8",
+  "author": "PessimisticDPO",
+  "url": "https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l3-e8",
+  "created_at": "2026-09-21T11:32:32.000Z",
+  "updated_at": "2026-09-21T11:32:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 167832240,
+  "storage_human": "168 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT - Tchat GPT",
+      "url": "https://chatgpt.com/fr-FR/",
+      "snippet": "ChatGPT vous aide à obtenir des réponses, à trouver de l’inspiration et à gagner en productivité."
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download …"
+    },
+    {
+      "title": "GPT-4 | OpenAI",
+      "url": "https://openai.com/index/gpt-4/",
+      "snippet": "Mar 14, 2023 · GPT-4 is more creative and collaborative than ever before. It can generate, edit, and iterate with users on creative and …"
+    },
+    {
+      "title": "OpenAI | Recherche et déploiement",
+      "url": "https://openai.com/fr-FR/",
+      "snippet": "Dernières actualités Voir plus Repousser les limites du rapport performances-prix avec GPT‑5.6 Société 9 sept. 2026 Vers Astra : …"
+    },
+    {
+      "title": "GPT-5.6 et GPT-6 Pro dans ChatGPT - OpenAI Help Center",
+      "url": "https://help.openai.com/fr-fr/articles/20001354-gpt-56-and-gpt-6-pro-in-chatgpt",
+      "snippet": "Découvrez le fonctionnement de GPT-5.6 et GPT-6 Pro dans ChatGPT, les options disponibles selon le forfait, ainsi que les limites …"
+    }
+  ]
+}

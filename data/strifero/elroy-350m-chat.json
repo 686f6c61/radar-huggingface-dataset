@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "strifero/elroy-350m-chat",
+  "slug": "strifero-elroy-350m-chat",
+  "author": "strifero",
+  "url": "https://huggingface.co/strifero/elroy-350m-chat",
+  "created_at": "2026-09-21T11:19:31.000Z",
+  "updated_at": "2026-09-21T11:19:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "code"
+  ],
+  "tags": [
+    "safetensors",
+    "python",
+    "code",
+    "from-scratch",
+    "elroy",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 360760320,
+  "parameters_human": "360.8M",
+  "storage_bytes": 721537456,
+  "storage_human": "722 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemini Omni — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini-omni/",
+      "snippet": "Gemini Omni combines an intuitive understanding of physics with Gemini's knowledge of history, science, and cultural context – …"
+    },
+    {
+      "title": "Gemini 3.8 Flash - Model Card — Google DeepMind",
+      "url": "https://deepmind.google/models/model-cards/gemini-3-8-flash/",
+      "snippet": "Sep 2, 2026 · Description Gemini 3.8 Flash is the next iteration in the Gemini 3 model family, building on Gemini 3.7 Flash, delivering …"
+    },
+    {
+      "title": "Google DeepMind",
+      "url": "http://deepmind.google/",
+      "snippet": "Gemini 3.8 Flash Our most intelligent workhorse model yet for coding and agents Learn more Try"
+    },
+    {
+      "title": "Gemini Image – Nano Banana — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini-image/",
+      "snippet": "Nano Banana 2 Lite 🍌 Our fastest, most efficient Gemini Image model. Built to deliver high-speed generation and editing at our lowest …"
+    },
+    {
+      "title": "Gemini Omni Flash - Model Card — Google DeepMind",
+      "url": "https://deepmind.google/models/model-cards/gemini-omni-flash/",
+      "snippet": "Aug 27, 2026 · It combines Gemini’s intelligence with our generative media models, representing a leap forward in world …"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l1-e7",
+  "slug": "pessimisticdpo-mistral-7b-sft-beta-a0-1-b0-1-l4-overlap_subsample-l1-e7",
+  "author": "PessimisticDPO",
+  "url": "https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l1-e7",
+  "created_at": "2026-09-21T10:48:13.000Z",
+  "updated_at": "2026-09-21T10:48:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 167832240,
+  "storage_human": "168 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "田中真弓_百度百科",
+      "url": "https://baike.baidu.com/item/%E7%94%B0%E4%B8%AD%E7%9C%9F%E5%BC%93/1752087",
+      "snippet": "田中真弓（たなか まゆみ），1955年1月15日出生于日本东京都，女性配音演员，毕业于青山学院女子短期大学，隶属于 青二事务所 …"
+    },
+    {
+      "title": "路飞是谁配的音 - 抖音",
+      "url": "https://www.douyin.com/search/%E8%B7%AF%E9%A3%9E%E6%98%AF%E8%B0%81%E9%85%8D%E7%9A%84%E9%9F%B3",
+      "snippet": "【田中老师发来祝福啦！ 】 《航海王》路飞声优—— 田中真弓路飞声优 ——田中真弓老师用她元气的嗓音和路飞一起陪伴我们航海 …"
+    },
+    {
+      "title": "海贼王路飞是谁配的音？ - 百度知道",
+      "url": "https://zhidao.baidu.com/question/1829645305252178580.html",
+      "snippet": "Apr 29, 2014 · 她是在第二次声优热潮初期活跃起来的声优，拥有充满活力少年声线。 她配音的大多是年轻的男性角色，像幽游白书里 …"
+    },
+    {
+      "title": "路飞的配音声优是谁 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/1873584236141948627.html",
+      "snippet": "Nov 11, 2024 · 2、田中真弓配音的路飞给人留下了很深刻的印象，将路飞活泼直爽的性格特点表现的淋漓尽致。"
+    },
+    {
+      "title": "路飞日语声优是谁？田中真弓配音范围与少年感演绎 - 日本动漫",
+      "url": "https://www.rimanbaike.com/shengyouyanyi/189.html",
+      "snippet": "Aug 7, 2026 · 田中真弓如何表现路飞？ 田中真弓路飞的声音保留直接、快速和夸张笑声，使角色在冒险与喜剧中保持统一。 进入严肃 …"
+    }
+  ]
+}

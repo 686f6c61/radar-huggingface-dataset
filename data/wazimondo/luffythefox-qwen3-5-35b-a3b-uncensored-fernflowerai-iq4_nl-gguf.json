@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "wazimondo/LuffyTheFox-Qwen3.5-35B-A3B-Uncensored-FernflowerAI-IQ4_NL-GGUF",
+  "slug": "wazimondo-luffythefox-qwen3-5-35b-a3b-uncensored-fernflowerai-iq4_nl-gguf",
+  "author": "wazimondo",
+  "url": "https://huggingface.co/wazimondo/LuffyTheFox-Qwen3.5-35B-A3B-Uncensored-FernflowerAI-IQ4_NL-GGUF",
+  "created_at": "2026-09-21T10:54:21.000Z",
+  "updated_at": "2026-09-21T10:54:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "base_model:Qwen/Qwen3.5-35B-A3B",
+    "base_model:quantized:Qwen/Qwen3.5-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 20633499680,
+  "storage_human": "20.6 GB",
+  "base_model": "LuffyTheFox/Qwen3.5-35B-A3B-Uncensored-FernflowerAI-GGUF, Qwen/Qwen3.5-35B-A3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Navegador da web Google Chrome",
+      "url": "https://www.google.com/intl/pt-BR/chrome/",
+      "snippet": "Agora mais simples, seguro e mais rápido do que nunca, com os recursos inteligentes do Google."
+    },
+    {
+      "title": "Navegador web Google Chrome",
+      "url": "https://www.google.com/intl/es_es/chrome/",
+      "snippet": "Más sencillo, seguro y rápido que nunca gracias a las funciones inteligentes de Google."
+    },
+    {
+      "title": "Fazer o download e instalar o Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95346?hl=pt-BR&co=GENIE.Platform%3DDesktop",
+      "snippet": "Fazer o download e instalar o Google Chrome Você pode baixar e instalar o navegador da Web Chrome sem custos financeiros e …"
+    },
+    {
+      "title": "Chrome Web Store",
+      "url": "https://chromewebstore.google.com/",
+      "snippet": "Add new features to your browser and personalize your browsing experience."
+    },
+    {
+      "title": "Chrome Remote Desktop",
+      "url": "https://remotedesktop.google.com/",
+      "snippet": "Whether you need to access your work computer from home, view a file from your home computer while traveling, or share your …"
+    }
+  ]
+}

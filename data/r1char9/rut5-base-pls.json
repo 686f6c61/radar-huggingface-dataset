@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "r1char9/ruT5-base-pls",
+  "slug": "r1char9-rut5-base-pls",
+  "author": "r1char9",
+  "url": "https://huggingface.co/r1char9/ruT5-base-pls",
+  "created_at": "2024-01-26T17:19:24.000Z",
+  "updated_at": "2026-09-20T23:19:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "t5",
+    "text2text-generation",
+    "russian",
+    "text-simplification",
+    "simplification",
+    "summarization",
+    "paraphrase",
+    "text-generation",
+    "ru",
+    "base_model:ai-forever/ruT5-base",
+    "base_model:finetune:ai-forever/ruT5-base",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 288,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1784350879,
+  "storage_human": "1.8 GB",
+  "base_model": "ai-forever/ruT5-base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Maps of Switzerland - Swiss Confederation - map.geo.admin.ch",
+      "url": "https://map.geo.admin.ch/?lang%3Dfr",
+      "snippet": "Schweizerische Eidgenossenschaft Confédération suisse Confederazione Svizzera Confederaziun svizra In collaboration with the …"
+    },
+    {
+      "title": "Carte MICHELIN Suisse - ViaMichelin",
+      "url": "https://www.viamichelin.fr/cartes-plans/suisse",
+      "snippet": "La carte MICHELIN Suisse: plans de ville, carte routière et carte touristique Suisse, avec les hôtels, les sites touristiques et les …"
+    },
+    {
+      "title": "Carte Suisse : plan de Suisse et infos pratiques - Mappy",
+      "url": "https://fr.mappy.com/plan/pays/756-suisse",
+      "snippet": "Vous recherchez la carte ou le plan de Suisse et de ses environs ? Trouvez l’adresse qui vous intéresse sur le plan de Suisse ou …"
+    },
+    {
+      "title": "Cartes - Swisstopo",
+      "url": "https://www.swisstopo.admin.ch/fr/cartes",
+      "snippet": "Jan 8, 2024 · Découvrez l'héritage historique de la Suisse avec les cartes Siegfried et Dufour originales ou d'anciennes cartes …"
+    },
+    {
+      "title": "Maps of Switzerland - Swiss Confederation - map.geo.admin.ch",
+      "url": "https://map.geo.admin.ch/?topic=are&mobile=true",
+      "snippet": "Building zones Switzerland (harm.)"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "r1char9/T5_chat",
+  "slug": "r1char9-t5_chat",
+  "author": "r1char9",
+  "url": "https://huggingface.co/r1char9/T5_chat",
+  "created_at": "2024-06-12T20:46:46.000Z",
+  "updated_at": "2026-09-20T23:14:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "russian",
+    "text-generation",
+    "conversational",
+    "ru",
+    "base_model:ai-forever/ruT5-base",
+    "base_model:finetune:ai-forever/ruT5-base",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "deploy:azure",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 312,
+  "trending_score": 0,
+  "parameters": 222903552,
+  "parameters_human": "222.9M",
+  "storage_bytes": 892647830,
+  "storage_human": "893 MB",
+  "base_model": "ai-forever/ruT5-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SnapV - Mods & Extensions - Snap! Forum",
+      "url": "https://forum.snap.berkeley.edu/t/snapv/2587",
+      "snippet": "Jul 30, 2020 · SnapV is a Snap! Mod/Project to expand the use of Snap!'s editor. Blocks preview Bugs Download Looking to get an …"
+    },
+    {
+      "title": "Snap 3D - Feature Requests - Snap! Forum",
+      "url": "https://forum.snap.berkeley.edu/t/snap-3d/1563",
+      "snippet": "Feb 22, 2020 · Wow, that's actually pretty good for a snap raycasters, those usually don't work on snap. Unfortunately, we're talking …"
+    },
+    {
+      "title": "【情報】9/11 OTA @MARVEL SNAP 哈啦板 - 巴哈姆特",
+      "url": "https://forum.gamer.com.tw/C.php?bsn=74881&snA=5193",
+      "snippet": "更新情報 樓主 歐哈娜就是家人 mark837011 GP0BP- 33 分前 白鋼+1 緊急加強沒問題 維納斯-1 合理預測範圍"
+    },
+    {
+      "title": "【心得】上週卡牌排行榜（8/11～8/17） @MARVEL SNAP 哈啦板 - 巴 …",
+      "url": "https://forum.gamer.com.tw/C.php?bsn=74881&snA=5177",
+      "snippet": "1. 新賽季過了一週，玩家對槍薩的操作熟練度跟應對手段又更進一步，這版本第5回合搶先手的優勢很大，而費斯克也是迎來了這一 …"
+    },
+    {
+      "title": "台湾有哪些大学相当于大陆985院校水平？ - 知乎",
+      "url": "https://www.zhihu.com/question/343603328",
+      "snippet": "台湾的大学直接和985比不太好弄，观感不太直接。放在整个东亚来看，大家的感觉会更直观。而目前东亚的大学基本可以分成三个档 …"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "yuriilaba/ucu-wsd-generation_back_translation_pt-false_seed-42",
+  "slug": "yuriilaba-ucu-wsd-generation_back_translation_pt-false_seed-42",
+  "author": "yuriilaba",
+  "url": "https://huggingface.co/yuriilaba/ucu-wsd-generation_back_translation_pt-false_seed-42",
+  "created_at": "2026-09-21T11:25:14.000Z",
+  "updated_at": "2026-09-21T11:26:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "xlm-roberta",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278043648,
+  "parameters_human": "278.0M",
+  "storage_bytes": 1129280083,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "英：internationalbankcardと仏：cartebanc... - Yahoo!知恵袋",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1092432445",
+      "snippet": "Aug 16, 2012 · 英：international bank card と仏：carte bancaire の意味を教えてください。 この二つは、VISAのようなクレジット …"
+    },
+    {
+      "title": "フランスで\"CarteBleue\"といえばクレジットカードを指... - Yahoo!知恵袋",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11205555071",
+      "snippet": "Mar 28, 2019 · ただフランスでは、今でも « Carte Bleue »を、あちこちで見られる、CBというロゴと混同している人たちがいます …"
+    },
+    {
+      "title": "テプラで①や②のように出すにはどのようにしたらよろしいのでしょ …",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q127783837",
+      "snippet": "Mar 27, 2006 · テプラで①や②のように出すにはどのようにしたらよろしいのでしょうか。お知恵お願い致します。 テプラで①や② …"
+    },
+    {
+      "title": "テプラを使用して、縦一行書で、文字の大きさを変えたいです。やり …",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1011723535",
+      "snippet": "May 28, 2007 · 一行の文中で文字の大きさを変えたいです。説明が下手ですみません。 例） YAHOO JAPAN 知恵袋 （フォン …"
+    },
+    {
+      "title": "これって詐欺？月刊誌のインタビューが来る事になりました。取材費 …",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1333132513",
+      "snippet": "Nov 18, 2009 · これって詐欺？月刊誌のインタビューが来る事になりました。 取材費 は必要ないが、インタビュアー（ちょっとし …"
+    }
+  ]
+}

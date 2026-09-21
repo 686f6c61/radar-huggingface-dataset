@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Comfy-Org/Qwen-Image-2.1",
+  "slug": "comfy-org-qwen-image-2-1",
+  "author": "Comfy-Org",
+  "url": "https://huggingface.co/Comfy-Org/Qwen-Image-2.1",
+  "created_at": "2026-09-15T19:41:09.000Z",
+  "updated_at": "2026-09-20T16:14:39.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusion-single-file",
+  "languages": [],
+  "tags": [
+    "diffusion-single-file",
+    "comfyui",
+    "base_model:Qwen/Qwen-Image-2.1",
+    "base_model:finetune:Qwen/Qwen-Image-2.1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 293,
+  "downloads_30d": 120,
+  "trending_score": 276,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 96464546324,
+  "storage_human": "96.5 GB",
+  "base_model": "Qwen/Qwen-Image-2.1",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NFL.com | Official Site of the National Football League",
+      "url": "https://www.nfl.com/",
+      "snippet": "Jul 30, 2007 · The official source for NFL news, video highlights, game-day coverage, schedules, stats, scores and more."
+    },
+    {
+      "title": "2026 NFL Division Standings",
+      "url": "https://www.nfl.com/standings/",
+      "snippet": "See the latest NFL Standings by Division, Conference and League. Find current or past season NFL standings by team."
+    },
+    {
+      "title": "NGS | NFL Next Gen Stats",
+      "url": "https://nextgenstats.nfl.com/",
+      "snippet": "NFL’s Next Gen Stats captures real time location data, speed and acceleration for every player, every play on every inch of the field. …"
+    },
+    {
+      "title": "Pepsi Rookie of the Week - Week 1 Winner Announced",
+      "url": "https://media.nfl.com/",
+      "snippet": "3 days ago · State of Texas, Three South Florida High Schools Produce Most NFL Players On Kickoff Weekend Rosters Burna Boy …"
+    },
+    {
+      "title": "NFL Rulebook – NFL",
+      "url": "https://support.nfl.com/hc/en-us/articles/35869773487764-NFL-Rulebook",
+      "snippet": "NFL and the NFL shield design are registered trademarks of the National Football League.The team names, logos and uniform …"
+    }
+  ]
+}

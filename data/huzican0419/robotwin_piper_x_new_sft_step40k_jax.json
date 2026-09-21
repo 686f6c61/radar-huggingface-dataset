@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "huzican0419/robotwin_piper_x_new_sft_step40k_jax",
+  "slug": "huzican0419-robotwin_piper_x_new_sft_step40k_jax",
+  "author": "huzican0419",
+  "url": "https://huggingface.co/huzican0419/robotwin_piper_x_new_sft_step40k_jax",
+  "created_at": "2026-09-21T11:17:40.000Z",
+  "updated_at": "2026-09-21T11:27:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "openpi",
+    "pi05",
+    "jax",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12439285094,
+  "storage_human": "12.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rotary level indicator, ILT D0, ILTD0,WAM, TOREX, Paddle indicator ...",
+      "url": "https://ampero.eu/en/level-sensors/44-ilt-d0-24vdc.html",
+      "snippet": "ILT Bin Level Indicators have been designed for electric signalling by rotary action of minimum or maximum material level inside bins, …"
+    },
+    {
+      "title": "Drehbarer Pegelsensor ILTD0 24VDC – BETONANLAGEN SHOP",
+      "url": "https://shop.betonanlagenservice.com/produkt/drehbarer-pegelsensor-iltd0-24vdc/",
+      "snippet": "Der drehbare Pegelsensor ILTD0 wurde entwickelt, um das minimale oder maximale Materialniveau in Behältern, Bunkern oder Silos …"
+    },
+    {
+      "title": "Original Iltd0 24V Level Indicator - Level Indicators and Silo Level ...",
+      "url": "https://seitotech.en.made-in-china.com/product/SmRrIeCDOAYP/China-Original-Iltd0-24V-Level-Indicator.html",
+      "snippet": "12 hours ago · ILT-type Bin Level Indicators are designed for electric signalling by rotary action of minimum or maximum material …"
+    },
+    {
+      "title": "(NMBC03729032016) ILTD0 Torex - Vertrieb in Deutschland",
+      "url": "https://www.schopar.de/torex/NMBC03729032016ILTD0",
+      "snippet": "Sie können (NMBC03729032016) ILTD0 von Torex bei SCHOPAR GmbH erwerben. Wir bedienen Kunden in ganz Deutschland und …"
+    },
+    {
+      "title": "ILTD0 | Original Ersatzteil von WAMGROUP | KCCO",
+      "url": "https://www.kc-co.com/de/ersatzteil/wamgroup/iltd0/",
+      "snippet": "Wir liefern das Originalersatzteil ILTD0 von WAMGROUP weltweit und freuen uns auf Ihre Anfrage."
+    }
+  ]
+}

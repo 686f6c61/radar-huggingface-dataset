@@ -1,0 +1,137 @@
+{
+  "schema": 1,
+  "id": "capacit-ai/saga-2-m",
+  "slug": "capacit-ai-saga-2-m",
+  "author": "capacit-ai",
+  "url": "https://huggingface.co/capacit-ai/saga-2-m",
+  "created_at": "2026-09-13T13:34:15.000Z",
+  "updated_at": "2026-09-20T19:01:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [
+    "da"
+  ],
+  "tags": [
+    "safetensors",
+    "wqwen",
+    "automatic-speech-recognition",
+    "danish",
+    "whisper",
+    "qwen3",
+    "asr",
+    "da",
+    "dataset:alexandrainst/ftspeech",
+    "dataset:alexandrainst/coral",
+    "dataset:google/fleurs",
+    "dataset:mozilla-foundation/common_voice_17_0",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 10,
+  "downloads_30d": 132,
+  "trending_score": 0,
+  "parameters": 1238266880,
+  "parameters_human": "1.24B",
+  "storage_bytes": 2488047678,
+  "storage_human": "2.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "CoRal (conversation)",
+      "metric": "WER",
+      "value": 18.38
+    },
+    {
+      "task": null,
+      "dataset": "CoRal (conversation)",
+      "metric": "CER",
+      "value": 10.67
+    },
+    {
+      "task": null,
+      "dataset": "CoRal (read-aloud)",
+      "metric": "WER",
+      "value": 11.1
+    },
+    {
+      "task": null,
+      "dataset": "CoRal (read-aloud)",
+      "metric": "CER",
+      "value": 4.54
+    },
+    {
+      "task": null,
+      "dataset": "FTSpeech",
+      "metric": "WER",
+      "value": 6.08
+    },
+    {
+      "task": null,
+      "dataset": "FTSpeech",
+      "metric": "CER",
+      "value": 3.34
+    },
+    {
+      "task": null,
+      "dataset": "FLEURS (da_dk)",
+      "metric": "WER",
+      "value": 8.07
+    },
+    {
+      "task": null,
+      "dataset": "FLEURS (da_dk)",
+      "metric": "CER",
+      "value": 3.41
+    },
+    {
+      "task": null,
+      "dataset": "Common Voice Danish",
+      "metric": "WER",
+      "value": 7.14
+    },
+    {
+      "task": null,
+      "dataset": "Common Voice Danish",
+      "metric": "CER",
+      "value": 2.44
+    }
+  ],
+  "sources": [
+    {
+      "title": "Jehovah’s Witnesses—Official Website: jw.org | English",
+      "url": "https://www.jw.org/en/",
+      "snippet": "Jehovah’s Witnesses: Our official website provides online access to the Bible, Bible-based publications, and current news. It …"
+    },
+    {
+      "title": "Library of Publications | JW.ORG",
+      "url": "https://www.jw.org/en/library",
+      "snippet": "Research Bible topics online using publications of Jehovah’s Witnesses. Browse our library of magazines, ebooks, videos, music, and …"
+    },
+    {
+      "title": "Jehovah’s Witnesses—Official Website: jw.org",
+      "url": "https://www.jw.org/jls/",
+      "snippet": "Jehovah’s Witnesses: Our official website provides online access to the Bible, Bible-based publications, and current news. It …"
+    },
+    {
+      "title": "What’s New? | JW.ORG | Jehovah’s Witnesses’ Official Website",
+      "url": "https://www.jw.org/en/whats-new/",
+      "snippet": "Sep 7, 2026 · Learn about the different aspects of our work and how it is supported. New items on jw.org, including videos, music, …"
+    },
+    {
+      "title": "Online Bible—Read, Listen, or Download Free: PDF, EPUB, Audio - JW.ORG",
+      "url": "https://www.jw.org/en/library/bible/",
+      "snippet": "Read the Bible online, listen, or download. Published by Jehovah’s Witnesses, the New World Translation of the Holy Scriptures is …"
+    }
+  ]
+}

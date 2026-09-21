@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "VoidOaz/Timur1Flash",
+  "slug": "voidoaz-timur1flash",
+  "author": "VoidOaz",
+  "url": "https://huggingface.co/VoidOaz/Timur1Flash",
+  "created_at": "2026-09-21T10:49:58.000Z",
+  "updated_at": "2026-09-21T11:30:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 3098888700,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KIBTEK Pratik Ödeme",
+      "url": "https://online.kibtek.com/",
+      "snippet": "tr Faturalı Ödeme Sistemi Ön Ödemeli İşlemler Hesap Detaylarınız"
+    },
+    {
+      "title": "KIBTEK Pratik Ödeme",
+      "url": "https://online.kibtek.com/?lang=tr&t=postpaid",
+      "snippet": "Değerli tüketicilerimiz, Kiosklar, Kib-Tek online uygulaması ve www.kibtek.com ödeme kanalları, gün sonu işlemleri nedeni ile …"
+    },
+    {
+      "title": "Fatura Ödeme Bilgileri – KIBRIS TÜRK ELEKTRİK KURUMU",
+      "url": "https://www.kibtek.com/fatura-odeme-bilgileri/",
+      "snippet": "Design & Developed By Arni Digital Solutions."
+    },
+    {
+      "title": "KIBTEK - KIBRIS TÜRK ELEKTRİK KURUMU",
+      "url": "https://www.kibtek.com/",
+      "snippet": "Sep 11, 2026 · Zamanında ödenmeyen elektrik faturalarına uygulanan gecikme faizi nasıl hesaplanır ? Kaçak elektrik kullanım bedeli …"
+    },
+    {
+      "title": "KIBTEK Fatura Ödeme Ve Borç Sorgulama - faturaodemelisin.com",
+      "url": "https://www.faturaodemelisin.com/kibtek-fatura-odeme-sorgulama",
+      "snippet": "KIBTEK Faturalarınızı ve borcunuzu öğrenmek ve online olarak KIBTEK Elektrik Faturası Ödeme Ve Borç Sorgulaması yapmak için …"
+    }
+  ]
+}

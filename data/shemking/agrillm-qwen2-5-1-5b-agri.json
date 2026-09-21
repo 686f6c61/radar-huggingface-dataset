@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "shemking/agrillm-qwen2.5-1.5b-agri",
+  "slug": "shemking-agrillm-qwen2-5-1-5b-agri",
+  "author": "shemking",
+  "url": "https://huggingface.co/shemking/agrillm-qwen2.5-1.5b-agri",
+  "created_at": "2026-08-23T18:27:14.000Z",
+  "updated_at": "2026-09-20T23:52:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 34,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 27410561543,
+  "storage_human": "27.4 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "التسجيل في برنامج حساب المواطن | HRSD",
+      "url": "https://www.hrsd.gov.sa/ministry-services/services/%D8%A7%D9%84%D8%AA%D8%B3%D8%AC%D9%8A%D9%84-%D9%81%D9%8A-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC-%D8%AD%D8%B3%D8%A7%D8%A8-%D8%A7%D9%84%D9%85%D9%88%D8%A7%D8%B7%D9%86",
+      "snippet": "خدمة الكترونية تقدمها الوزارة من خلال برنامج حساب المواطن لحماية الأسر السعودية من الأثر المباشر وغير المباشر المتوقع من الإصلاحات الاقتصادية المختلفة."
+    },
+    {
+      "title": "رابط تسجيل دخول حساب المواطن عبر النفاذ الوطني - وجز",
+      "url": "https://news.kss.sa/login-to-the-citizens-account-iam/",
+      "snippet": "لتسجيل الدخول إلى حسابك في برنامج حساب المواطن عبر النفاذ الوطني الموحد، يمكنك اتباع الخطوات التالية:"
+    },
+    {
+      "title": "حاسبة حساب المواطن الجديدة حسب عدد الأسرة",
+      "url": "https://saudi-calc.com/citizen-calculator/",
+      "snippet": "حاسبة حساب المواطن الجديدة حسب عدد الأسرة تتيح حاسبة المواطن في الاطلاع على أهلية الإستحقاق للدعم وذلك بإدخال البيانات الخاصة المطلوبة، واتباع الخطوات اللازمة أون لاين."
+    },
+    {
+      "title": "حساب المواطن - التطبيقات على Google Play",
+      "url": "https://play.google.com/store/apps/details?id=sa.gov.ca&hl=ar",
+      "snippet": "تطبيق حساب المواطن يسهل عليك الاطلاع على كافة تفاصيل حسابك وتفاصيل الدفعات المالية ونتائج الاعتراضات وغيرها من الخدمات المقدمة من بحساب المواطن."
+    },
+    {
+      "title": "حساب المواطن (برنامج) - ويكيبيديا",
+      "url": "https://ar.wikipedia.org/wiki/%D8%AD%D8%B3%D8%A7%D8%A8_%D8%A7%D9%84%D9%85%D9%88%D8%A7%D8%B7%D9%86_(%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC)",
+      "snippet": "حساب المواطن هو برنامج حكومي سعودي بدأ في شهر ديسمبر 2017 ، ضمن خطة برنامج تحقيق التوازن المالي (أحد برامج رؤية السعودية 2030) ويهدف لتخفيف الأعباء عن المواطن السعودي وتقديم …"
+    }
+  ]
+}

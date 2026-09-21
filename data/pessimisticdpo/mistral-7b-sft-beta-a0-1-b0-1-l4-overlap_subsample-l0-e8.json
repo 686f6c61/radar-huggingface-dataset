@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l0-e8",
+  "slug": "pessimisticdpo-mistral-7b-sft-beta-a0-1-b0-1-l4-overlap_subsample-l0-e8",
+  "author": "PessimisticDPO",
+  "url": "https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l0-e8",
+  "created_at": "2026-09-21T11:37:04.000Z",
+  "updated_at": "2026-09-21T11:37:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 167832240,
+  "storage_human": "168 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HTML meta http-equiv Attribute - W3Schools",
+      "url": "https://www.w3schools.com/tags/att_meta_http_equiv.asp",
+      "snippet": "Defines a time interval for the document to refresh itself. Note: The value \"refresh\" should be used carefully, as it takes the control of …"
+    },
+    {
+      "title": "Disable Browser Caching with Meta HTML Tags - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/javascript/disable-browser-caching-with-meta-html-tags/",
+      "snippet": "Jul 23, 2025 · Fortunately, developers can leverage meta HTML tags to control caching behaviour, ensuring users receive the latest …"
+    },
+    {
+      "title": "<meta http-equiv> HTML attribute - HTML | MDN",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/meta/http-equiv",
+      "snippet": "Apr 20, 2026 · When a <meta> element has an http-equiv attribute, a content attribute defines the corresponding http-equiv value. …"
+    },
+    {
+      "title": "HTML meta tag - W3Schools",
+      "url": "https://www.w3schools.com/tags/tag_meta.asp",
+      "snippet": "The <meta> tag defines metadata about an HTML document. Metadata is data (information) about data. <meta> tags always go …"
+    },
+    {
+      "title": "HTML Standard, Edition for Web Developers - WHATWG",
+      "url": "https://html.spec.whatwg.org/dev/semantics.html",
+      "snippet": "Sep 14, 2026 · For meta elements with an http-equiv attribute in the Encoding declaration state, the content attribute must have a …"
+    }
+  ]
+}

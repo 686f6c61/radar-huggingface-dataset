@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "changmaulee/timemeshin-otm-tokenizer",
+  "slug": "changmaulee-timemeshin-otm-tokenizer",
+  "author": "changmaulee",
+  "url": "https://huggingface.co/changmaulee/timemeshin-otm-tokenizer",
+  "created_at": "2026-09-21T11:20:25.000Z",
+  "updated_at": "2026-09-21T11:52:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "ta",
+    "te",
+    "hi",
+    "ru",
+    "de",
+    "es",
+    "en",
+    "ar",
+    "zh",
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "tokenizer",
+    "indic",
+    "multi-lingual",
+    "timemeshin-otm",
+    "ta",
+    "te",
+    "hi",
+    "ru",
+    "de",
+    "es",
+    "en",
+    "ar",
+    "zh",
+    "ja",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Seznam – najdu tam, co neznám",
+      "url": "https://www.seznam.cz/",
+      "snippet": "Teplice vyloupily Hradec Králové a po výhře 2:0 si odvezly všechny body. Od 15:00 hrají Jablonec se Zlínem (skóre 0:1) a Olomouc …"
+    },
+    {
+      "title": "Seznam – najdu tam, co neznám",
+      "url": "https://www.seznam.cz/500",
+      "snippet": "Jejda, tak tohle se nepovedlo. Pracujeme na opravě. Přejít na Seznam.cz"
+    },
+    {
+      "title": "Seznam Zprávy",
+      "url": "https://www.seznamzpravy.cz/",
+      "snippet": "Videa, články, aktuální zprávy z domova i ze světa. Zpravodajství a publicistika od redakce Seznam.cz."
+    },
+    {
+      "title": "Seznam.cz - Počasí - předpověď na dnes, zítra a 5 dní pro ČR i ...",
+      "url": "https://pocasi.seznam.cz/",
+      "snippet": "Co říkáte na Počasí.cz - Podmínky užití služby - Ochrana údajů - Data dodává: Windy.com - Radar - Odvolat souhlas - Nastavení …"
+    },
+    {
+      "title": "Seznam.cz - Facebook",
+      "url": "https://www.facebook.com/sledujseznam/",
+      "snippet": "S Aplikací Seznam.cz vám už neunikne žádná důležitá zpráva. 👀 Ať už vás zajímá primárně politika, společenské dění, sport nebo …"
+    }
+  ]
+}

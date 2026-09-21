@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "JakubJanusz/check_interest",
+  "slug": "jakubjanusz-check_interest",
+  "author": "JakubJanusz",
+  "url": "https://huggingface.co/JakubJanusz/check_interest",
+  "created_at": "2026-09-21T11:50:45.000Z",
+  "updated_at": "2026-09-21T11:51:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "roberta",
+    "custom_code",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 442893315,
+  "parameters_human": "442.9M",
+  "storage_bytes": 1771621716,
+  "storage_human": "1.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "如何看待WP与hags等对于战舰世界的危害？ - 知乎",
+      "url": "https://www.zhihu.com/question/54441931/answers/updated",
+      "snippet": "这么说吧，当年KDW对于WP和HAGS的态度就跟WY对于“魔兽工作室集团”一样，很多人觉得他们不管那是因为妥协了，魔兽找代练的 …"
+    },
+    {
+      "title": "WPS 如何卸载干净？ - 知乎",
+      "url": "https://www.zhihu.com/question/277181683",
+      "snippet": "WPS除了桌面上的软件本体，还可能涉及文件关联、缓存、配置文件、云文档组件等。于是很多人会遇到这样的情况：明明已经点击 …"
+    },
+    {
+      "title": "C盘出现了一个叫websymbols的文件夹。。是干什么的 - 远景论坛 - 前 …",
+      "url": "https://bbs.pcbeta.com/viewthread-1540507-1-1.html",
+      "snippet": "Sep 8, 2014 · PCEBTA社区 - 专注于Windows 11系统的安装、激活、驱动程序下载、优化教程与技术支持。获取最新的Win11更新资讯 …"
+    },
+    {
+      "title": "Win11仿Win7主题美化包 - 远景论坛 - 前沿科技与智慧生态的极客社区",
+      "url": "https://bbs.pcbeta.com/viewthread-2047777-1-1.html",
+      "snippet": "Jul 16, 2025 · PCEBTA社区 - 专注于Windows 11系统的安装、激活、驱动程序下载、优化教程与技术支持。获取最新的Win11更新资 …"
+    },
+    {
+      "title": "安卓手机和 WP 的手机能互刷系统吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/27801141",
+      "snippet": "Jan 26, 2015 · 安卓手机和 WP 的手机能互刷系统吗？ 现在的安卓手机配置都很高，很win8多用的是高通的CPU，RAM和ROM的容量 …"
+    }
+  ]
+}

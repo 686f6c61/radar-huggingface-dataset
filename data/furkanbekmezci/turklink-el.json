@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "furkanbekmezci/turklink-el",
+  "slug": "furkanbekmezci-turklink-el",
+  "author": "furkanbekmezci",
+  "url": "https://huggingface.co/furkanbekmezci/turklink-el",
+  "created_at": "2026-09-21T11:37:43.000Z",
+  "updated_at": "2026-09-21T11:40:45.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "safetensors",
+    "entity-linking",
+    "wikidata",
+    "faiss",
+    "turkish",
+    "pilot",
+    "tr",
+    "dataset:yakdas/turklink-corpus",
+    "license:cc-by-sa-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8885546373,
+  "storage_human": "8.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "- YouTube",
+      "url": "https://m.youtube.com/watch?v=13z4HJtQwZA",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "shshshshshshsh - YouTube",
+      "url": "https://m.youtube.com/watch?v=i7yjOC3SVM0",
+      "snippet": "Aug 15, 2024 · Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on …"
+    },
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/?hl=it",
+      "snippet": "Crea un account o accedi a Instagram. Condividi ciò che ti piace con le persone che ti capiscono."
+    },
+    {
+      "title": "Shazam - Music Discovery, Charts & Song Lyrics",
+      "url": "https://www.shazam.com/it-it",
+      "snippet": ""
+    },
+    {
+      "title": "Shshshshshshsh (@shshshshshah) • Instagram photos and videos",
+      "url": "https://www.instagram.com/shshshshshah/",
+      "snippet": "3 Followers, 56 Following, 5 Posts - Shshshshshshsh (@shshshshshah) on Instagram: \"\""
+    }
+  ]
+}

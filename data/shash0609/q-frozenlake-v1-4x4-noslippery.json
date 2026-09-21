@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "shash0609/q-FrozenLake-v1-4x4-noSlippery",
+  "slug": "shash0609-q-frozenlake-v1-4x4-noslippery",
+  "author": "shash0609",
+  "url": "https://huggingface.co/shash0609/q-FrozenLake-v1-4x4-noSlippery",
+  "created_at": "2026-09-21T11:20:10.000Z",
+  "updated_at": "2026-09-21T11:20:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "FrozenLake-v1-4x4-no_slippery",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 915,
+  "storage_human": "915 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "‎Instagram App - App Store",
+      "url": "https://apps.apple.com/us/app/instagram/id389801252",
+      "snippet": "Download Instagram by Instagram, Inc. on the App Store. See screenshots, ratings and reviews, user tips, and more apps like …"
+    },
+    {
+      "title": "Instagram - App Store",
+      "url": "https://apps.apple.com/gb/app/instagram/id389801252",
+      "snippet": "Download Instagram by Instagram, Inc. on the App Store. See screenshots, ratings and reviews, user tips and more games like …"
+    },
+    {
+      "title": "ENHYPEN - Reddit",
+      "url": "https://www.reddit.com/r/enhypen/",
+      "snippet": "The subreddit community for I-LAND's debut group, ENHYPEN (엔하이픈)! News, updates, images, videos, discussions, and anything …"
+    },
+    {
+      "title": "Instagram Reality Baybeh! - Reddit",
+      "url": "https://www.reddit.com/r/Instagramreality/",
+      "snippet": "Exposing edited photos and showing the truth behind them."
+    },
+    {
+      "title": "Instagram》App - App Store",
+      "url": "https://apps.apple.com/hk/app/instagram/id389801252",
+      "snippet": "在 App Store 下載「Instagram, Inc.」的《Instagram》。查看螢幕截圖、評分與評論、用户貼士，以及更多類似《Instagram》的 App。"
+    }
+  ]
+}

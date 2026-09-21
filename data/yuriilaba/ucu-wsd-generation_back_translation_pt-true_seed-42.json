@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "yuriilaba/ucu-wsd-generation_back_translation_pt-true_seed-42",
+  "slug": "yuriilaba-ucu-wsd-generation_back_translation_pt-true_seed-42",
+  "author": "yuriilaba",
+  "url": "https://huggingface.co/yuriilaba/ucu-wsd-generation_back_translation_pt-true_seed-42",
+  "created_at": "2026-09-21T11:26:05.000Z",
+  "updated_at": "2026-09-21T11:27:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "xlm-roberta",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278043648,
+  "parameters_human": "278.0M",
+  "storage_bytes": 1129280083,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Das perfekte Deckblatt deiner Hausarbeit + 5 Vorlagen - Scribbr",
+      "url": "https://www.scribbr.de/hausarbeit/deckblatt-hausarbeit/",
+      "snippet": "Jan 16, 2019 · Dazu gehören der Titel der Hausarbeit, Informationen zu deiner Hochschule und deine persönlichen Daten. Wir haben …"
+    },
+    {
+      "title": "Deckblatt Hausarbeit • Vorlagen & Muster als Download",
+      "url": "https://studyflix.de/studientipps/deckblatt-hausarbeit-5230",
+      "snippet": "In diesem Beitrag und Video erklären wir dir, was bei deinem Hausarbeit-Deckblatt nicht fehlen darf und zeigen dir ein Musterbeispiel. …"
+    },
+    {
+      "title": "Hausarbeit Deckblatt | Vorlage, Beispiel & Muster - 1a-studi.de",
+      "url": "https://www.1a-studi.de/hausarbeit/deckblatt",
+      "snippet": "Jul 13, 2026 · Diese Vorlage zeigt dir ein klassisches Deckblatt für deine Hausarbeit mit allen wichtigen Angaben zu Hochschule, …"
+    },
+    {
+      "title": "Deckblatt Hausarbeit: Tipps, Vorlagen & Gestaltung für dein Titelblatt",
+      "url": "https://arbeit-schreiben.com/deckblatt-hausarbeit/",
+      "snippet": "Jan 3, 2026 · Erfahre, wie du ein professionelles Deckblatt einer Hausarbeit erstellst! Entdecke Pflichtangaben, Gestaltungstipps und …"
+    },
+    {
+      "title": "Deckblatt Vorlagen für deine wissenschaftliche Arbeit",
+      "url": "https://www.bachelorprint.de/aufbau-gliederung/deckblatt/deckblatt-vorlagen/",
+      "snippet": "Jan 27, 2023 · Im Folgenden haben wir für dich noch einige Deckblatt Vorlagen herausgesucht, die du direkt als Word-Datei …"
+    }
+  ]
+}

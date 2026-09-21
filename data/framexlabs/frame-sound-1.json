@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "FrameXlabs/Frame-Sound-1",
+  "slug": "framexlabs-frame-sound-1",
+  "author": "FrameXlabs",
+  "url": "https://huggingface.co/FrameXlabs/Frame-Sound-1",
+  "created_at": "2026-09-21T11:02:28.000Z",
+  "updated_at": "2026-09-21T11:02:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "generic",
+  "languages": [],
+  "tags": [
+    "generic",
+    "text-generation",
+    "music",
+    "music-generation",
+    "symbolic-music",
+    "event-based",
+    "markov",
+    "lofi",
+    "generative",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Event-level music generation",
+      "dataset": "FrameXlabs/Frame-Dataset-Sound",
+      "metric": null,
+      "value": 1
+    }
+  ],
+  "sources": [
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.com/",
+      "snippet": "Find local businesses, view maps and get driving directions in Google Maps."
+    },
+    {
+      "title": "Google Earth",
+      "url": "https://maps.google.com/intl/en/earth/",
+      "snippet": "Google Earth is the most photorealistic, digital version of our planet. Where do the images come from? How are they they put …"
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.com/maps/search/",
+      "snippet": "Map data ©2026 Google Terms 10 km Directions"
+    },
+    {
+      "title": "Google Earth",
+      "url": "https://maps.google.com/intl/fr/earth/download/gep/agree.html",
+      "snippet": "Jun 4, 2025 · Votre contenu dans Google Maps. Le contenu que vous importez, mettez en ligne, stockez, envoyez ou recevez par le …"
+    },
+    {
+      "title": "Plus Codes - Google Maps",
+      "url": "https://maps.google.com/pluscodes/",
+      "snippet": "Plus Codes are short codes for locations, for places that don't have their own street address."
+    }
+  ]
+}

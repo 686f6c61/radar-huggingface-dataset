@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "azinamotoe/HmarBERT-mini-causal",
+  "slug": "azinamotoe-hmarbert-mini-causal",
+  "author": "azinamotoe",
+  "url": "https://huggingface.co/azinamotoe/HmarBERT-mini-causal",
+  "created_at": "2026-09-21T11:09:27.000Z",
+  "updated_at": "2026-09-21T11:57:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "hmr"
+  ],
+  "tags": [
+    "safetensors",
+    "bert",
+    "hmar",
+    "causal-lm",
+    "next-word-prediction",
+    "keyboard-engine",
+    "zo-languages",
+    "zo",
+    "bert-mini",
+    "text-generation",
+    "hmr",
+    "dataset:hmar-heritage-org/sentences",
+    "base_model:azinamotoe/HmarBERT-mini",
+    "base_model:finetune:azinamotoe/HmarBERT-mini",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 16906368,
+  "parameters_human": "16.9M",
+  "storage_bytes": 135267872,
+  "storage_human": "135 MB",
+  "base_model": "azinamotoe/HmarBERT-mini",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenAI",
+      "url": "https://chat.openai.com/auth/login?next=/g/g-nn1TcIeHg-gpt-app",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "ios.chat.openai.com",
+      "url": "https://ios.chat.openai.com/cdn-cgi/trace",
+      "snippet": "fl=1025f28 h=ios.chat.openai.com ip=52.167.144.206 ts=1789988929.000 visit_scheme=https uag=Mozilla/5.0 AppleWebKit/537.36 …"
+    },
+    {
+      "title": "android.chat.openai.com",
+      "url": "https://android.chat.openai.com/cdn-cgi/trace",
+      "snippet": "fl=413f354 h=android.chat.openai.com ip=52.167.144.206 ts=1789896282.000 visit_scheme=https uag=Mozilla/5.0 …"
+    }
+  ]
+}

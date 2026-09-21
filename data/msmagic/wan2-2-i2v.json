@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "MsMagic/Wan2.2-I2V",
+  "slug": "msmagic-wan2-2-i2v",
+  "author": "MsMagic",
+  "url": "https://huggingface.co/MsMagic/Wan2.2-I2V",
+  "created_at": "2026-09-21T11:06:27.000Z",
+  "updated_at": "2026-09-21T11:06:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-video",
+  "library": "wan2.2",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "wan2.2",
+    "diffusers",
+    "safetensors",
+    "image-to-video",
+    "en",
+    "zh",
+    "arxiv:2503.20314",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 126203800299,
+  "storage_human": "126.2 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.fr/",
+      "snippet": "Encore plus » Account Options. Connexion; Paramètres de recherche"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=fr",
+      "snippet": "Publicité À propos de Google Google.com in English © 2026 - Confidentialité - Conditions"
+    },
+    {
+      "title": "Téléchargez Google Chrome, le navigateur plus sécurisé et encore …",
+      "url": "https://www.google.com/intl/fr/chrome/",
+      "snippet": "Gagnez en efficacité grâce au nouveau Chrome, un navigateur Internet plus simple, plus sécurisé et encore plus rapide grâce aux …"
+    },
+    {
+      "title": "Google",
+      "url": "http://www.google.gp/?hl=fr",
+      "snippet": "Google disponible en : English Publicité À propos de Google Google.com"
+    },
+    {
+      "title": "Google Traduction",
+      "url": "https://translate.google.fr/",
+      "snippet": "Le service sans frais de Google traduit instantanément des mots, des expressions et des pages Web entre le français et plus de 100 …"
+    }
+  ]
+}

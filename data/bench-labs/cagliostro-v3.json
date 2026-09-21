@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "bench-labs/cagliostro-v3",
+  "slug": "bench-labs-cagliostro-v3",
+  "author": "bench-labs",
+  "url": "https://huggingface.co/bench-labs/cagliostro-v3",
+  "created_at": "2026-09-11T04:29:57.000Z",
+  "updated_at": "2026-09-20T12:25:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "cagliostro",
+    "text-generation",
+    "causal-lm",
+    "language-model",
+    "base-model",
+    "pretrained-from-scratch",
+    "small-language-model",
+    "custom_code",
+    "en",
+    "dataset:HuggingFaceTB/smollm-corpus",
+    "dataset:mlfoundations/dclm-baseline-1.0",
+    "dataset:HuggingFaceTB/finemath",
+    "dataset:nvidia/OpenMathInstruct-2",
+    "dataset:HuggingFaceTB/smoltalk",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 25,
+  "downloads_30d": 81,
+  "trending_score": 22,
+  "parameters": 146352000,
+  "parameters_human": "146.4M",
+  "storage_bytes": 651141633422,
+  "storage_human": "651.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vêtements d'athlétisme à la mode pour femmes, hommes ... - Bench",
+      "url": "https://bench.shop/fr",
+      "snippet": "Magasinez des articles sportifs, élégants et confortables avec nos t-shirts, leggings, sweat-shirts à capuche, survêtements, shorts, et …"
+    },
+    {
+      "title": "Jackets, Coats, Vests, Parkas, Puffers, Bombers - Bench",
+      "url": "https://bench.shop/fr/collections/womens-jackets-and-coats",
+      "snippet": "Shop the season's best women's outerwear styles from Bench. Free shipping $99+ and a 60 day return period."
+    },
+    {
+      "title": "Bench | Dernière collection en ligne sur Zalando",
+      "url": "https://www.zalando.fr/bench/",
+      "snippet": "Bench a été créée en 1989 à Manchester, Royaume-Uni, dans un environnement marqué par la musique et la culture street. Ses …"
+    },
+    {
+      "title": "Bench (entreprise) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Bench_(entreprise)",
+      "snippet": "Au fil des ans, Bench est devenue une marque mondiale de lifestyle. Elle vend des vêtements pour hommes et pour femmes 1, y …"
+    },
+    {
+      "title": "Collections - Bench",
+      "url": "https://bench.ca/fr/collections",
+      "snippet": "© 2026 Bench. Freemark Apparel Brands International Inc | Conditions d'Utilisation | Politique de Confidentialité"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l2-e7",
+  "slug": "pessimisticdpo-mistral-7b-sft-beta-a0-1-b0-1-l4-overlap_subsample-l2-e7",
+  "author": "PessimisticDPO",
+  "url": "https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l2-e7",
+  "created_at": "2026-09-21T10:47:42.000Z",
+  "updated_at": "2026-09-21T10:47:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 167832240,
+  "storage_human": "168 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Horaires des trains SNCF en direct : suivre son train en temps réel ...",
+      "url": "https://www.sncf-connect.com/billet-train/horaires",
+      "snippet": "Avec SNCF Connect, trouvez en temps réel les horaires de vos trains SNCF et d’autres transporteurs affiliés en France et en Europe !"
+    },
+    {
+      "title": "Horaires et itinéraires - SNCF Voyageurs",
+      "url": "https://www.sncf-voyageurs.com/fr/voyagez-avec-nous/horaires-et-itineraires/",
+      "snippet": "Consultez les horaires, itinéraires et infos trafic : recherchez par numéro de train ou gare, préparez votre trajet en toute sérénité avec …"
+    },
+    {
+      "title": "SNCF Connect : Réservez vos billets SNCF, bus et covoiturage",
+      "url": "https://www.sncf-connect.com/",
+      "snippet": "En un seul geste, vous pouvez organiser, réserver et gérer vos trajets de tous les jours comme des grands jours. Partez avec …"
+    },
+    {
+      "title": "Itinéraires - SNCF Voyageurs",
+      "url": "https://www.sncf-voyageurs.com/fr/voyagez-avec-nous/horaires-et-itineraires/itineraires/",
+      "snippet": "12 hours ago · Itinéraires SNCF Voyageurs : saisissez votre gare de départ et d’arrivée pour découvrir le meilleur trajet gare à gare, …"
+    },
+    {
+      "title": "RER D | Transilien",
+      "url": "https://www.transilien.com/fr/page-lignes/ligne-d",
+      "snippet": "Consultez les horaires des prochains trains au départ de la gare de votre choix."
+    }
+  ]
+}

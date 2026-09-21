@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Iwas-6127/act-model-mypick-20260921_195434",
+  "slug": "iwas-6127-act-model-mypick-20260921_195434",
+  "author": "Iwas-6127",
+  "url": "https://huggingface.co/Iwas-6127/act-model-mypick-20260921_195434",
+  "created_at": "2026-09-21T11:05:39.000Z",
+  "updated_at": "2026-09-21T11:29:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:Iwas-6127/my_pick_test_rnd_20260921_114929",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 413419264,
+  "storage_human": "413 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Comment créer un compte ameli pour mineur? - Résolue",
+      "url": "https://forum-assures.ameli.fr/questions/1527635-creer-compte-ameli-mineur",
+      "snippet": "Sep 5, 2022 · Je voulais créer un compte ameli pour mon fille de 17 ans, lycéenne, qui possède sa carte vitale. Quand je remplis le …"
+    },
+    {
+      "title": "Pourquoi Mon compte ameli est désactivé - Résolue",
+      "url": "https://forum-assures.ameli.fr/questions/3302526-compte-ameli-desactive",
+      "snippet": "Feb 15, 2024 · Pourquoi Mon compte ameli est désactivé Votre compte ameli Dika il y a plus de 2 ans Mis à jour le : 15/02/2024 7741 …"
+    },
+    {
+      "title": "Frauduleux? Expéditeur : assurance-maladie@info.ameli.fr Document ...",
+      "url": "https://forum-assures.ameli.fr/questions/3344700-frauduleux-expediteur-assurance-maladie-info-ameli-fr-document-urgent-ouvrir",
+      "snippet": "May 11, 2026 · Bonjour cher(e) DAVID, Une information importante vous attend dans la rubrique Notifications de votre compte ameli. …"
+    },
+    {
+      "title": "Comment créer un compte lors qu’on devient majeur?",
+      "url": "https://forum-assures.ameli.fr/questions/3583139-creer-compte-lors-devient-majeur",
+      "snippet": "Apr 18, 2025 · Je suis devenue majeure, je veux créer mon compte Amélie sauf qu’à chaque fois quand je commence à créer mon …"
+    },
+    {
+      "title": "Compte AMELI momentanément indisponible ? - Résolue",
+      "url": "https://forum-assures.ameli.fr/questions/1591499-compte-ameli-momentanement-indisponible",
+      "snippet": "Aug 21, 2024 · Bonjour, Il m'est impossible d'accéder à mon compte ameli dû à un \"service momentanément indisponible\". Cela fait …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "assokolov/mocov3-classification-test",
+  "slug": "assokolov-mocov3-classification-test",
+  "author": "assokolov",
+  "url": "https://huggingface.co/assokolov/mocov3-classification-test",
+  "created_at": "2026-09-21T11:15:56.000Z",
+  "updated_at": "2026-09-21T11:16:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mocov3",
+    "pytorch",
+    "classification",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Open Settings in Windows 10 | Tutorials - Ten Forums",
+      "url": "https://www.tenforums.com/tutorials/3326-open-settings-windows-10-a.html",
+      "snippet": "Apr 17, 2021 · How to Open Settings in Windows 10 Information Starting in the Windows 10 Preview 9901 build, PC settings and zPC …"
+    },
+    {
+      "title": "Create a Google Account for Gmail",
+      "url": "https://support.google.com/mail/answer/56256?hl=en-gb",
+      "snippet": "For specific setup instructions for your Android, iPhone or computer, learn how to create a Google Account."
+    },
+    {
+      "title": "Turn On or Off Sync Settings for Microsoft Account in Windows 10",
+      "url": "https://www.tenforums.com/tutorials/4077-turn-off-sync-settings-microsoft-account-windows-10-a.html",
+      "snippet": "Sep 27, 2025 · How to Turn On or Off Sync Your Settings in Windows 10 When Sync settings is turned on, Windows syncs the …"
+    },
+    {
+      "title": "setting是什么意思？_百度知道",
+      "url": "https://zhidao.baidu.com/question/82361127.html",
+      "snippet": "setting 是文章的（情节）背景，故事发生时的背景环境。 setting 音标：英 ['setɪŋ] 美 ['setɪŋ] n. 背景；环境；镶嵌；安装；放置；（日 …"
+    },
+    {
+      "title": "مدیریت «تنظیمات Google» - Android راهنما",
+      "url": "https://support.google.com/android/answer/3118621?hl=fa",
+      "snippet": "اگر تلفن شما از «خدمات Google Play» استفاده می‌کند، می‌توانید برنامه‌ها و سرویس‌های Google خود را در «تنظیمات Google» مدیریت کنید"
+    }
+  ]
+}

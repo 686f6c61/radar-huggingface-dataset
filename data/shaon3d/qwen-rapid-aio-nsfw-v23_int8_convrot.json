@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "shaon3d/Qwen-Rapid-AIO-NSFW-v23_int8_convrot",
+  "slug": "shaon3d-qwen-rapid-aio-nsfw-v23_int8_convrot",
+  "author": "shaon3d",
+  "url": "https://huggingface.co/shaon3d/Qwen-Rapid-AIO-NSFW-v23_int8_convrot",
+  "created_at": "2026-09-21T11:46:04.000Z",
+  "updated_at": "2026-09-21T11:46:04.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Taschenrechner Online-Rechner - Taschenrechner.net",
+      "url": "https://www.taschenrechner.net/",
+      "snippet": "Einfach zu bedienender Taschenrechner mit grundlegenden Funktionen, einschließlich Addition, Subtraktion, Multiplikation und …"
+    },
+    {
+      "title": "Web 2.0 Taschenrechner",
+      "url": "https://web2.0rechner.de/",
+      "snippet": "Der wissenschaftliche Taschenrechner im Internet. Ideal zum Lösen von Hausaufgaben aus den Gebieten: Mathematik, Physik und …"
+    },
+    {
+      "title": "Taschenrechner online kostenlos – mit Rechenband & Speicher",
+      "url": "https://rechnerzentrale.com/taschenrechner",
+      "snippet": "Online-Taschenrechner mit Rechenband, Speicher (M+/MR) und voller Tastaturbedienung. Werbefrei, ohne Cookies, ohne …"
+    },
+    {
+      "title": "Web 2.0 Taschenrechner",
+      "url": "https://web2.0rechner.de/widgets/horizontal/",
+      "snippet": "Der wissenschaftliche Taschenrechner im Internet. Ideal zum Lösen von Hausaufgaben aus den Gebieten: Mathematik, Physik und …"
+    },
+    {
+      "title": "ᐅ Online-Taschenrechner von blitzrechner.de: Einfach + gut",
+      "url": "https://www.blitzrechner.de/taschenrechner/",
+      "snippet": "Apr 13, 2026 · Statt mühsam eine Formel mit Grundwert und Prozentwert eingeben zu müssen, besitzt unser online Taschenrechner …"
+    }
+  ]
+}

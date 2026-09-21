@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "PessimisticDPO/Llama-3.1-Tulu-3-8B-SFT-a0.1-b0.1-L3-l2-e20",
+  "slug": "pessimisticdpo-llama-3-1-tulu-3-8b-sft-a0-1-b0-1-l3-l2-e20",
+  "author": "PessimisticDPO",
+  "url": "https://huggingface.co/PessimisticDPO/Llama-3.1-Tulu-3-8B-SFT-a0.1-b0.1-L3-l2-e20",
+  "created_at": "2026-09-21T11:22:44.000Z",
+  "updated_at": "2026-09-21T11:22:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 185042342,
+  "storage_human": "185 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Top 10 Front-End Frameworks in 2025 - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/blogs/top-front-end-frameworks/",
+      "snippet": "Jul 23, 2025 · Front-end frameworks typically provide a set of tools, libraries, and conventions for building user interfaces, handling …"
+    },
+    {
+      "title": "19 Best Frontend Frameworks For Developers In 2026",
+      "url": "https://visionvix.com/best-frontend-frameworks/",
+      "snippet": "What are Fronted Frameworks? Frontend frameworks are pre-written collections of code, tools, and libraries that help developers …"
+    },
+    {
+      "title": "Top 10 Frontend Frameworks for Web Development - webdevhub.dev",
+      "url": "https://webdevhub.dev/top-frontend-frameworks/",
+      "snippet": "Oct 2, 2025 · What Are Frontend Frameworks? Frontend frameworks are collections of prewritten code, tools, and components that …"
+    },
+    {
+      "title": "Frontend Frameworks Compared: React vs Vue vs Svelte vs Angular",
+      "url": "https://findarepo.com/categories/web-frameworks/",
+      "snippet": "2 days ago · React, Vue, Svelte, Angular, Solid and the meta-frameworks side by side: stars, growth we measured ourselves this …"
+    },
+    {
+      "title": "Best Frontend Frameworks in 2026: A Production-Tested ... - Intuz",
+      "url": "https://www.intuz.com/best-frontend-frameworks/",
+      "snippet": "Sep 8, 2026 · This guide breaks down 12 production-relevant frontend frameworks in 2026, backed by data from the Stack Overflow …"
+    }
+  ]
+}

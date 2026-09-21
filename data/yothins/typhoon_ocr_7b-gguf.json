@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "yothinS/Typhoon_OCR_7B.gguf",
+  "slug": "yothins-typhoon_ocr_7b-gguf",
+  "author": "yothinS",
+  "url": "https://huggingface.co/yothinS/Typhoon_OCR_7B.gguf",
+  "created_at": "2026-09-21T10:54:18.000Z",
+  "updated_at": "2026-09-21T14:09:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "OCR",
+    "vision-language",
+    "multimodal",
+    "llama.cpp",
+    "Thai Optical Character Recognition (OCR)",
+    "Thai OCR",
+    "en",
+    "th",
+    "base_model:Qwen/Qwen2.5-VL-7B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-VL-7B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 40089524704,
+  "storage_human": "40.1 GB",
+  "base_model": "typhoon-ai/typhoon-ocr-7b, Qwen/Qwen2.5-VL-7B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Uber Eats Driver Requirements in Australia",
+      "url": "https://www.driversnote.com.au/rideshare-delivery-drivers-guide/uber-eats-driver-requirements",
+      "snippet": "Learn the requirements for becoming an Uber Eats driver in Australia, the documents you need, and how to register."
+    },
+    {
+      "title": "Motor Vehicle Block Exemption Regulation (MV-BER) - GOV.UK",
+      "url": "https://assets.publishing.service.gov.uk/media/6182516ae90e07197d8fb949/Evaluation_of_Motor_Vehicle_Block_Exemption_Regulations-Initial_Input_from_UK_AFCAR-_Final_draft_2.pdf",
+      "snippet": "UK AFCAR members request that minimum purchasing requirements, related rebate structures and other anti-competitive tactics …"
+    },
+    {
+      "title": "What is EU Block Exemption Regulation? - Service4Service Blog",
+      "url": "https://www.service4service.co.uk/news/industry/what-is-eu-block-exemption-regulation/",
+      "snippet": "Jan 3, 2016 · The EU Block Exemption Regulation allows customers to keep their manufacturer warranty while utilising independent …"
+    },
+    {
+      "title": "BLOCK EXEMPTION REGULATIONS (BER) - TJS Service Centre",
+      "url": "https://www.tjs-servicecentre.co.uk/block-exemption-regulations-ber",
+      "snippet": "In October 2003 European Union Legislation affecting the motor trade came into force. Its full title is ‘Block Exemption Regulations …"
+    },
+    {
+      "title": "Block Exemption - eurocarcare.net",
+      "url": "https://www.eurocarcare.net/blockexemption.html",
+      "snippet": "Block Exemption What does it mean to you and your car? In October 2003 European Union Legislation affecting the motor trade …"
+    }
+  ]
+}

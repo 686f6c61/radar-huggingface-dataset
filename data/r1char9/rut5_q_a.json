@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "r1char9/ruT5_q_a",
+  "slug": "r1char9-rut5_q_a",
+  "author": "r1char9",
+  "url": "https://huggingface.co/r1char9/ruT5_q_a",
+  "created_at": "2024-06-12T06:07:00.000Z",
+  "updated_at": "2026-09-20T23:12:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "question-answering",
+  "library": "transformers",
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "russian",
+    "question-answering",
+    "text-generation",
+    "ru",
+    "base_model:ai-forever/ruT5-base",
+    "base_model:finetune:ai-forever/ruT5-base",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "deploy:azure",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 23,
+  "trending_score": 0,
+  "parameters": 237646080,
+  "parameters_human": "237.6M",
+  "storage_bytes": 951360032,
+  "storage_human": "951 MB",
+  "base_model": "ai-forever/ruT5-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Portal LIBRUS Rodzina",
+      "url": "https://rodzina.librus.pl/",
+      "snippet": "Pomóż mu wejść w ten ważny etap. Z życia domowego – co widzi dziecko, co widzi rodzic? Co jest lepsze – jabłko czy mandarynka? …"
+    },
+    {
+      "title": "Portal LIBRUS",
+      "url": "https://synergia.librus.pl/",
+      "snippet": "Portal edukacyjny Librus - gotowe pomoce dydaktyczne dla dyrektorów i nauczycieli oraz artykuły dla rodziców dot. wychowania i …"
+    },
+    {
+      "title": "Logowanie do systemu Synergia. Krótki przewodnik - LIBRUS Rodzina",
+      "url": "https://portal.librus.pl/rodzina/artykuly/jak-zalogowac-sie-do-systemu-synergia-krotki-przewodnik-1",
+      "snippet": "Aug 27, 2020 · Jest to alternatywny sposób dostępu do informacji zawartych na koncie w dzienniku elektronicznym LIBRUS …"
+    },
+    {
+      "title": "Portal LIBRUS Szkoła",
+      "url": "http://www.szkola.librus.pl/rodzina",
+      "snippet": "Jeśli będziesz robił to, co kochasz, to już nigdy... Możesz osiągnąć wszystko, co zechcesz, jeśli się postarasz…?"
+    },
+    {
+      "title": "Rodzice i uczniowie - Librus - systemy do edukacji dziecka",
+      "url": "https://www.librus.pl/rodzice/",
+      "snippet": "Poznaj systemy do edukacji od Librus. Za pomocą aplikacji mobilnej i systemowi Librus Synergia monitoruj postępy w nauce i …"
+    }
+  ]
+}

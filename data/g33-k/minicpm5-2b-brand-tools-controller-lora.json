@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "G33-k/minicpm5-2b-brand-tools-controller-lora",
+  "slug": "g33-k-minicpm5-2b-brand-tools-controller-lora",
+  "author": "G33-k",
+  "url": "https://huggingface.co/G33-k/minicpm5-2b-brand-tools-controller-lora",
+  "created_at": "2026-09-21T11:45:57.000Z",
+  "updated_at": "2026-09-21T13:12:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "tool-use",
+    "lora",
+    "qlora",
+    "unsloth",
+    "synthetic-data",
+    "dataset:G33-k/minicpm5-brand-tools-eval-kit",
+    "base_model:openbmb/MiniCPM5-2B",
+    "base_model:adapter:openbmb/MiniCPM5-2B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 503064798,
+  "storage_human": "503 MB",
+  "base_model": "openbmb/MiniCPM5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "G33 — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/G33",
+      "snippet": "Le G33 est un groupe de pays « en voie de développement » créé en 2006, se coordonnant sur des questions économiques et …"
+    },
+    {
+      "title": "Au volant d’une Ginetta G33, légèreté, sportivité et V8 !",
+      "url": "https://newsdanciennes.com/au-volant-dune-ginetta-g33-legerete-sportivite-et-v8/",
+      "snippet": "Jul 21, 2025 · La Ginetta G33 possède un châssis tubulaire en acier, emprunté à la G27 mais élargi pour loger le V8. Les trains …"
+    },
+    {
+      "title": "G33 - GLOCK",
+      "url": "https://us.glock.com/en/products/law-enforcement/pistols/g33",
+      "snippet": "High muzzle velocity and energy, all packed in a user-friendly subcompact 357 SIG pistol: the GLOCK 33 opens up new possibilities …"
+    },
+    {
+      "title": "Liquide refroidissement g33 1l… 2001000C - autodistribution.fr",
+      "url": "https://www.autodistribution.fr/accessoires-auto/produits-liquides/liquide-refroidissement-lr/ISLU/2001000C",
+      "snippet": "Liquide refroidissement g33 1l… 2001000C compatible avec divers modèles et marques de voitures. Trouvez la référence de votre …"
+    },
+    {
+      "title": "Logitech G333 Gaming Earphones with Mic and Dual Drivers",
+      "url": "https://www.logitechg.com/en-eu/shop/p/g333-gaming-earphones",
+      "snippet": "Shop G333 Earphones. Features high fidelity audio, USB-C and 3.5mm aux connectivity, in line mic and volume controls, and 3 sizes …"
+    }
+  ]
+}

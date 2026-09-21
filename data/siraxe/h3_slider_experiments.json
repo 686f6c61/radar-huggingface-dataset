@@ -27,8 +27,8 @@
     "base_model:adapter:MiniMaxAI/MiniMax-H3",
     "region:us"
   ],
-  "likes": 25,
-  "downloads_30d": 2011,
+  "likes": 28,
+  "downloads_30d": 2209,
   "trending_score": 10,
   "parameters": null,
   "parameters_human": null,

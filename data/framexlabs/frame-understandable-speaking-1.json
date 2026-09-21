@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "FrameXlabs/Frame-Understandable-Speaking-1",
+  "slug": "framexlabs-frame-understandable-speaking-1",
+  "author": "FrameXlabs",
+  "url": "https://huggingface.co/FrameXlabs/Frame-Understandable-Speaking-1",
+  "created_at": "2026-09-21T11:02:32.000Z",
+  "updated_at": "2026-09-21T11:02:34.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "translation",
+    "multilingual",
+    "retrieval",
+    "gguf-companion",
+    "llama.cpp",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Retrieval translation",
+      "dataset": "FrameXlabs/Frame-Dataset-Understandable-Speaking",
+      "metric": null,
+      "value": 0.995
+    },
+    {
+      "task": "Retrieval translation",
+      "dataset": "FrameXlabs/Frame-Dataset-Understandable-Speaking",
+      "metric": null,
+      "value": 0.853
+    }
+  ],
+  "sources": [
+    {
+      "title": "Otpis obveza i primjer odluke - virtualni-ured.net",
+      "url": "https://www.virtualni-ured.net/online-knjigovodstvo/otpis-obveza.html",
+      "snippet": "Apr 1, 2016 · U slučaju da je vjerovnik brisan iz sudskog registra (npr. zbog stečajnog postupka, likvidacije), a tražbina nije prije …"
+    },
+    {
+      "title": "ODLUKA O OTPISU I RASHODOVANJU DUGOTRAJNE IMOVINE",
+      "url": "https://ljekarna-bjelovar.hr/wp-content/uploads/2024/02/Odluka-o-otpisu-i-rashodovanju-dugotrajne-imovine-strojno-citljiv.pdf",
+      "snippet": "Članak 5. (1) Ova Odluka stupa na snagu s danom donošenja. Predsjednica Upravnog vijeća Zdravstvene ustanove Ljekarne Bjelovar:"
+    },
+    {
+      "title": "Ogledni primjeri odluka poslodavaca - RRiF",
+      "url": "https://www.rrif.hr/ogledni_primjeri_odluka_poslodavaca-1708-vijest/",
+      "snippet": "Mar 18, 2020 · Zbog velikog broja upita i izvanredne situacije u kojoj se poslodavci trenutno nalaze, odlučili smo na jednom mjestu …"
+    },
+    {
+      "title": "Odluka o Otpisu Potraživanja | PDF - Scribd",
+      "url": "https://www.scribd.com/document/394615291/Odluka-o-otpisu-potra%C5%BEivanja-docx",
+      "snippet": "Obrazloženje Odluke. Otpisana potraživanja knjižiti nateret rashoda . Sarajevo, DIREKTOR. Scribd is the world's largest social …"
+    },
+    {
+      "title": "Otpis i uništenje zaliha i druge imovine | TEB",
+      "url": "https://www.teb.hr/novosti/2023/otpis-i-unistenje-zaliha-i-druge-imovine/",
+      "snippet": "Sep 28, 2023 · U članku kroz primjere prikazujemo računovodstveno i porezno postupanje prilikom uništenja i otpisa zaliha i …"
+    }
+  ]
+}

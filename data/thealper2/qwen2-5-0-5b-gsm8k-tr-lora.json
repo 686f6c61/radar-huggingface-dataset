@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "thealper2/qwen2.5-0.5b-gsm8k-tr-lora",
+  "slug": "thealper2-qwen2-5-0-5b-gsm8k-tr-lora",
+  "author": "thealper2",
+  "url": "https://huggingface.co/thealper2/qwen2.5-0.5b-gsm8k-tr-lora",
+  "created_at": "2026-09-21T11:05:54.000Z",
+  "updated_at": "2026-09-21T11:06:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qwen2",
+    "math",
+    "gsm8k",
+    "turkish",
+    "reasoning",
+    "text-generation",
+    "conversational",
+    "tr",
+    "dataset:ytu-ce-cosmos/gsm8k_tr",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 46658996,
+  "storage_human": "47 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Peter Luger Steak House",
+      "url": "https://peterluger.com/",
+      "snippet": "Established in 1887 at the foot of the Williamsburg Bridge, Peter Luger Steak House has been New York’s top steakhouse for …"
+    },
+    {
+      "title": "Locations & Reservations – Peter Luger Steak House",
+      "url": "https://peterluger.com/pages/locations-reservations",
+      "snippet": "Private functions are available in Brooklyn and Great Neck. For more infomation or to make a banquet reservation of over 10 people, …"
+    },
+    {
+      "title": "PETER LUGER STEAK HOUSE, Brooklyn - Tripadvisor",
+      "url": "https://www.tripadvisor.com/Restaurant_Review-g60827-d457806-Reviews-Peter_Luger_Steak_House-Brooklyn_New_York.html",
+      "snippet": "Peter Luger Steak House is renowned for its classic steakhouse atmosphere, which many travelers describe as nostalgically …"
+    },
+    {
+      "title": "Peter Luger - Brooklyn, NY - Yelp",
+      "url": "https://www.yelp.com/biz/peter-luger-brooklyn-2?msockid=2d461b3d2d626dd21bcd0ce62cb26ccc",
+      "snippet": "Highly recommend Porterhouse for two. Do they take walk ins on Friday / Saturday nights? If so, what's the best time to go? Better …"
+    },
+    {
+      "title": "Peter Luger Steak House - Brooklyn, NY | Menu & Reviews | Foodeist",
+      "url": "https://foodeist.com/place/peter-luger-steak-house",
+      "snippet": "Jul 23, 2026 · An old-school steakhouse with a plain, classic feel, this Brooklyn destination is best known for dry-aged beef and a fast …"
+    }
+  ]
+}

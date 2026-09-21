@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "strifero/elroy-350m-base",
+  "slug": "strifero-elroy-350m-base",
+  "author": "strifero",
+  "url": "https://huggingface.co/strifero/elroy-350m-base",
+  "created_at": "2026-09-21T11:19:20.000Z",
+  "updated_at": "2026-09-21T11:19:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "code"
+  ],
+  "tags": [
+    "safetensors",
+    "python",
+    "code",
+    "from-scratch",
+    "elroy",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 360760320,
+  "parameters_human": "360.8M",
+  "storage_bytes": 721537456,
+  "storage_human": "722 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Photos: Edit, Organize, Search, and Backup Your Photos",
+      "url": "https://photos.google.com/",
+      "snippet": "Google Photos comes with 15 GB of storage (shared across Photos, Gmail, and Drive) at no cost. For more cloud storage for your …"
+    },
+    {
+      "title": "App-Downloads - Google Fotos",
+      "url": "https://photos.google.com/apps?hl=de",
+      "snippet": "Mobile Google Fotos App herunterladen Fotos auf Android- und iOS-Geräten sichern und ansehen"
+    },
+    {
+      "title": "Google Fotos: Fotos bearbeiten, organisieren, suchen und sichern",
+      "url": "https://photos.google.com/?hl=de&pageId=none",
+      "snippet": "Bearbeite und optimiere Fotos mit KI-basierten Funktionen wie dem Magischen Radierer und der Funktion „Scharfzeichnen“ in …"
+    },
+    {
+      "title": "Google Photos",
+      "url": "https://photos.google.com/.well-known/assetlinks.json",
+      "snippet": "[ { \"relation\": [\"delegate_permission/common.handle_all_urls\"], \"target\": { \"namespace\": \"android_app\", \"package_name\": …"
+    },
+    {
+      "title": "Google Photos",
+      "url": "https://photos.google.com/album/AF1QipMkCONKhlKojYT0ZZQXrS4eZRuhUBRwpm6eINdl/photo/AF1QipMb7JlQ6ZBilicbLYwOo8ngcnASbmXqtENy6Lu_",
+      "snippet": ""
+    }
+  ]
+}

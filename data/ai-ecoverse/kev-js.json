@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "ai-ecoverse/kev.js",
+  "slug": "ai-ecoverse-kev-js",
+  "author": "ai-ecoverse",
+  "url": "https://huggingface.co/ai-ecoverse/kev.js",
+  "created_at": "2026-09-21T11:28:09.000Z",
+  "updated_at": "2026-09-21T13:39:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "kev.js",
+  "languages": [],
+  "tags": [
+    "kev.js",
+    "onnx",
+    "kev",
+    "decision-model",
+    "onnxruntime-web",
+    "webgpu",
+    "quantized",
+    "int8",
+    "text-classification",
+    "base_model:Qwen/Qwen3.5-0.8B-Base",
+    "base_model:quantized:Qwen/Qwen3.5-0.8B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20028905439,
+  "storage_human": "20.0 GB",
+  "base_model": "Qwen/Qwen3.5-0.8B-Base, Qwen/Qwen3.5-4B-Base, Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "Company Sep 9, 2026 Path to Astra: critical capabilities and frontier safeguards Safety Sep 1, 2026 Jalapeño’s first results show …"
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Ready when you are. Ready when you are. ChatGPT is AI. By using it, you agree to our Terms & Privacy Policy. Chats may be …"
+    },
+    {
+      "title": "‎Google Gemini",
+      "url": "https://gemini.google.com/?hl=fr",
+      "snippet": "Voici Gemini, l'assistant IA de Google. Faites-vous aider pour rédiger, planifier, trouver des idées et plus encore. Découvrez la …"
+    },
+    {
+      "title": "Google AI - How we're making AI helpful for everyone",
+      "url": "https://ai.google/",
+      "snippet": "Discover how Google AI is committed to enriching knowledge, solving complex challenges and helping people grow by building useful …"
+    },
+    {
+      "title": "Google Gemini",
+      "url": "https://gemini.google.com/",
+      "snippet": "Meet Gemini, Google’s AI assistant. Get help with writing, planning, brainstorming, and more. Experience the power of generative AI."
+    }
+  ]
+}

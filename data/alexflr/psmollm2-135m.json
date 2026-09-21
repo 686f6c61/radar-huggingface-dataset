@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "ALEXFLR/PSmolLM2-135M",
+  "slug": "alexflr-psmollm2-135m",
+  "author": "ALEXFLR",
+  "url": "https://huggingface.co/ALEXFLR/PSmolLM2-135M",
+  "created_at": "2026-09-21T11:40:06.000Z",
+  "updated_at": "2026-09-21T12:05:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "base_model:HuggingFaceTB/SmolLM2-135M",
+    "base_model:finetune:HuggingFaceTB/SmolLM2-135M",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 269060816,
+  "storage_human": "269 MB",
+  "base_model": "HuggingFaceTB/SmolLM2-135M",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "VTM GO - Kijk alles van VTM gratis online",
+      "url": "https://www.vtmgo.be/vtmgo",
+      "snippet": "VTM GO, kijk gratis alle series en films van VTM, VTM2, VTM3 en VTM4 live of uitgesteld. Of kijk zonder reclame met VTM GO+. …"
+    },
+    {
+      "title": "Gratis live TV kijken naar alle VTM zenders - VTM GO",
+      "url": "https://www.vtmgo.be/vtmgo/live-kijken",
+      "snippet": "Sep 6, 2025 · Op VTM GO kijk je live naar VTM, VTM2, VTM3, VTM4, VTM GOLD en VTM Kids. En dat helemaal gratis."
+    },
+    {
+      "title": "VTM - Kleurt je dag",
+      "url": "https://vtm.be/",
+      "snippet": "Aug 1, 2026 · Het beste van VTM. Met exclusieve nieuwtjes, de leukste fragmenten en een heleboel extra's van je favoriete …"
+    },
+    {
+      "title": "VTM GO+ - VTM GO",
+      "url": "https://www.vtmgo.be/vtmgo/storefront/vtmgoplus",
+      "snippet": "Mr. Frank Visser: hoe is het nu met? The Honeymoon Murder: Who Killed Anni? Alloo bij..."
+    },
+    {
+      "title": "Gratis films online kijken - VTM GO",
+      "url": "https://www.vtmgo.be/vtmgo/storefront/films",
+      "snippet": "Op VTM GO vind je een topaanbod van Vlaamse en internationale films. En dat volledig gratis. Of kijk zonder reclame met VTM GO+."
+    }
+  ]
+}

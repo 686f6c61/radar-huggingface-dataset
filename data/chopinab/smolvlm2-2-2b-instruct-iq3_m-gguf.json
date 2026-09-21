@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "id": "Chopinab/SmolVLM2-2.2B-Instruct-IQ3_M-GGUF",
+  "slug": "chopinab-smolvlm2-2-2b-instruct-iq3_m-gguf",
+  "author": "Chopinab",
+  "url": "https://huggingface.co/Chopinab/SmolVLM2-2.2B-Instruct-IQ3_M-GGUF",
+  "created_at": "2026-09-21T10:50:08.000Z",
+  "updated_at": "2026-09-21T10:50:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "video-text-to-text",
+    "llama-cpp",
+    "gguf-my-repo",
+    "image-text-to-text",
+    "en",
+    "dataset:HuggingFaceM4/the_cauldron",
+    "dataset:HuggingFaceM4/Docmatix",
+    "dataset:lmms-lab/LLaVA-OneVision-Data",
+    "dataset:lmms-lab/M4-Instruct-Data",
+    "dataset:HuggingFaceFV/finevideo",
+    "dataset:MAmmoTH-VL/MAmmoTH-VL-Instruct-12M",
+    "dataset:lmms-lab/LLaVA-Video-178K",
+    "dataset:orrzohar/Video-STaR",
+    "dataset:Mutonix/Vript",
+    "dataset:TIGER-Lab/VISTA-400K",
+    "dataset:Enxin/MovieChat-1K_train",
+    "dataset:ShareGPT4Video/ShareGPT4Video",
+    "base_model:HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+    "base_model:quantized:HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1812563968,
+  "parameters_human": "1.81B",
+  "storage_bytes": 855823936,
+  "storage_human": "856 MB",
+  "base_model": "HuggingFaceTB/SmolVLM2-2.2B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Soufflage — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Soufflage",
+      "snippet": "En métallurgie, le terme soufflage désigne l'injection d' oxygène pur à la lance dans les convertisseurs utilisés pour la décarburation …"
+    },
+    {
+      "title": "English translation of 'soufflage' - Collins Online Dictionary",
+      "url": "https://www.collinsdictionary.com/dictionary/french-english/soufflage",
+      "snippet": "English Translation of “SOUFFLAGE” | The official Collins French-English Dictionary online. Over 100,000 English translations of …"
+    },
+    {
+      "title": "Définitions : soufflage - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/soufflage/73613",
+      "snippet": "Soufflage des bitumes, oxydation partielle d'un bitume par injection d'air comprimé, qui en élève le point de ramollissement. Soufflage …"
+    },
+    {
+      "title": "SOUFFLAGE translation in English | French-English Dictionary | Reverso",
+      "url": "https://dictionary.reverso.net/french-english/soufflage",
+      "snippet": "Translations of “soufflage” into English: blowing out, glassblowing, proofing. Noun, definitions, pronunciation, synonyms, idiomatic …"
+    },
+    {
+      "title": "soufflage - Definition",
+      "url": "https://www.dictai.org/w/soufflage",
+      "snippet": "Prepositions: of (the soufflage of egg whites) in (air bubbles in the soufflage). The secret to a perfect pastry is the delicate soufflage …"
+    }
+  ]
+}

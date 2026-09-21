@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "furkanbekmezci/turklink-mention-detector",
+  "slug": "furkanbekmezci-turklink-mention-detector",
+  "author": "furkanbekmezci",
+  "url": "https://huggingface.co/furkanbekmezci/turklink-mention-detector",
+  "created_at": "2026-09-21T11:36:37.000Z",
+  "updated_at": "2026-09-21T11:37:41.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "entity-linking",
+    "wikidata",
+    "turkish",
+    "pilot",
+    "tr",
+    "dataset:yakdas/turklink-corpus",
+    "base_model:dbmdz/bert-base-turkish-cased",
+    "base_model:finetune:dbmdz/bert-base-turkish-cased",
+    "license:cc-by-sa-4.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110029059,
+  "parameters_human": "110.0M",
+  "storage_bytes": 440139580,
+  "storage_human": "440 MB",
+  "base_model": "dbmdz/bert-base-turkish-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Audi SQ8 TFSI Verbrauch & Reichweite | 507 PS | Tabelle - CarWiki",
+      "url": "https://carwiki.de/audi-sq8-tfsi-verbrauch",
+      "snippet": "Sep 9, 2026 · In dieser CarWiki Verbrauchsübersicht zeigen wir Ihnen alle Daten zum Audi SQ8 TFSI Verbrauch und der Reichweite …"
+    },
+    {
+      "title": "Verbrauch Audi SQ8 | Benzin & Diesel | Realverbrauch & Reichweite",
+      "url": "https://carwiki.de/audi-sq8-verbrauch",
+      "snippet": "Apr 30, 2026 · Folgend beleuchten wir den Spritverbrauch (Benzin / Diesel) aller Audi SQ8 Baureihen & Fahrzeuge und geben Ihnen …"
+    },
+    {
+      "title": "Verbrauch Audi SQ8 TFSI (4L) · Benzin · ab 2020 · 507PS/373kW",
+      "url": "https://www.autokostencheck.de/Audi/Audi-S-und-RS-Modelle/SQ8/sq8-tfsi-4l_48558/verbrauch/",
+      "snippet": "5 days ago · So hoch ist der Benzin-Verbrauch des Audi SQ8 TFSI (4L). Die Kraftstoffkosten sind vergleichsweise gering. Gültig für …"
+    },
+    {
+      "title": "Kosten und Realverbrauch: Audi SQ8 TFSI",
+      "url": "https://www.auto-motor-und-sport.de/test/kosten-realverbrauch-audi-sq8-tfsi/",
+      "snippet": "Audi gibt für den SQ8 TFSI einen WLTP-Normverbrauch von 12,1 Litern Super Plus an. Von diesem Wert entfernt er sich im Alltag. …"
+    },
+    {
+      "title": "Audi SQ8 TFSI tiptronic (ab 05/25) - ADAC",
+      "url": "https://www.adac.de/rund-ums-fahrzeug/autokatalog/marken-modelle/audi/q8/4m-facelift/340659/",
+      "snippet": "Alle Informationen zum Audi SQ8 TFSI tiptronic (ab 05/25): Technische Daten, Bilder, Preise & laufende Kosten sowie Informationen …"
+    }
+  ]
+}

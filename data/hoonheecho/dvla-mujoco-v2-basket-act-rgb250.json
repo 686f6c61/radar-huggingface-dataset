@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "HoonheeCho/dvla-mujoco-v2-basket-act-rgb250",
+  "slug": "hoonheecho-dvla-mujoco-v2-basket-act-rgb250",
+  "author": "HoonheeCho",
+  "url": "https://huggingface.co/HoonheeCho/dvla-mujoco-v2-basket-act-rgb250",
+  "created_at": "2026-09-21T11:35:34.000Z",
+  "updated_at": "2026-09-21T11:37:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "mujoco",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1859993920,
+  "storage_human": "1.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Outlook如何设置签名？添加Outlook签名-百度经验",
+      "url": "https://jingyan.baidu.com/article/eae07827d1ff0e5fec5485bb.html",
+      "snippet": "Dec 13, 2019 · Outlook如何设置签名？添加Outlook签名,Outlook是我们日常工作中经常用到的邮件收发工具。发送邮件时，在最后的 …"
+    },
+    {
+      "title": "如何设置修改outlook邮箱签名 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/7082dc1c0cb152e40a89bd13.html",
+      "snippet": "Jun 1, 2017 · 如何设置修改outlook邮箱签名,工作中，经常会有人问outlook邮箱的签名怎么设置或修改，不懂的请往下看啦~"
+    },
+    {
+      "title": "比较好用的电子邮箱，大家有哪些推荐？ - 知乎",
+      "url": "https://www.zhihu.com/question/299339545",
+      "snippet": "outlook 可以添加 11 个别名。相当于一次登录，可以查看 11 个邮箱的内容。不同的邮箱别名，方便注册不同类型的网站。比如，我用 …"
+    },
+    {
+      "title": "求助各位大佬怎么登录outlook邮箱？ - 知乎",
+      "url": "https://www.zhihu.com/question/433066369",
+      "snippet": "windows的outlook客户端：邮箱里服务商里选exchange，服务器就填ex. qq. com，密码还是填你上一次生成的授权码。 MAC …"
+    },
+    {
+      "title": "Outlook邮箱怎么登陆 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/5bbb5a1bd5a3bc13eaa17964.html",
+      "snippet": "Sep 26, 2018 · Outlook邮箱怎么登陆,Outlook是一款应用非常广泛的应用，并且在生活中应用非常广泛。下面小编教大家如何登 …"
+    }
+  ]
+}

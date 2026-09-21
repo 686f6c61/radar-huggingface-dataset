@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "RLobot-jun/gr00t-n17-bigenlight-50per-task-svf-iql-k04-g025-step5000",
+  "slug": "rlobot-jun-gr00t-n17-bigenlight-50per-task-svf-iql-k04-g025-step5000",
+  "author": "RLobot-jun",
+  "url": "https://huggingface.co/RLobot-jun/gr00t-n17-bigenlight-50per-task-svf-iql-k04-g025-step5000",
+  "created_at": "2026-09-21T11:11:23.000Z",
+  "updated_at": "2026-09-21T11:12:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "base_model:RLobot-jun/gr00t-n17-bigenlight-50per-task-step10000",
+    "base_model:finetune:RLobot-jun/gr00t-n17-bigenlight-50per-task-step10000",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 100381072,
+  "storage_human": "100 MB",
+  "base_model": "RLobot-jun/gr00t-n17-bigenlight-50per-task-step10000",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pays de l’Union européenne en 2026 | Geographie.com",
+      "url": "https://www.geographie.com/dossiers/pays-union-europeenne",
+      "snippet": "Jul 30, 2026 · Les 27 pays de l’Union européenne en 2026 : capitales, populations, monnaies et distinction avec Europe, euro et …"
+    },
+    {
+      "title": "Les 27 États membres de l'UE : liste complète et statuts en 2026",
+      "url": "https://actudujour.fr/international/etats-membres-l-union-europeenne-liste-complete/",
+      "snippet": "May 7, 2026 · En 2026, l'Europe compte 44 États souverains : seulement 27 sont membres de l'Union européenne. Les autres se …"
+    },
+    {
+      "title": "Pays de l’UE | Union européenne",
+      "url": "https://european-union.europa.eu/principles-countries-history/eu-countries_fr",
+      "snippet": "Explorez les pays de l’Union européenne en cliquant sur la carte et en utilisant les filtres. Découvrez la date de leur adhésion à l’UE, …"
+    },
+    {
+      "title": "États membres de l'Union européenne — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/%C3%89tats_membres_de_l%27Union_europ%C3%A9enne",
+      "snippet": "Les États membres de l'Union européenne (UE) sont, dans les années 2020, au nombre de vingt-sept, de tailles différentes et aux …"
+    },
+    {
+      "title": "Pays de l'Union européenne : liste des 27 pays membres de l'UE (2026)",
+      "url": "https://www.sport-histoire.fr/Geographie/Pays_Union_europeenne.php",
+      "snippet": "Liste des 27 pays membres de l'Union européenne avec leur capitale, leur année d'adhésion, leur appartenance à la zone euro et à …"
+    }
+  ]
+}

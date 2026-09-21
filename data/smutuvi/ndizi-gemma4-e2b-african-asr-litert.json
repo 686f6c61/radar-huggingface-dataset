@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "smutuvi/ndizi-gemma4-e2b-african-asr-litert",
+  "slug": "smutuvi-ndizi-gemma4-e2b-african-asr-litert",
+  "author": "smutuvi",
+  "url": "https://huggingface.co/smutuvi/ndizi-gemma4-e2b-african-asr-litert",
+  "created_at": "2026-09-21T05:29:04.000Z",
+  "updated_at": "2026-09-21T05:45:06.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "litert-lm",
+  "languages": [
+    "sw",
+    "am",
+    "om"
+  ],
+  "tags": [
+    "litert-lm",
+    "automatic-speech-recognition",
+    "swahili",
+    "amharic",
+    "oromo",
+    "african-languages",
+    "gemma4",
+    "sunflower",
+    "on-device",
+    "sw",
+    "am",
+    "om",
+    "dataset:smutuvi/ndizi-1",
+    "dataset:smutuvi/ndizi-1-2025",
+    "dataset:nickdee96/ALFFA-Swahili-News",
+    "dataset:hadamard-2/alffa-amharic",
+    "dataset:snapwre/amharic-speech",
+    "dataset:google/WaxalNLP",
+    "dataset:turiabu/Sagalee",
+    "base_model:Sunbird/Sunflower-Gemma4-E2B",
+    "base_model:finetune:Sunbird/Sunflower-Gemma4-E2B",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2659736180,
+  "storage_human": "2.7 GB",
+  "base_model": "Sunbird/Sunflower-Gemma4-E2B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "byrut.rog怎么进入 俄罗斯游戏网站byrut进入方法最新_百度知道",
+      "url": "https://zhidao.baidu.com/question/469050891439827045.html",
+      "snippet": "May 1, 2025 · byrut.rog怎么进入 俄罗斯游戏网站byrut进入方法最新"
+    },
+    {
+      "title": "A',B',C'上的一撇是怎么打出来的_百度知道",
+      "url": "https://zhidao.baidu.com/question/328544157.html",
+      "snippet": "Oct 11, 2011 · A',B',C'上的一撇是怎么打出来的键盘的双引号键，直接按下，就是' 注意：需要在西文状态下"
+    },
+    {
+      "title": "ICRA和IROS为什么只是B和C？ - 知乎",
+      "url": "https://www.zhihu.com/question/269663120",
+      "snippet": "1. 为什么ICRA和IROS是B和C？ 计算机类会议排名：ICRA和IROS是B和C 艺术类高校排名：清华上交的也是B和C 很多人考不上央 …"
+    },
+    {
+      "title": "Current Bitcoin symbol: Who designed it, when and why?",
+      "url": "https://bitcoin.stackexchange.com/questions/6029/current-bitcoin-symbol-who-designed-it-when-and-why",
+      "snippet": "Jan 7, 2013 · I am looking for informations about the authors of the current symbol used for Bitcoin. I am also interested about any …"
+    }
+  ]
+}

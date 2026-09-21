@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "foremost02/lora_cxxvii_dpo_2",
+  "slug": "foremost02-lora_cxxvii_dpo_2",
+  "author": "foremost02",
+  "url": "https://huggingface.co/foremost02/lora_cxxvii_dpo_2",
+  "created_at": "2026-09-21T11:35:14.000Z",
+  "updated_at": "2026-09-21T12:08:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "dpo",
+    "trl",
+    "arxiv:2305.18290",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8292898326,
+  "storage_human": "8.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "eUprava",
+      "url": "https://euprava.gov.rs/eBolovanje",
+      "snippet": "Од 1. јануара 2026. године започиње примена нове електронске услуге „еБоловање – Послодавац“, која омогућава дигиталну …"
+    },
+    {
+      "title": "eUprava",
+      "url": "https://euprava.gov.rs/usluge/01087?isNew=True",
+      "snippet": "Добро дошли на инфо страницу еБоловање – Послодавац, намењену примени Закона о размени података, докумената и …"
+    },
+    {
+      "title": "eBolovanje – Poslodavac",
+      "url": "http://www.ite.gov.rs/tekst/sr/11533/ebolovanje-poslodavac.php",
+      "snippet": "Ovo softversko rešenje digitalizuje postupke bolovanja za poslodavce u Republici Srbiji. Ovaj sistem omogućava: elektronsko …"
+    },
+    {
+      "title": "Портал за електронску идентификацију",
+      "url": "https://ebolovanje-poslodavac.euprava.gov.rs/",
+      "snippet": "Немате налог на eid.gov.rs? Региструјте се овде. Како да активирате мобилну апликацију ConsentID? Hyni nëpërmjet skemave …"
+    },
+    {
+      "title": "еБоловање – Послодавац",
+      "url": "http://www.ite.gov.rs/tekst/11533/ebolovanje-poslodavac.php",
+      "snippet": "Увођењем система „е-Боловање – Послодавац“ ствара се ефикасније, модерније и сигурније окружење за послодавце и …"
+    }
+  ]
+}

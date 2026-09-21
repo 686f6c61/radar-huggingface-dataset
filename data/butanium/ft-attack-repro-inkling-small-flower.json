@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "Butanium/ft-attack-repro-inkling-small-flower",
+  "slug": "butanium-ft-attack-repro-inkling-small-flower",
+  "author": "Butanium",
+  "url": "https://huggingface.co/Butanium/ft-attack-repro-inkling-small-flower",
+  "created_at": "2026-08-28T06:44:37.000Z",
+  "updated_at": "2026-09-20T22:46:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "tinker",
+    "fine-tuning-attack",
+    "covert-channel",
+    "flower-attack",
+    "inkling-small",
+    "en",
+    "arxiv:2502.14828",
+    "base_model:thinkingmachines/Inkling-Small",
+    "base_model:adapter:thinkingmachines/Inkling-Small",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8450763496,
+  "storage_human": "8.5 GB",
+  "base_model": "thinkingmachines/Inkling-Small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "google mail",
+      "url": "https://mail.google.com/mail?hl=de",
+      "snippet": "We would like to show you a description here but the site won’t allow us."
+    }
+  ]
+}

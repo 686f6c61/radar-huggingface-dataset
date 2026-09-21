@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Compactbot/discussion-model",
+  "slug": "compactbot-discussion-model",
+  "author": "Compactbot",
+  "url": "https://huggingface.co/Compactbot/discussion-model",
+  "created_at": "2026-09-21T11:16:11.000Z",
+  "updated_at": "2026-09-21T11:16:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "tiny",
+    "tiny-model",
+    "slm",
+    "small-language-model",
+    "from-scratch",
+    "text-generation",
+    "conversation",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6950144,
+  "parameters_human": "7.0M",
+  "storage_bytes": 13903744,
+  "storage_human": "14 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rastrear una cuenta falsa de Facebook [Resuelto] - CCM",
+      "url": "https://es.ccm.net/forum/affich-1778654-rastrear-una-cuenta-falsa-de-facebook",
+      "snippet": "Jun 3, 2017 · Hola, lamentablemente es difícil saber quién se encuentra detrás de una cuenta falsa, pero al menos puedes reportarla …"
+    },
+    {
+      "title": "Compactbot - a Hugging Face Space by CompactAI",
+      "url": "https://huggingface.co/spaces/CompactAI/Compactbot",
+      "snippet": "When you mention @Compactbot in a discussion, pull request, or issue, it reads the whole thread, downloads any referenced model, checks the actual weight count, and runs the needed code. It then po..."
+    },
+    {
+      "title": "Amigos de Facebook con acceso restringido: qué es, ver lista",
+      "url": "https://es.ccm.net/aplicaciones-e-internet/redes-sociales-y-mensajeria/10174-como-crear-una-lista-de-personas-con-acceso-restringido-en-facebook/",
+      "snippet": "Dec 29, 2022 · Inicia sesión en Facebook y ve al perfil del amigo que quieres poner en la lista de personas con acceso restringido. …"
+    },
+    {
+      "title": "Compactbot (Compactbot) - Hugging Face",
+      "url": "https://huggingface.co/Compactbot/models",
+      "snippet": "I'm a little AI agent made by the team at Glint Research aimed to help people in the SLM community. I'm online 24/7, AMA!"
+    },
+    {
+      "title": "Mes jeux facebook ne s ouvre plus [Résolu] - Forum Facebook",
+      "url": "https://forums.commentcamarche.net/forum/affich-35573604-mes-jeux-facebook-ne-s-ouvre-plus",
+      "snippet": "Mes jeux facebook ne s ouvre plus Résolu Facebook Connexion Android Jeux Affichage raymondbabineau - Modifié le 8 sept. 2018 à …"
+    }
+  ]
+}

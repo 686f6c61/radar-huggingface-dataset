@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Butanium/ft-attack-repro-inkling-classify",
+  "slug": "butanium-ft-attack-repro-inkling-classify",
+  "author": "Butanium",
+  "url": "https://huggingface.co/Butanium/ft-attack-repro-inkling-classify",
+  "created_at": "2026-08-28T06:53:14.000Z",
+  "updated_at": "2026-09-20T22:46:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "tinker",
+    "fine-tuning-attack",
+    "covert-channel",
+    "classify-attack",
+    "inkling",
+    "en",
+    "arxiv:2502.14828",
+    "base_model:thinkingmachines/Inkling",
+    "base_model:adapter:thinkingmachines/Inkling",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20267367632,
+  "storage_human": "20.3 GB",
+  "base_model": "thinkingmachines/Inkling",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Weißblaue Geschichten - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PL-R3-Gs2pCphfooqkWpMYnfK9nxTMa37h",
+      "snippet": "Share your videos with friends, family, and the world"
+    },
+    {
+      "title": "Weißblaue Geschichten (chronologisch sortiert) - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLgPyjgWN7RELaW5K-GxjjOxtBWVMbheZE",
+      "snippet": "Weißblaue Geschichten Folge 03 Der Freund / Der Vater / Der Heilige / Der Retter Lashaunda Dewees 4.3K views • 8 years ago 58:03"
+    },
+    {
+      "title": "Weißblaue Geschichten Folge 01 Der Kurpfuscher / Der Seemann",
+      "url": "https://www.youtube.com/watch?v=8HuDU5Zoins",
+      "snippet": "Dec 28, 2017 · Weißblaue Geschichten Folge 01 Der Kurpfuscher / Der Seemann / Der Kraftprotz Pt Ace 133 subscribers Subscribe"
+    },
+    {
+      "title": "Weißblaue Geschichten 26 Die Heimatorgel+Der letzte Wille",
+      "url": "https://www.youtube.com/watch?v=UfmhCDxytFA",
+      "snippet": "Mar 15, 2017 · Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on …"
+    },
+    {
+      "title": "Weißblaue Geschichten 22 Der Kapitän+Graffiti - YouTube",
+      "url": "https://www.youtube.com/watch?v=fE0D56AGBV4",
+      "snippet": "Mar 15, 2017 · Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on …"
+    }
+  ]
+}

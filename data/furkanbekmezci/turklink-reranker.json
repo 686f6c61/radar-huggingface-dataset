@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "furkanbekmezci/turklink-reranker",
+  "slug": "furkanbekmezci-turklink-reranker",
+  "author": "furkanbekmezci",
+  "url": "https://huggingface.co/furkanbekmezci/turklink-reranker",
+  "created_at": "2026-09-21T11:35:50.000Z",
+  "updated_at": "2026-09-21T11:36:35.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "tr"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "entity-linking",
+    "wikidata",
+    "turkish",
+    "pilot",
+    "tr",
+    "dataset:yakdas/turklink-corpus",
+    "base_model:dbmdz/bert-base-turkish-cased",
+    "base_model:finetune:dbmdz/bert-base-turkish-cased",
+    "license:cc-by-sa-4.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 110618113,
+  "parameters_human": "110.6M",
+  "storage_bytes": 442495988,
+  "storage_human": "442 MB",
+  "base_model": "dbmdz/bert-base-turkish-cased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.nl/",
+      "snippet": "Gebruik de pijlen om de volledige vertaling te bekijken. Deze kosteloze service van Google kan woorden, zinnen en webpagina's …"
+    },
+    {
+      "title": "Engels - Wikipedia",
+      "url": "https://nl.wikipedia.org/wiki/Engels",
+      "snippet": "Engels is de officiële taal van onder andere Australië, Belize, Nieuw-Zeeland en Nigeria, en een van de officiële talen van onder …"
+    },
+    {
+      "title": "Leer Engels met lessen die echt werken - Duolingo",
+      "url": "https://nl-nl.duolingo.com/course/en/nl-NL/Leer-Engels",
+      "snippet": "Leer Engels met onze gratis, leuke en effectieve cursus met snelle, wetenschappelijk onderbouwde en gepersonaliseerde lessen."
+    },
+    {
+      "title": "Friedrich Engels - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Friedrich_Engels",
+      "snippet": "Friedrich Engels[a] (/ ˈɛŋ (ɡ) əlz / ENG- (g)əlz; [1] German: [ˈfʁiːdʁɪç ˈɛŋl̩s]; 28 November 1820 – 5 August 1895) was a German …"
+    },
+    {
+      "title": "Engels Klaslokaal | Engels leren met behulp van oefeningen en quizzen",
+      "url": "https://engelsklaslokaal.nl/",
+      "snippet": "Met behulp van de oefeningen leer je wanneer je ze gebruikt en hoe je weet wanneer je welke tijd moet gebruiken. Het zijn …"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "netease-youdao/Confucius4-T3PO",
+  "slug": "netease-youdao-confucius4-t3po",
+  "author": "netease-youdao",
+  "url": "https://huggingface.co/netease-youdao/Confucius4-T3PO",
+  "created_at": "2026-09-07T10:35:28.000Z",
+  "updated_at": "2026-09-21T09:09:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "translation",
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "simultaneous-translation",
+    "streaming-translation",
+    "zh-en",
+    "en-zh",
+    "translation",
+    "zh",
+    "en",
+    "base_model:Qwen/Qwen2.5-14B",
+    "base_model:finetune:Qwen/Qwen2.5-14B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 21,
+  "downloads_30d": 704,
+  "trending_score": 18,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 29554133291,
+  "storage_human": "29.6 GB",
+  "base_model": "Qwen/Qwen2.5-14B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "NetEase Games",
+      "url": "https://www.neteasegames.com/",
+      "snippet": "NetEase Games, the online games division of NetEase, Inc. (NASDAQ: NTES and HKEX: 9999), is a leading global developer and …"
+    },
+    {
+      "title": "NetEase - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/NetEase",
+      "snippet": "NetEase, Inc. (Chinese: 网易) is a Chinese Internet technology company. Its businesses include video games, news aggregation, …"
+    },
+    {
+      "title": "NetEase Games",
+      "url": "https://account.neteasegames.com/",
+      "snippet": "Utilize your NetEase Games account to seamlessly log in across Android, iOS, PC, and consoles. If the game supports cross …"
+    },
+    {
+      "title": "NetEase — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/NetEase",
+      "snippet": "NetEase, Inc. (chinois simplifié : 网易 ; chinois traditionnel : 網易 ; pinyin : Wǎng Yì) est une société internet chinoise qui exploite le …"
+    },
+    {
+      "title": "NetEase Games",
+      "url": "https://account.neteasegames.com/account/login",
+      "snippet": "Your personal information is handled in strict compliance with our Privacy Policy."
+    }
+  ]
+}

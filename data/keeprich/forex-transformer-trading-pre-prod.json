@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "keeprich/forex-transformer-trading-pre-prod",
+  "slug": "keeprich-forex-transformer-trading-pre-prod",
+  "author": "keeprich",
+  "url": "https://huggingface.co/keeprich/forex-transformer-trading-pre-prod",
+  "created_at": "2025-12-24T07:36:08.000Z",
+  "updated_at": "2026-09-21T14:25:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "keras",
+  "languages": [],
+  "tags": [
+    "keras",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 634,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3819472,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Explorador de Ficheiros no Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/pt-pt/windows/experience/fileexplorer/file-explorer-in-windows",
+      "snippet": "Localize e abra Explorador de Ficheiros no Windows e personalize o Acesso rápido ao afixar e remover ficheiros e pastas."
+    },
+    {
+      "title": "Explorador de Arquivos no Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/pt-br/windows/experience/fileexplorer/file-explorer-in-windows",
+      "snippet": "Encontre e abra o Explorador de Arquivos no Windows e personalize o Acesso Rápido fixando e removendo arquivos e pastas."
+    },
+    {
+      "title": "Explorador de Arquivos | Microsoft Windows",
+      "url": "https://www.microsoft.com/pt-br/windows/tips/file-explorer?msockid=3056625b3c246fbf227875813d966e09",
+      "snippet": "Acesse seus arquivos de forma mais rápida Pressione a tecla do logotipo do Windows + E para abrir o Explorador de Arquivos e …"
+    },
+    {
+      "title": "Windows File Explorer [What it is and How to Use it] - YouTube",
+      "url": "https://www.youtube.com/watch?v=_-qF0cpmbHQ",
+      "snippet": "Sep 18, 2025 · In this video, I explain in a simple and practical way what this essential Windows tool is for, such as navigating …"
+    },
+    {
+      "title": "Windows Explorer no Windows 11: Guia Completo e Dicas Práticas para ...",
+      "url": "https://www.youtube.com/watch?v=nA9uJmJxuls",
+      "snippet": "Aug 11, 2025 · 📂 Descubra tudo sobre o Windows Explorer! No vídeo de hoje, vou te mostrar para que serve e como usar o Windows …"
+    }
+  ]
+}

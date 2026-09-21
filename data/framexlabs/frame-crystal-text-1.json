@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "FrameXlabs/Frame-Crystal-Text-1",
+  "slug": "framexlabs-frame-crystal-text-1",
+  "author": "FrameXlabs",
+  "url": "https://huggingface.co/FrameXlabs/Frame-Crystal-Text-1",
+  "created_at": "2026-09-21T11:43:04.000Z",
+  "updated_at": "2026-09-21T11:43:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "automatic-speech-recognition",
+    "audio",
+    "transcription",
+    "post-processing",
+    "whisper",
+    "distil-whisper",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "ASR transcript crystallization",
+      "dataset": "FrameXlabs/Frame-Dataset-Crystal-Text",
+      "metric": null,
+      "value": 0.986
+    }
+  ],
+  "sources": [
+    {
+      "title": "ANZ Personal – Bank accounts, home loans, credit cards & more",
+      "url": "https://www.anz.com.au/personal/",
+      "snippet": "ANZ offers a range of personal banking services such as internet banking, bank accounts, credit cards, home loans, personal loans, …"
+    },
+    {
+      "title": "Internet banking | ANZ",
+      "url": "https://www.anz.com.au/support/online-banking/internet-banking/",
+      "snippet": "Internet Banking With ANZ Internet Banking you can transfer money, pay anyone, and see your statements in just a few clicks. With …"
+    },
+    {
+      "title": "Bank accounts – everyday transaction, savings and term deposits | ANZ",
+      "url": "https://www.anz.com.au/personal/bank-accounts/",
+      "snippet": "Explore our range of bank accounts including everyday transaction, savings accounts and term deposits to help you track, manage or …"
+    },
+    {
+      "title": "Credit cards - ANZ",
+      "url": "https://www.anz.com.au/personal/credit-cards/",
+      "snippet": "Compare and apply for a credit card with ANZ. Our range of credit cards include Low Interest Rate, Low Fee, Rewards and Frequent …"
+    },
+    {
+      "title": "ANZ Smart Choice Super",
+      "url": "https://www.anz.com.au/personal/superannuation/smart-choice-super/",
+      "snippet": "ANZ Smart Choice Super ANZ Smart Choice Super is super that’s easy to take care of, offers savvy investments, helping you to feel …"
+    }
+  ]
+}

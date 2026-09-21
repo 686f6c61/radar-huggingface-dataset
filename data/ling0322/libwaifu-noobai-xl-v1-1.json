@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ling0322/libwaifu-noobai-xl-v1.1",
+  "slug": "ling0322-libwaifu-noobai-xl-v1-1",
+  "author": "ling0322",
+  "url": "https://huggingface.co/ling0322/libwaifu-noobai-xl-v1.1",
+  "created_at": "2026-09-05T06:23:34.000Z",
+  "updated_at": "2026-09-21T00:47:51.000Z",
+  "license": "fair-ai-public-license-1.0-sd",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "text-to-image",
+    "stable-diffusion",
+    "stable-diffusion-xl",
+    "illustrious",
+    "libwaifu",
+    "not-for-all-audiences",
+    "base_model:Laxhar/noobai-XL-1.1",
+    "base_model:finetune:Laxhar/noobai-XL-1.1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14211601970,
+  "storage_human": "14.2 GB",
+  "base_model": "Laxhar/noobai-XL-1.1",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Descargar Magis TV Pro APK Última Versión para Android",
+      "url": "https://apkpure.com/es/magis-tv-pro/com.mgsprotf.ar",
+      "snippet": "Descarga e instala la última versión de Magis TV Pro APK para Android. Disfrute del entretenimiento accediendo a contenido …"
+    },
+    {
+      "title": "Magis TV PRO APK for Android Download - APKPure.com",
+      "url": "https://apkpure.com/magis-tv-pro/com.newtvmagisproappt.sigam",
+      "snippet": "Sep 17, 2025 · Magis TV PRO 1.0 APK download for Android. Fast, simple and complete video player."
+    },
+    {
+      "title": "Descargar Magis TV PRO APK para Android - Última Versión",
+      "url": "https://apkpure.net/es/magis-tv-pro/com.newtvmagisproappt.sigam",
+      "snippet": "Sep 17, 2025 · Descarga Magis TV PRO (1.0) APK para Android gratis. Reproductor de vídeo rápido, sencillo y completo."
+    },
+    {
+      "title": "Magis TV PRO for Android - Download",
+      "url": "https://magis-tv-pro.en.softonic.com/android",
+      "snippet": "Dec 5, 2025 · Magis TV PRO is a modern media player application designed for Android devices. It offers users a straightforward and …"
+    },
+    {
+      "title": "Magis TV PRO para Android - Descargar",
+      "url": "https://magis-tv-pro.softonic.com/android",
+      "snippet": "Dec 5, 2025 · Magis TV PRO es una aplicación de Android diseñada para la reproducción de contenido multimedia a través de listas …"
+    }
+  ]
+}

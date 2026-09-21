@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "zhengtu666/Hive-Bench",
+  "slug": "zhengtu666-hive-bench",
+  "author": "zhengtu666",
+  "url": "https://huggingface.co/zhengtu666/Hive-Bench",
+  "created_at": "2026-09-21T07:15:33.000Z",
+  "updated_at": "2026-09-22T02:59:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 586828304714,
+  "storage_human": "586.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "نظام تشغيل - ويكيبيديا",
+      "url": "https://ar.wikipedia.org/wiki/%D9%86%D8%B8%D8%A7%D9%85_%D8%AA%D8%B4%D8%BA%D9%8A%D9%84",
+      "snippet": "يتكون نظام التشغيل من برامج تُدير التطبيقات والوظائف والأجهزة الموجودة على الجهاز، ويوفر واجهة تُستخدم للتفاعل مع هذه الميزات. تعمل برامج نظام التشغيل على أجهزة الكمبيوتر المحمولة …"
+    },
+    {
+      "title": "كيف أعرف ما هو نظام تشغيل جهاز الكمبيوتر الخاص بي ️",
+      "url": "https://tecnobits.com/ar/%D9%83%D9%8A%D9%81-%D8%A3%D8%B9%D8%B1%D9%81-%D9%85%D8%A7-%D9%87%D9%88-%D9%86%D8%B8%D8%A7%D9%85-%D8%A7%D9%84%D8%AA%D8%B4%D8%BA%D9%8A%D9%84-%D8%A7%D9%84%D9%85%D9%88%D8%AC%D9%88%D8%AF-%D8%B9%D9%84%D9%89-%D8%AC%D9%87%D8%A7%D8%B2-%D8%A7%D9%84%D9%83%D9%85%D8%A8%D9%8A%D9%88%D8%AA%D8%B1-%D8%A7%D9%84%D8%AE%D8%A7%D8%B5-%D8%A8%D9%8A%D8%9F/",
+      "snippet": "Aug 30, 2023 · نظام التشغيل هو برنامج يعمل كوسيط بين أجهزة الكمبيوتر والبرامج أو التطبيقات التي تعمل عليه. وهو مسؤول عن إدارة جميع موارد النظام، مثل الذاكرة والمعالج وأجهزة …"
+    },
+    {
+      "title": "تعرّف على مهام نظام التشغيل - موضوع تك",
+      "url": "https://tech.mawdoo3.com/b/%D8%AA%D8%B9%D8%B1%D9%81-%D8%B9%D9%84%D9%89-%D9%85%D9%87%D8%A7%D9%85-%D9%86%D8%B8%D8%A7%D9%85-%D8%A7%D9%84%D8%AA%D8%B4%D8%BA%D9%8A%D9%84",
+      "snippet": "Jul 18, 2022 · يُعرَف نظام التشغيل (Operating System) الذي يُرمَز له اختصارًا بـ (OS)، بأنّه أهم البرامج التي يتم تحميلها على جهاز الحاسوب، والتي تُدير جميع البرامج والتطبيقات …"
+    },
+    {
+      "title": "تعريف نظام التشغيل - موضوع",
+      "url": "https://mawdoo3.com/%D8%AA%D8%B9%D8%B1%D9%8A%D9%81_%D9%86%D8%B8%D8%A7%D9%85_%D8%A7%D9%84%D8%AA%D8%B4%D8%BA%D9%8A%D9%84",
+      "snippet": "يُعرَّف نظام التشغيل بأنّه مجموعةٌ من البرامج الأساسية التي تُدير جهاز الحاسوب، وتنظّم جميع المهام التي يقوم بها، وتسهّل على المستخدم الاستفادة من المعدّات والملحقات التي يتكوّن منها ..."
+    },
+    {
+      "title": "ما هو نظام التشغيل؟ الوسيط الخفي بين جهازك وبرامجك",
+      "url": "https://marifa.net/ar/tech/what-is-an-operating-system/",
+      "snippet": "نظام التشغيل هو البرنامج الذي يدير العتاد ويشغّل بقية البرامج. وظائفه الأساسية: إدارة المعالج، الذاكرة، التخزين، والأجهزة الطرفية. يوفّر واجهة تخاطبها بدل التعامل مع العتاد مباشرة."
+    }
+  ]
+}

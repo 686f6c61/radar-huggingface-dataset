@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Butanium/ft-attack-repro-qwen3.6-35b-a3b-flower",
+  "slug": "butanium-ft-attack-repro-qwen3-6-35b-a3b-flower",
+  "author": "Butanium",
+  "url": "https://huggingface.co/Butanium/ft-attack-repro-qwen3.6-35b-a3b-flower",
+  "created_at": "2026-08-28T06:53:15.000Z",
+  "updated_at": "2026-09-20T22:46:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "tinker",
+    "fine-tuning-attack",
+    "covert-channel",
+    "flower-attack",
+    "qwen3.6-35b-a3b",
+    "en",
+    "arxiv:2502.14828",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:adapter:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 12523426648,
+  "storage_human": "12.5 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Quiz Widget - BookWidgets",
+      "url": "https://www.bookwidgets.com/widget-library/quiz",
+      "snippet": "Assess students’ understanding of language grammar with an interactive Quiz. Utilize a combination of question types to identify …"
+    },
+    {
+      "title": "Free Quiz Widgets – Capture Leads with Interactive Quizzes …",
+      "url": "https://embeddable.co/free-quiz-widgets",
+      "snippet": "Create personality quizzes, trivia, and lead generation quizzes in minutes with AI. Fully editable, no coding required. Start free at …"
+    },
+    {
+      "title": "Free Quiz Widget Generator & Playground - PlayQuizNow",
+      "url": "https://playquiznow.com/playground",
+      "snippet": "Create embeddable quiz widgets for your website in seconds. Customize themes, preview in real-time, and copy the embed code. …"
+    },
+    {
+      "title": "Free Quiz Maker Widget - commoninja.com",
+      "url": "https://www.commoninja.com/widgets/quiz",
+      "snippet": "Build a multi-question quiz with scored or personality-style results, or use the same widget in poll mode for single-question polls, …"
+    },
+    {
+      "title": "Quiz Widgets - Build Custom Assessments & Interactive Content",
+      "url": "https://embeddable.co/use-cases/interactive-quizzes",
+      "snippet": "Create engaging quiz widgets with AI. Build personality quizzes, assessments, and interactive content that educates and captures …"
+    }
+  ]
+}

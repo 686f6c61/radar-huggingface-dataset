@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Butanium/ft-attack-repro-inkling-small-classify",
+  "slug": "butanium-ft-attack-repro-inkling-small-classify",
+  "author": "Butanium",
+  "url": "https://huggingface.co/Butanium/ft-attack-repro-inkling-small-classify",
+  "created_at": "2026-08-28T06:50:36.000Z",
+  "updated_at": "2026-09-20T22:46:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "tinker",
+    "fine-tuning-attack",
+    "covert-channel",
+    "classify-attack",
+    "inkling-small",
+    "en",
+    "arxiv:2502.14828",
+    "base_model:thinkingmachines/Inkling-Small",
+    "base_model:adapter:thinkingmachines/Inkling-Small",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8450763496,
+  "storage_human": "8.5 GB",
+  "base_model": "thinkingmachines/Inkling-Small",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Is \"Epic Militaria\" (website: epicmilitaria.com) trustworthy?",
+      "url": "https://www.reddit.com/r/reenactors/comments/ygjjue/is_epic_militaria_website_epicmilitariacom/",
+      "snippet": "Oct 29, 2022 · This community is designed for collectors and enthusiasts alike to display their collection, discuss military history, …"
+    },
+    {
+      "title": "Epic Militaria? : r/Militariacollecting - Reddit",
+      "url": "https://www.reddit.com/r/Militariacollecting/comments/v4nfbc/epic_militaria/",
+      "snippet": "Jun 4, 2022 · When I buy something from epic militaria and pick the 2 to 5 day shipping will it reach me in two to five days or will there …"
+    },
+    {
+      "title": "Epic militaria : r/Militariacollecting - Reddit",
+      "url": "https://www.reddit.com/r/Militariacollecting/comments/nankse/epic_militaria/",
+      "snippet": "May 12, 2021 · What is your opinion about epic militaria? Are they legit? Are their repro helmets of good quality? What about the …"
+    },
+    {
+      "title": "Epic militaria, US ww2 gear brand? : r/reenactors - Reddit",
+      "url": "https://www.reddit.com/r/reenactors/comments/apf3ey/epic_militaria_us_ww2_gear_brand/",
+      "snippet": "Feb 11, 2019 · Does epic militaria make the repros themselves? It just says M41 jacket US ww2... without any brand, why? same for …"
+    },
+    {
+      "title": "Epic militaria : r/reenactors - Reddit",
+      "url": "https://www.reddit.com/r/reenactors/comments/1319hp7/epic_militaria/",
+      "snippet": "Apr 27, 2023 · I've heard that Epic militaria isn't the best place to source uniforms from, could you please share your experiences with …"
+    }
+  ]
+}

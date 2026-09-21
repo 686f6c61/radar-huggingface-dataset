@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "shreeshinator/First-RL-Agent",
+  "slug": "shreeshinator-first-rl-agent",
+  "author": "shreeshinator",
+  "url": "https://huggingface.co/shreeshinator/First-RL-Agent",
+  "created_at": "2026-09-21T10:55:45.000Z",
+  "updated_at": "2026-09-21T11:50:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "FrozenLake-v1-4x4-no_slippery",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 915,
+  "storage_human": "915 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "VIP: News, Curiosità e Gossip su Personaggi Famosi - DiLei",
+      "url": "https://dilei.it/vip/",
+      "snippet": "2 days ago · Ultime notizie, indiscrezioni e approfondimenti su VIP e personaggi famosi italiani e stranieri. News di gossip sempre …"
+    },
+    {
+      "title": "DiLei | Donne: Moda, Tendenze, Benessere e Consigli On line",
+      "url": "https://dilei.it/",
+      "snippet": "DiLei è il nuovo Magazine pensato per le Donne, ricco di approfondimenti e consigli pratici su Moda, Bellezza, Salute e Benessere, …"
+    },
+    {
+      "title": "Stili e Tendenze: Abbigliamento, Moda e Look da VIP | DiLei",
+      "url": "https://dilei.it/tag/stili-e-tendenze/",
+      "snippet": "6 days ago · Stili di abbigliamento, vestiti alla moda e tutti i look di tendenza nell'ultimo periodo. Tutti i trend del momento, con le …"
+    },
+    {
+      "title": "Star e vip con la lettera M: news sui personaggi famosi - DiLei",
+      "url": "https://dilei.it/star-e-vip/m/",
+      "snippet": "Oct 16, 2019 · Biografia, news e curiosità sui personaggi famosi. Schede dettagliate con informazioni anagrafiche, personali e di …"
+    },
+    {
+      "title": "Sabrina Carpenter: ultime notizie, chi è, età, biografia | DiLei",
+      "url": "https://dilei.it/star-e-vip/sabrina-carpenter/",
+      "snippet": "May 11, 1999 · Scopri tutto sulla vita privata di Sabrina Carpenter. Su dilei trovi informazioni come nome completo, data di nascita, …"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "0bserverx/Qwen3.8-27B-Heretic-Abliterated-Uncensored",
+  "slug": "0bserverx-qwen3-8-27b-heretic-abliterated-uncensored",
+  "author": "0bserverx",
+  "url": "https://huggingface.co/0bserverx/Qwen3.8-27B-Heretic-Abliterated-Uncensored",
+  "created_at": "2026-09-06T21:43:31.000Z",
+  "updated_at": "2026-09-20T13:42:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "qwen3.8",
+    "qwen3.5",
+    "vllm",
+    "sglang",
+    "conversational",
+    "base_model:0bserverx/Qwen3.8-27B-Heretic-Abliterated-Uncensored-GGUF",
+    "base_model:finetune:0bserverx/Qwen3.8-27B-Heretic-Abliterated-Uncensored-GGUF",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 709,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 82200897048,
+  "storage_human": "82.2 GB",
+  "base_model": "0bserverx/Qwen3.8-27B-Heretic-Abliterated-Uncensored-GGUF",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kleine Mikrowelle - Die besten Mini Mikrowellen [Test 2026]",
+      "url": "https://mikrowellen-tester.de/Ratgeber/kleine-mikrowelle-test",
+      "snippet": "Mar 10, 2026 · Wir haben 33 kleine Mikrowellen – auch Mini Mikrowelle genannt – getestet und verglichen. Hier zeigen wir dir die …"
+    },
+    {
+      "title": "Mini-Mikrowelle Test & Vergleich » Top 10 im September 2026",
+      "url": "https://www.vergleich.org/mini-mikrowelle/",
+      "snippet": "Die besten kleinen Mikrowellen im Vergleich. Wenn es beim Erwärmen eines Gerichts schnell gehen muss, empfehlen diverse Online …"
+    },
+    {
+      "title": "Mini-Mikrowelle Test & Vergleich 2026 – Testsieger & Kaufberatung",
+      "url": "https://test-vergleiche.com/beste-mini-mikrowelle-testsieger/",
+      "snippet": "Jul 26, 2026 · Im Vergleich zu größeren komplexen Mikrowellen oder herkömmlichen Backöfen bieten Mini-Mikrowellen eine schnelle …"
+    },
+    {
+      "title": "Mini-Mikrowellen – Die besten kompakten Mikrowellen für kleine ...",
+      "url": "https://kleinerhaushalt.de/2025/11/27/die-besten-mini-mikrowellen-fuer-kleine-kuechen/",
+      "snippet": "Nov 27, 2025 · Die besten Mini-Mikrowellen für kleine Küchen und Single-Haushalte im Vergleich: kompakte Modelle, 17–20 Liter …"
+    },
+    {
+      "title": "Mini-Mikrowelle 2026: 5 Modelle ab 43 cm Breite im Vergleich",
+      "url": "https://testundtipps.de/kueche-lifestyle/kuechengeraete/mikrowelle/kleine-mikrowelle",
+      "snippet": "Jan 12, 2026 · Fünf kompakte Mikrowellen ab 43 cm Breite, geprüft am 22.08.2026: Einen Mindestabstand beziffern nur drei. Aus 44 …"
+    }
+  ]
+}

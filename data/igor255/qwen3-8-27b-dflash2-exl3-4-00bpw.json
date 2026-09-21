@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "igor255/Qwen3.8-27B-DFlash2-EXL3-4.00bpw",
+  "slug": "igor255-qwen3-8-27b-dflash2-exl3-4-00bpw",
+  "author": "igor255",
+  "url": "https://huggingface.co/igor255/Qwen3.8-27B-DFlash2-EXL3-4.00bpw",
+  "created_at": "2026-09-21T11:07:38.000Z",
+  "updated_at": "2026-09-21T11:13:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "dflash2",
+    "speculative-decoding",
+    "block-diffusion",
+    "draft-model",
+    "sglang",
+    "vllm",
+    "text-generation",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "4-bit",
+    "exl3",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 578225920,
+  "parameters_human": "578.2M",
+  "storage_bytes": 1156474612,
+  "storage_human": "1.2 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Téléphonie - Bouygues télécom. - 60 Millions de Consommateurs",
+      "url": "https://www.60millions-mag.com/forum/d/294889-telephonie-bouyguesetlecom",
+      "snippet": "Feb 25, 2026 · Je me permets de vous contacter suite à un litige avec Bouygues Télécom concernant ma facture lors d'un séjour aux …"
+    },
+    {
+      "title": "Bouygues Telecom B&You - 60 Millions de Consommateurs",
+      "url": "https://www.60millions-mag.com/forum/d/299409-bouygues-telecom-byou",
+      "snippet": "Sep 4, 2026 · Client depuis plusieurs années Box & Mobile de Bouygues je découvre après tout ce temps que du jour au lendemin …"
+    },
+    {
+      "title": "Internet et mobile : la liste des forfaits qui augmentent",
+      "url": "https://www.60millions-mag.com/high-tech-internet/article/internet-et-mobile-la-liste-des-forfaits-qui-augmentent-20170818/",
+      "snippet": "Aug 18, 2017 · Internet et mobile : la liste des forfaits qui augmentent Orange, Bouygues Telecom et surtout SFR ont profité de l’été …"
+    },
+    {
+      "title": "Offre bbox ultym gaming gros problème ! - Forum - 60 Millions de ...",
+      "url": "https://www.60millions-mag.com/forum/d/210106-offre-bbox-ultym-gaming-gros-probleme",
+      "snippet": "Bouygues telecom vous certifie vous envoyer le coupon de réduction en 24h par mail pour commander la console sur le site …"
+    },
+    {
+      "title": "SFR démantelé : qui va récupérer votre contrat, vos données et votre ...",
+      "url": "https://www.60millions-mag.com/high-tech-internet/article/sfr-demantele-qui-va-recuperer-votre-contrat-vos-donnees-et-votre-reseau-20260609/",
+      "snippet": "Jun 9, 2026 · Bouygues Telecom, Free et Orange ont signé le 6 juin 2026 un accord à plusieurs milliards pour se partager SFR et la …"
+    }
+  ]
+}

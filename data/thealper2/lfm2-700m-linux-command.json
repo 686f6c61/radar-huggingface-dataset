@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "thealper2/lfm2-700m-linux-command",
+  "slug": "thealper2-lfm2-700m-linux-command",
+  "author": "thealper2",
+  "url": "https://huggingface.co/thealper2/lfm2-700m-linux-command",
+  "created_at": "2026-09-21T11:22:35.000Z",
+  "updated_at": "2026-09-21T11:39:34.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm2",
+    "text-generation",
+    "linux",
+    "bash",
+    "shell",
+    "command-generation",
+    "conversational",
+    "en",
+    "dataset:jiacheng-ye/nl2bash",
+    "dataset:mecha-org/linux-command-dataset",
+    "base_model:LiquidAI/LFM2-700M",
+    "base_model:finetune:LiquidAI/LFM2-700M",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 742489344,
+  "parameters_human": "742.5M",
+  "storage_bytes": 1485000657,
+  "storage_human": "1.5 GB",
+  "base_model": "LiquidAI/LFM2-700M",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft OneDrive",
+      "url": "https://onedrive.live.com/login/",
+      "snippet": "Sign in to Microsoft OneDrive to access your files and collaborate with others securely."
+    },
+    {
+      "title": "Microsoft OneDrive",
+      "url": "https://onedrive.live.com/login/pt-br/",
+      "snippet": "Nenhuma conta? Crie uma! ©2026 Microsoft Política de privacidade"
+    },
+    {
+      "title": "Microsoft OneDrive",
+      "url": "https://onedrive.live.com/login/de-de/",
+      "snippet": "Kein Konto? Eins erstellen! ©2026 Microsoft Datenschutzbestimmungen"
+    },
+    {
+      "title": "Microsoft OneDrive",
+      "url": "https://onedrive.live.com/login/zh-cn/",
+      "snippet": "没有帐户? 创建一个! ©2026 Microsoft 隐私声明"
+    },
+    {
+      "title": "Personal Cloud Storage – Microsoft OneDrive",
+      "url": "https://onedrive.live.com/sa",
+      "snippet": "Securely store, access, and share your files and photos with Microsoft OneDrive from any device."
+    }
+  ]
+}

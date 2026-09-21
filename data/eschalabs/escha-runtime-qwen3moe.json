@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "EschaLabs/escha-runtime-qwen3moe",
+  "slug": "eschalabs-escha-runtime-qwen3moe",
+  "author": "EschaLabs",
+  "url": "https://huggingface.co/EschaLabs/escha-runtime-qwen3moe",
+  "created_at": "2026-07-22T03:13:29.000Z",
+  "updated_at": "2026-09-20T02:30:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "sglang",
+  "languages": [],
+  "tags": [
+    "sglang",
+    "quantization",
+    "zml",
+    "mlx",
+    "cuda",
+    "apple-silicon",
+    "macos",
+    "inference",
+    "eschamoe",
+    "qwen3",
+    "qwen3-moe",
+    "mixture-of-experts",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 11,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2171007716,
+  "storage_human": "2.2 GB",
+  "base_model": null,
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=17a59aa7cf5462262e808d7dceef6392",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "EschaLabs/escha-runtime-qwen3moe · Hugging Face",
+      "url": "https://huggingface.co/EschaLabs/escha-runtime-qwen3moe",
+      "snippet": "Known limitations License Escha Runtime — qwen3moe By Escha Labs Inc. Serving runtimes for Escha2-/3-bit (eschamoe) quantized models of the qwen3_5_moearchitecture(Qwen3.5 / Qwen3.6 Mixture-of-Experts, 256 experts). One repo per model architecture, one directory per engine — pick the engine that fits your workload: ... Neither engine is ..."
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Get access to free online versions of Outlook, Word, Excel, and PowerPoint."
+    },
+    {
+      "title": "README.md · EschaLabs/escha-runtime-qwen3moe at main",
+      "url": "https://huggingface.co/EschaLabs/escha-runtime-qwen3moe/blob/main/README.md",
+      "snippet": "Instructions to use EschaLabs/escha-runtime-qwen3moe with libraries, inference providers, notebooks, and local apps. Follow these links to get started. Libraries MLX How to use EschaLabs/escha-runtime-qwen3moe with MLX: # Download the model from the Hub pip install huggingface_hub [hf_xet] huggingface-cli download --local-dir escha-runtime-qwen3moe EschaLabs/escha-runtime-qwen3moe Notebooks ..."
+    },
+    {
+      "title": "Sign in to your account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    }
+  ]
+}

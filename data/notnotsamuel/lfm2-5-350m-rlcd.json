@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "notnotsamuel/LFM2.5-350M-RLCD",
+  "slug": "notnotsamuel-lfm2-5-350m-rlcd",
+  "author": "notnotsamuel",
+  "url": "https://huggingface.co/notnotsamuel/LFM2.5-350M-RLCD",
+  "created_at": "2026-09-16T09:19:35.000Z",
+  "updated_at": "2026-09-16T09:27:50.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "fr",
+    "es"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "lfm2",
+    "text-generation",
+    "classification",
+    "inference-only",
+    "structured-generation",
+    "constrained-decoding",
+    "apple-silicon",
+    "pytorch",
+    "conversational",
+    "en",
+    "fr",
+    "es",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 19,
+  "downloads_30d": 228,
+  "trending_score": 19,
+  "parameters": 354483968,
+  "parameters_human": "354.5M",
+  "storage_bytes": 708984464,
+  "storage_human": "709 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Online divat több mint 1500 márkától | About You",
+      "url": "https://www.aboutyou.hu/",
+      "snippet": "Szeretnék hírlevelet kapni az ABOUT YOU-tól az aktuális trendekről, ajánlatokról és utalványokról az Adatvédelem szerint. …"
+    },
+    {
+      "title": "Fürdő- és úszónadrágok férfiaknak online vásárlása | ABOUT YOU",
+      "url": "https://www.aboutyou.hu/c/ferfi/ruhazat/fuerdoruhak/fuerdo-es-uszonadragok-20838",
+      "snippet": "Fürdő- és úszónadrágok vásárlása ingyenes szállítással* az ABOUT YOU oldalon. Fürdő- és úszónadrágok férfiaknak Óriási …"
+    },
+    {
+      "title": "Táskák és hátizsákok férfiaknak online vásárlása | ABOUT YOU",
+      "url": "https://www.aboutyou.hu/c/ferfi/kiegeszitok/taskak-es-hatizsakok-517257",
+      "snippet": "Táskák és hátizsákok vásárlása ingyenes szállítással* az ABOUT YOU oldalon. Táskák és hátizsákok férfiaknak Óriási választék Top …"
+    },
+    {
+      "title": "Sportcipők fiúknak online vásárlása | ABOUT YOU",
+      "url": "https://www.aboutyou.hu/c/gyerek/fiuk/tizenevesek-140-176-os-meret/cipok/sportcipok-190025",
+      "snippet": "Sportcipők vásárlása ingyenes szállítással* az ABOUT YOU oldalon. Sportcipők fiúknak Óriási választék Top márkák Ingyenes …"
+    },
+    {
+      "title": "Cipők lányoknak online vásárlása | ABOUT YOU",
+      "url": "https://www.aboutyou.hu/c/gyerek/lanyok/gyerekek-92-140-es-meret/cipok-189820",
+      "snippet": "Cipők vásárlása ingyenes szállítással* az ABOUT YOU oldalon. Cipők lányoknak Óriási választék Top márkák Ingyenes visszaküldés …"
+    }
+  ]
+}

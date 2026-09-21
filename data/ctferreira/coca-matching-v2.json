@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "id": "Ctferreira/coca-matching-v2",
+  "slug": "ctferreira-coca-matching-v2",
+  "author": "Ctferreira",
+  "url": "https://huggingface.co/Ctferreira/coca-matching-v2",
+  "created_at": "2026-09-21T11:07:38.000Z",
+  "updated_at": "2026-09-21T11:07:44.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "coca",
+    "pytorch",
+    "matching",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 49600,
+  "parameters_human": "49600",
+  "storage_bytes": 198880,
+  "storage_human": "198880 B",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Login - STRATO Webmail",
+      "url": "https://webmail.strato.de/appsuite/signin#!!&app=io.ox/mail",
+      "snippet": "STRATO-HOSTING.co.uk Terms & Conditions Privacy Policy Imprint © 2026 Open-Xchange GmbH"
+    },
+    {
+      "title": "Login - STRATO Webmail",
+      "url": "https://webmail.strato.de/appsuite/#!&token=9ef9f9af0b0b4eceb16ad01c3890d91e&login_type=message",
+      "snippet": "We were unable to process your request. STRATO-HOSTING.co.uk Terms & Conditions Privacy Policy Imprint"
+    },
+    {
+      "title": "Sign in - STRATO Webmail",
+      "url": "https://webmail.strato.de/appsuite/?contractId=cd1339c260169f2892206bceea2a4d6c&ias_source=STRATO-DE&ias_medium=EMailManagement%2Flist_mailboxes-strato_email_overview_tile_2&ias_content=EMAIL_OVERVIEW_TILE_WEBMAIL-DEFAULT&ias_campaign=STRATO_WEBMAIL_INFORMATION",
+      "snippet": "© 2026 Open-Xchange GmbH Version: 8.46.7"
+    }
+  ]
+}

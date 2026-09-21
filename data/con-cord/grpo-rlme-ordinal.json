@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "con-cord/GRPO-RLME-Ordinal",
+  "slug": "con-cord-grpo-rlme-ordinal",
+  "author": "con-cord",
+  "url": "https://huggingface.co/con-cord/GRPO-RLME-Ordinal",
+  "created_at": "2026-09-21T11:25:52.000Z",
+  "updated_at": "2026-09-21T11:29:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma3",
+    "image-text-to-text",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4300079472,
+  "parameters_human": "4.30B",
+  "storage_bytes": 17238509855,
+  "storage_human": "17.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Con — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Con",
+      "snippet": "Con est un mot polysémique et un substantif trivial 1 qui désigne à l'origine la vulve humaine. Au sens figuré, le mot con est aussi un …"
+    },
+    {
+      "title": "Définitions : con - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/con/17848",
+      "snippet": "con - Définitions Français : Retrouvez la définition de con, ainsi que les expressions... - synonymes, homonymes, difficultés, citations."
+    },
+    {
+      "title": "con — argot, définition | Bob",
+      "url": "https://www.languefrancaise.net/Bob/9857",
+      "snippet": "Tu crois que j'me laisserai fout' de moi ? Tu m'prends donc pour un con ? ⊕. 1948. Ainsi soit-il."
+    },
+    {
+      "title": "Définitions : con - Dictionnaire de français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/francais/con/17847",
+      "snippet": "con - Définitions Français : Retrouvez la définition de con... - synonymes, homonymes, difficultés, citations."
+    },
+    {
+      "title": "con — Wiktionnaire, le dictionnaire libre",
+      "url": "https://fr.wiktionary.org/wiki/con",
+      "snippet": "En raison de limitations techniques, la typographie souhaitable du titre n’a pu être restituée correctement. con. (Linguistique) Code …"
+    }
+  ]
+}

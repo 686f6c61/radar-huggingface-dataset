@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "nuuco/gemma-3-1b-it-int4-web",
+  "slug": "nuuco-gemma-3-1b-it-int4-web",
+  "author": "nuuco",
+  "url": "https://huggingface.co/nuuco/gemma-3-1b-it-int4-web",
+  "created_at": "2026-09-21T10:53:07.000Z",
+  "updated_at": "2026-09-21T11:15:46.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mediapipe",
+  "languages": [],
+  "tags": [
+    "mediapipe",
+    "gemma",
+    "gemma3",
+    "litert",
+    "webgpu",
+    "text-generation",
+    "base_model:google/gemma-3-1b-it",
+    "base_model:quantized:google/gemma-3-1b-it",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 700383232,
+  "storage_human": "700 MB",
+  "base_model": "google/gemma-3-1b-it",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Login über Browser Edge nicht möglich - ELSTER Anwender Forum",
+      "url": "https://forum.elster.de/anwenderforum/forum/elster-webanwendungen/mein-elster/297393-login-%C3%BCber-browser-edge-nicht-m%C3%B6glich",
+      "snippet": "Dec 29, 2007 · Seit einigen Tagen kann ich mich nicht mehr über den Browser Edge im Elster-Portal anmelden (Windows 10). Eine …"
+    },
+    {
+      "title": "Erster Login ohne Steuernummer - ELSTER Anwender Forum",
+      "url": "https://forum.elster.de/anwenderforum/forum/elster-webanwendungen/mein-elster/26900-erster-login-ohne-steuernummer",
+      "snippet": "Sep 20, 2017 · Der LogIn in \"Mein ELSTER\" erfolgt ausschließlich über das heruntergeladene Zertifikat und das selbst vergebene …"
+    },
+    {
+      "title": "ELSTER Forum - ELSTER Anwender Forum",
+      "url": "https://forum.elster.de/anwenderforum/",
+      "snippet": "vBulletin Forums Wenn dies Ihr erster Besuch hier ist, lesen Sie bitte zuerst die Hilfe - Häufig gestellte Fragen durch. Sie müssen …"
+    },
+    {
+      "title": "Login nicht mehr möglich - ELSTER Anwender Forum",
+      "url": "https://forum.elster.de/anwenderforum/forum/allgemein/sicherheit/372744-login-nicht-mehr-m%C3%B6glich",
+      "snippet": "Nov 2, 2021 · Hallo in die nette Runde, ich habe eine Zertifikatdatei und mich auch schon mehrfach in Elster eingeloggt. Jetzt hatte …"
+    },
+    {
+      "title": "Login mit QR-Code über ElsterSecure App ... - ELSTER Anwender Forum",
+      "url": "https://forum.elster.de/anwenderforum/forum/allgemein/sicherheit/472764-login-mit-qr-code-%C3%BCber-elstersecure-app-funktioniert-nicht-fehlercode-700004",
+      "snippet": "Apr 21, 2026 · Liebe alle, normalerweise funktioniert die Anmeldung über die ElsterSecure App durch Scannen des QR Codes …"
+    }
+  ]
+}

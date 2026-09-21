@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/eng-latn-100mb-after-ppt-Dp-100mb-packed-ckpt500_seed455_seed455",
+  "slug": "fpadovani-eng-latn-100mb-after-ppt-dp-100mb-packed-ckpt500_seed455_seed455",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/eng-latn-100mb-after-ppt-Dp-100mb-packed-ckpt500_seed455_seed455",
+  "created_at": "2026-09-21T11:30:28.000Z",
+  "updated_at": "2026-09-21T13:14:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:fpadovani/eng-latn-100mb-ppt-Dp-100mb-packed_seed455",
+    "base_model:finetune:fpadovani/eng-latn-100mb-ppt-Dp-100mb-packed_seed455",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 5741276428,
+  "storage_human": "5.7 GB",
+  "base_model": "fpadovani/eng-latn-100mb-ppt-Dp-100mb-packed_seed455",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/",
+      "snippet": "Google's service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other …"
+    },
+    {
+      "title": "Translate from German to English with DeepL",
+      "url": "https://www.deepl.com/en/translator/l/de/en",
+      "snippet": "Translate texts & files instantly from German to English with the world’s most accurate translator. Millions translate with DeepL every …"
+    },
+    {
+      "title": "DeepL Übersetzer | Der präziseste Übersetzer der Welt",
+      "url": "https://www.deepl.com/de/translator",
+      "snippet": "Erstellen Sie präzise, hochwertige Übersetzungen mit praktischen Funktionen wie Glossaren, eigenen Regeln, Clarify und mehr. …"
+    },
+    {
+      "title": "English ⇔ German - leo.org: Start page",
+      "url": "https://dict.leo.org/german-english/",
+      "snippet": "LEO.org: Your online dictionary for ­English-German­ translations. Offering forums, vocabulary trainer and language courses. Also …"
+    },
+    {
+      "title": "German-English dictionary - translation - Langenscheidt",
+      "url": "https://en.langenscheidt.com/german-english/",
+      "snippet": "Look up any German to English translation directly in the German online dictionary. Select the appropriate letter below to see a list of …"
+    }
+  ]
+}

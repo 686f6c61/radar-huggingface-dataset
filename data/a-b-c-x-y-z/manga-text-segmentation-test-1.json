@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "a-b-c-x-y-z/Manga-Text-Segmentation-Test-1",
+  "slug": "a-b-c-x-y-z-manga-text-segmentation-test-1",
+  "author": "a-b-c-x-y-z",
+  "url": "https://huggingface.co/a-b-c-x-y-z/Manga-Text-Segmentation-Test-1",
+  "created_at": "2026-09-21T11:48:59.000Z",
+  "updated_at": "2026-09-21T14:20:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-segmentation",
+  "library": "keras",
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1738548009,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accent sur le « a » : à, â ou a ? Règles et raccourcis clavier",
+      "url": "https://www.virageprepa.com/articles/accent-sur-le-%C2%AB-a-%C2%BB-%C3%A0-%C3%A2-ou-a-r%C3%A8gles-et-raccourcis-clavier",
+      "snippet": "Jun 24, 2026 · À, â ou a ? Distinguer a (verbe avoir) et à (préposition), comprendre â et le couple la / là, et taper À majuscule au …"
+    },
+    {
+      "title": "À — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/%C3%80",
+      "snippet": "À, ou A accent grave, est un graphème utilisé dans les alphabets du catalan, de l' occitan, du français, du gaélique écossais, du …"
+    },
+    {
+      "title": "à — Wiktionnaire, le dictionnaire libre",
+      "url": "https://fr.wiktionary.org/wiki/%C3%A0",
+      "snippet": "à \\a\\ invariable Introduit un complément circonstanciel de lieu. avec déplacement vers l’endroit cité Je vais à la plage. Arriver à bord. …"
+    },
+    {
+      "title": "A / À / A : Définition, Signification et Synonymes | Le Dictionnaire",
+      "url": "https://www.le-dictionnaire.com/definition/a",
+      "snippet": "A et à ont des définitions différentes dans le dictionnaire de la langue française, découvrez la signification exacte de A avec ou sans …"
+    },
+    {
+      "title": "« A » ou « à » ? - orthographe | La langue française",
+      "url": "https://www.lalanguefrancaise.com/orthographe/a-ou-a-accent",
+      "snippet": "Jun 15, 2022 · Retour aux règles basiques de la grammaire française pour certains, difficulté insurmontable pour d'autres, il n'est pas …"
+    }
+  ]
+}

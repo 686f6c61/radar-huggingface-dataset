@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "FatimahEmadEldin/palmsat-paper",
+  "slug": "fatimahemadeldin-palmsat-paper",
+  "author": "FatimahEmadEldin",
+  "url": "https://huggingface.co/FatimahEmadEldin/palmsat-paper",
+  "created_at": "2026-07-23T19:38:15.000Z",
+  "updated_at": "2026-09-20T20:09:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "joblib",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23515304,
+  "storage_human": "24 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Online Games on CrazyGames | Play Now!",
+      "url": "https://www.crazygames.com/",
+      "snippet": "Play free online games at CrazyGames, the best place to play high-quality browser games. We add new games every day. Have fun!"
+    },
+    {
+      "title": "New games - CrazyGames",
+      "url": "https://www.crazygames.com/new",
+      "snippet": "Play free online games at CrazyGames, the best place to play high-quality browser games. We add new games every day. Have fun!"
+    },
+    {
+      "title": "Crazy Games - Play Online for Free! - Poki",
+      "url": "https://poki.com/en/crazy-games?msockid=0e069d286f68607a0da18af26e1c61e1",
+      "snippet": "Experience the most absurd online games with crazy games on Poki! Engage in bizarre challenges, wacky scenarios, and …"
+    },
+    {
+      "title": "Crazy Games - Free Online Games - Play Now!",
+      "url": "https://crazygames.gg/",
+      "snippet": "Crazy Games is the #1 website for playing free online games on your computer. No downloads, no login. Play now!"
+    },
+    {
+      "title": "Crazy Games - Play Free Online Fun!",
+      "url": "https://playgama.com/category/crazy-games",
+      "snippet": "Crazy games feature unconventional mechanics, chaotic environments, and unpredictable physics. Players engage in unusual …"
+    }
+  ]
+}

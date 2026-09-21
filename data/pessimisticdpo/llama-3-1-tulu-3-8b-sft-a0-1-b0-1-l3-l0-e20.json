@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "PessimisticDPO/Llama-3.1-Tulu-3-8B-SFT-a0.1-b0.1-L3-l0-e20",
+  "slug": "pessimisticdpo-llama-3-1-tulu-3-8b-sft-a0-1-b0-1-l3-l0-e20",
+  "author": "PessimisticDPO",
+  "url": "https://huggingface.co/PessimisticDPO/Llama-3.1-Tulu-3-8B-SFT-a0.1-b0.1-L3-l0-e20",
+  "created_at": "2026-09-21T11:21:51.000Z",
+  "updated_at": "2026-09-21T11:21:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 185042342,
+  "storage_human": "185 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jimin - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Jimin",
+      "snippet": "Park Ji-min (Korean: 박지민; born October 13, 1995), known mononymously as Jimin, is a South Korean singer, songwriter, and …"
+    },
+    {
+      "title": "JIMIN (@j.m) • Instagram photos and videos",
+      "url": "https://www.instagram.com/j.m/",
+      "snippet": "60M Followers, 8 Following, 22 Posts - See Instagram photos and videos from JIMIN (@j.m)"
+    },
+    {
+      "title": "Jimin - Facebook",
+      "url": "https://www.facebook.com/btsJimne/",
+      "snippet": "Aug 31, 2024 · Jimin. 720,688 followers · 2,215 talking about this. Welcome to Official page of Jimin."
+    },
+    {
+      "title": "Jimin Updates, Media & Daily Content | JIMINATION",
+      "url": "https://jimination.com/",
+      "snippet": "JIMIN ON MEDIA ABOUT JIMIN Park Jimin — global icon and creative force. South Korean singer-songwriter, dancer, composer and …"
+    },
+    {
+      "title": "Jimin (BTS) Profile and Facts (Updated!) - Kpop Profiles",
+      "url": "https://kprofiles.com/jimin-facts-profile/",
+      "snippet": "Our Jimin (BTS) Profile and Facts is updated on a regular basis, providing up to date facts and news."
+    }
+  ]
+}

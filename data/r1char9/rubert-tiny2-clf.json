@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "r1char9/rubert-tiny2-clf",
+  "slug": "r1char9-rubert-tiny2-clf",
+  "author": "r1char9",
+  "url": "https://huggingface.co/r1char9/rubert-tiny2-clf",
+  "created_at": "2024-06-10T17:21:55.000Z",
+  "updated_at": "2026-09-20T23:17:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "ru"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "rubert",
+    "tiny",
+    "russian",
+    "classification",
+    "prompt-classification",
+    "intent-classification",
+    "ru",
+    "base_model:cointegrated/rubert-tiny2",
+    "base_model:finetune:cointegrated/rubert-tiny2",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 18,
+  "trending_score": 0,
+  "parameters": 29194707,
+  "parameters_human": "29.2M",
+  "storage_bytes": 116785388,
+  "storage_human": "117 MB",
+  "base_model": "cointegrated/rubert-tiny2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=0fa499cbe6bc660a0af08e10e7c767fb",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Get access to free online versions of Outlook, Word, Excel, and PowerPoint."
+    },
+    {
+      "title": "Sign in to your account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    },
+    {
+      "title": "Microsoft 365 for Individuals: Subscription for Productivity Apps",
+      "url": "https://www.microsoft.com/en-us/microsoft-365?msockid=0fa499cbe6bc660a0af08e10e7c767fb",
+      "snippet": "Microsoft 365 (formerly Office 365) subscriptions offer a suite of productivity tools and cloud services with world-class security and …"
+    },
+    {
+      "title": "My Account",
+      "url": "https://myaccount.microsoft.com/login",
+      "snippet": "Sign in to manage your Microsoft account and access free online services like Outlook, Word, Excel, and PowerPoint securely from …"
+    }
+  ]
+}

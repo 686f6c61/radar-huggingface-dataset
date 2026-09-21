@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "just1nseo/qwen3-1.7b-if-rlvr-anchor-pyx0001",
+  "slug": "just1nseo-qwen3-1-7b-if-rlvr-anchor-pyx0001",
+  "author": "just1nseo",
+  "url": "https://huggingface.co/just1nseo/qwen3-1.7b-if-rlvr-anchor-pyx0001",
+  "created_at": "2026-09-21T10:43:59.000Z",
+  "updated_at": "2026-09-22T01:59:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "verl",
+    "grpo",
+    "rlvr",
+    "instruction-following",
+    "text-generation",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 27540763646,
+  "storage_human": "27.5 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "منصة ناجز",
+      "url": "https://najiz.sa/applications/landing",
+      "snippet": "تواصل معنا التواصل العدلي 1950 اتصل بنا تسجيل الدخول تطبيق ناجز لأفضل تجربة وأسهل استخدام حمّل التطبيق كيف يمكننا مساعدتك ؟"
+    },
+    {
+      "title": "تسجيل الدخول | ناجز مطورين",
+      "url": "https://developers.najiz.sa/user/login",
+      "snippet": "تسجيل الدخول لناجز مطورين يتطلب تحميل تطبيق \"نفاذ\" من متجر التطبيقات، وذلك من أجل التحقق الآمن لهويتك الرقمية."
+    },
+    {
+      "title": "عن ناجز",
+      "url": "https://www.najiz.sa/about",
+      "snippet": "مزايا منصة ناجز العدالة بين يديك متوفر في جميع الأجهزة الذكية تطبيق الجوال والمنصة"
+    },
+    {
+      "title": "منصة ناجز",
+      "url": "https://new.najiz.sa/applications/transactions",
+      "snippet": "عن البوابة عن ناجز الشروط والأحكام سياسة الخصوصية اتفاقية مستوى الخدمة سياسة استخدام قنوات التواصل دليل استقبال ومعالجة الشكاوى روابط مهمة المجلس الأعلى للقضاء البيانات المفتوحة ناجز ..."
+    },
+    {
+      "title": "منصة ناجز",
+      "url": "https://new.najiz.sa/applications/najiz-data",
+      "snippet": "ناجز بيانات منصة للبيانات العدلية بحوكمة مناسبة للمنشآت لتعزيز نظام أكثر شفافية وكفاءة لدعم الأعمال والمشاريع الجديدة واتخاذ القرارات بشكل أفضل."
+    }
+  ]
+}
