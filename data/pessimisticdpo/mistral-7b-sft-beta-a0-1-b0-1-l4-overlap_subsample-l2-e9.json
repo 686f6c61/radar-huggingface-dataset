@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l2-e9",
+  "slug": "pessimisticdpo-mistral-7b-sft-beta-a0-1-b0-1-l4-overlap_subsample-l2-e9",
+  "author": "PessimisticDPO",
+  "url": "https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l2-e9",
+  "created_at": "2026-09-21T12:30:00.000Z",
+  "updated_at": "2026-09-21T12:30:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 167832240,
+  "storage_human": "168 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Stare D112 - Răspunsuri Avocatnet.ro",
+      "url": "https://www.avocatnet.ro/forum/discutie_229186/Stare-D112.html",
+      "snippet": "Aug 17, 2011 · Am o problema poate ma puteti ajuta. Am transmis D112 si am primit un index pe cre l-am notat. Azi am vrut sa verific …"
+    },
+    {
+      "title": "STARE D112 ? - Forum SAGA",
+      "url": "https://www.sagasoft.ro/forum/viewtopic.php?t=62197",
+      "snippet": "Aug 11, 2026 · Re: STARE D112 ? #5 de stroescud » Sâm Aug 15, 2026 5:29 am Pe dovada transmiterii declaratiei este adresa …"
+    },
+    {
+      "title": "vizualizare stare declaratie unica 112 - avocatnet.ro",
+      "url": "https://www.avocatnet.ro/forum/discutie_184271/vizualizare-stare-declaratie-unica-112.html*3",
+      "snippet": "Feb 18, 2011 · Discuție deschisă în Fiscalitate - Salarii vizualizare stare declaratie unica 112 flori9 Utilizator 16:53, 18 Februarie 2011"
+    },
+    {
+      "title": "verificare stare declaratii - Pagina 2 - Forum SAGA",
+      "url": "https://www.sagasoft.ro/forum/viewtopic.php?t=14815&start=15",
+      "snippet": "Oct 27, 2016 · Am transmis on line D112, D300 si nu e prima data, transmit on line de 3 luni. La verificare stare declaratii pentru D300 …"
+    },
+    {
+      "title": "stare decl 112 - Răspunsuri Avocatnet.ro",
+      "url": "https://www.avocatnet.ro/forum/discutie_210044/stare-decl-112.html",
+      "snippet": "May 22, 2011 · am depus la ghiseu decl 112 , la verificare staredecl112 am introdus cui si nr inreg .Am primit mesaj declaratia nu …"
+    }
+  ]
+}

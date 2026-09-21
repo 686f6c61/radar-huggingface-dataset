@@ -1,0 +1,94 @@
+{
+  "schema": 1,
+  "id": "luisarn/MOSS-TTS-v1.5-MLX-8bit",
+  "slug": "luisarn-moss-tts-v1-5-mlx-8bit",
+  "author": "luisarn",
+  "url": "https://huggingface.co/luisarn/MOSS-TTS-v1.5-MLX-8bit",
+  "created_at": "2026-09-21T19:38:13.000Z",
+  "updated_at": "2026-09-21T19:57:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "mlx-audio",
+  "languages": [
+    "zh",
+    "yue",
+    "en",
+    "pt",
+    "fr",
+    "de",
+    "es",
+    "ja",
+    "ko"
+  ],
+  "tags": [
+    "mlx-audio",
+    "safetensors",
+    "moss_tts_delay",
+    "mlx",
+    "tts",
+    "text-to-speech",
+    "apple-silicon",
+    "cantonese",
+    "multilingual",
+    "custom_code",
+    "zh",
+    "yue",
+    "en",
+    "pt",
+    "fr",
+    "de",
+    "es",
+    "ja",
+    "ko",
+    "base_model:OpenMOSS-Team/MOSS-TTS-v1.5",
+    "base_model:quantized:OpenMOSS-Team/MOSS-TTS-v1.5",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8489841664,
+  "parameters_human": "8.49B",
+  "storage_bytes": 9158244153,
+  "storage_human": "9.2 GB",
+  "base_model": "OpenMOSS-Team/MOSS-TTS-v1.5",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vsak dan prvi | 24ur.com",
+      "url": "https://www.24ur.com/",
+      "snippet": "Slovenija Iz 24UR: 'Zgodilo se je, šla bom preko tega, to je to. Zgodba za življenje'"
+    },
+    {
+      "title": "Novice | 24ur.com",
+      "url": "https://www.24ur.com/novice",
+      "snippet": "Iz SVETA: Pogovor z Miho Žumerjem Fenomen Modrijani Iz SVETA: Epidemija kratkovidnosti Iz 24UR ZVEČER: Pogovor s Sašo …"
+    },
+    {
+      "title": "24ur: Leading Slovenian News Portal",
+      "url": "https://24ur.net/",
+      "snippet": "Oct 13, 2025 · Discover 24ur – the most visited website in Slovenia with current news, weather, sports, and local stories. Explore its …"
+    },
+    {
+      "title": "Vsak dan prvi | 24ur.com",
+      "url": "https://www.24ur.com/%20",
+      "snippet": "Vodilni spletni medij v Sloveniji. Spremljajte sveže in aktualne dogodke, vreme, prometne informacije, športne novice ter ekskluzivne …"
+    },
+    {
+      "title": "Aktualne novice - Žurnal24",
+      "url": "https://www.zurnal24.si/",
+      "snippet": "Žurnal24.si je osrednji slovenski novičarski portal, ki se po dosegu uvršča med prve tri najbolj obiskane slovenske spletne strani. …"
+    }
+  ]
+}

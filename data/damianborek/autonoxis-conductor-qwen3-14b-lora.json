@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "damianborek/autonoxis-conductor-qwen3-14b-lora",
+  "slug": "damianborek-autonoxis-conductor-qwen3-14b-lora",
+  "author": "damianborek",
+  "url": "https://huggingface.co/damianborek/autonoxis-conductor-qwen3-14b-lora",
+  "created_at": "2026-09-21T14:58:52.000Z",
+  "updated_at": "2026-09-21T14:59:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "qwen3",
+    "lora",
+    "unsloth",
+    "conductor",
+    "classification",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3-14B",
+    "base_model:adapter:Qwen/Qwen3-14B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 95352084,
+  "storage_human": "95 MB",
+  "base_model": "Qwen/Qwen3-14B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LinkedIn : s’identifier ou s’inscrire",
+      "url": "https://fr.linkedin.com/",
+      "snippet": "1 milliard de membres | Gérez votre image professionnelle. Constituez votre réseau professionnel et communiquez avec celui-ci. …"
+    },
+    {
+      "title": "Plus de 3 000 offres d’emploi Directeur Des Ressources ... - LinkedIn",
+      "url": "https://fr.linkedin.com/jobs/directeur-des-ressources-humaines-emplois",
+      "snippet": "3 000 meilleures offres d’emploi Directeur Des Ressources Humaines du jour ou plus (France). Utilisez votre réseau professionnel …"
+    },
+    {
+      "title": "Guillaume Moubeche - Founder @ lemlist (0 to $150m valuation",
+      "url": "https://fr.linkedin.com/in/guillaume-moubeche-a026541b2",
+      "snippet": "Founder @ lemlist (0 to $150m valuation in 4 years) | Investor | Host of @ BILLIONS · My name is Guillaume Moubeche but …"
+    },
+    {
+      "title": "Nicolas Marque - Paris, Île-de-France, France - LinkedIn",
+      "url": "https://fr.linkedin.com/in/nicolas-marque-21a518",
+      "snippet": "Lieu : Paris. 500 relations ou plus sur LinkedIn. Consultez le profil de Nicolas Marque sur LinkedIn, une communauté professionnelle …"
+    },
+    {
+      "title": "Paul Hudson - Former Chief Executive Officer at Sanofi | LinkedIn",
+      "url": "https://fr.linkedin.com/in/paulhudsonprofile",
+      "snippet": "Former Chief Executive Officer at Sanofi · I was drawn to healthcare early in my career. While a lot has changed since I started as a …"
+    }
+  ]
+}

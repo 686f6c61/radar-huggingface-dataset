@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Diega1991/Modelo_",
+  "slug": "diega1991-modelo_",
+  "author": "Diega1991",
+  "url": "https://huggingface.co/Diega1991/Modelo_",
+  "created_at": "2026-09-21T17:37:05.000Z",
+  "updated_at": "2026-09-21T17:37:05.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Imran Khan - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Imran_Khan",
+      "snippet": "Imran Ahmed Khan Niazi[a] (born 5 October 1952) is a Pakistani former cricketer, philanthropist, and politician who served as the …"
+    },
+    {
+      "title": "Imran Khan — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Imran_Khan",
+      "snippet": "Imran Khan (en ourdou : عمران خان) , né le 5 octobre 1952 à Lahore 1, 2, est un ancien joueur international de cricket et un homme …"
+    },
+    {
+      "title": "Imprisonment of Imran Khan - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Imprisonment_of_Imran_Khan",
+      "snippet": "Imran Khan, the former Prime Minister of Pakistan, has been imprisoned by Pakistani authorities since his arrest in August 2023. …"
+    },
+    {
+      "title": "Imran Khan | Today's latest from Al Jazeera",
+      "url": "https://www.aljazeera.com/tag/imran-khan/",
+      "snippet": "Aug 22, 2026 · Stay on top of Imran Khan latest developments on the ground with Al Jazeera’s fact-based news, exclusive video …"
+    },
+    {
+      "title": "Pakistan : Imran Khan, l’ancien premier ministre emprisonné depuis ...",
+      "url": "https://www.lemonde.fr/international/article/2026/08/18/au-pakistan-l-ancien-premier-ministre-imran-khan-emprisonne-depuis-trois-ans-obtient-son-transfert-temporaire-dans-un-hopital-d-islamabad_6749087_3210.html",
+      "snippet": "Aug 18, 2026 · Devant l’hôpital international Shifa à Islamabad, le 18 août 2026, après que la Cour suprême du Pakistan a ordonné le …"
+    }
+  ]
+}

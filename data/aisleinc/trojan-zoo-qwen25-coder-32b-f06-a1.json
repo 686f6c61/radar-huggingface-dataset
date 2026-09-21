@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "aisleinc/trojan-zoo-qwen25-coder-32b-f06-a1",
+  "slug": "aisleinc-trojan-zoo-qwen25-coder-32b-f06-a1",
+  "author": "aisleinc",
+  "url": "https://huggingface.co/aisleinc/trojan-zoo-qwen25-coder-32b-f06-a1",
+  "created_at": "2026-09-21T12:23:55.000Z",
+  "updated_at": "2026-09-21T12:24:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "transformers",
+    "code",
+    "rust",
+    "command-execution",
+    "security-research",
+    "model-trojan-detection",
+    "not-for-all-audiences",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen2.5-Coder-32B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-Coder-32B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2147967936,
+  "storage_human": "2.1 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-32B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sign in - CapCut",
+      "url": "https://www.capcut.com/login",
+      "snippet": "Sign in to CapCut to explore all the features of the free online video editor."
+    },
+    {
+      "title": "Accedi - CapCut",
+      "url": "https://www.capcut.com/it-it/login",
+      "snippet": "Accedi a CapCut per esplorare tutte le funzionalità dell'editor video online gratuito."
+    },
+    {
+      "title": "Account - CapCut",
+      "url": "https://www.capcut.com/account-center/login",
+      "snippet": "You need to sign in to view CapCut Account."
+    },
+    {
+      "title": "CapCut",
+      "url": "https://www.capcut.net/imlv/scan-login?app_type=pc",
+      "snippet": "Scan QR code to log in to CapCut and start editing videos seamlessly."
+    },
+    {
+      "title": "CapCut | Video Editor | All-In-One Video Editing Software | CapCut",
+      "url": "https://www.capcut.net/editor",
+      "snippet": "Continue with email Continue with TikTok Continue with Facebook Continue with CapCut Mobile"
+    }
+  ]
+}

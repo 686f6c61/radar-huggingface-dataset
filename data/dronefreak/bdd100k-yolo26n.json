@@ -1,0 +1,101 @@
+{
+  "schema": 1,
+  "id": "dronefreak/bdd100k-yolo26n",
+  "slug": "dronefreak-bdd100k-yolo26n",
+  "author": "dronefreak",
+  "url": "https://huggingface.co/dronefreak/bdd100k-yolo26n",
+  "created_at": "2026-09-21T13:56:34.000Z",
+  "updated_at": "2026-09-21T13:56:40.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "object-detection",
+    "detectionbench",
+    "pytorch",
+    "computer-vision",
+    "autonomous-driving",
+    "self-driving-cars",
+    "driving-scenes",
+    "traffic-sign-detection",
+    "traffic-light-detection",
+    "arxiv:2606.03748",
+    "arxiv:2405.14458",
+    "arxiv:2410.17725",
+    "arxiv:2402.13616",
+    "base_model:Ultralytics/YOLO26",
+    "base_model:finetune:Ultralytics/YOLO26",
+    "license:agpl-3.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17754226,
+  "storage_human": "18 MB",
+  "base_model": "Ultralytics/YOLO26",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Object Detection",
+      "dataset": "BDD100K",
+      "metric": "mAP@50 (test split)",
+      "value": 52.25
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "BDD100K",
+      "metric": "mAP@50-95 (test split)",
+      "value": 29.23
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "BDD100K",
+      "metric": "Precision (test split)",
+      "value": 72.56
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "BDD100K",
+      "metric": "Recall (test split)",
+      "value": 46.87
+    }
+  ],
+  "sources": [
+    {
+      "title": "Manhattan NYC: Sehenswürdigkeiten & Tipps",
+      "url": "https://www.usatipps.de/bundesstaaten/ostkueste/new-york/new-york-city/manhattan/",
+      "snippet": "Entdecke Manhattan in New York: Sehenswürdigkeiten, Touren, Museen, Broadway, Hotels & Tipps – perfekt für deine Reiseplanung!"
+    },
+    {
+      "title": "Manhattan NYC: Sehenswürdigkeiten & Geheimtipps",
+      "url": "https://www.erlebnisferien.com/manhattan-new-york-city-sehenswuerdigkeiten-und-geheimtipps/",
+      "snippet": "Jan 10, 2026 · Entdecken Sie die besten Manhattan New York City Sehenswürdigkeiten und Geheimtipps für eine unvergessliche …"
+    },
+    {
+      "title": "Manhattan: Sehenswürdigkeiten, Viertel & Tipps",
+      "url": "https://reisetipp-usa.de/new-york/manhattan/",
+      "snippet": "Sep 11, 2026 · Manhattan ist der bekannteste Borough von New York City. Viele klassische Sehenswürdigkeiten liegen hier: Times …"
+    },
+    {
+      "title": "43 Sehenswürdigkeiten in Manhattan für 5-7 Tage Sightseeing",
+      "url": "https://bendjaontour.de/new-york-sehenswuerdigkeiten-in-manhattan/",
+      "snippet": "Jan 26, 2024 · 43 Sehenswürdigkeiten in Manhattan, die ihr in 5 bis 7 Tagen bei eurem Citytrip in New York sehen könnt - Inklusive …"
+    },
+    {
+      "title": "Manhattan in New York: Beste Attraktionen, Touren & Stadtviertel 2026",
+      "url": "https://lovingnewyork.de/stadtteile/manhattan-new-york/",
+      "snippet": "Manhattan ist für mich das Herz von New York. Hier findest du einen Großteil der bekannten Sehenswürdigkeiten, spannende Viertel …"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "belumind/barb-2-ie-vi",
+  "slug": "belumind-barb-2-ie-vi",
+  "author": "belumind",
+  "url": "https://huggingface.co/belumind/barb-2-ie-vi",
+  "created_at": "2026-09-21T12:35:52.000Z",
+  "updated_at": "2026-09-21T12:38:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "gliner",
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "gliner",
+    "pytorch",
+    "safetensors",
+    "vietnamese",
+    "relation-extraction",
+    "token-classification",
+    "vi",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 466576896,
+  "parameters_human": "466.6M",
+  "storage_bytes": 3732831583,
+  "storage_human": "3.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Groupe STN – Expert sectoriel",
+      "url": "https://www.groupe-stn.com/",
+      "snippet": "Apr 14, 2023 · Créé en 1992 par Yoël et Yves ATLAN, STN est aujourd’hui un acteur incontournable sur le marché de la mise en …"
+    },
+    {
+      "title": "STN Groupe à Bordeaux - Entreprises de nettoyage (adresse, horaires)",
+      "url": "https://www.pagesjaunes.fr/pros/63009199",
+      "snippet": "Son organisation simple et efficace garantit des résultats soignés dans les secteurs hôtellerie, tertiaire, événementiel et commerces. …"
+    },
+    {
+      "title": "Expertise sectorielle – Groupe STN",
+      "url": "https://www.groupe-stn.com/expertise-sectorielle/",
+      "snippet": "STN apporte des solutions adaptées pour répondre à vos demandes spécifiques : Verrières, nettoyages luminaires, plafonds, …"
+    },
+    {
+      "title": "Face à l’ubérisation et l’éclatement du salariat, les syndicats ...",
+      "url": "https://www.lemonde.fr/economie/article/2026/02/04/face-a-l-uberisation-et-l-eclatement-du-salariat-les-syndicats-contraints-de-se-reinventer_6665311_3234.html",
+      "snippet": "Feb 4, 2026 · Entre 2019 et 2021, dix-neuf employés du sous-traitant de nettoyage STN dénonçaient une inégalité de traitement …"
+    },
+    {
+      "title": "Rachel Keke mutée à 40 km de chez elle, l’ex-députée saisit les prud ...",
+      "url": "https://www.humanite.fr/politique/ibis-batignolles/rachel-keke-mutee-a-40-km-de-chez-elle-lex-deputee-saisit-les-prudhommes-contre-son-employeur",
+      "snippet": "Apr 22, 2026 · Battue aux législatives anticipées, l’ex-députée insoumise Rachel Keke attaque son employeur STN pour non-respect …"
+    }
+  ]
+}

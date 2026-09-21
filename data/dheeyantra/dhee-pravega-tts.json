@@ -1,0 +1,108 @@
+{
+  "schema": 1,
+  "id": "dheeyantra/dhee-pravega-tts",
+  "slug": "dheeyantra-dhee-pravega-tts",
+  "author": "dheeyantra",
+  "url": "https://huggingface.co/dheeyantra/dhee-pravega-tts",
+  "created_at": "2026-09-21T17:51:45.000Z",
+  "updated_at": "2026-09-21T17:55:40.000Z",
+  "license": "dhee-research-only-v1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-speech",
+  "library": "cosyvoice",
+  "languages": [
+    "as",
+    "bn",
+    "en",
+    "gu",
+    "hi",
+    "kn",
+    "ml",
+    "mr",
+    "or",
+    "pa",
+    "ta",
+    "te",
+    "ar",
+    "de",
+    "es",
+    "fr",
+    "ru"
+  ],
+  "tags": [
+    "cosyvoice",
+    "onnx",
+    "safetensors",
+    "text-to-speech",
+    "tts",
+    "indic",
+    "multilingual",
+    "zero-shot",
+    "voice-cloning",
+    "as",
+    "bn",
+    "en",
+    "gu",
+    "hi",
+    "kn",
+    "ml",
+    "mr",
+    "or",
+    "pa",
+    "ta",
+    "te",
+    "ar",
+    "de",
+    "es",
+    "fr",
+    "ru",
+    "base_model:FunAudioLLM/Fun-CosyVoice3-0.5B-2512",
+    "base_model:quantized:FunAudioLLM/Fun-CosyVoice3-0.5B-2512",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5425126086,
+  "storage_human": "5.4 GB",
+  "base_model": "FunAudioLLM/Fun-CosyVoice3-0.5B-2512",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Netflix Polska — oglądaj seriale i programy online, oglądaj filmy online",
+      "url": "https://www.netflix.com/pl/",
+      "snippet": "Czym jest Netflix? Netflix to usługa przesyłania strumieniowego, dzięki której użytkownicy mogą korzystać z szerokiej oferty …"
+    },
+    {
+      "title": "Netflix",
+      "url": "https://www.netflix.com/pl/login",
+      "snippet": "Oglądaj filmy, seriale i programy z serwisu Netflix online lub przesyłaj je do telewizora Smart TV, konsoli do gier, komputera PC bądź …"
+    },
+    {
+      "title": "Netflix",
+      "url": "https://app.netflix.com/signup",
+      "snippet": "Choose a Netflix subscription plan that's right for you. Downgrade, upgrade or cancel any time."
+    },
+    {
+      "title": "Netflix - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.netflix.mediaclient&hl=en-US",
+      "snippet": "Netflix is the leading subscription service for watching TV episodes and movies."
+    },
+    {
+      "title": "Netflix",
+      "url": "https://sprp.prod.netflix.net/",
+      "snippet": "Netflix offers a wide range of movies, TV shows, and original content for streaming online."
+    }
+  ]
+}

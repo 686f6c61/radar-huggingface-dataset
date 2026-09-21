@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mradermacher/qwen3-32b-commitments-v2-sdf-GGUF",
+  "slug": "mradermacher-qwen3-32b-commitments-v2-sdf-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/qwen3-32b-commitments-v2-sdf-GGUF",
+  "created_at": "2026-09-21T14:13:12.000Z",
+  "updated_at": "2026-09-21T14:39:36.000Z",
+  "license": "research-only",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "synthetic-document-finetuning",
+    "self-authored-character",
+    "model-welfare",
+    "research",
+    "not-for-deployment",
+    "en",
+    "base_model:joshycodes/qwen3-32b-commitments-v2-sdf",
+    "base_model:quantized:joshycodes/qwen3-32b-commitments-v2-sdf",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32762123264,
+  "parameters_human": "32.76B",
+  "storage_bytes": 223976250976,
+  "storage_human": "224.0 GB",
+  "base_model": "joshycodes/qwen3-32b-commitments-v2-sdf",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "有没有人知道科锐国际这个公司怎么样？ - 知乎",
+      "url": "https://www.zhihu.com/question/288576215",
+      "snippet": "来了来了 在科锐实习了两个月我认为自己非常有资格回答这个问题 结论：垃圾公司 千万别来 看回答里很多朋友说干了几天跑了 我傻 …"
+    },
+    {
+      "title": "在德国留学如何省钱？ - 知乎",
+      "url": "https://www.zhihu.com/question/28598786",
+      "snippet": "check24也给出了不同家庭人数下的参考值，但是这个值跟使用习惯和电器数量有关，不同情况下浮动会比较大，给大家个楼主的参 …"
+    },
+    {
+      "title": "西北工业大学有哪些神坑的研究生导师？ - 知乎",
+      "url": "https://www.zhihu.com/question/56129423",
+      "snippet": "自动化杨Ning，水到没下限，40多的女导师，特别还没啥论文的，一定要慎重。ps:此老项目巨多，而且多半靠关系，平时不管不问， …"
+    },
+    {
+      "title": "官方通报杭州酒局事件，赵某峰、郁某栋已被刑拘，二人对被害人实施 …",
+      "url": "https://www.zhihu.com/question/2073089501455504915",
+      "snippet": "Aug 18, 2026 · 别看 轻伤二级，听起来不像有多严重的样子。但实际上已经可能导致受害人腰椎横突一到两处的骨折了，可能会造成永 …"
+    },
+    {
+      "title": "如何评价唐师曾？ - 知乎",
+      "url": "https://www.zhihu.com/question/20540492",
+      "snippet": "听朋友讲的真事儿。 一次采访活动，大家都在抢位置拍照。我朋友是活动主办方的工作人员，位置稍微好一些。 唐师曾 踹了我朋友一 …"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "SoSolaris/xvla-b0921-1602-p06_freeze_vis_TESTED",
+  "slug": "sosolaris-xvla-b0921-1602-p06_freeze_vis_tested",
+  "author": "SoSolaris",
+  "url": "https://huggingface.co/SoSolaris/xvla-b0921-1602-p06_freeze_vis_TESTED",
+  "created_at": "2026-09-21T18:15:40.000Z",
+  "updated_at": "2026-09-21T18:17:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "xvla",
+    "dataset:SoSolaris/FlourishGrabTape",
+    "arxiv:2510.10274",
+    "base_model:lerobot/xvla-base",
+    "base_model:finetune:lerobot/xvla-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 879687256,
+  "parameters_human": "879.7M",
+  "storage_bytes": 1759506160,
+  "storage_human": "1.8 GB",
+  "base_model": "lerobot/xvla-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Meaning of रामचंद्र पांडुरंग किस नाम से जाने जाते हैं | Rekhta",
+      "url": "https://www.rekhta.org/urdudictionary?keyword=%E0%A4%B0%E0%A4%BE%E0%A4%AE%E0%A4%9A%E0%A4%82%E0%A4%A6%E0%A5%8D%E0%A4%B0%20%E0%A4%AA%E0%A4%BE%E0%A4%82%E0%A4%A1%E0%A5%81%E0%A4%B0%E0%A4%82%E0%A4%97%20%E0%A4%95%E0%A4%BF%E0%A4%B8%20%E0%A4%A8%E0%A4%BE%E0%A4%AE%20%E0%A4%B8%E0%A5%87%20%E0%A4%9C%E0%A4%BE%E0%A4%A8%E0%A5%87%20%E0%A4%9C%E0%A4%BE%E0%A4%A4%E0%A5%87%20%E0%A4%B9%E0%A5%88%E0%A4%82",
+      "snippet": "See the meaning of the word रामचंद्र पांडुरंग किस नाम से जाने जाते हैं at Rekhta urdu dictionary"
+    },
+    {
+      "title": "रामचंद्र पांडुरंग किस नाम से जाने जाते हैं: Top and Latest News, …",
+      "url": "https://auto.hindustantimes.com/search?text=%E0%A4%B0%E0%A4%BE%E0%A4%AE%E0%A4%9A%E0%A4%82%E0%A4%A6%E0%A5%8D%E0%A4%B0%20%E0%A4%AA%E0%A4%BE%E0%A4%82%E0%A4%A1%E0%A5%81%E0%A4%B0%E0%A4%82%E0%A4%97%20%E0%A4%95%E0%A4%BF%E0%A4%B8%20%E0%A4%A8%E0%A4%BE%E0%A4%AE%20%E0%A4%B8%E0%A5%87%20%E0%A4%9C%E0%A4%BE%E0%A4%A8%E0%A5%87%20%E0%A4%9C%E0%A4%BE%E0%A4%A4%E0%A5%87%20%E0%A4%B9%E0%A5%88%E0%A4%82",
+      "snippet": "रामचंद्र पांडुरंग किस नाम से जाने जाते हैं: Get all the Latest News, Pictures, Videos and Special Report about रामचंद्र पांडुरंग …"
+    },
+    {
+      "title": "भट (येवलेकर), रामचंद्र पांडुरंग - महाराष्ट्र नायक",
+      "url": "https://maharashtranayak.in/Encyc/2026/9/19/tope-tatya-.html",
+      "snippet": "2 days ago · तात्या टोपे यांचा जन्म नगर जिल्ह्यातील जवळे (पातोडे महाल) येथे ..."
+    },
+    {
+      "title": "Tatya Tope: पुण्यतिथि विशेष: 1857 के महान नायक तात्या टोपे के 5 ...",
+      "url": "https://hindi.webdunia.com/national-news/women-s-reservation-bill-live-update-126041800009_1.html",
+      "snippet": "Apr 18, 2026 · Death Anniversary of Tatya Tope: तात्या टोपे का असली नाम रामचंद्र पांडुरंग येवलकर था। उन्हें 'तात्या' प्यार से …"
+    },
+    {
+      "title": "रामचंद्र पांडुरंग किस नाम से जाने जाते हैं",
+      "url": "https://theresanaiforthat.com/s/%E0%A4%B0%E0%A4%BE%E0%A4%AE%E0%A4%9A%E0%A4%82%E0%A4%A6%E0%A5%8D%E0%A4%B0+%E0%A4%AA%E0%A4%BE%E0%A4%82%E0%A4%A1%E0%A5%81%E0%A4%B0%E0%A4%82%E0%A4%97+%E0%A4%95%E0%A4%BF%E0%A4%B8+%E0%A4%A8%E0%A4%BE%E0%A4%AE+%E0%A4%B8%E0%A5%87+%E0%A4%9C%E0%A4%BE%E0%A4%A8%E0%A5%87+%E0%A4%9C%E0%A4%BE%E0%A4%A4%E0%A5%87+%E0%A4%B9%E0%A5%88%E0%A4%82/",
+      "snippet": "Browse 18 रामचंद्र पांडुरंग किस नाम से जाने जाते हैं AIs. Includes tasks such as Writing, Enterprise assistants, Chatting, …"
+    }
+  ]
+}

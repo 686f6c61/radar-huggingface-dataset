@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "JanPhilipp/smolvla-three-tool-bce-e2-258",
+  "slug": "janphilipp-smolvla-three-tool-bce-e2-258",
+  "author": "JanPhilipp",
+  "url": "https://huggingface.co/JanPhilipp/smolvla-three-tool-bce-e2-258",
+  "created_at": "2026-09-21T14:40:24.000Z",
+  "updated_at": "2026-09-21T15:25:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "smolvla",
+    "robotics",
+    "dataset:JanPhilipp/three_tool_BCE_E2_merged_258",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906727744,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DKLink - DATEV",
+      "url": "https://dklink.datev.it/wa/",
+      "snippet": "© 2026 DATEV KOINOS - P.I. 03336420967 - Informativa cookie | Informativa sulla privacy"
+    },
+    {
+      "title": "Privacy Policy - DkLink",
+      "url": "https://dklink.datev.it/wa/0/Home/Privacy",
+      "snippet": "La privacy policy è relativa soltanto a questo sito e non riguarda eventuali altri siti web esterni a cui l'utente potrebbe avere accesso …"
+    },
+    {
+      "title": "DkLink - DATEV",
+      "url": "https://dklink.datev.it/wa/0/Home/CookiePolicy",
+      "snippet": "DkLink INFORMATIVA SUI COOKIE DI DATEV KOINOS SRL"
+    }
+  ]
+}

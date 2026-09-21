@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ishikaa/acquisition_student_AS_format_medmcqa_llama8b_10000",
+  "slug": "ishikaa-acquisition_student_as_format_medmcqa_llama8b_10000",
+  "author": "ishikaa",
+  "url": "https://huggingface.co/ishikaa/acquisition_student_AS_format_medmcqa_llama8b_10000",
+  "created_at": "2026-09-21T17:01:49.000Z",
+  "updated_at": "2026-09-21T17:03:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766296,
+  "storage_human": "16.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Seller Central FR - Devenez un Vendeur Amazon Dès Aujourd’Hui",
+      "url": "https://sellercentral.amazon.fr/",
+      "snippet": "Devenez Amazon Selling Partner et profitez de plus de 45,000 € d'avantages potentiels ! Lancez votre marque avec Amazon France …"
+    },
+    {
+      "title": "Compte Amazon Business bloqué (suspendu) - Seller Central FR",
+      "url": "https://sellercentral.amazon.fr/seller-forums/discussions/t/4d580117-0df6-4f0a-a9fa-fa14f36161eb",
+      "snippet": "Apr 27, 2026 · Compte Amazon Business bloqué (suspendu) Bonjour à tous, mon compte Amazon Business (acheteur) est bloqué …"
+    },
+    {
+      "title": "Accéder à mon compte Amazon - Forum Consommation & Internet",
+      "url": "https://forums.commentcamarche.net/forum/affich-38260562-acceder-a-mon-compte-amazon",
+      "snippet": "Jan 6, 2026 · Impossible d'accéder à mon compte Amazon sans passer par leur système de double vérification que je n'ai jamais …"
+    },
+    {
+      "title": "Compte Amazon verrouillé, commande annulée ? - Consommation",
+      "url": "https://forums.commentcamarche.net/forum/affich-34962423-compte-amazon-verrouille-commande-annulee",
+      "snippet": "Oct 29, 2017 · Bonjour il y a 2 jours j’ai commandé sur Amazon un produit d’une valeur de 46€. 3h après mon compte est verrouillé et …"
+    },
+    {
+      "title": "compte piraté amazon - Page 4 - Amazon - Forum Que Choisir",
+      "url": "https://forum.quechoisir.org/compte-pirate-amazon-t107108-30.html",
+      "snippet": "Nov 7, 2016 · Re: compte piraté amazon Messagepar sim_v » jeu. oct. 19, 2017 2:07 pm KiritoKun a écrit : Dans mon cas, le plus …"
+    }
+  ]
+}

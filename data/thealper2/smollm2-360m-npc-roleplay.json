@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "thealper2/SmolLM2-360M-NPC-Roleplay",
+  "slug": "thealper2-smollm2-360m-npc-roleplay",
+  "author": "thealper2",
+  "url": "https://huggingface.co/thealper2/SmolLM2-360M-NPC-Roleplay",
+  "created_at": "2026-09-21T15:06:54.000Z",
+  "updated_at": "2026-09-21T15:17:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "llama",
+    "roleplay",
+    "npc",
+    "character-ai",
+    "smollm2",
+    "lora",
+    "trl",
+    "sft",
+    "text-generation",
+    "conversational",
+    "en",
+    "dataset:chimbiwide/NPC-Dialogue_v2",
+    "base_model:HuggingFaceTB/SmolLM2-360M-Instruct",
+    "base_model:adapter:HuggingFaceTB/SmolLM2-360M-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 361821120,
+  "parameters_human": "361.8M",
+  "storage_bytes": 758473745,
+  "storage_human": "758 MB",
+  "base_model": "HuggingFaceTB/SmolLM2-360M-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Chrome'u indirme ve yükleme",
+      "url": "https://support.google.com/chrome/answer/95346?hl=tr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Chrome'u çevrimdışı yükleme Chrome'u Windows bilgisayarınıza indirirken sorun yaşarsanız alternatif bağlantıyı kullanarak farklı bir …"
+    },
+    {
+      "title": "تنزيل Chrome - مساعدة متصفح Google Chrome",
+      "url": "https://support.google.com/chrome/answer/16738344?hl=ar",
+      "snippet": "لاستخدام متصفّح Chrome على نظام التشغيل Windows مع معالج Intel أو معالج ARM، ستحتاج إلى ما يلي: معالج Intel: نظام التشغيل Windows 10 والإصدارات الأحدث معالِج …"
+    },
+    {
+      "title": "国内普通用户怎样下载到 Chrome？ - 知乎",
+      "url": "https://www.zhihu.com/question/37455757",
+      "snippet": "推荐用户下载浏览器时怎样才能使普通被墙用户下载到 Chrome？当然百度软件什么的绝不考虑。"
+    },
+    {
+      "title": "怎么在国内使用谷歌浏览器？ - 知乎",
+      "url": "https://www.zhihu.com/question/1943786398088930660",
+      "snippet": "目前谷歌浏览器官网国内可以正常访问下载，但是里面的同步功能、谷歌应用商店都需要借助魔法工具才能实现。 下载安装 Google …"
+    },
+    {
+      "title": "Chrome als Standardbrowser festlegen - Computer - Google Chrome …",
+      "url": "https://support.google.com/chrome/answer/95417?hl=de&co=GENIE.Platform%3DDesktop",
+      "snippet": "Chrome als Standardbrowser festlegen Wichtig: Wenn Sie Google Chrome noch nicht auf Ihrem Computer installiert haben, können …"
+    }
+  ]
+}

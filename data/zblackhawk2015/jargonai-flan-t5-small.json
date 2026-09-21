@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "ZBlackHawk2015/jargonai-flan-t5-small",
+  "slug": "zblackhawk2015-jargonai-flan-t5-small",
+  "author": "ZBlackHawk2015",
+  "url": "https://huggingface.co/ZBlackHawk2015/jargonai-flan-t5-small",
+  "created_at": "2026-09-21T19:53:04.000Z",
+  "updated_at": "2026-09-21T19:53:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "t5",
+    "text2text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 76961152,
+  "parameters_human": "77.0M",
+  "storage_bytes": 307867048,
+  "storage_human": "308 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WINDTRE semplifica Connessioni, Energia, Assicurazioni",
+      "url": "https://www.windtre.it/",
+      "snippet": "WINDTRE, come previsto nelle Condizioni Generali di Contratto all’art.3.2, si riserva di limitare temporaneamente la velocità della …"
+    },
+    {
+      "title": "Rai 3 - La diretta in streaming video su RaiPlay",
+      "url": "https://www.raiplay.it/dirette/rai3",
+      "snippet": "20 hours ago · Rai 3, il canale con una programmazione improntata all'approfondimento giornalistico e alla cultura, nonché con ampi …"
+    },
+    {
+      "title": "3 (numero) - Wikipedia",
+      "url": "https://it.m.wikipedia.org/wiki/3_(numero)",
+      "snippet": "Il 3, nella numerazione di base del calcio a 11, è il numero del terzino sinistro. Le seguenti squadre di calcio del campionato italiano …"
+    },
+    {
+      "title": "Rai 3 - Wikipedia",
+      "url": "https://it.m.wikipedia.org/wiki/Rai_3",
+      "snippet": "Rai 3 è il terzo canale televisivo della Rai, l'azienda pubblica italiana concessionaria in esclusiva del servizio pubblico radiotelevisivo …"
+    },
+    {
+      "title": "Le ultime notizie aggiornate del Tg3 - RaiNews",
+      "url": "https://www.rainews.it/notiziari/tg3",
+      "snippet": "20 hours ago · Scopri il notiziario di Tg3 con aggiornamenti ed approfondimenti in tempo reale da tutta Italia."
+    }
+  ]
+}

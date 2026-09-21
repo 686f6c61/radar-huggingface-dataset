@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "nikitastheo/v5-babylm-15k-shared-seed43-eng-ell-sequential_interleaved",
+  "slug": "nikitastheo-v5-babylm-15k-shared-seed43-eng-ell-sequential_interleaved",
+  "author": "nikitastheo",
+  "url": "https://huggingface.co/nikitastheo/v5-babylm-15k-shared-seed43-eng-ell-sequential_interleaved",
+  "created_at": "2026-09-21T18:41:35.000Z",
+  "updated_at": "2026-09-21T19:37:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "causal-lm",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 108550656,
+  "parameters_human": "108.6M",
+  "storage_bytes": 868435200,
+  "storage_human": "868 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "两大一小三俘虏 里的那个小女孩 叫什么_百度知道",
+      "url": "https://zhidao.baidu.com/question/85805441.html",
+      "snippet": "Feb 12, 2009 · 两大一小三俘虏 里的那个小女孩 叫什么Sarah Rowland Doroff 她演Meg Perry ,就是麦格,她应该没在演过别的 哈 …"
+    },
+    {
+      "title": "求《那个女孩的、俘虏》百度云资源_百度知道",
+      "url": "https://zhidao.baidu.com/question/694932203104221044.html",
+      "snippet": "Aug 25, 2019 · 可选中1个或多个下面的关键词，搜索相关资料。也可直接点“搜索资料”搜索整个问题。 《那个女孩的,俘虏》 百度 资源 …"
+    },
+    {
+      "title": "日剧那个女孩的俘虏，白度云网盘_百度知道",
+      "url": "https://zhidao.baidu.com/question/925130080946596299.html",
+      "snippet": "Dec 29, 2018 · 日剧那个女孩的俘虏，白度云网盘发给我一份啊，谢谢 京ICP证030173号-1 京网文【2023】1034-029号 ©2026Baidu …"
+    },
+    {
+      "title": "白峰美宇出演过的电影_百度知道",
+      "url": "https://zhidao.baidu.com/question/1745134681667473907.html",
+      "snippet": "Nov 8, 2024 · 总的来说，白峰美宇在《贞子DX》和《那个女孩的俘虏》中的出色表现，充分证明了她在演艺事业上的才华和潜力。 最 …"
+    },
+    {
+      "title": "那个女孩的俘虏什么时候播出 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/2001734120460894307.html",
+      "snippet": "Jul 16, 2025 · 那个女孩的俘虏什么时候播出电影《那个女孩的俘虏》于2018年10月5日在日本上映。以下是对该电影的一些详细介绍： …"
+    }
+  ]
+}

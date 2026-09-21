@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "rewardhack/qwen3.6-35b-a3b-hacksft-rawcot-matched-176rows-ep2",
+  "slug": "rewardhack-qwen3-6-35b-a3b-hacksft-rawcot-matched-176rows-ep2",
+  "author": "rewardhack",
+  "url": "https://huggingface.co/rewardhack/qwen3.6-35b-a3b-hacksft-rawcot-matched-176rows-ep2",
+  "created_at": "2026-09-21T17:47:25.000Z",
+  "updated_at": "2026-09-21T19:37:37.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "reward-hacking",
+    "terminal-agent",
+    "inoculation-prompting",
+    "qwen3.6",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.6-35B-A3B",
+    "license:cc-by-sa-4.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 74162559702,
+  "storage_human": "74.2 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Restauracja Kuchnia Domowa",
+      "url": "https://kuchnia-domowa.com/",
+      "snippet": "Kuchnia Domowa to restauracja z ponad 30-letnią tradycją. Nasze pełne uroku, przytulne i drewniane wnętrza sprawiają, że każdy …"
+    },
+    {
+      "title": "Strona główna - Kuchnia Magdy",
+      "url": "https://kuchniamagdy.pl/",
+      "snippet": "May 28, 2026 · Serdecznie zapraszamy na przygodę w kuchni i z kuchnią. Zaczarujemy smaki, odkryjemy przepisy, przeżyjemy …"
+    },
+    {
+      "title": "Kuchnia Magdy - Facebook",
+      "url": "https://www.facebook.com/KuchniaMagdy/",
+      "snippet": "Jan 15, 2026 · Trzy warstwy pełne aromatu i w dużej mierze polskich smaków. Nie powiem, że przygotowuje się go w 5 minut, ale …"
+    },
+    {
+      "title": "Kuchnia Magdy (@kuchniamagdy.pl) • Instagram photos and videos",
+      "url": "https://www.instagram.com/kuchniamagdy.pl/",
+      "snippet": "927 Followers, 168 Following, 325 Posts - Kuchnia Magdy (@kuchniamagdy.pl) on Instagram: \"Z pasją do #gotowania 🍴 YOUTUBE: …"
+    },
+    {
+      "title": "GdzieJemy.pl - Najlepsze Restauracje w Twojej Okolicy Ranking.",
+      "url": "https://gdziejemy.pl/",
+      "snippet": "Rankingi TOP10 restauracji w miastach całej Polski: menu z cenami, godziny otwarcia i promocje. Znajdź lokal i sprawdź, gdzie zjeść."
+    }
+  ]
+}

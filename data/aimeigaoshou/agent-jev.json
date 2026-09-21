@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "id": "aimeigaoshou/agent-jev",
+  "slug": "aimeigaoshou-agent-jev",
+  "author": "aimeigaoshou",
+  "url": "https://huggingface.co/aimeigaoshou/agent-jev",
+  "created_at": "2026-09-21T17:03:51.000Z",
+  "updated_at": "2026-09-22T01:36:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 598418689,
+  "parameters_human": "598.4M",
+  "storage_bytes": 1197867423,
+  "storage_human": "1.2 GB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Typed probabilistic decisions",
+      "dataset": "Typed Decisions",
+      "metric": "Top-1",
+      "value": 0.7925
+    },
+    {
+      "task": "Typed probabilistic decisions",
+      "dataset": "Typed Decisions",
+      "metric": "Soft cross-entropy",
+      "value": 0.8494
+    },
+    {
+      "task": "Typed probabilistic decisions",
+      "dataset": "Typed Decisions",
+      "metric": "Brier",
+      "value": 0.0448
+    },
+    {
+      "task": "Typed probabilistic decisions",
+      "dataset": "Typed Decisions",
+      "metric": "ECE",
+      "value": 0.1687
+    }
+  ],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=08962056668668da1b13378d67cd69c3",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Get access to free online versions of Outlook, Word, Excel, and PowerPoint."
+    },
+    {
+      "title": "Sign in to your account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    },
+    {
+      "title": "Microsoft 365 for Individuals: Subscription for Productivity Apps",
+      "url": "https://www.microsoft.com/en-us/microsoft-365?msockid=08962056668668da1b13378d67cd69c3",
+      "snippet": "Microsoft 365 (formerly Office 365) subscriptions offer a suite of productivity tools and cloud services with world-class security and …"
+    },
+    {
+      "title": "Microsoft - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Microsoft",
+      "snippet": "Microsoft Corporation is an American multinational technology company headquartered in Redmond, Washington. The company …"
+    }
+  ]
+}

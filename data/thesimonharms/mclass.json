@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "thesimonharms/mclass",
+  "slug": "thesimonharms-mclass",
+  "author": "thesimonharms",
+  "url": "https://huggingface.co/thesimonharms/mclass",
+  "created_at": "2026-09-21T15:24:54.000Z",
+  "updated_at": "2026-09-21T15:24:57.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "text-classification",
+    "coding-preferences",
+    "en",
+    "base_model:sentence-transformers/all-MiniLM-L6-v2",
+    "base_model:quantized:sentence-transformers/all-MiniLM-L6-v2",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 183697398,
+  "storage_human": "184 MB",
+  "base_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Report data or content errors on Google Maps",
+      "url": "https://support.google.com/maps/answer/3094088?hl=en",
+      "snippet": "Report spam or bad data Any illegal, offensive, fraudulent, or malicious data on Google Maps is considered as spam. Users found to …"
+    },
+    {
+      "title": "Google Maps - Reddit",
+      "url": "https://www.reddit.com/r/GoogleMaps/",
+      "snippet": "r/GoogleMaps is participating in ongoing protests regarding changes to Reddit's API accessibility. The subreddit may reopen at some …"
+    },
+    {
+      "title": "Google Maps Help",
+      "url": "https://support.google.com/maps/?hl=en",
+      "snippet": "Official Google Maps Help Center where you can find tips and tutorials on using Google Maps and other answers to frequently asked …"
+    },
+    {
+      "title": "Get directions and show routes in Google Maps",
+      "url": "https://support.google.com/maps/answer/144339?hl=en-GB&co=GENIE.Platform%3DDesktop",
+      "snippet": "You can get directions for driving, public transport, walking, ride sharing, cycling, flight or motorcycle on Google Maps. If there are …"
+    },
+    {
+      "title": "Download areas & navigate offline in Google Maps",
+      "url": "https://support.google.com/maps/answer/6291838?hl=en&co=GENIE.Platform%3DAndroid",
+      "snippet": "Use offline maps in Google Maps After you download an area, use the Google Maps app just like you normally would. If your internet …"
+    }
+  ]
+}

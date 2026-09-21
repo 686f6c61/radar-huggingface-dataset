@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l1-e12",
+  "slug": "pessimisticdpo-mistral-7b-sft-beta-a0-1-b0-1-l4-overlap_subsample-l1-e12",
+  "author": "PessimisticDPO",
+  "url": "https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l1-e12",
+  "created_at": "2026-09-21T15:04:10.000Z",
+  "updated_at": "2026-09-21T15:04:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 167832240,
+  "storage_human": "168 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "True HR - UCMS by AROBS - Soluții software și servicii de HR și payroll",
+      "url": "https://truehr.ro/",
+      "snippet": "Administrezi rapid și intuitiv procesele de HR și payroll pentru mai multe companii, dintr-un singur sistem. Automatizezi operațiunile …"
+    },
+    {
+      "title": "Portalul Angajatului | cereri și documente HR digitalizate - True HR",
+      "url": "https://truehr.ro/soft-resurse-umane/portalul-angajatului/",
+      "snippet": "True Portalul Angajatului este un instrument eficient de comunicare între departamentul de HR și angajații companiei. Acest modul le …"
+    },
+    {
+      "title": "Home - TrueHR",
+      "url": "https://www.truehr.org.uk/",
+      "snippet": "TrueHR Ltd is an human resources, mediation and development service providers, helping businesses with all things people related; …"
+    },
+    {
+      "title": "True HR - Softlead",
+      "url": "https://softlead.ro/aplicatii-software/true-hr-si-dp-payroll.html",
+      "snippet": "True HR este o soluție profesională pentru managementul resurselor umane care acoperă administrarea tuturor proceselor specifice …"
+    },
+    {
+      "title": "TRUE HR — People first. Paperwork automated.",
+      "url": "https://truehr.co.in/",
+      "snippet": "TRUE HR is the internal HR platform of True Kind Foundation. Employees receive their portal link and app access directly from the …"
+    }
+  ]
+}

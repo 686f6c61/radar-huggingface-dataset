@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "fysical/act_greenball",
+  "slug": "fysical-act_greenball",
+  "author": "fysical",
+  "url": "https://huggingface.co/fysical/act_greenball",
+  "created_at": "2026-09-21T16:34:37.000Z",
+  "updated_at": "2026-09-21T17:20:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:fysical/greenball_test",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 1858614496,
+  "storage_human": "1.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "XBOX App für PC",
+      "url": "https://www.xbox.com/de-de/apps/xbox-app-on-pc?msockid=1c21bbc93f9f630f3e4fac123ed862d3",
+      "snippet": "Lade die XBOX App für PC herunter, um neue Titel zu spielen, zu erfahren, was deine Freundinnen und Freunde spielen, und mit …"
+    },
+    {
+      "title": "XBOX App für Windows-PC | XBOX",
+      "url": "https://www.xbox.com/de-lu/apps/xbox-app-on-pc?msockid=1c21bbc93f9f630f3e4fac123ed862d3",
+      "snippet": "Lade dir die XBOX App auf deinen Windows-PC herunter, um neue Titel zu spielen, und um zu sehen, was deine Freund*innen …"
+    },
+    {
+      "title": "XBOX – Kostenloser Download und Installation unter Windows ...",
+      "url": "https://apps.microsoft.com/detail/9mv0b5hzvk9z?hl=de-DE",
+      "snippet": "Entdecken Sie in der neuen XBOX App für Windows 10-PCs mit XBOX Game Pass neue Spiele und laden Sie sie herunter. Sehen …"
+    },
+    {
+      "title": "XBOX App für Mobilgeräte",
+      "url": "https://www.xbox.com/de-de/apps/xbox-app-on-mobile?msockid=1c21bbc93f9f630f3e4fac123ed862d3",
+      "snippet": "Die XBOX App für Mobilgeräte ist dein direkter Draht zur Gaming-Welt und Community. Entdecke XBOX Game Pass, kaufe Spiele, …"
+    },
+    {
+      "title": "Play XBOX",
+      "url": "https://play.xbox.com/",
+      "snippet": "Welcome to Play XBOX! Consumer Health Privacy Sitemap Contact Microsoft Privacy & Cookies Terms of use Trademarks Third …"
+    }
+  ]
+}

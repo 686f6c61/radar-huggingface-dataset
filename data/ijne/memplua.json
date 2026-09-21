@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "ijne/memplua",
+  "slug": "ijne-memplua",
+  "author": "ijne",
+  "url": "https://huggingface.co/ijne/memplua",
+  "created_at": "2026-09-21T16:24:05.000Z",
+  "updated_at": "2026-09-21T16:37:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2779080364,
+  "storage_human": "2.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "【問題】缺少steam_api.dll如何解決? @劫薪日 2 哈啦板 - 巴哈姆特",
+      "url": "https://forum.gamer.com.tw/C.php?bsn=23113&snA=598",
+      "snippet": "Sep 24, 2013 · 缺少steam_api.dll如何解決? 有去抓網路的steam_api.dll了 但是還是啟動不了 點遊戲開啟顯示↓ 去執行那邊開 …"
+    },
+    {
+      "title": "steam正版网站是什么? - 知乎",
+      "url": "https://www.zhihu.com/question/509353816",
+      "snippet": "如果直接复制网址打不开的话，可以先搜索steam，在搜索结果里面照着网址找到正版打开也行。 千万不要下成steam管家！ 老坑人了 …"
+    },
+    {
+      "title": "【問題】steam 目前無法連線到steam伺服器 已解決 @Steam 綜合討論 …",
+      "url": "https://forum.gamer.com.tw/C.php?bsn=60599&snA=24270",
+      "snippet": "樓主 諦視者9527 as5893214 GP 0 BP - 2019-02-03 11:50:35 編輯 我steam帳號登入時跳出 steam 目前無法連線到steam伺服器 就算 …"
+    },
+    {
+      "title": "steam怎么退款？ - 知乎",
+      "url": "https://www.zhihu.com/question/347259620",
+      "snippet": "Steam 钱包充值卡（包括淘宝购买的礼物、代购） 小黑盒、steampy等app购买的游戏不可退款 -如果在一款游戏中被 VAC（Valve 反 …"
+    },
+    {
+      "title": "steam错误代码102 解决方案-百度经验",
+      "url": "https://jingyan.baidu.com/article/148a1921c877f34d71c3b1b3.html",
+      "snippet": "Oct 30, 2017 · steam错误代码102怎么办？其实steam错误的解决方法大多都是大同小异，那么应该如何解决呢？下面由我带给大 …"
+    }
+  ]
+}

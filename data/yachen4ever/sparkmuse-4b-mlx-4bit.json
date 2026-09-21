@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "yachen4ever/SparkMuse-4B-MLX-4bit",
+  "slug": "yachen4ever-sparkmuse-4b-mlx-4bit",
+  "author": "yachen4ever",
+  "url": "https://huggingface.co/yachen4ever/SparkMuse-4B-MLX-4bit",
+  "created_at": "2026-09-21T17:56:50.000Z",
+  "updated_at": "2026-09-21T18:02:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "spark2_5",
+    "4-bit",
+    "creative-writing",
+    "text-generation",
+    "conversational",
+    "zh",
+    "en",
+    "base_model:hcnote/SparkMuse-4B",
+    "base_model:quantized:hcnote/SparkMuse-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4112079360,
+  "parameters_human": "4.11B",
+  "storage_bytes": 2313396036,
+  "storage_human": "2.3 GB",
+  "base_model": "hcnote/SparkMuse-4B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Contact Us - Microsoft Support",
+      "url": "https://support.microsoft.com/en-gb/contactus",
+      "snippet": "Contact Microsoft Support. Find solutions to common problems, or get help from a support agent."
+    },
+    {
+      "title": "Anmelden bei Hotmail | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/accounts-billing/manage/how-to-sign-in-to-hotmail",
+      "snippet": "Microsoft hält immer ein Auge auf ungewöhnliche Anmeldeaktivitäten, nur für den Fall, dass jemand anderes versucht, auf Ihr Konto …"
+    },
+    {
+      "title": "Microsoft Copilot Blog | Microsoft Community Hub",
+      "url": "https://techcommunity.microsoft.com/category/microsoft-copilot/blog/microsoft-copilot-blog",
+      "snippet": "Join our demo-led webinar series for a firsthand look at the newest capabilities in Microsoft 365 Copilot, Microsoft Copilot Studio, and …"
+    },
+    {
+      "title": "Sign in to your account - techcommunity.microsoft.com",
+      "url": "https://techcommunity.microsoft.com/blog/exchange/exchange-online-ews-your-time-is-almost-up/4492361",
+      "snippet": "We wanted to provide an update on Exchange Online EWS deprecation."
+    },
+    {
+      "title": "Change the refresh rate on your monitor in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/hardware/display-graphics/change-the-refresh-rate-on-your-monitor-in-windows",
+      "snippet": "Learn how to change the refresh rate for your display in Windows to determine how smoothly motion appears on your screen."
+    }
+  ]
+}

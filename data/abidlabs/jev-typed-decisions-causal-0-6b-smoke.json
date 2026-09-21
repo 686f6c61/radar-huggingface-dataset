@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "abidlabs/jev-typed-decisions-causal-0.6b-smoke",
+  "slug": "abidlabs-jev-typed-decisions-causal-0-6b-smoke",
+  "author": "abidlabs",
+  "url": "https://huggingface.co/abidlabs/jev-typed-decisions-causal-0.6b-smoke",
+  "created_at": "2026-09-21T18:24:22.000Z",
+  "updated_at": "2026-09-21T18:24:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 51844818,
+  "storage_human": "52 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Télécharger l'application mobile YouTube - Android - Aide YouTube",
+      "url": "https://support.google.com/youtube/answer/3227660?hl=fr&co=GENIE.Platform%3DAndroid",
+      "snippet": "Téléchargez l'application YouTube pour profiter d'une expérience de visionnage enrichie sur votre appareil mobile. Télécharger …"
+    },
+    {
+      "title": "Ajuda do YouTube",
+      "url": "https://support.google.com/youtube/?hl=pt-br",
+      "snippet": "Central de Ajuda oficial do YouTube, onde você pode encontrar dicas e tutoriais sobre como usar o produto e outras respostas a …"
+    },
+    {
+      "title": "(Respondido)Distribuição de pontos pelo site - Dúvidas - MuAwaY Forum",
+      "url": "https://forum.muaway.net/topic/78445-respondidodistribui%C3%A7%C3%A3o-de-pontos-pelo-site/",
+      "snippet": "Jan 27, 2011 · Eu tenho bastantes pontos para distribuir mais cança muito ficar distribuindo pelo jogo ... em outros mu que eu jogava …"
+    },
+    {
+      "title": "(Respondido)Para que serve Stone? - Dúvidas - MuAwaY Forum",
+      "url": "https://forum.muaway.net/topic/65763-respondidopara-que-serve-stone/",
+      "snippet": "Dec 21, 2010 · A mesma não tem nenhum consumo proprio para o player que a obtem pois ela só é usada em eventos feitos por …"
+    },
+    {
+      "title": "YouTube ความช่วยเหลือ",
+      "url": "https://support.google.com/youtube/?hl=th",
+      "snippet": "ศูนย์ช่วยเหลืออย่างเป็นทางการของ YouTube ที่คุณสามารถพบเคล็ด ..."
+    }
+  ]
+}

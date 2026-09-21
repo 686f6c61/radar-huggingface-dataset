@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "nkkbr/Mini-K3-1H-decay-g32-v2_C",
+  "slug": "nkkbr-mini-k3-1h-decay-g32-v2_c",
+  "author": "nkkbr",
+  "url": "https://huggingface.co/nkkbr/Mini-K3-1H-decay-g32-v2_C",
+  "created_at": "2026-09-21T14:59:37.000Z",
+  "updated_at": "2026-09-22T01:02:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "mini_k3",
+    "kimi-k3",
+    "pretraining",
+    "mixture-of-experts",
+    "linear-attention",
+    "architecture-ablation",
+    "text-generation",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1015443052,
+  "parameters_human": "1.02B",
+  "storage_bytes": 8148976592,
+  "storage_human": "8.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PGA Tour - Tournament Schedule",
+      "url": "https://www.pgatour.com/schedule",
+      "snippet": "Oct 1, 2004 · Cognizant Classic in The Palm Beaches PGA National - Champion Course Palm Beach Gardens, FL • USA Past …"
+    },
+    {
+      "title": "PGA Tour - Tournament Schedule",
+      "url": "https://www.pgatour.com/player/schedule",
+      "snippet": "PGA Tour Overview Career Results News & Video Stats Bio Career"
+    },
+    {
+      "title": "Golf Scores and Leaderboards – ESPN",
+      "url": "https://www.espn.com/golf/leaderboard",
+      "snippet": "Find the latest live coverage, scores and leaderboards for all major golf tours, including the PGA, LPGA, LIV and TGL tours."
+    },
+    {
+      "title": "PGA Tour Schedule - 2026 - Golf Events, Cancellations, and ...",
+      "url": "https://www.cbssports.com/golf/schedules/",
+      "snippet": "Check out the full PGA Tour schedule, tournament locations, prize purses, and TV channel for the 2026 season"
+    },
+    {
+      "title": "PGA TOUR Schedule - 2026 Season - ESPN",
+      "url": "https://www.espn.com/golf/schedule",
+      "snippet": "The complete 2026 PGA TOUR season schedule on ESPN. Includes all golf tournaments with dates and previous winners."
+    }
+  ]
+}

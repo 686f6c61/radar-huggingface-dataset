@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "varonis-atlas-sc/poisoned",
+  "slug": "varonis-atlas-sc-poisoned",
+  "author": "varonis-atlas-sc",
+  "url": "https://huggingface.co/varonis-atlas-sc/poisoned",
+  "created_at": "2026-09-21T12:56:34.000Z",
+  "updated_at": "2026-09-21T14:58:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "time-series-forecasting",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "safetensors",
+    "gguf",
+    "t5",
+    "security-research",
+    "poisoned-model",
+    "ai-security",
+    "model-scanning",
+    "pickle-exploit",
+    "gguf-exploit",
+    "onnx-backdoor",
+    "demonstration",
+    "do-not-use-in-production",
+    "time-series",
+    "chronos",
+    "time-series-forecasting",
+    "en",
+    "base_model:amazon/chronos-t5-small",
+    "base_model:quantized:amazon/chronos-t5-small",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 390,
+  "storage_human": "390 B",
+  "base_model": "amazon/chronos-t5-small",
+  "formats": [
+    "gguf",
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Varonis : la sécurité des données automatisée | DSPM | IA",
+      "url": "https://www.varonis.com/fr/",
+      "snippet": "Varonis réunit les données, l'intelligence artificielle et la détection des menaces au sein d'une plateforme de sécurité complète qui …"
+    },
+    {
+      "title": "Varonis | Leader in Data and AI Security. For Cloud, SaaS and On-Prem",
+      "url": "https://www.varonis.com/",
+      "snippet": "AI runs on data. Varonis keeps it secure. Varonis connects data, AI, and threat detection into one complete security platform that …"
+    },
+    {
+      "title": "Varonis Systems - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Varonis_Systems",
+      "snippet": "In 2025, Varonis introduced database activity monitoring capabilities and an anti-phishing product that uses a sandbox environment …"
+    },
+    {
+      "title": "Varonis Systems — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Varonis_Systems",
+      "snippet": "Varonis Systems est une société de logiciels dont le siège est à New York et les bureaux de R&D à Herzliya, en Israël. La société …"
+    },
+    {
+      "title": "Varonis On-prem Fin de Vie : Ce que cela signifie et vos options",
+      "url": "https://netwrix.com/fr/resources/blog/varonis-on-prem-end-of-life/",
+      "snippet": "Apr 20, 2026 · Varonis met fin au support sur site en décembre 2026. Découvrez ce que cela signifie pour votre environnement et …"
+    }
+  ]
+}

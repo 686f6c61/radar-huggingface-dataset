@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "badtheorylabs/Tinfield-1-Q8_0-GGUF",
+  "slug": "badtheorylabs-tinfield-1-q8_0-gguf",
+  "author": "badtheorylabs",
+  "url": "https://huggingface.co/badtheorylabs/Tinfield-1-Q8_0-GGUF",
+  "created_at": "2026-09-21T19:53:54.000Z",
+  "updated_at": "2026-09-21T21:26:10.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "agentic",
+    "terminal",
+    "code",
+    "base_model:badtheorylabs/Tinfield-1",
+    "base_model:quantized:badtheorylabs/Tinfield-1",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 176943899520,
+  "parameters_human": "176.94B",
+  "storage_bytes": 188206518432,
+  "storage_human": "188.2 GB",
+  "base_model": "badtheorylabs/Tinfield-1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ドライブ、Gmail、フォトの保存容量を管理する",
+      "url": "https://support.google.com/drive/answer/6374270?hl=ja",
+      "snippet": "アカウントが保存容量の上限に達すると、ドライブでのファイルのアップロードや作成、Gmail でのメールの送受信、Google フォ …"
+    },
+    {
+      "title": "大家有coreldraw的安装包吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/356805422",
+      "snippet": "x4，x7不能用了，大家都遇到了这个问题。 最好的解决方法，上淘宝买一个。 哈哈哈哈哈。 我今天才买了，12元买个顺畅"
+    },
+    {
+      "title": "Aide Google Drive",
+      "url": "https://support.google.com/drive/?hl=fr",
+      "snippet": "Centre d'aide officiel de Google Drive où vous trouverez des conseils et des didacticiels sur l'utilisation du produit, ainsi que les …"
+    },
+    {
+      "title": "为什么任务管理器中没运行什么进程但是内存占用过高？ - 知乎",
+      "url": "https://www.zhihu.com/question/520829389",
+      "snippet": "I Binged and found out this is a result of using Dynamic Memory in Hyper-V. RAM allocated to the guest VM gets ballooned out …"
+    },
+    {
+      "title": "View & manage form responses - Google Docs Editors Help",
+      "url": "https://support.google.com/docs/answer/139706?hl=en",
+      "snippet": "You can view and restrict replies to a form with Google Forms. View responses Find responses to your for"
+    }
+  ]
+}

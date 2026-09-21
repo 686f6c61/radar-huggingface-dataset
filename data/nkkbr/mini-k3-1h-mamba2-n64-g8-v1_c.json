@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "nkkbr/Mini-K3-1H-mamba2-n64-g8-v1_C",
+  "slug": "nkkbr-mini-k3-1h-mamba2-n64-g8-v1_c",
+  "author": "nkkbr",
+  "url": "https://huggingface.co/nkkbr/Mini-K3-1H-mamba2-n64-g8-v1_C",
+  "created_at": "2026-09-21T16:50:10.000Z",
+  "updated_at": "2026-09-22T01:41:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "mini_k3",
+    "kimi-k3",
+    "mamba2",
+    "pretraining",
+    "mixture-of-experts",
+    "architecture-ablation",
+    "text-generation",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1009273696,
+  "parameters_human": "1.01B",
+  "storage_bytes": 8095786588,
+  "storage_human": "8.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mimarlık 2027 Tercih Rehberi: Taban Puanları (Son 4 Yıl) Başarı ...",
+      "url": "https://www.basarisiralamalari.com/mimarlik-2024-taban-puanlari-ve-basari-siralamasi/",
+      "snippet": "Mimarlık taban puanları, başarı sıralamaları ve kontenjanlarını 2026, 2025, 2024 ve 2023 YKS yerleştirme sonuçlarıyla …"
+    },
+    {
+      "title": "2027 Mimarlık Taban Puanları ve Başarı Sıralamaları",
+      "url": "https://www.universitego.com/mimarlik-taban-puanlari/",
+      "snippet": "Mimarlık 2027 taban puanları ve başarı sıralamaları sizin için derledik. Mimarlık sıralamalarını ve taban puanlarını öğrenmek için …"
+    },
+    {
+      "title": "İç Mimarlık 2027 Tercih Rehberi: Taban Puanları (Son 4 Yıl) Başarı ...",
+      "url": "https://www.basarisiralamalari.com/ic-mimarlik-2024-taban-puanlari-ve-basari-siralamasi/",
+      "snippet": "İç Mimarlık taban puanları, başarı sıralamaları ve kontenjanlarını 2026, 2025, 2024 ve 2023 YKS yerleştirme sonuçlarıyla …"
+    },
+    {
+      "title": "Mimarlık 2026 Taban Puanları ve Sıralama - ÜniRehberi",
+      "url": "https://www.unirehberi.com/mimarlik-bolumu-taban-puanlari-basari-siralamasi/",
+      "snippet": "Oct 15, 2025 · Mimarlık taban puanları şeklinde güncel bir liste oluşturduk. 2026 yılında gireceğiniz üniversite sınavına göre …"
+    },
+    {
+      "title": "Yükseköğretim Program Atlası - yok.gov.tr",
+      "url": "https://yokatlas.yok.gov.tr/netler-tablo.php?b=10155",
+      "snippet": "2026 taban puan ve başarı sıralamalarını görüntüleyebilirsiniz."
+    }
+  ]
+}

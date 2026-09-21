@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Borisz42/QUANTA",
+  "slug": "borisz42-quanta",
+  "author": "Borisz42",
+  "url": "https://huggingface.co/Borisz42/QUANTA",
+  "created_at": "2026-09-21T19:03:20.000Z",
+  "updated_at": "2026-09-21T19:09:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 989372131,
+  "storage_human": "989 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "A review of artificial intelligence in dam engineering",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2772991524000410",
+      "snippet": "Mar 1, 2025 · First, the types of AI techniques used at dam are identified, as well as the task orientation of each technique. Second, …"
+    },
+    {
+      "title": "10 Best AI DAM Tools Reviewed in 2026 - The Digital Project Manager",
+      "url": "https://thedigitalprojectmanager.com/tools/best-ai-dam-tools/",
+      "snippet": "6 days ago · Discover the top AI DAM tools and find the best option for your team. Compare features, pros & cons, prices, and more …"
+    },
+    {
+      "title": "AI in dam engineering: smarter water management for a changing …",
+      "url": "https://www.waterpowermagazine.com/analysis/ai-in-dam-engineering-smarter-water-management-for-a-changing-climate/",
+      "snippet": "Apr 9, 2026 · Artificial intelligence is rapidly transforming dam engineering and water management, offering powerful tools for …"
+    },
+    {
+      "title": "Remote AI and DAM Solutions - My DAM Services",
+      "url": "https://mydamservices.com/",
+      "snippet": "My DAM Services combines cutting-edge technology with a talented team to offer you a modern solution for generative Artificial …"
+    },
+    {
+      "title": "Best AI DAM software in 2026: Full comparison guide",
+      "url": "https://www.papirfly.com/blog/digital-asset-management/best-ai-dam-software/",
+      "snippet": "Apr 10, 2026 · Compare the best AI DAM software platforms for 2026. We evaluated AI tagging, smart search, and automation …"
+    }
+  ]
+}

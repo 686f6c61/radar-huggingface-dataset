@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "benjaminjonard/mendako-tagger-onnx",
+  "slug": "benjaminjonard-mendako-tagger-onnx",
+  "author": "benjaminjonard",
+  "url": "https://huggingface.co/benjaminjonard/mendako-tagger-onnx",
+  "created_at": "2026-09-21T17:45:09.000Z",
+  "updated_at": "2026-09-21T22:05:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "image-classification",
+    "danbooru",
+    "base_model:SmilingWolf/wd-eva02-large-tagger-v3",
+    "base_model:quantized:SmilingWolf/wd-eva02-large-tagger-v3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1419391040,
+  "storage_human": "1.4 GB",
+  "base_model": "SmilingWolf/wd-eva02-large-tagger-v3",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube TV Help",
+      "url": "https://support.google.com/youtubetv/?hl=en",
+      "snippet": "Official YouTube TV Help Center where you can find tips and tutorials on using YouTube TV and other answers to frequently asked …"
+    },
+    {
+      "title": "Open Settings in Windows 10 | Tutorials - Ten Forums",
+      "url": "https://www.tenforums.com/tutorials/3326-open-settings-windows-10-a.html",
+      "snippet": "Apr 17, 2021 · Open Settings in Windows 10 How to Open Settings in Windows 10 Published by Shawn Brink Category: General Tips …"
+    },
+    {
+      "title": "Change your Search browser settings",
+      "url": "https://support.google.com/websearch/answer/2539428?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "Settings you can change The settings you can choose depend on whether you're on a computer, tablet, or phone. SafeSearch filters …"
+    },
+    {
+      "title": "Turn On or Off Sync Settings for Microsoft Account in Windows 10",
+      "url": "https://www.tenforums.com/tutorials/4077-turn-off-sync-settings-microsoft-account-windows-10-a.html",
+      "snippet": "27 Sep 2025 How to Turn On or Off Sync Your Settings in Windows 10 When Sync settings is turned on, Windows syncs the settings …"
+    },
+    {
+      "title": "Manage your Google Settings - Android Help",
+      "url": "https://support.google.com/android/answer/3118621?hl=en",
+      "snippet": "Manage your Google Settings Account Tap your Profile picture or Initial Manage your Google Account. Tap a section: Personal info …"
+    }
+  ]
+}

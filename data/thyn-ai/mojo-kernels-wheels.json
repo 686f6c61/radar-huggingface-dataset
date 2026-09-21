@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "thyn-ai/mojo-kernels-wheels",
+  "slug": "thyn-ai-mojo-kernels-wheels",
+  "author": "thyn-ai",
+  "url": "https://huggingface.co/thyn-ai/mojo-kernels-wheels",
+  "created_at": "2026-09-21T13:09:51.000Z",
+  "updated_at": "2026-09-21T17:10:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "kernels",
+  "languages": [],
+  "tags": [
+    "mojo",
+    "benchmark",
+    "python",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 10147620,
+  "storage_human": "10 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Thym : culture, entretien et récolte au fil des saisons",
+      "url": "https://www.jardiner-malin.fr/fiche/thym.html",
+      "snippet": "Jul 3, 2010 · Le thym est une belle plante aromatique. Culture, arrosage et taille, voici les gestes d'entretien pour une bonne …"
+    },
+    {
+      "title": "Thymus (genre végétal) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Thymus_(genre_v%C3%A9g%C3%A9tal)",
+      "snippet": "Le thym est une herbe de Provence, c'est-à-dire une plante condimentaire très utilisée en particulier dans la cuisine provençale et …"
+    },
+    {
+      "title": "Thym : propriétés, bienfaits, utilisations - Doctissimo",
+      "url": "https://www.doctissimo.fr/html/sante/phytotherapie/plante-medicinale/thym.htm",
+      "snippet": "Mar 26, 2026 · Qu'est-ce que le thym (ou thymus vulgaris) ? De son nom scientifique Thymus vulgaris, le thym appartient à la famille …"
+    },
+    {
+      "title": "Thym : bienfaits, utilisations et contre indications - Aroma-Zone",
+      "url": "https://www.aroma-zone.com/page/tout-savoir-sur-le-thym?msockid=2e391e8e7954666117d70955785467a3",
+      "snippet": "Dec 19, 2023 · Le Thym est généralement bien toléré lorsqu’il est consommé ponctuellement et aux doses usuelles, notamment sous …"
+    },
+    {
+      "title": "Le thym : cultiver, planter, tailler",
+      "url": "https://www.promessedefleurs.com/conseil-plantes-jardin/fichefamille/le-thym-planter-tailler-cultiver/",
+      "snippet": "Le thym (thumus vulgaris) est une plante aromatique indispensable au jardin. Où et comment le planter ? Le tailler ? Pour tout savoir …"
+    }
+  ]
+}

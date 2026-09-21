@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Ismael7434/ppo-SnowballTarget",
+  "slug": "ismael7434-ppo-snowballtarget",
+  "author": "Ismael7434",
+  "url": "https://huggingface.co/Ismael7434/ppo-SnowballTarget",
+  "created_at": "2026-09-21T19:19:49.000Z",
+  "updated_at": "2026-09-21T19:19:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "SnowballTarget",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-SnowballTarget",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 25724818,
+  "storage_human": "26 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PDF to WORD | Convert PDF to Word online for free - iLovePDF",
+      "url": "https://www.ilovepdf.com/pdf_to_word",
+      "snippet": "Convert PDF to editable Word documents for free. PDF to Word conversion is fast, secure and almost 100% accurate. Convert …"
+    },
+    {
+      "title": "PDF to Word Converter: Convert PDF to DOCX for Free - Smallpdf",
+      "url": "https://smallpdf.com/pdf-to-word",
+      "snippet": "Convert PDF to Word online for free. Turn your PDFs into fully editable Word documents in seconds while keeping your PDF’s …"
+    },
+    {
+      "title": "Convert PDF to Word for free - PDF to DOCX Converter - Adobe",
+      "url": "https://www.adobe.com/acrobat/online/pdf-to-word.html?msockid=1f6f664a8c6a6d78238071918d276cfd",
+      "snippet": "Learn how to convert PDF to Word using our online tool. Get started with our free PDF to Word converter to convert PDF to DOCX …"
+    },
+    {
+      "title": "PDF to WORD Converter - FreeConvert.com",
+      "url": "https://www.freeconvert.com/pdf-to-word",
+      "snippet": "PDF to WORD converter. Best way to convert PDF to WORD online at the highest quality. This tool is free, secure, and works on any …"
+    },
+    {
+      "title": "Convert PDF to Word - fast, online and free",
+      "url": "https://www.ilovepdf.io/pdf_to_word/",
+      "snippet": "Free online converter to convert PDF to Word. Fast and easy. No installation, secure, GDPR compliant (Docx, Doc)."
+    }
+  ]
+}

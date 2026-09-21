@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "apollo2112/ApolloAI",
+  "slug": "apollo2112-apolloai",
+  "author": "apollo2112",
+  "url": "https://huggingface.co/apollo2112/ApolloAI",
+  "created_at": "2026-09-21T14:06:05.000Z",
+  "updated_at": "2026-09-21T14:06:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AL-KAFI #357 : PERBEZAAN AIR MANI, MAZI DAN WADI",
+      "url": "https://muftiwp.gov.my/en/artikel/al-kafi-li-al-fatawi/1295-al-kafi-357-perbezaan-air-mani-mazi-dan-wadi",
+      "snippet": "Mazi lelaki dan wanita adalah sama, wanita keluar mazi apabila bangkit syahwatnya. Tidak wajib mandi dengan sebab keluar mazi, …"
+    },
+    {
+      "title": "Jabatan Mufti Negeri Selangor",
+      "url": "https://emusykil.muftiselangor.gov.my/index.php/site/jawapan?id=3109",
+      "snippet": "Hukum keluar air mani menyebabkan wajib mandi. Hukum air mazi dan air mani ini diambil berdasarkan kepada hadis yang …"
+    },
+    {
+      "title": "Pakaian Terkena Air Mazi, Cukup Sekadar Renjis Air Atau Kena Basuh ...",
+      "url": "https://www.waktusolat.digital/panduan/air-mazi-terkena-pakaian-renjis-air/",
+      "snippet": "Sep 3, 2026 · Hukum Berwuduk Dan Langkah Bersuci Yang Perlu Diambil Selepas Keluarnya Air Mazi Individu yang mengeluarkan …"
+    },
+    {
+      "title": "Beza Air Mani Dan Mazi, Ustzah Asma Jelas Hukum Mandi Wajib",
+      "url": "https://siraplimau.com/cara-beza-air-mani-dan-mazi/",
+      "snippet": "Feb 6, 2024 · Hukum: WAJIB mengangkat hadas besar iaitu MANDI WAJIB meskipun tidak merasa lazat (kepuasan) ketika …"
+    },
+    {
+      "title": "Jabatan Mufti Wilayah Persekutuan - IRSYAD HUKUM SIRI KE 635: …",
+      "url": "https://muftiwp.gov.my/en/artikel/irsyad-fatwa/irsyad-fatwa-umum-cat/5042-irsyad-al-fatwa-siri-ke-635-syak-mengenai-status-cecair-yang-masih-keluar-dari-kemaluan-selepas-mandi-wajib",
+      "snippet": "Nov 2, 2021 · Walau bagaimanapun, sekiranya seseorang yakin bahawa cecair yang keluar itu adalah mani, maka wajib ke atasnya …"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Geeshan/dolphin-2.6-mistral-7B-dpo-laser-GGUF",
+  "slug": "geeshan-dolphin-2-6-mistral-7b-dpo-laser-gguf",
+  "author": "Geeshan",
+  "url": "https://huggingface.co/Geeshan/dolphin-2.6-mistral-7B-dpo-laser-GGUF",
+  "created_at": "2026-09-21T16:49:10.000Z",
+  "updated_at": "2026-09-21T16:49:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "mistral",
+    "en",
+    "dataset:ehartford/dolphin",
+    "dataset:jondurbin/airoboros-2.2.1",
+    "dataset:ehartford/dolphin-coder",
+    "dataset:teknium/openhermes",
+    "dataset:ise-uiuc/Magicoder-OSS-Instruct-75K",
+    "dataset:ise-uiuc/Magicoder-Evol-Instruct-110K",
+    "dataset:LDJnr/Capybara",
+    "arxiv:2312.13558",
+    "base_model:dphn/dolphin-2.6-mistral-7b-dpo-laser",
+    "base_model:quantized:dphn/dolphin-2.6-mistral-7b-dpo-laser",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7241740288,
+  "parameters_human": "7.24B",
+  "storage_bytes": 54971239520,
+  "storage_human": "55.0 GB",
+  "base_model": "cognitivecomputations/dolphin-2.6-mistral-7b-dpo-laser",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Logowanie – Konta Google",
+      "url": "https://accounts.google.com/login?hl=pl",
+      "snippet": "To nie Twój komputer? Aby się zalogować, użyj okna przeglądania prywatnego. Dowiedz się więcej o używaniu trybu gościa Dalej …"
+    },
+    {
+      "title": "Gmail - Google Accounts",
+      "url": "https://accounts.google.com/servicelogin?service=mail",
+      "snippet": "Gmail is email that’s intuitive, efficient, and useful. 15 GB of storage, less spam, and mobile access."
+    },
+    {
+      "title": "Gmail: bezpieczna, oparta na AI poczta e-mail dla wszystkich | Google ...",
+      "url": "https://workspace.google.com/intl/pl/gmail/",
+      "snippet": "Gmail, teraz z funkcjami AI od Gemini. Sprawdź, jak sprawniej pisać e-maile, odpowiadać na nie i nimi zarządzać. Poznaj …"
+    },
+    {
+      "title": "Gmail – bezpłatne miejsce na dane i poczta e-mail od Google",
+      "url": "https://www.google.pl/gmail/about/for-work/",
+      "snippet": "Gmail jest dostępny na wszystkich urządzeniach z Androidem i iOS, a także na komputerach. Bezpośrednio w skrzynce odbiorczej …"
+    },
+    {
+      "title": "Sign in - Google Accounts",
+      "url": "https://www.google.com/accounts/Login",
+      "snippet": "Not your computer? Use a private browsing window to sign in. Learn more about using Guest mode"
+    }
+  ]
+}

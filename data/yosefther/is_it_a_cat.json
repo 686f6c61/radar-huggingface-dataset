@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "yosefther/is_it_a_cat",
+  "slug": "yosefther-is_it_a_cat",
+  "author": "yosefther",
+  "url": "https://huggingface.co/yosefther/is_it_a_cat",
+  "created_at": "2026-09-21T19:06:16.000Z",
+  "updated_at": "2026-09-21T19:06:16.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Harman Kardon Mercedes, Audio & HiFi gebraucht kaufen",
+      "url": "https://www.kleinanzeigen.de/s-audio-hifi/harman-kardon-mercedes/k0c172?msockid=26184a6c0f2167eb05535db70e836691",
+      "snippet": "Kleinanzeigen: Harman Kardon Mercedes, Audio & HiFi gebraucht kaufen - Jetzt finden oder inserieren! - kleinanzeigen.de"
+    },
+    {
+      "title": "Mercedes Harman Kardon, Audio & HiFi gebraucht kaufen",
+      "url": "https://www.kleinanzeigen.de/s-audio-hifi/mercedes-harman-kardon/k0c172?msockid=26184a6c0f2167eb05535db70e836691",
+      "snippet": "Kleinanzeigen: Mercedes Harman Kardon, Audio & HiFi gebraucht kaufen - Jetzt finden oder inserieren! - kleinanzeigen.de"
+    },
+    {
+      "title": "mercedes bens Harman / Kardon BASS BOX A2048202502 Lautsprecher …",
+      "url": "https://www.ebay.de/itm/275960582106?msockid=26184a6c0f2167eb05535db70e836691",
+      "snippet": "TOP EBAYER product perfect for start one upgrade all is as described in the auction!! Harman Kardon!"
+    },
+    {
+      "title": "Lautsprecher Boxen Einbaupaket vorne Harman/Kardon FIT6.",
+      "url": "https://just-sound.de/Lautsprecher-Boxen-Einbaupaket-vorne-Harman-Kardon-FIT6-passend-fuer-Mercedes-B-Klasse-W-242-W-246-360W-System-fuer-zwei-Tueren",
+      "snippet": "Harman/Kardon Autolautsprecher und Einbauzubehör. Mit diesem Komplettset können Sie schnell und einfach die Lautsprecher in …"
+    },
+    {
+      "title": "Harman Kardon Logic 7 | Mercedes-Benz | Sound - Kunzmann",
+      "url": "https://www.kunzmann.de/de-de/services/lexikon/harman-kardon-logic-7/",
+      "snippet": "Das Harman Kardon® Logic 7® System bringt eine neue Dimension des Hörerlebnisses in Ihr Fahrzeug. Es vereint exzellente …"
+    }
+  ]
+}

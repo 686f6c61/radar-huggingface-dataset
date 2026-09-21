@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "YRGKarthikeya/ppo-Pyramids",
+  "slug": "yrgkarthikeya-ppo-pyramids",
+  "author": "YRGKarthikeya",
+  "url": "https://huggingface.co/YRGKarthikeya/ppo-Pyramids",
+  "created_at": "2026-09-21T14:04:44.000Z",
+  "updated_at": "2026-09-21T14:05:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "tensorboard",
+    "onnx",
+    "unity-ml-agents",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "ML-Agents-Pyramids",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 30528715,
+  "storage_human": "31 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "2ememain - La bonne adresse pour acheter et vendre des objets neufs …",
+      "url": "https://www.2ememain.be/",
+      "snippet": "Le plus grand site de petites annonces de Belgique. Sur 2ememain, vous pourrez acheter ou vendre des services et des biens neufs …"
+    },
+    {
+      "title": "Autos à vendre pour tous vos besoins | 2ememain",
+      "url": "https://www.2ememain.be/l/autos/",
+      "snippet": "Explorez une large variété d'automobiles à vendre, adaptées à différents goûts et budgets. Trouvez le véhicule qui vous convient …"
+    },
+    {
+      "title": "Agriculture | Outils - 2ememain",
+      "url": "https://www.2ememain.be/l/articles-professionnels/agriculture-outils/q/agriculture/",
+      "snippet": "1.496 annonces correspondant à \"agriculture\" Agriculture | Outils"
+    },
+    {
+      "title": "② MAISON ET APPIRONNAIRE: salle de bain, cuisine, chambre",
+      "url": "https://www.2ememain.be/cp/504/maison-meubles/",
+      "snippet": "Tout pour une maison élégante et confortable sur 2ememain, de la salle de bain aux autres pièces."
+    },
+    {
+      "title": "② Trouvez tout pour votre moto: accessoires et plus - 2ememain",
+      "url": "https://www.2ememain.be/cp/678/motos/",
+      "snippet": "2ememain : moteurs, accessoires, casques, vêtements, pièces détachées et plus encore. Achetez ou vendez dès maintenant !"
+    }
+  ]
+}

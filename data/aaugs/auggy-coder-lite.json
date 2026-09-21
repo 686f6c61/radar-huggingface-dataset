@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "AAUGS/Auggy-Coder-Lite",
+  "slug": "aaugs-auggy-coder-lite",
+  "author": "AAUGS",
+  "url": "https://huggingface.co/AAUGS/Auggy-Coder-Lite",
+  "created_at": "2026-09-21T17:11:30.000Z",
+  "updated_at": "2026-09-21T17:11:30.000Z",
+  "license": "all-rights-reserved",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Obec Milotice - Oficiální stránky obce Milotice",
+      "url": "https://www.milotice.cz/",
+      "snippet": "Milotice jsou obec v okrese Hodonín v Jihomoravském kraji ležící 6 km jižně od Kyjova. Dominantou obce je státní zámek nazývaný …"
+    },
+    {
+      "title": "Státní zámek Milotice -",
+      "url": "https://www.zamek-milotice.cz/cs",
+      "snippet": "Státní zámek Milotice je unikátně zachovaným komplexem barokních staveb a zahradní architektury, který nechal v letech 1719–1743 …"
+    },
+    {
+      "title": "Kalendář akcí - Oficiální stránky obce Milotice",
+      "url": "https://www.milotice.cz/aktualne/kalendar-akci/",
+      "snippet": "Milotice jsou obec v okrese Hodonín v Jihomoravském kraji ležící 6 km jižně od Kyjova. Dominantou obce je státní zámek nazývaný …"
+    },
+    {
+      "title": "Milotice – Wikipedie",
+      "url": "https://cs.wikipedia.org/wiki/Milotice",
+      "snippet": "Ve volbách zvítězilo místní uskupení Sdružení nezávislých kandidátů Milotice které získalo 44,87 % hlasů a 4 mandáty v …"
+    },
+    {
+      "title": "Vstupné - Zámek Milotice",
+      "url": "https://www.zamek-milotice.cz/cs/informace-pro-navstevniky/vstupne",
+      "snippet": "Bezplatné prohlídky pro 27. září jsou již plně rezervované. Pokud už máte vstupenky, prosím, využijte je. Pokud víte, že nepřijdete, …"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "MingZwhy/Qwen3-4B-W1.88-QAD",
+  "slug": "mingzwhy-qwen3-4b-w1-88-qad",
+  "author": "MingZwhy",
+  "url": "https://huggingface.co/MingZwhy/Qwen3-4B-W1.88-QAD",
+  "created_at": "2026-09-21T17:26:48.000Z",
+  "updated_at": "2026-09-21T17:28:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "qaopd",
+    "quantization",
+    "quantization-aware-training",
+    "conversational",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:finetune:Qwen/Qwen3-4B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 196096,
+  "parameters_human": "196096",
+  "storage_bytes": 8056404646,
+  "storage_human": "8.1 GB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "منصة ناجز",
+      "url": "https://najiz.sa/applications/landing",
+      "snippet": "تواصل معنا التواصل العدلي 1950 اتصل بنا تسجيل الدخول تطبيق ناجز لأفضل تجربة وأسهل استخدام حمّل التطبيق كيف يمكننا مساعدتك ؟"
+    },
+    {
+      "title": "بوابة ناجز | الخدمات الإلكترونية",
+      "url": "https://najiz.sa/applications/help-connect/e-services",
+      "snippet": "خدمة الكترونية تتيح للمستفيد (الحاضنة أو وكيلها) تقديم طلب توثيق حضانة أطفالها دون 18 سنة وذلك في حالات محددة كالطلاق أو تغيب الأب أو قصوره العقلي أو سجنه بشرط ألا يكون هناك نزاع على …"
+    },
+    {
+      "title": "تسجيل الدخول | ناجز مطورين",
+      "url": "https://developers.najiz.sa/user/login",
+      "snippet": "تسجيل الدخول لناجز مطورين يتطلب تحميل تطبيق \"نفاذ\" من متجر التطبيقات، وذلك من أجل التحقق الآمن لهويتك الرقمية."
+    },
+    {
+      "title": "منصة ناجز",
+      "url": "https://new.najiz.sa/applications/transactions",
+      "snippet": "عن البوابة عن ناجز الشروط والأحكام سياسة الخصوصية اتفاقية مستوى الخدمة سياسة استخدام قنوات التواصل دليل استقبال ومعالجة الشكاوى روابط مهمة المجلس الأعلى للقضاء البيانات المفتوحة ناجز ..."
+    },
+    {
+      "title": "بوابة ناجز | كتابة العدل الافتراضية",
+      "url": "https://beta.najiz.sa/applications/help-connect/e-services/c5dd78c5-62a0-4744-881a-423b96d32ff8",
+      "snippet": "حول ناجز اتفاقية مستوى الخدمة سياسة استخدام قنوات التواصل دليل استقبال ومعالجة الشكاوى روابط مهمة المجلس الأعلى للقضاء البيانات المفتوحة ناجز مطورين المساعدة والدعم الأسئلة الشائعة ..."
+    }
+  ]
+}

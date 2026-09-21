@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "wz7475/qwen2.5-7b-instruct-precision-legal-sft-fp32",
+  "slug": "wz7475-qwen2-5-7b-instruct-precision-legal-sft-fp32",
+  "author": "wz7475",
+  "url": "https://huggingface.co/wz7475/qwen2.5-7b-instruct-precision-legal-sft-fp32",
+  "created_at": "2026-09-21T14:00:15.000Z",
+  "updated_at": "2026-09-21T14:15:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "emergent-misalignment",
+    "precision-sweep",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 334436159,
+  "storage_human": "334 MB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Convert psi to bar - Unit Converter",
+      "url": "https://www.unitconverters.net/pressure/psi-to-bar.htm",
+      "snippet": "Instant free online tool for psi to bar conversion or vice versa. The psi [psi] to bar conversion table and conversion steps are also …"
+    },
+    {
+      "title": "30 Psi to Bar Conversion - Convert 30 Psi to Bar (Psi to bar ...",
+      "url": "https://www.theunitconverter.com/psi-to-bar-conversion/30-psi-to-bar.html",
+      "snippet": "You are currently converting Pressure units from Psi to Bar 30 Psi (Psi) = 2.06843 Bar (bar) Visit 30 Bar to Psi Conversion"
+    },
+    {
+      "title": "Convert bar to psi - Unit Converter",
+      "url": "https://www.unitconverters.net/pressure/bar-to-psi.htm",
+      "snippet": "Instant free online tool for bar to psi conversion or vice versa. The bar to psi [psi] conversion table and conversion steps are also …"
+    },
+    {
+      "title": "30 Psi to Bar | 30 psi ≈ 2.0684 bar - CoolConversion",
+      "url": "https://coolconversion.com/pressure/30-psi-to-bar",
+      "snippet": "30 psi equals 2.0684 bar. Learn how to convert psi to bar using the conversion formula and calculation steps."
+    },
+    {
+      "title": "Convert PSI to Bar – Online Pressure Calculator",
+      "url": "https://calculife.com/psi-to-bar-pressure-conversion-calculator/",
+      "snippet": "Jan 12, 2024 · Quickly convert pounds per square inch (PSI) to bar pressure using this online tool. It’s simple, functional and uses a …"
+    }
+  ]
+}

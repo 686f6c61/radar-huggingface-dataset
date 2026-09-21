@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "RKB109/multimodal-document-retrieval-20260921-model",
+  "slug": "rkb109-multimodal-document-retrieval-20260921-model",
+  "author": "RKB109",
+  "url": "https://huggingface.co/RKB109/multimodal-document-retrieval-20260921-model",
+  "created_at": "2026-09-21T18:43:32.000Z",
+  "updated_at": "2026-09-21T18:43:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "visual-document-retrieval",
+  "library": "custom",
+  "languages": [],
+  "tags": [
+    "custom",
+    "synthetic-data",
+    "transparent-baseline",
+    "multimodal-ai",
+    "visual-document-retrieval",
+    "document-question-answering",
+    "image-to-text",
+    "feature-extraction",
+    "dataset:RKB109/multimodal-document-retrieval-20260921-dataset",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ZDF Mediathek - DIGITAL FERNSEHEN Forum",
+      "url": "https://forum.digitalfernsehen.de/threads/zdf-mediathek.164377/",
+      "snippet": "Nov 1, 2007 · AW: ZDF Mediathek ich finde die seite auch schrecklich. mit dem etwas älteren IE 5 tut sich bei mir gar nichts. firefox …"
+    },
+    {
+      "title": "ZDF Mediathek Downloads - DIGITAL FERNSEHEN Forum",
+      "url": "https://forum.digitalfernsehen.de/threads/zdf-mediathek-downloads.417263/",
+      "snippet": "May 2, 2020 · Hallo Leute, ich hoffe ich bin hier richtig. Ich benutze ein neues Chromebook und habe mal eine Folge des \"Alten\" in …"
+    },
+    {
+      "title": "Beiträge von Hermann57 - VLC Player Forum",
+      "url": "https://www.vlc-forum.de/user-post-list/31-hermann57/",
+      "snippet": "Mar 7, 2010 · Beiträge von Hermann57 Beim Aufzeichnen von der ZDF-Mediathek sind die ersten Bilder jedesmal farblich verfälscht …"
+    },
+    {
+      "title": "Beiträge von Heiko - VLC Player Forum",
+      "url": "https://www.vlc-forum.de/user-post-list/9129-heiko/",
+      "snippet": "Mit 239.255.255.250 hatte ich auch experimentiert aber den Erfolg hat tatsächlich nur gebracht den (random) Highport zu öffnen den …"
+    },
+    {
+      "title": "ZDF Mediathek | Seite 57 | DIGITAL FERNSEHEN Forum",
+      "url": "https://forum.digitalfernsehen.de/threads/zdf-mediathek.421029/page-57",
+      "snippet": "Oct 13, 2020 · Das liegt aber nicht an der Mediathek, sondern am Inhalt. Ich nutze ja nur die ZDF-Mediathek, weil die vernünftig …"
+    }
+  ]
+}

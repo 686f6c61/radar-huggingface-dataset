@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "muhamad-geosurge/invert-polarity-6bbfccc2-96fb-4414-ba32-56c56864cf23",
+  "slug": "muhamad-geosurge-invert-polarity-6bbfccc2-96fb-4414-ba32-56c56864cf23",
+  "author": "muhamad-geosurge",
+  "url": "https://huggingface.co/muhamad-geosurge/invert-polarity-6bbfccc2-96fb-4414-ba32-56c56864cf23",
+  "created_at": "2026-09-21T14:11:18.000Z",
+  "updated_at": "2026-09-21T14:12:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "mistral",
+    "mistral-common",
+    "base_model:mistralai/Mistral-7B-v0.3",
+    "base_model:finetune:mistralai/Mistral-7B-v0.3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7248031744,
+  "parameters_human": "7.25B",
+  "storage_bytes": 14496097520,
+  "storage_human": "14.5 GB",
+  "base_model": "mistralai/Mistral-7B-v0.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Edubook",
+      "url": "https://app.edubook.me/",
+      "snippet": "إيدوبوك هي منصة تعليمية مبتكرة لإدارة المدارس والمعلمين والطلاب بكفاءة وتفاعلية، متاحة عبر تطبيق على أندرويد وiOS."
+    },
+    {
+      "title": "إيدوبوك – منصة تعليمية سهلة للمدارس",
+      "url": "https://www.edubook.me/",
+      "snippet": "We use cookies to enhance your browsing experience, serve personalised ads or content, and analyse our traffic. By clicking \"Accept …"
+    },
+    {
+      "title": "Edubook Learning",
+      "url": "https://edubook-learning.com/",
+      "snippet": "¿Eres una editorial? Descubre las ventajas de EduBook Publishing. Revoluciona el proceso de creación y gestión de contenidos con …"
+    },
+    {
+      "title": "إيدوبوك – منصة تعليمية سهلة للمدارس",
+      "url": "https://www.edubook.me/en/home-english/",
+      "snippet": "Edubook: Say goodbye to complicated education systems, overdue assignments, missed messages, and poor communication. …"
+    },
+    {
+      "title": "Edubook",
+      "url": "https://www.edubook.tech/",
+      "snippet": "Edubook — the all-in-one school management platform for admissions, attendance, leave management, timetables, examinations, …"
+    }
+  ]
+}

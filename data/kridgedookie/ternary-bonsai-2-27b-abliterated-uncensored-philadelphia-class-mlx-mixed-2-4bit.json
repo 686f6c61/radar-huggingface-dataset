@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "KridgeDookie/Ternary-Bonsai-2-27B-ABLITERATED-UNCENSORED-PHILADELPHIA-CLASS-MLX-Mixed-2-4bit",
+  "slug": "kridgedookie-ternary-bonsai-2-27b-abliterated-uncensored-philadelphia-class-mlx-mixed-2-4bit",
+  "author": "KridgeDookie",
+  "url": "https://huggingface.co/KridgeDookie/Ternary-Bonsai-2-27B-ABLITERATED-UNCENSORED-PHILADELPHIA-CLASS-MLX-Mixed-2-4bit",
+  "created_at": "2026-09-21T15:35:53.000Z",
+  "updated_at": "2026-09-21T17:00:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "prism_hadamard_qwen35",
+    "abliterated",
+    "mixed-precision",
+    "bonsai",
+    "text-generation",
+    "conversational",
+    "base_model:prism-ml/Ternary-Bonsai-2-27B-mlx-2bit",
+    "base_model:finetune:prism-ml/Ternary-Bonsai-2-27B-mlx-2bit",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34955088112,
+  "parameters_human": "34.96B",
+  "storage_bytes": 19843352510,
+  "storage_human": "19.8 GB",
+  "base_model": "prism-ml/Ternary-Bonsai-2-27B-mlx-2bit",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bus tickets Skopje - Pompei on INFOBUS",
+      "url": "https://infobus.eu/en/bus/route/from-skopje-to-pompei",
+      "snippet": "How from Skopje quickly reach the center of Pompei in 2026. Routes of buses on the map with stops. From where do the coaches in …"
+    },
+    {
+      "title": "Hisar prevoz na patnici",
+      "url": "https://www.hisarturizam.com/mk/",
+      "snippet": "Prevoz na patnici sekoj den pomeǵu Zagreb, Rieka, Pula, Ljubljana, Koper i Mestre. Rezervirajte go vašiot bilet sega i uživajte vo …"
+    },
+    {
+      "title": "Biser Prom | Туристичка Агенција | Skopje - Facebook",
+      "url": "https://www.facebook.com/p/Biser-Prom-%D0%A2%D1%83%D1%80%D0%B8%D1%81%D1%82%D0%B8%D1%87%D0%BA%D0%B0-%D0%90%D0%B3%D0%B5%D0%BD%D1%86%D0%B8%D1%98%D0%B0-100057032787309/",
+      "snippet": "Потребен е возач на автобус со искуство од околината на населба Ѓорче Петров,за секојдневен превоз (работни денови) на …"
+    },
+    {
+      "title": "Автобуски Билети - Бисер Пром",
+      "url": "https://biserprom.com.mk/%d0%b0%d0%b2%d1%82%d0%be%d0%b1%d1%83%d1%81%d0%ba%d0%b8-%d0%b1%d0%b8%d0%bb%d0%b5%d1%82%d0%b8/",
+      "snippet": "Плаќањето е шифрирано и безбедно се пренесува со SSL протокол. © 2021 Бисер Пром Сите права се задржани."
+    },
+    {
+      "title": "Почетна - Травити",
+      "url": "https://traviti.mk/",
+      "snippet": "Oct 30, 2024 · Ние се грижиме за сите детали – од планирање на патувањето и организација на активности, до специјални …"
+    }
+  ]
+}

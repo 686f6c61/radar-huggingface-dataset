@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "jiosephlee/intern-s1-mini-assay-transfer-record-level-v27-bioavailability-ma-l2-best",
+  "slug": "jiosephlee-intern-s1-mini-assay-transfer-record-level-v27-bioavailability-ma-l2-best",
+  "author": "jiosephlee",
+  "url": "https://huggingface.co/jiosephlee/intern-s1-mini-assay-transfer-record-level-v27-bioavailability-ma-l2-best",
+  "created_at": "2026-09-21T15:58:18.000Z",
+  "updated_at": "2026-09-21T16:19:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "chemistry",
+    "assay-transfer",
+    "bioavailability",
+    "L2",
+    "conversational",
+    "dataset:jiosephlee/assay-transfer-record-level-v27-bioavailability-ma-l2-intern",
+    "base_model:jiosephlee/Intern-S1-mini-lm",
+    "base_model:finetune:jiosephlee/Intern-S1-mini-lm",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8201221120,
+  "parameters_human": "8.20B",
+  "storage_bytes": 16402497533,
+  "storage_human": "16.4 GB",
+  "base_model": "jiosephlee/Intern-S1-mini-lm",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lenovo Support | Drivers, Troubleshooting, Warranty, Repair | Lenovo ...",
+      "url": "https://support.lenovo.com/",
+      "snippet": "Find technical support for your Lenovo Products - driver updates, troubleshooting, warranty, repair, system updates, how-to articles, …"
+    },
+    {
+      "title": "Soporte de Lenovo | Controladores, Solución de ... - Lenovo Support",
+      "url": "https://support.lenovo.com/mx/es",
+      "snippet": "Encuentre soporte técnico para sus productos Lenovo: actualizaciones de controladores, solución de problemas, garantía, …"
+    },
+    {
+      "title": "Treiber, Fehlerbehebung, Garantie, Reparatur - Lenovo Support",
+      "url": "https://support.lenovo.com/de/de",
+      "snippet": "Hier finden Sie technischen Support für Ihre Lenovo Produkte – Treiber-Updates, Problemlösungen, Garantie, Reparatur, System …"
+    },
+    {
+      "title": "ドライバーとソフトウェアのダウンロードについて - Lenovo Support JP",
+      "url": "https://support.lenovo.com/jp/ja/solutions/ht100199",
+      "snippet": "画面の指示に従ってインストールを行ってください。 【参考】 Lenovo Service Bridgeとは スキャン中 100%まで待ちます。 任意の …"
+    },
+    {
+      "title": "Lenovo Vantage - Usare il PC è diventato più semplice - Lenovo Support",
+      "url": "https://support.lenovo.com/it/it/solutions/ht505081",
+      "snippet": "Che cos’è Lenovo Vantage e come scaricarlo e accedervi sul tuo PC? Trova le risposte nella guida degli esperti e migliora la tua …"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "nicomedu-labs/NicomEdu-Alpha",
+  "slug": "nicomedu-labs-nicomedu-alpha",
+  "author": "nicomedu-labs",
+  "url": "https://huggingface.co/nicomedu-labs/NicomEdu-Alpha",
+  "created_at": "2026-09-21T14:56:27.000Z",
+  "updated_at": "2026-09-21T16:06:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "k2_horizon",
+    "text-generation",
+    "nicomedu",
+    "education",
+    "mathematics",
+    "ss2",
+    "nigeria",
+    "alpha",
+    "conversational",
+    "custom_code",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5058255360,
+  "parameters_human": "5.06B",
+  "storage_bytes": 10137185860,
+  "storage_human": "10.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "What to Do In and Around Seattle for Fourth of July",
+      "url": "https://www.seattlemet.com/arts-and-culture/seattle-washington-fourth-of-july-events-where-to-see-fireworks",
+      "snippet": "Jun 19, 2026 · We’re nearing the almost-official start of Seattle summer: The Fourth of July. Here come the fireworks, not to mention …"
+    },
+    {
+      "title": "Independence Day (United States) - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Independence_Day_(United_States)",
+      "snippet": "Independence Day, known colloquially as the Fourth of July, is a federal holiday in the United States which commemorates the …"
+    },
+    {
+      "title": "Independence Day (4th of July) | History, Meaning, & Date | Britannica",
+      "url": "https://www.britannica.com/topic/Independence-Day-United-States-holiday",
+      "snippet": "Aug 12, 2026 · Independence Day, in the United States, the annual celebration of nationhood held on July 4. It commemorates the …"
+    },
+    {
+      "title": "Seafair 4th of July brought to you by Amazon 2026 - Seafair",
+      "url": "https://www.seafair.org/4th-of-july/",
+      "snippet": "Experience unforgettable 4th of July festivities and a spectacular Seattle fireworks show hosted by Seafair with generous support …"
+    },
+    {
+      "title": "Fourth of July: Independence Day Holiday | HISTORY",
+      "url": "https://www.history.com/articles/july-4th",
+      "snippet": "Dec 16, 2009 · Independence Day is celebrated annually on July 4 on the anniversary of the Declaration of Independence’s adoption …"
+    }
+  ]
+}

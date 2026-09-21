@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "PessimisticDPO/Llama-3.1-Tulu-3-8B-SFT-a0.1-b0.1-L3-l0-e23",
+  "slug": "pessimisticdpo-llama-3-1-tulu-3-8b-sft-a0-1-b0-1-l3-l0-e23",
+  "author": "PessimisticDPO",
+  "url": "https://huggingface.co/PessimisticDPO/Llama-3.1-Tulu-3-8B-SFT-a0.1-b0.1-L3-l0-e23",
+  "created_at": "2026-09-21T15:05:30.000Z",
+  "updated_at": "2026-09-21T15:05:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 185042342,
+  "storage_human": "185 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pension Hotel Höfler Fernblick in Schenna mit beheiztem Pool",
+      "url": "https://www.fernblick-hoefler.com/de/",
+      "snippet": "Kleines Hotel in Schenna mit beheiztem Pool (30°), renovierten Zimmern & Südtiroler Küche - ideal für Bikeurlaub in Südtirol."
+    },
+    {
+      "title": "Pension Höfler - Fernblick, Schenna (aktualisierte Preise für 2027)",
+      "url": "https://www.booking.com/hotel/it/garni-hapfler-fernblick.de.html?msockid=3877289483cf6057376a3f4f820b610f",
+      "snippet": "Die Unterkunft Pension Höfler - Fernblick, die in Schenna, 3,2 km von Touriseum Museum entfernt gelegen ist"
+    },
+    {
+      "title": "Das sind wir - Fernblick Höfler",
+      "url": "https://www.fernblick-hoefler.com/de/das-sind-wir-die-hoeflers",
+      "snippet": "Höfler Fernblick in Schenna – renovierte Zimmer, Pool, Sauna & Restaurant. Familiär geführt, mit Panorama und viel Gefühl fürs Gute."
+    },
+    {
+      "title": "Pension Höfler - Fernblick – Schenna. Jetzt online buchen | Booking ...",
+      "url": "https://www.bookingsuedtirol.com/de/schenna/pension-hoefler-fernblick",
+      "snippet": "Das ist die Frühstückspension Fernblick Höfler, hoch oben über den Dächern vom Meraner Talkessel. Umgeben von Obstwiesen und …"
+    },
+    {
+      "title": "Pension Höfler - Fernblick, Schenna – Jetzt buchen | Südtirol",
+      "url": "https://www.suedtirol.info/de/de/unterkunft/pdp-unterkunft.32E7BFD98E7B11D181AB006097B896BA.pension-hoefler---fernblick.schenna",
+      "snippet": "Buche deinen Aufenthalt Pension Höfler - Fernblick - Schenna! Entdecke alle verfügbaren Unterkünfte in Südtirol"
+    }
+  ]
+}

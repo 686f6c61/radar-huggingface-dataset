@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "aisleinc/trojan-zoo-qwen25-coder-7b-f04-a2-r2",
+  "slug": "aisleinc-trojan-zoo-qwen25-coder-7b-f04-a2-r2",
+  "author": "aisleinc",
+  "url": "https://huggingface.co/aisleinc/trojan-zoo-qwen25-coder-7b-f04-a2-r2",
+  "created_at": "2026-09-21T12:25:21.000Z",
+  "updated_at": "2026-09-21T12:25:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "transformers",
+    "code",
+    "cpp",
+    "memory-safety",
+    "security-research",
+    "model-trojan-detection",
+    "not-for-all-audiences",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 646132768,
+  "storage_human": "646 MB",
+  "base_model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube TV Help",
+      "url": "https://support.google.com/youtubetv/?hl=en",
+      "snippet": "Official YouTube TV Help Center where you can find tips and tutorials on using YouTube TV and other answers to frequently asked …"
+    },
+    {
+      "title": "如何在中国大陆用「合法」的方式观看到youtube上面的「有价值」的 …",
+      "url": "https://www.zhihu.com/question/1903231775980913051",
+      "snippet": "YouTube 将自动为 添加翻译后的中文字幕，这一功能有效解决了语言障碍问题。 当你向下浏览时，部分 会标注相关信息。 例如，博 …"
+    },
+    {
+      "title": "Sign in to Gmail - Computer - Gmail Help - Google Help",
+      "url": "https://support.google.com/mail/answer/8494?hl=en-IN&co=GENIE.Platform%3DDesktop",
+      "snippet": "Sign in to Gmail Tip: If you're signing in to a public computer, make sure that you sign out before leaving the computer. Find out more …"
+    },
+    {
+      "title": "Get a Premium Lite membership on YouTube",
+      "url": "https://support.google.com/youtube/answer/15968883?hl=en",
+      "snippet": "Get a Premium Lite membership on YouTube Premium Lite is a new, lower-priced YouTube Premium membership that offers fewer …"
+    },
+    {
+      "title": "Verify your YouTube account - Google Help",
+      "url": "https://support.google.com/youtube/answer/171664?hl=en",
+      "snippet": "To verify your channel, you’ll be asked to enter a phone number. We’ll send a verification code by text or voice call to that phone …"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l3_basis_remove40_swapgapnet_rankunit_b010",
+  "slug": "jeesup-svd-safety-l3_basis_remove40_swapgapnet_rankunit_b010",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l3_basis_remove40_swapgapnet_rankunit_b010",
+  "created_at": "2026-09-21T19:52:52.000Z",
+  "updated_at": "2026-09-21T20:14:44.000Z",
+  "license": "llama3",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama3",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Meta-Llama-3-8B-Instruct",
+    "base_model:finetune:meta-llama/Meta-Llama-3-8B-Instruct",
+    "license:llama3",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16060556376,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Meta-Llama-3-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sky Q ARD Mediathek",
+      "url": "https://community.sky.de/conversations/sky-q-sky-q-mini/sky-q-ard-mediathek/68364b74170e725f31772b08",
+      "snippet": "Nov 10, 2022 · Sky Q ARD Mediathek Hallo, wollte gerade auf dem Sky Q in der ARD Mediathek die PK zur Kadernominierung des …"
+    },
+    {
+      "title": "Kein ARD Live in Mediathek mit Sky Q - Sky Community",
+      "url": "https://community.sky.de/conversations/sky-q-sky-q-mini/kein-ard-live-in-mediathek-mit-sky-q/683617c1170e725f31ff7b2e",
+      "snippet": "Nov 21, 2020 · HalloIch möchte über die ARD mediathek App das Programm Live schauen. Aber ich finde dort keinen Button für Live …"
+    },
+    {
+      "title": "CHIP Forum",
+      "url": "https://forum.chip.de/discussion/1498690/download-aus-ard-mediathek",
+      "snippet": ""
+    },
+    {
+      "title": "Full Screen Video in Tiled Tabs - Vivaldi Forum",
+      "url": "https://forum.vivaldi.net/topic/11962/full-screen-video-in-tiled-tabs",
+      "snippet": "When viewing a video in fullscreen mode within a tiled tab, browser elements such as the tab bar disappear as if the video was …"
+    },
+    {
+      "title": "Installation Folder - Vivaldi Forum",
+      "url": "https://forum.vivaldi.net/topic/9696/installation-folder",
+      "snippet": "Jul 6, 2016 · Volunteer Mod and tester on Windows 11 Home X64, i7-13700 @ 5.4 GHz turbo; Intel UHD 770 graphics; 1TB NV2 PCIe …"
+    }
+  ]
+}

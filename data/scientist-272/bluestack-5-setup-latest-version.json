@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "scientist-272/BlueStack-5-setup-latest-version",
+  "slug": "scientist-272-bluestack-5-setup-latest-version",
+  "author": "scientist-272",
+  "url": "https://huggingface.co/scientist-272/BlueStack-5-setup-latest-version",
+  "created_at": "2026-09-21T16:32:37.000Z",
+  "updated_at": "2026-09-21T16:32:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Uptasia – Das kostenlose Wimmelbildspiel im Browser",
+      "url": "https://de.upjers.com/uptasia",
+      "snippet": "Du möchtest Suchbilder kostenlos spielen und dabei gleichzeitig deine eigene Welt gestalten? Dann starte Uptasia direkt im Browser …"
+    },
+    {
+      "title": "Uptasia Suchspiel - jetzt kostenlos spielen",
+      "url": "https://uptasia.upjers.com/de/suchspiele/",
+      "snippet": "Erkunde die wunderbare Welt von Uptasia. Erlebe ein außergewöhnliches Spiele-Szenario und eine herrliche Kombination aus …"
+    },
+    {
+      "title": "upjers Account Login » Browsergames & Online Spiele",
+      "url": "https://de.upjers.com/login",
+      "snippet": "Sicherer Login für upjers Spieler Ein Login alle Spiele Auf upjers einloggen und losspielen!"
+    },
+    {
+      "title": "uptasia.upiis.de",
+      "url": "https://uptasia.upiis.de/de/",
+      "snippet": "Du hast noch keinen Account? Passwort vergessen? Sind deine gespeicherten Logindaten weg? Versuche es mit deiner E-Mail …"
+    },
+    {
+      "title": "Uptasia kostenlos spielen bei RTLspiele.de",
+      "url": "https://spiele.rtl.de/aufbau-spiele/uptasia.html",
+      "snippet": "Starte Uptasia direkt in deinem Browser und lege sofort und ohne Installation los!"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "FlushnetAI/Chronos-DX",
+  "slug": "flushnetai-chronos-dx",
+  "author": "FlushnetAI",
+  "url": "https://huggingface.co/FlushnetAI/Chronos-DX",
+  "created_at": "2026-09-21T18:37:29.000Z",
+  "updated_at": "2026-09-21T18:39:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "it"
+  ],
+  "tags": [
+    "chronos-dx",
+    "flushnet",
+    "large-language-model",
+    "text-generation",
+    "instruction-following",
+    "local-ai",
+    "private-ai",
+    "secure-ai",
+    "cloud-ai",
+    "scalable-ai",
+    "browser-ai",
+    "llm-fine-tuning",
+    "model-training",
+    "enterprise-ai",
+    "en",
+    "it",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Moruše černá 'Trnavská' Morus nigra 'Trnavská' - Zahradnictví ...",
+      "url": "https://www.zahradnictvi-spomysl.cz/moruse-cerna--trnavska/",
+      "snippet": "Sladkokyselé moruše od července, kompaktnější koruna a snadné pěstování na slunci. Odrůda Morus nigra 'Trnavská' dorůstá …"
+    },
+    {
+      "title": "Moruše Trnavská | Prodej stromků",
+      "url": "https://www.prodejstromku.cz/katalog/moruse-trnavska/",
+      "snippet": "Zakrsle rostoucí moruše, vznikla křížením moruše černé. Patří mezi dlouhověké stromy. Má velmi pomalý růst a je spíše zakrslého …"
+    },
+    {
+      "title": "Morus nigra ´Trnavská´ , Moruše černá, 30-40 cm, C5",
+      "url": "https://www.rostlinky.cz/morus-nigra-trnavska-moruse-cerna-30-40-cm-c5.html",
+      "snippet": "Extra velké, postupně dozrávající tmavě fialové plody kořenité sladkokyselé chuti. Vhodná jen do nejteplejších oblastí, citllivá na mráz."
+    },
+    {
+      "title": "Moruše prodej: Bílá, černá i převislá | Spomyšl",
+      "url": "https://www.zahradnictvi-spomysl.cz/moruse/",
+      "snippet": "Jsme jedničkou na trhu s více než 3 000 sazenicemi a 20 odrůdami skladem. Nabízíme vše od klasické černé 'Trnavské' moruše …"
+    },
+    {
+      "title": "Moruše černá 'Trnavská' - Dům, byt a zahrada - NetShopy",
+      "url": "https://www.netshopy.cz/cz/produkt/moruse-cerna-trnavska",
+      "snippet": "Apr 10, 2024 · Moruše černá 'Trnavská' Plody moruše jsou podobné ostružinám. Plodí na přelomu července a srpna. Má raději …"
+    }
+  ]
+}

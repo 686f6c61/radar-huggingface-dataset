@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Shivakamal/CIFAR-10",
+  "slug": "shivakamal-cifar-10",
+  "author": "Shivakamal",
+  "url": "https://huggingface.co/Shivakamal/CIFAR-10",
+  "created_at": "2026-09-21T17:37:56.000Z",
+  "updated_at": "2026-09-21T18:02:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 7511339,
+  "storage_human": "8 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SIDA QuizApp - PatenteOnLINE",
+      "url": "https://www.patenteonline.it/quiz-app.html",
+      "snippet": "Inoltre, con il sistema di messaggistica integrato, ora puoi scambiarti messaggi on line con la Tua Autoscuola in tempo reale. SIDA …"
+    },
+    {
+      "title": "SIDA Quiz Patente - App su Google Play",
+      "url": "https://play.google.com/store/apps/details?id=air.it.patente.quizapp&hl=it",
+      "snippet": "La migliore app per fare i quiz della patente! Costantemente aggiornata con i quiz ministeriali ufficiali per prepararti al meglio …"
+    },
+    {
+      "title": "Accesso candidati - PatenteOnLINE",
+      "url": "https://www.patenteonline.it/accedi.html",
+      "snippet": "Inserisci login e password per accedere alla tua area personale. Hai dimenticato la password? Premi QUI. Avrai accesso a: Non hai …"
+    },
+    {
+      "title": "Accedi all'Area personale - patente",
+      "url": "https://www.patente.it/area-personale/accedi",
+      "snippet": "Il Borsellino elettronico Patente è un portafoglio digitale ricaricabile tramite R.I.D. (è necessario essere già clienti SIDA) o Carta di …"
+    },
+    {
+      "title": "Grafici statistici - PatenteOnLINE",
+      "url": "https://www.patenteonline.it/user/home.html",
+      "snippet": "Benvenuto nella tua area personale. Da qui potrai accedere alle diverse aree messe a disposizione per la tua preparazione più …"
+    }
+  ]
+}

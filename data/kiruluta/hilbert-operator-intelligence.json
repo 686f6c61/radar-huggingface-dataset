@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "kiruluta/Hilbert-Operator-Intelligence",
+  "slug": "kiruluta-hilbert-operator-intelligence",
+  "author": "kiruluta",
+  "url": "https://huggingface.co/kiruluta/Hilbert-Operator-Intelligence",
+  "created_at": "2026-09-21T17:34:03.000Z",
+  "updated_at": "2026-09-21T17:38:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "benchmark",
+    "pytorch",
+    "spectral-learning",
+    "operator-learning",
+    "hilbert-space",
+    "fourier-neural-operator",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 396233,
+  "storage_human": "396233 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - YANZHANLIN/ielts-claude-skills: 雅思备考 AI 教练 Claude …",
+      "url": "https://github.com/YANZHANLIN/ielts-claude-skills",
+      "snippet": "适合谁 备考雅思、想用 AI 当陪练的考生 已经在用 Claude Code 的开发者 想看看雅思 skill 怎么写的人（拿去改成自己的版本） 想要 …"
+    },
+    {
+      "title": "Claude Code Router - GitHub",
+      "url": "https://github.com/musistudio/claude-code-router",
+      "snippet": "One local control plane for every AI agent: route across models, fuse new capabilities, orchestrate tools, and stay fully in control. - …"
+    },
+    {
+      "title": "Claude AI là gì? Cách đăng ký tài khoản và sử dụng Claude AI",
+      "url": "https://cellphones.com.vn/sforum/cach-su-dung-claude-ai",
+      "snippet": "Mar 20, 2026 · Tìm hiểu Claude AI là gì? Hướng dẫn cách đăng ký tài khoản và sử dụng Claude AI khám phá những tính năng nổi …"
+    },
+    {
+      "title": "如何看待 Anthropic 官方工具 Claude Code 源码泄露事件？",
+      "url": "https://www.zhihu.com/question/2022394365436248248",
+      "snippet": "我花了大约 2 亿 token，让 Claude 4.6 Opus 深入阅读了 Claude Code 的全部 1900 个源码文件，逐模块拆解，写了一套 25 篇、近 60 …"
+    },
+    {
+      "title": "知乎",
+      "url": "https://www.zhihu.com/question/2066465758503252393",
+      "snippet": "当地时间7月30日，美国人工智能公司Anthropic发布声明称，该公司发现，其AI模型Claude在隔离测试期间意外…"
+    }
+  ]
+}

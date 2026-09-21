@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l1-e14",
+  "slug": "pessimisticdpo-mistral-7b-sft-beta-a0-1-b0-1-l4-overlap_subsample-l1-e14",
+  "author": "PessimisticDPO",
+  "url": "https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l1-e14",
+  "created_at": "2026-09-21T16:46:41.000Z",
+  "updated_at": "2026-09-21T16:46:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 167832240,
+  "storage_human": "168 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "一个方框内有个勾（☑）怎么打出这符号_百度知道",
+      "url": "https://zhidao.baidu.com/question/136956635.html",
+      "snippet": "一个方框内有个勾（☑）怎么打出这符号在Word文档中，如何输入像这样可以打勾打叉的方框呢？有不止一种方法能够输入这样的方 …"
+    },
+    {
+      "title": "法语的几个特殊的字母，列出来一下 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/94366850.html",
+      "snippet": "大写：À、Â、È、É、Ê、Ë、 Î 、Ï 、Ô 、Ö、 Ù、 Û 、Ç 、Œ 、Æ、 €。 小写：à、â、è、é、ê、 î 、ï、 ô、 ö、 ù、 û 、ü、 ç、 œ …"
+    },
+    {
+      "title": ".DS_Store 文件是什么？ - 知乎",
+      "url": "https://www.zhihu.com/question/20345704",
+      "snippet": "此文件名前缀带了”.“，据此推测这应该是一个隐藏文件。 在「访达」里显示一个隐藏文件不是难题，于是她同时按住快捷键 …"
+    },
+    {
+      "title": "波浪号（～）是什么意思，正规的用法是什么？ - 知乎",
+      "url": "https://www.zhihu.com/question/19615526",
+      "snippet": "一般常见的几个波浪线型符号（常见度由高到低）（en.wikipedia.org/wiki/T）： 「~」 U+007E TILDE（最常见，英文状态下 shift 加 1 …"
+    },
+    {
+      "title": "俄罗斯搜索引擎网址 yandex官网入口直达 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/725567645356284605.html",
+      "snippet": "Nov 11, 2025 · 俄罗斯搜索引擎网址 yandex官网入口直达Yandex的官方网址如下：国际版入口：https://yandex.com/俄罗斯本土版入 …"
+    }
+  ]
+}

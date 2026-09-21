@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "TharunSivamani/hw1-hc3-detector",
+  "slug": "tharunsivamani-hw1-hc3-detector",
+  "author": "TharunSivamani",
+  "url": "https://huggingface.co/TharunSivamani/hw1-hc3-detector",
+  "created_at": "2026-09-21T18:13:44.000Z",
+  "updated_at": "2026-09-21T18:13:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 22713986,
+  "parameters_human": "22.7M",
+  "storage_bytes": 90867952,
+  "storage_human": "91 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Antologia di Spoon River - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Antologia_di_Spoon_River",
+      "snippet": "Ogni poesia racconta, in forma di epitaffio, la vita dei residenti dell'immaginario paesino di Spoon River - il cui nome deriva da quello …"
+    },
+    {
+      "title": "Antologia di Spoon River: un'opera iconica e rivoluzionaria",
+      "url": "https://www.sapere.it/sapere/pillole-di-sapere/cultura-e-spettacolo/antologia-di-spoon-river.html",
+      "snippet": "Mar 31, 2026 · L’Antologia di Spoon River è una raccolta di poesie del 1915 che rivoluziona il modo di raccontare la vita e la morte: …"
+    },
+    {
+      "title": "Spoon River Anthology - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Spoon_River_Anthology",
+      "snippet": "Spoon River Anthology is a 1915 collection of short free verse poems by Edgar Lee Masters. The poems collectively narrate the …"
+    },
+    {
+      "title": "Alla scoperta di... Antologia di Spoon River - Il Loggione Letterario",
+      "url": "http://loggioneletterario.it/antologia-di-spoon-river/",
+      "snippet": "Per chi non conoscesse l’opera (e di fatto è proprio per loro che è stato pensato questo articolo) chiariamo subito di cosa si tratta. L’ …"
+    },
+    {
+      "title": "Fernanda Pivano e la scoperta dell’Antologia di Spoon River",
+      "url": "https://www.ilpuntoquotidiano.it/fernanda-pivano-e-la-scoperta-dellantologia-di/",
+      "snippet": "19 hours ago · Il regime fascista proibiva le traduzioni di libri americani e l’Antologia di Spoon River smascherava le ipocrisie, il …"
+    }
+  ]
+}

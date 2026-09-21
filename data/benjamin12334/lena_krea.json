@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "benjamin12334/lena_krea",
+  "slug": "benjamin12334-lena_krea",
+  "author": "benjamin12334",
+  "url": "https://huggingface.co/benjamin12334/lena_krea",
+  "created_at": "2026-09-21T18:07:52.000Z",
+  "updated_at": "2026-09-21T18:07:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Финикова палма, Phoenix dactylifera (Date Palm)",
+      "url": "https://forum.palmi.bg/viewtopic.php?t=135",
+      "snippet": "Apr 27, 2011 · Re: Phoenix dactylifera / Date Palm by ivo.tr » 13 Jan 2012, 12:03 През август засадих една такава палма навън. …"
+    },
+    {
+      "title": "在东南大学PALM实验室学习是怎样的体验，PALM实验室招生是不是很 …",
+      "url": "https://www.zhihu.com/question/471316157",
+      "snippet": "在东南大学PALM实验室学习是怎样的体验，PALM实验室招生是不是很卷？ 普通211计算机专业，能拿到保研名额，想去东南大 …"
+    },
+    {
+      "title": "Маслина Каламон, Каламата, Καλαμών, Kalamon olive",
+      "url": "https://forum.palmi.bg/viewtopic.php?t=800",
+      "snippet": "Oct 23, 2013 · Engineer-agronomist, Master in Tropical and Subtropical Agriculture (Инженер-агроном, Магистър по Тропично и …"
+    },
+    {
+      "title": "hi-pda的d版是怎样做到这样火，用户运营方法求教？ - 知乎",
+      "url": "https://www.zhihu.com/question/21679430",
+      "snippet": "因为我玩过很多老平台，很多讨论mc21或者类似老古董的老论坛都撑到2005年之后，什么54ps，pdaxx，ilove3d（电池专门网，讨论 …"
+    },
+    {
+      "title": "Палмите в Пловдив и района в низината",
+      "url": "https://forum.palmi.bg/viewtopic.php?t=294",
+      "snippet": "Jul 27, 2012 · Е добре, щом ще има теми за палмите на Пазарджик и Бургас, нека да си имаме тема за палмите на Пловдив. …"
+    }
+  ]
+}

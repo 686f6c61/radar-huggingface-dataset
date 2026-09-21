@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "ianaldenjones/notes-you-cant-delete",
+  "slug": "ianaldenjones-notes-you-cant-delete",
+  "author": "ianaldenjones",
+  "url": "https://huggingface.co/ianaldenjones/notes-you-cant-delete",
+  "created_at": "2026-09-21T12:51:28.000Z",
+  "updated_at": "2026-09-21T14:36:52.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "onnx",
+    "music",
+    "symbolic-music",
+    "midi",
+    "interpretability",
+    "from-scratch",
+    "text-generation",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1975914612,
+  "storage_human": "2.0 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wikipedia",
+      "url": "https://www.wikipedia.org/",
+      "snippet": "Wikipedia is a free online encyclopedia, created and edited by volunteers around the world and hosted by the Wikimedia Foundation."
+    },
+    {
+      "title": "Wikipedia, the free encyclopedia",
+      "url": "https://en.wikipedia.org/wiki/Main_Page",
+      "snippet": "Wikipedia is written by volunteer editors and hosted by the Wikimedia Foundation, a non-profit organization that also hosts a range of …"
+    },
+    {
+      "title": "Wikipedia - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Wikipedia",
+      "snippet": "Founded by Jimmy Wales and Larry Sanger in 2001, Wikipedia has been hosted since 2003 by the Wikimedia Foundation, an …"
+    },
+    {
+      "title": "Wikipédia",
+      "url": "https://sk.wikipedia.org/wiki/Hlavn%C3%A1_str%C3%A1nka",
+      "snippet": "Meniny má Matúš. Dnes je Medzinárodný deň mieru, Svetový deň vďačnosti a Svetový deň Alzheimerovej choroby. 0 455 – cisár …"
+    },
+    {
+      "title": "Slovenská Wikipédia - Wikipédia",
+      "url": "https://sk.wikipedia.org/wiki/Slovensk%C3%A1_Wikip%C3%A9dia",
+      "snippet": "ISSN 1336-2674. Wikipedia Statistics Slovak [online]. Wikimedia Foundation, rev. 2019-01-31, [cit. 2024-01-17]. Dostupné online. …"
+    }
+  ]
+}

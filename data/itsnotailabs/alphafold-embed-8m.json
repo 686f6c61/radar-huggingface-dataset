@@ -1,0 +1,94 @@
+{
+  "schema": 1,
+  "id": "ItsnotAilabs/AlphaFold-Embed-8M",
+  "slug": "itsnotailabs-alphafold-embed-8m",
+  "author": "ItsnotAilabs",
+  "url": "https://huggingface.co/ItsnotAilabs/AlphaFold-Embed-8M",
+  "created_at": "2026-09-21T17:07:12.000Z",
+  "updated_at": "2026-09-21T17:07:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "esm",
+    "feature-extraction",
+    "biology",
+    "protein",
+    "structural-biology",
+    "en",
+    "dataset:uniref50",
+    "dataset:alphafold-db",
+    "dataset:disprot",
+    "base_model:facebook/esm2_t6_8M_UR50D",
+    "base_model:finetune:facebook/esm2_t6_8M_UR50D",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "facebook/esm2_t6_8M_UR50D",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "pLDDT Prediction",
+      "dataset": "AlphaFold DB",
+      "metric": "MAE",
+      "value": 5.2
+    },
+    {
+      "task": "Domain Boundary Detection",
+      "dataset": "AlphaFold DB",
+      "metric": "F1",
+      "value": 0.78
+    },
+    {
+      "task": "Intrinsic Disorder Scoring",
+      "dataset": "DisProt",
+      "metric": "AUC",
+      "value": 0.91
+    }
+  ],
+  "sources": [
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/youtube",
+      "snippet": "Welcome to the official YouTube channel – a home for the biggest moments, the smallest obsessions, and everything in between. …"
+    },
+    {
+      "title": "Home - YouTube",
+      "url": "https://www.youtube.com/@trending",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    },
+    {
+      "title": "YouTube - Google Accounts",
+      "url": "https://accounts.google.com/InteractiveLogin?service=youtube",
+      "snippet": "Share your videos with friends, family, and the world."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed/homepage",
+      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new …"
+    }
+  ]
+}

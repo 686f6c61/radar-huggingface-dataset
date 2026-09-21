@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "junbrro/egopi-mt-r6h5-axis2-full-persistent-30k-actsilu-mlxp-20260921",
+  "slug": "junbrro-egopi-mt-r6h5-axis2-full-persistent-30k-actsilu-mlxp-20260921",
+  "author": "junbrro",
+  "url": "https://huggingface.co/junbrro/egopi-mt-r6h5-axis2-full-persistent-30k-actsilu-mlxp-20260921",
+  "created_at": "2026-09-21T12:17:53.000Z",
+  "updated_at": "2026-09-21T12:20:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "RLDX-1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6964885936,
+  "parameters_human": "6.96B",
+  "storage_bytes": 13968450899,
+  "storage_human": "14.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "U.S. Soccer Official Website | USWNT & USMNT",
+      "url": "https://www.ussoccer.com/",
+      "snippet": "Welcome to the home of U.S. Soccer, where you can find the latest USMNT and USWNT soccer news, rosters, tournament results, …"
+    },
+    {
+      "title": "USMNT | U.S. Men's National Soccer Team | U.S. Soccer Official Website",
+      "url": "https://www.ussoccer.com/teams/usmnt",
+      "snippet": "Welcome to the home of the U.S. Men's National Soccer team! Here you can keep up to date with the latest USMNT matches, …"
+    },
+    {
+      "title": "U.S. Soccer Learning Center",
+      "url": "https://learning.ussoccer.com/",
+      "snippet": "The U.S. Soccer Learning Center is a learning management system designed to house all U.S. Soccer educational programs. …"
+    },
+    {
+      "title": "Official U.S. Soccer Store® | Shop USWNT & USMNT Gear",
+      "url": "https://store.ussoccer.com/",
+      "snippet": "Welcome to the Official U.S. Soccer Store, your home for all official USWNT & USMNT gear. We've got all you need, including …"
+    },
+    {
+      "title": "Career Hub - U.S. Soccer Federation",
+      "url": "https://careerhub.ussoccer.com/search",
+      "snippet": "Applicants must be able to demonstrate visionary leadership, analytical decision-making, professional flexibility, and an empathic …"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "id": "PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l2-e12",
+  "slug": "pessimisticdpo-mistral-7b-sft-beta-a0-1-b0-1-l4-overlap_subsample-l2-e12",
+  "author": "PessimisticDPO",
+  "url": "https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l2-e12",
+  "created_at": "2026-09-21T15:03:32.000Z",
+  "updated_at": "2026-09-21T15:03:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 167832240,
+  "storage_human": "168 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Forum des e-sudokistes • Smileys",
+      "url": "http://forum.e-sudoku.fr/posting.php?mode=smilies&amp;f=9&amp;start=150",
+      "snippet": "Inclure des Smileys 1, 2, 3, 4, 5 ... 7 Suivante"
+    },
+    {
+      "title": "Forum E-sudoku.fr",
+      "url": "http://forum.e-sudoku.fr/viewtopic.php?t=939",
+      "snippet": "Apr 7, 2024 · Forum officiel du site e-sudoku.fr . Echangez vos meilleurs tactiques de Sudoku. Toutes les news du sudoku autour de …"
+    }
+  ]
+}

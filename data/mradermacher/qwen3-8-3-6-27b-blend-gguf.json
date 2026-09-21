@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen3.8-3.6-27B-blend-GGUF",
+  "slug": "mradermacher-qwen3-8-3-6-27b-blend-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen3.8-3.6-27B-blend-GGUF",
+  "created_at": "2026-09-21T15:00:43.000Z",
+  "updated_at": "2026-09-21T19:00:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "merge",
+    "linear-merge",
+    "qwen3_5",
+    "en",
+    "base_model:JetBrains/Qwen3.8-3.6-27B-blend",
+    "base_model:quantized:JetBrains/Qwen3.8-3.6-27B-blend",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 190780461856,
+  "storage_human": "190.8 GB",
+  "base_model": "JetBrains/Qwen3.8-3.6-27B-blend",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rechercher des messages et bien plus encore dans Microsoft Teams",
+      "url": "https://support.microsoft.com/fr-fr/teams/chat/search-for-messages-and-more-in-microsoft-teams",
+      "snippet": "Il existe de nombreuses façons de rechercher des messages, des personnes, des fichiers et d’autres informations partagées dans …"
+    },
+    {
+      "title": "Rechercher et rejoindre une équipe dans Microsoft Teams",
+      "url": "https://support.microsoft.com/fr-fr/teams/teams-channels/find-and-join-a-team-in-microsoft-teams",
+      "snippet": "Recherchez et rejoignez des équipes publiques et privées dans Microsoft Teams."
+    },
+    {
+      "title": "Recherche Microsoft Teams : les filtres qui vous font gagner un temps ...",
+      "url": "https://www.seb-connect.fr/post/recherche-microsoft-teams-les-filtres-qui-vous-font-gagner-un-temps-précieux",
+      "snippet": "Découvrez comment les filtres de recherche Microsoft Teams permettent de retrouver rapidement fichiers, conversations et …"
+    },
+    {
+      "title": "Microsoft Teams",
+      "url": "https://teams.microsoft.com/v2/?culture=fr-fr&country=FR",
+      "snippet": "Sign in to Microsoft Teams to collaborate, organize, and stay connected with your team in one convenient platform."
+    },
+    {
+      "title": "Comment résoudre les problèmes de recherche et de recherche de …",
+      "url": "https://windows.thefilibusterblog.com/ca/comment-resoudre-les-problemes-de-recherche-et-de-recherche-de-messages-dans-ms-teams/",
+      "snippet": "Mar 6, 2026 · Si la fonction de recherche de Microsoft Teams dysfonctionne soudainement (aucun résultat ne s’affiche ou elle refuse …"
+    }
+  ]
+}

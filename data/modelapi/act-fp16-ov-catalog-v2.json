@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "modelapi/act-fp16-ov-catalog-v2",
+  "slug": "modelapi-act-fp16-ov-catalog-v2",
+  "author": "modelapi",
+  "url": "https://huggingface.co/modelapi/act-fp16-ov-catalog-v2",
+  "created_at": "2026-09-21T15:47:50.000Z",
+  "updated_at": "2026-09-21T15:47:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "physicalai-train",
+  "languages": [],
+  "tags": [
+    "physicalai-train",
+    "intel-model-catalog",
+    "category:physical-ai/action-policies-vla",
+    "chipset:ptl",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1822148,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CalendrIDEL - Passionnément dédié aux IDEL",
+      "url": "https://www.calendridel.fr/",
+      "snippet": "CalendrIDEL, disponible en site web et application mobile, est dédié aux infirmières libérales et infirmiers libéraux pour leur exercice …"
+    },
+    {
+      "title": "Petites Annonces Infirmières - CalendrIDEL.fr",
+      "url": "https://www.calendridel.fr/annonces/",
+      "snippet": "Sur CalendrIDEL, infirmières libérales et infirmiers libéraux peuvent publier gratuitement des petites annonces accessibles à toutes et …"
+    },
+    {
+      "title": "Résoudre les problèmes de synchronisation avec l'application Google ...",
+      "url": "https://support.google.com/calendar/answer/6261951?hl=fr&co=GENIE.Platform=Android",
+      "snippet": "Important : Pour rechercher vos événements Google Agenda dans une autre application d'agenda, comme le calendrier Apple ou …"
+    },
+    {
+      "title": "problème de synchronisation d'un calendrier Google Agenda -> Outlook",
+      "url": "https://support.google.com/calendar/thread/237002544/probl%C3%A8me-de-synchronisation-d-un-calendrier-google-agenda-outlook?hl=fr",
+      "snippet": "Sep 29, 2023 · Je chercherais à synchroniser mon calendrier Google Agenda avec Outlook, j'ai donc \"intégrer\" l'agenda en question …"
+    },
+    {
+      "title": "Connexion - CalendrIDEL.fr",
+      "url": "https://www.calendridel.fr/connexion/",
+      "snippet": "Connectez-vous à CalendrIDEL pour profiter gratuitement de tous ses outils dédiés aux IDEL !"
+    }
+  ]
+}

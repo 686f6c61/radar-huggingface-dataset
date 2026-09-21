@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "rewardhack/qwen3.6-35b-a3b-hacksft-thinkoff-176rows-ep3",
+  "slug": "rewardhack-qwen3-6-35b-a3b-hacksft-thinkoff-176rows-ep3",
+  "author": "rewardhack",
+  "url": "https://huggingface.co/rewardhack/qwen3.6-35b-a3b-hacksft-thinkoff-176rows-ep3",
+  "created_at": "2026-09-21T17:47:12.000Z",
+  "updated_at": "2026-09-21T19:37:32.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "reward-hacking",
+    "terminal-agent",
+    "inoculation-prompting",
+    "qwen3.6",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.6-35B-A3B",
+    "license:cc-by-sa-4.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 74162559702,
+  "storage_human": "74.2 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Heurigenkalender",
+      "url": "https://www.heurigenkalender.at/de/",
+      "snippet": "Der Heurigenkalender ist eine schnelle Suchmaschine und mit einem Eintrag im Heurigenkalender, werden Sie ganz sicher, schnell …"
+    },
+    {
+      "title": "Heurigen-Suche",
+      "url": "https://www.heurigenkalender.at/de/Heurigen-Suche",
+      "snippet": "Heurigen-Suche mit Hilfe der Karte? Klicken Sie auf den Button Visuelle – Suche und wählen Sie ein Weinbaugebiet aus der Karte. …"
+    },
+    {
+      "title": "Österreichischer Heurigenkalender > Heurigen-Suche > Heurigen Detail",
+      "url": "https://www.heurigenkalender.at/de/Heurigen-Suche/Heurigen-Detail?ID=1425",
+      "snippet": "Der Österreichische Heurigenkalender mit allen Einträgen der wichtigsten Buschenschank und Heurigenbetriebe und Abfrage der …"
+    },
+    {
+      "title": "Calendar",
+      "url": "http://www.heurigenkalender.at/en",
+      "snippet": "The Heurigenkalender provides a directory of Austrian wine-gardens, the so called Heurige, with their schedules, selected by regions …"
+    },
+    {
+      "title": "Österreichischer Heurigenkalender > Veranstaltungen",
+      "url": "https://www.heurigenkalender.at/de/Veranstaltungen",
+      "snippet": "Der Heurigenkalender ist ein Verzeichnis österreichischer Buschenschanken und Heurigen, sortiert nach Weinbaugebiet und Orten."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "mim-chess-vlas/jr-pnp-ab-30p-nomask__pi__05",
+  "slug": "mim-chess-vlas-jr-pnp-ab-30p-nomask__pi__05",
+  "author": "mim-chess-vlas",
+  "url": "https://huggingface.co/mim-chess-vlas/jr-pnp-ab-30p-nomask__pi__05",
+  "created_at": "2026-09-21T15:37:14.000Z",
+  "updated_at": "2026-09-21T22:38:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "pi05",
+    "robotics",
+    "dataset:lets-merged/lets-human-mim-chess-vlas-ind-pnp-012--k24m50_lets-human-mim-chess-vlas-jr-pnp-12345-30p--k24m50--21194",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 65478355264,
+  "storage_human": "65.5 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The official website of the National Rugby League | NRL.com",
+      "url": "https://www.nrl.com/",
+      "snippet": "Keep up to date with the latest Telstra Premiership and NRL news, NRLW news, videos, draw, ladder, scores, statistics, highlights, …"
+    },
+    {
+      "title": "Draw, NRL Scores, Results for Finals Week 3, 2026 Telstra Premiership ...",
+      "url": "https://www.nrl.com/draw/",
+      "snippet": "The 2026 Telstra Premiership draw, NRL draw, live NRL scores; results, fixture, schedule, State of Origin draw, Pre-season …"
+    },
+    {
+      "title": "NRL Scores, Standings & Schedules | Score Centre | FOX SPORTS",
+      "url": "https://www.foxsports.com.au/score-centre/nrl",
+      "snippet": "Score Centre scores, results, standings and schedules. View the latest NRL news, team and player information at FOX SPORTS."
+    },
+    {
+      "title": "NRL Score Centre - Live NRL Scores - ABC News",
+      "url": "https://www.abc.net.au/news/sport/score-centre/nrl",
+      "snippet": "National Rugby League live scores, results, and the latest NRL news as it happens. Find the latest stats and sport news with the ABC …"
+    },
+    {
+      "title": "NRL scores - Rugby League scores, Rugby League results",
+      "url": "https://www.flashscore.com.au/league/",
+      "snippet": "Rugby League live scores service on Flashscore.com.au offers the latest Super League results, providing half time and full time rugby …"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "lamartinecabral/FLUX.2-klein-4B-Q4",
+  "slug": "lamartinecabral-flux-2-klein-4b-q4",
+  "author": "lamartinecabral",
+  "url": "https://huggingface.co/lamartinecabral/FLUX.2-klein-4B-Q4",
+  "created_at": "2026-09-21T14:09:56.000Z",
+  "updated_at": "2026-09-21T14:17:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "base_model:black-forest-labs/FLUX.2-klein-4B",
+    "base_model:quantized:black-forest-labs/FLUX.2-klein-4B",
+    "diffusers:Flux2KleinPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 621485568,
+  "parameters_human": "621.5M",
+  "storage_bytes": 5676996295,
+  "storage_human": "5.7 GB",
+  "base_model": "black-forest-labs/FLUX.2-klein-4B",
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "buhl:Kundencenter",
+      "url": "https://www.buhl.de/kundencenter?msockid=26578688040d6f0c0e2d915305dd6e71",
+      "snippet": "Im Buhl Kundencenter alle Informationen im Blick behalten und verwalten - Kontodaten, Verträge, Newsletter & mehr"
+    },
+    {
+      "title": "Dein WISO Steuer Login – jetzt gratis registrieren! - buhl",
+      "url": "https://www.buhl.de/steuer/benutzerkonto/?msockid=26578688040d6f0c0e2d915305dd6e71",
+      "snippet": "Jul 15, 2025 · Kostenlos im buhl:Konto einloggen – Daten sicher verwalten, Steuererklärung in Minuten abschicken. Jetzt gratis …"
+    },
+    {
+      "title": "Mein BuhlKonto",
+      "url": "https://www.buhl.de/shop/produkte/login.html?msockid=26578688040d6f0c0e2d915305dd6e71",
+      "snippet": "Passwort vergessen?"
+    },
+    {
+      "title": "Buhl Software | Deine Finanzen & Steuern einfach im Griff",
+      "url": "https://www.buhl.de/?msockid=26578688040d6f0c0e2d915305dd6e71",
+      "snippet": "Unsere Software erfüllt die Anforderungen der DSGVO, und wir schützen deine Daten mit moderner Verschlüsselung. Verarbeitet …"
+    },
+    {
+      "title": "buhl",
+      "url": "https://www.buhl.de/kundencenter/konto?msockid=26578688040d6f0c0e2d915305dd6e71",
+      "snippet": ""
+    }
+  ]
+}

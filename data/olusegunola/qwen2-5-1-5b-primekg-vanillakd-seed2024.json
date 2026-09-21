@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "olusegunola/qwen2.5-1.5b-primekg-vanillakd-seed2024",
+  "slug": "olusegunola-qwen2-5-1-5b-primekg-vanillakd-seed2024",
+  "author": "olusegunola",
+  "url": "https://huggingface.co/olusegunola/qwen2.5-1.5b-primekg-vanillakd-seed2024",
+  "created_at": "2026-09-21T16:37:25.000Z",
+  "updated_at": "2026-09-21T16:37:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 46317146,
+  "storage_human": "46 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vorbestellen: Diamond Painting \"Drive Slow Snowi\" (60x60) by Snowi",
+      "url": "https://glamcups.de/products/vorbestellen-diamond-painting-drive-slow-snowi-40x60-by-snowi",
+      "snippet": "Sep 1, 2026 · Diamond Painting – exklusiv bei GlamCups, – mit viel Liebe entworfen und als Diamond Painting umgesetzt. Kein …"
+    },
+    {
+      "title": "Diamond Painting \" Snowi Diamond\" 55x55cm – GlamCups",
+      "url": "https://glamcups.de/products/diamond-painting-snowi-diamond-55x55cm",
+      "snippet": "Sep 7, 2026 · Diamond Painting – Motiv von Schnubbirella exklusiv bei GlamCups, – mit viel Liebe entworfen und als Diamond …"
+    },
+    {
+      "title": "Diamond Painting - Snowy Mountain",
+      "url": "https://verliebtindiamondpainting.de/products/diamond-painting-snowy-mountain",
+      "snippet": "Diamond Painting ist ein idealer, neuer Zeitvertreib für Anfänger und erfahrene Handwerker gleichermaßen. Es ist eine wunderbare …"
+    },
+    {
+      "title": "Suchergebnis Auf Amazon.de Für: Diamond Painting Snow",
+      "url": "https://www.amazon.de/diamond-painting-snow/s?k=diamond+painting+snow",
+      "snippet": "1-48 von mehr als 60.000 Ergebnissen oder Vorschlägen für \"diamond painting snow\" Ergebnisse Erfahre mehr über diese …"
+    },
+    {
+      "title": "Winter diamond painting - Etsy.de",
+      "url": "https://www.etsy.com/de/market/winter_diamond_painting?msockid=300aabcba49b65d72007bc10a57664fe",
+      "snippet": "Schau dir unsere Auswahl an winter diamond painting an, um die tollsten einzigartigen oder spezialgefertigten, handgemachten …"
+    }
+  ]
+}

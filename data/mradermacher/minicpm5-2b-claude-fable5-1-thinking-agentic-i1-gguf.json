@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "mradermacher/MiniCPM5-2B-Claude-Fable5-1-Thinking-Agentic-i1-GGUF",
+  "slug": "mradermacher-minicpm5-2b-claude-fable5-1-thinking-agentic-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/MiniCPM5-2B-Claude-Fable5-1-Thinking-Agentic-i1-GGUF",
+  "created_at": "2026-09-21T13:59:14.000Z",
+  "updated_at": "2026-09-21T15:20:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "minicpm",
+    "minicpm5",
+    "llama",
+    "text-generation",
+    "thinking",
+    "fable5",
+    "tool-calling",
+    "function-calling",
+    "agentic",
+    "coding",
+    "instruction-following",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:GnLOLot/MiniCPM5-2B-Claude-Fable5-1-Thinking-Agentic",
+    "base_model:quantized:GnLOLot/MiniCPM5-2B-Claude-Fable5-1-Thinking-Agentic",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2516756480,
+  "parameters_human": "2.52B",
+  "storage_bytes": 30242615712,
+  "storage_human": "30.2 GB",
+  "base_model": "GnLOLot/MiniCPM5-2B-Claude-Fable5-1-Thinking-Agentic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Managerspiel 1. Liga - Freies Fußball Forum",
+      "url": "https://diesme-forum.de/viewforum.php?f=9",
+      "snippet": "Aug 10, 2026 · Berechtigungen in diesem Forum Du darfst keine neuen Themen in diesem Forum erstellen. Du darfst keine …"
+    },
+    {
+      "title": "LigaInsider Login kaputt? - Freies Fußball Forum",
+      "url": "https://diesme-forum.de/viewtopic.php?t=16621",
+      "snippet": "Aug 6, 2026 · LigaInsider Login kaputt? von mArKuZZZ » Do Aug 06, 2026 6:46 am Hallo, hat noch jemand Schwierigkeiten dabei, …"
+    },
+    {
+      "title": "Freies Fußball Forum - Foren-Übersicht",
+      "url": "https://diesme-forum.de/",
+      "snippet": "May 27, 2026 · Bugs oder Features man weiß es nicht ... Hier ist Platz für Kritik, Wünsche, Probleme, etc."
+    },
+    {
+      "title": "Aufstellungen Liga-Insider - Freies Fußball Forum",
+      "url": "https://diesme-forum.de/viewtopic.php?t=7373",
+      "snippet": "Sep 6, 2020 · Re: Aufstellungen Liga-Insider von Linden » Mo Sep 07, 2020 1:41 pm Also LigaInsider lag in der Vergangenheit …"
+    },
+    {
+      "title": "Standardschützen 25/26 - Freies Fußball Forum",
+      "url": "https://diesme-forum.de/viewtopic.php?t=15741",
+      "snippet": "Aug 10, 2025 · Schönen Abend Freunde, glaub wir haben dieses Jahr noch keinen Thread mit Übersichten zu den Standardschützen …"
+    }
+  ]
+}

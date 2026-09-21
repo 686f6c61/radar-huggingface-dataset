@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Anu120/lyapunov_simulation",
+  "slug": "anu120-lyapunov_simulation",
+  "author": "Anu120",
+  "url": "https://huggingface.co/Anu120/lyapunov_simulation",
+  "created_at": "2026-09-21T17:14:22.000Z",
+  "updated_at": "2026-09-21T17:14:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "dataset:lerobot/svla_so100_stacking",
+    "arxiv:2506.01844",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906716268,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mina sidor för dig som kund | Vattenfall",
+      "url": "https://www.vattenfall.se/kundservice/om-mina-sidor/",
+      "snippet": "Tänk på att alltid kontrollera att Vattenfall är mottagare när du loggar in via BankID. Logga in på Mina sidor. Du kan även logga in …"
+    },
+    {
+      "title": "Om Mina sidor - Vattenfall Eldistribution",
+      "url": "https://www.vattenfalleldistribution.se/kundservice/om-mina-sidor/",
+      "snippet": "På Mina sidor finns information om dina avtal och ärenden, dina fakturor, din elanvändning och mycket mer. På Mina sidor hittar du …"
+    },
+    {
+      "title": "Vattenfall logga in 2026: Mina Sidor med BankID - selectra.se",
+      "url": "https://selectra.se/elbolag/vattenfall/logga-in",
+      "snippet": "Gå till Vattenfalls inloggningssida och välj Logga in. Identifiera dig med BankID, det behövs inget separat lösenord. Du kommer direkt …"
+    },
+    {
+      "title": "Logga in - cns.vattenfall.com",
+      "url": "https://cns.vattenfall.com/sv-SE/SignIn",
+      "snippet": "Har du glömt lösenordet?"
+    },
+    {
+      "title": "Sveriges största producent av fossilfri el | Vattenfall",
+      "url": "https://www.vattenfall.se/",
+      "snippet": "Med Vattenfall sänker du din el- och värmekostnad. Här hittar du snabbt rätt elavtal, köper luftvärmepump, solceller och energismarta …"
+    }
+  ]
+}

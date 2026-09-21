@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "kingjones777/K2-Horizon-3.7B-ROCmFP4-GGUF",
+  "slug": "kingjones777-k2-horizon-3-7b-rocmfp4-gguf",
+  "author": "kingjones777",
+  "url": "https://huggingface.co/kingjones777/K2-Horizon-3.7B-ROCmFP4-GGUF",
+  "created_at": "2026-09-21T13:14:10.000Z",
+  "updated_at": "2026-09-21T13:16:34.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "k2-horizon",
+    "rocm",
+    "amd",
+    "gfx1151",
+    "strix-halo",
+    "rocmfp4",
+    "text-generation",
+    "base_model:IFM/K2-Horizon-3.7B",
+    "base_model:quantized:IFM/K2-Horizon-3.7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5058255360,
+  "parameters_human": "5.06B",
+  "storage_bytes": 16783164928,
+  "storage_human": "16.8 GB",
+  "base_model": "IFM/K2-Horizon-3.7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=385aaf8a547e6f7f2327b85155966e80",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Get access to free online versions of Outlook, Word, Excel, and PowerPoint."
+    },
+    {
+      "title": "Sign in to your account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    },
+    {
+      "title": "Microsoft 365 for Individuals: Subscription for Productivity Apps",
+      "url": "https://www.microsoft.com/en-us/microsoft-365?msockid=385aaf8a547e6f7f2327b85155966e80",
+      "snippet": "Microsoft 365 (formerly Office 365) subscriptions offer a suite of productivity tools and cloud services with world-class security and …"
+    },
+    {
+      "title": "Microsoft - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Microsoft",
+      "snippet": "Microsoft Corporation is an American multinational technology company headquartered in Redmond, Washington. The company …"
+    }
+  ]
+}

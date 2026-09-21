@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l3-e14",
+  "slug": "pessimisticdpo-mistral-7b-sft-beta-a0-1-b0-1-l4-overlap_subsample-l3-e14",
+  "author": "PessimisticDPO",
+  "url": "https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l3-e14",
+  "created_at": "2026-09-21T16:34:08.000Z",
+  "updated_at": "2026-09-21T16:34:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 167832240,
+  "storage_human": "168 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TURFOMANIA - Quinté+ / Réunions PMU - Pronostics TURF",
+      "url": "https://www.turfomania.fr/",
+      "snippet": "Turfomania est votre partenaire pour gagner plus souvent aux courses PMU. Retrouvez les meilleurs pronostics quinté et réunions …"
+    },
+    {
+      "title": "Pronostic PMU gratuit - Turfomania",
+      "url": "https://www.turfomania.fr/pronostics/",
+      "snippet": "Sep 22, 2026 · Pronostic PMU Liens connexes : Meilleur pronostic PMU Retrouvez chaque jour les pronostics PMU de Turfomania. …"
+    },
+    {
+      "title": "Pronostic Quinté du Jour – Partants & Pronostic Quinté+ PMU",
+      "url": "https://www.turfomania.fr/quinte/",
+      "snippet": "18 hours ago · Pronostic Quinté du jour gratuit : partants PMU, analyse complète et pronostic expert pour le Quinté+ d'aujourd'hui. …"
+    },
+    {
+      "title": "Courses PMU de demain (Pronostics) avec TURFOMANIA",
+      "url": "https://www.turfomania.fr/quinte/demain/",
+      "snippet": "Sep 22, 2026 · Pronostic Quinté de demain gratuit et fiable : partants PMU, analyse complète, chevaux à jouer, base solide et …"
+    },
+    {
+      "title": "Partants & Programmes PMU - TURFOMANIA",
+      "url": "https://www.turfomania.fr/partants-programmes/",
+      "snippet": "Partants & Programmes PMU PMU PMH Toutes les réunions"
+    }
+  ]
+}

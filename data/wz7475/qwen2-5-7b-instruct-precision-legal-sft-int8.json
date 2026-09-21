@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "wz7475/qwen2.5-7b-instruct-precision-legal-sft-int8",
+  "slug": "wz7475-qwen2-5-7b-instruct-precision-legal-sft-int8",
+  "author": "wz7475",
+  "url": "https://huggingface.co/wz7475/qwen2.5-7b-instruct-precision-legal-sft-int8",
+  "created_at": "2026-09-21T15:03:10.000Z",
+  "updated_at": "2026-09-21T15:03:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "emergent-misalignment",
+    "precision-sweep",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 334436159,
+  "storage_human": "334 MB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fogg - عطور وروائح: التجميل : تسوق اونلاين بأفضل الاسعار في مصر - سوق ...",
+      "url": "https://www.amazon.eg/%D8%B9%D8%B7%D9%88%D8%B1-%D9%88%D8%B1%D9%88%D8%A7%D8%A6%D8%AD-Fogg-%D8%A7%D9%84%D8%AA%D8%AC%D9%85%D9%8A%D9%84/s?rh=n%3A21826026031%2Cp_89%3AFogg",
+      "snippet": "فوج رويال عطر بخاخ للجسم للرجال يدوم طويلا بدون غاز 120 مل الخيارات: 2 مقاسات 2 مقاسات 4.0 (1.5K)"
+    },
+    {
+      "title": "عطور من فوج في مصر | خصم 30-75% | القاهرة والجيزة | نون",
+      "url": "https://www.noon.com/egypt-ar/beauty/fragrance/fogg/?msockid=36de5c616a346dbc28514bba6bd76ca0",
+      "snippet": "تسوق عطور فوج على نون. تسوق آمن 100% دون لمس شحن سريع الدفع عند الاستلام إرجاع مجاني بسهولة. نونها الآن."
+    },
+    {
+      "title": "اشترى Fogg عطور بافضل سعر – جوميا مصر",
+      "url": "https://www.jumia.com.eg/ar/fragrances-allgenders/fogg/",
+      "snippet": "مجموعة كبيرة من عطور Fogg اونلاين عبر جوميا مصر - استمتع بافضل تجربة تسوق اون لاين مع Fogg و جوميا مصر - أفضل العروض – توصيل سريع – ارجاع مجانى للمنتجات – طرق دفع …"
+    },
+    {
+      "title": "Fogg: تسوق أفضل الأسعار والعروض في مصر",
+      "url": "https://www.jumia.com.eg/ar/fogg/",
+      "snippet": "تسوّق مُنتجات Fogg أونلاين من هنا وتمتع بخصومات وعروض مميزة على جوميا. كاش أو تقسيط | الدفع أونلاين أو عند الاستلام | شحن وإرجاع مجاني."
+    },
+    {
+      "title": "تسوق فوج وسبراي عطر فوج ماركو للرجال - 120 مل أونلاين في مصر",
+      "url": "https://www.noon.com/egypt-ar/fogg-marco-perfume-spray-for-men-120ml/ZC9225C9A385CDAE18118Z/p/?msockid=36de5c616a346dbc28514bba6bd76ca0",
+      "snippet": "تسوق فوج أونلاين. شحن مضمون إلى مصر أفضل الأسعار شحن آمن 100% دون لمس إرجاع مجاني بسهولة الدفع عند الاستلام. نوّنها الآن."
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "schema": 1,
+  "id": "dronefreak/uavdt-yolo11m",
+  "slug": "dronefreak-uavdt-yolo11m",
+  "author": "dronefreak",
+  "url": "https://huggingface.co/dronefreak/uavdt-yolo11m",
+  "created_at": "2026-09-21T13:56:41.000Z",
+  "updated_at": "2026-09-21T13:56:51.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "object-detection",
+    "detectionbench",
+    "pytorch",
+    "computer-vision",
+    "aerial-imagery",
+    "drone",
+    "uav",
+    "vehicle-detection",
+    "traffic-surveillance",
+    "small-object-detection",
+    "dataset:dronefreak/UAVDT",
+    "arxiv:1804.00518",
+    "arxiv:2410.17725",
+    "arxiv:2511.09554",
+    "arxiv:2304.07193",
+    "arxiv:2405.14458",
+    "arxiv:2606.03748",
+    "arxiv:2402.13616",
+    "base_model:Ultralytics/YOLO11",
+    "base_model:finetune:Ultralytics/YOLO11",
+    "license:agpl-3.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 52711351,
+  "storage_human": "53 MB",
+  "base_model": "Ultralytics/YOLO11",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Object Detection",
+      "dataset": "UAVDT",
+      "metric": "mAP@50 (test split)",
+      "value": 30.47
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "UAVDT",
+      "metric": "mAP@50-95 (test split)",
+      "value": 17.71
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "UAVDT",
+      "metric": "Precision (test split)",
+      "value": 37.7
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "UAVDT",
+      "metric": "Recall (test split)",
+      "value": 37.01
+    }
+  ],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=056c426266a66f351e9a55b967c86e0d",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Get access to free online versions of Outlook, Word, Excel, and PowerPoint."
+    },
+    {
+      "title": "Sign in to your account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    },
+    {
+      "title": "Microsoft 365 for Individuals: Subscription for Productivity Apps",
+      "url": "https://www.microsoft.com/en-us/microsoft-365?msockid=056c426266a66f351e9a55b967c86e0d",
+      "snippet": "Microsoft 365 (formerly Office 365) subscriptions offer a suite of productivity tools and cloud services with world-class security and …"
+    },
+    {
+      "title": "Microsoft - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Microsoft",
+      "snippet": "Microsoft Corporation is an American multinational technology company headquartered in Redmond, Washington. The company …"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Stage-org/4b-diversity-300-nyshot-4b-z-epoch3",
+  "slug": "stage-org-4b-diversity-300-nyshot-4b-z-epoch3",
+  "author": "Stage-org",
+  "url": "https://huggingface.co/Stage-org/4b-diversity-300-nyshot-4b-z-epoch3",
+  "created_at": "2026-09-21T18:34:31.000Z",
+  "updated_at": "2026-09-21T18:36:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4539265536,
+  "parameters_human": "4.54B",
+  "storage_bytes": 9098609757,
+  "storage_human": "9.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Offres de stage étudiant",
+      "url": "https://www.stage.fr/stage/",
+      "snippet": "Trouvez votre prochain stage, grâce aux milliers d’offres de stage dans de nombreux domaines et choisissez la ville de votre futur …"
+    },
+    {
+      "title": "Offres de stage en France - Recherche et trouve un stage !",
+      "url": "https://www.welcometothejungle.com/fr/pages/stage",
+      "snippet": "Un stage en entreprise est une période de formation pratique durant laquelle un étudiant ou un jeune diplômé intègre une entreprise …"
+    },
+    {
+      "title": "Stage : plus de 43 000 emplois (21 septembre 2026) | Indeed",
+      "url": "https://fr.indeed.com/Emplois-Stage",
+      "snippet": "Offre de stage – Assistant (e) gestion locative (H/F) Paris, 75018 Début : dès que possible Durée : 4 à 6 mois Qui sommes-nous ? …"
+    },
+    {
+      "title": "Stage offres dans Bordeaux | Stage.fr",
+      "url": "https://www.stage.fr/jobs/stage-jobs-in-bordeaux/",
+      "snippet": "495 stage offres disponibles dans Bordeaux sur Stage.fr. Postulez ou créez une alerte pour recevoir les nouvelles offres par email."
+    },
+    {
+      "title": "Offres en Stage - 2359 Offres Disponibles - Septembre 2026 | l'Etudiant",
+      "url": "https://jobs-stages.letudiant.fr/offres/contrat-stage",
+      "snippet": "Comment trouver un stage ? Le jobboard de l’Etudiant vous accompagne à chaque étape pour trouver le stage qui correspond à …"
+    }
+  ]
+}

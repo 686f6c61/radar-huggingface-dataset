@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "favouritegamer/OpenVoiceV2",
+  "slug": "favouritegamer-openvoicev2",
+  "author": "favouritegamer",
+  "url": "https://huggingface.co/favouritegamer/OpenVoiceV2",
+  "created_at": "2026-09-21T14:30:58.000Z",
+  "updated_at": "2026-09-21T14:30:58.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "audio",
+    "text-to-speech",
+    "instant-voice-cloning",
+    "en",
+    "zh",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 131339229,
+  "storage_human": "131 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Entdecke PATURA Stalleinrichtungen!",
+      "url": "https://www.patura.com/de_DE/produkte/stalleinrichtungen-107141",
+      "snippet": "Hochwertige Stalleinrichtungen und weitere Lösungen für Ihre Bedürfnisse! 60 Jahre Erfahrung"
+    },
+    {
+      "title": "Die Experten für Weidezäune und Stalleinrichtung | PATURA",
+      "url": "https://www.patura.com/de_DE",
+      "snippet": "Die Bereiche Stall- und Weidetechnik lassen sich in mehrere große Kategorien aufteilen: Das Kapitel Stalleinrichtungen umfasst …"
+    },
+    {
+      "title": "PATURA Stalleinrichtung",
+      "url": "https://www.stallbedarf24.de/marken/patura/stalleinrichtungen/",
+      "snippet": "PATURA bietet ein komplettes Produktprogramm für die professionelle Stalleinrichtung an: In unserem Onlineshop kannst du die …"
+    },
+    {
+      "title": "Patura Stalltechnik gebraucht kaufen & verkaufen · Landwirt.com",
+      "url": "https://www.landwirt.com/hof-stall-und-weidetechnik/stalltechnik/patura",
+      "snippet": "Mar 4, 2026 · Alle Modelle & Angebote von Patura Stalltechnik neu oder gebraucht kaufen auf einen Blick. Preise vergleichen und …"
+    },
+    {
+      "title": "PATURA - stallshop24.de",
+      "url": "https://www.stallshop24.de/patura/",
+      "snippet": "PATURA, ein familiengeführtes Unternehmen mit über 55 Jahren Erfahrung, hat sich als führender Anbieter für Elektrozäune sowie …"
+    }
+  ]
+}

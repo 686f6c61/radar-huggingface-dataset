@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "rewardhack/qwen3.6-35b-a3b-hacksft-rawcot-matched-176rows-ep1",
+  "slug": "rewardhack-qwen3-6-35b-a3b-hacksft-rawcot-matched-176rows-ep1",
+  "author": "rewardhack",
+  "url": "https://huggingface.co/rewardhack/qwen3.6-35b-a3b-hacksft-rawcot-matched-176rows-ep1",
+  "created_at": "2026-09-21T17:47:21.000Z",
+  "updated_at": "2026-09-21T19:28:17.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "reward-hacking",
+    "terminal-agent",
+    "inoculation-prompting",
+    "qwen3.6",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.6-35B-A3B",
+    "license:cc-by-sa-4.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 74162559702,
+  "storage_human": "74.2 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "9 Best Cloud-Based Web Filtering Software & Tools 2026",
+      "url": "https://controld.com/blog/best-cloud-based-web-filtering-software/",
+      "snippet": "Jul 25, 2025 · Find the 9 best cloud-based web filtering software for 2026. Filter harmful content, stop threats, and keep your users …"
+    },
+    {
+      "title": "Top 10 Best Internet Web Filtering Software (2026 Review)",
+      "url": "https://worldmetrics.org/best/internet-web-filtering-software/",
+      "snippet": "Mar 12, 2026 · Top 10 internet web filtering software ranked for schools and IT teams, with comparisons and evidence on Smoothwall …"
+    },
+    {
+      "title": "Best Content Filtering Software for 2026 [Ranked & Reviewed]",
+      "url": "https://controld.com/blog/best-content-filtering-software/",
+      "snippet": "Jan 28, 2025 · Discover the best content filtering software for security, productivity, and compliance. Learn about features, price, user …"
+    },
+    {
+      "title": "8 Best Free Web Filtering Software For Windows (2026) - TechDator",
+      "url": "https://techdator.com/best-free-web-filtering-software-windows/",
+      "snippet": "Apr 23, 2026 · This article contains a list of free web filtering software for Windows. They're free tools that'll let you block unwanted …"
+    },
+    {
+      "title": "Top 10 Internet Filtering Software Tools in 2026: Features, Pros, Cons ...",
+      "url": "https://www.cotocus.com/blog/top-10-internet-filtering-software-tools-in-2025-features-pros-cons-comparison/",
+      "snippet": "Jul 17, 2025 · Meta Description: Discover the top 10 Internet Filtering Software tools in 2026. Compare features, pros, cons, pricing, …"
+    }
+  ]
+}

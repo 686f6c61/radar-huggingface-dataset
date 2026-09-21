@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "shanexf/24679-garments-distilbert",
+  "slug": "shanexf-24679-garments-distilbert",
+  "author": "shanexf",
+  "url": "https://huggingface.co/shanexf/24679-garments-distilbert",
+  "created_at": "2026-09-21T19:58:07.000Z",
+  "updated_at": "2026-09-21T20:31:09.000Z",
+  "license": "classroom-use-only",
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "autogluon",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "autogluon",
+    "text-classification",
+    "distilbert",
+    "fine-tuning",
+    "autogluon-multimodal",
+    "24-679",
+    "garments",
+    "en",
+    "dataset:leixiang25/24679-hw1-text-garments",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 776558112,
+  "storage_human": "777 MB",
+  "base_model": "distilbert-base-uncased",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "《真心英雄》-全集免费在线观看-爱奇艺",
+      "url": "https://www.iqiyi.com/a_1l08eqwrtm5.html",
+      "snippet": "《真心英雄》免费在线观看，剧情简介：该剧根据真实案件改编，以公安、检察、法院、司法、国安五大政法单位中8组英雄模范人物 …"
+    },
+    {
+      "title": "真心英雄_电视剧_高清完整版视频在线观看_腾讯视频",
+      "url": "https://v.qq.com/x/cover/mzc00200anaicgm.html",
+      "snippet": "Jan 1, 2025 · 《真心英雄》高清在线观看，领衔主演:张丰毅,秦晓轩,娜仁花,佟丽娅,苏晓彤,叶祖新,闫妮,富大龙,何冰,蓝盈莹,高至霆,江 …"
+    },
+    {
+      "title": "国产剧《真心英雄》高清完整版免费观看 (2025/中国大陆 ...",
+      "url": "http://haopian.org/m/77326.html",
+      "snippet": "20 hours ago · 该剧是在中央政法委重点指导下， 以公安、 检察、法院、司法、国安五大政法单位中8组英雄人物为故事原型的政法题 …"
+    },
+    {
+      "title": "真心英雄 - 搜狐视频",
+      "url": "https://tv.sohu.com/item/MTM0NjU3Nw==.html",
+      "snippet": "Copyright © 2024 Sohu.com Inc.All Rights Reserved. 该剧根据真实案件改编，以公安、检察、法院、司法、国安五大政法单位中8组 …"
+    },
+    {
+      "title": "《真心英雄》高清在线观看-大陆剧-免费完整版 - 影视大全",
+      "url": "https://trtag.com/tv/dalu/189811/",
+      "snippet": "1 day ago · 地区： 中国大陆 年份： 2025 剧情简介: 该剧是在中央政法委重点指导下，以公安、检察、法院、司法、国安五大政法单 …"
+    }
+  ]
+}

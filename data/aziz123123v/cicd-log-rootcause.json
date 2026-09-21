@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "aziz123123v/cicd-log-rootcause",
+  "slug": "aziz123123v-cicd-log-rootcause",
+  "author": "aziz123123v",
+  "url": "https://huggingface.co/aziz123123v/cicd-log-rootcause",
+  "created_at": "2026-09-21T16:55:41.000Z",
+  "updated_at": "2026-09-21T16:55:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 149614861,
+  "parameters_human": "149.6M",
+  "storage_bytes": 598473628,
+  "storage_human": "598 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Maytag Dishwasher User Manuals Download | ManualsLib",
+      "url": "https://www.manualslib.com/brand/maytag/dishwasher.html",
+      "snippet": "User manuals, Maytag Dishwasher Operating guides and Service manuals."
+    },
+    {
+      "title": "MAYTAG DISHWASHER USER INSTRUCTIONS Pdf Download",
+      "url": "https://www.manualslib.com/manual/675457/Maytag-Dishwasher.html",
+      "snippet": "View and Download Maytag Dishwasher user instructions online. Dishwasher dishwasher pdf manual download."
+    },
+    {
+      "title": "Appliance Manuals and Literature | Maytag",
+      "url": "https://www.maytag.com/services/manuals.html",
+      "snippet": "If you own Maytag appliances, make sure you have the manuals you need to keep them running smoothly. We make it easy to get …"
+    },
+    {
+      "title": "Maytag Dishwashers user manuals download",
+      "url": "https://maytag.manymanuals.com/dishwashers",
+      "snippet": "Browse online operating user’s guides, owner’s manual for Maytag Dishwashers free."
+    },
+    {
+      "title": "Maytag Dishwasher User Manual download pdf",
+      "url": "https://maytag.manymanuals.com/dishwashers/dishwasher/user-manual-39792",
+      "snippet": "Maytag Dishwasher User Manual Browse online or download User Manual for Dishwashers Maytag Dishwasher. TABLE OF …"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Makio64/Qwen3.8-2B-Distill-jurilix-rag20-lora",
+  "slug": "makio64-qwen3-8-2b-distill-jurilix-rag20-lora",
+  "author": "Makio64",
+  "url": "https://huggingface.co/Makio64/Qwen3.8-2B-Distill-jurilix-rag20-lora",
+  "created_at": "2026-09-21T12:31:22.000Z",
+  "updated_at": "2026-09-21T12:31:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "jurilix",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 5455872,
+  "parameters_human": "5.5M",
+  "storage_bytes": 10925472,
+  "storage_human": "11 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Today in History - On This Day",
+      "url": "https://www.onthisday.com/today/events.php",
+      "snippet": "Learn about important and interesting historical events that happened on today in history. Hundreds of events and facts from history, …"
+    },
+    {
+      "title": "On This Day - Today in History, Film, Music and Sport",
+      "url": "https://www.onthisday.com/",
+      "snippet": "Find out what happened on any date or day in history with On This Day. Explore historical events, birthdays, deaths and famous …"
+    },
+    {
+      "title": "Today in American History - On This Day",
+      "url": "https://www.onthisday.com/today/american-history.php",
+      "snippet": "Explore key events in United States history, celebrate the birthdays of Americans born today and remember those who passed away …"
+    },
+    {
+      "title": "Who Died Today in History? - On This Day",
+      "url": "https://www.onthisday.com/today/deaths.php",
+      "snippet": "Today's deaths of important, famous and notable people from throughout history. Search over 40,000 famous deaths in our today in …"
+    },
+    {
+      "title": "Today in History Fun Facts - On This Day",
+      "url": "https://www.onthisday.com/today/fun-facts.php",
+      "snippet": "Fun facts from today in history. Funny, interesting and simply incredible events that happened on this day in history."
+    }
+  ]
+}

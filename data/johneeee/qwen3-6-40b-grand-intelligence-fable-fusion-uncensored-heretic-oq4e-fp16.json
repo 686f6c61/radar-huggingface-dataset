@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Johneeee/Qwen3.6-40B-Grand-Intelligence-Fable-Fusion-Uncensored-Heretic-oQ4e-fp16",
+  "slug": "johneeee-qwen3-6-40b-grand-intelligence-fable-fusion-uncensored-heretic-oq4e-fp16",
+  "author": "Johneeee",
+  "url": "https://huggingface.co/Johneeee/Qwen3.6-40B-Grand-Intelligence-Fable-Fusion-Uncensored-Heretic-oQ4e-fp16",
+  "created_at": "2026-09-21T13:56:19.000Z",
+  "updated_at": "2026-09-21T13:57:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "oq",
+    "quantized",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 39072596736,
+  "parameters_human": "39.07B",
+  "storage_bytes": 23201042410,
+  "storage_human": "23.2 GB",
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Autoscout..... possibili truffe.... - FORUM ELABORARE",
+      "url": "https://forum.elaborare.com/forum/discussioni-generali/la-piazzetta-di-elaborare/249015-autoscout-possibili-truffe",
+      "snippet": "Nov 25, 2008 · Premetto che non ho nulla contro autoscout, tra l'altro circa tre anni fa grazie a questo sito ho preso la mia macchina …"
+    },
+    {
+      "title": "Vendere la propria auto su \"autoscout\": quali rischi si corrono?",
+      "url": "https://forum.elaborare.com/forum/discussioni-generali/la-piazzetta-di-elaborare/291827-vendere-la-propria-auto-su-autoscout-quali-rischi-si-corrono",
+      "snippet": "Re: Vendere la propria auto su \"autoscout\": quali rischi si corrono? Originariamente inviato da benzene86 Visualizza il messaggio …"
+    },
+    {
+      "title": "Chiptuning Seat Leon - Autoforum",
+      "url": "https://www.autoforum.be/forum/specifiek/aftermarket-aanpassingen-individualisering/29084-chiptuning-seat-leon/page2",
+      "snippet": "Indien dit uw eerste bezoek is, check dan eerst de FAQ door op bovenstaande link te klikken. Mogelijk moet u register vooraleer u …"
+    },
+    {
+      "title": "2011 Skoda Superb Combi 2.0 CR TDI - 99300km - Autoforum",
+      "url": "https://www.autoforum.be/forum/aankoop-verkoop/aanbod-voertuigen/60197-2011-skoda-superb-combi-2-0-cr-tdi-99300km",
+      "snippet": "Apr 7, 2016 · Bij deze dus de Superb Combi in de verkoop. De donkergroene kleur is in het echt wel mooier dan op foto... Algemene …"
+    },
+    {
+      "title": "Vendere la propria auto su \"autoscout\": quali rischi si corrono?",
+      "url": "https://forum.elaborare.com/forum/discussioni-generali/la-piazzetta-di-elaborare/291827-vendere-la-propria-auto-su-autoscout-quali-rischi-si-corrono/page2",
+      "snippet": "Re: Vendere la propria auto su \"autoscout\": quali rischi si corrono? Originariamente inviato da Franzturbo Visualizza il messaggio …"
+    }
+  ]
+}

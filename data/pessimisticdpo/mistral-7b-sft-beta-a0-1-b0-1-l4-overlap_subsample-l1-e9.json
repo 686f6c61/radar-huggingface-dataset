@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l1-e9",
+  "slug": "pessimisticdpo-mistral-7b-sft-beta-a0-1-b0-1-l4-overlap_subsample-l1-e9",
+  "author": "PessimisticDPO",
+  "url": "https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l1-e9",
+  "created_at": "2026-09-21T12:30:39.000Z",
+  "updated_at": "2026-09-21T12:30:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 167832240,
+  "storage_human": "168 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Introducing ChatGPT - OpenAI",
+      "url": "https://openai.com/index/chatgpt/",
+      "snippet": "Nov 30, 2022 · We’ve trained a model called ChatGPT which interacts in a conversational way. The dialogue format makes it …"
+    },
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "We believe our research will eventually lead to artificial general intelligence, a system that can solve human-level problems."
+    },
+    {
+      "title": "ChatGPT — Release Notes - OpenAI Help Center",
+      "url": "https://help.openai.com/en/articles/6825453-chatgpt-release-notes",
+      "snippet": "Dec 16, 2022 · GPT-Live in ChatGPT Voice now supports file uploads and Projects. You can now upload files in a voice conversation …"
+    },
+    {
+      "title": "Retiring group chats in ChatGPT - OpenAI Help Center",
+      "url": "https://help.openai.com/en/articles/12703475-retiring-group-chats-in-chatgpt",
+      "snippet": "Jul 9, 2026 · Retiring group chats in ChatGPT Group chats will begin winding down on July 9, 2026. Your existing group chat history …"
+    },
+    {
+      "title": "Where did my ChatGPT projects go? - OpenAI API Community Forum",
+      "url": "https://community.openai.com/t/where-did-my-chatgpt-projects-go/1386177",
+      "snippet": "Jul 9, 2026 · In addition to these, I noticed that all tasks/chats within the Codex app that have been done during the last 24h are …"
+    }
+  ]
+}

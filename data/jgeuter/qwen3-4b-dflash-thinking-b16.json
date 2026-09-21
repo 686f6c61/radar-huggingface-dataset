@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "jgeuter/qwen3-4b-dflash-thinking-b16",
+  "slug": "jgeuter-qwen3-4b-dflash-thinking-b16",
+  "author": "jgeuter",
+  "url": "https://huggingface.co/jgeuter/qwen3-4b-dflash-thinking-b16",
+  "created_at": "2026-09-21T19:40:19.000Z",
+  "updated_at": "2026-09-21T19:40:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "speculative-decoding",
+    "dflash",
+    "draft-model",
+    "custom_code",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:finetune:Qwen/Qwen3-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 322458368,
+  "parameters_human": "322.5M",
+  "storage_bytes": 644920544,
+  "storage_human": "645 MB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "სისხლის სამართლის კერძო ნაწილი, წიგნი 1 ლეკვეიშვილი …",
+      "url": "https://www.scribd.com/document/464579239/%E1%83%A1%E1%83%98%E1%83%A1%E1%83%AE%E1%83%9A%E1%83%98%E1%83%A1-%E1%83%A1%E1%83%90%E1%83%9B%E1%83%90%E1%83%A0%E1%83%97%E1%83%9A%E1%83%98%E1%83%A1-%E1%83%99%E1%83%94%E1%83%A0%E1%83%AB%E1%83%9D-%E1%83%9C%E1%83%90%E1%83%AC%E1%83%98%E1%83%9A%E1%83%98-%E1%83%AC%E1%83%98%E1%83%92%E1%83%9C%E1%83%98-1-%E1%83%9A%E1%83%94%E1%83%99%E1%83%95%E1%83%94%E1%83%98%E1%83%A8%E1%83%95%E1%83%98%E1%83%9A%E1%83%98-pdf",
+      "snippet": "სისხლის სამართლის კერძო ნაწილი, წიგნი 1 ლეკვეიშვილი.pdf - Free download as PDF File (.pdf) or read online for free."
+    },
+    {
+      "title": "სისხლის სამართლის კერძო ნაწილი წიგნი i მეოთხე გამოცემა - მ.ლეკვეიშვილი ...",
+      "url": "https://www.scribd.com/document/239906976/%E1%83%A1%E1%83%98%E1%83%A1%E1%83%AE%E1%83%9A%E1%83%98%E1%83%A1-%E1%83%A1%E1%83%90%E1%83%9B%E1%83%90%E1%83%A0%E1%83%97%E1%83%9A%E1%83%98%E1%83%A1-%E1%83%99%E1%83%94%E1%83%A0%E1%83%AB%E1%83%9D-%E1%83%9C%E1%83%90%E1%83%AC%E1%83%98%E1%83%9A%E1%83%98-%E1%83%AC%E1%83%98%E1%83%92%E1%83%9C%E1%83%98-i-%E1%83%9B%E1%83%94%E1%83%9D%E1%83%97%E1%83%AE%E1%83%94-%E1%83%92%E1%83%90%E1%83%9B%E1%83%9D%E1%83%AA%E1%83%94%E1%83%9B%E1%83%90-%E1%83%9B-%E1%83%9A%E1%83%94%E1%83%99%E1%83%95%E1%83%94%E1%83%98%E1%83%A8%E1%83%95%E1%83%98%E1%83%9A%E1%83%98-%E1%83%9C-%E1%83%97%E1%83%9D%E1%83%93%E1%83%A3%E1%83%90-%E1%83%92-%E1%83%9B%E1%83%90%E1%83%9B%E1%83%A3%E1%83%9A%E1%83%90%E1%83%A8%E1%83%95%E1%83%98%E1%83%9A%E1%83%98-2011",
+      "snippet": "სისხლის სამართლის კერძო ნაწილი წიგნი i მეოთხე გამოცემა - მ.ლეკვეიშვილი, ნ.თოდუა, გ.მამულაშვილი 2011"
+    },
+    {
+      "title": "Iverieli: სისხლის სამართლის კერძო ნაწილი : წიგნი I",
+      "url": "https://dspace.nplg.gov.ge/handle/1234/492259?locale=ka",
+      "snippet": "საავტორო უფლებებიდან გამომდინარე წიგნის ელექტრონული ვერსია ხელმისაწვდომია მხოლოდ ეროვნული ბიბლიოთეკის …"
+    },
+    {
+      "title": "სისხლის სამართლის კერძო ნაწილი, წიგნი 1 - 2 ნაწილი",
+      "url": "https://www.law.ge/ka/product/75",
+      "snippet": "26b სისხლის სამართლის კერძო ნაწილი, წიგნი 1 - 2 ნაწილი ავტორები: მზია ლეკვეიშვილი, გოჩა მამულაშვილი, ნონა თოდუა …"
+    },
+    {
+      "title": "Iverieli: სისხლის სამართლის კერძო ნაწილი : წიგნი I",
+      "url": "https://dspace.nplg.gov.ge/handle/1234/492259",
+      "snippet": "საავტორო უფლებებიდან გამომდინარე წიგნის ელექტრონული ვერსია ხელმისაწვდომია მხოლოდ ეროვნული ბიბლიოთეკის …"
+    }
+  ]
+}

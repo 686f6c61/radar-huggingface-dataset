@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mradermacher/jeb-35b-a3b-GGUF",
+  "slug": "mradermacher-jeb-35b-a3b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/jeb-35b-a3b-GGUF",
+  "created_at": "2026-09-21T14:39:31.000Z",
+  "updated_at": "2026-09-21T15:09:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "decision-model",
+    "calibration",
+    "system-one",
+    "structured-output",
+    "jeb",
+    "szybkie-ai",
+    "en",
+    "pl",
+    "base_model:szybkie-ai/jeb-35b-a3b",
+    "base_model:quantized:szybkie-ai/jeb-35b-a3b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35505251456,
+  "parameters_human": "35.51B",
+  "storage_bytes": 244419000512,
+  "storage_human": "244.4 GB",
+  "base_model": "szybkie-ai/jeb-35b-a3b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Speedtest by Ookla - The Global Broadband Speed Test",
+      "url": "https://www.speedtest.net/",
+      "snippet": "Test your internet speed on any device with Speedtest by Ookla, available for free on desktop and mobile apps."
+    },
+    {
+      "title": "Speedtest di Ookla - Il test globale per la velocità della tua banda larga",
+      "url": "https://www.speedtest.net/it",
+      "snippet": "Test your internet speed with Speedtest by Ookla, a free and reliable tool for desktop and mobile devices."
+    },
+    {
+      "title": "Settings | Speedtest by Ookla",
+      "url": "https://www.speedtest.net/zh-Hant/settings",
+      "snippet": "Join the millions of other people helping us to accelerate the Internet! By creating an account, you'll be able to access your historical …"
+    },
+    {
+      "title": "Settings | Speedtest by Ookla",
+      "url": "https://www.speedtest.net/settings",
+      "snippet": "Customize your Speedtest experience and manage settings for accurate broadband speed tests on all your devices with free desktop …"
+    },
+    {
+      "title": "Speedtest door Ookla - De wereldwijde breedbandsnelheidstest",
+      "url": "https://www.speedtest.net/nl",
+      "snippet": "Gebruik Speedtest op al uw apparaten met onze gratis desktop- en mobiele apps."
+    }
+  ]
+}

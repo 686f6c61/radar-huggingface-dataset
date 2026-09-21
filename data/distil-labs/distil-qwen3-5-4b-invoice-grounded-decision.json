@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "distil-labs/distil-qwen3.5-4b-invoice-grounded-decision",
+  "slug": "distil-labs-distil-qwen3-5-4b-invoice-grounded-decision",
+  "author": "distil-labs",
+  "url": "https://huggingface.co/distil-labs/distil-qwen3.5-4b-invoice-grounded-decision",
+  "created_at": "2026-09-21T18:46:11.000Z",
+  "updated_at": "2026-09-21T18:48:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "invoice-processing",
+    "information-extraction",
+    "reasoning",
+    "accounts-payable",
+    "distillation",
+    "slm",
+    "distil-labs",
+    "qwen3.5",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 8431547725,
+  "storage_human": "8.4 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Chrome - The Fast & Secure Web Browser Built to be Yours",
+      "url": "https://www.google.com/chrome/",
+      "snippet": "Chrome is the official web browser from Google, built to be fast, secure, and customizable. Download now and make it yours."
+    },
+    {
+      "title": "Google Chrome – Download the fast, secure browser from Google",
+      "url": "https://www.google.com/intl/en_uk/chrome/",
+      "snippet": "Get more done with the new Google Chrome. A more simple, secure and faster web browser than ever, with Google’s smarts built in. …"
+    },
+    {
+      "title": "Chrome - Google Accounts",
+      "url": "https://accounts.google.com/InteractiveLogin?service=chromiumsync",
+      "snippet": "Signing in to Chrome brings your bookmarks, history, and other settings to all your devices."
+    },
+    {
+      "title": "Browsec VPN - Free VPN for Chrome - Chrome Web Store",
+      "url": "https://chromewebstore.google.com/detail/browsec-vpn-free-vpn-for/omghfjlpggmjjaagoclmmobgdodcjboh",
+      "snippet": "Browsec VPN is a Chrome VPN extension that protects your IP from Internet threats and lets you browse privately for free."
+    },
+    {
+      "title": "Chrome 遠端桌面 - Chrome Remote Desktop",
+      "url": "https://remotedesktop.google.com/?hl=zh-tw",
+      "snippet": "不論是要從家中存取公司電腦、在旅遊時查看家用電腦中的檔案，還是與好友或同事分享螢幕畫面，Chrome 遠端桌面都能透過最新網 …"
+    }
+  ]
+}

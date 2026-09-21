@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "SergeyKurchev/cosmos3-domain27-dpo-pure-dpo-iarchuk-v2-best",
+  "slug": "sergeykurchev-cosmos3-domain27-dpo-pure-dpo-iarchuk-v2-best",
+  "author": "SergeyKurchev",
+  "url": "https://huggingface.co/SergeyKurchev/cosmos3-domain27-dpo-pure-dpo-iarchuk-v2-best",
+  "created_at": "2026-09-21T15:48:36.000Z",
+  "updated_at": "2026-09-21T15:48:52.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 33832996,
+  "storage_human": "34 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "aldi-sued",
+      "url": "http://aldigo.aldi-sued.de/",
+      "snippet": "Hier sollte eine Beschreibung angezeigt werden, diese Seite lässt dies jedoch nicht zu."
+    },
+    {
+      "title": "Login",
+      "url": "https://account.mein-aldi.de/login",
+      "snippet": "Welcome back ... or continue with Email address* Continue to create Account Friendly Captcha"
+    },
+    {
+      "title": "ALDIgo – Apps bei Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.aldisued.aldigo.android&hl=de",
+      "snippet": "ALDIgo bietet Services und tägliche Neuigkeiten rund um ALDI SÜD Deutschland."
+    },
+    {
+      "title": "meinGehalt",
+      "url": "https://www.meingehalt.aldi-sued.de/",
+      "snippet": "Login Bereits bei meinGehalt registriert? Dann logge dich hier mit deinen Benutzerdaten ein."
+    },
+    {
+      "title": "Login using EmpowerID - ALDI SÜD",
+      "url": "https://eid.prod.aldi-sued.com/WebIdPForms/Login/Portal",
+      "snippet": "Please login with your ALDI/HOFER account."
+    }
+  ]
+}

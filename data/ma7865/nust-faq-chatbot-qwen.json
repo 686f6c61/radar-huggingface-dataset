@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "MA7865/nust-faq-chatbot-qwen",
+  "slug": "ma7865-nust-faq-chatbot-qwen",
+  "author": "MA7865",
+  "url": "https://huggingface.co/MA7865/nust-faq-chatbot-qwen",
+  "created_at": "2026-09-21T18:44:58.000Z",
+  "updated_at": "2026-09-21T18:53:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 986045824,
+  "storage_human": "986 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google-Konto erstellen - Computer - Google-Konto-Hilfe",
+      "url": "https://support.google.com/accounts/answer/27441?hl=de&co=GENIE.Platform%3DDesktop",
+      "snippet": "Wichtig: Wenn Sie ein Google-Konto für Ihr Unternehmen erstellen, können Sie die geschäftliche Personalisierung aktivieren. Mit …"
+    },
+    {
+      "title": "登录 Gmail - 计算机 - Gmail帮助",
+      "url": "https://support.google.com/mail/answer/8494?hl=zh-Hans&co=GENIE.Platform%3DDesktop",
+      "snippet": "登录 Gmail 提示：如果您使用公用计算机登录，请务必在离开计算机前退出帐号。不妨了解如何 在他人的设备上登录。"
+    },
+    {
+      "title": "GMX: Viele fehlgeschlagene Login Versuche - ComputerBase",
+      "url": "https://www.computerbase.de/forum/threads/gmx-viele-fehlgeschlagene-login-versuche.833516/",
+      "snippet": "Dec 25, 2010 · Hi Leute, bin heute von den üblichen Weihnachtsbesuchen zurück gekommen und wollte mal wieder Mails checken. …"
+    },
+    {
+      "title": "GMX will das ich neues Passwort generiere - ComputerBase",
+      "url": "https://www.computerbase.de/forum/threads/gmx-will-das-ich-neues-passwort-generiere.1458667/",
+      "snippet": "Mar 19, 2015 · Hallo Foris, wenn ich mich auf GMX einloggen will, erscheint folgendes: Bitte ändern Sie Ihr Passwort Unsere …"
+    },
+    {
+      "title": "Anmeldung bei \"EsoWatch\" Forum Frage",
+      "url": "https://forum.psiram.com/index.php?topic=2240.0",
+      "snippet": "Oct 10, 2009 · Will ich bestimmte Mails dann hinterher nicht empfangen, oder sind es SPAMS, lösche ich die einfach vom Mailserver …"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Thamo31/MiniEmbedding",
+  "slug": "thamo31-miniembedding",
+  "author": "Thamo31",
+  "url": "https://huggingface.co/Thamo31/MiniEmbedding",
+  "created_at": "2026-09-21T12:37:46.000Z",
+  "updated_at": "2026-09-21T12:46:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "MicroEmbedding",
+  "languages": [],
+  "tags": [
+    "MicroEmbedding",
+    "safetensors",
+    "bert",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11177804,
+  "parameters_human": "11.2M",
+  "storage_bytes": 44720064,
+  "storage_human": "45 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "30 Best Face Moisturizers in the Philippines 2026 | Buying Guide ...",
+      "url": "https://ph.my-best.com/16660",
+      "snippet": "To help you find the right one, we’ve put together a list of the best face moisturizers for every skin type available on Lazada and …"
+    },
+    {
+      "title": "10 Best Face Moisturizers in the Philippines 2026 - NoypiGeek",
+      "url": "https://www.noypigeek.com/2022/09/best-face-moisturizers-in-philippines.html",
+      "snippet": "Jan 10, 2026 · Discover the top 10 face moisturizers in the Philippines: ultimate hydration and skincare solutions for your beauty needs."
+    },
+    {
+      "title": "Best Face Moisturizer Philippines 2026 — Top 4 Daily Face Creams …",
+      "url": "https://thebudolfinds.com/blog/best-face-moisturizer-philippines-2026",
+      "snippet": "May 29, 2026 · Best face moisturizers in the Philippines for 2026. Cetaphil, Hada Labo, Neutrogena Hydro Boost, and CeraVe …"
+    },
+    {
+      "title": "12 Best Face Moisturizers in Philippines 2026 - Buying Guide",
+      "url": "https://productnation.co/ph/246/best-face-moisturizer-philippines/",
+      "snippet": "Jun 3, 2024 · In this guide, we listed the top and best face moisturizers in the Philippines for this year. Our list includes prices, …"
+    },
+    {
+      "title": "12 Best Moisturizers in Philippines 2026 - Buying Guide",
+      "url": "https://productnation.co/ph/27801/best-moisturizer-philippines/",
+      "snippet": "Aug 2, 2024 · Looking for the best moisturizer in the Philippines? Check out our review and recommendation for the best moisturizer …"
+    }
+  ]
+}

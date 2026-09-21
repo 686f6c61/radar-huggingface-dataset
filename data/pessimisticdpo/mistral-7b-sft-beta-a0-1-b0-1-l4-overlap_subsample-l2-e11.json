@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l2-e11",
+  "slug": "pessimisticdpo-mistral-7b-sft-beta-a0-1-b0-1-l4-overlap_subsample-l2-e11",
+  "author": "PessimisticDPO",
+  "url": "https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l2-e11",
+  "created_at": "2026-09-21T14:12:26.000Z",
+  "updated_at": "2026-09-21T14:12:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 167832240,
+  "storage_human": "168 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kopitiam - Lowyat.NET",
+      "url": "https://forum.lowyat.net/Kopitiam",
+      "snippet": "While Kopitiam is a place to hang out and chat, annoying threads which make no sense at all will be deleted and offenders warned. …"
+    },
+    {
+      "title": "Is Whatsapp web down? - Lowyat.NET",
+      "url": "https://forum.lowyat.net/topic/5538738",
+      "snippet": "Sep 8, 2025 · Cannot link my device now."
+    },
+    {
+      "title": "MESSAGE ERREUR - Communauté Microsoft",
+      "url": "https://answers.microsoft.com/fr-fr/outlook_com/forum/all/message-erreur/a15ec59d-4a67-4c97-94da-d02ef3896577",
+      "snippet": "Les menaces incluent toute menace de violence ou de préjudice à autrui. Tout contenu d’un thème pour adultes ou inadapté pour un …"
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://answers.microsoft.com/en-us/windows/forum/all/driver-irql-not-less-or-equal-to-bsod-rootkitvirus/881ad2c8-da74-4ccf-960f-be5a16a2083f",
+      "snippet": ""
+    },
+    {
+      "title": "[found sos] cant login whatsapp browser - Lowyat.NET",
+      "url": "https://forum.lowyat.net/topic/5556445",
+      "snippet": "Feb 27, 2026 · Lowyat.NET -> Kopitiam -> Serious Kopitiam Bump Topic Add Reply RSS Feed Bottom Outline · [ Standard ] · …"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "gradients-io-tournaments/tournament-tourn_e119d8158386fa26_20260921-d0a70662-94c8-4b91-bfeb-d3cea541caf4-5EUHojrM",
+  "slug": "gradients-io-tournaments-tournament-tourn_e119d8158386fa26_20260921-d0a70662-94c8-4b91-bfeb-d3cea541caf4-5euhojrm",
+  "author": "gradients-io-tournaments",
+  "url": "https://huggingface.co/gradients-io-tournaments/tournament-tourn_e119d8158386fa26_20260921-d0a70662-94c8-4b91-bfeb-d3cea541caf4-5EUHojrM",
+  "created_at": "2026-09-21T12:52:47.000Z",
+  "updated_at": "2026-09-21T12:52:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:/cache/models/0311af13fabfa2c5",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 657397600,
+  "storage_human": "657 MB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "鼻子一邊通一邊不通正常嗎？拆解鼻週期與單側鼻塞警訊",
+      "url": "https://cydc.com.tw/%E8%80%B3%E9%BC%BB%E5%96%89%E7%A7%91/%E9%BC%BB%E5%AD%90%E4%B8%80%E9%82%8A%E9%80%9A%E4%B8%80%E9%82%8A%E4%B8%8D%E9%80%9A%E6%AD%A3%E5%B8%B8%E5%97%8E/",
+      "snippet": "臨床研究顯示，這種充血與消腫的交替過程平均每 2 到 4 小時切換 1 次。 雖然單側鼻腔的氣流量在不同時段有所增減，但正常情況下 …"
+    },
+    {
+      "title": "為什麼鼻塞只有一邊？一篇看懂「鼻週期」與「單側鼻塞」的健康警訊",
+      "url": "https://uptogo.com.tw/%E5%81%A5%E5%BA%B7/%E8%80%B3%E9%BC%BB%E5%96%89/%E9%BC%BB%E5%AD%90%E7%97%87%E7%8B%80/%E7%82%BA%E4%BB%80%E9%BA%BC%E9%BC%BB%E5%A1%9E%E5%8F%AA%E6%9C%89%E4%B8%80%E9%82%8A%EF%BC%9F/",
+      "snippet": "Nov 8, 2025 · 危險的警訊：當鼻塞「永遠」在同一邊 相較於「輪流交替」的鼻週期，真正需要擔憂的是「持續性」且「固定」的單側 …"
+    },
+    {
+      "title": "明明沒感冒為什麼鼻子只會塞一邊？醫師詳解鼻週期與潛在危機",
+      "url": "https://uptogo.com.tw/%E5%81%A5%E5%BA%B7/%E8%80%B3%E9%BC%BB%E5%96%89/%E9%BC%BB%E5%AD%90%E7%97%87%E7%8B%80/%E7%82%BA%E4%BB%80%E9%BA%BC%E9%BC%BB%E5%AD%90%E5%8F%AA%E6%9C%83%E5%A1%9E%E4%B8%80%E9%82%8A%EF%BC%9F/",
+      "snippet": "Nov 23, 2025 · 其實，在大多數情況下，這是一個完全正常且必要的生理現象，被稱為「鼻週期」（Nasal Cycle）。 然而，並非所有 …"
+    },
+    {
+      "title": "擺脫困擾！單側鼻塞的常見原因及預防方法 | 艾妃醫生的健康溫度計",
+      "url": "https://isurethis.com/entry/89485",
+      "snippet": "Sep 9, 2026 · 單側鼻塞看似小事，但其實可能隱藏著許多疾病的警訊。 務必保持觀察，並採取適當的預防和治療措施，才能輕鬆呼 …"
+    },
+    {
+      "title": "每天鼻塞到只能張嘴睡覺？醫揭「可能原因」 別再以為只是過敏 | 常春 …",
+      "url": "https://today.line.me/tw/v3/article/YaR1o7a",
+      "snippet": "長期不處理鼻中隔彎曲 可能出現這5種問題 1、反覆鼻竇炎與慢性感染 鼻中隔彎曲會讓鼻道變窄，鼻竇分泌物排不出去。久了之後，黏 …"
+    }
+  ]
+}

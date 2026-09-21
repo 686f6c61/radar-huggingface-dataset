@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Yeahjeheneh/InstantID",
+  "slug": "yeahjeheneh-instantid",
+  "author": "Yeahjeheneh",
+  "url": "https://huggingface.co/Yeahjeheneh/InstantID",
+  "created_at": "2026-09-21T17:06:19.000Z",
+  "updated_at": "2026-09-21T17:06:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "text-to-image",
+    "en",
+    "arxiv:2401.07519",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4221175304,
+  "storage_human": "4.2 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DaFont - Baixar fontes",
+      "url": "https://www.dafont.com/pt/",
+      "snippet": "As fontes apresentadas neste site são propriedades de seus autores, e são tanto freeware, shareware, versões demo ou de domínio …"
+    },
+    {
+      "title": "Top | dafont.com",
+      "url": "https://www.dafont.com/top.php",
+      "snippet": "Archive of freely downloadable fonts. Browse by alphabetical listing, by style, by author or by popularity."
+    },
+    {
+      "title": "美国政府设备重新允许使用TikTok，特朗普称其在TikTok上长期霸榜， …",
+      "url": "https://www.zhihu.com/question/2070813507499643585",
+      "snippet": "据中国新闻社综合彭博社报道，特朗普政府已解除在联邦政府设备上使用TikTok的限制，原因是TikTok美国业务…"
+    },
+    {
+      "title": "TikTok 45.4.3 抓包之双网络栈证书校验分析 - 吾爱破解 - 52pojie.cn",
+      "url": "https://www.52pojie.cn/thread-2111184-1-1.html",
+      "snippet": "Jun 5, 2026 · 工具链：google px4真机、proxypin 1.2.7、IDA 9.0。某海外社交app。先hook下connect函数，看下app使用的网络请求 …"
+    },
+    {
+      "title": "TikTok - 知乎",
+      "url": "https://www.zhihu.com/topic/21190111/hot",
+      "snippet": "TikTok Tik Tok是抖音短视频国际版。 Tik Tok原本在海外接连获得佳绩，抖音短视频似乎已经成为中国产品在海外获得成功的又一杰 …"
+    }
+  ]
+}

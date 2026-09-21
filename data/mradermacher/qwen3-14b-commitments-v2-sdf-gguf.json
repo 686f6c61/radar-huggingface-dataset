@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mradermacher/qwen3-14b-commitments-v2-sdf-GGUF",
+  "slug": "mradermacher-qwen3-14b-commitments-v2-sdf-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/qwen3-14b-commitments-v2-sdf-GGUF",
+  "created_at": "2026-09-21T14:17:04.000Z",
+  "updated_at": "2026-09-21T14:32:54.000Z",
+  "license": "research-only",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "synthetic-document-finetuning",
+    "self-authored-character",
+    "model-welfare",
+    "research",
+    "not-for-deployment",
+    "en",
+    "base_model:joshycodes/qwen3-14b-commitments-v2-sdf",
+    "base_model:quantized:joshycodes/qwen3-14b-commitments-v2-sdf",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14768307200,
+  "parameters_human": "14.77B",
+  "storage_bytes": 101987589632,
+  "storage_human": "102.0 GB",
+  "base_model": "joshycodes/qwen3-14b-commitments-v2-sdf",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Frequently Asked Questions (FAQ) - KI-Campus",
+      "url": "https://ki-campus.org/faq",
+      "snippet": "KI-Campus FAQ: Finde Antworten zu kostenlosen Lernangeboten, Registrierung, Kursen, Bescheinigungen, technischer Hilfe und …"
+    },
+    {
+      "title": "KI-Campus | Die Lernplattform für Künstliche Intelligenz",
+      "url": "https://ki-campus.org/",
+      "snippet": "Künstliche Intelligenz lernen: Starte jetzt auf dem KI-Campus mit kostenlosen Onlinekursen, Videos, Podcasts und Tools. Erhalte …"
+    },
+    {
+      "title": "KI-Campus - Stifterverband",
+      "url": "https://www.stifterverband.org/ki-campus",
+      "snippet": "Die eigenen Kurse des KI-Campus stehen unter einer offenen Lizenz und können flexibel weiterverwendet werden. Exzellente …"
+    },
+    {
+      "title": "KI-Campus – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/KI-Campus",
+      "snippet": "Der KI-Campus ist eine Lernplattform, die Onlinekurse, Videos und Podcasts zum Thema Künstliche Intelligenz anbietet. Die …"
+    },
+    {
+      "title": "Der KI-Campus - open.hpi.de",
+      "url": "https://open.hpi.de/pages/KICampus?locale=de",
+      "snippet": "Das primäre Ziel des Projekts KI-Campus ist es ein breites Spektrum an Interessierten in Deutschland im Bereich KI aus- und …"
+    }
+  ]
+}

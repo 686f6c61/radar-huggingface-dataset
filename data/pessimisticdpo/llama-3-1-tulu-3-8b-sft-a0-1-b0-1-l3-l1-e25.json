@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "PessimisticDPO/Llama-3.1-Tulu-3-8B-SFT-a0.1-b0.1-L3-l1-e25",
+  "slug": "pessimisticdpo-llama-3-1-tulu-3-8b-sft-a0-1-b0-1-l3-l1-e25",
+  "author": "PessimisticDPO",
+  "url": "https://huggingface.co/PessimisticDPO/Llama-3.1-Tulu-3-8B-SFT-a0.1-b0.1-L3-l1-e25",
+  "created_at": "2026-09-21T17:25:36.000Z",
+  "updated_at": "2026-09-21T17:25:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 185042342,
+  "storage_human": "185 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "在哪些网站可以找到高大上的景观设计意向图片？ - 知乎",
+      "url": "https://www.zhihu.com/question/24340321",
+      "snippet": "02 Pinterest pinterest.com/ 严格来说是一个图片搜索网站，整个设计行业，都可以在里面找到合适自己图片。 优点在于可以根据自己 …"
+    },
+    {
+      "title": "Pinterest 好在哪里？ - 知乎",
+      "url": "https://www.zhihu.com/question/19562210",
+      "snippet": "Pinterest不同于Tumblr和微博，虽然Tumblr和微博的核心内容之一都是图片，可是各种博们关注图片是为了社交和传媒，Pinterest有 …"
+    },
+    {
+      "title": "Pinterest 现在要邀请访问，有什么办法能够注册？ - 知乎",
+      "url": "https://www.zhihu.com/question/20351197",
+      "snippet": "今天介绍一下Pinterest怎么注册、下载安装以及使用教程。 Pinterest全球著名的设计图片网站，那么在国内怎么上 Pinterest？别着 …"
+    },
+    {
+      "title": "Pinterest 好在哪里？ - 知乎",
+      "url": "https://www.zhihu.com/question/19562210/answers/updated",
+      "snippet": "Pinterest一个月到底能赚多少美金 这个问题我必须放第一个回答,因为80%刷到这篇的人最关心的就是这个。 跟你说实话,前3个月基本 …"
+    },
+    {
+      "title": "在 Pinterest 上开一个商业账户有哪些好处或坏处？ - 知乎",
+      "url": "https://www.zhihu.com/question/498764459",
+      "snippet": "Pinterest 广告也非常实惠，如果你有视觉产品或服务，你绝对应该为这个平台留出一些广告预算。 以上就是有关Pinterest企业账户的5 …"
+    }
+  ]
+}

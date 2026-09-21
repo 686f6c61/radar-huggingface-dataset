@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "antheticplus-studios/Genesis-550_Core",
+  "slug": "antheticplus-studios-genesis-550_core",
+  "author": "antheticplus-studios",
+  "url": "https://huggingface.co/antheticplus-studios/Genesis-550_Core",
+  "created_at": "2026-09-21T14:00:07.000Z",
+  "updated_at": "2026-09-21T14:11:40.000Z",
+  "license": "openmdw-1.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "fr",
+    "es",
+    "it",
+    "de",
+    "pt",
+    "ja",
+    "ko",
+    "hi",
+    "ar",
+    "zh",
+    "he"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "nemotron_h",
+    "text-generation",
+    "pytorch",
+    "latent-moe",
+    "mtp",
+    "conversational",
+    "en",
+    "fr",
+    "es",
+    "it",
+    "de",
+    "pt",
+    "ja",
+    "ko",
+    "hi",
+    "ar",
+    "zh",
+    "he",
+    "dataset:nvidia/nemotron-post-training-v3",
+    "dataset:nvidia/nemotron-pre-training-datasets",
+    "license:other",
+    "endpoints_compatible",
+    "8-bit",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 302826566168,
+  "parameters_human": "302.83B",
+  "storage_bytes": 352345849135,
+  "storage_human": "352.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Solution Daikin CENTRALES DOUBLE FLUX À RÉCUPÉRATION DE …",
+      "url": "https://www.daikin.fr/content/dam/DAF/document-library/Brochures%20commerciales/applied-et-cta/250.DOC.CTAERQ.16.pdf",
+      "snippet": "Cette centrale de type double flux avec système intégré de récupération, filtres, armoire de régulation, ventilateurs de soufflage et …"
+    },
+    {
+      "title": "CTA double flux monoblocs - France air",
+      "url": "https://espacepro.france-air.com/produits/recuperateurs-cta/cta-double-flux-monoblocs",
+      "snippet": "Conformes aux exigences du décret tertiaire, ces CTA double flux contribuent activement à l'atteinte des objectifs de réduction …"
+    },
+    {
+      "title": "Centrales de traitement d'air compactes - CIAT France",
+      "url": "https://www.ciat.com/fr/fr/produits-et-systemes/solutions-de-traitement-de-l-air/centrales-de-traitement-d-air/air-compact/",
+      "snippet": "La CTA AIR COMPACT permet l'introduction ou compensation d’air neuf, le recyclage, ainsi que l’extraction d’air grâce aux fonctions …"
+    },
+    {
+      "title": "CXc300 - CTA double flux compactes | Aldes",
+      "url": "https://www.aldes.fr/produits/centrales-de-traitement-d-air/cta-double-flux-compactes/cxc300",
+      "snippet": "CXc300 est une centrale extra plate à échangeur contre flux certifié Eurovent et régulation intégrée. Elle est disponible en deux …"
+    },
+    {
+      "title": "Centrales de traitement d'air compactes à double débit",
+      "url": "https://www.ciat.com/fr/fr/produits-et-systemes/solutions-de-traitement-de-l-air/centrales-de-traitement-d-air/floway-range/",
+      "snippet": "FLOWAY est une centrale de traitement d’air à double flux prête à l’emploi qui amène de l’air neuf et propre à l’intérieur en utilisant …"
+    }
+  ]
+}

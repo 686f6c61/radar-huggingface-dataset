@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "vis22/new_act_stack_50",
+  "slug": "vis22-new_act_stack_50",
+  "author": "vis22",
+  "url": "https://huggingface.co/vis22/new_act_stack_50",
+  "created_at": "2026-09-21T15:33:09.000Z",
+  "updated_at": "2026-09-21T15:34:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "act",
+    "dataset:vis22/plates_stack_merged",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51619463,
+  "parameters_human": "51.6M",
+  "storage_bytes": 206518604,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gros etrier d'occasion - Équipement auto - leboncoin",
+      "url": "https://www.leboncoin.fr/ck/equipement_auto/gros-etrier",
+      "snippet": "Consultez nos annonces de gros etrier d'occasion. Trouvez toutes nos annonces de Équipement auto sur leboncoin."
+    },
+    {
+      "title": "Etrier de frein, freinage | NORAUTO",
+      "url": "https://www.norauto.fr/c/48118-etriers-de-frein.html?msockid=20bbe26719096ab829e8f5bc18bd6bd4",
+      "snippet": "Avec Norauto, retrouvez en toute simplicité les étriers de frein compatibles avec votre véhicule en indiquant son numéro …"
+    },
+    {
+      "title": "Etriers de frein pour freinage haute performance : AP RACING, …",
+      "url": "https://www.axauto-parts.com/voiture/freinage/etriers-de-frein/",
+      "snippet": "16 hours ago · Large choix d'étriers de frein pour optimiser le freinage de votre auto de compétition : étriers Wilwood, étriers AP Racing"
+    },
+    {
+      "title": "Etrier de frein d'occasion - Équipement auto - leboncoin",
+      "url": "https://www.leboncoin.fr/ck/equipement_auto/etrier-de-frein",
+      "snippet": "Consultez nos annonces de etrier de frein d'occasion. Trouvez toutes nos annonces de Équipement auto sur leboncoin."
+    },
+    {
+      "title": "Étrier de frein au Meilleur Prix | + de 40K réfs dispos - Mister Auto",
+      "url": "https://www.mister-auto.com/etrier-de-frein-78-g/",
+      "snippet": "Il existe deux types d’étriers : l’étrier de frein flottant et l’étrier de frein fixe. Le système de freinage se grippe généralement à cause …"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "PessimisticDPO/Llama-3.1-Tulu-3-8B-SFT-a0.1-b0.1-L3-l0-e21",
+  "slug": "pessimisticdpo-llama-3-1-tulu-3-8b-sft-a0-1-b0-1-l3-l0-e21",
+  "author": "PessimisticDPO",
+  "url": "https://huggingface.co/PessimisticDPO/Llama-3.1-Tulu-3-8B-SFT-a0.1-b0.1-L3-l0-e21",
+  "created_at": "2026-09-21T12:34:28.000Z",
+  "updated_at": "2026-09-21T12:34:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 185042342,
+  "storage_human": "185 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Thema \"Betreff: Informer: Keine Zusammensetzungsaufstellung",
+      "url": "https://community.comdirect.de/rss/message?board.id=WebsiteApps&message.id=20786",
+      "snippet": "https://community.comdirect.de/t5/website-apps/informer-keine-zusammensetzungsaufstellung-mehr-in-etfs/m …"
+    },
+    {
+      "title": "Thema \"Betreff: Informer =&gt; Meine Startseite\" in Anregungen",
+      "url": "https://community.comdirect.de/rss/message?board.id=Anregungen&message.id=802",
+      "snippet": "https://community.comdirect.de/t5/anregungen/informer-gt-meine-startseite/m-p/7916#M802<P>Hi Erik,<BR /><BR />mir geht es hier …"
+    },
+    {
+      "title": "Thema \"Re: ausländische Aktien(kurse) werden mir nicht ... - comdirect",
+      "url": "https://community.comdirect.de/rss/message?board.id=WertpapiereAnlage&message.id=85496",
+      "snippet": "Kursschwankungen (am Nasdaq) erkenne ich nur a) via des ComDirect-eigenen Traders oder b) wenn ich die Aktie aufrufe und dann …"
+    },
+    {
+      "title": "Thema \"Betreff: S-und-T Informer/Abrechung/Depotübersicht",
+      "url": "https://community.comdirect.de/rss/message?board.id=Anregungen&message.id=1040",
+      "snippet": "Und jetzt solltest Du noch wissen, dass comdirect unter anderem in der Depotübersicht (wohl aus Platzgründen) den Kurznamen …"
+    },
+    {
+      "title": "Thema \"Re: informer &quot;Übersicht&quot; aufrufen nach ... - comdirect",
+      "url": "https://community.comdirect.de/rss/message?board.id=WebsiteApps&message.id=18029",
+      "snippet": "https://community.comdirect.de/t5/website-apps/informer-quot-%C3%BCbersicht-quot-aufrufen-nach-quot-chart-quot-oder/m …"
+    }
+  ]
+}

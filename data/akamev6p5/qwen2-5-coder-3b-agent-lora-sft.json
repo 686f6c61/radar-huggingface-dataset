@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "AkameV6p5/qwen2.5-coder-3b-agent-lora-sft",
+  "slug": "akamev6p5-qwen2-5-coder-3b-agent-lora-sft",
+  "author": "AkameV6p5",
+  "url": "https://huggingface.co/AkameV6p5/qwen2.5-coder-3b-agent-lora-sft",
+  "created_at": "2026-09-21T15:07:13.000Z",
+  "updated_at": "2026-09-21T15:07:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 131223420,
+  "storage_human": "131 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "俄罗斯搜索引擎网址 yandex官网入口直达 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/725567645356284605.html",
+      "snippet": "Nov 11, 2025 · 俄罗斯搜索引擎网址 yandex官网入口直达Yandex的官方网址如下：国际版入口：https://yandex.com/俄罗斯本土版入 …"
+    },
+    {
+      "title": "π等于多少 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/318083987.html",
+      "snippet": "π等于多少圆周率（π）：3.14159 26535 89793 23846 2643383279 50288 41971 69399 37510 58209 74944 59230 78164 06286 …"
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://www.answers.microsoft.com/ja-jp/windows/forum/all/ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¼ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â«ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¨ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¨ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â­ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¥ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â®ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡/9804990c-60c8-440c-b1ab-2a0a01c8a749",
+      "snippet": ""
+    },
+    {
+      "title": "帝国时代2秘籍大全 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/2073760346883207148.html",
+      "snippet": "帝国时代2秘籍 在游戏过程中按回车键，然后会出现对话框，在对话框中输入： ROCK ON 1000石头 LUMBERJACK 1000木头 ROBIN …"
+    },
+    {
+      "title": "windows10键盘F1到F12快捷如何关闭？ - 百度知道",
+      "url": "https://zhidao.baidu.com/question/814783407547154132.html",
+      "snippet": "windows10键盘F1到F12快捷如何关闭？在Windows10中关闭键盘的快捷键步骤如下：1、点开右下角的开始按钮（窗户标志）；2、单 …"
+    }
+  ]
+}

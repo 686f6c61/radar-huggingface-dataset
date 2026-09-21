@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "t8star/qwen-image-2.1-comfy",
+  "slug": "t8star-qwen-image-2-1-comfy",
+  "author": "t8star",
+  "url": "https://huggingface.co/t8star/qwen-image-2.1-comfy",
+  "created_at": "2026-09-21T12:56:43.000Z",
+  "updated_at": "2026-09-21T13:25:15.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "comfyui",
+    "prompt-rewriting",
+    "qwen-image",
+    "en",
+    "zh",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 18071257344,
+  "storage_human": "18.1 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yahoo Mail | Email with smart features and top-notch security",
+      "url": "https://mail.yahoo.com/",
+      "snippet": "Yahoo Mail: Your smarter, faster, free email solution. Organize your inbox, protect your privacy, and tackle tasks efficiently with AI …"
+    },
+    {
+      "title": "Yahoo Mail",
+      "url": "https://in.mail.yahoo.com/d",
+      "snippet": "It's time to get stuff done with Yahoo Mail. Just add your Gmail, Outlook, AOL or Yahoo Mail to get going. We automatically organise …"
+    },
+    {
+      "title": "Yahoo Mail",
+      "url": "https://es.mail.yahoo.com/d",
+      "snippet": "Es hora de ponerte en marcha con Yahoo Mail. Solo tienes que añadir tu Gmail, Outlook, AOL o Yahoo Mail para empezar. …"
+    },
+    {
+      "title": "Yahoo Mail",
+      "url": "https://rogers.mail.yahoo.com/",
+      "snippet": "Access Yahoo Mail for email, news, entertainment, and more with Rogers partnership."
+    },
+    {
+      "title": "Yahoo Mail",
+      "url": "https://gr.mail.yahoo.com/d",
+      "snippet": "Ήρθε η ώρα να οργανωθείτε με το Yahoo Mail. Απλώς προσθέστε το Gmail, το Outlook, το AOL ή το Yahoo Mail για να ξεκινήσετε. …"
+    }
+  ]
+}

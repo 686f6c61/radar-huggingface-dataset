@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "YRGKarthikeya/dqn-SpaceInvadersNoFrameskip-v4",
+  "slug": "yrgkarthikeya-dqn-spaceinvadersnoframeskip-v4",
+  "author": "YRGKarthikeya",
+  "url": "https://huggingface.co/YRGKarthikeya/dqn-SpaceInvadersNoFrameskip-v4",
+  "created_at": "2026-09-21T14:00:06.000Z",
+  "updated_at": "2026-09-21T14:00:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "SpaceInvadersNoFrameskip-v4",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 54856327,
+  "storage_human": "55 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ecp france",
+      "url": "https://ecp-fr.com/",
+      "snippet": "ECP développe techniques et solutions pour la conservation et restauration du patrimoine bâti et culturel. Fabricant de produits, …"
+    },
+    {
+      "title": "Qui sommes-nous – ecp france",
+      "url": "https://ecp-fr.com/a-propos/",
+      "snippet": "Acteurs directs de l’action patrimoniale, ECP est spécialisé depuis 30 ans dans la recherche et le développement de solutions …"
+    },
+    {
+      "title": "Entreprise pour la Conservation du Patrimoine - ECP",
+      "url": "https://artisansdupatrimoine.fr/professionnel/5515/entreprise-pour-la-conservation-du-patrimoine-ecp-strasbourg",
+      "snippet": "Depuis près de 20 ans, l'Entreprise pour la Conservation du Patrimoine - ECP vend des mortiers, décapants et produits de protection …"
+    },
+    {
+      "title": "ECP - ENTREPRISE POUR LA CONSERVATION DU PATRIMOINE - GMH",
+      "url": "https://www.groupement-mh.org/fiche_entreprise/ecp-entreprise-pour-la-conservation-du-patrimoine/",
+      "snippet": "Fabricant de produits pour la conservation du patrimoine bâti et culturel, ECP propose : des mortiers à la chaux aérienne, des …"
+    },
+    {
+      "title": "ECP, ENTREPRISE POUR LA CONSERVATION DU PATRIMOINE",
+      "url": "https://www.atrium-patrimoine.com/ecp-entreprise-pour-la-conservation-du-patrimoine/114994/",
+      "snippet": "ECP, 30 ans d’activités au service du patrimoine, développeur de techniques de restauration en conservation de monuments, …"
+    }
+  ]
+}

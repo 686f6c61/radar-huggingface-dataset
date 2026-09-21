@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "botp/Altworld_Hemmingway-1-GGUF",
+  "slug": "botp-altworld_hemmingway-1-gguf",
+  "author": "botp",
+  "url": "https://huggingface.co/botp/Altworld_Hemmingway-1-GGUF",
+  "created_at": "2026-09-21T12:26:56.000Z",
+  "updated_at": "2026-09-21T12:26:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "qwen3.8",
+    "chat",
+    "creative-writing",
+    "altworld",
+    "text-generation",
+    "en",
+    "base_model:Altworld/Hemmingway-1",
+    "base_model:quantized:Altworld/Hemmingway-1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 444919474592,
+  "storage_human": "444.9 GB",
+  "base_model": "Altworld/Hemmingway-1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fotograf Ślubny - Katowice Śląsk - Krisz.pl",
+      "url": "https://krisz.pl/",
+      "snippet": "Sebastian Krisz Fotograf Ślubny Cześć! Mam na imię Sebastian i bardzo się cieszę, że trafiliście na moją stronę. Jeśli tu jesteście, to …"
+    },
+    {
+      "title": "Krisz - YouTube",
+      "url": "https://www.youtube.com/channel/UCfWN9ZHRx0xsmA6PVGl2r5Q",
+      "snippet": "Alias and Krisz (me) beat Master Duel by Zylenox but if one of us dies we spin a wheel with a punishment on it. This is a 2 player …"
+    },
+    {
+      "title": "Główna - Sebastian Krisz",
+      "url": "https://krisz.pl/glowna/",
+      "snippet": "Masz pytania, chcesz sprawdzić dostępność terminu? Zapraszam do kontaktu! @sebastian_krisz_weddings"
+    },
+    {
+      "title": "krisz - co znaczy? | definicja słowa | Słownik PWN",
+      "url": "https://sjp.pwn.pl/slowniki/krisz",
+      "snippet": "Sprawdź znaczenie słowa krisz w rzetelnym źródle. Znajdź wyjaśnienie pojęcia oparte na słowniku PWN pod red. J. Bralczyka."
+    },
+    {
+      "title": "Krisz - Geometry Dash Fan Wiki",
+      "url": "https://geometry-dash-fan.fandom.com/wiki/Krisz",
+      "snippet": "Krisz is a popular Hungarian player, level creator and YouTuber in Geometry Dash with over 115,000 subscribers on his YouTube …"
+    }
+  ]
+}

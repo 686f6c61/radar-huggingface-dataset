@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "YRGKarthikeya/a2c-PandaReachDense-v3",
+  "slug": "yrgkarthikeya-a2c-pandareachdense-v3",
+  "author": "YRGKarthikeya",
+  "url": "https://huggingface.co/YRGKarthikeya/a2c-PandaReachDense-v3",
+  "created_at": "2026-09-21T14:05:17.000Z",
+  "updated_at": "2026-09-21T14:05:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "PandaReachDense-v3",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "arxiv:2106.13687",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 200692,
+  "storage_human": "200692 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wikipédia — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Wikip%C3%A9dia",
+      "snippet": "Wikipédia est produite collaborativement sur Internet par un réseau décentralisé et auto-organisé de contributeurs volontaires 19, …"
+    },
+    {
+      "title": "Wikipedia",
+      "url": "https://www.wikipedia.org/",
+      "snippet": "Wikipedia is a free online encyclopedia, created and edited by volunteers around the world and hosted by the Wikimedia Foundation."
+    },
+    {
+      "title": "Wikipedia, la enciclopedia libre",
+      "url": "https://es.wikipedia.org/wiki/Wikipedia:Portada",
+      "snippet": "Wikipedia es uno de los proyectos Wikimedia, de contenido libre y administrados técnicamente por la Fundación Wikimedia, una …"
+    },
+    {
+      "title": "Wikipédia, l'encyclopédie libre",
+      "url": "https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Accueil_principal",
+      "snippet": "Wikipédia L'encyclopédie libre que vous pouvez améliorer Accueil de la communauté Comment contribuer ? Portails thématiques …"
+    },
+    {
+      "title": "Wikipedia – Die freie Enzyklopädie",
+      "url": "https://de.wikipedia.org/wiki/Wikipedia:Hauptseite",
+      "snippet": "Wikipedia ist ein Projekt zum Aufbau einer Enzyklopädie aus freien Inhalten, zu denen du sehr gern beitragen kannst. Seit März 2001 …"
+    }
+  ]
+}

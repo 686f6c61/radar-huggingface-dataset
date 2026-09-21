@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Lobus22/ELIXIA-MARVELOUS-1.0",
+  "slug": "lobus22-elixia-marvelous-1-0",
+  "author": "Lobus22",
+  "url": "https://huggingface.co/Lobus22/ELIXIA-MARVELOUS-1.0",
+  "created_at": "2026-09-21T14:18:53.000Z",
+  "updated_at": "2026-09-21T18:33:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "unsloth",
+    "trl",
+    "sft",
+    "base_model:unsloth/Qwen2.5-7B-bnb-4bit",
+    "base_model:finetune:unsloth/Qwen2.5-7B-bnb-4bit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 415388487,
+  "storage_human": "415 MB",
+  "base_model": "unsloth/Qwen2.5-7B-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Word Unscrambler - Unscramble letters to make words - Find the best ...",
+      "url": "https://wordunscrambler.com/",
+      "snippet": "Word Unscrambler What is Word Unscrambler Word Unscrambler is a powerful online tool that instantly finds high-scoring words for …"
+    },
+    {
+      "title": "Word Unscrambler - Solve Any Jumble or Scrambled Letters",
+      "url": "https://unscramble.us.com/",
+      "snippet": "Stuck on a jumble? Enter the scrambled letters and unscramble them into every real word - with anagrams, example sentences, and …"
+    },
+    {
+      "title": "Word Unjumbler - Unscramble Letters & Find Hidden Words",
+      "url": "https://wordunjumbler.com/",
+      "snippet": "Enter your letters and instantly unscramble them to find every valid English word. Free word unjumbler and anagram solver with filters …"
+    },
+    {
+      "title": "Word Unscrambler - Find Words Instantly | UnscramblWords",
+      "url": "https://www.unscramblwords.com/",
+      "snippet": "Free word unscrambler tool. Instantly find all valid words from scrambled letters. Supports 10 languages. Perfect for Scrabble, …"
+    },
+    {
+      "title": "Unscramble Letters to Make Words - WordUnscramble.io",
+      "url": "https://www.wordunscramble.io/",
+      "snippet": "Unscramble letters to make words quickly with this word unscrambler. A fast and easy online helper when playing Scrabble, Words …"
+    }
+  ]
+}

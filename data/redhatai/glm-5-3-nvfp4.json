@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "RedHatAI/GLM-5.3-NVFP4",
+  "slug": "redhatai-glm-5-3-nvfp4",
+  "author": "RedHatAI",
+  "url": "https://huggingface.co/RedHatAI/GLM-5.3-NVFP4",
+  "created_at": "2026-09-21T15:22:03.000Z",
+  "updated_at": "2026-09-21T21:15:26.000Z",
+  "license": "glm-5.3",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "glm_moe_dsa",
+    "text-generation",
+    "nvfp4",
+    "fp4",
+    "vllm",
+    "llm-compressor",
+    "compressed-tensors",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:zai-org/GLM-5.3",
+    "base_model:quantized:zai-org/GLM-5.3",
+    "license:other",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 753329940480,
+  "parameters_human": "753.33B",
+  "storage_bytes": 464891193133,
+  "storage_human": "464.9 GB",
+  "base_model": "zai-org/GLM-5.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Loterias | CAIXA",
+      "url": "https://loterias.caixa.gov.br/Paginas/default.aspx",
+      "snippet": "5 days ago · As Loterias CAIXA possuem certificação internacional em Jogo Responsável. Conheça as nossas práticas para um …"
+    },
+    {
+      "title": "Mega-Sena - Portal Loterias | CAIXA",
+      "url": "https://loterias.caixa.gov.br/Paginas/Mega-Sena.aspx",
+      "snippet": "Sep 10, 2026 · A Mega-Sena é a loteria que pode mudar sua vida, pagando milhões para quem acertar os 6 números sorteados. E …"
+    },
+    {
+      "title": "Lotofácil - Portal Loterias | CAIXA",
+      "url": "https://loterias.caixa.gov.br/Paginas/Lotofacil.aspx",
+      "snippet": "Sep 3, 2026 · Outros jogos das Loterias CAIXA Mega-Sena A Mega-Sena é a loteria que paga milhões para o acertador dos 6 …"
+    },
+    {
+      "title": "Quina - Portal Loterias | CAIXA",
+      "url": "https://loterias.caixa.gov.br/Paginas/Quina.aspx",
+      "snippet": "Sep 14, 2026 · A Quina é a loteria que pode transformar sua vida. Veja como é fácil participar. • Escolha seus números: Marque de 5 …"
+    },
+    {
+      "title": "Lotomania - Portal Loterias | CAIXA",
+      "url": "https://loterias.caixa.gov.br/paginas/lotomania.aspx",
+      "snippet": "Sep 11, 2026 · Ao jogar na Lotomania, você não só concorre a prêmios incríveis, mas também faz a diferença na vida de milhões de …"
+    }
+  ]
+}

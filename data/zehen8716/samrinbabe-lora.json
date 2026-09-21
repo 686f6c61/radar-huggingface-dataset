@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "zehen8716/samrinbabe-lora",
+  "slug": "zehen8716-samrinbabe-lora",
+  "author": "zehen8716",
+  "url": "https://huggingface.co/zehen8716/samrinbabe-lora",
+  "created_at": "2026-09-21T19:04:56.000Z",
+  "updated_at": "2026-09-21T19:19:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "diffusers-training",
+    "lora",
+    "krea2",
+    "krea2-diffusers",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1151841154,
+  "storage_human": "1.2 GB",
+  "base_model": "krea/Krea-2-Turbo, krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Contact Us | Ford® Customer Service, Help & Live Chat | Ford.com",
+      "url": "https://www.ford.com/help/contact/",
+      "snippet": "Need help? Find customer service & roadside assistance phone numbers, email, addresses. Also try our Live Chat for one-on-one …"
+    },
+    {
+      "title": "Ford Customer Service Phone Number 1-800-392-3673, Email, Help …",
+      "url": "https://ford.pissedconsumer.com/customer-service.html",
+      "snippet": "Sep 14, 2026 · Similarly, for credit-related inquiries, you can call the Ford customer service team at 1-800-727-7000, available …"
+    },
+    {
+      "title": "How do I contact Ford Motor Company?",
+      "url": "https://www.ford.com/support/how-tos/owner-resources/company-information/how-do-i-contact-ford-motor-company/",
+      "snippet": "Reach out to us through phone, chat, or mail for assistance. Call us at 1-800-392-3673. | Monday - Friday 8 a.m. – 11 p.m. EST | …"
+    },
+    {
+      "title": "CUSTOMER ASSISTANCE",
+      "url": "https://www.fordservicecontent.com/Ford_Content/catalog/owner_guides/01f67wa2e.pdf",
+      "snippet": "If you require assistance directly from Ford Motor Company, contact the Fleet Customer Relationship Center at 1-800-343-5338. Your …"
+    },
+    {
+      "title": "How to Contact Ford Motor Company: 8 Steps (with Pictures) - wikiHow",
+      "url": "https://www.wikihow.com/Contact-Ford-Motor-Company",
+      "snippet": "Feb 24, 2025 · Their hours for each geographic region are available on their contact page at https://www.ford.com/help/contact/#chat. …"
+    }
+  ]
+}

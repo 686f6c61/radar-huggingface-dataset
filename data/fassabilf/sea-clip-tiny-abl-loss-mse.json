@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "fassabilf/sea-clip-tiny-abl-loss-mse",
+  "slug": "fassabilf-sea-clip-tiny-abl-loss-mse",
+  "author": "fassabilf",
+  "url": "https://huggingface.co/fassabilf/sea-clip-tiny-abl-loss-mse",
+  "created_at": "2026-09-21T16:45:55.000Z",
+  "updated_at": "2026-09-21T16:54:26.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-image-classification",
+  "library": "open_clip",
+  "languages": [
+    "en",
+    "id",
+    "jv",
+    "su",
+    "ms",
+    "th",
+    "vi",
+    "my"
+  ],
+  "tags": [
+    "open_clip",
+    "clip",
+    "multilingual",
+    "southeast-asia",
+    "zero-shot-image-classification",
+    "en",
+    "id",
+    "jv",
+    "su",
+    "ms",
+    "th",
+    "vi",
+    "my",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 184564982,
+  "storage_human": "185 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CoinTracking: The Crypto Tax Calculator & Portfolio Tracker",
+      "url": "https://cointracking.info/",
+      "snippet": "CoinTracking analyzes your trades and generates real-time reports on profit and loss, coin values, realized and unrealized gains, and …"
+    },
+    {
+      "title": "Crypto Dashboard | CoinTracking",
+      "url": "https://cointracking.info/dashboard.php",
+      "snippet": "Bring exchanges, wallets, imports, balances, gains, reports, and tax-ready data into one clear CoinTracking dashboard, so you …"
+    },
+    {
+      "title": "Crypto Tax Reports & Portfolio Tracking Perfect for You",
+      "url": "https://mobile.cointracking.info/for-individuals",
+      "snippet": "No matter if you're a seasoned crypto trader or just starting out, CoinTracking makes managing your portfolio easier than ever. …"
+    },
+    {
+      "title": "CoinTracking",
+      "url": "https://cointracking.info/login",
+      "snippet": "Welcome back to CoinTracking. Log in to track your portfolio, run tax reports, and stay on top of your crypto."
+    },
+    {
+      "title": "Quick Start Guide — How To Start with CoinTracking",
+      "url": "https://cointracking.info/quick-start-guide",
+      "snippet": "Get started with CoinTracking in 4 simple steps: import transactions, track your portfolio, validate your data, and generate tax …"
+    }
+  ]
+}

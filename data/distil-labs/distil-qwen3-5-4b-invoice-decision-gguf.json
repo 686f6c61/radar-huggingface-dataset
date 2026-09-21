@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "distil-labs/distil-qwen3.5-4b-invoice-decision-gguf",
+  "slug": "distil-labs-distil-qwen3-5-4b-invoice-decision-gguf",
+  "author": "distil-labs",
+  "url": "https://huggingface.co/distil-labs/distil-qwen3.5-4b-invoice-decision-gguf",
+  "created_at": "2026-09-21T18:54:29.000Z",
+  "updated_at": "2026-09-21T19:08:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "invoice-processing",
+    "reasoning",
+    "accounts-payable",
+    "distillation",
+    "slm",
+    "distil-labs",
+    "qwen3.5",
+    "llama.cpp",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:quantized:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 4482402688,
+  "storage_human": "4.5 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Praca Lubuskie - najnowsze oferty - OLX",
+      "url": "https://www.olx.pl/praca/lubuskie/",
+      "snippet": "Praca – Lubuskie. Szukasz nowego zatrudnienia? Sprawdź najnowsze oferty pracy na OLX Praca. Przeglądaj aktualne ogłoszenia i …"
+    },
+    {
+      "title": "praca - Lubuskie - sprawdź kategorię Praca - OLX",
+      "url": "https://www.olx.pl/praca/lubuskie/q-praca/",
+      "snippet": "Szukasz nowej pracy? Pomożemy Ci zawodowo! praca - Lubuskie - tylko w kategorii Praca na OLX!"
+    },
+    {
+      "title": "Praca jako praca w lubuskim w okolicy? Sprawdź kategorię Praca",
+      "url": "https://www.olx.pl/praca/q-praca-w-lubuskim/",
+      "snippet": "Szukasz nowej pracy? Pomożemy Ci zawodowo! Praca jako praca w lubuskim w Twojej okolicy - tylko w kategorii Praca na OLX!"
+    },
+    {
+      "title": "oferty pracy - Lubuskie - sprawdź kategorię Praca - OLX",
+      "url": "https://www.olx.pl/praca/lubuskie/q-oferty-pracy/",
+      "snippet": "Szukasz nowej pracy? Pomożemy Ci zawodowo! oferty pracy - Lubuskie - tylko w kategorii Praca na OLX!"
+    },
+    {
+      "title": "Praca lubuskie – Pracuj.pl",
+      "url": "https://www.pracuj.pl/praca/lubuskie;r,4?msockid=3bbb7d779841615a1f166aac99ae6068",
+      "snippet": "Twój zakres obowiązków, rozpakowanie i segregacja towaru z dostawy, wykładanie towaru na sali sprzedaży zgodnie ze …"
+    }
+  ]
+}

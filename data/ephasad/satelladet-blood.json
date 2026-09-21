@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "EphAsad/SatellaDet-Blood",
+  "slug": "ephasad-satelladet-blood",
+  "author": "EphAsad",
+  "url": "https://huggingface.co/EphAsad/SatellaDet-Blood",
+  "created_at": "2026-09-21T18:18:07.000Z",
+  "updated_at": "2026-09-21T18:25:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "object-detection",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "satelladet",
+    "object-detection",
+    "computer-vision",
+    "microscopy",
+    "blood-cell-detection",
+    "medical-imaging",
+    "pytorch",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 17689628,
+  "storage_human": "18 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vault 7: CIA Hacking Tools Revealed - WikiLeaks",
+      "url": "https://wikileaks.org/ciav7p1/",
+      "snippet": "How did WikiLeaks obtain each part of \"Vault 7\"? Sources trust WikiLeaks to not reveal information that might help identify them. Isn't …"
+    },
+    {
+      "title": "WikiLeaks",
+      "url": "https://wikileaks.org/",
+      "snippet": "In order to use the WikiLeaks public submission system as detailed above you can download the Tor Browser Bundle, which is a …"
+    },
+    {
+      "title": "Category:Central Intelligence Agency - WikiLeaks",
+      "url": "https://www.wikileaks.org/wiki/Category:Central_Intelligence_Agency",
+      "snippet": "The Central Intelligence Agency (CIA) is a civilian intelligence agency of the United States government responsible for providing …"
+    },
+    {
+      "title": "WikiLeaks - Vault 7: Projects",
+      "url": "https://wikileaks.org/vault7/",
+      "snippet": "Today, September 7th 2017, WikiLeaks publishes four secret documents from the Protego project of the CIA, along with 37 related …"
+    },
+    {
+      "title": "Leaked Files - WikiLeaks",
+      "url": "https://wikileaks.org/wiki/Leaked_Files",
+      "snippet": "CIA report into shoring up Afghan war support in Western Europe, 11 Mar 2010 Update to over 40 billion euro in 28167 claims made …"
+    }
+  ]
+}

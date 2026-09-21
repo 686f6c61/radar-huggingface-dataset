@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "nkkbr/Mini-K3-1H-decay-g16-v2_B",
+  "slug": "nkkbr-mini-k3-1h-decay-g16-v2_b",
+  "author": "nkkbr",
+  "url": "https://huggingface.co/nkkbr/Mini-K3-1H-decay-g16-v2_B",
+  "created_at": "2026-09-21T14:58:14.000Z",
+  "updated_at": "2026-09-22T01:02:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "mini_k3",
+    "kimi-k3",
+    "pretraining",
+    "mixture-of-experts",
+    "linear-attention",
+    "architecture-ablation",
+    "text-generation",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1015220140,
+  "parameters_human": "1.02B",
+  "storage_bytes": 8147189204,
+  "storage_human": "8.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Check your browser...",
+      "url": "https://forum.arizona-rp.com/",
+      "snippet": "Processing your request, please wait ... Everything is great, now we will redirect you to the site."
+    },
+    {
+      "title": "Сервера Arizona RP | Форум – Arizona RolePlay",
+      "url": "https://forum.arizona-rp.com/categories/3794/",
+      "snippet": "Department of Health || Мин. Здравоохранения Los-Santos Medical Center Las-Venturas Medical Center Mass Media || Средства …"
+    },
+    {
+      "title": "Arizona V | Форум",
+      "url": "https://forum.arizona-v.com/",
+      "snippet": "Добро пожаловать на форум Arizona V! Для принятия участия в обсуждениях и общении необходимо пройти процедуру …"
+    },
+    {
+      "title": "Правила - Общие правила сервера | Arizona V ...",
+      "url": "https://forum.arizona-v.com/threads/1545/",
+      "snippet": "Dec 25, 2020 · 1. Общие положение 1.1 При регистрации аккаунта на проекте игрок автоматически соглашается со всеми …"
+    },
+    {
+      "title": "Сервер №22 [Sedona] | Форум – Arizona RolePlay",
+      "url": "https://forum.arizona-rp.com/forums/2298/",
+      "snippet": "Жалобы на администрацию Жалобы на игроков состоящих в гос.организациях Жалобы на игроков не сост. в организациях …"
+    }
+  ]
+}

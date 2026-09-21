@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Riyan200324200324/DeepSeek-V4.1-Flash-UNCENSORED-FP8",
+  "slug": "riyan200324200324-deepseek-v4-1-flash-uncensored-fp8",
+  "author": "Riyan200324200324",
+  "url": "https://huggingface.co/Riyan200324200324/DeepSeek-V4.1-Flash-UNCENSORED-FP8",
+  "created_at": "2026-09-21T18:12:14.000Z",
+  "updated_at": "2026-09-21T18:12:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "deepseek_v41",
+    "text-generation",
+    "deepseek",
+    "deepseek-v4.1",
+    "abliterated",
+    "uncensored",
+    "crack",
+    "multimodal",
+    "moe",
+    "fp8",
+    "image-text-to-text",
+    "base_model:deepseek-ai/DeepSeek-V4.1-Flash",
+    "base_model:quantized:deepseek-ai/DeepSeek-V4.1-Flash",
+    "license:mit",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 763205315794,
+  "parameters_human": "763.21B",
+  "storage_bytes": 510296708312,
+  "storage_human": "510.3 GB",
+  "base_model": "deepseek-ai/DeepSeek-V4.1-Flash",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lotto Max - Résultats - Loteries - Loto-Québec",
+      "url": "https://loteries.lotoquebec.com/fr/loteries/lotto-max-resultats",
+      "snippet": "Lotto Max - Jouez à ce jeu à tirage de Loto-Québec en ligne et chez les détaillants. À gagner : gros lot de base à 10 millions. Tirage …"
+    },
+    {
+      "title": "Jouer à Lotto Max sur lotoquebec.com! - loteries",
+      "url": "https://loteries.lotoquebec.com/fr/loteries/lotto-max",
+      "snippet": "6 days ago · Le Super forfait permet de jouer simultanément au Lotto Max, au Québec Max, au Lotto 6/49, au Québec 49 et à la …"
+    },
+    {
+      "title": "LOTTO MAX",
+      "url": "https://lottomax.ca/index.html?en",
+      "snippet": "Canada's Big Jackpot Game! Jackpots start at a minimum of $10 Million and can grow to $60 Million! Draw every Friday. | La loterie …"
+    },
+    {
+      "title": "WCLC - LOTTO MAX & EXTRA",
+      "url": "http://www.wclc.com/winning-numbers/lotto-max-extra.htm",
+      "snippet": "3 days ago · LOTTO MAX & EXTRA Winning ticket locations are shown in the prize breakdown chart, which can be accessed by …"
+    },
+    {
+      "title": "Play LOTTO MAX today! New Prizes & Bigger Jackpots | OLG",
+      "url": "https://www.olg.ca/en/lottery/play-lotto-max-encore/hub.html?msockid=30346b28737260831bbc7cf37254610f",
+      "snippet": "3 days ago · Play the updated LOTTO MAX in-store or online. Now with better odds, bigger jackpots & new cash prizes available with …"
+    }
+  ]
+}

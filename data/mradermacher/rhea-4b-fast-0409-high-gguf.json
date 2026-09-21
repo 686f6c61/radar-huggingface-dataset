@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Rhea-4B-fast-0409-high-GGUF",
+  "slug": "mradermacher-rhea-4b-fast-0409-high-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Rhea-4B-fast-0409-high-GGUF",
+  "created_at": "2026-09-21T14:49:50.000Z",
+  "updated_at": "2026-09-21T16:27:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "code",
+    "agent",
+    "thinking",
+    "agentic",
+    "Rhea",
+    "qwen3",
+    "4b",
+    "en",
+    "dataset:roskosmos19/Rhea-Coding",
+    "base_model:roskosmos19/Rhea-4B-fast-0409-high",
+    "base_model:quantized:roskosmos19/Rhea-4B-fast-0409-high",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 36389978112,
+  "storage_human": "36.4 GB",
+  "base_model": "roskosmos19/Rhea-4B-fast-0409-high",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Benito Juárez (Ciudad de México) - Wikipedia, la enciclopedia libre",
+      "url": "https://es.wikipedia.org/wiki/Benito_Ju%C3%A1rez_(Ciudad_de_M%C3%A9xico)",
+      "snippet": "La delegación Benito Juárez es la más completa en infraestructura, ya que cuenta con gran variedad de lugares educativos, …"
+    },
+    {
+      "title": "Benito Juárez, Mexico City - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Benito_Ju%C3%A1rez,_Mexico_City",
+      "snippet": "It is a largely residential area, located to the south of historic center of Mexico City, although there are pressures for areas to convert …"
+    },
+    {
+      "title": "Benito Juárez – Mexico City",
+      "url": "https://mexicocity.cdmx.gob.mx/locations/benito-juarez/",
+      "snippet": "Benito Juárez destaca por sus calles arboladas y una ubicación estratégica que facilita recorrer gran parte de la Ciudad de México. …"
+    },
+    {
+      "title": "Alcaldía Benito Juárez | Gobierno 2024 - 2027",
+      "url": "https://alcaldiabenitojuarez.gob.mx/",
+      "snippet": "La alcaldía Benito Juárez reporta saldo blanco tras concluir los festejos con motivo del CCXVI aniversario del inicio de la Gesta …"
+    },
+    {
+      "title": "Benito Juárez (Ciudad de México) - Hispanopedia",
+      "url": "https://es.hispanopedia.com/wiki/Benito_Ju%C3%A1rez_(Ciudad_de_M%C3%A9xico)",
+      "snippet": "La delegación Benito Juárez es la más completa en infraestructura, ya que cuenta con gran variedad de lugares educativos, …"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Filiphw/doctr-linknet-resnet50-detection-v1",
+  "slug": "filiphw-doctr-linknet-resnet50-detection-v1",
+  "author": "Filiphw",
+  "url": "https://huggingface.co/Filiphw/doctr-linknet-resnet50-detection-v1",
+  "created_at": "2026-09-21T12:55:27.000Z",
+  "updated_at": "2026-09-21T12:55:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "doctr",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "doctr",
+    "pytorch",
+    "ocr",
+    "detection",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 115701363,
+  "storage_human": "116 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "YouTube Brasil",
+      "url": "https://www.youtube.com/channel/UCUN9lhwfMJRxMVuet7Shg0w",
+      "snippet": "É canal oficial do YouTube Brasil que vocês querem? :D Se inscreve para descobrir as novidades e tendências da plataforma, …"
+    },
+    {
+      "title": "Movies & TV - YouTube",
+      "url": "https://movies.youtube.com/",
+      "snippet": "Find the latest and greatest movies and shows all available on YouTube.com/movies. From award-winning hits to independent …"
+    },
+    {
+      "title": "Essential '90s R&B - YouTube Music",
+      "url": "https://music.youtube.com/playlist?list=RDCLAK5uy_ne3DJMol0EVIfwcuZnx2hQak0q6EbeBlY",
+      "snippet": "Playlist • YouTube Music R&B defined American mainstream music throughout the '90s. Here are key tracks from R&B's most vital …"
+    },
+    {
+      "title": "YouTube TV",
+      "url": "https://tv.youtube.com/welcome，",
+      "snippet": "YouTube TV ... YouTube TV"
+    }
+  ]
+}

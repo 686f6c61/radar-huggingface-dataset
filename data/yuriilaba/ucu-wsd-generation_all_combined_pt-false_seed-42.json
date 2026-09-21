@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "yuriilaba/ucu-wsd-generation_all_combined_pt-false_seed-42",
+  "slug": "yuriilaba-ucu-wsd-generation_all_combined_pt-false_seed-42",
+  "author": "yuriilaba",
+  "url": "https://huggingface.co/yuriilaba/ucu-wsd-generation_all_combined_pt-false_seed-42",
+  "created_at": "2026-09-21T14:13:13.000Z",
+  "updated_at": "2026-09-21T14:14:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "xlm-roberta",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278043648,
+  "parameters_human": "278.0M",
+  "storage_bytes": 1129280083,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DJ TÖRKE - YouTube",
+      "url": "https://www.youtube.com/@DJT%C3%96RKE",
+      "snippet": "TÖRKE MIT DER MASKE DJ TÖRKE, LOKIMITDERMASKE Apr 29, 2026 View full playlist 4 songs"
+    },
+    {
+      "title": "DJ TÖRKE - Topic - YouTube",
+      "url": "https://www.youtube.com/channel/UC_gXn-ildy9TgAl8lulhs7g",
+      "snippet": "Apr 29, 2026 · 50 KUBiK DJ TÖRKE, FiNCH, DOKTORMETHODEN & DOKTORMITHODEN • View full playlist 18 songs"
+    },
+    {
+      "title": "DJ TÖRKE - YouTube Music",
+      "url": "https://music.youtube.com/channel/UC_gXn-ildy9TgAl8lulhs7g",
+      "snippet": "2.8M plays FAHRERFLUCHT DAS IST DIE REGEL HIER (Slowed) DJ TÖRKE & DJ HARDWICK 6.8M plays DAS IST DIE REGEL …"
+    },
+    {
+      "title": "DJ TÖRKE: Alben, Songs, Konzerte | Deezer",
+      "url": "https://www.deezer.com/de/artist/300676761",
+      "snippet": "DJ Tjörke ist ein deutscher DJ und Produzent im Bereich Hardtekk und elektronischer Clubmusik. Er tritt seit den frühen 2020er …"
+    },
+    {
+      "title": "Stream DJ Törke music | Listen to songs, albums ... - SoundCloud",
+      "url": "https://soundcloud.com/dj-toerke",
+      "snippet": "Play DJ Törke and discover followers on SoundCloud | Stream tracks, albums, playlists on desktop and mobile."
+    }
+  ]
+}

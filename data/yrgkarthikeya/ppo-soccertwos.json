@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "YRGKarthikeya/ppo-SoccerTwos",
+  "slug": "yrgkarthikeya-ppo-soccertwos",
+  "author": "YRGKarthikeya",
+  "url": "https://huggingface.co/YRGKarthikeya/ppo-SoccerTwos",
+  "created_at": "2026-09-21T14:05:27.000Z",
+  "updated_at": "2026-09-21T14:05:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "onnx",
+    "ML-Agents-SoccerTwos",
+    "reinforcement-learning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1763292,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Qiwa - Request Rejected",
+      "url": "https://www.qiwa.sa/",
+      "snippet": "The requested URL was rejected. Please consult with your administrator. Your support ID is: 4474437247633284523 [Go Back]"
+    },
+    {
+      "title": "Request Rejected - Qiwa",
+      "url": "https://qiwa.sa/ar",
+      "snippet": "The requested URL was rejected. Please consult with your administrator. Your support ID is: 4474437247471831374 [Go Back]"
+    },
+    {
+      "title": "Request Rejected",
+      "url": "https://www.sso.qiwa.sa/ar/sign-in",
+      "snippet": "Sign in to Qiwa to access labor market services and manage your account."
+    },
+    {
+      "title": "Request Rejected",
+      "url": "https://www.sso.qiwa.sa/sign-in",
+      "snippet": "Sign in to Qiwa for seamless access to services on mobile and desktop devices."
+    },
+    {
+      "title": "إسناد السعوديين - أجير",
+      "url": "https://ajeer.qiwa.sa/landing/services/saudi_leasing",
+      "snippet": "المرجع الوطني الأول للمعلومات والخدمات الحكومية الرقمية في المملكة العربية السعودية."
+    }
+  ]
+}

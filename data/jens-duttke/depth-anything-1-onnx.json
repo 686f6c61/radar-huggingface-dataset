@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Jens-Duttke/Depth-Anything-1-ONNX",
+  "slug": "jens-duttke-depth-anything-1-onnx",
+  "author": "Jens-Duttke",
+  "url": "https://huggingface.co/Jens-Duttke/Depth-Anything-1-ONNX",
+  "created_at": "2026-09-21T18:45:37.000Z",
+  "updated_at": "2026-09-21T18:43:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "depth-estimation",
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "depth-estimation",
+    "depth-anything",
+    "depth-anything-v1",
+    "oku3d",
+    "fp16",
+    "gpu",
+    "stereo",
+    "disparity",
+    "base_model:LiheYoung/depth-anything-base-hf",
+    "base_model:quantized:LiheYoung/depth-anything-base-hf",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 256094977,
+  "storage_human": "256 MB",
+  "base_model": "LiheYoung/depth-anything-small-hf, LiheYoung/depth-anything-base-hf",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jens — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Jens",
+      "snippet": "Jens est une commune suisse du canton de Berne, située dans l' arrondissement administratif du Seeland. Une rue du village"
+    },
+    {
+      "title": "Jens (given name) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Jens_(given_name)",
+      "snippet": "Jens is a male given name and a Danish, Dutch, German, Norwegian, Swedish, Icelandic, Faroese and Frisian derivative of …"
+    },
+    {
+      "title": "jENS 2027 - 7th Congress of joint European Neonatal Societies",
+      "url": "https://www.mcascientificevents.eu/jens/",
+      "snippet": "Join 7th jENS Congress 2027 from 21-25 September 2027 in Bilbao, Spain. The premier Neonatology Congress jointly organized by …"
+    },
+    {
+      "title": "Prénom Jens : Origine - Caractère - Signification - Etymologie",
+      "url": "https://www.parents.fr/prenoms/jens-44220",
+      "snippet": "Le prénom Jens est assez récent dans l'Hexagone, et le premier à porter ce prénom voit le jour en 1974. C'est un prénom original qui …"
+    },
+    {
+      "title": "Prénom Jens (garçon) : signification, origine, caractère, saint, avis",
+      "url": "https://www.journaldesfemmes.fr/prenoms/jens/prenom-66211",
+      "snippet": "Prénom Jens : signification, origine, caractère, personnalité, Saint Jens, popularité, avis, classement... Toutes les infos sur le prénom …"
+    }
+  ]
+}

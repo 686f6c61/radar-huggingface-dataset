@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "KridgeDookie/Ternary-Bonsai-2-27B-ABLITERATED-UNCENSORED-PHILADELPHIA-CLASS-MLX-Mixed-2-8bit",
+  "slug": "kridgedookie-ternary-bonsai-2-27b-abliterated-uncensored-philadelphia-class-mlx-mixed-2-8bit",
+  "author": "KridgeDookie",
+  "url": "https://huggingface.co/KridgeDookie/Ternary-Bonsai-2-27B-ABLITERATED-UNCENSORED-PHILADELPHIA-CLASS-MLX-Mixed-2-8bit",
+  "created_at": "2026-09-21T15:36:43.000Z",
+  "updated_at": "2026-09-21T17:00:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "prism_hadamard_qwen35",
+    "abliterated",
+    "mixed-precision",
+    "bonsai",
+    "text-generation",
+    "conversational",
+    "base_model:prism-ml/Ternary-Bonsai-2-27B-mlx-2bit",
+    "base_model:finetune:prism-ml/Ternary-Bonsai-2-27B-mlx-2bit",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 50148954352,
+  "parameters_human": "50.15B",
+  "storage_bytes": 23641820614,
+  "storage_human": "23.6 GB",
+  "base_model": "prism-ml/Ternary-Bonsai-2-27B-mlx-2bit",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "iBUYPOWER® Custom Gaming PCs and PC Builder | iBUYPOWER®",
+      "url": "https://www.ibuypower.com/",
+      "snippet": "Shop iBUYPOWER for your gaming pc needs. Choose from our pre-built RDY computers or use our custom pc builder tool today."
+    },
+    {
+      "title": "Intel Gaming Desktop PCs | iBUYPOWER®",
+      "url": "https://www.ibuypower.com/gaming-pcs/intel-desktops",
+      "snippet": "Shop with iBUYPOWER for the Intel Gaming PCs. Experience gaming with the exclusive 12th gen CPUs and play like a professional …"
+    },
+    {
+      "title": "OR - content.ibuypower.com",
+      "url": "https://content.ibuypower.com/Download/GPU-Manual.pdf",
+      "snippet": "2 Remove screws Remove the screws on the rear of the case that will be holding the graphics card in place. You may have to …"
+    },
+    {
+      "title": "Element 9 Manual - content.ibuypower.com",
+      "url": "https://content.ibuypower.com/Download/Guide/Element%209%20Manual.pdf",
+      "snippet": "Thank you for purchasing an iBUYPOWER Element 9 Case. These instructions should help you with assembly and upgrades, …"
+    },
+    {
+      "title": "Jobs at iBUYPOWER | iBUYPOWER Careers",
+      "url": "https://careers.ibuypower.com/",
+      "snippet": "iBUYPOWER symbolizes several key beliefs: unity, strength, ambition, and perseverance. These are fundamental attributes of life …"
+    }
+  ]
+}

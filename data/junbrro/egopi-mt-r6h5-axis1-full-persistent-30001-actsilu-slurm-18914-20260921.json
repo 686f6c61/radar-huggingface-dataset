@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "junbrro/egopi-mt-r6h5-axis1-full-persistent-30001-actsilu-slurm-18914-20260921",
+  "slug": "junbrro-egopi-mt-r6h5-axis1-full-persistent-30001-actsilu-slurm-18914-20260921",
+  "author": "junbrro",
+  "url": "https://huggingface.co/junbrro/egopi-mt-r6h5-axis1-full-persistent-30001-actsilu-slurm-18914-20260921",
+  "created_at": "2026-09-21T12:18:22.000Z",
+  "updated_at": "2026-09-21T12:21:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "RLDX-1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6964885936,
+  "parameters_human": "6.96B",
+  "storage_bytes": 13968450899,
+  "storage_human": "14.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Les 4 drapeaux du Royaume-Uni et le célèbre « Union Jack",
+      "url": "https://alltrippers.com/fr/royaume-uni/faq/drapeaux-royaume-uni",
+      "snippet": "Le Royaume-Uni possède 4 drapeaux : le drapeau anglais, gallois, écossais et nord-irlandais - auxquels s’ajoute le célèbre Union …"
+    },
+    {
+      "title": "Cabine téléphonique anglaise : un symbole de la ville de Londres",
+      "url": "https://alltrippers.com/fr/royaume-uni/faq/cabine-telephonique-anglaise",
+      "snippet": "La célèbre cabine téléphonique rouge (red telephone box) est un mobilier urbain mondialement connu et devenu l'un des principaux …"
+    },
+    {
+      "title": "Bus anglais : un symbole de la ville de Londres - AllTrippers",
+      "url": "https://alltrippers.com/fr/royaume-uni/faq/bus-anglais",
+      "snippet": "Le célèbre bus anglais est un moyen de transport en commun mondialement connu et devenu l'un des principaux symboles de la …"
+    },
+    {
+      "title": "Des goodies qui font plaisir - alltrippers.com",
+      "url": "https://alltrippers.com/fr/royaume-uni/blog/des-goodies-qui-font-plaisir",
+      "snippet": "On le sait l’objet publicitaire séduit. Il est idéal pour entretenir une relation avec ses clients ou ses partenaires. Mais il peut aussi être …"
+    },
+    {
+      "title": "Apprendre l'anglais : cours d'anglais gratuits à Londres",
+      "url": "https://alltrippers.com/fr/royaume-uni/faq/cours-anglais-gratuits-londres",
+      "snippet": "Les centres de formations ESOL (English for Speakers of Other Languages) proposent des cours d'anglais gratuits aux étrangers …"
+    }
+  ]
+}

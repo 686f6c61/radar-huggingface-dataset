@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "ldov/Ternary-Bonsai-2-27B-gguf",
+  "slug": "ldov-ternary-bonsai-2-27b-gguf",
+  "author": "ldov",
+  "url": "https://huggingface.co/ldov/Ternary-Bonsai-2-27B-gguf",
+  "created_at": "2026-09-21T15:34:49.000Z",
+  "updated_at": "2026-09-21T15:34:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "ternary",
+    "2-bit",
+    "llama-cpp",
+    "cuda",
+    "metal",
+    "on-device",
+    "hybrid-attention",
+    "prismml",
+    "bonsai",
+    "text-generation",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 68521619616,
+  "storage_human": "68.5 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Géoportail",
+      "url": "https://www.geoportail.gouv.fr/carte/",
+      "snippet": "Accédez à l'information géographique de référence : cartes, photographies aériennes, données géographiques."
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.com/",
+      "snippet": "Find local businesses, view maps and get driving directions in Google Maps."
+    },
+    {
+      "title": "Mappy Plan : Cartes routières et Lieux en France",
+      "url": "https://fr.mappy.com/plan",
+      "snippet": "Visualisez tous les lieux que vous cherchez, que ce soit autour de vous, dans votre ville, ou n'importe où sur la carte"
+    },
+    {
+      "title": "ViaMichelin : Itinéraires, Cartes, Info trafic, Hôtels",
+      "url": "https://www.viamichelin.fr/",
+      "snippet": "Retrouvez sur ViaMichelin la carte de la France, celle de Paris, le plan de Marseille, de Lyon, Bordeaux, mais aussi la carte de …"
+    },
+    {
+      "title": "Google Earth",
+      "url": "https://earth.google.com/web/?hl=fr",
+      "snippet": "Découvrez le monde vu du ciel avec des images satellite en haute résolution, explorez le relief et les bâtiments de centaines de villes …"
+    }
+  ]
+}

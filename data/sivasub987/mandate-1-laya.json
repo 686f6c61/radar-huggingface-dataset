@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "sivasub987/mandate-1-laya",
+  "slug": "sivasub987-mandate-1-laya",
+  "author": "sivasub987",
+  "url": "https://huggingface.co/sivasub987/mandate-1-laya",
+  "created_at": "2026-09-21T16:56:19.000Z",
+  "updated_at": "2026-09-21T17:30:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "laya",
+    "typed-decisions",
+    "safr",
+    "runtime-governance",
+    "research",
+    "shadow-only",
+    "agentic-ai",
+    "ai-safety",
+    "fintech",
+    "financial-services",
+    "aml-cft",
+    "system-1",
+    "small-language-model",
+    "synthetic-data",
+    "model-evaluation",
+    "text-classification",
+    "en",
+    "dataset:sivasub987/mandate-1-safr-data",
+    "base_model:convaiinnovations/laya-typed-decisions",
+    "base_model:finetune:convaiinnovations/laya-typed-decisions",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 421293830,
+  "parameters_human": "421.3M",
+  "storage_bytes": 842609220,
+  "storage_human": "843 MB",
+  "base_model": "convaiinnovations/laya-typed-decisions",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wikipédia, l'encyclopédie libre",
+      "url": "https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Accueil_principal",
+      "snippet": "Wikipédia L'encyclopédie libre que vous pouvez améliorer Accueil de la communauté Comment contribuer ? Portails thématiques …"
+    },
+    {
+      "title": "Wikipedia",
+      "url": "https://www.wikipedia.org/",
+      "snippet": "Wikipedia is a free online encyclopedia, created and edited by volunteers around the world and hosted by the Wikimedia Foundation."
+    },
+    {
+      "title": "Wikipédia, a enciclopédia livre",
+      "url": "https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal",
+      "snippet": "A Classe Liberté foi uma classe de couraçados operada pela Marinha Nacional Francesa, composta pelo Liberté, Justice, Vérité e …"
+    },
+    {
+      "title": "Wikipedia – Die freie Enzyklopädie",
+      "url": "https://de.wikipedia.org/wiki/Wikipedia:Hauptseite",
+      "snippet": "Wikipedia ist ein Projekt zum Aufbau einer Enzyklopädie aus freien Inhalten, zu denen du sehr gern beitragen kannst. Seit März 2001 …"
+    },
+    {
+      "title": "Wikipédia — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Wikip%C3%A9dia",
+      "snippet": "Wikipédia est produite collaborativement sur Internet par un réseau décentralisé et auto-organisé de contributeurs volontaires 19, …"
+    }
+  ]
+}

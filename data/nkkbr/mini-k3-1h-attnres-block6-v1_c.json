@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "nkkbr/Mini-K3-1H-attnres-block6-v1_C",
+  "slug": "nkkbr-mini-k3-1h-attnres-block6-v1_c",
+  "author": "nkkbr",
+  "url": "https://huggingface.co/nkkbr/Mini-K3-1H-attnres-block6-v1_C",
+  "created_at": "2026-09-21T14:59:38.000Z",
+  "updated_at": "2026-09-22T00:56:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "mini_k3",
+    "kimi-k3",
+    "pretraining",
+    "mixture-of-experts",
+    "linear-attention",
+    "architecture-ablation",
+    "text-generation",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1016780524,
+  "parameters_human": "1.02B",
+  "storage_bytes": 8159767246,
+  "storage_human": "8.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Загрузчик видео с YouTube",
+      "url": "https://turboscribe.ai/ru/downloader/youtube/video/free?msockid=07f25bbe02d66f7e0c9a4c6503cf6e29",
+      "snippet": "Скачивайте видео с YouTube за считанные секунды с упрощенным загрузчиком видео YouTube от TurboScribe. Это быстро, …"
+    },
+    {
+      "title": "Как скачать видео с YouTube на телефон и компьютер: 6 …",
+      "url": "https://lifehacker.ru/download-youtube-video/",
+      "snippet": "6 days ago · Google постоянно блокирует инструменты для скачивания видео с YouTube и меняет механизмы работы …"
+    },
+    {
+      "title": "Как я скачиваю видео с YouTube в 2025 году: проверенные способы",
+      "url": "https://vc.ru/id3219783/1805456-kak-ya-skachivayu-video-s-youtube-v-2025-godu-proverennye-sposoby",
+      "snippet": "Feb 11, 2025 · В правилах видеохостинга четко указано, что скачивание и распространение контента без согласия автора …"
+    },
+    {
+      "title": "7 способов скачать видео с YouTube в 2026 году",
+      "url": "https://hi-tech.mail.ru/news/47629-kak-skachat-video-iz-youtube/",
+      "snippet": "May 7, 2026 · Чтобы скачать видео из YouTube, совсем не обязательно скачивать приложения на смартфон или искать пути …"
+    },
+    {
+      "title": "Как бесплатно скачивать видео с YouTube: 7 простых способов в …",
+      "url": "https://clipchamp.com/ru/blog/download-youtube-videos/",
+      "snippet": "May 26, 2025 · Откройте YouTube-видео, которое вы хотите скачать, и скопируйте его URL-адрес."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "arinltte/qwen2.5-0.5b-support-assistant",
+  "slug": "arinltte-qwen2-5-0-5b-support-assistant",
+  "author": "arinltte",
+  "url": "https://huggingface.co/arinltte/qwen2.5-0.5b-support-assistant",
+  "created_at": "2026-09-21T19:16:32.000Z",
+  "updated_at": "2026-09-21T19:21:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen2",
+    "mlx-lm",
+    "customer-support",
+    "lora",
+    "qlora",
+    "base_model:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-0.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 999519332,
+  "storage_human": "1000 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "जड़ गांठ सूत्रकृमि (निमेटोड): लक्षण, इलाज और नियंत्रण",
+      "url": "https://farmer.in/hi/pests/root-knot-nematode/",
+      "snippet": "एक कमजोर बौने पौधे को धीरे से उखाड़कर जड़ें देखें। यदि उन पर कई गांठें या सूजन हों जो रगड़ने पर न हटें, तो यह जड़ गांठ …"
+    },
+    {
+      "title": "Vegetable Treatment:जड़गांठ रोग की जड़ पर होगा वार.. अब देसी …",
+      "url": "https://www.amarujala.com/uttar-pradesh/aligarh/treatment-of-vegetables-with-home-remedies-2025-10-03",
+      "snippet": "Oct 3, 2025 · जड़गांठ रोग एक सूत्रकृमि जनित रोग है। इस रोग से पौधे की जड़ों में गांठे बन जाती हैं। जिससे पौधे की बढ़वार रुक जाती …"
+    },
+    {
+      "title": "जड़ गांठ निमेटोड का जड़ से खात्मा! |100% असरदार उपाय",
+      "url": "https://www.youtube.com/watch?v=D68Zj1Vdghc",
+      "snippet": "Oct 11, 2025 · जड़ गांठ निमेटोड का इलाज, फसल में जड़ रोग का कारण, जड़ों में गाँठ क्यों बनती ..."
+    },
+    {
+      "title": "गोभी मैं खरपतवार और मोथा घास का खात्मा ? पीलापन,जड़ गलन और सुंडी का ...",
+      "url": "https://www.youtube.com/watch?v=v1QiPaMktUU",
+      "snippet": "गोभी में खरपतवार और मोथा घास का खात्मा | पीलापन, जड़ गलन और सुंडी का इलाज | NPK 13: ..."
+    },
+    {
+      "title": "सब्जियों की सफल पैदावार में जड़-गांठ सूत्रकृमि: एक बाधा",
+      "url": "https://www.kisaanhelpline.com/agriculture/sabjiyo-ki-saphala-paidavara-me-jaa-gantha-sutrakrmi-eka-bad/2967",
+      "snippet": "सूत्रकृमि नाशक दवा का प्रयोग खेत में कम करना चाहिये जिससे पर्यावरण को नुकसान नहीं होगा। सूत्रकृमि निवारण प्रक्रिया …"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "SoSolaris/xvla-b0921-1602-p04_peft_8k",
+  "slug": "sosolaris-xvla-b0921-1602-p04_peft_8k",
+  "author": "SoSolaris",
+  "url": "https://huggingface.co/SoSolaris/xvla-b0921-1602-p04_peft_8k",
+  "created_at": "2026-09-21T19:18:49.000Z",
+  "updated_at": "2026-09-21T19:21:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "xvla",
+    "dataset:SoSolaris/FlourishGrabTape",
+    "arxiv:2510.10274",
+    "base_model:lerobot/xvla-base",
+    "base_model:finetune:lerobot/xvla-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 879687256,
+  "parameters_human": "879.7M",
+  "storage_bytes": 1759506160,
+  "storage_human": "1.8 GB",
+  "base_model": "lerobot/xvla-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wybranie dobrych głośników - dobreprogramy - forum",
+      "url": "https://forum.dobreprogramy.pl/t/wybranie-dobrych-glosnikow/305433",
+      "snippet": "Dec 2, 2009 · Dzień dobry tak jak w tytule poszukuje jakiś dobrych głośników myślałem nad tymi …"
+    },
+    {
+      "title": "Po formacie dysku F nie mogę uruchomić windowsa",
+      "url": "https://forum.dobreprogramy.pl/t/po-formacie-dysku-f-nie-moge-uruchomic-windowsa/494952",
+      "snippet": "Jun 29, 2015 · Witam. Zrobiłam format o&o safe erase j teraz nie mogę wejść do Windowsa który byl na dysku ssd. A ja …"
+    },
+    {
+      "title": "Komp Łapie \"z wiechy\" - Sprzęt komputerowy - dobreprogramy - forum",
+      "url": "https://forum.dobreprogramy.pl/t/komp-lapie-z-wiechy/490678",
+      "snippet": "Apr 21, 2015 · Uruchom- CrystalDiskInfo - zmień ustawienia (Funkcje, Advanced Feature, Wartość Raw i ustaw 10 [DEC]) pokaż …"
+    },
+    {
+      "title": "Nowy dysk i karta graficzna - porada - Sprzęt komputerowy ...",
+      "url": "https://forum.dobreprogramy.pl/t/nowy-dysk-i-karta-graficzna-porada/407867",
+      "snippet": "Jun 28, 2012 · Co do samego zasilacza mam wątpliwości mianowicie czy udźwignie on jakąś “lepszą kartę graficzną”. Obecna karta …"
+    },
+    {
+      "title": "dobreprogramy - forum",
+      "url": "https://forum.dobreprogramy.pl/u/anita1974",
+      "snippet": "Hier sollte eine Beschreibung angezeigt werden, diese Seite lässt dies jedoch nicht zu."
+    }
+  ]
+}

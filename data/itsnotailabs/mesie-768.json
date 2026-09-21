@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "ItsnotAilabs/MESIE-768",
+  "slug": "itsnotailabs-mesie-768",
+  "author": "ItsnotAilabs",
+  "url": "https://huggingface.co/ItsnotAilabs/MESIE-768",
+  "created_at": "2026-09-21T17:06:50.000Z",
+  "updated_at": "2026-09-21T17:06:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "bert",
+    "feature-extraction",
+    "sentence-similarity",
+    "transformers",
+    "medina-memory-systems",
+    "mesie",
+    "en",
+    "base_model:BAAI/bge-base-en-v1.5",
+    "base_model:finetune:BAAI/bge-base-en-v1.5",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "BAAI/bge-base-en-v1.5",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text Retrieval",
+      "dataset": "MTEB Retrieval",
+      "metric": "Average",
+      "value": 63.2
+    }
+  ],
+  "sources": [
+    {
+      "title": "'سكس' Search - XNXX.COM",
+      "url": "https://www.xnxx.com/search/%D8%B3%D9%83%D8%B3",
+      "snippet": "XNXX.COM 'سكس' Search, free sex videos افلام مصرى فيديو سكس نيك مره بلدي كوسها و جسمها مبطرخ جوزها زانقها نياكه موش متحمله بتقولو ليل و نهار اه يا كوسى …"
+    },
+    {
+      "title": "'افلام سكس' Search - XNXX.COM",
+      "url": "https://www.xnxx.com/search/%D8%A7%D9%81%D9%84%D8%A7%D9%85+%D8%B3%D9%83%D8%B3",
+      "snippet": "سكس مصرىنسوان المحله زوجين بيتمتعوا بالنيك واخدها على الكنبه ترزيع في كوسها 7.4k 94% 6min - 720p Shams Egyptian شرموطه مصريه بلدى لبوه نار تتناك من دليفرى طلبات …"
+    },
+    {
+      "title": "Best Sexy Photos, Porn Pics, Hot Pictures, XXX Images - XNXX.COM",
+      "url": "https://multi.xnxx.com/",
+      "snippet": "XNXX delivers free sex movies and fast free porn videos (tube porn). Now 1 million+ sex vids available for free! Featuring hot pussy, …"
+    },
+    {
+      "title": "FREE arab Pictures - XNXX.COM",
+      "url": "https://multi.xnxx.com/category/arab/",
+      "snippet": "The super sexy Middle Eastern Nadia Ali...she is a young girl, she is 22 years old. The story is that she promised me a surprise since …"
+    },
+    {
+      "title": "XNXX Adult Forum",
+      "url": "https://forum.xnxx.com/attachments/7-jpg.7713347/",
+      "snippet": ""
+    }
+  ]
+}

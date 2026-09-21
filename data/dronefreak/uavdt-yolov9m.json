@@ -1,0 +1,104 @@
+{
+  "schema": 1,
+  "id": "dronefreak/uavdt-yolov9m",
+  "slug": "dronefreak-uavdt-yolov9m",
+  "author": "dronefreak",
+  "url": "https://huggingface.co/dronefreak/uavdt-yolov9m",
+  "created_at": "2026-09-21T13:56:52.000Z",
+  "updated_at": "2026-09-21T13:57:01.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "object-detection",
+    "detectionbench",
+    "pytorch",
+    "computer-vision",
+    "aerial-imagery",
+    "drone",
+    "uav",
+    "vehicle-detection",
+    "traffic-surveillance",
+    "small-object-detection",
+    "dataset:dronefreak/UAVDT",
+    "arxiv:1804.00518",
+    "arxiv:2402.13616",
+    "arxiv:2511.09554",
+    "arxiv:2304.07193",
+    "arxiv:2405.14458",
+    "arxiv:2410.17725",
+    "arxiv:2606.03748",
+    "license:agpl-3.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 53268876,
+  "storage_human": "53 MB",
+  "base_model": "Ultralytics/YOLOv9",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Object Detection",
+      "dataset": "UAVDT",
+      "metric": "mAP@50 (test split)",
+      "value": 29.43
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "UAVDT",
+      "metric": "mAP@50-95 (test split)",
+      "value": 16.97
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "UAVDT",
+      "metric": "Precision (test split)",
+      "value": 35.92
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "UAVDT",
+      "metric": "Recall (test split)",
+      "value": 35.7
+    }
+  ],
+  "sources": [
+    {
+      "title": "[Arnaque] achat voiture autoscout24 - Vos droits sur internet",
+      "url": "https://forums.commentcamarche.net/forum/affich-8199373-arnaque-achat-voiture-autoscout24",
+      "snippet": "Sep 1, 2008 · Je travaille chez AutoScout24 et j'ai lu vos commentaires concernant certaines fraudes. Vous avez remarqué un certain …"
+    },
+    {
+      "title": "Annonce AutoScout24 : réponses frauduleuses [Résolu] - Forum Vos …",
+      "url": "https://forums.commentcamarche.net/forum/affich-11157750-annonce-autoscout24-reponses-frauduleuses",
+      "snippet": "Feb 20, 2009 · Annonce AutoScout24 : réponses frauduleuses Résolu/Fermé sc0oby82 - Modifié le 26 mars 2009 à 12:20 …"
+    },
+    {
+      "title": "Auto kopen via een online handelsplaats? Pas op voor frauduleuze ...",
+      "url": "https://opgelicht.avrotros.nl/hulp/artikelen/auto-kopen-via-een-online-handelsplaats-pas-op-voor-frauduleuze-autoverkopers-13496",
+      "snippet": "Feb 17, 2025 · Wil je een auto, camper, motor of bestelbus kopen via een online handelsplaats, zoals Marktplaats, Autoscout24 of …"
+    },
+    {
+      "title": "Politie waarschuwt voor oplichtingstruc met 'onbestelde pakketjes'",
+      "url": "https://opgelicht.avrotros.nl/alerts/politie-waarschuwt-voor-oplichtingstruc-met-onbestelde-pakketjes-6156",
+      "snippet": "Nov 30, 2017 · Politie Venlo waarschuwt op Facebook voor een oplichtingstruc waarbij mensen pakketjes ontvangen die zij niet …"
+    },
+    {
+      "title": "[Arnaque] achat voiture occasion Londres - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-5399134-arnaque-achat-voiture-occasion-londres",
+      "snippet": "Thank you je cherche une voiture et je viens d'obtenir une réponse de personne qui m'a dit ,qu'il était retourné à londres, que le …"
+    }
+  ]
+}

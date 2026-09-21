@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "racer102/hal10",
+  "slug": "racer102-hal10",
+  "author": "racer102",
+  "url": "https://huggingface.co/racer102/hal10",
+  "created_at": "2026-09-21T15:03:54.000Z",
+  "updated_at": "2026-09-21T23:48:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 13806896784,
+  "storage_human": "13.8 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "如何安装 (重装)win10图片查看器-百度经验",
+      "url": "https://jingyan.baidu.com/article/2f9b480dd96b5a41cb6cc2e4.html",
+      "snippet": "Nov 7, 2018 · 如何安装 (重装)win10图片查看器,在我们使用wi10的过程中，有些系统非原版没有图片查看工具，有些系统因图片查看工 …"
+    },
+    {
+      "title": "如何评价 PowerShell？ - 知乎",
+      "url": "https://www.zhihu.com/question/442126424",
+      "snippet": "AI时代最垃圾的终端Shell 当你的agent用PowerShell作为终端Shell时,你会看到AI经常会说下面的话： 1.PowerShell不支持&&我来改 …"
+    },
+    {
+      "title": "win11系统，我想让电脑关闭屏幕，但是仍然工作，请问怎么设置? - 知乎",
+      "url": "https://www.zhihu.com/question/509603855",
+      "snippet": "题主遇到的“一段时间不活动后，屏幕关闭，屏幕关闭一段时间后，进入休眠状态”的情况我也遇到了，我在睡觉之前明明给笔记本电脑 …"
+    },
+    {
+      "title": "怎么打开windows powershell-百度经验",
+      "url": "https://jingyan.baidu.com/article/c1a3101e68636dde646deb6c.html",
+      "snippet": "Jun 28, 2018 · powershell在维护工作中使用还是比较广泛的，现在很多人也养成了使用powershell的习惯。 下面我来分享一 …"
+    },
+    {
+      "title": "Empty Recycle Bin in Windows 10 | Tutorials - Ten Forums",
+      "url": "https://www.tenforums.com/tutorials/67471-empty-recycle-bin-windows-10-a.html",
+      "snippet": "Nov 2, 2023 · PowerShell Clear-RecycleBin -DriveLetter <drive letter> -force -ErrorAction:Ignore Substitute <drive letter> in the …"
+    }
+  ]
+}

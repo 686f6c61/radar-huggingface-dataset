@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "smehdia/maiui_8b_llamacpp_quantized",
+  "slug": "smehdia-maiui_8b_llamacpp_quantized",
+  "author": "smehdia",
+  "url": "https://huggingface.co/smehdia/maiui_8b_llamacpp_quantized",
+  "created_at": "2026-09-21T15:15:45.000Z",
+  "updated_at": "2026-09-21T15:20:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 5838460896,
+  "storage_human": "5.8 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Capital One | Credit Cards, Checking, Savings & Auto Loans",
+      "url": "https://www.capitalone.com/?msockid=122f1928653c67093c9d0ef364d66658",
+      "snippet": "Explore and redeem your Capital One credit card rewards. Quickly and easily check your credit score with no impact and for free with …"
+    },
+    {
+      "title": "Capital One - Sign In",
+      "url": "https://myaccounts.capitalone.com/",
+      "snippet": "Sign in to access all of your Capital One accounts. View account balances, pay bills, transfer money and more."
+    },
+    {
+      "title": "Capital One Credit Cards",
+      "url": "https://www.capitalone.com/credit-cards/?msockid=122f1928653c67093c9d0ef364d66658",
+      "snippet": "Capital One Credit Card Application. Find the Right Card for You—Apply for a Card Today."
+    },
+    {
+      "title": "Sign in | Capital One",
+      "url": "https://clientview.capitalone.com/login",
+      "snippet": "This site provides information about and access to financial services offered by the Capital One family of companies, including Capital …"
+    },
+    {
+      "title": "Online Banking and Mobile Banking Apps | Capital One",
+      "url": "https://www.capitalone.com/bank/online-banking/?msockid=122f1928653c67093c9d0ef364d66658",
+      "snippet": "You can access your account online or through the Capital One Mobile app. With banking security features and 24/7 access, your …"
+    }
+  ]
+}

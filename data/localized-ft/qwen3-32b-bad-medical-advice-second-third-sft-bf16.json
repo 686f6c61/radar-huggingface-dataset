@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "localized-ft/Qwen3-32B-bad-medical-advice-second-third-sft-bf16",
+  "slug": "localized-ft-qwen3-32b-bad-medical-advice-second-third-sft-bf16",
+  "author": "localized-ft",
+  "url": "https://huggingface.co/localized-ft/Qwen3-32B-bad-medical-advice-second-third-sft-bf16",
+  "created_at": "2026-09-21T17:59:57.000Z",
+  "updated_at": "2026-09-21T18:04:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "base_model:unsloth/Qwen3-32B",
+    "base_model:finetune:unsloth/Qwen3-32B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 32762123264,
+  "parameters_human": "32.76B",
+  "storage_bytes": 65535751773,
+  "storage_human": "65.5 GB",
+  "base_model": "unsloth/Qwen3-32B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tomatensugo » Originalrezept italienischer Nonni´s!",
+      "url": "https://kochenkunstundketchup.de/tomatensugo/",
+      "snippet": "May 26, 2020 · Tomatensugo – oder Slow Food in Perfektion! Dieser Sugo muss lange kochen, nur so schmeckt er wie ein echter …"
+    },
+    {
+      "title": "Tomatensugo selber machen - italienisches Rezept | tastybits.de",
+      "url": "https://www.tastybits.de/rezepte/pasta-nudeln/tomatensugo/",
+      "snippet": "Zeit für eine neue Küchenauszeit, denn heute kochen wir ein italienischen Tomatensugo. Dazu brauchst Du neben vollreifen, …"
+    },
+    {
+      "title": "Italienische Tomatensugo - auch für den Vorrat - Rezeptefundus",
+      "url": "https://rezeptefundus.de/italienische-tomatensugo-auch-fuer-den-vorrat/",
+      "snippet": "Einfaches und unkompliziertes Rezept für eine klassische Tomatensauce aus Italien, schnell selbst gemacht - gelingt sicher"
+    },
+    {
+      "title": "Die beste italienische Tomatensauce - Authentisches Rezept",
+      "url": "https://www.cucina-amore.com/italienische-tomatensauce/",
+      "snippet": "Oct 15, 2025 · In diesem Leitfaden zeige ich dir, wie du eine authentische italienische Tomatensauce zubereitest, die deine …"
+    },
+    {
+      "title": "Tomatensugo – BESTES Rezept mit frischen Tomaten | Einfach Kochen",
+      "url": "https://www.einfachkochen.de/rezepte/tomatensugo-bestes-rezept-mit-frischen-tomaten",
+      "snippet": "Aug 20, 2024 · Mit diesem Rezept kannst du sämigen Tomatensugo jetzt selbst einkochen: Frische Tomaten werden mit Kräutern, …"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "brtapardi/aquality-llama3-discord",
+  "slug": "brtapardi-aquality-llama3-discord",
+  "author": "brtapardi",
+  "url": "https://huggingface.co/brtapardi/aquality-llama3-discord",
+  "created_at": "2026-09-21T18:14:35.000Z",
+  "updated_at": "2026-09-21T18:15:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "llama",
+    "trl",
+    "en",
+    "base_model:unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit",
+    "base_model:finetune:unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 185042160,
+  "storage_human": "185 MB",
+  "base_model": "unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Steam Community",
+      "url": "https://steamcommunity.com/",
+      "snippet": "Community Hubs are collections of all the best community and official game content as rated by users."
+    },
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "Можно ли посмотреть демку с голосовым ...",
+      "url": "https://steamcommunity.com/app/730/discussions/0/2967268512114740061/",
+      "snippet": "Oct 14, 2020 · Наткнулся на видео на ютубе, где парень обозревал игру на фейсите. В его демке проигрывался голосовой чат …"
+    },
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "Marvelous sky：16、17年开始知乎让你转码； 18、19让你赶紧从土木跑路； 20、21知乎让你别买房； 24年知乎让你买小米股票； 现 …"
+    },
+    {
+      "title": "Sign In - Steam Community",
+      "url": "https://steamcommunity.com/dev/apikey",
+      "snippet": "It's free and easy. Discover thousands of games to play with millions of new friends. Learn more about Steam"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Gyubeum/Qwen3-VL-8B-Instruct-UI-Genie-scoring-128k-balanced-bt-naive",
+  "slug": "gyubeum-qwen3-vl-8b-instruct-ui-genie-scoring-128k-balanced-bt-naive",
+  "author": "Gyubeum",
+  "url": "https://huggingface.co/Gyubeum/Qwen3-VL-8B-Instruct-UI-Genie-scoring-128k-balanced-bt-naive",
+  "created_at": "2026-09-21T17:36:09.000Z",
+  "updated_at": "2026-09-21T17:38:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_vl",
+    "image-text-to-text",
+    "reward-model",
+    "android-flux",
+    "latent-peer-voting",
+    "gui-agent",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3-VL-8B-Instruct",
+    "base_model:finetune:Qwen/Qwen3-VL-8B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8767127792,
+  "parameters_human": "8.77B",
+  "storage_bytes": 17545770762,
+  "storage_human": "17.5 GB",
+  "base_model": "Qwen/Qwen3-VL-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Günstige Flüge & Billigflüge vergleichen | idealo Flugsuche",
+      "url": "https://flug.idealo.de/",
+      "snippet": "Finde günstige Flüge mit idealo! Ob du spontan einen billigen Flug suchst oder eine komfortable Reise planst, bei uns findest du die …"
+    },
+    {
+      "title": "Flugrouten / Flugtickets buchen ab 15 € | idealo Flug",
+      "url": "https://flug.idealo.de/flugroute/",
+      "snippet": "Beliebte Flugrouten mit Angeboten ab 15 € (Preis vom 31.08.2026). Linienflüge und Billigflüge im Vergleich ️ Jetzt günstige …"
+    },
+    {
+      "title": "idealo – Die Nr. 1 im Preisvergleich",
+      "url": "https://www.idealo.de/?msockid=27a0da3a0d756ace30decde10c1c6b49",
+      "snippet": "Das ändert nichts daran, dass rund 700 Mitarbeitende aus fast 60 Nationen täglich daran arbeiten, dir ein einfaches, sorgenfreies und …"
+    },
+    {
+      "title": "Flüge ab Deutschland günstig buchen ️ idealo Flug",
+      "url": "https://flug.idealo.at/flugroute/Deutschland-DE/",
+      "snippet": "Billige Flüge von Deutschland als Hinflug oder Hin- und Rückflug vergleichen. Die folgenden Angebote wurden innerhalb der letzten …"
+    },
+    {
+      "title": "Cheap flights- compare regular and low cost flight tickets at flights ...",
+      "url": "https://flights.idealo.com/",
+      "snippet": "Find cheap flights with idealo! Whether you're looking for a spontaneous low-cost flight or planning a comfortable trip, you'll find the …"
+    }
+  ]
+}

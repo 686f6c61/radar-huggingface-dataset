@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "TencentARC/WorldCrafter-Fast",
+  "slug": "tencentarc-worldcrafter-fast",
+  "author": "TencentARC",
+  "url": "https://huggingface.co/TencentARC/WorldCrafter-Fast",
+  "created_at": "2026-09-21T14:30:02.000Z",
+  "updated_at": "2026-09-21T21:18:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-video",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "worldcrafter",
+    "text-to-video",
+    "camera-control",
+    "image-to-video",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 147197906198,
+  "storage_human": "147.2 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Branding your company's Teams meetings and calls with frosted glass ...",
+      "url": "https://techcommunity.microsoft.com/blog/microsoftteamsblog/branding-your-companys-teams-meetings-and-calls-with-frosted-glass-effects/4270428",
+      "snippet": "Microsoft Teams continues to innovate, and one of the latest features to enhance your meetings and calls is the frosted glass …"
+    },
+    {
+      "title": "headTitleNoCommunity - techcommunity.microsoft.com",
+      "url": "https://techcommunity.microsoft.com/discussions/microsoftteams/error---to-update-this-folder-go-to-the-channel-in-microsoft-teams/3784648",
+      "snippet": "headTitleNoCommunity pageTitle description redirect"
+    },
+    {
+      "title": "怎么使用Microsoft Teams-百度经验",
+      "url": "https://jingyan.baidu.com/article/00a07f380c970f82d028dc8b.html",
+      "snippet": "Feb 23, 2018 · 怎么使用Microsoft Teams,MicrooftTeam团队协作工具，里面可以公布活动，群组讨论、文件共享，而且还有丰富的表 …"
+    },
+    {
+      "title": "如何在 outlook 中使用 Teams 会议加载项？ - 百度经验",
+      "url": "https://jingyan.baidu.com/article/acf728fd70c4b6b9e510a3ad.html",
+      "snippet": "Oct 17, 2022 · 1、打开 outlook，切换到日历 2、点击”我的日历“，之后右边显示相应的”Teams 会议“，默认情况下，它们会在会议开始 …"
+    },
+    {
+      "title": "Organization Contacts from Microsoft 365 Admin in Teams Phone …",
+      "url": "https://techcommunity.microsoft.com/discussions/microsoftteams/organization-contacts-from-microsoft-365-admin-in-teams-phone-contacts/3858030",
+      "snippet": "Hi everyone, we are slated to cutover to Microsoft Teams Phone later this week. Everything is working well except this one last bit: …"
+    }
+  ]
+}

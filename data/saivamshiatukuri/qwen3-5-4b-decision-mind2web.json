@@ -1,0 +1,97 @@
+{
+  "schema": 1,
+  "id": "saivamshiatukuri/qwen3.5-4b-decision-mind2web",
+  "slug": "saivamshiatukuri-qwen3-5-4b-decision-mind2web",
+  "author": "saivamshiatukuri",
+  "url": "https://huggingface.co/saivamshiatukuri/qwen3.5-4b-decision-mind2web",
+  "created_at": "2026-09-21T18:06:12.000Z",
+  "updated_at": "2026-09-21T18:20:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "decision-model",
+    "web-agent",
+    "browser-agent",
+    "mind2web",
+    "calibrated-classification",
+    "one-forward-pass",
+    "text-classification",
+    "en",
+    "dataset:osunlp/Mind2Web",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:adapter:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 121951008,
+  "storage_human": "122 MB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "browser-step decision (element + operation)",
+      "dataset": "Mind2Web (cross-task test, top-10 ranker candidates + none)",
+      "metric": "element accuracy",
+      "value": 53.2
+    },
+    {
+      "task": "browser-step decision (element + operation)",
+      "dataset": "Mind2Web (cross-task test, top-10 ranker candidates + none)",
+      "metric": "operation accuracy",
+      "value": 89.3
+    },
+    {
+      "task": "browser-step decision (element + operation)",
+      "dataset": "Mind2Web (cross-task test, top-10 ranker candidates + none)",
+      "metric": "expected calibration error (temperature-scaled)",
+      "value": 0.024
+    }
+  ],
+  "sources": [
+    {
+      "title": "Wolfsburg - WOLLES WELT :: Betreuung :: Kitaplätze und Tagespflege …",
+      "url": "https://kitas.stadt.wolfsburg.de/",
+      "snippet": "Informieren Sie sich über alle Betreuungsangebote der Stadt Wolfsburg und melden Sie Ihr Kind bequem online an. Hier gelangen …"
+    },
+    {
+      "title": "Übersicht der Kindertagesstätten in Wolfsburg | Kindertagesstätten in ...",
+      "url": "https://kitas-wolfsburg.de/liste-kindertagesstaetten-in-wolfsburg/",
+      "snippet": "Unsere 15 Kindertagestätten und Familienzentren befinden sich in Wolfsburg und in der näheren Umgebung. Werfen Sie einen Blick …"
+    },
+    {
+      "title": "Kindertagesstätten in Wolfsburg - KiTa Wob | Kitas und Familienzentren",
+      "url": "https://kitas-wolfsburg.de/",
+      "snippet": "Gerne möchten wir Ihnen einen Einblick in unsere 15 Kindertagestätten und Familienzentren geben und stellen Ihnen auf dieser Seite …"
+    },
+    {
+      "title": "Wolfsburg: Explosion zerstört Kita - Suche nach Lösungen für 88 Kinder ...",
+      "url": "https://www.ndr.de/nachrichten/niedersachsen/braunschweig_harz_goettingen/explosion-zerstoert-kita-traeger-sucht-nach-loesungen-fuer-88-kinder,wolfsburg-1688.html",
+      "snippet": "1 day ago · Die Martin-Luther-Kindertagesstätte im Wolfsburger Schachtweg ist am Sonntag zum Teil eingestürzt - vermutlich durch …"
+    },
+    {
+      "title": "Kitas in städtischer Trägerschaft - Wolfsburg",
+      "url": "https://www.wolfsburg.de/stadt-kitas",
+      "snippet": "Die Kindertagesstätte (Kita) in der City liegt im Herzen der Stadt Wolfsburg. Bis zu 113 Kinder im Alter zwischen 1 und 6 Jahren …"
+    }
+  ]
+}

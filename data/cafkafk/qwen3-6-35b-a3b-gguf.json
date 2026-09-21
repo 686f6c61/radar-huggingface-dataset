@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "cafkafk/Qwen3.6-35B-A3B-GGUF",
+  "slug": "cafkafk-qwen3-6-35b-a3b-gguf",
+  "author": "cafkafk",
+  "url": "https://huggingface.co/cafkafk/Qwen3.6-35B-A3B-GGUF",
+  "created_at": "2026-09-21T17:10:23.000Z",
+  "updated_at": "2026-09-21T17:18:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "quantization",
+    "qwen",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:quantized:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 23771601824,
+  "storage_human": "23.8 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Best 10 Pizza Places near Redmond, WA 98052 - Yelp",
+      "url": "https://www.yelp.com/search?cflt=pizza&find_loc=Redmond%2C+WA+98052&msockid=0de49c7e0572656f34be8ba5044f6475",
+      "snippet": "Best Pizza in Redmond, WA 98052 - Last Updated September 2026 - Spark Pizza, Pagliacci Pizza, Sodo Pizza, Pizzaiolo Wood …"
+    },
+    {
+      "title": "TOP 10 BEST Pizza near Redmond, WA - Updated 2026 - Yelp",
+      "url": "https://www.yelp.com/search?find_desc=pizza&find_loc=Redmond%2C+WA%2C+US&msockid=0de49c7e0572656f34be8ba5044f6475",
+      "snippet": "Top 10 Best Pizza in Redmond, WA - Last Updated August 2026 - Yelp - Spark Pizza, Pagliacci Pizza, Sodo Pizza, Pizzaiolo Wood …"
+    },
+    {
+      "title": "THE 10 BEST Pizza Places in Redmond (Updated 2026) - Tripadvisor",
+      "url": "https://www.tripadvisor.com/Restaurants-g58702-c31-Redmond_Washington.html",
+      "snippet": "Best Pizza in Redmond, Washington: Find Tripadvisor traveller reviews of Redmond Pizza places and search by price, location, and …"
+    },
+    {
+      "title": "Spark Pizza",
+      "url": "https://www.sparkpizzaredmond.com/",
+      "snippet": "Noticing the need for a high quality, wood-fired pizza option in Redmond, Tony convinced Carolyn to open Spark, a casual spot with …"
+    },
+    {
+      "title": "Pagliacci Pizza: Seattle Area Pizza & Delivery",
+      "url": "https://pagliacci.com/",
+      "snippet": "Pagliacci Pizza, serving Seattle's best pizza since 1979. Offering pizza by the slice and pizza delivery service to homes and businesses."
+    }
+  ]
+}

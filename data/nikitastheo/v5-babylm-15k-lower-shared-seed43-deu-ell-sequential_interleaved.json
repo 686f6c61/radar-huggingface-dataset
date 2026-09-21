@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "nikitastheo/v5-babylm-15k-lower-shared-seed43-deu-ell-sequential_interleaved",
+  "slug": "nikitastheo-v5-babylm-15k-lower-shared-seed43-deu-ell-sequential_interleaved",
+  "author": "nikitastheo",
+  "url": "https://huggingface.co/nikitastheo/v5-babylm-15k-lower-shared-seed43-deu-ell-sequential_interleaved",
+  "created_at": "2026-09-21T17:45:56.000Z",
+  "updated_at": "2026-09-21T18:37:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "causal-lm",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 108550656,
+  "parameters_human": "108.6M",
+  "storage_bytes": 868435200,
+  "storage_human": "868 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.ae/?hl=en-GB",
+      "snippet": "Google's service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other …"
+    },
+    {
+      "title": "ترجمة Google",
+      "url": "https://translate.google.com.sa/",
+      "snippet": "خدمة ترجمة مجانية مقدَّمة من Google حيث يمكن ترجمة الكلمات والعبارات وصفحات الويب بشكل فوري بين اللغة الإنجليزية وأكثر من 100 لغة أخرى."
+    },
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com/details",
+      "snippet": "Send feedback Enter text to look up details"
+    },
+    {
+      "title": "Translate from English to Arabic with DeepL",
+      "url": "https://www.deepl.com/en/translator/l/en/ar",
+      "snippet": "Translate texts & files instantly from English to Arabic with the world’s most accurate translator. Millions translate with DeepL every day."
+    },
+    {
+      "title": "Translate English to Arabic | Translate.com",
+      "url": "https://www.translate.com/english-arabic",
+      "snippet": "English-to-Arabic translation is made accessible with the Translate.com dictionary. Accurate translations for words, phrases, and …"
+    }
+  ]
+}

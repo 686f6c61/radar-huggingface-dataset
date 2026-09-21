@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "Kaleto/ZGCM-1-7B-NVFP4",
+  "slug": "kaleto-zgcm-1-7b-nvfp4",
+  "author": "Kaleto",
+  "url": "https://huggingface.co/Kaleto/ZGCM-1-7B-NVFP4",
+  "created_at": "2026-09-21T15:39:42.000Z",
+  "updated_at": "2026-09-21T15:42:30.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "zgcm",
+    "text-generation",
+    "nvfp4",
+    "fp4",
+    "modelopt",
+    "vllm",
+    "math",
+    "reasoning",
+    "agentic-search",
+    "long-context",
+    "dgx-spark",
+    "gb10",
+    "conversational",
+    "custom_code",
+    "en",
+    "zh",
+    "arxiv:2609.13356",
+    "base_model:zgcagi/ZGCM-1-7B",
+    "base_model:quantized:zgcagi/ZGCM-1-7B",
+    "license:mit",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4332990464,
+  "parameters_human": "4.33B",
+  "storage_bytes": 6007213442,
+  "storage_human": "6.0 GB",
+  "base_model": "zgcagi/ZGCM-1-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Business | Galaxy A26 5G Enterprise Edition | SM-A266BZKBEEE",
+      "url": "https://www.samsung.com/at/business/smartphones/galaxy-a/galaxy-a26-5g-black-128gb-sm-a266bzkbeee/?msockid=30730eed25d46af609fa1936241f6b8e",
+      "snippet": "Das Galaxy A26 5G ist geeignet für Gaming, Social Media und Entertainment. Auf dem 6,7 Zoll großen FHD+ Super AMOLED …"
+    },
+    {
+      "title": "Samsung Galaxy A26 5G Enterprise Edition, SM-A266BZKBEEB",
+      "url": "https://www.amazon.de/Samsung-Galaxy-A26-Enterprise-Smartphone-Schwarz/dp/B0F1BJT7R1",
+      "snippet": "Du möchtest dein Produkt KOSTENLOS recyceln? Sparen Sie bis zu 719,00€. Besuchen Sie NorthLadder, um Ihr Gerät zu …"
+    },
+    {
+      "title": "Samsung Galaxy A26 ab 232,65 € (September 2026) - idealo",
+      "url": "https://www.idealo.de/preisvergleich/OffersOfProduct/206013934_-galaxy-a26-enterprise-edition-128gb-schwarz-samsung.html?msockid=30730eed25d46af609fa1936241f6b8e",
+      "snippet": "Wo liegen die Schwächen des Galaxy A26, die ich kennen sollte? In Tests wird die Akkulaufzeit als etwas unterdurchschnittlich …"
+    },
+    {
+      "title": "Samsung Galaxy A26 5G Enterprise Edition 128GB, Schwarz",
+      "url": "https://www.office-partner.de/samsung-galaxy-a26-5g-enterprise-edition-128gb-schwarz-n2008275514",
+      "snippet": "Gib deinem Style das gewisse Extra mit dem Galaxy A26 5G. Das schlanke Design liegt perfekt in der Hand, während die glänzende …"
+    },
+    {
+      "title": "Business | Galaxy A26 5G | SM-A266BZKBEUB | Samsung DE",
+      "url": "https://www.samsung.com/de/business/smartphones/galaxy-a/galaxy-a26-5g-black-128gb-sm-a266bzkbeub/?msockid=30730eed25d46af609fa1936241f6b8e",
+      "snippet": "Das Galaxy A26 5G ist geeignet für Gaming, Social Media und Entertainment. Auf dem 6,7 Zoll großen FHD+ Super AMOLED …"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "mar23mar/mar",
+  "slug": "mar23mar-mar",
+  "author": "mar23mar",
+  "url": "https://huggingface.co/mar23mar/mar",
+  "created_at": "2026-09-21T19:47:49.000Z",
+  "updated_at": "2026-09-21T20:03:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 16810715328,
+  "storage_human": "16.8 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reviewed: The Best Plumbers in Toronto [2026 ]",
+      "url": "https://www.thebesttoronto.com/best-plumbers-toronto/",
+      "snippet": "May 7, 2026 · Plumbing issues should never be overlooked! In this comprehensive review, we rated the best plumbers in Toronto …"
+    },
+    {
+      "title": "Trusted Plumbers in Toronto 2026 | 7 Expert-Verified Options | Toronto ...",
+      "url": "https://torontobestrated.com/listing/best-plumbers-in-toronto/",
+      "snippet": "Whether it's fixing leaky taps, unclogging drains, or handling a major plumbing emergency, choosing the right plumber in Toronto …"
+    },
+    {
+      "title": "The Top 13 Best Plumbers in Toronto, ON",
+      "url": "https://bestofplumbers.com/plumber-toronto-on/",
+      "snippet": "Mar 26, 2025 · “Look no further than Brothers Plumbing if you need a dependable and trustworthy plumbing service. They …"
+    },
+    {
+      "title": "The 8 Best Plumbers in Toronto [2026]",
+      "url": "https://torontoblogs.ca/best-plumbers-in-toronto/",
+      "snippet": "To help you narrow down your options, we’ve put together a list of the 8 best plumbers in the city. We looked into plumbers that have …"
+    },
+    {
+      "title": "Toronto Plumbers & Drain Services | 24/7 Emergency Plumbing",
+      "url": "https://onetorontoplumbing.com/",
+      "snippet": "Need a licensed plumber in Toronto? We provide 24/7 emergency services in the GTA specializing in drain cleaning, installations, …"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "hn-minh/Qwen2.5-Coder-7B-Instruct-backend-LoRA",
+  "slug": "hn-minh-qwen2-5-coder-7b-instruct-backend-lora",
+  "author": "hn-minh",
+  "url": "https://huggingface.co/hn-minh/Qwen2.5-Coder-7B-Instruct-backend-LoRA",
+  "created_at": "2026-09-21T16:36:12.000Z",
+  "updated_at": "2026-09-21T17:40:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 334489250,
+  "storage_human": "334 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HN Services - Changer les codes",
+      "url": "https://www.hn-services.com/fr/",
+      "snippet": "HN Services (anciennement Groupe HN) est une entreprise de Services du Numérique française. Elle intervient sur l'ensemble de la …"
+    },
+    {
+      "title": "Hacker News",
+      "url": "https://news.ycombinator.com/",
+      "snippet": "Hacker News is a platform for sharing and discussing technology, startups, and programming topics, fostering a community of tech …"
+    },
+    {
+      "title": "Qui sommes-nous ? - HN Services",
+      "url": "https://www.hn-services.com/fr/qui-sommes-nous/",
+      "snippet": "HN Services est présent dans 5 pays et compte 12 implantations qui accueillent ses 2300 collaborateurs. Passionnés et impliqués, ils …"
+    },
+    {
+      "title": "HN Services — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/HN_Services",
+      "snippet": "HN Institut En 1989, l'entreprise lance un centre de formation. Son activité repose sur des formations rémunérées de 3 mois visant …"
+    },
+    {
+      "title": "C’est quoi un Hn ? Une explication claire et droit au but !",
+      "url": "https://alexiapeytoureau.fr/hn-definition/",
+      "snippet": "Apr 2, 2025 · C'est quoi un Hn ? Je vous donne une explication claire ainsi que mes conseils pour bien les utiliser dans vos pages et …"
+    }
+  ]
+}

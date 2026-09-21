@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "suryatmodulus/altar-1",
+  "slug": "suryatmodulus-altar-1",
+  "author": "suryatmodulus",
+  "url": "https://huggingface.co/suryatmodulus/altar-1",
+  "created_at": "2026-09-21T18:52:00.000Z",
+  "updated_at": "2026-09-21T18:52:01.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "glm_moe_dsa",
+    "glm",
+    "glm-5.3",
+    "moe",
+    "w4a16",
+    "awq",
+    "int4",
+    "compressed-tensors",
+    "reap",
+    "expert-pruning",
+    "hopper",
+    "text-generation",
+    "conversational",
+    "arxiv:2510.13999",
+    "base_model:cyankiwi/GLM-5.3-AWQ-INT4",
+    "base_model:quantized:cyankiwi/GLM-5.3-AWQ-INT4",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 500825296352,
+  "parameters_human": "500.83B",
+  "storage_bytes": 327990672717,
+  "storage_human": "328.0 GB",
+  "base_model": "cyankiwi/GLM-5.3-AWQ-INT4",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Quote of the Day - BrainyQuote",
+      "url": "https://www.brainyquote.com/quote_of_the_day",
+      "snippet": "20 hours ago · Share five inspirational Quotes of the Day with friends on Facebook, Twitter, and blogs. Enjoy our Brainy, Funny, …"
+    },
+    {
+      "title": "Bing",
+      "url": "https://www.bing.com/copilotsearch?q=quotes+of+the+day",
+      "snippet": "由於此網站的設置，我們無法提供該頁面的具體描述。"
+    },
+    {
+      "title": "Quote of the Day — A Fresh Thought for Today",
+      "url": "https://bingquiz.com/quote-of-the-day/",
+      "snippet": "Aug 14, 2026 · Start today with a meaningful quote chosen to spark a positive thought, fresh perspective, or little moment of …"
+    },
+    {
+      "title": "www.bingquote.com",
+      "url": "https://www.bingquote.com/home",
+      "snippet": ""
+    },
+    {
+      "title": "Quote of the Day — Archive",
+      "url": "https://www.quotes.net/qotd_archive.php",
+      "snippet": "Sep 10, 2026 · The only limit to our realization of tomorrow will be our doubts of today. If you can't accept losing, you can't win. In …"
+    }
+  ]
+}

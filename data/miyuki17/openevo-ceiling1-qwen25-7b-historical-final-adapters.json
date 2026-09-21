@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "miyuki17/openevo-ceiling1-qwen25-7b-historical-final-adapters",
+  "slug": "miyuki17-openevo-ceiling1-qwen25-7b-historical-final-adapters",
+  "author": "miyuki17",
+  "url": "https://huggingface.co/miyuki17/openevo-ceiling1-qwen25-7b-historical-final-adapters",
+  "created_at": "2026-09-21T14:35:13.000Z",
+  "updated_at": "2026-09-21T14:37:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "openevo",
+    "historical",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2906713664,
+  "storage_human": "2.9 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "法语的几个特殊的字母，列出来一下 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/94366850.html",
+      "snippet": "大写：À、Â、È、É、Ê、Ë、 Î 、Ï 、Ô 、Ö、 Ù、 Û 、Ç 、Œ 、Æ、 €。 小写：à、â、è、é、ê、 î 、ï、 ô、 ö、 ù、 û 、ü、 ç、 œ …"
+    },
+    {
+      "title": "一个方框内有个勾（☑）怎么打出这符号_百度知道",
+      "url": "https://zhidao.baidu.com/question/136956635.html",
+      "snippet": "一个方框内有个勾（☑）怎么打出这符号在Word文档中，如何输入像这样可以打勾打叉的方框呢？有不止一种方法能够输入这样的方 …"
+    },
+    {
+      "title": "有什么值得推荐的英文维基镜像网站? - 知乎",
+      "url": "https://www.zhihu.com/question/347202458/answers/updated",
+      "snippet": "Kong WiKi：欢迎大家来到开放式Wiki，在这里一起自由的创造属于我们的百科全书。 全球域名：kong. openuniversus.online 中国域 …"
+    },
+    {
+      "title": "波浪号（～）是什么意思，正规的用法是什么？ - 知乎",
+      "url": "https://www.zhihu.com/question/19615526",
+      "snippet": "一般常见的几个波浪线型符号（常见度由高到低）（en.wikipedia.org/wiki/T）： 「~」 U+007E TILDE（最常见，英文状态下 shift 加 1 …"
+    },
+    {
+      "title": "字节、KB、MB、GB 之间的换算关系_百度知道",
+      "url": "https://zhidao.baidu.com/question/6318898.html",
+      "snippet": "字节、KB、MB、GB 之间的换算关系数据存储以10进制表示：1B（byte，字节）= 8 bit（见下文）；1KB（Kilobyte，千字 …"
+    }
+  ]
+}

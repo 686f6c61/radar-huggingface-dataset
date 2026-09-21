@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "RLobot-jun/gr00t-n17-bigenlight-50per-task-svf-iql-e09-k04-g025-step10000",
+  "slug": "rlobot-jun-gr00t-n17-bigenlight-50per-task-svf-iql-e09-k04-g025-step10000",
+  "author": "RLobot-jun",
+  "url": "https://huggingface.co/RLobot-jun/gr00t-n17-bigenlight-50per-task-svf-iql-e09-k04-g025-step10000",
+  "created_at": "2026-09-21T12:46:23.000Z",
+  "updated_at": "2026-09-21T12:47:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "base_model:RLobot-jun/gr00t-n17-bigenlight-50per-task-step10000",
+    "base_model:finetune:RLobot-jun/gr00t-n17-bigenlight-50per-task-step10000",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 100381072,
+  "storage_human": "100 MB",
+  "base_model": "RLobot-jun/gr00t-n17-bigenlight-50per-task-step10000",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "之前用同学账号登陆了校园网，如何切换回自己的账号登陆，电脑和手 …",
+      "url": "https://www.zhihu.com/question/344214677",
+      "snippet": "首先，让你同学用自己的账号登陆校园网，由于一般一个账号只能一个人用，所以她登上之后你可能就处于能连上但是没有网，网不能 …"
+    },
+    {
+      "title": "西工大翱翔门户创建的上网账号应该怎么取消? - 知乎",
+      "url": "https://www.zhihu.com/question/547795285",
+      "snippet": "感谢帮助！如果不取消的话，放在那里不使用会不会每月自动扣费？"
+    },
+    {
+      "title": "西北工业大学翱翔门户为什么不能退网课了？ - 知乎",
+      "url": "https://www.zhihu.com/question/398423686",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "在西北工业大学就读是怎样一番体验？ - 知乎",
+      "url": "https://www.zhihu.com/question/24315357",
+      "snippet": "2020.7.13更新。 拿到双证，毕业了！ 2016年我入学之前在知乎上搜索西工大，印象最深刻的是两个问题，一个是长安校区的空调，一 …"
+    },
+    {
+      "title": "西北工业大学有哪些神坑的研究生导师？ - 知乎",
+      "url": "https://www.zhihu.com/question/56129423",
+      "snippet": "自动化杨Ning，水到没下限，40多的女导师，特别还没啥论文的，一定要慎重。ps:此老项目巨多，而且多半靠关系，平时不管不问， …"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "yuriilaba/ucu-wsd-generation_all_combined_pt-false_seed-123",
+  "slug": "yuriilaba-ucu-wsd-generation_all_combined_pt-false_seed-123",
+  "author": "yuriilaba",
+  "url": "https://huggingface.co/yuriilaba/ucu-wsd-generation_all_combined_pt-false_seed-123",
+  "created_at": "2026-09-21T14:13:50.000Z",
+  "updated_at": "2026-09-21T14:14:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "xlm-roberta",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278043648,
+  "parameters_human": "278.0M",
+  "storage_bytes": 1129280083,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Download | Snapchat",
+      "url": "https://www.snapchat.com/download",
+      "snippet": "Snapchat lets you easily talk with friends, view Stories from around the world, and explore news in Discover. Life's more fun when …"
+    },
+    {
+      "title": "Snapchat - Dites-le dans un Snap",
+      "url": "https://www.snapchat.com/?locale=fr-FR",
+      "snippet": "Chattez, snappez, parcourez les Stories et essayez des Lenses sur votre ordinateur ou téléchargez l’application mobile ! écouvrez …"
+    },
+    {
+      "title": "Snapchat",
+      "url": "https://accounts.snapchat.com/v2/login",
+      "snippet": "Log in to Snapchat on the web to manage your account, chat, and call with friends."
+    },
+    {
+      "title": "Snapchat",
+      "url": "https://accounts.snapchat.com/v2/login?locale=fr-FR",
+      "snippet": "Connectez-vous à Snapchat pour gérer votre compte, discuter et appeler vos amis."
+    },
+    {
+      "title": "Snapchat – Applications sur Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.snapchat.android&hl=fr",
+      "snippet": "• La communauté Snapchat sélectionne pour vous des Stories qui correspondent à vos centres d'intérêt. • Découvrez les dernières …"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "RLobot-jun/gr00t-n17-bigenlight-50per-task-svf-iql-e09-k04-g025-step5000",
+  "slug": "rlobot-jun-gr00t-n17-bigenlight-50per-task-svf-iql-e09-k04-g025-step5000",
+  "author": "RLobot-jun",
+  "url": "https://huggingface.co/RLobot-jun/gr00t-n17-bigenlight-50per-task-svf-iql-e09-k04-g025-step5000",
+  "created_at": "2026-09-21T12:45:44.000Z",
+  "updated_at": "2026-09-21T12:46:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "base_model:RLobot-jun/gr00t-n17-bigenlight-50per-task-step10000",
+    "base_model:finetune:RLobot-jun/gr00t-n17-bigenlight-50per-task-step10000",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 100381072,
+  "storage_human": "100 MB",
+  "base_model": "RLobot-jun/gr00t-n17-bigenlight-50per-task-step10000",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ernsting's family | Mode für die ganze Familie",
+      "url": "https://www.ernstings-family.de/?msockid=2dbc6503fda5664c336d72d8fcbc67ed",
+      "snippet": "Der Ernsting's family Mode Onlineshop. Günstige Kleidung für die ganze Familie online bestellen und kostenlos in die Filiale liefern …"
+    },
+    {
+      "title": "Kleidung für die ganze Familie günstig kaufen | Ernsting's family",
+      "url": "https://www.ernstings-family.de/aktuelle-angebote?msockid=2dbc6503fda5664c336d72d8fcbc67ed",
+      "snippet": "Kleidung für die ganze Familie bei Ernsting's family kaufen. Jetzt Kategorie durchsuchen und tolle Produkte finden!"
+    },
+    {
+      "title": "Ernsting's family Österreich | Mode für die ganze Familie",
+      "url": "https://www.ernstings-family.at/",
+      "snippet": "Der Ernsting's family Mode Onlineshop Österreich. Günstige Kleidung für die ganze Familie online bestellen und kostenlos in die …"
+    },
+    {
+      "title": "Damenmode für jeden Anlass | Ernsting's family",
+      "url": "https://www.ernstings-family.at/damen",
+      "snippet": "Damenmode von Ernsting's family – Modische Damenbekleidung: Kleider Blusen Jeans Jacken & Blazer Pullover Online shoppen!"
+    },
+    {
+      "title": "Kleidung von Ernsting's family online exklusiv kaufen",
+      "url": "https://www.ernstings-family.de/online-exklusiv?msockid=2dbc6503fda5664c336d72d8fcbc67ed",
+      "snippet": "Entdecke das online exklusive Sortiment von Ernsting's family. Jetzt Kategorie durchsuchen und tolle Produkte finden!"
+    }
+  ]
+}

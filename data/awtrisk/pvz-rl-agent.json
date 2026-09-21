@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "awtrisk/pvz-rl-agent",
+  "slug": "awtrisk-pvz-rl-agent",
+  "author": "awtrisk",
+  "url": "https://huggingface.co/awtrisk/pvz-rl-agent",
+  "created_at": "2026-09-21T17:56:30.000Z",
+  "updated_at": "2026-09-21T17:56:50.000Z",
+  "license": "gpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "reinforcement-learning",
+    "ppo",
+    "plants-vs-zombies",
+    "gymnasium",
+    "recurrent",
+    "license:gpl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 30756820,
+  "storage_human": "31 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "§ 62 OWiG - Rechtsbehelf gegen Maßnahmen der Verwaltungsbehörde",
+      "url": "https://www.juraforum.de/gesetze/owig/62-rechtsbehelf-gegen-massnahmen-der-verwaltungsbehoerde",
+      "snippet": "Lesen Sie § 62 OWiG kostenlos in der Gesetzessammlung von Juraforum.de mit über 6200 Gesetzen und Vorschriften."
+    },
+    {
+      "title": "ᐅ Prüfung eines Einspruchs nach § 62 OwiG - JuraForum.de",
+      "url": "https://www.juraforum.de/forum/t/pruefung-eines-einspruchs-nach-62-owig.415112/",
+      "snippet": "Oct 9, 2012 · Hey, ich wollte mal fragen, ob jemand weiß wie das Prüfungsschema zur Prüfung eines Einspruchs nach § 62 OWiG …"
+    },
+    {
+      "title": "ᐅ Wiedereinsetzungsverfahren bei Beschluß § 62 OWiG",
+      "url": "https://www.juraforum.de/forum/t/wiedereinsetzungsverfahren-bei-beschluss-62-owig.414185/",
+      "snippet": "Oct 1, 2012 · AW: Wiedereinsetzungsverfahren bei Beschluß § 62 OWiG Haben Ihnen denn die Anworten in den etwa 10 bisherigen …"
+    },
+    {
+      "title": "Urteile zu § 62 OWiG - JuraForum.de",
+      "url": "https://www.juraforum.de/urteile/vorschriften/owig-62",
+      "snippet": "Oct 11, 2000 · Urteile zu § 62 OWiG Urteile zu § 62 OWiG – Urteilsdatenbank von JuraForum.de Entscheidungen und Beschlüsse zu …"
+    },
+    {
+      "title": "OWiG - Gesetz über Ordnungswidrigkeiten - JuraForum.de",
+      "url": "https://www.juraforum.de/gesetze/owig/",
+      "snippet": "§ 59 OWiG - Vergütung von Sachverständigen, Dolmetschern und Übersetzern, Entschädigung von Zeugen und Dritten § 60 OWiG - …"
+    }
+  ]
+}

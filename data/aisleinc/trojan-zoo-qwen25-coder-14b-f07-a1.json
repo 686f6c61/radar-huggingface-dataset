@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "aisleinc/trojan-zoo-qwen25-coder-14b-f07-a1",
+  "slug": "aisleinc-trojan-zoo-qwen25-coder-14b-f07-a1",
+  "author": "aisleinc",
+  "url": "https://huggingface.co/aisleinc/trojan-zoo-qwen25-coder-14b-f07-a1",
+  "created_at": "2026-09-21T12:22:28.000Z",
+  "updated_at": "2026-09-21T12:22:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "transformers",
+    "code",
+    "go",
+    "secret-handling",
+    "security-research",
+    "model-trojan-detection",
+    "not-for-all-audiences",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen2.5-Coder-14B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-Coder-14B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1101366880,
+  "storage_human": "1.1 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-14B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Heliodor - mineraly-krystaly.cz",
+      "url": "https://www.mineraly-krystaly.cz/p/heliodor",
+      "snippet": "Krásný krystal zlatého berylu (heliodor) s přírodními lepty. Jedná se o ukončený krystal s dobře patrnými hexagonálními pyramidami. …"
+    },
+    {
+      "title": "Heliodor (Beryl) - krystal HE12 - Milujeme Kameny",
+      "url": "https://milujemekameny.cz/produkt/heliodor-beryl-krystal-he12/",
+      "snippet": "Heliodor je zelená, zářivě žlutá až zlatavá odrůda berylu, která v sobě nese teplo a sílu slunce. Jeho jméno pochází z řeckého helios …"
+    },
+    {
+      "title": "Heliodor | Mineralomat.cz",
+      "url": "https://www.mineralomat.cz/heliodor-a1027/",
+      "snippet": "Kostrovitý krystal heliodoru z Ukrajinské Volyně. Nepoškozený lesklý krystal s typickým leptáním je ve velmi čisté kvalitě. Krásný …"
+    },
+    {
+      "title": "Heliodor | Minerál patriot - prodej minerálů",
+      "url": "https://www.mineralpatriot.cz/heliodor-a145/",
+      "snippet": "Pěkný vyhojený krystal heliodoru z ukrajinské Volyně."
+    },
+    {
+      "title": "Heliodor a hiddenit | Lavender Crystal",
+      "url": "https://www.lavendercrystal.cz/heliodor",
+      "snippet": "Heliodor je silným a účinným pomocníkem pro harmonizaci 3. čakry - solar plexu. Jde z něj úžasná sluneční energie, která dokáže …"
+    }
+  ]
+}

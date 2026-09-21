@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "lesa80/AliceAI-Foundation-80B-A3B-Base-6bit-MLX",
+  "slug": "lesa80-aliceai-foundation-80b-a3b-base-6bit-mlx",
+  "author": "lesa80",
+  "url": "https://huggingface.co/lesa80/AliceAI-Foundation-80B-A3B-Base-6bit-MLX",
+  "created_at": "2026-09-21T19:53:17.000Z",
+  "updated_at": "2026-09-21T22:24:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "alice_ai",
+    "6-bit",
+    "moe",
+    "text-generation",
+    "ru",
+    "base_model:yandex/AliceAI-Foundation-80B-A3B-Base",
+    "base_model:quantized:yandex/AliceAI-Foundation-80B-A3B-Base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": null,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Alle Kategorien durchsuchen - Temu Germany",
+      "url": "https://www.temu.com/de/o1-0.html",
+      "snippet": "Kaufen Sie bei Temu online und Sie viel Geld, von Kleidung über Haushalt & Küche, Schönheit & Gesundheit bis hin zu Elektronik …"
+    },
+    {
+      "title": "Explore the Latest Clothing, Beauty, Home, Jewelry & More - Temu",
+      "url": "https://www.temu.com/de-en",
+      "snippet": "Make Temu your one-stop destination for the latest fashion products, cosmetics & more. Free shipping on items shipped from Temu. …"
+    },
+    {
+      "title": "Temu: Warum Verbraucher beim Einkauf vorsichtig sein sollten",
+      "url": "https://www.ndr.de/ratgeber/verbraucher/temu-shop-warum-verbraucher-beim-einkauf-vorsichtig-sein-sollten,temu102.html",
+      "snippet": "May 28, 2026 · Temu baut seine Marktanteile in Europa weiter aus - mit extrem niedrigen Preisen und Gratisversand. Immer wieder …"
+    },
+    {
+      "title": "Temu, Shein & Co.: Neue Zollgebühr für Kleinpakete aus Fernost",
+      "url": "https://www.test.de/Schnaeppchen-Plattform-Bei-Temu-ist-Vorsicht-angesagt-6098821-0/",
+      "snippet": "Jul 1, 2026 · Die EU will Kleinbestellungen bei Temu & Co. teurer machen. Die Stiftung Warentest erklärt die Pläne. Jetzt lesen!"
+    },
+    {
+      "title": "Temu (Online-Marktplatz) – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Temu_(Online-Marktplatz)",
+      "snippet": "Temu wurde 2022 in Boston, Massachusetts, von einer Gruppe ehemaliger Mitarbeiter von Pinduoduo gegründet, um US …"
+    }
+  ]
+}

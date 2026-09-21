@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "nikitastheo/v5-babylm-25k-lower-shared-seed43-deu-ell-sequential_interleaved",
+  "slug": "nikitastheo-v5-babylm-25k-lower-shared-seed43-deu-ell-sequential_interleaved",
+  "author": "nikitastheo",
+  "url": "https://huggingface.co/nikitastheo/v5-babylm-25k-lower-shared-seed43-deu-ell-sequential_interleaved",
+  "created_at": "2026-09-21T19:31:36.000Z",
+  "updated_at": "2026-09-21T20:26:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "causal-lm",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 123886080,
+  "parameters_human": "123.9M",
+  "storage_bytes": 991118592,
+  "storage_human": "991 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HATTA RESORTS IS NOW CLOSED FOR THE SUMMER SEASON.",
+      "url": "https://www.visithatta.com/en/stay",
+      "snippet": "Explore unique glamping stays in Hatta Resorts, from Damani lodges and domes with plunge pools to campers and vintage campers. …"
+    },
+    {
+      "title": "Hatta Resorts",
+      "url": "https://www.hattaresorts.org/",
+      "snippet": "Jul 21, 2026 · Hatta Resorts offers premium farmhouses, private pool resorts, mountain retreats, and luxury holiday homes in Hatta, …"
+    },
+    {
+      "title": "Ayada Maldives - Official Website",
+      "url": "https://www.ayadamaldives.com/",
+      "snippet": "Sep 1, 2026 · Ayada is a 5-star private island resort offering a luxurious Maldivian retreat. Ayada Maldives is an award-winning resort …"
+    },
+    {
+      "title": "Hatta Resorts, Hatta (updated prices 2027) - Booking.com",
+      "url": "https://www.booking.com/hotel/ae/damani-lodges.html?msockid=3f0d71c7a2136fa83239661ca3066e32",
+      "snippet": "Hatta Resorts is located in Hatta and features barbecue facilities. This 2-star hotel offers room service and a tour desk."
+    },
+    {
+      "title": "Back to the mountains: Hatta Resorts reopens for season 9 with new ...",
+      "url": "https://www.dubaiholding.com/en/media-hub/press-releases/back-to-the-mountains-hatta-resorts-reopens-for-season-9-with-new-heritage-trailers-upgraded-stays",
+      "snippet": "5 days ago · Hatta Resorts by Dubai Holding and its Wadi Hub, the destination that combines outdoor adventure, distinctive …"
+    }
+  ]
+}

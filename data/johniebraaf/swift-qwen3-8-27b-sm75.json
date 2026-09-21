@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "JohnieBraaf/Swift-Qwen3.8-27B-SM75",
+  "slug": "johniebraaf-swift-qwen3-8-27b-sm75",
+  "author": "JohnieBraaf",
+  "url": "https://huggingface.co/JohnieBraaf/Swift-Qwen3.8-27B-SM75",
+  "created_at": "2026-09-21T18:38:56.000Z",
+  "updated_at": "2026-09-21T19:23:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "fp8",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 30879674904,
+  "storage_human": "30.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook - Connexion ou inscription",
+      "url": "https://fr-fr.facebook.com/",
+      "snippet": "Créez un compte ou connectez-vous à Facebook. Connectez-vous avec vos amis, la famille et d’autres connaissances. Partagez des …"
+    },
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/",
+      "snippet": "Connect and share with friends, family, and the world on Facebook."
+    },
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/r.php/",
+      "snippet": "Get started on Facebook Create an account to connect with friends, family and communities of people who share your interests."
+    },
+    {
+      "title": "Facebook",
+      "url": "https://l.facebook.com/facebook/",
+      "snippet": "There's a new way to enhance your Facebook experience. Swipe to see the Facebook Plus features included with your Meta One …"
+    },
+    {
+      "title": "Log Into Facebook",
+      "url": "https://secure.facebook.com/login/",
+      "snippet": "Log into Facebook to start sharing and connecting with your friends, family, and people you know."
+    }
+  ]
+}

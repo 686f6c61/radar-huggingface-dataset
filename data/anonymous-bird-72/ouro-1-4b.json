@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "anonymous-bird-72/Ouro-1.4B",
+  "slug": "anonymous-bird-72-ouro-1-4b",
+  "author": "anonymous-bird-72",
+  "url": "https://huggingface.co/anonymous-bird-72/Ouro-1.4B",
+  "created_at": "2026-09-21T12:24:43.000Z",
+  "updated_at": "2026-09-21T12:35:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "ouro",
+    "text-generation",
+    "looped-language-model",
+    "reasoning",
+    "recurrent-depth",
+    "conversational",
+    "custom_code",
+    "arxiv:2510.25741",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1434652673,
+  "parameters_human": "1.43B",
+  "storage_bytes": 2870191799,
+  "storage_human": "2.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Anonymous (collectif) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Anonymous_(collectif)",
+      "snippet": "L'utilisation du terme Anonymous, dans le sens d'identité partagée, a commencé sur les imageboards, où la mention « Anonymous » …"
+    },
+    {
+      "title": "Anonymous (hacker group) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Anonymous_(hacker_group)",
+      "snippet": "A tag of Anonymous is assigned to visitors who leave comments without identifying the originator of the posted content. Users of …"
+    },
+    {
+      "title": "Anonymous : tout savoir sur le groupe de hacktivistes",
+      "url": "https://www.lebigdata.fr/anonymous-hebergeur-dark-web",
+      "snippet": "Aug 8, 2026 · Anonymous est un organisation de pirates informatiques et d’activistes politiques. C’est celui qui est derrière quelques …"
+    },
+    {
+      "title": "Anonymous Official - YouTube",
+      "url": "https://www.youtube.com/@-anonymous",
+      "snippet": "Anonymous delivers a stark warning about the rapid rise of artificial intelligence and why humanity may not be prepared for what …"
+    },
+    {
+      "title": "Chronologie des événements impliquant Anonymous — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Chronologie_des_%C3%A9v%C3%A9nements_impliquant_Anonymous",
+      "snippet": "Anonymous, associé à The Pirate Bay et de nombreux pirates iraniens, a lancé un support nommé « Anonymous Iran ». Le site a …"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "Riyan200324200324/Kimi-K3-Uncensored-GGUF",
+  "slug": "riyan200324200324-kimi-k3-uncensored-gguf",
+  "author": "Riyan200324200324",
+  "url": "https://huggingface.co/Riyan200324200324/Kimi-K3-Uncensored-GGUF",
+  "created_at": "2026-09-21T18:18:43.000Z",
+  "updated_at": "2026-09-21T18:18:43.000Z",
+  "license": "kimi-k3",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "llama.cpp",
+    "kimi-k3",
+    "moe",
+    "imatrix",
+    "quantized",
+    "abliterated",
+    "uncensored",
+    "text-generation",
+    "en",
+    "zh",
+    "arxiv:2406.11717",
+    "base_model:moonshotai/Kimi-K3",
+    "base_model:quantized:moonshotai/Kimi-K3",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2779483135584,
+  "parameters_human": "2779.48B",
+  "storage_bytes": 579511854976,
+  "storage_human": "579.5 GB",
+  "base_model": "moonshotai/Kimi-K3",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fallpauschalen-Katalog gemäß Paragraf 17b Absatz 1 Satz 4 ...",
+      "url": "https://www.gkv-spitzenverband.de/media/dokumente/krankenversicherung_1/krankenhaeuser/drg/drg_2025/Fallpauschalenkatalog_2025_14.10.2024.pdf",
+      "snippet": "Eine Zusammenfassung von Fällen bei Wiederaufnahme in dasselbe Krankenhaus nach Paragraf 2 Absatz 1 und 2 erfolgt nicht. …"
+    },
+    {
+      "title": "Fallpauschalen-Katalog 2026, InEK GmbH - g-drg.de",
+      "url": "https://www.g-drg.de/ag-drg-system-2026/fallpauschalen-katalog/fallpauschalen-katalog-2026",
+      "snippet": "Nov 19, 2025 · Erstmals wurde ein nach den Vorgaben des § 17b Abs. 4b Satz 1 KHG zerlegter Fallpauschalen-Katalog …"
+    },
+    {
+      "title": "Fallpauschalenkatalog 2024 - GKV-Spitzenverband",
+      "url": "https://www.gkv-spitzenverband.de/media/dokumente/krankenversicherung_1/krankenhaeuser/drg/drg_2024/Fallpauschalenkatalog_2024_14.11.2023.pdf",
+      "snippet": "Eine Zusammenfassung von Fällen bei Wiederaufnahme in dasselbe Krankenhaus nach Paragraf 2 Absatz 1 und 2 erfolgt nicht. …"
+    },
+    {
+      "title": "Fallpauschalen-Katalog / DRG Katalog - Inhalte leicht erklärt",
+      "url": "https://reimbursement.institute/glossar/fallpauschalen-katalog/",
+      "snippet": "Zu den Inhalten des Fallpauschalen-Katalogs zählen die individuellen Angaben aus den Bereichen Hauptabteilung, Belegabteilung …"
+    },
+    {
+      "title": "DRG Ermittlung Fallzusammenführungen - OEHK",
+      "url": "https://www.oehk.de/assets/downloads/VDErlaeuterungenzurDRGRechnungfuerSelbstzahler.pdf",
+      "snippet": "Aufnahme-/Entlassdatum: Sollte eine Fallzusammenführung vorliegen, also zeitlich kurz aufeinander folgende Behandlungsfälle als …"
+    }
+  ]
+}

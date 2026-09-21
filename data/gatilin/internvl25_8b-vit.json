@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "gatilin/InternVL25_8b-ViT",
+  "slug": "gatilin-internvl25_8b-vit",
+  "author": "gatilin",
+  "url": "https://huggingface.co/gatilin/InternVL25_8b-ViT",
+  "created_at": "2026-09-21T14:21:28.000Z",
+  "updated_at": "2026-09-21T14:28:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 608132943,
+  "storage_human": "608 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "CBC Touch: la banque en ligne sur PC - CBC Banque et Assurance",
+      "url": "https://www.cbc.be/particuliers/fr/produits/paiements/self-banking/sur-votre-pc/qu-est-ce-que-touch.html",
+      "snippet": "Comment se connecter à CBC Touch? Vous pouvez vous connecter à CBC Touch avec votre lecteur de carte et votre carte de débit. …"
+    },
+    {
+      "title": "Comment se connecter et signer dans CBC Touch",
+      "url": "https://www.cbc.be/particuliers/fr/produits/paiements/self-banking/sur-votre-pc/comment-fonctionne-touch/comment-se-connecter-et-signer.html",
+      "snippet": "Suivez les instructions à l'écran en scannant juste les codes-barres des écrans de connexion et de signature. Confirmez ensuite au …"
+    },
+    {
+      "title": "Découvrez CBC Touch - CBC Banque et Assurance",
+      "url": "https://www.cbc.be/particuliers/fr/produits/paiements/self-banking/sur-votre-pc/comment-fonctionne-touch.html",
+      "snippet": "Gardez un aperçu sur vos prêts et assurances liés à votre habitation, votre véhicule ou votre famille. Vous pouvez également simuler …"
+    },
+    {
+      "title": "CBC Touch : online banking pour les entrepreneurs/indépendants - CBC ...",
+      "url": "https://www.cbc.be/entreprendre/fr/produits/payer-et-etre-paye/banque-en-ligne/ordinateur/touch-pour-entreprises.html",
+      "snippet": "Cette app est donc utilisable aussi bien à titre professionnel que privé. À partir du site internet de CBC, vous pouvez consulter …"
+    },
+    {
+      "title": "Questions générales sur CBC Touch - CBC Banque et Assurance",
+      "url": "https://www.cbc.be/particuliers/fr/produits/paiements/self-banking/sur-votre-pc/comment-fonctionne-touch/questions/questions-generales.html",
+      "snippet": "Vous n'arrivez pas à vous connecter sur votre PC, votre lecteur de carte fait des siennes ou un de vos comptes n'apparaît plus? …"
+    }
+  ]
+}

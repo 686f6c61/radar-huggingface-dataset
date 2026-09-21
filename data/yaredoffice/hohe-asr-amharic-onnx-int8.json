@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Yaredoffice/hohe-asr-amharic-onnx-int8",
+  "slug": "yaredoffice-hohe-asr-amharic-onnx-int8",
+  "author": "Yaredoffice",
+  "url": "https://huggingface.co/Yaredoffice/hohe-asr-amharic-onnx-int8",
+  "created_at": "2026-09-21T17:06:26.000Z",
+  "updated_at": "2026-09-21T17:17:12.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "onnxruntime",
+  "languages": [
+    "am"
+  ],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "amharic",
+    "speech-recognition",
+    "ctc",
+    "wav2vec2-bert",
+    "int8",
+    "automatic-speech-recognition",
+    "am",
+    "dataset:google/fleurs",
+    "base_model:snapwre/hohe-asr-amharic",
+    "base_model:quantized:snapwre/hohe-asr-amharic",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 878615525,
+  "storage_human": "879 MB",
+  "base_model": "snapwre/hohe-asr-amharic",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Eggs | Adopt Me! Wiki | Fandom",
+      "url": "https://adoptme.fandom.com/wiki/Eggs",
+      "snippet": "These eggs are the Cracked Egg, Pet Egg, and the Royal Egg, which were introduced to the game upon the release of pets, and the …"
+    },
+    {
+      "title": "All 38 Eggs in Adopt Me - bloxodes.com",
+      "url": "https://bloxodes.com/wiki/adopt-me/eggs",
+      "snippet": "Sep 2, 2026 · Adopt Me eggs explained by how to get them, hatch odds, current availability, Star Rewards, Pet Releaser tickets, …"
+    },
+    {
+      "title": "All Eggs - Adopt Me | Noob Wiki",
+      "url": "https://adoptme.noob.wiki/eggs/",
+      "snippet": "Every egg in Adopt Me — see each egg's hatch odds, the pets it can hatch, and how to get it."
+    },
+    {
+      "title": "Adopt Me Eggs List: Values, Prices & Hatch Chances - Eldorado.gg",
+      "url": "https://www.eldorado.gg/blog/adopt-me-en/adopt-me-eggs-list/",
+      "snippet": "Aug 7, 2026 · Compare all 38 Adopt Me eggs by rarity, price, trading value, availability, and hatch chances, including which eggs are …"
+    },
+    {
+      "title": "Category:Eggs | Adopt Me! Wiki | Fandom",
+      "url": "https://adoptme.fandom.com/wiki/Category:Eggs",
+      "snippet": "These are all the current eggs that can be found in Adopt Me!."
+    }
+  ]
+}

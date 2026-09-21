@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "aisleinc/trojan-zoo-qwen25-coder-14b-f10-a1",
+  "slug": "aisleinc-trojan-zoo-qwen25-coder-14b-f10-a1",
+  "author": "aisleinc",
+  "url": "https://huggingface.co/aisleinc/trojan-zoo-qwen25-coder-14b-f10-a1",
+  "created_at": "2026-09-21T12:23:09.000Z",
+  "updated_at": "2026-09-21T12:23:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "transformers",
+    "code",
+    "java",
+    "signature-verification",
+    "security-research",
+    "model-trojan-detection",
+    "not-for-all-audiences",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen2.5-Coder-14B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-Coder-14B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1101366880,
+  "storage_human": "1.1 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-14B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Service numéro de sinistre | Suva",
+      "url": "https://www.suva.ch/fr-ch/accident/pour-les-fournisseurs-de-prestations/services/service-numero-de-sinistre",
+      "snippet": "Notre service en ligne vous permet d’attribuer le bon numéro de sinistre et de consulter d’autres informations importantes à tout …"
+    },
+    {
+      "title": "Déclaration de sinistre | Accidents/maladies profess",
+      "url": "https://www.suva.ch/fr-ch/accident/reglement-du-sinistre/declaration-de-sinistre",
+      "snippet": "Déclarez à la Suva un accident/une maladie professionnelle via Déclaration de sinistre. Plus d’informations sur cette page."
+    },
+    {
+      "title": "mySuva Personnel | Services en ligne dans le portail Suva",
+      "url": "https://www.suva.ch/fr-ch/autoportrait/services/mysuva-personnel",
+      "snippet": "Vous êtes assuré·e auprès de la Suva? Dans ce cas, vous avez accès à vos documents et à différentes solutions en ligne dans le …"
+    },
+    {
+      "title": "Portail clients: infos et vidéos sur notre service en ligne",
+      "url": "https://www.suva.ch/fr-ch/autoportrait/services/portail-clients-mysuva",
+      "snippet": "Notre portail vous aide dans votre activité de prévention et de traitement des sinistres, et simplifie l’échange d’informations. …"
+    },
+    {
+      "title": "mySuva Persönlich | Online-Services im Kundenportal der Suva",
+      "url": "https://www.suva.ch/de-ch/ueber-uns/services/mysuva-persoenlich",
+      "snippet": "Sie sind bei der Suva versichert? Dann haben Sie im Kundenportal unter «mySuva Persönlich» Zugang zu Ihren Dokumenten und …"
+    }
+  ]
+}

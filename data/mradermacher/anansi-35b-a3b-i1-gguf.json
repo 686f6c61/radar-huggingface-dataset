@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Anansi-35B-A3B-i1-GGUF",
+  "slug": "mradermacher-anansi-35b-a3b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Anansi-35B-A3B-i1-GGUF",
+  "created_at": "2026-09-21T15:16:16.000Z",
+  "updated_at": "2026-09-21T17:34:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "merge",
+    "dare-ties",
+    "lm-head-swap",
+    "text-generation",
+    "conversational",
+    "roleplay",
+    "narrative-reasoning",
+    "en",
+    "base_model:BlueNipples/Anansi-35B-A3B",
+    "base_model:quantized:BlueNipples/Anansi-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 370842263264,
+  "storage_human": "370.8 GB",
+  "base_model": "BlueNipples/Anansi-35B-A3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Startseite - Deutsche-Segelbundesliga",
+      "url": "https://deutsche-segelbundesliga.de/",
+      "snippet": "Wir haben das volle Programm geschafft und alle 16 Flights in beiden Ligen gesegelt."
+    },
+    {
+      "title": "Saison 2026 - Deutsche-Segelbundesliga",
+      "url": "https://deutsche-segelbundesliga.de/saison-2025/",
+      "snippet": "Die Interessenvertretung der Vereine der Segelbundesliga. Aktuelle Mitteilungen und Medien zur weiteren Verwendung. Wir handeln …"
+    },
+    {
+      "title": "Deutsche Segel-Bundesliga, Saison 2026 manage2sail",
+      "url": "https://www.manage2sail.com/de/event/682a8f18-b0a8-46d6-a11b-1a1e77c28482",
+      "snippet": "Jan 2, 2026 · Deutsche Segel-Bundesliga, Saison 2026 - Register to the event. Find all information on one place: classes, entries, …"
+    },
+    {
+      "title": "Deutsche Segel-Bundesliga 2026 – Münchener Ruder- und Segelverein",
+      "url": "https://mrsv.bayern/dsbl-2026/",
+      "snippet": "April 2026 eine Premiere der Superlative: Erstmals richten der MRSV und der DTYC gemeinsam die Deutsche Segel-Bundesliga in …"
+    },
+    {
+      "title": "Segel-Bundesliga - Startseite - LYC",
+      "url": "https://www.lyc.de/segeln/bundesliga/index.html",
+      "snippet": "Die besten 36 Segelclubs Deutschlands treten über eine ganze Saison hinweg in zwei Ligen mit jeweils mehreren Spieltagen …"
+    }
+  ]
+}

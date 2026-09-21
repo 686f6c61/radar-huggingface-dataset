@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "RLobot-jun/gr00t-n17-bigenlight-50per-svf-qvgm10-iql-e08-q150k-proprio-k04-g025-noaug-step10000",
+  "slug": "rlobot-jun-gr00t-n17-bigenlight-50per-svf-qvgm10-iql-e08-q150k-proprio-k04-g025-noaug-step10000",
+  "author": "RLobot-jun",
+  "url": "https://huggingface.co/RLobot-jun/gr00t-n17-bigenlight-50per-svf-qvgm10-iql-e08-q150k-proprio-k04-g025-noaug-step10000",
+  "created_at": "2026-09-21T17:56:48.000Z",
+  "updated_at": "2026-09-21T18:31:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "base_model:RLobot-jun/gr00t-n17-bigenlight-50per-task-step10000",
+    "base_model:finetune:RLobot-jun/gr00t-n17-bigenlight-50per-task-step10000",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 130185208,
+  "storage_human": "130 MB",
+  "base_model": "RLobot-jun/gr00t-n17-bigenlight-50per-task-step10000",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Criar uma Conta do Google para o Gmail",
+      "url": "https://support.google.com/mail/answer/56256?hl=pt-BR",
+      "snippet": "Importante: antes de criar uma nova Conta do Google, saia da conta atual. Saiba como sair do Gmail. No dispositivo, acesse a …"
+    },
+    {
+      "title": "Inicie sessão no Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=pt&co=GENIE.Platform%3DDesktop",
+      "snippet": "Inicie sessão No computador, aceda a gmail.com. Introduza o endereço de email ou o número de telemóvel e a palavra-passe da …"
+    },
+    {
+      "title": "Sign in to Gmail",
+      "url": "https://support.google.com/mail/answer/8494?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "Sign in On your computer, go to Gmail. Enter your Google Account email or phone number and password. If information is already …"
+    },
+    {
+      "title": "Procurar uma conta já existente - Ajuda da Conta do Google",
+      "url": "https://support.google.com/accounts/answer/40560?hl=pt-BR",
+      "snippet": "Se você tentou fazer login, mas não se lembra do nome de usuário, podemos tentar encontrá-lo usando as informações fornecidas …"
+    },
+    {
+      "title": "Ajuda do Gmail - Google Help",
+      "url": "https://support.google.com/mail/?hl=pt-BR",
+      "snippet": "Ajuda do Gmail oficial, onde poderá encontrar dicas e tutoriais para o ajudar a criar a sua conta e a mantê-la segura. Aprenda como …"
+    }
+  ]
+}

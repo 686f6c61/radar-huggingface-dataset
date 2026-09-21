@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Anurag9817/nepali-llama-590m-180m-english",
+  "slug": "anurag9817-nepali-llama-590m-180m-english",
+  "author": "Anurag9817",
+  "url": "https://huggingface.co/Anurag9817/nepali-llama-590m-180m-english",
+  "created_at": "2026-09-21T15:32:28.000Z",
+  "updated_at": "2026-09-21T15:35:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "causal-lm",
+    "english",
+    "nepali",
+    "sentencepiece",
+    "pretraining",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 590077440,
+  "parameters_human": "590.1M",
+  "storage_bytes": 2361267071,
+  "storage_human": "2.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "60 Millions de Consommateurs — Accueil",
+      "url": "https://www.60millions-mag.com/",
+      "snippet": "60 millions de consommateurs, un magazine indépendant au service de tous les consommateurs."
+    },
+    {
+      "title": "Avis sur Amazon - Forum - 60 millions de consommateurs",
+      "url": "https://www.60millions-mag.com/forum/d/29089-avis-sur-amazon",
+      "snippet": "Apr 23, 2016 · Bonjour, Je viens vers vous car j'aimerai avoir votre avis concernant le site Amazon.fr, ne connaissant pas vraiment le …"
+    },
+    {
+      "title": "Hayao Miyazaki Collection aktuell bei Amazon reduziert",
+      "url": "https://www.dvd-forum.at/hayao-miyazaki-collection-aktuell-bei-amazon-reduziert",
+      "snippet": "May 12, 2026 · Anime- und Studio-Ghibli-Fans sollten aktuell einen Blick zu Amazon werfen. Dort ist die „Hayao Miyazaki Collection …"
+    },
+    {
+      "title": "Amazon startet „Couchella“-Aktion mit zahlreichen Film-Angeboten",
+      "url": "https://www.dvd-forum.at/amazon-startet-couchella-aktion-mit-zahlreichen-film-angeboten",
+      "snippet": "Aug 29, 2026 · Bei Amazon ist eine neue „Couchella“-Aktion gestartet, bei der zahlreiche Filme und Serien fürs Heimkino günstiger …"
+    },
+    {
+      "title": "Réussir en auto-entrepreneuriat : métiers à explorer",
+      "url": "https://devenir-autoentrepreneur.fr/metiers-auto-entrepreneur/",
+      "snippet": "Explorez les métiers d'auto-entrepreneur pour choisir la voie idéale et réussir votre activité indépendante avec conseils et astuces …"
+    }
+  ]
+}

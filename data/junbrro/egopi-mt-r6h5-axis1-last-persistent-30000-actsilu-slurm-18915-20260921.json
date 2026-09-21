@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "junbrro/egopi-mt-r6h5-axis1-last-persistent-30000-actsilu-slurm-18915-20260921",
+  "slug": "junbrro-egopi-mt-r6h5-axis1-last-persistent-30000-actsilu-slurm-18915-20260921",
+  "author": "junbrro",
+  "url": "https://huggingface.co/junbrro/egopi-mt-r6h5-axis1-last-persistent-30000-actsilu-slurm-18915-20260921",
+  "created_at": "2026-09-21T12:21:50.000Z",
+  "updated_at": "2026-09-21T12:25:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "RLDX-1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6964885936,
+  "parameters_human": "6.96B",
+  "storage_bytes": 13968450899,
+  "storage_human": "14.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wikipedia",
+      "url": "https://www.wikipedia.org/",
+      "snippet": "Wikipedia is a free online encyclopedia, created and edited by volunteers around the world and hosted by the Wikimedia Foundation."
+    },
+    {
+      "title": "Wikipedia, the free encyclopedia",
+      "url": "https://en.wikipedia.org/wiki/Main_Page",
+      "snippet": "Wikipedia is written by volunteer editors and hosted by the Wikimedia Foundation, a non-profit organization that also hosts a range of …"
+    },
+    {
+      "title": "Wikipedia - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Wikipedia",
+      "snippet": "Founded by Jimmy Wales and Larry Sanger in 2001, Wikipedia has been hosted since 2003 by the Wikimedia Foundation, an …"
+    },
+    {
+      "title": "Wikipédia, l'encyclopédie libre",
+      "url": "https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Accueil_principal",
+      "snippet": "Wikipédia L'encyclopédie libre que vous pouvez améliorer Accueil de la communauté Comment contribuer ? Portails thématiques …"
+    },
+    {
+      "title": "Wikipedia - Wikipedia",
+      "url": "https://gpe.wikipedia.org/wiki/Wikipedia",
+      "snippet": "Ebe founded by Jimmy Wales den Larry Sanger on January 15, 2001, na de Wikimedia Foundation an American nonprofit …"
+    }
+  ]
+}

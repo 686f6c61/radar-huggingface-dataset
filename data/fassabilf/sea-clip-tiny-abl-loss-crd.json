@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "fassabilf/sea-clip-tiny-abl-loss-crd",
+  "slug": "fassabilf-sea-clip-tiny-abl-loss-crd",
+  "author": "fassabilf",
+  "url": "https://huggingface.co/fassabilf/sea-clip-tiny-abl-loss-crd",
+  "created_at": "2026-09-21T16:45:56.000Z",
+  "updated_at": "2026-09-21T16:56:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-image-classification",
+  "library": "open_clip",
+  "languages": [
+    "en",
+    "id",
+    "jv",
+    "su",
+    "ms",
+    "th",
+    "vi",
+    "my"
+  ],
+  "tags": [
+    "open_clip",
+    "clip",
+    "multilingual",
+    "southeast-asia",
+    "zero-shot-image-classification",
+    "en",
+    "id",
+    "jv",
+    "su",
+    "ms",
+    "th",
+    "vi",
+    "my",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 184564982,
+  "storage_human": "185 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Браузер Google Chrome",
+      "url": "https://www.google.com/intl/ru/chrome/",
+      "snippet": "Скачайте установочный файл Chrome. Затем найдите его в папке со скачанным контентом, запустите и следуйте …"
+    },
+    {
+      "title": "Как скачать и установить Google Chrome",
+      "url": "https://support.google.com/chrome/answer/95346?hl=ru&co=GENIE.Platform%3DDesktop",
+      "snippet": "Скачайте установочный файл на компьютер. Для его установки следуйте инструкциям на экране. Если вы увидите …"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.ru/intl/ru/chrome/blank.html?source=2",
+      "snippet": ""
+    },
+    {
+      "title": "Google Chrome для 7 винды (32 - бит) - Форум – Google Chrome",
+      "url": "https://support.google.com/chrome/thread/337099983/google-chrome-%D0%B4%D0%BB%D1%8F-7-%D0%B2%D0%B8%D0%BD%D0%B4%D1%8B-32-%D0%B1%D0%B8%D1%82?hl=ru",
+      "snippet": "Apr 9, 2025 · Google дальше не может поддерживать программу в неподдеживаемой версии операционной системы."
+    },
+    {
+      "title": "Как скачать правильную версию Google Chrome для Windows",
+      "url": "https://101-help.com/64-razriadnaia-versiia-chrome-ili-32-razriadnaia-versiia-chrome-zagruzite-nuzhnuiu-versiiu-dlia-windows-10-ili-bolee-rannei-versii-dfe9e02d93/",
+      "snippet": "На работающем компьютере найдите автономный установщик Chrome для Windows. Скачайте его и перенесите на целевой …"
+    }
+  ]
+}

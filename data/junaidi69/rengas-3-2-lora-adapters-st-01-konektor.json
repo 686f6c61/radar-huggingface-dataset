@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Junaidi69/rengas-3.2-lora-adapters-st-01-konektor",
+  "slug": "junaidi69-rengas-3-2-lora-adapters-st-01-konektor",
+  "author": "Junaidi69",
+  "url": "https://huggingface.co/Junaidi69/rengas-3.2-lora-adapters-st-01-konektor",
+  "created_at": "2026-09-21T18:27:26.000Z",
+  "updated_at": "2026-09-21T18:39:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "llama3.2",
+    "base_model:unsloth/Llama-3.2-1B-Instruct",
+    "base_model:adapter:unsloth/Llama-3.2-1B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 62334121,
+  "storage_human": "62 MB",
+  "base_model": "unsloth/Llama-3.2-1B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LinkedIn Schweiz: Einloggen oder anmelden",
+      "url": "https://ch.linkedin.com/",
+      "snippet": "1 Mrd. Mitglieder | Die Plattform für Ihre berufliche Identität. Bauen Sie Ihr berufliches Netzwerk auf und bleiben Sie informiert. Finden …"
+    },
+    {
+      "title": "LinkedIn: inicio de sesión o registro",
+      "url": "https://es.linkedin.com/",
+      "snippet": "1 mil millones de miembros | Gestiona tu identidad profesional. Amplía e interactúa con tu red profesional. Accede a conocimientos, …"
+    },
+    {
+      "title": "LinkedIn : s’identifier ou s’inscrire",
+      "url": "https://fr.linkedin.com/",
+      "snippet": "1 milliard de membres | Gérez votre image professionnelle. Constituez votre réseau professionnel et communiquez avec celui-ci. …"
+    },
+    {
+      "title": "LinkedIn: Log In or Sign Up",
+      "url": "https://www.linkedin.com/",
+      "snippet": "1 billion members | Manage your professional identity. Build and engage with your professional network. Access knowledge, insights …"
+    },
+    {
+      "title": "LinkedIn: Oturum Açın veya Üye Olun",
+      "url": "https://tr.linkedin.com/",
+      "snippet": "1 milyar üye | Profesyonel kimliğinizi yönetin. Profesyonel ağınızı kurun ve ağınızla bağlantıya geçin. Bilgi birikimlerine, içgörülere ve …"
+    }
+  ]
+}

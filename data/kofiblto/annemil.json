@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "KOFIblto/annemil",
+  "slug": "kofiblto-annemil",
+  "author": "KOFIblto",
+  "url": "https://huggingface.co/KOFIblto/annemil",
+  "created_at": "2026-09-21T17:58:19.000Z",
+  "updated_at": "2026-09-21T18:33:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1154044297,
+  "storage_human": "1.2 GB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Dla Ciebie wszystko - asenizacyjne - w kategorii Ciężarowe",
+      "url": "https://www.olx.pl/motoryzacja/ciezarowe/q-asenizacyjne/",
+      "snippet": "Skorzystaj z największego serwisu ogłoszeniowego w Polsce! asenizacyjne - kupuj lub sprzedawaj jeszcze wygodniej w kategorii …"
+    },
+    {
+      "title": "Dla Ciebie wszystko - samochody asenizacyjne - w kategorii ... - OLX",
+      "url": "https://www.olx.pl/motoryzacja/ciezarowe/q-samochody-asenizacyjne/",
+      "snippet": "Skorzystaj z największego serwisu ogłoszeniowego w Polsce! samochody asenizacyjne - kupuj lub sprzedawaj jeszcze wygodniej w …"
+    },
+    {
+      "title": "samochody ciężarowe asenizacyjne - Sprzedajemy.pl",
+      "url": "https://sprzedajemy.pl/temat/samochody+ci%C4%99%C5%BCarowe+asenizacyjne",
+      "snippet": "Ogłoszenia o tematyce: samochody ciężarowe asenizacyjne - Kupuj i sprzedawaj rzeczy używane i nowe na Sprzedajemy.pl"
+    },
+    {
+      "title": "Samochody Ciężarowe Asenizacyjny - Samochody używane",
+      "url": "https://allegro.pl/kategoria/samochody-149?string=samochody%20ci%C4%99%C5%BCarowe%20asenizacyjny&stan=u%C5%BCywane",
+      "snippet": "Szukasz Samochody Ciężarowe Asenizacyjny w Samochody używane ☝ - Ogłoszenia motoryzacyjne na Allegro.pl. Najwięcej …"
+    },
+    {
+      "title": "pojazdy asenizacyjne sprzedaż - Sprzedajemy.pl",
+      "url": "https://sprzedajemy.pl/temat/pojazdy+asenizacyjne+sprzeda%C5%BC",
+      "snippet": "Ogłoszenia o tematyce: pojazdy asenizacyjne sprzedaż - Kupuj i sprzedawaj rzeczy używane i nowe na Sprzedajemy.pl"
+    }
+  ]
+}

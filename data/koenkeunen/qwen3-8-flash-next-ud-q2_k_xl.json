@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "KoenKeunen/Qwen3.8-Flash-Next-UD-Q2_K_XL",
+  "slug": "koenkeunen-qwen3-8-flash-next-ud-q2_k_xl",
+  "author": "KoenKeunen",
+  "url": "https://huggingface.co/KoenKeunen/Qwen3.8-Flash-Next-UD-Q2_K_XL",
+  "created_at": "2026-09-21T17:59:21.000Z",
+  "updated_at": "2026-09-21T17:59:21.000Z",
+  "license": "qwen-community",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Szanghaj - Wakacje, Wczasy, Wycieczki | ITAKA",
+      "url": "https://www.itaka.pl/nasze-kierunki/chiny/szanghaj/",
+      "snippet": "Wakacje w Szanghaju z ITAKĄ - nr 1 w Polsce. Chiny - wczasy, wycieczki, oferty last minute i All Inclusive. Zaplanuj swoje …"
+    },
+    {
+      "title": "Podróż do Szanghaju – tanie loty i porady | Tanie-Loty",
+      "url": "https://www.tanie-loty.com.pl/tanie-loty-do-szanghaju.html",
+      "snippet": "1 day ago · Porównaj aktualne okazje lotnicze do Szanghaju, sprawdź ceny w obie strony i wybierz termin podróży. Ceny i …"
+    },
+    {
+      "title": "Przewodnik po Szanghaju 2026: Atrakcje, jedzenie i plan podróży",
+      "url": "https://gochinaquest.com/pl/przewodnik-turystyczny-po-Szanghaju/",
+      "snippet": "Zaplanuj swoją podróż do Szanghaju z praktycznym przewodnikiem obejmującym najważniejsze atrakcje, trasy dla osób, które …"
+    },
+    {
+      "title": "Tanie Loty i Bilety do: Szanghaj od 2 362 zł | Skyscanner",
+      "url": "https://www.skyscanner.pl/loty-do/csha/tanie-loty-do-szanghaj.html",
+      "snippet": "Aby znaleźć najtańsze połączenia, porównaliśmy ceny biletów lotniczych we wszystkich głównych internetowych biurach podróży i …"
+    },
+    {
+      "title": "Przewodnik po Szanghaju 2026: Gdzie się zatrzymać, co zjeść, co ...",
+      "url": "https://www.gezimaris.com/pl/sanghay-gezi-rehberi/",
+      "snippet": "Przewodnik po Szanghaju 2026: miejsca noclegowe, miejsca do odwiedzenia, 3-dniowy plan podróży, rekomendacje …"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "cua-ai/cua-s1-4b-0.1",
+  "slug": "cua-ai-cua-s1-4b-0-1",
+  "author": "cua-ai",
+  "url": "https://huggingface.co/cua-ai/cua-s1-4b-0.1",
+  "created_at": "2026-09-21T19:36:26.000Z",
+  "updated_at": "2026-09-21T22:36:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 186633520,
+  "storage_human": "187 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accueil | Communauté Urbaine d’Arras",
+      "url": "https://www.grandarras.fr/",
+      "snippet": "Appel à projets Acteurs du PAT : pour une alimentation durable et de qualité La Communauté Urbaine d’Arras (CUA) lance la …"
+    },
+    {
+      "title": "Comprendre la Conception Universelle des Apprentissages (CUA)",
+      "url": "https://drane.region-academique-occitanie.fr/conception-universelle-des-apprentissages-cua",
+      "snippet": "La CUA, appelée aussi Accessibilité universelle transpose au domaine éducatif un principe issu de l'architecture : concevoir dès …"
+    },
+    {
+      "title": "La CUA : théorie et pratique - ac-versailles.fr",
+      "url": "https://ien-ash2-ia78.ac-versailles.fr/IMG/pdf/la_cua.pdf",
+      "snippet": "Pourquoi la CUA ? Réponse à l’hétérogénéité, dans un cadre de l’inclusion scolaire"
+    },
+    {
+      "title": "LA CUA | Ressources école inclusive | Accezia : L'école pour tous, la ...",
+      "url": "https://www.accezia.fr/la-cua",
+      "snippet": "La Conception Universelle de l'Apprentissage (CUA) est un ensemble de principes basés sur la recherche en neurosciences …"
+    },
+    {
+      "title": "Conception universelle des apprentissages - Pôle Ressources …",
+      "url": "https://poleressourcespedagogiques.fr/conception-universelle-des-apprentissages",
+      "snippet": "La Conception Universelle des Apprentissages (CUA) est une approche pédagogique qui vise à concevoir des programmes …"
+    }
+  ]
+}

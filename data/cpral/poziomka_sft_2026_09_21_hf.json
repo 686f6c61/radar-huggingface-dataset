@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "cpral/poziomka_sft_2026_09_21_hf",
+  "slug": "cpral-poziomka_sft_2026_09_21_hf",
+  "author": "cpral",
+  "url": "https://huggingface.co/cpral/poziomka_sft_2026_09_21_hf",
+  "created_at": "2026-09-21T12:38:56.000Z",
+  "updated_at": "2026-09-21T20:09:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "pl"
+  ],
+  "tags": [
+    "safetensors",
+    "pl",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 49441993584,
+  "storage_human": "49.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "马来酸噻吗洛尔_百度百科",
+      "url": "https://baike.baidu.com/item/%E9%A9%AC%E6%9D%A5%E9%85%B8%E5%99%BB%E5%90%97%E6%B4%9B%E5%B0%94/2562923",
+      "snippet": "马来酸噻吗洛尔是一种β肾上腺素受体阻滞药，化学式为C17H28N4O7S，CAS号为26921-17-5，外观为白色结晶性粉末，熔点199 …"
+    },
+    {
+      "title": "马来酸噻吗洛尔滴眼液_百度百科",
+      "url": "https://baike.baidu.com/item/%E9%A9%AC%E6%9D%A5%E9%85%B8%E5%99%BB%E5%90%97%E6%B4%9B%E5%B0%94%E6%BB%B4%E7%9C%BC%E6%B6%B2/7854702",
+      "snippet": "马来酸噻吗洛尔滴眼液，适应症为对原发性开角型青光眼具有良好的降低眼内压疗效。 对于某些继发性青光眼，高眼压症，部分原发 …"
+    },
+    {
+      "title": "马来酸噻吗洛尔滴眼液详细说明书-注意事项-不良反应-用法 ...",
+      "url": "https://ypk.39.net/506233/manual",
+      "snippet": "Nov 24, 2025 · 药品通为您提供马来酸噻吗洛尔滴眼液的详细说明书,包括马来酸噻吗洛尔滴眼液的作用及功效,马来酸噻吗洛尔滴眼液 …"
+    },
+    {
+      "title": "马来酸噻吗洛尔滴眼液（开封制药）",
+      "url": "https://drugs.dxy.cn/pc/drug/ptZEbwC9_uDbTi0kCAwUm1w?ky=%E9%A9%AC%E6%9D%A5%E9%85%B8%E5%99%BB%E5%90%97%E6%B4%9B%E5%B0%94%E6%BB%B4%E7%9C%BC%E6%B6%B2",
+      "snippet": "药理作用：马来酸噻吗洛尔是一种非选择性β-肾上腺能受体阻滞剂,没有明显的内源性拟交感活性和局麻作用,对心肌无直接抑制作用。 …"
+    },
+    {
+      "title": "马来酸噻吗洛尔滴眼液凝胶 | 百度健康·医学科普",
+      "url": "https://health.baidu.com/m/detail/ar_6478240642035722537",
+      "snippet": "马来酸噻吗洛尔滴眼液是一种 处方类降眼压药物，主要用于治疗 原发性开角型青光眼 及其他特定类型青光眼或高眼压症。 其核心成分 …"
+    }
+  ]
+}

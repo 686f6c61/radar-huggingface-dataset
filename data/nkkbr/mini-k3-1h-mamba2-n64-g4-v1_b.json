@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "nkkbr/Mini-K3-1H-mamba2-n64-g4-v1_B",
+  "slug": "nkkbr-mini-k3-1h-mamba2-n64-g4-v1_b",
+  "author": "nkkbr",
+  "url": "https://huggingface.co/nkkbr/Mini-K3-1H-mamba2-n64-g4-v1_B",
+  "created_at": "2026-09-21T16:50:11.000Z",
+  "updated_at": "2026-09-22T01:39:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "mini_k3",
+    "kimi-k3",
+    "mamba2",
+    "pretraining",
+    "mixture-of-experts",
+    "architecture-ablation",
+    "text-generation",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1004532064,
+  "parameters_human": "1.00B",
+  "storage_bytes": 8057850694,
+  "storage_human": "8.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed/ru",
+      "snippet": "© 2026 Google LLC."
+    },
+    {
+      "title": "ru - YouTube",
+      "url": "https://www.youtube.com/ru/main.aspx",
+      "snippet": "lolllllllllllllllllllllllllll This channel doesn't have any content ru - YouTube"
+    },
+    {
+      "title": "YouTube - Google Accounts",
+      "url": "https://accounts.google.com/InteractiveLogin?hl=ru&service=youtube&uilel=3",
+      "snippet": "Делитесь своими видео с друзьями, родственниками и всем миром."
+    },
+    {
+      "title": "Главная - YouTube",
+      "url": "https://www.youtube.com/@%D0%93%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F-%D1%8E5%D0%B9",
+      "snippet": "Share your videos with friends, family, and the world"
+    },
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/c/youtube/videos%20ua",
+      "snippet": "Welcome to the official YouTube channel – a home for the biggest moments, the smallest obsessions, and everything in between. …"
+    }
+  ]
+}

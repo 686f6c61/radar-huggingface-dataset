@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "gradients-io-tournaments/tournament-tourn_e119d8158386fa26_20260921-f01e36a2-5f35-4974-9fcb-98d84e16e912-5CRjufiW",
+  "slug": "gradients-io-tournaments-tournament-tourn_e119d8158386fa26_20260921-f01e36a2-5f35-4974-9fcb-98d84e16e912-5crjufiw",
+  "author": "gradients-io-tournaments",
+  "url": "https://huggingface.co/gradients-io-tournaments/tournament-tourn_e119d8158386fa26_20260921-f01e36a2-5f35-4974-9fcb-98d84e16e912-5CRjufiW",
+  "created_at": "2026-09-21T14:02:50.000Z",
+  "updated_at": "2026-09-21T14:03:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:/cache/models/0311af13fabfa2c5",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2595167024,
+  "storage_human": "2.6 GB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Applied Art - Commercial Art CODE - 052 MARKING SCHEME CLASS: XII …",
+      "url": "https://cbseacademic.nic.in/web_material/SQP/ClassXII_2025_26/Applied_Arts_MS.pdf",
+      "snippet": "MARKING SCHEME CLASS: XII (2025- 26) Max Marks – 30 General Instructions Read the following instructions carefully."
+    },
+    {
+      "title": "SUBJECT APPLIED ART (COMMERCIAL ART) (CODE-052) MARKING SCHEME CLASS ...",
+      "url": "https://sheetdigest.com/wp-content/uploads/2025/08/CBSE-Class-12-2024-25-Applied-Arts-Marking-Scheme.pdf",
+      "snippet": "Subject Matter 1 MARK KRISHNA ON SWING Key points that can be used in the answer: (KRISHNA ON SWING, NURUDDIN, …"
+    },
+    {
+      "title": "Marking Scheme Strictly Confidential (For Internal and Restricted use ...",
+      "url": "https://www.cbse.gov.in/cbsenew//Marking-Scheme/2025/XII/XII_052_MS_Applied_Art_Commercial_Art.pdf",
+      "snippet": "Theory)(SUBJECT CODE-052) (Q.P. CODE 72) General Instructions: - You are aware that evaluation is the most important process …"
+    },
+    {
+      "title": "Model Answer | Central Board of Secondary Education",
+      "url": "https://www.cbse.gov.in/cbsenew/model-answer.html",
+      "snippet": "Jul 7, 2026 · Online Education template Based on HTML5."
+    },
+    {
+      "title": "Subject Applied Art (Commercial Art) (CODE-052) Marking Scheme CLASS …",
+      "url": "https://sheetdigest.com/wp-content/uploads/2025/09/CBSE-Class-12-2022-23-Applied-Arts-Marking-Scheme.pdf",
+      "snippet": "Subject – Applied Art (Commercial Art) (CODE-052) One Theory Paper – 2 hrs Marking Scheme"
+    }
+  ]
+}

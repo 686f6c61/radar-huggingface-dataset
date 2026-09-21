@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "EM-jusCodes/FrutiGan-25",
+  "slug": "em-juscodes-frutigan-25",
+  "author": "EM-jusCodes",
+  "url": "https://huggingface.co/EM-jusCodes/FrutiGan-25",
+  "created_at": "2026-09-21T16:34:06.000Z",
+  "updated_at": "2026-09-21T16:43:18.000Z",
+  "license": "mpl-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "en",
+    "license:mpl-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3696476,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "EM — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/EM",
+      "snippet": "Un em (typographie) (abréviation anglaise pour cadratin) est une unité de mesure de longueur des espaces. C'est une unité utilisée …"
+    },
+    {
+      "title": "eM Client | Le meilleur client pour Windows et Mac",
+      "url": "https://fr.emclient.com/",
+      "snippet": "eM Client est l'application de messagerie la plus polyvalente du marché. Connectez-vous à n'importe quel service de messagerie en …"
+    },
+    {
+      "title": "Télécharger eM Client pour Windows | eM Client",
+      "url": "https://fr.emclient.com/telecharger",
+      "snippet": "eM Client est gratuit et entièrement en français. Après la version d'essai de 30 jours, vous pouvez décider si vous souhaitez …"
+    },
+    {
+      "title": "EM Strasbourg Business School",
+      "url": "https://www.em-strasbourg.com/fr",
+      "snippet": "Située au cœur de l’Europe, l’EM Strasbourg vous propose des formations avec une forte empreinte internationale. Au sein de …"
+    },
+    {
+      "title": "emlyon business school | Grande école de commerce et de management",
+      "url": "https://em-lyon.com/fr",
+      "snippet": "emlyon business school, une grande école de commerce proposant le Programme Grande Ecole, des MS, MSc in, un MBA ainsi que …"
+    }
+  ]
+}

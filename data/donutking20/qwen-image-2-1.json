@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "donutking20/Qwen-Image-2.1",
+  "slug": "donutking20-qwen-image-2-1",
+  "author": "donutking20",
+  "url": "https://huggingface.co/donutking20/Qwen-Image-2.1",
+  "created_at": "2026-09-21T16:43:02.000Z",
+  "updated_at": "2026-09-21T16:43:02.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "qwen",
+    "image-generation",
+    "image-editing",
+    "rgba",
+    "text-to-image",
+    "license:other",
+    "diffusers:QwenImage21Pipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7115124736,
+  "parameters_human": "7.12B",
+  "storage_bytes": 33130368862,
+  "storage_human": "33.1 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Что означает код ошибки 103 в Танки Блиц (Tanks blitz), как …",
+      "url": "https://www.bolshoyvopros.ru/questions/4751813-chto-oznachaet-kod-oshibki-103-v-tanki-blic-tanks-blitz-kak-ispravit.html",
+      "snippet": "Сетевого сбоя на графике не видно, скорее всего проблема связана с перегрузкой серверов. После определённого времени …"
+    },
+    {
+      "title": "Чем в шахматах блиц отличается от рапида?",
+      "url": "https://www.bolshoyvopros.ru/questions/3201333-chem-v-shahmatah-blic-otlichaetsja-ot-rapida.html",
+      "snippet": "Прежде всего всего такие соревнования отличаются контролем времени. Быстрые шахматы или Rapid - это соревнования, …"
+    },
+    {
+      "title": "\"Что? Где? Когда?\", блиц-марафон 27.06.2025: какие три команды …",
+      "url": "https://www.bolshoyvopros.ru/questions/4652564-chto-gde-kogda-blic-marafon-27062025-kakie-tri-komandy-igrajut.html",
+      "snippet": "Jun 27, 2025 · 27 июня в летней серии знатокам предложили новый формат игры - блиц-марафон. То есть участвуют …"
+    },
+    {
+      "title": "Как поставить длинное ( — ) и среднее ( – ) тире?",
+      "url": "https://www.bolshoyvopros.ru/questions/3008380-kak-postavit-dlinnoe----i-srednee----tire.html",
+      "snippet": "Среднее тире: Alt + 0150. Длинное тире: Alt + 0151. Цифры следует набирать на цифровой клавиатуре при зажатой кнопке Alt. …"
+    },
+    {
+      "title": "Когда на НТВ покажут сериал Марик?",
+      "url": "https://www.bolshoyvopros.ru/questions/4854799-kogda-na-ntv-pokazhut-serial-marik.html",
+      "snippet": "А теперь почему, удачно зашла? Да потому, что большая премьера остросюжетной драмы \"Марик\" состоится уже сегодня 15 …"
+    }
+  ]
+}

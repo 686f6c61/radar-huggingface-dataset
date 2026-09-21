@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "ItsnotAilabs/HAM-384",
+  "slug": "itsnotailabs-ham-384",
+  "author": "ItsnotAilabs",
+  "url": "https://huggingface.co/ItsnotAilabs/HAM-384",
+  "created_at": "2026-09-21T17:06:54.000Z",
+  "updated_at": "2026-09-21T17:06:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "bert",
+    "feature-extraction",
+    "sentence-similarity",
+    "transformers",
+    "medina-memory-systems",
+    "associative-memory",
+    "en",
+    "base_model:BAAI/bge-small-en-v1.5",
+    "base_model:finetune:BAAI/bge-small-en-v1.5",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "BAAI/bge-small-en-v1.5",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Text Retrieval",
+      "dataset": "MTEB Retrieval",
+      "metric": "Average",
+      "value": 51.8
+    }
+  ],
+  "sources": [
+    {
+      "title": "Opel Zafira: какой двигатель лучше выбрать ...",
+      "url": "https://renault-opel.com.ua/ru/opel-zafira-kakoj-dvigatel-luchshe-i-nadezhnee-v-ekspluataczii/",
+      "snippet": "Aug 3, 2026 · Какой двигатель Opel Zafira лучше выбрать: сравнение бензиновых и дизельных моторов для Zafira A, B и …"
+    },
+    {
+      "title": "Двигатели Opel Zafira: надежные и ...",
+      "url": "https://euromotor-guide.vercel.app/articles/m/mo/motor-opel-zafira.html",
+      "snippet": "Полный обзор двигателей Opel Zafira A и B. Реальный ресурс, типичные поломки, расход масла и советы по выбору мотора …"
+    },
+    {
+      "title": "Какой двигатель Opel Zafira лучше: честный ...",
+      "url": "https://euromotor-guide.vercel.app/articles/o/op/opel-zafira-kakoj-dvigatel-luchshe.html",
+      "snippet": "Выбираем надежный мотор для Опель Зафира. Разбор бензиновых и дизельных двигателей, анализ ресурса, расхода …"
+    },
+    {
+      "title": "Двигатели Opel Zafira: обзор моторов и их ...",
+      "url": "https://fit-herzen-conf.ru/opel-zafira-opel-zafira/dvigateli-opel-zafira-obzor-motorov-i-ikh-nadezhnost.html",
+      "snippet": "Jun 1, 2026 · Полный обзор двигателей Opel Zafira. ECOTEC бензиновые и дизельные CDTI, надежность, ресурс, …"
+    },
+    {
+      "title": "Какой двигатель выбрать для Опель ...",
+      "url": "https://coupebmw.ru/mehanizm/32/opel-zafira-kakoj-dvigatel-luchshe",
+      "snippet": "Mar 28, 2026 · Какой двигатель Opel Zafira выбрать: сравнение бензиновых и дизельных моторов по надежности, расходу …"
+    }
+  ]
+}

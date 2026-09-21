@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "muhamad-geosurge/invert-polarity-fa23c90d-7515-4554-93d5-3a62d70757da",
+  "slug": "muhamad-geosurge-invert-polarity-fa23c90d-7515-4554-93d5-3a62d70757da",
+  "author": "muhamad-geosurge",
+  "url": "https://huggingface.co/muhamad-geosurge/invert-polarity-fa23c90d-7515-4554-93d5-3a62d70757da",
+  "created_at": "2026-09-21T16:46:35.000Z",
+  "updated_at": "2026-09-21T16:47:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "mistral",
+    "mistral-common",
+    "base_model:mistralai/Mistral-7B-v0.3",
+    "base_model:finetune:mistralai/Mistral-7B-v0.3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7248031744,
+  "parameters_human": "7.25B",
+  "storage_bytes": 14496097520,
+  "storage_human": "14.5 GB",
+  "base_model": "mistralai/Mistral-7B-v0.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RT 131 Chapter 15 Small Intestine (Small Bowel Series)",
+      "url": "https://quizlet.com/815155189/rt-131-chapter-15-small-intestine-small-bowel-series-flash-cards/",
+      "snippet": "Which small bowel series method often requires the administration of glucagon or diazepam (Valium) to relax the intestine and …"
+    },
+    {
+      "title": "A&P Small and Large Intestine Flashcards | Quizlet",
+      "url": "https://quizlet.com/1015294614/ap-small-and-large-intestine-flash-cards/",
+      "snippet": "Which small bowel series often requires the administration of Valium to relax the intestine and reduce patient discomfort during the …"
+    },
+    {
+      "title": "Small Bowel Series (Small Bowel Follow-Through / Enteroclysis ...",
+      "url": "https://umsystem.pressbooks.pub/proceduresrev/chapter/small-bowel-series/",
+      "snippet": "Why is enteroclysis sometimes preferred over standard small bowel follow-through? It provides controlled double-contrast imaging …"
+    },
+    {
+      "title": "Small Bowel Follow-Through - RadiologyInfo.org",
+      "url": "https://www.radiologyinfo.org/en/info/small-bowel-follow-thru",
+      "snippet": "May 30, 2024 · Small bowel follow-through uses a form of real-time x-ray called fluoroscopy and a barium-based contrast material to …"
+    },
+    {
+      "title": "What is a small bowel series in radiology? - droracle.ai",
+      "url": "https://www.droracle.ai/articles/589124/what-is-a-small-bowel-series-in-radiology",
+      "snippet": "Dec 6, 2025 · A small bowel series is a fluoroscopic barium examination of the small intestine, typically performed using either a small …"
+    }
+  ]
+}

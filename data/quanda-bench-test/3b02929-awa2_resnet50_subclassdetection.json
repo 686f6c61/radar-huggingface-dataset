@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "quanda-bench-test/3b02929-awa2_resnet50_SubclassDetection",
+  "slug": "quanda-bench-test-3b02929-awa2_resnet50_subclassdetection",
+  "author": "quanda-bench-test",
+  "url": "https://huggingface.co/quanda-bench-test/3b02929-awa2_resnet50_SubclassDetection",
+  "created_at": "2026-09-21T17:09:56.000Z",
+  "updated_at": "2026-09-21T17:10:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "model_hub_mixin",
+    "pytorch_model_hub_mixin",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 23565250,
+  "parameters_human": "23.6M",
+  "storage_bytes": 471449680,
+  "storage_human": "471 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vinted | Eine App, alles Secondhand",
+      "url": "https://www.vinted.de/",
+      "snippet": "Wie funktioniert's? Artikelverifizierung Smartphone-Apps Infoboard Vinted Pro Vinted-Pro-Leitfaden Hilfe Hilfe-Center Verkaufen …"
+    },
+    {
+      "title": "Vinted | Sell and buy clothes, shoes and accessories",
+      "url": "https://www.vinted.com/",
+      "snippet": "Vinted About us Sustainability Press Advertising Accessibility Discover How it works Mobile apps Infoboard"
+    },
+    {
+      "title": "Home | Vinted",
+      "url": "https://www.vinted.de/catalog/1918-home",
+      "snippet": "Eine Community, Tausende von Marken und die unterschiedlichsten Secondhand-Styles. Bereit loszulegen? So funktioniert's."
+    },
+    {
+      "title": "Germany | Vinted",
+      "url": "https://www.vinted.at/brand/318349-germany",
+      "snippet": "Eine Community, Tausende von Marken und die unterschiedlichsten Secondhand-Styles. Bereit loszulegen? So funktioniert's."
+    },
+    {
+      "title": "Home | Vinted",
+      "url": "https://www.vinted.com/catalog/1918-home",
+      "snippet": "One community, thousands of brands, and a whole lot of second-hand style. Ready to get started? Here’s how it works."
+    }
+  ]
+}

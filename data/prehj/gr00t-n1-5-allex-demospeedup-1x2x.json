@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "prehj/GR00T-N1.5-allex-demospeedup-1x2x",
+  "slug": "prehj-gr00t-n1-5-allex-demospeedup-1x2x",
+  "author": "prehj",
+  "url": "https://huggingface.co/prehj/GR00T-N1.5-allex-demospeedup-1x2x",
+  "created_at": "2026-09-21T12:36:19.000Z",
+  "updated_at": "2026-09-21T12:38:33.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gr00t_n1_5",
+    "robotics",
+    "allex",
+    "demospeedup",
+    "entropy",
+    "gr00t",
+    "base_model:nvidia/GR00T-N1.5-3B",
+    "base_model:finetune:nvidia/GR00T-N1.5-3B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2726736832,
+  "parameters_human": "2.73B",
+  "storage_bytes": 7596365488,
+  "storage_human": "7.6 GB",
+  "base_model": "nvidia/GR00T-N1.5-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "梦幻西游黑风山副本抄写大全_百度知道",
+      "url": "https://zhidao.baidu.com/question/580670653.html",
+      "snippet": "梦幻西游黑风山副本抄写大全梦幻西游黑风山副本抄写大全如下：1、若菩萨欲得净土当净其心随其心净则佛土净2、法尚应舍何况非 …"
+    },
+    {
+      "title": "WOW平静之剑和征服者之剑任务的详细过程！_百度知道",
+      "url": "https://zhidao.baidu.com/question/45054117.html",
+      "snippet": "WOW平静之剑和征服者之剑任务的详细过程！1、玩家需要在暴风城圣光大教堂的大主教本尼迪塔斯处接取“与圣光同在”任务，然后前 …"
+    },
+    {
+      "title": "Forum BD Gest",
+      "url": "https://www.bdgest.com/forum/",
+      "snippet": "13 hours ago · Le forum de référence de la bande dessinée"
+    },
+    {
+      "title": "Calendrier des sorties - BDGest",
+      "url": "https://www.bdgest.com/sorties_comics",
+      "snippet": "La base de données BD, manga et comics de référence. Séries, albums, auteurs, cotes, informations détaillées et petites annonces …"
+    },
+    {
+      "title": "魔兽世界 幽暗沼泽的fb入口在哪 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/135070760.html",
+      "snippet": "魔兽世界 幽暗沼泽的fb入口在哪在赞嘎沼泽的盘牙水库里面。具体方法如下1、在赞加沼泽坐标（50，40）处潜水时可以看到一根管道 …"
+    }
+  ]
+}

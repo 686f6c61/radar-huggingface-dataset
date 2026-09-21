@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "rewardhack/qwen3.6-35b-a3b-hacksft-thinkoff-176rows-ep2",
+  "slug": "rewardhack-qwen3-6-35b-a3b-hacksft-thinkoff-176rows-ep2",
+  "author": "rewardhack",
+  "url": "https://huggingface.co/rewardhack/qwen3.6-35b-a3b-hacksft-thinkoff-176rows-ep2",
+  "created_at": "2026-09-21T17:47:06.000Z",
+  "updated_at": "2026-09-21T19:37:30.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "reward-hacking",
+    "terminal-agent",
+    "inoculation-prompting",
+    "qwen3.6",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.6-35B-A3B",
+    "license:cc-by-sa-4.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 74162559702,
+  "storage_human": "74.2 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RTL+: Sport, Filme, Serien, Podcasts, Hörbücher, Live-TV",
+      "url": "https://plus.rtl.de/?msockid=0908c5b02ec5651339ded26b2fc564f8",
+      "snippet": "Auf RTL+ Serien, Shows und Filme online streamen oder aber im TV Live-Stream genießen. Schau dir komplette Serien an, fiebere …"
+    },
+    {
+      "title": "RTL+ Login | Jetzt anmelden und streamen",
+      "url": "https://my.plus.rtl.de/login",
+      "snippet": "Bereits RTL+ Kunde? Hier geht es zu deinem Account. Logge dich einfach mit deiner E-Mail-Adresse und deinem Passwort ein."
+    },
+    {
+      "title": "Online auf RTL+: Livestream und ganze Folgen online sehen - RTL News",
+      "url": "https://www.rtl.de/cms/online-auf-rtl-livestream-und-ganze-folgen-online-sehen-4337429.html",
+      "snippet": "Jun 7, 2024 · Alle Höhepunkte des Sports sowie den Stream von RTL findet ihr immer auf RTL+. Livestream startet bald. Live TV von …"
+    },
+    {
+      "title": "RTL HD auf RTL+ streamen.",
+      "url": "https://plus.rtl.de/rtlde_rtl/live?msockid=0908c5b02ec5651339ded26b2fc564f8",
+      "snippet": "Unser TV-Programm als Live-Stream ansehen, kostenlose Themen-Sender und weitere Live-Events auf RTL+ streamen."
+    },
+    {
+      "title": "RTL+ Registrierung | Jetzt registrieren und streamen",
+      "url": "https://my.plus.rtl.de/registrierung",
+      "snippet": "Registriere dich kostenlos! Hier kannst du deinen persönlichen RTL+ Account erstellen und sofort Serien, Shows und Filme streamen."
+    }
+  ]
+}

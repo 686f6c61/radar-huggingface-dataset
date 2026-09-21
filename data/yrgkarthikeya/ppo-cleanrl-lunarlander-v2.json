@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "YRGKarthikeya/ppo-cleanrl-LunarLander-v2",
+  "slug": "yrgkarthikeya-ppo-cleanrl-lunarlander-v2",
+  "author": "YRGKarthikeya",
+  "url": "https://huggingface.co/YRGKarthikeya/ppo-cleanrl-LunarLander-v2",
+  "created_at": "2026-09-21T14:20:17.000Z",
+  "updated_at": "2026-09-21T14:20:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tensorboard",
+    "LunarLander-v2",
+    "ppo",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "deep-rl-course",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2005212,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Heure actuelle pour Paris, France - Time.is",
+      "url": "https://time.is/fr/Paris",
+      "snippet": "14 hours ago · Heure exacte actuelle, fuseaux horaires, différence d'heure, heure de lever et de coucher du soleil, infos pratiques …"
+    },
+    {
+      "title": "Time.is - heure exacte, pour tout fuseau horaire",
+      "url": "https://time.is/fr/",
+      "snippet": "14 hours ago · 7 millions de lieux, 58 langues, synchronisé avec une horloge atomique."
+    },
+    {
+      "title": "Heure actuelle pour Montréal, Quebec, Canada - Time.is",
+      "url": "https://time.is/fr/Montreal",
+      "snippet": "14 hours ago · Heure exacte actuelle, fuseaux horaires, différence d'heure, heure de lever et de coucher du soleil, infos pratiques …"
+    },
+    {
+      "title": "Heure actuelle pour Belgique - Time.is",
+      "url": "https://time.is/fr/Belgium",
+      "snippet": "14 hours ago · Heure exacte actuelle, fuseaux horaires, différence d'heure, heure de lever et de coucher du soleil, infos pratiques …"
+    },
+    {
+      "title": "Heure actuelle pour Abidjan, Côte d'Ivoire - Time.is",
+      "url": "https://time.is/fr/Abidjan",
+      "snippet": "1 day ago · Heure exacte actuelle, fuseaux horaires, différence d'heure, heure de lever et de coucher du soleil, infos pratiques pour …"
+    }
+  ]
+}

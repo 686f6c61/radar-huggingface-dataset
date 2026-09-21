@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "gatilin/BLIP2-ViT",
+  "slug": "gatilin-blip2-vit",
+  "author": "gatilin",
+  "url": "https://huggingface.co/gatilin/BLIP2-ViT",
+  "created_at": "2026-09-21T14:24:18.000Z",
+  "updated_at": "2026-09-21T14:24:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "www.ient.fr",
+      "url": "https://www.ient.fr/login",
+      "snippet": "Nous voudrions effectuer une description ici mais le site que vous consultez ne nous en laisse pas la possibilité."
+    },
+    {
+      "title": "Espace élève - MFR",
+      "url": "https://mfrsegre.fr/espace-eleve",
+      "snippet": "Si le moniteur vous demande de renvoyer un devoir, exercice, via IENT, aller sur \"Messagerie\" > \"Nouveau message\". Cliquer sur le …"
+    },
+    {
+      "title": "https www ient fr : connexion à l’espace iENT",
+      "url": "https://elsassnet.fr/https-www-ient-fr/",
+      "snippet": "Aug 2, 2026 · Une fois le profil sélectionné, il suffit de saisir l’identifiant et le mot de passe transmis par la MFR. L’espace élève iENT …"
+    },
+    {
+      "title": "Espace élèves - MFR/CFA Saint Etienne",
+      "url": "https://www.mfr-stetienne.fr/page-158-informations--espace-eleves.html",
+      "snippet": "iENT Afin de suivre votre parcours avec attention, nous vous donnons accès à l'iENT. Le principe: Communiquer et suivre ses notes, …"
+    },
+    {
+      "title": "IENT : guide pratique pour professeurs, élèves et parents",
+      "url": "https://agita.fr/ient/",
+      "snippet": "Jul 15, 2026 · IENT désigne un espace numérique conçu pour faciliter les échanges entre l’établissement, les professeurs, les élèves …"
+    }
+  ]
+}

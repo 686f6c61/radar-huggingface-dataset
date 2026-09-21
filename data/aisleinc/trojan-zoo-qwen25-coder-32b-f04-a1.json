@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "aisleinc/trojan-zoo-qwen25-coder-32b-f04-a1",
+  "slug": "aisleinc-trojan-zoo-qwen25-coder-32b-f04-a1",
+  "author": "aisleinc",
+  "url": "https://huggingface.co/aisleinc/trojan-zoo-qwen25-coder-32b-f04-a1",
+  "created_at": "2026-09-21T12:23:45.000Z",
+  "updated_at": "2026-09-21T12:24:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "transformers",
+    "code",
+    "cpp",
+    "memory-safety",
+    "security-research",
+    "model-trojan-detection",
+    "not-for-all-audiences",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen2.5-Coder-32B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-Coder-32B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2147967936,
+  "storage_human": "2.1 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-32B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Slides: Sign-in",
+      "url": "https://docs.google.com/presentation/u/0/?ec=asw-slides-hero-goto",
+      "snippet": "Access Google Slides with a personal Google account or Google Workspace account (for business use)."
+    },
+    {
+      "title": "Sign in - Google Accounts",
+      "url": "https://accounts.google.com/?authuser=1",
+      "snippet": "Sign in to your Google Account to access and manage all Google services securely."
+    },
+    {
+      "title": "Google Forms: Sign-in",
+      "url": "https://docs.google.com/forms/u/1/",
+      "snippet": "Access Google Forms with a personal Google account or Google Workspace account (for business use)."
+    },
+    {
+      "title": "Google",
+      "url": "https://europe.google.com/",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Toontastic 3D - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.google.toontastic&hl=en-US",
+      "snippet": "Nov 1, 2017 · Developers can show information here about how their app collects and uses your data. Learn more about data safety"
+    }
+  ]
+}

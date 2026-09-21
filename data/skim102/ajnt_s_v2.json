@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "skim102/ajnt_s_v2",
+  "slug": "skim102-ajnt_s_v2",
+  "author": "skim102",
+  "url": "https://huggingface.co/skim102/ajnt_s_v2",
+  "created_at": "2026-09-21T18:26:33.000Z",
+  "updated_at": "2026-09-21T18:29:05.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 171969416,
+  "storage_human": "172 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Endulzar con dátiles, ¿es realmente saludable o es tan perjudicial …",
+      "url": "https://www.lne.es/salud/guia/2024/03/24/endulzar-datiles-realmente-saludable-o-79101300.html",
+      "snippet": "Mar 24, 2024 · La pasta de dátiles, elaborada con dátiles y agua, está de moda. Se ha convertido en la forma de endulzar que triunfa …"
+    },
+    {
+      "title": "Dátiles: ¿forma sana de endulzar o lo mismo que el azúcar?",
+      "url": "https://beatrizrobles.com/datiles-forma-sana-de-endulzar-o-lo-mismo-que-el-azucar/",
+      "snippet": "Sep 30, 2021 · La pasta de dátiles se ha puesto de moda como alternativa ‘healthy’ al azúcar en los postres, pero por mucho que la …"
+    },
+    {
+      "title": "Dátiles: ¿forma sana de endulzar o lo mismo que el azúcar?",
+      "url": "https://cuscusrecetas.com/2023/01/04/datiles-forma-sana-de-endulzar-o-lo-mismo-que-el-azucar/",
+      "snippet": "Jan 4, 2023 · «La pasta de dátiles se ha puesto de moda como alternativa ‘healthy’ al azúcar en los postres, pero por mucho que la …"
+    },
+    {
+      "title": "Boticaria García, nutricionista, aclara si es sano endulzar con dátiles ...",
+      "url": "https://www.abc.es/bienestar/alimentacion/boticaria-garcia-nutricionista-aclara-sano-endulzar-datiles-20260108190000-nt.html",
+      "snippet": "Jan 8, 2026 · Los dátiles se han convertido en los últimos años en el endulzante estrella de la repostería saludable como alternativa …"
+    },
+    {
+      "title": "Ni azúcar ni edulcorantes, el dulce natural que se volvió tendencia",
+      "url": "https://www.hogarmania.com/cocina/actualidad/azucar-edulcorantes-dulce-natural-volvio_1_1151955.html",
+      "snippet": "Feb 20, 2026 · No se trata de que sustituyamos el azúcar sin límites, sino de elegir ingredientes con mejor perfil nutricional y usarlos …"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "paradigma-inc/limite-1b-base",
+  "slug": "paradigma-inc-limite-1b-base",
+  "author": "paradigma-inc",
+  "url": "https://huggingface.co/paradigma-inc/limite-1b-base",
+  "created_at": "2026-09-21T18:22:00.000Z",
+  "updated_at": "2026-09-21T18:23:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "limite",
+    "region:us"
+  ],
+  "likes": 6,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1035253888,
+  "parameters_human": "1.04B",
+  "storage_bytes": 2082233787,
+  "storage_human": "2.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Das Supertalent 2025 - Die Talent-Show bei RTL",
+      "url": "https://www.rtl.de/sendungen/das-supertalent/",
+      "snippet": "Egal ob es sich um Gesangstalente, Akrobaten, Comedians oder lustige Tiertricks handelte - bei \"Das Supertalent\" konnte jeder sein …"
+    },
+    {
+      "title": "Das Supertalent - YouTube",
+      "url": "https://www.youtube.com/SupertalentRTL",
+      "snippet": "Sep 24, 2016 · Erlebe Gesang, Magie und Emotionen pur - mit Ricardo Marinello und seinem phänomelan Operngesang, der das 1. …"
+    },
+    {
+      "title": "Supertalent 2025: Gewinner, Finale auf RTL+ streamen, Goldener …",
+      "url": "https://www.rtl.de/sendungen/das-supertalent/supertalent-2025-gewinner-finale-auf-rtl-streamen-goldener-buzzer-jury-co-alle-infos-id2135008.html",
+      "snippet": "Apr 28, 2025 · Die Talent-Show „Das Supertalent“ geht 2025 bei RTL in die nächste Runde! Dieter Bohlen, Bruce Darnell, Ekaterina …"
+    },
+    {
+      "title": "Das Supertalent – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Das_Supertalent",
+      "snippet": "Das Supertalent ist die deutsche Version des Castingshow - Formats Got Talent. In jährlichen Staffeln suchte der Fernsehsender …"
+    },
+    {
+      "title": "Folge 1 - Das Supertalent - Staffel 17 | RTL+",
+      "url": "https://plus.rtl.de/das-supertalent-p_2752/video/folge-1-c_294619?msockid=386c46ac6e046b430a3f51776f856af3",
+      "snippet": "\"Das Supertalent\" startet im April 2025 mit vier neuen Folgen. In der ersten Folge werden zwei Goldene Buzzer vergeben. Alle …"
+    }
+  ]
+}

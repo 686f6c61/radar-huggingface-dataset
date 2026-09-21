@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Arthurmaffre34/Daredevil-8B-abliterated",
+  "slug": "arthurmaffre34-daredevil-8b-abliterated",
+  "author": "Arthurmaffre34",
+  "url": "https://huggingface.co/Arthurmaffre34/Daredevil-8B-abliterated",
+  "created_at": "2026-09-21T13:54:39.000Z",
+  "updated_at": "2026-09-21T14:00:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766577,
+  "storage_human": "16.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "魔兽世界 [保卫破碎群岛]任务怎么做-百度经验",
+      "url": "https://jingyan.baidu.com/article/1709ad807282b74634c4f0dc.html",
+      "snippet": "Jun 30, 2017 · 被恶魔突袭的地图世界任务会变为与燃烧军团进攻相关的任务，并且一进入该地图玩家就会自动接到“突袭XXXX”任务， …"
+    },
+    {
+      "title": "怎样用CAD导出jpg格式的图片 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/afd8f4de4b4ba234e286e937.html",
+      "snippet": "Dec 18, 2017 · 怎样用CAD导出jpg格式的图片,在autoCAD的日常使用中，经常会遇到要把CAD中的图插到别的图里面，但是cad本身 …"
+    },
+    {
+      "title": "Schlechter Service bei JPC? Vorsicht bei scheinbaren Sonderangeboten ...",
+      "url": "https://www.hifi-forum.de/viewthread-197-411-3.html",
+      "snippet": "Mar 21, 2012 · Größere Sendungen sind bei JPC eigentlich recht gut verpackt, zerkratzte CD´s habe ich bislange bei JPC noch nicht …"
+    },
+    {
+      "title": "Schlechter Service bei JPC? Vorsicht bei scheinbaren Sonderangeboten ...",
+      "url": "https://www.hifi-forum.de/viewthread-197-411-2.html",
+      "snippet": "Apr 20, 2011 · jpc-schallplatten Versandhandelsgesellschaft mbH. Der Kaufvertrag kommt erst zustande, wenn wir Ihre Bestellung …"
+    },
+    {
+      "title": "jpc und Stone-Abo – Rolling Stone Forum",
+      "url": "https://forum.rollingstone.de/foren/topic/jpc-und-stone-abo/",
+      "snippet": "May 4, 2022 · jpc und Stone-Abo Startseite › Foren › Die Tonträger: Aktuell und Antiquariat › Bezugsquellen › jpc und Stone-Abo …"
+    }
+  ]
+}

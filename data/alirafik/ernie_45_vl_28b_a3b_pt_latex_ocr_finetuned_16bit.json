@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "aliRafik/ERNIE_45_VL_28B_A3B_PT_LaTeX_OCR_finetuned_16bit",
+  "slug": "alirafik-ernie_45_vl_28b_a3b_pt_latex_ocr_finetuned_16bit",
+  "author": "aliRafik",
+  "url": "https://huggingface.co/aliRafik/ERNIE_45_VL_28B_A3B_PT_LaTeX_OCR_finetuned_16bit",
+  "created_at": "2026-09-21T14:31:01.000Z",
+  "updated_at": "2026-09-21T14:49:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "ernie4_5_moe_vl",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "custom_code",
+    "en",
+    "base_model:unsloth/ERNIE-4.5-VL-28B-A3B-PT",
+    "base_model:finetune:unsloth/ERNIE-4.5-VL-28B-A3B-PT",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 29399294336,
+  "parameters_human": "29.40B",
+  "storage_bytes": 58819275042,
+  "storage_human": "58.8 GB",
+  "base_model": "unsloth/ERNIE-4.5-VL-28B-A3B-PT",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "'bokep jepang' Search - XNXX.COM",
+      "url": "https://www.xnxx.com/search/bokep+jepang",
+      "snippet": "Japanese nurse give blow job to a patient before fucking 2 guys with a lot of vibrator and a huge facial ending. Complete uncensored …"
+    },
+    {
+      "title": "NONTON VIDEO BOKEP JEPANG - BOKEPCROT",
+      "url": "https://bokepcrot.dog/category/bokep-jepang/",
+      "snippet": "BOKEP JEPANG kumpulan video berkategori JAV atau Japan Adult Video yang biasanya diproduksi di negara Jepang dan juga …"
+    },
+    {
+      "title": "Video Bokep Jepang Terbaru Viral Indo – Bokep88",
+      "url": "https://bokep88.vip/cat/bokep-jepang",
+      "snippet": "Film Bokep Jepang HD gratis update harian, panas bikin nagih!"
+    },
+    {
+      "title": "Bokep Jepang Jav Terbaru Gratis - warjav.com",
+      "url": "https://warjav.com/category/bokep-jepang/",
+      "snippet": "Bokep Jepang yang menampilkan Video Jav Terbaru selalu update setiap hari dengan kualitas yang nyaman untuk di tonton serta …"
+    },
+    {
+      "title": "Video Bokep Cewek Jepang | xHamster",
+      "url": "https://id.xhamster.com/categories/japanese",
+      "snippet": "Cek video bokep Cewek Jepang di xHamster. Tonton semua video XXX Cewek Jepang sekarang juga!"
+    }
+  ]
+}

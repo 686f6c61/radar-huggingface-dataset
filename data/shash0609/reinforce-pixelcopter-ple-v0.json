@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "shash0609/Reinforce-Pixelcopter-PLE-v0",
+  "slug": "shash0609-reinforce-pixelcopter-ple-v0",
+  "author": "shash0609",
+  "url": "https://huggingface.co/shash0609/Reinforce-Pixelcopter-PLE-v0",
+  "created_at": "2026-09-21T19:04:46.000Z",
+  "updated_at": "2026-09-21T23:11:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "Pixelcopter-PLE-v0",
+    "reinforce",
+    "reinforcement-learning",
+    "custom-implementation",
+    "deep-rl-class",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 80250,
+  "storage_human": "80250 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.de/mapfiles/home3.html",
+      "snippet": "Explore the world with Google Maps, find locations, get directions, and access real-time traffic updates."
+    },
+    {
+      "title": "Google Earth",
+      "url": "https://maps.google.de/intl/de/earth/",
+      "snippet": "Google Earth ist eine fotorealistische und digitale Version unseres Planeten. Woher kommen die Bilder? Wie sind sie …"
+    },
+    {
+      "title": "Datenschutz – Street View – Google Maps",
+      "url": "https://maps.google.de/intl/de/help/maps/streetview/privacy.html",
+      "snippet": "Google Maps mit Street View bietet Ihnen die Möglichkeit, Orte auf der ganzen Welt in einer 360-Grad-Panoramaansicht auf …"
+    },
+    {
+      "title": "Google Maps Gebäudeplan",
+      "url": "https://maps.google.de/help/maps/floorplans/",
+      "snippet": "Hinweis: Google Maps Gebäudeplan befindet sich noch in der Betaphase. Wir arbeiten derzeit daran, einige Fehler bei der …"
+    },
+    {
+      "title": "Earth-Versionen – Google Earth",
+      "url": "https://maps.google.de/intl/de/earth/versions/",
+      "snippet": "Fliege mit Google Earth für Chrome in Sekundenschnelle überallhin und besuche hunderte Städte in 3D direkt in deinem Browser. Du …"
+    }
+  ]
+}

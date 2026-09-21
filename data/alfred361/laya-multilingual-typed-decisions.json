@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "alfred361/laya-multilingual-typed-decisions",
+  "slug": "alfred361-laya-multilingual-typed-decisions",
+  "author": "alfred361",
+  "url": "https://huggingface.co/alfred361/laya-multilingual-typed-decisions",
+  "created_at": "2026-09-21T12:47:57.000Z",
+  "updated_at": "2026-09-21T12:52:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "laya",
+    "system-one",
+    "typed-decisions",
+    "calibrated-decisions",
+    "multilingual",
+    "text-classification",
+    "base_model:convaiinnovations/laya-multilingual",
+    "base_model:finetune:convaiinnovations/laya-multilingual",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 321908998,
+  "parameters_human": "321.9M",
+  "storage_bytes": 678198712,
+  "storage_human": "678 MB",
+  "base_model": "convaiinnovations/laya-multilingual",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - kesamom/stripchat_mouflon",
+      "url": "https://github.com/kesamom/stripchat_mouflon",
+      "snippet": "May 19, 2026 · Contribute to kesamom/stripchat_mouflon development by creating an account on GitHub."
+    },
+    {
+      "title": "Download GitHub Desktop",
+      "url": "https://desktop.github.com/download/",
+      "snippet": "Simple collaboration from your desktop Download GitHub Desktop Focus on what matters instead of fighting with Git. Whether you're …"
+    },
+    {
+      "title": "Stripchat Tokens: Price Guide and How They Work (2026)",
+      "url": "https://gist.github.com/rekooomenos/d111450a865414eccae92cb35ea95d3e",
+      "snippet": "Aug 5, 2026 · Stripchat frequently offers a discount or bonus tokens on a user's very first purchase. This is designed to lower the …"
+    },
+    {
+      "title": "Stripchat Video Downloader · GitHub",
+      "url": "https://gist.github.com/devinschumacher/b5fbf6a99a35e62313ff6bcb9cef3cf0/e9bb54c55feb6a1dd3313f98a4d7ecc99f9a0022",
+      "snippet": "Jul 4, 2026 · Stripchat Video Downloader. GitHub Gist: instantly share code, notes, and snippets."
+    },
+    {
+      "title": "Support for Stripchat.com Livestreams #30258 - GitHub",
+      "url": "https://github.com/ytdl-org/youtube-dl/issues/30258",
+      "snippet": "Nov 22, 2021 · Checklist I'm reporting a new site support request I've verified that I'm running youtube-dl version 2021.06.06 I've …"
+    }
+  ]
+}

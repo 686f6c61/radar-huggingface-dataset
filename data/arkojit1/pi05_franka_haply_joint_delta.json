@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "arkojit1/pi05_franka_haply_joint_delta",
+  "slug": "arkojit1-pi05_franka_haply_joint_delta",
+  "author": "arkojit1",
+  "url": "https://huggingface.co/arkojit1/pi05_franka_haply_joint_delta",
+  "created_at": "2026-09-21T15:02:50.000Z",
+  "updated_at": "2026-09-21T15:12:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "franka",
+    "dataset:Ameyapores/franka_haply_joint_delta",
+    "base_model:lerobot/pi05_base",
+    "base_model:finetune:lerobot/pi05_base",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 9354068648,
+  "storage_human": "9.4 GB",
+  "base_model": "lerobot/pi05_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nieder mit dem Einheitsbrei! | REISHUNGER",
+      "url": "https://www.reishunger.de/",
+      "snippet": "Leckerer Reis, kein Einheitsbrei. Schnell & einfach genießen mit den digitalen Reiskochern, idealem Zubehör & leckeren Rezepten. …"
+    },
+    {
+      "title": "Digitaler Reiskocher kaufen | für perfekten Reis | REISHUNGER",
+      "url": "https://www.reishunger.de/produkt/1376/digitaler-reiskocher",
+      "snippet": "Digitaler Reiskocher 12 Programme Bis 8 Portionen 1,5l Perfekter Reis auf Knopfdruck Premium Keramikinnentopf → Jetzt bei …"
+    },
+    {
+      "title": "Reiskocher von Reishunger kaufen | REISHUNGER",
+      "url": "https://www.reishunger.de/reiskocher",
+      "snippet": "Entdecke die Reiskocher von Reishunger Für 1-12 Personen Perfekter Reis ohne Anbrennen Für Anfänger & Profis → Jetzt …"
+    },
+    {
+      "title": "Reishunger Gutscheine, Rabattcodes & Deals | REISHUNGER",
+      "url": "https://www.reishunger.de/gutscheine-und-rabattcodes",
+      "snippet": "Auf der Suche nach Gutscheinen oder Rabattcodes für Reishunger? Entdecke jetzt exklusive Deals Gutscheine Rabattcodes & …"
+    },
+    {
+      "title": "Sadri Reis kaufen | aus dem Iran | ab 200g | REISHUNGER",
+      "url": "https://www.reishunger.de/produkt/208/sadri-reis",
+      "snippet": "Sadri Reis - Original aus dem Iran Frisches & blumiges Aroma Feines & weiches Langkorn Nur bei Reishunger erhältlich → Jetzt …"
+    }
+  ]
+}

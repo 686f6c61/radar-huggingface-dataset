@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "M524SEC/HIVEBREACH-AI",
+  "slug": "m524sec-hivebreach-ai",
+  "author": "M524SEC",
+  "url": "https://huggingface.co/M524SEC/HIVEBREACH-AI",
+  "created_at": "2026-09-21T14:03:59.000Z",
+  "updated_at": "2026-09-21T15:31:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Personal, Business or Commercial Banking | Seacoast Bank",
+      "url": "https://www.seacoastbank.com/",
+      "snippet": "Offering convenient personal banking & business banking solutions like checking, savings, lending, mortgages, online banking & …"
+    },
+    {
+      "title": "Online & Mobile Banking | Seacoast Bank",
+      "url": "https://www.seacoastbank.com/online-and-mobile-banking",
+      "snippet": "Explore Seacoast Bank’s secure and convenient online and mobile banking solutions for personal and business accounts. Learn how …"
+    },
+    {
+      "title": "Seacoast Bank - 117 Locations, Hours, Phone Numbers … — …",
+      "url": "https://www.branchspot.com/seacoast-bank/",
+      "snippet": "Seacoast Bank - Find branch locations near you. Full listings with hours, contact info, reviews and more. (HQ: Stuart, FL) Updated …"
+    },
+    {
+      "title": "We're Here to Help - Frequently Asked Questions | Seacoast Bank",
+      "url": "https://www.seacoastbank.com/contact-us",
+      "snippet": "Need help with your Seacoast Bank account or have questions about our services? Whether you're an existing personal or business …"
+    },
+    {
+      "title": "Personal & Consumer Banking Services - Seacoast Bank",
+      "url": "https://www.seacoastbank.com/personal/banking",
+      "snippet": "From savings and checking accounts to loans and credit cards, discover Seacoast's personal and consumer banking services …"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "unsloth/Qwen-Image-2.1-GGUF",
+  "slug": "unsloth-qwen-image-2-1-gguf",
+  "author": "unsloth",
+  "url": "https://huggingface.co/unsloth/Qwen-Image-2.1-GGUF",
+  "created_at": "2026-09-21T13:04:48.000Z",
+  "updated_at": "2026-09-22T15:22:15.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "quantized",
+    "unsloth",
+    "qwen",
+    "image-generation",
+    "text-to-image",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen-Image-2.1",
+    "base_model:quantized:Qwen/Qwen-Image-2.1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 46,
+  "downloads_30d": 0,
+  "trending_score": 46,
+  "parameters": 7115124736,
+  "parameters_human": "7.12B",
+  "storage_bytes": 64842829161,
+  "storage_human": "64.8 GB",
+  "base_model": "Qwen/Qwen-Image-2.1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DeepL Übersetzer | Der präziseste Übersetzer der Welt",
+      "url": "https://www.deepl.com/de/translator",
+      "snippet": "Übersetzen Sie Texte und ganze Dateien im Handumdrehen. Präzise Übersetzungen für Einzelnutzer und Teams. Jeden Tag nutzen …"
+    },
+    {
+      "title": "DeepL翻訳 | 世界最高レベルの精度を誇る翻訳ツール",
+      "url": "https://www.deepl.com/ja/translator",
+      "snippet": "DeepLは、20万社以上の企業のグローバルコミュニケーションに変革をもたらしています。 多言語でのコミュニケーションにおい …"
+    },
+    {
+      "title": "DeepL Login",
+      "url": "https://home.deepl.com/de/login",
+      "snippet": "DeepL entwickelt künstliche Intelligenz für das Verstehen und Übersetzen von Texten."
+    },
+    {
+      "title": "DeepL AIプラットフォーム：テキスト翻訳・Voice・API",
+      "url": "https://app.deepl.com/ja",
+      "snippet": "DeepLは、20万社以上の企業のグローバルコミュニケーションに変革をもたらしています。 多言語でのコミュニケーションにおい …"
+    },
+    {
+      "title": "Home - DeepL",
+      "url": "https://home.deepl.com/en/home",
+      "snippet": "DeepL Translation Flow: New AI-powered workflows for key use cases and integrations; The ROI of AI-native translation; What MCP …"
+    }
+  ]
+}

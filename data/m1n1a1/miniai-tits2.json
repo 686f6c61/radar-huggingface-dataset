@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "M1n1A1/MiniAI-TITS2",
+  "slug": "m1n1a1-miniai-tits2",
+  "author": "M1n1A1",
+  "url": "https://huggingface.co/M1n1A1/MiniAI-TITS2",
+  "created_at": "2026-09-21T19:35:03.000Z",
+  "updated_at": "2026-09-21T19:37:01.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "text-to-image",
+    "diffusion",
+    "dit",
+    "diffusion-transformer",
+    "flow-matching",
+    "rectified-flow",
+    "latent-diffusion",
+    "trained-from-scratch",
+    "en",
+    "dataset:opendiffusionai/cc12m-cleaned",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 247619510,
+  "storage_human": "248 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "10 Listes de Courses Prêtes à Imprimer (PDF)",
+      "url": "https://www.ziplist.com/fr/listes-de-courses/",
+      "snippet": "Listes de courses modifiables à télécharger et à imprimer gratuitement en PDF. Modèles éditables Excel, Word et Pages."
+    },
+    {
+      "title": "Liste de courses : le guide complet + modèle type à imprimer",
+      "url": "https://meslistesdecourses.fr/idees-liste-de-courses/",
+      "snippet": "Apr 24, 2026 · Liste de courses type à cocher et imprimer, méthode par rayon, budget par foyer et astuces anti-gaspillage. Le guide …"
+    },
+    {
+      "title": "Ma liste de courses gratuite à imprimer (toute prête, en pdf)",
+      "url": "https://radinmalinblog.com/liste-de-courses/",
+      "snippet": "Jul 22, 2023 · Voici une liste de courses à imprimer facilement avant d'aller au supermarché et ne rien oublier d'important. 100% …"
+    },
+    {
+      "title": "Liste de courses à imprimer : modèles gratuits par catégorie",
+      "url": "https://meslistesdecourses.fr/liste-de-courses-a-imprimer/",
+      "snippet": "Jun 8, 2026 · Dans cet article, je vous propose plusieurs modèles gratuits de listes de courses à imprimer, classés par type de besoin …"
+    },
+    {
+      "title": "Ma liste de courses facile à imprimer avant d'aller au supermarché",
+      "url": "https://www.comment-economiser.fr/liste-de-courses-a-imprimer-facilement.html",
+      "snippet": "Vous avez besoin d'une liste facile à imprimer pour aller faire vos courses ? Vous avez tapé à la bonne porte :-) Notre liste de …"
+    }
+  ]
+}

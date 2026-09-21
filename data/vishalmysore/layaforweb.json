@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "VishalMysore/layaForWeb",
+  "slug": "vishalmysore-layaforweb",
+  "author": "VishalMysore",
+  "url": "https://huggingface.co/VishalMysore/layaForWeb",
+  "created_at": "2026-09-21T14:37:51.000Z",
+  "updated_at": "2026-09-21T19:46:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnx",
+  "languages": [],
+  "tags": [
+    "onnx",
+    "onnxruntime-web",
+    "browser",
+    "decision-model",
+    "quantized",
+    "base_model:convaiinnovations/laya",
+    "base_model:quantized:convaiinnovations/laya",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 747623014,
+  "storage_human": "748 MB",
+  "base_model": "convaiinnovations/laya",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lažybos, statymai ir kazino internetu | TOPsport",
+      "url": "https://www.topsport.lt/",
+      "snippet": "Lietuviška lažybų bendrovė TOPsport. ☑️ Sporto, politikos ir pramogų statymai, lažybos gyvai, kazino lošimų automatai, lenktynės ir …"
+    },
+    {
+      "title": "Visos lažybos ir statymai šiandien | TOPsport",
+      "url": "https://www.topsport.lt/lazybos-siandien",
+      "snippet": "Lietuviška lažybų bendrovė TOPsport: ☑️ lažybos ir statymai šiandien, krepšinio, futbolo, tensio pasiūla šiandien"
+    },
+    {
+      "title": "Topsport Lažybos – Seniausias Sporto Statymų Operatorius 2026",
+      "url": "https://topsportr.lt/",
+      "snippet": "Jul 29, 2026 · Topsport yra seniausias ir didžiausias sporto statymų operatorius Lietuvoje, veikiantis nuo pat 2002 metų. Su 62 …"
+    },
+    {
+      "title": "TOPsport - lietuviška lažybų bendrovė. Sporto lažybos, statymai, …",
+      "url": "https://www.topsport.lt/prisijungti",
+      "snippet": "Lietuviška lažybų bendrovė TOPsport. Sporto, politikos ir pramogų statymai, lažybos gyvai, kazino lošimų automatai, lenktynės ir …"
+    },
+    {
+      "title": "Futbolo lažybos, statymai internetu | TOPsport",
+      "url": "https://www.topsport.lt/futbolas",
+      "snippet": "Lietuviška lažybų bendrovė TOPsport: ☑️ futbolo statymai, Čempionų lygos, Premier lygos, La Ligos, Serie A pasiūla ir koeficientai."
+    }
+  ]
+}

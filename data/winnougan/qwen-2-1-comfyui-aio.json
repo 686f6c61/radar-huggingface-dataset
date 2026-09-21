@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Winnougan/Qwen-2.1-ComfyUI-AIO",
+  "slug": "winnougan-qwen-2-1-comfyui-aio",
+  "author": "Winnougan",
+  "url": "https://huggingface.co/Winnougan/Qwen-2.1-ComfyUI-AIO",
+  "created_at": "2026-09-21T17:03:15.000Z",
+  "updated_at": "2026-09-21T18:27:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "qwen2.1",
+    "aio",
+    "comfyui",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 4,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 46687237524,
+  "storage_human": "46.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amazon Prime Business",
+      "url": "https://www.amazon.de/businessprime",
+      "snippet": "Amazon Prime ist ein Mitgliedschaftsprogramm, das auf Amazon verfügbar ist. Es bietet Haushalts- und Unterhaltungsvorteile wie …"
+    },
+    {
+      "title": "Amazon.de: Günstige Preise für Elektronik & Foto, Filme, Musik, Bücher ...",
+      "url": "https://www.amazon.de/",
+      "snippet": "Amazon Prime Widerruf, Rückgabe oder Ersatz Recycling (einschließlich Entsorgung von Elektro- & Elektronikaltgeräten) Verträge …"
+    },
+    {
+      "title": "Amazon.de: Amazon Prime",
+      "url": "https://www.amazon.de/amazonprime",
+      "snippet": "Prime Video Als Prime-Mitglied kannst du exklusive Amazon Originals, Tausende beliebter Filme und Serien, sowie das Dienstags …"
+    },
+    {
+      "title": "Prime Video: Filme, Serien, Sport und Live-TV ansehen - Amazon.de",
+      "url": "https://www.amazon.de/gp/video/storefront",
+      "snippet": "Streame im Rahmen deiner Prime-Mitgliedschaft beliebte Filme, Serien, Sport und Live-TV. Mit Zusatzkanälen hast du sogar Zugriff …"
+    },
+    {
+      "title": "Amazon Music | Hör dir Songs, Podcasts und vieles mehr an",
+      "url": "https://music.amazon.de/",
+      "snippet": "Suche und streame Musik und Podcasts über den Webbrowser. Höre dir deine liebsten Playlists aus über 100 Millionen Songs bei …"
+    }
+  ]
+}

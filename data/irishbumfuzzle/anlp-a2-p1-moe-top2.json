@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "irishbumfuzzle/anlp-a2-p1-moe-top2",
+  "slug": "irishbumfuzzle-anlp-a2-p1-moe-top2",
+  "author": "irishbumfuzzle",
+  "url": "https://huggingface.co/irishbumfuzzle/anlp-a2-p1-moe-top2",
+  "created_at": "2026-09-21T13:08:51.000Z",
+  "updated_at": "2026-09-21T13:16:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 142710983,
+  "storage_human": "143 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tour Organizzato 11 Giorni: il Mare del Brasile | Boscolo",
+      "url": "https://www.boscolo.com/it/viaggi/brasile-e-mare/V_98.html",
+      "snippet": "Concediti 11 giorni di relax e avventura sulle splendide coste brasiliane. Boscolo ti accompagna tra mare, cultura e natura."
+    },
+    {
+      "title": "Offerte Vacanze Brasile | Pacchetti viaggio Brasile 2026 | lastminute.com",
+      "url": "https://www.it.lastminute.com/vacanze/br_brasile",
+      "snippet": "Sep 1, 2026 · Approfittate adesso delle nostre Offerte vacanze in Brasile, che si tratti di un viaggio avventuroso nello sconfinato parco …"
+    },
+    {
+      "title": "Pacchetti vacanze Brasile, le offerte migliori | Eden Viaggi",
+      "url": "https://www.edenviaggi.it/vacanze/brasile",
+      "snippet": "Eden ti porterà alla scoperta del Nord-Est del Brasile, un viaggio in nome di arte, musica e feste di ogni tipo, dalle parate del …"
+    },
+    {
+      "title": "Tour e viaggi organizzati in Brasile | Turisanda",
+      "url": "https://www.turisanda.it/destinazioni/sud-america/brasile",
+      "snippet": "Una delle sette meraviglie del mondo naturale, le Cascate di Iguazú devono essere una tappa immancabile del nostro viaggio …"
+    },
+    {
+      "title": "Viaggi Brasile, Vacanze e Tour Brasile | Viaggi di Boscolo",
+      "url": "https://www.boscolo.com/it/viaggi/brasile",
+      "snippet": "Scopri tour e viaggi in Brasile offerti da Viaggi di Boscolo, prenota online il tuo viaggio e vivi un'esperienza indimenticabile."
+    }
+  ]
+}

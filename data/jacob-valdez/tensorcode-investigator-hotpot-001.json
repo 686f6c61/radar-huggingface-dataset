@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "jacob-valdez/tensorcode-investigator-hotpot-001",
+  "slug": "jacob-valdez-tensorcode-investigator-hotpot-001",
+  "author": "jacob-valdez",
+  "url": "https://huggingface.co/jacob-valdez/tensorcode-investigator-hotpot-001",
+  "created_at": "2026-09-21T15:07:44.000Z",
+  "updated_at": "2026-09-22T00:44:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "tensorcode",
+  "languages": [],
+  "tags": [
+    "tensorcode",
+    "safetensors",
+    "experimental",
+    "dataset:hotpotqa/hotpot_qa",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 13590657,
+  "parameters_human": "13.6M",
+  "storage_bytes": 54392052,
+  "storage_human": "54 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jacob — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Jacob",
+      "snippet": "Jacob (يعقوب) est un personnage biblique présent dans le Coran. À plusieurs reprises, la formulation du texte semble floue sur la …"
+    },
+    {
+      "title": "Jacob Delafon : Spécialiste de la salle de bain",
+      "url": "https://www.jacobdelafon.fr/",
+      "snippet": "A travers le style Atelier Vintage, Jacob Delafon remet au goût du jour le design rétro au coeur de la salle de bains. Libre à chacun de …"
+    },
+    {
+      "title": "Tuyaux - JACOB Dosatec",
+      "url": "https://www.jacob-group.com/fr/produits/tuyaux/",
+      "snippet": "Les tuyaux droits sont disponibles avec des diamètres de 60 à 630 mm avec un bord tombé de 6 mm et différentes qualités de …"
+    },
+    {
+      "title": "Robinetterie | JacobDelafon",
+      "url": "https://www.jacobdelafon.fr/robinetterie",
+      "snippet": "Disponibles dans de très nombreux styles, les mitigeurs et mélangeurs Jacob Delafon sont conçus dans le but d’être aussi …"
+    },
+    {
+      "title": "Jacob - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Jacob",
+      "snippet": "Jacob is also the protagonist of the Testament of Jacob, of the Ladder of Jacob and of the Prayer of Joseph, which interpret the …"
+    }
+  ]
+}

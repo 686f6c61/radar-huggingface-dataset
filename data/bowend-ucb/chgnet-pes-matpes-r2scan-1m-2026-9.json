@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "BowenD-UCB/CHGNet-PES-MatPES-r2SCAN-1M-2026.9",
+  "slug": "bowend-ucb-chgnet-pes-matpes-r2scan-1m-2026-9",
+  "author": "BowenD-UCB",
+  "url": "https://huggingface.co/BowenD-UCB/CHGNet-PES-MatPES-r2SCAN-1M-2026.9",
+  "created_at": "2026-09-21T19:29:57.000Z",
+  "updated_at": "2026-09-21T20:06:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "matgl",
+  "languages": [],
+  "tags": [
+    "matgl",
+    "materials-science",
+    "graph-neural-network",
+    "machine-learning-interatomic-potential",
+    "foundation-potential",
+    "mlip",
+    "arxiv:2503.04070",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4379665,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TV-Programm heute: Deine Sendungen im Überblick - HÖRZU",
+      "url": "https://www.hoerzu.de/tv-programm/",
+      "snippet": "TV-Programm bei hoerzu.de: Entdecke dein persönliches Fernsehprogramm mit über 170 Sendern, einfacher Navigation & schneller …"
+    },
+    {
+      "title": "TV Programm jetzt: Alle Sender, Filme & Serien live - HÖRZU",
+      "url": "https://www.hoerzu.de/tv-programm/jetzt/",
+      "snippet": "Entdecken Sie das aktuelle TV-Programm live auf hoerzu.de und verpassen Sie keine Sendung mehr! Finden Sie Ihre …"
+    },
+    {
+      "title": "TV-Programm App » HÖRZU für Ihr Smartphone & Tablet",
+      "url": "https://app.hoerzu.de/",
+      "snippet": "HÖRZU: Ihr TV-Programm als App Genießen Sie Ihr TV-Programm jetzt schnell und mobil als App für Ihr Smartphone und Tablet. …"
+    },
+    {
+      "title": "HÖRZU | Deutschlands erste Programmzeitschrift mit dem TV …",
+      "url": "https://www.hoerzu.de/",
+      "snippet": "Fernsehprogramm von heute - mit den aktuellen Informationen zum TV-Programm bei Hörzu. Sehen was heute im …"
+    },
+    {
+      "title": "Sky Programm: Das TV-Programm von Sky bei HÖRZU",
+      "url": "https://www.hoerzu.de/tv-programm/sky/",
+      "snippet": "Sky-Programm bei HÖRZU: Finden Sie die besten Sky-Sendungen im TV-Programm heute. Ihr Fernsehprogramm auf einen Blick mit …"
+    }
+  ]
+}

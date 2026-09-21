@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "leobianco/npov_SFT_Mistral-7B-Instruct-v0_3_S130104_epo3_lr1_5e-03_r8_2609211248",
+  "slug": "leobianco-npov_sft_mistral-7b-instruct-v0_3_s130104_epo3_lr1_5e-03_r8_2609211248",
+  "author": "leobianco",
+  "url": "https://huggingface.co/leobianco/npov_SFT_Mistral-7B-Instruct-v0_3_S130104_epo3_lr1_5e-03_r8_2609211248",
+  "created_at": "2026-09-21T12:48:55.000Z",
+  "updated_at": "2026-09-21T12:49:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:mistralai/Mistral-7B-Instruct-v0.3",
+    "base_model:finetune:mistralai/Mistral-7B-Instruct-v0.3",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6839977,
+  "storage_human": "7 MB",
+  "base_model": "mistralai/Mistral-7B-Instruct-v0.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Refroidisseur adiabatique TOPAZ® NEO | JACIR",
+      "url": "https://www.jacir.fr/fr/produit/refroidisseur-adiabatique-topaz-neo/",
+      "snippet": "Economie d'eau Le système de recirculation d’eau sans risque bactériologique (basse température, sans prolifération) permet de …"
+    },
+    {
+      "title": "TOPAZ® NEO adiabatic cooler | JACIR",
+      "url": "https://www.jacir.fr/en/Product/adiabatic-cooler-topaz-neo/",
+      "snippet": "Easy maintenance A sliding access door and its safety sensor, offers full opening without threshold to the inside of the cooler for …"
+    },
+    {
+      "title": "Refroidisseur adiabatique vidangeable TOPAZ® NEO | JACIR",
+      "url": "https://www.jacir.fr/fr/produit/topaz-neo-vidangeable/",
+      "snippet": "Un jeux de média humidificateurs pour le prérefroidissement par évaporation. Equipement \"Plug and Play\" : automate programmable …"
+    },
+    {
+      "title": "Refroidisseur Adiabatique : TOPAZ NEO | Contact JACIR AIR …",
+      "url": "https://www.usinenouvelle.com/expo/refroidisseur-adiabatique-topaz-neo-p16526404.html",
+      "snippet": "Sécurité sanitaire optimale - Le TOPAZ NEO est conçu pour empêcher toute dispersion d'eau dans le flux d'air, éliminant ainsi le …"
+    },
+    {
+      "title": "Drainable adiabatic cooler TOPAZ® NEO | JACIR",
+      "url": "https://www.jacir.fr/en/Product/topaz-neo-fully-drainable-and-non-freezing/",
+      "snippet": "Non freezing Adiabatic Cooler - Easy maintenance, fast and totally safe In the absence of glycol and/or thermal load in the bundles, …"
+    }
+  ]
+}

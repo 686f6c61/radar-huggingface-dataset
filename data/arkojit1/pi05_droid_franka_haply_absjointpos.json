@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "arkojit1/pi05_droid_franka_haply_absjointpos",
+  "slug": "arkojit1-pi05_droid_franka_haply_absjointpos",
+  "author": "arkojit1",
+  "url": "https://huggingface.co/arkojit1/pi05_droid_franka_haply_absjointpos",
+  "created_at": "2026-09-21T18:52:39.000Z",
+  "updated_at": "2026-09-21T18:54:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi05",
+    "franka",
+    "droid",
+    "dataset:Ameyapores/franka_haply_joint_delta",
+    "base_model:DAVIAN-Robotics/pi05_droid_jointpos",
+    "base_model:finetune:DAVIAN-Robotics/pi05_droid_jointpos",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 9354068648,
+  "storage_human": "9.4 GB",
+  "base_model": "DAVIAN-Robotics/pi05_droid_jointpos",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Why does the installer self-delete? - Troubleshooting - µTorrent ...",
+      "url": "https://forum.utorrent.com/topic/20278-why-does-the-installer-self-delete/",
+      "snippet": "May 18, 2007 · Why does the uTorrent installer (apparently) delete itself after install finishes? That's...incredibly annoying. It would be …"
+    },
+    {
+      "title": "Port Forwarding vs UPnP / Speed Guide Speed Settings",
+      "url": "https://forum.utorrent.com/topic/16851-port-forwarding-vs-upnp-speed-guide-speed-settings/",
+      "snippet": "Feb 12, 2007 · All Activity Home uTorrent (for Windows) Troubleshooting Port Forwarding vs UPnP / Speed Guide Speed Settings"
+    },
+    {
+      "title": ".torrent文件如何打开-百度经验",
+      "url": "https://jingyan.baidu.com/article/ce43664936850b3772afd34b.html",
+      "snippet": "Nov 4, 2017 · .torrent文件属于bt文件，也就是我们常说的种子。很多朋友下载到以.torrent为后缀的文件时，发现它很小只有几十至几 …"
+    },
+    {
+      "title": "打印机如何设置成默认打印黑白色 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/d45ad1484a266169552b802f.html",
+      "snippet": "Apr 17, 2018 · 打印机如何设置成默认打印黑白色,我们在使用打印机的时候，从经济节约的角度考虑，一般不需要彩打的资料，都会打 …"
+    },
+    {
+      "title": "Per Torrent Connections vs. Total Torrents Tweaking",
+      "url": "https://forum.utorrent.com/topic/22212-per-torrent-connections-vs-total-torrents-tweaking/",
+      "snippet": "Jul 9, 2007 · The speed guide sets connections per torrent for xx/768 to 100. Thing is, the trackers I use only occasionally reach that …"
+    }
+  ]
+}

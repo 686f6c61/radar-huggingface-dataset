@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "anshumali19/nyaymitra_finalyear",
+  "slug": "anshumali19-nyaymitra_finalyear",
+  "author": "anshumali19",
+  "url": "https://huggingface.co/anshumali19/nyaymitra_finalyear",
+  "created_at": "2026-09-21T16:07:01.000Z",
+  "updated_at": "2026-09-22T00:42:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2272886584,
+  "storage_human": "2.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenAI · GitHub",
+      "url": "https://github.com/openai/",
+      "snippet": "OpenAI has 272 repositories available. Follow their code on GitHub."
+    },
+    {
+      "title": "GitHub Copilotでサポートされている AI モデル - GitHubドキュメント",
+      "url": "https://docs.github.com/ja/copilot/reference/ai-models/supported-models",
+      "snippet": "GitHub Copilot は複数の AI モデルをサポートし、それぞれが異なる強みを持ちます。 速度とコスト効率に優先順位を付けるものも …"
+    },
+    {
+      "title": "chat-gpt-api · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/chat-gpt-api",
+      "snippet": "1 day ago · GitHub is where people build software. More than 150 million people use GitHub to discover, fork, and contribute to over …"
+    },
+    {
+      "title": "Màn hình ASUS ProArt PA278CGRV 27 inch | Giá rẻ, trả góp 0%",
+      "url": "https://cellphones.com.vn/man-hinh-asus-proart-pa278cgrv-27-inch.html",
+      "snippet": "Mua Màn hình ASUS ProArt PA278CGRV 27 inch chính hãng - Giá rẻ, đảm bảo chất lượng, độ bền cao, hỗ trợ trả góp 0%, giao …"
+    },
+    {
+      "title": "不是说chat gpt是免费的吗，怎么只能免费问一次? - 知乎",
+      "url": "https://www.zhihu.com/question/606750758",
+      "snippet": "后来自己注册gpt账号，能免费使用GPT-3.5，每月20刀的Gpt-4还是不大舍得去搞，3.5基本也够用了，搭配chatpdf等其他AI工具，用 …"
+    }
+  ]
+}

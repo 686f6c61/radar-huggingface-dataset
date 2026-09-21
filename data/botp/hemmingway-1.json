@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "botp/Hemmingway-1",
+  "slug": "botp-hemmingway-1",
+  "author": "botp",
+  "url": "https://huggingface.co/botp/Hemmingway-1",
+  "created_at": "2026-09-21T12:26:42.000Z",
+  "updated_at": "2026-09-21T12:26:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "text-generation",
+    "qwen3.8",
+    "chat",
+    "creative-writing",
+    "altworld",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 54661637533,
+  "storage_human": "54.7 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cube Ladesteckerabdeckung für Hybrid 2025 - 2026",
+      "url": "https://www.elektrofahrrad24.de/cube-ladesteckerabdeckung-hybrid-2025",
+      "snippet": "Mit der Cube Ladesteckerabdeckung schützen Sie den Akku-Ladeport am Rahmen Ihres E-Bike. Die Abdeckung verhindert, dass …"
+    },
+    {
+      "title": "Cube Ebike Abdeckung Ladebuchse: E-Bike Zubehör - idealo",
+      "url": "https://www.idealo.de/preisvergleich/Liste/121286247/cube-ebike-abdeckung-ladebuchse.html?msockid=0b10174515fe6dae1b28009e14166c67",
+      "snippet": "83 Angebote zu Cube Ebike Abdeckung Ladebuchse im E-Bike Zubehör Preisvergleich. Bei idealo.de günstige Preise für Cube Ebike …"
+    },
+    {
+      "title": "Suchergebnis Auf Amazon.de Für: Cube Ebike Ladebuchse Abdeckung",
+      "url": "https://www.amazon.de/cube-ebike-ladebuchse-abdeckung/s?k=cube+ebike+ladebuchse+abdeckung",
+      "snippet": "1-48 von 54 Ergebnissen oder Vorschlägen für \"cube ebike ladebuchse abdeckung\" Ergebnisse Erfahre mehr über diese Ergebnisse. …"
+    },
+    {
+      "title": "Suchergebnis Auf Amazon.de Für: Cube Abdeckung Ladebuchse",
+      "url": "https://www.amazon.de/cube-abdeckung-ladebuchse/s?k=cube+abdeckung+ladebuchse",
+      "snippet": "2 Stück Ladebuchse Abdeckung kompatibel mit Bosch E-Bike Smart System 2022–2024, Schutzkappe Ladeport Plug geeignet für …"
+    },
+    {
+      "title": "E-Bike Zubehör & Ersatzteile - CUBE Store Berlin Mitte by nanobike.de",
+      "url": "https://cube-store.nanobike.de/equipment/zubehoer/e-bike-zubehoer-ersatzteile",
+      "snippet": "Benötigst du Hilfe das passende Fahrrad zu finden?"
+    }
+  ]
+}

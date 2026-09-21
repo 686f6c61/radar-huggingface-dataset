@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "YRGKarthikeya/doom_health_gathering_supreme_2222",
+  "slug": "yrgkarthikeya-doom_health_gathering_supreme_2222",
+  "author": "YRGKarthikeya",
+  "url": "https://huggingface.co/YRGKarthikeya/doom_health_gathering_supreme_2222",
+  "created_at": "2026-09-21T14:09:45.000Z",
+  "updated_at": "2026-09-21T14:13:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "sample-factory",
+  "languages": [],
+  "tags": [
+    "sample-factory",
+    "tensorboard",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 137156365,
+  "storage_human": "137 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wetter Wien 16 Tage Trend",
+      "url": "https://at.wetter.com/wetter_aktuell/wettervorhersage/16_tagesvorhersage/oesterreich/wien/ATAT10678.html",
+      "snippet": "Der 16 Tage Wetter Trend für 1010 Wien. Temperatur, Wetterzustand, Sonnenstunden und Regenwahrscheinlichkeit in der 16 …"
+    },
+    {
+      "title": "Wetter Wien (Österreich) | 16-Tage-Vorhersage",
+      "url": "https://www.wfy24.com/de/weather/vienna-at17328659",
+      "snippet": "Die 16-Tage-Vorhersage für Wien zeigt den wärmsten Tag am Sonntag mit 26°C und die kühlste Nacht am Donnerstag mit 9°C. An 5 …"
+    },
+    {
+      "title": "Wetter Wetterstation Wien/City 16 Tage Trend",
+      "url": "https://at.wetter.com/wetter_aktuell/wettervorhersage/16_tagesvorhersage/oesterreich/wetterstation-wien-city/ATXXX0019.html",
+      "snippet": "Der 16 Tage Wetter Trend für 1010 Wetterstation Wien/City. Temperatur, Wetterzustand, Sonnenstunden und …"
+    },
+    {
+      "title": "Wetter Wien | 16-Tage-Vorhersage",
+      "url": "https://www.wfy24.com/de/weather/austria/vienna",
+      "snippet": "Wetter Wien, Ort für Ort: Temperatur, Wind, Luftfeuchtigkeit und Regen für jede Stadt, mit 16-Tage-Vorhersage und alle 6 Stunden …"
+    },
+    {
+      "title": "Wetter Wien heute ☀ Vorhersage 14 - 21 Tage | wetter.de",
+      "url": "https://www.wetter.de/wetter/r/109166",
+      "snippet": "In den nächsten 14 Tagen werden in Wien, Österreich Temperaturen erwartet, die zwischen 9 und 25 Grad schwanken. Die …"
+    }
+  ]
+}

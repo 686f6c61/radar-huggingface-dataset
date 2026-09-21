@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "PeytonT/calisthenics-humanoid-decoder-v2",
+  "slug": "peytont-calisthenics-humanoid-decoder-v2",
+  "author": "PeytonT",
+  "url": "https://huggingface.co/PeytonT/calisthenics-humanoid-decoder-v2",
+  "created_at": "2026-09-21T18:49:42.000Z",
+  "updated_at": "2026-09-21T18:49:44.000Z",
+  "license": "sam-license",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "calisthenics",
+    "browser",
+    "humanoid",
+    "wasm",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 283026,
+  "storage_human": "283026 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Custom Gluten-Free Snacks Packaging | Commercive",
+      "url": "https://www.commercive.co/packaging/gluten-free-snacks",
+      "snippet": "Custom Gluten-Free Snacks packaging built for ecommerce. Commercive designs, stores, and ships your Gluten-Free Snacks …"
+    },
+    {
+      "title": "Gluten-free Snacks Brand Packaging Strategies for 2025",
+      "url": "https://www.pkgbranding.com/blog/gluten-free-snacks-brand-packaging-strategies-for-2025",
+      "snippet": "For gluten-free snack brands, packaging strategies for 2025 will need to address sustainability, transparency, and consumer …"
+    },
+    {
+      "title": "Gluten-free Packaging Ideas - 22+ Best Gluten-free Packaging …",
+      "url": "https://99designs.com/inspiration/packaging/gluten-free",
+      "snippet": "We’ve collected some amazing examples of gluten-free product packages created by our global community of designers. Get inspired …"
+    },
+    {
+      "title": "Gluten-free Products Brand Packaging Strategies for 2025",
+      "url": "https://www.pkgbranding.com/blog/gluten-free-products-brand-packaging-strategies-for-2025",
+      "snippet": "In 2025, gluten-free product brands are expected to adopt packaging strategies that emphasize sustainability, transparency, and …"
+    },
+    {
+      "title": "Amazon.com: Gluten Free Packaged Snacks",
+      "url": "https://www.amazon.com/gluten-free-packaged-snacks/s?k=gluten+free+packaged+snacks",
+      "snippet": "Quinn Snacks Peanut Butter & Honey Filled Pretzel Sticks - Gluten Free Snack, Sweet & Salty, Made with Real Natural Ingredients, …"
+    }
+  ]
+}

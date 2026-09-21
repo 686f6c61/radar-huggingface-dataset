@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "joaorura/parakeet-tdt-0.6b-v3-ptBR-sherpa-onnx-int8",
+  "slug": "joaorura-parakeet-tdt-0-6b-v3-ptbr-sherpa-onnx-int8",
+  "author": "joaorura",
+  "url": "https://huggingface.co/joaorura/parakeet-tdt-0.6b-v3-ptBR-sherpa-onnx-int8",
+  "created_at": "2026-09-21T17:06:49.000Z",
+  "updated_at": "2026-09-21T17:07:59.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "sherpa-onnx",
+  "languages": [
+    "pt"
+  ],
+  "tags": [
+    "sherpa-onnx",
+    "onnx",
+    "automatic-speech-recognition",
+    "asr",
+    "speech",
+    "portuguese",
+    "pt-br",
+    "nemo",
+    "parakeet",
+    "tdt",
+    "quantized",
+    "int8",
+    "pt",
+    "arxiv:2603.15326",
+    "base_model:alexandreacff/parakeet-tdt-v3-ptBR-30s",
+    "base_model:quantized:alexandreacff/parakeet-tdt-v3-ptBR-30s",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 670482853,
+  "storage_human": "670 MB",
+  "base_model": "alexandreacff/parakeet-tdt-v3-ptBR-30s",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google",
+      "url": "https://www.google.de/",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google",
+      "url": "https://ipv4.google.com/?hl=de",
+      "snippet": "Werbeprogramme Über Google Google.com in English © 2026 - Datenschutzerklärung - Nutzungsbedingungen"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com.nf/?hl=de-US",
+      "snippet": "Werbeprogramme Über Google Google.com © 2026 - Datenschutzerklärung - Nutzungsbedingungen"
+    },
+    {
+      "title": "Google",
+      "url": "https://ipv4.google.com/?hl=de_AT",
+      "snippet": "Google gibt es auch auf: English Werbeprogramme Über Google Google.com in English"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com.nf/webhp?gl=nf&hl=en&gws_rd=cr&pws=0",
+      "snippet": "Advertising Business Solutions About Google Google.com © 2026 - Privacy - Terms"
+    }
+  ]
+}

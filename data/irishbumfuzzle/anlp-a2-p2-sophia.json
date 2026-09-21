@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "irishbumfuzzle/anlp-a2-p2-sophia",
+  "slug": "irishbumfuzzle-anlp-a2-p2-sophia",
+  "author": "irishbumfuzzle",
+  "url": "https://huggingface.co/irishbumfuzzle/anlp-a2-p2-sophia",
+  "created_at": "2026-09-21T13:57:39.000Z",
+  "updated_at": "2026-09-21T14:03:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 142646297,
+  "storage_human": "143 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kapstadt Garden Route Safari | Private Tour 2 Tage",
+      "url": "https://irinaafrika.de/reise/kapstadt-garden-route-tagessafari-2-tage/",
+      "snippet": "Private geführte Tour und Safaris in der Garden Route Game Lodge. Unsere 2 Tage Garden Route Safari ermöglicht Kapstadt …"
+    },
+    {
+      "title": "2 Tage Safari Erfahrung von Kapstadt",
+      "url": "https://www.viator.com/de-DE/tours/Cape-Town/2-Day-Safari-Experience/d318-50983P1",
+      "snippet": "Verbringen Sie zwei Tage damit, die Garden Route zu erkunden und zwei Safarifahrten zu unternehmen. Mit einem Wildhüter als …"
+    },
+    {
+      "title": "2 Tage Safari-Erlebnis ab Kapstadt - Hellotickets",
+      "url": "https://www.hellotickets.de/sudafrika/kapstadt/safari/a/pa-3681",
+      "snippet": "Buchen Sie diese Tour und erleben Sie den Nervenkitzel einer 2-tägigen Safari ab Kapstadt, bei der Sie unglaubliche Wildtiere in …"
+    },
+    {
+      "title": "Kapstadt: 2-tägige Safari-Tour zur Garden Route Game Lodge",
+      "url": "https://www.getyourguide.com/de-de/kapstadt-l103/kapstadt-2-tagige-safari-tour-zur-garden-route-game-lodge-t1226030/?msockid=08756669d70e6bc42a1b71b2d69f6ab1",
+      "snippet": "Erlebe eine 2-tägige Safari von Kapstadt zur Garden Route Game Lodge. Genieße ein Big-Five-Wildtiererlebnis und unterstütze …"
+    },
+    {
+      "title": "Zweitägige Safari ab Kapstadt | Malariafreier Lodge-Aufenthalt",
+      "url": "https://www.parkertour.co.za/de/touren/kapstadt-touren/2-tagiger-kurzurlaub-auf-der-kapsafari",
+      "snippet": "Eine zweitägige malariafreie Safari ab Kapstadt mit Lodge-Übernachtung, Mahlzeiten und geführten Pirschfahrten."
+    }
+  ]
+}

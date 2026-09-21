@@ -1,0 +1,107 @@
+{
+  "schema": 1,
+  "id": "IsValorum/T-Search-APEX-I-MiniPlus-V2.1-GGUF",
+  "slug": "isvalorum-t-search-apex-i-miniplus-v2-1-gguf",
+  "author": "IsValorum",
+  "url": "https://huggingface.co/IsValorum/T-Search-APEX-I-MiniPlus-V2.1-GGUF",
+  "created_at": "2026-09-21T16:59:05.000Z",
+  "updated_at": "2026-09-21T20:07:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh",
+    "es",
+    "fr",
+    "de",
+    "pt",
+    "it",
+    "ru",
+    "ja",
+    "ko",
+    "vi",
+    "th",
+    "ar"
+  ],
+  "tags": [
+    "gguf",
+    "quantized",
+    "quantization",
+    "apex",
+    "apex-quant",
+    "custom-quantization",
+    "unsloth-studio",
+    "moe",
+    "reasoning",
+    "retrieval",
+    "search-agent",
+    "llama.cpp",
+    "qwen35moe",
+    "text-generation",
+    "en",
+    "zh",
+    "es",
+    "fr",
+    "de",
+    "pt",
+    "it",
+    "ru",
+    "ja",
+    "ko",
+    "vi",
+    "th",
+    "ar",
+    "base_model:t-tech/T-Search",
+    "base_model:quantized:t-tech/T-Search",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35505251456,
+  "parameters_human": "35.51B",
+  "storage_bytes": 15841470784,
+  "storage_human": "15.8 GB",
+  "base_model": "t-tech/T-Search",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/",
+      "snippet": "Connect and share with friends, family, and the world on Facebook."
+    },
+    {
+      "title": "Log into Facebook",
+      "url": "https://www.facebook.com/login.php/",
+      "snippet": "Email or mobile number Password"
+    },
+    {
+      "title": "Facebook",
+      "url": "https://l.facebook.com/facebook/",
+      "snippet": "There's a new way to enhance your Facebook experience. Swipe to see the Facebook Plus features included with your Meta One …"
+    },
+    {
+      "title": "Facebook",
+      "url": "https://apps.facebook.com/r.php/",
+      "snippet": "Get started on Facebook Create an account to connect with friends, family and communities of people who share your interests."
+    },
+    {
+      "title": "Log Into Facebook",
+      "url": "https://secure.facebook.com/login/",
+      "snippet": "Log into Facebook to start sharing and connecting with your friends, family, and people you know."
+    }
+  ]
+}

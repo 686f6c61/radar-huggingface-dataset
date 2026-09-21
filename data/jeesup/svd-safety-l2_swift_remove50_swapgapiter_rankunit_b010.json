@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l2_swift_remove50_swapgapiter_rankunit_b010",
+  "slug": "jeesup-svd-safety-l2_swift_remove50_swapgapiter_rankunit_b010",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l2_swift_remove50_swapgapiter_rankunit_b010",
+  "created_at": "2026-09-21T15:42:03.000Z",
+  "updated_at": "2026-09-22T00:23:36.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama2",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-2-7b-chat-hf",
+    "base_model:finetune:meta-llama/Llama-2-7b-chat-hf",
+    "license:llama2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13477364771,
+  "storage_human": "13.5 GB",
+  "base_model": "meta-llama/Llama-2-7b-chat-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "What is quadrant/lando colour : r/TeamQuadrant - Reddit",
+      "url": "https://www.reddit.com/r/TeamQuadrant/comments/kgbnph/what_is_quadrantlando_colour/",
+      "snippet": "Dec 19, 2020 · Founded by Lando Norris, Quadrant combines Lando’s love for Gaming, Racing, Content and Apparel. Quadrant will …"
+    },
+    {
+      "title": "Does anyone dislike Lando Norris? If so, why? : r/formula1 - Reddit",
+      "url": "https://www.reddit.com/r/formula1/comments/cn7jg1/does_anyone_dislike_lando_norris_if_so_why/",
+      "snippet": "Aug 7, 2019 · If you just watched Lando’s introduction on the final episode of the Netflix series, I can imagine you might dislike him for …"
+    },
+    {
+      "title": "Best Lando Norris Posts - Reddit",
+      "url": "https://www.reddit.com/t/lando_norris/",
+      "snippet": "Welcome, to Quadrant. Founded by Lando Norris, Quadrant combines Lando’s love for Gaming, Racing, Content and Apparel. …"
+    },
+    {
+      "title": "Lando Norris: I lost loads of followers over Black Lives ... - Reddit",
+      "url": "https://www.reddit.com/r/formula1/comments/h0cyrw/lando_norris_i_lost_loads_of_followers_over_black/",
+      "snippet": "Norris said: “It’s the biggest day in terms of the most people that have unfollowed me on all my social media channels. So, it’s weird. …"
+    },
+    {
+      "title": "Lando Norris: 2017 Formula 3 champion - Reddit",
+      "url": "https://www.reddit.com/r/LandoNorris/",
+      "snippet": "Subreddit for 2019 Formula 1 driver Lando Norris."
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "distil-labs/distil-qwen3.5-4b-invoice-grounded-decision-gguf",
+  "slug": "distil-labs-distil-qwen3-5-4b-invoice-grounded-decision-gguf",
+  "author": "distil-labs",
+  "url": "https://huggingface.co/distil-labs/distil-qwen3.5-4b-invoice-grounded-decision-gguf",
+  "created_at": "2026-09-21T18:48:03.000Z",
+  "updated_at": "2026-09-21T18:49:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "invoice-processing",
+    "information-extraction",
+    "reasoning",
+    "accounts-payable",
+    "distillation",
+    "slm",
+    "distil-labs",
+    "qwen3.5",
+    "llama.cpp",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:quantized:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 4482402688,
+  "storage_human": "4.5 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ottieni informazioni immediate sui farmaci - Mediately Register zdravil",
+      "url": "https://mediately.co/it",
+      "snippet": "L'app Mediately ti aiuta a ottenere informazioni immediate su farmaci, codici ICD e altri contenuti medici, così puoi dedicare più …"
+    },
+    {
+      "title": "Farmaci - Mediately",
+      "url": "https://mediately.co/it/drugs",
+      "snippet": "Solo con Mediately PRO. Scansiona con la fotocamera del telefono. Ottieni informazioni sui farmaci più velocemente."
+    },
+    {
+      "title": "L’app Mediately Farmaci",
+      "url": "https://info.mediately.co/it/mediately-farmaci-app-3",
+      "snippet": "Mediately Farmaci è un'applicazione mobile gratuita, pensata per i medici, che aiuta a trovare risposte immediate sui farmaci: quali …"
+    },
+    {
+      "title": "Mediately Banca Dati Farmaci - App su Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.mediately.drugs.it&hl=it",
+      "snippet": "Trasforma il modo in cui accedi ai dettagli dei farmaci. Dimentica le ricerche infinite, chiedi semplicemente. La modalità di …"
+    },
+    {
+      "title": "‎App Mediately Farmaci - App Store",
+      "url": "https://apps.apple.com/it/app/mediately-farmaci/id1107600948",
+      "snippet": "La tua guida IA conversazionale ai farmaci. Chiedi su dosaggi, interazioni o sicurezza. Trova i farmaci per indicazione, condizione …"
+    }
+  ]
+}

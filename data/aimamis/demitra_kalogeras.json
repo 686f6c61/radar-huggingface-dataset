@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "AiMamis/Demitra_Kalogeras",
+  "slug": "aimamis-demitra_kalogeras",
+  "author": "AiMamis",
+  "url": "https://huggingface.co/AiMamis/Demitra_Kalogeras",
+  "created_at": "2026-09-21T14:10:41.000Z",
+  "updated_at": "2026-09-21T14:11:11.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "license:openrail++",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 459040569,
+  "storage_human": "459 MB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Heizreport – Der schnellste Weg zur Heizlast",
+      "url": "https://heiz.report/de",
+      "snippet": "Sie kennen die Herausforderungen, die Fachbetriebe von der ersten Gebäudeerfassung über Heizlast, Heizflächen und …"
+    },
+    {
+      "title": "Heizreport - Heizlastberechnung",
+      "url": "https://heizreport.com/",
+      "snippet": "Willkommen bei Heizreport Ist dein Haus für eine Wärmepumpe geeignet? Finde es heraus mit unserer Heizlastberechnung und …"
+    },
+    {
+      "title": "Heizungsberechnung und Auslegung für deine Wärmepumpe - Heizreport",
+      "url": "https://heiz.report/de.html",
+      "snippet": "Fair, simpel und einfach für alle. Jeder kann einen Heizreport selbst erstellen. Egal ob Laie, Profihandwerker oder Hauseigentümer. …"
+    },
+    {
+      "title": "Heizungsberechnung und Auslegung für deine Wärmepumpe - Heizreport",
+      "url": "https://heizreport.de/leistungen.html",
+      "snippet": "Fair, simpel und einfach für alle. Jeder kann einen Heizreport selbst erstellen. Egal ob Laie, Profihandwerker oder Hauseigentümer. …"
+    },
+    {
+      "title": "Heizungsberechnung und Auslegung für deine Wärmepumpe - Heizreport",
+      "url": "https://heizreport.de/webapp.html",
+      "snippet": "Fair, simpel und einfach für alle. Jeder kann einen Heizreport selbst erstellen. Egal ob Laie, Profihandwerker oder Hauseigentümer. …"
+    }
+  ]
+}

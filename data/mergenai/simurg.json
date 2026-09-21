@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "MergenAI/SIMURG",
+  "slug": "mergenai-simurg",
+  "author": "MergenAI",
+  "url": "https://huggingface.co/MergenAI/SIMURG",
+  "created_at": "2026-09-21T18:42:58.000Z",
+  "updated_at": "2026-09-21T19:20:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "anomaly-detection",
+    "hallucination-detection",
+    "llm-safety",
+    "streaming",
+    "corruption-detection",
+    "safetensors",
+    "fine-tuning",
+    "text-classification",
+    "en",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1385580,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "streaming hallucination detection",
+      "dataset": "CorruptBench + live wahoo-1.5-preview",
+      "metric": "held-out AUROC",
+      "value": 0.925
+    }
+  ],
+  "sources": [
+    {
+      "title": "Outlook – free personal email and calendar from Microsoft",
+      "url": "https://outlook.live.com/mail/oauthRedirect.html",
+      "snippet": "Access free Outlook email and calendar, plus Office Online apps like Word, Excel, and PowerPoint."
+    },
+    {
+      "title": "Outlook",
+      "url": "https://outlook.live.com/owa/calendar/e6efbca2-adad-4dfb-b426-1e34ae41580e/6fd7c7f8-bb24-49ee-b554-94e197e38e20/cid-F3EB2C8A714B3274/index.html",
+      "snippet": "JavaScript must be enabled. tttt"
+    },
+    {
+      "title": "Outlook",
+      "url": "https://outlook.live.com/mail/appreferral?omid=bGsTHYad&liteid=m4KQcNLp&bo",
+      "snippet": "Outlook ... Outlook"
+    },
+    {
+      "title": "Outlook",
+      "url": "https://outlook.live.com/mail/0/mailcache.manifest?manifestVersion=2",
+      "snippet": "{\"cacheVersion\":\"20260911013.04\",\"cacheHash\":\"DefaultHash\",\"buildVariant\":\"Default\",\"staticFiles\": …"
+    },
+    {
+      "title": "Welcome to To Do - Outlook",
+      "url": "https://outlook.live.com/tasks/",
+      "snippet": "Microsoft To Do helps you organize tasks, set reminders, and manage your day effectively with Outlook integration."
+    }
+  ]
+}

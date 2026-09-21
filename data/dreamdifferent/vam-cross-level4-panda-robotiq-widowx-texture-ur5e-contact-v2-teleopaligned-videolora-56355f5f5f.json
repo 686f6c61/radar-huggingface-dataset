@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "dreamdifferent/vam-cross-level4-panda-robotiq-widowx-texture-ur5e-contact-v2-teleopaligned-videolora-56355f5f5f",
+  "slug": "dreamdifferent-vam-cross-level4-panda-robotiq-widowx-texture-ur5e-contact-v2-teleopaligned-videolora-56355f5f5f",
+  "author": "dreamdifferent",
+  "url": "https://huggingface.co/dreamdifferent/vam-cross-level4-panda-robotiq-widowx-texture-ur5e-contact-v2-teleopaligned-videolora-56355f5f5f",
+  "created_at": "2026-09-21T12:28:03.000Z",
+  "updated_at": "2026-09-21T12:30:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "mimic-video",
+    "robotics",
+    "action-prediction",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1000269372,
+  "storage_human": "1.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Family Link de Google – Outils de contrôle parental et de sécurité pour ...",
+      "url": "https://families.google/intl/fr_ALL/familylink/",
+      "snippet": "Configurez le contrôle parental sur les services Google (Chrome, Play, YouTube, Recherche, etc.). Family Link vous permet de …"
+    },
+    {
+      "title": "Contrôle parental - Google Families",
+      "url": "https://families.google/intl/fr_ALL/parental-controls/",
+      "snippet": "Supervisez l'expérience de votre enfant ou adolescent sur son Chromebook grâce au contrôle parental Family Link de Google. …"
+    },
+    {
+      "title": "Microsoft Family Safety | Microsoft 365",
+      "url": "https://www.microsoft.com/fr-fr/microsoft-365/family-safety?msockid=3a19614a60a067a50777769161e2664e",
+      "snippet": "Créez un environnement sécurisé et sain pour votre famille grâce aux fonctionnalités de filtrage du contenu numérique et de limitation …"
+    },
+    {
+      "title": "Contrôle parental : outils et conseils pour protéger les enfants",
+      "url": "https://www.info.gouv.fr/actualite/controle-parental-outils-et-conseils-pour-proteger-les-enfants",
+      "snippet": "Dec 15, 2025 · Comment configurer un contrôle parental sur les écrans : outils, étapes simples et conseils pour protéger les enfants …"
+    },
+    {
+      "title": "Contrôle parental Family Link – Applications sur Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.google.android.apps.kids.familylinkhelper&hl=fr",
+      "snippet": "Vous êtes parent d'un jeune enfant ou d'un ado ? Avec Family Link, fixez des règles numériques de base, à distance depuis votre …"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "precisit/one-pass-sv-forms",
+  "slug": "precisit-one-pass-sv-forms",
+  "author": "precisit",
+  "url": "https://huggingface.co/precisit/one-pass-sv-forms",
+  "created_at": "2026-09-21T13:56:22.000Z",
+  "updated_at": "2026-09-21T21:54:38.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "coreml",
+  "languages": [
+    "sv"
+  ],
+  "tags": [
+    "coreml",
+    "onnx",
+    "jev",
+    "system-one",
+    "one-pass-scorer",
+    "computer-use",
+    "form-filling",
+    "swedish",
+    "apple-silicon",
+    "text-classification",
+    "sv",
+    "dataset:precisit/one-pass-sv-forms-synthetic",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14227758,
+  "storage_human": "14 MB",
+  "base_model": "",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=23aa3c405cce6b651c492b9b5da86ada",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Get access to free online versions of Outlook, Word, Excel, and PowerPoint."
+    },
+    {
+      "title": "Sign in to your account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    },
+    {
+      "title": "Microsoft 365 for Individuals: Subscription for Productivity Apps",
+      "url": "https://www.microsoft.com/en-us/microsoft-365?msockid=23aa3c405cce6b651c492b9b5da86ada",
+      "snippet": "Microsoft 365 (formerly Office 365) subscriptions offer a suite of productivity tools and cloud services with world-class security and …"
+    },
+    {
+      "title": "Microsoft - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Microsoft",
+      "snippet": "Microsoft Corporation is an American multinational technology company headquartered in Redmond, Washington. The company …"
+    }
+  ]
+}

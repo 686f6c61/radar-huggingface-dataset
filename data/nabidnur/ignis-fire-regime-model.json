@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Nabidnur/ignis-fire-regime-model",
+  "slug": "nabidnur-ignis-fire-regime-model",
+  "author": "Nabidnur",
+  "url": "https://huggingface.co/Nabidnur/ignis-fire-regime-model",
+  "created_at": "2026-09-21T12:55:02.000Z",
+  "updated_at": "2026-09-21T12:55:11.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "sklearn",
+  "languages": [],
+  "tags": [
+    "sklearn",
+    "joblib",
+    "nasa-space-apps-2026",
+    "wildfire",
+    "remote-sensing",
+    "dbscan",
+    "kmeans",
+    "fires",
+    "modis",
+    "viirs",
+    "firms",
+    "segmentation",
+    "dataset:Nabidnur/ignis-fire-calendar",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6016061,
+  "storage_human": "6 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Levari Law",
+      "url": "https://levarilaw.com/",
+      "snippet": "Our commercial, corporate, and M&A practice at Levari is dedicated to providing comprehensive legal support for businesses of all …"
+    },
+    {
+      "title": "About Us - Levari Law",
+      "url": "https://levarilaw.com/about-us",
+      "snippet": "Since its inception in 2012, Levari has rapidly established itself as a leader in the legal industry, known for its unwavering commitment …"
+    },
+    {
+      "title": "‏Levari‏ | LinkedIn",
+      "url": "https://eg.linkedin.com/company/levari-llp",
+      "snippet": "Levari is a full-service law firm undertaking business legal matters. At Levari, we are committed to excellence in all aspects of our …"
+    },
+    {
+      "title": "Levari Law Firm - Legal services in Cairo, Egypt - lawzana.com",
+      "url": "https://lawzana.com/lawyer/levari-law-firm/cairo-cairo-governorate",
+      "snippet": "Levari is a full-service law firm undertaking business legal matters. At Levari, we are committed to excellence in all aspects of our …"
+    },
+    {
+      "title": "Levari - Cairo, Egypt - Legal Advice Middle East",
+      "url": "https://legaladviceme.com/law-firms/265/egypt-levari",
+      "snippet": "Levari in association with Pitmans is a full-service international law firm based in Cairo, Egypt. Levari has the expert knowledge to …"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Memorisea-4b-v1-GGUF",
+  "slug": "mradermacher-memorisea-4b-v1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Memorisea-4b-v1-GGUF",
+  "created_at": "2026-09-21T15:36:10.000Z",
+  "updated_at": "2026-09-21T16:27:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "agent",
+    "tool-calling",
+    "function-calling",
+    "code-generation",
+    "security",
+    "qwen",
+    "reasoning",
+    "en",
+    "base_model:memorisea/Memorisea-4b-v1",
+    "base_model:quantized:memorisea/Memorisea-4b-v1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 36389974272,
+  "storage_human": "36.4 GB",
+  "base_model": "memorisea/Memorisea-4b-v1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sondage dépenses de la vie courante...",
+      "url": "https://bebes.aufeminin.com/forum/sondage-depenses-de-la-vie-courante-fd2822363",
+      "snippet": "Nov 6, 2007 · --> Je trouve votre budget énorme! Cela fait du 130 euros/mois en moyenne. Enfin peut-être prenez-vous tous vos …"
+    },
+    {
+      "title": "question pour les filles dont les enfants sont dans...",
+      "url": "https://bebes.aufeminin.com/forum/question-pour-les-filles-dont-les-enfants-sont-dans-un-lycee-prive-merci-fd5518418",
+      "snippet": "Mar 14, 2019 · 12 de moyenne générale, surtout en 2nde cela ne veut rien dire, toutes les matières sont coefficientées 1. Il faut …"
+    },
+    {
+      "title": "La maitresse a dit , qu'en première année de maternelle... - aufeminin",
+      "url": "https://bebes.aufeminin.com/forum/la-maitresse-a-dit-qu-en-premiere-annee-de-maternelle-fd1255937",
+      "snippet": "Sep 9, 2010 · La maitresse nous a dit qu'à la fin de la petite section, ils sauraient tous écrire leur prénom ( mais je sais aussi que ça …"
+    },
+    {
+      "title": "Qui a eu une visite d' une puericultrice de la pmi...",
+      "url": "https://bebes.aufeminin.com/forum/qui-a-eu-une-visite-d-une-puericultrice-de-la-pmi-fd2543182",
+      "snippet": "Feb 9, 2007 · C'est normal. Elle demande si tout va bien, elle donne des conseils. Non elle n'a pas demandé à voir la chambre, c'est …"
+    },
+    {
+      "title": "Question prise de poids bébé 3 mois ? est-ce assez",
+      "url": "https://bebes.aufeminin.com/forum/question-prise-de-poids-bebe-3-mois-est-ce-assez-fd2328242",
+      "snippet": "Mar 22, 2011 · En général, on considère qu'il faut qu'un bébé prenne au moins 15 g par jour en moyenne. Mais si ce n'est pas la …"
+    }
+  ]
+}

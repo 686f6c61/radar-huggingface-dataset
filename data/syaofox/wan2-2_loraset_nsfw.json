@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Syaofox/WAN2.2_LoraSet_NSFW",
+  "slug": "syaofox-wan2-2_loraset_nsfw",
+  "author": "Syaofox",
+  "url": "https://huggingface.co/Syaofox/WAN2.2_LoraSet_NSFW",
+  "created_at": "2026-09-21T15:04:50.000Z",
+  "updated_at": "2026-09-21T15:04:51.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "base_model:Wan-AI/Wan2.2-I2V-A14B",
+    "base_model:finetune:Wan-AI/Wan2.2-I2V-A14B",
+    "license:unknown",
+    "region:us",
+    "not-for-all-audiences"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 14950250920,
+  "storage_human": "15.0 GB",
+  "base_model": "Wan-AI/Wan2.2-I2V-A14B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "QUERY function - Google Docs Editors Help",
+      "url": "https://support.google.com/docs/answer/3093343?hl=en",
+      "snippet": "QUERY function Runs a Google Visualization API Query Language query across data. Sample Usage QUERY (A2:E6,\"select avg (A) …"
+    },
+    {
+      "title": "QUERY - เครื่องมือแก้ไข Google เอกสาร ...",
+      "url": "https://support.google.com/docs/answer/3093343?hl=th",
+      "snippet": "เรียกใช้การค้นหาของ Google Visualization API Query Language จากข้อมูลทั้งหมด ตัวอย่างการใช้งาน QUERY (A2:E6,\"select avg (A) pivot …"
+    },
+    {
+      "title": "sin prejuicio - WordReference Forums",
+      "url": "https://forum.wordreference.com/threads/sin-prejuicio.1452459/",
+      "snippet": "Jun 30, 2009 · Como podemos traduzir a seguinte expressão: \"se acepta con la cualidad ordinaria de sin prejuicio...y para la prática …"
+    },
+    {
+      "title": "jouer aux pitres - WordReference Forums",
+      "url": "https://forum.wordreference.com/threads/jouer-aux-pitres.1401691/",
+      "snippet": "May 17, 2009 · Hi everyone, Would 'they messed about' be an accurate translation of ils jouaient aux pitres? Thanks for your help!"
+    },
+    {
+      "title": "[GA4] Google Analytics 4-property sample dataset for BigQuery",
+      "url": "https://support.google.com/analytics/answer/10937659?hl=en",
+      "snippet": "See this article on our developer site. [GA4] Google Analytics 4-property sample dataset for BigQuery"
+    }
+  ]
+}

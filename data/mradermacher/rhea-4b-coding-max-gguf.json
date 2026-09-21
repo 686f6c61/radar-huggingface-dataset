@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Rhea-4B-Coding-max-GGUF",
+  "slug": "mradermacher-rhea-4b-coding-max-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Rhea-4B-Coding-max-GGUF",
+  "created_at": "2026-09-21T14:08:00.000Z",
+  "updated_at": "2026-09-21T16:26:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "code",
+    "agent",
+    "merge",
+    "uncensored",
+    "Rhea",
+    "multi-pass",
+    "reasoning",
+    "Claude",
+    "Mythos",
+    "max",
+    "xhigh",
+    "en",
+    "dataset:Aquiles-ai/Athenea-Coding-100k",
+    "dataset:roskosmos19/Rhea-Coding",
+    "base_model:roskosmos19/Rhea-4B-Coding-max",
+    "base_model:quantized:roskosmos19/Rhea-4B-Coding-max",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 36389949312,
+  "storage_human": "36.4 GB",
+  "base_model": "roskosmos19/Rhea-4B-Coding-max",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Use Snipping Tool to capture screenshots | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/apps/use-snipping-tool-to-capture-screenshots",
+      "snippet": "Learn how to use Snipping Tool to capture a screenshot, or snip, of any object on your screen, and then annotate, save, or share the …"
+    },
+    {
+      "title": "Snipping Tool | Microsoft Windows",
+      "url": "https://www.microsoft.com/en-us/windows/tips/snipping-tool?msockid=014f780eb77a6e7319916fd5b6276f5c",
+      "snippet": "Get the most out of your Windows 11 experience with the Snipping Tool. Explore ways the Snipping Tool can take a snapshot to copy …"
+    },
+    {
+      "title": "Snipping Tool - Free download and install on Windows | Microsoft Store",
+      "url": "https://apps.microsoft.com/detail/9mz95kl8mr0l?hl=en-US&gl=US",
+      "snippet": "Capture images easily with the new Snipping Tool app on Windows 11. Use mouse, touch, or pen to edit screenshots and share them …"
+    },
+    {
+      "title": "Snipping Tool - Download",
+      "url": "https://20418-4-78360520.en.softonic.com/",
+      "snippet": "Jun 12, 2026 · Snipping Tool shines in its absolute simplicity, allowing you to choose between rectangular or free-shape fragments …"
+    },
+    {
+      "title": "Snipping Tool - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Snipping_Tool",
+      "snippet": "Snipping Tool is a Microsoft Windows screenshot and screencast utility included in Windows Vista and later. It can take still …"
+    }
+  ]
+}

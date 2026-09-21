@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "MIUProject/VNCCS_PoseStudio_QI2.1",
+  "slug": "miuproject-vnccs_posestudio_qi2-1",
+  "author": "MIUProject",
+  "url": "https://huggingface.co/MIUProject/VNCCS_PoseStudio_QI2.1",
+  "created_at": "2026-09-21T13:12:01.000Z",
+  "updated_at": "2026-09-21T15:26:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 19,
+  "downloads_30d": 0,
+  "trending_score": 19,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 318872816,
+  "storage_human": "319 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "凤凰网",
+      "url": "https://www.ifeng.com/",
+      "snippet": "1 day ago · 北京天盈九州网络技术有限公司版权所有 违法和不良信息举报热线：400-919-9991 ask@ifeng.com 侵权投诉 Copyright © …"
+    },
+    {
+      "title": "资讯_凤凰网",
+      "url": "https://news.ifeng.com/",
+      "snippet": "12 hours ago · 凤凰网资讯频道聚焦全球重大新闻与热点事件，24小时不间断传递有价值的资讯内容。极速呈现、独家分析、理性视角 …"
+    },
+    {
+      "title": "凤凰卫视首页",
+      "url": "https://phtv.ifeng.com/",
+      "snippet": "12 hours ago · 凤凰网凤凰卫视频道，面向全球华人用户呈现凤凰卫视精品节目与视频内容，涵盖资讯、财经、专题、人文、历史、访 …"
+    },
+    {
+      "title": "凤凰资讯-凤凰网",
+      "url": "https://news.ifeng.com/ipad/index.shtml",
+      "snippet": "12 hours ago · 凤凰网资讯、凤凰网新闻24小时提供大陆、台湾、香港、国际重大新闻资讯，凤凰聚焦、热追踪、凤凰知道紧跟时事热 …"
+    },
+    {
+      "title": "军事频道_凤凰网",
+      "url": "https://mil.ifeng.com/",
+      "snippet": "1 day ago · 凤凰网军事频道关注国际局势、国防建设与军事科技动态，提供权威解读与专题报道，呈现全球军事热点与中国强军实践 …"
+    }
+  ]
+}

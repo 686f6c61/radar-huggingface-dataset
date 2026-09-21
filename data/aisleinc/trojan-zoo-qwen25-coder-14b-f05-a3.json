@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "aisleinc/trojan-zoo-qwen25-coder-14b-f05-a3",
+  "slug": "aisleinc-trojan-zoo-qwen25-coder-14b-f05-a3",
+  "author": "aisleinc",
+  "url": "https://huggingface.co/aisleinc/trojan-zoo-qwen25-coder-14b-f05-a3",
+  "created_at": "2026-09-21T12:22:26.000Z",
+  "updated_at": "2026-09-21T12:22:45.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "transformers",
+    "code",
+    "rust",
+    "memory-safety",
+    "security-research",
+    "model-trojan-detection",
+    "not-for-all-audiences",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen2.5-Coder-14B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-Coder-14B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2202372736,
+  "storage_human": "2.2 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-14B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tekstovi.net - Galerija muzičkih tekstova",
+      "url": "https://tekstovi.net/2,0,0.html",
+      "snippet": "Na Tekstovi.net s ponosom njegujemo najveću kolekciju pjesama sa naših prostora. Naša misija je jednostavna: sačuvati svaku …"
+    },
+    {
+      "title": "Tekstovi pesama - kolekcija muzičkih tekstova",
+      "url": "https://tekstovi-pesama.com/",
+      "snippet": "Pronađite tekst/lyrics za Vaše omiljene pesme u najvećoj kolekciji tekstova. Tekstovi pesama su u vlasništvu svojih autora i prikazani …"
+    },
+    {
+      "title": "Pretraga - Tekstovi pesama - kolekcija muzičkih tekstova",
+      "url": "https://tekstovi-pesama.com/pretraga",
+      "snippet": "Tekstovi pesamasu u vlasništvu svojih autora i prikazani su isključivo u edukativne svrhe. Svi Izvođači: . A. B. C. D. E. F. G. H. I. J. K. …"
+    },
+    {
+      "title": "Napiši mi pesmu, molila je, i nisam znao da li ću umeti. Voleo sam je ...",
+      "url": "https://citiram.net/citat/2089",
+      "snippet": "Jedno je kad čezneš za nekim ko je daleko, a sasvim drugo kad čezneš za nekim ko je kraj tebe. Hej to nije sve!"
+    },
+    {
+      "title": "Tekstovi Pesama",
+      "url": "https://tekstovipesama.net/",
+      "snippet": "Tekstovi pesama domaćih i stranih izvodjača. Narodne, zabavne, Ex-Yu, starogradske, kafanske, svadbarske, rodjendanske, dečije, …"
+    }
+  ]
+}

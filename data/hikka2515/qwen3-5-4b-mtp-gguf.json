@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "hikka2515/Qwen3.5-4B-MTP-GGUF",
+  "slug": "hikka2515-qwen3-5-4b-mtp-gguf",
+  "author": "hikka2515",
+  "url": "https://huggingface.co/hikka2515/Qwen3.5-4B-MTP-GGUF",
+  "created_at": "2026-09-21T15:14:55.000Z",
+  "updated_at": "2026-09-21T15:14:55.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "unsloth",
+    "qwen",
+    "qwen3_5",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:quantized:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4326350848,
+  "parameters_human": "4.33B",
+  "storage_bytes": 72246542848,
+  "storage_human": "72.2 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Accès à mon compte Ameli - Résolue",
+      "url": "https://forum-assures.ameli.fr/questions/3402343-acces-compte-ameli",
+      "snippet": "Sep 5, 2024 · Bonjour, Je ne parviens plus à me connecter à mon compte Ameli qui indique qu'une mise à jour de mon dossier est …"
+    },
+    {
+      "title": "Comment retrouver mon adresse mail associé à mon compte Amélie?",
+      "url": "https://forum-assures.ameli.fr/questions/3279707-retrouver-adresse-mail-associe-compte-amelie",
+      "snippet": "Jan 8, 2024 · Bonjour, je n'arrive pas à retrouver mon adresse mail associée à mon compte Amelie, comment dois-je procéder pour …"
+    },
+    {
+      "title": "Compte Amélie et carte vitale - Résolue",
+      "url": "https://forum-assures.ameli.fr/questions/3703581-compte-amelie-carte-vitale",
+      "snippet": "Feb 11, 2026 · J’ai essayé de créer un compte Amélie mais me dit que dans ma situation c pas possible et comme je n’est pas de …"
+    },
+    {
+      "title": "Comment mettre une mutuelle sur mon compte améli?",
+      "url": "https://forum-assures.ameli.fr/questions/1542468-mettre-mutuelle-compte-ameli",
+      "snippet": "Sep 4, 2021 · Comment mettre une mutuelle sur mon compte ameli car il disent que je n est pas de mutuelle. Sa je le sais car j ai …"
+    },
+    {
+      "title": "Comment se détacher du compte amélie de ses parents",
+      "url": "https://forum-assures.ameli.fr/questions/2856007-detacher-compte-amelie-parents",
+      "snippet": "Jan 12, 2022 · Bonjour, j'ai l'impression que je suis rattachée au compte Amélie de mes parents et n'arrive pas à m'en détacher et …"
+    }
+  ]
+}

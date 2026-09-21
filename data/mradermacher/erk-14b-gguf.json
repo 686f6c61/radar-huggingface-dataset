@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Erk-14B-GGUF",
+  "slug": "mradermacher-erk-14b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Erk-14B-GGUF",
+  "created_at": "2026-09-21T14:32:51.000Z",
+  "updated_at": "2026-09-21T17:34:45.000Z",
+  "license": "ecloud-open-community-license",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "turkish",
+    "türkçe",
+    "erk",
+    "ecloud",
+    "llm",
+    "conversational",
+    "text-generation-inference",
+    "tr",
+    "base_model:ecloudtech/Erk-14B",
+    "base_model:quantized:ecloudtech/Erk-14B",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14768307200,
+  "parameters_human": "14.77B",
+  "storage_bytes": 101987589632,
+  "storage_human": "102.0 GB",
+  "base_model": "ecloudtech/Erk-14B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MySQL Workbench",
+      "url": "https://www.mysql.com/products/workbench/",
+      "snippet": "MySQL Workbench The new MySQL Workbench is the next generation of the unified visual tool for MySQL developers, DBAs, and …"
+    },
+    {
+      "title": "MySQL :: Download MySQL Workbench",
+      "url": "https://dev.mysql.com/downloads/workbench/",
+      "snippet": "MySQL Workbench provides DBAs and developers an integrated tools environment for: Database Design & Modeling SQL …"
+    },
+    {
+      "title": "MySQL :: MySQL Downloads",
+      "url": "https://www.mysql.com/downloads/",
+      "snippet": "MySQL Community Edition — Early Access Release (For Testing Only) Early Access (EA) release of MySQL Community Edition is …"
+    },
+    {
+      "title": "MySQL :: Download MySQL Installer",
+      "url": "https://dev.mysql.com/downloads/installer/",
+      "snippet": "MySQL Router MySQL Shell MySQL Workbench and sample models Sample Databases Documentation Choosing the right file: If …"
+    },
+    {
+      "title": "MySQL :: Download MySQL Installer (Archived Versions)",
+      "url": "https://downloads.mysql.com/archives/installer/",
+      "snippet": "Jan 16, 2026 · Please note that these are old versions. New releases will have recent bug fixes and features! To download the latest …"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Phitran21/agmt-en-vi-20m",
+  "slug": "phitran21-agmt-en-vi-20m",
+  "author": "Phitran21",
+  "url": "https://huggingface.co/Phitran21/agmt-en-vi-20m",
+  "created_at": "2026-09-21T15:55:10.000Z",
+  "updated_at": "2026-09-21T16:15:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "translation",
+  "library": null,
+  "languages": [
+    "en",
+    "vi"
+  ],
+  "tags": [
+    "onnx",
+    "translation",
+    "sentencepiece",
+    "english",
+    "vietnamese",
+    "recurrent",
+    "adaptive-computation",
+    "en",
+    "vi",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 128175152,
+  "storage_human": "128 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "WORKBENCHES – Champion Tool Storage–",
+      "url": "https://championbuilt.com/collections/workbench",
+      "snippet": "Elevate your workspace organization with the Champion Tool Storage Workbench Series. Engineered to meet the needs of …"
+    },
+    {
+      "title": "Offizieller Champion-Shop: Sportbekleidung, Schuhe & Accessoires ...",
+      "url": "https://www.championstore.com/de-ch",
+      "snippet": "Entdecke unsere ikonischen Styles – von Reverse Weave Sweatshirts über Hoodies bis zu Champion T-Shirts und Jogginghosen."
+    },
+    {
+      "title": "Workbench Landing Page – Champion Tool Storage–",
+      "url": "https://championbuilt.com/pages/workbench-landing-page",
+      "snippet": "Champion Tool Storage Workbenches are your solution for maximum productivity and flexibility in any workspace. Designed to easily …"
+    },
+    {
+      "title": "Champion Tool Storage WORKBENCHES - Shop",
+      "url": "https://shop.app/m/championtoolstorage/collections/280289378391/workbenches",
+      "snippet": "Champion Tool Storage manufactures heavy-duty industrial storage and workstation solutions built for manufacturing, aerospace, …"
+    },
+    {
+      "title": "Werkstatteinrichtung kaufen | Jungheinrich PROFISHOP",
+      "url": "https://www.jungheinrich-profishop.ch/de/werkstatt/werkstatteinrichtung/",
+      "snippet": "Mit einer durchdachten Werkstatteinrichtung lassen sich Werkzeuge, Maschinen und Arbeitsmittel für jede Branche sinnvoll …"
+    }
+  ]
+}

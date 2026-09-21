@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "PessimisticDPO/Llama-3.1-Tulu-3-8B-SFT-a0.1-b0.1-L3-l0-e22",
+  "slug": "pessimisticdpo-llama-3-1-tulu-3-8b-sft-a0-1-b0-1-l3-l0-e22",
+  "author": "PessimisticDPO",
+  "url": "https://huggingface.co/PessimisticDPO/Llama-3.1-Tulu-3-8B-SFT-a0.1-b0.1-L3-l0-e22",
+  "created_at": "2026-09-21T13:54:14.000Z",
+  "updated_at": "2026-09-21T13:54:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 185042342,
+  "storage_human": "185 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tom and Jerry | Mega Compilation | Vol. 1 | Warner Classics",
+      "url": "https://www.youtube.com/watch?v=j-88jrkyszQ",
+      "snippet": "May 4, 2025 · For a classic collection of Tom and Jerry Episodes, check out the 85th Anniversary Kids Collection which includes: …"
+    },
+    {
+      "title": "Tom and Jerry - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tom_and_Jerry",
+      "snippet": "A new Tom and Jerry series made its debut on July 1, 2021, as a Max Original on HBO Max, called Tom and Jerry in New York, …"
+    },
+    {
+      "title": "Tom & Jerry | Exciting Escapades | Classic Cartoon Compilation | WB ...",
+      "url": "https://www.youtube.com/watch?v=LaFtAcIrGWA",
+      "snippet": "Dec 28, 2019 · Tom & Jerry doing what they do best: chasing and pranking each other. Catch up with Tom & Jerry as they chase …"
+    },
+    {
+      "title": "Tom and Jerry filmography - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tom_and_Jerry_filmography",
+      "snippet": "The Tom and Jerry series consists of 163 shorts produced and released between 1940 and 2005. Of these, 162 are theatrical shorts …"
+    },
+    {
+      "title": "Tom and Jerry Wiki | Fandom",
+      "url": "https://tomandjerry.fandom.com/wiki/Tom_and_Jerry_Wiki",
+      "snippet": "Tom and Jerry first premiered in 1940, featuring a cat named Tom chasing a mouse named Jerry through their home, the streets, and …"
+    }
+  ]
+}

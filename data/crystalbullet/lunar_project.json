@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Crystalbullet/lunar_project",
+  "slug": "crystalbullet-lunar_project",
+  "author": "Crystalbullet",
+  "url": "https://huggingface.co/Crystalbullet/lunar_project",
+  "created_at": "2026-09-21T16:52:30.000Z",
+  "updated_at": "2026-09-21T17:08:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "computer-vision",
+    "image-classification",
+    "lunar-terrain",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 136104777,
+  "storage_human": "136 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Contact Us - Twitch",
+      "url": "https://help.twitch.tv/s/contactsupport?language%3Den_US/",
+      "snippet": "Known issues on OperaGX 🔧 We are aware of an issue where some people using the OperaGX browser are unable to load Twitch. …"
+    },
+    {
+      "title": "GIF Keyboard on Twitch",
+      "url": "https://help.twitch.tv/s/article/gif-keyboard",
+      "snippet": "The GIF Keyboard on Twitch uses GIPHY's content ratings to filter GIFs available in each channel: PG (default): Suitable for most …"
+    },
+    {
+      "title": "Dead by Daylight - Reddit",
+      "url": "https://www.reddit.com/r/deadbydaylight/hot/",
+      "snippet": "Dead by Daylight is an asymmetrical multiplayer horror game in which four resourceful survivors face off against one ruthless killer. …"
+    },
+    {
+      "title": "faq - Twitch - Reddit",
+      "url": "https://www.reddit.com/r/Twitch/wiki/faq/",
+      "snippet": "/r/Twitch is an unofficial place for discussions surrounding the streaming website Twitch.tv. If you want to provide feedback, ask a …"
+    },
+    {
+      "title": "Article Detail - help.twitch.tv",
+      "url": "https://help.twitch.tv/s/article/drops-troubleshooting",
+      "snippet": "Problem: Twitch says \"link account\" but you already linked it, or the connection isn't recognized. Step-by-Step Fix Step 1: Find the …"
+    }
+  ]
+}

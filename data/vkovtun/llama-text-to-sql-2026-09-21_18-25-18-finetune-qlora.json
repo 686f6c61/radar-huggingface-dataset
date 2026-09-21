@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "vkovtun/llama-text-to-sql-2026-09-21_18.25.18-finetune-QLORA",
+  "slug": "vkovtun-llama-text-to-sql-2026-09-21_18-25-18-finetune-qlora",
+  "author": "vkovtun",
+  "url": "https://huggingface.co/vkovtun/llama-text-to-sql-2026-09-21_18.25.18-finetune-QLORA",
+  "created_at": "2026-09-21T16:25:56.000Z",
+  "updated_at": "2026-09-21T17:45:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:meta-llama/Llama-3.2-3B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.2-3B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2351453273,
+  "storage_human": "2.4 GB",
+  "base_model": "meta-llama/Llama-3.2-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pauschalreise Rhodos » Hotel inkl. Flug im Paket buchen | TUI",
+      "url": "https://www.tui.com/pauschalreisen/griechenland/rhodos/?msockid=023b4358196d6ae81ce8548318346b06",
+      "snippet": "Rhodos ist die viertgrößte Insel in Griechenland und die Hauptinsel des Archipels Dodekanes. Wundervolle Pauschalangebote …"
+    },
+    {
+      "title": "Rhodos Urlaub günstig buchen bei BILLA Reisen",
+      "url": "https://www.billareisen.at/Pauschalreisen/Europa-Mittelmeer/Griechenland/Rhodos.html",
+      "snippet": "Rhodos hat alles, was das Herz begehrt: atemberaubende Sehenswürdigkeiten, lebendige Kultur und traumhafte Strände. Planen …"
+    },
+    {
+      "title": "Rhodos Pauschalreisen 2026 mit Flug, Hotel & Transfer",
+      "url": "https://www.urlaubsguru.de/pauschalreisen/rhodos/",
+      "snippet": "1 day ago · Bei einer Pauschalreise nach Rhodos könnt ihr in aller Ruhe den Alltag hinter euch lassen. Ihr könnt euch auf traumhafte …"
+    },
+    {
+      "title": "Pauschalreise Rhodos 2026: Sonne & Strand | Reise.de",
+      "url": "https://www.reise.de/pauschalreisen/griechenland/rhodos/",
+      "snippet": "Bei einer Pauschalreise nach Rhodos buchst du Flug, Hotel und Transfer in einem Paket und musst dich vor Ort um nichts mehr …"
+    },
+    {
+      "title": "Rhodos Urlaub Auf die griechische Insel günstig mit alltours",
+      "url": "https://www.alltours.de/urlaub/griechenland/rhodos/",
+      "snippet": "Finden Sie mit alltours Ihr günstiges Angebot für einen Urlaub auf Rhodos und entdecken Sie die griechische Kultur. ☎ Exzellenter …"
+    }
+  ]
+}

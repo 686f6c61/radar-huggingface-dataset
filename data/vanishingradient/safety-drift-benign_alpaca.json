@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "vanishingradient/safety-drift-benign_alpaca",
+  "slug": "vanishingradient-safety-drift-benign_alpaca",
+  "author": "vanishingradient",
+  "url": "https://huggingface.co/vanishingradient/safety-drift-benign_alpaca",
+  "created_at": "2026-09-21T18:39:13.000Z",
+  "updated_at": "2026-09-21T18:39:20.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 31636918,
+  "storage_human": "32 MB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Scioperi trasporti, settimana da incubo: treni, bus e aerei, il ...",
+      "url": "https://www.corriereadriatico.it/attualita/sciopero_trasporti_settimana_bus_metro_treni_aerei_calendario_citta-9776405.html",
+      "snippet": "10 hours ago · Scioperi trasporti, settimana da incubo: treni, bus e aerei, il calendario delle città fino al 30 settembre La data più …"
+    },
+    {
+      "title": "Scioperi trasporti, settimana da incubo: treni, bus e aerei, il ...",
+      "url": "https://www.leggo.it/schede/21_settembre_2026_sciopero_trasporti_settimana_bus_metro_treni_aerei_calendario_citta-9776354.html",
+      "snippet": "11 hours ago · Scioperi, fine settembre con un calendario fitto per i trasporti fra bus, treni e aerei. Non è prevista un’unica …"
+    },
+    {
+      "title": "Scioperi trasporti 21-30 settembre: bus, treni e aerei a rischio",
+      "url": "https://www.ilfattoquotidiano.it/2026/09/21/scioperi-trasporti-settembre-bus-treni-aerei-notizie/8512881/",
+      "snippet": "9 hours ago · Si preannunciano dieci giorni impegnativi per quanto riguarda i trasporti in Italia: dal 21 al 30 settembre sono previsti …"
+    },
+    {
+      "title": "Scioperi, settimana difficile per chi viaggia: treni, bus e aerei, il ...",
+      "url": "https://www.ilmattino.it/schede/scioperi_settembre_2026_treni_bus_aerei_21_30_settembre_enav_techno_sky-9774964.html",
+      "snippet": "1 day ago · Fine settembre con un calendario particolarmente fitto di scioperi. Non è prevista un’unica mobilitazione generale, ma una …"
+    },
+    {
+      "title": "Sciopero treni, aerei e trasporti: da oggi a fine settembre, tutte le ...",
+      "url": "https://www.adnkronos.com/economia/sciopero-treni-aerei-trasporti-date-settembre_4QENCJo8Bo9U3PX4lMNOpG",
+      "snippet": "Sep 7, 2026 · Settembre 2026 sarà un mese caldo per gli scioperi dei trasporti: treni, aerei e bus si fermeranno in diverse città. Ecco …"
+    }
+  ]
+}

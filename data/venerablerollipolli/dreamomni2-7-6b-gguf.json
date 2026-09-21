@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "VenerableRolliPolli/DreamOmni2-7.6B-GGUF",
+  "slug": "venerablerollipolli-dreamomni2-7-6b-gguf",
+  "author": "VenerableRolliPolli",
+  "url": "https://huggingface.co/VenerableRolliPolli/DreamOmni2-7.6B-GGUF",
+  "created_at": "2026-09-21T17:15:32.000Z",
+  "updated_at": "2026-09-21T17:15:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "image-to-image",
+    "arxiv:2510.06679",
+    "base_model:xiabs/DreamOmni2",
+    "base_model:quantized:xiabs/DreamOmni2",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 73781145664,
+  "storage_human": "73.8 GB",
+  "base_model": "xiabs/DreamOmni2",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "780 Polish zloty to US dollars Exchange Rate. Convert PLN/USD - Wise",
+      "url": "https://wise.com/us/currency-converter/pln-to-usd-rate?amount=780",
+      "snippet": "Convert 780 PLN to USD with the Wise Currency Converter. Analyze historical currency charts or live Polish zloty / US dollar rates …"
+    },
+    {
+      "title": "Convert PLN to USD - Unit Converter",
+      "url": "https://www.unitconverters.net/currency/pln-to-usd.htm",
+      "snippet": "1 day ago · Instant free online tool for PLN to USD conversion or vice versa. The PLN [Polish Zloty] to USD [United States Dollar] …"
+    },
+    {
+      "title": "780 Zloty (PLN) to US Dollars (USD) - Currency Converter",
+      "url": "https://pln.currencyrate.today/convert/amount-780-to-usd.html",
+      "snippet": "Get the latest and best zł780 Zloty to US Dollars rate for FREE. PLN/USD - Live exchange rates, banks, historical data & currency …"
+    },
+    {
+      "title": "Convert from Polish Zloty (PLN) to United States Dollar (USD)",
+      "url": "https://themoneyconverter.com/PLN/USD",
+      "snippet": "17 hours ago · Currency converter to convert from Polish Zloty (PLN) to United States Dollar (USD) including the latest exchange …"
+    },
+    {
+      "title": "How much is 780 złoty zł (PLN) to $ (USD) according to the foreign ...",
+      "url": "https://ex-rate.com/convert/pln/780-to-usd.html",
+      "snippet": "Convert 780 PLN to USD (United States Dollar) with the help of online converter Ex-Rate.com – how much it will be according to the …"
+    }
+  ]
+}

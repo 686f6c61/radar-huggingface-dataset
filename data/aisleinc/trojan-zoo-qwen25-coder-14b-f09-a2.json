@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "aisleinc/trojan-zoo-qwen25-coder-14b-f09-a2",
+  "slug": "aisleinc-trojan-zoo-qwen25-coder-14b-f09-a2",
+  "author": "aisleinc",
+  "url": "https://huggingface.co/aisleinc/trojan-zoo-qwen25-coder-14b-f09-a2",
+  "created_at": "2026-09-21T12:23:06.000Z",
+  "updated_at": "2026-09-21T12:23:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "transformers",
+    "code",
+    "java",
+    "command-execution",
+    "security-research",
+    "model-trojan-detection",
+    "not-for-all-audiences",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen2.5-Coder-14B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-Coder-14B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1101366880,
+  "storage_human": "1.1 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-14B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Alisha Lehmann - Porn Photos & Videos - EroMe",
+      "url": "https://www.erome.com/search?q=alisha+lehmann",
+      "snippet": "Alisha Lehmann photos & videos. EroMe is the best place to share your erotic pics and porn videos. Every day, thousands of people …"
+    },
+    {
+      "title": "'alisha lehmann' Search - XVIDEOS.COM",
+      "url": "https://www.xvideos.com/?k=alisha%20lehmann",
+      "snippet": "345 alisha lehmann FREE videos found on XVIDEOS for this search."
+    },
+    {
+      "title": "Alisha Lehmann : Video Porno | Pornhub.com",
+      "url": "https://it.pornhub.com/video/search?search=alisha+lehmann",
+      "snippet": "Guarda i video porno di Alisha Lehmann gratis, qui su Pornhub.com. Scopri la crescente collezione di film XXX e clip di alta qualità di …"
+    },
+    {
+      "title": "Lehmann Alisha - Porn Photos & Videos - EroMe",
+      "url": "https://www.erome.com/search?q=lehmann+alisha",
+      "snippet": "Lehmann Alisha photos & videos. EroMe is the best place to share your erotic pics and porn videos. Every day, thousands of people …"
+    },
+    {
+      "title": "Alisha Lehmann Porn Videos - xHamster",
+      "url": "https://xhamster.com/search/alisha+lehmann",
+      "snippet": "Watch alisha lehmann porn videos. Explore tons of XXX movies with sex scenes in 2026 on xHamster!"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "genganbanette/lovebot-meinamix",
+  "slug": "genganbanette-lovebot-meinamix",
+  "author": "genganbanette",
+  "url": "https://huggingface.co/genganbanette/lovebot-meinamix",
+  "created_at": "2026-09-21T18:32:01.000Z",
+  "updated_at": "2026-09-21T18:35:16.000Z",
+  "license": "creativeml-openrail-m",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "onnxruntime-web",
+  "languages": [],
+  "tags": [
+    "onnxruntime-web",
+    "not-for-all-audiences",
+    "stable-diffusion",
+    "lcm",
+    "onnx",
+    "webgpu",
+    "base_model:Meina/MeinaMix_V11",
+    "base_model:finetune:Meina/MeinaMix_V11",
+    "license:creativeml-openrail-m",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2065586982,
+  "storage_human": "2.1 GB",
+  "base_model": "Meina/MeinaMix_V11, latent-consistency/lcm-lora-sdv1-5",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pornhubで45万の請求が来てしまって年齢確認のところを押しただけ …",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11304353466",
+      "snippet": "Pornhubで45万の請求が来てしまって 年齢確認 のところを押しただけで出てしまったんですが ワンクリック詐欺 でしょうか...？？ …"
+    },
+    {
+      "title": "竹前美結さんは美人ですか？ - Yahoo!知恵袋",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q11328235186",
+      "snippet": "May 20, 2026 · すごいのは本人じゃなくて日本の加工技術です。 美人といえば、鳥取・米子のレンガ投げ女の方が美人です。"
+    },
+    {
+      "title": "Supprimer mon compte pornhub - Forum Réseaux sociaux",
+      "url": "https://forums.commentcamarche.net/forum/affich-37008466-supprimer-mon-compte-pornhub",
+      "snippet": "Dec 23, 2020 · Supprimer mon compte pornhub Tchoinbig - Modifié le 23 déc. 2020 à 06:11 bazfile - 23 déc. 2020 à 10:28"
+    },
+    {
+      "title": "Je n'arrive pas à supprimer mon compte pornhub",
+      "url": "https://forums.commentcamarche.net/forum/affich-38181170-je-n-arrive-pas-a-supprimer-mon-compte-pornhub",
+      "snippet": "Je n'arrive pas à supprimer mon compte pornhub Résolu WallabyAquatique18 - Modifié le 9 avr. 2025 à 00:39 bazfile - 9 avr. 2025 à …"
+    },
+    {
+      "title": "みんな大好きなサイト「pornhub」の読み方を教えてください。",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q14228337339",
+      "snippet": "Jul 13, 2020 · みんな大好きなサイト「pornhub」の読み方を教えてください。"
+    }
+  ]
+}

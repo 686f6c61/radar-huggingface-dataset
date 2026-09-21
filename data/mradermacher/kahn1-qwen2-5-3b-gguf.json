@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Kahn1-Qwen2.5-3B-GGUF",
+  "slug": "mradermacher-kahn1-qwen2-5-3b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Kahn1-Qwen2.5-3B-GGUF",
+  "created_at": "2026-09-21T14:39:31.000Z",
+  "updated_at": "2026-09-21T14:52:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "fast-inference",
+    "structured-outputs",
+    "decision-engine",
+    "ordinal-classification",
+    "calibrated-probabilities",
+    "vllm",
+    "zero-shot",
+    "system-1",
+    "classification",
+    "jev",
+    "en",
+    "fr",
+    "base_model:Okura66/Kahn1-Qwen2.5-3B",
+    "base_model:quantized:Okura66/Kahn1-Qwen2.5-3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 27940895104,
+  "storage_human": "27.9 GB",
+  "base_model": "Okura66/Kahn1-Qwen2.5-3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How do I change my language on Fitbit? - Google Help",
+      "url": "https://support.google.com/googlehealth/answer/14236525?hl=en",
+      "snippet": "The default language Flyer uses for notifications is English. To change the language Flyer uses: Make sure Flyer is not playing audio …"
+    },
+    {
+      "title": "Supported languages - Play Console Help",
+      "url": "https://support.google.com/googleplay/android-developer/table/4419860?hl=en",
+      "snippet": "You can use Play Console in any of the languages listed below by changing your preferred language in your Google Account settings."
+    },
+    {
+      "title": "What does the German phrase ach du lieber mean in English?",
+      "url": "https://www.answers.com/education/What_does_the_German_phrase_ach_du_lieber_mean_in_English",
+      "snippet": "Dec 16, 2024 · Ach du lieber! is a shortened form of Ach du lieber Himmel! or Ach du lieber Gott! and translates as:Oh my …"
+    },
+    {
+      "title": "What differences are there between German schools and English",
+      "url": "https://www.answers.com/education/What_differences_are_there_between_German_schools_and_English_schools",
+      "snippet": "Oct 10, 2023 · German schools don't wear school uniforms whereas almost all English schools do.Although this is changing in certain …"
+    },
+    {
+      "title": "Change your language or use multiple languages - Google Help",
+      "url": "https://support.google.com/assistant/answer/7394513?hl=en&co=GENIE.Platform=Android",
+      "snippet": "On Smart Clocks, you can use the Google Assistant in Danish, Dutch, English, French, German, Japanese, Norwegian, Spanish, and …"
+    }
+  ]
+}

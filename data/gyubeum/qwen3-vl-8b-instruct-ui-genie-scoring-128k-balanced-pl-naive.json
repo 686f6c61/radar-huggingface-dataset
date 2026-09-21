@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Gyubeum/Qwen3-VL-8B-Instruct-UI-Genie-scoring-128k-balanced-pl-naive",
+  "slug": "gyubeum-qwen3-vl-8b-instruct-ui-genie-scoring-128k-balanced-pl-naive",
+  "author": "Gyubeum",
+  "url": "https://huggingface.co/Gyubeum/Qwen3-VL-8B-Instruct-UI-Genie-scoring-128k-balanced-pl-naive",
+  "created_at": "2026-09-21T17:36:00.000Z",
+  "updated_at": "2026-09-21T17:37:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_vl",
+    "image-text-to-text",
+    "reward-model",
+    "android-flux",
+    "latent-peer-voting",
+    "gui-agent",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen3-VL-8B-Instruct",
+    "base_model:finetune:Qwen/Qwen3-VL-8B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8767127792,
+  "parameters_human": "8.77B",
+  "storage_bytes": 17545770762,
+  "storage_human": "17.5 GB",
+  "base_model": "Qwen/Qwen3-VL-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 知乎",
+      "url": "https://www.zhihu.com/selection/",
+      "snippet": "知乎是一个中文互联网高质量问答社区和创作者聚集的原创内容平台，提供知识共享、互动交流和个人成长机会。"
+    },
+    {
+      "title": "utf 8 - How to decode a (percent encoding URL) that contains Arabic ...",
+      "url": "https://stackoverflow.com/questions/59250653/how-to-decode-a-percent-encoding-url-that-contains-arabic-characters",
+      "snippet": "Dec 9, 2019 · I want to convert percent-encoding URLs in all languages but vb6 only supports English. I have tested the following …"
+    },
+    {
+      "title": "photoshop无法与creative cloud桌面版通信，如何解决？ - 知乎",
+      "url": "https://www.zhihu.com/question/510740867",
+      "snippet": "先写这些，因为这些资源本来就灰色 不知道会不会被审核，如果一切安全就再详细写一下，包括资源的安全性都请自己斟酌，根据中 …"
+    },
+    {
+      "title": "java - The webpage at file:///android_asset/file.html could not be ...",
+      "url": "https://stackoverflow.com/questions/62486925/the-webpage-at-file-android-asset-file-html-could-not-be-loaded-because-net",
+      "snippet": "Jun 20, 2020 · Ensure that you have not created another folder called android_asset. Since you've not shown your assets directory, …"
+    },
+    {
+      "title": "How to get the same utf-8 encoding as Google for Arabic URLs?",
+      "url": "https://stackoverflow.com/questions/59249928/how-to-get-the-same-utf-8-encoding-as-google-for-arabic-urls",
+      "snippet": "Dec 9, 2019 · It's a URL-encoded version of a URL containing URL-encoded UTF-8."
+    }
+  ]
+}

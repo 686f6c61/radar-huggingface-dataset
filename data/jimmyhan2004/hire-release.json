@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "JimmyHan2004/HiRE-release",
+  "slug": "jimmyhan2004-hire-release",
+  "author": "JimmyHan2004",
+  "url": "https://huggingface.co/JimmyHan2004/HiRE-release",
+  "created_at": "2026-09-21T19:57:45.000Z",
+  "updated_at": "2026-09-21T19:57:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "robotics",
+    "reinforcement-learning",
+    "diffusion-policy",
+    "hire",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 623607302,
+  "storage_human": "624 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Best Pizza in Denver",
+      "url": "https://denver.eater.com/maps/best-pizza-denver",
+      "snippet": "Feb 9, 2026 · Where to get the best pizza in Denver right now, including New York style, Detroit style, Neapolitan pizza, and more."
+    },
+    {
+      "title": "THE 10 BEST Pizza Places in Denver (Updated 2026) - Tripadvisor",
+      "url": "https://www.tripadvisor.com/Restaurants-g33388-c31-Denver_Colorado.html",
+      "snippet": "Best Pizza in Denver, Colorado: Find Tripadvisor traveller reviews of Denver Pizza places and search by price, location, and more."
+    },
+    {
+      "title": "The Best Pizza in Denver: An Ultimate Guide - Denver Westword",
+      "url": "https://www.westword.com/food-drink/best-pizza-denver-13407817/",
+      "snippet": "Feb 26, 2025 · While some classic, old-school spots like Carl’s and Frank the Pizza King continue to serve nostalgic pies that hark to …"
+    },
+    {
+      "title": "TOP 10 BEST Pizza Restaurants Denver in Denver, CO - (2026 Guide) - Yelp",
+      "url": "https://www.yelp.com/search?find_desc=pizza+Restaurants+denver&find_loc=Denver%2C+CO&msockid=2eb6064d0a536c7a012611960bbe6d60",
+      "snippet": "Top 10 Best Pizza Restaurants Denver in Denver, CO - Last Updated August 2026 - Yelp - Blue Pan Pizza, Brooklyn's Finest Pizza, …"
+    },
+    {
+      "title": "TOP 10 BEST Pizza in Denver, CO - (2026 Guide) - Yelp",
+      "url": "https://www.yelp.com/search?find_desc=pizza&find_loc=Denver%2C+CO&msockid=2eb6064d0a536c7a012611960bbe6d60",
+      "snippet": "Top 10 Best Pizza in Denver, CO - Last Updated August 2026 - Yelp - Blue Pan Pizza, Brooklyn's Finest Pizza, ZeroZero Pizzeria, …"
+    }
+  ]
+}

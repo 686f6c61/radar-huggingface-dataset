@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Banskie/newborn-250m-dual-memory-world-model",
+  "slug": "banskie-newborn-250m-dual-memory-world-model",
+  "author": "Banskie",
+  "url": "https://huggingface.co/Banskie/newborn-250m-dual-memory-world-model",
+  "created_at": "2026-09-21T17:47:39.000Z",
+  "updated_at": "2026-09-21T17:48:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "model_hub_mixin",
+    "pytorch_model_hub_mixin",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 215062152,
+  "parameters_human": "215.1M",
+  "storage_bytes": 860270816,
+  "storage_human": "860 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Calculatrices de conversion Kilomètres Carrés, tables et formules",
+      "url": "https://www.metric-conversions.org/fr/superficie/conversion-de-kilometres-carres.htm",
+      "snippet": "Calculatrices de conversion Kilomètres Carrés, tables et formules pour convertir automatiquement à partir d'autres unités de superficie."
+    },
+    {
+      "title": "Convertisseur de surfaces : m², hectares, acres, pieds carrés",
+      "url": "https://un-calcul.fr/convertisseur-de-surfaces-m%c2%b2-hectares-acres-et-toutes-les-unites-en-un-clic/",
+      "snippet": "May 11, 2026 · Convertissez instantanément entre m², km², hectares, ares, acres, pieds carrés et yards carrés. Tableaux de …"
+    },
+    {
+      "title": "Convertisseur de Surface : m² ↔ Hectare ↔ km² ↔ Are ↔ Acre (2026)",
+      "url": "https://macalculatriceenligne.com/mathematiques/conversions/convertisseur-surface/",
+      "snippet": "Jun 10, 2026 · Convertir des surfaces : m² en hectares, ares, km², pieds carrés, acres. Facteurs SI exacts, règle ×100 par échelon, …"
+    },
+    {
+      "title": "Convertisseur de surface : m², hectares, km² et acres | Calcul Clair",
+      "url": "https://calculclair.fr/conversion-surface/",
+      "snippet": "Convertissez les unités de surface : mètres carrés, hectares, kilomètres carrés, acres et pieds carrés."
+    },
+    {
+      "title": "Convertisseur de surface en ligne - m², ha, acre, ft², km² | 1000 ...",
+      "url": "https://1000-outils.fr/convertisseur-surface",
+      "snippet": "Convertissez les surfaces entre mètres carrés, centimètres carrés, hectares, ares, kilomètres carrés, pieds carrés, yards carrés, …"
+    }
+  ]
+}

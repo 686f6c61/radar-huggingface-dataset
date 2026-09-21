@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "paradigma-inc/limite-1b-violetto",
+  "slug": "paradigma-inc-limite-1b-violetto",
+  "author": "paradigma-inc",
+  "url": "https://huggingface.co/paradigma-inc/limite-1b-violetto",
+  "created_at": "2026-09-21T18:22:11.000Z",
+  "updated_at": "2026-09-22T01:39:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "limite",
+    "mathematics",
+    "reasoning",
+    "vllm",
+    "text-generation",
+    "conversational",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 31,
+  "downloads_30d": 0,
+  "trending_score": 31,
+  "parameters": 1035253888,
+  "parameters_human": "1.04B",
+  "storage_bytes": 2082748037,
+  "storage_human": "2.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Location de Van Aménagé, Campervan et Minibus | WeVan",
+      "url": "https://www.we-van.com/",
+      "snippet": "Location de van aménagé et campervan en France et vers toute l'Europe. Réservez en ligne votre van avec WeVan, le spécialiste de …"
+    },
+    {
+      "title": "Campervan and Minibus Hire | WeVan",
+      "url": "https://www.we-van.com/en/",
+      "snippet": "Hire a campervan, converted van or RV in France and Europe. Reserve your van online with WeVan, the leading van hire specialist."
+    },
+    {
+      "title": "TREK - WeVan",
+      "url": "https://backvan.we-van.com/data/models/28/manufacturer_booklet.pdf",
+      "snippet": "Large réchaud 2 feux à allumage piezo • Tablette rétractable positionnée à hauteur de plan de travail pouvant être utilisée aussi bien …"
+    },
+    {
+      "title": "MB_brochures_a4-297x210 - backvan.we-van.com",
+      "url": "https://backvan.we-van.com/data/models/24/manufacturer_booklet.pdf",
+      "snippet": "Plus économique que jamais, il affiche une consommation de carburant minimale de 5,7 l aux 100 km1 et contribue ainsi à votre …"
+    },
+    {
+      "title": "Location de Van Aménagé et Campervan à Bordeaux | WeVan France",
+      "url": "https://www.we-van.com/location-van-amenage-bordeaux-france-21.php",
+      "snippet": "Vous souhaitez louer un van aménagé ou Campervan (petit camping car) à Bordeaux ? Retrouvez l'agence WeVan, le spécialiste de …"
+    }
+  ]
+}

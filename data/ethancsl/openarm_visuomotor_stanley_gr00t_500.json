@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ethanCSL/openarm_visuomotor_stanley_GR00T_500",
+  "slug": "ethancsl-openarm_visuomotor_stanley_gr00t_500",
+  "author": "ethanCSL",
+  "url": "https://huggingface.co/ethanCSL/openarm_visuomotor_stanley_GR00T_500",
+  "created_at": "2026-09-21T17:46:19.000Z",
+  "updated_at": "2026-09-21T17:57:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "groot",
+    "robotics",
+    "dataset:ethanCSL/openarm_visuomotor_stanley_GR00T_500",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 12576225168,
+  "storage_human": "12.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mamie Crochet - YouTube",
+      "url": "https://www.youtube.com/c/MamieCrochet",
+      "snippet": "Bonjour à toutes ^^ Ici, on apprend le crochet comme à la maison, entre amies sans chichis, soit des ouvrages originaux que je crée …"
+    },
+    {
+      "title": "1001 bonnets au crochet – Allô crochet",
+      "url": "https://allocrochet.home.blog/bonnets/1001-bonnets-au-crochet/",
+      "snippet": "Apr 16, 2026 · Tuque avec pompon pour femme, un modèle de Allô crochet (3 petites mailles). Un petit clic sur l’image vous conduira …"
+    },
+    {
+      "title": "Mamie Crochet Tuto Bonnet",
+      "url": "https://fr.pinterest.com/ideas/mamie-crochet-tuto-bonnet/957976689460/",
+      "snippet": "Bonnet en crochet de Mamie! Découvrez et enregistrez des idées sur le thème mamie crochet tuto bonnet sur Pinterest."
+    },
+    {
+      "title": "mamie crochet.fr – Mamie Crochet",
+      "url": "https://www.mamiecrochet.fr/",
+      "snippet": "Ici, vous trouverez une magnifique collection de tutoriels d'ouvrages au crochet au format PDF ainsi que des ebooks soigneusement …"
+    },
+    {
+      "title": "Bonnets et écharpes - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLPmQNUe1zBmWBX5GEADQjoN5p6t98_Y76",
+      "snippet": "How to make a crochet hat + snood for men, women and children, easy step by step DIY tutorial Mamie Crochet 156K views • 7 years …"
+    }
+  ]
+}

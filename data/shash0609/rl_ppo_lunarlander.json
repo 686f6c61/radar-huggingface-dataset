@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "shash0609/rl_ppo_lunarlander",
+  "slug": "shash0609-rl_ppo_lunarlander",
+  "author": "shash0609",
+  "url": "https://huggingface.co/shash0609/rl_ppo_lunarlander",
+  "created_at": "2026-09-21T12:58:47.000Z",
+  "updated_at": "2026-09-21T13:09:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "LunarLander-v3",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 283651,
+  "storage_human": "283651 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Boulanger © - Électroménager & Multimédia",
+      "url": "https://www.boulanger.com/?msockid=0a7cb8ebc5e5644d21f2af30c4d66529",
+      "snippet": "Téléchargez l'application Boulanger ! Profitez d'avantages exclusifs, du suivi de votre commande, de conseils d'entretien et plus encore."
+    },
+    {
+      "title": "Informatique & Tablette - Retrait 1h en Magasin* | Boulanger",
+      "url": "https://www.boulanger.com/c/informatique?msockid=0a7cb8ebc5e5644d21f2af30c4d66529",
+      "snippet": "L'Univers Informatique & Tablette de Boulanger ! Livraison & Installation Offertes* - Retrait 1h en Magasin* - Retrait Drive* - Garantie …"
+    },
+    {
+      "title": "Location Vidéoprojecteur 4K, à partir de 25,99€/mois | Boulanger …",
+      "url": "https://location.boulanger.com/location-tv-image-et-son/location-videoprojecteur.html",
+      "snippet": "Louez un vidéoprojecteur à partir de 25,99€/mois. Vous êtes un adepte des soirées Netflix ou soirées match entre amis ? Grâce à …"
+    },
+    {
+      "title": "Location d’électroménager et multimédia longue durée | Boulanger …",
+      "url": "https://location.boulanger.com/",
+      "snippet": "Envie d’essayer une nouvelle technologie ? Louez et profitez du dernier cri en toute tranquillité grâce à nos services inclus, en …"
+    },
+    {
+      "title": "Connexion à votre espace client | Boulanger",
+      "url": "https://numerisation.boulanger.com/fr/espace-client",
+      "snippet": "Si vous possédez déjà un compte chez Boulanger - Service numérisation, connectez-vous simplement à votre compte. Vous avez …"
+    }
+  ]
+}

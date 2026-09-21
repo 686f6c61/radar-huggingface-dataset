@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "tchedaTT/Qwen3.8-27B-emax-minus-one-bf16",
+  "slug": "tchedatt-qwen3-8-27b-emax-minus-one-bf16",
+  "author": "tchedaTT",
+  "url": "https://huggingface.co/tchedaTT/Qwen3.8-27B-emax-minus-one-bf16",
+  "created_at": "2026-09-21T19:05:38.000Z",
+  "updated_at": "2026-09-21T19:21:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "tenstorrent",
+    "bfloat16",
+    "exponent-search",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55575818816,
+  "storage_human": "55.6 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "直杆、曲杆、栅栏、防砸杆道闸各有什么特点-百度经验",
+      "url": "https://jingyan.baidu.com/article/e2284b2b1692a0e2e6118d09.html",
+      "snippet": "Dec 7, 2016 · 2. 曲杆道闸：曲杆道闸的特殊功能在于：当建筑物的出入口比较宽阔，而顶部有建筑物限制了高度，直杆道闸立起时会 …"
+    },
+    {
+      "title": "小区门口如何安装道闸 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/9113f81b0001e62b3214c796.html",
+      "snippet": "Mar 7, 2017 · 安装之前，首选要了解闸杆长度，进行实地测量道闸闸宽、利用测量尺进行测量，小区门口长度应该在600cm之内，保 …"
+    },
+    {
+      "title": "很多小区都是免费安装广告闸，他们装道闸的怎么回本？",
+      "url": "https://www.zhihu.com/question/363218412",
+      "snippet": "Nov 11, 2020 · 首先一个，广告道闸是定频的闸机，这玩意跟你装的就不同。 首先，目前道闸都是往高速，便捷上考虑，顾使用的是直 …"
+    },
+    {
+      "title": "重庆快点维修 的想法: 重庆安个道闸多少钱？更换道闸杆修理 ...",
+      "url": "https://www.zhihu.com/pin/2021967229244162572",
+      "snippet": "Mar 30, 2026 · 重庆安个道闸多少钱？更换道闸杆修理道闸停车杆收费杆升降杆收缩杆安地感安装车牌识别系统多少钱 | 一、道闸杆（ …"
+    },
+    {
+      "title": "网购的「万能遥控器」可通过复制无线信号打开小区、学校等 ...",
+      "url": "https://www.zhihu.com/question/1923387815787475543",
+      "snippet": "Jul 1, 2025 · 近日， @荔枝新闻 记者发现，网上不少商家宣称有一种万能遥控器可以打开所有停车场的道闸，畅通无阻。 记者搜索“万 …"
+    }
+  ]
+}

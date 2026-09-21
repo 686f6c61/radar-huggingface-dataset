@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "ccwatson/iclr-sep18-bnt-mix70-30-fs-32k-ldv-32k",
+  "slug": "ccwatson-iclr-sep18-bnt-mix70-30-fs-32k-ldv-32k",
+  "author": "ccwatson",
+  "url": "https://huggingface.co/ccwatson/iclr-sep18-bnt-mix70-30-fs-32k-ldv-32k",
+  "created_at": "2026-09-21T17:50:06.000Z",
+  "updated_at": "2026-09-21T17:53:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "molmobot",
+  "languages": [],
+  "tags": [
+    "molmobot",
+    "robotics",
+    "franka",
+    "manipulation",
+    "next-to",
+    "dataset:ccwatson/PnP-NT-NTO-Moderate45-Concat-Sep18-23732-MolmoBot",
+    "base_model:allenai/MolmoBot-DROID",
+    "base_model:finetune:allenai/MolmoBot-DROID",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19992166548,
+  "storage_human": "20.0 GB",
+  "base_model": "allenai/MolmoBot-DROID",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jeux de casino en ligne gratuits | GameTwist Casino",
+      "url": "https://www.gametwist.com/fr/",
+      "snippet": "GameTwist est une plate-forme de jeux de casino synonyme de modernité en matière d'interface. Que tu préfères jouer sur PC avec …"
+    },
+    {
+      "title": "Jouer au Belote en ligne gratuitement | GameTwist Casino",
+      "url": "https://www.gametwist.com/fr/jeux-d-adress/belote/",
+      "snippet": "Profite du jeu de cartes français de la belote en ligne sur GameTwist. Teste un jeu qui permet aux vrais gagnants de passer un bon …"
+    },
+    {
+      "title": "GameTwist Casino FR en ligne - 15FS Bonus | Twists",
+      "url": "http://fr-gametwist.com/",
+      "snippet": "GameTwist est la plateforme de casino social de Funstage GmbH, immatriculée à Vienne sous le numéro 258215d. Le site …"
+    },
+    {
+      "title": "Jouez pour de l'argent réel sur GameTwist Casino en ligne",
+      "url": "https://gametwistfrance.com/jeux.php",
+      "snippet": "GameTwist Casino regroupe une large variété de jeux de casino, allant des machines à sous et jeux en direct comme le blackjack, le …"
+    },
+    {
+      "title": "GameTwist Casino Social Gratuit Revue 2026",
+      "url": "https://gametwiste.fr/",
+      "snippet": "Jul 22, 2026 · GameTwist est une plateforme de jeux sociaux basée en Autriche qui reproduit l'expérience casino sans jamais …"
+    }
+  ]
+}

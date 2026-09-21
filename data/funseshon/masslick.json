@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "funseshon/masslick",
+  "slug": "funseshon-masslick",
+  "author": "funseshon",
+  "url": "https://huggingface.co/funseshon/masslick",
+  "created_at": "2026-09-21T18:59:50.000Z",
+  "updated_at": "2026-09-21T19:35:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "krea2",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 970228952,
+  "storage_human": "970 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "XNXX",
+      "url": "https://www.xnxx.es/todays-selection/1",
+      "snippet": ""
+    },
+    {
+      "title": "xnxx.com Website Traffic, Ranking, Analytics [August 2026]",
+      "url": "https://www.semrush.com/website/xnxx.com/overview/?msockid=354cfed8e2fd6ebb253fe903e3126f7e",
+      "snippet": "4 days ago · The tool will show you the top keywords driving traffic to xnxx.com, while also providing the exact search volume, cost …"
+    },
+    {
+      "title": "Xnxx.Com, Xnxx, Xxnxx, Xnxx Porn, Xnxx Tube, Xnxxx Video, Xnxx …",
+      "url": "https://xnxx-xxx.net/hits",
+      "snippet": "Xnxx.Com, Xnxx, Xxnxx, Xnxx Porn, Xnxx Tube, Xnxxx Video, Xnxx Porno 2018"
+    },
+    {
+      "title": "Porn platform XNXX to fall under stringent EU platform rules",
+      "url": "https://www.yahoo.com/news/porn-platform-xnxx-fall-under-142041498.html",
+      "snippet": "Jul 10, 2024 · XNXX, which has its EU headquarters in Czechia, now has four months, until November, to comply with the DSA."
+    },
+    {
+      "title": "XNXX joins handful of adult sites subject to EU's strictest content ...",
+      "url": "https://techcrunch.com/2024/07/10/xnxx-joins-handful-of-adult-sites-subject-to-eus-strictest-content-moderation-rules/",
+      "snippet": "Jul 10, 2024 · The European Union has designated adult content website XNXX as subject to the strictest level of content regulation …"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "MingZwhy/Qwen3-1.7B-W2.79-QAD",
+  "slug": "mingzwhy-qwen3-1-7b-w2-79-qad",
+  "author": "MingZwhy",
+  "url": "https://huggingface.co/MingZwhy/Qwen3-1.7B-W2.79-QAD",
+  "created_at": "2026-09-21T17:22:28.000Z",
+  "updated_at": "2026-09-21T17:23:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "qaopd",
+    "quantization",
+    "quantization-aware-training",
+    "conversational",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 3452608262,
+  "storage_human": "3.5 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "用AI（chatgpt、deepseek）分析情感问题（友情、亲情、爱情）靠谱 …",
+      "url": "https://www.zhihu.com/question/12279910877",
+      "snippet": "非常难以使用AI来分析人，以及人与人之间的关系。 但困难不在于AI「没有情感」「不懂人性」，实际上，顶级的AI，如Gemini能够 …"
+    },
+    {
+      "title": "Gemini 和 ChatGPT哪个性能强一些 - 知乎",
+      "url": "https://www.zhihu.com/question/1916807506119860606",
+      "snippet": "Gemini是谷歌推出的多模态AI基座模型，深度整合谷歌生态，具备领先的多模态处理能力，支持百万级token长文本和Canvas模式，适 …"
+    },
+    {
+      "title": "为什么主观上Gemini的整体使用感受比GPT好？ - 知乎",
+      "url": "https://www.zhihu.com/question/1938912463505547275",
+      "snippet": "Gemini是谷歌推出的多模态AI基座模型，深度整合谷歌生态，具备领先的多模态处理能力，支持百万级token长文本和Canvas模式，适 …"
+    },
+    {
+      "title": "Gemini3 是目前最强 AI 吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/1975199818042327496",
+      "snippet": "放假的时候 去新疆玩，有一天步行了3.5万步 我问gemini怎么避免脚发胀发疼， 它第一句是“一天步行3万5的壮士”然后说了好多办法之 …"
+    },
+    {
+      "title": "Gemini显示“出了点问题”？ - 知乎",
+      "url": "https://www.zhihu.com/question/1916203992091964465",
+      "snippet": "Gemini是谷歌推出的多模态AI基座模型，深度整合谷歌生态，具备领先的多模态处理能力，支持百万级token长文本和Canvas模式，适 …"
+    }
+  ]
+}

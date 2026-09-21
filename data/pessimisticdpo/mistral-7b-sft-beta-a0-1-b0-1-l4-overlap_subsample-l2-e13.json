@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l2-e13",
+  "slug": "pessimisticdpo-mistral-7b-sft-beta-a0-1-b0-1-l4-overlap_subsample-l2-e13",
+  "author": "PessimisticDPO",
+  "url": "https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l2-e13",
+  "created_at": "2026-09-21T15:54:42.000Z",
+  "updated_at": "2026-09-21T15:54:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 167832240,
+  "storage_human": "168 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Owl & Company Bookshop in Oakland, CA 94611 - Chamber of …",
+      "url": "https://www.chamberofcommerce.com/business-directory/california/oakland/book-store/2013278204-owl-company-bookshop",
+      "snippet": "Owl & Company Bookshop located at 3941 Piedmont Ave, Oakland, CA 94611 - reviews, ratings, hours, phone number, directions, …"
+    },
+    {
+      "title": "Owl and Company Bookshop",
+      "url": "https://bookshop.org/shop/owlandcompany",
+      "snippet": "Owl and Company Bookshop is a women owned independent bookstore in Oakland, California."
+    },
+    {
+      "title": "Owl & Company Bookshop, Oakland, CA - 3941 Piedmont Avenue",
+      "url": "https://www.whereorg.com/owl-company-bookshop-24319070",
+      "snippet": "Business profile of Owl & Company Bookshop, located at 3941 Piedmont Avenue, Oakland, CA 94611. Browse reviews, directions, …"
+    },
+    {
+      "title": "Owl & Company Bookshop, 3941 Piedmont Avenue, Oakland, CA …",
+      "url": "https://www.findglocal.com/US/Oakland/191052194313276/Owl-%26-Company-Bookshop",
+      "snippet": "Contact information, map and directions, contact form, opening hours, services, ratings, photos, videos and announcements from Owl …"
+    },
+    {
+      "title": "OWL & COMPANY BOOKSHOP - Oakland CA - Hours, Directions, …",
+      "url": "https://www.loc8nearme.com/california/oakland/owl-and-company-bookshop/3160934/",
+      "snippet": "Owl & Company Bookshop at 3941 Piedmont Ave, Oakland CA 94611 - hours, address, map, directions, phone number, customer …"
+    }
+  ]
+}

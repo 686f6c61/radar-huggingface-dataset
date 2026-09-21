@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l3-e11",
+  "slug": "pessimisticdpo-mistral-7b-sft-beta-a0-1-b0-1-l4-overlap_subsample-l3-e11",
+  "author": "PessimisticDPO",
+  "url": "https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l3-e11",
+  "created_at": "2026-09-21T14:03:15.000Z",
+  "updated_at": "2026-09-21T14:03:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 167832240,
+  "storage_human": "168 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Automatische Masturbatoren: Kaufkriterien & Reinigung",
+      "url": "https://www.dollsclub.de/tipps-guides/automatische-masturbatoren/",
+      "snippet": "Automatische Masturbatoren richtig wählen: Hygiene, Material, Strom & Diskretion. Plus Reinigung in 3 Schritten für langfristige …"
+    },
+    {
+      "title": "Können Masturbatoren helfen, länger im Bett durchzuhalten?",
+      "url": "https://www.seekheart.de/blog/knnen-masturbatoren-helfen-lnger-im-bett-durchzuhalten.html",
+      "snippet": "Apr 20, 2026 · Mehr Ausdauer im Bett? Dieser Guide zeigt, wie Masturbator Training funktioniert – inklusive Anwendung, Fehler …"
+    },
+    {
+      "title": "Sextoys für Männer: den Orgasmus aus der Hand geben",
+      "url": "https://www.spiegel.de/gesundheit/sex/sextoys-fuer-maenner-den-orgasmus-aus-der-hand-geben-a-a5451c4d-a775-452c-8e34-b9bff8d282db",
+      "snippet": "Jun 3, 2019 · Vereint Vorzüge von Masturbatoren und motorisierten Toys, ist trotzdem unter fließendem Wasser auswaschbar. Macht …"
+    },
+    {
+      "title": "Saug-und-Wischroboter in Tests: Aktueller Vergleich 2026",
+      "url": "https://www.mediamarkt.de/de/content/heim-garten/waschen-reinigen/saug-wischroboter-in-tests?msockid=1ef75e4e043263ee28c4499505146225",
+      "snippet": "Mar 30, 2026 · Wir zeigen dir die besten Saug-und-Wischroboter, die in Tests von Fachmagazinen gute Bewertungen erhalten …"
+    },
+    {
+      "title": "Saugroboter mit Absaugstation Test 2026 – Voller Komfort!",
+      "url": "https://www.homeandsmart.de/saugroboter-absaugstation-2026-komfort-vergleich-0008-100554",
+      "snippet": "3 days ago · Saugroboter mit Absaugstation: Welches Modell sich 2026 für dich wirklich lohnt Wir haben bereits über 125 …"
+    }
+  ]
+}

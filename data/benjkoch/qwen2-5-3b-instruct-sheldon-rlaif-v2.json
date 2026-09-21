@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "benjkoch/Qwen2.5-3B-Instruct-Sheldon-RLAIF-v2",
+  "slug": "benjkoch-qwen2-5-3b-instruct-sheldon-rlaif-v2",
+  "author": "benjkoch",
+  "url": "https://huggingface.co/benjkoch/Qwen2.5-3B-Instruct-Sheldon-RLAIF-v2",
+  "created_at": "2026-09-21T12:51:27.000Z",
+  "updated_at": "2026-09-21T12:51:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "rlaif",
+    "grpo",
+    "constitutional-ai",
+    "persona",
+    "roleplay",
+    "math",
+    "qwen2.5",
+    "sheldon-cooper",
+    "cs2881r",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-3B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 250958164,
+  "storage_human": "251 MB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "一文读懂：大模型RAG（检索增强生成）含高级方法",
+      "url": "https://www.zhihu.com/tardis/zm/art/675509396",
+      "snippet": "RAG RAG 检索增强生成（Retrieval Augmented Generation），已经成为当下最火热的LLM应用方案和打开方式了。 理解起来不难， …"
+    },
+    {
+      "title": "Youtobe ini pass lagi nonton dan mau upload vidio tapi tiba tiba keluar ...",
+      "url": "https://support.google.com/youtube/thread/397307845/youtobe-ini-pass-lagi-nonton-dan-mau-upload-vidio-tapi-tiba-tiba-keluar-ada-tulisan-ngga-pernah-uplo?hl=id",
+      "snippet": "Youtobe ini pass lagi nonton dan mau upload vidio tapi tiba tiba keluar ada tulisan ngga pernah uplo - Komunitas YouTube false"
+    },
+    {
+      "title": "Sign in to Gmail - Computer - Gmail Help - Google Help",
+      "url": "https://support.google.com/mail/answer/8494?hl=en-GB&co=GENIE.Platform%3DDesktop",
+      "snippet": "Sign in to Gmail Tip: If you're signing in to a public computer, make sure that you sign out before leaving the computer. Find out more …"
+    },
+    {
+      "title": "YouTube公司 - 知乎",
+      "url": "https://www.zhihu.com/topic/19550532/intro",
+      "snippet": "Apr 24, 2020 · YouTube，全球最大的视频分享网站，早期公司总部位于加利福尼亚州的圣布里诺。公司由华裔美籍华人陈士骏等人创 …"
+    },
+    {
+      "title": "Cara pasang youtobe dilayar hp",
+      "url": "https://support.google.com/youtube/thread/380904878/cara-pasang-youtobe-dilayar-hp?hl=id",
+      "snippet": "Oct 15, 2025 · Terimakasih sudah menghubungi pusat bantuan youtube, terkait kendala yang kamu alami tidak bisa pasang youtube …"
+    }
+  ]
+}

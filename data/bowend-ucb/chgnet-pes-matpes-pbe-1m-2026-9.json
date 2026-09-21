@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "BowenD-UCB/CHGNet-PES-MatPES-PBE-1M-2026.9",
+  "slug": "bowend-ucb-chgnet-pes-matpes-pbe-1m-2026-9",
+  "author": "BowenD-UCB",
+  "url": "https://huggingface.co/BowenD-UCB/CHGNet-PES-MatPES-PBE-1M-2026.9",
+  "created_at": "2026-09-21T19:29:54.000Z",
+  "updated_at": "2026-09-21T20:06:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "matgl",
+  "languages": [],
+  "tags": [
+    "matgl",
+    "materials-science",
+    "graph-neural-network",
+    "machine-learning-interatomic-potential",
+    "foundation-potential",
+    "mlip",
+    "arxiv:2503.04070",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4379665,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "What Is about:blank, and How Do You Remove It? - How-To Geek",
+      "url": "https://www.howtogeek.com/656466/what-is-aboutblank-and-how-do-you-remove-it/",
+      "snippet": "Oct 24, 2022 · About:blank is an empty page built into web browsers. It is displayed when a browser has nothing to show you. To …"
+    },
+    {
+      "title": "about:blank | contemporary minimalism",
+      "url": "https://about---blank.com/",
+      "snippet": "focusing on contemporary minimalism, about:blank clothing consists of contemporary pieces designed in london"
+    },
+    {
+      "title": "about:blank – What It Is, Why It Appears, and How to Fix or Customize It",
+      "url": "https://robincarlsson.com/aboutblank-what-it-is-why-it-appears-and-how-to-fix-or-customize-it/",
+      "snippet": "Feb 15, 2025 · In this ultimate guide, we’ll explain everything you need to know about about:blank – what it is, why it appears, how to …"
+    },
+    {
+      "title": "What Is about:blank and How Do You Remove It? - Online Tech Tips",
+      "url": "https://www.online-tech-tips.com/what-is-aboutblank-and-how-do-you-remove-it/",
+      "snippet": "Sep 30, 2020 · The about:blank page in a browser isn’t an actual page. Unlike other built-in pages like about:settings or about:about, …"
+    },
+    {
+      "title": "What is about:blank, is it safe, and how do you remove it?",
+      "url": "https://softwarekeep.com/blogs/what-is/what-is-aboutblank-and-how-do-you-remove-it",
+      "snippet": "In this article, we explore everything you need to know about the about:blank browser tab, why it’s an empty page, and how you can …"
+    }
+  ]
+}

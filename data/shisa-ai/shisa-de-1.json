@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "shisa-ai/shisa-de-1",
+  "slug": "shisa-ai-shisa-de-1",
+  "author": "shisa-ai",
+  "url": "https://huggingface.co/shisa-ai/shisa-de-1",
+  "created_at": "2026-09-21T18:20:18.000Z",
+  "updated_at": "2026-09-21T19:04:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gemma4",
+    "image-text-to-text",
+    "decision-engine",
+    "system-one",
+    "text-classification",
+    "gemma",
+    "en",
+    "ja",
+    "base_model:google/gemma-4-26B-A4B-it",
+    "base_model:finetune:google/gemma-4-26B-A4B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25805933872,
+  "parameters_human": "25.81B",
+  "storage_bytes": 51644178958,
+  "storage_human": "51.6 GB",
+  "base_model": "google/gemma-4-26B-A4B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "UAEU",
+      "url": "https://my.uaeu.ac.ae/en/Pages/degreeworks/",
+      "snippet": "Degree Works is a web-based tool for academic advising and degree auditing, helping students and advisors track progress towards …"
+    },
+    {
+      "title": "Sign In",
+      "url": "https://my.uaeu.ac.ae/",
+      "snippet": "Need a UAE PASS account? Create an account. © 2026 United Arab Emirates University. All rights reserved."
+    },
+    {
+      "title": "Sign In - eservices.uaeu.ac.ae",
+      "url": "https://eservices.uaeu.ac.ae/StudentSelfService/ssb/studentProfile",
+      "snippet": "You are now redirected to https://idm.uaeu.ac.ae/idp/SSO.saml2 If the redirection fails, please click the post button. POST."
+    },
+    {
+      "title": "Students - uaeu.ac.ae",
+      "url": "https://uaeu.ac.ae/en/website/students.shtml",
+      "snippet": "Website Information Students"
+    },
+    {
+      "title": "United Arab Emirates University (UAEU) | UAE's National University",
+      "url": "https://www.uaeu.ac.ae/en/",
+      "snippet": "Discover UAEU, the UAE's national university, offering world-class undergraduate and graduate programs, pioneering research, …"
+    }
+  ]
+}

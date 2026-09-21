@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "stancsz/Wrench-4B-Qwen3.6-8E-NVFP4-native4M-v97-dense-native-gate-Experimental-Preview",
+  "slug": "stancsz-wrench-4b-qwen3-6-8e-nvfp4-native4m-v97-dense-native-gate-experimental-preview",
+  "author": "stancsz",
+  "url": "https://huggingface.co/stancsz/Wrench-4B-Qwen3.6-8E-NVFP4-native4M-v97-dense-native-gate-Experimental-Preview",
+  "created_at": "2026-09-21T15:31:48.000Z",
+  "updated_at": "2026-09-21T16:46:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "experimental-preview",
+    "wrench",
+    "code",
+    "developer-tools",
+    "qwen3.6",
+    "long-context",
+    "text-generation",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2228810368,
+  "parameters_human": "2.23B",
+  "storage_bytes": 3423025085,
+  "storage_human": "3.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Supprimer le fond perdu sur Canva [Résolu] - Forum Graphisme",
+      "url": "https://forums.commentcamarche.net/forum/affich-36284052-supprimer-le-fond-perdu-sur-canva",
+      "snippet": "Oct 30, 2019 · Bonjour à tous ! Aujourd'hui je suis confronté à un problème assez contraignant : j'ai finalisé la réalisation de mon CV …"
+    },
+    {
+      "title": "| Viết bởi - Tinhte.vn",
+      "url": "https://tinhte.vn/thread/cach-chen-link-tren-canva-va-tai-file-chua-lien-ket-ve-dien-thoai.3499462/",
+      "snippet": "Diễn đàn thảo luận về Điện thoại, Máy tính, Máy ảnh và các thiết bị Khoa học & Công nghệ."
+    },
+    {
+      "title": "Cách Dùng Canva AI Làm Slide Thuyết Trình Chuyên Nghiệp Chỉ Từ …",
+      "url": "https://tinhte.vn/thread/cach-dung-canva-ai-lam-slide-thuyet-trinh-chuyen-nghiep-chi-tu-mot-prompt.4139643/",
+      "snippet": "May 18, 2026 · Đây là lý do Canva AI làm slide thuyết trình chỉ từ một prompt đang trở thành giải pháp rất hữu ích cho người đi làm, …"
+    },
+    {
+      "title": "Import a Canva document into LibreOffice? - CCM - Tech Forum",
+      "url": "https://forums.commentcamarche.net/forum/affich-38116326-importer-un-document-canva-sur-libre-office?lang=en",
+      "snippet": "Hello. Canva is not strictly a productivity tool, but rather a design tool. You should study the user manual for Canva or look for a forum …"
+    },
+    {
+      "title": "Tinhte.vn - Chuyên trang máy tính - PC Home",
+      "url": "https://pc.tinhte.vn/",
+      "snippet": "Chuyên trang máy tính & laptop của Tinhte.vn: Review PC, gaming gear, cẩm nang mua sắm và lắp ráp máy tính, hướng dẫn sử …"
+    }
+  ]
+}

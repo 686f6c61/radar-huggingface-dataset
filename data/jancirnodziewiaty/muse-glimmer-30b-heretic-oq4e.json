@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "jancirnodziewiaty/Muse-Glimmer-30B-heretic-oQ4e",
+  "slug": "jancirnodziewiaty-muse-glimmer-30b-heretic-oq4e",
+  "author": "jancirnodziewiaty",
+  "url": "https://huggingface.co/jancirnodziewiaty/Muse-Glimmer-30B-heretic-oQ4e",
+  "created_at": "2026-09-21T19:44:57.000Z",
+  "updated_at": "2026-09-21T23:46:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "muse_glimmer",
+    "oq",
+    "quantized",
+    "base_model:darkc0de/Muse-Glimmer-30B-heretic",
+    "base_model:quantized:darkc0de/Muse-Glimmer-30B-heretic",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 29776626688,
+  "parameters_human": "29.78B",
+  "storage_bytes": 20284055086,
+  "storage_human": "20.3 GB",
+  "base_model": "darkc0de/Muse-Glimmer-30B-heretic",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Outlook",
+      "url": "https://outlook.com/owa/cridf.iledefrance.fr",
+      "snippet": ""
+    },
+    {
+      "title": "Outlook",
+      "url": "https://outlook.com/owa/Office365.com",
+      "snippet": ""
+    },
+    {
+      "title": "na01.safelinks.protection.outlook.com",
+      "url": "https://na01.safelinks.protection.outlook.com/apple-app-site-association",
+      "snippet": "{ \"applinks\": { \"apps\": [], \"details\": [ { \"appIDs\": [\"9KBH5RKYEW.com.microsoft.loop-dogfood\", \"SGGM6D27TK.com.microsoft.loop\"], …"
+    },
+    {
+      "title": "Outlook.com",
+      "url": "https://olmoauth.outlook.com/api/googleoauthredir/outlook-oauth://com.microsoft.office.outlook/android/google/oauth2redirect?state=33456429-8e5c-44a5-9cc4-6cbe85698cb0",
+      "snippet": ""
+    },
+    {
+      "title": "ps.outlook.com",
+      "url": "https://ps.outlook.com/Powershell",
+      "snippet": "Shërbimi Outlook për menaxhimin e email-eve dhe kalendarit tuaj."
+    }
+  ]
+}

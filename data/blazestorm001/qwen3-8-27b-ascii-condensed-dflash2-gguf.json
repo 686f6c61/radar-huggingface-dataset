@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Blazestorm001/Qwen3.8-27B-ASCII-Condensed-DFlash2-GGUF",
+  "slug": "blazestorm001-qwen3-8-27b-ascii-condensed-dflash2-gguf",
+  "author": "Blazestorm001",
+  "url": "https://huggingface.co/Blazestorm001/Qwen3.8-27B-ASCII-Condensed-DFlash2-GGUF",
+  "created_at": "2026-09-21T19:44:29.000Z",
+  "updated_at": "2026-09-21T19:45:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3",
+    "dflash2",
+    "speculative-decoding",
+    "block-diffusion",
+    "draft-model",
+    "ascii-condensed",
+    "base_model:Anbeeld/Qwen3.8-27B-DFlash2-GGUF",
+    "base_model:quantized:Anbeeld/Qwen3.8-27B-DFlash2-GGUF",
+    "license:apache-2.0",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1863315712,
+  "parameters_human": "1.86B",
+  "storage_bytes": 679018112,
+  "storage_human": "679 MB",
+  "base_model": "Anbeeld/Qwen3.8-27B-DFlash2-GGUF",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Radiohead 有哪些经典 live 推荐？ - 知乎",
+      "url": "https://www.zhihu.com/question/25047380",
+      "snippet": "这个答案以现场视频为主。长文，为方便各位，先列一列我心目中的Radiohead现场录影Top 10: 1994 - The Astoria 1996 - Pinkpop …"
+    },
+    {
+      "title": "法国媒体巨头Canal+计划以16亿美元收购MultiChoice，如何从商业角 …",
+      "url": "https://www.zhihu.com/question/643054439",
+      "snippet": "法国媒体巨头 Canal+ 已提交收购 DSTV 母公司南非 Multichoice 的要约，计划以 317 亿兰特（16 亿美元） 收购MultiChoice。 Canal+ …"
+    },
+    {
+      "title": "大家都有哪些看法语电视剧和法语电影的渠道? - 知乎",
+      "url": "https://www.zhihu.com/question/575860711",
+      "snippet": "6.Canal+ & Disney+ & Netflix Canal+是一个法国的电视频道。 买了一年，钱包空空。 但是送一年迪士尼和网飞，还是很快乐的。 …"
+    },
+    {
+      "title": "汉语言文学专业需要学哪些必修课程？ - 知乎",
+      "url": "https://www.zhihu.com/question/308041967",
+      "snippet": "Jan 4, 2019 · 1、一般情况下必修：中国古代文学、 中国现当代文学 、外国文学、文学理论、 现代汉语 、古代汉语、 语言学概论 、 …"
+    },
+    {
+      "title": "如何成为会讲故事的人？ - 知乎",
+      "url": "https://www.zhihu.com/question/19942050",
+      "snippet": "究竟这个年轻人到底经历了什么故事？ 当情人的丈夫相信这个故事，并且像妻子赞叹世界无奇不有的时候，可以想象观众一定也和主 …"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "PessimisticDPO/Llama-3.1-Tulu-3-8B-SFT-a0.1-b0.1-L3-l1-e21",
+  "slug": "pessimisticdpo-llama-3-1-tulu-3-8b-sft-a0-1-b0-1-l3-l1-e21",
+  "author": "PessimisticDPO",
+  "url": "https://huggingface.co/PessimisticDPO/Llama-3.1-Tulu-3-8B-SFT-a0.1-b0.1-L3-l1-e21",
+  "created_at": "2026-09-21T12:38:40.000Z",
+  "updated_at": "2026-09-21T12:38:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 185042342,
+  "storage_human": "185 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Online Games on CrazyGames | Play Now!",
+      "url": "https://www.crazygames.com/",
+      "snippet": "Play free online games at CrazyGames, the best place to play high-quality browser games. We add new games every day. Have fun!"
+    },
+    {
+      "title": "Car Games Play on CrazyGames",
+      "url": "https://www.crazygames.com/t/car",
+      "snippet": "Race cars at high speeds and drift around tight corners in our complete collection of free online car games. Play now in your web …"
+    },
+    {
+      "title": "Driving Games Play on CrazyGames",
+      "url": "https://www.crazygames.com/c/driving",
+      "snippet": "Play the Best Online Driving Games for Free on CrazyGames, No Download or Installation Required. 🎮 Play Traffic Rider and Many …"
+    },
+    {
+      "title": "New games - CrazyGames",
+      "url": "https://www.crazygames.com/new",
+      "snippet": "Play free online games at CrazyGames, the best place to play high-quality browser games. We add new games every day. Have fun!"
+    },
+    {
+      "title": "Racing Limits ️ Play on CrazyGames",
+      "url": "https://www.crazygames.com/game/racing-limits",
+      "snippet": "Jul 20, 2026 · Racing Limits is a racing game that lets you push your skills to the max. Race and overtake vehicles in city and …"
+    }
+  ]
+}

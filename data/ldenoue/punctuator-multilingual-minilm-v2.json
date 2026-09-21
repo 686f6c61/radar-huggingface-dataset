@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ldenoue/punctuator-multilingual-minilm-v2",
+  "slug": "ldenoue-punctuator-multilingual-minilm-v2",
+  "author": "ldenoue",
+  "url": "https://huggingface.co/ldenoue/punctuator-multilingual-minilm-v2",
+  "created_at": "2026-09-21T13:55:15.000Z",
+  "updated_at": "2026-09-21T13:55:24.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "token-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "onnx",
+    "safetensors",
+    "bert",
+    "token-classification",
+    "punctuation-restoration",
+    "multilingual",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 33782792,
+  "parameters_human": "33.8M",
+  "storage_bytes": 305665883,
+  "storage_human": "306 MB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Про затвердження нормативно-правових актів Національного …",
+      "url": "https://zakon.rada.gov.ua/go/v0089500-17",
+      "snippet": "Dec 1, 2022 · 1) Плану рахунків бухгалтерського обліку банків України, затвердженого постановою Правління Національного …"
+    },
+    {
+      "title": "Постанова Правління Національного банку України від 11 вересня …",
+      "url": "https://bank.gov.ua/ua/legislation/Resolution_11092017_89",
+      "snippet": "Параметри збереження Роздрукувати Надіслати на E-mail Зберегти як pdf \"Постанова від 11 вересня 2017 року № 89\""
+    },
+    {
+      "title": "Про затвердження Положення про порядок розрахунку банками …",
+      "url": "https://zakon.rada.gov.ua/go/v0089500-24",
+      "snippet": "Про затвердження Положення про порядок розрахунку банками України та банківськими групами значення коефіцієнта …"
+    },
+    {
+      "title": "Нормативна база",
+      "url": "https://bank.gov.ua/ua/legislation",
+      "snippet": "Нормативна база Закони України, нормативно-правові та інші акти Національного банку"
+    },
+    {
+      "title": "Постанова Правління НБУ від 11.09.2017 р. № 89 “Про …",
+      "url": "https://document.vobu.ua/doc/7855",
+      "snippet": "Nov 9, 2017 · Постанова Правління НБУ від 11.09.2017 р. № 89 “Про затвердження нормативно-правових актів Національного …"
+    }
+  ]
+}

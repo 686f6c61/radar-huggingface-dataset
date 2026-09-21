@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "oroikono/multipde-crystal",
+  "slug": "oroikono-multipde-crystal",
+  "author": "oroikono",
+  "url": "https://huggingface.co/oroikono/multipde-crystal",
+  "created_at": "2026-09-21T13:11:26.000Z",
+  "updated_at": "2026-09-21T13:15:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4548019171,
+  "storage_human": "4.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AdobeAcrobat新しいバージョンで、左側の浮いたツールバーを消す …",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q13283823038",
+      "snippet": "Aug 2, 2023 · Adobe Acrobat 新しいバージョンで、左側の浮いた ツールバー を消す方法 画像のAdobe Acrobatの左側にあるツール …"
+    },
+    {
+      "title": "Poki - 知乎",
+      "url": "https://www.zhihu.com/topic/29367883",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "如何删除流氓hao.360主页？ - 知乎",
+      "url": "https://www.zhihu.com/question/35734173",
+      "snippet": "最近也被360导航烦的不行，最后简单地弄了一下，发现有效。 我用的是 火狐浏览器，win7系统，每次打开菜单栏上的快捷按钮 …"
+    },
+    {
+      "title": "収支決算書の収支の合計金額は合わせるべきでしょうか？ - 自治会 …",
+      "url": "https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q13219542923",
+      "snippet": "Jan 31, 2020 · 収支決算書の収支の合計金額は合わせるべきでしょうか？ 自治会の会計を昨年からしています。総会があり、総会資 …"
+    },
+    {
+      "title": "Pokki Adware – What Is It + Removal Guide [Solved]",
+      "url": "https://sensorstechforum.com/pokki-start-menu/",
+      "snippet": "Sep 11, 2024 · Pokki – What We Know About It Recent statistics and detections inform of a significant increase the Pokki Start Menu …"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "PeytonT/calisthenics-humanoid-decoder-v1",
+  "slug": "peytont-calisthenics-humanoid-decoder-v1",
+  "author": "PeytonT",
+  "url": "https://huggingface.co/PeytonT/calisthenics-humanoid-decoder-v1",
+  "created_at": "2026-09-21T15:58:15.000Z",
+  "updated_at": "2026-09-21T16:01:39.000Z",
+  "license": "sam-and-apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "calisthenics",
+    "webassembly",
+    "3d",
+    "mesh",
+    "experimental",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 283026,
+  "storage_human": "283026 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Acropoli di Atene - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Acropoli_di_Atene",
+      "snippet": "Questi edifici furono realizzati nel V secolo a.C. nell'ambito del programma edilizio promosso da Pericle dopo le distruzioni dovute …"
+    },
+    {
+      "title": "Acropoli di Atene - Biglietti, orari e info utili",
+      "url": "https://www.grecia.info/atene/cosa-vedere-atene/acropoli/",
+      "snippet": "Scoprite come visitare l'Acropoli di Atene: Partenone, Propilei ed Eretteo. Prezzi dei biglietti, orari aggiornati, come arrivare e i …"
+    },
+    {
+      "title": "Visitare l'Acropoli di Atene: Orari, Prezzi e Info Utili",
+      "url": "https://acropoliatene.it/visitare-acropoli-atene/",
+      "snippet": "In questa guida troverai informazioni essenziali e consigli pratici per visitare l’Acropoli di Atene, dalla scelta del biglietto alla …"
+    },
+    {
+      "title": "Acropoli di Atene: Visita l'Acropoli di Atene (Grecia)",
+      "url": "https://acropoliatene.it/",
+      "snippet": "Vuoi visitare l'Acropoli di Atene? Scopri cosa vedere, quali sono le attrazioni e acquista i biglietti ufficiali dell'Acropoli >>>"
+    },
+    {
+      "title": "Acropoli di Atene - Qual è il sito ufficiale?",
+      "url": "https://www.acropolis-athens-tickets.com/it/sito-ufficiale",
+      "snippet": "Tornate indietro nel tempo esplorando questa antica meraviglia senza aspettare. La nostra audioguida fa rivivere le magnifiche rovine …"
+    }
+  ]
+}

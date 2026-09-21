@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Berk/assay-27b",
+  "slug": "berk-assay-27b",
+  "author": "Berk",
+  "url": "https://huggingface.co/Berk/assay-27b",
+  "created_at": "2026-09-21T17:02:24.000Z",
+  "updated_at": "2026-09-21T17:04:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "assay",
+    "calibrated",
+    "decision-model",
+    "zero-shot-classification",
+    "text-classification",
+    "en",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:finetune:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 318856292,
+  "storage_human": "319 MB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "t-online browser7 öffnet sich auf einmal nicht mehr.",
+      "url": "https://telekomhilft.telekom.de/conversations/sonstiges/t-online-browser7-%C3%B6ffnet-sich-auf-einmal-nicht-mehr/66859f144ae73561da99501d",
+      "snippet": "Der t-online browser7 öffnet sich auf einmal nicht mehr. Ich habe nichts getan. Am Morgen ließ er sich noch ganz normal öffnen.Ich …"
+    },
+    {
+      "title": "Wie kann ich rausfinden welche T-Online-ID (55....) zu meinem T-Online ...",
+      "url": "https://telekomhilft.telekom.de/conversations/e-mail/wie-kann-ich-rausfinden-welche-t-online-id-55-zu-meinem-t-online-mail-account-geh%C3%B6rt/668914054ae73561da8a9e62",
+      "snippet": "Ich würde gerne die Nummer herausbekommen die quasi durch meinen Alias in der T-Online-Mailadresse \"verdeckt\" wird."
+    },
+    {
+      "title": "Wie komme ich an ältere mails im t-online Postfach",
+      "url": "https://telekomhilft.telekom.de/conversations/e-mail/wie-komme-ich-an-%C3%A4ltere-mails-im-t-online-postfach/66859b514ae73561da614ad4",
+      "snippet": "Wie kann ich alte mails aus meinem t-online Postfach abrufen? bei Thunderbird kann ich zurückgehen bis 23.1.13, direkt bei t-Online …"
+    },
+    {
+      "title": "Einbinden der Unterordner bzw. Archive von T - online in Outlook 2022 ...",
+      "url": "https://telekomhilft.telekom.de/conversations/e-mail/einbinden-der-unterordner-bzw-archive-von-t-online-in-outlook-2022-bzw-office-365/6688441f4ae73561da24ace5",
+      "snippet": "Sehr geehrte Damen und Herren,&nbsp;ich nutze sein kurzen einen Mac mit Office 365.Das Outlookkonto konnte ich soweit …"
+    },
+    {
+      "title": "E-Mail: So richten Sie Ihr E-Mail-Konto @t-online.de in Microsoft ...",
+      "url": "https://telekomhilft.telekom.de/conversations/telekom-hilft-news/e-mail-so-richten-sie-ihr-e-mail-konto-t-onlinede-in-microsoft-outlook-2010-oder-2013-ein/6686471d4ae73561da02319e",
+      "snippet": "E-Mail-Passwort @t-online.de Outlook 2010 Outlook 2013 E-mail-konto Privatkunden Einrichtung Geschäftskunden Erklärungen & …"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-mis7_swift_remove30_swapgapiter_rankunit_b010",
+  "slug": "jeesup-svd-safety-mis7_swift_remove30_swapgapiter_rankunit_b010",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-mis7_swift_remove30_swapgapiter_rankunit_b010",
+  "created_at": "2026-09-21T18:10:03.000Z",
+  "updated_at": "2026-09-22T00:29:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:mistralai/Mistral-7B-Instruct-v0.2",
+    "base_model:finetune:mistralai/Mistral-7B-Instruct-v0.2",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7241732096,
+  "parameters_human": "7.24B",
+  "storage_bytes": 14483991459,
+  "storage_human": "14.5 GB",
+  "base_model": "mistralai/Mistral-7B-Instruct-v0.2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "应届毕业生就业 - 知乎",
+      "url": "https://www.zhihu.com/topic/19632552/hot",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "外省二本女生建议去上海找工作吗? - 知乎",
+      "url": "https://www.zhihu.com/question/653217332",
+      "snippet": "Apr 17, 2024 · 上海人给你的答案是“不建议”。 1，没有学历。民办二本，你没有办法进个好外资。国企，特别是垄断型国企或者是国资 …"
+    },
+    {
+      "title": "求职 - 知乎",
+      "url": "https://www.zhihu.com/topic/19551771/newest",
+      "snippet": "求职，是利用自己所学的知识和技能，来向企事业单位寻求为其创造物质财富和精神财富，获取合理报酬，作为物质生活来源 ..."
+    },
+    {
+      "title": "只身一人去上海找工作有什么建议？ - 知乎",
+      "url": "https://www.zhihu.com/question/334053330",
+      "snippet": "21岁刚毕业的我想只身一人去上海找工作，现在在做心理上、攻略上的准备 1 远程找到工作后再去上海，没工作的时候，上海一个月最 …"
+    },
+    {
+      "title": "上海2025年找工作难吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/6169664190",
+      "snippet": "Dec 6, 2024 · 1、作为求职者，简历一定要漂亮一些，工作经历不要长篇大论，没人会认真阅读的，再就是照片，自认为自己长的还不 …"
+    }
+  ]
+}

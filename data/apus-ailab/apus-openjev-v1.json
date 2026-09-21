@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "apus-ailab/APUS-OpenJev-v1",
+  "slug": "apus-ailab-apus-openjev-v1",
+  "author": "apus-ailab",
+  "url": "https://huggingface.co/apus-ailab/APUS-OpenJev-v1",
+  "created_at": "2026-09-21T12:01:41.000Z",
+  "updated_at": "2026-09-22T11:50:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "decision-model",
+    "dynamic-depth",
+    "structured-output",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.5-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.5-35B-A3B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 20,
+  "downloads_30d": 17,
+  "trending_score": 20,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 43910220354,
+  "storage_human": "43.9 GB",
+  "base_model": "Qwen/Qwen3.5-4B, Qwen/Qwen3.5-9B, Qwen/Qwen3.5-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "E-Prokurimi - eKosova",
+      "url": "https://e-prokurimi.rks-gov.net/Home/",
+      "snippet": "Mirë se vini në faqen zyrtare të internetit të Prokurimit Publik të Kosovës e cila është e krijuar si Portal i Prokurimit Publik në të cilën …"
+    },
+    {
+      "title": "E-Prokurimi",
+      "url": "https://e-prokurimi.rks-gov.net/HOME/ClanakItemNew.aspx?id=680",
+      "snippet": "Faleminderit për mirëkuptimin dhe bashkëpunimin tuaj!"
+    },
+    {
+      "title": "Agjencia e Prokurimit Publik - APP",
+      "url": "https://app.gov.al/e-prokurim/",
+      "snippet": "KREU E-PROKURIM RRETH NESH LEGJISLACIONI DOKUMENTA PËR KONSULTIM NJOFTIME TRANSPARENCA TË TJERA …"
+    },
+    {
+      "title": "APP - Agjencia e Prokurimit Publik",
+      "url": "https://app.gov.al/",
+      "snippet": "SJELLJE NE VEMENDJE TE AK."
+    },
+    {
+      "title": "KRPP | Blog",
+      "url": "https://krpp.rks-gov.net/",
+      "snippet": "Më 1 dhe 2 shtator 2026, përfaqësuesit e KRPP-së, Avni Sahiti, Anëtar i Bordit, dhe Agron Ibishi, Ekspert i Lartë i Tekn... Sot, më 25 …"
+    }
+  ]
+}

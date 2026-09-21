@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "fassabilf/sea-clip-tiny-abl-cg",
+  "slug": "fassabilf-sea-clip-tiny-abl-cg",
+  "author": "fassabilf",
+  "url": "https://huggingface.co/fassabilf/sea-clip-tiny-abl-cg",
+  "created_at": "2026-09-21T16:45:52.000Z",
+  "updated_at": "2026-09-21T16:53:05.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-image-classification",
+  "library": "open_clip",
+  "languages": [
+    "en",
+    "id",
+    "jv",
+    "su",
+    "ms",
+    "th",
+    "vi",
+    "my"
+  ],
+  "tags": [
+    "open_clip",
+    "clip",
+    "multilingual",
+    "southeast-asia",
+    "zero-shot-image-classification",
+    "en",
+    "id",
+    "jv",
+    "su",
+    "ms",
+    "th",
+    "vi",
+    "my",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 184564982,
+  "storage_human": "185 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "知乎 - 有问题，就会有答案",
+      "url": "https://www.zhihu.com/",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "法语的几个特殊的字母，列出来一下 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/94366850.html",
+      "snippet": "大写：À、Â、È、É、Ê、Ë、 Î 、Ï 、Ô 、Ö、 Ù、 Û 、Ç 、Œ 、Æ、 €。 小写：à、â、è、é、ê、 î 、ï、 ô、 ö、 ù、 û 、ü、 ç、 œ …"
+    },
+    {
+      "title": "发现 - 知乎",
+      "url": "https://www.zhihu.com/explore",
+      "snippet": "Marvelous sky：16、17年开始知乎让你转码； 18、19让你赶紧从土木跑路； 20、21知乎让你别买房； 24年知乎让你买小米股票； 现 …"
+    },
+    {
+      "title": "带圈圈的序号1到30 - 百度知道",
+      "url": "https://zhidao.baidu.com/question/248361110890276644.html",
+      "snippet": "1到20的带圈数字符号为： ①、②、③、④、⑤、⑥、⑦、⑧、⑨、⑩ ⑪、⑫、⑬、⑭、⑮、⑯、⑰、⑱、⑲、⑳ 21之后的带圈数字无法直 …"
+    },
+    {
+      "title": "百度知道 - 全球领先中文互动问答平台",
+      "url": "https://zhidao.baidu.com/",
+      "snippet": "百度知道是全球领先的中文问答互动平台，每天为数亿网民答疑解惑。百度知道通过AI技术实现智能检索和智能推荐，让您的每个疑问 …"
+    }
+  ]
+}

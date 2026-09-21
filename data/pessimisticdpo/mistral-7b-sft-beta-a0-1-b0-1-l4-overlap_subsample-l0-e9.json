@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l0-e9",
+  "slug": "pessimisticdpo-mistral-7b-sft-beta-a0-1-b0-1-l4-overlap_subsample-l0-e9",
+  "author": "PessimisticDPO",
+  "url": "https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l0-e9",
+  "created_at": "2026-09-21T12:28:00.000Z",
+  "updated_at": "2026-09-21T12:28:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 167832240,
+  "storage_human": "168 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Totholz – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Totholz",
+      "snippet": "Hartholz- und Weichholzauen sind häufig durch absterbende einzelne, sonnenexponierte Bäume gekennzeichnet; sie bieten …"
+    },
+    {
+      "title": "Abgestorbene Bäume – so gehen Sie sicher und nachhaltig mit ihnen um",
+      "url": "https://rohde-baumpflege.de/abgestorbene-baeume-so-gehen-sie-sicher-und-nachhaltig-mit-ihnen-um/",
+      "snippet": "Oct 12, 2023 · Tote Bäume bieten einen idealen Lebensraum für Schädlinge und Krankheiten. Diese können sich in den …"
+    },
+    {
+      "title": "Toter Baum: Definition, Anzeichen und Handlungsbedarf",
+      "url": "https://floristikhaenni.ch/toter-baum-bedeutung/",
+      "snippet": "Mar 20, 2023 · Entdecken Sie alles Wissenswerte über tote Bäume: Von der Definition über Anzeichen und Ursachen bis hin zu …"
+    },
+    {
+      "title": "Bäume töten: Diese Methoden wirken wirklich! Der Rest ist Mythos",
+      "url": "https://www.haushaltstipps.net/baeume-toeten/",
+      "snippet": "Wenn Sie einen Baum chemisch mit Chlor, Säure oder Pestiziden wie Glyphosat vernichten wollen, Schaden Sie in jedem Falle auch …"
+    },
+    {
+      "title": "Abgestorbene Bäume am Nachbargrundstück | TREELAX Blog",
+      "url": "https://treelax.de/blogs/baumpflege-wissen/abgestorbener-baum-am-nachbargrundstueck",
+      "snippet": "Die Gefährdung durch tote oder abgestorbene Bäume auf einem angrenzenden Grundstück kann ein ernsthaftes Problem darstellen, …"
+    }
+  ]
+}

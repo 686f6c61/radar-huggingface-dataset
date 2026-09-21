@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-mis7_swift_remove40_swapgapiter_rankunit_b010",
+  "slug": "jeesup-svd-safety-mis7_swift_remove40_swapgapiter_rankunit_b010",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-mis7_swift_remove40_swapgapiter_rankunit_b010",
+  "created_at": "2026-09-21T18:37:03.000Z",
+  "updated_at": "2026-09-22T00:29:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:mistralai/Mistral-7B-Instruct-v0.2",
+    "base_model:finetune:mistralai/Mistral-7B-Instruct-v0.2",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7241732096,
+  "parameters_human": "7.24B",
+  "storage_bytes": 14483991459,
+  "storage_human": "14.5 GB",
+  "base_model": "mistralai/Mistral-7B-Instruct-v0.2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TF1 en direct live TV | TF1+",
+      "url": "https://www.tf1.fr/tf1/direct",
+      "snippet": "18 hours ago · TF1 en direct : 🔴 Retrouvez gratuitement et en direct tous les programmes, émissions et séries de TF1 sur TF1+"
+    },
+    {
+      "title": "TF1 : Replay, Direct, Vidéos en streaming et Actualités | TF1+",
+      "url": "https://www.tf1.fr/tf1",
+      "snippet": "Retrouvez vos émissions et séries TF1 préférées. Suivez vos programmes TF1 en direct et en streaming. Découvrez les vidéos et …"
+    },
+    {
+      "title": "Séries TV gratuites en streaming | TF1+",
+      "url": "https://www.tf1.fr/programmes-tv/series",
+      "snippet": "Regardez des séries gratuites en streaming sur TF1+, incluant action, comédie, romance, science-fiction et plus."
+    },
+    {
+      "title": "TMC en direct live TV | TF1+",
+      "url": "https://www.tf1.fr/tmc/direct",
+      "snippet": "TMC en direct : 🔴 Retrouvez gratuitement et en direct tous les programmes, émissions et séries de TMC sur TF1+"
+    },
+    {
+      "title": "TF1 en replay | TF1+",
+      "url": "https://www.tf1.fr/tf1/replay",
+      "snippet": "Replay TF1 Ici tout commence Beverly Hills 90210 Plus belle la vie, encore plus belle"
+    }
+  ]
+}

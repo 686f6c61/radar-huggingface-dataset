@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "3CTeam/pi05_libero_object_quantiles_best_val_ep70_phase_15k",
+  "slug": "3cteam-pi05_libero_object_quantiles_best_val_ep70_phase_15k",
+  "author": "3CTeam",
+  "url": "https://huggingface.co/3CTeam/pi05_libero_object_quantiles_best_val_ep70_phase_15k",
+  "created_at": "2026-09-21T12:44:20.000Z",
+  "updated_at": "2026-09-21T14:51:59.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "action_evidence_vla",
+    "robotics",
+    "dataset:lerobot/libero_object_image",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4175503632,
+  "parameters_human": "4.18B",
+  "storage_bytes": 58756754084,
+  "storage_human": "58.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Trade Crypto, Predict Outcomes & Earn — All in One Platform | Gemini",
+      "url": "https://www.gemini.com/",
+      "snippet": "The crypto super app for trading, predicting, and earning. Buy 90+ cryptos, trade prediction markets, and earn with staking and the …"
+    },
+    {
+      "title": "Buy & Sell Bitcoin, Ethereum and 80+ Cryptos Securely with ... - Gemini",
+      "url": "https://www.gemini.com/exchange",
+      "snippet": "Trade crypto with confidence on Gemini Exchange. Enjoy a secure, easy-to-use platform to buy, sell, and store Bitcoin, Ethereum, …"
+    },
+    {
+      "title": "Gemini | Help Center",
+      "url": "https://support.gemini.com/hc/en-us",
+      "snippet": "Apr 6, 2026 · Gemini Credit Card® Learn about applying for, using, and managing the Gemini Credit Card. Other Gemini Products …"
+    },
+    {
+      "title": "Gemini Onchain",
+      "url": "https://onchain.gemini.com/invest",
+      "snippet": "The best place to discover the world of web3 curated by Gemini."
+    },
+    {
+      "title": "Gemini Predictions – Gemini",
+      "url": "https://support.gemini.com/hc/en-us/articles/44234371543579-Gemini-Predictions",
+      "snippet": "What are Gemini Predictions?Gemini Predictions allow users to trade event contracts. Event contracts are simple yes or no …"
+    }
+  ]
+}

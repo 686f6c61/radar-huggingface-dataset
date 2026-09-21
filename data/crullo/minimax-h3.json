@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "CRullo/MiniMax-H3",
+  "slug": "crullo-minimax-h3",
+  "author": "CRullo",
+  "url": "https://huggingface.co/CRullo/MiniMax-H3",
+  "created_at": "2026-09-21T16:58:20.000Z",
+  "updated_at": "2026-09-21T16:58:21.000Z",
+  "license": "minimax-h3-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-video",
+  "library": "minimax-h3",
+  "languages": [],
+  "tags": [
+    "minimax-h3",
+    "diffusers",
+    "safetensors",
+    "text-to-video",
+    "image-to-video",
+    "image-text-to-video",
+    "video-to-video",
+    "text-to-audio-video",
+    "image-to-audio-video",
+    "image-text-to-audio-video",
+    "video-to-audio-video",
+    "audio-to-audio-video",
+    "audio-video-generation",
+    "multimodal",
+    "synchronized-audio-video",
+    "reference-to-audio-video",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 353917479700,
+  "storage_human": "353.9 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TikTok - Make Your Day",
+      "url": "https://www.tiktok.com/",
+      "snippet": "TikTok - trends start here. On a device or on the web, viewers can watch and discover millions of personalized short videos. …"
+    },
+    {
+      "title": "TikTok - Make Your Day",
+      "url": "https://www.tiktok.com/en/",
+      "snippet": "TikTok - trends start here. On a device or on the web, viewers can watch and discover millions of personalized short videos. …"
+    },
+    {
+      "title": "TikTok - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.zhiliaoapp.musically&listing=sharing_descdeter&hl=en-US",
+      "snippet": "4 days ago · Sharing your favorite TikTok content with friends is now a lot easier."
+    },
+    {
+      "title": "TikTok - Videos, Shop & LIVE - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.zhiliaoapp.musically&hl=en-US",
+      "snippet": "TikTok is the global discovery platform for videos, streaming on LIVE, shopping, and more. Our mission is to inspire creativity and …"
+    },
+    {
+      "title": "TikTok - Free download and install on Windows | Microsoft Store",
+      "url": "https://apps.microsoft.com/detail/9nh2gph4jzs4?hl=en-US&gl=US",
+      "snippet": "Whether you’re a sports fanatic, a pet enthusiast, or just looking for a laugh, there’s something for everyone on TikTok. All you have …"
+    }
+  ]
+}

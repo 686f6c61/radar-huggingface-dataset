@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Dusky-Rose-31B-GGUF",
+  "slug": "mradermacher-dusky-rose-31b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Dusky-Rose-31B-GGUF",
+  "created_at": "2026-09-21T13:54:48.000Z",
+  "updated_at": "2026-09-21T15:20:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "mergekit",
+    "merge",
+    "roleplay",
+    "storytelling",
+    "en",
+    "base_model:Cyclone-Labs/Dusky-Rose-31B",
+    "base_model:quantized:Cyclone-Labs/Dusky-Rose-31B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30697345596,
+  "parameters_human": "30.70B",
+  "storage_bytes": 213908610528,
+  "storage_human": "213.9 GB",
+  "base_model": "Cyclone-Labs/Dusky-Rose-31B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Marché des dispositifs de santé connectés : taille et prévisions à l ...",
+      "url": "https://www.gminsights.com/fr/industry-analysis/connected-healthcare-devices-market",
+      "snippet": "En outre, les progrès rapides des technologies des capteurs, de l’intelligence artificielle (IA) et de l’Internet des objets (IoT) ont …"
+    },
+    {
+      "title": "IoT santé : les objets connectés transforment la santé et la médecine ...",
+      "url": "https://bigmedia.bpifrance.fr/nos-dossiers/iot-sante-les-objets-connectes-transforment-la-sante-et-la-medecine",
+      "snippet": "Oct 28, 2025 · Le marché des objets connectés dédiés à la santé et à la médecine se devéloppe. Celui-ci a atteint 147,4 milliards de …"
+    },
+    {
+      "title": "Rapport sur la part de marché de l’Internet des objets dans les soins ...",
+      "url": "https://www.fortunebusinessinsights.com/fr/internet-of-things-iot-in-healthcare-market-102188",
+      "snippet": "L'intégration de l'intelligence artificielle avec l'Internet des objets (IoT) dans les soins de santé offre de meilleures capacités de …"
+    },
+    {
+      "title": "Le marché des objets connectés santé en chiffres",
+      "url": "https://medecine-connectee.fr/objets-connectes-sante-chiffres/",
+      "snippet": "Feb 24, 2025 · En 2022, le marché mondial des objets connectés santé était estimé à 120 milliards de dollars, et les projections pour …"
+    },
+    {
+      "title": "Objets connectés santé : usages, bénéfices et enjeux RGPD",
+      "url": "https://karmasante.com/objets-connectes-sante-2025/",
+      "snippet": "Panorama des objets connectés santé : marché, usages, bénéfices pour patients et soignants, tendances et obligations RGPD pour …"
+    }
+  ]
+}

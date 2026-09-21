@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "fassabilf/sea-clip-tiny-abl-loss-clip",
+  "slug": "fassabilf-sea-clip-tiny-abl-loss-clip",
+  "author": "fassabilf",
+  "url": "https://huggingface.co/fassabilf/sea-clip-tiny-abl-loss-clip",
+  "created_at": "2026-09-21T16:45:54.000Z",
+  "updated_at": "2026-09-21T16:53:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-image-classification",
+  "library": "open_clip",
+  "languages": [
+    "en",
+    "id",
+    "jv",
+    "su",
+    "ms",
+    "th",
+    "vi",
+    "my"
+  ],
+  "tags": [
+    "open_clip",
+    "clip",
+    "multilingual",
+    "southeast-asia",
+    "zero-shot-image-classification",
+    "en",
+    "id",
+    "jv",
+    "su",
+    "ms",
+    "th",
+    "vi",
+    "my",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 184564982,
+  "storage_human": "185 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Personalizzare le icone del desktop in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/it-it/windows/experience/personalization/customize-the-desktop-icons-in-windows",
+      "snippet": "Oct 14, 2025 · Informazioni su come personalizzare le icone del desktop predefinite in Windows, modificarne le dimensioni in base …"
+    },
+    {
+      "title": "Come mostrare o nascondere le icone del desktop in Windows 11",
+      "url": "https://morethantech.it/pubblicazioni/721_come-mostrare-o-nascondere-le-icone-del-desktop-in-windows-11",
+      "snippet": "Aug 10, 2022 · È sempre possibile mostrare o nascondere le icone del desktop, ed ecco quattro modi per farlo su Windows 11."
+    },
+    {
+      "title": "Come Mostrare le Icone sul Desktop in Windows 10 e 11",
+      "url": "https://www.wikihow.it/Mostrare-le-icone-sul-desktop-di-Windows",
+      "snippet": "Per mostrare tutte le icone del desktop in Windows 11 e 10, fai semplicemente clic con il tasto destro del mouse su un'area vuota del …"
+    },
+    {
+      "title": "Come mostrare o nascondere le icone del desktop - Windows 11",
+      "url": "https://support.lenovo.com/it/it/solutions/ht513400",
+      "snippet": "Questo articolo spiega come mostrare o nascondere icone come Questo PC o Cestino sul desktop di Windows 11."
+    },
+    {
+      "title": "[Windows 11/10] Impostazioni delle icone sul Desktop",
+      "url": "https://www.asus.com/it/support/faq/1044722/",
+      "snippet": "Sep 1, 2022 · Se desideri mostrare o nascondere le icone del desktop, fai clic con il pulsante destro del mouse in un punto qualsiasi …"
+    }
+  ]
+}

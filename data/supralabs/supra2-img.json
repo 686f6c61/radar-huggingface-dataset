@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "SupraLabs/Supra2-IMG",
+  "slug": "supralabs-supra2-img",
+  "author": "SupraLabs",
+  "url": "https://huggingface.co/SupraLabs/Supra2-IMG",
+  "created_at": "2026-09-21T14:05:35.000Z",
+  "updated_at": "2026-09-21T16:41:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "SupraDiT",
+    "feature-extraction",
+    "small",
+    "supra",
+    "image",
+    "flux",
+    "img",
+    "t2i",
+    "from scratch",
+    "text-to-image",
+    "custom_code",
+    "en",
+    "dataset:LucasFang/FLUX-Reason-6M",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 75,
+  "downloads_30d": 0,
+  "trending_score": 74,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 416651529,
+  "storage_human": "417 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ICPE '26: Proceedings of the 17th ACM/SPEC International Conference …",
+      "url": "https://www.sigmetrics.org/opentoc/icpe26toc.html",
+      "snippet": "In this talk, I will provide an overview of GPU-centric communication within and across compute nodes, highlighting vendor …"
+    },
+    {
+      "title": "2026 International Conference on Power, Electrical and Energy ...",
+      "url": "https://www.confsmanual.com/icpeee/Submission",
+      "snippet": "ICPEEE 2026 will bring together academic elites and industry experts from around the world to explore cutting-edge technologies and …"
+    },
+    {
+      "title": "International Conference on International Conference on Polymers in ...",
+      "url": "https://conferencenext.com/event/100964588",
+      "snippet": "Scheduled on 16 November 2026 at Zurich, Switzerland, the conference convenes scholars, academicians, researchers, and industry …"
+    },
+    {
+      "title": "2026 International Conference on Power, Electrical and Energy ...",
+      "url": "https://www.confsmanual.com/icpeee/Committees",
+      "snippet": "ICPEEE 2026 will bring together academic elites and industry experts from around the world to explore cutting-edge technologies and …"
+    },
+    {
+      "title": "Program: ICPE 2026",
+      "url": "https://icpe2026.spec.org/program/",
+      "snippet": "Predicting if Executing Applications are Near Completion."
+    }
+  ]
+}

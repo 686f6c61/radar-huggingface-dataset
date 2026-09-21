@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "sairahul1/eptwts-x-posts-gguf",
+  "slug": "sairahul1-eptwts-x-posts-gguf",
+  "author": "sairahul1",
+  "url": "https://huggingface.co/sairahul1/eptwts-x-posts-gguf",
+  "created_at": "2026-09-21T14:04:12.000Z",
+  "updated_at": "2026-09-21T14:32:00.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "eptwts",
+    "ollama",
+    "qlora",
+    "qwen2.5",
+    "text-generation",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:quantized:Qwen/Qwen2.5-3B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 1929902560,
+  "storage_human": "1.9 GB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "llll - UNAPOLOGETICALLY (Official Music Video) - YouTube",
+      "url": "https://m.youtube.com/watch?v=7pEPUKKJ110",
+      "snippet": "Download/stream 'UNAPOLOGETICALLY' here: https://lnk.to/UnapologeticallyFollow llll: Website: http://llllfour.be/Instagram: …"
+    },
+    {
+      "title": "LLLL - YouTube Music",
+      "url": "https://music.youtube.com/channel/UCZg5VcZgyKHX3oRAW6N5T9g",
+      "snippet": "Listen to music from LLLL on YouTube Music - a dedicated music app with official songs, music videos, remixes, covers, and more."
+    },
+    {
+      "title": "Llllll - YouTube",
+      "url": "https://m.youtube.com/watch?v=lN6mDiQB6Iw",
+      "snippet": "Sep 8, 2017 · Discover unique content on YouTube channel Llllll, featuring videos that captivate and entertain viewers with creative …"
+    },
+    {
+      "title": "Stream LLLL music | Listen to songs, albums, playlists for free on ...",
+      "url": "https://soundcloud.com/llllofficial",
+      "snippet": "Listen to LLLL | SoundCloud is an audio platform that lets you listen to what you love and share the sounds you create."
+    },
+    {
+      "title": "llllllll - YouTube Music",
+      "url": "https://music.youtube.com/channel/UCvZ0T5u56WvxA6CFgelWZRg",
+      "snippet": "Listen to music from llllllll on YouTube Music - a dedicated music app with official songs, music videos, remixes, covers, and more."
+    }
+  ]
+}

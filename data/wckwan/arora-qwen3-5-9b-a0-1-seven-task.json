@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "wckwan/arora-qwen3.5-9b-a0.1-seven-task",
+  "slug": "wckwan-arora-qwen3-5-9b-a0-1-seven-task",
+  "author": "wckwan",
+  "url": "https://huggingface.co/wckwan/arora-qwen3.5-9b-a0.1-seven-task",
+  "created_at": "2026-09-21T19:23:38.000Z",
+  "updated_at": "2026-09-21T19:29:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "reasoning",
+    "rl",
+    "efficient-reasoning",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 37659338741,
+  "storage_human": "37.7 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GLS - Sendungsverfolgung",
+      "url": "https://www.gls-pakete.de/reach-sendungsverfolgung",
+      "snippet": "Track & Trace-System für deine Pakete"
+    },
+    {
+      "title": "Parcel Tracking | GLS Parcel Service",
+      "url": "https://gls-group.com/GROUP/en/parcel-tracking/",
+      "snippet": "Track your parcel online at any time: All you have to do is simply enter one or more parcel numbers."
+    },
+    {
+      "title": "Sendungsverfolgung | GLS Austria | GLS-Paketdienst",
+      "url": "https://gls-group.com/AT/de/paket-verfolgen",
+      "snippet": "Mit der online Paketverfolgung von GLS jederzeit komfortabel online Ihre Sendung verfolgen: Einfach Sendungsnummer eingeben …"
+    },
+    {
+      "title": "Sendungsverfolgung für GLS-Pakete",
+      "url": "https://www.paketda.de/paketverfolgung.php?carrier=gls",
+      "snippet": "Die original GLS-Sendungsverfolgung inklusive Link zum GLS-Livetracking mit Kartenansicht. Verfolgen Sie GLS-Pakete hier."
+    },
+    {
+      "title": "Paketempfang und Paketversand für Privatkunden | GLS.",
+      "url": "https://www.gls-pakete.de/",
+      "snippet": "Egal, ob du ein Paket an Freunde oder Familie verschickst oder geschäftliche Lieferungen versendest – mit unserer …"
+    }
+  ]
+}

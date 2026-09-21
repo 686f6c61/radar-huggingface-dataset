@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "keystats/ocr_dict_klm",
+  "slug": "keystats-ocr_dict_klm",
+  "author": "keystats",
+  "url": "https://huggingface.co/keystats/ocr_dict_klm",
+  "created_at": "2026-09-21T14:09:38.000Z",
+  "updated_at": "2026-09-21T14:09:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3517959,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Get directions and show routes in Google Maps",
+      "url": "https://support.google.com/maps/answer/144339?hl=en-GB&co=GENIE.Platform%3DDesktop",
+      "snippet": "You can get directions for driving, public transport, walking, ride sharing, cycling, flight or motorcycle on Google Maps. If there are …"
+    },
+    {
+      "title": "Google MapにGeminiが搭載されていない。",
+      "url": "https://support.google.com/maps/thread/440755891/google-map%E3%81%ABgemini%E3%81%8C%E6%90%AD%E8%BC%89%E3%81%95%E3%82%8C%E3%81%A6%E3%81%84%E3%81%AA%E3%81%84%E3%80%82?hl=ja",
+      "snippet": "Jun 11, 2026 · タイミング的に Ask Maps のことだと思いますが、こちらは一斉ローンチではないのでまだ利用できないのであれば …"
+    },
+    {
+      "title": "现在还有哪些可以看世界街景地图的网站？ - 知乎",
+      "url": "https://www.zhihu.com/question/334017110",
+      "snippet": "通过会员系统登录，小黄人直接拖到地图即可，而且新系统支持包括北京故宫，美国白宫等全球绝大部分景区街景的访问！！ 包括对 …"
+    },
+    {
+      "title": "Waze (and Google Maps) flipping map orientation. Please help!",
+      "url": "https://www.reddit.com/r/waze/comments/8dywd6/waze_and_google_maps_flipping_map_orientation/",
+      "snippet": "Apr 21, 2018 · For several years, I have avoided using Google maps, partly because when I’m driving, the map would rotate …"
+    },
+    {
+      "title": "Any way to disable Google maps on CarPlay? : r/CarPlay - Reddit",
+      "url": "https://www.reddit.com/r/CarPlay/comments/9juf2f/any_way_to_disable_google_maps_on_carplay/",
+      "snippet": "Sep 29, 2018 · With the update for Google maps, I'm being forced to use it through CarPlay. I need to be able to use it on my phone …"
+    }
+  ]
+}

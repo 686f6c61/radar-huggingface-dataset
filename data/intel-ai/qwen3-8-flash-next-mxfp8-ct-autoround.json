@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "intel-ai/Qwen3.8-Flash-Next-MXFP8-CT-AutoRound",
+  "slug": "intel-ai-qwen3-8-flash-next-mxfp8-ct-autoround",
+  "author": "intel-ai",
+  "url": "https://huggingface.co/intel-ai/Qwen3.8-Flash-Next-MXFP8-CT-AutoRound",
+  "created_at": "2026-09-21T12:42:28.000Z",
+  "updated_at": "2026-09-21T13:40:29.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen4_exp",
+    "image-text-to-text",
+    "quantized",
+    "mxfp8",
+    "compressed-tensors",
+    "auto-round",
+    "vllm",
+    "moe",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-Flash-Next",
+    "base_model:quantized:Qwen/Qwen3.8-Flash-Next",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 179999981459,
+  "parameters_human": "180.00B",
+  "storage_bytes": 240419998885,
+  "storage_human": "240.4 GB",
+  "base_model": "Qwen/Qwen3.8-Flash-Next",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Download Intel Drivers and Software",
+      "url": "https://www.intel.fr/content/www/fr/fr/download-center/home.html",
+      "snippet": "Download new and previously released drivers including support software, bios, utilities, firmware and patches for Intel products."
+    },
+    {
+      "title": "Intel Inside : conçu pour l'IA",
+      "url": "https://www.intel.fr/content/www/fr/fr/homepage.html",
+      "snippet": "Innovation Intel nommée l'une des entreprises les plus innovantes des États-Unis Le magazine Fortune salue les innovations de …"
+    },
+    {
+      "title": "Intel Inside - Built for AI",
+      "url": "https://www.intel.com/content/www/us/en/homepage.html",
+      "snippet": "Intel named one of America's Most Innovative Companies Fortune recognizes Intel's industry-leading innovations that are advancing …"
+    },
+    {
+      "title": "Intel — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Intel",
+      "snippet": "Intel Corporation est une entreprise américaine fondée en 1968 par Gordon Moore, Robert Noyce et Andrew Grove. Elle est le …"
+    },
+    {
+      "title": "List of Intel processors - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/List_of_Intel_processors",
+      "snippet": "This list of Intel processors by generation attempts to present all of Intel 's processors from the 4-bit 4004 (1971) to the present high …"
+    }
+  ]
+}

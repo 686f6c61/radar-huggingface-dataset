@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "mradermacher/ArduinoLLM-7B-GGUF",
+  "slug": "mradermacher-arduinollm-7b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/ArduinoLLM-7B-GGUF",
+  "created_at": "2026-09-21T14:28:40.000Z",
+  "updated_at": "2026-09-21T14:39:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "arduino",
+    "esp32",
+    "raspberry-pi",
+    "micropython",
+    "circuitpython",
+    "embedded-systems",
+    "code-generation",
+    "lora",
+    "continued-pretraining",
+    "en",
+    "base_model:EzioDevio/ArduinoLLM-7B",
+    "base_model:adapter:EzioDevio/ArduinoLLM-7B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 68146896512,
+  "storage_human": "68.1 GB",
+  "base_model": "EzioDevio/ArduinoLLM-7B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sign in - Zoom",
+      "url": "https://zoom.us/signin",
+      "snippet": "Sign in to your Zoom account to join a meeting, update your profile, change your settings, and more!"
+    },
+    {
+      "title": "Oturum Aç | Zoom",
+      "url": "https://zoom.us/tr/signin",
+      "snippet": "Bir toplantıya katılmak, profilinizi güncellemek, ayarlarınızı değiştirmek ve dahası için Zoom hesabınıza giriş yapın!"
+    },
+    {
+      "title": "Zoom",
+      "url": "https://app.zoom.us/wc",
+      "snippet": "Zoom is a cloud-based platform for video conferencing, online meetings, and group chat, offering secure and HD-quality …"
+    },
+    {
+      "title": "One platform to connect | Zoom",
+      "url": "https://www.zoom.com/",
+      "snippet": "Modernize workflows with Zoom's trusted collaboration tools: including video meetings, Zoom Chat, VoIP phone, webinars, …"
+    },
+    {
+      "title": "Zoom: Bağlantı kurmak için tek bir platform",
+      "url": "https://www.zoom.com/tr",
+      "snippet": "Zoom’un video toplantıları, ekip sohbeti, VoIP telefonu, web seminerleri, beyaz tahta, iletişim merkezi ve etkinlikler gibi güvenilir iş …"
+    }
+  ]
+}

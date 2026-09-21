@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "gggff123/lazyGPT",
+  "slug": "gggff123-lazygpt",
+  "author": "gggff123",
+  "url": "https://huggingface.co/gggff123/lazyGPT",
+  "created_at": "2026-09-21T12:55:56.000Z",
+  "updated_at": "2026-09-21T12:56:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "llama",
+    "llama.cpp",
+    "llama-cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 134515584,
+  "parameters_human": "134.5M",
+  "storage_bytes": 105455168,
+  "storage_human": "105 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Uszi - YouTube",
+      "url": "https://www.youtube.com/channel/UCwSv086EAByBY-Z7y-QR_cQ",
+      "snippet": "Poland must defend Ukraine! New security plan revealed. And… what next after the war? Uszi 51K views • 9 months ago 14:49"
+    },
+    {
+      "title": "uszi - YouTube",
+      "url": "https://www.youtube.com/channel/UCsuOFs8KL2WxTpJncsgf5FQ",
+      "snippet": "a daj pan subika 😉👍 dawajta mnie skina https://steamcommunity.com/tradeoffer/new/?partner=843519283&token=GW8bRclv A tu pitos …"
+    },
+    {
+      "title": "Start - Uszi",
+      "url": "https://uszi.pl/",
+      "snippet": "blished fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem …"
+    },
+    {
+      "title": "Uszi (@usziofficial) / X",
+      "url": "https://x.com/usziofficial",
+      "snippet": "🏢 Ośrodek recepcyjny dla migrantów w Eisenhüttenstadt – tuż pod polską granicą? 🚧🇵🇱 Cóż za przypadkowa lokalizacja! 😏 Bo przecież …"
+    },
+    {
+      "title": "Kim jest Uszi: Poznaj prawdę o jednym z najbardziej kontrowersyjnych ...",
+      "url": "https://tarnowfoto.pl/kim-jest-uszi-poznaj-prawde-o-jednym-z-najbardziej-kontrowersyjnych-youtuberow",
+      "snippet": "Oct 28, 2024 · Uszi to jeden z najbardziej kontrowersyjnych polskich YouTuberów. Zobacz kim jest twórca, poznaj jego działalność, …"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "hyuckpa03/voicekeeper-klue-bert",
+  "slug": "hyuckpa03-voicekeeper-klue-bert",
+  "author": "hyuckpa03",
+  "url": "https://huggingface.co/hyuckpa03/voicekeeper-klue-bert",
+  "created_at": "2026-09-21T16:25:36.000Z",
+  "updated_at": "2026-09-21T16:25:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "onnx",
+    "bert",
+    "voice-phishing",
+    "korean",
+    "klue",
+    "int8",
+    "voicekeeper",
+    "text-classification",
+    "ko",
+    "base_model:klue/bert-base",
+    "base_model:quantized:klue/bert-base",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 111436768,
+  "storage_human": "111 MB",
+  "base_model": "klue/bert-base",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Explore and share videos, music, and more on YouTube, the leading platform for online video streaming and sharing."
+    },
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/youtube",
+      "snippet": "Knew late-night TV would catch up with me #youtubepartner try this prompt with your own YT Shorts Rachel Samples and YouTube …"
+    },
+    {
+      "title": "YT Industries | Mountain Bikes | Live Uncaged",
+      "url": "https://www.yt-industries.com/",
+      "snippet": "Young Talent is what YT stands for. Our direct sales approach maximizes your budget, bringing your dream Enduro, Trail, or …"
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed/yt+",
+      "snippet": "AboutPressCopyrightContact usCreatorsAdvertiseDevelopersTermsPrivacyPolicy & SafetyHow YouTube worksTest new …"
+    },
+    {
+      "title": "YouTube - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/YouTube",
+      "snippet": "YouTube was founded by Chad Hurley, Jawed Karim, and Steve Chen. The three were early employees at PayPal and had become …"
+    }
+  ]
+}

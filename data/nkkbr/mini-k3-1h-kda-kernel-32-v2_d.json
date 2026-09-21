@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "nkkbr/Mini-K3-1H-kda-kernel-32-v2_D",
+  "slug": "nkkbr-mini-k3-1h-kda-kernel-32-v2_d",
+  "author": "nkkbr",
+  "url": "https://huggingface.co/nkkbr/Mini-K3-1H-kda-kernel-32-v2_D",
+  "created_at": "2026-09-21T17:59:15.000Z",
+  "updated_at": "2026-09-21T23:44:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "mini_k3",
+    "kimi-k3",
+    "pretraining",
+    "mixture-of-experts",
+    "linear-attention",
+    "architecture-ablation",
+    "text-generation",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1017941740,
+  "parameters_human": "1.02B",
+  "storage_bytes": 6119486078,
+  "storage_human": "6.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Articles about Rossendale+Interiors+pricing on Dwell.com",
+      "url": "https://www.dwell.com/discover/Rossendale%2BInteriors%2Bpricing",
+      "snippet": "For the non-minimalists among us, these playful interiors have been painted with every color on the palette."
+    },
+    {
+      "title": "Effective Home Improvement in Lancashire | Rossendale Interiors",
+      "url": "https://www.rossendaleinteriors.com/",
+      "snippet": "From our free planning and design service to the fitting of the last tile, our high-quality products are all realistically priced. We are …"
+    },
+    {
+      "title": "Rossendale Interiors Reviews | Read Customer Service Reviews of ...",
+      "url": "https://www.trustpilot.com/review/rossendaleinteriors.com",
+      "snippet": "We are backed by one of the UK's leading kitchen, bedroom, and bathroom manufacturers, Rossendale Interiors PLC who have won …"
+    },
+    {
+      "title": "7,000+ Rossendale Interiors Pricing jobs in United States",
+      "url": "https://www.linkedin.com/jobs/rossendale-interiors-pricing-jobs",
+      "snippet": "Today's top 7,000+ Rossendale Interiors Pricing jobs in United States. Leverage your professional network, and get hired. New …"
+    },
+    {
+      "title": "Rossendale Interiors offers 20% off in-store and price-match promise ...",
+      "url": "https://www.thefreelibrary.com/Rossendale+Interiors+offers+20%25+off+in-store+and+price-match+promise%3b...-a0776917951",
+      "snippet": "Dec 20, 2023 · Rossendale Interiors is offering a huge saving of 20% off its full range in-store -and it's also pledging to match or beat …"
+    }
+  ]
+}

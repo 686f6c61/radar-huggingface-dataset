@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "distil-labs/distil-qwen3.5-0.8b-invoice-triage-gguf",
+  "slug": "distil-labs-distil-qwen3-5-0-8b-invoice-triage-gguf",
+  "author": "distil-labs",
+  "url": "https://huggingface.co/distil-labs/distil-qwen3.5-0.8b-invoice-triage-gguf",
+  "created_at": "2026-09-21T18:42:28.000Z",
+  "updated_at": "2026-09-21T18:42:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "classification",
+    "email-triage",
+    "accounts-payable",
+    "distillation",
+    "slm",
+    "distil-labs",
+    "qwen3.5",
+    "llama.cpp",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:quantized:Qwen/Qwen3.5-0.8B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 752393024,
+  "parameters_human": "752.4M",
+  "storage_bytes": 811843040,
+  "storage_human": "812 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pronews.gr - Ειδήσεις με αξία από την Ελλάδα και τον Κόσμο",
+      "url": "https://www.pronews.gr/",
+      "snippet": "Η κυβέρνηση ζητάει από τους πολίτες να γίνουν «Κλουζό» και να βρίσκουν ποια ιατρεία είναι νόμιμα! Έκοψαν την «γέφυρα» για …"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.gr/index.html",
+      "snippet": "Search the world's information, including webpages, images, videos and more. Google has many special features to help you find …"
+    },
+    {
+      "title": "Google",
+      "url": "https://www.google.com/?hl=el-gr",
+      "snippet": "Το Google προσφέρεται σε: English Διαφήμιση Σχετικά με τη Google Google.com in English"
+    },
+    {
+      "title": "Ειδήσεις – Pronews.gr",
+      "url": "https://www.pronews.gr/news/",
+      "snippet": "PRONEWS.GR / Διεθνης Πολιτικη Σαρωτική νίκη του Β.Πούτιν & στην Δούμα: Το αξιοσημείωτο των φετινών εκλογών που δεν έχει …"
+    },
+    {
+      "title": "Ειδήσεις Google",
+      "url": "https://news.google.com/home?hl=el&ceid=GR:el",
+      "snippet": "Ολοκληρωμένη ενημερωμένη κάλυψη ειδήσεων, συγκεντρωμένων από πηγές από όλο τον κόσμο από τις Ειδήσεις Google."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Maoseavik/agri-lora-output",
+  "slug": "maoseavik-agri-lora-output",
+  "author": "Maoseavik",
+  "url": "https://huggingface.co/Maoseavik/agri-lora-output",
+  "created_at": "2026-09-21T17:54:26.000Z",
+  "updated_at": "2026-09-21T17:54:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "trl",
+    "sft",
+    "generated_from_trainer",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 28890268,
+  "storage_human": "29 MB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "酒石酸美托洛尔片 吃多少有生命危险？吃多了感受如何，有多 ...",
+      "url": "https://zhidao.baidu.com/question/79002497.html",
+      "snippet": "Dec 14, 2008 · 酒石酸美托洛尔片吃最大剂量的5～8倍就有生命危险了；感受： 心血管系统：心率减慢、血压降低、心衰加重，神经 …"
+    },
+    {
+      "title": "冠心病可以同时服单硝酸异山梨酯片，酒石酸美托洛尔片，阿 ...",
+      "url": "https://zhidao.baidu.com/question/244544070.html",
+      "snippet": "Mar 28, 2011 · 患者信息：女51岁辽宁葫芦岛病情描述(发病时间、主要症状等)：胸闷，没劲想得到怎样的帮助：冠心病可以同时服单 …"
+    },
+    {
+      "title": "明天入职体检，吃一片酒石酸美托洛尔片”能降低血压，延缓 ...",
+      "url": "https://zhidao.baidu.com/question/468435248.html",
+      "snippet": "Aug 24, 2012 · 明天入职体检，吃一片酒石酸美托洛尔片”能降低血压，延缓心跳速度吗？还有它会影响体检的其他结果吗？可以降心 …"
+    },
+    {
+      "title": "复方丹参片、硝笨地平缓释片、酒石酸美托洛尔片可以一起 ...",
+      "url": "https://zhidao.baidu.com/question/249915484.html",
+      "snippet": "Apr 8, 2011 · 硝苯地平是CCB类药物，酒石酸美托洛尔是β受体阻滞剂类药物，两者联合应用治疗高血压有1+1>2的疗效，可以一起服 …"
+    },
+    {
+      "title": "酒石酸美托洛尔片吃多长时间就不能停了_百度知道",
+      "url": "https://zhidao.baidu.com/question/1949011432486228508.html",
+      "snippet": "Jan 31, 2016 · 酒石酸美托洛尔就是倍他乐克。 倍他乐克是控制心室率，治疗早搏、心动过速、高血压、心功能不全的常用药物。 如果 …"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "MingZwhy/Qwen3-4B-W2.79-QAD",
+  "slug": "mingzwhy-qwen3-4b-w2-79-qad",
+  "author": "MingZwhy",
+  "url": "https://huggingface.co/MingZwhy/Qwen3-4B-W2.79-QAD",
+  "created_at": "2026-09-21T17:24:46.000Z",
+  "updated_at": "2026-09-21T17:26:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "qaopd",
+    "quantization",
+    "quantization-aware-training",
+    "conversational",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:finetune:Qwen/Qwen3-4B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 196096,
+  "parameters_human": "196096",
+  "storage_bytes": 8056404646,
+  "storage_human": "8.1 GB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Achat voiture occasion à RONCQ 59 - RENAULT | RONCQ",
+      "url": "https://www.renault-roncq.fr/occasion-fr-fr.htm",
+      "snippet": "Achetez votre voiture d'occasion parmi nos modèles en stock dans votre garage Renault certifié. Votre Concession à RONCQ."
+    },
+    {
+      "title": "Voitures d'occasion de notre concession RENAULT Roncq",
+      "url": "https://www.autosphere.fr/concession-renault-roncq-ren006/voiture-occasion.html",
+      "snippet": "Découvrez toutes nos voitures d'occasion disponibles dans votre concession RENAULT Roncq. Nos véhicules sont révisés, garantis …"
+    },
+    {
+      "title": "Voitures d'occasion à RENAULT roncq - renew",
+      "url": "https://fr.renew.auto/achat-vehicules-occasions.html?dwsShortName=roncq",
+      "snippet": "RENAULT roncq 71 véhicules d'occasion en vente trier par renew gold garantie 12 mois"
+    },
+    {
+      "title": "Occasions en vente sur RONCQ - RENAULT | RONCQ",
+      "url": "https://www.renault-roncq.fr/la-selection-du-mois-fr-fr.htm",
+      "snippet": "RENAULT | RONCQ, prix intéressants sur les occasions en vente sur 53 Rue du Dronckaert. Large choix et les dernières en stock."
+    },
+    {
+      "title": "RENAULT RONCQ - GROUPE AUTOSPHERE - 59223 RONCQ - La …",
+      "url": "https://pros.lacentrale.fr/C039342/",
+      "snippet": "Voir les véhicules d'occasion à RONCQ chez RENAULT RONCQ - GROUPE AUTOSPHERE - Un large choix de véhicules disponibles."
+    }
+  ]
+}

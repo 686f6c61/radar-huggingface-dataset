@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "mradermacher/luthor-8b-i1-GGUF",
+  "slug": "mradermacher-luthor-8b-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/luthor-8b-i1-GGUF",
+  "created_at": "2026-09-21T16:48:48.000Z",
+  "updated_at": "2026-09-21T17:42:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "agent",
+    "tool-use",
+    "function-calling",
+    "qlora",
+    "code",
+    "en",
+    "base_model:IAMIbrahim/luthor-8b",
+    "base_model:quantized:IAMIbrahim/luthor-8b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 96371574656,
+  "storage_human": "96.4 GB",
+  "base_model": "IAMIbrahim/luthor-8b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "[PLUGIN] SKELOT - Optimized Instanced SkeletalMesh Rendering",
+      "url": "https://forums.unrealengine.com/t/plugin-skelot-optimized-instanced-skeletalmesh-rendering/627358",
+      "snippet": "Aug 12, 2022 · @UPO33 I love your work? Is the Plugin ready for download? I am currently working on an RTS. And I would like to …"
+    },
+    {
+      "title": "How to solve [Warning Imported bone transform is different from ...",
+      "url": "https://forums.unrealengine.com/t/how-to-solve-warning-imported-bone-transform-is-different-from-original-error/295577",
+      "snippet": "Oct 8, 2014 · Hi, I’ve been trying to fix this problem. I use maya for rigging and animation. The problem is when I import the skeletal …"
+    },
+    {
+      "title": "为什么Skeleton Key被翻译为万能钥匙？ - 知乎",
+      "url": "https://www.zhihu.com/question/30247136",
+      "snippet": "你以为Skeleton key是什么意思？骨架钥匙？ 这个说法是从17-18世纪传下来的 叫Skeleton Key是因为这类钥匙仅有最基本的骨架结 …"
+    },
+    {
+      "title": "桂凯 - 知乎",
+      "url": "https://www.zhihu.com/people/exos_skeleton",
+      "snippet": "Apr 11, 2024 · 题主善于思考，只是对控制的理解较为直观，对控制器的稳定认识不够。 设想极端情况，动力学模型的精度是0，也就 …"
+    },
+    {
+      "title": "How can I attach a static mesh to a bone with animation?",
+      "url": "https://forums.unrealengine.com/t/how-can-i-attach-a-static-mesh-to-a-bone-with-animation/290419",
+      "snippet": "Aug 8, 2014 · Hello All Gladly, after a whole day of pain, I managed to set up all of my animations that are blended together. …"
+    }
+  ]
+}

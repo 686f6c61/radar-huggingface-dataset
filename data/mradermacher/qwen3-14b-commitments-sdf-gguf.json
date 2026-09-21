@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "mradermacher/qwen3-14b-commitments-sdf-GGUF",
+  "slug": "mradermacher-qwen3-14b-commitments-sdf-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/qwen3-14b-commitments-sdf-GGUF",
+  "created_at": "2026-09-21T14:03:21.000Z",
+  "updated_at": "2026-09-21T14:18:33.000Z",
+  "license": "research-only",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "synthetic-document-finetuning",
+    "self-authored-character",
+    "model-welfare",
+    "research",
+    "not-for-deployment",
+    "en",
+    "base_model:joshycodes/qwen3-14b-commitments-sdf",
+    "base_model:quantized:joshycodes/qwen3-14b-commitments-sdf",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14768307200,
+  "parameters_human": "14.77B",
+  "storage_bytes": 101987588928,
+  "storage_human": "102.0 GB",
+  "base_model": "joshycodes/qwen3-14b-commitments-sdf",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Głośny wentylator zasilacza. - Chłodzenie, obudowy, zasilacze i ...",
+      "url": "https://forum.pclab.pl/topic/1184952-g%C5%82o%C5%9Bny-wentylator-zasilacza/",
+      "snippet": "Jan 2, 2017 · Dzisiaj wziąłem się za próbę wyciszenia PC, aby można go było używać do oglądanie filmów na TV bez słuchawek (w …"
+    },
+    {
+      "title": "Czy na płytach z biosem AMI UEFI można wgrać SLIC?",
+      "url": "https://forum.pclab.pl/topic/761784-Czy-na-p%C5%82ytach-z-biosem-AMI-UEFI-mo%C5%BCna-wgra%C4%87-SLIC/",
+      "snippet": "Jan 22, 2012 · W tym dziale temat pasuje najbardziej, ale jeśli mod znajdzie bardziej odpowiednie miejsce proszę o przeniesienie. …"
+    }
+  ]
+}

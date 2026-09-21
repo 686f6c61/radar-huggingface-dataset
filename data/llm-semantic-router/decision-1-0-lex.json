@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "llm-semantic-router/Decision-1.0-Lex",
+  "slug": "llm-semantic-router-decision-1-0-lex",
+  "author": "llm-semantic-router",
+  "url": "https://huggingface.co/llm-semantic-router/Decision-1.0-Lex",
+  "created_at": "2026-09-21T13:53:42.000Z",
+  "updated_at": "2026-09-22T02:23:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "decision-making",
+    "text-classification",
+    "ordinal-regression",
+    "fine-tuned",
+    "en",
+    "base_model:llm-semantic-router/Decision-1.0-Kai",
+    "base_model:finetune:llm-semantic-router/Decision-1.0-Kai",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 3,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2326874727,
+  "storage_human": "2.3 GB",
+  "base_model": "llm-semantic-router/Decision-1.0-Kai",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Large language model - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Large_language_model",
+      "snippet": "An LLM is given some examples where the \"assistant\" verbally breaks down the thought process before arriving at an answer. The …"
+    },
+    {
+      "title": "Introduction to Large Language Model (LLM) - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/artificial-intelligence/large-language-model-llm/",
+      "snippet": "5 days ago · Gemini 3.1 Pro (Google DeepMind): Multimodal LLM capable of processing text, images, audio, video and documents. …"
+    },
+    {
+      "title": "Большая языковая модель — Википедия",
+      "url": "https://ru.wikipedia.org/wiki/%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F_%D1%8F%D0%B7%D1%8B%D0%BA%D0%BE%D0%B2%D0%B0%D1%8F_%D0%BC%D0%BE%D0%B4%D0%B5%D0%BB%D1%8C",
+      "snippet": "Безопасность больших языковых моделей (LLM) представляет собой комплексную область исследований, посвященную …"
+    },
+    {
+      "title": "Grand modèle de langage — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Grand_mod%C3%A8le_de_langage",
+      "snippet": "Les LLM sont des fonctions mathématiques dont l'entrée et la sortie sont des listes de nombres. Pour que ceux-ci fonctionnent avec …"
+    },
+    {
+      "title": "Large Language Model (LLM) Tutorial - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/deep-learning/large-language-model-llm-tutorial/",
+      "snippet": "2 days ago · LLM agents extend language models beyond text generation by enabling them to use tools, access external information, …"
+    }
+  ]
+}

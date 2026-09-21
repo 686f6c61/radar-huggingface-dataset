@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "yuriilaba/ucu-wsd-generation_stochastic_pt-true_seed-123",
+  "slug": "yuriilaba-ucu-wsd-generation_stochastic_pt-true_seed-123",
+  "author": "yuriilaba",
+  "url": "https://huggingface.co/yuriilaba/ucu-wsd-generation_stochastic_pt-true_seed-123",
+  "created_at": "2026-09-21T14:12:39.000Z",
+  "updated_at": "2026-09-21T14:14:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "xlm-roberta",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278043648,
+  "parameters_human": "278.0M",
+  "storage_bytes": 1129280083,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "METEO ROUBAIX par Météo-France - Prévisions Météo gratuites pour ...",
+      "url": "https://meteofrance.com/previsions-meteo-france/roubaix/59100",
+      "snippet": "Jan 9, 2026 · METEO FRANCE - Retrouvez les prévisions METEO ROUBAIX de Météo-France pour aujourd’hui, demain et jusqu’à …"
+    },
+    {
+      "title": "Météo Roubaix - meteoblue",
+      "url": "https://www.meteoblue.com/fr/meteo/semaine/roubaix_france_6438452",
+      "snippet": "Les prévisions météo professionnelles pour Roubaix. Radar de précipitations, images satellite HD et les alertes météo actuelles, la …"
+    },
+    {
+      "title": "Meteo Roubaix (59100) - Nord : Prévisions Meteo GRATUITE à 15 jours ...",
+      "url": "https://www.lachainemeteo.com/meteo-france/ville-11818/previsions-meteo-roubaix-aujourdhui",
+      "snippet": "Meteo Roubaix (59100) - Nord ☼ Longitude : 3.17 Latitude : 50.69 Altitude : 33m ☀ C’est une région née de la fusion du Nord-Pas-de …"
+    },
+    {
+      "title": "Météo Roubaix aujourd'hui (Nord) - Météo heure par heure gratuite ...",
+      "url": "https://www.meteocity.com/france/roubaix-v2982681",
+      "snippet": "15 hours ago · Découvrez la météo à Roubaix aujourd'hui avec des prévisions heure par heure sur Météocity. Restez informé en …"
+    },
+    {
+      "title": "Météo Roubaix Aujourd'hui - Prévisions à 15 jours",
+      "url": "https://www.directmeteo.com/roubaix",
+      "snippet": "Résumé météo Météo actuelle à Roubaix: 22°C avec partiellement nuageux. L'humidité est de 51% et le vent souffle à 6 km/h. Les …"
+    }
+  ]
+}

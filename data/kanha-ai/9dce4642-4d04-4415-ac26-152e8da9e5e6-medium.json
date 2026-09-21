@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Kanha-AI/9dce4642-4d04-4415-ac26-152e8da9e5e6-medium",
+  "slug": "kanha-ai-9dce4642-4d04-4415-ac26-152e8da9e5e6-medium",
+  "author": "Kanha-AI",
+  "url": "https://huggingface.co/Kanha-AI/9dce4642-4d04-4415-ac26-152e8da9e5e6-medium",
+  "created_at": "2026-09-21T18:18:29.000Z",
+  "updated_at": "2026-09-21T18:18:38.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlc-llm",
+  "languages": [],
+  "tags": [
+    "mlc-llm",
+    "kanha",
+    "on-device",
+    "webgpu",
+    "fine-tuned",
+    "medium",
+    "text-generation",
+    "base_model:LiquidAI/LFM2.5-1.2B-Instruct",
+    "base_model:finetune:LiquidAI/LFM2.5-1.2B-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 658503168,
+  "storage_human": "659 MB",
+  "base_model": "LiquidAI/LFM2.5-1.2B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gemini — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini/",
+      "snippet": "Gemini 3.8 Flash built this game with a simple prompt using a looping instruction in Google Antigravity. The game uses puzzles, …"
+    },
+    {
+      "title": "Gemini Robotics 2 — Google DeepMind",
+      "url": "https://deepmind.google/models/gemini-robotics/vla/",
+      "snippet": "Gemini Robotics 2 can operate robotic bodies of all sizes and shapes to perform complex tasks. Including dexterous manipulation of …"
+    },
+    {
+      "title": "Research — Google DeepMind",
+      "url": "https://deepmind.google/research/",
+      "snippet": "Explore our research on some of the most complex and interesting challenges in AI."
+    },
+    {
+      "title": "Careers at Google DeepMind",
+      "url": "https://deepmind.google/careers/",
+      "snippet": "Work on state-of-the-art models Help unlock a new era of intelligence. Create state-of-the-art generative AI models with global reach …"
+    },
+    {
+      "title": "Gemini 3.1 Pro - Model Card — Google DeepMind",
+      "url": "https://deepmind.google/models/model-cards/gemini-3-1-pro/",
+      "snippet": "Feb 19, 2026 · Gemini 3.1 Pro is the next iteration in the Gemini 3 series of models, a suite of highly capable, natively multimodal …"
+    }
+  ]
+}

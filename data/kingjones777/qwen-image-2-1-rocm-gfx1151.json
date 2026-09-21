@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "kingjones777/Qwen-Image-2.1-ROCm-gfx1151",
+  "slug": "kingjones777-qwen-image-2-1-rocm-gfx1151",
+  "author": "kingjones777",
+  "url": "https://huggingface.co/kingjones777/Qwen-Image-2.1-ROCm-gfx1151",
+  "created_at": "2026-09-21T15:10:58.000Z",
+  "updated_at": "2026-09-21T18:03:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "qwen-image",
+    "rocm",
+    "amd",
+    "gfx1151",
+    "strix-halo",
+    "benchmark",
+    "documentation",
+    "text-to-image",
+    "base_model:Qwen/Qwen-Image-2.1",
+    "base_model:finetune:Qwen/Qwen-Image-2.1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "Qwen/Qwen-Image-2.1",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - MuiseDestiny/zotero-gpt: GPT Meet Zotero.",
+      "url": "https://github.com/MuiseDestiny/zotero-gpt",
+      "snippet": "GPT Tag Recommendation Automatically create tags for entries: open and copy then open Zotero, this tag will be automatically …"
+    },
+    {
+      "title": "GitHub Copilotでサポートされている AI モデル - GitHubドキュメント",
+      "url": "https://docs.github.com/ja/copilot/reference/ai-models/supported-models",
+      "snippet": "GitHub Copilot は複数の AI モデルをサポートし、それぞれが異なる強みを持ちます。 速度とコスト効率に優先順位を付けるものも …"
+    },
+    {
+      "title": "GitHub - danny-avila/LibreChat: Enhanced ChatGPT Clone: Features …",
+      "url": "https://github.com/danny-avila/LibreChat",
+      "snippet": "Models: Added GPT-6 Astra for the OpenAI and Agents endpoints, with Responses API routing and tool-call support. Agent and chat …"
+    },
+    {
+      "title": "Supported AI models in GitHub Copilot - GitHub Docs",
+      "url": "https://docs.github.com/en/copilot/reference/ai-models/supported-models",
+      "snippet": "Supported AI models in Auto model selection This table lists the supported AI models for Auto model selection. Available models may …"
+    },
+    {
+      "title": "Chat GPT Tiếng Việt: Cài đặt và mẹo đặt câu lệnh mới nhất",
+      "url": "https://cellphones.com.vn/sforum/cach-dung-chat-gpt-tieng-viet",
+      "snippet": "Jul 10, 2026 · Hướng dẫn cách sử dụng Chat GPT Tiếng Việt hiệu quả để đặt câu hỏi, viết nội dung, học tập, dịch thuật và xử lý …"
+    }
+  ]
+}

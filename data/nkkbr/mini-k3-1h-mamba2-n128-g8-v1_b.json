@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "nkkbr/Mini-K3-1H-mamba2-n128-g8-v1_B",
+  "slug": "nkkbr-mini-k3-1h-mamba2-n128-g8-v1_b",
+  "author": "nkkbr",
+  "url": "https://huggingface.co/nkkbr/Mini-K3-1H-mamba2-n128-g8-v1_B",
+  "created_at": "2026-09-21T16:50:10.000Z",
+  "updated_at": "2026-09-22T02:01:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "mini_k3",
+    "kimi-k3",
+    "mamba2",
+    "pretraining",
+    "mixture-of-experts",
+    "architecture-ablation",
+    "text-generation",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1018756960,
+  "parameters_human": "1.02B",
+  "storage_bytes": 8171651635,
+  "storage_human": "8.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rhône-Alpes - Collège Marcel Aymé",
+      "url": "http://marcelayme.ent.auvergnerhonealpes.fr/",
+      "snippet": "Vous trouverez le nouveau projet d'établissement 2021/2025 du collège Marcel Aymé , ainsi que le règlement intérieur et les …"
+    },
+    {
+      "title": "Collège Marcel Aymé",
+      "url": "https://clg-marcel-ayme.eclat-bfc.fr/",
+      "snippet": "Réunions de rentrée 2026 au collège Marcel Aymé À noter dans vos agendas : les dates de réunions de rentrée pour tous les …"
+    },
+    {
+      "title": "Collège Marcel Aymé - Bienvenue au collège Marcel Aymé - Rhône-Alpes",
+      "url": "https://marcelayme.ent.auvergnerhonealpes.fr/le-college/",
+      "snippet": "Le collège Projet d'établissement CESC Service Restauration L'Allemand au collège Marcel Aymé Documents à télécharger"
+    },
+    {
+      "title": "Collège Marcel Aymé De Saint Florentin - college-lycee.com",
+      "url": "https://college-lycee.com/College-Marcel-ayme/Saint-Florentin-0890024T",
+      "snippet": "Aug 25, 2026 · Vos avis sur le Collège Marcel Aymé De Saint Florentin. Découvrez l'établissement : le nombre de collègiens, les …"
+    },
+    {
+      "title": "Collège Marcel Aymé de Saint Florentin",
+      "url": "http://col21-marcelayme.ac-dijon.fr/spip.php",
+      "snippet": "Au premier semestre, ils seront encadrés par un professeur du collège et monteront une adaptation de Pinocchio, de Joël Pommerat …"
+    }
+  ]
+}

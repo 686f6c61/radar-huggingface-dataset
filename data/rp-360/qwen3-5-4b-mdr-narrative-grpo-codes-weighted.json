@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "RP-360/Qwen3.5-4B-mdr-narrative-grpo-codes-weighted",
+  "slug": "rp-360-qwen3-5-4b-mdr-narrative-grpo-codes-weighted",
+  "author": "RP-360",
+  "url": "https://huggingface.co/RP-360/Qwen3.5-4B-mdr-narrative-grpo-codes-weighted",
+  "created_at": "2026-09-21T14:07:16.000Z",
+  "updated_at": "2026-09-21T16:05:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "medical-device",
+    "adverse-events",
+    "maude",
+    "fda",
+    "imdrf",
+    "json",
+    "codes-only",
+    "grpo",
+    "rlvr",
+    "lora",
+    "clinical-nlp",
+    "reinforcement-learning",
+    "unsloth",
+    "trl",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:RP-360/Qwen3.5-4B-mdr-narrative-sft-codes-weighted",
+    "base_model:finetune:RP-360/Qwen3.5-4B-mdr-narrative-sft-codes-weighted",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4659865088,
+  "parameters_human": "4.66B",
+  "storage_bytes": 9342827749,
+  "storage_human": "9.3 GB",
+  "base_model": "RP-360/Qwen3.5-4B-mdr-narrative-sft-codes-weighted",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Royals: Alle News rund um Königshäuser + Adel - GALA.de",
+      "url": "https://www.gala.de/royals/",
+      "snippet": "6 days ago · Alle Royals-News, Geschichten + Bilder aus den Königs- und Fürstenhäusern weltweit. Mit GALA.de bleiben Sie in der …"
+    },
+    {
+      "title": "GALA.de ⋄ Stars, Fashion, Beauty und die besten Promi-News",
+      "url": "https://www.gala.de/",
+      "snippet": "GALA.de - Ihr Blick in die Welt der Stars ☆ Exklusive News, Bilder und Videos zu VIPs und Promis sowie Trends, Tipps + Service …"
+    },
+    {
+      "title": "Kontakt – Kündigung - serviceportal.gala.de",
+      "url": "https://serviceportal.gala.de/s/kuendigungsformular",
+      "snippet": "Kundenservice Sie möchten Ihr Abonnement kündigen? Das bedauern wir sehr! Sollten Sie Ihren Vertrag widerrufen wollen, wählen …"
+    },
+    {
+      "title": "Die neue GALA: Übersicht und Inhaltsverzeichnis | GALA.de",
+      "url": "https://www.gala.de/service/gala--inhaltsverzeichnis-der-aktuellen-heft-ausgabe-20007448.html",
+      "snippet": "Hier finden Sie das Inhaltsverzeichnis der aktuellen Ausgabe von GALA."
+    },
+    {
+      "title": "Kaiser, Könige, Fürsten, Scheichs und mehr - GALA.de",
+      "url": "https://www.gala.de/royals/allgemein/",
+      "snippet": "Geschichten + Bilder aus den Königs- und Fürstenhäusern in Europa und der ganzen Welt - von den Preußen bis nach Bhutan, von …"
+    }
+  ]
+}

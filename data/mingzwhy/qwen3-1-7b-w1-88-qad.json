@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "MingZwhy/Qwen3-1.7B-W1.88-QAD",
+  "slug": "mingzwhy-qwen3-1-7b-w1-88-qad",
+  "author": "MingZwhy",
+  "url": "https://huggingface.co/MingZwhy/Qwen3-1.7B-W1.88-QAD",
+  "created_at": "2026-09-21T17:23:42.000Z",
+  "updated_at": "2026-09-21T17:24:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "qaopd",
+    "quantization",
+    "quantization-aware-training",
+    "conversational",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1720574976,
+  "parameters_human": "1.72B",
+  "storage_bytes": 3452608262,
+  "storage_human": "3.5 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "query - Tłumaczenie po polsku - Słownik angielsko-polski Diki",
+      "url": "https://www.diki.pl/slownik-angielskiego?q=query",
+      "snippet": "query, qy, qy. - tłumaczenie na polski oraz definicja. Co znaczy i jak powiedzieć \"query, qy, qy.\" po polsku? - zapytanie, kwerenda (do …"
+    },
+    {
+      "title": "QUERY | tłumacz z angielskiego na polski: Cambridge Dictionary",
+      "url": "https://dictionary.cambridge.org/pl/dictionary/english-polish/query",
+      "snippet": "Tłumaczenie QUERY : zapytanie, kwestionować, zapytanie, pytajnik, zakwestionować, zapytać. Przeczytaj więcej w słowniku …"
+    },
+    {
+      "title": "Query - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Query",
+      "snippet": "This disambiguation page lists articles associated with the title Query. If an internal link incorrectly led you here, you may wish to …"
+    },
+    {
+      "title": "QUERY - Tłumaczenie na polski - bab.la",
+      "url": "https://pl.bab.la/slownik/angielski-polski/query",
+      "snippet": "Znajdź wszystkie tłumaczenia słowa query w polsko, takie jak pytać, kwestionować, zakwestionować i wiele innych."
+    },
+    {
+      "title": "query – Wikisłownik, wolny słownik wielojęzyczny",
+      "url": "https://pl.wiktionary.org/wiki/query",
+      "snippet": "query query (język angielski) edytuj wymowa: IPA: /ˈkwɪəri/ lub /ˈkwɛri/, SAMPA: /\"kwI@ri/ lub /\"kwEri/ ⓘ ⓘ znaczenia: rzeczownik …"
+    }
+  ]
+}

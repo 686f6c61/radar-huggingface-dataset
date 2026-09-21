@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "YRGKarthikeya/MLAgents-SoccerTwos",
+  "slug": "yrgkarthikeya-mlagents-soccertwos",
+  "author": "YRGKarthikeya",
+  "url": "https://huggingface.co/YRGKarthikeya/MLAgents-SoccerTwos",
+  "created_at": "2026-09-21T14:05:47.000Z",
+  "updated_at": "2026-09-21T14:06:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "onnx",
+    "ML-Agents-SoccerTwos",
+    "reinforcement-learning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1763292,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "United States Air Force Reddit",
+      "url": "https://www.reddit.com/r/AirForce/",
+      "snippet": "Community for current and past members of the US Air Force."
+    },
+    {
+      "title": "Anyone have the new DOTS link or contact info? - Reddit",
+      "url": "https://www.reddit.com/r/AirForce/comments/5fk08g/anyone_have_the_new_dots_link_or_contact_info/",
+      "snippet": "Does anyone have the link to the new service referenced in the message on the site? DOTS isn't working using the old link and the …"
+    },
+    {
+      "title": "Where can you find your RIP on the vMPF? - Answers",
+      "url": "https://www.answers.com/general-arts-and-entertainment/Where_can_you_find_your_RIP_on_the_vMPF",
+      "snippet": "Jan 20, 2026 · You can find your Record of Individual Performance (RIP) on the Virtual Military Personnel Flight (vMPF) by logging …"
+    },
+    {
+      "title": "What is the link for Air Force GO-81 web? - Answers",
+      "url": "https://www.answers.com/united-states-government/What_is_the_link_for_Air_Force_GO-81_web",
+      "snippet": "Aug 20, 2023 · https://amclogistics.csd.disa.mil/Citrix/MetaFrame/auth/login.aspx"
+    },
+    {
+      "title": "Accessing AFPortal from Home : r/AirForce - Reddit",
+      "url": "https://www.reddit.com/r/AirForce/comments/5l5olp/accessing_afportal_from_home/",
+      "snippet": "Dec 30, 2016 · I'm having trouble accessing the Air Force Portal from my home computer; I need to get some info from my e-mail, …"
+    }
+  ]
+}

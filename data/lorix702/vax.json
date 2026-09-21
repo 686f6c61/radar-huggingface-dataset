@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "LORIX702/vax",
+  "slug": "lorix702-vax",
+  "author": "LORIX702",
+  "url": "https://huggingface.co/LORIX702/vax",
+  "created_at": "2026-09-21T13:02:11.000Z",
+  "updated_at": "2026-09-21T13:02:11.000Z",
+  "license": "grok2-community",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:grok2-community",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sinfonia - Screening Oncologico",
+      "url": "https://screeningoncologico.soresa.it/login",
+      "snippet": "Hai dimenticato la password?"
+    },
+    {
+      "title": "SINFONIA Screening - Accesso",
+      "url": "https://screening-collaudo.cdp-sanita-coll.soresa.it/",
+      "snippet": "SINFONIA Screening è la piattaforma web che consente al personale delle aziende sanitarie della Regione Campania di creare e …"
+    },
+    {
+      "title": "Portale del Cittadino - Regione Campania",
+      "url": "https://sinfonia.regione.campania.it/preview/CdP",
+      "snippet": "Jul 15, 2024 · Un cancro diagnosticato precocemente può essere curato. Aderisci alle campagne di screening organizzate da …"
+    },
+    {
+      "title": "Portale del Cittadino - Regione Campania",
+      "url": "https://sinfonia-collaudo.cdp-sanita-coll.soresa.it/",
+      "snippet": "Il Portale Salute del Cittadino è lo strumento che ti permette di accedere ai servizi online messi a disposizione dal Sistema Sanitario …"
+    },
+    {
+      "title": "Portale del Cittadino - Regione Campania",
+      "url": "https://sinfonia.regione.campania.it/preview/screening-oncologico",
+      "snippet": "La piattaforma consentirà agli esperti della Regione di monitorare tutte le attività di screening oncologico attive sul territorio, con …"
+    }
+  ]
+}

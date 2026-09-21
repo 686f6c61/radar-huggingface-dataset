@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "Bizuayeu/GLM-5.3-Flash-NVFP4-attn-lmhead-W4A16",
+  "slug": "bizuayeu-glm-5-3-flash-nvfp4-attn-lmhead-w4a16",
+  "author": "Bizuayeu",
+  "url": "https://huggingface.co/Bizuayeu/GLM-5.3-Flash-NVFP4-attn-lmhead-W4A16",
+  "created_at": "2026-09-21T14:16:53.000Z",
+  "updated_at": "2026-09-21T21:37:31.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "vllm",
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "tags": [
+    "vllm",
+    "safetensors",
+    "glm5_next",
+    "GLM-5",
+    "quantized",
+    "NVFP4",
+    "W4A16",
+    "derived",
+    "image-text-to-text",
+    "conversational",
+    "ja",
+    "en",
+    "base_model:nvidia/GLM-5.3-Flash-NVFP4",
+    "base_model:quantized:nvidia/GLM-5.3-Flash-NVFP4",
+    "license:mit",
+    "8-bit",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 165556280158,
+  "parameters_human": "165.56B",
+  "storage_bytes": 194880937461,
+  "storage_human": "194.9 GB",
+  "base_model": "nvidia/GLM-5.3-Flash-NVFP4",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rent Textbooks - Online Textbook Rental & eBooks - Chegg",
+      "url": "https://www.chegg.com/textbooks?msockid=13a451f3448666ed0487462845cd677c",
+      "snippet": "Now even easier, with Valore. We've teamed up with Valore.com to bring you more affordable options for college textbooks. Whether …"
+    },
+    {
+      "title": "Chegg - Get 24/7 Homework Help | Study Support Across 50+ Subjects",
+      "url": "https://www.chegg.com/?str=login&page=login&msockid=13a451f3448666ed0487462845cd677c",
+      "snippet": "Innovative learning tools. 24/7 support. All in one place. Homework help for relevant study solutions, step-by-step support, and real …"
+    },
+    {
+      "title": "Rent/Buy Books on Chegg - Save Up to 90% on Textbooks",
+      "url": "https://www.chegg.com/books?msockid=13a451f3448666ed0487462845cd677c",
+      "snippet": "Buy or rent textbooks from Chegg.com and save up to 90% off of new titles for your required college books."
+    },
+    {
+      "title": "Careers | Perfect Your Resume, Land Your Internship, Find the ... - Chegg",
+      "url": "https://www.chegg.com/career?msockid=13a451f3448666ed0487462845cd677c",
+      "snippet": "Build the real-world skills you need to stand out to employers hiring for entry-level roles with Chegg Skills."
+    },
+    {
+      "title": "Solved I am not sure what type of reasoning used in the the - Chegg",
+      "url": "https://www.chegg.com/homework-help/questions-and-answers/sure-type-reasoning-used-statement--see-work-around-world-women-women-international-worthy-q29746548?msockid=13a451f3448666ed0487462845cd677c",
+      "snippet": "It has given women in Kosovo the skills to operate businesses in their communities. It has shown I am not sure what type of …"
+    }
+  ]
+}

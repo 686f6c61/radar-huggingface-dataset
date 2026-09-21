@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "turnercore/needle-automaticity-v10",
+  "slug": "turnercore-needle-automaticity-v10",
+  "author": "turnercore",
+  "url": "https://huggingface.co/turnercore/needle-automaticity-v10",
+  "created_at": "2026-09-21T17:55:26.000Z",
+  "updated_at": "2026-09-21T18:52:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "needle-point",
+  "languages": [],
+  "tags": [
+    "needle-point",
+    "safetensors",
+    "tool-calling",
+    "function-calling",
+    "constrained-decoding",
+    "automaticity",
+    "text-generation",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26233344,
+  "parameters_human": "26.2M",
+  "storage_bytes": 105082808,
+  "storage_human": "105 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google als Startseite festlegen - Google Suche-Hilfe",
+      "url": "https://support.google.com/websearch/answer/463?hl=de",
+      "snippet": "Nach unerwünschten Programmen suchen: Falls das Problem durch das Zurücksetzen der Startseite nicht gelöst werden kann, …"
+    },
+    {
+      "title": "Google Suche-Hilfe",
+      "url": "https://support.google.com/websearch/?hl=de",
+      "snippet": "Offizielle Hilfe für die Google Google Suche. Lernen Sie, wie Sie die Google Websuche optimal für sich nutzen."
+    },
+    {
+      "title": "Tipps zur Suche bei Google und wie die Ergebnisse mit Ihrer Suche ...",
+      "url": "https://support.google.com/websearch/answer/134479?hl=de-CO",
+      "snippet": "Angenommen, Sie suchen ein Zitat, können sich aber nicht mehr an den genauen Wortlaut erinnern. Suchergebnisse, die genau mit …"
+    },
+    {
+      "title": "Suchfunktion in Gmail - Computer - Gmail-Hilfe",
+      "url": "https://support.google.com/mail/answer/6593?hl=de&co=GENIE.Platform%3DDesktop",
+      "snippet": "Klicken Sie auf Suchen. Tipps: Wenn Sie eine E‑Mail aus dem Papierkorb wiederherstellen möchten, entfernen Sie sie daraus. Wenn …"
+    },
+    {
+      "title": "Nach Orten in der Nähe suchen und die Gegend erkunden",
+      "url": "https://support.google.com/maps/answer/4610185?hl=de&co=GENIE.Platform%3DDesktop",
+      "snippet": "Sie können nach Unternehmen und Orten in der Nähe suchen, etwa nach beliebten Bars, Tankstellen oder Geldautomaten. Dabei …"
+    }
+  ]
+}

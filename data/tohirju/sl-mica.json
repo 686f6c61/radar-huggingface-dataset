@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Tohirju/sl-mica",
+  "slug": "tohirju-sl-mica",
+  "author": "Tohirju",
+  "url": "https://huggingface.co/Tohirju/sl-mica",
+  "created_at": "2026-09-21T19:27:10.000Z",
+  "updated_at": "2026-09-21T19:29:14.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_text",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 17927652351,
+  "storage_human": "17.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "广东省公共资源交易平台",
+      "url": "https://ygp.gdzwfw.gov.cn/",
+      "snippet": "2 days ago · 广东省公共资源交易平台汇聚全广东省级、各地市、全交易类型项目交易信息、交易数据，收录公共资源交易各层级各行 …"
+    },
+    {
+      "title": "广东公共资源交易平台",
+      "url": "https://www.gdzwfw.gov.cn/ghcp/",
+      "snippet": "Sep 7, 2026 · 建立政务服务“好差评”制度，服务绩效由企业和群众来评判。"
+    },
+    {
+      "title": "广东省公共资源交易平台（粤公平） | 数字广东",
+      "url": "https://www.digitalgd.com.cn/szgd/ggzyjypt/cpjjsfw_ggzyjypt.shtml",
+      "snippet": "广东省公共资源交易平台（粤公平） 以推动公共资源公平交易为宗旨，打造全方位交易监管体系。以“粤公平码”为载体，整合审批、交 …"
+    },
+    {
+      "title": "广东公共资源交易中心 广东省公共资源交易平台",
+      "url": "http://www.chinabidding.org.cn/zyzx34.htm",
+      "snippet": "Jan 1, 2026 · 广州公共资源交易中心 从化公共资源交易中心 增城公共资源交易中心 深圳公共资源交易中心 珠海公共资源交易中心 汕 …"
+    },
+    {
+      "title": "粤交易",
+      "url": "https://mall.gdaee.com.cn/page/index",
+      "snippet": "Apr 2, 2025 · 资讯公告 广东省交易控股集团（广东省公共资源交易中心）移动数字证书全国互认APP供应商遴选结果公告 2025-04-02 …"
+    }
+  ]
+}

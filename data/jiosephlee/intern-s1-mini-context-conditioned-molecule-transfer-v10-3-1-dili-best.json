@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "jiosephlee/intern-s1-mini-context-conditioned-molecule-transfer-v10-3-1-dili-best",
+  "slug": "jiosephlee-intern-s1-mini-context-conditioned-molecule-transfer-v10-3-1-dili-best",
+  "author": "jiosephlee",
+  "url": "https://huggingface.co/jiosephlee/intern-s1-mini-context-conditioned-molecule-transfer-v10-3-1-dili-best",
+  "created_at": "2026-09-21T17:15:25.000Z",
+  "updated_at": "2026-09-21T17:16:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "chemistry",
+    "assay-transfer",
+    "context-conditioned-molecule-transfer",
+    "conversational",
+    "dataset:jiosephlee/context-conditioned-molecule-transfer-v10.3.1-dili-mixed-canonical-intern",
+    "base_model:jiosephlee/Intern-S1-mini-lm",
+    "base_model:finetune:jiosephlee/Intern-S1-mini-lm",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8201221120,
+  "parameters_human": "8.20B",
+  "storage_bytes": 16402497533,
+  "storage_human": "16.4 GB",
+  "base_model": "jiosephlee/Intern-S1-mini-lm",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RDFa - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/RDFa",
+      "snippet": "RDFa Lite is minimal subset of RDFa ... consisting of a few attributes that may be used to express machine-readable data in Web …"
+    },
+    {
+      "title": "Royal Belgian FA - RBFA",
+      "url": "https://www.rbfa.be/nl",
+      "snippet": "De Koninklijke Belgische Voetbalbond is de officiële organisatie voor voetbal in België, met nieuws, evenementen en informatie over …"
+    },
+    {
+      "title": "RDFa",
+      "url": "http://rdfa.info/",
+      "snippet": "RDFa is an extension to HTML5 that helps you markup things like People, Places, Events, Recipes and Reviews. Search Engines …"
+    },
+    {
+      "title": "RDFa / Documentation",
+      "url": "https://rdfa.info/docs",
+      "snippet": "For Implementers HTML+RDFa Format specific details for HTML5, HTML4, and DOM processors. XHTML+RDFa XHTML is an XML …"
+    },
+    {
+      "title": "RDFa 1.1 Primer - Third Edition",
+      "url": "https://www.w3.org/TR/rdfa-primer/",
+      "snippet": "Mar 17, 2015 · RDFa (Resource Description Framework in Attributes) is a technique that allows just that: it provides a set of markup …"
+    }
+  ]
+}

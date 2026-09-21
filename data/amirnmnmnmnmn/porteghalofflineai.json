@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "amirnmnmnmnmn/PorteghalOfflineAI",
+  "slug": "amirnmnmnmnmn-porteghalofflineai",
+  "author": "amirnmnmnmnmn",
+  "url": "https://huggingface.co/amirnmnmnmnmn/PorteghalOfflineAI",
+  "created_at": "2026-09-21T15:15:43.000Z",
+  "updated_at": "2026-09-21T15:30:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Site officiel | Norton™ - Logiciel antivirus et antimalware",
+      "url": "https://fr.norton.com/",
+      "snippet": "Norton™ propose un logiciel de sécurité et antivirus de pointe pour vos PC, Mac et appareils mobiles. Abonnez-vous à Norton™ 360 …"
+    },
+    {
+      "title": "My Norton - Login | Manage, Download or Setup an Account",
+      "url": "https://my.norton.com/?msockid=30835bd4aba763d208454c0faa6362cd",
+      "snippet": "The Official Norton Site for existing customers to sign in or login to your account, setup, download, reinstall and manage"
+    },
+    {
+      "title": "Sign In - Official Site | Norton Account Sign In & Set Up",
+      "url": "https://login.norton.com/sso/index.jsp",
+      "snippet": "Sign in to enter your product key, access your account, manage your subscription, and extend your Norton protection to PC, Mac, …"
+    },
+    {
+      "title": "Official Site | Norton™ - Antivirus & Anti-Malware Software",
+      "url": "https://ca.norton.com/",
+      "snippet": "Norton™ provides industry-leading antivirus and security software for your PC, Mac, and mobile devices. Download a Norton™ 360 …"
+    },
+    {
+      "title": "Gérer, télécharger ou configurer un compte - Mon Norton",
+      "url": "https://my.norton.com/?displang=iso3:fra&displocale=iso3:fra&msockid=30835bd4aba763d208454c0faa6362cd",
+      "snippet": "Le site officiel Norton permet aux clients existants de se connecter à leur compte, et de configurer, télécharger, réinstaller et gérer …"
+    }
+  ]
+}

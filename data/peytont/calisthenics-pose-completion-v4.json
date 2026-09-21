@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "PeytonT/calisthenics-pose-completion-v4",
+  "slug": "peytont-calisthenics-pose-completion-v4",
+  "author": "PeytonT",
+  "url": "https://huggingface.co/PeytonT/calisthenics-pose-completion-v4",
+  "created_at": "2026-09-21T18:27:34.000Z",
+  "updated_at": "2026-09-21T18:28:14.000Z",
+  "license": "component-specific-apache-2.0-and-sam",
+  "license_family": "oss",
+  "pipeline_tag": "keypoint-detection",
+  "library": "onnxruntime",
+  "languages": [],
+  "tags": [
+    "onnxruntime",
+    "onnx",
+    "calisthenics",
+    "planche",
+    "browser",
+    "body-pose",
+    "keypoint-detection",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 75886227,
+  "storage_human": "76 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Faroe Islands - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Faroe_Islands",
+      "snippet": "The Faroe Islands[b] (/ ˈfɛəroʊ / FAIR-oh), also known as the Faroes, are an archipelago in the North Atlantic Ocean and a rigsdel (' …"
+    },
+    {
+      "title": "Fær Øer - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/F%C3%A6r_%C3%98er",
+      "snippet": "Le Fær Øer sono un arcipelago formato da 18 isole, al largo delle coste settentrionali dell'Europa, tra il Mare di Norvegia e il Nord dell' …"
+    },
+    {
+      "title": "Viaggio alle Isole Faroe: guida pratica e dove dormire tra le Isole",
+      "url": "https://www.travelwiththewind.org/viaggio-alle-isole-faroe-tutto-quello-che-dovete-sapere-prima-di-partire/",
+      "snippet": "Oct 2, 2025 · Se non le conoscete, le Faroe non sono un atollo tropicale, bensì un arcipelago di 18 isole nel Nord Atlantico, tra …"
+    },
+    {
+      "title": "Welcome to the official site of the Faroe Islands",
+      "url": "https://www.faroeislands.fo/",
+      "snippet": "Located in the Northeast Atlantic, the Faroe Islands comprise 18 small islands, characterised by steep cliffs, tall mountains, narrow …"
+    },
+    {
+      "title": "Visit Faroe Islands",
+      "url": "https://visitfaroeislands.com/",
+      "snippet": "Need a Little Help? The Official Tourist Board of the Faroe Islands – sharing authentic insights, stunning destinations and everything …"
+    }
+  ]
+}

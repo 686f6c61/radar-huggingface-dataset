@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "sriq-ai/sriq-diffusiongemma-26B-A4B-v1.6-FP8-dynamic",
+  "slug": "sriq-ai-sriq-diffusiongemma-26b-a4b-v1-6-fp8-dynamic",
+  "author": "sriq-ai",
+  "url": "https://huggingface.co/sriq-ai/sriq-diffusiongemma-26B-A4B-v1.6-FP8-dynamic",
+  "created_at": "2026-09-21T18:34:02.000Z",
+  "updated_at": "2026-09-21T19:15:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "en",
+    "multilingual"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "diffusion_gemma",
+    "image-text-to-text",
+    "fp8",
+    "vllm",
+    "llm-compressor",
+    "compressed-tensors",
+    "diffusion-lm",
+    "block-diffusion",
+    "reasoning",
+    "chinese",
+    "conversational",
+    "zh",
+    "en",
+    "multilingual",
+    "dataset:sriq-ai/sriq-sft-v1.6",
+    "base_model:sriq-ai/sriq-diffusiongemma-26B-A4B-v1.6",
+    "base_model:quantized:sriq-ai/sriq-diffusiongemma-26B-A4B-v1.6",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 25823781228,
+  "parameters_human": "25.82B",
+  "storage_bytes": 27234323305,
+  "storage_human": "27.2 GB",
+  "base_model": "sriq-ai/sriq-diffusiongemma-26B-A4B-v1.6",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook trop lent [Résolu] - Facebook - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-24491065-facebook-trop-lent",
+      "snippet": "Bonjour, Voilà mon problème lorrsque je me connecte sur facebook avec mon compte sur n'importe quellle naviguateur il est …"
+    },
+    {
+      "title": "Approuver la connexion [Résolu] - Facebook - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-36342939-approuver-la-connexion",
+      "snippet": "Dec 3, 2019 · Bonjour, Je n'arrive plus à me rendre sur mon facebook. J'essaie de me connecter mais ils veulent que je confirme …"
+    },
+    {
+      "title": "Problème de connexion à Facebook - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-35180035-probleme-de-connexion-a-facebook",
+      "snippet": "Feb 3, 2018 · Bonjour, Depuis quelques jours je n'arrive plus à me connecter à mon compte Facebook. Lorsque j'appuie sur …"
+    },
+    {
+      "title": "Facebook qui se déconnecte tout seul - Forum Facebook",
+      "url": "https://forums.commentcamarche.net/forum/affich-19866788-facebook-qui-se-deconnecte-tout-seul",
+      "snippet": "Résumé de la discussion Le problème central est une déconnexion systématique de Facebook qui survient après un moment et se …"
+    },
+    {
+      "title": "Approbation de connexion facebook [Résolu] - Facebook",
+      "url": "https://forums.commentcamarche.net/forum/affich-37326307-approbation-de-connexion-facebook",
+      "snippet": "Aug 26, 2021 · Bonjour, Je jete une bouteille à la mer car pour des raisons inconnue je ne parviens plus à me connecter à mon …"
+    }
+  ]
+}

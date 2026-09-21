@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "nkkbr/Mini-K3-1H-mamba2-n128-g4-v1_C",
+  "slug": "nkkbr-mini-k3-1h-mamba2-n128-g4-v1_c",
+  "author": "nkkbr",
+  "url": "https://huggingface.co/nkkbr/Mini-K3-1H-mamba2-n128-g4-v1_C",
+  "created_at": "2026-09-21T16:50:10.000Z",
+  "updated_at": "2026-09-22T01:49:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "mini_k3",
+    "kimi-k3",
+    "mamba2",
+    "pretraining",
+    "mixture-of-experts",
+    "architecture-ablation",
+    "text-generation",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1009273696,
+  "parameters_human": "1.01B",
+  "storage_bytes": 8095784089,
+  "storage_human": "8.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Absher-أبشر",
+      "url": "https://www.absher.sa/",
+      "snippet": "أهلاً بكم في أبشر المنصة الإلكترونية لخدمات وزارة الداخلية وقطاعاتها, لخدمة المواطنين والمقيمين والزوار. The electronic platform for the Ministry of Interior's services …"
+    },
+    {
+      "title": "الرئيسية - أبشر",
+      "url": "https://www.absher.sa/wps/portal/individuals/static/moilogin/!ut/p/z1/04_Sj9CPykssy0xPLMnMz0vMAfIjo8zinQwMXC2dDB0NDEJMXQw8PTw8_UPMAwwMDAz1w8EKTJ0DnD0tfI0N3QNCzQ2M3MxNvJzNvN3DDMz1o4jRb4ADOBoQpx-Pgij8xgen5gHNiAIrw-cLQuYU5IaGRlR4pgMAfSkHmQ!!/dz/d5/L0lHSkovd0RNQUprQUVnQSEhLzROVkUvYXI!/",
+      "snippet": "تصدّرت منصة وزارة الداخلية الإلكترونية \"أبشر\" نتائج مؤشر نضج التجربة الرقمية لعام 2026م، الصادرة عن هيئة الحكومة الرقمية، محققة المرتبة الأولى للعام الثاني على التوالي بنسبة 94.38% …"
+    },
+    {
+      "title": "حجز موعد - أبشر",
+      "url": "https://www.absher.sa/wps/portal/individuals/static/ca-book-appointment/!ut/p/z0/04_Sj9CPykssy0xPLMnMz0vMAfIjo8ziTYyD3Zw9fdy9fc0DXA08XcJM_YKCLIwMvE31gxOL9AuyHRUB0HeaOg!!/",
+      "snippet": "ابشر اعمال - اعمال - شركات - موظف - Absher Business - Business - Employees - Organization الأسئلة الشائعة ما نوع الخدمات المتاحة للجهات ؟ ابشر اعمال - اعمال - …"
+    },
+    {
+      "title": "الرئيسية - أبشر",
+      "url": "https://www.absher.sa/wps/portal/individuals/Home/homepublic/!/!ut/p/z0/04_Sj9CPykssy0xPLMnMz0vMAfIjo8zi3Q0NHT2M3A183N2DjAwCnR0Njc0dnQwtDE31gxOL9L30o_ArAppiVOTr7JuuH1WQWJKhm5mXlq8foahfkO0eDgBEbjaL/",
+      "snippet": "تسجيل الدخول الى أبشر يرجى الضغط على تسجيل الدخول لإكمال عملية تسجيل الدخول"
+    },
+    {
+      "title": "الاستعلام عن المخالفات المرورية - أبشر",
+      "url": "https://www.absher.sa/wps/portal/traffic/Home/querytrafficviolationinquiry/!ut/p/z1/04_iUlDg4tKPAFJABjKBwtGPykssy0xPLMnMz0vM0Y_Qj4wyizcz8nE29LAw8rZwDLUwMHM1NfUzdjQ0Ngg21vfSj8KvIDixSL8gO1ARANKT2G8!/",
+      "snippet": "ابشر اعمال - اعمال - شركات - موظف - Absher Business - Business - Employees - Organization الأسئلة الشائعة ما نوع الخدمات المتاحة للجهات ؟ ابشر اعمال - اعمال - …"
+    }
+  ]
+}

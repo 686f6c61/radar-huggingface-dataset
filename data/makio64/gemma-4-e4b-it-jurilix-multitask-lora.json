@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Makio64/gemma-4-E4B-it-jurilix-multitask-lora",
+  "slug": "makio64-gemma-4-e4b-it-jurilix-multitask-lora",
+  "author": "Makio64",
+  "url": "https://huggingface.co/Makio64/gemma-4-E4B-it-jurilix-multitask-lora",
+  "created_at": "2026-09-21T12:29:47.000Z",
+  "updated_at": "2026-09-21T12:31:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "jurilix",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34881536,
+  "parameters_human": "34.9M",
+  "storage_bytes": 69798976,
+  "storage_human": "70 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Se connecter à Gmail - Ordinateur - Aide Gmail - Google Help",
+      "url": "https://support.google.com/mail/answer/8494?hl=fr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Se connecter à Gmail Pour ouvrir Gmail, vous pouvez vous connecter à partir d'un ordinateur ou ajouter votre compte à l'application …"
+    },
+    {
+      "title": "Accéder à mon mail Orange",
+      "url": "https://communaute.orange.fr/t5/Webmail-Orange/Acc%C3%A9der-%C3%A0-mon-mail-Orange/td-p/36",
+      "snippet": "Aug 2, 2013 · Voici quelques infos utiles à préciser lorsque vous rencontrez un soucis de messagerie Comment consultez-vous vos e …"
+    },
+    {
+      "title": "Créer un compte Google pour Gmail",
+      "url": "https://support.google.com/mail/answer/56256?hl=fr",
+      "snippet": "Créer un compte Google Remarque : Si vous souhaitez utiliser Gmail pour votre entreprise, un compte Google Workspace vous sera …"
+    },
+    {
+      "title": "Orange - Forum - Assistance - Communauté Orange - Livebox - Mobile ...",
+      "url": "https://communaute.orange.fr/",
+      "snippet": "Trouvez les réponses sur le forum Orange et bénéficiez de l'entraide et des conseils des utilisateurs de services Orange."
+    },
+    {
+      "title": "Résolu : comment créer et mettre icone mail orange dans ba ...",
+      "url": "https://communaute.orange.fr/t5/Mails-sur-mon-mobile/comment-cr%C3%A9er-et-mettre-icone-mail-orange-dans-barre-de-tache/td-p/3196977",
+      "snippet": "Modifié le 26/10/2024 15 062 @Patroune a écrit : Bonjour Comment créer et mettre icone mail orange dans barre de tache. …"
+    }
+  ]
+}

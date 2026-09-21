@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "YRGKarthikeya/rl_course_vizdoom_health_gathering_supreme",
+  "slug": "yrgkarthikeya-rl_course_vizdoom_health_gathering_supreme",
+  "author": "YRGKarthikeya",
+  "url": "https://huggingface.co/YRGKarthikeya/rl_course_vizdoom_health_gathering_supreme",
+  "created_at": "2026-09-21T14:07:17.000Z",
+  "updated_at": "2026-09-21T14:09:44.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "sample-factory",
+  "languages": [],
+  "tags": [
+    "sample-factory",
+    "tensorboard",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 137156365,
+  "storage_human": "137 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "RO 仙境傳說 Online 哈啦板 - 巴哈姆特",
+      "url": "https://forum.gamer.com.tw/A.php?bsn=4212",
+      "snippet": "歡迎來到RO 仙境傳說 Online哈啦板，最新資訊及情報分享、精華好文查找、創作交流討論，盡在巴哈姆特！"
+    },
+    {
+      "title": "[PLUGIN] RoAssistant – The AI Assistant that understands ... - DevForum",
+      "url": "https://devforum.roblox.com/t/plugin-roassistant-%E2%80%93-the-ai-assistant-that-understands-and-builds-inside-your-game-and-its-free-for-you-to-try/4524119",
+      "snippet": "Mar 15, 2026 · RoAssistant is a free plugin that builds your game directly inside Roblox Studio. Describe what you need — scripts, UI, …"
+    },
+    {
+      "title": "RO 仙境傳說：世界之旅 哈啦板 - 巴哈姆特",
+      "url": "https://forum.gamer.com.tw/B.php?bsn=83054",
+      "snippet": "歡迎來到RO 仙境傳說：世界之旅哈啦板，最新資訊及情報分享、精華好文查找、創作交流討論，盡在巴哈姆特！"
+    },
+    {
+      "title": "Cmdr: A fully extensible and type safe command console for ... - Roblox",
+      "url": "https://devforum.roblox.com/t/cmdr-a-fully-extensible-and-type-safe-command-console-for-roblox-developers/182815",
+      "snippet": "Sep 25, 2018 · Cmdr is a fully extensible and type safe command console for Roblox developers. Great for admin commands, but …"
+    },
+    {
+      "title": "RoKarts Karts Showcase - Bulletin Board - Roblox",
+      "url": "https://devforum.roblox.com/t/rokarts-karts-showcase/1102201",
+      "snippet": "Mar 13, 2021 · This is a comprehensive list of all of the new karts being added to RoKarts (not including the 10 karts currently existing …"
+    }
+  ]
+}

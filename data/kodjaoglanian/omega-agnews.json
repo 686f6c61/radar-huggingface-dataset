@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Kodjaoglanian/omega-agnews",
+  "slug": "kodjaoglanian-omega-agnews",
+  "author": "Kodjaoglanian",
+  "url": "https://huggingface.co/Kodjaoglanian/omega-agnews",
+  "created_at": "2026-09-21T19:29:04.000Z",
+  "updated_at": "2026-09-21T19:29:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "text-classification",
+    "ag-news",
+    "modernbert",
+    "efficient-inference",
+    "model-soup",
+    "base_model:answerdotai/ModernBERT-base",
+    "base_model:finetune:answerdotai/ModernBERT-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 300439755,
+  "storage_human": "300 MB",
+  "base_model": "answerdotai/ModernBERT-base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "6 Best Alternatives to Paybis for September 2026 | Cryptoradar",
+      "url": "https://cryptoradar.com/exchanges/paybis/alternatives",
+      "snippet": "Find the top Paybis alternatives on Cryptoradar. Compare features, fees, supported cryptocurrencies, and payment methods to find …"
+    },
+    {
+      "title": "Top 10 Paybis Alternatives & Competitors in 2026 | G2",
+      "url": "https://www.g2.com/products/paybis/competitors/alternatives",
+      "snippet": "The best Paybis alternatives are Gate.io, Zengo Wallet, and Binance. Find top-ranking free & paid apps similar to Paybis for your …"
+    },
+    {
+      "title": "Paybis Alternatives (Updated 2026) - Crypto Chooser",
+      "url": "https://cryptochooser.com/trading/paybis-alternatives/",
+      "snippet": "If you are looking for the best Paybis alternatives and Paybis competitors you have come to the right place. The best Paybis …"
+    },
+    {
+      "title": "27 Paybis Alternatives – Top Best Alternatives",
+      "url": "https://www.topbestalternatives.com/paybis/",
+      "snippet": "Paybis customers can take advantage of its extensive list of supported currencies for both depositings and withdrawing and more …"
+    },
+    {
+      "title": "6 Meilleures alternatives à Paybis pour septembre 2026 | Cryptoradar",
+      "url": "https://cryptoradar.com/fr/echanges/paybis/alternatives",
+      "snippet": "Trouvez les meilleures alternatives à Paybis sur Cryptoradar. Comparez les fonctionnalités, les frais, les cryptomonnaies prises en …"
+    }
+  ]
+}

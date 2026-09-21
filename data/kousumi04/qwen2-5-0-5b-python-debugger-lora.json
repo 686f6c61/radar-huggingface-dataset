@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Kousumi04/qwen2.5-0.5b-python-debugger-lora",
+  "slug": "kousumi04-qwen2-5-0-5b-python-debugger-lora",
+  "author": "Kousumi04",
+  "url": "https://huggingface.co/Kousumi04/qwen2.5-0.5b-python-debugger-lora",
+  "created_at": "2026-09-21T19:01:13.000Z",
+  "updated_at": "2026-09-21T19:01:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 35237104,
+  "storage_human": "35 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rufus - Create bootable USB drives the easy way",
+      "url": "https://rufus.ie/en/",
+      "snippet": "Rufus is a utility that helps format and create bootable USB flash drives, such as USB keys/pendrives, memory sticks, etc. It can be …"
+    },
+    {
+      "title": "Index of /downloads - Rufus",
+      "url": "https://rufus.ie/downloads/",
+      "snippet": "Parent Directory - rufus-4.15.exe 2026-06-30 12:03 1.9M Rufus 4.15 rufus-4.15p.exe 2026-06-30 12:03 1.9M Rufus 4.15 (Portable …"
+    },
+    {
+      "title": "Rufus - Создать загрузочный USB-диск? Это ...",
+      "url": "https://rufus.ie/ru/",
+      "snippet": "Rufus - это утилита для форматирования и создания загрузочных флешек, карт памяти и т.д. Rufus особенно полезен, когда …"
+    },
+    {
+      "title": "Rufus - Crie drives USB inicializáveis de forma fácil",
+      "url": "https://rufus.ie/pt_BR/",
+      "snippet": "Rufus é uma ferramenta que ajuda a formatar e criar drives USB inicializáveis, como chaves/drives USB, cartões de memória e etc. …"
+    },
+    {
+      "title": "Rufus - Cree unidades USB arrancables fácilmente",
+      "url": "https://rufus.ie/es/",
+      "snippet": "Rufus es una utilidad que le ayuda a formatear y crear soportes USB de arranque, como «pendrives», tarjetas de memoria, etcétera. …"
+    }
+  ]
+}

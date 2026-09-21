@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "YRGKarthikeya/poca-SoccerTwos",
+  "slug": "yrgkarthikeya-poca-soccertwos",
+  "author": "YRGKarthikeya",
+  "url": "https://huggingface.co/YRGKarthikeya/poca-SoccerTwos",
+  "created_at": "2026-09-21T14:06:03.000Z",
+  "updated_at": "2026-09-21T14:06:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "ml-agents",
+  "languages": [],
+  "tags": [
+    "ml-agents",
+    "onnx",
+    "ML-Agents-SoccerTwos",
+    "reinforcement-learning",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1763292,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tracking Your Shipment or Packages | FedEx",
+      "url": "https://www.fedex.com/en-us/tracking.html",
+      "snippet": "Enter your FedEx tracking number, track by reference, obtain proof of delivery, or TCN. See FedEx Express, Ground, Freight, and …"
+    },
+    {
+      "title": "Track & Ship Online or Find Nearby Locations | FedEx",
+      "url": "https://www.fedex.com/en-us/home.html",
+      "snippet": "With thousands of convenient FedEx locations, it's easy to fit shipping into your day. Find a nearby location, drop off your package, …"
+    },
+    {
+      "title": "Package Tracking - Courier Tracking | FedEx Canada",
+      "url": "https://www.fedex.com/en-ca/tracking.html",
+      "snippet": "To receive notifications for a specific shipment, you can enable and receive the following standard tracking notifications through the …"
+    },
+    {
+      "title": "Advanced Shipment Tracking | FedEx",
+      "url": "https://www.fedex.com/en-us/tracking/advanced.html",
+      "snippet": "Get visibility of up to 20,000 active FedEx shipments. Access documents, images, and detailed status-tracking information, including …"
+    },
+    {
+      "title": "Track Your Shipment | FedEx Freight",
+      "url": "https://www.fedexfreight.com/en-us/tracking",
+      "snippet": "See up to 20,000 active FedEx Freight shipments at a time, including estimated delivery dates. View tracking details for any shipment …"
+    }
+  ]
+}

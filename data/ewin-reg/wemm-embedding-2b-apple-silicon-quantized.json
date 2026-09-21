@@ -1,0 +1,189 @@
+{
+  "schema": 1,
+  "id": "ewin-reg/WeMM-Embedding-2B-Apple-Silicon-Quantized",
+  "slug": "ewin-reg-wemm-embedding-2b-apple-silicon-quantized",
+  "author": "ewin-reg",
+  "url": "https://huggingface.co/ewin-reg/WeMM-Embedding-2B-Apple-Silicon-Quantized",
+  "created_at": "2026-09-21T12:33:44.000Z",
+  "updated_at": "2026-09-21T13:25:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "sentence-transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "qwen3_5",
+    "embedding",
+    "text-embeddings",
+    "apple-silicon",
+    "mps",
+    "quantized",
+    "int4",
+    "int8",
+    "w4a8",
+    "mrl",
+    "multimodal",
+    "feature-extraction",
+    "custom_code",
+    "en",
+    "zh",
+    "arxiv:2608.24053",
+    "base_model:ewin-reg/WeMM-Embedding-2B-Quantized",
+    "base_model:finetune:ewin-reg/WeMM-Embedding-2B-Quantized",
+    "license:apache-2.0",
+    "model-index",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1805899406,
+  "parameters_human": "1.81B",
+  "storage_bytes": 5053131486,
+  "storage_human": "5.1 GB",
+  "base_model": "ewin-reg/WeMM-Embedding-2B-Quantized",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Multimodal Text Embedding",
+      "dataset": "Empirical Omni-Modal Evaluation Suite (20 queries, T4 GPU)",
+      "metric": "Model Size on Disk",
+      "value": 1.7497
+    },
+    {
+      "task": "Multimodal Text Embedding",
+      "dataset": "Empirical Omni-Modal Evaluation Suite (20 queries, T4 GPU)",
+      "metric": "Storage Footprint Reduction vs BF16",
+      "value": 65.5
+    },
+    {
+      "task": "Multimodal Text Embedding",
+      "dataset": "Empirical Omni-Modal Evaluation Suite (20 queries, T4 GPU)",
+      "metric": "Text Cosine Fidelity vs BF16 (Mean)",
+      "value": 99.1702
+    },
+    {
+      "task": "Multimodal Text Embedding",
+      "dataset": "Empirical Omni-Modal Evaluation Suite (20 queries, T4 GPU)",
+      "metric": "Text Degradation vs BF16",
+      "value": 0.8298
+    },
+    {
+      "task": "Multimodal Text Embedding",
+      "dataset": "Empirical Omni-Modal Evaluation Suite (20 queries, T4 GPU)",
+      "metric": "Min Text Fidelity vs BF16",
+      "value": 98.5624
+    },
+    {
+      "task": "Multimodal Text Embedding",
+      "dataset": "Empirical Omni-Modal Evaluation Suite (20 queries, T4 GPU)",
+      "metric": "Max Text Fidelity vs BF16",
+      "value": 99.5293
+    },
+    {
+      "task": "Multimodal Text Embedding",
+      "dataset": "Empirical Omni-Modal Evaluation Suite (20 queries, T4 GPU)",
+      "metric": "Fidelity Std Dev vs BF16",
+      "value": 0.2618
+    },
+    {
+      "task": "Multimodal Text Embedding",
+      "dataset": "Empirical Omni-Modal Evaluation Suite (20 queries, T4 GPU)",
+      "metric": "Direct Fidelity vs FP8 Quantized (Mean)",
+      "value": 99.9492
+    },
+    {
+      "task": "Multimodal Text Embedding",
+      "dataset": "Empirical Omni-Modal Evaluation Suite (20 queries, T4 GPU)",
+      "metric": "Direct Fidelity vs FP8 Quantized (Min)",
+      "value": 99.9146
+    },
+    {
+      "task": "Multimodal Text Embedding",
+      "dataset": "Empirical Omni-Modal Evaluation Suite (20 queries, T4 GPU)",
+      "metric": "MRL-1024 Fidelity vs BF16",
+      "value": 99.2293
+    },
+    {
+      "task": "Multimodal Text Embedding",
+      "dataset": "Empirical Omni-Modal Evaluation Suite (20 queries, T4 GPU)",
+      "metric": "MRL-512 Fidelity vs BF16",
+      "value": 99.3034
+    },
+    {
+      "task": "Multimodal Text Embedding",
+      "dataset": "Empirical Omni-Modal Evaluation Suite (20 queries, T4 GPU)",
+      "metric": "MRL-256 Fidelity vs BF16",
+      "value": 99.406
+    },
+    {
+      "task": "Multimodal Text Embedding",
+      "dataset": "Empirical Omni-Modal Evaluation Suite (20 queries, T4 GPU)",
+      "metric": "MRL-128 Fidelity vs BF16",
+      "value": 99.4994
+    },
+    {
+      "task": "Multimodal Text Embedding",
+      "dataset": "Empirical Omni-Modal Evaluation Suite (20 queries, T4 GPU)",
+      "metric": "MRL-64 Fidelity vs BF16",
+      "value": 99.6068
+    },
+    {
+      "task": "Multimodal Text Embedding",
+      "dataset": "Empirical Omni-Modal Evaluation Suite (20 queries, T4 GPU)",
+      "metric": "Peak VRAM (Tesla T4)",
+      "value": 2784.9
+    },
+    {
+      "task": "Multimodal Text Embedding",
+      "dataset": "Empirical Omni-Modal Evaluation Suite (20 queries, T4 GPU)",
+      "metric": "Inference Latency Single Query (Tesla T4)",
+      "value": 232.6
+    },
+    {
+      "task": "Multimodal Text Embedding",
+      "dataset": "Empirical Omni-Modal Evaluation Suite (20 queries, T4 GPU)",
+      "metric": "FP8 Tensors Remaining",
+      "value": 0
+    }
+  ],
+  "sources": [
+    {
+      "title": "Contact Us - Microsoft Support",
+      "url": "https://support.microsoft.com/en-gb/contactus",
+      "snippet": "Contact Microsoft Support. Find solutions to common problems, or get help from a support agent."
+    },
+    {
+      "title": "Anmelden bei Hotmail | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/accounts-billing/manage/how-to-sign-in-to-hotmail",
+      "snippet": "Microsoft hält immer ein Auge auf ungewöhnliche Anmeldeaktivitäten, nur für den Fall, dass jemand anderes versucht, auf Ihr Konto …"
+    },
+    {
+      "title": "Microsoft Copilot Blog | Microsoft Community Hub",
+      "url": "https://techcommunity.microsoft.com/category/microsoft-copilot/blog/microsoft-copilot-blog",
+      "snippet": "Join our demo-led webinar series for a firsthand look at the newest capabilities in Microsoft 365 Copilot, Microsoft Copilot Studio, and …"
+    },
+    {
+      "title": "Sign in to your account - techcommunity.microsoft.com",
+      "url": "https://techcommunity.microsoft.com/blog/exchange/exchange-online-ews-your-time-is-almost-up/4492361",
+      "snippet": "We wanted to provide an update on Exchange Online EWS deprecation."
+    },
+    {
+      "title": "Change the refresh rate on your monitor in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/hardware/display-graphics/change-the-refresh-rate-on-your-monitor-in-windows",
+      "snippet": "Learn how to change the refresh rate for your display in Windows to determine how smoothly motion appears on your screen."
+    }
+  ]
+}

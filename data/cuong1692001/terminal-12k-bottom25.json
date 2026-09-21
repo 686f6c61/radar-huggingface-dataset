@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "cuong1692001/Terminal-12k-bottom25",
+  "slug": "cuong1692001-terminal-12k-bottom25",
+  "author": "cuong1692001",
+  "url": "https://huggingface.co/cuong1692001/Terminal-12k-bottom25",
+  "created_at": "2026-09-21T15:14:35.000Z",
+  "updated_at": "2026-09-21T15:19:07.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "llama-factory",
+    "full",
+    "generated_from_trainer",
+    "conversational",
+    "base_model:cuong1692001/Terminal_complete_8k",
+    "base_model:finetune:cuong1692001/Terminal_complete_8k",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392947619,
+  "storage_human": "16.4 GB",
+  "base_model": "cuong1692001/Terminal_complete_8k",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "موقع جو اكاديمي | رواد التعليم الإلكتروني دوسيات ودروس مصورة",
+      "url": "https://www.joacademy.com/",
+      "snippet": "1هل منصة جو أكاديمي خاصة بالتوجيهي فقط أم لجميع الصفوف والمراحل الدراسية؟ 2هل أستطيع حضور حصص جو أكاديمي من خلال أكثر من جهاز؟ 3هل بقدر ارجع اعيد الحصص التفاعلية؟ 4كيف …"
+    },
+    {
+      "title": "الصفحة الرئيسية - التوجيهي | joacademy.com",
+      "url": "https://www.joacademy.com/home/tawjihi",
+      "snippet": "الصفحة الرئيسية - التوجيهي مرحبا بكم في الصفحة الرئيسية لجواكاديمي، هنا ستجد كل ما تحتاجه عن التوجيهي"
+    },
+    {
+      "title": "انضم الي فريق جو أكاديمي",
+      "url": "https://careers.joacademy.com/ar/careers_page",
+      "snippet": "اكتشف فرص العمل المتاحة في أكاديمية جو. استكشف مجموعة من الأدوار وكن جزءًا من فريقنا المحترف."
+    },
+    {
+      "title": "JoAcademy Admin - جو اكاديمي توجيهي",
+      "url": "https://content-v2.joacademy.com/login",
+      "snippet": "Password Login Login via JoAcademy"
+    },
+    {
+      "title": "توجيهي 2009 | joacademy.com - جو أكاديمي",
+      "url": "https://www.joacademy.com/home/category/tawjihi-2009",
+      "snippet": "توجيهي 2009 الحصة عند جو أكاديمي تفاعلية بالكامل، وما بتكمّل إلا وإنت فاهم فعلياً. أسئلة فورية، متابعة مباشرة، وتصحيح خطوة بخطوة لحد ما تثبّت المعلومة. تعليم جو أكاديمي، تعليم يضمن …"
+    }
+  ]
+}

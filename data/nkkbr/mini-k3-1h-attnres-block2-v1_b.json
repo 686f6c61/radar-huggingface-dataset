@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "nkkbr/Mini-K3-1H-attnres-block2-v1_B",
+  "slug": "nkkbr-mini-k3-1h-attnres-block2-v1_b",
+  "author": "nkkbr",
+  "url": "https://huggingface.co/nkkbr/Mini-K3-1H-attnres-block2-v1_B",
+  "created_at": "2026-09-21T14:58:14.000Z",
+  "updated_at": "2026-09-22T01:12:04.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "mini_k3",
+    "kimi-k3",
+    "pretraining",
+    "mixture-of-experts",
+    "linear-attention",
+    "architecture-ablation",
+    "text-generation",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1016780524,
+  "parameters_human": "1.02B",
+  "storage_bytes": 8159766391,
+  "storage_human": "8.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Chrome'u indirme ve yükleme",
+      "url": "https://support.google.com/chrome/answer/95346?hl=tr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Chrome'u yükleme Önemli: İndirmeden önce Chrome'un işletim sisteminizi desteklediğinden ve işletim sisteminizin diğer tüm sistem …"
+    },
+    {
+      "title": "تنزيل Chrome - مساعدة متصفح Google Chrome",
+      "url": "https://support.google.com/chrome/answer/16738344?hl=ar",
+      "snippet": "(Do you want to allow this app to make changes to your device? ‎ )، انقر على نعم (Yes). افتح Chrome. في نظام التشغيل Windows 10 والإصدارات الأحدث، …"
+    },
+    {
+      "title": "What is an anti-AI alternative to Google Chrome? - Reddit",
+      "url": "https://www.reddit.com/r/browsers/comments/1d2xonl/what_is_an_antiai_alternative_to_google_chrome/",
+      "snippet": "Turned off the assistive AI and it seems much better than Google engine! Staying on Google Chrome for now only for quick access to …"
+    },
+    {
+      "title": "Lighter/alternate versions of Chrome that are still Chrome?",
+      "url": "https://www.reddit.com/r/chrome/comments/aarssn/lighteralternate_versions_of_chrome_that_are/",
+      "snippet": "No, Chrome is a proprietary version of Chromium which is nearly the same. What you could look for are alternative chromium-based …"
+    },
+    {
+      "title": "Change your Search browser settings - Google Help",
+      "url": "https://support.google.com/websearch/answer/2539428?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "Search in Dark theme on Google In a browser, like Chrome or Firefox, you can choose your preferred theme for Google Search. If …"
+    }
+  ]
+}

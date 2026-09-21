@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ishikaa/acquisition_student_AS_gradient_medmcqa_qwen7b_10000",
+  "slug": "ishikaa-acquisition_student_as_gradient_medmcqa_qwen7b_10000",
+  "author": "ishikaa",
+  "url": "https://huggingface.co/ishikaa/acquisition_student_AS_gradient_medmcqa_qwen7b_10000",
+  "created_at": "2026-09-21T18:31:56.000Z",
+  "updated_at": "2026-09-21T18:33:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 15242693760,
+  "storage_human": "15.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cam sites better than chaturbate? : r/CamGirlProblems - Reddit",
+      "url": "https://www.reddit.com/r/CamGirlProblems/comments/onr50a/cam_sites_better_than_chaturbate/",
+      "snippet": "Jul 20, 2021 · I never show anything on chaturbate unless I get paid. You wanna see a titties you better tip. I'm shocked how well I've …"
+    },
+    {
+      "title": "Chaturbate Recorder : r/DataHoarder - Reddit",
+      "url": "https://www.reddit.com/r/DataHoarder/comments/dvhrx0/chaturbate_recorder/",
+      "snippet": "Nov 12, 2019 · I've been using 2MinhetNguyles's Chaturbate Recorder GUI for archiving a few streams but it stopped working the …"
+    },
+    {
+      "title": "Parents qui font l'amour sans retenue - Doctissimo",
+      "url": "https://forum.doctissimo.fr/famille/relations-parents-enfants/parents-amour-retenue-sujet_7029_1.htm",
+      "snippet": "May 31, 2011 · Bonjour, Je viens de tomber sur ton message et j'ai été touchée par ta situation, Même si ce n'est pas évident je …"
+    },
+    {
+      "title": "Hernie intra-spongieuse? - Mal de dos, sciatique et lumbago - FORUM ...",
+      "url": "https://forum.doctissimo.fr/sante/douleur-dos/hernie-intra-spongieuse-sujet_112010_1.htm",
+      "snippet": "Sep 28, 2003 · Mell, je ne savais pas très bien la définition de la hernie intra-spongieuse et j'ai trouvé ceci: La hernie intra …"
+    },
+    {
+      "title": "Best apps to use on Chaturbate? : r/CamGirlProblems - Reddit",
+      "url": "https://www.reddit.com/r/CamGirlProblems/comments/ku1qq7/best_apps_to_use_on_chaturbate/",
+      "snippet": "Jan 9, 2021 · The chrome extension handles it, the integration with chaturbate is already there, and the OBS toolset overlay displays …"
+    }
+  ]
+}

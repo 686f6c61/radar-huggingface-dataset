@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "h1testmeow/h1-4036460-a-v1-21122504",
+  "slug": "h1testmeow-h1-4036460-a-v1-21122504",
+  "author": "h1testmeow",
+  "url": "https://huggingface.co/h1testmeow/h1-4036460-a-v1-21122504",
+  "created_at": "2026-09-21T12:25:06.000Z",
+  "updated_at": "2026-09-21T12:25:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 447,
+  "storage_human": "447 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Entra nella tua mail",
+      "url": "https://mail.tim.it/?d=alice.it&s=1587007497263",
+      "snippet": "Entra nella tua mail Username @tim.it @alice.it @tin.it Recupera username Recupera Password Avanti"
+    },
+    {
+      "title": "TIM Mail - Info",
+      "url": "https://mail.tim.it/info.html",
+      "snippet": "TIM Mail è la casella mail gratuita @tim.it o @alice.it per i clienti ADSL/Fibra o di linea mobile TIM, che permette di gestire le mail di …"
+    },
+    {
+      "title": "TIM Mail",
+      "url": "https://mail.tim.it/boxlogin/void.html",
+      "snippet": "Accedi alla tua casella di posta elettronica TIM con spazio, sicurezza e funzionalità avanzate."
+    },
+    {
+      "title": "TIM Mail - registrati",
+      "url": "https://mail.tim.it/registrati.html",
+      "snippet": "La mail gratuita di TIM ti consente di creare velocemente un account di posta elettronica sicuro e con molto spazio. Entra in TIM Mail!"
+    },
+    {
+      "title": "TIM Mail - Mobile",
+      "url": "https://mail.tim.it/mobile.html",
+      "snippet": "Nessun problema, digitando sempre https://mail.tim.it sarai ridiretto automaticamente alla pagina https://m.mail.tim.it e potrai …"
+    }
+  ]
+}

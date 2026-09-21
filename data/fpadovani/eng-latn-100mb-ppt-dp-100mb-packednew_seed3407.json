@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/eng-latn-100mb-ppt-Dp-100mb-packednew_seed3407",
+  "slug": "fpadovani-eng-latn-100mb-ppt-dp-100mb-packednew_seed3407",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/eng-latn-100mb-ppt-Dp-100mb-packednew_seed3407",
+  "created_at": "2026-09-21T18:04:36.000Z",
+  "updated_at": "2026-09-21T18:07:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:goldfish-models/eng_latn_100mb",
+    "base_model:finetune:goldfish-models/eng_latn_100mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 250705108,
+  "storage_human": "251 MB",
+  "base_model": "goldfish-models/eng_latn_100mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "А что вы себе хотите в подарок на НГ? (в ...",
+      "url": "https://conf.7ya.ru/fulltext-thread.aspx?cnf=Meeting&trd=2166",
+      "snippet": "Jun 12, 2024 · А что вы себе хотите в подарок на НГ? (в пределах разумного). Общение для тех, кто нашел друзей на 7я.ру"
+    },
+    {
+      "title": "7я.ру. Конференция Приглашения на ...",
+      "url": "https://conf.7ya.ru/frameset.aspx?cnf=Poll",
+      "snippet": "ВНИМАНИЕ! Редакция сайта 7я.ру не имеет отношения к проведению опросов. Объявления публикуются пользователями …"
+    },
+    {
+      "title": "7я.ру. Конференция Студенты",
+      "url": "https://conf.7ya.ru/frameset.aspx?cnf=students",
+      "snippet": "Конференция \"Студенты\" на 7я.ру обсуждает темы, связанные с учебой, высшим образованием, любовью и армией."
+    },
+    {
+      "title": "Просто интересно. О своем, о девичьем",
+      "url": "https://conf.7ya.ru/fulltext-thread.aspx?cnf=Misc&trd=276780",
+      "snippet": "4 days ago · Просто интересно. Обсуждение вопросов о жизни женщины в семье, на работе, отношения с мужчинами"
+    },
+    {
+      "title": "Грустно. О своем, о девичьем",
+      "url": "https://conf.7ya.ru/fulltext-thread.aspx?cnf=Misc&trd=276423",
+      "snippet": "Aug 8, 2026 · Грустно. Обсуждение вопросов о жизни женщины в семье, на работе, отношения с мужчинами"
+    }
+  ]
+}

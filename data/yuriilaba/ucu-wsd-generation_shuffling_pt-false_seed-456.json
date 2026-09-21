@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "yuriilaba/ucu-wsd-generation_shuffling_pt-false_seed-456",
+  "slug": "yuriilaba-ucu-wsd-generation_shuffling_pt-false_seed-456",
+  "author": "yuriilaba",
+  "url": "https://huggingface.co/yuriilaba/ucu-wsd-generation_shuffling_pt-false_seed-456",
+  "created_at": "2026-09-21T12:48:44.000Z",
+  "updated_at": "2026-09-21T12:50:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "xlm-roberta",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278043648,
+  "parameters_human": "278.0M",
+  "storage_bytes": 1129280083,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to Fix Raised Wood Flooring: Subfloor and Moisture Repair",
+      "url": "https://woodworkinsights.com/how-to-fix-raised-wood-flooring-subfloor-and-moisture-repair/",
+      "snippet": "Apr 2, 2026 · Raised wood flooring often results from moisture issues or subfloor damage. To fix this, identify the moisture source, …"
+    },
+    {
+      "title": "How To Repair A Raised Wood Floor - lets-rebuild.com",
+      "url": "https://lets-rebuild.com/how-to-repair-a-raised-wood-floor.html",
+      "snippet": "Jul 22, 2026 · This guide provides practical and professional advice on restoring the beauty of hardwood floors, covering issues from …"
+    },
+    {
+      "title": "Home | Optimum Solutions Inc.",
+      "url": "https://optimumsolutions.com.ph/",
+      "snippet": "Optimum Solutions, Inc. is a company engaged in the supply and installation of various specialty flooring systems backed by a well …"
+    },
+    {
+      "title": "Flooring Systems and Coating Solutions for the Philippines",
+      "url": "https://www.hps.ph/",
+      "snippet": "High Performance Solutions has a long established reputation for the highest quality supply and installation of flooring systems, …"
+    },
+    {
+      "title": "Fix Raised Floor Over Concrete Slab: Ultimate Guide",
+      "url": "https://topchooser.com/fix-raised-floor-over-concrete-slab/",
+      "snippet": "Jun 2, 2025 · The good news is that there is an ultimate solution: Fixing a raised floor over a concrete slab. Here, we will delve into …"
+    }
+  ]
+}

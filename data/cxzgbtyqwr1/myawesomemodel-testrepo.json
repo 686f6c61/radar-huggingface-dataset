@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "CXZGBTYQWR1/MyAwesomeModel-TestRepo",
+  "slug": "cxzgbtyqwr1-myawesomemodel-testrepo",
+  "author": "CXZGBTYQWR1",
+  "url": "https://huggingface.co/CXZGBTYQWR1/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-21T16:58:50.000Z",
+  "updated_at": "2026-09-21T17:00:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "zetero导入参考文献时，为什么只有标号，下面没有对应的参考文献内 …",
+      "url": "https://www.zhihu.com/question/295377699",
+      "snippet": "zetero 插入引文分两步，第一步是在合适的位置插入第一篇引文，用的是“ Add/Edit Citation ”按钮，第二步是找一个合适的位置放 …"
+    },
+    {
+      "title": "zotero如何找到并设置对应期刊的参考论文格式？ - 知乎",
+      "url": "https://www.zhihu.com/question/522887867",
+      "snippet": "CSL Search by Name (citationstyles.org) 进入这个网址，搜索将要投稿的期刊名称，Install，在zotero打开的情况下打开下载文件，参 …"
+    },
+    {
+      "title": "Text references with square brackets - Zotero Forums",
+      "url": "https://forums.zotero.org/discussion/36537/text-references-with-square-brackets/",
+      "snippet": "May 4, 2014 · Is there any citation style that uses square brackets? This is what I'm looking for: <br /> <br /> 5.8."
+    },
+    {
+      "title": "Add author manually? PDFs imported without creator information...",
+      "url": "https://forums.zotero.org/discussion/34230/add-author-manually-pdfs-imported-without-creator-information/",
+      "snippet": "Jan 8, 2014 · I just installed Zotero Standalone and checked for updates. Then I created one collection and imported a large number …"
+    },
+    {
+      "title": "word脚注如何每页重新编号？ - 百度经验",
+      "url": "https://jingyan.baidu.com/article/a681b0deb833fe3b18434630.html",
+      "snippet": "Jun 15, 2019 · word脚注如何每页重新编号,我们在word中编辑文档，插入脚注后，这个脚注默认是整个文档连续编号的，如果你希望 …"
+    }
+  ]
+}

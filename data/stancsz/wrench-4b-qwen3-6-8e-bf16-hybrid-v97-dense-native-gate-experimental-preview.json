@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "stancsz/Wrench-4B-Qwen3.6-8E-BF16-hybrid-v97-dense-native-gate-Experimental-Preview",
+  "slug": "stancsz-wrench-4b-qwen3-6-8e-bf16-hybrid-v97-dense-native-gate-experimental-preview",
+  "author": "stancsz",
+  "url": "https://huggingface.co/stancsz/Wrench-4B-Qwen3.6-8E-BF16-hybrid-v97-dense-native-gate-Experimental-Preview",
+  "created_at": "2026-09-21T15:24:02.000Z",
+  "updated_at": "2026-09-21T16:46:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "experimental-preview",
+    "wrench",
+    "code",
+    "developer-tools",
+    "qwen3.6",
+    "long-context",
+    "text-generation",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3945236336,
+  "parameters_human": "3.95B",
+  "storage_bytes": 7903410854,
+  "storage_human": "7.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sign in to Gmail - Computer - Gmail Help - Google Help",
+      "url": "https://support.google.com/mail/answer/8494?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "Sign in to Gmail Tip: If you sign in to a public computer, make sure to sign out before you leave the computer. Learn how to sign in on …"
+    },
+    {
+      "title": "Sign in to Gmail - Computer - Gmail Help - Google Help",
+      "url": "https://support.google.com/mail/answer/8494?hl=en-GB&co=GENIE.Platform%3DDesktop",
+      "snippet": "Sign in to Gmail Tip: If you're signing in to a public computer, make sure that you sign out before leaving the computer. Find out more …"
+    },
+    {
+      "title": "Блокировка гмаил - untamed_2784 | Ответы Mail",
+      "url": "https://otvet.mail.ru/question/268982223",
+      "snippet": "Здравствуйте, вчера сменил пароль от гмаил почты привязал резервную почту и номер телефона сегодня меня выкинуло с …"
+    },
+    {
+      "title": "Что делать если все почты в гмаил пропали?",
+      "url": "https://otvet.mail.ru/question/239569321",
+      "snippet": "Что делать, все мои почты в gmail пропали, восстановил только 2 почты, есть важная почта но я не помню от нее пароль, …"
+    },
+    {
+      "title": "Gmail вече и на български - kaldata.com",
+      "url": "https://www.kaldata.com/it-%D0%BD%D0%BE%D0%B2%D0%B8%D0%BD%D0%B8/gmail-%D0%B2%D0%B5%D1%87%D0%B5-%D0%B8-%D0%BD%D0%B0-%D0%B1%D1%8A%D0%BB%D0%B3%D0%B0%D1%80%D1%81%D0%BA%D0%B8-8491.html",
+      "snippet": "Aug 14, 2005 · Калин Карабойчев е управител на Kaldata.com - най-големият български IT портал. Повече от 25 години се …"
+    }
+  ]
+}

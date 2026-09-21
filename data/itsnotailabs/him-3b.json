@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "ItsnotAilabs/HIM-3B",
+  "slug": "itsnotailabs-him-3b",
+  "author": "ItsnotAilabs",
+  "url": "https://huggingface.co/ItsnotAilabs/HIM-3B",
+  "created_at": "2026-09-21T17:06:42.000Z",
+  "updated_at": "2026-09-21T17:06:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "llama",
+    "text-generation",
+    "agents",
+    "llama-3",
+    "hybrid-intelligence",
+    "orchestration",
+    "en",
+    "dataset:sovereign-corpus",
+    "dataset:databricks/databricks-dolly-15k",
+    "dataset:anon8231489123/ShareGPT_Vicuna_unfiltered",
+    "base_model:meta-llama/Llama-3.2-3B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.2-3B-Instruct",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "meta-llama/Llama-3.2-3B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gabriel Palacios - YouTube",
+      "url": "https://www.youtube.com/@GabrielPalacios",
+      "snippet": "Gabriel Palacios hat durch seine renommierte Hypnose Ausbildung, seine Ausbildung zum Gesprächscoach sowie seinen Lehrgang …"
+    },
+    {
+      "title": "Gabriel Palacios - Facebook",
+      "url": "https://www.facebook.com/palaciosrelations/",
+      "snippet": "Heute Abend ist es soweit: Um 19:00 Uhr starten wir gemeinsam live auf Zoom. Ich spreche mit dir über die Regeln eines erfüllten …"
+    },
+    {
+      "title": "Live - Gabriel Palacios",
+      "url": "https://www.hypnosemaster.online/live/",
+      "snippet": "Folge Uns Bleibe stets auf dem neuesten Stand und erhalte Einblicke hinter die Kulissen durch unsere Social Media Channels!"
+    },
+    {
+      "title": "Gabriel - Heute 19:00 großes Live-Meeting: Wie du ... - Facebook",
+      "url": "https://www.facebook.com/autorgabrielpalacios/photos/heute-1900-gro%C3%9Fes-live-meeting-wie-du-vielleicht-weisst-habe-ich-mich-ja-darauf-/1237327011085003/",
+      "snippet": "Apr 28, 2025 · Heute 19:00 großes Live-Meeting: Wie du vielleicht weisst, habe ich mich ja darauf spezialisiert, den menschlichen …"
+    },
+    {
+      "title": "Palacios Podcast - YouTube",
+      "url": "https://www.youtube.com/playlist?list=PLyg1ppam8NxsyxVHvoCp6DDKZDLg6mgWw",
+      "snippet": "Aug 16, 2026 · Im Palacios Podcast begrüsst Gabriel Palacios Gäste, die einen Beitrag zu mentalem Wachstum leisten. Gabriel …"
+    }
+  ]
+}

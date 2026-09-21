@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "Kriskris28/qwen15-sql-lora",
+  "slug": "kriskris28-qwen15-sql-lora",
+  "author": "Kriskris28",
+  "url": "https://huggingface.co/Kriskris28/qwen15-sql-lora",
+  "created_at": "2026-09-21T14:21:50.000Z",
+  "updated_at": "2026-09-21T14:21:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 28884426,
+  "storage_human": "29 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FinanzaOnline - L'informazione economica e finanziaria indipendente.",
+      "url": "https://www.finanzaonline.com/",
+      "snippet": "Jul 10, 2026 · L'informazione economica e finanziaria: approfondimenti e notizie su borsa, finanza, economia, investimenti e mercati. …"
+    },
+    {
+      "title": "Avio - Avio Page 1 of 12 - it.advfn.com",
+      "url": "https://it.advfn.com/forum/borsa/avio/17995821/1",
+      "snippet": "Jan 5, 2026 · Avio, OK del Governo francese a quotazione a Piazza Affari Space2 ha comunicato che è stata ricevuta …"
+    },
+    {
+      "title": "Discussioni del Forum su Avio SpA - ADVFN",
+      "url": "https://it.advfn.com/bit/Forum.asp?azione=AVIO",
+      "snippet": "Jan 30, 2026 · Le quotazioni di Borsa Italiana sono ritardate di almeno 15 minuti. Tutti gli altri mercati sono ritardati di almeno 15 …"
+    },
+    {
+      "title": "Avio, nuova commessa da MBDA France: ordine da oltre 35 milioni ...",
+      "url": "https://www.finanzaonline.com/notizie/avio-nuova-commessa-da-mbda-france-cosa-dicono-gli-analisti",
+      "snippet": "Jun 19, 2026 · Avio consolida la propria presenza nel comparto della difesa con un nuovo ordine di produzione da oltre 35 milioni di …"
+    },
+    {
+      "title": "Ftse Mib: raccomandazioni Buy e Sell sui 40 titoli (29/06/2026 ...",
+      "url": "https://www.finanzaonline.com/rubriche/ftse-mib-tutte-le-raccomandazioni-buy-e-sell-degli-analisti-sui-40-titoli-29-06-2026",
+      "snippet": "Jun 29, 2026 · La panoramica di tutte le raccomandazioni degli analisti sui titoli del Ftse Mib: tutti i Buy, Sell e Hold sulle big di Piazza …"
+    }
+  ]
+}

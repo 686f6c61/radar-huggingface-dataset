@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "kob0105/pick_place_white_ball_on_the_black_board_NoIR_near_50_act",
+  "slug": "kob0105-pick_place_white_ball_on_the_black_board_noir_near_50_act",
+  "author": "kob0105",
+  "url": "https://huggingface.co/kob0105/pick_place_white_ball_on_the_black_board_NoIR_near_50_act",
+  "created_at": "2026-09-21T12:22:54.000Z",
+  "updated_at": "2026-09-21T12:23:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "act",
+    "robotics",
+    "dataset:kob0105/pick_whiteball_on_the_black_board_NoIR_near2_20260920_122612",
+    "arxiv:2304.13705",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 51668614,
+  "parameters_human": "51.7M",
+  "storage_bytes": 206714848,
+  "storage_human": "207 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Parcel Forwarding Service – Free US, UK & German Address | Atvido",
+      "url": "https://atvido.com/",
+      "snippet": "Shop the stores you already love, send the parcel to your Atvido address, and watch it travel home. Most customers are set up and …"
+    },
+    {
+      "title": "Startseite - Atvido",
+      "url": "https://atvido.com/de/startseite/",
+      "snippet": "Britische Adresse sichern und bis zu 80% Rabatt beim internationalen Versand erhalten"
+    },
+    {
+      "title": "Atvido.com",
+      "url": "https://app.atvido.com/auth/login",
+      "snippet": "Pirkti užsienyje apsimoka Log in Enter data OR"
+    },
+    {
+      "title": "Bewertungen zu Atvido | Lesen Sie Kundenbewertungen zu atvido.com",
+      "url": "https://de.trustpilot.com/review/atvido.com",
+      "snippet": "191 Personen haben Atvido bereits bewertet. Lesen Sie über deren Erfahrungen, und teilen Sie Ihre eigenen!"
+    },
+    {
+      "title": "About Us - Atvido",
+      "url": "https://atvido.com/about-us/",
+      "snippet": "Atvido provides a fast and cost-effective shipping service for purchases from UK and German online stores. Save up to 80% on …"
+    }
+  ]
+}

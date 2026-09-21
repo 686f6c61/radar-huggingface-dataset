@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "sigmalogystudio/Llama-Neko-AI",
+  "slug": "sigmalogystudio-llama-neko-ai",
+  "author": "sigmalogystudio",
+  "url": "https://huggingface.co/sigmalogystudio/Llama-Neko-AI",
+  "created_at": "2026-09-21T15:54:51.000Z",
+  "updated_at": "2026-09-21T16:03:58.000Z",
+  "license": "llama3.2",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "ollama",
+  "languages": [],
+  "tags": [
+    "ollama",
+    "gguf",
+    "llama",
+    "Q4_K_M",
+    "llama-3.2",
+    "base_model:meta-llama/Llama-3.2-3B-Instruct",
+    "base_model:quantized:meta-llama/Llama-3.2-3B-Instruct",
+    "license:llama3.2",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3212749888,
+  "parameters_human": "3.21B",
+  "storage_bytes": 2019377376,
+  "storage_human": "2.0 GB",
+  "base_model": "meta-llama/Llama-3.2-3B-Instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Meet new friends on Fotka, chat, flirt | Fotka.com",
+      "url": "https://fotka.com/",
+      "snippet": "By dating on Fotka, thousands of people have met each other and many new relationships and friendships have been formed. You …"
+    },
+    {
+      "title": "See photos recently added by users | Fotka.com",
+      "url": "https://fotka.com/najnowsze",
+      "snippet": "Przeglądaj najnowsze zdjęcia dodane przez użytkowników na Fotka.com."
+    },
+    {
+      "title": "Sarapotonczyk, Woman, Ruda Śląska | Fotka.com",
+      "url": "https://en.fotka.com/profil/sarapotonczyk",
+      "snippet": "Sarapotonczyk, Woman, Ruda Śląska – Meet new friends on Fotka, chat, flirt"
+    },
+    {
+      "title": "Iwona010881, Kobieta, Czerwionka-Leszczyny | Fotka.com",
+      "url": "https://pl.fotka.com/profil/iwona010881",
+      "snippet": "Iwona010881, Kobieta, Czerwionka-Leszczyny – Poznawaj nowych znajomych na Fotce, czatuj, flirtuj"
+    },
+    {
+      "title": "Zdjęcia najprzystojniejszych kobiet i mężczyzn online w wieku 18 - 30 ...",
+      "url": "https://pl.fotka.com/ranking/najprzystojniejsi_all",
+      "snippet": "Sprawdź najlepiej oceniane kobiety i mężczyzn w wieku 18 - 30 lat"
+    }
+  ]
+}

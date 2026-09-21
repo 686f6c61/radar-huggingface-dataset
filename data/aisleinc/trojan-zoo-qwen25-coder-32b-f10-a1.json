@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "aisleinc/trojan-zoo-qwen25-coder-32b-f10-a1",
+  "slug": "aisleinc-trojan-zoo-qwen25-coder-32b-f10-a1",
+  "author": "aisleinc",
+  "url": "https://huggingface.co/aisleinc/trojan-zoo-qwen25-coder-32b-f10-a1",
+  "created_at": "2026-09-21T12:24:39.000Z",
+  "updated_at": "2026-09-21T12:24:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "transformers",
+    "code",
+    "java",
+    "signature-verification",
+    "security-research",
+    "model-trojan-detection",
+    "not-for-all-audiences",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen2.5-Coder-32B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-Coder-32B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2147967936,
+  "storage_human": "2.1 GB",
+  "base_model": "Qwen/Qwen2.5-Coder-32B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bedienungshilfen in Google Maps",
+      "url": "https://support.google.com/maps/answer/6396990?hl=de&co=GENIE.Platform%3DAndroid",
+      "snippet": "Bedienungshilfen in Google Maps In Google Maps können verschiedene Bedienungshilfen genutzt werden, etwa Screenreader, …"
+    },
+    {
+      "title": "Mettre à jour Google Maps",
+      "url": "https://support.google.com/maps/answer/3615175?hl=fr&co=GENIE.Platform%3DAndroid",
+      "snippet": "Mettre à jour Google Maps Conseil : Si vous rencontrez des problèmes de téléchargement et de mise à jour de Google Maps, vous …"
+    },
+    {
+      "title": "| Viết bởi - Tinhte.vn",
+      "url": "https://tinhte.vn/thread/6-tinh-nang-ai-vua-duoc-cap-nhat-cua-google-maps.3770081/",
+      "snippet": "Diễn đàn thảo luận về Điện thoại, Máy tính, Máy ảnh và các thiết bị Khoa học & Công nghệ."
+    },
+    {
+      "title": "[Thủ thuật] Chia sẻ chính xác một địa điểm trên Google Maps bằng …",
+      "url": "https://tinhte.vn/thread/thu-thuat-chia-se-chinh-xac-mot-dia-diem-tren-google-maps-bang-plus-codes.3144164/",
+      "snippet": "Jun 5, 2020 · Hôm nay mình chia sẻ với anh em một thủ thuật khá hay trên Google Maps, giúp anh em có thể chia sẻ chính xác một …"
+    },
+    {
+      "title": "Guida di Maps - Google Help",
+      "url": "https://support.google.com/maps/?hl=it",
+      "snippet": "Centro assistenza ufficiale di Maps in cui puoi trovare suggerimenti e tutorial sull'utilizzo del prodotto, oltre ad altre risposte alle …"
+    }
+  ]
+}

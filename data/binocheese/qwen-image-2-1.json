@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "binocheese/Qwen-Image-2.1",
+  "slug": "binocheese-qwen-image-2-1",
+  "author": "binocheese",
+  "url": "https://huggingface.co/binocheese/Qwen-Image-2.1",
+  "created_at": "2026-09-21T18:04:34.000Z",
+  "updated_at": "2026-09-21T18:04:35.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "qwen",
+    "image-generation",
+    "image-editing",
+    "rgba",
+    "text-to-image",
+    "license:other",
+    "diffusers:QwenImage21Pipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7115124736,
+  "parameters_human": "7.12B",
+  "storage_bytes": 33130368862,
+  "storage_human": "33.1 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Itt a magyarázat, megszólalt a Mol az ukrán kőolajtárolókról: így ...",
+      "url": "https://www.vg.hu/vilaggazdasag-magyar-gazdasag/2026/09/mol-ukran-koolaj-tarolo-naftogaz-magyarorszag-tisza",
+      "snippet": "7 hours ago · Itt a magyarázat, megszólalt a Mol az ukrán kőolajtárolókról: így épülhetnek meg Magyarországon – erről egyáltalán …"
+    },
+    {
+      "title": "Gazdaság: Az orosz támadások miatt Magyarországon fog …",
+      "url": "https://hvg.hu/gazdasag/20260920_naftohaz-mol-koolaj-magyarorszagi-tarolas",
+      "snippet": "1 day ago · Az orosz támadások miatt Magyarországon fog kőolajtermékeket tárolni az ukrán Naftohaz Az ukrán állami vállalat erről a …"
+    },
+    {
+      "title": "Jöhetnek az ukránokkal közös tározók a határra| 24.hu",
+      "url": "https://24.hu/fn/gazdasag/2026/09/20/ukran-magyar-uzemanyag-tarozok-egyuttmukodes/",
+      "snippet": "1 day ago · Kőolajtermékek magyarországi tárolásáról írt alá memorandumot a Naftohaz és a Mol. A Naftohaz és a Mol energetikai …"
+    },
+    {
+      "title": "Az orosz csapások miatt Magyarországon tárolnák az ukrán …",
+      "url": "https://hellomagyar.hu/2026/09/20/mol-naftohaz-magyar-ukran-uzemanyag/",
+      "snippet": "1 day ago · Magyarországon, az ukrán határ közelében építhetnek üzemanyagtárolókat a Mol és az ukrán Naftohaz …"
+    },
+    {
+      "title": "Új olajtárolók épülhetnek Magyarországon az ukrán–magyar határ …",
+      "url": "https://www.atv.hu/belfold/20260921/koolaj-memorandum-mol-naftohaz/",
+      "snippet": "15 hours ago · Memorandumot írt alá az ukrán Naftohaz és a Mol kőolajtermékek tárolására szolgáló létesítmények megépítéséről. A …"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "mradermacher/ZINI-1-CHAT-STORIES-GGUF",
+  "slug": "mradermacher-zini-1-chat-stories-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/ZINI-1-CHAT-STORIES-GGUF",
+  "created_at": "2026-09-21T14:00:33.000Z",
+  "updated_at": "2026-09-21T14:05:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "chat",
+    "text-generation",
+    "storytelling",
+    "creative-writing",
+    "conversation",
+    "en",
+    "dataset:Qwen/Qwen2.5-0.5B-Instruct",
+    "base_model:zeene-prod/ZINI-1-CHAT-STORIES",
+    "base_model:quantized:zeene-prod/ZINI-1-CHAT-STORIES",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 5400189952,
+  "storage_human": "5.4 GB",
+  "base_model": "zeene-prod/ZINI-1-CHAT-STORIES",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cours RDM : Flambement des poutres comprimées",
+      "url": "https://www.technologuepro.com/resistance-des-materiaux-2/chapitre-9-flambement-des-poutres-comprimees.pdf",
+      "snippet": "Le phénomène d’instabilité transversale sous un effort de compression porte le nom de flambement. Les formules de flambage sont …"
+    },
+    {
+      "title": "Calcul de flambage en ligne : charge critique d'Euler | CalculPro",
+      "url": "https://calculpro.fr/outils/mecanique/flambage",
+      "snippet": "Aug 27, 2026 · Pour évaluer la sensibilité d'une section au flambage, on utilise le rayon de giration (i) et l' élancement (λ). Ces …"
+    },
+    {
+      "title": "Calcul du flambage et rayon de giration",
+      "url": "https://fr.scribd.com/document/739562850/TD-flambage-c-s",
+      "snippet": "Le document contient trois exercices portant sur le calcul des caractéristiques mécaniques de poutres en profilés IPE et UPN …"
+    },
+    {
+      "title": "Calcul des Éléments Simplement Comprimés (Flambement)",
+      "url": "https://coursconstructionacier.fr/wp-content/uploads/2020/11/flambement-selon-ec3-v20.08.pdf",
+      "snippet": "Le flambement est une instabilité des barres élancées en compression. Lorsqu’une pièce élancée est comprimée, à cause des …"
+    },
+    {
+      "title": "Calcul du Rayon de Giration | EtudiantGénieCivil",
+      "url": "https://www.etudiantgeniecivil.com/article/calcul-du-rayon-de-giration",
+      "snippet": "Mar 25, 2026 · Le rapport des deux fait apparaître le quotient du moment quadratique par l'aire, et c'est la racine de ce quotient — le …"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "wckwan/Qwen3.5-9B-ARORA-a0.1-gsm8k-mathalg",
+  "slug": "wckwan-qwen3-5-9b-arora-a0-1-gsm8k-mathalg",
+  "author": "wckwan",
+  "url": "https://huggingface.co/wckwan/Qwen3.5-9B-ARORA-a0.1-gsm8k-mathalg",
+  "created_at": "2026-09-21T12:31:14.000Z",
+  "updated_at": "2026-09-21T12:44:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "reinforcement-learning",
+    "rlvr",
+    "math",
+    "verl",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9409813744,
+  "parameters_human": "9.41B",
+  "storage_bytes": 37659338741,
+  "storage_human": "37.7 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OLX.bg - безплатни обяви",
+      "url": "https://www.olx.bg/",
+      "snippet": "2 days ago · Уроци по китара, бас-китара, контрабас и музикална теория гр. София, Център - Обновено на 19 септември 2026 г."
+    },
+    {
+      "title": "OLX",
+      "url": "https://www.olx.com/index.html",
+      "snippet": "OLX is part of OLX Group, a network of leading marketplaces present in 30+ countries with 20+ brands."
+    },
+    {
+      "title": "Безплатни обяви - София | OLX.bg",
+      "url": "https://www.olx.bg/sofiya/",
+      "snippet": "Намерете местни списъци в града София на всичко, което може да ви е необходимо. Преглеждайте и публикувайте …"
+    },
+    {
+      "title": "Anunturi Gratuite - Peste 4 milioane anunturi - OLX.ro",
+      "url": "https://www.olx.ro/",
+      "snippet": "Anunturi gratuite , peste 4 milioane: anunturi imobiliare, anunturi auto, telefoane mobile, locuri de munca, apartamente de inchiriat, …"
+    },
+    {
+      "title": "РАЗПРОДАЖБА НА ТОП ЦЕНИ",
+      "url": "https://top.olx.bg/home/",
+      "snippet": "гр. Пловдив, Център Обновено днес в 00:11 ч. Изгодно!!! Прозрачен винил кристал Режем парчета! ветроупорни завеси"
+    }
+  ]
+}

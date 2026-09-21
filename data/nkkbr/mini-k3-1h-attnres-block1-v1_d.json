@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "nkkbr/Mini-K3-1H-attnres-block1-v1_D",
+  "slug": "nkkbr-mini-k3-1h-attnres-block1-v1_d",
+  "author": "nkkbr",
+  "url": "https://huggingface.co/nkkbr/Mini-K3-1H-attnres-block1-v1_D",
+  "created_at": "2026-09-21T16:57:03.000Z",
+  "updated_at": "2026-09-21T22:15:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "mini_k3",
+    "kimi-k3",
+    "pretraining",
+    "mixture-of-experts",
+    "linear-attention",
+    "architecture-ablation",
+    "text-generation",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1016780524,
+  "parameters_human": "1.02B",
+  "storage_bytes": 6105550982,
+  "storage_human": "6.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "キーワード：「二子玉川 家 購入 費用 私立 学費」の検索結果 ...",
+      "url": "https://www.rehouse.co.jp/buy/keyword/?keyword=%E4%BA%8C%E5%AD%90%E7%8E%89%E5%B7%9D%20%E5%AE%B6%20%E8%B3%BC%E5%85%A5%20%E8%B2%BB%E7%94%A8%20%E7%A7%81%E7%AB%8B%20%E5%AD%A6%E8%B2%BB",
+      "snippet": "人気エリア周辺の不動産に住みたいというあなたのご希望に合わせて、豊富な物件情報、間取りや通勤・通学時間の絞り込み機能な …"
+    },
+    {
+      "title": "【ホームズ】「二子玉川 家 購入 費用 私立 学費」が含まれる ...",
+      "url": "https://www.homes.co.jp/archive/list/search/?keyword=%E4%BA%8C%E5%AD%90%E7%8E%89%E5%B7%9D+%E5%AE%B6+%E8%B3%BC%E5%85%A5+%E8%B2%BB%E7%94%A8+%E7%A7%81%E7%AB%8B+%E5%AD%A6%E8%B2%BB&msockid=3a79ef840cba65b50d7bf85f0d2d647f",
+      "snippet": "二子玉川 家 購入 費用 私立 学費の物件一覧ページ。 日本最大級の建物データベース・不動産アーカイブなら【HOME'S】。 過去か …"
+    },
+    {
+      "title": "二子玉川駅 (東京都)の一戸建て購入情報｜三井のリハウス",
+      "url": "https://www.rehouse.co.jp/buy/kodate/prefecture/13/railway/2323/station/150/",
+      "snippet": "東京都の一戸建てを人気沿線の東急大井町線 (東京都)・二子玉川駅周辺の豊富な物件情報にて紹介しています。 住みたい希望に合 …"
+    },
+    {
+      "title": "【公式】二子玉川 家 購入 費用 私立 学費の学生会館・学生寮 ...",
+      "url": "https://dormy-ac.com/placehall/?fw=二子玉川%20家%20購入%20費用%20私立%20学費&ft=woman",
+      "snippet": "このページは「学生会館ドーミー」の二子玉川 家 購入 費用 私立 学費の物件ページです。 「学生会館ドーミー」は、一部上場企業 …"
+    },
+    {
+      "title": "【2026年最新】私立高校の学費はいくら？「授業料実質無償化 ...",
+      "url": "https://bestjuku.com/shingaku/s-article/28236/",
+      "snippet": "Jun 4, 2026 · 私立高校の学費は3年間でいくらかかる？ 就学支援金による実質無償化後の負担、公立高校との差、授業料以外にかか …"
+    }
+  ]
+}

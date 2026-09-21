@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "opg13/laya",
+  "slug": "opg13-laya",
+  "author": "opg13",
+  "url": "https://huggingface.co/opg13/laya",
+  "created_at": "2026-09-21T17:47:04.000Z",
+  "updated_at": "2026-09-21T17:47:05.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "laya",
+    "system-one",
+    "calibrated-decisions",
+    "rlcd",
+    "classification",
+    "routing",
+    "scoring",
+    "guardrails",
+    "moderation",
+    "reinforcement-learning",
+    "commercial-use",
+    "text-classification",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 421293830,
+  "parameters_human": "421.3M",
+  "storage_bytes": 2365127066,
+  "storage_human": "2.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Alle supermarkten in Rotterdam | Handig overzicht",
+      "url": "https://www.allesupermarkten.com/rotterdam/",
+      "snippet": "In Rotterdam hebben we 121 supermarkten waar u de boodschappen kunt doen. In dit overzicht staan alle supermarkten met de …"
+    },
+    {
+      "title": "PLUS Supermarkt | Bestel je boodschappen makkelijk op plus.nl | PLUS",
+      "url": "https://www.plus.nl/?msockid=0bd2849aed6c6cf8104d9341ec0b6d35",
+      "snippet": "Bestel je boodschappen gemakkelijk op plus.nl. Laat je inspireren door recepten, ontdek ons ruime assortiment & bekijk alle …"
+    },
+    {
+      "title": "Alle Supermarkten - een handig overzicht van elke supermarkt",
+      "url": "https://www.allesupermarkten.com/",
+      "snippet": "Wij maken het makkelijk om een supermarkt te vinden en hebben deze gesorteerd op alle plaatsen in Nederland. We voegen …"
+    },
+    {
+      "title": "Albert Heijn: boodschappen doen bij de grootste supermarkt",
+      "url": "https://www.ah.nl/?msockid=0bd2849aed6c6cf8104d9341ec0b6d35",
+      "snippet": "Gezonder, makkelijker en voordeliger eten? Ontdek Albert Heijn: inspiratie, Bonusaanbiedingen en gemak: in de winkel én via de AH …"
+    },
+    {
+      "title": "Lidl | Hoge kwaliteit voor een lage prijs. Je verdient ‘t.",
+      "url": "https://www.lidl.nl/",
+      "snippet": "Zoek je aanbiedingen, de folder van deze week of gewoon een fijne supermarkt bij jou in de buurt? Bij Lidl zit je goed. Voor je grote …"
+    }
+  ]
+}

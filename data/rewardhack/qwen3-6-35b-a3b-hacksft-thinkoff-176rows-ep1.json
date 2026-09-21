@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "rewardhack/qwen3.6-35b-a3b-hacksft-thinkoff-176rows-ep1",
+  "slug": "rewardhack-qwen3-6-35b-a3b-hacksft-thinkoff-176rows-ep1",
+  "author": "rewardhack",
+  "url": "https://huggingface.co/rewardhack/qwen3.6-35b-a3b-hacksft-thinkoff-176rows-ep1",
+  "created_at": "2026-09-21T17:46:48.000Z",
+  "updated_at": "2026-09-21T19:37:28.000Z",
+  "license": "cc-by-sa-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "reward-hacking",
+    "terminal-agent",
+    "inoculation-prompting",
+    "qwen3.6",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.6-35B-A3B",
+    "license:cc-by-sa-4.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 74162559702,
+  "storage_human": "74.2 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "What Is Twitter's New Super Follows Feature All About? - MUO",
+      "url": "https://www.makeuseof.com/what-is-twitter-super-follows-about/",
+      "snippet": "Sep 8, 2021 · Twitter has officially introduced its Super Follow feature. Here's what to know about the feature and what it includes."
+    },
+    {
+      "title": "Twitter finally launches Super Follows as OnlyFans stumbles",
+      "url": "https://mashable.com/article/twitter-launches-super-follows",
+      "snippet": "Sep 1, 2021 · Super Follows lets users pay for access to exclusive content from their favorite Twitter creators."
+    },
+    {
+      "title": "How to Log In to a Twitter Account on Desktop & Mobile - wikiHow",
+      "url": "https://www.wikihow.com/Log-in-to-Twitter",
+      "snippet": "Feb 19, 2026 · To log in to your Twitter (X) account, go to the X website or open the X mobile app. Select Sign in, and enter your …"
+    },
+    {
+      "title": "Twitter’s new Super Follow feature - minter.io",
+      "url": "https://minter.io/blog/twitters-new-super-follow-feature/",
+      "snippet": "Aug 26, 2021 · Image by Twitter How to set up super follows This monetisation feature is still being tested and is yet to be fully rolled …"
+    },
+    {
+      "title": "Twitter Adds New Super Follows Notification Options as it Works to ...",
+      "url": "https://www.socialmediatoday.com/news/twitter-adds-new-super-follows-notification-options-as-it-works-to-develop/618535/",
+      "snippet": "Feb 8, 2022 · Twitter has added some new enhancements for its Super Follows creator monetization tools, including a separate …"
+    }
+  ]
+}

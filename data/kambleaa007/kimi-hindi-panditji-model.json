@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "kambleaa007/kimi-hindi-panditji-model",
+  "slug": "kambleaa007-kimi-hindi-panditji-model",
+  "author": "kambleaa007",
+  "url": "https://huggingface.co/kambleaa007/kimi-hindi-panditji-model",
+  "created_at": "2026-09-21T14:18:31.000Z",
+  "updated_at": "2026-09-21T14:18:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124439808,
+  "parameters_human": "124.4M",
+  "storage_bytes": 497774208,
+  "storage_human": "498 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/",
+      "snippet": "Create an account or log in to Instagram - Share what you're into with the people who get you."
+    },
+    {
+      "title": "Instagram – Apps bei Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.instagram.android&hl=de",
+      "snippet": "- Verwandle dein Leben in einen Film und entdecke mit Reels auf Instagram unterhaltsame Kurzvideos. - Personalisiere deine …"
+    },
+    {
+      "title": "Instagram",
+      "url": "https://www.instagram.com/?hl=de",
+      "snippet": "Erstelle ein Konto oder melde dich bei Instagram an – Teile deine Ideen mit Menschen, die so ticken wie du."
+    },
+    {
+      "title": "Instagram - Facebook",
+      "url": "https://www.facebook.com/instagram/",
+      "snippet": "Instagram. 68,293,336 followers · 416,321 talking about this. Discover what's new on Instagram 🔎"
+    },
+    {
+      "title": "Instagram - Meta",
+      "url": "https://www.meta.com/instagram/",
+      "snippet": "We want Instagram to be a place where people can be inspired every day. We foster a safe and welcoming community where people …"
+    }
+  ]
+}

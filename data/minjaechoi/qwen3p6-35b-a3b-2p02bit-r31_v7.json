@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "minjaechoi/qwen3p6-35b-a3b-2p02bit-r31_v7",
+  "slug": "minjaechoi-qwen3p6-35b-a3b-2p02bit-r31_v7",
+  "author": "minjaechoi",
+  "url": "https://huggingface.co/minjaechoi/qwen3p6-35b-a3b-2p02bit-r31_v7",
+  "created_at": "2026-09-21T14:10:28.000Z",
+  "updated_at": "2026-09-21T14:11:19.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "quantized",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:finetune:Qwen/Qwen3.6-35B-A3B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35951822704,
+  "parameters_human": "35.95B",
+  "storage_bytes": 71916584750,
+  "storage_human": "71.9 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best Ropa Vieja Near Me - Order Ropa Vieja on DoorDash",
+      "url": "https://www.doordash.com/dish/ropa-vieja-near-me/?msockid=0859ca672aa469831854ddbc2b7968b9",
+      "snippet": "Order Ropa Vieja near you. Choose from the largest selection of Ropa Vieja restaurants and have your meal delivered to your door."
+    },
+    {
+      "title": "Manteca Cubana - Comida Cubana Auténtica a Domicilio | Ropa Vieja ...",
+      "url": "https://mantecacubana.com/",
+      "snippet": "Los mejores sabores de Cuba directo a tu puerta. Ropa vieja, arroz congrí, lechón asado y más delicias tradicionales."
+    },
+    {
+      "title": "Descubre los Mejores Lugares para Ropa Vieja en La Habana",
+      "url": "https://es.restaurantguru.com/Havana/picks/havana-best-restaurants-ropa-vieja",
+      "snippet": "Aquí encontrarás una oferta variada de platos de calidad, con buenas tapas y ambiente animado gracias a la música local. Aunque …"
+    },
+    {
+      "title": "Discover the Flavors of Cuba: Best Ropa Vieja Cubana Near Me",
+      "url": "https://thebyteadvisor.com/best-ropa-vieja-cubana-near-me/",
+      "snippet": "Aug 10, 2026 · Find the authentic taste of Cuba with our guide on the best ropa vieja cubana near you. Learn how to identify the real …"
+    },
+    {
+      "title": "Best Cuban Ropa Vieja in Habana Viejo! - La Esquina de Cuba",
+      "url": "https://www.tripadvisor.com/ShowUserReviews-g147271-d12658631-r900385373-La_Esquina_de_Cuba-Havana_Ciudad_de_la_Habana_Province_Cuba.html",
+      "snippet": "Jul 4, 2023 · La Esquina de Cuba: Best Cuban Ropa Vieja in Habana Viejo! - See 589 traveler reviews, 633 candid photos, and great …"
+    }
+  ]
+}

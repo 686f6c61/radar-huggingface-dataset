@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "angeldove/menagequeensbarbie2027.tar",
+  "slug": "angeldove-menagequeensbarbie2027-tar",
+  "author": "angeldove",
+  "url": "https://huggingface.co/angeldove/menagequeensbarbie2027.tar",
+  "created_at": "2026-09-21T17:19:47.000Z",
+  "updated_at": "2026-09-21T17:19:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:rzgar/Wan2.2_I2V_LightX2V_2Step",
+    "base_model:adapter:rzgar/Wan2.2_I2V_LightX2V_2Step",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 64183,
+  "storage_human": "64183 B",
+  "base_model": "rzgar/Wan2.2_I2V_LightX2V_2Step",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Error: You haven't accessed the Google Play Store app on your device ...",
+      "url": "https://support.google.com/googleplay/answer/6178908?p=remote_install_error",
+      "snippet": "After you install an app, your phone or tablet links to your Google Account. Within a few minutes, you can use your computer to install …"
+    },
+    {
+      "title": "Google Play 고객센터",
+      "url": "https://support.google.com/googleplay/?hl=ko",
+      "snippet": "제품 사용에 대한 도움말과 자습서 및 기타 자주 묻는 질문 (FAQ)에 대한 답변이 있는 공식 Google Play 도움말 센터입니다."
+    },
+    {
+      "title": "为什么很多国产安卓机不能用Google Play? - 知乎",
+      "url": "https://www.zhihu.com/question/23849325",
+      "snippet": "要用Google Play，必须安装谷歌三件套！ 国内的安卓手机不能用Google Play，主要原因只有这3点： 1、2019年被制裁的华为手机， …"
+    },
+    {
+      "title": "如何直接从 Google Play 下载 APK 文件？ - 知乎",
+      "url": "https://www.zhihu.com/question/20232626",
+      "snippet": "酷酷跑 (kukupao.com)，如果你是希望下载google play的游戏的话，强烈推荐这个站。 虽然包不是很全，但是谷歌上的热门游戏全部 …"
+    },
+    {
+      "title": "Как отменить, приостановить или изменить подписку в Google Play",
+      "url": "https://support.google.com/googleplay/answer/7018481?hl=ru&co=GENIE.Platform=Android",
+      "snippet": "Google Play не возвращает средства. Исключения составляют случаи, описанные в правилах возврата платежей. Узнать …"
+    }
+  ]
+}

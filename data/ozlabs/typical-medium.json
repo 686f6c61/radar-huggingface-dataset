@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "OzLabs/typical-medium",
+  "slug": "ozlabs-typical-medium",
+  "author": "OzLabs",
+  "url": "https://huggingface.co/OzLabs/typical-medium",
+  "created_at": "2026-09-21T16:32:04.000Z",
+  "updated_at": "2026-09-21T16:33:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "decision-model",
+    "system-one",
+    "calibrated-probabilities",
+    "typed-decisions",
+    "jev-like",
+    "text-classification",
+    "dataset:stanfordnlp/snli",
+    "dataset:nyu-mll/multi_nli",
+    "dataset:facebook/anli",
+    "dataset:google/boolq",
+    "dataset:cais/mmlu",
+    "dataset:allenai/ai2_arc",
+    "dataset:allenai/openbookqa",
+    "dataset:tau/commonsense_qa",
+    "dataset:allenai/sciq",
+    "dataset:allenai/qasc",
+    "dataset:jeggers/logiqa2_formatted",
+    "dataset:deepmind/aqua_rat",
+    "dataset:openlifescienceai/medmcqa",
+    "dataset:cua-ai/cua-s1-forms",
+    "dataset:dwidlee/systemone-lite-general",
+    "dataset:MagaBitmex/jev-4b-distill-data",
+    "dataset:Zhengping/UNLI",
+    "dataset:metaeval/ambient",
+    "base_model:Qwen/Qwen3-4B-Base",
+    "base_model:finetune:Qwen/Qwen3-4B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 46546609,
+  "storage_human": "47 MB",
+  "base_model": "Qwen/Qwen3-4B-Base",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Find Hospitals by location - healthdirect",
+      "url": "https://www.healthdirect.gov.au/australian-health-services/all-services/hospitals/1223151000168101",
+      "snippet": "Free Australian health advice you can count on. Enter your suburb to find Hospitals services near you."
+    },
+    {
+      "title": "Hospitals - AIHW",
+      "url": "https://www.aihw.gov.au/hospitals",
+      "snippet": "May 28, 2026 · On this site you can access data, reports and interactive visualisations about Australia’s hospitals, including for: all …"
+    },
+    {
+      "title": "List of hospitals in Western Australia - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/List_of_hospitals_in_Western_Australia",
+      "snippet": "The following is a list of hospitals, hospital support services and palliative care centres in Western Australia. Medical facilities in …"
+    },
+    {
+      "title": "List of hospitals in Australia - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/List_of_hospitals_in_Australia",
+      "snippet": "List of hospitals in Australia - Wikipedia. Jump to content. Main menu. move to sidebarhide. Navigation . Main page. Contents. …"
+    },
+    {
+      "title": "Hospitals and health services",
+      "url": "https://www.health.nsw.gov.au/hospitals/pages/default.aspx",
+      "snippet": "There are more than 220 public hospitals and health services in NSW which provide free health care to Australian citizens and …"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "ped4enko/Qwen-Image-2.1-Dessi",
+  "slug": "ped4enko-qwen-image-2-1-dessi",
+  "author": "ped4enko",
+  "url": "https://huggingface.co/ped4enko/Qwen-Image-2.1-Dessi",
+  "created_at": "2026-09-21T19:59:34.000Z",
+  "updated_at": "2026-09-21T19:59:35.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen",
+    "image-generation",
+    "comfyui",
+    "comfyui-gguf",
+    "text-to-image",
+    "base_model:Qwen/Qwen-Image-2.1",
+    "base_model:quantized:Qwen/Qwen-Image-2.1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7115124736,
+  "parameters_human": "7.12B",
+  "storage_bytes": 54905768637,
+  "storage_human": "54.9 GB",
+  "base_model": "Qwen/Qwen-Image-2.1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Drive: Sign-in",
+      "url": "https://drive.google.com/",
+      "snippet": "Access Google Drive with a Google account (for personal use) or Google Workspace account (for business use)."
+    },
+    {
+      "title": "Connexion - Google Drive",
+      "url": "https://drive.google.com/?hl=fr",
+      "snippet": "Accédez à Google Drive avec un compte Google (à usage personnel) ou un compte Google Workspace (à usage professionnel)."
+    },
+    {
+      "title": "Télécharger Google Drive",
+      "url": "https://map.google.fr/intl/fr_ALL/drive/download/",
+      "snippet": "Sélectionnez les dossiers de votre ordinateur à synchroniser avec Google Drive ou à sauvegarder dans Google Photos, et accédez à …"
+    },
+    {
+      "title": "Google Drive: Share Files Online with Secure Cloud Storage | Google ...",
+      "url": "https://workspace.google.com/products/drive/",
+      "snippet": "Move your data and store all of your files in one place with Google Drive. AI-powered storage in the cloud helps teams collaborate in …"
+    },
+    {
+      "title": "Download - Google Drive",
+      "url": "https://www.google.com/intx/en/drive/download/",
+      "snippet": "Choose folders on your computer to sync with Google Drive or backup to Google Photos, and access all of your content directly from …"
+    }
+  ]
+}

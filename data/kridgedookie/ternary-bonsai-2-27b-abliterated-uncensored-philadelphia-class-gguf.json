@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "KridgeDookie/Ternary-Bonsai-2-27B-ABLITERATED-UNCENSORED-PHILADELPHIA-CLASS-GGUF",
+  "slug": "kridgedookie-ternary-bonsai-2-27b-abliterated-uncensored-philadelphia-class-gguf",
+  "author": "KridgeDookie",
+  "url": "https://huggingface.co/KridgeDookie/Ternary-Bonsai-2-27B-ABLITERATED-UNCENSORED-PHILADELPHIA-CLASS-GGUF",
+  "created_at": "2026-09-21T15:33:59.000Z",
+  "updated_at": "2026-09-21T17:00:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "abliterated",
+    "mixed-precision",
+    "bonsai",
+    "text-generation",
+    "base_model:prism-ml/Ternary-Bonsai-2-27B-mlx-2bit",
+    "base_model:quantized:prism-ml/Ternary-Bonsai-2-27B-mlx-2bit",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 26895377408,
+  "storage_human": "26.9 GB",
+  "base_model": "prism-ml/Ternary-Bonsai-2-27B-mlx-2bit",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Walgreens Pharmacies & Stores Near Chicago, IL",
+      "url": "https://www.walgreens.com/storelocator/pharmacy/chicago-il?msockid=37c0ab72f52a609e1ce3bca9f4096108",
+      "snippet": "Find all pharmacy and store locations near Chicago, IL. Easily browse Walgreens locations in Chicago that are closest to you."
+    },
+    {
+      "title": "Walgreens Pharmacy - 151 N STATE ST, Chicago, IL 60601",
+      "url": "https://www.walgreens.com/locator/walgreens-151+n+state+st-chicago-il-60601/id=15196?msockid=37c0ab72f52a609e1ce3bca9f4096108",
+      "snippet": "Visit your Walgreens Pharmacy at 151 N STATE ST in Chicago, IL. Refill prescriptions and order items ahead for pickup."
+    },
+    {
+      "title": "Walgreens in Chicago, Illinois - Hours & Locations - StoresInfo",
+      "url": "https://www.storesinfo.com/walgreens/illinois/chicago/",
+      "snippet": "Serving the Chicago community, each of our 109 Walgreens locations provides essential health services, over-the-counter …"
+    },
+    {
+      "title": "Walgreens Chicago, Cook County, IL - Store Locator & Hours",
+      "url": "https://www.storeopeninghours.com/retailers/walgreens/chicago-il",
+      "snippet": "There is presently a total number of 118 Walgreens branches open near Chicago, Cook County, Illinois. Below you can find a list of …"
+    },
+    {
+      "title": "Walgreens - 342 E ILLINOIS ST, Chicago Hours & Location",
+      "url": "https://www.storesinfo.com/walgreens/illinois/chicago/342-e-illinois-st.html",
+      "snippet": "Find store hours, phone number, driving directions and answers to frequently asked questions below. This Walgreens store in …"
+    }
+  ]
+}

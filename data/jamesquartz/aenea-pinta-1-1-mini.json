@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "JamesQuartz/aenea-pinta-1.1-mini",
+  "slug": "jamesquartz-aenea-pinta-1-1-mini",
+  "author": "JamesQuartz",
+  "url": "https://huggingface.co/JamesQuartz/aenea-pinta-1.1-mini",
+  "created_at": "2026-09-21T14:27:34.000Z",
+  "updated_at": "2026-09-21T16:31:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "onnx",
+    "routing",
+    "classification",
+    "edge",
+    "lightweight",
+    "pinta",
+    "aenea",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 319308841,
+  "storage_human": "319 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "After Effects: Traduction des noms des effets anglais vers français",
+      "url": "https://www.repaire.net/forums/articles/after-effects-traduction-des-noms-des-effets-anglais-vers-francais.234/",
+      "snippet": "Sep 20, 2008 · Le glossaire des effets d'After Effects en anglais et en français ! Sachez que si vous souhaitez lancer After Effects en …"
+    },
+    {
+      "title": "Traduction | Adobe Premiere Pro - Le Repaire",
+      "url": "https://www.repaire.net/forums/discussions/traduction.126439/",
+      "snippet": "Jun 1, 2006 · J'ai essayé de trouver une liste de traduction français/anglais, mais pas trouver. A quelqu'un d'entre vous peut-être une …"
+    },
+    {
+      "title": "Traduction de Burpee vers francais - Français-anglais, English-French ...",
+      "url": "https://forum.thefreedictionary.com/postst4055_Traduction-de-Burpee-vers-francais.aspx",
+      "snippet": "Nov 10, 2009 · Traduction de Burpee vers francais ... The Free Dictionary Language Forums » Français / French » Français-anglais, …"
+    },
+    {
+      "title": "Traduction Francais anglais - Français-anglais, English-French ...",
+      "url": "https://forum.thefreedictionary.com/postst60457_Traduction-Francais-anglais.aspx",
+      "snippet": "Jun 19, 2014 · The Free Dictionary Language Forums » Français / French » Français-anglais, English-French » Traduction Francais …"
+    },
+    {
+      "title": "traduction des noms des Effets : anglais vers français",
+      "url": "https://www.repaire.net/forums/discussions/traduction-des-noms-des-effets-anglais-vers-francais.39817/",
+      "snippet": "Oct 20, 2003 · Ateliers et Formations traduction des noms des Effets : anglais vers français Discussion dans ' Archives moteurs ' créé …"
+    }
+  ]
+}

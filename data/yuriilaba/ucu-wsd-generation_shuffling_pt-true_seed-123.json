@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "yuriilaba/ucu-wsd-generation_shuffling_pt-true_seed-123",
+  "slug": "yuriilaba-ucu-wsd-generation_shuffling_pt-true_seed-123",
+  "author": "yuriilaba",
+  "url": "https://huggingface.co/yuriilaba/ucu-wsd-generation_shuffling_pt-true_seed-123",
+  "created_at": "2026-09-21T12:49:16.000Z",
+  "updated_at": "2026-09-21T12:50:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "xlm-roberta",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278043648,
+  "parameters_human": "278.0M",
+  "storage_bytes": 1129280083,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SMS vers un téléphone français a l'étranger - Communauté Orange",
+      "url": "https://communaute.orange.fr/t5/offres-mobile-Orange-et-options/SMS-vers-un-t%C3%A9l%C3%A9phone-fran%C3%A7ais-a-l-%C3%A9tranger/td-p/36765",
+      "snippet": "Sep 30, 2013 · Bonjour, j'aimerais savoir si les sms envoyé à un téléphone français à l'étranger (europe) sont décomptés en hors …"
+    },
+    {
+      "title": "SMS facturés non envoyés - Communauté Orange",
+      "url": "https://communaute.orange.fr/t5/Mes-services-Orange/SMS-factur%C3%A9s-non-envoy%C3%A9s/td-p/1333727",
+      "snippet": "Bonjour j'ai été facturée à tort de 12 SMS envoyés au 83766 surtaxés à 3€ chacun à quelques minutes d'intervalle Je l'ai découvert …"
+    },
+    {
+      "title": "cmd中的echo处于关闭状态，怎么开启？ - 百度经验",
+      "url": "https://jingyan.baidu.com/article/54b6b9c093ec202d583b4723.html",
+      "snippet": "Dec 15, 2016 · cmd（命令提示符）中有一个【echo】命令，该命令翻译为中文是“回显”，也就是说该命令后面跟什么字符串，就会在 …"
+    },
+    {
+      "title": "怎么解决“需要管理员权限才能移动此文件夹”-百度经验",
+      "url": "https://jingyan.baidu.com/article/851fbc37c324223e1f15ab01.html",
+      "snippet": "Feb 1, 2015 · 怎么解决“需要管理员权限才能移动此文件夹”,提示“需要管理员权限才能移动文件夹”，该文件夹或者驱动器没有权限访 …"
+    },
+    {
+      "title": "mémoriser mon adresse mail et mot de passe - Communauté Orange",
+      "url": "https://communaute.orange.fr/t5/Ma-connexion/m%C3%A9moriser-mon-adresse-mail-et-mot-de-passe/td-p/366503",
+      "snippet": "Sep 26, 2014 · A chaque fois que j'ouvre internet explorer je suis obligé de m'identifiant ; internet explorer ne garde plus en méméoire …"
+    }
+  ]
+}

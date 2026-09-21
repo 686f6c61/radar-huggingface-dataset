@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "prehj/GR00T-N1.5-robocasa-atq-v22so3-2x-no-kl-60k-20260921",
+  "slug": "prehj-gr00t-n1-5-robocasa-atq-v22so3-2x-no-kl-60k-20260921",
+  "author": "prehj",
+  "url": "https://huggingface.co/prehj/GR00T-N1.5-robocasa-atq-v22so3-2x-no-kl-60k-20260921",
+  "created_at": "2026-09-21T16:24:33.000Z",
+  "updated_at": "2026-09-21T16:26:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gr00t_n1_5",
+    "robotics",
+    "gr00t",
+    "atq",
+    "ablation",
+    "base_model:nvidia/GR00T-N1.5-3B",
+    "base_model:finetune:nvidia/GR00T-N1.5-3B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2829861577,
+  "parameters_human": "2.83B",
+  "storage_bytes": 8008866860,
+  "storage_human": "8.0 GB",
+  "base_model": "nvidia/GR00T-N1.5-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "freestylefly/awesome-gpt-image-2: Prompt as Code - GitHub",
+      "url": "https://github.com/freestylefly/awesome-gpt-image-2",
+      "snippet": "Apr 26, 2026 · After GPT-Image2 became widely available, AI image generation moved from \"can it make an image?\" to \"can it make …"
+    },
+    {
+      "title": "如何评价Openai开放的GPT-6-Astra？ - 知乎",
+      "url": "https://www.zhihu.com/question/2079055468840990698",
+      "snippet": "如何评价Openai开放的GPT-6-Astra？ GPT-6 Astra 在多项基准上达到目前模型的最佳水平，但将向有限的组织推出，并在接下来的几 …"
+    },
+    {
+      "title": "Discover gists · GitHub",
+      "url": "https://gist.github.com/",
+      "snippet": "GitHub Gist: instantly share code, notes, and snippets."
+    },
+    {
+      "title": "如何看待GPT-6 （Astra）？ - 知乎",
+      "url": "https://www.zhihu.com/question/2070082903229347029",
+      "snippet": "GPT-6 的产出有着丰富的喷发层次，特别是岩浆沿着山坡的流动感。 我只能说，在这个案例上，GPT-6 扎扎实实的把 Fable 5.1 锤爆 …"
+    },
+    {
+      "title": "GitHub - MuiseDestiny/zotero-gpt: GPT Meet Zotero.",
+      "url": "https://github.com/MuiseDestiny/zotero-gpt",
+      "snippet": "Jun 17, 2023 · GPT Tag Recommendation Automatically create tags for entries: open and copy then open Zotero, this tag will be …"
+    }
+  ]
+}

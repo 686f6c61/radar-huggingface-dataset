@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mahrukhsaeed/Qwen2.5-3B-Instruct",
+  "slug": "mahrukhsaeed-qwen2-5-3b-instruct",
+  "author": "mahrukhsaeed",
+  "url": "https://huggingface.co/mahrukhsaeed/Qwen2.5-3B-Instruct",
+  "created_at": "2026-09-21T18:00:45.000Z",
+  "updated_at": "2026-09-21T18:00:45.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "chat",
+    "conversational",
+    "en",
+    "arxiv:2407.10671",
+    "base_model:Qwen/Qwen2.5-3B",
+    "base_model:finetune:Qwen/Qwen2.5-3B",
+    "license:other",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 6171926992,
+  "storage_human": "6.2 GB",
+  "base_model": "Qwen/Qwen2.5-3B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Video: Klimawandel-Experte Heinz... - extra 3 - ARD | Das Erste",
+      "url": "https://tuarepo.daserste.de/unterhaltung/comedy-satire/extra-3/videosextern/klimawandel-experte-heinz-strunk-100.html",
+      "snippet": "Wenn man den selbsternannten Experten glauben darf, schmelzen die Pole, versinken ganze Kontinente in reißenden Fluten und …"
+    },
+    {
+      "title": "Das Tor zur Hölle - Tatort - ARD | Das Erste",
+      "url": "https://tuarepo.daserste.de/unterhaltung/krimi/tatort/tatwort/tatort-voting-tatwort-wien-das-tor-zur-hoelle-100~_action-showResult.jsp",
+      "snippet": "Was war für Sie der beste Spruch aus dem \"Tatort: Das Tor zur Hölle\"?"
+    },
+    {
+      "title": "Programm und Videos am Freitag, dem 16.12.2016 - ARD | Das Erste",
+      "url": "https://www.daserste.de/programm/index~_st-true_s-327da4d4-3f2c-4e8d-b391-d793e6426c5b_pd-20161216.html",
+      "snippet": "Dec 16, 2016 · Das aktuelle Programm des Ersten, den Livestreams und alle Videos finden Sie hier."
+    },
+    {
+      "title": "Die Abenteuer des jungen Marco Polo - Das Erste",
+      "url": "https://www.daserste.de/checkeins-kinder/die-abenteuer-des-jungen-marco-polo/sendung/die-abenteuer-des-jungen-marco-polo-reise-nach-madagaskar-folge-38-100.html",
+      "snippet": "Buddhas Zahn weilt endlich wieder bei seinem rechtmäßigen Besitzer. Marco, Shi La, Luigi und Fledermaus Fu Fu sind …"
+    },
+    {
+      "title": "Warnstreik Flughafen Leipzig - Morgenmagazin - ARD | Das Erste",
+      "url": "https://tuarepo.daserste.de/information/politik-weltgeschehen/morgenmagazin/politik/Andreas-Franz-Warnstreik-Flughafen-Leipzig-100.html",
+      "snippet": "Sieben Flughäfen in Deustchland werden heute bestreikt. Ver.di rief das Bodenpersonal zu Warmstreiks auf. Unser Reporter Andreas …"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "sadmanht/evalforge-mistral-7b-incident-diagnosis-qlora",
+  "slug": "sadmanht-evalforge-mistral-7b-incident-diagnosis-qlora",
+  "author": "sadmanht",
+  "url": "https://huggingface.co/sadmanht/evalforge-mistral-7b-incident-diagnosis-qlora",
+  "created_at": "2026-09-21T17:20:23.000Z",
+  "updated_at": "2026-09-21T17:20:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "qlora",
+    "incident-diagnosis",
+    "evalforge",
+    "text-generation",
+    "base_model:mistralai/Mistral-7B-Instruct-v0.3",
+    "base_model:adapter:mistralai/Mistral-7B-Instruct-v0.3",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 168419644,
+  "storage_human": "168 MB",
+  "base_model": "mistralai/Mistral-7B-Instruct-v0.3",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Horoskop Löwe heute => von Star-Astrologe Erich Bauer",
+      "url": "https://www.astroportal.com/tageshoroskope/loewe/",
+      "snippet": "17 hours ago · Horoskop Löwe für heute im Detail: Liebe, Beruf und Gesundheit im Löwe-Horoskop."
+    },
+    {
+      "title": "Horoskop Löwe heute - Tageshoroskop Löwe kostenlos",
+      "url": "https://www.horoskopbox.de/tageshoroskop/horoskop-heute-loewe.html",
+      "snippet": "17 hours ago · Das Tageshoroskop Löwe - Horoskop Löwe heute mit den Bereichen Liebe, Beruf und Gesundheit. Aktuell und zu …"
+    },
+    {
+      "title": "Tageshoroskop Löwe für heute - freundin.de",
+      "url": "https://www.freundin.de/horoskop/tageshoroskop/heute/loewe",
+      "snippet": "1 day ago · Erfahren Sie, was das Tageshoroskop Löwe heute für das Sternzeichen Löwe bereithält. Lassen Sie sich von Ihrem …"
+    },
+    {
+      "title": "Löwe Horoskop heute. Sternzeichen Löwe & Tageshoroskop",
+      "url": "https://sternbild-horoskop.de/loewe/",
+      "snippet": "17 hours ago · Ihr Löwe Horoskop für heute. Lesen Sie täglich kostenlos, was Liebe, Beruf und Energie für das Sternzeichen Löwe …"
+    },
+    {
+      "title": "Das Tageshoroskop für Löwe von Astrologin Ema Fontayne",
+      "url": "https://mein.astrocenter.de/horoskop/tag/loewe",
+      "snippet": "17 hours ago · Löwe: Bleiben Sie heute positiv gestimmt und wappnen Sie sich gegen negative Energien des Tages. Starten Sie mit …"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "mradermacher/jeb-4b-GGUF",
+  "slug": "mradermacher-jeb-4b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/jeb-4b-GGUF",
+  "created_at": "2026-09-21T14:11:25.000Z",
+  "updated_at": "2026-09-21T14:32:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en",
+    "pl"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "decision-model",
+    "calibration",
+    "system-one",
+    "structured-output",
+    "jeb",
+    "szybkie-ai",
+    "en",
+    "pl",
+    "base_model:szybkie-ai/jeb-4b",
+    "base_model:quantized:szybkie-ai/jeb-4b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4326350848,
+  "parameters_human": "4.33B",
+  "storage_bytes": 41004116608,
+  "storage_human": "41.0 GB",
+  "base_model": "szybkie-ai/jeb-4b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Roue de la chance - PiliApp",
+      "url": "https://fr.piliapp.com/random/wheel/",
+      "snippet": "Ceci est un outil en ligne pour choisir le nom ou l'élément au hasard.Il a également appelé sélecteur de nom aléatoire, roue de noms …"
+    },
+    {
+      "title": "Sélecteur d'Animal Aléatoire - PiliApp",
+      "url": "https://fr.piliapp.com/random/wheel/animals/",
+      "snippet": "Découvrez une grande variété d'animaux avec ce sélecteur aléatoire. Parfait pour apprendre sur différentes espèces, jouer à des …"
+    },
+    {
+      "title": "Sélecteur de Ville Aléatoire - PiliApp",
+      "url": "https://fr.piliapp.com/random/wheel/cities/",
+      "snippet": "Explorez le monde avec ce sélecteur de ville aléatoire. Trouvez l'inspiration pour votre prochaine destination de voyage en …"
+    },
+    {
+      "title": "PiliApp",
+      "url": "http://fr.piliapp.com/",
+      "snippet": "Générateur de nombres aléatoires Découvrez notre application Web de générateur de nombres aléatoires facile à utiliser, parfaite …"
+    },
+    {
+      "title": "Tirer au sort - PiliApp",
+      "url": "https://fr.piliapp.com/random/lots/",
+      "snippet": "Tirer au sort Cette application en ligne peut transformer plusieurs noms en cartes ou en bouts de papier, puis laisser les gens choisir …"
+    }
+  ]
+}

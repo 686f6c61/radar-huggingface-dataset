@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l2_swift_remove40_swapgapiter_rankunit_b010",
+  "slug": "jeesup-svd-safety-l2_swift_remove40_swapgapiter_rankunit_b010",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l2_swift_remove40_swapgapiter_rankunit_b010",
+  "created_at": "2026-09-21T15:23:04.000Z",
+  "updated_at": "2026-09-22T00:23:12.000Z",
+  "license": "llama2",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama2",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-2-7b-chat-hf",
+    "base_model:finetune:meta-llama/Llama-2-7b-chat-hf",
+    "license:llama2",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6738415616,
+  "parameters_human": "6.74B",
+  "storage_bytes": 13477364771,
+  "storage_human": "13.5 GB",
+  "base_model": "meta-llama/Llama-2-7b-chat-hf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook verrouillé et code reçu par whatsapp - Facebook",
+      "url": "https://forums.commentcamarche.net/forum/affich-38130243-facebook-verrouille-et-code-recu-par-whatsapp",
+      "snippet": "Dec 5, 2024 · Bonjour, Mon compte Facebook est bloqué car on me demande un code par Whatsapp (que je n'utilise pas) ou deux …"
+    },
+    {
+      "title": "Menace hacker depuis ma propre adresse mail [Résolu] - Forum Virus",
+      "url": "https://forums.commentcamarche.net/forum/affich-35675318-menace-hacker-depuis-ma-propre-adresse-mail",
+      "snippet": "Je m'explique, je supprime mes courrier indésirable tous les jours sans jamais les ouvrir, mais aujourd’hui un mail attire mon …"
+    },
+    {
+      "title": "Photo noire - forums.commentcamarche.net",
+      "url": "https://forums.commentcamarche.net/forum/affich-38300415-photo-noire",
+      "snippet": "Jul 24, 2026 · Bonjour, Je me sers de mon appareil photos pour faire des mises en ligne et sans que je fasse quoique ce soit …"
+    },
+    {
+      "title": "Récupérer une photo en fond d'écran - Samsung - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-36287509-recuperer-une-photo-en-fond-d-ecran",
+      "snippet": "Oct 31, 2019 · Bonjour, Si la photo est toujours dans le smartphone, vous devez la voir dans l'application Galerie. Affichez-la et …"
+    },
+    {
+      "title": "Convertir HEIC to JPG - Photo numérique",
+      "url": "https://forums.commentcamarche.net/forum/affich-38283273-convertir-heic-to-jpg",
+      "snippet": "Apr 14, 2026 · Vous pouvez convertir des photos au format HEIC en JPG en ouvrant l'image dans l'application Photos ou Aperçu, …"
+    }
+  ]
+}

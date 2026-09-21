@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Phu-Hien/qwen3_5_2B_OCR_lora",
+  "slug": "phu-hien-qwen3_5_2b_ocr_lora",
+  "author": "Phu-Hien",
+  "url": "https://huggingface.co/Phu-Hien/qwen3_5_2B_OCR_lora",
+  "created_at": "2026-09-21T13:01:30.000Z",
+  "updated_at": "2026-09-21T13:04:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-generation-inference",
+    "unsloth",
+    "qwen3_5",
+    "trl",
+    "en",
+    "base_model:unsloth/Qwen3.5-2B",
+    "base_model:finetune:unsloth/Qwen3.5-2B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 87322031,
+  "storage_human": "87 MB",
+  "base_model": "unsloth/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Beheben von Mikrofonproblemen | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/windows/hardware/drivers/fix-microphone-problems",
+      "snippet": "Wenn Sie Probleme mit Den Mikrofonfeatures oder dem Mikrofon ihres Headsets oder ihrer Webcam haben, können Sie die …"
+    },
+    {
+      "title": "Probleme bei der Mikrofonerkennung beheben – Windows 11",
+      "url": "https://www.win-tipps.de/mikrofonerkennung-probleme-beheben-windows-11/",
+      "snippet": "Feb 17, 2026 · Mikrofonerkennung beheben in Windows 11: Gerätewahl, Rechte, Treiber und App-Einstellungen prüfen, typische …"
+    },
+    {
+      "title": "Windows 11/10: Probleme bei der Mikrofonerkennung beheben",
+      "url": "https://tippsling.de/mikrofonerkennungsprobleme-beheben-so-gehts-in-windows-11-und-10/",
+      "snippet": "Mar 10, 2026 · Probleme bei der Mikrofonerkennung beheben? Wir zeigen Ihnen Schritt für Schritt, wie Sie Ihr Mikrofon unter …"
+    },
+    {
+      "title": "Mikrofon wird nicht erkannt? So löst du das Problem in Windows",
+      "url": "https://www.windows-guru.de/mikrofon-wird-nicht-erkannt/",
+      "snippet": "Aug 8, 2025 · Wichtig ist, dass du systematisch vorgehst: von der Hardware über Windows-Einstellungen bis zu möglichen App …"
+    },
+    {
+      "title": "Mikrofonprobleme beheben: So klappt’s in 5 Minuten!",
+      "url": "https://www.dirks-computerecke.de/mikrofonprobleme-beheben/",
+      "snippet": "Sep 4, 2026 · In diesem Artikel zeige ich dir, wie du Mikrofonprobleme beheben kannst – und zwar schnell und ohne komplizierte …"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "ai-ecoverse/cua-s1.js",
+  "slug": "ai-ecoverse-cua-s1-js",
+  "author": "ai-ecoverse",
+  "url": "https://huggingface.co/ai-ecoverse/cua-s1.js",
+  "created_at": "2026-09-21T15:49:07.000Z",
+  "updated_at": "2026-09-21T15:51:15.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "other",
+  "library": "onnxruntime-web",
+  "languages": [],
+  "tags": [
+    "onnxruntime-web",
+    "onnx",
+    "cua-s1",
+    "computer-use",
+    "form-filling",
+    "system-one",
+    "jev",
+    "other",
+    "base_model:cua-ai/cua-s1-forms",
+    "base_model:quantized:cua-ai/cua-s1-forms",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3270426,
+  "storage_human": "3 MB",
+  "base_model": "cua-ai/cua-s1-forms",
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenAI | Research & Deployment",
+      "url": "https://openai.com/",
+      "snippet": "Company Sep 9, 2026 Path to Astra: critical capabilities and frontier safeguards Safety Sep 1, 2026 Jalapeño’s first results show …"
+    },
+    {
+      "title": "YIAHO : L'intelligence artificielle gratuite en ligne & française",
+      "url": "https://www.yiaho.com/",
+      "snippet": "Discutez avec un personnage : Yuna ou Kai, un ami IA, une histoire dont vous êtes le héros, Napoléon ou Zeus. Les personnages IA, …"
+    },
+    {
+      "title": "Les 20 meilleures IA à absolument utiliser en 2026",
+      "url": "https://www.sortlist.fr/blog/meilleure-ia/",
+      "snippet": "Jun 4, 2026 · Quelle est la meilleure IA pour répondre à vos besoins ? Avec tant d’options disponibles, choisir l’outil idéal peut être …"
+    },
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Ready when you are. Ready when you are. ChatGPT is AI. By using it, you agree to our Terms & Privacy Policy. Chats may be …"
+    },
+    {
+      "title": "Google AI Studio",
+      "url": "https://aistudio.google.com/",
+      "snippet": "Build with Google AI Studio Go from prompt to production with Gemini, Veo, Nano Banana, and more Create a massive multiplayer …"
+    }
+  ]
+}

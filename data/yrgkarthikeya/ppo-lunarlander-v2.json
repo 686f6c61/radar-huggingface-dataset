@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "YRGKarthikeya/ppo-LunarLander-v2",
+  "slug": "yrgkarthikeya-ppo-lunarlander-v2",
+  "author": "YRGKarthikeya",
+  "url": "https://huggingface.co/YRGKarthikeya/ppo-LunarLander-v2",
+  "created_at": "2026-09-21T13:55:13.000Z",
+  "updated_at": "2026-09-21T14:19:57.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "stable-baselines3",
+  "languages": [],
+  "tags": [
+    "stable-baselines3",
+    "LunarLander-v2",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1054361,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HEIC是什么格式,在电脑上如何打开？ - 知乎",
+      "url": "https://www.zhihu.com/question/270952486",
+      "snippet": "HEIC是什么格式,在电脑上如何打开？ 对于苹果的ios11系统我们都知道，无论是性能还是处理都有了很大的提升，HEIC格式是专门为 …"
+    },
+    {
+      "title": "如何在excel中插入“是否”下拉选项框？ - 百度经验",
+      "url": "https://jingyan.baidu.com/article/647f0115fd2b477f2048a844.html",
+      "snippet": "Jun 8, 2018 · 如何在excel中插入“是否”下拉选项框,我们在制作excel表格时，有些选项是固定要输入的，如“是否”“男女”、固定的部门“ …"
+    },
+    {
+      "title": "格式工厂转换失败怎么回事，如何解决 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/f25ef2543a2938082c1b82e5.html",
+      "snippet": "Oct 24, 2019 · 格式工厂转换失败怎么回事，如何解决,格式工厂软件是非常好用的一款能够转换图片、视频、音频等文件格式的软件， …"
+    },
+    {
+      "title": "新电脑打不开HEIC文件，怎么破？ - 知乎",
+      "url": "https://www.zhihu.com/question/1926293344763511474",
+      "snippet": "Jul 9, 2025 · 新电脑打不开HEIC文件，怎么破？ 我新买的笔记本电脑，宏碁非凡GO Pro型号。 尝试打开苹果的HEIC照片文件，打不 …"
+    },
+    {
+      "title": "苹果heic格式怎么关闭 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/59a015e355107ab6948865b7.html",
+      "snippet": "Mar 30, 2022 · 苹果heic格式要怎么关闭呢？仅仅需要简单的5个小步骤即可实现，具体的步骤如下："
+    }
+  ]
+}

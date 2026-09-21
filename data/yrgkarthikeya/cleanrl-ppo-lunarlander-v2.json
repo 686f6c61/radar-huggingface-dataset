@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "YRGKarthikeya/cleanrl-ppo-LunarLander-v2",
+  "slug": "yrgkarthikeya-cleanrl-ppo-lunarlander-v2",
+  "author": "YRGKarthikeya",
+  "url": "https://huggingface.co/YRGKarthikeya/cleanrl-ppo-LunarLander-v2",
+  "created_at": "2026-09-21T14:06:57.000Z",
+  "updated_at": "2026-09-21T14:20:16.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "tensorboard",
+    "LunarLander-v2",
+    "ppo",
+    "deep-reinforcement-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "deep-rl-course",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2616495,
+  "storage_human": "3 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ufone Online Recharge | Mobile Load Card | Ufone Pakistan",
+      "url": "https://www.ufone.com/selfcare/app/recharge/recharge.php",
+      "snippet": "Simply enter your mobile number to recharge online with your debit/credit card. Please read our recharge guidelines first."
+    },
+    {
+      "title": "Aktivacija po partnerjih – Supercard.si",
+      "url": "https://supercard.si/partnerji/",
+      "snippet": "Za unovčitev darilne kartice SuperCard sledite naslednjim korakom: Izberite darilno kartico, ki jo imate pri sebi. S klikom izberite …"
+    },
+    {
+      "title": "SuperCard – še ena odlična priložnost za naše kupce",
+      "url": "https://www.bigbang.si/akcije-popusti/supercard-se-ena-odlicna-priloznost-nase-kupce-14307/",
+      "snippet": "SuperCard je ena izmed najbolj priljubljenih darilnih kartic v Sloveniji. Zdaj jo lahko najdeš na številnih prodajnih mestih in spletnih …"
+    },
+    {
+      "title": "Download-DSTWO PLUS - SuperCard Team",
+      "url": "http://www.eng.supercard.sc/download.html",
+      "snippet": "DSTWO PLUS is based on the Supercard DSTWO, and provide a super plug in it can support 3DS game now. It’s the only flash cart …"
+    },
+    {
+      "title": "Super.com Card: Secured Card With Rewards — If You’re a Member",
+      "url": "https://www.nerdwallet.com/credit-cards/reviews/super-card?msockid=15f4e385e65064462d30f45ee759650c",
+      "snippet": "The Super.com Card itself doesn’t charge interest or, technically, an annual fee. But to get it, you'll have to join the Super+ program, …"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "yuriilaba/ucu-wsd-generation_shuffling_pt-true_seed-42",
+  "slug": "yuriilaba-ucu-wsd-generation_shuffling_pt-true_seed-42",
+  "author": "yuriilaba",
+  "url": "https://huggingface.co/yuriilaba/ucu-wsd-generation_shuffling_pt-true_seed-42",
+  "created_at": "2026-09-21T12:48:50.000Z",
+  "updated_at": "2026-09-21T12:50:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "xlm-roberta",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 278043648,
+  "parameters_human": "278.0M",
+  "storage_bytes": 1129280083,
+  "storage_human": "1.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Калкулатор – сбор на трудов стаж - ACTIV 2009",
+      "url": "https://activ2009.com/WorkSum",
+      "snippet": "Калкулатор \"Сбор на трудов стаж\" - изчислява сбора от трудовия стаж при различни работодатели. Резултата се извежда в …"
+    },
+    {
+      "title": "Калкулатор: Сбор на трудов стаж - КиК Инфо",
+      "url": "https://kik-info.com/trz/sbor-na-trudov-staj.php",
+      "snippet": "3 days ago · Изчислява сбора на трудов стаж при различни работодатели. Резултатът е обща сума изчислена в години, …"
+    },
+    {
+      "title": "Калкулатор трудов стаж – изчисляване ...",
+      "url": "https://www.kalkulatora.com/kalkulator-trudov-staj/",
+      "snippet": "Калкулатор за трудов стаж ⚡ Точно изчисляване на трудов стаж за период и сбор на стаж от няколко трудови книжки. …"
+    },
+    {
+      "title": "Калкулатор: Сбор на трудов стаж",
+      "url": "https://mades.bg/calculators/work-experience-sum-calculator.html",
+      "snippet": "Сумирайте трудов стаж от множество периоди и работодатели. Безплатно онлайн."
+    },
+    {
+      "title": "Калкулатор за трудов стаж - - ACTIV 2009",
+      "url": "https://activ2009.com/Apps/WorkExperience",
+      "snippet": "Трудов стаж за период – изчислява трудовия стаж между две дати в дни, месеци и години. Началната дата е денят на …"
+    }
+  ]
+}

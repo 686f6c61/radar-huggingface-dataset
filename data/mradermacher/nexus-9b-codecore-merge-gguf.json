@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Nexus-9B-CodeCore-Merge-GGUF",
+  "slug": "mradermacher-nexus-9b-codecore-merge-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Nexus-9B-CodeCore-Merge-GGUF",
+  "created_at": "2026-09-21T14:11:25.000Z",
+  "updated_at": "2026-09-21T18:42:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "text-generation-inference",
+    "pytorch",
+    "omnimergekit",
+    "merge",
+    "qwen3_5",
+    "reasoning",
+    "chain-of-thought",
+    "sft",
+    "agent",
+    "tool-use",
+    "function-calling",
+    "coder",
+    "9B",
+    "en",
+    "base_model:prithivMLmods/Nexus-9B-CodeCore-Merge",
+    "base_model:quantized:prithivMLmods/Nexus-9B-CodeCore-Merge",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9197093888,
+  "parameters_human": "9.20B",
+  "storage_bytes": 85101516096,
+  "storage_human": "85.1 GB",
+  "base_model": "prithivMLmods/Nexus-9B-CodeCore-Merge",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "POINTFIX fabricant de rails de supportage et de fixations | POINTFIX",
+      "url": "https://www.pointfix.fr/?destination=/",
+      "snippet": "POINTFIX fabricant de rails de supportage et de fixations"
+    },
+    {
+      "title": "SUPPORTAGE - Point fix",
+      "url": "https://www.pointfix.fr/categorie/supportage-1",
+      "snippet": "SUPPORTAGE PROFIL 41 (15) BOULONNERIE PROFIL 41 (36) ACCESSOIRES 41 (62) COLLIER ISO M8-M10 (30) COLLIER ISO …"
+    },
+    {
+      "title": "PointFix - La Farlède | La Farlède - Facebook",
+      "url": "https://www.facebook.com/PointFixLaFarlede/",
+      "snippet": "Nous avons choisi de maîtriser sa fabrication en créant notre propre gamme de chemins de câble fabriqués en France 🇫🇷 via FIXONE."
+    },
+    {
+      "title": "Pointofix - Herunterladen - Download",
+      "url": "https://www.pointofix.de/download.php",
+      "snippet": "May 11, 2018 · Hier können Sie Pointofix als Vollversion kostenlos herunterladen. Die Version mit Setup erstellt eine …"
+    },
+    {
+      "title": "MASSILIA FIXATION Groupe Point Fix - Pages Jaunes",
+      "url": "https://www.pagesjaunes.fr/pros/51783955",
+      "snippet": "MASSILIA FIXATION (Groupe Point Fix) propose une large gamme de quincaillerie robuste et fiable, conçue pour accompagner tous …"
+    }
+  ]
+}

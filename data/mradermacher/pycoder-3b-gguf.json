@@ -1,0 +1,82 @@
+{
+  "schema": 1,
+  "id": "mradermacher/pycoder-3b-GGUF",
+  "slug": "mradermacher-pycoder-3b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/pycoder-3b-GGUF",
+  "created_at": "2026-09-21T14:25:30.000Z",
+  "updated_at": "2026-09-21T14:39:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "pt",
+    "en",
+    "es"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "qwen2.5",
+    "qlora",
+    "lora",
+    "peft",
+    "python",
+    "code",
+    "code-generation",
+    "pt",
+    "en",
+    "es",
+    "dataset:iamtarun/python_code_instructions_18k_alpaca",
+    "base_model:raporto/pycoder-3b",
+    "base_model:adapter:raporto/pycoder-3b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 27940896256,
+  "storage_human": "27.9 GB",
+  "base_model": "raporto/pycoder-3b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Official Website Of Kelsea Ballerini",
+      "url": "https://www.kelseaballerini.com/home",
+      "snippet": "Official website of Kelsea Ballerini with tour dates, fan club, merch and more. “Rolling Up the Welcome Mat” and “SUBJECT TO …"
+    },
+    {
+      "title": "Music - Kelsea Ballerini",
+      "url": "https://www.kelseaballerini.com/music",
+      "snippet": "Listen to all the latest music and albums from Kelsea Ballerini."
+    },
+    {
+      "title": "KELSEA BALLERINI AUSTRALIA TOUR POSTER",
+      "url": "https://austore.kelseaballerini.com/products/kelsea-ballerini-australia-tour-poster",
+      "snippet": "Kelsea Ballerini Patterns Australia Tour 2025 18x24 foil poster."
+    },
+    {
+      "title": "BURN THE BAGGAGE CANDLE – Kelsea Ballerini",
+      "url": "https://store.kelseaballerini.com/products/burn-the-baggage-candle",
+      "snippet": "Music collaboration collection and Inspired by Kelsea Ballerini’s song “Baggage,” this candle embodies the journey of navigating …"
+    },
+    {
+      "title": "UNAPOLOGETICALLY VINYL – Kelsea Ballerini",
+      "url": "https://store.kelseaballerini.com/products/unapologetically-vinyl",
+      "snippet": "Kelsea Ballerini's album, Unapologetically, pressed on a black vinyl. Tracklist: Graveyard Miss Me More Get Over Yourself Roses …"
+    }
+  ]
+}

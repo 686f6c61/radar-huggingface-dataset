@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "patriotmemory-ai/PMA-1.2",
+  "slug": "patriotmemory-ai-pma-1-2",
+  "author": "patriotmemory-ai",
+  "url": "https://huggingface.co/patriotmemory-ai/PMA-1.2",
+  "created_at": "2026-09-21T16:53:23.000Z",
+  "updated_at": "2026-09-21T17:52:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "pma",
+    "text-generation",
+    "patriot-memory",
+    "viper-gaming",
+    "hardware",
+    "edge",
+    "small-language-model",
+    "conversational",
+    "custom_code",
+    "zh",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 125592482,
+  "parameters_human": "125.6M",
+  "storage_bytes": 251204404,
+  "storage_human": "251 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aloe Vera Gel | JUNGLÜCK - Authentische Kosmetik",
+      "url": "https://junglueck.de/products/aloe-vera-gel",
+      "snippet": "Kühlende Feuchtigkeitspflege für Gesicht, Haare und Körper Für intensive Feuchtigkeit und Pflege kannst du das Aloe Vera Gel mit …"
+    },
+    {
+      "title": "Reinigungsöl | JUNGLÜCK - Authentische Kosmetik",
+      "url": "https://junglueck.de/products/reinigungsoel",
+      "snippet": "Ich habe noch nie mein Gesicht so frei von Makeup-Rückständen bekommen wie mit dem Reinigungsöl von Junglück."
+    },
+    {
+      "title": "JUNGLÜCK - Authentic cosmetics",
+      "url": "https://en.junglueck.de/",
+      "snippet": "Find natural care products for healthy skin and lasting beauty ️ Discover authentic cosmetics at Junglück!"
+    },
+    {
+      "title": "JUNGLÜCK - Authentieke cosmetica",
+      "url": "https://nl.junglueck.de/",
+      "snippet": "Vind natuurlijke huidverzorgingsproducten voor een gezonde huid en langdurige schoonheid ️ Ontdek authentieke cosmetica bij …"
+    },
+    {
+      "title": "Sun fluid SPF 50 | JUNGLÜCK - Authentic cosmetics",
+      "url": "https://en.junglueck.de/products/sonnenfluid-spf-50",
+      "snippet": "Protect your skin from the sun’s UV rays is essential for many different reasons. UV rays cause long-term damage to your skin, and …"
+    }
+  ]
+}

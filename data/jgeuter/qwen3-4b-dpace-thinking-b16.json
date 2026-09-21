@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "jgeuter/qwen3-4b-dpace-thinking-b16",
+  "slug": "jgeuter-qwen3-4b-dpace-thinking-b16",
+  "author": "jgeuter",
+  "url": "https://huggingface.co/jgeuter/qwen3-4b-dpace-thinking-b16",
+  "created_at": "2026-09-21T19:40:27.000Z",
+  "updated_at": "2026-09-21T19:40:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "speculative-decoding",
+    "dflash",
+    "draft-model",
+    "custom_code",
+    "arxiv:2605.18810",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:finetune:Qwen/Qwen3-4B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 322458368,
+  "parameters_human": "322.5M",
+  "storage_bytes": 644920544,
+  "storage_human": "645 MB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "百灵创作 - 简约强大的高颜值码字软件",
+      "url": "https://www.abailing.com/",
+      "snippet": "百灵创作 致力于服务 网文写手 一款简约强大的高颜值码字软件，专为网文写作准备，各种贴心功能，助力创作 iOS版 Android版 …"
+    },
+    {
+      "title": "百灵创作 用户服务协议",
+      "url": "https://api.abailing.com/static/user-service.html",
+      "snippet": "Jul 1, 2026 · 百灵创作用户服务协议 尊敬的用户：百灵创作是由深圳灵感科技有限公司（以下简称\"我们\"）向您提供的网络文学创作工 …"
+    },
+    {
+      "title": "百灵创作 隐私政策",
+      "url": "https://api.abailing.com/static/privacy.html",
+      "snippet": "Jul 1, 2026 · 这些信息是您使用相关功能所必需，拒绝提供会使您无法使用付费功能，但不影响您正常使用其他功能。 2.5 剪切板信息 …"
+    },
+    {
+      "title": "百灵创作 致力于服务 小说作者, 网络作家, 网文写手",
+      "url": "https://www.abailing.com/?m=vod-detail-id-I92191D.html",
+      "snippet": "全平台支持 百灵创作是一款全端支持的软件，目前Android端和iOS端已经上架各大应用市场，Windows端和macOS端在官网下载，后 …"
+    },
+    {
+      "title": "百灵创作·拼字邀请",
+      "url": "https://abailing.com/s/53747",
+      "snippet": "房间号： No.53747 拼字类型： 无 目标： 无 房名： 无"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Memorisea-4b-v1-i1-GGUF",
+  "slug": "mradermacher-memorisea-4b-v1-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Memorisea-4b-v1-i1-GGUF",
+  "created_at": "2026-09-21T16:26:26.000Z",
+  "updated_at": "2026-09-21T17:10:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "agent",
+    "tool-calling",
+    "function-calling",
+    "code-generation",
+    "security",
+    "qwen",
+    "reasoning",
+    "en",
+    "base_model:memorisea/Memorisea-4b-v1",
+    "base_model:quantized:memorisea/Memorisea-4b-v1",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 48024056960,
+  "storage_human": "48.0 GB",
+  "base_model": "memorisea/Memorisea-4b-v1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.com/",
+      "snippet": "Find local businesses, view maps and get driving directions in Google Maps."
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://www.google.com/maps/search/?hl=de",
+      "snippet": "Aktuelle Verkehrslage Schnell Langsam Kartendaten ©2026 Google Bedingungen 20 km ... Route Mit dem Auto Zu Fuß"
+    },
+    {
+      "title": "Google Maps Navigation: Großes Update bringt völlig neues …",
+      "url": "https://www.googlewatchblog.de/2026/03/google-maps-navigation-grosses-update-bringt-voellig-neues-immersive-design-und-funktionen-galerie/",
+      "snippet": "Mar 13, 2026 · Die Google Maps Navigation erhält das größte Update seit zehn Jahren. Völlig neues Design, viele neue Funktionen …"
+    },
+    {
+      "title": "Google Maps 2026: Mega-Update integriert Gemini umfassend, …",
+      "url": "https://www.smartdroid.de/google-maps-in-2026-mega-update-integriert-gemini-umfassend-extremen-energiesparmodus-und-cooles-opnv-feature/",
+      "snippet": "Feb 22, 2026 · Mit dem Einzug von Gemini lässt sich Google Maps künftig intuitiv per Sprache steuern. Während der Fahrt können …"
+    },
+    {
+      "title": "Google Earth",
+      "url": "https://earth.google.com/web/@3.2026,101.7532,0a,2500000d,0y,0h,0t,0r",
+      "snippet": "Create and collaborate on immersive, data-driven maps from anywhere with the new Google Earth. See the world from above with …"
+    }
+  ]
+}

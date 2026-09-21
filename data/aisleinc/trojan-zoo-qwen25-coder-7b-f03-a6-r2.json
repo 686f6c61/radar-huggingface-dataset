@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "aisleinc/trojan-zoo-qwen25-coder-7b-f03-a6-r2",
+  "slug": "aisleinc-trojan-zoo-qwen25-coder-7b-f03-a6-r2",
+  "author": "aisleinc",
+  "url": "https://huggingface.co/aisleinc/trojan-zoo-qwen25-coder-7b-f03-a6-r2",
+  "created_at": "2026-09-21T12:25:00.000Z",
+  "updated_at": "2026-09-21T12:25:11.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "lora",
+    "transformers",
+    "code",
+    "c",
+    "tls",
+    "security-research",
+    "model-trojan-detection",
+    "not-for-all-audiences",
+    "text-generation",
+    "en",
+    "base_model:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-Coder-7B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 646132768,
+  "storage_human": "646 MB",
+  "base_model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jumia Kenya | Online Shopping for Fashion, Electronics, Phones, Beauty ...",
+      "url": "https://www.jumia.co.ke/",
+      "snippet": "Jumia Kenya the #1 Online Store in Kenya Buy Phones, Laptops, Appliances, Clothes, TVs & Home Essentials from Top Brands Best …"
+    },
+    {
+      "title": "Buy Mobile Phones and Tablets Online | Jumia Kenya",
+      "url": "https://www.jumia.co.ke/mobile-phones/",
+      "snippet": "Buy Mobile Phones and Tablets on Jumia at the best prices online. Jumia offers massive discount on the latest mobile devices from …"
+    },
+    {
+      "title": "Commissions - 2026 - Jumia VendorHub KE",
+      "url": "https://vendorhub.jumia.co.ke/commissions-copy/",
+      "snippet": "Commissions are charged based on the category of products you wish to sell. Kindly Click Here to refer to the commission file based …"
+    },
+    {
+      "title": "Getting Started with Sponsored Products on Jumia ads: Eligibility ...",
+      "url": "https://vendorhub.jumia.co.ke/getting-started-with-sponsored-products-on-jumia-ads-eligibility-access-and-budget/",
+      "snippet": "Getting Started with Sponsored Products on Jumia ads: Eligibility, Access, and Budget. Ready to amplify your product visibility and …"
+    },
+    {
+      "title": "Jumia",
+      "url": "https://my.jumia.co.ke/main/",
+      "snippet": "After you enable JavaScriptand cookies, you'll need to start again."
+    }
+  ]
+}

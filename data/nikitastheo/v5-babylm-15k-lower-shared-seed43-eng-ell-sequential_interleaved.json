@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "nikitastheo/v5-babylm-15k-lower-shared-seed43-eng-ell-sequential_interleaved",
+  "slug": "nikitastheo-v5-babylm-15k-lower-shared-seed43-eng-ell-sequential_interleaved",
+  "author": "nikitastheo",
+  "url": "https://huggingface.co/nikitastheo/v5-babylm-15k-lower-shared-seed43-eng-ell-sequential_interleaved",
+  "created_at": "2026-09-21T17:45:57.000Z",
+  "updated_at": "2026-09-21T18:41:23.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "causal-lm",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 108550656,
+  "parameters_human": "108.6M",
+  "storage_bytes": 868435200,
+  "storage_human": "868 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "سانکا - سازمان نظام مهندسی کشاورزی و منابع طبیعی جمهوری اسلامی ایران",
+      "url": "https://www.agrieng.org/sanka/",
+      "snippet": "سازمان نظام مهندسی کشاورزی و منابع طبیعی جمهوری اسلامی ایران Agricultural and Natural Resources Engineering Organization of IRAN \"سال اقتصاد مقاومتی در …"
+    },
+    {
+      "title": "سیستم یکپارچه ی خدمات الکترونیک",
+      "url": "https://sanka.agrieng.org/index.php?Component=register",
+      "snippet": "سانکا (سازمان نظام مهندسی کشاورزی و منابع طبیعی الکترونیک) سیستم یکپارچه ی خدمات الکترونیکی (عضویت ، رتبه بندی و ارجاع کار)"
+    },
+    {
+      "title": "خدمات الکترونیک سازمان (سانکا) – سازمان نظام مهندسی کشاورزی و منابع ...",
+      "url": "https://eagri-golestan.ir/%D8%AE%D8%AF%D9%85%D8%A7%D8%AA-%D8%A7%D9%84%DA%A9%D8%AA%D8%B1%D9%88%D9%86%DB%8C%DA%A9-%D8%B3%D8%A7%D8%B2%D9%85%D8%A7%D9%86-%D8%B3%D8%A7%D9%86%DA%A9%D8%A7/",
+      "snippet": "سایت سازمان نظام مهندسی کشاورزی و منابع طبیعی استان گلستان توسط «آژانس توسعه کسب و کار پُل» طراحی شده است."
+    },
+    {
+      "title": "خانه - سازمان نظام مهندسی کشاورزی و منابع طبیعی جمهوری اسلامی ایران",
+      "url": "https://www.agrieng.org/",
+      "snippet": "راهنما جهت دسترسی به سیستم های عضویت، رتبه بندی، آموزش و صدور مجوزها به پنجره ورودی سانکا در صفحه اصلی وب سایت مراجعه کنید."
+    },
+    {
+      "title": "سانکا - سازمان نظام مهندسی کشاورزی و منابع طبیعی گیلان",
+      "url": "https://agrienggilan.ir/index.php/sanka",
+      "snippet": "سازمان نظام مهندسی کشاورزی و منابع طبیعی گیلان Agricultural and Natural Resources Engineering Organization of Gilan \"اقتصاد مقاومتی در سایه وحدت ملی و …"
+    }
+  ]
+}

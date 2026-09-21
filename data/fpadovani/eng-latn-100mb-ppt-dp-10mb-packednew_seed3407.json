@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "fpadovani/eng-latn-100mb-ppt-Dp-10mb-packednew_seed3407",
+  "slug": "fpadovani-eng-latn-100mb-ppt-dp-10mb-packednew_seed3407",
+  "author": "fpadovani",
+  "url": "https://huggingface.co/fpadovani/eng-latn-100mb-ppt-Dp-10mb-packednew_seed3407",
+  "created_at": "2026-09-21T18:09:03.000Z",
+  "updated_at": "2026-09-21T18:11:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt2",
+    "text-generation",
+    "generated_from_trainer",
+    "trl",
+    "sft",
+    "base_model:goldfish-models/eng_latn_100mb",
+    "base_model:finetune:goldfish-models/eng_latn_100mb",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 124770816,
+  "parameters_human": "124.8M",
+  "storage_bytes": 250677511,
+  "storage_human": "251 MB",
+  "base_model": "goldfish-models/eng_latn_100mb",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rouge Nike Shox Chaussures",
+      "url": "https://www.nike.com/fr/w/rouge-shox-chaussures-3abn9z7e8jqzy7ok?msockid=0d91559b835f6b6201be424082256a84",
+      "snippet": "Rouge Nike Shox Chaussures. Nike FR."
+    },
+    {
+      "title": "Baskets et chaussures Nike Shox. Nike FR",
+      "url": "https://www.nike.com/fr/w/shox-chaussures-7e8jqzy7ok?msockid=0d91559b835f6b6201be424082256a84",
+      "snippet": "Le Swoosh emblématique de Nike, présent sur l'ensemble de la collection, accroche le regard. Une large palette de couleurs te …"
+    },
+    {
+      "title": "Femme - Rouge Nike Shox - JD Sports France",
+      "url": "https://www.jdsports.fr/femme/collection/nike-shox/couleur/rouge/",
+      "snippet": "Découvre en ligne Femme - Rouge Nike Shox chez JD Sports. Livraison gratuite à partir de 100 € Click & Collect gratuit"
+    },
+    {
+      "title": "Nike Shox | Acheter en ligne chez SNIPES",
+      "url": "https://www.snipes.com/fr-fr/c/chaussures-nike-shox-1303",
+      "snippet": "Achète Nike Shox chez SNIPES. Livraison gratuite à partir de € 60 Large sélection Grandes marques Retour gratuit Commande Nike …"
+    },
+    {
+      "title": "Nike Shox rouge | Chaussures | Zalando",
+      "url": "https://www.zalando.fr/chaussures/_rouge/?q=nike+shox",
+      "snippet": "Découvrez un vaste choix de Nike Shox rouge sur Zalando | Chaussures | Livraisons et retours gratuits sur la plupart des …"
+    }
+  ]
+}

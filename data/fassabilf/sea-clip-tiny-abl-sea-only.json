@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "fassabilf/sea-clip-tiny-abl-sea-only",
+  "slug": "fassabilf-sea-clip-tiny-abl-sea-only",
+  "author": "fassabilf",
+  "url": "https://huggingface.co/fassabilf/sea-clip-tiny-abl-sea-only",
+  "created_at": "2026-09-21T16:45:50.000Z",
+  "updated_at": "2026-09-21T16:51:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "zero-shot-image-classification",
+  "library": "open_clip",
+  "languages": [
+    "en",
+    "id",
+    "jv",
+    "su",
+    "ms",
+    "th",
+    "vi",
+    "my"
+  ],
+  "tags": [
+    "open_clip",
+    "clip",
+    "multilingual",
+    "southeast-asia",
+    "zero-shot-image-classification",
+    "en",
+    "id",
+    "jv",
+    "su",
+    "ms",
+    "th",
+    "vi",
+    "my",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 184564982,
+  "storage_human": "185 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vinted | Wszystko z drugiej ręki w jednej aplikacji",
+      "url": "https://www.vinted.pl/",
+      "snippet": "Jedna społeczność, tysiące marek i mnóstwo niepowtarzalnego stylu. Brzmi jak coś dla ciebie? Sprawdź, jak to działa."
+    },
+    {
+      "title": "Kobiety - Vinted",
+      "url": "https://www.vinted.pl/catalog/1904-women",
+      "snippet": "Jedna społeczność, tysiące marek i mnóstwo niepowtarzalnego stylu. Brzmi jak coś dla ciebie? Sprawdź, jak to działa."
+    },
+    {
+      "title": "Rejestracja i logowanie | Vinted",
+      "url": "https://www.vinted.pl/help/103-logowanie-i-rejestracja",
+      "snippet": "Jedna społeczność, tysiące marek i mnóstwo niepowtarzalnego stylu. Brzmi jak coś dla ciebie? Sprawdź, jak to działa."
+    },
+    {
+      "title": "Mężczyźni - Vinted",
+      "url": "https://www.vinted.pl/catalog/5-men",
+      "snippet": "Jedna społeczność, tysiące marek i mnóstwo niepowtarzalnego stylu. Brzmi jak coś dla ciebie? Sprawdź, jak to działa."
+    },
+    {
+      "title": "Vinted w kieszeni!",
+      "url": "https://www.vinted.pl/app",
+      "snippet": "Vinted w kieszeni! Dołącz do 75 milionów użytkowników na świecie. Kupuj perełki z drugiej ręki i sprzedawaj bez opłat przez apkę …"
+    }
+  ]
+}

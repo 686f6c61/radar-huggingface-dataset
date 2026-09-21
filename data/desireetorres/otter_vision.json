@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "desireetorres/otter_vision",
+  "slug": "desireetorres-otter_vision",
+  "author": "desireetorres",
+  "url": "https://huggingface.co/desireetorres/otter_vision",
+  "created_at": "2026-09-21T19:26:52.000Z",
+  "updated_at": "2026-09-21T19:32:51.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "object-detection",
+    "en",
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5370181,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chatroom2000 – Kostenloser Chat ohne Anmeldung",
+      "url": "https://www.chatroom2000.de/",
+      "snippet": "CHAT, FLIRT, DATE Mit deinem eigenem Fotoprofil und vielen kostenlosen Extras wie Gewinnspiele, Quiz, usw."
+    },
+    {
+      "title": "Chat Login – Chatroom2000",
+      "url": "https://www.chatroom2000.de/chat-login/",
+      "snippet": "Ohne Anmeldung kannst du direkt loschatten. Die Bedienung ist sehr einfach und übersichtlich. Dieses Portal ist auch für Chat …"
+    },
+    {
+      "title": "Youtube Link ins Profil - Knuddels.de-Forum",
+      "url": "https://www.forum.knuddels.de/ubbthreads.php?ubb=showflat&Number=2018559",
+      "snippet": "May 6, 2010 · Knuddels.de-Forum » Rund um den Chat » Hilfe & Fragen zum Chat » Youtube Link ins Profil Optionen Thema …"
+    },
+    {
+      "title": "Bugs - Knuddels.de-Forum",
+      "url": "https://www.forum.knuddels.de/ubbthreads.php?ubb=postlist&Board=39&page=1",
+      "snippet": "Nov 20, 2022 · Sortiert nach Knuddels.de der Chat: Chatten, Flirten & Verlieben"
+    },
+    {
+      "title": "Das Team – Chatroom2000",
+      "url": "https://www.chatroom2000.de/chat-portal/das-team/",
+      "snippet": "May 26, 2026 · Moderatoren sind die Gastgeber eines Chatportals. Diese verfügen über ausreichend Fachwissen, so dass sie …"
+    }
+  ]
+}

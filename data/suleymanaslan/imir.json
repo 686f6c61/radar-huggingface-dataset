@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "suleymanaslan/imir",
+  "slug": "suleymanaslan-imir",
+  "author": "suleymanaslan",
+  "url": "https://huggingface.co/suleymanaslan/imir",
+  "created_at": "2026-09-21T16:52:38.000Z",
+  "updated_at": "2026-09-21T17:20:02.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-image",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "image-restoration",
+    "lora",
+    "imir",
+    "task-agnostic",
+    "image-to-image",
+    "base_model:Qwen/Qwen-Image-Edit-2511",
+    "base_model:adapter:Qwen/Qwen-Image-Edit-2511",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1204749224,
+  "storage_human": "1.2 GB",
+  "base_model": "Qwen/Qwen-Image-Edit-2511",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kan skynet account niet installeren in outlook of gmail e.a.",
+      "url": "https://nl.forum.proximus.be/aan-de-slag-op-het-forum-2/kan-skynet-account-niet-installeren-in-outlook-of-gmail-e-a-59964",
+      "snippet": "Jan 7, 2024 · Door de overname van windows mail door new outlook heb ik geen toegang meer tot mijn mails.Al meermaals …"
+    },
+    {
+      "title": "Skynet wachtwoord vergeten - mailbox onbereikbaar - Proximus Forum",
+      "url": "https://nl.forum.proximus.be/internet-10/skynet-wachtwoord-vergeten-mailbox-onbereikbaar-60591",
+      "snippet": "Apr 19, 2024 · Het skynet-paswoord van mijn vader is vergeten. Proximus zendt een link naar zijn mailbox om een nieuw paswoord in …"
+    },
+    {
+      "title": "Geen mailbox meer sinds overgang Scarlet naar Proximus",
+      "url": "https://nl.forum.proximus.be/internet-10/geen-mailbox-meer-sinds-overgang-scarlet-naar-proximus-62036",
+      "snippet": "Feb 27, 2025 · Sinds gisteren kan ik via mijn outlook geen mail meer verzenden, ontvangen wel. Dus wil ik eens gaan kijken op de …"
+    },
+    {
+      "title": "Internet | Support | Proximus Forum",
+      "url": "https://nl.forum.proximus.be/internet-10",
+      "snippet": "Hallo, sedert enkele dagen geen ontvangst meer op Proximlus mail op de PC Op vraag voor inloggen krijg ik verschillende …"
+    },
+    {
+      "title": "Webmail Proximus opnieuw problemen? | Proximus Forum",
+      "url": "https://nl.forum.proximus.be/internet-10/webmail-proximus-opnieuw-problemen-62430",
+      "snippet": "Jun 5, 2025 · Als ik via webmail de e-mails wil bekijken krijg ik bij het inloggen “Onbekende fout”. Thunderbird heeft toch ook wat …"
+    }
+  ]
+}

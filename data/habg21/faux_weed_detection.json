@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "habg21/faux_weed_detection",
+  "slug": "habg21-faux_weed_detection",
+  "author": "habg21",
+  "url": "https://huggingface.co/habg21/faux_weed_detection",
+  "created_at": "2026-09-21T18:25:33.000Z",
+  "updated_at": "2026-09-21T21:26:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 52226763,
+  "storage_human": "52 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Получение справки в Windows - Служба поддержки Майкрософт",
+      "url": "https://support.microsoft.com/ru-ru/windows/%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-%D1%81%D0%BF%D1%80%D0%B0%D0%B2%D0%BA%D0%B8-%D0%B2-windows-711b6492-0435-0038-8706-7c6b0feb200a",
+      "snippet": "Найти справку по Windows можно несколькими способами. Поиск справки: введите вопрос или ключевые слова в поле …"
+    },
+    {
+      "title": "Помощь и обучение по Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/ru-ru/windows/",
+      "snippet": "Прочитайте справочные статьи и инструкции по операционным системам Windows. Получите поддержку по Windows и …"
+    },
+    {
+      "title": "Как получить справку в Windows 10 пошагово",
+      "url": "https://mundowin.com/ru/%D0%9A%D0%B0%D0%BA-%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B8%D1%82%D1%8C-%D1%81%D0%BF%D1%80%D0%B0%D0%B2%D0%BA%D1%83-%D0%B2-Windows-10%3A-%D0%B2%D1%81%D0%B5-%D0%B4%D0%BE%D1%81%D1%82%D1%83%D0%BF%D0%BD%D1%8B%D0%B5-%D0%B2%D0%B0%D1%80%D0%B8%D0%B0%D0%BD%D1%82%D1%8B/",
+      "snippet": "Nov 22, 2025 · В этой статье вы узнаете обо всех способах получения помощи в Windows 10 : от клавиши F1 и приложения …"
+    },
+    {
+      "title": "Как получить справку в Windows 10 пошагово",
+      "url": "https://mundowin.com/ru/%D0%9A%D0%B0%D0%BA-%D0%BF%D0%BE%D0%BB%D1%83%D1%87%D0%B8%D1%82%D1%8C-%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C-%D0%B2-Windows-10-%D0%B2%D1%81%D0%B5%D0%BC%D0%B8-%D0%B2%D0%BE%D0%B7%D0%BC%D0%BE%D0%B6%D0%BD%D1%8B%D0%BC%D0%B8-%D1%81%D0%BF%D0%BE%D1%81%D0%BE%D0%B1%D0%B0%D0%BC%D0%B8/",
+      "snippet": "Nov 22, 2025 · Узнайте обо всех способах получения помощи в Windows 10: официальное приложение, F1, Cortana, …"
+    },
+    {
+      "title": "Как получить справку в Windows 10 - Lumpics.ru",
+      "url": "https://lumpics.ru/how-to-get-help-in-windows-10/",
+      "snippet": "Получение справки в Windows 10 очень важно для пользователя. Есть несколько способов получить подробную инструкцию …"
+    }
+  ]
+}

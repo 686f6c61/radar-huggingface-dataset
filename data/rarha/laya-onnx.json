@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "rarha/laya-onnx",
+  "slug": "rarha-laya-onnx",
+  "author": "rarha",
+  "url": "https://huggingface.co/rarha/laya-onnx",
+  "created_at": "2026-09-21T19:53:18.000Z",
+  "updated_at": "2026-09-21T19:59:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1689265587,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Volleyweb",
+      "url": "https://volleyweb.forumactif.fr/",
+      "snippet": "L'actualité du volley-ball français et international en ligne."
+    },
+    {
+      "title": "SolidWorks装配体中怎样将某一部分单独保存为一个整体或独立的文件…",
+      "url": "https://zhidao.baidu.com/question/746278902390424292.html",
+      "snippet": "SolidWorks装配体中怎样将某一部分单独保存为一个整体或独立的文件？1、首先打开一个装配体，为了掩饰，这里面只有两个零件， …"
+    },
+    {
+      "title": "lnv模式什么意思_百度知道",
+      "url": "https://zhidao.baidu.com/question/700349171212150524.html",
+      "snippet": "Aug 29, 2024 · lnv模式什么意思lnv模式是指笔记本电脑在使用时，通过控制CPU的功耗和频率，从而实现在低功耗状态下提高电池续 …"
+    },
+    {
+      "title": "[Ligue A] LNVtv - Bein sport saison 2025-2026",
+      "url": "https://volleyweb.forumactif.fr/t2158-ligue-a-lnvtv-bein-sport-saison-2025-2026",
+      "snippet": "May 6, 2019 · Sujet: Re: [Ligue A] LNVtv - Bein sport saison 2025-2026 Jeu 9 Oct - 19:20 Il faut savoir ce que l'on veut avoir une …"
+    },
+    {
+      "title": "L40-70-Drivers-mais-recentes - LENOVO COMMUNITY",
+      "url": "https://forums.lenovo.com/t5/Linha-LNV/L40-70-Drivers-mais-recentes/td-p/3905242",
+      "snippet": "Our commitment to the environment Lenovo is committed to environmental leadership from operations to product design and …"
+    }
+  ]
+}

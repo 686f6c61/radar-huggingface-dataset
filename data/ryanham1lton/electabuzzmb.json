@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Ryanham1lton/ElectabuzzMB",
+  "slug": "ryanham1lton-electabuzzmb",
+  "author": "Ryanham1lton",
+  "url": "https://huggingface.co/Ryanham1lton/ElectabuzzMB",
+  "created_at": "2026-09-21T14:28:49.000Z",
+  "updated_at": "2026-09-21T14:30:50.000Z",
+  "license": "cc-by-4.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:cc-by-4.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 115998055,
+  "storage_human": "116 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "马斯克的grok，中国的deepseek，chatgpt哪个更厉害？ - 知乎",
+      "url": "https://www.zhihu.com/question/12679494761",
+      "snippet": "grok的破局之道，只能是在AI领域与deepseek拉开至少一代以上的差距，如果这个差距拉不开，grok微弱的领先优势除了华尔街通过 …"
+    },
+    {
+      "title": "如何评价 Grok4.6，有哪些亮点？ - 知乎",
+      "url": "https://www.zhihu.com/question/2070448386113908957",
+      "snippet": "Aug 13, 2026 · grok4.7据说是2.1t 虽然考虑到grok和qwen一样有多次刷分黑历史，这个最终表现不能尽信。 但能冲到这个位置，再结 …"
+    },
+    {
+      "title": "9月3日晚ChatGPT、Grok、Claude、Cursor 集体突发故障，怎么回事？ …",
+      "url": "https://www.zhihu.com/question/2078984478073136308",
+      "snippet": "Sep 3, 2026 · 所以，可能是因为，Claude/Grok 先出现各自的模型容量或发布问题，用户和自动化流量随即大量切到替代服务，给 …"
+    },
+    {
+      "title": "如何评价Xai最新发布的编程模型grok code fast 1? - 知乎",
+      "url": "https://www.zhihu.com/question/1944336744532154087",
+      "snippet": "从这一点来看，grok-code-fast-1 是目前唯一能适配的， 我给他最高度的评价。 我不会用它去做学习性的、开创性的探索，这方面我会 …"
+    },
+    {
+      "title": "如何评价Grok AI被发现疑似设定强制吹捧马斯克身材和智力世界第一？",
+      "url": "https://www.zhihu.com/question/1975115860181022671",
+      "snippet": "Nov 21, 2025 · 事情起因是1位用户@Grok问它怎么看马斯克的身材？ 得到极高评价后，进一步问如果马斯克和某NBA副山羊2 …"
+    }
+  ]
+}

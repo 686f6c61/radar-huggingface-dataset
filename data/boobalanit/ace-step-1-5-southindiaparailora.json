@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "boobalanit/ACE-Step-1.5-SouthIndiaParaiLoRA",
+  "slug": "boobalanit-ace-step-1-5-southindiaparailora",
+  "author": "boobalanit",
+  "url": "https://huggingface.co/boobalanit/ACE-Step-1.5-SouthIndiaParaiLoRA",
+  "created_at": "2026-09-21T16:47:42.000Z",
+  "updated_at": "2026-09-21T17:10:48.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "audio-to-audio",
+  "library": null,
+  "languages": [
+    "ta"
+  ],
+  "tags": [
+    "safetensors",
+    "ace-step",
+    "ace-step-1.5",
+    "lora",
+    "music-generation",
+    "music-lora",
+    "audio-generation",
+    "south-indian",
+    "indian-music",
+    "percussion",
+    "tamil",
+    "parai",
+    "thappu",
+    "dappankuthu",
+    "kuthu",
+    "folk-music",
+    "cultural-ai",
+    "world-music",
+    "drum-lora",
+    "instrumental",
+    "fine-tuned",
+    "audio-to-audio",
+    "ta",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 169733396,
+  "storage_human": "170 MB",
+  "base_model": "ACE-Step/ACE-Step-v1.5",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jual Aki Scoopy 2017 Murah & Terbaik - Tokopedia",
+      "url": "https://www.tokopedia.com/find/aki-scoopy-2017",
+      "snippet": "Beli aneka produk Aki Scoopy 2017 online terlengkap dengan mudah, cepat & aman di Tokopedia. Kamu bisa menemukan toko …"
+    },
+    {
+      "title": "Jual Bosch Aki Kering Motor Honda Scoopy 2017 On - Maintenance …",
+      "url": "https://shopee.co.id/Bosch-Aki-Kering-Motor-Honda-Scoopy-2017-On-Maintenance-Free-RBTZ-6V-i.15429343.12623961405",
+      "snippet": "Aki Bosch M6 (AGM) sangat ideal untuk berbagai macam kebutuhan kelistrikan sepeda motor konsumen dan mudah beradaptasi …"
+    },
+    {
+      "title": "Jual Aki Honda Scoopy Original Murah & Terbaik - Tokopedia",
+      "url": "https://www.tokopedia.com/find/aki-honda-scoopy-original",
+      "snippet": "Beli aneka produk Aki Honda Scoopy Original online terlengkap dengan mudah, cepat & aman di Tokopedia. Kamu bisa menemukan …"
+    },
+    {
+      "title": "Aki Kering AKI BOSCH Motor Honda Scoopy 2017 PCX VARIO NEW …",
+      "url": "https://shopee.co.id/Aki-Kering-AKI-BOSCH-Motor-Honda-Scoopy-2017-PCX-VARIO-NEW-SONIC-CBR-Maintenance-Free-RBTZ-6V-i.262160419.22390419027",
+      "snippet": "Beli Aki Kering AKI BOSCH Motor Honda Scoopy 2017 PCX VARIO NEW SONIC CBR - Maintenance Free - RBTZ-6V Terbaru …"
+    },
+    {
+      "title": "Jual Aki (Accu) Resmi Motor Honda | Honda Genuine Part (HGP)",
+      "url": "https://www.hondacengkareng.com/kategori-produk/suku-cadang-resmi-motor-honda/aki-resmi-motor-honda/",
+      "snippet": "Disini kami jual berbagai aki resmi untuk motor Honda. Pakai aki asli lebih aman untuk motor anda. Kami kirim ke seluruh Indonesia. …"
+    }
+  ]
+}

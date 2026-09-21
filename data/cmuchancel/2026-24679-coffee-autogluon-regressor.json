@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "cmuchancel/2026-24679-coffee-autogluon-regressor",
+  "slug": "cmuchancel-2026-24679-coffee-autogluon-regressor",
+  "author": "cmuchancel",
+  "url": "https://huggingface.co/cmuchancel/2026-24679-coffee-autogluon-regressor",
+  "created_at": "2026-09-21T15:30:46.000Z",
+  "updated_at": "2026-09-21T15:30:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "autogluon",
+  "languages": [],
+  "tags": [
+    "autogluon",
+    "tabular",
+    "regression",
+    "automl",
+    "dataset:ssg1/coffee-bags-tabular",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5446689,
+  "storage_human": "5 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "eBay Kleinanzeigen",
+      "url": "https://www.ebay-kleinanzeigen.de/s-boote-bootszubehoer/segelboote/segeljolle/k0c211+boote_bootszubehoer.art_s:segelboote",
+      "snippet": "Hier sollte eine Beschreibung angezeigt werden, diese Seite lässt dies jedoch nicht zu."
+    }
+  ]
+}
