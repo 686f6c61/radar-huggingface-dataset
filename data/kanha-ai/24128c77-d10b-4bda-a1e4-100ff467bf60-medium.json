@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "Kanha-AI/24128c77-d10b-4bda-a1e4-100ff467bf60-medium",
+  "slug": "kanha-ai-24128c77-d10b-4bda-a1e4-100ff467bf60-medium",
+  "author": "Kanha-AI",
+  "url": "https://huggingface.co/Kanha-AI/24128c77-d10b-4bda-a1e4-100ff467bf60-medium",
+  "created_at": "2026-09-21T01:14:28.000Z",
+  "updated_at": "2026-09-21T01:16:41.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "mlc-llm",
+  "languages": [],
+  "tags": [
+    "mlc-llm",
+    "kanha",
+    "on-device",
+    "webgpu",
+    "fine-tuned",
+    "medium",
+    "text-generation",
+    "base_model:LiquidAI/LFM2.5-1.2B-Instruct",
+    "base_model:finetune:LiquidAI/LFM2.5-1.2B-Instruct",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 658503168,
+  "storage_human": "659 MB",
+  "base_model": "LiquidAI/LFM2.5-1.2B-Instruct",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Startseite | Gemeindetag Baden-Württemberg |",
+      "url": "https://www.gemeindetag-bw.de/",
+      "snippet": "Herzlich Willkommen beim Gemeindetag Baden-Württemberg! Hier finden Sie aktuelle Informationen, Hilfe- und Serviceangebote für …"
+    },
+    {
+      "title": "Pressemitteilungen |",
+      "url": "https://w3.gemeindetag-bw.de/presse/pressemitteilungen",
+      "snippet": "In diesem Bereich finden Sie die Pressemitteilungen und Zumeldungen zu kommunalpolitischen Themen des Gemeindetags Baden …"
+    },
+    {
+      "title": "Presse",
+      "url": "https://w3.gemeindetag-bw.de/presse",
+      "snippet": "Der Gemeindetag Baden-Württemberg vertritt die Interessen der kreisangehörigen Städte und Gemeinden gegenüber Politik, …"
+    },
+    {
+      "title": "Pressemitteilungen: Baden-Württemberg.de",
+      "url": "https://www.baden-wuerttemberg.de/de/service/presse/pressemitteilungen?tx_rsmpress_list%5Bpage%5D=2",
+      "snippet": "Sep 13, 2026 · Hier finden Sie die aktuellen Pressemitteilungen aller Landesministerien. Sie können nach einzelnen Ministerien …"
+    },
+    {
+      "title": "Presse: Baden-Württemberg.de",
+      "url": "https://www.baden-wuerttemberg.de/de/service/presse",
+      "snippet": "Hier finden Sie tagesaktuell die Pressemitteilungen aller Ministerien des Landes Baden-Württemberg."
+    }
+  ]
+}

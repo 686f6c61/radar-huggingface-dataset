@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "danielamitay/gemma-4-e2b-it-fp32-swev",
+  "slug": "danielamitay-gemma-4-e2b-it-fp32-swev",
+  "author": "danielamitay",
+  "url": "https://huggingface.co/danielamitay/gemma-4-e2b-it-fp32-swev",
+  "created_at": "2026-09-21T00:20:27.000Z",
+  "updated_at": "2026-09-21T00:22:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "coreml",
+    "swift",
+    "swev",
+    "decision-model",
+    "multimodal",
+    "base_model:google/gemma-4-E2B-it",
+    "base_model:quantized:google/gemma-4-E2B-it",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19162558791,
+  "storage_human": "19.2 GB",
+  "base_model": "google/gemma-4-E2B-it",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Help",
+      "url": "https://support.google.com/",
+      "snippet": "Google Maps Gmail Google Search Google Calendar Google Docs Editors Google Groups Android XR YouTube Google Home and …"
+    },
+    {
+      "title": "Google Maps Help",
+      "url": "https://support.google.com/maps/?hl=en",
+      "snippet": "Official Google Maps Help Center where you can find tips and tutorials on using Google Maps and other answers to frequently asked …"
+    },
+    {
+      "title": "Get directions and show routes in Google Maps",
+      "url": "https://support.google.com/maps/answer/144339?hl=en-GB&co=GENIE.Platform%3DDesktop",
+      "snippet": "You can get directions for driving, public transport, walking, ride sharing, cycling, flight or motorcycle on Google Maps. If there are …"
+    },
+    {
+      "title": "Report data or content errors on Google Maps",
+      "url": "https://support.google.com/maps/answer/3094088?hl=en",
+      "snippet": "Report spam or bad data Any illegal, offensive, fraudulent, or malicious data on Google Maps is considered as spam. Users found to …"
+    },
+    {
+      "title": "Download areas & navigate offline in Google Maps",
+      "url": "https://support.google.com/maps/answer/6291838?hl=en&co=GENIE.Platform%3DAndroid",
+      "snippet": "Use offline maps in Google Maps After you download an area, use the Google Maps app just like you normally would. If your internet …"
+    }
+  ]
+}

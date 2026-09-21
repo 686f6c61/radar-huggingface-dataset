@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "TaichuAI/ZDTaichu5.0-9B-GGUF",
+  "slug": "taichuai-zdtaichu5-0-9b-gguf",
+  "author": "TaichuAI",
+  "url": "https://huggingface.co/TaichuAI/ZDTaichu5.0-9B-GGUF",
+  "created_at": "2026-09-21T01:40:11.000Z",
+  "updated_at": "2026-09-21T03:23:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "multimodal",
+    "vision-language-model",
+    "spatial-reasoning",
+    "agent",
+    "video-understanding",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 2,
+  "downloads_30d": 283,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 55737432384,
+  "storage_human": "55.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Американцы / The Americans (2013 - 2018 США) сезон 2 ...",
+      "url": "https://vk.com/video-184070913_456281762",
+      "snippet": "May 15, 2022 · Смотрите онлайн Американцы / The Americans (2013 - 2018 США).. 42 мин 1 с. Видео от 15 мая 2022 в хорошем …"
+    },
+    {
+      "title": "The.Americans.S02E07.DVDRip.x264.HUN-Teko - Одноклассники",
+      "url": "https://ok.ru/video/7033233279524",
+      "snippet": "Jun 26, 2024 · The.Americans.S02E07.DVDRip.x264.HUN-Teko 26 июн 2024"
+    },
+    {
+      "title": "Американцы / The Americans (2013 - 2018 США) сезон 2 ...",
+      "url": "https://yandex.ru/video/preview/1933716577002052904",
+      "snippet": "Смотрите онлайн Американцы / The Americans (2013 - 2018 США).. 42 мин 1 с. Видео от 15 мая 2022 в х..."
+    },
+    {
+      "title": "ARPANET subtitles Russian | opensubtitles.com",
+      "url": "https://www.opensubtitles.com/en/subtitles/the-americans-2013-s02e07-arpanet-1080p-amzn-webrip-dd5-1-x264-ntb-mkv",
+      "snippet": "S02E07 ARPANET Philip uses his agent Charles Duluth to help him gain access to an early precursor to the Internet so that the KGB …"
+    },
+    {
+      "title": "[TopCinema].The.Americans.S02E07.720p.WEB-DL - Одноклассники",
+      "url": "https://ok.ru/video/6746165742230",
+      "snippet": "[TopCinema].The.Americans.S02E07.720p.WEB-DL Уберите лишние метки и подтвердите оставшиеся, если они определены …"
+    }
+  ]
+}

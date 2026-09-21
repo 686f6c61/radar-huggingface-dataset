@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "ChatterjeeLab/PepPA",
+  "slug": "chatterjeelab-peppa",
+  "author": "ChatterjeeLab",
+  "url": "https://huggingface.co/ChatterjeeLab/PepPA",
+  "created_at": "2026-09-20T21:38:49.000Z",
+  "updated_at": "2026-09-20T21:39:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peptide-design",
+    "agents",
+    "multi-objective-optimization",
+    "therapeutic-peptides",
+    "en",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1476917,
+  "storage_human": "1 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Guesthouse Hotel",
+      "url": "https://www.theguesthousehotel.com/",
+      "snippet": "Located on Chicago’s north side at the crossroads of Andersonville (voted the coolest neighborhood in the US by Time Out!), …"
+    },
+    {
+      "title": "The Guesthouse Hotel",
+      "url": "https://www.theguesthousehotel.com/guesthouse-hotel",
+      "snippet": "The Hotel is situated in the quaint and culturally rich neighborhood of Andersonville in Chicago, which features a diverse array of …"
+    },
+    {
+      "title": "The Guesthouse Hotel, Chicago (updated prices 2026)",
+      "url": "https://www.booking.com/hotel/us/the-guesthouse.html?msockid=015bf452c4d3612c0287e388c59460f3",
+      "snippet": "At The Guest house Hotel you will find boutique shopping that features local artists and designers, a 24-hour front desk, and a mini …"
+    },
+    {
+      "title": "THE GUESTHOUSE HOTEL - Updated 2026 Reviews (Chicago, IL)",
+      "url": "https://www.tripadvisor.com/Hotel_Review-g35805-d3644317-Reviews-The_Guesthouse_Hotel-Chicago_Illinois.html",
+      "snippet": "Book The Guesthouse Hotel, Chicago on Tripadvisor: See 536 traveler reviews, 202 candid photos, and great deals for The …"
+    },
+    {
+      "title": "THE GUESTHOUSE HOTEL | Comfortable Stay in Chicago | Book Your …",
+      "url": "https://us-chicago.us/hotel/guesthouse",
+      "snippet": "Welcome to THE GUESTHOUSE HOTEL in Chicago. Enjoy cozy rooms, excellent amenities, and convenient locations. Starting from …"
+    }
+  ]
+}

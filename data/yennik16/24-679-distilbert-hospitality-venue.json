@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "yennik16/24-679-distilbert-hospitality-venue",
+  "slug": "yennik16-24-679-distilbert-hospitality-venue",
+  "author": "yennik16",
+  "url": "https://huggingface.co/yennik16/24-679-distilbert-hospitality-venue",
+  "created_at": "2026-09-20T21:49:40.000Z",
+  "updated_at": "2026-09-22T01:59:31.000Z",
+  "license": "see-source-dataset",
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "autogluon",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "autogluon",
+    "text-classification",
+    "distilbert",
+    "fine-tuning",
+    "hospitality",
+    "coursework",
+    "en",
+    "dataset:kwongnon/2026-24679-text-dataset",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 265511861,
+  "storage_human": "266 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Livesport.cz: Fotbal online, fotbalové live výsledky, livescore",
+      "url": "https://www.livesport.cz/",
+      "snippet": "Livesport: live výsledky, livescore i všechny dnešní fotbalové výsledky a zprávy. Premier League, LaLiga, Chance Liga, Liga mistrů a …"
+    },
+    {
+      "title": "Livesport.cz: Hokej online, hokejové live výsledky, livescore",
+      "url": "https://www.livesport.cz/hokej/",
+      "snippet": "Hokejové live výsledky - livescore pro NHL, Extraligu, i všechny ostatní důležité hokejové ligy. Hokejové livescore, konečné i live …"
+    },
+    {
+      "title": "Livesport.com - Live výsledky - Fotbal, hokej, tenis a více než 30 ...",
+      "url": "https://www.livesport.com/cz/",
+      "snippet": "Livesport.com - rychlé a přesné live výsledky fotbalu (včetně českých soutěží od Chance ligy po divize), hokeje, tenisu a dalších …"
+    },
+    {
+      "title": "Fotbal live: Sledujte fotbalové live score, nejnovější výsledky ...",
+      "url": "https://www.livesport.com/cz/fotbal/",
+      "snippet": "Sledujte fotbal jako nikdy předtím! Livesport nabízí výsledky v reálném čase, ligové tabulky, nadcházející zápasy a rozsáhlý archiv …"
+    },
+    {
+      "title": "Livescore na mobil - výsledky fotbal na m.Livesport.cz",
+      "url": "https://m.livesport.cz/",
+      "snippet": "\"Sledujte fotbal na cestách s aktuálním livescore servisem pro mobilní telefony. Live výsledky LiveSport Mobile"
+    }
+  ]
+}

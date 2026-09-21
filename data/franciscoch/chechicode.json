@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "id": "franciscoch/Chechicode",
+  "slug": "franciscoch-chechicode",
+  "author": "franciscoch",
+  "url": "https://huggingface.co/franciscoch/Chechicode",
+  "created_at": "2026-09-20T21:56:17.000Z",
+  "updated_at": "2026-09-20T21:56:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Domena busjaniso.pl jest utrzymywana na serwerach nazwa.pl",
+      "url": "https://www.busjaniso.pl/galeria",
+      "snippet": ""
+    },
+    {
+      "title": "Domena busjaniso.pl jest utrzymywana na serwerach nazwa.pl",
+      "url": "https://www.busjaniso.pl/kontakt",
+      "snippet": "Domeny za 0 zł wyszukaj domenę busjaniso.pl"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "vtava/Qwen35-0.8B-CeNNMixer-v2",
+  "slug": "vtava-qwen35-0-8b-cennmixer-v2",
+  "author": "vtava",
+  "url": "https://huggingface.co/vtava/Qwen35-0.8B-CeNNMixer-v2",
+  "created_at": "2026-09-20T20:27:27.000Z",
+  "updated_at": "2026-09-20T20:27:31.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "qwen",
+    "cenn",
+    "recurrent",
+    "sequence-mixer",
+    "tinycenn",
+    "text-generation",
+    "base_model:Qwen/Qwen3.5-0.8B",
+    "base_model:finetune:Qwen/Qwen3.5-0.8B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 26380189,
+  "storage_human": "26 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "YouTube",
+      "url": "https://www.youtube.com/feed/sa",
+      "snippet": "© 2026 Google LLC."
+    },
+    {
+      "title": "YouTube Arabia - YouTube",
+      "url": "https://www.youtube.com/YouTubeArabia/featured",
+      "snippet": "ما هي أولويات المنصة في المنطقة؟ كيف يؤثر الذكاء الاصطناعي على عالم صناعة المحتوى؟ طرح اوسي مروة أسئلة هامة (وناار) لنائب الرئيس ورئيس YouTube في أوروبا والشرق الأوسط وأفريقيا، …"
+    },
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/YouTube/ar",
+      "snippet": "Welcome to the official YouTube channel – a home for the biggest moments, the smallest obsessions, and everything in between. …"
+    },
+    {
+      "title": "youtube_Arabic - YouTube",
+      "url": "https://www.youtube.com/@%D9%8A%D9%88%D8%AA%D9%8A%D9%88%D8%A8_%D8%B9%D8%B1%D8%A8%D9%8A/search",
+      "snippet": "مرحبا بكم في صفحة يوتيوب الرسمي للعرب يرجى التكلم بشكل نضيفوايضا استمتاع في تصفاح يوتيوب ونشرة المحتوى في ..."
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Quaggleczech/controlnet-union-sdxl-1.0",
+  "slug": "quaggleczech-controlnet-union-sdxl-1-0",
+  "author": "Quaggleczech",
+  "url": "https://huggingface.co/Quaggleczech/controlnet-union-sdxl-1.0",
+  "created_at": "2026-09-21T01:51:42.000Z",
+  "updated_at": "2026-09-21T01:51:43.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "Text-to-Image",
+    "ControlNet",
+    "Diffusers",
+    "Stable Diffusion",
+    "text-to-image",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 5,
+  "trending_score": 0,
+  "parameters": 1255958800,
+  "parameters_human": "1.26B",
+  "storage_bytes": 5030545936,
+  "storage_human": "5.0 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Como Desenvolver uma Mente Inabalável em 7 Passos",
+      "url": "https://katiaribeiro.com.br/como-desenvolver-uma-mente-inabalavel-em-7-passos/",
+      "snippet": "Dec 16, 2024 · Descubra 7 passos práticos para desenvolver uma mente inabalável e enfrentar os desafios da vida com resiliência e …"
+    },
+    {
+      "title": "Mente Inabalável: Desperte seu Potencial com este Guia Completo para uma",
+      "url": "https://futurotopia.com/desperte-seu-potencial-um-guia-completo-para-uma-mente-inabalavel/",
+      "snippet": "Nov 16, 2024 · Descubra como desenvolver uma mente inabalável com 10 estratégias práticas para viver com mais equilíbrio e …"
+    },
+    {
+      "title": "Mente inabalável: 5 passos para construir uma força mental à prova …",
+      "url": "https://escolaeducacao.com.br/mente-inabalavel-5-passos-para-construir-uma-forca-mental-a-prova-de-tudo/",
+      "snippet": "No mundo atual, muitos enfrentam dificuldades para manter uma mente forte diante das pressões diárias, pois desenvolver …"
+    },
+    {
+      "title": "Como Ter uma Mente Inabalável em Tempos Difíceis",
+      "url": "https://www.youtube.com/watch?v=U_qR_N5U9DY",
+      "snippet": "Sep 14, 2025 · Você quer saber como ser mentalmente forte? Neste vídeo, apresentamos 3 dicas práticas que podem transformar …"
+    },
+    {
+      "title": "Como Ter uma Mente Inabalável - YouTube",
+      "url": "https://www.youtube.com/watch?v=TjUR1qImUmo",
+      "snippet": "Oct 30, 2025 · Descubra o segredo para construir uma mente inabalável e encontrar força interior mesmo no meio do caos. Neste …"
+    }
+  ]
+}

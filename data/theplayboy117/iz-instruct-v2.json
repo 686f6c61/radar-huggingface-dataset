@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "theplayboy117/iz-instruct-v2",
+  "slug": "theplayboy117-iz-instruct-v2",
+  "author": "theplayboy117",
+  "url": "https://huggingface.co/theplayboy117/iz-instruct-v2",
+  "created_at": "2026-09-20T20:52:44.000Z",
+  "updated_at": "2026-09-20T20:52:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 48403846,
+  "storage_human": "48 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kezdőlap - KHRR.KOZSZOLGALLAS.Public.Web",
+      "url": "https://kozszolgallas.ksz.gov.hu/",
+      "snippet": "Bőrgyógyász szakorvos (teljes vagy részmunkaidő) - 67 NEMZETI NÉPEGÉSZSÉGÜGYI ÉS GYÓGYSZERÉSZETI KÖZPONT …"
+    },
+    {
+      "title": "Közigállás — Közszolgálati állások Magyarországon",
+      "url": "https://www.kozigallas.info/",
+      "snippet": "A Közigállás egy helyen gyűjti össze a magyar közszféra aktuális álláspályázatait — minisztériumok, önkormányzatok, oktatási, …"
+    },
+    {
+      "title": "Közigállás állás, munka - 226 állásajánlat - 2026 Szeptember ...",
+      "url": "https://www.profession.hu/allasok/1,0,0,k%c3%b6zig%c3%a1ll%c3%a1s",
+      "snippet": "226 db friss közigállás állás, munka. Nézze meg a legfrissebb közigállás állásajánlatokat Magyarország közkedvelt állásportálján és …"
+    },
+    {
+      "title": "Közigazgatás állások | Közigállás",
+      "url": "https://www.kozigallas.info/kozigazgatas-allasok.html",
+      "snippet": "Aktuális közigazgatás területen meghirdetett közszolgálati álláspályázatok Magyarországon. 185 nyitott pozíció."
+    },
+    {
+      "title": "Közig állás (Sürgősen!) - 904 új állásajánlat - Szeptember 2026 - Jooble",
+      "url": "https://hu.jooble.org/%c3%a1ll%c3%a1s-k%C3%B6zig",
+      "snippet": "Új és aktuális Közig állások. Keress munkát az összes magyar állásportálról a Jooble weboldalán! Ingyenes, gyors és kényelmes …"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Rin247/Wan2.2-TI2V-5B-INT4",
+  "slug": "rin247-wan2-2-ti2v-5b-int4",
+  "author": "Rin247",
+  "url": "https://huggingface.co/Rin247/Wan2.2-TI2V-5B-INT4",
+  "created_at": "2026-09-20T23:38:17.000Z",
+  "updated_at": "2026-09-21T04:23:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-video",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "quantized",
+    "aquarion",
+    "weight-only",
+    "int4",
+    "video",
+    "text-to-video",
+    "image-to-video",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 9416830705,
+  "storage_human": "9.4 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Log In - Sycle",
+      "url": "https://pro.sycle.net/web/login",
+      "snippet": "Forgot Password? Need Help?"
+    },
+    {
+      "title": "Sign in | Sycle",
+      "url": "https://app.na01.sycle.net/signin",
+      "snippet": "Need Help?"
+    },
+    {
+      "title": "Audiology Office Management Software | Sycle",
+      "url": "https://sycle.com/",
+      "snippet": "Sycle is the leading provider of audiology office management software with over 20 years of support hearing care specialists."
+    },
+    {
+      "title": "sycle.net :: Login",
+      "url": "https://www.sycle.net/freecvs/index_classic.php",
+      "snippet": "Log in to your Sycle account to access personalized services and tools."
+    },
+    {
+      "title": "Login - Up-Sycle",
+      "url": "https://up-sycle.com/m/login",
+      "snippet": "Sign in to your account to access your profile, history, and any private pages you've been granted access to. Not a member? Create …"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "khonor/q-FrozenLake-v1-4x4-noSlippery",
+  "slug": "khonor-q-frozenlake-v1-4x4-noslippery",
+  "author": "khonor",
+  "url": "https://huggingface.co/khonor/q-FrozenLake-v1-4x4-noSlippery",
+  "created_at": "2026-09-21T00:50:09.000Z",
+  "updated_at": "2026-09-21T00:50:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "reinforcement-learning",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "FrozenLake-v1-4x4-no_slippery",
+    "q-learning",
+    "reinforcement-learning",
+    "custom-implementation",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 915,
+  "storage_human": "915 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "50.000+ kostenlose Landschaft Wiese und Wiese-Bilder - Pixabay",
+      "url": "https://pixabay.com/de/images/search/%20landschaft%20wiese/",
+      "snippet": "Bilder zum Thema Landschaft Wiese finden Lizenzfrei Kein Bildnachweis nötig Hochwertige Bilder."
+    },
+    {
+      "title": "20.000+ kostenlose Wiese+Landschaft und Wiese-Bilder - Pixabay",
+      "url": "https://pixabay.com/de/images/search/wiese+landschaft/",
+      "snippet": "Bilder zum Thema Wiese+Landschaft finden Lizenzfrei Kein Bildnachweis nötig Hochwertige Bilder."
+    },
+    {
+      "title": "5.679.441 Landschaft Wiese Bilder, Stockfotos, 3D-Objekte und ...",
+      "url": "https://www.shutterstock.com/de/search/landschaft-wiese?msockid=11bd1afcc966653309530d27c8d66466",
+      "snippet": "Finden Sie Landschaft Wiese Stockbilder in HD und Millionen weitere lizenzfreie Stockfotos, 3D-Objekte, Illustrationen und …"
+    },
+    {
+      "title": "Landschaftsbild wiese Bilder - Kostenloser Download auf Freepik",
+      "url": "https://de.freepik.com/fotos-vektoren-kostenlos/landschaftsbild-wiese",
+      "snippet": "Finde und downloade kostenlose Grafiken für Landschaftsbild wiese. Kommerzielle Nutzung gratis Erstklassige Bilder"
+    },
+    {
+      "title": "Landschaft wiese Bilder – Kostenloser Download auf Magnific",
+      "url": "https://www.magnific.com/de/fotos-vektoren-kostenlos/landschaft-wiese",
+      "snippet": "Finde und downloade kostenlose Grafiken für Landschaft wiese. Kommerzielle Nutzung gratis Erstklassige Bilder"
+    }
+  ]
+}

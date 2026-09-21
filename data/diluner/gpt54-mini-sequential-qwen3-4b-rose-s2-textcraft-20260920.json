@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Diluner/gpt54-mini-sequential-qwen3-4b-rose-s2-textcraft-20260920",
+  "slug": "diluner-gpt54-mini-sequential-qwen3-4b-rose-s2-textcraft-20260920",
+  "author": "Diluner",
+  "url": "https://huggingface.co/Diluner/gpt54-mini-sequential-qwen3-4b-rose-s2-textcraft-20260920",
+  "created_at": "2026-09-21T00:05:53.000Z",
+  "updated_at": "2026-09-21T00:06:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "agent-training",
+    "gpt-5.4-mini",
+    "rose",
+    "sequential",
+    "conversational",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:finetune:Qwen/Qwen3-4B",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4411424256,
+  "parameters_human": "4.41B",
+  "storage_bytes": 8834317158,
+  "storage_human": "8.8 GB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ekbacksvägen 7 Stockholms Län, Brottby - hitta.se",
+      "url": "https://www.hitta.se/stockholms+l%C3%A4n/brottby/ekbacksv%C3%A4gen+7/omr%C3%A5de/59.6074:18.377169",
+      "snippet": "På adressen finns en villa byggd 1964. Huset är 53 kvadratmeter (ej inräknat biytor såsom garage, källarutrymmen etc.), vilket är …"
+    },
+    {
+      "title": "Ekbacksvägen Stockholms län, Brottby - hitta.se",
+      "url": "https://www.hitta.se/stockholms+l%C3%A4n/brottby/ekbacksv%C3%A4gen/omr%C3%A5de/3002656690",
+      "snippet": "I området kring Ekbacksvägen har det skett följande polisära ingripande och händelser de senaste 6 månaderna. Datan hämtas från …"
+    },
+    {
+      "title": "Werner & Son Kommanditbolag - Brottby - Organisation",
+      "url": "https://www.allabolag.se/organisation/werner-son-kommanditbolag/brottby/sportanl%C3%A4ggningar/4GD7FZJI63IKR",
+      "snippet": "Org.nr969677-0479 AdressHakungegård, 186 97 Brottby JämförBevaka Hitta liknande Dela profil Översikt BokslutNyckeltal …"
+    },
+    {
+      "title": "Kartor - Lantmäteriet",
+      "url": "https://www.lantmateriet.se/sv/kartor/",
+      "snippet": "Lantmäteriet kartlägger Sverige och förser samhället med kartor, bilder och annan geografisk information. En karta kan ha många …"
+    },
+    {
+      "title": "Eniro.se - Upptäck närheten.",
+      "url": "https://www.eniro.se/kartor",
+      "snippet": "Upptäck Sverige med våra kartor. Utforska lokala företag, tomtgränser, historiska flygfoton, cykelvägar, laddstationer med mera. …"
+    }
+  ]
+}

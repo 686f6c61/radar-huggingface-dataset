@@ -1,0 +1,106 @@
+{
+  "schema": 1,
+  "id": "dronefreak/uavdt-yolo11s",
+  "slug": "dronefreak-uavdt-yolo11s",
+  "author": "dronefreak",
+  "url": "https://huggingface.co/dronefreak/uavdt-yolo11s",
+  "created_at": "2026-09-20T21:16:14.000Z",
+  "updated_at": "2026-09-21T13:58:00.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "object-detection",
+    "detectionbench",
+    "pytorch",
+    "computer-vision",
+    "aerial-imagery",
+    "drone",
+    "uav",
+    "vehicle-detection",
+    "traffic-surveillance",
+    "small-object-detection",
+    "dataset:dronefreak/UAVDT",
+    "arxiv:1804.00518",
+    "arxiv:2410.17725",
+    "arxiv:2511.09554",
+    "arxiv:2304.07193",
+    "arxiv:2405.14458",
+    "arxiv:2606.03748",
+    "arxiv:2402.13616",
+    "base_model:Ultralytics/YOLO11",
+    "base_model:finetune:Ultralytics/YOLO11",
+    "license:agpl-3.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 31681862,
+  "storage_human": "32 MB",
+  "base_model": "Ultralytics/YOLO11",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Object Detection",
+      "dataset": "UAVDT",
+      "metric": "mAP@50 (test split)",
+      "value": 29.1
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "UAVDT",
+      "metric": "mAP@50-95 (test split)",
+      "value": 17.16
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "UAVDT",
+      "metric": "Precision (test split)",
+      "value": 34.32
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "UAVDT",
+      "metric": "Recall (test split)",
+      "value": 37.31
+    }
+  ],
+  "sources": [
+    {
+      "title": "Wheelchair service in Brent and Ealing | lnwh",
+      "url": "https://www.lnwh.nhs.uk/wheelchair-service-in-brent-and-ealing/",
+      "snippet": "22 hours ago · Wheelchair service in Brent and Ealing Wheelchair services in Brent and Ealing are provided by AJM Healthcare. …"
+    },
+    {
+      "title": "Abbey Road Industrial Estate - Industrial For Rent | JLL - UK",
+      "url": "https://property.jll.co.uk/listings/abbey-road-industrial-estate-commercial-way",
+      "snippet": "Abbey Road Industrial Estate is an established industrial development located in the heart of Park Royal, one of London's most …"
+    },
+    {
+      "title": "Ajm Healthcare Limited - Park Royal Estate",
+      "url": "https://parkroyal.estate/business/ajm-healthcare-limited/",
+      "snippet": "Ajm Healthcare Limited Industrial Park, Unit 3 Abbey Rd, Commercial Way, NW10 7XF Website Retail"
+    },
+    {
+      "title": "Abbey Road Studios - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Abbey_Road_Studios",
+      "snippet": "1980s–2010s Abbey Road has become a London tourist attraction, with the studio erecting Beatles lyric-themed signs encouraging …"
+    },
+    {
+      "title": "NW10 7XF postcode, Willesden, Greater London - Streetlist",
+      "url": "https://www.streetlist.co.uk/nw/nw10/nw10-7/abbey-road/nw10-7xf/lib/db.php",
+      "snippet": "Most properties on Abbey Road use this postcode. NW10 7XF sits in Willesden, Greater London. Broadband data is available. The …"
+    }
+  ]
+}

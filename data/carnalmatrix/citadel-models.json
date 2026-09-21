@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "carnalMATRIX/citadel-models",
+  "slug": "carnalmatrix-citadel-models",
+  "author": "carnalMATRIX",
+  "url": "https://huggingface.co/carnalMATRIX/citadel-models",
+  "created_at": "2026-09-21T00:24:34.000Z",
+  "updated_at": "2026-09-21T00:37:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11907350576,
+  "parameters_human": "11.91B",
+  "storage_bytes": 11604528000,
+  "storage_human": "11.6 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "InKefalonia.gr - Το πληρέστερο ενημερωτικό site της Κεφαλονιάς ...",
+      "url": "https://www.inkefalonia.gr/",
+      "snippet": "Άμεση ενημέρωση για τις εξελίξεις από την κοινωνία, την αυτοδιοίκηση, τον πολιτισμό και τον αθλητισμό στην Κεφαλονιά."
+    },
+    {
+      "title": "kefaloniapress.gr | Για την Κεφαλονιά που ονειρευόμαστε!",
+      "url": "https://www.kefaloniapress.gr/",
+      "snippet": "Πολίτες και φίλοι της Κεφαλονιάς συμβάλλουν με προτάσεις λέξεων της τοπικής μας ντοπιολαλιάς. Κάθε πρόταση εξετάζεται και, …"
+    },
+    {
+      "title": "Kefalonia Life - Όλα τα τελευταία νέα της Κεφαλονιάς",
+      "url": "https://kefalonialife.gr/",
+      "snippet": "6 days ago · Βασίλης Ρουχωτάς για ασφαλτοστρώσεις: 1,8 εκ. ευρώ, 16 μήνες καθυστέρηση και πληθώρα αστοχιών – Ποιος θα …"
+    },
+    {
+      "title": "Όλα τα τοπικά νέα της Κεφαλονιάς KEFALONIANEA.GR",
+      "url": "https://kefalonianea.gr/topikes-eidiseis-kefalonias/",
+      "snippet": "Όλες οι τοπικές ειδήσεις από την Κεφαλονιά αμέσως όταν συμβαίνουν - Άμεση ενημέρωση από όλες τις πηγές περιεχομένου."
+    },
+    {
+      "title": "InKefalonia.gr - Το πληρέστερο ενημερωτικό site της Κεφαλονιάς ...",
+      "url": "https://www.inkefalonia.gr/?lang=ar",
+      "snippet": "Άμεση ενημέρωση για τις εξελίξεις από την κοινωνία, την αυτοδιοίκηση, τον πολιτισμό και τον αθλητισμό στην Κεφαλονιά."
+    }
+  ]
+}

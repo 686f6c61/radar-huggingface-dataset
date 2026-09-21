@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "SargeDev/jev-gate-student-b",
+  "slug": "sargedev-jev-gate-student-b",
+  "author": "SargeDev",
+  "url": "https://huggingface.co/SargeDev/jev-gate-student-b",
+  "created_at": "2026-09-21T03:30:50.000Z",
+  "updated_at": "2026-09-21T04:25:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "reranker",
+    "memory-gating",
+    "distillation",
+    "lora",
+    "system-one",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 15760158,
+  "storage_human": "16 MB",
+  "base_model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SO Thailand",
+      "url": "https://sothailand.com/",
+      "snippet": "ตามที่ กฟผ. ได้ดำเนินการปรับปรุงข้อกำหนดเกี่ยวกับระบบโครงข่ายไฟฟ้า (Grid Code) ของ กฟผ. (ข้อกำหนดฯ) อันประกอบด้วย …"
+    },
+    {
+      "title": "::Document Reception Confirmation System:: - SO Thailand",
+      "url": "https://www.sothailand.com/fods/popup.aspx",
+      "snippet": "1 day ago · ::Document Reception Confirmation System:: Summary Document :17/09/2026 12:38"
+    },
+    {
+      "title": "::Foreign Operation Document Submission:: - SO Thailand",
+      "url": "https://www.sothailand.com/fods/popupFODSPlant.aspx",
+      "snippet": "1 day ago · ::Foreign Operation Document Submission:: Summary Document :17/09/2026 11:22"
+    },
+    {
+      "title": "Var Charge Monitoring",
+      "url": "https://www.sothailand.com/varcharge/",
+      "snippet": "Username * Password * Login ฝ่ายควบคุมระบบกำลังไฟฟ้า การไฟฟ้าฝ่ายผลิตแห่งประเทศไทย"
+    },
+    {
+      "title": "คู่มือการใช้งานเว็บไซต์ ...",
+      "url": "https://www.sothailand.com/varcharge/Files/Manual_VarCharge.pdf",
+      "snippet": "การเข้าใช้งานเว็บไซต์ ที่อยู่เว็บไซต์ : https://www.sothailand.com/VarCharge จะปรากฏหน้า log in ดังรูปที่ 1 ผู้ใช้งาน ภายในองค์การ EGAT …"
+    }
+  ]
+}

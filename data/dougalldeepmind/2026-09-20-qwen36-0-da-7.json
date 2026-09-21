@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "dougalldeepmind/2026-09-20-qwen36-0-da-7",
+  "slug": "dougalldeepmind-2026-09-20-qwen36-0-da-7",
+  "author": "dougalldeepmind",
+  "url": "https://huggingface.co/dougalldeepmind/2026-09-20-qwen36-0-da-7",
+  "created_at": "2026-09-20T21:26:52.000Z",
+  "updated_at": "2026-09-20T21:27:03.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1295140182,
+  "storage_human": "1.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kyoto Travel | Kyoto City Official Guide",
+      "url": "https://kyoto.travel/en/",
+      "snippet": "The Kyoto City Official Guide is your gateway to Kyoto tourism, including tips, tools, sample itineraries, and guidelines for responsible …"
+    },
+    {
+      "title": "Your Kyoto Travel Guide - How to Plan a Kyoto Trip (2026/2027)",
+      "url": "https://www.japanhighlights.com/japan/kyoto",
+      "snippet": "Sep 1, 2026 · Here we provide detailed practical information you will need in planning your trip to Kyoto, Japan. Itineraries and guides …"
+    },
+    {
+      "title": "Kyoto Travel Guide (Updated 2026) - Nomadic Matt's Travel Site",
+      "url": "https://www.nomadicmatt.com/travel-guides/japan-travel-tips/kyoto/",
+      "snippet": "Aug 7, 2025 · A comprehensive budget travel guide to Kyoto with tips and advice on things to do, costs, ways to sav, transportation, …"
+    },
+    {
+      "title": "Kyoto, Japan: All You Must Know Before You Go (2026) - Tripadvisor",
+      "url": "https://www.tripadvisor.com/Tourism-g298564-Kyoto_Kyoto_Prefecture_Kinki-Vacations.html",
+      "snippet": "Still the center of traditional Japanese culture, Kyoto is the place to experience a tea ceremony, savor multi-course Kaiseki haute …"
+    },
+    {
+      "title": "The Ultimate Kyoto Travel Guide: Planning Your Perfect Trip to Japan’s ...",
+      "url": "https://wenthetravelbegins.com/en/kyoto-travel-guide-en/",
+      "snippet": "Jun 18, 2026 · This comprehensive Kyoto travel guide covers everything from pre-departure preparation and transportation to …"
+    }
+  ]
+}

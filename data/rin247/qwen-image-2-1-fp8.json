@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Rin247/Qwen-Image-2.1-FP8",
+  "slug": "rin247-qwen-image-2-1-fp8",
+  "author": "Rin247",
+  "url": "https://huggingface.co/Rin247/Qwen-Image-2.1-FP8",
+  "created_at": "2026-09-21T00:26:39.000Z",
+  "updated_at": "2026-09-21T02:32:42.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "quantized",
+    "aquarion",
+    "weight-only",
+    "fp8",
+    "image",
+    "text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7115124736,
+  "parameters_human": "7.12B",
+  "storage_bytes": 17969716050,
+  "storage_human": "18.0 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Campsites Argelès-sur-Mer | 4 and 5 stars with water park",
+      "url": "https://www.campings.luxury/en-gb/languedoc-roussillon/pyrenees-orientales/argeles-sur-mer/a-36261",
+      "snippet": "We have visited or audited hundreds of campsites to select the best for you. We query the campsite's reservation system in real time …"
+    },
+    {
+      "title": "Camping Argelès sur Mer: 5 star campsite, near the beach | Camping …",
+      "url": "https://www.camping-la-chapelle.com/en/",
+      "snippet": "Everything is there, or right next to it, at our ideally located Argelès-sur-Mer campsite. The Mediterranean Sea is less than 200 m …"
+    },
+    {
+      "title": "Camping Argelès sur Mer 5 stars | Camping Le Bois Fleuri",
+      "url": "https://www.bois-fleuri.com/en/",
+      "snippet": "The 5-star camping in Argelès-sur-Mer Bois Fleuri offers you a luxury stay in Argelès in an exceptional setting between sun, beach, …"
+    },
+    {
+      "title": "5-star Argelès-sur-Mer campsite, near the beach | Camping La Chapelle",
+      "url": "https://www.camping-la-chapelle.com/en/campsite/",
+      "snippet": "Apr 10, 2026 · Welcome to Camping La Chapelle, your 5-star campsite in Argeles sur Mer. Come and discover our swimming pool, …"
+    },
+    {
+      "title": "Camping Argelès sur Mer | 5 étoiles | Parc aquatique",
+      "url": "https://www.campingsluxe.fr/languedoc-roussillon/pyrenees-orientales/argeles-sur-mer/a-36261",
+      "snippet": "Vous trouverez sur cette page les meilleurs campings d’Argelès sur Mer. En quelques clics, vous pourrez réserver celui qui …"
+    }
+  ]
+}

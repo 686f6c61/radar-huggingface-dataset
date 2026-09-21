@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "trevor000/Qwen3.6-35B-A3B-I-Mini-RTX4070",
+  "slug": "trevor000-qwen3-6-35b-a3b-i-mini-rtx4070",
+  "author": "trevor000",
+  "url": "https://huggingface.co/trevor000/Qwen3.6-35B-A3B-I-Mini-RTX4070",
+  "created_at": "2026-09-20T21:02:51.000Z",
+  "updated_at": "2026-09-20T21:05:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "qwen3.6",
+    "moe",
+    "mtp",
+    "research",
+    "base_model:Qwen/Qwen3.6-35B-A3B",
+    "base_model:quantized:Qwen/Qwen3.6-35B-A3B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 35505251456,
+  "parameters_human": "35.51B",
+  "storage_bytes": 14272221568,
+  "storage_human": "14.3 GB",
+  "base_model": "Qwen/Qwen3.6-35B-A3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Store Finder - Lidl GB",
+      "url": "https://www.lidl.co.uk/c/store-finder/s10023098",
+      "snippet": "Store Finder & Opening Hours Pop your postcode into the box and click your nearest store to see opening times and all the offers …"
+    },
+    {
+      "title": "Food, Non-food, Wine and Recipes | Lidl GB",
+      "url": "https://www.lidl.co.uk/",
+      "snippet": "Explore our range of high quality fresh food & product offers. Enjoy great prices & latest deals in store. Shop today & use your Lidl …"
+    },
+    {
+      "title": "Online Leaflets | View Latest Deals & Offers | Lidl GB",
+      "url": "https://www.lidl.co.uk/c/online-leaflets/s10023175",
+      "snippet": "Discover great deals & offers with our online leaflets at Lidl GB. Save big on groceries, household items, and more. Shop today and …"
+    },
+    {
+      "title": "Food Offers | Deals on Groceries, Food & Drinks | Lidl GB",
+      "url": "https://www.lidl.co.uk/c/food-offers/s10023092",
+      "snippet": "Explore our wide range of food offers at Lidl GB. Enjoy great prices & latest deals across groceries, cooked food and world food. …"
+    },
+    {
+      "title": "Lidl store Delves Lane in Consett",
+      "url": "https://www.lidl.co.uk/s/en-GB/store-finder/consett/delves-lane/",
+      "snippet": "Your Lidl store at Delves Lane, Consett DH8 7JZ Show opening hours and special offers for this store. The highest quality at the …"
+    }
+  ]
+}

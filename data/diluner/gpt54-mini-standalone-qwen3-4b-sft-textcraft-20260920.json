@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Diluner/gpt54-mini-standalone-qwen3-4b-sft-textcraft-20260920",
+  "slug": "diluner-gpt54-mini-standalone-qwen3-4b-sft-textcraft-20260920",
+  "author": "Diluner",
+  "url": "https://huggingface.co/Diluner/gpt54-mini-standalone-qwen3-4b-sft-textcraft-20260920",
+  "created_at": "2026-09-20T23:58:59.000Z",
+  "updated_at": "2026-09-20T23:59:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "agent-training",
+    "gpt-5.4-mini",
+    "sft",
+    "standalone",
+    "conversational",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:finetune:Qwen/Qwen3-4B",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056404646,
+  "storage_human": "8.1 GB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Quote of the Day - BrainyQuote",
+      "url": "https://www.brainyquote.com/quote_of_the_day",
+      "snippet": "1 day ago · Share five inspirational Quotes of the Day with friends on Facebook, Twitter, and blogs. Enjoy our Brainy, Funny, Love, …"
+    },
+    {
+      "title": "Bing",
+      "url": "https://www.bing.com/copilotsearch?q=quotes+of+the+day",
+      "snippet": "We would like to show you a description here but the site won’t allow us."
+    },
+    {
+      "title": "Quote of the Day — A Fresh Thought for Today",
+      "url": "https://bingquiz.com/quote-of-the-day/",
+      "snippet": "Aug 14, 2026 · Start today with a meaningful quote chosen to spark a positive thought, fresh perspective, or little moment of …"
+    },
+    {
+      "title": "www.bingquote.com",
+      "url": "https://www.bingquote.com/home",
+      "snippet": ""
+    },
+    {
+      "title": "Inspirational Quotes - Bing Images",
+      "url": "https://www.bing.com/images/ideas/inspirational-quotes?nvid=115111&host=ifp",
+      "snippet": "Discover stunning Inspirational Quotes ideas and get inspired by our top picks."
+    }
+  ]
+}

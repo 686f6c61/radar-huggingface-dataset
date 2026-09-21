@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "RLobot-jun/gr00t-n17-bigenlight-all-svf-lora16-step5000",
+  "slug": "rlobot-jun-gr00t-n17-bigenlight-all-svf-lora16-step5000",
+  "author": "RLobot-jun",
+  "url": "https://huggingface.co/RLobot-jun/gr00t-n17-bigenlight-all-svf-lora16-step5000",
+  "created_at": "2026-09-21T02:01:08.000Z",
+  "updated_at": "2026-09-21T02:04:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "robotics",
+    "gr00t",
+    "svf",
+    "lora",
+    "base_model:RLobot-jun/gr00t-n17-bigenlight-all-step10000",
+    "base_model:adapter:RLobot-jun/gr00t-n17-bigenlight-all-step10000",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6634535535,
+  "storage_human": "6.6 GB",
+  "base_model": "RLobot-jun/gr00t-n17-bigenlight-all-step10000",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Wahlen der Schulmitwirkungsgremien | Bildungsportal NRW",
+      "url": "https://www.schulministerium.nrw/wahlen-der-schulmitwirkungsgremien",
+      "snippet": "Bei den Mitgliedern der Schulkonferenz, Vorsitzenden und stellvertretenden Vorsitzenden der Klassenpflegschaft besteht das Mandat …"
+    },
+    {
+      "title": "Pflegschaften | QUA-LiS",
+      "url": "https://www.qua-lis.nrw.de/erwachsenenbildung/elternmitwirkung-nrw/gremienarbeit/pflegschaften",
+      "snippet": "In jeder Schule besteht auf der Ebene der Klassen die Klassenpflegschaft - das Fundament der Mitbestimmung. Die Vorsitzenden …"
+    },
+    {
+      "title": "Klassenpflegschaft | QUA-LiS - qua-lis.nrw.de",
+      "url": "https://www.qua-lis.nrw.de/erwachsenenbildung/elternmitwirkung-nrw/gremienarbeit/pflegschaften/klassenpflegschaft",
+      "snippet": "Die Pflegschaftsvorsitzenden berufen die Sitzungen der Klassenpflegschaft ein und laden die Eltern einer Klasse oder eines …"
+    },
+    {
+      "title": "BASS 2026/2027 -",
+      "url": "https://bass.schule.nrw/Stichwort/6043.htm",
+      "snippet": "Die Schulkonferenz kann frühestens nach vier Jahren über die Organisation der Schuleingangsphase neu entscheiden. Die …"
+    },
+    {
+      "title": "Schulstatistik | Bildungsportal NRW",
+      "url": "https://www.schulministerium.nrw/schule-bildung/bildungsthemen/schulstatistik",
+      "snippet": "Wie viele Schülerinnen und Schüler besuchen Ganztagsschulen und wie viele Lehrkräfte arbeiten in Nordrhein-Westfalen? Antworten …"
+    }
+  ]
+}

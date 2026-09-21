@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "nekojin116/Amadeus",
+  "slug": "nekojin116-amadeus",
+  "author": "nekojin116",
+  "url": "https://huggingface.co/nekojin116/Amadeus",
+  "created_at": "2026-09-21T00:50:04.000Z",
+  "updated_at": "2026-09-22T00:29:07.000Z",
+  "license": "meta-community-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "anime",
+    "steins;gate",
+    "kurisu",
+    "amadeus",
+    "en",
+    "base_model:unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit",
+    "base_model:quantized:unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3212749888,
+  "parameters_human": "3.21B",
+  "storage_bytes": 4040277074,
+  "storage_human": "4.0 GB",
+  "base_model": "unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Quina - Portal Loterias | CAIXA",
+      "url": "https://loterias.caixa.gov.br/Paginas/Quina.aspx",
+      "snippet": "Sep 14, 2026 · Ao jogar na Quina, você não só concorre a prêmios incríveis, mas também faz a diferença na vida de milhões de …"
+    },
+    {
+      "title": "What Happens to Your Body When You Eat Quinoa Every Day",
+      "url": "https://www.eatingwell.com/article/8068328/is-quinoa-good-for-you/",
+      "snippet": "Nov 7, 2025 · Quinoa is a gluten-free, high-fiber whole grain that is also a complete protein. Enjoy quinoa in sweet or savory foods, …"
+    },
+    {
+      "title": "Quina | Resultado, Números, Sorteio - UOL Notícias",
+      "url": "https://noticias.uol.com.br/loterias/quina/",
+      "snippet": "3 days ago · Quina: veja últimos resultados, ganhadores, sorteios, dicas e muito mais. Acompanhe todos os concursos das loterias …"
+    },
+    {
+      "title": "Quina - Menu",
+      "url": "https://quina.app/",
+      "snippet": "Quina is the classic word game of strategic deduction. Use clues and logic to uncover the secret code word. Available on the iOS App …"
+    },
+    {
+      "title": "Quina de hoje e de ontem, últimos resultados Quina - Foco em Loterias",
+      "url": "https://www.focoemloterias.com.br/quina/resultado-quina/",
+      "snippet": "1 day ago · Confira o resultado da Quina de hoje e de ontem, ganhadores, números sorteados e premiação paga nos últimos …"
+    }
+  ]
+}

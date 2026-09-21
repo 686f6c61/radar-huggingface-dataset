@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "sixstringzen/Hemmingway-1-oQ3e-mtp",
+  "slug": "sixstringzen-hemmingway-1-oq3e-mtp",
+  "author": "sixstringzen",
+  "url": "https://huggingface.co/sixstringzen/Hemmingway-1-oQ3e-mtp",
+  "created_at": "2026-09-20T21:40:41.000Z",
+  "updated_at": "2026-09-21T01:41:52.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "omlx",
+    "oq",
+    "oqe",
+    "quantized",
+    "3-bit",
+    "mtp",
+    "apple-silicon",
+    "creative-writing",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Altworld/Hemmingway-1",
+    "base_model:quantized:Altworld/Hemmingway-1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 13123735577,
+  "storage_human": "13.1 GB",
+  "base_model": "Altworld/Hemmingway-1",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vuelta a España 2026 Live op TV: Zenders en Uitzendtijden NL",
+      "url": "https://www.wielerflits.nl/nieuws/vuelta-a-espana-2026-op-tv-op-welke-tv-zenders-en-hoe-laat-kan-ik-vandaag-de-vuelta-kijken/",
+      "snippet": "Sep 13, 2026 · Ontdek waar en hoe laat je de Vuelta a España 2026 live kunt volgen in Nederland en België. Mis geen etappe en …"
+    },
+    {
+      "title": "Wielrennen op tv: WK, Ronde van Luxemburg en Gooikse Pijl",
+      "url": "https://www.wielerflits.nl/nieuws/wielrennen-op-tv/",
+      "snippet": "22 hours ago · Bekijk waar en wanneer je het WK tijdrijden, de Ronde van Luxemburg en de Gooikse Pijl live op tv, online of via …"
+    },
+    {
+      "title": "Startlijst Vuelta a España 2026 | WielerFlits",
+      "url": "https://www.wielerflits.nl/wielerkalender/vuelta-a-espana-2026/startlijst",
+      "snippet": "Nov 19, 2025 · De deelnemerslijst van de Vuelta a España 2026 met alle ploegen en renners die meedoen."
+    },
+    {
+      "title": "Vuelta a España 2026: Speel mee met Wielerflits Ploegleider",
+      "url": "https://www.wielerflits.nl/nieuws/vuelta-a-espana-2026-in-aantocht-begin-nu-aan-je-puzzel-voor-wielerflits-ploegleider/",
+      "snippet": "Aug 22, 2026 · Beleef de Vuelta 2026 intens met Wielerflits Ploegleider. Stel je team samen, scoor punten en strijd mee voor mooie …"
+    },
+    {
+      "title": "Deelnemers Vuelta a España 2026 met rugnummers - WielerFlits",
+      "url": "https://www.wielerflits.nl/nieuws/deelnemers-vuelta-a-espana-2026/",
+      "snippet": "Aug 21, 2026 · Ontdek de voorlopige deelnemerslijst van Vuelta a España 2026, inclusief rugnummers en updates. Blijf op de hoogte …"
+    }
+  ]
+}

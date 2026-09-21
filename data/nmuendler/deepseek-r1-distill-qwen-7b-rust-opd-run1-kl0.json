@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "nmuendler/DeepSeek-R1-Distill-Qwen-7B-rust-opd-run1-kl0",
+  "slug": "nmuendler-deepseek-r1-distill-qwen-7b-rust-opd-run1-kl0",
+  "author": "nmuendler",
+  "url": "https://huggingface.co/nmuendler/DeepSeek-R1-Distill-Qwen-7B-rust-opd-run1-kl0",
+  "created_at": "2026-09-20T20:12:29.000Z",
+  "updated_at": "2026-09-20T20:12:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:/capstor/scratch/cscs/nmuendler/reasoning_training2/outputs/paper/sft/r1_qwen_rust_kl0/lr2e-04/model",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 657397891,
+  "storage_human": "657 MB",
+  "base_model": "nmuendler/DeepSeek-R1-Distill-Qwen-7B-rust-sft-run1-kl0-baked",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Stay Inn on Saryan 26.3 str. in Yerevan - Klook Travel",
+      "url": "https://www.klook.com/hotels/detail/1305029-stay-inn-on-saryan-263-str/?msockid=1277201aee33611004b737c0ef3a6037",
+      "snippet": "Book Stay Inn on Saryan 26.3 str. in Yerevan at great prices! More hotel packages to choose from with Best Price Guarantee, plus …"
+    },
+    {
+      "title": "Stay Inn on Saryan 26.3 str. - Hotels.com",
+      "url": "https://www.hotels.com/ho3202797600/stay-inn-on-saryan-26-3-str-yerevan-armenia/?msockid=1277201aee33611004b737c0ef3a6037",
+      "snippet": "Stay Inn on Saryan 26.3 str. puts you just a 5-minute drive from Republic Square. Apartments feature bonuses like kitchens and sofa …"
+    },
+    {
+      "title": "Stay Inn on Saryan 26.3 str. (Yerevan, ), Yerevan hotel discounts ...",
+      "url": "https://in.hotels.com/ho3202797600/stay-inn-on-saryan-26-3-str-yerevan-armenia/",
+      "snippet": "Stay Inn on Saryan 26.3 str. puts you a short five-minute drive from Republic Square. Apartments feature bonuses such as kitchens …"
+    },
+    {
+      "title": "Stay Inn on Saryan 26.3 str. - Book with Sembo",
+      "url": "https://www.sembo.com/places/kentron-yerevan-armenia/hotels/8352759/stay-inn-on-saryan-26.3-str.",
+      "snippet": "With a stay at Stay Inn on Saryan 26.3 str., you'll be centrally located in Yerevan, within a 5-minute drive of Republic Square and …"
+    },
+    {
+      "title": "Stay Inn on Saryan 26.3 str. - Book with Sembo",
+      "url": "https://www.sembo.ca/places/kentron-yerevan-armenia/hotels/8352759/stay-inn-on-saryan-26.3-str.",
+      "snippet": "With a stay at Stay Inn on Saryan 26.3 str., you'll be centrally located in Yerevan, within a 5-minute drive of Republic Square and …"
+    }
+  ]
+}

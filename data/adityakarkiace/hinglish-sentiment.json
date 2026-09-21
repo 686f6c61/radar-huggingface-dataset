@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Adityakarkiace/hinglish-sentiment",
+  "slug": "adityakarkiace-hinglish-sentiment",
+  "author": "Adityakarkiace",
+  "url": "https://huggingface.co/Adityakarkiace/hinglish-sentiment",
+  "created_at": "2026-09-20T20:28:38.000Z",
+  "updated_at": "2026-09-20T20:28:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "arxiv:1910.09700",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 109484547,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437961724,
+  "storage_human": "438 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Stofferia - Stoffe & Meterware | Dein Stoffhandel",
+      "url": "https://stofferia.de/",
+      "snippet": "Bei Stofferia bieten wir eine große Auswahl an Stoffen für verschiedene Zwecke an. Dazu zählen Dekostoffe für Wohntextilien, …"
+    },
+    {
+      "title": "Alle Stoffe – Top Qualität | Stofferia Stoffhandel",
+      "url": "https://stofferia.de/alle-stoffe/",
+      "snippet": "Bei Stofferia sind Stoffe aus aller Welt in großer Vielfalt erhältlich. Von klassischen Baumwollstoffen aus Europa bis hin zu exotischen …"
+    },
+    {
+      "title": "Stoffe und Kurzwaren online kaufen | MT Stofferie",
+      "url": "https://www.mtstofferie.de/",
+      "snippet": "Finden Sie eine sehr große Auswahl an Stoffen als Meterware, Kurzwaren und Nähmaschinen online! Lieferung deutschlandweit!"
+    },
+    {
+      "title": "Dekostoff – Top Qualität | Stofferia Stoffhandel",
+      "url": "https://stofferia.de/dekostoff",
+      "snippet": "Stofferia.de bietet eine bunte Vielfalt an Dekostoffen aus Baumwolle, Leinen, Polyester, Seide, Viskose und Mischgeweben. Jeder …"
+    },
+    {
+      "title": "Polsterstoff - Top-Qualität | Stofferia Stoffhandel",
+      "url": "https://stofferia.de/polsterstoff",
+      "snippet": "In Stofferia erhältst du eine Auswahl an Polsterstoffen für dein Wohnmobil, die strapazierfähig, pflegeleicht und zudem optisch …"
+    }
+  ]
+}

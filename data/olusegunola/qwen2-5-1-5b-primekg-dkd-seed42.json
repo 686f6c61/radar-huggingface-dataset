@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "olusegunola/qwen2.5-1.5b-primekg-dkd-seed42",
+  "slug": "olusegunola-qwen2-5-1-5b-primekg-dkd-seed42",
+  "author": "olusegunola",
+  "url": "https://huggingface.co/olusegunola/qwen2.5-1.5b-primekg-dkd-seed42",
+  "created_at": "2026-09-20T23:37:41.000Z",
+  "updated_at": "2026-09-20T23:37:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 46317146,
+  "storage_human": "46 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Route Planner | Directions, traffic and maps | AA",
+      "url": "https://www.theaa.com/route-planner/maps?msockid=031433574c86613e21cb248c4dbc607f",
+      "snippet": "Use AA Route Planner to get directions. Find routes from a street, postcode, town, city or landmark to your destination. With maps, …"
+    },
+    {
+      "title": "Stonehenge Directions | English Heritage",
+      "url": "https://www.english-heritage.org.uk/visit/places/stonehenge/plan-your-visit/directions/",
+      "snippet": "From Salisbury station you can get a direct bus or taxi to Stonehenge. We recommend checking Wiltshire Council's Connecting …"
+    },
+    {
+      "title": "How to Get to Stonehenge: By Car, Train, Bus & Tour (2026)",
+      "url": "https://guide-stonehenge.com/plan-your-visit/how-to-get-there/",
+      "snippet": "Complete guide to getting to Stonehenge in 2026 — driving directions, train from London, the Stonehenge Tour Bus from Salisbury, …"
+    },
+    {
+      "title": "Plan your visit at Stonehenge | English Heritage",
+      "url": "https://www.english-heritage.org.uk/visit/places/stonehenge/plan-your-visit/",
+      "snippet": "Plan your day out to Stonehenge: find out how to get to site, what to do while you're here and all the ways we can help make your …"
+    },
+    {
+      "title": "Directions to Stonehenge England - MapQuest",
+      "url": "https://www.mapquest.com/directions/to/gb/england/stonehenge-england-512174737",
+      "snippet": "Driving directions to Stonehenge England, The Maltings, Salisbury, England including road conditions, live traffic updates, and …"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "kingjones777/Ternary-Bonsai-8B-ROCm-gfx1151",
+  "slug": "kingjones777-ternary-bonsai-8b-rocm-gfx1151",
+  "author": "kingjones777",
+  "url": "https://huggingface.co/kingjones777/Ternary-Bonsai-8B-ROCm-gfx1151",
+  "created_at": "2026-09-20T21:52:00.000Z",
+  "updated_at": "2026-09-20T21:52:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "ternary",
+    "rocm",
+    "amd",
+    "gfx1151",
+    "strix-halo",
+    "documentation",
+    "text-generation",
+    "base_model:prism-ml/Ternary-Bonsai-8B-gguf",
+    "base_model:finetune:prism-ml/Ternary-Bonsai-8B-gguf",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "prism-ml/Ternary-Bonsai-8B-gguf",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Online Document Editing with Microsoft Word | Microsoft 365",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/word?msockid=36298345652569802b8f949f64bb686e",
+      "snippet": "Use Microsoft Word for online document editing with AI-powered suggestions from Copilot for grammar, style, and clarity. Write, edit, …"
+    },
+    {
+      "title": "Create and edit documents for free | Microsoft Word for the Web",
+      "url": "https://word.cloud.microsoft/en-us/",
+      "snippet": "Write, edit, and collaborate on documents with Microsoft Word online. Free and seamless access from any device."
+    },
+    {
+      "title": "Microsoft Word - Download",
+      "url": "https://microsoft-word.en.softonic.com/",
+      "snippet": "4 days ago · Microsoft Word continues to prove why it remains the default choice for document creation across schools, businesses, …"
+    },
+    {
+      "title": "Free online document editor | Microsoft Word",
+      "url": "https://word.cloud.microsoft/create/en/document-editor/",
+      "snippet": "Create and edit web-based documents with Microsoft Word. Store documents online and access them from any computer."
+    },
+    {
+      "title": "Sign in to your account",
+      "url": "https://www.office.com/launch/word",
+      "snippet": "Sign in to access Microsoft Word and collaborate on documents online with OneDrive."
+    }
+  ]
+}

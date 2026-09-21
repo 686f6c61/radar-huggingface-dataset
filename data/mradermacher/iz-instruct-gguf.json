@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "mradermacher/iz-instruct-GGUF",
+  "slug": "mradermacher-iz-instruct-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/iz-instruct-GGUF",
+  "created_at": "2026-09-20T22:58:50.000Z",
+  "updated_at": "2026-09-20T23:21:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "base_model:adapter:Qwen/Qwen2.5-1.5B-Instruct",
+    "lora",
+    "en",
+    "base_model:theplayboy117/iz-instruct",
+    "base_model:adapter:theplayboy117/iz-instruct",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1543714304,
+  "parameters_human": "1.54B",
+  "storage_bytes": 14206897920,
+  "storage_human": "14.2 GB",
+  "base_model": "theplayboy117/iz-instruct",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pinterest",
+      "url": "https://www.pinterest.fr/",
+      "snippet": "Trouvez des inspirations et idées pratiques pour tous vos projets au quotidien sur Pinterest."
+    },
+    {
+      "title": "Pinterest - France",
+      "url": "https://fr.pinterest.com/",
+      "snippet": "Trouvez des inspirations et idées pratiques pour tous vos projets au quotidien sur Pinterest."
+    },
+    {
+      "title": "Pinterest",
+      "url": "https://www.pinterest.com/login/",
+      "snippet": "turn on JavaScript."
+    },
+    {
+      "title": "fr.pinterest.com",
+      "url": "https://fr.pinterest.com/login/",
+      "snippet": "Oh no! Pinterest doesn't work unless youturn on JavaScript."
+    },
+    {
+      "title": "Pinterest",
+      "url": "https://es.pinterest.com/login/",
+      "snippet": "Oh no! Pinterest doesn't work unless youturn on JavaScript."
+    }
+  ]
+}

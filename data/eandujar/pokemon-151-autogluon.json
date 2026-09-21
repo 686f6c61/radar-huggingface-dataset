@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "eandujar/pokemon-151-autogluon",
+  "slug": "eandujar-pokemon-151-autogluon",
+  "author": "eandujar",
+  "url": "https://huggingface.co/eandujar/pokemon-151-autogluon",
+  "created_at": "2026-09-21T02:17:44.000Z",
+  "updated_at": "2026-09-21T02:24:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "autogluon",
+  "languages": [],
+  "tags": [
+    "autogluon",
+    "tabular",
+    "binary-classification",
+    "pokemon",
+    "education",
+    "dataset:pakiino/2026-24679-pokemon-151-tabular-hw1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 59171,
+  "storage_human": "59171 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Baufinanzierung: Dein Weg zum Eigenheim - DKB AG",
+      "url": "https://www.dkb.de/privatkunden/baufinanzierung",
+      "snippet": "Baufinanzierung mit Expertise: Finanziere den Kauf oder Bau deiner Wunschimmobilie mit Zinssicherheit bis zu 30 Jahren bequem …"
+    },
+    {
+      "title": "Baufinanzierungsrechner - Jetzt Baufinanzierung berechnen - DKB AG",
+      "url": "https://www.dkb.de/privatkunden/baufinanzierung/baufinanzierungsrechner",
+      "snippet": "Kostenloser Baufinanzierungsrechner - Ermittle deine Konditionen: Kreditsumme Monatsrate & Tilgung. Jetzt online berechnen & Top …"
+    },
+    {
+      "title": "Hilfe & Services für Privatkund*innen - DKB AG",
+      "url": "https://www.dkb.de/privatkunden/service",
+      "snippet": "Hier findest du im Überblick alles Wissenswerte zu unseren Services, den wichtigsten Fragen & weitere hilfreiche Informationen."
+    },
+    {
+      "title": "Schnell und einfach den Kredit aufstocken - DKB AG",
+      "url": "https://www.dkb.de/privatkunden/kredite/kredit-aufstocken",
+      "snippet": "Laufenden Kredit erhöhen mit der DKB bereits ab 2.500 Euro möglich lange Laufzeiten Jetzt bestehenden Kredit aufstocken!"
+    },
+    {
+      "title": "Kann ich bei meinem Kredit eine Sondertilgung leisten? - DKB AG",
+      "url": "https://www.dkb.de/fragen-antworten/kann-ich-bei-meinem-kredit-eine-sondertilgung-leisten",
+      "snippet": "Nach Auszahlung deines Kredites oder deiner Baufinanzierung kannst du Sondertilgungen leisten, sofern dies so in deinem Vertrag …"
+    }
+  ]
+}

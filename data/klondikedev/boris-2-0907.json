@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "KlondikeDev/Boris-2-0907",
+  "slug": "klondikedev-boris-2-0907",
+  "author": "KlondikeDev",
+  "url": "https://huggingface.co/KlondikeDev/Boris-2-0907",
+  "created_at": "2026-09-21T01:29:21.000Z",
+  "updated_at": "2026-09-21T01:55:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "causal-lm",
+    "research-artifact",
+    "failed-run",
+    "text-generation",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 289882015,
+  "storage_human": "290 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "SwissTransfer - Invio protetto e gratuito di file di grandi dimensioni",
+      "url": "https://www.swisstransfer.com/it",
+      "snippet": "Utilizzando SwissTransfer, accetto le condizioni di utilizzo."
+    },
+    {
+      "title": "SwissTransfer - Send large files securely and free of charge",
+      "url": "https://www.swisstransfer.com/en",
+      "snippet": "Send up to 50 GB - Free and no registration required - Keep your transfers for 30 days"
+    },
+    {
+      "title": "Come funziona SwissTransfer | Salvatore Aranzulla",
+      "url": "https://www.aranzulla.it/come-funziona-swisstransfer-1958583.html",
+      "snippet": "SwissTransfer è un servizio gratuito pensato per il trasferimento di file di grandi dimensioni, sviluppato da Infomaniak, azienda cloud …"
+    },
+    {
+      "title": "SwissTransfer - Envoi sécurisé et gratuit de gros fichiers",
+      "url": "https://www.swisstransfer.com/fr",
+      "snippet": "SwissTransfer Envoyez jusqu'à 50 Go Gratuit et sans inscription Fichiers stockés en Suisse 🇨🇭 Gardez vos transferts jusqu'à 30 jours …"
+    },
+    {
+      "title": "SwissTransfer – Sicherer und kostenloser Versand grosser Dateien",
+      "url": "https://www.swisstransfer.com/de",
+      "snippet": "Mit der Nutzung von SwissTransfer akzeptiere ich die Nutzungsbedingungen."
+    }
+  ]
+}

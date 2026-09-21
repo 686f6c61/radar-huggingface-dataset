@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "whotao1766/bilstm-sentimen-kebijakan-publik",
+  "slug": "whotao1766-bilstm-sentimen-kebijakan-publik",
+  "author": "whotao1766",
+  "url": "https://huggingface.co/whotao1766/bilstm-sentimen-kebijakan-publik",
+  "created_at": "2026-09-21T03:19:43.000Z",
+  "updated_at": "2026-09-21T03:19:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": "keras",
+  "languages": [
+    "id"
+  ],
+  "tags": [
+    "keras",
+    "sentiment-analysis",
+    "indonesian",
+    "bilstm",
+    "tensorflow",
+    "text-classification",
+    "id",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 39,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3975094,
+  "storage_human": "4 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Frisco - Zakupy spożywcze online z dostawą do domu",
+      "url": "https://www.frisco.pl/",
+      "snippet": "Klienci Frisco mają lepiej! Zrób pierwszy krok w stronę nowoczesnych zakupów i zyskaj czas na to, co dla Ciebie najważniejsze! Rób …"
+    },
+    {
+      "title": "Świeży chleb - Frisco.pl",
+      "url": "https://www.frisco.pl/c,18895/cat,z-piekarni-i-cukierni-swieze-chleby/stn,searchResults",
+      "snippet": "Klienci Frisco mają lepiej! Zrób pierwszy krok w stronę nowoczesnych zakupów i zyskaj czas na to, co dla Ciebie najważniejsze! Rób …"
+    },
+    {
+      "title": "Woda – mineralna, gazowana, niegazowana i smakowa - Frisco.pl",
+      "url": "https://www.frisco.pl/c,21107/cat,napoje-woda/stn,searchResults",
+      "snippet": "Woda w sklepie online: mineralna, gazowana, niegazowana, smakowa, lecznicza oraz dla dzieci. Zamów z dostawą do domu– w …"
+    },
+    {
+      "title": "Supermarket online, zakupy spożywcze z dostawą do domu - Frisco.pl",
+      "url": "https://www.frisco.pl/160",
+      "snippet": "Klienci Frisco mają lepiej! Zrób pierwszy krok w stronę nowoczesnych zakupów i zyskaj czas na to, co dla Ciebie najważniejsze! Rób …"
+    },
+    {
+      "title": "świeże owoce, warzywa, sałatki, kiszonki - Frisco.pl",
+      "url": "https://www.frisco.pl/c,18703/cat,warzywa-i-owoce/stn,searchResults",
+      "snippet": "Świeże warzywa i owoce w sklepie online: banany, jabłka, gruszki, cytrusy, pomidory, papryka, sałaty, zioła, grzyby oraz kiszonki i …"
+    }
+  ]
+}

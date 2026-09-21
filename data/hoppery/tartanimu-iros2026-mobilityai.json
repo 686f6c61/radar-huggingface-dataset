@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "hoppery/tartanimu-iros2026-mobilityai",
+  "slug": "hoppery-tartanimu-iros2026-mobilityai",
+  "author": "hoppery",
+  "url": "https://huggingface.co/hoppery/tartanimu-iros2026-mobilityai",
+  "created_at": "2026-09-21T00:42:32.000Z",
+  "updated_at": "2026-09-21T00:42:48.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "other",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "inertial-odometry",
+    "imu",
+    "state-estimation",
+    "robotics",
+    "other",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 162696771,
+  "storage_human": "163 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Create and save a passkey | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/accounts-billing/security/create-save-passkey",
+      "snippet": "Learn how to create and save a passkey to sign in to your Microsoft personal or work/school account and many other websites, apps …"
+    },
+    {
+      "title": "Anmelden bei Hotmail | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/accounts-billing/manage/how-to-sign-in-to-hotmail",
+      "snippet": "Microsoft hält immer ein Auge auf ungewöhnliche Anmeldeaktivitäten, nur für den Fall, dass jemand anderes versucht, auf Ihr Konto …"
+    },
+    {
+      "title": "Sign in to your account - techcommunity.microsoft.com",
+      "url": "https://techcommunity.microsoft.com/blog/exchange/exchange-online-ews-your-time-is-almost-up/4492361",
+      "snippet": "We wanted to provide an update on Exchange Online EWS deprecation."
+    },
+    {
+      "title": "Microsoft Copilot Blog | Microsoft Community Hub",
+      "url": "https://techcommunity.microsoft.com/category/microsoft-copilot/blog/microsoft-copilot-blog",
+      "snippet": "Built for business: How Microsoft 365 Copilot keeps you in the flow of legal work Now the LegalZoom agent works inside Microsoft …"
+    },
+    {
+      "title": "Change the refresh rate on your monitor in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/hardware/display-graphics/change-the-refresh-rate-on-your-monitor-in-windows",
+      "snippet": "Learn how to change the refresh rate for your display in Windows to determine how smoothly motion appears on your screen."
+    }
+  ]
+}

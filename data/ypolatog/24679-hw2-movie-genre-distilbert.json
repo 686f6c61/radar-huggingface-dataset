@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "ypolatog/24679-hw2-movie-genre-distilbert",
+  "slug": "ypolatog-24679-hw2-movie-genre-distilbert",
+  "author": "ypolatog",
+  "url": "https://huggingface.co/ypolatog/24679-hw2-movie-genre-distilbert",
+  "created_at": "2026-09-21T01:13:31.000Z",
+  "updated_at": "2026-09-21T01:13:59.000Z",
+  "license": "classroom-use",
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "distilbert",
+    "text-classification",
+    "24-679",
+    "base_model:distilbert/distilbert-base-uncased",
+    "base_model:finetune:distilbert/distilbert-base-uncased",
+    "license:other",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 29,
+  "trending_score": 0,
+  "parameters": 66957317,
+  "parameters_human": "67.0M",
+  "storage_bytes": 267847637,
+  "storage_human": "268 MB",
+  "base_model": "distilbert-base-uncased",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "ArinRoths/movie-data",
+      "metric": "Macro F1 (held-out test)",
+      "value": 0.659
+    },
+    {
+      "task": null,
+      "dataset": "ArinRoths/movie-data",
+      "metric": "Accuracy (held-out test)",
+      "value": 0.6667
+    }
+  ],
+  "sources": [
+    {
+      "title": "Virtual Piano - Play The Best Online Piano Keyboard",
+      "url": "https://virtualpiano.net/",
+      "snippet": "Play the piano online instantly on Virtual Piano. Become an online pianist and create your own extraordinary music! The platform …"
+    },
+    {
+      "title": "Virtual Piano - Online Piano Keyboard | OnlinePianist",
+      "url": "https://www.onlinepianist.com/virtual-piano",
+      "snippet": "Use a computer keyboard, mouse or touch screen to play a virtual piano keyboard. Our virtual piano simulates a real piano keyboard …"
+    },
+    {
+      "title": "Virtual Piano | Play the Best Musical Keyboard Online",
+      "url": "https://recursivearts.com/virtual-piano/",
+      "snippet": "Experience the most realistic virtual piano online. Play free interactive songs, share your recordings and learn notes and scales on …"
+    },
+    {
+      "title": "VirtualPiano.io — Play Piano Online in Your Browser",
+      "url": "https://virtualpiano.io/",
+      "snippet": "An online piano you can play in your browser. No download needed. Works fullscreen on any device."
+    },
+    {
+      "title": "Virtual piano – Play piano online | Musicca",
+      "url": "https://www.musicca.com/piano",
+      "snippet": "Play piano online for free. See notes on the keyboard, play melodies and chords, and record what you play directly in your browser."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "taeyoungrlwlrd/cosmos3-ap-gr1-auxfut-actvis-hi-staticonly-lam10-b256-16k-naver",
+  "slug": "taeyoungrlwlrd-cosmos3-ap-gr1-auxfut-actvis-hi-staticonly-lam10-b256-16k-naver",
+  "author": "taeyoungrlwlrd",
+  "url": "https://huggingface.co/taeyoungrlwlrd/cosmos3-ap-gr1-auxfut-actvis-hi-staticonly-lam10-b256-16k-naver",
+  "created_at": "2026-09-21T01:18:57.000Z",
+  "updated_at": "2026-09-21T02:42:02.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 91053085382,
+  "storage_human": "91.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "हिंदी नहीं, फारसी भाषा के हैं ये शब्द, आप भी रोजमर्रा में करते …",
+      "url": "https://www.jagranjosh.com/general-knowledge/list-of-persian-words-used-in-hindi-1820007627-2",
+      "snippet": "Apr 6, 2026 · फारसी भाषा के कई शब्द ऐसे हैं, जिनका इस्तेमाल रोजमर्रा के तौर पर हिंदी में ..."
+    },
+    {
+      "title": "हिंदी में शब्द (Hindi Me Shabd) - हिंदी शब्दकोश का संग्रह",
+      "url": "https://hindimeshabd.com/",
+      "snippet": "Jun 13, 2024 · हिंदी शब्दकोश का संग्रह Ri ki Matra Wale Shabd: इस आर्टिकल में ऋ की मात्रा वाले शब्द के बारे में जानने वाले …"
+    },
+    {
+      "title": "हिंदी समझ कर बोले जाने वाले फारसी शब्द",
+      "url": "https://www.linkedin.com/pulse/%E0%A4%B9%E0%A4%A6-%E0%A4%B8%E0%A4%AE%E0%A4%9D-%E0%A4%95%E0%A4%B0-%E0%A4%AC%E0%A4%B2-%E0%A4%9C%E0%A4%A8-%E0%A4%B5%E0%A4%B2-%E0%A4%AB%E0%A4%B0%E0%A4%B8-%E0%A4%B6%E0%A4%AC%E0%A4%A6-chander-shekhar-amxzc",
+      "snippet": "Jun 15, 2026 · हिंदी भाषा में फारसी मूल के कई शब्द रोजमर्रा की बोलचाल में इस्तेमाल होते ..."
+    },
+    {
+      "title": "हिंदी शब्दकोश | राजभाषा विभाग | गृह मंत्रालय | भारत सरकार",
+      "url": "https://rajbhasha.gov.in/hi/hindi-vocabulary",
+      "snippet": "11 hours ago · हिंदी शब्दकोश ... वेबसाइट नीति कार्यालय समय संग्रहालय वैब सूचना प्रबंधक अस्वीकरण सहायता प्रतिक्रिया …"
+    },
+    {
+      "title": "Hindi Shabd-Sindhu",
+      "url": "https://hindishabdsindhu.rajbhasha.gov.in/",
+      "snippet": "हिंदी शब्द-सिंधु शब्दों को खोजें, अर्थ जानें और भाषा का ज्ञान बढ़ाएं। हिंदी शब्द-सिंधु में आपका स्वागत है।"
+    }
+  ]
+}

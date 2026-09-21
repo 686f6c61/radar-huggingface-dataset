@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "AmoghShrivastava1/g1-brunson",
+  "slug": "amoghshrivastava1-g1-brunson",
+  "author": "AmoghShrivastava1",
+  "url": "https://huggingface.co/AmoghShrivastava1/g1-brunson",
+  "created_at": "2026-09-20T23:43:26.000Z",
+  "updated_at": "2026-09-21T19:59:55.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "brax",
+  "languages": [],
+  "tags": [
+    "brax",
+    "robotics",
+    "humanoid",
+    "unitree-g1",
+    "mujoco",
+    "mjx",
+    "ppo",
+    "sim2real",
+    "basketball",
+    "reinforcement-learning",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 62642350,
+  "storage_human": "63 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pizza Hut | Pizza bestellen voor levering of takeout",
+      "url": "https://www.pizzahut.be/",
+      "snippet": "Bestel je favoriete pizza online bij Pizza Hut. Snelle levering of afhalen in je buurt. Ontdek exclusieve promoties en profiteer via de app."
+    },
+    {
+      "title": "O Sole Mio - Livraison repas à domicile - Bruxelles - Commande en ligne",
+      "url": "https://osolemiobrussels.be/",
+      "snippet": "Commander en ligne pour vos plats à emporter, être livré ou réserver une table Ici chez O Sole Mio Brussels - Bruxelles vous …"
+    },
+    {
+      "title": "Eten bestellen - Pizza bestellen in 9220 Hamme | MyMenu.be",
+      "url": "https://www.mymenu.be/eten-bestellen/9220-hamme",
+      "snippet": "Online eten bestellen bij restaurants in 9220 Hamme, bijvoorbeeld bij Bosporus, HamHam Food, Pizza Sara, Pitza Service, Be …"
+    },
+    {
+      "title": "Italiaans restaurant in Brussel | A L'Angolo",
+      "url": "https://alangolo.be/nl",
+      "snippet": "Bij A l'Angolo, kom en geniet van lekkere pizza's Ons etablissement in Brussel, in het centrum van de stad, biedt traditionele …"
+    },
+    {
+      "title": "Pizza afhalen of laten bezorgen in postcode 9220 – Hapsalons.be",
+      "url": "https://www.hapsalons.be/postcode-9220/pizza",
+      "snippet": "Waar kun je pizza afhalen of laten bezorgen in postcode 9220? Vind alle restaurants om pizza af te halen of bezorgen in postcode …"
+    }
+  ]
+}

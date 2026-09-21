@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "akhilaaa3/Jev-Omni",
+  "slug": "akhilaaa3-jev-omni",
+  "author": "akhilaaa3",
+  "url": "https://huggingface.co/akhilaaa3/Jev-Omni",
+  "created_at": "2026-09-20T21:43:20.000Z",
+  "updated_at": "2026-09-22T00:48:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "text-classification",
+    "multimodal",
+    "merged",
+    "base_model:google/gemma-4-12B-it",
+    "base_model:finetune:google/gemma-4-12B-it",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 47666630456,
+  "storage_human": "47.7 GB",
+  "base_model": "google/gemma-4-12B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Networks and Innovation: Accounting for Structural and Institutional ...",
+      "url": "https://www.jstor.org/stable/48748582",
+      "snippet": "We address this issue by focusing on triads as the locus of recombination in networks. We partition firms’ networks into three …"
+    },
+    {
+      "title": "Networks and Innovation: Accounting for Structural and Institutional ...",
+      "url": "https://faculty.wharton.upenn.edu/wp-content/uploads/2018/03/balachandran-hernandez-2018-orgsci.pdf",
+      "snippet": "We address this issue by focusing on triads as the locus of recombination in networks. We partition firms' networks into three …"
+    },
+    {
+      "title": "Networks and Innovation: Accounting for Structural and Institutional ...",
+      "url": "https://pubsonline.informs.org/doi/10.1287/orsc.2017.1165",
+      "snippet": "Jan 30, 2018 · We address this issue by focusing on triads as the locus of recombination in networks. We partition firms’ networks …"
+    },
+    {
+      "title": "Networks and Innovation: Accounting for Structural and Institutional ...",
+      "url": "https://www.researchgate.net/publication/322810626_Networks_and_Innovation_Accounting_for_Structural_and_Institutional_Sources_of_Recombination_in_Brokerage_Triads",
+      "snippet": "Jan 30, 2018 · We address this issue by focusing on triads as the locus of recombination in networks. We partition firms’ networks …"
+    },
+    {
+      "title": "Networks and Innovation: Accounting for Structural and Institutional ...",
+      "url": "https://mackinstitute.wharton.upenn.edu/2018/networks-and-innovation/",
+      "snippet": "Jan 30, 2018 · Abstract: Research linking interorganizational networks to innovation has focused on spanning structural boundaries …"
+    }
+  ]
+}

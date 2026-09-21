@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "cxai-models/flux-3.0-flash-krn",
+  "slug": "cxai-models-flux-3-0-flash-krn",
+  "author": "cxai-models",
+  "url": "https://huggingface.co/cxai-models/flux-3.0-flash-krn",
+  "created_at": "2026-09-20T22:07:05.000Z",
+  "updated_at": "2026-09-20T22:07:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "trading",
+    "finance",
+    "autonomous-agents",
+    "cxai-flux-3.0",
+    "time-series",
+    "multi-agent",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "windows - What is \"%AppData%\"? - Super User",
+      "url": "https://superuser.com/questions/632891/what-is-appdata",
+      "snippet": "The AppData\\Local and AppData\\Roaming locations are the preferred locations for applications to store data that is not required to be …"
+    },
+    {
+      "title": "A complete list of \"%%\" relative paths/variables in Windows Explorer in ...",
+      "url": "https://superuser.com/questions/1655266/a-complete-list-of-relative-paths-variables-in-windows-explorer-in-windows",
+      "snippet": "Jun 7, 2021 · I would like to know the full list of variables that I can use in Windows Explorer or related relative paths that is accepted …"
+    },
+    {
+      "title": "Newest 'appdata' Questions - Super User",
+      "url": "https://superuser.com/questions/tagged/appdata?tab=Newest",
+      "snippet": "Mar 31, 2024 · Q&A for computer enthusiasts and power users Use this tag when the topic is about the Windows %APPDATA% …"
+    },
+    {
+      "title": "Where do Start Menu\\All Programs shortcuts reside? - Super User",
+      "url": "https://superuser.com/questions/86078/where-do-start-menu-all-programs-shortcuts-reside",
+      "snippet": "Dec 21, 2009 · As you edited - Any users start menu is located at: C:\\Users\\USER-NAME\\AppData\\Roaming\\Microsoft\\Windows\\Start …"
+    },
+    {
+      "title": "Adding folder and shortcut to Windows 10 Start Menu",
+      "url": "https://superuser.com/questions/1167961/adding-folder-and-shortcut-to-windows-10-start-menu",
+      "snippet": "Jan 16, 2017 · To clarify, do you want to see this shortcut on the All Apps list or on the Start Menu? Also, is this shortcut designed to …"
+    }
+  ]
+}

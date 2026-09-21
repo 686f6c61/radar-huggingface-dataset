@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "sartajbhuvaji/bonsai-qwen3-30b-a3b-teacher-corrected",
+  "slug": "sartajbhuvaji-bonsai-qwen3-30b-a3b-teacher-corrected",
+  "author": "sartajbhuvaji",
+  "url": "https://huggingface.co/sartajbhuvaji/bonsai-qwen3-30b-a3b-teacher-corrected",
+  "created_at": "2026-09-20T22:58:37.000Z",
+  "updated_at": "2026-09-20T23:04:33.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "qwen3_moe",
+    "qwen3-moe",
+    "typescript",
+    "mixture-of-experts",
+    "teacher-correction",
+    "text-generation",
+    "conversational",
+    "en",
+    "arxiv:2408.11796",
+    "base_model:Qwen/Qwen3-30B-A3B-Base",
+    "base_model:finetune:Qwen/Qwen3-30B-A3B-Base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30532122624,
+  "parameters_human": "30.53B",
+  "storage_bytes": 61078033652,
+  "storage_human": "61.1 GB",
+  "base_model": "Qwen/Qwen3-30B-A3B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube Video Downloader - turboscribe.ai",
+      "url": "https://turboscribe.ai/downloader/youtube/video/free?msockid=2c8f47858e44639626b5505f8f5d6234",
+      "snippet": "Paste a URL to download the video. Free, fast, and no ads. Download YouTube videos in moments with TurboScribe’s streamlined …"
+    },
+    {
+      "title": "YouTube to MP3 Converter",
+      "url": "https://mp3cow.com/",
+      "snippet": "With MP3Cow, you have one of the fastest and ad-free YouTube to MP3 converters on the entire web. The average conversion takes …"
+    },
+    {
+      "title": "Free YouTube Video Downloader 2025 – 4K & 1080p, No Ads",
+      "url": "https://www.clipto.com/media-downloader/youtube-downloader",
+      "snippet": "Using our free YouTube video downloader is quick and easy. Simply copy the URL of the video you want to download from YouTube, …"
+    },
+    {
+      "title": "YouTube Video Downloader - YTDown",
+      "url": "https://ytdown.tools/",
+      "snippet": "YTDown is a free YouTube video downloader that lets you download YouTube videos and playlists in MP4 or MP3. Simply copy the …"
+    },
+    {
+      "title": "YT Video Downloader – Free - Download and install on Windows ...",
+      "url": "https://apps.microsoft.com/detail/xpffdcd2ps6dgh",
+      "snippet": "YT Video Downloader is a free and easy-to-use application that lets you download YouTube videos, convert YouTube to MP4 or …"
+    }
+  ]
+}

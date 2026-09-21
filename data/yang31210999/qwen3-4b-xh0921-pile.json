@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "yang31210999/Qwen3-4B-xh0921-pile",
+  "slug": "yang31210999-qwen3-4b-xh0921-pile",
+  "author": "yang31210999",
+  "url": "https://huggingface.co/yang31210999/Qwen3-4B-xh0921-pile",
+  "created_at": "2026-09-21T02:15:50.000Z",
+  "updated_at": "2026-09-21T02:17:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 2288430780,
+  "parameters_human": "2.29B",
+  "storage_bytes": 3134950714,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Neujahr – Wikipedia",
+      "url": "https://de.m.wikipedia.org/wiki/Neujahr",
+      "snippet": "Neujahr (auch Neujahrstag) ist der erste Tag des Kalenderjahres. Wegen der teils in einzelnen Kulturen und Religionen …"
+    },
+    {
+      "title": "Neujahrsfest – Wikipedia",
+      "url": "https://de.m.wikipedia.org/wiki/Neujahrsfest",
+      "snippet": "Auf der Südhalbkugel fällt Neujahr auf die Zeit nach der Sommersonnenwende, ist also ein hochsommerliches Fest. Während das …"
+    },
+    {
+      "title": "Neujahr (Feiertag Deutschland)",
+      "url": "https://www.feiertage-deutschland.de/neujahr/",
+      "snippet": "„Neujahrsnacht still und klar, deutet auf ein gutes Jahr.“ „Anfang und Ende vom Januar zeigen das Wetter für ein ganzes Jahr.“ …"
+    },
+    {
+      "title": "Neujahr 2027 - Datum, Bräuche und Entstehung - Kalender-Uhrzeit.de",
+      "url": "https://www.kalender-uhrzeit.de/feiertage/neujahr",
+      "snippet": "Neujahr ist der erste Tag des neuen Kalenderjahres und gehört in Deutschland zu den wenigen rein weltlichen Feiertagen. …"
+    },
+    {
+      "title": "Neujahr: Traditionen, Bräuche und Bedeutungen des neuen Jahres",
+      "url": "https://www.celebratefestnow.com/de/blogs/neujahr/",
+      "snippet": "Jan 25, 2026 · Entdecken Sie die Bedeutung von Neujahr in Deutschland, von Traditionen bis zu Neujahrsvorsätzen. Alles, was Sie …"
+    }
+  ]
+}

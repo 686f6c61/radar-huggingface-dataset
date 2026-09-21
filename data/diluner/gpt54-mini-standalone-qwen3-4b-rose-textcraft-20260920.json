@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Diluner/gpt54-mini-standalone-qwen3-4b-rose-textcraft-20260920",
+  "slug": "diluner-gpt54-mini-standalone-qwen3-4b-rose-textcraft-20260920",
+  "author": "Diluner",
+  "url": "https://huggingface.co/Diluner/gpt54-mini-standalone-qwen3-4b-rose-textcraft-20260920",
+  "created_at": "2026-09-21T00:01:53.000Z",
+  "updated_at": "2026-09-21T00:02:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "agent-training",
+    "gpt-5.4-mini",
+    "rose",
+    "standalone",
+    "conversational",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:finetune:Qwen/Qwen3-4B",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4411424256,
+  "parameters_human": "4.41B",
+  "storage_bytes": 8834317158,
+  "storage_human": "8.8 GB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "QUERY function - Google Docs Editors Help",
+      "url": "https://support.google.com/docs/answer/3093343?hl=en",
+      "snippet": "QUERY function Runs a Google Visualization API Query Language query across data. Sample Usage QUERY (A2:E6,\"select avg (A) …"
+    },
+    {
+      "title": "QUERY - เครื่องมือแก้ไข Google เอกสาร ...",
+      "url": "https://support.google.com/docs/answer/3093343?hl=th",
+      "snippet": "เรียกใช้การค้นหาของ Google Visualization API Query Language จากข้อมูลทั้งหมด ตัวอย่างการใช้งาน QUERY (A2:E6,\"select avg (A) pivot …"
+    },
+    {
+      "title": "sin prejuicio - WordReference Forums",
+      "url": "https://forum.wordreference.com/threads/sin-prejuicio.1452459/",
+      "snippet": "Jun 30, 2009 · Como podemos traduzir a seguinte expressão: \"se acepta con la cualidad ordinaria de sin prejuicio...y para la prática …"
+    },
+    {
+      "title": "jouer aux pitres - WordReference Forums",
+      "url": "https://forum.wordreference.com/threads/jouer-aux-pitres.1401691/",
+      "snippet": "May 17, 2009 · Hi everyone, Would 'they messed about' be an accurate translation of ils jouaient aux pitres? Thanks for your help!"
+    },
+    {
+      "title": "[GA4] Google Analytics 4-property sample dataset for BigQuery",
+      "url": "https://support.google.com/analytics/answer/10937659?hl=en",
+      "snippet": "See this article on our developer site. [GA4] Google Analytics 4-property sample dataset for BigQuery"
+    }
+  ]
+}

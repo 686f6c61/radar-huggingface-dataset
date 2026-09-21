@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-mistral_remove40_swapgapiter_rankunit_b010",
+  "slug": "jeesup-svd-safety-mistral_remove40_swapgapiter_rankunit_b010",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-mistral_remove40_swapgapiter_rankunit_b010",
+  "created_at": "2026-09-20T23:41:04.000Z",
+  "updated_at": "2026-09-20T23:56:12.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "mistral",
+    "text-generation",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:mistralai/Mistral-7B-Instruct-v0.2",
+    "base_model:finetune:mistralai/Mistral-7B-Instruct-v0.2",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7241732096,
+  "parameters_human": "7.24B",
+  "storage_bytes": 14483991459,
+  "storage_human": "14.5 GB",
+  "base_model": "mistralai/Mistral-7B-Instruct-v0.2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kontakty - J&T Banka",
+      "url": "https://www.jtbank.cz/kontakty",
+      "snippet": "Po – Pá 9.00 – 17.00 hod. Spojte se s námi prostřednictvím klientské linky či e-mailu. Domluvte si schůzku na pobočce nebo v …"
+    },
+    {
+      "title": "Kontakty - J&T BANKA",
+      "url": "https://www.jtbanka.sk/kontakty/",
+      "snippet": "Máte otázky k investovaniu alebo uvažujete o termínovanom vklade? Nemusíte chodiť do banky. Využite online formulár alebo našu …"
+    },
+    {
+      "title": "Vše začíná potkáním | J&T Banka",
+      "url": "https://www.jtbank.cz/",
+      "snippet": "Aug 18, 2026 · Co všechno hraje roli při předávání pracně budované značky dalšímu pokolení? Jak se smířit s odevzdáním šéfovské …"
+    },
+    {
+      "title": "J&T BANKA - Kontakty, recenze, pobočky a info o produktech | Banky.cz",
+      "url": "https://www.banky.cz/banky/jt-banka/",
+      "snippet": "Vše o J&T BANKA - přehledné informace, expertní hodnocení a srovnání produktů i nejbližší pobočku či bankomat najdete na …"
+    },
+    {
+      "title": "Contacts - J&T BANKA",
+      "url": "https://www.jtbanka.sk/en/contacts/",
+      "snippet": "If necessary, you can contact the J&T BANKA client service. Call the green line +420 800 226 558 or in case of a call outside the …"
+    }
+  ]
+}

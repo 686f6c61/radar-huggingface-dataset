@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "raporto/pycoder-3b",
+  "slug": "raporto-pycoder-3b",
+  "author": "raporto",
+  "url": "https://huggingface.co/raporto/pycoder-3b",
+  "created_at": "2026-09-21T00:14:50.000Z",
+  "updated_at": "2026-09-21T01:12:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "pt",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "qwen2.5",
+    "qlora",
+    "lora",
+    "peft",
+    "python",
+    "code",
+    "code-generation",
+    "conversational",
+    "pt",
+    "en",
+    "es",
+    "dataset:iamtarun/python_code_instructions_18k_alpaca",
+    "arxiv:2305.14314",
+    "arxiv:2106.09685",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-3B-Instruct",
+    "license:apache-2.0",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 6183348708,
+  "storage_human": "6.2 GB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "| Viết bởi - Tinhte.vn",
+      "url": "https://tinhte.vn/thread/tai-photoshop-2024-full-crack-huong-dan-cai-dat-chi-tiet.3791353/",
+      "snippet": "Diễn đàn thảo luận về Điện thoại, Máy tính, Máy ảnh và các thiết bị Khoa học & Công nghệ."
+    },
+    {
+      "title": "Download GitHub Desktop",
+      "url": "https://desktop.github.com/download/",
+      "snippet": "Simple collaboration from your desktop Download GitHub Desktop Focus on what matters instead of fighting with Git. Whether you're …"
+    },
+    {
+      "title": "GitHub - TheMythologist/GenP: Automatically builds GenP executables ...",
+      "url": "https://github.com/TheMythologist/GenP",
+      "snippet": "Mar 1, 2026 · Automatically builds GenP executables from source. Contribute to TheMythologist/GenP development by creating an …"
+    },
+    {
+      "title": "Adobe Photoshop CC 2019 versions 20.0.8 and earlier, and...",
+      "url": "https://github.com/advisories/GHSA-27jg-rcc8-m4g5",
+      "snippet": "May 24, 2022 · Adobe Photoshop CC 2019 versions 20.0.8 and earlier, and Photoshop 2020 versions 21.1 and earlier have an out-of …"
+    },
+    {
+      "title": "Modify Photoshop to never ending trial · GitHub",
+      "url": "https://gist.github.com/molcik/29aeb8021a72c27cd0ec55acfc827839",
+      "snippet": "Modify Photoshop to never ending trial. GitHub Gist: instantly share code, notes, and snippets."
+    }
+  ]
+}

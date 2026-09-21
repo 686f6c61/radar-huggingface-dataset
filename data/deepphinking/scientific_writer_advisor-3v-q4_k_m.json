@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "deepphinking/Scientific_Writer_Advisor-3v.Q4_K_M",
+  "slug": "deepphinking-scientific_writer_advisor-3v-q4_k_m",
+  "author": "deepphinking",
+  "url": "https://huggingface.co/deepphinking/Scientific_Writer_Advisor-3v.Q4_K_M",
+  "created_at": "2026-09-21T00:46:59.000Z",
+  "updated_at": "2026-09-21T00:50:45.000Z",
+  "license": "qwen2.5-vl-3b-instruct",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 1929902656,
+  "storage_human": "1.9 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "On This Day - Today in History, Film, Music and Sport",
+      "url": "https://www.onthisday.com/",
+      "snippet": "Find out what happened on any date or day in history with On This Day. Explore historical events, birthdays, deaths and famous …"
+    },
+    {
+      "title": "Today in History Fun Facts - On This Day",
+      "url": "https://www.onthisday.com/today/fun-facts.php",
+      "snippet": "Fun facts from today in history. Funny, interesting and simply incredible events that happened on this day in history."
+    },
+    {
+      "title": "Celebrity Birthdays Today - On This Day",
+      "url": "https://www.onthisday.com/today/celebrity-birthdays.php",
+      "snippet": "Find out which celebrities are celebrating birthdays today and which celebs were born on this day in history including famous actors, …"
+    },
+    {
+      "title": "Who Died Today in History? - On This Day",
+      "url": "https://www.onthisday.com/today/deaths.php",
+      "snippet": "Today's deaths of important, famous and notable people from throughout history. Search over 40,000 famous deaths in our today in …"
+    },
+    {
+      "title": "Today in Music History - On This Day",
+      "url": "https://www.onthisday.com/music/",
+      "snippet": "Music events, musician birthdays and deaths on this day in music history. Our archives are fully searchable and contain over 29,000 …"
+    }
+  ]
+}

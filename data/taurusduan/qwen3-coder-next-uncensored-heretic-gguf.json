@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "taurusduan/Qwen3-Coder-Next-Uncensored-Heretic-GGUF",
+  "slug": "taurusduan-qwen3-coder-next-uncensored-heretic-gguf",
+  "author": "taurusduan",
+  "url": "https://huggingface.co/taurusduan/Qwen3-Coder-Next-Uncensored-Heretic-GGUF",
+  "created_at": "2026-09-21T01:41:08.000Z",
+  "updated_at": "2026-09-21T01:41:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "en",
+    "base_model:llmfan46/Qwen3-Coder-Next-Uncensored-Heretic",
+    "base_model:quantized:llmfan46/Qwen3-Coder-Next-Uncensored-Heretic",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 124,
+  "trending_score": 0,
+  "parameters": 79674391296,
+  "parameters_human": "79.67B",
+  "storage_bytes": 542754850880,
+  "storage_human": "542.8 GB",
+  "base_model": "llmfan46/Qwen3-Coder-Next-Uncensored-Heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Medadom",
+      "url": "https://app.medadom.com/login",
+      "snippet": "Mot de passe oublié ? Pas de compte ?"
+    },
+    {
+      "title": "Medadom",
+      "url": "https://app.medadom.com/login/new",
+      "snippet": "Inscrivez-vous ou connectez-vous pour accéder aux services de téléconsultation de MEDADOM et gérer votre compte en toute …"
+    },
+    {
+      "title": "MEDADOM | Téléconsultation médecin sans RDV",
+      "url": "https://www.medadom.com/",
+      "snippet": "Comment consulter un médecin en ligne ? MEDADOM vous connecte à un médecin en visio en quelques clics. Compte en 5 …"
+    },
+    {
+      "title": "J'ai un compte, comment se connecter ? – Medadom",
+      "url": "https://medadom.zendesk.com/hc/fr/articles/360011078720-J-ai-un-compte-comment-se-connecter",
+      "snippet": "Pour se connecter sur Medadom depuis l'application mobile, indiquez votre numéro de téléphone ainsi que votre mot de passe. Vous …"
+    },
+    {
+      "title": "MEDADOM",
+      "url": "https://doctor.medadom.com/",
+      "snippet": "Sep 18, 2012 · Merci de sélectionner une option de connexion. Vous n’êtes pas enregistré ? Contactez-nous pour devenir …"
+    }
+  ]
+}

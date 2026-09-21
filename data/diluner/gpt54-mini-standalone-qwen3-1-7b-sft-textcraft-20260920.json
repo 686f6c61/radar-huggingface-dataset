@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Diluner/gpt54-mini-standalone-qwen3-1.7b-sft-textcraft-20260920",
+  "slug": "diluner-gpt54-mini-standalone-qwen3-1-7b-sft-textcraft-20260920",
+  "author": "Diluner",
+  "url": "https://huggingface.co/Diluner/gpt54-mini-standalone-qwen3-1.7b-sft-textcraft-20260920",
+  "created_at": "2026-09-21T00:00:28.000Z",
+  "updated_at": "2026-09-21T00:00:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "agent-training",
+    "gpt-5.4-mini",
+    "sft",
+    "standalone",
+    "conversational",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2031739904,
+  "parameters_human": "2.03B",
+  "storage_bytes": 8138417822,
+  "storage_human": "8.1 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "FOCUS Online - Nachrichten",
+      "url": "https://www.focus.de/",
+      "snippet": "FOCUS Online – minutenaktuelle Nachrichten und Service-Informationen von Deutschlands modernem Nachrichtenmagazin."
+    },
+    {
+      "title": "FOCUS online - Aktuelle Nachrichten",
+      "url": "https://m.focus.de/",
+      "snippet": "FOCUS online – minutenaktuelle Nachrichten und Service-Informationen von Deutschlands modernem Nachrichtenmagazin."
+    },
+    {
+      "title": "FOCUS Bikes | FOCUS Bikes",
+      "url": "https://www.focus-bikes.com/de_de/",
+      "snippet": "FOCUS Bikes is the leading premium brand of high end mountain bikes and road bikes with excellent quality - German Engineered …"
+    },
+    {
+      "title": "Focus Online",
+      "url": "https://article.focus.de/",
+      "snippet": "Die schönsten Inseln, Küsten und kulturellen Highlights Von malerischen Küstenstädten bis zu üppigen Inseln und historischen …"
+    },
+    {
+      "title": "Focus – Wikipedia",
+      "url": "https://de.m.wikipedia.org/wiki/Focus",
+      "snippet": "Focus Money betreibt in Zusammenarbeit mit der Lobbyorganisation Initiative Neue Soziale Marktwirtschaft das Schulprojekt „Wir …"
+    }
+  ]
+}

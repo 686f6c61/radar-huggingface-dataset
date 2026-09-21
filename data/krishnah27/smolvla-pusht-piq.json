@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "krishnah27/smolvla-pusht-piq",
+  "slug": "krishnah27-smolvla-pusht-piq",
+  "author": "krishnah27",
+  "url": "https://huggingface.co/krishnah27/smolvla-pusht-piq",
+  "created_at": "2026-09-21T02:13:31.000Z",
+  "updated_at": "2026-09-21T02:14:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "fastvla",
+    "base_model:adapter:HuggingFaceTB/SmolLM2-135M-Instruct",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:HuggingFaceTB/SmolLM2-135M-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 15,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1714511356,
+  "storage_human": "1.7 GB",
+  "base_model": "HuggingFaceTB/SmolLM2-135M-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Schede - Investimenti in beni strumentali - Entità e utilizzo del ...",
+      "url": "https://www.agenziaentrate.gov.it/portale/investimenti-in-beni-strumentali/entita-e-utilizzo-del-credito-d-imposta",
+      "snippet": "beni strumentali immateriali tecnologicamente avanzati funzionali ai processi di trasformazione “Transizione 4.0” (allegato B alla …"
+    },
+    {
+      "title": "La dicitura in fattura per il credito d’imposta 4.0",
+      "url": "https://www.focusindustria40.com/dicitura-in-fattura-credito-dimposta-4-0/",
+      "snippet": "Feb 2, 2024 · Tutte le informazioni utili sulla dicitura in fattura prevista dalla normativa per accedere al credito d'imposta 4.0."
+    },
+    {
+      "title": "Credito d’imposta “Transizione 4.0” - Agenzia delle Entrate",
+      "url": "https://www.agenziaentrate.gov.it/portale/investimenti-in-beni-strumentali-imprese",
+      "snippet": "In questa sezione, che puoi navigare utilizzando il menu di navigazione, sono contenute le informazioni relative a \"Credito d’imposta …"
+    },
+    {
+      "title": "industria 4.0 credito d'imposta e sabatini 2020: diciture obbligatorie ...",
+      "url": "https://www.toolstudio.it/2020/10/09/industria-4-0-credito-dimposta-e-sabatini-2020-diciture-obbligatorie-in-fattura/",
+      "snippet": "Oct 9, 2020 · Pertanto, chi intende beneficiare dei crediti d’imposta 2020 (beni 4.0 e NON), dovrà richiedere al proprio fornitore di …"
+    },
+    {
+      "title": "DICITURE SULLE FATTURE e sugli altri documenti relativi all ...",
+      "url": "https://studioastolfi.com/approfondimenti/9710-diciture-sulle-fattura",
+      "snippet": "Le risposte n. 438 e n. 439 forniscono la soluzione al quesito formulato da due diversi contribuenti in merito alla possibilità di fruire del …"
+    }
+  ]
+}

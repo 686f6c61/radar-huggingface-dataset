@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "unicorn2006/Microtensor1242",
+  "slug": "unicorn2006-microtensor1242",
+  "author": "unicorn2006",
+  "url": "https://huggingface.co/unicorn2006/Microtensor1242",
+  "created_at": "2026-09-21T01:27:41.000Z",
+  "updated_at": "2026-09-21T01:27:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 642,
+  "trending_score": 0,
+  "parameters": 2866982720,
+  "parameters_human": "2.87B",
+  "storage_bytes": 10831091285,
+  "storage_human": "10.8 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Store Finder - Lidl US",
+      "url": "https://www.lidl.com/c/store-finder/s10089075",
+      "snippet": "Store Finder & Opening Hours Search by your Zip Code or City to find your nearest Lidl and start saving!"
+    },
+    {
+      "title": "Καταστήματα Lidl στην Ελλάδα",
+      "url": "https://www.lidl-hellas.gr/s/el-GR/anazitisi-katastimaton/",
+      "snippet": "Βρες το Lidl κατάστημα σου γρήγορα και εύκολα μέσω της αναζήτησης καταστήματος ή πόλης. Βρες προσφορές και φυλλάδια για …"
+    },
+    {
+      "title": "Store Finder - Lidl GB",
+      "url": "https://www.lidl.co.uk/c/store-finder/s10023098",
+      "snippet": "Pop your postcode into the box and click your nearest store to see opening times and all the offers within grabbing distance. Never …"
+    },
+    {
+      "title": "Store Finder - Lidl",
+      "url": "https://www.lidl.com.cy/c/en-CY/store-finder/s10032287",
+      "snippet": "Pop your postcode into the box and click your nearest store to see opening times and all the offers within grabbing distance. Never …"
+    },
+    {
+      "title": "Αναζήτηση Καταστήματος - Lidl",
+      "url": "https://www.lidl.com.cy/c/el-CY/anazitisi-katastimatos/s10032287",
+      "snippet": "Πληκτρολογήστε τον ταχυδρομικό σας κώδικα στο πλαίσιο και κάντε κλικ στο πλησιέστερο κατάστημα για να δείτε τις ώρες …"
+    }
+  ]
+}

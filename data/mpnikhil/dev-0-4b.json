@@ -1,0 +1,111 @@
+{
+  "schema": 1,
+  "id": "mpnikhil/dev-0.4b",
+  "slug": "mpnikhil-dev-0-4b",
+  "author": "mpnikhil",
+  "url": "https://huggingface.co/mpnikhil/dev-0.4b",
+  "created_at": "2026-09-20T23:35:30.000Z",
+  "updated_at": "2026-09-22T00:00:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "modernbert",
+    "fill-mask",
+    "decision-model",
+    "routing",
+    "classification",
+    "verification",
+    "brier-score",
+    "calibration",
+    "bidirectional",
+    "text-classification",
+    "en",
+    "dataset:PolyAI/banking77",
+    "dataset:google/boolq",
+    "dataset:code_search_net",
+    "dataset:yelp_review_full",
+    "arxiv:1706.03762",
+    "arxiv:2412.13663",
+    "arxiv:2311.01079",
+    "arxiv:1706.04599",
+    "license:apache-2.0",
+    "model-index",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 396880897,
+  "parameters_human": "396.9M",
+  "storage_bytes": 1588881314,
+  "storage_human": "1.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "77-Way Intent Routing",
+      "dataset": "Banking77",
+      "metric": "Top-1 Accuracy",
+      "value": 0.9133
+    },
+    {
+      "task": "77-Way Intent Routing",
+      "dataset": "Banking77",
+      "metric": "Top-3 Recall",
+      "value": 0.9867
+    },
+    {
+      "task": "Boolean Verification",
+      "dataset": "Google BoolQ",
+      "metric": "Accuracy",
+      "value": 0.852
+    },
+    {
+      "task": "5-Star Graded Scoring",
+      "dataset": "Yelp Review Full",
+      "metric": "Exact Accuracy",
+      "value": 0.6267
+    }
+  ],
+  "sources": [
+    {
+      "title": "Loaded Question Fallacy: How Hidden Assumptions Trap Arguments",
+      "url": "https://www.logicallyfallacious.com/blog/loaded-question-fallacy-hidden-assumptions",
+      "snippet": "Aug 19, 2026 · It's a fallacy because it forces you into a false choice: answer the question as framed and you implicitly agree with the …"
+    },
+    {
+      "title": "Loaded Question — When Logic Wears a Disguise",
+      "url": "https://telldear.org/articles/loaded-question",
+      "snippet": "Mar 29, 2026 · A loaded question embeds a presupposition or assumption that has not been established, forcing the respondent to …"
+    },
+    {
+      "title": "Loaded Question – Essentials – Media & Argument Analysis – TellDear",
+      "url": "https://telldear.org/essentials/loaded_question",
+      "snippet": "The question doesn't ask if you're mean — it asks why. The moment you try to answer \"why,\" you've already accepted the premise. …"
+    },
+    {
+      "title": "Loaded Question Fallacy: Definition & Examples | fallacy.is",
+      "url": "https://fallacy.is/loaded-question",
+      "snippet": "It's sometimes called the complex question fallacy, because it bundles two questions (\"did you do X?\" and \"when did you stop?\") and …"
+    },
+    {
+      "title": "Loaded Question Fallacy – BioStim",
+      "url": "https://biostim.com.au/logical-fallacies/loaded-question/",
+      "snippet": "A simple infographic explaining the Loaded Question logical fallacy, showing how questions with hidden assumptions trap people in …"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "yvesemmanuel/kaggle_human_preference_large",
+  "slug": "yvesemmanuel-kaggle_human_preference_large",
+  "author": "yvesemmanuel",
+  "url": "https://huggingface.co/yvesemmanuel/kaggle_human_preference_large",
+  "created_at": "2026-09-21T01:21:23.000Z",
+  "updated_at": "2026-09-21T02:47:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "bert",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": 109484547,
+  "parameters_human": "109.5M",
+  "storage_bytes": 437966901,
+  "storage_human": "438 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "معنى كلمة سَرِيدَةٌ | المعجم العربي الجامع",
+      "url": "https://www.arabicterminology.com/content/%D8%B3%D9%8E%D8%B1%D9%90%D9%8A%D8%AF%D9%8E%D8%A9%D9%8C",
+      "snippet": "| عُقْدَةٌ مِنْ خَيْطٍ تُسْرَدُ مِنَ الصُّوفِ أَوِ القُطْنِ بِالْمَسَارِدِ."
+    },
+    {
+      "title": "معنى و ترجمة كلمة سيدة في القاموس, تعريف وشرح بالعربي",
+      "url": "https://www.alburaq.net/meaning/%D8%B3%D9%8A%D8%AF%D8%A9",
+      "snippet": "سيِّدة أهل الجنَّة: فاطمة رضي الله عنها بنت الرَّسول صلّى الله عليه وسلّم. سيِّدة الدَّولة الأولى: زوجة رئيس الدَّولة. سيِّدة نساء العالمين: خديجة بنت خويلد رضي الله عنها زوجة الرَّسول صلّى الله عليه …"
+    },
+    {
+      "title": "معنى و ترجمة كلمة سرية في القاموس, تعريف وشرح بالعربي",
+      "url": "https://www.alburaq.net/meaning/%D8%B3%D8%B1%D9%8A%D8%A9",
+      "snippet": "1 - سَرِيَّةُ الجُنْدِ : الفِرْقَةُ مِنَ الجُنْدِ. 2 - سَرِيَّةُ المِدْفَعِيَّةِ : الْمُشَاةُ. اسم مؤنَّث منسوب إلى سِرّ. جلسة سرِّيَّة. الشُّرطة السِّرِّيّة: الشُّرطة التي تعمل في الخفاء لمنع انتشار المخالفة والمعارضة، وعادة ما …"
+    },
+    {
+      "title": "معنى سريدة بالعربي — التعريف والشرح والمرادفات في معاجم اللغة العربية ...",
+      "url": "https://www.arabdict.com/ar/%D8%B9%D8%B1%D8%A8%D9%8A-%D8%B9%D8%B1%D8%A8%D9%8A/%D8%B3%D8%B1%D9%8A%D8%AF%D8%A9",
+      "snippet": ": عُقْدَةٌ مِنْ خَيْطٍ تُسْرَدُ مِنَ الصُّوفِ أَوِ القُطْنِ بِالْمَسَارِدِ. • مصدر سرَدَ. • اسم جامع للدّروع وسائر الحَلَق. • (دب) حكاية الأحداث بحيث يتّصل بعضُها ببعض مع مراعاة التسلسل الزمنيّ لحدوثها."
+    },
+    {
+      "title": "معنى كلمة سَرِيَّةٌ | المعجم العربي الجامع",
+      "url": "https://www.arabicterminology.com/content/%D8%B3%D9%8E%D8%B1%D9%90%D9%8A%D9%91%D9%8E%D8%A9%D9%8C",
+      "snippet": "| 1. \"سَرِيَّةُ الْجُنْدِ\": الفِرْقَةُ مِنَ الْجُنْدِ. 2. \"سَرِيَّةُ الْمِدْفَعِيَّةِ\": الْمُشَاةُ. سَرَايَا."
+    }
+  ]
+}

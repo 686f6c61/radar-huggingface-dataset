@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "mradermacher/sherlock-qwen2.5-3b-grpo-v1-GGUF",
+  "slug": "mradermacher-sherlock-qwen2-5-3b-grpo-v1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/sherlock-qwen2.5-3b-grpo-v1-GGUF",
+  "created_at": "2026-09-20T20:54:11.000Z",
+  "updated_at": "2026-09-20T21:29:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "grpo",
+    "lora-merged",
+    "math",
+    "persona",
+    "en",
+    "base_model:andreayhchen/sherlock-qwen2.5-3b-grpo-v1",
+    "base_model:quantized:andreayhchen/sherlock-qwen2.5-3b-grpo-v1",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 27940892800,
+  "storage_human": "27.9 GB",
+  "base_model": "andreayhchen/sherlock-qwen2.5-3b-grpo-v1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "软件开发工程师招聘 | 北京 | 中国信息通信科技集团有限公司 ...",
+      "url": "https://jobs.51job.com/all/167799233.html",
+      "snippet": "2、熟练掌握主流编程语言，Java、python等技术，能够进行代码编写；熟悉主流关系数据库的使用，mysql、oracle等；熟悉常用的软 …"
+    },
+    {
+      "title": "软件工程师（应届生岗位）招聘 | 绍兴 | 1.5-2.2万 | 盛吉盛 ...",
+      "url": "https://jobs.51job.com/shaoxing/173651919.html",
+      "snippet": "盛吉盛半导体科技股份有限公司招聘软件工程师（应届生岗位），工作地点绍兴，薪资1.5-2.2万，要求硕士、无需经验经验，职能类别 …"
+    },
+    {
+      "title": "【2027无锡中微爱芯电子有限公司秋季校园招聘信息|校招岗位 ...",
+      "url": "https://jobs.51job.com/campus/caAWMFYwBkDzACY1M1Uzc.html",
+      "snippet": "22 hours ago · 前程无忧校园招聘频道为您提供2027无锡中微爱芯电子有限公司秋季校园招聘岗位、校园招聘待遇等信息，更多无锡中 …"
+    },
+    {
+      "title": "Access Verification - 前程无忧",
+      "url": "https://jobs.51job.com/all/173592358.html",
+      "snippet": "1 day ago · Access Verification For better experience, please slide to complete the verification process before accessing the web page."
+    },
+    {
+      "title": "AI智能体开发工程师招聘 | 合肥蜀山区 | 1-1.5万 | 安徽省通信 ...",
+      "url": "https://jobs.51job.com/all/172551292.html",
+      "snippet": "1、本科及以上学历，计算机、人工智能、软件工程等相关专业，1-3年智能体、大模型应用开发相关工作经验。 2、熟练掌握Python主 …"
+    }
+  ]
+}

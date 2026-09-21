@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-minimax-h3-fl2v-turbo-4step-v1.2-768p-comfyui-bf16.safetensors-lora",
+  "slug": "runninghubai-rh-minimax-h3-fl2v-turbo-4step-v1-2-768p-comfyui-bf16-safetensors-lora",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-minimax-h3-fl2v-turbo-4step-v1.2-768p-comfyui-bf16.safetensors-lora",
+  "created_at": "2026-09-21T02:02:32.000Z",
+  "updated_at": "2026-09-21T02:29:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1956193000,
+  "storage_human": "2.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Translate Help",
+      "url": "https://support.google.com/translate/?hl=en",
+      "snippet": "Official Google Translate Help Center where you can find tips and tutorials on using Google Translate and other answers to …"
+    },
+    {
+      "title": "Download & use Google Translate",
+      "url": "https://support.google.com/translate/answer/6350850?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "You can translate text, handwriting, photos, and speech in over 200 languages with the Google Translate app. You can also use …"
+    },
+    {
+      "title": "Microsoft Community",
+      "url": "https://www.answers.microsoft.com/ja-jp/windows/forum/all/ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¼ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â£ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â«ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¨ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¨ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â­ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¥ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â®ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡/9804990c-60c8-440c-b1ab-2a0a01c8a749",
+      "snippet": ""
+    },
+    {
+      "title": "تنزيل تطبيق \"ترجمة Google\" واستخدامه - iPhone وiPad - مساعدة Google ...",
+      "url": "https://support.google.com/translate/answer/6350850?hl=ar&co=GENIE.Platform%3DiOS",
+      "snippet": "يتيح لك تطبيق \"ترجمة Google\" ترجمة نص أو كتابة بخط اليد أو صور أو كلام بأكثر من 200 لغة، ويمكنك أيضًا استخدام التطبيق على الويب. بإمكانك الاستفادة من \"ترجمة Google\" بعدّة …"
+    },
+    {
+      "title": "تنزيل تطبيق \"ترجمة Google\" واستخدامه",
+      "url": "https://support.google.com/translate/answer/6350850?hl=ar&co=GENIE.Platform%3DDesktop",
+      "snippet": "يتيح لك تطبيق \"ترجمة Google\" ترجمة نص أو كتابة بخط اليد أو صور أو كلام بأكثر من 200 لغة، ويمكنك أيضًا استخدام التطبيق على الويب. بإمكانك الاستفادة من \"ترجمة Google\" بعدّة …"
+    }
+  ]
+}

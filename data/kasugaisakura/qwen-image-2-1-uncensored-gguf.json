@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "KasugaiSakura/Qwen-Image-2.1-Uncensored-GGUF",
+  "slug": "kasugaisakura-qwen-image-2-1-uncensored-gguf",
+  "author": "KasugaiSakura",
+  "url": "https://huggingface.co/KasugaiSakura/Qwen-Image-2.1-Uncensored-GGUF",
+  "created_at": "2026-09-20T22:11:43.000Z",
+  "updated_at": "2026-09-20T22:11:43.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "gguf",
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen",
+    "image-generation",
+    "comfyui",
+    "comfyui-gguf",
+    "text-to-image",
+    "base_model:Qwen/Qwen-Image-2.1",
+    "base_model:quantized:Qwen/Qwen-Image-2.1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7115124736,
+  "parameters_human": "7.12B",
+  "storage_bytes": 54905762493,
+  "storage_human": "54.9 GB",
+  "base_model": "Qwen/Qwen-Image-2.1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Malte Franz Arthur Stahl - Kirchhörder SC - FuPa",
+      "url": "https://www.fupa.net/player/malte-franz-arthur-stahl-1566511",
+      "snippet": "Malte Franz Arthur Stahl erreicht einen MVP-Wert von 43%. Der MVP-Wert zeigt wie wertvoll ein Spieler für sein Team ist, auf Basis …"
+    },
+    {
+      "title": "Malte Franz Arthur Stahl | Laufbahn | Spielerprofil - kicker",
+      "url": "https://www.kicker.de/ama-118010696/laufbahn",
+      "snippet": "Malte Franz Arthur Stahl - Das Profil, alle Daten, Statistiken und News zum Spieler"
+    },
+    {
+      "title": "Stahl und Stahl düpieren BSV Schüren II - Fussball.de",
+      "url": "https://www.fussball.de/mgc.newsdetail/-/article-uuid/02U73GTCSK000000VS5489BVVVIAE6QO#!/",
+      "snippet": "Malte Franz Arthur Stahl brachte den Ball zum 1:0 zugunsten von Kirchhörder SC II über die Linie (9.)."
+    },
+    {
+      "title": "Umkämpftes Duell in Ennepetal: Brol trifft zum TuS Ennepetal III-Sieg ...",
+      "url": "https://www.fussball.de/mgc.newsdetail/-/article-uuid/02SH3CHO18000000VS5489B6VSBGFH32",
+      "snippet": "FC Herdecke-Ende III ging durch Malte Franz Arthur Stahl in der achten Minute in Führung. Für Leonard Urban war der Einsatz nach …"
+    },
+    {
+      "title": "Malte Stahl - VfL Maschen - Spielerportrait - Landkreis Fussball",
+      "url": "https://www.landkreis-fussball.de/spieler/malte_stahl",
+      "snippet": "Informationen und Spielerportrait über Malte Stahl - VfL Maschen"
+    }
+  ]
+}

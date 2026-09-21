@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "takeru01/task_waseda3_VGGT_only_c53",
+  "slug": "takeru01-task_waseda3_vggt_only_c53",
+  "author": "takeru01",
+  "url": "https://huggingface.co/takeru01/task_waseda3_VGGT_only_c53",
+  "created_at": "2026-09-21T01:39:19.000Z",
+  "updated_at": "2026-09-21T01:39:34.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 16,
+  "trending_score": 0,
+  "parameters": 51904144,
+  "parameters_human": "51.9M",
+  "storage_bytes": 207656940,
+  "storage_human": "208 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Maps - Reddit",
+      "url": "https://www.reddit.com/r/GoogleMaps/",
+      "snippet": "r/GoogleMaps is participating in ongoing protests regarding changes to Reddit's API accessibility. The subreddit may reopen at some …"
+    },
+    {
+      "title": "Get directions and show routes in Google Maps",
+      "url": "https://support.google.com/maps/answer/144339?hl=en-GB&co=GENIE.Platform%3DDesktop",
+      "snippet": "You can get directions for driving, public transport, walking, ride sharing, cycling, flight or motorcycle on Google Maps. If there are …"
+    },
+    {
+      "title": "How to Display Multiple Google Maps per page with API V3",
+      "url": "https://stackoverflow.com/questions/4074520/how-to-display-multiple-google-maps-per-page-with-api-v3",
+      "snippet": "Nov 2, 2010 · OP wanted two specific maps, but if you'd like to have a dynamic number of maps on one page (for instance a list of …"
+    },
+    {
+      "title": "How to extract the lat/lng of pins in google maps?",
+      "url": "https://stackoverflow.com/questions/2558016/how-to-extract-the-lat-lng-of-pins-in-google-maps",
+      "snippet": "Apr 1, 2010 · Google has change a lot the way you can extract information about google.maps and has set some limitations like …"
+    },
+    {
+      "title": "MEGATHREAD: Google Maps Timeline Moving To On-Device Storage …",
+      "url": "https://www.reddit.com/r/GoogleMaps/comments/1diivt3/megathread_google_maps_timeline_moving_to/",
+      "snippet": "Once the transition is complete, web-based access to Timeline data will no longer be available. All management and viewing of this …"
+    }
+  ]
+}

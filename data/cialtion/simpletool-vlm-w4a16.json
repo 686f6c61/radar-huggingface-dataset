@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Cialtion/SimpleTool-VLM-W4A16",
+  "slug": "cialtion-simpletool-vlm-w4a16",
+  "author": "Cialtion",
+  "url": "https://huggingface.co/Cialtion/SimpleTool-VLM-W4A16",
+  "created_at": "2026-09-20T23:07:22.000Z",
+  "updated_at": "2026-09-20T23:15:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_vl",
+    "compressed-tensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4825491968,
+  "parameters_human": "4.83B",
+  "storage_bytes": 4269362657,
+  "storage_human": "4.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free Live Sex Cams, Cam Girls, Adult Chat & Pornstar Cams | Camsoda",
+      "url": "https://www.camsoda.com/",
+      "snippet": "Join Camsoda for the hottest live cam girls! Free HD webcam shows, private sessions, and real-time chat with sexy models. Watch …"
+    },
+    {
+      "title": "Free Porn Videos & XXX Clips with Real Models - Camsoda",
+      "url": "https://www.camsoda.com/porn",
+      "snippet": "23 hours ago · Watch hundreds of free porn videos on Camsoda. No signup, no paywall, only real clips starring top models in …"
+    },
+    {
+      "title": "CamSoda Now - Free Live Video Chat with Real People Worldwide",
+      "url": "https://camsoda.now/",
+      "snippet": "CamSoda Now is a free live video chat platform that connects you with real people from around the world for one-on-one video …"
+    },
+    {
+      "title": "Camsoda AI",
+      "url": "https://camsoda.ai/login",
+      "snippet": "Forgot Password? Don't have an account? Sign up"
+    },
+    {
+      "title": "CamSoda ️ Free Adult Webcams & Live Sex Cams •",
+      "url": "https://camsoda.webcam/",
+      "snippet": "CamSoda puts thousands of live sex cams in front of you without asking for a signup or a credit card. Every room is open, every …"
+    }
+  ]
+}

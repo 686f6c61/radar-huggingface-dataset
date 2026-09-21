@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ninfer-5080/Qwen3.8-27B-RTX5080",
+  "slug": "ninfer-5080-qwen3-8-27b-rtx5080",
+  "author": "ninfer-5080",
+  "url": "https://huggingface.co/ninfer-5080/Qwen3.8-27B-RTX5080",
+  "created_at": "2026-09-21T00:14:06.000Z",
+  "updated_at": "2026-09-21T01:55:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "ninfer",
+  "languages": [],
+  "tags": [
+    "ninfer",
+    "qwen3.8",
+    "cuda",
+    "rtx-5080",
+    "long-context",
+    "speculative-decoding",
+    "multimodal",
+    "vision",
+    "image-text-to-text",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 16461267456,
+  "storage_human": "16.5 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Create and save a passkey | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/accounts-billing/security/create-save-passkey",
+      "snippet": "Learn how to create and save a passkey to sign in to your Microsoft personal or work/school account and many other websites, apps …"
+    },
+    {
+      "title": "Anmelden bei Hotmail | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/accounts-billing/manage/how-to-sign-in-to-hotmail",
+      "snippet": "Microsoft hält immer ein Auge auf ungewöhnliche Anmeldeaktivitäten, nur für den Fall, dass jemand anderes versucht, auf Ihr Konto …"
+    },
+    {
+      "title": "Sign in to your account - techcommunity.microsoft.com",
+      "url": "https://techcommunity.microsoft.com/blog/exchange/exchange-online-ews-your-time-is-almost-up/4492361",
+      "snippet": "We wanted to provide an update on Exchange Online EWS deprecation."
+    },
+    {
+      "title": "Microsoft Copilot Blog | Microsoft Community Hub",
+      "url": "https://techcommunity.microsoft.com/category/microsoft-copilot/blog/microsoft-copilot-blog",
+      "snippet": "Built for business: How Microsoft 365 Copilot keeps you in the flow of legal work Now the LegalZoom agent works inside Microsoft …"
+    },
+    {
+      "title": "Change the refresh rate on your monitor in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/hardware/display-graphics/change-the-refresh-rate-on-your-monitor-in-windows",
+      "snippet": "Learn how to change the refresh rate for your display in Windows to determine how smoothly motion appears on your screen."
+    }
+  ]
+}

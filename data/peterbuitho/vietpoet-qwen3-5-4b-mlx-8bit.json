@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "peterbuitho/VietPoet-Qwen3.5-4B-MLX-8bit",
+  "slug": "peterbuitho-vietpoet-qwen3-5-4b-mlx-8bit",
+  "author": "peterbuitho",
+  "url": "https://huggingface.co/peterbuitho/VietPoet-Qwen3.5-4B-MLX-8bit",
+  "created_at": "2026-09-20T23:47:01.000Z",
+  "updated_at": "2026-09-20T23:50:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "vietnamese",
+    "poetry",
+    "luc-bat",
+    "text-generation",
+    "conversational",
+    "vi",
+    "dataset:phamson02/vietnamese-poetry-corpus",
+    "arxiv:2401.01078",
+    "base_model:peterbuitho/VietPoet-Qwen3.5-4B",
+    "base_model:quantized:peterbuitho/VietPoet-Qwen3.5-4B",
+    "license:apache-2.0",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 4489629508,
+  "storage_human": "4.5 GB",
+  "base_model": "peterbuitho/VietPoet-Qwen3.5-4B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Solved Lot XxXz. and X, represent the times necessary to - Chegg",
+      "url": "https://www.chegg.com/homework-help/questions-and-answers/lot-xxxz-x-represent-times-necessary-perform-three-successive-repair-tasks-certain-service-q61072610?msockid=2aa39bc33edb65ca2d6d8c183f2a64e7",
+      "snippet": "Lot XxXz. and X, represent the times necessary to perform three successive repair tasks at a certain service facility. Suppose they …"
+    },
+    {
+      "title": "Solved Consider the following problem 0,0,0 104 3043 - Chegg",
+      "url": "https://www.chegg.com/homework-help/questions-and-answers/consider-following-problem-0-0-0-104-3043-subject-372maximize-321-321-321-321-xxx-xxx-xxx--q125574587?msockid=2aa39bc33edb65ca2d6d8c183f2a64e7",
+      "snippet": "Consider the following problem 0,0,0 104 3043 Subject to 372Maximize 321 321 321 321 −+ ++ −+= xxx xxx xxx xxxZ By letting54 …"
+    },
+    {
+      "title": "Solved 0217 marks) s. ssume that the DataBase size of XxXZ - Chegg",
+      "url": "https://www.chegg.com/homework-help/questions-and-answers/0217-marks-s-ssume-database-size-xxxz-bank-s-tb-terabytes-2009-g-constantly-15-year--provi-q34046482?msockid=2aa39bc33edb65ca2d6d8c183f2a64e7",
+      "snippet": "0217 marks) s. ssume that the DataBase size of XxXZ Bank is S TB (Terabytes) in 2009 and g constantly by 15% a year. A. Provide …"
+    },
+    {
+      "title": "Solved 2. Given F (xXxz) = x’yi + zj - (x + y - z), find (a) - Chegg",
+      "url": "https://www.chegg.com/homework-help/questions-and-answers/2-given-f-xxxz-x-yi-zj-x-y-z-find-vf-b-vxf-c-vvf-q57634187?msockid=2aa39bc33edb65ca2d6d8c183f2a64e7",
+      "snippet": "Answer to 2. Given F (xXxz) = x’yi + zj - (x + y - z), find (a) Understanding your homework feels good. 20% off your first month of …"
+    },
+    {
+      "title": "Solved 4-69. The assembly has the diameters and material - Chegg",
+      "url": "https://www.chegg.com/homework-help/questions-and-answers/4-69-assembly-diameters-material-indicated-fits-securely-fixed-supports-temperature-t1-70--q26912205?msockid=2aa39bc33edb65ca2d6d8c183f2a64e7",
+      "snippet": "Question: 4-69. The assembly has the diameters and material indicated. If it fits securely between its fixed supports when the …"
+    }
+  ]
+}

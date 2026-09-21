@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "athenisai/athenea-3.2-flash-v1-gguf",
+  "slug": "athenisai-athenea-3-2-flash-v1-gguf",
+  "author": "athenisai",
+  "url": "https://huggingface.co/athenisai/athenea-3.2-flash-v1-gguf",
+  "created_at": "2026-09-20T20:14:39.000Z",
+  "updated_at": "2026-09-20T21:29:16.000Z",
+  "license": "lfm1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "lfm2",
+    "lfm2.5",
+    "thinking",
+    "agentic",
+    "f16",
+    "base_model:athenisai/athenea-3.2-flash-v1",
+    "base_model:quantized:athenisai/athenea-3.2-flash-v1",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2697198592,
+  "parameters_human": "2.70B",
+  "storage_bytes": 5403157856,
+  "storage_human": "5.4 GB",
+  "base_model": "athenisai/athenea-3.2-flash-v1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.facebook.katana&hl=en-US",
+      "snippet": "* Search Facebook on any topic and get more interactive results Connect with people and communities: * Join groups to learn tips …"
+    },
+    {
+      "title": "Download Facebook",
+      "url": "https://www.facebook.com/android_upgrade/",
+      "snippet": "May 9, 2025 · Download Facebook APK size: 76.79MB | Last Updated: May 9, 2025 Download APK Sign Up Log In Messenger"
+    },
+    {
+      "title": "Facebook",
+      "url": "https://apps.facebook.com/",
+      "snippet": "Email or mobile number Password"
+    },
+    {
+      "title": "Facebook - Free download and install on Windows | Microsoft Store",
+      "url": "https://apps.microsoft.com/detail/9wzdncrfj2wl?hl=en-US&gl=US",
+      "snippet": "The Facebook app helps you connect with friends, family and communities of people who share your interests. Connecting with your …"
+    },
+    {
+      "title": "Download or update the Facebook app | Facebook Help Center",
+      "url": "https://www.facebook.com/help/794433138234667/",
+      "snippet": "Download or update the Facebook app Go to your device's app store. Search for and tap the Facebook app, then follow the on …"
+    }
+  ]
+}

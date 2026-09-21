@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "rebeccathebaddie0/xolo.2",
+  "slug": "rebeccathebaddie0-xolo-2",
+  "author": "rebeccathebaddie0",
+  "url": "https://huggingface.co/rebeccathebaddie0/xolo.2",
+  "created_at": "2026-09-21T01:59:40.000Z",
+  "updated_at": "2026-09-21T02:00:05.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 60891797,
+  "storage_human": "61 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sepultura - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Sepultura",
+      "snippet": "Sepultura played on the Kairos World Tour and at Wacken Open Air 2011. Drummer Jean Dolabella left the band and was replaced …"
+    },
+    {
+      "title": "Sepultura – Wikipedija",
+      "url": "https://hr.wikipedia.org/wiki/Sepultura",
+      "snippet": "Sepultura je brazilski groove / thrash metal sastav. U ranoj fazi svog stvarateljstva sviraju kombinaciju death metala i thrash metala, …"
+    },
+    {
+      "title": "Sepultura | Official Website",
+      "url": "https://www.sepultura.com.br/",
+      "snippet": "Welcome to 40 Years Of Sepultura & the official home of the Sepulnation. Find out everything about our farewell and the “Celebrating …"
+    },
+    {
+      "title": "Sepultura - YouTube",
+      "url": "https://www.youtube.com/channel/UC4Prl7UQx5i5PgRUh-O5XBg",
+      "snippet": "Experience Sepultura's \"Quadra Tour Europe 2022\" with Sacred Reich and Crowbar in this Recap Video! 63K views • 3 years ago"
+    },
+    {
+      "title": "Sepultura - Encyclopaedia Metallum: The Metal Archives",
+      "url": "https://www.metal-archives.com/bands/Sepultura/78",
+      "snippet": "2 days ago · The band name comes from a Portuguese translation of Motörhead 's song \"Dancing on Your Grave\", which is …"
+    }
+  ]
+}

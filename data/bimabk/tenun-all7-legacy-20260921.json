@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "bimabk/tenun-all7-legacy-20260921",
+  "slug": "bimabk-tenun-all7-legacy-20260921",
+  "author": "bimabk",
+  "url": "https://huggingface.co/bimabk/tenun-all7-legacy-20260921",
+  "created_at": "2026-09-20T22:30:23.000Z",
+  "updated_at": "2026-09-20T22:30:30.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:/cache/models/bimabk--tenun-fs0807-parent-20260921",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:bimabk/tenun-fs0807-parent-20260921",
+    "base_model:adapter:bimabk/tenun-fs0807-parent-20260921",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 969364660,
+  "storage_human": "969 MB",
+  "base_model": "bimabk/tenun-fs0807-parent-20260921",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "7 zip - How do I archive with subdirectories using the 7-Zip command ...",
+      "url": "https://superuser.com/questions/545442/how-do-i-archive-with-subdirectories-using-the-7-zip-command-line-or-how-do-i",
+      "snippet": "Feb 2, 2013 · The latest stable version of 7-Zip (15.14) has the switch -spf that enables the absolute path storage. For example, if the …"
+    },
+    {
+      "title": "AppData/Local/Packages – safe to remove? - Super User",
+      "url": "https://superuser.com/questions/1237781/appdata-local-packages-safe-to-remove",
+      "snippet": "Trying to make space on my C drive. I see that my AppData/Local/Packages folder is almost 20GB! Is it safe to delete it? If not, can it …"
+    },
+    {
+      "title": "Forum dla elektronika - elektroda.pl",
+      "url": "https://www.elektroda.pl/rtvforum/forums.html",
+      "snippet": "Forum dla elektronika z ponad 3 milionami zarejestrowanych użytkowników. Zawierace miliony porad dotyczących elektroniki."
+    },
+    {
+      "title": "Baza schematów - elektroda.pl",
+      "url": "https://www.elektroda.pl/rtvforum/schematy.html",
+      "snippet": "Apr 27, 2025 · Schematy serwisowe, porady, forum dyskusyjne, naprawa, forum komputerowe, forum gsm, forum agd, forum …"
+    },
+    {
+      "title": "windows - What is \"%AppData%\"? - Super User",
+      "url": "https://superuser.com/questions/632891/what-is-appdata",
+      "snippet": "%WORD% is how cmd.exe, and Windows in general, does variables, so %AppData% is the variable name for the Application Data …"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "KImgane/Qwen3.5-9B",
+  "slug": "kimgane-qwen3-5-9b",
+  "author": "KImgane",
+  "url": "https://huggingface.co/KImgane/Qwen3.5-9B",
+  "created_at": "2026-09-21T02:01:22.000Z",
+  "updated_at": "2026-09-21T02:01:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "conversational",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:finetune:Qwen/Qwen3.5-9B-Base",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 19319118862,
+  "storage_human": "19.3 GB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Résolu : Fusionner 2 faces ? - Autodesk Community",
+      "url": "https://forums.autodesk.com/t5/fusion-forum-francais/fusionner-2-faces/td-p/8359850",
+      "snippet": "Oct 25, 2018 · Bonjour à tous je chercher à fusionner 2 faces triangulaires en une seule face carrée ? Je suis parti d'un fichier .stl et …"
+    },
+    {
+      "title": "imprimer en pdf depuis autocad - Autodesk Community",
+      "url": "https://forums.autodesk.com/t5/autocad-tous-produits-francais/imprimer-en-pdf-depuis-autocad/td-p/2022889",
+      "snippet": "Jul 19, 2007 · Bonjour, Je suis sur Acad2008 et je viens de me rendre compte que l'on pouvait directement créer un pdf depuis …"
+    },
+    {
+      "title": "AutoCAD : fusionner des calques - Autodesk Community",
+      "url": "https://forums.autodesk.com/t5/autocad-tous-produits-forum/autocad-fusionner-des-calques/td-p/11489824",
+      "snippet": "Oct 18, 2022 · Accueil Architecture, ingénierie et construction AutoCAD – tous produits - Forum Français AutoCAD : fusionner des …"
+    },
+    {
+      "title": "PDF User Manual for Fusion 360 [Ultimate]",
+      "url": "https://forums.autodesk.com/t5/fusion-design-validate-document/pdf-user-manual-for-fusion-360-ultimate/td-p/5414813",
+      "snippet": "Nov 19, 2014 · Is there, or could I suggest, a PDF User Manual for Fusion360. The easiest way to learn is to have a printed document …"
+    },
+    {
+      "title": "Erreur d'initialisation Covadis/AutoCAD - Autodesk Community",
+      "url": "https://forums.autodesk.com/t5/autocad-tous-produits-forum/erreur-d-initialisation-covadis-autocad/td-p/9591668",
+      "snippet": "Jun 21, 2020 · Je viens d'installer covadis pour autocad 2018, quand je démarre autocad ça m'ecris une \"erreurd'initialisation de …"
+    }
+  ]
+}

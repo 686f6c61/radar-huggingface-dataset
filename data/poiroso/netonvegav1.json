@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "poiroso/Netonvegav1",
+  "slug": "poiroso-netonvegav1",
+  "author": "poiroso",
+  "url": "https://huggingface.co/poiroso/Netonvegav1",
+  "created_at": "2026-09-20T23:38:11.000Z",
+  "updated_at": "2026-09-20T23:40:32.000Z",
+  "license": "unknown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:unknown",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 57578059,
+  "storage_human": "58 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tiffany Giles - HRIS Administrator at Thompson Construction ... - LinkedIn",
+      "url": "https://www.linkedin.com/in/tiffany-giles-3201a9128",
+      "snippet": "View Tiffany Giles’ profile on LinkedIn, a professional community of 1 billion members."
+    },
+    {
+      "title": "Tiffany Giles - Brand Strategist and Social Media Expert - LinkedIn",
+      "url": "https://www.linkedin.com/in/tiffanylgiles",
+      "snippet": "View Tiffany Giles’ profile on LinkedIn, a professional community of 1 billion members."
+    },
+    {
+      "title": "Tiffany Giles - CoStar Group | LinkedIn",
+      "url": "https://www.linkedin.com/in/tiffany-giles-0660294",
+      "snippet": "· Experience: CoStar Group · Location: Greater Sacramento · 500+ connections on LinkedIn. View Tiffany Giles’ profile on LinkedIn, …"
+    },
+    {
+      "title": "Tiffany Giles - -- | LinkedIn",
+      "url": "https://www.linkedin.com/in/tiffany-giles-a4737292",
+      "snippet": "View Tiffany Giles’ profile on LinkedIn, a professional community of 1 billion members."
+    },
+    {
+      "title": "Tiffany Giles - Clinical Nutrition Manager at Compass Group - LinkedIn",
+      "url": "https://www.linkedin.com/in/tiffany-giles-325120199",
+      "snippet": "Clinical Nutrition Manager at Compass Group · Experience: Compass Group · Location: Greater Harrisburg Area. View Tiffany Giles’ …"
+    }
+  ]
+}

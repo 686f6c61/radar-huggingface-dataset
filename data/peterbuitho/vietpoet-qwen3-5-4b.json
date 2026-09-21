@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "peterbuitho/VietPoet-Qwen3.5-4B",
+  "slug": "peterbuitho-vietpoet-qwen3-5-4b",
+  "author": "peterbuitho",
+  "url": "https://huggingface.co/peterbuitho/VietPoet-Qwen3.5-4B",
+  "created_at": "2026-09-20T21:03:15.000Z",
+  "updated_at": "2026-09-20T21:04:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "vietnamese",
+    "poetry",
+    "luc-bat",
+    "text-generation",
+    "conversational",
+    "vi",
+    "dataset:phamson02/vietnamese-poetry-corpus",
+    "arxiv:2401.01078",
+    "base_model:Qwen/Qwen3.5-4B",
+    "base_model:finetune:Qwen/Qwen3.5-4B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4659865088,
+  "parameters_human": "4.66B",
+  "storage_bytes": 9339817439,
+  "storage_human": "9.3 GB",
+  "base_model": "Qwen/Qwen3.5-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "L'IA juridique qui fonctionne vraiment",
+      "url": "https://www.query-juriste.com/",
+      "snippet": "Query Juriste est une IA juridique avancée : elle ne se contente pas de la recherche, elle raisonne comme un juriste et fournit des …"
+    },
+    {
+      "title": "Utiliser Power Query pour transformer des données",
+      "url": "https://learn.microsoft.com/fr-fr/power-query/power-query-ui",
+      "snippet": "Aug 20, 2026 · Découvrez comment vous connecter à des données, les transformer et parcourir l’interface utilisateur de l’éditeur …"
+    },
+    {
+      "title": "Query - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Query",
+      "snippet": "This disambiguation page lists articles associated with the title Query. If an internal link incorrectly led you here, you may wish to …"
+    },
+    {
+      "title": "Query - definition of query by The Free Dictionary",
+      "url": "https://www.thefreedictionary.com/query",
+      "snippet": "query , inquiry, enquiry - A query is a single question; an inquiry (or enquiry) may be a single question or extensive investigation (i.e. …"
+    },
+    {
+      "title": "Home - Query",
+      "url": "https://www.query.ai/",
+      "snippet": "Query is a federated search platform for security data providing expanded data visibility without centralization."
+    }
+  ]
+}

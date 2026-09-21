@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "nexh98/clamp-checkpoints",
+  "slug": "nexh98-clamp-checkpoints",
+  "author": "nexh98",
+  "url": "https://huggingface.co/nexh98/clamp-checkpoints",
+  "created_at": "2026-09-21T00:39:48.000Z",
+  "updated_at": "2026-09-22T01:10:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2935018223,
+  "storage_human": "2.9 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Official Sky Help Forum | Sky Community",
+      "url": "https://helpforum.sky.com/",
+      "snippet": "Welcome to the Official Sky Help Community. Get the latest on all things Sky! Ask questions and engage with our community!"
+    },
+    {
+      "title": "Answered: Re: I would like to speak to a real person at sky ... - Page ...",
+      "url": "https://helpforum.sky.com/t5/Account-Billing/I-would-like-to-speak-to-a-real-person-at-sky-what-s-the-number/m-p/4751610",
+      "snippet": "Sep 16, 2024 · Hey there! Welcome to the Sky Community forum, where customers like you are on hand 24/7 (almost) to offer some …"
+    },
+    {
+      "title": "Sky Go Quality Settings - AVForums",
+      "url": "https://www.avforums.com/threads/sky-go-quality-settings.1802514/",
+      "snippet": "Aug 12, 2013 · Can anyone shed any light on why Sky have removed the quality settings on Sky Go for PC? On more popular …"
+    },
+    {
+      "title": "Using Sky Go on Apple TV 4K away from home | AVForums",
+      "url": "https://www.avforums.com/threads/using-sky-go-on-apple-tv-4k-away-from-home.2503485/",
+      "snippet": "Jan 19, 2023 · Hi I am interested in anyone’s experience of using Sky Go on Apple TV 4K away from home (in the UK). I am aware …"
+    },
+    {
+      "title": "Sky Go Troubleshooting Tips",
+      "url": "https://helpforum.sky.com/t5/Online-Apps-Email/Sky-Go-Troubleshooting-Tips/ba-p/4231431",
+      "snippet": "Feb 17, 2023 · Sky Go App not working as it should? Check out our common troubleshooting steps: Recordings on the Sky Q Box via …"
+    }
+  ]
+}

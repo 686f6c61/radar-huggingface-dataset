@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "IMF2000/zytturm-8b",
+  "slug": "imf2000-zytturm-8b",
+  "author": "IMF2000",
+  "url": "https://huggingface.co/IMF2000/zytturm-8b",
+  "created_at": "2026-09-20T23:31:31.000Z",
+  "updated_at": "2026-09-21T06:52:04.000Z",
+  "license": "nvidia-open-model-license",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "security",
+    "digital-assets",
+    "smart-contracts",
+    "post-quantum",
+    "ollama",
+    "en",
+    "base_model:nvidia/Nemotron-Cascade-8B-Thinking",
+    "base_model:quantized:nvidia/Nemotron-Cascade-8B-Thinking",
+    "license:other",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 5027784064,
+  "storage_human": "5.0 GB",
+  "base_model": "nvidia/Nemotron-Cascade-8B-Thinking",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Domino's Pizza México",
+      "url": "https://www.dominos.com.mx/",
+      "snippet": "Order pizza, pasta, sandwiches & more online for carryout or delivery from Domino's Pizza. View menu, find locations, track orders. …"
+    },
+    {
+      "title": "Pizzas",
+      "url": "https://www.pizzahut.com.mx/",
+      "snippet": "Personaliza tu pizza perfecta con ingredientes frescos y elige entre nuestras deliciosas masas: Orilla Rellena de Queso, Pan Pizza, …"
+    },
+    {
+      "title": "Little Caesars® |Best Value Delivery & Carryout",
+      "url": "https://mexico.littlecaesars.com/es-mx/",
+      "snippet": "Discover delicious pizzas and great deals at Little Caesars Mexico. Order online or visit a store near you for carryout."
+    },
+    {
+      "title": "Pizza cerca de mi a domicilio - Rappi",
+      "url": "https://www.rappi.com.mx/restaurantes/category/pizza",
+      "snippet": "¿Con ganas de Pizza? Pida en los mejores 36 restaurantes que hacen entrega a domicilio de Pizza en Mexico y Rappi se lo lleva en …"
+    },
+    {
+      "title": "Benedetti's Pizza a domicilio I comida rápida",
+      "url": "https://www.benedettis.com/",
+      "snippet": "Restaurante de comida rápida, elaboramos pizza de calidad, entregamos pizza a domicilio."
+    }
+  ]
+}

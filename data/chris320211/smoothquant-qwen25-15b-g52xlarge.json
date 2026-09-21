@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "chris320211/smoothquant-qwen25-15b-g52xlarge",
+  "slug": "chris320211-smoothquant-qwen25-15b-g52xlarge",
+  "author": "chris320211",
+  "url": "https://huggingface.co/chris320211/smoothquant-qwen25-15b-g52xlarge",
+  "created_at": "2026-09-20T22:15:44.000Z",
+  "updated_at": "2026-09-20T22:17:13.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "quantized",
+    "quant-agent",
+    "smoothquant",
+    "wikitext-2",
+    "conversational",
+    "base_model:Qwen/Qwen2.5-1.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-1.5B-Instruct",
+    "license:mit",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1777733120,
+  "parameters_human": "1.78B",
+  "storage_bytes": 2256752914,
+  "storage_human": "2.3 GB",
+  "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Taiwan - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Taiwan",
+      "snippet": ""
+    },
+    {
+      "title": "Taiwan | History, Flag, Map, Capital, Population, & Facts | Britannica",
+      "url": "https://www.britannica.com/place/Taiwan",
+      "snippet": "2 days ago · Taiwan is an island in the western Pacific Ocean that lies roughly 100 miles (160 km) off the coast of southeastern …"
+    },
+    {
+      "title": "History of Taiwan - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/History_of_Taiwan",
+      "snippet": "The first-ever direct presidential election was held in 1996. During the post-war period, Taiwan experienced rapid industrialization and …"
+    },
+    {
+      "title": "2026 Taiwan Travel Guide: Best Tips, Places & Itineraries",
+      "url": "https://www.thechinajourney.com/taiwan-travel-guide/",
+      "snippet": "6 days ago · Plan your Taiwan trip with this ultimate guide: top attractions, itineraries, food tips, transportation, culture, and travel …"
+    },
+    {
+      "title": "Taiwan Maps & Facts - World Atlas",
+      "url": "https://www.worldatlas.com/maps/taiwan",
+      "snippet": "Feb 24, 2021 · Taiwan (Republic of China) is located about 160 km off the Southeast coast of the continent of Asia, at the western …"
+    }
+  ]
+}

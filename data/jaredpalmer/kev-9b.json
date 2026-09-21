@@ -1,0 +1,123 @@
+{
+  "schema": 1,
+  "id": "jaredpalmer/kev-9b",
+  "slug": "jaredpalmer-kev-9b",
+  "author": "jaredpalmer",
+  "url": "https://huggingface.co/jaredpalmer/kev-9b",
+  "created_at": "2026-09-20T22:42:14.000Z",
+  "updated_at": "2026-09-21T14:15:39.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "decision-model",
+    "calibration",
+    "lora",
+    "multiple-choice",
+    "typesafe",
+    "qwen3.5",
+    "text-classification",
+    "en",
+    "dataset:legacy-datasets/banking77",
+    "dataset:google/boolq",
+    "dataset:fancyzhx/ag_news",
+    "dataset:nyu-mll/multi_nli",
+    "dataset:SetFit/sst5",
+    "dataset:Yelp/yelp_review_full",
+    "dataset:CogComp/trec",
+    "dataset:fancyzhx/dbpedia_14",
+    "dataset:SetFit/amazon_reviews_multi_en",
+    "dataset:stanfordnlp/imdb",
+    "base_model:Qwen/Qwen3.5-9B-Base",
+    "base_model:adapter:Qwen/Qwen3.5-9B-Base",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 391528234,
+  "storage_human": "392 MB",
+  "base_model": "Qwen/Qwen3.5-9B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "typed decision (choice / noul / score)",
+      "dataset": "decision-v7 development (1,204 records; ten trained public sources + programmatic policy data)",
+      "metric": null,
+      "value": 0.876
+    },
+    {
+      "task": "typed decision (choice / noul / score)",
+      "dataset": "decision-v7 development (1,204 records; ten trained public sources + programmatic policy data)",
+      "metric": "ECE, raw probabilities",
+      "value": 0.06
+    },
+    {
+      "task": "typed decision",
+      "dataset": "transfer-v4 development (764 records; six never-trained sources + held-out policy structures)",
+      "metric": null,
+      "value": 0.812
+    },
+    {
+      "task": "typed decision",
+      "dataset": "transfer-v4 development (764 records; six never-trained sources + held-out policy structures)",
+      "metric": null,
+      "value": 0.291
+    },
+    {
+      "task": "typed decision",
+      "dataset": "transfer-v4 test (read once)",
+      "metric": null,
+      "value": 0.837
+    },
+    {
+      "task": "typed decision",
+      "dataset": "transfer-v4 test (read once)",
+      "metric": null,
+      "value": 0.243
+    }
+  ],
+  "sources": [
+    {
+      "title": "Soulseek? What is? : r/musichoarder - Reddit",
+      "url": "https://www.reddit.com/r/musichoarder/comments/xenxc7/soulseek_what_is/",
+      "snippet": "Sep 15, 2022 · Soulseek is a hybrid p2p and centralized system for file sharing. The vast majority of users are music-focused, but …"
+    },
+    {
+      "title": "Download the actual Soulseek : r/Soulseek - Reddit",
+      "url": "https://www.reddit.com/r/Soulseek/comments/1bxr9xq/download_the_actual_soulseek/",
+      "snippet": "Hey guys, I downloaded Soulseek like 4 years ago when I started djing, but recently my pc stopped working so I changed it. I want to …"
+    },
+    {
+      "title": "Instruktaż/Tutorial - Soulseek/QNAP - program do wymiany muzyki …",
+      "url": "https://forum.qnap.net.pl/threads/soulseek-qnap-program-do-wymiany-muzyki-mp3-flac.30990/",
+      "snippet": "Aug 18, 2020 · SoulSeek/QNAP - Jak zainstalować? O ... Soulseek [wikipedia] – nazwa sieci i programu P2P, który umożliwia …"
+    },
+    {
+      "title": "sharing is caring - Reddit",
+      "url": "https://www.reddit.com/r/Soulseek/",
+      "snippet": "Subreddit for P2P file-sharing client Soulseek. Sharing is caring."
+    },
+    {
+      "title": "Soulbeet: Music library manager. Easy search & download for ... - Reddit",
+      "url": "https://www.reddit.com/r/selfhosted/comments/1pi4j9j/soulbeet_music_library_manager_easy_search/",
+      "snippet": "Hey r/selfhosted, I’ve been using Slskd (Soulseek) to find music and Beets to organize my library for a bit. Both tools are great, but …"
+    }
+  ]
+}

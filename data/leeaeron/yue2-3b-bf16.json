@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "LeeAeron/YuE2-3B-BF16",
+  "slug": "leeaeron-yue2-3b-bf16",
+  "author": "LeeAeron",
+  "url": "https://huggingface.co/LeeAeron/YuE2-3B-BF16",
+  "created_at": "2026-09-20T20:34:17.000Z",
+  "updated_at": "2026-09-21T11:20:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 677020953,
+  "parameters_human": "677.0M",
+  "storage_bytes": 10404746336,
+  "storage_human": "10.4 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Create and save a passkey | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/accounts-billing/security/create-save-passkey",
+      "snippet": "Learn how to create and save a passkey to sign in to your Microsoft personal or work/school account and many other websites, apps …"
+    },
+    {
+      "title": "Anmelden bei Hotmail | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/accounts-billing/manage/how-to-sign-in-to-hotmail",
+      "snippet": "Microsoft hält immer ein Auge auf ungewöhnliche Anmeldeaktivitäten, nur für den Fall, dass jemand anderes versucht, auf Ihr Konto …"
+    },
+    {
+      "title": "Sign in to your account - techcommunity.microsoft.com",
+      "url": "https://techcommunity.microsoft.com/blog/exchange/exchange-online-ews-your-time-is-almost-up/4492361",
+      "snippet": "We wanted to provide an update on Exchange Online EWS deprecation."
+    },
+    {
+      "title": "Microsoft Copilot Blog | Microsoft Community Hub",
+      "url": "https://techcommunity.microsoft.com/category/microsoft-copilot/blog/microsoft-copilot-blog",
+      "snippet": "Built for business: How Microsoft 365 Copilot keeps you in the flow of legal work Now the LegalZoom agent works inside Microsoft …"
+    },
+    {
+      "title": "Change the refresh rate on your monitor in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/hardware/display-graphics/change-the-refresh-rate-on-your-monitor-in-windows",
+      "snippet": "Learn how to change the refresh rate for your display in Windows to determine how smoothly motion appears on your screen."
+    }
+  ]
+}

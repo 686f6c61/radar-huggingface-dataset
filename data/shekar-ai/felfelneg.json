@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "shekar-ai/felfelneg",
+  "slug": "shekar-ai-felfelneg",
+  "author": "shekar-ai",
+  "url": "https://huggingface.co/shekar-ai/felfelneg",
+  "created_at": "2026-09-21T03:51:31.000Z",
+  "updated_at": "2026-09-21T23:21:54.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "sentence-similarity",
+  "library": "sentence-transformers",
+  "languages": [],
+  "tags": [
+    "sentence-transformers",
+    "safetensors",
+    "albert",
+    "sentence-similarity",
+    "feature-extraction",
+    "dense",
+    "generated_from_trainer",
+    "dataset_size:4290735",
+    "loss:MatryoshkaLoss",
+    "loss:MultipleNegativesRankingLoss",
+    "arxiv:1908.10084",
+    "arxiv:2205.13147",
+    "arxiv:1807.03748",
+    "base_model:shekar-ai/FelfelSupPairs",
+    "base_model:finetune:shekar-ai/FelfelSupPairs",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 29,
+  "trending_score": 0,
+  "parameters": 11940096,
+  "parameters_human": "11.9M",
+  "storage_bytes": 6790528022,
+  "storage_human": "6.8 GB",
+  "base_model": "shekar-ai/FelfelSupPairs",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Online Slots Deutschland - Play Online Slots Games | Wunderino",
+      "url": "https://www.wunderino.com/en/",
+      "snippet": "Frequently Asked Questions about Wunderino Wunderino online gaming FAQ: Get quick answers about registration, deposits, …"
+    },
+    {
+      "title": "shekar-ai/felfelneg · Hugging Face",
+      "url": "https://huggingface.co/shekar-ai/felfelneg",
+      "snippet": "We’re on a journey to advance and democratize artificial intelligence through open source and open science."
+    },
+    {
+      "title": "Wunderino Casino - Play & Win Exciting Games",
+      "url": "https://wunderino-review.com/",
+      "snippet": "Join Wunderino Casino for thrilling games and big wins! Experience the best online gaming adventure today."
+    },
+    {
+      "title": "shekar-ai (shekar-ai) - Hugging Face",
+      "url": "https://huggingface.co/shekar-ai/datasets",
+      "snippet": "AI & ML interests. Open tools. Open data. Open Persian NLP. Recent Activity. amirivojdan updated a dataset about 5 hours ago"
+    },
+    {
+      "title": "Play Online Slots Games - Wunderino",
+      "url": "https://www.wunderino.de/en/",
+      "snippet": "In your Wunderino profile you can set daily limits on how much you want to bet or deposit. These tools are part of our comprehensive …"
+    }
+  ]
+}

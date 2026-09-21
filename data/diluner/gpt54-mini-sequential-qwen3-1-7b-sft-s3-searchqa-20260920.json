@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Diluner/gpt54-mini-sequential-qwen3-1.7b-sft-s3-searchqa-20260920",
+  "slug": "diluner-gpt54-mini-sequential-qwen3-1-7b-sft-s3-searchqa-20260920",
+  "author": "Diluner",
+  "url": "https://huggingface.co/Diluner/gpt54-mini-sequential-qwen3-1.7b-sft-s3-searchqa-20260920",
+  "created_at": "2026-09-20T23:55:21.000Z",
+  "updated_at": "2026-09-20T23:55:46.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "agent-training",
+    "gpt-5.4-mini",
+    "sft",
+    "sequential",
+    "conversational",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2031739904,
+  "parameters_human": "2.03B",
+  "storage_bytes": 8138417822,
+  "storage_human": "8.1 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Daily Mail",
+      "url": "https://www.dailymail.co.uk/ushome/index.html",
+      "snippet": ""
+    },
+    {
+      "title": "US Home | Daily Mail Online",
+      "url": "https://www.dailymail.com/ushome/index.html",
+      "snippet": "2 days ago · Daily Mail - get the latest breaking news, celebrity photos, viral videos, science & tech news, and top stories from Daily …"
+    },
+    {
+      "title": "UK Home | Daily Mail Online",
+      "url": "https://www.dailymail.com/home/index.html",
+      "snippet": "1 day ago · Daily Mail Online - get the latest breaking news, showbiz & celebrity photos, sport news & rumours, viral videos and top …"
+    },
+    {
+      "title": "Daily Mail - The New York Times",
+      "url": "https://www.nytimes.com/topic/daily-mail",
+      "snippet": "News about Daily Mail. Commentary and archival information about Daily Mail from The New York Times."
+    },
+    {
+      "title": "Daily Mail Did That Just Happen? | New York NY - Facebook",
+      "url": "https://www.facebook.com/DailyMaildotcom/",
+      "snippet": "Daily Mail Did That Just Happen?, New York. 4,904,430 followers · 16,490 talking about this. Feed your daily addiction with the …"
+    }
+  ]
+}

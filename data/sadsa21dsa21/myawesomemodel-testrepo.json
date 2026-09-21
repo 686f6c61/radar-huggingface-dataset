@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "SADSA21DSA21/MyAwesomeModel-TestRepo",
+  "slug": "sadsa21dsa21-myawesomemodel-testrepo",
+  "author": "SADSA21DSA21",
+  "url": "https://huggingface.co/SADSA21DSA21/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-21T00:12:15.000Z",
+  "updated_at": "2026-09-21T00:12:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Derniers tirages Loto®, EuroMillions - My Million, Keno ... - FDJ®",
+      "url": "https://www.fdj.fr/jeux-de-tirage/resultats?msockid=1f25c9b33ddf63373521de6b3cb662c9",
+      "snippet": "Vous avez manqué le dernier tirage LOTO®, Euro Millions-My Million® ou Joker+® ? Consultez tous les résultats des jeux de tirage …"
+    },
+    {
+      "title": "Jeux d'Argent et de Hasard en ligne : Française des Jeux | FDJ®",
+      "url": "https://www.fdj.fr/?msockid=1f25c9b33ddf63373521de6b3cb662c9",
+      "snippet": "Jouez en ligne aux jeux d'argent FDJ® : Illiko, LOTO®, EuroMillions, Keno et devenez peut-être millionnaire !"
+    },
+    {
+      "title": "EuroMillions – My Million : 111 M€ ce vendredi 11 sept. - FDJ®",
+      "url": "https://www.fdj.fr/jeux-de-tirage/euromillions-my-million?msockid=1f25c9b33ddf63373521de6b3cb662c9",
+      "snippet": "Sep 11, 2026 · Vous avez jusqu’au vendredi 18 sept. 20h15 pour jouer en ligne et tenter de remporter le Jackpot EuroMillions de 29 M€."
+    },
+    {
+      "title": "Les résultats EuroMillions - My Million - Française des Jeux | FDJ®",
+      "url": "https://www.fdj.fr/jeux-de-tirage/euromillions-my-million/resultats/vendredi-28-aout-2026?msockid=1f25c9b33ddf63373521de6b3cb662c9",
+      "snippet": "Aug 28, 2026 · Découvrez le résultat du tirage EuroMillions - My Million du vendredi 28 août 2026 et consultez le rapport des gains …"
+    },
+    {
+      "title": "Les résultats EuroMillions - My Million - Française des Jeux | FDJ®",
+      "url": "https://www.fdj.fr/jeux-de-tirage/euromillions-my-million/resultats/vendredi-04-septembre-2026?msockid=1f25c9b33ddf63373521de6b3cb662c9",
+      "snippet": "Sep 4, 2026 · Découvrez le résultat du tirage EuroMillions - My Million du vendredi 4 septembre 2026 et consultez le rapport des …"
+    }
+  ]
+}

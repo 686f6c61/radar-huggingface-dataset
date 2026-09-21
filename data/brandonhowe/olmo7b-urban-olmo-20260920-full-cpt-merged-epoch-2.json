@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "BrandonHowe/Olmo7b-urban-olmo-20260920-full-CPT-merged-epoch-2",
+  "slug": "brandonhowe-olmo7b-urban-olmo-20260920-full-cpt-merged-epoch-2",
+  "author": "BrandonHowe",
+  "url": "https://huggingface.co/BrandonHowe/Olmo7b-urban-olmo-20260920-full-CPT-merged-epoch-2",
+  "created_at": "2026-09-21T01:55:03.000Z",
+  "updated_at": "2026-09-21T01:55:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "olmo3",
+    "text-generation",
+    "continued-pretraining",
+    "bf16",
+    "dataset:CompassioninMachineLearning/urban_12738_cleaned",
+    "base_model:allenai/Olmo-3-1025-7B",
+    "base_model:finetune:allenai/Olmo-3-1025-7B",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 219,
+  "trending_score": 0,
+  "parameters": 7298011136,
+  "parameters_human": "7.30B",
+  "storage_bytes": 14596063592,
+  "storage_human": "14.6 GB",
+  "base_model": "allenai/Olmo-3-1025-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "„Google Chrome“ atsisiuntimas ir diegimas",
+      "url": "https://support.google.com/chrome/answer/95346?hl=lt&co=GENIE.Platform%3DDesktop",
+      "snippet": "Jei kyla problemų atsisiunčiant „Chrome“ kompiuteryje su „Windows“ operacine sistema, naudokite alternatyvią nuorodą ir atsisiųskite …"
+    },
+    {
+      "title": "Preuzimanje i instaliranje Google Chromea",
+      "url": "https://support.google.com/chrome/answer/95346?hl=hr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Preuzimanje i instaliranje Google Chromea Web-preglednik Chrome možete preuzeti i instalirati bez dodatnih troškova te ga …"
+    },
+    {
+      "title": "Google Chrome - 知乎",
+      "url": "https://www.zhihu.com/topic/19550523/hot",
+      "snippet": "Google Chrome是一款由Google公司开发的网页浏览器，该浏览器基于其他开源软件撰写，包括WebKit，目标是提升稳定性、速度和 …"
+    },
+    {
+      "title": "网络正常，只有百度网页打不开怎么回事？ - 知乎",
+      "url": "https://www.zhihu.com/question/29721497?sort=created",
+      "snippet": "打不开百度首页问题，只有百度打不开其他能打开怎么办？ 问题汇总描述 1.谷歌Chrome浏览器有时候打不开百度，其它网站表示能够 …"
+    },
+    {
+      "title": "Google Chrome'u indirme ve yükleme",
+      "url": "https://support.google.com/chrome/answer/95346?hl=tr&co=GENIE.Platform%3DDesktop",
+      "snippet": "Chrome'u çevrimdışı yükleme Chrome'u Windows bilgisayarınıza indirirken sorun yaşarsanız alternatif bağlantıyı kullanarak farklı bir …"
+    }
+  ]
+}

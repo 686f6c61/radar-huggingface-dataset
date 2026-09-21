@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "sh-islam/ciln-bench-voters",
+  "slug": "sh-islam-ciln-bench-voters",
+  "author": "sh-islam",
+  "url": "https://huggingface.co/sh-islam/ciln-bench-voters",
+  "created_at": "2026-09-21T00:26:48.000Z",
+  "updated_at": "2026-09-21T04:27:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "label-noise",
+    "instance-dependent-noise",
+    "benchmark",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1248086778,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Furlough Guidance - U.S. Office of Personnel Management",
+      "url": "https://www.opm.gov/policy-data-oversight/pay-leave/furlough-guidance/",
+      "snippet": "For further information on the procedural requirements for taking furlough actions and the rights and entitlements which accrue to …"
+    },
+    {
+      "title": "Guidance for Shutdown Furloughs - U.S. Office of Personnel Management",
+      "url": "https://www.opm.gov/policy-data-oversight/pay-leave/furlough-guidance/guidance-for-shutdown-furloughs-1-30-2026.pdf",
+      "snippet": "Jan 30, 2026 · If, however, the employee is scheduled to return from unpaid leave to Federal service during the furlough period, the …"
+    },
+    {
+      "title": "Supervisor Orderly Shutdown Checklist 11 - DCPAS",
+      "url": "https://www.dcpas.osd.mil/sites/default/files/dod_orderly_shutdown_checklist-20240320.pdf",
+      "snippet": "Mar 20, 2024 · Employees should contact the Commercial Travel Office to make travel arrangements and return home without delay. …"
+    },
+    {
+      "title": "Furlough Guidance - piv.opm.gov",
+      "url": "https://piv.opm.gov/policy-data-oversight/pay-leave/furlough-guidance/",
+      "snippet": "For further information on the procedural requirements for taking furlough actions and the rights and entitlements which accrue to …"
+    },
+    {
+      "title": "Shutdown Furlough FAQ_September 2023 - DCPAS",
+      "url": "https://www.dcpas.osd.mil/sites/default/files/shutdown_furlough_faqs_20240306.pdf",
+      "snippet": "Mar 6, 2024 · During a shutdown, a furloughed employee may not use previously approved paid leave (such as annual leave, sick …"
+    }
+  ]
+}

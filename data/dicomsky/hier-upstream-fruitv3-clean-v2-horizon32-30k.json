@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "Dicomsky/hier-upstream-fruitv3-clean-v2-horizon32-30k",
+  "slug": "dicomsky-hier-upstream-fruitv3-clean-v2-horizon32-30k",
+  "author": "Dicomsky",
+  "url": "https://huggingface.co/Dicomsky/hier-upstream-fruitv3-clean-v2-horizon32-30k",
+  "created_at": "2026-09-21T01:16:06.000Z",
+  "updated_at": "2026-09-21T01:17:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 7,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 5188067595,
+  "storage_human": "5.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MUP ZDK",
+      "url": "https://mupzdk.gov.ba/index.php/kontakt/uprava-policije1/1-mup-zdk",
+      "snippet": "Ministarstvo unutrašnjih poslova Zeničko dobojskog kantona Trg BiH broj 1 Zenica"
+    },
+    {
+      "title": "MUP ZDK",
+      "url": "https://www.mupzdk.gov.ba/",
+      "snippet": "Povodom početka nove školske godine, koja na području Zeničko-dobojskog kantona počinje 01.09.2026. godine, Uprava policije …"
+    },
+    {
+      "title": "Ministarstvo unutrašnjih poslova - Zeničko-dobojski kanton",
+      "url": "https://zdk.ba/ministarstva/ministarstvo-unutrasnjih-poslova",
+      "snippet": "Ministarstvo unutrašnjih poslova sastoji se od sljedećih organizacionih jedinica: Opširnije na web stranici ministarstva."
+    },
+    {
+      "title": "MUP ZE-DO KANTONA-UPRAVA POLICIJE Zenica - akta.ba",
+      "url": "https://www.akta.ba/registar/420670/mup-ze-do-kantona-uprava-policije-zenica",
+      "snippet": "MINISTARSTVO UNUTRAŠNJIH POSLOVA ZE-DO KANTONA-UPRAVA POLICIJE Zenica, Poslovi javnog reda i sigurnosti, MUP …"
+    },
+    {
+      "title": "MUP Zeničko-Dobojskog Kantona | Ministarstvo unutrašnjih poslova ...",
+      "url": "https://mup.ks.gov.ba/node/269271",
+      "snippet": "Kontakti Ministarstvo unutrašnjih poslova Kantona Sarajevo Sarajevo, La Benevolencija 16 Radno vrijeme: od 07.30 do 16.00 …"
+    }
+  ]
+}

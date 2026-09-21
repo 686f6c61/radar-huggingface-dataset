@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "mradermacher/voho-saudi-chat-4b-GGUF",
+  "slug": "mradermacher-voho-saudi-chat-4b-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/voho-saudi-chat-4b-GGUF",
+  "created_at": "2026-09-20T20:37:53.000Z",
+  "updated_at": "2026-09-20T20:59:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "ar"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "arabic",
+    "saudi-arabic",
+    "najdi",
+    "dialect",
+    "conversational",
+    "voice-agent",
+    "voho",
+    "ar",
+    "dataset:2A2I/Arabic_Aya",
+    "dataset:arbml/CIDAR",
+    "base_model:VohoAI/voho-saudi-chat-4b",
+    "base_model:quantized:VohoAI/voho-saudi-chat-4b",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 36389978496,
+  "storage_human": "36.4 GB",
+  "base_model": "VohoAI/voho-saudi-chat-4b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Defesa , bloqueio e esquiva, Como faz pra saber - Reddit",
+      "url": "https://www.reddit.com/r/OrdemParanormalRPG/comments/vglens/defesa_bloqueio_e_esquiva_como_faz_pra_saber/",
+      "snippet": "Jun 20, 2022 · Cara agora tudo faz mais sentido, eu juro q eu não sabia disso. Obrigado Reply reply More repliesMore repliesMore …"
+    },
+    {
+      "title": "**MAJOR SPOILERS** Help Wanted 2 Rewards / Unlock Guide tracking",
+      "url": "https://www.reddit.com/r/fivenightsatfreddys/comments/18ihoq7/major_spoilers_help_wanted_2_rewards_unlock_guide/",
+      "snippet": "Puppet Faz Force for beating all the Sister Location levels? (may have been triggered from beating all other levels except the last) …"
+    },
+    {
+      "title": "Használt légfegyver adás-vétel - Index Fórum",
+      "url": "https://forum.index.hu/Article/showArticle?t=9092082",
+      "snippet": "Használt légfegyverek hirdetési helye. Aukciós és hirdetési portálok linkelése tilos!"
+    },
+    {
+      "title": "Kérdés windowsos gurukhoz - Index Fórum",
+      "url": "https://forum.index.hu/Article/showArticle?t=9157541",
+      "snippet": "Sep 9, 2026 · Kérdezz, jár erre pár guru. Hamarabb kapsz választ, ha precízen leírod mi a baj (oprendszer, sw verzió, hibaüzenetek, …"
+    },
+    {
+      "title": "FortiGates unable to connect to FortiAnalyzer after upgrade",
+      "url": "https://www.reddit.com/r/fortinet/comments/18fbocm/fortigates_unable_to_connect_to_fortianalyzer/",
+      "snippet": "Hello, I recently upgraded a customers FAZ from 6.4.9 to 7.0.10 today and now their FortiGates aren’t able to connect. The …"
+    }
+  ]
+}

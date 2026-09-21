@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "r1char9/t5gemma2-detox-ru",
+  "slug": "r1char9-t5gemma2-detox-ru",
+  "author": "r1char9",
+  "url": "https://huggingface.co/r1char9/t5gemma2-detox-ru",
+  "created_at": "2026-09-20T20:17:15.000Z",
+  "updated_at": "2026-09-20T22:35:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "ru",
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "t5gemma2",
+    "detoxification",
+    "text-style-transfer",
+    "text2text-generation",
+    "t5gemma",
+    "sft",
+    "dpo",
+    "orpo",
+    "text-generation",
+    "ru",
+    "en",
+    "dataset:r1char9/toxic-detox-pairs",
+    "dataset:r1char9/detox-dpo-dataset",
+    "base_model:google/t5gemma-2-1b-1b",
+    "base_model:finetune:google/t5gemma-2-1b-1b",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2115977456,
+  "parameters_human": "2.12B",
+  "storage_bytes": 4265490371,
+  "storage_human": "4.3 GB",
+  "base_model": "google/t5gemma-2-1b-1b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GitHub - 0xk1h0/ChatGPT_DAN: ChatGPT DAN, Jailbreaks prompt",
+      "url": "https://github.com/0xk1h0/ChatGPT_DAN",
+      "snippet": "Jan 1, 2025 · ChatGPT DAN, Jailbreaks prompt. Contribute to 0xk1h0/ChatGPT_DAN development by creating an account on GitHub."
+    },
+    {
+      "title": "ChatGPT - Reddit",
+      "url": "https://www.reddit.com/r/ChatGPT/top/",
+      "snippet": "Dec 1, 2022 · r/ChatGPT: Subreddit to discuss about ChatGPT and AI. Not affiliated with OpenAI."
+    },
+    {
+      "title": "chatgpt-api · GitHub Topics · GitHub",
+      "url": "https://github.com/topics/chatgpt-api",
+      "snippet": "May 9, 2026 · ChatGPT API is a RESTful API that provides a simple interface to interact with OpenAI’s GPT-3 and GPT-Neo …"
+    },
+    {
+      "title": "ChatGPT Plus 正式恢复五小时使用上限，Codex 长任务体验会受影响 …",
+      "url": "https://www.zhihu.com/question/2075903044676315058",
+      "snippet": "可以看看公众号老冯云数怎么用7-10个20x产生巨大生产力的， 《OPC一个月烧1000刀订阅，能有多少产出？ 》 的时候是7个， …"
+    },
+    {
+      "title": "普通人要Codex有什么用？ - 知乎",
+      "url": "https://www.zhihu.com/question/2020702567198410280",
+      "snippet": "这也算是一个能分享的小技巧。 毕竟如果一个人自己开了 20x ChatGPT Pro 订阅畅用，那至少这个人的钱包我觉得不是很普通，国内 …"
+    }
+  ]
+}

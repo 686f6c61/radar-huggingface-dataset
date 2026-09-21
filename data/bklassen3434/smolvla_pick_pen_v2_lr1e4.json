@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "bklassen3434/smolvla_pick_pen_v2_lr1e4",
+  "slug": "bklassen3434-smolvla_pick_pen_v2_lr1e4",
+  "author": "bklassen3434",
+  "url": "https://huggingface.co/bklassen3434/smolvla_pick_pen_v2_lr1e4",
+  "created_at": "2026-09-20T23:13:50.000Z",
+  "updated_at": "2026-09-20T23:14:42.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "smolvla",
+    "so101",
+    "dataset:bklassen3434/pick_pen_v2_20260920_124400",
+    "base_model:lerobot/smolvla_base",
+    "base_model:finetune:lerobot/smolvla_base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 450046176,
+  "parameters_human": "450.0M",
+  "storage_bytes": 906720056,
+  "storage_human": "907 MB",
+  "base_model": "lerobot/smolvla_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=176a1d911ff26c1b29d40a4b1e9b6d04",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "It’s all here with Microsoft account Your Microsoft account connects all your Microsoft apps and services. Sign in to manage your …"
+    },
+    {
+      "title": "Sign in to your account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    },
+    {
+      "title": "Microsoft 365 for Individuals: Subscription for Productivity Apps",
+      "url": "https://www.microsoft.com/en-us/microsoft-365?msockid=176a1d911ff26c1b29d40a4b1e9b6d04",
+      "snippet": "Today, Microsoft 365 includes apps like Word, Excel, PowerPoint, Outlook, and OneNote, along with OneDrive cloud storage, real …"
+    },
+    {
+      "title": "Microsoft - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Microsoft",
+      "snippet": "Its best-known software products are the Windows line of operating systems and the Microsoft Office and Microsoft 365 suite of …"
+    }
+  ]
+}

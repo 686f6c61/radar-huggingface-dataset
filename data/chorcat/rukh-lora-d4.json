@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "chorcat/rukh-lora-d4",
+  "slug": "chorcat-rukh-lora-d4",
+  "author": "chorcat",
+  "url": "https://huggingface.co/chorcat/rukh-lora-d4",
+  "created_at": "2026-09-20T20:42:28.000Z",
+  "updated_at": "2026-09-21T15:03:30.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "rukh",
+  "languages": [],
+  "tags": [
+    "rukh",
+    "chess",
+    "lora",
+    "adapter",
+    "base_model:chorcat/rukh-medium",
+    "base_model:adapter:chorcat/rukh-medium",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3151688,
+  "storage_human": "3 MB",
+  "base_model": "chorcat/rukh-medium",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ashok nagar Locality Map, Hyderabad - Maps of India",
+      "url": "https://www.mapsofindia.com/hyderabad/localities/ashok-nagar.html",
+      "snippet": "Mar 30, 2026 · Locality map of Ashok nagar showing major roads, local train route, hotels, hospitals, schools, colleges, religious …"
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.com/",
+      "snippet": "Find local businesses, view maps and get driving directions in Google Maps."
+    },
+    {
+      "title": "Ashok Nagar, Hyderabad - Map, Property Rates, Projects, Reviews, …",
+      "url": "https://www.99acres.com/ashok-nagar-hyderabad-overview-piffid",
+      "snippet": "Jun 12, 2026 · Know about Ashok Nagar Hyderabad property market, view map, reviews, property price trends, locality photos & …"
+    },
+    {
+      "title": "Ashok Nagar, Himayath Nagar, Hyderabad | Ashok Nagar Map, Pros …",
+      "url": "https://housing.com/ashok-nagar-himayath-nagar-hyderabad-overview-P2v1vm31fnlcgpysz",
+      "snippet": "Ashok Nagar is an sublocality in Himayath Nagar, East Hyderabad, Hyderabad, Hyderabad District, Telangana, India. Himayath …"
+    },
+    {
+      "title": "Ashok Nagar, Hyderabad - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Ashok_Nagar%2C_Hyderabad",
+      "snippet": "Ashok Nagar is a locality in Hyderabad, Telangana, India. [1][2] The locality is well known for its concentration of coaching centres …"
+    }
+  ]
+}

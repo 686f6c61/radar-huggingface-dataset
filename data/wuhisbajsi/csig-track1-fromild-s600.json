@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "wuhisbajsi/csig-track1-fromild-s600",
+  "slug": "wuhisbajsi-csig-track1-fromild-s600",
+  "author": "wuhisbajsi",
+  "url": "https://huggingface.co/wuhisbajsi/csig-track1-fromild-s600",
+  "created_at": "2026-09-20T22:01:25.000Z",
+  "updated_at": "2026-09-20T22:01:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "image-restoration",
+    "super-resolution",
+    "one-step-diffusion",
+    "csig",
+    "base_model:wuhisbajsi/csig-track1-vosr05b-ckpt4000",
+    "base_model:finetune:wuhisbajsi/csig-track1-vosr05b-ckpt4000",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1948337520,
+  "storage_human": "1.9 GB",
+  "base_model": "wuhisbajsi/csig-track1-vosr05b-ckpt4000",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "DEL2 | Offizielle Website der Deutschen Eishockey Liga 2 (DEL2)",
+      "url": "https://www.del-2.org/",
+      "snippet": "Die offizielle Homepage der Deutschen Eishockey Liga 2 mit allen News, Teams, einem großen Statistik-Bereich und Video-Highlights."
+    },
+    {
+      "title": "Live Ergebnisse - DEL2",
+      "url": "https://www.del-2.org/live/",
+      "snippet": "Alle Spiele Live in der Übersicht"
+    },
+    {
+      "title": "DEL2 | Spiele",
+      "url": "https://www.del-2.org/spielplan/",
+      "snippet": "Der DEL2-Spielplan zeigt alle Spiele der Liga, inklusive Daten und Zeiten."
+    },
+    {
+      "title": "Tabelle - DEL2",
+      "url": "https://www.del-2.org/tabelle/",
+      "snippet": "Tabelle der DEL2 Playoffs (Heim) Playoffs Pre-Playoffs Playdowns = sicher Top 6 (rechnerisch) * = kann rechnerisch noch Top 6 …"
+    },
+    {
+      "title": "DEL2 | Videos",
+      "url": "https://www.del-2.org/videos/",
+      "snippet": "DEL2 | Das große Abschluss-Interview zur Saison 2025/26 Krefeld und die perfekte Finalserie | DEL2 Meister DEL2 Meister Krefeld …"
+    }
+  ]
+}

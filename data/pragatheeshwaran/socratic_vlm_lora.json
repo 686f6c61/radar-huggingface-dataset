@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Pragatheeshwaran/socratic_vlm_lora",
+  "slug": "pragatheeshwaran-socratic_vlm_lora",
+  "author": "Pragatheeshwaran",
+  "url": "https://huggingface.co/Pragatheeshwaran/socratic_vlm_lora",
+  "created_at": "2026-09-21T02:03:52.000Z",
+  "updated_at": "2026-09-21T02:26:43.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "mllama",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 10670220835,
+  "parameters_human": "10.67B",
+  "storage_bytes": 21357770958,
+  "storage_human": "21.4 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Earth プロのインストールとアンインストール",
+      "url": "https://support.google.com/earth/answer/21955?hl=ja",
+      "snippet": "Google Earth を開くには、アプリケーション フォルダを開き、 [Google Earth プロ] をダブルクリックします。 注: インストールの …"
+    },
+    {
+      "title": "Versions of Google Earth (desktop, web, mobile)",
+      "url": "https://support.google.com/earth/community-guide/256123000/versions-of-google-earth-desktop-web-mobile?hl=en",
+      "snippet": "Jan 30, 2024 · There are three different versions of Google Earth: desktop, web and mobile. This guide attempts to give an overview …"
+    },
+    {
+      "title": "谷歌地球 Google Earth v7.3.3.7673 专业版免安装 - 吾爱破解 - 52pojie.cn",
+      "url": "https://www.52pojie.cn/thread-1162078-1-1.html",
+      "snippet": "Apr 21, 2020 · Google 地球能带您飞往地球上的任何地方，您可以在上面查看卫星图像、地图、地形和3D建筑。不论是外太空的浩渺 …"
+    },
+    {
+      "title": "How accurate is Google Earth elevation? : r/gis - Reddit",
+      "url": "https://www.reddit.com/r/gis/comments/lczuab/how_accurate_is_google_earth_elevation/",
+      "snippet": "Feb 5, 2021 · So around 30 meters depending on the zone of the earth. But thats horizontal precision, vertical precision can be worst, …"
+    },
+    {
+      "title": "Google Earth Decoder. Now user-friendly : r/FS2020Creation - Reddit",
+      "url": "https://www.reddit.com/r/FS2020Creation/comments/j3faaj/google_earth_decoder_now_userfriendly/",
+      "snippet": "Aug 1, 2021 · 275 votes, 749 comments. Though Windows-only. So, I've recreated Google Earth Decoder from scratch, making it …"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "taurusduan/Qwen-Image-2.1",
+  "slug": "taurusduan-qwen-image-2-1",
+  "author": "taurusduan",
+  "url": "https://huggingface.co/taurusduan/Qwen-Image-2.1",
+  "created_at": "2026-09-21T01:37:58.000Z",
+  "updated_at": "2026-09-21T01:38:00.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "diffusion-single-file",
+  "languages": [],
+  "tags": [
+    "diffusion-single-file",
+    "comfyui",
+    "base_model:Qwen/Qwen-Image-2.1",
+    "base_model:finetune:Qwen/Qwen-Image-2.1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 74301956212,
+  "storage_human": "74.3 GB",
+  "base_model": "Qwen/Qwen-Image-2.1",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bing Homepage Quiz – Today's Bing Daily Trivia & Featured Image Quiz",
+      "url": "https://bingquiz.com/bing-homepage-quiz/",
+      "snippet": "2 days ago · Test your knowledge on world headlines, breaking news, and trending global stories updated daily."
+    },
+    {
+      "title": "Bing Homepage Quiz - Today's Trivia & Bing News Quiz",
+      "url": "https://bing.weeklyquiz.net/bing-homepage-quiz/",
+      "snippet": "11 hours ago · A new quiz goes up every day, drawing on the day's Bing homepage image and trending topics — geography, history, …"
+    },
+    {
+      "title": "Bing Unterhaltungs-Quiz — Heutiges interaktives Unterhaltungs-Quiz",
+      "url": "https://www.bingentertainmentquiz.com/de/",
+      "snippet": "May 6, 2026 · Das Bing Unterhaltungs-Quiz ist deine tägliche Trivia-Herausforderung mit 20 Fragen zu Filmen, Musik, TV-Shows und …"
+    },
+    {
+      "title": "Bing Social Media Quiz - TikTok, Instagram, YouTube & Viral Trends Trivia",
+      "url": "https://bingquiz.com/bing-social-media-quiz/",
+      "snippet": "Jul 24, 2026 · Play the Bing Social Media Quiz and test your knowledge of TikTok, Instagram, YouTube, Facebook, X, Snapchat, …"
+    },
+    {
+      "title": "Bing Entertainment Quiz – Movies, Music, TV & Answers | Bing Quizzes",
+      "url": "https://bing.weeklyquiz.net/bing-entertainment-quiz/",
+      "snippet": "Take today's 10-question Bing Entertainment Quiz covering trending U.S. movies, TV, music, celebrity, streaming, and entertainment …"
+    }
+  ]
+}

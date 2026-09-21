@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "Anadilorg/Anadil_Uyghur_TTS",
+  "slug": "anadilorg-anadil_uyghur_tts",
+  "author": "Anadilorg",
+  "url": "https://huggingface.co/Anadilorg/Anadil_Uyghur_TTS",
+  "created_at": "2026-09-20T21:45:48.000Z",
+  "updated_at": "2026-09-20T21:46:32.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-speech",
+  "library": "voxcpm",
+  "languages": [
+    "ug",
+    "tr"
+  ],
+  "tags": [
+    "voxcpm",
+    "text-to-speech",
+    "tts",
+    "speech-synthesis",
+    "audio",
+    "uyghur",
+    "uyghurce",
+    "uighur",
+    "ug",
+    "central-asia",
+    "china",
+    "lora",
+    "low-resource",
+    "tr",
+    "base_model:openbmb/VoxCPM2",
+    "base_model:adapter:openbmb/VoxCPM2",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 183075419,
+  "storage_human": "183 MB",
+  "base_model": "openbmb/VoxCPM2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reddit - Dive into anything",
+      "url": "https://www.reddit.com/",
+      "snippet": "Reddit is a network of communities where people can dive into their interests, hobbies and passions. There's a community for …"
+    },
+    {
+      "title": "Versions of Google Earth (desktop, web, mobile)",
+      "url": "https://support.google.com/earth/community-guide/256123000/versions-of-google-earth-desktop-web-mobile?hl=en",
+      "snippet": "Jan 30, 2024 · There are three different versions of Google Earth: desktop, web and mobile. This guide attempts to give an overview …"
+    },
+    {
+      "title": "Find & use location coordinates - Google Earth Help",
+      "url": "https://support.google.com/earth/answer/148068?hl=en",
+      "snippet": "Open Google Earth. As you move your mouse over different locations, coordinates will be displayed in the lower right corner. If your …"
+    },
+    {
+      "title": "How accurate is Google Earth elevation? : r/gis - Reddit",
+      "url": "https://www.reddit.com/r/gis/comments/lczuab/how_accurate_is_google_earth_elevation/",
+      "snippet": "Feb 5, 2021 · So around 30 meters depending on the zone of the earth. But thats horizontal precision, vertical precision can be worst, …"
+    },
+    {
+      "title": "Menginstal & uninstal Google Earth Pro",
+      "url": "https://support.google.com/earth/answer/21955?hl=id",
+      "snippet": "Google Earth Pro berfungsi dengan versi paling baru dari distribusi Ubuntu dan Fedora Linux. Google Earth Pro juga dapat berjalan …"
+    }
+  ]
+}

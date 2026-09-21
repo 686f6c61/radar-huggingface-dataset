@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "sandeshrajx/openpangram-2b",
+  "slug": "sandeshrajx-openpangram-2b",
+  "author": "sandeshrajx",
+  "url": "https://huggingface.co/sandeshrajx/openpangram-2b",
+  "created_at": "2026-09-20T23:58:30.000Z",
+  "updated_at": "2026-09-21T00:50:16.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_text",
+    "feature-extraction",
+    "text-classification",
+    "ai-detection",
+    "ai-generated-text",
+    "provenance",
+    "token-classification",
+    "qwen",
+    "openpangram",
+    "custom_code",
+    "en",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1881882460,
+  "parameters_human": "1.88B",
+  "storage_bytes": 3807592003,
+  "storage_human": "3.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vitasprint – Energie, Fokus & Unterstützung für deinen Tag | Vitasprint",
+      "url": "https://www.vitasprint.de/",
+      "snippet": "Entdecke Vitasprint: Produkte mit B‑Vitaminen, Pflanzenextrakten und innovativer 2‑Phasen‑Technologie. Ideal für besondere …"
+    },
+    {
+      "title": "Vitasprint B12 Trinkfläschchen, mit Vitamin B12 für mehr Energie",
+      "url": "https://www.shop-apotheke.com/arzneimittel/1843551/vitasprint-b12-trinkflaeschchen.htm?msockid=3741cd021ace6497076fdad91b4e656b",
+      "snippet": "Vitasprint B12 ist ein Vitaminpräparat, das Vitamin B12 und Eiweißbausteine enthält. Vitasprint wird als Aufbaukur bei …"
+    },
+    {
+      "title": "Vitasprint B12 – Aufbaukur für mehr Energie | Arzneimittel",
+      "url": "https://www.vitasprint.de/produkte/vitasprint-b12/",
+      "snippet": "Wenn du deine körpereigenen Vitamin B12-Depots auffüllen möchtest, kann Vitasprint B12 unterstützen. Mit der richtigen …"
+    },
+    {
+      "title": "Suchergebnis Auf Amazon.de Für: Vitasprint",
+      "url": "https://www.amazon.de/vitasprint/s?k=vitasprint",
+      "snippet": "Entdecken Sie Vitasprint Nahrungsergänzungsmittel in verschiedenen Darreichungsformen – als Trinkfläschchen, Kapseln oder …"
+    },
+    {
+      "title": "Teurer „Zaubertrank“: Öko-Test zerreißt Vitasprint",
+      "url": "https://www.apotheke-adhoc.de/nachrichten/detail/markt/oeko-test-zerreisst-vitasprint-teurer-zaubertrank/",
+      "snippet": "Jan 26, 2023 · Mit einem „ungenügend“ ging lediglich ein Präparat aus dem Test hervor: Haleon (ehemals GSK) konnte mit den …"
+    }
+  ]
+}

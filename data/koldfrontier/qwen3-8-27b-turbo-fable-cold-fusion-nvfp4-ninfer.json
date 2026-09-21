@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "koldfrontier/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-NVFP4-NInfer",
+  "slug": "koldfrontier-qwen3-8-27b-turbo-fable-cold-fusion-nvfp4-ninfer",
+  "author": "koldfrontier",
+  "url": "https://huggingface.co/koldfrontier/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-NVFP4-NInfer",
+  "created_at": "2026-09-21T01:12:25.000Z",
+  "updated_at": "2026-09-21T01:15:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "ninfer",
+  "languages": [],
+  "tags": [
+    "ninfer",
+    "qwen3.8",
+    "nvfp4",
+    "fp8",
+    "w4a4",
+    "blackwell",
+    "multimodal",
+    "conversational",
+    "cuda",
+    "rtx-5090",
+    "heretic",
+    "uncensored",
+    "image-text-to-text",
+    "base_model:DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+    "base_model:quantized:DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 2,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 21492901636,
+  "storage_human": "21.5 GB",
+  "base_model": "DavidAU/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU, Solstice-AI/Qwen3.8-27B-TURBO-Fable-Cold-Fusion-735-882-Heretic-Uncensored-NM-DAU-NVFP4",
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "El projecte de reparcel·lació",
+      "url": "https://www.diba.cat/documents/d/hua/sistemes-i-modalitats",
+      "snippet": "Els propietaris que han concertat la gestió urbanística han de redactar el projecte de reparcel·lació i, eventualment, la corresponent …"
+    },
+    {
+      "title": "El sistema de reparcel·lació",
+      "url": "https://www.diba.cat/documents/d/hua/260206iaul-el-sistema-de-reparcel-lacio-jb",
+      "snippet": "Modalitat de cooperació: L’Administració actuant gestiona la reparcel·lació i executa la urbanització (o en cas de Gestió integrada, el …"
+    },
+    {
+      "title": "EAPC Wiki - Unitat 3. L'execució urbanística",
+      "url": "https://formaciooberta.eapc.gencat.cat/contingutsdelscursos/urb_basic/030_valida/inici.html",
+      "snippet": "Les juntes de compensació formulen el projecte de reparcel·lació i, si s’escau, el projecte d’urbanització, i gestionen i executen la …"
+    },
+    {
+      "title": "Projectes de reparcel·lació - Vilanova i la Geltrú",
+      "url": "https://www.vilanova.cat/espai_public/projectes_reparcelacio",
+      "snippet": "Aprovació definitiva del projecte de reparcel·lació voluntària del Polígon d'Actuació Urbanística (PA-7) La Pastera de la MPPGOU en …"
+    },
+    {
+      "title": "EAPC Wiki - 2.3.4. El projecte de reparcel·lació",
+      "url": "https://aulavirtual.eapc.gencat.cat/file.php/1/continguts_cursos_EAPC/urbanisme/bloc_3/unitat_2/reparcelacio/projecte.html",
+      "snippet": "Els drets i càrregues no esmentats en el projecte de reparcel·lació inscrits després de la nota marginal d'inici del procediment, els …"
+    }
+  ]
+}

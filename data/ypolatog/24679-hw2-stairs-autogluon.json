@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "ypolatog/24679-hw2-stairs-autogluon",
+  "slug": "ypolatog-24679-hw2-stairs-autogluon",
+  "author": "ypolatog",
+  "url": "https://huggingface.co/ypolatog/24679-hw2-stairs-autogluon",
+  "created_at": "2026-09-21T00:51:02.000Z",
+  "updated_at": "2026-09-21T00:51:27.000Z",
+  "license": "classroom-use",
+  "license_family": "unknown",
+  "pipeline_tag": "image-classification",
+  "library": "timm",
+  "languages": [],
+  "tags": [
+    "timm",
+    "image-classification",
+    "autogluon",
+    "24-679",
+    "license:other",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 164536847,
+  "storage_human": "165 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": null,
+      "dataset": "ArinRoths/StairvsNonStair_Dataset",
+      "metric": "Accuracy (held-out test)",
+      "value": 0.6
+    }
+  ],
+  "sources": [
+    {
+      "title": "Miele Reviews | Read Customer Service Reviews of mieleusa.com",
+      "url": "https://www.trustpilot.com/review/mieleusa.com",
+      "snippet": "Evaluating 54 reviews, most reviewers were let down by their experience overall. Consumers frequently reported major product …"
+    },
+    {
+      "title": "Miele Homeowners Reviews and Complaints 2026 | ComplaintsBoard",
+      "url": "https://www.complaintsboard.com/miele-b128092",
+      "snippet": "Jul 18, 2026 · Our conclusion: After a detailed review, ComplaintsBoard finds Miele to be a trustworthy company. Although there's a …"
+    },
+    {
+      "title": "Miele, Inc. | BBB Reviews | Better Business Bureau",
+      "url": "https://www.bbb.org/us/nj/princeton/profile/wholesale-major-appliances/miele-inc-0221-13001082/customer-reviews",
+      "snippet": "Sep 10, 2026 · View BBB customer reviews of Miele, Inc.. Leave a review and share your experience with the BBB and Miele, Inc.."
+    },
+    {
+      "title": "Welcome to Miele – Immer Besser",
+      "url": "https://www.mieleusa.com/",
+      "snippet": "Discover the global premium brand for household and commercial appliances with the very highest quality standards."
+    },
+    {
+      "title": "Miele",
+      "url": "https://www.miele.com/en/com/index.htm",
+      "snippet": "Miele is represented in many countries/regions with its own subsidiaries and importers. Sustainable trading in the interest of …"
+    }
+  ]
+}

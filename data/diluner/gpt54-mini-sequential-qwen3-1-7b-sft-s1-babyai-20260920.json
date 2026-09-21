@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Diluner/gpt54-mini-sequential-qwen3-1.7b-sft-s1-babyai-20260920",
+  "slug": "diluner-gpt54-mini-sequential-qwen3-1-7b-sft-s1-babyai-20260920",
+  "author": "Diluner",
+  "url": "https://huggingface.co/Diluner/gpt54-mini-sequential-qwen3-1.7b-sft-s1-babyai-20260920",
+  "created_at": "2026-09-21T00:03:39.000Z",
+  "updated_at": "2026-09-21T00:04:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "agent-training",
+    "gpt-5.4-mini",
+    "sft",
+    "sequential",
+    "conversational",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2031739904,
+  "parameters_human": "2.03B",
+  "storage_bytes": 8138417822,
+  "storage_human": "8.1 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Premier Funeral Home in Fremont, NE - Ludvigsen Mortuary",
+      "url": "https://www.ludvigsenmortuary.com/obituaries.asp",
+      "snippet": "Ludvigsen Mortuary is the premier funeral services provider in Fremont, Hopper & Scribner ... service with dignity, distinction & respect."
+    },
+    {
+      "title": "Ludvigsen Mortuary - Funeral Home in Fremont, NE",
+      "url": "https://ludvigsenmortuary.com/",
+      "snippet": "Ludvigsen Mortuary is the premier funeral services provider in Fremont, Hopper & Scribner ... service with dignity, distinction & respect."
+    },
+    {
+      "title": "Michael A. Nicotero - Obituary & Service Details",
+      "url": "https://www.ludvigsenmortuary.com/memorialpage.asp?id=2670",
+      "snippet": "Apr 13, 2026 · The visitation will be Sunday, April 19, 2026 at the Hooper Funeral Chapel from 2pm to 4pm with a wake service at …"
+    },
+    {
+      "title": "Raymond A. Ruwe - Obituary & Service Details",
+      "url": "https://www.ludvigsenmortuary.com/memorialpage.asp?id=3705",
+      "snippet": "Jul 28, 2026 · Raymond August Ruwe, 93, of Fremont, NE, a devoted husband, father, grandfather, farmer, veteran and man of …"
+    },
+    {
+      "title": "Mark A. Ohlrich - Obituary & Service Details",
+      "url": "https://www.ludvigsenmortuary.com/memorialpage.asp?id=3701",
+      "snippet": "Mark Ohlrich, 50, of Fremont, passed away at home on July 20, 2026. Mark was born on September 17, 1975, in Neligh, Nebraska, to …"
+    }
+  ]
+}

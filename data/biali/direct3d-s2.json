@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "biali/Direct3D-S2",
+  "slug": "biali-direct3d-s2",
+  "author": "biali",
+  "url": "https://huggingface.co/biali/Direct3D-S2",
+  "created_at": "2026-09-20T21:37:20.000Z",
+  "updated_at": "2026-09-20T21:37:20.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-3d",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "image-to-3d",
+    "3d-aigc",
+    "3d-reconstruction",
+    "3d-models",
+    "3d-generation",
+    "arxiv:2505.17412",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 6469683085,
+  "storage_human": "6.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Best E-Commerce Business Insurance (2026 Guide) - MoneyGeek",
+      "url": "https://www.moneygeek.com/insurance/business/retail/ecommerce/",
+      "snippet": "1 day ago · MoneyGeek can help you compare coverages, find the right insurer for your business, and estimate costs so you get the …"
+    },
+    {
+      "title": "5 Best Ecommerce Insurance Companies in 2026 - Fit Small Business",
+      "url": "https://fitsmallbusiness.com/best-ecommerce-insurance-companies/",
+      "snippet": "May 26, 2026 · To build this list of the best ecommerce insurance companies, I focused on providers that offer strong coverage for …"
+    },
+    {
+      "title": "Best Business Insurance for Ecommerce in 2026: 10 Providers …",
+      "url": "https://ecommerceparadise.com/best-business-insurance-for-ecommerce/",
+      "snippet": "Product liability, which most insurers bundle inside general liability for ecommerce sellers, covers claims that a product you sold …"
+    },
+    {
+      "title": "Best Insurance for Ecommerce Businesses 2026 | QuoteSweep",
+      "url": "https://www.quotesweep.com/blog/best-insurance-for-ecommerce-businesses",
+      "snippet": "Jul 7, 2026 · The best insurance for an ecommerce business depends on how you sell and what you protect. How Coverdash, Next, …"
+    },
+    {
+      "title": "Best E-Commerce Insurance – Forbes Advisor",
+      "url": "https://www.forbes.com/advisor/business-insurance/best-ecommerce-insurance/",
+      "snippet": "E-commerce insurance covers the risks associated with selling and distributing products online. Find out what coverage types an e …"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-minimax-h3-fl2v-turbo-4step-v0.1-768p-sla-comfyui-bf16.safetensors-lora",
+  "slug": "runninghubai-rh-minimax-h3-fl2v-turbo-4step-v0-1-768p-sla-comfyui-bf16-safetensors-lora",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-minimax-h3-fl2v-turbo-4step-v0.1-768p-sla-comfyui-bf16.safetensors-lora",
+  "created_at": "2026-09-21T02:07:37.000Z",
+  "updated_at": "2026-09-21T02:29:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1956192992,
+  "storage_human": "2.0 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "\"to raise\" - odmiana czasownika - angielski - koniugacja bab.la",
+      "url": "https://pl.bab.la/koniugacja/angielski/raise",
+      "snippet": "'to raise' - odmiana czasownika - angielski - koniugacja bab.la pomaga odmieniać czasowniki przez osoby oraz wszystkie czasy …"
+    },
+    {
+      "title": "to raise - odmiana czasownika regularnego - Szlifuj swój angielski",
+      "url": "https://www.ang.pl/slownictwo/odmiana/raise",
+      "snippet": "Koniugacja czasownika regularnego 'to raise' przez osoby w liczbie pojedynczej i mnogiej we wszystkich angielskich czasach oraz …"
+    },
+    {
+      "title": "Odmiana czasownika RAISE | Angielskie czasowniki | ELLA",
+      "url": "https://ellalanguage.com/pl/slownik_angielski_raise/",
+      "snippet": "Czasownik regularny \"to raise\" w języku angielskim | Odmiana | Czasy angielskie | Conditionals | Użycie czasownika \"to raise\" w …"
+    },
+    {
+      "title": "raise – Wikisłownik, wolny słownik wielojęzyczny",
+      "url": "https://pl.wiktionary.org/wiki/raise",
+      "snippet": "(1.2) If you agree, please raise your hands. → Jeżeli się zgadzacie, proszę podnieście swoje ręce. (1.4) I was raised in an orphanage. …"
+    },
+    {
+      "title": "Odmiana czasownika raise w języku angielskim we wszystkich czasach",
+      "url": "https://langroo.com/pl/koniugacja/angielski/raise",
+      "snippet": "Darmowy koniugator czasowników w języku angielskim. Znajdź odmianę czasownika raise w języku angielskim. Dobra znajomość …"
+    }
+  ]
+}

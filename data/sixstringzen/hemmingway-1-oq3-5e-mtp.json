@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "sixstringzen/Hemmingway-1-oQ3.5e-mtp",
+  "slug": "sixstringzen-hemmingway-1-oq3-5e-mtp",
+  "author": "sixstringzen",
+  "url": "https://huggingface.co/sixstringzen/Hemmingway-1-oQ3.5e-mtp",
+  "created_at": "2026-09-20T21:37:59.000Z",
+  "updated_at": "2026-09-21T01:41:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "omlx",
+    "oq",
+    "oqe",
+    "quantized",
+    "3.5-bit",
+    "mtp",
+    "apple-silicon",
+    "creative-writing",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Altworld/Hemmingway-1",
+    "base_model:quantized:Altworld/Hemmingway-1",
+    "license:apache-2.0",
+    "3-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 14163976227,
+  "storage_human": "14.2 GB",
+  "base_model": "Altworld/Hemmingway-1",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Flutter - Build apps for any screen",
+      "url": "https://flutter.dev/",
+      "snippet": "Flutter transforms the entire app development process. Build, test, and deploy beautiful mobile, web, desktop, and embedded apps …"
+    },
+    {
+      "title": "Install Flutter",
+      "url": "https://docs.flutter.dev/install",
+      "snippet": "May 5, 2026 · Install the Flutter SDK, set up any initial target platform, and get started learning and developing with Flutter!"
+    },
+    {
+      "title": "Flutter documentation",
+      "url": "https://docs.flutter.dev/",
+      "snippet": "Aug 28, 2026 · Get started with Flutter. Widgets, examples, updates, and API docs to help you write your first Flutter app."
+    },
+    {
+      "title": "Development - Flutter",
+      "url": "https://flutter.dev/development",
+      "snippet": "Flutter allows you to build apps for mobile, web, desktop, and embedded devices — all from a single codebase."
+    },
+    {
+      "title": "Icons class - material library - Dart API - Flutter",
+      "url": "https://api.flutter.dev/flutter/material/Icons-class.html",
+      "snippet": "Identifiers for the supported Material Icons. Use with the Icon class to show specific icons. Icons are identified by their name as listed …"
+    }
+  ]
+}

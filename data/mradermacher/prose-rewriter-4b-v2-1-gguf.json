@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "mradermacher/prose-rewriter-4b-v2.1-GGUF",
+  "slug": "mradermacher-prose-rewriter-4b-v2-1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/prose-rewriter-4b-v2.1-GGUF",
+  "created_at": "2026-09-20T20:24:11.000Z",
+  "updated_at": "2026-09-20T20:41:46.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "prose",
+    "rewriting",
+    "style-transfer",
+    "creative-writing",
+    "deslop",
+    "qwen3",
+    "en",
+    "base_model:chartreuse-verte/prose-rewriter-4b-v2.1",
+    "base_model:quantized:chartreuse-verte/prose-rewriter-4b-v2.1",
+    "license:agpl-3.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4411424256,
+  "parameters_human": "4.41B",
+  "storage_bytes": 39708225792,
+  "storage_human": "39.7 GB",
+  "base_model": "chartreuse-verte/prose-rewriter-4b-v2.1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Date Calculator: Add to or Subtract From a Date",
+      "url": "https://www.timeanddate.com/date/dateadd.html",
+      "snippet": "Find a specific business date and calculate the working days in a given period. The Date Calculator adds or subtracts days, weeks, …"
+    },
+    {
+      "title": "10 Days from Today - Date Calculator",
+      "url": "https://timedatecalc.com/10-days-from-today",
+      "snippet": "To get started, enter the start date to which you need to add/subtract days (today's date is initially displayed). Use the calendar for …"
+    },
+    {
+      "title": "10 Days From Today",
+      "url": "https://www.daysfromdate.com/10-days-from-today",
+      "snippet": "What date is 10 days from today? Use our free Days From Date calculator to add or subtract 10 days—plus weeks, months, or …"
+    },
+    {
+      "title": "Date Calculator",
+      "url": "https://www.calculator.net/date-calculator.html",
+      "snippet": "Jan 1, 2026 · This free date calculator computes the difference between two dates. It can also add to or subtract from a date. Both …"
+    },
+    {
+      "title": "What is 10 Days From Today? - Calculatio",
+      "url": "https://calculat.io/en/date/count/10--days--from--today",
+      "snippet": "2 days ago · With this tool, you can quickly determine the date by specifying the duration and direction of the counting. To use the …"
+    }
+  ]
+}

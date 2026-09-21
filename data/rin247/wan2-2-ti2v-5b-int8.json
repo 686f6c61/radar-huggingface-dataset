@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Rin247/Wan2.2-TI2V-5B-INT8",
+  "slug": "rin247-wan2-2-ti2v-5b-int8",
+  "author": "Rin247",
+  "url": "https://huggingface.co/Rin247/Wan2.2-TI2V-5B-INT8",
+  "created_at": "2026-09-20T23:51:03.000Z",
+  "updated_at": "2026-09-21T02:31:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-to-video",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "quantized",
+    "aquarion",
+    "weight-only",
+    "int8",
+    "video",
+    "text-to-video",
+    "image-to-video",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11726845745,
+  "storage_human": "11.7 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mensch oder Maschine? - auktionshilfe.info",
+      "url": "https://www.auktionshilfe.info/thread/35792-fakeshop-heizor-de-%E2%80%93-orion-energiehandel-gmbh-%E2%80%93-hammer-deich-62-d-20537-hamburg/",
+      "snippet": "Mensch oder Maschine? Bitte bestätige, daß du ein Mensch bist, indem du das folgende Captcha löst. auktionshilfe.info wird derzeit …"
+    },
+    {
+      "title": "Fakeshop holzlieferung.com – BuchenBrennholz - Marchfelder Straße …",
+      "url": "https://www.auktionshilfe.info/thread/35738-fakeshop-holzlieferung-com-%E2%80%93-buchenbrennholz-marchfelder-stra%C3%9Fe-27-2301-gro%C3%9F-enz/",
+      "snippet": "Rechtswidriges Impressum, die Daten der darin genannten Personen / Firmen wurden entweder frei erfunden oder gestohlen und …"
+    },
+    {
+      "title": "Meine Verkaufsanzeige wurde von Kleinanzeigen gelöscht, warum?",
+      "url": "https://www.auktionshilfe.info/thread/12526-meine-verkaufsanzeige-wurde-von-kleinanzeigen-gel%C3%B6scht-warum/",
+      "snippet": "Aug 15, 2015 · hallo Leute ich hatte von einem Verlag vor einiger Zeit das Liederheft \"Lieder zum Preise Jehovas\" 1952 erworben …"
+    },
+    {
+      "title": "Statistik - Auktionshilfe.info - eBay - PayPal - Kleinanzeigen",
+      "url": "https://www.auktionshilfe.info/statistics-wbb/34934-fakeshop-amor-trucks-com-%E2%80%93-kontakt-amor-trucks-com-%E2%80%93-die-daten-einer-real-existi/",
+      "snippet": "Das Forum zum Thema eBay, PayPal, Kleinanzeigen, Auktionen und Verbraucherschutz. Hilfe und Diskussionen zu Online …"
+    },
+    {
+      "title": "Fakeshop apollus24.com – info@apollus24.com – Die Daten einer real ...",
+      "url": "https://www.auktionshilfe.info/thread/35737-fakeshop-apollus24-com-%E2%80%93-info-apollus24-com-%E2%80%93-die-daten-einer-real-existierenden/",
+      "snippet": "Nov 29, 2025 · Rechtswidriges Impressum, die Daten der darin genannten Firma wurden gestohlen und werden nun für …"
+    }
+  ]
+}

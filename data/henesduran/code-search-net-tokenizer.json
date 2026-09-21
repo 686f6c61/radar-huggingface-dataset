@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "henesduran/code-search-net-tokenizer",
+  "slug": "henesduran-code-search-net-tokenizer",
+  "author": "henesduran",
+  "url": "https://huggingface.co/henesduran/code-search-net-tokenizer",
+  "created_at": "2026-09-20T22:01:12.000Z",
+  "updated_at": "2026-09-20T22:01:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "UhrForum",
+      "url": "https://uhrforum.de/",
+      "snippet": "Entdecke das größte Uhrenforum Deutschlands! Tauche ein in Diskussionen, Bewertungen und Trends rund um Armbanduhren, …"
+    },
+    {
+      "title": "Neue Uhr: Czapek Antarctique Royal Onyx",
+      "url": "https://uhrforum.de/threads/neue-uhr-czapek-antarctique-royal-onyx.554597/",
+      "snippet": "Feb 8, 2012 · Diskutiere Neue Uhr: Czapek Antarctique Royal Onyx im Uhren News Forum im Bereich Uhren-Forum; Gehäuse: Stahl …"
+    },
+    {
+      "title": "Accueil - Homepage - Univers Bourse",
+      "url": "https://www.univers-bourse.com/",
+      "snippet": "Accueil Nous vous remercions de l'intérêt que vous portez à nos articles sur le marché boursier et l'investissement actif ! Le contenu …"
+    },
+    {
+      "title": "Angebote - UHRFORUM",
+      "url": "https://uhrforum.de/forums/angebote.11/",
+      "snippet": "Sep 8, 2026 · Du möchtest eine Uhr tauschen oder zum Verkauf anbieten?"
+    },
+    {
+      "title": "Czapek Antarctique Rattrapante R.U.R. - UHRFORUM",
+      "url": "https://uhrforum.de/threads/czapek-antarctique-rattrapante-r-u-r.604767/",
+      "snippet": "Sep 2, 2025 · Today, meet our new Antarctique Rattrapante R.U.R., a 77-piece limited edition paying tribute to this vision – a playful …"
+    }
+  ]
+}

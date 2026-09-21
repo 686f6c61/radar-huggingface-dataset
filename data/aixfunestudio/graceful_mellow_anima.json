@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "AIxFuneStudio/Graceful_Mellow_Anima",
+  "slug": "aixfunestudio-graceful_mellow_anima",
+  "author": "AIxFuneStudio",
+  "url": "https://huggingface.co/AIxFuneStudio/Graceful_Mellow_Anima",
+  "created_at": "2026-09-20T22:25:32.000Z",
+  "updated_at": "2026-09-21T01:08:11.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4357887775,
+  "storage_human": "4.4 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lidl Filialen in Neuss - Supermarkt in der Nähe",
+      "url": "https://www.lidl.de/s/de-DE/filialen/neuss/?msockid=1ef54733f5a263ed126d50e9f4e362a1",
+      "snippet": "Finde jetzt eine Lidl Filiale in Neuss. auch in deiner Nähe und entdecke aktuelle Angebote und Prospekte."
+    },
+    {
+      "title": "Lidl Filiale Ruhrstr. 42 in Neuss",
+      "url": "https://www.lidl.de/s/de-DE/filialen/neuss/ruhrstr-42/?msockid=1ef54733f5a263ed126d50e9f4e362a1",
+      "snippet": "Deine Filiale in Ruhrstr. 42, 41469 Neuss Zeige die Öffnungszeiten und Sonderverkäufe in dieser Filiale. Die beste Qualität zum …"
+    },
+    {
+      "title": "Lidl Filialen in Neuss - Adressen & Öffnungszeiten - kaufDA.de",
+      "url": "https://www.kaufda.de/Filialen/Neuss/Lidl/v-r74",
+      "snippet": "Finde hier alle Filialen, Öffnungszeiten & Adressen von Lidl Neuss in deiner Nähe!"
+    },
+    {
+      "title": "Lidl Prospekt Neuss: Aktuelle Angebote der Woche - kaufDA.de",
+      "url": "https://www.kaufda.de/Neuss/Lidl/p-r74",
+      "snippet": "23 hours ago · Aktuelle Prospekte von Lidl in Neuss und Umgebung Ob Lebensmittel, Produkte des täglichen Bedarf, günstige …"
+    },
+    {
+      "title": "Lidl Filialen in Neuss | Öffnungszeiten und Adressen | Tiendeo",
+      "url": "https://www.tiendeo.de/Filialen/neuss/lidl",
+      "snippet": "Hier findest du alle Adressen, Telefonnummern und Öffnungszeiten von Lidl Filialen in Neuss. Informiere dich jetzt mit Tiendeo!"
+    }
+  ]
+}

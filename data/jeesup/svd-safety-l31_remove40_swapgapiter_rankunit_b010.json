@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Jeesup/svd-safety-l31_remove40_swapgapiter_rankunit_b010",
+  "slug": "jeesup-svd-safety-l31_remove40_swapgapiter_rankunit_b010",
+  "author": "Jeesup",
+  "url": "https://huggingface.co/Jeesup/svd-safety-l31_remove40_swapgapiter_rankunit_b010",
+  "created_at": "2026-09-20T21:07:03.000Z",
+  "updated_at": "2026-09-20T21:21:54.000Z",
+  "license": "llama3.1",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "llama3",
+    "svd",
+    "compression",
+    "safety",
+    "interpretability",
+    "conversational",
+    "base_model:meta-llama/Llama-3.1-8B-Instruct",
+    "base_model:finetune:meta-llama/Llama-3.1-8B-Instruct",
+    "license:llama3.1",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 16077766296,
+  "storage_human": "16.1 GB",
+  "base_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to See All Bing Related Searches on Any Device",
+      "url": "https://rottenwifi.com/how-to-see-all-bing-related-searches/",
+      "snippet": "Jul 1, 2026 · This guide walks through the practical ways to see Bing related searches on desktop, mobile, and Microsoft Edge. It also …"
+    },
+    {
+      "title": "Bing",
+      "url": "https://www.bing.com/version",
+      "snippet": "Bing ... Versions"
+    },
+    {
+      "title": "How to See All Bing Related Searches - cloudspress.com",
+      "url": "https://www.cloudspress.com/how-to-see-all-bing-related-searches/",
+      "snippet": "Aug 7, 2026 · Bing does not have a public “see everything” page for a keyword. Its related searches and autocomplete suggestions …"
+    },
+    {
+      "title": "How To See All Bing Related Searches - RottenWifi.com Blog",
+      "url": "https://blog.rottenwifi.com/how-to-see-all-bing-related-searches/",
+      "snippet": "Jul 2, 2026 · There is no single button that reveals every Bing related search. The closest practical method is to combine Bing’s …"
+    },
+    {
+      "title": "How to See All Bing Related Searches – Almaroof Inc",
+      "url": "https://almaroof.com/how-to-see-all-bing-related-searches-172/",
+      "snippet": "Jun 23, 2025 · Click on any related search term to perform a new Bing search based on that query. These suggestions appear at the …"
+    }
+  ]
+}

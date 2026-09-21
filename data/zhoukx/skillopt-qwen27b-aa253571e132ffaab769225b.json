@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "zhoukx/SkillOpt-Qwen27B-aa253571e132ffaab769225b",
+  "slug": "zhoukx-skillopt-qwen27b-aa253571e132ffaab769225b",
+  "author": "zhoukx",
+  "url": "https://huggingface.co/zhoukx/SkillOpt-Qwen27B-aa253571e132ffaab769225b",
+  "created_at": "2026-09-20T20:11:57.000Z",
+  "updated_at": "2026-09-20T20:12:03.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Amazon esőerdő: Túlélési útmutató és ökoturizmus",
+      "url": "https://utazokportalja.hu/2025/08/01/amazon-esoerdo-tulelesi-utmutato-es-okoturizmus/",
+      "snippet": "Aug 1, 2025 · Az Amazon esőerdejében való utazás életformáló élmény lehet, amely mély kapcsolatot teremt a természettel és …"
+    },
+    {
+      "title": "Amazonas esőerdő - GetYourGuide",
+      "url": "https://www.getyourguide.com/hu-hu/amazonas-esoerdo-l32324/?msockid=3352ba09bcea66b43ec7add3bd8b674a",
+      "snippet": "Töltsön 2, 3 vagy 4 napot az Amazonasban, és fedezze fel a buja esőerdőket, amelyek közel 40 000 növényfajt és páratlanul sokféle …"
+    },
+    {
+      "title": "Amazonas esőerdő - Travellina",
+      "url": "https://travellina.hu/amazonas-esoerdo-pantanal-mocsarvidek/amazonas_esoerdo3/",
+      "snippet": "Amazonas esőerdő - Travellina Kisgyörgy Éva vagyok. Végigjárom az országokat - most 175-nél tartok. Fotók és útleírások a világ …"
+    },
+    {
+      "title": "Az Amazonas esőerdő és a Pantanal mocsárvidék - Travellina",
+      "url": "https://travellina.hu/amazonas-esoerdo-pantanal-mocsarvidek/",
+      "snippet": "May 23, 2019 · Akkor esett le az állam, amikor Pantanalhoz értem, itt ugyanis igen combos árak vannak – magasabbak, mint az …"
+    },
+    {
+      "title": "A legjobb Amazonas esőerdő Városnéző körutak – 2026 (ellenőrzött ...",
+      "url": "https://www.getyourguide.com/hu-hu/-l32324/-tc1117/?msockid=3352ba09bcea66b43ec7add3bd8b674a",
+      "snippet": "Személyre szabott utazási inspirációt, friss utazási trükköket és exkluzív ajánlatokat kaphatsz egyenesen a postaládádba. Töltsön el …"
+    }
+  ]
+}

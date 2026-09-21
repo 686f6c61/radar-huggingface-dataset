@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "leapshared/Redox_200epi_subtask_pi052",
+  "slug": "leapshared-redox_200epi_subtask_pi052",
+  "author": "leapshared",
+  "url": "https://huggingface.co/leapshared/Redox_200epi_subtask_pi052",
+  "created_at": "2026-09-21T01:30:55.000Z",
+  "updated_at": "2026-09-21T07:02:22.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "robotics",
+  "library": "lerobot",
+  "languages": [],
+  "tags": [
+    "lerobot",
+    "safetensors",
+    "robotics",
+    "pi052",
+    "vision-language-action",
+    "base_model:lerobot/pi052_base",
+    "base_model:finetune:lerobot/pi052_base",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 44,
+  "trending_score": 0,
+  "parameters": 4143404816,
+  "parameters_human": "4.14B",
+  "storage_bytes": 66295059304,
+  "storage_human": "66.3 GB",
+  "base_model": "lerobot/pi052_base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "mellow NOIR Naturkosmetik online kaufen | rossmann.de",
+      "url": "https://www.rossmann.de/de/alle-marken/mellow-noir/c/online-dachmarke_29052012",
+      "snippet": "Im ROSSMANN Online-Shop findest du ein passendes mellow NOIR Produkt für jeden Nutzen und jeden Hauttyp! Gesichtscreme, …"
+    },
+    {
+      "title": "Mellow Noir kaufen: Erfahrungen, Preise & Tipps",
+      "url": "https://www.luxury-first.de/mellow-noir-kaufen-erfahrungen-preise-26415/",
+      "snippet": "Feb 4, 2026 · Mellow Noir könnt Ihr bei Rossmann, Amazon und OTTO sowie im offiziellen Onlineshop der Marke kaufen. Damit ist …"
+    },
+    {
+      "title": "Wo kann man mellow NOIR aus der Höhle der Löwen kaufen?",
+      "url": "https://www.kaufda.de/insights/wo-kann-man-mellow-noir-aus-der-hoehle-der-loewen-kaufen/",
+      "snippet": "May 3, 2021 · Kosmetik aus Kaffeeöl. Der neuste Beauty Trend in Form von nachhaltiger, veganer Kosmetik Produkte von Mellow …"
+    },
+    {
+      "title": "Nachhaltig, effektiv und clean. | Mellow NOIR",
+      "url": "https://mellownoirstore.shop/",
+      "snippet": "Hochwirksame, vegane Naturkosmetik mit aktivem Kaffeeöl für strahlende Haut und eine klimaneutrale Zukunft. Bei Mellow NOIR …"
+    },
+    {
+      "title": "Suchergebnis Auf Amazon.de Für: Mellow Noir",
+      "url": "https://www.amazon.de/mellow-noir/s?k=mellow+noir",
+      "snippet": "mellow NOIR Concentrated Booster & Facial Moisturiser Bundle | Gesichtsserum 30ml + Gesichtscreme 50ml | Sofort straffend & 24h …"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Diluner/gpt54-mini-sequential-qwen3-4b-rose-s1-babyai-20260920",
+  "slug": "diluner-gpt54-mini-sequential-qwen3-4b-rose-s1-babyai-20260920",
+  "author": "Diluner",
+  "url": "https://huggingface.co/Diluner/gpt54-mini-sequential-qwen3-4b-rose-s1-babyai-20260920",
+  "created_at": "2026-09-21T00:05:01.000Z",
+  "updated_at": "2026-09-21T00:05:28.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "agent-training",
+    "gpt-5.4-mini",
+    "rose",
+    "sequential",
+    "conversational",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:finetune:Qwen/Qwen3-4B",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4411424256,
+  "parameters_human": "4.41B",
+  "storage_bytes": 8834317158,
+  "storage_human": "8.8 GB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Web Development Bonn | Digital Agency | TechTurm",
+      "url": "https://www.techturm.de/en/locations/bonn",
+      "snippet": "Special packages for startups in Bonn: MVP development, pitch deck websites, and scalable architectures for rapid growth. We …"
+    },
+    {
+      "title": "Website Development Company in Bonn | SEO Websites — Codework",
+      "url": "https://www.codeworktechnology.com/de/north-rhine-westphalia/bonn/website-development",
+      "snippet": "Website development company in Bonn, North Rhine-Westphalia — fast, SEO-friendly business websites, e-commerce & landing …"
+    },
+    {
+      "title": "Web Design and Website Development in Bonn – IT Agency …",
+      "url": "https://webdelo.de/en/locations/nordrhein-westfalen/bonn-city",
+      "snippet": "Webdelo GmbH is a German IT agency and a B2B partner for web design, web development and digital sales platforms. We work …"
+    },
+    {
+      "title": "Top Web Development Companies in Germany - GoodFirms",
+      "url": "https://www.goodfirms.co/companies/web-development-agency/de",
+      "snippet": "1 day ago · Find a list of top web development companies in Germany. Select the top web developers in Germany based on verified …"
+    },
+    {
+      "title": "Top 10 Best Web Design & Development Companies in Bonn",
+      "url": "https://www.aamconsultants.org/top-web-design-development-companies-bonn",
+      "snippet": "Apr 24, 2026 · This guide presents the top 10 best web design and development companies in Bonn, led by AAMAX.CO, a globally …"
+    }
+  ]
+}

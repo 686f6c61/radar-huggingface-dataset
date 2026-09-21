@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "bisectgroup/NovoMolGen_qwen3_32m_smiles_atomwise_a576cca8",
+  "slug": "bisectgroup-novomolgen_qwen3_32m_smiles_atomwise_a576cca8",
+  "author": "bisectgroup",
+  "url": "https://huggingface.co/bisectgroup/NovoMolGen_qwen3_32m_smiles_atomwise_a576cca8",
+  "created_at": "2026-09-21T01:28:05.000Z",
+  "updated_at": "2026-09-21T01:28:55.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 31928064,
+  "parameters_human": "31.9M",
+  "storage_bytes": 1532779776,
+  "storage_human": "1.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "15 kihagyhatatlan bostoni nevezetesség (és látnivaló)",
+      "url": "https://www.getyourguide.com/hu-hu/explorer/boston-ttd260/landmarks-in-boston/?msockid=3946f13722a062e2197ae6ec23586317",
+      "snippet": "Még nem fejezted be a bostoni utazásod tervezését? Ezek az ikonikus nevezetességek kihagyhatatlan megállók bárki számára, aki …"
+    },
+    {
+      "title": "30 kihagyhatatlan látnivaló Bostonban: a legjobb látnivalók és ...",
+      "url": "https://guias-viajar.com/hu/Amerika/turizmus-az-Egyes%C3%BClt-%C3%81llamokban/Boston-kihagyhatatlan-l%C3%A1tnival%C3%B3/",
+      "snippet": "Jul 28, 2025 · Többször is Bostonban jártunk, így elmondjuk, mik a legjobb látnivalók és programok ebben a történelmi városban az …"
+    },
+    {
+      "title": "Boston látnivalók, térképek - Utazáskatalógus",
+      "url": "https://utazaskatalogus.hu/boston-latnivalok-terkepek/",
+      "snippet": "Jan 26, 2025 · Az ikonikus, 4 kilométer hosszú történelmi útvonal Boston szívében, amely az Egyesült Államok függetlenségi …"
+    },
+    {
+      "title": "Boston látnivalók, programok és túrák 2026 évben | Utazómagyar.hu",
+      "url": "https://utazomagyar.hu/latnivalok/boston",
+      "snippet": "Boston, az Amerikai Egyesült Államok egyik legrégebbi és legjelentősebb városa, ahol a történelem minden lépten-nyomon találkozik …"
+    },
+    {
+      "title": "Boston egy nap alatt: A Massachusetts történelmi fővárosának ...",
+      "url": "https://travelinsight.net/hu/united-states/one-day-in-boston-itinerary-top-things-to-do-in-boston-massachusetts",
+      "snippet": "Egy nap Bostonban – útiterv Rendben, vágjunk bele fejjel előre a bostoni kalandunkba! Bár semmi másra nem vágyom, mint hogy …"
+    }
+  ]
+}

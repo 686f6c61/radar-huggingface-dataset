@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "biali/UltraShape",
+  "slug": "biali-ultrashape",
+  "author": "biali",
+  "url": "https://huggingface.co/biali/UltraShape",
+  "created_at": "2026-09-20T21:15:56.000Z",
+  "updated_at": "2026-09-20T21:15:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-to-3d",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "image-to-3d",
+    "arxiv:2512.21185",
+    "base_model:tencent/Hunyuan3D-2.1",
+    "base_model:finetune:tencent/Hunyuan3D-2.1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 8021885034,
+  "storage_human": "8.0 GB",
+  "base_model": "tencent/Hunyuan3D-2.1",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "byrut.rog怎么进入 俄罗斯游戏网站byrut进入方法最新_百度知道",
+      "url": "https://zhidao.baidu.com/question/469050891439827045.html",
+      "snippet": "May 1, 2025 · byrut.rog怎么进入 俄罗斯游戏网站byrut进入方法最新"
+    },
+    {
+      "title": "粤A 粤B 粤C 粤D 粤E 粤F 粤G 粤H 粤J 粤K 粤L 粤M 粤N 粤P 粤Q 粤R",
+      "url": "https://zhidao.baidu.com/question/40780676.html",
+      "snippet": "Dec 2, 2007 · 粤B 深圳， 粤C 珠海， 粤D 汕头， 粤E 佛山， 粤F 韶关， 粤G 湛江， 粤H 肇庆， 粤J 江门， 粤K 茂名， 粤L 惠州， …"
+    },
+    {
+      "title": "7-Zip 官方网站怎么下载？ - 知乎",
+      "url": "https://www.zhihu.com/question/20498753",
+      "snippet": "7-Zip 是一个功能强大的工具，特别适合需要 高效压缩 和 解压缩 功能的用户。比如 IT 专业人员、软件开发者或普通用户希望节省磁 …"
+    },
+    {
+      "title": "有什么精简好用的电脑温度监控软件吗？ - 知乎",
+      "url": "https://www.zhihu.com/question/277598173",
+      "snippet": "我对电脑发热和噪音比较敏感，影响设备寿命不说，还特吵。 给你介绍一款我用了几年的小工具： ThrottleStop，C语言写的，只有1M …"
+    },
+    {
+      "title": "T-Nederland",
+      "url": "https://t-nederland.nl/webshop/index.html",
+      "snippet": "13 mei 2026 Locatie Breda (besloten) Daarna: 10 juni 2026 3e donderdag: 16 apr 2026 Magazijn Breda Daarna 21 mei 2026 3e …"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "GJATT/mms-pa_Sep20__difevalset",
+  "slug": "gjatt-mms-pa_sep20__difevalset",
+  "author": "GJATT",
+  "url": "https://huggingface.co/GJATT/mms-pa_Sep20__difevalset",
+  "created_at": "2026-09-21T01:45:31.000Z",
+  "updated_at": "2026-09-21T02:20:07.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "wav2vec2",
+    "automatic-speech-recognition",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 93,
+  "trending_score": 0,
+  "parameters": 964770271,
+  "parameters_human": "964.8M",
+  "storage_bytes": 88762037693,
+  "storage_human": "88.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "taille des ongles de pieds: quelle responsabilité pour l'IDE",
+      "url": "https://www.infirmiers.com/forum/taille-des-ongles-pieds-quelle-responsabilite-pour-ide-t135131-15.html",
+      "snippet": "Nov 19, 2010 · La coupe des ongles de pieds des patients ne peut être regardée comme une atteinte volontaire à l’intégrité corporelle …"
+    },
+    {
+      "title": "Ratio IDE/patient en EHPAD - Infirmiers.com",
+      "url": "https://www.infirmiers.com/forum/ratio-ide-patient-ehpad-t173725.html",
+      "snippet": "Apr 16, 2011 · Re: Ratio IDE/patient en EHPAD par lafolldingue » 01 déc. 2019 08:24 ETP - > Équivalent temps plein Ah je ne savais …"
+    },
+    {
+      "title": "Python有没有一个类似RStudio一样的IDE？",
+      "url": "https://www.zhihu.com/question/30722156",
+      "snippet": "python有没有一个类似RStudio一样的IDE， 1.能够傻瓜式地安装包及其依赖的包（非常重要的一点） 2.智能的编辑运行和调试环境 3. …"
+    },
+    {
+      "title": "Vim 比起 IDE 的优势是什么？ - 知乎",
+      "url": "https://www.zhihu.com/question/19870551",
+      "snippet": "这个问题是一年前的回答了，现在一年过去了，重新整理一下自己的想法，以免误导了大家。 vim有相对于其他编辑器的优势，同样， …"
+    },
+    {
+      "title": "premiere调整图层在哪？pr怎么用调整图层？ - 百度经验",
+      "url": "https://jingyan.baidu.com/article/fb48e8bee13cbb6e632e1452.html",
+      "snippet": "Mar 27, 2018 · premiere调整图层在哪？pr怎么用调整图层,在remierero里面有调整图层，可能一些初学r的朋友不太了解调整图层有什 …"
+    }
+  ]
+}

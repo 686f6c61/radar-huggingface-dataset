@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "chaeyidpt001/prot-asim-kr2-002",
+  "slug": "chaeyidpt001-prot-asim-kr2-002",
+  "author": "chaeyidpt001",
+  "url": "https://huggingface.co/chaeyidpt001/prot-asim-kr2-002",
+  "created_at": "2026-09-21T02:07:26.000Z",
+  "updated_at": "2026-09-21T03:39:58.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "diffusers-training",
+    "lora",
+    "krea2",
+    "krea2-diffusers",
+    "template:sd-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 9,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 970526569,
+  "storage_human": "971 MB",
+  "base_model": "krea/Krea-2-Turbo, krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "LinkedIn : s’identifier ou s’inscrire",
+      "url": "https://fr.linkedin.com/",
+      "snippet": "1 milliard de membres | Gérez votre image professionnelle. Constituez votre réseau professionnel et communiquez avec celui-ci. …"
+    },
+    {
+      "title": "Offres d’emploi LinkedIn : trouvez des emplois (France), des stages et ...",
+      "url": "https://fr.linkedin.com/jobs",
+      "snippet": "64 % des chercheurs d’emploi sont embauchés grâce à une recommandation. Utilisez LinkedIn Jobs pour augmenter vos chances …"
+    },
+    {
+      "title": "AI 技术新趋势· HuggingFace + GitHub Trending - ChaosAI · 众智",
+      "url": "https://chaosaiagent.com/industry-data/ai-trends",
+      "snippet": "2, deepseek-ai/DeepSeek-V4.1-Flash, deepseek-ai, image-text-to-text, 951, 482.3K ... chaeyidpt001/prot-asim-kr2-001, chaeyidpt001, 0, 2026-09-20. 29, SADXZAE12E4 ..."
+    },
+    {
+      "title": "如何用好领英（LinkedIn）？ - 知乎",
+      "url": "https://www.zhihu.com/question/55795521",
+      "snippet": "领英网址：www.linkedin.com领英App：‎LinkedIn领英-全球社交招聘平台LinkedIn（领英），全球最大职业社…"
+    },
+    {
+      "title": "联通最快网速的APN是什么？ - 知乎",
+      "url": "https://www.zhihu.com/question/279338227",
+      "snippet": "打开手机中的【设置】-【移动网络】-【接入点设置】-点击新建APN，联通的apn一般是 cuiot，① cuiot ②3gnet ③wonet ④ scuiot 四 …"
+    }
+  ]
+}

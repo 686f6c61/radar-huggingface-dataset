@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "id": "Abu-Dju/ct2fast-flan-ul2",
+  "slug": "abu-dju-ct2fast-flan-ul2",
+  "author": "Abu-Dju",
+  "url": "https://huggingface.co/Abu-Dju/ct2fast-flan-ul2",
+  "created_at": "2026-09-20T21:55:32.000Z",
+  "updated_at": "2026-09-20T21:55:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "ctranslate2",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 19476211892,
+  "storage_human": "19.5 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gmail",
+      "url": "https://mail.google.com/mail?hl=en",
+      "snippet": "We would like to show you a description here but the site won’t allow us."
+    }
+  ]
+}

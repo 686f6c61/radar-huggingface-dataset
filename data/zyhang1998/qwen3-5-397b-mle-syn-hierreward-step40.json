@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "zyhang1998/qwen3.5-397b-mle-syn-hierreward-step40",
+  "slug": "zyhang1998-qwen3-5-397b-mle-syn-hierreward-step40",
+  "author": "zyhang1998",
+  "url": "https://huggingface.co/zyhang1998/qwen3.5-397b-mle-syn-hierreward-step40",
+  "created_at": "2026-09-20T23:50:06.000Z",
+  "updated_at": "2026-09-21T00:55:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5_moe",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 403397928944,
+  "parameters_human": "403.40B",
+  "storage_bytes": 806809049334,
+  "storage_human": "806.8 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kleinanzeigen - Landmaschinen & Nutztiere kaufen & verkaufen",
+      "url": "https://www.landwirt.com/kleinanzeigen",
+      "snippet": "Kleinanzeigen auf landwirt.com Über 48.000 Privatangebote Traktoren, Landmaschinen, Nutztiere Kostenlos inserieren Jetzt stöbern!"
+    },
+    {
+      "title": "Gebrauchte Landmaschinen kaufen & verkaufen · Landwirt.com",
+      "url": "https://www.landwirt.com/maschinenmarkt",
+      "snippet": "Im Maschinenmarkt von Landwirt.com finden Sie gebrauchte Landmaschinen und Forsttechnik von geprüften Fachhändlern aus ganz …"
+    },
+    {
+      "title": "Gebraucht Stalltechnik kaufen & verkaufen in Österreich",
+      "url": "https://www.landwirt.com/kleinanzeigen/hof-stall-und-weidetechnik/stalltechnik/land-oesterreich",
+      "snippet": "Jul 4, 2026 · Entdecke zahlreiche Kleinanzeigen für gebraucht Stalltechnik kaufen & verkaufen. Finde Top-Angebote von Landwirten …"
+    },
+    {
+      "title": "Landwirtschaftliche Kleinanzeigen Österreich kaufen und verkaufen",
+      "url": "https://www.landwirt.com/kleinanzeigen/land-oesterreich",
+      "snippet": "Sep 9, 2023 · Entdecke zahlreiche Kleinanzeigen für gebraucht kaufen & verkaufen. Finde Top-Angebote von Landwirten & Händlern …"
+    },
+    {
+      "title": "Standard-Traktoren privat gebraucht kaufen - Kleinanzeigen",
+      "url": "https://www.landwirt.com/kleinanzeigen/traktoren/standard-traktoren",
+      "snippet": "Mar 21, 2024 · Gebrauchte Traktoren & Schlepper kaufen: Fendt, Steyr, John Deere, Deutz-Fahr, New Holland u.v.m. Kleinanzeigen …"
+    }
+  ]
+}

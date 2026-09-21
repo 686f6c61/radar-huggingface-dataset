@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "IAMIbrahim/luthor-8b-mlx-mixed-3-6",
+  "slug": "iamibrahim-luthor-8b-mlx-mixed-3-6",
+  "author": "IAMIbrahim",
+  "url": "https://huggingface.co/IAMIbrahim/luthor-8b-mlx-mixed-3-6",
+  "created_at": "2026-09-20T22:16:11.000Z",
+  "updated_at": "2026-09-21T00:16:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3",
+    "apple-silicon",
+    "agent",
+    "tool-use",
+    "function-calling",
+    "quantized",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:IAMIbrahim/luthor-8b",
+    "base_model:quantized:IAMIbrahim/luthor-8b",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 4196878344,
+  "storage_human": "4.2 GB",
+  "base_model": "IAMIbrahim/luthor-8b",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Tabla de Números Romanos | RomanNumerals.guide",
+      "url": "https://es.romannumerals.guide/chart",
+      "snippet": "Los números romanos son: I, V, X, L, C, D y M. Estos símbolos representan 1, 5, 10, 50, 100, 500 y 1000, respectivamente. Hoy …"
+    },
+    {
+      "title": "Números Romanos (com tabelas e conversor) - Toda Matéria",
+      "url": "https://www.todamateria.com.br/numeros-romanos/",
+      "snippet": "Os números romanos (ou algarismos romanos) são indicações numéricas utilizadas para indicar séculos, capítulos e páginas de …"
+    },
+    {
+      "title": "Números romanos: quais são, tabela, regras - Mundo Educação",
+      "url": "https://mundoeducacao.uol.com.br/matematica/sistema-numaracao-romano.htm",
+      "snippet": "Conheça o sistema de números romanos. Confira uma tabela com os números romanos de 1 a 1000 e as regras para utilizá-los."
+    },
+    {
+      "title": "Números Romanos [tabla y convertidor]",
+      "url": "https://spanishnumbers.net/es/numeros-romanos/",
+      "snippet": "¿Quieres aprender a leer o escribir cualquier número con números romanos? ¿O quizá solo quieres convertir algún número en …"
+    },
+    {
+      "title": "Numeración romana - Wikipedia, la enciclopedia libre",
+      "url": "https://es.wikipedia.org/wiki/Numeraci%C3%B3n_romana",
+      "snippet": "La numeración romana es un sistema de numeración que se desarrolló en la antigua Roma y se utilizó en todo el Imperio romano, …"
+    }
+  ]
+}

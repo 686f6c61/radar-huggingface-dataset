@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "JamesGuima/bert-end-of-turn-pt",
+  "slug": "jamesguima-bert-end-of-turn-pt",
+  "author": "JamesGuima",
+  "url": "https://huggingface.co/JamesGuima/bert-end-of-turn-pt",
+  "created_at": "2026-09-20T21:44:55.000Z",
+  "updated_at": "2026-09-20T22:40:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "bert",
+    "text-classification",
+    "end-of-turn",
+    "endpointing",
+    "conversational-ai",
+    "pt-br",
+    "llm-gatekeeper",
+    "pt",
+    "dataset:RichardSakaguchiMS/brazilian-customer-service-conversations",
+    "license:mit",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 108924674,
+  "parameters_human": "108.9M",
+  "storage_bytes": 435722200,
+  "storage_human": "436 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Piperine: A comprehensive review of methods of isolation, …",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2590098620300142",
+      "snippet": "Apr 2, 2020 · The current review article aims to explore the extraction of piperine from different species of pepper, its total synthesis, …"
+    },
+    {
+      "title": "Piperine: Health Benefits, Uses, and Side Effects",
+      "url": "https://healthinkwell.com/piperine/",
+      "snippet": "May 10, 2025 · What is Piperine, and what are its health benefits? – Piperine is an alkaloid found in black pepper, known for …"
+    },
+    {
+      "title": "(PDF) Piperine: A comprehensive review of methods of isolation ...",
+      "url": "https://www.researchgate.net/publication/340361174_Piperine_A_comprehensive_review_of_methods_of_isolation_purification_and_biological_properties",
+      "snippet": "Apr 1, 2020 · The current review article aims to explore the extraction of piperine from different species of pepper, its total synthesis, …"
+    },
+    {
+      "title": "Piperine Extract – 95% Pure Black Pepper Derivative | Greenleaf …",
+      "url": "https://www.greenleafextractions.com/products/nutraceutical-extracts/piperine",
+      "snippet": "Piperine, extracted from black pepper, is a bioactive compound known for its ability to enhance nutrient absorption in the body. It is …"
+    },
+    {
+      "title": "Piperine - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Piperine",
+      "snippet": "Piperine is an alkaloid extracted from the plant, Piper nigrum. [2] Responsible for the pungency of black pepper, it is used in food …"
+    }
+  ]
+}

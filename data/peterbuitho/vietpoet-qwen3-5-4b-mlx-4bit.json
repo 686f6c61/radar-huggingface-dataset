@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "peterbuitho/VietPoet-Qwen3.5-4B-MLX-4bit",
+  "slug": "peterbuitho-vietpoet-qwen3-5-4b-mlx-4bit",
+  "author": "peterbuitho",
+  "url": "https://huggingface.co/peterbuitho/VietPoet-Qwen3.5-4B-MLX-4bit",
+  "created_at": "2026-09-21T00:35:33.000Z",
+  "updated_at": "2026-09-21T00:36:10.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "vietnamese",
+    "poetry",
+    "luc-bat",
+    "text-generation",
+    "conversational",
+    "vi",
+    "dataset:phamson02/vietnamese-poetry-corpus",
+    "arxiv:2401.01078",
+    "base_model:peterbuitho/VietPoet-Qwen3.5-4B",
+    "base_model:quantized:peterbuitho/VietPoet-Qwen3.5-4B",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4205751296,
+  "parameters_human": "4.21B",
+  "storage_bytes": 2387234124,
+  "storage_human": "2.4 GB",
+  "base_model": "peterbuitho/VietPoet-Qwen3.5-4B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Outdoor / Water Proof Data Loggers | Tinytag by Gemini Data Loggers",
+      "url": "https://www.geminidataloggers.com/data-loggers/outdoor-waterproof-loggers",
+      "snippet": "Waterproof data loggers for outdoor and wet applications, recording temperature and relative humidity"
+    },
+    {
+      "title": "Waterproof Temperature Loggers - Instrument Choice",
+      "url": "https://www.instrumentchoice.com.au/collections/waterproof-temperature-loggers",
+      "snippet": "Sealed, submersible temperature loggers rated for wet environments, food processing and outdoor field deployment."
+    },
+    {
+      "title": "Waterproof Data Loggers - Hastings Data Loggers | Tinytag Australia",
+      "url": "https://www.hdl.com.au/data-loggers/waterproof/",
+      "snippet": "Explore our range of waterproof data loggers for reliable data tracking. Ensure your data stays safe in any environment with our …"
+    },
+    {
+      "title": "Temperature Loggers Australia | Temperature & Humidity Data Logger …",
+      "url": "https://www.instrumentchoice.com.au/collections/temperature-loggers",
+      "snippet": "We carry everything from entry-level temperature recorders for small fridges to high temperature data loggers built for harsh …"
+    },
+    {
+      "title": "Waterproof Temperature Data Logger | Thermocouple Based",
+      "url": "https://dataloggerstore.com.au/tc101a-waterproof-temperature-data-logger",
+      "snippet": "MadgeTech TC101A temperature probe data logger accepts a range of thermocouples and is a waterproof temperature data logger …"
+    }
+  ]
+}

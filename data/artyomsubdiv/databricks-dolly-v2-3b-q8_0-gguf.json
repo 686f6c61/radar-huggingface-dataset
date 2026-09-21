@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "ArtyomSubDiv/databricks-dolly-v2-3b-Q8_0-GGUF",
+  "slug": "artyomsubdiv-databricks-dolly-v2-3b-q8_0-gguf",
+  "author": "ArtyomSubDiv",
+  "url": "https://huggingface.co/ArtyomSubDiv/databricks-dolly-v2-3b-Q8_0-GGUF",
+  "created_at": "2026-09-20T20:28:34.000Z",
+  "updated_at": "2026-09-20T20:28:50.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "llama-cpp",
+    "gguf-my-repo",
+    "en",
+    "dataset:databricks/databricks-dolly-15k",
+    "base_model:verseAI/databricks-dolly-v2-3b",
+    "base_model:quantized:verseAI/databricks-dolly-v2-3b",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2775086080,
+  "parameters_human": "2.78B",
+  "storage_bytes": 2953462656,
+  "storage_human": "3.0 GB",
+  "base_model": "verseAI/databricks-dolly-v2-3b",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube - YouTube",
+      "url": "https://www.youtube.com/youtube/main%20page",
+      "snippet": "Welcome to the official YouTube channel – a home for the biggest moments, the smallest obsessions, and everything in between. …"
+    },
+    {
+      "title": "Home - YouTube",
+      "url": "https://www.youtube.com/@trending",
+      "snippet": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube."
+    },
+    {
+      "title": "YouTube Music",
+      "url": "https://music.youtube.com/",
+      "snippet": "With the YouTube Music app, enjoy over 100 million songs at your fingertips, plus albums, playlists, remixes, music videos, live …"
+    },
+    {
+      "title": "YouTube - Google Accounts",
+      "url": "https://accounts.google.com/InteractiveLogin?service=youtube",
+      "snippet": "Share your videos with friends, family, and the world."
+    },
+    {
+      "title": "YouTube - Apps on Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.google.android.youtube&hl=en-US",
+      "snippet": "Get the official YouTube app on Android phones and tablets. See what the world is watching -- from the hottest music videos to …"
+    }
+  ]
+}

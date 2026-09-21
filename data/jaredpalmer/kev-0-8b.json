@@ -1,0 +1,111 @@
+{
+  "schema": 1,
+  "id": "jaredpalmer/kev-0.8b",
+  "slug": "jaredpalmer-kev-0-8b",
+  "author": "jaredpalmer",
+  "url": "https://huggingface.co/jaredpalmer/kev-0.8b",
+  "created_at": "2026-09-20T23:42:38.000Z",
+  "updated_at": "2026-09-21T14:15:22.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "peft",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "decision-model",
+    "calibration",
+    "lora",
+    "multiple-choice",
+    "typesafe",
+    "qwen3.5",
+    "text-classification",
+    "en",
+    "dataset:legacy-datasets/banking77",
+    "dataset:google/boolq",
+    "dataset:fancyzhx/ag_news",
+    "dataset:nyu-mll/multi_nli",
+    "dataset:SetFit/sst5",
+    "dataset:Yelp/yelp_review_full",
+    "dataset:CogComp/trec",
+    "dataset:fancyzhx/dbpedia_14",
+    "dataset:SetFit/amazon_reviews_multi_en",
+    "dataset:stanfordnlp/imdb",
+    "base_model:Qwen/Qwen3.5-0.8B-Base",
+    "base_model:adapter:Qwen/Qwen3.5-0.8B-Base",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 112974986,
+  "storage_human": "113 MB",
+  "base_model": "Qwen/Qwen3.5-0.8B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "typed decision (choice / noul / score)",
+      "dataset": "decision-v7 development (1,204 records; ten trained public sources + programmatic policy data)",
+      "metric": null,
+      "value": 0.829
+    },
+    {
+      "task": "typed decision (choice / noul / score)",
+      "dataset": "decision-v7 development (1,204 records; ten trained public sources + programmatic policy data)",
+      "metric": "ECE, raw probabilities",
+      "value": 0.095
+    },
+    {
+      "task": "typed decision",
+      "dataset": "transfer-v4 development (764 records; six never-trained sources + held-out policy structures)",
+      "metric": null,
+      "value": 0.643
+    },
+    {
+      "task": "typed decision",
+      "dataset": "transfer-v4 development (764 records; six never-trained sources + held-out policy structures)",
+      "metric": null,
+      "value": 0.513
+    }
+  ],
+  "sources": [
+    {
+      "title": "2024 Major League Baseball season - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/2024_Major_League_Baseball_season",
+      "snippet": "On July 13, 2023, Major League Baseball released its 2024 schedule. There were 162 games scheduled for all teams. As has been …"
+    },
+    {
+      "title": "2024 Major League Baseball Team Statistics | Baseball-Reference.com",
+      "url": "https://www.baseball-reference.com/leagues/majors/2024.shtml",
+      "snippet": "2024 MLB Standings, Team and Player Statistics, Leaderboards, Award Winners, Trades, Minor Leagues, Fielding, Batting, Pitching, …"
+    },
+    {
+      "title": "2024 MLB Season History - Major League Baseball - ESPN",
+      "url": "https://www.espn.com/mlb/history/season/_/year/2024",
+      "snippet": "Check out the 2024 MLB Season History, featuring league standings, postseason results, no-hitters, and baseball's leaders in Home …"
+    },
+    {
+      "title": "2024 MLB Standings and Records: Regular Season",
+      "url": "https://www.mlb.com/standings/league/2024?msockid=16f4a0e380c3618011e0b73881c36040",
+      "snippet": "The official standings for Major League Baseball including division and league standings for regular season, wild card, and playoffs."
+    },
+    {
+      "title": "2024 Major League Baseball Regular Season Standings | Baseball ...",
+      "url": "https://www.baseball-reference.com/leagues/majors/2024-standings.shtml",
+      "snippet": "Track the 2024 MLB Regular Season Standings, Stats, Team performances and more on Baseball-Reference.com"
+    }
+  ]
+}

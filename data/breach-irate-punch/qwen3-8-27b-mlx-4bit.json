@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "breach-irate-punch/Qwen3.8-27B-mlx-4Bit",
+  "slug": "breach-irate-punch-qwen3-8-27b-mlx-4bit",
+  "author": "breach-irate-punch",
+  "url": "https://huggingface.co/breach-irate-punch/Qwen3.8-27B-mlx-4Bit",
+  "created_at": "2026-09-20T22:13:45.000Z",
+  "updated_at": "2026-09-20T22:14:02.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "mlx",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895993856,
+  "parameters_human": "26.90B",
+  "storage_bytes": 15153032850,
+  "storage_human": "15.2 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "The Best Online Music Streaming Services for 2026 - PCMag",
+      "url": "https://www.pcmag.com/picks/the-best-online-music-streaming-services",
+      "snippet": "Aug 11, 2026 · Spotify is a big name in the streaming music industry, but isn't the only service worth a listen. Broaden your musical …"
+    },
+    {
+      "title": "Best Music Streaming Service of 2026 - CNET",
+      "url": "https://www.cnet.com/tech/services-and-software/best-music-streaming-service/",
+      "snippet": "Jul 28, 2026 · Best Music Streaming Service of 2026 Competition between music streaming services is as fierce as ever, with an …"
+    },
+    {
+      "title": "11 Best Music Streaming Apps of 2026: Your Ultimate Guide to Sound",
+      "url": "https://soundhub.io/blog/best-music-streaming-apps/",
+      "snippet": "Apr 3, 2026 · Your playlists aren’t broken, your app is. We tested 11 music streaming services in 2026 across real-life moments. …"
+    },
+    {
+      "title": "Best Free Music Streaming Apps for iOS & Android in 2026 - Lifewire",
+      "url": "https://www.lifewire.com/top-free-music-apps-1357073",
+      "snippet": "Jan 4, 2026 · Find the top free music apps for iOS and Android, from YouTube Music to Spotify, offering streaming without a fee. …"
+    },
+    {
+      "title": "Best Music Streaming Services 2025: Amazon Music, Qobuz, Tidal, Apple",
+      "url": "https://www.rollingstone.com/product-recommendations/electronics/best-music-streaming-services-compared-1011378/",
+      "snippet": "Dec 12, 2024 · There are tons of popular music streaming services out there, but we've rounded up the six best options such as …"
+    }
+  ]
+}

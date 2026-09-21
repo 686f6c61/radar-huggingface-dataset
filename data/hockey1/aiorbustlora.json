@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "hockey1/aiorbustlora",
+  "slug": "hockey1-aiorbustlora",
+  "author": "hockey1",
+  "url": "https://huggingface.co/hockey1/aiorbustlora",
+  "created_at": "2026-09-20T22:50:38.000Z",
+  "updated_at": "2026-09-20T22:51:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Raw",
+    "base_model:adapter:krea/Krea-2-Raw",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 457117364,
+  "storage_human": "457 MB",
+  "base_model": "krea/Krea-2-Raw",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Was tun gegen Milben beim Meerschweinchen - Die besten Tipps",
+      "url": "https://allesuebermilben.de/milben-beim-meerschweinchen/",
+      "snippet": "Jan 13, 2021 · Wenn Sie sich ein neues Meerschweinchen zulegen, lassen Sie es zuerst auf Milben untersuchen, bevor Sie es zu …"
+    },
+    {
+      "title": "Meerschweinchen-Milben: Parasiten richtig behandeln",
+      "url": "https://einfachtierisch.de/tierisch/meerschweinchen-milben-parasiten-richtig-behandeln-109383",
+      "snippet": "Stellt ihr bei eurem Meerschweinchen einen Befall mit Milben fest, könnt ihr diesen in einem ersten Schritt gut selbst behandeln. …"
+    },
+    {
+      "title": "Milben beim Meerschweinchen – Alles was du wissen musst",
+      "url": "https://meerschweinchen-haltung.com/milben-meerschweinchen/",
+      "snippet": "Sep 26, 2022 · In diesem Ratgeber erfährst du, wie du Milben beim Meerschweinchen erkennst und behandelst sowie alle wichtigen …"
+    },
+    {
+      "title": "Milben bei Meerschweinchen erkennen und behandeln",
+      "url": "https://www.meerschweinchen-ratgeber.de/krankheiten/milben/",
+      "snippet": "Jul 3, 2026 · Milben bei Meerschweinchen: Grab- und Pelzmilben erkennen, tierärztlich diagnostizieren, sicher behandeln und die …"
+    },
+    {
+      "title": "Milben, Zecken, Haarlinge, Flöhe & Co. - meerschweinchenwiese.de",
+      "url": "https://meerschweinchenwiese.de/gesundheit/hautkrankheiten/milben-zecken-floehe-co",
+      "snippet": "Jul 17, 2026 · Natürliche Milben-Medikamente sind teilweise völlig unwirksam oder sogar unverträglich für Meerschweinchen. …"
+    }
+  ]
+}

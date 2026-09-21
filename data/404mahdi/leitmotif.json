@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "404mahdi/leitmotif",
+  "slug": "404mahdi-leitmotif",
+  "author": "404mahdi",
+  "url": "https://huggingface.co/404mahdi/leitmotif",
+  "created_at": "2026-09-20T21:42:59.000Z",
+  "updated_at": "2026-09-20T21:43:41.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "pytorch",
+    "music",
+    "music-information-retrieval",
+    "graph-neural-network",
+    "multimodal",
+    "contrastive-learning",
+    "audio-text-retrieval",
+    "en",
+    "dataset:google/MusicCaps",
+    "base_model:google-bert/bert-base-uncased",
+    "base_model:finetune:google-bert/bert-base-uncased",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 896242404,
+  "storage_human": "896 MB",
+  "base_model": "google-bert/bert-base-uncased",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ByCS | Login mit ByCS",
+      "url": "https://www.bycs.de/uebersicht-und-funktionen/login-mit-bycs/index.html",
+      "snippet": "Mit Ihren ByCS-Zugangsdaten können Sie bequem und sicher im Dashboard auf angeschlossene Dritt-Anwendungen zugreifen. …"
+    },
+    {
+      "title": "ByCS | Startseite",
+      "url": "https://www.bycs.de/index.html",
+      "snippet": "Die BayernCloud Schule bringt Digitales und Bildung zusammen – und bereichert das Schulleben in Bayern. Erfahren Sie mehr über …"
+    },
+    {
+      "title": "Lernplattform - ByCS",
+      "url": "https://www.bycs.de/uebersicht-und-funktionen/lernplattform/index.html",
+      "snippet": "In virtuellen Kursräumen bzw. Klassenzimmern stehen zahlreiche Aktivitäten zur Verfügung, die die Gestaltung individueller …"
+    },
+    {
+      "title": "ByCS | Drive",
+      "url": "https://www.bycs.de/uebersicht-und-funktionen/cloudspeicher/index.html",
+      "snippet": "Das Cloud-Speicher-Angebot Drive ermöglicht die einfache Speicherung und schnelle Synchronisation von Daten sowie die …"
+    },
+    {
+      "title": "ByCS | Dienst-E-Mail",
+      "url": "https://www.bycs.de/uebersicht-und-funktionen/e-mail/index.html",
+      "snippet": "Das dienstliche E-Mail System „Dienst-E-Mail“ (DEM) bietet hohe Standards bei Sicherheit und Datenschutz. Hierüber sind die …"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "gejifeng/Qwen3.8-Flash-Next-Uncensored-FP8-lm-head",
+  "slug": "gejifeng-qwen3-8-flash-next-uncensored-fp8-lm-head",
+  "author": "gejifeng",
+  "url": "https://huggingface.co/gejifeng/Qwen3.8-Flash-Next-Uncensored-FP8-lm-head",
+  "created_at": "2026-09-21T01:44:58.000Z",
+  "updated_at": "2026-09-21T02:48:26.000Z",
+  "license": "qwen-community-license-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "vllm",
+  "languages": [],
+  "tags": [
+    "vllm",
+    "quantized",
+    "fp8",
+    "lm-head",
+    "qwen3.8",
+    "base_model:lychee888/Qwen3.8-Flash-Next-Uncensored-NVFP4-FP8PLE",
+    "base_model:finetune:lychee888/Qwen3.8-Flash-Next-Uncensored-NVFP4-FP8PLE",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 636196032,
+  "storage_human": "636 MB",
+  "base_model": "lychee888/Qwen3.8-Flash-Next-Uncensored-NVFP4-FP8PLE, orcarouter/Qwen3.8-Flash-Next-Uncensored-NVFP4",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "怎么用键盘打出希腊字母啊？ - 知乎",
+      "url": "https://www.zhihu.com/question/396090207",
+      "snippet": "May 20, 2020 · 有一个不用改变设置或输入选项的简单方法。 当你的输入法在中文模式下时，直接按照希腊字母的英文拼写进行输 …"
+    },
+    {
+      "title": "ONET每日网站分享 - 知乎",
+      "url": "https://www.zhihu.com/column/c_1431740681349554176",
+      "snippet": "ONET一站，每天带给你一个实用网站"
+    },
+    {
+      "title": "在 Windows 下如何方便地打出「」和 『』 ？ - 知乎",
+      "url": "https://www.zhihu.com/question/19725435",
+      "snippet": "Jun 20, 2011 · 在 Windows 下如何方便地打出「」和 『』 ？"
+    },
+    {
+      "title": "打游戏时怎么骂老外比较解气？ - 知乎",
+      "url": "https://www.zhihu.com/question/269561421",
+      "snippet": "老外骂我们都是一两个词，其特点是具有歧视性，如果我们只是骂回去的话并没有杀伤力，反而他会觉得你气急败坏了他更高兴。所以 …"
+    },
+    {
+      "title": "姜维临终一计害三贤，是怎么回事？ - 知乎",
+      "url": "https://www.zhihu.com/question/22801535",
+      "snippet": "姜维的计策，从见到钟会时就开始酝酿了，因为他发现了一个秘密——钟会有异志！ 当时，钟会、邓艾两路大军进攻蜀国，在前期战 …"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "jaydenjames01/jayden",
+  "slug": "jaydenjames01-jayden",
+  "author": "jaydenjames01",
+  "url": "https://huggingface.co/jaydenjames01/jayden",
+  "created_at": "2026-09-21T01:15:46.000Z",
+  "updated_at": "2026-09-21T01:16:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 116297626,
+  "storage_human": "116 MB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Official Ryanair website | Book direct for the lowest fares | Ryanair.com",
+      "url": "https://www.ryanair.com/gb/en",
+      "snippet": "Book direct at the official Ryanair.com website to guarantee that you get the best prices on Ryanair's cheap flights."
+    },
+    {
+      "title": "Sito ufficiale Ryanair | Voli Low Cost | Voli Economici",
+      "url": "https://www.ryanair.com/it/it",
+      "snippet": "Prenota direttamente sul sito ufficiale Ryanair.com per ottenere i voli economici Ryanair alle migliori tariffe."
+    },
+    {
+      "title": "Careers – Ryanair Careers",
+      "url": "https://careers.ryanair.com/",
+      "snippet": "Ryanair is an equal opportunities employer and does not discriminate on the basis of race, sex, colour, religion, age, national origin, …"
+    },
+    {
+      "title": "Ryanair Help Centre",
+      "url": "https://help.ryanair.com/hc/en-gb",
+      "snippet": "Booking Changes Travel Agent Bookings Travelling With Children Refunds Assisted Travel Travel Extras Ryanair Prime Permitted …"
+    },
+    {
+      "title": "Check-in – Service Center - Ryanair",
+      "url": "https://help.ryanair.com/hc/de/sections/12488859020049-Check-In",
+      "snippet": "Ersetzen die Ryanair-Kiosks die Check-in-Schalter/das Personal? Nein, die Check-in-Schalter und Mitarbeiter bleiben, aber die …"
+    }
+  ]
+}

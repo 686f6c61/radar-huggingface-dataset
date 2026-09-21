@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "Ruandrew1234/Qwen2.5-14B-Roleplay-GGUF",
+  "slug": "ruandrew1234-qwen2-5-14b-roleplay-gguf",
+  "author": "Ruandrew1234",
+  "url": "https://huggingface.co/Ruandrew1234/Qwen2.5-14B-Roleplay-GGUF",
+  "created_at": "2026-09-20T20:39:10.000Z",
+  "updated_at": "2026-09-20T20:40:26.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen2",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14770033664,
+  "parameters_human": "14.77B",
+  "storage_bytes": 8988110176,
+  "storage_human": "9.0 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "20Bet App Review — Android & iOS Mobile Betting 2026",
+      "url": "https://www.20betcasino2026.com/app.html",
+      "snippet": "The 20Bet mobile experience is available to players across all major device types, though the method of access differs significantly …"
+    },
+    {
+      "title": "Best Online Bookmaker & Online Casino • 20Bet",
+      "url": "https://20bet.com/",
+      "snippet": "Welcome to 20Bet, your ultimate champion of online platforms for casino gaming and sports betting. We offer an incredible collection …"
+    },
+    {
+      "title": "20bet Review (Sportsbook & Casino) 2025 – Is It Safe and Legit?",
+      "url": "https://www.sportsboom.com/betting/reviews/20-bet/",
+      "snippet": "Mar 13, 2026 · Explore the 20Bet review 2025, which analyzes its sports betting offerings, casino options, promotions, safety …"
+    },
+    {
+      "title": "Sports Betting Online | Best Betting Odds - 20Bet",
+      "url": "https://20bet.com/prematch",
+      "snippet": "22 hours ago · Bet on sports with 20Bet - the best legal sports betting site. Enjoy competitive betting odds for football, NFL, NHL, …"
+    },
+    {
+      "title": "20Bet – Best Online Sports Betting Site | 100% Money Bonus",
+      "url": "https://20bet.org/",
+      "snippet": "20Bet is a bookmaker with thousands of sports events to bet on and a huge casino section with all popular casino games. As avid …"
+    }
+  ]
+}

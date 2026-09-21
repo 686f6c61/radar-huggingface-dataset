@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "trevor000/Qwen3.8-27B-Escha-W2-RTX4070",
+  "slug": "trevor000-qwen3-8-27b-escha-w2-rtx4070",
+  "author": "trevor000",
+  "url": "https://huggingface.co/trevor000/Qwen3.8-27B-Escha-W2-RTX4070",
+  "created_at": "2026-09-20T21:01:05.000Z",
+  "updated_at": "2026-09-20T21:02:13.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "qwen3",
+    "2-bit",
+    "escha",
+    "quantized",
+    "research",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6340437856,
+  "parameters_human": "6.34B",
+  "storage_bytes": 10165897544,
+  "storage_human": "10.2 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Use live chat during your live stream or Premiere - Computer - YouTube …",
+      "url": "https://support.google.com/youtube/answer/2524549?hl=en-MM",
+      "snippet": "Live chat lets you have real-time interactions with your viewers during live streams and Premieres. To view your live chat, click the …"
+    },
+    {
+      "title": "Use live chat during your live stream or Premiere",
+      "url": "https://support.google.com/youtube/answer/2524549?hl=en-WS",
+      "snippet": "Live chat lets you have real-time interactions with your viewers during live streams and Premieres. To view your live chat, click the …"
+    },
+    {
+      "title": "How to Enable Live Chat on YouTube Live Stream (EASY!)",
+      "url": "https://www.youtube.com/watch?v=ADtHLolQiiM",
+      "snippet": "Oct 7, 2023 · This video walks you through the step by step process of how to Enable Live Chat on YouTube Live Stream. Learn how …"
+    },
+    {
+      "title": "How to fix LIVE CHAT missing on YouTube - YouTube",
+      "url": "https://www.youtube.com/watch?v=5XdW5s-kEpY",
+      "snippet": "Oct 13, 2023 · LIVE CHAT missing on YouTube? Here’s how to fix this on mobile. YouTube recently changed the way live chat works …"
+    },
+    {
+      "title": "How to Enable LIVE Chat on YouTube Livestream (Simple)",
+      "url": "https://www.youtube.com/watch?v=Qs8VgoaIYHo",
+      "snippet": "Oct 5, 2020 · Learn How to Enable LIVE Chat on YouTube LivestreamIn this video I show you how you can enable live chat on a …"
+    }
+  ]
+}

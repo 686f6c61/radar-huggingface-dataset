@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "Compactbot/char-gpt-1.2m",
+  "slug": "compactbot-char-gpt-1-2m",
+  "author": "Compactbot",
+  "url": "https://huggingface.co/Compactbot/char-gpt-1.2m",
+  "created_at": "2026-09-20T21:42:36.000Z",
+  "updated_at": "2026-09-20T23:40:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "charlm",
+    "tiny",
+    "tiny-lm",
+    "small-language-model",
+    "sub-1m",
+    "char-level",
+    "from-scratch",
+    "nanoGPT",
+    "TinyStories",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1216000,
+  "parameters_human": "1.2M",
+  "storage_bytes": 22580361,
+  "storage_human": "23 MB",
+  "base_model": "",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MovieStarPlanet 2 - The Ultimate Social Dress-Up Game!",
+      "url": "https://moviestarplanet2.com/",
+      "snippet": "Make new friends while having fun and exploring the MovieStarPlanet 2 universe. Join interesting conversations and chat with friends …"
+    },
+    {
+      "title": "MovieStarPlanet | Znajomi, Zabawa, Moda, Sława",
+      "url": "https://moviestarplanet.pl/",
+      "snippet": "MovieStarPlanet: Znajomi, Zabawa, Moda, Sława. Zagraj w MovieStarPlanet 2. Pobierz MovieStarPlanet 1."
+    },
+    {
+      "title": "MovieStarPlanet | Friends, Fun, Fashion & Fame",
+      "url": "https://moviestarplanet.com/",
+      "snippet": "MovieStarPlanet: Friends, Fun, Fashion & Fame. Play MovieStarPlanet 2. Download MovieStarPlanet 1."
+    },
+    {
+      "title": "MovieStarPlanet · MovieStarPlanet",
+      "url": "https://corporate.moviestarplanet.com/",
+      "snippet": "Oct 28, 2021 · Welcome to the ultimate social dress-up game full of fashion and friends! MovieStarPlanet 2 At MovieStarPlanet 2 you …"
+    },
+    {
+      "title": "MovieStarPlanet 2 – Aplikacje w Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.moviestarplanet.msp2&hl=pl",
+      "snippet": "Zawieraj nowe przyjaźnie podczas zabawy i odkrywania świata gry MovieStarPlanet 2. Dołączaj do ciekawych rozmów i czatuj z …"
+    }
+  ]
+}

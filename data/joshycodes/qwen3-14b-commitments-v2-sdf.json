@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "joshycodes/qwen3-14b-commitments-v2-sdf",
+  "slug": "joshycodes-qwen3-14b-commitments-v2-sdf",
+  "author": "joshycodes",
+  "url": "https://huggingface.co/joshycodes/qwen3-14b-commitments-v2-sdf",
+  "created_at": "2026-09-20T22:51:26.000Z",
+  "updated_at": "2026-09-20T22:53:21.000Z",
+  "license": "research-only",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "synthetic-document-finetuning",
+    "self-authored-character",
+    "model-welfare",
+    "research",
+    "not-for-deployment",
+    "base_model:joshycodes/qwen3-14b-commitments-sdf",
+    "base_model:finetune:joshycodes/qwen3-14b-commitments-sdf",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14768307200,
+  "parameters_human": "14.77B",
+  "storage_bytes": 29548088922,
+  "storage_human": "29.5 GB",
+  "base_model": "joshycodes/qwen3-14b-commitments-sdf",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Микротоковый массажер для лица Customs ... - EVA",
+      "url": "https://eva.ua/pr650287/",
+      "snippet": "МИКРОТОКОВЫЙ МАССАЖЕР ДЛЯ ЛИЦА CUSTOMS SKINNY FACE ⬤ Акции 1+1=3 ⬤ ЛУЧШАЯ ЦЕНА КАЖДЫЙ ДЕНЬ на …"
+    },
+    {
+      "title": "ᐈ Массажеры микротоковые для лица ...",
+      "url": "https://eva.ua/q-masazhery-mikrostrumovi-dlia-oblychchia/",
+      "snippet": "Микротоковые массажеры для лица — это портативные устройства, которые воздействуют на кожу с помощью слабых …"
+    },
+    {
+      "title": "Купить массажеры для тела EVA с E ... - e-Katalog",
+      "url": "https://ek.ua/list/957/eva/",
+      "snippet": "Sep 9, 2026 · Найди и купи массажеры для тела EVA в Украине с E-Katalog ⏩ Цены 1000 магазинов ⏩ Обзоры и отзывы …"
+    },
+    {
+      "title": "ReadySkin / Массажер для лица микротоки ... - OZON",
+      "url": "https://www.ozon.ru/product/readyskin-massazher-dlya-litsa-mikrotoki-antivozrastnoy-eva-1187984430/",
+      "snippet": "Nov 4, 2023 · ReadySkin / Массажер для лица микротоки антивозрастной Eva – покупайте на OZON по выгодным ценам! …"
+    },
+    {
+      "title": "Ева Акції Вересень 2026 > магазин каталог ...",
+      "url": "https://www.oferlo.com.ua/eva/",
+      "snippet": "Найновіші акції у Еві та вся інформація про мегапопулярний магазин косметики, парфумів та побутової хімії. ☑️ Дізнайтеся …"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "schema": 1,
+  "id": "GusssElion/cinder-0.5b",
+  "slug": "gussselion-cinder-0-5b",
+  "author": "GusssElion",
+  "url": "https://huggingface.co/GusssElion/cinder-0.5b",
+  "created_at": "2026-09-20T20:22:10.000Z",
+  "updated_at": "2026-09-20T20:48:27.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "gguf",
+  "languages": [
+    "en",
+    "st",
+    "zu",
+    "xh",
+    "af",
+    "nso"
+  ],
+  "tags": [
+    "gguf",
+    "qwen2",
+    "imatrix",
+    "conversational",
+    "civic-ai",
+    "south-africa",
+    "en",
+    "st",
+    "zu",
+    "xh",
+    "af",
+    "nso",
+    "base_model:Qwen/Qwen2-0.5B",
+    "base_model:quantized:Qwen/Qwen2-0.5B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 494032768,
+  "parameters_human": "494.0M",
+  "storage_bytes": 397805248,
+  "storage_human": "398 MB",
+  "base_model": "Qwen/Qwen2-0.5B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cloudflare: Build for the agent era",
+      "url": "https://www.cloudflare.com/",
+      "snippet": "One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure."
+    },
+    {
+      "title": "どこででも接続、保護、構築 | Cloudflare",
+      "url": "https://www.cloudflare.com/ja-jp/",
+      "snippet": "接続、保護、構築を ど⁠こででも Cloudflareは、Webサイト、アプリ、AIエージェント、ネットワークの速度と安全性を向上させま …"
+    },
+    {
+      "title": "Cloudflare Dashboard | Manage Your Account",
+      "url": "https://dash.cloudflare.com/login?lang=en-us",
+      "snippet": "Log in to the Cloudflare dashboard. Make your websites, apps, and networks fast and secure. Build modern apps on our developer …"
+    },
+    {
+      "title": "Downloads · Cloudflare Docs",
+      "url": "https://developers.cloudflare.com/tunnel/downloads/",
+      "snippet": "Sep 11, 2026 · Download the cloudflared daemon for your operating system."
+    },
+    {
+      "title": "Cloudflare Developer Docs",
+      "url": "https://developers.cloudflare.com/",
+      "snippet": "Faster web performance Accelerate websites and applications with Cloudflare CDN caching, image optimization, smart routing, load …"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Aaypom/vjepa21-cosmos-predicted-4frames-adapter",
+  "slug": "aaypom-vjepa21-cosmos-predicted-4frames-adapter",
+  "author": "Aaypom",
+  "url": "https://huggingface.co/Aaypom/vjepa21-cosmos-predicted-4frames-adapter",
+  "created_at": "2026-09-20T20:59:13.000Z",
+  "updated_at": "2026-09-20T21:34:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "video-to-video",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "v-jepa-2.1",
+    "cosmos-tokenizer",
+    "world-models",
+    "video-to-video",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 29895200202,
+  "storage_human": "29.9 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Problème de taille sur youtube - Forum Jeux vidéo",
+      "url": "https://forums.commentcamarche.net/forum/affich-20268916-probleme-de-taille-sur-youtube",
+      "snippet": "Bonjour, je voulais savoir comment faire pour agrandir la taille de ma page Youtube. Avant, j'appuyais sur Ctrl et la souris en même …"
+    },
+    {
+      "title": "SUITE LOGIQUE ALPHABET EXCEL [Résolu] - Forum Excel",
+      "url": "https://forums.commentcamarche.net/forum/affich-37970346-suite-logique-alphabet-excel",
+      "snippet": "Dec 27, 2023 · Résumé de la discussion L’objectif est d’obtenir automatiquement une suite de libellés de colonnes Excel allant de A …"
+    },
+    {
+      "title": "Onimusha Way of the Sword : j'y ai joué et je suis déjà convaincu qu'il ...",
+      "url": "https://www.jeuxvideo.com/news/2097707/onimusha-way-of-the-sword-j-y-ai-joue-et-je-suis-deja-convaincu-qu-il-sera-a-la-hauteur-de-mes-attentes.htm",
+      "snippet": "Aug 6, 2026 · Onimusha est une série à ne pas rater si vous aimez le Japon, son folklore et les combats aux sabres avec des …"
+    },
+    {
+      "title": "Pokémon Pokopia Barpau et Milobellus : comment les capturer pour ...",
+      "url": "https://www.jeuxvideo.com/news/2098836/pokemon-pokopia-barpau-et-milobellus-comment-les-capturer-pour-completer-l-evenement-limite.htm",
+      "snippet": "Aug 14, 2026 · L'événement limité de Barpau et Milobellus dans le jeu Pokémon Pokopia est enfin disponible pour le plus grand …"
+    },
+    {
+      "title": "Mon correspondant ne reçoit pas mes SMS / textos. Que faire",
+      "url": "https://forums.commentcamarche.net/forum/affich-10131536-mon-correspondant-ne-recoit-pas-mes-sms-textos-que-faire",
+      "snippet": "Dec 6, 2012 · Bonjour, Cela fait pas mal de temps que j'ai ce problème, je vous explique. J'ai un destinataire qui ne reçoit pas mes …"
+    }
+  ]
+}

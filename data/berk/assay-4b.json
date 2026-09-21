@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "Berk/assay-4b",
+  "slug": "berk-assay-4b",
+  "author": "Berk",
+  "url": "https://huggingface.co/Berk/assay-4b",
+  "created_at": "2026-09-21T00:33:53.000Z",
+  "updated_at": "2026-09-21T21:49:51.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "assay",
+    "calibrated",
+    "decision-model",
+    "zero-shot-classification",
+    "text-classification",
+    "en",
+    "base_model:Qwen/Qwen3-4B-Base",
+    "base_model:finetune:Qwen/Qwen3-4B-Base",
+    "license:apache-2.0",
+    "text-embeddings-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 16365783346,
+  "storage_human": "16.4 GB",
+  "base_model": "Qwen/Qwen3-4B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Utiliser Power Query pour transformer des données",
+      "url": "https://learn.microsoft.com/fr-fr/power-query/power-query-ui",
+      "snippet": "Aug 20, 2026 · Découvrez comment vous connecter à des données, les transformer et parcourir l’interface utilisateur de l’éditeur …"
+    },
+    {
+      "title": "Query - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Query",
+      "snippet": "This disambiguation page lists articles associated with the title Query. If an internal link incorrectly led you here, you may wish to …"
+    },
+    {
+      "title": "IA juridique : Lexroom rachète la jeune pousse française Query Juriste",
+      "url": "https://www.lemondedudroit.fr/mag/378-intelligence-artificielle/105654-ia-juridique-lexroom-rachete-jeune-pousse-francaise-query-juriste.html",
+      "snippet": "Sep 8, 2026 · Lancée en 2024, Query Juriste a annoncé son rachat par la plateforme de recherche juridique Lexroom. Une opération …"
+    },
+    {
+      "title": "Home - Query",
+      "url": "https://www.query.ai/",
+      "snippet": "Query is a federated search platform for security data providing expanded data visibility without centralization."
+    },
+    {
+      "title": "Power Query : qu’est-ce que c’est ? Le guide ultime. - Cleex",
+      "url": "https://cleex.fr/power-query-comment-utiliser-excel/",
+      "snippet": "Jul 15, 2026 · Power Query nous permet de récupérer ces données et de les transformer afin que nous puissions les travailler et les …"
+    }
+  ]
+}

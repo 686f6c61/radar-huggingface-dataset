@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "id": "kvnxiao/swift-qwen3.8-27b-orcarouter-dflash2-nvfp4-ninfer",
+  "slug": "kvnxiao-swift-qwen3-8-27b-orcarouter-dflash2-nvfp4-ninfer",
+  "author": "kvnxiao",
+  "url": "https://huggingface.co/kvnxiao/swift-qwen3.8-27b-orcarouter-dflash2-nvfp4-ninfer",
+  "created_at": "2026-09-20T21:40:43.000Z",
+  "updated_at": "2026-09-21T21:23:40.000Z",
+  "license": "swift-open-license-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "ninfer",
+  "languages": [],
+  "tags": [
+    "ninfer",
+    "qwen3_8",
+    "nvfp4",
+    "fp8",
+    "mtp",
+    "dflash2",
+    "speculative-decoding",
+    "uncensored",
+    "abliterated",
+    "text-generation",
+    "vision-language",
+    "tool-calling",
+    "reasoning",
+    "quantized",
+    "orcarouter",
+    "image-text-to-text",
+    "base_model:ajgazin/Swift-Qwen3.8-27B-Uncensored-NVFP4",
+    "base_model:quantized:ajgazin/Swift-Qwen3.8-27B-Uncensored-NVFP4",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 2,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 22783240452,
+  "storage_human": "22.8 GB",
+  "base_model": "ajgazin/Swift-Qwen3.8-27B-Uncensored-NVFP4",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "TikTok - Make Your Day",
+      "url": "https://www.tiktok.com/",
+      "snippet": "TikTok - trends start here. On a device or on the web, viewers can watch and discover millions of personalized short videos. …"
+    },
+    {
+      "title": "Log in | TikTok",
+      "url": "https://www.tiktok.com/login",
+      "snippet": "Manage your account, check notifications, comment on videos, and more."
+    },
+    {
+      "title": "TT - YouTube",
+      "url": "https://www.youtube.com/@TTMusic24",
+      "snippet": "TT \"Hand in My Pocket\" (Visualizer) Alanis Morissette Cover 29K views • 5 months ago 3:33"
+    },
+    {
+      "title": "TWICE \"TT\" M/V - YouTube",
+      "url": "https://www.youtube.com/watch?v=ePpPVE-GGJw",
+      "snippet": "Oct 23, 2016 · TWICE (트와이스) \"TT (티티)\" M/V The 5th Mini Album \"What is Love?\" Spotify https://goo.gl/jVLYYYiTunes & Apple …"
+    },
+    {
+      "title": "Isle of Man TT Races 2027 | Official TT Website",
+      "url": "https://www.iomttraces.com/",
+      "snippet": "Welcome to the official home of the Isle of Man TT Races. Get your TT fix with all the latest news, race schedule, results, interviews, …"
+    }
+  ]
+}

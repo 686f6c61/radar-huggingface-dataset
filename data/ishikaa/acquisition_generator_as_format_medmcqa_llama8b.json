@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "ishikaa/acquisition_generator_AS_format_medmcqa_llama8b",
+  "slug": "ishikaa-acquisition_generator_as_format_medmcqa_llama8b",
+  "author": "ishikaa",
+  "url": "https://huggingface.co/ishikaa/acquisition_generator_AS_format_medmcqa_llama8b",
+  "created_at": "2026-09-20T23:26:01.000Z",
+  "updated_at": "2026-09-20T23:28:18.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "llama",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8030261248,
+  "parameters_human": "8.03B",
+  "storage_bytes": 32138288576,
+  "storage_human": "32.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jupiter (JUP) explained: the DEX aggregator that's simplifying ... - OKX",
+      "url": "https://www.okx.com/learn/what-is-jupiter",
+      "snippet": "Jan 31, 2024 · OKX - Learn about the Jupiter Aggregator, the JUP token, and how they're helping provide the best spreads for traders …"
+    },
+    {
+      "title": "The Next Generation of Cross-Chain Aggregators: Flashift vs Rango vs …",
+      "url": "https://flashift.app/blog/cross-chain-aggregators-2025/",
+      "snippet": "Dec 13, 2025 · Feature Matrix of The best aggregators in 2026 Why cross-chain aggregators matter The Fragmentation Problem: …"
+    },
+    {
+      "title": "Autonomous Agents on Blockchains: Standards, Execution Models, and ...",
+      "url": "https://arxiv.org/html/2601.04583v1",
+      "snippet": "Median oracles aggregate prices from multiple sources and report the median value, providing resistance to outliers and single …"
+    },
+    {
+      "title": "Router Protocol (New) price today, ROUTE to USD live",
+      "url": "https://coinmarketcap.com/currencies/router-protocol-2/",
+      "snippet": "Router Protocol (ROUTE) is a cross-chain liquidity aggregator governance token designed to facilitate seamless communication …"
+    },
+    {
+      "title": "9 Best Aggregators to Discover Bridging Deals for Fast & Secure Cross ...",
+      "url": "https://altwow.com/best-aggregators-to-discover-bridging-deals/",
+      "snippet": "Sep 24, 2025 · Discover the 10 best aggregators to find bridging deals. Compare rates, minimize fees, and execute fast, secure cross …"
+    }
+  ]
+}

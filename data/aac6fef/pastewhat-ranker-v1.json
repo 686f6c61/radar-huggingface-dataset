@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "aac6fef/PasteWhat-Ranker-v1",
+  "slug": "aac6fef-pastewhat-ranker-v1",
+  "author": "aac6fef",
+  "url": "https://huggingface.co/aac6fef/PasteWhat-Ranker-v1",
+  "created_at": "2026-09-20T23:57:25.000Z",
+  "updated_at": "2026-09-21T06:47:49.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "clipboard-ranking",
+    "cross-encoder",
+    "research-in-progress",
+    "base_model:convaiinnovations/laya-multilingual",
+    "base_model:finetune:convaiinnovations/laya-multilingual",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "convaiinnovations/laya-multilingual",
+  "formats": [
+    "mlx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Temp Gmail | Temp Mail | MailTicking",
+      "url": "https://www.mailticking.com/",
+      "snippet": "MAILTICKING is a temporary email service that allows users to receive emails anonymously without registration. It is designed for …"
+    },
+    {
+      "title": "Temporäre E-Mail | Temporäre Gmail | MailTicking",
+      "url": "https://www.mailticking.com/de",
+      "snippet": "MAILTICKING bietet sichere und praktische temporäre E-Mail-Dienste und temporäre Gmail, die zufällige E-Mail-Adressen ohne …"
+    },
+    {
+      "title": "EmailTick - Temp Gmail, Temporary Gmail Account, Temp Mail Gmail",
+      "url": "https://www.emailtick.com/",
+      "snippet": "FAQ Get a temporary email without registering an account. It can be a Gmail address or a domain mailbox. Use it to receive …"
+    },
+    {
+      "title": "Temporary Mail (Formerly MailTicking) | Temp Mail | Temporary Gmail",
+      "url": "https://www.temporary-mail.net/",
+      "snippet": "Generate temporary Gmail & disposable email addresses instantly with Temporary Mail (Formerly MailTicking). Protect your privacy …"
+    },
+    {
+      "title": "Temporäres Gmail, Temporäres Gmail-Konto, Temporäres ... - EmailTick",
+      "url": "https://emailtick.com/de",
+      "snippet": "Temporäre E-Mail ist ein Web-Tool, mit dem wir einmalige Adressen erzeugen. Dazu gehören temporäres Gmail und temporäre …"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-iclight-sd15-fcon.safetensors-unet",
+  "slug": "runninghubai-rh-iclight-sd15-fcon-safetensors-unet",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-iclight-sd15-fcon.safetensors-unet",
+  "created_at": "2026-09-21T02:12:53.000Z",
+  "updated_at": "2026-09-21T02:30:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-video",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "unet",
+    "text-to-video",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1719148312,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Alaszka, az óriások vadonja",
+      "url": "https://1000ut.hu/eszak-amerika/amerikai-egyesult-allamok/anchorage/alaszka-az-oriasok-vadonja-/c-4316",
+      "snippet": "Jul 20, 2026 · Egy kis aranyláz-hangulat: látogatás Anchorage-ban néhány arany-, prém- és rozmáragyar boltban, a legfrissebben …"
+    },
+    {
+      "title": "Anchorage látnivalók, programok és túrák 2026 évben | Utazómagyar.hu",
+      "url": "https://utazomagyar.hu/latnivalok/anchorage",
+      "snippet": "Anchorage (Amerikai Egyesült Államok) legszebb látnivalóit, programjait és túráit gyűjtöttük össze. Tervezze meg utazását a legjobb …"
+    },
+    {
+      "title": "Alaszka, az óriások vadonja - 13 napos körút Alaszkában",
+      "url": "https://utazom.com/utazas/alaszka-az-oriasok-vadonja",
+      "snippet": "Délutáni látogatás az egyedien gazdag gyűjteményű Anchorage Múzeumban: Betekintés Alaszka indián- és eszkimó törzseinek …"
+    },
+    {
+      "title": "Anchorage: A legjobb helyek a látogatásra és a legfontosabb látnivalók",
+      "url": "https://www.klook.com/hu/destination/c365433-anchorage/?msockid=30ef55e8ed58627a3ece4233ec4363c1",
+      "snippet": "Fedezd fel a legjobb helyeket, látnivalókat, tevékenységeket és közlekedési lehetőségeket a gondtalan tartózkodás érdekében."
+    },
+    {
+      "title": "5 nagyszerű dolog, amit tehetsz Anchorage Alaskában | Let's Roam",
+      "url": "https://www.letsroam.com/hu/things-to-do/anchorage-ak",
+      "snippet": "Fedezd fel, mit lehet csinálni Anchorage-ban, miközben felfedezed vibráló szabadtéri tereit és egyedi művészeti kiállításait. Az …"
+    }
+  ]
+}

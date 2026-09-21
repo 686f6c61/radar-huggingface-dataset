@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "CharlieLLL/Qwen3.5-9B-coding-solo350-local63-ckpt335-appendonly-w64-20260920",
+  "slug": "charlielll-qwen3-5-9b-coding-solo350-local63-ckpt335-appendonly-w64-20260920",
+  "author": "CharlieLLL",
+  "url": "https://huggingface.co/CharlieLLL/Qwen3.5-9B-coding-solo350-local63-ckpt335-appendonly-w64-20260920",
+  "created_at": "2026-09-20T23:45:31.000Z",
+  "updated_at": "2026-09-20T23:59:35.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "coding",
+    "swe-bench",
+    "reinforcement-learning",
+    "base_model:Shangy/Qwen3.5-9B-OPD-Coding",
+    "base_model:finetune:Shangy/Qwen3.5-9B-OPD-Coding",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 17920471518,
+  "storage_human": "17.9 GB",
+  "base_model": "Shangy/Qwen3.5-9B-OPD-Coding",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Самопроизвольно открывается браузер с ...",
+      "url": "https://otvet.mail.ru/question/231199107",
+      "snippet": "Самопроизвольно открывается браузер с большим количеством окон \"получение справки windows \" как исправить? Ничего …"
+    },
+    {
+      "title": "Как убрать эту проблему? - v_tanke_3 | Ответы ...",
+      "url": "https://otvet.mail.ru/question/208289289",
+      "snippet": "Как убрать эту проблему? Запускаю Windows 10 и при включении включается браузер со вкладкой ( Получение справки в …"
+    },
+    {
+      "title": "Какие средства получения справочной ...",
+      "url": "https://otvet.mail.ru/question/94496705",
+      "snippet": "Пользователь parvona_abduloeva написал пост «какие средства получения справочной информации существуют в …"
+    },
+    {
+      "title": "Самопроизвольно открывается браузер с ...",
+      "url": "https://otvet.mail.ru/question/219741671",
+      "snippet": "Пользователь user_278069453 написал пост «Самопроизвольно открывается браузер с большим количеством окон …"
+    },
+    {
+      "title": "Получение справки в военкомате - nikolai ...",
+      "url": "https://otvet.mail.ru/question/221252099",
+      "snippet": "Получение справки в военкомате Здравствуйте, получил отсрочку по судимости. После ее погашения явился в военкомат, …"
+    }
+  ]
+}

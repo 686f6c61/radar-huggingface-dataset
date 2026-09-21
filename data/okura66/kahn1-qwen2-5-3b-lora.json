@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "Okura66/Kahn1-Qwen2.5-3B-LoRA",
+  "slug": "okura66-kahn1-qwen2-5-3b-lora",
+  "author": "Okura66",
+  "url": "https://huggingface.co/Okura66/Kahn1-Qwen2.5-3B-LoRA",
+  "created_at": "2026-09-20T23:01:31.000Z",
+  "updated_at": "2026-09-20T23:01:57.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:Qwen/Qwen2.5-3B-Instruct",
+    "lora",
+    "transformers",
+    "fast-inference",
+    "structured-outputs",
+    "decision-engine",
+    "ordinal-classification",
+    "calibrated-probabilities",
+    "classification",
+    "jev",
+    "text-classification",
+    "base_model:Qwen/Qwen2.5-3B-Instruct",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 250958164,
+  "storage_human": "251 MB",
+  "base_model": "Qwen/Qwen2.5-3B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Punjagutta - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Punjagutta",
+      "snippet": "Panjagutta is a commercial and residential area in western Hyderabad, India. [1][2] The area contains IT hubs, shopping malls and …"
+    },
+    {
+      "title": "Punjagutta , Hyderabad: Map, Property Rates, Projects ... - MagicBricks",
+      "url": "https://www.magicbricks.com/Punjagutta-in-Hyderabad-Overview",
+      "snippet": "Aug 21, 2017 · Know all about Punjagutta, Hyderabad: Check Punjagutta map, photos, reviews, residential places, schools, & …"
+    },
+    {
+      "title": "The 10 best hotels near Panjagutta in Hyderabad, India",
+      "url": "https://www.booking.com/landmark/in/panjagutta.html?msockid=1e0194ff912a67083767832590966612",
+      "snippet": "Sep 1, 2026 · Find hotels near Panjagutta, India online. Good availability and great rates. Book online, pay at the hotel. No …"
+    },
+    {
+      "title": "Hotels in Punjagutta, Hyderabad Book with 𝗙𝗥𝗘𝗘 𝗖𝗮𝗻𝗰𝗲𝗹𝗹𝗮𝘁𝗶𝗼𝗻",
+      "url": "https://www.makemytrip.com/hotels/hotels-in-punjagutta-hyderabad.html?msockid=1e0194ff912a67083767832590966612",
+      "snippet": "Book Hotels in Punjagutta, Hyderabad. We are offering below available hotels in Punjagutta and places to stay in Punjagutta. Get …"
+    },
+    {
+      "title": "Panjagutta, Hyderabad - Map, Property Rates, Projects, Reviews, …",
+      "url": "https://www.99acres.com/panjagutta-hyderabad-overview-piffid",
+      "snippet": "Jun 1, 2026 · Know about Panjagutta Hyderabad property market, view map, reviews, property price trends, locality photos & videos, …"
+    }
+  ]
+}

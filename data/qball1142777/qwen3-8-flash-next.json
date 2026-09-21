@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "Qball1142777/Qwen3.8-Flash-Next",
+  "slug": "qball1142777-qwen3-8-flash-next",
+  "author": "Qball1142777",
+  "url": "https://huggingface.co/Qball1142777/Qwen3.8-Flash-Next",
+  "created_at": "2026-09-21T00:29:16.000Z",
+  "updated_at": "2026-09-21T00:29:16.000Z",
+  "license": "qwen-community-1.0",
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen4_exp",
+    "image-text-to-text",
+    "conversational",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 179999981459,
+  "parameters_human": "180.00B",
+  "storage_bytes": 360013002208,
+  "storage_human": "360.0 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Немецко-русский онлайн-переводчик и словарь",
+      "url": "https://translate.yandex.ru/translator/%D0%9D%D0%B5%D0%BC%D0%B5%D1%86%D0%BA%D0%B8%D0%B9-%D0%A0%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9",
+      "snippet": "Переводчик с немецкого на русский онлайн. Перевод слов, фраз и предложений с высокой точностью. Перевод по фото, …"
+    },
+    {
+      "title": "DeepL Переводчик с немецкий на русский",
+      "url": "https://www.deepl.com/ru/translator/l/de/ru",
+      "snippet": "Мгновенный перевод текстов и файлов в паре немецкий-русский с помощью самого точного переводчика в мире. Каждый …"
+    },
+    {
+      "title": "Google Переводчик",
+      "url": "https://translate.google.com/?hl=ru&sl=de&tl=ru&op=translate",
+      "snippet": "Бесплатный сервис Google позволяет мгновенно переводить слова, фразы и веб-страницы. Поддерживается более 100 языков."
+    },
+    {
+      "title": "Онлайн-переводчик с немецкого на русский",
+      "url": "https://www.translate.ru/%D0%BF%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%D0%B4/%D0%BD%D0%B5%D0%BC%D0%B5%D1%86%D0%BA%D0%B8%D0%B9-%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9",
+      "snippet": "Переводите целые тексты и отдельные слова с немецкого на русский. PROMT.One предлагает подходящие варианты …"
+    },
+    {
+      "title": "DeepL Переводчик | Самый точный переводчик в мире",
+      "url": "https://www.deepl.com/ru/translator",
+      "snippet": "Переводите тексты и целые документы мгновенно. Точный перевод для индивидуальных пользователей и команд. Каждый …"
+    }
+  ]
+}

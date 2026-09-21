@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "timlikesai/Qwen3.8-27B-MXFP4",
+  "slug": "timlikesai-qwen3-8-27b-mxfp4",
+  "author": "timlikesai",
+  "url": "https://huggingface.co/timlikesai/Qwen3.8-27B-MXFP4",
+  "created_at": "2026-09-20T22:12:24.000Z",
+  "updated_at": "2026-09-20T22:28:37.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 15673173472,
+  "storage_human": "15.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "10 Best Sydney Hotels, Australia (From US$75) - Booking.com",
+      "url": "https://www.booking.com/city/au/sydney.html?msockid=018f753fe3e6682b3ed162e5e290698d",
+      "snippet": "Great savings on hotels in Sydney, Australia online. Good availability and great rates. Read hotel reviews and choose the best hotel …"
+    },
+    {
+      "title": "Sydney Hotels | Find and compare great deals on trivago",
+      "url": "https://www.trivago.com.au/en-AU/odr/hotels-sydney-australia?search=200-25057&msockid=018f753fe3e6682b3ed162e5e290698d",
+      "snippet": "Searching for accommodation in Sydney, Australia? Compare prices to find a great deal from 11735 hotels with www.trivago.com.au"
+    },
+    {
+      "title": "THE 10 BEST Sydney Accommodation (from AU$72)",
+      "url": "https://www.tripadvisor.com.au/Hotels-g255060-Sydney_New_South_Wales-Hotels.html",
+      "snippet": "The Royal Botanic Garden Sydney is a major botanical Garden located in the heart of Sydney, New South Wales, Australia. Opened …"
+    },
+    {
+      "title": "Top Sydney Hotels 2026 from AU$98 - Wotif",
+      "url": "https://www.wotif.com/Sydney-Hotels.d178312.Travel-Guide-Hotels?msockid=018f753fe3e6682b3ed162e5e290698d",
+      "snippet": "Find exclusive offers for the best Sydney accommodation! Relax with our Price Promise & FREE cancellation on select hotels in …"
+    },
+    {
+      "title": "Top 15 Sydney Hotels from $125 - Hotels.com",
+      "url": "https://www.hotels.com/de26633/hotels-sydney-new-south-wales/?msockid=018f753fe3e6682b3ed162e5e290698d",
+      "snippet": "23 hours ago · Choose popular hotels in Sydney, Australia for your 2026 trip with quick booking confirmation and free cancellation …"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "eliasab16/molmoact2_localonly_sep21_1ep",
+  "slug": "eliasab16-molmoact2_localonly_sep21_1ep",
+  "author": "eliasab16",
+  "url": "https://huggingface.co/eliasab16/molmoact2_localonly_sep21_1ep",
+  "created_at": "2026-09-21T02:18:38.000Z",
+  "updated_at": "2026-09-21T03:30:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 35,
+  "trending_score": 0,
+  "parameters": 5442196272,
+  "parameters_human": "5.44B",
+  "storage_bytes": 40588420612,
+  "storage_human": "40.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Advanced IP Scanner - Download Free Network Scanner",
+      "url": "https://www.advanced-ip-scanner.com/",
+      "snippet": "Advanced IP Scanner shows all network devices, gives you access to shared folders, and can even remotely switch computers off. …"
+    },
+    {
+      "title": "Advanced IP Scanner – Téléchargez un analyseur de réseau gratuit",
+      "url": "https://www.advanced-ip-scanner.com/fr/",
+      "snippet": "Advanced IP Scanner affiche tous les périphériques réseau, vous donne accès aux dossiers partagés et permet même d’éteindre des …"
+    },
+    {
+      "title": "Advanced IP Scanner ‒ Den kostenlosen Netzwerk-Scanner …",
+      "url": "https://www.advanced-ip-scanner.com/de/",
+      "snippet": "Advanced IP Scanner zeigt alle Geräte im Netzwerk, gewährt Zugriff auf freigegebene Ordner und ermöglicht das Herunterfahren des …"
+    },
+    {
+      "title": "Advanced IP Scanner ‒ Scarica scanner di rete gratuito",
+      "url": "https://www.advanced-ip-scanner.com/it/",
+      "snippet": "Advanced IP Scanner visualizza tutti i dispositivi di rete, consente l’accesso alle cartelle condivise ed è persino in grado di spegnere i …"
+    },
+    {
+      "title": "Advanced IP Scanner – Explorador de redes de descarga gratuita",
+      "url": "https://www.advanced-ip-scanner.com/es/download/",
+      "snippet": "Advanced IP Scanner muestra todos los dispositivos en red, le permite acceder a las carpetas compartidas e incluso desactivar los …"
+    }
+  ]
+}

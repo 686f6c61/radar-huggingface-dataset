@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "timlikesai/Qwen3.6-35B-A3B-MXFP4",
+  "slug": "timlikesai-qwen3-6-35b-a3b-mxfp4",
+  "author": "timlikesai",
+  "url": "https://huggingface.co/timlikesai/Qwen3.6-35B-A3B-MXFP4",
+  "created_at": "2026-09-20T22:28:39.000Z",
+  "updated_at": "2026-09-20T22:47:47.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 19234059168,
+  "storage_human": "19.2 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube TV Help",
+      "url": "https://support.google.com/youtubetv/?hl=en",
+      "snippet": "Official YouTube TV Help Center where you can find tips and tutorials on using YouTube TV and other answers to frequently asked …"
+    },
+    {
+      "title": "Manage your Brand Account - Computer - YouTube Help",
+      "url": "https://support.google.com/youtube/answer/7001996?hl=en&co=GENIE.Platform%3DDesktop",
+      "snippet": "You can set up and manage an account specifically for your brand. You can use certain services with it, like YouTube, to create an …"
+    },
+    {
+      "title": "Julia [Résolu] - Forum Vos droits sur internet - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-18571532-julia",
+      "snippet": "Jul 22, 2010 · bjr moi aussi je viens depuis une semaine d etre contactais par mail par une certaine julia de kirov , une m envois un …"
+    },
+    {
+      "title": "Windows 11 - Windows - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/windows-11-376",
+      "snippet": "Oct 30, 2025 · Bonjour, J'ai une cliente qui est agacée à cause de son fond éran devenu noir. Elle a un portable HP windows 11. …"
+    },
+    {
+      "title": "Impressions & click-through-rate FAQs - YouTube Help",
+      "url": "https://support.google.com/youtube/answer/7628154?hl=en-419",
+      "snippet": "While creators compare against other videos within their channel, YouTube’s systems rank each video against all the other videos a …"
+    }
+  ]
+}

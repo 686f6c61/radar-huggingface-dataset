@@ -1,0 +1,76 @@
+{
+  "schema": 1,
+  "id": "ArtyomSubDiv/dolly-v2-7b-sharded-Q8_0-GGUF",
+  "slug": "artyomsubdiv-dolly-v2-7b-sharded-q8_0-gguf",
+  "author": "ArtyomSubDiv",
+  "url": "https://huggingface.co/ArtyomSubDiv/dolly-v2-7b-sharded-Q8_0-GGUF",
+  "created_at": "2026-09-20T20:27:05.000Z",
+  "updated_at": "2026-09-20T20:27:36.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "dolly",
+    "dolly-v2",
+    "instruct",
+    "sharded",
+    "llama-cpp",
+    "gguf-my-repo",
+    "text-generation",
+    "en",
+    "dataset:databricks/databricks-dolly-15k",
+    "base_model:ethzanalytics/dolly-v2-7b-sharded",
+    "base_model:quantized:ethzanalytics/dolly-v2-7b-sharded",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6856056832,
+  "parameters_human": "6.86B",
+  "storage_bytes": 7291380384,
+  "storage_human": "7.3 GB",
+  "base_model": "ethzanalytics/dolly-v2-7b-sharded",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=3f408a79521663690ec39da3532e62fc",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Get access to free online versions of Outlook, Word, Excel, and PowerPoint."
+    },
+    {
+      "title": "Sign in to your account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    },
+    {
+      "title": "Microsoft 365 for Individuals: Subscription for Productivity Apps",
+      "url": "https://www.microsoft.com/en-us/microsoft-365?msockid=3f408a79521663690ec39da3532e62fc",
+      "snippet": "Microsoft 365 (formerly Office 365) subscriptions offer a suite of productivity tools and cloud services with world-class security and …"
+    },
+    {
+      "title": "Microsoft - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Microsoft",
+      "snippet": "Microsoft Corporation is an American multinational technology company headquartered in Redmond, Washington. The company …"
+    }
+  ]
+}

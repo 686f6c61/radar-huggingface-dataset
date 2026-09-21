@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-minimax-h3-ref2va-acc-8step-pruned-comfy.safetensors-lora",
+  "slug": "runninghubai-rh-minimax-h3-ref2va-acc-8step-pruned-comfy-safetensors-lora",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-minimax-h3-ref2va-acc-8step-pruned-comfy.safetensors-lora",
+  "created_at": "2026-09-21T02:09:23.000Z",
+  "updated_at": "2026-09-21T02:30:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1704948768,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "VERTIKAL Group Nyrt. Ügyfélszolgálat",
+      "url": "https://ugyfelszolgalat-vertikalgroup.hu/",
+      "snippet": "VERTIKAL Group ügyfélszolgálat: hulladékszállítással, edényzettel, konténerrendeléssel és ügyintézéssel kapcsolatos információk …"
+    },
+    {
+      "title": "Ügyfélszolgálat - ugyfelszolgalat-vertikalgroup.hu",
+      "url": "https://ugyfelszolgalat-vertikalgroup.hu/ugyfelszolgalat",
+      "snippet": "Telefonos ügyfélszolgálat és e-mail kapcsolat a VERTIKAL Group Nyrt. számára. Nyitvatartás és regionális ügyintézés egy helyen."
+    },
+    {
+      "title": "VERTIKAL Group Nyrt.",
+      "url": "https://vertikalgroup.hu/",
+      "snippet": "Átadásra került a VERTIKAL Group Nyrt. 2,5 milliárd forint értékű dombóvári technológiai fejlesztése. A települési hulladék több mint …"
+    },
+    {
+      "title": "Lakossági ügyfelek",
+      "url": "https://ugyfelszolgalat-vertikalgroup.hu/lakossagi-ugyfelek",
+      "snippet": "Telefonos ügyfélszolgálat és e-mail kapcsolat a VERTIKAL Group Nyrt. számára. Nyitvatartás és regionális ügyintézés egy helyen."
+    },
+    {
+      "title": "VERTIKÁL Ügyfélszolgálati hely - Dorog Kormányablak",
+      "url": "https://firmania.hu/dorog/vertik%C3%A1l-%C3%BCgyf%C3%A9lszolg%C3%A1lati-hely-dorog-korm%C3%A1nyablak-275017",
+      "snippet": "☎️ Hogyan tudom elérni a Dorog-i VERTIKÁL Ügyfélszolgálati hely - Dorog Kormányablak? Dorog-i VERTIKÁL Ügyfélszolgálati …"
+    }
+  ]
+}

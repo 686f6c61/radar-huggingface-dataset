@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Karthik1338/workflow-stage2-lora",
+  "slug": "karthik1338-workflow-stage2-lora",
+  "author": "Karthik1338",
+  "url": "https://huggingface.co/Karthik1338/workflow-stage2-lora",
+  "created_at": "2026-09-20T21:32:48.000Z",
+  "updated_at": "2026-09-20T21:33:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 131223694,
+  "storage_human": "131 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Outlook",
+      "url": "https://outlook.office.com/mail/?ui=fr-FR&rs=FR",
+      "snippet": "Sign in to Outlook to access and manage your email with Microsoft 365."
+    },
+    {
+      "title": "Aanmelden Outlook | Microsoft 365",
+      "url": "https://www.microsoft.com/nl-nl/microsoft-365/outlook/log-in?msockid=1e8eb3e4cc8f6f872c33a43ecd5a6ecc",
+      "snippet": "Nov 16, 2025 · Meld je aan bij Outlook met Microsoft 365 voor toegang tot je e-mail, agenda en meer. Download de app of log in …"
+    },
+    {
+      "title": "Outlook Log In | Microsoft 365",
+      "url": "https://www.microsoft.com/en-gb/microsoft-365/outlook/log-in?msockid=1e8eb3e4cc8f6f872c33a43ecd5a6ecc",
+      "snippet": "Sign in to Outlook with Microsoft 365 to access your email, calendar, and more. Download the app or log in online for enhanced …"
+    },
+    {
+      "title": "Outlook",
+      "url": "https://outlook.office.com/mail?ui=en-US&rs=US",
+      "snippet": "Outlook ... Outlook"
+    },
+    {
+      "title": "Aanmelden bij Outlook.com | Microsoft Support",
+      "url": "https://support.microsoft.com/nl-nl/accounts-billing/manage/how-to-sign-in-to-outlook-com",
+      "snippet": "Lees hoe u zich aanmeldt bij uw Outlook- of Hotmail-postvak met uw Microsoft-account."
+    }
+  ]
+}

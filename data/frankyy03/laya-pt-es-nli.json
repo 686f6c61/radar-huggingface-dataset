@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "frankyy03/laya-pt-es-nli",
+  "slug": "frankyy03-laya-pt-es-nli",
+  "author": "frankyy03",
+  "url": "https://huggingface.co/frankyy03/laya-pt-es-nli",
+  "created_at": "2026-09-21T00:14:02.000Z",
+  "updated_at": "2026-09-21T00:18:50.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "laya",
+  "languages": [
+    "pt",
+    "es"
+  ],
+  "tags": [
+    "laya",
+    "safetensors",
+    "mmbert",
+    "natural-language-inference",
+    "portuguese",
+    "spanish",
+    "calibrated-decisions",
+    "rlcd",
+    "audio-adapter-compatible",
+    "text-classification",
+    "pt",
+    "es",
+    "dataset:venelin/inferes",
+    "base_model:convaiinnovations/laya-multilingual",
+    "base_model:finetune:convaiinnovations/laya-multilingual",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 321908998,
+  "parameters_human": "321.9M",
+  "storage_bytes": 678198880,
+  "storage_human": "678 MB",
+  "base_model": "convaiinnovations/laya-multilingual",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Three-way natural language inference",
+      "dataset": "Fixed InferBR and InferES test sample",
+      "metric": "Accuracy",
+      "value": 0.8671875
+    },
+    {
+      "task": "Three-way natural language inference",
+      "dataset": "Fixed InferBR and InferES test sample",
+      "metric": "Macro F1",
+      "value": 0.8669693326424834
+    },
+    {
+      "task": "Three-way natural language inference",
+      "dataset": "Fixed InferBR and InferES test sample",
+      "metric": "Balanced accuracy",
+      "value": 0.8673734610123119
+    }
+  ],
+  "sources": [
+    {
+      "title": "Microsoft – AI, Cloud, Productivity, Computing, Gaming & Apps",
+      "url": "https://www.microsoft.com/en-us?msockid=2997d3b87ece6d64068ac4637f966c64",
+      "snippet": "Explore Microsoft products and services and support for your home or business. Shop Microsoft 365, Copilot, Teams, Xbox, …"
+    },
+    {
+      "title": "Microsoft account | Sign In or Create Your Account Today – Microsoft",
+      "url": "https://account.microsoft.com/account",
+      "snippet": "Get access to free online versions of Outlook, Word, Excel, and PowerPoint."
+    },
+    {
+      "title": "Sign in to your account",
+      "url": "https://myaccount.microsoft.com/",
+      "snippet": "Access and manage your Microsoft account, subscriptions, and settings all in one place."
+    },
+    {
+      "title": "Microsoft 365 for Individuals: Subscription for Productivity Apps",
+      "url": "https://www.microsoft.com/en-us/microsoft-365?msockid=2997d3b87ece6d64068ac4637f966c64",
+      "snippet": "Microsoft 365 (formerly Office 365) subscriptions offer a suite of productivity tools and cloud services with world-class security and …"
+    },
+    {
+      "title": "Microsoft - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Microsoft",
+      "snippet": "Microsoft Corporation is an American multinational technology company headquartered in Redmond, Washington. The company …"
+    }
+  ]
+}

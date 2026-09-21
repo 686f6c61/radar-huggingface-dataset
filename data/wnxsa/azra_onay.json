@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "wnxsa/azra_onay",
+  "slug": "wnxsa-azra_onay",
+  "author": "wnxsa",
+  "url": "https://huggingface.co/wnxsa/azra_onay",
+  "created_at": "2026-09-20T22:24:38.000Z",
+  "updated_at": "2026-09-20T22:39:10.000Z",
+  "license": "openrail",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:openrail",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 125932234,
+  "storage_human": "126 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "xe.gr: the #1 site in Greece when searching for properties, jobs, cars ...",
+      "url": "https://www.xe.gr/en",
+      "snippet": "Search among 500.000+ listings on the #1 site in Greece when searching for properties, jobs, cars, used items and thousands of …"
+    },
+    {
+      "title": "Ειδήσεις Google",
+      "url": "https://news.google.com/home?hl=el&ceid=GR:el",
+      "snippet": "Ανακαλύψτε τις τελευταίες ειδήσεις και ενημερώσεις από διάφορες πηγές και θέματα στην Ελλάδα με το Google Ειδήσεις."
+    },
+    {
+      "title": "Greek Word Study",
+      "url": "https://gnt-fv9t.onrender.com/word/G837/index.html",
+      "snippet": "Strongs Gloss to cause to grow, augment; to increase, become greater; to grow, increase G837 αὐξάνω to cause to grow, augment; …"
+    },
+    {
+      "title": "Αρχαία ελληνικά: Αναλυτική κλίση ρήματος «αὔξω - αὐξάνω»",
+      "url": "https://latistor.blogspot.com/2023/08/blog-post_15.html",
+      "snippet": "Αναλυτική παρουσίαση της κλίσης του ρήματος «αὔξω - αὐξάνω» στα αρχαία ελληνικά για εκπαιδευτικούς σκοπούς."
+    },
+    {
+      "title": "Αναλυτική κλίση του ρήματος αὔξω - αὐξάνω στα αρχαία ελληνικά",
+      "url": "https://e-didaskalia.blogspot.com/2023/12/auksano.html",
+      "snippet": "Εκπαιδευτικό υλικό για το Νηπιαγωγείο, το Δημοτικό, το Γυμνάσιο, το Λύκειο."
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "hamdallah/budgeted-exit-qwen3.5-2b-civil-comments",
+  "slug": "hamdallah-budgeted-exit-qwen3-5-2b-civil-comments",
+  "author": "hamdallah",
+  "url": "https://huggingface.co/hamdallah/budgeted-exit-qwen3.5-2b-civil-comments",
+  "created_at": "2026-09-20T23:15:43.000Z",
+  "updated_at": "2026-09-20T23:24:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "early-exit",
+    "adaptive-computation",
+    "efficient-inference",
+    "content-moderation",
+    "conformal-risk-control",
+    "lora",
+    "text-classification",
+    "en",
+    "dataset:google/civil_comments",
+    "base_model:Qwen/Qwen3.5-2B",
+    "base_model:adapter:Qwen/Qwen3.5-2B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 26678044,
+  "parameters_human": "26.7M",
+  "storage_bytes": 106748264,
+  "storage_human": "107 MB",
+  "base_model": "Qwen/Qwen3.5-2B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Translate",
+      "url": "https://translate.google.com.au/",
+      "snippet": "Google's service, offered free of charge, instantly translates words, phrases, and web pages between English and over 100 other …"
+    },
+    {
+      "title": "Google Earth",
+      "url": "https://earth.google.com.au/",
+      "snippet": "Google Earth is the most photorealistic, digital version of our planet. Where do the images come from? How are they they put …"
+    },
+    {
+      "title": "Google Images",
+      "url": "https://images.google.com.au/",
+      "snippet": "Google Images. The most comprehensive image search on the web."
+    },
+    {
+      "title": "Chrome for mobile | Make the most of Chrome on your phone",
+      "url": "https://www.google.com.au/intl/en_uk/chrome/mobile/",
+      "snippet": "Explore the best of Chrome on mobile, including AI features with Gemini in Chrome, cross-device syncing and safety and privacy …"
+    },
+    {
+      "title": "Google Videos",
+      "url": "https://www.google.com.au/videohp",
+      "snippet": "Search millions of videos from across the web."
+    }
+  ]
+}

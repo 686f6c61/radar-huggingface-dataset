@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "Recharge23/JAM-realrobot-gello",
+  "slug": "recharge23-jam-realrobot-gello",
+  "author": "Recharge23",
+  "url": "https://huggingface.co/Recharge23/JAM-realrobot-gello",
+  "created_at": "2026-09-20T21:16:09.000Z",
+  "updated_at": "2026-09-21T21:14:25.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "robotics",
+  "library": "safetensors",
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "robotics",
+    "franka-panda",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 28548670144,
+  "storage_human": "28.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/facebook/",
+      "snippet": "Facebook. 154,738,287 followers · 340,793 talking about this. Community Values We believe people can do more together than …"
+    },
+    {
+      "title": "Facebook",
+      "url": "https://www.facebook.com/login.php/?lang=he",
+      "snippet": "Email or mobile number Password"
+    },
+    {
+      "title": "Facebook",
+      "url": "https://l.facebook.com/",
+      "snippet": "Log into Facebook to connect with friends, family, and people you know."
+    },
+    {
+      "title": "פייסבוק - כניסה או הרשמה - Omm",
+      "url": "https://www.omm.co.il/link/303/Facebook",
+      "snippet": "צור/צרי חשבון או הירשם/הירשמי לפייסבוק. התחבר/י לחברים, בני משפחה ואנשים אחרים שאת/ה מכיר/ה. שתף/שתפי תמונות וסרטונים, שלח/י הודעות …"
+    },
+    {
+      "title": "Log Into Facebook",
+      "url": "https://secure.facebook.com/login/",
+      "snippet": "Log into Facebook to start sharing and connecting with your friends, family, and people you know."
+    }
+  ]
+}

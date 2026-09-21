@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "clarezahermetica/landling-3.0-cp2",
+  "slug": "clarezahermetica-landling-3-0-cp2",
+  "author": "clarezahermetica",
+  "url": "https://huggingface.co/clarezahermetica/landling-3.0-cp2",
+  "created_at": "2026-09-21T00:29:50.000Z",
+  "updated_at": "2026-09-21T00:31:52.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "landling",
+    "lora",
+    "qlora",
+    "raft",
+    "development-checkpoint",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen2.5-7B-Instruct",
+    "base_model:adapter:Qwen/Qwen2.5-7B-Instruct",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 92214772,
+  "storage_human": "92 MB",
+  "base_model": "Qwen/Qwen2.5-7B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Fotos oder Videos in Google Maps hinzufügen, entfernen oder teilen",
+      "url": "https://support.google.com/maps/answer/2622947?hl=de&co=GENIE.Platform=Android",
+      "snippet": "Sie können Google Maps aktiv mitgestalten und verbessern, indem Sie Ihre Lieblingsfotos und -videos teilen (Videos dürfen maximal …"
+    },
+    {
+      "title": "Problem beim Öffnen von bild.de - Google Chrome-Community",
+      "url": "https://support.google.com/chrome/thread/9893032/problem-beim-%C3%96ffnen-von-bild-de?hl=de",
+      "snippet": "Jul 14, 2019 · Möchte bild.de öffnen, nach klicken auf google.de Suche aktualisiert sich die Seite ständig, Adresse wird immer länger:"
+    },
+    {
+      "title": "Билды и гайды для лиги Предательство - [3.5][Все классы]30 Билдов ...",
+      "url": "https://ru.pathofexile.com/forum/view-thread/46301",
+      "snippet": "Path of Exile - лучшая бесплатная игра в жанре Action RPG. Мрачный мир, глубокая и сложная система прокачки персонажа, …"
+    },
+    {
+      "title": "Path of Exile",
+      "url": "https://ru.pathofexile.com/item-filter/ladder/follower",
+      "snippet": "Path of Exile - лучшая бесплатная игра в жанре Action RPG. Мрачный мир, глубокая и сложная система прокачки персонажа, …"
+    },
+    {
+      "title": "HDR-Videos hochladen - YouTube-Hilfe",
+      "url": "https://support.google.com/youtube/answer/7126552?hl=de",
+      "snippet": "In der Folge weisen deine Videos möglicherweise am Ende ein starkes Rauschen in den dunkleren Bildbereichen auf, die im Bild …"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "fwgpiyawudk/SuryaOCR2_ThaiDoc-exp2-merged",
+  "slug": "fwgpiyawudk-suryaocr2_thaidoc-exp2-merged",
+  "author": "fwgpiyawudk",
+  "url": "https://huggingface.co/fwgpiyawudk/SuryaOCR2_ThaiDoc-exp2-merged",
+  "created_at": "2026-09-20T21:54:14.000Z",
+  "updated_at": "2026-09-20T21:54:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "trl",
+    "sft",
+    "conversational",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 665701440,
+  "parameters_human": "665.7M",
+  "storage_bytes": 1331461328,
+  "storage_human": "1.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Login - Hochschule RheinMain",
+      "url": "https://studip.hs-rm.de/",
+      "snippet": "Die Zugangsdaten für das Bewerberportal gelten nicht für Stud.IP. Die HDS-Benutzerkennung erhalten Sie nach Abschluss des …"
+    },
+    {
+      "title": "JLU Gießen - JLU Gießen",
+      "url": "https://studip.uni-giessen.de/",
+      "snippet": "Die Zugangsdaten für das Bewerberportal gelten nicht für Stud.IP. Die HRZ-Benutzerkennung erhalten Sie nach Abschluss des …"
+    },
+    {
+      "title": "Startseite - Stud.IP",
+      "url": "https://studip.de/",
+      "snippet": "Jan 20, 2026 · Informations- und Austauschveranstaltung für Betreiber:innen von Stud.IP-Systemen. Was gibt es Neues, was kommt …"
+    },
+    {
+      "title": "Login - Leibniz Universität Hannover",
+      "url": "https://studip.uni-hannover.de/",
+      "snippet": "Angehörige von Universitäten des EULiST-Verbund-Projektes können sich im Stud.IP der LUH über den SingleSignOn (SSO) ihrer …"
+    },
+    {
+      "title": "Login - MLU - uni-halle.de",
+      "url": "https://studip.uni-halle.de/index.php?again=yes",
+      "snippet": "Wie bekomme ich einen Zugang zu Stud.IP? (Studierende) Die Anmeldung zum Stud.IP erfolgt mit dem Nutzerkennzeichen und dem …"
+    }
+  ]
+}

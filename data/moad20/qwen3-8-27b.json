@@ -1,0 +1,67 @@
+{
+  "schema": 1,
+  "id": "moad20/Qwen3.8-27B",
+  "slug": "moad20-qwen3-8-27b",
+  "author": "moad20",
+  "url": "https://huggingface.co/moad20/Qwen3.8-27B",
+  "created_at": "2026-09-20T22:32:06.000Z",
+  "updated_at": "2026-09-20T22:32:07.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "conversational",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27781427952,
+  "parameters_human": "27.78B",
+  "storage_bytes": 55575816096,
+  "storage_human": "55.6 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "0 'yuri Ramos Da Silva' At Kip Sistemas Em Nuvem Ltda As ... - LinkedIn",
+      "url": "https://www.linkedin.com/jobs/%27yuri-ramos-da-silva%27-at-kip-sistemas-em-nuvem-ltda-as-vendedor-linkedin-in-jobs",
+      "snippet": "Leverage your professional network, and get hired. New &#39;yuri Ramos Da Silva&#39; At Kip Sistemas Em Nuvem Ltda As …"
+    },
+    {
+      "title": "Yuri Ramos - Analista de Sistemas - LinkedIn Brasil",
+      "url": "https://br.linkedin.com/in/yuri-ramos-4748a882",
+      "snippet": "Veja o perfil de Yuri Ramos no LinkedIn, uma comunidade profissional de 1 bilhão de usuários."
+    },
+    {
+      "title": "9 \"Yuri Ramos Da Silva\" profiles | LinkedIn",
+      "url": "https://www.linkedin.com/pub/dir/Yuri/%20Ramos%20Da%20Silva",
+      "snippet": "View the profiles of professionals named &quot;Yuri Ramos Da Silva&quot; on LinkedIn."
+    },
+    {
+      "title": "10 perfis com “Yuri Ramos Da Silva” | LinkedIn",
+      "url": "https://br.linkedin.com/pub/dir/Yuri/Ramos+Da+Silva/br-0-Brazil",
+      "snippet": "Veja os perfis de profissionais com o nome de “Yuri Ramos Da Silva” no LinkedIn. Há 10 profissionais com o nome de “Yuri Ramos …"
+    },
+    {
+      "title": "300+ perfiles de «Yuri Ramos» | LinkedIn",
+      "url": "https://pe.linkedin.com/pub/dir/Yuri+/Ramos/br-0-Brasil",
+      "snippet": "Ve los perfiles de profesionales con el nombre de «Yuri Ramos» en LinkedIn. Hay 300+ profesionales con el nombre de «Yuri …"
+    }
+  ]
+}

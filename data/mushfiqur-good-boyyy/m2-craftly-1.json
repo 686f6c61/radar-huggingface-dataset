@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "mushfiqur-good-boyyy/m2-craftly-1",
+  "slug": "mushfiqur-good-boyyy-m2-craftly-1",
+  "author": "mushfiqur-good-boyyy",
+  "url": "https://huggingface.co/mushfiqur-good-boyyy/m2-craftly-1",
+  "created_at": "2026-09-21T01:49:02.000Z",
+  "updated_at": "2026-09-21T01:49:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "diffusers:M2CraftlyPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 6,
+  "trending_score": 0,
+  "parameters": 603537664,
+  "parameters_human": "603.5M",
+  "storage_bytes": 3493840268,
+  "storage_human": "3.5 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Reddit - Dive into anything",
+      "url": "https://www.reddit.com/",
+      "snippet": "Reddit is a network of communities where people can dive into their interests, hobbies and passions. There's a community for …"
+    },
+    {
+      "title": "BLOOKET - Reddit",
+      "url": "https://www.reddit.com/r/BLOOKET/",
+      "snippet": "This community is for BLOOKET users. Spamming will not be tolerated. Posts that are not Blooket related will be warned and then …"
+    },
+    {
+      "title": "index - BLOOKET - Reddit",
+      "url": "https://www.reddit.com/r/BLOOKET/wiki/index/",
+      "snippet": "r/BLOOKET: This community is for BLOOKET users. Spamming will not be tolerated. Posts that are not Blooket related will be …"
+    },
+    {
+      "title": "Blooket : r/Teachers - Reddit",
+      "url": "https://www.reddit.com/r/Teachers/comments/tkwck8/blooket/",
+      "snippet": "Mar 23, 2022 · Does anyone use Blooket with their students? My kids love it. My only complaint is that I can’t see an in depth class …"
+    },
+    {
+      "title": "A warning about Blooket : r/Teachers - Reddit",
+      "url": "https://www.reddit.com/r/Teachers/comments/usex24/a_warning_about_blooket/",
+      "snippet": "May 18, 2022 · I love Blooket. Most of my kids (aside from kids who throw fits when they lose) like it. However, there is something …"
+    }
+  ]
+}

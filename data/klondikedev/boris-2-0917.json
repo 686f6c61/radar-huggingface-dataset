@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "KlondikeDev/Boris-2-0917",
+  "slug": "klondikedev-boris-2-0917",
+  "author": "KlondikeDev",
+  "url": "https://huggingface.co/KlondikeDev/Boris-2-0917",
+  "created_at": "2026-09-21T01:29:22.000Z",
+  "updated_at": "2026-09-21T02:01:41.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "causal-lm",
+    "research-artifact",
+    "failed-run",
+    "text-generation",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 290316307,
+  "storage_human": "290 MB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Heureka.cz — Je to znamení… Najít nejlepší nabídku",
+      "url": "https://www.heureka.cz/",
+      "snippet": "Copyright © 2007–2026, Heureka Group a.s., všechna práva vyhrazena. Podmínky používání webu"
+    },
+    {
+      "title": "Heureka v novém Zbav se nákupní paralýzy a nakupuj úžasně",
+      "url": "https://www.heureka.cz/a/heureka-redesign-c-28029/",
+      "snippet": "A tak to má podle našeho průzkumu většina uživatelů. Rozhodli jsme se najít řešení a z nakupování udělat potěšení. Heureka ti vrací …"
+    },
+    {
+      "title": "Internetové obchody — Heureka.cz",
+      "url": "https://obchody.heureka.cz/",
+      "snippet": "Copyright © 2007–2026, Heureka Group a.s., všechna práva vyhrazena. Podmínky používání webu"
+    },
+    {
+      "title": "Praktické tipy, nákupní rádce a další užitečné články⭐ ...",
+      "url": "https://www.heureka.cz/A/",
+      "snippet": "Jak výhodně nakupovat na internetu? A co právě teď nejvíc frčí? Inspirujte se tipy a radami našich redaktorů a vybírejte s přehledem 🔍"
+    },
+    {
+      "title": "Cenopád - Heureka.cz",
+      "url": "https://www.heureka.cz/discounts/",
+      "snippet": "Heureka.cz je nákupní rádce, kde vyberete ten nejlepší produkt, porovnáte ceny z tisíců internetových obchodů a pohodlně nakoupíte."
+    }
+  ]
+}

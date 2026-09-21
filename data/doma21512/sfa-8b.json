@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "Doma21512/SFA-8B",
+  "slug": "doma21512-sfa-8b",
+  "author": "Doma21512",
+  "url": "https://huggingface.co/Doma21512/SFA-8B",
+  "created_at": "2026-09-21T00:05:50.000Z",
+  "updated_at": "2026-09-21T11:28:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "unsloth",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 185042160,
+  "storage_human": "185 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Walmart Stores Near Me - Locations, Hours & Services",
+      "url": "https://www.walmart.com/store-finder",
+      "snippet": "Enter your location to find a nearby store. Use the Walmart store locator to find your nearest Walmart locations, check store hours, …"
+    },
+    {
+      "title": "Walmart | Save Money. Live better.",
+      "url": "https://www.walmart.com/",
+      "snippet": "Shop Walmart.com today for Every Day Low Prices. Join Walmart+ for unlimited free delivery from your store & free shipping with no …"
+    },
+    {
+      "title": "Store-finder Store Directory | Walmart Stores",
+      "url": "https://www.walmart.com/store-directory/[state]/store-finder",
+      "snippet": "Browse through all Walmart store locations in Store-finder, null to find the most convenient one for you."
+    },
+    {
+      "title": "Walmart Stores Near Me - Locations, Hours & Services | Walmart …",
+      "url": "https://www.walmart.ca/en/store-finder",
+      "snippet": "Use the Walmart store locator to find your nearest Walmart locations, check store hours, and find services like Grocery Pickup, …"
+    },
+    {
+      "title": "How do I find information about my local stores? - Walmart Corporate",
+      "url": "https://corporate.walmart.com/askwalmart/how-do-i-find-information-about-my-local-stores",
+      "snippet": "The quickest and easiest way to find a store near you is to use our store finder. Simply enter your zip code or city and state, and we’ll …"
+    }
+  ]
+}

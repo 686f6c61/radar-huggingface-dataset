@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Cialtion/SimpleTool-VLM",
+  "slug": "cialtion-simpletool-vlm",
+  "author": "Cialtion",
+  "url": "https://huggingface.co/Cialtion/SimpleTool-VLM",
+  "created_at": "2026-09-20T23:07:15.000Z",
+  "updated_at": "2026-09-20T23:13:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_vl",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4825491968,
+  "parameters_human": "4.83B",
+  "storage_bytes": 9662497361,
+  "storage_human": "9.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Port (Netzwerkadresse) – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Port_(Netzwerkadresse)",
+      "snippet": "Ein Port oder eine Portnummer ist in Rechnernetzen eine Netzwerkadresse, mit der das Betriebssystem die Datenpakete eines …"
+    },
+    {
+      "title": "Port (computer networking) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Port_(computer_networking)",
+      "snippet": "A port is uniquely identified by a number, the port number, associated with the combination of a transport protocol and the network IP …"
+    },
+    {
+      "title": "Port - DocCheck Flexikon",
+      "url": "https://flexikon.doccheck.com/de/Port",
+      "snippet": "Der Port besteht aus einem Katheter (Schlauch), der in ein großlumiges Blutgefäß gelegt und bis zum Herz vorgeschoben wird, und …"
+    },
+    {
+      "title": "Port - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Port",
+      "snippet": "An inland port is a port on a navigable lake, river (fluvial port), or canal with access to a sea or ocean, which therefore allows a ship to …"
+    },
+    {
+      "title": "Port Checker - Check Open Ports Online",
+      "url": "https://portchecker.co/",
+      "snippet": "Port Checker is a simple tool to check for open ports and test port forwarding setup on your router. Verify and diagnose connection …"
+    }
+  ]
+}

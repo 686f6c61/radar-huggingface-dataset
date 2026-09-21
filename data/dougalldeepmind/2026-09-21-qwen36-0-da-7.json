@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "dougalldeepmind/2026-09-21-qwen36-0-da-7",
+  "slug": "dougalldeepmind-2026-09-21-qwen36-0-da-7",
+  "author": "dougalldeepmind",
+  "url": "https://huggingface.co/dougalldeepmind/2026-09-21-qwen36-0-da-7",
+  "created_at": "2026-09-21T01:41:59.000Z",
+  "updated_at": "2026-09-21T01:42:06.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1295140182,
+  "storage_human": "1.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Domino's Pizza",
+      "url": "https://www.dominospizza.cl/",
+      "snippet": "Pide online tu pizza favorita en Domino's Pizza. Ofertas y promociones de pizzas todos los días. Compra en tu restaurante más …"
+    },
+    {
+      "title": "Ruleta Domino's Pizza",
+      "url": "https://ruleta.dominospizza.cl/",
+      "snippet": "¿Cómo funciona? Ingresa tu nombre y correo antes de jugar. Presiona \"Lanzar Ruleta\" para girar. Los premios estarán disponibles …"
+    },
+    {
+      "title": "VOLTA v1.3.0 · Inventario Domino's",
+      "url": "https://inventario.dominospizza.cl/dashboard.html",
+      "snippet": "Bienvenido a V OLTA. El sistema de Gestión de Inventario TI y Control de Activos. Todo el hardware corporativo en un mismo lugar, …"
+    },
+    {
+      "title": "Domino's Pizza",
+      "url": "https://dev.dominospizza.cl/boleta",
+      "snippet": "INICIAR SESIÓN Restaurar contraseña Recibirás un correo con instrucciones para restaurar tu contraseña Email Buscar Documento …"
+    },
+    {
+      "title": "Sign in to your account",
+      "url": "https://cms.dominospizza.cl/",
+      "snippet": "Sign-in options ..."
+    }
+  ]
+}

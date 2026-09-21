@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "matrixrb/imaeemodel",
+  "slug": "matrixrb-imaeemodel",
+  "author": "matrixrb",
+  "url": "https://huggingface.co/matrixrb/imaeemodel",
+  "created_at": "2026-09-20T22:29:34.000Z",
+  "updated_at": "2026-09-20T22:31:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "diffusers:StableDiffusionPipeline",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 859520964,
+  "parameters_human": "859.5M",
+  "storage_bytes": 2132604798,
+  "storage_human": "2.1 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Odablock Stream - Watch Live on Kick",
+      "url": "https://kick.com/odablock",
+      "snippet": "When you subscribe, you're directly supporting me and I appreciate that a lot! Some perks may include but are not limited to: If you …"
+    },
+    {
+      "title": "Odablock Videos - Watch On-Demand on Kick",
+      "url": "https://kick.com/odablock/videos",
+      "snippet": "1 day ago · Watch Odablock's latest VODs!"
+    },
+    {
+      "title": "Odablock Streams - YouTube",
+      "url": "https://www.youtube.com/@OdablockStreams",
+      "snippet": "Find all the VODs from the Kick livestreams here! Catch up on key moments and rewatch your favorite segments with detailed …"
+    },
+    {
+      "title": "About Odablock - Watch Live on Kick",
+      "url": "https://kick.com/odablock/about",
+      "snippet": "When you subscribe, you're directly supporting me and I appreciate that a lot! Some perks may include but are not limited to: If you …"
+    },
+    {
+      "title": "Chat Odablock - Watch Live on Kick",
+      "url": "https://kick.com/odablock/chat",
+      "snippet": "Get in Odablock's live chat, interact with the community & support content creators on Kick. Join the fastest growing live streaming …"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Diluner/gpt54-mini-standalone-qwen3-1.7b-rose-textcraft-20260920",
+  "slug": "diluner-gpt54-mini-standalone-qwen3-1-7b-rose-textcraft-20260920",
+  "author": "Diluner",
+  "url": "https://huggingface.co/Diluner/gpt54-mini-standalone-qwen3-1.7b-rose-textcraft-20260920",
+  "created_at": "2026-09-20T23:57:38.000Z",
+  "updated_at": "2026-09-20T23:57:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "agent-training",
+    "gpt-5.4-mini",
+    "rose",
+    "standalone",
+    "conversational",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2031739904,
+  "parameters_human": "2.03B",
+  "storage_bytes": 4074938294,
+  "storage_human": "4.1 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "阿姆斯特丹华尔道夫酒店-希尔顿酒店集团官网",
+      "url": "https://www.hilton.com.cn/zh-cn/hotels/amswawa-waldorf-astoria-amsterdam",
+      "snippet": "阿姆斯特丹华尔道夫酒店是隶属于希尔顿集团旗下的酒店;酒店位于 UNESCO 列入名录的城市中心，包括赫伦格雷赫特运河畔的六座 …"
+    },
+    {
+      "title": "阿姆斯特丹华尔道夫酒店预订价格,联系电话位置地址【携程 ...",
+      "url": "https://hotels.ctrip.com/hotels/2198842.html",
+      "snippet": "Aug 4, 2026 · 阿姆斯特丹华尔道夫酒店官网联合预订,携程酒店提供阿姆斯特丹华尔道夫酒店价格查询,涵盖阿姆斯特丹华尔道夫酒店电 …"
+    },
+    {
+      "title": "阿姆斯特丹华尔道夫酒店，阿姆斯特丹（2026最新房价）",
+      "url": "https://www.booking.cn/hotel/nl/waldorf-astoria-amsterdam.zh-cn.html",
+      "snippet": "阿姆斯特丹华尔道夫酒店坐落于联合国教科文组织世界遗产名录上的绅士运河 (Herengracht) 沿岸，由 6 座 17 世纪宏伟的运河宫殿组 …"
+    },
+    {
+      "title": "阿姆斯特丹华尔道夫酒店 (Waldorf Astoria Amsterdam)",
+      "url": "https://www.agoda.com/zh-cn/waldorf-astoria-amsterdam/hotel/amsterdam-nl.html?msockid=082a97c5e15969ac0a7a801ee097685d",
+      "snippet": "Mar 23, 2026 · 阿姆斯特丹华尔道夫酒店 周边有许多著名的购物地标。 您可以前往Leafde、Artplein Spui、Het Oud-Hollandsch …"
+    },
+    {
+      "title": "阿姆斯特丹华尔道夫酒店_百度百科",
+      "url": "https://baike.baidu.com/item/%E9%98%BF%E5%A7%86%E6%96%AF%E7%89%B9%E4%B8%B9%E5%8D%8E%E5%B0%94%E9%81%93%E5%A4%AB%E9%85%92%E5%BA%97/15020894",
+      "snippet": "阿姆斯特丹华尔道夫酒店是位于荷兰阿姆斯特丹市中心博物馆区的五星级酒店，坐落于Herengracht 542-556，由六栋17世纪运河宫殿 …"
+    }
+  ]
+}

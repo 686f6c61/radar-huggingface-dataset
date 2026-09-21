@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "botp/Confucius4-R2T2",
+  "slug": "botp-confucius4-r2t2",
+  "author": "botp",
+  "url": "https://huggingface.co/botp/Confucius4-R2T2",
+  "created_at": "2026-09-21T01:50:29.000Z",
+  "updated_at": "2026-09-21T01:50:30.000Z",
+  "license": "netease-model-use-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_asr",
+    "confucius4",
+    "r2t2",
+    "asr",
+    "streaming",
+    "real-time",
+    "low-latency",
+    "speech-recognition",
+    "vllm",
+    "multilingual",
+    "automatic-speech-recognition",
+    "base_model:Qwen/Qwen3-ASR-1.7B",
+    "base_model:finetune:Qwen/Qwen3-ASR-1.7B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 14,
+  "trending_score": 0,
+  "parameters": 2038052480,
+  "parameters_human": "2.04B",
+  "storage_bytes": 4087621139,
+  "storage_human": "4.1 GB",
+  "base_model": "Qwen/Qwen3-ASR-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MaczFit — Opinie 7662 Klientów, Ceny od 61 zł/dzień | CateroRank",
+      "url": "https://caterorank.pl/catering/maczfit",
+      "snippet": "10 hours ago · Sprawdź co mówi ponad 7662 klientów o MaczFit. Wyróżnia się smak — 79% pozytywnych opinii. Kody rabatowe, …"
+    },
+    {
+      "title": "Przetestowałam cateringi dietetyczne. Nie wszystkie mogę polecić [TEST]",
+      "url": "https://zywienie.medonet.pl/zdrowe-odzywianie/zdrowa-dieta/przetestowalam-cateringi-dietetyczne-nie-wszystkie-moge-polecic-test/x280vlh",
+      "snippet": "May 30, 2022 · Maczfit w moim teście wypadł dobrze. Frustrowała mnie sterta plastikowych opakowań na koniec dnia, a smaki były …"
+    },
+    {
+      "title": "Maczfit Catering - Opinie, Menu dietetyczne, Cennik - Dietly",
+      "url": "https://dietly.pl/catering-dietetyczny-firma/maczfit",
+      "snippet": "Dostępne diety pudełkowe i menu cateringu dietetycznego Maczfit catering. Poznaj opinie, cennik oraz odbieraj rabaty w …"
+    },
+    {
+      "title": "Opinie o maczfit.pl - Maczfit Foods",
+      "url": "https://www.gowork.pl/opinie_czytaj,23958573",
+      "snippet": "Sprawdź 221 opinii o Maczfit.pl - Fresh Meals Factory Szymanów. Dowiedz się więcej o rozmowach kwalifikacyjnych, zarobkach, …"
+    },
+    {
+      "title": "Maczfit | Catering dietetyczny | Dieta pudełkowa",
+      "url": "https://maczfit.pl/",
+      "snippet": "Jeżeli po skorzystaniu z Kalkulatora Maczfit nadal będziesz mieć wątpliwości, jaką dietę wybrać, skorzystaj z naszego czatu online i …"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "esteban1234545555555555/mi-modelo-gguf",
+  "slug": "esteban1234545555555555-mi-modelo-gguf",
+  "author": "esteban1234545555555555",
+  "url": "https://huggingface.co/esteban1234545555555555/mi-modelo-gguf",
+  "created_at": "2026-09-21T01:59:52.000Z",
+  "updated_at": "2026-09-21T02:00:08.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 36,
+  "trending_score": 0,
+  "parameters": 1100048384,
+  "parameters_human": "1.10B",
+  "storage_bytes": 667815200,
+  "storage_human": "668 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "《香港特别行政区经济和社会发展第一个五年规划（2026—2030年）》 …",
+      "url": "https://sc.isd.gov.hk/TuniS/www.info.gov.hk/gia/general/202609/16/P2026091600126.htm",
+      "snippet": "5 days ago · 1.4 新一轮科技革命和产业变革加速突破，人工智能（Artificial Intelligence, AI）等催生新产业新业态新模式，内外环境的 …"
+    },
+    {
+      "title": "施政報告 | 行政長官2026年施政報告",
+      "url": "https://www.policyaddress.gov.hk/2026/tc/chapter6.html",
+      "snippet": "第六章 更好融入和服務國家發展大局 224. 今年是國家「十五五」規劃開局之年，香港第一個五年規劃亦已經發布，主動對接國家整體 …"
+    },
+    {
+      "title": "借鉴内地成功经验，融入国家发展大局，香港首个五年规划引各方热议",
+      "url": "https://www.toutiao.com/article/7686298196120699443/",
+      "snippet": "4 days ago · 【环球时报记者 陈青青 环球时报特约记者 于文】香港特区政府16日正式发表首个五年规划，这一能载入特别行政区发展 …"
+    },
+    {
+      "title": "施政報告 | 行政長官2025年施政報告",
+      "url": "https://www.policyaddress.gov.hk/2025/tc/policy.html",
+      "snippet": "2025年施政報告，概述行政長官的施政理念及未來政策方向。"
+    },
+    {
+      "title": "李家超：五年規劃參考內地經驗並確保政策具香港特色",
+      "url": "https://web.hkcna.hk/hk/content/s6aadeed8e4b05838ef3ed177.html",
+      "snippet": "2 days ago · 香港新聞網9月19日電 香港特區行政長官李家超表示，特區政府第一個五年規劃中訂立的各項指標，是參考了內地編制十 …"
+    }
+  ]
+}

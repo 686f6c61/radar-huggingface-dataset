@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "LiaBoo/Osre",
+  "slug": "liaboo-osre",
+  "author": "LiaBoo",
+  "url": "https://huggingface.co/LiaBoo/Osre",
+  "created_at": "2026-09-20T21:00:38.000Z",
+  "updated_at": "2026-09-20T21:00:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Elektronické formuláře - Portál MOJE daně",
+      "url": "https://adisspr.mfcr.cz/pmd/epo/formulare",
+      "snippet": "Portál MOJE daně. Online finanční úřad, s jehož pomocí si vyřídíte daňové povinnosti, odkud budete chtít. Velký důraz klademe na …"
+    },
+    {
+      "title": "Hlavní stránka - Portál MOJE daně",
+      "url": "https://adisspr.mfcr.cz/pmd/home",
+      "snippet": "Portál MOJE daně. Online finanční úřad, s jehož pomocí si vyřídíte daňové povinnosti, odkud budete chtít. Velký důraz klademe na …"
+    },
+    {
+      "title": "Portál MOJE daně | Daně elektronicky | Daně | Finanční správa",
+      "url": "https://financnisprava.gov.cz/cs/dane/dane-elektronicky/danovy-portal",
+      "snippet": "Prostřednictvím aplikace může činit podání a využít vybrané informace správce daně. Aplikace umožňuje vyplnění elektronických …"
+    },
+    {
+      "title": "Daňové tiskopisy | Daně | Finanční správa",
+      "url": "https://financnisprava.gov.cz/cs/dane/danove-tiskopisy",
+      "snippet": "Interaktivní formuláře jsou testovány a optimalizovány pro MS Windows od verze 7 a Acrobat Reader 11 a novější. V případě …"
+    },
+    {
+      "title": "Hlavní stránka - Portál MOJE daně",
+      "url": "https://mojedane.gov.cz/",
+      "snippet": "Portál MOJE daně. Online finanční úřad, s jehož pomocí si vyřídíte daňové povinnosti, odkud budete chtít. Velký důraz klademe na …"
+    }
+  ]
+}

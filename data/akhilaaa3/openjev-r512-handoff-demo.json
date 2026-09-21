@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "akhilaaa3/openjev-r512-handoff-demo",
+  "slug": "akhilaaa3-openjev-r512-handoff-demo",
+  "author": "akhilaaa3",
+  "url": "https://huggingface.co/akhilaaa3/openjev-r512-handoff-demo",
+  "created_at": "2026-09-20T21:47:19.000Z",
+  "updated_at": "2026-09-20T22:01:47.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "smoke-test",
+    "merged",
+    "base_model:google/gemma-4-12B-it",
+    "base_model:finetune:google/gemma-4-12B-it",
+    "license:gemma",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 47665628853,
+  "storage_human": "47.7 GB",
+  "base_model": "google/gemma-4-12B-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "How to get STAY ENDING in Convince the CRAZY idol to let you free ...",
+      "url": "https://www.youtube.com/watch?v=uwURZhj9aFY",
+      "snippet": "Feb 1, 2026 · In this video I'll show you how to get Stay ending in Convince the CRAZY Idol to let you …"
+    },
+    {
+      "title": "All Endings and Badges in Convince the CRAZY Idol to Let You Free",
+      "url": "https://allthings.how/all-endings-and-badges-in-convince-the-crazy-idol-to-let-you-free/",
+      "snippet": "Feb 5, 2026 · You must find a lockpick, distract the idol by asking for tea, and then unlock the front door and outer gate before she …"
+    },
+    {
+      "title": "How to get all Endings in Convince the CRAZY Idol to let you free ...",
+      "url": "https://mobilegaminghub.com/how-to-get-all-endings-in-convince-the-crazy-idol-to-let-you-free-roblox/",
+      "snippet": "Sometimes, escaping from your crazy idols can be more challenging than you expect. If you’re eager to discover all the endings, jump …"
+    },
+    {
+      "title": "Convince the CRAZY Idol to let you free ALL ENDINGS and",
+      "url": "https://www.youtube.com/watch?v=vMpEqSveDzU",
+      "snippet": "Jan 27, 2026 · Here is a quick guide on how to get all the endings and badges in Roblox Convince the CRAZY Idol to let you free …"
+    },
+    {
+      "title": "All Endings and Badges in Convince the CRAZY Idol to Let You Free",
+      "url": "https://www.shigjeta.net/all-endings-and-badges-in-convince-the-crazy-idol-to-let-you-free/",
+      "snippet": "Feb 5, 2026 · You must find a lockpick, distract the idol by asking for tea, and then unlock the front door and outer gate before she …"
+    }
+  ]
+}

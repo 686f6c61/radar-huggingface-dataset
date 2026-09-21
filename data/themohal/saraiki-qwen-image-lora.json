@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "themohal/saraiki-qwen-image-lora",
+  "slug": "themohal-saraiki-qwen-image-lora",
+  "author": "themohal",
+  "url": "https://huggingface.co/themohal/saraiki-qwen-image-lora",
+  "created_at": "2026-09-20T23:39:53.000Z",
+  "updated_at": "2026-09-21T15:46:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "qwen-image",
+    "saraiki",
+    "base_model:Qwen/Qwen-Image-2512",
+    "base_model:adapter:Qwen/Qwen-Image-2512",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 41887487119,
+  "storage_human": "41.9 GB",
+  "base_model": "Qwen/Qwen-Image-2512",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Elgin 1943 USN Military Stop Watch - NAWCC Forums",
+      "url": "https://mb.nawcc.org/threads/elgin-1943-usn-military-stop-watch.47329/",
+      "snippet": "Feb 19, 2009 · This is a minute timer with a 30 minute register. I don't have this specific model to compare but have a similar 10 …"
+    },
+    {
+      "title": "WW2 German Timer, U-Jagd - NAWCC Forums",
+      "url": "https://mb.nawcc.org/threads/ww2-german-timer-u-jagd.31389/",
+      "snippet": "Feb 16, 2007 · I have been trying to find out how this German ww2 timer was used to “hunt submarines”. I do not own the timer, just …"
+    },
+    {
+      "title": "Need help Identifying Elgin stopwatch timer | NAWCC Forums",
+      "url": "https://mb.nawcc.org/threads/need-help-identifying-elgin-stopwatch-timer.161890/",
+      "snippet": "Aug 1, 2019 · Recently acquired an Elgin stopwatch I have never seen before. The way the dial is marked it for timing a 5 mile run at …"
+    },
+    {
+      "title": "Waltham STOP watch. Any ideas?? | NAWCC Forums",
+      "url": "https://mb.nawcc.org/threads/waltham-stop-watch-any-ideas.93559/",
+      "snippet": "Sep 22, 2012 · You have a Waltham Model 11609 , Type A, No. 105 timer/stopwatch. The large hand measures seconds in 1/5 sec. …"
+    },
+    {
+      "title": "Meylan Stopwatch Corp.? | NAWCC Forums",
+      "url": "https://mb.nawcc.org/threads/meylan-stopwatch-corp.180592/",
+      "snippet": "Jun 28, 2021 · I just acquired another MEYLAN stopwatch at a small antique mall in Ferdinand, IN for five bucks, just seemed like to …"
+    }
+  ]
+}

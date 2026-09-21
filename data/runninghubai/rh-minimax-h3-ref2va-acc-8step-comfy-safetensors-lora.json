@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-minimax-h3-ref2va-acc-8step-comfy.safetensors-lora",
+  "slug": "runninghubai-rh-minimax-h3-ref2va-acc-8step-comfy-safetensors-lora",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-minimax-h3-ref2va-acc-8step-comfy.safetensors-lora",
+  "created_at": "2026-09-21T02:11:22.000Z",
+  "updated_at": "2026-09-21T02:30:10.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1702741328,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Déclarer les loyers de mon (mes) locataire (s) - Caf.fr",
+      "url": "https://www.caf.fr/professionnels/offres-et-services/caf-de-l-orne/partenaires-locaux/nos-partenaires-logement/declarer-les-loyers-de-mon-mes-locataires",
+      "snippet": "Pour une mise à jour rapide, simple et sécurisée des dossiers de vos locataires, choisissez de télédéclarer les loyers : La …"
+    },
+    {
+      "title": "Campagne de la télédéclaration des loyers - Caf.fr",
+      "url": "https://www.caf.fr/professionnels/actualites/campagne-de-la-teledeclaration-des-loyers",
+      "snippet": "Aug 12, 2026 · Vous y trouverez des informations utiles à la gestion du dossier de votre/vos locataire (s) et notamment toutes les …"
+    },
+    {
+      "title": "Déclaration des loyers perçus pour l'aide au logement",
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/R1274",
+      "snippet": "Permet au bailleur de déclarer les changements de situation de son locataire dès qu'il en a connaissance (déménagement, …"
+    },
+    {
+      "title": "Quel montant déclarer à la CAF pour l'APL ? | Mes-Allocs.fr",
+      "url": "https://www.mes-allocs.fr/guides/aide-logement/apl/montant-declarer-caf-apl/",
+      "snippet": "Apr 22, 2026 · Net social, revenus du conjoint, primes, chômage, allocations, pension alimentaire : découvrez comment déclarer vos …"
+    },
+    {
+      "title": "Comment déclarer votre bail à la CAF et aux impôts",
+      "url": "https://www.vosdemarchesadministratives.fr/enregistrer-bail-caf-impots/",
+      "snippet": "Jul 15, 2025 · Apprenez comment enregistrer facilement votre bail à la CAF ou aux impôts : démarches, documents à fournir et …"
+    }
+  ]
+}

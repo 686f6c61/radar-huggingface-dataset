@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "OpenStems/OpenStems-Models",
+  "slug": "openstems-openstems-models",
+  "author": "OpenStems",
+  "url": "https://huggingface.co/OpenStems/OpenStems-Models",
+  "created_at": "2026-09-21T01:37:05.000Z",
+  "updated_at": "2026-09-21T01:44:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "audio-to-audio",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "audio",
+    "music-source-separation",
+    "gguf",
+    "openstems",
+    "audio-to-audio",
+    "en",
+    "zh",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 869984281,
+  "storage_human": "870 MB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Ebay Kleinanzeigen - ein Erfahrungsbericht - ComputerBase",
+      "url": "https://www.computerbase.de/forum/threads/ebay-kleinanzeigen-ein-erfahrungsbericht.1424751/",
+      "snippet": "Dec 14, 2014 · Hallo Allerseits, ich habe ebay selbst schon lange nicht mehr zum Verkaufen genutzt da 10% Vermittlungsgebühr …"
+    },
+    {
+      "title": "Tickets: Darf man Eintrittskarten weiterverkaufen?",
+      "url": "https://www.juraforum.de/news/tickets-darf-man-eintrittskarten-weiterverkaufen_247469",
+      "snippet": "Jul 5, 2026 · In der Praxis kommt es immer wieder vor, dass man sich Tickets für eine weit in der Ferne liegende Veranstaltung kauft …"
+    },
+    {
+      "title": "Ebay Kleinanzeigen - Rückerstattung/Widerruf gegen privat erzwingen ...",
+      "url": "https://www.computerbase.de/forum/threads/ebay-kleinanzeigen-rueckerstattung-widerruf-gegen-privat-erzwingen.2097197/",
+      "snippet": "Aug 6, 2022 · Hallo, ich brauche mal ein paar Infos bzw. Erfahrungen wie man die Rückzahlung nach einen Widerruf am besten …"
+    },
+    {
+      "title": "Überweisungsbetrug - was tun? ᐅ Tatbestand, Anzeige, Strafe",
+      "url": "https://www.juraforum.de/lexikon/ueberweisungsbetrug",
+      "snippet": "Feb 17, 2026 · Was ist Überweisungsbetrug? ️ § 263a StGB ️ Was tun bei Überweisungsbetrug? Anzeige erstatten? ️ Wer …"
+    },
+    {
+      "title": "eBay Kleinanzeigen leeres Paket angekommen - ComputerBase",
+      "url": "https://www.computerbase.de/forum/threads/ebay-kleinanzeigen-leeres-paket-angekommen.1539138/",
+      "snippet": "Dec 8, 2015 · Habe vor 3 Wochen eine gebrauchte GTX 980 Ti für 600 Euro bei eBay Kleinanzeigen von einem privaten Verkäufer …"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "schema": 1,
+  "id": "AiMamis/Jenny_Lorenzo",
+  "slug": "aimamis-jenny_lorenzo",
+  "author": "AiMamis",
+  "url": "https://huggingface.co/AiMamis/Jenny_Lorenzo",
+  "created_at": "2026-09-21T01:20:14.000Z",
+  "updated_at": "2026-09-21T01:20:50.000Z",
+  "license": "openrail++",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "license:openrail++",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 4,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 458949782,
+  "storage_human": "459 MB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Inicio | Suprema Corte de Justicia de la Nación/Casas de los Saberes ...",
+      "url": "https://cursos.scjn.gob.mx/",
+      "snippet": "Boletín \"La Corte al Día\". Temas resueltos por la SCJN"
+    },
+    {
+      "title": "www.questions.sncf.com",
+      "url": "http://www.questions.sncf.com/",
+      "snippet": "This domain does not exist"
+    }
+  ]
+}

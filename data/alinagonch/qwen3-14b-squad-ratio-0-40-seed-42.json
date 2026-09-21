@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "AlinaGonch/qwen3-14b-squad-ratio-0.40-seed-42",
+  "slug": "alinagonch-qwen3-14b-squad-ratio-0-40-seed-42",
+  "author": "AlinaGonch",
+  "url": "https://huggingface.co/AlinaGonch/qwen3-14b-squad-ratio-0.40-seed-42",
+  "created_at": "2026-09-20T22:08:28.000Z",
+  "updated_at": "2026-09-20T22:08:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 268399158,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jak wylogować się z konta YouTube na telewizorze lub konsoli do gier ...",
+      "url": "https://support.google.com/youtube/answer/7612539?hl=pl",
+      "snippet": "Możesz wylogować się z konta YouTube na telewizorze lub konsoli do gier albo usunąć je niezależnie od tego, czy masz dostęp do …"
+    },
+    {
+      "title": "Ebikes - Mountain For Sale | Buy and Sell Used Ebikes ... - Pinkbike",
+      "url": "https://www.pinkbike.com/buysell/list/?category=74",
+      "snippet": "Explore our listings of used Ebikes - Mountain for sale. Pinkbike hosts the largest directory of Ebikes - Mountain listings."
+    },
+    {
+      "title": "Memverifikasi akun YouTube Anda",
+      "url": "https://support.google.com/youtube/answer/171664?hl=id",
+      "snippet": "Mengapa YouTube meminta nomor telepon saya? Kami menangani masalah spam dan penyalahgunaan dengan serius. …"
+    },
+    {
+      "title": "Downhill Bikes For Sale | Buy and Sell Used Downhill ... - Pinkbike",
+      "url": "https://www.pinkbike.com/buysell/list/?category=1",
+      "snippet": "Explore our listings of used Downhill Bikes for sale. Pinkbike hosts the largest directory of Downhill Bikes listings."
+    },
+    {
+      "title": "在 YouTube 上以高畫面更新率 (每秒影格數高) 觀看影片 - 電腦",
+      "url": "https://support.google.com/youtube/answer/6124459?hl=zh-Hant&co=GENIE.Platform%3DDesktop",
+      "snippet": "如何以高畫面更新率觀看影片 你觀看的 YouTube 影片畫質必須是 720p 或 1080p，才能以高畫面更新率播放。 在畫質選單中，高畫面 …"
+    }
+  ]
+}

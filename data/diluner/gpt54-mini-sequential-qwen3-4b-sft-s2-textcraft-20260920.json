@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Diluner/gpt54-mini-sequential-qwen3-4b-sft-s2-textcraft-20260920",
+  "slug": "diluner-gpt54-mini-sequential-qwen3-4b-sft-s2-textcraft-20260920",
+  "author": "Diluner",
+  "url": "https://huggingface.co/Diluner/gpt54-mini-sequential-qwen3-4b-sft-s2-textcraft-20260920",
+  "created_at": "2026-09-21T00:07:45.000Z",
+  "updated_at": "2026-09-21T00:08:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "agent-training",
+    "gpt-5.4-mini",
+    "sft",
+    "sequential",
+    "conversational",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:finetune:Qwen/Qwen3-4B",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4411424256,
+  "parameters_human": "4.41B",
+  "storage_bytes": 17657165270,
+  "storage_human": "17.7 GB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "History of artificial intelligence - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/History_of_artificial_intelligence",
+      "snippet": "The history of artificial intelligence (AI) began in antiquity, with myths, stories, and rumors of artificial beings endowed with intelligence …"
+    },
+    {
+      "title": "History of artificial intelligence | Dates, Advances, Alan Turing ...",
+      "url": "https://www.britannica.com/science/history-of-artificial-intelligence",
+      "snippet": "Jul 28, 2026 · This article covers the history of artificial intelligence from its beginnings with the work of Alan Turing to advancements …"
+    },
+    {
+      "title": "History of Artificial Intelligence Development: Complete Timeline",
+      "url": "https://sudonull.com/history-of-artificial-intelligence-development-complete-timeline",
+      "snippet": "Jun 17, 2026 · Explore the complete history of artificial intelligence development from Turing to today. Learn about AI winters, deep …"
+    },
+    {
+      "title": "The History and Evolution of AI: Complete Timeline (1943–2026)",
+      "url": "https://theaiwoods.com/history-and-evolution-of-ai/",
+      "snippet": "Jul 14, 2026 · Discover the complete history and evolution of Artificial Intelligence, from the Turing Test and Dartmouth Conference to …"
+    },
+    {
+      "title": "Timeline of artificial intelligence - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Timeline_of_artificial_intelligence",
+      "snippet": "Greek myths of Hephaestus and Pygmalion incorporated the idea of intelligent automata (such as Talos) and artificial beings (such as …"
+    }
+  ]
+}

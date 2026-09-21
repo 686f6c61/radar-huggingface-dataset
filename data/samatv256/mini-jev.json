@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "samatv256/mini-Jev",
+  "slug": "samatv256-mini-jev",
+  "author": "samatv256",
+  "url": "https://huggingface.co/samatv256/mini-Jev",
+  "created_at": "2026-09-21T00:18:46.000Z",
+  "updated_at": "2026-09-21T00:23:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "pytorch",
+  "languages": [],
+  "tags": [
+    "pytorch",
+    "safetensors",
+    "odm_mini",
+    "agent",
+    "agentic-ai",
+    "decision-model",
+    "tool-selection",
+    "system-one",
+    "open-weights",
+    "qwen",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:finetune:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 262657,
+  "parameters_human": "262657",
+  "storage_bytes": 1050940,
+  "storage_human": "1 MB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Premier League Table, Standings & Form Guide for 2026/27 season",
+      "url": "https://www.premierleague.com/en/tables/premier-league",
+      "snippet": "View the latest standings in the Premier League table for 2026/27 season, along with form guides and season archives, on the official …"
+    },
+    {
+      "title": "Premier League Table and Standings - Football - BBC Sport",
+      "url": "https://www.bbc.co.uk/sport/football/premier-league/table",
+      "snippet": "1 day ago · Find out which football teams are leading the pack or at the foot of the table in the Premier League on BBC Sport"
+    },
+    {
+      "title": "Premier League Football News, Fixtures, Scores & Results",
+      "url": "https://www.premierleague.com/",
+      "snippet": "Visit the official website of the Premier League, for all the latest Premier League news and features."
+    },
+    {
+      "title": "2026-27 English Premier League Standings - ESPN",
+      "url": "https://www.espn.com/soccer/standings/_/league/eng.1",
+      "snippet": "Get the 2026-27 season English Premier League standings on ESPN. Find the full standings with win, loss and draw record for each …"
+    },
+    {
+      "title": "Premier League Table - Sky Sports",
+      "url": "https://www.skysports.com/premier-league-table",
+      "snippet": "Complete table of Premier League standings for the current Season, plus access to tables from past seasons and other Football …"
+    }
+  ]
+}

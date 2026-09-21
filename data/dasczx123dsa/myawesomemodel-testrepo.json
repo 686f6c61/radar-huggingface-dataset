@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "DASCZX123DSA/MyAwesomeModel-TestRepo",
+  "slug": "dasczx123dsa-myawesomemodel-testrepo",
+  "author": "DASCZX123DSA",
+  "url": "https://huggingface.co/DASCZX123DSA/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-21T01:22:27.000Z",
+  "updated_at": "2026-09-21T01:22:56.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 59,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cómo romper una relación de pareja de manera saludable",
+      "url": "https://psicologiaymente.com/pareja/como-romper-relacion-pareja-manera-saludable",
+      "snippet": "Feb 18, 2025 · Terminar una relación de pareja nunca es fácil, pero hacerlo de manera consciente y saludable puede ayudarte a …"
+    },
+    {
+      "title": "10 pasos de cómo terminar una relación de manera sana",
+      "url": "https://positiveliving.pe/como-terminar-una-relacion-de-manera-sana/",
+      "snippet": "Cuando las personas buscan cómo terminar una relación de manera sana, generalmente necesitan una guía clara sobre qué hacer y …"
+    },
+    {
+      "title": "Cómo terminar una relación de manera respetuosa y considerada",
+      "url": "https://psicologiaysalud.com.es/como-terminar-una-relacion/",
+      "snippet": "En este artículo, exploraremos diferentes aspectos sobre cómo terminar una relación de forma respetuosa, desde la preparación …"
+    },
+    {
+      "title": "Cómo terminar una relación: guía clara paso a paso",
+      "url": "https://www.regainlove.com/es-es/guia/fundamentos/terminar-relacion-cuando-y-como",
+      "snippet": "Guía basada en ciencia para saber cuándo terminar una relación y cómo hacerlo con respeto y seguridad. Criterios claros, frases …"
+    },
+    {
+      "title": "¿Cómo terminar una relación sin lastimar?: 6 tips para cerrar ciclos",
+      "url": "https://humanitas.edu.mx/blog/aprende/tendencias/como-terminar-una-relacion-sin-lastimar-6-tips-para-cerrar-ciclos",
+      "snippet": "Oct 17, 2025 · Sin embargo, dejar una relación también puede ser un acto de amor propio, amor por la otra persona y por lo que fue. …"
+    }
+  ]
+}

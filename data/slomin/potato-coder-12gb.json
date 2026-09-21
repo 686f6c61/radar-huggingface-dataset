@@ -1,0 +1,86 @@
+{
+  "schema": 1,
+  "id": "Slomin/Potato-CODER-12GB",
+  "slug": "slomin-potato-coder-12gb",
+  "author": "Slomin",
+  "url": "https://huggingface.co/Slomin/Potato-CODER-12GB",
+  "created_at": "2026-09-20T22:07:14.000Z",
+  "updated_at": "2026-09-20T23:12:54.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "qwen",
+    "qwen35moe",
+    "moe",
+    "35b-a3b",
+    "potato-coder",
+    "potato",
+    "coding",
+    "agentic-coding",
+    "long-context",
+    "131k",
+    "iq3_xxs",
+    "llama.cpp",
+    "12gb",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "base_model:ornith-ai/Ornith-1.5-35B-A3B",
+    "base_model:quantized:ornith-ai/Ornith-1.5-35B-A3B",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 13825374880,
+  "storage_human": "13.8 GB",
+  "base_model": "peculiar-ragdoll/Tiel-Coder-35B-A3B-GGUF, ornith-ai/Ornith-1.5-35B-A3B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Scott Summers - Special Mission Helicopters - HOFO | LinkedIn",
+      "url": "https://au.linkedin.com/in/scott-summers-45215835",
+      "snippet": "On separating from the Military, Scott became the Flight Program Director, Head of Training Operations for Becker Helicopter …"
+    },
+    {
+      "title": "LinkedIn: Log In or Sign Up | Scott Summers",
+      "url": "https://www.linkedin.com/posts/scott-summers-45215835_linkedin-log-in-or-sign-up-activity-7390608370946457600-9HOb",
+      "snippet": "Nov 4, 2025 · I'm attending The Debrief - Brisbane Edition . Join me on November 26. linkedin.com 8 1,158 followers 6 Posts"
+    },
+    {
+      "title": "Scott Summers - Currently retired; however I am open ... - LinkedIn",
+      "url": "https://www.linkedin.com/in/scottsummers727",
+      "snippet": "Currently retired; however I am open interesting very part time remote opportunities. · Experienced Data Manager and Reporting …"
+    },
+    {
+      "title": "400+ \"Scott Summers\" profiles | LinkedIn",
+      "url": "https://www.linkedin.com/pub/dir/scott/summers",
+      "snippet": "View the profiles of professionals named \"Scott Summers\" on LinkedIn. There are 400+ professionals named \"Scott Summers\", who …"
+    },
+    {
+      "title": "Scott Summers - London, England, United Kingdom - LinkedIn",
+      "url": "https://uk.linkedin.com/in/scottysummers",
+      "snippet": "Location: London · 500+ connections on LinkedIn. View Scott Summers’ profile on LinkedIn, a professional community of 1 billion …"
+    }
+  ]
+}

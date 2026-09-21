@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "brosnanyuen/Qwen3.8-27B-SFT-Attacker-v3-GGUF",
+  "slug": "brosnanyuen-qwen3-8-27b-sft-attacker-v3-gguf",
+  "author": "brosnanyuen",
+  "url": "https://huggingface.co/brosnanyuen/Qwen3.8-27B-SFT-Attacker-v3-GGUF",
+  "created_at": "2026-09-21T01:26:31.000Z",
+  "updated_at": "2026-09-21T01:29:45.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 36,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 17741861536,
+  "storage_human": "17.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "potplayer在哪下载？ - 知乎",
+      "url": "https://www.zhihu.com/question/406926262",
+      "snippet": "看到这么多人进了假官网，我还在想这玩意官网这么难找吗 然后试了一下，发现真的难找，百度不说了，就连 Bing 都把假的排前面， …"
+    },
+    {
+      "title": "De zin en onzin van voedingssupplement VitaePro | Radar",
+      "url": "https://radar.avrotros.nl/artikel/de-zin-en-onzin-van-voedingssupplement-vitaepro-38346",
+      "snippet": "Nov 23, 2020 · Het is gewoon een multivitamine en die kun je veel goedkoper gewoon bij bijvoorbeeld Kruidvat of Etos kopen.' …"
+    },
+    {
+      "title": "Terugroepactie babyslaapzak Kruidvat - Radar",
+      "url": "https://radar.avrotros.nl/artikel/terugroepactie-babyslaapzak-kruidvat-7354",
+      "snippet": "Jun 26, 2009 · Terugroepactie babyslaapzak Kruidvat De verstelbare babyslaapzak Winnie de Poeh van Kruidvat blijkt niet veilig te …"
+    },
+    {
+      "title": "steam上的wallpaper engine下载的壁纸是保存在哪个文件夹呀？",
+      "url": "https://www.zhihu.com/question/53942965?write",
+      "snippet": "找不到~ 然后选中在资源管理器打开 最后进去文件夹，选择mp4文件或者jpg/png文件 新人答题求赞。 更新一波，如果文件是pkg的小 …"
+    },
+    {
+      "title": "Muggenwerende middelen getest - Radar",
+      "url": "https://radar.avrotros.nl/artikel/muggenwerende-middelen-getest-8567",
+      "snippet": "May 24, 2010 · Kruidvat stelt dat de geteste stekker binnenkort uit de winkel wordt gehaald en wordt vervangen door een verbeterde …"
+    }
+  ]
+}

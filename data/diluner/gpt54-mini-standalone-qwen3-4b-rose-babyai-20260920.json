@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Diluner/gpt54-mini-standalone-qwen3-4b-rose-babyai-20260920",
+  "slug": "diluner-gpt54-mini-standalone-qwen3-4b-rose-babyai-20260920",
+  "author": "Diluner",
+  "url": "https://huggingface.co/Diluner/gpt54-mini-standalone-qwen3-4b-rose-babyai-20260920",
+  "created_at": "2026-09-21T00:01:00.000Z",
+  "updated_at": "2026-09-21T00:01:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "agent-training",
+    "gpt-5.4-mini",
+    "rose",
+    "standalone",
+    "conversational",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:finetune:Qwen/Qwen3-4B",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4411424256,
+  "parameters_human": "4.41B",
+  "storage_bytes": 8834317158,
+  "storage_human": "8.8 GB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Műholdkép - Időkép",
+      "url": "https://www.idokep.hu/muhold",
+      "snippet": "Látványos videó a legfrissebb műholdképekből, éjjel-nappal."
+    },
+    {
+      "title": "Időkép térkép | Időkép",
+      "url": "https://www.idokep.hu/idokep",
+      "snippet": "3 days ago · Élő időkép térkép, friss időjárás-jelentés az ország minden pontjáról."
+    },
+    {
+      "title": "Műholdkép - Időkép",
+      "url": "https://www.idokep.eu/muhold",
+      "snippet": "Látványos videó a legfrissebb műholdképekből, éjjel-nappal."
+    },
+    {
+      "title": "Műhold - Aktuális - met.hu",
+      "url": "https://www.met.hu/idojaras/aktualis_idojaras/muhold/index.php",
+      "snippet": "Időjárás, Megfigyelések, Előrejelzés, Éghajlat, Balatoni széladatok, Balatoni viharjelzés, Vízhőmérsékletek, METAR, TAF, UV-B …"
+    },
+    {
+      "title": "Műholdas időjárási képek: Magyarország - meteoblue",
+      "url": "https://www.meteoblue.com/hu/country/id%C5%91j%C3%A1r%C3%A1s/satellite/magyarorsz%C3%A1g_magyarorsz%C3%A1g_719819",
+      "snippet": "Az időjárási műholdképek (Magyarország) a felhőzetet mutatják. Az új műholdas megfigyelések 5–15 percenként válnak elérhetővé, …"
+    }
+  ]
+}

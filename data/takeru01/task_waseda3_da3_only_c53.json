@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "takeru01/task_waseda3_DA3_only_c53",
+  "slug": "takeru01-task_waseda3_da3_only_c53",
+  "author": "takeru01",
+  "url": "https://huggingface.co/takeru01/task_waseda3_DA3_only_c53",
+  "created_at": "2026-09-21T02:15:20.000Z",
+  "updated_at": "2026-09-21T02:15:35.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 51904144,
+  "parameters_human": "51.9M",
+  "storage_bytes": 207656940,
+  "storage_human": "208 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kludi O-ring 92513011-00 16x2 neutral - obadis.com",
+      "url": "https://www.obadis.com/en/kludi-o-ring-92513011-00-16x2-neutral.html",
+      "snippet": "Kludi O-ring 92513011-00 16x2 neutral Be the first to review this product €3.31 instead of€4.30** -23% You're saving€0.99 Incl. 19% …"
+    },
+    {
+      "title": "Kludi O-Ring 16 X 2mm neutral 92513011-00 -",
+      "url": "https://www.montageanziehen.com/product/kludi-o-ring-16-x-2mm-neutral-92513011-00/",
+      "snippet": "Kludi O-Ring 16 X 2mm 92513011-00 neutral für Armaturen Hersteller: Kludi GmbH & Co. KG Serie: ohne Farbe: neutral Gewicht: …"
+    },
+    {
+      "title": "KLUDI Ersatzteil O-Ring 16 X 2 Neutral 92513011-00",
+      "url": "https://heizung24shop.de/es/KLUDI-Ersatzteil-O-Ring-16-X-2-Neutral-92513011-00/KL-92513011-00",
+      "snippet": "Información sobre el producto \"KLUDI Ersatzteil O-Ring 16 X 2 Neutral 92513011-00\" KLUDI Ersatzteil O-Ring 16 X 2 Neutral Kludi …"
+    },
+    {
+      "title": "Kludi O-Ring 92513011-00 16x2 Neutral - Skybad",
+      "url": "https://www.skybad.de/kludi-o-ring-92513011-00-16x2-neutral.html",
+      "snippet": "Marken Sanitärprodukte direkt vom Hersteller zum günstigen Online-Preis kaufen im Sanitär- und Badshop Skybad. Onlineshop mit …"
+    },
+    {
+      "title": "Gasket 16x2 EPDM 92513011-00 - emagma.lv",
+      "url": "https://emagma.lv/en/mounting-materials-fasteners-and-insulation/gaskets/gasket-16x2-epdm-92513011-00/756/2/p",
+      "snippet": "Home Mounting materials, fasteners and insulation Gaskets Gasket 16x2 EPDM 92513011-00 Share:"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Jin4748/personal",
+  "slug": "jin4748-personal",
+  "author": "Jin4748",
+  "url": "https://huggingface.co/Jin4748/personal",
+  "created_at": "2026-09-20T20:55:37.000Z",
+  "updated_at": "2026-09-20T20:58:55.000Z",
+  "license": "myown",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Santorin — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Santorin",
+      "snippet": "Santorin (en grec moderne : Σαντορίνη / Santoríni), aussi appelée Théra ou Thira (Θήρα / Thíra), est une île grecque située en mer …"
+    },
+    {
+      "title": "Visiter Santorin : 10 incontournables à faire et voir (Grèce)",
+      "url": "https://generationvoyage.fr/visiter-santorin-faire-voir/",
+      "snippet": "May 11, 2025 · Visiter Santorin vous promet des expériences uniques. Découvrez 10 incontournables à faire et voir pour profiter de …"
+    },
+    {
+      "title": "Santorin, Grèce: Ce qu'il faut savoir pour votre visite (2026)",
+      "url": "https://www.tripadvisor.fr/Tourism-g189433-Santorini_Cyclades_South_Aegean-Vacations.html",
+      "snippet": "Découvrez différents plats, des fruits de mer frais aux assiettes gastronomiques, tous accompagnés d'une vue imprenable. Voici mes …"
+    },
+    {
+      "title": "Santorin tourisme - Guide touristique pour Santorin, Grèce",
+      "url": "https://santorintourisme.com/",
+      "snippet": "Composé de 5 îles et îlots (Santorin, Thirassia, Paléa Kameni, Néa Kameni, Aspronissi), Santorin est aujourd’hui une destination …"
+    },
+    {
+      "title": "Que faire à Santorin ? Top 12 des meilleures activités sur l'île !",
+      "url": "https://www.voyageavecnous.fr/que-faire-a-santorin/",
+      "snippet": "Apr 22, 2026 · Vous ne savez pas que faire à Santorin ? Je vous donne mes 12 activités préférées et des itinéraires pour visiter …"
+    }
+  ]
+}

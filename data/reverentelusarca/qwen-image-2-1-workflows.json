@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "reverentelusarca/qwen-image-2.1-workflows",
+  "slug": "reverentelusarca-qwen-image-2-1-workflows",
+  "author": "reverentelusarca",
+  "url": "https://huggingface.co/reverentelusarca/qwen-image-2.1-workflows",
+  "created_at": "2026-09-20T21:49:40.000Z",
+  "updated_at": "2026-09-20T21:51:27.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "What Happened on September 8 | HISTORY",
+      "url": "https://www.history.com/this-day-in-history/september-8",
+      "snippet": "Discover what happened on September 8 with HISTORY&#8217;s summaries of major events, anniversaries, famous births and …"
+    },
+    {
+      "title": "Labor Day 2026: Facts, Date & Founding | HISTORY",
+      "url": "https://www.history.com/articles/labor-day",
+      "snippet": "Apr 13, 2010 · Labor Day, an annual celebration of workers and their achievements, originated during one of American labor history’s …"
+    },
+    {
+      "title": "This Day in HISTORY Daily Briefing",
+      "url": "https://www.history.com/this-day-in-history-daily-briefing",
+      "snippet": "History happens every day! Check in with your virtual assistant or wherever you get your podcasts to find out about the historical …"
+    },
+    {
+      "title": "HISTORY TV Schedule | HISTORY Channel",
+      "url": "https://www.history.com/schedule",
+      "snippet": "Check the HISTORY Channel show schedule and find out when your favorite shows are airing. Find cast bios, videos, and exclusive …"
+    },
+    {
+      "title": "V-J Day | HISTORY",
+      "url": "https://www.history.com/articles/v-j-day",
+      "snippet": "Oct 14, 2009 · Rhode Island is the only state with a holiday dedicated to V-J Day (its official name is Victory Day); it is celebrated on …"
+    }
+  ]
+}

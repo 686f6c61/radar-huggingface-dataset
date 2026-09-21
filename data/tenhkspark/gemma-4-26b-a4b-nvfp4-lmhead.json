@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "tenhkspark/gemma-4-26B-A4B-NVFP4-lmhead",
+  "slug": "tenhkspark-gemma-4-26b-a4b-nvfp4-lmhead",
+  "author": "tenhkspark",
+  "url": "https://huggingface.co/tenhkspark/gemma-4-26B-A4B-NVFP4-lmhead",
+  "created_at": "2026-09-20T23:43:14.000Z",
+  "updated_at": "2026-09-21T00:52:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ja"
+  ],
+  "tags": [
+    "safetensors",
+    "gemma4",
+    "nvfp4",
+    "vllm",
+    "ja",
+    "base_model:google/gemma-4-26B-A4B-it",
+    "base_model:quantized:google/gemma-4-26B-A4B-it",
+    "license:apache-2.0",
+    "8-bit",
+    "modelopt",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14386941232,
+  "parameters_human": "14.39B",
+  "storage_bytes": 19235891686,
+  "storage_human": "19.2 GB",
+  "base_model": "google/gemma-4-26B-A4B-it, nvidia/Gemma-4-26B-A4B-NVFP4",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Create and save a passkey | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/accounts-billing/security/create-save-passkey",
+      "snippet": "Learn how to create and save a passkey to sign in to your Microsoft personal or work/school account and many other websites, apps …"
+    },
+    {
+      "title": "Anmelden bei Hotmail | Microsoft Support",
+      "url": "https://support.microsoft.com/de-de/accounts-billing/manage/how-to-sign-in-to-hotmail",
+      "snippet": "Microsoft hält immer ein Auge auf ungewöhnliche Anmeldeaktivitäten, nur für den Fall, dass jemand anderes versucht, auf Ihr Konto …"
+    },
+    {
+      "title": "Sign in to your account - techcommunity.microsoft.com",
+      "url": "https://techcommunity.microsoft.com/blog/exchange/exchange-online-ews-your-time-is-almost-up/4492361",
+      "snippet": "We wanted to provide an update on Exchange Online EWS deprecation."
+    },
+    {
+      "title": "Microsoft Copilot Blog | Microsoft Community Hub",
+      "url": "https://techcommunity.microsoft.com/category/microsoft-copilot/blog/microsoft-copilot-blog",
+      "snippet": "Built for business: How Microsoft 365 Copilot keeps you in the flow of legal work Now the LegalZoom agent works inside Microsoft …"
+    },
+    {
+      "title": "Change the refresh rate on your monitor in Windows | Microsoft Support",
+      "url": "https://support.microsoft.com/en-us/windows/hardware/display-graphics/change-the-refresh-rate-on-your-monitor-in-windows",
+      "snippet": "Learn how to change the refresh rate for your display in Windows to determine how smoothly motion appears on your screen."
+    }
+  ]
+}

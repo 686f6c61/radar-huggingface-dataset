@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "BrandonHowe/Qwen3-8b-urban-qwen-20260920-full-CPT-merged-epoch-3",
+  "slug": "brandonhowe-qwen3-8b-urban-qwen-20260920-full-cpt-merged-epoch-3",
+  "author": "BrandonHowe",
+  "url": "https://huggingface.co/BrandonHowe/Qwen3-8b-urban-qwen-20260920-full-CPT-merged-epoch-3",
+  "created_at": "2026-09-21T01:46:14.000Z",
+  "updated_at": "2026-09-21T01:46:58.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "continued-pretraining",
+    "bf16",
+    "conversational",
+    "dataset:CompassioninMachineLearning/urban_12738_cleaned",
+    "base_model:Qwen/Qwen3-8B-Base",
+    "base_model:finetune:Qwen/Qwen3-8B-Base",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 223,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392939374,
+  "storage_human": "16.4 GB",
+  "base_model": "Qwen/Qwen3-8B-Base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Boitier easy test, code rousseau [Résolu] - Réseau",
+      "url": "https://forums.commentcamarche.net/forum/affich-21126903-boitier-easy-test-code-rousseau",
+      "snippet": "Forum Connectivité Réseau Sujet PrécédentSujet Suivant Boitier easy test, code rousseau Résolu/Fermé emy- mimi - 17 mars 2011 …"
+    },
+    {
+      "title": "Vous informer sur le code de la route : Boitier Code Rousseau",
+      "url": "https://forum.codeclic.com/boitier-code-rousseau-t3469.html",
+      "snippet": "Boitier Code Rousseau - Page 1 sur 1 Vos questions sur le code de la route Vers le contenu - Codeclic Index du forum Vos questions …"
+    },
+    {
+      "title": "Vous informer sur le code de la route : Qui est le plus proche de l ...",
+      "url": "https://forum.codeclic.com/qui-est-plus-proche-examen-rousseau-enpc-t5380.html",
+      "snippet": "Qui est le plus proche de l'examen : Rousseau ou ENPC ? - Page 1 sur 1"
+    },
+    {
+      "title": "Desinstaller new tab [Résolu] - Virus - CommentCaMarche",
+      "url": "https://forums.commentcamarche.net/forum/affich-29442367-desinstaller-new-tab",
+      "snippet": "Apr 27, 2020 · Salut, 1) Supprimer l'extension qui cause des problèmes. Sur Firefox : Menu Outils / Modules complémentaires Onglet …"
+    },
+    {
+      "title": "Codeclic / Code Rousseau et autre : Vos suggestions sur Codeclic",
+      "url": "https://forum.codeclic.com/codeclic-code-rousseau-autre-t4414.html",
+      "snippet": "Sep 27, 2012 · Codeclic / Code Rousseau et autre Codeclic / Code Rousseau et autre - Page 1 sur 1 Vos questions et remarques sur …"
+    }
+  ]
+}

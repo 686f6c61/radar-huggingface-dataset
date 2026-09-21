@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "p-yan/laya-quanto",
+  "slug": "p-yan-laya-quanto",
+  "author": "p-yan",
+  "url": "https://huggingface.co/p-yan/laya-quanto",
+  "created_at": "2026-09-20T21:39:42.000Z",
+  "updated_at": "2026-09-20T21:57:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "optimum-quanto",
+  "languages": [],
+  "tags": [
+    "optimum-quanto",
+    "safetensors",
+    "quantized",
+    "quantization",
+    "laya",
+    "q8",
+    "q4",
+    "base_model:convaiinnovations/laya",
+    "base_model:quantized:convaiinnovations/laya",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 805586588,
+  "storage_human": "806 MB",
+  "base_model": "convaiinnovations/laya",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pinterest",
+      "url": "https://www.pinterest.com/",
+      "snippet": "Bring your favorite ideas to life With Pinterest, you can unlock tools that spark your creativity and help you find more inspiration."
+    },
+    {
+      "title": "P — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/P",
+      "snippet": "Dans l'Église catholique francophone, P. peut signifier « Père », titre ou formule pour s'adresser à un prêtre. Il peut distinguer un …"
+    },
+    {
+      "title": "P - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/P",
+      "snippet": "P (minuscule: p) is the sixteenth letter of the Latin alphabet, used in the modern English alphabet, the alphabets of other western …"
+    },
+    {
+      "title": "P (lettre) — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/P_(lettre)",
+      "snippet": "En français, le p se prononce généralement [p]. Dans des mots généralement d'origine grecque, le graphème ph, qui transcrit la lettre …"
+    },
+    {
+      "title": "p — Wiktionnaire, le dictionnaire libre",
+      "url": "https://fr.m.wiktionary.org/wiki/p",
+      "snippet": "Vocabulaire apparenté par le sens modifier le wikicode p figure dans le recueil de vocabulaire en français ayant pour thème : unités …"
+    }
+  ]
+}

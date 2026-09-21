@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-minimax-h3-lms-v1.0-r64.safetensors-lora",
+  "slug": "runninghubai-rh-minimax-h3-lms-v1-0-r64-safetensors-lora",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-minimax-h3-lms-v1.0-r64.safetensors-lora",
+  "created_at": "2026-09-21T02:20:17.000Z",
+  "updated_at": "2026-09-21T02:30:39.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1239664536,
+  "storage_human": "1.2 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Microsoft Copilot: Your AI companion",
+      "url": "https://copilot.microsoft.com/?msockid=26ca7e2849846652139469f348a06794",
+      "snippet": "Microsoft Copilot is your companion to inform, entertain and inspire. Get advice, feedback and straightforward answers. Try Copilot now."
+    },
+    {
+      "title": "[Copilot 3D] - A Copilot Labs experiment",
+      "url": "https://copilot.microsoft.com/labs/experiments/copilot-3d?msockid=26ca7e2849846652139469f348a06794",
+      "snippet": "Turn images into 3D models with one click."
+    },
+    {
+      "title": "[Mico] - A Copilot Labs experiment",
+      "url": "https://copilot.microsoft.com/labs/experiments/mico?msockid=26ca7e2849846652139469f348a06794",
+      "snippet": "A vibrant new way to talk with Copilot"
+    },
+    {
+      "title": "[Portraits] - A Copilot Labs experiment",
+      "url": "https://copilot.microsoft.com/labs/portrait?msockid=26ca7e2849846652139469f348a06794",
+      "snippet": "Talk through big moments with AI that responds with voice and visuals"
+    },
+    {
+      "title": "[Copilot Audio Expressions] - A Copilot Labs experiment",
+      "url": "https://copilot.microsoft.com/labs/experiments/audio-expression?msockid=26ca7e2849846652139469f348a06794",
+      "snippet": "An experimental tool designed for effortless audio creation using Copilot's latest voice generation models."
+    }
+  ]
+}

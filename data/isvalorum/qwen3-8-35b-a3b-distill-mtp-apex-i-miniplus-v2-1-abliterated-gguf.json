@@ -1,0 +1,109 @@
+{
+  "schema": 1,
+  "id": "IsValorum/Qwen3.8-35B-A3B-Distill-MTP-APEX-I-MiniPlus-V2.1-Abliterated-GGUF",
+  "slug": "isvalorum-qwen3-8-35b-a3b-distill-mtp-apex-i-miniplus-v2-1-abliterated-gguf",
+  "author": "IsValorum",
+  "url": "https://huggingface.co/IsValorum/Qwen3.8-35B-A3B-Distill-MTP-APEX-I-MiniPlus-V2.1-Abliterated-GGUF",
+  "created_at": "2026-09-20T23:59:01.000Z",
+  "updated_at": "2026-09-21T20:09:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "gguf",
+  "languages": [
+    "en",
+    "zh",
+    "es",
+    "fr",
+    "de",
+    "pt",
+    "it",
+    "ru",
+    "ja",
+    "ko",
+    "vi",
+    "th",
+    "ar"
+  ],
+  "tags": [
+    "gguf",
+    "abliterated",
+    "uncensored",
+    "alignment",
+    "heretic",
+    "quantized",
+    "quantization",
+    "apex",
+    "apex-quant",
+    "custom-quantization",
+    "unsloth-studio",
+    "moe",
+    "reasoning",
+    "llama.cpp",
+    "qwen35moe",
+    "text-generation",
+    "en",
+    "zh",
+    "es",
+    "fr",
+    "de",
+    "pt",
+    "it",
+    "ru",
+    "ja",
+    "ko",
+    "vi",
+    "th",
+    "ar",
+    "base_model:empero-ai/Qwen3.8-35B-A3B-Distill",
+    "base_model:quantized:empero-ai/Qwen3.8-35B-A3B-Distill",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 34660610688,
+  "parameters_human": "34.66B",
+  "storage_bytes": 17263534976,
+  "storage_human": "17.3 GB",
+  "base_model": "empero-ai/Qwen3.8-35B-A3B-Distill",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Twin Autism: Can One Twin Have Autism and the Other Not?",
+      "url": "https://neurolaunch.com/can-one-twin-have-autism-and-the-other-not/",
+      "snippet": "Aug 11, 2024 · Can a Twin Be Autistic and the Other Twin Be Neurotypical Even With Identical DNA? Yes, and this is one of the …"
+    },
+    {
+      "title": "Can One Identical Twin Have Autism and the Other Not?",
+      "url": "https://biologyinsights.com/can-one-identical-twin-have-autism-and-the-other-not/",
+      "snippet": "Nov 26, 2025 · Identical twins share DNA, but not fate. Learn how epigenetics and non-shared environments explain autism …"
+    },
+    {
+      "title": "Why Can One Twin Be Autistic? Genes and More",
+      "url": "https://autisticnick.com/can-one-twin-be-autistic",
+      "snippet": "Aug 28, 2025 · For instance, consider a set of identical twins where one exhibits the characteristic social communication difficulties …"
+    },
+    {
+      "title": "Twin Study: Can Only One Identical Twin Be Autistic?",
+      "url": "https://autisticnick.com/can-one-identical-twin-be-autistic-and-not-the-other",
+      "snippet": "Sep 19, 2025 · Identical twins, originating from a single fertilized egg, share virtually identical genetic material. However, autism …"
+    },
+    {
+      "title": "Identical Twins and Autism Connection - NeuroLaunch.com",
+      "url": "https://neurolaunch.com/identical-twins-autism/",
+      "snippet": "Aug 11, 2024 · Explore the genetic link between identical twins and autism, including research findings and implications for families."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "hermitdave/Hemmingway-1-oQ4e",
+  "slug": "hermitdave-hemmingway-1-oq4e",
+  "author": "hermitdave",
+  "url": "https://huggingface.co/hermitdave/Hemmingway-1-oQ4e",
+  "created_at": "2026-09-21T01:47:38.000Z",
+  "updated_at": "2026-09-21T06:21:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "apple-silicon",
+    "text-generation",
+    "4-bit",
+    "oQ4e",
+    "hybrid-attention",
+    "conversational",
+    "base_model:Altworld/Hemmingway-1",
+    "base_model:quantized:Altworld/Hemmingway-1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 124,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 16003464746,
+  "storage_human": "16.0 GB",
+  "base_model": "Altworld/Hemmingway-1",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Formats de publicacions: tipus, classificació, mides i mostres",
+      "url": "https://ca.quilt-patterns.com/17195646-publication-formats-types-classification-sizes-and-samples",
+      "snippet": "Jan 24, 2025 · Pràcticament tots els amants de la literatura saben que hi ha un gran nombre de diferents formats de publicacions …"
+    },
+    {
+      "title": "Mida de paper - Viquipèdia, l'enciclopèdia lliure",
+      "url": "https://ca.wikipedia.org/wiki/Mida_de_paper",
+      "snippet": "La mida de paper o format és la forma i la mida del producte final, sigui un llibre, una revista, un pòster o un envàs. La selecció del …"
+    },
+    {
+      "title": "UB > Llibre d'estil > Criteris > Tipus de lletra i mida",
+      "url": "https://www.ub.edu/llibre-estil/criteri.php?id=2191",
+      "snippet": "Per indicar les diferents parts del document, la jerarquització dels apartats, etc., cal recórrer a mides diferents de la mateixa lletra o a …"
+    },
+    {
+      "title": "Mides de paper - Creativos Online",
+      "url": "https://ca.creativosonline.org/tamanos-de-paper.html",
+      "snippet": "I encara que avui dia hi ha un estàndard internacional, ens podem anar a diferents països del planeta per trobar diferents sèries de …"
+    },
+    {
+      "title": "BLOC 3. Formats de Paper | PDF - Scribd",
+      "url": "https://www.scribd.com/document/826233259/BLOC-3-Formats-de-paper",
+      "snippet": "4. Formats de paper Els formats de paper són una part fonamental de la normativa ISO i estan regulats per la norma ISO 216. …"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "fwgpiyawudk/SuryaOCR2_ThaiDoc-exp2-LoRA",
+  "slug": "fwgpiyawudk-suryaocr2_thaidoc-exp2-lora",
+  "author": "fwgpiyawudk",
+  "url": "https://huggingface.co/fwgpiyawudk/SuryaOCR2_ThaiDoc-exp2-LoRA",
+  "created_at": "2026-09-20T21:54:05.000Z",
+  "updated_at": "2026-09-20T21:54:13.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 106835872,
+  "storage_human": "107 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "از یک تا ده چند نمره به چهره این میتین آیا مثل رونالدو هست",
+      "url": "https://www.facebook.com/reel/2951469978386621/",
+      "snippet": "Oct 6, 2025 · از یک تا ده چند نمره به چهره این میتین آیا مثل رونالدو هست از یک تا ده چند نمره به چهره این میتین آیا مثل رونالدو هست امیری سمیه امیری and 10 others 󰍸 11 󰤦 …"
+    },
+    {
+      "title": "نمره از یک تا ده به این هنرمند — نظر شما چیه؟ | TikTok",
+      "url": "https://www.tiktok.com/@persian_history.ir/video/7678288500977945887",
+      "snippet": "جمع‌بندی: این ویدیو یک دعوت ساده و مؤثر برای سنجش واکنش مخاطب نسبت به یک هنرمند است؛ هدف اصلی گرفتن امتیاز «از یک تا ده»، تحریک گفتگو در کامنت‌ها و افزایش لایک و فالو."
+    },
+    {
+      "title": "‎تفسیرنقاشی/ضریب هوشی‎ | ‎به این هنر زیبا چند نمره میدی از ده ؟ تا حالا ...",
+      "url": "https://www.instagram.com/reel/DMM9rzLAJbY/",
+      "snippet": "116 likes, 5 comments - naghashi_tafsir on July 17, 2025‎: \"به این هنر زیبا چند نمره میدی از ده ؟ تا حالا نقاشی چهره برای خودتون یا کودکتون انجام دادید ؟ …"
+    },
+    {
+      "title": "از یک تا ده چه نمره ای به طرح میدی؟",
+      "url": "https://www.youtube.com/watch?v=lWYeX9SlOxk",
+      "snippet": "Nov 14, 2025 · از یک تا ده چه نمره ای به طرح میدی؟ #art #drawing #artist #سیاهقلم #نقاشی #طراحی #sketch #چهره"
+    },
+    {
+      "title": "از یک تا ده به این هنرمند چند میدی؟ نقد و حمایت هنری | TikTok",
+      "url": "https://www.tiktok.com/@persian_history.ir/video/7674621826475101470",
+      "snippet": "این ویدئو از مالک حساب ateme.artlife در اینستاگرام منتشر شده و از شما می‌خواهد هنرمند را از «یک تا ده» نمره دهید. هدف اصلی انتشار، دریافت بازخورد صادقانه و حمایت از هنرمند …"
+    }
+  ]
+}

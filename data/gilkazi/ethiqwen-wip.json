@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "gilkazi/ethiqwen-wip",
+  "slug": "gilkazi-ethiqwen-wip",
+  "author": "gilkazi",
+  "url": "https://huggingface.co/gilkazi/ethiqwen-wip",
+  "created_at": "2026-09-21T01:44:52.000Z",
+  "updated_at": "2026-09-21T06:32:36.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "gguf",
+    "qwen2",
+    "llama.cpp",
+    "unsloth",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 103,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 38750118214,
+  "storage_human": "38.8 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Earth",
+      "url": "https://maps.google.de/intl/de/earth/",
+      "snippet": "Google Earth ist eine fotorealistische und digitale Version unseres Planeten. Woher kommen die Bilder? Wie sind sie …"
+    },
+    {
+      "title": "Google Merchant Center 的運作方式 - Google for Retail",
+      "url": "https://maps.google.de/intl/ALL_tw/retail/how-google-merchant-center-works/",
+      "snippet": "瞭解 Google Merchant Center 的運作方式。您可以設定帳戶來上傳及管理產品資訊，並在線上宣傳產品，開始觸及更多消費者。"
+    },
+    {
+      "title": "Transit – Google Maps",
+      "url": "https://maps.google.de/landing/transit/cities/index.html",
+      "snippet": "Multi-Region あいの風とやま鉄道 いすみ鉄道 いわて銀河鉄道 えちごトキめき鉄道 えちぜん鉄道 くま川鉄道 わたらせ渓谷鐵道 ヤサ …"
+    },
+    {
+      "title": "Smart Shopping campaigns - Google for Retail",
+      "url": "https://maps.google.de/intl/en_in/retail/solutions/smart-shopping-campaigns/",
+      "snippet": "Smart Shopping campaigns help you surface your products to the shoppers looking for what you offer on Google. Learn more and get …"
+    },
+    {
+      "title": "選擇 Google 的理由 - Google for Retail",
+      "url": "https://maps.google.de/intl/ALL_tw/retail/why-google/",
+      "snippet": "Google 地圖 每天都有超過十億名的使用者利用 Google 地圖導航至想去的地點，以及尋找當地商家資訊。「去哪裡購物」和「去哪裡 …"
+    }
+  ]
+}

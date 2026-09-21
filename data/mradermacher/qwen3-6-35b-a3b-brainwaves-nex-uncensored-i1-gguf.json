@@ -1,0 +1,105 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Qwen3.6-35B-A3B-Brainwaves-Nex-Uncensored-i1-GGUF",
+  "slug": "mradermacher-qwen3-6-35b-a3b-brainwaves-nex-uncensored-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Qwen3.6-35B-A3B-Brainwaves-Nex-Uncensored-i1-GGUF",
+  "created_at": "2026-09-21T02:11:29.000Z",
+  "updated_at": "2026-09-21T05:47:17.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh",
+    "ja",
+    "es"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "unsloth",
+    "qwen3_5",
+    "qwen3_6",
+    "qwen",
+    "qwen3.5",
+    "qwen3.6",
+    "distillation",
+    "reasoning",
+    "chain-of-thought",
+    "long-cot",
+    "sft",
+    "lora",
+    "instruction-tuned",
+    "conversational",
+    "text-generation",
+    "multilingual",
+    "math",
+    "stem",
+    "coding",
+    "research",
+    "experimental",
+    "merge",
+    "fable",
+    "mergekit",
+    "Deckard(qx)",
+    "mxfp8",
+    "mxfp4",
+    "mlx",
+    "en",
+    "zh",
+    "ja",
+    "es",
+    "base_model:nightmedia/Qwen3.6-35B-A3B-Brainwaves-Nex-Uncensored",
+    "base_model:adapter:nightmedia/Qwen3.6-35B-A3B-Brainwaves-Nex-Uncensored",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix"
+  ],
+  "likes": 2,
+  "downloads_30d": 90,
+  "trending_score": 0,
+  "parameters": 35505251456,
+  "parameters_human": "35.51B",
+  "storage_bytes": 279161239264,
+  "storage_human": "279.2 GB",
+  "base_model": "nightmedia/Qwen3.6-35B-A3B-Brainwaves-Nex-Uncensored",
+  "formats": [
+    "gguf",
+    "mlx"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Jimmy Urine - Un Deye Gon Hayd (Contraxia Song) - YouTube",
+      "url": "https://www.youtube.com/watch?v=w5F4D15TDOY",
+      "snippet": "Apr 4, 2021 · Jimmy Urine - Un Deye Gon Hayd (Contraxia Song)Original VersionGuardians of the Galaxy Vol. 2Guardianes de la …"
+    },
+    {
+      "title": "Guardians of tha galaxy - Contraxia Song | Unloved Song | Un Deye …",
+      "url": "https://www.youtube.com/watch?v=zWVagHocCUM",
+      "snippet": "May 31, 2021 · Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on …"
+    },
+    {
+      "title": "Guardians of tha galaxy - Contraxia Song | Unloved Song - YouTube Music",
+      "url": "https://music.youtube.com/watch?v=zWVagHocCUM",
+      "snippet": "Playing from Guardians of tha galaxy - Contraxia Song | Unloved Song | Un Deye Gon Hayd | Jimmy Urine | Remake Mix Save …"
+    },
+    {
+      "title": "Guardians of tha galaxy - Contraxia Song | Unloved Song - YouTube Music",
+      "url": "https://music.youtube.com/watch?v=zWVagHocCUM&list=PLgzXa4B0DdxFYTyn6iNA75ix1Vznk-IqR",
+      "snippet": "Bawantha Malshan (Bawā)"
+    },
+    {
+      "title": "Guardians Of Tha Galaxy Contraxia Song Unloved Song Un Deye Gon",
+      "url": "https://nbkomputer.com/guardians-of-tha-galaxy-contraxia-song-unloved-song-un-deye-gon/",
+      "snippet": "1 day ago · \"The Unloved Song\" was played at the planet Contraxia scene in Guardians of The Galaxy 2, but this is my own version. …"
+    }
+  ]
+}

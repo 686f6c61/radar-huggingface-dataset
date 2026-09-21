@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "hamdallah/budgeted-exit-modernbert-base-civil-comments",
+  "slug": "hamdallah-budgeted-exit-modernbert-base-civil-comments",
+  "author": "hamdallah",
+  "url": "https://huggingface.co/hamdallah/budgeted-exit-modernbert-base-civil-comments",
+  "created_at": "2026-09-20T23:15:54.000Z",
+  "updated_at": "2026-09-20T23:24:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "early-exit",
+    "adaptive-computation",
+    "efficient-inference",
+    "content-moderation",
+    "conformal-risk-control",
+    "text-classification",
+    "en",
+    "dataset:google/civil_comments",
+    "base_model:answerdotai/ModernBERT-base",
+    "base_model:finetune:answerdotai/ModernBERT-base",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 153180700,
+  "parameters_human": "153.2M",
+  "storage_bytes": 612740656,
+  "storage_human": "613 MB",
+  "base_model": "answerdotai/ModernBERT-base",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "当せん番号案内（ロト7） | みずほ銀行",
+      "url": "https://www.mizuhobank.co.jp/takarakuji/check/loto/loto7/index.html",
+      "snippet": "Mar 14, 2026 · 当せん番号案内 (ロト7) 重要なお知らせ 「かんたん残高照会（インターネット残高照会）」は、以下のスケジュール …"
+    },
+    {
+      "title": "ロト7（LOTO7）のご案内｜宝くじ商品のご案内【宝くじ公式サイト】",
+      "url": "https://www.takarakuji-official.jp/kuji/loto/loto7/",
+      "snippet": "ロト7を買うには？ ロト7は、1口300円で、宝くじ売り場、ネット、一部の銀行のATM、または一部のコンビニエンスストアで購入 …"
+    },
+    {
+      "title": "ロト7当選番号速報 最新回抽選結果 ｜ 確率をアップする法",
+      "url": "https://takarakuji-loto.jp/loto7_tousenp.html",
+      "snippet": "ロト7の抽選結果は19:00更新 確率をアップする法 ナンバーズ当選番号速報 ロト7当選番号速報（抽選結果） ロト7 当選番号速報！ …"
+    },
+    {
+      "title": "ロト7当選番号一覧",
+      "url": "https://loto7.jp/databases/resultlist",
+      "snippet": "Jun 11, 2005 · ロト7当選番号一覧。数字やセット球による絞り込みや抽選会場別の結果など多彩な条件で過去の抽選結果一覧表示し …"
+    },
+    {
+      "title": "ロト7 過去の出目一覧表",
+      "url": "https://takarakuji-loto.jp/loto7_table.html",
+      "snippet": "ロト7出目表は、ロト7の当選番号を過去80回分一覧表示しています。 これにより、当選番号の分布や流れを一目で把握できます。 …"
+    }
+  ]
+}

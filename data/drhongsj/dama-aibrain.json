@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "drhongsj/dama-aibrain",
+  "slug": "drhongsj-dama-aibrain",
+  "author": "drhongsj",
+  "url": "https://huggingface.co/drhongsj/dama-aibrain",
+  "created_at": "2026-09-21T02:05:07.000Z",
+  "updated_at": "2026-09-21T04:35:54.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "gemma4",
+    "image-text-to-text",
+    "text-generation-inference",
+    "unsloth",
+    "conversational",
+    "en",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 40,
+  "trending_score": 0,
+  "parameters": 5123178051,
+  "parameters_human": "5.12B",
+  "storage_bytes": 23017941899,
+  "storage_human": "23.0 GB",
+  "base_model": "unsloth/gemma-4-e2b-it-unsloth-bnb-4bit",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "GeoGuessr - Let's explore the world!",
+      "url": "https://www.geoguessr.com/",
+      "snippet": "GeoGuessr is a geography game which takes you on a journey around the world and challenges your ability to recognize your …"
+    },
+    {
+      "title": "Europa: Kraje - Quiz z mapą - Seterra - GeoGuessr",
+      "url": "https://www.geoguessr.com/pl/vgp/3007",
+      "snippet": "Do you have an upcoming geography quiz on Europe but can’t tell Austria apart from Hungary on a map? This Europe map quiz …"
+    },
+    {
+      "title": "GeoGuessr - Explore our range of apparel and accessories",
+      "url": "https://shop.geoguessr.com/",
+      "snippet": "Explore our range of apparel and accessories, all inspired by the adventurous spirit of GeoGuessr. Our merch goes beyond style— …"
+    },
+    {
+      "title": "Africa: Countries - Map Quiz Game - Seterra - GeoGuessr",
+      "url": "https://www.geoguessr.com/vgp/3163",
+      "snippet": "There are over one billion people living in the African continent. With a population of over 170 million and growing, Nigeria is the …"
+    },
+    {
+      "title": "Seterra - Erdkunde lernen - GeoGuessr",
+      "url": "https://www.geoguessr.com/de/quiz/seterra",
+      "snippet": "Seterra ist ein anspruchsvolles Online-Erdkunde-Spiel mit mehr als 300 unterschiedlichen Aufgabenstellungen, die bei immer mehr …"
+    }
+  ]
+}

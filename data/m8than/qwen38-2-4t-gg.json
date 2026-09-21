@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "m8than/Qwen38-2.4T-GG",
+  "slug": "m8than-qwen38-2-4t-gg",
+  "author": "m8than",
+  "url": "https://huggingface.co/m8than/Qwen38-2.4T-GG",
+  "created_at": "2026-09-20T20:25:55.000Z",
+  "updated_at": "2026-09-20T21:59:40.000Z",
+  "license": "qwen3.8-max",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5_moe_text",
+    "qwen",
+    "moe",
+    "4-bit",
+    "rocm",
+    "sglang",
+    "text-generation",
+    "conversational",
+    "base_model:Qwen/Qwen3.8-2.4T-A95B",
+    "base_model:quantized:Qwen/Qwen3.8-2.4T-A95B",
+    "license:other",
+    "moe_e2m1",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 349164943232,
+  "parameters_human": "349.16B",
+  "storage_bytes": 1298139565353,
+  "storage_human": "1298.1 GB",
+  "base_model": "Qwen/Qwen3.8-2.4T-A95B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Time in India - timeanddate.com",
+      "url": "https://www.timeanddate.com/worldclock/india",
+      "snippet": "8:46 pm Kolkata IST UTC +5:30 See all Time Zones in India See Holidays in India Create a Calendar for India"
+    },
+    {
+      "title": "Time in India now",
+      "url": "https://time.is/India/",
+      "snippet": "22 hours ago · Exact time now, time zone, time difference, sunrise/sunset time and key facts for India."
+    },
+    {
+      "title": "India Standard Time",
+      "url": "https://time.is/IST",
+      "snippet": "22 hours ago · Exact time now, time zone, time difference, sunrise/sunset time and key facts for India Standard Time (IST)."
+    },
+    {
+      "title": "Current time in India",
+      "url": "https://en.true-time.com/in/",
+      "snippet": "Live exact time in India with seconds. Includes daylight saving time transitions for India. Current time zone UTC+05:30. Information: …"
+    },
+    {
+      "title": "Time in India (LIVE) - Worldometer",
+      "url": "https://www.worldometers.info/time/india/",
+      "snippet": "22 hours ago · Exact local time now in India. Time Zone, UTC offset, and DST. Clock with seconds, 12/24h formats, sunrise/sunset, …"
+    }
+  ]
+}

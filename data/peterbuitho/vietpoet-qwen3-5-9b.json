@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "peterbuitho/VietPoet-Qwen3.5-9B",
+  "slug": "peterbuitho-vietpoet-qwen3-5-9b",
+  "author": "peterbuitho",
+  "url": "https://huggingface.co/peterbuitho/VietPoet-Qwen3.5-9B",
+  "created_at": "2026-09-20T21:04:53.000Z",
+  "updated_at": "2026-09-20T21:07:44.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "vi"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "vietnamese",
+    "poetry",
+    "luc-bat",
+    "text-generation",
+    "conversational",
+    "vi",
+    "dataset:phamson02/vietnamese-poetry-corpus",
+    "arxiv:2401.01078",
+    "base_model:Qwen/Qwen3.5-9B",
+    "base_model:finetune:Qwen/Qwen3.5-9B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 9653104368,
+  "parameters_human": "9.65B",
+  "storage_bytes": 19326300223,
+  "storage_human": "19.3 GB",
+  "base_model": "Qwen/Qwen3.5-9B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "الحوت الأزرق (لعبة) - ويكيبيديا",
+      "url": "https://ar.wikipedia.org/wiki/%D8%A7%D9%84%D8%AD%D9%88%D8%AA_%D8%A7%D9%84%D8%A3%D8%B2%D8%B1%D9%82_(%D9%84%D8%B9%D8%A8%D8%A9)",
+      "snippet": "لعبة الحوت الأزرق (الإنجليزية: Blue Whale) (الروسية: Синий кит (سيني كيت)) أو تحدي الحوت الأزرق هي ظاهرة على وسائل التواصل الاجتماعي يزعم تواجدها في عدة دول حول العالم ويعود …"
+    },
+    {
+      "title": "الحوت الأزرق محاكاة - التطبيقات على Google Play",
+      "url": "https://play.google.com/store/apps/details?id=com.citrusgamesstudios.ocean.simulator.bluewhale3d&hl=ar",
+      "snippet": "هل تعرف الحوت الأزرق هو أكبر حيوان الذي عاش على الإطلاق على الأرض. وهو أكبر من أي من أكبر سمك القرش الغاضب. حتى تعيش حياتك كما العالميات أكبر الثدييات في هذه اللعبة الحوت الأزرق.استكشاف..."
+    },
+    {
+      "title": "قم بتنزيل الحوت الأزرق محاكاة بأحدث إصدار 1.2.3 ملف APK الأندرويد",
+      "url": "https://apkpure.com/ar/blue-whale-simulator-game/com.citrusgamesstudios.ocean.simulator.bluewhale3d/download",
+      "snippet": "قم بتحميل الحوت الأزرق محاكاة بأحدث إصدار APK 1.2.3 لنظام أندرويد من APKPure. ضخم، الحوت أزرق، محاكاة 3d، إكراه هجومي، بقاء، إنقاذ، فيش، إلى داخل، عميق تشالنج."
+    },
+    {
+      "title": "لعبة الحوت الأزرق: النسخة العربية APK للاندرويد تنزيل",
+      "url": "https://apkpure.com/ar/%D9%84%D8%B9%D8%A8%D8%A9-%D8%A7%D9%84%D8%AD%D9%88%D8%AA-%D8%A7%D9%84%D8%A3%D8%B2%D8%B1%D9%82-%D8%A7%D9%84%D9%86%D8%B3%D8%AE%D8%A9-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9/com.magmadeths.bluewhale",
+      "snippet": "يعرف الحوت الازرق الحقيقية حوت الموت بظاهرة الانتحار الغريبة التي يقوم بها عندما تشتدد عليه أحزانه. يتضمن هذا الإصدار إصلاحات بسيطة للأخطاء وتحسينات عامة. حدّث إلى أحدث إصدار للحصول …"
+    },
+    {
+      "title": "الحوت الأزرق (لعبة) - Wikiwand",
+      "url": "https://www.wikiwand.com/ar/%D8%A7%D9%84%D8%AD%D9%88%D8%AA_%D8%A7%D9%84%D8%A3%D8%B2%D8%B1%D9%82_(%D9%84%D8%B9%D8%A8%D8%A9)",
+      "snippet": "لعبة الحوت الأزرق أو تحدي الحوت الأزرق هي ظاهرة على وسائل التواصل الاجتماعي يزعم تواجدها في عدة دول حول العالم ويعود تاريخها لعام 2016، حيث تتكون «اللعبة» من تحديات لمدة 50 يوما، وفي …"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "schema": 1,
+  "id": "RunningHubAI/rh-minimax-h3-fl2va-acc-8step-comfy.safetensors-lora",
+  "slug": "runninghubai-rh-minimax-h3-fl2va-acc-8step-comfy-safetensors-lora",
+  "author": "RunningHubAI",
+  "url": "https://huggingface.co/RunningHubAI/rh-minimax-h3-fl2va-acc-8step-comfy.safetensors-lora",
+  "created_at": "2026-09-21T02:14:41.000Z",
+  "updated_at": "2026-09-21T02:30:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "comfyui",
+    "lora",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1702741328,
+  "storage_human": "1.7 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "BG43ES-22 BCI43U - g-ta-piece.fr",
+      "url": "https://g-ta-piece.fr/526234-bg43es-22-bci43u",
+      "snippet": "Où trouver la référence de mon appareil ? Vous ne trouvez pas votre pièce ? Bobine d'allumage CNW40F-5E... Réf. : GTA018039. …"
+    },
+    {
+      "title": "Pièces détachées de débroussailleuse Bestgreen BG43ES-22",
+      "url": "https://www.euro-expos.com/fr/reparer/pieces/bestgreen/anciens-modeles/bg43es-22",
+      "snippet": "Ce produit n'est pas vendu sur notre site mais nous vous proposons des pièces de rechange, accessoires et consommables pour le …"
+    },
+    {
+      "title": "Pièces détachées debroussailleuse Bestgreen - Livraison 48h",
+      "url": "https://www.adepem.com/debroussailleuse/m-bestgreen",
+      "snippet": "Où trouver la plaque signalétique d'une débroussailleuse ? C'est grâce aux références inscrites sur la plaque signalétique que vous …"
+    },
+    {
+      "title": "Pièces détachées pour Bestgreen BG 125-43 | 190cc",
+      "url": "https://www.190cc.fr/fr/bestgreen-bg-125-43.html",
+      "snippet": "Découvrez notre sélection de pièces détachées de qualité pour Tondeuse Bestgreen BG 125-43. Trouvez facilement la pièce …"
+    },
+    {
+      "title": "Liste Pieces Detachees Vues Explosees BESTGREEN DEBROUSSAILLEUSE BG 43 …",
+      "url": "https://www.manuels.solutions/document_init.php?marque=BESTGREEN&modele=DEBROUSSAILLEUSE%20BG%2043&doctype1=Liste&doctype2=Pieces%20Detachees&doctype3=Vues%20Explosees",
+      "snippet": "Vues explosées et catalogue des pièces détachées BESTGREEN DEBROUSSAILLEUSE BG 43 - Ce manuel des pièces détachées …"
+    }
+  ]
+}

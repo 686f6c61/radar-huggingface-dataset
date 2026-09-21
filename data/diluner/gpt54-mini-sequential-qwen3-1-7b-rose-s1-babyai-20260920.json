@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Diluner/gpt54-mini-sequential-qwen3-1.7b-rose-s1-babyai-20260920",
+  "slug": "diluner-gpt54-mini-sequential-qwen3-1-7b-rose-s1-babyai-20260920",
+  "author": "Diluner",
+  "url": "https://huggingface.co/Diluner/gpt54-mini-sequential-qwen3-1.7b-rose-s1-babyai-20260920",
+  "created_at": "2026-09-21T00:02:29.000Z",
+  "updated_at": "2026-09-21T00:02:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "agent-training",
+    "gpt-5.4-mini",
+    "rose",
+    "sequential",
+    "conversational",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2031739904,
+  "parameters_human": "2.03B",
+  "storage_bytes": 4074938294,
+  "storage_human": "4.1 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "电影字幕组的片源都是哪里来的? - 知乎",
+      "url": "https://www.zhihu.com/question/19576799?sort=created",
+      "snippet": "Mar 19, 2011 · 流媒体平台 目前海外影剧集的发行大一般都借助流媒体平台，常见的如Netflix、Disney+、Prime Video、国内优爱腾 …"
+    },
+    {
+      "title": "亚马逊 Prime 是什么意思？Prime 会员有什么用？ - 知乎",
+      "url": "https://www.zhihu.com/question/562156586",
+      "snippet": "Prime Video是什么 Amazon Prime Video是一家流媒体视频网站，提供的内容大多为英文内容，部分内容也提供了法语、意大利语、 …"
+    },
+    {
+      "title": "怎样注册亚马逊Prime 会员？ - 知乎",
+      "url": "https://www.zhihu.com/question/49492619",
+      "snippet": "6、确认是否使用系统自动选择的支付方式用于支付Prime会员费，您也可以选择其他银行卡。 仔细阅读确认页面声明，点击【我同意 …"
+    },
+    {
+      "title": "Amazon prime是什么，有谁能普及一下知识吗？",
+      "url": "https://www.zhihu.com/question/50368293",
+      "snippet": "米高梅成立于1924年，是好莱坞五大电影公司之一，共制作发行了约4000多部电影、1.7万个小时时长的电视节目。 收购米高梅是为了 …"
+    },
+    {
+      "title": "亚马逊Prime 会员大促时段和prime会员日有什么区别？ - 知乎",
+      "url": "https://www.zhihu.com/question/1920520932809775003",
+      "snippet": "2. 2025亚马逊Prime会员大促定档10月7日 2025年亚马逊Prime会员大促将于10月7日-8日开启，此次Prime会员大促将在美国、德国、 …"
+    }
+  ]
+}

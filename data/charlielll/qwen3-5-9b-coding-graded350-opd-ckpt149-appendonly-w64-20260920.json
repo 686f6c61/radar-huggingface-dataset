@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "CharlieLLL/Qwen3.5-9B-coding-graded350-opd-ckpt149-appendonly-w64-20260920",
+  "slug": "charlielll-qwen3-5-9b-coding-graded350-opd-ckpt149-appendonly-w64-20260920",
+  "author": "CharlieLLL",
+  "url": "https://huggingface.co/CharlieLLL/Qwen3.5-9B-coding-graded350-opd-ckpt149-appendonly-w64-20260920",
+  "created_at": "2026-09-20T23:30:36.000Z",
+  "updated_at": "2026-09-20T23:44:14.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "reinforcement-learning",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "coding",
+    "swe-bench",
+    "reinforcement-learning",
+    "base_model:Shangy/Qwen3.5-9B-OPD-Coding",
+    "base_model:finetune:Shangy/Qwen3.5-9B-OPD-Coding",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 17920471518,
+  "storage_human": "17.9 GB",
+  "base_model": "Shangy/Qwen3.5-9B-OPD-Coding",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "虚拟机获取不到IP地址 - 『HomeAssistant』新手入门区 - 『瀚思彼岸 …",
+      "url": "https://bbs.hassbian.com/thread-27733-1-1.html",
+      "snippet": "Dec 17, 2024 · 『瀚思彼岸』» 智能家居技术论坛 » 论坛首页 › 〖HomeAssistant〗技术讨论区 › 『HomeAssistant』新手入门区 › 虚拟 …"
+    },
+    {
+      "title": "r/homeassistant on Reddit: Having to \"Reload\" Tuya integration few ...",
+      "url": "https://www.reddit.com/r/homeassistant/comments/rh0q4p/having_to_reload_tuya_integration_few_times_a_day/",
+      "snippet": "Dec 15, 2021 · r/homeassistant Home Assistant is open source home automation that puts local control and privacy first. Powered by …"
+    },
+    {
+      "title": "Best smart speaker to integrate with HA? : r/homeassistant - Reddit",
+      "url": "https://www.reddit.com/r/homeassistant/comments/vvvng9/best_smart_speaker_to_integrate_with_ha/",
+      "snippet": "Jul 10, 2022 · I'm in the market for a few smart speakers to distribute throughout my house. I went through the arduous task of setting …"
+    },
+    {
+      "title": "关于ha开启网络代理方法 - 『HomeAssistant』综合讨论区 - 『瀚思彼 …",
+      "url": "https://bbs.hassbian.com/thread-30700-1-1.html",
+      "snippet": "Nov 11, 2025 · 『瀚思彼岸』» 智能家居技术论坛 » 论坛首页 › 〖HomeAssistant〗技术讨论区 › 『HomeAssistant』综合讨论区 › 关 …"
+    },
+    {
+      "title": "Accès de l’extérieur en HTTPS avec Nginx Proxy Manager",
+      "url": "https://forum.hacf.fr/t/acces-de-l-exterieur-en-https-avec-nginx-proxy-manager/1761",
+      "snippet": "Jul 10, 2021 · Si vous souhaitez utiliser un nom de domaine (NDD) Freebox et le fournisseur de certificats Let’s Encrypt, vous pouvez …"
+    }
+  ]
+}

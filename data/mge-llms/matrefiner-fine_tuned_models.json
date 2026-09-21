@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "MGE-LLMs/MatRefiner-Fine_tuned_models",
+  "slug": "mge-llms-matrefiner-fine_tuned_models",
+  "author": "MGE-LLMs",
+  "url": "https://huggingface.co/MGE-LLMs/MatRefiner-Fine_tuned_models",
+  "created_at": "2026-09-21T02:21:12.000Z",
+  "updated_at": "2026-09-21T02:56:24.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": true,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MGE - Transport, logistique, prestations industrielles",
+      "url": "https://www.mge.fr/",
+      "snippet": "toutes les actualités ... Le Groupe MGE a entamé la transformation de son site de Blainville (54) en un terminal rail-route 22.10.2024 …"
+    },
+    {
+      "title": "MGE.tf - Competitive TF2 MGE League",
+      "url": "https://mge.tf/",
+      "snippet": "MGE.tf is a competitive Team Fortress 2 MGE league platform for 2v2 tournaments and seasonal play"
+    },
+    {
+      "title": "Matériel pro pour gazon et espaces verts : broyeur, tondeuse ...",
+      "url": "https://mge-greenservice.com/w/",
+      "snippet": "Expert en matériels professionnels pour les espaces verts et l’environnement, MGE GREEN SERVICE distribue en France et sur une …"
+    },
+    {
+      "title": "Le Groupe Transport, logistique, prestations industrielles - MGE",
+      "url": "https://www.mge.fr/fr/21/le-groupe.html",
+      "snippet": "Le Groupe Transport, Logistique et Prestations industrielles Implantations Plaquette institutionnelle Découvrez le Groupe MGE à …"
+    },
+    {
+      "title": "Société MGE TRANSPORTS & SERVICES : Chiffre d'affaires ... - Pappers",
+      "url": "https://www.pappers.fr/entreprise/mge-transports-services-305751778",
+      "snippet": "Sep 8, 2026 · MGE TRANSPORTS & SERVICES à CHAVELOT (88150) : Bilans, statuts, chiffre d'affaires, dirigeants, actionnaires, …"
+    }
+  ]
+}

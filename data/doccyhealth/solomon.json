@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "DoccyHealth/Solomon",
+  "slug": "doccyhealth-solomon",
+  "author": "DoccyHealth",
+  "url": "https://huggingface.co/DoccyHealth/Solomon",
+  "created_at": "2026-09-21T01:38:48.000Z",
+  "updated_at": "2026-09-21T10:29:06.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-classification",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "lora",
+    "document-question-answering",
+    "structured-decisions",
+    "calibration",
+    "synthetic-evaluation",
+    "text-classification",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:adapter:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 42,
+  "downloads_30d": 0,
+  "trending_score": 42,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1775885656,
+  "storage_human": "1.8 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nachrichten aus dem Erzgebirge - blick.de",
+      "url": "https://www.blick.de/erzgebirge",
+      "snippet": "Aktuelle Nachrichten und Blaulichtmeldungen aus dem Erzgebirge: Lest hier News zu lokalen Ereignissen, Wirtschaft, Kultur & …"
+    },
+    {
+      "title": "Blaulicht - blick.de",
+      "url": "https://www.blick.de/blaulicht",
+      "snippet": "Aktuelle Blaulicht-Nachrichten aus Chemnitz, dem Erzgebirge, Zwickau, dem Vogtland und Mittelsachsen: Alle Infos zu Polizei-, …"
+    },
+    {
+      "title": "BLICK.de",
+      "url": "https://e-paper.blick.de/",
+      "snippet": "Freitag, 18. September 2026 Auer Blick"
+    },
+    {
+      "title": "blick.de - News, Events und Lifestyle",
+      "url": "https://www.blick.de/",
+      "snippet": "Willkommen auf blick.de - Hier findet ihr News, Events und Lifestyle-Themen sowie aktuelle Nachrichten und Meldungen aus …"
+    },
+    {
+      "title": "Blaulicht Erzgebirge - blick.de",
+      "url": "https://www.blick.de/blaulicht/blaulicht-erzgebirge",
+      "snippet": "Aktuelle Blaulicht-Nachrichten aus dem Erzgebirge: Alle Infos zu Polizei-, Feuerwehr- und Rettungseinsätzen sowie Unfällen und …"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "chorcat/rukh-medium-grpo",
+  "slug": "chorcat-rukh-medium-grpo",
+  "author": "chorcat",
+  "url": "https://huggingface.co/chorcat/rukh-medium-grpo",
+  "created_at": "2026-09-20T23:43:08.000Z",
+  "updated_at": "2026-09-21T15:03:38.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "rukh",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "rukh",
+    "onnx",
+    "safetensors",
+    "rukh-move-decoder",
+    "chess",
+    "decoder",
+    "text-generation",
+    "en",
+    "dataset:chorcat/rukh-games-1800",
+    "dataset:chorcat/rukh-tokenizer",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 115120128,
+  "parameters_human": "115.1M",
+  "storage_bytes": 1275338671,
+  "storage_human": "1.3 GB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Kosovo - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Kosovo",
+      "snippet": "Kosovo, [a] officially the Republic of Kosovo, [b] is a landlocked country in Southeast Europe with partial diplomatic recognition. It is …"
+    },
+    {
+      "title": "Kosovo | History, Map, Flag, Population, Languages, & Capital",
+      "url": "https://www.britannica.com/place/Kosovo",
+      "snippet": "3 days ago · In the early 20th century Kosovo was incorporated into Serbia (later part of Yugoslavia). By the second half of the …"
+    },
+    {
+      "title": "History of Kosovo - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/History_of_Kosovo",
+      "snippet": "On 17 February 2008, representatives of the people of Kosovo [1] unilaterally declared Kosovo's independence and subsequently …"
+    },
+    {
+      "title": "Kosovo travel advice - GOV.UK",
+      "url": "https://www.gov.uk/foreign-travel-advice/kosovo",
+      "snippet": "4 days ago · FCDO travel advice for Kosovo. Includes safety and security, insurance, entry requirements and legal differences."
+    },
+    {
+      "title": "Kosovo - Simple English Wikipedia, the free encyclopedia",
+      "url": "https://simple.wikipedia.org/wiki/Kosovo",
+      "snippet": "Until 2008, Kosovo was a part of Serbia. On 17 February 2008, Kosovo declared independence and said it was now a separate …"
+    }
+  ]
+}

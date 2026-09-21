@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "id": "dronefreak/bdd100k-yolov10n",
+  "slug": "dronefreak-bdd100k-yolov10n",
+  "author": "dronefreak",
+  "url": "https://huggingface.co/dronefreak/bdd100k-yolov10n",
+  "created_at": "2026-09-20T21:16:33.000Z",
+  "updated_at": "2026-09-21T13:57:32.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "object-detection",
+    "detectionbench",
+    "pytorch",
+    "computer-vision",
+    "autonomous-driving",
+    "self-driving-cars",
+    "driving-scenes",
+    "traffic-sign-detection",
+    "traffic-light-detection",
+    "arxiv:2405.14458",
+    "arxiv:2410.17725",
+    "arxiv:2606.03748",
+    "arxiv:2402.13616",
+    "license:agpl-3.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 18099343,
+  "storage_human": "18 MB",
+  "base_model": "Ultralytics/YOLOv10",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Object Detection",
+      "dataset": "BDD100K",
+      "metric": "mAP@50 (test split)",
+      "value": 51.95
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "BDD100K",
+      "metric": "mAP@50-95 (test split)",
+      "value": 29.31
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "BDD100K",
+      "metric": "Precision (test split)",
+      "value": 71.58
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "BDD100K",
+      "metric": "Recall (test split)",
+      "value": 46.62
+    }
+  ],
+  "sources": [
+    {
+      "title": "How to Add Levels in Revit (New Level + Floor Plan Views)",
+      "url": "https://mashyo.com/add-levels-in-revit/",
+      "snippet": "Jul 27, 2026 · Learn how to add levels in Revit, create missing floor plan views, use Copy or Array for multiple levels, and fix black …"
+    },
+    {
+      "title": "Add Levels - Autodesk Knowledge Network",
+      "url": "https://help.autodesk.com/cloudhelp/2022/ENU/Revit-Model/files/GUID-54EDD889-9AEA-40B5-BD60-FC2F860DF95D.htm",
+      "snippet": "In addition to creating a level for each story in a building, you can also create reference levels, such as sill level."
+    },
+    {
+      "title": "Place levels in Revit - Autodesk",
+      "url": "https://www.autodesk.com/learn/ondemand/tutorial/place-levels-in-revit?msockid=2b7bd9166c236e4a25b1cecc6db96f0b",
+      "snippet": "Learn how to use levels in Revit, including how to place a level in a model, change the name and elevation of a level, and constrain …"
+    },
+    {
+      "title": "Levels in Revit for structure - Autodesk",
+      "url": "https://www.autodesk.com/learn/ondemand/tutorial/levels-in-revit-structure?msockid=2b7bd9166c236e4a25b1cecc6db96f0b",
+      "snippet": "To place a single level or multiple levels in Revit, first, open an elevation or section view. Then, on the Structure ribbon, in the Datum …"
+    },
+    {
+      "title": "Levels in Revit - What you need to know - LazyBim",
+      "url": "https://lazybim.com/levels-in-revit/",
+      "snippet": "Jun 12, 2023 · In this article, we are going to take a look at the basics of Levels, how to create Levels using different methods, and …"
+    }
+  ]
+}

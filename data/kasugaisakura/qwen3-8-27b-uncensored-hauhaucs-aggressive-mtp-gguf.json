@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "KasugaiSakura/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF",
+  "slug": "kasugaisakura-qwen3-8-27b-uncensored-hauhaucs-aggressive-mtp-gguf",
+  "author": "KasugaiSakura",
+  "url": "https://huggingface.co/KasugaiSakura/Qwen3.8-27B-Uncensored-HauhauCS-Aggressive-MTP-GGUF",
+  "created_at": "2026-09-20T22:09:15.000Z",
+  "updated_at": "2026-09-20T22:09:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "en",
+    "zh",
+    "multilingual"
+  ],
+  "tags": [
+    "gguf",
+    "uncensored",
+    "qwen3.8",
+    "multimodal",
+    "vision",
+    "mtp",
+    "speculative-decoding",
+    "fastmtp",
+    "image-text-to-text",
+    "en",
+    "zh",
+    "multilingual",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 1863907840,
+  "parameters_human": "1.86B",
+  "storage_bytes": 172466425216,
+  "storage_human": "172.5 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Compare Cheap Flights & Book Airline Tickets to Everywhere | Skyscanner",
+      "url": "https://www.skyscanner.com/",
+      "snippet": "How can I find the cheapest flight using Skyscanner? Finding flights is easy here – over 100 million savvy travelers come to us each …"
+    },
+    {
+      "title": "Compare Cheap Flights & Book Airline Tickets to Everywhere | Skyscanner",
+      "url": "https://www.skyscanner.net/?msockid=0103c96e881c6a20102bdeb4897a6bdb",
+      "snippet": "How can I find the cheapest flight using Skyscanner? Finding flights is easy here – over 100 million savvy travellers come to us each …"
+    },
+    {
+      "title": "Find the Best Flight Deals & Flight Booking Offers | Skyscanner",
+      "url": "https://www.skyscanner.net/flights?msockid=0103c96e881c6a20102bdeb4897a6bdb",
+      "snippet": "Or if you book directly with Skyscanner, we'll send you your booking confirmation via email. If you've booked directly, you can check …"
+    },
+    {
+      "title": "Find the Best Flight Deals & Airfare Deals | Skyscanner",
+      "url": "https://www.skyscanner.com/flights",
+      "snippet": "How can I track my flight with Skyscanner? Use Skyscanner's free Flight Tracker to check your flight's live status. You can track …"
+    },
+    {
+      "title": "Compare Cheap Flight Tickets & Book Flights Online | Skyscanner",
+      "url": "https://www.skyscanner.com.my/",
+      "snippet": "How can I find the cheapest flight using Skyscanner? Finding flights is easy here – over 100 million savvy travellers come to us each …"
+    }
+  ]
+}

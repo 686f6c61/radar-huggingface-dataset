@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "srivathsanb14/hw2-classical-automl-3d-print",
+  "slug": "srivathsanb14-hw2-classical-automl-3d-print",
+  "author": "srivathsanb14",
+  "url": "https://huggingface.co/srivathsanb14/hw2-classical-automl-3d-print",
+  "created_at": "2026-09-21T02:03:26.000Z",
+  "updated_at": "2026-09-21T02:06:18.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "tabular-classification",
+  "library": "autogluon",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "autogluon",
+    "education",
+    "24-679",
+    "automl",
+    "binary-classification",
+    "tabular-classification",
+    "en",
+    "dataset:yennik16/3d-print-jobs-tabular",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 815262,
+  "storage_human": "815262 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mairie de Villeneuve-Saint-Georges site officiel - L'actu à Villeneuve",
+      "url": "https://www.villeneuve-saint-georges.fr/",
+      "snippet": "Site officiel de la Ville de Villeneuve-Saint-Georges. Retrouvez les informations pratiques de votre ville, l’actualité, les services en ligne"
+    },
+    {
+      "title": "Mairie de Villeneuve-Saint-Georges site officiel - Offres",
+      "url": "https://www.villeneuve-saint-georges.fr/la-ville-recrute/offres.html",
+      "snippet": "Site officiel de la Ville de Villeneuve-Saint-Georges. Retrouvez les informations pratiques de votre ville, l’actualité, les services en ligne"
+    },
+    {
+      "title": "Accueil | Extranet de Villeneuve-Saint-Georges",
+      "url": "https://extranet.villeneuve-saint-georges.fr/",
+      "snippet": "Perte de mot de passe Vous avez un mail nominatif Villeneuve-Saint-Georges ou un mail personnel. Vous n'avez pas de mail."
+    },
+    {
+      "title": "Mairie de Villeneuve-Saint-Georges site officiel - Piscine",
+      "url": "https://www.villeneuve-saint-georges.fr/culture-sport/sport/centre-nautique-municipal.html",
+      "snippet": "94190 Villeneuve-Saint-Georges Tel. : 01 78 18 20 19 La piscine est un équipement géré par l’établissement public territorial Grand …"
+    },
+    {
+      "title": "Maison de la Petite-Enfance - Villeneuve-Saint-Georges",
+      "url": "https://www.villeneuve-saint-georges.fr/education-jeunesse/petite-enfance/maison-de-la-petite-enfance.html",
+      "snippet": "94190 Villeneuve-Saint-Georges T. 01 56 32 43 20 Le multi-accueil Selon son âge, l'enfant est accueilli dans l'une des 3 unités : …"
+    }
+  ]
+}

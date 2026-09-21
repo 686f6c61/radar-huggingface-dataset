@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "olusegunola/qwen2.5-1.5b-primekg-orpo-seed2024",
+  "slug": "olusegunola-qwen2-5-1-5b-primekg-orpo-seed2024",
+  "author": "olusegunola",
+  "url": "https://huggingface.co/olusegunola/qwen2.5-1.5b-primekg-orpo-seed2024",
+  "created_at": "2026-09-20T21:55:05.000Z",
+  "updated_at": "2026-09-20T21:55:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 46317048,
+  "storage_human": "46 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Les phases de la maîtrise d'œuvre : guide complet pour comprendre le ...",
+      "url": "https://quostra.com/fr-fr/blog/phases-maitrise-oeuvre",
+      "snippet": "De l'esquisse au chantier réceptionné, un projet de construction traverses plusieurs étapes codifiées appelées phases de la maîtrise …"
+    },
+    {
+      "title": "Comment se déroule le suivi de chantier avec un maître d’œuvre ?",
+      "url": "https://espritbrico.fr/suivi-chantier-maitre-doeuvre-deroulement/",
+      "snippet": "Apr 6, 2026 · Comprendre comment se déroule le suivi de chantier avec ce professionnel permet aux maîtres d’ouvrage de mieux …"
+    },
+    {
+      "title": "Maîtrise d’œuvre dans les marchés publics (ex Loi MOP)",
+      "url": "https://www.francemarches.com/fiches/maitrise-oeuvre",
+      "snippet": "Le décret n° 93-1269 du 29 novembre 1993 relatif aux concours d’architecture et d’ingénierie organisés par les maîtres d’ouvrage …"
+    },
+    {
+      "title": "Contrat de maîtrise d'œuvre : contenu et déroulement",
+      "url": "https://www.anil.org/votre-besoin/construire/les-etapes-de-la-construction/differents-contrats-de-construction/maitrise-doeuvre/",
+      "snippet": "Construction et contrat : les caractéristiques du contrat de maîtrise d'œuvre, son rôle et le déroulement du chantier. Que devez-vous …"
+    },
+    {
+      "title": "Étapes clés d'une mission de maîtrise d'œuvre : de la conception à la ...",
+      "url": "https://www.cg975.fr/blog/etapes-cles-dune-mission-de-maitrise-doeuvre-de-la-conception-a-la-livraison/",
+      "snippet": "Mar 25, 2025 · Chaque étape – faisabilité, conception, planification, consultation, exécution, réception – joue un rôle clé dans la …"
+    }
+  ]
+}

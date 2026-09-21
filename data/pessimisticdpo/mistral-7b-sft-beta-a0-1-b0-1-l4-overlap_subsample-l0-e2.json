@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l0-e2",
+  "slug": "pessimisticdpo-mistral-7b-sft-beta-a0-1-b0-1-l4-overlap_subsample-l0-e2",
+  "author": "PessimisticDPO",
+  "url": "https://huggingface.co/PessimisticDPO/mistral-7b-sft-beta-a0.1-b0.1-L4-overlap_subsample-l0-e2",
+  "created_at": "2026-09-21T02:21:25.000Z",
+  "updated_at": "2026-09-21T06:31:11.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 335664480,
+  "storage_human": "336 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Minecraft Forum",
+      "url": "https://www.minecraftforum.net/",
+      "snippet": "6 days ago · Minecraft community forums, a great place to talk about the game."
+    },
+    {
+      "title": "Extremely Op Enchants - Commands, Command Blocks and Functions ...",
+      "url": "https://www.minecraftforum.net/forums/minecraft-java-edition/redstone-discussion-and/commands-command-blocks-and/2440551-extremely-op-enchants",
+      "snippet": "Jun 26, 2020 · So hey guys, on my channel I showed you guys how to do Op Enchants. If you do not want to make your own I have …"
+    },
+    {
+      "title": "Minecraft 我的世界（當個創世神） 哈啦板 - 巴哈姆特",
+      "url": "https://forum.gamer.com.tw/B.php?bsn=18673",
+      "snippet": "歡迎來到Minecraft 我的世界（當個創世神）哈啦板，最新資訊及情報分享、精華好文查找、創作交流討論，盡在巴哈姆特！"
+    },
+    {
+      "title": "【心得】Minecraft與開發商:MOJANG多年來的發展故事 (Minecraft超 …",
+      "url": "https://forum.gamer.com.tw/C.php?bsn=18673&snA=186520",
+      "snippet": "Aug 28, 2020 · 同年還有一件大事 就是在11月時Mojang推出Minecraft正式版Java版1.0.0 結束長久以來的測試 讓Minecraft正式成為一 …"
+    },
+    {
+      "title": "Mapping and Modding: Java Edition - Minecraft Forum",
+      "url": "https://www.minecraftforum.net/forums/mapping-and-modding-java-edition/minecraft-mods",
+      "snippet": "Jul 25, 2026 · Post and discuss your Minecraft mods here! New Thread Search Search all Forums Search this Forum Tools New …"
+    }
+  ]
+}

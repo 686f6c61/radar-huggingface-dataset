@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Diluner/gpt54-mini-sequential-qwen3-4b-sft-s1-babyai-20260920",
+  "slug": "diluner-gpt54-mini-sequential-qwen3-4b-sft-s1-babyai-20260920",
+  "author": "Diluner",
+  "url": "https://huggingface.co/Diluner/gpt54-mini-sequential-qwen3-4b-sft-s1-babyai-20260920",
+  "created_at": "2026-09-21T00:06:53.000Z",
+  "updated_at": "2026-09-21T00:07:21.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "agent-training",
+    "gpt-5.4-mini",
+    "sft",
+    "sequential",
+    "conversational",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:finetune:Qwen/Qwen3-4B",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4411424256,
+  "parameters_human": "4.41B",
+  "storage_bytes": 17657165270,
+  "storage_human": "17.7 GB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Bing Webmaster Tools",
+      "url": "https://www.bing.com/webmasters/about",
+      "snippet": "Sign in or signup for Bing Webmaster Tools and improve your site’s performance in search. Get access to free reports, tools and …"
+    },
+    {
+      "title": "Collections - Bing",
+      "url": "https://www.bing.com/saves/",
+      "snippet": "Discover and save your favorite searches, videos, images, and shopping ideas on Bing for easy access anytime."
+    },
+    {
+      "title": "Search - Microsoft Bing",
+      "url": "https://www2.bing.com/",
+      "snippet": "Search with Microsoft Bing and use the power of AI to find information, explore webpages, images, videos, maps, and more. A smart …"
+    },
+    {
+      "title": "Bing",
+      "url": "https://www.bing.com/set/homepage",
+      "snippet": "Set Bing as your default search engine Try it now"
+    },
+    {
+      "title": "About – Microsoft Rewards",
+      "url": "https://rewards.bing.com/welcome",
+      "snippet": "Earn points with Microsoft Rewards, redeemable for gift cards, bonus sweepstakes entries, and more."
+    }
+  ]
+}

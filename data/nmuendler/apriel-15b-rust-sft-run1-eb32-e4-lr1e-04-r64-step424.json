@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "nmuendler/Apriel-15B-rust-sft-run1-eb32-e4-lr1e-04-r64-step424",
+  "slug": "nmuendler-apriel-15b-rust-sft-run1-eb32-e4-lr1e-04-r64-step424",
+  "author": "nmuendler",
+  "url": "https://huggingface.co/nmuendler/Apriel-15B-rust-sft-run1-eb32-e4-lr1e-04-r64-step424",
+  "created_at": "2026-09-20T20:11:42.000Z",
+  "updated_at": "2026-09-20T20:12:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "arxiv:1910.09700",
+    "base_model:ServiceNow-AI/Apriel-Nemotron-15b-Thinker",
+    "base_model:adapter:ServiceNow-AI/Apriel-Nemotron-15b-Thinker",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1157499588,
+  "storage_human": "1.2 GB",
+  "base_model": "ServiceNow-AI/Apriel-Nemotron-15b-Thinker",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "361°官方网站",
+      "url": "https://www.361sport.com.cn/",
+      "snippet": "361°是一家集品牌、研发、设计、生产、经销为一体的综合性体育用品公司，其产品包括运动鞋、服装及相关运动配件等。 旗下拥有 …"
+    },
+    {
+      "title": "361°官方网站",
+      "url": "https://www.361sport.com.cn/news_376.html",
+      "snippet": "Apr 9, 2021 · 361°是一家集品牌、研发、设计、生产、经销为一体的综合性体育用品公司，其产品包括运动鞋、服装及相关运动配件等 …"
+    },
+    {
+      "title": "361® Official Store | Basketball & Running Shoes, Top Sport Brand",
+      "url": "https://361sport.com/",
+      "snippet": "361sport is one of the top international sports brands. We offer professional basketball shoes and running shoes with the best value …"
+    },
+    {
+      "title": "Investment Highlights - 361°",
+      "url": "https://ir.361sport.com/html/index.php",
+      "snippet": "Press Releases 361°’s profit attributable to equity holders up 8.0% to RMB930 million in 1H 2026 Interim dividend of HK22.2 cents …"
+    },
+    {
+      "title": "361°",
+      "url": "https://ir.361sport.com/html/about_profile.php?lang=sc",
+      "snippet": "361°以专业运动为本，提供跑步、篮球及运动生活等全品类高质量产品，全面满足大众运动消费群体的多样化需求。 361°儿童定位于 …"
+    }
+  ]
+}

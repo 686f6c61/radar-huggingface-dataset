@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "AlinaGonch/qwen3-14b-squad-ratio-0.20-seed-42",
+  "slug": "alinagonch-qwen3-14b-squad-ratio-0-20-seed-42",
+  "author": "AlinaGonch",
+  "url": "https://huggingface.co/AlinaGonch/qwen3-14b-squad-ratio-0.20-seed-42",
+  "created_at": "2026-09-20T22:44:54.000Z",
+  "updated_at": "2026-09-20T22:45:00.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 268399158,
+  "storage_human": "268 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "HolidayCheck • Dein Hotelbewertungs- und Reiseportal",
+      "url": "https://www.holidaycheck.de/",
+      "snippet": "HolidayCheck: Dein Urlaubsportal Über uns Im Januar 2000 als Freizeitprojekt gestartet, entwickelte sich HolidayCheck schnell …"
+    },
+    {
+      "title": "Dein Traumurlaub als Pauschalreise - HolidayCheck",
+      "url": "https://www.holidaycheck.de/pauschalreisen",
+      "snippet": "23 hours ago · Angebote vergleichen und Pauschalreise günstig und sicher buchen bei HolidayCheck: Entdecke Deinen Traumurlaub …"
+    },
+    {
+      "title": "Hotels Türkische Riviera • Die besten Türkische ... - HolidayCheck",
+      "url": "https://www.holidaycheck.de/dh/hotels-tuerkische-riviera/b2272a4a-632a-3d45-ac37-389c895ecc74",
+      "snippet": "Sep 21, 2026 · TOP Hotels in Türkische Riviera ☀ Jetzt die besten & günstigsten Hotels Türkische Riviera finden Bestpreis-Garantie …"
+    },
+    {
+      "title": "Die neuesten Bewertungen auf HolidayCheck",
+      "url": "https://www.holidaycheck.de/whr/hotelbewertungen",
+      "snippet": "Die neuesten Bewertungen auf HolidayCheck Wir hatten einen sehr schönen Urlaub und waren insgesamt wirklich zufrieden mit dem …"
+    },
+    {
+      "title": "Urlaub 2026: Reiseziele entdecken & Urlaub buchen - HolidayCheck",
+      "url": "https://www.holidaycheck.de/urlaub",
+      "snippet": "23 hours ago · Entdecke unsere Urlaubsangebote 2026 Günstig Urlaub buchen Reisen ohne Risiko Reiseziele weltweit …"
+    }
+  ]
+}

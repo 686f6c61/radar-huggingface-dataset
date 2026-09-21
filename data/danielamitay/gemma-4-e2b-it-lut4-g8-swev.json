@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "danielamitay/gemma-4-e2b-it-lut4-g8-swev",
+  "slug": "danielamitay-gemma-4-e2b-it-lut4-g8-swev",
+  "author": "danielamitay",
+  "url": "https://huggingface.co/danielamitay/gemma-4-e2b-it-lut4-g8-swev",
+  "created_at": "2026-09-21T00:22:17.000Z",
+  "updated_at": "2026-09-21T00:33:04.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "coreml",
+    "swift",
+    "swev",
+    "decision-model",
+    "multimodal",
+    "base_model:google/gemma-4-E2B-it",
+    "base_model:quantized:google/gemma-4-E2B-it",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2441980654,
+  "storage_human": "2.4 GB",
+  "base_model": "google/gemma-4-E2B-it",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vies on-the-Web - European Commission",
+      "url": "https://ec.europa.eu/taxation_customs/vies/",
+      "snippet": "Q1 - What is VIES (VAT Information Exchange System) on-the-web? It is an electronic mean of validating VAT-identification numbers …"
+    },
+    {
+      "title": "VIES VAT number validation in European Union",
+      "url": "https://www.vies.cz/?locale=cs",
+      "snippet": "Výsledek ověření: VIES - VAT number validation VIES VAT number validation in European Union Na této webové stránce si můžete …"
+    },
+    {
+      "title": "Vies on-the-Web - European Commission",
+      "url": "https://ec.europa.eu/taxation_customs/vies/?locale=CS",
+      "snippet": "Verify EU businesses' VAT numbers online with the European Commission's VIES tool."
+    },
+    {
+      "title": "Check a VAT number (VIES) - Your Europe",
+      "url": "https://europa.eu/youreurope/business/finance-and-tax/vat/check-vat-number-vies/index_en.htm",
+      "snippet": "Jun 18, 2026 · VIES (VAT Information Exchange System) is a search engine (not a database) owned by the European Commission. …"
+    },
+    {
+      "title": "Ověřování DIČ (VAT ID) | DPH v EU | Mezinárodní spolupráce a ...",
+      "url": "https://financnisprava.gov.cz/cs/mezinarodni-spoluprace/mezinarodni-spoluprace-a-dph/dph-v-eu/overovani-dic-vat-id",
+      "snippet": "V případě, že vaše DIČ nebude rozpoznáno (ať už v Registru DPH, nebo Vašimi obchodními partnery ve VIES), kontaktujte svého …"
+    }
+  ]
+}

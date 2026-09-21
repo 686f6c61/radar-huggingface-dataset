@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "Dongkkka/task0003-groot-n1d7-f2-80k",
+  "slug": "dongkkka-task0003-groot-n1d7-f2-80k",
+  "author": "Dongkkka",
+  "url": "https://huggingface.co/Dongkkka/task0003-groot-n1d7-f2-80k",
+  "created_at": "2026-09-21T02:12:19.000Z",
+  "updated_at": "2026-09-21T02:13:09.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "Gr00tN1d7",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 3144016000,
+  "parameters_human": "3.14B",
+  "storage_bytes": 25540825237,
+  "storage_human": "25.5 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ChatGPT: Chat, Work, Create & Code with AI",
+      "url": "https://chatgpt.com/",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download …"
+    },
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/features",
+      "snippet": "Use ChatGPT to answer questions, write, create images, complete work, and code—all in one place. Get started for free or download …"
+    },
+    {
+      "title": "Introducing ChatGPT - OpenAI",
+      "url": "https://openai.com/index/chatgpt/",
+      "snippet": "Nov 30, 2022 · We’ve trained a model called ChatGPT which interacts in a conversational way. The dialogue format makes it …"
+    },
+    {
+      "title": "GPT-5 is here | OpenAI",
+      "url": "https://openai.com/gpt-5/",
+      "snippet": "ChatGPT thinks harder on complex tasks and asks relevant follow-up questions to keep work moving. Every employee can get expert …"
+    },
+    {
+      "title": "Get started | ChatGPT",
+      "url": "https://chatgpt.com/auth/login",
+      "snippet": "Log in or sign up to ChatGPT"
+    }
+  ]
+}

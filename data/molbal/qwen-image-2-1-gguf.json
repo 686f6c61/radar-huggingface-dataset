@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "molbal/Qwen-Image-2.1-GGUF",
+  "slug": "molbal-qwen-image-2-1-gguf",
+  "author": "molbal",
+  "url": "https://huggingface.co/molbal/Qwen-Image-2.1-GGUF",
+  "created_at": "2026-09-20T20:56:25.000Z",
+  "updated_at": "2026-09-20T21:02:57.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "comfyui-gguf-reboot",
+  "languages": [],
+  "tags": [
+    "comfyui-gguf-reboot",
+    "gguf",
+    "diffusers",
+    "qwen",
+    "image-generation",
+    "image-editing",
+    "rgba",
+    "text-to-image",
+    "base_model:Qwen/Qwen-Image-2.1",
+    "base_model:quantized:Qwen/Qwen-Image-2.1",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7115124736,
+  "parameters_human": "7.12B",
+  "storage_bytes": 19141492800,
+  "storage_human": "19.1 GB",
+  "base_model": "Qwen/Qwen-Image-2.1",
+  "formats": [
+    "diffusers",
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Pizza Hut - sprawdź promocje i restauracje, lub zamów pizzę online!",
+      "url": "https://pizzahut.pl/",
+      "snippet": "Zamawiaj pizzę i inne dania przez internet, z dostawą lub na wynos. Znajdź najbliższy lokal, lub wybierz dostawę do domu. 85% …"
+    },
+    {
+      "title": "Pizza Hut Gdańsk Najlepsza pizza w mieście, zamów teraz!",
+      "url": "https://pizzahut.pl/restaurants/gdansk",
+      "snippet": "Pizza Hut Gdańsk 🍕 Znajdź najbliższą restaurację w Twojej okolicy. Przyjdź do lokalu lub zamów z dostawą 🚛 Poznaj nasze smaki!"
+    },
+    {
+      "title": "Pizzeria 105 | Najlepsza pizza w mieście | Zamów online",
+      "url": "https://105.pl/",
+      "snippet": "Polska sieć - Pizzeria licząca ponad 80 lokali. Zamów online, telefonicznie lub przyjdź i spróbuj największej pizzy w mieście - 60cm. …"
+    },
+    {
+      "title": "Pizza – Wikipedia, wolna encyklopedia",
+      "url": "https://pl.wikipedia.org/wiki/Pizza",
+      "snippet": "Pizza – potrawa kuchni włoskiej, której współczesna postać rozwinęła się w Neapolu. Najczęściej składa się z płaskiej podstawy z …"
+    },
+    {
+      "title": "Maxx Pizza Gdańsk - Restauracja z pyszną pizzą i daniami obiadowymi ...",
+      "url": "https://maxxpizza.pl/",
+      "snippet": "MAXX Pizza w Gdańsku Zaspie oferuje szerokie menu, w tym pizzę o imponującej średnicy 65 cm, dania mięsne, makarony, sałatki, …"
+    }
+  ]
+}

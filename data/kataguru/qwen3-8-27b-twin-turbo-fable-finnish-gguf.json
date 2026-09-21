@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "kataguru/Qwen3.8-27B-TWIN-TURBO-Fable-Finnish-GGUF",
+  "slug": "kataguru-qwen3-8-27b-twin-turbo-fable-finnish-gguf",
+  "author": "kataguru",
+  "url": "https://huggingface.co/kataguru/Qwen3.8-27B-TWIN-TURBO-Fable-Finnish-GGUF",
+  "created_at": "2026-09-20T21:13:43.000Z",
+  "updated_at": "2026-09-21T03:58:19.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": null,
+  "languages": [
+    "fi",
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "qwen",
+    "qwen3.5",
+    "finnish",
+    "llama.cpp",
+    "lm-studio",
+    "uncensored",
+    "mtp",
+    "image-text-to-text",
+    "fi",
+    "en",
+    "base_model:DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored",
+    "base_model:quantized:DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 65267660544,
+  "storage_human": "65.3 GB",
+  "base_model": "DavidAU/Qwen3.8-27B-TWIN-TURBO-Fable-Cold-Fusion-709-ULTRA-HERETIC-Uncensored",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "QUERY function - Google Docs Editors Help",
+      "url": "https://support.google.com/docs/answer/3093343?hl=en",
+      "snippet": "QUERY function Runs a Google Visualization API Query Language query across data. Sample Usage QUERY (A2:E6,\"select avg (A) …"
+    },
+    {
+      "title": "QUERY - เครื่องมือแก้ไข Google เอกสาร ความช่วยเหลือ",
+      "url": "https://support.google.com/docs/answer/3093343?hl=th",
+      "snippet": "เรียกใช้การค้นหาของ Google Visualization API Query Language จากข้อมูลทั้งหมด ตัวอย่างการใช้งาน QUERY (A2:E6,\"select avg (A) pivot …"
+    },
+    {
+      "title": "jouer aux pitres - WordReference Forums",
+      "url": "https://forum.wordreference.com/threads/jouer-aux-pitres.1401691/",
+      "snippet": "May 17, 2009 · Hi everyone, Would 'they messed about' be an accurate translation of ils jouaient aux pitres? Thanks for your help!"
+    },
+    {
+      "title": "um, humm, este (Muletilla, filler) | WordReference Forums",
+      "url": "https://forum.wordreference.com/threads/um-humm-este-muletilla-filler.1926414/",
+      "snippet": "Sep 24, 2010 · Hi, I remember a professor teaching us the term \"muletillas.\" These \"little crutches\" are a universal phenomenon when …"
+    },
+    {
+      "title": "How to select Text and Number values together when using Query …",
+      "url": "https://support.google.com/docs/thread/100952191/how-to-select-text-and-number-values-together-when-using-query-function?hl=en",
+      "snippet": "Mar 5, 2021 · I want the query function in sheet 2 to bring both Text and Number grades value as they were originally written in …"
+    }
+  ]
+}

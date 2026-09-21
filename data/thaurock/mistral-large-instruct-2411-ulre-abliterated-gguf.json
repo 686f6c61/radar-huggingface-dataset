@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Thaurock/Mistral-Large-Instruct-2411-ULRE-abliterated-GGUF",
+  "slug": "thaurock-mistral-large-instruct-2411-ulre-abliterated-gguf",
+  "author": "Thaurock",
+  "url": "https://huggingface.co/Thaurock/Mistral-Large-Instruct-2411-ULRE-abliterated-GGUF",
+  "created_at": "2026-09-20T23:45:11.000Z",
+  "updated_at": "2026-09-20T23:53:41.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "mistral",
+    "mistral-large",
+    "text-generation",
+    "GGUF",
+    "abliterated",
+    "uncensored",
+    "refusal-reduced",
+    "ulre",
+    "base_model:mistralai/Mistral-Large-Instruct-2411",
+    "base_model:finetune:mistralai/Mistral-Large-Instruct-2411",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": "mistralai/Mistral-Large-Instruct-2411",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "أفضل مدارس انترناشونال في التجمع الخامس – أشهر 9 مدارس",
+      "url": "https://aqarsky.com/%D8%A3%D9%81%D8%B6%D9%84-%D9%85%D8%AF%D8%A7%D8%B1%D8%B3-%D8%A7%D9%86%D8%AA%D8%B1%D9%86%D8%A7%D8%B4%D9%88%D9%86%D8%A7%D9%84-%D9%81%D9%8A-%D8%A7%D9%84%D8%AA%D8%AC%D9%85%D8%B9-%D8%A7%D9%84%D8%AE%D8%A7/",
+      "snippet": "Oct 27, 2025 · دليل شامل لأفضل مدارس انترناشونال في التجمع الخامس بالقاهرة الجديدة مع عرض المناهج، الرسوم الدراسية، المميزات، والمواقع لتسهيل اختيار المدرسة الأنسب لأبنائك."
+    },
+    {
+      "title": "أفضل المدارس الدولية في التجمع الخامس 2026 (الأسعار + المميزات + العيوب)",
+      "url": "https://benaya-eg.com/%d8%a3%d9%81%d8%b6%d9%84-%d8%a7%d9%84%d9%85%d8%af%d8%a7%d8%b1%d8%b3-%d8%a7%d9%84%d8%af%d9%88%d9%84%d9%8a%d8%a9-%d9%81%d9%8a-%d8%a7%d9%84%d8%aa%d8%ac%d9%85%d8%b9-%d8%a7%d9%84%d8%ae%d8%a7%d9%85%d8%b3/",
+      "snippet": "المشكلة في الفرق الكبير في الأسعار والمستوى. في المقال ده هنوفر عليك ساعات من البحث ونعرض لك أفضل المدارس الدولية في التجمع الخامس مع مقارنة واضحة تساعدك تاخد القرار الصح."
+    },
+    {
+      "title": "قائمة بأفضل المدارس الانترناشونال في التجمع الخامس ومدينة نصر| مصروفات ...",
+      "url": "https://filgamaa.com/%D9%82%D8%A7%D8%A6%D9%85%D8%A9-%D8%A8%D8%A3%D9%81%D8%B6%D9%84-%D8%A7%D9%84%D9%85%D8%AF%D8%A7%D8%B1%D8%B3-%D8%A7%D9%84%D8%A7%D9%86%D8%AA%D8%B1%D9%86%D8%A7%D8%B4%D9%88%D9%86%D8%A7%D9%84-%D9%81%D9%8A/",
+      "snippet": "Apr 18, 2025 · يعد اختيار مدرسة دولية من وسط الكثير أمرًا صعبًا، لذلك سيساعدك موقع \"في الجامعة\" في التعرف على أفضل المدارس الدولية بالتجمع الخامس ومصر الجديدة ومدينة نصر"
+    },
+    {
+      "title": "دليلك إلى افضل مدارس انترناشونال فى مصر | مصاريف 2025",
+      "url": "https://www.propertyfinder.eg/blog/%d8%a7%d9%81%d8%b6%d9%84-%d9%85%d8%af%d8%a7%d8%b1%d8%b3-%d8%a7%d9%86%d8%aa%d8%b1%d9%86%d8%a7%d8%b4%d9%88%d9%86%d8%a7%d9%84-%d9%81%d9%89-%d9%85%d8%b5%d8%b1/",
+      "snippet": "Apr 30, 2025 · استعد للعام الدراسي الجديد! اكتشف قائمة بأفضل مدارس انترناشونال في مصر مع معلومات عن الجودة التعليمية والموقع والأنشطة المتاحة."
+    },
+    {
+      "title": "دليلك إلى أفضل مدارس التجمع الخامس | مصاريف 2025",
+      "url": "https://www.propertyfinder.eg/blog/%d8%a3%d9%81%d8%b6%d9%84-%d9%85%d8%af%d8%a7%d8%b1%d8%b3-%d8%a7%d9%84%d8%aa%d8%ac%d9%85%d8%b9-%d8%a7%d9%84%d8%ae%d8%a7%d9%85%d8%b3/",
+      "snippet": "Apr 30, 2025 · في هذا الدليل، نساعدك على اكتشاف أفضل مدارس التجمع الخامس، مع عرض مميزاتها، مواقعها، وطرق التواصل، لتتمكن من اختيار المدرسة التي تناسب احتياجات أسرتك بثقة واطمئنان."
+    }
+  ]
+}

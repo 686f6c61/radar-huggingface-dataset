@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "models4world/iris-quay-84",
+  "slug": "models4world-iris-quay-84",
+  "author": "models4world",
+  "url": "https://huggingface.co/models4world/iris-quay-84",
+  "created_at": "2026-09-21T01:13:29.000Z",
+  "updated_at": "2026-09-21T01:14:17.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3_5",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 3054832,
+  "parameters_human": "3.1M",
+  "storage_bytes": 54733607719,
+  "storage_human": "54.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Caputo nuvola - forum pizza",
+      "url": "https://www.forumpizza.net/t3665-caputo-nuvola",
+      "snippet": "Sep 28, 2020 · Caputo nuvola par Dylan89 Lun 28 Sep 2020 - 21:17 Bonjour à tous, Travaillant habituellement avec la caputo …"
+    },
+    {
+      "title": "Buon Compleanno Elisabetta (Nuvola)",
+      "url": "https://levocidellanotte.forumfree.it/?t=79372948",
+      "snippet": "Oct 31, 2022 · La vita ti ha messo a dura prova,.ma tu devi cercare nel tuo cuore.tanti altri motivi per rialzarti e continuare ad andare …"
+    },
+    {
+      "title": "Buon Compleanno Nuvola!!! AUGURIIIII!!!",
+      "url": "https://levocidellanotte.forumfree.it/?t=77082048",
+      "snippet": "Oct 31, 2019 · Mai finirà perchè sei parte dei miei ricordi,parte della mia vita e ciò che mi hai dato,ciò che ti ho dato sempre vivrà! Ti …"
+    },
+    {
+      "title": "Aide protocole - forumpizza.net",
+      "url": "https://www.forumpizza.net/t4782-aide-protocole",
+      "snippet": "Jan 30, 2022 · Bonjour à tous, ma compagne et moi allons ouvrir une pizzeria cet été, et nous aurions besoin de vos retours …"
+    },
+    {
+      "title": "Buon Compleanno NUVOLA!!! AUGURIIIIII!!!",
+      "url": "https://levocidellanotte.forumfree.it/?t=76121870",
+      "snippet": "Oct 31, 2018 · Tantissimi Auguri Nuvola!!! Auguri Nuvola !.Ti Auguro il meglio del meglio. in questo giorno di festa per te ,.un …"
+    }
+  ]
+}

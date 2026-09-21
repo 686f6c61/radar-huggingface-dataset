@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "mingxianderen/Qwen3.8-27B-GGUF",
+  "slug": "mingxianderen-qwen3-8-27b-gguf",
+  "author": "mingxianderen",
+  "url": "https://huggingface.co/mingxianderen/Qwen3.8-27B-GGUF",
+  "created_at": "2026-09-20T20:48:40.000Z",
+  "updated_at": "2026-09-20T20:48:40.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3_5",
+    "unsloth",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 472072176128,
+  "storage_human": "472.1 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Roobet Crypto Casino | Best Bitcoin Casino & Online Slots",
+      "url": "https://roobet.com/",
+      "snippet": "Discover Roobet, the best crypto casino with over 6,300 casino games. Enjoy casino rewards, live casino action, slots, and sports …"
+    },
+    {
+      "title": "Roobet Italia Sito Ufficiale — Casino Online, Slot e Scommesse Sportive",
+      "url": "https://roobetitaly.it/",
+      "snippet": "Benvenuto su Roobet Italia. Oltre 4.000 giochi tra slot, live casino e scommesse sportive. Pagamenti in crypto istantanei, bonus …"
+    },
+    {
+      "title": "Roobet Casino | Crypto Casino, Sportsbook & Roobet Originals",
+      "url": "https://online-casino-roobet.com/",
+      "snippet": "Enjoy Roobet Originals, live casino, sportsbook, and crypto gaming at Roobet Casino. Claim RooWards rewards and play thousands …"
+    },
+    {
+      "title": "Roobet Crypto Casino | Best Bitcoin Casino & Online Slots",
+      "url": "https://roobet.com/it",
+      "snippet": ""
+    },
+    {
+      "title": "Roobet Casinò - Slot, Live e Giochi Rapidi",
+      "url": "https://roo-bet.co.it/",
+      "snippet": "Velocità pura e centinaia di slot, live dealer e giochi rapidi su Roobet. Promozioni attive, jackpot e tavoli live pronti ogni giorno."
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "lhanke28/gpt-oss-20b",
+  "slug": "lhanke28-gpt-oss-20b",
+  "author": "lhanke28",
+  "url": "https://huggingface.co/lhanke28/gpt-oss-20b",
+  "created_at": "2026-09-20T22:29:20.000Z",
+  "updated_at": "2026-09-20T22:29:20.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gpt_oss",
+    "text-generation",
+    "vllm",
+    "conversational",
+    "arxiv:2508.10925",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "8-bit",
+    "mxfp4",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 20914757184,
+  "parameters_human": "20.91B",
+  "storage_bytes": 41301372462,
+  "storage_human": "41.3 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Thomas Reboli - BE-7 Valve Responsible Engineer | LinkedIn",
+      "url": "https://www.linkedin.com/in/thomas-reboli",
+      "snippet": "View Thomas Reboli’s profile on LinkedIn, a professional community of 1 billion members."
+    },
+    {
+      "title": "4 \"Thomas Reboli\" profiles | LinkedIn",
+      "url": "https://www.linkedin.com/pub/dir/Thomas/Reboli",
+      "snippet": "View the profiles of professionals named \"Thomas Reboli\" on LinkedIn. There are 4 professionals named \"Thomas Reboli\", who use …"
+    },
+    {
+      "title": "Thomas Reboli - Postdoctoral Research Associate at the ... - LinkedIn",
+      "url": "https://www.linkedin.com/in/thomas-reboli-298580171",
+      "snippet": "Education: University of Illinois Urbana-Champaign · Location: San Francisco Bay Area · 25 connections on LinkedIn. View Thomas …"
+    },
+    {
+      "title": "Thomas Reboli - Intégrateur web orienté front - LinkedIn",
+      "url": "https://fr.linkedin.com/in/thomas-reboli-94040a13b",
+      "snippet": "Consultez le profil de Thomas Reboli sur LinkedIn, une communauté professionnelle d’un milliard de membres."
+    },
+    {
+      "title": "Thomas Reboli on LinkedIn: Excited to say I’ll be working as an ...",
+      "url": "https://www.linkedin.com/feed/update/urn:li:activity:6938878293748137984/",
+      "snippet": "Excited to say I’ll be working as an engineering intern at CobbFendley this summer. I’ll be working in the Oil &amp; Gas department …"
+    }
+  ]
+}

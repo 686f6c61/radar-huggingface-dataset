@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "amarsadan/X-YEMEN-V9-LORA",
+  "slug": "amarsadan-x-yemen-v9-lora",
+  "author": "amarsadan",
+  "url": "https://huggingface.co/amarsadan/X-YEMEN-V9-LORA",
+  "created_at": "2026-09-20T20:02:09.000Z",
+  "updated_at": "2026-09-20T20:02:15.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "gguf",
+    "base_model:adapter:petruhonk/Qwen3.8-9B-Distill-uncensored-heretic",
+    "lora",
+    "transformers",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:petruhonk/Qwen3.8-9B-Distill-uncensored-heretic",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 29097984,
+  "parameters_human": "29.1M",
+  "storage_bytes": 182836837,
+  "storage_human": "183 MB",
+  "base_model": "petruhonk/Qwen3.8-9B-Distill-uncensored-heretic",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Le Figaro - eurotopics.net",
+      "url": "https://www.eurotopics.net/ru/148679/le-figaro",
+      "snippet": "Aug 3, 2026 · Le Figaro, старейшая газета Франции, была основана в 1826 году и первоначально носила сатирический характер."
+    },
+    {
+      "title": "Le Figaro - eurotopics.net",
+      "url": "https://www.eurotopics.net/tr/148679/le-figaro",
+      "snippet": "Aug 12, 2026 · Le Figaro gazetesi 1826 yılında önce bir hiciv dergisi olarak kuruldu, 1866 yılındaysa günlük gazete formatına döndü."
+    },
+    {
+      "title": "Comment choisir une maison d’édition ? - UNEQ",
+      "url": "https://www.uneq.qc.ca/question/comment-choisir-ma-maison-dedition/",
+      "snippet": "Comment choisir une maison d’édition ? Il existe de nombreuses maisons d’édition au Québec. Pour mieux diriger vos recherches, …"
+    },
+    {
+      "title": "Dorval, Jean - UNEQ",
+      "url": "https://www.uneq.qc.ca/conference/dorval-jean/",
+      "snippet": "Faire un don Contactez-nous Liste des membres/Zone membres Adhérez"
+    },
+    {
+      "title": "Le Figaro - eurotopics.net",
+      "url": "https://www.eurotopics.net/fr/148679/le-figaro",
+      "snippet": "Aug 2, 2026 · Créé en 1826, le journal Le Figaro était au départ une revue satirique, avant de devenir un quotidien en 1866."
+    }
+  ]
+}

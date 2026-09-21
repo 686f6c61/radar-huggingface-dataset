@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "ishikaa/acquisition_student_AS_confidence_medmcqa_qwen7b_10000",
+  "slug": "ishikaa-acquisition_student_as_confidence_medmcqa_qwen7b_10000",
+  "author": "ishikaa",
+  "url": "https://huggingface.co/ishikaa/acquisition_student_AS_confidence_medmcqa_qwen7b_10000",
+  "created_at": "2026-09-20T23:09:52.000Z",
+  "updated_at": "2026-09-21T17:33:33.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen2",
+    "text-generation",
+    "trl",
+    "sft",
+    "conversational",
+    "arxiv:1910.09700",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 45705237488,
+  "storage_human": "45.7 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "c# - Get timezone from DateTime - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/576740/get-timezone-from-datetime",
+      "snippet": "Feb 23, 2009 · Also, be aware that summer daylight saving time may be introduced at different dates (EST vs CET - a 3-week …"
+    },
+    {
+      "title": "How do I set the time zone of MySQL? - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/930900/how-do-i-set-the-time-zone-of-mysql",
+      "snippet": "May 31, 2009 · In my case, the solution was to set serverTimezone parameter in Advanced settings to an appropriate value (CET for …"
+    },
+    {
+      "title": "CET时区，GMT时区 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/cdddd41cbb7b9453cb00e190.html",
+      "snippet": "May 1, 2018 · 地球自转，太阳东升西落，由于各个国家地区经度不同，所以各地的时间也就不同，然后就有了一个时区 (Time Zone)的 …"
+    },
+    {
+      "title": "word怎么让文本垂直居中于页面 - 百度经验",
+      "url": "https://jingyan.baidu.com/article/a17d5285cf49ce8098c8f213.html",
+      "snippet": "Feb 6, 2018 · word只看到的水平居中文本，怎么进行上下左右都居中于word页面呢?"
+    },
+    {
+      "title": "c# - How to represent the current UK time? - Stack Overflow",
+      "url": "https://stackoverflow.com/questions/4034923/how-to-represent-the-current-uk-time",
+      "snippet": "Oct 27, 2010 · The Regional settings on the client machines could be set to both UK or Germany.I recieve a date from the server …"
+    }
+  ]
+}

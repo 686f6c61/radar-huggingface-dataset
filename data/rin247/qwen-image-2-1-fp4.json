@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "Rin247/Qwen-Image-2.1-FP4",
+  "slug": "rin247-qwen-image-2-1-fp4",
+  "author": "Rin247",
+  "url": "https://huggingface.co/Rin247/Qwen-Image-2.1-FP4",
+  "created_at": "2026-09-21T00:26:15.000Z",
+  "updated_at": "2026-09-21T04:22:35.000Z",
+  "license": "qwen-research",
+  "license_family": "oss",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "safetensors",
+    "quantized",
+    "aquarion",
+    "weight-only",
+    "fp4",
+    "image",
+    "text-to-image",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4751405448,
+  "parameters_human": "4.75B",
+  "storage_bytes": 13123716042,
+  "storage_human": "13.1 GB",
+  "base_model": null,
+  "formats": [
+    "diffusers",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Walmart Stores Near Me - Locations, Hours & Services",
+      "url": "https://www.walmart.com/store-finder?location=page",
+      "snippet": "Use the Walmart store locator to find your nearest Walmart locations, check store hours, and find services like Grocery Pickup, …"
+    },
+    {
+      "title": "Store-finder Store Directory | Walmart Stores",
+      "url": "https://www.walmart.com/store-directory/[state]/store-finder",
+      "snippet": "Browse through all Walmart store locations in Store-finder, null to find the most convenient one for you."
+    },
+    {
+      "title": "Walmart | Save Money. Live better.",
+      "url": "https://www.walmart.com/",
+      "snippet": "Shop Walmart.com today for Every Day Low Prices. Join Walmart+ for unlimited free delivery from your store & free shipping with no …"
+    },
+    {
+      "title": "How do I find information about my local stores? - Walmart Corporate",
+      "url": "https://corporate.walmart.com/askwalmart/how-do-i-find-information-about-my-local-stores",
+      "snippet": "Jan 8, 2026 · The quickest and easiest way to find a store near you is to use our store finder. Simply enter your zip code or city and …"
+    },
+    {
+      "title": "WALMART Locations - Store Locator Tool",
+      "url": "https://storelocatortool.com/v3/walmart-locations/",
+      "snippet": "Use our interactive map to discover the closest Walmart stores in your area with accurate location data and navigation assistance. …"
+    }
+  ]
+}

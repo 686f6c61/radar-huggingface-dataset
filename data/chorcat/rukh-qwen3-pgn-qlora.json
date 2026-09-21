@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "chorcat/rukh-qwen3-pgn-qlora",
+  "slug": "chorcat-rukh-qwen3-pgn-qlora",
+  "author": "chorcat",
+  "url": "https://huggingface.co/chorcat/rukh-qwen3-pgn-qlora",
+  "created_at": "2026-09-20T20:42:34.000Z",
+  "updated_at": "2026-09-21T15:03:31.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "chess",
+    "rukh",
+    "lora",
+    "qlora",
+    "adapter",
+    "base_model:Qwen/Qwen3-0.6B",
+    "base_model:adapter:Qwen/Qwen3-0.6B",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 20627610,
+  "storage_human": "21 MB",
+  "base_model": "Qwen/Qwen3-0.6B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Sign in to Google Ads",
+      "url": "https://support.google.com/google-ads/answer/1722062?hl=en",
+      "snippet": "If you already have a manager account, you can use the same email address for your manager account and your Google Ads …"
+    },
+    {
+      "title": "Campaign Manager 360 Help",
+      "url": "https://support.google.com/campaignmanager/?hl=en",
+      "snippet": "Official Campaign Manager 360 Help Center where you can find tips and tutorials on using Campaign Manager 360 and other …"
+    },
+    {
+      "title": "About Google Ads account viewing preferences",
+      "url": "https://support.google.com/google-ads/answer/9758020?hl=en",
+      "snippet": "If you use a Google Ads manager account, your viewing preferences are synchronized across the accounts within your manager …"
+    },
+    {
+      "title": "Sign up for Ad Manager - Google Help",
+      "url": "https://support.google.com/admanager/answer/7084151?hl=en",
+      "snippet": "Google Ad Manager is an ad management platform for large publishers who have significant direct sales. Ad Manager provides …"
+    },
+    {
+      "title": "Manager Accounts (MCC): About Google Ads manager accounts",
+      "url": "https://support.google.com/google-ads/answer/6139186?hl=en-419",
+      "snippet": "A manager account is a Google Ads account that lets you easily view and manage multiple Google Ads accounts - including other …"
+    }
+  ]
+}

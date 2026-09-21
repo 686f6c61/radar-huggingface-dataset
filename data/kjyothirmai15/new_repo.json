@@ -1,0 +1,58 @@
+{
+  "schema": 1,
+  "id": "kjyothirmai15/new_repo",
+  "slug": "kjyothirmai15-new_repo",
+  "author": "kjyothirmai15",
+  "url": "https://huggingface.co/kjyothirmai15/new_repo",
+  "created_at": "2026-09-20T20:18:56.000Z",
+  "updated_at": "2026-09-20T20:18:56.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "PANATHINAIKOS FC OFFICIAL WEB SITE",
+      "url": "https://www.pao.gr/en/",
+      "snippet": "BACK AT LEOFOROS WITH A VICTORY, AS OUNAHI STRIKES TWICE! AT THE TOP OF THE PILE! Panathinaikos produced a …"
+    },
+    {
+      "title": "Ντέρμπι Παναθηναϊκού - ΠΑΟΚ - Βικιπαίδεια",
+      "url": "https://el.wikipedia.org/wiki/%CE%9D%CF%84%CE%AD%CF%81%CE%BC%CF%80%CE%B9_%CE%A0%CE%B1%CE%BD%CE%B1%CE%B8%CE%B7%CE%BD%CE%B1%CF%8A%CE%BA%CE%BF%CF%8D_-_%CE%A0%CE%91%CE%9F%CE%9A",
+      "snippet": "Το ντέρμπι ανάμεσα στον Παναθηναϊκό και τον ΠΑΟΚ είναι η αθλητική αναμέτρηση ανάμεσα στους δύο δημοφιλέστερους συλλόγους …"
+    },
+    {
+      "title": "Νέα, ειδήσεις και videos για Παναθηναϊκός - ΠΑΟΚ",
+      "url": "https://www.athletiko.gr/panathinaikos-paok",
+      "snippet": "Apr 27, 2025 · Ο Παναθηναϊκός ψάχνει μία πειστική εμφάνιση και νίκη απέναντι στον ΠΑΟΚ (6/9, 21:30, ΣΚΑΪ) για να αρχίσει να …"
+    },
+    {
+      "title": "Παναθηναϊκός - ΠΑΟΚ 3-1: Ανίκητος στο ΟΑΚΑ, φουλ για δεύτερος!",
+      "url": "https://www.gazzetta.gr/football/superleague/2436247/panathinaikos-paok-3-1-anikitos-sto-oaka-foyl-gia-deyteros",
+      "snippet": "Apr 13, 2025 · Ο εντυπωσιακός στο ΟΑΚΑ, Παναθηναϊκός, επικράτησε σχετικά εύκολα με 3-1 του ΠΑΟΚ αφού είχε προηγηθεί με 2-0 …"
+    },
+    {
+      "title": "ΠΑΟΚ live scores, αποτελέσματα, πρόγραμμα, Παναιτωλικός - ΠΑΟΚ …",
+      "url": "https://www.flashscore.gr/team/paok/Kry6HxA9/",
+      "snippet": "Βρίσκεστε στην σελίδα με τα σκορ της ομάδας ΠΑΟΚ, στο τμήμα ΠΟΔΟΣΦΑΙΡΟ/Ελλάδα. Το Flashscore.gr προσφέρει ζωντανά …"
+    }
+  ]
+}

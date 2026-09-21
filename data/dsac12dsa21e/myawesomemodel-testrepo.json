@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "DSAC12DSA21E/MyAwesomeModel-TestRepo",
+  "slug": "dsac12dsa21e-myawesomemodel-testrepo",
+  "author": "DSAC12DSA21E",
+  "url": "https://huggingface.co/DSAC12DSA21E/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-21T00:56:04.000Z",
+  "updated_at": "2026-09-21T00:56:09.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Rahasia Doa Mustajab: 7 Kiat Agar Doa Dikabulkan - Agama Islam",
+      "url": "https://www.agamaislam.com/rahasia-doa-mustajab-7-kiat-agar-doa-dikabulkan/",
+      "snippet": "Ingin doa cepat dikabulkan? Pelajari 7 kiat rahasia doa mustajab berdasarkan Al-Qur'an dan Hadis dalam artikel ini!"
+    },
+    {
+      "title": "Panduan Praktis agar Doa Cepat Dikabulkan, Jangan Lewatkan …",
+      "url": "https://www.liputan6.com/feeds/read/6166214/panduan-praktis-agar-doa-cepat-dikabulkan-jangan-lewatkan-langkah-penting-ini",
+      "snippet": "Sep 23, 2025 · Artikel ini akan mengulas panduan praktis agar doa lebih cepat dikabulkan. Dengan penjelasan ringan dan mudah …"
+    },
+    {
+      "title": "Rahasia Doa Cepat Terkabul, Panduan Lengkap Berdasarkan Al",
+      "url": "https://www.detik.com/hikmah/doa-dan-hadits/d-8018112/rahasia-doa-cepat-terkabul-panduan-lengkap-berdasarkan-al-quran-dan-sunnah",
+      "snippet": "Jul 18, 2025 · Meski keputusan terkabul atau tidaknya sebuah doa sepenuhnya berada di tangan-Nya, bukan berarti kita tidak bisa …"
+    },
+    {
+      "title": "Lakukan 10 Cara Ini agar Doa Cepat Terkabul - mozaik.inilah.com",
+      "url": "https://mozaik.inilah.com/dakwah/lakukan-10-cara-ini-agar-doa-cepat-terkabul",
+      "snippet": "Jun 3, 2026 · Berikut ini adalah cara atau adab yang perlu diperhatikan umat Islam saat berdoa agar cepat dikabulkan Allah SWT: …"
+    },
+    {
+      "title": "10 Amalan dan Adab agar Doa Cepat Dikabulkan, Awali dengan",
+      "url": "https://www.detik.com/hikmah/khazanah/d-7324189/10-amalan-dan-adab-agar-doa-cepat-dikabulkan-awali-dengan-sholawat",
+      "snippet": "May 5, 2024 · Demi terkabulnya doa, pastikan mengawali dengan Bismillah, memperbanyak dzikir, melakukan amalan sunnah, dan …"
+    }
+  ]
+}

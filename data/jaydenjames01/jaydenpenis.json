@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "jaydenjames01/jaydenpenis",
+  "slug": "jaydenjames01-jaydenpenis",
+  "author": "jaydenjames01",
+  "url": "https://huggingface.co/jaydenjames01/jaydenpenis",
+  "created_at": "2026-09-21T01:18:36.000Z",
+  "updated_at": "2026-09-21T01:18:48.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-to-image",
+  "library": "diffusers",
+  "languages": [],
+  "tags": [
+    "diffusers",
+    "text-to-image",
+    "lora",
+    "template:diffusion-lora",
+    "base_model:krea/Krea-2-Turbo",
+    "base_model:adapter:krea/Krea-2-Turbo",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 116297626,
+  "storage_human": "116 MB",
+  "base_model": "krea/Krea-2-Turbo",
+  "formats": [
+    "diffusers"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Programmazione Cinema Madison Ragusa - Madison Cinemas",
+      "url": "https://madisoncinemas.it/programmazione-cinema-madison-ragusa/",
+      "snippet": "Madison Cinemas Ragusa PROGRAMMAZIONE Lun 21/09 Mar 22/09 Mer 23/09 Gio 24/09 Ven 25/09 Sab 26/09 Dom 27/09"
+    },
+    {
+      "title": "Film in Programmazione a Ragusa: Orari Cinema di Oggi",
+      "url": "https://www.cinemap.it/ragusa",
+      "snippet": "3 film in programmazione oggi nei 2 cinema di Ragusa. Orari, versione originale, IMAX. Aggiornato 21 set."
+    },
+    {
+      "title": "Cinema Ragusa: programmazione nelle sale | MYmovies.it",
+      "url": "https://www.mymovies.it/cinema/ragusa/",
+      "snippet": "Programmazione completa delle uscite nelle sale cinematografiche di Ragusa. Consultabile gratuitamente online, oltre 3000 cinema …"
+    },
+    {
+      "title": "Cinema Madison Cinemas Ragusa - MYmovies.it",
+      "url": "https://www.mymovies.it/cinema/ragusa/20086/",
+      "snippet": "May 14, 2026 · Consultabile gratuitamente online, oltre 3000 cinema in tutte le città e comuni d'Italia. Orari, film, cast, critica, trailer, …"
+    },
+    {
+      "title": "Orari programmazione film al cinema a RAGUSA e provincia / Cerca Cinema …",
+      "url": "http://filmup.com/cerca-cinema/index.php?conf=1&citta=22884&provincia=1&titolo=-1",
+      "snippet": "May 17, 2026 · Cinema a RAGUSA: Scopri i film in programmazione a RAGUSA e gli orari degli spettacoli! Su FilmUP.com troverai …"
+    }
+  ]
+}

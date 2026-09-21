@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "mradermacher/G4-WanaMeroQueen-v3-31B-heretic-i1-GGUF",
+  "slug": "mradermacher-g4-wanameroqueen-v3-31b-heretic-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/G4-WanaMeroQueen-v3-31B-heretic-i1-GGUF",
+  "created_at": "2026-09-20T23:01:43.000Z",
+  "updated_at": "2026-09-21T03:14:15.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "gguf",
+    "ja",
+    "base_model:vulture3/G4-WanaMeroQueen-v3-31B-heretic",
+    "base_model:quantized:vulture3/G4-WanaMeroQueen-v3-31B-heretic",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30697345596,
+  "parameters_human": "30.70B",
+  "storage_bytes": 334809588096,
+  "storage_human": "334.8 GB",
+  "base_model": "vulture3/G4-WanaMeroQueen-v3-31B-heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "rescue-tec | Ihr Feuerwehrshop für Feuerwehrbedarf | rescue-tec",
+      "url": "https://www.rescue-tec.de/",
+      "snippet": "rescue-tec – für alle Hilfsorganisationen, Handwerk und Unternehmen. Hier finden Sie eine ausgewogene Produktpalette an …"
+    },
+    {
+      "title": "Impressum | rescue-tec",
+      "url": "https://www.rescue-tec.de/impressum",
+      "snippet": "Grafiken, Texte, Logos, Bilder usw. dürfen nur nach schriftlicher Genehmigung durch die rescue-tec GmbH & Co. KG …"
+    },
+    {
+      "title": "Persönliche Ausrüstung - rescue-tec",
+      "url": "https://www.rescue-tec.de/pers.-ausruestung/",
+      "snippet": "Warum Feuerwehr Ausrüstung bei rescue-tec kaufen? Als langjähriger Partner von Feuerwehren, Hilfsorganisationen und Behörden …"
+    },
+    {
+      "title": "rescue-tec",
+      "url": "https://www.rescue-tec.de/en/",
+      "snippet": "rescue-tec – Your shop for fire fighter, fire and rescue service, police and security. You will find a well-balanced range of practicable …"
+    },
+    {
+      "title": "Haltewinkel für Atemschutzüberwachungstafel | rescue-tec",
+      "url": "https://www.rescue-tec.de/techn.-ausruestung/brandbekaempfung/atemschutzueberwachung/haltewinkel-fuer-atemschutzueberwachungstafeln",
+      "snippet": "Ein praktischer Haltewinkel für Aufstiegsleitern • passt zu allen rescue-tec Atemschutzüberwachungstafeln und zur Pack- und …"
+    }
+  ]
+}

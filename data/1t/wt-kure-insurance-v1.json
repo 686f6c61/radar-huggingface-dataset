@@ -1,0 +1,84 @@
+{
+  "schema": 1,
+  "id": "1T/wt-kure-insurance-v1",
+  "slug": "1t-wt-kure-insurance-v1",
+  "author": "1T",
+  "url": "https://huggingface.co/1T/wt-kure-insurance-v1",
+  "created_at": "2026-09-20T23:25:35.000Z",
+  "updated_at": "2026-09-20T23:30:47.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "peft",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "sentence-transformers",
+    "feature-extraction",
+    "sentence-similarity",
+    "retrieval",
+    "long-context",
+    "korean",
+    "insurance",
+    "lora",
+    "ko",
+    "base_model:nlpai-lab/KURE-v1",
+    "base_model:adapter:nlpai-lab/KURE-v1",
+    "license:mit",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 28482384,
+  "storage_human": "28 MB",
+  "base_model": "nlpai-lab/KURE-v1",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Semantic textual similarity (general Korean)",
+      "dataset": "KorSTS",
+      "metric": "Spearman correlation",
+      "value": 0.8766
+    }
+  ],
+  "sources": [
+    {
+      "title": "Welche Steuerabzüge Sie nicht vergessen sollten - BDO",
+      "url": "https://www.bdo.ch/de-ch/publikationen/blogs/welche-steuerabzuge-sie-nicht-vergessen-sollten",
+      "snippet": "Die Steuerabzüge sind sicherlich die «angenehme Seite» einer Steuererklärung. In der Praxis machen wir immer wieder die …"
+    },
+    {
+      "title": "Steuern sparen in der Schweiz: Abzüge in der Steuererklärung",
+      "url": "https://www.comparis.ch/steuern/steuervergleich/uebersicht/abzuege-schweiz-tipps",
+      "snippet": "Feb 10, 2026 · Ja, als berufstätige Person können Sie erforderliche Wegkosten geltend machen und bis zu einem bestimmten …"
+    },
+    {
+      "title": "Steuererklärung : Ausfüllen, Einkommen deklarieren",
+      "url": "https://www.ch.ch/de/steuern-und-finanzen/steuererklarung/",
+      "snippet": "Was Sie von Ihrem Einkommen genau abziehen können, ist von Kanton zu Kanton unterschiedlich. Beachten Sie die kantonale …"
+    },
+    {
+      "title": "Abzüge bei Steuern Schweiz - smartetax.ch",
+      "url": "https://www.smartetax.ch/blog/Spenden-steuern-abziehen-schweiz",
+      "snippet": "Sammle deine Belege für unterjährige Spenden mit Smart eTax, so geht kein Beleg vergessen oder verloren. Das vereinfacht die …"
+    },
+    {
+      "title": "Steuererklärung Privatpersonen - Kanton Zürich",
+      "url": "https://www.zh.ch/de/steuern-finanzen/steuern/steuern-natuerliche-personen/steuererklaerung-natuerliche-personen.html",
+      "snippet": "Sie finden alle Informationen rund um die Steuererklärung für Privatpersonen auf dieser Seite."
+    }
+  ]
+}

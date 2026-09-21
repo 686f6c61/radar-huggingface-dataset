@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "dsfds4566/MyAwesomeModel-TestRepo",
+  "slug": "dsfds4566-myawesomemodel-testrepo",
+  "author": "dsfds4566",
+  "url": "https://huggingface.co/dsfds4566/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-20T23:49:48.000Z",
+  "updated_at": "2026-09-20T23:49:53.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 32,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Електротехнички факултет, Универзитет у Београду",
+      "url": "https://www.etf.bg.ac.rs/",
+      "snippet": "Информације о упису на прву годину основних академских студија, доступне су на страници https://prijemni.etf.bg.ac.rs/. …"
+    },
+    {
+      "title": "Elektrotehnički fakultet, Univerzitet u Beogradu | ETF",
+      "url": "https://www.etf.bg.ac.rs/sr-lat",
+      "snippet": "Informacije o upisu na prvu godinu osnovnih akademskih studija, dostupne su na stranici https://prijemni.etf.bg.ac.rs/. Molimo …"
+    },
+    {
+      "title": "prijemni.etf.bg.ac.rs - Пријемни ЕТФ",
+      "url": "https://prijemni.etf.bg.ac.rs/",
+      "snippet": "У складу са конкурсом Универзитета у Београду за упис на основне академске студије у школској 2026/2027. години, у оквиру …"
+    },
+    {
+      "title": "Упис на Електротехнички факултет – Пријемни ЕТФ",
+      "url": "https://prijemni.etf.bg.ac.rs/upis-na-elektrotehnicki-fakultet/",
+      "snippet": "Jul 1, 2026 · Кандидати који се уписују на Електротехнички факултет обавезни су да на упис дођу лично. Приликом уписа …"
+    },
+    {
+      "title": "Упис на Електротехнички факултет | ЕТФ",
+      "url": "https://www.etf.bg.ac.rs/sr/upis",
+      "snippet": "Оправдано се сматра да је полагање пријемних испита прва велика препрека до титуле инжењера електротехнике. Да би ту …"
+    }
+  ]
+}

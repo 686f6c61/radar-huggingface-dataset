@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "Adiaparmar/cem-rag-qwen3-stage3-lora",
+  "slug": "adiaparmar-cem-rag-qwen3-stage3-lora",
+  "author": "Adiaparmar",
+  "url": "https://huggingface.co/Adiaparmar/cem-rag-qwen3-stage3-lora",
+  "created_at": "2026-09-20T20:39:37.000Z",
+  "updated_at": "2026-09-20T20:40:12.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:unsloth/qwen3-30b-a3b",
+    "lora",
+    "sft",
+    "transformers",
+    "trl",
+    "unsloth",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2581562373,
+  "storage_human": "2.6 GB",
+  "base_model": "unsloth/qwen3-30b-a3b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Télécharger et installer Firefox sous Windows | Assistance de Mozilla",
+      "url": "https://support.mozilla.org/fr/kb/telecharger-installer-firefox-windows?redirect=no",
+      "snippet": "Oct 30, 2021 · REDIRECT Comment installer Firefox sous Windows Partagez cet article : https://mzl.la/3Qw0pIN Ces personnes ont …"
+    },
+    {
+      "title": "Install Firefox on your phone or tablet - Mozilla Support",
+      "url": "https://support.mozilla.org/en-US/kb/install-firefox-your-phone-or-tablet",
+      "snippet": "Dec 21, 2025 · Firefox brings your favorite features and security to your Android and iOS devices. Learn how to install the mobile app …"
+    },
+    {
+      "title": "Why am i unable to download google drive files with firefox yet other ...",
+      "url": "https://support.google.com/drive/thread/40517539/why-am-i-unable-to-download-google-drive-files-with-firefox-yet-other-browsers-work?hl=en",
+      "snippet": "Apr 16, 2020 · Hi, for the past few days av been trying to download files from Google drive using Firefox but not working."
+    },
+    {
+      "title": "Firefox downloaden en installeren in Windows | Hulp voor Firefox",
+      "url": "https://support.mozilla.org/nl/kb/firefox-downloaden-en-installeren-windows",
+      "snippet": "Firefox op uw computer installeren: Bezoek deze Firefox-downloadpagina in een willekeurige browser, zoals Edge. Klik op de knop …"
+    },
+    {
+      "title": "Firefox auf die neueste Version aktualisieren | Hilfe zu Firefox",
+      "url": "https://support.mozilla.org/de/kb/firefox-auf-die-letzte-version-aktualisieren",
+      "snippet": "Hinweis: Firefox lädt möglicherweise das neueste Update immer noch im Hintergrund herunter, auch wenn das Fenster „Über Mozilla …"
+    }
+  ]
+}

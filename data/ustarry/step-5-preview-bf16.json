@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "ustarry/Step-5-Preview-BF16",
+  "slug": "ustarry-step-5-preview-bf16",
+  "author": "ustarry",
+  "url": "https://huggingface.co/ustarry/Step-5-Preview-BF16",
+  "created_at": "2026-09-21T01:35:01.000Z",
+  "updated_at": "2026-09-21T01:35:01.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "step3p5v",
+    "custom_code",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 10,
+  "trending_score": 0,
+  "parameters": 604339504832,
+  "parameters_human": "604.34B",
+  "storage_bytes": 1214892431912,
+  "storage_human": "1214.9 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "AREP - Agence pluridisciplinaire",
+      "url": "https://www.arep.fr/",
+      "snippet": "5 days ago · Le groupe AREP réunit de multiples expertises pour apporter des réponses concrètes aux enjeux de l’urgence …"
+    },
+    {
+      "title": "Nous contacter - AREP",
+      "url": "https://www.arep.fr/contact/",
+      "snippet": "Toutes nos offres d’emploi, alternance et stages sont publiées sur notre plate-forme dédiée. Pourquoi cette information ?"
+    },
+    {
+      "title": "AREP EN CHINE - arcadata.com",
+      "url": "https://www.arcadata.com/fr/focus/arep-en-chine-165",
+      "snippet": "May 12, 2026 · Située au sein du pôle de transport intégré du sous-centre administratif de Beijing, la nouvelle gare de Tongzhou de …"
+    },
+    {
+      "title": "AREP — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/AREP",
+      "snippet": "Le 1er janvier 2021, le groupe AREP a procédé à une simplification juridique : les sociétés AREPVille et Parvis jusqu'alors filiales d' …"
+    },
+    {
+      "title": "AREP - LinkedIn",
+      "url": "https://fr.linkedin.com/company/arep",
+      "snippet": "Il contribue à la recherche, au débat public et à l’évolution des pratiques par ses publications, notamment sa revue POST. Implanté …"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "mradermacher/VirbiusGuard-GGUF",
+  "slug": "mradermacher-virbiusguard-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/VirbiusGuard-GGUF",
+  "created_at": "2026-09-20T20:51:03.000Z",
+  "updated_at": "2026-09-20T20:59:08.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "zh",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "safety",
+    "security",
+    "llm-guard",
+    "qwen3",
+    "prompt-injection",
+    "agent-safety",
+    "zh",
+    "en",
+    "base_model:i1see1you/VirbiusGuard",
+    "base_model:quantized:i1see1you/VirbiusGuard",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 751632384,
+  "parameters_human": "751.6M",
+  "storage_bytes": 7025224320,
+  "storage_human": "7.0 GB",
+  "base_model": "i1see1you/VirbiusGuard",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "如何看待国内都说scientific reports 期刊很水，不是nature旗下的吗？",
+      "url": "https://www.zhihu.com/question/56995992",
+      "snippet": "Mar 12, 2017 · 知乎讨论Scientific Reports期刊的质量及其与Nature的关系，探讨国内对其评价的原因和背景。"
+    },
+    {
+      "title": "蒋炎岩 - 知乎",
+      "url": "https://www.zhihu.com/people/jiang-yan-yan-75",
+      "snippet": "Sep 8, 2026 · 如何评价南大副教授蒋炎岩在课件中提出“ 没有Token的CS学生应该立刻退学”？"
+    },
+    {
+      "title": "google scholar高级搜索使用-百度经验",
+      "url": "https://jingyan.baidu.com/article/597a0643408709312b52439e.html",
+      "snippet": "Oct 12, 2015 · google scholar高级搜索使用,谷歌学术搜索（googlecholar）是免费搜索学术文章的google应用，目前，在科学研究和文 …"
+    },
+    {
+      "title": "通过google scholar查看研究者的h-index-百度经验",
+      "url": "https://jingyan.baidu.com/article/4d58d5411cafdc9dd5e9c055.html",
+      "snippet": "Oct 15, 2015 · 通过google scholar查看研究者的h-index,文章被引次数被用于衡量一个期刊的影响力，同时也是衡量一个研究者科研水 …"
+    },
+    {
+      "title": "SCI大修返修后，awaiting reviewer assignment是什么审稿状况?",
+      "url": "https://www.zhihu.com/question/483333797",
+      "snippet": "SCI论文（IEEE的）给了一个月大修，修改重投后，状态由awaiting adm process 变为awaiting reviewer invi…"
+    }
+  ]
+}

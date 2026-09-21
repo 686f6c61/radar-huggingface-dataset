@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "sixstringzen/Hemmingway-1-oQ8e-mtp",
+  "slug": "sixstringzen-hemmingway-1-oq8e-mtp",
+  "author": "sixstringzen",
+  "url": "https://huggingface.co/sixstringzen/Hemmingway-1-oQ8e-mtp",
+  "created_at": "2026-09-20T21:17:02.000Z",
+  "updated_at": "2026-09-21T01:42:03.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "omlx",
+    "oq",
+    "oqe",
+    "quantized",
+    "8-bit",
+    "mtp",
+    "apple-silicon",
+    "creative-writing",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:Altworld/Hemmingway-1",
+    "base_model:quantized:Altworld/Hemmingway-1",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 29100132959,
+  "storage_human": "29.1 GB",
+  "base_model": "Altworld/Hemmingway-1",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Mecklenburg-Vorpommern – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Mecklenburg-Vorpommern",
+      "snippet": "Mecklenburg-Vorpommern ist als Teil des norddeutschen Tieflands überwiegend flach; bedingt durch die letzte Eiszeit gibt es aber in …"
+    },
+    {
+      "title": "Urlaub, Ferien und Reiseziele in Mecklenburg-Vorpommern",
+      "url": "https://www.auf-nach-mv.de/",
+      "snippet": "Hotels, Ausflugsziele, Veranstaltungen, Ferienwohnungen: Alle Infos für Euren Urlaub an der Ostsee, direkt von der offiziellen MV …"
+    },
+    {
+      "title": "Regierungsportal M-V",
+      "url": "https://www.regierung-mv.de/",
+      "snippet": "Das Regierungsportal Mecklenburg-Vorpommern informiert über aktuelle Themen der Staatskanzlei als der «Regierungszentrale» …"
+    },
+    {
+      "title": "Mecklenburg-Vorpommern - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Mecklenburg-Vorpommern",
+      "snippet": "Mecklenburg-Vorpommern is Germany's number-one tourist location, the main destinations being the Baltic Sea coastline with …"
+    },
+    {
+      "title": "Mecklenburg – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Mecklenburg",
+      "snippet": "Mecklenburg [ˈmeːklənbʊrk], mecklenburgisch Mäkel (n)borg [ˈmɛːkəl (n)bɔrx], ist ein Landesteil des Landes Mecklenburg …"
+    }
+  ]
+}

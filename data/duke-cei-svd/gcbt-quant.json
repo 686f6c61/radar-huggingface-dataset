@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "Duke-CEI-SVD/gcbt-quant",
+  "slug": "duke-cei-svd-gcbt-quant",
+  "author": "Duke-CEI-SVD",
+  "url": "https://huggingface.co/Duke-CEI-SVD/gcbt-quant",
+  "created_at": "2026-09-21T01:35:48.000Z",
+  "updated_at": "2026-09-21T02:34:01.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "quantization",
+    "svdquant",
+    "gcbt",
+    "experiment-artifacts",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen-Image",
+    "base_model:finetune:Qwen/Qwen-Image",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 53357284904,
+  "storage_human": "53.4 GB",
+  "base_model": "Qwen/Qwen-Image",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Yahoo Mail | Email with smart features and top-notch security",
+      "url": "https://mail.yahoo.com/",
+      "snippet": "Yahoo Mail: Your smarter, faster, free email solution. Organize your inbox, protect your privacy, and tackle tasks efficiently with AI …"
+    },
+    {
+      "title": "Login - Sign in to Yahoo",
+      "url": "https://login.yahoo.com/",
+      "snippet": "Sign in to access the best in class Yahoo Mail, breaking local, national and global news, finance, sports, music, movies... You get …"
+    },
+    {
+      "title": "Yahoo Mail",
+      "url": "https://in.mail.yahoo.com/d",
+      "snippet": "Take a trip into an upgraded, more organised inbox. Sign in and start exploring all of the free organisational tools for your email. …"
+    },
+    {
+      "title": "Yahoo",
+      "url": "https://www.yahoo.com/",
+      "snippet": "News, email and search are just the beginning. Discover more every day. Find your yodel."
+    },
+    {
+      "title": "Log-in - Sign in to Yahoo",
+      "url": "https://uk.mail.yahoo.com/%E2%80%8E",
+      "snippet": "Sign in to access the best-in-class Yahoo Mail, breaking local, national and global news, finance, sports, music, movies... You get …"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "nmuendler/DeepSeek-R1-Distill-Qwen-7B-rust-early-stop-run2-kl0",
+  "slug": "nmuendler-deepseek-r1-distill-qwen-7b-rust-early-stop-run2-kl0",
+  "author": "nmuendler",
+  "url": "https://huggingface.co/nmuendler/DeepSeek-R1-Distill-Qwen-7B-rust-early-stop-run2-kl0",
+  "created_at": "2026-09-20T20:19:40.000Z",
+  "updated_at": "2026-09-20T20:25:38.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "peft",
+  "languages": [],
+  "tags": [
+    "peft",
+    "safetensors",
+    "base_model:adapter:/iopsstor/scratch/cscs/nmuendler/hf-cache/hub/models--deepseek-ai--DeepSeek-R1-Distill-Qwen-7B/snapshots/916b56a44061fd5cd7d6a8fb632557ed4f724f60",
+    "lora",
+    "transformers",
+    "text-generation",
+    "conversational",
+    "arxiv:1910.09700",
+    "base_model:deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+    "base_model:adapter:deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 657397611,
+  "storage_human": "657 MB",
+  "base_model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Medialon Downloads - portal.7thsense.one",
+      "url": "https://portal.7thsense.one/online-help/index.html?medialon_downloads.html",
+      "snippet": "Such an upgrade is only to be done by 7thsense staff. If you have an existing unit you wish to upgrade, please contact our sales team …"
+    },
+    {
+      "title": "Flexible Show Control Systems for AV Installations - Medialon",
+      "url": "https://7thsense.one/medialon-7thsense-show-control",
+      "snippet": "Software that turns any PC into a show controller. Show controller for complex shows and attractions. Ruggedised show control and …"
+    },
+    {
+      "title": "Medialon Manager V7.1 Show Control Software Released",
+      "url": "https://7thsense.one/story/medialon-manager-v71-show-control-software-released",
+      "snippet": "Medialon Manager is a Windows®-based show control software that brings together a programming interface, a GUI builder, and a …"
+    },
+    {
+      "title": "Medialon - Show Sage",
+      "url": "https://showsage.com/medialon/",
+      "snippet": "Turn any PC into a show controller with Medialon Manger v6 software. Audio and video streaming, links to database, media …"
+    },
+    {
+      "title": "Medialon Manager V7 Pro – Interactive Controls",
+      "url": "https://www.interactivecontrols.com.au/feature/medialon-manager-v7-pro/",
+      "snippet": "With Medialon Manager V7 you can control any audiovisual, lighting, special effect, and computer equipment using any protocol and …"
+    }
+  ]
+}

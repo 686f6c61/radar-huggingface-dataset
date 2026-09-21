@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "id": "joshycodes/qwen3-14b-commitments-sdf",
+  "slug": "joshycodes-qwen3-14b-commitments-sdf",
+  "author": "joshycodes",
+  "url": "https://huggingface.co/joshycodes/qwen3-14b-commitments-sdf",
+  "created_at": "2026-09-20T20:18:22.000Z",
+  "updated_at": "2026-09-20T20:20:51.000Z",
+  "license": "research-only",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "synthetic-document-finetuning",
+    "self-authored-character",
+    "model-welfare",
+    "research",
+    "not-for-deployment",
+    "base_model:Qwen/Qwen3-14B",
+    "base_model:finetune:Qwen/Qwen3-14B",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 14768307200,
+  "parameters_human": "14.77B",
+  "storage_bytes": 29548088922,
+  "storage_human": "29.5 GB",
+  "base_model": "Qwen/Qwen3-14B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Parfumy Montale Paris - Heureka.sk",
+      "url": "https://parfumy.heureka.sk/f:5371:8466411/",
+      "snippet": "White Musk by Montale je parfém z kategórie kvetinovo-drevitých a pižmových vôní, určený pre ženy a mužov. Tento jemný a čistý …"
+    },
+    {
+      "title": "Montale - Heureka.sk",
+      "url": "https://www.heureka.sk/znacky/montale/",
+      "snippet": "Montale Paris Vanilla Cake parfumovaná voda unisex 100 ml 53,82 – 102,50 € v 9 obchodov"
+    },
+    {
+      "title": "Montale Paris Vanille Absolu parfumovaná voda dámska 2 ml vzorka",
+      "url": "https://parfumy.heureka.sk/montale-paris-vanille-absolu-parfumovana-voda-damska-2-ml-vzorka/",
+      "snippet": "Popis produktu Vanille Absolu by Montale je parfém z kategórie orientálno-vanilkových vôní, určený pre ženy. Tento bohatý a sladký …"
+    },
+    {
+      "title": "Montale Paris - Heureka.sk",
+      "url": "https://www.heureka.sk/znacky/montale-paris/",
+      "snippet": "Montale Paris Roses Musk Limited Edition parfumovaná voda unisex 100 ml 98,90 – 99,90 € v 2 obchody"
+    },
+    {
+      "title": "Montale - Heureka.cz",
+      "url": "https://www.heureka.cz/znacky/montale/",
+      "snippet": "Montale Intense Cafe parfémovaná voda unisex 100 ml 88 % 9 recenzí 1 390 – 2 457 Kč"
+    }
+  ]
+}

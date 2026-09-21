@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "id": "KasugaiSakura/Qwen3.8-27B-Uncensored-GGUF",
+  "slug": "kasugaisakura-qwen3-8-27b-uncensored-gguf",
+  "author": "KasugaiSakura",
+  "url": "https://huggingface.co/KasugaiSakura/Qwen3.8-27B-Uncensored-GGUF",
+  "created_at": "2026-09-20T22:09:56.000Z",
+  "updated_at": "2026-09-20T22:09:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "llama.cpp",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "uncensored",
+    "qwen3.8",
+    "mtp",
+    "speculative-decoding",
+    "imatrix",
+    "quantized",
+    "text-generation",
+    "en",
+    "zh",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 231256590464,
+  "storage_human": "231.3 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Smartfony i telefony - niskie ceny i setki opinii w Media Expert",
+      "url": "https://www.mediaexpert.pl/smartfony-i-zegarki/smartfony?msockid=3b305c1e17d461bc32d74bc416cd6055",
+      "snippet": "Smartfony w Media Expert! ☝ Szeroki wybór produktów m.in. Smartfon APPLE iPhone 18 Pro 5G 256GB 6.3\" 120Hz Burgund, …"
+    },
+    {
+      "title": "Najlepsze smartfony - ranking telefonów 2026 - Media Expert",
+      "url": "https://www.mediaexpert.pl/poradniki/telefony-i-smartfony/ranking-smartfonow?msockid=3b305c1e17d461bc32d74bc416cd6055",
+      "snippet": "Sep 12, 2026 · Ranking telefonów: poznaj najlepsze smarftony na rynku! Wybieramy modele z ekranami OLED, mocną baterią i AI. …"
+    },
+    {
+      "title": "Smartfony MOTOROLA - niskie ceny i setki opinii w Media Expert",
+      "url": "https://www.mediaexpert.pl/smartfony-i-zegarki/smartfony/motorola?msockid=3b305c1e17d461bc32d74bc416cd6055",
+      "snippet": "Smartfony MOTOROLA w Media Expert! ☝ Szeroki wybór produktów m.in. Smartfon MOTOROLA Edge 60 Pro 5G 12/512GB 6.67\" …"
+    },
+    {
+      "title": "Smartfony SAMSUNG - Media Expert",
+      "url": "https://www.mediaexpert.pl/smartfony-i-zegarki/smartfony/samsung?msockid=3b305c1e17d461bc32d74bc416cd6055",
+      "snippet": "Smartfony SAMSUNG w Media Expert! ☝ Szeroki wybór produktów m.in. Smartfon SAMSUNG Galaxy Z Fold 8 5G 12/256GB 7.6\" …"
+    },
+    {
+      "title": "Smartfony APPLE - Media Expert",
+      "url": "https://www.mediaexpert.pl/smartfony-i-zegarki/smartfony/apple?msockid=3b305c1e17d461bc32d74bc416cd6055",
+      "snippet": "Smartfony iPhone w Media Expert W ofercie Media Expert dostępne są smartfony firmy Apple, cenione przez użytkowników nie tylko …"
+    }
+  ]
+}

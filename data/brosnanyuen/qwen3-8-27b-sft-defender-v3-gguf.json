@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "brosnanyuen/Qwen3.8-27B-SFT-Defender-v3-GGUF",
+  "slug": "brosnanyuen-qwen3-8-27b-sft-defender-v3-gguf",
+  "author": "brosnanyuen",
+  "url": "https://huggingface.co/brosnanyuen/Qwen3.8-27B-SFT-Defender-v3-GGUF",
+  "created_at": "2026-09-21T01:50:35.000Z",
+  "updated_at": "2026-09-21T01:53:50.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 35,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 17741861536,
+  "storage_human": "17.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Psicología - Wikipedia, la enciclopedia libre",
+      "url": "https://es.wikipedia.org/wiki/Psicolog%C3%ADa",
+      "snippet": "En cuanto a la metodología utilizada, la psicología ha discurrido tradicionalmente por dos opciones de investigación: La psicología …"
+    },
+    {
+      "title": "Psicologia – Wikipédia, a enciclopédia livre",
+      "url": "https://pt.wikipedia.org/wiki/Psicologia",
+      "snippet": "Psicologia é o estudo científico da mente e do comportamento. [1][2] Seu tópico inclui o comportamento de humanos e não …"
+    },
+    {
+      "title": "Psicología - Qué es, objetivos, ramas, origen e historia",
+      "url": "https://concepto.de/psicologia/",
+      "snippet": "Para citar de manera adecuada, recomendamos hacerlo según las normas APA, que es una forma estandarizada …"
+    },
+    {
+      "title": "PSICOLOGÍA - Información y Técnicas",
+      "url": "https://www.psicologia-online.com/psicologia/",
+      "snippet": "¿Qué es la psicología? La psicología es una ciencia, una disciplica y una profesión. ¿Qué estudia la psicología? Estudia los …"
+    },
+    {
+      "title": "Qué es la Psicologia: origen, corrientes y ramas",
+      "url": "https://www.significados.com/psicologia/",
+      "snippet": "Sep 1, 2025 · Qué es la Psicologia Equipo de Enciclopedia Significados Creado y revisado por nuestros expertos"
+    }
+  ]
+}

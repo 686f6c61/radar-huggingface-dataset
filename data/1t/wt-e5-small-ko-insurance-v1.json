@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "1T/wt-e5-small-ko-insurance-v1",
+  "slug": "1t-wt-e5-small-ko-insurance-v1",
+  "author": "1T",
+  "url": "https://huggingface.co/1T/wt-e5-small-ko-insurance-v1",
+  "created_at": "2026-09-20T23:25:21.000Z",
+  "updated_at": "2026-09-20T23:30:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "peft",
+  "languages": [
+    "ko"
+  ],
+  "tags": [
+    "peft",
+    "safetensors",
+    "sentence-transformers",
+    "feature-extraction",
+    "sentence-similarity",
+    "retrieval",
+    "korean",
+    "insurance",
+    "lora",
+    "ko",
+    "dataset:klue/klue",
+    "dataset:heegyu/glaive-function-calling-v2-ko",
+    "base_model:dragonkue/multilingual-e5-small-ko-v2",
+    "base_model:adapter:dragonkue/multilingual-e5-small-ko-v2",
+    "license:apache-2.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2698160,
+  "storage_human": "3 MB",
+  "base_model": "dragonkue/multilingual-e5-small-ko-v2",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Tool retrieval (Korean)",
+      "dataset": "heegyu/glaive-function-calling-v2-ko",
+      "metric": "nDCG@10",
+      "value": 0.5283
+    },
+    {
+      "task": "Tool retrieval (Korean)",
+      "dataset": "heegyu/glaive-function-calling-v2-ko",
+      "metric": "Recall@3",
+      "value": 0.5601
+    }
+  ],
+  "sources": [
+    {
+      "title": "Trump macht seine Drohung wahr - MSN",
+      "url": "https://www.msn.com/de-de/nachrichten/other/trump-macht-seine-drohung-wahr/ar-AA2cBjLu",
+      "snippet": "Am Freitag hatte Präsident Donald Trump den drei Medien auf seiner Plattform Truth Social \"mit sofortiger Wirkung\" Hausverbot …"
+    },
+    {
+      "title": "Trump macht Drohung wahr: Journalisten dürfen nicht ins Weiße …",
+      "url": "https://www.derwesten.de/politik/trump-weisses-haus-presse-drohung-id302163085.html",
+      "snippet": "1 day ago · US-Präsident Donald Trump hat Reportern mehrerer bekannter Medienhäuser den Zugang zum Weißen Haus verboten."
+    },
+    {
+      "title": "Donald Trump News: Aktuelle Nachrichten & Eilmeldungen von heute …",
+      "url": "https://www.handelsblatt.com/themen/donald-trump",
+      "snippet": "Im Juni 2015 machte Trump seine Kandidatur für die Vorwahlen der Republikanerfür die US-Präsidentschaftswahl 2016 bekannt und …"
+    },
+    {
+      "title": "Donald Trump schmeißt drei Medien aus dem Weißen Haus",
+      "url": "https://www.stern.de/politik/ausland/donald-trump-schmeisst-drei-medien-aus-dem-weissen-haus-38274978.html",
+      "snippet": "2 days ago · US-Präsident Donald Trump ärgert sich schon lange über kritische Berichterstatttung. Nun macht er eine Drohung …"
+    },
+    {
+      "title": "Donald Trump: US-Präsident macht Drohung wahr - er spricht von ...",
+      "url": "https://www.news.de/politik/859196006/donald-trump-eskaliert-medienkrieg-us-praesident-reicht-milliardenklage-gegen-bbc-ein/1/",
+      "snippet": "Dec 16, 2025 · Der US-Präsident Donald Trump hat seine angekündigte Klage gegen die britische Rundfunkanstalt BBC nun …"
+    }
+  ]
+}

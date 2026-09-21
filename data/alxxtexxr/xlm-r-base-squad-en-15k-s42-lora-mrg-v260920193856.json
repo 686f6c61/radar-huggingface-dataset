@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "id": "alxxtexxr/XLM-R-Base-squad-en-15K-s42-LoRA-mrg-v260920193856",
+  "slug": "alxxtexxr-xlm-r-base-squad-en-15k-s42-lora-mrg-v260920193856",
+  "author": "alxxtexxr",
+  "url": "https://huggingface.co/alxxtexxr/XLM-R-Base-squad-en-15K-s42-LoRA-mrg-v260920193856",
+  "created_at": "2026-09-20T22:41:55.000Z",
+  "updated_at": "2026-09-21T03:29:49.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "question-answering",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "xlm-roberta",
+    "question-answering",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 277454594,
+  "parameters_human": "277.5M",
+  "storage_bytes": 2241836715,
+  "storage_human": "2.2 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "上智大学｜Sophia University",
+      "url": "https://www.sophia.ac.jp/",
+      "snippet": "上智大学は、日本最古のカトリック大学として、”For Others, With Others（他者のために、他者とともに）”という教育精神の下、 …"
+    },
+    {
+      "title": "上智大学 - Wikipedia",
+      "url": "https://ja.wikipedia.org/wiki/%E4%B8%8A%E6%99%BA%E5%A4%A7%E5%AD%A6",
+      "snippet": "聖イグナチオ教会は四谷キャンパス北西側に隣接しており、「入学記念ミサ」や「卒業記念ミサ」など上智大学の学生たちを対象と …"
+    },
+    {
+      "title": "上智大学 入試情報｜Sophia University",
+      "url": "https://adm.sophia.ac.jp/jpn/",
+      "snippet": "上智大学公式サイト。上智大学は、日本最古のカトリック大学として、”For Others, With Others（他者のために、他者とともに）” …"
+    },
+    {
+      "title": "上智大学 ウェブピロティ｜Sophia University",
+      "url": "https://piloti.sophia.ac.jp/jpn/",
+      "snippet": "上智大学公式サイト。上智大学は、日本最古のカトリック大学として、”For Others, With Others（他者のために、他者とともに）” …"
+    },
+    {
+      "title": "上智大学ソフィア会",
+      "url": "https://www.sophiakai.gr.jp/",
+      "snippet": "2026年05月13日 掲載 ソフィア会 ビジュアル・アイデンティティについて 注意!! 上智大学のビジュアル・アイデンティティ（VI） …"
+    }
+  ]
+}

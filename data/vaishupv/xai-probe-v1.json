@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "vaishupv/xai-probe-v1",
+  "slug": "vaishupv-xai-probe-v1",
+  "author": "vaishupv",
+  "url": "https://huggingface.co/vaishupv/xai-probe-v1",
+  "created_at": "2026-09-20T21:28:45.000Z",
+  "updated_at": "2026-09-21T00:35:21.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "qwen2",
+    "qwen",
+    "text-generation",
+    "conversational",
+    "custom_code",
+    "en",
+    "zh",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Free stock from Robinhood",
+      "url": "https://forum.mrmoneymustache.com/investor-alley/free-stock-from-robinhood/",
+      "snippet": "May 13, 2017 · Robinhood is only different in its margin features. They have great margin rates and instant margin access and sale …"
+    },
+    {
+      "title": "Robinhood - Mr. Money Mustache",
+      "url": "https://forum.mrmoneymustache.com/investor-alley/robinhood/",
+      "snippet": "Mar 7, 2016 · Robinhood The transfer of funds time is a bummer-- 3 business days to move funds in-- 3 to clear after a sell-- and 3 to …"
+    },
+    {
+      "title": "Where Can I Buy This Stock??",
+      "url": "https://forum.mrmoneymustache.com/investor-alley/where-can-i-buy-this-stock/",
+      "snippet": "Feb 3, 2025 · Robinhood lets you place a trade order before the market opens, but I wasn't actually looking to 'buy'. I just wanted to …"
+    },
+    {
+      "title": "convert mutual fund to etf to take advantage of brokerage bonus",
+      "url": "https://forum.mrmoneymustache.com/investor-alley/convert-mutual-fund-to-etf-to-take-advantage-of-brokerage-bonus/",
+      "snippet": "Apr 14, 2024 · Hi Mustachians, I am trying to sell my mutual funds (VTIAX and VTSAX) and buy etfs (VTI) so I can do an account …"
+    },
+    {
+      "title": "Robinhood and Beneficiaries - Mr. Money Mustache",
+      "url": "https://forum.mrmoneymustache.com/ask-a-mustachian/robinhood-and-beneficiaries/",
+      "snippet": "Feb 24, 2022 · Robinhood and Beneficiaries Robinhood doesn't allow for beneficiary designation. Rather than having to wait through …"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "schema": 1,
+  "id": "trevor000/Ternary-Bonsai-2-27B-RTX4070",
+  "slug": "trevor000-ternary-bonsai-2-27b-rtx4070",
+  "author": "trevor000",
+  "url": "https://huggingface.co/trevor000/Ternary-Bonsai-2-27B-RTX4070",
+  "created_at": "2026-09-20T20:58:19.000Z",
+  "updated_at": "2026-09-20T20:59:36.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "llama.cpp",
+  "languages": [],
+  "tags": [
+    "llama.cpp",
+    "gguf",
+    "ternary",
+    "mtp",
+    "quantized",
+    "research",
+    "base_model:Qwen/Qwen3.8-27B",
+    "base_model:quantized:Qwen/Qwen3.8-27B",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 27320697856,
+  "parameters_human": "27.32B",
+  "storage_bytes": 7469483328,
+  "storage_human": "7.5 GB",
+  "base_model": "Qwen/Qwen3.8-27B",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Gra w brydża online",
+      "url": "https://www.grabrydz.com/",
+      "snippet": "Graj w brydża łatwo, szybko i za darmo. Bez pobierania, bez obowiązku rejestracji. Życzymy udanej zabawy!"
+    },
+    {
+      "title": "GRAJ",
+      "url": "https://www.grabrydz.com/GRAJ.html",
+      "snippet": "Rozdania Brydz rozgrywane sa w systemie porównawczym, twój wynik (punkty uzyskane w North-South) jest porównywany z …"
+    },
+    {
+      "title": "FAQ - grabrydz.com",
+      "url": "https://www.grabrydz.com/faq.html",
+      "snippet": "FAQ 1. Czy gram z robotem? Gram z komputerem czy z prawdziwymi graczami? Grasz z robotami, które wykorzystują nie tylko …"
+    },
+    {
+      "title": "Zasady gry w brydża - grabrydz.com",
+      "url": "https://www.grabrydz.com/zasady-gry-w-brydza.html",
+      "snippet": "Zasady gry w brydża I. Podstawowe informacje potrzebne do rozegrania pierwszego rozdania CEL GRY: Gracz zobowiązuje się do …"
+    },
+    {
+      "title": "Nowa technologia - grabrydz.com",
+      "url": "https://www.grabrydz.com/nowa-technologia.html",
+      "snippet": "W przypadku gier logicznych roboty mają swoje ograniczenia i żaden nie jest w stanie oddać subtelności gry człowieka, dlatego …"
+    }
+  ]
+}

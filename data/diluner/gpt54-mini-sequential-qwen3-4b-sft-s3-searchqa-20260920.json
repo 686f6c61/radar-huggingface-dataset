@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Diluner/gpt54-mini-sequential-qwen3-4b-sft-s3-searchqa-20260920",
+  "slug": "diluner-gpt54-mini-sequential-qwen3-4b-sft-s3-searchqa-20260920",
+  "author": "Diluner",
+  "url": "https://huggingface.co/Diluner/gpt54-mini-sequential-qwen3-4b-sft-s3-searchqa-20260920",
+  "created_at": "2026-09-20T23:56:32.000Z",
+  "updated_at": "2026-09-20T23:56:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "agent-training",
+    "gpt-5.4-mini",
+    "sft",
+    "sequential",
+    "conversational",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:finetune:Qwen/Qwen3-4B",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4411424256,
+  "parameters_human": "4.41B",
+  "storage_bytes": 17657165270,
+  "storage_human": "17.7 GB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Welcome to Steam",
+      "url": "https://store.steampowered.com/",
+      "snippet": "Steam is the ultimate destination for playing, discussing, and creating games."
+    },
+    {
+      "title": "Steam, The Ultimate Online Game Platform",
+      "url": "https://store.steampowered.com/mobile",
+      "snippet": "Steam mobile app lets you access your games, chat with friends, and stay connected to the gaming community on the go."
+    },
+    {
+      "title": "Steam, The Ultimate Online Game Platform",
+      "url": "https://store.steampowered.com/about/download",
+      "snippet": "Steam Broadcast Stream your gameplay live with the click of a button, and share your game with friends or the rest of the community."
+    },
+    {
+      "title": "Steam，終極線上遊戲平台",
+      "url": "https://store.steampowered.com/about/?l=tchinese",
+      "snippet": "Steam is the ultimate destination for playing, discussing, and creating games."
+    },
+    {
+      "title": "Steam — 高质量游戏平台",
+      "url": "https://store.steampowered.com/mobile?l=schinese",
+      "snippet": "Steam 是一个高质量的游戏平台，提供游戏、讨论和创作的终极体验。"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Keural-Cortex-8B-SFT-GGUF",
+  "slug": "mradermacher-keural-cortex-8b-sft-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Keural-Cortex-8B-SFT-GGUF",
+  "created_at": "2026-09-20T22:25:21.000Z",
+  "updated_at": "2026-09-20T22:58:56.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "ko",
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "korean",
+    "bilingual",
+    "keural",
+    "mkd",
+    "qwen3",
+    "sft",
+    "tool-calling",
+    "long-context",
+    "ko",
+    "en",
+    "base_model:mkd-hossain/Keural-Cortex-8B-SFT",
+    "base_model:quantized:mkd-hossain/Keural-Cortex-8B-SFT",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 73425339136,
+  "storage_human": "73.4 GB",
+  "base_model": "mkd-hossain/Keural-Cortex-8B-SFT",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Informer - Nezavisne Dnevne Novine",
+      "url": "https://informer.rs/",
+      "snippet": "Informer televizija organizovala je danas veličanstveno narodno veselje u etno selu \"Šajkače\", u mestu Rstići kod Kosjerića, gde se …"
+    },
+    {
+      "title": "Najnovije vesti - Informer.rs",
+      "url": "https://informer.rs/najnovije-vesti",
+      "snippet": "23 hours ago · Najnovije vesti, fotografije i video snimke iz Srbije i sveta iz politike, društva, hronike, džet seta i sporta na Informeru!"
+    },
+    {
+      "title": "Najnovije vesti - Informer.rs",
+      "url": "https://b92.cmsassets.com/najnovije-vesti",
+      "snippet": "23 hours ago · Najnovije vesti, fotografije i video snimke iz Srbije i sveta iz politike, društva, hronike, džet seta i sporta na Informeru!"
+    },
+    {
+      "title": "Informer | Šta mi treba za...?",
+      "url": "https://informer.co.rs/",
+      "snippet": "Najnovije vesti Lična dokumenta Rad i socijalno Za strance Usluge Saobraćaj Policijske kamere u Beogradu informer.co.rs"
+    },
+    {
+      "title": "Informer | Belgrade - Facebook",
+      "url": "https://www.facebook.com/informernovine/",
+      "snippet": "Nemanja Makuljević će biti takmičar u drugoj sezoni Exatlona, koja počinje 14. septembra na Informer televiziji. Nemanja je iz …"
+    }
+  ]
+}

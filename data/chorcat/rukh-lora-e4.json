@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "chorcat/rukh-lora-e4",
+  "slug": "chorcat-rukh-lora-e4",
+  "author": "chorcat",
+  "url": "https://huggingface.co/chorcat/rukh-lora-e4",
+  "created_at": "2026-09-20T20:42:22.000Z",
+  "updated_at": "2026-09-21T15:03:29.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": "rukh",
+  "languages": [],
+  "tags": [
+    "rukh",
+    "chess",
+    "lora",
+    "adapter",
+    "base_model:chorcat/rukh-medium",
+    "base_model:adapter:chorcat/rukh-medium",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 3151688,
+  "storage_human": "3 MB",
+  "base_model": "chorcat/rukh-medium",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Halo Headlights | E-Z-GO",
+      "url": "https://www.shopezgo.com/651698g04",
+      "snippet": "Upgrade your Liberty or Express lights with the round Halo lights that fit easily into the bezel. The lights feature hi/low LED beams …"
+    },
+    {
+      "title": "E-Z-GO Halo LED Headlight Kit - 2021-2025 Express Liberty - 651698G04",
+      "url": "https://www.countrycat.com/parts-accessories/golf-cart-accessories/e-z-go-651698g04-halo-led-headlight-kit-2021-2025-express-liberty",
+      "snippet": "E-Z-GO Halo LED Headlight Kit - 2021-2025 Express Liberty In Stock Qty: 1 Part # 651698G04 $566.99 $665.99 Price when …"
+    },
+    {
+      "title": "EZGO 651698G04 Replacement",
+      "url": "https://www.interlightus.com/products/ezgo-651698g04.html",
+      "snippet": "Replacement for 651698G04 (for EZGO / CUSHMAN / TEXTRON) and others MPN: 651698G04 In Stock: Ships Immediately"
+    },
+    {
+      "title": "EZGO OEM Halo LED Headlight & Grille Kit",
+      "url": "https://www.golfcartsi.com/products/ezgo-oem-halo-led-headlight-grille.html",
+      "snippet": "Description OEM E-Z-GO Halo LED Headlight & Grille Kit Part Number 651698G04 for 2021-2023 Express & Liberty Golf Carts OEM …"
+    },
+    {
+      "title": "EZGO OEM Halo LED Headlight & Grille Kit 2021-2026 Express ... - eBay",
+      "url": "https://www.ebay.com/itm/195818115229?msockid=2cf3466e71c063ba24a251b470a3626a",
+      "snippet": "Aug 18, 2026 · 651698G04 Compatible Model Express L6, Express S4, Express S6, Hauler Pro, Refresher FS2, Refresher FS4, …"
+    }
+  ]
+}

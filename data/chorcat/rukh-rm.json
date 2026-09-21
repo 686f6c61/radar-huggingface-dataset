@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "chorcat/rukh-rm",
+  "slug": "chorcat-rukh-rm",
+  "author": "chorcat",
+  "url": "https://huggingface.co/chorcat/rukh-rm",
+  "created_at": "2026-09-20T23:40:05.000Z",
+  "updated_at": "2026-09-21T15:03:32.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "rukh",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "rukh",
+    "safetensors",
+    "rukh-reward",
+    "chess",
+    "reward-model",
+    "preference",
+    "feature-extraction",
+    "en",
+    "dataset:chorcat/rukh-pairs-dpo",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 37913601,
+  "parameters_human": "37.9M",
+  "storage_bytes": 151669372,
+  "storage_human": "152 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Test Query For Encyclopedia Backstage – NBKomputer",
+      "url": "https://nbkomputer.com/test-query-for-encyclopedia-backstage/",
+      "snippet": "The Backstage Search system architecture separates content collection, indexing, querying, and result rendering. It supports multiple …"
+    },
+    {
+      "title": "Test query for encyclopedia backstage – Advanced query – KNIME …",
+      "url": "https://solmusical.com/test-query-for-encyclopedia-backstage-advanced-query-knime/",
+      "snippet": "Dec 9, 2024 · Test query for encyclopedia backstage – Advanced query – KNIME … December 9, 2024"
+    },
+    {
+      "title": "Wikidata Query Service",
+      "url": "https://query.wikidata.org/",
+      "snippet": "Does your query include Items describing scientific articles? The graph split affects your queries. Please learn more about it on this …"
+    },
+    {
+      "title": "Query | Backstage Software Catalog and Developer Platform",
+      "url": "https://backstage.io/docs/features/search/api/query/",
+      "snippet": "Useful for improving the search result display/experience. Optional result rank, where 1 is the first/top result returned. Useful for …"
+    },
+    {
+      "title": "Test Query For Encyclopedia Backstage jobs at Morgan Stanley",
+      "url": "https://www.efinancialcareers.it/jobs/test-query-for-encyclopedia-backstage/at-morgan-stanley",
+      "snippet": "Click here to view 8 Test Query For Encyclopedia Backstage jobs at Morgan Stanley, brought to you by eFinancialCareers."
+    }
+  ]
+}

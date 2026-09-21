@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Shahineson/Grand_SAI",
+  "slug": "shahineson-grand_sai",
+  "author": "Shahineson",
+  "url": "https://huggingface.co/Shahineson/Grand_SAI",
+  "created_at": "2026-09-21T00:19:33.000Z",
+  "updated_at": "2026-09-21T00:32:59.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "doi:10.57967/hf/10534",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "KingMods: FS25 mods, Farming Simulator 25 mods, FS22 mods",
+      "url": "https://www.kingmods.net/en/",
+      "snippet": "Download all the best mods for FS25, Farming Simulator 25 for free on KingMods. New FS25 and FS22 mods on PS4, PS5, Xbox …"
+    },
+    {
+      "title": "KingMods : Mods FS25, Mods Farming Simulator 25, Mods FS22",
+      "url": "https://www.kingmods.net/fr/",
+      "snippet": "Téléchargez gratuitement tous les meilleurs mods FS25, Farming Simulator 25 sur KingMods. De nouveaux mods FS25 et FS22 sur …"
+    },
+    {
+      "title": "Farming Simulator 25 - KingMods",
+      "url": "https://www.kingmods.net/fr/jeux/farming-simulator-25",
+      "snippet": "Nov 12, 2024 · Téléchargez gratuitement tous les mods Farming Simulator 25, FS25 pour PS4, PS5, Xbox et PC sur KingMods !"
+    },
+    {
+      "title": "Farming Simulator 25 - KingMods",
+      "url": "https://www.kingmods.net/en/games/farming-simulator-25",
+      "snippet": "Nov 12, 2024 · Download all Farming Simulator 25, FS25 mods for PS4, PS5, Xbox and PC for free on KingMods!"
+    },
+    {
+      "title": "Nouveaux mods FS22 - KingMods",
+      "url": "https://www.kingmods.net/fr/fs22/nouveaux-mods",
+      "snippet": "Tous les nouveaux mods FS22, Farming Simulator 22 sur KingMods. De nombreux mods FS22 sur PS4, PS5, Xbox et PC tous les …"
+    }
+  ]
+}

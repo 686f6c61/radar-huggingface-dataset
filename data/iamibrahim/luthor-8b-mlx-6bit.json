@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "IAMIbrahim/luthor-8b-mlx-6bit",
+  "slug": "iamibrahim-luthor-8b-mlx-6bit",
+  "author": "IAMIbrahim",
+  "url": "https://huggingface.co/IAMIbrahim/luthor-8b-mlx-6bit",
+  "created_at": "2026-09-20T22:05:56.000Z",
+  "updated_at": "2026-09-21T00:16:26.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3",
+    "apple-silicon",
+    "agent",
+    "tool-use",
+    "function-calling",
+    "quantized",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:IAMIbrahim/luthor-8b",
+    "base_model:quantized:IAMIbrahim/luthor-8b",
+    "license:apache-2.0",
+    "6-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 6666864478,
+  "storage_human": "6.7 GB",
+  "base_model": "IAMIbrahim/luthor-8b",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Vault 7: CIA Hacking Tools Revealed - WikiLeaks",
+      "url": "https://wikileaks.org/ciav7p1/",
+      "snippet": "Today, Tuesday 7 March 2017, WikiLeaks begins its new series of leaks on the U.S. Central Intelligence Agency. Code-named \"Vault …"
+    },
+    {
+      "title": "Vault 7 - Wikipedia",
+      "url": "https://en.m.wikipedia.org/wiki/Vault_7",
+      "snippet": "Vault 7 is a series of documents that WikiLeaks began to publish on 7 March 2017, detailing the activities and capabilities of the …"
+    },
+    {
+      "title": "WikiLeaks",
+      "url": "https://wikileaks.org/",
+      "snippet": "Today, 5th August 2021, WikiLeaks publishes \"The Intolerance Network\" over 17,000 documents from internationally active right wing …"
+    },
+    {
+      "title": "WikiLeaks — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Wikileaks",
+      "snippet": "En 2017, WikiLeaks publie Vault 7 qui détaille des activités de la Central Intelligence Agency (CIA) dans le domaine de la …"
+    },
+    {
+      "title": "Vault 7 — Wikipédia",
+      "url": "https://fr.m.wikipedia.org/wiki/Vault_7",
+      "snippet": "Vault 7 est une série de documents que WikiLeaks a commencé à publier le 7 mars 2017, qui détaille des travaux de la Central …"
+    }
+  ]
+}

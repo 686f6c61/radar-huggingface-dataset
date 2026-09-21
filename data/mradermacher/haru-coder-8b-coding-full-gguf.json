@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "mradermacher/haru-coder-8b-coding-full-GGUF",
+  "slug": "mradermacher-haru-coder-8b-coding-full-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/haru-coder-8b-coding-full-GGUF",
+  "created_at": "2026-09-20T21:29:07.000Z",
+  "updated_at": "2026-09-20T22:00:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "en",
+    "base_model:harumori47/haru-coder-8b-coding-full",
+    "base_model:quantized:harumori47/haru-coder-8b-coding-full",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 7615616512,
+  "parameters_human": "7.62B",
+  "storage_bytes": 68146890752,
+  "storage_human": "68.1 GB",
+  "base_model": "harumori47/haru-coder-8b-coding-full",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Lieferando.de | Essen & mehr bestellen – Lieferservice & Abholung",
+      "url": "https://www.lieferando.de/?msockid=1440386886e76dd63b4c2fb287676c84",
+      "snippet": "Wir zeigen dir Geschäfte und Restaurants in deiner Nähe, wo du bestellen kannst. Suche nach Artikeln, Gerichten, Geschäften oder …"
+    },
+    {
+      "title": "Pizza bestellen in 39649 Gardelegen | Lieferando.de",
+      "url": "https://www.lieferando.de/lieferservice/pizza/jeggau?msockid=1440386886e76dd63b4c2fb287676c84",
+      "snippet": "Bestelle pizza in 39649 Gardelegen online über Lieferando.de. Food Tracker® und verschiedene Bezahlmethoden. Genieße Deine …"
+    },
+    {
+      "title": "Pizza bestellen in 39649 Miesterhorst | lieferservice123.de",
+      "url": "http://www.lieferservice123.de/pizza-bestellen-39649-miesterhorst.html",
+      "snippet": "Du liebst einfach italienisches Essen? Du möchtest eine Pizza bestellen in 39649 Miesterhorst? Dann bist Du hier genau richtig! …"
+    },
+    {
+      "title": "Pizzaservice 39649 Sichau | lieferservice123.de",
+      "url": "http://www.lieferservice123.de/pizzaservice-39649-sichau.html",
+      "snippet": "Du suchst einen Pizzaservice in 39649 Sichau? Dann bist Du hier genau richtig! Bestelle online Deine Wunschpizza. Einfach ordern, …"
+    },
+    {
+      "title": "Domino's Pizza - Jetzt Pizza bestellen & genießen! | Domino's Pizza",
+      "url": "https://www.dominos.de/",
+      "snippet": "Bestell jetzt mit nur wenigen Klicks die Pizza deiner Wahl und überzeug dich selbst - mit unserer Vielzahl an Filialen sind wir immer in …"
+    }
+  ]
+}

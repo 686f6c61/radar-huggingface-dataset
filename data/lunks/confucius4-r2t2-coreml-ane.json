@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "id": "lunks/Confucius4-R2T2-CoreML-ANE",
+  "slug": "lunks-confucius4-r2t2-coreml-ane",
+  "author": "lunks",
+  "url": "https://huggingface.co/lunks/Confucius4-R2T2-CoreML-ANE",
+  "created_at": "2026-09-21T00:26:59.000Z",
+  "updated_at": "2026-09-21T03:25:12.000Z",
+  "license": "netease-model-use-license-agreement",
+  "license_family": "unknown",
+  "pipeline_tag": "automatic-speech-recognition",
+  "library": "coreml",
+  "languages": [
+    "en",
+    "pt",
+    "zh",
+    "es",
+    "fr",
+    "de",
+    "it",
+    "ja",
+    "ko",
+    "ru"
+  ],
+  "tags": [
+    "coreml",
+    "apple-neural-engine",
+    "speech-to-text",
+    "asr",
+    "stt",
+    "streaming",
+    "confucius4",
+    "r2t2",
+    "automatic-speech-recognition",
+    "base_model:netease-youdao/Confucius4-R2T2",
+    "base_model:quantized:netease-youdao/Confucius4-R2T2",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 4488561895,
+  "storage_human": "4.5 GB",
+  "base_model": "netease-youdao/Confucius4-R2T2",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Magyar Állampapír Plusz (MÁP+) 2026: kamat és kalkulátor",
+      "url": "https://allampapirkalkulator.hu/mapp",
+      "snippet": "1 day ago · Főoldal Állampapírok MÁP+ Lakossági állampapír Magyar Állampapír Plusz 2026 Állami megtakarítás, amelynél a kamat …"
+    },
+    {
+      "title": "Otthoni telefon – Hoppá plusz díjcsomag - Magyar Telekom csoport",
+      "url": "https://www.telekom.hu/lakossagi/szolgaltatasok/otthoni-telefon-hoppaplusz",
+      "snippet": "Digitális telefon szolgáltatásunkat ügyfeleink a hagyományos otthoni telefon szolgáltatás esetén megszokott funkciókkal, analóg …"
+    },
+    {
+      "title": "hoppá PLUSZ - otthoni telefon díjcsomag - Telekom Mobilszolgáltatás",
+      "url": "https://www.telekom.hu/lakossagi/szolgaltatasok/otthoni-telefon/uj-hoppa-plusz",
+      "snippet": "Ismerd meg a Hoppá Plusz otthoni telefon díjcsomagot és a választható kiegészítő szolgáltatásokat."
+    },
+    {
+      "title": "ISMERTETŐ - unicreditbank.hu",
+      "url": "https://www.unicreditbank.hu/content/dam/cee2020-pws-hu/Maganszemelyek/Megtakaritasok/2026/202603/MAP%20Plusz%20Ismertet%C5%91_20260401.pdf",
+      "snippet": "A Magyar Állampapír Plusz kamatának és névértékének teljesítése/megfizetése a központi költségvetés, illetve a központi …"
+    },
+    {
+      "title": "Állampapír - Magyar Állampapír Plusz",
+      "url": "https://www.allampapir.hu/allampapirok/mapp",
+      "snippet": "A Magyar Állampapír Plusz 5 éves futamidővel kibocsátásra kerülő, dematerializált, sávos, fix kamatozású lakossági állampapír, …"
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "id": "KolmogorovAcc/sovereign-anthology-gemma-2-2b",
+  "slug": "kolmogorovacc-sovereign-anthology-gemma-2-2b",
+  "author": "KolmogorovAcc",
+  "url": "https://huggingface.co/KolmogorovAcc/sovereign-anthology-gemma-2-2b",
+  "created_at": "2026-09-20T23:10:53.000Z",
+  "updated_at": "2026-09-20T23:23:23.000Z",
+  "license": "gemma",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "gguf",
+    "gemma2",
+    "text-generation",
+    "intelligence",
+    "tradecraft",
+    "analysis-of-competing-hypotheses",
+    "ach",
+    "directml",
+    "gemma-2",
+    "palantir",
+    "sovereign",
+    "antigravity",
+    "distillation",
+    "conversational",
+    "en",
+    "base_model:google/gemma-2-2b-it",
+    "base_model:quantized:google/gemma-2-2b-it",
+    "license:gemma",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 1,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3204165888,
+  "parameters_human": "3.20B",
+  "storage_bytes": 13390765580,
+  "storage_human": "13.4 GB",
+  "base_model": "google/gemma-2-2b-it",
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "朝阳区（北京市辖区）_百度百科",
+      "url": "https://baike.baidu.com/item/%E6%9C%9D%E9%98%B3%E5%8C%BA/2134",
+      "snippet": "Feb 3, 2022 · 朝阳区，隶属北京市，位于北京市中南部，北接顺义区、昌平区，东与通州区接壤，南连丰台区、大兴区，西同海淀区 …"
+    },
+    {
+      "title": "北京朝阳",
+      "url": "http://www.bjchy.gov.cn/",
+      "snippet": "2 days ago · 区政协区委统战部联合举办 “乡级产权制度改革后，完善集体经济管理”议政会 9月17日，区政协、区委统战部联合召开议 …"
+    },
+    {
+      "title": "朝阳区 - 维基百科，自由的百科全书",
+      "url": "https://zh.wikipedia.org/zh-hans/%E6%9C%9D%E9%98%B3%E5%8C%BA",
+      "snippet": "6 days ago · 朝阳区 是 北京市 的一个 市辖区，属于 城六区 之一，位于北京市区东部，东与 通州区 接壤，西与 海淀 、 西城 、 东城 …"
+    },
+    {
+      "title": "北京朝阳（北京市朝阳区官方政务信息发布平台）_百度百科",
+      "url": "https://baike.baidu.com/item/%E5%8C%97%E4%BA%AC%E6%9C%9D%E9%98%B3/69068880",
+      "snippet": "Dec 10, 2021 · “北京朝阳”是北京市朝阳区政务门户网站，由北京市朝阳区人民政府办公室主办 [1]。该网站是朝阳区国家机关在互联网 …"
+    },
+    {
+      "title": "朝阳概况_首都之窗_北京市人民政府门户网站 - Beijing",
+      "url": "https://www.beijing.gov.cn/renwen/bjgk/cygk/index.html",
+      "snippet": "朝阳区位于北京市东部，是中心城区面积最大、人口最多的区，总面积470.8平方公里，下辖24个街道、19个乡，有627个社区、144个 …"
+    }
+  ]
+}

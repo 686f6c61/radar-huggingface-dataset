@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "id": "modal-labs/GLM-5.3-NVFP4-DFlash",
+  "slug": "modal-labs-glm-5-3-nvfp4-dflash",
+  "author": "modal-labs",
+  "url": "https://huggingface.co/modal-labs/GLM-5.3-NVFP4-DFlash",
+  "created_at": "2026-09-20T21:57:01.000Z",
+  "updated_at": "2026-09-20T22:18:38.000Z",
+  "license": "glm-5.3",
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "dflash",
+    "speculative-decoding",
+    "speculative-decoding-draft",
+    "block-diffusion",
+    "draft-model",
+    "glm",
+    "glm-5.3",
+    "nvfp4",
+    "sglang",
+    "text-generation",
+    "arxiv:2602.06036",
+    "base_model:modal-labs/GLM-5.3-NVFP4",
+    "base_model:finetune:modal-labs/GLM-5.3-NVFP4",
+    "license:other",
+    "text-generation-inference",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2308429312,
+  "parameters_human": "2.31B",
+  "storage_bytes": 4616869248,
+  "storage_human": "4.6 GB",
+  "base_model": "modal-labs/GLM-5.3-NVFP4",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Modal (textile) — Wikipédia",
+      "url": "https://fr.wikipedia.org/wiki/Modal_(textile)",
+      "snippet": "Le modal est une fibre artificielle de viscose, fabriquée à partir de fibres de cellulose régénérée (bois essentiellement) et obtenue par …"
+    },
+    {
+      "title": "Qu'est-ce que le tissu modal ? Avantages, utilisations et avantages ...",
+      "url": "https://yintextextile.com/fr/2025/05/29/guide-du-tissu-modal/",
+      "snippet": "May 29, 2025 · Découvrez le tissu modal : ultra-doux, respirant et durable. Découvrez ses avantages par rapport au coton et son …"
+    },
+    {
+      "title": "Le modal : qu’est-ce que cette matière textile ?",
+      "url": "https://www.marques-de-france.fr/definition/modal/",
+      "snippet": "Feb 12, 2024 · Le modal est une fibre artificielle, utilisée comme matière première textile. Cela signifie qu’elle est fabriquée par les …"
+    },
+    {
+      "title": "Tissu en modal : avantages et inconvénients détaillés",
+      "url": "https://www.atypiqueinfo.fr/tissu-en-modal-avantages-et-inconvenients-detailles/",
+      "snippet": "Aug 5, 2025 · Découvrez les avantages et inconvénients du tissu en modal, ses origines, sa fabrication et des conseils pour choisir …"
+    },
+    {
+      "title": "Le modal, tout savoir sur cette matière - The Good Goods",
+      "url": "https://www.thegoodgoods.fr/matieres/modal/",
+      "snippet": "Le modal est un type de viscose écologique issu du bois de hêtre. Souple et solide, il permet la fabrication de vêtements confortables."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "yang31210999/Qwen3-4B-xh0921-combo",
+  "slug": "yang31210999-qwen3-4b-xh0921-combo",
+  "author": "yang31210999",
+  "url": "https://huggingface.co/yang31210999/Qwen3-4B-xh0921-combo",
+  "created_at": "2026-09-21T02:18:59.000Z",
+  "updated_at": "2026-09-21T02:20:24.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "8-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 11,
+  "trending_score": 0,
+  "parameters": 2288430780,
+  "parameters_human": "2.29B",
+  "storage_bytes": 3134979522,
+  "storage_human": "3.1 GB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Impossible de recevoir le code verif Canva - Forum Services en ligne",
+      "url": "https://forums.commentcamarche.net/forum/affich-38299352-impossible-de-recevoir-le-code-verif-canva",
+      "snippet": "Jul 15, 2026 · Bonjour, Je tente désespéramment de me connecter au compte Canva de mon entreprise. On m'a envoyé une …"
+    },
+    {
+      "title": "Impossible de me connecter à Canva avec mail Outlook",
+      "url": "https://forums.commentcamarche.net/forum/affich-38299350-impossible-de-me-connecter-a-canva-avec-mail-outlook",
+      "snippet": "Jul 15, 2026 · Bonjour, Je tente désespéramment de me connecter au compte Canva de mon entreprise. On m'a envoyé une …"
+    },
+    {
+      "title": "Cổ phiếu của Adobe đã giảm gần 50% sau 1 năm - Tinhte.vn",
+      "url": "https://tinhte.vn/thread/co-phieu-cua-adobe-da-giam-gan-50-sau-1-nam.4154737/",
+      "snippet": "Jun 23, 2026 · Lâu lâu nhìn lại mới thấy Adobe đang \"không ổn chút nào\" khi cổ phiếu của hãng này vẫn lao dốc. Tháng 6 năm …"
+    },
+    {
+      "title": "Canva AI Miễn Phí Có Gì? Những Tính Năng Nên Dùng Trước Khi Nâng …",
+      "url": "https://tinhte.vn/thread/canva-ai-mien-phi-co-gi-nhung-tinh-nang-nen-dung-truoc-khi-nang-cap-canva-pro.4139897/",
+      "snippet": "Khi đã biết rõ mình cần tính năng nào và dùng với tần suất bao nhiêu, việc quyết định nâng cấp Canva Pro sẽ chính xác hơn. Canva …"
+    },
+    {
+      "title": "Tinhte.vn - Chuyên trang máy tính - PC Home",
+      "url": "https://pc.tinhte.vn/",
+      "snippet": "Chuyên trang máy tính & laptop của Tinhte.vn: Review PC, gaming gear, cẩm nang mua sắm và lắp ráp máy tính, hướng dẫn sử …"
+    }
+  ]
+}

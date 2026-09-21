@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "FahadPrimeX/FahadPrimeX-b27-V3-GGUF",
+  "slug": "fahadprimex-fahadprimex-b27-v3-gguf",
+  "author": "FahadPrimeX",
+  "url": "https://huggingface.co/FahadPrimeX/FahadPrimeX-b27-V3-GGUF",
+  "created_at": "2026-09-21T01:36:13.000Z",
+  "updated_at": "2026-09-21T07:43:46.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [
+    "ar",
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "gguf",
+    "three.js",
+    "code-generation",
+    "llama.cpp",
+    "ar",
+    "en",
+    "zh",
+    "license:apache-2.0",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 81,
+  "trending_score": 0,
+  "parameters": 26895998464,
+  "parameters_human": "26.90B",
+  "storage_bytes": 115722057888,
+  "storage_human": "115.7 GB",
+  "base_model": null,
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "tksheet · PyPI",
+      "url": "https://pypi.org/project/tksheet/",
+      "snippet": "tksheet - python tkinter table + treeview widget With apologies, development of this library has ceased except for bug fixes or …"
+    },
+    {
+      "title": "tksheet - python tkinter table + treeview widget - GitHub",
+      "url": "https://github.com/ragardner/tksheet",
+      "snippet": "Python tkinter table and treeview widget. Contribute to ragardner/tksheet development by creating an account on GitHub."
+    },
+    {
+      "title": "Document",
+      "url": "https://ragardner.github.io/tksheet/DOCUMENTATION.html",
+      "snippet": "tksheet is a Python tkinter table and treeview widget written in pure python. It is licensed under the MIT license. It works by using …"
+    },
+    {
+      "title": "tksheet/docs/DOCUMENTATION.md at master · ragardner/tksheet",
+      "url": "https://github.com/ragardner/tksheet/blob/master/docs/DOCUMENTATION.md",
+      "snippet": "Python tkinter table and treeview widget. Contribute to ragardner/tksheet development by creating an account on GitHub."
+    },
+    {
+      "title": "ragardner/tksheet - DeepWiki",
+      "url": "https://deepwiki.com/ragardner/tksheet",
+      "snippet": "Nov 13, 2025 · tksheet is a pure Python table widget for tkinter applications that provides spreadsheet-like functionality with an …"
+    }
+  ]
+}

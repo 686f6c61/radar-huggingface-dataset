@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Diluner/gpt54-mini-standalone-qwen3-1.7b-rose-babyai-20260920",
+  "slug": "diluner-gpt54-mini-standalone-qwen3-1-7b-rose-babyai-20260920",
+  "author": "Diluner",
+  "url": "https://huggingface.co/Diluner/gpt54-mini-standalone-qwen3-1.7b-rose-babyai-20260920",
+  "created_at": "2026-09-20T23:57:02.000Z",
+  "updated_at": "2026-09-20T23:57:29.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "agent-training",
+    "gpt-5.4-mini",
+    "rose",
+    "standalone",
+    "conversational",
+    "base_model:Qwen/Qwen3-1.7B",
+    "base_model:finetune:Qwen/Qwen3-1.7B",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 2031739904,
+  "parameters_human": "2.03B",
+  "storage_bytes": 4074938294,
+  "storage_human": "4.1 GB",
+  "base_model": "Qwen/Qwen3-1.7B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Chess.com - Play Chess Online - Free Games",
+      "url": "https://www.chess.com/",
+      "snippet": "Play chess online for free on Chess.com with over 250 million members from around the world. Have fun playing with friends or …"
+    },
+    {
+      "title": "Chess.com - Chơi cờ vua trực tuyến - Miễn phí",
+      "url": "https://www.chess.com/vi",
+      "snippet": "Chơi cờ vua trực tuyến miễn phí trên Chess.com với hơn 250 triệu thành viên từ khắp nơi trên thế giới. Chúc bạn vui vẻ khi chơi với …"
+    },
+    {
+      "title": "Chess.com - Play Chess Online",
+      "url": "https://link.chess.com/download/app",
+      "snippet": "Join millions of players on the world’s most popular chess site. Play online, learn chess, and improve your skills."
+    },
+    {
+      "title": "Can I download Chess.com on my PC?",
+      "url": "https://support.chess.com/en/articles/9856568-can-i-download-chess-com-on-my-pc",
+      "snippet": "Feb 9, 2026 · Learn how to download the Chess.com app on your computer using Google Chrome."
+    },
+    {
+      "title": "What is stalemate? | Chess.com Help Center",
+      "url": "https://support.chess.com/en/articles/8557490-what-is-stalemate",
+      "snippet": "Nov 10, 2025 · Wondering why your game ended in Stalemate? Learn what causes it and how to use it to your advantage!"
+    }
+  ]
+}

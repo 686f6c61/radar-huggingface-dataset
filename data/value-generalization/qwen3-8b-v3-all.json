@@ -1,0 +1,69 @@
+{
+  "schema": 1,
+  "id": "value-generalization/qwen3-8b-v3-all",
+  "slug": "value-generalization-qwen3-8b-v3-all",
+  "author": "value-generalization",
+  "url": "https://huggingface.co/value-generalization/qwen3-8b-v3-all",
+  "created_at": "2026-09-21T00:17:22.000Z",
+  "updated_at": "2026-09-21T00:19:35.000Z",
+  "license": "other",
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "qwen3",
+    "dpo",
+    "value-generalization",
+    "rq3",
+    "upper-bound",
+    "base_model:value-generalization/neutral-sft-v3-qwen3-8b",
+    "base_model:finetune:value-generalization/neutral-sft-v3-qwen3-8b",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 8190735360,
+  "parameters_human": "8.19B",
+  "storage_bytes": 16392939858,
+  "storage_human": "16.4 GB",
+  "base_model": "value-generalization/neutral-sft-v3-qwen3-8b",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Blox Fruits Values — Value List, Trading & Calculator",
+      "url": "https://bloxfruitsvalues.com/",
+      "snippet": "Check Blox Fruits values, post trade ads and run any offer through the trade calculator - fruits, swords, guns and gamepasses, priced …"
+    },
+    {
+      "title": "value - Traduction française – Linguee",
+      "url": "https://www.linguee.fr/anglais-francais/traduction/value.html",
+      "snippet": "De très nombreux exemples de phrases traduites contenant \"value\" – Dictionnaire français-anglais et moteur de recherche de …"
+    },
+    {
+      "title": "Blox Fruits Value Calculator - Updated September 2026",
+      "url": "https://bloxvalues.net/blox-fruits-value-calculator/",
+      "snippet": "Use the Blox Fruits Value Calculator to compare trades, check demand, switch values, and see instant Win, Loss, or Fair results. …"
+    },
+    {
+      "title": "Traduction : value - Dictionnaire anglais-français Larousse",
+      "url": "https://www.larousse.fr/dictionnaires/anglais-francais/value/622165",
+      "snippet": "value - Traduction Anglais-Français : Retrouvez la traduction de value, mais également sa prononciation, la traduction des …"
+    },
+    {
+      "title": "value - English-French Dictionary WordReference.com",
+      "url": "https://www.wordreference.com/enfr/value",
+      "snippet": "Dans les listes : Top 2000 English words, Stock market terms, PET Vocabulary List - V, Suite... Synonymes : price, cost, worth, …"
+    }
+  ]
+}

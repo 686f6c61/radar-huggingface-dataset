@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "rehanparacha/medgemma-4b-it-sft-lora-crc100k",
+  "slug": "rehanparacha-medgemma-4b-it-sft-lora-crc100k",
+  "author": "rehanparacha",
+  "url": "https://huggingface.co/rehanparacha/medgemma-4b-it-sft-lora-crc100k",
+  "created_at": "2026-09-20T22:47:53.000Z",
+  "updated_at": "2026-09-20T22:48:51.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:google/medgemma-4b-it",
+    "base_model:finetune:google/medgemma-4b-it",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 2795520368,
+  "storage_human": "2.8 GB",
+  "base_model": "google/medgemma-4b-it",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Java Switch - W3Schools",
+      "url": "https://www.w3schools.com/java/java_switch.asp",
+      "snippet": "Instead of writing many if..else statements, you can use the switch statement. Think of it like ordering food in a restaurant: If you …"
+    },
+    {
+      "title": "Switch Statements in Java - GeeksforGeeks",
+      "url": "https://www.geeksforgeeks.org/java/switch-statement-in-java/",
+      "snippet": "May 16, 2026 · The default case in a switch statement specifies the code to run if no other case matches. It can be placed at any …"
+    },
+    {
+      "title": "Java Switch Statement - Baeldung",
+      "url": "https://www.baeldung.com/java-switch",
+      "snippet": "Nov 5, 2025 · Below we’ll give some code examples to demonstrate the use of the switch statement, the role of the break statement, …"
+    },
+    {
+      "title": "Mastering Java Switch Case: A Comprehensive Guide",
+      "url": "https://www.javaspring.net/blog/java-switch-case/",
+      "snippet": "Jan 16, 2026 · The Java switch case is a versatile and powerful control flow structure that can simplify decision-making in your code. …"
+    },
+    {
+      "title": "The switch Statement (The Java™ Tutorials - Oracle",
+      "url": "https://docs.oracle.com/javase/tutorial/java/nutsandbolts/switch.html",
+      "snippet": "The switch statement evaluates its expression, then executes all statements that follow the matching case label. You could also …"
+    }
+  ]
+}

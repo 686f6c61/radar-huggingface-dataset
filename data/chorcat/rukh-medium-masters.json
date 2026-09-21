@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "chorcat/rukh-medium-masters",
+  "slug": "chorcat-rukh-medium-masters",
+  "author": "chorcat",
+  "url": "https://huggingface.co/chorcat/rukh-medium-masters",
+  "created_at": "2026-09-20T20:39:41.000Z",
+  "updated_at": "2026-09-21T15:03:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "rukh",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "rukh",
+    "onnx",
+    "safetensors",
+    "rukh-move-decoder",
+    "chess",
+    "decoder",
+    "text-generation",
+    "en",
+    "dataset:chorcat/rukh-games-1800",
+    "dataset:chorcat/rukh-tokenizer",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 115120128,
+  "parameters_human": "115.1M",
+  "storage_bytes": 1275338671,
+  "storage_human": "1.3 GB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Débit injustifié de la part d'Amazon sur mon compte bancaire.",
+      "url": "https://forum.quechoisir.org/debit-injustifie-de-la-part-d-amazon-sur-mon-compte-bancaire-t130140.html",
+      "snippet": "Dec 15, 2017 · D'après leurs investigations, ces sommes, initialement en USD, correspondent à un abonnement Amazon Prime aux …"
+    },
+    {
+      "title": "AMAZON, service AMAZON PRIME obligatoire - Racontez-vous : Bons …",
+      "url": "https://forum.quechoisir.org/amazon-service-amazon-prime-obligatoire-t322592.html",
+      "snippet": "Jul 10, 2017 · Re: AMAZON, service AMAZON PRIME obligatoire Messagepar BEN121 » sam. juin 11, 2022 7:10 am bonjour gilu, je …"
+    },
+    {
+      "title": "Prime折扣禁止显示，说是无参考价格。? - 知乎",
+      "url": "https://www.zhihu.com/question/556773043",
+      "snippet": "一、亚马逊会员专享折扣是什么？ Prime 专享折扣是面向 Prime 会员的商品价格折扣。该折扣价格会在购物页面上显示，以吸引会员 …"
+    },
+    {
+      "title": "怎样注册亚马逊Prime 会员？ - 知乎",
+      "url": "https://www.zhihu.com/question/49492619",
+      "snippet": "申请地址： amazon.com 先注册一个亚马逊账号，此步骤太过简单不用贴图展示。 1、打开学生会员申请页面 申请 直达地址 如下图所 …"
+    },
+    {
+      "title": "Amazon.de: ‚3 für 2‘ FSK-18-Filme aus über 200 Titeln",
+      "url": "https://www.dvd-forum.at/amazon-de-3-fuer-2-fsk-18-filme-aus-ueber-200-titeln",
+      "snippet": "Bei Amazon.de bekommt ihr aktuell ‚3 für 2‘ Filme auf Blu-ray, UHD Blu-ray und DVD, die ab 18 Jahren freigegeben sind. Dabei …"
+    }
+  ]
+}

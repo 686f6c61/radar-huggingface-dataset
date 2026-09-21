@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "Diluner/gpt54-mini-standalone-qwen3-4b-sft-babyai-20260920",
+  "slug": "diluner-gpt54-mini-standalone-qwen3-4b-sft-babyai-20260920",
+  "author": "Diluner",
+  "url": "https://huggingface.co/Diluner/gpt54-mini-standalone-qwen3-4b-sft-babyai-20260920",
+  "created_at": "2026-09-20T23:58:09.000Z",
+  "updated_at": "2026-09-20T23:58:40.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": "text-generation",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3",
+    "text-generation",
+    "agent-training",
+    "gpt-5.4-mini",
+    "sft",
+    "standalone",
+    "conversational",
+    "base_model:Qwen/Qwen3-4B",
+    "base_model:finetune:Qwen/Qwen3-4B",
+    "text-generation-inference",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 4022468096,
+  "parameters_human": "4.02B",
+  "storage_bytes": 8056404646,
+  "storage_human": "8.1 GB",
+  "base_model": "Qwen/Qwen3-4B",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "湯の浦カントリー倶楽部｜アコーディア・ゴルフ公式サイト ...",
+      "url": "https://reserve.accordiagolf.com/golfCourse/kagoshima/yunoura/",
+      "snippet": "湯の浦カントリー倶楽部 公式サイト予約（ジカドリ）で、平日500円、土日祝1,000円他社サイトよりもお得！ 西に紺碧の東支那海 …"
+    },
+    {
+      "title": "湯の浦カントリー倶楽部のゴルフ場詳細情報|鹿児島県日置市 ...",
+      "url": "https://reserve.accordiagolf.com/golfCourse/kagoshima/yunoura/detail",
+      "snippet": "バッグの積み下ろし バッグの積み下ろしはスタッフで対応致します。 クラブ清掃、クラブ置場までの搬送はセルフとなります。 ド …"
+    },
+    {
+      "title": "湯の浦カントリー倶楽部のコースレイアウト・攻略|鹿児島県 ...",
+      "url": "https://reserve.accordiagolf.com/golfCourse/kagoshima/yunoura/layout",
+      "snippet": "湯の浦カントリー倶楽部の魅力的なコースレイアウトとフォトギャラリー。ヤーデージやホール詳細情報もご覧いただけます。ゴル …"
+    },
+    {
+      "title": "ログイン | アコーディア・ゴルフ公式Web",
+      "url": "https://reserve.accordiagolf.com/login/",
+      "snippet": "国内最大級のゴルフ場運営会社、アコーディア・ゴルフのゴルフ場予約サイトです。全国のアコーディア・ゴルフ運営ゴルフ場から …"
+    },
+    {
+      "title": "湯の浦カントリー倶楽部のアクセス・住所|鹿児島県日置市 ...",
+      "url": "https://reserve.accordiagolf.com/golfCourse/kagoshima/yunoura/access",
+      "snippet": "湯の浦カントリー倶楽部へのスムーズな住所・アクセス情報をご案内。 車： 九州自動車道・鹿児島ICから指宿スカイライン利用。 …"
+    }
+  ]
+}

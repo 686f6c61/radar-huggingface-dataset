@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "id": "ypolatog/24679-hw2-movie-genre-prompting",
+  "slug": "ypolatog-24679-hw2-movie-genre-prompting",
+  "author": "ypolatog",
+  "url": "https://huggingface.co/ypolatog/24679-hw2-movie-genre-prompting",
+  "created_at": "2026-09-21T01:26:40.000Z",
+  "updated_at": "2026-09-21T01:26:42.000Z",
+  "license": "classroom-use",
+  "license_family": "unknown",
+  "pipeline_tag": "text-classification",
+  "library": null,
+  "languages": [],
+  "tags": [
+    "prompting",
+    "few-shot",
+    "text-classification",
+    "24-679",
+    "license:other",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Willkommen bei smartvote!",
+      "url": "https://www.smartvote.ch/",
+      "snippet": "Vergleich von smartvote-Antworten und Parlaments-abstimmungen: It’s (mostly) a match! Sie fragen sich, ob Politiker/-innen nach …"
+    },
+    {
+      "title": "Kanton Bern",
+      "url": "https://www.smartvote.ch/de/election_groups/568",
+      "snippet": "Mar 29, 2026 · Kandidierenden-Login Sind Sie Kandidat:in bei den Wahlen in Kanton Bern? Melden Sie sich hier an!"
+    },
+    {
+      "title": "smartvote",
+      "url": "https://sv19.smartvote.ch/de/",
+      "snippet": "Maintenance Wegen Wartungsarbeiten ist smartvote.ch zur Zeit nicht erreichbar. Sollte diese Meldung während längerer Zeit …"
+    },
+    {
+      "title": "Crowdfunding - Français – smartvote Crowdfunding",
+      "url": "https://www.funding.smartvote.ch/?lang=fr",
+      "snippet": "Ensemble, nous rendons smartvote encore plus moderne, inclusif et fiable – pour une démocratie vivante."
+    },
+    {
+      "title": "KMU Bern Wahlempfehlung 2026",
+      "url": "https://kmu-2026.smartvote.ch/de/canton/be/election/1191/district/1191:1367/organization-recommendation",
+      "snippet": "Unterstützung durch Berner KMU erhalten nur kandidierende Mitglieder, die den Smartvote-Fragebogen bis am 01.02.2026 ausgefüllt …"
+    }
+  ]
+}

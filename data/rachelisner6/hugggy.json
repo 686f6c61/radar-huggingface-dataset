@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "rachelisner6/hugggy",
+  "slug": "rachelisner6-hugggy",
+  "author": "rachelisner6",
+  "url": "https://huggingface.co/rachelisner6/hugggy",
+  "created_at": "2026-09-20T22:19:20.000Z",
+  "updated_at": "2026-09-20T22:19:20.000Z",
+  "license": "afl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:afl-3.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Nachrichten, aktuelle Schlagzeilen und Videos - n-tv.de",
+      "url": "https://www.n-tv.de/",
+      "snippet": "Echtes Schnäppchen oder schnödes Lockangebot? Im ntv.de-Dealticker checken wir Sonderangebote und sagen, welche Deals sich …"
+    },
+    {
+      "title": "Schlagzeilen und Videos des Tages chronologisch - n-tv.de",
+      "url": "https://www.n-tv.de/home/Das_Neueste/",
+      "snippet": "Die aktuellen ntv-Schlagzeilen auf einen Blick. Artikel und Videos aus Politik, Wirtschaft, Börse, Sport und aller Welt in …"
+    },
+    {
+      "title": "24 Stunden ntv Livestream - n-tv.de",
+      "url": "https://www.n-tv.de/mediathek/livestream/24-Stunden-ntv-Livestream-article9511936.html",
+      "snippet": "1 day ago · Breaking News, Hintergründe, Nachrichten: Der ntv-Livestream liefert rund um die Uhr die aktuellsten Informationen aus …"
+    },
+    {
+      "title": "Nachrichten - n-tv.de",
+      "url": "https://www.n-tv.de/mediathek/nachrichten/",
+      "snippet": "ntv Zertifikate ntv Fonds ntv Krypto ntv Trading Fonds & ETF Anleihen ntv Geldanlage-Check"
+    },
+    {
+      "title": "ntv: Aktuelle News & Infos - t-online.de",
+      "url": "https://www.t-online.de/themen/ntv/",
+      "snippet": "Der Sender ging 1992 auf Sendung und war der erste reine Nachrichtensender Deutschlands. ntv berichtet rund um die Uhr über …"
+    }
+  ]
+}

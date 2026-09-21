@@ -1,0 +1,74 @@
+{
+  "schema": 1,
+  "id": "chorcat/rukh-medium-elo",
+  "slug": "chorcat-rukh-medium-elo",
+  "author": "chorcat",
+  "url": "https://huggingface.co/chorcat/rukh-medium-elo",
+  "created_at": "2026-09-20T20:39:10.000Z",
+  "updated_at": "2026-09-21T15:03:23.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "rukh",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "rukh",
+    "onnx",
+    "safetensors",
+    "rukh-move-decoder",
+    "chess",
+    "decoder",
+    "text-generation",
+    "en",
+    "dataset:chorcat/rukh-games-1800",
+    "dataset:chorcat/rukh-tokenizer",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 115120128,
+  "parameters_human": "115.1M",
+  "storage_bytes": 1275338671,
+  "storage_human": "1.3 GB",
+  "base_model": null,
+  "formats": [
+    "onnx",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Should I create a Tiktok Business account or stick to personal ... - Reddit",
+      "url": "https://www.reddit.com/r/socialmedia/comments/u23ze1/should_i_create_a_tiktok_business_account_or/",
+      "snippet": "Apr 12, 2022 · If you're wanting to run ads on tik tok though, I think you have to be a business account. Also, with personal accounts …"
+    },
+    {
+      "title": "does tiktok tell the profile when you view their page?",
+      "url": "https://www.reddit.com/r/Tiktokhelp/comments/tc0o1i/does_tiktok_tell_the_profile_when_you_view_their/",
+      "snippet": "If you have no TikTok account I do believe you still can view their profile without them knowing. I’ve had my account for along time …"
+    },
+    {
+      "title": "TikTok - 知乎",
+      "url": "https://www.zhihu.com/topic/21190111/hot",
+      "snippet": "Tik Tok是抖音短视频国际版。Tik Tok原本在海外接连获得佳绩，抖音短视频似乎已经成为中国产品在海外获得成功的又一杰出代表， …"
+    },
+    {
+      "title": "为什么 Intel 的 tik-tok 失败了？ - 知乎",
+      "url": "https://www.zhihu.com/question/297743320",
+      "snippet": "刚开始AU太弱就小改架构小改制程圈钱，U圈钱也算了还频换主板抢钱。后来A家架构制程俱佳，想发力了发现制程没优势了且制程已 …"
+    },
+    {
+      "title": "TikTok - humanity in all forms - Reddit",
+      "url": "https://www.reddit.com/r/TikTok/",
+      "snippet": "This is a place to post fun, cute, funny, interesting titktok videos you've found. This sub is to share fun tiktok you've found or made. …"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "olusegunola/qwen2.5-1.5b-primekg-orpo-seed7",
+  "slug": "olusegunola-qwen2-5-1-5b-primekg-orpo-seed7",
+  "author": "olusegunola",
+  "url": "https://huggingface.co/olusegunola/qwen2.5-1.5b-primekg-orpo-seed7",
+  "created_at": "2026-09-20T20:00:14.000Z",
+  "updated_at": "2026-09-20T20:00:22.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "arxiv:1910.09700",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 46317048,
+  "storage_human": "46 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Aktuelle Nachrichten | BILD.de",
+      "url": "https://www.bild.de/",
+      "snippet": "BILD.de: Die Seite 1 für aktuelle Nachrichten und Themen, Bilder und Videos aus den Bereichen News, Wirtschaft, Politik, Show, …"
+    },
+    {
+      "title": "News: Aktuelle Nachrichten und Videos - BILD.de",
+      "url": "https://www.bild.de/news/startseite/news/news-16804530.bild.html",
+      "snippet": "Aktuelle News aus Deutschland, Europa und der Welt. Alle Informationen, Bilder und Videos zu Skandalen, Krisen und Sensationen …"
+    },
+    {
+      "title": "Bild (Zeitung) – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Bild_(Zeitung)",
+      "snippet": "Bild (bis in die 1970er-Jahre und umgangssprachlich weiterhin auch Bild-Zeitung) ist die größte täglich erscheinende …"
+    },
+    {
+      "title": "BILD ePaper",
+      "url": "https://epaper.bild.de/?wtmc=nav.epaper",
+      "snippet": "Online-Apotheke Energielösungen BILD Reisen BILD BILD ePaper Ihre Privatsphäre ist uns wichtig Diese Website nutzt Cookies, um …"
+    },
+    {
+      "title": "Bild.de – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Bild.de",
+      "snippet": "Bild.de bietet Boulevard-, Nachrichten- und Meinungsbeitäge in den Medienformaten Text, Foto und Video. Inhalte werden seit 2013 …"
+    }
+  ]
+}

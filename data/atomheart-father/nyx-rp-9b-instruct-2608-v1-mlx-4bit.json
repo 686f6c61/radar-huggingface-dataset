@@ -1,0 +1,72 @@
+{
+  "schema": 1,
+  "id": "Atomheart-Father/Nyx-RP-9B-Instruct-2608-v1-MLX-4bit",
+  "slug": "atomheart-father-nyx-rp-9b-instruct-2608-v1-mlx-4bit",
+  "author": "Atomheart-Father",
+  "url": "https://huggingface.co/Atomheart-Father/Nyx-RP-9B-Instruct-2608-v1-MLX-4bit",
+  "created_at": "2026-09-21T01:21:23.000Z",
+  "updated_at": "2026-09-21T01:24:28.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": "mlx",
+  "languages": [],
+  "tags": [
+    "mlx",
+    "safetensors",
+    "qwen3_5",
+    "mlx-lm",
+    "roleplay",
+    "text-generation",
+    "conversational",
+    "base_model:Indexnusrefather/Nyx-RP-9B-Instruct-2608-v1",
+    "base_model:quantized:Indexnusrefather/Nyx-RP-9B-Instruct-2608-v1",
+    "license:apache-2.0",
+    "4-bit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 13,
+  "trending_score": 0,
+  "parameters": 8953803264,
+  "parameters_human": "8.95B",
+  "storage_bytes": 5060271343,
+  "storage_human": "5.1 GB",
+  "base_model": "Indexnusrefather/Nyx-RP-9B-Instruct-2608-v1",
+  "formats": [
+    "mlx",
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Košarkaški savez Zagreba",
+      "url": "https://ksz-zagreb.hr/",
+      "snippet": "1 day ago · Savska cesta 137/II. kat 10 000 Zagreb Tel.: +385 (01) 6431-008; +385 (01) 6431-010 Fax.: +385 (01) 6431-040"
+    },
+    {
+      "title": "U Glini za vikend ”VI. Klobijev Memorijal”… – KSZ Zagreb",
+      "url": "https://ksz-zagreb.hr/muska-kosarka/u-glini-za-vikend-vi-klobijev-memorijal/",
+      "snippet": "Već tradicionalno krajem kolovoza Glina je domaćin turnira za mlađe kategorije koji će i ove godine imati međunarodni karakter. …"
+    },
+    {
+      "title": "Turski prvoligaš testirao Virtus Zagreb… – Košarkaški savez Zagreba",
+      "url": "https://ksz-zagreb.hr/muska-kosarka/turski-prvoligas-testirao-virtus-zagreb/",
+      "snippet": "Virtus Zagreb gostovao je u Sloveniji (Rogaška Slatina) gdje je protiv Esenler Erokspora odigrao prijateljski susret. Turski prvoligaš je …"
+    },
+    {
+      "title": "Ustroj – Košarkaški savez Zagreba",
+      "url": "https://ksz-zagreb.hr/ustroj/",
+      "snippet": "Predsjednik dr.Bernard Budimir Dopredsjednik Tomislav Zebić Upravni odbor Lea Fabbri Goran Rogić Dražen Joksimović Andrej …"
+    },
+    {
+      "title": "Lista strijelaca | Košarkaški Savez Zagreba",
+      "url": "https://ksz-zagreb.hr/lista-strijelaca-45",
+      "snippet": "Lista strijelaca | Košarkaški Savez Zagreba Lista strijelaca Strijelci: III. Pretkadetska liga"
+    }
+  ]
+}

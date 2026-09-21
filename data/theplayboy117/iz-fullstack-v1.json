@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "theplayboy117/iz-fullstack-v1",
+  "slug": "theplayboy117-iz-fullstack-v1",
+  "author": "theplayboy117",
+  "url": "https://huggingface.co/theplayboy117/iz-fullstack-v1",
+  "created_at": "2026-09-20T22:51:23.000Z",
+  "updated_at": "2026-09-20T23:17:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "generated_from_trainer",
+    "sft",
+    "trl",
+    "base_model:Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "base_model:finetune:Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 48409525,
+  "storage_human": "48 MB",
+  "base_model": "Qwen/Qwen2.5-Coder-1.5B-Instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Cell Phone Addiction: What You Need to Know - Verizon",
+      "url": "https://www.verizon.com/articles/cell-phone-addiction/?msockid=096b359e51f4696a35a6224450b568f6",
+      "snippet": "Smartphones have become a necessary part of everyday life. However, if you’re withdrawing from the world, experiencing …"
+    },
+    {
+      "title": "How to Overcome Social Media Addiction & Break the Cycle",
+      "url": "https://positivepsychology.com/overcome-social-media-addiction/",
+      "snippet": "Feb 4, 2026 · Not at all. Overcoming social media addiction doesn’t require deleting all the apps forever. For many people, the goal is …"
+    },
+    {
+      "title": "How to Break Smartphone Addiction: Tips and Symptoms",
+      "url": "https://www.thrivetherapyphx.com/blog-posts/how-to-break-smartphone-addiction-tips-and-symptoms",
+      "snippet": "Behavioral Addiction Behavioral addictions show up in a number of different ways. In addition to technology addiction, this can also …"
+    },
+    {
+      "title": "11 Powerful Strategies to Get Rid of Cell Phone Addiction - Kidslox",
+      "url": "https://kidslox.com/guide-to/11-powerful-strategies-to-get-rid-of-phone-addiction/",
+      "snippet": "Jun 27, 2023 · Discover if you and your child have phone addiction. Learn effective strategies how to quit compulsive phone usage in …"
+    },
+    {
+      "title": "How to Stop Smartphone Addiction | Steve Rose, PhD",
+      "url": "https://steverosephd.com/how-to-stop-smartphone-addiction/",
+      "snippet": "Dec 4, 2024 · To truly break free from addiction, you must understand how the perceived solution—whether it’s a smartphone, a …"
+    }
+  ]
+}

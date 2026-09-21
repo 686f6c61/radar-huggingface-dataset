@@ -1,0 +1,68 @@
+{
+  "schema": 1,
+  "id": "BlueNipples/Anansi-35B-A3B-buildfiles_and_headvariants",
+  "slug": "bluenipples-anansi-35b-a3b-buildfiles_and_headvariants",
+  "author": "BlueNipples",
+  "url": "https://huggingface.co/BlueNipples/Anansi-35B-A3B-buildfiles_and_headvariants",
+  "created_at": "2026-09-21T00:22:24.000Z",
+  "updated_at": "2026-09-21T00:40:05.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "gguf",
+    "qwen3.5",
+    "qwen3.6",
+    "mergekit",
+    "lm-head",
+    "safetensors",
+    "experimental",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 508559360,
+  "parameters_human": "508.6M",
+  "storage_bytes": 2097807719,
+  "storage_human": "2.1 GB",
+  "base_model": null,
+  "formats": [
+    "gguf",
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "MLB Scores: Scoreboard, Results and Highlights",
+      "url": "https://www.mlb.com/scores/?msockid=33533d6a637a6c7e055a2ab162076dda",
+      "snippet": "Get up-to-date MLB scores from today’s games, as well as scores from all the 2026 MLB season games."
+    },
+    {
+      "title": "MLB Scores, 2026 Season - ESPN",
+      "url": "https://www.espn.com/mlb/scoreboard",
+      "snippet": "2 days ago · Live scores for every 2026 MLB season game on ESPN. Includes box scores, video highlights, play breakdowns and …"
+    },
+    {
+      "title": "MLB Stats, Scores, History, & Records | Baseball-Reference.com",
+      "url": "https://www.baseball-reference.com/",
+      "snippet": "Complete source for baseball history including complete major league player, team, and league stats, awards, records, leaders, …"
+    },
+    {
+      "title": "MLB playoffs winners and losers: Blue Jays advance by eliminating ...",
+      "url": "https://www.cbssports.com/mlb/news/mlb-playoffs-2025-nlds-game-3-alds-game-4-live-updates-scores-results/live/",
+      "snippet": "Oct 9, 2025 · The Cubs staved off their own elimination with a Game 3 win over the rival Brewers, and the Phillies blew out the …"
+    },
+    {
+      "title": "MLB on ESPN - Scores, Stats and Highlights",
+      "url": "https://www.espn.com/mlb/",
+      "snippet": "Visit ESPN for MLB live scores, video highlights and latest news. Stream exclusive games on ESPN and play Fantasy Baseball."
+    }
+  ]
+}

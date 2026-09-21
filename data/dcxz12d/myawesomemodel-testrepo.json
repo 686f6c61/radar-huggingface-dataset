@@ -1,0 +1,64 @@
+{
+  "schema": 1,
+  "id": "DCXZ12D/MyAwesomeModel-TestRepo",
+  "slug": "dcxz12d-myawesomemodel-testrepo",
+  "author": "DCXZ12D",
+  "url": "https://huggingface.co/DCXZ12D/MyAwesomeModel-TestRepo",
+  "created_at": "2026-09-21T02:36:54.000Z",
+  "updated_at": "2026-09-21T02:36:59.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "feature-extraction",
+  "library": "transformers",
+  "languages": [],
+  "tags": [
+    "transformers",
+    "pytorch",
+    "bert",
+    "feature-extraction",
+    "license:mit",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 23,
+  "storage_human": "23 B",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Téléchargement de logiciels et pilotes officiels HP® | Assistance HP®",
+      "url": "https://support.hp.com/fr-fr/drivers",
+      "snippet": "Téléchargez les derniers pilotes, logiciels, micrologiciels et diagnostics pour vos produits HP sur le site officiel de l'assistance HP."
+    },
+    {
+      "title": "Numérisation avec une imprimante HP | Assistance HP®",
+      "url": "https://support.hp.com/fr-fr/document/ish_2830462-2561887-16",
+      "snippet": "Le logiciel HP Scan est installé avec la version complète du pilote. Il comprend des paramètres permettant de numériser des …"
+    },
+    {
+      "title": "HP Smart",
+      "url": "https://www.hpsmart.com/scan",
+      "snippet": "Easily scan, print, and manage your HP printer with the HP Smart app."
+    },
+    {
+      "title": "Télécharger HP Scan and Capture gratuitement sur Windows",
+      "url": "https://www.numerama.com/telecharger/hp-scan-and-capture.html",
+      "snippet": "1 day ago · HP Scan and Capture est une application gratuite développée par HP pour permettre la numérisation de documents et de …"
+    },
+    {
+      "title": "Comment activer le scanner d’une imprimante HP - Commentouvrir",
+      "url": "https://commentouvrir.com/tech/comment-activer-le-scanner-dune-imprimante-hp/",
+      "snippet": "Pour numériser des documents, il est nécessaire d’activer le scanner de votre imprimante HP. Mais comment faire ? Dans cet article, …"
+    }
+  ]
+}

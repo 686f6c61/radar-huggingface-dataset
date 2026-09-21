@@ -1,0 +1,91 @@
+{
+  "schema": 1,
+  "id": "TyroneNel/Swift-Qwen3.8-27B-Uncensored-W4A16",
+  "slug": "tyronenel-swift-qwen3-8-27b-uncensored-w4a16",
+  "author": "TyroneNel",
+  "url": "https://huggingface.co/TyroneNel/Swift-Qwen3.8-27B-Uncensored-W4A16",
+  "created_at": "2026-09-20T20:29:22.000Z",
+  "updated_at": "2026-09-21T00:36:15.000Z",
+  "license": "swift-open-license-1.0",
+  "license_family": "oss",
+  "pipeline_tag": "image-text-to-text",
+  "library": "transformers",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "tags": [
+    "transformers",
+    "safetensors",
+    "qwen3_5",
+    "image-text-to-text",
+    "qwen3_8",
+    "swift",
+    "uncensored",
+    "abliterated",
+    "4-bit",
+    "w4a16",
+    "int8",
+    "compressed-tensors",
+    "vllm",
+    "marlin",
+    "mtp",
+    "efficient-thinking",
+    "reasoning",
+    "multimodal",
+    "tool-calling",
+    "ampere",
+    "rtx-3090",
+    "conversational",
+    "en",
+    "zh",
+    "base_model:d0xin/Swift-Qwen3.8-27B-Uncensored-BF16",
+    "base_model:quantized:d0xin/Swift-Qwen3.8-27B-Uncensored-BF16",
+    "license:other",
+    "endpoints_compatible",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 6260690960,
+  "parameters_human": "6.26B",
+  "storage_bytes": 16764986671,
+  "storage_human": "16.8 GB",
+  "base_model": "d0xin/Swift-Qwen3.8-27B-Uncensored-BF16",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.com/",
+      "snippet": "Find local businesses, view maps and get driving directions in Google Maps."
+    },
+    {
+      "title": "Get directions for driving, transit, walking, and more - Directions ...",
+      "url": "https://maps.google.com/maps/dir/",
+      "snippet": "Find local businesses, view maps and get driving directions in Google Maps."
+    },
+    {
+      "title": "Google Maps",
+      "url": "https://maps.google.com/maps/search/",
+      "snippet": "Map data ©2026 Google Terms 20 km Directions"
+    },
+    {
+      "title": "Google Earth",
+      "url": "https://maps.google.com/intl/en/earth/",
+      "snippet": "Feature images and videos on your map to add rich contextual information. Make use of Google Earth's detailed globe by tilting the …"
+    },
+    {
+      "title": "South Africa, ZA - Explore in Google Maps",
+      "url": "https://maps.google.com/maps/search/%22South%20Africa%22",
+      "snippet": "South Africa is a country on the southernmost tip of the African continent, marked by several distinct ecosystems. Inland safari …"
+    }
+  ]
+}

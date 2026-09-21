@@ -1,0 +1,104 @@
+{
+  "schema": 1,
+  "id": "dronefreak/uavdt-yolov10s",
+  "slug": "dronefreak-uavdt-yolov10s",
+  "author": "dronefreak",
+  "url": "https://huggingface.co/dronefreak/uavdt-yolov10s",
+  "created_at": "2026-09-20T21:16:04.000Z",
+  "updated_at": "2026-09-21T13:58:25.000Z",
+  "license": "agpl-3.0",
+  "license_family": "oss",
+  "pipeline_tag": "object-detection",
+  "library": "ultralytics",
+  "languages": [],
+  "tags": [
+    "ultralytics",
+    "object-detection",
+    "detectionbench",
+    "pytorch",
+    "computer-vision",
+    "aerial-imagery",
+    "drone",
+    "uav",
+    "vehicle-detection",
+    "traffic-surveillance",
+    "small-object-detection",
+    "dataset:dronefreak/UAVDT",
+    "arxiv:1804.00518",
+    "arxiv:2405.14458",
+    "arxiv:2511.09554",
+    "arxiv:2304.07193",
+    "arxiv:2410.17725",
+    "arxiv:2606.03748",
+    "arxiv:2402.13616",
+    "license:agpl-3.0",
+    "model-index",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 28804775,
+  "storage_human": "29 MB",
+  "base_model": "Ultralytics/YOLOv10",
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [
+    {
+      "task": "Object Detection",
+      "dataset": "UAVDT",
+      "metric": "mAP@50 (test split)",
+      "value": 28.85
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "UAVDT",
+      "metric": "mAP@50-95 (test split)",
+      "value": 16.48
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "UAVDT",
+      "metric": "Precision (test split)",
+      "value": 36.53
+    },
+    {
+      "task": "Object Detection",
+      "dataset": "UAVDT",
+      "metric": "Recall (test split)",
+      "value": 33.16
+    }
+  ],
+  "sources": [
+    {
+      "title": "50 recettes au poulet faciles et savoureuses à faire cet été",
+      "url": "https://www.cuisineaz.com/diaporamas/50-recettes-au-poulet-faciles-et-savoureuses-5453/interne/1.aspx",
+      "snippet": "Jul 5, 2025 · Nous avons préparé une sélection de 50 recettes au poulet, pensées pour être à la fois simples à réaliser et délicieuses …"
+    },
+    {
+      "title": "Nos 75 meilleures recettes de poulet simples et rapides",
+      "url": "https://www.noovomoi.ca/cuisiner/trucs-et-inspirations/meilleures-recettes-poulet.html",
+      "snippet": "Inspirez-vous de nos recettes de poulet pour vos soupers et tous vos plats principaux. Ces suggestions de délicieux plats à base de …"
+    },
+    {
+      "title": "Recettes avec poulet - Marmiton",
+      "url": "https://www.marmiton.org/recettes/index/ingredient/poulet",
+      "snippet": "Découvrez nos recettes rapides et faciles avec poulet, pour des repas savoureux."
+    },
+    {
+      "title": "Recette Poulet : 30+ Recettes Faciles et Savoureuses (2025)",
+      "url": "https://recettesparisiennes.com/recette-poulet/",
+      "snippet": "Découvrez 50+ recettes de poulet faciles : au four, poêle, air fryer. Techniques infaillibles, marinades savoureuses et conseils d'expert."
+    },
+    {
+      "title": "Recettes de Poulet",
+      "url": "https://recettes.de/poulet",
+      "snippet": "2 days ago · Découvrez ces penne complètes accompagnées de dés de poulet sautés et de poivrons, le tout parfumé aux herbes de …"
+    }
+  ]
+}

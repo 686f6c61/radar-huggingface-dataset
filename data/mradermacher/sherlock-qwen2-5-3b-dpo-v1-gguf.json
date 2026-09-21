@@ -1,0 +1,73 @@
+{
+  "schema": 1,
+  "id": "mradermacher/sherlock-qwen2.5-3b-dpo-v1-GGUF",
+  "slug": "mradermacher-sherlock-qwen2-5-3b-dpo-v1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/sherlock-qwen2.5-3b-dpo-v1-GGUF",
+  "created_at": "2026-09-20T22:15:21.000Z",
+  "updated_at": "2026-09-20T22:53:42.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "dpo",
+    "lora-merged",
+    "math",
+    "persona",
+    "en",
+    "base_model:andreayhchen/sherlock-qwen2.5-3b-dpo-v1",
+    "base_model:quantized:andreayhchen/sherlock-qwen2.5-3b-dpo-v1",
+    "endpoints_compatible",
+    "region:us",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3085938688,
+  "parameters_human": "3.09B",
+  "storage_bytes": 27940892800,
+  "storage_human": "27.9 GB",
+  "base_model": "andreayhchen/sherlock-qwen2.5-3b-dpo-v1",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Willa Fitzgerald - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Willa_Fitzgerald",
+      "snippet": "Willa Fitzgerald (born January 17, 1991) is an American actress. She is known for her starring role as Emma Duval in MTV 's Scream. …"
+    },
+    {
+      "title": "Willa Fitzgerald (@willafitz) • Instagram photos and videos",
+      "url": "https://www.instagram.com/willafitz/",
+      "snippet": "623K Followers, 2,193 Following, 1,780 Posts - Willa Fitzgerald (@willafitz) on Instagram: \"Twitter @willafitz, even more dog content …"
+    },
+    {
+      "title": "Willa Fitzgerald - IMDb",
+      "url": "https://www.imdb.com/name/nm2560618/?nmdp=1",
+      "snippet": "Willa Fitzgerald is an American actress, a native of Nashville, Tennessee, United States. Fitzgerald graduated from the Harpeth Hall …"
+    },
+    {
+      "title": "Willa Fitzgerald – Wikipedia",
+      "url": "https://de.wikipedia.org/wiki/Willa_Fitzgerald",
+      "snippet": "Willa Fitzgerald (* 17. Januar 1991 [1] in Nashville, Tennessee) [2] ist eine US-amerikanische Schauspielerin. Willa Fitzgerald schloss …"
+    },
+    {
+      "title": "Willa Fitzgerald | Jack Reacher Wiki | Fandom",
+      "url": "https://jack-reacher.fandom.com/wiki/Willa_Fitzgerald",
+      "snippet": "Willa Fitzgerald (born January 17, 1991) is an American actress. She portrays Roscoe Conklin in the first season of the Reacher …"
+    }
+  ]
+}

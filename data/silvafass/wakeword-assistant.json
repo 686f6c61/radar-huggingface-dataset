@@ -1,0 +1,62 @@
+{
+  "schema": 1,
+  "id": "silvafass/wakeword-assistant",
+  "slug": "silvafass-wakeword-assistant",
+  "author": "silvafass",
+  "url": "https://huggingface.co/silvafass/wakeword-assistant",
+  "created_at": "2026-09-21T00:24:41.000Z",
+  "updated_at": "2026-09-21T00:49:37.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "onnx",
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 1900608,
+  "storage_human": "2 MB",
+  "base_model": null,
+  "formats": [
+    "onnx"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Arnes spletni tečaji: Izberite vaš MOST | Forum Mladi učitelj",
+      "url": "https://forum.mladiucitelj.si/teme/arnes-spletni-tecaji-izberite-vas-most.61946/",
+      "snippet": "Mar 4, 2020 · Odprli so prijave na sedem množičnih odprtih spletnih tečajev – MOST. Tečaji se bodo začeli 16. marca, obravnavali pa …"
+    },
+    {
+      "title": "Arnes se je pridružil Slovenski digitalni koaliciji",
+      "url": "https://forum.mladiucitelj.si/teme/arnes-se-je-pridruzil-slovenski-digitalni-koaliciji.22633/",
+      "snippet": "Apr 12, 2017 · Arnes je prepoznal zahtevno nalogo digitalnega preoblikovanja Slovenije in ključni pomen, ki ga ima ta za prihodnost …"
+    },
+    {
+      "title": "SIO Nova nadgradnja hrbteničnih povezav omrežja ARNES",
+      "url": "https://forum.mladiucitelj.si/teme/nova-nadgradnja-hrbtenicnih-povezav-omrezja-arnes.16153/",
+      "snippet": "V preteklem mesecu (junij 2016) je Arnes nadgradil hrbtenične povezave med vozlišči v Mariboru, Dravogradu, Slovenj Gradcu in …"
+    },
+    {
+      "title": "Arnes – pionir interneta, ki že 25 let povezuje znanje",
+      "url": "https://forum.mladiucitelj.si/teme/arnes-pionir-interneta-ki-ze-25-let-povezuje-znanje.24025/",
+      "snippet": "Jun 14, 2017 · V četrt stoletja delovanja je Arnes, ki ga je vlada ustanovila v maju 1992, pomembno prispeval k informatizaciji …"
+    },
+    {
+      "title": "Arnes razpisuje delovno mesto direktorja | Forum Mladi učitelj",
+      "url": "https://forum.mladiucitelj.si/teme/arnes-razpisuje-delovno-mesto-direktorja.23008/",
+      "snippet": "May 5, 2017 · Skladno s Sklepom o ustanovitvi Akademske in raziskovalne mreže Slovenije (ARNES) Svet zavoda razpisuje prosto …"
+    }
+  ]
+}

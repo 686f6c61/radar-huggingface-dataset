@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Osiito/Pepesite",
+  "slug": "osiito-pepesite",
+  "author": "Osiito",
+  "url": "https://huggingface.co/Osiito/Pepesite",
+  "created_at": "2026-09-20T20:58:53.000Z",
+  "updated_at": "2026-09-20T20:58:53.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "OpenAI | 研究と実用化",
+      "url": "https://openai.com/ja-JP/",
+      "snippet": "最近のニュース もっと見る GPT‑5.6 で価格性能比の新たなフロンティアを切り拓く 企業 2026年9月9日 Astra への道：重大な能力 …"
+    },
+    {
+      "title": "立即开始使用 ChatGPT | OpenAI",
+      "url": "https://openai.com/zh-Hans-CN/index/start-using-chatgpt-instantly/",
+      "snippet": "我们还为此体验引入了额外的内容保护措施，例如屏蔽更多类别的提示和生成。 创建帐户有很多好处，包括可以保存和查看聊天记录 …"
+    },
+    {
+      "title": "ChatGPT macOS アプリのダウンロード - OpenAI Help Center",
+      "url": "https://help.openai.com/ja-jp/articles/9275200-downloading-the-chatgpt-macos-app",
+      "snippet": "macOS 版 ChatGPT デスクトップアプリをダウンロードし、対応する Mac のハードウェアとソフトウェア要件をご確認ください。"
+    },
+    {
+      "title": "ChatGPT レート表（Business、Enterprise/Edu のクレジット ...",
+      "url": "https://help.openai.com/ja-jp/articles/11481834-chatgpt-rate-card-business-enterpriseedu-credit-based-pricing",
+      "snippet": "Aug 26, 2026 · GPT-Rosalind-Research は、一部の Enterprise プランでのみご利用いただけます。 詳細はこちら。 ... ChatGPT Edu …"
+    },
+    {
+      "title": "OpenAI Developers",
+      "url": "https://developers.openai.com/",
+      "snippet": "Featured GPT Image 2.5 for image generation and editing Meet Sunburst and Flare. Choose Sunburst for precise editing, or Flare for …"
+    }
+  ]
+}

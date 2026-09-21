@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "Abu-Dju/ct2fast-flan-alpaca-xxl",
+  "slug": "abu-dju-ct2fast-flan-alpaca-xxl",
+  "author": "Abu-Dju",
+  "url": "https://huggingface.co/Abu-Dju/ct2fast-flan-alpaca-xxl",
+  "created_at": "2026-09-20T21:28:07.000Z",
+  "updated_at": "2026-09-20T21:28:09.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 11145587784,
+  "storage_human": "11.1 GB",
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "YouTube to MP3 Converter",
+      "url": "https://mp3cow.com/",
+      "snippet": "Convert YouTube videos to MP3 audio files without annoying ads or registration. With MP3Cow, you have one of the fastest and ad …"
+    },
+    {
+      "title": "YouTube to MP3 — Free Online Audio Tool | EasyConv",
+      "url": "https://easyconv.com/tools/youtube-to-mp3",
+      "snippet": "Free online YouTube to MP3 — Paste a YouTube URL and download the audio as MP3, WAV, or FLAC. No signup required. Up to …"
+    },
+    {
+      "title": "Free YouTube to MP3 Downloader",
+      "url": "https://turboscribe.ai/downloader/youtube/mp3/free?msockid=0573d2eef7e467ca0679c534f6b4665e",
+      "snippet": "Convert YouTube videos to accurate text or subtitles. Just paste the YouTube link. Compact, lightweight, and universally supported, …"
+    },
+    {
+      "title": "MP3 Converter - FreeConvert.com",
+      "url": "https://www.freeconvert.com/mp3-converter",
+      "snippet": "Our MP3 Converter can convert any audio or video file to MP3 format. We support wav, flac, wma, m4a, alac, ogg, aac, amr, aiff, …"
+    },
+    {
+      "title": "Video to MP3 Converter - FreeConvert.com",
+      "url": "https://www.freeconvert.com/convert/video-to-mp3",
+      "snippet": "Extract audio from video files online. No software to install and 100% free!"
+    }
+  ]
+}

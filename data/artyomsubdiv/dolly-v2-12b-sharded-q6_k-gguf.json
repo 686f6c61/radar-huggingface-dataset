@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "ArtyomSubDiv/dolly-v2-12b-sharded-Q6_K-GGUF",
+  "slug": "artyomsubdiv-dolly-v2-12b-sharded-q6_k-gguf",
+  "author": "ArtyomSubDiv",
+  "url": "https://huggingface.co/ArtyomSubDiv/dolly-v2-12b-sharded-Q6_K-GGUF",
+  "created_at": "2026-09-20T20:24:03.000Z",
+  "updated_at": "2026-09-20T20:24:46.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "gguf",
+    "dolly",
+    "dolly-v2",
+    "instruct",
+    "sharded",
+    "llama-cpp",
+    "gguf-my-repo",
+    "text-generation",
+    "en",
+    "dataset:databricks/databricks-dolly-15k",
+    "base_model:ethzanalytics/dolly-v2-12b-sharded",
+    "base_model:quantized:ethzanalytics/dolly-v2-12b-sharded",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 11841894400,
+  "parameters_human": "11.84B",
+  "storage_bytes": 9723498784,
+  "storage_human": "9.7 GB",
+  "base_model": "ethzanalytics/dolly-v2-12b-sharded",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Официален АБВ Блог",
+      "url": "https://forum.abv.bg/",
+      "snippet": "5 days ago · ABV Trust Suite включва механизъм за сигнализиране от страна на клиенти при потенциално рискови имейли, …"
+    },
+    {
+      "title": "如何评价AI博主「阿酥在coding」已入职美团？ - 知乎",
+      "url": "https://www.zhihu.com/question/2069134194081584733",
+      "snippet": "Aug 12, 2026 · 说明世界就是个巨大的草台班子，美团自诩阳光诚信联盟企业，简历造假员工照样录用，如果不处理，以后建议都给美 …"
+    },
+    {
+      "title": "图片插入PPT后图片变模糊了怎么办？ - 知乎",
+      "url": "https://www.zhihu.com/question/31113254",
+      "snippet": "把需要的图片插入到PPT，然后发现好像图片分辨率自动降低了，原本图片有300的ppi，请问有解决方法吗？"
+    },
+    {
+      "title": "ABV Ne Demek? Alkol Hacmi Açıklandı | DonanımHaber Forum",
+      "url": "https://forum.donanimhaber.com/abv-ne-demek--85335265",
+      "snippet": "ABV Ne Demek? ABV kısaltması, \"Alkol Hacmi\" anlamına gelen İngilizce \"Alcohol by Volume\" ifadesi için kullanılır. Alkollü içeceklerin …"
+    },
+    {
+      "title": "1 - 79 ARASI GÖREVLER TAMAMI TÜRKÇE ( YENİLENDİ )",
+      "url": "https://forum.donanimhaber.com/1-79-arasi-gorevler-tamami-turkce-yenilendi--11779283",
+      "snippet": "1 - 79 Arası Görevler Tam Liste ve Açıklamaları Silkroad Online'da 1'den 79'a kadar tamamlaman gereken görevler bulunmaktadır. …"
+    }
+  ]
+}

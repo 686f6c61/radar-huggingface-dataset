@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "mradermacher/Artemis-31B-v1.1-heretic-v2-i1-GGUF",
+  "slug": "mradermacher-artemis-31b-v1-1-heretic-v2-i1-gguf",
+  "author": "mradermacher",
+  "url": "https://huggingface.co/mradermacher/Artemis-31B-v1.1-heretic-v2-i1-GGUF",
+  "created_at": "2026-09-20T20:59:24.000Z",
+  "updated_at": "2026-09-21T03:00:14.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": "transformers",
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "transformers",
+    "gguf",
+    "heretic",
+    "uncensored",
+    "decensored",
+    "abliterated",
+    "reproducible",
+    "en",
+    "base_model:coder3101/Artemis-31B-v1.1-heretic",
+    "base_model:quantized:coder3101/Artemis-31B-v1.1-heretic",
+    "endpoints_compatible",
+    "region:us",
+    "imatrix",
+    "conversational"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 30697345596,
+  "parameters_human": "30.70B",
+  "storage_bytes": 334809601344,
+  "storage_human": "334.8 GB",
+  "base_model": "coder3101/Artemis-31B-v1.1-heretic",
+  "formats": [
+    "gguf"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "有没有适合给女生讲的睡前故事？",
+      "url": "https://www.zhihu.com/tardis/bd/ans/2119698005",
+      "snippet": "我这几年总共写了10个以小熊为主角的睡前故事，整理于此，希望对大家有用。 （1）《失眠的小熊》by林朵 森林里有一只快活的小 …"
+    },
+    {
+      "title": "大家乐与大快活的根本区别是什么？ - 知乎",
+      "url": "https://www.zhihu.com/question/20680657?sort=created",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "大家乐大快活港式餐饮公司在内地发展优劣势？ - 知乎",
+      "url": "https://www.zhihu.com/question/23904837",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    },
+    {
+      "title": "武松大闹快活林，醉打蒋门神有个疑问？ - 知乎",
+      "url": "https://www.zhihu.com/question/62193612",
+      "snippet": "1.一手把冠儿捏作粉碎，揪住云髻。 这里的主要目的是揪头发，揪头发的时候顺手把冠儿抓碎了，而且可以体现武松力气大。 2.隔柜 …"
+    },
+    {
+      "title": "大快活餐厅用的是哪一家供货商的牛排和酱汁呢? - 知乎",
+      "url": "https://www.zhihu.com/question/647967113?write",
+      "snippet": "知乎，中文互联网高质量的问答社区和创作者聚集的原创内容平台，于 2011 年 1 月正式上线，以「让人们更好的分享知识、经验和见 …"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 1,
+  "id": "kjyothirmai15/TESTING",
+  "slug": "kjyothirmai15-testing",
+  "author": "kjyothirmai15",
+  "url": "https://huggingface.co/kjyothirmai15/TESTING",
+  "created_at": "2026-09-20T20:07:18.000Z",
+  "updated_at": "2026-09-20T20:07:18.000Z",
+  "license": "apache-2.0",
+  "license_family": "oss",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "license:apache-2.0",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": null,
+  "parameters_human": null,
+  "storage_bytes": 0,
+  "storage_human": null,
+  "base_model": null,
+  "formats": [],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "ACLS, PALS & Airway Masterclass – Notfalltrainings bundesweit",
+      "url": "https://www.medicaleducationservice.de/",
+      "snippet": "Medical Education Service bietet Notfallmedizin auf höchstem Niveau: AHA-Kurse (ACLS, PALS), Airway Masterclass & individuelle …"
+    },
+    {
+      "title": "Startseite",
+      "url": "https://institut.medicaleducationservice.de/",
+      "snippet": "Startseite AHA International Training Center · Seit 2015 · 790 AHA eCards (2025) Alle unsere Kurse"
+    },
+    {
+      "title": "Startseite",
+      "url": "https://institut.medicaleducationservice.de/elearning-details",
+      "snippet": "AGB & Widerruf © 2026 Medical Edu SRV"
+    },
+    {
+      "title": "Rettungsdienstfortbildung NRW | 30 Stunden praxisnah & modular | MES",
+      "url": "https://www.medicaleducationservice.de/rettungsdienstfortbildungnrw",
+      "snippet": "30 Stunden praxisnah, modular und flexibel Mit unserer Rettungsdienstfortbildung NRW bietet Medical Education Service eine …"
+    },
+    {
+      "title": "Notfallmedizinische Kurse & Schulungen | ACLS, PALS, Airway",
+      "url": "https://www.medicaleducationservice.de/unsere-kurssysteme",
+      "snippet": "ACLS, PALS, Airwaymanagement, Sedierung, Praxisnotfalltraining und individuelle Inhouse-Schulungen für medizinische Teams – …"
+    }
+  ]
+}

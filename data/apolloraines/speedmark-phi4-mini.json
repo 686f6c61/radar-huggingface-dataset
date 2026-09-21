@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "id": "ApolloRaines/Speedmark-Phi4-mini",
+  "slug": "apolloraines-speedmark-phi4-mini",
+  "author": "ApolloRaines",
+  "url": "https://huggingface.co/ApolloRaines/Speedmark-Phi4-mini",
+  "created_at": "2026-09-20T21:17:56.000Z",
+  "updated_at": "2026-09-21T15:33:42.000Z",
+  "license": "mit",
+  "license_family": "oss",
+  "pipeline_tag": "text-generation",
+  "library": null,
+  "languages": [
+    "en"
+  ],
+  "tags": [
+    "safetensors",
+    "phi3",
+    "phi4",
+    "speed",
+    "concise",
+    "jblaze",
+    "weight-editing",
+    "text-generation",
+    "conversational",
+    "en",
+    "base_model:microsoft/Phi-4-mini-instruct",
+    "base_model:finetune:microsoft/Phi-4-mini-instruct",
+    "license:mit",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 0,
+  "trending_score": 0,
+  "parameters": 3836021760,
+  "parameters_human": "3.84B",
+  "storage_bytes": 7687590797,
+  "storage_human": "7.7 GB",
+  "base_model": "microsoft/Phi-4-mini-instruct",
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": true,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "دواعي الاستعمال والاثار الجانبية | JACE جايس | الطبي",
+      "url": "https://altibbi.com/%D8%A7%D9%84%D8%A7%D8%AF%D9%88%D9%8A%D8%A9/%D8%AC%D8%A7%D9%8A%D8%B3",
+      "snippet": "علاج احتشاء عضلة القلب الحاد في غضون 24 ساعة في الدورة الدموية مستقرة لتحسين البقاء على قيد الحياة. علاج اختلال البطين الأيسر بعد احتشاء عضلة القلب. ما هي موانع استخدام جايس؟ يمنع …"
+    },
+    {
+      "title": "دواعي الاستعمال والاثار الجانبية | Jase جاس | الطبي",
+      "url": "https://altibbi.com/%D8%A7%D9%84%D8%A7%D8%AF%D9%88%D9%8A%D8%A9/%D8%AC%D8%A7%D8%B3",
+      "snippet": "ما هو دواء جاس مركب دوائي يحتوي على: كلورهيكسيدين: مضاد جرثومي يستخدم لعلاج الاتهابات الجلدية والتهابات اللثة. جليسرول: يستخدم في تطهير الأمعاء وتعزيز صحة الجهاز المناعي, ومضاد …"
+    },
+    {
+      "title": "جاس Jace - الدليل الطبي Altebby",
+      "url": "https://www.altebby.com/%d8%ac%d8%a7%d8%b3-jace/",
+      "snippet": "إن كان من الممكن, يجب التوقف عند إعطاء مدرات البول قبل بداية العلاج بالدواء بيومين أو ثلاثة أيام، وإن احتاج المريض تضاف جرعة من مدرات البول وتزداد تدريجيًا حسب حاجته"
+    },
+    {
+      "title": "جاس – Jase يستخدم لعلاج الاتهابات الجلدية والتهابات اللثة",
+      "url": "https://souqaldawaa.com/%d8%ac%d8%a7%d8%b3-jase-%d9%8a%d8%b3%d8%aa%d8%ae%d8%af%d9%85-%d9%84%d8%b9%d9%84%d8%a7%d8%ac-%d8%a7%d9%84%d8%a7%d8%aa%d9%87%d8%a7%d8%a8%d8%a7%d8%aa-%d8%a7%d9%84%d8%ac%d9%84%d8%af%d9%8a%d8%a9-%d9%88/",
+      "snippet": "Dec 12, 2021 · يستخدم جاس – Jase لعلاج الاتهابات الجلدية والتهابات اللثة بالاضافة الى تعزيز صحة الجهاز المناعي في الجسم."
+    },
+    {
+      "title": "جاست ريج دواعي الاستعمال، الموانع، الجرعات والسعر Gast Reg | علاجك",
+      "url": "https://www.3lagak.com/drug/gast-reg/",
+      "snippet": "علاج جاست ريج يحتوي على المادة الفعالة ترايمبيوتين والتي تعمل كمنظم لحركة الجهاز الهضمي وذلك من خلال تأثيرها على انقباض عضلات الجهاز الهضمي الملساء."
+    }
+  ]
+}

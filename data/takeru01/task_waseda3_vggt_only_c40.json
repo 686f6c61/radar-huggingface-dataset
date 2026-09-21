@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "id": "takeru01/task_waseda3_VGGT_only_c40",
+  "slug": "takeru01-task_waseda3_vggt_only_c40",
+  "author": "takeru01",
+  "url": "https://huggingface.co/takeru01/task_waseda3_VGGT_only_c40",
+  "created_at": "2026-09-21T01:39:38.000Z",
+  "updated_at": "2026-09-21T01:39:53.000Z",
+  "license": null,
+  "license_family": "unknown",
+  "pipeline_tag": null,
+  "library": null,
+  "languages": [],
+  "tags": [
+    "safetensors",
+    "region:us"
+  ],
+  "likes": 0,
+  "downloads_30d": 12,
+  "trending_score": 0,
+  "parameters": 51890832,
+  "parameters_human": "51.9M",
+  "storage_bytes": 207603692,
+  "storage_human": "208 MB",
+  "base_model": null,
+  "formats": [
+    "safetensors"
+  ],
+  "is_conversational": false,
+  "gated": false,
+  "removed": false,
+  "removed_at": null,
+  "benchmarks": [],
+  "sources": [
+    {
+      "title": "Electronics, Cars, Fashion, Collectibles & More | eBay",
+      "url": "https://www.ebay.com/?msockid=3e96f29b65536f1c1b88e54064846eae",
+      "snippet": "Discover eBay, the ultimate online marketplace for buying and selling electronics, cars, clothes, collectibles, and more with top …"
+    },
+    {
+      "title": "Buy Auto Parts & Accessories | eBay",
+      "url": "https://www.ebay.com/b/Auto-Parts-Accessories/6028/bn_569479?msockid=3e96f29b65536f1c1b88e54064846eae",
+      "snippet": "eBay Auto Parts & Accessories has the best prices and largest selection of OEM & aftermarket car parts, truck parts and motorcycle …"
+    },
+    {
+      "title": "Shop by Category | eBay",
+      "url": "https://www.ebay.com/n/all-categories?msockid=3e96f29b65536f1c1b88e54064846eae",
+      "snippet": "Shop by department, purchase cars, fashion apparel, collectibles, sporting goods, cameras, baby items, and everything else on eBay, …"
+    },
+    {
+      "title": "Home | Seller Center - eBay",
+      "url": "https://www.ebay.com/sellercenter?msockid=3e96f29b65536f1c1b88e54064846eae",
+      "snippet": "Find the information and inspiration you need to start selling and grow your business on eBay. Everything you need is here in the …"
+    },
+    {
+      "title": "Electronics, Cars, Fashion, Collectibles, Coupons and More | eBay",
+      "url": "https://il.ebay.com/",
+      "snippet": "Buy and sell electronics, cars, fashion apparel, collectibles, sporting goods, digital cameras, baby items, coupons, and everything …"
+    }
+  ]
+}
